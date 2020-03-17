@@ -46,6 +46,6 @@ I rapportkön kan du även&quot;Hoppa över en schemalagd rapport en gång&quot;
 
 ## Schema-ID {#section_568B70F4228C4229977CB85D2DCD53A1}
 
-Om du har **[!UICONTROL Schedule ID]** exponerats i gränssnittet för rapportkön blir det lättare att kontakta Adobe Client Care för att få hjälp med att lösa ett problem med schemalagda rapporter.
+Om du har **[!UICONTROL Schedule ID]** exponerats i gränssnittet för rapportkön blir det lättare att kontakta Adobe Client Care för att få hjälp med ett problem med schemalagda rapporter.
 
 ![](assets/schedule_id.png)
