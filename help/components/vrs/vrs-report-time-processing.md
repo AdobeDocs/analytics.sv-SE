@@ -26,7 +26,7 @@ Tidsbearbetning för rapportering är ett helt annat sätt att behandla analysda
 
 Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan till exempel ändra besökets timeout-period till hur lång tid du vill på ett icke-förstörande sätt, och dessa ändringar återspeglas i din eVar-beständighet och segmentbehållare retroaktivt som om du hade använt dessa inställningar innan data samlades in. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
 
-Med Report Time Processing kan Analytics även förhindra bakgrundstötningar från att starta nya besök och [mobil-SDK](https://marketing.adobe.com/developer/get-started/mobile/c-measuring-mobile-applications) kan tala om för rapportanvändare att starta ett nytt besök när en Appstart-händelse utlöses.
+Med Report Time Processing kan Analytics även förhindra bakgrundstötningar från att starta nya besök, och [mobil-SDK](https://marketing.adobe.com/developer/get-started/mobile/c-measuring-mobile-applications) kan ange att rapportering ska starta ett nytt besök när en Appstart-händelse utlöses.
 
 Följande konfigurationsalternativ är tillgängliga för virtuella rapportsviter med rapporttidsbearbetning aktiverat:
 
