@@ -66,7 +66,7 @@ I geospråkrapporten visas webbplatstrafiken med språkinställningen i besökar
 
 Så här skapar du en språkrapport:
 
-1. På menyn Komponenter letar du upp **språkdimensionen** och drar den till det stora frihandsritabellområdet med etiketten &#39;Släpp en dimension här&#39;.
+1. På menyn Komponenter letar du upp **språkdimensionen** och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
 Mer information finns i [språkdimensionen](/help/components/c-variables/dimensionslist/reports-languages.md) i användarhandboken för komponenter.
