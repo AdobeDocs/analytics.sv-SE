@@ -267,7 +267,7 @@ Du kan skapa det här segmentet utan en logikgruppsbehållare, men det är kompl
 * `Visitor Container [Page A THEN Page D THEN Page B THEN Page C] or`
 * `Visitor Container [Page A THEN Page D THEN Page C THEN Page B]`
 
-En logikgruppsbehållare förenklar byggandet av det här segmentet avsevärt, vilket visas här:
+En logikgruppsbehållare gör det enklare att bygga det här segmentet, vilket visas här:
 
 ![](assets/logic-grp-example.png)
 
