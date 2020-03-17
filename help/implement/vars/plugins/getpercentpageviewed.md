@@ -48,7 +48,7 @@ I metoden används följande argument: `getPercentPageViewed`
 * **`pid`** (valfri, sträng):  En sidbaserad identifierare som du kan korrelera med procentsatserna som anges i plugin-programmets mått.  Standardvärdet är `pageName` variabeln.
 * **`ch`** (valfritt, boolesk):  Ange det här till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som görs i sidstorleken efter den första inläsningen. Om det utelämnas används det här argumentet som standard `true`. Adobe rekommenderar att du i de flesta fall utelämnar det här argumentet.
 
-Om metoden anropas returneras ingenting; i stället anges följande variabler:
+Om metoden anropas returneras ingenting. i stället anges följande variabler:
 
 * `s._ppvPreviousPage`: Namnet på föregående sida som visades. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
 * `s._ppvHighestPercentViewed`: Den högsta procentandel av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida.
