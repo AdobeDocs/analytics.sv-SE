@@ -1,0 +1,26 @@
+---
+description: I standardläge exporterar du analysdata från aktivitetskartan till en CSV-fil (Comma Separated Values).
+title: Exportera till CSV-fil
+topic: Activity map
+uuid: dc6c50c0-57f7-45b8-a4cb-2092a21da529
+translation-type: tm+mt
+source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+
+---
+
+
+# Exportera till CSV-fil
+
+I standardläge exporterar du analysdata från aktivitetskartan till en CSV-fil (Comma Separated Values).
+
+Som användare kan du behöva sammanfoga länkklickdata med andra datakällor eller utföra andra analyser (t.ex. i Excel). Med CSV-export kan du hämta alla aktivitetskartdata för en viss sida i ett lättanvänt format. Du kan spara analysdata som genererats för en sida i en platt CSV-fil, så att du kan exportera sidrapporten, [sidflödesrapporten](/help/analyze/activity-map/activitymap-page-flow.md)och [länkar på siddata](/help/analyze/activity-map/activitymap-links-report.md) . Du kan sedan visa som ett kalkylblad eller en textfil, eller importera data till ett annat system.
+
+Klicka på ikonen Exportera i verktygsfältet Aktivitetskarta.
+
+Activity Map genererar filnamnet baserat på sidnamnet i Adobe Analytics och lägger till ett datum och en tidsstämpel till det: Pagename_DateTime.csv. Filen sparas i standardkatalogen Download för motsvarande webbläsare.
+
+| Exportinformation | Beskrivning |
+|---|---|
+| Rapport om sidmått | Data från sidstatistik från Analytics, inklusive hur lång tid som tillbringats på sidan, klickningar på sidan och totala sidvisningar. |
+| Siddetaljrapport | Information om sidinmatning och sidavslutning som identifierar föregående sida för interna eller externa referenser samt avslutsdata. |
+| Länkar på sidrapport | Länkinformation för en viss sida i standardläge eller Live-läge. |
