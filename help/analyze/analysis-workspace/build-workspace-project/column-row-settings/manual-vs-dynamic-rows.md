@@ -1,5 +1,5 @@
 ---
-description: Så här interagerar du med statiska rader i tabeller.
+description: Hur du interagerar med statiska rader i tabeller.
 title: Statiska kontra dynamiska rader
 uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
 translation-type: tm+mt
