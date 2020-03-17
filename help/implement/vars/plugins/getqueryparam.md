@@ -161,7 +161,7 @@ Följande kod kommer inte att ställa in s.campaign alls:
 s.campaign=s.getQueryParam('cid');
 ```
 
-Följande kod ställer in s.campaign som &quot;trackingcode1&quot;:
+Följande kod ställer emellertid in s.campaign som &quot;trackingcode1&quot;:
 
 ```js
 s.campaign=s.getQueryParam('cid','',s.testURL);
