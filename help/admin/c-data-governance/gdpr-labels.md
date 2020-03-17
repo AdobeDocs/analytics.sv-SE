@@ -48,7 +48,7 @@ Identitetsdata&quot;I&quot;-etiketter används för att kategorisera data som ka
   </tr> 
   <tr> 
    <td colname="col1"> <p>I2 </p> </td> 
-   <td colname="col2"> <p><b>Indirekt identifierbar</b>: Data som kan användas i kombination med andra data för att identifiera eller möjliggöra direktkontakt med en individ eller enhet. </p> <p>Tillåter inte identifiering av en enskild person, utan kan kombineras med annan information (som du kanske har tillgång till) för att identifiera någon. Exempel är ett kundlojalitetsnummer eller ett ID som används av ett företags CRM-system och som är unikt för varje kund. </p> </td> 
+   <td colname="col2"> <p><b>Indirekt identifierbar</b>: Data som kan användas tillsammans med andra data för att identifiera eller möjliggöra direktkontakt med en individ eller enhet. </p> <p>Tillåter inte identifiering av en enskild person, utan kan kombineras med annan information (som du kanske har tillgång till) för att identifiera någon. Exempel är ett kundlojalitetsnummer eller ett ID som används av ett företags CRM-system och som är unikt för varje kund. </p> </td> 
    <td colname="col3"> 
     <ul id="ul_A0EF0F3DC5804D4FBE228946D697ABEB"> 
      <li id="li_A592EA6DA82C4D8C80E03F02ADF4E20E">Kan inte anges för händelser </li> 
