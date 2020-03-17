@@ -5,12 +5,21 @@ title: Nyheter på Analysis Workspace
 topic: Reports and analytics
 uuid: ff50ef9f-e5b8-442e-bfa6-2f224ba9f111
 translation-type: tm+mt
-source-git-commit: 06d2e64fc72c911828f089de5c487117251e060e
+source-git-commit: 08d564f7fb06b94c2010515ea4a1dcbb2e6e2815
 
 ---
 
 
 # Nyheter på Analysis Workspace
+
+## Mars 2020
+
+Nya funktioner släpptes 12 mars 2020.
+
+| Funktion | Beskrivning |
+|--- |--- |
+| Stöd för flera rapportsviter i Workspace | Nu kan du samla in data från flera rapportsviter i ett enda projekt och visa dem sida vid sida. [Läs mer...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) |
+| Utbildningsmall | Den här nya standardmallen leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Den är tillgänglig som en standardmall i det nya projektmodala och ersätter det exempelprojekt som finns idag för nya användare som inte har andra projekt i sin lista. [Läs mer...](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md) |
 
 ## Februari 2020
 
@@ -18,7 +27,6 @@ Nya funktioner släpptes 20 februari 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| Stöd för flera rapportsviter i Workspace | Nu kan du samla in data från flera rapportsviter i ett enda projekt och visa dem sida vid sida. Från och med 20 februari 2020 kommer funktionen att lanseras för alla kunder under flera veckor. [Läs mer...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) |
 | Ny arbetsytemall för organisationer som använder enhetsövergripande analys | Den här mallen visar hur effektivt CDA är att sammanfoga besök och utbildar dig om CDA-exklusiva dimensioner och mätvärden. En rapportsvit med CDA krävs. Mer information finns i [Konfigurera enhetsövergripande analys](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-setup.html) . |
 | Nya snabbtangenter i arbetsytan | <ul><li>Komprimera/expandera alla paneler: `alt + m`</li><li>Visa/dölj aktiv panel: `alt + ctrl + m`</li><li>Sök i vänster kant: `ctrl + /`</li><li>Flytta till nästa panel: `alt + Right Key`</li><li>Flytta till föregående panel: `alt + Left Key`</li></ul>[Läs mer...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) |
 | Andra förbättringar av arbetsytan | <ul><li>När en panel eller visualisering släpps på arbetsytan kommer den vänstra listen nu att automatiskt växla till komponenter för ett smidigare arbetsflöde.</li><li>Mallkomponenter kan nu åtgärdas (t.ex. taggade, favoriter, godkända).</li><li>Filtrerade mätvärden och segmentlistor innehåller plusknappen för att lägga till en ny komponent om du inte hittar det du behöver.</li></ul> |
