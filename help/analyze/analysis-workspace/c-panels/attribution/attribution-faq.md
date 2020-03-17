@@ -23,7 +23,7 @@ Attributionsmodeller är för närvarande beroende av antingen en besökare elle
 
 **När ska jag använda ett besöks- eller besöksattribueringsbesök?**
 
-Vilken attribueringslookback du väljer beror på ditt användningssätt. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa ett virtuellt rapportpaket med en längre besöksdefinition är också en potentiell lösning.
+Vilken attribueringssökning du väljer beror på ditt användningsfall. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa ett virtuellt rapportpaket med en längre besöksdefinition är också en potentiell lösning.
 
 **Hur är props och eVars jämfört när man använder attribuering?**
 
