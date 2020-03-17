@@ -4,7 +4,7 @@ audience: all
 user-guide-title: Analytics Implementation Guide
 user-guide-url: /content/help/en/analytics/implementation/home.html
 translation-type: tm+mt
-source-git-commit: 2bebccbcd7435458ca29782802fa56ca09a6d4a2
+source-git-commit: d74a728b6d59e745204bb6c4b7de038491a1891a
 
 ---
 
@@ -150,6 +150,8 @@ source-git-commit: 2bebccbcd7435458ca29782802fa56ca09a6d4a2
    + [Skapa en Analytics-egenskap](launch/create-analytics-property.md)
    + [Distribuera till en dev-miljö](launch/deploy-dev.md)
    + [Validera och publicera för produktion](launch/validate-publish-prod.md)
+   + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
+   + [Mappa Launch-dataelement till analysvariabler](launch/elements-to-variable.md)
 + Implementera analyser på andra plattformar {#other}
    + [Implementera analyser med hårdkodade bildförfrågningar](other/hardcoded.md)
    + Implementera analyser med DTM {#dtm}
