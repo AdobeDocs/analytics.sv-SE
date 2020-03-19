@@ -2,7 +2,7 @@
 title: prop
 description: Anpassade variabler som du kan använda i implementeringen.
 translation-type: tm+mt
-source-git-commit: ddab63a4fe3b8f1a3187893eba1ac3a1eda3bc41
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -56,3 +56,5 @@ s.prop1 = "value1,value2,value3";
 ```
 
 > [!IMPORTANT] Listproppar har fortfarande en maxlängd på 100 byte. Det är lättare att nå den här gränsen och trimma eftersom de kan innehålla flera värden. Använd förkortningar eller förkorta värden om du kanske når denna gräns på 100 byte.
+
+Om du anger samma värde mer än en gång i ett listerbjudande tas de bort från rapporteringen. Analysis Workspace räknar antalet träffar där ett värde visas och inte antalet gånger ett värde finns i data.
