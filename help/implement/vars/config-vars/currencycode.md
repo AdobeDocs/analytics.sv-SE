@@ -2,7 +2,7 @@
 title: currencyCode
 desciption: For eCommerce sites, set the currency the page deals in.
 translation-type: tm+mt
-source-git-commit: f769da139d9890fd736a9b277934b11aa131e166
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: f769da139d9890fd736a9b277934b11aa131e166
 
 För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som spänner över flera länder, använder olika valutor. Använd variabeln `currencyCode` för att kontrollera intäktsattribut till rätt valuta.
 
-Om `currencyCode` inte är definierat behandlas monetära värden som definierar variabel- och `products` valutakändelserna som om de är samma som rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) i användarhandboken för Admin för att se rapportsvitens valuta.
+Om `currencyCode` inte är definierat behandlas monetära värden som definierar variabel- och [`products`](../page-vars/products.md) valutakändelserna som om de är samma som rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) i användarhandboken för Admin för att se rapportsvitens valuta.
 
 Om `currencyCode` är definierad och matchar rapportsvitens valuta används ingen valutakonvertering.
 
