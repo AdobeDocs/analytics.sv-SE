@@ -2,17 +2,17 @@
 title: doPlugins
 description: Konfigurera logik precis innan en träff kompileras och skickas till Adobe.
 translation-type: tm+mt
-source-git-commit: a02fb674ea71a05e085c8e9b2dc4460f62f2cd51
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # doPlugins
 
-Variabeln fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. `doPlugins` Om `usePlugins` så är `true`fallet körs den automatiskt precis innan någon typ av bildförfrågan kompileras och skickas till Adobe, inklusive:
+Variabeln fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. `doPlugins` Om [`usePlugins`](../config-vars/useplugins.md) den är aktiverad körs den automatiskt precis innan någon typ av bildförfrågan kompileras och skickas till Adobe, inklusive:
 
-* Alla sidvysamtal (`t`på eng)
-* Alla länkspårningsanrop (`tl`inklusive automatiska hämtningslänkar och avslutningslänkar)
+* Alla sidvysamtal ([`t()`](t-method.md)på eng)
+* Alla länkspårningsanrop ([`tl()`](tl-method.md)inklusive automatiska hämtningslänkar och avslutningslänkar)
 
 Använd variabeln för att anropa plugin-programkod och ange slutliga variabelvärden precis innan en bildbegäran kompileras och skickas till Adobe. `doPlugins`
 
