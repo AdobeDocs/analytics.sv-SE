@@ -2,14 +2,14 @@
 title: sa
 description: Ändra rapportsviten när som helst i implementeringen.
 translation-type: tm+mt
-source-git-commit: f179292abae9cf7986d61da89a86e3e88111943e
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # sa
 
-Med den här `sa` metoden kan du dynamiskt ändra en rapportsserie när som helst på sidan. Om du vill skicka data till olika rapportsviter utan att behöva läsa in en sida igen kan du använda den här metoden.
+Med den här `sa()` metoden kan du dynamiskt ändra en rapportsserie när som helst på sidan. Om du vill skicka data till olika rapportsviter utan att behöva läsa in en sida igen kan du använda den här metoden.
 
 ## Använd metoden sa i Adobe Experience Platform Launch
 
