@@ -2,16 +2,16 @@
 title: tl
 description: Skicka ett länkspårningssamtal till Adobe.
 translation-type: tm+mt
-source-git-commit: 8494e8bb08b45006b357dd114e6bf9507f0cd54a
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # tl
 
-Metoden är en viktig `tl` komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobes datainsamlingsservrar. Den fungerar på ungefär samma sätt som `t` metoden, men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
+Metoden är en viktig `tl()` komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobes datainsamlingsservrar. Den fungerar på ungefär samma sätt som [`t()`](t-method.md) metoden, men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
 
-Om `trackDownloadLinks` eller `trackExternalLinks` är aktiverat anropar AppMeasurement automatiskt `tl` metoden för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa `tl` metoden manuellt. Anpassade länkar kan bara spåras manuellt.
+Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverat anropar AppMeasurement automatiskt `tl()` metoden för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa `tl()` metoden manuellt. Anpassade länkar kan bara spåras manuellt.
 
 ## Länkspårningssamtal i Adobe Experience Platform Launch
 
@@ -44,7 +44,7 @@ s.tl([Link object],[Link type],[Link name],[Override variable]);
 
 Argumentet för läntobjekt avgör om webbläsaren väntar upp till 500 ms innan den navigerar bort från sidan. Om en bildbegäran skickas tidigare än 500 ms navigerar sidan direkt till den klickade länken.
 
-> [!NOTE] Med AppMeasurement aktiveras automatiskt variabeln `useBeacon` för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
+> [!NOTE] Med AppMeasurement aktiveras automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
 
 * `this`: Vänta i upp till 500 ms för att ge AppMeasurement tid att skicka en bildbegäran. Standardvärde.
 * `true`: Vänta inte.
@@ -59,7 +59,7 @@ s.tl(true);
 
 ### Länktyp
 
-Argumentet för länktyp är en sträng med en bokstav som avgör typen av länkspårningsanrop. Det är samma sak som att ställa in `linkType` variabeln.
+Argumentet för länktyp är en sträng med en bokstav som avgör typen av länkspårningsanrop. Det är samma sak som att ställa in [`linkType`](../config-vars/linktype.md) variabeln.
 
 ```js
 // Send a custom link
@@ -74,7 +74,7 @@ s.tl(true,"e");
 
 ### Länknamn
 
-Argumentet för länknamn är en sträng som avgör dimensionsvärdet för länkspårning. Det är samma sak som att ställa in `linkName` variabeln.
+Argumentet för länknamn är en sträng som avgör dimensionsvärdet för länkspårning. Det är samma sak som att ställa in [`linkName`](../config-vars/linkname.md) variabeln.
 
 ```js
 s.tl(true,"d","Example download link");
