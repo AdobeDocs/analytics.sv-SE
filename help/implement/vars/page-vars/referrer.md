@@ -2,7 +2,7 @@
 title: hänvisare
 description: Åsidosätt den automatiskt insamlade referenten för en träff.
 translation-type: tm+mt
-source-git-commit: c7d596be4f70c820039725be6a5fddc8572156d9
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -36,7 +36,7 @@ Undvik att ställa in den här variabeln på värden som inte är URL-adresser.
 
 ## Exempel
 
-Många organisationer hanterar implementeringar kring omdirigeringar. Du kan använda [`getQueryParam`](../functions/util-getqueryparam.md) verktyget för att hämta en referens från URL-adressen om webbplatsen har plats för den. Kontrollera att du URL-kodar alla värden som ingår i frågesträngen.
+Många organisationer hanterar implementeringar kring omdirigeringar. Du kan använda [`Util.getQueryParam()`](../functions/util-getqueryparam.md) verktyget för att hämta en referens från URL-adressen om webbplatsen har plats för den. Kontrollera att du URL-kodar alla värden som ingår i frågesträngen.
 
 ```js
 // Example if the URL is https://example.com?r=https%3A%2F%2Fexample.org
