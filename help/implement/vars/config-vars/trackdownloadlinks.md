@@ -2,16 +2,16 @@
 title: trackDownloadLinks
 description: Aktivera eller inaktivera automatisk länkspårning för nedladdningslänkar.
 translation-type: tm+mt
-source-git-commit: 04b97e93a95691132680d4da197dc62eb2b9fdd1
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # trackDownLoadLinks
 
-Adobe ger möjlighet att spåra nedladdningslänkar utan att manuellt ange `tl()` funktionen för varje nedladdningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för hämtningslänkar.
+Adobe ger möjlighet att spåra nedladdningslänkar utan att manuellt ange [`tl()`](../functions/tl-method.md) metod för varje nedladdningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för hämtningslänkar.
 
-När det är aktiverat jämför AppMeasurement alla klickade länk-URL:er med värden i `downloadLinkFileTypes`. Om det finns en matchning aktiveras ett spårningsanrop för nedladdningslänk automatiskt.
+När det är aktiverat jämför AppMeasurement alla klickade länk-URL:er med värden i [`linkDownloadFileTypes`](linkdownloadfiletypes.md). Om det finns en matchning aktiveras ett spårningsanrop för nedladdningslänk automatiskt.
 
 ## Spåra nedladdningslänkar i Adobe Experience Platform Launch
 
@@ -26,7 +26,7 @@ Klicka i kryssrutan om du vill aktivera automatisk spårning av nedladdningslän
 
 ## s.trackDownloadLinks in AppMeasurement and Launch custom code editor
 
-Det här `s.trackDownloadLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk länkspårning för hämtning. Om du inte vill spåra nedladdningslänkar, eller vill anropa funktionen manuellt för att spåra nedladdningar, ställer du in den här variabeln på `tl()` `false`.
+Det här `s.trackDownloadLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk länkspårning för hämtning. Om du inte vill spåra nedladdningslänkar, eller vill anropa metoden manuellt för att spåra nedladdningar, anger du den här variabeln till `tl()` `false`.
 
 ```js
 s.trackDownloadLinks = true;
