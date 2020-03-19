@@ -2,16 +2,16 @@
 title: linkTrackEvents
 description: Bestäm vilka händelser som ska ingå i förfrågningar om länkspårningsbilder.
 translation-type: tm+mt
-source-git-commit: 4a6cfa479559a644588613bd127c5b45ee8787e6
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # linkTrackEvents
 
-Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden för länkspårning. Använd variablerna `linkTrackVars` och `linkTrackEvents` för att selektivt inkludera mått och mätvärden i `tl()` anrop.
+Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden för länkspårning. Använd variablerna [`linkTrackVars`](linktrackvars.md) och `linkTrackEvents` för att selektivt inkludera mått och mätvärden i [`tl()`](../functions/tl-method.md) anrop.
 
-Den här variabeln används inte för sidvisningsanrop (`t()` funktion).
+Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-method.md) metod).
 
 ## Händelser i anrop för länkspårning med Adobe Experience Platform Launch
 
@@ -21,9 +21,9 @@ Launch identifierar automatiskt händelser som definierats i gränssnittet och i
 
 ## s.linkTrackEvents i AppMeasurement and Launch custom code editor
 
-Variabeln är en sträng som innehåller en kommaavgränsad lista med händelser som du vill ta med i bildbegäran för länkspårning ( `s.linkTrackEvents``tl()` funktion). Följande tre villkor måste vara uppfyllda för att du ska kunna ta med mätvärden i länkspårningsträffar:
+Variabeln är en sträng som innehåller en kommaavgränsad lista med händelser som du vill ta med i bildbegäran för länkspårning ( `s.linkTrackEvents``tl()` metod). Följande tre villkor måste vara uppfyllda för att du ska kunna ta med mätvärden i länkspårningsträffar:
 
-* Ange önskad händelse i `events` variabeln. Exempel, `s.events = "event1";`.
+* Ange önskad händelse i [`events`](../page-vars/events/events-overview.md) variabeln. Exempel, `s.events = "event1";`.
 * Ange `events` variabeln i `linkTrackVars`. Exempel, `s.linkTrackVars = "events";`.
 * Ange önskad händelse i `linkTrackEvents` variabeln. Exempel, `s.linkTrackEvents = "event1";`.
 
