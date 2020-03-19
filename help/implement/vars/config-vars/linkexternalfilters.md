@@ -2,16 +2,16 @@
 title: linkExternalFilters
 description: Använd variabeln linkExternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 translation-type: tm+mt
-source-git-commit: 8f7baa770f800ffe800e760f1eca59911d3db348
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # linkExternalFilters
 
-Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om `trackExternalLinks` så är `true`fallet skickas en bildförfrågan till Adobe direkt när besökaren klickar på en länk för att lämna din webbplats. Variablerna `linkTrackExternalFilters` och `linkTrackInternalFilters` bestämmer vilka länkar som betraktas som interna/externa.
+Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om [`trackExternalLinks`](trackexternallinks.md) är aktiverat skickas en bildförfrågan till Adobe direkt när en besökare klickar på en länk för att lämna din webbplats. Variablerna `linkExternalFilters` och [`linkInternalFilters`](linkinternalfilters.md) bestämmer vilka länkar som betraktas som interna/externa.
 
-Om den här variabeln innehåller ett värde fungerar automatisk avslutningslänkspårning som en vitlisteliknande metod. Om ett länkklick inte matchar några `linkExternalFilters` värden betraktas det inte som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om `linkLeaveQueryString` är `true`det undersöks även frågesträngen.
+Om den här variabeln innehåller ett värde fungerar automatisk avslutningslänkspårning som en vitlisteliknande metod. Om ett länkklick inte matchar några `linkExternalFilters` värden betraktas det inte som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om [`linkLeaveQueryString`](linkleavequerystring.md) är aktiverat undersöks även frågesträngen.
 
 > [!TIP] Använd bara den här variabeln om du vet exakt vilka domäner du vill använda som avslutningslänkar. Många organisationer tycker att det `linkInternalFilters` räcker med att använda för att spåra avslut, och använder inte `linkExternalFilters`.
 
@@ -44,7 +44,7 @@ Tänk på följande implementeringsexempel som om det vore på `adobe.com`:
   s.linkExternalFilters = "example.com,example.net";
 </script>
 
-<!-- The following link is not considered an exit link, even though the link is outside adobe.com -->
+<!-- The following link is NOT considered an exit link, even though the link is outside adobe.com -->
 <a href = "example.org">Example link 1</a>
 
 <!-- The following link is an exit link because it matches the linkExternalFilters whitelist -->
