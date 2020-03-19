@@ -2,7 +2,7 @@
 title: Översikt över plugin-program
 description: Klistra in kod på webbplatsen för att få nya funktioner.
 translation-type: tm+mt
-source-git-commit: 365944140bb1dfc9bc8669ae530c631e8ff1629b
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -21,7 +21,7 @@ Adobe erbjuder flera sätt att installera ett visst plugin-program:
 
 Varje organisation har olika implementeringsbehov, så du kan bestämma hur du vill inkludera dem i implementeringen. Se till att du uppfyller följande kriterier när du inkluderar koden på din plats:
 
-1. Instansiera Analytics-spårningsobjektet (med `s_gi`) först.
+1. Instansiera Analytics-spårningsobjektet (med [`s_gi`](../functions/s-gi.md)) först.
    * Launch instansierar automatiskt spårningsobjektet när Adobe Analytics läses in.
    * Implementeringar som använder `AppMeasurement.js` initierar vanligtvis spårningsobjektet längst upp i JavaScript-filen.
 2. Inkludera plugin-kod sekund.
