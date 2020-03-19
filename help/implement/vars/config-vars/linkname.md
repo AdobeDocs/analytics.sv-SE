@@ -2,16 +2,16 @@
 title: linkName
 description: Ange namnet på den anpassade länkträffen.
 translation-type: tm+mt
-source-git-commit: e500332fe16887fa004858b07b59644837e183aa
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # linkName
 
-Använd variabeln `linkName` för att bestämma dimensionsvärdet för anpassade länkar, hämtningslänkar eller avslutslänkar när du kör nästa `tl()` funktion.
+Använd variabeln `linkName` för att fastställa dimensionsvärdet för anpassade länkar, hämtningslänkar eller avslutslänkar när du kör nästa [`tl()`](../functions/tl-method.md) metod.
 
-Om variabeln är tom återgår AppMeasurement till `linkURL` -variabeln.
+Om variabeln är tom återgår AppMeasurement till [`linkURL`](linkurl.md) -variabeln.
 
 ## Länknamn i Adobe Experience Platform Launch
 
@@ -26,9 +26,9 @@ Du kan ange länknamnsfältet när du konfigurerar en regel för att skicka en f
 
 ## s.linkName i AppMeasurement and Launch custom code editor
 
-Variabeln `s.linkName` är en sträng som bestämmer dimensionsvärdet för anpassade länkar, hämtningslänkar eller avslutslänkar (beroende på vad som `s.linkType` är). Den kan innehålla upp till 100 byte.
+Variabeln `s.linkName` är en sträng som bestämmer dimensionsvärdet för anpassade länkar, hämtningslänkar eller avslutslänkar (beroende på vad som [`s.linkType`](linktype.md) är). Den kan innehålla upp till 100 byte.
 
-> [!TIP] Den här variabeln är den tredje parametern i `tl()` funktionen och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkName` `tl()` funktionen.
+> [!TIP] Den här variabeln är den tredje parametern i `tl()` metoden och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkName` `tl()` metoden.
 
 ```js
 s.linkName = "Example custom link";
