@@ -2,16 +2,16 @@
 title: visitorNameSpace
 description: En indragen variabel som fastställde cookie-domän.
 translation-type: tm+mt
-source-git-commit: 979a95ca749a3e21c4ddf48ba2d2a95672938a20
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # visitorNamespace
 
-> [!IMPORTANT] Den här variabeln har tagits bort. Använd `trackingServer` istället.
+> [!IMPORTANT] Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) istället.
 
-I tidigare versioner av Adobe Analytics använde AppMeasurement variabeln för att avgöra vilken underdomän `visitorNameSpace` `2o7.net` besökarens cookies lagras i. Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. I och med introduktionen av variablerna `trackingServer` och `trackingServerSecure` behövs `visitorNameSpace` inte längre.
+I tidigare versioner av Adobe Analytics använde AppMeasurement variabeln för att avgöra vilken underdomän `visitorNameSpace` `2o7.net` besökarens cookies lagras i. Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. I och med introduktionen av variablerna `trackingServer` och [`trackingServerSecure`](trackingserversecure.md) behövs `visitorNameSpace` inte längre.
 
 > [!TIP] Adobe rekommenderar att du använder cookies från första part på din webbplats. Den här variabeln används inte för cookies från första part.
 
