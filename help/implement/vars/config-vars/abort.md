@@ -2,7 +2,7 @@
 title: avbryta
 description: Variabeln abort är en boolesk variabel som förhindrar att en träff skickas till Adobes datainsamlingsservrar.
 translation-type: tm+mt
-source-git-commit: f769da139d9890fd736a9b277934b11aa131e166
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -19,7 +19,7 @@ Det finns inget dedikerat fält i Launch som kan använda den här variabeln. An
 
 Variabeln `abort` är boolesk. Dess standardvärde är `false`.
 
-* Om värdet anges `true`skickas inga data till Adobe vid nästa spårningsanrop (`t()` eller `tl()`).
+* Om värdet anges `true`skickas inga data till Adobe vid nästa spårningsanrop ([`t()`](../functions/t-method.md) eller [`tl()`](../functions/tl-method.md)).
 * Om variabeln anges till `false` eller inte definieras händer ingenting.
 
 ```js
@@ -30,7 +30,7 @@ s.abort = true;
 
 ## Exempel
 
-Variabeln `abort` kan anges i `doPlugins()` funktionen, som är den sista funktionen som körs innan en bildbegäran skickas till Adobe.
+Variabeln `abort` kan anges i [`doPlugins()`](../functions/doplugins.md) funktionen, som är den sista funktionen som körs innan en bildbegäran skickas till Adobe.
 
 ```js
 s.doPlugins = function(s) {
