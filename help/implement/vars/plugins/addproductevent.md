@@ -2,7 +2,7 @@
 title: addProductEvent
 description: Lägger till anpassade händelser i variabeln products and events.
 translation-type: tm+mt
-source-git-commit: 7a455fb9eb355617bab016218b171dffa8d21958
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 7a455fb9eb355617bab016218b171dffa8d21958
 
 > [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin- `addProductEvent` programmet lägger till en numerisk händelse eller valutakurs i `products` variabeln. Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakändelse i `products` variabeln utan att behöva oroa dig för produktsträngformatet. Detta plugin-program är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i `products` variabeln.
+Plugin- `addProductEvent` programmet lägger till en numerisk händelse eller valutakurs i [`products`](../page-vars/products.md) variabeln. Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakändelse i `products` variabeln utan att behöva oroa dig för produktsträngformatet. Detta plugin-program är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i `products` variabeln.
 
 ## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
@@ -42,7 +42,7 @@ Om du inte vill använda plugin-programtillägget kan du använda den anpassade 
 
 ## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med `s_gi`). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -65,7 +65,7 @@ I metoden används följande argument: `addProductEvent`
 * **`ev`** (required, string): Värdet som tilldelas till den numeriska händelsen eller valutakurshändelsen i `en` argumentet.  Standardvärdet är `1` när det inte anges.
 * **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost läggs händelsen till i alla produktposter med värdet `true` (eller `1`).  Standardvärdet är `false` när det inte anges.
 
-Ingenting `addProductEvent` returneras. I stället läggs händelsen och dess värde till i `products` variabeln. Plugin-programmet lägger automatiskt till händelsen i `events` variabeln, eftersom den också krävs där.
+Ingenting `addProductEvent` returneras. I stället läggs händelsen och dess värde till i `products` variabeln. Plugin-programmet lägger automatiskt till händelsen i [`events`](../page-vars/events/events-overview.md) variabeln, eftersom den också krävs där.
 
 ## Cookies
 
