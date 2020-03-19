@@ -2,7 +2,7 @@
 title: hövding
 description: Implementera hierarkivariabler i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -11,41 +11,24 @@ source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
 
 Hierarkivariabler är anpassade variabler som du kan använda för att visa en webbplats struktur.
 
-Den här variabeln är mest användbar för webbplatser som har fler än tre nivåer i platsstrukturen. En mediewebbplats kan till exempel ha fyra nivåer till avsnittet Sport: Sport, Local Sports, Baseball och Red Sox. Om någon besöker Baseball-sidan, Sport, Local Sports och Baseball återspeglar alla nivåer detta besök.
+> [!TIP] Variabeln var vanligare i tidigare versioner av Adobe Analytics. Adobe rekommenderar att du använder [eVars](evar.md) och klassificeringar i stället.
 
-Det finns fem [!UICONTROL hierarchy] variabler som måste aktiveras av Adobes kundtjänst. När hierarkin är aktiverad bör du bestämma en avgränsare för variabeln och det maximala antalet nivåer för hierarkin. Om avgränsaren till exempel är ett komma kan sporthierarkin visas enligt följande.
+Den här variabeln är användbar för platser som har mer än tre nivåer i platsstrukturen. En mediewebbplats kan till exempel ha fyra nivåer till avsnittet Sport: `Sports`, `Local Sports`, `Baseball`och `Team name`. Om någon besöker Baseball-sidan, Sport, Local Sports och Baseball återspeglar alla nivåer detta besök.
 
-```js
-s.hier1="Sports,Local Sports,Baseball"
-```
-
-Kontrollera att inga av avsnittsnamnen har avgränsaren. Om ett av avsnitten till exempel heter &quot;Koppla stödraster, Jim&quot; ska du välja en annan avgränsare än kommatecken. Varje hierarkiavsnitt är begränsat till 255 byte, medan den totala variabelgränsen är 255 byte. När en avgränsare har valts (när hierarkin skapades) är det inte så lätt att ändra den.
-
-Kontakta Adobes kundtjänst om du vill ändra avgränsaren för en befintlig hierarki. Avgränsare kan också bestå av flera tecken, t.ex.|| eller /|\, vilket är mindre troligt att de visas i ett hierarkiavsnitt.
-
-## Syntax och möjliga värden
-
-Placera inte något blanksteg mellan varje avgränsare. I följande exempelsyntax är N ett tal mellan ett och fem.
+Adobe stöder upp till 5 hierarkivariabler i implementeringen. När hierarkin är aktiverad bestämmer du vilken avgränsare som ska användas för variabeln och det högsta antalet nivåer för hierarkin. Om avgränsaren till exempel är ett komma ser hierarkin ut ungefär så här:
 
 ```js
-s.hierN="Level 1[<delimiter>Level 2[<delimiter>Level 3[...]]]"
+s.hier1 = "Sports,Local Sports,Baseball";
 ```
 
-Använd inte avgränsaren förutom för att avgränsa nivån i hierarkin. Avgränsaren kan vara valfritt tecken eller tecken.
+Kontrollera att inga av avsnittsnamnen har avgränsaren. Om till exempel ett av avsnitten anropas `Coach Griffin, Jim`väljer du en annan avgränsare än ett komma. Den totala variabelgränsen är 255 byte. Avgränsare kan bestå av flera tecken, t.ex. `||` eller `/|\`, som mindre sannolikt förekommer i variabelvärden.
 
 ## Exempel
 
 ```js
-s.hier1="Toys|Boys 6+|Legos|Super Block Tub"
+s.hier1="Toys|Boys 6+|Legos|Super Block Tub";
 ```
 
 ```js
-s.hier4="Sports/Local Sports/Baseball"
+s.hier4="Sports/Local Sports/Baseball";
 ```
-
-## Pitfalls, frågor och tips
-
-* Avgränsaren kan inte ändras efter att hierarkin har konfigurerats. Om avgränsaren för din hierarki måste ändras kontaktar du Adobes kundtjänst.
-* Antalet nivåer kan inte ändras efter att hierarkin har konfigurerats.
-
-> [!NOTE] Ändringar i hierarkier kan medföra en avgift.
