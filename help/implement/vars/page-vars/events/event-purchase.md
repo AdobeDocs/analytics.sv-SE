@@ -2,14 +2,14 @@
 title: Inköpshändelse
 description: Använd inköpshändelsen för att samla in data för måtten"Beställningar","Enheter" och"Intäkter".
 translation-type: tm+mt
-source-git-commit: 7a1c3c7ed0e509969e281e865e8ff2c969a18bcb
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # Inköpshändelse
 
-Inköpshändelsen är ett värde i `events` variabeln. Det här värdet är användbart för organisationer som vill samla in data kring de intäkter som deras webbplats genererar. Den är starkt beroende av `products` variabler och `purchaseID` variabler.
+Inköpshändelsen är ett värde i `events` variabeln. Det här värdet är användbart för organisationer som vill samla in data kring de intäkter som deras webbplats genererar. Den är starkt beroende av [`products`](../products.md) variabler och [`purchaseID`](../purchaseid.md) variabler.
 
 När du anger en köphändelse påverkas följande mått:
 
