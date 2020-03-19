@@ -2,7 +2,7 @@
 title: linkURL
 description: Åsidosätt den automatiskt genererade länken URL AppMeasurement använder i länkspårningsanrop.
 translation-type: tm+mt
-source-git-commit: 4a6cfa479559a644588613bd127c5b45ee8787e6
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -23,4 +23,4 @@ Variabeln `s.linkURL` är en sträng som innehåller URL-adressen för webbläsa
 s.linkURL = "https://example.com";
 ```
 
-Om `linkName` variabeln inte är inställd för ett länkspårningsanrop används `linkURL` variabeln i stället.
+Om [`linkName`](linkname.md) variabeln inte är inställd för ett länkspårningsanrop används `linkURL` variabeln i stället.
