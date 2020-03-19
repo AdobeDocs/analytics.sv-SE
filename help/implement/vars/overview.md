@@ -3,7 +3,7 @@ title: Variabler, funktioner, metoder och plugin-program - översikt
 description: Lär dig vilka variabler du kan ta med i de data du skickar till Adobe för att förbättra rapporteringen.
 keywords: appmeasurement,variables,vars,configuration,page,implementation
 translation-type: tm+mt
-source-git-commit: 7a1c3c7ed0e509969e281e865e8ff2c969a18bcb
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -26,7 +26,7 @@ AppMeasurement-bibliotek som publiceras av Adobe Analytics följer en specifik o
 
 1. Om webbplatsen använder ett datalager måste alla tillämpliga variabler fyllas i först. Mer information finns i [Datalager](../prepare/data-layer.md) .
 2. Använd datalagret för att fylla i Analytics-variabler. Om du använder Launch kan du enkelt utföra den här uppgiften genom att använda dataelement och sedan tilldela dataelementet till en variabel. Se [Dataelement](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html) i användarhandboken för Launch.
-3. Anropa spårningsfunktionen. De flesta AppMeasurement-bibliotek använder `t()` funktionen, men vissa av de mobila SDK:erna använder `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
+3. Anropa spårningsfunktionen. De flesta AppMeasurement-bibliotek använder `t()` metoden, men vissa av de mobila SDK:ernas använder `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
 
 ## Ogiltiga tecken
 
