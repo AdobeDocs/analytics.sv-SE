@@ -2,7 +2,7 @@
 title: trackingServerSecure
 description: Bestäm var bildbegäranden ska skickas på HTTPS-sidor.
 translation-type: tm+mt
-source-git-commit: 979a95ca749a3e21c4ddf48ba2d2a95672938a20
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -22,7 +22,7 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
 4. Expandera dragspelsfliken, som visar [!UICONTROL General] [!UICONTROL SSL Tracking Server] fältet.
 
-Om fältet lämnas tomt blir standardvärdet i `trackingServer` variabeln.
+Om fältet lämnas tomt blir standardvärdet i [`trackingServer`](trackingserver.md) variabeln.
 
 ## s.trackingServerSecure in AppMeasurement and Launch custom code editor
 
