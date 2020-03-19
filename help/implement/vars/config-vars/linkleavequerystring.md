@@ -2,14 +2,14 @@
 title: linkLeaveQueryString
 description: Tillåter lagring av frågesträngar i länkspårningsdimensioner.
 translation-type: tm+mt
-source-git-commit: e500332fe16887fa004858b07b59644837e183aa
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # linkLeaveQueryString
 
-AppMeasurement rensar frågesträngar från URL:er för länkspårning som standard. Använd variabeln linkLeaveQueryString för att bevara frågesträngar i länkspårningsdimensioner.
+AppMeasurement rensar frågesträngar från URL:er för länkspårning som standard. Använd variabeln för att bevara frågesträngar i dimensioner för länkspårning. `linkLeaveQueryString`
 
 För vissa avslutslänkar och hämtningslänkar kan den viktiga delen av URL-adressen finnas i frågesträngen. En nedladdningslänk som `https://example.com/download.asp?filename=myfile.exe` innehåller till exempel viktig länkinformation i frågesträngen.
 
@@ -43,7 +43,7 @@ s.linkLeaveQueryString = true;
 
 ## Exempel
 
-Var försiktig när du ställer in den här variabeln på true, eftersom den kan påverka länkspårningsfilter som `linkInternalFilters`, `linkExternalFilters`och `linkDownloadFiletypes`.
+Var försiktig när du ställer in den här variabeln på true, eftersom den kan påverka länkspårningsfilter som [`linkInternalFilters`](linkinternalfilters.md), [`linkExternalFilters`](linkexternalfilters.md)och [`linkDownloadFiletypes`](linkdownloadfiletypes.md).
 
 Titta på följande exempel som om det var på `adobe.com`:
 
