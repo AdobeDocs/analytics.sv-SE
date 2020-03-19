@@ -2,7 +2,7 @@
 title: s_gi()
 description: Skapa och spåra instanser av AppMeasurement.
 translation-type: tm+mt
-source-git-commit: d1db8da65faac1bf09fa2a290a2645092b542a35
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -36,7 +36,7 @@ var s = s_gi("examplersid");
 var s = s_gi("examplersid1,examplersid2");
 ```
 
-> [!WARNING] Följande avsnitt och exempel innehåller komplexa implementeringsämnen. Testa implementeringen noggrant och spåra viktiga anpassningar i din organisations [lösningsdesigndokument](../../prepare/solution-design.md).
+> [!CAUTION] Följande avsnitt och exempel innehåller komplexa implementeringsämnen. Testa implementeringen noggrant och spåra viktiga anpassningar i din organisations [lösningsdesigndokument](../../prepare/solution-design.md).
 
 ## Hantera flera implementeringar med olika spårningsobjekt
 
