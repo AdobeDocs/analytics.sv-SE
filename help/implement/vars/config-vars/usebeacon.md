@@ -2,7 +2,7 @@
 title: useBeacon
 description: Med useBeacon kan du tvinga AppMeasurement att använda webbläsarnas sendBeacon-API
 translation-type: tm+mt
-source-git-commit: 58513f012bdbd1143601221985a399ed46916664
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 58513f012bdbd1143601221985a399ed46916664
 
 I de flesta moderna webbläsare finns den inbyggda metoden `navigator.sendBeacon()`. Den skickar asynkront en liten mängd data via HTTP till en webbserver. AppMeasurement kan använda `navigator.sendBeacon()` metoden om `useBeacon` variabeln är aktiverad. Det är användbart för att avsluta länkar och andra situationer där du vill skicka information innan sidan tas bort.
 
-Om `useBeacon` alternativet är aktiverat används webbläsarens `navigator.sendBeacon()` metod i nästa träff som skickas till Adobe i stället för en standardbegäran om `GET` bilder. Den här variabeln gäller för både `s.t()` - och `s.tl()` bildbegäranden. AppMeasurement 2.17.0 eller senare krävs.
+Om `useBeacon` alternativet är aktiverat används webbläsarens `navigator.sendBeacon()` metod i nästa träff som skickas till Adobe i stället för en standardbegäran om `GET` bilder. Den här variabeln gäller för både [`s.t()`](../functions/t-method.md) - och [`s.tl()`](../functions/tl-method.md) bildbegäranden. AppMeasurement 2.17.0 eller senare krävs.
 
 > [!TIP] AppMeasurement aktiverar automatiskt `useBeacon` för att avsluta länkbildsförfrågningar.
 
