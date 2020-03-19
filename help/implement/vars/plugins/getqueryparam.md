@@ -2,7 +2,7 @@
 title: getQueryParam
 description: Extrahera värdet för en URL:s frågesträngsparameter.
 translation-type: tm+mt
-source-git-commit: 180ad544541f25d02b3a257559bc045abed7387b
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 180ad544541f25d02b3a257559bc045abed7387b
 
 Med `getQueryParam` plugin-programmet kan du extrahera värdet för alla frågesträngsparametrar som finns i en URL. Det är användbart för att extrahera kampanjkoder, både interna och externa, från URL:er för landningssidor. Det är också värdefullt när du extraherar söktermer eller andra frågesträngsparametrar.
 
-Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha enkla frågesträngsparametrar rekommenderar Adobe att du använder URL-parameterfunktionerna i Launch eller den metod som ingår i AppMeasurement. `Util.getQueryParam`
+Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha enkla frågesträngsparametrar rekommenderar Adobe att du använder URL-parameterfunktionerna i Launch eller den metod som ingår i AppMeasurement. [`Util.getQueryParam()`](../functions/util-getqueryparam.md)
 
 ## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
