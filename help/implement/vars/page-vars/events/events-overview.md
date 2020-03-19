@@ -2,7 +2,7 @@
 title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 translation-type: tm+mt
-source-git-commit: c7d596be4f70c820039725be6a5fddc8572156d9
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -42,7 +42,7 @@ Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med
 * `scView`: Ökar Cart Views-måttet.
 * `scCheckout`: Ökar &#39;Utcheckningar&#39;-måttet.
 
-> [!TIP] Den här variabeln är skiftlägeskänslig. Undvik att händelsevärden med felaktig skiftläge för att säkerställa korrekt datainsamling.
+> [!NOTE] Den här variabeln är skiftlägeskänslig. Undvik att händelsevärden med felaktig skiftläge för att säkerställa korrekt datainsamling.
 
 ```js
 // Set the events variable to a single value
