@@ -4,26 +4,26 @@ title: Använda metoden s.tl()
 topic: Activity map
 uuid: 59e062af-6a1c-46ff-9c3b-6cf7a0453711
 translation-type: tm+mt
-source-git-commit: 290526ecc1b040f93d0734a5deaf2d79ab1bde10
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
-# Använda `tl` metoden
+# Använda `tl()` metoden
 
-Du kan använda metoden för att spåra anpassade element och för att konfigurera överläggsåtergivning för dynamiskt innehåll. `tl`
+Du kan använda metoden för att spåra anpassade element och för att konfigurera överläggsåtergivning för dynamiskt innehåll. `tl()`
 
 ## Spåra anpassade element {#section_5D6688DFFFC241718249A9A0C632E465}
 
-Med hjälp av [`tl` metoden](/help/implement/vars/functions/tl-method.md) som en del av Activity Map AppMeasurement-modulen kan du spåra alla objekt som du klickar på, även objekt som inte är ankartaggar eller bildelement. Med s.tl kan du spåra alla anpassade element som inte medför att sidan läses in.
+Med hjälp av [`tl()` metoden](/help/implement/vars/functions/tl-method.md) som en del av Activity Map AppMeasurement-modulen kan du spåra alla objekt som du klickar på, även objekt som inte är ankartaggar eller bildelement. Med s.tl kan du spåra alla anpassade element som inte medför att sidan läses in.
 
-I `tl` metoden är det den `linkName` parameter som används för att identifiera avslutslänkar, anpassade länkar osv. används nu även för att identifiera länk-ID:t för aktivitetskartan.
+I `tl()` metoden är det den `linkName` parameter som används för att identifiera avslutslänkar, anpassade länkar osv. används nu även för att identifiera länk-ID:t för aktivitetskartan.
 
 ```js
 s.tl(this,linkType,linkName,variableOverrides)
 ```
 
-Med andra ord, om du använder `s.tl` för att spåra dina anpassade element hämtas länk-ID:t från värdet som skickas som den tredje parametern (linkName) i `s.tl` metoden. Den hämtas inte från den standardalgoritm för länkspårning som används för [standardspårning](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md) i aktivitetskartan.
+Med andra ord, om du använder `s.tl()` för att spåra dina anpassade element hämtas länk-ID:t från värdet som skickas som den tredje parametern (linkName) i `s.tl()` metoden. Den hämtas inte från den standardalgoritm för länkspårning som används för [standardspårning](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md) i aktivitetskartan.
 
 ## Överläggsåtergivning för dynamiskt innehåll {#section_FD24B61A732149C7B58BA957DD84A5E7}
 
@@ -33,9 +33,9 @@ När funktionen s.tl() anropas direkt från HTML-elementets on-click-händelse k
 <div onclick="s.tl(this,'o','Example custom link')">Example link text</a>
 ```
 
-När webbsidesinnehåll läggs till på sidan efter att den första sidan har lästs in, anropas metoden indirekt och vi kan inte visa övertäckningar för det nya innehållet om det inte uttryckligen aktiveras/klickas. `tl` Därefter utlöses en ny länksamlingsprocess från aktivitetskartan.
+När webbsidesinnehåll läggs till på sidan efter att den första sidan har lästs in, anropas metoden indirekt och vi kan inte visa övertäckningar för det nya innehållet om det inte uttryckligen aktiveras/klickas. `tl()` Därefter utlöses en ny länksamlingsprocess från aktivitetskartan.
 
-När `tl` metoden inte anropas direkt från HTML-elementets on-click-händelse kan aktivitetskartan bara visa övertäckning när användaren har klickat på elementet. Här är ett exempel där `tl` metoden anropas indirekt:
+När `tl()` metoden inte anropas direkt från HTML-elementets on-click-händelse kan aktivitetskartan bara visa övertäckning när användaren har klickat på elementet. Här är ett exempel där `tl()` metoden anropas indirekt:
 
 ```html
 <div onclick="someFn(event)"></div>
