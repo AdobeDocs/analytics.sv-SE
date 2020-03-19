@@ -2,7 +2,7 @@
 title: contextData
 description: Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa.
 translation-type: tm+mt
-source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -44,7 +44,7 @@ Bearbetningsreglerna börjar gälla omedelbart när de har sparats. De gäller i
 
 ## Skicka kontextdata i ett länkspårningsanrop
 
-Inkludera kontextdatavariabeln som en egenskap för `contextData` i `s.linkTrackVars`:
+Inkludera kontextdatavariabeln som en egenskap för `contextData` i [`s.linkTrackVars`](../config-vars/linktrackvars.md):
 
 ```js
 s.contextData["example_variable"] = "Example value";
