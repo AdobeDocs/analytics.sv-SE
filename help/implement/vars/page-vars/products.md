@@ -2,7 +2,7 @@
 title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 translation-type: tm+mt
-source-git-commit: c7d596be4f70c820039725be6a5fddc8572156d9
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: c7d596be4f70c820039725be6a5fddc8572156d9
 
 Variabeln `products` spårar produkter och egenskaper som är knutna till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och Adobe tolkar värdet i separata dimensionsvärden.
 
-> [!NOTE] Om den här variabeln anges i en träff utan en kundvagnshändelse i `events` variabeln ökar måttet&quot;Produktvyer&quot; med 1. Se till att du ställer in rätt kundvagnshändelse för varje träff.
+> [!NOTE] Om den här variabeln anges i en träff utan en kundvagnshändelse i [`events`](events/events-overview.md) variabeln ökar måttet&quot;Produktvyer&quot; med 1. Se till att du ställer in rätt kundvagnshändelse för varje träff.
 
 ## Produkter i Adobe Experience Platform Launch
 
@@ -31,7 +31,7 @@ Variabeln `s.products` är en sträng som innehåller flera avgränsade fält pe
 * **Kategori** (valfritt): Den övergripande produktkategorin. Din organisation bestämmer hur produkter ska grupperas i kategorier.
 * **Produktnamn** (obligatoriskt): Produktens namn.
 * **Kvantitet** (valfritt): Hur många av dessa produkter finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
-* **Pris** (valfritt): Produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar `currencyCode` variabeln. Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
+* **Pris** (valfritt): Produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar [`currencyCode`](../config-vars/currencycode.md) variabeln. Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
 * **Händelser** (valfritt): Händelser som är kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). Mer information finns i [Händelser](events/events-overview.md) .
 * **eVars** (valfritt): Merchandising eVars knutna till produkten. Avgränsa flera eVars-handlare med ett rör (`|`). Mer information finns i [Varor](../../../components/c-variables/c-merch-variables/var-merchandising.md) .
 
@@ -47,7 +47,7 @@ Den här variabeln har stöd för flera produkter i samma träff. Det är värde
 s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Example product 2,1,5.99";
 ```
 
-> [!IMPORTANT] Se till att du tar bort alla semikolon, kommatecken och rör från produktnamn, kategorier och eVar-värden. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
+> [!IMPORTANT] Ta bort alla semikolon, komman och rör från produktnamn, kategorier och eVar-värden. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
 
 ## Exempel
 
