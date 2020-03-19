@@ -2,14 +2,14 @@
 title: Util.getQueryParam
 description: Returnerar värdet för en frågesträngsparameter.
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # Util.getQueryParam
 
-Frågesträngsparametrar i en webbläsarURL innehåller ofta viktiga data för Analytics. Använd `Util.getQueryParam` metoden för att hämta data från frågesträngen.
+Frågesträngsparametrar i en webbläsarURL innehåller ofta viktiga data för Analytics. Använd `Util.getQueryParam()` metoden för att hämta data från frågesträngen.
 
 ## Hämta frågesträngsparameterdata i Adobe Experience Platform Launch
 
@@ -50,4 +50,4 @@ var customString = "https://example.com?q1=value1;q2=value2;q3=value3";
 s.eVar1 = s.Util.getQueryParam("q2",customString,";");
 ```
 
-> [!NOTE] Tidigare versioner av AppMeasurement hade ett plugin-program med namnet `s.getQueryParam` tillgängligt. Detta plugin-program behövs inte längre eftersom det nu ingår i AppMeasurement som standard.
+> [!TIP] Det finns ett liknande plugin-program med namnet [`s.getQueryParam`](../plugins/getqueryparam.md) . Detta plugin-program innehåller mer avancerade funktioner, men är också mer komplext och ingår inte i AppMeasurement som standard.
