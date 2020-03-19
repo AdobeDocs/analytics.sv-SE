@@ -2,14 +2,14 @@
 title: t
 description: Skicka ett spårningsanrop för sidvy till Adobe.
 translation-type: tm+mt
-source-git-commit: 8494e8bb08b45006b357dd114e6bf9507f0cd54a
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
-# t
+# t()
 
-Metoden är en viktig `t` komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobes datainsamlingsservrar.
+Metoden är en viktig `t()` komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobes datainsamlingsservrar.
 
 Titta på följande JavaScript-kod:
 
@@ -25,7 +25,7 @@ s.eVar1 = "Example dimension value";
 s.t();
 ```
 
-När du kör `t` metoden används alla definierade Analytics-variabler och en URL som baseras på dessa variabler skapas. Vissa analysvariabler bestämmer URL:en för bilden, medan andra variabler bestämmer parametervärden för frågesträngar.
+När du kör `t()` metoden används alla definierade Analytics-variabler och en URL som baseras på dessa variabler skapas. Vissa analysvariabler bestämmer URL:en för bilden, medan andra variabler bestämmer parametervärden för frågesträngar.
 
 ```text
 https://data.example.com/b/ss/examplersid/1/?v1=Example%20dimension%20value
