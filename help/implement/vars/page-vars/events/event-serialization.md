@@ -2,7 +2,7 @@
 title: Händelseserialisering
 description: Hjälper dig att deduplicera mätvärden på din webbplats.
 translation-type: tm+mt
-source-git-commit: c5a60bc9756af2742740dbc6a26a081f55ee3235
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -15,7 +15,7 @@ Händelseserialisering är processen att implementera åtgärder för att förhi
 
 ## Konfigurera händelseserialisering
 
-Du måste först ange att en händelse ska [!UICONTROL Unique Event Recording] anges [!UICONTROL Use Event ID] i inställningarna för rapportsviten. Se [Success Events](../../../../admin/admin/c-success-events/success-event.md) i användarhandboken för Admin.
+Du måste först ange att en händelse ska [!UICONTROL Unique Event Recording] anges [!UICONTROL Use Event ID] i inställningarna för rapportsviten. Se [Success Events](/help/admin/admin/c-success-events/success-event.md) i användarhandboken för Admin.
 
 När du använder händelse-ID:n utförs borttagning av dubbletter på följande nivåer:
 
@@ -23,7 +23,7 @@ När du använder händelse-ID:n utförs borttagning av dubbletter på följande
 * Deduplicering sker globalt för alla besökare. Om besökare A skickar `event1:ABC` så ignorerar Adobe den andra förekomsten från besökare B `event1:ABC`också.
 * Borttagning av dubbletter upphör inte att gälla. Om en besökare skickar tillbaka `event1:ABC` sedan två år tillbaka och skickar `event1:ABC` igen, ignorerar Adobe den andra förekomsten.
 
-> [!TIP] Om du vill avduplicera `purchase` händelsen använder du `purchaseID` variabeln i stället.
+> [!TIP] Om du vill avduplicera [`purchase`](event-purchase.md) händelsen använder du [`purchaseID`](../purchaseid.md) variabeln i stället.
 
 ## Använd händelse-ID:n i Adobe Experience Platform Launch
 
