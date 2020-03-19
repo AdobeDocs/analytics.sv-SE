@@ -4,7 +4,7 @@ title: Sidvyer
 topic: Reports
 uuid: c78260c6-9ad4-4b85-84fd-763627392e44
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 707b61d853a8ec68b3f77a35a1aa5f0c7dd8a1fd
 
 ---
 
@@ -15,17 +15,16 @@ En trendrapport som visar hur många gånger webbplatsens sidor har visats för 
 
 En [sidvy](/help/components/c-variables/c-metrics/metrics-page-view.md) är en begäran om ett helsidesdokument i stället för ett element på en sida, till exempel en bild eller video. Om en enskild besökare till exempel visar 15 sidor under ett besök räknas 15 sidvisningar. Om en besökare tittar på samma sida tre gånger under ett besök räknas tre sidvisningar.
 
-**Rapportegenskaper**
+## Rapportegenskaper
 
-* Den här rapporten refererar det antal gånger som funktionen [s.t()](https://marketing.adobe.com/resources/help/en_US/sc/implement/c_the_s.t(.html)function) har anropats på din plats.
-* Anrop till anpassad [länkspårning](https://marketing.adobe.com/resources/help/en_US/sc/implement/c_linktracking.html) [!DNL s.tl()] (t.ex. anpassade länkar, nedladdningar och avslutslänkar) använder funktionen och räknas inte i den här rapporten.
-
+* Den här rapporten refererar det antal gånger som [`t()`](/help/implement/vars/functions/t-method.md) metoden anropas på din plats.
+* Länkspårningsanrop som använder [`tl()`](/help/implement/vars/functions/tl-method.md) metoden räknas inte i den här rapporten.
 * Eftersom bildbegäranden skickas när användaren uppdaterar sidan eller klickar på bakåtknappen, innehåller den här rapporten även dessa åtgärder.
 * Timuppdelningar baseras på rapportsvitens tidszon.
 * Den här rapporten innehåller inga radartiklar. Därför kan rapporten bara visas i trendformat.
 * Kornighet mellan timme, dag, vecka, månad, kvartal och år kan tillämpas. Denna granularitet är tillgänglig beroende på rapportens datumintervall.
 
-**Produktspecifik information**
+## Produktspecifik information
 
 <table id="table_61F964F47D1D43508B271999F495F7F9"> 
  <tbody> 
