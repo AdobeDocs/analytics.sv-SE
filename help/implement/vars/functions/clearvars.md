@@ -2,14 +2,14 @@
 title: clearVars
 description: Tar bort följande värden från instansobjektet. Den här funktionen tar bort elementen (anger dem som "undefined").
 translation-type: tm+mt
-source-git-commit: d1db8da65faac1bf09fa2a290a2645092b542a35
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # clearVars
 
-Vissa implementeringar, till exempel på enkelsidiga program, kräver flera träffar som skickas på samma sidinläsning. Använd `clearVars` metoden för att rensa variabelvärden så att de inte kvarstår för efterföljande träffar.
+Vissa implementeringar, till exempel på enkelsidiga program, kräver flera träffar som skickas på samma sidinläsning. Använd `clearVars()` metoden för att rensa variabelvärden så att de inte kvarstår för efterföljande träffar.
 
 Den här metoden tar inga argument och returnerar inget värde. Dess enda syfte är att rensa variabelvärden från förekomstobjektet. Den här metoden ställer in följande element till `undefined`:
 
