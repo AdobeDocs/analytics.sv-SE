@@ -2,14 +2,14 @@
 title: linkDownloadFileTypes
 description: Fastställ filtillägg som automatiskt spåras som nedladdningslänkar.
 translation-type: tm+mt
-source-git-commit: 8f7baa770f800ffe800e760f1eca59911d3db348
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # linkDownloadFileTypes
 
-När `trackDownloadLinks` är inställt på `true` och en besökare klickar på en länk, kontrollerar AppMeasurement länkens URL för att se om det finns filtypstillägg. Om länk-URL:en innehåller en filtyp som hittades i `linkDownloadFileTypes`skickas en begäran om hämtning av länkbild automatiskt.
+När [`trackDownloadLinks`](trackdownloadlinks.md) är aktiverat och en besökare klickar på en länk, kontrollerar AppMeasurement länkens URL för att se om det finns filtypstillägg. Om länk-URL:en innehåller en filtyp som hittades i `linkDownloadFileTypes`skickas en begäran om hämtning av länkbild automatiskt.
 
 Anpassa `linkDownloadFileTypes` vilka filtillägg du vill räkna som nedladdningslänkar.
 
@@ -21,7 +21,7 @@ Anpassa `linkDownloadFileTypes` vilka filtillägg du vill räkna som nedladdning
 > * Länkar som använder JavaScript, till exempel `javascript:openLink()`
 >
 > 
-För dessa hämtningstyper kan du anropa `tl()` funktionen manuellt.
+För dessa hämtningstyper kan du anropa [`tl()`](../functions/tl-method.md) metoden manuellt.
 
 Om en klickad länk matchar både villkoren för avslutningslänk och nedladdningslänk får nedladdningslänkstypen prioritet.
 
@@ -40,8 +40,8 @@ Lägg till filtillägg i listan genom att skriva text i fältet och klicka på [
 
 Variabeln `s.linkDownloadFileTypes` är en sträng med kommaavgränsade filtillägg. Använd inte blanksteg.
 
-Om den här variabeln inte är definierad fungerar inte automatisk länkspårning för hämtning (även om den `trackDownloadLinks` är `true`).
+Om den här variabeln inte är definierad fungerar inte automatisk länkspårning för hämtning (även om den [`trackDownloadLinks`](trackdownloadlinks.md) är `true`).
 
 ```js
-s.linkDownloadFileTypes = "doc,docx,eps,jpg,png,svg,xls,ppt,pptx,pdf,xlsx,tab,csv,zip,txt,vsd,vxd,xml,js,css,rar,exe,wma,mov,avi,wmv,mp3,wav,m4v"
+s.linkDownloadFileTypes = "doc,docx,eps,jpg,png,svg,xls,ppt,pptx,pdf,xlsx,tab,csv,zip,txt,vsd,vxd,xml,js,css,rar,exe,wma,mov,avi,wmv,mp3,wav,m4v";
 ```
