@@ -2,7 +2,7 @@
 title: linkType
 description: Använd variabeln linkType för att avgöra vilken länkspårningsdimension träffen tillhör.
 translation-type: tm+mt
-source-git-commit: 4a6cfa479559a644588613bd127c5b45ee8787e6
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
@@ -15,7 +15,7 @@ Spårningsträffar för länkar kan fylla i en av tre dimensioner:
 * Avsluta länkar
 * Hämta länkar
 
-Använd variabeln `linkType` för att bestämma vilken dimension du vill fylla i när du kör nästa `tl()` funktion.
+Använd variabeln `linkType` för att bestämma vilken dimension du vill fylla i när du kör nästa [`tl()`](../functions/tl-method.md) funktion.
 
 ## Länktyp i Adobe Experience Platform Launch
 
@@ -32,13 +32,13 @@ Du kan ställa in den här listrutan till [!UICONTROL Custom Link], [!UICONTROL 
 
 ## s.linkType i AppMeasurement och Launch, anpassad kodredigerare
 
-Variabeln `s.linkType` är en sträng som accepterar ett av tre enkla teckenvärden: `o`, `d`eller `e`. Om en `tl()` funktion anropas utan en länktyp blir standardvärdet Anpassad länk.
+Variabeln `s.linkType` är en sträng som accepterar ett av tre enkla teckenvärden: `o`, `d`eller `e`. Om en `tl()` metod anropas utan en länktyp används som standard en anpassad länk.
 
 * `o` - Anpassade länkar
 * `d` - Hämta länkar
 * `e` - Avsluta länkar
 
-> [!TIP] Den här variabeln är den andra parametern i `tl()` funktionen och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkType` `tl()` funktionen.
+> [!TIP] Den här variabeln är den andra parametern i `tl()` metoden och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkType` `tl()` metoden.
 
 ```js
 s.linkType = "e";
