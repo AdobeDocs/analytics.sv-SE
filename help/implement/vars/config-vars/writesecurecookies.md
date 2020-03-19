@@ -2,14 +2,14 @@
 title: writeSecureCookies
 description: Tillåter AppMeasurement att ange cookies med attributet Secure.
 translation-type: tm+mt
-source-git-commit: 7644f70dfec5380fc75be14605f1c4f74ee4a8c3
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # writeSecureCookies
 
-Variabeln gör att AppMeasurement kan ange `writeSecureCookies` säkra cookies [](https://en.wikipedia.org/wiki/Secure_cookie) för Analytics. Den här inställningen gäller både cookies för besökar-ID som anges av AppMeasurement och cookies som du anger med `Util.CookieWrite` metoden. AppMeasurement 2.18.0 eller senare krävs.
+Variabeln gör att AppMeasurement kan ange `writeSecureCookies` säkra cookies [](https://en.wikipedia.org/wiki/Secure_cookie) för Analytics. Den här inställningen gäller både cookies för besökar-ID som anges av AppMeasurement och cookies som du anger med `Util.CookieWrite()` metoden. AppMeasurement 2.18.0 eller senare krävs.
 
 > [!IMPORTANT] Om du aktiverar `writeSecureCookies` variabeln måste du se till att allt innehåll på webbplatsen hanteras säkert via HTTPS. AppMeasurement fungerar inte om den här variabeln är aktiverad och du har osäkert innehåll på sidan.
 
