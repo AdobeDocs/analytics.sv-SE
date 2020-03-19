@@ -2,20 +2,20 @@
 title: linkInternalFilters
 description: Använd variabeln linkInternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 translation-type: tm+mt
-source-git-commit: 8f7baa770f800ffe800e760f1eca59911d3db348
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # linkInternalFilters
 
-Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om `trackExternalLinks` så är `true`fallet skickas en bildförfrågan till Adobe direkt när besökaren klickar på en länk för att lämna din webbplats. Variablerna `linkTrackExternalFilters` och `linkTrackInternalFilters` bestämmer vilka länkar som betraktas som interna/externa.
+Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om [`trackExternalLinks`](trackexternallinks.md) är aktiverat skickas en bildförfrågan till Adobe direkt när en besökare klickar på en länk för att lämna din webbplats. Variablerna [`linkExternalFilters`](linkexternalfilters.md) och `linkInternalFilters` bestämmer vilka länkar som betraktas som interna/externa.
 
-Om den här variabeln innehåller ett värde fungerar automatisk avslutningslänkspårning på ett svartlistliknande sätt. Om ett länkklick inte matchar några `linkInternalFilters` värden betraktas det som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om `linkLeaveQueryString` är `true`det undersöks även frågesträngen.
+Om den här variabeln innehåller ett värde fungerar automatisk avslutningslänkspårning på ett svartlistliknande sätt. Om ett länkklick inte matchar några `linkInternalFilters` värden betraktas det som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om [`linkLeaveQueryString`](linkleavequerystring.md) är aktiverat undersöks även frågesträngen.
 
 Om du använder både `linkInternalFilters` och `linkExternalFilters` samtidigt måste den klickade länken matcha `linkExternalFilters` och **inte matcha** `linkInternalFilters` för att betraktas som en avslutslänk. Om en klickad länk matchar både villkoren för avslutningslänk och nedladdningslänk får nedladdningslänkstypen prioritet.
 
-> [!NOTE] Filtren `linkInternalFilters` och den interna URL:en är separata funktioner som fyller olika syften. Variabeln fungerar specifikt för att spåra `linkInternalFilters` en avslutningslänk. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän. Se [Interna URL-filter](/help/admin/admin/internal-url-filter-admin.md) i användarhandboken för Admin.
+> [!NOTE] Filtren `linkInternalFilters` och [filtren](/help/admin/admin/internal-url-filter-admin.md) för intern URL är separata funktioner som fyller olika syften. Variabeln fungerar specifikt för att spåra `linkInternalFilters` en avslutningslänk. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
 
 ## Utgående länkar - Spåra aldrig i Adobe Experience Platform Launch
 
