@@ -2,16 +2,16 @@
 title: trackExternalLinks
 description: Aktivera eller inaktivera automatisk länkspårning för att avsluta länkar.
 translation-type: tm+mt
-source-git-commit: 04b97e93a95691132680d4da197dc62eb2b9fdd1
+source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 ---
 
 
 # trackExternalLinks
 
-Adobe ger möjlighet att spåra utgående länkar utan att manuellt ange `tl()` funktionen för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för slutlänkar.
+Adobe ger möjlighet att spåra utgående länkar utan att manuellt ange [`tl()`](../functions/tl-method.md) metod för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för slutlänkar.
 
-När det är aktiverat jämför AppMeasurement alla klickade länk-URL:er med värden i `linkInternalFilters` och `linkExternalFilters`. Om det finns en matchning utlöses ett avslutningslänkspårningsanrop automatiskt.
+När det är aktiverat jämför AppMeasurement alla klickade länk-URL:er med värden i [`linkInternalFilters`](linkinternalfilters.md) och [`linkExternalFilters`](linkexternalfilters.md). Om det finns en matchning utlöses ett avslutningslänkspårningsanrop automatiskt.
 
 ## Spåra utgående länkar i Adobe Experience Platform Launch
 
@@ -26,7 +26,7 @@ Klicka i kryssrutan om du vill aktivera automatisk spårning av avslutningslänk
 
 ## s.trackExternalLinks in AppMeasurement and Launch custom code editor
 
-Det här `s.trackExternalLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk spårning av avslutningslänk. Om du inte vill spåra utgående länkar, eller föredrar att anropa funktionen manuellt för att spåra avslutslänkar, ställer du in den här variabeln på `tl()` `false`.
+Det här `s.trackExternalLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk spårning av avslutningslänk. Om du inte vill spåra utgående länkar, eller vill anropa metoden manuellt för att spåra avslutslänkar, anger du den här variabeln som `tl()` `false`.
 
 ```js
 s.trackDownloadLinks = true;
