@@ -2,7 +2,7 @@
 title: kampanj
 description: Fyll i dimensionen 'Spårningskod'.
 translation-type: tm+mt
-source-git-commit: c5a60bc9756af2742740dbc6a26a081f55ee3235
+source-git-commit: 7220b99268532adb2e425d52744dbc3efb615953
 
 ---
 
@@ -28,7 +28,7 @@ Du kan ställa in kampanjen på ett värde eller en frågesträngsparameter.
 
 ## s.campaign i AppMeasurement and Launch custom code editor
 
-Variabeln är en sträng som vanligtvis innehåller en spårningskod som används i marknadsföringsaktiviteter. `s.campaign` Dess största längd är 255 byte. värden som är längre än 100 byte trunkeras automatiskt när de skickas till Adobe.
+Variabeln är en sträng som vanligtvis innehåller en spårningskod som används i marknadsföringsaktiviteter. `s.campaign` Dess största längd är 255 byte. värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 
 ```js
 // Set the campaign variable to a static value
