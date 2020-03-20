@@ -3,7 +3,7 @@ description: I kalendern kan du ange datum och datumintervall eller välja en f�
 title: Översikt över kalender- och datumintervall
 uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 7220b99268532adb2e425d52744dbc3efb615953
 
 ---
 
@@ -12,16 +12,15 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 I kalendern kan du ange datum och datumintervall eller välja en förinställning.
 
-Kalenderval gäller på panelnivå, men du kan välja att använda dem på alla paneler. Som standard visas den aktuella månaden och den senaste månaden i arbetsytekalendern.
+Kalenderval gäller på panelnivå, men du kan välja att använda dem på alla paneler. När du klickar på ett datumintervall i Arbetsyta visas den aktuella kalendermånaden och den föregående kalendermånaden i gränssnittet. Du kan justera dessa två kalendrar genom att klicka på höger- och vänsterpilarna i respektive övre hörn.
 
-Första klickningen startar ett datumintervallval. Markera sedan intervallet i någon av riktningarna fram till den andra klickningen, som markerar datumintervallets slut. Om du håller ned `Shift` tangenten (eller högerklickar) när du klickar på det första datumet läggs den till i intervallet.
+![Kalender](assets/aw_calendar.png)
+
+Första klicket i en kalender startar ett datumintervallval. Den andra klickningen slutför ett datumintervallval som markeras. Om du håller ned `Shift` tangenten (eller högerklickar) läggs den till i det markerade området.
 
 Du kan också dra datum (och tidsdimensioner) till ett Workspace-projekt. Du kan välja specifika dagar, veckor, månader, år eller rullande datum.
 
-![](assets/aw_calendar.png)
-
 [Använda datumintervall och kalender i Analysis Workspace på YouTube](https://www.youtube.com/watch?v=L4FSrxr3SDA&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&index=28) (4:07)
-
 
 | Inställning | Beskrivning |
 |--- |--- |
