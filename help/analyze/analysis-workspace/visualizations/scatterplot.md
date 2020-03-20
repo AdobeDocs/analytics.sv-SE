@@ -1,20 +1,20 @@
 ---
-description: Visar hur många visningar som använts och hur många unika användare som har sett dessa intryck.
 title: Scatterplot
-uuid: 470b3142-3a0a-4cd8-8919-7b64044188c8
+description: En visualisering som visar relationen mellan upp till tre mätvärden.
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 7220b99268532adb2e425d52744dbc3efb615953
 
 ---
 
 
 # Scatterplot
 
-Visar hur många visningar som använts och hur många unika användare som har sett dessa intryck.
+Spridningsvisningen visar förhållandet mellan dimensionsvärden och upp till tre mätvärden. Den kräver tre komponenter och har stöd för visualisering av upp till fyra komponenter.
 
-Storleken på varje datapunkt ger en visuell indikation på det genomsnittliga antalet gånger som ett visningsprogram exponerades för en annons. Storleken och data varierar beroende på de dimensioner, datumintervall och filter du väljer.
+* Radkomponenten (vanligtvis en dimension) representerar varje punkt i diagrammet. Olika rader visas som olika färgade punkter.
+* Kolumnen längst till vänster (vanligtvis ett mått) ritar punktens position på Y-axeln (lodrätt).
+* Den andra kolumnen ritar punktens position på X-axeln (vågrät).
+* Den tredje kolumnen bestämmer punktens radie.
+* Alla efterföljande kolumner i en friformstabell ignoreras av visualisering av punktdiagram.
 
-![](assets/scatter.png)
-
-> [!NOTE] En tabell som är associerad med ett Scatterplot-diagram kräver minst två kolumner. Den första kolumnen definierar X-axeln och den andra kolumnen definierar Y-axeln. Om det finns en tredje kolumn tillgänglig används den för att bestämma punktens radie. Kolumnerna *1*, *2* och *3* mappas med andra ord till *X*, *Y*** och¥dot radius¥.
-
+![Scatterplot](assets/scatter.png)
