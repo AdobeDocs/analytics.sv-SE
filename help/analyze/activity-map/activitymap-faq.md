@@ -4,7 +4,7 @@ title: Vanliga frågor om aktivitetskartan
 topic: Activity map
 uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
 translation-type: tm+mt
-source-git-commit: 2ffa989156dd9bc4f6ef9a216e8c06425cc39440
+source-git-commit: fa9efcba40ae00c22e99f68f5be8f4d5bf32e44c
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 2ffa989156dd9bc4f6ef9a216e8c06425cc39440
 
 Vanliga frågor och svar om hur du konfigurerar, konfigurerar och använder funktioner i aktivitetskartan.
 
-## Implementering och AppMeasurement {#section_FB46DD652E854C07AD339D7DD5CBCEC6}
+## Implementering och AppMeasurement
 
 **F: Vilka är implementeringsstegen för att aktivera den nya aktivitetskartan?**
 
@@ -39,7 +39,21 @@ S: AppMeasurement introduceras på rapportsvitsnivå. Rapportsvitens nivå är v
 
 S: Nej. Funktionen för aktivitetskarta är inte beroende av VisitorAPI.
 
-## Program för aktivitetskarta {#section_E4F2DAC09EBA4E3BA7BACB49A0A89F8D}
+## Program för aktivitetskarta
+
+**F: Hur stöder Activity Map Single-Page Applications (SPA)?**
+
+S:
+
+* Med några få sekunders mellanrum skannas webbsidan efter ändringar på sidan. ActivityMap hittar nytt innehåll på sidan utan att en ny sidinläsning krävs, men det nya innehållet tilldelas alltid till den första pageName som hittades när sidan lästes in.
+
+* Aktivitetskartan kontrollerar om synligheten för länkar som den känner till har ändrats. Om synligheten ändras uppdateras kolumnen [Länkar på sida](/help/analyze/activity-map/activitymap-links-report.md) för den länken med **[!UICONTROL Displayed]** eller **[!UICONTROL Hidden]**.
+
+* När användarinteraktion skapar nytt innehåll läggs alla nya element som AppMeasurement finner vara en länk till **[!UICONTROL Links On Page]** tabellen. Activity Map skickar en ny databegäran som innehåller de nya länkarna. De nya länkarna ska visas i **[!UICONTROL Links On Page]** tabellen när databegäran hanteras av användargränssnittet.
+
+**F: Tillhandahåller aktivitetskartan data om &quot;vyer&quot;?**
+
+S: Nej, att spåra alla länkar som visas på varje sida kräver att vi samlar in mycket mer data. Aktivitetskartan innehåller inte den här funktionen som ett kostnadsfritt tillägg.
 
 **F: Kan jag använda Activity Map om jag inte tidigare har använt ClickMap för besökare på min webbplats?**
 
@@ -47,7 +61,7 @@ S: Att ha den äldre versionen - som nu helt enkelt kallas ClickMap - installera
 
 **F: Vilka webbläsare och versioner stöds av Activity Map?**
 
-S: Vi stöder endast den senaste versionen av de fyra huvudwebbläsarna (Chrome, Firefox, Safari och IE).
+S: Vi stöder den senaste versionen av de fyra huvudwebbläsarna (Chrome, Firefox, Safari och IE).
 
 **F: Vilka är standardinställningarna för övertäckning?**
 
@@ -68,12 +82,6 @@ S: Vissa rankade länkar kan vara dolda på sidan (t.ex. undermenylänkar). Där
 
 S: Aktivitetskartan används, men data för länkklickning samlas inte in av Analytics-taggen. Detta beteende följer beteendet för plugin-programmet ClickMap.
 
-**F: Varför visas samma mått flera gånger i den nedrullningsbara menyn för mätvärden?**
-
-S: Activity Map listar mått för alla rapportsviter. Det innebär att du kan förvänta dig duplicering om företaget inte har genomgått en [metrisk konsolideringsprocess](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/cm_transition.html).
-
-Med listrutan Metrisk kan du begränsa listan med beräknade värden till de som är tilldelade till den besökta sidans rapportserie.
-
 **F: Hur skiljer sig rapporten Activity Map All Links från rapporten Reports &amp; Analytics Activity Map?**
 
 S: För att hämta rapporten Alla länkar i aktivitetskartan skapar vi en delningsbegäran enligt följande: Sida för aktivitetskarta = &quot;besökd sida&quot;, uppdelad efter länk&amp;region för aktivitetskarta i `<list of link&regions present in the page at rendering time>`.
@@ -84,9 +92,7 @@ Det är dock viktigt att komma ihåg att den erhållna rapporten i FoA innehåll
 
 **F: Hur fungerar Activity Map med sidor som innehåller flera taggar som listar flera rapportsviter?**
 
-S: Som standard används rapportsviten som är kopplad till den första taggen som skickas av sidan.
-
-Du kan välja en annan taggad rapportserie via fliken Inställningar för aktivitetskarta > Övriga.
+S: Som standard används rapportsviten som är kopplad till den första taggen som skickas av sidan. Du kan välja en annan taggad rapportserie via fliken Inställningar för aktivitetskarta > Övriga.
 
 **F: Hur länge söker Activity Map efter analystaggen?**
 
@@ -116,27 +122,27 @@ Ett varningsmeddelande visas under verktygsfältet som anger att det inte finns 
 
 *Webbsida med inkompatibel Analytics-tagg (AppMeasurement v1.5 eller tidigare)*
 
-Ett varningsmeddelande visas som anger att du behöver (/home/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) uppgradera sidkoden till v1.6.
+Ett varningsmeddelande visas som anger att du måste uppgradera sidkoden till v1.6 eller senare.
 
 *Webbsida med kompatibel Analytics-tagg (AppMeasurement v1.6 eller senare), men rapportering av aktivitetskarta har inte aktiverats i Admin Tools*
 
 Ett varningsmeddelande visas som anger att du måste be administratören att \[Aktivera rapporten för aktivitetskartan\](/home/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md&quot;).
 
-**F: Kan jag exportera aktivitetskarta (contextData) via[Analytics Data Feed](https://marketing.adobe.com/resources/help/en_US/reference/analytics-data-feed.html)?**
+**F: Kan jag exportera aktivitetskarta (contextData) via[Analytics Data Feed](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html)?**
 
 S: Nej.
 
-## Segmentering i aktivitetskarta {#section_44D6C5F59B8542DC8A3AF38BD8078DCA}
+## Segmentering i aktivitetskarta
 
-**F: Är segment kopplade till enskilda användarsegment? Eller finns delade administratörsnivåsegment tillgängliga i aktivitetskartan?**
+**F: Är segment kopplade till enskilda användarsegment? Är delade segment tillgängliga i aktivitetskartan?**
 
-S: Aktivitetskartan ärver era segment på administratörsnivå (rapporteringssegment) från Analytics.
+S: Activity Map ärver dina rapporteringssegment från Analytics.
 
 **F: Fungerar segment i Live-läge?**
 
 S: Nej, segment fungerar inte i Live-läge. Funktionen motsvarar den i realtidsrapporter i rapporter och analyser.
 
-## Virtuella rapportsviter {#section_BDB0CA9E732F478EAC349A79753A78DB}
+## Virtuella rapportsviter
 
 **F: Är aktivitetskartan kompatibel med virtuella rapportsviter?**
 
