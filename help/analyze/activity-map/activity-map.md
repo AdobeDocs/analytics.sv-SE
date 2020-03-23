@@ -4,15 +4,18 @@ title: Översikt över aktivitetskartan
 topic: Activity map
 uuid: 7232b875-6907-4b53-b466-5e9157a22ef0
 translation-type: tm+mt
-source-git-commit: 59e1bc7644a02c6cafbb7d7833d1cc9bd157b9d1
+source-git-commit: fa9efcba40ae00c22e99f68f5be8f4d5bf32e44c
 
 ---
 
 
 # Översikt över aktivitetskartan
 
+>[!Note]
+>Läs om hur aktivitetskartan stöder SPA (Single-Page Applications) på sidan [Frågor och svar](/help/analyze/activity-map/activitymap-faq.md) .
+
 >[!IMPORTANT]
->Den 16 januari 2020 börjar Adobe Analytics gå över till en ny domän - https://experience.adobe.com/analytics. Den här ändringen kan leda till att aktivitetskartan slutar fungera för vissa kunder i vissa fall. Som du vet injiceras aktivitetskartan på kundsidan i en iframe (en iframe för verktygsfältet Aktivitetskarta och en iframe för panelen Aktivitetskarta). Du kan ha angett ett direktiv om skyddsprofiler för innehåll på webbsidan för &quot;frame-src&quot; som inte innehåller &quot;.adobe.com&quot;. I det här fallet kommer aktivitetskartan att sluta fungera på en sådan webbsida.
+>Den 16 januari 2020 började Adobe Analytics gå över till en ny domän - https://experience.adobe.com/analytics. Den här ändringen kan leda till att aktivitetskartan slutar fungera för vissa kunder i vissa fall. Som du vet injiceras aktivitetskartan på kundsidan i en iframe (en iframe för verktygsfältet Aktivitetskarta och en iframe för panelen Aktivitetskarta). Du kan ha angett ett direktiv om skyddsprofiler för innehåll på webbsidan för &quot;frame-src&quot; som inte innehåller &quot;.adobe.com&quot;. I det här fallet kommer aktivitetskartan att sluta fungera på en sådan webbsida.
 
 Activity Map är en Adobe Analytics-applikation som är utformad för att rangordna länkaktivitet med visuella överlägg och tillhandahålla en instrumentpanel med realtidsanalyser för att övervaka målgruppernas engagemang på era webbsidor.
 
