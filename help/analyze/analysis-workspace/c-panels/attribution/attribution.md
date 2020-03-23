@@ -3,7 +3,7 @@ description: 'null'
 title: Översikt över panelen Attribut
 uuid: bb345642-4f45-4fb8-82d0-803248dd52ea
 translation-type: tm+mt
-source-git-commit: 8bae313fd4c26de8aedf18b095202735c0382bae
+source-git-commit: 3869385b9ad17cbea5e7a4e09bd06d5f0b53dd3c
 
 ---
 
@@ -96,3 +96,5 @@ Attribuering körs alltid före segmentering, och segmentering körs innan rappo
 Om du till exempel skapar ett VRS med segmentet &quot;Visa träffar&quot; kan du se andra kanaler i en tabell med hjälp av vissa attribueringsmodeller.
 
 ![Virtuellt rapportpaket endast för visning](assets/vrs-aiq-example.png)
+
+> [!NOTE] Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsvärden, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment och filter med jämförbara definitioner ibland returnera lägre värden för segmentet.
