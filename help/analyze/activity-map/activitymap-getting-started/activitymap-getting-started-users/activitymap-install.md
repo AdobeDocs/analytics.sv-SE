@@ -4,7 +4,7 @@ title: Installera webbläsarplugin-program för Activity Map
 topic: Activity map
 uuid: b5c07718-e25c-4ba9-885d-3a2a47dd9f60
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 713a73a1d57d93c579e0da58e464cecab3f9d773
 
 ---
 
@@ -25,7 +25,6 @@ Webbläsarplugin för Activity Map:
 ## Installera plugin-programmet Activity Map i Chrome {#section_6907253D5D5E4422967E6439207A013F}
 
 1. Gå till **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Activity Map]**.  ![](assets/install_am.png)
-
 1. Klicka på **[!UICONTROL Download Activity Map]**.
 1. Klicka på **[!UICONTROL Install the Activity Map Plug-in]**.
 1. Svara **[!UICONTROL Yes]** när säkerhetsvarningen frågar om du vill hämta plugin-programmet för aktivitetsschemaläsaren.
@@ -42,17 +41,14 @@ Webbläsarplugin för Activity Map:
 1. Klicka på **[!UICONTROL Download Activity Map]**.
 1. Klicka på **[!UICONTROL Install the Activity Map Plug-in]**.
 1. Klicka **[!UICONTROL Allow]** när det här meddelandet visas: ![](assets/firefox_install2.png)
-
 1. Klicka på **[!UICONTROL Install Now]**.
 1. Klicka på **[!UICONTROL Open Menu]** ikonen längst upp till höger och välj **[!UICONTROL Add-Ons]**. ![](assets/firefox_install3.png){width=&quot;250px&quot;}
-
 1. Aktivitetskartan ska listas som ett av Firefox-tilläggen.
 1. Om en Adobe Analytics-ikon ![](assets/an_icon.png) läggs till i verktygsfältet har hämtningen slutförts. Du kan nu [starta aktivitetskartan](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md) från sidan.
 
 ## Installera plugin-programmet Activity Map i Internet Explorer {#section_1A33705D7F784C4A88C9026ADC860FB8}
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Activity Map]**.
-
 1. Klicka på **[!UICONTROL Download Activity Map]**.
 1. Klicka på **[!UICONTROL Install the Activity Map Plug-in]**.
 1. Klicka **[!UICONTROL Run]** för att starta installationen av aktivitetskartan.
