@@ -2,20 +2,19 @@
 description: Med sidanalys i realtid (Live-läge) kan du få resultat med minimal granularitet i realtid.
 title: Realtidsanalys (Live)
 topic: Activity map
-uuid: a3faa9bd-73d8-48b3-be2b-f818ed7456fb
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 713a73a1d57d93c579e0da58e464cecab3f9d773
 
 ---
 
 
-# Realtidsanalys (Live)
+# Sidanalys i realtid (Live-läge)
 
 Med sidanalys i realtid (Live-läge) kan du få resultat med minimal granularitet i realtid.
 
-Activity Map visar nu analysdata i steg om 1 till 15 minuter för att övervaka länkpopulariteten baserat på mikrotrender för valda sidor. Detta är särskilt viktigt för förlag när det gäller att följa upp och reagera på ökat eller minskat intresse för berättelser och för att övervaka trafikflödet i realtid.
+Activity Map visar nu analysdata i steg om 1 minut till 15 minuter för att övervaka länkpopulariteten baserat på mikrotrender för valda sidor. Detta är särskilt viktigt för förlag när det gäller att följa upp och reagera på ökat eller minskat intresse för berättelser och för att övervaka trafikflödet i realtid.
 
-Som ägare av webbplatsinnehåll är en del av ditt jobb att förstå när vi ska marknadsföra och ta bort innehåll och behålla vår upplevelse konstant relevant. Realtidsdata är livsnerven i detta ansvar. Om ni förstår vilka länkar och vilket innehåll som trendar just nu kan ni agera snabbt och beslutsamt för att hålla läsarna och kunderna engagerade med ert varumärke.
+Som ägare av webbplatsinnehåll är en del av ditt jobb att förstå när du ska marknadsföra och ta bort innehåll och behålla upplevelsen konstant relevant. Realtidsdata är livsnerven i detta ansvar. Om ni förstår vilka länkar och vilket innehåll som trendar just nu kan ni agera snabbt och beslutsamt för att hålla läsarna och kunderna engagerade med ert varumärke.
 
 ![](assets/live_mode.png)
 
@@ -25,9 +24,15 @@ Describe what you can do with the feature: - what is the data shown? why do I se
 
  -->
 
-## Datalatens som ett resultat av A4T-konfiguration {#section_806CE36354FC4C539A0DED9266A5C704}
+Om du vill kontrollera vilket element som klickas mest i Live-läge:
 
-När A4T-integreringen har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
+1. Välj tidsperioden på verktygsfältets **[!UICONTROL Live Mode]** trendlinje som du vill analysera.
+1. Klicka på ikonen &quot;Öga&quot; i verktygsfältet för att öppna tabellen Länkar.
+1. Ordna tabellen efter länken.
+
+## Datalatens som ett resultat av A4T-konfiguration
+
+När [A4T-integreringen](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
 
 Ökningen återspeglas i alla Adobe Analytics-tjänster och -verktyg, inklusive liveströmmen och realtidsrapporter, och gäller i följande scenarier:
 
@@ -35,3 +40,5 @@ När A4T-integreringen har aktiverats i Adobe Target får du ytterligare 5-10 mi
 * För aktuella data om konverteringsmått, slutförda data och dataflöden fördröjs alla träffar ytterligare 5-7 minuter.
 
 Tänk på att latensökningen börjar efter att du har implementerat [identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/), även om du inte har implementerat den här integreringen fullständigt.
+
+Mer information [här](/help/analyze/activity-map/activitymap-standard-live.md).
