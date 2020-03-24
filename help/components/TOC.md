@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Analytics Components Guide
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: 0c04aaea568616254375f7f1fd33ae216693b3f4
+source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
 
 ---
 
@@ -107,7 +107,7 @@ source-git-commit: 0c04aaea568616254375f7f1fd33ae216693b3f4
       + [Klassificeringsregeluppsättningar](c-classifications2/crb/classification-rule-set.md)
       + [Klassificeringsregler](c-classifications2/crb/classification-quickstart-rules.md)
       + [Klassificeringsregler - definitioner](c-classifications2/crb/classification-rule-definitions.md)
-      + [Underklassificeringar och regelbyggaren - användningsfall](c-classifications2/crb/sub-classification-rule-builder.md)
+      + [Underklassificeringar och regelbyggaren](c-classifications2/crb/sub-classification-rule-builder.md)
    + Numeriska 2 klassificeringar {#numeric2-classification}
       + [Översikt över Numeric 2-klassificeringar](c-classifications2/c-numeric-2/c-numeric-2-classifications.md)
       + [Skapa numeriska 2 klassificeringar](c-classifications2/c-numeric-2/t-create-numeric-2-classifications.md)
