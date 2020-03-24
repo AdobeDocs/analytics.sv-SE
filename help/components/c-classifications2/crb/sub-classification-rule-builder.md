@@ -1,26 +1,21 @@
 ---
-description: Du kan kombinera klassificeringsregelbyggaren med underklassificeringar för att förenkla klassificeringshanteringen och minska antalet regler som krävs. Du kanske vill göra detta om spårningskoden består av koder som du vill klassificera separat.
-subtopic: Classifications
-title: Underklassificeringar och regelbyggaren - användningsfall
-topic: Admin tools
-uuid: 6db6a4a9-b93c-413b-8049-1e6cc1ba4a38
+description: Du kan inte kombinera klassificeringsregelverktyget med underklassificeringar.
+title: Underklassificeringar och regelbyggaren
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
 
 ---
 
 
-# Underklassificeringar och regelbyggaren - användningsfall
+# Underklassificeringar och regelbyggaren
 
-Du kan kombinera klassificeringsregelbyggaren med underklassificeringar för att förenkla klassificeringshanteringen och minska antalet regler som krävs. Du kanske vill göra detta om spårningskoden består av koder som du vill klassificera separat.
+Du kan kombinera klassificeringsregelbyggaren med underklassificeringar om du ser till att alla underklassificeringar har ett överordnat värde.
 
-## Underklassificeringar och regelbyggaren - användningsfall {#concept_6C8672C242544D7487E82886BBFABE6E}
-
-Du kan kombinera klassificeringsregelbyggaren med underklassificeringar för att förenkla klassificeringshanteringen och minska antalet regler som krävs. Du kanske vill göra detta om spårningskoden består av koder som du vill klassificera separat.
+Genom att kombinera klassificeringsregelbyggaren med underklassificeringar kan klassificeringshanteringen förenklas och antalet regler som krävs minskas. Du kanske vill göra detta om spårningskoden består av koder som du vill klassificera separat.
 
 Se [Underklassificeringar](/help/components/c-classifications2/c-sub-classifications.md) för information om underklassificeringar.
 
-**Exempel**
+## Exempel
 
 Anta följande spårningskod:
 
@@ -35,12 +30,6 @@ När du har den här strukturen på plats kan du använda [Klassificeringsregelv
 I följande uppgift beskrivs hur du gör detta.
 
 ## Konfigurera underklassificeringar med regelverktyget{#task_2D9016D8B4E84DBDAF88555E5369546F}
-
-<!-- 
-
-t_rule_builder_subclass.xml
-
- -->
 
 Exempel på steg som beskriver hur du kan överföra underklassificeringar med regelbyggaren.
 
@@ -82,4 +71,4 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    Du överför den här filen, till exempel när en ny *`Broad Campaign code`* introduktion görs. Den här filen gäller för tidigare klassificerade värden. Om du skapar en ny underklassificering (till exempel *`Creative Theme`* som en underklassificering av *`Creative code`*) överför du bara underklassificeringsfilen, i stället för hela klassificeringsfilen.
 
-   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.
+   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.-->
