@@ -4,7 +4,7 @@ title: Vad är kohortanalys?
 topic: Reports and analytics
 uuid: 39a83f3a-15d1-41d7-bcdd-50c22aed8f1c
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 99232c5bce94cfc55b9f01080555cb8e545442e9
 
 ---
 
@@ -22,8 +22,6 @@ Exempel på vad du kan göra med kohortanalys:
 * Identifiera när en testversion eller ett erbjudande ska avslutas för att maximera värdet.
 * Få idéer för A/B-testning inom områden som priser, uppgraderingsalternativ osv.
 * Visa en kohortanalysrapport i en rapport för guidad analys.
-* Identifiera när en testversion eller ett erbjudande ska avslutas för att maximera värdet.
-* Få idéer för A/B-testning inom områden som priser, uppgraderingsalternativ osv.
 
 Kohortanalys är tillgängligt för alla Analytics-kunder med åtkomstbehörighet till Analysis Workspace.
 
