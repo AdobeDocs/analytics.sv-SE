@@ -5,7 +5,7 @@ title: Om underklassificeringar
 topic: Admin tools
 uuid: 48bd7fc1-54a1-40ef-bc55-395338522f2d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
 
 ---
 
@@ -15,18 +15,6 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 Adobe Analytics stöder både klassificeringsmodeller på en och flera nivåer. Med en klassificeringshierarki kan du tillämpa en klassificering på en klassificering.
 
 > [!NOTE] Delklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte samma sak som när [!UICONTROL Classification Hierarchy] du skapar [!UICONTROL Hierarchy] rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](classification-hierarchies.md).
-
-<!-- 
-
-<p>Removed sub-classifications in rule builder. Preserve subclass files in project for future reference. </p>
-
- -->
-
-<!-- 
-
-c_single-level_classifications.xml
-
- -->
 
 Exempel:
 
@@ -40,12 +28,6 @@ Varje klassificering i denna modell är oberoende och motsvarar en ny delrapport
 | 456 | DEF | C3D4 |
 
 Mer information om datafilen finns i [Klassificeringsdatafiler](/help/components/c-classifications2/c-classifications-importer/c-saint-data-files.md).
-
-<!-- 
-
-c_multiple-level_classifications.xml
-
- -->
 
 Klassificeringar på flera nivåer består av överordnade och underordnade klassificeringar. Exempel:
 
@@ -74,11 +56,7 @@ Exempel:
 
 Se [Vanliga problem](https://marketing.adobe.com/resources/help/en_US/home/index.html#kb-common-saint-upload-issues) vid överföring av klassificering för felsökningshjälp.
 
-<!-- 
-
-c_classifications_example.xml
-
- -->
+## Exempel
 
 ![](assets/sample-product-classifications.png)
 
@@ -86,7 +64,7 @@ c_classifications_example.xml
 
 När du överför datafiler för den här produktklassificeringen kan du överföra klassificeringsdata som en enda fil eller som flera filer (se nedan). Genom att färgkoden separeras i fil 1 och färgnamnet i fil 2, behöver färgnamnsdata (som bara kan vara ett fåtal rader) bara uppdateras när nya färgkoder skapas. Då tas färgnamnsfältet (CODE&amp;Hat;COLOR) bort från den mest uppdaterade filen 1 och filstorleken och komplexiteten minskas när datafilen genereras.
 
-## Produktklassificering - en fil {#section_E8C5E031869C449F9B636F5EB3BFEC17}
+### Produktklassificering - en fil {#section_E8C5E031869C449F9B636F5EB3BFEC17}
 
 | NYCKEL | PRODUKTNAMN | PRODUKTINFORMATION | GENDER | STORLEK | KOD | &amp;KOD;Hatt;FÄRG |
 |---|---|---|---|---|---|---|
@@ -94,7 +72,7 @@ När du överför datafiler för den här produktklassificeringen kan du överf�
 | 410390014 | Polo-SS | Polo Shirt, kort sikt (L,03) för män | M | L | 03 | Sidhuvud |
 | 410390015 | Polo-LS | Lång sikt för kvinnor (S,23) | F | S | 23 | Turkos |
 
-## Produktklassificering - flera filer (fil 1) {#section_A99F7D0F145540069BA4EEC0597FF13F}
+### Produktklassificering - flera filer (fil 1) {#section_A99F7D0F145540069BA4EEC0597FF13F}
 
 | NYCKEL | PRODUKTNAMN | PRODUKTINFORMATION | GENDER | STORLEK | KOD |
 |---|---|---|---|---|---|
@@ -102,7 +80,7 @@ När du överför datafiler för den här produktklassificeringen kan du överf�
 | 410390014 | Polo-SS | Polo Shirt, kort sikt (L,03) för män | M | L | 03 |
 | 410390015 | Polo-LS | Lång sikt för kvinnor (S,23) | F | S | 23 |
 
-## Produktklassificering - flera filer (fil 2) {#section_19ED95C33B174A9687E81714568D56A3}
+### Produktklassificering - flera filer (fil 2) {#section_19ED95C33B174A9687E81714568D56A3}
 
 | NYCKEL | KOD | &amp;KOD;Hatt;FÄRG |
 |---|---|---|
