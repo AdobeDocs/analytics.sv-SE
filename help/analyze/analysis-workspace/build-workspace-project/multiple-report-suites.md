@@ -2,7 +2,7 @@
 title: Flera rapportsviter i Workspace
 description: Lär dig hur och varför du skapar projekt i Workspace med flera rapportsviter
 translation-type: tm+mt
-source-git-commit: e60de040e1036a1344baecfcc9c1fd5d71c4cf40
+source-git-commit: 03ab0edc60f4e858acd98f14390d058387af67fa
 
 ---
 
@@ -16,6 +16,12 @@ Den här funktionen är användbar om du t.ex. vill
 * Jämför data från två olika regioner och data finns i två olika rapportsviter. Du kan skapa tabeller och visualiseringar för att jämföra data sida vid sida.
 
 * Bygg en kontrollpanel med mätvärden och visualiseringar för att rapportera till andra organisationer. Nu kan ni hämta data från olika rapportsviter till samma projekt.
+
+## Tillämpa rapportsviten på alla paneler
+
+Du kan använda en rapportserie för alla paneler samtidigt genom att högerklicka på ett panelhuvud och välja **[!UICONTROL Apply Report Suite to All Panels]**.
+
+![](assets/apply-rs-all-panels.png)
 
 ## Aktiv panel
 
