@@ -5,7 +5,7 @@ title: Klassificeringsregeluppsättningar
 topic: Admin tools
 uuid: c4d7b77c-fa98-44be-955f-9aee7f73480b
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
 
 ---
 
@@ -56,12 +56,6 @@ Följande fält och alternativ är tillgängliga på [!UICONTROL Classifications
 </table>
 
 ## Skapa en klassificeringsregeluppsättning {#create-classification-rule-set}
-
-<!-- 
-
-t_classification_rule_set.xml
-
- -->
 
 Ge klassificeringsregeluppsättningen ett namn, använd variabeln och ange överskrivningsinställningar.
 
