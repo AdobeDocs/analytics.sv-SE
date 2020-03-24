@@ -4,7 +4,7 @@ title: Vanliga frågor om aktivitetskartan
 topic: Activity map
 uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
 translation-type: tm+mt
-source-git-commit: fa9efcba40ae00c22e99f68f5be8f4d5bf32e44c
+source-git-commit: 5a8ff1c81644c12f7d00ef147db197f54c48f60c
 
 ---
 
@@ -41,19 +41,19 @@ S: Nej. Funktionen för aktivitetskarta är inte beroende av VisitorAPI.
 
 ## Program för aktivitetskarta
 
-**F: Hur stöder Activity Map Single-Page Applications (SPA)?**
+<!--**Q: How does Activity Map support Single-Page Applications (SPA)?**
 
-S:
+A: 
 
-* Med några få sekunders mellanrum skannas webbsidan efter ändringar på sidan. ActivityMap hittar nytt innehåll på sidan utan att en ny sidinläsning krävs, men det nya innehållet tilldelas alltid till den första pageName som hittades när sidan lästes in.
+* Every few seconds, Activity Map scans the web page, looking for changes to the page. ActivityMap finds new content on the page without needing a new page load, but this new content is always attributed to the first pageName found when the page loaded.
 
-* Aktivitetskartan kontrollerar om synligheten för länkar som den känner till har ändrats. Om synligheten ändras uppdateras kolumnen [Länkar på sida](/help/analyze/activity-map/activitymap-links-report.md) för den länken med **[!UICONTROL Displayed]** eller **[!UICONTROL Hidden]**.
+* Activity Map checks to see if the visibility of links that it knows about has changed. If a change in visibility is found, then the [Links On Page](/help/analyze/activity-map/activitymap-links-report.md) table's Present column for that link updates with **[!UICONTROL Displayed]** or **[!UICONTROL Hidden]**.
 
-* När användarinteraktion skapar nytt innehåll läggs alla nya element som AppMeasurement finner vara en länk till **[!UICONTROL Links On Page]** tabellen. Activity Map skickar en ny databegäran som innehåller de nya länkarna. De nya länkarna ska visas i **[!UICONTROL Links On Page]** tabellen när databegäran hanteras av användargränssnittet.
+* When user interaction creates new content, any new elements that are found by AppMeasurement to be a link will be added to the **[!UICONTROL Links On Page]** table. Activity Map sends a new data request that includes these new links. The new links should appear in the **[!UICONTROL Links On Page]** table when the data request is handled by the UI.-->
 
 **F: Tillhandahåller aktivitetskartan data om &quot;vyer&quot;?**
 
-S: Nej, att spåra alla länkar som visas på varje sida kräver att vi samlar in mycket mer data. Aktivitetskartan innehåller inte den här funktionen som ett kostnadsfritt tillägg.
+S: Nej, Adobe spårar inte länkar som visas.
 
 **F: Kan jag använda Activity Map om jag inte tidigare har använt ClickMap för besökare på min webbplats?**
 
