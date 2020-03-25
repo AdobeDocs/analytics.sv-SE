@@ -3,14 +3,12 @@ description: 'null'
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 08d564f7fb06b94c2010515ea4a1dcbb2e6e2815
+source-git-commit: 3e055bbf83ee72217764aee22448b0ff1ab30751
 
 ---
 
 
 # Mallar
-
-## Mallar {#topic_40932F09E18A467983AFBB29908E1CB8}
 
 Du kan välja om du vill skapa ett projekt från:
 
@@ -48,7 +46,7 @@ Användare med administratörsbehörighet kan omvandla projekt de skapar till en
 | Ändra mallbeskrivning | Öppna mallen och gå till Projekt > Projektinformation och inställningar. Dubbelklicka på beskrivningen och redigera den. |
 
 
-## Standardmallar {#concept_4FE900FEEC894E849CB6C6A0E0ADA524}
+## Standardmallar
 
 När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra listen. Mallar för Analysis Workspace omfattar vanliga användningsfall. De grupperas efter de lodräta värden de tillhör och fylls i med olika dimensioner, segment, mätvärden och visualiseringar, beroende på vilken rapportserie du har valt.
 
@@ -57,6 +55,8 @@ Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter 
 [Standardmallar i Analysis Workspace på YouTube](https://www.youtube.com/watch?v=aRgYwPneVXg&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&index=6) (2:46)
 
 Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
+
+### Utbildning
 
 * **Självstudiekurs**: Den här standardmallen visar vanliga termer och steg för hur du skapar din första analys i Workspace. Den är tillgänglig som en standardmall i det nya projektmodala och ersätter det exempelprojekt som finns idag för nya användare som inte har andra projekt i sin lista.
 
