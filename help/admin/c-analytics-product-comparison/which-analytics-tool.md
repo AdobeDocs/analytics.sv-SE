@@ -3,7 +3,7 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 translation-type: tm+mt
-source-git-commit: b4e17f7aad73af250c89cb8117f741f7eed89b7e
+source-git-commit: f7125e6845a653ca3d4dd3f1313d1b39f564459c
 
 ---
 
@@ -26,7 +26,6 @@ Mer information om produktjämförelser i Adobe Analytics finns [här](/help/adm
 * Så här ställer du in kalenderhändelser.
 * Så här ställer du in mål.
 * Så här visar du Bot-rapportering.
-* Om du vill titta på flera rapportsviter på en enda kontrollpanel för användargränssnittet.
 * För att få tillgång till unika videovisualiseringar av Concurrent Viewer, Video Daypart och Viewer Drop-off.
 * För att utnyttja publiceringslistor i schemalagda rapporter.
 
