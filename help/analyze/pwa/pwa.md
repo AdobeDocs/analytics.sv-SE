@@ -2,20 +2,20 @@
 title: PWA för analys
 description: Progressiva webbappar för Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: b36505c9fd7bf1d2da4d076d6b49298f01ad1cfc
 
 ---
 
 
 # PWA för analys
 
-I den här guiden beskrivs hur du använder Adobe Analytics med progressiva webbappar (PWA).
+På den här sidan beskrivs hur du använder Adobe Analytics med progressiva webbappar (PWA).
 
 ## Introduktion
 
 PWA-program kan tillhandahålla både en inbyggd appupplevelse och offlinefunktioner för en webbplats. Vanligtvis innehåller PWA en servicearbetare, cachelagring och en manifestfil, som alla kan hjälpa till med snabbare inläsningstider, enklare navigering och responsivt beteende.
 
-Adobe Analytics fungerar lika smidigt med PWA som med traditionella webbplatser. Även om PWA-program har några fler krav på att fungera progressivt i sig själva skapar de inga hinder eller begränsningar för hur Analytics samlar in eller rapporterar data från dem på något annat sätt än traditionella webbplatser. Eftersom Analytics redan har funktioner för offlinespårning kan PWA-program hjälpa er att utnyttja den inbyggda funktionen enklare än med traditionella webbplatser.
+Adobe Analytics fungerar lika smidigt med PWA som med traditionella webbplatser. Även om PWA-program har några fler krav på att fungera progressivt i sig själva skapar de inga hinder eller begränsningar för hur Analytics samlar in eller rapporterar data från dem på något annat sätt än traditionella webbplatser. Eftersom Analytics redan har funktioner för offline-spårning kan PWA-program hjälpa er att utnyttja den här inbyggda funktionen enklare än med traditionella webbplatser.
 
 ## Hämta PWA Analytics-data
 
@@ -40,10 +40,8 @@ s.linkLeaveQueryString=false
 s.linkTrackVars="None" 
 s.linkTrackEvents="None" 
 s.trackOffline=true
-***
-    
+*** 
 ```
-
 
 Mer information om hur du redigerar filen AppMeasurement.js finns i [Infoga kod i filen](https://docs.adobe.com/content/help/en/analytics/implementation/implement-analytics-with-dtm/analytics-tool/t-appmeasurement-code.html)AppMeasurement.js.
 
