@@ -2,7 +2,7 @@
 title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
 translation-type: tm+mt
-source-git-commit: 979a95ca749a3e21c4ddf48ba2d2a95672938a20
+source-git-commit: f18fbd091333523cd9351bfa461a11f0c3f17bef
 
 ---
 
@@ -57,3 +57,5 @@ s.trackingServer = "example.sc.omtrdc.net";
 ```
 
 Välj en underdomän som är unik för din organisation och som sannolikt inte plockas av någon annan organisation som använder Adobe Analytics. Se till att alla implementeringar i organisationen använder samma spårningsserver. Det kan vara praktiskt att behålla denna information i ett [lösningsdesigndokument](../../prepare/solution-design.md).
+
+> [!NOTE] Använd inte underdomäner djupare än `example.sc.omtrdc.net`. Detta `custom.example.sc.omtrdc.net` är till exempel inte en giltig spårningsserver.
