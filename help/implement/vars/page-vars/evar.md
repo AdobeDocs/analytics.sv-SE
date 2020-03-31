@@ -2,12 +2,14 @@
 title: eVar
 description: Anpassade variabler som du kan använda i implementeringen.
 translation-type: tm+mt
-source-git-commit: dcb69257fd29686ae346cf4d0cf50ed041ebcbbc
+source-git-commit: f18fbd091333523cd9351bfa461a11f0c3f17bef
 
 ---
 
 
 # eVar
+
+*Den här hjälpsidan beskriver hur du implementerar eVars. Mer information om hur eVars fungerar som en dimension finns i[eVars](../../../components/c-variables/dimensionslist/reports-conversion.md)i användarhandboken för komponenter.*
 
 Variabler är anpassade variabler som du kan använda hur du vill.
 
