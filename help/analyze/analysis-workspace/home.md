@@ -2,10 +2,8 @@
 description: Så här kommer du igång med Adobe Analytics.
 keywords: Analysis Workspace
 title: Guiden Komma igång
-topic: Reports and analytics
-uuid: 851feadb-5e30-45ab-9f66-02bdf844fa54
 translation-type: tm+mt
-source-git-commit: 984d6034d14cc4256d93bd4f7d1a7f01b63b71e9
+source-git-commit: 825dc13b0294e5a96b30b95f14524175d44c621d
 
 ---
 
@@ -89,17 +87,16 @@ Det finns många inriktningar på att fördjupa din förståelse av Analysis Wor
 ### För slutanvändare som vill utöka kunskapen om hur man använder Analysis Workspace
 
 * [Information om gränssnittet](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md)för arbetsytan: Nu när du har skapat en grundläggande rapport blir du mer bekant med resten av gränssnittet.
-* [Visualiseringar i arbetsytan](visualizations/freeform-analysis-visualizations.md): Frihandsregister är bara en typ av visualisering i Analysis Workspace. Lär dig hur du använder andra visualiseringar, till exempel linjediagram, stolpdiagram och geokartor.
+* [Visualiseringar i arbetsytan](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md): Frihandsregister är bara en typ av visualisering i Analysis Workspace. Lär dig hur du använder andra visualiseringar, till exempel linjediagram, stolpdiagram och geokartor.
 * [Dimensioner i arbetsytan](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md): Lär dig mer om vilka dimensioner som är och hur du använder dem i mer än bara rankade rapporter.
 * [Mätvärden i arbetsytan](/help/analyze/analysis-workspace/components/apply-create-metrics.md): Läs mer om vad mätvärden är och hur du använder dem i andra delar av frihandstabeller.
 * [Introduktion till segmentering](/help/analyze/analysis-workspace/components/t-freeform-project-segment.md): Lär dig mer om vilka segment som är och hämta en grundläggande rapport med ett segment.
 * [Datumintervall i arbetsytan](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md): Lär dig mer om relativa och rullande datum och använd dem i arbetsyteprojekt.
 * Dela projekt i Workspace: Visa dina kollegor det fantastiska Workspace-projekt du skapat.
-* [(Avancerade) Paneler i arbetsytan](c-panels/panels.md): Använd avancerade funktioner i Workspace, till exempel Attribution och Segment Comparison.
+* [(Avancerade) Paneler i arbetsytan](/help/analyze/analysis-workspace/c-panels/panels.md): Använd avancerade funktioner i Workspace, till exempel Attribution och Segment Comparison.
 
 ### För analytiker och administratörer som vill förbättra kvaliteten på arbetsytan i sin organisation
 
 * [Behörigheter](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)för Analysis Workspace: Tilldela användarbehörigheter till arbetsytan via Adobe Admin Console.
-* [Skapa ett designdokument](/help/implement/prepare/solution-design.md): Börja planera hur organisationen samlar in ytterligare dimensioner eller mätvärden som är specifika för er webbplats.
 * [Mallar i arbetsytan](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md): Skapa mallar så att dina kollegor kan börja med ett projektutrymme som är anpassat efter deras behov.
-* [Arbetsyteurval](curate-share/curate.md): Skapa ett projekt som begränsar antalet tillgängliga komponenter så att arbetsytan blir mer tillgänglig för dem som inte är vana vid verktyget
+* [Arbetsyteurval](/help/analyze/analysis-workspace/curate-share/curate.md): Skapa ett projekt som begränsar antalet tillgängliga komponenter så att arbetsytan blir mer tillgänglig för dem som inte är vana vid verktyget
