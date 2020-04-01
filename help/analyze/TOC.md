@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Analytics Tools Guide
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 509f86a0346e909b62d237deea71c67b7ee950af
+source-git-commit: 825dc13b0294e5a96b30b95f14524175d44c621d
 
 ---
 
@@ -13,8 +13,8 @@ source-git-commit: 509f86a0346e909b62d237deea71c67b7ee950af
 
 + [Handbok för analysverktyg](home.md)
 + Analysis Workspace {#analysis-workspace}
-   + [Hjälp om Analysis Workspace](analysis-workspace/home.md)
    + [Analysis Workspace-funktioner](analysis-workspace/analysis-workspace-features.md)
+   + [Hjälp om Analysis Workspace](analysis-workspace/home.md)
    + [Användningsexempel för Analysis Workspace](analysis-workspace/freeform-analysis-examples-use-cases.md)
    + [Nyheter på Analysis Workspace](analysis-workspace/new-features-in-analysis-workspace.md)
    + Bygga ett arbetsyteprojekt {#build-workspace-project}
@@ -95,11 +95,6 @@ source-git-commit: 509f86a0346e909b62d237deea71c67b7ee950af
       + [Dela och schemalägg projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
       + [Skicka fil - schemalägg ett projekt för leverans](analysis-workspace/curate-share/t-schedule-report.md)
       + [Schemalagd projektledare](analysis-workspace/curate-share/schedule-projects.md)
-   + [Frågor och svar](analysis-workspace/faq.md)
-   + [Administrationskrav](analysis-workspace/frequently-asked-questions-analysis-workspace.md)
-   + [Optimera prestanda för analysarbetsytan](analysis-workspace/optimizing-performance.md)
-   + [Analysis Workspace jämfört med Ad hoc-analys](analysis-workspace/adhocanalysis-vs-analysisworkspace.md)
-   + [Begränsningar för Analysis Workspace](analysis-workspace/aw-limitations.md)
    + [Attributions-IQ](analysis-workspace/attribution-iq.md)
    + [Segmentanalys](analysis-workspace/segment-iq.md)
    + Virtuell analytiker {#virtual-analyst}
@@ -118,6 +113,12 @@ source-git-commit: 509f86a0346e909b62d237deea71c67b7ee950af
          + [Varningsverktyg](analysis-workspace/c-intelligent-alerts/alert-builder.md)
          + [Aviseringshanteraren](analysis-workspace/c-intelligent-alerts/alert-manager.md)
          + [Intelligenta aviseringar - användningsfall](analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
+   + Vanliga frågor om arbetsytan {#workspace-faq}
+      + [Frågor och svar](analysis-workspace/workspace-faqs/faq.md)
+      + [Optimera prestanda för analysarbetsytan](analysis-workspace/workspace-faqs/optimizing-performance.md)
+      + [Analysis Workspace jämfört med Ad hoc-analys](analysis-workspace/workspace-faqs/adhocanalysis-vs-analysisworkspace.md)
+      + [Begränsningar för Analysis Workspace](analysis-workspace/workspace-faqs/aw-limitations.md)
+      + [Administrationskrav](analysis-workspace/workspace-faqs/frequently-asked-questions-analysis-workspace.md)
 + Report Builder {#report-builder}
    + [Adobe Report Builder - hjälp](report-builder/home.md)
    + [Nyheter i Report Builder](report-builder/whats-new-arb.md)
