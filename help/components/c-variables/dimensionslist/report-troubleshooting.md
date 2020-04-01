@@ -5,7 +5,7 @@ title: Rapportera bästa praxis och felsökning
 topic: Reports
 uuid: d4eef0a3-1d26-4460-8a2b-962001c9f846
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dca5bac72a2cf5f5ded5072e1867676392a7850e
 
 ---
 
@@ -16,7 +16,7 @@ Med Adobe Analytics får ni ett flexibelt rapporteringsgränssnitt som gör att 
 
 >[!Note]
 >Dessa rekommendationer gäller Rapporter och analys, Ad hoc-analys och Report Builder.
->De gäller inte för Analysis Workspace, som har en egen uppsättning [metodtips](/help/analyze/analysis-workspace/optimizing-performance.md). De gäller inte heller >för [bästa praxis](https://marketing.adobe.com/resources/help/en_US/reference/data_warehouse_bp.html)för datalager. Ytterligare en uppsättning
+>De gäller inte för Analysis Workspace, som har en egen uppsättning [metodtips](/help/analyze/analysis-workspace/workspace-faqs/optimizing-performance.md). De gäller inte heller >för [bästa praxis](https://marketing.adobe.com/resources/help/en_US/reference/data_warehouse_bp.html)för datalager. Ytterligare en uppsättning
 >[bästa praxis](https://marketing.adobe.com/developer/en_US/get-started/best-practices/c-best-practices) finns för Adobe Analytics Reporting API.
 
 ## Timeout för rapport och begärandekö {#section_A42AD7E487C749B7B879BAFA814FFEF9}
