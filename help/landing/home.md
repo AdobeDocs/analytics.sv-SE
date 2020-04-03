@@ -2,7 +2,7 @@
 title: Tekniska handböcker för Adobe Analytics
 description: Användarhandböcker och resurser för analyser
 translation-type: tm+mt
-source-git-commit: 52585c146d9213aa87368cec43ccc5571ecbb344
+source-git-commit: 025ac334f9191b6455eea0530a2a21c01199000a
 
 ---
 
@@ -33,7 +33,7 @@ Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokum
 
 | Nya och aktuella objekt | Viktiga analysresurser |
 | --- | --- |
-| <ul><li>[Regional datainsamling](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera arbetsytans prestanda](/help/analyze/analysis-workspace/workspace-faqs/optimizing-performance.md)</li><li>[Analytics - produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: Dokumentationsuppdateringar [2019](doc-updates.md) | <ul><li> [Versionsinformation](https://marketing.adobe.com/resources/help/en_US/whatsnew/)</li><li> [Adobe Analytics Youtube-kanal](https://www.youtube.com/channel/UC8I6bqCk7gO6YdoMz6W5fvw)</li><li>[Självstudiekurser och videofilmer om analys](https://helpx.adobe.com/analytics/kt/index/analytics-videos.html)</li><li>[Forum om Analytics](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga kurser och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/support/analytics.html)</li></ul> |
+| <ul><li>[Regional datainsamling](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera arbetsytans prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md)</li><li>[Analytics - produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: Dokumentationsuppdateringar [2019](doc-updates.md) | <ul><li> [Versionsinformation](https://marketing.adobe.com/resources/help/en_US/whatsnew/)</li><li> [Adobe Analytics Youtube-kanal](https://www.youtube.com/channel/UC8I6bqCk7gO6YdoMz6W5fvw)</li><li>[Självstudiekurser och videofilmer om analys](https://helpx.adobe.com/analytics/kt/index/analytics-videos.html)</li><li>[Forum om Analytics](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga kurser och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/support/analytics.html)</li></ul> |
 
 <!-- Keep around for now
 
