@@ -3,7 +3,7 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Betydande uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 translation-type: tm+mt
-source-git-commit: 8228b44a6877bee8668e0177cc84a3928ce6c820
+source-git-commit: 025ac334f9191b6455eea0530a2a21c01199000a
 
 ---
 
@@ -43,7 +43,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentationen som angetts sedan j
 | 10 juni 2019 | Ny artikel om [regional datainsamling (RDC) för Kina](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/rdc-china.html) |
 | 4 juni 2019 | Ny guide som tagits fram, med titeln [Transitioning från en analysplattform från tredje part till Adobe Analytics](/help/technotes/ga-to-aa/home.md). |
 | 30 maj 2019 | Översikt över kolumnreferens [för](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)datafeed. |
-| 11 april 2019 | Uppdateringar för att [optimera arbetsytans prestanda](/help/analyze/analysis-workspace/workspace-faqs/optimizing-performance.md). |
+| 11 april 2019 | Uppdateringar för att [optimera arbetsytans prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md). |
 | 14 mars 2019 | Större uppdatering av [regional datainsamling](/help/technotes/rdc/regional-data-collection.md). |
 | 7 februari 2019 | Mindre uppdatering av inställningarna&quot;Ersätt den sista oktetten i IP-adresser med 0&quot; och&quot;IP-förfalskning&quot; i [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md). |
 | 1 februari 2019 | Större uppdatering av [implementeringsplugin-programmet getPercentPageViewed](../implement/vars/plugins/getpercentpageviewed.md) . |
