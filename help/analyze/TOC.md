@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Analytics Tools Guide
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 825dc13b0294e5a96b30b95f14524175d44c621d
+source-git-commit: 025ac334f9191b6455eea0530a2a21c01199000a
 
 ---
 
@@ -114,11 +114,11 @@ source-git-commit: 825dc13b0294e5a96b30b95f14524175d44c621d
          + [Aviseringshanteraren](analysis-workspace/c-intelligent-alerts/alert-manager.md)
          + [Intelligenta aviseringar - användningsfall](analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + Vanliga frågor om arbetsytan {#workspace-faq}
-      + [Frågor och svar](analysis-workspace/workspace-faqs/faq.md)
-      + [Optimera prestanda för analysarbetsytan](analysis-workspace/workspace-faqs/optimizing-performance.md)
-      + [Analysis Workspace jämfört med Ad hoc-analys](analysis-workspace/workspace-faqs/adhocanalysis-vs-analysisworkspace.md)
-      + [Begränsningar för Analysis Workspace](analysis-workspace/workspace-faqs/aw-limitations.md)
-      + [Administrationskrav](analysis-workspace/workspace-faqs/frequently-asked-questions-analysis-workspace.md)
+      + [Frågor och svar](analysis-workspace/workspace-faq/faq.md)
+      + [Optimera prestanda för analysarbetsytan](analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Analysis Workspace jämfört med Ad hoc-analys](analysis-workspace/workspace-faq/adhocanalysis-vs-analysisworkspace.md)
+      + [Begränsningar för Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
+      + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
 + Report Builder {#report-builder}
    + [Adobe Report Builder - hjälp](report-builder/home.md)
    + [Nyheter i Report Builder](report-builder/whats-new-arb.md)
