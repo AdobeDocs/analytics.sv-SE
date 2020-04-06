@@ -3,7 +3,7 @@ description: 'De ID:n du skickar in omfattar inte alltid alla träffdata som Ana
 title: ID-expansion
 uuid: 2672d17d-c957-4e08-8dd9-16d54bf2be18
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -56,7 +56,7 @@ I framtiden kan &quot;analyticsDeleteMethod&quot; ha stöd för värdet &quot;pu
 
 Förutom standardvärdet stöder fältet priority även värdet &quot;low&quot;. Du bör ange det här värdet för förfrågningar som inte är ett resultat av en begäran från en registrerad och som därför inte har något rättsligt krav på att slutföras inom 30 dagar. Observera att Adobe avråder från att använda API:t för integritetstjänster av andra orsaker än förfrågningar som initierats av registrerade. Sekretesstjänstens API är inte ett lämpligt verktyg för datarensning eller -reparationer och kommer att få oönskade konsekvenser.
 
-> [!NOTE] API:t för [sekretesstjänsten](https://www.adobe.io/apis/experienceplatform/gdpr.html) har tillhandahållits för att hjälpa dig att uppfylla datasekretessbegäranden, som är tidskänsliga. Att använda detta API för andra syften stöds inte av Adobe och kan påverka Adobes förmåga att tillhandahålla vältajmade, användarinitierade förfrågningar om dataintegritet för andra Adobe-kunder. Vi ber dig att inte använda API:t för sekretesstjänster för andra syften, till exempel att radera data som av misstag har skickats in över stora grupper av besökare.
+>[!NOTE] API:t för [sekretesstjänsten](https://www.adobe.io/apis/experienceplatform/gdpr.html) har tillhandahållits för att hjälpa dig att uppfylla datasekretessbegäranden, som är tidskänsliga. Att använda detta API för andra syften stöds inte av Adobe och kan påverka Adobes förmåga att tillhandahålla vältajmade, användarinitierade förfrågningar om dataintegritet för andra Adobe-kunder. Vi ber dig att inte använda API:t för sekretesstjänster för andra syften, till exempel att radera data som av misstag har skickats in över stora grupper av besökare.
 
 Du bör också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) som ett resultat av en begäran om borttagning av datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering kommer att starta igen, liksom information som besöksnummer, referenter, besökt första sidan osv. Den här biverkningen är inte önskvärd i situationer där du vill ta bort datafält och visar en anledning till varför API:t för sekretesstjänsten inte är lämpligt för den här användningen.
 
