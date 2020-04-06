@@ -3,7 +3,7 @@ description: 'null'
 title: Dataintegritetsetiketter för analysvariabler
 uuid: a37a1278-7a0d-4e14-ae35-43bc460e7d12
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -22,7 +22,7 @@ Integritetsimplementeringen av data i Adobe Analytics stöder följande etikette
 
 ## DULE Labels {#section_B2E78130957647338495EF37DE21D6BC}
 
-> [!NOTE] DULE-ramverket (Data Usage Labeling &amp; Enforcement) är utformat för att ge ett enhetligt sätt att samla in, kommunicera och använda metadata om data i Adobe Experience Cloud för alla Adobes lösningar/tjänster/plattformar. Metadata hjälper personuppgiftsansvariga att ange vilka data som är personuppgifter, vilka data som är känsliga och vilka avtalsbegränsningar som är kopplade till data. I den här initiala versionen visar Analytics bara de DULE-etiketter som är relevanta för dataintegritet. I takt med att andra Adobe-produkter har stöd för DULE-etiketter kommer framtida releaser att innehålla ytterligare känsliga dataetiketter, liksom avtalsetiketter, som säkerställer att data som delas mellan produkterna endast används på ett juridiskt tillåtet sätt.
+>[!NOTE] DULE-ramverket (Data Usage Labeling &amp; Enforcement) är utformat för att ge ett enhetligt sätt att samla in, kommunicera och använda metadata om data i Adobe Experience Cloud för alla Adobes lösningar/tjänster/plattformar. Metadata hjälper personuppgiftsansvariga att ange vilka data som är personuppgifter, vilka data som är känsliga och vilka avtalsbegränsningar som är kopplade till data. I den här initiala versionen visar Analytics bara de DULE-etiketter som är relevanta för dataintegritet. I takt med att andra Adobe-produkter har stöd för DULE-etiketter kommer framtida releaser att innehålla ytterligare känsliga dataetiketter, liksom avtalsetiketter, som säkerställer att data som delas mellan produkterna endast används på ett juridiskt tillåtet sätt.
 
 ## Identitetsdataetiketter (DULE) {#identity-data-labels}
 
@@ -240,7 +240,7 @@ Det går bra att använda samma namnutrymme för olika variabler i samma rapport
 
 Som ett annat exempel kan du ha ett CRM-ID som ibland skickas in via eVar1 och ibland skickas in via prop7. Sedan har du en bearbetningsregel som kopierar värdet från eVar1, om det finns, till eVar3. I annat fall kopieras värdet från prop7 till eVar3. I det här scenariot innehåller eVar3 alltid CRM-ID om det är känt, så endast eVar3 kräver en ID-PERSON-etikett.
 
-> [!CAUTION] Namnutrymmena&quot;visitorId&quot; och&quot;customVisitorId&quot; är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
+>[!CAUTION] Namnutrymmena&quot;visitorId&quot; och&quot;customVisitorId&quot; är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
 ## Variabeltyper och de dataintegritets-/DULE-etiketter de stöder {#section_CE7C3EDE1344466A98BC45E394B40762}
 
@@ -465,7 +465,7 @@ Det finns fem standardvariabler som innehåller tidsstämplar:
   </tr> 
   <tr> 
    <td colname="col1"> <p>Tid för första träffen GMT </p> </td> 
-   <td colname="col2"> <p>UTC-värdet för anpassad Träff-tid för den första träffen som tagits emot för besökar-ID-värdet för den här träffen. </p> </td> 
+   <td colname="col2"> <p>UTC-värdet för Anpassad Träff-tid för den första träffen som tagits emot för besökar-ID-värdet för den här träffen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Besök starttid UTC </p> </td> 
@@ -474,6 +474,6 @@ Det finns fem standardvariabler som innehåller tidsstämplar:
  </tbody> 
 </table>
 
-Koden för att generera de filer som returneras för dataintegritetsåtkomstbegäranden kräver att minst en av de tre första tidsstämpelvariablerna inkluderas i åtkomstbegäran (har en ACC-etikett som gäller för typen av begäran). Om ingen av dessa inkluderas behandlas Custom Hit Time UTC som om den har en ACC-ALL-etikett.
+Koden för att generera de filer som returneras för dataintegritetsåtkomstbegäranden kräver att minst en av de tre första tidsstämpelvariablerna inkluderas i åtkomstbegäran (har en ACC-etikett som gäller för typen av begäran). Om ingen av dessa inkluderas behandlas anpassad Träff-tid UTC som om den har en ACC-ALL-etikett.
 
 Den CSV-fil på träffnivå som returneras för datasekretessåtkomstbegäranden konverterar värdena i dessa fält från unika tidsstämplar till datum-/tidsfält i formatet YYYY-MM-DD HH:MM:SS (t.ex. 2018-05-01 13:49:22). I den sammanfattande HTML-filen trunkeras dessa tidsstämpelvärden så att endast datumet YYY-MM-DD inkluderas, vilket minskar antalet unika värden som finns för dessa fält.
