@@ -3,7 +3,7 @@ description: 'null'
 title: Varningsverktyg
 uuid: ebc2d457-4abd-4b1a-9357-489b5aeb3f64
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -41,7 +41,7 @@ Ange ett namn för aviseringen. Varningsnamnet kan innehålla rapportens namn el
 
 Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje vecka eller Varje månad.
 
-> [!NOTE] För rapportsviter med en anpassad kalender har vi inte stöd för månatlig granularitet i varningsverktyget.
+>[!NOTE] För rapportsviter med en anpassad kalender har vi inte stöd för månatlig granularitet i varningsverktyget.
 
 **Mottagare**
 
