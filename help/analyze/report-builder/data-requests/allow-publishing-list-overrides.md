@@ -4,7 +4,7 @@ title: Tillåt åsidosättning av publiceringslista
 topic: Report builder
 uuid: f2cc9878-ab54-4c6f-8a88-3f3b579955e3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -23,5 +23,5 @@ Om du aktiverar [!UICONTROL Allow Publishing List Override]ersätter rapportsvit
 
 Det här alternativet är inte tillgängligt för rapportsviter som du markerar i celler.
 
-> [!NOTE] Om du skickar den schemalagda rapporten till flera publiceringslistor körs rapporten en gång för varje lista. Variabla rapportsviter ersätts med rapportsviten som tilldelats publiceringslistan.
+>[!NOTE] Om du skickar den schemalagda rapporten till flera publiceringslistor körs rapporten en gång för varje lista. Variabla rapportsviter ersätts med rapportsviten som tilldelats publiceringslistan.
 
