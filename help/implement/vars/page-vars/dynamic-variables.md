@@ -2,7 +2,7 @@
 title: Dynamiska variabler
 description: Kopiera variabler utan att öka längden på bildbegäran.
 translation-type: tm+mt
-source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -17,7 +17,7 @@ Dynamiska variabler har stöd för frågesträngsparametrar eller HTTP-rubriker 
 
 När Adobe känner igen ett dynamiskt variabelprefix kopieras automatiskt frågesträngen eller HTTP-rubrikvärdet i rapportsviten. Den här åtgärden utförs före all annan bearbetning, inklusive bearbetningsregler och VISTA-regler.
 
-> [!TIP] Tänk på maxgränserna för tecken när du kopierar variabler. Om du till exempel kopierar `eVar1` till `prop1`kan `prop1` det ha ett trunkerat värde eftersom det har en gräns på 100 byte (medan `eVar1` har en gräns på 255 byte).
+>[!TIP] Tänk på maxgränserna för tecken när du kopierar variabler. Om du till exempel kopierar `eVar1` till `prop1`kan `prop1` det ha ett trunkerat värde eftersom det har en gräns på 100 byte (medan `eVar1` har en gräns på 255 byte).
 
 ## Dynamiska variabler i Adobe Experience Platform Launch
 
@@ -48,4 +48,4 @@ s.eVar1 = "D=User-Agent";
 s.eVar1 = "D=g";
 ```
 
-> [!NOTE] Dynamiska variabler visas som strängar vid felsökning av implementeringen. Värdena kopieras på serversidan av Adobes datainsamlingsservrar.
+>[!NOTE] Dynamiska variabler visas som strängar vid felsökning av implementeringen. Värdena kopieras på serversidan av Adobes datainsamlingsservrar.
