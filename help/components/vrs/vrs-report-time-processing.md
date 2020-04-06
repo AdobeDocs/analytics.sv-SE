@@ -3,7 +3,7 @@ description: Bearbetning av rapporttid är en virtuell rapportsvitsinställning 
 title: Bearbetning av rapporttid
 uuid: 1a1d82ea-8c93-43cc-8689-cdcf59c309b1
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Bearbetning av rapporttid är en virtuell rapportsvitsinställning som gör att data kan behandlas på ett icke-förstörande, retroaktivt sätt.
 
-> [!NOTE] Rapporttidsbearbetning är bara tillgängligt för Analysis Workspace.
+>[!NOTE] Rapporttidsbearbetning är bara tillgängligt för Analysis Workspace.
 
 Tidsbearbetning för rapportering påverkar bara data i den virtuella rapportsviten och påverkar inte data eller datainsamling i basrapportsviten. Skillnaden mellan Report Time Processing och traditionell Analytics-bearbetning är bäst att förstå med följande diagram:
 
