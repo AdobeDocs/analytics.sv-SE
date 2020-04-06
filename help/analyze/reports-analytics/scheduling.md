@@ -5,7 +5,7 @@ title: Rapportschema och distribution
 topic: Reports and analytics
 uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -24,7 +24,7 @@ På grund av skillnader i bearbetningsmekanismer och -plattformar har de olika t
 
 Dessa begränsningar gäller för enskilda schemalagda och nedladdade rapporter. Kontrollpaneler begränsas till det tillgängliga utrymmet i en rapportmodul.
 
-> [!NOTE] &quot;Leveranstid&quot;/&quot;Dag&quot; som anges av användaren anger den tid som rapporten ska börja bearbetas, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som rapporten levereras baseras främst på hur lång tid det tar att behandla (komplexa och stora rapporter tar längre tid än enklare rapporter). Om en rapport t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
+>[!NOTE] &quot;Leveranstid&quot;/&quot;Dag&quot; som anges av användaren anger den tid som rapporten ska börja bearbetas, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som rapporten levereras baseras främst på hur lång tid det tar att behandla (komplexa och stora rapporter tar längre tid än enklare rapporter). Om en rapport t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
 >Dessutom finns det ett antal andra faktorer som ytterligare kan öka fördröjningen innan rapporten faktiskt levereras:
 >
 > * **Köra många olika scheman av samma typ samtidigt** (t.ex. många Dashboards) kan överlagra systemet. Schemaläggningssystemet tillåter endast ett fåtal (5-10) rapporter av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra rapporter är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags rapporter vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
