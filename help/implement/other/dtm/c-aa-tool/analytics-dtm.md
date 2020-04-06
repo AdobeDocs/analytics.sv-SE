@@ -5,7 +5,7 @@ title: Lägg till Adobe Analytics-verktyget
 topic: Developer and implementation
 uuid: 1c54331e-de03-4f44-8002-a19723c585b0
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
 
 Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Analytics-verktyget och konfigurera sidkoden antingen automatiskt eller manuellt. Den automatiska metoden rekommenderas för de flesta användare.
 
-> [!NOTE] För förbättrad besöksspårning rekommenderar vi att du aktiverar [identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+>[!NOTE] För förbättrad besöksspårning rekommenderar vi att du aktiverar [identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/).
 
 ## Add an Adobe Analytics Tool {#section_D5066B21581B4F7F811AD0027BF44EA5}
 
