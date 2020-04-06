@@ -5,7 +5,7 @@ title: FTP-import
 topic: Admin tools
 uuid: a914970d-ba02-4111-9dcf-06448f71b9f3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -33,7 +33,7 @@ Varje nytt nyckelvärde som du överför räknas mot dina unika värden för den
 
 Om du har överskridit dina unika värden för månaden visas inte motsvarande klassificeringsdata för de unika värdena i rapporten. Du kan se dessa klassificeringar antingen i datalagret eller i ad hoc-analyser.
 
-> [!NOTE] Den tid som krävs för att bearbeta en klassificeringsdatafil varierar beroende på filens storlek och det aktuella antalet filer som redan bearbetas av Adobes servrar. Bearbetningen av datafiler tar vanligtvis inte längre tid än 72 timmar.
+>[!NOTE] Den tid som krävs för att bearbeta en klassificeringsdatafil varierar beroende på filens storlek och det aktuella antalet filer som redan bearbetas av Adobes servrar. Bearbetningen av datafiler tar vanligtvis inte längre tid än 72 timmar.
 
 Skapa ett FTP-konto innan du överför data via FTP. Mer information finns i [Skapa ett FTP-konto](/help/components/c-classifications2/c-classifications-importer/c-uploading-saint-data-files-via-ftp.md#task_C019268E6C934C7C95F4326F42A22CCF).
 
