@@ -6,14 +6,14 @@ title: Koppla samman användare på olika enheter
 topic: Developer and implementation
 uuid: 6243957b-5cc1-49ef-aa94-5b5ec4eac313
 translation-type: tm+mt
-source-git-commit: 0439440e10dddf8a5d64e4ea8f9868b521e5ca20
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Koppla samman användare på olika enheter
 
-> [!IMPORTANT] Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se [Enhetsövergripande analys](/help/components/cda/cda-home.md) i användarhandboken för komponenter.
+>[!IMPORTANT] Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se [Enhetsövergripande analys](/help/components/cda/cda-home.md) i användarhandboken för komponenter.
 
 Identifiering av besökare på olika enheter hjälper er att koppla samman besökare på olika enheter. Identifiering av besökare på olika enheter använder variabeln för att koppla en användare till olika enheter. `visitorID` Variabeln har den högsta prioriteten när det gäller att identifiera unika besökare. `visitorID`
 
