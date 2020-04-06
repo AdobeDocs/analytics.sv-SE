@@ -5,14 +5,14 @@ title: Attribution och persistence
 topic: Developer and implementation
 uuid: 5dd706be-83f6-498a-a856-e3c5af995348
 translation-type: tm+mt
-source-git-commit: ebf149df7974f9f2889b6fe938088eda90c84051
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Attribution och persistence
 
-> [!IMPORTANT] Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se [Enhetsövergripande analys](/help/components/cda/cda-home.md) i användarhandboken för komponenter.
+>[!IMPORTANT] Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se [Enhetsövergripande analys](/help/components/cda/cda-home.md) i användarhandboken för komponenter.
 
 När besökarprofiler sammanfogas efter att de har associerats med samma variabel för besökar-ID, ändras inte attribueringen i den historiska datauppsättningen.
 
@@ -40,7 +40,7 @@ På den första dataanslutningen som innehåller ett tidigare okänt `s.visitorI
 * Varor som har satts till att upphöra att gälla av andra åtgärder kopieras till den autentiserade profilen. Observera att värdet `apple` är beständigt.
 * Inga instansvärden registreras för de eVars som är beständiga. Det innebär att när du använder identifieringen av besökare på olika enheter är det möjligt att se rapporter där det unika besöksmåttet för ett eVar-värde är större än förekomstmåttet.
 
-> [!NOTE] Om en användare är ny på din webbplats (aldrig har besökt den här enheten tidigare) och autentiseras inom ungefär 3 minuter efter att den har anlänt, kvarstår inga värden för den autentiserade profilen.
+>[!NOTE] Om en användare är ny på din webbplats (aldrig har besökt den här enheten tidigare) och autentiseras inom ungefär 3 minuter efter att den har anlänt, kvarstår inga värden för den autentiserade profilen.
 
 ## Exempel 2
 
