@@ -5,7 +5,7 @@ title: Instanser av försäljningsvariabler
 topic: Developer and implementation
 uuid: 4cdfd53e-88aa-48cf-a135-98f7fc8dcece
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -47,5 +47,5 @@ s.products=";Fernie Snow Goggles"
 
 Allokering till Ingen sker om du anger ett värde för en eVar på en sida där ingen bindningshändelse inträffar, eller om du anger värdet eVar i produktsträngen utan en bindningshändelse.
 
-> [!NOTE] Den aktuella funktionen för att räkna instanser av försäljningsvariabler granskas och är planerad att ändras i en kommande version.
+>[!NOTE] Den aktuella funktionen för att räkna instanser av försäljningsvariabler granskas och är planerad att ändras i en kommande version.
 
