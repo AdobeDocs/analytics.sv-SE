@@ -3,7 +3,7 @@ description: Distribuering av den här integreringen är en enkel process som kr
 title: Distribuera integreringen
 uuid: 9c116ca8-4dbf-44eb-a832-574527ee88b7
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -71,7 +71,7 @@ Om du vill aktivera integreringen måste du slutföra konfigurationsguiden i gr�
 
 När du har slutfört integreringsguiden måste du distribuera integreringskoden till din Adobe Analytics-distributionskod (s_code).
 
-> [!NOTE] Om du använde Adobe TagManager eller Dynamic Tag Management för att distribuera Adobe Analytics kan du enkelt lägga till integreringskoden med något av dessa verktyg.
+>[!NOTE] Om du använde Adobe TagManager eller Dynamic Tag Management för att distribuera Adobe Analytics kan du enkelt lägga till integreringskoden med något av dessa verktyg.
 
 1. Gå till **[!UICONTROL Support]** fliken och hämta och spara `integration code v2_0_1` resursen från resursområdet i integreringen.
 
@@ -199,7 +199,7 @@ Granska dina Demandbase-rapporter i Adobe Analytics med den Dashboard som automa
 
 Du kan också navigera till Demandbase-rapporten i Adobe Analytics-menystrukturen - se skärmbilderna nedan.
 
-> [!NOTE] Dessa data ska visas inom 24-48 timmar efter att distributionen lyckades.
+>[!NOTE] Dessa data ska visas inom 24-48 timmar efter att distributionen lyckades.
 
 ![](assets/reporting1.png)
 
