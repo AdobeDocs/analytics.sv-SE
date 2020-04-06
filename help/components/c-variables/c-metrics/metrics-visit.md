@@ -5,7 +5,7 @@ title: Besök
 topic: Metrics
 uuid: 91317487-f116-4546-8cd2-421418c49a7a
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 En sekvens med sidvyer i ett möte. Besöksmåtten används ofta i rapporter som visar antalet användarsessioner under den valda tidsperioden.
 
-> [!NOTE] Information om hur besök och öppningar av mobilappar beräknas finns i [Jämför besök och starter](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html) av mobilappar i kunskapsbasen.
+>[!NOTE] Information om hur besök och öppningar av mobilappar beräknas finns i [Jämför besök och starter](https://helpx.adobe.com/analytics/kb/compare-visits-and-mobile-app-launches.html) av mobilappar i kunskapsbasen.
 
 Besöken är alltid kopplad till en tidsperiod, så du vet om du ska räkna med ett nytt besök om samma besökare kommer tillbaka till din webbplats. En session startar när användaren först kommer till din webbplats och slutar i något av följande scenarier:
 
@@ -23,7 +23,7 @@ Besöken är alltid kopplad till en tidsperiod, så du vet om du ska räkna med 
 * **2 500 träffar:** Om en användare skapar ett stort antal träffar utan att starta en ny session räknas ett nytt besök efter 2 500 bildförfrågningar.
 * **100 träffar på 100 sekunder**: Om ett besök består av fler än 100 träffar på mindre än 100 sekunder avslutas besöket automatiskt. Detta beteende indikerar vanligtvis båda aktiviteterna och begränsningen tillämpas för att förhindra att dessa bearbetningsintensiva besök ökar fördröjningen och ökar tiden det tar att generera rapporter.
 
-> [!NOTE] Definitionen av ett besök kan förkortas för en rapportserie om det efterfrågas, men den kan inte förlängas. Be någon av organisationens användare kontakta Kundtjänst för att begära denna ändring.
+>[!NOTE] Definitionen av ett besök kan förkortas för en rapportserie om det efterfrågas, men den kan inte förlängas. Be någon av organisationens användare kontakta Kundtjänst för att begära denna ändring.
 
 Följande scenarier startar inte ett nytt besök:
 
@@ -34,7 +34,7 @@ Ett besök sammanfaller inte nödvändigtvis med en webbläsarsession. Om en bes
 
 När ett besök avslutas kommer alla variabler med en besöksförfallotid att upphöra och inte längre finnas kvar. Besöksnumret kommer att höjas vid besökarens nästa besök.
 
-> [!NOTE] Om du använder Analytics som rapportkälla för Adobe Target kan du läsa [Minimera antalet uppblåsta besök och besöksräknare i A4T](https://marketing.adobe.com/resources/help/en_US/target/a4t/minimizing-inflated-visit-and-visitor-counts-a4t.html) i [!DNL Target] dokumentationen.
+>[!NOTE] Om du använder Analytics som rapportkälla för Adobe Target kan du läsa [Minimera antalet uppblåsta besök och besöksräknare i A4T](https://marketing.adobe.com/resources/help/en_US/target/a4t/minimizing-inflated-visit-and-visitor-counts-a4t.html) i [!DNL Target] dokumentationen.
 
 Mer information finns i [Identifiera unika besökare](https://marketing.adobe.com/resources/help/en_US/sc/implement/visid_overview.html) i implementeringsguiden för Adobe Analytics.
 
