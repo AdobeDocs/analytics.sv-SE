@@ -6,20 +6,20 @@ title: Anpassa dimensionsbehörigheter
 topic: Admin tools
 uuid: aaf164ad-3863-4129-864e-39ec71c6a8eb
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Anpassa dimensionsbehörigheter
 
-> [!IMPORTANT] Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>[!IMPORTANT] Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
 
 Anpassa användaråtkomsten på detaljnivå: eVars, trafikrapporter, lösningsrapporter och kundvägsrapporter.
 
 **[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL Report Access]** > **[!UICONTROL Dimensions]** > **[!UICONTROL Customize]**
 
-> [!IMPORTANT] Vissa dimensioner är inte tillåtna just nu. Dessa mått är: Längd på mobilbokmärke. Mobilenhetsnummer; Mobil DRM. Mobila informationstjänster. Mobile Java VM; Dekoration av mobil e-post; Mobile Net-protokoll, Mobiloperativsystem. Mobilt tryck för att prata.
+>[!IMPORTANT] Vissa dimensioner är inte tillåtna just nu. Dessa mått är: Längd på mobilbokmärke. Mobilenhetsnummer; Mobil DRM. Mobila informationstjänster. Mobile Java VM; Dekoration av mobil e-post; Mobile Net-protokoll, Mobiloperativsystem. Mobilt tryck för att prata.
 >
 >Dessa dimensioner är tillgängliga för alla användare, oavsett andra behörigheter.
 
