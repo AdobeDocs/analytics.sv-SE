@@ -5,7 +5,7 @@ title: Integreringsfunktioner
 topic: Data connectors
 uuid: 4ad8e6e8-3449-498a-8596-37c0ac1657cd
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -20,7 +20,7 @@ När Data Connectors DFA-integreringen har aktiverats ger den följande mätvär
 * (valfritt) DFA-kostnadsdata
 * (valfritt) DFA-frågefel, timeout
 
-> [!NOTE] Den här integreringen har inte stöd för klickningsspårare (tidigare klickningskommandon). Klickspårare används för att registrera antalet klick på textlänkar, länkar i e-postmeddelanden eller på andra element som är hårdkodade på en webbplats.
+>[!NOTE] Den här integreringen har inte stöd för klickningsspårare (tidigare klickningskommandon). Klickspårare används för att registrera antalet klick på textlänkar, länkar i e-postmeddelanden eller på andra element som är hårdkodade på en webbplats.
 
 DFA-integreringen för Data Connectors skapar automatiskt DFA-spårningskoder från data som returneras av DFA. Dessa spårningskoder är utformade för att unikt identifiera en annons tillsammans med tillhörande placering och kreativ. Följande visar strukturen för spårningskoden, beroende på version av integreringen. Version 1.5 ser ut så här:
 
@@ -55,5 +55,5 @@ Om **[!UICONTROL SearchCenter]** > **[!UICONTROL DFA deduplication]** är valt i
 
 * Om det är en DFA-vy fyller integreringen i strängen &quot;DFA Viewthrough&quot; till SCM eVar.
 
-> [!NOTE] Om SearchCenter > DFA deduplicering är aktiverat och frågesträngsparametern SearchCenter är inställd, kommer besöket inte att användas för DFA-bearbetning. Det innebär att frågesträngsparametern SearchCenter ska skilja sig från DFA-klickningsparametern och att inga visningsannonser ska ange frågesträngsparametern SearchCenter.
+>[!NOTE] Om SearchCenter > DFA deduplicering är aktiverat och frågesträngsparametern SearchCenter är inställd, kommer besöket inte att användas för DFA-bearbetning. Det innebär att frågesträngsparametern SearchCenter ska skilja sig från DFA-klickningsparametern och att inga visningsannonser ska ange frågesträngsparametern SearchCenter.
 
