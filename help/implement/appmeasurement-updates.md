@@ -3,7 +3,7 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 translation-type: tm+mt
-source-git-commit: e3bffe93b224089cb8561c415bf20a0457645ac3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -102,7 +102,7 @@ Den här versionen ser till att [!DNL AppMeasurement] biblioteket skickar cookie
 
 Releasedatum: 24 **maj 2018**
 
-> [!NOTE] Besökar-API 3.0 eller högre krävs för kunder som använder [!DNL Experience Cloud] ID-tjänsten. Adobe rekommenderar att du uppgraderar till den senaste versionen av Visitor API när associerade kodbibliotek uppdateras ( [!DNL at.js], [!DNL AppMeasurement.js]och så vidare).
+>[!NOTE] Besökar-API 3.0 eller högre krävs för kunder som använder [!DNL Experience Cloud] ID-tjänsten. Adobe rekommenderar att du uppgraderar till den senaste versionen av Visitor API när associerade kodbibliotek uppdateras ( [!DNL at.js], [!DNL AppMeasurement.js]och så vidare).
 
 * Uppdaterat [!DNL AppMeasurement] för att använda det uppdaterade besökargränssnittet för att begära ID:n. (AN-151483)
 * Ett problem har korrigerats där cookie för länkspårning fortsätter att skrivas efter att länkspårning har inaktiverats. (AN-156332)
@@ -216,7 +216,7 @@ Uppdaterat: 18 **augusti 2016**
 * Uppdaterat [!DNL AppMeasurement] för att läsa och skriva AMCV-cookies. (AN-127098)
 * Inkludering av Visitor API 1.7.0.
 
-> [!NOTE] Se även följande versionsinformation för [!DNL JavaScript] version 1.6.3, som innehåller uppdaterade krav för tjänsten Experience Cloud ID.
+>[!NOTE] Se även följande versionsinformation för [!DNL JavaScript] version 1.6.3, som innehåller uppdaterade krav för tjänsten Experience Cloud ID.
 
 ## Version 1.6.3
 
@@ -293,7 +293,7 @@ Releasedatum: 21 **maj 2015**
 * Inkludering av Visitor API 1.4.
 * AudienceManagement-modulen har uppdaterats för att använda DIL version 6.0.
 
-> [!NOTE] **Känt fel**: I integreringen av Visitor API/ [!DNL AppMeasurement] [!DNL Audience Manager] Module finns det två iFrame-målpubliceringsbegäranden i IE6-9: `//fast.<subdomain>.demdex.net/dest5.html` och `//fast.<subdomain>.demdex.net/dest4.html`. Det korrekta beteendet, som det visas i andra webbläsare, är att bara läsa in `//fast.<subdomain>.demdex.net/dest5.html`.
+>[!NOTE] **Känt fel**: I integreringen av Visitor API/ [!DNL AppMeasurement] [!DNL Audience Manager] Module finns det två iFrame-målpubliceringsbegäranden i IE6-9: `//fast.<subdomain>.demdex.net/dest5.html` och `//fast.<subdomain>.demdex.net/dest4.html`. Det korrekta beteendet, som det visas i andra webbläsare, är att bara läsa in `//fast.<subdomain>.demdex.net/dest5.html`.
 
 ## Version 1.4.4
 
@@ -349,7 +349,7 @@ Releasedatum: 21 **augusti 2014**
 * Tillägg av **[!UICONTROL AudienceManagement]** Modulen i nedladdningszippen.
 * Stöd för ytterligare eVars (76-250) och events (101-1000) har lagts till.
 
-> [!NOTE] H-Code stöder inte ytterligare eVars och events.
+>[!NOTE] H-Code stöder inte ytterligare eVars och events.
 
 ## Version 1.3.2
 
