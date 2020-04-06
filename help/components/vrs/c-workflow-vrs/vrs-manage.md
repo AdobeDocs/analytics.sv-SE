@@ -5,7 +5,7 @@ title: Hantera virtuella rapportsviter
 topic: Reports and analytics
 uuid: ce683c01-2d7d-4f2a-98db-946f68eda99b
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -18,7 +18,7 @@ Med Virtual Report Suite Manager kan administratörer redigera, lägga till, tag
 
 ![](assets/vrs-manage.png)
 
-> [!NOTE] I Virtual Report Suite Manager kan du bara se dina egna virtuella rapportsviter. Du måste klicka **[!UICONTROL Show All]** för att se alla andras.
+>[!NOTE] I Virtual Report Suite Manager kan du bara se dina egna virtuella rapportsviter. Du måste klicka **[!UICONTROL Show All]** för att se alla andras.
 
 | Uppgift | Beskrivning |
 |--- |--- |
