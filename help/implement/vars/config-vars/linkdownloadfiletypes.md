@@ -2,7 +2,7 @@
 title: linkDownloadFileTypes
 description: Fastställ filtillägg som automatiskt spåras som nedladdningslänkar.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ När [`trackDownloadLinks`](trackdownloadlinks.md) är aktiverat och en besökar
 
 Anpassa `linkDownloadFileTypes` vilka filtillägg du vill räkna som nedladdningslänkar.
 
-> [!NOTE] Endast faktiska klick spåras automatiskt. Följande typer av länkar spåras inte automatiskt:
+>[!NOTE] Endast faktiska klick spåras automatiskt. Följande typer av länkar spåras inte automatiskt:
 >
 > * Filnedladdningar som startar automatiskt när en sida läses in
 > * Hämtar utlösaren efter en omdirigering
