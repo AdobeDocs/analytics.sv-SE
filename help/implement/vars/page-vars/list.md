@@ -2,7 +2,7 @@
 title: list
 description: Anpassade variabler som innehåller flera värden i samma träff.
 translation-type: tm+mt
-source-git-commit: 664d0cde8b8b17c86b47858611d459026aab0bef
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ Listvariabler är anpassade variabler som du kan använda hur du vill. De funger
 
 Se till att du spelar in hur du använder varje listvariabel och deras logik i [lösningsdesigndokumentet](../../prepare/solution-design.md).
 
-> [!NOTE] Listvariabler lagrar de senaste 250 värdena per besökare. Om det finns mer än 250 unika värden för en viss besökare, tillskrivs de äldsta värdena inte mätvärden.
+>[!NOTE] Listvariabler lagrar de senaste 250 värdena per besökare. Om det finns mer än 250 unika värden för en viss besökare, tillskrivs de äldsta värdena inte mätvärden.
 
 ## Ställ in listvariabler i rapportsvitens inställningar
 
@@ -32,7 +32,7 @@ Varje listvariabel är en sträng som innehåller anpassade värden som är spec
 s.list1 = "Example value 1,Example value 2,Example value 3";
 ```
 
-> [!TIP] Om du anger dubblettvärden i samma träff, dupliceras alla förekomster av dessa värden. Om du till exempel anger `s.list1 = "Example,Example";`räknas en instans i rapporter.
+>[!TIP] Om du anger dubblettvärden i samma träff, dupliceras alla förekomster av dessa värden. Om du till exempel anger `s.list1 = "Example,Example";`räknas en instans i rapporter.
 
 ## Jämför listekurser med listvariabler
 
