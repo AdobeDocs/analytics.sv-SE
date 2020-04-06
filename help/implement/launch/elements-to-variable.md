@@ -2,7 +2,7 @@
 title: Mappa Launch-dataelement till analysvariabler
 description: Tilldela dataelement till analysvariabler så att du kan använda dem som dimensioner i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 6937d47e3cf980a21bec680cdbd2931a4a368221
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -43,7 +43,7 @@ Variabler som anges i regler är idealiska om du inte vill ha variabler som ange
 1. Markera det önskade dataelementet i det modala fönstret. Klicka på [!UICONTROL Select].
 1. Dataelementnamnet läggs till i textfältet omgivet av `%` tecken. Om du till exempel gav dataelementet namnet&quot;Sidnamn&quot;, skulle du se strängen `%Page name%` när du tilldelar ett dataelement till en variabel.
 
-> [!TIP] Du kan sammanfoga dataelement i samma variabel. Om du till exempel har ett dataelement av typen Värdnamn och ett dataelement av typen Sökväg, kan du kombinera båda i en enda variabel med `%Hostname%%Pathname%`.
+>[!TIP] Du kan sammanfoga dataelement i samma variabel. Om du till exempel har ett dataelement av typen Värdnamn och ett dataelement av typen Sökväg, kan du kombinera båda i en enda variabel med `%Hostname%%Pathname%`.
 
 ## Nästa steg
 
