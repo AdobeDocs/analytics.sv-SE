@@ -3,7 +3,7 @@ description: När integreringen har distribuerats kan du börja använda de extr
 title: Använda integreringen
 uuid: 5e861274-4d81-4ee0-b84e-ab83bc1c1331
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 När integreringen har distribuerats kan du börja använda de extrafunktioner som den ger.
 
-> [!NOTE] Det kan ta 24-48 timmar att börja se några av Demandbase-data i Adobe Analytics-rapporter.
+>[!NOTE] Det kan ta 24-48 timmar att börja se några av Demandbase-data i Adobe Analytics-rapporter.
 
 Här är några åtgärder du kan vidta för att få ut mer av den här integreringen inifrån Adobe Analytics:
 
