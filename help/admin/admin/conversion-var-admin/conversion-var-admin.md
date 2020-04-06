@@ -5,7 +5,7 @@ title: Konverteringsvariabler (eVar)
 topic: Admin tools
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 translation-type: tm+mt
-source-git-commit: 76613290f4496a400ba9c16171cef7e161a29cf3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -24,7 +24,7 @@ eVars är bäst att använda för att mäta orsak och effekt, till exempel:
 
 Om trafikmätning eller vägning önskas rekommenderas användning av trafikvariabler.
 
-> [!NOTE] Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [List-variabler (listvariabler)](https://marketing.adobe.com/resources/help/en_US/sc/implement/listN.html).
+>[!NOTE] Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [List-variabler (listvariabler)](https://marketing.adobe.com/resources/help/en_US/sc/implement/listN.html).
 
 ## Konverteringsvariabler - beskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
 
