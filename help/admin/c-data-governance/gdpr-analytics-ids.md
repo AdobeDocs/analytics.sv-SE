@@ -3,14 +3,14 @@ description: 'null'
 title: Bästa praxis för märkning
 uuid: d1e9bfff-9b04-4e3e-9b4e-a6e527b1b2e3
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Bästa praxis för märkning
 
-> [!NOTE] Kom ihåg att etiketter måste granskas varje gång en ny rapportserie skapas eller när en ny variabel aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketten när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En omimplementering av dina mobilappar eller webbplatser kan ändra det sätt på vilket befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketterna.
+>[!NOTE] Kom ihåg att etiketter måste granskas varje gång en ny rapportserie skapas eller när en ny variabel aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketten när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En omimplementering av dina mobilappar eller webbplatser kan ändra det sätt på vilket befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketterna.
 
 ## Direkt kontra indirekt identifierbara ID:n {#section_030799AA1397433FBA61A2BC60A7A750}
 
@@ -66,7 +66,7 @@ Använd den här tabellen för att fastställa vilka typer av ID som du kommer a
 
 ## Bästa tillvägagångssätt för att ange borttagningsetiketter {#section_08166C99B48E49218392FAC18922C10E}
 
-> [!NOTE] Säljare är alltid skiftlägeskänsliga. Varor är som standard inte skiftlägeskänsliga, men kan konfigureras via Adobes kundtjänst för att vara skiftlägeskänsliga. Om du har en skiftlägeskänslig eVar som innehåller ett ID är det ditt ansvar att använda rätt fall när du skickar en begäran om dataintegritet så att det fall som används i begäran matchar det fall som används i träffar som innehåller dessa ID:n.
+>[!NOTE] Säljare är alltid skiftlägeskänsliga. Varor är som standard inte skiftlägeskänsliga, men kan konfigureras via Adobes kundtjänst för att vara skiftlägeskänsliga. Om du har en skiftlägeskänslig eVar som innehåller ett ID är det ditt ansvar att använda rätt fall när du skickar en begäran om dataintegritet så att det fall som används i begäran matchar det fall som används i träffar som innehåller dessa ID:n.
 
 Ta bort etiketterna DEL-DEVICE och DEL-PERSON bör användas sparsamt. När det tillämpas på en variabel som inte innehåller ett ID som användes som en del av dataintegritetsbegäran ändras antalet (mått) i historiska analysrapporter nästan alltid.
 
