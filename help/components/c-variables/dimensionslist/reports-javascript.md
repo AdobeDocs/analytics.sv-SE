@@ -4,7 +4,7 @@ title: Stöd för JavaScript
 topic: Reports
 uuid: 7b95001a-cd35-478a-8b24-54d30666110d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Visar mått baserat på om enheten har JavaScript aktiverat, inaktiverat eller om den räknas som &quot;oidentifierad&quot;.
 
-> [!NOTE] I början av november 2016 planerar vi att ta bort begränsningarna där JavaScript alltid finns med som *`disabled / unidentified`* för mobila enheter.
+>[!NOTE] I början av november 2016 planerar vi att ta bort begränsningarna där JavaScript alltid finns med som *`disabled / unidentified`* för mobila enheter.
 
 JavaScript-rapporten motsvarar kolumnen javascript i raw-data.
 
