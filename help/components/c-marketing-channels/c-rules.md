@@ -2,7 +2,7 @@
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 translation-type: tm+mt
-source-git-commit: c10a12781a8fe52b7b897cd337dc686aa0bbb240
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -18,7 +18,7 @@ Här följer viktiga riktlinjer för att skapa regler:
 
    Se [Ingen kanal identifierad.](/help/components/c-marketing-channels/c-faq.md)
 
-> [!NOTE] Även om dessa regler inte påverkar rapportering utanför marknadsföringskanaler påverkar de datainsamlingen för marknadsföringskanaler. Data som samlas in med dessa regler är helt permanenta, och regler som ändras efter det att data har samlats in är inte retroaktiva. Vi rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar, [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
+>[!NOTE] Även om dessa regler inte påverkar rapportering utanför marknadsföringskanaler påverkar de datainsamlingen för marknadsföringskanaler. Data som samlas in med dessa regler är helt permanenta, och regler som ändras efter det att data har samlats in är inte retroaktiva. Vi rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar, [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
 
 ## Förutsättningar
 
