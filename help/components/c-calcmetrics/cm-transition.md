@@ -3,7 +3,7 @@ description: Dessa förändringar i hur beräknade mätvärden fungerar i Analyt
 title: Vanliga frågor
 uuid: 9b7f1cd1-b969-4b15-8af1-969d816b65b8
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -75,9 +75,9 @@ Du skulle bara se ett antal beräknade mätvärden med samma namn (men som har s
 
 Överväg att konsolidera beräknade värden med liknande namn och definitioner, men var försiktig när du gör det. Du kan kontrollera om det finns beräknade värden i rapportsviten i hanteraren för beräknade mått om du vill verifiera den ursprungliga rapportsviten. Du bör också kontrollera måttdefinitionerna när du tar bort potentiella dubbletter för att vara säker på att du konsoliderar mätvärden korrekt.
 
-> [!NOTE] Även om beräknade värden inte längre är bundna till en viss rapportserie och kan användas i alla rapportsviter som är synliga för inloggningsföretaget, är rapportsviten som beräkningarna skapades i eller senast sparades fortfarande synlig i Beräknade mätvärden.
+>[!NOTE] Även om beräknade värden inte längre är bundna till en viss rapportserie och kan användas i alla rapportsviter som är synliga för inloggningsföretaget, är rapportsviten som beräkningarna skapades i eller senast sparades fortfarande synlig i Beräknade mätvärden.
 
-> [!NOTE] Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
+>[!NOTE] Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
 
 ## Vad hände med mina globala beräknade värden? {#section_7351D4C7361F4ABAA1B43F8E89AAD211}
 
@@ -89,7 +89,7 @@ Globala beräknade värden ägs nu av den första Admin-användaren i inloggning
 
 Ingenting. Den nya administratörsägaren bör dock vara försiktig när de ändrar eller tar bort dessa beräknade värden. De kan användas i ett antal bokmärkta rapporter och instrumentpaneler.
 
-> [!NOTE] Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
+>[!NOTE] Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
 
 ## Vad hände med Global Calculated Metrics som delades mellan olika inloggningsföretag? {#section_59E5CD948ED643AE9AD3D2E4277647F8}
 
@@ -101,7 +101,7 @@ Globala beräknade värden kan inte längre delas mellan inloggningsföretag. De
 * Standardvärdet är &quot;delad med alla&quot;.
 * Kopior kommer att vara oberoende av alla andra inloggningsföretag.
 
-> [!NOTE] Om det beräknade måttet användes i ett bokmärke, en kontrollpanel, en avisering eller en schemalagd rapport kommer redigering av den nya kopian INTE att påverka det gamla beständiga beräknade måttet.
+>[!NOTE] Om det beräknade måttet användes i ett bokmärke, en kontrollpanel, en avisering eller en schemalagd rapport kommer redigering av den nya kopian INTE att påverka det gamla beständiga beräknade måttet.
 
 ## Vad hände med Beräknade mått med Numeric eller Numeric2-klassificering? {#section_71AFE6C4A7CD4AA19AB3A9D3C41D115B}
 
@@ -191,7 +191,7 @@ Du måste uppgradera till v5.2 för att kunna se dessa mätvärden.
 
 ## Hur fungerar summor för beräknade värden? {#section_57BA3A299C7948ABB82B0392A9B0F33E}
 
-När [!UICONTROL Reports & Analytics] en beräknad summa av mätvärden visas i [!UICONTROL Reports & Analytics]används formeln bara på summan. Summan för beräknade måttorder/besök tar till exempel totalt antal order och dividerar dem med totalt antal besök. I vissa fall är den beräknade summan inte bara summan av radobjekten, utan en summa för platsen.
+När [!UICONTROL Reports & Analytics] en beräknad summa av mätvärden visas i [!UICONTROL Reports & Analytics]används formeln bara på summan. Summan för beräknade måttorder/besök tar till exempel totalt antal order och dividerar dem med totalt antal besök. I vissa fall är den beräknade summan inte bara summan av radobjekten utan en summa för platsen.
 
 Exempel 1: Besökare för en sökterm: samma besökare kan ha sökt efter flera termer, så i det här fallet är det totala antalet besökare som inte är lika med summan av radobjekten.
 
