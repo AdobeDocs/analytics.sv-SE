@@ -2,7 +2,7 @@
 title: Implementera med AMP
 description: Implementera Adobe Analytics på AMP-sidor.
 translation-type: tm+mt
-source-git-commit: 9d2007bead6a4963022f8ea884169802b1c002ff
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -34,7 +34,7 @@ I följande tabell jämförs dessa två metoder:
 
 Väg in proffsen och ikonerna i organisationen för att avgöra vilken metod du vill använda. Se [AMP-exempel](https://github.com/Adobe-Marketing-Cloud/mobile-services/tree/master/samples/mobile-web) på Adobes GitHub-databas för exempelkod.
 
-> [!WARNING] Använd inte både `"adobeanalytics"` - och `"adobeanalytics_nativeConfig"` -mallarna på samma sida med AMP. Om du försöker göra det kan du generera fel i webbläsarkonsolen och dubbelräkna besökare.
+>[!WARNING] Använd inte både `"adobeanalytics"` - och `"adobeanalytics_nativeConfig"` -mallarna på samma sida med AMP. Om du försöker göra det kan du generera fel i webbläsarkonsolen och dubbelräkna besökare.
 
 ## Metod 1: Använd taggen amp-analytics med mallen&quot;adobeanalytics&quot;
 
@@ -77,11 +77,11 @@ I `click` utlösaren kan du ange en väljare som ser till att när någon klicka
 
 Dessutom har stöd för ett antal variabelersättningar så att AMP kan tillhandahålla datavärden som man känner till. `amp-analytics` Mer information finns i [variabler som stöds i](https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/analytics-vars.md) amp-analytics på GitHub.
 
-> [!NOTE] Bildbegäranden som skickas till Adobe med den här metoden innehåller inte data för många standardrapporter (till exempel webbläsare, skärmstorlek eller referent). Om du vill ta med den här informationen i träffar kontrollerar du att de ingår i frågesträngen för bildbegäran. Mer information finns i [Frågeparametrar](../validate/query-parameters.md) för datainsamling.
+>[!NOTE] Bildbegäranden som skickas till Adobe med den här metoden innehåller inte data för många standardrapporter (till exempel webbläsare, skärmstorlek eller referent). Om du vill ta med den här informationen i träffar kontrollerar du att de ingår i frågesträngen för bildbegäran. Mer information finns i [Frågeparametrar](../validate/query-parameters.md) för datainsamling.
 
 Adobe identifierar besökare med en inbyggd AMP-funktion och ställer in cookien `adobe_amp_id`. Detta besökar-ID är unikt för alla andra ID:n som anges av Adobe Analytics (till exempel `s_vi` cookie). Adobe Experience Cloud ID Service stöds inte med den här implementeringsmetoden.
 
-> [!NOTE] AMP använder CDN:er för att leverera innehåll. Den är uppbyggd för att räkna olika unika besökare för varje CDN som en besökare hämtar innehåll från, vilket kan generera ett unikt antal besökare.
+>[!NOTE] AMP använder CDN:er för att leverera innehåll. Den är uppbyggd för att räkna olika unika besökare för varje CDN som en besökare hämtar innehåll från, vilket kan generera ett unikt antal besökare.
 
 Vi rekommenderar att du använder en separat rapportserie för AMP-sidor på grund av hur AMP identifierar unika besökare.
 
@@ -147,7 +147,7 @@ Den här metoden skickar data till en verktygswebbsida via frågesträngsparamet
 
 I mallen läggs också frågesträngsparametrar till baserat på de variabler som listas i avsnittet i `"adobeanalytics_nativeConfig"` `extraUrlParams` taggen amp-analytics. I ovanstående exempel inkluderas parametrarna `pageName` och `v1` .
 
-> [!IMPORTANT] Din `stats.html` sida måste ligga på en separat underdomän från den domän som AMP-servern finns på. AMP-ramverket tillåter inte iframes från samma underdomän som själva AMP-sidan finns på. Om din AMP till exempel ligger på `amp.example.com`en värdserver, kan du lägga din `stats.html` sida på en separat underdomän, till exempel `ampmetrics.example.com`.
+>[!IMPORTANT] Din `stats.html` sida måste ligga på en separat underdomän från den domän som AMP-servern finns på. AMP-ramverket tillåter inte iframes från samma underdomän som själva AMP-sidan finns på. Om din AMP till exempel ligger på `amp.example.com`en värdserver, kan du lägga din `stats.html` sida på en separat underdomän, till exempel `ampmetrics.example.com`.
 
 Om en användare väljer den här metoden och inte vill följa spårningen på din primära plats, avanmäls de också från spårning på alla AMP:er. Att använda den här verktygssidan innebär också att AMP kan stödja Adobe Experience Cloud ID-tjänsten. Det krävs ingen separat rapportserie.
 
