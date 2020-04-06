@@ -6,7 +6,7 @@ title: Identifiera unika besökare
 topic: Developer and implementation
 uuid: ed4dee75-ecfb-4715-8122-461983c7dd8f
 translation-type: tm+mt
-source-git-commit: 8a090574a6822a76366343ad5c657280bf7475eb
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Analytics har flera sätt att identifiera besökare. I följande tabell vi
 
 I många scenarier kan du se två eller tre olika ID:n för ett samtal, men i Analytics används det första ID:t som finns i föregående tabell som det officiella besökar-ID:t. Om du till exempel anger ett anpassat besökar-ID (som ingår i frågeparametern&quot;vid&quot;) kommer detta ID att användas före andra ID:n som kan finnas i samma träff.
 
-> [!NOTE] Varje besökar-ID för Analytics är kopplat till en besökarprofil på Adobes servrar. Besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett om en cookie-fil för besöks-ID har gått ut eller inte.
+>[!NOTE] Varje besökar-ID för Analytics är kopplat till en besökarprofil på Adobes servrar. Besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett om en cookie-fil för besöks-ID har gått ut eller inte.
 
 ## Anpassat besökar-ID
 
