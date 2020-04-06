@@ -2,7 +2,7 @@
 title: maxDelay
 description: Fastställ den maximala tid som AppMeasurement väntar på ett svar från DFA innan en bildbegäran skickas.
 translation-type: tm+mt
-source-git-commit: 4a6cfa479559a644588613bd127c5b45ee8787e6
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -31,4 +31,4 @@ s.maxDelay = 750;
 * Genom att minska väntetiden minskar risken för att förlora träffdata i Analytics, men det kan minska mängden DFA-data som skickas med träffdata.
 * DFA-integreringsdata går förlorade när perioden inte räcker till för att DFA-värden ska kunna svara. `s.maxDelay`
 
-> [!NOTE] Adobe har ingen kontroll över DFA:s svarstid. Om du får konsekventa problem även efter att ha ökat den maximala fördröjningsperioden till en rimlig tidsperiod, kontaktar du din organisations DFA-kontoadministratör.
+>[!NOTE] Adobe har ingen kontroll över DFA:s svarstid. Om du får konsekventa problem även efter att ha ökat den maximala fördröjningsperioden till en rimlig tidsperiod, kontaktar du din organisations DFA-kontoadministratör.
