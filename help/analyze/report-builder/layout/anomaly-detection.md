@@ -4,7 +4,7 @@ title: Analysidentifiering
 topic: Report builder
 uuid: 02da21b4-3394-471b-97b5-aa1bddf1f445
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -22,7 +22,7 @@ Exempel på avvikelser du kan undersöka är:
 * Spänn i videobufferthändelser
 * Taggar i låga videobithastigheter
 
-> [!NOTE] Avvikelseidentifiering är bara tillgängligt när du väljer daggranularitet.
+>[!NOTE] Avvikelseidentifiering är bara tillgängligt när du väljer daggranularitet.
 
 <p class="head"> <b>Mätvärden för avvikelseidentifiering</b> </p>
 
