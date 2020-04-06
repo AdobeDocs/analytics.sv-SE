@@ -2,7 +2,7 @@
 title: tl
 description: Skicka ett länkspårningssamtal till Adobe.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -44,7 +44,7 @@ s.tl([Link object],[Link type],[Link name],[Override variable]);
 
 Argumentet för läntobjekt avgör om webbläsaren väntar upp till 500 ms innan den navigerar bort från sidan. Om en bildbegäran skickas tidigare än 500 ms navigerar sidan direkt till den klickade länken.
 
-> [!NOTE] Med AppMeasurement aktiveras automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
+>[!NOTE] Med AppMeasurement aktiveras automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
 
 * `this`: Vänta i upp till 500 ms för att ge AppMeasurement tid att skicka en bildbegäran. Standardvärde.
 * `true`: Vänta inte.
