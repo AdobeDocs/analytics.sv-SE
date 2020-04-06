@@ -4,7 +4,7 @@ title: Konverteringsström
 topic: Reports
 uuid: a67ce302-fae1-434a-b662-91672e85cab3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -32,5 +32,5 @@ Den här rapporten kan även anpassas så att du kan lägga till anpassade konve
 
 Rapporttabellen visar statistik för genomsnittlig försäljning per klickfrekvens och genomsnittliga enheter som säljs per klickfrekvens. Du kan lägga till mått och anpassade händelser från andra rapporteringsgrupper i dessa rapporter. Dessa trattar har många likheter men baseras på olika variabler och händelser. Du kan använda de här rapporterna för att se vilka procentsatser och allmänna trender för användare som utlöser specifika händelser som du anger. Du kan se var användarna inte följer med till händelser, vilket ger insikt i just den punkten i konverteringsprocessen.
 
-> [!NOTE] Förekomster inom ramen för dessa rapporter motsvarar det totala antalet besök där en eVar eller händelse definierades.
+>[!NOTE] Förekomster inom ramen för dessa rapporter motsvarar det totala antalet besök där en eVar eller händelse definierades.
 
