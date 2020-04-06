@@ -3,7 +3,7 @@ description: På den här sidan listas alla partnervariabler i Data Connectors (
 title: Dataintegritet och dataanslutningar (Genesis)
 uuid: d3a32c09-d3c5-452c-8302-8da28e62ead3
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -16,7 +16,7 @@ Med den här informationen kan du identifiera direkt identifierbara data eller i
 
 Om du använder en integrering av någon av nedanstående anslutningar kan du bara kontrollera vilka partnervariabler/klassificeringar i integreringen som kan innehålla direkt identifierbara data eller indirekt identifierbara data.
 
-> [!NOTE] Den här informationen tillhandahålls för att hjälpa dig att identifiera variabler som måste [märkas](/help/admin/c-data-governance/gdpr-setup-reportsuite.md), men det är ditt ansvar som personuppgiftsansvariga att använda lämpliga etiketter eller utföra andra åtgärder för [dataintegritet](/help/admin/c-data-governance/an-gdpr-overview.md) (att uppdatera klassificeringar osv.).
+>[!NOTE] Den här informationen tillhandahålls för att hjälpa dig att identifiera variabler som måste [märkas](/help/admin/c-data-governance/gdpr-setup-reportsuite.md), men det är ditt ansvar som personuppgiftsansvariga att använda lämpliga etiketter eller utföra andra åtgärder för [dataintegritet](/help/admin/c-data-governance/an-gdpr-overview.md) (att uppdatera klassificeringar osv.).
 
 <table id="table_4DE59253898D46E282EF5F9CB0ED34B5"> 
  <thead> 
