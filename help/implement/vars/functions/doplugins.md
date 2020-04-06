@@ -2,7 +2,7 @@
 title: doPlugins
 description: Konfigurera logik precis innan en träff kompileras och skickas till Adobe.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -28,7 +28,7 @@ Ställ in variabeln på en funktion som innehåller önskad kod. `s.doPlugins` F
 s.doPlugins = function() {/* Desired code */};
 ```
 
-> [!NOTE] Ställ bara in en funktion på `doPlugins` variabeln en gång i implementeringen. Om du anger variabeln mer än en gång används bara den senaste koden. `doPlugins`
+>[!NOTE] Ställ bara in en funktion på `doPlugins` variabeln en gång i implementeringen. Om du anger variabeln mer än en gång används bara den senaste koden. `doPlugins`
 
 ## Exempel
 
@@ -44,4 +44,4 @@ s.doPlugins = function() {
 }
 ```
 
-> [!NOTE] Tidigare versioner av AppMeasurement hade något annorlunda `doPlugins()` kod. Adobe rekommenderar att du använder ovanstående format som en god praxis.
+>[!NOTE] Tidigare versioner av AppMeasurement hade något annorlunda `doPlugins()` kod. Adobe rekommenderar att du använder ovanstående format som en god praxis.
