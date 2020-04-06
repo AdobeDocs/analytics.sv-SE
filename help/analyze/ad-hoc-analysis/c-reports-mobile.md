@@ -3,7 +3,7 @@ description: Visar information om webbplatsåtkomst från en mobil enhet. Mobilr
 title: Mobilrapporter
 uuid: feb1fc34-3541-4b2d-b9cb-84d2e91d9539
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -18,7 +18,7 @@ Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter för
 
 Om du vill förbättra besökaridentifieringen för mobila enheter måste du vara med på operatörens lista (vit lista) för att kunna skicka prenumerations-ID:n till en domän. (Du kan visa transportföretaget i **[!UICONTROL Visitor Profile]** >- **[!UICONTROL Domains]** rapporten.)
 
-> [!NOTE] Om du vill visa rapporter på en mobil enhet loggar du in på [Experience Cloud](https://login.experiencecloud.adobe.com).
+>[!NOTE] Om du vill visa rapporter på en mobil enhet loggar du in på [Experience Cloud](https://login.experiencecloud.adobe.com).
 
 Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https://www.adobe.com/experience-cloud/topics/mobile-analytics.html) .
 
