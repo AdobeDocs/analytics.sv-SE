@@ -2,7 +2,7 @@
 title: Felsöka sessioner i Adobe Analytics
 description: Lär dig hur du löser problem med utloggning från Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -25,7 +25,7 @@ Adobe använder en auktoriseringshuvud när förfrågningar görs till Adobe. Vi
 
 För att lösa problemet rekommenderar Adobe att ni samarbetar med IT-avdelningen i er organisation för att tillåta behörighetshuvudet via er organisations proxy.
 
-> [!NOTE] Även om medlemmar i Analytics-communityn tycker att följande länkar är användbara, ägs de inte av Adobe. Tänk på detta när du visar innehållet.
+>[!NOTE] Även om medlemmar i Analytics-communityn tycker att följande länkar är användbara, ägs de inte av Adobe. Tänk på detta när du visar innehållet.
 
 Information om Symantec-proxies och autentiseringshuvuden finns här:
 
