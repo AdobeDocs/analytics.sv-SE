@@ -4,7 +4,7 @@ keywords: clickstream;data feed;datafeed;Data Feed
 title: Översikt över Analytics Data Feed
 uuid: 6bdbe90c-e6ed-4bb0-b5be-24fd795adde4
 translation-type: tm+mt
-source-git-commit: 984d6034d14cc4256d93bd4f7d1a7f01b63b71e9
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -65,4 +65,4 @@ När ni förstår det grundläggande arbetsflödet för att hämta dataflöden k
 
 Video som navigerar i datafeedgränssnittet:
 
-> [!VIDEO](https://www.youtube.com/watch?v=m_fb--gNtR4)
+>[!VIDEO](https://www.youtube.com/watch?v=m_fb--gNtR4)
