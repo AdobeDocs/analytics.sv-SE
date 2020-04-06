@@ -2,14 +2,14 @@
 title: getTimeSinceLastVisit
 description: Mät hur lång tid det tar mellan två besök.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Adobe plug-in: getTimeSinceLastVisit
 
-> [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med `getTimeSinceLastVisit` plugin-programmet kan du spåra hur lång tid det har tagit för en besökare att återvända till din webbplats efter det senaste besöket.
 
@@ -66,7 +66,7 @@ Metoden använder inte några argument `getTimeSinceLastVisit` . Den returnerar 
 * Tiden som är större än en dag avrundas till närmsta dagstidsinställning. Exempel, `"1 day"`, `"3 days"`, `"9 days"`, `"372 days"`
 * Om en besökare inte har besökt tidigare eller om den förflutna tiden är längre än två år, anges värdet till `"New Visitor"`.
 
-> [!NOTE] Denna plugin returnerar bara ett värde vid första besöket.
+>[!NOTE] Denna plugin returnerar bara ett värde vid första besöket.
 
 Detta plugin-program skapar en cookie från första part med namnet `"s_tslv"` inställd på Unix-tidsstämpel för aktuell tid. Kakan går ut efter två års inaktivitet.
 
