@@ -3,7 +3,7 @@ description: Innan du aktiverar den här integreringen ska du granska följande 
 title: Innan du aktiverar den här integreringen
 uuid: fdc762bc-24e3-4c0a-904d-d4be2a4f3a20
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -56,7 +56,7 @@ I följande tabell beskrivs de Analytics-variabler som aktiveras automatiskt fö
 
 ### Obligatoriska variabler {#section-3ca8dc46bab0436cba0c9ef827c8356a}
 
-> [!NOTE] Den här integreringen använder dedikerade variabler för appbutiksdata, så du behöver inte tilldela anpassade handelsvariabler och händelser.
+>[!NOTE] Den här integreringen använder dedikerade variabler för appbutiksdata, så du behöver inte tilldela anpassade handelsvariabler och händelser.
 
 | Variabeltyp | Namn | Populationsmetod | Beskrivning |
 |---|---|---|---|
