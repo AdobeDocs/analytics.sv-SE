@@ -5,7 +5,7 @@ title: Om underklassificeringar
 topic: Admin tools
 uuid: 48bd7fc1-54a1-40ef-bc55-395338522f2d
 translation-type: tm+mt
-source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
 
 Adobe Analytics stöder både klassificeringsmodeller på en och flera nivåer. Med en klassificeringshierarki kan du tillämpa en klassificering på en klassificering.
 
-> [!NOTE] Delklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte samma sak som när [!UICONTROL Classification Hierarchy] du skapar [!UICONTROL Hierarchy] rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](classification-hierarchies.md).
+>[!NOTE] Delklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte samma sak som när [!UICONTROL Classification Hierarchy] du skapar [!UICONTROL Hierarchy] rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](classification-hierarchies.md).
 
 Exempel:
 
@@ -52,7 +52,7 @@ Exempel:
 
 Även om filmallen för en klassificering på flera nivåer är mer komplex är styrkan med klassificeringar på flera nivåer att separata nivåer kan överföras som separata filer. Den här metoden kan användas för att minimera mängden data som behöver överföras regelbundet (varje dag, varje vecka och så vidare) genom att gruppera data i klassificeringsnivåer som ändras över tid jämfört med dem som inte gör det.
 
-> [!NOTE] Om kolumnen i en datafil är tom genererar Adobe automatiskt unika nycklar för varje datarad. [!UICONTROL Key] Om du vill undvika att en fil skadas när du överför en datafil med klassificeringsdata på andra nivån eller högre, ska du fylla varje rad i [!UICONTROL Key] kolumnen med en asterisk (*).
+>[!NOTE] Om kolumnen i en datafil är tom genererar Adobe automatiskt unika nycklar för varje datarad. [!UICONTROL Key] Om du vill undvika att en fil skadas när du överför en datafil med klassificeringsdata på andra nivån eller högre, ska du fylla varje rad i [!UICONTROL Key] kolumnen med en asterisk (*).
 
 Se [Vanliga problem](https://marketing.adobe.com/resources/help/en_US/home/index.html#kb-common-saint-upload-issues) vid överföring av klassificering för felsökningshjälp.
 
