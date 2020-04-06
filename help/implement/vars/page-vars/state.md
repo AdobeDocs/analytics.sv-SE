@@ -2,14 +2,14 @@
 title: Läge
 description: Fyll i rapporten om besökarstatus i Rapporter och analyser.
 translation-type: tm+mt
-source-git-commit: f75c6759feb6576017733f1aac5bff2e21d4b0af
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # läge
 
-> [!IMPORTANT] Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Använd dimensionen &#39;USA&#39; i stället, som AppMeasurement automatiskt samlar in baserat på besökarens plats.
+>[!IMPORTANT] Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Använd dimensionen &#39;USA&#39; i stället, som AppMeasurement automatiskt samlar in baserat på besökarens plats.
 
 I tidigare versioner av Adobe Analytics användes variabeln när besökare fyllde i leveransinformation på `state` butikssajter. Den är funktionellt identisk med en prop, men är inte tillgänglig i Analysis Workspace.
 
