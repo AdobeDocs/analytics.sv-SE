@@ -2,7 +2,7 @@
 title: avbryta
 description: Variabeln abort är en boolesk variabel som förhindrar att en träff skickas till Adobes datainsamlingsservrar.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -26,7 +26,7 @@ Variabeln `abort` är boolesk. Dess standardvärde är `false`.
 s.abort = true;
 ```
 
-> [!NOTE] Variabeln återställs `abort` till `false` efter varje spårningsanrop. Om du behöver avbryta efterföljande spårningsanrop på samma sida anger du `abort` till `true` igen.
+>[!NOTE] Variabeln återställs `abort` till `false` efter varje spårningsanrop. Om du behöver avbryta efterföljande spårningsanrop på samma sida anger du `abort` till `true` igen.
 
 ## Exempel
 
