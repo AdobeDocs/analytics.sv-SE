@@ -3,7 +3,7 @@ description: 'null'
 title: Översikt över panelen Attribut
 uuid: bb345642-4f45-4fb8-82d0-803248dd52ea
 translation-type: tm+mt
-source-git-commit: 3869385b9ad17cbea5e7a4e09bd06d5f0b53dd3c
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -32,7 +32,7 @@ Attributpanelen är en IQ-funktion för [attribuering](../../attribution-iq.md) 
 | ![Tidsminskning](assets/time_decay.png) | Time-Decay | Följer och exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2^(-t/halflife)`, där `t` är tiden mellan en kontaktpunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %. | Perfekt för team som regelbundet genomför videoreklam eller marknadsför mot händelser med ett förutbestämt datum. Ju längre en konvertering sker efter en marknadsföringshändelse, desto mindre kredit ges. |
 | ![deltagande](assets/participation.png) | deltagande | Alla unika kontaktpunkter får 100 % beröm. Det totala antalet konverteringar är uppblåst jämfört med andra attribueringsmodeller. Deltagande duplicerar kanaler som ses flera gånger. | Utmärkt för att förstå vilka kunder som ofta exponeras för en viss interaktion. Medieorganisationer använder ofta den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder ofta den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
 
-> [!NOTE] Följande algoritmiska attribueringsmodell finns för närvarande i [Adobe Analytics Labs](https://docs.adobe.com/content/help/en/analytics/analyze/tech-previews/overview.html) och kommer så småningom att ingå i en allmän release.
+>[!NOTE] Följande algoritmiska attribueringsmodell finns för närvarande i [Adobe Analytics Labs](https://docs.adobe.com/content/help/en/analytics/analyze/tech-previews/overview.html) och kommer så småningom att ingå i en allmän release.
 
 | UI-ikon | Attributionsmodell | Definition | När ska användas |
 | --- | --- | --- | --- |
@@ -75,7 +75,7 @@ Beroende på ditt sökfönster och din attribueringsmodell får kanalerna olika 
       * Socialt: 18,6 %, får 9,32 USD
       * Betalsökning: 13,8 %, får 6,92 USD
 
-> [!TIP] Andra konverteringshändelser, som order eller anpassade händelser, delas också upp om kredit tillhör mer än en kanal. Om två kanaler till exempel bidrar till en anpassad händelse med en linjär attribueringsmodell får båda kanalerna 0,5 av den anpassade händelsen. Dessa händelsebråktal summeras för alla besök och avrundas sedan till närmaste heltal för rapportering.
+>[!TIP] Andra konverteringshändelser, som order eller anpassade händelser, delas också upp om kredit tillhör mer än en kanal. Om två kanaler till exempel bidrar till en anpassad händelse med en linjär attribueringsmodell får båda kanalerna 0,5 av den anpassade händelsen. Dessa händelsebråktal summeras för alla besök och avrundas sedan till närmaste heltal för rapportering.
 
 ## Använda attribuering med marknadsföringskanaler
 
@@ -97,4 +97,4 @@ Om du till exempel skapar ett VRS med segmentet &quot;Visa träffar&quot; kan du
 
 ![Virtuellt rapportpaket endast för visning](assets/vrs-aiq-example.png)
 
-> [!NOTE] Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsvärden, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment och filter med jämförbara definitioner ibland returnera lägre värden för segmentet.
+>[!NOTE] Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsvärden, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment och filter med jämförbara definitioner ibland returnera lägre värden för segmentet.
