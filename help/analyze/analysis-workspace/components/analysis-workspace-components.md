@@ -3,7 +3,7 @@ description: Komponenterna i Analysis Workspace består av mått, dimensioner, s
 title: Komponenter - översikt
 uuid: 1a4e1c35-eac9-4eb4-be2e-ecb2c6728150
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -22,7 +22,7 @@ Mer information om hur du använder komponenter i ett projekt finns i [Skapa ett
 
 Du kan hantera komponenter (individuellt eller genom att markera flera) på flera olika sätt. Högerklicka på en komponent eller klicka **[!UICONTROL Actions]** högst upp i komponentlistan.
 
-> [!NOTE] Dessa åtgärder gäller inte för tidskomponenter.
+>[!NOTE] Dessa åtgärder gäller inte för tidskomponenter.
 
 | Komponentåtgärd | Beskrivning |
 |--- |--- |
@@ -32,4 +32,4 @@ Du kan hantera komponenter (individuellt eller genom att markera flera) på fler
 | Dela | Gäller endast segment. |
 | Ta bort | Gäller endast segment. |
 
-[Skapa mått, segment och datum på YouTube](https://www.youtube.com/watch?v=XXJuNAte8E8&index=25&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
+[Skapa mått, segment och datum på YouTube](https://www.youtube.com/watch?v=XXJuNAte8E8&amp;index=25&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
