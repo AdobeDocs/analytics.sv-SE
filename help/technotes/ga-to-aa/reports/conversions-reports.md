@@ -2,7 +2,7 @@
 title: Konverteringsrapporter i Adobe Analytics
 description: Lär dig hur du använder konverteringsrapporter i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 3ce18f3f222286aed08c81dd2c958dab7e443df3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -45,7 +45,7 @@ Både e-handelsrapporter i Google Analytics och produktrapporter i Adobe Analyti
 
 Flerkanaliga trattrapporter ger ytterligare marknadsföringskanaldata utöver vad förvärvsrapporter erbjuder. Dessa rapporter fokuserar på hur besökarna konverterar, i stället för hur besökarna kommer till er webbplats.
 
-> [!NOTE]
+>[!NOTE]
 >
 > Användningen av flerkanalsrapporter i Adobe Analytics kräver både konfiguration av marknadsföringskanaler och en anpassad implementering för att passa produktvariabeln och inköpshändelsen. Adobe rekommenderar att du arbetar med en implementeringskonsult om dessa funktioner ännu inte har konfigurerats för rapportsviten.
 
