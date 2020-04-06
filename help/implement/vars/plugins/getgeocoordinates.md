@@ -2,14 +2,14 @@
 title: getGeoCoordinates
 description: Spåra en besökares geoLocation.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Adobe plug-in: getGeoCoordinates
 
-> [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med `getGeoCoordinates` plugin-programmet kan du fånga latituden och longituden för besökarnas enheter. Adobe rekommenderar att du använder det här plugin-programmet om du vill samla in geoplatsdata i Analytics-variabler.
 
@@ -59,7 +59,7 @@ Metoden använder inte några argument `getGeoCoordinates` . Det returnerar ett 
 * `"error retrieving geo coordinates"`: När plugin-programmet påträffar fel vid försök att hämta enhetens plats
 * `"latitude=[LATITUDE] | longtitude=[LONGITUDE]"`: Där [LATITUDE]/[LONGITUDE] är latitud respektive longitud
 
-> [!NOTE] Koordinatvärden avrundas till närmaste fjärde decimal. Värdet för `"40.438635333"` är till exempel avrundat för `"40.4386"` att begränsa antalet unika värden som ska fångas. Värdena är tillräckligt nära för att identifiera enhetens exakta position inom ca 20 fot.
+>[!NOTE] Koordinatvärden avrundas till närmaste fjärde decimal. Värdet för `"40.438635333"` är till exempel avrundat för `"40.4386"` att begränsa antalet unika värden som ska fångas. Värdena är tillräckligt nära för att identifiera enhetens exakta position inom ca 20 fot.
 
 Detta plugin-program använder en cookie med namnet `"s_ggc"` för att lagra koordinater mellan träffar om det behövs.
 
