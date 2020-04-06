@@ -2,7 +2,7 @@
 title: linkExternalFilters
 description: Använd variabeln linkExternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplat
 
 Om den här variabeln innehåller ett värde fungerar automatisk avslutningslänkspårning som en vitlisteliknande metod. Om ett länkklick inte matchar några `linkExternalFilters` värden betraktas det inte som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om [`linkLeaveQueryString`](linkleavequerystring.md) är aktiverat undersöks även frågesträngen.
 
-> [!TIP] Använd bara den här variabeln om du vet exakt vilka domäner du vill använda som avslutningslänkar. Många organisationer tycker att det `linkInternalFilters` räcker med att använda för att spåra avslut, och använder inte `linkExternalFilters`.
+>[!TIP] Använd bara den här variabeln om du vet exakt vilka domäner du vill använda som avslutningslänkar. Många organisationer tycker att det `linkInternalFilters` räcker med att använda för att spåra avslut, och använder inte `linkExternalFilters`.
 
 Om du använder både `linkInternalFilters` och `linkExternalFilters` samtidigt måste den klickade länken matcha `linkExternalFilters` och **inte matcha** `linkInternalFilters` för att betraktas som en avslutslänk. Om en klickad länk matchar både villkoren för avslutningslänk och nedladdningslänk får nedladdningslänkstypen prioritet.
 
