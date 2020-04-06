@@ -4,7 +4,7 @@ title: Mobil
 topic: Reports
 uuid: ec8f6977-da92-478e-a934-c32cf5889526
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -17,7 +17,7 @@ Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter för
 
 Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter förbättrar besökaridentifieringen genom att samla in data om mobila enheter som används för att visa webbplatsen. Mobilrapporter kan identifiera en enhets tillverkare och funktioner, som skärmstorlekar, video-, ljud- och cookie-stöd och andra mätvärden. Mobilrapporter finns för alla rapportsviter.
 
-> [!NOTE] Mobilrapporter visar endast webbtrafik för mobiler. Mobilappsdata som samlats in med iOS, Android och andra SDK:er visas i Mobile App Reports och visas endast när de är aktiverade i Admin Tools.
+>[!NOTE] Mobilrapporter visar endast webbtrafik för mobiler. Mobilappsdata som samlats in med iOS, Android och andra SDK:er visas i Mobile App Reports och visas endast när de är aktiverade i Admin Tools.
 
 Följande mobilrapporter är tillgängliga:
 
