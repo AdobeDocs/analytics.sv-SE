@@ -4,7 +4,7 @@ title: Realtidsrapporter
 topic: Report builder
 uuid: eb39b4a5-fb6f-476d-9383-e5323afcc51d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -24,5 +24,5 @@ Du kan:
 
 I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter aktiveras i [administratörsverktygen](https://marketing.adobe.com/resources/help/en_US/reference/RealTime_Reports_Configuration.html).
 
-> [!NOTE] [!UICONTROL Real-Time Reports] är inte samma sak som [funktionen Inkludera aktuella data](https://marketing.adobe.com/resources/help/en_US/arb/options.html) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan de är klara.
+>[!NOTE] [!UICONTROL Real-Time Reports] är inte samma sak som [funktionen Inkludera aktuella data](https://marketing.adobe.com/resources/help/en_US/arb/options.html) (datagenstid) som släpptes tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan de är klara.
 
