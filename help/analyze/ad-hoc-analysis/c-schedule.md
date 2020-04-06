@@ -4,7 +4,7 @@ title: Schemaläggningshanteraren
 topic: Ad hoc analysis
 uuid: 82a054ef-109d-414d-a6e1-e09ee57c163f
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -17,7 +17,7 @@ Du kan anpassa leveransschemat för rapporter. Du kan stoppa leveransen vid en v
 
 Du kan anpassa leveransschemat för rapporter. Du kan stoppa leveransen vid en viss tidpunkt eller ange hur många gånger du vill skicka en rapport. Nya scheman använder det datumintervall som definieras i rapporten. Om du till exempel skapar en rapport för de senaste 90 dagarna och schemalägger att den ska köras dagligen, får du en rapport för de senaste 90 dagarna varje dag. Om du skapar en rapport med ett statiskt datumintervall från kalendern visas samma rapport varje gång den skickas.
 
-> [!NOTE] När ett användarkonto är inaktiverat pausas alla schemalagda rapportleveranser som skapas av den användaren.
+>[!NOTE] När ett användarkonto är inaktiverat pausas alla schemalagda rapportleveranser som skapas av den användaren.
 
 Om du vill vara säker på att radobjekt i en uppdelning är beständiga i sparade och schemalagda rapporter använder du **[!UICONTROL Edit Items]** funktionen i [tabellverktyget](/help/analyze/ad-hoc-analysis/c-tablebuilder.md) för att skapa fasta dimensionslistor i uppdelningar.
 
