@@ -2,7 +2,7 @@
 title: linkLeaveQueryString
 description: Tillåter lagring av frågesträngar i länkspårningsdimensioner.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -17,7 +17,7 @@ Om länkspårningsinformation inte finns i URL:er på din webbplats är det inte
 
 Aktiveringen `linkLeaveQueryString` gäller för alla länkspårningsdimensioner (inklusive anpassade länkar, avslutslänkar och hämtningslänkar).
 
-> [!TIP] Den här variabeln påverkar inte dimensioner utanför länkspårning. Det påverkar bara anpassade länkar, stängningslänkar och hämtningslänkar.
+>[!TIP] Den här variabeln påverkar inte dimensioner utanför länkspårning. Det påverkar bara anpassade länkar, stängningslänkar och hämtningslänkar.
 
 ## Behåll URL-parametrar i Adobe Experience Platform Launch
 
