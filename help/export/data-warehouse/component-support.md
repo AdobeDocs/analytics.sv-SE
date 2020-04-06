@@ -2,7 +2,7 @@
 title: Komponentstöd i datalagret
 description: Lär dig vilka ytterligare mått och mätvärden som finns i datalagret och vad som inte stöds.
 translation-type: tm+mt
-source-git-commit: 00d4d59cb4c922b54a97ef7000e294ef3bf61f20
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -31,7 +31,7 @@ Vissa dimensioner och mätvärden kan användas i datalagret, medan de inte är 
 
 Vissa dimensioner och mått stöds inte i datalagret.
 
-> [!NOTE] Om en dimension eller ett mått inte stöds i datalagret stöds inte heller segment som använder dessa komponenter. Kontrollera alltid produktkompatibilitet när du skapar eller redigerar ett segment.
+>[!NOTE] Om en dimension eller ett mått inte stöds i datalagret stöds inte heller segment som använder dessa komponenter. Kontrollera alltid produktkompatibilitet när du skapar eller redigerar ett segment.
 
 ### Dimensioner stöds inte
 
