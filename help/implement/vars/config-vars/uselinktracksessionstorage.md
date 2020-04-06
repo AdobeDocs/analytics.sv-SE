@@ -2,7 +2,7 @@
 title: useLinkTrackSessionStorage
 description: Lagra länkspårningsdata i sessionslagring i stället för en cookie.
 translation-type: tm+mt
-source-git-commit: 1b8de7489be8461707307dfe99d86f46557c7b8b
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -16,7 +16,7 @@ En webbläsares sessionslagring för länkspårning har flera begränsningar:
 * Sessionslagring fungerar inte mellan protokoll. Du kan till exempel ha en sida som skickas över HTTP och nästa sida som skickas via HTTPS. AppMeasurement kan inte komma åt länkspårningsdata i sessionslagring på grund av protokollskillnader.
 * Sessionslagring fungerar inte i alla underdomäner. En besökare navigerar till exempel till `store.example.com`och navigerar sedan till `toys.example.com`. AppMeasurement kan inte komma åt länkspårningsdata i sessionslagring på grund av olika underdomäner.
 
-> [!TIP] Den mest tillförlitliga implementeringen med sessionslagring för länkspårning levererar allt innehåll via HTTPS på en enda underdomän.
+>[!TIP] Den mest tillförlitliga implementeringen med sessionslagring för länkspårning levererar allt innehåll via HTTPS på en enda underdomän.
 
 AppMeasurement tar bort länkspårningsdata för sessionslagring när en träff har skickats till Adobe. Den förfaller automatiskt när webbläsarfliken stängs.
 
