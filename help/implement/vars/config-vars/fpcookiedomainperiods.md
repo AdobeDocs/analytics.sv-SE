@@ -2,7 +2,7 @@
 title: cookieDomainPeriods
 description: Hjälp AppMeasurement att förstå vilken domän cookies ska lagras i om din domän har en punkt i suffixet.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -14,7 +14,7 @@ Variabeln hjälper AppMeasurement att avgöra var Analytics-cookies anges genom 
 * För domäner som `example.com` eller `www.example.com`behöver variabeln inte anges. Om det behövs kan du ange variabeln till `"2"`.
 * För domäner som `example.co.uk` eller `www.example.co.jp`anger du den här variabeln som `"3"`.
 
-> [!IMPORTANT] Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `fpCookieDomainPeriods` på exempel-URL `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
+>[!IMPORTANT] Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `fpCookieDomainPeriods` på exempel-URL `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
 
 ## Första parts domänperioder i Adobe Experience Platform Launch
 
