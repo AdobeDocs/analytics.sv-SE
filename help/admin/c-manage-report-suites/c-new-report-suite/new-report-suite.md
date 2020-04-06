@@ -4,7 +4,7 @@ title: Ny rapportsvit - inställningar
 topic: Admin tools
 uuid: 3508f684-11a3-4c8f-a233-bea6bafd57c0
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,7 +15,7 @@ Du kan skapa en ny rapportserie genom att välja en fördefinierad mall eller ge
 
 Beskrivningar av de element som används när [du skapar en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md).
 
-> [!NOTE] I [Virtual Report Suite-dokumentationen](/help/components/vrs/c-workflow-vrs/vrs-create.md) visas hur du skapar virtuella rapportsviter.
+>[!NOTE] I [Virtual Report Suite-dokumentationen](/help/components/vrs/c-workflow-vrs/vrs-create.md) visas hur du skapar virtuella rapportsviter.
 
 <table id="table_F739FBD8DB8D409E916F12F61C5953D0"> 
  <thead> 
