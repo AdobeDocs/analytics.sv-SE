@@ -3,7 +3,7 @@ description: Det nya systemet för intelligenta aviseringar ger mer exakt kontro
 title: Översikt över intelligenta aviseringar
 uuid: b9bf75ad-bb6f-49fe-8c55-355ea3c50a71
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -37,7 +37,7 @@ Det finns fyra sätt att komma åt Varningsverktyget:
 
 Procenttröskelvärdena är standardavvikelser. Exempel: 95 % = 2 standardavvikelser och 99 % = 3 standardavvikelser. Beroende på hur lång tid du väljer används [olika modeller](../virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md) för att beräkna hur långt bort (hur många standardavvikelser) varje datapunkt ligger från normen. Om du anger ett lägre tröskelvärde (till exempel 90 %) får du fler avvikelser än om du anger ett högre tröskelvärde (99,75 %).
 
-> [!IMPORTANT] Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
+>[!IMPORTANT] Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
 
 ## Analys av varningar
 
