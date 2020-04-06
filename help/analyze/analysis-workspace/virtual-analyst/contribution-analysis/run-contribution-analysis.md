@@ -3,7 +3,7 @@ description: 'null'
 title: Kör bidragsanalys
 uuid: 5282a5f9-0771-4974-93cb-335204bde114
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -49,7 +49,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
    * [Skapa aviseringar.](/help/components/c-alerts/intellligent-alerts.md)
    * [Skapa eller jämföra segment.](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
 
-> [!NOTE] Vi belyser den avvikelse som analyseras med en blå prick i bidragsanalysen och de intelligenta aviseringsprojekt som är kopplade till den. Detta ger en tydligare indikation på den avvikelse som analyseras.
+>[!NOTE] Vi belyser den avvikelse som analyseras med en blå prick i bidragsanalysen och de intelligenta aviseringsprojekt som är kopplade till den. Detta ger en tydligare indikation på den avvikelse som analyseras.
 
 ## Uteslut dimensioner från bidragsanalys {#section_F6932F4BF74544B5872164E7B1E0C6FC}
 
