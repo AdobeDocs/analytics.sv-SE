@@ -2,7 +2,7 @@
 title: prop
 description: Anpassade variabler som du kan använda i implementeringen.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 Props är anpassade variabler som du kan använda hur du vill.
 
-> [!TIP] Adobe rekommenderar att du använder eVars i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar. Se [eVars](evar.md) för en funktionsjämförelse mellan dessa två anpassade variabeltyper.
+>[!TIP] Adobe rekommenderar att du använder eVars i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar. Se [eVars](evar.md) för en funktionsjämförelse mellan dessa två anpassade variabeltyper.
 
 Om din organisation använder props måste du registrera deras användning och logik i [lösningsdesigndokumentet](../../prepare/solution-design.md).
 
@@ -44,7 +44,7 @@ Listtecken är en inställning som används för att tillåta variabeln att inne
 
 Aktivera listtips i inställningarna för rapportsviten. Se [Trafikvariabler](/help/admin/admin/c-traffic-variables/traffic-var.md) i användarhandboken för Admin. Kontrollera att den önskade avgränsaren är korrekt konfigurerad. Adobe har ingen standardavgränsare.
 
-> [!TIP] Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`) eller rör (`|`). Du kan använda valfri avgränsare som passar din implementering bäst.
+>[!TIP] Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`) eller rör (`|`). Du kan använda valfri avgränsare som passar din implementering bäst.
 
 ### Ange listans förtecken
 
@@ -55,6 +55,6 @@ När du har konfigurerat liststeg i rapportsvitens inställningar med den önska
 s.prop1 = "value1,value2,value3";
 ```
 
-> [!IMPORTANT] Listproppar har fortfarande en maxlängd på 100 byte. Det är lättare att nå den här gränsen och trimma eftersom de kan innehålla flera värden. Använd förkortningar eller förkorta värden om du kanske når denna gräns på 100 byte.
+>[!IMPORTANT] Listproppar har fortfarande en maxlängd på 100 byte. Det är lättare att nå den här gränsen och trimma eftersom de kan innehålla flera värden. Använd förkortningar eller förkorta värden om du kanske når denna gräns på 100 byte.
 
 Om du anger samma värde mer än en gång i ett listerbjudande tas de bort från rapporteringen. Analysis Workspace räknar antalet träffar där ett värde visas och inte antalet gånger ett värde finns i data.
