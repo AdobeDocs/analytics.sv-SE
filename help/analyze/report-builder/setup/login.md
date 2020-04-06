@@ -4,7 +4,7 @@ title: Inloggning i Report Builder
 topic: Report builder
 uuid: 9a21b791-e323-46d2-b850-2d67babe964b
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -47,5 +47,5 @@ Med Experience Cloud-inloggningen kan ni använda ert Enterprise ID (e-postadres
 
 ![](assets/adobe_id_login.png)
 
-> [!NOTE] Experience Cloud-inloggningen är sessionsbaserad och token upphör att gälla efter 30 dagar.
+>[!NOTE] Experience Cloud-inloggningen är sessionsbaserad och token upphör att gälla efter 30 dagar.
 
