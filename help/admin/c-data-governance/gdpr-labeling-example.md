@@ -3,7 +3,7 @@ description: 'null'
 title: Exempel på etiketter
 uuid: a9a5b937-dbde-4f0f-a171-005ef4c79df9
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -65,7 +65,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 | John | 55 | G | R | X |
 | Alice | 66 | A | N | B |
 
-> [!NOTE] Endast celler på rader som innehåller AID = 77 och en DEL-DEVICE-etikett påverkas.
+>[!NOTE] Endast celler på rader som innehåller AID = 77 och en DEL-DEVICE-etikett påverkas.
 
 | user=<br>MaryexpandIDs=false | user=<br>MaryexpandIDs=false | user=<br>MaryexpandIDs=false | user=<br>MaryexpandIDs=false | user=<br>MaryexpandIDs=false |
 |--- |---|---|---|---|
@@ -79,7 +79,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 | John | 55 | G | R | X |
 | Alice | 66 | A | N | B |
 
-> [!NOTE] Endast celler på rader som innehåller user=Mary och etiketten DEL-PERSON påverkas. I praktiken är variabeln som innehåller A_ID antagligen en prop eller eVar och dess ersättningsvärde blir en sträng som börjar med &quot;Privacy-&quot;, följt av ett slumpmässigt tal (GUID), i stället för att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
+>[!NOTE] Endast celler på rader som innehåller user=Mary och etiketten DEL-PERSON påverkas. I praktiken är variabeln som innehåller A_ID antagligen en prop eller eVar och dess ersättningsvärde blir en sträng som börjar med &quot;Privacy-&quot;, följt av ett slumpmässigt tal (GUID), i stället för att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
 
 | user=<br>MaryexpandIDs=true | user=<br>MaryexpandIDs=true | user=<br>MaryexpandIDs=true | user=<br>MaryexpandIDs=true | user=<br>MaryexpandIDs=true |
 |--- |---|---|---|---|
