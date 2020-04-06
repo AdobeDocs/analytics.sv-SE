@@ -4,7 +4,7 @@ solution: Audience Manager
 title: Översikt över vidarebefordran på serversidan
 uuid: 22ddbde5-6805-4eba-8f82-62772644dcaa
 translation-type: tm+mt
-source-git-commit: b7ef2f8b097540799a19c3964dfc64d59babd4a6
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -66,5 +66,5 @@ Gå till **Analytics** > **Admin** > **Report Suites** > (välj **rapportsviter*
 * **Inaktiverad**: Vidarebefordran på serversidan är inte aktiverad. Läs innehållet på sidan och fortsätt sedan med att aktivera funktionen.
 * **Aktiverad**: Du har etablerats för vidarebefordran på serversidan. Ni kan också konfigurera den här Audience Analytics-integreringen.
 
-> [!NOTE] Data visas inte i andra Experience Cloud-lösningar, som [Audience Manager](https://marketing.adobe.com/resources/help/en_US/aam/c_aam_home.html) eller [Audience](https://marketing.adobe.com/resources/help/en_US/mcloud/audience_library.html) , förrän alla tre stegen är slutförda. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.
+>[!NOTE] Data visas inte i andra Experience Cloud-lösningar, som [Audience Manager](https://marketing.adobe.com/resources/help/en_US/aam/c_aam_home.html) eller [Audience](https://marketing.adobe.com/resources/help/en_US/mcloud/audience_library.html) , förrän alla tre stegen är slutförda. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.
 
