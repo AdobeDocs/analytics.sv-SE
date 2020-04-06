@@ -5,7 +5,7 @@ title: Virtuella rapportsviter och taggar för flera programsviter
 topic: Adobe Analytics
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -52,7 +52,7 @@ Olika webbplatser har olika implementeringsbehov. Vissa dimensioner och händels
 
 Se till att antalet unika mått och mätvärden får plats i en enda global rapportserie. Om du ser att det finns för många unika mått eller mätvärden granskar du varje dimension inom varje implementering. Det finns troligtvis överlappningar och dimensioner som inte är avgörande för företagets framgång. Du bör också använda [klassificeringar](/help/components/c-classifications2/c-classifications.md) . I stället för att hämta&quot;Produktnamn&quot; i eVar5 skapar du till exempel en produktnamnsklassificering som baseras på dimensionen&quot;Produkt&quot;. Klassificeringar i en källrapportsserie är automatiskt tillgängliga för alla beroende virtuella rapportsviter.
 
-> [!TIP] Med introduktionen av [kurering](/help/analyze/analysis-workspace/curate-share/curate-projects-vrs.md)kan du ändra namnet på en given dimension eller mätvärde per VRS-nivå.
+>[!TIP] Med introduktionen av [kurering](/help/analyze/analysis-workspace/curate-share/curate-projects-vrs.md)kan du ändra namnet på en given dimension eller mätvärde per VRS-nivå.
 
 ### Segmenteringsenheter
 
@@ -82,7 +82,7 @@ Till exempel tillåts bara en Google DCM per rapportsserie. Många företag har 
 
 Med sammanfattande datakällor kan ni importera aggregerade mätvärden till Adobe Analytics på rapportsvitsnivå. Eftersom överföringar av sammanfattande datakällor innehåller aggregerade mått kan de inte segmenteras. Eftersom VRS arbetar med segmentering är alla data som importeras med hjälp av sammanfattningsdatakällor inte tillgängliga i virtuella rapportsviter. Sammanfattningsdatakällor visas bara i källrapportsviten.
 
-> [!TIP] Datakällor med fullständig bearbetning stöder segmentering och kan användas i virtuella rapportsviter.
+>[!TIP] Datakällor med fullständig bearbetning stöder segmentering och kan användas i virtuella rapportsviter.
 
 ## Steg som ska följas om du har bestämt dig för att använda VRS
 
