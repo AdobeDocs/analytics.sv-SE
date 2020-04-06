@@ -5,7 +5,7 @@ title: Så fungerar datakällor
 topic: Developer and implementation
 uuid: ee9e6e74-9b00-4733-9a4b-d9f2b954cc7c
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Information om hur Adobe ger åtkomst till datakällor.
 
-> [!NOTE] När importerade data har skickats via datakällorna kan de inte särskiljas från rapportdata som samlats in med andra metoder (JavaScript-fyr, ActionSource, API för datainfogning osv.). Du kan inte ta bort data när de har importerats.
+>[!NOTE] När importerade data har skickats via datakällorna kan de inte särskiljas från rapportdata som samlats in med andra metoder (JavaScript-fyr, ActionSource, API för datainfogning osv.). Du kan inte ta bort data när de har importerats.
 
 ![](assets/data_sources_overview.png)
 
