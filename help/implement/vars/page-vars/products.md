@@ -2,7 +2,7 @@
 title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 Variabeln `products` spårar produkter och egenskaper som är knutna till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och Adobe tolkar värdet i separata dimensionsvärden.
 
-> [!NOTE] Om den här variabeln anges i en träff utan en kundvagnshändelse i [`events`](events/events-overview.md) variabeln ökar måttet&quot;Produktvyer&quot; med 1. Se till att du ställer in rätt kundvagnshändelse för varje träff.
+>[!NOTE] Om den här variabeln anges i en träff utan en kundvagnshändelse i [`events`](events/events-overview.md) variabeln ökar måttet&quot;Produktvyer&quot; med 1. Se till att du ställer in rätt kundvagnshändelse för varje träff.
 
 ## Produkter i Adobe Experience Platform Launch
 
@@ -47,7 +47,7 @@ Den här variabeln har stöd för flera produkter i samma träff. Det är värde
 s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Example product 2,1,5.99";
 ```
 
-> [!IMPORTANT] Ta bort alla semikolon, komman och rör från produktnamn, kategorier och eVar-värden. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
+>[!IMPORTANT] Ta bort alla semikolon, komman och rör från produktnamn, kategorier och eVar-värden. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
 
 ## Exempel
 
