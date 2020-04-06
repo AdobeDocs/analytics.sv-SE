@@ -2,18 +2,18 @@
 title: Konfigurera enhetsövergripande analys
 description: Lär dig hur du konfigurerar enhetsövergripande analys när du uppfyller kraven.
 translation-type: tm+mt
-source-git-commit: 2faec7513624be207a6cf01545702a977a84d5fc
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Konfigurera enhetsövergripande analys
 
-> [!NOTE] Enhetsövergripande analysdokumentation kan komma att ändras i takt med att funktionen utvecklas ytterligare. Kontrollera regelbundet om det finns uppdateringar.
+>[!NOTE] Enhetsövergripande analysdokumentation kan komma att ändras i takt med att funktionen utvecklas ytterligare. Kontrollera regelbundet om det finns uppdateringar.
 
 När alla förutsättningar är uppfyllda gör du följande för att aktivera enhetsövergripande analys. Du måste tillhöra en produktprofiladministratörsgrupp eller ha administratörsbehörighet i Adobe Analytics för att kunna följa dessa steg.
 
-> [!IMPORTANT] Alla förutsättningar måste vara uppfyllda innan du följer dessa steg. Om alla förutsättningar inte uppfylls är funktionen inte tillgänglig eller fungerar inte. Se [Enhetsövergripande analys](cda-home.md) för krav och begränsningar.
+>[!IMPORTANT] Alla förutsättningar måste vara uppfyllda innan du följer dessa steg. Om alla förutsättningar inte uppfylls är funktionen inte tillgänglig eller fungerar inte. Se [Enhetsövergripande analys](cda-home.md) för krav och begränsningar.
 
 ## Välj den rapportsvit för olika enheter som ska aktiveras för CDA
 
