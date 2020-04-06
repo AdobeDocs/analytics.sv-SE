@@ -3,7 +3,7 @@ description: 'null'
 title: Översikt över Advertising Analytics
 uuid: 00e461ff-3e17-4071-818b-93fd1e4b36f1
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Med Advertising Analytics kan ni se alla era Google- och Bing Paid Search-data sida vid sida, inifrån Adobe Analytics. Tidigare måste alla Google AdWords/DFA- eller Microsoft Bing Ads-data visas i Adobe Advertising Cloud (AMO) eller i Google/Bing. Du får nu följande data i Adobe Analytics: Impressions, Clicks, Costs, Quality Score och Average Position direkt från sökmotorerna samt en AMO ID-instans (Click Instances).
 
-> [!NOTE] Yahoo Gemini absorberades av Microsoft Bing den 31 mars 2019. Detta innebär att annonskontoalternativet Yahoo Gemini inte längre är tillgängligt.
+>[!NOTE] Yahoo Gemini absorberades av Microsoft Bing den 31 mars 2019. Detta innebär att annonskontoalternativet Yahoo Gemini inte längre är tillgängligt.
 
 Genom att samla data från dessa sökmotorer i Adobe Analytics kan ni analysera dessa data med hjälp av Analysis Workspace. Den här analysen underlättas av en ny mall för [betalningsprestanda](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-report-ad-data-an.md) i arbetsytan.
 
