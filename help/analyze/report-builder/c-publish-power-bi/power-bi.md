@@ -3,7 +3,7 @@ description: 'null'
 title: Publicera till Power BI - översikt
 uuid: ad688817-6e3c-45da-983d-48c123465309
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -61,7 +61,7 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som innehåller data f
 
 ## Publicera alla formaterade tabeller i arbetsboken som Power BI-datamängdsregister {#section_7C54A54E75184DD6BAEF4ACCE241239A}
 
-> [!NOTE] Om arbetsboken innehåller ett makro kommer&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot; att inaktiveras.
+>[!NOTE] Om arbetsboken innehåller ett makro kommer&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot; att inaktiveras.
 
 I stället för att importera hela arbetsboken kan du bara importera innehållet i alla formaterade tabeller i arbetsboken.
 
