@@ -2,7 +2,7 @@
 title: contextData
 description: Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -32,7 +32,7 @@ s.contextData["example_variable"] = "Example value";
 
 ## Använd bearbetningsregler för att fylla i analysvariabler
 
-> [!IMPORTANT] Sammanhangsdatavariabler tas bort efter att regler har bearbetats. Om du inte har aktiva bearbetningsregler som placerar värden i variabler, kommer dessa data att gå förlorade permanent!
+>[!IMPORTANT] Sammanhangsdatavariabler tas bort efter att regler har bearbetats. Om du inte har aktiva bearbetningsregler som placerar värden i variabler, kommer dessa data att gå förlorade permanent!
 
 1. Uppdatera implementeringen för att ange kontextdatavariabelnamn och -värden.
 2. Logga in på Adobe Analytics och gå till Admin > Report Suites.
