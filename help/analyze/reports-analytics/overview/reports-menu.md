@@ -3,7 +3,7 @@ description: En översikt över rapportmenyn i Rapporter och analyser.
 title: Rapporter-menyn
 uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -37,7 +37,7 @@ Menyn Rapporter ger en förbättrad sökfunktion. Klicka på **[!UICONTROL View 
 
 Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rapporter. Tryck på Esc om du vill stänga sökningen utan att ändra den aktuella rapporten, eller tryck på Retur om du vill läsa in den markerade rapporten.
 
-> [!NOTE] Du kan också söka i rapportlistan efter prop, eVar och händelsenummer. Ange prop-, eVar- eller händelsenummer i sökfältet.
+>[!NOTE] Du kan också söka i rapportlistan efter prop, eVar och händelsenummer. Ange prop-, eVar- eller händelsenummer i sökfältet.
 
 ## Navigeringsöversikt {#section_A6A0A369207149BABE504753B48A42D7}
 
