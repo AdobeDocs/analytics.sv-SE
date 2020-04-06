@@ -2,14 +2,14 @@
 title: dc
 description: En indragen variabel som gör att du kan avgöra vilket datacenter som ska användas.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # dc
 
-> [!IMPORTANT] Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) istället.
+>[!IMPORTANT] Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) istället.
 
 I tidigare versioner av Adobe Analytics behövde Adobe specificera vilket datacenter ni ville skicka data till. Om du skickar träffar till fel datacenter går data förlorade.
 
