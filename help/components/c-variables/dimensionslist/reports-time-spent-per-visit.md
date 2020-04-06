@@ -4,7 +4,7 @@ title: Tid per besök
 topic: Reports
 uuid: 76441e36-b7fe-4cf3-8d72-c51d558afa13
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -37,6 +37,6 @@ Den tid som tillbringas per besök mäter den sammanlagda tiden för ett besök.
    * 10-15 timmar
    * 15+ timmar
 
-> [!NOTE] [Besök](../c-metrics/metrics-visit.md) avslutas vanligtvis efter 12 timmars aktivitet. Besöken kan dock överskrida 12 timmar om tidsstämplade träffar eller datakällor används.
+>[!NOTE] [Besök](../c-metrics/metrics-visit.md) avslutas vanligtvis efter 12 timmars aktivitet. Besöken kan dock överskrida 12 timmar om tidsstämplade träffar eller datakällor används.
 
 Denna dimension är besöksbaserad. Jämför den här dimensionen med den [tid som spenderas på sidan](reports-time-spent-on-page.md), som är en träffbaserad dimension.
