@@ -2,7 +2,7 @@
 description: Importera spårningsdata från tredjepartsprogram till Analytics.
 title: Komma igång med Analytics-dataanslutningar
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -77,7 +77,7 @@ För att lyckas genomföra remarknadsföringssegmenten måste följande villkor 
    * Inköp: `purchase` event
    * Produktvyer: `prodView` event
 
-> [!NOTE] Om produkten definieras utan en associerad händelse utlöses händelsen prodView automatiskt.
+>[!NOTE] Om produkten definieras utan en associerad händelse utlöses händelsen prodView automatiskt.
 Om ovanstående krav inte uppfylls rapporteras inte motsvarande segment för återmarknadsföring korrekt.
 
 [!UICONTROL Cart Abandonment]: utlöses efter att användaren har lagt till en produkt i kundvagnen:
@@ -104,4 +104,4 @@ s.events="purchase";
 | Marknadsföringssegmentfiler tas inte emot. | Om du inte får dina filer bör du be någon av de användare i organisationen som stöds att kontakta ClientCare för att ta reda på orsaken till att rapporterna inte har tagits emot. |
 
 
-> [!IMPORTANT] Det är vanligt att konsulter även ställer in en begäran om datalager som en daglig schemalagd rapport utöver era vanliga segmentfiler för integrering av dataanslutningar. Denna datalagerbegäran skulle innehålla både dataanslutningsvariabler och andra variabler än datalagerkopplingar, och begäran kan schemaläggas enbart utifrån din organisations specifika begäran. För att undvika förvirring vid felsökning anger du om filen i fråga är den faktiska segmentfilen för återmarknadsföring, eller en datalagerbegäran som innehåller variabler som inte är generiska.
+>[!IMPORTANT] Det är vanligt att konsulter även ställer in en begäran om datalager som en daglig schemalagd rapport utöver era vanliga segmentfiler för integrering av dataanslutningar. Denna datalagerbegäran skulle innehålla både dataanslutningsvariabler och andra variabler än datalagerkopplingar, och begäran kan schemaläggas enbart utifrån din organisations specifika begäran. För att undvika förvirring vid felsökning anger du om filen i fråga är den faktiska segmentfilen för återmarknadsföring, eller en datalagerbegäran som innehåller variabler som inte är generiska.
