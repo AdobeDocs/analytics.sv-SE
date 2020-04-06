@@ -5,7 +5,7 @@ title: Kontrollpanelshanteraren
 topic: Reports and analytics
 uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
 translation-type: tm+mt
-source-git-commit: 92eaaeafdd587febcfe7fe60f696baca0691b4bc
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -70,11 +70,11 @@ Steg som beskriver hur du använder alternativen för hantering av delade instru
 
 Befintliga gamla kontrollpaneler kommer att fortsätta att köras och du kan fortfarande redigera, hämta och schemalägga dem; Du kan dock inte längre skapa nya gamla kontrollpaneler. Vi rekommenderar att du uppgraderar befintliga gamla kontrollpaneler till det nyare instrumentpanelsformatet.
 
-> [!NOTE] Gå vidare, överväg att använda [Analysis Workspace-projekt](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) och möjligheten att hämta och schemalägga dem.
+>[!NOTE] Gå vidare, överväg att använda [Analysis Workspace-projekt](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) och möjligheten att hämta och schemalägga dem.
 
 När du kopierar den äldre kontrollpanelen öppnas den äldre kontrollpanelen för redigering, där du kan lägga till äldre innehåll eller nytt innehåll. När du kopierar en äldre kontrollpanel bevaras originalet i listan med äldre kontrollpaneler.
 
-> [!NOTE] När du lägger till äldre innehåll på en kontrollpanel skapas en kontrollpanel som baseras på den senaste kontrollpanelsfunktionen. Den äldre rapportleten kan dock innehålla data som baseras på den tidigare dataplattformen.
+>[!NOTE] När du lägger till äldre innehåll på en kontrollpanel skapas en kontrollpanel som baseras på den senaste kontrollpanelsfunktionen. Den äldre rapportleten kan dock innehålla data som baseras på den tidigare dataplattformen.
 
 **Så här migrerar du en äldre kontrollpanel i version 14.x**
 
@@ -108,7 +108,7 @@ I [!UICONTROL Dashboard Manager]kan du se om en kontrollpanel är schemalagd fö
 
 ## Arkivera en kontrollpanel
 
-> [!NOTE] Den här funktionen kommer inte längre att vara tillgänglig i januari 2020.
+>[!NOTE] Den här funktionen kommer inte längre att vara tillgänglig i januari 2020.
 
 Steg som beskriver hur du arkiverar skickade kontrollpaneler som PDF-filer. Den arkiverade filen lagras i två år, eller tills du når en gräns på 4 GB för arkiverade rapporter, beroende på vilket som inträffar först.
 
@@ -117,4 +117,4 @@ Steg som beskriver hur du arkiverar skickade kontrollpaneler som PDF-filer. Den 
 1. Aktivera i [!UICONTROL Email Report] gruppen **[!UICONTROL Archive]**.
 1. Ange leveransalternativ och klicka sedan på **[!UICONTROL Send]**.
 
-   Du kan visa arkiverade instrumentpaneler i Dashboard Manager. Du kan också öppna en kontrollpanel och klicka **[!UICONTROL More]** > **[!UICONTROL View Archive]**.
+   Du kan visa arkiverade instrumentpaneler i Dashboard Manager. Du kan även öppna en kontrollpanel och klicka **[!UICONTROL More]** > **[!UICONTROL View Archive]**.
