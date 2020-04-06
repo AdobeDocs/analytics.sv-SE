@@ -2,7 +2,7 @@
 title: Realtidsrapporter i Adobe Analytics
 description: Lär dig hur du kan hämta realtidsrapporter i Adobe Analytics, som riktar sig till användare som är mer bekanta med Google Analytics.
 translation-type: tm+mt
-source-git-commit: 3ce18f3f222286aed08c81dd2c958dab7e443df3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -65,7 +65,7 @@ I realtid visas vilka sidor besökarna tittar på. Så här konfigurerar du en a
 
 Händelser i realtid talar om vilka händelser som inträffar mest på er webbplats. I Google Analytics hämtar en händelse det antal gånger en specifik åtgärd (vanligtvis en åtgärd som inte har med sidvyn att göra) har utförts. GA-händelser skickas med en kategori, etikett och åtgärd. I Adobe Analytics är anpassade händelser mätvärden som får egna namn i Admin Console och kan analyseras tillsammans med alla dimensioner. Om du är ute efter en dimension i Adobe Analytics som liknar Google Analytics-händelser kan du överväga att använda dimensionen Custom Link, som ofta används som en catch-all för att samla in data som inte har med sidvisningar att göra (utöver Exit Links - for Exits - and Download Links - for Downloads).
 
-> [!NOTE] När du använder anpassade händelser i realtidsrapporter måste dimensionsvärdet definieras i samma träff som den anpassade händelsen. Om du till exempel visar en anpassad registreringshändelse för dimensionen Referensdomän, returneras inga data utan ytterligare implementering. Eftersom referensdomänen bara visas vid den första träffen och en anpassad händelse normalt visas senare under besöket, kan data inte kopplas till realtidsrapporter. Dessa data är tillgängliga via Analysis Workspace med standardsvarstid, som vanligtvis är 30-90 minuter.
+>[!NOTE] När du använder anpassade händelser i realtidsrapporter måste dimensionsvärdet definieras i samma träff som den anpassade händelsen. Om du till exempel visar en anpassad registreringshändelse för dimensionen Referensdomän, returneras inga data utan ytterligare implementering. Eftersom referensdomänen bara visas vid den första träffen och en anpassad händelse normalt visas senare under besöket, kan data inte kopplas till realtidsrapporter. Dessa data är tillgängliga via Analysis Workspace med standardsvarstid, som vanligtvis är 30-90 minuter.
 
 ## Konverteringar i realtid
 
@@ -79,4 +79,4 @@ Realtidskonverteringar genererar data på olika plattformar. Google Analytics-m�
    * För de två sekundära dimensionerna använder du de önskade ytterligare data som du vill se för den här trafiken. Sekundära dimensioner behöver inte vara specifika för konverteringar.
 3. Klicka på [!UICONTROL Save and View Report].
 
-> [!NOTE] Om du använder händelser utanför instanser, t.ex. beställningar, måste implementeringen definiera dimensionen och händelsen för samma träff. Om dimensioner och händelser inte utlöses vid samma träff är dessa data tillgängliga i Analysis Workspace med standardfördröjning för bearbetning, som vanligtvis är 30-90 minuter.
+>[!NOTE] Om du använder händelser utanför instanser, t.ex. beställningar, måste implementeringen definiera dimensionen och händelsen för samma träff. Om dimensioner och händelser inte utlöses vid samma träff är dessa data tillgängliga i Analysis Workspace med standardfördröjning för bearbetning, som vanligtvis är 30-90 minuter.
