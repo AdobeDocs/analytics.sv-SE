@@ -4,7 +4,7 @@ title: Publicera segment till Experience Cloud
 topic: Segments
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 translation-type: tm+mt
-source-git-commit: 5c555bbea04bed68dd8b569ee2cdd7d25092bb7a
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,7 +15,7 @@ Genom att publicera ett segment i Experience Cloud kan ni använda segmentet fö
 
 Bearbetningen kan nu ta upp till 8 timmar, men beroende på annan trafik och segmentstorleken kan bearbetningen gå ännu snabbare. (För närvarande finns det dock inget sätt att informera dig om när segmentet är tillgängligt, så du måste kontrollera manuellt.) Vi har också ökat det maximala antalet publicerbara segment till 75 (från 20). Du kan visa publicerade segment i Komponenter > Segment.
 
-> [!NOTE] Adobe Campaign (Classic och Standard) uppför sig annorlunda på så sätt att det får ytterligare 24 timmars fördröjning utöver 8-timmars fördröjning.
+>[!NOTE] Adobe Campaign (Classic och Standard) uppför sig annorlunda på så sätt att det får ytterligare 24 timmars fördröjning utöver 8-timmars fördröjning.
 
 
 ## Förutsättningar
@@ -68,7 +68,7 @@ Bearbetningen kan nu ta upp till 8 timmar, men beroende på annan trafik och seg
 
 Om du vill ta bort ett segment som har publicerats i Experience Cloud måste du först avpublicera det. Om du vill avpublicera ett segment **avmarkerar** du bara kryssrutan som du använde för att publicera det.
 
-> [!NOTE] Du **kan inte** avpublicera ett segment som används av någon av följande Adobe-lösningar: [!DNL Analytics] (in [!DNL Audience Analytics]), [!DNL Campaign], [!DNL Advertising Cloud] (för [!DNL Core Service] &amp; [!DNL Audience Manager] kunder) och alla andra externa partner (för [!DNL Audience Manager] kunder). Du **kan** avpublicera ett segment som används av [!DNL Target].
+>[!NOTE] Du **kan inte** avpublicera ett segment som används av någon av följande Adobe-lösningar: [!DNL Analytics] (in [!DNL Audience Analytics]), [!DNL Campaign], [!DNL Advertising Cloud] (för [!DNL Core Service] &amp; [!DNL Audience Manager] kunder) och alla andra externa partner (för [!DNL Audience Manager] kunder). Du **kan** avpublicera ett segment som används av [!DNL Target].
 
 ## Visa segmentpubliceringsstatus i [!UICONTROL Segment Manager]
 
