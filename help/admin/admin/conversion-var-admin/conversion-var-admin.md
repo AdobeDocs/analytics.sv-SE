@@ -5,7 +5,7 @@ title: Konverteringsvariabler (eVar)
 topic: Admin tools
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 translation-type: tm+mt
-source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
+source-git-commit: 76613290f4496a400ba9c16171cef7e161a29cf3
 
 ---
 
@@ -100,9 +100,11 @@ Beskrivningar av fält som används vid [redigering av konverteringsvariabler](/
 Det finns två sätt att förfalla en eVar:
 
 * Du kan ange att eVar ska förfalla efter en angiven tidsperiod eller händelse.
-* Du kan använda tvinga fram förfallodatumet för en eVar, vilket är användbart när du återanvänder en variabel.
+* Du kan använda tvinga fram förfallodatumet för en eVar genom att återställa den, vilket är användbart när du återanvänder en variabel.
 
-Om en eVar används i maj för att återspegla interna kampanjer och upphör efter 21 dagar, och i juni används den för att fånga in interna söknyckelord, bör du den 1 juni tvinga fram en förfallotid för, eller återställning av, variabeln. Om du gör det kommer det att bidra till att bevara de interna kampanjvärdena från juni-rapporterna.
+Om du t.ex. ändrar förfallotiden för en eVar från 30 till 90 dagar, kommer de eVar-värden som samlas in att finnas kvar under den nya förfallotiden (i det här fallet 90 dagar). Systemet tittar bara på den aktuella förfalloinställningen och den sista angivna tidsstämpeln för det eVar-värde som samlats in för att avgöra förfallotiden. Det är bara alternativet som **[!UICONTROL Reset]** förfaller värden och gör det omedelbart.
+
+Ett annat exempel: Om en eVar används i maj för att återspegla interna kampanjer och upphör efter 21 dagar, och i juni används den för att fånga in interna söknyckelord, bör du den 1 juni tvinga fram en förfallotid för, eller återställning av, variabeln. Om du gör det kommer det att bidra till att bevara de interna kampanjvärdena från juni-rapporterna.
 
 **Ärendekänslighet**
 
