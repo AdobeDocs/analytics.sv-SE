@@ -2,14 +2,14 @@
 title: addProductEvent
 description: Lägger till anpassade händelser i variabeln products and events.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Adobe plug-in: addProductEvent
 
-> [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Plugin- `addProductEvent` programmet lägger till en numerisk händelse eller valutakurs i [`products`](../page-vars/products.md) variabeln. Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakändelse i `products` variabeln utan att behöva oroa dig för produktsträngformatet. Detta plugin-program är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i `products` variabeln.
 
@@ -124,7 +124,7 @@ s.addProductEvent("event35", "15", 1);
 
 Ovanstående kod ställer också in variabeln `s.events` till `"purchase,event2,event33,event34,event35"`.
 
-> [!NOTE] Det andra argumentet i anropet kan vara antingen ett heltal **eller** en sträng som representerar ett heltal/tal
+>[!NOTE] Det andra argumentet i anropet kan vara antingen ett heltal **eller** en sträng som representerar ett heltal/tal
 
 ### Exempel 5
 
