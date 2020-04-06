@@ -3,7 +3,7 @@ description: Migrera användare från det äldre användarhanteringssystemet fö
 title: Migrera Analytics-användarkonton för Adobe ID:n
 uuid: 734e9f14-ef8d-44de-8ff3-3ee6dfe0a214
 translation-type: tm+mt
-source-git-commit: 3db8481434f3db43732f0b54a58c6d4a29bce652
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -16,7 +16,7 @@ Migrera användare från det äldre användarhanteringssystemet för Analytics t
 
 Migrera användare från det äldre användarhanteringssystemet för Analytics till Admin Console.
 
-> [!NOTE] Om en administratör som inte är inloggad via Experience Cloud försöker få åtkomst till migreringsverktyget för användar-ID dirigeras de om till inloggningssidan för Experience Cloud.
+>[!NOTE] Om en administratör som inte är inloggad via Experience Cloud försöker få åtkomst till migreringsverktyget för användar-ID dirigeras de om till inloggningssidan för Experience Cloud.
 
 **Migrera Analytics-användare**
 
