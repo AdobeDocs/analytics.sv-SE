@@ -3,7 +3,7 @@ description: Information om Analysis Workspace-mallen och rapporter i Rapporter 
 title: Rapport om annonsdata i Adobe Analytics
 uuid: e57996b5-b922-4614-8cee-0c1a7d97b428
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Information om Analysis Workspace-mallen och rapporter i Rapporter och analyser samt Report Builder.
 
-> [!NOTE] Du bör vänta minst 24 timmar innan sökmotordata börjar fylla i era Analytics-rapporter. Observera också att analysrapporter inte returnerar data för timgranularitet eftersom AMO-data inte stöder timgranularitet.
+>[!NOTE] Du bör vänta minst 24 timmar innan sökmotordata börjar fylla i era Analytics-rapporter. Observera också att analysrapporter inte returnerar data för timgranularitet eftersom AMO-data inte stöder timgranularitet.
 
 ## Analysis Workspace: Sökmotorer {#section_8173F42B2C784F41B9FD82CBB66F9ADF}
 
