@@ -2,7 +2,7 @@
 title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -42,7 +42,7 @@ Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med
 * `scView`: Ökar Cart Views-måttet.
 * `scCheckout`: Ökar &#39;Utcheckningar&#39;-måttet.
 
-> [!NOTE] Den här variabeln är skiftlägeskänslig. Undvik att händelsevärden med felaktig skiftläge för att säkerställa korrekt datainsamling.
+>[!NOTE] Den här variabeln är skiftlägeskänslig. Undvik att händelsevärden med felaktig skiftläge för att säkerställa korrekt datainsamling.
 
 ```js
 // Set the events variable to a single value
@@ -64,7 +64,7 @@ s.events = "event1=10";
 s.events = "event1=2,event2";
 ```
 
-> [!NOTE] Räknarhändelser stöder inte valuta- eller decimalvärden. Använd valutakändelser för valuta eller numeriska händelser för decimalvärden.
+>[!NOTE] Räknarhändelser stöder inte valuta- eller decimalvärden. Använd valutakändelser för valuta eller numeriska händelser för decimalvärden.
 
 ### Använd valutakändelser
 
@@ -81,7 +81,7 @@ s.events = "event1";
 s.products = "Example category;Example product;1;0;event1=9.99";
 ```
 
-> [!NOTE] Om du anger ett valutavärde i både `events` -variabeln och `products` -variabeln `events` används valutavärdet i. Undvik att ange valutavärden i både `events` - och `products` -variabler.
+>[!NOTE] Om du anger ett valutavärde i både `events` -variabeln och `products` -variabeln `events` används valutavärdet i. Undvik att ange valutavärden i både `events` - och `products` -variabler.
 
 ### Använd numeriska händelser
 
@@ -96,4 +96,4 @@ s.events = "event1";
 s.products = "Example category;Example product;1;0;event1=4.5";
 ```
 
-> [!NOTE] Om du anger ett numeriskt värde i både variabeln `events` och `products` variabeln `events` används det numeriska värdet i. Undvik att ange numeriska värden i både `events` - och `products` -variabler.
+>[!NOTE] Om du anger ett numeriskt värde i både variabeln `events` och `products` variabeln `events` används det numeriska värdet i. Undvik att ange numeriska värden i både `events` - och `products` -variabler.
