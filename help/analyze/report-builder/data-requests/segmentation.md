@@ -4,7 +4,7 @@ title: Hantera segment
 topic: Report builder
 uuid: 4e4edc39-ed93-498f-913d-7b231b10e7a0
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -19,7 +19,7 @@ I Report Builder finns en segmenteringspanel i steg 1 i begärandeguiden där du
 
 ## Lägga till eller redigera segment {#section_B2BC136F9A53498D90C7C2ECC5DB892B}
 
-> [!NOTE] Om du vill lägga till eller redigera segment, startar segmentgränssnittet i Report Builder segmentverktyget Analytics i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
+>[!NOTE] Om du vill lägga till eller redigera segment, startar segmentgränssnittet i Report Builder segmentverktyget Analytics i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
 
 1. Klicka på i segmentpanelen i steg 1 i begärandeguiden **[!UICONTROL Add]**.
 1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns på [https://marketing.adobe.com/resources/help/en_US/analytics/segment/](https://marketing.adobe.com/resources/help/en_US/analytics/segment/).
@@ -42,7 +42,7 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
    Mer information om behållare finns i [segmenteringshandboken](https://marketing.adobe.com/resources/help/en_US/analytics/segment/).
 
 1. Segment Builder-gränssnittet kommer nu att startas i Internet Explorer. Användargränssnittet för segmentbyggaren initieras med den behållare och det filter som du angav.
-1. När du har lagt till ett namn och en beskrivning i segmentet sparar du det.
+1. När du har lagt till ett namn och en beskrivning för segmentet sparar du det.
 1. Gå tillbaka till Report builder och klicka på ikonen Uppdatera för att uppdatera listan med segment.
 1. Du kan nu använda det här segmentet.
 
@@ -58,7 +58,7 @@ Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar 
 
 1. Kontrollera vilka segment du vill använda.
 
-> [!NOTE] Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig. (I användargränssnittet Marketing Reports &amp; Analytics kan administratören se alla segment i organisationen.)
+>[!NOTE] Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig. (I användargränssnittet Marketing Reports &amp; Analytics kan administratören se alla segment i organisationen.)
 
 ## Filtrera segment {#section_376E986D3E684999A7CDB08E53854159}
 
