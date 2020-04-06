@@ -2,7 +2,7 @@
 title: Util.getQueryParam
 description: Returnerar värdet för en frågesträngsparameter.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -50,4 +50,4 @@ var customString = "https://example.com?q1=value1;q2=value2;q3=value3";
 s.eVar1 = s.Util.getQueryParam("q2",customString,";");
 ```
 
-> [!TIP] Det finns ett liknande plugin-program med namnet [`s.getQueryParam`](../plugins/getqueryparam.md) . Detta plugin-program innehåller mer avancerade funktioner, men är också mer komplext och ingår inte i AppMeasurement som standard.
+>[!TIP] Det finns ett liknande plugin-program med namnet [`s.getQueryParam`](../plugins/getqueryparam.md) . Detta plugin-program innehåller mer avancerade funktioner, men är också mer komplext och ingår inte i AppMeasurement som standard.
