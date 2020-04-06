@@ -2,7 +2,7 @@
 title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
 translation-type: tm+mt
-source-git-commit: f18fbd091333523cd9351bfa461a11f0c3f17bef
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: f18fbd091333523cd9351bfa461a11f0c3f17bef
 
 Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som genererats av besökaren. Variabeln avgör `trackingServer` var en bildbegäran skickas. Om den här variabeln inte är korrekt definierad kan din implementering uppleva dataförlust.
 
-> [!IMPORTANT] Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
+>[!IMPORTANT] Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 
 ## Spårningsserver i Adobe Experience Platform Launch
 
@@ -28,7 +28,7 @@ Om fältet lämnas tomt blir det som standard `[rsid].112.2o7.net`.
 
 Variabeln `s.trackingServer` är en sträng som innehåller platsen där data ska skickas.
 
-> [!TIP] Vissa implementeringar pekar på data `2o7.net`. Även om detta är en giltig datainsamlingsdomän används inte regional datainsamling. Implementeringar som använder en något högre svarstid för bildbegäran `2o7.net` visas.
+>[!TIP] Vissa implementeringar pekar på data `2o7.net`. Även om detta är en giltig datainsamlingsdomän används inte regional datainsamling. Implementeringar som använder en något högre svarstid för bildbegäran `2o7.net` visas.
 
 ## Bestämma värdet för trackingServer
 
@@ -48,7 +48,7 @@ Vanligtvis har CNAME-poster redan konfigurerats och pekar på `sc.omtrdc.net`. D
 
 ### cookies från tredje part
 
-> [!TIP] Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. Adobe rekommenderar att du följer arbetsflödet för cookies från första part.
+>[!TIP] Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. Adobe rekommenderar att du följer arbetsflödet för cookies från första part.
 
 Om du använder en cookie-implementering från tredje part är värdet för `trackingServer` en underdomän till `sc.omtrdc.net`. Exempel:
 
@@ -58,4 +58,4 @@ s.trackingServer = "example.sc.omtrdc.net";
 
 Välj en underdomän som är unik för din organisation och som sannolikt inte plockas av någon annan organisation som använder Adobe Analytics. Se till att alla implementeringar i organisationen använder samma spårningsserver. Det kan vara praktiskt att behålla denna information i ett [lösningsdesigndokument](../../prepare/solution-design.md).
 
-> [!NOTE] Använd inte underdomäner djupare än `example.sc.omtrdc.net`. Detta `custom.example.sc.omtrdc.net` är till exempel inte en giltig spårningsserver.
+>[!NOTE] Använd inte underdomäner djupare än `example.sc.omtrdc.net`. Detta `custom.example.sc.omtrdc.net` är till exempel inte en giltig spårningsserver.
