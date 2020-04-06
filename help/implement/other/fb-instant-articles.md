@@ -2,7 +2,7 @@
 title: Implementera med Facebook Instant Articles
 description: Implementera Adobe Analytics på Facebook Instant Article-sidor.
 translation-type: tm+mt
-source-git-commit: 9d2007bead6a4963022f8ea884169802b1c002ff
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -83,7 +83,7 @@ I följande exempel visas flera anpassade variabler som ingår i en frågesträn
 <iframe class="no-margin" src="https://example.com/stats.html?eVar2=Dynamic%20article%20title&pageName=Example%20article%20name&cmpId=exampleID123" height="0"></iframe>
 ```
 
-> [!NOTE] Refererardimensionen spåras inte automatiskt på grund av iframes-typen. Se till att du inkluderar den här dimensionen som en del av frågesträngen om du vill spåra den.
+>[!NOTE] Refererardimensionen spåras inte automatiskt på grund av iframes-typen. Se till att du inkluderar den här dimensionen som en del av frågesträngen om du vill spåra den.
 
 ## Direktartiklar och sekretess för Facebook
 
