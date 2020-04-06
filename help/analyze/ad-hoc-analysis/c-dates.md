@@ -3,7 +3,7 @@ description: I kalendern kan du ange datum och datumintervall eller välja en f�
 title: Datum och datumintervall
 uuid: 8f099db7-e74b-4384-ac46-61a545f1dd62
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -24,7 +24,7 @@ När du väljer ett datumintervall när du skapar ett projekt kommer förkonfigu
 
 ![](assets/daterange.jpeg)
 
-> [!NOTE] Kontakta din kontoansvarige om du behöver hjälp med att köra äldre rapporter.
+>[!NOTE] Kontakta din kontoansvarige om du behöver hjälp med att köra äldre rapporter.
 
 ## Äldre datumsegment {#concept_53AA34DB3CE647608CAF4B41D6EAF45E}
 
@@ -41,5 +41,5 @@ c_legacy_data.xml
 1. [Skapa](/help/analyze/ad-hoc-analysis/c-getting-started.md) eller öppna ett projekt.
 1. Öppna [kalendern](/help/analyze/ad-hoc-analysis/c-dates.md)och välj **[!UICONTROL Quarter]** eller **[!UICONTROL Year]**.
 
-> [!NOTE] Historiska datumsegment är begränsade för kvartal och år. Du kan inte visa data som passerar gränsen mellan äldre segment och den nya bearbetningsplattformen. Datumintervall som sträcker sig över båda resulterar i ett fel. Datumintervallen gäller dessutom bara den gregorianska kalendern, inte den anpassade kalendern.
+>[!NOTE] Historiska datumsegment är begränsade för kvartal och år. Du kan inte visa data som passerar gränsen mellan äldre segment och den nya bearbetningsplattformen. Datumintervall som sträcker sig över båda resulterar i ett fel. Datumintervallen gäller dessutom bara den gregorianska kalendern, inte den anpassade kalendern.
 
