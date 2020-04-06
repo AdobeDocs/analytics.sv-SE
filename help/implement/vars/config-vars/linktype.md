@@ -2,7 +2,7 @@
 title: linkType
 description: Använd variabeln linkType för att avgöra vilken länkspårningsdimension träffen tillhör.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -38,7 +38,7 @@ Variabeln `s.linkType` är en sträng som accepterar ett av tre enkla teckenvär
 * `d` - Hämta länkar
 * `e` - Avsluta länkar
 
-> [!TIP] Den här variabeln är den andra parametern i `tl()` metoden och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkType` `tl()` metoden.
+>[!TIP] Den här variabeln är den andra parametern i `tl()` metoden och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkType` `tl()` metoden.
 
 ```js
 s.linkType = "e";
