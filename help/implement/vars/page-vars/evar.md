@@ -2,7 +2,7 @@
 title: eVar
 description: Anpassade variabler som du kan använda i implementeringen.
 translation-type: tm+mt
-source-git-commit: f18fbd091333523cd9351bfa461a11f0c3f17bef
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: f18fbd091333523cd9351bfa461a11f0c3f17bef
 
 Variabler är anpassade variabler som du kan använda hur du vill.
 
-> [!TIP] Adobe rekommenderar att du i de flesta fall använder eVars över props. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
+>[!TIP] Adobe rekommenderar att du i de flesta fall använder eVars över props. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
 
 Se till att du spelar in hur du använder varje eVar och deras logik i [lösningsdesigndokumentet](../../prepare/solution-design.md).
 
@@ -56,7 +56,7 @@ s.eVar1 = "+12.49";
 
 Om fler än två decimaler anges avrundas eVar-räknaren till två decimaler. En eVar-räknare får inte innehålla negativa tal.
 
-> [!IMPORTANT] Du måste först konfigurera eVars till Counter i Admin Console innan du använder counter eVars. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
+>[!IMPORTANT] Du måste först konfigurera eVars till Counter i Admin Console innan du använder counter eVars. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
 ## Exklusiva fördelar för proppar och eVars
 
