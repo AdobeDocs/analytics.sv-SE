@@ -2,7 +2,7 @@
 title: Implementera modal
 description: Lär dig mer om den första kundupplevelsen för implementering av Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 819f719c4ce131c04916f3b668bcbda1a1b03651
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -27,7 +27,7 @@ Använd spärren för att skapa en rapportserie med följande steg.
 2. Klicka på ikonen med nio stödraster överst och klicka sedan på [!UICONTROL Adobe Analytics].
 3. Om du ännu inte har skapat en rapportserie visas spärren automatiskt. Om det finns en rapportsvit för det här inloggningsföretaget klickar du på hjälpikonen i det övre högra hörnet och sedan på [!UICONTROL Welcome to Adobe Analytics].
 
-> [!NOTE] Alternativet visas bara om du loggar in via Adobe Experience Cloud. [!UICONTROL Welcome to Adobe Analytics] Om du loggar in via äldre domäner är spärrkoden inte tillgänglig.
+>[!NOTE] Alternativet visas bara om du loggar in via Adobe Experience Cloud. [!UICONTROL Welcome to Adobe Analytics] Om du loggar in via äldre domäner är spärrkoden inte tillgänglig.
 
 ## Skapa en rapportsvit
 
@@ -67,7 +67,7 @@ Uppskatta hur mycket trafik din webbplats eller app tar per dag. Med den här in
 
 Avgör vilken valuta som rapportsviten lagrar monetära värden i.
 
-> [!IMPORTANT] Se till att du anger rätt valuta, särskilt om du har rapporteringskrav för intäkter. Det är svårt att ändra basvalutan när datainsamlingen har startat.
+>[!IMPORTANT] Se till att du anger rätt valuta, särskilt om du har rapporteringskrav för intäkter. Det är svårt att ändra basvalutan när datainsamlingen har startat.
 
 ## Implementeringsresurser
 
