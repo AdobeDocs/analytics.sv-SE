@@ -2,14 +2,14 @@
 title: getResponsiveLayout
 description: Bestäm vilken layout för en webbplats som visas just nu.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Adobe plug-in: getResponsiveLayout
 
-> [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med `getResponsiveLayout` plugin-programmet kan du hålla reda på vilken version av den responsiva designbaserade webbplatsen som en besökare tittar på just nu. Adobe rekommenderar att du använder denna plugin om webbplatsen har en responsiv design och du vill spåra den version av webbplatsen som besökaren visar. Denna plugin behövs inte om webbplatsen inte använder responsiv design.
 
