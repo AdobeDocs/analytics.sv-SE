@@ -3,7 +3,7 @@ description: 'null'
 title: Översikt över användning av serversamtal
 uuid: 6e014364-efc1-4769-a0b5-cf105c0ed9b1
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -82,7 +82,7 @@ Här är en kort introduktion till viktig terminologi för användning av server
 
 Behörighet för användning av serveranrop beviljas automatiskt till Analytics-administratörer. Det gör att användarna kan visa kontrollpanelen och skapa serversamtalsaviseringar. Administratörer kan välja att ge icke-administratörer denna behörighet.
 
-> [!NOTE] Ditt företag kan välja vilka inloggningsföretag som har åtkomst till serversamtalsanvändning.
+>[!NOTE] Ditt företag kan välja vilka inloggningsföretag som har åtkomst till serversamtalsanvändning.
 
 <table id="table_86256AD8B4554F369439A8FDF2F545E1"> 
  <thead> 
