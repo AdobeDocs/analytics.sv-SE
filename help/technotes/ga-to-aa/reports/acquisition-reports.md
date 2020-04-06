@@ -2,7 +2,7 @@
 title: Anskaffningsrapporter i Adobe Analytics
 description: Lär dig hur du skapar förvärvsbaserade rapporter med Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 2e3896501a036e20f9f392c325e0c8ff1d586fba
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ Anskaffningsrapporter visar hur du får besökare till din webbplats.
 
 I Adobe Analytics kallas dessa rapporter för **marknadsföringskanaler**. De kräver en del grundläggande inställningar, men ger en mycket mer anpassad vy av kanalerna.
 
-> [!IMPORTANT]
+>[!IMPORTANT]
 >
 > Ställ in bearbetningsreglerna för marknadsföringskanaler för att använda dessa rapporter. Se [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) för information om hur du bäst konfigurerar marknadsföringskanaler i din organisation.
 
