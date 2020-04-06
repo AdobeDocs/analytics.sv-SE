@@ -4,7 +4,7 @@ title: Kör olika rapporttyper
 topic: Reports,Reports and analytics
 uuid: f59ab2a1-e916-46e8-bb5b-e6361ba00dda
 translation-type: tm+mt
-source-git-commit: fa98e4d6612fc8d02f33f525ef3faf3206fe8daa
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -148,7 +148,7 @@ Ta en titt på de nya funktionerna för avvikelseidentifiering och [bidragsanaly
 
 **[!UICONTROL Reports]** > **[!UICONTROL Site Metrics]** > **[!UICONTROL Anomaly Detection]** .
 
-> [!NOTE] Du kan också köra avvikelseidentifiering i Analysis Workspace-projekt. [Mer ...](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/anomaly_detection.html)
+>[!NOTE] Du kan också köra avvikelseidentifiering i Analysis Workspace-projekt. [Mer ...](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/anomaly_detection.html)
 
 Information om hur du ställer in avvikelseidentifiering finns i [referenshandboken](https://marketing.adobe.com/resources/help/en_US/sc/user/index.html#Setting_up_Anomaly_Detection).
 
