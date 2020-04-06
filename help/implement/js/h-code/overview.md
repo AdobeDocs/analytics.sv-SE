@@ -2,18 +2,18 @@
 title: H Code JavaScript implementation overview
 description: Lär dig arbetsflödet för att implementera H-kod på din webbplats.
 translation-type: tm+mt
-source-git-commit: 664d0cde8b8b17c86b47858611d459026aab0bef
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # H Code JavaScript implementation overview
 
-> [!IMPORTANT] Den här versionen av datainsamling stöds inte längre. Uppgradera till [Adobe Experience Platform Launch](../../launch/overview.md) eller [AppMeasurement for JavaScript](../overview.md).
+>[!IMPORTANT] Den här versionen av datainsamling stöds inte längre. Uppgradera till [Adobe Experience Platform Launch](../../launch/overview.md) eller [AppMeasurement for JavaScript](../overview.md).
 
 Du måste ha tillgång till värdservrarna för att kunna implementera en sida med kod för att samla in data. Följande steg visar dig vägen genom en grundläggande H-kodimplementering i Analytics.
 
-> [!NOTE] Du måste ha en befintlig kopia av `s_code.js` för att kunna följa dessa instruktioner. Adobe erbjuder inte längre något alternativ för att hämta H-kod i Code Manager.
+>[!NOTE] Du måste ha en befintlig kopia av `s_code.js` för att kunna följa dessa instruktioner. Adobe erbjuder inte längre något alternativ för att hämta H-kod i Code Manager.
 
 1. **Uppdatera grundläggande JS-filvariabler**: Redigera `s_code.js` filen och kontrollera att följande variabler är uppdaterade:
    * `s_account` innehåller det rapportsvit-ID som du vill skicka data till. Se
