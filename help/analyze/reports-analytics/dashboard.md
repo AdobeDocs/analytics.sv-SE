@@ -5,7 +5,7 @@ title: Kontrollpaneler och rapporter
 topic: Reports and analytics
 uuid: 7a7b3bc9-0a3c-49b0-9168-e2878ae67b97
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -31,7 +31,7 @@ Tänk på att vissa rapporter som visas ofta inte kan visas i kontrollpaneler. B
 * Realtidsrapporter
 * Andra instrumentpaneler
 
-> [!NOTE] Kontrollpanelen visas inte längre i Rapporter och analyser **[!UICONTROL Site Overview]** . Det finns dock fortfarande några omständigheter då du kommer att se några eller alla rapporter för den.
+>[!NOTE] Kontrollpanelen visas inte längre i Rapporter och analyser **[!UICONTROL Site Overview]** . Det finns dock fortfarande några omständigheter då du kommer att se några eller alla rapporter för den.
 
 * Om du t.ex. bara har tre rapporter som visas ofta, tar Rapporter och analyser två rapporter från kontrollpanelen Webbplatsöversikt för att slutföra **[!UICONTROL My Recommended Reports]** instrumentpanelen.
 * Brand new report suites kommer även från början att innehålla rapporter för webbplatsöversikt tills de ersätts av rapporter som du ofta visar. Även så kallas kontrollpanelen nu **[!UICONTROL My Recommended Reports]**.
