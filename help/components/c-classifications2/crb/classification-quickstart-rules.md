@@ -5,7 +5,7 @@ title: Klassificeringsregler
 topic: Admin tools
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -51,7 +51,7 @@ about_classification_rules.xml
 * [När klassificerar regler inte nycklar?](/help/components/c-classifications2/crb/classification-rule-builder.md)
 * [Om regelprioritet](/help/components/c-classifications2/crb/classification-quickstart-rules.md)
 
-> [!NOTE] Numeriska 2-klassificeringar [!UICONTROL Rule Builder] stöds inte.
+>[!NOTE] Numeriska 2-klassificeringar [!UICONTROL Rule Builder] stöds inte.
 
 ## Viktig information om regler
 
@@ -105,11 +105,11 @@ regex_classification_rules.xml
 * [Reguljära uttryck - Exempel på&quot;Innehåller inte&quot;](/help/components/c-classifications2/crb/classification-quickstart-rules.md#section_FCA88A612A4E4B099458E3EF7B60B59C)
 * [Reguljära uttryck - referenstabell](/help/components/c-classifications2/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716)
 
-> [!NOTE] Det bästa sättet är att använda reguljära uttryck för att spåra koder som använder avgränsare.
+>[!NOTE] Det bästa sättet är att använda reguljära uttryck för att spåra koder som använder avgränsare.
 
 ## Reguljärt uttryck - Exempel på spårningskod {#section_2EF7951398EB4C2F8E52CEFAB4032669}
 
-> [!NOTE] Om spårningskoden är URL-kodad kommer den **inte** att klassificeras i regelbyggaren.
+>[!NOTE] Om spårningskoden är URL-kodad kommer den **inte** att klassificeras i regelbyggaren.
 
 I det här exemplet antar du att du vill klassificera följande kampanj-ID:
 
