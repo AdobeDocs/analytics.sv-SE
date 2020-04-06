@@ -4,7 +4,7 @@ title: Realtidsrapporter
 topic: Reports
 uuid: c09cc605-0b3b-41ab-9b46-8c2a26f579a3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
 
-> [!NOTE] Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i Konfiguration av [realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md).
+>[!NOTE] Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i Konfiguration av [realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md).
 
 **[!UICONTROL Site Metrics]** > **[!UICONTROL Real-Time]**
 
