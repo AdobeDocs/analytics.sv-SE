@@ -2,7 +2,7 @@
 title: Globala rapportsviter i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
 translation-type: tm+mt
-source-git-commit: d7c4412feb85f4381d8811b29fc23c9c85d23555
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -23,7 +23,7 @@ Adobe rekommenderar att man i de flesta fall implementerar en global rapportseri
 * **Exaktare varumärkesattribuering:** Om ett besök börjar på en webbplats och sedan klickar på en annan av dina ägda webbplatser innan en lyckad händelse utlöses, samlas attribueringen in korrekt. En besökare klickar till exempel på en betald söklänk och hamnar på plats A. De klickar sedan på en länk till webbplats B och gör sedan ett köp. En global rapportsvit har korrekta attribut som återgår till betalsökningar.
 * **Förenklad implementering:** Eftersom alla varumärken/webbplatser skickar data till samma rapporteringsprogram justeras implementeringarna för varje webbplats. Den här tvingande styrningen säkerställer att en viss dimension eller mätvärden sparas i samma eVar eller händelse. Administratörer, testare, tagghanteringsägare och analytiker drar nytta av denna förenkling.
 
-> [!NOTE] Att samordna en global rapportsvitsimplementering är ett stort projekt. Adobe rekommenderar att du samarbetar med en konsult för att minska antalet komplikationer och problem som kan uppstå.
+>[!NOTE] Att samordna en global rapportsvitsimplementering är ett stort projekt. Adobe rekommenderar att du samarbetar med en konsult för att minska antalet komplikationer och problem som kan uppstå.
 
 ## Starta en ny implementering med en global rapportserie
 
