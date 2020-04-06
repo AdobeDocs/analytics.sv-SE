@@ -4,7 +4,7 @@ title: Anpassningsbara övertäckningar
 topic: Activity map
 uuid: c1e56480-c1df-4a81-8a2a-42ea1362175c
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -47,7 +47,7 @@ Bubbelövertäckningar visas när du markerar den här övertäckningen i verkty
 
 ![](assets/bubble_overlay.png)
 
-> [!NOTE] Bubbelövertäckningar för undermenyer visas bara när du visar undermenyn:
+>[!NOTE] Bubbelövertäckningar för undermenyer visas bara när du visar undermenyn:
 >
 >![](assets/bubbles_submenu.png)>
 
