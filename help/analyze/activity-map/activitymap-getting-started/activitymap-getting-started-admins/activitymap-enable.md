@@ -4,7 +4,7 @@ title: Aktivera aktivitetskarta
 topic: Activity map
 uuid: 30433319-d0e6-4977-951a-4492b356e1f2
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -55,4 +55,4 @@ Först måste du aktivera aktivitetskartrapporter på rapportsvitnivå.
 
 1. Detta gör att dina Admin-användare kan hämta aktivitetskartan från **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL ActivityMap]** .
 
-> [!NOTE] Om du vill att användare som inte är administratörer ska hämta aktivitetskartan skapar du en ny användargrupp som ger behörighet till Tools och Legacy ClickMap Installation. Den här behörighetsnivån kombinerat med åtkomst till aktivitetskartan ger behörighet att hämta och använda verktyget.
+>[!NOTE] Om du vill att användare som inte är administratörer ska hämta aktivitetskartan skapar du en ny användargrupp som ger behörighet till Tools och Legacy ClickMap Installation. Den här behörighetsnivån kombinerat med åtkomst till aktivitetskartan ger behörighet att hämta och använda verktyget.
