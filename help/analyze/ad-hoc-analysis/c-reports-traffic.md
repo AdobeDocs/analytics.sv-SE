@@ -4,7 +4,7 @@ title: Trafikkällrapporter
 topic: Ad hoc analysis
 uuid: 246afbdc-9f7b-4956-a44a-b7aad948f392
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -96,7 +96,7 @@ Domäner eller URL-adresser som inte ingår i de definierade domänerna och URL-
 
 Mer information finns i [Interna URL-filter](https://marketing.adobe.com/resources/help/en_US/reference/internal_URL_filter_admin.html) i [!DNL Admin Console] hjälpen.
 
-> [!NOTE] Marknadsföringsrapporter och analyser registrerar en hänvisande domän som ett e-postmeddelande när besökare klickar på en e-postmeddelandelänk som innehåller protokollet [!DNL imap://] eller [!DNL mail://] kommer till din webbplats. Allt som kommer från [!DNL https://mail.yahoo.com] räknas till exempel inte som e-postreferent eftersom protokollet är [!DNL https://]. E-post från Outlook rapporteras på raden Typed/Bookmarked, medan alla referenter med ett HTTP-protokoll där domänen är en känd sökmotor rapporteras på raden Sökmotor.
+>[!NOTE] Marknadsföringsrapporter och analyser registrerar en hänvisande domän som ett e-postmeddelande när besökare klickar på en e-postmeddelandelänk som innehåller protokollet [!DNL imap://] eller [!DNL mail://] kommer till din webbplats. Allt som kommer från [!DNL https://mail.yahoo.com] räknas till exempel inte som e-postreferent eftersom protokollet är [!DNL https://]. E-post från Outlook rapporteras på raden Typed/Bookmarked, medan alla referenter med ett HTTP-protokoll där domänen är en känd sökmotor rapporteras på raden Sökmotor.
 
 ## Referenstyp {#concept_689E42D8F96C450DA41C7167C7388198}
 
@@ -127,7 +127,7 @@ Följande radobjekt kan visas när den här rapporten körs:
 
 **Inget Java-skript**: Det fanns inget JavaScript, så typen var oidentifierbar (okänd). Det innebär att det inte fanns någon referensinformation från en klient i en webbläsare, som inte rapporterar att Javascript stöds. Dessa räknas inte som &quot;refererarinstanser&quot; men kan ses när andra mätvärden rapporteras.
 
-**USENET (newsgroup)**: Det innebär att URL:en för en referent börjar med `news://`. Därför lades refererarlänken upp på en diskussionsgrupp i användargruppen i stället för på en webbsida.
+**USENET (newsgroup)**: Det innebär att URL:en för en referent börjar med `news://`. Refererarlänken publicerades i en diskussionsgrupp i användargruppen i stället för på en webbsida.
 
-> [!NOTE] Referenstypslogiken matchar andra trafikkällrapporter (till exempel [!UICONTROL Referrers] och [!UICONTROL Referring Domains]). Detta bör reducera eller eliminera förekomster av Inside Your Site och Inga JavaScript-radobjekt i [!UICONTROL Referrer Type] rapporten.
+>[!NOTE] Referenstypslogiken matchar andra trafikkällrapporter (till exempel [!UICONTROL Referrers] och [!UICONTROL Referring Domains]). Detta bör reducera eller eliminera förekomster av Inside Your Site och Inga JavaScript-radobjekt i [!UICONTROL Referrer Type] rapporten.
 
