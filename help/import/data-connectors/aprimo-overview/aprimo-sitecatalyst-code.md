@@ -3,7 +3,7 @@ description: Om du valde datainsamlingsmetoden JavaScript Plug-In kopierar du f�
 title: Adobe Analytics-plugin-kod
 uuid: 60d80366-d144-465a-b3de-acc2341be1cd
 translation-type: tm+mt
-source-git-commit: a02fb674ea71a05e085c8e9b2dc4460f62f2cd51
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -26,5 +26,5 @@ Om du valde datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodra
 s.campaign=s.getQueryParam("ET_CID"); //places query param value from cid in campaign variable s.eVar2=s.getQueryParam("ET_RID"); //places query param value from rid in eVar2 variable
 ```
 
-> [!NOTE] Plugin-programmet ovan förutsätter att vissa anpassade handelsvariabler (eVars) är tillgängliga. Om variablerna som anges i plugin-programmet ovan inte är tillgängliga i Adobe Analytics-distributionen ersätter du dem med de som är tillgängliga.
+>[!NOTE] Plugin-programmet ovan förutsätter att vissa anpassade handelsvariabler (eVars) är tillgängliga. Om variablerna som anges i plugin-programmet ovan inte är tillgängliga i Adobe Analytics-distributionen ersätter du dem med de som är tillgängliga.
 
