@@ -4,7 +4,7 @@ title: Importera bokmärkesrapporter och kontrollpanelrapporter
 topic: Report builder
 uuid: 0fdbdb2e-5db7-4f64-b571-23482ba3606d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -21,9 +21,9 @@ Så här visar begärandeguiden steg 1 en kontrollpanel och dess rapportplatser:
 
 När du klickar **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Retrieve your Bookmarks]** hämtas och klistras dina befintliga instrumentpanels- och/eller bokmärkesdata in i kalkylbladet.
 
-> [!NOTE] I Report Builder är listan med tillgängliga kontrollpaneler och bokmärken begränsad till användaren, men även till de som gäller för den rapportserie som du valde i steg 1 i guiden. I marknadsföringsrapporter och -analyser får ni däremot tillgång till alla bokmärken och instrumentpaneler som är tillgängliga för er, oavsett vilka rapportsviter dessa instrumentpaneler och bokmärken använder.
+>[!NOTE] I Report Builder är listan med tillgängliga kontrollpaneler och bokmärken begränsad till användaren, men även till de som gäller för den rapportserie som du valde i steg 1 i guiden. I marknadsföringsrapporter och -analyser får ni däremot tillgång till alla bokmärken och instrumentpaneler som är tillgängliga för er, oavsett vilka rapportsviter dessa instrumentpaneler och bokmärken använder.
 
-> [!NOTE] Endast data importeras, så om bokmärket innehåller ett diagram, eller om kontrollpanelens rapportlåt bara består av ett diagram, importeras endast de data som används för att fylla diagrammet.
+>[!NOTE] Endast data importeras, så om bokmärket innehåller ett diagram, eller om kontrollpanelens rapportlåt bara består av ett diagram, importeras endast de data som används för att fylla diagrammet.
 
 När du har skapat en begäran genom att importera en kontrollpanelsrapport (eller ett bokmärke) kopplas begäran sedan till rapportletens (eller bokmärkets) primära dimension. Om du redigerar begäran kommer trädvyn därför inte längre att välja trädvisningsnoden (eller bokmärkesnoden) för kontrollpanelsrapporten: i stället väljs dess primära dimension.
 
