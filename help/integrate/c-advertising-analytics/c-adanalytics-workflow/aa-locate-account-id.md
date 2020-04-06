@@ -3,7 +3,7 @@ description: Här beskrivs hur du kan hjälpa dig att hitta dina konto-ID:n för
 title: Hitta ditt konto-ID
 uuid: 34f9bb8d-84b4-4890-9200-c926d0abb1d6
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -26,6 +26,6 @@ Klicka på kontoikonen längst upp till höger för att visa AdWords-kontonumret
 
 Konto-ID och Kund-ID krävs båda. De visas på fliken Konton.
 
-> [!NOTE] Kontonumret är inte detsamma som konto-ID:t.
+>[!NOTE] Kontonumret är inte detsamma som konto-ID:t.
 
 ![](assets/bing_id.png)
