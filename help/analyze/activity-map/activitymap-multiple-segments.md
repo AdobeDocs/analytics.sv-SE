@@ -4,7 +4,7 @@ title: Kundsegmentering
 topic: Activity map
 uuid: 5723c302-5744-4127-9f8e-41db66dc6dfb
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Gör att du kan använda ett flersegmentsfilter i aktivitetskartan.
 
-> [!NOTE] Segmentkontrollen är bara tillgänglig i standardläge eftersom Adobe Analytics-plattformen inte stöder segmentering av realtidsdata.
+>[!NOTE] Segmentkontrollen är bara tillgänglig i standardläge eftersom Adobe Analytics-plattformen inte stöder segmentering av realtidsdata.
 
 Du kan markera ett eller flera av segmenten på den **[!UICONTROL Segments]** nedrullningsbara menyn som visas nedan. De listade segmenten är identiska med de som du äger eller som har delats med dig via Rapporter och analyser för den rapportserie som valts.
 
