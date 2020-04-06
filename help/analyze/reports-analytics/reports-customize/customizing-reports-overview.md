@@ -4,7 +4,7 @@ title: Anpassa rapportöversikt
 topic: Reports and analytics
 uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -81,7 +81,7 @@ t_reports_comparing_dates.xml
 
 Du kan inte jämföra datum mellan trendrapporter.
 
-> [!NOTE] Om du vill göra en datumjämförelse av nyckeltal på en kontrollpanel kan du hämta data till [Report Builder](https://marketing.adobe.com/resources/help/en_US/arb/) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
+>[!NOTE] Om du vill göra en datumjämförelse av nyckeltal på en kontrollpanel kan du hämta data till [Report Builder](https://marketing.adobe.com/resources/help/en_US/arb/) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
 
 Så här jämför du datum mellan rankade rapporter i Rapporter och analyser:
 
