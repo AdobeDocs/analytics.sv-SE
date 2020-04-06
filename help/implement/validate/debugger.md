@@ -2,14 +2,14 @@
 title: Äldre Adobe Experience Cloud Debugger
 description: Installera den gamla felsökningsfunktionen för Adobe Experience Cloud. Den här felsökaren undersöker taggarna för Analytics, Target, Advertising Cloud, Identity Service, DTM och Launch.
 translation-type: tm+mt
-source-git-commit: 819f719c4ce131c04916f3b668bcbda1a1b03651
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Äldre Adobe Experience Cloud Debugger
 
-> [!IMPORTANT] Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar i stället att du använder [Adobe Experience Cloud Debugger Chrome Extension](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+>[!IMPORTANT] Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar i stället att du använder [Adobe Experience Cloud Debugger Chrome Extension](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
 Taggarna [!UICONTROL Legacy Debugger] kontrolleras för de flesta Adobe Experience Cloud-tjänster. Med hjälp av felsökaren kan du se vilka data som skickas till Adobe på en viss sida på din webbplats. Du kan använda den här informationen för att felsöka eller validera implementeringen av din organisation.
 
@@ -68,7 +68,7 @@ Safari kan inte skapa ett bokmärke manuellt, men en bokmärkes-URL kan redigera
 
 Navigera till önskad sida på webbplatsen och klicka sedan på bokmärket. Ett popup-fönster visas med data som skickats till Adobe.
 
-> [!NOTE] Vissa reklamblockerande plugin-program och popup-blockerare kan störa inläsningen av felsökningsfönstret. Kontrollera om det finns blockerade popup-fönster i webbläsaren och tillåt dem så att felsökaren kan fungera korrekt.
+>[!NOTE] Vissa reklamblockerande plugin-program och popup-blockerare kan störa inläsningen av felsökningsfönstret. Kontrollera om det finns blockerade popup-fönster i webbläsaren och tillåt dem så att felsökaren kan fungera korrekt.
 
 Felsökaren har flera tillgängliga alternativ, som alla anpassar hur data visas. Inget av dessa alternativ påverkar datainsamlingen.
 
