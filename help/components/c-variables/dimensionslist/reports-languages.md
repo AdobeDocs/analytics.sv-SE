@@ -4,7 +4,7 @@ title: Språk
 topic: Reports
 uuid: 04f1fc86-2738-4063-8091-772ddc59f9cf
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -23,5 +23,5 @@ Om en webbläsare inte har något språk angivet, eller om webbläsaren returner
 
 Vissa radartiklar i den här rapporten innehåller regioner. Det här är regionundertaggar.
 
-> [!NOTE] Timtidsgranulariteten stöds inte.
+>[!NOTE] Timtidsgranulariteten stöds inte.
 
