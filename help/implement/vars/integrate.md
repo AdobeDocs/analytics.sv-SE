@@ -2,7 +2,7 @@
 title: Integrera modul
 description: Med Integrate Module kan Adobe-partners integrera sina datainsamlingsaktiviteter med din organisation.
 translation-type: tm+mt
-source-git-commit: e8f22d3e9efd57de0134a3c4ff55d0ad148f3df1
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: e8f22d3e9efd57de0134a3c4ff55d0ad148f3df1
 
 Med Integrate Module kan Adobe-partners integrera sina datainsamlingsaktiviteter med din organisation. Den här integreringen ger möjlighet till en dubbelriktad dataanslutning. Användningen av integreringsmodulen styrs vanligtvis av en Adobe-partner.
 
-> [!NOTE] Om du begär partnerdata i implementeringen kan det öka fördröjningen mellan sidinläsning och data som skickas till Adobes datainsamlingsservrar. Om en besökare läser in en ny sida innan data skickas, registreras inte den sidan.
+>[!NOTE] Om du begär partnerdata i implementeringen kan det öka fördröjningen mellan sidinläsning och data som skickas till Adobes datainsamlingsservrar. Om en besökare läser in en ny sida innan data skickas, registreras inte den sidan.
 
 ## Integrera modularbetsflöde
 
