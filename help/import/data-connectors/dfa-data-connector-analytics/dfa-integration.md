@@ -5,7 +5,7 @@ title: DFA-integrering
 topic: Data connectors
 uuid: 972a9d62-24fd-4463-a34c-5ec0b926e81e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -138,7 +138,7 @@ För att förstå när ni ska begära genomskinlighets- och klickningsdata från
 
 Genesis-integreringen för DFA utnyttjar DFA Floodlight Configuration ID (dfa_SPOTID), vilket förbättrar rapportens enhetlighet mellan DFA och Adobes datainsamlingssystem.
 
-> [!NOTE] Termen Spotlight ändrades till Floodlight i en nyligen släppt version av Google DFA. JavaScript-parametern `dfa_SPOTID` namngavs baserat på Spotlight-terminologin, men används för båda versionerna.
+>[!NOTE] Termen Spotlight ändrades till Floodlight i en nyligen släppt version av Google DFA. JavaScript-parametern `dfa_SPOTID` namngavs baserat på Spotlight-terminologin, men används för båda versionerna.
 
 Om du vill aktivera DFA-integreringen på din webbplats måste du uppdatera din JavaScript-kod för datainsamling genom att lägga till följande:
 
