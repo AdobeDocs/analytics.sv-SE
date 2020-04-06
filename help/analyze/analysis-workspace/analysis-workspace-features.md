@@ -4,7 +4,7 @@ title: Översikt över Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -67,7 +67,7 @@ I kombination med de [avancerade textredigeringsfunktionerna](/help/analyze/anal
 
 Om du har paneler eller visualiseringar komprimerade i ditt projekt utökas panelen/visualiseringen när du klickar på en länk så att användarna kan se den.
 
-> [!NOTE] Du kan också använda den här funktionen i alternativet för **[!UICONTROL Edit Description]** högerklick.
+>[!NOTE] Du kan också använda den här funktionen i alternativet för **[!UICONTROL Edit Description]** högerklick.
 
 ## Länka till andra projekt {#section_AE886C367C3E4F189B65B1BD9BCDBD8C}
 
