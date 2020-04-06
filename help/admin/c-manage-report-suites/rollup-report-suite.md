@@ -4,7 +4,7 @@ title: Sammanslagning och globala rapportsviter
 topic: Admin tools
 uuid: c90b8e38-2c95-4318-8165-a362106b6142
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -34,7 +34,7 @@ Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsvit
 
 **Sekundära serveranrop**: Vid sammanslagning uppstår inga ytterligare serveranrop utöver vad en enda rapportserie samlar in. Om din organisation använder taggar för flera programsviter görs sekundära serveranrop för varje extra rapportsvit som ingår i en bildbegäran.
 
-> [!TIP] Om du bara använder en global rapportserie med [virtuella rapportsviter](../../components/vrs/vrs-considerations.md)behövs inga sekundära serveranrop.
+>[!TIP] Om du bara använder en global rapportserie med [virtuella rapportsviter](../../components/vrs/vrs-considerations.md)behövs inga sekundära serveranrop.
 
 **Implementeringsändringar**: Vid sammanslagning krävs inga implementeringsändringar, medan globala rapportsviter kräver att du inkluderar det globala rapportsvitens ID i implementeringen.
 
