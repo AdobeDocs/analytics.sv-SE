@@ -3,7 +3,7 @@ description: Ett histogram är en ny visualiseringstyp i Analysis Workspace.
 title: Histogram
 uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -22,7 +22,7 @@ Så här skapar du ett histogram:
 
 ![](assets/histogram.png)
 
-> [!NOTE] Histogram stöder endast standardvärden, inte beräknade värden.
+>[!NOTE] Histogram stöder endast standardvärden, inte beräknade värden.
 
 Här har vi använt måtten för sidvisningar per unika besökare. Den första (vänster) markeringen motsvarar en sidvy per unik besökare, den andra markeringen motsvarar två sidvisningar osv.
 
