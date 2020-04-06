@@ -2,7 +2,7 @@
 description: Instruktioner om hur du kör Ad Hoc-analys med Java 11.
 title: Kör ad hoc-analys med Java 11
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -27,7 +27,7 @@ Samarbeta med IT-avdelningen för att säkerställa att följande finns:
 1. **Kör den valda filen**. För PC: Dubbelklicka på .bat-filen. För Mac: Högerklicka på .sh-filen och välj sedan **[!UICONTROL Open With > Other... > Utilities > (Enable all applications) > select Terminal > Open]**.
 1. Logga in på Ad hoc-analys.
 
-> [!NOTE] Autentiseringsmetoderna Federated ID och Enterprise ID är inte kompatibla med Java 11-versionen av Ad Hoc Analysis.
+>[!NOTE] Autentiseringsmetoderna Federated ID och Enterprise ID är inte kompatibla med Java 11-versionen av Ad Hoc Analysis.
 
 ## Funktioner som inte stöds i Ad hoc-analys (Java 11)
 
