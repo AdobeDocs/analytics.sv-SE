@@ -4,7 +4,7 @@ title: Pathing
 topic: Reports
 uuid: c4ff9fa8-e567-4039-9c86-322800a942da
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,11 +15,11 @@ En grupp rapporter baserade på sökvägsanalys. Tekniskt sett innebär det att 
 
 Använd [Analys Workspace Flow](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/flow.html) för flexiblare målningsalternativ.
 
-> [!NOTE] Om du vill aktivera en bana går du till **[!UICONTROL Admin > Report Suites > Edit Settings > Traffic > Traffic Variables]**. Kontakta kundtjänst om du vill aktivera delning av plats och serverrapporter.
+>[!NOTE] Om du vill aktivera en bana går du till **[!UICONTROL Admin > Report Suites > Edit Settings > Traffic > Traffic Variables]**. Kontakta kundtjänst om du vill aktivera delning av plats och serverrapporter.
 
 Om du behöver veta i vilken ordning värdena samlas in måste du aktivera sökvägen för variabeln som samlar in dessa värden. Banan är aktiverad som standard för sidor. Pathing is not enabled for any props as as default, because it is only appropriate in certain cases. Kontakta Kundtjänst om du vill aktivera en kundtjänst.
 
-> [!NOTE] När du aktiverar klassificeringar för ett prop i Ad Hoc Analysis blir kundvägsstatistik tillgängliga för alla klassificeringar som har ställts in för det aktiverade proppet.
+>[!NOTE] När du aktiverar klassificeringar för ett prop i Ad Hoc Analysis blir kundvägsstatistik tillgängliga för alla klassificeringar som har ställts in för det aktiverade proppet.
 
 **Exempel - Måla på webbplatsavsnitt**
 
@@ -47,5 +47,5 @@ s.prop19=s.prop18 + ":" + s.pageName;
 
 Aktivera sedan en bana för *`s.prop19`* att se hur medlemmarna går igenom sidorna.
 
-> [!NOTE] Om du gör ad hoc-analyser kan du segmentera sidbanor utan att behöva sammanfoga segmentvärden, och tillämpa valfritt segment i kundvägsrapporter.
+>[!NOTE] Om du gör ad hoc-analyser kan du segmentera sidbanor utan att behöva sammanfoga segmentvärden, och tillämpa valfritt segment i kundvägsrapporter.
 
