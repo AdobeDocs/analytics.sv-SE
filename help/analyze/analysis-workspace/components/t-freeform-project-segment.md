@@ -3,7 +3,7 @@ description: 'null'
 title: Segment
 uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -32,7 +32,7 @@ Kom ihåg att:
 
 ![](assets/segment-dropzone.png)
 
-> [!NOTE] Segment som skapas på det här sättet är interna för projektet.
+>[!NOTE] Segment som skapas på det här sättet är interna för projektet.
 
 Du kan välja att göra dessa segment offentliga (globala) genom att följa dessa steg:
 
@@ -50,4 +50,4 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 | Skapa segment från markering | Skapa ett textbundet segment. Markera rader, högerklicka på markeringen och skapa sedan ett textbundet segment. Det här segmentet gäller bara det öppna projektet och sparas inte som ett Analytics-segment. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka på *Skapa segment från markering*. |
 | Komponenter > Nytt segment | Visar segmentbyggaren. Mer information om segmentering finns i [Segment Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html) . |
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)kan du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
-| Använd segment som dimensioner | Video: [Använda segment som dimensioner i analysarbetsytan](https://www.youtube.com/watch?v=WmSdReKTWto&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&index=39) |
+| Använd segment som dimensioner | Video: [Använda segment som dimensioner i analysarbetsytan](https://www.youtube.com/watch?v=WmSdReKTWto&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=39) |
