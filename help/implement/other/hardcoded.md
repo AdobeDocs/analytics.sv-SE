@@ -2,7 +2,7 @@
 title: Implementera med hårdkodade bildbegäranden
 description: Implementera Adobe Analytics med en HTML-bildtagg (hårdkodad bildförfrågan)
 translation-type: tm+mt
-source-git-commit: 819f719c4ce131c04916f3b668bcbda1a1b03651
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ AppMeasurement-bibliotek från Adobe kompilerar variabler som finns på sidan oc
 
 Den här implementeringsmetoden kan användas på alla plattformar som visar bilder från externa källor. Den förlitar sig inte alls på JavaScript.
 
-> [!NOTE] Maskinkodade bildbegäranden är enkla att konfigurera, men de är svåra att felsöka, underhålla och skala i större projekt. Kontrollera att hårdkodade bildbegäranden är det bästa alternativet för dig innan du fortsätter.
+>[!NOTE] Maskinkodade bildbegäranden är enkla att konfigurera, men de är svåra att felsöka, underhålla och skala i större projekt. Kontrollera att hårdkodade bildbegäranden är det bästa alternativet för dig innan du fortsätter.
 
 ## Syntax för bildbegäran
 
