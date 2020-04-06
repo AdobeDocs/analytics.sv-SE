@@ -4,7 +4,7 @@ title: Sökmetoder
 topic: Admin tools
 uuid: 1053993e-7fc4-4874-84fa-367ecdcd7b45
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -52,5 +52,5 @@ På sidan Sökmetoder visas hur olika sökmetoder rapporterar om konverteringsfr
  </tbody> 
 </table>
 
-> [!NOTE] Alla sökmetoder upphör att gälla när besöket avslutas. Om du väljer att förfalla efter en annan händelse (t.ex. kundvagnsutcheckning) förfaller sökmetoden när kundvagnsutcheckning inträffar under besöket. Om en kundvagnsutcheckning inte inträffar under besöket förfaller ändå sökmetoden när besöket avslutas.
+>[!NOTE] Alla sökmetoder upphör att gälla när besöket avslutas. Om du väljer att förfalla efter en annan händelse (t.ex. kundvagnsutcheckning) förfaller sökmetoden när kundvagnsutcheckning inträffar under besöket. Om en kundvagnsutcheckning inte inträffar under besöket förfaller ändå sökmetoden när besöket avslutas.
 
