@@ -4,7 +4,7 @@ title: Felsökning och metodtips för Report Builder
 topic: Report builder
 uuid: 36a08143-dc78-40f5-9ce9-7d16980aa27b
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -104,7 +104,7 @@ Alla schemalagda rapporter tar slut efter fyra timmar. Systemet försöker schem
 
 En lista med felmeddelanden som kan visas ibland när du använder Report Builder.
 
-> [!NOTE] Detta är bara ett urval av felmeddelanden och inte en uttömmande lista. Kontakta administratören om du vill ha mer information om hur du löser fel.
+>[!NOTE] Detta är bara ett urval av felmeddelanden och inte en uttömmande lista. Kontakta administratören om du vill ha mer information om hur du löser fel.
 
 **Den här funktionen kan bara användas på en öppen arbetsbok.**
 
