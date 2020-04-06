@@ -3,7 +3,7 @@ description: Med verktyget Beräknade mätvärden kan vem som helst skapa ett de
 title: Deltagandemått
 uuid: 7cb191be-bc4e-46ef-8a20-ccba5355e253
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Här följer ett enkelt exempel: Du är innehållsägare och vill se vilka sidor som har bidragit till (dvs. deltagit i) besök som innehöll en order. Så här:
 
-> [!NOTE] Tidigare var du tvungen att göra detta via Admin Tools. Du kan fortfarande aktivera deltagandemått i Admin Tools, men bara för anpassade händelser 1-100.
+>[!NOTE] Tidigare var du tvungen att göra detta via Admin Tools. Du kan fortfarande aktivera deltagandemått i Admin Tools, men bara för anpassade händelser 1-100.
 
 Här följer några enkla exempel: Du är innehållsägare och vill se vilka sidor som har bidragit till (deltagit i) besök som innehöll en e-postregistrering. Så här:
 
