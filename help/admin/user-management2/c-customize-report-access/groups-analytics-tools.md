@@ -6,7 +6,7 @@ title: Anpassa behörigheter för analysverktyg
 topic: Admin tools
 uuid: 8e86bc17-46d3-4c5e-ac25-9f3bfc29b8fa
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,13 +15,13 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 >[!IMPORTANT]
 >
->Användar- och produkthantering har flyttats till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthantering har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** bort.
 
 Aktivera användarbehörigheter för allmänna objekt (fakturering, loggar osv.), företagshantering, verktyg, Web Service Access, Report Builder och integrering med Data Connectors.
 
 **[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL All Report Access]** > **[!UICONTROL Analytics Tools]** > **[!UICONTROL Customize]**
 
-> [!NOTE] Versionen från hösten 2016 (20 oktober) förändrade grupphanteringen. Se [Administrativa ändringar - hösten 2016](/help/admin/user-management2/c-user-management/permissions-changes.md) för en sammanfattning av ändringarna.
+>[!NOTE] Versionen från hösten 2016 (20 oktober) förändrade grupphanteringen. Se [Administrativa ändringar - hösten 2016](/help/admin/user-management2/c-user-management/permissions-changes.md) för en sammanfattning av ändringarna.
 
 ## Rapportåtkomst - analysverktyg
 
