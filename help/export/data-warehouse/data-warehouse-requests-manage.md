@@ -4,7 +4,7 @@ title: Hantera datalagerbegäranden
 topic: Data warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -28,5 +28,5 @@ Om du arbetar på den här fliken kan du
 * Prioritera om rapporter genom att dra och släppa dem på en ny plats i kön.
 * Om du vill se när en begäran har börjat bearbetas klickar du på ett ID för en schemalagd begäran och undersöker popup-fönstret som öppnas.
 
-> [!NOTE] Om du vill avbryta en begäran om ett datalager [följer du de här stegen](https://helpx.adobe.com/analytics/kb/cancel-data-warehouse-requests.html).
+>[!NOTE] Om du vill avbryta en begäran om ett datalager [följer du de här stegen](https://helpx.adobe.com/analytics/kb/cancel-data-warehouse-requests.html).
 
