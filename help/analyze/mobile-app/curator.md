@@ -2,7 +2,7 @@
 description: Instruktioner för hur du ställer in styrkort för mobilappar.
 title: Adobe Analytics Mobile App Curator Guide
 translation-type: tm+mt
-source-git-commit: 4248dc8f197f32cad5a0c9de7c65f845abdef88f
+source-git-commit: 6baf94c359c4fa54c326b2c68378cd08161f7da9
 
 ---
 
@@ -188,7 +188,6 @@ Under betaversionen, och innan appen visas för allmänheten, kan du styra vem s
    3. När du har installerat Testflight-appen letar du reda på och installerar Adobe Analytics-mobilappen inifrån Testflight enligt nedan:
 
       ![Testflightskärm](assets/testflight2.png)
-
    **För chefsanvändare på Android:**
 
    1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **Mobile App**):
@@ -199,6 +198,7 @@ Under betaversionen, och innan appen visas för allmänheten, kan du styra vem s
       ![Spela upp Store-skärm](assets/play.png)
 
    2. Tryck på **nedladdningslänken på Google Play** -länken på följande skärm:
+
       ![Hämta länk](assets/playnext.png)
 
    3. Hämta och installera programmet.
