@@ -3,7 +3,7 @@ description: Innan du aktiverar den här integreringen ska du granska följande 
 title: Innan du aktiverar den här integreringen
 uuid: b911edc6-2265-48ed-9e3c-c79cc20dd9b2
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -34,7 +34,7 @@ Granska följande information om den här integreringen av Data Connector i rela
 * **Giltigt Silverpop-konto:** Om du vill använda e-postintegreringen för Data Connectors måste klienten ha ett aktivt Silverpop-konto med e-post aktiverat och aktiva användarautentiseringsuppgifter.
 * **Kontakta din Silverpop-representant**. Den här integreringen aktiveras inte automatiskt av Silverpop. Du måste kontakta din Silverpop-representant för att starta Silverpop-konfigurationen innan data importeras eller exporteras från Analytics.
 
-> [!NOTE] Den här integreringen fungerar endast med engagerande organisationer (inte Transact).
+>[!NOTE] Den här integreringen fungerar endast med engagerande organisationer (inte Transact).
 
 ## Priser{#pricing}
 
