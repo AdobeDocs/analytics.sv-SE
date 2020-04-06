@@ -3,7 +3,7 @@ description: Med hjälp av etikettrapportsvitdata kan du tilldela identiteter, k
 title: Etikettrapportsdata
 uuid: a694851c-8933-496e-9118-113cc38cba8a
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
 
 Med hjälp av etikettrapportsvitdata kan du tilldela identiteter, känslighet och datastyrningsetiketter till varje variabel i en viss rapportserie. Se till att du först bekanta dig med etiketterna och deras definitioner.
 
-> [!NOTE] Kom ihåg att etiketter måste granskas varje gång en ny rapportserie skapas eller när en ny variabel aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketten när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En omimplementering av dina mobilappar eller webbplatser kan ändra det sätt på vilket befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketterna.
+>[!NOTE] Kom ihåg att etiketter måste granskas varje gång en ny rapportserie skapas eller när en ny variabel aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketten när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En omimplementering av dina mobilappar eller webbplatser kan ändra det sätt på vilket befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketterna.
 
 ## Tilldela eller redigera etiketter för rapportsviten {#section_39F829F35A274EACA532E2F6FF392996}
 
