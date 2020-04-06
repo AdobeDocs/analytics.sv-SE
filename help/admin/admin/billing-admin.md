@@ -4,7 +4,7 @@ title: Fakturering
 topic: Admin tools
 uuid: ad6ee1c4-d317-4320-a36e-ee966c8f145e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 På sidan Fakturering kan du få tillgång till faktureringsinformation, inklusive trafikinformation för varje rapportsvit. Endast en auktoriserad administratör har åtkomst till den här sidan.
 
-> [!NOTE] Kontakta din kontoansvarige om åtkomst till faktureringsfliken är inaktiverad för ditt företag.
+>[!NOTE] Kontakta din kontoansvarige om åtkomst till faktureringsfliken är inaktiverad för ditt företag.
 
 Med trafiköversiktsdata från faktureringssidan kan du korrelera sidvisningsdata i rapporter med fakturerbara serversamtal på fakturan. På [!UICONTROL Billing] sidan kan du göra följande:
 
@@ -39,7 +39,7 @@ Den resulterande [!UICONTROL Monthly Invoice] rapporten innehåller följande in
 | Anpassade länkar | Anpassade länksummor för varje rapportserie. Du kan bekräfta de anpassade länkvärdena i Webbplatsinnehåll > Länkar > Anpassade länkar. |
 | Avsluta länkar | Avsluta länksummor för varje rapportserie. Du kan bekräfta värdena för länken för att avsluta i Webbplatsinnehåll > Länkar > Avsluta länkar. |
 
-> [!NOTE] Om du vill få en arbetskopia av [!UICONTROL Monthly Invoice] rapporten kopierar du den till Urklipp och klistrar in den i ett kalkylbladsprogram som Microsoft Excel*.
+>[!NOTE] Om du vill få en arbetskopia av [!UICONTROL Monthly Invoice] rapporten kopierar du den till Urklipp och klistrar in den i ett kalkylbladsprogram som Microsoft Excel*.
 
 ## Rapportdatum kontra bearbetningsdatum {#section_51A48C2F223F4904BE1407C13333C457}
 
