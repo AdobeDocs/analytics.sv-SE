@@ -2,18 +2,18 @@
 title: addProductEvar
 description: Lägger till eVars för försäljning i variabeln products.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Adobe plug-in: addProductEvar
 
-> [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med `addProductEvar` plugin-programmet kan du enkelt lägga till en Adobe Analytics-försäljningsvariabel som använder produktsyntax i variabeln products utan att behöva bekymra dig om det redan befintliga innehållet i variabeln products ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntax för varuexponering för eVars i [`products`](../page-vars/products.md) -variabeln. Du behöver inte använda plugin-programmet om du inte använder eVars för försäljning med produktsyntax. `addProductEvar`
 
-> [!NOTE] Denna plugin ersätter inte eVars som redan finns i en produktpost. Det lägger bara till värden som du anger med det här plugin-programmet. Var försiktig när du lägger till eVars som redan finns för den produkten.
+>[!NOTE] Denna plugin ersätter inte eVars som redan finns i en produktpost. Det lägger bara till värden som du anger med det här plugin-programmet. Var försiktig när du lägger till eVars som redan finns för den produkten.
 
 ## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
