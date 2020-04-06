@@ -3,7 +3,7 @@ description: Report Builder 5.2 har stöd för Adobe Analytics Unified Calculate
 title: Beräknade mått
 uuid: c9814894-cda6-40ff-8ec4-3ab2c1908ebc
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Report Builder 5.2 har stöd för Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
 
-> [!NOTE] Befintliga arbetsböcker kan peka på begäranden med äldre metriska ID:n. När du använder Report Builder 5.2 konverteras dessa äldre mått-ID:n till det nya globala ID:t. Om du delar den här arbetsboken med en användare av Report Builder v5.1 eller tidigare, kan den användaren inte se de beräknade måtten.
+>[!NOTE] Befintliga arbetsböcker kan peka på begäranden med äldre metriska ID:n. När du använder Report Builder 5.2 konverteras dessa äldre mått-ID:n till det nya globala ID:t. Om du delar den här arbetsboken med en användare av Report Builder v5.1 eller tidigare, kan den användaren inte se de beräknade måtten.
 
 Mer information om hur du skapar och hanterar beräknade värden med nya Calculated Metric Builder och Manager finns i [Calculated Metrics](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics) Guide.
 
