@@ -2,14 +2,14 @@
 title: getValOnce
 description: Förhindra att en Analytics-variabel ställs in på samma värde två gånger i rad.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Adobe plug-in: getValOnce
 
-> [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Plugin-programmet förhindrar att en variabel ställs in som lika med samma värde mer än en gång. `getValOnce` Adobe rekommenderar att du använder denna plugin när du vill ta bort dubbletter av förekomster där en besökare uppdaterar en sida eller på annat sätt besöker en viss sida flera gånger. Denna plugin behövs inte om du inte är orolig för mätvärdet &#39;Förekomster&#39; i Analysis Workspace.
 
