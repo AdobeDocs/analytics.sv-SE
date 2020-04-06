@@ -2,14 +2,14 @@
 title: Enhetsövergripande analys
 description: Enhetsövergripande analys förändrar era data från att vara enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 translation-type: tm+mt
-source-git-commit: 3e821ce7b045647c09d9548659834ffc2170163d
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Enhetsövergripande analys
 
-> [!NOTE] Enhetsövergripande analysdokumentation kan komma att ändras i takt med att funktionen utvecklas ytterligare. Kontrollera regelbundet om det finns uppdateringar.
+>[!NOTE] Enhetsövergripande analysdokumentation kan komma att ändras i takt med att funktionen utvecklas ytterligare. Kontrollera regelbundet om det finns uppdateringar.
 
 Enhetsövergripande analys är en funktion som omvandlar analyser från enhetscentrerad vy till personcentrerad vy. Den här funktionen använder Adobe Experience Platform Identity Service Co-op Graph eller Private Graph för att identifiera vilka enheter som tillhör enskilda personer och sätta ihop dem. Därför kan analytiker förstå användarbeteende som fungerar på olika webbläsare, enheter och appar. Med CDA kan du besvara frågor som:
 
@@ -27,7 +27,7 @@ Se [Journey IQ: Spark-sidan](http://adobe.ly/aacda) för analys av olika enheter
 
 Från och med september 2019 krävs följande för enhetsövergripande analys: Samarbeta med team inom organisationen och er kontoansvarige på Adobe för att säkerställa att ni uppfyller alla följande krav.
 
-> [!IMPORTANT] Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när data sammanfogas.
+>[!IMPORTANT] Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när data sammanfogas.
 
 * Organisationens data måste finnas i Adobes datacenter i Stillahavsområdet i nordväst. Stöd för datacenter i andra delar av världen planeras.
 * Kontakta er kontoansvarige på organisationen för att få hjälp med följande:
