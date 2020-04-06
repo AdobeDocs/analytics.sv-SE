@@ -2,7 +2,7 @@
 title: Konfigurera ett annonskonto
 uuid: 4e37caa3-e4a5-43ad-97c0-12db62ad5283
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -80,7 +80,7 @@ Fyll i **[!UICONTROL Tracking Settings]** följande riktlinjer:
     </tbody> 
     </table>
 
-1. I **[!UICONTROL Mapping]** avsnittet väljer du vilka rapportsviter som ska länkas till det här sökmotorkontot. Du måste ange minst en rapportserie innan du kan spara Advertising Account. Du kan mappa flera konton till flera rapportsviter (1:1, 1:Many, Many:Many). Observera att de data som AMO hämtar från sökmotorn helt enkelt kopieras till en mappad rapportsvit, så det finns ingen delning av data.
+1. I **[!UICONTROL Mapping]** avsnittet väljer du vilka rapportsviter som ska länkas till det här sökmotorkontot. Du måste ange minst en rapportserie innan du kan spara Advertising Account. Du kan mappa flera konton till flera rapportsviter (1:1, 1:Many, Many:Many). Observera att de data som AMO hämtar från sökmotorn helt enkelt kopieras till en mappad rapportsvit, så att inga data delas upp.
 
    >[!IMPORTANT]
    >
@@ -108,5 +108,5 @@ Fyll i **[!UICONTROL Tracking Settings]** följande riktlinjer:
 
    Du kommer nu till gränssnittet för [kontohantering för annonsering](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manage-ad-accounts.md), där ditt nya konto ska listas.
 
-> [!NOTE] Du bör vänta minst 24 timmar innan sökmotordata börjar fylla i era Analytics-rapporter.
+>[!NOTE] Du bör vänta minst 24 timmar innan sökmotordata börjar fylla i era Analytics-rapporter.
 
