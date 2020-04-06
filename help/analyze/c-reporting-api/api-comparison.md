@@ -3,7 +3,7 @@ description: En jämförelsetabell för API:er för analysrapportering. Det finn
 title: API-jämförelse för analysrapportering
 uuid: fa533a8e-33c0-42f4-a294-cabee0258c8f
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 En jämförelsetabell för API:er för analysrapportering. Det finns länkar till styrkande dokumentation.
 
-> [!NOTE] När det gäller fördröjning kombinerar Analytics for Target (A4T) Analytics- och Target-data på samma träff för integrerad rapportering. Eftersom anrop till Analytics och Target sker vid olika tidpunkter, lagras träffar innan någon behandling utförs för att samla in data från båda lösningarna. Den här processen lägger till **ytterligare 7-10 minuters** fördröjning till alla kontrollpunkter.
+>[!NOTE] När det gäller fördröjning kombinerar Analytics for Target (A4T) Analytics- och Target-data på samma träff för integrerad rapportering. Eftersom anrop till Analytics och Target sker vid olika tidpunkter, lagras träffar innan någon behandling utförs för att samla in data från båda lösningarna. Den här processen lägger till **ytterligare 7-10 minuters** fördröjning till alla kontrollpunkter.
 
 <table id="table_7AF4FD678D494063ADF459B3CBC3EF3F"> 
  <thead> 
