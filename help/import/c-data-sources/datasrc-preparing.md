@@ -5,7 +5,7 @@ title: Förbereder användning av datakällor
 topic: Developer and implementation
 uuid: 876ea069-574b-4e23-93b7-e3828bfd90f5
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -28,7 +28,7 @@ När du har fastställt lämpliga metrisk-till-händelse-mappningar för Data So
 
 Se [Slutförda händelser](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) i hjälpen för Admin Tools.
 
-> [!NOTE] Adobe rekommenderar starkt att du använder nya, tomma händelser med data från datakällor, men i sällsynta fall kan det vara bra att använda en befintlig händelse.
+>[!NOTE] Adobe rekommenderar starkt att du använder nya, tomma händelser med data från datakällor, men i sällsynta fall kan det vara bra att använda en befintlig händelse.
 
 ## Identifiera datamått {#section_8EC6BDC4AA314D9EB85F6FCD8E6ABC0A}
 
@@ -38,7 +38,7 @@ Om en datakälla till exempel mäter och avtryck av data, är det troligt att di
 
 Du kan definiera flera datamått för ett mätvärde, men varje mätvärde måste ange ett relevant värde, eller en kombination av värden, för varje tillhörande datamängd. Om du till exempel importerar ett offlineförsäljningsmått och associerar det med *`Product`* - och *`Partner`* datamått, måste offlineförsäljningsmåttet vara relevant för varje kombination av produkt och partner (till exempel total intäkt).
 
-> [!NOTE] Det går att importera summerade mått som inte kan delas upp efter någon datamängd.
+>[!NOTE] Det går att importera summerade mått som inte kan delas upp efter någon datamängd.
 
 När du har definierat de datamängder som ska användas med en datakälla integrerar du dimensionsdata i marknadsföringsrapporter genom att mappa dem till en variabel. Använd antingen standardrapporter (till exempel Produkt, Spårningskod, Söknyckelord) eller Konverteringstrafikvariabler (eVars).
 
