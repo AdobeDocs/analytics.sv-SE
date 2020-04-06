@@ -2,7 +2,7 @@
 title: Skapa en rapportsvit
 description: Skapa en grundläggande behållare för datainsamling i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 984d6034d14cc4256d93bd4f7d1a7f01b63b71e9
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -19,7 +19,7 @@ Den här artikeln är avsedd för administratörer på systemnivå eller adminis
 
 ## Skapa en rapportsvit
 
-> [!NOTE] Det finns också ett sätt att skapa en rapportserie i Adobe Analytics med den äldre administratören. Adobe rekommenderar att du använder guiden för rapportsvitskonfiguration som beskrivs här.
+>[!NOTE] Det finns också ett sätt att skapa en rapportserie i Adobe Analytics med den äldre administratören. Adobe rekommenderar att du använder guiden för rapportsvitskonfiguration som beskrivs här.
 
 1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 1. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
