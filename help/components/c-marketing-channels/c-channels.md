@@ -5,7 +5,7 @@ title: Hantera marknadsföringskanaler
 topic: Reports and analytics
 uuid: 9d367bb6-a17b-49b8-9cd5-24fac35ae982
 translation-type: tm+mt
-source-git-commit: c10a12781a8fe52b7b897cd337dc686aa0bbb240
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -25,7 +25,7 @@ Att lägga till kanaler på [!UICONTROL Marketing Channels] sidan görs oberoend
 
 Lägg till marknadsföringskanaler i Marketing Channel Manager.
 
-> [!NOTE] Du kan inte ta bort en kanal. Om du inte vill använda en kanal kan du inaktivera den eller byta namn på den och bevara den för senare bruk.
+>[!NOTE] Du kan inte ta bort en kanal. Om du inte vill använda en kanal kan du inaktivera den eller byta namn på den och bevara den för senare bruk.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välj en rapportsvit på [!UICONTROL Report Suite Manager] sidan.
