@@ -5,7 +5,7 @@ title: Bot Rules - översikt
 topic: Admin tools
 uuid: 3cb9e29d-1c37-43de-b7ac-34441093a60e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -121,7 +121,7 @@ VISTA-regler används efter punktregler (se [Bearbetningsordning).](/help/admin/
 
 **Bearbetning av högfrekvent besök:** Om fler än 100 träffar inträffar under ett besök avgör rapporten om besökets tid i sekunder är mindre än eller lika med antalet träffar under besöket. I denna situation, på grund av kostnaderna för att behandla långa, intensiva besök, börjar rapporteringen om med ett nytt besök. Besök med många träffar orsakas normalt av robotattacker och betraktas inte som normala besökare.
 
-> [!NOTE] Träffar markerade som *`bots`* faktureras som [serversamtal.](/help/admin/c-server-call-usage/overage-overview.md)
+>[!NOTE] Träffar markerade som *`bots`* faktureras som [serversamtal.](/help/admin/c-server-call-usage/overage-overview.md)
 
 ## Inverkan av IP-förfalskning på robotfiltrering {#section_92E60B95BE8940D983F28C79E0CD6B12}
 
