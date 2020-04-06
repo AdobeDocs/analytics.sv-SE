@@ -2,7 +2,7 @@
 title: pageName
 description: Namnet på sidan på webbplatsen.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 Variabeln lagrar vanligtvis namnet på en viss sida `pageName` . Det är praktiskt att avgöra vilka enskilda sidor som är mest populära. Den här variabeln fyller i dimensionen &quot;Sidnamn&quot;.
 
-> [!NOTE] Den här dimensionen tas alltid bort från länkspårningsanrop. Om du vill se sidnamnet där en länk spårades bör du överväga att kopiera variabeln till en eVar.
+>[!NOTE] Den här dimensionen tas alltid bort från länkspårningsanrop. Om du vill se sidnamnet där en länk spårades bör du överväga att kopiera variabeln till en eVar.
 
 Om den här variabeln inte definieras för ett visst sidspårningsanrop används [`pageURL`](pageurl.md) variabeln i stället.
 
