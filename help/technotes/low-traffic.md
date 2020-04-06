@@ -4,7 +4,7 @@ title: Lågtrafikvärde i Adobe Analytics
 topic: Metrics
 uuid: 56f723f8-94e8-478f-8ea3-16dad21dfa1f
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -18,12 +18,12 @@ När en rapport har ett stort antal unika värden tillhandahåller Adobe funktio
 * Rapporteringen påverkas inte om variabeln inte når 500 000 unika värden under en viss månad.
 * När en variabel når detta första tröskelvärde på 500 000 kommer data att paketeras under låg trafik. Varje värde som ligger utanför detta tröskelvärde följer följande logik:
    * Om ett värde redan finns i rapporter lägger du till det som vanligt.
-   * Om ett värde ännu inte har rapporterats kontrollerar du om värdet har setts mer än ungefär tio gånger idag. Om så är fallet lägger du till det här värdet i rapporteringen. Om den inte har räknats mer än tio gånger, lämna den under lågtrafik.
+   * Om ett värde ännu inte har rapporterats kontrollerar du om det har setts mer än ungefär tio gånger idag. Om så är fallet lägger du till det här värdet i rapporteringen. Om den inte har räknats mer än tio gånger, lämna den under lågtrafik.
 * Om en rapportserie når över 1 000 000 unika värden tillämpas mer aggressiv filtrering:
    * Om ett värde redan finns i rapporter lägger du till det som vanligt.
    * Om ett värde ännu inte har rapporterats kontrollerar du om värdet har setts mer än cirka 100 gånger idag. Om så är fallet lägger du till värdet i rapporten. Om det inte gör det, lämna det under lågtrafik.
 
-> [!NOTE] Om ett variabelvärde tar emot tillräckligt mycket trafik för att lämna lågtrafikpytsen flyttas inte de första värdena som samlas in till respektive radpost. De första 10-100 instanserna har låg trafik.
+>[!NOTE] Om ett variabelvärde tar emot tillräckligt mycket trafik för att lämna lågtrafikpytsen flyttas inte de första värdena som samlas in till respektive radpost. De första 10-100 instanserna har låg trafik.
 
 ## Ändra unika gränströsklar
 
