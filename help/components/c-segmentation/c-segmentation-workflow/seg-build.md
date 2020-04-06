@@ -4,7 +4,7 @@ title: Skapa segment
 topic: Segments
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -81,7 +81,7 @@ Segment med inbäddade datumintervall fungerar annorlunda i Analysis Workspace j
 
 **[!UICONTROL Publish to Experience Cloud (for `<report suite name>`)]**: (Visas inte på skärmen) Det här alternativet visas bara om rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md). Genom att publicera ett segment i Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target]och [!DNL Audience Manager]. Du måste ange en segmenttitel och beskrivning.
 
-> [!NOTE] I Analytics kan du redigera eller ta bort ett publicerat segment. Om segmentet används visas ett varningsmeddelande när du redigerar ett segment. Du kan inte ta bort ett publicerat segment som används av Adobe [!DNL Target].
+>[!NOTE] I Analytics kan du redigera eller ta bort ett publicerat segment. Om segmentet används visas ett varningsmeddelande när du redigerar ett segment. Du kan inte ta bort ett publicerat segment som används av Adobe [!DNL Target].
 
 ![](assets/segment_publish_to_mac_copy.png)
 
@@ -157,7 +157,7 @@ Genom att använda segmentstackning kan du minska antalet segment till 22 och st
 * ett segment för surfplattor
 * 20 segment för de olika geografiska områdena
 
-> [!NOTE] När du staplar två segment förenas de som standard med en AND-sats. Detta kan inte ändras till en OR-sats.
+>[!NOTE] När du staplar två segment förenas de som standard med en AND-sats. Detta kan inte ändras till en OR-sats.
 
 1. Gå till Segment Builder.
 1. Ange en rubrik och beskrivning för segmentet.
