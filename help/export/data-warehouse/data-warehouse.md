@@ -4,7 +4,7 @@ title: Översikt över datalager
 topic: Data warehouse
 uuid: 768557dd-1644-4ce6-bfc2-8c46dd6e1cd1
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -19,7 +19,7 @@ Data Warehouse packar automatiskt upp alla filer som är större än 1 MB. Den m
 
 Datalagret kan bearbeta ett obegränsat antal rader i en enda begäran för enskilda schemalagda och nedladdade rapporter.
 
-> [!NOTE] Datalagret rapporterar det första värdet som påträffats under rapporteringsperioden.
+>[!NOTE] Datalagret rapporterar det första värdet som påträffats under rapporteringsperioden.
 
 >[!IMPORTANT]
 >
