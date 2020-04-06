@@ -4,7 +4,7 @@ title: Lås/lås upp arbetsböcker
 topic: Report builder
 uuid: ef5c276c-5f74-4741-b6fa-4c79eda29f62
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -28,7 +28,7 @@ Du kan låsa upp en låst arbetsbok om du har någon av följande behörigheter:
 * Du är administratör, eller
 * Du är den person som ursprungligen låste arbetsboken. I det här fallet behöver du inte vara administratör.
 
-> [!NOTE] Du kan inte lägga till en begäran i en skyddad arbetsbok om du inte har behörighet att låsa upp arbetsboken.
+>[!NOTE] Du kan inte lägga till en begäran i en skyddad arbetsbok om du inte har behörighet att låsa upp arbetsboken.
 
 När en arbetsbok är låst för redigering av begäranden,
 
