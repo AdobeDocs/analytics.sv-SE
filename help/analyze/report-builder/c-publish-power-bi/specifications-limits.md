@@ -3,7 +3,7 @@ description: 'null'
 title: Begränsningar och specifikationer
 uuid: 6717b6ea-7e01-49b8-8f6e-fb733a03b687
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 ## Publiceringsbegränsningar för Power BI {#section_D4BDD70B20F94A0FAE53531CA528AE42}
 
-> [!NOTE] Dessa begränsningar gäller endast alternativet Publicera Report Builder-begäranden som Power BI-datauppsättningstabeller.
+>[!NOTE] Dessa begränsningar gäller endast alternativet Publicera Report Builder-begäranden som Power BI-datauppsättningstabeller.
 
 * Högst 100 Report Builder-begäranden kan exporteras till Power BI per arbetsbok.
 * Schemaläggningsprocessen avbryter exporten av begäranden när den 101:e begäran nås.
@@ -20,7 +20,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 ## Redigera en Report Builder-begäran efter publicering till Power BI {#section_6989E74F68DD43F08D37C36B6777DB50}
 
-> [!NOTE] Specifikationen gäller alternativen&quot;Publicera alla Report Builder-begäranden som Power BI-datauppsättningstabeller&quot; och&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot;.
+>[!NOTE] Specifikationen gäller alternativen&quot;Publicera alla Report Builder-begäranden som Power BI-datauppsättningstabeller&quot; och&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot;.
 
 Om du redigerar en Report Builder-begäran efter att ha publicerat den till Power BI kan det orsaka problem.
 
