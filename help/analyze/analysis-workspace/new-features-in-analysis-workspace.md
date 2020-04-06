@@ -5,7 +5,7 @@ title: Nyheter på Analysis Workspace
 topic: Reports and analytics
 uuid: ff50ef9f-e5b8-442e-bfa6-2f224ba9f111
 translation-type: tm+mt
-source-git-commit: 08d564f7fb06b94c2010515ea4a1dcbb2e6e2815
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -1049,7 +1049,7 @@ I ett projekt klickar du på **[!UICONTROL Link to This Project]** Åtgärder-me
 
 ![](assets/link-to-this-project.png)
 
-> [!NOTE] Delningsrapportlänkar är inte tillgängliga om ditt företag använder enkel inloggning (både den äldre enkla inloggningen och när du loggar in via Experience Cloud).
+>[!NOTE] Delningsrapportlänkar är inte tillgängliga om ditt företag använder enkel inloggning (både den äldre enkla inloggningen och när du loggar in via Experience Cloud).
 
 ## Visualiseringar av punktdiagram, punktdiagram och treemap {#section_B19EA50EBF5546E99D3A142827153FD6}
 
@@ -1069,7 +1069,7 @@ Punktdiagrammet innehåller ett enda primärt mått (till exempel dagens intäkt
 
 Visar hur många visningar som använts och hur många unika användare som har sett dessa intryck. Storleken på varje datapunkt ger en visuell indikation på det genomsnittliga antalet gånger som ett visningsprogram exponerades för en annons. Storleken och data varierar beroende på de dimensioner, datumintervall och filter du väljer.
 
-> [!NOTE] En tabell som är associerad med ett Scatterplot-diagram kräver minst två kolumner. Den första kolumnen definierar X-axeln och den andra kolumnen definierar Y-axeln. Om det finns en tredje kolumn tillgänglig används den för att bestämma punktens radie. Kolumnerna *1*, *2* och *3* mappas med andra ord till *X*, *Y*** och¥dot radius¥.
+>[!NOTE] En tabell som är associerad med ett Scatterplot-diagram kräver minst två kolumner. Den första kolumnen definierar X-axeln och den andra kolumnen definierar Y-axeln. Om det finns en tredje kolumn tillgänglig används den för att bestämma punktens radie. Kolumnerna *1*, *2* och *3* mappas med andra ord till *X*, *Y*** och¥dot radius¥.
 
 **Treemap**
 
