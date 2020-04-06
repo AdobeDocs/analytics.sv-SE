@@ -2,7 +2,7 @@
 title: pageURL
 description: Åsidosätt den automatiskt insamlade sidans URL på din webbplats.
 translation-type: tm+mt
-source-git-commit: f75c6759feb6576017733f1aac5bff2e21d4b0af
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: f75c6759feb6576017733f1aac5bff2e21d4b0af
 
 AppMeasurement samlar automatiskt in sidans URL i varje träff. Om du vill åsidosätta sidans URL som samlas in automatiskt av AppMeasurement kan du använda den här variabeln. I de flesta fall behöver du inte ange den här variabeln.
 
-> [!NOTE] Den här variabeln är inte en tillgänglig dimension i Analysis Workspace. Den är bara tillgänglig i datalager och datafeeds. Om du vill använda sid-URL som en dimension i Analysis Workspace kan du skicka variabeln till en eVar vid varje träff. `pageURL`
+>[!NOTE] Den här variabeln är inte en tillgänglig dimension i Analysis Workspace. Den är bara tillgänglig i datalager och datafeeds. Om du vill använda sid-URL som en dimension i Analysis Workspace kan du skicka variabeln till en eVar vid varje träff. `pageURL`
 
 Ibland är URL-adresser längre än 255 byte. AppMeasurement använder frågesträngsparametern för de första 255 byten i URL:en i bildbegäranden. `g` Om en URL är längre än 255 byte lagras resten av URL:en i `-g` frågesträngsparametern. Protokoll- och frågesträngar i URL:en ingår i den här variabeln.
 
