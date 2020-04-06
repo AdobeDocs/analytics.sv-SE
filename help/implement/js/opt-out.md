@@ -2,20 +2,20 @@
 title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
 translation-type: tm+mt
-source-git-commit: 664d0cde8b8b17c86b47858611d459026aab0bef
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Implementera länkar för avanmälan
 
-> [!IMPORTANT] Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-regler. Se Översikt över [anmälningstjänsten](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) i användarhandboken för Experience Cloud Identity Service.
+>[!IMPORTANT] Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-regler. Se Översikt över [anmälningstjänsten](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) i användarhandboken för Experience Cloud Identity Service.
 
 Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder besökare på er webbplats möjlighet att avanmäla sig från den information de samlar in. Alla implementeringstyper finns tillgängliga. din organisation ansvarar för din egen sekretesspolicy och för att den förblir i enlighet med dina signerade villkor.
 
 När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie anges, fortsätter JavaScript-filen att skicka data till Adobe-servrar. Dessa data behandlas dock inte och inkluderas inte i rapporter.
 
-> [!TIP] Adobe erbjuder också sekretessinställningar per rapport. Se [Sekretessinställningar](../../admin/admin/privacy-settings.md) i användarhandboken för Admin.
+>[!TIP] Adobe erbjuder också sekretessinställningar per rapport. Se [Sekretessinställningar](../../admin/admin/privacy-settings.md) i användarhandboken för Admin.
 
 ## URL för avanmälan
 
@@ -73,7 +73,7 @@ Växla automatiskt språk för avanmälningssidan genom att ta med `locale` frå
 
 Till exempel läses avanmälningssidan in på koreanska. `https://example.sc.omtrdc.net/optout.html?locale=ko_KR`
 
-> [!TIP] Frågesträngsvärdet är inte obligatoriskt eftersom sidan läses in på engelska som standard. `en_US`
+>[!TIP] Frågesträngsvärdet är inte obligatoriskt eftersom sidan läses in på engelska som standard. `en_US`
 
 ### Popup
 
@@ -81,7 +81,7 @@ Lägger till knappen Stäng fönster på sidan, vilket gör att avanmälningssid
 
 Du kan till exempel `https://example.sc.omtrdc.net/optout.html?popup=1` läsa in avanmälningssidan med knappen Stäng fönster.
 
-> [!NOTE] Historiskt sett har den här frågesträngsparametern tvingat fram ett popup-fönster. De flesta moderna webbläsare ger dock användaren kontroll över popup-fönster.
+>[!NOTE] Historiskt sett har den här frågesträngsparametern tvingat fram ett popup-fönster. De flesta moderna webbläsare ger dock användaren kontroll över popup-fönster.
 
 ### Avanmälan med ett klick
 
