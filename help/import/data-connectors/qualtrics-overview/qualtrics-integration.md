@@ -5,7 +5,7 @@ title: Använda integreringen
 topic: Data connectors
 uuid: a1d5045b-4c38-4984-8c71-27e86ebe8b23
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 När distributionen är klar kan du börja använda de extrafunktioner som den här integreringen ger.
 
-> [!NOTE] Det kan ta 24-48 timmar att börja se svar från Qualtrics i er Adobe Analytics-rapportering.
+>[!NOTE] Det kan ta 24-48 timmar att börja se svar från Qualtrics i er Adobe Analytics-rapportering.
 
 Nedan följer några åtgärder som du kan vidta för att få ut mer av den här integreringen inifrån Adobe Analytics.
 
