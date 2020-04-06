@@ -4,7 +4,7 @@ title: Robust länkspårning
 topic: Activity map
 uuid: a72b1652-2e69-41c7-8cf2-d39e9c705302
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -20,7 +20,7 @@ Mer information om länkspårning i aktivitetskartan finns [här](/help/analyze/
 
 ## Hur spårning av aktivitetskarta kan samla in PII-data {#section_AEE57510D17B4C21A7D49D32D21D67B9}
 
-> [!CAUTION] Genom att aktivera spårning av aktivitetskarta kan du samla in data om personligt identifierbar information (PII). Dessa data kan användas fristående eller tillsammans med annan information för att identifiera, kontakta eller hitta en person, eller för att identifiera en individ i sitt sammanhang.
+>[!CAUTION] Genom att aktivera spårning av aktivitetskarta kan du samla in data om personligt identifierbar information (PII). Dessa data kan användas fristående eller tillsammans med annan information för att identifiera, kontakta eller hitta en person, eller för att identifiera en individ i sitt sammanhang.
 
 Här är några kända fall där PII-data kan samlas in med hjälp av aktivitetskartspårning:
 
