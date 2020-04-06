@@ -3,7 +3,7 @@ description: Kom igång med Ad hoc-analys.
 title: Komma igång
 uuid: 6a698e18-4e62-405e-b020-b973c9c4008b
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -64,7 +64,7 @@ c_sys_reqs.xml
 
  -->
 
-> [!NOTE] Från och med juli 2018 kommer Ad Hoc Analysis endast att ha stöd för Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja implementeringen av Ad Hoc Analysis.
+>[!NOTE] Från och med juli 2018 kommer Ad Hoc Analysis endast att ha stöd för Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja implementeringen av Ad Hoc Analysis.
 
 * Grafikkort med stöd för OpenGL 2.0
 * Cookies: Obligatoriskt
