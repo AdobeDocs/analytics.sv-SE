@@ -2,14 +2,14 @@
 title: getVisitNum
 description: Spåra besökarens aktuella besöksnummer.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
 # Adobe plug-in: getVisitNum
 
-> [!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Plugin-programmet returnerar besöksnumret för alla besökare som kommer till webbplatsen inom det önskade antalet dagar. `getVisitNum` Analysis Workspace har en &#39;Besök Number&#39;-dimension som ger liknande funktioner. Adobe rekommenderar att du använder denna plugin om du vill ha mer kontroll över hur besöksnumret ökar. Denna plugin behövs inte om den inbyggda dimensionen &#39;Besök nummer&#39; i Analysis Workspace är tillräcklig för dina rapporteringsbehov.
 
