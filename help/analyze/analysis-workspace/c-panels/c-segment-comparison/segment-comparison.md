@@ -3,7 +3,7 @@ title: Översikt över panelen Segmentjämförelse
 description: Lär dig hur du använder segmentjämförelsepanelen som en del av segmentanalysen i Analysis Workspace.
 keywords: Analysis Workspace;Segment IQ
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -74,7 +74,7 @@ Visar de mest statistiskt signifikanta mätvärdena mellan de två segmenten. Va
 
 Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill ha mer detaljerad analys av ett visst mått för du muspekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera det specifika måttet. Om ett mätvärde inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort det.
 
-> [!NOTE] Mätvärden som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
+>[!NOTE] Mätvärden som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
 
 ![Toppvärden](assets/top-metrics.png)
 
@@ -90,7 +90,7 @@ Visar de mest statistiskt signifikanta dimensionsvärdena för alla dimensioner.
 
 Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill ha mer detaljerad analys av ett visst dimensionsvärde för du muspekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera det specifika dimensionsvärdet. Om ett dimensionsvärde inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort det.
 
-> [!NOTE] Dimensionsvärden som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
+>[!NOTE] Dimensionsvärden som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
 
 ![Övre dimensioner](assets/top-dimension-item1.png)
 
@@ -106,7 +106,7 @@ Visar vilka andra segment (utöver de två segment som valts för jämförelse) 
 
 Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill ha mer detaljerad analys för ett visst segment håller du pekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera det specifika segmentet. Om ett segment inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort det.
 
-> [!NOTE] Segment som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
+>[!NOTE] Segment som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
 
 ![De vanligaste segmenten](assets/top-segments.png)
 
