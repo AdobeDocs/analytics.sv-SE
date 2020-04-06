@@ -4,7 +4,7 @@ title: Exkludera efter IP-adress
 topic: Admin tools
 uuid: 1ed6105f-e7c5-4c4f-b8f4-e5f66d0824bb
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,7 +15,7 @@ Du kan undanta data från specifika IP-adresser, som interna webbplatsaktivitete
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Exclude by IP]**
 
-> [!NOTE] Träffar som exkluderats av IP-adressen faktureras som [serversamtal](https://marketing.adobe.com/resources/help/en_US/reference/primary_server_calls.html).
+>[!NOTE] Träffar som exkluderats av IP-adressen faktureras som [serversamtal](https://marketing.adobe.com/resources/help/en_US/reference/primary_server_calls.html).
 
 ## Uteslut av cookie {#section_FB5A20AB5E514DA6BC596CC67F6A3A4C}
 
@@ -25,9 +25,9 @@ Med den här funktionen kan du och dina kollegor besöka webbplatsen utan att be
 
 | Element | Beskrivning |
 |--- |--- |
-| [!UICONTROL Add CNAME] | Skapar en länk för avanmälan som du kan använda för att utesluta din domän. Kontakta företagets användare om du behöver hjälp. <br>Din trafik kan uteslutas från rapporteringen i dina rapportsviter genom att besöka företagets avanmälningssida och välja att utesluta webbläsaren från mätningen. <br>Om implementeringen använder cookies från tredje part finns din avanmälningssida [här](https://democorp.112.2o7.net/optout.html?locale=en_US&popup=true). |
+| [!UICONTROL Add CNAME] | Skapar en länk för avanmälan som du kan använda för att utesluta din domän. Kontakta företagets användare om du behöver hjälp. <br>Din trafik kan uteslutas från rapporteringen i dina rapportsviter genom att besöka företagets avanmälningssida och välja att utesluta webbläsaren från mätningen. <br>Om implementeringen använder cookies från tredje part finns din avanmälningssida [här](https://democorp.112.2o7.net/optout.html?locale=en_US&amp;popup=true). |
 
-> [!NOTE] Uteslutning per dator fungerar endast om:
+>[!NOTE] Uteslutning per dator fungerar endast om:
 >
 > * Du kommer åt din webbplats från samma arbetsstation.
 > * Dina cookies är aktiverade i den webbläsare du använder.
