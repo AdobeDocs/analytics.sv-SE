@@ -4,7 +4,7 @@ title: Hantera begäranden - definitioner
 topic: Report builder
 uuid: 01b21d0e-c870-4df8-95b9-f4aef1f4d16b
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -19,7 +19,7 @@ Här [!UICONTROL Request Manager] finns en detaljerad översikt över statusen f
 
 Fältet [!UICONTROL Request Manager] visas när du klickar **[!UICONTROL Manage]** ( ![](assets/edit_request.gif) i verktygsfältet Report Builder.
 
-> [!NOTE] Adobe Report Builder verkställer frågeberoenden endast inom samma kalkylblad, inte mellan kalkylblad. Genom att begränsa till beroenden i ett enda kalkylblad säkerställs att körningen går så snabbt som möjligt.
+>[!NOTE] Adobe Report Builder verkställer frågeberoenden endast inom samma kalkylblad, inte mellan kalkylblad. Genom att begränsa till beroenden i ett enda kalkylblad säkerställs att körningen går så snabbt som möjligt.
 
 ## Definitioner {#section_FD29D8614DE74F32A0027FA130F40304}
 
