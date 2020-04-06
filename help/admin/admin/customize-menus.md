@@ -4,7 +4,7 @@ title: Menyanpassning
 topic: Admin tools
 uuid: 31e335e7-c91a-4669-a9b7-00f9e385375a
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,7 +15,7 @@ Med den här funktionen kan du anpassa rapportmenyerna som en användare ser i R
 
 Menyändringarna gäller alla användare som har åtkomst till rapportsviten. Användare kan dock återställa en menys standardkonfiguration när de använder rapportsviten.
 
-> [!NOTE] Ändringar i menystrukturen påverkar inte Report Builder och Ad Hoc Analysis. Att byta namn på en rapport kommer dock att återspeglas i båda verktygen.
+>[!NOTE] Ändringar i menystrukturen påverkar inte Report Builder och Ad Hoc Analysis. Att byta namn på en rapport kommer dock att återspeglas i båda verktygen.
 
 ## Beskrivningar av menyanpassning {#section_B0D224DACB914A378902A4E0E1234889}
 
