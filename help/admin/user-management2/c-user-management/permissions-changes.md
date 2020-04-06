@@ -6,7 +6,7 @@ title: Behörighetsändringar för användare och grupper
 topic: Admin tools
 uuid: 94f2727b-17e4-4003-a222-35c821d6959e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,13 +15,13 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
 
 ## Vad har ändrats? {#section_2C205DE94155441B9E9D3E4C46CCF2EE}
 
 **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]**
 
-> [!NOTE] På grund av det stora antalet möjliga behörighetskombinationer kan vi inte tillhandahålla dokumentation som beskriver alla API-metoder som kan användas i varje behörighetskombination. I allmänhet har icke-administratörer som beviljas åtkomst till webbtjänster bara läsbehörighet till API-metoder. De har inte skrivåtkomst till metoder.
+>[!NOTE] På grund av det stora antalet möjliga behörighetskombinationer kan vi inte tillhandahålla dokumentation som beskriver alla API-metoder som kan användas i varje behörighetskombination. I allmänhet har icke-administratörer som beviljas åtkomst till webbtjänster bara läsbehörighet till API-metoder. De har inte skrivåtkomst till metoder.
 
 Eftersom API:t och gränssnittet använder samma behörighetssystem, kommer alla behörigheter som en viss icke-administratör har beviljats av en administratör i gränssnittet (Adobe Admin Console) att vara samma behörigheter som användaren har i API:t.
 
@@ -123,7 +123,7 @@ Här finns viktig ny information om nya och planerade uppdateringar och hur de p
 
 I följande tabell visas uppgifter och var de kan utföras (beroende på ett företags status).
 
-> [!NOTE] A *`migrated user`* och *`Experience Cloud user`* hänvisa till användare som har accepterat en e-postinbjudan om att gå med i Experience Cloud. Om e-postinbjudan inte accepteras är användarna fortfarande Analytics-användare och kan inte hanteras i Admin Console. (Undantaget är om migreringen använder [Enterprise ID eller Federated ID](https://helpx.adobe.com/enterprise/using/set-up-identity.html). I det här fallet migreras användaren när administratören migrerar användare per användare.)
+>[!NOTE] A *`migrated user`* och *`Experience Cloud user`* hänvisa till användare som har accepterat en e-postinbjudan om att gå med i Experience Cloud. Om e-postinbjudan inte accepteras är användarna fortfarande Analytics-användare och kan inte hanteras i Admin Console. (Undantaget är om migreringen använder [Enterprise ID eller Federated ID](https://helpx.adobe.com/enterprise/using/set-up-identity.html). I det här fallet migreras användaren när administratören migrerar användare per användare.)
 
 <table id="table_B68FD00FC5D24823A86BB69558C0327C"> 
  <thead> 
