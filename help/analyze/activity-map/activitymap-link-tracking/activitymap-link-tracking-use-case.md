@@ -4,7 +4,7 @@ title: Differentiera länkar som refererar till samma länk-ID och region
 topic: Activity map
 uuid: f2da0cda-a33b-4a12-8d99-1f58386d6d30
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -87,7 +87,7 @@ Genom att skapa ett unikt objekt-ID för en länk eller länkplats på en sida k
 
 Du kan anpassa regionen genom att se till att varje köplänk har en egen region definierad. Om du vill göra det lägger du till en id-parameter i någon av de överordnade taggarna för varje Buy-ankartagg.
 
-> [!NOTE] Du är inte strikt begränsad till parametern&quot;id&quot; som en regionidentifierare. Du kan också ange en egen identifierare med JavaScript-variabeln&quot;s.ActivityMap.regionIDAttribute&quot;.
+>[!NOTE] Du är inte strikt begränsad till parametern&quot;id&quot; som en regionidentifierare. Du kan också ange en egen identifierare med JavaScript-variabeln&quot;s.ActivityMap.regionIDAttribute&quot;.
 
 <table id="table_250DB52A869C466B942517BABA1C287B"> 
  <thead> 
