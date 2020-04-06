@@ -3,7 +3,7 @@ description: Beskriver distributionsprocessen i tre steg.
 title: Distribuera integreringen
 uuid: a3c0ef21-ed9a-44d7-bdce-19b3bd5b8b80
 translation-type: tm+mt
-source-git-commit: a3aa8feb937e2a1f40c498aa4e143de21cf26b86
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -72,7 +72,7 @@ Steg för att verifiera att Lyris-/Adobe Analytics-integreringen lyckades.
 
 När alla distributionssteg har slutförts kan du validera att integreringen har överfört data.
 
-> [!NOTE] Det tar några dagar innan datautbytet börjar. Se till att du kontaktar Lyris när du har aktiverat integreringen.
+>[!NOTE] Det tar några dagar innan datautbytet börjar. Se till att du kontaktar Lyris när du har aktiverat integreringen.
 
 1. Navigera till Lyris-integrationen i Data Connectors. Under **[!UICONTROL Support]** fliken > **[!UICONTROL Integration Activity Log]** ska du se händelser som **[!UICONTROL Metric data imported successfully]** och/eller **[!UICONTROL Classification data imported successfully]**:
 
@@ -86,7 +86,7 @@ När alla distributionssteg har slutförts kan du validera att integreringen har
 
 Visar den plugin-kod för Lyris som ska användas med Adobe Analytics.
 
-> [!NOTE] Se till att du reserverade de eVars som behövs i Adobe Analytics Admin Tool innan du börjar arbeta med koden nedan. När du vet vilka eVar du har reserverat ersätter du eVarN med den relevanta eVar. t.ex. eVar10.
+>[!NOTE] Se till att du reserverade de eVars som behövs i Adobe Analytics Admin Tool innan du börjar arbeta med koden nedan. När du vet vilka eVar du har reserverat ersätter du eVarN med den relevanta eVar. t.ex. eVar10.
 
 ```
 /* 
