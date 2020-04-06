@@ -2,7 +2,7 @@
 title: s_objectID
 description: Hjälpaktivitetskartan identifierar unika länkar på din webbplats.
 translation-type: tm+mt
-source-git-commit: c7d596be4f70c820039725be6a5fddc8572156d9
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -27,7 +27,7 @@ Den här variabeln ställs vanligtvis in i händelse `onClick` av en HTML-länk.
 <a href="https://example.com" onClick="s_objectID='Example identifier';">Example link</a>
 ```
 
-> [!NOTE] Inkludera alltid det semikolon som avslutar en JavaScript-programsats. Semikolon krävs för att aktivitetskartan ska fungera.
+>[!NOTE] Inkludera alltid det semikolon som avslutar en JavaScript-programsats. Semikolon krävs för att aktivitetskartan ska fungera.
 
 ## Användningsexempel
 
