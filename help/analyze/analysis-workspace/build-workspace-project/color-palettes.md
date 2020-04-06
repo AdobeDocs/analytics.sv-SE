@@ -3,7 +3,7 @@ description: 'null'
 title: Färgpaletter
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men påverkar **inte** Sammanfattningsändring, villkorsstyrd formatering i friformstabeller och Kartvyalisering.
 
-> [!NOTE] Stöd för färgpaletter har inte aktiverats för Internet Explorer 11.
+>[!NOTE] Stöd för färgpaletter har inte aktiverats för Internet Explorer 11.
 
 ![](assets/color_palettes.png)
 
