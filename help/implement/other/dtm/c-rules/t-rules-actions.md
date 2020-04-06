@@ -5,7 +5,7 @@ solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
 title: Ställ in åtgärder för villkoret som ska utlösas
 uuid: 2e892f0b-7261-41ee-b849-6e3054a38de0
 translation-type: tm+mt
-source-git-commit: ebf149df7974f9f2889b6fe938088eda90c84051
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -20,7 +20,7 @@ Förutom integrerade verktyg som [!DNL Adobe Analytics] och Google Analytics kan
 
 Varje regel kan utlösa så många skript eller HTML-injektioner du vill.
 
-> [!NOTE] Eftersom du kan använda DTM för att mata in egen kod på sidan bör du se till att inte skapa XSS-sårbarheter (XSS) (mer information finns i [OWASP:s guide](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) ). Att använda dataelement i ett skript kräver särskild uppmärksamhet. Anta alltid att dataelementvärden kan komma från en otillförlitlig källa.
+>[!NOTE] Eftersom du kan använda DTM för att mata in egen kod på sidan bör du se till att inte skapa XSS-sårbarheter (XSS) (mer information finns i [OWASP:s guide](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) ). Att använda dataelement i ett skript kräver särskild uppmärksamhet. Anta alltid att dataelementvärden kan komma från en otillförlitlig källa.
 
 **Så här ställer du in åtgärder för villkoret som ska utlösas**
 
