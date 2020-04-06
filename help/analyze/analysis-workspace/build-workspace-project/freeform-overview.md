@@ -5,7 +5,7 @@ title: Skapa projekt - översikt
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -66,7 +66,7 @@ Den översta projektmenyn ser ut så här:
 
 Undermenyerna innehåller följande alternativ.
 
-> [!NOTE] Alternativ markerade med en asterisk (*) visas bara med **sparade** projekt.
+>[!NOTE] Alternativ markerade med en asterisk (*) visas bara med **sparade** projekt.
 
 | Projekt | Redigera | Infoga | Komponenter | Dela | Hjälp |
 |---|---|---|---|---|---|
