@@ -4,7 +4,7 @@ title: Report Suite Manager
 topic: Admin tools
 uuid: 018c4f63-4d87-4a2e-8c71-1ba7f5dd9446
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,7 +15,7 @@ En rapportsvit definierar den fullständiga, oberoende rapporteringen på en val
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**
 
-> [!NOTE] Virtuella rapportsviter hanteras via **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual Report Suites]**. Se dokumentationen för [Virtual Report Suite](/help/components/vrs/vrs-about.md).
+>[!NOTE] Virtuella rapportsviter hanteras via **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual Report Suites]**. Se dokumentationen för [Virtual Report Suite](/help/components/vrs/vrs-about.md).
 
 ## Beskrivning av Report Suite Manager {#section_0C94DC9EACDA4F5891F5CD63EE80B125}
 
