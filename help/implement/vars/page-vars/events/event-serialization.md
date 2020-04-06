@@ -2,7 +2,7 @@
 title: Händelseserialisering
 description: Hjälper dig att deduplicera mätvärden på din webbplats.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
 
 Händelseserialisering är processen att implementera åtgärder för att förhindra att dubbletthändelser anges i analysrapporter. Det är viktigt att deduplicera händelser i fall där du inte vill att besökarna ska uppdatera sidan ska få statistik som ökar.
 
-> [!NOTE] Datakällor stöder inte händelseserialisering eller borttagning av dubbletter.
+>[!NOTE] Datakällor stöder inte händelseserialisering eller borttagning av dubbletter.
 
 ## Konfigurera händelseserialisering
 
@@ -23,7 +23,7 @@ När du använder händelse-ID:n utförs borttagning av dubbletter på följande
 * Deduplicering sker globalt för alla besökare. Om besökare A skickar `event1:ABC` så ignorerar Adobe den andra förekomsten från besökare B `event1:ABC`också.
 * Borttagning av dubbletter upphör inte att gälla. Om en besökare skickar tillbaka `event1:ABC` sedan två år tillbaka och skickar `event1:ABC` igen, ignorerar Adobe den andra förekomsten.
 
-> [!TIP] Om du vill avduplicera [`purchase`](event-purchase.md) händelsen använder du [`purchaseID`](../purchaseid.md) variabeln i stället.
+>[!TIP] Om du vill avduplicera [`purchase`](event-purchase.md) händelsen använder du [`purchaseID`](../purchaseid.md) variabeln i stället.
 
 ## Använd händelse-ID:n i Adobe Experience Platform Launch
 
