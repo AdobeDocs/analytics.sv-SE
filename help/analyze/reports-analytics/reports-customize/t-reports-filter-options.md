@@ -4,7 +4,7 @@ title: Filtrera rapportdata
 topic: Reports and analytics
 uuid: b6dcaaf7-61f0-4793-870d-e1d156575d5a
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -45,7 +45,7 @@ Med avancerade filter kan du styra omfattningen av sökningen med hjälp av en s
 
 Matchar om termen hittas någonstans i radobjektet. Detta fungerar på samma sätt som det enkla filtret.
 
-> [!NOTE] Blanksteg kan inte användas i filter eftersom blanksteg är avgränsare i sökningar
+>[!NOTE] Blanksteg kan inte användas i filter eftersom blanksteg är avgränsare i sökningar
 
 **Innehåller inte**
 
