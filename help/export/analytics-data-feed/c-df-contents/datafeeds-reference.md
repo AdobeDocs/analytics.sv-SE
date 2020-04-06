@@ -6,7 +6,7 @@ title: Referens för datakolumn
 topic: Reports and analytics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 translation-type: tm+mt
-source-git-commit: e9158f4c1ea2fc338116df34d6c6edf93ff7050e
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -15,11 +15,11 @@ source-git-commit: e9158f4c1ea2fc338116df34d6c6edf93ff7050e
 
 Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De flesta implementeringar använder inte alla kolumner, så den här sidan kan refereras när du avgör vilka kolumner som ska inkluderas i en datafeedexport.
 
-> [!IMPORTANT] För en given kolumn (till exempel en kolumn som är definierad som 255 tecken) kan ytterligare tecken skickas i en datafeed på grund av att tecken som undgår värden läggs till i en sträng. Tänk på dessa potentiella extra tecken om implementeringen regelbundet skickar värden som överskrider teckengränserna.
+>[!IMPORTANT] För en given kolumn (till exempel en kolumn som är definierad som 255 tecken) kan ytterligare tecken skickas i en datafeed på grund av att tecken som undgår värden läggs till i en sträng. Tänk på dessa potentiella extra tecken om implementeringen regelbundet skickar värden som överskrider teckengränserna.
 
 ## Kolumner, beskrivningar och datatyper
 
-> [!NOTE] De flesta kolumner innehåller en liknande kolumn med prefixet `post_`. Bokför kolumner innehåller värden efter serversidans logik, bearbetningsregler och VISTA-regler. I de flesta fall bör du använda inläggskolumner. Mer information finns i Vanliga frågor om [dataflöden](../df-faq.md) .
+>[!NOTE] De flesta kolumner innehåller en liknande kolumn med prefixet `post_`. Bokför kolumner innehåller värden efter serversidans logik, bearbetningsregler och VISTA-regler. I de flesta fall bör du använda inläggskolumner. Mer information finns i Vanliga frågor om [dataflöden](../df-faq.md) .
 
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |
