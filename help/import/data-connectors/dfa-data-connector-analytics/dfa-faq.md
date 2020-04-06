@@ -5,7 +5,7 @@ title: Vanliga frågor
 topic: Data connectors
 uuid: 59d187e9-1ec1-4cf3-8831-b981f87c9372
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
@@ -24,7 +24,7 @@ Om det har gått mer än tre dagar och du inte har fått installationsprogrammet
 
 Anta till exempel att det finns en integrering i Report Suite A med Advertiser ID Z som tilldelas ett CSID. Om en annan integrering senare konfigureras i Report Suite B med Advertiser Z, kommer den här nyare integreringen INTE att tilldelas CSID på nytt. Det här skulle kräva en Google-biljett. Ta däremot ett exempel på en integrering i Report Suite A, med Advertiser ID Z, och senare en annan integrering i Report Suite A, så är Advertiser Z inställd. Endast den första integreringen kommer att ta emot data för integreringen. I det här fallet kan dock den första integreringen inaktiveras och data flödar till den andra integreringen.
 
-> [!NOTE] CSID används inte i version 2.0 av integreringen och därför gäller inte CSID-förhandlingen.
+>[!NOTE] CSID används inte i version 2.0 av integreringen och därför gäller inte CSID-förhandlingen.
 
 ## Jag använder version 2.0 av integrerings- och kostnadsstatistiken visas inte för mina DFA-annonser. Varför skulle det här vara? {#section-805748111bbe4bbf918d6dbbb2641fff}
 
