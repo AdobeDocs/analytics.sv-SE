@@ -3,7 +3,7 @@ description: 'null'
 title: Konfigurera en utfallsvisualisering
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 2cd9872ed5052b9569d03a07d5171221b9e0af29
 
 ---
 
@@ -71,6 +71,6 @@ När du **högerklickar på en kontaktyta** visas följande alternativ:
 | Trendkontaktyta | Se trenddata för en kontaktyta i ett linjediagram med vissa fördefinierade avvikelseidentifieringsdata. |
 | Trend Touchpoint (%) | Trends the total fallout percentage. |
 | Trend all touchpoints (%) | Trends all the touchpoint percentage in the fallout (except &quot;All Visits&quot;, if it is included), on the same chart. |
-| Brytningsfall vid den här kontaktytan | Se vad besökarna gjorde mellan två kontaktytor om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
-| Brytningsbortfall vid den här kontaktytan | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. |
+| Bryt ner fallthrough vid den här kontaktytan | Se vad besökarna gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
+| Bryt ned bortfallet vid den här kontaktytan | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. |
 | Skapa segment från kontaktyta | Skapa ett nytt segment från den markerade kontaktytan. |
