@@ -1,10 +1,10 @@
 ---
 product: analytics
 audience: all
-user-guide-title: Analytics Implementation Guide
+user-guide-title: Implementeringshandbok för analyser
 user-guide-url: /content/help/en/analytics/implementation/home.html
 translation-type: tm+mt
-source-git-commit: d74a728b6d59e745204bb6c4b7de038491a1891a
+source-git-commit: 3684fdfe0910f0b1b31f741dbf6e3937d169f430
 
 ---
 
@@ -118,7 +118,7 @@ source-git-commit: d74a728b6d59e745204bb6c4b7de038491a1891a
       + [manageVars](vars/plugins/managevars.md)
       + [Numbers Suite](vars/plugins/numberssuite.md)
       + [p_fo](vars/plugins/p-fo.md)
-      + [pt](vars/plugins/pt.md)
+      + [pt](vars/plugins/pt-plugin.md)
       + [removeFromList](vars/plugins/removefromlist.md)
    + [Integrera modul](vars/integrate.md)
 + Förbered er på att implementera Adobe Analytics {#prepare}
