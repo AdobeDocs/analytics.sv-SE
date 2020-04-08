@@ -5,7 +5,7 @@ title: Nyheter på Analysis Workspace
 topic: Reports and analytics
 uuid: ff50ef9f-e5b8-442e-bfa6-2f224ba9f111
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 7180c2bf154d91db957a9e74efae61c2fc1ffa6d
 
 ---
 
@@ -307,8 +307,8 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  > Visualiseringsinställning för"100 % staplad" </a> </p> </td> 
-   <td colname="col2"> <p>En ny visualiseringsinställning för liggande/liggande ytor/staplade/horisontella staplade visualiseringar gör att diagrammet blir en"100 % staplade" visualisering så att du kan mäta relativa proportioner. </p> <p><img placement="break"  src="assets/stacked_100_percent.png" width="500px" id="image_ED9C94CE5EAF4500B1EF71BE8701B6D2" /> </p> </td> 
-  </tr> 
+   <td colname="col2"> <p>En ny visualiseringsinställning för liggande/liggande ytor/staplade/horisontella staplade visualiseringar gör att diagrammet blir en"100 % staplade" visualisering så att du kan mäta relativa proportioner. </p> <p><img placement="break"  src="visualizations/assets/stacked_100_percent.png" width="500px" id="image_ED9C94CE5EAF4500B1EF71BE8701B6D2" /> </p> </td> 
+  </tr>
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/virtual-analyst/overview.md"  > Analys av avvikelseidentifiering och bidrag är </a> nu endast tillgängligt via Analysis Workspace </p> </td> 
    <td colname="col2"> <p>Analysidentifiering och bidragsanalys har tagits bort från funktionerna Rapporter och analyser och är nu bara tillgängliga via Analysis Workspace. </p> <p>Observera att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till"daglig granularitetsidentifiering" i Workspace. </p> </td> 
