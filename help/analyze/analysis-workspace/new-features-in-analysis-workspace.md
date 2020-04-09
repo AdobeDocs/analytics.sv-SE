@@ -5,12 +5,20 @@ title: Nyheter på Analysis Workspace
 topic: Reports and analytics
 uuid: ff50ef9f-e5b8-442e-bfa6-2f224ba9f111
 translation-type: tm+mt
-source-git-commit: 7180c2bf154d91db957a9e74efae61c2fc1ffa6d
+source-git-commit: 69a0e706e2788bf92ba70ea0fd53267c3e2cb80d
 
 ---
 
 
 # Nyheter på Analysis Workspace
+
+## April 2020
+
+Ny funktion släppt 16 april 2020.
+
+| Funktion | Beskrivning |
+|--- |--- |
+| Bygg automatiskt [!UICONTROL Freeform Tables] från ett tomt läge | Tidigare gick det inte att släppa komponenter direkt i ett tomt projekt eller en tom panel. du var tvungen att lägga till en frihandstabell först. Nu kan du släppa komponenter direkt i ett tomt projekt eller en tom panel, så skapas en frihandstabell automatiskt i det format som rekommenderas. Dessutom har det gjorts förbättringar av hur blandade komponenttyper (t.ex. mått och mått) hanteras när de tas bort i en tom [!UICONTROL Freeform Table] kombination. |
 
 ## Mars 2020
 
