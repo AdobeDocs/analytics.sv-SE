@@ -4,7 +4,7 @@ title: Översikt över Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 5161ccaf333908525c261b73419899918554b91c
 
 ---
 
@@ -15,9 +15,9 @@ Analysis Workspace tar bort alla vanliga begränsningar i en enskild Analytics-r
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
-## Videoöversikt {#section_B99BF8A326D94ECB91BD69C9888AD10C}
+## Videoöversikt
 
->[!VIDEO](https://www.youtube.com/watch?v=IHOy-QsvVcA)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12)
 
 Fullständig YouTube-spellista finns [här](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS).
 
@@ -25,7 +25,7 @@ Fullständig YouTube-spellista finns [här](https://www.youtube.com/playlist?lis
 >
 >Uppdateringar av funktioner finns i [Nyheter på arbetsytan](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) för analyser.
 
-## Full kontroll över projektelement och -komponenter {#section_B7E3EDA3EDEE407D833F4FDB69646EEC}
+## Full kontroll över projektelement och -komponenter
 
 Analysis Workspace ger frihet och flexibilitet:
 
@@ -37,7 +37,7 @@ Analysis Workspace ger frihet och flexibilitet:
 
 Mer information finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) .
 
-## Flera visualiseringar i ett projekt {#section_B7670740C2D44130B21DAF0873280DA5}
+## Flera visualiseringar i ett projekt
 
 Dra-och-släpp så många visualiseringar du vill i ett projekt.
 
@@ -49,7 +49,7 @@ Skapa ett projekt som visar procentandelen förändring, med flera visualisering
 
 Mer information finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) .
 
-## Intralänkning till paneler och visualiseringar {#section_253EA04E067F4A29A8B54CE2B7631086}
+## Intralänkning till paneler och visualiseringar
 
 I kombination med de [avancerade textredigeringsfunktionerna](/help/analyze/analysis-workspace/visualizations/text.md) i Analysis Workspace kan du länka till specifika paneler och visualiseringar i ett projekt från en textruta, till exempel för att skapa ett projekts innehållsförteckning. Du kan dela dessa länkar på samma sätt som du delar en projektlänk för att dirigera någon till en viss visualisering eller panel i ett projekt. Nya högerklicksalternativ med namnen Hämta panellänk och Hämta visualiseringslänk har lagts till. Så här lägger du till länkar till ditt projekt:
 
@@ -69,17 +69,17 @@ Om du har paneler eller visualiseringar komprimerade i ditt projekt utökas pane
 
 >[!NOTE] Du kan också använda den här funktionen i alternativet för **[!UICONTROL Edit Description]** högerklick.
 
-## Länka till andra projekt {#section_AE886C367C3E4F189B65B1BD9BCDBD8C}
+## Länka till andra projekt
 
 Du kan länka användare till andra projekt som kan vara intressanta för dem genom att till exempel gå till **[!UICONTROL Share]** > **[!UICONTROL Get Project Link]** och bädda in länken i projektbeskrivningar.
 
-## Dynamisk visualisering av markerade celler {#section_182CEC285E4547EBA4608D5F70C9D5D7}
+## Dynamisk visualisering av markerade celler
 
 Markera enskilda celler och se hur visualiseringarna ändras dynamiskt. [Synkronisera och lås](/help/analyze/analysis-workspace/analysis-workspace-features.md#section_9D66A001586F49CEB0C565581E44957C) en visualisering med markerade celler.
 
 ![](assets/visualize-selected-cells.png)
 
-## Lås markerade objekt eller positioner {#section_9D66A001586F49CEB0C565581E44957C}
+## Lås markerade objekt eller positioner
 
 Genom att låsa visualiseringar kan du styra vilka datakällor i frihandsdatatabellen som motsvarar visualiseringar.
 
@@ -87,7 +87,7 @@ Genom att låsa visualiseringar kan du styra vilka datakällor i frihandsdatatab
 
 Se [Hantera datakällor](/help/analyze/analysis-workspace/visualizations/t-sync-visualization.md).
 
-## Trendvisualiseringar från markerade celler {#section_34930C967C104C2B9092BA8DCF2BF81A}
+## Trendvisualiseringar från markerade celler
 
 Skapa en visualisering av markerade celler. (Högerklicka > **[!UICONTROL Trend Selection]**.)
 
@@ -97,7 +97,7 @@ Trendmarkeringar är nu **länkade** till tabellen nedan, så om du väljer en a
 
 ![](assets/trend-selection2.png)
 
-## Dimensioner och uppdelningar av dimensionsobjekt {#section_1380C1F9E51E4BFB8C5D35E7A53BC70D}
+## Dimensioner och uppdelningar av dimensionsobjekt
 
 Som återförsäljare kan ni fördjupa er i era kampanjer och förstå hur ni kan engagera era kunder bättre. Anpassa era data på ett obegränsat sätt efter era specifika behov. skapa frågor med hjälp av relevanta mått, dimensioner, segment, tidslinjer och andra analysvärden.
 
@@ -105,7 +105,7 @@ Som återförsäljare kan ni fördjupa er i era kampanjer och förstå hur ni ka
 
 Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md).
 
-## Segment från tabellmarkeringar {#section_73BC3688089B426D969B3D5B606DA970}
+## Segment från tabellmarkeringar
 
 Markera cellerna i frihandstabellen och skapa ett segment från markeringen.
 
@@ -119,7 +119,7 @@ Släpp ett segment på projektnivå på frihandspanelen så tillämpas segmentet
 
 Se [Segment](/help/analyze/analysis-workspace/components/t-freeform-project-segment.md).
 
-## Projekt- och komponenttaggning {#section_F54D688132A541F2982326D5E022B90D}
+## Projekt- och komponenttaggning
 
 Du kan använda taggar för projekt och komponenter i Analysis Workspace:
 
@@ -128,7 +128,7 @@ Du kan använda taggar för projekt och komponenter i Analysis Workspace:
 * Högerklicka på komponenter för att tagga (eller skapa taggar) från panelen Komponenter.
 * Använd # i sökfältet för att söka efter taggar.
 
-## Komponentåtgärder {#section_CBF4D0A5F63E4B0883077B8D852B800B}
+## Komponentåtgärder
 
 Utför åtgärder på komponentnivå från Åtgärder-menyn längst upp i den vänstra listen för komponenten. Markera en komponent och klicka på **[!UICONTROL Actions]** för att visa åtgärderna.
 
@@ -142,7 +142,7 @@ Utför åtgärder på komponentnivå från Åtgärder-menyn längst upp i den v�
 
 Mer information finns i [Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) .
 
-## Ytterligare funktionsbeskrivningar {#section_5F06AE43C0194CFDBCA7EE0EA3C30B05}
+## Ytterligare funktionsbeskrivningar
 
 **Vad du kan dra och stapla**
 
@@ -187,4 +187,4 @@ Ett standardsegment som är unikt för Analysis Workspace. *`All Visits`* visar 
 
 Använd beräkningar på samma sätt som du använder standardvärden.
 
-Se [Beräknade mått](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/).
+Se [Beräknade mått](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html).
