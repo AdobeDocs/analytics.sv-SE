@@ -2,7 +2,7 @@
 title: Användarhandbok för Labs
 description: Förhandsgranska prototypprojekt för Adobe Analytics
 translation-type: tm+mt
-source-git-commit: bff1f6c76484cc7c488ceeaa9076f549d6593514
+source-git-commit: 52904d401455909a0786e66cd5439d547a53f062
 
 ---
 
@@ -58,7 +58,7 @@ Så här startar och utvärderar du en prototyp:
 
 1. Om du vill prova en annan prototyp, eller avsluta prototypmiljön, klickar du på knappen **Lämna prototyp** i det övre högra hörnet av skärmen och slutför den korta undersökningen för prototypen. Alla ändringar som görs i ett prototypprojekt går förlorade när prototypmiljön avslutas.
 
-   ![ny feedbackruta](https://git.corp.adobe.com/storage/user/26539/files/d067e300-a95e-11e9-9208-74339dafe75e)
+   ![ny feedbackruta](assets/short-survey.png)
 
 1. Klicka på **Skicka** för att återgå till huvudförhandsgranskningsporten.
 
