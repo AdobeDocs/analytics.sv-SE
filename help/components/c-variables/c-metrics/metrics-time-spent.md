@@ -3,7 +3,7 @@ description: Adobe Analytics erbjuder olika tidsmått och mått. Ta reda på vad
 title: Tillagd tid
 topic: Metrics
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8df1fdfb048dd69b4926b7b812ec5dfea4a97b89
 
 ---
 
@@ -83,6 +83,17 @@ S: Skillnaden är nämnaren i måttet:
 * [!UICONTROL Average time spent on site] använder de sekvenser som innehåller en dimensionsartikel.
 
 * [!UICONTROL Time spent per visit] använder besöksantalet
+
+Därför kan dessa mätvärden ge liknande resultat på besöksnivå, men de kommer att vara annorlunda på träffnivå.
+
+**Fråga 5: Varför överensstämmer inte totalsummor för den överordnade raden[!UICONTROL Average Time Spent on Site]?**
+
+S: Eftersom [!UICONTROL Average Time Spent on Site] är beroende av obrutna sekvenser av en dimension, och den inre rapporten är inte beroende av den yttre rapporten när de här körningarna beräknas.
+
+Ta till exempel följande besök.
+|hit#|1|2|3||—|—|—|—||**Sekunder**|30|100|10||**Sidnamn**|Hem|Produkt|Hem||**date**|Jan 1|Jan 1|Jan 1|
+
+Vid beräkning av tidsrymden för hemsidan är det (30+10)/2=20, men om du delar upp den per dag får du (30+10)/1=40 eftersom dagen har en enstaka obruten serie den 1 januari.
 
 Därför kan dessa mätvärden ge liknande resultat på besöksnivå, men de kommer att vara annorlunda på träffnivå.
 
