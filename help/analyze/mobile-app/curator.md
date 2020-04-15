@@ -1,44 +1,44 @@
 ---
-description: Instruktioner för hur du ställer in styrkort för mobilappar.
-title: Adobe Analytics Mobile App Curator Guide
+description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
+title: Markörguide för kontrollpaneler i Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 6baf94c359c4fa54c326b2c68378cd08161f7da9
+source-git-commit: 84c2d3534828b4c8d84d18de9168a46317a8b372
 
 ---
 
 
 
-# BETA: Curator&#39;s Guide for Analytics Mobile App
+# BETA: Kuratorguide för Adobe Analytics-instrumentpaneler
 
 
 ## Introduktion
 
-Mobilappen Adobe Analytics ger dig alltid insikter från Adobe Analytics.   Appen ger användarna mobil åtkomst till intuitiva styrkort som ni skapar och delar med Adobe Analytics persondatorgränssnitt. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Du kan anpassa styrkort efter de data som är viktigast för dig. Mobilappen stöds på både iOS- och Android-operativsystem.
+Adobe Analytics-instrumentpaneler ger dig alltid insikter från Adobe Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort som ni skapar och delar med Adobe Analytics persondatorgränssnitt. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Du kan anpassa styrkort efter de data som är viktigast för dig. Kontrollpaneler för analyser stöds på både iOS- och Android-operativsystem.
 
 ## Om den här guiden
 
-Den här guiden är avsedd att hjälpa chefer för Adobe Analytics-data att konfigurera styrkort för sina chefsanvändare i Analytics-mobilappen. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att skapa styrkort för appar, som gör det möjligt för chefsanvändare att snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter. Även om chefsanvändare är slutanvändare för Analytics-mobilappen kommer den här handboken att hjälpa datarecentralerna att konfigurera appen effektivt för dessa användare.
+Den här guiden är avsedd att hjälpa chefer för Adobe Analytics-data att konfigurera styrkort för sina chefsanvändare på kontrollpanelerna för Analytics. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att skapa styrkort för appar, som gör det möjligt för chefsanvändare att snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter. Även om chefsanvändare är slutanvändare för kontrollpaneler i Analytics kommer den här guiden att hjälpa datavärdare att konfigurera appen effektivt för dessa användare.
 
 
 ## Ordlista
 
-I följande tabell beskrivs villkoren för att förstå målgruppen, funktionerna och funktionen i Analytics-mobilappen.
+I följande tabell beskrivs villkoren för att förstå målgruppen, funktionerna och funktionen för kontrollpanelerna i Analytics.
 
 | Villkor | Definition |
 |--- |--- |
 | Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från Analytics på en mobil enhet |
 | Kurator | Datalitterera persona som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
-| Kuration | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
-| Styrkort | En mobilappsvy som innehåller en eller flera paneler |
+| Kuration | Att skapa eller redigera ett mobilstyrt styrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
+| Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
 | Platta | En återgivning för ett mätresultat i en styrkortsvy |
 | Uppdelning | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
-| Datumintervall | Det primära datumintervallet för mobilappsrapportering |
+| Datumintervall | Det primära datumintervallet för instrumentpanelsrapporter |
 | Jämförelsedatumintervall | Datumintervallet som jämförs med det primära datumintervallet |
 
  
 ## Skapa ett styrkort för chefsanvändare
 
-Ett mobilstyrkort visar viktiga datavisualiseringar för chefsanvändare i en sidindelad layout, vilket visas nedan:
+Ett styrkort visar viktiga datavisualiseringar för chefsanvändare i en sidindelad layout, vilket visas nedan:
 
 
 ![Exempelstyrkort](assets/intro_scorecard.png)
@@ -79,7 +79,7 @@ På skärmen **Projekt** , under fliken **Komponenter** , klickar du på knappen
 
 **Använd analysverktyg**
 
-Klicka på **Verktyg** -menyn i Analytics och välj **Mobile App**. På nästa skärm klickar du på knappen **Skapa styrkort** .
+Klicka på **Verktyg** -menyn i Analytics och välj **Dashboards**. På nästa skärm klickar du på knappen **Skapa styrkort** .
 
 ### Konfigurera styrkortet med data och spara det
 
@@ -149,7 +149,7 @@ Så här delar du styrkortet med en verkställande användare:
 ![Dela_styrkort](assets/new_share.png)
 
 
-När du har delat ett styrkort kan mottagarna komma åt det via Analytics-mobilappen. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
+När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 
 *Obs! Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **Dela inbäddade komponenter automatiskt med mottagare**) för att se till att chefsanvändarna har tillgång till dessa ändringar.*
 
@@ -175,7 +175,7 @@ Under betaversionen, och innan appen visas för allmänheten, kan du styra vem s
 
    **För företagsledare på iOS:**
 
-   1. Klicka på följande offentliga länk (den finns även i Analytics under **Tools** > **Mobile App**):
+   1. Klicka på följande offentliga länk (den är även tillgänglig i Analytics under **Verktyg** > **Kontrollpaneler**):
 
       [iOS-länk](https://testflight.apple.com/join/WtXMQxlI): `https://testflight.apple.com/join/WtXMQxlI`
 
@@ -185,13 +185,12 @@ Under betaversionen, och innan appen visas för allmänheten, kan du styra vem s
 
    2. Tryck på länken **Visa i App Store** på skärmen för att hämta testflight-appen.
 
-   3. När du har installerat Testflight-appen letar du reda på och installerar Adobe Analytics-mobilappen inifrån Testflight enligt nedan:
+   3. När du har installerat Testflight-appen letar du reda på och installerar Adobe Analytics-kontrollpanelerna inifrån Testflight enligt nedan:
 
       ![Testflightskärm](assets/testflight2.png)
-
    **För chefsanvändare på Android:**
 
-   1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **Mobile App**):
+   1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **dashboards**):
       [Android](https://play.google.com/apps/testing/com.adobe.analyticsmobileapp): `https://play.google.com/apps/testing/com.adobe.analyticsmobileapp`
 
       När du har tryckt på länken trycker du på länken Bli en testare på följande skärm:
