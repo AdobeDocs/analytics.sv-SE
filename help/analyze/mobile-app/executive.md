@@ -1,21 +1,21 @@
 ---
-description: Instruktioner för hur du ställer in styrkort för mobilappar.
-title: Adobe Analytics Mobile App Curator Guide
+description: Instruktioner för hur du använder instrumentpanelernas styrkort.
+title: Chefshandbok för Adobe Analytics-instrumentpaneler
 translation-type: tm+mt
-source-git-commit: 9149e9ad5a74ef1de0ece5fb0056ee6fee5d50e9
+source-git-commit: 34c04a571a53c61970a97bc454df74b71bdbe10c
 
 ---
 
 
-# Mobilappen Analytics: Snabbstartsguide för användare
+# Adobe Analytics-paneler: snabbstartsguide för företagsanvändare
 
 ## Introduktion
 
-Mobilappen Adobe Analytics ger dig alltid insikter från Adobe Analytics.  Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS- och Android-operativsystem.
+Adobe Analytics-instrumentpaneler ger dig alltid insikter från Adobe Analytics.  Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Kontrollpaneler stöds på både iOS- och Android-operativsystem.
 
 ## Om den här guiden
 
-Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort i Analytics-mobilappen. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
+Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort på kontrollpaneler i Analytics. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
 
 ## Ordlista
 
@@ -24,30 +24,30 @@ Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrk
 | Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från Analytics på en mobil enhet |
 | Kurator | Datalitterera persona som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
 | Kuration | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
-| Styrkort | En mobilappsvy som innehåller en eller flera paneler |
+| Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
 | Platta | En återgivning för ett mätresultat i en styrkortsvy |
 | Uppdelning | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
-| Datumintervall | Det primära datumintervallet för mobilappsrapportering |
+| Datumintervall | Det primära datumintervallet för instrumentpanelsrapporter |
 | Jämförelsedatumintervall | Datumintervallet som jämförs med det primära datumintervallet |
 
-## Konfigurera appen på din enhet
+## Konfigurera instrumentpaneler på din enhet
 
-Om du vill använda appen effektivt måste du ha styrkortets kurator till hands. I det här avsnittet finns information som hjälper dig att komma igång med hjälp av kuratorn.
+Om du vill använda kontrollpanelerna effektivt måste du ha styrkortets kurator till hands. I det här avsnittet finns information som hjälper dig att komma igång med hjälp av kuratorn.
 
 ### Få åtkomst
 
-Om du vill få åtkomst till styrkort för appen måste du se till att:
+Om du vill få åtkomst till styrkort på instrumentpaneler ser du till att:
 
 * Du har en giltig inloggning på Adobe Analytics
 * Markören har skapat mobila styrkort korrekt och delat dem med dig
 
-### Hämta och installera programmet
+### Hämta och installera kontrollpaneler
 
 Följ stegen i operativsystemet på enheten för att hämta och installera programmet.
 
 **För iOS-enheter:**
 
-1. Klicka på följande offentliga länk (den finns även i Analytics under **Tools** > **Mobile App**):
+1. Klicka på följande offentliga länk (den är även tillgänglig i Analytics under **Verktyg** > **Kontrollpaneler**):
 
    [iOS-länk](https://testflight.apple.com/join/WtXMQxlI): `https://testflight.apple.com/join/WtXMQxlI`
 
@@ -57,13 +57,13 @@ Följ stegen i operativsystemet på enheten för att hämta och installera progr
 
 2. Tryck på länken **Visa i App Store** på skärmen för att hämta testflight-appen.
 
-3. När du har installerat Testflight-appen letar du reda på och installerar Adobe Analytics-mobilappen inifrån Testflight enligt nedan:
+3. När du har installerat Testflight-appen söker du efter och installerar Adobe Analytics-kontrollpaneler inifrån Testflight enligt nedan:
 
    ![Testflightskärm](assets/testflight2.png)
 
 **För Android-enheter:**
 
-1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **Mobile App**):
+1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **dashboards**):
 
 
    [Android](https://play.google.com/apps/testing/com.adobe.analyticsmobileapp): `https://play.google.com/apps/testing/com.adobe.analyticsmobileapp`
@@ -76,15 +76,15 @@ Följ stegen i operativsystemet på enheten för att hämta och installera progr
 
    ![Hämta länk](assets/playnext.png)
 
-## Använd appen
+## Använda instrumentpaneler
 
-Så här använder du appen:
+Så här använder du kontrollpaneler:
 
-1. Logga in i appen. Inloggningsskärmen visas när appen startas. Följ instruktionerna med dina befintliga Adobe Analytics-inloggningsuppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
+1. Logga in i appen. Inloggningsskärmen visas när du startar instrumentpaneler. Följ instruktionerna med dina befintliga Adobe Analytics-inloggningsuppgifter. Vi stöder både Adobe och Enterprise/Federated ID.
 
    ![Logga in sekvens](assets/signseq.png)
 
-2. Välj ett företag. När du har loggat in i appen visas skärmen **Välj ett företag** . På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
+2. Välj ett företag. När du har loggat in på kontrollpaneler visas skärmen **Välj ett företag** . På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
 
 3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort som du vill visa.
 
@@ -129,7 +129,7 @@ Så här använder du appen:
 
 8. Lämna feedback. Lämna feedback:
 
-   1. Tryck på användarikonen i appskärmens övre högra hörn.
+   1. Tryck på användarikonen i det övre högra hörnet på instrumentpanelsskärmen.
    2. Tryck på alternativet **Feedback** på skärmen **Mitt konto** .
    3. Tryck för att visa alternativen för att lämna feedback.
    ![Lämna feedback](assets/feedback.png)
