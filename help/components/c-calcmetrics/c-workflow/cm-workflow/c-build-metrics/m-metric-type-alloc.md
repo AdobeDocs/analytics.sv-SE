@@ -1,9 +1,9 @@
 ---
-description: Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och attribueringsmodell.
+description: 'Läs mer om '
 title: Mättyp och attribut
 uuid: 64649698-df2a-42c3-bb31-938f766e1d1f
 translation-type: tm+mt
-source-git-commit: e6aaf2754c6a5c33fbe3e093b4d7ca5a375c41e7
+source-git-commit: 7a791dda238b04fbee2773c60668eb45db0a1fd0
 
 ---
 
@@ -16,7 +16,7 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 * [Kolumnattributmodell](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md#section_F9690FD1943B403AB28E2FAC54EFE032)
 * [How Linear Allocation works (from 19 juli 2018)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md#section_EDBB2E14A6C248C5A79C0913C02D7CA1)
 
-## Mätningstyp {#section_34A86FB402F94E988724232283BF18B7}
+## Mätningstyp
 
 ![](assets/cm_type_alloc.png)
 
@@ -25,7 +25,7 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 | Standard | Dessa värden är samma värden som används i [!DNL Analytics] standardrapporter. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Exempel: [Beställningar] / [besök] tar order för det specifika radobjektet och dividerar det med antalet besök för det specifika radobjektet. |
 | Totalt | Använd summan för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalt mätvärde visas samma totala antal på varje radartikel. Totala värden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Exempel: [Beställningar] / [Totalt besök] visar hur stor andel av beställningarna som gäller för ALLA besök på platsen, inte bara besöken för den specifika radobjektet. |
 
-## Kolumnattributmodell {#section_F9690FD1943B403AB28E2FAC54EFE032}
+## Kolumnattributmodell
 
 >[!IMPORTANT]
 >
@@ -38,70 +38,27 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 
 
 
-## How Linear Allocation works (from 19 juli 2018)
+## Hur linjär tilldelning fungerar (från och med den 19 juli 2018)
 
-I juli 2018 ändrade Adobe hur linjär allokering rapporteras för beräknade värden. Den här ändringen påverkar Analysis Workspace, Ad Hoc Analysis, Reports &amp; Analytics, Report Builder, Activity Map och API:erna för rapportering. Ändringen påverkar i första hand eVars och andra dimensioner som är beständiga. Observera att dessa ändringar endast gäller för beräknade värden och inte påverkar andra rapporter som använder linjär allokering (till exempel sidrapporten i Rapporter och analyser). Andra rapporter där linjär allokering används kommer även fortsättningsvis att använda den befintliga metoden för linjär allokering.
+I juli 2018 ändrade Adobe hur linjär allokering rapporteras för beräknade värden. Den här ändringen påverkar Analysis Workspace, Ad Hoc Analysis, Reports &amp; Analytics, Report Builder, Activity Map och API:erna för rapportering. Ändringen påverkar i första hand eVars och andra dimensioner som är bestående. Observera att dessa ändringar endast gäller för beräknade värden och inte påverkar andra rapporter som använder linjär allokering (till exempel rapporten Sidor i Rapporter och analyser). Andra rapporter där linjär allokering används kommer även fortsättningsvis att använda den befintliga metoden för linjär allokering.
 
 I följande exempel visas hur beräknade värden med linjär allokering kommer att ändras i rapporteringen:
 
-<table id="table_E66D066A3E7B4232BBC220775F8B985A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> </th> 
-   <th colname="col2" class="entry"> Träff 1 </th> 
-   <th colname="col3" class="entry"> Träff 2 </th> 
-   <th colname="col4" class="entry"> Träff 3 </th> 
-   <th colname="col5" class="entry"> Träff 4 </th> 
-   <th colname="col6" class="entry"> Träff 5 </th> 
-   <th colname="col7" class="entry"> Träff 6 </th> 
-   <th colname="col8" class="entry"> Träff 7 </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Data skickade </p> </td> 
-   <td colname="col2"> PROMO A </td> 
-   <td colname="col3"> - </td> 
-   <td colname="col4"> PROMO A </td> 
-   <td colname="col5"> PROMO B </td> 
-   <td colname="col6"> - </td> 
-   <td colname="col7"> PROMO C </td> 
-   <td colname="col8"> $10 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Senaste beröring eVar </p> </td> 
-   <td colname="col2"> PROMO A </td> 
-   <td colname="col3"> PROMO A </td> 
-   <td colname="col4"> PROMO A </td> 
-   <td colname="col5"> PROMO B </td> 
-   <td colname="col6"> PROMO B </td> 
-   <td colname="col7"> PROMO C </td> 
-   <td colname="col8"> $10 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>First Touch eVar </p> </td> 
-   <td colname="col2"> PROMO A </td> 
-   <td colname="col3"> PROMO A </td> 
-   <td colname="col4"> PROMO A </td> 
-   <td colname="col5"> PROMO A </td> 
-   <td colname="col6"> PROMO A </td> 
-   <td colname="col7"> PROMO A </td> 
-   <td colname="col8"> $10 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Exempel </p> </td> 
-   <td colname="col2"> PROMO A </td> 
-   <td colname="col3"> - </td> 
-   <td colname="col4"> PROMO A </td> 
-   <td colname="col5"> PROMO B </td> 
-   <td colname="col6"> - </td> 
-   <td colname="col7"> PROMO C </td> 
-   <td colname="col8"> $10 </td> 
-  </tr> 
- </tbody> 
-</table>
+|  | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 | Träff 6 | Träff 7 |
+|--- |--- |--- |--- |--- |--- |--- |--- |
+| Data skickade | PROMO A | - | PROMO A | PROMO B | - | PROMO C | $10 |
+| Senaste beröring eVar | PROMO A | PROMO A | PROMO A | PROMO B | PROMO B | PROMO C | $10 |
+| First Touch eVar | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | $10 |
+| Exempel | PROMO A | - | PROMO A | PROMO B | - | PROMO C | $10 |
 
 I det här exemplet skickades värdena A, B och C till en variabel på träffar 1, 3, 4 och 6 innan ett köp på $10 gjordes på träffnummer 7. På den andra raden kvarstår dessa värden för alla träffar på grund av senaste beröringsbesök. Den tredje raden visar hur obestridliga besöken är. Slutligen visar den sista raden hur data skulle registreras för en prop som inte är beständig.
+
+## Skillnader i hur linjär allokering fungerar i rapporter och analyser jämfört med arbetsytan
+
+Det finns vissa skillnader i hur linjär attribuering fungerar mellan dessa två verktyg:
+
+* I Rapporter och analyser är (bearbetad) linjär attribuering alltid besöksbaserad, medan den i Workspace kan vara besöks- eller besöksbaserad.
+* Om inget värde skickades vid den första besöksträffen i Rapporter och analyser kvarstår (det inledande) värdet från föregående besök. Detta är INTE fallet i Workspace (Attribution IQ). Om inget värde skickas vid den första besöksträffen är &quot;Inget&quot; det ursprungliga värdet.
 
 ## Hur linjär tilldelning fungerade före juli 2018
 
