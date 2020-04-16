@@ -1,10 +1,10 @@
 ---
 product: analytics
 audience: end-user
-user-guide-title: Analytics Components Guide
+user-guide-title: Handbok för analyskomponenter
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
+source-git-commit: 14a59adc516d81ee29f1d7e95bc546d2818a173b
 
 ---
 
@@ -35,6 +35,8 @@ source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
       + [Datalagersegmentkompatibilitet](c-segmentation/seg-reference/seg-compatibility.md)
       + [Segmenträttigheter efter roll](c-segmentation/seg-reference/seg-rights.md)
       + [Felsökning](c-segmentation/seg-reference/c-troubleshooting.md)
+   + Användningsexempel {#use-cases}
+      + [Uteslut specifika datum](c-segmentation/use-cases/exclude-date-range.md)
    + [Vanliga frågor](c-segmentation/seg-transition.md)
    + [Nyheter i segmentering med analyser](c-segmentation/whats-new-segmentation.md)
    + [Övergångshandbok för ad hoc-analys](c-segmentation/seg-transition-ad-hoc.md)
