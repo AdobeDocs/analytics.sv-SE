@@ -4,16 +4,16 @@ title: Publicera segment till Experience Cloud
 topic: Segments
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 translation-type: tm+mt
-source-git-commit: a2b76a0e2fbe2ec598fffea64def771a2ddc0121
+source-git-commit: f516be8395f7e7c0398f1ebb1d1e019e905d67ee
 
 ---
 
 
 # Publicera segment till Experience Cloud
 
-Genom att publicera ett segment i Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target], [!DNL Audience Manager], [!DNL Advertising Cloud]och [!DNL Campaign]. Nyligen har uppdateringarna optimerat publiceringsarbetsflödet avsevärt. Tidigare tog det ca 48 timmar att publicera ett användbart segment.
+Genom att publicera ett Adobe Analytics-segment i Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target], [!DNL Audience Manager], [!DNL Advertising Cloud]och [!DNL Campaign]. Nyligen har uppdateringarna optimerat publiceringsarbetsflödet avsevärt. Nu kan ni publicera Analytics-segment i Experience Cloud på mindre än 8 timmar. Använd dessa segment för att aktivera målgrupper i Audience Manager för alla destinationer längre fram i kedjan.
 
-Bearbetningen kan nu ta upp till 8 timmar, men beroende på annan trafik och segmentstorleken kan bearbetningen gå ännu snabbare. (För närvarande finns det dock inget sätt att informera dig om när segmentet är tillgängligt, så du måste kontrollera manuellt.) Vi har också ökat det maximala antalet publicerbara segment till 75 (från 20). Du kan visa publicerade segment i Komponenter > Segment.
+Vi har också ökat det maximala antalet publicerbara Adobe Analytics-segment till 75 (från 20). Du kan visa publicerade segment i [!UICONTROL Analytics > Components > Segments].
 
 >[!NOTE] Adobe Campaign (Classic och Standard) uppför sig annorlunda på så sätt att det får ytterligare 24 timmars fördröjning utöver 8-timmars fördröjning.
 
@@ -29,7 +29,7 @@ Bearbetningen kan nu ta upp till 8 timmar, men beroende på annan trafik och seg
 ## Överväganden
 
 * **Report Suite-begränsningar**: Du kan publicera upp till 75 segment per rapportserie. Den här gränsen gäller. Om du redan har 75 segment publicerade kan du inte publicera några ytterligare segment förrän du avpublicerar tillräckligt många segment för att komma under tröskelvärdet på 75 segment.
-* **Medlemskapsbegränsningar**: Målgrupper som delas med [!DNL Experience Cloud] Analytics får inte överstiga 20 miljoner unika medlemmar.
+* **Medlemskapsbegränsningar**: Målgrupper som delas med kunderna [!DNL Experience Cloud] från Adobe Analytics får inte överstiga 20 miljoner unika medlemmar.
 * **Dataintegritet**: Publiken filtreras inte baserat på besökarens autentiseringstillstånd. Om en besökare kan bläddra på webbplatsen i icke-autentiserade och autentiserade lägen, kan åtgärder som utförs när en besökare inte är autentiserad ändå göra att besökaren inkluderas i en målgrupp. Granska [sekretessen](https://www.adobe.com/privacy/experience-cloud.html) för Adobe Experience Cloud för att förstå de fullständiga integritetspåföljderna av målgruppsdelning.
 * Om du vill diskutera **skillnaderna mellan segment i[!DNL Adobe Analytics]och[!DNL Audience Manager]**i går[du hit](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html).
 
