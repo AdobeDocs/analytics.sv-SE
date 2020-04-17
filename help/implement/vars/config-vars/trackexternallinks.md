@@ -2,7 +2,7 @@
 title: trackExternalLinks
 description: Aktivera eller inaktivera automatisk länkspårning för att avsluta länkar.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: 94218548dc4e3efd57df95c992003e94640e4330
 
 ---
 
@@ -29,5 +29,5 @@ Klicka i kryssrutan om du vill aktivera automatisk spårning av avslutningslänk
 Det här `s.trackExternalLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk spårning av avslutningslänk. Om du inte vill spåra utgående länkar, eller vill anropa metoden manuellt för att spåra avslutslänkar, anger du den här variabeln som `tl()` `false`.
 
 ```js
-s.trackDownloadLinks = true;
+s.trackExternalLinks = true;
 ```
