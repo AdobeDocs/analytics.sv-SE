@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok för analyskomponenter
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: 14a59adc516d81ee29f1d7e95bc546d2818a173b
+source-git-commit: dfc2e036711ee2229160f52ab16fb4299f7722e5
 
 ---
 
@@ -37,13 +37,11 @@ source-git-commit: 14a59adc516d81ee29f1d7e95bc546d2818a173b
       + [Felsökning](c-segmentation/seg-reference/c-troubleshooting.md)
    + Användningsexempel {#use-cases}
       + [Uteslut specifika datum](c-segmentation/use-cases/exclude-date-range.md)
-   + [Vanliga frågor](c-segmentation/seg-transition.md)
+   + [Frågor och svar](c-segmentation/seg-transition.md)
    + [Nyheter i segmentering med analyser](c-segmentation/whats-new-segmentation.md)
    + [Övergångshandbok för ad hoc-analys](c-segmentation/seg-transition-ad-hoc.md)
 + Beräknade mått {#calculated-metrics}
-   + [Beräknade och avancerade beräknade (härledda) värden](c-calcmetrics/cm-overview.md)
-   + [Vanliga frågor](c-calcmetrics/cm-transition.md)
-   + [Instruktionsvideor](c-calcmetrics/cm-videos.md)
+   + [Beräknade och avancerade beräknade (härledda) mätvärden](c-calcmetrics/cm-overview.md)
    + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
@@ -66,6 +64,9 @@ source-git-commit: 14a59adc516d81ee29f1d7e95bc546d2818a173b
       + [Mätkompatibilitet](c-calcmetrics/cm-compatibility.md)
       + [Beräknade mått: rollbaserade rättigheter](c-calcmetrics/cm-role-based-rights.md)
       + [Beräknade mätsummor](c-calcmetrics/cm-totals.md)
+   + [Härleda data som påverkas av händelser](c-calcmetrics/cm-events.md)
+   + [Frågor och svar](c-calcmetrics/cm-transition.md)
+   + [Instruktionsvideor](c-calcmetrics/cm-videos.md)
 + Virtuella rapportsviter {#virtual-report-suites}
    + [Översikt över virtuella rapportsviter](vrs/vrs-about.md)
    + [Komponenturval för Virtual Report Suite](vrs/vrs-components.md)
