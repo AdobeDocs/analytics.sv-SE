@@ -2,7 +2,7 @@
 title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
 translation-type: tm+mt
-source-git-commit: e3360e15de14f594e62b4be6316f8b095091ec1f
+source-git-commit: 09c7c1f4b4a6f67243cc72c642fd83a75406fb76
 
 ---
 
@@ -13,7 +13,7 @@ Ibland kan en händelse påverka datakvaliteten i organisationen. Exempel:
 
 * En robot som skickar data som miljontals dollar i intäkter
 * Din organisation har publicerat en uppdatering till din webbplats som har negativ inverkan på er Analytics-implementering
-* Utbrott som påverkar serverkvaliteten, antingen i företagets eller Adobes slutprodukter
+* Andra problem som påverkar datakvaliteten eller fullständigheten
 
 Om sajten har problem med datakvaliteten, implementeringsproblem eller andra luckor i data kanske du vill utesluta den från rapporteringen för att förhindra att du fattar beslut om partiella data. Använd de här avsnitten för att mäta effekten av händelsen på dina data och bestämma hur du vill fortsätta.
 
