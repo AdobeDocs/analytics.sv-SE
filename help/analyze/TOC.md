@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok för analysverktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 26942a0f346cc646d2ab11a1bc86550fe7c2e2b2
+source-git-commit: 09c7c1f4b4a6f67243cc72c642fd83a75406fb76
 
 ---
 
@@ -44,6 +44,7 @@ source-git-commit: 26942a0f346cc646d2ab11a1bc86550fe7c2e2b2
          + [Översikt över kalender- och datumintervall](analysis-workspace/components/calendar-date-ranges/calendar.md)
          + [Skapa anpassade datumintervall](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)
          + [Datumjämförelse](analysis-workspace/components/calendar-date-ranges/time-comparison.md)
+         + [Jämför datum som påverkas av en händelse](analysis-workspace/components/calendar-date-ranges/compare-event.md)
    + Visualiseringar {#visualizations}
       + [Översikt över visualiseringar](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)
