@@ -2,7 +2,7 @@
 title: Användarhandbok för Labs
 description: Förhandsgranska prototypprojekt för Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 52904d401455909a0786e66cd5439d547a53f062
+source-git-commit: 5209751a8b771b92f82bab9b170ac76a077e4b87
 
 ---
 
@@ -52,7 +52,7 @@ Så här startar och utvärderar du en prototyp:
 
 1. Klicka på knappen **Ge feedback** för att lämna feedback i meddelanderutan när du arbetar med prototypen.
 
-   ![feedback_box](https://user-images.githubusercontent.com/29133525/58670344-f0363f80-82fb-11e9-8824-ec2b41f7187a.png)
+   ![feedback_box](assets/give_feedback.png)
 
 1. Klicka på **Skicka** för att skicka din feedback.
 
