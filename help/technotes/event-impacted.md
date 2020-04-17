@@ -2,7 +2,7 @@
 title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
 translation-type: tm+mt
-source-git-commit: 09c7c1f4b4a6f67243cc72c642fd83a75406fb76
+source-git-commit: dfc2e036711ee2229160f52ab16fb4299f7722e5
 
 ---
 
@@ -24,6 +24,10 @@ Adobe Analytics är ett enkelt och robust sätt att fokusera på eller exkludera
 ## Jämföra en händelse med tidigare datumintervall
 
 Om du vill veta mer om hur stor inverkan en händelse har på dina data över tiden kan du använda datumjämförelsen i Analysis Workspace. Med den här funktionen kan du jämföra data dag för dag, vecka för vecka eller månad för att se hur de ser ut jämfört med tidigare intervall. Du kan sedan använda den här jämförelsen för att avgöra hur mycket en händelse påverkar trender. Se [Jämför datum som påverkas av en händelse med tidigare intervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/compare-event.md) i användarhandboken för Analysera.
+
+## Korrigera trenddata med beräknade värden
+
+När du har skapat segment och använt datumjämförelse kan du kombinera båda dessa begrepp för att korrigera trenddata med hjälp av beräknade värden. Inkludera segmenten i ett beräknat mätvärde och multiplicera sedan de berörda dagarna med den förskjutning som påträffades vid jämförelse av datum. Se [Härledda data som påverkas av händelser](/help/components/c-calcmetrics/cm-events.md) i användarhandboken för komponenter.
 
 ## Använd en kalenderhändelse i Rapporter och analyser
 
