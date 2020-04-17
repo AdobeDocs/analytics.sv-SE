@@ -2,16 +2,14 @@
 title: Exkludera specifika datum i analysen
 description: Tips för att exkludera datum eller datumintervall om du inte vill inkludera det i rapporter.
 translation-type: tm+mt
-source-git-commit: 2515a3357b5cf3b0d5f49a9c109070c528d7f9d4
+source-git-commit: e2ddfc7fb7ced2d7f480bec3b50cb2657d779646
 
 ---
 
 
 # Exkludera specifika datum i analysen
 
-Ibland innehåller ett datumintervall data som du inte vill analysera. En robot skickar till exempel en utlänningsträff som innehåller en felaktig intäktsmängd och drastiskt ökar mätvärdet. Om sajten råkade ut för implementeringsproblem eller andra luckor i data kanske du vill utesluta den från rapporteringen och även förhindra att du fattar beslut om partiella data.
-
-Du kan använda ett segment för att exkludera datumintervall som du inte vill inkludera i dina rapporter.
+Om du har data som [påverkas av en händelse](/help/technotes/event-impacted.md)kan du använda ett segment för att utesluta datumintervall som du inte vill inkludera i dina rapporter. Genom att segmentera händelsestyrda datum kan ni förhindra att organisationen fattar beslut om delar av data.
 
 ## Isolera påverkade dagar
 
@@ -67,15 +65,3 @@ Du kan använda segmentet i en [virtuell rapportsserie](../../vrs/vrs-about.md) 
 5. Klicka **[!UICONTROL Continue]** i det övre högra hörnet och sedan på **[!UICONTROL Save]**.
 
 ![Segment tillämpat på VRS](../assets/exclude_segment_vrs.png)
-
-## Alternativ i andra verktyg
-
-Om du använder Rapporter och analyser kan du använda en [kalenderhändelse](../../t-calendar-event.md) för att markera berörda dagar i alla trendrapporter.
-
->[!NOTE] Den här metoden gäller inte för Analysis Workspace.
-
-1. Navigera till **[!UICONTROL Components]** > **[!UICONTROL Calendar events]**.
-2. Ange önskad titel, datumintervall och anteckningstext.
-3. Klicka på **[!UICONTROL Save]**.
-
-![Kalenderhändelse](../assets/exclude_calendar_event.jpg)
