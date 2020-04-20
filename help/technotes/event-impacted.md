@@ -2,7 +2,7 @@
 title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
 translation-type: tm+mt
-source-git-commit: dfc2e036711ee2229160f52ab16fb4299f7722e5
+source-git-commit: d400bd219cbd8710f2a2fbdaaa9210f3bc70c40b
 
 ---
 
@@ -25,16 +25,10 @@ Adobe Analytics är ett enkelt och robust sätt att fokusera på eller exkludera
 
 Om du vill veta mer om hur stor inverkan en händelse har på dina data över tiden kan du använda datumjämförelsen i Analysis Workspace. Med den här funktionen kan du jämföra data dag för dag, vecka för vecka eller månad för att se hur de ser ut jämfört med tidigare intervall. Du kan sedan använda den här jämförelsen för att avgöra hur mycket en händelse påverkar trender. Se [Jämför datum som påverkas av en händelse med tidigare intervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/compare-event.md) i användarhandboken för Analysera.
 
-## Korrigera trenddata med beräknade värden
+## härleda data med beräknade värden
 
 När du har skapat segment och använt datumjämförelse kan du kombinera båda dessa begrepp för att korrigera trenddata med hjälp av beräknade värden. Inkludera segmenten i ett beräknat mätvärde och multiplicera sedan de berörda dagarna med den förskjutning som påträffades vid jämförelse av datum. Se [Härledda data som påverkas av händelser](/help/components/c-calcmetrics/cm-events.md) i användarhandboken för komponenter.
 
-## Använd en kalenderhändelse i Rapporter och analyser
+## Förmedla genomslag till användare i organisationen
 
-Om du använder Rapporter och analyser kan du använda en [kalenderhändelse](/help/components/t-calendar-event.md) för att markera berörda dagar i alla trendrapporter. Den här metoden gäller inte för Analysis Workspace.
-
-1. Navigera till **[!UICONTROL Components]** > **[!UICONTROL Calendar events]**.
-2. Ange önskad titel, datumintervall och anteckningstext.
-3. Klicka på **[!UICONTROL Save]**.
-
-![Kalenderhändelse](assets/exclude_calendar_event.jpg)
+När du har förberetts för hur du tänker hantera en händelse kan du [kommunicera med användare i organisationen](event/event-communicate.md). Adobe erbjuder flera platser i Analytics där du kan placera text för att informera användarna om vad som hände och vilka komponenter de kan använda.
