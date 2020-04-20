@@ -4,7 +4,7 @@ audience: all
 user-guide-title: Tekniska anteckningar för analyser
 user-guide-url: /content/help/en/analytics/technotes/home.html
 translation-type: tm+mt
-source-git-commit: 09c7c1f4b4a6f67243cc72c642fd83a75406fb76
+source-git-commit: ea1927827c0615b085a440bc86116b438594e448
 
 ---
 
@@ -27,6 +27,8 @@ source-git-commit: 09c7c1f4b4a6f67243cc72c642fd83a75406fb76
    + [Frågor och svar](ga-to-aa/faq.md)
    + [Bearbetningsskillnader mellan plattformar](ga-to-aa/processing-differences.md)
 + [Analysera data som påverkas av händelser](event-impacted.md)
++ Analysera data som påverkas av händelser {#event}
+   + [förmedla genomslag till användarna](event/event-communicate.md)
 + [Webbläsarcookies](cookies.md)
 + [Datalagring](data-retention.md)
 + [Latens](latency.md)
@@ -34,7 +36,7 @@ source-git-commit: 09c7c1f4b4a6f67243cc72c642fd83a75406fb76
 + [Sekretessöversikt](privacy-overview.md)
 + [Omdirigering och alias](redirects.md)
 + [Stöd för flera valutor](multicurrency.md)
-+ Regional datainsamling {rdc}
++ Regional datainsamling {#rdc}
    + [Regional datainsamling](rdc/regional-data-collection.md)
    + [SSL-certifieringslicensiering](rdc/ssl-cert-licensing.md)
 + [Säkerhetsresurser](security.md)
