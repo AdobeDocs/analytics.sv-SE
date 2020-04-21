@@ -3,22 +3,22 @@ description: Sammanhangsberoende sessioner i virtuella rapportsviter ändrar hur
 title: Sammanhangsberoende sessioner
 uuid: d354864a-9163-4970-a3a0-f2e9729bdbe3
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3997889ae72920d719203edbb159b55b983158e7
 
 ---
 
 
 # Sammanhangsberoende sessioner
 
-Sammanhangsberoende sessioner i virtuella rapportsviter ändrar hur Adobe Analytics beräknar mobilbesök. I den här artikeln beskrivs konsekvenserna av bakgrundstötar och appstarthändelser (som båda anges av SDK för mobiler) för hur mobilbesök definieras.
+Sammanhangsberoende sessioner i virtuella rapportsviter ändrar hur Adobe Analytics beräknar besök från alla enheter. I den här artikeln beskrivs också hur bakgrundstödsträffar och appstarthändelser (som båda anges av SDK för mobiler) påverkar hur mobilbesök definieras.
 
-Ni kan definiera ett besök som ni vill utan att ändra underliggande data, så att det matchar hur besökarna interagerar med era mobilappar.
+Ni kan definiera ett besök som ni vill utan att ändra underliggande data, så att det matchar hur besökarna interagerar med era digitala upplevelser.
 
-## URL-parameter för kundperspektiv {#section_8B298006362341E3AC16A148422D1F65}
+## URL-parameter för kundperspektiv
 
 Med datainsamlingsprocessen i Adobe Analytics kan du ställa in en frågesträngsparameter som anger kundperspektivet (anges som frågesträngsparametern&quot;cp&quot;). I det här fältet anges tillståndet för slutanvändarens digitala program. Detta hjälper dig att veta om en träff genererades när en mobilapp befann sig i bakgrundsläge.
 
-## Bearbetning av bakgrundsträff {#section_D47B3161B7E145B6A32AB06E9AA03FA3}
+## Bearbetning av bakgrundsträff
 
 En bakgrundträff är en typ av träff som skickas till Analytics från Adobe Mobile SDK version 4.13.6 och senare när appen gör en spårningsbegäran i bakgrundsläge. Typiska exempel på detta är:
 
@@ -115,15 +115,15 @@ Om en serie bakgrundstötningar inträffar före en serie förgrundshändelser h
 
 Bakgrundsstötarna beter sig på det här sättet för att bevara eventuella attribueringseffekter från eVars eller andra variabler som angetts under bakgrundstötningar. Detta gör att konverteringshändelser för förgrundskonvertering kan kopplas till åtgärder som vidtas när en app befinner sig i bakgrundsläge. Det gör också att en besökssegmentbehållare kan innehålla bakgrundstötar som resulterat i en efterföljande förgrundssession, vilket är användbart för att mäta effekten av push-meddelanden.
 
-## Besök metrisk beteende {#section_50B82618A39B454493B33B1450CCBD3E}
+## Besök metrisk beteende
 
 Besöken baseras endast på antalet besök som omfattar minst en förgrundsträff. Det innebär att eventuella överblivna bakgrundstötningar eller &quot;bakgrundsbesök&quot; inte räknas in i besöksmätningen.
 
-## Tidsåtgång per besök, mätarbeteende {#section_0A149ABB3E034B97BD0B3A7F3EB67383}
+## Tidsåtgång per besök, mätarbeteende
 
 Tidsåtgången beräknas fortfarande på ett liknande sätt som den är utan bakgrundstötningar med hjälp av tiden mellan träffarna. Även om ett besök omfattar bakgrundstötar (eftersom de inträffade så nära förgrundsträffarna), inkluderas dessa träffar i den tid som läggs på per besök som om de vore en förgrundsträff.
 
-## Bearbetningsinställningar för bakgrundsträff {#section_C8B1D38C06FF4ABAAFA78CE9550C0F4B}
+## Bearbetningsinställningar för bakgrundsträff
 
 Eftersom träffbearbetning i bakgrunden endast är tillgänglig för virtuella rapportsviter som använder Report Time Processing, har Adobe Analytics stöd för två sätt att bearbeta bakgrundsträffar för att bevara antalet besök i basrapportsviten som inte använder Report Time Processing. Om du vill få tillgång till den här inställningen går du till Adobe Analytics Admin Console, till inställningarna för den tillämpliga basrapportsviten, går till menyn&quot;Hantering av mobilappar&quot; och sedan till undermenyn&quot;Rapportering av mobilprogram&quot;.
 
@@ -134,6 +134,6 @@ Eftersom träffbearbetning i bakgrunden endast är tillgänglig för virtuella r
 
 I båda fallen faktureras bakgrundstötarna till samma kostnad som andra träffar som skickas till Analytics.
 
-## Starta nya besök vid varje appstart {#section_9DA9A8B9758248A6B311EFBA06AECA80}
+## Starta nya besök vid varje appstart
 
 Förutom träffbearbetning i bakgrunden kan virtuella rapportsviter tvinga ett nytt besök att starta när mobilens SDK skickar en programstarthändelse. När den här inställningen är aktiverad kommer ett nytt besök att starta varje gång en programstarthändelse skickas från SDK, oavsett om ett öppet besök har nått sin tidsgräns eller inte. Den träff som innehåller applanseringshändelsen inkluderas som den första träffen vid nästa besök, och ökar antalet besök och skapar en tydlig besöksbehållare för segmentering.
