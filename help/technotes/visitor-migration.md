@@ -5,7 +5,7 @@ title: Migrering av besökare
 topic: Developer and implementation
 uuid: af31928c-85d7-407f-a583-0c8f2852ceb3
 translation-type: tm+mt
-source-git-commit: 0439440e10dddf8a5d64e4ea8f9868b521e5ca20
+source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
 
 ---
 
@@ -48,11 +48,11 @@ I följande tabell visas de uppgifter som krävs för migrering av besökare:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>6+ timmar efter konfigurationsändring</b>: Uppdatera <code> s.trackingServer</code> och <code> s.trackingServerSecure</code> variabler i JavaScript-koden för Analytics så att de använder de nya datainsamlingsservrarna. </p> </td> 
-   <td colname="col3"> <p>När du har gjort den här ändringen använder du en [paketövervakare](../implement/validate/packet-monitor.md) för att verifiera att bildbegäran för Analytics kommer till den uppdaterade datainsamlingsservern. </p> </td> 
+   <td colname="col3"> <p>När du har gjort den här ändringen använder du en <a href="../implement/validate/packet-monitor.md"> paketövervakare</a> för att verifiera att bildbegäran för Analytics kommer till den uppdaterade datainsamlingsservern. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Omedelbart efter uppdatering av Analytics-koden</b>: Testa webbplatsen för att verifiera att omdirigeringen till den tidigare datainsamlingsdomänen sker. </p> </td> 
-   <td colname="col3"> <p>Använd en [paketövervakare](../implement/validate/packet-monitor.md) för att verifiera att när du ansluter till platsen för första gången, eller efter att du har rensat cookies, visas två 302 (omdirigering) HTTP-statuskoder före HTTP-statuskoden 200 (OK). Om någon av dessa omdirigeringar misslyckas kontaktar du kundtjänst omedelbart för att säkerställa att migreringen är korrekt konfigurerad. </p> </td> 
+   <td colname="col3"> <p>Använd en <a href="../implement/validate/packet-monitor.md"> paketövervakare</a> för att verifiera att när du ansluter till platsen för första gången, eller efter att du har rensat cookies, visas två 302 (omdirigerings) HTTP-statuskoder före HTTP-statuskoden 200 (OK). Om någon av dessa omdirigeringar misslyckas kontaktar du kundtjänst omedelbart för att säkerställa att migreringen är korrekt konfigurerad. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>För hela migreringsperioden</b>: Låt DNS-posten för det föregående värdnamnet vara aktiv. </p> </td> 
