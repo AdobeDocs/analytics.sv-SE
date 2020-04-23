@@ -4,7 +4,7 @@ title: Länkrapport
 topic: Activity map
 uuid: 1e7ca5d8-d144-4a21-a2f9-e05bd3232c59
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 6b27755178d156b1eaf159640d466bd84659983d
 
 ---
 
@@ -37,7 +37,7 @@ I standardläge visar rapporten Länkar på sidan länkdata från en dag till fl
   </tr> 
   <tr> 
    <td colname="col1"> Länk-ID </td> 
-   <td colname="col2">Länkens primära ID (för mer information om hur primärt ID definieras av [New Link Tracking Method] (/home/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md)) </td> 
+   <td colname="col2">Länkens primära ID (för mer information om hur primärt ID definieras av den <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md">nya länkspårningsmetoden</a>) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Klickningar </td> 
@@ -82,7 +82,7 @@ I Live-läget visar rapporten Länkar på sidan trenddata som sträcker sig öve
   </tr> 
   <tr> 
    <td colname="col1"> Länk-ID </td> 
-   <td colname="col2">Länkens primära ID. Mer information om hur det primära ID:t definieras av New [Link Tracking Method] (/help/analyze/activity-map/activity-map-link-tracking/activity-map-)ink-tracking-method.md). </td> 
+   <td colname="col2">Länkens primära ID. Mer information om hur det primära ID:t definieras av den nya <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md"> länkspårningsmetoden</a>. </td>
   </tr> 
   <tr> 
    <td colname="col1"> Länkklickningar </td> 
