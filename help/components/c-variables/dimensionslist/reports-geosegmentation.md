@@ -4,7 +4,7 @@ title: GeoSegmentation
 topic: Reports
 uuid: 66aa22c4-dcbc-491a-b23c-0c3d87444d23
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
 
 ---
 
@@ -45,7 +45,7 @@ Alla mätvärden som är tillgängliga för dig någon annanstans i Rapporter oc
   </tr> 
   <tr> 
    <td colname="col1"> Rapportera noggrannhet </td> 
-   <td colname="col2"> <p>Adobe samarbetar med Digital Envoy, en ledande leverantör av lösningar för IP-intelligens och -autentisering, för att kunna erbjuda GeoSegmentation, en geografisk mätfunktion som bygger på slutanvändarnas IP-adresser. Noggrannheten hos enskilda datauppsättningar kan variera, men i allmänhet ger Digital Envoy över 99 % precision på landsnivå, över 97 % precision på regionnivå och över 90 % precision på stadsnivå. </p> <p>Obs! Dessa nummer förutsätter att [inställningen] (/help/admin/admin/general-acct-settings-admin.md) för att ta bort den sista oktetten i IP-adressen INTE är aktiverad. </p> <p>IP-adresser mappas till postnummer och varje stad definieras av postnummer som definieras av den"lokala myndigheten" som en del av den staden. Exempelvis ingår inte Berlins förorter i definitionen av Berlin, men varje stad anges separat, förutsatt att IP-adresserna kan mappas korrekt till ett postnummer i någon av dessa städer. </p> <p>Några faktorer som kan påverka GeoSegmentation-data är: </p> 
+   <td colname="col2"> <p>Adobe samarbetar med Digital Envoy, en ledande leverantör av lösningar för IP-intelligens och -autentisering, för att kunna erbjuda GeoSegmentation, en geografisk mätfunktion som bygger på slutanvändarnas IP-adresser. Noggrannheten hos enskilda datauppsättningar kan variera, men i allmänhet ger Digital Envoy över 99 % precision på landsnivå, över 97 % precision på regionnivå och över 90 % precision på stadsnivå. </p> <p>Obs! Dessa nummer förutsätter att <a href="/help/admin/admin/general-acct-settings-admin.md">inställningen</a> att ta bort den sista oktetten i IP-adressen INTE är aktiverad. </p> <p>IP-adresser mappas till postnummer och varje stad definieras av postnummer som definieras av den"lokala myndigheten" som en del av den staden. Exempelvis ingår inte Berlins förorter i definitionen av Berlin, men varje stad anges separat, förutsatt att IP-adresserna kan mappas korrekt till ett postnummer i någon av dessa städer. </p> <p>Några faktorer som kan påverka GeoSegmentation-data är: </p> 
     <ul id="ul_1B05024AD5174232A8DB8145753FB09B"> 
      <li id="li_C3A21E7C1186490EB9A236634DB45E7F">IP-adresser som representerar företagsproxies. Dessa kan visas som trafik som kommer via användarens företagsnätverk, vilket faktiskt kan vara en annan plats om användaren arbetar fjärranslutet. </li> 
      <li id="li_56FC36B3598C420F9246D4E8772822A7">Mobila IP-adresser. Målgruppsanpassning för mobil IP fungerar på olika nivåer beroende på plats och nätverk. Ett antal transportföretag backar tillbaka IP-trafik genom centraliserade eller regionala POP. </li> 
