@@ -3,7 +3,7 @@ description: Det ni behöver veta om migreringen av användar-ID:n för Analytic
 title: Migrering av Analytics-användare till Admin Console
 uuid: 7d020713-693b-4945-aa52-3669a631aacb
 translation-type: tm+mt
-source-git-commit: 3db8481434f3db43732f0b54a58c6d4a29bce652
+source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
 
 ---
 
@@ -95,7 +95,7 @@ Svar på frågor som du kan ha innan migreringen.
      <li id="li_418476105FE341229CE146E730AAB33D">Befintliga behörighetsgrupper i Analytics replikeras automatiskt i Admin Console som produktprofiler, inklusive deras beskrivning och detaljerade behörigheter för rapportsviter, mätvärden, dimensioner, analyser och Report Suite-verktyg. </li> 
      <li id="li_412F88C454B0455A8F3BC8016226855C">Om någon av dina nuvarande Analytics-användare har skapats i Admin Console (vilket innebär att de har ett länkat Adobe/Enterprise ID) läggs de till i rätt produktprofiler i Admin Console. </li> 
      <li id="li_8A05137EC05C4FD5910E73FE58300DCB">Avsnittet Användarhantering på fliken Admin i Analytics kommer att vara <span class="term"> skrivskyddat</span>. Du kommer inte längre att kunna skapa nya användare eller behörighetsgrupper här och du måste utföra båda dessa funktioner i Admin Console. Mer information finns i Analytics-funktioner som inte stöds i Admin Console <a href="/help/admin/user-management2/user-migration/c-migration-tool.md#section-928ffba27a0446e0af575b720434ef56"></a> . </li> 
-     <li id="li_2742DE69E9B547198A58E1F33E908361">Som administratör får du åtkomst till [verktyget för migrering av användar-ID] (https://marketing.adobe.com/resources/help/en_US/experience-cloud/admin-console/analytics-migration/t_migrate-users.html). Dessutom visas ett meddelande i produkten som innehåller slutdatumet för migreringen (vanligtvis 60 dagar i framtiden) utöver länkar till hjälpinnehåll och vanliga frågor. </li> 
+     <li id="li_2742DE69E9B547198A58E1F33E908361">Som administratör får du åtkomst till <a href="https://marketing.adobe.com/resources/help/en_US/experience-cloud/admin-console/analytics-migration/t_migrate-users.html">migreringsverktyget</a>för användar-ID. Dessutom visas ett meddelande i produkten som innehåller slutdatumet för migreringen (vanligtvis 60 dagar i framtiden) utöver länkar till hjälpinnehåll och vanliga frågor. </li> 
      <li id="li_095D42E3A3544FC59A60A8C8F94C971B">Du får tillgång till fliken Behörigheter på Admin Console där du kan skapa produktprofiler med alla detaljerade alternativ du känner till i Analytics. </li> 
     </ul> </td> 
   </tr> 
