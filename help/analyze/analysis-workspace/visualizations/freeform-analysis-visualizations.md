@@ -2,19 +2,38 @@
 description: Lär dig mer om visualiseringar och visualiseringsinställningar i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
-topic: Reports and analytics
-uuid: 318dea64-6277-4ec3-ad48-4dfcb7a54555
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 6eda9e3e5bd450213253a8181042c24c318c0300
 
 ---
 
 
 # Översikt över visualiseringar
 
-Lär dig mer om visualiseringar och visualiseringsinställningar i Analysis Workspace.
+Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. Varje visualisering har sina egna inställningar som du kan hantera. Klicka på namnet på visualiseringen för mer detaljerad information.
 
-[Visualiseringstyper i Analysis Workspace på YouTube](https://www.youtube.com/watch?v=b1zLEywRa6w&index=39&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:57)
+YouTube Video: Visualiseringstyper [på arbetsytan](https://www.youtube.com/watch?v=b1zLEywRa6w&amp;index=39&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) för analyser (2:57)
+
+| Visualiseringsnamn | Beskrivning |
+|---|---|
+| [Yta](/help/analyze/analysis-workspace/visualizations/area.md) | som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
+| [Liggande](/help/analyze/analysis-workspace/visualizations/bar.md) | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
+| [Punktdiagram](/help/analyze/analysis-workspace/visualizations/bullet-graph.md) | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
+| [Kohortabell](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är till exempel användbart när du vill veta hur en kohort interagerar med ett varumärke. Du kan enkelt upptäcka ändringar i trender och sedan svara på dem. |
+| [Munk](/help/analyze/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. |
+| [Utfall](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md) | Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. |
+| [Flöde](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) | Visar kundvägar via era webbplatser och appar. |
+| [Frihandsregister](/help/analyze/analysis-workspace/visualizations/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. |
+| [Histogram](/help/analyze/analysis-workspace/visualizations/histogram.md) | Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). |
+| [Vågrätt fält](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
+| [Linje](/help/analyze/analysis-workspace/visualizations/line.md) | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension. |
+| [Karta](/help/analyze/analysis-workspace/visualizations/map-visualization.md) | Gör att du kan skapa en visuell karta över alla mått (inklusive beräknade värden). |
+| [Scatterplot](/help/analyze/analysis-workspace/visualizations/scatterplot.md) | Visar relationen mellan dimensionsvärden och upp till tre mätvärden. |
+| [Sammanfattningsnummer](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) | Beroende på vilken cell som är markerad visar den här visualiseringen summor och sammanfattningar. |
+| [Sammanfattningsändring](/help/analyze/analysis-workspace/visualizations/summary-number-change.md) | Beroende på vilka celler som är markerade jämförs cellerna med varandra. |
+| [Text](/help/analyze/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. |
+| [Treemap](/help/analyze/analysis-workspace/visualizations/treemap.md) | Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar. |
+| [Venn](/help/analyze/analysis-workspace/visualizations/venn.md) | Gör att du kan dra i upp till tre segment (från komponenter) och ett mätvärde för att skapa ett Venndiagram. |
 
 ## Panelen Visualiseringar {#section_DC07F032FBEF4046A40F7B95C28DA018}
 
@@ -34,48 +53,16 @@ Du öppnar [!UICONTROL Visualization Settings]genom att dra en visualisering til
 
 ![](assets/visualization_settings.png)
 
-<table id="table_E0695243886046979EE609FAE5D6EA00"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Inställning </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Procenttal </p> </td> 
-   <td colname="col2"> <p>Visar värden i procent. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>100 % staplad </p> </td> 
-   <td colname="col2"> <p>Den här inställningen för staplade ytor, stolpdiagram eller skiktade vågräta staplar gör diagrammet till en"100 % staplade" visualisering. Exempel: </p> <p><img  src="assets/stacked_100_percent.png" placement="break" width="400px" id="image_1B60D53F7EB84571B1580BC3A1E603EE" /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Förklaring synlig </p> </td> 
-   <td colname="col2"> <p>Gör att du kan dölja filterinformationstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Begränsa maximalt antal objekt </p> </td> 
-   <td colname="col2"> <p>Gör att du kan begränsa antalet objekt som visas i en visualisering. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Fästpunkt Y-axel vid noll </p> </td> 
-   <td colname="col2"> <p> Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Normalisering </p> </td> 
-   <td colname="col2"> <p>Tvingar måtten att ha samma proportioner. Se <a href="https://marketing.adobe.com/resources/help/en_US/reference/normalization.html"  > Normalisering</a>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Visa dubbel axel </p> </td> 
-   <td colname="col2"> <p>Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Visa avvikelser </p> </td> 
-   <td colname="col2"> <p>Förbättrar linjediagram och frihandstabeller för att visa dataavvikelser. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Inställning | Beskrivning |
+|--- |--- |
+| Procenttal | Visar värden i procent. |
+| 100 % staplad | Den här inställningen för staplade ytor, stolpdiagram eller skiktade vågräta staplar gör diagrammet till en&quot;100 % staplade&quot; visualisering. Exempel: ![](assets/stacked_100_percent.png) |
+| Förklaring synlig | Gör att du kan dölja filterinformationstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
+| Begränsa maximalt antal objekt | Gör att du kan begränsa antalet objekt som visas i en visualisering. |
+| Fästpunkt Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
+| Normalisering | Tvingar måtten att ha samma proportioner. |
+| Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). |
+| Visa avvikelser | Förbättrar linjediagram och frihandstabeller för att visa dataavvikelser. |
 
 ## Ikonen Skapa visuell {#section_9C11D9DEDC42413AA53E69A71A509DFC}
 
@@ -119,4 +106,4 @@ Om du vill redigera en förklaringsetikett i ett linjediagram, till exempel
 1. Ange den nya etikettexten.
 1. Tryck för **[!UICONTROL Enter]** att spara.
 
-Här är en [länk till en video](https://www.youtube.com/watch?v=mry3vDrTml0&index=61&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) om det här ämnet.
+Här är en [länk till en video](https://www.youtube.com/watch?v=mry3vDrTml0&amp;index=61&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) om det här ämnet.
