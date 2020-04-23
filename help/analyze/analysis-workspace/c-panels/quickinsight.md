@@ -2,7 +2,7 @@
 description: 'null'
 title: Quick Insights builder
 translation-type: tm+mt
-source-git-commit: 0a0993c8a91f1e42be3d919e8315cfab3aaecd72
+source-git-commit: c8f482c21e6301ef34a221a73323cd7386921f2f
 
 ---
 
@@ -59,7 +59,6 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 
    * En Freeform-tabell med dimensionen (här, USA) lodrätt och måttet (här, Besök) vågrätt högst upp. Kolla in den här tabellen:
    ![](assets/qibuilder3.png)
-
 
    * En åtföljande visualisering, i det här fallet ett [stapeldiagram](/help/analyze/analysis-workspace/visualizations/bar.md). Den visualisering som genereras baseras på den typ av data som du har lagt till i tabellen. Du kan ändra visualiseringstypen genom att klicka på listrutepilen bredvid **[!UICONTROL Bar]**.
 
