@@ -5,7 +5,7 @@ solution: Experience Cloud,Analytics,Dynamic Tag Management
 title: Sidvyer och innehåll
 uuid: 6d019304-5892-475b-9887-00f86983f859
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
 
 ---
 
@@ -26,19 +26,19 @@ Fältbeskrivningar i Dynamic Tag Management för sidvisningar och innehållsinst
  <tbody>
   <tr>
    <td colname="col1"> Sidnamn </td>
-   <td colname="col2"> <p>Namnet på varje sida på webbplatsen. </p> <p>Se [pageName](../../../vars/page-vars/pagename.md). </p> </td>
+   <td colname="col2"> <p>Namnet på varje sida på webbplatsen. </p> <p>Se <a href="../../../vars/page-vars/pagename.md">pageName</a>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Åsidosätt sidans URL </td>
-   <td colname="col2"> <p> Åsidosätter sidans faktiska URL. </p> <p>Se [pageURL](../../../vars/page-vars/pageurl.md). </p> </td>
+   <td colname="col2"> <p> Åsidosätter sidans faktiska URL. </p> <p>Se <a href="../../../vars/page-vars/pageurl.md">pageURL</a>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Kanal (platsavsnitt) </td>
-   <td colname="col2"> <p>Identifierar ett avsnitt på din plats. </p> <p>Se [channel](../../../vars/page-vars/channel.md). </p> </td>
+   <td colname="col2"> <p>Identifierar ett avsnitt på din plats. </p> <p>Se <a href="../../../vars/page-vars/channel.md">kanal</a>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Hierarki </td>
-   <td colname="col2"> <p>Anger platsen för en sida i platsens hierarki. </p> <p>Se [hier](../../../vars/page-vars/hier.md). </p> </td>
+   <td colname="col2"> <p>Anger platsen för en sida i platsens hierarki. </p> <p>Se <a href="../../../vars/page-vars/hier.md">här</a>. </p> </td>
   </tr>
  </tbody>
 </table>
