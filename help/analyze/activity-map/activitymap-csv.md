@@ -4,7 +4,7 @@ title: Exportera till CSV-fil
 topic: Activity map
 uuid: dc6c50c0-57f7-45b8-a4cb-2092a21da529
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: ee5489798f8c82c563b49b6c96acd1e63a0aa920
 
 ---
 
