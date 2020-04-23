@@ -5,7 +5,7 @@ solution: Experience Cloud,Analytics,Dynamic Tag Management
 title: Referenter och kampanjer
 uuid: 56580206-a382-4993-9bba-a488da65cf89
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
 
 ---
 
@@ -26,11 +26,11 @@ Fältbeskrivningar i [!UICONTROL Dynamic Tag Management] för referenser och kam
  <tbody>
   <tr>
    <td colname="col1"> Åsidosätt referent </td>
-   <td colname="col2"> <p>Åsidosätter det värde som anges i variabeln <span class="varname"> s.reference</span> , som vanligtvis fylls i av den som har angett i webbläsaren. </p> <p>Se [Referer](../../../vars/page-vars/referrer.md). </p> </td>
+   <td colname="col2"> <p>Åsidosätter det värde som anges i variabeln <span class="varname"> s.reference</span> , som vanligtvis fylls i av den som har angett i webbläsaren. </p> <p>Se <a href="../../../vars/page-vars/referrer.md">hänvisare</a>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Campaign </td>
-   <td colname="col2"> <p>En variabel som identifierar marknadsföringskampanjer som används för att visa besökare på er webbplats. Värdet för kampanjen hämtas vanligtvis från en frågesträngsparameter. </p> <p>Se [kampanj](../../../vars/page-vars/campaign.md). </p> </td>
+   <td colname="col2"> <p>En variabel som identifierar marknadsföringskampanjer som används för att visa besökare på er webbplats. Värdet för kampanjen hämtas vanligtvis från en frågesträngsparameter. </p> <p>Se <a href="../../../vars/page-vars/campaign.md">kampanj</a>. </p> </td>
   </tr>
  </tbody>
 </table>
