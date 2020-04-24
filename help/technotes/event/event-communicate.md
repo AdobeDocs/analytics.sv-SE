@@ -2,7 +2,7 @@
 title: förmedla genomslag till användarna
 description: Lär dig effektiva sätt att förmedla effekten av en händelse i organisationen.
 translation-type: tm+mt
-source-git-commit: d400bd219cbd8710f2a2fbdaaa9210f3bc70c40b
+source-git-commit: 6cca683836480f707fe18b5ee8d70b26ee5f54b0
 
 ---
 
@@ -31,4 +31,4 @@ Om du använder Rapporter och analyser kan du använda en [kalenderhändelse](/h
 2. Ange önskad titel, datumintervall och anteckningstext.
 3. Klicka på **[!UICONTROL Save]**.
 
-![Kalenderhändelse](../assets/exclude_calendar_event.jpg)
+![Kalenderhändelse](../assets/exclude_calendar_event.png)
