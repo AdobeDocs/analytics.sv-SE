@@ -28,7 +28,7 @@ I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics. De
 
 ## Viktiga analysresurser
 
-* [Kontakta kundtjänst](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
 * [Analysforum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
