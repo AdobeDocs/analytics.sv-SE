@@ -2,7 +2,7 @@
 title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
 translation-type: tm+mt
-source-git-commit: d400bd219cbd8710f2a2fbdaaa9210f3bc70c40b
+source-git-commit: 6cca683836480f707fe18b5ee8d70b26ee5f54b0
 
 ---
 
@@ -32,3 +32,9 @@ När du har skapat segment och använt datumjämförelse kan du kombinera båda 
 ## Förmedla genomslag till användare i organisationen
 
 När du har förberetts för hur du tänker hantera en händelse kan du [kommunicera med användare i organisationen](event/event-communicate.md). Adobe erbjuder flera platser i Analytics där du kan placera text för att informera användarna om vad som hände och vilka komponenter de kan använda.
+
+## Video
+
+I den här videon går du igenom alla steg ovan.
+
+>[!VIDEO](https://video.tv.adobe.com/v/33316?quality=12)
