@@ -25,7 +25,7 @@ Exempel på vad du kan göra med kohortanalys:
 
 Kohortanalys är tillgängligt för alla Analytics-kunder med åtkomstbehörighet till Analysis Workspace.
 
-[Kohortanalys på YouTube](https://www.youtube.com/watch?v=kqOIYrvV-co&index=45&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:36)
+[Kohortanalys på YouTube](https://www.youtube.com/watch?v=kqOIYrvV-co&amp;index=45&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:36)
 
 >[!IMPORTANT]
 >
