@@ -1,7 +1,7 @@
 ---
 product: analytics
 audience: all
-user-guide-title: Analytics Documentation
+user-guide-title: Analysdokumentation
 user-guide-url: /content/help/en/analytics/landing/home.html
 translation-type: tm+mt
 source-git-commit: dcb69257fd29686ae346cf4d0cf50ed041ebcbbc
