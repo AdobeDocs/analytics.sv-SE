@@ -20,7 +20,7 @@ Första klicket i en kalender startar ett datumintervallval. Den andra klickning
 
 Du kan också dra datum (och tidsdimensioner) till ett Workspace-projekt. Du kan välja specifika dagar, veckor, månader, år eller rullande datum.
 
-[Använda datumintervall och kalender i Analysis Workspace på YouTube](https://www.youtube.com/watch?v=L4FSrxr3SDA&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&index=28) (4:07)
+[Använda datumintervall och kalender i Analysis Workspace på YouTube](https://www.youtube.com/watch?v=L4FSrxr3SDA&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=28) (4:07)
 
 | Inställning | Beskrivning |
 |--- |--- |
