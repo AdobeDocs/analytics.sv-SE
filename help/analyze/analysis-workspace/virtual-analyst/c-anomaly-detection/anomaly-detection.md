@@ -12,9 +12,9 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Du kan visa och analysera dataavvikelser i sitt sammanhang i Analysis Workspace.
 
-[Analysidentifiering på YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&index=63&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
+[Analysidentifiering på YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&amp;index=63&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
 
-[Bidragsanalys på YouTube](https://www.youtube.com/watch?v=MbpeJIADtGk&index=64&list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (3:20)
+[Bidragsanalys på YouTube](https://www.youtube.com/watch?v=MbpeJIADtGk&amp;index=64&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (3:20)
 
 >[!IMPORTANT] Analysidentifiering har tagits bort från funktionerna Rapporter och analys och är nu bara tillgängligt via Analysis Workspace. Observera att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till&quot;daglig granularitetsidentifiering&quot; i Workspace. Mer information finns i Behörigheter för avvikelseidentifiering och [bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md#section_9278D58F21A840AA9B1ED1BD07A1EF0A).
 
