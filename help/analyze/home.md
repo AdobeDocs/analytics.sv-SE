@@ -33,7 +33,7 @@ Den här guiden ger produktdokumentation och självhjälp för följande rapport
 
 ## Viktiga analysresurser
 
-* [Kontakta kundtjänst](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
 * [Analysforum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
