@@ -2,14 +2,14 @@
 title: Härleda data som påverkas av händelser
 description: Använd beräknade värden för att korrigera trenddata som påverkas av en händelse.
 translation-type: tm+mt
-source-git-commit: 1ffbd728aba893d7f7a4ecf027c479fc753e371a
+source-git-commit: 8d1a67f0c05afb66b6a961059101f5c889b52790
 
 ---
 
 
 # Härleda data som påverkas av händelser
 
-Om du har data [som påverkas av en händelse](/help/technotes/event-impacted.md)kan du använda beräknade värden för att härleda trendvärden under händelseperioden. Om du till exempel har haft en händelse som orsakade en 25-procentig dataminskning kan du använda den som multiplikator i ett beräknat mått. Den här metoden är användbar om du inte har tid eller resurser att infoga data i Adobe Analytics med [datakällor](/help/import/c-data-sources/datasrc-home.md) eller API:t för [datainfogning](/help/import/c-data-insertion-api/c-data-insertion-api.md).
+Om du har data [som påverkas av en händelse](/help/technotes/event-impacted.md)kan du använda beräknade värden för att härleda trendvärden under händelseperioden. Om du till exempel har haft en händelse som orsakade en 25-procentig dataminskning kan du använda den som multiplikator i ett beräknat mått.
 
 >[!NOTE] De här stegen fungerar bäst när du förstår effekten av en händelse, både från en segmentering och en datumjämförelse. Se till att följa [Jämför datum som påverkas av en händelse med tidigare intervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/compare-event.md) och [Uteslut specifika datum i analysen](../c-segmentation/use-cases/exclude-date-range.md) innan du följer den här sidan.
 
