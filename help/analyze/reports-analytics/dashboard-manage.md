@@ -117,4 +117,4 @@ Steg som beskriver hur du arkiverar skickade kontrollpaneler som PDF-filer. Den 
 1. Aktivera i [!UICONTROL Email Report] gruppen **[!UICONTROL Archive]**.
 1. Ange leveransalternativ och klicka sedan på **[!UICONTROL Send]**.
 
-   Du kan visa arkiverade instrumentpaneler i Dashboard Manager. Du kan även öppna en kontrollpanel och klicka **[!UICONTROL More]** > **[!UICONTROL View Archive]**.
+   Du kan visa arkiverade instrumentpaneler i Dashboard Manager. Du kan också öppna en kontrollpanel och klicka **[!UICONTROL More]** > **[!UICONTROL View Archive]**.
