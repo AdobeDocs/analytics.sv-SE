@@ -2,7 +2,7 @@
 title: Exkludera specifika datum i analysen
 description: Tips för att exkludera datum eller datumintervall om du inte vill inkludera det i rapporter.
 translation-type: tm+mt
-source-git-commit: e2ddfc7fb7ced2d7f480bec3b50cb2657d779646
+source-git-commit: 29f6b302fecd18a9be70c2246c0d1227af82d00f
 
 ---
 
@@ -45,6 +45,10 @@ När du har skapat det uteslutna segmentet kan du använda det precis som du sku
 Du kan använda både segmentet&quot;Påverkade dagar&quot; och&quot;Uteslut påverkade dagar&quot; i en rapport för att jämföra dem sida vid sida. Jämför båda segmenten genom att dra dem över eller under ett mätvärde:
 
 ![Båda segmenten](../assets/affected_and_exclude.png)
+
+Om du inte vill visa nollor i tabellen eller visualiseringar (som orsakar dips) aktiverar du **[!UICONTROL Interpret zero as no value]** under kolumninställningar.
+
+![Tolka noll](../assets/interpret_zero.jpg)
 
 ### Använd exkluderingssegmentet på ett projekt
 
