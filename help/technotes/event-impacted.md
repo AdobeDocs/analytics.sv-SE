@@ -2,7 +2,7 @@
 title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
 translation-type: tm+mt
-source-git-commit: 6cca683836480f707fe18b5ee8d70b26ee5f54b0
+source-git-commit: 65f5fad547558cc9dc481f0eca72873815c9d13a
 
 ---
 
@@ -38,3 +38,8 @@ När du har förberetts för hur du tänker hantera en händelse kan du [kommuni
 I den här videon går du igenom alla steg ovan.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33316?quality=12)
+
+* **0:27**: Uteslut data med segmentering
+* **2:55**: Jämföra en händelse med tidigare intervall
+* **8:42**: härleda data med beräknade värden
+* **11:46**: förmedla genomslag till användarna
