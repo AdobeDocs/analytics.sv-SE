@@ -170,10 +170,10 @@ source-git-commit: 0a0993c8a91f1e42be3d919e8315cfab3aaecd72
       + [Interaktiva kontroller](report-builder/data-requests/interactive-controls.md)
    + Layout - guide för begäran Steg 2 {#layout}
       + [Layoutöversikt](report-builder/layout/layout.md)
-      + Mätvärden och dimensioner {#metrics-dimension}
+      + Metrics and dimensions {#metrics-dimension}
          + [Översikt över mått och mått](report-builder/layout/c-metrics-dimensions/metrics-dimensions.md)
          + [Lägg till mått och mått](report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md)
-         + [Beräknade mått](report-builder/layout/c-metrics-dimensions/calculated-metrics.md)
+         + [Beräknade mätvärden](report-builder/layout/c-metrics-dimensions/calculated-metrics.md)
          + [Kombinera trafik- och handelsstatistik i samma begäran](report-builder/layout/c-metrics-dimensions/grouped-metrics.md)
          + [Behörigheter för användaråtkomst för mått och mätvärden](report-builder/layout/c-metrics-dimensions/permissions-metrics-dimensions.md)
          + [Ändra mått - fältdefinitioner](report-builder/layout/c-metrics-dimensions/r-arb-modify-metrics.md)
