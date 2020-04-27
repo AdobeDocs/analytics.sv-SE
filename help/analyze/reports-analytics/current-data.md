@@ -40,7 +40,7 @@ Mätvärdena visas i någon av de följande tre tidsbildrutorna. Klicka på kloc
 
 Eftersom vissa data som visas i den aktuella datavyn inte har bearbetats fullständigt, kan du se en skillnad mellan värden som rapporteras i den aktuella datavyn och den slutliga vyn. I trendrapporter är dataskalskillnaden vanligtvis inom 1 %.
 
-## Beräknade mått
+## Beräknade mätvärden
 
 Eftersom beräknade mätvärden kan skapas med mätvärden som har olika fördröjning, kan vissa senaste värden beräknas med hjälp av ofullständiga data i den aktuella datavyn.
 
