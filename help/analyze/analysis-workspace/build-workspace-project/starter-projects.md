@@ -3,7 +3,7 @@ description: 'null'
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: cfe9f2221edab5fa1da9711982bd5bd65de1c0fd
 
 ---
 
@@ -58,7 +58,11 @@ Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
-* **Självstudiekurs**: Den här standardmallen visar vanliga termer och steg för hur du skapar din första analys i Workspace. Den är tillgänglig som en standardmall i det nya projektmodala och ersätter det exempelprojekt som finns idag för nya användare som inte har andra projekt i sin lista.
+Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. De är tillgängliga som standardmallar i det nya projektet och ersätter det exempelprojekt som finns idag för nya användare som inte har andra projekt i listan.
+
+* **Självstudiekurs - intern sökanalys**: Självstudiekursen för intern sökning hjälper dig att förstå vad besökarna letar efter på webbplatsen eller i appen, men inte att hitta. Genom att analysera den här typen av data kan ni identifiera möjligheter till innehållsoptimering.
+
+* **Självstudiekurs - marknadsanalys**: Den här självstudiekursen visar hur ni sammanställer en marknadsföringsanalys för era chefer, inklusive vilka anpassade mått och mätvärden som är viktiga.
 
 ### Reklam
 
@@ -118,7 +122,7 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 * Upptäck hur du använder segmentstackning med personmåttet.
 * Upptäck hur Experience Cloud ID i er miljö förbättrar effektiviteten i personmätningen.
 
-### Resa-IQ: Mallen för enhetsövergripande analys
+### Resa-IQ: Mall för enhetsövergripande analys
 
 <!-->This content is mirrored in the CDA doc.<-->
 
