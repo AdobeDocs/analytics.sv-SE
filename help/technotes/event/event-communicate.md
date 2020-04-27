@@ -2,14 +2,20 @@
 title: förmedla genomslag till användarna
 description: Lär dig effektiva sätt att förmedla effekten av en händelse i organisationen.
 translation-type: tm+mt
-source-git-commit: 6cca683836480f707fe18b5ee8d70b26ee5f54b0
+source-git-commit: ddf1d9593881e11d40fd872217ad83fa48a0d3c3
 
 ---
 
 
 # förmedla genomslag till användarna
 
-Om du har data [som påverkas av en händelse](../event-impacted.md)är det viktigt att du kommunicerar händelsen med användarna i organisationen. I följande avsnitt visas olika sätt att kommunicera med användare i organisationen.
+Om du har data [som påverkas av en händelse](../event-impacted.md)är det viktigt att du kommunicerar händelsen med användarna i organisationen.
+
+* Utveckla en gemensam ansvarsfriskrivning som du kan använda i kommunikationen för att uppnå enhetlighet
+* Kommunicera kontinuerligt till Analytics-användare och viktiga intressenter under och efter evenemanget
+* Placera en påminnelse i kalendern för efterföljande milstolpar, t.ex. följande månad eller år. Den här informationen kan i framtiden hjälpa till att påminna användare som tittar på rapporter om effekten i månads- eller årsrapporter.
+
+I Adobe Analytics visas följande avsnitt olika sätt att kommunicera med användare i organisationen. Du kan även använda andra metoder utanför Adobe Analytics, till exempel e-post, för att kommunicera med användarna.
 
 ## Kommunicera via paneler eller visualiseringsbeskrivningar
 
@@ -22,6 +28,31 @@ Om du har ett Workspace-projekt som delas mellan användare i din organisation k
 Du kan också förmedla påverkan av en händelse genom dedikerade textvisualiseringar. Se [Textvisualiseringar](/help/analyze/analysis-workspace/visualizations/text.md) i användarhandboken för Analysera.
 
 ![Textvisualisering](../assets/text_visualization.png)
+
+## Lägga till anpassade kalenderhändelser till trender i arbetsytan
+
+För all visualisering i Workspace kan du lägga till i en serie som representerar det datumintervall som påverkas.
+
+1. Skapa ett beräknat mätvärde med segmentet&quot;Påverkade dagar&quot; genom att följa [Uteslut specifika datum i analysen](/help/components/c-segmentation/use-cases/exclude-date-range.md).
+1. Lägg till det önskade måttet på den beräknade mätarbetsytan.
+
+   ![Mått](../assets/calcmetric_event.png)
+
+1. Lägg till en titel och en beskrivning som informerar användarna om effekten. Du kan också tagga det här måttet som en kalenderanteckning om du vill.
+
+   ![Titel och beskrivning](../assets/calcmetric_title_description.png)
+
+1. Lägg till dimensionen Dag i ett frihandsbord. Lägg till &#39;Besök&#39; och ditt beräknade mått som kolumner sida vid sida.
+
+   ![Frihandsregister](../assets/calcmetric_freeform.png)
+
+1. Klicka på kugghjulsikonen för kolumninställningarna för det beräknade måttet och aktivera **[!UICONTROL Interpret zero as no value]**.
+
+   ![Inställningar för beräknade mätvärden](../assets/calcmetric_zero_no_value.png)
+
+1. Lägg till en linjevisualisering. Dagar som påverkas representeras med en annan färg. Användarna kan också klicka på ikonen Info i det beräknade måttet för mer information.
+
+   ![Ikonen Info](../assets/calcmetric_infoicon.png)
 
 ## Använd en kalenderhändelse i Rapporter och analyser
 
