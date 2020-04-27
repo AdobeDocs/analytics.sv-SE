@@ -188,7 +188,6 @@ Under betaversionen, och innan appen visas för allmänheten, kan du styra vem s
    3. När du har installerat Testflight-appen letar du reda på och installerar Adobe Analytics-kontrollpanelerna inifrån Testflight enligt nedan:
 
       ![Testflightskärm](assets/testflight2.png)
-   
    **För chefsanvändare på Android:**
 
    1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **dashboards**):
