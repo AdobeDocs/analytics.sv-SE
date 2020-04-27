@@ -59,7 +59,7 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som innehåller data f
 
 1. Du kan sedan fästa ett område i den här arbetsboken för att inkludera det i någon av dina Power BI-instrumentpaneler.
 
-## Publicera alla formaterade tabeller i arbetsboken som Power BI-datamängdsregister {#section_7C54A54E75184DD6BAEF4ACCE241239A}
+## Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningsregister {#section_7C54A54E75184DD6BAEF4ACCE241239A}
 
 >[!NOTE] Om arbetsboken innehåller ett makro kommer&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot; att inaktiveras.
 
