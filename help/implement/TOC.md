@@ -4,7 +4,7 @@ audience: all
 user-guide-title: Implementeringshandbok för analyser
 user-guide-url: /content/help/en/analytics/implementation/home.html
 translation-type: tm+mt
-source-git-commit: 3684fdfe0910f0b1b31f741dbf6e3937d169f430
+source-git-commit: 31efa43043120b68de90e817a7980addbe2ded39
 
 ---
 
@@ -197,3 +197,5 @@ source-git-commit: 3684fdfe0910f0b1b31f741dbf6e3937d169f430
    + [Packet monitor](validate/packet-monitor.md)
    + [Hash-kollisioner](validate/hash-collisions.md)
 + [Frågor och svar](faq.md)
++ Använd XDM-data med analyser {#aep-edge}
+   + [Använd AEP Web SDK](aep-edge/xdmoverview.md)
