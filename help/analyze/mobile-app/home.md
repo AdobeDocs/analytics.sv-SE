@@ -1,13 +1,13 @@
 ---
-title: Översikt över instrumentpaneler
+title: översikt över instrumentpaneler
 description: Produktdokumentation och självhjälp för Adobe Analytics-paneler
 translation-type: tm+mt
-source-git-commit: 246093efc32e20f114a81f7ff8bb17131b3aafb2
+source-git-commit: 87355158ed62246d1ef8569383160b1d3ffc9b17
 
 ---
 
 
-# Översikt över instrumentpaneler
+# översikt över instrumentpaneler
 
 >[!IMPORTANT]
 >
