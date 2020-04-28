@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok för analyskomponenter
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: dfc2e036711ee2229160f52ab16fb4299f7722e5
+source-git-commit: 3e97fe61fd207dddf32f3c0e3ddea19949d18bac
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: dfc2e036711ee2229160f52ab16fb4299f7722e5
    + [Frågor och svar](c-segmentation/seg-transition.md)
    + [Nyheter i segmentering med analyser](c-segmentation/whats-new-segmentation.md)
    + [Övergångshandbok för ad hoc-analys](c-segmentation/seg-transition-ad-hoc.md)
-+ Beräknade mått {#calculated-metrics}
++ Beräknade mätvärden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) mätvärden](c-calcmetrics/cm-overview.md)
    + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
@@ -288,6 +288,7 @@ source-git-commit: dfc2e036711ee2229160f52ab16fb4299f7722e5
       + [Vyer](c-variables/c-metrics/metrics-cart-views.md)
       + [Utcheckningar](c-variables/c-metrics/metrics-checkouts.md)
       + [Klickningar](c-variables/c-metrics/metrics-click-throughs.md)
+      + [Innehållshastighet](c-variables/c-metrics/metrics-content-velocity.md)
       + [Anpassade mått](c-variables/c-metrics/metrics-custom.md)
       + [Dagliga unika besökare](c-variables/c-metrics/metrics-daily-unique-visitors.md)
       + [Poster](c-variables/c-metrics/metrics-entries.md)
