@@ -2,7 +2,7 @@
 title: Exkludera specifika datum i analysen
 description: Tips för att exkludera datum eller datumintervall om du inte vill inkludera det i rapporter.
 translation-type: tm+mt
-source-git-commit: 29f6b302fecd18a9be70c2246c0d1227af82d00f
+source-git-commit: b244a74e2514472e8c3896bed9c5cbdd60abc8ff
 
 ---
 
@@ -48,7 +48,7 @@ Du kan använda både segmentet&quot;Påverkade dagar&quot; och&quot;Uteslut på
 
 Om du inte vill visa nollor i tabellen eller visualiseringar (som orsakar dips) aktiverar du **[!UICONTROL Interpret zero as no value]** under kolumninställningar.
 
-![Tolka noll](../assets/interpret_zero.jpg)
+![Tolka noll](../assets/interpret_zero.png)
 
 ### Använd exkluderingssegmentet på ett projekt
 
