@@ -5,7 +5,7 @@ title: Nyheter på Analysis Workspace
 topic: Reports and analytics
 uuid: ff50ef9f-e5b8-442e-bfa6-2f224ba9f111
 translation-type: tm+mt
-source-git-commit: 69a0e706e2788bf92ba70ea0fd53267c3e2cb80d
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -169,11 +169,11 @@ Nya funktioner och förbättringar som släpptes 13 september 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Ny mall: Ljudförbrukning</b> </p> </td> 
-   <td colname="col2"> <p>Se <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/media-workspace-templates.html"  > Ljudanalys </a>. </p> </td> 
+   <td colname="col2"> <p>Se <a href="https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-workspace-templates.html"  > Ljudanalys </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-# augusti 2018
+## Augusti 2018
 
 Nya funktioner och förbättringar som släpptes den 9 augusti 2018.
 
@@ -468,7 +468,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
    <td colname="col2"> <p>Tidigare när du kopierade ett projekt eller sparade som, ledde alla länkar som sparades i projektet till det ursprungliga projektet, inte till det kopierade projektet. </p> <p>Länkarna är nu relativa till det projekt de bor i efter att du har kopierat/sparat som. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Bidragsanalys: <a href="https://marketing.adobe.com/resources/help/en_US/analytics/contribution/ca_main.html"  > Tokenmeddelande </a> </p> </td> 
+   <td colname="col1"> <p>Bidragsanalys: <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html"  > Tokenmeddelande </a> </p> </td> 
    <td colname="col2"> <p>Om ditt företag har ett begränsat antal token för bidragsanalys visas nu ett meddelande i gränssnittet för analysarbetsytan när du använder en token. Här ser du hur många variabler du har kvar.&amp;nbsp; </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa variabler genom att redigera gruppbehörigheten. Behörigheten kallas för avvikelseidentifiering och bidragsanalys under <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> User Management </span>&gt; <span class="uicontrol"> Edit Groups </span> &gt; <span class="uicontrol"> Edit All Report Access </span> <span class="uicontrol"> </span> <span class="uicontrol"> </span>&gt;¥ Customize Report Suite Tools¥ &gt;¥ Tools And Reports. ) </p> </td> 
   </tr> 
   <tr> 
@@ -803,7 +803,7 @@ Nya funktioner släpptes 20 april 2017.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md"  > Personmall </a> </p> </td> 
-   <td colname="col2"> <p>Obs!  Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av <a href="https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-people.html"  > Adobe Experience Cloud Device Co-op </a>. </p> <p>Mallen är baserad på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Personmåttet är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. </p> </td> 
+   <td colname="col2"> <p>Obs!  Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av <a href="https://docs.adobe.com/content/help/en/device-co-op/using/data/people.html"  > Adobe Experience Cloud Device Co-op </a>. </p> <p>Mallen är baserad på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Personmåttet är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Förbättringar av alternativet Ångra/Gör om </p> </td> 
@@ -954,7 +954,7 @@ Nya funktioner som släpptes 20 oktober 2016:
      <li id="li_480E1B307C62418CBC2F50ADE32B9EE9">En ny knapp med namnet "Använd på alla paneler" har lagts till bredvid "Avbryt" och "Kör" i kalendern. Ändrade Kör till Använd. Om du klickar på den nya knappen ändras inte bara det markerade datumintervallet för den aktuella panelen, utan även för alla andra paneler i projektet. </li> 
      <li id="li_4D10DFE307344D06AA60792FABE5B57E"> 
       <!--AN-124168: -->En åtgärdsknapp på den vänstra navigeringslisten med följande funktioner: Tagg, Favorit, Godkänn, <b>Dela (nytt!)</b>, <b>Ta bort (nytt!)</b>. </li> 
-     <li id="li_946EC05568D4447193E9307546DF6F9B">Ett filter har lagts till i sökfältet där du kan filtrera efter taggar, favoriter, godkända objekt och komponenter. </li> 
+     <li id="li_946EC05568D4447193E9307546DF6F9B">Ett filter har lagts till i sökfältet där du kan filtrera på taggar, favoriter, godkända objekt och komponenter. </li> 
      <li id="li_4EA118ACCD3B4F88B0ECF72717F631FA">En förhandsvisningsikon har lagts till för manuella rader (inte för dynamiska rader som listar dimensionsobjekt) där du kan förhandsgranska segment, mätvärden och datumintervall. </li> 
      <li id="li_81D5241EA3FD49CEA0E9F412837D87A8"> 
       <!--AN-128702: -->YouTube-länken för Analysis Workspace-självstudiekurser har uppdaterats för att: <a href="https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS"  > https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS </a>. </li> 
@@ -973,7 +973,7 @@ Nya funktioner som släpptes 20 oktober 2016:
 
 Nya funktioner som släpptes 16 juni 2016:
 
-* [Ny gruppbehörighet](https://marketing.adobe.com/resources/help/en_US/reference/groups.html) som tillåter administratörer att tillåta eller neka åtkomst till **[!UICONTROL Analytics]** >- **[!UICONTROL Workspace]** fliken för användare. Från och med den 16 juni 2016 har alla användare behörighet att komma åt den här fliken. Om du vill neka åtkomst tar du bara bort användare från Analysis Workspace Access-gruppen.
+* [Ny gruppbehörighet](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html) som tillåter administratörer att tillåta eller neka åtkomst till **[!UICONTROL Analytics]** >- **[!UICONTROL Workspace]** fliken för användare. Från och med den 16 juni 2016 har alla användare behörighet att komma åt den här fliken. Om du vill neka åtkomst tar du bara bort användare från Analysis Workspace Access-gruppen.
 * Panelerna för [segmentjämförelse](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)visar de mest statistiskt signifikanta skillnaderna mellan två segment genom en automatiserad analys av varje enskilt mått och dimension som du har tillgång till.
 * [Ny projektmenystruktur](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md) som ordnar om den övre menyn och gör den mer utbyggbar. Om du till exempel skapar en **ny kohortpanel** nu måste du skapa en tom panel och dra i en kohorttabellvisualisering.
 * [Ny vänster räl](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md): Paneler, visualiseringar, komponenter
