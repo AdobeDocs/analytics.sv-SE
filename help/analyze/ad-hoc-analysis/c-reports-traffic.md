@@ -4,7 +4,7 @@ title: Trafikkällrapporter
 topic: Ad hoc analysis
 uuid: 246afbdc-9f7b-4956-a44a-b7aad948f392
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -94,7 +94,7 @@ Om en besökare till exempel klickar på en länk från plats A och kommer till 
 
 Domäner eller URL-adresser som inte ingår i de definierade domänerna och URL-adresserna betraktas som referenter. Webbsida A och webbsida B läggs till i det interna URL-filtret, men webbsida C läggs inte till. I det här fallet betraktas webbsida C som en referent.
 
-Mer information finns i [Interna URL-filter](https://marketing.adobe.com/resources/help/en_US/reference/internal_URL_filter_admin.html) i [!DNL Admin Console] hjälpen.
+Mer information finns i [Interna URL-filter](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/internal-url-filter-admin.html) i [!DNL Admin Console] hjälpen.
 
 >[!NOTE] Marknadsföringsrapporter och analyser registrerar en hänvisande domän som ett e-postmeddelande när besökare klickar på en e-postmeddelandelänk som innehåller protokollet [!DNL imap://] eller [!DNL mail://] kommer till din webbplats. Allt som kommer från [!DNL https://mail.yahoo.com] räknas till exempel inte som e-postreferent eftersom protokollet är [!DNL https://]. E-post från Outlook rapporteras på raden Typed/Bookmarked, medan alla referenter med ett HTTP-protokoll där domänen är en känd sökmotor rapporteras på raden Sökmotor.
 
