@@ -2,16 +2,16 @@
 title: SSL-certifikatlicensiering
 description: Certifikatprocedurer för kundhanterade certifikat
 translation-type: tm+mt
-source-git-commit: 290838566b86f71902abd303b5c43dd2661d3ce1
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
 
 # Licensiering av SSL-/TLS-certifikat
 
-Adobe rekommenderar att du hanterar ditt certifikat utan extra kostnad via [Adobe Managed Certificate Program](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html).  Adobes program för hanterat certifikat är helt automatiserat och ser till att certifikaten förnyas i tid så att inget påverkar certifikat som gått ut.
+Adobe rekommenderar att du hanterar ditt certifikat utan extra kostnad via [Adobe Managed Certificate Program](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html). Adobes program för hanterat certifikat är helt automatiserat och ser till att certifikaten förnyas i tid så att inget påverkar certifikat som gått ut.
 
-Om du använder väljer att inte använda [Adobes program](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html) för hanterat certifikat ansvarar du för att tillhandahålla ett SSL/TLS-certifikat som ska användas för cookies från första part.
+Om du använder väljer att inte använda [Adobes program](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html) för hanterat certifikat ansvarar du för att tillhandahålla ett SSL/TLS-certifikat som ska användas för cookies från första part.
 
 Om du tillhandahåller ett eget certifikat är det ditt ansvar att köpa och underhålla det.  SSL-/TLS-certifikatet måste innehålla en obegränsad serverlicens.
 
