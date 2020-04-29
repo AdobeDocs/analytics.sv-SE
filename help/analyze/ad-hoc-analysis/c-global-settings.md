@@ -3,7 +3,7 @@ description: Konfigurera globala beteendeinställningar. Du kan till exempel kon
 title: Inställningar
 uuid: 34444052-479b-4923-b379-a03ca614bf3e
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -38,7 +38,7 @@ r_dsc_general_settings.xml
  <tbody> 
   <tr> 
    <td colname="col1"> <p> Datainställningar </p> </td> 
-   <td colname="col2"> <p> <span class="uicontrol"> Antal upprepningsinstanser</span>: Anger om instanser räknas i rapporter. Om du har flera sekventiella värden för samma variabel kan du alltså räkna dem som en eller flera instanser av variabeln. </p> <p>Du kan till exempel se upprepade sidladdningar, vilket är det antal gånger som sidorna på webbplatsen läses in eller uppdateras under ett enda besök. Med det här alternativet kan du ange om flera träffar på samma sida ska räknas som en eller flera sidvyer. </p> <p> <span class="uicontrol"> <span class="keyword"> Ad hoc</span> </span>: Anger <span class="keyword"> Ad Hoc</span> som enda datakälla för rapportering. Dessa data kommer från bildbegäranden som genereras av webbsidor. </p> <p> <span class="uicontrol"> <span class="keyword"> Datakällor</span> </span>: Anger om data som överförts från andra Adobe-källor eller anpassade datakällor ska användas. Dessa data blir tillgängliga för produkter i <span class="keyword"> Experience Cloud</span>. Mer information finns i <a href="https://marketing.adobe.com/resources/help/en_US/sc/datasources/index.html"  > Datakällor</a> . </p> <p> <span class="uicontrol"> Båda</span>: (Standard) Använder data från <span class="keyword"> ad hoc-analyser</span> och andra datakällor. </p> <p>Obs! Om du ändrar dessa alternativ kan det leda till skillnader i rapporteringen mellan <span class="keyword"> ad hoc-analysdata</span> och marknadsföringsrapporter <span class="keyword"> och analysdata.</span> </p> </td> 
+   <td colname="col2"> <p> <span class="uicontrol"> Antal upprepningsinstanser</span>: Anger om instanser räknas i rapporter. Om du har flera sekventiella värden för samma variabel kan du alltså räkna dem som en eller flera instanser av variabeln. </p> <p>Du kan till exempel se upprepade sidladdningar, vilket är det antal gånger som sidorna på webbplatsen läses in eller uppdateras under ett enda besök. Med det här alternativet kan du ange om flera träffar på samma sida ska räknas som en eller flera sidvyer. </p> <p> <span class="uicontrol"> <span class="keyword"> Ad hoc</span> </span>: Anger <span class="keyword"> Ad Hoc</span> som enda datakälla för rapportering. Dessa data kommer från bildbegäranden som genereras av webbsidor. </p> <p> <span class="uicontrol"> <span class="keyword"> Datakällor</span> </span>: Anger om data som överförts från andra Adobe-källor eller anpassade datakällor ska användas. Dessa data blir tillgängliga för produkter i <span class="keyword"> Experience Cloud</span>. Mer information finns i <a href="https://docs.adobe.com/content/help/en/analytics/import/data-sources/datasrc-home.html"  > Datakällor</a> . </p> <p> <span class="uicontrol"> Båda</span>: (Standard) Använder data från <span class="keyword"> ad hoc-analyser</span> och andra datakällor. </p> <p>Obs! Om du ändrar dessa alternativ kan det leda till skillnader i rapporteringen mellan <span class="keyword"> ad hoc-analysdata</span> och marknadsföringsrapporter <span class="keyword"> och analysdata.</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> Spara automatiskt </p> </td> 
