@@ -3,7 +3,7 @@ description: 'null'
 title: Kör bidragsanalys
 uuid: 5282a5f9-0771-4974-93cb-335204bde114
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -35,9 +35,9 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
    * En visualisering som visar antalet **besök** den dagen.
    * En månatlig **besöks trendlinje** för kontext.
-   * **De vanligaste objekten** som bidrog till avvikelsen, sorterade efter [bidragspoängen](https://marketing.adobe.com/resources/help/en_US/analytics/contribution/ca_contribution_score.html), plus måttet i fråga och ett unikt besökarmått som sätter måttet i rätt kontext ur ett storleksperspektiv.
+   * **De vanligaste objekten** som bidrog till avvikelsen, sorterade efter [bidragspoängen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html), plus måttet i fråga och ett unikt besökarmått som sätter måttet i rätt kontext ur ett storleksperspektiv.
 
-   * Tabellen [Generated Segments](https://marketing.adobe.com/resources/help/en_US/analytics/contribution/ca_workflow_premium.html) (Top Item Clusters) identifierar associationer av de främsta objekten baserat på bidragsresultat, avvikelser och den totala procentandelen som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
+   * Tabellen [Generated Segments](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters) identifierar associationer av de främsta objekten baserat på bidragsresultat, avvikelser och den totala procentandelen som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
 
       ![](assets/auto_segment.png)
 
@@ -53,7 +53,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
 ## Uteslut dimensioner från bidragsanalys {#section_F6932F4BF74544B5872164E7B1E0C6FC}
 
-Det kan finnas tillfällen när du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
+Det kan finnas tillfällen då du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
 
 1. När du har klickat **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) visas **[!UICONTROL Excluded Dimensions]** panelen.
 
