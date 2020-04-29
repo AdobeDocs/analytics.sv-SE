@@ -5,7 +5,7 @@ title: Arbetsflöde för klassificeringsregelbyggaren
 topic: Admin tools
 uuid: edb1f07e-fa86-4055-8f4b-cce2d370edbb
 translation-type: tm+mt
-source-git-commit: f6b528f8a1b89a008a736fa62d58d6e83f13e4e4
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -33,7 +33,7 @@ Nedan följer några steg för att implementera klassificeringsregler:
 
 | Steg | Där utförd | Beskrivning |
 |--- |--- |--- |
-| Steg 1 (Förutsättning): [Konfigurera klassificeringsschemat](https://marketing.adobe.com/resources/help/en_US/reference/c_classifications.html). | [!UICONTROL Admin] > [!UICONTROL Report Suites] > [!UICONTROL Edit Settings] > &lt;Trafikklassificeringar eller Konverteringsklassificeringar> | Välj en variabel och definiera de klassificeringar som ska användas för variabeln. <br>Variabler måste ha minst en klassificeringskolumn som skapats innan de kan användas i regler.<br>När klassificeringarna är aktiverade kan du använda importverktyget och regelbyggaren för att klassificera specifika värden. |
+| Steg 1 (Förutsättning): [Konfigurera klassificeringsschemat](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html). | [!UICONTROL Admin] > [!UICONTROL Report Suites] > [!UICONTROL Edit Settings] > &lt;Trafikklassificeringar eller Konverteringsklassificeringar> | Välj en variabel och definiera de klassificeringar som ska användas för variabeln. <br>Variabler måste ha minst en klassificeringskolumn som skapats innan de kan användas i regler.<br>När klassificeringarna är aktiverade kan du använda importverktyget och regelbyggaren för att klassificera specifika värden. |
 | Steg 2: [Skapa en regeluppsättning](/help/components/c-classifications2/crb/classification-rule-set.md). | [!UICONTROL Admin] >  [!UICONTROL Classification Rule Builder] > [!UICONTROL Add Rule Set] | En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. |
 | Steg 3: Konfigurera rapportsviter och variabler. | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Använd regeluppsättningen för rapportsviter och variabler. |
 | Steg 4: Lägg [till klassificeringsregler i uppsättningen](/help/components/c-classifications2/crb/classification-quickstart-rules.md). | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Matcha ett villkor med en klassificering och ange sedan vilken åtgärd som ska vidtas för regeln.  Läs mer om [hur reglerna behandlas](/help/components/c-classifications2/crb/classification-quickstart-rules.md). |
@@ -47,6 +47,6 @@ Nedan följer några steg för att implementera klassificeringsregler:
 
 **Ytterligare resurser**
 
-**Blogg**: Mer information om den här funktionen finns i bloggen om digital marknadsföring: Regelbaserade [klassificeringar](https://blogs.adobe.com/digitalmarketing/analytics/rule-based-classifications-part-1-making-classifications-easier/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+AdobeDigitalMarketing+%28Adobe+Digital+Marketing+Blog%29).
+**Blogg**: Mer information om den här funktionen finns i bloggen om digital marknadsföring: Regelbaserade [klassificeringar](https://blogs.adobe.com/digitalmarketing/analytics/rule-based-classifications-part-1-making-classifications-easier/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+AdobeDigitalMarketing+%28Adobe+Digital+Marketing+Blog%29).
 
 **Video**: Besök [YouTube](https://www.youtube.com/watch?v=6laI5SBXY-I) för att se [!UICONTROL Classifications Overview] videon.
