@@ -3,7 +3,7 @@ description: Fliken Report Suite-användning innehåller serveranvändningsdata 
 title: Visa rapportsvitanvändning
 uuid: c609ed99-9acc-4023-905a-81a40dd07a79
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -16,7 +16,7 @@ Fliken Report Suite-användning innehåller serveranvändningsdata för varje ra
 
 >[!IMPORTANT]
 >
->Om en rapportsvit inte är [länkad till en Experience Cloud-organisation](https://marketing.adobe.com/resources/help/en_US/mcloud/report-suite-mapping.html)återspeglas dess användningsdata inte i den här instrumentpanelen. Ett fakturerings-ID kan även kopplas till flera Experience Cloud-organisationer. det inte alltid finns en 1:1-relation mellan en organisation och ett fakturerings-ID.
+>Om en rapportsvit inte är [länkad till en Experience Cloud-organisation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html)återspeglas dess användningsdata inte i den här instrumentpanelen. Ett fakturerings-ID kan även kopplas till flera Experience Cloud-organisationer. det inte alltid finns en 1:1-relation mellan en organisation och ett fakturerings-ID.
 
 Kontrollpanelen för användning av Report Suite
 
