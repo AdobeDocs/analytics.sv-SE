@@ -4,7 +4,7 @@ title: Spårningskoder
 topic: Reports
 uuid: c893d592-10fd-4b40-84b3-8c8949a67b25
 translation-type: tm+mt
-source-git-commit: 984d6034d14cc4256d93bd4f7d1a7f01b63b71e9
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -45,7 +45,7 @@ Mäter hur olika annonseringsspårningskoder påverkar olika konverteringshände
 
 * Klicka **[!UICONTROL Conversion]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Tracking Code]** om du vill hitta rapporten, såvida inte menyn är anpassad.
 
-* Den här rapporten kan också delas upp efter alla [listvariabler](https://marketing.adobe.com/resources/help/en_US/sc/implement/list_var.html).
+* Den här rapporten kan också delas upp efter alla [listvariabler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/list-var-admin.html).
 * Sidvyer, besök och unika besökare är tillgängliga som mått.
 * Den här rapporten kan använda segment.
 
