@@ -6,7 +6,7 @@ title: Anpassa rapportåtkomst - översikt
 topic: Admin tools
 uuid: 818a7196-8b43-4654-8d5f-800b3122aad3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
 
 Anpassa gruppbehörigheter till analysverktyg, rapportsvitsverktyg, mätvärden och dimensioner.
 
@@ -59,12 +59,12 @@ Du kan till exempel skapa en grupp med tillgång till flera analysverktyg (, [!U
    <td colname="col2"> <p>Du kan anpassa behörigheter för att inkludera eller exkludera åtkomst till dimensioner (utöver mått). </p> 
     <ul id="ul_DA5A54223673474E9151AF979DA50659"> 
      <li id="li_C3E82F7BC07A4F2F83A85D3D511292CC"> <p>Alla aktuella dimensioner och mått i anpassade grupper har automatiskt migrerats till de nya kategorierna. Om en befintlig grupp har mätvärden aktiverade får den som standard alla nya tillåtna mått (eVars och innehållsmedvetna) och mätvärden. </p> </li> 
-     <li id="li_CC56F9181CC14AB59318628E72F2E8C9"> Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av tillgången till den <a href="https://marketing.adobe.com/resources/help/en_US/reference/c_classifications.html"> variabel</a> som klassificeringen baseras på. </li> 
+     <li id="li_CC56F9181CC14AB59318628E72F2E8C9"> Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av tillgången till den <a href="https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html"> variabel</a> som klassificeringen baseras på. </li> 
     </ul> <p>Se <a href="/help/admin/user-management2/c-customize-report-access/groups-dimensions.md"> Anpassa dimensionsbehörigheter</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><a href="https://helpx.adobe.com/enterprise/using/admin-console.html"> Adobe Admin Console</a> </p> </td> 
-   <td colname="col2"> <p>Rekommenderas endast för nya kunder eller kunder med företag som <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html"> etablerats i Experience Cloud</a>. En migrering av befintliga <span class="keyword"> Analytics</span> -kunder till identitetshanteringssystemet i <span class="keyword"> Experience Cloud</span> planeras. </p> <p>Mer information finns i <a href="https://marketing.adobe.com/resources/help/en_US/experience-cloud/admin-console/analytics-migration/"> Användarmigrering för Analytics till Admin Console</a>. </p> </td> 
+   <td colname="col1"> <p><a href="https://helpx.adobe.com/se/enterprise/using/admin-console.html"> Adobe Admin Console</a> </p> </td> 
+   <td colname="col2"> <p>Rekommenderas endast för nya kunder eller kunder med företag som <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html"> etablerats i Experience Cloud</a>. En migrering av befintliga <span class="keyword"> Analytics</span> -kunder till identitetshanteringssystemet i <span class="keyword"> Experience Cloud</span> planeras. </p> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html"> Användarmigrering för Analytics till Admin Console</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Innehållsanpassat </p> </td> 
