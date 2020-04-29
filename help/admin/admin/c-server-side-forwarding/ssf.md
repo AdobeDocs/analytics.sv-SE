@@ -4,7 +4,7 @@ solution: Audience Manager
 title: Översikt över vidarebefordran på serversidan
 uuid: 22ddbde5-6805-4eba-8f82-62772644dcaa
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -30,12 +30,12 @@ Gå igenom följande valideringssteg för att förstå var din organisation befi
 
 ## ![step1_icon.png image](assets/step1_icon.png) Kontrollera implementeringen av ECID-tjänsten
 
-Kontrollera om tjänsten Experience Cloud ID (ECID) har implementerats genom att granska [Analytics Tracking-begäran](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-test-verify.html).
+Kontrollera om tjänsten Experience Cloud ID (ECID) har implementerats genom att granska [Analytics Tracking-begäran](https://docs.adobe.com/content/help/en/id-service/using/implementation/test-verify.html).
 
 Kontrollera att ett ECID-värde anges på fliken Begäran. Detta anger att identitetstjänsten implementeras på rätt sätt, vilket är en förutsättning för vidarebefordran på serversidan.
 
 * Om du ser ett ECID-värde fortsätter du till steg 2.
-* Om du inte ser något ECID-värde [implementerar du identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-implementation-guides.html) innan du fortsätter till steg 2.
+* Om du inte ser något ECID-värde [implementerar du identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/implementation/implementation-guides.html) innan du fortsätter till steg 2.
 
 ## ![step2_icon.png image](assets/step2_icon.png) Verifiera implementeringsversion för vidarebefordran på serversidan
 
@@ -49,9 +49,9 @@ På fliken Svar kontrollerar du att svaret innehåller data för Audience Manage
 
    * **AAM-kunder med DIL**: koordinera följande två objekt i nära samverkan:
 
-      1. Ta bort DIL-koden och installera [koden för Audience Management Module](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) .
+      1. Ta bort DIL-koden och installera [koden för Audience Management Module](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) .
       1. Aktivera vidarebefordran på serversidan i gränssnittet för Analytics Admin enligt beskrivningen i steg 3. Om du aktiverar den här inställningen innan du tar bort DIL-koden dupliceras data och ytterligare fakturerade serveranrop skapas till Audience Manager.
-   * **Nya AAM-kunder** - installera [koden för Audience Management Module](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan är aktiverat i steg 3.
+   * **Nya AAM-kunder** - installera [koden för Audience Management Module](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan är aktiverat i steg 3.
 
 
 ## ![step3_icon.png image](assets/step3_icon.png) Verifiera vidarebefordran på serversidan av rapportsviten
@@ -66,5 +66,5 @@ Gå till **Analytics** > **Admin** > **Report Suites** > (välj **rapportsviter*
 * **Inaktiverad**: Vidarebefordran på serversidan är inte aktiverad. Läs innehållet på sidan och fortsätt sedan med att aktivera funktionen.
 * **Aktiverad**: Du har etablerats för vidarebefordran på serversidan. Ni kan också konfigurera den här Audience Analytics-integreringen.
 
->[!NOTE] Data visas inte i andra Experience Cloud-lösningar, som [Audience Manager](https://marketing.adobe.com/resources/help/en_US/aam/c_aam_home.html) eller [Audience](https://marketing.adobe.com/resources/help/en_US/mcloud/audience_library.html) , förrän alla tre stegen är slutförda. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.
+>[!NOTE] Data visas inte i andra Experience Cloud-lösningar, som [Audience Manager](https://docs.adobe.com/content/help/en/audience-manager/user-guide/aam-home.html) eller [Audience](https://docs.adobe.com/content/help/en/core-services/interface/audiences/audience-library.html) , förrän alla tre stegen är slutförda. När inställningen är aktiverad tar det flera timmar innan den börjar gälla.
 
