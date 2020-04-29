@@ -3,16 +3,16 @@ description: Virtuella rapportsviter kan struktureras för att inkludera och exk
 title: Komponenturval för Virtual Report Suite
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
 
 # Komponenturval för Virtual Report Suite
 
-Virtuella rapportsviter kan struktureras för att inkludera och exkludera komponenter.i Analysis Workspace.
+Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
 
->[!NOTE] Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och förvaltade virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. Med den [uppdaterade kurationsupplevelsen](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/curate-projects-vrs.html) får du mer detaljerad kontroll över vilka komponenter som är synliga.
+>[!NOTE] Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och förvaltade virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. Med den [uppdaterade kurationsupplevelsen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate-projects-vrs.html) får du mer detaljerad kontroll över vilka komponenter som är synliga.
 
 Om du vill aktivera komponenturval
 
@@ -64,4 +64,4 @@ Använd komponentgrupper för att göra satsvis komponenttillägg i din virtuell
 
 ## Arbetsytebeteende {#section_6C32F8B642804C0097FCB14E21028D4A}
 
-Mer information om kurering i Analysis Workspace finns i [Curate and Share a Project](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/curate.html).
+Mer information om kurering i Analysis Workspace finns i [Curate and Share a Project](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html).
