@@ -4,7 +4,7 @@ title: Marknadskanal - översikt
 topic: Reports
 uuid: e4542014-2098-4f4a-ac0d-97587182d6cc
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -15,23 +15,21 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 ## Allmänna egenskaper {#section_87F54048CE5445F7A6C795C7787C530A}
 
-* Den här rapporten är enbart beroende av [bearbetningsreglerna](https://marketing.adobe.com/resources/help/en_US/mchannel/c_channels_rules.html)för marknadsföringskanaler. Om du ändrar dessa regler ändras hur data i den här rapporten beräknas.
+* Den här rapporten är enbart beroende av [bearbetningsreglerna](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-channels-rules.html)för marknadsföringskanaler. Om du ändrar dessa regler ändras hur data i den här rapporten beräknas.
 * Behandlingsordningen är avgörande för hur marknadsföringskanaler fungerar. Varje träff kontrollerar först villkoren högst upp i bearbetningsreglerna och filtrerar sedan därifrån.
 * Rapporten består av två uppdelningar: själva kanalerna och deras kanalinformation. Om du klickar på plusknappen (+) bredvid varje kanal visas dess detaljer.
 * Endast fyra mätvärden kan läggas till i varje kolumn. Du är dock inte begränsad till antalet kolumner som du kan använda.
 * En liten trendlinje visas i slutet av den sista kolumnen. Den här trendlinjen kan växla mellan aktiva mätvärden.
 * Förutom olika kanaler som samlas in med standardmetoder kan du använda offlinedatakällor.
-* [Du kan använda klassificeringar](https://marketing.adobe.com/resources/help/en_US/mchannel/t_classifications.html) för att byta namn på och konsolidera radobjekt.
+* [Du kan använda klassificeringar](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) för att byta namn på och konsolidera radobjekt.
 * Följande mått kan användas i den här rapporten (beroende på inställningar för organisation och rapportsviten):
 
    * **Klickfunktioner**: det antal gånger som variabeln *`s.campaign`* definieras.
-
-   * [Nya åtaganden](https://marketing.adobe.com/resources/help/en_US/mchannel/t_visitor_engagement.html): antalet besökare som har fått en ny First Touch Channel.
+   * [Nya åtaganden](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-new-engagements.html): antalet besökare som har fått en ny First Touch Channel.
    * Alla standardvärden för e-handel: Intäkter, beställningar, enheter, kundvagnar, kundvagnsvyer, utcheckningar, kundvagnstillägg, kundvagnsborttagningar.
    * Alla anpassade händelser: Händelser 1-80 och Händelser 81-100 om H22-koden eller senare används.
    * **Besök** och **besökare**: kräver Commerce Visits och Visitors, som är beroende av organisation och rapportsvit. Kontakta kontohanteraren om du vill ha mer information.
-
-   * **Budget** och **kostnad**: mätvärden som är specifika för marknadsföringskanaler. Se [Kostnader och budgetar](https://marketing.adobe.com/resources/help/en_US/mchannel/c_overview_budget.html).
+   * **Budget** och **kostnad**: mätvärden som är specifika för marknadsföringskanaler. Se [Kostnader och budgetar](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/analyze-mc.html).
 
 ## Produktspecifika egenskaper {#section_0C78D294D00942FD9A26D37CB5D645AE}
 
