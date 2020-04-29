@@ -4,7 +4,7 @@ title: Enhetstyper
 topic: Reports
 uuid: e1224769-9a94-4cad-a1ed-e285d60d23f3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -21,5 +21,5 @@ Den här dimensionen använder dynamiska enhetsdata som uppdateras kontinuerligt
 
 Data för den här rapporten fylls i med besökarens användaragentsträng.
 
->[!Note]
+>[!NOTE]
 >Endast ändringar som görs i ett befintligt mobilt ID är retroaktiva. Om enheten är ny och inte har något mobil-ID än, startar den enda information som kommer att kopplas till den här enheten det datum då ett ID läggs till i enhetsdatabasen.
