@@ -4,7 +4,7 @@ title: Rapportering av aktivitetskarta i analyser
 topic: Activity map
 uuid: 057c6ab2-aa06-4779-ac16-f9b367d9ea43
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -23,7 +23,7 @@ Innan användare kan rapportera aktivitetskartdimensioner måste du som administ
 
 ## Dimensioner för aktivitetskarta för analyser {#section_9395A7A5585F4ABE9F7C6CD0124B02A5}
 
-Du kan [anpassa användaråtkomst till dimensioner](https://marketing.adobe.com/resources/help/en_US/reference/groups-dimensions.html) på detaljnivå. Här är aktivitetskartans dimensioner tillgängliga i Analytics:
+Du kan [anpassa användaråtkomst till dimensioner](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/customize-report-access/groups-dimensions.html) på detaljnivå. Här är aktivitetskartans dimensioner tillgängliga i Analytics:
 
 | Dimension | Beskrivning |
 |---|---|
