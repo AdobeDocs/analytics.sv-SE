@@ -3,7 +3,7 @@ description: 'null'
 title: API:er som påverkas av migreringen
 uuid: 9a5d43be-e146-476b-961e-49ea0a30b500
 translation-type: tm+mt
-source-git-commit: 1ec080acf65c31b077a3daf3846f233f01e011b8
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -20,7 +20,7 @@ Följande API-metoder i v1.3 och v1.4 i Admin API stöds inte längre när du b�
 
 * Company.GetLoginKey
 * Permissions.AddLogin
-* Behörigheter.Autentisera
+* Permissions.Authenticate
 * Permissions.DeleteGroup
 * Permissions.DeleteLogin
 * Permissions.GetGroup
@@ -29,8 +29,8 @@ Följande API-metoder i v1.3 och v1.4 i Admin API stöds inte längre när du b�
 * Permissions.GetLogins
 * Permissions.GetReportSuiteGroups
 * Permissions.RemoveLoginSegment
-* Behörigheter.SparaGrupp
-* Behörigheter.SparaInloggning
+* Permissions.SaveGroup
+* Permissions.SaveLogin
 * Permissions.GetLoginSegment
 
 ## Funktioner {#section-8b0b89a862614f729ebdbe092ce99027}
@@ -44,5 +44,5 @@ Ytterligare information:
 * [Allmän information om användarhantering](https://helpx.adobe.com/enterprise/help/users.html)
 * [API:er för användarhantering via adobe.io](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/gettingstarted.html)
 * [API-forum för användarhantering](https://forums.adobe.com/community/umapi/overview)
-* [Migrering av användaråtkomst och hantering för Analytics till Experience Cloud](https://marketing.adobe.com/resources/help/en_US/experience-cloud/admin-console/analytics-migration/)
+* [Migrering av användaråtkomst och hantering för Analytics till Experience Cloud](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html)
 
