@@ -4,7 +4,7 @@ title: Filtrera rapportdata
 topic: Reports and analytics
 uuid: b6dcaaf7-61f0-4793-870d-e1d156575d5a
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -49,7 +49,7 @@ Matchar om termen hittas någonstans i radobjektet. Detta fungerar på samma sä
 
 **Innehåller inte**
 
-Matchar om termen inte hittas någonstans i radobjektet. Du kan filtrera &quot;unspecified&quot;, &quot;none&quot;, &quot;keyword unavailable&quot; och andra [specialvärden](https://marketing.adobe.com/resources/help/en_US/reference/none-unspecified-unknown-other.html) från rapporter med &quot;does not contain&quot;.
+Matchar om termen inte hittas någonstans i radobjektet. Du kan filtrera &quot;unspecified&quot;, &quot;none&quot;, &quot;keyword unavailable&quot; och andra [specialvärden](https://docs.adobe.com/content/help/en/analytics/technotes/unspecified.html) från rapporter med &quot;does not contain&quot;.
 
 Innehåller inte: `none`
 
