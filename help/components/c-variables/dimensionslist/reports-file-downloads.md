@@ -4,7 +4,7 @@ title: Filhämtningar
 topic: Reports
 uuid: 897fc221-aa30-4eac-aca6-bccb76adaf71
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -33,8 +33,8 @@ Marknadsföringsrapporter samlar in information om filer som laddats ned från e
 
 1. Leta reda på den globala JavaScript-filen på din plats. Detta har ofta fått ett namn [!DNL s_code.js]men kan ha fått ett nytt namn. Om namnet har ändrats kan du söka efter värdet i JavaScript-filerna på webbplatsen, *`s.account`* som är en del av JavaScript-koden.
 
-1. Leta reda på variabeln [s.trackDownloadLinks](https://marketing.adobe.com/resources/help/en_US/sc/implement/c_trackdownllinks.html) i filen. Kontrollera att det är inställt på *true*
+1. Leta reda på variabeln [s.trackDownloadLinks](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/trackdownloadlinks.html) i filen. Kontrollera att det är inställt på *true*
 
-1. Leta reda på variabeln [s.linkDownloadFileTypes](https://marketing.adobe.com/resources/help/en_US/sc/implement/c_linkdownfiletypes.html) . Kontrollera att alla filtillägg som behövs finns med i listan. Om det behövs lägger du till saknade tillägg som [!DNL .zip], [!DNL .pdf]och så vidare.)
+1. Leta reda på variabeln [s.linkDownloadFileTypes](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/linkdownloadfiletypes.html) . Kontrollera att alla filtillägg som behövs finns med i listan. Om det behövs lägger du till saknade tillägg som [!DNL .zip], [!DNL .pdf]och så vidare.)
 
 Om dessa variabler verkar vara korrekt konfigurerade, men ändå inte tar emot data, bör de användare i organisationen som stöds kontakta Kundtjänst. [!UICONTROL File Downloads Report]
