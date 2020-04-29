@@ -5,7 +5,7 @@ title: Om klassificeringar
 topic: Admin tools
 uuid: abc1a1be-8e37-4b7e-81fd-3e99ac27fc6a
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -38,7 +38,7 @@ Anta att ni i stället för att bara visa kampanjer med spårningskod vill se ka
 
 Rapportering och analys innehåller fördefinierade klassificeringar för spårningskodvariabeln, som erbjuder klassificeringsbaserade rapporter som kallas Creative Elements och Campaigns. Du måste konfigurera klassificeringar manuellt för alla andra konverterings- och trafikvariabler.
 
-Se [Trafikklassificeringar](/help/admin/admin/c-traffic-variables/traffic-classifications.md) och [Konverteringsklassificeringar](https://marketing.adobe.com/resources/help/en_US/reference/conversion_classifications.html).
+Se [Trafikklassificeringar](/help/admin/admin/c-traffic-variables/traffic-classifications.md) och [Konverteringsklassificeringar](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
 
 I följande tabell beskrivs de olika typer av klassificeringar som är tillgängliga och de variabeltyper som stöder dem. Granska informationen i den [allmänna filstrukturen](/help/components/c-classifications2/c-classifications-importer/c-saint-data-files.md) innan du överför datafiler.
 
