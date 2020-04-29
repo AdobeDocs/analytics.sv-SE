@@ -3,7 +3,7 @@ description: Med sidanalys i realtid (Live-läge) kan du få resultat med minima
 title: Realtidsanalys (Live)
 topic: Activity map
 translation-type: tm+mt
-source-git-commit: 713a73a1d57d93c579e0da58e464cecab3f9d773
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -14,7 +14,7 @@ Med sidanalys i realtid (Live-läge) kan du få resultat med minimal granularite
 
 Activity Map visar nu analysdata i steg om 1 minut till 15 minuter för att övervaka länkpopulariteten baserat på mikrotrender för valda sidor. Detta är särskilt viktigt för förlag när det gäller att följa upp och reagera på ökat eller minskat intresse för berättelser och för att övervaka trafikflödet i realtid.
 
-Som ägare av webbplatsinnehåll är en del av ditt jobb att förstå när du ska marknadsföra och ta bort innehåll och behålla upplevelsen konstant relevant. Realtidsdata är livsnerven i detta ansvar. Om ni förstår vilka länkar och vilket innehåll som trendar just nu kan ni agera snabbt och beslutsamt för att hålla läsarna och kunderna engagerade med ert varumärke.
+Som ägare av webbplatsinnehåll är en del av ditt jobb att förstå när vi ska marknadsföra och ta bort innehåll och behålla vår upplevelse konstant relevant. Realtidsdata är livsnerven i detta ansvar. Om ni förstår vilka länkar och vilket innehåll som trendar just nu kan ni agera snabbt och beslutsamt för att hålla läsarna och kunderna engagerade med ert varumärke.
 
 ![](assets/live_mode.png)
 
@@ -39,6 +39,6 @@ När [A4T-integreringen](https://docs.adobe.com/content/help/en/target/using/int
 * För liveströmmar, realtidsrapporter och API-begäranden samt aktuella data för trafikvariabler fördröjs bara träffar med ett extra data-ID.
 * För aktuella data om konverteringsmått, slutförda data och dataflöden fördröjs alla träffar ytterligare 5-7 minuter.
 
-Tänk på att latensökningen börjar efter att du har implementerat [identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/), även om du inte har implementerat den här integreringen fullständigt.
+Tänk på att latensökningen börjar efter att du har implementerat [identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html), även om du inte har implementerat den här integreringen fullständigt.
 
 Mer information [här](/help/analyze/activity-map/activitymap-standard-live.md).
