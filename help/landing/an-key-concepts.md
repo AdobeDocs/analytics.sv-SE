@@ -2,7 +2,7 @@
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av konceptet och en specifik dokumentationslänk med ytterligare information om ämnet.
 title: Adobe Analytics - viktiga begrepp
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -19,7 +19,7 @@ Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en 
 | Rapporter och analyser (tidigare SiteCatalyst) | Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet. | [Rapporter och analyser - startsida](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html) |
 | Report Builder | Excel-tillägg som gör att du kan skapa anpassade förfrågningar från Adobe Analytics-data och visualisera dem med Microsoft Excel. | [Report Builder - startsida](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html) |
 | Ad hoc-analys (tidigare Discover) | Java-baserat verktyg för avancerad digital analys. | [Ad Hoc Analysis - startsida](https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/adhoc-home.html) |
-| Data Workbench (tidigare Insight) | Utformad för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner både online och offline över flera kanaler. | [Data Workbench-klient](https://marketing.adobe.com/resources/help/en_US/insight/client/) |
+| Data Workbench (tidigare Insight) | Utformad för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner både online och offline över flera kanaler. | [Data Workbench-klient](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html) |
 | Datalager | Rådata, obearbetade data för lagring och anpassade rapporter som du kan köra genom att filtrera data. Inte träffnivå. | [Datalagrets startsida](https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse.html) |
 | Adobe Mobile Services | Sammanför funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud, så att ni kan förstå och förbättra användarengagemanget med era program. | [Mobiltjänster - startsida](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) |
 | Adobe Exchange Data Connectors (tidigare Genesis) | Importera spårningsdata från tredjepartsprogram till Analytics för att ge heltäckande insyn i prestanda på en central plats. | [Data Connectors - startsida](https://marketing.adobe.com/developer/documentation/genesis/c-overview-how-it-works) |
@@ -48,7 +48,7 @@ Klicka [här](https://docs.adobe.com/content/help/en/analytics/technotes/terms.h
 
 | Rapport | Beskrivning | Dokumentationslänk |
 |--- |--- |--- |
-| Full Dimensions/Reports List | Definition av alla dimensioner/rapporter som är tillgängliga i Adobe Analytics. | [Dimensioner](https://marketing.adobe.com/resources/help/en_US/reference/reports_descriptions.html) |
+| Full Dimensions/Reports List | Definition av alla dimensioner/rapporter som är tillgängliga i Adobe Analytics. | [Dimensioner](https://docs.adobe.com/content/help/en/analytics/components/variables/c-variables.html) |
 | Reklamanalys | Analysera alla dina Google- och Bing-betalsökdata sida vid sida, inifrån Adobe Analytics. Dimensioner som skapas genom integreringen är Ad Platform, Keyword, Match Type osv. Mätvärden som skapas är AMO Impressions, AMO Clicks, AMO Cost, Avg. Position och medel. Kvalitetspoäng. | [Reklamanalys](https://docs.adobe.com/help/en/analytics/integration/advertising-analytics/overview.html) |
 | Målgruppsanalys | Berika inkommande Analytics-träffar med en användares målgruppsmedlemskap i AAM. kan ni införliva AAM-målgruppsdata som demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data och annonsvisningsdata i alla Analytics-arbetsflöden. Dimensioner som skapas genom den här integreringen är Audience ID och Audience Name. | [Målgruppsanalys](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/mc-audiences-aam.html) |
 | Attributions-IQ | Gör det möjligt för er att förstå hur meningsfullt engagemang sker under hela kundresan och på ett intelligent sätt identifiera inflationspunkter som leder kunderna till målresultat och optimera marknadsföringsinitiativen på ett effektivt sätt. Modellerna omfattar första, sista, linjära, deltagande, j-formade, omvänd j-formade, u-form, samma beröring, anpassad och tidsfördröjning. | [Attributions-IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution.html) |
@@ -81,8 +81,8 @@ Klicka [här](https://docs.adobe.com/content/help/en/analytics/technotes/terms.h
 
 | Alternativ | Beskrivning | Dokumentationslänk |
 |---|---|---|
-| Klassificeringsimportör | Importera metadata mot hämtade dimensioner via webbläsare eller FTP-överföring. Manuell metod jämfört med Rule Builder. | [Klassificeringsimportör](https://marketing.adobe.com/resources/help/en_US/reference/c_working_with_saint.html) |
-| Regelverktyget | Skapa automatiskt metadataklassificeringar av dimensioner baserat på användardefinierade regler. | [Klassificeringsregelverktyget](https://marketing.adobe.com/resources/help/en_US/reference/classification_rule_builder.html) |
+| Klassificeringsimportör | Importera metadata mot hämtade dimensioner via webbläsare eller FTP-överföring. Manuell metod jämfört med Rule Builder. | [Klassificeringsimportör](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html) |
+| Regelverktyget | Skapa automatiskt metadataklassificeringar av dimensioner baserat på användardefinierade regler. | [Klassificeringsregelverktyget](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html) |
 | Kundattribut | CRM-data överförda till Experience Cloud för användning i Adobe Analytics och Adobe Target. | [Kundattribut](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) |
 | Datakällor | Importera offlinemått i Analytics mot dimensioner eller helt enkelt efter dag. | [Datakällor](https://docs.adobe.com/content/help/en/analytics/import/data-sources/datasrc-home.html) |
 | Adobe Exchange Data Connectors | Se [Analysverktyg](/help/landing/an-key-concepts.md) |  |
@@ -107,7 +107,7 @@ Klicka [här](https://docs.adobe.com/content/help/en/analytics/technotes/terms.h
 | App Measurement (s_code) | Global variabelhantering | [AppMeasurement](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/appmeasurement-js/appmeasure-mjs.html) |
 | Program-SDK | Anpassat paket som innehåller en förifylld version av konfigurationsfilen för appar. | <ul><li>[iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)</li><li>[Android](https://docs.adobe.com/content/help/en/mobile-services/android/getting-started-android/requirements.html)</li></ul> |
 | DTM och Adobe Launch | Se Analysverktyg. |  |
-| VISTA | Gör att du kan använda logik på serversidan för att ändra eller segmentera data när de samlas in. | [VISTA-regler](https://marketing.adobe.com/resources/help/en_US/reference/VISTA.html) |
+| VISTA | Gör att du kan använda logik på serversidan för att ändra eller segmentera data när de samlas in. | [VISTA-regler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html) |
 | Bearbetar regler | Möjlighet att ange, ändra och kopiera variabler i analysgränssnittet för att ändra insamlade data. | [Bearbetar regler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) |
 | Felsökningsalternativ | Det finns flera felsökare och paketutlösare som kan hjälpa dig att validera implementeringen, inklusive Adobe Experience Cloud-felsökaren. | [Adobe Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en) |
 | API för datainfogning | API:t för datainfogning är en mekanism för datainsamling på serversidan och överföring till Experience Cloud-servrar. I stället för att använda JavaScript-fyrar på varje webbsida för att överföra besöksdata till Experience Cloud-servrar, samlar serversidesdata in data som enbart baseras på webbläsarbegäranden och webbserversvar. | [Steg för att implementera API:t för infogning av Adobe Analytics-data med POST](https://helpx.adobe.com/analytics/kb/data-insertion-api-post-method-adobe-analytics.html) |
