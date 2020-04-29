@@ -4,7 +4,7 @@ title: Konfigurera lyckade händelser
 topic: Admin tools
 uuid: ca3d3f46-5fad-4481-aef6-04cad6bc6e2d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -38,7 +38,7 @@ Steg som beskriver hur du konfigurerar lyckade händelser.
 
    >[!NOTE]
    >
-   >Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagarvärden i [verktyget för beräkning av](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/participation_metric.html) statistik.
+   >Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagarvärden i [verktyget för beräkning av](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/participation-metric.html) statistik.
 
 1. Klicka på **[!UICONTROL Save]**.
 
