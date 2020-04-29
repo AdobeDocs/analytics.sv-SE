@@ -5,7 +5,7 @@ title: Krav och överföringsgränser
 topic: Developer and implementation
 uuid: d79fca77-fa0e-4171-b978-cdee5c67d9df
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -57,7 +57,7 @@ Datakällor har stöd för multibyte-kodning. Datakällor försöker identifiera
  <tbody> 
   <tr> 
    <td colname="col1"> UTF-8 </td> 
-   <td colname="col2"> <p>Stöds. Rapportsviten som används med datakällor måste ha stöd för flera byte-tecken aktiverat. </p> <p>Se <a href="https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html"  > New Report Suite</a> i hjälpen </p> </td> 
+   <td colname="col2"> <p>Stöds. Rapportsviten som används med datakällor måste ha stöd för flera byte-tecken aktiverat. </p> <p>Se <a href="https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html"  > New Report Suite</a> i hjälpen </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> UTF-8 med byteordningsmärke (EF BB BF) </td> 
