@@ -5,7 +5,7 @@ title: Användning av tidsstämplar som tillval
 topic: Developer and implementation
 uuid: 956aaa16-6ffa-4b63-b022-a659f5143e00
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -22,7 +22,7 @@ Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 
 >[!NOTE] Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
 
-Se [Tidsstämplar Valfritt](https://marketing.adobe.com/resources/help/en_US/reference/timestamp-optional.html) om du vill ha mer installationsinformation.
+Se [Tidsstämplar Valfritt](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html) om du vill ha mer installationsinformation.
 
 ## Valfria tidsstämplar: Integrera tidsstämplade och icke tidsstämplade data {#section_BF17CB593044462B993FD0D28EA56518}
 
@@ -62,7 +62,7 @@ Nedan följer god praxis och några krav och begränsningar som du bör känna t
 
    Data som inte är i ordning kan omfatta sena data från datainsamling offline och sena träffar, eller osynkroniserade klockor på offline-mobilenheter. Oordnade data kan påverka tidsberäkningar negativt (t.ex. tidsåtgång), attribuering (eVar persistence), antal besök/besök samt kundvägsrapporter.
 
-* Du bör inte använda tidsstämplar när du anger ett [s.visitorID](https://marketing.adobe.com/resources/help/en_US/sc/implement/visid_custom.html) . Det kan leda till oordnade data.
+* Du bör inte använda tidsstämplar när du anger ett [s.visitorID](https://docs.adobe.com/content/help/en/analytics/technotes/visitor-identification.html) . Det kan leda till oordnade data.
 
 * Hybridappar som består av en app (tidsstämplade, offlinedata) som öppnar en webbläsare (utan tidsstämpel, livedata) bör inte använda tidsstämplar. Det resulterar i felaktig rapportering av sessionen.
 
