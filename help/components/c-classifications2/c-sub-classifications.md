@@ -5,7 +5,7 @@ title: Om underklassificeringar
 topic: Admin tools
 uuid: 48bd7fc1-54a1-40ef-bc55-395338522f2d
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -54,7 +54,7 @@ Exempel:
 
 >[!NOTE] Om kolumnen i en datafil är tom genererar Adobe automatiskt unika nycklar för varje datarad. [!UICONTROL Key] Om du vill undvika att en fil skadas när du överför en datafil med klassificeringsdata på andra nivån eller högre, ska du fylla varje rad i [!UICONTROL Key] kolumnen med en asterisk (*).
 
-Se [Vanliga problem](https://marketing.adobe.com/resources/help/en_US/home/index.html#kb-common-saint-upload-issues) vid överföring av klassificering för felsökningshjälp.
+Se [Vanliga problem](https://helpx.adobe.com/analytics/kb/common-saint-upload-issues.html) vid överföring av klassificering för felsökningshjälp.
 
 ## Exempel
 
