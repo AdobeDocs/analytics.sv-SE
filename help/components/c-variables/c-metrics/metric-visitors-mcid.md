@@ -3,7 +3,7 @@ description: Finns i Analysis Workspace och Segment Builder.
 title: Besökare med Experience Cloud ID
 uuid: 47ebd3d6-a921-4e51-ac7a-b8d5fb9565e0
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -16,7 +16,7 @@ Visar antalet besökare som har ett Experience Cloud ID. Ni kan förstå vilka s
 
 >[!IMPORTANT]
 >
->För att det här måttet ska visas måste du ha [identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/) igång för rapportsviten.
+>För att det här måttet ska visas måste du ha [identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html) igång för rapportsviten.
 
 ## Felsök konfigurationen av Experience Cloud ID {#section_679E62142A3E46548FF8FBDA46568005}
 
@@ -26,7 +26,7 @@ Om du vill använda besökarna med Experience Cloud ID-mätvärden drar du dem b
 
 ![](assets/metric-mcvid1.png)
 
-I det här exemplet observerar du att varje sida har samma antal unika besökare som besökare med ett Experience Cloud ID. Det totala antalet unika besökare är dock större än det totala antalet besökare med Experience Cloud ID. Om du vill hitta sidor som inte anger MCID för alla besökare [skapar du ett beräknat mått](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/cm_build_metrics.html) med den här definitionen:
+I det här exemplet observerar du att varje sida har samma antal unika besökare som besökare med ett Experience Cloud ID. Det totala antalet unika besökare är dock större än det totala antalet besökare med Experience Cloud ID. Om du vill hitta sidor som inte anger MCID för alla besökare [skapar du ett beräknat mått](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) med den här definitionen:
 
 ![](assets/metric-mcvid2.png)
 
@@ -38,7 +38,7 @@ Nu kan du snabbt se att&quot;produktsnabbvyer&quot; inte implementeras korrekt m
 
 När du har identifierat sidor som har besökare utan ett MCID bör du kunna återta det till ditt implementeringsteam så att de kan åtgärda de sidorna.
 
-I vissa fall kanske du märker att ett litet antal MCID inte är inställda för vissa besökare trots att MCID-tjänsten har implementerats på sidan. I dessa fall beror detta troligen på en vanlig felkonfiguration av JavaScript- eller DTM-konfigurationen för Analytics i vilken AppMeasurement-funktionen anropas innan en rapportserie tillhandahålls. För att undvika detta måste du [infoga AppMeasurement-kärnkoden](https://marketing.adobe.com/resources/help/en_US/sc/implement/dtm/t_appmeasurement-code.html) korrekt.
+I vissa fall kanske du märker att ett litet antal MCID inte är inställda för vissa besökare trots att MCID-tjänsten har implementerats på sidan. I dessa fall beror detta troligen på en vanlig felkonfiguration av JavaScript- eller DTM-konfigurationen för Analytics i vilken AppMeasurement-funktionen anropas innan en rapportserie tillhandahålls. För att undvika detta måste du [infoga AppMeasurement-kärnkoden](https://docs.adobe.com/content/help/en/analytics/implementation/other/dtm/analytics-tool/t-appmeasurement-code.html) korrekt.
 
 Observera att alla segment som baseras på sidan&quot;Produktsnabbvyer&quot; (som visas ovan) som du delar med Experience Cloud troligen har en mycket låg matchningsfrekvens med andra Experience Cloud-lösningar. Om du vill kontrollera MCID-täckningen för ett segment kan du skapa en rapport enligt följande:
 
