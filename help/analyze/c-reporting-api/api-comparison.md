@@ -3,7 +3,7 @@ description: En jämförelsetabell för API:er för analysrapportering. Det finn
 title: API-jämförelse för analysrapportering
 uuid: fa533a8e-33c0-42f4-a294-cabee0258c8f
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -33,7 +33,7 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
    <td colname="col5"> Fullständigt bearbetade, slutförda data som används för att dra igång stora dataexporter. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><a href="https://marketing.adobe.com/resources/help/en_US/analytics/whitepapers/analytics-data-availability.pdf"  > Latens</a> </p> </td> 
+   <td colname="col1"> <p><a href="https://docs.adobe.com/content/help/en/analytics/technotes/latency.html"  > Latens</a> </p> </td> 
    <td colname="col2"> 30-90 minuter </td> 
    <td colname="col3"> * Sekunder -10 minuter </td> 
    <td colname="col4"> Sekunder -10 minuter </td> 
@@ -47,7 +47,7 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
    <td colname="col5"> Fullständig </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <a href="https://marketing.adobe.com/resources/help/en_US/reference/"  > Rapporteringsgränssnitt</a> </td> 
+   <td colname="col1"> <a href="https://docs.adobe.com/content/help/en/analytics/landing/home.html"  > Rapporteringsgränssnitt</a> </td> 
    <td colname="col2"> Rapporter och analyser, Report Builder, API </td> 
    <td colname="col3"> Realtidsrapport i Rapporter och analyser, Report Builder, API </td> 
    <td colname="col4"> Endast API </td> 
@@ -86,7 +86,7 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/developer/documentation/analytics-reporting-1-4/get-started%E2%80%8B"  > Webbtjänster</a> </p> </td> 
    <td colname="col3"> <p> <a href="https://marketing.adobe.com/developer/documentation/analytics-reporting-1-4/real-time"  > Realtidsrapporter</a> </p> </td> 
    <td colname="col4"> <p> <a href="https://marketing.adobe.com/developer/documentation/analytics-live-stream/overview-1%E2%80%8B"  > Livesream Overview</a> </p> </td> 
-   <td colname="col5"> <p><a href="https://marketing.adobe.com/resources/help/en_US/reference/data_warehouse.html"  > Datalager</a> </p> </td> 
+   <td colname="col5"> <p><a href="https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse.html"  > Datalager</a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
