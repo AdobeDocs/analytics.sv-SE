@@ -5,7 +5,7 @@ title: Rapportera bästa praxis och felsökning
 topic: Reports
 uuid: d4eef0a3-1d26-4460-8a2b-962001c9f846
 translation-type: tm+mt
-source-git-commit: 025ac334f9191b6455eea0530a2a21c01199000a
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -14,10 +14,10 @@ source-git-commit: 025ac334f9191b6455eea0530a2a21c01199000a
 
 Med Adobe Analytics får ni ett flexibelt rapporteringsgränssnitt som gör att ni kan generera olika komplexa rapporter. De flesta rapporter genereras mycket snabbt, men du kan stöta på rapporter som timeout eller misslyckas med att generera. För att undvika fel vid rapportgenerering beskrivs många faktorer som påverkar rapportgenereringshastigheten. Genom att förstå den här informationen kan du strukturera rapporter så att de lättare kan genereras.
 
->[!Note]
+>[!NOTE]
 >Dessa rekommendationer gäller Rapporter och analys, Ad hoc-analys och Report Builder.
->De gäller inte för Analysis Workspace, som har en egen uppsättning [metodtips](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md). De gäller inte heller >för [bästa praxis](https://marketing.adobe.com/resources/help/en_US/reference/data_warehouse_bp.html)för datalager. Ytterligare en uppsättning
->[bästa praxis](https://marketing.adobe.com/developer/en_US/get-started/best-practices/c-best-practices) finns för Adobe Analytics Reporting API.
+>De gäller inte för Analysis Workspace, som har en egen uppsättning [metodtips](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md). De gäller inte heller >för [bästa praxis](https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse-bp.html)för datalager. Ytterligare en uppsättning
+>[bästa praxis](https://www.adobe.io) finns för Adobe Analytics Reporting API.
 
 ## Timeout för rapport och begärandekö {#section_A42AD7E487C749B7B879BAFA814FFEF9}
 
