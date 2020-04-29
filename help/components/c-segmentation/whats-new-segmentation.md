@@ -3,7 +3,7 @@ description: Nya funktioner i Adobe Analytics-segmentering.
 title: Nyheter i segmentering med analyser
 uuid: ac53e984-9af5-4536-8105-345d78cc5653
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -73,7 +73,7 @@ Nya funktioner i Adobe Analytics-segmentering.
    <td colname="col2"> <p>I en"inom"-sats mellan THEN-programsatser kan du lägga till, till exempel,"inom en nyckelordsinstans för sökning","inom en eVar 47-instans". Detta begränsar segmentet till en instans av en dimension. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Analysis Workspace: <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fallout_flow.html"  > Använd segment i bortfallsanalys </a> </p> </td> 
+   <td colname="col1"> <p>Analysis Workspace: <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html"  > Använd segment i bortfallsanalys </a> </p> </td> 
    <td colname="col2"> <p>Du kan skapa segment från en kontaktyta, lägga till segment som kontaktytor och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace. </p> </td> 
   </tr> 
  </tbody> 
@@ -104,7 +104,7 @@ Nya funktioner i Adobe Analytics-segmentering.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Analysis Workspace &gt; Segmentjämförelse </p> </td> 
-   <td colname="col2"> <p> Med panelen <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/segment-comparison.html"  > Segmentjämförelse</a> (Segment IQ) i Analysis Workspace kan kunderna snabbt jämföra två Analytics-segment för att hitta de viktigaste skillnaderna mellan dem för alla datapunkter. </p> </td> 
+   <td colname="col2"> <p> Med panelen <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html"  > Segmentjämförelse</a> (Segment IQ) i Analysis Workspace kan kunderna snabbt jämföra två Analytics-segment för att hitta de viktigaste skillnaderna mellan dem för alla datapunkter. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -119,7 +119,7 @@ Nya funktioner i Adobe Analytics-segmentering.
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Skapa</span> segmentbehörighet </p> </td> 
-   <td colname="col2"> <p>Om användarna inte har behörigheten <a href="https://marketing.adobe.com/resources/help/en_US/reference/groups.html"  ></a>Skapa segment kan de inte längre komma åt segmentbyggaren. </p> </td> 
+   <td colname="col2"> <p>Om användarna inte har behörigheten <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html"  ></a>Skapa segment kan de inte längre komma åt segmentbyggaren. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -168,7 +168,7 @@ Nya funktioner i Adobe Analytics-segmentering.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Behörighetsändringar i Segment Builder </p> </td> 
-   <td colname="col2"> <p>Administratörsanvändaren kan begränsa vilka användare som kan skapa nya segment. Som standard kan alla användare skapa segment. <a href="https://marketing.adobe.com/resources/help/en_US/reference/groups.html"  > Mer ...</a> </p> </td> 
+   <td colname="col2"> <p>Administratörsanvändaren kan begränsa vilka användare som kan skapa nya segment. Som standard kan alla användare skapa segment. <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html"  > Mer ...</a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
