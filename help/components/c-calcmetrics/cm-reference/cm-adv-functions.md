@@ -3,7 +3,7 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 title: Referera till avancerade funktioner
 uuid: 7d1071b9-1737-4b7c-b318-87907dae5619
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -65,7 +65,7 @@ Så här kan måttet&quot;Approximate Customers&quot; användas vid rapportering
 
 ## Uniques överskreds {#section_9C583858A9F94FF7BA054D1043194BAA}
 
-Precis som Count() och RowCount() omfattas [UniquesOver-gränserna](https://marketing.adobe.com/resources/help/en_US/reference/metrics_uniques_high_numbers.html)för Approximate Count Distinct(). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
+Precis som Count() och RowCount() omfattas [UniquesOver-gränserna](https://docs.adobe.com/content/help/en/analytics/technotes/low-traffic.html)för Approximate Count Distinct(). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
 
 ## Jämföra räkningsfunktioner {#section_440FB8FB44374459B2C6AE2DA504FC0B}
 
