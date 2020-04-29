@@ -4,7 +4,7 @@ solution: Experience Cloud
 title: Audience Analytics - översikt
 uuid: 86ef9391-dd6a-495f-a10e-e98bc069dde4
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -44,7 +44,7 @@ Kontrollera att följande krav är uppfyllda:
 * Du är kund till både Audience Manager och Adobe Analytics.
 * Du är Audience Manager-administratör.
 * Du använder identitetstjänsten v1.5 eller senare.
-* AAM- och Adobe Analytics-rapportsviter är [mappade till samma Experience Cloud-organisation](https://marketing.adobe.com/resources/help/en_US/mcloud/report-suite-mapping.html).
-* Du använder vidarebefordran [på](/help/admin/admin/c-server-side-forwarding/ssf.md) serversidan och har implementerat modulen [](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html) Audience Management (ingen DIL-kod) - AppMeasurement 1.5 eller senare.
+* AAM- och Adobe Analytics-rapportsviter är [mappade till samma Experience Cloud-organisation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
+* Du använder vidarebefordran [på](/help/admin/admin/c-server-side-forwarding/ssf.md) serversidan och har implementerat modulen [](https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) Audience Management (ingen DIL-kod) - AppMeasurement 1.5 eller senare.
 
 Dessa krav beskrivs i [målgruppsanalysarbetsflödet](/help/integrate/c-audience-analytics/c-workflow/audiences-workflow.md).
