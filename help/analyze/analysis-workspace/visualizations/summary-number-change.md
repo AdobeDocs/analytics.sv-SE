@@ -3,7 +3,7 @@ description: 'null'
 title: Sammanfattningsnummer och sammanfattning
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 6eda9e3e5bd450213253a8181042c24c318c0300
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -28,8 +28,8 @@ source-git-commit: 6eda9e3e5bd450213253a8181042c24c318c0300
 * Om ett cellintervall är markerat jämförs den första med den sista cellen i intervallet.
 * Om kolumnen är markerad jämförs det första värdet med sig självt, vilket innebär en ändring på 0.
 * Den gröna och röda färgen i sammanfattningsändringen kan styras med:
-   * [Anpassad händelsepolaritet](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html).
-   * Alternativet [Visa uppåttrend som](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/cm_build_metrics.html) för ett beräknat mått.
+   * [Anpassad händelsepolaritet](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html).
+   * Alternativet [Visa uppåttrend som](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) för ett beräknat mått.
 
 ## Ändra inställningar för sammanfattning {#section_2581AC0107634FB4990AB8347E5897AA}
 
