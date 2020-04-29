@@ -3,7 +3,7 @@ description: 'Läs mer om '
 title: Mättyp och attribut
 uuid: 64649698-df2a-42c3-bb31-938f766e1d1f
 translation-type: tm+mt
-source-git-commit: 7a791dda238b04fbee2773c60668eb45db0a1fd0
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -29,9 +29,9 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 
 >[!IMPORTANT]
 >
->I juli 2018 [!DNL Analytics] infördes [attribuerings-IQ](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html), som reviderade hur allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
+>I juli 2018 [!DNL Analytics] infördes [attribuerings-IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html), som reviderade hur allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
 >
->* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i dokumentationen för [Attribution IQ](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html) .
+>* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i dokumentationen för [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html) .
 >* Allokeringsmodellerna&quot;sista beröringen i marknadsföringskanalen&quot; och&quot;Första beröringen i marknadsföringskanalen&quot; migreras till de nya attribueringsmodellerna&quot;Sista beröringen&quot; respektive&quot;Första beröringen&quot; (Obs! &quot;Marknadsföringskanaler&quot; kommer inte att bli inaktuella - bara de två allokeringsmodellerna som visas i beräknade värden kommer att vara det).
 >* Dessutom kommer vi att korrigera hur linjär allokering beräknas. För kunder som använder beräknade värden med linjär allokering kan rapporterna ändras något för att återspegla den nya, korrigerade attribueringsmodellen. Den här ändringen av beräknade värden återspeglas i Analysis Workspace, Reports &amp; Analytics, Reporting API, Report Builder och Ad Hoc Analysis. Mer information finns i **How Linear Allocation works (fr.o.m. 19 juli 2018**) nedan.
 >
