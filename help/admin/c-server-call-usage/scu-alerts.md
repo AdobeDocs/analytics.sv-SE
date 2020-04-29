@@ -3,7 +3,7 @@ description: Lägg till eller hantera alla användningsvarningar för servern. N
 title: Varningar om användning av serversamtal
 uuid: 701fd542-5b24-42df-97a0-08e10929fa48
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -14,7 +14,7 @@ När du skapar en avisering gäller den alla rapportsviter i alla inloggningsfö
 
 ## Översikt
 
-En ny aviseringskategori med namnet **[!UICONTROL Server Calls Usage Alert]** ingår i det befintliga [aviseringshanteringsgränssnittet](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/intellligent_alerts.html) .
+En ny aviseringskategori med namnet **[!UICONTROL Server Calls Usage Alert]** ingår i det befintliga [aviseringshanteringsgränssnittet](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html) .
 
 Den är förifylld med **1 standardvarning** som visas i alla inloggningsföretag som har åtkomst till funktionen Serversamtalsanvändning. Den här varningen utlöser ett meddelande adresserat till alla inloggningsföretagets administratörer om något av följande villkor uppfylls:
 
