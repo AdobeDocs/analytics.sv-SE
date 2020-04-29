@@ -5,7 +5,7 @@ title: Bot Rules - översikt
 topic: Admin tools
 uuid: 3cb9e29d-1c37-43de-b7ac-34441093a60e
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -37,7 +37,7 @@ Adobe kan inte tillhandahålla den detaljerade IAB-robotlistan till kunder, men 
 
 ## Anpassade robotregler
 
->[!NObs] ! Användargränssnittet tillåter att 500 regler definieras manuellt. När den här gränsen har nåtts måste reglerna hanteras i grupp med alternativen Importera fil och Exportera batchregler.
+>[!NOTE] Användargränssnittet tillåter att 500 regler definieras manuellt. När den här gränsen har nåtts måste reglerna hanteras i grupp med alternativen Importera fil och Exportera batchregler.
 
 Med anpassade robotregler kan du filtrera trafikbaserade villkor som du definierar.
 
