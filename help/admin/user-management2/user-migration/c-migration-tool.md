@@ -3,7 +3,7 @@ description: Det ni behöver veta om migreringen av användar-ID:n för Analytic
 title: Migrering av Analytics-användare till Admin Console
 uuid: 7d020713-693b-4945-aa52-3669a631aacb
 translation-type: tm+mt
-source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -73,7 +73,7 @@ Svar på frågor som du kan ha innan migreringen.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Uppdatera Report Builder </p> </td> 
-   <td colname="col2"> <p> <p>Viktigt: Uppdatera installationen av <a href="https://marketing.adobe.com/resources/help/en_US/arb/t_install_arb.html"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
+   <td colname="col2"> <p> <p>Viktigt: Uppdatera installationen av <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>När börjar migreringen? </p> </td> 
@@ -95,7 +95,7 @@ Svar på frågor som du kan ha innan migreringen.
      <li id="li_418476105FE341229CE146E730AAB33D">Befintliga behörighetsgrupper i Analytics replikeras automatiskt i Admin Console som produktprofiler, inklusive deras beskrivning och detaljerade behörigheter för rapportsviter, mätvärden, dimensioner, analyser och Report Suite-verktyg. </li> 
      <li id="li_412F88C454B0455A8F3BC8016226855C">Om någon av dina nuvarande Analytics-användare har skapats i Admin Console (vilket innebär att de har ett länkat Adobe/Enterprise ID) läggs de till i rätt produktprofiler i Admin Console. </li> 
      <li id="li_8A05137EC05C4FD5910E73FE58300DCB">Avsnittet Användarhantering på fliken Admin i Analytics kommer att vara <span class="term"> skrivskyddat</span>. Du kommer inte längre att kunna skapa nya användare eller behörighetsgrupper här och du måste utföra båda dessa funktioner i Admin Console. Mer information finns i Analytics-funktioner som inte stöds i Admin Console <a href="/help/admin/user-management2/user-migration/c-migration-tool.md#section-928ffba27a0446e0af575b720434ef56"></a> . </li> 
-     <li id="li_2742DE69E9B547198A58E1F33E908361">Som administratör får du åtkomst till <a href="https://marketing.adobe.com/resources/help/en_US/experience-cloud/admin-console/analytics-migration/t_migrate-users.html">migreringsverktyget</a>för användar-ID. Dessutom visas ett meddelande i produkten som innehåller slutdatumet för migreringen (vanligtvis 60 dagar i framtiden) utöver länkar till hjälpinnehåll och vanliga frågor. </li> 
+     <li id="li_2742DE69E9B547198A58E1F33E908361">Som administratör får du åtkomst till <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/migrate-users/t-migrate-users.html">migreringsverktyget</a>för användar-ID. Dessutom visas ett meddelande i produkten som innehåller slutdatumet för migreringen (vanligtvis 60 dagar i framtiden) utöver länkar till hjälpinnehåll och vanliga frågor. </li> 
      <li id="li_095D42E3A3544FC59A60A8C8F94C971B">Du får tillgång till fliken Behörigheter på Admin Console där du kan skapa produktprofiler med alla detaljerade alternativ du känner till i Analytics. </li> 
     </ul> </td> 
   </tr> 
@@ -314,7 +314,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
 
 Du kanske vill förmedla migreringsplanen proaktivt till dina nuvarande användare. Här är en mall som du kan anpassa för att skicka alla era nuvarande Analytics-användare:
 
-Om du vill skicka e-post till alla användare går du till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [E-postanvändare](https://marketing.adobe.com/resources/help/en_US/reference/t_email_users.html).
+Om du vill skicka e-post till alla användare går du till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [E-postanvändare](https://docs.adobe.com/help/en/analytics/admin/user-product-management/t-email-users.html).
 
 **Ämne:** Kommer snart - ett nytt sätt att logga in på Adobe Analytics och Adobe Experience Cloud.
 
@@ -326,9 +326,7 @@ Vårt företag börjar migrera alla Adobe Analytics-konton från [!DNL https://m
 
 **Användbara resurser:**
 
-[Logga in och hantera dina profilinställningar](https://marketing.adobe.com/resources/help/en_US/mcloud/getting-started-experience-cloud.html).
-
-[Om moln, bastjänster och lösningar](https://marketing.adobe.com/resources/help/en_US/mcloud/solutions_capability_names.html) i Experience Cloud
+[Logga in och hantera dina profilinställningar](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/getting-started-experience-cloud.html).
 
 Kontakta era Analytics-administratörer om ni har några frågor eller problem.
 
