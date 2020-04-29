@@ -6,7 +6,7 @@ title: Behörighetsändringar för användare och grupper
 topic: Admin tools
 uuid: 94f2727b-17e4-4003-a222-35c821d6959e
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -61,12 +61,12 @@ Eftersom API:t och gränssnittet använder samma behörighetssystem, kommer alla
    <td colname="col2"> <p>Du kan anpassa behörigheter för att inkludera eller exkludera åtkomst till dimensioner (utöver mått). </p> 
     <ul id="ul_DA5A54223673474E9151AF979DA50659"> 
      <li id="li_C3E82F7BC07A4F2F83A85D3D511292CC"> <p>Alla aktuella dimensioner och mått i anpassade grupper har automatiskt migrerats till de nya kategorierna. Om en befintlig grupp har mätvärden aktiverade får den som standard alla nya tillåtna mått (eVars och innehållsmedvetna) och mätvärden. </p> </li> 
-     <li id="li_CC56F9181CC14AB59318628E72F2E8C9"> Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av tillgången till den <a href="https://marketing.adobe.com/resources/help/en_US/reference/c_classifications.html"> variabel</a> som klassificeringen baseras på. </li> 
+     <li id="li_CC56F9181CC14AB59318628E72F2E8C9"> Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av tillgången till den <a href="https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html"> variabel</a> som klassificeringen baseras på. </li> 
     </ul> <p>Se <a href="/help/admin/user-management2/c-customize-report-access/groups-dimensions.md"> Anpassa dimensionsbehörigheter</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Admin Console </p> </td> 
-   <td colname="col2"> <p>Rekommenderas endast för nya kunder eller kunder med företag som <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html"> etablerats i Experience Cloud</a>. En migrering av befintliga <span class="keyword"> Analytics</span> -kunder till identitetshanteringssystemet i <span class="keyword"> Experience Cloud</span> planeras. </p> <p>Mer information finns i <a href="https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html"> Hantera produktbehörigheter på Admin Console</a>. </p> </td> 
+   <td colname="col2"> <p>Rekommenderas endast för nya kunder eller kunder med företag som <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html"> etablerats i Experience Cloud</a>. En migrering av befintliga <span class="keyword"> Analytics</span> -kunder till identitetshanteringssystemet i <span class="keyword"> Experience Cloud</span> planeras. </p> <p>Mer information finns i <a href="https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html"> Hantera produktbehörigheter på Admin Console</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -137,7 +137,7 @@ I följande tabell visas uppgifter och var de kan utföras (beroende på ett fö
  <tbody> 
   <tr> 
    <td colname="col1"> Skapa en användare </td> 
-   <td colname="col2"> <p>Admin Console (som skapar en användare och lägger till honom eller henne i en Analytics- <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html"> produktkonfiguration</a> skapar också användarkontot i Analytics). </p> <p> <a href="/help/admin/user-management2/c-user-management/t-add-user-account.md"> Administratörsverktyg</a> </p> </td> 
+   <td colname="col2"> <p>Admin Console (som skapar en användare och lägger till honom eller henne i en Analytics- <a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html"> produktkonfiguration</a> skapar också användarkontot i Analytics). </p> <p> <a href="/help/admin/user-management2/c-user-management/t-add-user-account.md"> Administratörsverktyg</a> </p> </td> 
    <td colname="col3"> <p> <a href="https://adminconsole.adobe.com/enterprise/"> Admin Console</a> </p> </td> 
    <td colname="col4"> <p> <a href="https://adminconsole.adobe.com/enterprise/"> Admin Console</a> </p> </td> 
   </tr> 
@@ -162,8 +162,8 @@ I följande tabell visas uppgifter och var de kan utföras (beroende på ett fö
   <tr> 
    <td colname="col1"> Skapa en grupp </td> 
    <td colname="col2"> <p>Admin Console - När en grupp skapas i Admin Console visas en mappad grupp i Analytics i Admin Tools, men den mappade gruppens namn kan inte ändras från Admin Tools eller tas bort från Admin Tools. </p> <p>Administratörsverktyg. </p> </td> 
-   <td colname="col3"> <p>Admin Console (<a href="https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html"> skapa produktkonfiguration</a>) </p> </td> 
-   <td colname="col4"> <p>Admin Console (<a href="https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html"> skapa produktkonfiguration</a>) </p> </td> 
+   <td colname="col3"> <p>Admin Console (<a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html"> skapa produktkonfiguration</a>) </p> </td> 
+   <td colname="col4"> <p>Admin Console (<a href="https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html"> skapa produktkonfiguration</a>) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Redigera användare i en grupp </td> 
