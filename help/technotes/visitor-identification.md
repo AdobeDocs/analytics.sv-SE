@@ -6,7 +6,7 @@ title: Identifiera unika besökare
 topic: Developer and implementation
 uuid: ed4dee75-ecfb-4715-8122-461983c7dd8f
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -58,7 +58,7 @@ När en begäran skickas till Adobe datainsamlingsserver kontrolleras rubriken f
 
 Vissa webbläsare, till exempel Apple Safari, lagrar inte längre cookies som har angetts i HTTP-huvudet från domäner som inte matchar domänen för den aktuella webbplatsen (detta är en cookie som används i en tredjepartskontext eller en cookie från tredje part). Om du till exempel är på `mysite.com` och datainsamlingsservern är `mysite.omtrdc.net`det kan den cookie som returneras i HTTP-huvudet från `mysite.omtrdc.net` avvisas av webbläsaren.
 
-För att undvika detta har många kunder implementerat CNAME-poster för sina datainsamlingsservrar som en del av en [förstapartscookie-implementering](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/). Om en CNAME-post har konfigurerats för att mappa ett värdnamn på kundens domän till datainsamlingsservern (till exempel mappning `metrics.mysite.com` till `mysite.omtrdc.net`), lagras besökar-ID-cookien eftersom datainsamlingsdomänen nu matchar webbplatsens domän. Detta ökar sannolikheten för att besökar-ID-cookien ska lagras, men medför en viss belastning när du behöver konfigurera CNAME-poster och underhålla SSL-certifikat för datainsamlingsservrar.
+För att undvika detta har många kunder implementerat CNAME-poster för sina datainsamlingsservrar som en del av en [förstapartscookie-implementering](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html). Om en CNAME-post har konfigurerats för att mappa ett värdnamn på kundens domän till datainsamlingsservern (till exempel mappning `metrics.mysite.com` till `mysite.omtrdc.net`), lagras besökar-ID-cookien eftersom datainsamlingsdomänen nu matchar webbplatsens domän. Detta ökar sannolikheten för att besökar-ID-cookien ska lagras, men medför en viss belastning när du behöver konfigurera CNAME-poster och underhålla SSL-certifikat för datainsamlingsservrar.
 
 ### Cookies på mobila enheter {#section_7D05AE259E024F73A95C48BD1E419851}
 
@@ -68,7 +68,7 @@ När mobilenheter spåras med hjälp av cookies finns det vissa inställningar s
 
 Identitetstjänsten ersätter den gamla ID-mekanismen för Analytics-besökare och krävs av [!UICONTROL Heartbeat] videomätning, Analytics for Target och framtida bastjänster och integreringar i Experience Cloud.
 
-Mer information om den här tjänsten finns i [Identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/) .
+Mer information om den här tjänsten finns i [Identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html) .
 
 ## Identifiera mobila enheter
 
