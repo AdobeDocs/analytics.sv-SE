@@ -6,7 +6,7 @@ title: Anpassa behörigheter för mätvärden
 topic: Admin tools
 uuid: 7bfff68a-2add-4068-a07d-87a4f624634c
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
 
 Aktivera behörigheter för trafikstatistik, konverteringsstatistik, anpassade händelser, lösningshändelser och innehållsmedveten åtkomst.
 
@@ -27,7 +27,7 @@ Inställningarna på sidan Anpassa mått gäller för de rapportsviter som är m
 
 ## Lösningshändelser
 
-Förutom [Custom Events](https://marketing.adobe.com/resources/help/en_US/sc/implement/events.html)omfattar den här kategorin även Analytics-lösningshändelser, inklusive Experience Manager (AEM), Advertising Cloud (AMO), Mobile, Video och Social.). För varje anpassad grupp med mätvärden läggs alla analyslösningshändelser till som nya mätvärden.
+Förutom [Custom Events](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html)omfattar den här kategorin även Analytics-lösningshändelser, inklusive Experience Manager (AEM), Advertising Cloud (AMO), Mobile, Video och Social.). För varje anpassad grupp med mätvärden läggs alla analyslösningshändelser till som nya mätvärden.
 
 Du kan ange behörigheter för händelser i anpassade händelser och analyslösningar (AEM, AMO, Mobile, Video och Social).
 
