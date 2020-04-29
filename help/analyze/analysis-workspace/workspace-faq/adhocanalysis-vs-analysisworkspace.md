@@ -3,7 +3,7 @@ description: Jämför Ad hoc-analysterminologi och -uppgifter med Analysis Works
 title: Analysis Workspace jämfört med Ad hoc-analys
 uuid: e4b3e40f-2b08-49a0-95f1-384d85c1640d
 translation-type: tm+mt
-source-git-commit: 025ac334f9191b6455eea0530a2a21c01199000a
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -14,7 +14,7 @@ Jämför Ad hoc-analysterminologi och -uppgifter med Analysis Workspace.
 
 Analysis Workspace innehåller en stor del av Ad hoc-analysfunktionen i webbläsararbetsflödet. Även om vissa termer och funktioner är desamma mellan produkterna finns det några nya termer och analysmetoder som introduceras i Analysis Workspace.
 
-En teknisk jämförelse av de viktigaste funktionerna och systemkraven för dessa två produkter finns [här](https://marketing.adobe.com/resources/help/en_US/reference/analytics-product-comparison.html).
+En teknisk jämförelse av de viktigaste funktionerna och systemkraven för dessa två produkter finns [här](https://docs.adobe.com/content/help/en/analytics/admin/admin-overview/analytics-product-comparison.html).
 
 ## Jämförelse av nyckelterminologi {#section_6109406B83B043A18E46D38F130B1D2E}
 
