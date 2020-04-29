@@ -5,7 +5,7 @@ title: Översikt över urval/delning
 topic: Reports and analytics
 uuid: 267e9678-95a1-4195-8ba4-e8a53c28ea0d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -24,7 +24,7 @@ Med Kuration kan du begränsa komponenterna innan du delar ett projekt. Du kan d
 
 1. Ange behörighet att skapa och strukturera projekt.
 
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en [grupp](https://marketing.adobe.com/resources/help/en_US/reference/groups.html) med aktiverad **[!UICONTROL Analysis Workspace Access]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]**).
+   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en [grupp](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html) med aktiverad **[!UICONTROL Analysis Workspace Access]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]**).
 
 1. [Skapa och spara](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) ett projekt och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 1. Dra de komponenter som du vill dela från den dragbara komponentstacken till vänster till **[!UICONTROL Curated Components]** fältet.
