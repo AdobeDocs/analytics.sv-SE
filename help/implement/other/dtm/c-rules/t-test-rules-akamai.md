@@ -5,7 +5,7 @@ solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
 title: Testa opublicerade regler för Akamai-värdtjänster
 uuid: 979e3d74-8d96-47d0-b581-cf5371248434
 translation-type: tm+mt
-source-git-commit: 2ffa989156dd9bc4f6ef9a216e8c06425cc39440
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 2ffa989156dd9bc4f6ef9a216e8c06425cc39440
 
 Testa opublicerade regler från konsolen om du använder Akamai-värdtjänster.
 
-Switcher är ofta det enklaste sättet att testa. Mer information finns i [Search Discovery-plugin-program](https://marketing.adobe.com/resources/help/en_US/dtm/search_discovery_plugins.html) i produktdokumentationen för Dynamic Tag Management.
+Switcher är ofta det enklaste sättet att testa. Mer information finns i [Search Discovery-plugin-program](https://docs.adobe.com/content/help/en/dtm/using/resources/plugins/search-discovery-plugins.html) i produktdokumentationen för Dynamic Tag Management.
 
 I följande steg visas hur du testar utan att använda plugin-programmet Switcher:
 
