@@ -4,7 +4,7 @@ title: Egen
 topic: Reports
 uuid: 04a2cf81-6f2a-49f3-a449-cb701a899aad
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -21,4 +21,4 @@ Anpassade rapporter kan ge dig mervärde som analytiker. Om du ser rapporter i S
 
 Dessutom kan du spara rapporter som är viktiga för dig. Dessa rapporter kallas bokmärken. Du kan också lägga in flera rapporter på en arbetsyta för att snabbt få en överblick över de viktigaste rapporterna. Dessa kallas kontrollpaneler och är även användarspecifika. Gränssnittet visar ett fält ovanför diagrammet med bokmärkena och kontrollpanelerna.
 
-Mer information finns i [Bokmärken](https://marketing.adobe.com/resources/help/en_US/sc/user/c_bookmarks.html) och [Kontrollpaneler och Rapporter](https://marketing.adobe.com/resources/help/en_US/sc/user/c_dashboard.html) .
+Mer information finns i [Bokmärkeshanteraren](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/bookmarks.html) och [Kontrollpaneler och](https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html) rapporter.
