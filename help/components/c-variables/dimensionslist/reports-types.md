@@ -4,7 +4,7 @@ title: Rapportkategorier
 topic: Reports
 uuid: 78369121-3854-4bf9-9156-c2369ec75d73
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -24,7 +24,7 @@ En produktrapport är ett exempel på en trendrapport. Du kan se hur mycket int�
 En summeringsrapport är en rapport på chefsnivå som visar siffror i resultaträkningen. Den innehåller information om totala intäkter, sidvisningar och beställningar. Du kan segmentera rapporten och lägga till ytterligare mått för att visa ytterligare data.
 Flödet visar de vanligaste sökvägarna som användare tar över sidor, webbplatsavsnitt och servrar.
 
-Mer information om hur Flow fungerar i Analysis Workspace finns i [Customer Journey - Flow](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/flow.html).
+Mer information om hur Flow fungerar i Analysis Workspace finns i [Customer Journey - Flow](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html).
 
 **Nästa flöde**
 
@@ -33,4 +33,4 @@ Rapportgruppen Nästa flöde har tre rapporter: Nästa sidflöde, Nästa avsnitt
 **Föregående flöde**
 
 Tidigare Flödesrapporter liknar rapporterna för nästa flöde, förutom att du inte kan se var besökarna kom efter en vald sida, utan var besökarna befann sig innan du besökte en viss sida. Kontrollerna för att använda rapporten är identiska med kontrollerna för rapporterna för nästa flöde.
-Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Mer information finns i [Utfall](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fallout_flow.html) på arbetsytan för analyser.
+Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Mer information finns i [Utfall](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) på arbetsytan för analyser.
