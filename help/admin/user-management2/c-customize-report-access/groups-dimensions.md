@@ -6,7 +6,7 @@ title: Anpassa dimensionsbehörigheter
 topic: Admin tools
 uuid: aaf164ad-3863-4129-864e-39ec71c6a8eb
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -34,9 +34,9 @@ Förstå följande information om dimensionskategorin för behörigheter.
 * Video- och mobilrapporter är dimensioner samt andra rapporter om analyslösningar (Experience Manager, Advertising Cloud, Social, osv.).
 * Matchningsrapporter är tillgängliga om en användare har åtkomst till den överordnade dimensionen.
 * Alla aktuella dimensioner och mått i anpassade grupper har automatiskt migrerats till de nya kategorierna. Om en befintlig grupp har mätvärden aktiverade får den som standard alla nya tillåtna mått (eVars och innehållsmedvetna) och mätvärden.
-* Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av tillgången till den [variabel](https://marketing.adobe.com/resources/help/en_US/reference/c_classifications.html) som klassificeringen baseras på.
+* Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av tillgången till den [variabel](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) som klassificeringen baseras på.
 
-Mer information finns i [Vanliga frågor om behörighetsändringar](https://marketing.adobe.com/resources/help/en_US/reference/permissions_faq.html).
+Mer information finns i [Användar- och gruppbehörighetsändringar](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html).
 
 **Anpassa dimensioner**
 
@@ -55,15 +55,15 @@ Följande objekt är dimensioner som du kan ge behörighet.
    <td colname="col2"> <p>eVars 1-250 är individuellt tillåtna. eVars är anpassade konverteringsvariabler som du använder för att segmentera framgångsvärden för konverteringar i anpassade rapporter. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/props_eVars.html"> Props </a> </p> </td> 
-   <td colname="col2"> <p>Props är anpassade trafikvariabler. </p> <p>Se Traffic Props och konvertering av eVars <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/props_eVars.html"> </a> i Analytics-implementering. </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html"> Props </a> </p> </td> 
+   <td colname="col2"> <p>Props är anpassade trafikvariabler. </p> <p>Se Traffic Props och konvertering av eVars <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html"> </a> i Analytics-implementering. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/hierN.html"> Hierarki </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html"> Hierarki </a> </p> </td> 
    <td colname="col2"> <p> Variabeln hierarki (hierN) bestämmer platsen för en sida i platsens hierarki eller sidstruktur. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/listN.html"> Listvar </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html"> Listvar </a> </p> </td> 
    <td colname="col2"> <p> Listan liknar hur funktionen List Props tillåter listvariabler flera värden inom samma bildbegäran. </p> </td> 
   </tr> 
   <tr> 
@@ -71,19 +71,19 @@ Följande objekt är dimensioner som du kan ge behörighet.
    <td colname="col2"> <p>Avser standardmått (färdiga) i Analytics. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/em/"> AEM </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://helpx.adobe.com/support/experience-manager.html"> AEM </a> </p> </td> 
    <td colname="col2"> <p>Adobe Experience Manager </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/media-optimizer/"> AMO </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://helpx.adobe.com/support/advertising-cloud.html"> AMO </a> </p> </td> 
    <td colname="col2"> <p>Adobe Advertising Cloud </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/activitymap/"> Aktivitetskarta </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/activity-map.html"> Aktivitetskarta </a> </p> </td> 
    <td colname="col2"> <p> Rapporteringsdimensioner för aktivitetskarta: Sida för aktivitetskarta; Länk till aktivitetskarta; Område för verksamhetskarta. Länk till aktivitetskarta per region; Aktivitetskarta XY </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/"> Mobil </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html"> Mobil </a> </p> </td> 
    <td colname="col2"> <p>Adobe Mobile Services </p> </td> 
   </tr> 
   <tr> 
@@ -91,7 +91,7 @@ Följande objekt är dimensioner som du kan ge behörighet.
    <td colname="col2"> <p>Den här partnerintegreringen är inte längre aktiv. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/nielsen-partnership.html"> Nielsen </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html"> Nielsen </a> </p> </td> 
    <td colname="col2"> <p>Den här partnerintegreringen är inte längre aktiv. </p> </td> 
   </tr> 
   <tr> 
