@@ -5,7 +5,7 @@ title: Översikt över bearbetningsregler
 topic: Admin tools
 uuid: 6b4ee7c9-2b86-47a6-b64c-c8d644fff67d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -33,7 +33,7 @@ Nu har administratörer behörighet att använda bearbetningsregler **som standa
 
 1. Om du inte redan har gjort det [skapar du en grupp](/help/admin/user-management2/c-user-groups/groups.md) som bara innehåller de icke-administratörer som bör ha behörighet att använda bearbetningsregler.
 1. [Lägg till icke-administratörer i den gruppen](/help/admin/user-management2/c-user-management/t-add-user-to-group.md).
-1. Gå sedan till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL-[gruppnamn]]** > **[!UICONTROL Edit]** > **[!UICONTROL Report Access]** **[!UICONTROL Report Suite Tools]** **[!UICONTROL Customize]** **[!UICONTROL Report Suite Management]**>¥ >¥ >¥.
+1. Gå sedan till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL `group name`]** > **[!UICONTROL Edit]** > **[!UICONTROL Report Access]** > **[!UICONTROL Report Suite Tools]** > **[!UICONTROL Customize]** > **[!UICONTROL Report Suite Management]**.
 1. Markera rutan intill [!UICONTROL Processing Rules] och klicka **[!UICONTROL OK]**.
 
 ![](assets/processing-rules.png)
@@ -48,7 +48,7 @@ Sammanhangsdatavariabler är en ny typ av variabler som bara är tillgängliga f
 
 ![](assets/evar-context-map.png)
 
-Se [Kontextdatavariabler](https://marketing.adobe.com/resources/help/en_US/sc/implement/context_data_variables.html) i implementeringshjälpen.
+Se [Kontextdatavariabler](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/contextdata.html) i implementeringshjälpen.
 
 ## Använd bearbetningsregler för att omforma träff- och utlösarhändelser {#section_8284E72E999244E091CD7FB1A22342B6}
 
