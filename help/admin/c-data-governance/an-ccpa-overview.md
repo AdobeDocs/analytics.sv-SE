@@ -3,7 +3,7 @@ description: I det här dokumentet beskrivs vad du behöver göra i Adobe Analyt
 title: Adobe Analytics och CCPA
 uuid: 16fd5af8-9148-4e09-ad54-9e3cdd2b3c6d
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -38,8 +38,8 @@ Mer information om hur du ställer in etiketterna finns i [Label Report Suite-da
 ## Förutsättningar
 
 * Bekanta dig med [GDPR-terminologi.](/help/admin/c-data-governance/gdpr-terminology.md)
-* Länka ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)
-* Mappa alla Adobe Analytics-rapportsviter som ni vill konfigurera för datastyrning till [er Experience Cloud-organisation.](https://marketing.adobe.com/resources/help/en_US/mcloud/report-suite-mapping.html)
+* Länka ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)
+* Mappa alla Adobe Analytics-rapportsviter som ni vill konfigurera för datastyrning till [er Experience Cloud-organisation.](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html)
 * Ange en datalagringspolicy för varje rapportsserie så att CCPA-begäranden om borttagning och åtkomst kan hanteras.
 
    Adobe Analytics kan inte hjälpa er med att bearbeta förfrågningar till API:t för integritetstjänster, dvs. att behandla de förfrågningar om åtkomst och borttagning som ni får från era slutanvändare, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta din Customer Success Manager för att ange din datalagringsperiod.
