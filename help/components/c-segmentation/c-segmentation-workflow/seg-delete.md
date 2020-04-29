@@ -4,7 +4,7 @@ title: Ta bort segment
 topic: Segments
 uuid: cb6db6ad-f400-4633-900a-8a02dcfccf2c
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -24,6 +24,6 @@ När du tar bort ett segment
 
 ## Redigera inbäddade borttagna segment i ad hoc-analys {#section_976D601DBD2244E38B0A0222E31D2610}
 
-Med ad hoc-analys kan du nu redigera inbäddade borttagna segment i [beräkningsverktyget](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/) och utföra en Spara som-åtgärd på det segmentet.
+Med ad hoc-analys kan du nu redigera inbäddade borttagna segment i [beräkningsverktyget](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html) och utföra en Spara som-åtgärd på det segmentet.
 
 Alla andra borttagna segment som refererar till det borttagna segmentet ändras inte.
