@@ -2,7 +2,7 @@
 title: Konfigurera ett annonskonto
 uuid: 4e37caa3-e4a5-43ad-97c0-12db62ad5283
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -80,11 +80,11 @@ Fyll i **[!UICONTROL Tracking Settings]** följande riktlinjer:
     </tbody> 
     </table>
 
-1. I **[!UICONTROL Mapping]** avsnittet väljer du vilka rapportsviter som ska länkas till det här sökmotorkontot. Du måste ange minst en rapportserie innan du kan spara Advertising Account. Du kan mappa flera konton till flera rapportsviter (1:1, 1:Many, Many:Many). Observera att de data som AMO hämtar från sökmotorn helt enkelt kopieras till en mappad rapportsvit, så att inga data delas upp.
+1. I **[!UICONTROL Mapping]** avsnittet väljer du vilka rapportsviter som ska länkas till det här sökmotorkontot. Du måste ange minst en rapportserie innan du kan spara Advertising Account. Du kan mappa flera konton till flera rapportsviter (1:1, 1:Many, Many:Many). Observera att de data som AMO hämtar från sökmotorn helt enkelt kopieras till en mappad rapportsvit, så det finns ingen delning av data.
 
    >[!IMPORTANT]
    >
-   >Endast rapportsviter som har [mappats till en Experience Cloud-organisation](https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html) kan väljas. Om du inte kan se din rapportsserie i listan, se [Felsök annonsanalys](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md).
+   >Endast rapportsviter som har [mappats till en Experience Cloud-organisation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html) kan väljas. Om du inte kan se din rapportsserie i listan, se [Felsök annonsanalys](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md).
 
    I följande **[!UICONTROL Mapping Settings]** riktlinjer:
 
@@ -98,7 +98,7 @@ Fyll i **[!UICONTROL Tracking Settings]** följande riktlinjer:
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Rapportsvitsmappning </p> </td> 
-      <td colname="col2"> <p>Rapportsvitens mappning avgör vilket rapportpaket som länkas till det här sökmotorkontot. Med andra ord avgör den i vilken rapportssvit/vilka rapportsviter sökmotordata skickas. </p> <p>Om du inte ser din rapportsserie i listan kan du <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html"  > mappa din rapportsvit till en Experience Cloud-organisation</a> med det här verktyget. </p> </td> 
+      <td colname="col2"> <p>Rapportsvitens mappning avgör vilket rapportpaket som länkas till det här sökmotorkontot. Med andra ord avgör den i vilken rapportssvit/vilka rapportsviter sökmotordata skickas. </p> <p>Om du inte ser din rapportsserie i listan kan du <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html"  > mappa din rapportsvit till en Experience Cloud-organisation</a> med det här verktyget. </p> </td> 
       </tr> 
     </tbody> 
     </table>
