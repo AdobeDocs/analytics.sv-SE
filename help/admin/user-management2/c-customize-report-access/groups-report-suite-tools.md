@@ -6,7 +6,7 @@ title: Anpassa behörigheter för Report Suite-verktyg
 topic: Admin tools
 uuid: 3c95d296-ffd0-4971-9c5f-110ddbe042ce
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0bf00f990a34768b93cef5d57a126ebe93087e91
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
 
 Aktivera användarbehörigheter för API-åtkomst, Report Suite-hantering, verktyg och rapporter samt instrumentpanelsobjekt.
 
@@ -65,8 +65,8 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | [Analysidentifiering](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/anomaly_detection.html) | Ger tillstånd till avvikelseidentifiering, som tillhandahåller en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data. |
 | [Kanalrapport](https://marketing.adobe.com/resources/help/en_US/mchannel/index.html) | Ger tillstånd till Marketing Channel-rapporter, som finns i Rapporter > Marketing Channel Reports. |
 | [Realtidsrapport](/help/admin/admin/realtime/t-realtime-admin.md) | Ger åtkomst till realtidsrapporten. |
-| [Punktsidor](/help/admin/admin/bot-removal/bot-rules.md) | Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
-| [Bots](/help/admin/admin/bot-removal/bot-rules.md) | Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
+| [Punktsidor](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Startsidor är för specifika rapporter- och analysrapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
+| [Bots](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Bots är till för specifika rapporter- och analysrapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bots kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
 | [Rapport för anpassat datalager](/help/export/data-warehouse/data-warehouse.md) | Datalager refererar till kopian av obearbetade data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. Du kan begära rapporter för att visa avancerade datarelationer från rådata baserat på dina unika frågor. |
 | [Dagliga återbesök](/help/components/c-variables/dimensionslist/reports-daily-return-visits.md) | (Äldre) Rapport som visar antalet besökare på webbplatsen mer än en gång på en viss dag. En dag definieras som den sista 24-timmarsperioden. |
 | [Datakällhanteraren](/help/admin/admin/data-sources.md) | Med funktionen Datakällor kan du importera data till Analytics från offlinekällor. |
