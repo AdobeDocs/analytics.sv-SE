@@ -3,7 +3,7 @@ description: Med ett interdimensionellt flöde kan du undersöka användarsökv�
 title: Flerdimensionella flöden
 uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 87bfd1124e7f467e741f13deddd5770296f23827
 
 ---
 
@@ -59,5 +59,3 @@ Dra Campaign Name-dimensionen till ett nytt flöde:
 Nu vill jag se till vilka sidor dessa kampanjer genererar trafik, så jag drar siddimensionen åt höger om flödesresultaten för att lägga till ytterligare i visualiseringen:
 
 ![](assets/multi-dimensional-flow9.png)
-
-Sedan kan du dela upp resultatet efter andra dimensioner eller mätvärden, som intäkter, besök, osv.
