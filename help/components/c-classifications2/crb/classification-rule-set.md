@@ -5,7 +5,7 @@ title: Klassificeringsregeluppsättningar
 topic: Admin tools
 uuid: c4d7b77c-fa98-44be-955f-9aee7f73480b
 translation-type: tm+mt
-source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -61,7 +61,7 @@ Ge klassificeringsregeluppsättningen ett namn, använd variabeln och ange över
 
 1. (Förutsättning) Definiera klassificeringsstrukturen i **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
-   (Se [Klassificeringar](https://marketing.adobe.com/resources/help/en_US/reference/classifications.html) i Admin Tools-hjälpen om hur du lägger till klassificeringar.)
+   (Se [Klassificeringar](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) i Admin Tools-hjälpen om hur du lägger till klassificeringar.)
 
    Variabler visas bara på [!UICONTROL New Rule Set] panelen när de har minst en klassificering definierad för den variabeln.
 
