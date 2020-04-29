@@ -3,7 +3,7 @@ description: 'null'
 title: Bästa praxis för märkning
 uuid: d1e9bfff-9b04-4e3e-9b4e-a6e527b1b2e3
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -43,14 +43,14 @@ Använd den här tabellen för att fastställa vilka typer av ID som du kommer a
   <tr> 
    <td colname="col1"> <p>Cookie-ID </p> 
     <ul id="ul_CB43CEA3054E490585CBF3AB46F95B5B"> 
-     <li id="li_9174CB3910AF4EF8BA7165DB537765A5"> <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html"> (Äldre) Analytics Cookie </a> </li> 
-     <li id="li_7B6A9A788BBD47428315B3893FC07BC3"> <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/"> Identitetstjänstens cookie </a> (ECID), som tidigare kallades för Marketing Cloud ID (MCID) </li> 
+     <li id="li_9174CB3910AF4EF8BA7165DB537765A5"> <a href="https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html"> (Äldre) Analytics Cookie </a> </li> 
+     <li id="li_7B6A9A788BBD47428315B3893FC07BC3"> <a href="https://docs.adobe.com/content/help/en/id-service/using/home.html"> Identitetstjänstens cookie </a> (ECID), som tidigare kallades för Marketing Cloud ID (MCID) </li> 
     </ul> </td> 
    <td colname="col2"> <p>Dessa cookies identifierar en enhet eller, mer specifikt, en webbläsare för en användare av en enhet. För en delad enhet där en gemensam inloggning används kan detta ID gälla för alla användare av enheten. Adobe har skapat ett <a href="https://www.adobe.io/apis/cloudplatform/gdpr/services/allservices.htm"> enhetligt JavaScript </a> som du kan placera på din webbplats för att samla in dessa cookies om du vill tillåta att de används för förfrågningar om dataintegritet. </p> <p>Användare av Adobe Analytics Mobile SDK har också ett Experience Cloud ID (ECID). Det finns API-anrop i SDK för att läsa detta ID, så du kan förbättra din app och samla in den för att få en begäran om dataintegritet. </p> <p>Många företag anser att webbläsar-cookie-ID:n är delade enhets-ID:n. Detta innebär att de i samråd med sina juridiska team kan välja att inte ge stöd för att använda dem som godtagbara ID:n för förfrågningar om dataintegritet, eller välja att endast returnera en mycket begränsad mängd data när dessa ID:n används eller att de endast kan godkänna dem för borttagningsförfrågningar. </p> <p>Dessa cookies har en ID-DEVICE-etikett som inte kan ändras (samt etiketterna I2 och DEL-DEVICE). Adobe Analytics-standardkonfigurationen returnerar bara allmän information om enheten, till exempel enhetstyp, operativsystem, webbläsare. samt den tid/de datum som webbplatsen besöktes när dessa ID:n användes. Om du väljer att ge stöd för dessa ID:n för förfrågningar om dataskydd, vilket beskrivs nedan, kan du lägga till eller ta bort ACC-ALL-etiketter för att konfigurera den exakta uppsättning fält som du vill ska returneras för en begäran om dataintegritet. </p> <p>Speciellt om rapportsviten motsvarar en mobilapp, och din mobilapp kräver inloggning, kan du bestämma att Experience Cloud-ID:t för enheten motsvarar en viss användare och därför vill du märka fler fält med ACC-ALL-etiketten, inklusive namnen på besökta sidor, visade produkter osv. </p> <p>Obs!  Om du anger alternativet "expandIds" i din datasekretessbegäran kommer dina förfrågningar alltid att innehålla cookie-ID:n, förutom eventuella andra ID:n du anger. Mer information finns <a href="/help/admin/c-data-governance/gdpr-id-expansion.md"> i </a> ID-expansion. I dessa fall returnerar träffar som bara har ett cookie-ID, men inte ett annat ID, endast data som är märkta ACC-ALL som en del av åtkomstbegäran. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID:n i anpassade variabler </p> </td> 
-   <td colname="col2"> <p>Vissa kunder placerar ID:n i <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/props_eVars.html"> anpassade trafikvariabler (props) eller anpassade konverteringsvariabler (eVars) </a>. Det vanligaste är ett CRM-ID, medan andra är e-postadresser, användarinloggningsnamn, kundlojalitetsnummer eller hascher av dessa värden. </p> 
+   <td colname="col2"> <p>Vissa kunder placerar ID:n i <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html"> anpassade trafikvariabler (props) eller anpassade konverteringsvariabler (eVars) </a>. Det vanligaste är ett CRM-ID, medan andra är e-postadresser, användarinloggningsnamn, kundlojalitetsnummer eller hascher av dessa värden. </p> 
     <ul id="ul_0B9492CF786046BB97E31CCF83A85FEA"> 
      <li id="li_D35B61CC6A8B485A8E09358A46D3F598">Om du vill använda något av dessa ID:n för datasekretessförfrågningar ska du ge fältet som innehåller det en ID-PERSON-etikett. </li> 
      <li id="li_94541340B054436297C5565F074413DC">(Mycket mindre vanligt) Om ett ID i en av dessa anpassade variabler bara identifierar en enhet som kan delas av flera personer, kan du i stället använda en ID-DEVICE-etikett. </li> 
