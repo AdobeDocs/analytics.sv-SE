@@ -3,7 +3,7 @@ description: Använd konfigurationsguiden för Adobe Data Connectors för att ko
 title: Aktivera integreringen
 uuid: 9084b691-291d-49f7-9fa4-abda507e060d
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 Använd konfigurationsguiden för Adobe Data Connectors för att konfigurera integreringen.
 
-1. Starta [Data Connectors](https://marketing.adobe.com/resources/help/en_US/genesis/c_overview.html) och klicka **[!UICONTROL + Add New]** för att [lägga till en ny integrering](https://marketing.adobe.com/resources/help/en_US/genesis/t_add_integration.html).
+1. Starta [Data Connectors](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/getting-started-data-connectors.html) och klicka **[!UICONTROL + Add New]** för att [lägga till en ny integrering](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/getting-started-data-connectors.html).
 1. I **[!UICONTROL Show]** listan markerar du **[!UICONTROL By Name]** och drar [!DNL ~partnerintegreringen~] till en tom plugin-plats.
 1. Slutför integreringsguiden med hjälp av informationen i följande tabell:
 
