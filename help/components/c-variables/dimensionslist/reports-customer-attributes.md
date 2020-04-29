@@ -4,7 +4,7 @@ solution: Experience Cloud,Analytics
 title: Kundattribut
 uuid: 94721265-ba23-45d5-8807-76f81b0b8a30
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -20,7 +20,7 @@ Om du samlar in företagsdata i en CRM-databas (customer relationship management
 * [Kundattribut och rapporteringsstatistik i Analytics](/help/components/c-variables/dimensionslist/reports-customer-attributes.md#section_EF343662146B460A882D3DF772ADD86D)
 * [Frågor och svar - Kundattribut i analyser](/help/components/c-variables/dimensionslist/reports-customer-attributes.md#section_E29641D1F3D649C1AC9EA5231921F038)
 
-Mer information om hur du överför kundattributdata finns i [Kundattribut](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html) i hjälpen för Experience Cloud.
+Mer information om hur du överför kundattributdata finns i [Kundattribut](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) i hjälpen för Experience Cloud.
 
 ## Kundattribut och rapporteringsstatistik i Analytics {#section_EF343662146B460A882D3DF772ADD86D}
 
@@ -40,7 +40,7 @@ Om du anger en sträng som *`age`* skapas följande mått och mått:
 * Åldersmått: Ett mätvärde som du kan lägga till i en rapport, t.ex. en unik besökarrapport.
 * Antal åldersmått: Gör att du till exempel kan förstå om besökare har angett ett *`age`* värde i ett formulär.
 
-Eftersom mätvärden är summor i en rapporttabell bör du [skapa ett beräknat mått](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/) som anger medelåldern. Formeln för det här måttet är `Age / Count of Age`.
+Eftersom mätvärden är summor i en rapporttabell bör du [skapa ett beräknat mått](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html) som anger medelåldern. Formeln för det här måttet är `Age / Count of Age`.
 
 ## Frågor och svar - Kundattribut i analyser {#section_E29641D1F3D649C1AC9EA5231921F038}
 
