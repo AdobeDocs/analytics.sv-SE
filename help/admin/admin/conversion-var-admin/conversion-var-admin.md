@@ -5,7 +5,7 @@ title: Konverteringsvariabler (eVar)
 topic: Admin tools
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -24,7 +24,7 @@ eVars är bäst att använda för att mäta orsak och effekt, till exempel:
 
 Om trafikmätning eller vägning önskas rekommenderas användning av trafikvariabler.
 
->[!NOTE] Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [List-variabler (listvariabler)](https://marketing.adobe.com/resources/help/en_US/sc/implement/listN.html).
+>[!NOTE] Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [List-variabler (listvariabler)](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html).
 
 ## Konverteringsvariabler - beskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
 
@@ -84,7 +84,7 @@ Beskrivningar av fält som används vid [redigering av konverteringsvariabler](/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Merchandising</span> </p> <p>(endast eVar) </p> </td> 
-   <td colname="col2"> <p>Merchandising-variabler kan följa på en av två syntaxer: </p> <p> <b>Produktsyntax</b>:</span> Kopplar eVar-värdet till en produkt. Obs!  Om produktsyntax är markerad är avsnittet om bindningshändelse för marknadsföring inaktiverat och kan inte redigeras. Bindningshändelser gäller inte för den här syntaxen. </p> </p> <p> <b>Konverteringsvariabelsyntax</b>:</span> Associerar eVar med en produkt endast om en bindningshändelse inträffar. I det här fallet väljer du de händelser som fungerar som Bindningshändelser. </p> <p>Om du ändrar den här inställningen utan att uppdatera JavaScript-koden därefter, kommer förlorade data att uppstå. Se <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/var_merchandising.html"> Marknadsföring av variabler</a>. </p> </td> 
+   <td colname="col2"> <p>Merchandising-variabler kan följa på en av två syntaxer: </p> <p> <b>Produktsyntax</b>:</span> Kopplar eVar-värdet till en produkt. Obs!  Om produktsyntax är markerad är avsnittet om bindningshändelse för marknadsföring inaktiverat och kan inte redigeras. Bindningshändelser gäller inte för den här syntaxen. </p> </p> <p> <b>Konverteringsvariabelsyntax</b>:</span> Associerar eVar med en produkt endast om en bindningshändelse inträffar. I det här fallet väljer du de händelser som fungerar som Bindningshändelser. </p> <p>Om du ändrar den här inställningen utan att uppdatera JavaScript-koden därefter, kommer förlorade data att uppstå. Se <a href="https://docs.adobe.com/content/help/en/analytics/components/variables/merchandising-variables/var-merchandising.html"> Marknadsföring av variabler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Marknadsföringsbindningshändelse</span> </p> <p>(endast eVar) </p> </td> 
