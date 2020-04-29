@@ -3,7 +3,7 @@ description: Du kan visa och analysera dataavvikelser i sitt sammanhang på arbe
 title: Översikt över avvikelseidentifiering
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -31,7 +31,7 @@ Exempel på avvikelser du kan undersöka är:
 * Inslag i videobufferthändelser
 * Taggar i låga videobithastigheter
 
-Både avvikelseidentifiering och [bidragsanalys](https://marketing.adobe.com/resources/help/en_US/analytics/contribution/ca_main.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot alla dagliga avvikelser och bädda in resultatet i Analysis Workspace-projektet.
+Både avvikelseidentifiering och [bidragsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot alla dagliga avvikelser och bädda in resultatet i Analysis Workspace-projektet.
 
 Analysarbetsytans avvikelseavkänningsalgoritm innehåller
 
