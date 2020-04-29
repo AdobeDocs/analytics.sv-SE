@@ -3,7 +3,7 @@ title: Adobe Report Builder - hjälp
 topic: Report builder
 uuid: 034ae0e4-2a98-4bac-977d-92515960c46e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 >
 >Update your installation of Report Builder to the latest version. This update is a pre-requisite for running the Analytics user ID migration to the Admin Console, beginning in April 2018.
 >
->See [Analytics User Migration to the Admin Console](https://marketing.adobe.com/resources/help/en_US/experience-cloud/admin-console/analytics-migration/) for migration information.
+>See [Analytics User Migration to the Admin Console](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html) for migration information.
 
 >[!IMPORTANT]
 >
@@ -40,15 +40,17 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 ## Experience Cloud-resurser
 
 * [Adobe Analytics Community](https://helpx.adobe.com/marketing-cloud/analytics.html)
-* [Versionsinformation om Experience Cloud](https://marketing.adobe.com/resources/help/en_US/whatsnew/index.html#Current%20Release%20Notes)
-* [Produktdokumentation - startsida](https://marketing.adobe.com/resources/help/en_US/home/index.html)
-* [Utvecklare](https://marketing.adobe.com/resources/help/en_US/home/index.html#Developer)
+* [Versionsinformation om Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* [Produktdokumentation - startsida](https://docs.adobe.com/content/help/en/experience-cloud/user-guides/home.html)
+* [Utvecklare](https://www.adobe.io/apis/experiencecloud.html)
 * [Idea Exchange](https://ideas.omniture.com/t5/Adobe-Idea-Exchange-for-Omniture/idb-p/IdeaExchange3)
 * [Adobe Training and Tutorials](https://helpx.adobe.com/learning.html?promoid=KAUDK)
 * [Aktuellt lösningscenter](https://www.omniture.com/en/products/online_business_optimization)
 
+<!--Meike Russ Replace the omniture links above?-->
+
 ## Rapporter och analyser - hjälp
 
-* [Hjälp om Analysis Workspace](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/)
-* [Rapporter och analyser - hjälp](https://marketing.adobe.com/resources/help/en_US/sc/user/index.html)
-* [Referenshjälp](https://marketing.adobe.com/resources/help/en_US/reference/index.html) för analyser för Admin Tools, reports, and metrics.
+* [Hjälp om Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html)
+* [Rapporter och analyser - hjälp](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html)
+* [Referenshjälp](https://docs.adobe.com/content/help/en/analytics/landing/home.html) för analyser för Admin Tools, reports, and metrics.
