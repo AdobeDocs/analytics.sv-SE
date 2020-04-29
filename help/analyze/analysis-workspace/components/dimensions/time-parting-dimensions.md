@@ -3,7 +3,7 @@ description: Tidsdelning innebär att tidsstämpeln för insamlade träffar dela
 title: Tidsdelningsdimensioner
 uuid: c9fa7921-aa57-483c-b2f9-da55013ada17
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -19,7 +19,7 @@ Tidsdelningsdimensionerna baseras på tidszonen för rapportsviten eller den vir
 * Hur skiljer sig min helgsförsäljning från min veckodagsförsäljning?
 * Genererar en viss marknadsföringskampanj högre konverteringar på morgonen eller på eftermiddagen?
 
->[!NOTE] Tidsdelningsdimensioner är bara tillgängliga i Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra Analytics-lösningar kan du implementera plugin-programmet [getTimeParting](https://marketing.adobe.com/resources/help/en_US/sc/implement/getTimeParting.html).
+>[!NOTE] Tidsdelningsdimensioner är bara tillgängliga i Analysis Workspace. Om du vill använda tidsdelningsdimensioner i andra Analytics-lösningar kan du implementera plugin-programmet [getTimeParting](https://docs.adobe.com/content/help/en/analytics/implementation/vars/plugins/gettimeparting.html).
 
 Tidsdelningsdimensionerna i Analysis Workspace är:
 
