@@ -4,7 +4,7 @@ title: Egen länk
 topic: Reports
 uuid: 2e0d0175-d5e4-4919-b601-3f488ef3e090
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -22,7 +22,7 @@ Du kan använda [!UICONTROL Custom Links Report] till att:
 
 ## Mobile SDK-länknamn {#section_70C91FE794104B5FBF289B19CC02EA8E}
 
-SDK:erna för [mobilen](https://marketing.adobe.com/resources/help/en_US/mobile/home.html) använder anpassade länkar för att spåra åtgärder och livscykelvärden. I rapportsviter som används för att mäta mobilappar kan du se följande länknamn som angetts av SDK:
+SDK:erna för [mobilen](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) använder anpassade länkar för att spåra åtgärder och livscykelvärden. I rapportsviter som används för att mäta mobilappar kan du se följande länknamn som angetts av SDK:
 
 | ADBINTERNAL:Lifecycle | Skickas av livscykelanropet i 4.x SDK:er. |
 |---|---|
