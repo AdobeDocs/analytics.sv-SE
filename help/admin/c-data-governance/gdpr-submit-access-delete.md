@@ -3,7 +3,7 @@ description: 'null'
 title: Skicka in begäran om åtkomst och borttagning
 uuid: d006cd5c-e3cd-4385-8683-acaf73cb681b
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -19,7 +19,7 @@ Ni kanske också vill se till att era mobilappar och webbplatser har relevanta s
 
 ## Hantera konsumentsamtycke {#section_3012015E7E8942519FB9279CF7057EAB}
 
-Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (inklusive Adobe Analytics-data) och för att [implementera en avanmälningsmekanism](https://marketing.adobe.com/resources/help/en_US/dtm/opt-in.html) på din webbplats. Detta gör att era datasubjekt kan välja bort från framtida datainsamling i Adobe Experience Cloud.
+Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (inklusive Adobe Analytics-data) och för att [implementera en avanmälningsmekanism](https://docs.adobe.com/content/help/en/dtm/using/tools/opt-in.html) på din webbplats. Detta gör att era datasubjekt kan välja bort från framtida datainsamling i Adobe Experience Cloud.
 
 ## Validera användare och deras data {#section_AFB2CC225AA94AF6A3CE9F24EF788358}
 
