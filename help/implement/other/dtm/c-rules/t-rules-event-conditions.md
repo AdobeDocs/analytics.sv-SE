@@ -5,7 +5,7 @@ solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
 title: Skapa villkor för händelsebaserade regler
 uuid: a847391c-5aec-4d64-8a35-388587731598
 translation-type: tm+mt
-source-git-commit: ebf149df7974f9f2889b6fe938088eda90c84051
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -18,7 +18,7 @@ Villkoren avgör när en händelsebaserad regel aktiveras.
 
    ![](assets/condition-event-based.png)
 
-   Mer information finns i [Händelsetyper](https://marketing.adobe.com/resources/help/en_US/dtm/event_types.html) i produktdokumentationen för Adobe Tag Management.
+   Mer information finns i [Händelsetyper](https://docs.adobe.com/content/help/en/dtm/using/resources/rules/t-rules-event-conditions.html) i produktdokumentationen för Adobe Tag Management.
 
 1. Aktivera följande alternativ efter behov:
 
@@ -35,7 +35,7 @@ Villkoren avgör när en händelsebaserad regel aktiveras.
 
    ![](assets/condition-event-based2.png)
 
-   Mer information om hur du hittar rätt elementtagg finns i [Använda CSS-väljaren](https://marketing.adobe.com/resources/help/en_US/dtm/css-selector.html) i produktdokumentationen för dynamisk tagghantering.
+   Mer information om hur du hittar rätt elementtagg finns i [Använda CSS-väljaren](https://docs.adobe.com/content/help/en/dtm/using/resources/rules/t-rules-event-conditions.html#concept_DDF500DCB8214658AEDECDE69ED1D4AF) i produktdokumentationen för dynamisk tagghantering.
 
 1. Välj och ange eventuella ytterligare villkor eller villkorstyper som du vill binda till regeln.
 
