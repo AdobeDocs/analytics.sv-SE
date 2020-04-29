@@ -3,7 +3,7 @@ description: Analytics och Audience Manager använder båda segment. Ett Analyti
 title: Förstå segment i Analytics och Audience Manager
 uuid: 13f7d1d7-6a3f-42f1-822e-8d3523999efa
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -25,7 +25,7 @@ Medlemskapet i Audience Manager-segmentet är smidigt. Användare kan ange eller
 
 Ett Audience Manager-segment betecknas som en målgrupp i Analytics.
 
-Mer information finns i [Trait and Segment Population Data in Segment Builder](https://marketing.adobe.com/resources/help/en_US/aam/segment-builder-data.html) och [Signals, Traits och Segments](https://marketing.adobe.com/resources/help/en_US/aam/c_signal_trait_segment.html).
+Mer information finns i [Trait and Segment Population Data in Segment Builder](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/segments/segment-builder-data.html) och [Signals, Traits och Segments](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/signal-trait-segment.html).
 
 ## Analyssegment {#section_62EC584BB7134E10923BCBA7F9BD89A8}
 
@@ -42,4 +42,4 @@ Ett Analytics-segment är en filtreringsmekanism för data i era rapporter. Filt
 
    Omvänt kommer besökare i Analytics att inkluderas eller exkluderas från ett segment baserat på rapporteringsdatumintervallet. En enskild besökare gjorde till exempel ett köp förra månaden. I AAM inkluderas besökaren i ett&quot;köpsegment&quot;, oavsett datumintervall. I Analytics skulle en rapport som baseras på den här månaden inte inkludera besökaren i segmentet. En rapport baserad på den här månaden och förra månaden skulle dock inkludera besökaren i segmentet.
 
-Mer information finns i [segmenteringshandboken](https://marketing.adobe.com/resources/help/en_US/analytics/segment/) för analyser.
+Mer information finns i [segmenteringshandboken](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) för analyser.
