@@ -3,7 +3,7 @@ description: I det här dokumentet beskrivs vad du behöver göra i Adobe Analyt
 title: Adobe Analytics och GDPR
 uuid: 16fd5af8-9148-4e09-ad54-9e3cdd2b3c6d
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -41,8 +41,8 @@ Mer information om hur du ställer in etiketterna finns i [Label Report Suite-da
 ## Förutsättningar {#section_3C766371CE0641C0821FE8E750E5AE0C}
 
 * Bekanta dig med [GDPR-terminologi.](/help/admin/c-data-governance/gdpr-terminology.md)
-* Länka ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)
-* Mappa alla Adobe Analytics-rapportsviter som ni vill konfigurera för datastyrning till [er Experience Cloud-organisation.](https://marketing.adobe.com/resources/help/en_US/mcloud/report-suite-mapping.html)
+* Länka ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)
+* Mappa alla Adobe Analytics-rapportsviter som ni vill konfigurera för datastyrning till [er Experience Cloud-organisation.](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html)
 * Ange en datalagringspolicy för varje rapportserie så att GDPR Delete- och Access-begäranden kan hanteras.
 
    > [!NOTE] Adobe Analytics kan inte hjälpa er med att bearbeta förfrågningar till GDPR API:t, dvs. behandla de förfrågningar om åtkomst och borttagning som ni får från slutanvändarna, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta din Customer Success Manager för att ange din datalagringsperiod.
