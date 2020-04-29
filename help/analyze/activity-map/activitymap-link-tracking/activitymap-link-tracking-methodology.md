@@ -4,7 +4,7 @@ title: Metod för länkspårning
 topic: Activity map
 uuid: 67864bf9-33cd-46fa-89a8-4d83d3b81152
 translation-type: tm+mt
-source-git-commit: abf808e956ca78c9e7ceaa5240d4e1ea20f90aec
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -15,7 +15,7 @@ Det här avsnittet är avsett för Adobe Analytics-administratörer. Det fokuser
 
 >[!IMPORTANT]
 >
->Alla länkar där texten (inte href) kan innehålla PII (personligt identifierbar information) ska implementeras explicit med [s_objectID](https://marketing.adobe.com/resources/help/en_US/sc/implement/s_objectID.html) eller genom att utesluta ActivityMap-länksamlingen med [s.ActivityMap.linkExclusions eller s.ActivityMap.regionExclusions](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md#configuration-vars). Mer information om hur aktivitetskartan samlar in PII-data finns [här](/help/analyze/activity-map/lnk-tracking-overview.md).
+>Alla länkar där texten (inte href) kan innehålla PII (personligt identifierbar information) ska implementeras explicit med [s_objectID](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) eller genom att utesluta ActivityMap-länksamlingen med [s.ActivityMap.linkExclusions eller s.ActivityMap.regionExclusions](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md#configuration-vars). Mer information om hur aktivitetskartan samlar in PII-data finns [här](/help/analyze/activity-map/lnk-tracking-overview.md).
 
 I Activity Map används följande två ID:n som grund för länkspårningen:
 
