@@ -4,7 +4,7 @@ title: Översikt över rapporter
 topic: Ad hoc analysis
 uuid: 36722dcd-5dc9-4047-8a17-16de876193bf
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -58,7 +58,7 @@ c_reports_campaigns.xml
 
  -->
 
-Rapporterna är vanligtvis anpassade och skiljer sig därmed åt för alla analytiker. Mer information finns i [Campaign Manager](https://marketing.adobe.com/resources/help/en_US/reference/campaign_manager_admin.html) i [!DNL Admin Console] hjälpen.
+Rapporterna är vanligtvis anpassade och skiljer sig därmed åt för alla analytiker. Mer information finns i hjälpen [för](https://helpx.adobe.com/se/enterprise/using/admin-console.html) Admin Console.
 
 ## Statistiska beräkningar {#concept_83FF70DB7895435E985699FE9012D585}
 
