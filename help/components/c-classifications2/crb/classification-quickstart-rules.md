@@ -5,7 +5,7 @@ title: Klassificeringsregler
 topic: Admin tools
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -55,7 +55,7 @@ about_classification_rules.xml
 
 ## Viktig information om regler
 
-* Ange [gruppbehörigheter](https://marketing.adobe.com/resources/help/en_US/reference/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
+* Ange [gruppbehörigheter](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
 
 * **Reguljära uttryck**: Hjälp finns under [Reguljära uttryck i klassificeringsregler](/help/components/c-classifications2/crb/classification-quickstart-rules.md).
 
