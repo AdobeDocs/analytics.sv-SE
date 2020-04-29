@@ -3,7 +3,7 @@ description: Visar aktuella och tidigare versioner och deras funktioner.
 title: Nyheter i Report Builder
 uuid: 20f4a839-0667-45a7-b037-0357d0e23010
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -44,15 +44,15 @@ Genom att kombinera rapportgenereringsfunktionen i Report Builder med visualiser
 
 ## Report Builder 5.3{#rb-5-3-section}
 
-* [Virtuella rapportsviter](https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html)
-* [Experience Cloud-målgrupper i Analytics](https://marketing.adobe.com/resources/help/en_US/mcloud/mc-audiences-aam.html)
-* [AEM Assets Reporting](https://marketing.adobe.com/resources/help/en_US/reference/aem-assets-reporting.html)
+* [Virtuella rapportsviter](https://docs.adobe.com/help/en/analytics/components/virtual-report-suites/vrs-about.html)
+* [Experience Cloud-målgrupper i Analytics](https://docs.adobe.com/content/help/en/core-services/interface/audiences/audience-library.html)
+* [AEM Assets Reporting](https://docs.adobe.com/content/help/en/analytics/integration/aem-assets-reporting.html)
 
 ## Report Builder 5.2{#rb-5-2-section}
 
 * **Beräknade mått** Report Builder 5.2 stöder Adobe Analytics [Unified Calculated Metrics](/help/analyze/report-builder/layout/c-metrics-dimensions/calculated-metrics.md). Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
 
-* **Förbättrad sökning av rapporter och mätvärden** Med fler eVars-variabler [och händelser](https://marketing.adobe.com/resources/help/en_US/sc/implement/evars_events.html) i Adobe Analytics ökar antalet rapporter och mätvärden avsevärt i Adobe Report Builder. För att förenkla sökningen har några nya sökfält lagts till i begärandeguiden: en för [rapportsökning](/help/analyze/report-builder/data-requests/c-report-types/select-report-types.md) och en för att söka efter [mätvärden](/help/analyze/report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md).
+* **Förbättrad sökning av rapporter och mätvärden** Med fler eVars-variabler [och händelser](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html) i Adobe Analytics ökar antalet rapporter och mätvärden avsevärt i Adobe Report Builder. För att förenkla sökningen har några nya sökfält lagts till i begärandeguiden: en för [rapportsökning](/help/analyze/report-builder/data-requests/c-report-types/select-report-types.md) och en för att söka efter [mätvärden](/help/analyze/report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md).
 
-* **Kundattribut** Kundattribut lagras i en ny typ av element som kallas VisAttr, som kan konfigureras som en dimension eller ett mått. Mer detaljerad information om hur du överför kundattribut finns i hjälpen [för](https://marketing.adobe.com/resources/help/en_US/mcloud/attributes.html)Experience Cloud.
+* **Kundattribut** Kundattribut lagras i en ny typ av element som kallas VisAttr, som kan konfigureras som en dimension eller ett mått. Mer detaljerad information om hur du överför kundattribut finns i hjälpen [för](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)Experience Cloud.
 
