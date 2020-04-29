@@ -5,7 +5,7 @@ title: Klassificeringsdatafiler
 topic: Admin tools
 uuid: f27bb812-56e0-472a-9993-d869f0fea700
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -159,7 +159,7 @@ Dessa tecken har en speciell betydelse i en datafil. Undvik om möjligt att anv�
 
 Kampanjdatum är vanligtvis intervall (start- och slutdatum) som associeras med enskilda kampanjer. Datum ska anges i formatet ÅÅÅ/MM/DD. Exempel: 2013/06/15-2013/06/30.
 
-Mer information finns i [Konverteringsklassificeringar](https://marketing.adobe.com/resources/help/en_US/admin/index.html#Conversion%20Classifications).
+Mer information finns i [Konverteringsklassificeringar](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
 
 >[!NOTE] I underhållserbjudandet från 10 maj 2018 började [!DNL Analytics] Adobe begränsa funktionaliteten för datumaktiverade och numeriska klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya datumaktiverade och numeriska klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering.
 
