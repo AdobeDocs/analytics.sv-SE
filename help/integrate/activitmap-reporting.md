@@ -4,7 +4,7 @@ title: Rapportering av aktivitetskarta
 topic: Reports
 uuid: 7636c670-bb6c-4a25-823a-7bbbba0b747b
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -27,4 +27,4 @@ Aktiverar Analytics för att samla in användaraktivitet från aktivitetskartan 
    | Länkar till aktivitetskarta | Visar alla samlade länkar på hela webbplatsen. |
    | Länkar och region för aktivitetskarta | Visar alla samlade länkar med deras region på hela webbplatsen. |
 
-Information som ska fyllas i finns i dokumentationen [till](https://marketing.adobe.com/resources/help/en_US/analytics/activitymap/) aktivitetskartan för fullständiga implementeringsinstruktioner.
+Information som ska fyllas i finns i dokumentationen [till](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/activity-map.html) aktivitetskartan för fullständiga implementeringsinstruktioner.
