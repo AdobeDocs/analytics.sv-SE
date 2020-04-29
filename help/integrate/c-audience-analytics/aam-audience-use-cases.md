@@ -3,7 +3,7 @@ description: 'null'
 title: Användningsexempel för målgruppsanalys
 uuid: 51c0576c-ce8a-4a87-9c8f-be193e50279d
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -20,12 +20,12 @@ Som reseföretag kan du snabbt täcka över destinationsinställningarna med ink
 
 ## Utseendeliknande modellering {#section_E2E2DD1495BC4FE9A3E26541962BFF3F}
 
-Som multimediepublicerare kan du jämföra externa målgrupper med hjälp av [segmentanalys](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/segment-comparison.html) för att förstå viktiga särskiljande egenskaper. Detta hjälper er att bygga värdefulla förstapartssegment som sedan kan användas för målinriktning.
+Som multimediepublicerare kan du jämföra externa målgrupper med hjälp av [segmentanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) för att förstå viktiga särskiljande egenskaper. Detta hjälper er att bygga värdefulla förstapartssegment som sedan kan användas för målinriktning.
 
 ## Prospekt - analys {#section_7DB1D045DD3F417CBA48C68E9E81E6C0}
 
-Som B2B-återförsäljare kan ni nu analysera hur er potentiella målgrupp beter sig direkt innan de köper med hjälp av [sekventiell segmentering](https://marketing.adobe.com/resources/help/en_US/analytics/segment/sequence-filters.html), vilket hjälper er att förstå vilka åtgärder som driver konverteringen.
+Som B2B-återförsäljare kan ni nu analysera hur er potentiella målgrupp beter sig direkt innan de köper med hjälp av [sekventiell segmentering](https://docs.adobe.com/help/en/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html), vilket hjälper er att förstå vilka åtgärder som driver konverteringen.
 
 ## Demografisk målgruppsanpassning {#section_F034DB721A06419283DBD29D4A1B444B}
 
-Som målresurs kan du använda [histogram i Analysis Workspace](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/histogram.html) för att se inköp fördelade på ålder. Detta hjälper er att hitta rätt målgrupp att rikta in er på var och en av era resortegenskaper.
+Som målresurs kan du använda [histogram i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/histogram.html) för att se inköp fördelade på ålder. Detta hjälper er att hitta rätt målgrupp att rikta in er på var och en av era resortegenskaper.
