@@ -4,7 +4,7 @@ title: Site Metrics-rapporter
 topic: Ad hoc analysis
 uuid: 0730747a-216f-4a58-b62b-a9812968cde5
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -114,7 +114,7 @@ c_reports_shopping_cart.xml
 
 Du kan använda [!UICONTROL Carts Report] till att:
 
-* Bestäm mönster, högsta eller lägsta antal kartor som öppnats på sajten.
+* Bestäm mönster, högsta eller lägsta antal kartor som öppnas på sajten.
 * Granska specifika tidsperioder och läs mer om mätvärden som specifikt bidrog till öppnandet av kundvagnen.
 
 ## Anpassad händelserapport {#concept_9337B2FB8A3F417BA8689FE7FD64629F}
@@ -163,4 +163,4 @@ c_reports_marketing_channel.xml
 
 **[!UICONTROL First or Last Touch Channel Detail Reports]**: Visar detaljer som sidnamn och referenser, som hämtas från kanalvärdena som du anger i [!UICONTROL Set the channel's value to] alternativet när regler konfigureras. Med kanaldetaljrapporter kan du noggrant granska kanaldetaljvärdena från översiktsrapporten.
 
-Mer ingående information om hur du konfigurerar marknadsföringskanalen i marknadsföringsrapporter och analyser finns i hjälpsystemet för [marknadsföringskanaler](https://marketing.adobe.com/resources/help/en_US/mchannel/index.html) .
+Mer ingående information om hur du konfigurerar marknadsföringskanalen i marknadsföringsrapporter och analyser finns i hjälpsystemet för [marknadsföringskanaler](/help/components/c-marketing-channels/analyze-mc.md) .
