@@ -3,7 +3,7 @@ description: Mätvärden är kvantitativ information om besökaraktivitet, t.ex.
 title: Mått
 uuid: ab9d8a45-0297-4757-b0f0-d8b0e0db8d67
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -22,7 +22,7 @@ Standardvärden är:
 * **Konvertering**: Visa data om lyckade händelser på din webbplats. Framgångshändelser kan omfatta inköp, nedladdningar eller andra åtgärder som du vill att användarna ska utföra på din webbplats.
 * **Beräknat**: Anpassningsbara mätvärden som skapats genom att andra mätvärden kombineras. Du kan till exempel skapa ett mätvärde som subtraherar nyckelordskostnaden och kostnaden för varor från intäkterna för att få nettointäkter. Du kan sedan dividera beloppet med det totala antalet order för att få en genomsnittlig nettointäkt per order.
 
-Se [Mätdefinitioner](https://marketing.adobe.com/resources/help/en_US/reference/metrics.html) i *Analytics Reference* för information om hur mätvärden används i [!DNL Experience Cloud].
+Se [Mätdefinitioner](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metricslist.html) i *Analytics Reference* för information om hur mätvärden används i [!DNL Experience Cloud].
 
 Du kan använda [!UICONTROL Organize Metrics] verktyget för att skapa nya mappar för dina mätvärden. Sedan kan ni gruppera mätvärden som ni vill. I Sorteraren kan du kopiera befintliga mått till dina anpassade mappar genom att dra och släppa.
 
@@ -80,7 +80,7 @@ c_calc_metric_builder.xml
 
  -->
 
-Mer information om hur du skapar och hanterar beräknade mått finns i [Handboken](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/)för beräknade mått.
+Mer information om hur du skapar och hanterar beräknade mått finns i [Handboken](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html)för beräknade mått.
 
 Så här kommer du åt verktyget Beräknade mätvärden i Ad Hoc Analysis:
 
