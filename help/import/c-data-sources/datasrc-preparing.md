@@ -5,7 +5,7 @@ title: Förbereder användning av datakällor
 topic: Developer and implementation
 uuid: 876ea069-574b-4e23-93b7-e3828bfd90f5
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -26,7 +26,7 @@ Det är viktigt att förstå mätvärden eller mått som finns i datakällorna, 
 
 När du har fastställt lämpliga metrisk-till-händelse-mappningar för Data Sources-data ändrar du namn på händelserna med beskrivande namn som passar för det associerade datakällmåttet.
 
-Se [Slutförda händelser](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) i hjälpen för Admin Tools.
+Se [Slutförda händelser](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) i hjälpen för Admin Tools.
 
 >[!NOTE] Adobe rekommenderar starkt att du använder nya, tomma händelser med data från datakällor, men i sällsynta fall kan det vara bra att använda en befintlig händelse.
 
@@ -44,7 +44,7 @@ När du har definierat de datamängder som ska användas med en datakälla integ
 
 När du använder eVars kan du använda befintliga eVars eller nya eVars som datamått. När du har valt en eVar för att ta emot en datamodell från datakällor måste du namnge dem korrekt.
 
-Se [Success Events](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) i hjälpen för Analytics.
+Se [Success Events](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) i hjälpen för Analytics.
 
 ## Kampanjspårningskod {#section_468222796FF449ABAA90D88EB3264CB1}
 
