@@ -5,7 +5,7 @@ title: Skapa virtuella rapportsviter
 topic: Reports and analytics
 uuid: 022a6656-808e-4c92-b7ec-4d2a42e84fa8
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -55,11 +55,11 @@ Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
   </tr> 
   <tr> 
    <td colname="col1"> Tidszon </td> 
-   <td colname="col2"> <p>Det är valfritt att välja en tidszon. </p> <p>Om du väljer en tidszon sparas den tillsammans med VRS. Om du inte väljer någon av dem används tidszonen för den överordnade rapportsviten. </p> <p>När du redigerar ett VRS-system visas den tidszon som har sparats med VRS i den nedrullningsbara väljaren. Om VRS skapades innan tidszonsstödet lades till visas den överordnade rapportsvitens tidszon i den nedrullningsbara väljaren. </p> </td> 
+   <td colname="col2"> <p>Det är valfritt att välja en tidszon. </p> <p>Om du väljer en tidszon sparas den tillsammans med VRS. Om du inte väljer någon tidszon används den överordnade rapportsvitens tidszon. </p> <p>När du redigerar ett VRS-system visas den tidszon som har sparats med VRS i den nedrullningsbara väljaren. Om VRS skapades innan tidszonsstödet lades till visas den överordnade rapportsvitens tidszon i den nedrullningsbara väljaren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Segment </td> 
-   <td colname="col2"> <p>Du kan bara lägga till ett segment eller <a href="https://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_stack.html"  > stapla segment</a>. </p> <p> <p>Obs!  När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. </p> </p> <p>När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. </p> </td> 
+   <td colname="col2"> <p>Du kan bara lägga till ett segment eller <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html"  > stapla segment</a>. </p> <p> <p>Obs!  När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. </p> </p> <p>När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. </p> </td> 
   </tr> 
  </tbody> 
 </table>
