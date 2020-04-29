@@ -3,7 +3,7 @@ description: Kom igång med Ad hoc-analys.
 title: Komma igång
 uuid: 6a698e18-4e62-405e-b020-b973c9c4008b
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 # Kom igång med ad hoc-analys{#concept_48936BA28FAE42DB81F1B2CD4726EB17}
 
 >[!Iviktig]
->Den 6 augusti 2018 meddelade Adobe att man hade för avsikt att göra en Ad hoc-analys i slutet av livscykeln. Ett slutdatum delas så snart det är tillgängligt. Mer information, inklusive vilka versioner av Java som kommer att vara kompatibla under perioden, finns på [https://adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace).
+>Den 6 augusti 2018 meddelade Adobe att man hade för avsikt att göra en Ad hoc-analys i slutet av livscykeln. Ett slutdatum meddelas så snart det är tillgängligt. Mer information, inklusive vilka versioner av Java som kommer att vara kompatibla under perioden, finns på [https://adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace).
 
 Du kan utföra ögonblicklig, avancerad analys av webbplatsaktiviteter. Du kan visa flera rapporter samtidigt och tillämpa segment över flera dimensioner. Ni kan analysera data från både mikro- och makroperspektiv för att se hur de påverkar era viktiga affärsvärden.
 
@@ -27,7 +27,7 @@ Med de här funktionerna kan du besvara frågor om webbplatstrafik, demografi f�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1. Logga in på Adobe <span class="keyword"> Analytics</span>. </p> </td> 
-   <td colname="col2"> <p>Gå till <a href="https://marketing.adobe.com"  > marketing.adobe.com </a>och logga in med inloggningsuppgifterna för Adobe Analytics. </p> </td> 
+   <td colname="col2"> <p>Gå till <a href="https://experiencecloud.adobe.com"  > marketing.adobe.com </a>och logga in med inloggningsuppgifterna för Adobe Analytics. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Starta ad hoc-analys. </p> </td> 
