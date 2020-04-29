@@ -3,7 +3,7 @@ description: 'null'
 title: Frågor och svar
 uuid: 1cd41253-d74f-4b92-92e6-56f9afa3df85
 translation-type: tm+mt
-source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -50,7 +50,7 @@ source-git-commit: 12a7452337307ca019c005dc20e3b551d96e1289
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Hur bör personuppgiftsansvariga tänka på datalagring när det gäller dataintegritet?</b> </p> </td> 
-   <td colname="col2"> <p>I allmänhet föreskrivs det att personuppgifter i allmänhet inte bör lagras längre än nödvändigt för att uppnå det syfte för vilket de samlades in. </p> <p>Så som beskrivs i Adobes kundkommunikation i februari kommer vi att tillämpa en 25-månaders datalagringsplan för de flesta kunder, såvida inte andra arrangemang har gjorts (med förbehåll för kundmeddelande och tillstånd). Kunderna måste ange sin datalagringspolicy innan Adobe kan behandla en begäran om dataintegritet. </p> <p>Adobe Analytics kräver att kunderna ställer in sin datalagring för att behandla sina förfrågningar om dataintegritet. Varje rapportsvit aktuella datalagringspolicy visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna bör kontakta sin Adobe-representant om de behöver ändra sina regler för datalagring. Se Vanliga frågor och svar om datalagring i Adobe Analytics. <a href="https://marketing.adobe.com/resources/help/en_US/reference/data-retention-client-table-faq.html"> </a> </p> </td> 
+   <td colname="col2"> <p>I allmänhet föreskrivs det att personuppgifter i allmänhet inte bör lagras längre än nödvändigt för att uppnå det syfte för vilket de samlades in. </p> <p>Så som beskrivs i Adobes kundkommunikation i februari kommer vi att tillämpa en 25-månaders datalagringsplan för de flesta kunder, såvida inte andra arrangemang har gjorts (med förbehåll för kundmeddelande och tillstånd). Kunderna måste ange sin datalagringspolicy innan Adobe kan behandla en begäran om dataintegritet. </p> <p>Adobe Analytics kräver att kunderna ställer in sin datalagring för att behandla sina förfrågningar om dataintegritet. Varje rapportsvit aktuella datalagringspolicy visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna bör kontakta sin Adobe-representant om de behöver ändra sina regler för datalagring. Se Vanliga frågor och svar om datalagring i Adobe Analytics. <a href="https://docs.adobe.com/content/help/en/analytics/technotes/latency.html"> </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Kan en kund minska eller förlänga standardperioden för datalagring?</b> </p> </td> 
