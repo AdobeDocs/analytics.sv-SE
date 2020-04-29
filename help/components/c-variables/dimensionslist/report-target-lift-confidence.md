@@ -3,7 +3,7 @@ description: Gör att du kan bedöma hur framgångsrika kampanjer i Adobe Analyt
 title: Måltavla för Lyft och förtroende
 uuid: 00276cd2-2e0d-4a25-ae8a-d9f4b30dd8ba
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -14,7 +14,7 @@ Gör att ni kan bedöma hur framgångsrika kampanjer i Adobe Analytics är på s
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Reports]** > **[!UICONTROL View All Reports]** > **[!UICONTROL Adobe Target]** > **[!UICONTROL Analytics for Target]** > **[!UICONTROL Target Activities]** .
 
-Adobe Target-dokumentationen innehåller mer information om [Lyft](https://marketing.adobe.com/resources/help/en_US/target/target/c_estimating_lift_in_revenue.html) och [förtroende](https://marketing.adobe.com/resources/help/en_US/rec/c_Confidence_Level_and_Confidence_Interval.html).
+Adobe Target-dokumentationen innehåller mer information om [Lyft](https://docs.adobe.com/content/help/en/target/using/administer/preferences/estimating-lift-in-revenue.html) och [förtroende](https://docs.adobe.com/help/en/target/using/reports/settings/average-lift-bounds-and-confidence-interval.html).
 
 Så här beräknar du Lyft och förtroende:
 
