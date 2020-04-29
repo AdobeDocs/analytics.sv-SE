@@ -2,7 +2,7 @@
 title: Analysdimensioner - kompatibilitet
 description: Referens för analysdimensioner och rapporter.
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -203,8 +203,8 @@ Rapporter och analyser innehåller flera förkonfigurerade rapporter som antinge
 * Java-version
 * Språk
 * De längsta banorna
-* Media Concurrent Viewers
-* Media Daypart
+* Samtidiga medieanvändare
+* Medietid
 * Medieinformation
 * Medieöversikt
 * Bildskärmslösningar
@@ -369,7 +369,7 @@ Rapporter och analyser innehåller flera förkonfigurerade rapporter som antinge
 
 ### Nielsen Integration
 
-Mer information om hur du implementerar integreringen finns i [partnerskapet](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/nielsen-partnership.html)mellan Nielsen.
+Mer information om hur du implementerar integreringen finns i [partnerskapet](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)mellan Nielsen.
 
 | Dimensionsnamn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
