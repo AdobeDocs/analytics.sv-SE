@@ -3,7 +3,7 @@ description: 'null'
 title: Vanliga frågor om projektkonverteraren
 uuid: 8e1bf0e9-ce0f-443a-bcfe-45d3e2c82b1c
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -50,9 +50,9 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
    <td colname="col2"> <p>S: Observera att diagram och diagram kallas för"visualiseringar" i Workspace. </p> 
     <ul id="ul_597F5AB826EF434295D0CABD0313CAD5"> 
      <li id="li_AFB2805418034721A9519D999128C0A8"><b>Inställningar</b>: Visualiseringsinställningar som Antal objekt eller Antal fält stöds inte i Workspace. </li> 
-     <li id="li_D5C7EA8815344EDB8585CBB8E1AF583E"><b>Cirkeldiagram</b>: Exporteras som en <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/donut.html"  > Donut</a> -visualisering. Den här visualiseringen i Workspace är begränsad till 19 avsnitt. </li> 
-     <li id="li_91659FBFD77C4B3393D78447D658B7B4"><b>Bubbeldiagram</b>: Exporteras som en <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/scatterplot.html"  > Scatterplot</a> -visualisering. Som standard ritas det första måttet på x-axeln och det andra måttet på y-axeln. Om det bara finns ett mätvärde konverteras bubbeldiagram till linjevisualiseringar. </li> 
-     <li id="li_FA05085FFB1747EBAF63616AC2B8D59C"><b>Histogram</b>: Stöder en annan låsningslogik i Workspace jämfört med Ad Hoc Analysis. Därför konverteras den till en <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/bar.html"  > Bar</a> -visualisering. </li> 
+     <li id="li_D5C7EA8815344EDB8585CBB8E1AF583E"><b>Cirkeldiagram</b>: Exporteras som en <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/donut.html"  > Donut</a> -visualisering. Den här visualiseringen i Workspace är begränsad till 19 avsnitt. </li> 
+     <li id="li_91659FBFD77C4B3393D78447D658B7B4"><b>Bubbeldiagram</b>: Exporteras som en <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/scatterplot.html"  > Scatterplot</a> -visualisering. Som standard ritas det första måttet på x-axeln och det andra måttet på y-axeln. Om det bara finns ett mätvärde konverteras bubbeldiagram till linjevisualiseringar. </li> 
+     <li id="li_FA05085FFB1747EBAF63616AC2B8D59C"><b>Histogram</b>: Stöder en annan låsningslogik i Workspace jämfört med Ad Hoc Analysis. Därför konverteras den till en <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/bar.html"  > Bar</a> -visualisering. </li> 
      <li id="li_959499D20796459CA0F6BBC8F0A8D808"><b>Punktdiagram</b>: I exporterade projekt i Analysis Workspace anges Y-axeln som den första kolumnen, X-axeln är den andra kolumnen och diametern är den tredje kolumnen. </li> 
      <li id="li_14E06D7A5106405A89A07B44FFD9A92D"><b>Utfallstabeller</b>: Högerklicka på kontrollpunkten och välj ett brytningsalternativ om du vill visa fallthrough- eller fallout-tabeller. </li> 
      <li id="li_240F43C386F04111A7632A8FCA37832C"><b>Datumintervall</b>på rapportnivå: Anpassade datumintervall för rapporter har inte tillämpats på utfallsvisualiseringar. </li> 
@@ -68,7 +68,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
      <li id="li_AE61DAEC5C0047349DD192EFEEDB0BF9">Segment på arbetsytenivå för ad hoc-analys används på projekt-/arbetsytenivå i Workspace. </li> 
      <li id="li_B1559E2C18724FE189AF87D0BEF16811">Segment på rapportnivå för ad hoc-analys används på tabellkolumnnivå i Workspace. </li> 
      <li id="li_0E6DF6D44EA448A4A212BA2BB8E342CF">Tabellsegment för ad hoc-analys används på kolumnnivå i Workspace. </li> 
-    </ul> <p>Du kan redigera segment i <a href="https://marketing.adobe.com/resources/help/en_US/analytics/segment/"  > Segment Builder</a>. </p> </td> 
+    </ul> <p>Du kan redigera segment i <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html"  > Segment Builder</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Hur konverteras datumintervall?</b> </p> </td> 
@@ -86,7 +86,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
      <li id="li_010572F793F54680ABE64117DAB7E800">Beräknade värden är interna för det exporterade projektet (inte offentliga). Du kan välja att göra dem offentliga genom att högerklicka på måttet och klicka på <span class="uicontrol"> Gör offentlig</span>. <p><img placement="inline"  src="assets/calc_metric_internal.png" id="image_EA19BA55B161499CBDB9275A5C94BA90" width="200px" /> </p> </li> 
      <li id="li_930546EC8FEB432C8810FAF93556FC9A">Alla typer av beräknade värden stöds för export. </li> 
      <li id="li_DFF7C6F8BB2344928D49194DA0F6EC38"><b>Allokeringstyper</b>: Även om Analysis Workspace inte uttryckligen visar allokeringstypen för ett beräknat mått skapas och matchar exporten allokeringstypen som fanns i Ad Hoc Analysis. </li> 
-    </ul> <p>Du kan redigera allokeringstypen i verktyget <a href="https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/"  > Beräknad mätmetod</a> genom att klicka på ikonen Redigera (penna). </p> </td> 
+    </ul> <p>Du kan redigera allokeringstypen i verktyget <a href="https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html"  > Beräknad mätmetod</a> genom att klicka på ikonen Redigera (penna). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Hur används globala datainställningar i Ad hoc för konverterade projekt?</b> </p> </td> 
@@ -99,10 +99,6 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
   <tr> 
    <td colname="col1"> <p><b>F: Om mitt Ad hoc-analysprojekt är schemalagt, kommer schemat att konverteras till Analysis Workspace?</b> </p> </td> 
    <td colname="col2"> <p>Nej, scheman konverteras inte. Öppna det projekt som du vill schemalägga i Analysis Workspace och gå till <span class="uicontrol"> Dela</span> &gt; <span class="uicontrol"> Skicka fil i schema</span> för att konfigurera ett nytt schema. Var noga med att avbryta det schemalagda projektet i Ad hoc-analys. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>F: Finns det några namnskillnader mellan de två verktygen?</b> </p> </td> 
-   <td colname="col2"> <p>S: Ja. Se <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/adhocanalysis_vs_analysisworkspace.html"  > Jämförelse av nyckelterminologi </a>i dokumentationen för Analysis Workspace. </p> </td> 
   </tr> 
  </tbody> 
 </table>
