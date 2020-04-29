@@ -4,7 +4,7 @@ title: Adobe Target
 topic: Ad hoc analysis
 uuid: 420da093-9d0d-454e-a193-e0595f36d3b1
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -25,4 +25,4 @@ Exempel:
 
 Genom att utnyttja data i rapporter och analyser kan ni fördjupa er i era Target-recept med hjälp av uppdelningar och upptäcka högpresterande segment som är idealiska för framtida tester och potentiellt målinriktade kampanjer. Rapporterna och analysrapporten visar konverteringsdata i stället för målets konverteringsdata.
 
-Mer information finns i hjälpsystemet för [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/) .
+Mer information finns i hjälpsystemet för [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) .
