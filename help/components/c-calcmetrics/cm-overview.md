@@ -4,7 +4,7 @@ keywords: Calculated Metrics;Derived Metrics;Advanced Calculated Metrics
 title: Beräknade och avancerade beräknade (härledda) värden
 uuid: 2553c115-b15a-4109-8de2-733dbc1eeb9e
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -15,7 +15,7 @@ Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått
 
 >[!IMPORTANT]
 >
->I juli 2018 införde Adobe [attribuerings-IQ](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html), som reviderade metoderna för utvärdering av tilldelningsmodeller i beräknade värden. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
+>I juli 2018 införde Adobe [attribuerings-IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html), som reviderade metoderna för utvärdering av tilldelningsmodeller i beräknade värden. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
 >
 >* Allokeringsmodellerna&quot;sista beröringen i marknadsföringskanalen&quot; och&quot;Första beröringen i marknadsföringskanalen&quot; migrerades till de nya attribueringsmodellerna&quot;Sista beröringen&quot; respektive&quot;Första beröringen&quot; (Obs! &quot;Marknadsföringskanaler&quot; har inte tagits bort - bara de två allokeringsmodellerna som visas i beräknade värden har tagits bort).
 >* Dessutom har vi korrigerat hur linjär fördelning beräknas. För kunder som använder beräknade värden med linjär allokering kan rapporterna ändras något för att återspegla den nya, korrigerade attribueringsmodellen. Den här förändringen av beräknade värden återspeglas i [!UICONTROL Analysis Workspace], [!UICONTROL Reports & Analytics]rapporterings-API:t, Report Builder och Ad hoc-analysen. Mer information finns i [How Linear Allocation will work from 19 juli 2018](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md#section_EDBB2E14A6C248C5A79C0913C02D7CA1).
@@ -30,7 +30,7 @@ Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, 
 
 Här följer en jämförelse av funktionerna för beräknade värden och avancerade beräknade värden:
 
-| Alternativ för verktyget Builder | Beräknade mått | Avancerade beräknade (härledda) mått |
+| Alternativ för verktyget Builder | Beräknade mätvärden | Avancerade beräknade (härledda) mått |
 |---|---|---|
 | [Formattyper (decimal, time, percent, currency)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) | Ja | Ja |
 | [Attributionsändringar (standard, linjär, deltagande osv.)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) | Ja | Ja |
