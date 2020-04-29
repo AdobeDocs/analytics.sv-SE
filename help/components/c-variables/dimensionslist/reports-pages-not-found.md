@@ -4,7 +4,7 @@ title: Sidorna hittades inte
 topic: Reports
 uuid: a1f5f3d1-1c4e-486c-8913-24da573ad015
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -15,7 +15,7 @@ Hjälper dig att identifiera sidor som innehåller brutna länkar och att mäta 
 
 **Egenskaper**
 
-* Den här rapporten refererar till data direkt från [pageType](https://marketing.adobe.com/resources/help/en_US/sc/implement/c_pagetype.html) -variabeln som implementeras på din webbplats.
+* Den här rapporten refererar till data direkt från [pageType](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/pagetype.html) -variabeln som implementeras på din webbplats.
 * Den här rapporten kan visas i både trand- och rankningsformat.
 * När du klickar på förstoringsglaset visas de översta referenserna till den specifika sidan.
 
