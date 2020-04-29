@@ -3,7 +3,7 @@ description: Beskriver de tre alternativen för produktkompatibilitet.
 title: Mätkompatibilitet
 uuid: f2706e2b-c0cc-4af2-bcb4-1318796e9845
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -24,7 +24,7 @@ När du skapar beräknade eller avancerade beräknade mått i verktyget för ber
  <tbody> 
   <tr> 
    <td colname="col1"> Aktuella data </td> 
-   <td colname="col2"> <p>Med alternativet Inkludera aktuella data i Analytics kan ni visa de senaste Analytics-data, ofta innan data har bearbetats fullständigt och slutförts. <a href="https://marketing.adobe.com/resources/help/en_US/reference/data_latency.html"  > Aktuella data</a> visar de flesta mätvärden på några minuter och ger användbara data för snabba beslut. </p> <p>Aktuella data har endast stöd för beräknade värden (de som innehåller multiplikation, division, addition och subtraktion). Aktuella data stöder inte avancerade beräknade värden (som innehåller segment eller funktioner). </p> </td> 
+   <td colname="col2"> <p>Med alternativet Inkludera aktuella data i Analytics kan ni visa de senaste Analytics-data, ofta innan data har bearbetats fullständigt och slutförts. <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/current-data.html"  > Aktuella data</a> visar de flesta mätvärden på några minuter och ger användbara data för snabba beslut. </p> <p>Aktuella data har endast stöd för beräknade värden (de som innehåller multiplikation, division, addition och subtraktion). Aktuella data stöder inte avancerade beräknade värden (som innehåller segment eller funktioner). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Fullt bearbetade data </td> 
