@@ -4,7 +4,7 @@ title: Differentiera länkar som refererar till samma länk-ID och region
 topic: Activity map
 uuid: f2da0cda-a33b-4a12-8d99-1f58386d6d30
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -48,7 +48,7 @@ Hur kan du anpassa din webbsida och taggning för att särskilja länkarnas vär
 
 ## Anpassa länk-ID med s_objectID {#section_01B0D463397B4837B2D46F087A6E5937}
 
-Genom att skapa ett unikt objekt-ID för en länk eller länkplats på en sida kan du antingen förbättra spårningen av aktivitetskartan eller använda aktivitetskarta för att rapportera en länktyp eller plats, i stället för länkens URL. Klicka [här](https://marketing.adobe.com/resources/help/en_US/sc/implement/s_objectID.html) om du vill ha mer information om variabeln s_objectID.
+Genom att skapa ett unikt objekt-ID för en länk eller länkplats på en sida kan du antingen förbättra spårningen av aktivitetskartan eller använda aktivitetskarta för att rapportera en länktyp eller plats, i stället för länkens URL. Klicka [här](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) om du vill ha mer information om variabeln s_objectID.
 
 >[!IMPORTANT]
 >
