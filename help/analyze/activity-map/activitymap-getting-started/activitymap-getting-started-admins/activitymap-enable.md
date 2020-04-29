@@ -4,7 +4,7 @@ title: Aktivera aktivitetskarta
 topic: Activity map
 uuid: 30433319-d0e6-4977-951a-4492b356e1f2
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -19,7 +19,7 @@ Aktivitetskartan är en del av filen AppMeasurement.js (som finns högst upp i f
 
 Data för aktivitetskartan kan inte samlas in om du inte uppdaterar till den här versionen (eller senare) av AppMeasurement.
 
-1. Hämta den senaste AppMeasurement-koden (AppMeasurement_Javascript-1.6.zip) genom att gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]** och [implementera den](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html).
+1. Hämta den senaste AppMeasurement-koden (AppMeasurement_Javascript-1.6.zip) genom att gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]** och [implementera den](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html).
 
    Vi har inkluderat en del [exempelkod](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md) för implementering som hjälper dig att visualisera de ändringar som har gjorts i koden genom att inkludera aktivitetskartan.
 
@@ -51,7 +51,7 @@ Först måste du aktivera aktivitetskartrapporter på rapportsvitnivå.
 
    Du kommer nu till grupphanteringssidan i Admin Console.
 
-1. [Lägg till användare i den här gruppen](https://marketing.adobe.com/resources/help/en_US/reference/groups.html) och **[!UICONTROL Save Group]**.
+1. [Lägg till användare i den här gruppen](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html) och **[!UICONTROL Save Group]**.
 
 1. Detta gör att dina Admin-användare kan hämta aktivitetskartan från **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL ActivityMap]** .
 
