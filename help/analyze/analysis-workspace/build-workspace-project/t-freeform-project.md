@@ -5,7 +5,7 @@ title: Skapa ett arbetsyteprojekt
 topic: Reports and analytics
 uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -20,7 +20,7 @@ I den här artikeln får du information om gränssnittselementen för Analysis W
 
 1. Ange användarbehörighet för att skapa och strukturera projekt.
 
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratören lägga till dig i en grupp med aktiverad **[!UICONTROL Create / Curate Projects in Analysis Workspace]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Grupper](https://marketing.adobe.com/resources/help/en_US/reference/groups.html)).
+   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratören lägga till dig i en grupp med aktiverad **[!UICONTROL Create / Curate Projects in Analysis Workspace]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Grupper](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Klicka [!DNL Experience Cloud]på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
