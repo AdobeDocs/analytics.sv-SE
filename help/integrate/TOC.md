@@ -1,10 +1,10 @@
 ---
 product: analytics
 audience: end-user
-user-guide-title: Analytics Integration Guide
+user-guide-title: Integreringshandbok för analyser
 user-guide-url: /content/help/en/analytics/integration/home.html
 translation-type: tm+mt
-source-git-commit: 440b75f03e34ac3ccf75671323502b6e2bb50fdc
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 440b75f03e34ac3ccf75671323502b6e2bb50fdc
       + [Hantera annonskonton](c-advertising-analytics/c-adanalytics-workflow/aa-manage-ad-accounts.md)
       + [Felsöka annonsanalys](c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md)
    + [Vanliga frågor](c-advertising-analytics/aa-faq.md)
-+ [Analyser för Target - A4T](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html)
++ [Analyser för Target - A4T](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html)
 + [Adobe Campaign-rapportering](adobe-campaign.md)
 + [AEM Assets-rapportering](aem-assets-reporting.md)
 + [Rapportering av aktivitetskarta](activitmap-reporting.md)
