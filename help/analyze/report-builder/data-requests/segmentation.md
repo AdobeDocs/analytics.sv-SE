@@ -4,7 +4,7 @@ title: Hantera segment
 topic: Report builder
 uuid: 4e4edc39-ed93-498f-913d-7b231b10e7a0
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -22,7 +22,7 @@ I Report Builder finns en segmenteringspanel i steg 1 i begärandeguiden där du
 >[!NOTE] Om du vill lägga till eller redigera segment, startar segmentgränssnittet i Report Builder segmentverktyget Analytics i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
 
 1. Klicka på i segmentpanelen i steg 1 i begärandeguiden **[!UICONTROL Add]**.
-1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns på [https://marketing.adobe.com/resources/help/en_US/analytics/segment/](https://marketing.adobe.com/resources/help/en_US/analytics/segment/).
+1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns i [Analyssegmentering](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
 1. När du har definierat och sparat segmentet går du tillbaka till Begärandeguiden.
 1. Klicka på ikonen Uppdatera för att uppdatera segmentlistan.
 
@@ -39,7 +39,7 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 
    ![](assets/seg_in_context.png)
 
-   Mer information om behållare finns i [segmenteringshandboken](https://marketing.adobe.com/resources/help/en_US/analytics/segment/).
+   Mer information om behållare finns i [segmenteringshandboken](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
 
 1. Segment Builder-gränssnittet kommer nu att startas i Internet Explorer. Användargränssnittet för segmentbyggaren initieras med den behållare och det filter som du angav.
 1. När du har lagt till ett namn och en beskrivning för segmentet sparar du det.
