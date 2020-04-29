@@ -3,7 +3,7 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 translation-type: tm+mt
-source-git-commit: f7125e6845a653ca3d4dd3f1313d1b39f564459c
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -76,7 +76,7 @@ Mer information om produktjämförelser i Adobe Analytics finns [här](/help/adm
 
 * När ni kontaktar en tredjepartsleverantör som har skapat en anslutning som stöds med Adobe Analytics. Data Connectors lägger vanligtvis in data på sammanfattningsnivå i Adobe Analytics permanent och automatiskt, regelbundet.
 
-**[API](https://marketing.adobe.com/developer/documentation/data-insertion/c-data-insertion-api)**för datainmatning ska användas:
+**[API](/help/import/c-data-insertion-api/c-data-insertion-api.md)**för datainmatning ska användas:
 
 * När du behöver överföra data till Adobe Analytics, och inte kan använda Adobe AppMeasurement eller mobil SDK-kod.
 
@@ -114,7 +114,7 @@ Mer information om produktjämförelser i Adobe Analytics finns [här](/help/adm
 * Om kunden vill ha Adobe-data lagrade i en databas på klientsidan, på den mest detaljerade nivå vi kan skicka.
 * Om kunden vill utveckla ett Business Intelligence-verktyg (BI) eller lägga in data på hög nivå i ett tredjepartsverktyg.
 
-**[Rapporterings-API](https://marketing.adobe.com/developer/get-started/introduction/c-introduction)**bör användas när de andra visualiseringsalternativen inte uppfyller dina behov. De tre API-alternativen omfattar:
+**[Rapporterings-API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md)**bör användas när de andra visualiseringsalternativen inte uppfyller dina behov. De tre API-alternativen omfattar:
 
 * **Fullt bearbetad**: när ni vill ha funktionsrika data (inklusive besök, besökare och segment). Det här är typiska gränssnittsdata från Analytics, som är tillgängliga inom cirka 30-90 minuter. Kan användas med Report Builder.
 * **Realtid**: när du vill visa ett par mätvärden och dimensioner med några sekunders fördröjning. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Innehåller unika algoritmer för de flesta populära, vinnare och förlorare. Kan användas med Report Builder.
