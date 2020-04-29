@@ -3,7 +3,7 @@ description: 'null'
 title: Felsöka annonsanalys
 uuid: d0abe7cc-ed13-4d3d-87a6-f0d649c7ad2d
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -27,7 +27,7 @@ Du försöker [konfigurera ett nytt Advertising-konto](/help/integrate/c-adverti
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1. Rapportsviten är inte mappad till Experience Cloud-organisations-ID:t för inloggningsanvändaren. </p> </td> 
-   <td colname="col2"> <p>Mer information finns i <a href="https://marketing.adobe.com/resources/help/en_US/mcloud/map-report-suite.html"  > Kartrapportsviter för en organisation</a> . </p> </td> 
+   <td colname="col2"> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html"  > Kartrapportsviter för en organisation</a> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Report Suite har inte etablerats för Advertising Analytics-rapportering. </p> </td> 
