@@ -3,7 +3,7 @@ description: Det finns två sätt att använda mått i Analysis Workspace.
 title: Mått
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -18,7 +18,7 @@ Du kan antingen dra en standardmall för mått, beräknade värden eller beräkn
 
 >[!NOTE] Även om detta ser enkelt ut är användningen av mätvärden ganska kraftfull. Du kan lägga till mätvärden i en rapport genom att dra lämpliga mätvärden till måttavsnittet i en tabell. Du kan också dela upp mått efter mått och på så sätt få detaljkontroll över tabellvyn. Dessutom kan du infoga ett mått som en dimension och en dimension som ett mått för att skapa en övertidsrapport. Lek med de olika komponenterna och se vad du kan göra. Möjligheterna är oändliga.
 
-Du kan också klicka **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Då kommer du till [beräkningsverktyget](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/)där du kan skapa anpassade mätvärden utifrån befintliga mätvärden.
+Du kan också klicka **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Då kommer du till [beräkningsverktyget](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html)där du kan skapa anpassade mätvärden utifrån befintliga mätvärden.
 
 För att det ska vara enklare att snabbt skapa beräknade värden har **[!UICONTROL Create metric from selection]** lagts till på högerklicksmenyn i frihandstabeller i kolumnen. Det här alternativet visas när en eller flera rubrikkolumnceller är markerade.
 
