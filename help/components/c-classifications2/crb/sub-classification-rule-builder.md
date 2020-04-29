@@ -2,7 +2,7 @@
 description: Du kan inte kombinera klassificeringsregelverktyget med underklassificeringar.
 title: Underklassificeringar och regelbyggaren
 translation-type: tm+mt
-source-git-commit: 0e97e28ffb2bf94acfb382c3f97ff30b31321467
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -37,7 +37,7 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 >
 >Dessa steg beskriver hur du slutför de användningsfall som beskrivs i [Underklassificeringar och Regelbyggaren](/help/components/c-classifications2/crb/sub-classification-rule-builder.md).
 
-1. Skapa klassificeringar och underklassificeringar i [Klassificeringshanteraren](https://marketing.adobe.com/resources/help/en_US/reference/classifications.html).
+1. Skapa klassificeringar och underklassificeringar i [Klassificeringshanteraren](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html).
 
    Exempel:
 
