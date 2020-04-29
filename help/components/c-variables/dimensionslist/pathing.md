@@ -4,7 +4,7 @@ title: Pathing
 topic: Reports
 uuid: c4ff9fa8-e567-4039-9c86-322800a942da
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 En grupp rapporter baserade på sökvägsanalys. Tekniskt sett innebär det att klippa ut från ett sidnamn till ett annat (från ett värde till ett annat).
 
-Använd [Analys Workspace Flow](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/flow.html) för flexiblare målningsalternativ.
+Använd [Analys Workspace Flow](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) för flexiblare målningsalternativ.
 
 >[!NOTE] Om du vill aktivera en bana går du till **[!UICONTROL Admin > Report Suites > Edit Settings > Traffic > Traffic Variables]**. Kontakta kundtjänst om du vill aktivera delning av plats och serverrapporter.
 
