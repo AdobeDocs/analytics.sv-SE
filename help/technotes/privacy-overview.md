@@ -4,7 +4,7 @@ keywords: privacy
 title: Sekretessöversikt
 uuid: f19a8b35-3e10-47ae-93c1-6a9924b11313
 translation-type: tm+mt
-source-git-commit: 69138bdedb42b66449426fee39822520ee4b1198
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -89,7 +89,7 @@ Adobe Analytics samlar in följande data:
   </tr> 
   <tr> 
    <td colname="col1"> Europa </td> 
-   <td colname="col2"> Adobe har aktiverat inställningen IP-Obfuscation: Aktiverad - IP Borttagen (x.x.x.x) som standard för alla kunder med en rapportsvit som angetts i EMEA. Med den här inställningen ersätts IP-adressen helt med värdet (x.x.x.x) efter geolookup och är inte längre tillgänglig som en datapunkt. <p>Den här grundläggande ersättningsmetoden kan inte bakåtkompileras till en unik, specifik IP-adress. Varken kunden eller Adobe kan komma åt IP-adressen. den är irreversibelt anonymiserad. Mer information om andra inställningar för IP-förfalskning finns i </p> <p> <a href="https://marketing.adobe.com/resources/help/en_US/reference/index.html#General_Account_Settings"  > https://marketing.adobe.com/resources/help/en_US/reference/index.html#General_Account_Settings </a> </p> </td> 
+   <td colname="col2"> Adobe har aktiverat inställningen IP-Obfuscation: Aktiverad - IP Borttagen (x.x.x.x) som standard för alla kunder med en rapportsvit som angetts i EMEA. Med den här inställningen ersätts IP-adressen helt med värdet (x.x.x.x) efter geolookup och är inte längre tillgänglig som en datapunkt. <p>Den här grundläggande ersättningsmetoden kan inte bakåtkompileras till en unik, specifik IP-adress. Varken kunden eller Adobe kan komma åt IP-adressen. den är irreversibelt anonymiserad. Mer information om andra inställningar för IP-förfalskning finns i </p> <p> <a href="https://docs.adobe.com/content/help/en/analytics/landing/home.html#General_Account_Settings"  > https://docs.adobe.com/content/help/en/analytics/landing/home.html#General_Account_Settings </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Global </td> 
