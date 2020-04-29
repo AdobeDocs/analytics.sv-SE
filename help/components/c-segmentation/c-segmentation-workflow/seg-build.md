@@ -4,7 +4,7 @@ title: Skapa segment
 topic: Segments
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -23,7 +23,7 @@ Det finns flera sätt att komma åt segmentbyggaren:
 * **[!UICONTROL Analysis Workspace]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, öppna ett projekt och klicka **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
 * **[!UICONTROL Reports & Analytics]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen och klicka sedan på **[!UICONTROL Add]**.
 * **[!UICONTROL Ad Hoc Analysis]**: Skapa [segment i ad hoc-analys](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md#build-segments).
-* **[!UICONTROL Report Builder]**: Lägg [till eller redigera segment i Report Builder](https://marketing.adobe.com/resources/help/en_US/arb/segmentation.html).
+* **[!UICONTROL Report Builder]**: Lägg [till eller redigera segment i Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/data-requests/segmentation.html).
 
 ## Användargränssnittet i Segment Builder {#concept_643F2DF74C544796B58F4656ABC5F726}
 
