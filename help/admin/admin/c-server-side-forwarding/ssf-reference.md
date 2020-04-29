@@ -3,7 +3,7 @@ description: En omfattande lista med beskrivningar av konfigurationsvariabler, H
 title: Vidarebefordra data och kodreferenser på serversidan
 uuid: 3eb3ea0f-a530-448d-bba5-6408b2490dc8
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -14,7 +14,7 @@ En omfattande lista med beskrivningar av konfigurationsvariabler, HTTP-huvuden o
 
 ## Konfigurationsvariabler {#section_AD402B5EB9B24BF3B2039DA80FCA901E}
 
-Parametrar som prefix med `d_*` identifierar nyckelvärdepar på systemnivå som används av våra [datainsamlingsservrar](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html) (DCS). Se även [Attribut som stöds för DCS API-anrop](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+Parametrar som prefix med `d_*` identifierar nyckelvärdepar på systemnivå som används av våra [datainsamlingsservrar](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/system-components/components-data-collection.html) (DCS). Se även [Attribut som stöds för DCS API-anrop](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
 | Parameter | Beskrivning |
 |--- |--- |
@@ -40,7 +40,7 @@ Dessa rubriker är fält som innehåller information som förfrågningar om data
 
 ## Kunddefinierade signaler {#section_8F8C39E87BDE48BAA59E25CB7E86215D}
 
-Parametrar som har prefixats med `c_` att identifiera kunddefinierade variabler. Se även [Attribut som stöds för DCS API-anrop](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html).
+Parametrar som har prefixats med `c_` att identifiera kunddefinierade variabler. Se även [Attribut som stöds för DCS API-anrop](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
 | Signal | Beskrivning |
 |--- |--- |
