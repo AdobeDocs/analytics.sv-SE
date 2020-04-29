@@ -5,7 +5,7 @@ title: Vanliga frågor
 topic: Segments
 uuid: f49dc829-1d53-4183-9add-1aeaa5219d89
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -18,9 +18,9 @@ Svar på vanliga frågor om segmenteringsfunktioner, åtkomst, behörigheter, b�
 
 * Segmentering på analysarbetsytan:
 
-   * Du kan [jämföra segment](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/segment-comparison.html).
-   * Använd [segment som dimensioner](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/segments_as_dimensions.html) i en jämförelse.
-   * Använd segment i [bortfallsanalys](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/graphics/compare-segments-fallout.html).
+   * Du kan [jämföra segment](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html).
+   * Använd [segment som dimensioner](https://docs.adobe.com/content/help/en/core-services/interface/audiences/audience-library.html) i en jämförelse.
+   * Använd segment i [bortfallsanalys](https://docs.adobe.com/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html).
 
 * Du kan [använda flera segment i en rapport eller ett projekt](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md).
 * Segmenten är universella för alla rapportsviter.
@@ -74,7 +74,7 @@ Listrutan för rapportsviten har flyttats bredvid datumväljaren i det övre hö
 
 **Vilka rättigheter och behörigheter behöver jag för att använda, skapa och hantera segment?**
 
-Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vilka som ska ha [behörighet att skapa segment](https://marketing.adobe.com/resources/help/en_US/reference/groups.html) och tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
+Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vilka som ska ha [behörighet att skapa segment](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html) och tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
 
 Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Mer ...](/help/components/c-segmentation/seg-reference/seg-rights.md)
 
