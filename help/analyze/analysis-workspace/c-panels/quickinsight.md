@@ -2,7 +2,7 @@
 description: Verktyget Quick Insights Builder är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
 title: Quick Insights builder
 translation-type: tm+mt
-source-git-commit: d339a1171d1d71a1074c5fbf81d6002de4955628
+source-git-commit: 0bf00f990a34768b93cef5d57a126ebe93087e91
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: d339a1171d1d71a1074c5fbf81d6002de4955628
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insights]** är för närvarande i betatestning och är inte allmänt tillgänglig för alla Adobe Analytics-kunder än.
+>**[!UICONTROL Quick Insights]** har för närvarande begränsad testning och är inte allmänt tillgänglig för alla Adobe Analytics-kunder än.
 
 [!UICONTROL Quick Insights] ger vägledning för icke-analytiker och nya användare av [!UICONTROL Analysis Workspace] att lära sig att snabbt och enkelt svara på affärsfrågor. Det är också ett bra verktyg för avancerade användare som snabbt vill besvara en enkel fråga utan att själva behöva skapa en tabell.
 
