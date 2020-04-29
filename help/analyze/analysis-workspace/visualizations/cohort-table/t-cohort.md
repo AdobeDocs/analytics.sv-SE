@@ -5,7 +5,7 @@ title: Köra en kohortanalysrapport
 topic: Reports and analytics
 uuid: 5574230f-8f35-43ea-88d6-cb4960ff0bf4
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -43,7 +43,7 @@ Skapa en kohort och kör en kohortanalysrapport i Analysis Workspace.
 
    Markera celler (angränsande eller icke-angränsande) och högerklicka sedan > **[!UICONTROL Create Segment From Selection]**.
 
-1. I [Segment Builder](https://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_build.html)redigerar du segmentet ytterligare och klickar sedan på **[!UICONTROL Save]**.
+1. I [Segment Builder](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md)redigerar du segmentet ytterligare och klickar sedan på **[!UICONTROL Save]**.
 
    Det sparade segmentet är tillgängligt för användning på [!UICONTROL Segment] panelen i Analysis Workspace.
 1. Namnge och spara ditt kohortprojekt.
