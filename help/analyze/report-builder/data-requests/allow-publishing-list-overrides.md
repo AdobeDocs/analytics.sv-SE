@@ -4,7 +4,7 @@ title: Tillåt åsidosättning av publiceringslista
 topic: Report builder
 uuid: f2cc9878-ab54-4c6f-8a88-3f3b579955e3
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -15,7 +15,7 @@ När du schemalägger en rapport kan du välja en publiceringslista som ska anv�
 
 Publiceringslistor konfigureras i verktygen för Analytics Admin.
 
-Se [Publiceringslisthanteraren](https://marketing.adobe.com/resources/help/en_US/reference/publishing_list.html) i Analytics Reference.
+Se [Publiceringslisthanteraren](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/publishing-list.html) i Analytics Reference.
 
 Navigera till [!UICONTROL Request Wizard: Step 1] fönstret om du vill aktivera den här funktionen.
 
