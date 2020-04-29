@@ -5,7 +5,7 @@ title: Skapa webbegenskap
 topic: Developer and implementation
 uuid: f19d5504-eb44-4d93-a387-7470ab4b3a3a
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -14,11 +14,11 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 En webbegenskap kan vara vilken gruppering som helst av en eller flera domäner och underdomäner med ett regelbibliotek, som ingår i en inbäddningskod.
 
->[!NOTE] Endast en användare med administratörsbehörighet kan skapa en egenskap. Mer information om roller finns i [Skapa och hantera grupper i DTM](https://marketing.adobe.com/resources/help/en_US/dtm/groups.html) i produktdokumentationen för Dynamic Tag Management.
+>[!NOTE] Endast en användare med administratörsbehörighet kan skapa en egenskap. Mer information om roller finns i [Skapa och hantera grupper i DTM](https://docs.adobe.com/content/help/en/dtm/using/admin/groups.html) i produktdokumentationen för Dynamic Tag Management.
 
 Du kan hantera och spåra dessa resurser med DTM. Anta till exempel att du har flera webbplatser som är baserade på en mall och vill spåra samma resurser på alla dessa webbplatser. Du kan använda en webbegenskap på flera domäner.
 
-Allmän information om webbegenskaper och metodtips finns i [Webbegenskaper](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html) i produktdokumentationen för Dynamic Tag Management.
+Allmän information om webbegenskaper och metodtips finns i [Webbegenskaper](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html) i produktdokumentationen för Dynamic Tag Management.
 
 1. Navigera till din företagssida och klicka sedan på **[!UICONTROL Add Property]**.
 
