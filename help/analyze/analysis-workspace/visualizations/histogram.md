@@ -3,7 +3,7 @@ description: Ett histogram är en ny visualiseringstyp i Analysis Workspace.
 title: Histogram
 uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -37,7 +37,9 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 | Startar Bucket | Anger vilken bucket histogrammet börjar med. &quot;1&quot; är standardvärdet. Du kan ange startnummer från 0 till oändlighet (inga negativa tal). |
 | Mätbuffertar | Gör att du kan öka/minska antalet dataintervall (bucket). Det högsta antalet bucklor är 50. |
 | Storlek på mätpyts | Gör att du kan ange storleken för varje bucket. Du kan till exempel ändra bucketstorleken från en sidvy till två sidvyer. |
-| Inventeringsmetod | Här kan du välja mellan [Besök](https://marketing.adobe.com/resources/help/en_US/reference/visitors.html), [Besök](https://marketing.adobe.com/resources/help/en_US/reference/metrics_visit.html)eller [Träff](https://marketing.adobe.com/resources/help/en_US/reference/hit.html). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
+| Inventeringsmetod | Här kan du välja mellan [besökare](/help/components/c-variables/c-metrics/visitors.md), [besök](/help/components/c-variables/c-metrics/metrics-visit.md)eller [träff](/help/components/c-variables/dimensionslist/report-hit-type.md). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
+
+<!--Russ or Meike - Check Hit Type link above. -->
 
 **Exempel**:
 
@@ -54,4 +56,4 @@ Färdiga segment som visas i tabellen är interna segment och visas inte i segme
 
 ![](assets/prebuilt_segments.png)
 
-Om du vill utforska fler sätt att hantera datatabeller i Freeform och andra visualiseringar, som att göra datauppdelningar, kan du gå [hit](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/freeform-analysis-visualizations.html).
+Om du vill utforska fler sätt att hantera datatabeller i Freeform och andra visualiseringar, som att göra datauppdelningar, kan du gå [hit](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
