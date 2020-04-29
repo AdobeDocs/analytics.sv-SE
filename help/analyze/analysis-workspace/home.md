@@ -3,7 +3,7 @@ description: Så här kommer du igång med Adobe Analytics.
 keywords: Analysis Workspace
 title: Guiden Komma igång
 translation-type: tm+mt
-source-git-commit: 825dc13b0294e5a96b30b95f14524175d44c621d
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -97,6 +97,6 @@ Det finns många inriktningar på att fördjupa din förståelse av Analysis Wor
 
 ### För analytiker och administratörer som vill förbättra kvaliteten på arbetsytan i sin organisation
 
-* [Behörigheter](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)för Analysis Workspace: Tilldela användarbehörigheter till arbetsytan via Adobe Admin Console.
+* [Behörigheter](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)för Analysis Workspace: Tilldela användarbehörigheter till arbetsytan via Adobe Admin Console.
 * [Mallar i arbetsytan](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md): Skapa mallar så att dina kollegor kan börja med ett projektutrymme som är anpassat efter deras behov.
 * [Arbetsyteurval](/help/analyze/analysis-workspace/curate-share/curate.md): Skapa ett projekt som begränsar antalet tillgängliga komponenter så att arbetsytan blir mer tillgänglig för dem som inte är vana vid verktyget
