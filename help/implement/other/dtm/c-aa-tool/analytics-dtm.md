@@ -5,7 +5,7 @@ title: Lägg till Adobe Analytics-verktyget
 topic: Developer and implementation
 uuid: 1c54331e-de03-4f44-8002-a19723c585b0
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Analytics-verktyget och konfigurera sidkoden antingen automatiskt eller manuellt. Den automatiska metoden rekommenderas för de flesta användare.
 
->[!NOTE] För förbättrad besöksspårning rekommenderar vi att du aktiverar [identitetstjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/).
+>[!NOTE] För förbättrad besöksspårning rekommenderar vi att du aktiverar [identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html).
 
 ## Add an Adobe Analytics Tool {#section_D5066B21581B4F7F811AD0027BF44EA5}
 
@@ -49,7 +49,7 @@ Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Ana
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p> <b>Manuell</b>: Hantera AppMeasurement-koden manuellt. You can download the <span class="keyword"> Analytics</span><span class="keyword"> AppMeasurement</span> code from <span class="ignoretag"><span class="uicontrol"> Admin Tools</span> &gt; <span class="uicontrol"> Code Manager</span></span>. </p> <p>Klicka på <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/appmeasure_mjs.html"> JavaScript (nytt)</a> om du vill ha information om hur du hämtar koden lokalt för att kopiera och klistra in den i fältet <span class="wintitle"> Redigera kod</span> i <a href="/help/implement/other/dtm/c-aa-tool/library-management.md"> Bibliotekshantering</a>. </p> <p>Fyll i fälten som är specifika för en manuell konfiguration: </p> 
+   <td colname="col2"> <p> <b>Manuell</b>: Hantera AppMeasurement-koden manuellt. You can download the <span class="keyword"> Analytics</span><span class="keyword"> AppMeasurement</span> code from <span class="ignoretag"><span class="uicontrol"> Admin Tools</span> &gt; <span class="uicontrol"> Code Manager</span></span>. </p> <p>Klicka på <a href="https://docs.adobe.com/content/help/en/analytics/implementation/js/migrate-from-hcode.html"> JavaScript (nytt)</a> om du vill ha information om hur du hämtar koden lokalt för att kopiera och klistra in den i fältet <span class="wintitle"> Redigera kod</span> i <a href="/help/implement/other/dtm/c-aa-tool/library-management.md"> Bibliotekshantering</a>. </p> <p>Fyll i fälten som är specifika för en manuell konfiguration: </p> 
     <ul id="ul_CFB6CE78AEB743EF8B47BAAC42E2DB0A"> 
      <li id="li_5B7046CD95AB416F8C113B381A264D91"> <p><b>Produktionskonto-ID: </b>(Obligatoriskt) Ditt produktionskonto för datainsamling. För Analytics är det här ditt rapportsvits-ID. Med Dynamic Tag Management installeras automatiskt rätt konto i produktions- och mellanlagringsmiljön. </p> </li> 
      <li id="li_14E840FD79A0451BABEDD15DC0584768"> <p><b>ID för mellanlagringskonto: </b>(Obligatoriskt) Används i utvecklings- eller testmiljön. För Analytics är det här ditt rapportsvits-ID. Ett mellanlagringskonto håller testdata åtskilda från produktionen. </p> </li> 
