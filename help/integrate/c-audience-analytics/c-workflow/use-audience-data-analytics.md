@@ -4,7 +4,7 @@ solution: Experience Cloud
 title: Använd målgruppsdata i Analytics
 uuid: 203925fb-f070-441c-813a-43099cb9b2b9
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -24,7 +24,7 @@ I Analysis Workspace visas AAM-segmenten som två dimensioner.
 
 ## Segmentjämförelse {#section_E72B80B6470C42D4B9B19BE90E6070A2}
 
-[Segmentjämförelsen](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/segment-comparison.html) visar de mest statistiskt signifikanta skillnaderna mellan två segment. Målgruppsdata kan användas i segmentjämförelsen på två sätt: 1) som de två segment som jämförs och 2) som objekt i tabellen&quot;Top Dimension Items&quot;.
+[Segmentjämförelsen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) visar de mest statistiskt signifikanta skillnaderna mellan två segment. Målgruppsdata kan användas i segmentjämförelsen på två sätt: 1) som de två segment som jämförs och 2) som objekt i tabellen&quot;Top Dimension Items&quot;.
 
 1. Gå till **[!UICONTROL Workspace]** och välj **[!UICONTROL Segment Comparison]** panelen i den vänstra listen.
 
@@ -41,21 +41,21 @@ I Analysis Workspace visas AAM-segmenten som två dimensioner.
 
 ## Kundresa (flöde) på analysarbetsytan {#section_FC30E5795C9D4539838E30FE11FAEA6E}
 
-AAM-segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan hamna i ett segment (t.ex. &quot;Kännedom&quot;), kan senare kvalificera sig för ett mer kvalificerat segment (t.ex. &quot;Övervägande&quot;). Du kan använda [Flow](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/flow.html) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
+AAM-segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan hamna i ett segment (t.ex. &quot;Kännedom&quot;), kan senare kvalificera sig för ett mer kvalificerat segment (t.ex. &quot;Övervägande&quot;). Du kan använda [Flow](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
 
 1. Gå till **[!UICONTROL Workspace]** och välj **[!UICONTROL Flow]** visualisering från den vänstra listen.
 
 1. Dra [!UICONTROL Audience Name] dimensionen till Flow Builder.
 1. Klicka på **[!UICONTROL Build]**.
-1. (Valfritt): Dra andra dimensioner till Flödesvisualiseringen för att skapa ett [interdimensionellt flöde](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/multi-dimensional-flow.html).
+1. (Valfritt): Dra andra dimensioner till Flödesvisualiseringen för att skapa ett [interdimensionellt flöde](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/flow/multi-dimensional-flow.html).
 
 ![](assets/flow-aamaudiences.png)
 
-Publiken kan också användas i [bortfallsvisualiseringar](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fallout_flow.html).
+Publiken kan också användas i [bortfallsvisualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html).
 
 ## Visualisering av Venner i analysarbetsytan {#section_E78AB764FB5047148B51DC1526B0DF89}
 
-[Vennvisualiseringar](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/venn.html) visar överlappningen mellan upp till 3 segment.
+[Vennvisualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/venn.html) visar överlappningen mellan upp till 3 segment.
 
 1. Gå till **[!UICONTROL Workspace]** och välj **[!UICONTROL Venn]** visualisering från den vänstra listen.
 
@@ -69,7 +69,7 @@ Publiken kan också användas i [bortfallsvisualiseringar](https://marketing.ado
 
 ## Segment Builder {#section_2AA81852A1404AB894472CA8959461B6}
 
-Ni kan införliva målgruppsdimensionerna i [segmentbyggaren](https://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_build.html)för Analytics, tillsammans med den beteendeinformation som samlas in i Analytics.
+Ni kan införliva målgruppsdimensionerna i [segmentbyggaren](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md)för Analytics, tillsammans med den beteendeinformation som samlas in i Analytics.
 
 1. Gå till **[!UICONTROL Components]** > **[!UICONTROL Segments]** .
 1. Klicka **[!UICONTROL Add]** för att skapa ett nytt segment.
