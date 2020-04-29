@@ -4,7 +4,7 @@ title: Exkludera efter IP-adress
 topic: Admin tools
 uuid: 1ed6105f-e7c5-4c4f-b8f4-e5f66d0824bb
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -15,7 +15,7 @@ Du kan undanta data från specifika IP-adresser, som interna webbplatsaktivitete
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Exclude by IP]**
 
->[!NOTE] Träffar som exkluderats av IP-adressen faktureras som [serversamtal](https://marketing.adobe.com/resources/help/en_US/reference/primary_server_calls.html).
+>[!NOTE] Träffar som exkluderats av IP-adressen faktureras som [serversamtal](https://docs.adobe.com/content/help/en/analytics/technotes/terms.html).
 
 ## Uteslut av cookie {#section_FB5A20AB5E514DA6BC596CC67F6A3A4C}
 
@@ -46,7 +46,7 @@ Du kan använda jokertecken (*) för att exkludera ett adressintervall. Till exe
 
 Du kan även blockera datainsamling från specifika IP-adresser via en brandvägg.
 
-Se [IP-adresserna som används i Experience Cloud](https://marketing.adobe.com/resources/help/en_US/home/index.html#kb-adobe-ip-addresses) -artikeln.
+Se [IP-adresserna som används i Experience Cloud](https://helpx.adobe.com/analytics/kb/adobe-ip-addresses.html) -artikeln.
 
 ## Inverkan av IP-missbruk {#section_51B7529FFF16449CA016FDC51D87E2CA}
 
