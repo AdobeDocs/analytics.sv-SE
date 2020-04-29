@@ -3,7 +3,7 @@ description: 'null'
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: cfe9f2221edab5fa1da9711982bd5bd65de1c0fd
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -110,7 +110,7 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 ### Folk
 
->[!NOTE] Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/mcdc-people.html).
+>[!NOTE] Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/data/people.html).
 
 Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Personmåttet är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
 
