@@ -4,7 +4,7 @@ title: Anpassa rapportöversikt
 topic: Reports and analytics
 uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -35,7 +35,7 @@ Endast administratörer kan skapa en anpassad rapport. När du skapar en anpassa
 
 >[!MORELIKETHIS]
 >
->* [Menyanpassning](https://marketing.adobe.com/resources/help/en_US/reference/customize_menus.html)
+>* [Menyanpassning](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/customize-menus.html)
 
 
 ## Välj ett datum eller datumintervall {#task_9BEF7D4D839A4748B76E8500D1406C34}
@@ -81,7 +81,7 @@ t_reports_comparing_dates.xml
 
 Du kan inte jämföra datum mellan trendrapporter.
 
->[!NOTE] Om du vill göra en datumjämförelse av nyckeltal på en kontrollpanel kan du hämta data till [Report Builder](https://marketing.adobe.com/resources/help/en_US/arb/) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
+>[!NOTE] Om du vill göra en datumjämförelse av nyckeltal på en kontrollpanel kan du hämta data till [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
 
 Så här jämför du datum mellan rankade rapporter i Rapporter och analyser:
 
@@ -218,4 +218,4 @@ De flesta rapporter i Rapporter och analyser innehåller nu knappen Testa i arbe
 
 För närvarande är knappen bara tillgänglig om ditt användarnamn har fullständig behörighet till Analysis Workspace.
 
-Mer information om alla sätt att anpassa rapporten finns i guiden [Analysis Workspace](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) .
+Mer information om alla sätt att anpassa rapporten finns i guiden [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html) .
