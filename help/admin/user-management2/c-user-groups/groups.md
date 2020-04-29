@@ -5,7 +5,7 @@ title: Inställningar för användargrupp
 topic: Admin tools
 uuid: b411032a-7d56-44fd-b676-abee4af756f9
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
 
 Beskrivningar av element på sidan Definiera användargrupp.
 
@@ -114,7 +114,7 @@ Beskrivningar av element på sidan Definiera användargrupp.
      <ul id="ul_19FCA8B24B7E4477B9AC9564D6CF2D44"> 
       <li id="li_F006EF42026F43069AEC0BFE01D7CBC8">TagManager (all åtkomst, anpassa, ingen åtkomst) </li> 
      </ul> </p> </td> 
-   <td colname="col2"> <p>Behörigheter stöds för kunder som har aktiva <span class="keyword"> TagManager</span> -behållare. Inte tillgängligt för nya användare. </p> <p>Adobe rekommenderar <a href="https://marketing.adobe.com/resources/help/en_US/dtm/atm_migration.html"> Dynamic Tag Management</a> för distribution. </p> </td> 
+   <td colname="col2"> <p>Behörigheter stöds för kunder som har aktiva <span class="keyword"> TagManager</span> -behållare. Inte tillgängligt för nya användare. </p> <p>Adobe rekommenderar <a href="https://docs.adobe.com/content/help/en/dtm/using/migration/atm-migration.html"> Dynamic Tag Management</a> för distribution. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Tilldela användarinloggningar</b> </td> 
