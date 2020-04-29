@@ -5,7 +5,7 @@ title: Varningar
 topic: Reports and analytics
 uuid: e1333a9b-eba0-45b7-b7e6-46e06190db64
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -23,7 +23,7 @@ Som det nya varningssystemet för alla Adobe Analytics kan ni med intelligenta a
 
 Du kan komma åt det nya larmsystemet från **[!UICONTROL More]** > **[!UICONTROL Alerts]** i alla rapporter i Rapporter och analyser.
 
-Mer information finns i Analysis Workspace-dokumentationen om [intelligenta aviseringar](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/intellligent_alerts.html).
+Mer information finns i Analysis Workspace-dokumentationen om [intelligenta aviseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html).
 
 ## Lägg till en avisering {#task_51187E8BF19544DDA9EF2057E6F11D35}
 
@@ -39,13 +39,13 @@ Navigera till den nya Varningsverktyget på menyn **[!UICONTROL Analytics]** > *
 
 1. Öppna rapporten i Rapporter och analyser där du vill ange en avisering.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Add Alert]**.
-1. Du kommer nu till [nya Alert Builder](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/alert-builder.html).
+1. Du kommer nu till [nya Alert Builder](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/alert-builder.html).
 
 ## Visa eller redigera befintliga aviseringar {#task_2ADF2A05EB784B8BBAFE293AC8243C46}
 
 Aktivitetskontext
 
-1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. Du kommer nu till den nya [varningshanteraren](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/alert-manager.html).
+1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. Du kommer nu till den nya [varningshanteraren](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/alert-manager.html).
 
 ## Migrering av äldre aviseringar {#concept_7E8179F5EF6E4913B0CE5CF4FF186911}
 
@@ -100,17 +100,17 @@ deprecated_alerts.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p>Varningar med en ASI-plats som rapportsserie </p> </td> 
-   <td colname="col2"> <p>Du kan inte längre <a href="https://marketing.adobe.com/resources/help/en_US/reference/ASI_slots_admin.html"  > skapa eller redigera ASI-kortplatser </a> och de är inte tillgängliga för användning i Analysis Workspace. De stöds därför inte av de nya aviseringarna. </p> <p> </p> </td> 
+   <td colname="col2"> <p>Du kan inte längre skapa eller redigera ASI-kortplatser och de är inte tillgängliga för användning i Analysis Workspace. De stöds därför inte av de nya aviseringarna. </p> <p> </p> </td> 
    <td colname="col3"> <p>Inte tillgängligt i den nya aviseringshanteraren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Notifieringar med hjälp av deltagarstatistik </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/reference/metrics_participation.html"  > Deltagandestatistik </a> finns i Rapporter och analyser, men är för närvarande inte tillgängligt i det nya varningssystemet på Analysis Workspace. </p> <p> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-participation.html"  > Deltagandestatistik </a> finns i Rapporter och analyser, men är för närvarande inte tillgängligt i det nya varningssystemet på Analysis Workspace. </p> <p> </p> </td> 
    <td colname="col3"> <p>Inte tillgängligt i den nya aviseringshanteraren. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Månadsaviseringar för anpassade kalenderrapportsviter </p> </td> 
-   <td colname="col2"> <p>Detta påverkar bara kunder med aviseringar som har konfigurerats för rapportsviter med <a href="https://marketing.adobe.com/resources/help/en_US/arb/custom_calendar.html"  > anpassade månadsstartdatum </a> (National Retail Federation/NRF och Custom Calendar). </p> <p>Det påverkar inte aviseringar om gregorianska eller ändrade gregorianska kalenderrapportsviter. Tidigare skickades dessa varningar den första dagen i den gregorianska månaden (t.ex. 1 januari, 1 februari osv.). Detta fungerar inte med den nya funktionen för avvikelseidentifiering som tar hänsyn till data från föregående månader när avvikelser upptäcks. I framtiden kommer vi att lägga till stöd i vårt schemaläggningssystem för anpassade kalendrar så att både aviseringar och schemalagda projekt kan schemaläggas att skickas den första dagen i den anpassade kalendermånaden i stället för bara den första dagen i den gregorianska månaden. </p> <p> </p> </td> 
+   <td colname="col2"> <p>Detta påverkar bara kunder med varningar som har konfigurerats för rapportsviter med <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/data-requests/date-ranges/custom-calendar.html"  > anpassade månadsstartdatum </a> (National Retail Federation/NRF och Custom Calendar). </p> <p>Det påverkar inte aviseringar om gregorianska eller ändrade gregorianska kalenderrapportsviter. Tidigare skickades dessa varningar den första dagen i den gregorianska månaden (t.ex. 1 januari, 1 februari osv.). Detta fungerar inte med den nya funktionen för avvikelseidentifiering som tar hänsyn till data från föregående månader när avvikelser upptäcks. I framtiden kommer vi att lägga till stöd i vårt schemaläggningssystem för anpassade kalendrar så att både aviseringar och schemalagda projekt kan schemaläggas att skickas den första dagen i den anpassade kalendermånaden i stället för bara den första dagen i den gregorianska månaden. </p> <p> </p> </td> 
    <td colname="col3"> <p>Inte tillgängligt ännu i den nya aviseringshanteraren. </p> </td> 
   </tr> 
   <tr> 
