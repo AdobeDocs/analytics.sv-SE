@@ -3,7 +3,7 @@ description: Med målrapporter kan ni mäta webbplatsens prestanda och följa up
 title: Målgrupper
 uuid: ecb9b964-0703-414a-a4ff-7cf75121a0e1
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -18,7 +18,7 @@ Med målrapporter kan ni mäta webbplatsens prestanda och följa upp framstegen 
 
 Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]** > **[!UICONTROL Targets]** > **[!UICONTROL[ditt målnamn]] för att få åtkomst till dina målrapporter**
 
-När du [skapar mål](https://marketing.adobe.com/resources/help/en_US/sc/user/targets.html)väljer du vilka attributvärden eller eVars du vill mäta, eller så kan du välja att mäta hela webbplatsen mot de värden du väljer.
+När du [skapar mål](hhttps://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/targets.html)väljer du vilka attributvärden eller eVars du vill mäta, eller så kan du välja att mäta hela webbplatsen mot de värden du väljer.
 
 Rapporten visar den kumulativa summan av de angivna mätvärdena och skillnaden mellan den summan och det mål som du angav när du konfigurerade rapporten.
 
