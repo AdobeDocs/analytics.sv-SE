@@ -6,7 +6,7 @@ title: Anpassa behörigheter för analysverktyg
 topic: Admin tools
 uuid: 8e86bc17-46d3-4c5e-ac25-9f3bfc29b8fa
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -48,19 +48,19 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | [Säkerhet](/help/admin/company/security-manager.md) | Ger behörighet till Security Manager-sidan för att styra åtkomst till rapportdata. Du kan välja starka lösenord, lösenord, IP-inloggningsbegränsningar och e-postdomänbegränsningar. |
 | Supportinformation | Ger behörighet till supportinformationen i företagsinställningarna. |
 | [Webbtjänster](/help/admin/company/web-services-admin.md) | Tillåter åtkomst till webbtjänstsidan i Admin Tools-gränssnittet ([!UICONTROL Company Settings] > [!UICONTROL Web Services]).<br>API:t för webbtjänster ger programmatisk åtkomst till Adobe Analytics-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via användargränssnittet. |
-| Enkel inloggning (äldre) | Ger åtkomst till sidan för enkel inloggning i Admin Tools.<br>**Obs!**En enda inloggning i Adobe Experience Cloud implementeras med[kontolänkning](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)mellan Experience Cloud och lösningar. |
+| Enkel inloggning (äldre) | Ger åtkomst till sidan för enkel inloggning i Admin Tools.<br>**Obs!**En enda inloggning i Adobe Experience Cloud implementeras med[kontolänkning](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html)mellan Experience Cloud och lösningar. |
 | [Väntande åtgärder](/help/admin/company/pending-actions-admin.md) | Ger behörighet att hantera väntande åtgärder i [!UICONTROL Company Settings]. |
 | [Sammärkning](/help/admin/company/co-branding-admin.md) | Ger tillstånd till samvarumärkesanalys. |
 | [Inställningar](/help/admin/admin/preferences-manager.md) | Ger tillstånd till [!UICONTROL Preference Manager]användaren. |
 | [Dölj rapportsviter](/help/admin/company/c-hide-report-suites.md) | Ger behörighet att dölja rapportsviter i Adobe Analytics-användargränssnittet. |
 | **verktyg** | Dessa inställningar ger tillgång till analysverktyg (gränssnitt och program) och avancerade funktioner som segmentering och beräknade värden. |
-| [Aktuella data](https://marketing.adobe.com/resources/help/en_US/reference/data_latency.html) | Ger behörighet att använda funktionen Aktuella data vid rapportering. |
-| [Användare av Ad Hoc Analysis](https://marketing.adobe.com/resources/help/en_US/dsc/) License | Ger behörighet att komma åt [!UICONTROL Ad Hoc Analysis]. |
+| [Aktuella data](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/current-data.html) | Ger behörighet att använda funktionen Aktuella data vid rapportering. |
+| [Användare av Ad Hoc Analysis](https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/adhoc-home.html) License | Ger behörighet att komma åt [!UICONTROL Ad Hoc Analysis]. |
 | Webbtjänståtkomst | Ger åtkomst till webbtjänster för icke-administratörer. Skapar autentiseringsuppgifter för webbtjänsten. |
-| [Report Builder](https://marketing.adobe.com/resources/help/en_US/arb/setup.html) | Ger medlemmar i den här gruppen tillgång till [!UICONTROL Report Builder] licenser. |
-| [Åtkomst till analysarbetsyta](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) | Ger användarna åtkomst till Analysis Workspace, det rekommenderade rapporteringsgränssnittet för [!DNL Adobe Analytics]. |
-| [Rapporter och analyser](https://marketing.adobe.com/resources/help/en_US/sc/user/) | Ger användare åtkomst till rapporter och analyser. |
-| [Skapande av beräknade mätvärden](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/) | Ger användare behörighet att skapa beräknade värden. |
-| [Skapa segment](https://marketing.adobe.com/resources/help/en_US/analytics/segment/) | Ger användare behörighet att skapa segment. |
+| [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html) | Ger medlemmar i den här gruppen tillgång till [!UICONTROL Report Builder] licenser. |
+| [Åtkomst till analysarbetsyta](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html) | Ger användarna åtkomst till Analysis Workspace, det rekommenderade rapporteringsgränssnittet för [!DNL Adobe Analytics]. |
+| [Rapporter och analyser](https://docs.adobe.com/content/help/en/analytics/landing/an-key-concepts.html) | Ger användare åtkomst till rapporter och analyser. |
+| [Skapande av beräknade mätvärden](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html) | Ger användare behörighet att skapa beräknade värden. |
+| [Skapa segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) | Ger användare behörighet att skapa segment. |
 | **Dataanslutningar** |  |
 | Integreringar (Skapa, Uppdatera eller Ta bort) | Ger behörighet att skapa, uppdatera och ta bort Data Connector-integreringar. |
