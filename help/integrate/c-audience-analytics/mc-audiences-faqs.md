@@ -4,7 +4,7 @@ solution: Experience Cloud
 title: Vanliga frågor
 uuid: 9dfc8f19-f9b2-4c2e-bff9-3d91cfe01bca
 translation-type: tm+mt
-source-git-commit: 7ac854aa4d83f952bec911cfc63058f2997096e8
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -22,7 +22,7 @@ Svar på frågor ni kan ha när ni implementerar Audience Analytics.
    <td colname="col2"> 
     <ul id="ul_71E0ECD5981D4B65BCDA065BE07A43AA"> 
      <li id="li_F8FF61A4D7B54BA39DAA6F28DB51D749">Om du har e-post/adresser/så vidare i ett utkast eller eVar bör du hash-koda data under insamlingen. </li> 
-     <li id="li_57A8B4C7BB784FFCBC1DC363B35D9FF7">Om ditt land anser att IP-adressen är en PII-adress kan du <a href="https://marketing.adobe.com/resources/help/en_US/reference/exclude_IP.html"  > aktivera IP-förfalskning </a>. </li> 
+     <li id="li_57A8B4C7BB784FFCBC1DC363B35D9FF7">Om ditt land anser att IP-adressen är en PII-adress kan du <a href="https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/exclude-ip.html"  > aktivera IP-förfalskning </a>. </li> 
      <li id="li_C7AA02B831AE47A59E783623126A7789">Tala med er Analytics Admin för att se vad ni samlar in. </li> 
      <li id="li_F6AAE868141E486AB8CAB291BD8EDB71">Tala med er juridiska avdelning för att se vad de anser vara PII. </li> 
     </ul> </td> 
@@ -45,7 +45,7 @@ Svar på frågor ni kan ha när ni implementerar Audience Analytics.
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>F: Hur skapar jag ett Analytics-mål i Audience Manager?</b> </p> </td> 
-   <td colname="col2"> Se <a href="https://marketing.adobe.com/resources/help/en_US/aam/create-analytics-destination.html"  > Konfigurera ett analysmål i AAM </a>. </td> 
+   <td colname="col2"> Se <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html"  > Konfigurera ett analysmål i AAM </a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: När du har skapat och sparat ett Analytics-mål, hur lång tid tar det tills data visas i de valda rapportsviterna?</b> </p> </td> 
