@@ -4,7 +4,7 @@ keywords: ftp;sftp
 title: Klassificeringar
 uuid: 35936c98-b785-43eb-89f4-ab42a10db256
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Alternativet för klassificerings-FTP ger större flexibilitet vid överföring av stora klassificeringsdatauppsättningar, inklusive möjligheten att överföra data till flera rapportsviter och att överföra datauppsättningar som är större än 50 000 rader.
 
-Se [klassificeringar](https://marketing.adobe.com/resources/help/en_US/reference/c_working_with_saint.html) för steg om hur du hämtar klassificeringsdata via FTP och hur du överför datafiler via FTP (inklusive stegen för att skapa ett FTP-konto).
+Se [klassificeringar](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html) för steg om hur du hämtar klassificeringsdata via FTP och hur du överför datafiler via FTP (inklusive stegen för att skapa ett FTP-konto).
 
 Hur lång tid det tar för systemet att importera dessa filer varierar beroende på ett antal faktorer. Om det fortfarande finns en överförd fil på FTP-servern efter sex timmar kontaktar du Adobes kundtjänst tillsammans med de användare i organisationen som stöds.
 
