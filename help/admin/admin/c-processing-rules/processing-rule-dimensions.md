@@ -5,7 +5,7 @@ title: Tillgängliga dimensioner för bearbetningsregler
 topic: Admin tools
 uuid: ba73ab59-a8cf-491c-8757-5fb03d6b0745
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -38,7 +38,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kontextdatavariabler </p> </td> 
-   <td colname="col2"> <p>Namngivna variabler som skickas med en träff. </p> <p>Obs!  Alla data i en kontextdatavariabel måste kopieras till en rapportvariabel för att visas i en rapport. Kontextdatavariabler kan inte visas i något rapporteringsgränssnitt, inklusive ClickStream-dataflöden. </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md"> Kopiera en kontextdatavariabel till en eVar </a> </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md"> Ange en händelse med hjälp av en kontextdatavariabel </a> </p> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/context_data_variables.html"> Kontextdatavariabler</a> </p> </td> 
+   <td colname="col2"> <p>Namngivna variabler som skickas med en träff. </p> <p>Obs!  Alla data i en kontextdatavariabel måste kopieras till en rapportvariabel för att visas i en rapport. Kontextdatavariabler kan inte visas i något rapporteringsgränssnitt, inklusive ClickStream-dataflöden. </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md"> Kopiera en kontextdatavariabel till en eVar </a> </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md"> Ange en händelse med hjälp av en kontextdatavariabel </a> </p> <p> <a href="/help/implement/vars/page-vars/contextdata.md"> Kontextdatavariabler</a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
