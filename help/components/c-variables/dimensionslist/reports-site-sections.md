@@ -4,7 +4,7 @@ title: Platsavsnitt
 topic: Reports
 uuid: 6839c566-f88f-4979-9cf5-52a77c0b0416
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -13,14 +13,14 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Visar de områden på din webbplats som besökarna mest har åtkomst till. Platsavsnitt kan innehålla produktgrupper, ungefär som kategorier, som du definierar. Du kan till exempel ha en grupp med kameror, en grupp med datorer och så vidare. Data för Conversion Site Sections-rapporten importeras från Site Section-rapporten i Traffic-gruppen, som tar emot information från kanalvariabeln i spårningskoden. Du kan använda den här rapporten för att identifiera den största effekten på webbplatsstatistik från objekt i olika avsnitt på webbplatsen.
 
-* Den här rapporten refererar till data direkt från [s.channel](https://marketing.adobe.com/resources/help/en_US/sc/implement/c_channel.html) -variabeln som implementeras på din webbplats.
+* Den här rapporten refererar till data direkt från [s.channel](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/channel.html) -variabeln som implementeras på din webbplats.
 * Den här rapporten kan visas i både trand- och rankningsformat.
 * Den här rapporten kan använda ett sökfilter för att hitta specifika radobjekt.
 * Klassificeringar kan användas i den här rapporten, så att du kan byta namn på och konsolidera radobjekt.
 * Korrelationer kan skapas med andra trafikvariabler via Admin Tools.
 * Den här rapporten kan använda följande mått:
 
-   * **Sidor**: antalet gånger som [pageName](https://marketing.adobe.com/resources/help/en_US/sc/implement/c_pagename.html) -variabeln eller URL:en har definierats (anges som standardmått)
+   * **Sidor**: antalet gånger som [pageName](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/pagename.html) -variabeln eller URL:en har definierats (anges som standardmått)
 
    * **Alla sökmått**: Besök, Genomsnittligt siddjup, Genomsnittlig tid spenderad på sida, Inlägg, Avsluta, Läs in igen och Enkel åtkomst
    * Beroende på organisationens inställningar och rapportsviten: Dagliga, Veckovisa, Månadsvisa och Kvartalsvisa unika besökare kan aktiveras i den här rapporten.
