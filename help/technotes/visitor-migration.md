@@ -5,7 +5,7 @@ title: Migrering av besökare
 topic: Developer and implementation
 uuid: af31928c-85d7-407f-a583-0c8f2852ceb3
 translation-type: tm+mt
-source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -16,11 +16,11 @@ Migrering av besökare är en process där besökar-ID-cookie migreras från en 
 
 Med migrering av besökare kan du bevara cookies för identifiering av besökare när du ändrar datainsamlingsdomäner. Domäner för datainsamling kan ändras av följande skäl:
 
-* Från `2o7.net` till `omtrdc.net` ( [Regional Data Collection](https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/)).
+* Från `2o7.net` till `omtrdc.net` ( [Regional Data Collection](hhttps://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html)).
 
-* Du implementerar [Experience Cloud Visitor ID-tjänsten](https://marketing.adobe.com/resources/help/en_US/mcvid/) och går från en CNAME-/förstapartsdomän för datainsamling till `2o7.net` eller `omtrdc.net` ( [regional datainsamling](https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/))
+* Du implementerar [Experience Cloud Visitor ID-tjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html) och går från en CNAME-/förstapartsdomän för datainsamling till `2o7.net` eller `omtrdc.net` ( [regional datainsamling](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html))
 
-* Gå från `2o7.net` eller `omtrdc.net` till en namnsamling/datainsamling från första part ( [cookies från första part)](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/).
+* Gå från `2o7.net` eller `omtrdc.net` till en namnsamling/datainsamling från första part ( [cookies från första part)](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html).
 
 * Flyttar från en CNAME till en annan (föränderliga domäner).
 
