@@ -3,7 +3,7 @@ description: När integreringen har distribuerats kan du börja använda de extr
 title: Använda integreringen
 uuid: 5e861274-4d81-4ee0-b84e-ab83bc1c1331
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -32,6 +32,6 @@ Du kan t.ex. skapa ett segment som endast innehåller besök från små och mede
 
 Målgruppen är lika med små och medelstora företag.
 
-Mer information om hur du skapar segment finns i [segmenteringshandboken](https://marketing.adobe.com/resources/help/en_US/analytics/segment/)för analyser.
+Mer information om hur du skapar segment finns i [segmenteringshandboken](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html)för analyser.
 
 Det här segmentet kan sedan användas för praktiskt taget alla rapporter - ett exempel är den tidsåtgång per besök som visas här: ![](assets/segment_applied_report.png)
