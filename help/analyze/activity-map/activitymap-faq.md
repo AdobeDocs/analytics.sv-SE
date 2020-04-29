@@ -4,7 +4,7 @@ title: Vanliga frågor om aktivitetskartan
 topic: Activity map
 uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
 translation-type: tm+mt
-source-git-commit: 0e125be6e1710c65effa0adc8097e8916c8a3290
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -25,7 +25,7 @@ S: Adobe SiteCatalyst-kunder har inte tillgång till sidan Aktivitetskarta på A
 
 **F: Kan den nya AppMeasurement-koden konfigureras via Dynamic Tag Management (DTM)?**
 
-S: Ja, du kan [manuellt implementera](https://marketing.adobe.com/resources/help/en_US/dtm/analytics_dtm.html) den nya AppMeasurement-koden.
+S: Ja, du kan [manuellt implementera](https://docs.adobe.com/content/help/en/dtm/using/tools/analytics-dtm.html) den nya AppMeasurement-koden.
 
 **F: Vilka är de stora förändringarna i AppMeasurement v1.6-biblioteket?**
 
