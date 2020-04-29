@@ -4,7 +4,7 @@ title: Intäkter
 topic: Reports
 uuid: e5b72798-f5c7-440d-a62d-376bfd115ac8
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -40,7 +40,7 @@ Använd Intäkter för att se hur framgångsrik och tendens sajten är generellt
 
 * [!UICONTROL Revenue] avrundar det totala beloppet för en tidsperiod till närmaste valutavärde. Den rundar inte av varje enskild produkt eller träff.
 * Eftersom Analytics avrundar varje dag till närmaste helvaluta, avräknas en mycket liten summa om man jämför summan för varje dag med månadssumman. Detta beror på att månadssumman inte är summan av varje avrundad dag, utan är den absoluta summan avrundad till närmaste hela valuta.
-* Du kan skapa en rapport som inte avrundar intäkten till närmaste hela valuta med hjälp av ett [beräknat mått](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/).
+* Du kan skapa en rapport som inte avrundar intäkten till närmaste hela valuta med hjälp av ett [beräknat mått](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html).
 * Om variabeln inte används kan användare som uppdaterar sidan öka intäkterna eftersom data skickas till Adobe flera gånger. `purchaseID`
 * Timuppdelningar baseras på rapportsvitens tidszon.
 * Den här rapporten innehåller inga radartiklar. Den kan bara visas i trendformat.
