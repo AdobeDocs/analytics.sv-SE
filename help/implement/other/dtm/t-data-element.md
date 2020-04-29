@@ -5,7 +5,7 @@ solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
 title: Skapa ett dataelement
 uuid: eacd5c60-6197-4129-a9e1-a39e9a58b38a
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -33,7 +33,7 @@ Skapa ett dataelement i Dynamic Tag Management.
     </tr> 
     <tr class="chrow strow"> 
       <td class="choption"><strong>Typ</strong></td> 
-      <td class="chdesc stentry"> <p> Anger varifrån data hämtas, till exempel JS-objekt, CSS-väljare, cookie, URL-parameter eller anpassat skript. </p> <p>Beroende på vilken typ du väljer visas olika alternativ. Mer information och exempel finns i Types of Data Elements <a href="https://marketing.adobe.com/resources/help/en_US/dtm/data_elements.html"></a> i produktdokumentationen för Dynamic Tag Management. </p> </td> 
+      <td class="chdesc stentry"> <p> Anger varifrån data hämtas, till exempel JS-objekt, CSS-väljare, cookie, URL-parameter eller anpassat skript. </p> <p>Beroende på vilken typ du väljer visas olika alternativ. Mer information och exempel finns i Types of Data Elements <a href="https://docs.adobe.com/content/help/en/dtm/using/resources/data-elements.html"></a> i produktdokumentationen för Dynamic Tag Management. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
       <td class="choption"><strong>Standardvärde</strong></td> 
@@ -54,5 +54,5 @@ Skapa ett dataelement i Dynamic Tag Management.
     </tr> 
    </table>
 
-   Mer information om hur du använder dataelement finns i [Dataelement](https://marketing.adobe.com/resources/help/en_US/dtm/data_elements.html) i produktdokumentationen för Adobe Tag Management.
+   Mer information om hur du använder dataelement finns i [Dataelement](https://docs.adobe.com/content/help/en/dtm/using/resources/data-elements.html) i produktdokumentationen för Adobe Tag Management.
 1. Klicka på **[!UICONTROL Save Data Element]**.
