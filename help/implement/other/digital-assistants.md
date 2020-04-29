@@ -2,20 +2,14 @@
 title: Implementera analyser för digitala assistenter
 description: Implementera Adobe Analytics om digitala assistenter, som Amazon Alexa eller Google Home.
 translation-type: tm+mt
-source-git-commit: d970f2428e24c0747ae9cac9b832d506a0b13854
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
 
 # Implementera analyser för digitala assistenter
 
-<!-- 
-https://wiki.corp.adobe.com/display/mobileanalytics/Analytics+for+Digital+Assistants+Whitepaper
-https://marketing.adobe.com/resources/help/en_US/sc/implement/digital-assistants-white-paper.html
-Ticket: https://jira.corp.adobe.com/browse/AN-157750
--->
-
-I och med de senaste framstegen när det gäller cloud computing, maskininlärning och naturlig språkbearbetning blir digitala assistenter en del av vardagen. Konsumenterna börjar prata med sina enheter och förväntar sig att de ska förstå och reagera på humanliknande sätt. När dessa plattformar blir mer etablerade kan varumärken presentera sina tjänster för konsumenterna på samma realistiska och verklighetstrogna sätt. Konsumenterna kan till exempel ställa frågor som:
+I och med de senaste framstegen när det gäller cloud computing, maskininlärning och naturlig språkbearbetning blir digitala assistenter en del av vardagen. Konsumenterna börjar prata med sina enheter och förväntar sig att de ska förstå och reagera på ett mänskligt sätt. När dessa plattformar blir mer etablerade kan varumärken presentera sina tjänster för konsumenterna på samma realistiska och verklighetstrogna sätt. Konsumenterna kan till exempel ställa frågor som:
 
 * &quot;Alexa, fråga min bil när den behöver en olje.&quot;
 * &quot;Cortana, vad är saldot för mitt checkkonto?&quot;
