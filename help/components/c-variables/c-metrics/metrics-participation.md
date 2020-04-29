@@ -4,7 +4,7 @@ title: deltagande
 topic: Metrics
 uuid: a7fa791d-0a77-429e-808e-4f97bb9ae5fc
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -20,7 +20,7 @@ Deltagandestatistik har två inställningar per konverteringshändelse:
 * **Inaktiverad**: Standardläget för varje konverteringshändelse. Deltagandedata samlas inte in för det här evenemanget.
 * **Aktiverad**: Deltagandedata samlas in för det här evenemanget.
 
->[!NOTE] Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagarvärden i [verktyget för beräkning av](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/participation_metric.html) statistik.
+>[!NOTE] Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagarvärden i [verktyget för beräkning av](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/participation-metric.html) statistik.
 
 När detta är aktiverat blir deltagarstatistik automatiskt tillgänglig i alla konverteringsrapporter. Deltagandestatistik kan dock även visas i specifika trafikrapporter på din begäran. Du kan också begära att deltagarstatistik ska vara tillgänglig i vissa anpassade trafikrapporter.
 
