@@ -4,7 +4,7 @@ title: Inställningar som inte kopierats från en källrapportsserie
 topic: Admin tools
 uuid: 5176c561-a278-43e4-837f-a17759985d52
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -25,7 +25,7 @@ Följande inställningar kopieras inte från mallar eller duplicerade rapportsvi
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Klassificeringsdata (klassificeringsstrukturen kopieras) </p> </td> 
-   <td colname="col2"> <p><a href="https://marketing.adobe.com/resources/help/en_US/reference/c_working_with_saint.html"> Dokumentation för klassificeringsimporteraren (överföring)</a> </p> </td> 
+   <td colname="col2"> <p><a href="https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html"> Dokumentation för klassificeringsimporteraren (överföring)</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Aktivera registrering av transaktions-ID </p> </td> 
@@ -68,7 +68,7 @@ Följande inställningar kopieras inte från mallar eller duplicerade rapportsvi
   </tr> 
   <tr> 
    <td colname="col1"> <p>Klickmappshanteraren för besökare </p> </td> 
-   <td colname="col2"> <p><a href="https://marketing.adobe.com/resources/help/en_US/analytics/activitymap/activitymap-enable.html"> Uppgradera till aktivitetskarta</a> </p> </td> 
+   <td colname="col2"> <p><a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-admins/activitymap-enable.html"> Uppgradera till aktivitetskarta</a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>VISTA-regler </p> </td> 
