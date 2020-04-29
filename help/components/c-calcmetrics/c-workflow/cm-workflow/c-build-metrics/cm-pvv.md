@@ -3,7 +3,7 @@ description: Visar hur du skapar ett enkelt mått för"Sidvyer per besök".
 title: Bygg ett enkelt mått för"sidvyer per besök"
 uuid: 0730e51c-1f8f-473b-8825-d72911f2944c
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
 
@@ -26,7 +26,7 @@ Så här skapar du ett enkelt mått för&quot;Sidvyer per besök&quot;.
 1. För detta mått drar du först sidvyer till arbetsytan och drar sedan besök under (vänta tills den blå linjen visas för att släppa den).
 1. Välj operatorn Dela. (Divide är standardoperator.)
 1. Nu kan du se en del **[!UICONTROL Preview]** av mätvärdena när du skapar dem, längst upp till höger.
-1. Produktkompatibiliteten visar om mätvärdet är kompatibelt med [aktuella data](https://marketing.adobe.com/resources/help/en_US/reference/data_latency.html) eller endast med fullständigt bearbetade data.
+1. Produktkompatibiliteten visar om mätvärdet är kompatibelt med [aktuella data](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/current-data.html) eller endast med fullständigt bearbetade data.
 1. Klicka på **[!UICONTROL Save]**.
 1. Observera att **[!UICONTROL Summary]** formeln uppdateras varje gång du ändrar måttdefinitionen.
 1. Du dirigeras nu automatiskt till [Beräknade mätare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), som liknar segmenthanteraren. Du kan dela, godkänna, (om-)tagga, byta namn på eller ta bort mätvärden.
