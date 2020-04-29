@@ -3,7 +3,7 @@ description: Systemkrav och en jämförelse av Analysis Workspace, Reports & Ana
 title: Produktjämförelse och krav för analyser
 uuid: 988eab20-aa94-4eae-ae4a-5f2b70afa5b3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 ---
 
@@ -18,12 +18,12 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
  <tbody> 
   <tr> 
    <td> <b>Produkt- och hjälplänk</b> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/"> Analysis Workspace </a> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/sc/user/index.html"> Rapporter och analyser </a> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/dsc/"> Ad hoc-analys </a> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/arb/index.html"> Report Builder </a> </td> 
-   <td colname="col06"> <a href="https://marketing.adobe.com/resources/help/en_US/reference/data_warehouse.html"> Datalager </a> </td> 
-   <td colname="col6"> <a href="https://docs.adobe.com/content/help/en/data-workbench/using/home.html"> Data Workbench </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html"> Analysis Workspace </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html"> Rapporter och analyser </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/adhoc-home.html"> Ad hoc-analys </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html"> Report Builder </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse.html"> Datalager </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/data-workbench/using/home.html"> Data Workbench </a> </td> 
   </tr> 
   <tr> 
    <td> <b>Åtkomstmetod</b> </td> 
@@ -72,9 +72,9 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Tratt/bana</b> </td> 
-   <td> Ja <p> </p> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fallout_flow.html"> Utfall </a> <p> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/flow.html"> Flöde </a> </p> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/sc/user/reports.html"> Ja </a> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/dsc/c_reports_paths.html"> Ja </a> </td> 
+   <td> Ja <p> </p> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html"> Utfall </a> <p> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html"> Flöde </a> </p> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/reports.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/c-reports-paths.html"> Ja </a> </td> 
    <td> Ja </td> 
    <td colname="col06"> Nej </td> 
    <td colname="col6"> Ja </td> 
@@ -90,7 +90,7 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Kohortanalys</b> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/cohort_analysis.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.html"> Ja </a> </td> 
    <td> Nej </td> 
    <td> Nej </td> 
    <td> Nej </td> 
@@ -108,7 +108,7 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Förbättrade visualiseringsalternativ</b> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/analysis-workspace-features.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html"> Ja </a> </td> 
    <td> Nej </td> 
    <td> Ja </td> 
    <td> Ja </td> 
@@ -117,16 +117,16 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Anpassningsbar layout</b> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/analysis-workspace-features.html"> Ja </a> </td> 
-   <td> Ja - <a href="https://marketing.adobe.com/resources/help/en_US/sc/user/dashboard.html"> instrumentpaneler </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html"> Ja </a> </td> 
+   <td> Ja - <a href="https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html"> instrumentpaneler </a> </td> 
    <td> Nej </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/arb/configure_the_custom_layout.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/layout/configure-the-custom-layout.html"> Ja </a> </td> 
    <td colname="col06"> <p> Sortera resultaten efter uppdelning eller efter mått. </p> </td> 
    <td colname="col6"> Ja </td> 
   </tr> 
   <tr> 
    <td> <b>Projekturval (förenkla rapporter för icke-analytiker)</b> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/curate.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html"> Ja </a> </td> 
    <td> Nej </td> 
    <td> Nej </td> 
    <td> Ja </td> 
@@ -135,8 +135,8 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Projektdelning</b> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/curate.html"> Ja </a>; alla/alla användare </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/sc/user/scheduling.html"> Ja </a>; alla/alla användare </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html"> Ja </a>; alla/alla användare </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/scheduling.html"> Ja </a>; alla/alla användare </td> 
    <td> Endast med Ad hoc-analysanvändare </td> 
    <td> Ja, alla/alla användare </td> 
    <td colname="col06"> Nej </td> 
@@ -144,21 +144,21 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Schemalagd rapportleverans</b> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/schedule-projects.html"> Ja </a> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/sc/user/scheduling.html"> Ja </a> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/dsc/c_schedule.html"> Ja </a> </td> 
-   <td> <a href="https://marketing.adobe.com/resources/help/en_US/arb/schedule_report_requests.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/schedule-projects.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/scheduling.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/c-schedule.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/t-schedule-a-data-request.html"> Ja </a> </td> 
    <td colname="col06"> Ja </td> 
    <td colname="col6"> Ja </td> 
   </tr> 
   <tr> 
    <td> <b>Systemkrav</b> </td> 
-   <td> <p>Webbläsare </p> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/user/requirements.html"> Mer ... </a> </p> </td> 
-   <td> <p>Webbläsare </p> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/user/requirements.html"> Mer ... </a> </p> </td> 
-   <td> <p>Java </p> <p> <a href="https://marketing.adobe.com/resources/help/en_US/dsc/c_sys_reqs.html"> Mer ... </a> </p> </td> 
-   <td> <p>Windows, MS Excel </p> <p> <a href="https://marketing.adobe.com/resources/help/en_US/arb/system_requirements.html"> Mer ... </a> </p> </td> 
+   <td> <p>Webbläsare </p> <p> <a href="https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf-requirements.html"> Mer ... </a> </p> </td> 
+   <td> <p>Webbläsare </p> <p> <a href="https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf-requirements.html"> Mer ... </a> </p> </td> 
+   <td> <p>Java </p> <p> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/c-getting-started.html"> Mer ... </a> </p> </td> 
+   <td> <p>Windows, MS Excel </p> <p> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/report-builder-setup/system-requirements.html"> Mer ... </a> </p> </td> 
    <td colname="col06"> Webbläsare och program för att öppna <span class="filepath"> .csv- </span> filer som MS Excel. Kan generera filer i Tableu-format. </td> 
-   <td colname="col6"> Windows 64-bitars, bra grafikkort för OpenGL 3.2 ( <u><a href="https://marketing.adobe.com/resources/help/en_US/insight/install/c_Data_Workbench_Client_install.html"> Mer... </a></u> ) </td> 
+   <td colname="col6"> Windows 64-bitars, bra grafikkort för OpenGL 3.2 ( <u><a href="https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html"> Mer... </a></u> ) </td> 
   </tr> 
  </tbody> 
 </table>
