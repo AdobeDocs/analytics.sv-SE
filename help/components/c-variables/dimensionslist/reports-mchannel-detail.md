@@ -2,7 +2,7 @@
 title: Detaljerad marknadsföringskanal - första och sista beröring
 description: Tilldela framgångsstatistik och intäkter till olika kanaldetaljer utan hänsyn till den övergripande kanalen de är i.
 translation-type: tm+mt
-source-git-commit: 5bb107f22490bb9e092292367c51df4eafd43ba4
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -32,4 +32,4 @@ Dessa rapporter ger insikt om de specifika kampanjer eller nyckelord som är mes
    * Alla standardvärden för e-handel: Intäkter, beställningar, enheter, kundvagnar, kundvagnsvyer, utcheckningar, kundvagnstillägg, kundvagnsborttagningar.
    * Alla anpassade händelser: Händelser 1-80 och Händelser 81-100 om H22-koden eller senare används.
    * Besök och besökare: tillgängligheten är beroende av organisation och rapportserie. Kontakta kontohanteraren om du vill ha mer information.
-   Se [Mätvärden](https://marketing.adobe.com/resources/help/en_US/mchannel/c_overview_metrics.html) i [!UICONTROL Marketing Channel] hjälpen.
+   Se [Mätvärden](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-channels-rules.html) i [!UICONTROL Marketing Channel] hjälpen.
