@@ -4,7 +4,7 @@ title: Publicera segment till Experience Cloud
 topic: Segments
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 translation-type: tm+mt
-source-git-commit: 3b7e79cf26c8dccd9c8090df48a556419995ebd7
+source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ---
 
@@ -99,13 +99,13 @@ Följande skärmbilder visar hur du hämtar AAM UUID i webbläsaren och använde
 **Metod 2: Använd Chrome Developer Tools (eller andra verktyg för webbläsarutveckling)**
 
 1. Starta Chrome Developer Tools innan du läser in en sida
-1. Läs in sidan och kontrollera Program > Cookies. AAM UUID ska anges i cookie-filen från tredje part ([adobe.demdex.net](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) i exemplet nedan). Fältdemonstrationen är AAM UUID-setet i webbläsaren (`50814298273775797762943354787774730612` i exemplet nedan).
+1. Läs in sidan och kontrollera Program > Cookies. AAM UUID ska anges i cookie-filen från tredje part ([adobe.demdex.net](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html) i exemplet nedan). Fältdemonstrationen är AAM UUID-setet i webbläsaren (`50814298273775797762943354787774730612` i exemplet nedan).
 
 ![Verktyg för Chrome Developer](assets/ggogle-uuid.png)
 
 ## Använd Audience Manager [!UICONTROL Visitor Profile Viewer]
 
-AAM UUID i webbläsaren används som standard när den [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i fältet UUID och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://marketing.adobe.com/resources/help/en_US/aam/t_visitor_profile_viewer.html) .
+AAM UUID i webbläsaren används som standard när den [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i fältet UUID och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/visitor-profile-viewer.html) .
 
 ![](assets/aam-vpv.png)
 
