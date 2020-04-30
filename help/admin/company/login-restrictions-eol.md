@@ -2,7 +2,7 @@
 title: Slutet av livscykeln för [!UICONTROL Tvinga IP-inloggningsbegränsningar]
 description: Lär dig mer om timing och konsekvenser för [!UICONTROL Tvinga begränsningar för IP-inloggning]
 translation-type: tm+mt
-source-git-commit: 490a856effac7ec3ff2430dff0ffdcee587bf933
+source-git-commit: 940638b77f800b471f1ce4097a8ca6de98d518d3
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 490a856effac7ec3ff2430dff0ffdcee587bf933
 
 Med funktionen **[Använd begränsningar](/help/admin/company/security-manager.md)**för IP-inloggning i Adobe Analytics kan ni vitlista specifika IP-adresser (som anses säkra) för att tillåta lyckade inloggningar och åtkomst till Adobe Analytics-miljön. I många fall används den här funktionen för att konfigurera en företags-IP-adress som den enda säkra IP-adressen som användare kan logga in från. För att kunna använda Adobe Analytics måste användarna antingen vara på ett företagskontor eller logga in i nätverket via VPN.
 
-Vi planerar att avsluta den här funktionen i oktober 2020.
+Vi planerar att avsluta den här funktionen i januari 2021.
 
 ## Varför upphör den här funktionen?
 
@@ -23,7 +23,7 @@ Slutligen har Adobe en fungerande och överlägsen alternativ lösning via Singl
 
 ## Hur påverkar borttagningen av den här funktionen dig?
 
-För alla kunder som har **[!UICONTROL Enforce IP login restrictions]** konfigurerat programmet tas den här funktionen bort i oktober 2020. Vid den tidpunkten kommer eventuella begränsningar för IP-inloggning som fortfarande gäller inte längre att gälla. Om du fortfarande behöver begränsa inloggningen med IP-adressen bör du granska och implementera den rekommenderade lösningen för enkel inloggning och Federated ID (mer information och resurser nedan).
+För alla kunder som har **[!UICONTROL Enforce IP login restrictions]** konfigurerat programmet tas den här funktionen bort i januari 2021. Vid den tidpunkten kommer eventuella begränsningar för IP-inloggning som fortfarande gäller inte längre att gälla. Om du fortfarande behöver begränsa inloggningen med IP-adressen bör du granska och implementera den rekommenderade lösningen för enkel inloggning och Federated ID (mer information och resurser nedan).
 
 Dessutom tas inställningen bort från **[!UICONTROL Enforce IP login restrictions]** dmin > **[!UICONTROLAFöretagsinställningar > Säkerhetshanteraren]** i analysgränssnittet (se nedan).
 
@@ -31,14 +31,14 @@ Dessutom tas inställningen bort från **[!UICONTROL Enforce IP login restrictio
 
 ## Vilka andra alternativ har du?
 
-Den här analysfunktionen upphör som sagt. För att ge dig tid att implementera SSO och Federated ID har vi fördröjt EOL-datumet till oktober 2020.
+Den här analysfunktionen upphör som sagt. För att ge dig tid att implementera SSO och Federated ID har vi fördröjt EOL-datumet till januari 2021.
 
 Både SSO och Federated ID är överlägsna lösningar jämfört med funktionen för IP-inloggningsbegränsning som vi har på plats idag och ger dig bättre kontroll, säkerhet och funktioner. Mer information om hur du konfigurerar SSO/Federated ID finns i följande hjälpdokumentation. Vi rekommenderar att du läser dem noggrant och samarbetar med din IT-avdelning för att implementera dem:
 
 * [Enkel inloggning och Experience Cloud](https://spark.adobe.com/page/JeSB8EPEQIvjD/)
 * [Admin Console - dokumentation för identitetsinställningar](https://helpx.adobe.com/enterprise/using/set-up-identity.html)
-* [Admin Console - Självstudiekurs om identitetsinställningar (video)](https://helpx.adobe.com/enterprise/how-to/identity-directories-domains.html?playlist=/ccx/v1/collection/product/enterprise/topics/enterprise-identity/collection.ccx.js&ref=helpx.adobe.com)
-* [Konfigurera Federated ID-självstudiekurs (video)](https://helpx.adobe.com/enterprise/how-to/identity-configure-ids.html?playlist=/ccx/v1/collection/product/enterprise/topics/enterprise-identity/collection.ccx.js&ref=helpx.adobe.com)
+* [Admin Console - Självstudiekurs om identitetsinställningar (video)](https://helpx.adobe.com/enterprise/how-to/identity-directories-domains.html?playlist=/ccx/v1/collection/product/enterprise/topics/enterprise-identity/collection.ccx.js&amp;ref=helpx.adobe.com)
+* [Konfigurera Federated ID-självstudiekurs (video)](https://helpx.adobe.com/enterprise/how-to/identity-configure-ids.html?playlist=/ccx/v1/collection/product/enterprise/topics/enterprise-identity/collection.ccx.js&amp;ref=helpx.adobe.com)
 * [Enkel inloggning - vanliga frågor](https://helpx.adobe.com/enterprise/using/sso-faq.html)
 * [Identitetstyper som stöds av Adobe](https://helpx.adobe.com/enterprise/using/identity.html)
 
