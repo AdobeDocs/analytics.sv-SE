@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok för analyskomponenter
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: 3e97fe61fd207dddf32f3c0e3ddea19949d18bac
+source-git-commit: 0a1e702fa3fcf88cd9eeb56f58bf52c46f30b387
 
 ---
 
@@ -35,8 +35,6 @@ source-git-commit: 3e97fe61fd207dddf32f3c0e3ddea19949d18bac
       + [Datalagersegmentkompatibilitet](c-segmentation/seg-reference/seg-compatibility.md)
       + [Segmenträttigheter efter roll](c-segmentation/seg-reference/seg-rights.md)
       + [Felsökning](c-segmentation/seg-reference/c-troubleshooting.md)
-   + Användningsexempel {#use-cases}
-      + [Uteslut specifika datum](c-segmentation/use-cases/exclude-date-range.md)
    + [Frågor och svar](c-segmentation/seg-transition.md)
    + [Nyheter i segmentering med analyser](c-segmentation/whats-new-segmentation.md)
    + [Övergångshandbok för ad hoc-analys](c-segmentation/seg-transition-ad-hoc.md)
@@ -64,7 +62,6 @@ source-git-commit: 3e97fe61fd207dddf32f3c0e3ddea19949d18bac
       + [Mätkompatibilitet](c-calcmetrics/cm-compatibility.md)
       + [Beräknade mått: rollbaserade rättigheter](c-calcmetrics/cm-role-based-rights.md)
       + [Beräknade mätsummor](c-calcmetrics/cm-totals.md)
-   + [Härleda data som påverkas av händelser](c-calcmetrics/cm-events.md)
    + [Frågor och svar](c-calcmetrics/cm-transition.md)
    + [Instruktionsvideor](c-calcmetrics/cm-videos.md)
 + Virtuella rapportsviter {#virtual-report-suites}
