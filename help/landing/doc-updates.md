@@ -3,7 +3,7 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Betydande uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 translation-type: tm+mt
-source-git-commit: 2aca0e5820b3301cd52e43a528ba1e2d9eed8e83
+source-git-commit: c2194a6cf7e381ebeab05e273c9b64816552d744
 
 ---
 
@@ -12,7 +12,8 @@ source-git-commit: 2aca0e5820b3301cd52e43a528ba1e2d9eed8e83
 
 Innehållsuppdateringar för Adobe Analytics-dokumentationen som angetts sedan januari 2019.
 
-* En omfattande lista med nya funktioner, administratörsmeddelanden och felkorrigeringar finns i den senaste versionsinformationen om [Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+* Mer information [!UICONTROL Customer Journey Analytics]finns [här](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html).
+* En omfattande lista över nya funktioner, administrationsmeddelanden och felkorrigeringar i Adobe Analytics finns i den senaste [versionsinformationen](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)för Experience Cloud.
 * Mer information om nya funktioner finns i [Nya funktioner i Analysis Workspace](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) i användarhandboken för Tools.
 * Mer information om Adobe Analytics för ljud och video finns i [Mäta ljud och video i Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
@@ -20,6 +21,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentationen som angetts sedan j
 
 | Datum | Beskrivning |
 |---|---|
+| 28 april 2020 | Dokumentation för [innehållets](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-content-velocity.html) hastighetsmått har lagts till. |
+| 12 mars 2020 | Lagt till uppdateringar av [publiceringssegment i Experience Cloud](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html). |
+| 12 mars 2020 | Uppdateringar av CDA-stygn. |
 | 27 februari 2020 | Lagt till dokumentation för [Adobe Analytics Labs](https://docs.adobe.com/content/help/en/analytics/analyze/tech-previews/overview.html). |
 | 25 februari 2020 | Tillagd [`useLinkTrackSessionStorage`](/help/implement/vars/config-vars/uselinktracksessionstorage.md) variabel. |
 | 18 februari 2020 | Tillagd [`writeSecureCookies`](/help/implement/vars/config-vars/writesecurecookies.md) variabel. |
