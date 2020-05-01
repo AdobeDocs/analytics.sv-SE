@@ -4,7 +4,7 @@ audience: all
 user-guide-title: Tekniska anteckningar för analyser
 user-guide-url: /content/help/en/analytics/technotes/home.html
 translation-type: tm+mt
-source-git-commit: ea1927827c0615b085a440bc86116b438594e448
+source-git-commit: 74a1edadde1899c9e51019cb7e7bb120b6e04d64
 
 ---
 
@@ -26,9 +26,12 @@ source-git-commit: ea1927827c0615b085a440bc86116b438594e448
       + [Konverteringar](ga-to-aa/reports/conversions-reports.md)
    + [Frågor och svar](ga-to-aa/faq.md)
    + [Bearbetningsskillnader mellan plattformar](ga-to-aa/processing-differences.md)
-+ [Analysera data som påverkas av händelser](event-impacted.md)
 + Analysera data som påverkas av händelser {#event}
-   + [förmedla genomslag till användarna](event/event-communicate.md)
+   + [Analysera data som påverkas av händelser - översikt](event/overview.md)
+   + [Exkludera specifika datum i analysen](event/segments.md)
+   + [Jämför datum med tidigare intervall](event/compare-dates.md)
+   + [Härleda data som påverkas av händelser](event/calcmetrics.md)
+   + [Kommunicera händelser till användare](event/communicate.md)
 + [Webbläsarcookies](cookies.md)
 + [Datalagring](data-retention.md)
 + [Latens](latency.md)
