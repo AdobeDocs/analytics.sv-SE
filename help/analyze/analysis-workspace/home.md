@@ -1,102 +1,190 @@
 ---
-description: Så här kommer du igång med Adobe Analytics.
 keywords: Analysis Workspace
-title: Guiden Komma igång
+title: Översikt över Analysis Workspace
+topic: Reports and analytics
+uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: efbbf94882a406e95791e38e80f86691285986a6
 
 ---
 
 
-# Analysis Workspace
+# Översikt över Analysis Workspace
 
-Analysis Workspace är ett av Adobes flaggskeppsverktyg för att fatta databaserade beslut som kan användas i organisationen. Den vanligaste visualiseringen, frihandstabellen, gör att du enkelt kan skapa anpassade rapporter med mått, mätvärden, segment och datumintervall.
+Analysis Workspace tar bort alla vanliga begränsningar i en enskild Analytics-rapport. Den ger en robust, flexibel arbetsyta för att skapa anpassade analysprojekt. Dra och släpp valfritt antal datatabeller, visualiseringar och komponenter (mått, mätvärden, segment och tidsdetaljer) till ett projekt. Skapa snabbt indelningar och segment, skapa kohorter för analys, skapa aviseringar, jämföra segment, göra flödes- och bortfallsanalyser samt strukturera och schemalägg rapporter för delning med vem som helst i företaget.
 
-## Förutsättningar
+**[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
-[Skicka data till Adobe Analytics med Adobe Experience Platform Launch](/help/implement/launch/validate-publish-prod.md): Användningen av Analysis Workspace kräver en fungerande implementering. Kontrollera att din organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som DTM eller äldre manuella implementeringar, fungerar också.
+## Videoöversikt
 
-## Hämta en grundläggande rankad rapport i Workspace
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12)
 
-Hämta en grundläggande rankad rapport med Analysis Workspace. En rankad rapport visar en sammanställd totalvy över varje dimensionsvärde, med de största värdena först. Den här typen av rapporter är användbara för att se vilka komponenter på din webbplats som är mest effektiva, till exempel vilka sidor som får mest trafik eller vilka produkter som säljer mest.
+Fullständig YouTube-spellista finns [här](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS).
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
-2. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
-3. Klicka på Arbetsyta i det övre navigeringsfältet.
-4. Klicka på knappen Skapa nytt projekt.
-5. Kontrollera att Tomt projekt är markerat i det modala popup-fönstret och klicka sedan på Skapa.
-6. Till vänster finns en lista med mått, mått, segment och datumintervall. Leta reda på siddimensionen (färgad orange) och dra den till arbetsytan där det står &#39;Släpp en dimension här&#39;.
-7. Observera att om rapportsviten innehåller data kan du se en rapport som visar de översta sidorna för den här månaden. Analysis Workspace fyllde automatiskt i rapporten med [förekomstmåttet](/help/components/c-variables/c-metrics/metrics-occurrences.md) .
-8. Leta reda på Visits-måttet (grönt i färg) och dra det antingen **över** eller **bredvid** måtthuvudet Förekomster (undvik att placera det ovanför måttet). Om du drar Visits-måttet över förekomster ersätts måtten i rapporten. Om du drar Visits-måttet bredvid Förekomster visas båda måtten sida vid sida.
-9. Om du vill spara projektet klickar du på *[!UICONTROL Project]>[!UICONTROL Save]*i den övre vänstra menyn.
+>[!NOTE]
+>
+>Uppdateringar av funktioner finns i [Nyheter på arbetsytan](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) för analyser.
 
-## Hämta en grundläggande trendrapport i Workspace
+## Full kontroll över projektelement och -komponenter
 
-Hämta en grundläggande trendrapport med Analysis Workspace. En trendrapport visar en övertidsvy med mätvärden som använder det valda datumintervallet. Den här typen av rapporter är användbara för att identifiera trender över tid och kan användas för att mäta om affärsbeslut som fattas är lyckade eller inte. Du kan till exempel titta på en rapport över sidvisningar som trendas över tid för att se om en ny webbplatsdesign bidrog till att öka eller minska trafiken.
+Analysis Workspace ger frihet och flexibilitet:
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
-2. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
-3. Klicka på Arbetsyta i det övre navigeringsfältet.
-4. Klicka på knappen Skapa nytt projekt.
-5. Kontrollera att Tomt projekt är markerat i det modala popup-fönstret och klicka sedan på Skapa.
-6. Till vänster finns en lista med mått, mått, segment och datumintervall. Leta reda på dimensionen Sidvisning och dra den till det lilla utrymmet på arbetsytan med etiketten &#39;Släpp ett mätvärde här&#39;. Undvik att släppa det i det utrymme som är reserverat för dimensioner (åtminstone för den här övningen).
-7. Observera att om rapportsviten innehåller data bör du se en grundläggande rapport om sidvisningar som trendas över den aktuella månaden. Analysis Workspace infogade automatiskt datumintervallet &quot;Dag&quot; så att du kan se trenden för sidvisningar för den aktuella månaden.
-8. Leta reda på datumintervallet för vecka (lila) i listan med datumintervallkomponenter till vänster. Klicka på datumintervallets rubrik för att expandera och visa alla datumintervallkomponenter, eller använd sökfältet.
-9. Ersätt datumintervallet genom att dra datumintervallet Vecka över datumintervallhuvudet på arbetsytan.
-10. Observera att din trendrapport nu är sammanställd per vecka istället för dag.
-11. Om du vill spara projektet klickar du på *[!UICONTROL Project]>[!UICONTROL Save]*i den övre vänstra menyn.
+* Dra-och-släpp komponenter (dimensioner, mätvärden, segment och tidsdetaljer)
+* Dra och släpp flera visualiseringar till projektet
+* Flytta, ändra storlek på och stapla visualiseringar var du vill i ett projekt
 
-## Experimentera med verktyget
+![](assets/fa_project_new.png)
 
-Eftersom Analysis Workspace är ett rapportverktyg har det ingen effekt på datainsamlingen. Det får inga följder om man utan åtskillnad drar komponenter till ett projekt för att se vad som fungerar. Dra olika kombinationer av mått och mätvärden till arbetsyteprojektet för att se vad som är tillgängligt för dig.
+Mer information finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) .
 
-Om du av misstag drar en ogiltig komponent till arbetsyteprojektet eller vill gå tillbaka ett steg, trycker du på Ctrl+Z (Windows) eller Cmd+Z (Mac) för att ångra den senaste åtgärden. Du kan också börja med en ren skiva genom att klicka *[!UICONTROL Project]>[!UICONTROL New]*i den övre vänstra menyn.
+## Flera visualiseringar i ett projekt
 
-## Felsökning
+Dra-och-släpp så många visualiseringar du vill i ett projekt.
 
-**När jag drar ett mätresultat över står det&quot;Ogiltiga data&quot;.**
+![](assets/visualizations-multiple.png)
 
-Ogiltiga data innebär att Adobe inte kan returnera data med den kombination av dimensioner och mått som används i rapporten. Två mätvärden som staplas ovanpå varandra kan till exempel inte returneras som data, eftersom det inte finns något sätt att visa två mätvärden på det sättet. Placera i stället måtten sida vid sida.
+Skapa ett projekt som visar procentandelen förändring, med flera visualiseringar som motsvarar celler i en datatabell på frihand.
 
-**När jag drar ett mätresultat över ser jag inga verkliga data - bara nollor.**
+![](assets/visualizations-multiple02.png)
 
-Om du har skapat en rapport för arbetsytan men det inte finns några data kan du kontrollera några saker:
+Mer information finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) .
 
-* Kontrollera att rapportsviten är ifylld med data.
-* Om du använder ett segment i rapporten kanske segmentvillkoren inte matchar några data. Försök att ta bort segmentet eller justera segmentdefinitionen.
-* Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.
-* Navigera till webbplatsen och använd Felsökning för att validera att data samlas in.
+## Intralänkning till paneler och visualiseringar
 
-## Ytterligare resurser
+I kombination med de [avancerade textredigeringsfunktionerna](/help/analyze/analysis-workspace/visualizations/text.md) i Analysis Workspace kan du länka till specifika paneler och visualiseringar i ett projekt från en textruta, till exempel för att skapa ett projekts innehållsförteckning. Du kan dela dessa länkar på samma sätt som du delar en projektlänk för att dirigera någon till en viss visualisering eller panel i ett projekt. Nya högerklicksalternativ med namnen Hämta panellänk och Hämta visualiseringslänk har lagts till. Så här lägger du till länkar till ditt projekt:
 
-* [Versionsinformation](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md)för Analysis Workspace: Läs om de senaste funktionerna som ingår i verktyget.
-* [Analysis Workspace på YouTube](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS): Lär dig hur du använder de flesta funktionerna i Analysis Workspace via den här omfattande spellistan.
-* Produkttips: Dagens tips, tillsammans med korta videoklipp, visas ibland i det nedre högra hörnet av Analysis Workspace. Om de här tipsen avvisas kan du när som helst nå dem fram till *[!UICONTROL Help]>[!UICONTROL Tips]*.
-* [Analysis Workspace-community](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics/analysis-workspace): Diskutera Analysis Workspace med andra användare och rösta på funktioner som du vill se i verktyget.
-* Blogginlägg:
-   * [Möjliggör för organisationer med smartare analys](https://blogs.adobe.com/digitalmarketing/analytics/adobe-analytics-fall-2016-release-empowering-organizations-smarter-analysis/)
-   * [Nya funktioner i Adobe Analytics gör kraftfulla insikter mer tillgängliga](https://blogs.adobe.com/digitalmarketing/analytics/new-adobe-analytics-capabilities-make-powerful-insights-accessible/)
-   * [5 tips för att maximera produktiviteten med Analysis Workspace](https://blogs.adobe.com/digitalmarketing/analytics/5-tips-maximize-productivity-analysis-workspace/)
-   * [Snabbare insikter med Analysis Workspace](https://blogs.adobe.com/digitalmarketing/analytics/faster-insights-with-the-analysis-workspace/)
-   * [Varför ska du använda Analysis Workspace?](https://blogs.adobe.com/digitalmarketing/analytics/why-you-should-be-using-analysis-workspace-in-adobe-analytics/)
+1. Dra en textvisualisering till ett projekt, kanske bredvid en visualisering eller tabell som behöver kontext.
+1. Fyll i textrutan med t.ex. en innehållsförteckning och markera sedan ett objekt som du vill länka till en panel eller visualisering, t.ex. Success Metrics.
 
-## Nästa steg
+   ![](assets/intra-linking1.png)
 
-Det finns många inriktningar på att fördjupa din förståelse av Analysis Workspace. Här är några grunder som Adobe rekommenderar:
+1. Bläddra till den panelen eller visualiseringen och högerklicka på panelens sidhuvud.
+1. Bläddra nedåt och markera **[!UICONTROL Get Panel Link]** eller **[!UICONTROL Get Visualization Link]**:
 
-### För slutanvändare som vill utöka kunskapen om hur man använder Analysis Workspace
+   ![](assets/intra-linking2.png)
 
-* [Information om gränssnittet](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md)för arbetsytan: Nu när du har skapat en grundläggande rapport blir du mer bekant med resten av gränssnittet.
-* [Visualiseringar i arbetsytan](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md): Frihandsregister är bara en typ av visualisering i Analysis Workspace. Lär dig hur du använder andra visualiseringar, till exempel linjediagram, stolpdiagram och geokartor.
-* [Dimensioner i arbetsytan](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md): Lär dig mer om vilka dimensioner som är och hur du använder dem i mer än bara rankade rapporter.
-* [Mätvärden i arbetsytan](/help/analyze/analysis-workspace/components/apply-create-metrics.md): Läs mer om vad mätvärden är och hur du använder dem i andra delar av frihandstabeller.
-* [Introduktion till segmentering](/help/analyze/analysis-workspace/components/t-freeform-project-segment.md): Lär dig mer om vilka segment som är och hämta en grundläggande rapport med ett segment.
-* [Datumintervall i arbetsytan](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md): Lär dig mer om relativa och rullande datum och använd dem i arbetsyteprojekt.
-* Dela projekt i Workspace: Visa dina kollegor det fantastiska Workspace-projekt du skapat.
-* [(Avancerade) Paneler i arbetsytan](/help/analyze/analysis-workspace/c-panels/panels.md): Använd avancerade funktioner i Workspace, till exempel Attribution och Segment Comparison.
+1. Kopiera länken och lägg till den i hyperlänken Success Metrics i textvisualiseringen. Klicka på bockmarkeringen för att spara texten.
 
-### För analytiker och administratörer som vill förbättra kvaliteten på arbetsytan i sin organisation
+Om du har paneler eller visualiseringar komprimerade i ditt projekt utökas panelen/visualiseringen när du klickar på en länk så att användarna kan se den.
 
-* [Behörigheter](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)för Analysis Workspace: Tilldela användarbehörigheter till arbetsytan via Adobe Admin Console.
-* [Mallar i arbetsytan](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md): Skapa mallar så att dina kollegor kan börja med ett projektutrymme som är anpassat efter deras behov.
-* [Arbetsyteurval](/help/analyze/analysis-workspace/curate-share/curate.md): Skapa ett projekt som begränsar antalet tillgängliga komponenter så att arbetsytan blir mer tillgänglig för dem som inte är vana vid verktyget
+>[!NOTE] Du kan också använda den här funktionen i alternativet för **[!UICONTROL Edit Description]** högerklick.
+
+## Länka till andra projekt
+
+Du kan länka användare till andra projekt som kan vara intressanta för dem genom att till exempel gå till **[!UICONTROL Share]** > **[!UICONTROL Get Project Link]** och bädda in länken i projektbeskrivningar.
+
+## Dynamisk visualisering av markerade celler
+
+Markera enskilda celler och se hur visualiseringarna ändras dynamiskt. Synkronisera och lås en visualisering med markerade celler.
+
+![](assets/visualize-selected-cells.png)
+
+## Lås markerade objekt eller positioner
+
+Genom att låsa visualiseringar kan du styra vilka datakällor i frihandsdatatabellen som motsvarar visualiseringar.
+
+![](assets/manage-data-source.png)
+
+Se [Hantera datakällor](/help/analyze/analysis-workspace/visualizations/t-sync-visualization.md).
+
+## Trendvisualiseringar från markerade celler
+
+Skapa en visualisering av markerade celler. (Högerklicka > **[!UICONTROL Trend Selection]**.)
+
+![](assets/trend-selection.png)
+
+Trendmarkeringar är nu **länkade** till tabellen nedan, så om du väljer en annan rad i tabellen återspeglas raden i trenddiagrammet.
+
+![](assets/trend-selection2.png)
+
+## Dimensioner och uppdelningar av dimensionsobjekt
+
+Som återförsäljare kan ni fördjupa er i era kampanjer och förstå hur ni kan engagera era kunder bättre. Anpassa era data på ett obegränsat sätt efter era specifika behov. skapa frågor med hjälp av relevanta mått, dimensioner, segment, tidslinjer och andra analysvärden.
+
+![Stegresultat](assets/fa_data_table_actions.png)
+
+Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md).
+
+## Segment från tabellmarkeringar
+
+Markera cellerna i frihandstabellen och skapa ett segment från markeringen.
+
+Jämför flera segment och skapa och tillämpa segment direkt. Du kan använda flera segment för att fokusera på specifika kunder baserat på beteende och interaktion och sedan jämföra och kontrastera.
+
+![](assets/segment_inline.png)
+
+Släpp ett segment på projektnivå på frihandspanelen så tillämpas segmentet på hela projektet.
+
+![](assets/segment-panel.png)
+
+Se [Segment](/help/analyze/analysis-workspace/components/t-freeform-project-segment.md).
+
+## Projekt- och komponenttaggning
+
+Du kan använda taggar för projekt och komponenter i Analysis Workspace:
+
+* Använd eller skapa taggar på projektnivå på informationspanelen. (  ![](assets/information_icon.png)
+
+* Högerklicka på komponenter för att tagga (eller skapa taggar) från panelen Komponenter.
+* Använd # i sökfältet för att söka efter taggar.
+
+## Komponentåtgärder
+
+Utför åtgärder på komponentnivå från Åtgärder-menyn längst upp i den vänstra listen för komponenten. Markera en komponent och klicka på **[!UICONTROL Actions]** för att visa åtgärderna.
+
+| Komponentåtgärd | Beskrivning |
+|--- |--- |
+| Tagg | Organisera eller hantera komponenter genom att lägga till taggar i dem. Sedan visas det i respektive komponenthanterare, som Analytics (Analyser) > Components (Komponenter) > Segments (Segment)) eller Analytics (Analyser) > Components (Komponenter) > Projects (Projekt)) |
+| Favorit | Lägg till komponenten i listan med favoriter. Sedan visas det i respektive komponenthanterare, som Analytics (Analyser) > Components (Komponenter) > Segments (Segment)) eller Analytics (Analyser) > Components (Komponenter) > Projects (Projekt)). |
+| Godkänn | Godkänn komponenten för att göra den kanonisk. Sedan visas det i respektive komponenthanterare, som Analytics (Analyser) > Components (Komponenter) > Segments (Segment)) eller Analytics (Analyser) > Components (Komponenter) > Projects (Projekt)) |
+| Dela | Gäller endast segment. |
+| Ta bort | Gäller endast segment. |
+
+Mer information finns i [Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) .
+
+## Ytterligare funktionsbeskrivningar
+
+**Vad du kan dra och stapla**
+
+Komponenter
+
+* Dimensioner
+* Segment
+* Mått
+* Datumintervall
+* Tidsgranularitet (timme, dag, vecka och så vidare).
+
+**Flera frihandstabeller och flera visualiseringar**
+
+Det finns ingen teknisk gräns för hur många frihandsritabeller och visualiseringar du kan lägga till på panelen. Du kan också köra en ny visualisering (eller exportera till CSV) av varje frihandstabell eller markerade rader i en tabell.
+
+**Ordna, sortera och kopiera kolumner**
+
+* Sortera förinställningar för datumintervall (inkluderar inte anpassade datumintervall).
+* CTRL (eller Kommando) + klicka + dra en kolumn kopierar kolumnen och när du drar kopian klistras den in på den nya positionen i tabellen.
+
+Mer information finns i [Hotkeys på arbetsytan](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för analyser.
+
+**Markeringar och åtgärder**
+
+Du kan markera rader och kolumner på samma sätt som du kan markera dem i Excel. Sedan kan du vidta åtgärder för de markeringarna. Exempel:
+
+* Skapa visualiseringar från markeringar
+* Kopiera till Urklipp (CTRL eller Cmd + C)
+* Dela upp flera markerade rader. Markera raderna och dra sedan en dimension till markeringen. Du kan också högerklicka på markeringen och använda menyn Uppdelning.
+
+**Autospara och osparade ändringar**
+
+Du uppmanas att spara ändringarna om du försöker stänga webbläsaren (eller använda knappen Bakåt) och projektet inte har sparats. Om datorn kraschar får du ett varningsmeddelande om att återställa till ditt tidigare projekttillstånd när du läser in projektet.
+
+Redan befintliga (inte nya) projekt sparas bara automatiskt när webbläsaren kraschar eller under andra omständigheter när du inte har fått möjlighet att spara dem.
+
+**Alla besök**
+
+Ett standardsegment som är unikt för Analysis Workspace. *`All Visits`* visar summor för de komponenter du lägger till i tabellen.
+
+**Beräknade mått**
+
+Använd beräkningar på samma sätt som du använder standardvärden.
+
+Se [Beräknade mått](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html).
