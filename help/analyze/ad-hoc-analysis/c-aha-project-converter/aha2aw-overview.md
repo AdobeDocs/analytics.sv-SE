@@ -3,7 +3,7 @@ description: 'null'
 title: Översikt över projektkonverteraren för ad hoc-analys
 uuid: 7d78753d-d56c-4eea-b1dd-7c9ec225cce3
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -21,7 +21,7 @@ Ad hoc Analysis Project Converter kan smidigt konvertera alla dina Ad hoc-projek
 
 Projektkonvertering har avsevärda fördelar:
 
-* Det konverterar dina projekt till vårt ledande analysrapporteringsverktyg, [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html), som ständigt förbättras med nya visualiseringar och andra mycket anpassade funktioner.
+* Det konverterar dina projekt till vårt ledande analysrapporteringsverktyg, [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html), som ständigt förbättras med nya visualiseringar och andra mycket anpassade funktioner.
 * Du kan utnyttja alla de coola funktionerna Analysis Workspace som finns här: [Vilket analysverktyg ska jag använda](https://docs.adobe.com/content/help/en/analytics/admin/admin-overview/which-analytics-tool.html).
 * Du kan konvertera dina projekt gruppvis utan att behöva återskapa dem manuellt i Analysis Workspace.
 * Ad hoc-analys har varit ett mycket användbart verktyg i många år, men är nu i underhållsläge utan att några nya funktioner har lagts till.
