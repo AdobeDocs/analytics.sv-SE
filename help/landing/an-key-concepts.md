@@ -2,7 +2,7 @@
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av konceptet och en specifik dokumentationslänk med ytterligare information om ämnet.
 title: Adobe Analytics - viktiga begrepp
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -15,7 +15,7 @@ Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en 
 
 | Produkt | Beskrivning | Dokumentationslänk |
 |--- |--- |--- |
-| Analysis Workspace | Webbläsarlösning för att skapa stabila, anpassade analysprojekt och demokratisera insikter. Ger större rapportflexibilitet än rapporter och analyser | [adobe.ly/aaworkspacedocs](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html) |
+| Analysis Workspace | Webbläsarlösning för att skapa stabila, anpassade analysprojekt och demokratisera insikter. Ger större rapportflexibilitet än rapporter och analyser | [adobe.ly/aaworkspacedocs](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) |
 | Rapporter och analyser (tidigare SiteCatalyst) | Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet. | [Rapporter och analyser - startsida](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html) |
 | Report Builder | Excel-tillägg som gör att du kan skapa anpassade förfrågningar från Adobe Analytics-data och visualisera dem med Microsoft Excel. | [Report Builder - startsida](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html) |
 | Ad hoc-analys (tidigare Discover) | Java-baserat verktyg för avancerad digital analys. | [Ad Hoc Analysis - startsida](https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/adhoc-home.html) |
