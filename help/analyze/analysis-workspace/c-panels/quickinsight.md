@@ -2,7 +2,7 @@
 description: Verktyget Quick Insights Builder är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
 title: Quick Insights builder
 translation-type: tm+mt
-source-git-commit: 0bf00f990a34768b93cef5d57a126ebe93087e91
+source-git-commit: 7fbeac0488fbe9b3d10d7c1242f31250f1c7dc16
 
 ---
 
@@ -35,7 +35,7 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 | [!UICONTROL Dimension] | Dimensioner är beskrivningar eller egenskaper för mätdata som kan visas, delas upp och jämföras i ett projekt. De är icke-numeriska värden och datum som delas upp i dimensionsobjekt. Till exempel är &quot;webbläsare&quot; eller &quot;sida&quot; dimensioner. |
 | [!UICONTROL Dimension item] | Dimensionsobjekt är enskilda värden för en dimension. Dimensionsobjekten för webbläsardimensionen är till exempel Chrome, Firefox och Edge. |
 | [!UICONTROL Metric] | Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare. |
-| [!UICONTROL Visualization] | Workspace erbjuder [ett antal visualiseringar](/help/analyze/analysis-workspace/visualizations/t-sync-visualization.md) för att skapa visuella representationer av dina data, till exempel stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. |
+| [!UICONTROL Visualization] | Workspace erbjuder [ett antal visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) för att skapa visuella representationer av dina data, till exempel stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. |
 | [!UICONTROL Breakdown] | En uppdelning är ett sätt att bokstavligen dela upp en dimension med andra dimensioner. I det här exemplet kan du bryta ned USA efter mobila enheter för att få mobilenhetsbesök per delstat, eller så kan du bryta ned mobila enheter efter mobilenhetstyper, efter regioner, efter interna kampanjer osv. |
 | [!UICONTROL Segment] | Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Du kan till exempel skapa [!UICONTROL Visitor] segment baserat på attribut: webbläsartyp, enhet, antal besök, land, kön eller baserat på interaktioner: kampanjer, sökordssökningar, sökmotorer eller baserat på avslutningar och tävlingsbidrag: besökare från Facebook, en definierad landningssida, hänvisande domän eller baserad på anpassade variabler: formulärfält, definierade kategorier, kund-ID. |
 
