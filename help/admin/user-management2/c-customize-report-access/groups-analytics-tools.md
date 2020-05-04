@@ -6,7 +6,7 @@ title: Anpassa behörigheter för analysverktyg
 topic: Admin tools
 uuid: 8e86bc17-46d3-4c5e-ac25-9f3bfc29b8fa
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -58,7 +58,7 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | [Användare av Ad Hoc Analysis](https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/adhoc-home.html) License | Ger behörighet att komma åt [!UICONTROL Ad Hoc Analysis]. |
 | Webbtjänståtkomst | Ger åtkomst till webbtjänster för icke-administratörer. Skapar autentiseringsuppgifter för webbtjänsten. |
 | [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html) | Ger medlemmar i den här gruppen tillgång till [!UICONTROL Report Builder] licenser. |
-| [Åtkomst till analysarbetsyta](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html) | Ger användarna åtkomst till Analysis Workspace, det rekommenderade rapporteringsgränssnittet för [!DNL Adobe Analytics]. |
+| [Åtkomst till analysarbetsyta](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) | Ger användarna åtkomst till Analysis Workspace, det rekommenderade rapporteringsgränssnittet för [!DNL Adobe Analytics]. |
 | [Rapporter och analyser](https://docs.adobe.com/content/help/en/analytics/landing/an-key-concepts.html) | Ger användare åtkomst till rapporter och analyser. |
 | [Skapande av beräknade mätvärden](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html) | Ger användare behörighet att skapa beräknade värden. |
 | [Skapa segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) | Ger användare behörighet att skapa segment. |
