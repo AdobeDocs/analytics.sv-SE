@@ -3,7 +3,7 @@ description: Systemkrav och en jämförelse av Analysis Workspace, Reports & Ana
 title: Produktjämförelse och krav för analyser
 uuid: 988eab20-aa94-4eae-ae4a-5f2b70afa5b3
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -18,7 +18,7 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
  <tbody> 
   <tr> 
    <td> <b>Produkt- och hjälplänk</b> </td> 
-   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html"> Analysis Workspace </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html"> Analysis Workspace </a> </td> 
    <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html"> Rapporter och analyser </a> </td> 
    <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/ad-hoc-analysis/adhoc-home.html"> Ad hoc-analys </a> </td> 
    <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html"> Report Builder </a> </td> 
@@ -108,7 +108,7 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Förbättrade visualiseringsalternativ</b> </td> 
-   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html"> Ja </a> </td> 
    <td> Nej </td> 
    <td> Ja </td> 
    <td> Ja </td> 
@@ -117,7 +117,7 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
   </tr> 
   <tr> 
    <td> <b>Anpassningsbar layout</b> </td> 
-   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html"> Ja </a> </td> 
+   <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html"> Ja </a> </td> 
    <td> Ja - <a href="https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html"> instrumentpaneler </a> </td> 
    <td> Nej </td> 
    <td> <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/layout/configure-the-custom-layout.html"> Ja </a> </td> 
