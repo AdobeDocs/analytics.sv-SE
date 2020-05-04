@@ -3,7 +3,7 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -16,7 +16,7 @@ Mer information om produktjämförelser i Adobe Analytics finns [här](/help/adm
 
 ## Användargränssnitt för Adobe Analytics Reporting {#section_8265460EBB47405AB19A3B2B0729C8A4}
 
-**[Analysis Workspace](/help/analyze/analysis-workspace/analysis-workspace-features.md)**ska vara användargränssnittet för alla dina rapporterings- och analysbehov. Adobe fortsätter att investera i och släppa månadsuppdateringar av den här produkten. Om det finns en uppgift som du inte kan utföra i Analysis Workspace bör du överväga de andra gränssnitten nedan.**
+**[Analysis Workspace](/help/analyze/analysis-workspace/home.md)**ska vara användargränssnittet för alla dina rapporterings- och analysbehov. Adobe fortsätter att investera i och släppa månadsuppdateringar av den här produkten. Om det finns en uppgift som du inte kan utföra i Analysis Workspace bör du överväga de andra gränssnitten nedan.**
 
 **[Rapporter och analyser](/help/analyze/reports-analytics/overview/report-overview.md)**ska användas:
 
