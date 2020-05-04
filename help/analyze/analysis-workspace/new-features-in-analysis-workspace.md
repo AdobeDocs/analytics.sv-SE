@@ -5,7 +5,7 @@ title: Nyheter på Analysis Workspace
 topic: Reports and analytics
 uuid: ff50ef9f-e5b8-442e-bfa6-2f224ba9f111
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -209,7 +209,7 @@ Nya funktioner och förbättringar som släpptes 19 juli 2018.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="attribution-iq.md"  > Attributions-IQ </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="attribution-iq.md"  > Attributions-IQ </a> </b> </p> </td> 
    <td colname="col2"> <p>Med attribuerings-IQ kan ni utföra mer sofistikerade och intelligenta analyser av marknadsföringens prestanda. Nya attribueringsmodeller kan användas på mätvärden i Analysis Workspace (på valfri tabell eller vid valfri uppdelning) och i beräknade mätvärden. En ny attribueringspanel ger bättre visualisering och jämförelse. </p> </td> 
   </tr> 
   <tr> 
@@ -246,7 +246,7 @@ Nya funktioner och förbättringar som släpptes 14 juni 2018.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/components/dimensions/view-dimensions.md"  > Dynamiska dimensionskolumner </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/components/dimensions/view-dimensions.md"  > Kolumner för dynamisk dimension </a> </b> </p> </td> 
    <td colname="col2"> <p>Tidigare, när en dimension släpptes på en kolumn, visade vi de 5 högsta värdena för icke-tidsdimensioner (och 15 för tidsdimensioner) och höll dessa värden statiska (dvs. de 5 valda värdena ändrades aldrig). </p> <p>Från och med nu visas som standard dynamiska värden i stället för statiska, med möjlighet att omvandla dem till statiska värden. Andra saker att notera: </p> 
     <ul id="ul_C802BC32CB084E30B4E58E9E90B9A63D"> 
      <li id="li_452466AB416F4737B532849C604BD4CC">Klicka på (i) för den dynamiska dimensionen så visas rankningen (första av 5) och dimensionstypen. </li> 
@@ -469,7 +469,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bidragsanalys: <a href="https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html"  > Tokenmeddelande </a> </p> </td> 
-   <td colname="col2"> <p>Om ditt företag har ett begränsat antal token för bidragsanalys visas nu ett meddelande i gränssnittet för analysarbetsytan när du använder en token. Här ser du hur många variabler du har kvar.&amp;nbsp; </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa variabler genom att redigera gruppbehörigheten. Behörigheten kallas för avvikelseidentifiering och bidragsanalys under <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> User Management </span>&gt; <span class="uicontrol"> Edit Groups </span> &gt; <span class="uicontrol"> Edit All Report Access </span> <span class="uicontrol"> </span> <span class="uicontrol"> </span>&gt;¥ Customize Report Suite Tools¥ &gt;¥ Tools And Reports. ) </p> </td> 
+   <td colname="col2"> <p>Om ditt företag har ett begränsat antal token för bidragsanalys visas nu ett meddelande i gränssnittet för analysarbetsytan när du använder en token. Här ser du hur många variabler du har kvar.&amp;nbsp; </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa variabler genom att redigera gruppbehörigheten. Behörigheten kallas för avvikelseidentifiering och bidragsanalys under <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> User Management </span>&gt; <span class="uicontrol"> Edit Groups </span> &gt; <span class="uicontrol"> Edit All Report Access </span> <span class="uicontrol"> </span> <span class="uicontrol"> </span>&gt;¥ Customize Report Suite Tools¥ &gt;¥ Tools And Reports. )  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CSV-filer med tecken med flera faror </p> </td> 
@@ -554,7 +554,7 @@ Nya funktioner släpptes 26 oktober 2017.
    <td colname="col2"> <p>Intervallet för avvikelseidentifiering - konfidensintervall skalar inte automatiskt y-axeln i en visualisering så att diagrammet kan bli mer läsbart. </p> <p>Du kan nu välja att tillåta konfidensintervallet för att skala diagrammet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/components/c-alerts/alert-manager.md"  > Varningar: Lagt till <b>förnyelsealternativ</b></a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/components/c-alerts/alert-manager.md"  > Varningar: Lagt till <b>förnyelsealternativ</b> </a> </p> </td> 
    <td colname="col2"> <p>När en eller flera aviseringar har valts i Varningshanteraren kan de förnyas genom att klicka på <span class="uicontrol"> Förnya </span>. </p> <p>Detta förlänger deras förfallodatum till ett år från den dag då användaren <span class="uicontrol"> </span> klickade på Förnya, oavsett deras ursprungliga förfallodatum. </p> </td> 
   </tr> 
   <tr> 
@@ -682,11 +682,11 @@ Nya funktioner släpptes 20 juli 2017.
    <td colname="col2"> <p>Gör att du kan ändra teckensnittsinställningarna (fet, kursiv stil och så vidare) och hyperlänken i textrutevisualiseringar och beskrivningar av panel/visualisering. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/analysis-workspace-features.md#section_253EA04E067F4A29A8B54CE2B7631086"  > Intra-linking (Quick-visualize links) </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/home.md#section_253EA04E067F4A29A8B54CE2B7631086"  > Intra-linking (Quick-visualize links) </a></b> </p> </td> 
    <td colname="col2"> <p><b>Med Intra-linking</b> kan du länka till specifika paneler och visualiseringar i ett projekt från en textruta, t.ex. för att skapa en projektinnehållsförteckning. Du kan dela dessa länkar på samma sätt som du delar en projektlänk för att dirigera någon till en viss visualisering eller panel i ett projekt. Nya högerklicksalternativ med namnen Hämta panellänk och Hämta visualiseringslänk har lagts till. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> Redigera <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_94F1988CB4B9434BA1D9C6034062C3DE"  > förklaringsetikett </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_94F1988CB4B9434BA1D9C6034062C3DE"  > Redigering av förklaringsetikett </a></b> </p> </td> 
    <td colname="col2"> <p>Gör att du kan byta namn på serienamn i visualiseringsteckenförklaringar (Utfall, Område, Staplad, Stapel, Staplad stapel, Donut, Histogram, Vågrät stapel, Staplad linje, Spridning och Venndiagram) så att du lättare kan se bilderna. </p> <p>Redigering av förklaringar <b>gäller inte</b> för: Treemap, Bullet, Summary Change or Number, Text, Freeform, Histogram, Kohort eller Flow-visualiseringar. </p> </td> 
   </tr> 
   <tr> 
@@ -694,7 +694,7 @@ Nya funktioner släpptes 20 juli 2017.
    <td colname="col2"> <p>Vi har omutvecklat hur datakällor (som driver visualiseringarna) hanteras. Det finns inte längre separata, dolda tabeller när du låser datakällan till en tabell. </p> <p>I stället behåller vi den visuella återgivningen kopplad till tabellen som du skapade den från. Detta löser också ett fel med live-länkade tabeller, där du ändrar granulariteten och sedan återgår till den gamla granulariteten vid nästa inläsning av projektet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> Möjlighet <a href="/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/run-contribution-analysis.md"  > att markera en viss avvikelse </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/run-contribution-analysis.md"  > Möjlighet att markera en viss avvikelse </a></b> </p> </td> 
    <td colname="col2"> <p>Vi belyser nu avvikelsen med en blå punkt i bidragsanalysen och de intelligenta varningsprojekten som är kopplade till den. Detta ger en tydligare indikation på den avvikelse som analyseras. </p> </td> 
   </tr> 
   <tr> 
@@ -702,7 +702,7 @@ Nya funktioner släpptes 20 juli 2017.
    <td colname="col2"> <p>Om du tidigare loggade in med dina Experience Cloud-inloggningsuppgifter och navigerade till Analytics, kunde du inte använda <span class="ignoretag"> Dela <span class="uicontrol"> &gt; </span> Hämta projektlänk <span class="uicontrol"></span> </span> . Vi har åtgärdat det här problemet. Du måste fortfarande spara projektet innan det här alternativet kan klickas. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> Filtret <a href="/help/analyze/analysis-workspace/curate-share/schedule-projects.md"  > "Utgångna projekt" i hanteraren för schemalagda projekt </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/curate-share/schedule-projects.md"  > Filtret 'Utgångna projekt' i hanteraren för schemalagda projekt </a></b> </p> </td> 
    <td colname="col2"> <p>Du kan nu filtrera projekt som har upphört att gälla i den schemalagda projektledaren. Du kan sedan bestämma om du vill starta om eller ta bort dessa projekt. </p> </td> 
   </tr> 
  </tbody> 
@@ -721,7 +721,7 @@ Nya funktioner släpptes 8 juni 2017.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <b> <a href="/help/analyze/analysis-workspace/visualizations/fallout/configuring-fallout.md"  > Utfallsförbättringar </a></b> </td> 
+   <td colname="col1"> <b> <a href="/help/analyze/analysis-workspace/visualizations/fallout/configuring-fallout.md"  > Bortfallsförbättringar </a></b> </td> 
    <td colname="col2"> 
     <ul id="ul_8A979BC0BE0F4D008F68B019A2D83A08"> 
      <li id="li_C8093834980B43A094FA9E2A7906E135">Obegränsade segment för jämförelse </li> 
@@ -732,7 +732,7 @@ Nya funktioner släpptes 8 juni 2017.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <a href="/help/analyze/analysis-workspace/visualizations/c-flow/flow-settings.md"  > <b>Förbättrade</b> </a> flöden </td> 
+   <td colname="col1"> <a href="/help/analyze/analysis-workspace/visualizations/c-flow/flow-settings.md"  > <b>Förbättringar av</b> flöde </a> </td> 
    <td colname="col2"> 
     <ul id="ul_54675DB3F59E4B24AF0C8F6E6AB2F3C1"> 
      <li id="li_DEF7D9BF03CD4A2D86A4BDD89FB3731A">En ny visualiseringsinställning med namnet <span class="wintitle"> Inaktivera etiketttrunkering har lagts till </span> (standard = avmarkerad). </li> 
@@ -755,7 +755,7 @@ Nya funktioner släpptes 8 juni 2017.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> Kryssrutan <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md"  > Använd procentgränser </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md"  > Använd procentgränser, kryssruta </a></b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_7B6B794EDF874A4D87770AB9BAB42F33"> 
      <li id="li_0B403D892320434FBAD9A7F7B808947C"> En kryssruta har lagts till för att ange procentavdrag, särskilt för procentbaserade mått (fungerar även med icke-procentbaserade mått). </li> 
@@ -769,7 +769,7 @@ Nya funktioner släpptes 8 juni 2017.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="/help/components/c-alerts/alert-manager.md"  > Förbättringar av </a> </b>Varningshanteraren </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/components/c-alerts/alert-manager.md"  > Förbättringar </a> av </b>Varningshanteraren </p> </td> 
    <td colname="col2"> 
     <ul id="ul_72464DC499744290BA37DB3B1E143F74"> 
      <li id="li_C687F0A3A99F4CC39B482BDA0F7B75DD">Lagt till möjlighet att aktivera/inaktivera aviseringar. </li> 
@@ -926,7 +926,7 @@ Nya funktioner som släpptes 20 oktober 2016:
     </ul> <p><img placement="break"  src="assets/intel-alerts.png" width="400px" id="image_10069C33B6B1437CA578B8194FC75AD8" /> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b> Analys <a href="/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md"  > av avvikelseidentifiering och bidrag </a></b> </td> 
+   <td colname="col1"> <b> <a href="/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md"  > Analys av avvikelseidentifiering och bidrag </a></b> </td> 
    <td colname="col2"> <p>Låter dig veta om en ändring i trenddata är väsentlig och vad som orsakade den. </p> <p>Både avvikelseidentifiering och bidragsanalys är nu centrala arbetsflöden i Analysis Workspace. </p> <p>Viktigt:  Contribute Analysis är bara tillgängligt för Adobe Analytics Premium-kunder. </p> <p>Du kan: </p> <p> </p> 
     <ul id="ul_9CEE47788F3640838D8598F2E2C020D6"> 
      <li id="li_787236BB5EA545B8833B311C06C24337">Identifiera automatiskt statistiskt signifikanta dataavvikelser i dina data. </li> 
@@ -942,7 +942,7 @@ Nya funktioner som släpptes 20 oktober 2016:
     </ul> <p><img placement="break"  src="assets/starter.png" width="500px" id="image_A62AFD39812E43DCBF30D5E072A7E892" /> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b> Visualisering av <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"> histogram </a></b> </td> 
+   <td colname="col1"> <b> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"> Visualisering av histogram </a></b> </td> 
    <td colname="col2"> <p>Med histogram kan användarna se hur användarna distribueras vid alla lyckade händelser. Du kan anpassa bucketerna och bucketstorlekarna så att de passar alla distributioner och för att identifiera värdefulla och värdefulla användare. </p> <p><img placement="break"  src="assets/histogram3.png" width="500px" id="image_E3277073B50140E0A3FD7C1601CF9661" /> </p> </td> 
   </tr> 
   <tr> 
@@ -954,7 +954,7 @@ Nya funktioner som släpptes 20 oktober 2016:
      <li id="li_480E1B307C62418CBC2F50ADE32B9EE9">En ny knapp med namnet "Använd på alla paneler" har lagts till bredvid "Avbryt" och "Kör" i kalendern. Ändrade Kör till Använd. Om du klickar på den nya knappen ändras inte bara det markerade datumintervallet för den aktuella panelen, utan även för alla andra paneler i projektet. </li> 
      <li id="li_4D10DFE307344D06AA60792FABE5B57E"> 
       <!--AN-124168: -->En åtgärdsknapp på den vänstra navigeringslisten med följande funktioner: Tagg, Favorit, Godkänn, <b>Dela (nytt!)</b>, <b>Ta bort (nytt!)</b>. </li> 
-     <li id="li_946EC05568D4447193E9307546DF6F9B">Ett filter har lagts till i sökfältet där du kan filtrera på taggar, favoriter, godkända objekt och komponenter. </li> 
+     <li id="li_946EC05568D4447193E9307546DF6F9B">Ett filter har lagts till i sökfältet där du kan filtrera efter taggar, favoriter, godkända objekt och komponenter. </li> 
      <li id="li_4EA118ACCD3B4F88B0ECF72717F631FA">En förhandsvisningsikon har lagts till för manuella rader (inte för dynamiska rader som listar dimensionsobjekt) där du kan förhandsgranska segment, mätvärden och datumintervall. </li> 
      <li id="li_81D5241EA3FD49CEA0E9F412837D87A8"> 
       <!--AN-128702: -->YouTube-länken för Analysis Workspace-självstudiekurser har uppdaterats för att: <a href="https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS"  > https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS </a>. </li> 
@@ -978,7 +978,7 @@ Nya funktioner som släpptes 16 juni 2016:
 * [Ny projektmenystruktur](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md) som ordnar om den övre menyn och gör den mer utbyggbar. Om du till exempel skapar en **ny kohortpanel** nu måste du skapa en tom panel och dra i en kohorttabellvisualisering.
 * [Ny vänster räl](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md): Paneler, visualiseringar, komponenter
 * En ny [Vennvisualiseringstyp](/help/analyze/analysis-workspace/visualizations/venn.md) som gör att du kan dra in upp till tre segment och ett mätvärde och skapa ett Venndiagram.
-* [Trend Selection](/help/analyze/analysis-workspace/analysis-workspace-features.md#section_34930C967C104C2B9092BA8DCF2BF81A) (linjediagram) för en rankad tabell är nu länkat.
+* [Trend Selection](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A) (linjediagram) för en rankad tabell är nu länkat.
 * [Ikonen](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)&quot;Skapa visuell&quot;: Om du klickar på den här ikonen får du en smart gissning vid nästa åtgärd (stapeldiagram, Venn...).
 * Utökad [funktion för](/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md) manuella rader
 * [Lägg till](/help/analyze/analysis-workspace/components/t-freeform-project-segment.md) släppzon för segment
