@@ -3,7 +3,7 @@ description: 'null'
 title: Kör bidragsanalys
 uuid: 5282a5f9-0771-4974-93cb-335204bde114
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -44,7 +44,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 1. Eftersom bidragsanalysen nu ingår i Analysis Workspace kan du utnyttja ett antal funktioner i en tabells högerklicksmeny för att göra analysen ännu mer meningsfull, till exempel:
 
    * [Bryter ned varje dimensionsobjekt med en annan dimension.](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md)
-   * [Trending one or more rows.](/help/analyze/analysis-workspace/analysis-workspace-features.md#section_34930C967C104C2B9092BA8DCF2BF81A)
+   * [Trending one or more rows.](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A)
    * [Lägga till nya visualiseringar.](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)
    * [Skapa aviseringar.](/help/components/c-alerts/intellligent-alerts.md)
    * [Skapa eller jämföra segment.](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
@@ -53,7 +53,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
 ## Uteslut dimensioner från bidragsanalys {#section_F6932F4BF74544B5872164E7B1E0C6FC}
 
-Det kan finnas tillfällen då du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
+Det kan finnas tillfällen när du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
 
 1. När du har klickat **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) visas **[!UICONTROL Excluded Dimensions]** panelen.
 
