@@ -5,7 +5,7 @@ title: Kontrollpanelshanteraren
 topic: Reports and analytics
 uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -70,7 +70,7 @@ Steg som beskriver hur du använder alternativen för hantering av delade instru
 
 Befintliga gamla kontrollpaneler kommer att fortsätta att köras och du kan fortfarande redigera, hämta och schemalägga dem; Du kan dock inte längre skapa nya gamla kontrollpaneler. Vi rekommenderar att du uppgraderar befintliga gamla kontrollpaneler till det nyare instrumentpanelsformatet.
 
->[!NOTE] Gå vidare, överväg att använda [Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html) och möjligheten att hämta och schemalägga dem.
+>[!NOTE] Gå vidare, överväg att använda [Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) och möjligheten att hämta och schemalägga dem.
 
 När du kopierar den äldre kontrollpanelen öppnas den äldre kontrollpanelen för redigering, där du kan lägga till äldre innehåll eller nytt innehåll. När du kopierar en äldre kontrollpanel bevaras originalet i listan med äldre kontrollpaneler.
 
