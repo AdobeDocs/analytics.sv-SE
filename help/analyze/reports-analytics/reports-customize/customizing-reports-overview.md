@@ -4,7 +4,7 @@ title: Anpassa rapportöversikt
 topic: Reports and analytics
 uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
 
 ---
 
@@ -218,4 +218,4 @@ De flesta rapporter i Rapporter och analyser innehåller nu knappen Testa i arbe
 
 För närvarande är knappen bara tillgänglig om ditt användarnamn har fullständig behörighet till Analysis Workspace.
 
-Mer information om alla sätt att anpassa rapporten finns i guiden [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html) .
+Mer information om alla sätt att anpassa rapporten finns i guiden [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) .
