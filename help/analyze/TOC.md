@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Handbok för analysverktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 7fbeac0488fbe9b3d10d7c1242f31250f1c7dc16
+source-git-commit: abb781413559c2da872ecfe3dbc9eb6df1cdbb74
 
 ---
 
@@ -327,8 +327,8 @@ source-git-commit: 7fbeac0488fbe9b3d10d7c1242f31250f1c7dc16
    + [Tid](ad-hoc-analysis/c-time.md)
 + Labs {#tech-previews}
    + [Labb - översikt](tech-previews/overview.md)
-+ instrumentpaneler {#mobapp}
-   + [översikt över instrumentpaneler](mobile-app/home.md)
++ Adobe Analytics-paneler {#mobapp}
+   + [Översikt över kontrollpaneler i Adobe Analytics](mobile-app/home.md)
    + [Kurvguide](mobile-app/curator.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
 + Progressiva webbprogram {#pwa}
