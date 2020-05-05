@@ -2,12 +2,16 @@
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
 title: Chefshandbok för Adobe Analytics-instrumentpaneler
 translation-type: tm+mt
-source-git-commit: 34c04a571a53c61970a97bc454df74b71bdbe10c
+source-git-commit: abb781413559c2da872ecfe3dbc9eb6df1cdbb74
 
 ---
 
 
 # Adobe Analytics-paneler: snabbstartsguide för företagsanvändare
+
+>[!IMPORTANT]
+>
+>Adobe Analytics-instrumentpaneler är inte tillgängliga och är endast tillgängliga för betatestning bland inbjudna kunder. Den här dokumentationen är avsedd >endast för betaanvändare och representerar inte funktionens fullständiga funktionalitet. Om du är intresserad av att bli en betaanvändare för denna >funktion, kontakta Ashok Gorrepati (gorrepati@adobe.com).
 
 ## Introduktion
 
