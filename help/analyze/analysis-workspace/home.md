@@ -4,7 +4,7 @@ title: Översikt över Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: efbbf94882a406e95791e38e80f86691285986a6
+source-git-commit: 225bc7022af656db5ad61bac2daf454c89ba1867
 
 ---
 
@@ -19,7 +19,7 @@ Analysis Workspace tar bort alla vanliga begränsningar i en enskild Analytics-r
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12)
 
-Fullständig YouTube-spellista finns [här](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS).
+Fullständig YouTube-spellista finns [här](https://www.youtube.com/channel/UC8I6bqCk7gO6YdoMz6W5fvw/playlists?view=50&amp;sort=dd&amp;shelf_id=7).
 
 >[!NOTE]
 >
