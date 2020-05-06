@@ -2,76 +2,81 @@
 title: Implementera modal
 description: Lär dig mer om den första kundupplevelsen för implementering av Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 5d4c0ae58dfb7c54b00f801aebe898f790432903
+workflow-type: tm+mt
+source-wordcount: '30'
+ht-degree: 0%
 
 ---
 
 
 # Implementera modal
 
-<!-- https://activation.adobedtm.com/index.php?redirected=1 -->
+Se [Skapa en rapportserie](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html).
 
-Det modala fönstret&quot;Välkommen till Adobe Analytics&quot; ger ett förenklat arbetsflöde för att skapa en rapportserie. Adobe rekommenderar att du använder det här arbetsflödet när fler rapportsviter behövs i din organisation.
+<!-- https://activation.adobedtm.com/index.php?redirected=1 
+
+The 'Welcome to Adobe Analytics' modal window provides a simplified workflow to create a report suite. Adobe recommends using this workflow whenever more report suites are needed in your organization.
 
 ![Modal screenshot](assets/implementation-modal.png)
 
-## Förutsättningar
+## Prerequisites
 
-Ditt Adobe-id måste ha tillgång till både Adobe Analytics och Adobe Experience Platform Launch. Om du inte har åtkomst till Launch kan du placeras i en autentiseringsslinga där du ombeds att bekräfta dina inloggningsuppgifter på obestämd tid. Tala med en systemadministratör i organisationen för att få åtkomst till Launch.
+Your Adobe ID must have access to both Adobe Analytics and Adobe Experience Platform Launch. If you do not have access to Launch, you can be placed into an authentication loop where it asks to verify your credentials indefinitely. Talk to a system admin in your organization to obtain access to Launch.
 
-## Åtkomst till spärren
+## Access the modal
 
-Använd spärren för att skapa en rapportserie med följande steg.
+Access the modal to create a report suite using the following steps.
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
-2. Klicka på ikonen med nio stödraster överst och klicka sedan på [!UICONTROL Adobe Analytics].
-3. Om du ännu inte har skapat en rapportserie visas spärren automatiskt. Om det finns en rapportsvit för det här inloggningsföretaget klickar du på hjälpikonen i det övre högra hörnet och sedan på [!UICONTROL Welcome to Adobe Analytics].
+1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your Adobe ID credentials.
+2. Click the 9-grid icon at the top, then click [!UICONTROL Adobe Analytics].
+3. If you have not yet created a report suite, the modal automatically appears. If a report suite exists for this login company, click the Help icon in the top right, then click [!UICONTROL Welcome to Adobe Analytics].
 
->[!NOTE] Alternativet visas bara om du loggar in via Adobe Experience Cloud. [!UICONTROL Welcome to Adobe Analytics] Om du loggar in via äldre domäner är spärrkoden inte tillgänglig.
+>[!NOTE] The [!UICONTROL Welcome to Adobe Analytics] option only appears if you log in through the Adobe Experience Cloud. If you log in through legacy domains, the modal is not available.
 
-## Skapa en rapportsvit
+## Create a report suite
 
-Klicka på [!UICONTROL Start Setup] knappen när du vill börja skapa ett arbetsflöde för rapportsviten.
+Click the [!UICONTROL Start Setup] button to begin the report suite creation workflow.
 
-![RS-guide](assets/analytics-implementation-rs-wizard.png)
+![RS wizard](assets/analytics-implementation-rs-wizard.png)
 
-### Egenskapstyp
+### Property type
 
-Egenskapstypen hjälper Adobe att fastställa vissa serverdelsinställningar baserat på var ni tänker implementera Analytics.
+Property type helps Adobe determine some backend settings based on where you intend to implement Analytics.
 
-* **Webbplats**: Om ni tänker implementera Adobe Analytics bara för en webbplats.
-* **Inbyggd mobilapp**: Om ni tänker implementera Adobe Analytics bara för en mobilapp.
-* **Båda**: Om den här rapportsviten innehåller data för både en webbplats och en mobilapp.
+* **Website**: If you intend to implement Adobe Analytics just for a website.
+* **Native Mobile App**: If you intend to implement Adobe Analytics just for a mobile app.
+* **Both**: If this report suite contains data for both a website and a mobile app.
 
-### Branscher
+### Industries
 
-Ange din primära affärsmodell. Den här inställningen hjälper Adobe att förkonfigurera vissa variabelnamn och inställningar baserat på din primära affärsmodell.
+Specify your primary business model. This setting helps Adobe pre-configure some variable names and settings based on your primary business model.
 
-### Datalager
+### Data layer
 
-Ett [datalager](data-layer.md) är ett JavaScript-objekt som organiserar alla variabler som används i implementeringen till en enda användbar plats. Mer information finns i [Datalager](data-layer.md) .
+A [Data layer](data-layer.md) is a JavaScript object that organizes all variables used in your implementation into a single helpful location. See [Data layers](data-layer.md) for more information.
 
-### Datalager
+### Data repository
 
-Ge rapportsviten ett eget namn. Ditt rapportsvit-ID (RSID) genereras automatiskt baserat på det egna namnet och inloggningsföretaget.
+Give your report suite a friendly name. Your report suite ID (RSID) automatically generates based on the friendly name and login company.
 
-### Tidszon
+### Time zone
 
-Kontrollera att Adobe har identifierat rätt tidszon för rapportsviten.
+Verify that Adobe detected the correct time zone for the report suite.
 
-### Beräknade sidvisningar per dag
+### Estimated page views per day
 
-Uppskatta hur mycket trafik din webbplats eller app tar per dag. Med den här informationen kan Adobe allokera rätt mängd bearbetningsresurser till din rapportsvit.
+Estimate how much traffic your website or app gets per day. This information allows Adobe to allocate the correct amount of processing resources to your report suite.
 
-### Basvaluta
+### Base currency
 
-Avgör vilken valuta som rapportsviten lagrar monetära värden i.
+Determine what currency the report suite stores monetary values in.
 
->[!IMPORTANT] Se till att du anger rätt valuta, särskilt om du har rapporteringskrav för intäkter. Det är svårt att ändra basvalutan när datainsamlingen har startat.
+>[!IMPORTANT] Make sure you state the correct currency, especially if you have reporting requirements around revenue. It is difficult to change base currency after data collection begins.
 
-## Implementeringsresurser
+## Implementation resources
 
-När rapportsviten har skapats har du ett av två alternativ för att fortsätta implementeringen:
+After the report suite is created, you have one of two options to proceed with your implementation:
 
-* **Gå till Adobe Experience Platform Launch**: Länkar dig till [launch.adobe.com](https://launch.adobe.com) för att konfigurera implementeringen och hämta distributionskoden. Se [Implementera med Launch](../launch/overview.md). Adobe rekommenderar att du använder Launch i de flesta fall.
-* **Ladda ned implementeringskod**: Tillhandahåller en direktlänk för att hämta JavaScript-filer för manuell JavaScript-implementering. Se [AppMeasurement for JavaScript](../js/overview.md).
+* **Go to Adobe Experience Platform Launch**: Links you to [launch.adobe.com](https://launch.adobe.com) to configure your implementation and download deploy code. See [Implement with Launch](../launch/overview.md). Adobe recommends using Launch in most cases.
+* **Download implementation code**: Provides a direct link to download JavaScript files for a manual JavaScript implementation. See [AppMeasurement for JavaScript](../js/overview.md). -->
