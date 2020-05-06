@@ -2,7 +2,10 @@
 title: Adobe Analytics-instrumentpaneler - översikt
 description: Produktdokumentation och självhjälp för Adobe Analytics-paneler
 translation-type: tm+mt
-source-git-commit: 7c1f35d92bfaccaf4d2bb7e16e93314d739545d3
+source-git-commit: b3772b96e02f6e3c6fb4f6c4a9f5df04512491e3
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 0%
 
 ---
 
@@ -11,12 +14,12 @@ source-git-commit: 7c1f35d92bfaccaf4d2bb7e16e93314d739545d3
 
 >[!IMPORTANT]
 >
->Adobe Analytics-instrumentpaneler är inte tillgängliga och är endast tillgängliga för betatestning bland inbjudna kunder. Den här dokumentationen är avsedd >endast för betaanvändare och representerar inte funktionens fullständiga funktionalitet. Om du är intresserad av att bli en betaanvändare för denna >funktion, kontakta Ashok Gorrepati (gorrepati@adobe.com).
+>Adobe Analytics-instrumentpaneler är inte tillgängliga och är endast tillgängliga för betatestning bland inbjudna kunder. Den här dokumentationen är endast avsedd för betaanvändare och representerar inte funktionens fullständiga funktionalitet. Om du vill bli en betaanvändare för den här funktionen kontaktar du Ashok Gorrepati (gorrepati@adobe.com).
 
-Adobe Analytics-instrumentpaneler ger dig alltid insikter från Adobe Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS- och Android-operativsystem.
+**[!UICONTROL Adobe Analytics dashboards]** kan ni alltid få insikter från Adobe Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS- och Android-operativsystem.
 
-Följande betadokumentation är tillgänglig för kontrollpaneler:
+Följande betatestningsdokumentation finns för [!UICONTROL dashboards]:
 
-* [Kuratorguide](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/curator.html): Den här guiden är avsedd att hjälpa datakonstruktörer att konfigurera styrkort för sina chefsanvändare på kontrollpaneler. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att inrätta styrkort.
+* [Kuratorguide](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/curator.html): Den här guiden är avsedd att hjälpa datakonstruktörer att konfigurera styrkort för sina chefsanvändare [!UICONTROL dashboards]. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att inrätta styrkort.
 
-* [Snabbstartsguide](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/executive.html): Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort på kontrollpaneler. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
+* [Snabbstartsguide](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/executive.html): Handboken är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort [!UICONTROL dashboards]. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
