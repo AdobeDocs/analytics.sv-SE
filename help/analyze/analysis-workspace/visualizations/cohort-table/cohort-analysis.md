@@ -4,7 +4,10 @@ title: Vad är kohortanalys?
 topic: Reports and analytics
 uuid: 39a83f3a-15d1-41d7-bcdd-50c22aed8f1c
 translation-type: tm+mt
-source-git-commit: 99232c5bce94cfc55b9f01080555cb8e545442e9
+source-git-commit: 5d4c0ae58dfb7c54b00f801aebe898f790432903
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Kohortanalys är tillgängligt för alla Analytics-kunder med åtkomstbehörighe
 
 >[!IMPORTANT]
 >
->Kohortanalys stöder inte beräknade värden.
+>Kohortanalys stöder inte icke-segmenterbara mått, som beräknade värden, icke-heltalsvärden eller [!UICONTROL Occurrences]. Endast mätvärden som kan användas i segment kan användas i kohortanalyser, och de kan bara ökas med 1 åt gången.
 
 ## Funktioner för kohortanalyser
 
