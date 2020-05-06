@@ -2,7 +2,10 @@
 description: Verktyget Quick Insights Builder är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
 title: Quick Insights builder
 translation-type: tm+mt
-source-git-commit: 7fbeac0488fbe9b3d10d7c1242f31250f1c7dc16
+source-git-commit: 5d4c0ae58dfb7c54b00f801aebe898f790432903
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -42,9 +45,11 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 ## Kom igång med Quick Insights
 
 1. Logga in på Adobe Analytics med de inloggningsuppgifter du har fått.
-1. Gå till [!UICONTROL Workspace] och klicka **[!UICONTROL Create New Project]** och klicka sedan **[!UICONTROL Quick Insights]**.
+1. Gå till [!UICONTROL Workspace] och klicka **[!UICONTROL Create New Project]** och klicka sedan **[!UICONTROL Quick Insights]**. (Du kan även öppna den här panelen från menyn i den vänstra listen **[!UICONTROL Panel]** .)
 
    ![](assets/qibuilder.png)
+
+   ![](assets/qi-panel.png)
 
 1. När du börjar ska du gå igenom den korta självstudiekursen som lär ut några av grunderna [!UICONTROL Quick Insights panel] . Du kan också klicka för att **[!UICONTROL Skip Tutorial]**.
 1. Markera dina byggstenar (kallas även komponenter): dimensioner (orange), mått (grönt), segment (blått) eller datumintervall (lila) Du måste välja minst en dimension och ett mått för att en tabell ska skapas automatiskt.
@@ -66,13 +71,15 @@ Nedan följer några grundläggande termer som du måste känna till. Varje data
 
 1. (Valfritt) Detaljera mått och visa dimensionsobjekt genom att klicka på > högerpilen bredvid dimensionen.
 
-1. Försök att lägga till fler förbättringar enligt beskrivningen nedan under Andra användbara alternativ.
+1. Försök att lägga till fler förbättringar enligt beskrivningen nedan under Fler tips.
 
-## Andra användbara alternativ
+1. Spara projektet genom att klicka **[!UICONTROL Project > Save]**.
+
+## Fler tips
 
 Andra användbara tips visas i [!UICONTROL Quick Insights Builder], vissa beroende på den senaste åtgärden.
 
-* Börja med att slutföra **[!UICONTROL More tips]** självstudiekursen: Öppna den via hjälpen (?) -ikonen bredvid [!UICONTROL Quick Insights Panel] titeln.
+* Börja med att slutföra **[!UICONTROL More tips]** självstudiekursen: Öppna den via hjälpen (?) -ikonen bredvid [!UICONTROL Quick Insights] titeln. Den här självstudiekursen visar upp till 24 timmar efter att du har skapat ett projekt med minst en dimension och ett mått.
 
    ![](assets/qibuilder4.png)
 
@@ -87,6 +94,10 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder], vissa beroen
 * **Lägg till fler segment**: Du kan lägga till upp till två segment till genom att använda operatorerna AND eller OR för att lägga till dem i tabellen. Se vad som händer med tabellen när du lägger till mobilanvändare eller lojala besökare. De står bredvid varandra, ovanför mätvärdena. Om du lade till mobila användare och lojala besökare skulle du se resultat från båda segmenten tillsammans, och de skulle staplas ovanpå varandra i tabellen.
 
    ![](assets/qibuilder7.png)
+
+## Öppna/läs in ett projekt för snabbinsikter
+
+
 
 ## Kända begränsningar
 
