@@ -2,7 +2,10 @@
 title: Övergång från en analysplattform från tredje part till Adobe Analytics
 description: Lär dig viktiga koncept för att få rapporter som riktar sig till användare som är bekanta med andra plattformar, som Google Analytics.
 translation-type: tm+mt
-source-git-commit: 757cea821bae49fabe819a65b921797070d328fc
+source-git-commit: 3211598c2ff43493b329a9be4fb6877ae29cf08b
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ I Adobe Analytics finns det två sätt att hämta grundläggande rapporter efter
 * **Rapporter och analyser** är den historiska metoden för att få fram grundläggande rapporter. Den vänstra menyn innehåller en lista med prefabricerade rapporter, och gör att användaren kan navigera till en rapport som han/hon vill ha och hämta data. Segment och mätvärden kan ge ytterligare anpassningar. Användare som har erfarenhet av Google Analytics-rapporter kanske tycker att den här layouten är bekant.
 * **Analysis Workspace** är den metod som för närvarande rekommenderas för att hämta de flesta rapporter. Med den vänstra menyn kan användaren dra och släppa komponenter för att skapa en egen rapport. Det ger mycket större frihet att uppfylla de exakta rapporteringsbehoven. Användare som har erfarenhet av att skapa kontrollpaneler för Google Analytics och anpassade rapporter kanske tycker att den här layouten är bekant.
 
-De flesta rapporter kan skapas i både rapport- och analysarbetsytan. Vissa rapporter kan dock bara hämtas på den ena plattformen eller den andra. I de flesta fall rekommenderar Adobe att du använder Analysis Workspace, såvida inte en viss funktion bara finns i Rapporter och analyser.
+De flesta rapporter kan skapas i både [!UICONTROL Reports & Analytics] och [!UICONTROL Analysis Workspace]. Vissa rapporter kan dock bara hämtas på den ena plattformen eller den andra. I de flesta fall rekommenderar Adobe att du använder, såvida inte en viss funktion bara finns i [!UICONTROL Analysis Workspace][!UICONTROL Reports & Analytics].
 
 ## Rekommenderad utbildningsväg
 
@@ -26,7 +29,7 @@ Adobe rekommenderar att du börjar med grunderna i att hämta rapportdata:
 
 * [Skapa en grundläggande rapport i Analysis Workspace för GA-användare](reports/create-report.md)
 
-När du känner till komponenter i Analysis Workspace kan du lära dig att återskapa de flesta rapporter med rätt komponenter.
+När du känner till komponenterna i [!UICONTROL Analysis Workspace]kan du lära dig att återskapa de flesta rapporter med rätt komponenter.
 
 * [Skapa realtidsrapporter i Adobe Analytics](reports/realtime-reports.md)
 * [Skapa målgruppsrapporter i Adobe Analytics](reports/audience-reports.md)
