@@ -2,7 +2,10 @@
 title: Hjälp för Analytics-komponenter
 description: 'null'
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d4c0ae58dfb7c54b00f801aebe898f790432903
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +19,7 @@ Analyskomponenterna hjälper er att finjustera och förbättra dataanalysen. Kom
 * **Segmentering:** Fokusera på en delmängd av era data.
 * **Beräknade mått:** Använd enkla formler för att kombinera mätvärden eller avancerade funktioner för statistisk analys.
 * **Virtuella rapportsviter:** Skapa en virtuell silo med data baserat på en rapportserie. Möjlighet att rensa eller segmentera data för en bättre användarupplevelse. Vissa funktioner kan bara användas i virtuella rapportsviter.
+* **Enhetsövergripande analys**: Med en särskild typ av virtuellt rapportpaket kan du konfigurera enhetsövergripande analys.
 * **Varningar:** Få meddelanden när tidsdata överskrider eller under ett tröskelvärde.
 * **Klassificeringar:** Ordna om och gruppera dimensionerna för att få ytterligare insikter.
 * **Variabler:** En referensguide till alla dimensioner och mätvärden som är tillgängliga vid rapportering.
@@ -33,7 +37,7 @@ Analyskomponenterna hjälper er att finjustera och förbättra dataanalysen. Kom
 
 ## Viktiga analysresurser
 
-* [Kontakta kundtjänst](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
 * [Analysforum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
