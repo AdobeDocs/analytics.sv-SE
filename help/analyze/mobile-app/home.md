@@ -2,7 +2,7 @@
 title: Adobe Analytics-instrumentpaneler - översikt
 description: Produktdokumentation och självhjälp för Adobe Analytics-paneler
 translation-type: tm+mt
-source-git-commit: b3772b96e02f6e3c6fb4f6c4a9f5df04512491e3
+source-git-commit: d4073fcfaabda669d0705e0adf2c911e8029b846
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe Analytics-instrumentpaneler är inte tillgängliga och är endast tillgängliga för betatestning bland inbjudna kunder. Den här dokumentationen är endast avsedd för betaanvändare och representerar inte funktionens fullständiga funktionalitet. Om du vill bli en betaanvändare för den här funktionen kontaktar du Ashok Gorrepati (gorrepati@adobe.com).
+>Adobe Analytics-instrumentpaneler är inte tillgängliga och är endast tillgängliga för betatestning bland inbjudna kunder. Den här dokumentationen är endast avsedd för betaanvändare och representerar inte funktionens fullständiga funktionalitet. Om du vill bli en betaanvändare för den här funktionen kontaktar du Ashok Gorrepati (gorrepat@adobe.com).
 
 **[!UICONTROL Adobe Analytics dashboards]** kan ni alltid få insikter från Adobe Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS- och Android-operativsystem.
 
