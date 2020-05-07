@@ -191,6 +191,7 @@ Under betaversionen, och innan appen visas för allmänheten, kan du styra vem s
    3. När du har installerat Testflight-appen letar du reda på och installerar Adobe Analytics-kontrollpanelerna inifrån Testflight enligt nedan:
 
       ![Testflightskärm](assets/testflight2.png)
+
    **För chefsanvändare på Android:**
 
    1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **dashboards**):
@@ -206,6 +207,7 @@ Under betaversionen, och innan appen visas för allmänheten, kan du styra vem s
 
    3. Hämta och installera programmet.
 När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-inloggningsuppgifter. vi stöder både Adobe och Enterprise/Federated ID.
+
    ![App - välkomstskärm](assets/welcome.png)
 
 2. Hjälp dem komma åt styrkortet. När chefsanvändare har loggat in i appen visas skärmen **Välj ett företag** . På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör. Så här hjälper du dem att komma till styrkortet:
@@ -213,6 +215,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
    * Tryck på namnet på det inloggningsföretag eller den Experience Cloud-organisation som gäller för det styrkort som du delade. Styrkortslistan visar sedan alla styrkort som har delats med den verkställande direktören under det inloggningsföretaget.
    * Hjälp dem att sortera listan efter **Senast ändrad**, om tillämpligt.
    * Tryck på namnet på styrkortet för att visa det.
+
    ![Välj ett företag](assets/accesscard.png)
 
    Obs! Om den verkställande användaren loggar in och ser ett meddelande om att inget har delats:
@@ -221,6 +224,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
    * Styrkortet kanske inte har delats med den verkställande användaren
 
       ![Inget delat](assets/nothing.png)
+
    Kontrollera att chefsanvändaren kan logga in på rätt Analytics-instans och att styrkortet har delats.
 
 3. Förklara för den verkställande användaren hur rutor visas i de styrkort som du delar.
@@ -256,6 +260,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
    1. Tryck på användarikonen i appskärmens övre högra hörn.
    2. Tryck på alternativet **Feedback** på skärmen **Mitt konto** .
    3. Tryck för att visa alternativen för att lämna feedback.
+
    ![Lämna feedback](assets/feedback.png)
    ![Alternativ för feedback](assets/feedback_option.png)
 
