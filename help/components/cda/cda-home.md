@@ -2,7 +2,10 @@
 title: Enhetsövergripande analys
 description: Enhetsövergripande analys förändrar era data från att vara enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 40d4dae0c54b8a71325846ae7f1c02947f9d36ea
+workflow-type: tm+mt
+source-wordcount: '1029'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ Enhetsövergripande analys är en banbrytande och robust funktion, men har begr�
 * Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar. Mer information om dessa begränsningar finns i [Virtuella rapportsviter](../vrs/vrs-about.md) och [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md) .
 * 1.4-API:t stöds inte. Power BI-anslutningar och Report Builder är båda beroende av 1.4-API:t och är därför inte kompatibla med CDA.
 * Om din organisation använder det privata diagrammet tar det upp till 24 timmar för nya enheter att sy ihop.
-* Nya enheter som besöker webbplatsen kan ta upp till två veckor att bearbetas av Co-op Graph. Symbolnivån i CDA under de senaste två veckorna är vanligtvis lägre än för datumintervall som är äldre än två veckor. Adobe planerar att förbättra Co-op-diagrammet till ett dagligt uppdaterat diagram i framtiden.
+* Nya enheter som besöker webbplatsen kan ta upp till två veckor att bearbetas av Co-op Graph. Symbolnivån i CDA under de senaste två veckorna är vanligtvis lägre än för datumintervall som är äldre än två veckor.
 * Historiska data i den virtuella rapportsviten ändras baserat på hur Adobe identifierar och sammanfogar enheter. Data i källrapportsviten ändras inte.
 
 När organisationen har uppfyllt alla krav och förstått begränsningarna kan ni börja [konfigurera Cross-Device Analytics](cda-setup.md).
