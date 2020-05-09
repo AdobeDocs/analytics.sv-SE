@@ -2,7 +2,10 @@
 title: currencyCode
 desciption: For eCommerce sites, set the currency the page deals in.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: fedece99d8d9fdaf4eb9ba5e997c7ee2f378df4c
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 0%
 
 ---
 
@@ -29,6 +32,16 @@ Valutakod är ett fält under [!UICONTROL General] dragspelet när du konfigurer
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
 4. Expandera dragspelsfliken, som visar [!UICONTROL General] [!UICONTROL Currency Code] fältet.
+
+Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
+
+## Valutakod i Adobe Experience Platform Mobile SDK
+
+Valutakoden skickas till Adobe Experience Platform Mobile SDK:er via kontextdatavariabler i Adobe Analytics-tillägget.
+
+1. Ange valutakoden i en kontextdatavariabel under antingen `trackState` eller `trackAction`.
+2. Skapa en bearbetningsregel i Adobe Analytics Admin Console för rapportsviten. Ställ in regeln så att variabeln Valutakod skrivs över.
+3. Skicka valutakoden till `products` variabeln i anropet till `trackState` eller `trackAction`.
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
 
