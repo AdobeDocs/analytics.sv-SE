@@ -2,7 +2,10 @@
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
 translation-type: tm+mt
-source-git-commit: f4fbe120e15d28da21b51849ff374ca4e2136ec7
+source-git-commit: 06b9ac8ddbfb0398341a2ab5656237e3520a8612
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +20,9 @@ Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som har gjo
 
 Dessa extra datum beror på besökarens rapportfönster. Mer information finns i [Data som visas utanför rapportfönstret](https://helpx.adobe.com/analytics/kb/data-appearing-outside-reporting-window.html) i KB för analyser. Adobe planerar att filtrera bort de här extra raderna i en kommande release.
 
-**Kan jag använda ett anpassat uppslagsfönster med mina attribueringsmodeller?**
-
-Attributionsmodeller är för närvarande beroende av antingen en besökare eller ett besöksfönster. Båda de här sökfönstren kan justeras genom att antingen ändra rapporteringsdatumintervallet (för besökaruppslag) eller genom att använda en anpassad besöksdefinition som en del av virtuella rapportsviter. Mer information finns i [Tidsbearbetning](../../../../components/vrs/vrs-report-time-processing.md) för rapport.
-
 **När ska jag använda ett besöks- eller besöksattribueringsbesök?**
 
-Vilken attribueringssökning du väljer beror på ditt användningsfall. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa ett virtuellt rapportpaket med en längre besöksdefinition är också en potentiell lösning.
+Vilken attribueringslookback du väljer beror på ditt användningssätt. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa ett virtuellt rapportpaket med en längre besöksdefinition är också en potentiell lösning.
 
 **Hur är props och eVars jämfört när man använder attribuering?**
 
