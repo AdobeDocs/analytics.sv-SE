@@ -3,9 +3,9 @@ description: 'null'
 title: Översikt över panelen Attribut
 uuid: bb345642-4f45-4fb8-82d0-803248dd52ea
 translation-type: tm+mt
-source-git-commit: 06b9ac8ddbfb0398341a2ab5656237e3520a8612
+source-git-commit: ae3fecc4b76badf82a5b161732e380a46bbba298
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Attributpanelen är en IQ-funktion för [attribuering](../../attribution-iq.md) 
 | ![Egen](assets/custom.png) | Egen | Gör att du kan ange de vikter du vill ge de första beröringspunkterna, de sista beröringspunkterna och eventuella mellanliggande beröringspunkter. De angivna värdena normaliseras till 100 % även om de anpassade siffrorna inte läggs till i 100. Vid konvertering med en enda kontaktpunkt får du 100 % kredit. För interaktioner med två beröringspunkter ignoreras parametern middle. Den första och sista beröringspunkten normaliseras sedan till 100 % och krediteringen tilldelas därefter. | Den här modellen är perfekt för dem som vill ha fullständig kontroll över sin attribueringsmodell och har särskilda behov som andra attribueringsmodeller inte uppfyller. |
 | ![Tidsminskning](assets/time_decay.png) | Time-Decay | Följer och exponentiell minskning med en anpassad halveringsparameter, där standardvärdet är 7 dagar. Vikten för varje kanal beror på hur lång tid det tar mellan öppnandet av kontaktpunkten och den slutliga konverteringen. Formeln som används för att bestämma kredit är `2^(-t/halflife)`, där `t` är tiden mellan en kontaktpunkt och en konvertering. Alla beröringspunkter normaliseras sedan till 100 %. | Perfekt för team som regelbundet genomför videoreklam eller marknadsför mot händelser med ett förutbestämt datum. Ju längre en konvertering sker efter en marknadsföringshändelse, desto mindre kredit ges. |
 | ![deltagande](assets/participation.png) | deltagande | Alla unika kontaktpunkter får 100 % beröm. Det totala antalet konverteringar är uppblåst jämfört med andra attribueringsmodeller. Deltagande duplicerar kanaler som ses flera gånger. | Utmärkt för att förstå vilka kunder som ofta exponeras för en viss interaktion. Medieorganisationer använder ofta den här modellen för att beräkna innehållets hastighet. Butiksorganisationer använder ofta den här modellen för att förstå vilka delar av deras sajt som är avgörande för konverteringen. |
-| ![Algoritmisk](assets/algorithmic.png) | [Algoritmisk](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/algorithmic.md) | Använder statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. | Användbar för att undvika gissningar och krångel när du väljer rätt attribueringsmodell för ditt företag. |
+| ![Algoritmisk](assets/algorithmic.png) | [Algoritmisk](/help/analyze/analysis-workspace/c-panels/attribution/algorithmic.md) | (Obs! Algoritmisk attribuering är för närvarande i begränsad testning.) Använder statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. | Användbar för att undvika gissningar och krångel när du väljer rätt attribueringsmodell för ditt företag. |
 
 ## Sökfönster
 
@@ -44,7 +44,7 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 
 * **Sökfönster:** Alla besök utförs fram till den 1:e i månaden av det aktuella datumintervallet. Besöksfönster är breda, eftersom de kan omfatta många besök. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september.
 
-* **Anpassat uppslagsfönster:** Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet upp till maximalt 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
+* **Anpassat uppslagsfönster:** (Obs! Anpassat uppslagsfönster har för närvarande begränsad testning.) Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet upp till maximalt 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
 
 ## Exempel
 
@@ -54,7 +54,7 @@ Titta på följande exempel:
 2. Den 18 september kommer besökaren till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
 3. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
 
-Beroende på ditt sökfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
+Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
 
 * Med **första beröring** och ett **besöksfönster** tittar attribueringen bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
 * Med hjälp av **första beröring** och ett fönster **för** besökarsökning tittar attribueringen på alla tre besöken. Betalsökning var först, så den får 100 % rabatt på 50 USD.
