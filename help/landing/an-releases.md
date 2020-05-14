@@ -1,24 +1,24 @@
 ---
 description: Beskriver den nya strategin för kontinuerlig funktionsrelease för Adobe Analytics
-title: Adobe Analytics - strategi för funktionsreleaser
+title: Funktionsreleaser för Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 0b00405e9e27a427a85b0f4a0d970671ada4aa67
+source-git-commit: dcca8559c9e730c9e04981d69068786878062561
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Analytics - strategi för funktionsreleaser
+# Funktionsreleaser för Adobe Analytics
 
-Historiskt sett följde Adobe Analytics-releaser ett fast månadsschema. Från och med april 2020 är Adobe Analytics på väg mot en kontinuerlig leveransmodell som möjliggör en mer skalbar, fasad strategi för driftsättning av funktioner.
+Historiskt sett följde Adobe Analytics-releaser ett fast månadsschema. Från och med april 2020 har Adobe Analytics övergått till en kontinuerlig leveransmodell som möjliggör en mer skalbar, fasad strategi för driftsättning av funktioner.
 
 ## Frisläppningsstrategi
 
 [!UICONTROL Analysis Workspace] använder funktionsflaggor (kallas även&quot;växlar&quot;) för att styra synligheten för nya funktioner, vilket möjliggör kontrollerad skaltestning före den fullständiga versionen. Den här versionsstrategin innehåller följande faser:
 
-* **Release to Production (RTP)**: Koden släpps upp i produktionen med funktionssynlighet inaktiverat i Analysis Workspace. **Obs**: För närvarande kan funktionen vara tillgänglig i 2.0 Analytics API.
+* **Release to Production (RTP)**: Koden släpps upp i produktionen med funktionssynlighet inaktiverat i Analysis Workspace. **Obs**: På RTP kan funktionen vara tillgänglig i 2.0 Analytics API.
 
 * **Begränsad testning**: En stegvis release börjar med att interna Adobe-användare testar. Versionen skalas sedan från 0 % till 100 % av tillgängligheten under ett par månader. Den fasade utrullningen sker på Experience Cloud-organisationsnivå, så att alla berättigade användare i en organisation får samma upplevelse.
 
