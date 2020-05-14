@@ -1,19 +1,22 @@
 ---
 product: analytics
 audience: all
-user-guide-title: Analysdokumentation
+user-guide-title: Adobe Analytics-dokumentation
 user-guide-url: /content/help/en/analytics/landing/home.html
 translation-type: tm+mt
-source-git-commit: dcb69257fd29686ae346cf4d0cf50ed041ebcbbc
+source-git-commit: aaeeeeb2598359f5e4c0e2323ae5f9344edb0f8d
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 1%
 
 ---
 
 
-# Analysdokumentation {#landing}
+# Adobe Analytics-dokumentation {#landing}
 
 * [Startsida](home.md)
-* [Viktiga begrepp i analyser](an-key-concepts.md)
-* [Handbok för analysverktyg](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)
+* [Viktiga begrepp i Adobe Analytics](an-key-concepts.md)
+* [Verktygshandbok](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)
 * [Administratörshandbok](https://docs.adobe.com/content/help/en/analytics/admin/home.html)
 * [Komponentguide](https://docs.adobe.com/content/help/en/analytics/components/home.html)
 * [Exportguide](https://docs.adobe.com/content/help/en/analytics/export/home.html)
@@ -23,17 +26,7 @@ source-git-commit: dcb69257fd29686ae346cf4d0cf50ed041ebcbbc
 * [Technotes guide](https://docs.adobe.com/content/help/en/analytics/technotes/home.html)
 * [Media Analytics - guide](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 * [Handbok för Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html)
-* [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
-* [Dokumentationsuppdateringar](doc-updates.md)
+* [Handbok för kundreseanalys](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
+* [Uppdateringar av analysdokumentation](doc-updates.md)
 * [Versionsinformation](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
-
-<!--
-+ Analytics Guides{#analytics-guides}
-  * [Analytics Analyze Guide](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)
-  * [Admin Guide](https://docs.adobe.com/content/help/en/analytics/admin/home.html)
-  * [Components Guide](https://docs.adobe.com/content/help/en/analytics/components/home.html)
-  * [Export Guide](https://docs.adobe.com/content/help/en/analytics/export/home.html)
-  * [Implementation Guide](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)
-  * [Import Guide](https://docs.adobe.com/content/help/en/analytics/import/home.html)
-  * [Integration Guide](https://docs.adobe.com/content/help/en/analytics/integration/home.html)
--->
+* [Adobe Analytics - strategi för funktionsreleaser](an-releases.md)
