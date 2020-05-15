@@ -3,7 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Betydande uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 translation-type: tm+mt
-source-git-commit: c2194a6cf7e381ebeab05e273c9b64816552d744
+source-git-commit: 816a83a3911250460e26fac9469f604b7616560a
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 1%
 
 ---
 
@@ -21,13 +24,13 @@ Innehållsuppdateringar för Adobe Analytics-dokumentationen som angetts sedan j
 
 | Datum | Beskrivning |
 |---|---|
-| 28 april 2020 | Dokumentation för [innehållets](https://docs.adobe.com/content/help/en/analytics/components/variables/metrics/metrics-content-velocity.html) hastighetsmått har lagts till. |
-| 12 mars 2020 | Lagt till uppdateringar av [publiceringssegment i Experience Cloud](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html). |
+| 28 april 2020 | Dokumentation för [innehållets](/help/components/c-variables/c-metrics/metrics-content-velocity.md) hastighetsmått har lagts till. |
+| 12 mars 2020 | Lagt till uppdateringar av [publiceringssegment i Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-publish.md). |
 | 12 mars 2020 | Uppdateringar av CDA-stygn. |
 | 27 februari 2020 | Lagt till dokumentation för [Adobe Analytics Labs](https://docs.adobe.com/content/help/en/analytics/analyze/tech-previews/overview.html). |
 | 25 februari 2020 | Tillagd [`useLinkTrackSessionStorage`](/help/implement/vars/config-vars/uselinktracksessionstorage.md) variabel. |
 | 18 februari 2020 | Tillagd [`writeSecureCookies`](/help/implement/vars/config-vars/writesecurecookies.md) variabel. |
-| 12 februari 2020 | Uppdateringar och omorganisering av dokumentationen för [marknadsföringskanaler](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/mc-get-started/c-getting-started-mchannel.html) . |
+| 12 februari 2020 | Uppdateringar och omorganisering av dokumentationen för [marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) . |
 | 7 februari 2020 | Uppdateringar av [konfiguration av enhetsövergripande analyser](../components/cda/cda-setup.md) och [vanliga frågor och svar](../components/cda/cda-faq.md) |
 | 4 februari 2020 | Fullständig omskrivning av användarhandboken för [implementeringen](../implement/home.md). |
 | 22 januari 2020 | Uppdaterad sida för friformstabell som innehåller information om den nya [friformstabellen](/help/analyze/analysis-workspace/visualizations/freeform-table.md). |
