@@ -4,7 +4,10 @@ title: Bots
 topic: Reports
 uuid: 9909ce3b-41a4-4ce8-afe9-02cb46f31d64
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 703f6e62e72cb7ab65759a004ed50e73f574c4d2
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 0%
 
 ---
 
@@ -17,5 +20,5 @@ Börjorna filtreras baserat på användaragenten eller IP-adressen. Vi erbjuder 
 
 >[!MORELIKETHIS]
 >
->* [Punktregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/bot-rules/bot-rules.html)
+>* [Punktregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/bot-removal/bot-rules.html)
 
