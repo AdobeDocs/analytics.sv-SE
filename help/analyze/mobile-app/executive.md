@@ -2,32 +2,34 @@
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
 title: Chefshandbok för Adobe Analytics-instrumentpaneler
 translation-type: tm+mt
-source-git-commit: abb781413559c2da872ecfe3dbc9eb6df1cdbb74
+source-git-commit: d78bb56cb199585236b7193b5bd220818b806194
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 0%
 
 ---
 
 
 # Adobe Analytics-paneler: snabbstartsguide för företagsanvändare
 
->[!IMPORTANT]
->
->Adobe Analytics-instrumentpaneler är inte tillgängliga och är endast tillgängliga för betatestning bland inbjudna kunder. Den här dokumentationen är avsedd >endast för betaanvändare och representerar inte funktionens fullständiga funktionalitet. Om du är intresserad av att bli en betaanvändare för denna >funktion, kontakta Ashok Gorrepati (gorrepati@adobe.com).
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics-kontrollpaneler.
+
 
 ## Introduktion
 
 Adobe Analytics-instrumentpaneler ger dig alltid insikter från Adobe Analytics.  Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Kontrollpaneler stöds på både iOS- och Android-operativsystem.
 
-## Om den här guiden
+## Mer om den här guiden
 
 Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrkort på kontrollpaneler i Analytics. Med appen kan chefsanvändare snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter.
 
 ## Ordlista
 
-| Villkor | Definition |
+| Term | Definition |
 |--- |--- |
 | Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från Analytics på en mobil enhet |
 | Kurator | Datalitterera persona som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
-| Kuration | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
+| Insamling | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
 | Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
 | Platta | En återgivning för ett mätresultat i en styrkortsvy |
 | Uppdelning | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
