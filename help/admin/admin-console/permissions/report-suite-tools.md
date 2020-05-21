@@ -1,6 +1,9 @@
 ---
-source-git-commit: d8f2458e7bae596dbabc8dab33ea5d2881047566
+source-git-commit: 4ca2e15575e66107ec5947c9903a01565f74e264
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '650'
+ht-degree: 1%
 
 ---
 # Report Suite-verktyg listade i produktprofilbehörigheter
@@ -9,7 +12,7 @@ Använd den här sidan om du vill förstå alla behörighetsobjekt under Report 
 
 | Behörighetsobjekt för Report Suite-verktyg | Beskrivning |
 |------|------|
-| Datalager | Används inte. Använd &#39;Rapport för anpassat datalager&#39; i stället. |
+| Data Warehouse | Används inte. Använd &#39;Rapport för anpassat datalager&#39; i stället. |
 | Site Catalyst | Används inte. Använd Analysis Workspace Access i stället. |
 | Rapportsviter (läs) | Används inte. |
 | Rapportsviter (skriv) | Används inte. |
@@ -31,9 +34,9 @@ Använd den här sidan om du vill förstå alla behörighetsobjekt under Report 
 | Success Events | Ger åtkomst till Conversion > Success Events i Report Suite Manager. |
 | Listvariabler | Ger åtkomst till Conversion > List Variables i Report Suite Manager. |
 | Standardmått | Ger åtkomst till Inställningar > Standardvärden i Report Suite Manager för enskilda rapportsviter. |
-| Bearbetar regler | Ger åtkomst till Allmänt > Bearbetningsregler och Allmänt > Punktregler i Report Suite Manager. |
+| Bearbetningsregler | Ger åtkomst till Allmänt > Bearbetningsregler och Allmänt > Punktregler i Report Suite Manager. |
 | Konfiguration av annonsanalys | Används inte. |
-| Analysidentifiering | Ger åtkomst till avvikelseidentifiering på arbetsytan för analyser. |
+| Avvikelseidentifiering | Ger åtkomst till avvikelseidentifiering på arbetsytan för analyser. |
 | Bidragsanalys | Ger åtkomst till högerklicksmenyn Kör bidragsanalys på Analysis Workspace. |
 | Kanalrapport | Ger åtkomst till marknadsföringskanalerna > Kanalöversiktsrapport i rapporter och analyser. |
 | RealTime Report | Ger åtkomst till Site Metrics > Real-Time i Reports &amp; Analytics. Använd behörighetsobjektet Konfiguration av realtidsrapport om du vill bevilja åtkomst för att konfigurera rapporten. |
@@ -59,3 +62,4 @@ Använd den här sidan om du vill förstå alla behörighetsobjekt under Report 
 | Användningssammanfattningsrapport | Används inte. |
 | Webbresurser | Används inte. |
 | Social | Används inte. |
+| API för datareparation | Ger åtkomst till API:t för datareparation (framtida version) |
