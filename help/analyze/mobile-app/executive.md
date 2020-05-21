@@ -4,7 +4,7 @@ title: Chefshandbok för Adobe Analytics-instrumentpaneler
 translation-type: tm+mt
 source-git-commit: a388a66b431d9652a4bc436a9b923157e129b02c
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Analytics-paneler: snabbstartsguide för företagsanvändare
 
-Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics-kontrollpaneler.
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics-kontrollpaneler. En video som visar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://youtu.be/QXqQ_PkArbA).
 
 
 ## Introduktion
@@ -53,15 +53,15 @@ Följ stegen i operativsystemet på enheten för att hämta och installera progr
 
 **För företagsledare på iOS:**
 
-* Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-   [iOS-länk](https://apple.co/2zXq0aN)
+[iOS-länk](https://apple.co/2zXq0aN)
 
 **För chefsanvändare på Android:**
 
-* Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-   [Android](https://bit.ly/2LM38Oo)
+[Android-länk](https://bit.ly/2LM38Oo)
 
 När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-autentiseringsuppgifter.
 
@@ -77,30 +77,35 @@ Så här använder du kontrollpaneler:
 
 2. Välj ett företag. När du har loggat in på kontrollpaneler visas skärmen **Välj ett företag** . På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
 
-3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort du vill visa.
+3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort som du vill visa.
 
    ![Välj ett företag](assets/nextseq.png)
 
    Om du loggar in och ser ett meddelande som säger att inget har delats kontrollerar du följande med markören:
 
-   Du kan logga in på rätt Analytics-instans. Styrkortet har delats med dig
-
+   * Du kan logga in på rätt Analytics-instans
+   * Styrkortet har delats med dig
    ![Inget delat](assets/nothing.png)
 
-4. Granska hur rutorna visas i styrkortet (det här styrkortet visas i mörkt läge).
+4. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). (mer information finns i **Inställningar** nedan).
 
    ![Förklarade plattor](assets/newexplain.png)
 
    Ytterligare information om plattor:
 
    * Miniatyrdiagrammens granularitet beror på datumintervallets längd:
-   * En dag visar en timtrend
-   * Fler än en dag och mindre än ett år visar en daglig trend
-   * Ett år eller mer visar en vecktrend
-   * Formeln för ändring av procentvärde är metrisk summa (aktuellt datumintervall) - metrisk summa (jämförelsedatumintervall) / metrisk summa (jämförelsedatumintervall).
-   * Du kan dra ned skärmen för att uppdatera styrkortet.
 
-5. Tryck på en platta för att visa hur en detaljerad uppdelning för plattan fungerar.
+      * En dag visar en timtrend
+      * Mer än en dag och mindre än ett år visar en daglig trend
+      * Ett år eller mer visar en vecktrend
+   * Formeln för ändring av procentvärde är metrisk summa (aktuellt datumintervall) - metrisk summa (jämförelsedatumintervall) / metrisk summa (jämförelsedatumintervall).
+
+   * Du kan dra ned skärmen för att uppdatera styrkortet.
+   Följande exempel på Styrkort visas i normalläge:
+
+   ![Exempelstyrkort](assets/intro_scorecard.png)
+
+5. Tryck på en platta för att se hur en detaljerad beskrivning av plattan fungerar.
 
    ![Brytpunktsvy](assets/sparkline.png)
 
@@ -109,11 +114,11 @@ Så här använder du kontrollpaneler:
 
    ![Ändra datum](assets/changedate.png)
 
-   Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
+   * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
-   Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under listan **JÄMFÖR MED** , tryck på ett av alternativen som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **Klar** i skärmens övre högra hörn. Fälten **Datumintervall** och Styrkortsinställningarna uppdateras med nya jämförelsedata från de nya intervall som du har valt.
+   * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under listan **JÄMFÖR MED** , tryck på ett av alternativen som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **Klar** i skärmens övre högra hörn. Fälten **Datumintervall** och Styrkortsinställningarna uppdateras med nya jämförelsedata från de nya intervall som du har valt.
 
-7. Om du vill använda ett segmentfilter på styrkortet trycker du på filterlistrutan och väljer ett segment som har konfigurerats av markören.
+7. Om du vill använda ett segmentfilter på styrkortet trycker du på filterlistrutan och väljer ett segment som har konfigurerats av markören. [Filter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Analytics Workspace.
 
    ![Segmentfilter](assets/segment_filter.png)
 
