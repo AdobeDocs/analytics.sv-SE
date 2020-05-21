@@ -2,9 +2,9 @@
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
 title: Chefshandbok för Adobe Analytics-instrumentpaneler
 translation-type: tm+mt
-source-git-commit: d78bb56cb199585236b7193b5bd220818b806194
+source-git-commit: a388a66b431d9652a4bc436a9b923157e129b02c
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -51,36 +51,21 @@ Om du vill få åtkomst till styrkort på instrumentpaneler ser du till att:
 
 Följ stegen i operativsystemet på enheten för att hämta och installera programmet.
 
-**För iOS-enheter:**
+**För företagsledare på iOS:**
 
-1. Klicka på följande offentliga länk (den är även tillgänglig i Analytics under **Verktyg** > **Kontrollpaneler**):
+* Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-   [iOS-länk](https://testflight.apple.com/join/WtXMQxlI): `https://testflight.apple.com/join/WtXMQxlI`
+   [iOS-länk](https://apple.co/2zXq0aN)
 
-   När du har klickat på länken visas följande testflight-skärm:
+**För chefsanvändare på Android:**
 
-   ![Testflightskärm](assets/testflight1.png)
+* Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-2. Tryck på länken **Visa i App Store** på skärmen för att hämta testflight-appen.
+   [Android](https://bit.ly/2LM38Oo)
 
-3. När du har installerat Testflight-appen söker du efter och installerar Adobe Analytics-kontrollpaneler inifrån Testflight enligt nedan:
+När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-autentiseringsuppgifter.
 
-   ![Testflightskärm](assets/testflight2.png)
-
-**För Android-enheter:**
-
-1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **dashboards**):
-
-
-   [Android](https://play.google.com/apps/testing/com.adobe.analyticsmobileapp): `https://play.google.com/apps/testing/com.adobe.analyticsmobileapp`
-
-   När du har tryckt på länken trycker du på länken Bli en testare på följande skärm:
-
-   ![Spela upp Store-skärm](assets/play.png)
-
-2. Tryck på **nedladdningslänken på Google Play** -länken på följande skärm:
-
-   ![Hämta länk](assets/playnext.png)
+![App - välkomstskärm](assets/welcome.png)
 
 ## Använda instrumentpaneler
 
@@ -92,18 +77,17 @@ Så här använder du kontrollpaneler:
 
 2. Välj ett företag. När du har loggat in på kontrollpaneler visas skärmen **Välj ett företag** . På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
 
-3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort som du vill visa.
+3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort du vill visa.
 
-   ![Välj ett företag](assets/accesscard.png)
+   ![Välj ett företag](assets/nextseq.png)
 
-   *Obs! Om du loggar in och ser ett meddelande som säger att inget har delats kontrollerar du följande med markören:*
+   Om du loggar in och ser ett meddelande som säger att inget har delats kontrollerar du följande med markören:
 
-   * *Du kan logga in på rätt Analytics-instans*
-   * *Styrkortet har delats med dig*
+   Du kan logga in på rätt Analytics-instans. Styrkortet har delats med dig
 
-      ![Inget delat](assets/nothing.png)
+   ![Inget delat](assets/nothing.png)
 
-4. Undersök hur rutorna visas i styrkortet.
+4. Granska hur rutorna visas i styrkortet (det här styrkortet visas i mörkt läge).
 
    ![Förklarade plattor](assets/newexplain.png)
 
@@ -125,21 +109,27 @@ Så här använder du kontrollpaneler:
 
    ![Ändra datum](assets/changedate.png)
 
-   *Obs! Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.*
+   Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
    Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under listan **JÄMFÖR MED** , tryck på ett av alternativen som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **Klar** i skärmens övre högra hörn. Fälten **Datumintervall** och Styrkortsinställningarna uppdateras med nya jämförelsedata från de nya intervall som du har valt.
 
-7. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller uppdelningar som du kan vara intresserad av kontaktar du analysteamet så att styrkortet uppdateras. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
+7. Om du vill använda ett segmentfilter på styrkortet trycker du på filterlistrutan och väljer ett segment som har konfigurerats av markören.
 
+   ![Segmentfilter](assets/segment_filter.png)
 
+8. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller uppdelningar som du kan vara intresserad av kontaktar du analysteamet så att styrkortet uppdateras. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
 
-8. Lämna feedback. Lämna feedback:
+9. Lämna feedback om den här appen:
 
-   1. Tryck på användarikonen i det övre högra hörnet på instrumentpanelsskärmen.
-   2. Tryck på alternativet **Feedback** på skärmen **Mitt konto** .
+   1. Tryck på inställningsikonen i appskärmens övre högra hörn.
+   2. Tryck på alternativet **Feedback** på skärmen **Inställningar** .
    3. Tryck för att visa alternativen för att lämna feedback.
-   ![Lämna feedback](assets/feedback.png)
-   ![Alternativ för feedback](assets/feedback_option.png)
+
+      ![Inställningsskärm](assets/settings.png)
+
+10. Om du vill ändra inställningarna trycker du på **alternativet Inställningar** ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+
+   ![Mörkt läge](assets/darkmode.png)
 
 
 **Så här rapporterar du ett fel**:
