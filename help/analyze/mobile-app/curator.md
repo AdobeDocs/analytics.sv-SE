@@ -2,9 +2,9 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för kontrollpaneler i Adobe Analytics
 translation-type: tm+mt
-source-git-commit: c532cd26acd65da1eff488c6f10b3d7d9cec471a
+source-git-commit: 3883abc6cc3e8e8e5511af353ad9d88186220acd
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2331'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Kuratorguide för Adobe Analytics-instrumentpaneler
 
-Följande information instruerar chefer för Adobe Analytics-data om hur du konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://www.youtube.com/watch?v=QXqQ_PkArbA&amp;feature=youtu.be).
+Följande information instruerar chefer för Adobe Analytics-data om hur du konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i [Adobe Analytics Dashboards Scorecard Builder](https://youtu.be/tnnl6hrcP94).
 
 ## Introduktion
 
@@ -21,8 +21,7 @@ Adobe Analytics-instrumentpaneler ger dig alltid insikter från Adobe Analytics.
 
 ## Mer om den här guiden
 
-Den här guiden är avsedd att hjälpa chefer för Adobe Analytics-data att konfigurera styrkort för sina chefsanvändare på kontrollpanelerna för Analytics. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att skapa styrkort för appar, som gör det möjligt för chefsanvändare att snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter. Även om chefsanvändare är slutanvändare för kontrollpaneler i Analytics kommer den här guiden att hjälpa datavärdare att konfigurera appen effektivt för dessa användare.
-
+Den här guiden är avsedd att hjälpa chefer för Adobe Analytics-data att konfigurera styrkort för sina chefsanvändare på kontrollpaneler. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att skapa styrkort för appar, som gör det möjligt för chefsanvändare att snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter. Även om chefsanvändare är slutanvändare för kontrollpaneler i Analytics kommer den här guiden att hjälpa datavärdare att konfigurera appen effektivt för dessa användare.
 
 ## Ordlista
 
@@ -164,9 +163,9 @@ För att underlätta för chefsanvändare att komma åt dina styrkort i appen se
 
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
 * De har en giltig inloggning på Adobe Analytics
-* Du har skapat mobila styrkort för dem och delat dessa styrkort med dem.
+* Du har skapat mobila styrkort för dem och delat dessa styrkort med dem
 * De har tillgång till Analysis Workspace och rapportsviten som styrkortet baseras på
-* De har tillgång till de komponenter som styrkortet innehåller. Obs! Du kan välja ett alternativ när du delar styrkort för att **automatiskt dela inbäddade komponenter med mottagare**.
+* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort för att **automatiskt dela inbäddade komponenter med mottagare**.
 
 ### Hjälp chefsanvändare med appen
 
@@ -198,19 +197,26 @@ För chefer:
    Om den verkställande användaren loggar in och ser ett meddelande om att inget har delats:
 
    * Den verkställande användaren kan ha valt fel Analytics-instans
-   * Styrkortet kanske inte har delats med den verkställande användaren
-   Kontrollera att chefsanvändaren kan logga in på rätt Analytics-instans och att styrkortet har delats.
 
-3. Förklara för den verkställande användaren hur rutor visas i de styrkort som du delar (styrkortet nedan är i mörkt läge, som anges i **Inställningar** , vilket förklaras i ett senare steg):
+   * Styrkortet kanske inte har delats med den verkställande användaren
+
+      ![Inget delat](assets/nothing.png)
+
+
+   * Kontrollera att chefsanvändaren kan logga in på rätt Analytics-instans och att styrkortet har delats.
+
+
+3. Förklara för den verkställande användaren hur rutor visas i de styrkort du delar (det första styrkortet nedan är i mörkt läge). se **Inställningar** nedan om du tror att din chefsanvändare föredrar detta visningsalternativ):
 
    ![Förklaringar](assets/newexplain.png)
 
+   ![Exempelstyrkort](assets/intro_scorecard.png)
 
    Ytterligare information om plattor:
 
    * Miniatyrdiagrammens granularitet beror på datumintervallets längd:
       * En dag visar en timtrend
-      * Fler än en dag och mindre än ett år visar en daglig trend
+      * Mer än en dag och mindre än ett år visar en daglig trend
       * Ett år eller mer visar en vecktrend
    * Formeln för ändring av procentvärde är metrisk summa (aktuellt datumintervall) - metrisk summa (jämförelsedatumintervall) / metrisk summa (jämförelsedatumintervall).
    * Du kan dra ned skärmen för att uppdatera styrkortet.
@@ -224,14 +230,13 @@ För chefer:
 
    * En tabell inkluderas för att visa data med dimensioner som lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
 
-
 5. Så här ändrar du datumintervall för styrkortet:
 
    ![Ändra datum](assets/changedate.png)
 
-   Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
+   * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
-   Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under listan **JÄMFÖR MED** , tryck på ett av alternativen som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **Klar** i skärmens övre högra hörn. Fälten **Datumintervall** och Styrkortsinställningarna uppdateras med nya jämförelsedata från de nya intervall som du har valt.
+   * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under listan **JÄMFÖR MED** , tryck på ett av alternativen som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **Klar** i skärmens övre högra hörn. Fälten **Datumintervall** och Styrkortsinställningarna uppdateras med nya jämförelsedata från de nya intervall som du har valt.
 
 6. Lämna feedback om den här appen:
 
