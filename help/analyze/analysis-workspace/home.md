@@ -4,15 +4,19 @@ title: Översikt över Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: 9ea9beba2a608da66e1f942cc100ebde958a8a10
+source-git-commit: d8db32a76b93e9687b28125050224857b598d82d
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 
 # Översikt över Analysis Workspace
+
+>[!IMPORTANT]
+>
+>Den här sidan håller på att byggas.
 
 Analysis Workspace tar bort alla vanliga begränsningar i en enskild Analytics-rapport. Den ger en robust, flexibel arbetsyta för att skapa anpassade analysprojekt. Dra och släpp valfritt antal datatabeller, visualiseringar och komponenter (mått, mätvärden, segment och tidsdetaljer) till ett projekt. Skapa snabbt indelningar och segment, skapa kohorter för analys, skapa aviseringar, jämföra segment, göra flödes- och bortfallsanalyser samt strukturera och schemalägg rapporter för delning med vem som helst i företaget.
 
