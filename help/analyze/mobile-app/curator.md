@@ -2,9 +2,9 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för kontrollpaneler i Adobe Analytics
 translation-type: tm+mt
-source-git-commit: d78bb56cb199585236b7193b5bd220818b806194
+source-git-commit: 37fb41fac4cdbc0f1716d2ed94f607459436202c
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Kuratorguide för Adobe Analytics-instrumentpaneler
 
-Följande information instruerar chefer för Adobe Analytics-data om hur du konfigurerar och presenterar kontrollpaneler för chefsanvändare.
+Följande information instruerar chefer för Adobe Analytics-data om hur du konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://www.youtube.com/watch?v=QXqQ_PkArbA&amp;feature=youtu.be).
 
 ## Introduktion
 
@@ -71,10 +71,6 @@ Du kommer åt mallen Tomt Mobile Scorecard på något av följande sätt:
 
 ![Styrkortsmall](assets/new_template.png)
 
-
-*Obs! Om du inte ser mallen Tomt Mobile Scorecard, som visas nedan, har ditt företag ännu inte aktiverats för Beta. Kontakta kundtjänstchefen.*
-
-
 **Lägg till ett projekt**
 
 På skärmen **Projekt** , under fliken **Komponenter** , klickar du på knappen **Lägg till** och väljer **Mobilstyrkort**.
@@ -105,18 +101,17 @@ Så här implementerar du styrkortsmallen:
 
    ![Lägg till dimensioner](assets/layer_dimensions.png)
 
-   *Obs! Du kan också lägga till en dimension till alla plattor genom att släppa den på styrkortets arbetsyta.*
+   Du kan också lägga till en dimension till alla plattor genom att släppa den på styrkortets arbetsyta.
 
    När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. I det här fältet kan du ange en ny **rubrik** för rutan och alternativt konfigurera rutan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
-
 
    Om du klickar på plattor visas även ett dynamiskt popup-fönster hur fördelningsvyn ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan, kommer uppdelningsdimensionen att vara **timme** eller **dagar**, beroende på standarddatumintervallet.
 
    ![Brytningsvy](assets/break_view.png)
 
-   *Observera hur varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.*
+   Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
 
-4. Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan. Om du vill använda segmentet på alla plattor i styrkortet, släpper du rutan ovanpå styrkortet.
+4. Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan. Om du vill använda segmentet på alla plattor i styrkortet, släpper du rutan ovanpå styrkortet. Du kan också tillämpa segment genom att markera segment på filtermenyn under datumintervallen. Du [konfigurerar och tillämpar filter för styrkort](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Adobe Analytics Workspace.
 
 5. Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du håller muspekaren över komponenten, vilket visas nedan för segmentet **Mobila kunder** :
 
@@ -155,7 +150,7 @@ Så här delar du styrkortet med en verkställande användare:
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 
-*Obs! Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **Dela inbäddade komponenter automatiskt med mottagare**) för att se till att chefsanvändarna har tillgång till dessa ändringar.*
+Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **Dela inbäddade komponenter automatiskt med mottagare** ) för att se till att chefsanvändarna har tillgång till dessa ändringar.
 
 ## Konfigurera företagsledare med appen
 
@@ -171,43 +166,23 @@ För att underlätta för chefsanvändare att komma åt dina styrkort i appen se
 * De har tillgång till Analysis Workspace och rapportsviten som styrkortet baseras på
 * De har tillgång till de komponenter som styrkortet innehåller. Obs! Du kan välja ett alternativ när du delar styrkort för att **automatiskt dela inbäddade komponenter med mottagare**.
 
-### Hjälp chefsanvändare att använda appen
+### Hjälp chefsanvändare med appen
 
-Under betaversionen, och innan appen visas för allmänheten, kan du styra vem som har åtkomst till appen.
+För chefer:
 
-1. Hjälp chefsanvändare att hämta och installera programmet. För att göra detta ska du göra på följande sätt för att ge dina chefsanvändare tillgång, beroende på om de använder en iOS- eller Android-enhet.
+1. Hjälp dem att hämta och installera programmet. För att göra detta ska du göra på följande sätt för att ge dina chefsanvändare tillgång, beroende på om de använder en iOS- eller Android-enhet.
 
    **För företagsledare på iOS:**
 
-   1. Klicka på följande offentliga länk (den är även tillgänglig i Analytics under **Verktyg** > **Kontrollpaneler**):
+   1. Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-      [iOS-länk](https://testflight.apple.com/join/WtXMQxlI): `https://testflight.apple.com/join/WtXMQxlI`
-
-      När du har klickat på länken visas följande testflight-skärm:
-
-      ![Testflightskärm](assets/testflight1.png)
-
-   2. Tryck på länken **Visa i App Store** på skärmen för att hämta testflight-appen.
-
-   3. När du har installerat Testflight-appen letar du reda på och installerar Adobe Analytics-kontrollpanelerna inifrån Testflight enligt nedan:
-
-      ![Testflightskärm](assets/testflight2.png)
-
+      [iOS-länk](https://apple.co/2zXq0aN)
    **För chefsanvändare på Android:**
 
-   1. Tryck på följande Play Store-länk på användarens enhet (den är även tillgänglig i Analytics under **Tools** > **dashboards**):
-      [Android](https://play.google.com/apps/testing/com.adobe.analyticsmobileapp): `https://play.google.com/apps/testing/com.adobe.analyticsmobileapp`
+   1. Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
 
-      När du har tryckt på länken trycker du på länken Bli en testare på följande skärm:
-
-      ![Spela upp Store-skärm](assets/play.png)
-
-   2. Tryck på **nedladdningslänken på Google Play** -länken på följande skärm:
-
-      ![Hämta länk](assets/playnext.png)
-
-   3. Hämta och installera programmet.
-När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-inloggningsuppgifter. vi stöder både Adobe och Enterprise/Federated ID.
+      [Android](https://bit.ly/2LM38Oo)
+   När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-inloggningsuppgifter. vi stöder både Adobe och Enterprise/Federated ID.
 
    ![App - välkomstskärm](assets/welcome.png)
 
@@ -216,19 +191,15 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
    * Tryck på namnet på det inloggningsföretag eller den Experience Cloud-organisation som gäller för det styrkort som du delade. Styrkortslistan visar sedan alla styrkort som har delats med den verkställande direktören under det inloggningsföretaget.
    * Hjälp dem att sortera listan efter **Senast ändrad**, om tillämpligt.
    * Tryck på namnet på styrkortet för att visa det.
-
    ![Välj ett företag](assets/accesscard.png)
 
-   Obs! Om den verkställande användaren loggar in och ser ett meddelande om att inget har delats:
+   Om den verkställande användaren loggar in och ser ett meddelande om att inget har delats:
 
    * Den verkställande användaren kan ha valt fel Analytics-instans
    * Styrkortet kanske inte har delats med den verkställande användaren
-
-      ![Inget delat](assets/nothing.png)
-
    Kontrollera att chefsanvändaren kan logga in på rätt Analytics-instans och att styrkortet har delats.
 
-3. Förklara för den verkställande användaren hur rutor visas i de styrkort som du delar.
+3. Förklara för den verkställande användaren hur rutor visas i de styrkort som du delar (styrkortet nedan är i mörkt läge, som anges i **Inställningar** , vilket förklaras i ett senare steg):
 
    ![Förklaringar](assets/newexplain.png)
 
@@ -247,24 +218,30 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
 
    ![Uppdelningsvy](assets/sparkline.png)
 
+   * Tryck på en punkt i ett miniatyrdiagram för att se data som hör till den punkten på raden.
+
+   * En tabell inkluderas för att visa data med dimensioner som lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
+
 
 5. Så här ändrar du datumintervall för styrkortet:
 
    ![Ändra datum](assets/changedate.png)
 
-   *Obs! Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.*
+   Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
    Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under listan **JÄMFÖR MED** , tryck på ett av alternativen som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **Klar** i skärmens övre högra hörn. Fälten **Datumintervall** och Styrkortsinställningarna uppdateras med nya jämförelsedata från de nya intervall som du har valt.
 
 6. Lämna feedback om den här appen:
 
-   1. Tryck på användarikonen i appskärmens övre högra hörn.
-   2. Tryck på alternativet **Feedback** på skärmen **Mitt konto** .
+   1. Tryck på inställningsikonen i appskärmens övre högra hörn.
+   2. Tryck på alternativet **Feedback** på skärmen **Inställningar** .
    3. Tryck för att visa alternativen för att lämna feedback.
 
-   ![Lämna feedback](assets/feedback.png)
-   ![Alternativ för feedback](assets/feedback_option.png)
+      ![Inställningsskärm](assets/settings.png)
 
+7. Om du vill ändra inställningarna trycker du på **alternativet Inställningar** ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+
+   ![Mörkt läge](assets/darkmode.png)
 
 **Så här rapporterar du ett fel**:
 
