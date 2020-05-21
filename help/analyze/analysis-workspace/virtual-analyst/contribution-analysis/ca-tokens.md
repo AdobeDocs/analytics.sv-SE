@@ -3,7 +3,10 @@ description: 'null'
 title: Översikt över bidragsanalys
 uuid: 2bd295b0-c5ce-4443-86af-024efd20c021
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 4ca2e15575e66107ec5947c9903a01565f74e264
+workflow-type: tm+mt
+source-wordcount: '1146'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ Med bidragsanalys kan ni omedelbart utvärdera era data för att få svar på va
 
 Med bidragsanalys kan ni ta fram en berättelse som beskriver varför en avvikelse inträffade och hur ni ska reagera på den, samla in relevanta mätvärden och identifiera dolda punkter som ger er en övergripande anledning till målgruppsinteraktioner och trender kring kundernas intressen. Ibland är en avvikelse lätt att se och korrigera, som en felaktig order på 2 000 kajaker. Ibland är det komplicerat, till exempel att identifiera en ny trend under en tidsperiod i en region som bara reagerar på en viss riktad kampanj. Genom att samla artiklar för olika mått och deras associationer får ni en övergripande uppfattning om hur er målgrupp interagerar och bidrar till att skapa kontext för avvikande datapunkter.
 
-Här är några idéer:
+Här är några exempel:
 
-* Identitetsåterförsäljningspotential genom att övervaka förändringar i produktefterfrågan.
+* Identifiera potentialen för återmarknadsföring genom att övervaka förändringar i produktefterfrågan.
 * Förbättra kundupplevelsen genom att reagera på specifika målgruppsintressen.
 * Identifiera bedrägliga order tidigt som en rapport utanför ramarna.
 * Skydda dig mot företagsspionage genom att identifiera hög användning och nedladdningar.
@@ -52,7 +55,7 @@ Antalet körningar per företag begränsas av månatliga tokens som beviljas bas
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Varför introducerade Adobe tokens? </b> </p> </td> 
-   <td colname="col2"> <p>Contribute Analysis har varit en av de mest intressanta funktionerna i Adobe Analytics sedan den lanserades 2015. Om du får ett litet antal"fullständiga" körningar per månad (i stället för bara tre dimensioner för vissa Analytics-produkter) kan du bättre se vad en obegränsad, fullständig bidragsanalys kan göra för dig. </p> </td> 
+   <td colname="col2"> <p>Contribute Analysis har varit en av de mest intressanta funktionerna i Adobe Analytics. Om du får ett litet antal"fullständiga" körningar per månad (i stället för bara tre dimensioner för vissa Analytics-produkter) kan du bättre se vad en obegränsad, fullständig bidragsanalys kan göra för dig. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Hur fungerar tokenering i bidragsanalys? Kostar det en token att läsa in ett projekt med en befintlig bidragsanalys, eller bara när ett helt nytt projekt körs?</b> </p> </td> 
@@ -90,7 +93,7 @@ Nedan finns en lista med detaljerade berättiganden för avvikelseidentifiering 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Tillstånd för Adobe Analytics </th> 
-   <th colname="col2" class="entry"> Analysidentifiering </th> 
+   <th colname="col2" class="entry"> Avvikelseidentifiering </th> 
    <th colname="col3" class="entry"> Bidragsanalys </th> 
   </tr>
  </thead>
