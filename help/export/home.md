@@ -1,34 +1,34 @@
 ---
-title: Hjälp för Analytics-export
+title: Hjälp för export i Analytics
 description: 'null'
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 ---
 
 
-# Exporthandbok för analyser
+# Exporthandbok för Analytics
 
 ![Banderoll](../../assets/doc_banner_export.png)
 
-I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics. Den innehåller följande uppgifter:
+I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics. Den innehåller:
 
-* **Dataflöden:** Få en timvis eller daglig export av rådata. Varje rad är en enskild träff och varje kolumn är en variabel. Dataflöden skickas vanligtvis till FTP-platser.
-* **Datalager:** Använd en begärandeguide för att hämta kalkylbladsutdata. Datalagret använder en annan bearbetningsarkitektur för att tillåta valfritt antal rader och valfritt antal unika värden.
+* **Datafeeds:** Exportera rådata varje timme eller varje dag. Varje rad är en enskild träff och varje kolumn är en variabel. Datafeeds skickas vanligtvis till FTP-platser.
+* **Data Warehouse:** Använd en frågeguide för att hämta kalkylbladsutdata. Data Warehouse har en annan bearbetningsarkitektur som tillåter valfritt antal rader och valfritt antal unika värden.
 
-## Viktiga analysartiklar för export
+## Viktiga artiklar om export i Analytics
 
-* [Kolumnreferens för datafeed](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
-* [Datalager](data-warehouse/data-warehouse.md)
+* [Kolumnreferens för datafeeds](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md)
+* [Data Warehouse](data-warehouse/data-warehouse.md)
 * [Exportera till FTP](ftp-and-sftp/ftp-overview.md)
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för analys](/help/landing/home.md)
+[Användarhandböcker för Analytics](/help/landing/home.md)
 
-## Viktiga analysresurser
+## Viktiga Analytics-resurser
 
 * [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
-* [Analysforum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
+* [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
