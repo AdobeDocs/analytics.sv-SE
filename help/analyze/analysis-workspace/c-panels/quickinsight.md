@@ -1,16 +1,16 @@
 ---
-description: Verktyget Quick Insights Builder är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
-title: Quick Insights builder
+description: Quick Insights är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
+title: Panelen Snabbinsikter
 translation-type: tm+mt
-source-git-commit: 446026850794e6fba3ccf04562221f2ca907a390
+source-git-commit: 80126f2173ae71dd45cc3f983df7149bc1326c1e
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
 
 
-# Quick Insights builder
+# Panelen Snabbinsikter
 
 >[!IMPORTANT]
 >
@@ -97,7 +97,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder], vissa beroen
 
 ## Kända begränsningar
 
-Om du försöker redigera direkt i tabellen kommer panelen (verktyget för att fylla i det tomma [!UICONTROL Quick Insights] ) att bli osynkroniserad. Du kan återställa den till tidigare [!UICONTROL Quick Insights] inställningar genom att klicka **[!UICONTROL Resync Builder]** längst upp till höger på panelen.
+Om du försöker redigera direkt i tabellen kommer panelen att bli osynkroniserad [!UICONTROL Quick Insights] . Du kan återställa den till tidigare [!UICONTROL Quick Insights] inställningar genom att klicka **[!UICONTROL Resync Builder]** längst upp till höger på panelen.
 
 ![](assets/qibuilder9.png)
 
