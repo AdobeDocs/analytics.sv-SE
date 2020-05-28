@@ -3,7 +3,10 @@ description: 'Läs mer om '
 title: Mättyp och attribut
 uuid: 64649698-df2a-42c3-bb31-938f766e1d1f
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: a5ab9f3c0a82a5a37a6507b697c641c66075b848
+workflow-type: tm+mt
+source-wordcount: '914'
+ht-degree: 3%
 
 ---
 
@@ -11,10 +14,6 @@ source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 # Mättyp och attribut
 
 Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och attribueringsmodell.
-
-* [Mätningstyp](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md#section_34A86FB402F94E988724232283BF18B7)
-* [Kolumnattributmodell](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md#section_F9690FD1943B403AB28E2FAC54EFE032)
-* [How Linear Allocation works (from 19 juli 2018)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md#section_EDBB2E14A6C248C5A79C0913C02D7CA1)
 
 ## Mätningstyp
 
