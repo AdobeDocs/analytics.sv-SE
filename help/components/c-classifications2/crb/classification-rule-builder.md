@@ -5,7 +5,10 @@ title: Arbetsflöde för klassificeringsregelbyggaren
 topic: Admin tools
 uuid: edb1f07e-fa86-4055-8f4b-cce2d370edbb
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: ad991b8fcc309d1f3aae01d472683927a447ab4d
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -36,10 +39,10 @@ Nedan följer några steg för att implementera klassificeringsregler:
 | Steg 1 (Förutsättning): [Konfigurera klassificeringsschemat](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html). | [!UICONTROL Admin] > [!UICONTROL Report Suites] > [!UICONTROL Edit Settings] > &lt;Trafikklassificeringar eller Konverteringsklassificeringar> | Välj en variabel och definiera de klassificeringar som ska användas för variabeln. <br>Variabler måste ha minst en klassificeringskolumn som skapats innan de kan användas i regler.<br>När klassificeringarna är aktiverade kan du använda importverktyget och regelbyggaren för att klassificera specifika värden. |
 | Steg 2: [Skapa en regeluppsättning](/help/components/c-classifications2/crb/classification-rule-set.md). | [!UICONTROL Admin] >  [!UICONTROL Classification Rule Builder] > [!UICONTROL Add Rule Set] | En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. |
 | Steg 3: Konfigurera rapportsviter och variabler. | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Använd regeluppsättningen för rapportsviter och variabler. |
-| Steg 4: Lägg [till klassificeringsregler i uppsättningen](/help/components/c-classifications2/crb/classification-quickstart-rules.md). | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Matcha ett villkor med en klassificering och ange sedan vilken åtgärd som ska vidtas för regeln.  Läs mer om [hur reglerna behandlas](/help/components/c-classifications2/crb/classification-quickstart-rules.md). |
+| Steg 4: [Lägg till klassificeringsregler i uppsättningen](/help/components/c-classifications2/crb/classification-quickstart-rules.md). | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Matcha ett villkor med en klassificering och ange sedan vilken åtgärd som ska vidtas för regeln.  Läs mer om [hur reglerna behandlas](/help/components/c-classifications2/crb/classification-quickstart-rules.md). |
 | Steg 5: [Testa en klassificeringsregeluppsättning](/help/components/c-classifications2/crb/classification-quickstart-rules.md) | [!DNL Testing Page] | Du vill testa reglerna för validering genom att redigera dem i utkastläge. I utkastläge kan reglerna inte köras.<br>Det här steget är viktigt när du använder [reguljära uttryck](/help/components/c-classifications2/crb/classification-quickstart-rules.md). |
-| Steg 6: Aktivera [giltiga regler](/help/components/c-classifications2/crb/classification-rule-definitions.md). | [!DNL Rules Page] | När reglerna är giltiga aktiverar du regeluppsättningen.  Du kan skriva över befintliga nycklar om det behövs. Se [hur reglerna behandlas](/help/components/c-classifications2/crb/classification-quickstart-rules.md). |
-| Steg 7 (valfritt): Ta [bort oönskade regler](/help/components/c-classifications2/crb/classification-rule-definitions.md). | [!DNL Rules Page] | Ta bort oönskade regler från en uppsättning.<br>Obs!  Klassificerade data som överförts tas inte bort när du tar bort regler.  Se [Ta bort klassificeringsdata](/help/components/c-classifications2/c-classifications-importer/t-delete-classification-data.md) om du behöver ta bort klassificerade data. |
+| Steg 6: [Aktivera giltiga regler](/help/components/c-classifications2/crb/classification-rule-definitions.md). | [!DNL Rules Page] | När reglerna är giltiga aktiverar du regeluppsättningen.  Du kan skriva över befintliga nycklar om det behövs. Se [hur reglerna behandlas](/help/components/c-classifications2/crb/classification-quickstart-rules.md). |
+| Steg 7 (valfritt): [Ta bort oönskade regler](/help/components/c-classifications2/crb/classification-rule-definitions.md). | [!DNL Rules Page] | Ta bort oönskade regler från en uppsättning.<br>Obs!  Klassificerade data som överförts tas inte bort när du tar bort regler.  Se [Ta bort klassificeringsdata](/help/components/c-classifications2/c-classifications-importer/t-delete-classification-data.md) om du behöver ta bort klassificerade data. |
 
 >[!NOTE]
 >
@@ -47,6 +50,6 @@ Nedan följer några steg för att implementera klassificeringsregler:
 
 **Ytterligare resurser**
 
-**Blogg**: Mer information om den här funktionen finns i bloggen om digital marknadsföring: Regelbaserade [klassificeringar](https://blogs.adobe.com/digitalmarketing/analytics/rule-based-classifications-part-1-making-classifications-easier/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+AdobeDigitalMarketing+%28Adobe+Digital+Marketing+Blog%29).
+**Blogg**: Mer information om den här funktionen finns i bloggen om digital marknadsföring: [Regelbaserade klassificeringar](https://theblog.adobe.com/rule-based-classifications-part-1-making-classifications-easier/).
 
 **Video**: Besök [YouTube](https://www.youtube.com/watch?v=6laI5SBXY-I) för att se [!UICONTROL Classifications Overview] videon.
