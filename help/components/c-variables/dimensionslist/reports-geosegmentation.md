@@ -4,7 +4,10 @@ title: GeoSegmentation
 topic: Reports
 uuid: 66aa22c4-dcbc-491a-b23c-0c3d87444d23
 translation-type: tm+mt
-source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
+source-git-commit: ad991b8fcc309d1f3aae01d472683927a447ab4d
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
 
 Visar data om besökarens plats. GeoSegmentation-rapporterna omfattar Länder, Regioner, Städer, USA och USA DMA (Digital Marketing Area). GeoSegmenteringsrapporter är aktiverade för alla kunder.
 
-Alla mätvärden som är tillgängliga för dig någon annanstans i Rapporter och analyser inkluderas automatiskt i rapporterna för länder, regioner, städer, USA och DMA: konverterings- och besöksbaserade mätvärden samt beräknade mätvärden. Mer information finns i det här Adobe- [blogginlägget](https://blogs.adobe.com/digitalmarketing/analytics/introducing-new-metrics-in-geosegmentation-and-more/) .
+Alla mätvärden som är tillgängliga för dig någon annanstans i Rapporter och analyser inkluderas automatiskt i rapporterna för länder, regioner, städer, USA och DMA: konverterings- och besöksbaserade mätvärden samt beräknade mätvärden. Mer information finns i det här Adobe- [blogginlägget](https://theblog.adobe.com/introducing-new-metrics-in-geosegmentation-and-more/) .
 
 <table id="table_566CFFC82E1149D8BAFE6641627FCF1F"> 
  <thead> 
