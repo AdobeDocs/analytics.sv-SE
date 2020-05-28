@@ -1,18 +1,20 @@
 ---
 description: 'null'
-title: Paneler - översikt
-uuid: 480700e6-332e-44f2-a486-e3d1852cddbc
+title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 80126f2173ae71dd45cc3f983df7149bc1326c1e
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 1%
 
 ---
 
 
-# Paneler - översikt
+# Översikt över paneler
 
-En panel är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i arbetsytan. Paneler är användbara när du vill ordna dina projekt efter tidsperioder, affärsenheter, geografi, osv. Följande fyra typer av paneler är tillgängliga i Analysis Workspace: Tom panel, Attribution, Frihandspanel och Segmentjämförelse.
+En panel är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i arbetsytan. Paneler är användbara när du vill ordna dina projekt efter tidsperioder, affärsenheter, geografi, osv. Följande sex typer av paneler är tillgängliga i Analysis Workspace: [Tom panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md), panelen [](/help/analyze/analysis-workspace/c-panels/quickinsight.md) Snabbinsikter (kommer snart), [panelen](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) Analytics for Target (kommer snart), panelen [](/help/analyze/analysis-workspace/c-panels/attribution/attribution.md)Attribution, [Frihandspanelen](/help/analyze/analysis-workspace/c-panels/freeform-panel.md)och panelen [](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)Segmentjämförelse¥.
 
-Panelen Tom och Frihand är platser där du kan börja analysera, medan attribuerings-IQ och Segmentjämförelse är mer avancerade analyser. Vi har också lagt till en plusknapp (+) så att du när som helst kan lägga till tomma paneler.
+Quick Insights, Blank and Freeform panels är bra platser att starta analysen på, medan Analytics for Target, Attribution IQ och Segment Comparison passar in på mer avancerade analyser. Vi har också lagt till en plusknapp (+) så att du när som helst kan lägga till tomma paneler.
 
 Standardstartpanelen är panelen Frihand, men du kan också göra den [tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standard.
 
