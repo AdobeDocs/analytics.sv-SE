@@ -1,24 +1,24 @@
 ---
 product: analytics
 audience: all
-user-guide-title: Tekniska anteckningar för analyser
+user-guide-title: Tekniska anteckningar för Analytics
 user-guide-url: /content/help/en/analytics/technotes/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 74a1edadde1899c9e51019cb7e7bb120b6e04d64
 
 ---
 
 
-# Analysdokumentation {#technotes}
+# Analytics-dokumentation {#technotes}
 
-+ [Hjälp för Analytics-teknikanteckningar](home.md)
++ [Tekniska anteckningar för Analytics - hjälp](home.md)
 + Adobe Analytics för Google Analytics-användare {#ga-to-aa}
-   + [Adobe Analytics för Google Analytics-användare hjälper dig](ga-to-aa/home.md)
+   + [Adobe Analytics för Google Analytics-användare - hjälp](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)
    + [Anpassa rapportvyer](ga-to-aa/customization.md)
    + Google Analytics-rapporter {#reports}
       + [Skapa en grundläggande rapport i Analysis Workspace för GA-användare](ga-to-aa/reports/create-report.md)
-      + [Vanliga mätvärden används på andra Analytics-plattformar](ga-to-aa/reports/common-metrics.md)
+      + [Vanliga mätvärden som används på andra Analytics-plattformar](ga-to-aa/reports/common-metrics.md)
       + [Realtid](ga-to-aa/reports/realtime-reports.md)
       + [Målgrupp](ga-to-aa/reports/audience-reports.md)
       + [Förvärv](ga-to-aa/reports/acquisition-reports.md)
@@ -29,8 +29,8 @@ source-git-commit: 74a1edadde1899c9e51019cb7e7bb120b6e04d64
 + Analysera data som påverkas av händelser {#event}
    + [Analysera data som påverkas av händelser - översikt](event/overview.md)
    + [Exkludera specifika datum i analysen](event/segments.md)
-   + [Jämför datum med tidigare intervall](event/compare-dates.md)
-   + [Härleda data som påverkas av händelser](event/calcmetrics.md)
+   + [Jämföra datum med tidigare intervall](event/compare-dates.md)
+   + [Härleda data som påverkats av händelser](event/calcmetrics.md)
    + [Kommunicera händelser till användare](event/communicate.md)
 + [Webbläsarcookies](cookies.md)
 + [Datalagring](data-retention.md)
@@ -40,12 +40,12 @@ source-git-commit: 74a1edadde1899c9e51019cb7e7bb120b6e04d64
 + [Omdirigering och alias](redirects.md)
 + [Stöd för flera valutor](multicurrency.md)
 + Regional datainsamling {#rdc}
-   + [Regional datainsamling](rdc/regional-data-collection.md)
+   + [Regional datainsamling - hjälp](rdc/regional-data-collection.md)
    + [SSL-certifieringslicensiering](rdc/ssl-cert-licensing.md)
 + [Säkerhetsresurser](security.md)
 + [Termer som används (ordlista)](terms.md)
 + [Tidsstämplar (valfritt)](timestamps-optional.md)
-+ [Felsöka inloggning](troubleshoot-login.md)
++ [Felsökningsloggning](troubleshoot-login.md)
 + [Felsök utloggning](troubleshoot-sessions.md)
 + [Ospecificerad, annan och okänd](unspecified.md)
 + [Besökaridentifiering](visitor-identification.md)
