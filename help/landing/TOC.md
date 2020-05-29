@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Adobe Analytics-dokumentation
 user-guide-url: /content/help/en/analytics/landing/home.html
 translation-type: tm+mt
-source-git-commit: 80126f2173ae71dd45cc3f983df7149bc1326c1e
+source-git-commit: a1ba6e12eee2b7aae8b6fd977133518db128fa28
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 85%
+source-wordcount: '142'
+ht-degree: 88%
 
 ---
 
@@ -30,4 +30,4 @@ ht-degree: 85%
 * [Uppdateringar av analysdokumentation](doc-updates.md)
 * [Versionsinformation](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
 * [Funktionsreleaser för Adobe Analytics](an-releases.md)
-* [Tillgänglighet på analysarbetsytan](accessibility.md)
+
