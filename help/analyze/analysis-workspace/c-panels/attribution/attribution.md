@@ -1,21 +1,21 @@
 ---
 description: 'null'
-title: Översikt över panelen Attribut
+title: Översikt över attribuering
 uuid: bb345642-4f45-4fb8-82d0-803248dd52ea
 translation-type: tm+mt
-source-git-commit: ae3fecc4b76badf82a5b161732e380a46bbba298
+source-git-commit: d880ad666eb42940147a453d8c3f04cdf9c629df
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1809'
 ht-degree: 0%
 
 ---
 
 
-# Översikt över panelen Attribut
+# Översikt över attribuering
 
->[!IMPORTANT] Panelen Attribution är tillgänglig för alla kunder på SKU:erna Adobe Analytics Ultimate, Prime, Select och Foundation.
+>[!IMPORTANT] Attribution is available for all customers on the Adobe Analytics Ultimate, Prime, Select, and Foundation SKUs.
 
-Attributpanelen är en IQ-funktion för [attribuering](../../attribution-iq.md) som gör att du kan lägga till många nya typer av attribueringsmodeller till frihandstabeller, visualiseringar och beräknade värden. Alla attribueringsmodeller har två komponenter:
+[Attribution IQ](../../attribution-iq.md) är en uppsättning funktioner som gör att du kan lägga till många nya typer av attribueringsmodeller till frihandstabeller, visualiseringar och beräknade värden. Alla attribueringsmodeller har två komponenter:
 
 * **Attributionsmodell:** Modellen beskriver distributionen av konverteringar till träffar i en grupp. Till exempel första beröringen eller sista beröringen.
 * **Fönster för attributsökning:** Uppslagsfönstret beskriver vilka grupper av träffar som ska användas för varje modell. Exempel: besök eller besökare.
@@ -44,7 +44,7 @@ Ett uppslagsfönster är den tid som en konvertering bör titta tillbaka för at
 
 * **Sökfönster:** Alla besök utförs fram till den 1:e i månaden av det aktuella datumintervallet. Besöksfönster är breda, eftersom de kan omfatta många besök. Om rapportens datumintervall till exempel är 15 september - 30 september, inkluderar datumintervallet för besökarens sökning 1 september - 30 september.
 
-* **Anpassat uppslagsfönster:** (Obs! Anpassat uppslagsfönster har för närvarande begränsad testning.) Gör att du kan expandera attribueringsfönstret efter rapportdatumintervallet upp till maximalt 90 dagar. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
+* **Anpassat uppslagsfönster:** (Obs! Det anpassade uppslagsfönstret är för närvarande i begränsat läge för testning.[Läs mer](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)) Gör att du kan utöka attribueringsfönstret till högst 90 dagar efter rapportens datumintervall. Anpassade uppslagsfönster utvärderas för varje konvertering under rapporteringsperioden. För en konvertering som inträffar den 20 februari skulle ett uppslagsfönster på 10 dagar utvärdera alla dimensionskontaktytor från den 10 februari till den 20 februari i attribueringsmodellen.
 
 ## Exempel
 
@@ -54,7 +54,7 @@ Titta på följande exempel:
 2. Den 18 september kommer besökaren till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
 3. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
 
-Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
+Beroende på ditt sökfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några bra exempel:
 
 * Med **första beröring** och ett **besöksfönster** tittar attribueringen bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
 * Med hjälp av **första beröring** och ett fönster **för** besökarsökning tittar attribueringen på alla tre besöken. Betalsökning var först, så den får 100 % rabatt på 50 USD.
