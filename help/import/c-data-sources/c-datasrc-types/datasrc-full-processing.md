@@ -5,12 +5,17 @@ title: Fullständig bearbetning
 topic: Developer and implementation
 uuid: 590ae89c-6e17-453b-b701-ce1adbea6fa4
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 374202983d4d75f785eb7062b88fd5fded2cbb7b
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 4%
 
 ---
 
 
 # Fullständig bearbetning
+
+>[!NOTE] Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Fullständig bearbetning av datakällor kommer att bli inaktuell i framtiden.
 
 Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
 
@@ -64,7 +69,7 @@ En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen
   <tr> 
    <td colname="col1"> <p>händelser </p> </td> 
    <td colname="col2"> <p>händelser </p> </td> 
-   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events- </a> variabeln. </p> <p>Exempel: </p> 
+   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som <a href="https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events- </a> variabeln. </p> <p>Exempel: </p> 
     <code>
       scAdd,event1,event7 
     </code> </td> 
