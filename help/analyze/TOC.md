@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 80126f2173ae71dd45cc3f983df7149bc1326c1e
+source-git-commit: f29a9eef7dcdb0568a947521ca32f7aa0c2ce5b7
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1096'
 ht-degree: 97%
 
 ---
@@ -123,6 +123,7 @@ ht-degree: 97%
       + [Analysis Workspace jämfört med Ad Hoc Analysis](analysis-workspace/workspace-faq/adhocanalysis-vs-analysisworkspace.md)
       + [Begränsningar i Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Tillgänglighet på analysarbetsytan](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
    + [Adobe Report Builder – hjälp](report-builder/home.md)
    + [Nyheter i Report Builder](report-builder/whats-new-arb.md)
