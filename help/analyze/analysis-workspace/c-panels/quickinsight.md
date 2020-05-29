@@ -2,7 +2,7 @@
 description: Quick Insights är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
 title: Panelen Snabbinsikter
 translation-type: tm+mt
-source-git-commit: 80126f2173ae71dd45cc3f983df7149bc1326c1e
+source-git-commit: 04a91d3ba2778336a8f32c99604b32d440e41674
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insights]** har för närvarande begränsad testning. [Läs mer...](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
+>**[!UICONTROL Quick Insights]** har för närvarande begränsad testning. [Läs mer](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
 
 [!UICONTROL Quick Insights] ger vägledning för icke-analytiker och nya användare av [!UICONTROL Analysis Workspace] att lära sig att snabbt och enkelt svara på affärsfrågor. Det är också ett bra verktyg för avancerade användare som snabbt vill besvara en enkel fråga utan att själva behöva skapa en tabell.
 
