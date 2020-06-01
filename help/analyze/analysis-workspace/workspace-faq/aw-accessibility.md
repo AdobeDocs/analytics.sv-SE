@@ -2,9 +2,9 @@
 description: Funktioner för hjälpmedelsstöd i Analysis Workspace
 title: Tillgänglighet på analysarbetsytan
 translation-type: tm+mt
-source-git-commit: a1ba6e12eee2b7aae8b6fd977133518db128fa28
+source-git-commit: 67f05736882287231790c03df76e312e59b5afd3
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Läs om tillgänglighetsstödet i [!UICONTROL Analysis Workspace], det främsta 
 
 Med hjälpmedel avses att göra produkter användbara för personer med synnedsättning, hörsel, motor och andra funktionshinder. Exempel på hjälpmedelsfunktioner för programprodukter är skärmläsarstöd, textmotsvarigheter för grafik, kortkommandon, ändring av visningsfärger till hög kontrast osv.
 
-[!UICONTROL Analysis Workspace] innehåller vissa verktyg som gör dem tillgängliga för användning och verktyg som hjälper dig att skapa tillgängligt innehåll.
+[!UICONTROL Analysis Workspace] innehåller verktyg som gör dem tillgängliga att använda, bland annat:
 
 ## Navigera [!UICONTROL Workspace] med tangentbordet
 
@@ -60,7 +60,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 | Ctrl + Skift + D | Nytt datumintervall |
 | Ctrl + Skift + E | Nytt segment |
 | Ctrl + Z | Ångra |
-| Håll ned skift (i panelsegmentets dropzone) | Skapa ett [listrutefilter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html). |
+| Håll ned skift (i panelsegmentets dropzone) | Skapa ett [listrutefilter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
 
 #### Demokratisering
 
