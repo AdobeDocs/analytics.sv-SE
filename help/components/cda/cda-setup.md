@@ -2,14 +2,15 @@
 title: Konfigurera enhetsövergripande analys
 description: Lär dig hur du konfigurerar enhetsövergripande analys när du uppfyller kraven.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: d847fb9dc1427727a0162be993ddc4a73c52f192
+workflow-type: tm+mt
+source-wordcount: '822'
+ht-degree: 0%
 
 ---
 
 
 # Konfigurera enhetsövergripande analys
-
->[!NOTE] Enhetsövergripande analysdokumentation kan komma att ändras i takt med att funktionen utvecklas ytterligare. Kontrollera regelbundet om det finns uppdateringar.
 
 När alla förutsättningar är uppfyllda gör du följande för att aktivera enhetsövergripande analys. Du måste tillhöra en produktprofiladministratörsgrupp eller ha administratörsbehörighet i Adobe Analytics för att kunna följa dessa steg.
 
