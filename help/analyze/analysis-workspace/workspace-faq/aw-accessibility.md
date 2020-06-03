@@ -2,9 +2,9 @@
 description: Funktioner för hjälpmedelsstöd i Analysis Workspace
 title: Tillgänglighet på analysarbetsytan
 translation-type: tm+mt
-source-git-commit: 67f05736882287231790c03df76e312e59b5afd3
+source-git-commit: 4dd0710454a29faadb197d97e58394c753cec0ec
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 * Tangenten rör sig `Tab` mellan enskilda element.
 * Vi använder fokusindikatorer så att synkade tangentbordsanvändare får en tydlig indikation på vilket gränssnittselement som för närvarande är i fokus. Indikatorn är en blå ram runt det markerade elementet.
 
-   ![](assets/focus-indicator.png)
+   ![Fokusindikator](assets/focus-indicator.png)
 
 ### Tangentbordsnavigering för dra och släpp-interaktioner
 
@@ -75,11 +75,11 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 
 ## Stöd för skärmläsare och skärmförstorare
 
-En skärmläsare hämtar text som visas på datorskärmen. Den läser även information som inte är text, t.ex. knappetiketter eller bildbeskrivningar i programmet, som finns i hjälpmedelstaggar eller -attribut.
+En skärmläsare läser upp text som visas på datorskärmen. Den läser även information som inte är text, t.ex. knappetiketter eller bildbeskrivningar i programmet, som finns i hjälpmedelstaggar eller -attribut.
 
 ## Färgpaletter och kontrast
 
-[!UICONTROL Analysis Workspace] eftersträvar WCAG AA-färgkontrast.
+[!UICONTROL Analysis Workspace] eftersträvar WCAG 2.1-överensstämmelse, inklusive krav på färgkontrast.
 
 Dessutom kan användarna välja en egen färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
 
@@ -89,8 +89,8 @@ När du skapar en komponent valideras de obligatoriska fälten när du sparar. O
 
 När en komponent har validerats helt stängs byggaren när du trycker `Save` på.
 
-![](assets/error-validation.png)
+![Felvalidering](assets/error-validation.png)
 
 ## Stöd för hjälpmedelsfunktioner för operativsystem
 
-Analysis Workspace stöder de inbyggda tillgänglighetsfunktionerna för MS Windows och macOS, som högkontrastläge och skärmläsare (Skärmläsaren för MS Windows och VoiceOver för macOS).
+Analysis Workspace stöder inbyggda tillgänglighetsfunktioner för MS Windows och macOS, som högkontrastläge, klisterknappar och långsamma tangenter/filternycklar. Det innehåller även information om användargränssnittet till operativsystemet för att möjliggöra interaktion med hjälpmedelstekniker, inklusive skärmläsare som VoiceOver för macOS och NVDA för Windows.
