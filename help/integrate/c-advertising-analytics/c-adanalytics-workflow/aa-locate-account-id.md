@@ -1,9 +1,11 @@
 ---
 description: Här beskrivs hur du kan hjälpa dig att hitta dina konto-ID:n för Google och Bing.
 title: Hitta ditt konto-ID
-uuid: 34f9bb8d-84b4-4890-9200-c926d0abb1d6
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: fae9d036f33029b7b8553cb71441997fc4e83354
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +18,17 @@ Här beskrivs hur du kan hjälpa dig att hitta dina konto-ID:n för Google och B
 
 >[!IMPORTANT]
 >
->Google AdWords använder två typer av konton: a) MCC-konto (My Client Center) och b) standardkonto. För den här integreringen med Adobe Analytics måste **du använda en standardkontoinloggning, inte en MCC-kontoinloggning**. Orsaken är att ett MCC-konto fungerar som ett&quot;paraply&quot;-konto som kan komma åt flera AdWords-konton med en enda inloggning, medan standardkontoinloggningen bara kan komma åt ett AdWords-konto per inloggning.
+>Google AdWords använder två typer av konton: a) MCC-konto (My Client Center) och b) standardkonto. För den här integreringen med Adobe Analytics måste **du använda en standardkontoinloggning, inte en MCC-kontoinloggning**. Orsaken är att ett MCC-konto fungerar som ett&quot;paraply&quot;-konto som kan komma åt flera AdWords-konton med en enda inloggning, medan standardkontoinloggningen bara kan komma åt ett AdWords-konto per inloggning. Google stöder länkning av ett e-postmeddelande för hantering av fem konton, men marknadsföringsanalysen stöder inte den här funktionen ännu. Ett e-postmeddelande kan bara länkas med ett Adwords-konto.
 
 Klicka på kontoikonen längst upp till höger för att visa AdWords-kontonumret (Kund-ID).
 
 ![](assets/google_account.png)
 
 ## Bing {#section_F1B9C7E997444746936599732CD62665}
+
+>[!NOTE]
+>
+>Om ditt Bing-konto använder Google-importfunktionen måste du uppdatera rätt spårningssträng. Spårningssträngen uppdateras inte automatiskt från Google-versionen till rätt Bing-spårningssträng och kan resultera i ospecificerade data. Mer information om funktionen finns [här](https://help.ads.microsoft.com/apex/index/3/en/50851/).
 
 Konto-ID och Kund-ID krävs båda. De visas på fliken Konton.
 
