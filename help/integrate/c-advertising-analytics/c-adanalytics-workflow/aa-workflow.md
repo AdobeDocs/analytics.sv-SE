@@ -1,37 +1,39 @@
 ---
-description: 'null'
+description: Översikt över arbetsflödet för Advertising Analytics.
 title: Översikt över arbetsflödet
-uuid: be550622-eadb-4062-a0cb-2d66b2ddca92
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: b92beee43756a3c5ec3902eee4ffaab0bcd43ce9
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 3%
 
 ---
 
 
 # Översikt över arbetsflödet
 
-![](assets/step1_icon.png) Mappa alla Analytics-rapportsviter där du vill visa Google/Bing-sökdata för din Experience Cloud-organisation.
+![](assets/step1_icon.png) Mappa alla Adobe Analytics-rapportsviter där du vill visa Google-/Bing-sökdata till din Experience Cloud-organisation.
 
 Se [Mappa rapportsviter till en organisation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
 
-![](assets/step2_icon.png) [Aktivera rapportering av annonsanalys per rapportserie](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md)
+![](assets/step2_icon.png) [Aktivera rapportering av annonsanalys per rapportsserie](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md)
 
-Aktiverar annonsanalysrapportering för Experience Cloud-aktiverade rapportsviter.
+Aktiverar [!UICONTROL Advertising Analytics] rapportering för Experience Cloud-aktiverade rapportsviter.
 
 ![](assets/step3_icon.png) [Konfigurera ett Advertising Analytics-konto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md)
 
 Konfigurera i Analytics Admin Tools.
 
-![](assets/step4_icon.png) Rapport [om reklamdata i Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-report-ad-data-an.md)
+![](assets/step4_icon.png) [Rapport om marknadsföringsdata i Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-report-ad-data-an.md)
 
 Obs! Sökdata hämtas från sökmotorerna runt 6.00 (06.00) i tidszonen i Adobe Analytics datacenter. Detta är när AMO-data samlas in och infogas i rapportsviten. Den konverteras sedan till rapportsvitens tidszon som en del av infogningen av data i Analytics.
 
 Rapporter finns i
 
-* Analysis Workspace-mallen &quot;Paid Search Performance&quot;
+* Analysis Workspace: [!UICONTROL Paid Search Performance] mall
 * Rapporter och analyser
 * Report Builder
-* API för analysrapportering
+* API för Analytics-rapportering
 
 ![](assets/step5_icon.png) [Hantera annonskonton](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manage-ad-accounts.md)
 
