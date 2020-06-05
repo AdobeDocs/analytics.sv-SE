@@ -2,23 +2,26 @@
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: acdaebf3c96d7cf1f0e5fed4a459968a83c89fbd
+workflow-type: tm+mt
+source-wordcount: '2004'
+ht-degree: 0%
 
 ---
 
 
 # Bearbetningsregler för marknadsföringskanaler
 
-Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
+Bearbetningsreglerna för marknadsföringskanaler avgör om en besökare når upp till de kriterier som tilldelats en kanal genom att bearbeta varje träff en besökare gör på din webbplats. Reglerna bearbetas i den ordning som du anger, och när en regel uppfylls avbryts bearbetningen av de återstående reglerna.
 
-Här följer viktiga riktlinjer för att skapa regler:
+![](assets/buckets_2.png)
 
-* Sortera reglerna i den ordning som du vill att de ska bearbetas.
-* Ta med en regel som fångar upp alla, till exempel Annan, i slutet av listan. Den här regeln identifierar extern trafik men inte intern trafik.
-
-   Se [Ingen kanal identifierad.](/help/components/c-marketing-channels/c-faq.md)
-
->[!NOTE] Även om dessa regler inte påverkar rapportering utanför marknadsföringskanaler påverkar de datainsamlingen för marknadsföringskanaler. Data som samlas in med dessa regler är helt permanenta, och regler som ändras efter det att data har samlats in är inte retroaktiva. Vi rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar, [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
+Ytterligare information om bearbetning:
+* Data som samlas in med dessa regler är helt permanenta, och regler som ändras efter det att data har samlats in är inte retroaktiva. Vi rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar, [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
+* Rapporten kan bearbeta upp till 25 kanaler i taget.
+* Regler kan komma åt variabler som har angetts av VISTA, men de kan inte komma åt data som har tagits bort av VISTA.
+* Två marknadsföringskanaler får aldrig någon kredit för samma event (som köp eller klick). På så sätt skiljer sig marknadsföringskanalerna från eVars (där två eVars kan få krediter för samma händelse).
+* Om det finns ett luckor i reglerna kan du se [Ingen kanal identifierad.](/help/components/c-marketing-channels/c-faq.md)
 
 ## Förutsättningar
 
@@ -32,45 +35,39 @@ Skapa regler för bearbetning av marknadsföringskanaler, som avgör om en besö
 I den här proceduren används en e-postregel som exempel. Exemplet förutsätter att du har lagt till en e-postkanal i din lista över kanaler på sidan för Marketing Channel Manager.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. Välj en rapportsvit.
+2. Välja en rapportsvit.
 
    Om inga kanaler har definierats för rapportsviten visas [!UICONTROL Marketing Channels: Auto Setup] sidan.
 
    Se [Köra den automatiska installationen](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 
-1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Processing Rules]**.
+3. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Processing Rules]**.
 
    ![Stegresultat](assets/marketing_channel_rules.png)
 
-1. Välj på **[!UICONTROL Add New Rule Set]** menyn **[!UICONTROL Email]**.
+4. Välj på **[!UICONTROL Add New Rule Set]** menyn **[!UICONTROL Email]**.
 
-   Här väljer du inte kanal, utan en mall som fyller i regeln med några av de nödvändiga parametrarna.
+   Här väljer du inte kanal, utan en mall som fyller i regeln med några av de nödvändiga parametrarna. Du kan ändra den här mallen efter behov.
 
    ![Stegresultat](assets/example_email.png)
 
-   Använd boolesk logik (if / then-satser) för att konfigurera en regel. I en regel för e-postkanal kan du till exempel ange inställningar eller information som framhävs i följande regelsats:
+5. Om du vill fortsätta skapa regler klickar du på **[!UICONTROL Add Rule]**.
+6. Om du vill prioritera regler drar och släpper du dem till önskad plats.
+7. Klicka på **[!UICONTROL Save.]**
 
-   `"If **[!UICONTROL All]** or **[!UICONTROL Any]** of the following are true:  **[!UICONTROL Query String Parameter]** *<value>* **[!UICONTROL exists]**...`
+Fortsätt nedåt på den här sidan om du vill se rekommendationer för kanalregelordning samt fler definitionsexempel.
 
-   `"Then identify the channel as **[!UICONTROL Email]**...`
+### Ange värdet för marknadsföringskanalen
 
-   `"Then set the channel's value to **[!UICONTROL Query String Parameter]** *<value>*."`
+**[!UICONTROL Add Rule]**Ange kanalens värde]**definierar detaljdimensionen för marknadsföringskanalen som är tillgänglig för den kanalen. På så sätt kan ni dela upp dimensionerna för marknadsföringskanalen och se mer detaljerad information om kanalen.
 
-   I det här exemplet *`<value>`* är det frågesträngsparametern som du använder för din e-postkampanj, till exempel *`eml`*.
-1. Om du vill fortsätta skapa regler klickar du på **[!UICONTROL Add Rule]**.
-1. Om du vill prioritera regler drar och släpper du dem till önskad plats.
-1. Klicka på **[!UICONTROL Save.]**
+Vi rekommenderar att kanalvärdet ställs in på samma villkor som används för att definiera själva kanalen. Om frågesträngsparametern till exempel används för att definiera kanalen anger du frågesträngsparametern som kanalvärde.
 
->[!MORELIKETHIS]
->
->* [Vanliga frågor och exempel](/help/components/c-marketing-channels/c-faq.md)
+### Regelkriterier
 
+Den här referenstabellen definierar de fält, alternativ och träffattribut som du kan använda för att definiera regler för bearbetning av marknadsföringskanaler.
 
-## Regelkriterier för marknadsföringskanal
-
-Den här referenstabellen definierar de fält, alternativ och träffattribut som du kan välja på sidan Bearbetningsregler för marknadsföringskanaler.
-
-| Villkor | Definition |
+| Term | Definition |
 |--- |--- |
 | Alla | Aktiverar endast den här kanalen när alla regler i den numrerade regeln är sanna. |
 | Alla | Aktiverar den här kanalen när någon av reglerna i regeluppsättningen är true. Det här alternativet är bara tillgängligt om det finns mer än en regel i den numrerade regeln. |
@@ -101,67 +98,79 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 | Sökmotor + nyckelord | En sammanfogning av söknyckelordet och sökmotorn för att unikt identifiera sökmotorn. Om du till exempel söker efter ordet dator identifieras sökmotorn och nyckelordet enligt följande: `Search Tracking Code = "<search_type>:<search engine>:<search keyword>" where    search_type = "n" or "p", search_engine = "Google", and search_keyword = "computer"`**Obs!**n = naturlig; p = Betalad |
 | Ange kanalens värde till | Förutom att ni vet vilken marknadsföringskanal som för besökaren till er webbplats vet ni vilken banderollannons, söknyckelord eller e-postkampanj i kanalen som får tillgodoräkna er för besökarens webbplatsaktivitet. Detta ID är ett kanalvärde som lagras tillsammans med kanalen. Detta värde är ofta ett kampanj-ID som är inbäddat på landningssidan eller den refererande URL:en. i andra fall är det sökmotorn och nyckelordskombinationen för sökning, eller den refererande URL:en som identifierar besökaren från en viss kanal bäst. |
 
-## Intern kanal (Sessionsuppdatering)
+## Regelordning och definitioner för marknadsföringskanal {#channel-rules}
 
-Den interna kanalen (som ofta har bytt namn till Sessionsuppdatering) består av besök på den webbplats där den refererande URL:en matchar inställningen för interna URL-filter i Admin Console, vilket innebär att besökaren kom från webbplatsen för att påbörja sitt besök.
+Kanalreglerna bearbetas i den ordning du anger. Ett rekommenderat tillvägagångssätt vid kanalorder är att placera betalda eller hanterade kanaler först (t.ex. betalsökningar, naturlig sökning, visning, e-post) så att de får kredit, följt av organiska kanaler (t.ex. direkta, interna, refererande domäner).
+
+Nedan visas den rekommenderade ordningen för kanalregler samt exempeldefinitioner:
+
+### Betalsökning {#paid-search}
+
+Betalsökning är ett ord eller en fras som du betalar en sökmotor för placering i sökresultat. Den här kanalen definieras vanligtvis baserat på frågesträngsparametrar (se Exempel på visningskanal) eller regler för betalsökningsidentifiering. Beslutet beror på vilken detaljinformation om marknadsföringskanalen du vill spela in.
+
+#### Påvisande av betald sökning
+
+Marknadskanalen använder inställningar som är konfigurerade på [!UICONTROL Paid Search Detection] sidan för att matcha regler för betald sökningsidentifiering. ( **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Paid Search Detection]**). Mål-URL:en matchar den befintliga regeln för avkänning av betald sökning för den sökmotorn.
+
+För marknadsföringskanalregeln är [!UICONTROL Paid Search] inställningarna följande:
+
+![](assets/example_paid_search.png)
+
+Mer information finns i [Betalsökningsidentifiering](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
+
+### Naturlig sökning {#natural-search}
+
+En naturlig sökning sker när besökarna hittar din webbplats genom en webbsökning, där sökmotorn rankade din webbplats utan att du betalade för listan.
+
+Det finns ingen naturlig sökidentifiering i Analytics. När du har konfigurerat betald sökidentifiering vet systemet att om en sökreferent inte var en betalande sökreferent måste det vara en naturlig sökreferent. Mer information finns i [Betalsökningsidentifiering](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
+
+För marknadsföringskanalregeln är de naturliga sökinställningarna följande:
+
+![](assets/example_natural_search.png)
+
+### Visa {#display}
+
+Den här regeln identifierar besökare som kommer från banderollannonser. Den identifieras av en frågesträngsparameter i mål-URL:en, i det här fallet *`Ad_01`*.
+
+![](assets/example_display.png)
+
+### E-post {#email}
+
+Den här regeln identifierar besökare som kommer från e-postkampanjer. Den identifieras av en frågesträngsparameter i mål-URL, i det här fallet *`eml`*:
+
+![](assets/example_email.png)
+
+### Filialer {#afilliates}
+
+Den här regeln identifierar besökare som kommer från en angiven uppsättning referensdomäner. I regeln listas domänerna för filialer som du vill spåra enligt följande:
+
+![](assets/example_affiliates.png)
+
+### Andra kampanjer {#other-campaigns}
+
+Ett bra tillvägagångssätt är att inkludera en&quot;annan kampanjkanal&quot; som följer alla regler för betalda kanaler. Den här kanalen fungerar som en&quot;catch-all&quot; för okategoriserad betald trafik.
+
+### Sociala nätverk {#social-networks}
+
+Den här regeln identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook*. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
+
+![](assets/example_social.png)
+
+### Intern kanal (Sessionsuppdatering) {#internal}
+
+Den här regeln används av besökare där den refererande URL:en matchar inställningen för interna URL-filter i Admin Console, vilket innebär att besökaren kom från webbplatsen för att påbörja sitt besök. Den här kanalen byter ofta namn till Sessionsuppdatering.
 
 ![](assets/int-channel1.png)
 
-### Åsidosätta bästa praxis
+Mer information om varför den här kanalen används finns i [Orsaker till intern (Sessionsuppdatering)](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-faq.html) .
 
-Det är bäst att avmarkera alternativet för att åsidosätta sista-beröringen för direktkanaler och interna kanaler så att de inte kan ta åt sig kredit från andra beständiga sista beröringskanaler (eller varandra).
+### Direkt {#direct}
 
->[!NOTE]Det här dokumentet förutsätter att inställningarna för Åsidosätt inte är markerade för Uppdatera direkt och session.
+Den här regeln identifierar besökare som inte har någon hänvisande domän, vilket inkluderar besökare som kommer direkt till platsen, till exempel från en Favoriter-länk eller genom att klistra in en länk i webbläsaren. Den här kanalen byter ofta namn till Direct Typed/Bookmarked.
 
-![](assets/int-channel2.png)
+![](assets/example_direct.png)
 
-### Åtagandeperiod
+### Refererande domänkanal {#referring-domains}
 
-Både den första och sista beröringskanalen för en besökare återställs efter 30 dagars inaktivitet i den webbläsaren.
+Kanalen Refererande domäner identifierar besökare som har en refererande domän. Tillsammans fungerar domänkanalerna Internal, Direct och Referring som en catch-all för alla återstående träffar som ännu inte har kategoriserats i en kanal.
 
->[!NOTE] 30 dagar är standard och kan ändras efter behov via administratörsinställningarna.
-
-Om besökaren använder webbplatsen ofta följer besökarfönstret med. De måste vara inaktiva i 30 dagar för att perioden ska gå ut och kanalerna ska återställas.
-Exempel:
-
-* Dag 1: Användaren kommer till webbplatsen på skärmen. Första och sista-beröringskanalen ställs in på Visning.
-
-* Dag 2: Användaren kommer till webbplatsen för naturlig sökning. Första beröringen är fortfarande Visning och Sista beröringen är inställd på Naturlig sökning.
-
-* Dag 35: Användaren har inte varit på webbplatsen på 33 dagar och återkommer med fliken som han/hon hade öppnat i sin webbläsare. Om man utgår ifrån ett 30-dagars interaktionsfönster skulle fönstret ha stängts och cookies för marknadsföringskanaler skulle ha gått ut. Den första berörings- och den sista beröringskanalen återställs och ställs in på Sessionsuppdatering sedan användaren kom från en intern URL.
-
-### Relation mellan första och sista beröringen
-
-För att förstå interaktionen mellan första och sista beröringen och bekräfta att åsidosättningar fungerar som förväntat kan du ta fram en första beröringskanalrapport, som är underrelaterad till en sista beröringskanalrapport, med nyckelresultatmåttet tillagt i (se exempel nedan). Exemplet visar interaktionen mellan den första och sista beröringskanalen.
-
-![](assets/int-channel3.png)
-
-Skärningen där den första är lika med den sista beröringen markeras med orange. Både Direct- och Session Refresh-uppdatering får bara sista-beröringen om de också var den första beröringskanalen, eftersom de inte kan ta åt sig meriter från andra beständiga kanaler (markerade rader i grått).
-
-### Varför sker sessionsuppdatering?
-
-Eftersom vi vet att uppdatering av senaste sessionen bara kan utföras om det också var den första beröringen förklarar scenarierna nedan hur uppdatering av session kan vara en första beröringskanal.
-
-**Scenario 1: Tidsgräns för session**
-
-En besökare kommer till webbplatsen och lämnar sedan fliken öppen i sin webbläsare för användning vid ett senare tillfälle. Besökarens engagemangsperiod går ut (eller så tar de frivilligt bort sina cookies) och de använder den öppna fliken för att besöka webbplatsen igen. Eftersom den refererande URL:en är en intern domän kommer besöket att klassificeras som Sessionsuppdatering.
-
-**Scenario 2: Alla webbplatssidor är inte taggade**
-
-En besökare kommer till sida A som inte är taggad och går sedan till sida B som är taggad. Sidan A betraktas som den interna referenten och besöket klassificeras som Sessionsuppdatering.
-
-**Scenario 3: Omdirigeringar**
-
-Om en omdirigering inte är inställd för att skicka referensdata till den nya landningssidan, förloras alla data i den verkliga posten, och nu visas omdirigeringssidan (troligtvis en intern sida) som den refererande domänen. Besöken klassificeras som Sessionsuppdatering.
-
-**Scenario 4: Domänövergripande trafik**
-
-En besökare flyttar från en domän som utlöses till Suite A till en andra domän som utlöses till Suite B. Om de interna URL-filtren i Suite B innehåller den första domänen kommer besöket i Suite B att registreras som Internal, eftersom Marketing Channels ser det som ett nytt besök i den andra sviten. Besöken klassificeras som Sessionsuppdatering.
-
-**Scenario 5: Långa inläsningstider**
-
-En besökare hamnar på sida A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildförfrågan från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin Adobe Analytics-bildförfrågan. Eftersom Page A:s bildförfrågan aldrig har lästs in, visas den andra sidan som den första träffen av besöket i Adobe Analytics, där Sida A är referent. Besöken klassificeras som Sessionsuppdatering.
-
-**Scenario 6: Rensar cookies mitt på webbplatsen**
-
-En besökare kommer till webbplatsen och mitt-session rensar deras cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
