@@ -2,7 +2,10 @@
 title: Konfigurera ett annonskonto
 uuid: 4e37caa3-e4a5-43ad-97c0-12db62ad5283
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: 0345a71bd2dd99410658cc858fe05ee2751d0013
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -57,28 +60,9 @@ Administratörer kan också [bevilja icke-administratörer](/help/integrate/c-ad
 1. I **[!UICONTROL Tracking]** avsnittet anger du information om hur sökmotordata spåras av Adobe Analytics-implementeringen. Detta är ett nödvändigt steg för att utöka Adobe Analytics-data korrekt med sökmotordata.
 Fyll i **[!UICONTROL Tracking Settings]** följande riktlinjer:
 
-   <table id="table_1AB4E31456E84ABF8209B02058259C4D"> 
-    <thead> 
-      <tr> 
-      <th colname="col1" class="entry"> Inställning </th> 
-      <th colname="col2" class="entry"> Beskrivning </th> 
-      </tr>
-    </thead>
-    <tbody> 
-      <tr> 
-      <td colname="col1"> <p>Typ </p> </td> 
-      <td colname="col2"> 
-        <ul id="ul_1C5A0502A4984E57A08417A91CCD6FFE"> 
-        <li id="li_5736E38286FF494ABDDC6E85281D7F2A"> <span class="uicontrol"> Auto</span>: Låter Advertising Cloud Engine avgöra hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. Detta är det enklaste sättet, men kanske inte ger den bästa integrerade datauppsättningen. <p>Viktigt: Om du vill konfigurera ett sökmotorkonto i Automatiskt läge ansvarar du för följande åtgärder: 
-          <ul id="ul_4FF9D1E3CC4E452BA339E0A725D29FEE"> 
-            <li id="li_6F3A6D6259C0420CB7E6FD2C26A1B6E0">Parametern s_kwcid och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Därför kan ytterligare åtgärder krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. </li> 
-            <li id="li_A04D4AA31A934392808639E46C86573F">Nyckelord kan dessutom infogas i landnings-URL:en som en del av värdet "s_kwcid", så om de innehåller specialtecken eller symboler måste du kontrollera att webbservern kan hantera dessa tecken (ett exempel på ett vanligt specialtecken är "+" som används i nyckelorden "Bred matchning ändrad"). </li> 
-          </ul> </p> </li> 
-        <li id="li_EAA7A7CA1E584854A7EC1E43E13B63FE"><span class="uicontrol"> Manuell</span>: Gör att du kan hantera hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manual-vs-automatic-tracking.md"  > Se de här manuella spårningsexemplen för varje sökmotor</a>. </li> 
-        </ul> </td> 
-      </tr> 
-    </tbody> 
-    </table>
+   | Inställning | Beskrivning |
+   |--- |--- |
+   | Typ | <ul><li>**Auto:** Låter Advertising Cloud Engine avgöra hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. Detta är det enklaste sättet, men kanske inte ger den bästa integrerade datauppsättningen.<br>**Viktigt:**Om du vill konfigurera ett sökmotorkonto i Automatiskt läge ansvarar du för följande åtgärder:<br>- Parametern s_kwcid och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan på kontot som läggs till. Den infogas i slutet av URL:en. Därför kan ytterligare åtgärder krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en.** Obs!**Läs mer om huruvida du bör lägga till den här parametern i[Content Security Policy](https://docs.adobe.com/content/help/en/id-service/using/reference/csp.html).<br>- Nyckelord kan dessutom infogas i landnings-URL:en som en del av värdet &quot;s_kwcid&quot;, så om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken (ett exempel på ett vanligt specialtecken är &quot;+&quot; som används i nyckelorden &quot;Bred matchning ändrad&quot;).</li><li>**Manuell:** Gör att du kan hantera hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. [Se de här manuella spårningsexemplen för varje sökmotor](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manual-vs-automatic-tracking.md).</li></ul> |
 
 1. I **[!UICONTROL Mapping]** avsnittet väljer du vilka rapportsviter som ska länkas till det här sökmotorkontot. Du måste ange minst en rapportserie innan du kan spara Advertising Account. Du kan mappa flera konton till flera rapportsviter (1:1, 1:Many, Many:Many). Observera att de data som AMO hämtar från sökmotorn helt enkelt kopieras till en mappad rapportsvit, så det finns ingen delning av data.
 
