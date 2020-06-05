@@ -4,7 +4,10 @@ title: Skapa segment
 topic: Segments
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: f50f33b456656200b4492e6fec2a441d4c29dfa3
+workflow-type: tm+mt
+source-wordcount: '2309'
+ht-degree: 0%
 
 ---
 
@@ -22,8 +25,8 @@ Det finns flera sätt att komma åt segmentbyggaren:
 * **Övre navigering** i analyser: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, öppna ett projekt och klicka **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
 * **[!UICONTROL Reports & Analytics]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen och klicka sedan på **[!UICONTROL Add]**.
-* **[!UICONTROL Ad Hoc Analysis]**: Skapa [segment i ad hoc-analys](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md#build-segments).
-* **[!UICONTROL Report Builder]**: Lägg [till eller redigera segment i Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/data-requests/segmentation.html).
+* **[!UICONTROL Ad Hoc Analysis]**: [Bygg segment i ad hoc-analys](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md#build-segments).
+* **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/data-requests/segmentation.html).
 
 ## Användargränssnittet i Segment Builder {#concept_643F2DF74C544796B58F4656ABC5F726}
 
@@ -44,7 +47,7 @@ Med [!UICONTROL Segment Builder] kan du skapa och redigera segment i webbgränss
 
 1. **[!UICONTROL Title]**: Gör att du kan namnge eller byta namn på segmentet.
 1. **[!UICONTROL Description]**: Ange en beskrivning av segmentet. Du måste ange en beskrivning om du vill dela segmentet.
-1. **[!UICONTROL Tags]**: Du kan [tagga segmentet](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md) genom att välja från en lista med befintliga taggar eller skapa en ny tagg.
+1. **[!UICONTROL Tags]**: [Tagga det segment](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md) du skapar genom att välja från en lista med befintliga taggar eller genom att skapa en ny tagg.
 1. **[!UICONTROL Definitions]**: Här [skapar och konfigurerar du segment](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md), lägger till regler och kapslar in behållare och sekvensbehållare. Gör att du kan ange en beskrivning för det nya segmentet genom att markera behållaren och dra och släppa dimensioner, segment eller mått i definitionen.
 1. **[!UICONTROL Show]**: (Översta behållarväljare.) Gör att du kan välja [behållaren](/help/components/c-segmentation/seg-overview.md) på den översta nivån ( [!UICONTROL Visitor], [!UICONTROL Visit], [!UICONTROL Hit]). Standardbehållaren på den översta nivån är Träff-behållaren.
 1. **[!UICONTROL Options]**: (kugghjulsikon)
@@ -60,8 +63,8 @@ Med [!UICONTROL Segment Builder] kan du skapa och redigera segment i webbgränss
    * **[!UICONTROL Non-repeating instance]**: Inkluderar unika instanser (icke-upprepande) för dimensionen.
    ![](assets/attribution-models.jpg)
 
-1. **[!UICONTROL Dimensions]**: Dimensionen dras och tas bort från dimensionslistan (orange sidofält).
 1. **[!UICONTROL Comparison]**: Du kan jämföra och begränsa värden med valda operatorer.
+1. **[!UICONTROL Dimensions]**: Dimensionen dras och tas bort från dimensionslistan (orange sidofält).
 1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
 1. **[!UICONTROL And/Or/Then]**: Tilldelar operatorer mellan behållare eller regler [!UICONTROL AND/OR/THEN] . Med operatorn THEN kan du [definiera sekventiella segment](/help/components/c-segmentation/c-segmentation-workflow/seg-sequential-build.md).
 1. **[!UICONTROL Metric]**: (Grönt sidofält) Mätvärden som har dragits och tagits bort från listan Metrisk.
@@ -176,7 +179,7 @@ Genom att använda segmentstackning kan du minska antalet segment till 22 och st
 
 Mallar representerar de gamla förkonfigurerade segmenten och svitsegmenten.
 
-Klicka i segmenthanteraren **[!UICONTROL Add]** så öppnas segmentbyggaren. Klicka nu på segmentikonen ![](assets/segment_icon.png)
+Klicka i segmenthanteraren **[!UICONTROL Add]** så öppnas segmentbyggaren. Klicka nu på segmentikonen  ![](assets/segment_icon.png)
 
 för att ta upp segmenträlen. Segmentmallarna visas längst ned i segmentlistan. De kan urskiljas med en mappikon till vänster om mallnamnet:
 
