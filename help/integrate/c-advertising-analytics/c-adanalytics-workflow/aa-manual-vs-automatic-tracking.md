@@ -1,9 +1,11 @@
 ---
 description: Spårning avgör hur sökmotordata spåras av Adobe Analytics-implementeringen. Detta är ett nödvändigt steg för att utöka Adobe Analytics-data korrekt med sökmotordata.
 title: Spåra manuellt läge och automatiskt läge
-uuid: c6ce7901-7b65-48b6-b65f-f29cc47b7454
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: b92beee43756a3c5ec3902eee4ffaab0bcd43ce9
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 0%
 
 ---
 
@@ -20,11 +22,14 @@ I det automatiska läget kan du låta Advertising Cloud Engine bestämma hur sö
 
 Därför måste du markera kryssrutan Bekräftelse när du väljer Auto-läge innan du kan spara kontoinställningen.
 
-
 Observera att du ansvarar för följande åtgärder när du konfigurerar ett sökmotorkonto i Automatiskt läge:
 
-* Parametern s_kwcid och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Ytterligare åtgärder kan krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. **Det är ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan.**
-* Dessutom kan nyckelord infogas i landnings-URL:en som en del av värdet &quot;s_kwcid&quot;. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Exempel: Ett vanligt specialtecken är&quot;+&quot;, som används i nyckelorden&quot;Bred Match Modified&quot;.
+* Parametern `s_kwcid` och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Ytterligare åtgärder kan krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. **Det är ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan.**
+* Dessutom kan nyckelord infogas i landnings-URL:en som en del av `s_kwcid` värdet. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Exempel: Ett vanligt specialtecken är&quot;+&quot;, som används i nyckelorden&quot;Bred Match Modified&quot;.
+
+>[!IMPORTANT]
+>
+>Läs mer om huruvida du bör lägga till parametern `s_kwcid` i [Content Security Policy](https://docs.adobe.com/content/help/en/id-service/using/reference/csp.html).
 
 ## Manuell lägesspårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 
