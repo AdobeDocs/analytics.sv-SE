@@ -1,13 +1,16 @@
 ---
 description: Läs om bästa praxis och exempel på hur ni kan fylla i olika regler som ni kan konfigurera för era marknadsföringskanaler.
-title: Vanliga frågor och exempel om marknadsföringskanaler
+title: Vanliga frågor om marknadsföringskanaler
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: d26edeed2f8d2c78c6e8cddaf8973870372a8b3d
+workflow-type: tm+mt
+source-wordcount: '1087'
+ht-degree: 0%
 
 ---
 
 
-# Vanliga frågor och exempel om marknadsföringskanaler
+# Vanliga frågor om marknadsföringskanaler
 
 Se [Skapa regler](/help/components/c-marketing-channels/c-rules.md) för bearbetning av marknadsföringskanaler för definitioner av fält som visas på [!UICONTROL Marketing Channel Processing Rules] sidan.
 
@@ -54,7 +57,15 @@ Se till att du har en kanal för de här tre möjligheterna. Skapa till exempel 
 
 Skapa slutligen en *annan* kanal som fångar upp de återstående träffarna, enligt beskrivningen i [Ingen kanal identifierad](/help/components/c-marketing-channels/c-faq.md#no-channel-identified).
 
-## Ingen kanal identifierad {#no-channel-identified}
+## Relation mellan första och sista beröringen
+
+För att förstå interaktionen mellan äldre första och sista beröringsdimensioner och bekräfta att åsidosättningar fungerar som förväntat, kan du ta fram en första beröringskanalrapport, som är underrelaterad till en sista beröringskanalrapport, med nyckelresultatmåttet tillagt i (se exempel nedan). Exemplet visar interaktionen mellan den första och sista beröringskanalen.
+
+![](assets/int-channel3.png)
+
+Skärningen där den första motsvarar den sista beröringen är tabellens diagonala. Både Direct- och Session Refresh får bara sista-beröringen om de också var den första beröringskanalen, eftersom de inte kan ta åt sig meriter från andra beständiga kanaler (markerade rader).
+
+## Orsaker till att ingen kanal har identifierats {#no-channel-identified}
 
 Om reglerna inte samlar in data, eller om reglerna inte är korrekt konfigurerade, visar rapporten data på rapportraden i [!UICONTROL No Channel Identified] rapporten. Du kan skapa en regeluppsättning med namnet *Annan*, till exempel i slutet av bearbetningsordningen, som även identifierar intern trafik.
 
@@ -64,65 +75,31 @@ Den här typen av regel fungerar som en&quot;catch all&quot;-regel för att säk
 
 >[!NOTE] Det kan fortfarande finnas kanaltrafik som kan ingå i kategorin Ingen kanal identifierad. Till exempel: En besökare kommer till webbplatsen och bokmärker en sida, och på samma besök kommer sidan tillbaka via bokmärket. Eftersom detta inte är den första sidan av besöket kommer det inte att gå vare sig i direktkanalen eller i den andra kanalen eftersom det inte finns någon referensdomän.
 
-## Betalsökning {#paid-search}
+## Orsaker till internt (sessionsuppdatering) {#internal}
 
-En betald sökning är ett ord eller en fras som du använder som sökmotor för placering i sökresultat. Marknadskanalen använder inställningar som är konfigurerade på [!UICONTROL Paid Search Detection] sidan för att matcha regler för betald sökningsidentifiering. ( **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Paid Search Detection]**). Mål-URL:en matchar den befintliga regeln för avkänning av betald sökning för den sökmotorn.
+Senaste-beröringen av sessionsuppdatering kan bara utföras om det också var den första beröringen - se Relation mellan första och sista beröringen ovan. Scenarierna nedan förklarar hur Sessionsuppdatering kan vara en kanal med första klicket.
 
-För marknadsföringskanalregeln är [!UICONTROL Paid Search] inställningarna följande:
+**Scenario 1: Tidsgräns för session**
 
-![](assets/example_paid_search.png)
+En besökare kommer till webbplatsen och lämnar sedan fliken öppen i sin webbläsare för användning vid ett senare tillfälle. Besökarens engagemangsperiod går ut (eller så tar de frivilligt bort sina cookies) och de använder den öppna fliken för att besöka webbplatsen igen. Eftersom den refererande URL:en är en intern domän kommer besöket att klassificeras som Sessionsuppdatering.
 
-Mer information finns i [Betalsökningsidentifiering](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
+**Scenario 2: Alla webbplatssidor är inte taggade**
 
-## Naturlig sökning {#natural-search}
+En besökare kommer till sida A som inte är taggad och går sedan till sida B som är taggad. Sidan A betraktas som den interna referenten och besöket klassificeras som Sessionsuppdatering.
 
-En naturlig sökning sker när besökarna hittar din webbplats genom en webbsökning, där sökmotorn rankade din webbplats utan att du betalade för listan. Du kan styra den mål-URL som sökmotorn använder för att länka till webbplatsen. Med den här URL:en kan Analytics identifiera om en sökning är naturlig.
+**Scenario 3: Omdirigeringar**
 
-Det finns ingen naturlig sökidentifiering i Analytics. När du har konfigurerat betald sökidentifiering vet systemet att om en sökreferent inte var en betalande sökreferent måste det vara en naturlig sökreferent. För en naturlig sökning matchar mål-URL:en inte den befintliga regeln för avkänning av betald sökning för den sökmotorn.
+Om en omdirigering inte är inställd för att skicka referensdata till den nya landningssidan, förloras alla data i den verkliga posten, och nu visas omdirigeringssidan (troligtvis en intern sida) som den refererande domänen. Besöken klassificeras som Sessionsuppdatering.
 
-För marknadsföringskanalregeln är de naturliga sökinställningarna följande:
+**Scenario 4: Domänövergripande trafik**
 
-![](assets/example_natural_search.png)
+En besökare flyttar från en domän som utlöses till Suite A till en andra domän som utlöses till Suite B. Om de interna URL-filtren i Suite B innehåller den första domänen kommer besöket i Suite B att registreras som Internal, eftersom Marketing Channels ser det som ett nytt besök i den andra sviten. Besöken klassificeras som Sessionsuppdatering.
 
-Mer information finns i [Betalsökningsidentifiering](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
+**Scenario 5: Långa inläsningstider**
 
-## Filialer {#afilliates}
+En besökare hamnar på sida A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildförfrågan från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin Adobe Analytics-bildförfrågan. Eftersom Page A:s bildförfrågan aldrig har lästs in, visas den andra sidan som den första träffen av besöket i Adobe Analytics, där Sida A är referent. Besöken klassificeras som Sessionsuppdatering.
 
-En filialregel identifierar besökare som kommer från en angiven uppsättning refererande domäner. I regeln listas domänerna för filialer som du vill spåra enligt följande:
+**Scenario 6: Rensar cookies mitt på webbplatsen**
 
-![](assets/example_affiliates.png)
-
-## Sociala nätverk {#social-networks}
-
-Den här regeln identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook*. Inställningarna kan vara följande:
-
-![](assets/example_social.png)
-
-## Visa {#display}
-
-Den här regeln identifierar besökare som kommer från banderollannonser. Den identifieras av en frågesträngsparameter i mål-URL:en, i det här fallet *`Ad_01`*.
-
-![](assets/example_display.png)
-
-## Intern {#internal}
-
-Den här regeln identifierar besökare som kommer från en referent som matchar de interna URL-filtren för rapportsviten.
-
-![](assets/example_internal.png)
-
-## E-post {#email}
-
-Om du vill konfigurera den här regeln anger du frågesträngsparametern för din e-postkampanj. I det här exemplet är parametern *`eml`*:
-
-![](assets/example_email.png)
-
-Om regeln innehåller spårningskoder anger du ett värde per rad, så som visas här:
-
-![](assets/tracking_code.png)
-
-## Direkt {#direct}
-
-Den här regeln identifierar besökare som inte har någon hänvisande domän. Den här regeln omfattar besökare som kommer direkt till webbplatsen, till exempel från en Favoriter-länk eller genom att klistra in en länk i webbläsaren.
-
-![](assets/example_direct.png)
+En besökare kommer till webbplatsen och mitt-session rensar deras cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
 
