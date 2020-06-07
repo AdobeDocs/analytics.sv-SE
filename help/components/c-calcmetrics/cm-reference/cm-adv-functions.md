@@ -3,7 +3,10 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 title: Referera till avancerade funktioner
 uuid: 7d1071b9-1737-4b7c-b318-87907dae5619
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: a5eeb8016f948c45973841c0ab574a0416fdfc3c
+workflow-type: tm+mt
+source-wordcount: '2908'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ Om du till exempel har ett intäktsmått och sedan lägger till ett sidvymått i
 
 Å andra sidan, om du har två mätvärden som du är intresserad av, kan det vara svårt att säga att en har ett högre genomsnitt eller ett lägre värde, eftersom vissa av raderna var nollor, så du skulle inte kontrollera parametern så att den inkluderar nollorna.
 
-## OCH {#concept_E14513FE464F4491AD0D4130D4EE621C}
+## AND {#concept_E14513FE464F4491AD0D4130D4EE621C}
 
 Returnerar värdet för dess argument. Använd NOT för att kontrollera att ett värde inte är lika med ett visst värde.
 
@@ -119,8 +122,8 @@ ESTIMATE.EXP(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Cdf-T {#concept_4E2F2673532A48B5AF786521DE428A66}
 
@@ -237,8 +240,8 @@ INTERCEPT.EXP(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Exponentiell regression: Lutning (tabell) {#concept_230991B0371E44308C52853EFA656F04}
 
@@ -250,8 +253,8 @@ SLOPE.EXP(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Våning (rad) {#concept_D368150EC3684077B284EE471463FC31}
 
@@ -307,7 +310,7 @@ TANH(metric)
 
 | Argument | Beskrivning |
 |---|---|
-| *mått* | Vinkeln i radianer som du vill hitta den hyperboliska tangenten för. |
+| *mått* | Vinkeln i radianer som du vill hitta hyperbolisk tangent för. |
 
 ## IF (rad) {#concept_6BF0F3EAF3EF42C288AEC9A79806C48E}
 
@@ -382,8 +385,8 @@ INTERCEPT.LOG(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Loggregression: Förutsedd Y (rad) {#concept_5F3A9263BBB84E6098160A4DFB9E3607}
 
@@ -397,8 +400,8 @@ ESTIMATE.LOG(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Loggregression: Lutning (tabell) {#concept_B291EFBE121446A6B3B07B262BBD4EF2}
 
@@ -410,8 +413,8 @@ SLOPE.LOG(metric_A, metric_B)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_A* | Ett mätvärde som du vill ange som beroende data. |
-| *metrisk_B* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_A* | Ett mätvärde som du vill ange som oberoende data. |
+| *metrisk_B* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Naturlig logg {#concept_D3BE148A9B84412F8CA61734EB35FF9E}
 
@@ -491,8 +494,8 @@ Returnerar spärren *b* mellan två metriska kolumner (*metric_X* och *metric_Y*
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Strömregression: Förutsedd Y (rad) {#concept_CD652C0A921D4EFBA8F180CB8E486B18}
 
@@ -504,8 +507,8 @@ Beräknar de förväntade [!DNL y] värdena ( [!DNL metric_Y]), med hänsyn till
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Strömregression: Lutning (tabell) {#concept_5B9E71B989234694BEB5EEF29148766C}
 
@@ -517,8 +520,8 @@ SLOPE.POWER(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Kvadratisk regression: Korrelationskoefficient (tabell) {#concept_9C9101A456B541E69BA29FCEAC8CD917}
 
@@ -543,8 +546,8 @@ INTERCEPT.POWER(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Kvadratisk regression: Förutsedd Y (rad) {#concept_2F1ED70B1BDE4664A61CC09D30C39CBB}
 
@@ -556,7 +559,7 @@ ESTIMATE.QUADRATIC(metric_A, metric_B)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_A* | Ett mätvärde som du vill ange som beroende data. |
+| *metric_A* | Ett mätvärde som du vill ange som oberoende data. |
 | *metrisk_B* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Kvadratisk regression: Lutning (tabell) {#concept_0023321DA8E84E6D9BCB06883CA41645}
@@ -569,8 +572,8 @@ SLOPE.QUADRATIC(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Ömsesidig regression: Korrelationskoefficient (tabell) {#concept_EBEC509A19164B8AB2DBDED62F4BA2A5}
 
@@ -595,8 +598,8 @@ INTERCEPT.RECIPROCAL(metric_A, metric_B)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Ömsesidig regression: Förutsedd Y (rad) {#concept_2CF4B8F417A84FE98050FE488E227DF8}
 
@@ -608,8 +611,8 @@ ESTIMATE.RECIPROCAL(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Ömsesidig regression: Lutning (tabell) {#concept_8A8B68C9728E42A6BFDC6BD5CBDCCEC5}
 
@@ -621,8 +624,8 @@ SLOPE.RECIPROCAL(metric_X, metric_Y)
 
 | Argument | Beskrivning |
 |---|---|
-| *metric_X* | Ett mätvärde som du vill ange som beroende data. |
-| *metric_Y* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_X* | Ett mätvärde som du vill ange som oberoende data. |
+| *metric_Y* | Ett mätvärde som du vill ange som beroende data. |
 
 ## Sinus (rad) {#concept_21C8C3AA835947A28B53A4E756A7451E}
 
