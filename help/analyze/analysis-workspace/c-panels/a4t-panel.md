@@ -2,9 +2,9 @@
 description: Med Analytics for Target-panelen (A4T) kan ni analysera era Adobe Target-aktiviteter och -upplevelser i Analysis Workspace.
 title: Analyser för målpanelen (A4T)
 translation-type: tm+mt
-source-git-commit: 516557c04acbc7300925ed3d13ac3c087f3ed3de
+source-git-commit: 354bc118c869bd926a1cef0a75f5133d1a410cd5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '608'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Analytics for Target panel]** har för närvarande begränsad testning. [Läs mer](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
+>**[!UICONTROL Analytics for Target (A4T)]** Panelen har för närvarande begränsad testning. [Läs mer](https://docs.adobe.com/content/help/en/analytics/landing/an-releases.html)
 
 På A4T-panelen (Analytics for Target) kan du analysera dina Adobe Target-aktiviteter och -upplevelser i Analysis Workspace. Det gör det också möjligt för er att se hur ni lyfter och litar på upp till tre framgångsvärden. Om du vill komma åt A4T-panelen går du till en rapportsvit där A4T-komponenter är aktiverade. Klicka sedan på panelikonen längst till vänster och dra Analytics for Target-panelen till Analysis Workspace Project.
 
