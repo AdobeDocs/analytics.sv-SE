@@ -2,7 +2,7 @@
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 translation-type: tm+mt
-source-git-commit: acdaebf3c96d7cf1f0e5fed4a459968a83c89fbd
+source-git-commit: 8e8eb2c7787f97104c983cc4b0f11e5ed57de069
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 0%
@@ -150,6 +150,8 @@ Den här regeln identifierar besökare som kommer från en angiven uppsättning 
 
 Ett bra tillvägagångssätt är att inkludera en&quot;annan kampanjkanal&quot; som följer alla regler för betalda kanaler. Den här kanalen fungerar som en&quot;catch-all&quot; för okategoriserad betald trafik.
 
+![](assets/other-campaigns.png)
+
 ### Sociala nätverk {#social-networks}
 
 Den här regeln identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook*. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
@@ -174,3 +176,4 @@ Den här regeln identifierar besökare som inte har någon hänvisande domän, v
 
 Kanalen Refererande domäner identifierar besökare som har en refererande domän. Tillsammans fungerar domänkanalerna Internal, Direct och Referring som en catch-all för alla återstående träffar som ännu inte har kategoriserats i en kanal.
 
+![](assets/referring-domains.png)
