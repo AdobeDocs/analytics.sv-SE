@@ -3,7 +3,10 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 translation-type: tm+mt
-source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
+source-git-commit: 8e8eb2c7787f97104c983cc4b0f11e5ed57de069
+workflow-type: tm+mt
+source-wordcount: '1088'
+ht-degree: 2%
 
 ---
 
@@ -21,22 +24,12 @@ Mer information om produktjämförelser i Adobe Analytics finns [här](/help/adm
 **[Rapporter och analyser](/help/analyze/reports-analytics/overview/report-overview.md)**ska användas:
 
 * Av nybörjare som behöver tillgång till fördefinierade rapporter som är enklare att navigera i.
-* För att förstå Target-aktivitet (Analytics for Target/A4T) och öka förtroendet.
 * Få åtkomst till realtidsdata i användargränssnittet.
 * Så här ställer du in kalenderhändelser.
 * Så här ställer du in mål.
 * Så här visar du Bot-rapportering.
 * För att få tillgång till unika videovisualiseringar av Concurrent Viewer, Video Daypart och Viewer Drop-off.
 * För att utnyttja publiceringslistor i schemalagda rapporter.
-
-**[Användargränssnittet](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)**för mobiltjänster ska användas:
-
-* Om du vill ha en vy över data i mobilappen separat.
-* Så här hanterar du implementeringen av din SDK för mobilappar.
-* För att konfigurera mobilannonsering, till exempel meddelanden i appen, push-meddelanden och positionering.
-* Om mer interaktiva visualiseringar önskas för appdata (Sunburst).
-* Så här visualiserar du intressepunkter på en karta.
-* För livstidsvärden.
 
 **[Ad hoc-analys](/help/analyze/ad-hoc-analysis/adhoc-home.md)**ska användas:
 
