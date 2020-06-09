@@ -3,7 +3,10 @@ description: Visar information om webbplatsåtkomst från en mobil enhet. Mobilr
 title: Mobilrapporter
 uuid: feb1fc34-3541-4b2d-b9cb-84d2e91d9539
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 67dd053b71a2e718539956fbfe775f782ec26557
+workflow-type: tm+mt
+source-wordcount: '1376'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter för
 
 Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter förbättrar besökaridentifieringen genom att samla in data om mobila enheter som används för att visa webbplatsen. Mobilrapporter kan identifiera en enhets tillverkare och funktioner, som skärmstorlekar, video-, ljud- och cookie-stöd och andra mätvärden. Mobilrapporter finns för alla rapportsviter.
 
-Om du vill förbättra besökaridentifieringen för mobila enheter måste du vara med på operatörens lista (vit lista) för att kunna skicka prenumerations-ID:n till en domän. (Du kan visa transportföretaget i **[!UICONTROL Visitor Profile]** >- **[!UICONTROL Domains]** rapporten.)
+Om du vill förbättra besökaridentifieringen för mobila enheter måste du vara med på listan över tillåtna användare (&quot;tillåten&quot;) för att kunna skicka prenumerations-ID:n till en domän. (Du kan visa transportföretaget i **[!UICONTROL Visitor Profile]** >- **[!UICONTROL Domains]** rapporten.)
 
 >[!NOTE] Om du vill visa rapporter på en mobil enhet loggar du in på [Experience Cloud](https://login.experiencecloud.adobe.com).
 
@@ -61,7 +64,7 @@ Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bildsupportrapport </p> </td> 
-   <td colname="col2"> <p>Grupperar mobila enheter baserat på de typer av bilder de stöder. Om till exempel en besökares telefon som stöder <span class="filepath"> .jpg</span> -bilder kommer åt en webbplats, ökas rapporten <span class="wintitle"> Bildstöd</span> med minst en. Om telefonen har stöd för mer än ett bildformat kan ett besök på en webbplats resultera i flera steg för det besöket. Med andra ord, om telefonen har stöd för <span class="filepath"> .jpg</span>-, <span class="filepath"> .png</span>- och <span class="filepath"> .gif</span> -format ökas var och en av grupperna i rapporten. Summan av grupperna kan därför vara större än summan som visas längst ned i rapporten. </p> </td> 
+   <td colname="col2"> <p>Grupperar mobila enheter baserat på de typer av bilder de stöder. Om till exempel en besökares telefon som har stöd för <span class="filepath"> .jpg</span> -bilder kommer åt en webbplats, ökas rapporten <span class="wintitle"> Bildstöd</span> med minst en. Om telefonen har stöd för mer än ett bildformat kan ett besök på en webbplats resultera i flera steg för det besöket. Med andra ord, om telefonen har stöd för <span class="filepath"> .jpg</span>-, <span class="filepath"> .png</span>- och <span class="filepath"> .gif</span> -format ökas var och en av grupperna i rapporten. Summan av grupperna kan därför vara större än summan som visas längst ned i rapporten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Färgdjupsrapport </p> </td> 
