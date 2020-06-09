@@ -2,14 +2,17 @@
 title: Slutet av livscykeln för [!UICONTROL Tvinga IP-inloggningsbegränsningar]
 description: Lär dig mer om timing och konsekvenser för [!UICONTROL Tvinga begränsningar för IP-inloggning]
 translation-type: tm+mt
-source-git-commit: 940638b77f800b471f1ce4097a8ca6de98d518d3
+source-git-commit: 67dd053b71a2e718539956fbfe775f782ec26557
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 0%
 
 ---
 
 
 # Slutet av livscykeln för [!UICONTROL Enforce IP login restrictions]
 
-Med funktionen **[Använd begränsningar](/help/admin/company/security-manager.md)**för IP-inloggning i Adobe Analytics kan ni vitlista specifika IP-adresser (som anses säkra) för att tillåta lyckade inloggningar och åtkomst till Adobe Analytics-miljön. I många fall används den här funktionen för att konfigurera en företags-IP-adress som den enda säkra IP-adressen som användare kan logga in från. För att kunna använda Adobe Analytics måste användarna antingen vara på ett företagskontor eller logga in i nätverket via VPN.
+Med funktionen **[Använd begränsningar](/help/admin/company/security-manager.md)**för IP-inloggning i Adobe Analytics kan ni lägga till specifika IP-adresser (som anses säkra) i en lista över tillåtna adresser, så att ni kan logga in och få tillgång till Adobe Analytics-miljön. I många fall används den här funktionen för att konfigurera en företags-IP-adress som den enda säkra IP-adressen som användare kan logga in från. För att kunna använda Adobe Analytics måste användarna antingen vara på ett företagskontor eller logga in i nätverket via VPN.
 
 Vi planerar att avsluta den här funktionen i januari 2021.
 
