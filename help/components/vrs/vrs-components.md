@@ -4,13 +4,16 @@ title: Komponenturval för Virtual Report Suite
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
 translation-type: tm+mt
 source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 7%
 
 ---
 
 
 # Komponenturval för Virtual Report Suite
 
-Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
+Virtuella rapportsviter kan struktureras för att inkludera och exkludera komponenter.i Analysis Workspace.
 
 >[!NOTE] Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och förvaltade virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. Med den [uppdaterade kurationsupplevelsen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate-projects-vrs.html) får du mer detaljerad kontroll över vilka komponenter som är synliga.
 
@@ -31,11 +34,11 @@ Om du vill aktivera komponenturval
    * [!UICONTROL Ad Hoc Analysis]
    * [!UICONTROL Data Warehouse]
    * [!UICONTROL Report Builder]
-   * API för analysrapportering
+   * API för Analytics-rapportering
    När du har markerat det här alternativet kan du lägga till de komponenter som du vill ska ingå i den virtuella rapportsviten genom att dra de tillämpliga komponenterna från kolumnen&quot;Uteslutna komponenter&quot; till kolumnen&quot;inkluderade komponenter&quot;. De komponenter som kan inkluderas och exkluderas är:
 
    * Dimensioner
-   * Mått
+   * Mätvärden
    * Segment
    * Datumintervall
    >[!NOTE]
