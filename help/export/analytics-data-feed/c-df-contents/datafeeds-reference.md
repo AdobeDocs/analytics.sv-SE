@@ -2,16 +2,19 @@
 description: Tabelldata som beskriver kolumnerna i dataflödet.
 keywords: Data Feed;columns
 subtopic: data feeds
-title: Referens för datakolumn
+title: Referens för datakolumner
 topic: Reports and analytics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+workflow-type: tm+mt
+source-wordcount: '3650'
+ht-degree: 0%
 
 ---
 
 
-# Referens för datakolumn
+# Referens för datakolumner
 
 Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De flesta implementeringar använder inte alla kolumner, så den här sidan kan refereras när du avgör vilka kolumner som ska inkluderas i en datafeedexport.
 
@@ -145,7 +148,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `new_visit` | Flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobes servrar efter 30 minuters inaktivitet. | tinyint unsigned |
 | `os` | Numeriskt ID som representerar besökarens operativsystem. Baserat på kolumnen user_agent. Använder OS-sökning. | int unsigned |
 | `p_plugins` | Används inte längre. Lista över plugin-program som är tillgängliga för webbläsaren. Använder JavaScript-funktionen navigator.plugins(). | text |
-| `page_event` | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). Se [Sökning efter](datafeeds-page-event.md)sidhändelser. | tinyint unsigned |
+| `page_event` | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). See [Page event lookup](datafeeds-page-event.md). | tinyint unsigned |
 | `page_event_var1` | Används endast vid förfrågningar om länkspårningsbilder. URL-adressen till den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickat på. | text |
 | `page_event_var2` | Används endast vid förfrågningar om länkspårningsbilder. Länkens anpassade namn (om det anges). | varchar(100) |
 | `page_event_var3` | Används inte längre. Behållna data från undersökningen och mediemodulen. Fyllda gamla videorapporter i tidigare versioner av Adobe Analytics. | text |
@@ -256,15 +259,15 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `videoshow` | Videoprogram | varchar(255) |
 | `videoshowtype` | Videovisningstyp | varchar(255) |
 | `videostreamtype` | Typ av videoström | varchar(255) |
-| `visid_high` | Används i kombination med visid_low för att unikt identifiera ett besök. | bigint unsigned |
-| `visid_low` | Används i kombination med visid_high för att unikt identifiera ett besök. | bigint unsigned |
+| `visid_high` | Används i kombination med visid_low för att unikt identifiera en besökare. | bigint unsigned |
+| `visid_low` | Används i kombination med visid_high för att unikt identifiera en besökare. | bigint unsigned |
 | `visid_new` | Flagga som identifierar om träffen innehåller ett nyligen genererat besökar-ID. | char(1) |
 | `visid_timestamp` | Om besökar-ID nyligen genererades, anger tidsstämpeln (i Unix-tid) för när besökar-ID genererades. | int |
 | `visid_type` | Numeriskt ID som representerar vilken metod som användes för att identifiera besökaren. <br>0: Anpassat besökarID <br>1: IP-adress och reserv för användaragent <br>2: HTTP Mobile Subscriber Header <br>3: Äldre cookie-värde (s_vi) <br>4: Värde för reservcookie (s_fid) <br>5: Identitetstjänst | tinyint unsigned |
 | `visit_keywords` | Variabel som används i söknyckelordsdimensionen. I den här kolumnen används en teckengräns som inte är standard för att rymma den serverlogik som används av Adobe. | varchar(244) |
 | `visit_num` | Variabel som används i dimensionen Besöksnummer. Börjar vid 1 och ökar stegvis varje gång ett nytt besök påbörjas per besökare. | int unsigned |
-| `visit_page_num` | Variabel som används i dimensionen Träff. Ökar med 1 för varje träff som användaren skapar. Återställer varje besök. | int unsigned |
-| `visit_ref_domain` | Baserat på kolumnen visit_reference. Den första refererande domänen för besöket. | varchar(100) |
+| `visit_page_num` | Variabel som används i dimensionen Träff. Increases by 1 for each hit the user generates. Återställer varje besök. | int unsigned |
+| `visit_ref_domain` | Baserat på kolumnen visit_reference. The first referring domain of the visit. | varchar(100) |
 | `visit_ref_type` | Numeriskt ID som representerar referenstypen för besökets första referent. Använder söktabellen referrer_type.tsv. | tinyint unsigned |
 | `visit_referrer` | Den första referenten till besöket. | varchar(255) |
 | `visit_search_engine` | Numeriskt ID för besökets första sökmotor. Använder söktabellen search_engines.tsv. | smallint unsigned |
@@ -282,10 +285,10 @@ Följande kolumnlista används inte och innehåller inga data:
 * mobilequitionclicks
 * mobileactioninapptime
 * mobileactiontotaltime
-* mobileappperformanceaffectedanvändare
+* mobileappperformanceaffectedusers
 * mobileappperformanceappid<span>.</span>app-perf-app-name
 * mobileappperformanceappid<span>.</span>app-perf-platform
-* mobileappperformanska kramper
+* mobileappperformancecrashes
 * mobileappperformancrashid<span>.</span>app-perf-crash-name
 * mobileappperformanceloads
 * mobileappstoreavgrating
@@ -298,7 +301,7 @@ Följande kolumnlista används inte och innehåller inga data:
 * mobileappstoreobjectid<span>.</span>appstore-name
 * mobileappstoreobjectid<span>.</span>category-name
 * mobileappstoreobjectid<span>.</span>country-name
-* mobileappstoreobjectid<span>.</span>enhetstillverkare
+* mobileappstoreobjectid<span>.</span>device-manufacturer
 * mobileappstoreobjectid<span>.</span>device-name
 * mobileappstoreobjectid<span>.</span>in-app-name
 * mobileappstoreobjectid<span>.</span>platform-name-version
@@ -327,7 +330,7 @@ Följande kolumnlista används inte och innehåller inga data:
 * mobilemessageid<span>.</span>type
 * mobilemessagevisningar
 * mobilemessagepushpayloadid<span><span>.</span></span>name
-* mobilemessagevisions
+* mobilemessageviews
 * mobilemonthlyengagedusers
 * mobileplacedwelltime
 * mobileplaceentry
