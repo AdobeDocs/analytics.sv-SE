@@ -2,7 +2,10 @@
 title: linkTrackVars
 description: Ange vilka variabler som ska ingå i förfrågningar om länkspårningsbilder.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden för länkspårning. Använd variablerna `linkTrackVars` och [`linkTrackEvents`](linktrackevents.md) för att selektivt inkludera mått och mätvärden i [`tl()`](../functions/tl-method.md) anrop.
 
-Den här variabeln används inte för sidvisningsanrop (`t()` metod).
+Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-method.md) metod).
 
 ## Variabler i länkspårningsanrop med hjälp av Adobe Experience Platform Launch
 
@@ -24,7 +27,7 @@ Launch fyller automatiskt i den här variabeln på serverdelen baserat på varia
 Variabeln är en sträng som innehåller en kommaavgränsad lista med variabler som du vill ta med i bildbegäran för länkspårning ( `s.linkTrackVars``tl()` metod). Båda följande villkor måste vara uppfyllda för att du ska kunna ta med dimensioner i länkspårningsträffar:
 
 * Ange önskat variabelvärde. Exempel, `s.eVar1 = "Example value";`.
-* Ange önskad variabel i `linkTrackVars` variabeln. Exempel, `s.linkTrackEvents = "eVar1";`.
+* Ange önskad variabel i `linkTrackVars` variabeln. Exempel, `s.linkTrackVars = "eVar1";`.
 
 ```js
 s.linkTrackVars = "eVar1,eVar2,events,channel,products";
