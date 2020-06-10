@@ -4,9 +4,9 @@ title: Skapa segment
 topic: Segments
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 translation-type: tm+mt
-source-git-commit: e1315ce842247e690c481bf5061c980b943cd5c1
+source-git-commit: aaf7123b1ed8ced67076affd108e337b10fe0f39
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '1923'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera segment.
 
 Segment med inbäddade datumintervall fungerar annorlunda i Analysis Workspace jämfört med [!UICONTROL Reports & Analytics]: I Arbetsyta åsidosätter ett segment med ett inbäddat datumintervall panelens datumintervall. I stället [!UICONTROL Reports & Analytics] visas skärningspunkten för rapportdatumintervallet och segmentets inbäddade datumintervall.
 
-**[!UICONTROL Publish to Experience Cloud (for `<report suite name>`)]**: (Visas inte på skärmen) Det här alternativet visas bara om rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md). Genom att publicera ett segment i Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target]och [!DNL Audience Manager]. Du måste ange en segmenttitel och beskrivning.
-
->[!NOTE] I Analytics kan du redigera eller ta bort ett publicerat segment. Om segmentet används visas ett varningsmeddelande när du redigerar ett segment. Du kan inte ta bort ett publicerat segment som används av Adobe [!DNL Target].
-
-![](assets/segment_publish_to_mac_copy.png)
-
->[!IMPORTANT]
->
->Ni måste begränsa antalet målgrupper som delas från Analytics till 20 för att undvika ytterligare förseningar. Målgrupper som delas med Experience Cloud från Analytics får inte överstiga 20 miljoner unika medlemmar. På grund av cachelagring kräver borttagna rapportsviter i Analytics 12 timmar innan borttagningen visas i Experience Cloud.
-
->[!IMPORTANT]
->
->När en besökare kvalificerar sig för den målgrupp som delas från Analytics, sker en 24-48 timmars fördröjning innan informationen kan användas i [!DNL Target], [!DNL Advertising Cloud]och [!DNL Campaign].
+**[!UICONTROL Experience Cloud Publishing]**: (Visas inte på skärmen) Det här alternativet visas bara om rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md). Genom att publicera ett segment i Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target]och [!DNL Audience Manager]. [Läs mer](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html) om Experience Cloud-publicering.
 
 ## Skapa segment {#build-segments}
 
