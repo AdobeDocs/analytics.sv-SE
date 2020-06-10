@@ -1,14 +1,17 @@
 ---
 description: Nya funktioner på Analysis Workspace.
 keywords: Analysis Workspace
-title: Nyheter på Analysis Workspace
+title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 0567265c062a1a3501ba2d5bffc43c18acfbd4d0
+source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+workflow-type: tm+mt
+source-wordcount: '7195'
+ht-degree: 1%
 
 ---
 
 
-# Nyheter på Analysis Workspace
+# Nyheter i Analysis Workspace
 
 ## April 2020
 
@@ -16,7 +19,7 @@ Ny funktion släppt 16 april 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| Bygg automatiskt [!UICONTROL Freeform Tables] från ett tomt läge | Tidigare gick det inte att släppa komponenter direkt i ett tomt projekt eller en tom panel. du var tvungen att lägga till en frihandstabell först. Nu kan du släppa komponenter direkt i ett tomt projekt eller en tom panel, så skapas en frihandstabell automatiskt i det format som rekommenderas. Dessutom har det gjorts förbättringar av hur blandade komponenttyper (t.ex. mått och mått) hanteras när de tas bort i en tom [!UICONTROL Freeform Table] kombination. |
+| Bygg automatiskt [!UICONTROL Freeform Tables] från tomt läge | Tidigare gick det inte att släppa komponenter direkt i ett tomt projekt eller en tom panel. du var tvungen att lägga till en frihandstabell först. Nu kan du släppa komponenter direkt i ett tomt projekt eller en tom panel, så skapas en frihandstabell automatiskt i det format som rekommenderas. Additionally, improvements were made to how mixed component types (e.g. dimensions &amp; metrics) are handled when dropped into a blank [!UICONTROL Freeform Table] together. |
 
 ## Mars 2020
 
@@ -115,7 +118,7 @@ Nya funktioner och förbättringar som släpptes 1 november 2018.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| [VRS och projektkurser - förbättringar](/help/analyze/analysis-workspace/curate-share/curate-projects-vrs.md) | Dessa ändringar infördes i själva verket i oktober 2018. Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och förvaltade virtuella rapportsviter (VRS). <br> Tidigare kunde alla se komponenter som inte är kuraterade när de klickade på Visa alla komponenter. Den uppdaterade kurationsfunktionen ger bättre kontroll över vilka komponenter som är synliga.</br> |
+| [VRS och projektkurser - förbättringar](/help/analyze/analysis-workspace/curate-share/curate.md) | Dessa ändringar infördes i själva verket i oktober 2018. Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och förvaltade virtuella rapportsviter (VRS). <br> Tidigare kunde alla se komponenter som inte är kuraterade när de klickade på Visa alla komponenter. Den uppdaterade kurationsfunktionen ger bättre kontroll över vilka komponenter som är synliga.</br> |
 
 ## Oktober 2018
 
@@ -207,7 +210,7 @@ Nya funktioner och förbättringar som släpptes 19 juli 2018.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="attribution-iq.md"  > Attributions-IQ </a> </b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="attribution-iq.md"  > Attribution IQ </a> </b> </p> </td> 
    <td colname="col2"> <p>Med attribuerings-IQ kan ni utföra mer sofistikerade och intelligenta analyser av marknadsföringens prestanda. Nya attribueringsmodeller kan användas på mätvärden i Analysis Workspace (på valfri tabell eller vid valfri uppdelning) och i beräknade mätvärden. En ny attribueringspanel ger bättre visualisering och jämförelse. </p> </td> 
   </tr> 
   <tr> 
@@ -1000,7 +1003,7 @@ Nya funktioner som släpptes 21 april 2016:
  <tbody> 
   <tr> 
    <td colname="col1"> Skicka fil </td> 
-   <td colname="col2"> <p>Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans. Se <a href="/help/analyze/analysis-workspace/curate-share/t-schedule-report.md"  > Skicka fil - Schemalägg ett projekt för leverans </a>. </p> </td> 
+   <td colname="col2"> <p>Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans. See <a href="/help/analyze/analysis-workspace/curate-share/t-schedule-report.md"  > Send File - Schedule a project for delivery </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Hämta PDF </td> 
@@ -1069,7 +1072,7 @@ Du kan se hur ett värde som du är intresserad av jämförs med eller mäter mo
 
 Punktdiagrammet innehåller ett enda primärt mått (till exempel dagens intäkter), som jämför det måttet med en eller flera andra åtgärder för att förstärka dess betydelse (till exempel jämfört med en målintäkt) och visar det i ett sammanhang av kvalitativa resultatintervall, till exempel hög, mitten och låg. Du kan ange målintervall i [!UICONTROL Visualization Settings].
 
-**Scatterplot**
+**Spridningsdiagram**
 
 ![](assets/scatter.png)
 
@@ -1077,7 +1080,7 @@ Visar hur många visningar som använts och hur många unika användare som har 
 
 >[!NOTE] En tabell som är associerad med ett Scatterplot-diagram kräver minst två kolumner. Den första kolumnen definierar X-axeln och den andra kolumnen definierar Y-axeln. Om det finns en tredje kolumn tillgänglig används den för att bestämma punktens radie. Kolumnerna *1*, *2* och *3* mappas med andra ord till *X*, *Y*** och¥dot radius¥.
 
-**Treemap**
+**Treemap-diagram**
 
 Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar. Varje förgrening i trädet får en rektangel som sedan visas sida vid sida med mindre rektanglar som representerar undergrenar.
 
