@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 translation-type: tm+mt
-source-git-commit: 67dd053b71a2e718539956fbfe775f782ec26557
+source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ I vissa situationer är det möjligt att flera personer loggar in från samma en
 
 **Hur hanterar enhetsdiagrammet situationer där en person har MÅNGA enheter/ECID:n?**
 
-I vissa fall kan en enskild användare associera med ett stort antal ECID. Detta kan inträffa om användaren använder många webbläsare eller appar och kan förvärras om de ofta tar bort cookies eller använder webbläsarens privata eller inkodade webbläsarläge. Enhetsdiagrammet begränsar antalet ECID:n som kopplas till ett visst användar-ID till 200. Om ett användar-ID är kopplat till för många ECID:n antar enhetsdiagrammet att användar-ID:t är ogiltigt och tar bort klustret som är kopplat till det användar-ID:t. Användar-ID:t läggs sedan till i en&quot;blockerad&quot; lista för att förhindra att det grupperas om i framtiden. Resultatet i CDA är att användar-ID:ts beteende inte sammanfogas mellan olika enheter.
+I vissa fall kan en enskild användare associera med ett stort antal ECID. Detta kan inträffa om användaren använder många webbläsare eller appar och kan förvärras om de ofta tar bort cookies eller använder webbläsarens privata eller inkodade webbläsarläge. Enhetsdiagrammet begränsar antalet ECID:n som kopplas till ett visst användar-ID till 200. Om ett användar-ID är kopplat till för många ECID:n antar enhetsdiagrammet att användar-ID:t är ogiltigt och tar bort klustret som är kopplat till det användar-ID:t. Användar-ID:t läggs sedan till i en blocklista för att förhindra att det grupperas om i framtiden. Resultatet i CDA är att användar-ID:ts beteende inte sammanfogas mellan olika enheter.
 
 **Vad är skillnaden mellan personmåttet i CDA och det unika besökarmåttet utanför CDA?**
 
