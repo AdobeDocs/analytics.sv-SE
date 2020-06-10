@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: f29a9eef7dcdb0568a947521ca32f7aa0c2ce5b7
+source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 97%
+source-wordcount: '1099'
+ht-degree: 96%
 
 ---
 
@@ -93,8 +93,9 @@ ht-degree: 97%
          + [Användningsexempel på segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
    + Samla in eller dela projekt {#curate-share}
-      + [Översikt över insamling/delning](analysis-workspace/curate-share/curate.md)
-      + [VRS och projektinsamling](analysis-workspace/curate-share/curate-projects-vrs.md)
+      + [Kuratera ett arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
+      + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
+      + [Visa endast arbetsyteprojekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
       + [Skicka fil – schemalägga ett projekt för leverans](analysis-workspace/curate-share/t-schedule-report.md)
