@@ -5,7 +5,10 @@ title: Importera filreferens
 topic: Developer and implementation
 uuid: cc58f8d8-cb6e-4908-846f-0a41c6da805d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ Använd guiden Datakällor för att generera en importmall. Importfilen för dat
 
 Kolumnrubriker används för att identifiera data i varje kolumn i datakällfilen. Det finns tre typer av kolumnrubriker:
 
-**Datum**: (Obligatoriskt) En tidsstämpel för varje datarad i filen.
+**Datum**: (Obligatoriskt) En tidsstämpel för varje datarad i filen, i formatet `m/d/yyyy`.
 
 **Variabler**: Namnen på rapportvariablerna mappade till datakällans datamått.
 
