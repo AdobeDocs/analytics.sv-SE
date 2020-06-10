@@ -1,10 +1,13 @@
 ---
 product: analytics
 audience: admin
-user-guide-title: Analytics Admin Guide
+user-guide-title: Administratörshandbok för analyser
 user-guide-url: /content/help/en/analytics/admin/home.html
 translation-type: tm+mt
-source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
+source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+workflow-type: tm+mt
+source-wordcount: '694'
+ht-degree: 2%
 
 ---
 
@@ -41,8 +44,8 @@ source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
    + [Loggar](admin/logs.md)
    + [Marknadsföringskanaler](admin/marketing-channels-admin.md)
    + [Anpassa menyer](admin/customize-menus.md)
-   + [Mätningssynlighet](admin/metric-visibility.md)
-   + [Mobilhantering](admin/mobile-management.md)
+   + [Måttsynlighet](admin/metric-visibility.md)
+   + [Apphantering](admin/mobile-management.md)
    + Påvisande av betald sökning {#paid-search-detection}
       + [Översikt över betald sökningsidentifiering](admin/paid-search-detection/paid-search-detection.md)
       + [Konfigurera identifiering av betald sökning](admin/paid-search-detection/t-paid-search-detection.md)
@@ -51,7 +54,7 @@ source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
    + [Inställningshanteraren](admin/preferences-manager.md)
    + [Sekretessinställningar](admin/privacy-settings.md)
    + [Sekretessinställningar](admin/privacy-reporting.md)
-   + Bearbetar regler {#processing-rules}
+   + Processing rules {#processing-rules}
       + [Översikt över bearbetningsregler](admin/c-processing-rules/processing-rules.md)
       + Bearbetar regelkonfiguration {#processing-rules-configuration}
          + [Hur bearbetningsregler fungerar](admin/c-processing-rules/c-processing-rules-configuration/processing-rules-about.md)
@@ -74,7 +77,7 @@ source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
          + [Ange en händelse med hjälp av en kontextdatavariabel](admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md)
          + [Ta bort en händelse från en träff](admin/c-processing-rules/processing-rules-examples/processing-rules-remove-event.md)
       + [Tips och tricks för regler](admin/c-processing-rules/processing-rules-tips.md)
-   + Realtidsrapporter {#real-time-reports}
+   + Rapporter i realtid {#real-time-reports}
       + [Översikt över realtidsrapporter](admin/realtime/realtime.md)
       + [Konfiguration av rapporter i realtid](admin/realtime/t-realtime-admin.md)
       + [Mätvärden och dimensioner som stöds i realtid](admin/realtime/realtime-metrics.md)
