@@ -5,7 +5,10 @@ title: Virtuella rapportsviter och taggar för flera programsviter
 topic: Adobe Analytics
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+workflow-type: tm+mt
+source-wordcount: '1735'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ Olika webbplatser har olika implementeringsbehov. Vissa dimensioner och händels
 
 Se till att antalet unika mått och mätvärden får plats i en enda global rapportserie. Om du ser att det finns för många unika mått eller mätvärden granskar du varje dimension inom varje implementering. Det finns troligtvis överlappningar och dimensioner som inte är avgörande för företagets framgång. Du bör också använda [klassificeringar](/help/components/c-classifications2/c-classifications.md) . I stället för att hämta&quot;Produktnamn&quot; i eVar5 skapar du till exempel en produktnamnsklassificering som baseras på dimensionen&quot;Produkt&quot;. Klassificeringar i en källrapportsserie är automatiskt tillgängliga för alla beroende virtuella rapportsviter.
 
->[!TIP] Med introduktionen av [kurering](/help/analyze/analysis-workspace/curate-share/curate-projects-vrs.md)kan du ändra namnet på en given dimension eller mätvärde per VRS-nivå.
+>[!TIP] Med introduktionen av [kurering](/help/analyze/analysis-workspace/curate-share/curate.md)kan du ändra namnet på en given dimension eller mätvärde per VRS-nivå.
 
 ### Segmenteringsenheter
 
