@@ -1,66 +1,63 @@
 ---
-description: Med Kuration kan du begränsa komponenterna innan du delar ett projekt. Du kan dela ett projekt och dess komponenter med marknadsförare och andra icke-analytiker i din verksamhet. Anteckna och lägg till taggar i projekt.
-keywords: Analysis Workspace
-title: Översikt över insamling/delning
-topic: Reports and analytics
-uuid: 267e9678-95a1-4195-8ba4-e8a53c28ea0d
+description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
+keywords: Analysis Workspace curation
+title: Kuratera arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: 1e7d36e48f6ee3b9066e3933d831dd4d28f670c6
+source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 2%
+source-wordcount: '446'
+ht-degree: 3%
 
 ---
 
 
-# Översikt över insamling/delning
+# Kuratera arbetsyteprojekt
 
-Med Kuration kan du begränsa komponenterna innan du delar ett projekt. Du kan dela ett projekt och dess komponenter med marknadsförare och andra icke-analytiker i din verksamhet. Anteckna och lägg till taggar i projekt.
+Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderas innan du delar ett projekt.
 
-**Videoöversikt**
+>[!NOTE]
+> Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via Admin Console. Curation är ett sekundärt filter.
 
->[!VIDEO](https://www.youtube.com/watch?v=LJJRskdmlOg&amp;index=79&amp;t=0s&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)
+## Använd projektstrukturering
 
-**[!UICONTROL Workspace]** > **[!UICONTROL Share]**> **[!UICONTROL Curate Project Data]**
-
-## Kuratera projektdata
-
-1. Ange behörighet att skapa och strukturera projekt.
-
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en [grupp](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html) med aktiverad **[!UICONTROL Analysis Workspace Access]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]**).
-
-1. [Skapa och spara](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) ett projekt och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
-1. Dra de komponenter som du vill dela från den dragbara komponentstacken till vänster till **[!UICONTROL Curated Components]** fältet.
-
-   ![](assets/curated-components.png)
-
-   >[!IMPORTANT]
-   >
-   >Kursiveringskomponenter krävs inte för att dela ett projekt. Du kan dela ett projekt med alla tillgängliga, standardkomponenter eller med de valda komponenterna. Om du vill bevara alla standardkomponenter i ett projekt är det bäst att skapa en kopia av ett projekt för dig själv (med **[!UICONTROL Save As]**) innan du strukturerar komponenterna. När du har valt komponenterna i ett projekt är de andra komponenterna inte längre tillgängliga för det projektet.
-
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
+De komponenter som används i projektet läggs automatiskt till.
+   **Obs**: Om ett projekt har flera rapportsviter visas ett kuratefält för varje rapportserie i projektet.
+1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till [!UICONTROL Curate Components] fältet.
 1. Klicka på **[!UICONTROL Done]**.
 
-Det resulterande projektet fungerar som ett vanligt projekt i Analysis Workspace, men bara med de angivna komponenterna att välja bland.
+![](assets/curation-field.png)
 
-## Dela ett välstrukturerat projekt
+När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av komponenter som du har definierat:
 
-Delning gör det här projektet tillgängligt för andra Analysis Workspace-användare i organisationen. All kuration du har gjort återspeglas när andra använder projektet.
+![](assets/curate-project.png)
 
-1. När du har valt komponenterna i en rapport klickar du på **[!UICONTROL Share]** > **[!UICONTROL Share Project]**.
+Du kan också använda Kursion på [!UICONTROL Share] menyn genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
-   ![](assets/share_component.png)
+## Ta bort projekturval
 
-1. Lägg till mottagare.
-1. (Valfritt) Du kan dela inbäddade projektkomponenter (segment, beräknade värden och datumintervall) med alla mottagare. När komponenterna har delats visas de i komponentlistrutan på mottagarens arbetsyta.
+Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra listen:
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
+1. Klicka på **[!UICONTROL Remove Curation]**.
+1. Klicka på **[!UICONTROL Done]**.
 
-   >[!IMPORTANT]
-   >
-   >Den här inställningen kvarstår inte - det är en enkel åtgärd vid tidpunkten för delningen.
+## VRS-kuration (Virtual Report Suite)
 
-1. Du kan också ange den här sidan som landningssida för mottagare.
+Om du vill använda kurering på rapportsvitnivå, så att den gäller för många projekt samtidigt, kan du [strukturera komponenter i en Virtual Report-serie (VRS)](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-components.html).
 
-   >[!IMPORTANT]
-   >
-   >Den här inställningen kvarstår inte - det är en enkel åtgärd vid tidpunkten för delningen.
+>[!NOTE]
+> VRS-kurering används alltid före projektkurering. Detta innebär att även om ditt kuraterade projekt innehåller vissa komponenter, kommer de att filtreras bort om det aktuella VRS inte innehåller dem.
 
-1. Klicka på **[!UICONTROL Share]**.
+### Visa alla komponenter
+
+I ett välstrukturerat projekt (VRS) får mottagaren möjlighet att välja **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
+
+* användarens behörighetsnivå (administratör eller annan administratör)
+* projektroll (ägare/redaktör eller inte)
+* typ av kuration som används
+
+| Kurvtyp | Administratörer | Projektägare som inte är administratörer | Icke-administratörer |
+|---|---|---|---|
+| Kuraterad VRS | Alla VRS-komponenter som inte är kuraterade | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem |
+| Kuraterat projekt | Alla projektkomponenter som inte är kuraterade | Alla projektkomponenter som inte är kuraterade | Ej förvaltade projektkomponenter som den här rollen äger eller som har delats med dem |
+| Kuraterat projekt i ett kuraterat VRS | Alla icke-förvaltade komponenter, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated VRS Components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltat VRS och projektkomponenter som den här rollen äger eller har delats med dem |
