@@ -4,9 +4,9 @@ title: Skapa segment
 topic: Segments
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 translation-type: tm+mt
-source-git-commit: f50f33b456656200b4492e6fec2a441d4c29dfa3
+source-git-commit: e1315ce842247e690c481bf5061c980b943cd5c1
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,7 @@ ht-degree: 0%
 
 # Segment Builder
 
-På arbetsytan [!UICONTROL Segment Builder] kan du dra och släppa mått, dimensioner, segment och händelser för att segmentera besökare baserat på behållarhierarkiens logik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa segment som identifierar besökarattribut och -åtgärder för besök och sidträffar.
-
->[!IMPORTANT]
->
->Vi introducerade modeller för dimensionsattribuering i juniversionen 2019. Se #6 under Webbgränssnittsfunktioner nedan.
+Med [!UICONTROL Segment Builder] verktyget kan du skapa enkla eller komplexa segment som identifierar besökarattribut och åtgärder för besökare och sidträffar. Det ger en arbetsyta att dra och släppa mått, händelser eller andra segment för att segmentera besökare baserat på hierarkilogik, regler och operatorer.
 
 Det finns flera sätt att komma åt segmentbyggaren:
 
@@ -28,42 +24,38 @@ Det finns flera sätt att komma åt segmentbyggaren:
 * **[!UICONTROL Ad Hoc Analysis]**: [Bygg segment i ad hoc-analys](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md#build-segments).
 * **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/data-requests/segmentation.html).
 
-## Användargränssnittet i Segment Builder {#concept_643F2DF74C544796B58F4656ABC5F726}
+## Builder-villkor {#section_F61C4268A5974C788629399ADE1E6E7C}
 
-Med [!UICONTROL Segment Builder] verktyget kan du skapa enkla eller komplexa segment som identifierar besökarattribut och åtgärder för besökare och sidträffar. Det ger en arbetsyta att dra och släppa mått, händelser eller andra segment för att segmentera besökare baserat på hierarkilogik, regler och operatorer.
-
-## Webbgränssnittsfunktioner {#section_F61C4268A5974C788629399ADE1E6E7C}
-
-Med [!UICONTROL Segment Builder] kan du skapa och redigera segment i webbgränssnittet (eller i ett [Java-gränssnitt i Ad Hoc Analysis](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md)). Du kan lägga till regeldefinitioner och behållare för att förfina segment, stacksegment och kapsla in dem för att förfina dem. Du kan också validera hur många sidvisningar, besök och unika besökare som din aktuella segmentdefinition ger. Spara sedan segmentet för framtida behov.
-
-Öppna segmentbyggaren genom att:
-
-* Visa en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen. Klicka på **[!UICONTROL Add]** i segmentlisten som visas.
-
-* Klicka **[!UICONTROL + Add]** i segmenthanteraren.
-* Klicka på en befintlig segmenttitel i segmenthanteraren för att redigera segmentet i segmentbyggaren.
+Du kan lägga till regeldefinitioner och behållare för att definiera segment.
 
 ![](assets/segment_builder_ui.png)
 
-1. **[!UICONTROL Title]**: Gör att du kan namnge eller byta namn på segmentet.
-1. **[!UICONTROL Description]**: Ange en beskrivning av segmentet. Du måste ange en beskrivning om du vill dela segmentet.
+1. **[!UICONTROL Title]**: Namnge segmentet.
+1. **[!UICONTROL Description]**: Ange en beskrivning av segmentet.
 1. **[!UICONTROL Tags]**: [Tagga det segment](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md) du skapar genom att välja från en lista med befintliga taggar eller genom att skapa en ny tagg.
-1. **[!UICONTROL Definitions]**: Här [skapar och konfigurerar du segment](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md), lägger till regler och kapslar in behållare och sekvensbehållare. Gör att du kan ange en beskrivning för det nya segmentet genom att markera behållaren och dra och släppa dimensioner, segment eller mått i definitionen.
+1. **[!UICONTROL Definitions]**: Här [skapar och konfigurerar du segment](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md), lägger till regler och kapslar in behållare och sekvensbehållare.
 1. **[!UICONTROL Show]**: (Översta behållarväljare.) Gör att du kan välja [behållaren](/help/components/c-segmentation/seg-overview.md) på den översta nivån ( [!UICONTROL Visitor], [!UICONTROL Visit], [!UICONTROL Hit]). Standardbehållaren på den översta nivån är Träff-behållaren.
 1. **[!UICONTROL Options]**: (kugghjulsikon)
 
    * **[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) till segmentdefinitionen.
-   * **[!UICONTROL + Add container from selection]**: Gör att du kan skapa en ny behållare från det eller de element som du (multi-) har valt i fältet Definitioner.
    * **[!UICONTROL Exclude]**: Gör att du kan definiera segmentet genom att utesluta en eller flera dimensioner, segment eller mått.
 
-1. **[!UICONTROL Attribution Models]**: För dimensionssegmentering. Dimensionsmodeller är särskilt användbara vid sekventiell segmentering, t.ex. för dem som stöder Flödesvisualiseringar:
+1. **[!UICONTROL Attribution Models]**: Dessa modeller är bara tillgängliga för dimensioner och avgör vilka värden i en dimension som ska segmenteras. Dimensionsmodeller är särskilt användbara vid sekventiell segmentering.
 
    * **[!UICONTROL Repeating]** (standard): Inkluderar instanser och beständiga värden för dimensionen.
    * **[!UICONTROL Instance]**: Inkluderar instanser för dimensionen.
-   * **[!UICONTROL Non-repeating instance]**: Inkluderar unika instanser (icke-upprepande) för dimensionen.
+   * **[!UICONTROL Non-repeating instance]**: Inkluderar unika instanser (icke-upprepande) för dimensionen. Detta är den modell som används i Flow när upprepade instanser utesluts.
    ![](assets/attribution-models.jpg)
 
-1. **[!UICONTROL Comparison]**: Du kan jämföra och begränsa värden med valda operatorer.
+   **Exempel: Träffsegment där eVar1 = A**
+
+   | Exempel | A | A | A (beständig) | B | A | C |
+   |---|---|---|---|---|---|---|
+   | Upprepande | X | X | X | - | X | - |
+   | Instance | X | X | - | - | X | - |
+   | Icke upprepande instans | X | - | - | - | X | - |
+
+1. **[!UICONTROL Operator]**: Du kan jämföra och begränsa värden med valda operatorer.
 1. **[!UICONTROL Dimensions]**: Dimensionen dras och tas bort från dimensionslistan (orange sidofält).
 1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
 1. **[!UICONTROL And/Or/Then]**: Tilldelar operatorer mellan behållare eller regler [!UICONTROL AND/OR/THEN] . Med operatorn THEN kan du [definiera sekventiella segment](/help/components/c-segmentation/c-segmentation-workflow/seg-sequential-build.md).
@@ -113,7 +105,7 @@ Segment med inbäddade datumintervall fungerar annorlunda i Analysis Workspace j
 
 Du kommer nu till [segmenthanteraren](/help/components/c-segmentation/c-segmentation-workflow/seg-manage.md)där du kan tagga, dela och hantera segment på flera olika sätt.
 
-## Skapa och kapsla behållare {#section_1C38F15703B44474B0718CEF06639EFD}
+## Lägg till behållare {#section_1C38F15703B44474B0718CEF06639EFD}
 
 Du kan [skapa ett ramverk med behållare](/help/components/c-segmentation/seg-overview.md) och sedan placera logikregler och operatorer mellan.
 
@@ -133,7 +125,7 @@ Du kan [skapa ett ramverk med behållare](/help/components/c-segmentation/seg-ov
 
    Markera en eller flera regler och klicka sedan på **[!UICONTROL Options]** > **[!UICONTROL Add container from selection]**. Detta gör om markeringen till en separat behållare.
 
-## Använd datumintervall i segment {#concept_252A83D43B6F4A4EBAB55F08AB2A1ACE}
+## Använd datumintervall {#concept_252A83D43B6F4A4EBAB55F08AB2A1ACE}
 
 Ni kan skapa segment som innehåller rullande datumintervall för att få svar på frågor om pågående kampanjer eller evenemang.
 
@@ -145,7 +137,7 @@ Du skapar en besöksbehållare och i den lägger du till [!UICONTROL Last 60 day
 
 ## Stapla segment {#task_58140F17FFD64FF1BC30DC7B0A1B0E6D}
 
-Stapla segment fungerar genom att kombinera villkoren i varje segment med hjälp av operatorn&quot;och&quot; och sedan använda de kombinerade kriterierna.
+Stapla segment fungerar genom att kombinera villkoren i varje segment med hjälp av operatorn&quot;och&quot; och sedan använda de kombinerade kriterierna. Detta kan du göra i ett Workspace-projekt direkt eller i segmentbyggaren.
 
 Om du till exempel staplar ett segment med&quot;mobilanvändare&quot; och ett&quot;USA-geografiskt&quot; segment returneras data endast för mobilanvändare i USA.
 
@@ -175,17 +167,11 @@ Genom att använda segmentstackning kan du minska antalet segment till 22 och st
 
    Stegresultat
 
-## Använd segmentmallar {#concept_5098446CC78D441E93B8E4D1D1EA6558}
+## Segmentmallar {#concept_5098446CC78D441E93B8E4D1D1EA6558}
 
-Mallar representerar de gamla förkonfigurerade segmenten och svitsegmenten.
+Segmentmallar finns för vanliga användningsfall för segmentering, som&quot;förstagångsbesök&quot; eller&quot;besök från mobila enheter&quot;. De är tillgängliga i Workspace-projekt och i segmentbyggaren som byggstenar för nya segment.
 
-Klicka i segmenthanteraren **[!UICONTROL Add]** så öppnas segmentbyggaren. Klicka nu på segmentikonen  ![](assets/segment_icon.png)
-
-för att ta upp segmenträlen. Segmentmallarna visas längst ned i segmentlistan. De kan urskiljas med en mappikon till vänster om mallnamnet:
-
-![](assets/seg_template.png)
-
-Du kan dra mallarna till arbetsytan Definitioner och använda dem som de har definierats, eller ändra dem.
+Mallar betecknas med Adobes A-logotyp. Ett exempel på mallarna visas nedan:
 
 <table id="table_98B87D807E9344C9BEBF072C65D87B1B"> 
  <thead> 
@@ -270,14 +256,3 @@ Du kan dra mallarna till arbetsytan Definitioner och använda dem som de har def
  </tbody> 
 </table>
 
-## Exempel: Kampanjbesökarsegment {#concept_61AC6115097B4EB3AEFE8CE98F38315D}
-
-Visar ett exempel på det segment som används ofta.
-
-Många kunder vill se statistik från besökare som svarat på specifika kampanjer. Att skapa ett kampanjbesökssegment är ett enkelt sätt att få fram dessa data.
-
-Om du skapar det här segmentet i segmentbyggaren innebär det att du från en besöksbehållare på den översta nivån drar i en kampanjdimension, i det här fallet Campaign Name:
-
-![](assets/seg_campaign_visitor.png)
-
-(Valfritt) Du kan också använda en Campaigns-tagg på det här segmentet om du enkelt vill filtrera på alla kampanjrelaterade segment.
