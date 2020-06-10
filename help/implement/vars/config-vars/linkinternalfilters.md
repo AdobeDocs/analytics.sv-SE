@@ -2,9 +2,9 @@
 title: linkInternalFilters
 description: Använd variabeln linkInternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 translation-type: tm+mt
-source-git-commit: 67dd053b71a2e718539956fbfe775f782ec26557
+source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om [`trackExternalLinks`](trackexternallinks.md) är aktiverat skickas en bildförfrågan till Adobe direkt när en besökare klickar på en länk för att lämna din webbplats. Variablerna [`linkExternalFilters`](linkexternalfilters.md) och `linkInternalFilters` bestämmer vilka länkar som betraktas som interna/externa.
 
-Om den här variabeln innehåller ett värde fungerar automatisk avslutningslänkspårning som en blockerad lista. Om ett länkklick inte matchar några `linkInternalFilters` värden betraktas det som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om [`linkLeaveQueryString`](linkleavequerystring.md) är aktiverat undersöks även frågesträngen.
+Om den här variabeln innehåller ett värde fungerar automatisk avslutningslänkspårning som en blocklist. Om ett länkklick inte matchar några `linkInternalFilters` värden betraktas det som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om [`linkLeaveQueryString`](linkleavequerystring.md) är aktiverat undersöks även frågesträngen.
 
 Om du använder både `linkInternalFilters` och `linkExternalFilters` samtidigt måste den klickade länken matcha `linkExternalFilters` och **inte matcha** `linkInternalFilters` för att betraktas som en avslutslänk. Om en klickad länk matchar både villkoren för avslutningslänk och nedladdningslänk får nedladdningslänkstypen prioritet.
 
