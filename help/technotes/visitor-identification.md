@@ -5,9 +5,9 @@ subtopic: Visitors
 title: Identifiera unika besökare
 topic: Developer and implementation
 translation-type: tm+mt
-source-git-commit: 67dd053b71a2e718539956fbfe775f782ec26557
+source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1902'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Du kan också skicka en &quot;1&quot; eller &quot;5&quot; i manuella bildbegära
 
 Metoden för prenumerations-ID är vanligtvis mer tillförlitlig än en cookie för användaridentifiering på grund av problem med borttagning av cookies, accepterande av cookies och hantering av gateway-cookies.
 
-Du kan förbättra ändringen av identifieringen av en besökare genom att läggas till i listan&quot;tillåten&quot; för den operatör som era mobilbesökare använder. Om du vill få åtkomst till transportörens besökar-ID kontaktar du transportören och lägger till din domän i listan över tillåtna användare. Om du är med i listan över tillåtna leverantörer har du även tillgång till prenumerations-ID-rubriker som du annars kanske inte kan komma åt.
+Du kan förbättra ändringen av identifieringen av en besökare genom att läggas till i listan över tillåtna användare för den operatör som era mobilbesökare använder. Om du vill få åtkomst till transportörens besökar-ID kontaktar du transportören och lägger till din domän i listan över tillåtna användare. Om du är med på en fraktförares lista över tillåtna användare har du även tillgång till prenumerations-ID-rubriker som du annars kanske inte kan komma åt.
 
 Följande lista med rubriker används för att identifiera trådlösa enheter. Algoritmen för bearbetning av rubriker är att
 
