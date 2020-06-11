@@ -4,7 +4,7 @@ title: Kalenderhändelser
 topic: Reports and analytics
 uuid: 15d4f0c8-b566-43b0-b914-4ea35b7fac7f
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 739368320e73d3b441151ce7e912fe74d3f8308b
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 3%
@@ -37,8 +37,8 @@ För rapporter som utvecklats över tid kan ni visa händelser grafiskt och se o
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Calendar Events]**.
 1. Under **[!UICONTROL Shared Calendar Events]** anger du något av följande alternativ:
 
-       | **Kopiera mig** | Lägger till en kopia i händelselistan med samma namn som originalet. Du kan dock inte se några uppdateringar eller ändringar som har gjorts av händelsens ägare. |
-       |—|—|
-       | **I rapport** | Gör att du kan se ändringar/uppdateringar som görs av händelseägaren. |
-       | **Ta bort delning** | Tar bort den här händelsen från listan över delade händelser. |
-   
+   | **Copy Me** | Lägger till en kopia i händelselistan med samma namn som originalet. Du kan dock inte se några uppdateringar eller ändringar som har gjorts av händelsens ägare. |
+   |---|---|
+   | **Vid rapport** | Gör att du kan se ändringar/uppdateringar som görs av händelseägaren. |
+   | **Sluta dela** | Tar bort den här händelsen från listan med delade händelser. |
+
