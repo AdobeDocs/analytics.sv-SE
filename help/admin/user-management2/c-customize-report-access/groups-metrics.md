@@ -6,7 +6,10 @@ title: Anpassa behörigheter för mätvärden
 topic: Admin tools
 uuid: 7bfff68a-2add-4068-a07d-87a4f624634c
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 7%
 
 ---
 
@@ -27,13 +30,13 @@ Inställningarna på sidan Anpassa mått gäller för de rapportsviter som är m
 
 ## Lösningshändelser
 
-Förutom [Custom Events](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html)omfattar den här kategorin även Analytics-lösningshändelser, inklusive Experience Manager (AEM), Advertising Cloud (AMO), Mobile, Video och Social.). För varje anpassad grupp med mätvärden läggs alla analyslösningshändelser till som nya mätvärden.
+Förutom [Custom Events](https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html)omfattar den här kategorin även Analytics-lösningshändelser, inklusive Experience Manager (AEM), Advertising Cloud (AMO), Mobile, Video och Social.). För varje anpassad grupp med mätvärden läggs alla analyslösningshändelser till som nya mätvärden.
 
 Du kan ange behörigheter för händelser i anpassade händelser och analyslösningar (AEM, AMO, Mobile, Video och Social).
 
 För varje anpassad grupp med mätvärden läggs alla Analytics Solution-händelser till som nya mätvärden.
 
-Mer information om mätvärden som används i Analytics finns i [Mätningsöversikt](/help/components/c-variables/c-metrics/metricslist.md) .
+Mer information om mätvärden som används i Analytics finns i [Mätningsöversikt](/help/components/metrics/overview.md) .
 
 ## Innehållsanpassat
 
