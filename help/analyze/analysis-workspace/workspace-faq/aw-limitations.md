@@ -2,7 +2,10 @@
 description: Lista över kända begränsningar i Adobe Analysis Workspace och dess relaterade komponenter
 title: Kända begränsningar i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 025ac334f9191b6455eea0530a2a21c01199000a
+source-git-commit: 8e8a6672b95da56bba4af0fbf66981f85cb36415
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 1%
 
 ---
 
@@ -52,6 +55,6 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess rela
 
 * Vissa av inställningarna på [!UICONTROL Report Settings] sidan gäller inte. I Analysis Workspace används endast de [!UICONTROL Language/Currency/Encoding] inställningar som finns längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding]och [!UICONTROL CSV Separator Character].
 
-## Attributions-IQ
+## Attribution IQ
 
-* En delmängd av mätvärden stöds inte i [!UICONTROL Attribution IQ]. En fullständig lista finns i Vanliga frågor om [attribuering](/help/analyze/analysis-workspace/c-panels/attribution/attribution-faq.md).
+* En delmängd av mätvärden stöds inte i [!UICONTROL Attribution IQ]. En fullständig lista finns i Vanliga frågor om [attribuering](../attribution/faq.md).
