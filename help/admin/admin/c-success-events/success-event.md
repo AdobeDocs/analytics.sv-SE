@@ -5,7 +5,10 @@ title: Översikt över lyckade händelser
 topic: Admin tools
 uuid: 410eee44-8960-462c-a9c3-07b44d0b1df0
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +35,7 @@ Det finns många typer av framgångsrika händelser, beroende på webbplatstypen
 * **Högteknologi**: Nedladdning av rapporter, offertförfrågan, ifyllnad av formulär, supportförfrågningar
 * **Bilar**: Leadinlämning, anbudsförfrågan, nedladdning av broschyrer
 
-Variabeln [s.events](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/events/event-serialization.html) definierar en success-händelse.
+Variabeln [s.events](https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html) definierar en success-händelse.
 
 ## Sidan Slutförda händelser - beskrivningar {#section_681ECEC981694CABBDBF00E18165B447}
 
@@ -48,6 +51,6 @@ På sidan Success Events kan du konfigurera de händelsevariabler som används p
 | Polaritet | Med hjälp av metrisk polaritet kan du ange om Adobe Analytics ska anse det vara bra eller dåligt om en viss anpassad händelse (metrisk) inträffar. Det gör att Adobe Analytics kan visa riktningsvisare (pilar) för olika mätvärden för att lägga till kontext (till exempel vecka-över-vecka-jämförelser).  Exempel: Om&quot;Buggar som skickas&quot; går upp i veckan över en vecka, ska Adobe Analytics överväga det bra eller dåligt? En ökning av antalet e-postregistreringar är förmodligen bra. Men en ökning av antalet inskickningsfel i formulär är antagligen felaktig.  I Analysis Workspace tillämpas polarity på: Villkorsstyrd formatering av friformstabell, visualiseringar av sammanfattningsändringar och färgschemat Positive/Negative för mappningsvisualisering. |
 | Beskrivning | En kort beskrivning av evenemangets syfte och användning. |
 | Unik händelsinspelning | **Registrera en gång per besök**: Kopplar den angivna händelsen till besökarens session. Efterföljande antal till en viss händelse i samma besök ignoreras. Den här typen av händelseserialisering kräver inga implementeringsändringar.<br>**Använd händelse-ID **: Kopplar den angivna händelsen till ett anpassat ID. Efterföljande antal till en viss händelse med samma händelse-ID ignoreras. Den här typen av händelseserialisering kräver ett anpassat ID i träffar för att dubblettvärden ska kunna tas bort. Se Serialisering[av](../../../implement/vars/page-vars/events/event-serialization.md)händelse-ID i användarhandboken för Implementering. |
-| deltagande | Se Deltagande i [mätvärden](/help/components/c-variables/c-metrics/metrics-participation.md). |
+| deltagande | Ger fullständig attribueringskreditering till alla dimensionsvärden vid besöket. |
 | Varning (valutakändelse) | När händelsetyper ändras till eller från en valutakurs visas ett meddelande om att historiska data inte är tillgängliga i rapporter.  Olika händelsetyper använder separata datatabeller och kan inte användas samtidigt. Vissa historiska data kan återställas om användaren återställer händelsetypen. Data som samlats in efter den första ändringen är dock inte tillgängliga. Var försiktig när du ändrar en händelsetyp. |
 
