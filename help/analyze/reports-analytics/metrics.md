@@ -1,19 +1,22 @@
 ---
 description: Mätvärden är grunden för rapporter och hjälper er att visa och förstå dataförhållanden och möjliggör jämförelser sida vid sida av olika datauppsättningar om er webbplats. Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare.
-title: Mått
+title: Mätvärden
 topic: Reports and analytics
 uuid: ae2021eb-8b26-4a98-b7a0-ce36bca46753
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
 
 ---
 
 
-# Mått
+# Mätvärden
 
 Mätvärden är grunden för rapporter och hjälper er att visa och förstå dataförhållanden och möjliggör jämförelser sida vid sida av olika datauppsättningar om er webbplats. Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare.
 
-## Mått
+## Mätvärden
 
 Mätvärden är grunden för rapporter och hjälper er att visa och förstå dataförhållanden och möjliggör jämförelser sida vid sida av olika datauppsättningar om er webbplats. Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare.
 
@@ -21,7 +24,7 @@ Mätvärden och associerade data visas i rapportkolumnerna. Trafikstatistik visa
 
 [Beräknade mätvärden](/help/components/c-calcmetrics/cm-overview.md) skapas genom en kombination av mätvärden.
 
-Mer information om definitioner finns i Översikt över [mått](/help/components/c-variables/c-metrics/metricslist.md)
+En fullständig lista över mätvärden finns i Översikt över [mätvärden](/help/components/metrics/overview.md) i användarhandboken för komponenter.
 
 ## Välj standardrapportmått
 
