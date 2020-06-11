@@ -2,20 +2,21 @@
 title: eVar
 description: Anpassade variabler som du kan använda i implementeringen.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 10e157e370367374b55ee9c87c0e5c7ca9e99c1a
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
 
 # eVar
 
-*Den här hjälpsidan beskriver hur du implementerar eVars. Mer information om hur eVars fungerar som en dimension finns i[eVars](../../../components/c-variables/dimensionslist/reports-conversion.md)i användarhandboken för komponenter.*
+*Den här hjälpsidan beskriver hur du implementerar eVars. Mer information om hur eVars fungerar som en dimension finns i[eVars](/help/components/dimensions/evar.md)i användarhandboken för komponenter.*
 
-Variabler är anpassade variabler som du kan använda hur du vill.
+Variabler är anpassade variabler som du kan använda hur du vill. Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md)blir de flesta dimensioner som är specifika för din organisation eVars. Som standard kvarstår eVars utanför den träff de är inställda på. Du kan anpassa deras förfallodatum och allokering under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i inställningarna för rapportsviten.
 
->[!TIP] Adobe rekommenderar att du i de flesta fall använder eVars över props. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
-
-Se till att du spelar in hur du använder varje eVar och deras logik i [lösningsdesigndokumentet](../../prepare/solution-design.md).
+Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 250 eVars är tillgängliga om ditt avtal med Adobe ger stöd för det.
 
 ## Konfigurera eVars i inställningarna för rapportsviten
 
@@ -32,7 +33,7 @@ Du kan ange eVars antingen när du konfigurerar Analytics-tillägget (globala va
 5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] till [!UICONTROL Action Type] [!UICONTROL Set Variables].
 6. Leta rätt på [!UICONTROL eVars] avsnittet.
 
-Du kan välja en eVar för att ange ett värde eller dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
+Du kan ställa in en eVar på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
 ## s.eVar1 - s.eVar250 i den anpassade kodredigeraren AppMeasurement och Launch
 
@@ -56,13 +57,4 @@ s.eVar1 = "+12.49";
 
 Om fler än två decimaler anges avrundas eVar-räknaren till två decimaler. En eVar-räknare får inte innehålla negativa tal.
 
->[!IMPORTANT] Du måste först konfigurera eVars till Counter i Admin Console innan du använder counter eVars. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
-
-## Exklusiva fördelar för proppar och eVars
-
-I den aktuella versionen av Adobe Analytics är både props och eVars anpassade variabler med liknande funktioner. De har dock flera stora skillnader:
-
-* Data i props finns tillgängliga för rapportering inom några minuter. Det kan ta upp till 30 minuter innan eVars visas i rapporter.
-* Profiler har en gräns på 100 byte i rapporter. Variabler har en gräns på 255 byte.
-* Props kan bli listruteförvrängningar, som accepterar flera värden i samma träff. Listvariabler är en separat variabel och det finns bara tre listvariabler tillgängliga.
-* Som standard kvarstår inte uttryck efter den träff de ställs in. eVars har en anpassad förfallotid, vilket gör att du kan avgöra när en eVar inte längre får kredit för en efterföljande händelse. Om du däremot använder [rapporttidsbearbetning](../../../components/vrs/vrs-report-time-processing.md)kan både props och eVars använda en anpassad attribueringsmodell.
+> [!IMPORTANT] Du måste först konfigurera eVars till Counter i Admin Console innan du använder counter eVars. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
