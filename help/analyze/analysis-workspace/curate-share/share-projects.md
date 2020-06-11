@@ -3,17 +3,17 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace sharing
 title: Dela arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+source-git-commit: 529812c3e26744ce245ee12e24c58b7bee803084
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 1%
+source-wordcount: '631'
+ht-degree: 2%
 
 ---
 
 
 # Dela arbetsyteprojekt
 
-Delning gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. All kuration du har gjort återspeglas när mottagarna öppnar projektet.
+Delning gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. All [kuration](curate.md) du har använt återspeglas när mottagarna öppnar projektet.
 
 ## Projektroller
 
@@ -28,15 +28,15 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 | Kan dupliceras | Mottagarna kan spara som och ha tillgång till den vänstra listen. Interaktionerna är inte begränsade.<br>Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur analysarbetsytan ska användas, men du inte vill att det sparade projektet ska ändras. |
 | Kan visa | Mottagarna kan inte spara som och har inte åtkomst till den vänstra listen. Interaktionerna är också begränsade.<br>Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö.<br>Läs mer om [Can view project experience](/help/analyze/analysis-workspace/curate-share/view-only-projects.md). |
 
-**Ingen roll har tilldelats**
+### Ingen roll har tilldelats
 
 Om en mottagare inte har tilldelats en roll och får en länk till projektet ([!UICONTROL Share] > [!UICONTROL Get project link]) placeras de som standard i [!UICONTROL "Can view"] rollen.
 
-**Flera roller har tilldelats**
+### Flera roller har tilldelats
 
 Om en mottagare placeras i flera roller får de alltid den högsta kontrollen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om till exempel användare 1 ges Kan redigera och [!UICONTROL "Can view"] roller får de [!UICONTROL "Can edit"] kontroll över projektet.
 
-**Administratörer och roller**
+### Administratörer och roller
 
 Administratörer som placerats i en [!UICONTROL&quot;Kan duplicera&quot;] eller [!UICONTROL "Can view"] roll får de begränsade upplevelserna när de öppnar ett projekt. Om du vill kan en administratör när som helst utöka sin roll till [!UICONTROL "Can edit"] via [!UICONTROL Components] > [!UICONTROL Projects].
 
@@ -76,7 +76,3 @@ Om du väljer att dela flera projekt läggs mottagarna till i den befintliga lis
    * Projekt A: 1, 2, 3, 4, 7
    * Projekt B: 4, 5, 6, 7
    ![](assets/mult-proj-sharing.png)
-
-## Schemalägg projekt
-
-Du kan också schemalägga projekt från [!UICONTROL Share] menyn, antingen [!UICONTROL Send file now] eller [!UICONTROL Send file on schedule]. Formatet på den levererade filen kan vara en PDF eller CSV. Läs mer om [projektplanering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
