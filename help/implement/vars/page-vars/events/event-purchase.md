@@ -2,7 +2,10 @@
 title: Inköpshändelse
 description: Använd inköpshändelsen för att samla in data för måtten"Beställningar","Enheter" och"Intäkter".
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +19,8 @@ När du anger en köphändelse påverkas följande mått:
 * Måtten för &quot;Beställningar&quot; ökar med 1
 * Måttet Enheter ökas med antalet produkter i `products` variabeln
 * Måttet Intäkter ökar med summan av prisparametrarna i `products` variabeln
+
+>[!NOTE] Intäkter multipliceras inte med kvantitetsfältet. skickar till exempel `s.products="Womens;Socks;5;4.50"` inte 22,50 USD till intäkter; den skickar 4,50 dollar. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Exempel,`s.products="Womens;Socks;5;22.50"`.
 
 ## Ställ in inköpshändelsen i Adobe Experience Platform Launch
 
