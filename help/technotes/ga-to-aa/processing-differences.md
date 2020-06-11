@@ -2,7 +2,7 @@
 title: Skillnader i bearbetning och arkitektur mellan olika Analytics-plattformar
 description: Lär dig hur vissa data samlas in och visas på olika sätt på olika plattformar som Adobe Analytics och Google Analytics.
 translation-type: tm+mt
-source-git-commit: 3211598c2ff43493b329a9be4fb6877ae29cf08b
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Om flera träffar skickas vid samma besök eller session på båda plattformarna
 
 Om du vill få en bättre överensstämmelse mellan rapporteringsverktygen använder du måtten i Adobe Analytics i stället för [!UICONTROL Single Page Visits] [!UICONTROL Bounces] som en del av ett beräknat mätresultat. Mätvärdet [!UICONTROL Single Page Visits] omfattar det totala antalet besök som endast inkluderade en sida, eller besök som kom in på webbplatsen men inte inkluderade ett klick till en annan sida.
 
-Mer information finns i [Studsfrekvens](/help/components/c-variables/c-metrics/metrics-bounce-rate.md) -måttet i användarhandboken för komponenter.
+Mer information finns i [Studsfrekvens](/help/components/metrics/bounce-rate.md) -måttet i användarhandboken för komponenter.
 
 ## [!UICONTROL Visits] och sessioner
 
@@ -36,4 +36,4 @@ Mer information finns i [Studsfrekvens](/help/components/c-variables/c-metrics/m
 * **Åsidosättning av manuell session:** En ny session i Google Analytics startar om du använder `sessionControl` för att starta eller avsluta en session manuellt. [!UICONTROL Visits] kan inte avslutas manuellt i Adobe Analytics.
 * **Avancerad besöksidentifiering i Adobe Analytics:** En ny funktion [!UICONTROL Visit] i Adobe Analytics startas automatiskt om en användare uppnår 12 timmars kontinuerlig aktivitet, 2 500 träffar eller 100 träffar inom 100 sekunder. Vart och ett av dessa detekteringskriterier aktiveras vanligtvis av båda aktiviteterna.
 
-Mer information finns i [Besök](/help/components/c-variables/c-metrics/metrics-visit.md) -måttet i användarhandboken för komponenter.
+Mer information finns i [Besök](/help/components/metrics/visits.md) -måttet i användarhandboken för komponenter.
