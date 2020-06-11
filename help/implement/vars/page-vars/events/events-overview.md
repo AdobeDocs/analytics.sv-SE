@@ -2,7 +2,10 @@
 title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: b9bb7a60398b8c392393a8d16b58292f91ab0ea7
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 0%
 
 ---
 
@@ -34,13 +37,13 @@ Flera funktioner är tillgängliga:
 Variabeln `s.events` är en sträng som innehåller en kommaavgränsad lista med händelser som ska ingå i träffen. Det finns ingen bytegräns för den här variabeln, så den trunkeras inte. Giltiga värden är:
 
 * `event1` - `event1000`: Ange anpassade händelser hur du vill. Registrera hur du använder varje händelse i organisationens [lösningsdesigndokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta din organisations kontoansvarige om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
-* `purchase`: Ökar värdet för &#39;Orders&#39; med 1 och tar värden som anges i variabeln för att beräkna &#39;Units&#39; och &#39;Revenue&#39;. `products` Se [köphändelse](event-purchase.md) för mer information.
-* `prodView`: Ökar måttet &#39;Produktvyer&#39;.
-* `scOpen`: Ökar Carts-måttet.
-* `scAdd`: Ökar Cart Additions-måttet.
-* `scRemove`: Ökar Cart Removals-måttet.
-* `scView`: Ökar Cart Views-måttet.
-* `scCheckout`: Ökar &#39;Utcheckningar&#39;-måttet.
+* `purchase`: Ökar [orderns](/help/components/metrics/orders.md) mätvärde med 1 och tar värden som anges i `products` variabeln för att beräkna [&#39;Enheter&#39;](/help/components/metrics/units.md) och [&#39;Intäkter&#39;](/help/components/metrics/revenue.md). Se [köphändelse](event-purchase.md) för mer information.
+* `prodView`: Ökar måttet för [&#39;Produktvyer&#39;](/help/components/metrics/product-views.md) .
+* `scOpen`: Ökar [&#39;Carts&#39;](/help/components/metrics/carts.md) -måttet.
+* `scAdd`: Ökar måttet för [inledande](/help/components/metrics/cart-additions.md) tillägg.
+* `scRemove`: Ökar måttet [&quot;Cart Removals&quot;](/help/components/metrics/cart-removals.md) .
+* `scView`: Ökar måttet för [kundvagnsvyer](/help/components/metrics/cart-views.md) .
+* `scCheckout`: Ökar måttet [&quot;Utcheckningar&quot;](/help/components/metrics/checkouts.md) .
 
 >[!NOTE] Den här variabeln är skiftlägeskänslig. Undvik att händelsevärden med felaktig skiftläge för att säkerställa korrekt datainsamling.
 
