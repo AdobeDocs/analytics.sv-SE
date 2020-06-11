@@ -3,7 +3,10 @@ description: Ett histogram är en ny visualiseringstyp i Analysis Workspace.
 title: Histogram
 uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +40,7 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 | Startar Bucket | Anger vilken bucket histogrammet börjar med. &quot;1&quot; är standardvärdet. Du kan ange startnummer från 0 till oändlighet (inga negativa tal). |
 | Mätbuffertar | Gör att du kan öka/minska antalet dataintervall (bucket). Det högsta antalet bucklor är 50. |
 | Storlek på mätpyts | Gör att du kan ange storleken för varje bucket. Du kan till exempel ändra bucketstorleken från en sidvy till två sidvyer. |
-| Inventeringsmetod | Här kan du välja mellan [besökare](/help/components/c-variables/c-metrics/visitors.md), [besök](/help/components/c-variables/c-metrics/metrics-visit.md)eller [träff](/help/components/c-variables/dimensionslist/report-hit-type.md). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
+| Inventeringsmetod | Här kan du välja mellan [besökare](/help/components/metrics/unique-visitors.md), [besök](/help/components/metrics/visits.md)eller [träff](/help/components/dimensions/hit-type.md). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
