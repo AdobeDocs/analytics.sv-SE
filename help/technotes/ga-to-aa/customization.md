@@ -2,7 +2,7 @@
 title: Anpassa rapporter i Adobe Analytics
 description: Lär dig hur du anpassar rapporter i Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 3211598c2ff43493b329a9be4fb6877ae29cf08b
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -68,7 +68,7 @@ Så här skapar du ett beräknat mått:
 4. När det beräknade måttet innehåller den önskade formeln klickar du på Spara för att gå tillbaka till arbetsytan.
 5. Dra det nydefinierade beräknade måttet till arbetsytan.
 
-   Läs mer om [Beräknade mått](/help/components/c-variables/c-metrics/calculated-metric.md) i användarhandboken för komponenter.
+   Läs mer om [Beräknade mått](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter.
 
 ## Anpassade aviseringar
 
