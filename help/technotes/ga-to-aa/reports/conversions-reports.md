@@ -2,7 +2,10 @@
 title: Konverteringsrapporter i Adobe Analytics
 description: Lär dig hur du använder konverteringsrapporter i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Utfallsvisualiseringen är inte begränsad till bara siddimensionen. Alla dimens
 
 E-handelsrapporter används vanligtvis av webbplatser som säljer produkter eller tjänster för att mäta beställningar och intäkter på inköpta artiklar. Den här funktionen är tillgänglig i Adobe Analytics och kallas för produktrapporter.
 
-Både e-handelsrapporter i Google Analytics och produktrapporter i Adobe Analytics kräver anpassade implementeringsändringar. Mer information finns i [produktdimensionen](/help/components/c-variables/dimensionslist/reports-products.md) i användarhandboken för komponenter.
+Både e-handelsrapporter i Google Analytics och produktrapporter i Adobe Analytics kräver anpassade implementeringsändringar. Mer information finns i [produktdimensionen](/help/components/dimensions/product.md) i användarhandboken för komponenter.
 
 ## Flerkanalstrattrapporter
 
