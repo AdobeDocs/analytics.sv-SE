@@ -3,9 +3,9 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 translation-type: tm+mt
-source-git-commit: 8e8eb2c7787f97104c983cc4b0f11e5ed57de069
+source-git-commit: c53580905e6bb22b9cdb2917734a189e1f83d72f
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1097'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ Mer information om produktjämförelser i Adobe Analytics finns [här](/help/adm
 
 * När du behöver överföra data till Adobe Analytics, och inte kan använda Adobe AppMeasurement eller mobil SDK-kod.
 
-**[Kundattribut](/help/components/c-variables/dimensionslist/reports-customer-attributes.md)**ska användas:
+**[Kundattribut](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html)**ska användas:
 
 * Om du samlar in företagsdata i en CRM-databas (customer relationship management) och vill överföra data till Experience Cloud.
 * Om ni vill använda CRM-data för en djupare analys i Analytics, eller som målinriktningskriterier i Adobe Target.
