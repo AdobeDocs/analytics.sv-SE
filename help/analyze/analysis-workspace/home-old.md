@@ -3,7 +3,10 @@ description: Så här kommer du igång med Adobe Analytics.
 keywords: Analysis Workspace
 title: Guiden Komma igång
 translation-type: tm+mt
-source-git-commit: 7fbeac0488fbe9b3d10d7c1242f31250f1c7dc16
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '1329'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +29,7 @@ Hämta en grundläggande rankad rapport med Analysis Workspace. En rankad rappor
 4. Klicka på knappen Skapa nytt projekt.
 5. Kontrollera att Tomt projekt är markerat i det modala popup-fönstret och klicka sedan på Skapa.
 6. Till vänster finns en lista med mått, mått, segment och datumintervall. Leta reda på siddimensionen (färgad orange) och dra den till arbetsytan där det står &#39;Släpp en dimension här&#39;.
-7. Observera att om rapportsviten innehåller data kan du se en rapport som visar de översta sidorna för den här månaden. Analysis Workspace fyllde automatiskt i rapporten med [förekomstmåttet](/help/components/c-variables/c-metrics/metrics-occurrences.md) .
+7. Observera att om rapportsviten innehåller data kan du se en rapport som visar de översta sidorna för den här månaden. Analysis Workspace fyllde automatiskt i rapporten med [förekomstmåttet](/help/components/metrics/occurrences.md) .
 8. Leta reda på Visits-måttet (grönt i färg) och dra det antingen **över** eller **bredvid** måtthuvudet Förekomster (undvik att placera det ovanför måttet). Om du drar Visits-måttet över förekomster ersätts måtten i rapporten. Om du drar Visits-måttet bredvid Förekomster visas båda måtten sida vid sida.
 9. Om du vill spara projektet klickar du på *[!UICONTROL Project]>[!UICONTROL Save]*i den övre vänstra menyn.
 
@@ -97,6 +100,6 @@ Det finns många inriktningar på att fördjupa din förståelse av Analysis Wor
 
 ### För analytiker och administratörer som vill förbättra kvaliteten på arbetsytan i sin organisation
 
-* [Behörigheter](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html)för Analysis Workspace: Tilldela användarbehörigheter till arbetsytan via Adobe Admin Console.
+* [Behörigheter](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html)för Analysis Workspace: Tilldela användarbehörigheter till arbetsytan via Adobe Admin Console.
 * [Mallar i arbetsytan](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md): Skapa mallar så att dina kollegor kan börja med ett projektutrymme som är anpassat efter deras behov.
 * [Arbetsyteurval](/help/analyze/analysis-workspace/curate-share/curate.md): Skapa ett projekt som begränsar antalet tillgängliga komponenter så att arbetsytan blir mer tillgänglig för dem som inte är vana vid verktyget
