@@ -2,7 +2,10 @@
 title: Anskaffningsrapporter i Adobe Analytics
 description: Lär dig hur du skapar förvärvsbaserade rapporter med Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '1578'
+ht-degree: 0%
 
 ---
 
@@ -53,9 +56,9 @@ Källrapporter och medierapporter visar vilka domäner som körde trafiken till 
 
 Se följande sidor i användarhandboken för komponenter för mer information om deras respektive dimension:
 
-* [Refererande domän](/help/components/c-variables/dimensionslist/reports-referring-domains.md)
-* [Referenstyp](/help/components/c-variables/dimensionslist/reports-ref-types.md)
-* [Sök nyckelord](/help/components/c-variables/dimensionslist/reports-search-keywords.md)
+* [Refererande domän](/help/components/dimensions/referring-domain.md)
+* [Referenstyp](/help/components/dimensions/referrer-type.md)
+* [Sök nyckelord](/help/components/dimensions/search-keyword.md)
 
 ## All trafik - referenser
 
@@ -65,7 +68,7 @@ Se följande sidor i användarhandboken för komponenter för mer information om
 1. På komponentmenyn letar du upp **referensdomänen** eller **startsidan** och drar den till det stora frihandstabellområdet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [Refererande domän](/help/components/c-variables/dimensionslist/reports-referring-domains.md) i användarhandboken för komponenter.
+Mer information finns i [Refererande domän](/help/components/dimensions/referring-domain.md) i användarhandboken för komponenter.
 
 ## Google Ads-rapporter och Search Console-rapporter
 
