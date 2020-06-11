@@ -2,9 +2,9 @@
 description: 'null'
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: 80126f2173ae71dd45cc3f983df7149bc1326c1e
+source-git-commit: 8e8a6672b95da56bba4af0fbf66981f85cb36415
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -12,11 +12,18 @@ ht-degree: 1%
 
 # Översikt över paneler
 
-En panel är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i arbetsytan. Paneler är användbara när du vill ordna dina projekt efter tidsperioder, affärsenheter, geografi, osv. Följande sex typer av paneler är tillgängliga i Analysis Workspace: [Tom panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md), panelen [](/help/analyze/analysis-workspace/c-panels/quickinsight.md) Snabbinsikter (kommer snart), [panelen](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) Analytics for Target (kommer snart), panelen [](/help/analyze/analysis-workspace/c-panels/attribution/attribution.md)Attribution, [Frihandspanelen](/help/analyze/analysis-workspace/c-panels/freeform-panel.md)och panelen [](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)Segmentjämförelse¥.
+En panel är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i arbetsytan. Paneler är användbara när du vill ordna dina projekt efter tidsperioder, affärsenheter, geografi, osv. Följande sex typer av paneler är tillgängliga i Analysis Workspace:
 
-Quick Insights, Blank and Freeform panels är bra platser att starta analysen på, medan Analytics for Target, Attribution IQ och Segment Comparison passar in på mer avancerade analyser. Vi har också lagt till en plusknapp (+) så att du när som helst kan lägga till tomma paneler.
+* [Tom panel](blank-panel.md)
+* [Panelen Snabbinsikter](quickinsight.md)
+* [Analyser för målpanelen](a4t-panel.md) (kommer snart)
+* [Attributionspanelen](attribution.md)
+* [Frihandspanel](freeform-panel.md)
+* [Segmentjämförelsepanel](c-segment-comparison/segment-comparison.md)
 
-Standardstartpanelen är panelen Frihand, men du kan också göra den [tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standard.
+Quick Insights, Blank and Freeform panels är bra platser att starta analysen på, medan Analytics for Target, Attribution IQ och Segment Comparison passar in på mer avancerade analyser. En `"+"` knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
+
+Standardstartpanelen är friformspanelen, men du kan även göra den [tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standard.
 
 ## Nedrullningsbara filter i paneler {#section_D2828EEDD52944528E87F470EAB581CF}
 
