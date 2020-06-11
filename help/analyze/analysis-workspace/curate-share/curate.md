@@ -3,9 +3,9 @@ description: Med kurering kan du begränsa komponenter innan du delar ett projek
 keywords: Analysis Workspace curation
 title: Kuratera arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+source-git-commit: 2b4cf53582b746f697c18cb63a1840dfee9b693f
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '463'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderas innan du delar ett projekt.
 
 >[!NOTE]
-> Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via Admin Console. Curation är ett sekundärt filter.
+> Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via Adobe Experience Cloud Admin Console. Curation är ett sekundärt filter.
 
 ## Använd projektstrukturering
 
@@ -26,13 +26,15 @@ De komponenter som används i projektet läggs automatiskt till.
 1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till [!UICONTROL Curate Components] fältet.
 1. Klicka på **[!UICONTROL Done]**.
 
+Du kan också använda Kursion på [!UICONTROL Share] menyn genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
+
 ![](assets/curation-field.png)
+
+## Kuraterad projektvy
 
 När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av komponenter som du har definierat:
 
 ![](assets/curate-project.png)
-
-Du kan också använda Kursion på [!UICONTROL Share] menyn genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
 ## Ta bort projekturval
 
@@ -48,15 +50,15 @@ Om du vill använda kurering på rapportsvitnivå, så att den gäller för mån
 >[!NOTE]
 > VRS-kurering används alltid före projektkurering. Detta innebär att även om ditt kuraterade projekt innehåller vissa komponenter, kommer de att filtreras bort om det aktuella VRS inte innehåller dem.
 
-### Visa alla komponenter
+## Visa alla komponenter, alternativ
 
 I ett välstrukturerat projekt (VRS) får mottagaren möjlighet att välja **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
 
-* användarens behörighetsnivå (administratör eller annan administratör)
-* projektroll (ägare/redaktör eller inte)
-* typ av kuration som används
+* Användarens behörighetsnivå (admin eller icke-admin)
+* Projektroll (ägare/redigerare eller inte)
+* Typ av kuration som används (VRS eller projekt)
 
-| Kurvtyp | Administratörer | Projektägare som inte är administratörer | Icke-administratörer |
+| Kurvtyp | Administratörer | Projektägare eller redigeringsroll som inte är administratör | Duplicera eller visa roll som inte är administratör |
 |---|---|---|---|
 | Kuraterad VRS | Alla VRS-komponenter som inte är kuraterade | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem |
 | Kuraterat projekt | Alla projektkomponenter som inte är kuraterade | Alla projektkomponenter som inte är kuraterade | Ej förvaltade projektkomponenter som den här rollen äger eller som har delats med dem |
