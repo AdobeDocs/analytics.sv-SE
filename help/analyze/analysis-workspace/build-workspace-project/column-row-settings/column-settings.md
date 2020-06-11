@@ -3,7 +3,10 @@ description: Med kolumninställningar kan du konfigurera kolumnformatering, som 
 title: Kolumninställningar
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 834783e4eae9100233afc164e2fabef96f089874
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 1%
 
 ---
 
@@ -46,6 +49,19 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 | Automatiskt genererad | Genererar automatiskt gränser för villkorsstyrd formatering. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är den lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
 | Egen | Du kan tilldela värden manuellt för fälten Övre, Mittpunkt och Nedre gräns för villkorsstyrd formatering. Detta ger dig flexibilitet att avgöra när ett kolumnvärde blir bra, medelvärde eller dåligt. |
 | Förhandsgranskning av tabellcell | Visar en förhandsvisning av hur varje cell visas med de valda formateringsalternativen. |
+
+## Använd en attribueringsmodell som inte är standard
+
+Analysis Workspace stöder [attribuering](../../attribution/overview.md) för nästan alla mätvärden.
+
+1. Klicka på ikonen Inställningar (kugghjulet) i en kolumn i frihandstabellen.
+
+   ![Kryssrutan Attribut](assets/attribution-checkbox.png)
+
+2. Under **[!UICONTROL Data Settings]**, kolla **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributmodeller](../../attribution/models.md).
+
+   ![Välj attribueringsmodell](assets/attribution-select.png)
+
 
 >[!MORELIKETHIS]
 >
