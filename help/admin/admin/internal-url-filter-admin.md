@@ -4,7 +4,10 @@ title: Interna URL-filter
 topic: Admin tools
 uuid: 70868edb-208d-4dad-9401-70967468d40c
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '203'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Interna URL-filter identifierar de referenser som du anser vara interna för din webbplats. De hjälper trafikkällor att fylla i data och hjälper till att filtrera intern trafik.
 
-En hänvisare, eller hänvisande sida, är vanligtvis den sida från vilken en besökare har angett webbplatsen. För att undvika att skevas kan du filtrera bort interna referenser. Rapporterna exkluderar filtrerade referenter från [referensrapporten](/help/components/c-variables/dimensionslist/reports-referrers.md), [referensdomänrapporten](/help/components/c-variables/dimensionslist/reports-referring-domains.md)och andra sökmetodrapporter.
+En hänvisare, eller hänvisande sida, är vanligtvis den sida från vilken en besökare har angett webbplatsen. För att undvika att skevas kan du filtrera bort interna referenser. Rapporterna exkluderar filtrerade referenser från [referensdimensionen](/help/components/dimensions/referrer.md) , dimensionen för [referensdomäner](/help/components/dimensions/referring-domain.md) och andra dimensioner för trafikkällan.
 
 Den vanligaste orsaken till att trafikkällorna inte fyller i data är att Intern URL-filterlista inte har definierats. Följ de här stegen för att kontrollera vilka interna URL-filter som har konfigurerats för en rapportsvit. Du undviker detta genom att ta bort regeln med en punkt (.) som ett filter och lägg till en egen webbplats.
 
