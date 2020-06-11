@@ -3,9 +3,9 @@ description: projekt med endast visning i arbetsytan
 keywords: View-only projects
 title: Visa endast arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+source-git-commit: 8efbe8c64f32a64da0422611e0170b7135ad39d0
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,13 @@ Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dolt vänster spår
 * Rapportsvit
-* Panelkalenderns datumintervallObs! Om du vill ge mottagarna kalenderkontroll lägger du till ett [nedrullningsbart filter med datumintervall](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till ett [nedrullningsbart filter med datumintervall](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
 * Frihand # av synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering
 * Panelsegment
 * Redigera, Infoga och Komponentmenyer
+* Tips för arbetsyta
 
 ## Aktiverade interaktioner
 
