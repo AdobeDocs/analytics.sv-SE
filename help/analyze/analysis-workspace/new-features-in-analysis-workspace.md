@@ -3,7 +3,7 @@ description: Nya funktioner på Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+source-git-commit: 44112013e049e6e76554530ba438c71fee902841
 workflow-type: tm+mt
 source-wordcount: '7195'
 ht-degree: 1%
@@ -109,7 +109,7 @@ Nya funktioner och förbättringar som släpptes 17 januari 2019.
 |--- |--- |
 | [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Större förbättringar av kohortanalysen gör att du kan:<ul><li>Lägg in segmentinkludering och returnera mätvärden separat. </li><li>Visa bortfall i stället för kvarhållande.</li><li>Visa latenstabeller (förfluten tid före och efter en inkluderingshändelse).</li><li>Anpassa kohortdimensionen (gruppera besökare baserat på en eVar, inte bara tid).</li><li>Gör en rullande kohortberäkning: beräkna kvarhållning/bortfall baserat på tidigare tidsperiod, inte på ursprunglig kohort. </li><li>Lägg in flera mätvärden i inkluderings- och returfälten samt tillämpa segment. (Beräknade mått stöds inte)</li></ul> |
 | [Visa densitet](/help/analyze/analysis-workspace/build-workspace-project/view-density.md) | Med den här nya inställningen kan du visa mer data på en enda skärm genom att minska den lodräta utfyllnaden av den vänstra listen, frihandstabeller och kohorttabeller. Tillgängligt via Projekt > Projektinformation och inställningar. |
-| [Stöd för flervärdesvariabler i Attribution IQ](attribution-iq.md) | Vissa dimensioner i Analytics kan innehålla flera värden för en enda träff, till exempel listVars, produktvariabeln, listprops eller försäljning av eVars. Med Analysis Workspace kan du använda attribuerings-IQ på någon av dessa typer av variabler på träffnivån. |
+| [Stöd för flervärdesvariabler i Attribution IQ](attribution/overview.md) | Vissa dimensioner i Analytics kan innehålla flera värden för en enda träff, till exempel listVars, produktvariabeln, listprops eller försäljning av eVars. Med Analysis Workspace kan du använda attribuerings-IQ på någon av dessa typer av variabler på träffnivån. |
 | Prestandaförbättringar | Snabba upp förbättringar av visualiseringar vid nedbrytning - projekt med många uppdelningar läses in snabbare. |
 
 ## November 2018
@@ -210,7 +210,7 @@ Nya funktioner och förbättringar som släpptes 19 juli 2018.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="attribution-iq.md"  > Attribution IQ </a> </b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="attribution/overview.md"  > Attribution IQ </a> </b> </p> </td> 
    <td colname="col2"> <p>Med attribuerings-IQ kan ni utföra mer sofistikerade och intelligenta analyser av marknadsföringens prestanda. Nya attribueringsmodeller kan användas på mätvärden i Analysis Workspace (på valfri tabell eller vid valfri uppdelning) och i beräknade mätvärden. En ny attribueringspanel ger bättre visualisering och jämförelse. </p> </td> 
   </tr> 
   <tr> 
