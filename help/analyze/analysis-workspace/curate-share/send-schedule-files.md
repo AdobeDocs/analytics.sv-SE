@@ -1,14 +1,17 @@
 ---
 description: Du kan dela och strukturera projekt och skicka projektfiler (i PDF- eller CSV-format) direkt eller enligt ett schema.
-title: Dela och schemalägg projektfiler
+title: Dela-menyn
 uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: d1e3daa8b13b148191583e678cd58f415701d407
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
 
-# Dela och schemalägg projektfiler
+# Dela-menyn
 
 Du kan dela och strukturera projekt och skicka projektfiler (i PDF- eller CSV-format) direkt eller enligt ett schema.
 
@@ -24,7 +27,7 @@ Du kan dela och strukturera projekt och skicka projektfiler (i PDF- eller CSV-fo
  <tbody> 
   <tr> 
    <td colname="col1"> Dela projekt </td> 
-   <td colname="col2"><a href="/help/analyze/analysis-workspace/curate-share/curate.md"  > Mer information</a> </td> 
+   <td colname="col2"><a href="/help/analyze/analysis-workspace/curate-share/share-projects.md"  > Mer information</a> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Hämta projektlänk </td> 
