@@ -2,7 +2,10 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, som definierar vanliga termer som används.
 translation-type: tm+mt
-source-git-commit: f2137572c9c5d08e4a293ea4d285b78a12b37925
+source-git-commit: 1968162d856b6a74bc61f22f2e5a6b1599d04c79
+workflow-type: tm+mt
+source-wordcount: '2458'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **AppMeasurement:** Kodbiblioteket som används för att samla in data och skicka dem till Adobe. Se [Startsidan](/help/implement/home.md) i användarhandboken för Implementera.
 * **ASI-kortplats:** Finns inte längre. I tidigare versioner av Adobe Analytics hade ASI-kortplatserna en temporär rapportsvitsbehållare för att visa segmenterade data. I den aktuella versionen av Adobe Analytics kan segment tillämpas direkt på alla rapporter.
 * **Uppdelning:** Gör att du kan visa en dimension inuti en annan dimension. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
-* **Studsa:** Ett besök som består av en enda träff. Se [studsar](/help/components/c-variables/c-metrics/metrics-bounces.md) i användarhandboken för komponenter. Se även Enkel åtkomst.
+* **Studsa:** Ett besök som består av en enda träff. Se [studsar](/help/components/metrics/bounces.md) i användarhandboken för komponenter. Se även Enkel åtkomst.
 * **Beräknat mätvärde:** Tillåter en kombination av befintliga mätvärden, statistiska funktioner och formler för rapportering. Se [Beräknade mått](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter.
 * **Campaign:** Kan referera till:
    * Kampanjvariabeln, som fyller i spårningskoddimensionen. Se [kampanj](../implement/vars/page-vars/campaign.md) i Implementera användarhandbok.
@@ -32,14 +35,14 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Klassificering:** En funktion i Adobe Analytics som gör det möjligt att gruppera dimensionsvärden. Se [Klassificeringar](/help/components/c-classifications2/c-classifications.md) i användarhandboken för komponenter.
 * **Klickkarta:** Används inte längre. Ett äldre plugin-program för webbläsare som visar vilka områden på webbplatsen som du klickade mest på. Det här verktyget har tagits bort till förmån för aktivitetskarta.
 * **Klickströmsdatafeed:** Se Dataflöde.
-* **Kohort:** En grupp personer som delar gemensamma egenskaper under en viss tidsperiod. Se [Vad är kohortanalys?](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) i användarhandboken för Analysera.
+* **Kohort:** En grupp personer som delar gemensamma egenskaper under en viss tidsperiod. See [What is Cohort Analysis?](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) i användarhandboken för Analysera.
 * **Samlingsserver:** Se Datainsamlingsserver.
 * **Kontextdatavariabler:** Tillfälliga variabler som endast används i bearbetningsregler. Variabelvärden för kontextdata förloras permanent om en bearbetningsregel inte kopierar dem till en konverterings- eller trafikvariabel. Se [Kontextdatavariabler](../implement/vars/page-vars/contextdata.md) i Implementera användarhandbok.
-* **Konverteringsvariabel:** Colloquially known as eVars. Sparar ett anpassat värde och bevarar variabelvärdet tills det upphör att gälla. Se [Konverteringsvariabler](/help/components/c-variables/dimensionslist/reports-conversion.md) i användarhandboken för komponenter.
+* **Konverteringsvariabel:** Kallas också eVars. Sparar ett anpassat värde och bevarar variabelvärdet tills det upphör att gälla. Se [eVar](/help/components/dimensions/evar.md) -dimensionen i användarhandboken för komponenter.
 * **Korrelation:** Används inte längre som term. ersätts med dimensionsfördelningar. I tidigare versioner av Adobe Analytics gav korrelationer möjlighet att bryta ned trafikvariabler. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
 * **Aktuella data:** Ett alternativ i vissa rapporter som tillåter att nyligen insamlade data som ännu inte har bearbetats inkluderas. Se [Aktuella data](/help/analyze/reports-analytics/current-data.md) i användarhandboken för Analysera.
 * **Egen länk:** En typ av träff som innehåller data som inte är sidvy. Se [funktionen](../implement/vars/functions/tl-method.md) s.tl() i användarhandboken för Implementera. Se även Träff.
-* **Kundattribut:** En Experience Cloud-funktion som tillåter överföring av attributdata. Se [Kundattribut](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html) i användarhandboken för bastjänsterna.
+* **Kundattribut:** En Experience Cloud-funktion som tillåter överföring av attributdata. Se [Kundattribut](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html) i användarhandboken för bastjänsterna.
 * **Kundsupport:** En utsedd användare som har rätt att interagera direkt med Adobes kundtjänst. Se [Kundsupportrepresentanter](https://helpx.adobe.com/experience-cloud/supported-users.html) i Experience Clouds kunskapsbas.
 * **Datainsamlingsserver:** Adobe-ägda servrar som tar emot och bearbetar data. Bildbegäranden skickas till Adobes datainsamlingsservrar för användning vid rapportering.
 * **Dataanslutningar:** En komplett utvecklingslösning som gör det möjligt för en tredje part att automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. De flesta dataanslutningar använder ett liknande arbetsflöde som används i datakällor. Se Dataanslutningar i användarhandboken för Import.
@@ -66,16 +69,16 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Svarstid:** Fördröjningen mellan när data samlas in och när de är tillgängliga i rapporter. Vanlig fördröjning i en rapportserie är 30-90 minuter. Se [Latens](/help/technotes/latency.md) i användarhandboken för Technotes.
 * **Starta:** Short for Adobe Experience Platform Launch, Adobes nuvarande implementeringslösning. Se [Översikt](https://docs.adobe.com/content/help/en/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
 * **Liststatus:** En inställning som konverterar en typisk trafikvariabel som stöder flera värden i samma träff. Alla anpassade trafikvariabler kan bli en listprop om inställningen är aktiverad. Mer information finns i [avsnittet](../implement/vars/page-vars/prop.md) i Implementera användarhandbok.
-* **Listvar:** En distinkt variabel som är skild från konverteringsvariabler. Listvariabler har stöd för flera värden i samma träff, och variabelvärden bevaras vid ett besök, på liknande sätt som konverteringsvariabler. Endast tre listvariabler är tillgängliga för en organisation. Se [listan](../implement/vars/page-vars/list.md) i Implementera användarhandbok.
+* **Listvar:** En distinkt variabel som är skild från konverteringsvariabler. Listvariabler har stöd för flera värden i samma träff, och variabelvärden bevaras vid ett besök, på liknande sätt som konverteringsvariabler. Endast tre listvariabler är tillgängliga för en organisation. Se [listan](/help/implement/vars/page-vars/list.md) i Implementera användarhandbok.
 * **Inloggningsföretag:** En samling rapportsviter som används av din organisation. Vissa organisationer har flera inloggningsföretag som gäller för olika delar av organisationen.
 * **Marknadsföringskanal:** En funktion i Adobe Analytics som kategoriserar träffar efter hur de kom till er webbplats. Den logik som används för att kategorisera träffar kan anpassas med regler för bearbetning av marknadsföringskanaler. Se [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) i användarhandboken för komponenter.
 * **Mått:** En komponenttyp som innehåller kvantitativa data. Mätvärden innehåller vanligtvis siffror, t.ex. sidvyer, besök och Intäkter. En dimension är vanligtvis dess motsvarighet.
 * **Märk flera programsviter:** Att skicka samma träff till flera rapportsviter. I och med introduktionen till virtuella rapportsviter är detta i stort sett inte längre nödvändigt. De flesta satsningar på taggning av flera programsviter bidrar till att ge plats åt en global rapportserie.
 * **Normalisering:** Ett sätt att organisera en visualisering som tar alla mätvärden och tvingar dem till samma proportioner, vilket gör det enklare att jämföra trender.
-* **Förekomster:** En typ av mätvärden som visar hur många träffar ett dimensionsvärde har angetts eller befunnits. Se [Förekomster](/help/components/c-variables/c-metrics/metrics-occurrences.md) i användarhandboken för komponenter.
+* **Förekomster:** En typ av mätvärden som visar hur många träffar ett dimensionsvärde har angetts eller befunnits. Se [förekomstmåttet](/help/components/metrics/occurrences.md) i användarhandboken för komponenter.
 * **Omniture:** Används inte längre som term. Organisationen som ägde Adobe Analytics innan den förvärvades av Adobe 2009.
 * **Banor:** Se Flöde.
-* **Sidvy:** En typ av träff som ökar sidvisningen. Se [Sidvyer](/help/components/c-variables/c-metrics/metrics-page-view.md) i användarhandboken för komponenter. Se även Träff.
+* **Sidvy:** En typ av träff som ökar sidvisningen. Se måttet för [sidvisningar](/help/components/metrics/page-views.md) i användarhandboken för komponenter. Se även Träff.
 * **Persistence:** Ett abstrakt koncept för konverteringsvariabler som tillåter länkning mellan ett variabelvärde och händelser som inträffar i olika träffar. Se även Förfallotid.
 * **Primärt serveranrop:** Alternativt namn för bildbegäran eller träff, används mest i samband med märkning och fakturering av flera sviter. När samma träff skickas till flera rapportsviter är den första rapportsviten ett primärt serveranrop medan resten är sekundära serveranrop. Den här regeln gäller alla träfftyper, inklusive sidvisning och länkspårning. Se även sekundära serveranrop.
 * **Bearbetar regler:** Kan referera till:
@@ -96,16 +99,16 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Segmentbehållare:** Den del av ett segment som avgör hur mycket data som ska hämtas in. Behållare kan baseras på sidvisning, besök eller besökare. Se [Segmentering](/help/components/c-segmentation/seg-overview.md) i användarhandboken för komponenter.
 * **Serialisering:** Se Händelseserialisering.
 * **Serversamtal:** Alternativt namn för en bildförfrågan eller träff, används mest i samband med fakturering.
-* **Enkel åtkomst:** Ett besök där en dimension bara hade ett unikt värde. Besöken kan få flera träffar, förutsatt att det inte finns flera unika värden. Se [Enkel åtkomst](/help/components/c-variables/c-metrics/metrics-single-access.md) i användarhandboken för komponenter. Se även Studsa.
+* **Enkel åtkomst:** Ett besök där en dimension bara hade ett unikt värde. Besöken kan få flera träffar, förutsatt att det inte finns flera unika värden. Se måttet för [enkel åtkomst](/help/components/metrics/single-access.md) i användarhandboken för komponenter. Se även Studsa.
 * **SiteCatalyst:** Används inte längre som term. Det tidigare produktnamnet för Adobe Analytics.
 * **Lösningsdesigndokument:** Kallas även en referens för lösningsdesign eller SDR Ett internt dokument som hanteras av en organisation och som beskriver hur anpassade variabler används och den logik som används för att fylla i dem. Se [Skapa ett dokument](/help/implement/prepare/solution-design.md) för lösningsdesign i användarhandboken för Implementera.
 * **Underrelation:** Används inte längre som term. ersätts med dimensionsfördelningar. I tidigare versioner av Adobe Analytics hade delrelationer gett möjlighet att bryta ned konverteringsvariabler. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
-* **Success event:** En spårad åtgärd som en användare vidtagit. Organisationen avgör vilka händelser som ska spåras och vilka variabler för lyckade händelser som du använder för att spåra dem. Se [Anpassade händelser](/help/components/c-variables/c-metrics/metrics-custom.md) i användarhandboken för komponenter.
+* **Success event:** En spårad åtgärd som en användare vidtagit. Organisationen avgör vilka händelser som ska spåras och vilka variabler för lyckade händelser som du använder för att spåra dem. Se [Anpassade händelser](/help/components/metrics/custom-events.md) i användarhandboken för komponenter.
 * **Användare som stöds:** Se Kundsupportrepresentant.
-* **Trafikvariabel:** Kallas också proppar. Lagrar ett anpassat värde för en enda träff. Tidigare versioner av Adobe Analytics gav ett unikt värde, men förbättringar av plattformen gör anpassade trafikvariabler i stort sett onödiga. Adobe rekommenderar att du i de flesta fall använder anpassade konverteringsvariabler (eVars). Se [Anpassade trafikvariabler](/help/components/c-variables/dimensionslist/reports-custom-traffic.md) i användarhandboken för komponenter.
+* **Trafikvariabel:** Kallas också för proppar. Lagrar ett anpassat värde för en enda träff. Tidigare versioner av Adobe Analytics gav ett unikt värde, men förbättringar av plattformen gör anpassade trafikvariabler i stort sett onödiga. Adobe rekommenderar att du i de flesta fall använder anpassade konverteringsvariabler (eVars). Se [Prop](/help/components/dimensions/prop.md) -dimensionen i användarhandboken för komponenter.
 * **Trendrapport:** Ett rapportformat som vanligtvis visar flera datumintervall med ett mätvärde. Med den här typen av rapporter kan du se hur ett mätresultat fungerar över tid. Se även Rankad rapport.
-* **Unik besökare**: Representerar antalet unika personer som har besökt din webbplats. En enda unik besökare kan ha flera besök. Se [Unik besökare](/help/components/c-variables/c-metrics/metrics-unique-visitors.md) i användarhandboken för komponenter.
+* **Unik besökare**: Representerar antalet unika personer som har besökt din webbplats. En enda unik besökare kan ha flera besök. Se måttet för [unika besökare](/help/components/metrics/unique-visitors.md) i användarhandboken för komponenter.
 * **Virtuell rapportsvit:** En virtuell behållare med data som refererar till en vanlig rapportserie och som tillåter att data förfinas. Data skickas inte till en virtuell rapportsvit. i stället skickas data till en vanlig rapportsserie och en virtuell rapportsvit bygger på den insamlade informationen. Se [Virtuella rapportsviter](/help/components/vrs/vrs-about.md) i användarhandboken för komponenter.
-* **Besök:** Representerar antalet unika sessioner som har ägt rum på din webbplats. Se [Besök](/help/components/c-variables/c-metrics/metrics-visit.md) i användarhandboken för komponenter.
+* **Besök:** Representerar antalet unika sessioner som har ägt rum på din webbplats. Se [Besök](/help/components/metrics/visits.md) -måttet i användarhandboken för komponenterna.
 * **VISTA-regel:** Anpassad logik som skapats av Adobe på kundens begäran för att kopiera, analysera eller filtrera data på serversidan. VISTA-reglerna medför normalt merkostnader. Se även Bearbetningsregler.
 * **Webbfyr:** Se Bildbegäran.
