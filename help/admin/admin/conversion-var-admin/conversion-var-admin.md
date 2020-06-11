@@ -5,7 +5,10 @@ title: Konverteringsvariabler (eVar)
 topic: Admin tools
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: b9bb7a60398b8c392393a8d16b58292f91ab0ea7
+workflow-type: tm+mt
+source-wordcount: '1578'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +79,7 @@ Beskrivningar av fält som används vid [redigering av konverteringsvariabler](/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Status</span> </p> <p>(endast eVar) </p> </td> 
-   <td colname="col2"> <p>Definierar eVar-status: </p> <p><b>Inaktiverad</b>:</span> Inaktiverar eVar. Tar bort eVar från konverteringsvariabellistan. </p> <p> <b>Inga underrelationer</b>:</span> Hindrar dig från att bryta ned eVar med en underrelation. </p> <p> <b>Grundläggande underrelationer</b>: Gör att </span>du kan dela upp en eVar-funktion i vilken rapport som helst med fullständiga underrelationer (till exempel Produkter eller Campaign). </p> </td> 
+   <td colname="col2"> <p>Definierar eVar-status: </p> <p><b>Inaktiverad</b>:</span> Inaktiverar eVar. Tar bort eVar från konverteringsvariabellistan. </p> <p> <b>Inga underrelationer</b>:</span> Hindrar dig från att bryta ned eVar med en underrelation. </p> <p> <b>Grundläggande underrelationer</b>: </span>Gör att du kan dela upp en eVar-funktion i vilken rapport som helst med fullständiga underrelationer (till exempel Produkter eller Campaign). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Återställ</span> </p> </td> 
@@ -88,7 +91,7 @@ Beskrivningar av fält som används vid [redigering av konverteringsvariabler](/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Marknadsföringsbindningshändelse</span> </p> <p>(endast eVar) </p> </td> 
-   <td colname="col2"> <p>Om Merchandising är inställt på <span class="uicontrol"> Conversion Variable Syntax</span>binder de valda händelserna det aktuella eVar-värdet med en produkt. </p> <p>Om du vill använda en bindningshändelse anger du <span class="uicontrol"> Allocation till Most Recent</span>. Om <span class="uicontrol"> Allocation är Original Value</span>, stannar den första eVar-produktbindningen tills eVar förfaller. </p> </td> 
+   <td colname="col2"> <p>Om Merchandising är inställt på <span class="uicontrol"> Conversion Variable Syntax</span>binder de valda händelserna det aktuella eVar-värdet med en produkt. </p> <p>Om du vill använda en bindningshändelse anger du <span class="uicontrol"> Allocation till Most Recent</span>. Om <span class="uicontrol"> Allocation är Original Value</span>, stannar den första eVar-produktbindningen tills eVar förfaller. Du kan markera flera händelser genom att hålla ned <code>ctrl</code> (Windows) eller <code>cmd</code> (Mac) och klicka på flera objekt i listan. Du kan bara välja en händelse när du har valt "Konverteringsvariabelsyntax".</p> </td> 
   </tr> 
  </tbody> 
 </table>
