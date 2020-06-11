@@ -2,7 +2,10 @@
 title: visitorID
 description: Använd ett anpassat besökar-ID.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: b9bb7a60398b8c392393a8d16b58292f91ab0ea7
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
@@ -33,3 +36,5 @@ Variabeln `s.visitorID` är en sträng som innehåller en anpassad unik identifi
 ```js
 s.visitorID = "abc123";
 ```
+
+>[!CAUTION] En ogiltig implementering av anpassade besökar-ID:n kan leda till felaktiga data och dålig rapportprestanda. Om den här variabeln innehåller ett standardvärde (till exempel `"0"` eller `"NULL"`) hanterar Adobe dessa träffar som om de vore samma besökare. Detta resulterar i felaktiga data, med låga besökarantal och segment på besökarnivå som inte fungerar som förväntat. Felaktigt implementerade anpassade besökar-ID:n medför också stor belastning på bearbetningsservrar, vilket ökar [latensen](/help/technotes/latency.md) och minskar rapportprestanda.
