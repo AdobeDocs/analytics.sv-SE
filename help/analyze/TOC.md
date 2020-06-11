@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+source-git-commit: 68bdfc581751f81e02725446bc98a84a22bdadd0
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1098'
 ht-degree: 96%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 96%
          + [Användningsexempel på segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
    + Samla in eller dela projekt {#curate-share}
-      + [Kuratera ett arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
+      + [Kuratera arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
       + [Visa endast arbetsyteprojekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
