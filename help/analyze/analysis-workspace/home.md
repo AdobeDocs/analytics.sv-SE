@@ -4,7 +4,7 @@ title: Översikt över Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: d8db32a76b93e9687b28125050224857b598d82d
+source-git-commit: 834783e4eae9100233afc164e2fabef96f089874
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Analysis Workspace tar bort alla vanliga begränsningar i en enskild Analytics-rapport. Den ger en robust, flexibel arbetsyta för att skapa anpassade analysprojekt. Dra och släpp valfritt antal datatabeller, visualiseringar och komponenter (mått, mätvärden, segment och tidsdetaljer) till ett projekt. Skapa snabbt indelningar och segment, skapa kohorter för analys, skapa aviseringar, jämföra segment, göra flödes- och bortfallsanalyser samt strukturera och schemalägg rapporter för delning med vem som helst i företaget.
 
-Den här sidan innehåller grundläggande anvisningar för att komma igång. När du har lärt dig grunderna kan du gå vidare till de avancerade funktionerna i Workspace. De omfattar [Attribution IQ](/help/analyze/analysis-workspace/attribution-iq.md), [Anomaly Detection](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md), [Contribution Analysis](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md), [Segment IQ](/help/analyze/analysis-workspace/segment-iq.md)och [Intelligent Alerts](/help/analyze/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md).
+Den här sidan innehåller grundläggande anvisningar för att komma igång. När du har lärt dig grunderna kan du gå vidare till de avancerade funktionerna i Workspace. De omfattar [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md), [Anomaly Detection](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md), [Contribution Analysis](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md), [Segment IQ](/help/analyze/analysis-workspace/segment-iq.md)och [Intelligent Alerts](/help/analyze/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md).
 
 Här är en videoöversikt av Workspace:
 
