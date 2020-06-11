@@ -2,7 +2,10 @@
 title: Skapa en grundläggande rapport i Analysis Workspace
 description: Lär dig hur du skapar en grundläggande rapport i Analysis Workspace i ett format som är avsett för användare som är bekanta med tredjepartsverktyg som Google Analytics.
 translation-type: tm+mt
-source-git-commit: 099662d021c1919f0760e79154536cfd0e23e959
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '852'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Skapa en Alla sidor-rapport (liknande den i Google Analytics) genom att dra de h
 1. Klicka på knappen Skapa nytt projekt.
 1. Kontrollera att Tomt projekt är markerat i det modala popup-fönstret och klicka sedan på Skapa.
 1. Till vänster visas en lista med mått, mått, segment och datumintervall. Leta reda på siddimensionen (färgad orange) och dra den till arbetsytan med etiketten &#39;Släpp en dimension här&#39;.
-1. En rapport över de översta sidorna för den här månaden visas. Analysis Workspace fyller automatiskt i rapporten med [förekomstmåttet](/help/components/c-variables/c-metrics/metrics-occurrences.md) .
+1. En rapport över de översta sidorna för den här månaden visas. Analysis Workspace fyller automatiskt i rapporten med [förekomstmåttet](/help/components/metrics/occurrences.md) .
 1. En tabell i Google Analytics innehåller vanligtvis 7-8-mätvärden. Leta upp mätvärdet för studsfrekvens (grönt) och dra det intill rubriken för förekomstmått. Om du drar studs-/hastighetsmåtten bredvid Förekomster visas båda måtten sida vid sida.
 1. Många mätvärden kan placeras sida vid sida genom att dra mätvärden bredvid befintliga mätrubriker. Mer information om hur du hämtar mätvärden som vanligtvis används i Google Analytics finns i [ofta använda mätvärden](common-metrics.md) .
 
