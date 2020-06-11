@@ -6,7 +6,10 @@ title: Anpassa behörigheter för Report Suite-verktyg
 topic: Admin tools
 uuid: 3c95d296-ffd0-4971-9c5f-110ddbe042ce
 translation-type: tm+mt
-source-git-commit: 47f7ce6f07aeb0eab81181b7be7b5ad773873cca
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +36,7 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 |--- |--- |
 | **Webbtjänster** |  |
 | Dessa inställningar gör att användare kan anropa datalagermetoden och hämta inställningar för rapportsviten. |  |
-| Datalager | Används av en icke-admin-användare för att ringa anrop med datalagermetoder via webbtjänstens API. Se [Datalager - dokumentation för utvecklare](/help/export/data-warehouse/data-warehouse.md) |
+| Data Warehouse | Används av en icke-admin-användare för att ringa anrop med datalagermetoder via webbtjänstens API. Se [Datalager - dokumentation för utvecklare](/help/export/data-warehouse/data-warehouse.md) |
 | Rapportsviter (läs) | Tillåter en icke-admin-användare att använda rapportsvitens metoder i API:t. |
 | Rapportsviter (skriv) | Tillåter en icke-admin-användare att använda rapportsvitens metoder i API:t. |
 | **Report Suite-hantering** |  |
@@ -60,20 +63,20 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | [Klassificeringshierarkier](/help/components/c-classifications2/classification-hierarchies.md) | Konsoliderad i klassificeringar (under Verktyg och rapporter). |
 | [Listvariabler](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) | Kallas även List Var. På samma sätt som funktionen List Props tillåter List Vars flera värden inom samma bildbegäran. |
 | [Standardmått](/help/admin/admin/default-metrics.md) | Rapporter och analyser visar en standarduppsättning med mätvärden i alla konverteringsrapporter, såvida inte en användare väljer en anpassad uppsättning mätvärden. De valda mätvärdena visas för alla användare i den associerade rapportsviten. |
-| [Bearbetar regler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) | Ger åtkomst till bearbetningsregler som förenklar datainsamling och hantering av innehåll när det skickas till rapporter. |
+| [Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) | Ger åtkomst till bearbetningsregler som förenklar datainsamling och hantering av innehåll när det skickas till rapporter. |
 | **Verktyg och rapporter** |  |
-| [Analysidentifiering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) | Ger tillstånd till avvikelseidentifiering, som tillhandahåller en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data. |
+| [Avvikelseidentifiering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) | Ger tillstånd till avvikelseidentifiering, som tillhandahåller en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data. |
 | [Kanalrapport](/help/components/c-marketing-channels/analyze-mc.md) | Ger tillstånd till Marketing Channel-rapporter, som finns i Rapporter > Marketing Channel Reports. |
 | [Realtidsrapport](/help/admin/admin/realtime/t-realtime-admin.md) | Ger åtkomst till realtidsrapporten. |
 | [Punktsidor](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Startsidor är för specifika rapporter- och analysrapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
 | [Bots](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Bots är till för specifika rapporter- och analysrapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bots kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
 | [Rapport för anpassat datalager](/help/export/data-warehouse/data-warehouse.md) | Datalager refererar till kopian av obearbetade data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. Du kan begära rapporter för att visa avancerade datarelationer från rådata baserat på dina unika frågor. |
-| [Dagliga återbesök](/help/components/c-variables/dimensionslist/reports-daily-return-visits.md) | (Äldre) Rapport som visar antalet besökare på webbplatsen mer än en gång på en viss dag. En dag definieras som den sista 24-timmarsperioden. |
-| [Datakällhanteraren](/help/admin/admin/data-sources.md) | Med funktionen Datakällor kan du importera data till Analytics från offlinekällor. |
+| Dagliga återbesök | (Äldre) Rapport som visar antalet besökare på webbplatsen mer än en gång på en viss dag. En dag definieras som den sista 24-timmarsperioden. |
+| [Data Sources Manager](/help/admin/admin/data-sources.md) | Med funktionen Datakällor kan du importera data till Analytics från offlinekällor. |
 | [Exkludera efter IP-adress](/help/admin/admin/exclude-ip.md) | Du kan undanta data från specifika IP-adresser, som interna webbplatsaktiviteter, platstestning och personalanvändning, från dina rapporter. |
 | Äldre ClickMap | Ger åtkomst till menyn för det äldre övertäckningsverktyget ClickMap. |
 | Installation av äldre klickkarta | Ger installationsbehörighet till det äldre ClickMap-verktyget. |
-| [Returbesök](/help/components/c-variables/dimensionslist/reports-return-visits.md) | En rapport som visar antalet besök där besöksnumret är större än 1. Rapporten om återkommande besök innehåller besökare som inte är cookies. |
+| Returbesök | En rapport som visar antalet besök där besöksnumret är större än 1. Rapporten om återkommande besök innehåller besökare som inte är cookies. |
 | [Klassificeringsimporteraren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html) /exporteraren och [regelbyggaren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html) | Konsoliderad i klassificeringar (se nedan). |
 | Hanteraren för dataflöden | Ger rättigheter till Analytics Data Feed. |
 | Klassificeringar | Kombinerar följande behörigheter: Trafikklassificeringar, Videoklassificeringar, Konverteringsklassificeringar, Klassificeringshierarkier, Klassificeringshanterare och Klassificeringsimporterare/Exporterare och Regelbyggare.  Obs!  Med den här behörigheten kan användarna redigera klassificeringar för alla rapportsviter, inte bara för de markerade. |
