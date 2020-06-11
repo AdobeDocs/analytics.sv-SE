@@ -2,7 +2,10 @@
 title: Vanliga mätvärden på andra plattformar - översättningsguide
 description: Lär dig hur du hämtar in mätdata för många vanliga rapporter med hjälp av terminologi som är mer bekant för Google Analytics-användare.
 translation-type: tm+mt
-source-git-commit: 3ce18f3f222286aed08c81dd2c958dab7e443df3
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ Om du vill lägga till flera mätvärden i en frihandstabell på arbetsytan drar
 
 ## Förvärvsstatistik
 
-**Användare** är ungefär lika med **unika besökare** på arbetsytan. Mer information finns i måttet [Unika besökare](/help/components/c-variables/c-metrics/metrics-unique-visitors.md) i användarhandboken för komponenter.
+**Användare** är ungefär lika med **unika besökare** på arbetsytan. Mer information finns i måttet [Unika besökare](/help/components/metrics/unique-visitors.md) i användarhandboken för komponenter.
 
 **Nya användare** kan hämtas på följande sätt:
 
@@ -26,13 +29,13 @@ Om du vill lägga till flera mätvärden i en frihandstabell på arbetsytan drar
 
    ![Första gången du besöker](../assets/first_time_visits.png)
 
-**Sessioner** är ungefär lika med **besök** i Analysis Workspace. Mer information finns i [Besök](/help/components/c-variables/c-metrics/metrics-visit.md) -måttet i användarhandboken för komponenter.
+**Sessioner** är ungefär lika med **besök** i Analysis Workspace. Mer information finns i [Besök](/help/components/metrics/visits.md) -måttet i användarhandboken för komponenter.
 
 ![Förvärvsstatistik](../assets/acquisition_metrics.png)
 
 ## Beteendemått
 
-**Studsfrekvens** är lätt tillgängligt i Analysis Workspace som ett mått. Mer information finns i [Studsfrekvens](/help/components/c-variables/c-metrics/metrics-bounce-rate.md) -måttet i användarhandboken för komponenter.
+**Studsfrekvens** är lätt tillgängligt i Analysis Workspace som ett mått. Mer information finns i [Studsfrekvens](/help/components/metrics/bounce-rate.md) -måttet i användarhandboken för komponenter.
 
 **Sidor/session** är ett beräknat mått. Den kan erhållas genom följande:
 
@@ -48,9 +51,9 @@ Om du vill lägga till flera mätvärden i en frihandstabell på arbetsytan drar
 7. Klicka på Spara för att gå tillbaka till arbetsytan.
 8. Dra det nydefinierade beräknade måttet till arbetsytan.
 
-   Läs mer om [Beräknade mått](/help/components/c-variables/c-metrics/calculated-metric.md) i användarhandboken för komponenter.
+   Läs mer om [Beräknade mått](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för komponenter.
 
-**Medel. Sessionstiden** är ungefär lika med **tiden per besök (sekunder)**. Läs mer om [tidsåtgång](/help/components/c-variables/c-metrics/metrics-time-spent.md) i användarhandboken för komponenter.
+**Medel. Sessionstiden** är ungefär lika med **tiden per besök (sekunder)**. Läs mer om [hur mycket tid som spenderas per besök](/help/components/metrics/time-spent-per-visit.md) i användarhandboken för komponenter.
 
 ## Konverteringsmått
 
