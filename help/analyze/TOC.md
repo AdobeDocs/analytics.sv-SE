@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 68bdfc581751f81e02725446bc98a84a22bdadd0
+source-git-commit: f87f0fc7de15371dcfac739611ea63c41328303c
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 96%
+source-wordcount: '1101'
+ht-degree: 95%
 
 ---
 
@@ -80,11 +80,7 @@ ht-degree: 96%
    + Paneler {#panels}
       + [Översikt över paneler](analysis-workspace/c-panels/panels.md)
       + [Analyser för målpanelen (A4T)](analysis-workspace/c-panels/a4t-panel.md)
-      + Attributionspanelen {#attribution}
-         + [Översikt över attribuering](analysis-workspace/c-panels/attribution/attribution.md)
-         + [Använda panelen Attribuering](analysis-workspace/c-panels/attribution/use-attribution.md)
-         + [Vanliga frågor om attribuering](analysis-workspace/c-panels/attribution/attribution-faq.md)
-         + [Algoritmisk attribuering](analysis-workspace/c-panels/attribution/algorithmic.md)
+      + [Attributionspanelen](analysis-workspace/c-panels/attribution.md)
       + [Tom panel](analysis-workspace/c-panels/blank-panel.md)
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
@@ -100,7 +96,11 @@ ht-degree: 96%
       + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
       + [Skicka fil – schemalägga ett projekt för leverans](analysis-workspace/curate-share/t-schedule-report.md)
       + [Projekthanterare för schemaläggning](analysis-workspace/curate-share/schedule-projects.md)
-   + [Attribution IQ](analysis-workspace/attribution-iq.md)
+   + Attribution IQ {#attribution}
+      + [Översikt över attribuering](analysis-workspace/attribution/overview.md)
+      + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)
+      + [Algoritmisk attribuering](analysis-workspace/attribution/algorithmic.md)
+      + [Vanliga frågor](analysis-workspace/attribution/faq.md)
    + [Segment IQ](analysis-workspace/segment-iq.md)
    + Virtual Analyst {#virtual-analyst}
       + [Översikt över Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
@@ -295,12 +295,14 @@ ht-degree: 96%
    + [Kontrollpaneler och minirapporter](reports-analytics/dashboard.md)
    + [Kontrollpanelshanterare](reports-analytics/dashboard-manage.md)
    + [Dataextrahering](reports-analytics/data-extract.md)
+   + [Trattrapporter](reports-analytics/funnels.md)
    + [Mätvärden](reports-analytics/metrics.md)
    + [Mål](reports-analytics/targets.md)
    + [Larm](reports-analytics/alerts.md)
    + [Kalenderhändelser](reports-analytics/t-calendar-event.md)
    + [Data Warehouse-förfrågningar](reports-analytics/data-warehouse.md)
    + [Vanliga frågor](reports-analytics/frequently-asked-questions.md)
+   + [Felsökning](reports-analytics/report-troubleshooting.md)
 + Ad Hoc Analysis {#ad-hoc-analysis}
    + Ad Hoc Analysis Project Converter {#aha-project-converter}
       + [Översikt över Ad Hoc Analysis Project Converter](ad-hoc-analysis/c-aha-project-converter/aha2aw-overview.md)
