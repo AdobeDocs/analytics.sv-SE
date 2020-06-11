@@ -2,7 +2,10 @@
 title: Målgruppsrapporter i Adobe Analytics
 description: Lär dig hur du skapar målgruppsbaserade rapporter med Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 6217430bf0ae9c0f9c6426e4bb2a8101257068e7
+source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+workflow-type: tm+mt
+source-wordcount: '1715'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Så här får du ett linjediagram över unika besökare:
 2. Klicka på ikonen Komponenter till vänster och dra sedan måttet **Unika besökare** till det mindre området med etiketten &#39;Släpp ett mätvärde här&#39;.
 3. Om du vill ha en annan granularitet drar du det önskade datumintervallet (t.ex. **Dag**, **Vecka**, **Månad** osv.) ovanpå den befintliga datumdimensionshuvudet.
 
-Se [Unika besökare](/help/components/c-variables/c-metrics/metrics-unique-visitors.md) i användarhandboken för komponenter för mer information om hur Adobe beräknar unika besökare.
+Se [Unika besökare](/help/components/metrics/unique-visitors.md) i användarhandboken för komponenter för mer information om hur Adobe beräknar unika besökare.
 
 ## Livstidsvärde
 
@@ -66,10 +69,10 @@ I geospråkrapporten visas webbplatstrafiken med språkinställningen i besökar
 
 Så här skapar du en språkrapport:
 
-1. På menyn Komponenter letar du upp **språkdimensionen** och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
+1. På menyn Komponenter letar du upp **språkdimensionen** och drar den till det stora frihandsritabellområdet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [språkdimensionen](/help/components/c-variables/dimensionslist/reports-languages.md) i användarhandboken för komponenter.
+Mer information finns i [språkdimensionen](/help/components/dimensions/language.md) i användarhandboken för komponenter.
 
 ## Geo - plats
 
@@ -86,7 +89,7 @@ Om tabellen också är önskad utöver kartan:
 1. På menyn Komponenter letar du upp dimensionen **Länder** och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [Geosegmenteringsdimensioner](/help/components/c-variables/dimensionslist/reports-geosegmentation.md) i användarhandboken för komponenter.
+Mer information finns i [Country](/help/components/dimensions/countries.md) dimensions (Ländersdimensioner) i användarhandboken för komponenter.
 
 ## Beteende - Nytt jämfört med Returning
 
@@ -111,7 +114,7 @@ Frekvensrapporten och rapporten för senaste besök är ungefär lika med dimens
 1. På komponentmenyn letar du upp dimensionen **Besök nummer** och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [dimensionen Besök Nummer](/help/components/c-variables/dimensionslist/reports-visitor-number.md) i användarhandboken för komponenter.
+Mer information finns i [dimensionen Besök Nummer](/help/components/dimensions/visit-number.md) i användarhandboken för komponenter.
 
 ## Beteende - engagemang
 
@@ -120,7 +123,7 @@ Mer information finns i [dimensionen Besök Nummer](/help/components/c-variables
 1. På komponentmenyn letar du reda på **Time Spent per Visit - Bucketed** dimension och drar den till det stora friformstabellområdet med etiketten &#39;Drop a dimension here&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [Tidsåtgång per besök](/help/components/c-variables/dimensionslist/reports-time-spent-per-visit.md) -dimensionen i användarhandboken för komponenter.
+Mer information finns i [Tidsåtgång per besök](/help/components/dimensions/time-spent-per-visit.md) -dimensionen i användarhandboken för komponenter.
 
 ## Teknik - webbläsare och operativsystem
 
@@ -137,10 +140,10 @@ Det finns flera primära dimensioner i rapporten för webbläsare och operativsy
 
 Se följande sidor i användarhandboken för komponenter för mer information om deras respektive dimension:
 
-* [Webbläsare](/help/components/c-variables/dimensionslist/reports-browsers.md)
-* [Operativsystem](/help/components/c-variables/dimensionslist/reports-operating-system.md)
-* [Bildskärmsupplösning](/help/components/c-variables/dimensionslist/reports-technology.md)
-* [Färgdjup](/help/components/c-variables/dimensionslist/reports-color-depth.md)
+* [Webbläsare](/help/components/dimensions/browser.md)
+* [Operativsystem](/help/components/dimensions/operating-systems.md)
+* [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md)
+* [Färgdjup](/help/components/dimensions/color-depth.md)
 
 ## Teknik - Nätverk
 
@@ -149,7 +152,7 @@ Nätverksrapporten är ungefär lika med **domändimensionen** .
 1. På komponentmenyn letar du upp **domändimensionen** och drar den till det stora frihandstabellområdet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [Domändimensionen](/help/components/c-variables/dimensionslist/reports-domains.md) i användarhandboken för komponenter.
+Mer information finns i [Domändimensionen](/help/components/dimensions/domain.md) i användarhandboken för komponenter.
 
 ## Mobil - översikt
 
@@ -158,7 +161,7 @@ Mer information finns i [Domändimensionen](/help/components/c-variables/dimensi
 1. På komponentmenyn letar du reda på dimensionen **Mobilenhetstyp** och drar den till det stora frihandstabellområdet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [Mobile Device Type](/help/components/c-variables/dimensionslist/reports-device-types.md) -dimensionen i användarhandboken för komponenter.
+Mer information finns i [Mobile device type](/help/components/dimensions/mobile-dimensions.md) dimension i användarhandboken för komponenter.
 
 ## Mobil - enheter
 
@@ -167,7 +170,7 @@ Rapporten för mobila enheter är ungefär densamma som dimensionen för **mobil
 1. På komponentmenyn letar du upp dimensionen **Mobilenhet** och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
 
-Mer information finns i [Mobile Device](/help/components/c-variables/dimensionslist/reports-devices.md) -dimensionen i användarhandboken för komponenter.
+Mer information finns i [Mobile device](/help/components/dimensions/mobile-dimensions.md) dimension i användarhandboken för komponenter.
 
 ## Egen
 
