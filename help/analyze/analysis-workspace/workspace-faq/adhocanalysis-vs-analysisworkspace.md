@@ -1,14 +1,17 @@
 ---
 description: Jämför Ad hoc-analysterminologi och -uppgifter med Analysis Workspace.
-title: Analysis Workspace jämfört med Ad hoc-analys
+title: Analysis Workspace jämfört med Ad Hoc Analysis
 uuid: e4b3e40f-2b08-49a0-95f1-384d85c1640d
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 834783e4eae9100233afc164e2fabef96f089874
+workflow-type: tm+mt
+source-wordcount: '881'
+ht-degree: 2%
 
 ---
 
 
-# Analysis Workspace jämfört med Ad hoc-analys
+# Analysis Workspace jämfört med Ad Hoc Analysis
 
 Jämför Ad hoc-analysterminologi och -uppgifter med Analysis Workspace.
 
@@ -18,7 +21,7 @@ En teknisk jämförelse av de viktigaste funktionerna och systemkraven för dess
 
 ## Jämförelse av nyckelterminologi {#section_6109406B83B043A18E46D38F130B1D2E}
 
-| Ad hoc-analys | Analysis Workspace |
+| Ad Hoc Analysis | Analysis Workspace |
 |--- |--- |
 | Projekt | Arbetsyta eller projekt |
 | Arbetsyta | Panel |
@@ -99,8 +102,8 @@ En teknisk jämförelse av de viktigaste funktionerna och systemkraven för dess
    <td colname="col2"> <p>Precis som Ad hoc-analys kan bara en rapportsserie väljas för ett Workspace-projekt. Hantering av flera rapportsviter planeras dock. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Attributions-IQ </p> </td> 
-   <td colname="col2"> <p><a href="/help/analyze/analysis-workspace/attribution-iq.md"  > Med attribuerings-IQ</a> i arbetsytan för analyser kan du lägga till många nya typer av attribueringsmodeller till frihandstabeller, visualiseringar och beräknade värden. </p> </td> 
+   <td colname="col1"> <p>Attribution IQ </p> </td> 
+   <td colname="col2"> <p><a href="/help/analyze/analysis-workspace/attribution/overview.md"  > Med attribuerings-IQ</a> i arbetsytan för analyser kan du lägga till många nya typer av attribueringsmodeller till frihandstabeller, visualiseringar och beräknade värden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ingår inte </p> </td> 
