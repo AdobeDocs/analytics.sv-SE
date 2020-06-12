@@ -2,7 +2,7 @@
 description: 'null'
 title: Adobe Campaign-rapportering
 uuid: 0919ae9f-84eb-43a5-8282-6cd6dec63dc1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 # Adobe Campaign-rapportering
 
-Mer information om hur du konfigurerar den här integreringen finns i dokumentationen [för](https://helpx.adobe.com/campaign/standard/integrating/using/about-campaign-analytics-integration.html)Adobe Campaign.
+Mer information om hur du konfigurerar den här integreringen finns i [dokumentationen för Adobe Campaign](https://helpx.adobe.com/se/campaign/standard/integrating/using/about-campaign-analytics-integration.html).
 
 Integrationen mellan Adobe Analytics och Adobe Campaign
 
@@ -22,11 +22,11 @@ Integrationen mellan Adobe Analytics och Adobe Campaign
 * Lägger till sex nya Adobe Campaign-dimensioner.
 * Synkroniserar data med Analytics var 15:e minut.
 
-## Steg 1. Aktivera Adobe Campaign Reporting {#section_C685EF10505045708A6536BB13F6CD58}
+## Steg 1. Aktivera Adobe Campaign-rapportering {#section_C685EF10505045708A6536BB13F6CD58}
 
-För att kunna visa Campaign-data i Analytics måste ni först aktivera Campaign-rapportering.
+För att kunna visa Campaign-data i Analytics måste du först aktivera Campaign-rapportering.
 
-1. Navigera till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL <select report suite>]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Adobe Campaign]** > **[!UICONTROL Adobe Campaign Reporting]** .
+1. Navigera till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL <select report suite>]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Adobe Campaign]** > **[!UICONTROL Adobe Campaign Reporting]**.
 1. Klicka på **[!UICONTROL Enable Campaign Reporting]**.
 
    ![](assets/enable-campaign.png)
@@ -60,30 +60,30 @@ När rapportsviten har aktiverats för Adobe Campaign finns följande klassifice
 * Leveransetikett (Leverans i kampanj - Individuell leverans/Återkommande leverans/Transaktionsleverans)
 * Kampanj-ID (internt kampanjnamn som du ser i Campaign)
 * Kampanjetikett (Campaign i Adobe Campaign)
-* Utförd leveransetikett (lista över enskilda utförda leveranser)
+* Etikett för utförd leverans (lista över enskilda utförda leveranser)
 
-## Adobe Campaign Dimensions and Metrics available in Adobe Analytics {#section_F33385C9660644AF84172EC39601469B}
+## Adobe Campaign-dimensioner och mätvärden som är tillgängliga i Adobe Analytics {#section_F33385C9660644AF84172EC39601469B}
 
 Följande **mätvärden** är tillgängliga från Campaign i Adobe Analytics-rapportsviter:
 
-* Adobe Campaign har skickats
-* Adobe Campaign öppnad
-* Adobe Campaign klickades
-* Adobe Campaign har bearbetats
-* Adobe Campaign levererad
-* Adobe Campaign Unique Open
-* Unik klickning i Adobe Campaign
-* Avbeställ Adobe Campaign
-* Adobe Campaign Total Bounces
+* Adobe Campaign - skickat
+* Adobe Campaign - öppnat
+* Adobe Campaign - klickat
+* Adobe Campaign - bearbetat
+* Adobe Campaign - levererat
+* Adobe Campaign - unikt öppnat
+* Adobe Campaign - unikt klickat
+* Adobe Campaign - avbeställt
+* Adobe Campaign - totala avhopp
 * Instanser för leverans-ID som körts i Adobe Campaign
 
 Följande **dimensioner** är tillgängliga från Campaign i rapportsviterna för Adobe Analytics:
 
 | Dimensionsnamn | Definition |
 |--- |--- |
-| Kampanj-ID | ID för alla kampanjer som KPI har skickats för under varaktighet |
+| Kampanj-ID | ID för alla kampanjer för vilka KPI har skickats under varaktigheten. |
 | Kampanjetikett | Etiketter för kampanj-ID:n |
-| Leverans-ID | ID för alla leveranser för vilka KPI har skickats under varaktigheten. Innehåller även ID:n för huvudleveranser av återkommande leveranser och transaktionsleveranser. Exempel: En DM1 med återkommande leverans schemalades och DM2, DM3, DM4 och DM5 var underordnade leveranser av den återkommande leveransen.  Leverans-ID:t visar resultat för alla leveranser, DM1 till DM5. |
+| Leverans-ID | ID för alla leveranser för vilka KPI har skickats under varaktigheten. Innehåller även ID:n för huvudleveranser av återkommande leveranser och transaktionsleveranser. Exempel: En DM1 med återkommande leverans schemalades och DM2, DM3, DM4 och DM5 var underordnade leveranser för den återkommande leveransen.  Leverans-ID:t visar resultat för alla leveranser, DM1 till DM5. |
 | Leveransetikett | Etiketter för leverans-ID |
-| Kört leverans-ID | ID:n för endast utförda leveranser. Inget ID för återkommande/transaktionell huvudleverans. Exempel: En DM1 med återkommande leverans schemalades och DM2, DM3, DM4 och DM5 var underordnade leveranser av den återkommande leveransen. Exekverat leverans-ID visar resultat för alla leveranser från DM2 till DM5 - de leveranser som faktiskt har utförts. |
-| Utförd leveransetikett | Etiketter för körda leverans-ID:n |
+| Utfört leverans-ID | ID:n för endast utförda leveranser. Inget ID för återkommande/transaktionell huvudleverans. Exempel: En DM1 med återkommande leverans schemalades och DM2, DM3, DM4 och DM5 var underordnade leveranser för den återkommande leveransen. Utfört leverans-ID visar resultat för alla leveranser från DM2 till DM5 - de leveranser som faktiskt har utförts. |
+| Etikett för utförd leverans | Etiketter för utförda leverans-ID:n |
