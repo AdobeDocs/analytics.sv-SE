@@ -2,7 +2,7 @@
 description: 'null'
 title: Skicka in begäran om åtkomst och borttagning
 uuid: d006cd5c-e3cd-4385-8683-acaf73cb681b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ---
@@ -13,31 +13,31 @@ source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 ## Översikt {#section_BD70882995894C1CA19C205C49FEC23C}
 
-Om era kunder (konsumenter/registrerade) vill veta vilka data ni har om dem eller bestämmer sig för att de ska tas bort från era Analytics-egenskaper, ansvarar ni som personuppgiftsansvariga för att svara på dessa förfrågningar. Den personuppgiftsansvarige avgör hur organisationen ska interagera med de registrerade (t.ex. via en användarportal för registrerade) och hanterar interaktioner med den registrerade. Det är också den personuppgiftsansvariges ansvar att stänga slingan med den registrerade när begäran är slutförd. Med andra ord kommer Adobe Experience Cloud, som personuppgiftsbiträde, inte att acceptera förfrågningar direkt från registrerade eller returnera data direkt till dem. Adobe kommer i stället att ta emot förfrågningar från och returnera data till enbart dig som personuppgiftsansvarig.
+Om era kunder (konsumenter/registrerade) vill veta vilka data du har om dem eller om de bestämmer sig för att de ska tas bort från era Analytics-egenskaper, ansvarar du som personuppgiftsansvarig för att svara på dessa begäranden. Den personuppgiftsansvarige avgör hur organisationen ska interagera med de registrerade (t.ex. via en användarportal för registrerade) och hanterar interaktioner med den registrerade. Det är också den personuppgiftsansvariges ansvar att sluta kretsloppet med den registrerade när begäran är slutförd. Med andra ord kommer Adobe Experience Cloud, som personuppgiftsbiträde, inte att acceptera begäranden direkt från registrerade eller returnera data direkt till dem. Adobe kommer i stället att ta emot begäranden från och returnera data till enbart dig som personuppgiftsansvarig.
 
-Ni kanske också vill se till att era mobilappar och webbplatser har relevanta snabbmeddelanden och stödmaterial om de registrerade personernas rättigheter vad gäller direkt identifierbara eller indirekt identifierbara data och andra data som ni samlar in.
+Du kanske också vill se till att dina mobilappar och webbplatser har relevanta snabbmeddelanden och stödmaterial om de registrerade personernas rättigheter vad gäller direkt identifierbara eller indirekt identifierbara data och andra data som ni samlar in.
 
 ## Hantera konsumentsamtycke {#section_3012015E7E8942519FB9279CF7057EAB}
 
-Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (inklusive Adobe Analytics-data) och för att [implementera en avanmälningsmekanism](https://docs.adobe.com/content/help/en/dtm/using/tools/opt-in.html) på din webbplats. Detta gör att era datasubjekt kan välja bort från framtida datainsamling i Adobe Experience Cloud.
+Som personuppgiftsansvarig ansvarar du för att erhålla uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (inklusive Adobe Analytics-data) och för att [implementera en avanmälningsmekanism](https://docs.adobe.com/content/help/sv-SE/dtm/using/tools/opt-in.html) på din webbplats. På så vis kan era registrerade personer avanmäla sig från framtida datainsamling i Adobe Experience Cloud.
 
 ## Validera användare och deras data {#section_AFB2CC225AA94AF6A3CE9F24EF788358}
 
-Som registeransvarig ansvarar ni för att verifiera att den registrerade är den person de säger sig vara och att de har rätt till de uppgifter de begär. Dessutom är det ditt ansvar att se till att rätt data skickas tillbaka till den registrerade och att de inte oavsiktligt tar emot data om andra registrerade.
+Som personuppgiftsansvarig ansvarar du för att verifiera att den registrerade är den person de utger sig för att vara och att de har rätt till de uppgifter de begär. Dessutom är det ditt ansvar att se till att rätt data skickas tillbaka till den registrerade och att de inte oavsiktligt tar emot data om andra registrerade.
 
-Detta innefattar att granska de data som Adobe Analytics returnerar som en del av en begäran om dataintegritet innan de skickas vidare till den registrerade. Särskild försiktighet bör iakttas om du använder person-ID och returnerar inte bara data där ID:t finns, utan även data för andra träffar på en delad enhet där ID:t ibland fanns. Se [ID-expansion.](/help/admin/c-data-governance/gdpr-id-expansion.md)
+Detta innebär att du måste granska de data som Adobe Analytics returnerar som en del av en begäran om datasekretess innan de skickas vidare till den registrerade. Särskild försiktighet bör iakttas om du använder person-ID och inte returnerar bara data där ID:t finns, utan även data för andra träffar på en delad enhet där ID:t ibland återfanns. Se [ID-expansion.](/help/admin/c-data-governance/gdpr-id-expansion.md)
 
 Varje fil kombinerar data från alla rapportsviter och tar automatiskt bort extra kopior av replikerade träffar. Du kan bestämma vilken av dessa filer som ska skickas tillbaka till den registrerade. Du kan också extrahera en del av dessa data och kombinera dem med data från andra system innan du skickar tillbaka dem till den registrerade.
 
 ## Skicka begäranden {#submit-requests}
 
-Du kan skicka in förfrågningar om dataintegritet och ta bort dem via vår [användargränssnittsportal](https://www.adobe.io/apis/experienceplatform/gdpr/docs/alldocs.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) för dataskydd eller via vårt API för [dataskydd.](https://www.adobe.io/apis/experienceplatform/gdpr.html)
+Du kan skicka in begäranden om datasekretess och ta bort dem via vår [användargränssnittsportal för datasekretess](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) eller via vårt [API för dataskydd.](https://www.adobe.io/apis/experienceplatform/gdpr.html)
 
->[!NOTE] API:t för datasekretess stöder batchinlämning för flera användare i en och samma begäran. Den nuvarande gränsen är 1 000 separata användare (kan ha flera ID:n per användare) i en enda JSON-fil för begäran.
+>[!NOTE] API:t för datasekretess stöder batchinlämning för flera användare i en och samma begäran. Den nuvarande gränsen är 1 000 separata användare (kan ha flera ID:n per användare) i en enda JSON-fil för begäran.
 
 ## Exempel på JSON-begäran {#sample-json-request}
 
-Här är det JSON som kan skickas via API:t för dataintegritet eller användargränssnittet, och som begär dataintegritet för tre användare.
+Detta är den JSON som kan skickas via API:t för datasekretess eller användargränssnittet, och begära datasekretess för tre användare.
 
 ```
 { 
@@ -97,18 +97,18 @@ Här är det JSON som kan skickas via API:t för dataintegritet eller användarg
 } 
 ```
 
-Observera att det finns tre block i användarens avsnitt, som representerar tre separata förfrågningar, troligtvis för tre separata registrerade personer.
+Observera att det finns tre block i användarens avsnitt, som representerar tre separata begäranden, troligtvis för tre separata registrerade personer.
 
-* Den första begäran är en åtkomstbegäran som använder ett traditionellt Adobe Analytics cookie ID (AAID).
-* Den andra begäran är också en åtkomstbegäran, men använder en MCID/ECID-cookie.
-* Den tredje begäran begär både åtkomst och borttagning för angivna ID:n. Även om ID-expansion anges för alla begäranden, kommer det att få störst effekt på den tredje begäran, eftersom det är den enda som använder icke-cookie-ID:n. Detta innebär att denna begäran även kommer att identifiera cookie-ID:n som är kopplade till enheter med angivet CRM-ID eller e-postadress, och utöka begäran så att den även innehåller dessa ID:n.
+* Den första begäran är en åtkomstbegäran som använder ett traditionellt Adobe Analytics-cookie-ID (AAID).
+* Den andra begäran är också en åtkomstbegäran, men den använder en MCID/ECID-cookie.
+* Den tredje begäran begär både åtkomst och borttagning för angivna ID:n. Även om ID-expansion anges för alla begäranden, har det störst effekt på den tredje begäran, eftersom det är den enda begäran som använder icke-cookie-ID:n. Detta innebär att denna begäran även kommer att identifiera cookie-ID:n som är kopplade till enheter med angivet CRM-ID eller e-postadress, och utöka begäran så att den även innehåller dessa ID:n.
 
-Kom ihåg att
+Kom ihåg
 
-* Värdet&quot;5D7236525AA6D9580A495C6C@AdobeOrg&quot; i avsnittet&quot;companyContext&quot; måste uppdateras med värdet för din egen Experience Cloud-organisation.
-* Fälten &quot;type&quot; och &quot;namespace&quot; beskrivs mer ingående i avsnittet [Namnutrymmen](/help/admin/c-data-governance/gdpr-namespaces.md) .
+* Värdet ”5D7236525AA6D9580A495C6C@AdobeOrg” i avsnittet ”companyContexts” måste uppdateras med värdet för din egen Experience Cloud-organisation.
+* Fälten ”typ” och ”namnutrymme” beskrivs mer ingående i avsnittet [Namnutrymmen](/help/admin/c-data-governance/gdpr-namespaces.md).
 * Beskrivningsfälten ignoreras.
-* Nyckelfälten kan innehålla vilket värde som helst. Om du har ett internt ID som du använder för att spåra förfrågningar om dataintegritet kan du placera det värdet här, så att det blir enklare att matcha förfrågningar i Adobes system mot dem i dina egna system.
+* Nyckelfälten kan innehålla vilket värde som helst. Om du har ett internt ID som du använder för att spåra begäranden om datasekretess kan du ange det värdet här, för att enklare matcha begäranden i Adobes system mot de i dina egna system.
 
 ## Svarsinformation {#section_93F554F65DBB48A18B75EB5784056C96}
 
@@ -118,15 +118,15 @@ Det här avsnittet innehåller information om åtkomst och borttagning av svar.
 
 De data som returneras för en åtkomstbegäran ger dig, den personuppgiftsansvarige, en URL som du kan använda för att hämta en ZIP-fil som innehåller en katalog för varje Adobe-produkt du äger. I mappen Analytics kan det finnas:
 
-* Personfiler - härledda från träffar som innehåller en matchad ID-PERSON-etikett
+* Personfiler – härledda från träffar som innehåller en matchad ID-PERSON-etikett
 
-   * En .CSV-fil med en rad för varje matchande träff och en kolumn för varje fält med en ACC-ALL- eller ACC-PERSON-etikett, sorterad efter tidsstämpel.
+   * En .CSV-fil med en rad för varje matchande träff och en kolumn för varje fält med en ACC-ALL- eller ACC-PERSON-etikett, som sorterats efter tidsstämpel.
    * En HTML-sammanfattningsfil med en post för varje ACC-ALL- eller ACC-PERSON-etikett. Varje post visar alla unika värden för det fältet och antalet gånger som varje post inträffade. Fält som innehåller tidsstämplar avrundas för att endast ange unika dagar.
 
-* Enhetsfiler - Härledda från träffar där ett av fälten matchade en angiven ID-DEVICE men ingen matchade en angiven ID-PERSON
+* Enhetsfiler – härledda från träffar där ett av fälten matchade en angiven ID-DEVICE, men ingen matchade en angiven ID-PERSON
 
-   * En .CSV-fil med en rad för varje matchande träff och en kolumn för varje fält med en ACC-ALL-etikett, sorterad efter tidsstämpel.
-   * HTML-sammanfattningsfil med en post för varje ACC-ALL-etikett. Varje post listar alla unika värden för det fältet och antalet gånger som varje värde inträffade. Fält som innehåller tidsstämplar avrundas för att endast ange unika dagar.
+   * En .CSV-fil med en rad för varje matchande träff och en kolumn för varje fält med en ACC-ALL-etikett, som sorterats efter tidsstämpel.
+   * HTML-sammanfattningsfil med en post för varje ACC-ALL-etikett. Varje post visar alla unika värden för det fältet och antalet gånger som varje värde inträffade. Fält som innehåller tidsstämplar avrundas för att endast ange unika dagar.
 
 Varje fil kombinerar data från alla rapportsviter och tar automatiskt bort extra kopior av replikerade träffar.
 
@@ -134,17 +134,17 @@ Du kan bestämma vilka av dessa som ska returneras till den registrerade. Du kan
 
 **Ta bort svarsinformation**
 
-Inga data returneras för borttagningsbegäranden - bara en status till API:t för dataintegritet som begäran slutfördes med.
+Inga data returneras för borttagningsbegäranden – bara en status till API:t för datasekretess som begäran slutfördes med.
 
-## Testa dataintegritet på dina data {#section_FBA843DBFAE64D979D8DB8A3C56784D7}
+## Testa behandling av datasekretess på dina data {#section_FBA843DBFAE64D979D8DB8A3C56784D7}
 
-Vanligtvis kommer Analytics-kunder att konfigurera vissa testrapportsviter för att verifiera funktioner innan de släpps till allmänheten. Webbplatser eller appar för förproduktion skickar data till dessa test-/dev/QA-rapportsviter för att utvärdera hur saker kommer att fungera när koden släpps innan riktig trafik skickas till produktionsrapportsviterna.
+Vanligtvis konfigurerar Analytics-kunder vissa testrapportsviter för att verifiera funktioner innan de släpps till allmänheten. Webbplatser eller appar för förproduktion skickar data till dessa rapportsviter för test/utveckling/kvalitetssäkring för att utvärdera hur saker kommer att fungera när koden släpps innan faktisk trafik skickas till produktionsrapportsviterna.
 
-Med en normal konfiguration kan GPDR-begäranbearbetningen inte först testas på dessa testrapportsviter innan begäranden tillämpas på produktionsrapportsviter. Orsaken till detta är att en datasekretessbegäran automatiskt tillämpas på alla rapportsviter i Experience Cloud-organisationen, som ofta alla är rapportsviter för ditt företag.
+Men med en normal konfiguration kan behandling av GPDR-begäran inte först testas på dessa testrapportsviter innan begäranden tillämpas på produktionsrapportsviter. Det beror på att en begäran om datasekretess automatiskt tillämpas på alla rapportsviter i Experience Cloud-organisationen, som ofta alla är rapportsviter för ditt företag.
 
-Det finns några sätt att testa din dataintegritet innan du kan använda den på alla dina rapportsviter:
+Det finns ett par olika sätt att testa din behandling av datasekretess innan du tillämpar den på alla dina rapportsviter:
 
-* Ett alternativ är att skapa en separat Experience Cloud-organisation som bara innehåller testrapportsviter. Använd sedan den här Experience Cloud-organisationen för att testa din dataintegritet och för att testa din normala Experience Cloud-organisation för den faktiska dataintegritetsbehandlingen.
-* Ett annat alternativ är att tilldela olika namnutrymmen till ID:n i testrapportsviterna jämfört med dem i produktionsrapportsviterna.
+* Ett alternativ är att skapa en separat Experience Cloud-organisation som bara innehåller testrapportsviter. Använd sedan den här Experience Cloud-organisationen för att testa ditt test av datasekretess och din normala Experience Cloud-organisation för faktisk behandling av datasekretess.
+* Du kan även tilldela olika namnutrymmen till ID:n i testrapportsviterna jämfört med dem i produktionsrapportsviterna.
 
-   Du kan till exempel prefix för varje namnutrymme med &quot;qa-&quot; i testrapportsviterna. När du skickar in datasekretessbegäranden med endast namnutrymmen med qa-prefixet, kommer dessa förfrågningar endast att köras mot testrapportsviterna. När du senare skickar in begäranden utan qa-prefix gäller de även för dina produktionsrapportsviter. **Detta är det rekommenderade tillvägagångssättet, såvida du inte använder namnutrymmena visitorId, AAID, ECID eller customVisitorId, eftersom dessa är hårdkodade och du inte kan ange alternativa namn för dem i testrapportsviterna**.
+   Du kan till exempel infoga prefix för varje namnutrymme med ”qa-” i testrapportsviterna. När du skickar in begäranden om datasekretess med endast namnutrymmen med qa-prefixet, kommer dessa begäranden endast att köras mot testrapportsviterna. När du senare skickar in begäranden utan qa-prefix gäller de även för dina produktionsrapportsviter. **Vi rekommenderar att du gör detta, såvida du inte använder namnutrymmena visitorId, AAID, ECID eller customVisitorId, eftersom dessa är hårdkodade och du kan inte ange alternativa namn för dem i testrapportsviterna**.
