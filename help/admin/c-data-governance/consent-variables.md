@@ -1,8 +1,8 @@
 ---
-description: Variabler för sekretessrapportering i dataintegritet.
+description: Variabler för sekretessrapportering inom datasekretess.
 title: Variabler för sekretessrapportering
 topic: Admin tools
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddbd724231850c816e7b2b2e56dc139d31276d0c
 
 ---
@@ -10,21 +10,21 @@ source-git-commit: ddbd724231850c816e7b2b2e56dc139d31276d0c
 
 # Variabler för sekretessrapportering
 
-Om du vill få mer hjälp med att hantera sekretessdata finns det en uppsättning reserverade variabler som kan användas tillsammans med specifika kontextdatavariabler.
-Dessa variabler för sekretessrapportering utgör ett lättanvänt ramverk för att samla in sekretessstatus för varje analyssession.
+Om du behöver mer hjälp med att hantera sekretessdata finns det en uppsättning reserverade variabler som kan användas tillsammans med specifika kontextdatavariabler.
+Dessa variabler för sekretessrapportering utgör ett lättanvänt ramverk för att samla in sekretesstatus för varje analyssession.
 
 ## Variabler
 
-* Medgivandehantering avanmäl dig
-   * Reserverad variabel: List Prop
+* Avanmälan från samtyckeshantering
+   * Reserverad variabel: Prop på lista
    * Typ: Kommaavgränsad sträng
    * Innehåller:
       * `contextData.['cm.ssf']=1` visas som SSF
       * `contextData.['opt.dmp']=N` visas som DMP
       * `contextData.['opt.sell']=N` visas som SELL
 
-* Medgivandehantering avanmäl dig
-   * Reserverad variabel: List Prop
+* Anmälan till samtyckeshantering
+   * Reserverad variabel: Prop på lista
    * Typ: Kommaavgränsad sträng
    * Innehåller:
       * `contextData.['opt.dmp']=Y` visas som DMP
@@ -32,51 +32,51 @@ Dessa variabler för sekretessrapportering utgör ett lättanvänt ramverk för 
 
 ## Rapportering
 
-Du kan aktivera variablerna för sekretesrapportering via en ny sekretessinställning som är tillgänglig på Admin Console för Analytics.
+Du kan aktivera variablerna för sekretessrapportering via en ny sekretessinställning som är tillgänglig på Admin Console för Analytics.
 
 Varje rapportsvit kan konfigureras på följande sätt:
-1. Klicka på Rapporter och analyser **[!UICONTROL Admin > Report Suites]**.
+1. Klicka på Reports &amp; Analytics **[!UICONTROL Admin > Report Suites]**.
 1. Markera de rapportsviter där du samlar in mediedata och klicka på **[!UICONTROL Edit Settings > Privacy Management]**.
 
    ![](assets/rsm-privacy-select.png)
 
-1. Klicka på **[!UICONTROL Enable Data Privacy Reports]** knappen.
+1. Klicka på knappen **[!UICONTROL Enable Data Privacy Reports]**.
 
    > [!NOTE] När variablerna har aktiverats kan de inte stängas av.
 
    ![](assets/rsm-privacy-enable.png)
 
-1. När du har aktiverat visas ett bekräftelsemeddelande.
+1. När det aktiverats visas ett bekräftelsemeddelande.
 
    ![](assets/rsm-privacy-config.png)
 
-1. De reserverade variablerna är nu tillgängliga för analys i Rapporter och analyser samt på arbetsytan. Se Medgivandehantering avanmälan och Medgivandehantering avanmäl dig.
+1. De reserverade variablerna är nu tillgängliga för analys i Reports &amp; Analytics och Workspace. Se Avanmälan från samtyckeshantering och Anmälan till samtyckeshantering.
 
    ![](assets/consent-management.png)
 
 ## Implementering
 
-Tre kontextdatavariabler har fördefinierats för att fungera med reserverade variabler för hantering av sekretessrapportering.  Det är respektive implementeringstekniker som bestämmer hur dessa variabler ska hanteras och sparas.
+Tre kontextdatavariabler har fördefinierats för att fungera med reserverade variabler för hantering av sekretessrapportering.  Det är upp till respektive implementeringstekniker hur dessa variabler ska hanteras och sparas.
 
-Se [Kontextdatavariabler](https://docs.adobe.com/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html) för allmän vägledning om hur du implementerar kontextdatavariabler.
+Se [Variabler för kontextdata](https://docs.adobe.com/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html) för allmän vägledning om hur du implementerar kontextdatavariabler.
 
 ### SSF
 
 * Kontextdata: `contextData.['cm.ssf']`
 * Godkända värden:
-   * 1 - När du skickar värdet &quot;1&quot; innebär det att vidarebefordran på serversidan är i ett avanmälningsläge. Värdet 1 i kombination med den här variabeln blockerar delningen av träffen med Adobe Audience Manager. Se [AAM ePrivacy Compliance](https://docs.adobe.com/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/ssf-gdpr.html).
-   * 0 - Valfritt. Använd värdet&quot;0&quot; för kunder som samtyckte till riktad marknadsföring. Om du inte anger variabeln får du också samma resultat.
+   * 1 – När du skickar värdet ”1” innebär det att vidarebefordran på serversidan är i ett avanmälningsläge. Värdet 1 i kombination med den här variabeln blockerar delningen av träffen med Adobe Audience Manager. Se [AAM ePrivacy-efterlevnad](https://docs.adobe.com/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/ssf-gdpr.html).
+   * 0 – Valfritt. Använd värdet ”0” för kunder som samtyckte till riktad marknadsföring. Om du inte anger variabeln får du också samma resultat.
 
 ### DMP
 
 * Kontextdata: `contextData.['opt.dmp']`
 * Godkända värden:
-   * N - När värdet&quot;N&quot; skickas betyder det att konsumenten väljer att inte dela till datahanteringsplattformar.  **Obs**: Från och med den 15 januari 2020 blockeras delning på serversidan av den här träffen till AAM om variabeln anges som&quot;N&quot;.
-   * Y - När värdet&quot;Y&quot; skickas indikerar det att konsumenten väljer att dela till datahanteringsplattformar.
+   * N – När värdet ”N” skickas betyder det att konsumenten tackar nej till att dela till datahanteringsplattformar.  **Obs**: Från och med den 15 januari 2020 blockeras delning på serversidan av den här träffen till AAM om variabeln anges som ”N”.
+   * Y – När värdet ”Y” skickas indikerar det att konsumenten tackar ja till datahanteringsplattformar.
 
-### SÄLJNING
+### SÄLJ
 
 * Kontextdata: `contextData.['opt.sell']`
 * Godkända värden:
-   * N - När värdet&quot;N&quot; skickas betyder det att konsumenten väljer att inte dela eller sälja uppgifterna till tredje part.
-   * Y - När värdet&quot;Y&quot; skickas betyder det att konsumenten väljer att dela eller sälja data till tredje part.
+   * N – När värdet ”N” skickas betyder det att konsumenten tackar nej till att dela eller sälja uppgifterna till tredje part.
+   * Y – När värdet ”Y” skickas betyder det att konsumenten tackar ja till att dela eller sälja data till tredje part.
