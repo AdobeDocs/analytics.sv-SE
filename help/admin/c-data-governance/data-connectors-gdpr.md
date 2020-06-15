@@ -1,22 +1,22 @@
 ---
 description: På den här sidan listas alla partnervariabler i Data Connectors (som tidigare kallats Genesis) som kan innehålla de registrerade personernas direkt identifierbara data eller indirekt identifierbara data.
-title: Dataintegritet och dataanslutningar (Genesis)
+title: Datasekretess och Data Connectors (Genesis)
 uuid: d3a32c09-d3c5-452c-8302-8da28e62ead3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
-# Dataintegritet och dataanslutningar (Genesis)
+# Datasekretess och Data Connectors (Genesis)
 
 På den här sidan listas alla partnervariabler i Data Connectors (som tidigare kallats Genesis) som kan innehålla de registrerade personernas direkt identifierbara data eller indirekt identifierbara data.
 
-Med den här informationen kan du identifiera direkt identifierbara data eller indirekt identifierbara data som importeras via våra anslutningar när de tar emot en begäran om dataintegritet.
+Med den här informationen kan du identifiera direkt identifierbara data eller indirekt identifierbara data som importeras via våra anslutningar när de tar emot en begäran om datasekretess.
 
 Om du använder en integrering av någon av nedanstående anslutningar kan du bara kontrollera vilka partnervariabler/klassificeringar i integreringen som kan innehålla direkt identifierbara data eller indirekt identifierbara data.
 
->[!NOTE] Den här informationen tillhandahålls för att hjälpa dig att identifiera variabler som måste [märkas](/help/admin/c-data-governance/gdpr-setup-reportsuite.md), men det är ditt ansvar som personuppgiftsansvariga att använda lämpliga etiketter eller utföra andra åtgärder för [dataintegritet](/help/admin/c-data-governance/an-gdpr-overview.md) (att uppdatera klassificeringar osv.).
+>[!NOTE] Den här informationen tillhandahålls för att hjälpa dig att identifiera variabler som måste [etiketteras](/help/admin/c-data-governance/gdpr-setup-reportsuite.md), men det är ditt ansvar som personuppgiftsansvarig att använda lämpliga etiketter eller utföra andra åtgärder för att bli [redo för datasekretess](/help/admin/c-data-governance/an-gdpr-overview.md) (som t.ex. att uppdatera klassificeringar, o.s.v.).
 
 <table id="table_4DE59253898D46E282EF5F9CB0ED34B5"> 
  <thead> 
@@ -28,17 +28,17 @@ Om du använder en integrering av någon av nedanstående anslutningar kan du ba
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>Alt</b> </p> </td> 
+   <td colname="col1"> <p><b>Alset</b> </p> </td> 
    <td colname="col2"> <p>Besökar-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>appFigures</b> </p> </td> 
-   <td colname="col2"> <p>App Store-objekt-ID -&gt; App Store-användare </p> <p>App Store-objekt-ID -&gt; Granska kommentar </p> <p>App Store-objekt-ID -&gt; Granskningstitel </p> </td> 
+   <td colname="col2"> <p>App Store-objekt-ID -&gt; App Store-användare </p> <p>App Store-objekt-ID -&gt; Granska kommentar </p> <p>App Store-objekt-ID -&gt; Granska titel </p> </td> 
    <td colname="col4"> <p>Klassificeringar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>aprimo Enterprise Marketing Management</b> </p> </td> 
+   <td colname="col1"> <p><b>Aprimo maknardsföringshantering för företag</b> </p> </td> 
    <td colname="col2"> <p>Mottagar-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
@@ -53,7 +53,7 @@ Om du använder en integrering av någon av nedanstående anslutningar kan du ba
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Datagruppmedia</b> </p> </td> 
+   <td colname="col1"> <p><b>Datran Media</b> </p> </td> 
    <td colname="col2"> <p>Mottagar-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
@@ -64,16 +64,16 @@ Om du använder en integrering av någon av nedanstående anslutningar kan du ba
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p><b>Dialog Tech</b> </p> </td> 
-   <td colname="col2"> <p>Dialogruta Tech Caller </p> </td> 
+   <td colname="col2"> <p>Dialog Tech Caller </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Dialogruta Tech Caller -&gt; City </p> <p>Dialogruta Tech Caller -&gt; Förnamn </p> <p>Dialogrutan Tech Caller -&gt; Efternamn </p> <p>Dialogruta Tech Caller -&gt; State </p> <p>Dialog Tech Caller -&gt; Adress </p> <p>Dialog Tech Caller -&gt; Postnummer </p> </td> 
+   <td colname="col2"> <p>Dialog Tech Caller -&gt; Stad </p> <p>Dialog Tech Caller -&gt; Förnamn </p> <p>Dialog Tech Caller -&gt; Efternamn </p> <p>Dialog Tech Caller -&gt; Län </p> <p>Dialog Tech Caller -&gt; Gatuadress </p> <p>Dialog Tech Caller -&gt; Postnummer </p> </td> 
    <td colname="col4"> <p>Klassificeringar </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>DREAMmail 2.0</b> </p> </td> 
-   <td colname="col2"> <p>eVar för e-post </p> </td> 
+   <td colname="col2"> <p>E-post eVar </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
@@ -92,7 +92,7 @@ Om du använder en integrering av någon av nedanstående anslutningar kan du ba
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1" morerows="1"> <p><b>Befälhavare för e-mailvision Campaign</b> </p> </td> 
+   <td colname="col1" morerows="1"> <p><b>Emailvision Campaign Commander</b> </p> </td> 
    <td colname="col2"> <p>Besökar-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
@@ -112,16 +112,16 @@ Om du använder en integrering av någon av nedanstående anslutningar kan du ba
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p><b>ForeSee (v2.0)</b> </p> </td> 
-   <td colname="col2"> <p>Foresent-ID </p> </td> 
+   <td colname="col2"> <p>ID för ForeSee-svarande </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Foresse respondent ID -&gt; variabelnamn 1 </p> <p>... </p> <p>Foresse respondent ID -&gt; variabelnamn n </p> </td> 
+   <td colname="col2"> <p>ID för ForeSee-svarande -&gt; variabelnamn 1 </p> <p>... </p> <p>ID för ForeSee-svarande -&gt; variabelnamn n </p> </td> 
    <td colname="col4"> <p>Klassificeringar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Foresse Feedback</b> </p> </td> 
-   <td colname="col2"> <p>ForeSee Response List -&gt; Response </p> <p>Läs mer i Svarslista -&gt; Undersökning &gt; Fråga &gt; Svar </p> </td> 
+   <td colname="col1"> <p><b>ForeSee-feedback</b> </p> </td> 
+   <td colname="col2"> <p>ForeSee-svarslista -&gt; Svar </p> <p>ForeSee-svarslista -&gt; Undersökning -&gt; Fråga -&gt; Svar </p> </td> 
    <td colname="col4"> <p>Klassificeringar </p> </td> 
   </tr> 
   <tr> 
@@ -135,22 +135,22 @@ Om du använder en integrering av någon av nedanstående anslutningar kan du ba
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Neolane - Enterprise Marketing Platform</b> </p> </td> 
+   <td colname="col1"> <p><b>Neolane – marknadsföringsplattform för företag</b> </p> </td> 
    <td colname="col2"> <p>Broadlog ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>optivo-utskick</b> </p> </td> 
+   <td colname="col1"> <p><b>optivo broadmail</b> </p> </td> 
    <td colname="col2"> <p>Mottagar-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Svar</b> </p> </td> 
+   <td colname="col1"> <p><b>Responsys</b> </p> </td> 
    <td colname="col2"> <p>Besökar-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Svar 2.0</b> </p> </td> 
+   <td colname="col1"> <p><b>Responsys 2.0</b> </p> </td> 
    <td colname="col2"> <p>Besökar-ID </p> <p>Kund-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> <p>eVar </p> </td> 
   </tr> 
@@ -184,7 +184,7 @@ Om du använder en integrering av någon av nedanstående anslutningar kan du ba
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>WhatCount Email</b> </p> </td> 
+   <td colname="col1"> <p><b>WhatCounts Email</b> </p> </td> 
    <td colname="col2"> <p>Besökar-ID </p> </td> 
    <td colname="col4"> <p>eVar </p> </td> 
   </tr> 
