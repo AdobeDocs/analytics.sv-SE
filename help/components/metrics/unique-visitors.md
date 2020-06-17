@@ -2,10 +2,10 @@
 title: Unika besökare
 description: Antalet unika personer (eller enheter).
 translation-type: tm+mt
-source-git-commit: 0328de560185e716a3913080feda9cd078e0f206
+source-git-commit: 8cfd797e336e006bf4134a2c10a89ad1003c53dc
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Om du använder [Enhetsövergripande analys](../cda/cda-home.md)får det här m�
 
 ## unika besökare varje dag, vecka, månad, kvartal och år
 
-Rapporter och analyser innehåller alternativ för unika besökare varje dag, vecka, månad, kvartal och år. I stället för att räkna en unik besökare för hela tidsperioden, räknar unika besökare baserat på det valda mätvärdet. Du vill till exempel titta på unika besökare varje dag för din webbplats. Om en besökare kommer till er webbplats på morgonen och igen på natten räknas de som en enda unik besökare varje dag. Om en besökare kommer till er webbplats på måndag och igen på tisdag räknas de som två unika besökare varje dag.
+Rapporter och Analytics innehåller alternativ för unika besökare varje dag, vecka, månad, kvartal och år. I stället för att räkna en unik besökare för hela tidsperioden, räknar unika besökare baserat på det valda mätvärdet. Du vill till exempel titta på unika besökare varje dag för din webbplats. Om en besökare kommer till er webbplats på morgonen och igen på natten räknas de som en enda unik besökare varje dag. Om en besökare kommer till er webbplats på måndag och igen på tisdag räknas de som två unika besökare varje dag.
 
 Analysis Workspace behandlar unika besökare baserat på rapportens detaljrikedom. Om du till exempel använder dimensionen [Dag](../dimensions/day.md) visas unika besökare varje dag för varje dimensionsvärde. För rapportsumman har den dock ersatts med unika besökare för friformstabellens datumintervall.
 
@@ -30,11 +30,11 @@ Det här måttet räknar antalet unika besökar-ID:n för ett givet dimensionsv�
 | --- | --- | --- |
 | 1 | `vid` | Variabeln är [`visitorID`](/help/implement/vars/config-vars/visitorid.md) inställd. |
 | 2 | `aid` | Besökaren har en befintlig [`s_vi`](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) cookie. Ange implementeringar utan eller innan du implementerar Visitor ID-tjänsten. |
-| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) cookie. Ange implementeringar med [Adobe Experience Cloud Identity-tjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html). |
+| 3 | `mid` | Besökaren har en befintlig [`s_ecid`](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) cookie. Ange implementeringar med [Adobe Experience Cloud Identity-tjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html). |
 | 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
 | 5 | IP-adress, användaragent, gateway-IP-adress | Den sista utvägen för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. |
 
->[!NOTE] Varje besökar-ID för Analytics är knutet till en profil på Adobes servrar. Dessa besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett när en cookie för besöks-ID förfaller.
+>[!NOTE] Varje besökar-ID från Analytics är knutet till en profil på Adobes servrar. Dessa besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett när en cookie för besöks-ID förfaller.
 
 ## Beteende som påverkar antalet unika besökare
 
@@ -45,7 +45,7 @@ Unika besöksidentifierare lagras vanligtvis i en webbläsarcookie. En ny unik b
 * Samma person som surfar på din webbplats på olika enheter. En separat unik besökare räknas per enhet. Ni kan använda [enhetsövergripande analys](../cda/cda-home.md) för att kombinera besökare med [personmätaren](people.md) .
 * Öppnar en privat surfsession (till exempel Chrome&#39;s Incognito-fliken).
 
-En ny unik besökare *räknas *inte* så länge cookie-identifieraren bevaras:
+En ny unik besökare räknas *inte* så länge cookie-identifieraren bevaras:
 
 * Stänger webbläsaren under en längre period
 * Uppgraderar webbläsaren till den senaste versionen
