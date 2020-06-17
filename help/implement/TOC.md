@@ -1,22 +1,22 @@
 ---
 product: analytics
 audience: all
-user-guide-title: Implementeringshandbok för analyser
+user-guide-title: Analytics Implementeringshandbok
 user-guide-url: /content/help/en/analytics/implementation/home.html
 translation-type: tm+mt
-source-git-commit: 245aa818c39f34dab83f061359469c7f77346d3b
+source-git-commit: 0bd595d8936756cb36fa59ce5e01fb200f99d0de
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 2%
+source-wordcount: '443'
+ht-degree: 4%
 
 ---
 
 
-# Implementeringshandbok för analyser {#implementation}
+# Analytics Implementeringshandbok {#implementation}
 
-+ [Hjälp om implementering av analyser](home.md)
++ [Hjälp om implementering av Analytics](home.md)
 + [Versionsinformation om AppMeasurement](appmeasurement-updates.md)
-+ Analysvariabler, funktioner och metoder {#vars}
++ Analytics-variabler, -funktioner och -metoder {#vars}
    + [Översikt](vars/overview.md)
    + Konfigurationsvariabler {#config-vars}
       + [Översikt över konfigurationsvariabler](vars/config-vars/configuration-variables.md)
@@ -60,7 +60,8 @@ ht-degree: 2%
       + [contextData](vars/page-vars/contextdata.md)
       + [Dynamiska variabler](vars/page-vars/dynamic-variables.md)
       + [eVar](vars/page-vars/evar.md)
-      + händelser {#events}
+      + [eVar (Merchandising)](vars/page-vars/evar-merchandising.md)
+      + events {#events}
          + [Översikt över händelser](vars/page-vars/events/events-overview.md)
          + [Inköpshändelse](vars/page-vars/events/event-purchase.md)
          + [Händelseserialisering](vars/page-vars/events/event-serialization.md)
@@ -124,12 +125,12 @@ ht-degree: 2%
       + [pt](vars/plugins/pt-plugin.md)
       + [removeFromList](vars/plugins/removefromlist.md)
    + [Integrera modul](vars/integrate.md)
-+ Förbered er på att implementera Adobe Analytics {#prepare}
++ Förbereda för att implementera Adobe Analytics {#prepare}
    + [Skapa ett datalager](prepare/data-layer.md)
    + [Överväganden för globala rapportsviter](prepare/global-rs.md)
    + [Implementera modal](prepare/implementation-modal.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
-+ Implementera analys med JavaScript {#js}
++ Implementera Analytics med JavaScript {#js}
    + [JavaScript - översikt](js/overview.md)
    + [Implementera länkar för avanmälan](js/opt-out.md)
    + [Variabla åsidosättningar](js/overrides.md)
@@ -148,24 +149,24 @@ ht-degree: 2%
       + [Besök exemplet](js/xdevice-visid/visit-example.md)
       + [Vanliga frågor och svar om äldre enheter](js/xdevice-visid/xdevice-faq.md)
    + [Felsök AppMeasurement](js/troubleshooting.md)
-+ Implementera analyser med Adobe Experience Platform Launch {#launch}
++ Implementera Analytics med Adobe Experience Platform Launch {#launch}
    + [Översikt](launch/overview.md)
    + [Skapa en Analytics-egenskap](launch/create-analytics-property.md)
    + [Distribuera till en dev-miljö](launch/deploy-dev.md)
    + [Validera och publicera för produktion](launch/validate-publish-prod.md)
    + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
-   + [Mappa Launch-dataelement till analysvariabler](launch/elements-to-variable.md)
-+ Implementera analyser på andra plattformar {#other}
-   + [Implementera analyser med hårdkodade bildförfrågningar](other/hardcoded.md)
-   + Implementera analyser med DTM {#dtm}
+   + [Mappa Launch-dataelement till Analytics-variabler](launch/elements-to-variable.md)
++ Implementera Analytics på andra plattformar {#other}
+   + [Implementera Analytics med hårdkodade bildbegäranden](other/hardcoded.md)
+   + Implementera Analytics med DTM {#dtm}
       + [Implementering av dynamisk tagghantering - översikt](other/dtm/dtm-implementation-overview.md)
       + [Skapa webbegenskap](other/dtm/t-create-web-property.md)
       + [Konfigurera värdalternativ](other/dtm/t-configure-hosting.md)
       + Sidhuvuden och sidfötter {#headers-footers}
          + [Lägg till sidhuvud och sidfot](other/dtm/c-headers-footers/t-header-footer-code.md)
          + [Verifiera kod för sidhuvud och sidfot](other/dtm/c-headers-footers/t-verify-header-footer.md)
-      + Adobe Analytics-verktyg {#analytics-tool}
-         + [Lägg till Adobe Analytics-verktyget](other/dtm/c-aa-tool/analytics-dtm.md)
+      + Adobe Analytics {#analytics-tool}
+         + [Lägg till Adobe Analytics](other/dtm/c-aa-tool/analytics-dtm.md)
          + [Allmänt](other/dtm/c-aa-tool/general-settings-analytics.md)
          + [Bibliotekshantering](other/dtm/c-aa-tool/library-management.md)
          + [Infoga AppMeasurement-huvudkod](other/dtm/c-aa-tool/t-appmeasurement-code.md)
@@ -186,11 +187,11 @@ ht-degree: 2%
          + [Ställ in åtgärder för villkoret som ska utlösas](other/dtm/c-rules/t-rules-actions.md)
          + [Testa opublicerade regler för Akamai-värdtjänster](other/dtm/c-rules/t-test-rules-akamai.md)
          + [Testregler för hämtning av bibliotek eller FTP](other/dtm/c-rules/t-test-rules-ftp.md)
-   + [Implementera analyser på Ajax](other/ajax.md)
-   + [Implementera analyser på AMP](other/amp.md)
-   + [Implementera analyser om digitala assistenter](other/digital-assistants.md)
-   + [Implementera analyser på Facebook Instant Articles](other/fb-instant-articles.md)
-+ [Implementera analyser på mobila enheter](mobile-device-sdk.md)
+   + [Implementera Analytics på Ajax](other/ajax.md)
+   + [Implementera Analytics på AMP](other/amp.md)
+   + [Implementera Analytics om digitala assistenter](other/digital-assistants.md)
+   + [Implementera Analytics på Facebook Instant Articles](other/fb-instant-articles.md)
++ [Implementera Analytics på mobila enheter](mobile-device-sdk.md)
 + Användningsexempel för implementering {#use-cases}
    + [Spåra olika implementeringstyper](use-cases/cross-type-implementation.md)
    + [Extern e-postspårning](use-cases/email-external.md)
@@ -200,6 +201,6 @@ ht-degree: 2%
    + [Packet monitor](validate/packet-monitor.md)
    + [Hash-kollisioner](validate/hash-collisions.md)
 + [Frågor och svar](faq.md)
-+ Använd XDM-data med analyser {#aep-edge}
++ Använd XDM-data med Analytics {#aep-edge}
    + [Använd AEP Web SDK](aep-edge/xdmoverview.md)
    + [Mappa XDM-data till Analytics manuellt](aep-edge/xdm-manual.md)
