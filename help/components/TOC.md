@@ -1,18 +1,18 @@
 ---
 product: analytics
 audience: end-user
-user-guide-title: Handbok för analyskomponenter
+user-guide-title: Komponenthandbok för Analytics
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: 8a6c84b386d794e8929f4f9e0810a908a13387b8
+source-git-commit: 0bd595d8936756cb36fa59ce5e01fb200f99d0de
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 6%
+source-wordcount: '622'
+ht-degree: 61%
 
 ---
 
 
-# [!DNL Analytics] Komponentguide {#components}
+# [!DNL Analytics] Komponenthandbok {#components}
 
 + [Hjälp för Analytics-komponenter](home.md)
 + Dimensioner {#dimensions}
@@ -50,6 +50,7 @@ ht-degree: 6%
    + [Första beröringskanalen](dimensions/first-touch-channel.md)
    + [Första beröringskanaldetalj](dimensions/first-touch-detail.md)
    + [Träffdjup](dimensions/hit-depth.md)
+   + [Träff-typ](dimensions/hit-type.md)
    + [Timme på dagen](dimensions/hour-of-day.md)
    + [Timme](dimensions/hour.md)
    + [Java aktiverat](dimensions/java-enabled.md)
@@ -65,7 +66,7 @@ ht-degree: 6%
    + [Operativsystemstyper](dimensions/operating-system-types.md)
    + [Operativsystem](dimensions/operating-systems.md)
    + [Ursprunglig hänvisande domän](dimensions/original-referring-domain.md)
-   + [Sidans URL](dimensions/page-url.md)
+   + [Sidadress](dimensions/page-url.md)
    + [Sida](dimensions/page.md)
    + [Sidorna hittades inte](dimensions/pages-not-found.md)
    + [Betalsökning](dimensions/paid-search.md)
@@ -104,7 +105,7 @@ ht-degree: 6%
    + [Genomsnittlig sessionslängd](metrics/average-session-length.md)
    + [Genomsnittlig tid på plats](metrics/average-time-on-site.md)
    + [Studsfrekvens](metrics/bounce-rate.md)
-   + [studsar](metrics/bounces.md)
+   + [Studsar](metrics/bounces.md)
    + [Kundtillägg](metrics/cart-additions.md)
    + [Borttagning av kundvagn](metrics/cart-removals.md)
    + [Vyer](metrics/cart-views.md)
@@ -112,8 +113,8 @@ ht-degree: 6%
    + [Utcheckningar](metrics/checkouts.md)
    + [Snabbhet för innehåll](metrics/content-velocity.md)
    + [Anpassade händelser](metrics/custom-events.md)
-   + [Poster](metrics/entries.md)
-   + [Avslutar](metrics/exits.md)
+   + [Första besökssida](metrics/entries.md)
+   + [Sista besökssida](metrics/exits.md)
    + [Instanser](metrics/instances.md)
    + [Mobilvyer](metrics/mobile-views.md)
    + [Nya åtaganden](metrics/new-engagements.md)
@@ -123,9 +124,9 @@ ht-degree: 6%
    + [Sidhändelser](metrics/page-events.md)
    + [Sidvyer](metrics/page-views.md)
    + [Sidorna hittades inte](metrics/pages-not-found.md)
-   + [Folk](metrics/people.md)
+   + [Personer](metrics/people.md)
    + [Produktvyer](metrics/product-views.md)
-   + [Läs in igen](metrics/reloads.md)
+   + [Siduppdateringar](metrics/reloads.md)
    + [Intäkter](metrics/revenue.md)
    + [Sökningar](metrics/searches.md)
    + [Enkel åtkomst](metrics/single-access.md)
@@ -139,7 +140,7 @@ ht-degree: 6%
    + [Besökare med Experience Cloud ID](metrics/visitors-with-ecid.md)
    + [Besök](metrics/visits.md)
 + Segmentering {#segmentation}
-   + [Analyssegmentering](c-segmentation/seg-home.md)
+   + [Analytics-segmentering](c-segmentation/seg-home.md)
    + [Om segment och behållare](c-segmentation/seg-overview.md)
    + [Segmenteringsfunktioner i Analysis Workspace](c-segmentation/segmentation-in-analysis-workspace.md)
    + Arbetsflöde för segmentering {#segmentation-workflow}
@@ -148,7 +149,7 @@ ht-degree: 6%
       + [Skapa segment](c-segmentation/c-segmentation-workflow/seg-build.md)
       + [Skapa sekventiella segment](c-segmentation/c-segmentation-workflow/seg-sequential-build.md)
       + [Tagga segment](c-segmentation/c-segmentation-workflow/seg-tag.md)
-      + [Godkänn segment](c-segmentation/c-segmentation-workflow/seg-approve.md)
+      + [Godkänna segment](c-segmentation/c-segmentation-workflow/seg-approve.md)
       + [Dela segment](c-segmentation/c-segmentation-workflow/t-seg-share.md)
       + [Publicera segment till Experience Cloud](c-segmentation/c-segmentation-workflow/seg-publish.md)
       + [Markera och tillämpa segment](c-segmentation/c-segmentation-workflow/t-seg-apply.md)
@@ -158,12 +159,12 @@ ht-degree: 6%
       + [Hantera segment](c-segmentation/c-segmentation-workflow/seg-manage.md)
    + Segmentreferens {#segment-reference}
       + [Jämförelseoperatorer för segment](c-segmentation/seg-reference/seg-operators.md)
-      + [Datalagersegmentkompatibilitet](c-segmentation/seg-reference/seg-compatibility.md)
-      + [Segmenträttigheter efter roll](c-segmentation/seg-reference/seg-rights.md)
+      + [Segmentkompatibilitet för Data Warehouse](c-segmentation/seg-reference/seg-compatibility.md)
+      + [Segmentbehörigheter efter roll](c-segmentation/seg-reference/seg-rights.md)
       + [Felsökning](c-segmentation/seg-reference/c-troubleshooting.md)
    + [Vanliga frågor](c-segmentation/seg-transition.md)
-   + [Nyheter i segmentering med analyser](c-segmentation/whats-new-segmentation.md)
-   + [Övergångshandbok för ad hoc-analys](c-segmentation/seg-transition-ad-hoc.md)
+   + [Nyheter i Analytics Segmentation](c-segmentation/whats-new-segmentation.md)
+   + [Övergångshandbok för Ad Hoc Analysis](c-segmentation/seg-transition-ad-hoc.md)
 + Beräknade mätvärden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) värden](c-calcmetrics/cm-overview.md)
    + [Vanliga frågor](c-calcmetrics/cm-transition.md)
@@ -171,78 +172,78 @@ ht-degree: 6%
    + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
-      + [Bygg mått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
-      + [Mättyp och attribut](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
-      + [Bygg ett enkelt mått för&quot;sidvyer per besök&quot;](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
+      + [Skapa mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
+      + [Mätvärdestyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
+      + [Skapa ett enkelt mätvärde för sidvisningar per besök](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
       + [Segmenterade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)
       + [Stapla och ersätta segment](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-stack-seg.md)
       + [Filtrerade och viktade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-weighted-metric.md)
-      + [Mätvärde för orderassistenter](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
-      + [Använd funktioner](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
-      + [Deltagandemått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
-      + [Tagga beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-tagging.md)
-      + [Godkänn beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-approving.md)
-      + [Dela beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
-      + [Beräknad måtthanterare](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
-   + Metrisk referens {#calcmetrics-reference}
+      + [Mätvärde för Order Assists](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
+      + [Använda funktioner](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
+      + [Mätvärden för deltagande](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
+      + [Tagga beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-tagging.md)
+      + [Godkänna beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-approving.md)
+      + [Dela beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
+      + [Hanterare för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
+   + Mätvärdesreferens {#calcmetrics-reference}
       + [Referens: grundläggande funktioner](c-calcmetrics/cm-reference/cm-functions.md)
       + [Referens: avancerade funktioner](c-calcmetrics/cm-reference/cm-adv-functions.md)
-      + [Mätkompatibilitet](c-calcmetrics/cm-compatibility.md)
-      + [Beräknade mått: rollbaserade rättigheter](c-calcmetrics/cm-role-based-rights.md)
-      + [Beräknade mätsummor](c-calcmetrics/cm-totals.md)
-+ Virtuella rapportsviter {#virtual-report-suites}
-   + [Översikt över virtuella rapportsviter](vrs/vrs-about.md)
-   + [Komponenturval för Virtual Report Suite](vrs/vrs-components.md)
-   + [Stöd för VRS i mobiltjänster](vrs/vrs-mobile-services.md)
-   + [Sammanhangsberoende sessioner](vrs/vrs-mobile-visit-processing.md)
+      + [Mätvärdeskompatibilitet](c-calcmetrics/cm-compatibility.md)
+      + [Beräknade mätvärden: rollbaserade behörigheter](c-calcmetrics/cm-role-based-rights.md)
+      + [Summor för beräknade mätvärden](c-calcmetrics/cm-totals.md)
++ Virtual Report Suites {#virtual-report-suites}
+   + [Översikt över Virtual Report Suites](vrs/vrs-about.md)
+   + [Komponentval för Virtual Report Suites](vrs/vrs-components.md)
+   + [Stöd för VRS i Mobile Services](vrs/vrs-mobile-services.md)
+   + [Sammanhangsmedvetna sessioner](vrs/vrs-mobile-visit-processing.md)
    + [Bearbetning av rapporttid](vrs/vrs-report-time-processing.md)
    + [Vanliga frågor om VRS](vrs/vrs-faq.md)
-   + [VRS och global/multi-suite-taggning](vrs/vrs-considerations.md)
+   + [VRS och global/multisvitstaggning](vrs/vrs-considerations.md)
    + VRS-arbetsflöde {#vrs-workflow}
-      + [Arbetsflöde för virtuella rapportsviter](vrs/c-workflow-vrs/vrs-workflow.md)
+      + [Arbetsflöde för Virtual Report Suites](vrs/c-workflow-vrs/vrs-workflow.md)
       + [Skapa virtuella rapportsviter](vrs/c-workflow-vrs/vrs-create.md)
       + [Hantera virtuella rapportsviter](vrs/c-workflow-vrs/vrs-manage.md)
-      + [Visa information om den virtuella rapportsviten](vrs/c-workflow-vrs/vrs-view.md)
+      + [Visa information om virtuella rapportsviter](vrs/c-workflow-vrs/vrs-view.md)
 + Enhetsövergripande analys {#cda}
-   + [Översikt över enhetsanalys](cda/cda-home.md)
+   + [Översikt över enhetsövergripande analys](cda/cda-home.md)
    + [Konfigurera enhetsövergripande analys](cda/cda-setup.md)
    + [Vanliga frågor om enhetsövergripande analys](cda/cda-faq.md)
 + Larm {#alerts}
    + [Intelligenta aviseringar](c-alerts/intellligent-alerts.md)
    + [Alert Builder](c-alerts/alert-builder.md)
    + [Alert Manager](c-alerts/alert-manager.md)
-   + [Intelligenta aviseringar - användningsfall](c-alerts/alerts-use-cases.md)
+   + [Intelligenta aviseringar – användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
    + [Om klassificeringar](c-classifications2/c-classifications.md)
    + [Om underklassificeringar](c-classifications2/c-sub-classifications.md)
-   + [Konverteringsklassificeringar](c-classifications2/conversion-classifications.md)
+   + [Klassificeringar för konvertering](c-classifications2/conversion-classifications.md)
    + [Trafikklassificeringar](c-classifications2/traffic-classifications.md)
    + [Klassificeringshierarkier](c-classifications2/classification-hierarchies.md)
-   + Klassificeringsimportör (överföring) {#classifications-importer}
-      + [Klassificeringsimportör - översikt](c-classifications2/c-classifications-importer/c-working-with-saint.md)
-      + [Klassificeringsdatafiler](c-classifications2/c-classifications-importer/c-saint-data-files.md)
+   + Importera klassificeringar (ladda upp) {#classifications-importer}
+      + [Importera klassificeringar – översikt](c-classifications2/c-classifications-importer/c-working-with-saint.md)
+      + [Datafiler för klassificering](c-classifications2/c-classifications-importer/c-saint-data-files.md)
       + [Ta bort klassificeringsdata](c-classifications2/c-classifications-importer/t-delete-classification-data.md)
-      + [Escape-klassificeringsdata](c-classifications2/c-classifications-importer/t-classifications-escape-data.md)
+      + [Avbryta klassificeringsdata](c-classifications2/c-classifications-importer/t-classifications-escape-data.md)
       + [Ej klassificerade nycklar](c-classifications2/c-classifications-importer/nonclassified-keys.md)
       + [Klassificeringsmall](c-classifications2/c-classifications-importer/c-download-saint-data.md)
-      + [Import av webbläsare och FTP](c-classifications2/c-classifications-importer/import-file.md)
-      + [Import av webbläsare](c-classifications2/c-classifications-importer/browser-import.md)
+      + [Import via webbläsare och FTP](c-classifications2/c-classifications-importer/import-file.md)
+      + [Import via webbläsare](c-classifications2/c-classifications-importer/browser-import.md)
       + [FTP-import](c-classifications2/c-classifications-importer/c-uploading-saint-data-files-via-ftp.md)
    + Classification Rule Builder {#classifications-rulebuilder}
-      + [Arbetsflöde för klassificeringsregelbyggaren](c-classifications2/crb/classification-rule-builder.md)
-      + [Klassificeringsregeluppsättningar](c-classifications2/crb/classification-rule-set.md)
+      + [Arbetsflöde för Classification Rule Builder](c-classifications2/crb/classification-rule-builder.md)
+      + [Uppsättningar med klassificeringsregler](c-classifications2/crb/classification-rule-set.md)
       + [Klassificeringsregler](c-classifications2/crb/classification-quickstart-rules.md)
-      + [Klassificeringsregler - definitioner](c-classifications2/crb/classification-rule-definitions.md)
-      + [Underklassificeringar och regelbyggaren](c-classifications2/crb/sub-classification-rule-builder.md)
-   + Numeriska 2 klassificeringar {#numeric2-classification}
-      + [Översikt över Numeric 2-klassificeringar](c-classifications2/c-numeric-2/c-numeric-2-classifications.md)
-      + [Skapa numeriska 2 klassificeringar](c-classifications2/c-numeric-2/t-create-numeric-2-classifications.md)
-      + [Importera numeriska 2 klassificeringar](c-classifications2/c-numeric-2/c-import-numeric-2-classifications.md)
+      + [Klassificeringsregler – definitioner](c-classifications2/crb/classification-rule-definitions.md)
+      + [Underklassificeringar och Rule Builder](c-classifications2/crb/sub-classification-rule-builder.md)
+   + Numeriska klassificeringar 2 {#numeric2-classification}
+      + [Översikt över numeriska klassificeringar 2](c-classifications2/c-numeric-2/c-numeric-2-classifications.md)
+      + [Skapa numeriska klassificeringar 2](c-classifications2/c-numeric-2/t-create-numeric-2-classifications.md)
+      + [Importera numeriska klassificeringar 2](c-classifications2/c-numeric-2/c-import-numeric-2-classifications.md)
       + [Exempel](c-classifications2/c-numeric-2/c-examples.md)
-   + [Felsökning av klassificeringar](c-classifications2/c-classifications-troubleshooting.md)
+   + [Felsöka klassificeringar](c-classifications2/c-classifications-troubleshooting.md)
 + [Kalenderhändelser](t-calendar-event.md)
-+ Realtidsrapportering {#real-time-reporting}
-   + [Översikt över rapportering i realtid](c-real-time-reporting/realtime.md)
++ Rapporter i realtid {#real-time-reporting}
+   + [Översikt över rapporter i realtid](c-real-time-reporting/realtime.md)
    + [Konfigurera realtidsrapporter](c-real-time-reporting/t-realtime-admin.md)
    + [Mätvärden och dimensioner som stöds i realtid](c-real-time-reporting/realtime-metrics.md)
 + Marknadsföringskanaler {#marketing-channels}
@@ -253,4 +254,4 @@ ht-degree: 6%
    + [Förfallotid för besökarengagemang](c-marketing-channels/visitor-engagement.md)
    + [Analysera marknadsföringskanaler](c-marketing-channels/analyze-mc.md)
    + [Behörigheter för marknadsföringskanaler](c-marketing-channels/c-channel-report-access.md)
-   + [Vanliga frågor och exempel om marknadsföringskanaler](c-marketing-channels/c-faq.md)
+   + [Vanliga frågor om och exempel på marknadsföringskanaler](c-marketing-channels/c-faq.md)
