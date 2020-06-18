@@ -1,32 +1,32 @@
 ---
-title: Implementera analyser för mobila enheter
-description: Avgör vilket AppMeasurement-bibliotek som ska användas.
-translation-type: tm+mt
+title: Implementera Analytics för mobila enheter
+description: Bestämma vilket AppMeasurement-bibliotek för mobila enheter som ska användas.
+translation-type: ht
 source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ---
 
 
-# Implementera analyser för mobila enheter
+# Implementera Analytics för mobila enheter
 
-Information om hur du implementerar Analytics för mobila enheter finns i följande SDK-databaser och dokumentation:
+Mer information om hur du implementerar Analytics för mobila enheter finns i följande SDK-databaser och dokumentation:
 
-## Experience Platform Mobile SDKs
+## SDK:er för Experience Platform för mobila enheter
 
-* [SDK-databas](https://github.com/Adobe-Marketing-Cloud/aep-sdks-documentation/blob/master/resources/frequently-asked-questions/current-sdk-versions.md)
+* [SDK-databasen](https://github.com/Adobe-Marketing-Cloud/aep-sdks-documentation/blob/master/resources/frequently-asked-questions/current-sdk-versions.md)
 * [Dokumentation](https://aep-sdks.gitbook.io/docs/)
 
-## Version 4 SDK för mobiler
+## SDK:er för version 4 för mobila enheter
 
->[!CAUTION] Stöd för version 4 Mobile SDK upphör den 30 september 2020. Mer information finns i Vanliga frågor och svar om [version 4 av Mobile SDK](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq) .
+>[!CAUTION] Supporten för SDK:er för version 4 för mobila enheter upphör den 30 september 2020. Mer information finns i [Vanliga frågor om att supporten ska upphöra för SDK:er för version 4 för mobila enheter](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
 * [SDK-databas](https://github.com/Adobe-Marketing-Cloud/mobile-services/tree/master/sdks)
-* [iOS-dokumentation](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
-* [Android-dokumentation](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
+* [iOS-dokumentation](https://docs.adobe.com/content/help/sv-SE/mobile-services/ios/overview.html)
+* [Android-dokumentation](https://docs.adobe.com/content/help/sv-SE/mobile-services/android/overview.html)
 
 ## AppMeasurement 3.x
 
->[!CAUTION] AppMeasurement 3.x SDK:er för mobila enheter stöds inte längre.
+>[!CAUTION] SDK:erna för AppMeasurement 3.x för mobila enheter stöds inte längre.
 
-* [AppMeasurement 3.x SDK för iOS-dokumentation](../../assets/adobe_mobile_ios_3x.pdf)
-* [AppMeasurement 3.x SDK för Android-dokumentation](../../assets/android_3x.pdf)
+* [SDK för AppMeasurement 3.x för iOS-dokumentation](../../assets/adobe_mobile_ios_3x.pdf)
+* [SDK för AppMeasurement 3.x för Android-dokumentation](../../assets/android_3x.pdf)
