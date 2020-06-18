@@ -3,10 +3,10 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace sharing
 title: Dela arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: 529812c3e26744ce245ee12e24c58b7bee803084
+source-git-commit: 2312330f9371922ee895b622230d7fa9c3632c12
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 2%
+source-wordcount: '681'
+ht-degree: 3%
 
 ---
 
@@ -17,16 +17,16 @@ Delning gör ett projekt tillgängligt för andra Analysis Workspace-användare 
 
 ## Projektroller
 
-Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna till användaren och ett specifikt projekt-ID.
-
->[!NOTE]
-> Projektroller är oberoende av användarbehörigheter som hanteras i administrationskonsolen i Experience Cloud.
+Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Experience Cloud Admin Console](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
 | Roll | Projektkontroll |
 |---|---|
 | Kan redigera | Mottagarna kan spara ändringar i ett projekt och fungera som medägare.<br>Den här rollen är användbar om du vill samarbeta med kollegor i ett projekt. |
-| Kan dupliceras | Mottagarna kan spara som och ha tillgång till den vänstra listen. Interaktionerna är inte begränsade.<br>Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur analysarbetsytan ska användas, men du inte vill att det sparade projektet ska ändras. |
+| Kan dupliceras | Mottagarna kan spara som och ha tillgång till den vänstra listen. Interaktionerna är inte begränsade.<br>Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt sparade projekt ska ändras. |
 | Kan visa | Mottagarna kan inte spara som och har inte åtkomst till den vänstra listen. Interaktionerna är också begränsade.<br>Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö.<br>Läs mer om [Can view project experience](/help/analyze/analysis-workspace/curate-share/view-only-projects.md). |
+
+>[!IMPORTANT]
+> Projektmottagare som lagts till före den 18 juni 2020 har migrerats till en projektroll. Administratörsanvändare som migrerats till rollen Kan redigera och icke-adminanvändare som migrerats till rollen Kan visa. Dessa roller ger samma projekterfarenhet som tidigare.
 
 ### Ingen roll har tilldelats
 
