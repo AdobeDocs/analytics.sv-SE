@@ -2,9 +2,9 @@
 description: På panelen Analytics för Target (A4T) kan du analysera dina Adobe Target aktiviteter och upplevelser i Analysis Workspace.
 title: Panelen Analytics för Target (A4T)
 translation-type: tm+mt
-source-git-commit: 9363888ec740b182bc523c6138f9623e1ab0ffda
+source-git-commit: fb9e644b4422d67d82fdecac8d876dcd49843ad4
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -61,8 +61,9 @@ Precis som med andra paneler i Analysis Workspace kan du fortsätta att analyser
 | Fråga | Svar |
 |---|---|
 | Vilka aktivitetstyper stöds i A4T? | [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-activity-setup.html) om vilka aktivitetstyper som stöds. |
-| Stöds beräknade värden i A4T-rapportering? | Nej. [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence.html) om varför beräknade värden inte stöds. |
+| Stöds beräknade mätvärden vid lyftnings- och förtroendeberäkningar? | Nej. [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence.html) om varför beräknade mätvärden inte stöds i lyft och självförtroende. Beräknade värden kan dock användas i A4T-rapporter utanför dessa mått. |
 | Varför kan unika besökare variera mellan Target och Analytics? | [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports.html) om olika unika besökare mellan produkter. |
 | Varför returneras orelaterade upplevelser när jag väljer ett träffsegment för en viss Target-aktivitet i min analys? | A4T-dimensionen är en listvariabel, vilket betyder att den kan innehålla många aktiviteter (och upplevelser) samtidigt. [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports.html) |
+| Betyder konfidensmätningen extrema order eller används en Bonferroni-korrigering för flera erbjudanden? | Nej. [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence.html) om hur Analytics beräknar självförtroende. |
 
 Mer information om Analytics för Target-rapportering finns på [A4T-rapportering](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/reporting.html)
