@@ -3,7 +3,7 @@ description: Du får åtkomst till dessa funktioner genom att markera Visa avanc
 title: Referera till avancerade funktioner
 uuid: 7d1071b9-1737-4b7c-b318-87907dae5619
 translation-type: tm+mt
-source-git-commit: a5eeb8016f948c45973841c0ab574a0416fdfc3c
+source-git-commit: f1907abd7f30a46c0f560b3b72883d260c296f14
 workflow-type: tm+mt
 source-wordcount: '2908'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Approximate Count Distinct (dimension)
 |---|---|
 | *dimension* | Dimensionen som du vill ha det ungefärliga distinkta artikelantalet för. |
 
-## Exempel på användningsfall {#section_424E3FC5092948F0A9D655F6CCBA0312}
+### Exempel på användningsfall {#section_424E3FC5092948F0A9D655F6CCBA0312}
 
 Approximate Count Distinct (kundens ID eVar) är ett vanligt användningsfall för den här funktionen.
 
@@ -66,11 +66,11 @@ Så här kan måttet&quot;Approximate Customers&quot; användas vid rapportering
 
 ![](assets/approx-customers.png)
 
-## Uniques överskreds {#section_9C583858A9F94FF7BA054D1043194BAA}
+### Uniques överskreds {#section_9C583858A9F94FF7BA054D1043194BAA}
 
 Precis som Count() och RowCount() omfattas [UniquesOver-gränserna](https://docs.adobe.com/content/help/en/analytics/technotes/low-traffic.html)för Approximate Count Distinct(). Om gränsen för antal unika tecken överskrids inom en viss månad för en dimension räknas värdet som 1 dimensionspost.
 
-## Jämföra räkningsfunktioner {#section_440FB8FB44374459B2C6AE2DA504FC0B}
+### Jämföra räkningsfunktioner {#section_440FB8FB44374459B2C6AE2DA504FC0B}
 
 Approximate Count Distinct() är en förbättring av funktionerna Count() och RowCount() eftersom måttet som skapas kan användas i alla dimensionella rapporter för att återge ett ungefärligt antal objekt för en separat dimension. Exempel: antalet kund-ID:n som används i en rapport av typ av mobil enhet.
 
