@@ -3,9 +3,9 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace sharing
 title: Dela arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: 3592544843d6c5e64eb0d009a2526ae41689c575
+source-git-commit: 192951d794b5e45cbbce22122adff573cb853054
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1001'
 ht-degree: 3%
 
 ---
@@ -21,8 +21,8 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 
 | Roll | Projektkontroll |
 |---|---|
-| Kan redigera | Mottagarna kan spara ändringar i ett projekt och fungera som medägare. Den här rollen är användbar om du vill redigera projekt tillsammans med andra kollegor.<br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen. |
-| Kan dupliceras | Mottagarna kan spara som och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt projekt ska ändras. |
+| Kan redigera | Mottagarna kan ändra **[!UICONTROL Save]** till ett projekt och fungera som medägare. Den här rollen är användbar om du vill samhantera ett projekt med andra kollegor. detta inkluderar redigering, borttagning och ändring av mottagarlistor för ett delat projekt. <br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen. |
+| Kan dupliceras | Mottagarna kan **[!UICONTROL Save as]** och har tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt projekt ska ändras. |
 | Kan visa | Mottagarna kan inte spara som och har inte åtkomst till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö.<br>Läs mer om [Can view project experience](/help/analyze/analysis-workspace/curate-share/view-only-projects.md). |
 
 >[!IMPORTANT]
@@ -30,7 +30,7 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 
 ### Ingen roll har tilldelats (mottagare av projektlänkar)
 
-Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i **[!UICONTROL Can duplicate]**rollen.
+Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.
 
 ### Flera roller har tilldelats
 
@@ -66,9 +66,7 @@ Alla användare kan dela projekt med grupper, som är en samling mottagare. I Ad
 
 ## Dela en projektlänk {#Links}
 
-Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en projektroll får han eller hon som standard en **[!UICONTROL Can duplicate]**projektupplevelse.
-
-Du kan även dela projekt från **[!UICONTROL Components]>[!UICONTROL Projects]**. Ett enskilt projekt kan delas enligt samma steg ovan
+Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.
 
 ## Dela projekt i projektledaren {#Manager}
 
@@ -93,4 +91,4 @@ När du har valt Projekt A och B läggs mottagarna 4 och 7 till i resurslistorna
 | Vad händer om två redigerare sparar ett projekt samtidigt? | Ändringarna sammanfogas inte och den senast sparade projektversionen behålls. Analysis Workspace stöder för närvarande inte live-samarbete. |
 | Vilken projekterfarenhet vill jag som administratör se? | Administratörer som placerats i en **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** roll får dessa begränsade upplevelser när de öppnar ett projekt. Om du vill kan en administratör när som helst utöka sin roll till **[!UICONTROL Can edit]** via **[!UICONTROL Components]>[!UICONTROL Projects]**. |
 | Vad händer om en mottagare placeras i en roll som enskild person och en annan roll som medlem i en grupp? | Om en mottagare placeras i flera roller får de alltid den högre upplevelsen. Om en mottagare till exempel får rollen som **[!UICONTROL Can edit]** individ och rollen som **[!UICONTROL Can view]** medlem i en grupp får han/hon en **[!UICONTROL Can edit]** projekterfarenhet. |
-| Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i **[!UICONTROL Can duplicate]**rollen. |
+| Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Mottagarna får rollen som du placerade dem i den delade modalen. Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**. |
