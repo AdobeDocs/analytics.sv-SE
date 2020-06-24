@@ -3,9 +3,9 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace sharing
 title: Dela arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: 324460b89adf55c450d68bdb4fdc884e53f86257
+source-git-commit: 3592544843d6c5e64eb0d009a2526ae41689c575
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '985'
 ht-degree: 3%
 
 ---
@@ -28,13 +28,13 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 >[!IMPORTANT]
 > Projektmottagare som lagts till före den 18 juni 2020 har migrerats till en projektroll. Administratörsanvändare migrerade till **[!UICONTROL Can edit]** rollen och icke-adminanvändare migrerade till **[!UICONTROL Can duplicate]** rollen. Dessa roller ger samma projekterfarenhet som tidigare. Dessutom migrerades alla grupper (inklusive&quot;Alla&quot;) till **[!UICONTROL Can duplicate]** rollen.
 
-### Ingen roll har tilldelats
+### Ingen roll har tilldelats (mottagare av projektlänkar)
 
-Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i **[!UICONTROL Can view]**rollen.
+Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i **[!UICONTROL Can duplicate]**rollen.
 
 ### Flera roller har tilldelats
 
-Om en mottagare placeras i flera roller får de alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får rollen som **[!UICONTROL Can edit]** individ och rollen som **[!UICONTROL Can view]** medlem i en grupp får han/hon en **[!UICONTROL Can edit]** projekterfarenhet.
+Om en mottagare placeras i flera roller får de alltid den högsta upplevelsen. Detta kan inträffa om en mottagare läggs till både som individ och som en del av en grupp. Om en mottagare till exempel får rollen som **[!UICONTROL Can edit]** individ och rollen som **[!UICONTROL Can view]** medlem i en grupp får han/hon en **[!UICONTROL Can edit]** projekterfarenhet.
 
 ### Administratörer och roller
 
@@ -46,7 +46,7 @@ Så här lägger du till mottagare i ditt delade projekt:
 
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share project]**.
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
-1. Lägg till mottagare eller grupper med användare.
+1. Lägg till mottagare eller grupper med mottagare.
 Använd hjälpikonen längst upp för att få beskrivningar av de olika rollerna.
 1. (Valfritt) Dela inbäddade projektkomponenter (segment, beräknade värden och datumintervall) med alla mottagare.
 När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Observera att den här inställningen inte kvarstår - det är en enkel åtgärd vid tidpunkten för delningen.
@@ -64,18 +64,27 @@ Alla användare kan dela projekt med grupper, som är en samling mottagare. I Ad
 * Administratörer kan dela till alla grupper, inklusive&quot;Alla&quot;.
 * Icke-administratörer kan dela grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
 
+## Dela en projektlänk {#Links}
+
+Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en projektroll får han eller hon som standard en **[!UICONTROL Can duplicate]**projektupplevelse.
+
+Du kan även dela projekt från **[!UICONTROL Components]>[!UICONTROL Projects]**. Ett enskilt projekt kan delas enligt samma steg ovan
+
 ## Dela projekt i projektledaren {#Manager}
 
-Du kan även dela projekt från **[!UICONTROL Components]>[!UICONTROL Projects]**. Ett enskilt projekt kan delas enligt samma steg ovan.
+Du kan även dela projekt från **[!UICONTROL Components]>[!UICONTROL Projects]**. Ett enskilt projekt kan delas enligt samma steg ovan.  Om du väljer att dela flera projekt läggs mottagarna till i den befintliga listan med mottagare för varje projekt.
 
-Om du väljer att dela flera projekt läggs mottagarna till i den befintliga listan med mottagare för varje projekt. Exempel:
+Exempel:
 
-* Projekt A delas med användarna 1, 2, 3
-* Projekt B delas med användare 4, 5, 6
-* När du har valt Projekt A och B läggs användare 4 och 7 till i mottagarlistorna. Den nya mottagarlistan för varje projekt är nu:
-   * Projekt A: 1, 2, 3, 4, 7
-   * Projekt B: 4, 5, 6, 7
-   ![](assets/mult-proj-sharing.png)
+* Projekt A delas med mottagare 1, 2, 3
+* Projekt B delas med mottagare 4, 5, 6
+
+När du har valt Projekt A och B läggs mottagarna 4 och 7 till i resurslistorna. Den nya resurslistan för varje projekt är nu:
+
+* Projekt A: 1, 2, 3, 4, 7
+* Projekt B: 4, 5, 6, 7
+
+![](assets/mult-proj-sharing.png)
 
 ## FAQs {#FAQs}
 
@@ -83,5 +92,5 @@ Om du väljer att dela flera projekt läggs mottagarna till i den befintliga lis
 |---|---|
 | Vad händer om två redigerare sparar ett projekt samtidigt? | Ändringarna sammanfogas inte och den senast sparade projektversionen behålls. Analysis Workspace stöder för närvarande inte live-samarbete. |
 | Vilken projekterfarenhet vill jag som administratör se? | Administratörer som placerats i en **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** roll får dessa begränsade upplevelser när de öppnar ett projekt. Om du vill kan en administratör när som helst utöka sin roll till **[!UICONTROL Can edit]** via **[!UICONTROL Components]>[!UICONTROL Projects]**. |
-| Vad händer om en användare placeras i en roll som enskild och en annan roll som medlem i en grupp? | Om en mottagare placeras i flera roller får de alltid den högre upplevelsen. Om en användare till exempel får rollen som **[!UICONTROL Can edit]** individ och rollen som **[!UICONTROL Can view]** medlem i en grupp får han/hon en **[!UICONTROL Can edit]** projekterfarenhet. |
-| Varför får en användare en vy-upplevelse när de får en projektlänk? | Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i **[!UICONTROL Can view]**rollen. Om användaren vill ha en utökad projektroll kan projektägaren eller redigeraren lägga till dem i Kan duplicera eller Kan redigera rollen via modala projektresurser. |
+| Vad händer om en mottagare placeras i en roll som enskild person och en annan roll som medlem i en grupp? | Om en mottagare placeras i flera roller får de alltid den högre upplevelsen. Om en mottagare till exempel får rollen som **[!UICONTROL Can edit]** individ och rollen som **[!UICONTROL Can view]** medlem i en grupp får han/hon en **[!UICONTROL Can edit]** projekterfarenhet. |
+| Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i **[!UICONTROL Can duplicate]**rollen. |
