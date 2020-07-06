@@ -1,20 +1,23 @@
 ---
 description: En kontrollpanel är en samling miniatyrrapporter som kallas rapportlets. En kontrollpanel är mest användbar när den innehåller relaterade rapporter som ger dig fullständiga översikter över vissa aspekter av din webbplats, t.ex. sökmetoder, besökarprofiler osv.
 subtopic: Dashboards
-title: Kontrollpaneler och rapporter
+title: Kontrollpaneler och minirapporter
 topic: Reports and analytics
 uuid: 7a7b3bc9-0a3c-49b0-9168-e2878ae67b97
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1692'
+ht-degree: 1%
 
 ---
 
 
-# Kontrollpaneler och rapporter
+# Kontrollpaneler och minirapporter
 
 En kontrollpanel är en samling miniatyrrapporter som kallas rapportlets. En kontrollpanel är mest användbar när den innehåller relaterade rapporter som ger dig fullständiga översikter över vissa aspekter av din webbplats, t.ex. sökmetoder, besökarprofiler osv.
 
-## Kontrollpaneler och rapporter {#concept_8CD3ACA2830A4994A68A31D8773B57E0}
+## Kontrollpaneler och minirapporter {#concept_8CD3ACA2830A4994A68A31D8773B57E0}
 
 En kontrollpanel är en samling miniatyrbildsrapporter som kallas *`reportlets`*. En kontrollpanel är mest användbar när den innehåller relaterade rapporter som ger dig fullständiga översikter över vissa aspekter av din webbplats, t.ex. sökmetoder, besökarprofiler osv.
 
@@ -31,9 +34,11 @@ Tänk på att vissa rapporter som visas ofta inte kan visas i kontrollpaneler. B
 * Realtidsrapporter
 * Andra instrumentpaneler
 
->[!NOTE] Kontrollpanelen visas inte längre i Rapporter och analyser **[!UICONTROL Site Overview]** . Det finns dock fortfarande några omständigheter då du kommer att se några eller alla rapporter för den.
+>[!NOTE]
+>
+>Instrumentpanelen visas inte längre i Rapporter och Analytics **[!UICONTROL Site Overview]** . Det finns dock fortfarande några omständigheter då du kommer att se några eller alla rapporter för den.
 
-* Om du t.ex. bara har tre rapporter som visas ofta, tar Rapporter och analyser två rapporter från kontrollpanelen Webbplatsöversikt för att slutföra **[!UICONTROL My Recommended Reports]** instrumentpanelen.
+* Om du t.ex. bara har tre rapporter som visas ofta tar Rapporter och Analytics två rapporter från kontrollpanelen Webbplatsöversikt för att slutföra **[!UICONTROL My Recommended Reports]** instrumentpanelen.
 * Brand new report suites kommer även från början att innehålla rapporter för webbplatsöversikt tills de ersätts av rapporter som du ofta visar. Även så kallas kontrollpanelen nu **[!UICONTROL My Recommended Reports]**.
 
 Förutom de instrumentpaneler du skapar finns följande färdigpaketerade instrumentpaneler för varje användare:
@@ -48,7 +53,7 @@ Den här instrumentpanelen ger dig en översikt över viktiga mätvärden för w
 
 * Avsluta sidor
 * Mest populära sidor
-* De vanligaste webbplatsavsnitten
+* Mest populära webbplatsavsnitt
 * KPI/mätarrapport
 * Textrapport
 * Sammanfattningsrapport för företag
@@ -186,9 +191,9 @@ t_dashboard_edit.xml
 
 | Till | Gör detta |
 |--- |--- |
-| Ändra en rapportsvit för en instrumentpanel | Klicka på menyn i Experience Cloud-huvudet och välj sedan en rapportsvit. |
+| Ändra en rapportsvit för en instrumentpanel | Klicka på menyn i sidhuvudet i Experience Cloud och välj sedan en rapportserie. |
 | Ändra en rapportletts rapportserie | Klicka på rapportsvitens namn i rapportleten och välj sedan en rapportsvit på [!UICONTROL Report Suite] menyn. |
-| Tillämpa ett segment på en kontrollpanel | Klicka på i Experience Cloud-huvudet [!UICONTROL Show Segments]och välj sedan ett segment. |
+| Tillämpa ett segment på en kontrollpanel | Klicka på Experience Cloud i sidhuvudet [!UICONTROL Show Segments]och markera sedan ett segment. |
 | Använda ett segment i en rapportlet | Klicka på Layout på kontrollpanelen för att redigera en kontrollpanel.   Klicka på rapportsvitens namn i rapportleten, välj sedan ett värde i segmentfältet och klicka på Uppdatera. |
 | Lås en rapportserie (förhindrar att rapportsviten ändras i ett rapportpaket) | Klicka på rapportsvitens namn i rapportmodulen och aktivera [!UICONTROL Lock Report Suite]. Klicka på Uppdatera. |
 | Ändra ett rapportdatum | Klicka på kalendern för en kontrollpanel. (Alla rapporter på kontrollpanelen återspeglar ändringen.)<br>Klicka på länken date för en rapportlet och konfigurera sedan kalendern. |
