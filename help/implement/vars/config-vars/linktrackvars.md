@@ -2,10 +2,10 @@
 title: linkTrackVars
 description: Ange vilka variabler som ska ingå i förfrågningar om länkspårningsbilder.
 translation-type: tm+mt
-source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -16,11 +16,13 @@ Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden
 
 Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-method.md) metod).
 
-## Variabler i länkspårningsanrop med hjälp av Adobe Experience Platform Launch
+## Variabler i länkspårningsanrop med Adobe Experience Platform Launch
 
 Launch fyller automatiskt i den här variabeln på serverdelen baserat på variabler som angetts i gränssnittet, så den ställs alltid in i implementeringar med Launch.
 
->[!IMPORTANT] Om du anger variabler i Launch med den anpassade kodredigeraren måste du ta med variabeln även i `linkTrackVars` med anpassad kod.
+>[!IMPORTANT]
+>
+>Om du anger variabler i Launch med den anpassade kodredigeraren måste du ta med variabeln även i `linkTrackVars` med anpassad kod.
 
 ## s.linkTrackVars i AppMeasurement and Launch custom code editor
 
@@ -38,7 +40,9 @@ Standardvärdet för den här variabeln är en tom sträng. Adobe tillhandahöll
 * Om variabeln inte är definierad eller inställd på en tom sträng inkluderas *alla* variabler i förfrågningar om länkspårningsbilder.
 * Om variabeln är inställd på `"None"`inkluderas *inga* variabler i förfrågningar om länkspårningsbilder.
 
->[!TIP] Undvik att använda objektidentifieraren (`s.`) för Analytics när du anger variabler i den här variabeln. Till exempel `s.linkTrackVars = "eVar1";` är korrekt medan `s.linkTrackVars = "s.eVar1";` är felaktig.
+>[!TIP]
+>
+>Undvik att använda Analytics objektidentifierare (`s.`) när du anger variabler i den här variabeln. Till exempel `s.linkTrackVars = "eVar1";` är korrekt medan `s.linkTrackVars = "s.eVar1";` är felaktig.
 
 ## Exempel
 
