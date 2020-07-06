@@ -2,8 +2,11 @@
 description: 'null'
 title: Datasekretessetiketter för analysvariabler
 uuid: a37a1278-7a0d-4e14-ae35-43bc460e7d12
-translation-type: ht
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '3634'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +25,9 @@ Implementering av datasekretess i Adobe Analytics stöder följande etiketter f�
 
 ## DULE-etiketter {#section_B2E78130957647338495EF37DE21D6BC}
 
->[!NOTE] DULE-ramverket (Data Usage Labeling &amp; Enforcement) är utformat för att tillhandahålla ett enhetligt sätt att i alla Adobe-lösningar/-tjänster/-plattformar samla in, kommunicera och använda metadata om data i hela Adobe Experience Cloud. Metadata hjälper personuppgiftsansvariga att indikera vilka data som är personuppgifter, vilka data som är känsliga och vilka avtalsbegränsningar som är kopplade till data. I den här initiala versionen visar Analytics bara de DULE-etiketter som är relevanta för datasekretess. I takt med att andra Adobe-produkter implementerar stöd för DULE-etiketter, kommer framtida versioner att innehålla ytterligare känsliga dataetiketter, liksom avtalsetiketter, som säkerställer att data som delas mellan produkterna endast används på ett juridiskt tillåtet sätt.
+>[!NOTE]
+>
+>DULE-ramverket (Data Usage Labeling &amp; Enforcement) är utformat för att tillhandahålla ett enhetligt sätt att i alla Adobe-lösningar/-tjänster/-plattformar samla in, kommunicera och använda metadata om data i hela Adobe Experience Cloud. Metadata hjälper personuppgiftsansvariga att indikera vilka data som är personuppgifter, vilka data som är känsliga och vilka avtalsbegränsningar som är kopplade till data. I den här initiala versionen visar Analytics bara de DULE-etiketter som är relevanta för datasekretess. I takt med att andra Adobe-produkter implementerar stöd för DULE-etiketter, kommer framtida versioner att innehålla ytterligare känsliga dataetiketter, liksom avtalsetiketter, som säkerställer att data som delas mellan produkterna endast används på ett juridiskt tillåtet sätt.
 
 ## Etiketter för identitetsdata (DULE) {#identity-data-labels}
 
@@ -240,7 +245,9 @@ Det är möjligt att använda samma namnutrymme för olika variabler i samma rap
 
 Ett annat exempel är att du kan ha ett CRM-ID som ibland skickas in via eVar1 och ibland skickas in via prop7. Sedan har du en behandlingsregel som kopierar värdet från eVar1, om det finns, till eVar3. Annars kopieras värdet från prop7 till eVar3. I det här scenariot innehåller eVar3 alltid CRM-ID om det är känt, så endast eVar3 kräver en ID-PERSON-etikett.
 
->[!CAUTION] Namnutrymmena ”visitorId” och ”customVisitorId” är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
+>[!CAUTION]
+>
+>Namnutrymmena ”visitorId” och ”customVisitorId” är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
 ## Variabeltyperna och etiketterna för datasekretess/DULE som de stöder {#section_CE7C3EDE1344466A98BC45E394B40762}
 
