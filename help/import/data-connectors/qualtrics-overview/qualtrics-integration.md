@@ -5,7 +5,10 @@ title: Använda integreringen
 topic: Data connectors
 uuid: a1d5045b-4c38-4984-8c71-27e86ebe8b23
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '161'
+ht-degree: 9%
 
 ---
 
@@ -14,9 +17,11 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 När distributionen är klar kan du börja använda de extrafunktioner som den här integreringen ger.
 
->[!NOTE] Det kan ta 24-48 timmar att börja se svar från Qualtrics i er Adobe Analytics-rapportering.
+>[!NOTE]
+>
+>Det kan ta 24-48 timmar att börja se Qualtrics-svarsdata i din Adobe Analytics-rapportering.
 
-Nedan följer några åtgärder som du kan vidta för att få ut mer av den här integreringen inifrån Adobe Analytics.
+Nedan följer några åtgärder som du kan använda för att få ut mer av den här integreringen från Adobe Analytics.
 
 1. Skapa ett segment med hjälp av svarsdata från enkäter (se [Skapa ett segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html)).
 1. Använd segmentet på nyckelrapporter.
