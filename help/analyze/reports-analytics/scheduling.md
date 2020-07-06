@@ -5,7 +5,10 @@ title: Rapportschema och distribution
 topic: Reports and analytics
 uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1620'
+ht-degree: 1%
 
 ---
 
@@ -14,17 +17,19 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Information om schemaläggning, hämtning och distribution av rapporter.
 
-När du schemalägger en rapport för leverans i ett Adobe Analytics-program kan du använda verktygen för schemaläggning och distribution för att visa vilka filer som har skickats automatiskt och ändra eller avsluta leveranserna.
+När du schemalägger en rapport för leverans i ett Adobe Analytics-program kan du använda verktygen för schemaläggning och distribution för att se vilka filer som har skickats automatiskt och ändra eller avsluta leveranserna.
 
-På grund av skillnader i bearbetningsmekanismer och -plattformar har de olika typerna av hämtningsbara och schemalagda rapporter som är tillgängliga i Adobe Analytics olika begränsningar vad gäller det maximala antalet rader som de kan behandla i en enda begäran. Här följer begränsningarna för varje:
+På grund av skillnader i bearbetningsmekanismer och plattformar har de olika typerna av hämtningsbara och schemalagda rapporter som finns i Adobe Analytics olika begränsningar vad gäller högsta antal rader som kan bearbetas i en och samma begäran. Här följer begränsningarna för varje:
 
 * Word, CSV, Excel, HTML och PDF: Samma antal rader som visas i rapporten. Som standard är den här gränsen 50 rader, men den kan öka upp till 200. Uppdelningsrapporter har en hård gräns på 50 rader.
 * Datautdrag: 50 000 rader
-* Datalager: Obegränsad
+* Data warehouse: Obegränsad
 
 Dessa begränsningar gäller för enskilda schemalagda och nedladdade rapporter. Kontrollpaneler begränsas till det tillgängliga utrymmet i en rapportmodul.
 
->[!NOTE] &quot;Leveranstid&quot;/&quot;Dag&quot; som anges av användaren anger den tid som rapporten ska börja bearbetas, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som rapporten levereras baseras främst på hur lång tid det tar att behandla (komplexa och stora rapporter tar längre tid än enklare rapporter). Om en rapport t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
+>[!NOTE]
+>
+>&quot;Leveranstid&quot;/&quot;Dag&quot; som anges av användaren anger den tid som rapporten ska börja bearbetas, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som rapporten levereras baseras främst på hur lång tid det tar att behandla (komplexa och stora rapporter tar längre tid än enklare rapporter). Om en rapport t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
 >Dessutom finns det ett antal andra faktorer som ytterligare kan öka fördröjningen innan rapporten faktiskt levereras:
 >
 > * **Köra många olika scheman av samma typ samtidigt** (t.ex. många Dashboards) kan överlagra systemet. Schemaläggningssystemet tillåter endast ett fåtal (5-10) rapporter av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra rapporter är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags rapporter vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
@@ -55,7 +60,7 @@ Steg som beskriver hur du laddar ned och skickar rapporter via e-post i en mäng
 | Rapportfilnamn | Anger rapportens namn. Standardformatet är `<report name> for <suite> - <report date range>`. Om du vill ange ett eget namn väljer du [!UICONTROL Custom]. |
 | Rapportformat | Här kan du ange PDF-, CSV-, Excel-, HTML-, Word- eller mobilformat för leverans. Om du väljer CSV kan du även ange kodning för CSV:<ul><li>Skift-JIS: Japansk teckenkodning.</li><li>EUC-JP: Utökad Unix-kod, främst för japanska, koreanska och förenklad kinesiska.</li></ul> |
 | Rapportinnehåll | <ul><li>Antal rader i tabellen: Anger det antal rader som du vill ska vara synliga i tabellen i rapporten som du skickar.</li><li>Språk för sidhuvud och sidfot: Anger språket för sidhuvudet och sidfoten.</li><li>Kommentarer: Anger texten som visas i början av rapporten.</li></ul> |
-| Skicka digital signaturfil | När du begär en rapport, t.ex. en rapport med bokmärken eller en begäran från ett datalager, kan du begära en dataunderskrift. Adobes digitala signatur begränsar inte vem som har åtkomst till data, men syftet med den digitala signaturfilen (.sig) är att verifiera giltigheten hos den levererade rapportfilen. Med den digitala signaturen kan rapportmottagarna verifiera att filen kommer från Adobe och inte har ändrats. |
+| Skicka digital signaturfil | När du begär en rapport, till exempel en rapport med bokmärken eller Data warehouse, kan du begära en dataunderskrift. Adobes digitala signatur begränsar inte vem som har åtkomst till data, men syftet med den digitala signaturfilen (.sig) är att verifiera giltigheten hos den levererade rapportfilen. Med den digitala signaturen kan rapportmottagarna verifiera att filen kommer från Adobe och inte har ändrats. |
 | Rapportdestination | <ul><li>E-post: Här kan du konfigurera e-postadressinställningar, ämnesraden och anteckningar.</li><li>FTP: Gör att du kan konfigurera FTP-inställningar, inklusive värd, port, katalog, användarnamn och lösenord.</li></ul> |
 
 1. Klicka på **[!UICONTROL Scheduling Options]**.
@@ -139,4 +144,4 @@ Så här avbeställer du en schemalagd rapport:
 
 Om du avbryter prenumerationen på en rapport avbryts inte den schemalagda rapporten.
 
-Om du vill avbryta en schemalagd rapport går du till Schedule Manager och klickar på det röda X:et bredvid rapportnamnet. [Mer ...](/help/analyze/reports-analytics/scheduling.md#task_C17677C543454FF2B06D10EA5652DFBC)
+Om du vill avbryta en schemalagd rapport går du till Schedule Manager och klickar på det röda X:et bredvid rapportnamnet. [Mer...](/help/analyze/reports-analytics/scheduling.md#task_C17677C543454FF2B06D10EA5652DFBC)
