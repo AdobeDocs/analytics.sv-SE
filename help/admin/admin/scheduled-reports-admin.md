@@ -4,7 +4,10 @@ title: Schemalagd rapportkö
 topic: Reports
 uuid: 3fcf92d3-a472-465f-ad7a-c48cd9a8238b
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +29,9 @@ Funktioner på administratörsnivå i hanteraren för schemalagda rapporter är 
 
 På **[!UICONTROL Report List]** fliken kan du **[!UICONTROL Show All Scheduled Reports]** i din organisation, förutom de som du har schemalagt personligen.
 
->[!NOTE] I **[!UICONTROL Report Name]** kolumnen visas namnet på den rapport som schemaläggs och i **[!UICONTROL File Name]** kolumnen visas eventuella egna filnamn som du har angett i Avancerade leveransalternativ. Om du schemalägger flera rapporter av samma rapporttyp och anger anpassade namn för var och en av dem, kommer schemalagda rapporthanterare att visa flera poster med samma rapportnamn, men med olika filnamn. Detta beror på att serverdelsrapporten som schemaläggs är densamma, så kolumnen Rapportnamn skulle ha samma rapportnamn för alla förutom anpassade filnamn (som angetts).
+>[!NOTE]
+>
+>I **[!UICONTROL Report Name]** kolumnen visas namnet på den rapport som schemaläggs och i **[!UICONTROL File Name]** kolumnen visas eventuella egna filnamn som du har angett i Avancerade leveransalternativ. Om du schemalägger flera rapporter av samma rapporttyp och anger anpassade namn för var och en av dem, kommer schemalagda rapporthanterare att visa flera poster med samma rapportnamn, men med olika filnamn. Detta beror på att serverdelsrapporten som schemaläggs är densamma, så kolumnen Rapportnamn skulle ha samma rapportnamn för alla förutom anpassade filnamn (som angetts).
 
 ![](assets/show_all_scheduled_reports.png)
 
@@ -46,6 +51,6 @@ I rapportkön kan du även&quot;Hoppa över en schemalagd rapport en gång&quot;
 
 ## Schema-ID {#section_568B70F4228C4229977CB85D2DCD53A1}
 
-Om du har **[!UICONTROL Schedule ID]** exponerats i gränssnittet för rapportkön blir det lättare att kontakta Adobe Client Care för att få hjälp med att lösa ett problem med schemalagda rapporter.
+Om du har **[!UICONTROL Schedule ID]** exponerats i gränssnittet för rapportkön blir det lättare att kontakta Adobe Client Care för att få hjälp med ett problem med schemalagda rapporter.
 
 ![](assets/schedule_id.png)
