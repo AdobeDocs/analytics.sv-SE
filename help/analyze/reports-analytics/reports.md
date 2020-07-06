@@ -1,8 +1,8 @@
 ---
 title: Rapporter
-description: Dimensionerna och måtten som Rapporter och analyser använder för varje rapport.
+description: Dimensionerna och måtten som Rapporter och Analytics använder för varje rapport.
 translation-type: tm+mt
-source-git-commit: 1968162d856b6a74bc61f22f2e5a6b1599d04c79
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Rapporter
 
-Varje rapport i Rapporter och analyser använder en dedikerad dimension och standardmått. Du kan ändra måtten i varje rapport och lägga till uppdelningar om du vill. I följande listor visas vilken dimension som används i varje rapport.
+Varje rapport i Rapporter och Analytics använder en dedikerad dimension och standardmått. Du kan ändra måtten i varje rapport och lägga till uppdelningar om du vill. I följande listor visas vilken dimension som används i varje rapport.
 
-> [!NOTE] Din rapportmeny kan se annorlunda ut beroende på vilka anpassningar en administratör i organisationen har gjort. Se [Menyanpassning](/help/admin/admin/customize-menus.md) i användarhandboken för Admin.
+>[!NOTE]
+>
+>Din rapportmeny kan se annorlunda ut beroende på vilka anpassningar en administratör i organisationen har gjort. Se [Menyanpassning](/help/admin/admin/customize-menus.md) i användarhandboken för Admin.
 
-## Webbplatsmått
+## Mätvärden för webbplats
 
 Innehåller rapporter som vanligtvis trendar med ett datumintervall. Innehåller också unika rapporter, till exempel rekommenderade rapporter och realtidsrapporter.
 
@@ -35,7 +37,7 @@ Innehåller rapporter som vanligtvis trendar med ett datumintervall. Innehåller
 * Tid per besök: Använder [tidsåtgången per besök - fast](/help/components/dimensions/time-spent-per-visit.md) dimension.
 * Tid före händelse: Använder [Tid före](/help/components/dimensions/time-prior-to-event.md) händelsedimension.
 * Inköp: Innehåller rapporter om inköpsbaserade mätvärden.
-   * Inköpskonverteringstratt: Rapport om [besök](/help/components/metrics/visits.md), [kundvagnar](/help/components/metrics/carts.md), [beställningar](/help/components/metrics/orders.md), [intäkter](/help/components/metrics/revenue.md)och [enheter](/help/components/metrics/units.md) i en trattrapport. En liknande visualisering uppnås i Analysis Workspace med [Utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
+   * Inköpskonverteringstratt: Rapport om [besök](/help/components/metrics/visits.md), [kundvagnar](/help/components/metrics/carts.md), [beställningar](/help/components/metrics/orders.md), [intäkter](/help/components/metrics/revenue.md)och [enheter](/help/components/metrics/units.md) i en trattrapport. En liknande visualisering uppnås i Analysis Workspace med [utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
    * Intäkter: Trends the metric [Revenue](/help/components/metrics/revenue.md) over time.
    * Beställningar: Trends the metric [Orders](/help/components/metrics/orders.md) over time.
    * Enheter: Trends the metric [Units](/help/components/metrics/units.md) over time.
@@ -82,7 +84,7 @@ Innehåller rapporter om äldre mobilrapporter. Dessa rapporter baserar sina dat
 * Stöd för video: Använder dimensionen [Stöd](/help/components/dimensions/mobile-dimensions.md) för mobilvideo.
 * Operativsystem (borttaget): Använder [mobiloperativsystemets (föråldrad)](/help/components/dimensions/mobile-dimensions.md) dimension.
 
-## Banor
+## Sökvägar
 
 Innehåller rapporter som gör att du kan se sökdata för besökare.
 
@@ -90,9 +92,9 @@ Innehåller rapporter som gör att du kan se sökdata för besökare.
 * Nästa sida: Tar det översta siddimensionsvärdet och visar dig de nästa sidor besökarna besöker.
 * Föregående sidflöde: Använder en flödesrapport på det översta siddimensionsvärdet En liknande rapport i Analysis Workspace är tillgänglig med hjälp av en [flödesvisualisering](../analysis-workspace/visualizations/c-flow/flow.md).
 * Föregående sida: Tar det översta siddimensionsvärdet och visar de föregående sidorna besökarna kom från.
-* Utfall: Gör att du kan välja siddimensionsvärden i steg, och visar andelen personer som inte följde och följde den banan. En liknande rapport i Analysis Workspace är tillgänglig med hjälp av en [utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
-* Fullständiga sökvägar: Visar enskilda sökvägar som dimensionsvärden. Pensionärer på analysarbetsytan; använd [Flow-visualisering](../analysis-workspace/visualizations/c-flow/flow.md) i stället.
-* PathFinder: Innehåller flera typer av rapporter som gör att du kan analysera sökvägar (tas bort i Analysis Workspace).
+* Utfall: Gör att du kan välja siddimensionsvärden i steg, och visar andelen personer som inte följde och följde den banan. En liknande rapport i Analysis Workspace finns tillgänglig med hjälp av en [utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
+* Fullständiga sökvägar: Visar enskilda sökvägar som dimensionsvärden. Pensionärer i Analysis Workspace; använd [Flow-visualisering](../analysis-workspace/visualizations/c-flow/flow.md) i stället.
+* PathFinder: Innehåller flera typer av rapporter som gör att du kan analysera banor (som tagits bort i Analysis Workspace).
 * Banlängd: Använder dimensionen för [besöksdjup](/help/components/dimensions/visit-depth.md) .
 * Sidanalys
    * Sidsammanfattning: Tar det översta siddimensionsvärdet och visar en trendvy. Visar även startpunkter, tidigare sidor, slutpunkter och nästa sidor för det övre siddimensionsvärdet.
@@ -105,7 +107,9 @@ Innehåller rapporter som gör att du kan se sökdata för besökare.
    * Besök enstaka sidor: Använder dimensionen [Sida](/help/components/dimensions/page.md) med segmentet&quot;Enkelsidiga besök&quot; från Adobe.
    * Avsluta sidor: Använder dimensionen [Avsluta sidor](/help/components/dimensions/exit-dimensions.md) .
 
-> [!NOTE] Andra rapporter kan visas i den här mappen. De är andra dimensioner, t.ex. props, där du har aktiverat [delning](../../admin/admin/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar.
+>[!NOTE]
+>
+>Andra rapporter kan visas i den här mappen. De är andra dimensioner, t.ex. props, där du har aktiverat [delning](../../admin/admin/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar.
 
 ## Trafikkällor
 
@@ -127,16 +131,16 @@ Innehåller en rapport som ger en inblick i var besökarna kom från innan de ko
 
 Innehåller rapporter huvudsakligen kring [spårningskoddimensionen](/help/components/dimensions/tracking-code.md) .
 
-* Kampanjkonverteringstratt: Rapporterar klickningar, [utcheckningar](/help/components/metrics/checkouts.md), [beställningar](/help/components/metrics/orders.md)och [intäkter](/help/components/metrics/revenue.md) i en trattrapport. Mätvärdet för klickfrekvens liknar [instansmåttet](/help/components/metrics/instances.md) i samband med dimensionen för [spårningskod](/help/components/dimensions/tracking-code.md) . En liknande visualisering uppnås i Analysis Workspace med [Utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
+* Kampanjkonverteringstratt: Rapporterar klickningar, [utcheckningar](/help/components/metrics/checkouts.md), [beställningar](/help/components/metrics/orders.md)och [intäkter](/help/components/metrics/revenue.md) i en trattrapport. Mätvärdet för klickfrekvens liknar [instansmåttet](/help/components/metrics/instances.md) i samband med dimensionen för [spårningskod](/help/components/dimensions/tracking-code.md) . En liknande visualisering uppnås i Analysis Workspace med [utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
 * Spårningskod: Använder [spårningskoddimensionen](/help/components/dimensions/tracking-code.md) .
 
 ## Produkter
 
 Innehåller rapporter huvudsakligen kring [produktdimensionen](/help/components/dimensions/product.md) .
 
-* Produktkonverteringstratt: Rapporterar [produktvyer](/help/components/metrics/product-views.md), [kundvagnstillägg](/help/components/metrics/cart-additions.md), [utcheckningar](/help/components/metrics/checkouts.md), [beställningar](/help/components/metrics/orders.md), [enheter](/help/components/metrics/units.md)[](/help/components/metrics/revenue.md) och¥Revenue som en trattrapport. En liknande visualisering uppnås i Analysis Workspace med [Utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
+* Produktkonverteringstratt: Rapporterar [produktvyer](/help/components/metrics/product-views.md), [kundvagnstillägg](/help/components/metrics/cart-additions.md), [utcheckningar](/help/components/metrics/checkouts.md), [beställningar](/help/components/metrics/orders.md), [enheter](/help/components/metrics/units.md)[](/help/components/metrics/revenue.md) och¥Revenue som en trattrapport. En liknande visualisering uppnås i Analysis Workspace med [utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
 * Produkter: Använder dimensionen [Produkter](/help/components/dimensions/product.md) .
-* Korsförsäljning: Visar produkter som vanligen säljs tillsammans (som har tagits bort i Analysis Workspace).
+* Korsförsäljning: Visar produkter som vanligen säljs tillsammans (dras tillbaka i Analysis Workspace).
 * Kategorier: Använder [kategoridimensionen](/help/components/dimensions/category.md) .
 
 ## Bevarande av besökare
@@ -167,7 +171,7 @@ Innehåller rapporter om vem som besöker er webbplats.
    * USA: Använder dimensionen för [USA](/help/components/dimensions/us-states.md) .
    * US DMA: Använder DMA-dimensionen i [USA](/help/components/dimensions/us-dma.md) .
 * Språk: Använder dimensionen [Språk](/help/components/dimensions/language.md) .
-* Tidszoner: Använder tidszonsdimensionen (indragen i Analysis Workspace). Dimensionsvärden är GMT-förskjutningen för träffen.
+* Tidszoner: Använder tidszonsdimensionen (pensionerad i Analysis Workspace). Dimensionsvärden är GMT-förskjutningen för träffen.
 * Domän: Använder [domändimensionen](/help/components/dimensions/domain.md) .
 * Domän på översta nivån: Använder domändimensionen på den översta nivån (pensionerad i Analysis Workspace). Den grupperar [domändimensionen](/help/components/dimensions/domain.md) i kategorier på högre nivå, vanligtvis efter domänens land.
 * Teknik: Mappen innehåller rapporter om vad besökaren använde för att få åtkomst till din plats.
@@ -180,12 +184,12 @@ Innehåller rapporter om vem som besöker er webbplats.
    * Skärmfärgdjup: Använder [färgdjupsdimensionen](/help/components/dimensions/color-depth.md) .
    * Bildskärmsupplösning: Använder dimensionen [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md) .
    * Java: Använder den [Java-aktiverade](/help/components/dimensions/java-enabled.md) dimensionen.
-   * JavaScript: Använder den JavaScript-aktiverade dimensionen (tas bort i Analysis Workspace). Dimensionsvärdena är &#39;Enabled&#39;, &#39;Disabled&#39; eller &#39;Unknown&#39;, beroende på om JavaScript är aktiverat i webbläsaren.
-   * JavaScript-version: använder JavaScript-versionsdimensionen (tas bort i Analysis Workspace). Dimensionsvärden visar vilken version av JavaScript som webbläsaren använder.
+   * JavaScript: Använder den JavaScript-aktiverade dimensionen (som tagits bort i Analysis Workspace). Dimensionsvärdena är &#39;Enabled&#39;, &#39;Disabled&#39; eller &#39;Unknown&#39;, beroende på om JavaScript är aktiverat i webbläsaren.
+   * JavaScript-version: använder JavaScript-versionsdimensionen (som tagits bort i Analysis Workspace). Dimensionsvärden visar vilken version av JavaScript som webbläsaren använder.
    * Cookies: Använder [Cookie-supportdimensionen](/help/components/dimensions/cookie-support.md) .
    * Anslutningstyper: Använder dimensionen [Anslutningstyp](/help/components/dimensions/connection-type.md) .
    * Mobiloperatör: Använder dimensionen [Mobiloperatör](/help/components/dimensions/mobile-dimensions.md) .
-* Besökarstatus: Använder lägesdimensionen (som tagits bort i Analysis Workspace). Dimensionsvärden härstammar från [`state`](../../implement/vars/page-vars/state.md) variabeln.
+* Besökarstatus: Använder dimensionen State (pensionerad i Analysis Workspace). Dimensionsvärden härstammar från [`state`](../../implement/vars/page-vars/state.md) variabeln.
 * Besökarens postnummer: Använder dimensionen för [postnummer](/help/components/dimensions/zip-code.md) .
 
 ## Anpassad konvertering
@@ -200,7 +204,7 @@ Innehåller rapporter som är specifika för implementeringen. Anpassade trafikr
 
 Innehåller rapporter som omfattar [marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 
-* Översiktsrapport för kanal: En anpassad rapport som är specifik för Rapporter och analyser. Marknadsföringskanaler används som dimensionsvärden, med mätvärden som använder första eller sista beröringsattribuering.
+* Översiktsrapport för kanal: En anpassad rapport som är specifik för Reports &amp; Analytics. Marknadsföringskanaler används som dimensionsvärden, med mätvärden som använder första eller sista beröringsattribuering.
 * Första beröringskanalen: Använder dimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-channel.md) .
 * Första beröringskanaldetalj: Använder detaljdimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-detail.md) .
 * Senaste pekkanal: Använder dimensionen för den [sista beröringskanalen](/help/components/dimensions/last-touch-channel.md) .
@@ -208,14 +212,16 @@ Innehåller rapporter som omfattar [marknadsföringskanaler](/help/components/c-
 
 ## Bokmärken
 
-Innehåller rapporter som du har bokmärkt. Mer information finns i [Bokmärken](bookmarks.md) .
+Innehåller rapporter som du har bokmärkt. See [Bookmarks](bookmarks.md) for more information.
 
 ## Kontrollpaneler
 
-Innehåller paneler som du har skapat. Mer information finns i [Kontrollpaneler](dashboard.md) .
+Innehåller paneler som du har skapat. See [Dashboards](dashboard.md) for more information.
 
-## Mål
+## Målgrupper
 
-Innehåller mål som du har skapat. Mer information finns i [Målgrupper](targets.md) .
+Innehåller mål som du har skapat. See [Targets](targets.md) for more information.
 
-> [!NOTE] Om du inte hittar rapporten på den här hjälpsidan kan det bero på att administratören har ändrat namn på eller ändrat mappar. Se [Menyanpassning](/help/admin/admin/customize-menus.md) i användarhandboken för Admin.
+>[!NOTE]
+>
+>Om du inte hittar rapporten på den här hjälpsidan kan det bero på att administratören har ändrat namn på eller ändrat mappar. Se [Menyanpassning](/help/admin/admin/customize-menus.md) i användarhandboken för Admin.
