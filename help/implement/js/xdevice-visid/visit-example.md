@@ -6,18 +6,23 @@ title: Exempel på identifiering av besökare på olika enheter
 topic: Developer and implementation
 uuid: bc5f8f56-52e3-42d8-af1a-7f5c7b9496c0
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 11%
 
 ---
 
 
 # Exempel på identifiering av besökare på olika enheter
 
->[!IMPORTANT] Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se [Enhetsövergripande analys](/help/components/cda/cda-home.md) i användarhandboken för komponenter.
+>[!IMPORTANT]
+>
+>Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se Analytics [för](/help/components/cda/cda-home.md) olika enheter i användarhandboken för komponenter.
 
 Följande exempel visar hur identifieringen av besökare på olika enheter fungerar med ett exempel på serversamtal som skickas i en gemensam kundinteraktion.
 
-| Serversamtal | Åtgärd | Cookie för besökar-ID | Variabel för besökar-ID | Gällande besökar-ID | Besök sidnummer | Besök nummer |
+| Serversamtal | Åtgärd | Cookie för besökar-ID | Variabel för besökar-ID | Gällande besökar-ID | Besök sidnummer | Besöksnummer |
 |--- |--- |--- |--- |--- |--- |--- |
 | 1 | En besökare klickar på en länk i ett marknadsföringsmejl och besöker er webbplats från hemdatorn. Den här besökaren har besökt din webbplats 7 gånger tidigare. | 1 | - | 1 | 1 | 8 |
 | 2-8 | Besök ytterligare 7 sidor på platsen. | 1 | - | 1 | 2-8 | 8 |
@@ -29,13 +34,13 @@ Följande exempel visar hur identifieringen av besökare på olika enheter funge
 
 ## Besök inventeringen
 
-Analytics räknar med ett besök varje gång de får en träff med ett besökssidnummer som är lika med 1.
+Analytics besöker varje gång en träff visas med ett besökssidnummer som är lika med 1.
 
 I tabellen ovan räknades ett nytt besök fyra gånger: på träffar 1, 9, 11 och 12.
 
 ## Besökarinventering
 
-Analyser räknar varje unikt effektivt besökar-ID som en unik besökare.
+Analytics räknar varje unikt effektivt besökar-ID som en unik besökare.
 
 I tabellen ovan räknades en ny besökare tre gånger: på träffar 1, 9 och 10.
 
