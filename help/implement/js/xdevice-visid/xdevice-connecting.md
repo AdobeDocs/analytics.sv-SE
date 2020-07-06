@@ -6,14 +6,19 @@ title: Koppla samman användare på olika enheter
 topic: Developer and implementation
 uuid: 6243957b-5cc1-49ef-aa94-5b5ec4eac313
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 0%
 
 ---
 
 
 # Koppla samman användare på olika enheter
 
->[!IMPORTANT] Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se [Enhetsövergripande analys](/help/components/cda/cda-home.md) i användarhandboken för komponenter.
+>[!IMPORTANT]
+>
+>Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se Analytics [för](/help/components/cda/cda-home.md) olika enheter i användarhandboken för komponenter.
 
 Identifiering av besökare på olika enheter hjälper er att koppla samman besökare på olika enheter. Identifiering av besökare på olika enheter använder variabeln för att koppla en användare till olika enheter. `visitorID` Variabeln har den högsta prioriteten när det gäller att identifiera unika besökare. `visitorID`
 
@@ -27,5 +32,5 @@ När kunden har loggat in från varje enhet är de alla knutna till samma använ
 
 Genom att använda egna besökar-ID:n får du större kontroll över hur besökare identifieras, men det har sina begränsningar.
 
-* **Avduplicering av besökare är inte retroaktiv**: Om en besökare öppnar er webbplats för första gången autentiseras, räknas två unika besökare. En unik besökare räknas automatiskt för det generiska analys-ID:t och en annan räknas för det anpassade besökar-ID:t när de loggar in. Den här dupliceringen av unika besökare förekommer varje gång en besökare använder en ny enhet eller rensar sina cookies.
-* **Inkompatibelt med Experience Cloud ID-tjänsten**: Sedan vi introducerade besöksidentifiering på olika enheter har Adobe släppt kraftfullare och tillförlitligare sätt att spåra besökare på olika enheter. Dessa nya identifieringsmetoder är inte kompatibla med åsidosättningen av det anpassade besökar-ID:t. Om du tänker använda ID-tjänsten, enhetsövergripande analys (CDA) eller Device co-op rekommenderar Adobe starkt att du inte använder `visitorID` -variabeln.
+* **Avduplicering av besökare är inte retroaktiv**: Om en besökare öppnar er webbplats för första gången autentiseras, räknas två unika besökare. En unik besökare räknar automatiskt med det generiska Analytics ID:t och en annan räknas för det anpassade besökar-ID:t när de loggar in. Den här dupliceringen av unika besökare förekommer varje gång en besökare använder en ny enhet eller rensar sina cookies.
+* **Inkompatibelt med Experience Cloud ID-tjänsten**: Sedan vi introducerade besöksidentifiering på olika enheter har Adobe släppt kraftfullare och tillförlitligare sätt att spåra besökare på olika enheter. Dessa nya identifieringsmetoder är inte kompatibla med åsidosättningen av det anpassade besökar-ID:t. Om du tänker använda ID Service, Cross-device Analytics (CDA) eller Device Co-op rekommenderar Adobe att du inte använder `visitorID` variabeln.
