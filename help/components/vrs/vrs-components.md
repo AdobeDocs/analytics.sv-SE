@@ -3,7 +3,7 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentval för Virtual Report Suites
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 14%
@@ -15,7 +15,9 @@ ht-degree: 14%
 
 Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
 
->[!NOTE] Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [updated curation experience](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate-projects-vrs.html) allows for more fine-grained control over which components are visible.
+>[!NOTE]
+>
+>Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [updated curation experience](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate-projects-vrs.html) allows for more fine-grained control over which components are visible.
 
 Om du vill aktivera komponenturval
 
