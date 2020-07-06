@@ -5,7 +5,10 @@ title: Klassificeringsregler
 topic: Admin tools
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1957'
+ht-degree: 1%
 
 ---
 
@@ -51,11 +54,13 @@ about_classification_rules.xml
 * [När klassificerar regler inte nycklar?](/help/components/c-classifications2/crb/classification-rule-builder.md)
 * [Om regelprioritet](/help/components/c-classifications2/crb/classification-quickstart-rules.md)
 
->[!NOTE] Numeriska 2-klassificeringar [!UICONTROL Rule Builder] stöds inte.
+>[!NOTE]
+>
+>Numeriska 2-klassificeringar [!UICONTROL Rule Builder] stöds inte.
 
 ## Viktig information om regler
 
-* Ange [gruppbehörigheter](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
+* Ange [gruppbehörigheter](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
 
 * **Reguljära uttryck**: Hjälp finns under [Reguljära uttryck i klassificeringsregler](/help/components/c-classifications2/crb/classification-quickstart-rules.md).
 
@@ -105,11 +110,15 @@ regex_classification_rules.xml
 * [Reguljära uttryck - Exempel på&quot;Innehåller inte&quot;](/help/components/c-classifications2/crb/classification-quickstart-rules.md#section_FCA88A612A4E4B099458E3EF7B60B59C)
 * [Reguljära uttryck - referenstabell](/help/components/c-classifications2/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716)
 
->[!NOTE] Det bästa sättet är att använda reguljära uttryck för att spåra koder som använder avgränsare.
+>[!NOTE]
+>
+>Det bästa sättet är att använda reguljära uttryck för att spåra koder som använder avgränsare.
 
 ## Reguljärt uttryck - Exempel på spårningskod {#section_2EF7951398EB4C2F8E52CEFAB4032669}
 
->[!NOTE] Om spårningskoden är URL-kodad kommer den **inte** att klassificeras i regelbyggaren.
+>[!NOTE]
+>
+>Om spårningskoden är URL-kodad kommer den **inte** att klassificeras i regelbyggaren.
 
 I det här exemplet antar du att du vill klassificera följande kampanj-ID:
 
