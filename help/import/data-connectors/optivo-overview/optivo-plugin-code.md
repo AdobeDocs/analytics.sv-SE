@@ -1,16 +1,19 @@
 ---
-description: Om du valde datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Adobe Analytics-koden på dina sidor.
-title: Adobe Analytics-plugin-kod
+description: Om du har valt datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Adobe Analytics-koden på sidorna.
+title: Kod för Adobe Analytics-plugin
 uuid: e99999be-1800-4d63-a4cb-df68a1b53d0d
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 8%
 
 ---
 
 
-# Adobe Analytics-plugin-kod{#adobe-analytics-plug-in-code}
+# Kod för Adobe Analytics-plugin{#adobe-analytics-plug-in-code}
 
-Om du valde datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Adobe Analytics-koden på dina sidor.
+Om du har valt datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Adobe Analytics-koden på sidorna.
 
 ```
 /* 
@@ -50,5 +53,7 @@ s.eVar11="Post Click Product ID"; // e.g. "shoes"
 s.eVar12="Post Click Type of Action"; // e.g. "purchase"; 
 ```
 
->[!NOTE] Plugin-programmet ovan förutsätter att vissa anpassade handelsvariabler (eVars) är tillgängliga. Om variablerna som anges i plugin-programmet ovan inte är tillgängliga i Adobe Analytics-distributionen ersätter du dem med de som är tillgängliga.
+>[!NOTE]
+>
+>Plugin-programmet ovan förutsätter att vissa anpassade handelsvariabler (eVars) är tillgängliga. Om variablerna som anges i plugin-programmet ovan inte är tillgängliga i din Adobe Analytics-distribution ersätter du dem med de som är tillgängliga.
 
