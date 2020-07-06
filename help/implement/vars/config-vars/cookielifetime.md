@@ -2,7 +2,10 @@
 title: cookieLifetime
 description: Åsidosätt förfallodatumet för cookies som skapas i AppMeasurement.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 1%
 
 ---
 
@@ -11,7 +14,9 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Cookies som anges av AppMeasurement har vanligtvis en förfallotid på två år. Använd variabeln för att åsidosätta förfallodatumet för cookies som anges av AppMeasurement. `cookieLifetime`
 
->[!NOTE] Denna variabel påverkar unika besökarantal och attribuering. Var försiktig när du anger den här variabeln.
+>[!NOTE]
+>
+>Denna variabel påverkar unika besökarantal och attribuering. Var försiktig när du anger den här variabeln.
 
 ## Cookie-livstid i Adobe Experience Platform Launch
 
