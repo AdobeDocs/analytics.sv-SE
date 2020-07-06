@@ -2,20 +2,25 @@
 title: getQueryParam
 description: Extrahera värdet för en URL:s frågesträngsparameter.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 1%
 
 ---
 
 
 # Adobe plug-in: getQueryParam
 
->[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med `getQueryParam` plugin-programmet kan du extrahera värdet för alla frågesträngsparametrar som finns i en URL. Det är användbart för att extrahera kampanjkoder, både interna och externa, från URL:er för landningssidor. Det är också värdefullt när du extraherar söktermer eller andra frågesträngsparametrar.
 
 Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha enkla frågesträngsparametrar rekommenderar Adobe att du använder URL-parameterfunktionerna i Launch eller den metod som ingår i AppMeasurement. [`Util.getQueryParam()`](../functions/util-getqueryparam.md)
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
 
 Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
@@ -27,7 +32,7 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Vanliga Analytics-plugin-program
    * Åtgärdstyp: Initiera getQueryParam
 1. Spara och publicera ändringarna i regeln.
 
