@@ -4,7 +4,7 @@ title: Kalenderhändelser
 topic: Reports and analytics
 uuid: 15d4f0c8-b566-43b0-b914-4ea35b7fac7f
 translation-type: tm+mt
-source-git-commit: 739368320e73d3b441151ce7e912fe74d3f8308b
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 98%
@@ -16,7 +16,9 @@ ht-degree: 98%
 
 Steg för att lägga till kalenderhändelser och hantera delade händelser.
 
->[!NOTE] För att rapporteringen ska fungera optimalt kommer de 20 senaste kalenderhändelserna att visas i trenddiagram och diagram över tid.
+>[!NOTE]
+>
+>För att rapporteringen ska fungera optimalt kommer de 20 senaste kalenderhändelserna att visas i trenddiagram och diagram över tid.
 
 För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden. Du skapar en kalenderhändelse genom att namnge händelsen, ange datum, lägga till anteckningar och ställa in en ikon. Om du till exempel använder Social kan du skapa en kalenderhändelse som visar att det fanns en korrelation mellan en ökning av webbplatstrafiken och att en kändis nämnde er produkt på Twitter.
 
