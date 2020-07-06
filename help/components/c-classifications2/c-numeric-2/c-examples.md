@@ -5,7 +5,10 @@ title: Exempel
 topic: Admin tools
 uuid: 0553d07f-87c1-4372-90ce-7118a6393a01
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 29%
 
 ---
 
@@ -167,7 +170,9 @@ Rapport: Produkter
 |---|---|---|
 | Product1 | $10,000.23 | $2500.05 |
 
->[!NOTE] Den här funktionen är till för avancerade användare som vill approximera värden. Den resulterande informationen ska inte behandlas som exakta värden.
+>[!NOTE]
+>
+>Den här funktionen är till för avancerade användare som vill approximera värden. Den resulterande informationen ska inte behandlas som exakta värden.
 
 <!-- 
 
