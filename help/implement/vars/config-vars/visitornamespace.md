@@ -2,18 +2,25 @@
 title: visitorNameSpace
 description: En indragen variabel som fastställde cookie-domän.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 1%
 
 ---
 
 
 # visitorNamespace
 
->[!IMPORTANT] Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) istället.
+>[!IMPORTANT]
+>
+>Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) istället.
 
 I tidigare versioner av Adobe Analytics använde AppMeasurement variabeln för att avgöra vilken underdomän `visitorNameSpace` `2o7.net` besökarens cookies lagras i. Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. I och med introduktionen av variablerna `trackingServer` och [`trackingServerSecure`](trackingserversecure.md) behövs `visitorNameSpace` inte längre.
 
->[!TIP] Adobe rekommenderar att du använder cookies från första part på din webbplats. Den här variabeln används inte för cookies från första part.
+>[!TIP]
+>
+>Adobe rekommenderar att du använder cookies från första part på din webbplats. Den här variabeln används inte för cookies från första part.
 
 ## Namnutrymme för besökare i Adobe Experience Platform Launch
 
@@ -28,7 +35,7 @@ Adobe rekommenderar att du inte använder det här fältet. Använd `trackingSer
 
 ## s.visitorNamespace i AppMeasurement and Launch custom code editor
 
-Variabeln `s.visitorNamespace` är en sträng som innehåller ett unikt värde per organisation. Gamla AppMeasurement-bibliotek inkluderade automatiskt detta unika värde när de laddades ned från tidigare versioner av Adobe Analytics. Aktuella AppMeasurement-bibliotek använder inte den här variabeln om `trackingServer` och `trackingServerSecure` inte har angetts.
+Variabeln `s.visitorNamespace` är en sträng som innehåller ett unikt värde per organisation. Gamla AppMeasurement-bibliotek tillför automatiskt detta unika värde vid nedladdning från tidigare versioner av Adobe Analytics. Aktuella AppMeasurement-bibliotek använder inte den här variabeln om `trackingServer` och `trackingServerSecure` inte har angetts.
 
 Om din organisation fortfarande behöver den här variabeln väljer du ett värde som representerar din organisation. Du kan lagra det här värdet i ett [lösningsdesigndokument](../../prepare/solution-design.md).
 
