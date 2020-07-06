@@ -2,7 +2,10 @@
 title: Dynamiska variabler
 description: Kopiera variabler utan att öka längden på bildbegäran.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 1%
 
 ---
 
@@ -11,23 +14,25 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Med dynamiska variabler kan du kopiera värden från en variabel till en annan utan att öka längden på bildbegäran. De är användbara när du hämtar samma data i flera variabler.
 
-I tidigare versioner av Analytics var längden på bildförfrågningen viktig för att förhindra trunkerade data. Förbättringar av AppMeasurement tillåter mycket längre frågesträngar för bildbegäranden, så dynamiska variabler behövs vanligtvis inte.
+I tidigare versioner av Analytics var längden på bildbegäran viktig för att förhindra trunkerade data. Förbättringar av AppMeasurement tillåter mycket längre frågesträngar för bildbegäranden, så dynamiska variabler behövs vanligtvis inte.
 
 Dynamiska variabler har stöd för frågesträngsparametrar eller HTTP-rubriker i en bildbegäran. Se frågeparametrar [för](../../validate/query-parameters.md) datainsamling för en fullständig lista över tillgängliga parametrar att referera till. Se [Standardfält](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields) för begäran på Wikipedia för en fullständig lista över tillgängliga fält för HTTP-begäran som ska refereras.
 
 När Adobe känner igen ett dynamiskt variabelprefix kopieras automatiskt frågesträngen eller HTTP-rubrikvärdet i rapportsviten. Den här åtgärden utförs före all annan bearbetning, inklusive bearbetningsregler och VISTA-regler.
 
->[!TIP] Tänk på maxgränserna för tecken när du kopierar variabler. Om du till exempel kopierar `eVar1` till `prop1`kan `prop1` det ha ett trunkerat värde eftersom det har en gräns på 100 byte (medan `eVar1` har en gräns på 255 byte).
+>[!TIP]
+>
+>Tänk på maxgränserna för tecken när du kopierar variabler. Om du till exempel kopierar `eVar1` till `prop1`kan `prop1` det ha ett trunkerat värde eftersom det har en gräns på 100 byte (medan `eVar1` har en gräns på 255 byte).
 
 ## Dynamiska variabler i Adobe Experience Platform Launch
 
-Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en sträng. Dimensionsvärden ställs vanligtvis in när Analytics-tillägget (globala variabler) konfigureras eller under regler.
+Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en sträng. Dimensionsvärden anges vanligtvis när Analytics-tillägget (globala variabler) eller under regler konfigureras.
 
 1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] till [!UICONTROL Action Type] [!UICONTROL Set Variables].
+5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på önskat dimensionsvärde.
 
 Placera det dynamiska variabelprefixet i textfältet följt av frågesträngsparametern eller HTTP-huvudet som du vill referera till. Som standard är det dynamiska variabelprefixet `D=`.
@@ -48,4 +53,6 @@ s.eVar1 = "D=User-Agent";
 s.eVar1 = "D=g";
 ```
 
->[!NOTE] Dynamiska variabler visas som strängar vid felsökning av implementeringen. Värdena kopieras på serversidan av Adobes datainsamlingsservrar.
+>[!NOTE]
+>
+>Dynamiska variabler visas som strängar vid felsökning av implementeringen. Värdena kopieras på serversidan av Adobes datainsamlingsservrar.
