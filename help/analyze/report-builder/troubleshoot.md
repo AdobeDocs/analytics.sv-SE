@@ -3,8 +3,11 @@ description: Olika sätt som du kan optimera leveransen av Report Builder och en
 title: Felsökning och bästa praxis för Report Builder
 topic: Report builder
 uuid: 36a08143-dc78-40f5-9ce9-7d16980aa27b
-translation-type: ht
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1341'
+ht-degree: 100%
 
 ---
 
@@ -104,7 +107,9 @@ Tidsgräns för alla schemalagda rapporter träder i kraft efter fyra timmar. Sy
 
 En lista med felmeddelanden som ibland kan visas när du använder Report Builder.
 
->[!NOTE] Detta är bara ett urval av felmeddelanden och inte en fullständig lista. Kontakta administratören om du vill ha mer information om hur du löser fel.
+>[!NOTE]
+>
+>Detta är bara ett urval av felmeddelanden och inte en fullständig lista. Kontakta administratören om du vill ha mer information om hur du löser fel.
 
 **Den här funktionen kan bara användas på en öppen arbetsbok.**
 
