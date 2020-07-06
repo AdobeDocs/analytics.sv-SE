@@ -1,17 +1,22 @@
 ---
-title: Härleda data som påverkas av händelser
+title: Härleda data som påverkats av händelser
 description: Använd beräknade värden för att korrigera trenddata som påverkas av en händelse.
 translation-type: tm+mt
-source-git-commit: 2fceca6ea77a43ea6099df7b9e354ef81a8f3df7
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 4%
 
 ---
 
 
-# Härleda data som påverkas av händelser
+# Härleda data som påverkats av händelser
 
 Om du har data [som påverkas av en händelse](overview.md)kan du använda beräknade värden för att härleda trendvärden under händelseperioden. Om du till exempel har haft en händelse som orsakade en 25-procentig dataminskning kan du använda den som multiplikator i ett beräknat mått.
 
->[!NOTE] De här stegen fungerar bäst när du förstår effekten av en händelse, både från en segmentering och en datumjämförelse. Se till att följa [Jämför datum som påverkas av en händelse med tidigare intervall](compare-dates.md) och [Uteslut specifika datum i analysen](segments.md) innan du följer den här sidan.
+>[!NOTE]
+>
+>De här stegen fungerar bäst när du förstår effekten av en händelse, både från en segmentering och en datumjämförelse. Se till att följa [Jämför datum som påverkas av en händelse med tidigare intervall](compare-dates.md) och [Uteslut specifika datum i analysen](segments.md) innan du följer den här sidan.
 
 1. Skapa två segment för&quot;Påverkade dagar&quot; och&quot;Uteslut påverkade dagar&quot;, enligt beskrivningen under [Uteslut specifika datum i analysen](segments.md).
 2. Navigera till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]**.
