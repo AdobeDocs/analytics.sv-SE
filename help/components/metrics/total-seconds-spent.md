@@ -2,7 +2,7 @@
 title: Totalt antal sekunder som använts
 description: Det sammanlagda antalet sekunder som har ägnats åt dimensionsvärdet.
 translation-type: tm+mt
-source-git-commit: 52e00470df0f0c6bff84b26c1548e64ff5114fb8
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -26,6 +26,8 @@ Det här måttet använder följande steg för att mäta beräkning:
 
 Beständiga variabler, till exempel [eVars](../dimensions/evar.md), räknas mot det totala antalet sekunder som används. Trafikvariabler, till exempel [props](../dimensions/prop.md), inkluderar sekunder som har använts för efterföljande länkspårningsanrop.
 
->[!TIP] Tid som använts mäts inte för den senaste besöksträffen eftersom det inte finns någon efterföljande bildbegäran för att mäta förfluten tid. Detta koncept gäller också besök som består av en enda träff (ett studs).
+>[!TIP]
+>
+>Tid som använts mäts inte för den senaste besöksträffen eftersom det inte finns någon efterföljande bildbegäran för att mäta förfluten tid. Detta koncept gäller också besök som består av en enda träff (ett studs).
 
 Mer allmän information om hur lång tid du tillbringar finns i [Tidsåtgång - översikt](time-spent.md) .
