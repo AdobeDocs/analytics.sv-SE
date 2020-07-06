@@ -3,7 +3,10 @@ description: 'null'
 title: Visa aktuell användning av serversamtal
 uuid: 1a42a45f-4bbc-4b5a-9706-c8937265de2b
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 4%
 
 ---
 
@@ -12,7 +15,9 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Server Call Usage]** > **[!UICONTROL Current Usage]**
 
->[!IMPORTANT] De användnings- och åtagandenummer ni ser ackumuleras för alla era inloggningsföretag och rapporteringsprogram.
+>[!IMPORTANT]
+>
+>De användnings- och åtagandenummer ni ser ackumuleras för alla era inloggningsföretag och rapporteringsprogram.
 
 Kontrollpanelen Aktuell användning
 
