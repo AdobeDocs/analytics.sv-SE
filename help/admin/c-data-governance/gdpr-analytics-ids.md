@@ -2,15 +2,20 @@
 description: 'null'
 title: Bästa praxis för etikettering
 uuid: d1e9bfff-9b04-4e3e-9b4e-a6e527b1b2e3
-translation-type: ht
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '2689'
+ht-degree: 100%
 
 ---
 
 
 # Bästa praxis för etikettering
 
->[!NOTE] Kom ihåg att etikettering måste granskas varje gång en ny rapportsvit skapas eller när en ny variabel aktiveras i en befintlig rapportsvit. Du kan också behöva granska etiketteringen när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En återimplementering av dina mobilappar eller webbplatser kan ändra hur befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketter.
+>[!NOTE]
+>
+>Kom ihåg att etikettering måste granskas varje gång en ny rapportsvit skapas eller när en ny variabel aktiveras i en befintlig rapportsvit. Du kan också behöva granska etiketteringen när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En återimplementering av dina mobilappar eller webbplatser kan ändra hur befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketter.
 
 ## Direkt kontra indirekt identifierbara ID:n {#section_030799AA1397433FBA61A2BC60A7A750}
 
@@ -66,7 +71,9 @@ Använd den här tabellen för att fastställa vilka typer av ID som du kommer a
 
 ## Bästa praxis för att ange borttagningsetiketter {#section_08166C99B48E49218392FAC18922C10E}
 
->[!NOTE] Props är alltid skiftlägeskänsliga. eVars är som standard inte skiftlägeskänsliga, men kan konfigureras via Adobes kundtjänst för att vara skiftlägeskänsliga. Om du har en skiftlägeskänslig eVar som innehåller ett ID är det ditt ansvar att använda rätt skiftläge när du skickar en begäran om datasekretess så att det skiftläge som används i begäran matchar det skiftläge som används i träffar som innehåller dessa ID:n.
+>[!NOTE]
+>
+>Props är alltid skiftlägeskänsliga. eVars är som standard inte skiftlägeskänsliga, men kan konfigureras via Adobes kundtjänst för att vara skiftlägeskänsliga. Om du har en skiftlägeskänslig eVar som innehåller ett ID är det ditt ansvar att använda rätt skiftläge när du skickar en begäran om datasekretess så att det skiftläge som används i begäran matchar det skiftläge som används i träffar som innehåller dessa ID:n.
 
 Borttagningsetiketterna DEL-DEVICE och DEL-PERSON ska användas sparsamt. När det tillämpas på en variabel som inte innehåller ett ID som användes som en del av begäran om datasekretess ändras antalet (metrik) i historiska Analytics-rapporter nästan alltid.
 
