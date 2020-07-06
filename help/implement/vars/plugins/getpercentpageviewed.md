@@ -2,14 +2,19 @@
 title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 0%
 
 ---
 
 
 # Adobe plug-in: getPercentPageViewed
 
->[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Plugin-programmet mäter en besökares rullningsaktivitet för att se hur mycket av en sida de visar innan de går vidare till en annan sida. `getPercentPageViewed` Denna plugin behövs inte om sidorna är små i höjdled eller inte vill mäta rullningsaktiviteten.
 
@@ -26,7 +31,7 @@ Om du inte vill använda plugin-programtillägget kan du använda den anpassade 
 
 ## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -48,7 +53,7 @@ I metoden används följande argument: `getPercentPageViewed`
 * **`pid`** (valfri, sträng):  En sidbaserad identifierare som du kan korrelera med procentsatserna som anges i plugin-programmets mått.  Standardvärdet är `pageName` variabeln.
 * **`ch`** (valfritt, boolesk):  Ange det här till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som görs i sidstorleken efter den första inläsningen. Om det utelämnas används det här argumentet som standard `true`. Adobe rekommenderar att du i de flesta fall utelämnar det här argumentet.
 
-Om metoden anropas returneras ingenting; i stället anges följande variabler:
+Om metoden anropas returneras ingenting. i stället anges följande variabler:
 
 * `s._ppvPreviousPage`: Namnet på föregående sida som visades. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
 * `s._ppvHighestPercentViewed`: Den högsta procentandel av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida.
@@ -112,4 +117,4 @@ if(s._ppvPreviousPage)
 ### v3.0 (13 april 2018)
 
 * Point release (omkompilerad, mindre kodstorlek)
-* Plugin-programmet skapar nu variabler som ska tilldelas Adobe Analytics-variabler i stället för returvärden
+* Plugin-programmet skapar nu variabler som ska tilldelas till Adobe Analytics-variabler i stället för returvärden
