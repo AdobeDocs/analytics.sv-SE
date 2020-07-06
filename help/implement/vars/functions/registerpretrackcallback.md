@@ -2,7 +2,10 @@
 title: registerPreTrackCallback
 description: Skapa callback-funktioner innan du skickar en träff till Adobe.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
@@ -11,13 +14,17 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Variabeln gör att din organisation kan koppla en JavaScript-funktion efter att en URL för bildbegäran har kompilerats, men innan den skickas. `registerPreTrackCallback` Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur.
 
->[!IMPORTANT] Anropa inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti [`registerPostTrackCallback`](registerposttrackcallback.md) variabeln. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
+>[!IMPORTANT]
+>
+>Anropa inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti [`registerPostTrackCallback`](registerposttrackcallback.md) variabeln. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
 
 Varje gång du anropar `registerPreTrackCallback` variabeln kopplar du den funktionen till körning varje gång en URL för bildbegäran kompileras. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
 
->[!NOTE] Tidpunkten och ordningen för funktioner som utlöses mellan `registerPreTrackCallback` och `registerPostTrackCallback` är inte säkerställda. Undvik beroenden mellan dessa två funktioner.
+>[!NOTE]
+>
+>Tidpunkten och ordningen för funktioner som utlöses mellan `registerPreTrackCallback` och `registerPostTrackCallback` är inte säkerställda. Undvik beroenden mellan dessa två funktioner.
 
-## Registrera Pre Track-återanrop i Adobe Experience Platform Launch
+## Registrera återanrop före spår i Adobe Experience Platform Launch
 
 Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
@@ -48,4 +55,6 @@ s.registerPreTrackCallback(function(requestUrl,a,b,c) {
 }, "param1", "param2", "param3");
 ```
 
->[!NOTE] Om du anger sidvariabler eller ändrar `requestUrl` strängen i den här funktionen påverkas **inte** bildbegäran som skickas kort efter det här funktionsanropet. Använd [`doPlugins()`](doplugins.md) variabeln i stället.
+>[!NOTE]
+>
+>Om du anger sidvariabler eller ändrar `requestUrl` strängen i den här funktionen påverkas **inte** bildbegäran som skickas kort efter det här funktionsanropet. Använd [`doPlugins()`](doplugins.md) variabeln i stället.
