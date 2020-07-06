@@ -1,22 +1,27 @@
 ---
-description: Du kan visa och analysera dataavvikelser i sitt sammanhang på arbetsytan för analyser.
+description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
 title: Översikt över avvikelseidentifiering
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 12%
 
 ---
 
 
 # Översikt över avvikelseidentifiering
 
-Du kan visa och analysera dataavvikelser i sitt sammanhang i Analysis Workspace.
+Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace.
 
 [Analysidentifiering på YouTube](https://www.youtube.com/watch?v=krXyQCjXoeU&amp;index=63&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:53)
 
 [Bidragsanalys på YouTube](https://www.youtube.com/watch?v=MbpeJIADtGk&amp;index=64&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (3:20)
 
->[!IMPORTANT] Analysidentifiering har tagits bort från funktionerna Rapporter och analys och är nu bara tillgängligt via Analysis Workspace. Observera att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till&quot;daglig granularitetsidentifiering&quot; i Workspace. Mer information finns i Behörigheter för avvikelseidentifiering och [bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md#section_9278D58F21A840AA9B1ED1BD07A1EF0A).
+>[!IMPORTANT]
+>
+>Analysidentifiering har tagits bort från funktionerna Rapporter och Analytics och är nu endast tillgängligt via Analysis Workspace. Tänk på att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till avvikelseidentifiering på dagsnivå i Workspace. Mer information finns i Behörigheter för avvikelseidentifiering och [bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md#section_9278D58F21A840AA9B1ED1BD07A1EF0A).
 
 Analysidentifiering är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data.
 
@@ -31,9 +36,9 @@ Exempel på avvikelser du kan undersöka är:
 * Inslag i videobufferthändelser
 * Taggar i låga videobithastigheter
 
-Både avvikelseidentifiering och [bidragsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot alla dagliga avvikelser och bädda in resultatet i Analysis Workspace-projektet.
+Both Anomaly Detection and [Contribution Analysis](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) are core workflows in Analysis Workspace. Du kan köra Contribute Analysis mot alla dagliga avvikelser och bädda in resultatet i ditt Analysis Workspace-projekt.
 
-Analysarbetsytans avvikelseavkänningsalgoritm innehåller
+Analysis Workspace, avvikelalidentifieringsalgoritm
 
 * Stöd för kornighet varje timme, vecka och månad utöver den befintliga kornigheten.
 * Kännedom om säsongsvaraktighet (t.ex. &quot;Black Friday&quot;) och semester.
