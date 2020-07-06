@@ -1,35 +1,40 @@
 ---
 description: Du kan anpassa leveransschemat för rapporter. Du kan stoppa leveransen vid en viss tidpunkt eller ange hur många gånger du vill skicka en rapport. Nya scheman använder det datumintervall som definieras i rapporten. Om du till exempel skapar en rapport för de senaste 90 dagarna och schemalägger att den ska köras dagligen, får du en rapport för de senaste 90 dagarna varje dag. Om du skapar en rapport med ett statiskt datumintervall från kalendern visas samma rapport varje gång den skickas.
-title: Schemaläggningshanteraren
+title: Schemaläggningshanterare
 topic: Ad hoc analysis
 uuid: 82a054ef-109d-414d-a6e1-e09ee57c163f
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '962'
+ht-degree: 0%
 
 ---
 
 
-# Schemaläggningshanteraren
+# Schemaläggningshanterare
 
 Du kan anpassa leveransschemat för rapporter. Du kan stoppa leveransen vid en viss tidpunkt eller ange hur många gånger du vill skicka en rapport. Nya scheman använder det datumintervall som definieras i rapporten. Om du till exempel skapar en rapport för de senaste 90 dagarna och schemalägger att den ska köras dagligen, får du en rapport för de senaste 90 dagarna varje dag. Om du skapar en rapport med ett statiskt datumintervall från kalendern visas samma rapport varje gång den skickas.
 
-## Schemaläggningshanteraren {#concept_A1CDE14B72A54DD6AE17B816092CAB8B}
+## Schemaläggningshanterare {#concept_A1CDE14B72A54DD6AE17B816092CAB8B}
 
 Du kan anpassa leveransschemat för rapporter. Du kan stoppa leveransen vid en viss tidpunkt eller ange hur många gånger du vill skicka en rapport. Nya scheman använder det datumintervall som definieras i rapporten. Om du till exempel skapar en rapport för de senaste 90 dagarna och schemalägger att den ska köras dagligen, får du en rapport för de senaste 90 dagarna varje dag. Om du skapar en rapport med ett statiskt datumintervall från kalendern visas samma rapport varje gång den skickas.
 
->[!NOTE] När ett användarkonto är inaktiverat pausas alla schemalagda rapportleveranser som skapas av den användaren.
+>[!NOTE]
+>
+>När ett användarkonto är inaktiverat pausas alla schemalagda rapportleveranser som skapas av den användaren.
 
 Om du vill vara säker på att radobjekt i en uppdelning är beständiga i sparade och schemalagda rapporter använder du **[!UICONTROL Edit Items]** funktionen i [tabellverktyget](/help/analyze/ad-hoc-analysis/c-tablebuilder.md) för att skapa fasta dimensionslistor i uppdelningar.
 
 >[!IMPORTANT]
 >
->Med ad hoc-analys kan ni snabbt definiera och schemalägga rapporter för specifika, aktuella behov av ad hoc-rapportering. Den är inte avsedd för fullständig export av data med ett stort antal rader, kolumner, mätvärden eller omfattande uppdelningar med hjälp av dataextraheringar.
+>Med Ad Hoc Analysis kan ni snabbt definiera och schemalägga rapporter för specifika, aktuella behov av ad hoc-rapportering. Den är inte avsedd för fullständig export av data med ett stort antal rader, kolumner, mätvärden eller omfattande uppdelningar med hjälp av dataextraheringar.
 >
->Praktiska begränsningar för schemalagd rapportering i ad hoc-analyser bygger på denna princip: Om rapporten inte byggs inom tio minuter (tidsgränsen för Ad Hoc-analys) är rapporten troligen för komplex.
+>Praktiska begränsningar för schemalagd rapportering i Ad Hoc Analysis bygger på denna princip: Om rapporten inte byggs inom tio minuter (tidsgränsen för Ad Hoc Analysis) är rapporten troligen för komplex.
 >
->Din rapport har förmodligen för många mätvärden, för många uppdelningar av dimensionselement, för många rader eller kolumner, eller andra extrema element som gör den för lång som en rapportgenereringsprocess för Ad Hoc-analys. Den här typen av rapporter måste köras i datalagret, en Adobe Analytics-funktion som är utformad för fullständig dataextrahering som körs offline med rapportgenerering som kan ta många timmar eller dagar.
+>Din rapport har förmodligen för många mätvärden, för många uppdelningar av dimensionselement, för många rader eller kolumner, eller andra extrema element som gör den för lång för att skapa en rapportgenereringsprocess för Ad Hoc Analysis. Den här typen av rapporter måste köras i Data warehouse, en Adobe Analytics-funktion för fullständig dataextrahering som körs offline med rapportgenerering som kan ta många timmar eller dagar.
 >
->Ad hoc-analys kan till exempel hantera 50 000 rader data, men om data delas upp för tio webbläsartyper betyder det 50 000 gånger 10, en exponentiell ökning som kan vara för komplex för ett ad hoc-rapporteringsverktyg. Ytterligare uppdelningar ökar raderna exponentiellt. Det går inte att definiera det faktiska antalet rader, kolumner och uppdelningar som ska begränsas för Ad hoc-analysrapporter i tydliga termer, men det är en kombination av alla dessa faktorer.
+>Ad Hoc Analysis kan till exempel hantera 50 000 rader data, men om data delas upp för tio webbläsartyper betyder det 50 000 gånger 10, en exponentiell ökning som kan vara för komplex för ett ad hoc-rapporteringsverktyg. Ytterligare uppdelningar ökar raderna exponentiellt. Det går inte att definiera det faktiska antalet rader, kolumner och uppdelningar som ska begränsas för Ad hoc analysis-rapportering i tydliga termer, men det är en kombination av alla dessa faktorer.
 
 ## Schemalägg en leveransrapport {#task_7A3165C8C5C349718FE3B2B0C727ACFD}
 
