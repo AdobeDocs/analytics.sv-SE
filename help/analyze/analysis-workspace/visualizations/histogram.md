@@ -3,7 +3,7 @@ description: Ett histogram är en ny visualiseringstyp i Analysis Workspace.
 title: Histogram
 uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
 translation-type: tm+mt
-source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Histogram
 
-Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Analytics automatiserar&quot;paketeringen&quot; av tal i intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
+Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Analytics automatiserar numreringen i intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
 
 ## Skapa ett histogram {#section_74647707CC984A1CB6D3097F43A30B45}
 
@@ -25,7 +25,9 @@ Så här skapar du ett histogram:
 
 ![](assets/histogram.png)
 
->[!NOTE] Histogram stöder endast standardvärden, inte beräknade värden.
+>[!NOTE]
+>
+>Histogram stöder endast standardvärden, inte beräknade värden.
 
 Här har vi använt måtten för sidvisningar per unika besökare. Den första (vänster) markeringen motsvarar en sidvy per unik besökare, den andra markeringen motsvarar två sidvisningar osv.
 
