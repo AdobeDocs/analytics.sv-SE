@@ -1,19 +1,24 @@
 ---
 title: manageVars
-description: Ändra värdena för mer än en Analytics-variabel åt gången.
+description: Ändra värdena för fler än en Analytics-variabel åt gången.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 0%
 
 ---
 
 
 # Adobe plug-in: manageVars
 
->[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med `manageVars` plugin-programmet kan du ändra värdena för flera Analytics-variabler samtidigt. Du kan också ange värden som gemener eller ta bort onödiga tecken från flera variabelvärden samtidigt. Adobe rekommenderar att du använder denna plugin om du vill rensa upp värdet för flera variabler samtidigt.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
 
 Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
@@ -25,7 +30,7 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Vanliga Analytics-plugin-program
    * Åtgärdstyp: Initiera manageVars
 1. Spara och publicera ändringarna i regeln.
 
@@ -42,7 +47,7 @@ Om du inte vill använda plugin-programtillägget kan du använda den anpassade 
 
 ## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -68,7 +73,7 @@ s.pt=function(l,de,cf,fa){if(l&&this[cf]){l=l.split(de||",");de=l.length;for(var
 I metoden används följande argument: `manageVars`
 
 * **`cb`** (required, string): Namnet på en callback-funktion som plugin-programmet använder för att ändra Analytics-variablerna. Du kan använda en Adobe-funktion som `cleanStr` eller en egen, anpassad funktion.
-* **`l`** (valfri, sträng): En kommaavgränsad lista med Analytics-variabler som du vill ändra. Standardvärdet är ALLA Adobe Analytics-variabler när de inte anges, vilket inkluderar:
+* **`l`** (valfri, sträng): En kommaavgränsad lista med Analytics-variabler som du vill ändra. Standardvärdet är ALLA Adobe Analytics-variabler när de inte är inställda, vilket inkluderar:
    * `pageName`
    * `purchaseID`
    * `channel`
