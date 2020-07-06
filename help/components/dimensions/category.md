@@ -2,10 +2,10 @@
 title: Kategori
 description: Produktkategorin för träffen.
 translation-type: tm+mt
-source-git-commit: bddfc52d460e87a70e7cff149f197570f405037a
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '155'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,4 +22,6 @@ Den här dimensionen refererar till den första delen av strängen i [`products`
 
 Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vilka dimensionsvärden som är. Adobe rekommenderar att du grupperar enskilda produkter i meningsfulla kategorier, både med dimensionerna &quot;Produkt&quot; och &quot;Kategori&quot;.
 
-> [!TIP] I tidigare versioner av Adobe Analytics infördes vissa begränsningar för dimensionen&quot;Kategori&quot; på grund av dess bearbetningsarkitektur. Dessa begränsningar har sedan dess tagits bort så att du kan använda alla mätvärden och eventuella fel.
+>[!TIP]
+>
+>I tidigare versioner av Adobe Analytics fanns det vissa begränsningar för dimensionen &quot;Kategori&quot; på grund av dess bearbetningsarkitektur. Dessa begränsningar har sedan dess tagits bort så att du kan använda alla mätvärden och eventuella fel.
