@@ -5,17 +5,19 @@ title: Fullständig bearbetning
 topic: Developer and implementation
 uuid: 590ae89c-6e17-453b-b701-ce1adbea6fa4
 translation-type: tm+mt
-source-git-commit: 374202983d4d75f785eb7062b88fd5fded2cbb7b
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 
 # Fullständig bearbetning
 
->[!NOTE] Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Fullständig bearbetning av datakällor kommer att bli inaktuell i framtiden.
+>[!NOTE]
+>
+>Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Fullständig bearbetning av datakällor kommer att bli inaktuell i framtiden.
 
 Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
 
@@ -140,8 +142,8 @@ En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen
    <td colname="col3"> <p>Serversträng. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>läge </p> </td> 
-   <td colname="col2"> <p>läge </p> </td> 
+   <td colname="col1"> <p>tillstånd </p> </td> 
+   <td colname="col2"> <p>tillstånd </p> </td> 
    <td colname="col3"> <p>Conversion state string. </p> </td> 
   </tr> 
   <tr> 
@@ -235,7 +237,7 @@ Följande tabell innehåller trafikvariabler som fylls i automatiskt när JavaSc
    <td colname="col2"> <p>Egenskapsvärden för dina egenskaper. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>hänvisare </p> </td> 
+   <td colname="col1"> <p>referent </p> </td> 
    <td colname="col2"> <p>URL för sidreferenten. </p> </td> 
   </tr> 
   <tr> 
