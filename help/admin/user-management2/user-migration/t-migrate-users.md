@@ -1,22 +1,27 @@
 ---
-description: Migrera användare från det äldre användarhanteringssystemet för Analytics till Admin Console.
+description: Migrera användare från Analytics äldre användarhanteringssystem till Admin Console.
 title: Migrera Analytics-användarkonton för Adobe ID:n
 uuid: 734e9f14-ef8d-44de-8ff3-3ee6dfe0a214
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 6%
 
 ---
 
 
 # Migrera Analytics-användarkonton för Adobe ID:n{#migrate-analytics-user-accounts-for-adobe-ids}
 
-Migrera användare från det äldre användarhanteringssystemet för Analytics till Admin Console.
+Migrera användare från Analytics äldre användarhanteringssystem till Admin Console.
 
 ## Migrera Analytics-användarkonton för Adobe ID:n {#task-f3355f3b14a340feae58cfa04c0ba1c9}
 
-Migrera användare från det äldre användarhanteringssystemet för Analytics till Admin Console.
+Migrera användare från Analytics äldre användarhanteringssystem till Admin Console.
 
->[!NOTE] Om en administratör som inte är inloggad via Experience Cloud försöker få åtkomst till migreringsverktyget för användar-ID dirigeras de om till inloggningssidan för Experience Cloud.
+>[!NOTE]
+>
+>Om en administratör som inte är inloggad via Experience Cloud försöker få åtkomst till migreringsverktyget för användar-ID dirigeras de om till inloggningssidan för Experience Cloud.
 
 **Migrera Analytics-användare**
 
@@ -42,7 +47,7 @@ Migrera användare från det äldre användarhanteringssystemet för Analytics t
    </tr> 
    <tr> 
       <td colname="col1"> <p>Äldre inloggning inaktiverad </p> </td> 
-      <td colname="col2"> <p>Äldre inloggning med ett företags-ID är inaktiverad. Användare kommer nu att få tillgång till Experience Cloud med sitt Adobe ID eller Enterprise ID. När alla användare har nått den här fasen har migreringen slutförts. </p> <p>I migreringen är den gamla inloggningen inaktiverad. Användare omdirigeras till <span class="filepath"> experience.adobe.com</span> och måste logga in med Adobe ID:t eller Enterprise ID:t. </p> </td> 
+      <td colname="col2"> <p>Äldre inloggning med ett företags-ID är inaktiverad. Användare kommer nu åt Experience Cloud via Adobe ID eller Enterprise ID. När alla användare har nått den här fasen har migreringen slutförts. </p> <p>I migreringen är den gamla inloggningen inaktiverad. Användare omdirigeras till <span class="filepath"> experience.adobe.com</span> och måste logga in med Adobe ID eller Enterprise ID. </p> </td> 
    </tr> 
    </tbody> 
    </table>
