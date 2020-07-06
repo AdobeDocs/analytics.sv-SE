@@ -2,8 +2,11 @@
 description: 'null'
 title: Skicka in begäran om åtkomst och borttagning
 uuid: d006cd5c-e3cd-4385-8683-acaf73cb681b
-translation-type: ht
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1302'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,9 @@ Varje fil kombinerar data från alla rapportsviter och tar automatiskt bort extr
 
 Du kan skicka in begäranden om datasekretess och ta bort dem via vår [användargränssnittsportal för datasekretess](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) eller via vårt [API för dataskydd.](https://www.adobe.io/apis/experienceplatform/gdpr.html)
 
->[!NOTE] API:t för datasekretess stöder batchinlämning för flera användare i en och samma begäran. Den nuvarande gränsen är 1 000 separata användare (kan ha flera ID:n per användare) i en enda JSON-fil för begäran.
+>[!NOTE]
+>
+>API:t för datasekretess stöder batchinlämning för flera användare i en och samma begäran. Den nuvarande gränsen är 1 000 separata användare (kan ha flera ID:n per användare) i en enda JSON-fil för begäran.
 
 ## Exempel på JSON-begäran {#sample-json-request}
 
