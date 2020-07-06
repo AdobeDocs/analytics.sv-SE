@@ -2,10 +2,10 @@
 title: Sidans URL
 description: Sidans URL.
 translation-type: tm+mt
-source-git-commit: 0328de560185e716a3913080feda9cd078e0f206
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,9 @@ ht-degree: 0%
 
 Dimensionen &quot;Sidadress&quot; visar URL:erna på din webbplats.
 
->[!IMPORTANT] Den här dimensionen är bara tillgänglig i datalagret. Om du vill använda en URL-dimension i andra Analytics-lösningar använder du en [eVar](evar.md).
+>[!IMPORTANT]
+>
+>Den här dimensionen är bara tillgänglig i Data warehouse. Om du vill använda en URL-dimension i andra Analytics-lösningar använder du en [eVar](evar.md).
 
 ## Fyll den här dimensionen med data
 
@@ -24,7 +26,7 @@ Den här dimensionen hämtar data från [`g` frågesträngen](/help/implement/va
 
 Adobe rekommenderar att du anger en eVar för den sammanfogade strängen `window.location.hostname + window.location.pathname`. Strängen fungerar vanligtvis bättre än `window.location.href` eftersom den inte innehåller protokoll, frågesträngar och ankartaggar.
 
-Om du vill att eVar ska matcha sidans URL-dimension exakt i datalagret, kan du använda [dynamiska variabler](/help/implement/vars/page-vars/dynamic-variables.md) och ange eVar till `D=g` för varje träff. Observera att den här metoden inte fungerar för anpassade länkträffar eftersom sidans URL rensas för alla [`tl()`](/help/implement/vars/functions/tl-method.md) anrop.
+Om du vill att eVar ska matcha sidans URL-mått exakt i Data warehouse kan du använda [dynamiska variabler](/help/implement/vars/page-vars/dynamic-variables.md) och ställa in eVar på `D=g` varje träff. Observera att den här metoden inte fungerar för anpassade länkträffar eftersom sidans URL rensas för alla [`tl()`](/help/implement/vars/functions/tl-method.md) anrop.
 
 ## Dimensionsvärden
 
