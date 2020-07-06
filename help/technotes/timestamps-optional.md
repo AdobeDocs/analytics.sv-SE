@@ -5,7 +5,10 @@ title: Användning av tidsstämplar som tillval
 topic: Developer and implementation
 uuid: 956aaa16-6ffa-4b63-b022-a659f5143e00
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,9 @@ Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 * Skicka tidsstämplade data från en mobilapp till en global rapportserie.
 * Uppgradera appar för att använda tidsstämplar utan att behöva skapa en ny rapportserie.
 
->[!NOTE] Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
+>[!NOTE]
+>
+>Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
 
 Se [Tidsstämplar Valfritt](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html) om du vill ha mer installationsinformation.
 
@@ -52,7 +57,9 @@ Tidsstämplar Valfritt gör att du kan integrera och rapportera i flera rapports
 
 Att kombinera data i en global rapportserie kan göras på flera sätt, inklusive märkning med flera programsviter, Vista-regler och importerade batchfiler från offlinekällor.
 
->[!IMPORTANT] Planera noggrant designen för varje komponentdatauppsättning så att kombinationen passar i en global rapportserie.
+>[!IMPORTANT]
+>
+>Planera noggrant designen för varje komponentdatauppsättning så att kombinationen passar i en global rapportserie.
 
 ## Bästa tillvägagångssätt vid användning av tidsstämplar {#section_9436394E5D7E4F8A8B369B6D11BB2B2B}
 
