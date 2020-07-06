@@ -2,20 +2,27 @@
 title: addProductEvar
 description: Lägger till eVars för försäljning i variabeln products.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 1%
 
 ---
 
 
 # Adobe plug-in: addProductEvar
 
->[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med `addProductEvar` plugin-programmet kan du enkelt lägga till en Adobe Analytics-försäljningsvariabel som använder produktsyntax i variabeln products utan att behöva bekymra dig om det redan befintliga innehållet i variabeln products ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntax för varuexponering för eVars i [`products`](../page-vars/products.md) -variabeln. Du behöver inte använda plugin-programmet om du inte använder eVars för försäljning med produktsyntax. `addProductEvar`
+Med `addProductEvar` plugin-programmet kan du enkelt lägga till en Adobe Analytics-försäljningsvariabel som använder produktsyntax i variabeln utan att behöva oroa dig för om det redan befintliga innehållet i variabeln ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntax för varuexponering för eVars i [`products`](../page-vars/products.md) -variabeln. Du behöver inte använda plugin-programmet om du inte använder eVars för försäljning med produktsyntax. `addProductEvar`
 
->[!NOTE] Denna plugin ersätter inte eVars som redan finns i en produktpost. Det lägger bara till värden som du anger med det här plugin-programmet. Var försiktig när du lägger till eVars som redan finns för den produkten.
+>[!NOTE]
+>
+>Denna plugin ersätter inte eVars som redan finns i en produktpost. Det lägger bara till värden som du anger med det här plugin-programmet. Var försiktig när du lägger till eVars som redan finns för den produkten.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
 
 Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
@@ -27,7 +34,7 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Vanliga Analytics-plugin-program
    * Åtgärdstyp: Initiera addProductEvar
 1. Spara och publicera ändringarna i regeln.
 
@@ -44,7 +51,7 @@ Om du inte vill använda plugin-programtillägget kan du använda den anpassade 
 
 ## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
