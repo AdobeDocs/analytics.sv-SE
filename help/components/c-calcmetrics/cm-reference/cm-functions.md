@@ -3,7 +3,10 @@ description: Med beräkningsverktyget kan du använda statistiska och matematisk
 title: Referensfunktioner
 uuid: 5c2b4a0e-613c-4b27-95b8-01d480aeab78
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1056'
+ht-degree: 2%
 
 ---
 
@@ -14,7 +17,9 @@ Med beräkningsverktyget kan du använda statistiska och matematiska funktioner 
 
 Här är en lista i alfabetisk ordning över funktionerna och deras definitioner.
 
->[!NOTE] Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck av mätvärden. Till exempel [!DNL MAXV(metrics)] tillåter även [!DNL MAXV(PageViews + Visits).]
+>[!NOTE]
+>
+>Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck av mätvärden. Till exempel [!DNL MAXV(metrics)] tillåter även [!DNL MAXV(PageViews + Visits).]
 
 ## Tabellfunktioner kontra radfunktioner {#section_8977BE40A47E4ED79EB543A9703A4905}
 
@@ -274,7 +279,7 @@ STDEV(metric)
    <td> <b> Beskrivning</b> </td> 
   </tr> 
   <tr> 
-   <td> <b> <i> mått</i></b> </td> 
+   <td> <b> <i> mått</i> </b> </td> 
    <td> <p> Det mått som du vill använda för standardavvikelsen. </p> </td> 
   </tr> 
  </tbody> 
@@ -316,7 +321,7 @@ Anta att du har en kolumn med tre objekt:
 
 3
 
-Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. I Ad hoc-analys ser detta ut så här:
+Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. I Ad Hoc Analysis kommer detta att se ut så här:
 
 1 2/3
 
