@@ -4,7 +4,10 @@ title: Anropa Report Builder-funktioner från Microsoft Excel-funktioner
 topic: Report builder
 uuid: 5342cc4f-085d-4a2d-a498-38b00a3ef4d3
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +18,9 @@ Den här funktionen integrerar Report Builder-användningen ytterligare i det na
 
 Du kanske vill uppdatera Report Builder-begäranden automatiskt, vars indatafilter baseras på data som hämtats i Excel från andra källor. Nu kan du göra detta med strängen RefreshRequestsInCellsRange(..) funktion. Alla anrop är asynkrona. De returnerar omedelbart och väntar inte på att ett anrop ska köras helt.
 
->[!NOTE] Du måste ha Report Builder 5.0 (eller senare) installerat för att den här funktionen ska fungera.
+>[!NOTE]
+>
+>Du måste ha Report Builder 5.0 (eller senare) installerat för att den här funktionen ska fungera.
 
 Här följer en tabell med en lista över funktioner som visas:
 
