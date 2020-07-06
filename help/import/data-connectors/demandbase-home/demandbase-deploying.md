@@ -3,7 +3,10 @@ description: Distribuering av den här integreringen är en enkel process som kr
 title: Distribuera integreringen
 uuid: 9c116ca8-4dbf-44eb-a832-574527ee88b7
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1304'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +50,7 @@ Om du vill aktivera integreringen måste du slutföra konfigurationsguiden i gr�
   </tr> 
   <tr> 
    <td colname="col1"> Skicka till Adobe Target </td> 
-   <td colname="col2">Om värdet är "true" skickas Demandbase-dimensionerna också till Adobe Target med en dold mbox. <p>Obs!  En konfigurerad mbox.js-fil måste implementeras på webbsidan för att dimensionerna ska samlas in. </p> </td> 
+   <td colname="col2">Om värdet är "true" skickas också Demandbase-dimensionerna till Adobe Target med en dold mbox. <p>Obs!  En konfigurerad mbox.js-fil måste implementeras på webbsidan för att dimensionerna ska samlas in. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -71,7 +74,9 @@ Om du vill aktivera integreringen måste du slutföra konfigurationsguiden i gr�
 
 När du har slutfört integreringsguiden måste du distribuera integreringskoden till din Adobe Analytics-distributionskod (s_code).
 
->[!NOTE] Om du använde Adobe TagManager eller Dynamic Tag Management för att distribuera Adobe Analytics kan du enkelt lägga till integreringskoden med något av dessa verktyg.
+>[!NOTE]
+>
+>Om du använde Adobe TagManager eller Dynamic Tag Management för att distribuera Adobe Analytics kan du enkelt lägga till integreringskoden med något av dessa verktyg.
 
 1. Gå till **[!UICONTROL Support]** fliken och hämta och spara `integration code v2_0_1` resursen från resursområdet i integreringen.
 
@@ -80,7 +85,7 @@ När du har slutfört integreringsguiden måste du distribuera integreringskoden
 1. Distribuera koden på något av följande sätt:
 
    * Lägg till koden med Adobe TagManager eller Dynamic Tag Management.
-   * Eller leverera koden till den organisationsresurs som ansvarar för att uppdatera din Adobe Analytics-distributionskod.
+   * Du kan också leverera koden till den organisationsresurs som ansvarar för att uppdatera din driftsättningskod för Adobe Analytics.
 
 >[!IMPORTANT]
 >
@@ -102,7 +107,7 @@ Om du behöver göra justeringar beskrivs dock några av kodinställningarna ned
  <tbody> 
   <tr> 
    <td colname="col1"> s.maxDelay </td> 
-   <td colname="col2">Maximalt antal millisekunder som Adobe Analytics-bildbegäran ska vänta på Demandbase-data innan den skickas till analyssamlingsservern. <p>Obs!  Den här inställningen gäller för alla integreringar som kan köras via Integrate-modulen. </p> </td> 
+   <td colname="col2">Maximalt antal millisekunder som Adobe Analytics-bildbegäran väntar på Demandbase-data innan den skickas till Analytics samlingsserver. <p>Obs!  Den här inställningen gäller för alla integreringar som kan köras via Integrate-modulen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> db.tangent </td> 
@@ -149,7 +154,7 @@ Om du behöver göra justeringar beskrivs dock några av kodinställningarna ned
 
 ## Inkludera integreringsmodulen{#including-the-integrate-module}
 
-Integrationskoden kräver att Integrate Module finns i Adobe Analytics-distributionen.
+Integrationskoden kräver att Integrate Module finns i din Adobe Analytics-distribution.
 
 Om du inte redan har Integrate Module som en del av distributionen utför du följande steg beroende på vilken typ av implementering du har.
 
@@ -182,24 +187,26 @@ Verifiera att integreringen kan hämta in data genom att kontrollera live-spårn
 
 ### Direktuppföljning {#section-9c20e8ff6b404ae09387ee07d675c9e2}
 
-Använd felsökningsverktyget DigitalPulse för att verifiera att Demandbase-dimensionsdata skickas vidare till Adobe Analytics. När du har tagit bort dina cookies läser du in en sida på webbplatsen där integreringskoden har distribuerats igen. Om du utgår ifrån att din nuvarande IP-adress mappar till en organisation som har identifierats av Demandbase bör du se resultat som liknar följande:
+Använd felsökningsverktyget DigitalPulse för att verifiera att Demandbase-dimensionsdata skickas till Adobe Analytics. När du har tagit bort dina cookies läser du in en sida på webbplatsen där integreringskoden har distribuerats igen. Om du utgår ifrån att din nuvarande IP-adress mappar till en organisation som har identifierats av Demandbase bör du se resultat som liknar följande:
 
-**Rapporter och analyser (tidigare SiteCatalyst) innehåller de två kontextdatavariablerna för Demandbase:**
+**Rapporter och Analytics (tidigare SiteCatalyst) innehåller två kontextdatavariabler för Demandbase:**
 
 ![](assets/debugger1.png)
 
-**Target Mbox innehåller parametrarna för Demandbase-profilen:**
-Det här visas bara om du har Target implementerat på sidan OCH du har den här integreringen konfigurerad för Adobe Target - se steg 4 i Adobes integreringsguide.
+**Target Mbox innehåller profilparametrarna för Demandbase:**
+Det här visas bara om du har implementerat Target på sidan OCH du har konfigurerat integreringen för Adobe Target - se steg 4 i Adobes integreringsguide.
 
 ![](assets/debugger2.png)
 
 ### Rapportering {#section-1792fe75dc3249d0ad063dfd87a89162}
 
-Granska dina Demandbase-rapporter i Adobe Analytics med den Dashboard som automatiskt skapades för dig med hjälp av Adobe Integration Wizard (steg 7).
+Granska dina Demandbase-rapporter i Adobe Analytics med den Dashboard som automatiskt skapades åt dig med hjälp av Adobe Integration Wizard (steg 7).
 
-Du kan också navigera till Demandbase-rapporten i Adobe Analytics-menystrukturen - se skärmbilderna nedan.
+Du kan också navigera till Demandbase-rapporten i menystrukturen för Adobe Analytics - se skärmbilderna nedan.
 
->[!NOTE] Dessa data ska visas inom 24-48 timmar efter att distributionen lyckades.
+>[!NOTE]
+>
+>Dessa data ska visas inom 24-48 timmar efter att distributionen lyckades.
 
 ![](assets/reporting1.png)
 
