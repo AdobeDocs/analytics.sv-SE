@@ -1,18 +1,18 @@
 ---
-description: Alla segment som skapas i segmentbyggaren är inte kompatibla med datalagret. I den här tabellen visas de funktioner som stöds.
-title: Datalagersegmentkompatibilitet
+description: Alla segment som skapas i segmentbyggaren är inte kompatibla med Data warehouse. I den här tabellen visas de funktioner som stöds.
+title: Segmentkompatibilitet för Data Warehouse
 topic: Segments
 uuid: 370258c5-8614-4434-871c-41753ed77f5c
 translation-type: tm+mt
-source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+source-git-commit: fb0833530a9ec67f01226b986d124ab1e441d7e4
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 1%
+source-wordcount: '349'
+ht-degree: 6%
 
 ---
 
 
-# Datalagersegmentkompatibilitet
+# Segmentkompatibilitet för Data Warehouse
 
 Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data Warehouse]. I den här tabellen visas de funktioner som stöds.
 
@@ -20,7 +20,7 @@ Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data War
  <thead> 
   <tr> 
    <th> </th> 
-   <th> Analysis Workspace, Reports &amp; Analytics, Ad hoc Analysis </th> 
+   <th> Analysis Workspace, rapporter och Analytics, Ad Hoc Analysis </th> 
    <th> Data Warehouse </th> 
   </tr> 
  </thead>
@@ -47,20 +47,20 @@ Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data War
   </tr> 
   <tr> 
    <td> <b>Dimensioner</b> </td> 
-   <td>Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> definitionsfält</span> för att ta reda på om den är kompatibel med produkten. De här dimensionerna stöds till exempel bara i Analysis Workspace, Reports &amp; Analytics och Ad Hoc Analysis: 
+   <td>Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> definitionsfält</span> för att ta reda på om den är kompatibel med produkten. De här måtten stöds till exempel bara i Analysis Workspace, rapporter och Analytics och Ad Hoc Analysis: 
     <ul> 
      <li>Startserver </li> 
      <li>Postkategori </li> 
      <li>Anmälningsdatum </li> 
      <li>Alla söksidrankning </li> 
     </ul> </td> 
-   <td> Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> definitionsfält</span> för att ta reda på om den är kompatibel med produkten. De här dimensionerna stöds till exempel bara i datalagret: 
+   <td> Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> definitionsfält</span> för att ta reda på om den är kompatibel med produkten. De här måtten stöds till exempel bara i Data warehouse: 
     <ul> 
      <li>IP-adress </li> 
      <li>Sidans URL </li> 
      <li>Besökar-ID </li> 
-     <li>Experience Cloud-besökar-ID </li> 
-    </ul> <p>Följande dimensioner <b>kan inte </b>användas i datalagersegment: </p> 
+     <li>Experience Cloud Visitor-ID </li> 
+    </ul> <p>Följande dimensioner <b>kan inte </b>användas i Data warehouse-segment: </p> 
     <ul> 
      <li>Alla söksidrankning </li> 
      <li>AM/PM </li> 
@@ -78,7 +78,7 @@ Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data War
      <li>Sidorna hittades inte </li> 
      <li>Betalsökning </li> 
      <li>Kvartal på året </li> 
-     <li>Returfrekvens </li> 
+     <li>Återbesöksfrekvens </li> 
      <li>Besök på en sida </li> 
      <li>Tid före händelse </li> 
      <li>Tid som använts på sidan - paketerad </li> 
@@ -91,7 +91,7 @@ Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data War
   <tr> 
    <td> <b>Segmentstapling</b> </td> 
    <td> Stöds </td> 
-   <td> Stöds inte </td> 
+   <td> Stöds </td> 
   </tr>
   <tr>
     <td><b>'Är lika med någon av'- och 'Är inte lika med någon av'-operatorer</b></td>
@@ -101,4 +101,4 @@ Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data War
  </tbody> 
 </table>
 
-*Obs! Datalagret stöder inte alla fall där en`exclusion`eller`without`en behållare används vid användning`AND/OR`. När du använder en sådan kombination stöds endast de segment som kan skrivas om som`A AND NOT B`(eller **inkludera den här egenskapen**och ****exkludera den) i datalagret.*
+*Obs! Data warehouse stöder inte alla fall där en`exclusion`eller`without`en behållare används`AND/OR`. När du använder en sådan kombination stöds endast de segment som kan skrivas om som`A AND NOT B`(eller **inkludera den här egenskapen**och ****exkludera den) i Data warehouse.*
