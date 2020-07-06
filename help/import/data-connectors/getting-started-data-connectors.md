@@ -1,15 +1,18 @@
 ---
 description: Importera spårningsdata från tredjepartsprogram till Analytics.
-title: Komma igång med Analytics-dataanslutningar
+title: Komma igång med Analytics dataanslutningar
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 0%
 
 ---
 
 
 # Översikt över dataanslutningar
 
-Adobe förser organisationer med användbar realtidsinformation om deras digitala strategier och marknadsföringsinitiativ. Med dataanslutningar kan ni importera spårningsdata från tredjepartsprogram till Analytics, så att ni kan samla in och använda data från en central plats. Om du använder någon av partnerprodukterna kan du skapa en integrering som importerar programdata till marknadsföringsrapporter. När de är integrerade kan du generera rapporter som innehåller data från programmet.
+Adobe förser organisationer med användbar realtidsinformation om deras digitala strategier och marknadsföringsinitiativ. Med dataanslutningar kan du importera spårningsdata från tredjepartsprogram till Analytics, så att du kan samla in och använda data från en central plats. Om du använder någon av partnerprodukterna kan du skapa en integrering som importerar programdata till marknadsföringsrapporter. När de är integrerade kan du generera rapporter som innehåller data från programmet.
 
 En e-postintegrering kan till exempel vilja använda en e-postpartner för att distribuera en e-postkampanj. När besökarna kommer till er webbplats vill ni veta vilka som kom som svar på er e-postkampanj. Dataanslutarna integrerar data från er e-postpartner i marknadsföringsrapporter, så att ni kan fastställa den här informationen för att mäta effektiviteten i er e-postkampanj.
 
@@ -34,7 +37,7 @@ Innan du konfigurerar en dataanslutningsintegration för din produkt gör du fö
 * Ha de nödvändiga inloggningsuppgifterna för partnerproduktkontot, med rätt att få tillgång till alla data som du vill integrera med marknadsföringsrapporter. Du kanske vill skapa ett särskilt e-postkonto för rapportdistributörer och för meddelanden om de integrerade åtgärderna.
 * Identifiera anpassade variabler som innehåller kampanjinformationen. Detta kallas vanligtvis kampanjspårningskod, men din organisation kan använda någon annan terminologi.
 * Bestäm vilka händelser du vill ska ta emot visningar och klicka på data. Du kanske vill byta namn på händelserna i enlighet med detta.
-* Placera lämplig kod på landningssidan så att Analytics kan göra lämplig modellering med data som kommer från partnerprodukten. Specifika instruktioner för respektive partnerprodukt finns i avsnittet i Data Connectors Showcase på fliken Resources.
+* Placera lämplig kod på landningssidan så att Analytics kan göra lämplig modellering med data från partnerprodukten. Specifika instruktioner för respektive partnerprodukt finns i avsnittet i Data Connectors Showcase på fliken Resources.
 
 ## Lägg till en integrering
 
@@ -59,7 +62,7 @@ När du har aktiverat en integrering visas den på [!UICONTROL Data Connectors] 
 
 Remarketing-segment är datafiler som skapas baserat på de variabler som används i en dataanslutningsintegrering.
 
-Adobe Analytics skickar dessa i separata dagliga filer via datalagret till en FTP som skapats av Adobe för tredje part. Den tredje parten distribuerar sedan dessa filer till klienten. Företagen använder ofta dessa för att marknadsföra sig mot dem som besökt webbplatsen och tittade på en produkt, men som inte köpte den. (Du kan till exempel kontakta en kund som erbjuder en rabatt på en produkt som de har tittat på, men som inte köpt den).
+Adobe Analytics skickar dessa som separata filer via data warehouse till en FTP som skapats av Adobe för tredje part. Den tredje parten distribuerar sedan dessa filer till klienten. Företagen använder ofta dessa för att marknadsföra sig mot dem som besökt webbplatsen och tittade på en produkt, men som inte köpte den. (Du kan till exempel kontakta en kund som erbjuder en rabatt på en produkt som de har tittat på, men som inte köpt den).
 
 **Segment**
 
@@ -77,7 +80,9 @@ För att lyckas genomföra remarknadsföringssegmenten måste följande villkor 
    * Inköp: `purchase` event
    * Produktvyer: `prodView` event
 
->[!NOTE] Om produkten definieras utan en associerad händelse utlöses händelsen prodView automatiskt.
+>[!NOTE]
+>
+>Om produkten definieras utan en associerad händelse utlöses händelsen prodView automatiskt.
 Om ovanstående krav inte uppfylls rapporteras inte motsvarande segment för återmarknadsföring korrekt.
 
 [!UICONTROL Cart Abandonment]: utlöses efter att användaren har lagt till en produkt i kundvagnen:
@@ -104,4 +109,6 @@ s.events="purchase";
 | Marknadsföringssegmentfiler tas inte emot. | Om du inte får dina filer bör du be någon av de användare i organisationen som stöds att kontakta ClientCare för att ta reda på orsaken till att rapporterna inte har tagits emot. |
 
 
->[!IMPORTANT] Det är vanligt att konsulter även ställer in en begäran om datalager som en daglig schemalagd rapport utöver era vanliga segmentfiler för integrering av dataanslutningar. Denna datalagerbegäran skulle innehålla både dataanslutningsvariabler och andra variabler än datalagerkopplingar, och begäran kan schemaläggas enbart utifrån din organisations specifika begäran. För att undvika förvirring vid felsökning anger du om filen i fråga är den faktiska segmentfilen för återmarknadsföring, eller en datalagerbegäran som innehåller variabler som inte är generiska.
+>[!IMPORTANT]
+>
+>Det är vanligt att konsulter även ställer in en data warehouse-förfrågan som en daglig schemalagd rapport utöver era vanliga segmentfiler för integrering av dataanslutningar. Den här data warehouse-begäran skulle innehålla både dataanslutningsvariabler och andra variabler än datakopplingar, och begäran kan schemaläggas enbart utifrån din organisations specifika begäran. För att undvika förvirring vid felsökning anger du om filen i fråga är den faktiska segmentfilen för återmarknadsföring, eller en data warehouse-begäran som innehåller icke-generiska variabler.
