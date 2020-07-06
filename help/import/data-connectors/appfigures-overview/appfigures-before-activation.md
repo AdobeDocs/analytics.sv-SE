@@ -1,25 +1,28 @@
 ---
-description: Innan du aktiverar den här integreringen ska du granska följande artiklar mot dina distributioner av Adobe Analytics® och e-postprogramvaran.
+description: Innan du aktiverar integreringen bör du granska följande artiklar mot dina distributioner av Adobe Analytics® och e-postprogramvaran.
 title: Innan du aktiverar den här integreringen
 uuid: fdc762bc-24e3-4c0a-904d-d4be2a4f3a20
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '699'
+ht-degree: 2%
 
 ---
 
 
 # Innan du aktiverar den här integreringen {#before-you-activate-this-integration}
 
-Innan du aktiverar den här integreringen ska du granska följande artiklar mot dina distributioner av Adobe Analytics® och e-postprogramvaran.
+Innan du aktiverar integreringen bör du granska följande artiklar mot dina distributioner av Adobe Analytics® och e-postprogramvaran.
 
 På så sätt säkerställs att bästa praxis eller krav finns innan aktiveringen, vilket ger en optimal och framgångsrik integrering.
 
 ## Krav för Adobe Analytics{#adobe-analytics-requirements}
 
-Läs följande information om integreringen av dessa dataanslutningar i relation till Adobe Analytics:
+Läs mer om integreringen av dessa dataanslutningar i relation till Adobe Analytics:
 
 * **Report-Suite-specifik:** Observera att den här integreringen är specifik för rapportsviten. Kontrollera att du har valt önskat rapportpaket innan du aktiverar integreringen och att rapportsviten innehåller data.
-* **Tillgängliga och konfigurerade analysvariabler:** Den här integreringen kräver 10 anpassade händelser och 1 anpassad eVar. Se [Analytics-integreringsvariabler](appfigures-before-activation.md#analytics-integration-variables).
+* **Tillgängliga och konfigurerade Analytics-variabler:** Den här integreringen kräver 10 anpassade händelser och 1 anpassad eVar. See [Analytics Integration Variables](appfigures-before-activation.md#analytics-integration-variables).
 
 * **Report Suite initierad med Live-data:** Om du skapar en helt ny rapportserie för den här integreringen måste den ha fått vissa (minst en träff) data via kraven för live tracking appFigures. Om livedata inte har registrerats kan rapportsviten inte ta emot integrerade App Store-data.
 
@@ -48,15 +51,17 @@ Det finns för närvarande inga avgifter som kan användas för den här integre
 
 Det finns för närvarande inga avgifter kopplade till den här integreringen. Den här integreringen är för närvarande bara tillgänglig för Enterprise-kunder. Kontakta [appFigures](https://appfigures.com/support/contact) om du vill ha mer information.
 
-## Analytics-integrationsvariabler{#analytics-integration-variables}
+## Variabler för Analytics-integrering{#analytics-integration-variables}
 
 Dataanslutningsintegrationen för appFigures använder Analytics-variabler för att spåra olika appFigures-mått.
 
-I följande tabell beskrivs de Analytics-variabler som aktiveras automatiskt för appillustrationsintegreringen.
+I följande tabell beskrivs de Analytics-variabler som aktiveras automatiskt för integreringen appFigures.
 
 ### Obligatoriska variabler {#section-3ca8dc46bab0436cba0c9ef827c8356a}
 
->[!NOTE] Den här integreringen använder dedikerade variabler för appbutiksdata, så du behöver inte tilldela anpassade handelsvariabler och händelser.
+>[!NOTE]
+>
+>Den här integreringen använder dedikerade variabler för appbutiksdata, så du behöver inte tilldela anpassade handelsvariabler och händelser.
 
 | Variabeltyp | Namn | Populationsmetod | Beskrivning |
 |---|---|---|---|
