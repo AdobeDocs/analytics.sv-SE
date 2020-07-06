@@ -1,8 +1,8 @@
 ---
-title: Tillagd tid
+title: Spenderad tid
 description: En sammanställd sida med tid för mått och mått.
 translation-type: tm+mt
-source-git-commit: 52e00470df0f0c6bff84b26c1548e64ff5114fb8
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 5%
@@ -12,34 +12,36 @@ ht-degree: 5%
 
 # Tidsåtgång - översikt
 
-Olika [!UICONTROL 'time spent'] mätvärden och dimensioner erbjuds för alla Adobe Analytics-produkter.
+Det finns olika [!UICONTROL 'time spent'] mätvärden och dimensioner för alla Adobe Analytics-produkter.
 
 ## Mätvärden för hur lång tid som har tillbringats
 
 | Mått | Definition | Finns i |
 |---|---|---|
-| [!UICONTROL Total seconds spent] | Representerar den totala tiden som besökare interagerar med en viss dimensionspost. Inkluderar förekomsten av ett värde och beständighet i alla efterföljande träffar. När det gäller proppar räknas även den tid som tillbringats över efterföljande länkhändelser. | Analysis Workspace, Reports &amp; Analytics, Report Builder (kallas&quot;total tidsåtgång&quot;), Data Warehouse, Ad Hoc Analysis |
-| [!UICONTROL Time spent per visit] (sekunder) | *Totalt antal sekunder per besök / (besök per besök)*<br>Representerar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök. | Analysis Workspace, Reports &amp; Analytics, Ad hoc Analysis |
-| [!UICONTROL Time spent per visitor] (sekunder) | *Totalt antal sekunder som tillbringats/unik *<br>besökareRepresenterar den genomsnittliga tiden som besökarna interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). | Analysis Workspace, Reports &amp; Analytics, Ad hoc Analysis |
+| [!UICONTROL Total seconds spent] | Representerar den totala tiden som besökare interagerar med en viss dimensionspost. Inkluderar förekomsten av ett värde och beständighet i alla efterföljande träffar. När det gäller proppar räknas även den tid som tillbringats över efterföljande länkhändelser. | Analysis Workspace, Reports &amp; Analytics, Report Builder (kallas&quot;total tidsåtgång&quot;), Data warehouse, Ad hoc analysis |
+| [!UICONTROL Time spent per visit] (sekunder) | *Totalt antal sekunder per besök / (besök per besök)*<br>Representerar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök. | Analysis Workspace, rapporter och Analytics, Ad Hoc Analysis |
+| [!UICONTROL Time spent per visitor] (sekunder) | *Totalt antal sekunder som tillbringats/unik *<br>besökareRepresenterar den genomsnittliga tiden som besökarna interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). | Analysis Workspace, rapporter och Analytics, Ad Hoc Analysis |
 | [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Obs **: Detta mätvärde skiljer sig sannolikt från&quot;Time Spent per Visit&quot; på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Reports &amp; Analytics (visas på några minuter), Report Builder (visas på några minuter), Ad Hoc Analysis |
 | [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> Vi rekommenderar i stället att du använder&quot;Genomsnittlig tid på plats&quot; om en dimensionspost behöver genomsnittstid. | Report Builder (när en dimension finns i begäran) |
 | [!UICONTROL Total session length], alias. [!UICONTROL Previous session length] | Endast Mobile App SDK. <br>Fastställd nästa gång appen startas för föregående session. Det här måttet beräknas i sekunder och räknas inte när programmet körs i bakgrunden. Detta är ett mått på sessionsnivå.<br>Exempel: Vi installerar appen ABC och startar och använder den i 2 minuter och stänger sedan appen. Inga data skickas om den här sessionstiden. Nästa gång vi startar programmet skickas [!UICONTROL Previous Session Length] värdet 120. | Analysis Workspace, Reports &amp; Analytics, Report Builder, Mobile Services UI |
-| [!UICONTROL Average session length] (mobil) | *Total sessionslängd / (startar - första starten)Endast *<br>Mobile App SDK. Detta är ett mått på sessionsnivå. | Report Builder, Mobile Services UI, Ad hoc-analys |
+| [!UICONTROL Average session length] (mobil) | *Total sessionslängd / (startar - första starten)Endast *<br>Mobile App SDK. Detta är ett mått på sessionsnivå. | Report Builder, Mobile Services UI, Ad Hoc Analysis |
 
 ## Dimensioner för använd tid
 
 | Dimension | Definition | Finns i |
 |---|---|---|
-| [!UICONTROL Time spent per visit - granular] | Den totala tid som tillbringats under besöket trunkerades till närmaste sekund och tillämpades på varje träff som ingick i besöket. Detta är en besöksnivådimension. | Analysis Workspace, Ad hoc-analys |
-| [!UICONTROL Time spent per visit - bucketed] | Det granulerade måttet inkapslat i 9 olika intervall. Detta är en besöksnivådimension. Intervall:<ul><li>Mindre än 1 minut</li><li>1-5 minuter</li><li>5-10 minuter</li><li>10-30 minuter</li><li>30-60 minuter</li><li>1-2 timmar</li><li>2-5 timmar</li><li>5-10 timmar</li><li>10-15 timmar</li></ul>**Obs**: Det kan inte finnas fler bucklor än så, eftersom ett besök går ut efter 12 timmars aktivitet. | Analysis Workspace, Reports &amp; Analytics, Report Builder, Ad hoc Analysis |
-| [!UICONTROL Time spent on page - granular] | Total tid som tillbringats för varje träff, trunkerad till närmaste sekund. Det här är en träffnivådimension och innehåller både sidvyer och länkhändelser. Trots sitt namn är det inte begränsat till siddimensionen. | Analysis Workspace, Ad hoc-analys |
-| [!UICONTROL Time spent on page - bucketed] | Det granulerade måttet indelat i 10 olika intervall. Men den paketerade dimensionen räknar bara sidvyer (och utesluter länthändelser). Det här är en träffnivådimension. Intervall:<ul><li>mindre än 15 sekunder</li><li>15 till 29 sekunder</li><li>30 till 59 sekunder</li><li>1 till 3 minuter</li><li>3 till 5 minuter</li><li>5 till 10 minuter</li><li>10 till 15 minuter</li><li>15 till 20 minuter</li><li>20 till 30 minuter</li><li>mer än 30 minuter</li></ul> | Analysis Workspace, Reports &amp; Analytics, Ad hoc Analysis |
+| [!UICONTROL Time spent per visit - granular] | Den totala tid som tillbringats under besöket trunkerades till närmaste sekund och tillämpades på varje träff som ingick i besöket. Detta är en besöksnivådimension. | Analysis Workspace, Ad Hoc Analysis |
+| [!UICONTROL Time spent per visit - bucketed] | Det granulerade måttet inkapslat i 9 olika intervall. Detta är en besöksnivådimension. Intervall:<ul><li>Mindre än 1 minut</li><li>1-5 minuter</li><li>5-10 minuter</li><li>10-30 minuter</li><li>30-60 minuter</li><li>1-2 timmar</li><li>2-5 timmar</li><li>5-10 timmar</li><li>10-15 timmar</li></ul>**Obs**: Det kan inte finnas fler bucklor än så, eftersom ett besök går ut efter 12 timmars aktivitet. | Analysis Workspace, Reports &amp; Analytics, Report Builder, Ad Hoc Analysis |
+| [!UICONTROL Time spent on page - granular] | Total tid som tillbringats för varje träff, trunkerad till närmaste sekund. Det här är en träffnivådimension och innehåller både sidvyer och länkhändelser. Trots sitt namn är det inte begränsat till siddimensionen. | Analysis Workspace, Ad Hoc Analysis |
+| [!UICONTROL Time spent on page - bucketed] | Det granulerade måttet indelat i 10 olika intervall. Men den paketerade dimensionen räknar bara sidvyer (och utesluter länthändelser). Det här är en träffnivådimension. Intervall:<ul><li>mindre än 15 sekunder</li><li>15 till 29 sekunder</li><li>30 till 59 sekunder</li><li>1 till 3 minuter</li><li>3 till 5 minuter</li><li>5 till 10 minuter</li><li>10 till 15 minuter</li><li>15 till 20 minuter</li><li>20 till 30 minuter</li><li>mer än 30 minuter</li></ul> | Analysis Workspace, rapporter och Analytics, Ad Hoc Analysis |
 
 ## Hur&quot;Tidsåtgång&quot; beräknas
 
 I Adobe Analytics används explicita värden (inklusive länkhändelser och videovyer) för att beräkna [!UICONTROL Time Spent].
 
->[!NOTE] Utan länkar som [!UICONTROL Video Views] eller [!UICONTROL Exit Links]går det inte att känna till hur lång tid som tillbringats på ett besök. Av liknande skäl [!UICONTROL Bounce Visits] (dvs. besök med en enda träff) har inte heller någon&quot;tidsåtgång&quot; kopplad till sig.
+>[!NOTE]
+>
+>Utan länkar som [!UICONTROL Video Views] eller [!UICONTROL Exit Links]går det inte att känna till hur lång tid som tillbringats på ett besök. Av liknande skäl [!UICONTROL Bounce Visits] (dvs. besök med en enda träff) har inte heller någon&quot;tidsåtgång&quot; kopplad till sig.
 
 Täljaren **** i beräkningar är det totala antalet sekunder som har använts.
 
