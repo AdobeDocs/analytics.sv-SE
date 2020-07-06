@@ -1,15 +1,18 @@
 ---
 description: Analysidentifiering använder statistisk modellering för att automatiskt hitta oväntade trender i dina data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. När en oväntad krökning eller släppning inträffar visas en varning i rapporten.
-title: Analysidentifiering
+title: Avvikelseidentifiering
 topic: Report builder
 uuid: 02da21b4-3394-471b-97b5-aa1bddf1f445
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 1%
 
 ---
 
 
-# Analysidentifiering{#anomaly-detection}
+# Avvikelseidentifiering{#anomaly-detection}
 
 Analysidentifiering använder statistisk modellering för att automatiskt hitta oväntade trender i dina data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. När en oväntad krökning eller släppning inträffar visas en varning i rapporten.
 
@@ -22,7 +25,9 @@ Exempel på avvikelser du kan undersöka är:
 * Spänn i videobufferthändelser
 * Taggar i låga videobithastigheter
 
->[!NOTE] Avvikelseidentifiering är bara tillgängligt när du väljer daggranularitet.
+>[!NOTE]
+>
+>Avvikelseidentifiering är bara tillgängligt när du väljer daggranularitet.
 
 <p class="head"> <b>Mätvärden för avvikelseidentifiering</b> </p>
 
