@@ -2,10 +2,10 @@
 title: eVar
 description: Anpassade variabler som du kan använda i implementeringen.
 translation-type: tm+mt
-source-git-commit: 10e157e370367374b55ee9c87c0e5c7ca9e99c1a
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 2
 
 Innan du använder eVars i implementeringen måste du konfigurera varje eVar i inställningarna för rapportsviten. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
-## eVars in Adobe Experience Platform Launch
+## eVars i Adobe Experience Platform Launch
 
 Du kan ange eVars antingen när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
@@ -30,7 +30,7 @@ Du kan ange eVars antingen när du konfigurerar Analytics-tillägget (globala va
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] till [!UICONTROL Action Type] [!UICONTROL Set Variables].
+5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta rätt på [!UICONTROL eVars] avsnittet.
 
 Du kan ställa in en eVar på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
@@ -57,4 +57,6 @@ s.eVar1 = "+12.49";
 
 Om fler än två decimaler anges avrundas eVar-räknaren till två decimaler. En eVar-räknare får inte innehålla negativa tal.
 
-> [!IMPORTANT] Du måste först konfigurera eVars till Counter i Admin Console innan du använder counter eVars. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
+>[!IMPORTANT]
+>
+>Du måste först konfigurera eVars till Counter i Admin Console innan du använder counter eVars. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
