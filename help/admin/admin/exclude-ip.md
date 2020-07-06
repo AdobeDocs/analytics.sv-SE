@@ -4,7 +4,10 @@ title: Exkludera efter IP-adress
 topic: Admin tools
 uuid: 1ed6105f-e7c5-4c4f-b8f4-e5f66d0824bb
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +18,9 @@ Du kan undanta data från specifika IP-adresser, som interna webbplatsaktivitete
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Exclude by IP]**
 
->[!NOTE] Träffar som exkluderats av IP-adressen faktureras som [serversamtal](https://docs.adobe.com/content/help/en/analytics/technotes/terms.html).
+>[!NOTE]
+>
+>Träffar som exkluderats av IP-adressen faktureras som [serversamtal](https://docs.adobe.com/content/help/en/analytics/technotes/terms.html).
 
 ## Uteslut av cookie {#section_FB5A20AB5E514DA6BC596CC67F6A3A4C}
 
@@ -27,14 +32,16 @@ Med den här funktionen kan du och dina kollegor besöka webbplatsen utan att be
 |--- |--- |
 | [!UICONTROL Add CNAME] | Skapar en länk för avanmälan som du kan använda för att utesluta din domän. Kontakta företagets användare om du behöver hjälp. <br>Din trafik kan uteslutas från rapporteringen i dina rapportsviter genom att besöka företagets avanmälningssida och välja att utesluta webbläsaren från mätningen. <br>Om implementeringen använder cookies från tredje part finns din avanmälningssida [här](https://democorp.112.2o7.net/optout.html?locale=en_US&amp;popup=true). |
 
->[!NOTE] Uteslutning per dator fungerar endast om:
+>[!NOTE]
+>
+>Uteslutning per dator fungerar endast om:
 >
 > * Du kommer åt din webbplats från samma arbetsstation.
 > * Dina cookies är aktiverade i den webbläsare du använder.
 > * Dina cookies tas inte bort. Om cookies tas bort måste du utesluta dig själv igen.
 
 
-## Exkludera efter IP-adress {#section_609FB6461529409D840111A32FEF5C3D}
+## Exclude by IP Address {#section_609FB6461529409D840111A32FEF5C3D}
 
 En IP-adress är en Internetadress. Alla internetanvändare tilldelas numeriska IP-adresser (vanligtvis via Internet-leverantörer) som fungerar effektivt som elektroniska identifierare.
 
@@ -46,7 +53,7 @@ Du kan använda jokertecken (*) för att exkludera ett adressintervall. Till exe
 
 Du kan även blockera datainsamling från specifika IP-adresser via en brandvägg.
 
-Se [IP-adresserna som används i Experience Cloud](https://helpx.adobe.com/analytics/kb/adobe-ip-addresses.html) -artikeln.
+Se [IP-adresserna som används i artikeln Experience Cloud](https://helpx.adobe.com/se/analytics/kb/adobe-ip-addresses.html) .
 
 ## Inverkan av IP-missbruk {#section_51B7529FFF16449CA016FDC51D87E2CA}
 
