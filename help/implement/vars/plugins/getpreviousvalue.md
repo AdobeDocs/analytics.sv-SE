@@ -2,18 +2,23 @@
 title: getPreviousValue
 description: Hämta det sista värdet som skickades till en variabel.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
 
 # Adobe plug-in: getPreviousValue
 
->[!IMPORTANT] Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med `getPreviousValue` plugin-programmet kan du ställa in en variabel på ett värde som ställts in vid en tidigare träff. Detta plugin-program behövs inte om implementeringen innehåller alla önskade värden i den aktuella träffen.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
 
 Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
@@ -25,7 +30,7 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
+   * Tillägg: Vanliga Analytics-plugin-program
    * Åtgärdstyp: Initiera getPreviousValue
 1. Spara och publicera ändringarna i regeln.
 
@@ -42,7 +47,7 @@ Om du inte vill använda plugin-programtillägget kan du använda den anpassade 
 
 ## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -100,7 +105,7 @@ s.eVar10 = s.getPreviousValue(s.eVar1)
 
 ## Osannolikt fel
 
-Om variabeln som är associerad med argumentet v är inställd på ett nytt värde och plugin-programmet getPreviousValue körs MEN ett anrop från en Analytics-server skickas INTE samtidigt, kommer det nya argumentvärdet v fortfarande att betraktas som&quot;föregående värde&quot; nästa gång plugin-programmet körs.
+Om variabeln som är associerad med v-argumentet är inställd på ett nytt värde och plugin-programmet getPreviousValue körs MEN ett Analytics-serveranrop skickas INTE samtidigt, kommer det nya v-argumentvärdet fortfarande att betraktas som&quot;föregående värde&quot; nästa gång plugin-programmet körs.
 Anta till exempel att följande kod körs på den första sidan av besöket:
 
 ```js
