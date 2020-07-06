@@ -1,22 +1,25 @@
 ---
 description: 'null'
 keywords: Analysis Workspace
-title: Skapa projekt - översikt
+title: Skapa projekt – översikt
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 8%
 
 ---
 
 
-# Skapa projekt - översikt
+# Skapa projekt – översikt
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
-Ni kan skapa ett robust Analytics-projekt baserat på valfri kombination av visualiseringar, rapportkomponenter och datatabeller. Den innehåller många av tabellbyggarfunktionerna från Ad Hoc Analysis i Analytics.
+Du kan skapa ett robust Analytics-projekt baserat på valfri kombination av visualiseringar, rapportkomponenter och datatabeller. Här finns många tabellverktyg från Ad Hoc Analysis i Analytics.
 
-I Analysis Workspace kan du jämföra och dela upp data på sätt som inte tidigare varit möjliga. Du kan till exempel konfigurera rankade rapporter och göra omedelbara iterativa ändringar i datafrågan, och sedan få tillgång till och ändra värdena på rapportnivå.
+I Analysis Workspace kan du jämföra och dela upp data på sätt som inte tidigare varit möjligt. Du kan till exempel konfigurera rankade rapporter och göra omedelbara iterativa ändringar i datafrågan, och sedan få tillgång till och ändra värdena på rapportnivå.
 
 Frågan skickas direkt till rapportmotorn - du kan göra ändringar direkt utan att ta fram andra rapporter för att skapa en analys. Resultaten returneras omedelbart utan att webbläsaren har uppdaterats.
 
@@ -33,7 +36,7 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 | Projektmallar [](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md) | Du kan använda de här förifyllda projektmallarna som de är eller anpassa dem efter dina behov (genom att till exempel lägga till eller ersätta mått eller visualiseringar) och spara dem under ett nytt namn. |
 | [Skapa nytt projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden. |
 | Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt och du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
-| Visa självstudiekurser | Tar dig till YouTube-videor på [Analysis Workspace](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS). |
+| Visa självstudiekurser | Tar dig till [YouTube-videor](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)i Analysis Workspace. |
 | Namn | Namn på Workspace-projektet. |
 | Skapad av | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
 | Taggar | Taggar som tillämpades på projektet, antingen i komponenthanteraren för projekt eller under **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]**. |
@@ -54,7 +57,7 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 | Senast ändrad | Datum för senaste ändring av projektet. |
 | Taggar | Visar alla taggar som har använts i ett projekt för enklare kategorisering. Du kan också tagga projekt medan du sparar dem. Visa ett projekts taggar på startsidan för arbetsytan i [!UICONTROL Tags] kolumnen. |
 | Beskrivning | En beskrivning är användbar för att förtydliga syftet med ett projekt. Du kan dubbelklicka på beskrivningen för att redigera den. |
-| Räkna upprepade instanser i projekt | Anger om upprepade instanser räknas i rapporter. Om du har flera sekventiella värden för samma variabel kan du räkna dem som en eller flera instanser av variabeln. |
+| Räkna upprepade instanser i projekt | Anger om upprepade instanser räknas i rapporter. Om du har flera sekventiella värden för samma variabel kan du räkna dem som en eller som flera förekomster av variabeln. |
 | Visualiseringsfärgschema | Du kan ändra färgschemat som används i Arbetsyta genom att välja från en annan färgpalett eller genom att ange en egen palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
 | Visa densitet | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden av den vänstra listen, frihandstabeller och kohorttabeller. |
 
@@ -66,7 +69,9 @@ Den översta projektmenyn ser ut så här:
 
 Undermenyerna innehåller följande alternativ.
 
->[!NOTE] Alternativ markerade med en asterisk (*) visas bara med **sparade** projekt.
+>[!NOTE]
+>
+>Alternativ markerade med en asterisk (*) visas bara med **sparade** projekt.
 
 | Projekt | Redigera | Infoga | Komponenter | Dela | Hjälp |
 |---|---|---|---|---|---|
