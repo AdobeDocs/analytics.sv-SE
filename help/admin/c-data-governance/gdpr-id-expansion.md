@@ -2,8 +2,11 @@
 description: 'De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran '
 title: ID-expansion
 uuid: 2672d17d-c957-4e08-8dd9-16d54bf2be18
-translation-type: ht
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 100%
 
 ---
 
@@ -56,7 +59,9 @@ I framtiden kan ”analyticsDeleteMethod” stöda värdet ”rensa” utöver s
 
 Utöver standardvärdet stöder prioritetsfältet även värdet ”låg”. Du bör ange det här värdet för begäranden som inte beror på en begäran från en registrerad person och som därför inte måste slutföras inom 30 dagar enligt lagen. Observera att Adobe avråder från att använda API:t för sekretesstjänster av andra orsaker än begäranden som initierats av registrerade. API:t för sekretesstjänsten är inte ett lämpligt verktyg för datarensning eller reparationer och kommer att ha oönskade konsekvenser.
 
->[!NOTE] [API:t för sekretesstjänsten](https://www.adobe.io/apis/experienceplatform/gdpr.html) har tillhandahållits för att hjälpa dig att uppfylla begäranden om datasekretess, vilka är tidskänsliga. Adobe stöder inte att detta API används för andra syften och det kan påverka Adobes förmåga att tillhandahålla användarinitierade begäranden om datasekretess i god tid för andra Adobe-kunder. Vi ber dig att inte använda API:t för sekretesstjänsten för andra syften, som att rensa data som av misstag har skickats in till stora grupper av besökare.
+>[!NOTE]
+>
+>[API:t för sekretesstjänsten](https://www.adobe.io/apis/experienceplatform/gdpr.html) har tillhandahållits för att hjälpa dig att uppfylla begäranden om datasekretess, vilka är tidskänsliga. Adobe stöder inte att detta API används för andra syften och det kan påverka Adobes förmåga att tillhandahålla användarinitierade begäranden om datasekretess i god tid för andra Adobe-kunder. Vi ber dig att inte använda API:t för sekretesstjänsten för andra syften, som att rensa data som av misstag har skickats in till stora grupper av besökare.
 
 Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för sekretesstjänsten inte är lämpligt för detta ändamål.
 
