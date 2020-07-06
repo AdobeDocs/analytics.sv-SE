@@ -1,20 +1,25 @@
 ---
 description: Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Analytics-verktyget och konfigurera sidkoden antingen automatiskt eller manuellt. Den automatiska metoden rekommenderas för de flesta användare.
 keywords: Analytics Implementation;implementation method;dynamic tag management;dtm;analytics tool;property;tool type;tool name;configuration method;analytics premium;evars;events
-title: Lägg till Adobe Analytics-verktyget
+title: Lägg till Adobe Analytics-verktyg
 topic: Developer and implementation
 uuid: 1c54331e-de03-4f44-8002-a19723c585b0
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '706'
+ht-degree: 8%
 
 ---
 
 
-# Lägg till Adobe Analytics-verktyget
+# Lägg till Adobe Analytics-verktyg
 
 Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Analytics-verktyget och konfigurera sidkoden antingen automatiskt eller manuellt. Den automatiska metoden rekommenderas för de flesta användare.
 
->[!NOTE] För förbättrad besöksspårning rekommenderar vi att du aktiverar [identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html).
+>[!NOTE]
+>
+>För förbättrad besöksspårning rekommenderar vi att du aktiverar [identitetstjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html).
 
 ## Add an Adobe Analytics Tool {#section_D5066B21581B4F7F811AD0027BF44EA5}
 
@@ -34,7 +39,7 @@ Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Ana
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Verktygstyp </p> </td> 
-   <td colname="col2">Typen av verktyg, till exempel <span class="keyword"> Adobe Analytics</span>. </td> 
+   <td colname="col2">Typ av verktyg, t.ex. <span class="keyword"> Adobe Analytics</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Verktygsnamn </p> </td> 
@@ -42,9 +47,9 @@ Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Ana
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p>Konfigurationsmetod </p> </td> 
-   <td colname="col2"> <p> <b>Automatiskt</b> (rekommenderas): Använd dynamisk tagghantering för att hantera konfigurationen. Den här metoden möjliggör automatisk synkronisering av <span class="keyword"> Adobe Analytics</span> -rapportsviter via en <span class="keyword"> inloggning i Experience Cloud</span> eller ett webbtjänste-ID, och hanterar AppMeasurement-koden. </p> <p>När kontona har anslutits hämtar Dynamic Tag Management ID:n och namn för <span class="keyword"> Adobe Analytics</span> -rapportsviten till verktygskonfigurationsgränssnittet, vilket ger snabbare driftsättning med mindre risk för användarfel. </p> <p> <p>Obs! Du måste välja alternativet <span class="wintitle"> Automatisk</span> om du är <span class="keyword"> Adobe Analytics Premium</span> -kund. </p> </p> <p>Fyll i fälten som är specifika för automatisk konfiguration: </p> 
+   <td colname="col2"> <p> <b>Automatiskt</b> (rekommenderas): Använd dynamisk tagghantering för att hantera konfigurationen. Med den här metoden kan <span class="keyword"> Adobe Analytics</span> -rapportsviter synkroniseras automatiskt via ett <span class="keyword"> Experience Cloud</span> -inloggnings- eller Web Services-ID och AppMeasurement-koden hanteras. </p> <p>När kontona har anslutits hämtar Dynamic Tag Management <span class="keyword"> Adobe Analytics</span> -rapportsvitens ID:n och namn till verktygskonfigurationsgränssnittet, vilket ger snabbare driftsättning med mindre risk för användarfel. </p> <p> <p>Obs! Du måste välja alternativet <span class="wintitle"> Automatisk</span> om du är <span class="keyword"> Adobe Analytics Premium</span> -kund. </p> </p> <p>Fyll i fälten som är specifika för automatisk konfiguration: </p> 
     <ul id="ul_8D9797B01E444B9C85B862A9F96B447C"> 
-     <li id="li_0AC84C1F37B24C658F2178E50ECCC4B0"> <p> <b>Experience Cloud</b>: (Standard) Använder enkel inloggning i <span class="keyword"> Experience Cloud</span> . Ange ditt Experience Cloud-ID och lösenord. </p> </li> 
+     <li id="li_0AC84C1F37B24C658F2178E50ECCC4B0"> <p> <b>Experience Cloud</b>: (Standard) Använder enkel inloggning <span class="keyword"> Experience Cloud</span> . Ange ditt Experience Cloud-ID och lösenord. </p> </li> 
      <li id="li_6C80468835D04CC09F4AEC46D1300310"> <p><b>Webbtjänster</b>: Ange ditt användarnamn och din delade hemlighet för webbtjänster. </p> <p>Delade hemliga autentiseringsuppgifter finns i <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Företagsinställningar</span> &gt; <a href="https://docs.adobe.com/content/help/en/analytics/admin/company-settings/web-services-admin.html"> Webbtjänster</a>. </p> <p>Utvecklare kan få hjälp med att hämta inloggningsuppgifter för Web Services genom att gå till <a href="https://marketing.adobe.com/developer/en_US/get-started/enterprise-api/c-get-web-service-access-to-the-enterprise-api"> Få webbtjänståtkomst till Enterprise API</a> . </p> </li> 
     </ul> </td> 
   </tr> 
@@ -66,7 +71,7 @@ Distribuera Adobe Analytics med dynamisk tagghantering genom att skapa Adobe Ana
 
 1. (Villkorligt) Konfigurera verktyget ytterligare efter behov genom att följa instruktionerna i länkarna nedan ( [!UICONTROL General], [!UICONTROL Library Management], [!UICONTROL Global Variables], [!UICONTROL Pageviews & Content], [!UICONTROL Link Tracking], [!UICONTROL Referrers & Campaigns], [!UICONTROL Cookies]och [!UICONTROL Customize Page Code]).
 
-Mer information om verktyget finns i [Vanliga frågor om Adobe Analytics Tool](/help/implement/faq.md) .
+Mer information om det här verktyget finns i [Vanliga frågor om Adobe Analytics-verktyget](/help/implement/faq.md) .
 
 ## Redigera ett befintligt Adobe Analytics-verktyg {#section_148B16AF429B4949B06238D90635B726}
 
@@ -75,7 +80,7 @@ Du kan redigera ett befintligt Adobe Analytics-verktyg om du vill ändra dess ko
 1. Klicka på ![](assets/settings_gear.png) ikonen bredvid ett installerat verktyg på [!UICONTROL Overview] fliken.
 1. Redigera fälten efter behov.
 
-   Följande tabell innehåller endast de element som skiljer sig från de element som är tillgängliga när du skapar ett analysverktyg, vilket beskrivs ovan. Du kan dock ändra vilket element som helst på sidan enligt beskrivningen i båda tabellerna.
+   Följande tabell innehåller endast de element som skiljer sig från de element som är tillgängliga när du skapar ett Analytics-verktyg, enligt beskrivningen ovan. Du kan dock ändra vilket element som helst på sidan enligt beskrivningen i båda tabellerna.
 
 <table id="table_2B60CD109CFF4839AB7F91D61125EDFF"> 
  <thead> 
