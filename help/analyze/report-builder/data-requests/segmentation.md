@@ -4,7 +4,10 @@ title: Hantera segment
 topic: Report builder
 uuid: 4e4edc39-ed93-498f-913d-7b231b10e7a0
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '897'
+ht-degree: 3%
 
 ---
 
@@ -19,10 +22,12 @@ I Report Builder finns en segmenteringspanel i steg 1 i begärandeguiden där du
 
 ## Lägga till eller redigera segment {#section_B2BC136F9A53498D90C7C2ECC5DB892B}
 
->[!NOTE] Om du vill lägga till eller redigera segment, startar segmentgränssnittet i Report Builder segmentverktyget Analytics i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
+>[!NOTE]
+>
+>Om du vill lägga till eller redigera segment startar segmentgränssnittet i Report Builder Analytics segmentbyggare i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
 
 1. Klicka på i segmentpanelen i steg 1 i begärandeguiden **[!UICONTROL Add]**.
-1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns i [Analyssegmentering](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
+1. Ett Internet Explorer-fönster öppnas som öppnar Analytics Segment Builder-gränssnittet. Mer information om hur du skapar segment finns i [Analytics-segmentering](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
 1. När du har definierat och sparat segmentet går du tillbaka till Begärandeguiden.
 1. Klicka på ikonen Uppdatera för att uppdatera segmentlistan.
 
@@ -48,7 +53,7 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 
 ## Söka efter och använda segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
 
-Alla segment som har skapats i Rapporter och analyser, Ad hoc-analyser, Report Builder eller Data Warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ( ![](assets/refresh_icon.png).
+Alla segment som har skapats i Rapporter &amp; Analytics, Ad Hoc Analysis, Report Builder eller Data warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ( ![](assets/refresh_icon.png).
 
 Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar sekventiella segment.
 
@@ -58,7 +63,9 @@ Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar 
 
 1. Kontrollera vilka segment du vill använda.
 
->[!NOTE] Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig. (I användargränssnittet Marketing Reports &amp; Analytics kan administratören se alla segment i organisationen.)
+>[!NOTE]
+>
+>Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig. (I gränssnittet Marketing Reports &amp; Analytics kan administratören se alla segment i organisationen.)
 
 ## Filtrera segment {#section_376E986D3E684999A7CDB08E53854159}
 
