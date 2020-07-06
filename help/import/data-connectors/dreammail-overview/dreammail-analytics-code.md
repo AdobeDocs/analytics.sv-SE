@@ -1,16 +1,19 @@
 ---
-description: Om du valde datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Analytics-koden på dina sidor.
-title: Analytics-plugin-kod
+description: Om du har valt datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Analytics-koden på sidorna.
+title: Kod för Analytics-plugin
 uuid: c75a6cd2-ee7a-4c2f-98a8-4618d0617b4f
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 6%
 
 ---
 
 
-# Analytics-plugin-kod{#analytics-plug-in-code}
+# Kod för Analytics-plugin{#analytics-plug-in-code}
 
-Om du valde datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Analytics-koden på dina sidor.
+Om du har valt datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodrader och lägger till dem i Analytics-koden på sidorna.
 
 `/*`
 
@@ -26,4 +29,6 @@ Om du valde datainsamlingsmetoden JavaScript Plug-In kopierar du följande kodra
 s.campaign=s.getQueryParam("ET_CID"); //places query param value from cid in campaign variable s.eVar2=s.getQueryParam("ET_RID"); //places query param value from rid in eVar2 variable
 ```
 
->[!NOTE] Plugin-programmet ovan förutsätter att vissa anpassade handelsvariabler (eVars) är tillgängliga. Om variablerna som anges i plugin-programmet ovan inte är tillgängliga i din Analytics-distribution ersätter du dem med de som är tillgängliga.
+>[!NOTE]
+>
+>Plugin-programmet ovan förutsätter att vissa anpassade handelsvariabler (eVars) är tillgängliga. Om variablerna som anges i plugin-programmet ovan inte är tillgängliga i din Analytics-distribution ersätter du dem med de som är tillgängliga.
