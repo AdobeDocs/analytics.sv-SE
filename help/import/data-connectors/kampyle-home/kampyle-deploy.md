@@ -3,7 +3,10 @@ description: 'null'
 title: Distribuera integreringen
 uuid: ebb385ca-7bfb-4cd3-9ff6-a5f5a52db5c9
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 2%
 
 ---
 
@@ -36,9 +39,11 @@ Om du vill aktivera integreringen slutför du konfigurationsguiden i gränssnitt
 
 ## Distribuera integrationskonfigurationsobjektet{#deploy-the-integration-configuration-object}
 
-Distribuera integreringskonfigurationsobjektet till din webbegenskap när du har slutfört integreringsguiden. I många fall är det enklaste sättet att distribuera integreringskonfigurationsobjektet att inkludera det i Adobe Analytics-distributionskoden.
+Distribuera integreringskonfigurationsobjektet till din webbegenskap när du har slutfört integreringsguiden. I många fall är det enklaste sättet att distribuera integreringskonfigurationsobjektet att inkludera det i din Adobe Analytics-kod.
 
->[!NOTE] Om du använder Adobe Experience Platform Launch kan du enkelt lägga till integreringskonfigurationsobjektet med det verktyget.
+>[!NOTE]
+>
+>Om du använder Adobe Experience Platform Launch kan du enkelt lägga till integreringskonfigurationsobjektet med det verktyget.
 
 1. Navigera till fliken **[!UICONTROL Resources]** > **[!UICONTROL Support]** i integreringen.
 1. Hämta och spara **[!UICONTROL Kampyle Integration Code (JS)]** resursen. Koden ser ut ungefär så här:
@@ -51,7 +56,7 @@ Distribuera integreringskonfigurationsobjektet till din webbegenskap när du har
 1. Distribuera koden på något av följande sätt:
 
    * Använd Adobe Experience Platform Launch.
-   * Leverera koden till den organisationsresurs som underhåller er Adobe Analytics-distribution.
+   * Leverera koden till den organisationsresurs som underhåller din Adobe Analytics-distribution.
 
 ## Verifiera integreringen{#verify-the-integration}
 
@@ -61,14 +66,18 @@ Validera att integreringen har överfört data genom att utföra några kontroll
 
 Visa dina Kampyle-integrationsinställningar i Adobe Experience Cloud genom att gå till **[!UICONTROL Support]** > **[!UICONTROL Integration Activity Log]**. Under fliken **[!UICONTROL Data In]** ser du poster som anger att klassificeringsdata har importerats.
 
->[!NOTE] Loggposterna visas vanligtvis inom 24 timmar efter att distributionen lyckades.
+>[!NOTE]
+>
+>Loggposterna visas vanligtvis inom 24 timmar efter att distributionen lyckades.
 
 ![Aktivitetslogg för integrering](assets/integration_activity_log.png)
 
 ### Adobe Reporting Data {#section-1ae9f0a5e6bc40988478ff55aefd56ac}
 
-Visa dina Kampyle-feedback-rapporter med Adobe Analytics genom att navigera till Kampyle-rapporten i rätt menystruktur.
+Läs dina Kampyle-feedback-rapporter med Adobe Analytics genom att navigera till Kampyle-rapporten i rätt menystruktur.
 
->[!NOTE] Rapporteringsdata ska visas inom 24-48 timmar efter att de distribuerats, förutsatt att de integrerade feedbackformulären aktivt tar emot inskickade svar.
+>[!NOTE]
+>
+>Rapporteringsdata ska visas inom 24-48 timmar efter att de distribuerats, förutsatt att de integrerade feedbackformulären aktivt tar emot inskickade svar.
 
 ![Adobe rapporterar data](assets/adobe_reporting_data.png)
