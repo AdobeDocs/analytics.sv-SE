@@ -2,14 +2,19 @@
 title: dynamicAccountList
 description: Upprätta logik för hur implementeringen avgör dess rapportserie.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 0%
 
 ---
 
 
 # s.dynamicAccountList
 
->[!IMPORTANT] Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Launch.
+>[!IMPORTANT]
+>
+>Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Launch.
 
 Variabeln bestämmer `s.dynamicAccountList` dynamiskt värdet för `s_account`. Om `dynamicAccountSelection` är inställt på `true`jämförs `dynamicAccountMatch` variabeln med `dynamicAccountList`. Om en matchning hittas används det matchande rapportsvitens ID.
 
@@ -25,7 +30,7 @@ Giltiga indata är en semikolonavgränsad lista med paren rsid och value. Varje 
 
 * Ett eller flera rapportsvit-ID:n (avgränsade med kommatecken)
 * Ett likhetstecken
-* En eller flera strängar som ska matchas (avgränsade med kommatecken)
+* En eller flera strängar att matcha (avgränsade med kommatecken)
 
 Endast ASCII-standardtecken ska användas i strängen. Använd inte blanksteg.
 
