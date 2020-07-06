@@ -5,7 +5,7 @@ title: Hantera marknadsföringskanaler
 topic: Reports and analytics
 uuid: 9d367bb6-a17b-49b8-9cd5-24fac35ae982
 translation-type: tm+mt
-source-git-commit: 45c441a558168cb2af70855e848e1eaa26db8daa
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Kontakta kundtjänst om det behövs för att få hjälp med följande:
 
 * Ställ in åtkomst till dimensionerna för marknadsföringskanalen.
 
-   Se Behörigheter för [marknadsföringskanaler](/help/components/c-marketing-channels/c-channel-report-access.md).
+   See [Marketing Channels permissions](/help/components/c-marketing-channels/c-channel-report-access.md).
 
 * Se till att din kontohanterare har aktiverat **[!UICONTROL Channel Reports]** för din rapportsvit.
 
@@ -44,7 +44,9 @@ Kontakta kundtjänst om det behövs för att få hjälp med följande:
 
 Lägg till marknadsföringskanaler i Marketing Channel Manager.
 
->[!NOTE] Du kan inte ta bort en kanal. Om du inte vill använda en kanal kan du inaktivera den eller byta namn på den och bevara den för senare bruk.
+>[!NOTE]
+>
+>Du kan inte ta bort en kanal. Om du inte vill använda en kanal kan du inaktivera den eller byta namn på den och bevara den för senare bruk.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välj en rapportsvit på [!UICONTROL Report Suite Manager] sidan.
@@ -76,8 +78,8 @@ Det finns olika inställningar som kan användas för varje kanal på [!UICONTRO
 | Kanalnamn | Marknadsföringskanalens egna namn. |
 | Åsidosätt sista tryckkanalen | Gör att du kan välja om du vill åsidosätta en befintlig, beständig sista-beröringskanal med den valda kanalen. Om du markerar den här kryssrutan åsidosätts en befintlig sista-beröringskanal av alla kanaler (inklusive Direkt och Intern). Resultatet är att konverteringen tilldelas en kanal som kanske inte förtjänar någon kredit. Det här alternativet kan till exempel säkerställa att direktkanalen inte får krediter för konvertering om användaren tidigare har förvärvats via den naturliga sökkanalen. |
 | Kanaluppdelning | Gör att du kan dela upp en kanal med det här värdet. Du kan lägga till möjliga kanaluppdelningar (delkanaler) när du skapar [marknadsföringskanalklassificeringar](/help/components/c-marketing-channels/classifictions-mchannel.md). |
-| Typ | Anger hur användaren kom till din plats. Du kan välja Online eller Offline. Använd onlinekanaler för besökare som kommer via en sökmotor eller e-postkampanj. Offlinekanaler gäller besökare som har hittat er webbplats via tidningskuponger eller tidningsannonser. Offlinekanaler inkluderar vanligtvis data som importerats via rapportering av datakällor. Se [Datakällor](https://docs.adobe.com/content/help/en/analytics/import/data-sources/datasrc-home.html). Se [Lägg till offlinedata](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
-| Färg | Endast rapporter och analyser: Färgen som är associerad med den här marknadsföringskanalen. Den här färgen representerar kanalen i Marketing Channel-rapporten. |
+| Typ | Anger hur användaren kom till din plats. Du kan välja Online eller Offline. Använd onlinekanaler för besökare som kommer via en sökmotor eller e-postkampanj. Offlinekanaler gäller besökare som har hittat er webbplats via tidningskuponger eller tidningsannonser. Offlinekanaler inkluderar vanligtvis data som importerats via rapportering av datakällor. See [Data Sources](https://docs.adobe.com/content/help/en/analytics/import/data-sources/datasrc-home.html). Se [Lägg till offlinedata](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
+| Färg | Endast rapporter och Analytics: Färgen som är associerad med den här marknadsföringskanalen. Den här färgen representerar kanalen i Marketing Channel-rapporten. |
 
 ### Åsidosätta bästa praxis
 
