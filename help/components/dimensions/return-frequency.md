@@ -2,7 +2,7 @@
 title: Returfrekvens
 description: Den paketerade tiden mellan det aktuella besöket och det föregående besöket.
 translation-type: tm+mt
-source-git-commit: 1869d69566d26aa7d99c520efc2e835901439d48
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -14,7 +14,9 @@ ht-degree: 0%
 
 Dimensionen &#39;Returfrekvens&#39; visar hur lång tid det tar mellan besöken och besökarna. När en besökare kommer tillbaka till er webbplats tittar Adobe på hur länge sedan det förra besöket var och låser träffen i rätt dimensionsvärde. Den här dimensionen är värdefull för att du ska kunna mäta webbplatsens attraktion och relevans för besökarna över tid. Det kan också hjälpa till att identifiera effekten av webbplatsens innehåll och kampanjer för besökarna.
 
->[!TIP] Denna dimension omfattar inte förstagångsbesökare.
+>[!TIP]
+>
+>Denna dimension omfattar inte förstagångsbesökare.
 
 ## Fyll den här dimensionen med data
 
