@@ -2,7 +2,10 @@
 title: pageType
 description: Kontrollera om den aktuella sidan är ett 404-fel.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 1%
 
 ---
 
@@ -11,7 +14,9 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Variabeln `pageType` är en flagga som används för att ange felsidor på webbplatsen, till exempel 404 fel. Om variabeln innehåller strängen `errorPage`fylls dimensionen &quot;Sidor hittades inte&quot; i.
 
->[!IMPORTANT] Ange inte den här variabeln på icke-felsidor.
+>[!IMPORTANT]
+>
+>Ange inte den här variabeln på icke-felsidor.
 
 ## Sidtyp i Adobe Experience Platform Launch
 
@@ -25,4 +30,6 @@ Variabeln `s.pageType` är en sträng där värdet `errorPage` är dess enda gil
 s.pageType = "errorPage";
 ```
 
->[!TIP] Använd en eVar för att samla in felkoden så att du kan få mer information om vilka specifika fel som besökarna stöter på på din webbplats.
+>[!TIP]
+>
+>Använd en eVar för att samla in felkoden så att du kan få mer information om vilka specifika fel som besökarna stöter på på din webbplats.
