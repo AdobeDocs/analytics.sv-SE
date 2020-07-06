@@ -1,11 +1,14 @@
 ---
 description: Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 keywords: Data Feed;job;metrics;pre column;post column;bots;date filtering;event string;common;formulas
-title: Beräkna mått
+title: Beräkna mätvärden
 topic: Reports and analytics
 uuid: a45ea5bb-7c83-468f-b94a-63add78931d7
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +17,9 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 
->[!IMPORTANT] Träffar som normalt inte ingår i Adobe Analytics ingår i dataflödena. Använd `exclude_hit > 0` för att ta bort uteslutna träffar från frågor om rådata. Data som samlats in ingår också i dataflöden. Om du vill utesluta datakällor ska du exkludera alla rader med `hit_source = 5,7,8,9`.
+>[!IMPORTANT]
+>
+>Träffar som normalt inte ingår i Adobe Analytics ingår i dataflödena. Använd `exclude_hit > 0` för att ta bort uteslutna träffar från frågor om rådata. Data som samlats in ingår också i dataflöden. Om du vill utesluta datakällor ska du exkludera alla rader med `hit_source = 5,7,8,9`.
 
 ## Sidvyer
 
@@ -25,7 +30,9 @@ Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num`och `visit_start_time_gmt`.
 1. Räkna det unika antalet värden.
 
->[!NOTE] Internets oegentligheter, systemoegentligheter eller användning av anpassade besökar-ID:n kan sällan använda samma `visit_num` värden för olika besök. Använd `visit_start_time_gmt` när du räknar besök för att se till att dessa besök räknas.
+>[!NOTE]
+>
+>Internets oegentligheter, systemoegentligheter eller användning av anpassade besökar-ID:n kan sällan använda samma `visit_num` värden för olika besök. Använd `visit_start_time_gmt` när du räknar besök för att se till att dessa besök räknas.
 
 ## Besökare
 
