@@ -1,16 +1,19 @@
 ---
 description: Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera och schemalägga kontrollpaneler för leverans.
 subtopic: Dashboards
-title: Kontrollpanelshanteraren
+title: Kontrollpanelshanterare
 topic: Reports and analytics
 uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
 translation-type: tm+mt
-source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 2%
 
 ---
 
 
-# Kontrollpanelshanteraren
+# Kontrollpanelshanterare
 
 Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera och schemalägga kontrollpaneler för leverans.
 
@@ -18,7 +21,7 @@ Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera och schemaläg
 >
 >Det bästa sättet att använda kontrollpanelshanteraren är att inte ha fler än 300 kontrollpaneler för en enskild användare. Observera även att hanteraren läser in alla delade instrumentpaneler nedan, så var klok med att dela instrumentpaneler.
 
-## Kontrollpanelshanteraren
+## Kontrollpanelshanterare
 
 Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera och schemalägga kontrollpaneler för leverans.
 
@@ -50,7 +53,7 @@ Steg som beskriver hur du använder alternativen för hantering av delade instru
  </tr> 
  <tr class="chrow strow"> 
   <td class="choption"><strong>Instrumentpanelsspelare</strong></td> 
-  <td class="chdesc stentry"> <p>SiteCatalyst 14-servrar kommer inte längre att svara på dataförfrågningar från Dashboard Player. Alla instrumentpaneler som för närvarande visas i Dashboard Player kan nås via standardgränssnittet Rapporter och analyser eller skapas om som en realtidsinstrumentpanel. Kontrollpaneler i realtid är särskilt utformade för kontinuerlig visning och har helskärmsläge så att du kan visa dem på tv-apparater eller andra stora skärmar. </p> <p>Användaråtgärd krävs: Du måste sluta använda Dashboard Player. </p> </td> 
+  <td class="chdesc stentry"> <p>SiteCatalyst 14-servrar kommer inte längre att svara på dataförfrågningar från Dashboard Player. Alla instrumentpaneler som för närvarande visas i Dashboard Player kan nås via standardgränssnittet Rapporter och Analytics eller återskapas som en realtidsinstrumentpanel. Kontrollpaneler i realtid är särskilt utformade för kontinuerlig visning och har helskärmsläge så att du kan visa dem på tv-apparater eller andra stora skärmar. </p> <p>Användaråtgärd krävs: Du måste sluta använda Dashboard Player. </p> </td> 
  </tr> 
  <tr class="chrow strow"> 
   <td class="choption"><strong>Copy Me</strong></td> 
@@ -70,11 +73,15 @@ Steg som beskriver hur du använder alternativen för hantering av delade instru
 
 Befintliga gamla kontrollpaneler kommer att fortsätta att köras och du kan fortfarande redigera, hämta och schemalägga dem; Du kan dock inte längre skapa nya gamla kontrollpaneler. Vi rekommenderar att du uppgraderar befintliga gamla kontrollpaneler till det nyare instrumentpanelsformatet.
 
->[!NOTE] Gå vidare, överväg att använda [Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) och möjligheten att hämta och schemalägga dem.
+>[!NOTE]
+>
+>Gå vidare, överväg att använda [Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) och möjligheten att ladda ned och planera dem.
 
 När du kopierar den äldre kontrollpanelen öppnas den äldre kontrollpanelen för redigering, där du kan lägga till äldre innehåll eller nytt innehåll. När du kopierar en äldre kontrollpanel bevaras originalet i listan med äldre kontrollpaneler.
 
->[!NOTE] När du lägger till äldre innehåll på en kontrollpanel skapas en kontrollpanel som baseras på den senaste kontrollpanelsfunktionen. Den äldre rapportleten kan dock innehålla data som baseras på den tidigare dataplattformen.
+>[!NOTE]
+>
+>När du lägger till äldre innehåll på en kontrollpanel skapas en kontrollpanel som baseras på den senaste kontrollpanelsfunktionen. Den äldre rapportleten kan dock innehålla data som baseras på den tidigare dataplattformen.
 
 **Så här migrerar du en äldre kontrollpanel i version 14.x**
 
@@ -108,7 +115,9 @@ I [!UICONTROL Dashboard Manager]kan du se om en kontrollpanel är schemalagd fö
 
 ## Arkivera en kontrollpanel
 
->[!NOTE] Den här funktionen kommer inte längre att vara tillgänglig i januari 2020.
+>[!NOTE]
+>
+>Den här funktionen kommer inte längre att vara tillgänglig i januari 2020.
 
 Steg som beskriver hur du arkiverar skickade kontrollpaneler som PDF-filer. Den arkiverade filen lagras i två år, eller tills du når en gräns på 4 GB för arkiverade rapporter, beroende på vilket som inträffar först.
 
