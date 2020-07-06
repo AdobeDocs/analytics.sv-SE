@@ -2,14 +2,17 @@
 title: t
 description: Skicka ett spårningsanrop för sidvy till Adobe.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
 
 # t()
 
-Metoden är en viktig `t()` komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobes datainsamlingsservrar.
+Metoden är en viktig `t()` komponent i Adobe Analytics. Den tar alla Analytics-variabler som definierats på sidan, kompilerar dem till en bildförfrågan och skickar dessa data till Adobes datainsamlingsservrar.
 
 Titta på följande JavaScript-kod:
 
@@ -25,7 +28,7 @@ s.eVar1 = "Example dimension value";
 s.t();
 ```
 
-När du kör `t()` metoden används alla definierade Analytics-variabler och en URL som baseras på dessa variabler skapas. Vissa analysvariabler bestämmer URL:en för bilden, medan andra variabler bestämmer parametervärden för frågesträngar.
+När du kör metoden används alla definierade Analytics-variabler och en URL som baseras på dessa variabler skapas. `t()` Vissa Analytics-variabler bestämmer URL:en för bilden, medan andra variabler bestämmer parametervärden för frågesträngar.
 
 ```text
 https://data.example.com/b/ss/examplersid/1/?v1=Example%20dimension%20value
@@ -33,7 +36,7 @@ https://data.example.com/b/ss/examplersid/1/?v1=Example%20dimension%20value
 
 Adobe tar emot bildbegäran och tolkar sedan parametrarna request header, URL och query string. Datainsamlingsservrar returnerar sedan en genomskinlig 1x1-pixelbild som visas osynligt på din webbplats.
 
-## Anrop om spårning av sidvy i Adobe Experience Platform Launch
+## Anrop till spårning av sidvy i Adobe Experience Platform Launch
 
 Launch har en dedikerad plats där ett spårningsanrop för sidvy har angetts.
 
@@ -41,8 +44,8 @@ Launch har en dedikerad plats där ett spårningsanrop för sidvy har angetts.
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Klicka på ikonen + [!UICONTROL Actions]under
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] &quot; [!UICONTROL Action Type] Skicka Beacon&quot;.
-6. Klicka på `s.t()` alternativknappen.
+5. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och välj [!UICONTROL Action Type] Skicka beacon.
+6. Click the `s.t()` radio button.
 
 ## s.t()-metoden i AppMeasurement och den anpassade kodredigeraren Launch
 
@@ -60,4 +63,6 @@ y.eVar1 = "Override value";
 s.t(y);
 ```
 
->[!NOTE] I tidigare versioner av AppMeasurement användes flera kodrader för att anropa den här funktionen. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Nu `s.t()` behövs bara metodanropet.
+>[!NOTE]
+>
+>I tidigare versioner av AppMeasurement användes flera kodrader för att anropa den här funktionen. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Nu `s.t()` behövs bara metodanropet.
