@@ -2,7 +2,10 @@
 title: Integrera modul
 description: Med Integrate Module kan Adobe-partners integrera sina datainsamlingsaktiviteter med din organisation.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '875'
+ht-degree: 3%
 
 ---
 
@@ -11,7 +14,9 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Med Integrate Module kan Adobe-partners integrera sina datainsamlingsaktiviteter med din organisation. Den här integreringen ger möjlighet till en dubbelriktad dataanslutning. Användningen av integreringsmodulen styrs vanligtvis av en Adobe-partner.
 
->[!NOTE] Om du begär partnerdata i implementeringen kan det öka fördröjningen mellan sidinläsning och data som skickas till Adobes datainsamlingsservrar. Om en besökare läser in en ny sida innan data skickas, registreras inte den sidan.
+>[!NOTE]
+>
+>Om du begär partnerdata i implementeringen kan det öka fördröjningen mellan sidinläsning och data som skickas till Adobes datainsamlingsservrar. Om en besökare läser in en ny sida innan data skickas, registreras inte den sidan.
 
 ## Integrera modularbetsflöde
 
@@ -28,17 +33,17 @@ En organisation som arbetar med en Adobe-partner kan använda dessa steg för at
 
 För att få tillgång till modulkod krävs en användare med produktadministratörsåtkomst eller som tillhör en produktprofil med tillgång till Code Manager. Metoden för att hämta modulkod är densamma för alla implementeringsmetoder, inklusive Adobe Experience Platform Launch.
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
+1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 1. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
-1. Klicka på [!UICONTROL Admin] > [!UICONTROL Code Manager]i den övre navigeringen.
+1. In the top navigation, click [!UICONTROL Admin] > [!UICONTROL Code Manager].
 1. Hämta det senaste JavaScript AppMeasurement-biblioteket.
 1. När du har laddat ned filen packar du upp den och letar upp `AppMeasurement_Module_Integrate.js`.
 
 ### Placera integreringsmodulen i implementeringen
 
-Att implementera integreringsmodulen på din webbplats kräver tillgång till Adobe Experience Platform Launch. Om du använder en äldre JavaScript-implementering måste du ha tillgång till organisationens källkod för webbplatsen.
+Du måste ha tillgång till Adobe Experience Platform Launch för att kunna implementera integreringsmodulen på din webbplats. Om du använder en äldre JavaScript-implementering måste du ha tillgång till organisationens källkod för webbplatsen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
+1. Log in to [launch.adobe.com](https://launch.adobe.com) using your Adobe ID credentials.
 2. Klicka på den Launch-egenskap som du vill redigera.
 3. Klicka på fliken Tillägg och sedan på Konfigurera under Adobe Analytics.
 4. Öppna dragspelet Konfigurera spåraren med egen kod och klicka sedan på &lt;/> Öppna redigerare.
@@ -74,7 +79,7 @@ Adobe arbetar internt med team för att dokumentera denna metod.
 
 ### get
 
-Med metoden kan `get` en klient importera partnervariabler och lagra dem i partnerobjektet. När data finns i partnerobjektet kan de tilldelas Analytics-variabler och skickas i en bildbegäran. Den här metoden anropar en URL som pekar på ett JSON-objekt som innehåller önskade data.
+Med metoden kan `get` en klient importera partnervariabler och lagra dem i partnerobjektet. När data finns i partnerobjektet kan de tilldelas till Analytics-variabler och skickas i en bildbegäran. Den här metoden anropar en URL som pekar på ett JSON-objekt som innehåller önskade data.
 
 ```JavaScript
 s.Integrate.<partner_name>.get("<url_to_json_object>?pid=value1&pid2=value2");
@@ -105,7 +110,7 @@ Din organisation arbetar vanligtvis tillsammans med en Adobe-partner för att fa
 
 ### setVars
 
-Med `setVars` metoden kan klienten fylla i Analytics-variabler med hämtade partnerdata. Partnerdata kan vara resultatet av en `get` metod, en statisk tilldelning eller någon annan mekanism som fyller i partnerobjektet med data.
+Med `setVars` metoden kan klienten fylla i Analytics-variabler med partnerdata som hämtats. Partnerdata kan vara resultatet av en `get` metod, en statisk tilldelning eller någon annan mekanism som fyller i partnerobjektet med data.
 
 ```JavaScript
 s.Integrate.<partner_name>.setVars = function (s,p) {
