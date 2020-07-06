@@ -2,10 +2,10 @@
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
 translation-type: tm+mt
-source-git-commit: 834783e4eae9100233afc164e2fabef96f089874
+source-git-commit: 0dfab8e0b48b6a3be40bd1e2b39636b53b71113f
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 1%
+source-wordcount: '757'
+ht-degree: 2%
 
 ---
 
@@ -14,23 +14,23 @@ ht-degree: 1%
 
 **Vad är radobjektet &quot;Inget&quot; när du använder attribuering?**
 
-Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som har gjorts utan några beröringspunkter i uppslagsfönstret. Försök att inkludera ett längre tidsintervall i rapportfönstret.
+Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som har gjorts utan några beröringspunkter i uppslagsfönstret. Om du vill minska antalet konverteringar som tilldelats radobjektet Ingen kan du prova att använda ett anpassat uppslagsfönster med en längre uppslagsperiod.
 
 **Varför ser jag ibland datum utanför mitt rapporteringsfönster när jag använder attribueringsmodeller?**
 
-Dessa extra datum beror på besökarens rapportfönster. Mer information finns i [Data som visas utanför rapportfönstret](https://helpx.adobe.com/analytics/kb/data-appearing-outside-reporting-window.html) i KB för analyser. Adobe planerar att filtrera bort de här extra raderna i en kommande release.
+Dessa extra datum beror på besökarens rapportfönster. Mer information finns i [Data som visas utanför rapportfönstret](https://helpx.adobe.com/analytics/kb/data-appearing-outside-reporting-window.html) i Analytics KB.
 
-**När ska jag använda ett besöks- eller besöksattribueringsbesök?**
+**När ska jag använda besök, besökare eller anpassad attribueringssökning?**
 
-Vilken attribueringslookback du väljer beror på ditt användningssätt. Om konverteringen tar längre tid än ett enda besök rekommenderar vi att besökaren tittar tillbaka. Att skapa ett virtuellt rapportpaket med en längre besöksdefinition är också en potentiell lösning.
+Vilken attribueringslookback du väljer beror på ditt användningssätt. Om konverteringen tar längre tid än ett besök rekommenderar vi besökare eller anpassat uppslag. För längre konverteringscykler är anpassade uppslagsfönster bäst eftersom de är den enda typ som kan hämta in data från före rapportfönstret
 
 **Hur är props och eVars jämfört när man använder attribuering?**
 
 Attribution beräknas om vid rapportkörning, så det finns ingen skillnad mellan prop eller eVar (eller någon annan dimension) för attribueringsmodelleringens skull. Props kan behållas med alla uppslagsfönster eller attribueringsmodeller, och eVar-allokerings-/förfalloinställningar ignoreras.
 
-**Finns det attribueringsmodeller i andra analysfunktioner, som dataflöden eller datalager?**
+**Finns det några attribueringsmodeller i andra Analytics-funktioner, som Data Feeds och Data warehouse?**
 
-Nej. I attribueringsmodeller används rapporttidsbearbetning, som bara är tillgänglig i Analysis Workspace. Mer information finns i [Tidsbearbetning](/help/components/vrs/vrs-report-time-processing.md) för rapport.
+Nej. I attribueringsmodeller används rapporttidshantering, som bara är tillgänglig i Analysis Workspace. Mer information finns i [Tidsbearbetning](/help/components/vrs/vrs-report-time-processing.md) för rapport.
 
 **Är attribueringsmodeller bara tillgängliga om jag använder en virtuell rapportsvit med rapporttidsbearbetning aktiverad?**
 
@@ -46,14 +46,14 @@ Attributpanelen har stöd för alla dimensioner. Mätvärden som inte stöds är
 * Sidvisningar
 * A4T-mått
 * Tidsmått
-* studsar
+* Studsar
 * Studsfrekvens
-* Poster
-* Avslutar
-* Sidorna hittades inte
+* Första besökssida
+* Sista besökssida
+* Sidor som inte hittades
 * Sökningar
 * Besök på en sida
-* Enkel åtkomst
+* Enkelt besök
 
 **Fungerar attribuering med klassificeringar?**
 
@@ -61,7 +61,7 @@ Ja, klassificeringar stöds fullt ut.
 
 **Fungerar attribuering med datakällor?**
 
-Ja, de flesta datakällor stöds. Attribuering är inte möjligt med datakällor på sammanfattningsnivå eftersom de inte är kopplade till en besöksidentifierare för Analytics. Datakällor för transaktions-ID stöds också, såvida de inte används i en virtuell rapportsvit med rapporttidsbearbetning aktiverad.
+Ja, de flesta datakällor stöds. Attribuering är inte möjligt med datakällor på sammanfattningsnivå eftersom de inte är kopplade till en Analytics-besökaridentifierare. Datakällor för transaktions-ID stöds också, såvida de inte används i en virtuell rapportsvit med rapporttidsbearbetning aktiverad.
 
 **Fungerar attribuering med Advertising Analytics-integrering?**
 
