@@ -1,37 +1,42 @@
 ---
-title: Komponentstöd i datalagret
-description: Lär dig vilka ytterligare mått och mätvärden som finns i datalagret och vad som inte stöds.
+title: Komponentstöd i Data warehouse
+description: Lär dig vilka ytterligare mått och mätvärden som finns i Data warehouse och vad som inte stöds.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 4%
 
 ---
 
 
-# Komponentstöd i datalagret
+# Komponentstöd i Data warehouse
 
-Data Warehouse unika bearbetningsarkitektur tillåter vissa komponenter som vanligtvis inte är tillgängliga i andra funktioner i Adobe Analytics. På grund av sin unika arkitektur är vissa komponenter inte tillgängliga för användning i vare sig rapporter eller segment. Använd den här sidan för att förstå vad som kan användas och vad som inte kan användas.
+Data warehouse unika bearbetningsarkitektur tillåter vissa komponenter som vanligtvis inte är tillgängliga i andra funktioner i Adobe Analytics. På grund av sin unika arkitektur är vissa komponenter inte tillgängliga för användning i vare sig rapporter eller segment. Använd den här sidan för att förstå vad som kan användas och vad som inte kan användas.
 
-## Komponenter som är unika för datalagret
+## Komponenter som är unika för Data warehouse
 
-Vissa dimensioner och mätvärden kan användas i datalagret, medan de inte är tillgängliga med andra funktioner i Adobe Analytics.
+Vissa mått och mätvärden kan användas i Data warehouse, men de är inte tillgängliga med andra funktioner i Adobe Analytics.
 
 ### Endast dimensioner som stöds
 
-* Experience Cloud-ID: För implementeringar som använder Experience Cloud ID Service (ECID) är ett 128-bitarsnummer bestående av två sammanfogade 64-bitarsnummer som fyllts i med 19 siffror.
+* Experience Cloud-ID: För implementeringar som använder Experience Cloud ID Service (ECID), ett 128-bitars nummer som består av två sammanfogade 64-bitars nummer som fylls på med 19 siffror.
 * Sidans URL: Sidans URL som träffen inträffade på.
 * Inköps-ID: Unik identifierare för ett inköp, angiven med variabeln purchaseID.
 * Besökar-ID: Anger besökarens unika identifierare. Det här värdet är samma som sammanfogade värden för `visid_high` och `visid_low` kolumner i dataflöden. Mer information finns i [Datakolumnreferens](../analytics-data-feed/c-df-contents/datafeeds-reference.md) under Dataflöden.
 
 ### Endast mått som stöds
 
-* Besök: Detta mått i samband med datalagret utesluter icke-beständiga cookie-besök.
-* Besök - alla besökare: Detta mått i samband med datalagret är närmare paritet med besöksmätningen i andra verktyg i Adobe Analytics.
+* Besök: Detta mått i samband med Data warehouse utesluter icke-permanenta cookie-besök.
+* Besök - alla besökare: Detta mätresultat i samband med Data warehouse är närmare paritet med besöksmätningen i andra verktyg i Adobe Analytics.
 
-## Komponenter som inte stöds i datalagret
+## Komponenter som inte stöds i Data warehouse
 
-Vissa dimensioner och mått stöds inte i datalagret.
+Vissa mått och mätvärden stöds inte i Data warehouse.
 
->[!NOTE] Om en dimension eller ett mått inte stöds i datalagret stöds inte heller segment som använder dessa komponenter. Kontrollera alltid produktkompatibilitet när du skapar eller redigerar ett segment.
+>[!NOTE]
+>
+>Om en dimension eller ett mätvärde inte stöds i Data warehouse stöds inte heller segment som använder dessa komponenter. Kontrollera alltid produktkompatibilitet när du skapar eller redigerar ett segment.
 
 ### Dimensioner stöds inte
 
@@ -50,7 +55,7 @@ Vissa dimensioner och mått stöds inte i datalagret.
    * Alla inmatningsdimensioner, utom inmatningssida
    * Alla avslutningsdimensioner, utom Avsluta sida och Avsluta länk
    * Träff-djup
-   * Returfrekvens
+   * Återbesöksfrekvens
    * Tid före händelse
    * Tid som använts på sidan - paketerad
    * Tid per besök - paketerad
@@ -67,9 +72,9 @@ Vissa dimensioner och mått stöds inte i datalagret.
 ### Mått stöds inte
 
 * Några målningsbaserade mätvärden, bland annat:
-   * studsar
-   * Poster
-   * Avslutar
-   * Läs in igen
-   * Enkel åtkomst
+   * Studsar
+   * Första besökssida
+   * Sista besökssida
+   * Siduppdateringar
+   * Enkelt besök
    * Mätvärden för tidsåtgång
