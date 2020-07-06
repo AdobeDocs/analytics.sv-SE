@@ -2,7 +2,10 @@
 title: purchaseID
 description: Deduplicera träffar baserat på en unik inköpsidentifierare.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
@@ -29,4 +32,6 @@ Denna variabel kan lagra högst 20 byte; värden som är längre än 20 byte tru
 s.purchaseID = "ABC123";
 ```
 
->[!NOTE] Använd inte en slumpgenereringsfunktion för att generera ett köp-ID. Adobe rekommenderar att du använder ett [datalager](../../prepare/data-layer.md) för att lagra ett visst köp-ID.
+>[!NOTE]
+>
+>Använd inte en slumpgenereringsfunktion för att generera ett köp-ID. Adobe rekommenderar att du använder ett [datalager](../../prepare/data-layer.md) för att lagra ett visst köp-ID.
