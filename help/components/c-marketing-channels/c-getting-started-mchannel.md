@@ -2,7 +2,10 @@
 title: Kom igång med marknadsföringskanaler
 description: Lär dig mer om arbetsflödet för marknadsföringskanaler, den automatiska konfigurationen och hur du tillämpar mallrapportsvitsinställningar på flera rapportsviter.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 2%
 
 ---
 
@@ -72,9 +75,11 @@ Så här kör du den automatiska konfigurationen av marknadsföringskanalerna.
 
 ## Använd mallrapportsvitsinställningar på flera rapportsviter
 
-Så här använder du en huvudrapportsserie som mall för att testa konfigurationen av marknadsföringskanalen. Du kan spara tid genom att använda den här mallen på en eller flera produktionsrapportsviter i en massuppdatering. Du utför den här uppgiften för kanaler och regeluppsättningar separat.
+Så här använder du en överordnad rapportsvit som mall för att testa konfigurationen av marknadsföringskanalen. Du kan spara tid genom att använda den här mallen på en eller flera produktionsrapportsviter i en massuppdatering. Du utför den här uppgiften för kanaler och regeluppsättningar separat.
 
->[!NOTE] Använd kanaler från en mall innan du använder regeluppsättningar. Kanalerna måste vara desamma i alla rapportsviter när du utför den här proceduren.
+>[!NOTE]
+>
+>Använd kanaler från en mall innan du använder regeluppsättningar. Kanalerna måste vara desamma i alla rapportsviter när du utför den här proceduren.
 
 1. Kontrollera att Marketing Channel-rapporten är aktiverad för valda rapportsviter. Kontohanteraren utför det här steget.
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
