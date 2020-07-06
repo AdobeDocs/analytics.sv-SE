@@ -1,8 +1,11 @@
 ---
 title: Realtidsrapporter i Adobe Analytics
-description: Lär dig hur du kan hämta realtidsrapporter i Adobe Analytics, som riktar sig till användare som är mer bekanta med Google Analytics.
+description: Lär dig hur du kan dra igång realtidsrapporter i Adobe Analytics som är avsedda för användare som är mer bekanta med Google Analytics.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 0%
 
 ---
 
@@ -13,11 +16,11 @@ Realtidsrapporter visar vad som händer på er webbplats just nu. Den här typen
 
 ![Realtidsrapport](/help/technotes/ga-to-aa/assets/realtime.png)
 
-Realtidsrapporter är en av de få funktioner som ännu inte finns i Analysis Workspace. Använd Rapporter och analyser för att hämta dessa data. De kräver en viss enkel konfiguration för att börja samla in data.
+Realtidsrapporter är en av de få funktioner som ännu inte lagts in i Analysis Workspace. Använd Rapporter och Analytics för att hämta dessa data. De kräver en viss enkel konfiguration för att börja samla in data.
 
 Så här når du rapportkonfigurationssidan i realtid (administratörsbehörighet krävs):
 
-1. Klicka [!UICONTROL Reports] i rubriknavigeringen i Adobe Analytics.
+1. Klicka [!UICONTROL Reports] i sidhuvudsnavigeringen i Adobe Analytics.
 2. Klicka på *[!UICONTROL Site Metrics]* > *[!UICONTROL Real-Time]* i den vänstra menyn.
 3. Om rapportsviten ännu inte har aktiverats i realtid visas ett meddelande med en länk för att konfigurera rapportsviten. Om rapportsviten har aktiverats i realtid klickar du [!UICONTROL Configure] nära rapportens titel i realtid.
 
@@ -63,13 +66,15 @@ I realtid visas vilka sidor besökarna tittar på. Så här konfigurerar du en a
 
 ## Händelser i realtid
 
-Händelser i realtid talar om vilka händelser som inträffar mest på er webbplats. I Google Analytics hämtar en händelse det antal gånger en specifik åtgärd (vanligtvis en åtgärd som inte har med sidvyn att göra) har utförts. GA-händelser skickas med en kategori, etikett och åtgärd. I Adobe Analytics är anpassade händelser mätvärden som får egna namn i Admin Console och kan analyseras tillsammans med alla dimensioner. Om du är ute efter en dimension i Adobe Analytics som liknar Google Analytics-händelser kan du överväga att använda dimensionen Custom Link, som ofta används som en catch-all för att samla in data som inte har med sidvisningar att göra (utöver Exit Links - for Exits - and Download Links - for Downloads).
+Händelser i realtid talar om vilka händelser som inträffar mest på er webbplats. I Google Analytics hämtar en händelse det antal gånger en specifik åtgärd (vanligtvis en åtgärd som inte hör till en sidvy) har utförts. GA-händelser skickas med en kategori, etikett och åtgärd. I Adobe Analytics är anpassade händelser mått som får egna namn i Admin Console och kan analyseras tillsammans med alla dimensioner. Om du letar efter en dimension i Adobe Analytics som liknar Google Analytics-evenemang kan du överväga att använda dimensionen Custom Link, som ofta används som en catch-all för att samla in data som inte har med sidvisningar att göra (förutom Avsluta länkar - för Avsluta - och Hämta länkar - för nedladdningar).
 
->[!NOTE] När du använder anpassade händelser i realtidsrapporter måste dimensionsvärdet definieras i samma träff som den anpassade händelsen. Om du till exempel visar en anpassad registreringshändelse för dimensionen Referensdomän, returneras inga data utan ytterligare implementering. Eftersom referensdomänen bara visas vid den första träffen och en anpassad händelse normalt visas senare under besöket, kan data inte kopplas till realtidsrapporter. Dessa data är tillgängliga via Analysis Workspace med standardsvarstid, som vanligtvis är 30-90 minuter.
+>[!NOTE]
+>
+>När du använder anpassade händelser i realtidsrapporter måste dimensionsvärdet definieras i samma träff som den anpassade händelsen. Om du till exempel visar en anpassad registreringshändelse för dimensionen Referensdomän, returneras inga data utan ytterligare implementering. Eftersom referensdomänen bara visas vid den första träffen och en anpassad händelse normalt visas senare under besöket, kan data inte kopplas till realtidsrapporter. Dessa data är tillgängliga via Analysis Workspace med standardfördröjning, som vanligtvis är 30-90 minuter.
 
 ## Konverteringar i realtid
 
-Realtidskonverteringar genererar data på olika plattformar. Google Analytics-målsättningarna liknar mätvärden och framgångsrika händelser i Adobe Analytics. Ni kan använda de flesta mätvärden i Adobe Analytics (både anpassade mätvärden som success events och standardmätvärden som revenue) i realtidsrapporter. På samma sätt som med Google Analytics kan ni också tillämpa dimensioner som produktnamn, spårningskod och kampanjresultat i realtidsrapporter.
+Realtidskonverteringar genererar data på olika plattformar. Googles mål i Google Analytics liknar mätvärden och framgångshändelser i Adobe Analytics. Du kan använda de flesta mätvärden i Adobe Analytics (både anpassade mätvärden som framgångshändelser och standardmätvärden som intäkter) i Real Time Reports. På samma sätt som med Google Analytics kan du även använda dimensioner som produktnamn, spårningskod och kampanjresultat i realtidsrapporter.
 
 1. Klicka [!UICONTROL Configure] nära rubriken för realtidsrapporten.
 2. Under en av rapportplatserna i realtid:
@@ -79,4 +84,6 @@ Realtidskonverteringar genererar data på olika plattformar. Google Analytics-m�
    * För de två sekundära dimensionerna använder du de önskade ytterligare data som du vill se för den här trafiken. Sekundära dimensioner behöver inte vara specifika för konverteringar.
 3. Klicka på [!UICONTROL Save and View Report].
 
->[!NOTE] Om du använder händelser utanför instanser, t.ex. beställningar, måste implementeringen definiera dimensionen och händelsen för samma träff. Om dimensioner och händelser inte utlöses vid samma träff är dessa data tillgängliga i Analysis Workspace med standardfördröjning för bearbetning, som vanligtvis är 30-90 minuter.
+>[!NOTE]
+>
+>Om du använder händelser utanför instanser, t.ex. beställningar, måste implementeringen definiera dimensionen och händelsen för samma träff. Om dimensioner och händelser inte utlöses vid samma träff är dessa data tillgängliga i Analysis Workspace med standardfördröjning, som vanligtvis är 30-90 minuter.
