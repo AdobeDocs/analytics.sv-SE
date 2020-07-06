@@ -1,15 +1,18 @@
 ---
 description: Steg för att köra de olika rapporttyperna.
-title: Kör olika rapporttyper
+title: Köra olika rapporttyper
 topic: Reports,Reports and analytics
 uuid: f59ab2a1-e916-46e8-bb5b-e6361ba00dda
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '2276'
+ht-degree: 4%
 
 ---
 
 
-# Kör olika rapporttyper
+# Köra olika rapporttyper
 
 Steg för att köra de olika rapporttyperna.
 
@@ -71,7 +74,7 @@ t_reports_fallout.xml
 
  -->
 
-Kolla in den nya panelen [Utfallsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
+Ta en titt på den nya panelen [Utfallsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
 
 1. I [!UICONTROL Adobe Analytics]klickar du på **[!UICONTROL Reports]** > **[!UICONTROL Paths]** > **[!UICONTROL Pages]** > **[!UICONTROL Fallout]**.
 1. På [!UICONTROL Fallout Report] sidan klickar du på **[!UICONTROL Launch the Fallout Report Builder]**.
@@ -92,7 +95,7 @@ Kolla in den nya panelen [Utfallsanalys](https://docs.adobe.com/content/help/en/
 
 Sidflödesrapporter visar i vilken ordning besökarna kommer åt sidorna och navigerar på webbplatsen. Den här rapporten hjälper dig att svara
 
-Kolla in den nya [flödesvisualiseringen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
+Kolla in den nya [Flow-visualiseringen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
 
 Kör en [rapport om sökvägar](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-paths.html) .
 
@@ -144,11 +147,13 @@ t_anomaly_view.xml
 
  -->
 
-Ta en titt på de nya funktionerna för avvikelseidentifiering och [bidragsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) i Analysis Workspace!
+Ta en titt på de nya funktionerna för avvikelseidentifiering och bidragsanalys [](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) i Analysis Workspace!
 
 **[!UICONTROL Reports]** > **[!UICONTROL Site Metrics]** > **[!UICONTROL Anomaly Detection]** .
 
->[!NOTE] Du kan också köra avvikelseidentifiering i Analysis Workspace-projekt. [Mer ...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html)
+>[!NOTE]
+>
+>Du kan också köra avvikelseidentifiering inifrån Analysis Workspace-projekt. [Mer...](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html)
 
 Information om hur du ställer in avvikelseidentifiering finns i [referenshandboken](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html#Setting_up_Anomaly_Detection).
 
@@ -219,7 +224,7 @@ Du ställer in avvikelseidentifiering oberoende av rapportsviten.
 
    ![](assets/view_training_periods.png)
 
-   Kom ihåg att:
+   Kom ihåg:
 
 * Utbildningsperioden avslutas precis innan vyperioden börjar.
 * Standardvärdet för båda är 30 dagar, och du kan utöka dem till 60 eller 90 dagar.
@@ -230,7 +235,7 @@ Du ställer in avvikelseidentifiering oberoende av rapportsviten.
 
    ![](assets/ad_top_menu.png)
 
-   Mer information om hur du skapar och hanterar segment finns i [segmentguiden](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) för analys. 1. (Valfritt) Favorit eller bokmärk rapporten.
+   Mer information om hur du skapar och hanterar segment finns i [Analytics Segmenteringshandbok](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) . 1. (Valfritt) Favorit eller bokmärk rapporten.
 1. (Valfritt) Ändra slutdatumet för visningsperioden. Standardvärdet är igår.
 1. Nu kan du börja tolka rapporten. [Visa avvikelseidentifieringsdiagram](/help/analyze/reports-analytics/t-running-report-types.md#task_4808C96327354D789C075823F5C3A049).
 
@@ -248,7 +253,7 @@ reports_realtime.xml
 
 Realtidsrapportering innehåller två huvudrapporter - en översiktsrapport och en detaljrapport. De består av ett antal rapporter.
 
-Information om hur du konfigurerar realtidsrapporter finns i [referenshandboken](https://docs.adobe.com/content/help/en/analytics/landing/home.html#RealTime_Reports_Configuration)för analyser.
+Mer information om hur du konfigurerar realtidsrapporter finns i [Analytics Reference Guide](https://docs.adobe.com/content/help/en/analytics/landing/home.html#RealTime_Reports_Configuration).
 
 1. Ta en titt på **[!UICONTROL Overview]** rapporten och dess komponenter:  ![](assets/rtr_overview_report.png)
 
