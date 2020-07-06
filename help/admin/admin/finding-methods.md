@@ -4,7 +4,10 @@ title: Sökmetoder
 topic: Admin tools
 uuid: 1053993e-7fc4-4874-84fa-367ecdcd7b45
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 1%
 
 ---
 
@@ -31,7 +34,7 @@ På sidan Sökmetoder visas hur olika sökmetoder rapporterar om konverteringsfr
   </tr> 
   <tr> 
    <td colname="col1"> Allokering </td> 
-   <td colname="col2"> Anger hur du ska kreditera en referens. Allokeringsalternativ som stöds är: <p> <span class="uicontrol"> Senaste (senaste): </span> Ger all kredit till den sista referenten (standard). </p> <p> <span class="uicontrol"> Originalvärde: </span> Ger all kredit till den första referenten. </p> <p> <span class="uicontrol"> Linjär: Även </span>krediterna delas upp mellan alla referenter. </p> </td> 
+   <td colname="col2"> Anger hur du ska kreditera en referens. Allokeringsalternativ som stöds är: <p> <span class="uicontrol"> Senaste (senaste): </span> Ger all kredit till den sista referenten (standard). </p> <p> <span class="uicontrol"> Originalvärde: </span> Ger all kredit till den första referenten. </p> <p> <span class="uicontrol"> Linjär: </span>Dividerar kredit mellan alla referenter lika. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Förfaller efter </td> 
@@ -40,10 +43,10 @@ På sidan Sökmetoder visas hur olika sökmetoder rapporterar om konverteringsfr
      <li id="li_C240460C21E14AA498D2EA62B9354710"> <span class="uicontrol"> Besök: </span> Efter en angiven inaktivitetsperiod. vanligen cirka 30 minuter. </li> 
      <li id="li_A3AE5438919E44B68DF99BEEA60C44EE"> <span class="uicontrol"> Sidvy: </span> Så snart en sida på webbplatsen öppnas. </li> 
      <li id="li_D5E20FEF313E4C5B99E7097CA175761A"> <span class="uicontrol"> Minut: </span> Efter en minuts inaktivitet. </li> 
-     <li id="li_7315AA3EDDBB47A2BEA3C173881378A1"> <span class="uicontrol"> Köp: </span> Vid köptillfället. </li> 
-     <li id="li_C0CF07581654472C9C9EC944E6F18164"> <span class="uicontrol"> Produktvy: </span> När en besökare visar en produktwebbsida. </li> 
+     <li id="li_7315AA3EDDBB47A2BEA3C173881378A1"> <span class="uicontrol"> Köp: </span> Vid inköpstillfället. </li> 
+     <li id="li_C0CF07581654472C9C9EC944E6F18164"> <span class="uicontrol"> Produktvy: </span> När en besökare tittar på en produktwebbsida. </li> 
      <li id="li_A1B04065150B407491D2EC78EC0DBDF5"> <span class="uicontrol"> Öppen kundvagn: </span> När en besökare öppnar en ny kundvagn online. </li> 
-     <li id="li_2AA50C6B9CB14500B67909CDF2AA700C"> <span class="uicontrol"> Kassa: </span> När en besökare checkar ut via en kundvagn online. </li> 
+     <li id="li_2AA50C6B9CB14500B67909CDF2AA700C"> <span class="uicontrol"> Kassa: </span> När en besökare checkar ut med en kundvagn online. </li> 
      <li id="li_F58CE6FB8DCE4BE4927FFCB35A6D8E31"> <span class="uicontrol"> Kundvagn: </span> När en besökare lägger till en produkt i en kundvagn online. </li> 
      <li id="li_AD7C846F46604FC48E0919ACB7515E14"> <span class="uicontrol"> Ta bort kundvagn: </span> När en besökare tar bort en produkt från en kundvagn online. </li> 
      <li id="li_EB66E0563F564C9F985BE922DABD0A56"> <span class="uicontrol"> Öppen kundvagn: </span> När en besökare visar innehållet i en kundvagn online. </li> 
@@ -52,5 +55,7 @@ På sidan Sökmetoder visas hur olika sökmetoder rapporterar om konverteringsfr
  </tbody> 
 </table>
 
->[!NOTE] Alla sökmetoder upphör att gälla när besöket avslutas. Om du väljer att förfalla efter en annan händelse (t.ex. kundvagnsutcheckning) förfaller sökmetoden när kundvagnsutcheckning inträffar under besöket. Om en kundvagnsutcheckning inte inträffar under besöket förfaller ändå sökmetoden när besöket avslutas.
+>[!NOTE]
+>
+>Alla sökmetoder upphör att gälla när besöket avslutas. Om du väljer att förfalla efter en annan händelse (t.ex. kundvagnsutcheckning) förfaller sökmetoden när kundvagnsutcheckning inträffar under besöket. Om en kundvagnsutcheckning inte inträffar under besöket förfaller ändå sökmetoden när besöket avslutas.
 
