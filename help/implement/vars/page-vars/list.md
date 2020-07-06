@@ -1,25 +1,30 @@
 ---
-title: list
+title: lista
 description: Anpassade variabler som innehåller flera värden i samma träff.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
 
-# list
+# lista
 
 Listvariabler är anpassade variabler som du kan använda hur du vill. De fungerar på liknande sätt som eVars, förutom att de kan innehålla flera värden i samma träff. Listvariabler har ingen teckengräns.
 
 Se till att du spelar in hur du använder varje listvariabel och deras logik i [lösningsdesigndokumentet](../../prepare/solution-design.md).
 
->[!NOTE] Listvariabler lagrar de senaste 250 värdena per besökare. Om det finns mer än 250 unika värden för en viss besökare, tillskrivs de äldsta värdena inte mätvärden.
+>[!NOTE]
+>
+>Listvariabler lagrar de senaste 250 värdena per besökare. Om det finns mer än 250 unika värden för en viss besökare, tillskrivs de äldsta värdena inte mätvärden.
 
 ## Ställ in listvariabler i rapportsvitens inställningar
 
 Se till att du konfigurerar varje listvariabel i inställningarna för rapportsviten innan du använder dem i implementeringen. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/list-var-admin.md) i administrationshandboken.
 
-## Lista variabler i Adobe Experience Platform Launch
+## Listvariabler i Adobe Experience Platform Launch
 
 Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
@@ -32,7 +37,9 @@ Varje listvariabel är en sträng som innehåller anpassade värden som är spec
 s.list1 = "Example value 1,Example value 2,Example value 3";
 ```
 
->[!TIP] Om du anger dubblettvärden i samma träff, dupliceras alla förekomster av dessa värden. Om du till exempel anger `s.list1 = "Example,Example";`räknas en instans i rapporter.
+>[!TIP]
+>
+>Om du anger dubblettvärden i samma träff, dupliceras alla förekomster av dessa värden. Om du till exempel anger `s.list1 = "Example,Example";`räknas en instans i rapporter.
 
 ## Jämför listekurser med listvariabler
 
