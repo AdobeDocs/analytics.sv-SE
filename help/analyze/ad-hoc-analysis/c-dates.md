@@ -3,7 +3,10 @@ description: I kalendern kan du ange datum och datumintervall eller välja en f�
 title: Datum och datumintervall
 uuid: 8f099db7-e74b-4384-ac46-61a545f1dd62
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '453'
+ht-degree: 2%
 
 ---
 
@@ -18,13 +21,15 @@ I kalendern kan du ange datum och datumintervall eller välja en förinställnin
 
 ![](assets/Delete_Standard.png) Ett aktiverat **[!UICONTROL Clear Date]** alternativ anger att ett datumintervall har angetts på rapportnivå.
 
-Du kan också dra datum (och tidsdimensioner) till rapporten eller [!UICONTROL Table Builder]. Du kan välja specifika dagar, veckor, månader, år eller rullande datum. Om du använder den anpassade kalendern i marknadsföringsrapporter och analyser ärver en rapportsvit dessa inställningar och uppdaterar rapporten därefter.
+Du kan också dra datum (och tidsdimensioner) till rapporten eller [!UICONTROL Table Builder]. Du kan välja specifika dagar, veckor, månader, år eller rullande datum. Om du använder den anpassade kalendern i marketing reports and analytics ärver en rapportsvit dessa inställningar och uppdaterar rapporten därefter.
 
 När du väljer ett datumintervall när du skapar ett projekt kommer förkonfigurerat till vänster att ange ett rullande datum medan kalendern till höger inte används. Ett enkelt sätt att se om datumintervallet är rullande är att ange &quot;Datumintervallet kommer att rulla&quot; bredvid **[!UICONTROL OK]** knappen.
 
 ![](assets/daterange.jpeg)
 
->[!NOTE] Kontakta din kontoansvarige om du behöver hjälp med att köra äldre rapporter.
+>[!NOTE]
+>
+>Kontakta din kontoansvarige om du behöver hjälp med att köra äldre rapporter.
 
 ## Äldre datumsegment {#concept_53AA34DB3CE647608CAF4B41D6EAF45E}
 
@@ -41,5 +46,7 @@ c_legacy_data.xml
 1. [Skapa](/help/analyze/ad-hoc-analysis/c-getting-started.md) eller öppna ett projekt.
 1. Öppna [kalendern](/help/analyze/ad-hoc-analysis/c-dates.md)och välj **[!UICONTROL Quarter]** eller **[!UICONTROL Year]**.
 
->[!NOTE] Historiska datumsegment är begränsade för kvartal och år. Du kan inte visa data som passerar gränsen mellan äldre segment och den nya bearbetningsplattformen. Datumintervall som sträcker sig över båda resulterar i ett fel. Datumintervallen gäller dessutom bara den gregorianska kalendern, inte den anpassade kalendern.
+>[!NOTE]
+>
+>Historiska datumsegment är begränsade för kvartal och år. Du kan inte visa data som passerar gränsen mellan äldre segment och den nya bearbetningsplattformen. Datumintervall som sträcker sig över båda resulterar i ett fel. Datumintervallen gäller dessutom bara den gregorianska kalendern, inte den anpassade kalendern.
 
