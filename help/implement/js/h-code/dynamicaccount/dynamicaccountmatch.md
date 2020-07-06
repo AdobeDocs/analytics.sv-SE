@@ -2,14 +2,19 @@
 title: dynamicAccountMatch
 description: Variabeln dynamicAccountMatch bestämmer vilket värde som ska användas i dynamiska konton.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 2%
 
 ---
 
 
 # dynamicAccountMatch
 
->[!IMPORTANT] Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Launch.
+>[!IMPORTANT]
+>
+>Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Launch.
 
 Variabeln `dynamicAccountMatch` är det värde som `dynamicAccountList` tittar på och jämför dess värden. Om `dynamicAccountSelection` inte anges till `true`ignoreras variabeln.
 
