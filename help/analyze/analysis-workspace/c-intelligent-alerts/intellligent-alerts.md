@@ -3,7 +3,10 @@ description: Det nya systemet för intelligenta aviseringar ger mer exakt kontro
 title: Översikt över intelligenta aviseringar
 uuid: b9bf75ad-bb6f-49fe-8c55-355ea3c50a71
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 10%
 
 ---
 
@@ -16,12 +19,12 @@ Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar
 
 ## Översikt
 
-Den nya varningsfunktionen och varningsfunktionen i Analysis Workspace ersätter den befintliga varningsfunktionen i Rapporter och analyser. Med intelligenta aviseringar kan du:
+Den nya varningsfunktionen i Analysis Workspace ersätter den befintliga varningsfunktionen i Rapporter och Analytics. Med intelligenta aviseringar kan du:
 
 * Skapa aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %), % förändring, ovanför/nedanför)
-* Förhandsgranska hur ofta en varning utlöses
+* Förhandsgranska hur ofta en avisering utlöses
 * Skicka aviseringar via e-post eller SMS med länkar till automatiskt genererade Analysis Workspace-projekt
-* Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
+* Skapa ”staplade” aviseringar som omfattar flera mätvärden i en enda avisering
 
 Det finns fyra sätt att komma åt Varningsverktyget:
 
@@ -31,13 +34,15 @@ Det finns fyra sätt att komma åt Varningsverktyget:
 
    ![Skapa avisering från markering](assets/create-alert-from-selection.png)
 
-* I en rapport från Rapporter och analyser går du till **[!UICONTROL More]** > **[!UICONTROL Add Alert]** . Detta öppnar varningsverktyget och fyller i relevanta mått och filter som tillämpas från rapporten. Du kan redigera varningen vid behov.
+* I en rapport från Reports &amp; Analytics går du till **[!UICONTROL More]** > **[!UICONTROL Add Alert]** . Detta öppnar varningsverktyget och fyller i relevanta mått och filter som tillämpas från rapporten. Du kan redigera varningen vid behov.
 
    ![Lägg till avisering](assets/add-alert.png)
 
 Procenttröskelvärdena är standardavvikelser. Exempel: 95 % = 2 standardavvikelser och 99 % = 3 standardavvikelser. Beroende på hur lång tid du väljer används [olika modeller](../virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md) för att beräkna hur långt bort (hur många standardavvikelser) varje datapunkt ligger från normen. Om du anger ett lägre tröskelvärde (till exempel 90 %) får du fler avvikelser än om du anger ett högre tröskelvärde (99,75 %).
 
->[!IMPORTANT] Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
+>[!IMPORTANT]
+>
+>Om du använder tidsstämplade data för att skapa varningar kan det leda till att varningar utlöses felaktigt. Adobe rekommenderar att man använder data som inte är tidsstämplade för intelligenta aviseringar.
 
 ## Analys av varningar
 
