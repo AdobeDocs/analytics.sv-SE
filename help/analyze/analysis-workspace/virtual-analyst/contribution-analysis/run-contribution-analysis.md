@@ -1,21 +1,21 @@
 ---
 description: 'null'
-title: Kör bidragsanalys
+title: Köra bidragsanalys
 uuid: 5282a5f9-0771-4974-93cb-335204bde114
 translation-type: tm+mt
-source-git-commit: 333dc32e6dbb39b9acb9350ac23499993979a85c
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Kör bidragsanalys
+# Köra bidragsanalys
 
-Bidragsanalys är en intensiv maskininlärningsprocess som utformats för att identifiera medverkande till en iakttagen avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
+Contribute Analysis är en intensiv maskininlärningsprocess som är utformad för att identifiera medverkande till en konstaterad avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
 
-## Kör bidragsanalys {#section_7D2C5E48A5664727941DF4C90976D9DC}
+## Köra bidragsanalys {#section_7D2C5E48A5664727941DF4C90976D9DC}
 
 Det finns två sätt att anropa bidragsanalys i ett projekt:
 
@@ -34,7 +34,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 1. (Valfritt) När du har klickat **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen genom att [utesluta dimensioner](#section_F6932F4BF74544B5872164E7B1E0C6FC).
 
 1. Vänta medan din bidragsanalys läses in. Detta kan ta lång tid, beroende på rapportsvitens storlek och antalet dimensioner. Bidragsanalys utför analyser på de 50 000 främsta objekten per dimension.
-1. Analysis Workspace läser sedan in en ny Contribute Analysis-panel direkt i det här projektet. Du kommer att märka en mängd välbekanta paneler om du har använt bidragsanalys i rapporter och analyser tidigare:
+1. Analysis Workspace läser sedan in en ny bidragsanalyspanel direkt i projektet. Du kommer att märka en mängd välbekanta paneler om du har använt bidragsanalys i Rapporter och Analytics tidigare:
 
    * En visualisering som visar antalet **besök** den dagen.
    * En månatlig **besöks trendlinje** för kontext.
@@ -44,7 +44,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
       ![](assets/auto_segment.png)
 
-1. Eftersom bidragsanalysen nu ingår i Analysis Workspace kan du utnyttja ett antal funktioner i en tabells högerklicksmeny för att göra analysen ännu mer meningsfull, till exempel:
+1. Eftersom bidragsanalysen nu ingår i Analysis Workspace kan du utnyttja ett antal funktioner från en tabells högerklicksmeny för att göra analysen ännu mer meningsfull, till exempel:
 
    * [Bryter ned varje dimensionsobjekt med en annan dimension.](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md)
    * [Trending one or more rows.](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A)
@@ -52,11 +52,13 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
    * [Skapa aviseringar.](/help/components/c-alerts/intellligent-alerts.md)
    * [Skapa eller jämföra segment.](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
 
->[!NOTE] Vi belyser den avvikelse som analyseras med en blå prick i bidragsanalysen och de intelligenta aviseringsprojekt som är kopplade till den. Detta ger en tydligare indikation på den avvikelse som analyseras.
+>[!NOTE]
+>
+>Vi belyser den avvikelse som analyseras med en blå prick i bidragsanalysen och de intelligenta aviseringsprojekt som är kopplade till den. Detta ger en tydligare bild av den avvikelse som analyseras.
 
 ## Uteslut dimensioner från bidragsanalys {#section_F6932F4BF74544B5872164E7B1E0C6FC}
 
-Det kan finnas tillfällen då du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
+Det kan finnas tillfällen när du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
 
 1. När du har klickat **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) visas **[!UICONTROL Excluded Dimensions]** panelen.
 
