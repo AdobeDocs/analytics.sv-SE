@@ -1,18 +1,21 @@
 ---
 description: 'null'
-title: Publicera till Power BI - översikt
+title: Publicera till Power BI – översikt
 uuid: ad688817-6e3c-45da-983d-48c123465309
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '989'
+ht-degree: 12%
 
 ---
 
 
-# Publicera till Power BI - översikt
+# Publicera till Power BI – översikt
 
-Microsoft Power BI är en serie instrumentpaneler för affärsanalys för att analysera data och dela insikter. Tack vare Adobe Analytics-integreringen med Power BI kan ni visualisera analysdata från Report Builder i Microsoft Power BI och enkelt dela dem i hela organisationen.
+Microsoft Power BI är en serie kontrollpaneler för affärsanalys som används för att analysera data och dela insikter. Tack vare Adobe Analytics-integreringen med Power BI kan du visualisera analysdata från Report Builder i Microsoft Power BI och enkelt dela dem i hela organisationen.
 
-Tidigare skulle du som analytiker schemalägga att Report Builder-arbetsböcker ska distribueras via e-post (eller ftp). Du kan nu ge dina företagsanvändarintressenter åtkomst (inifrån deras Power BI-konton) till korrekta och aktuella data i en webbaserad miljö som är tillgänglig över olika plattformar och enheter.
+Tidigare skulle du som analytiker schemalägga att Report Builder-arbetsböcker skulle distribueras via e-post (eller ftp). Du kan nu ge dina berörda företagsanvändare åtkomst (inifrån deras Power BI-konton) till korrekta och aktuella data i en webbaserad miljö som är tillgänglig över olika plattformar och enheter.
 
 Genom att kombinera rapportgenereringsfunktionen i Report Builder med visualiseringsfunktionerna i Power BI blir informationen mer tillgänglig för alla i organisationen. Med Power BI kan ni även integrera Adobe Analytics med andra datakällor (t.ex. försäljningsplats, CRM) för att identifiera unika kundinsikter, associationer och möjligheter.
 
@@ -31,7 +34,7 @@ Tack vare integreringen med Adobe Report Builder kan du
 
 ## Publicera arbetsbok till Power BI {#section_21CA66229EC240D49594A9A7D3FBA687}
 
-Schemalagda arbetsböcker formateras med Excel-kalkylblad som innehåller data från Adobe Analytics och skickas regelbundet enligt schema.
+Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data från Adobe Analytics och skickas regelbundet.
 
 **Publicera arbetsbok i Report Builder**
 
@@ -47,7 +50,7 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som innehåller data f
 1. Du ombeds nu logga in på ditt Microsoft-konto. Ange dina autentiseringsuppgifter.
 1. Arbetsboken i Report Builder schemaläggs och publiceras i Power BI.
 
-   För varje schemalagd instans och när schemaläggningsprocessen i Report Builder har uppdaterat arbetsboken med uppdaterade analysdata publiceras arbetsboken till Microsoft Power BI.
+   För varje schemalagd instans och när schemaläggningsprocessen i Report Builder har uppdaterat arbetsboken med uppdaterade Analytics-data publiceras arbetsboken till Microsoft Power BI.
 
 **Visa arbetsboksdata i Report Builder i Power BI**
 
@@ -61,7 +64,9 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som innehåller data f
 
 ## Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningsregister {#section_7C54A54E75184DD6BAEF4ACCE241239A}
 
->[!NOTE] Om arbetsboken innehåller ett makro kommer&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot; att inaktiveras.
+>[!NOTE]
+>
+>Om arbetsboken innehåller ett makro kommer&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot; att inaktiveras.
 
 I stället för att importera hela arbetsboken kan du bara importera innehållet i alla formaterade tabeller i arbetsboken.
 
@@ -113,7 +118,7 @@ Ni kan förvandla alla era förfrågningar till datauppsättningstabeller och sk
 1. Klicka på **[!UICONTROL Schedule]** > **[!UICONTROL New]** i verktygsfältet Report Builder.
 
 1. Klicka på i guiden Grundläggande schemaläggning **[!UICONTROL Advanced Scheduling Options]**.
-1. Markera kryssrutan invid [!UICONTROL Scheduling Wizard - Advanced]på **[!UICONTROL Publishing Options]** fliken **[!UICONTROL Publish all Report Builder Requests as Power BI Dataset Tables]**![](assets/advanced-schedule-wizard2.png)
+1. Markera kryssrutan invid [!UICONTROL Scheduling Wizard - Advanced]på **[!UICONTROL Publishing Options]** fliken **[!UICONTROL Publish all Report Builder Requests as Power BI Dataset Tables]** ![](assets/advanced-schedule-wizard2.png)
 
 1. Klicka på **[!UICONTROL OK]**.
 
