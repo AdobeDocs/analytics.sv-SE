@@ -4,7 +4,10 @@ title: Ange villkorsstyrd formatering
 topic: Report builder
 uuid: 13ac12f1-3498-4bf9-a6d0-c5d84e0125dc
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 3%
 
 ---
 
@@ -19,5 +22,7 @@ Med villkorsstyrd formatering kan du identifiera celler som innehåller resultat
 
 Av säkerhetsskäl är makron som du skriver för arbetsboken med Excel-språket Visual Basic for Applications (VBA) inaktiverade.
 
->[!NOTE] Villkorsstyrd formatering är en Excel-funktion. Mer information om hur du skapar formateringsregler finns i dokumentationen för Excel.
+>[!NOTE]
+>
+>Villkorsstyrd formatering är en Excel-funktion. Mer information om hur du skapar formateringsregler finns i dokumentationen för Excel.
 
