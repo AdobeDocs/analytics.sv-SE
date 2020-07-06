@@ -4,7 +4,10 @@ title: Sammanslagning och globala rapportsviter
 topic: Admin tools
 uuid: c90b8e38-2c95-4318-8165-a362106b6142
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,9 @@ Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsvit
 
 **Sekundära serveranrop**: Vid sammanslagning uppstår inga ytterligare serveranrop utöver vad en enda rapportserie samlar in. Om din organisation använder taggar för flera programsviter görs sekundära serveranrop för varje extra rapportsvit som ingår i en bildbegäran.
 
->[!TIP] Om du bara använder en global rapportserie med [virtuella rapportsviter](../../components/vrs/vrs-considerations.md)behövs inga sekundära serveranrop.
+>[!TIP]
+>
+>Om du bara använder en global rapportserie med [virtuella rapportsviter](../../components/vrs/vrs-considerations.md)behövs inga sekundära serveranrop.
 
 **Implementeringsändringar**: Vid sammanslagning krävs inga implementeringsändringar, medan globala rapportsviter kräver att du inkluderar det globala rapportsvitens ID i implementeringen.
 
@@ -48,6 +53,6 @@ Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsvit
 
 **Rapporter**: Globala rapportsviter innehåller data om alla dimensioner. sammanslagningar tillhandahåller aggregerade data på enbart högnivårapporter.
 
-**Produkter** som stöds: Samlingar kan bara användas i rapporter och analyser. De stöds inte i Analysis Workspace, Data Warehouse eller Ad Hoc Analysis. Globala rapportsviter kan användas för alla produkter.
+**Produkter** som stöds: Samlingar kan bara användas i Rapporter och Analytics. De stöds inte i Analysis Workspace, Data warehouse eller Ad Hoc Analysis. Globala rapportsviter kan användas för alla produkter.
 
 **Antal aggregerade rapportsviter**: Samlingar stöder endast maximalt 40 underordnade rapportsviter. Globala rapportsviter kan implementeras på valfritt antal domäner eller appar som du äger.
