@@ -2,7 +2,7 @@
 title: Mobila dimensioner
 description: Dimensioner baserade på användar-agent-strängen för enheten.
 translation-type: tm+mt
-source-git-commit: 1968162d856b6a74bc61f22f2e5a6b1599d04c79
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Mobila dimensioner
 
-*Den här sidan refererar till egenskaper för mobila enheter som använder webbplatsen. Om du vill spåra enheter i en mobilapp läser du[Implementera analys för mobila enheter](/help/implement/mobile-device-sdk.md)i Implementera användarhandbok.*
+*Den här sidan refererar till egenskaper för mobila enheter som använder webbplatsen. Om du vill spåra enheter i en mobilapp läser du[Implementera Analytics för mobila enheter](/help/implement/mobile-device-sdk.md)i Implementera användarhandboken.*
 
 Mobila dimensioner ger insikter om egenskaperna hos de mobila enheter som besöker er webbplats. Du kan använda de här dimensionerna för att förstå vilka funktioner en mobil enhet har stöd för.
 
@@ -22,7 +22,9 @@ Dessa dimensioner hänvisar till interna sökregler för Adobe. Uppslagsvärdet 
 
 ## Beskrivningar av mobildimension
 
->[!NOTE] Dimensionsvärden som är märkta `"None"` är icke-mobila enheter. Om du vill ha en rapport som bara innehåller mobila enheter drar du dimensionen &quot;Mobil enhet&quot; till segmentområdet på arbetsytan.
+>[!NOTE]
+>
+>Dimensionsvärden som är märkta `"None"` är icke-mobila enheter. Om du vill ha en rapport som bara innehåller mobila enheter drar du dimensionen &quot;Mobil enhet&quot; till segmentområdet på arbetsytan.
 
 * **Stöd** för mobilljud: Bestämmer vilka filformat som enheten kan spela upp. Exempelvärdena inkluderar `"MP3"`, `"AAC"`och `"MIDI Monophonic"`. Värdena i denna dimension utesluter inte varandra. en enda träff kan tilldelas flera dimensionsvärden.
 * **Mobiloperatör**: Om användaragenten innehåller en transportörspecifik enhet är transportören ett dimensionsvärde. Exempelvärden är `"Reliance Jio"`, `"Airtel"`, `"Vodafone"`och `"Verizon"`.
