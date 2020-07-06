@@ -2,7 +2,7 @@
 title: Algoritmisk attribuering
 description: Information om algoritmisk attribueringsmodell.
 translation-type: tm+mt
-source-git-commit: d12ea12ffbf54e1af091ceff6ec671e6a09d0db3
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 1%
@@ -12,9 +12,11 @@ ht-degree: 1%
 
 # Algoritmisk attribuering
 
->[!NOTE] **[!UICONTROL Algorithmic attribution]** har för närvarande begränsad testning. Mer information finns i [funktionsreleaser](/help/landing/an-releases.md) för Adobe Analytics.
+>[!NOTE]
+>
+>**[!UICONTROL Algorithmic attribution]** har för närvarande begränsad testning. Mer information finns i [funktionsreleaser](/help/landing/an-releases.md) för Adobe Analytics.
 
-Den algoritmiska [attribueringsmodellen](models.md) i Analysis Workspace skiljer sig från andra modeller på så sätt att den använder statistiska tekniker för att allokera kredit över dimensionsvärdena i rapporten eller frihandstabellen. Precis som alla andra attribueringsmodeller i Analysis Workspace kan den användas på alla dimensioner eller mätvärden och har stöd för obegränsad segmentering och uppdelningar och distribuerar 100 % av konverteringarna till de dimensioner som anges i tabellen (kallas även&quot;fraktionell&quot; attribuering).
+Den algoritmiska [attribueringsmodellen](models.md) i Analysis Workspace skiljer sig från andra modeller på så sätt att den använder statistiska tekniker för att allokera kredit över dimensionsvärdena i din rapport eller frihandstabell. Precis som alla andra attribueringsmodeller i Analysis Workspace kan den användas på alla dimensioner eller mätvärden och har stöd för obegränsad segmentering och uppdelningar och distribuerar 100 % av konverteringarna till de dimensioner som anges i tabellen (kallas även&quot;fraktionerad&quot; attribuering).
 
 Den algoritm som används för attribuering bygger på Harsanyi Dividend från kooperativ spelteori. Harsanyi-utdelningen är en generalisering av Shapley-värdelösningen (som uppges efter Lloyd Shapley, en Nobel Laureate-ekonom) för att distribuera krediter bland spelarna i ett spel med olika bidrag till resultatet.
 
@@ -23,4 +25,6 @@ På en hög nivå ser attribueringsberäkningen av konverteringskrediten för va
 * Shapley, Lloyd S. (1953). Ett värde för personliga spel. *Bidrag till spelteori, 2(28)*, 307-317.
 * Harsanyi, John C. (1963). En förenklad förhandlingsmodell för det personliga kooperativa spelet. *International Economic Review 4(2)*, 194-220.
 
->[!NOTE] Resultatet av algoritmisk attribuering skiljer sig bara från andra modeller när det finns flera kontaktytor i det angivna uppslagsfönstret. Konverteringar med en enda kontaktyta får 100 % rabatt oavsett attribueringsmodell.
+>[!NOTE]
+>
+>Resultatet av algoritmisk attribuering skiljer sig bara från andra modeller när det finns flera kontaktytor i det angivna uppslagsfönstret. Konverteringar med en enda kontaktyta får 100 % rabatt oavsett attribueringsmodell.
