@@ -2,7 +2,10 @@
 title: maxDelay
 description: Fastställ den maximala tid som AppMeasurement väntar på ett svar från DFA innan en bildbegäran skickas.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ Variabeln `s.maxDelay` används i DFA-datakopplingen för att bestämma timeoutp
 
 Den här variabeln används bara i implementeringar med DFA-datakopplingen. Även med implementeringar med DFA är variabeln valfri.
 
-## Maximal fördröjning i Adobe Experience Platform Launch
+## Maximal fördröjning vid start av Adobe Experience Platform
 
 Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
@@ -27,8 +30,10 @@ s.maxDelay = 750;
 
 ## Egenskaper
 
-* Om du ökar väntetiden samlas fler DFA-data in, men det ökar också risken för att Analytics-träffdata går förlorade. Förlorade träffdata i Analytics inträffar när användaren navigerar bort från sidan under `s.maxDelay` perioden.
-* Genom att minska väntetiden minskar risken för att förlora träffdata i Analytics, men det kan minska mängden DFA-data som skickas med träffdata.
+* Om du ökar väntetiden samlas fler DFA-data in, men det ökar också risken för att Analytics-träffdata går förlorade. Analytics träffdata försvinner när användaren navigerar bort från sidan under `s.maxDelay` perioden.
+* Genom att minska väntetiden minskar risken för att förlora Analytics träffdata, men det kan minska mängden DFA-data som skickas med träffdata.
 * DFA-integreringsdata går förlorade när perioden inte räcker till för att DFA-värden ska kunna svara. `s.maxDelay`
 
->[!NOTE] Adobe har ingen kontroll över DFA:s svarstid. Om du får konsekventa problem även efter att ha ökat den maximala fördröjningsperioden till en rimlig tidsperiod, kontaktar du din organisations DFA-kontoadministratör.
+>[!NOTE]
+>
+>Adobe har ingen kontroll över DFA:s svarstid. Om du får konsekventa problem även efter att ha ökat den maximala fördröjningsperioden till en rimlig tidsperiod, kontaktar du din organisations DFA-kontoadministratör.
