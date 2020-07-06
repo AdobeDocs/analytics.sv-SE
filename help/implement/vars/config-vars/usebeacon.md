@@ -2,7 +2,10 @@
 title: useBeacon
 description: Med useBeacon kan du tvinga AppMeasurement att använda webbläsarnas sendBeacon-API
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,9 @@ I de flesta moderna webbläsare finns den inbyggda metoden `navigator.sendBeacon
 
 Om `useBeacon` alternativet är aktiverat används webbläsarens `navigator.sendBeacon()` metod i nästa träff som skickas till Adobe i stället för en standardbegäran om `GET` bilder. Den här variabeln gäller för både [`s.t()`](../functions/t-method.md) - och [`s.tl()`](../functions/tl-method.md) bildbegäranden. AppMeasurement 2.17.0 eller senare krävs.
 
->[!TIP] AppMeasurement aktiverar automatiskt `useBeacon` för att avsluta länkbildsförfrågningar.
+>[!TIP]
+>
+>AppMeasurement aktiverar automatiskt `useBeacon` för att avsluta länkbildsförfrågningar.
 
 Variabeln `useBeacon` ignoreras när besökaren använder en webbläsare som inte stöder `navigator.sendBeacon()`. Användning av den här variabeln kräver AppMeasurement 2.16.0 eller senare.
 
@@ -29,4 +34,6 @@ Variabeln `s.useBeacon` är en boolesk variabel som avgör om AppMeasurement anv
 s.useBeacon = true;
 ```
 
->[!NOTE] När ett spårningsanrop har körts återställs variabeln till `false`. Om implementeringen skickar flera bildbegäranden i samma sidinläsning (t.ex. enkelsidiga program), ställer du in variabeln på `true` före varje spårningsanrop.
+>[!NOTE]
+>
+>När ett spårningsanrop har körts återställs variabeln till `false`. Om implementeringen skickar flera bildbegäranden i samma sidinläsning (t.ex. enkelsidiga program), ställer du in variabeln på `true` före varje spårningsanrop.
