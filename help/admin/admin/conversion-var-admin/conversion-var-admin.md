@@ -1,11 +1,11 @@
 ---
-description: Variabeln Custom Insight Conversion (eller eVar) placeras i Adobe-koden på utvalda webbsidor på webbplatsen. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. En eVar kan vara besöksbaserad och fungera på liknande sätt som cookies. Värden som skickas till eVar-variabler följer användaren under en förbestämd tidsperiod.
+description: Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på utvalda webbsidor på webbplatsen. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. En eVar kan vara besöksbaserad och fungera på liknande sätt som cookies. Värden som skickas till eVar-variabler följer användaren under en förbestämd tidsperiod.
 keywords: eVar
 title: Konverteringsvariabler (eVar)
 topic: Admin tools
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 translation-type: tm+mt
-source-git-commit: b9bb7a60398b8c392393a8d16b58292f91ab0ea7
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Konverteringsvariabler (eVars)
 
-Variabeln Custom Insight Conversion (eller eVar) placeras i Adobe-koden på utvalda webbsidor på webbplatsen. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. En eVar kan vara besöksbaserad och fungera på liknande sätt som cookies. Värden som skickas till eVar-variabler följer användaren under en förbestämd tidsperiod.
+Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på utvalda webbsidor på webbplatsen. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. En eVar kan vara besöksbaserad och fungera på liknande sätt som cookies. Värden som skickas till eVar-variabler följer användaren under en förbestämd tidsperiod.
 
 När en eVar är inställd på ett värde för en besökare kommer Adobe automatiskt ihåg det värdet tills det upphör att gälla. Alla lyckade händelser som en besökare stöter på när eVar-värdet är aktivt räknas mot eVar-värdet.
 
@@ -27,7 +27,9 @@ eVars är bäst att använda för att mäta orsak och effekt, till exempel:
 
 Om trafikmätning eller vägning önskas rekommenderas användning av trafikvariabler.
 
->[!NOTE] Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [List-variabler (listvariabler)](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html).
+>[!NOTE]
+>
+>Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar-värde rekommenderar vi att du implementerar [List-variabler (listvariabler)](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html).
 
 ## Konverteringsvariabler - beskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
 
@@ -51,7 +53,7 @@ Beskrivningar av fält som används vid [redigering av konverteringsvariabler](/
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Allokering </span> </p> </td> 
-   <td colname="col2"> <p>Avgör hur Analytics tilldelar kredit för en success-händelse om en variabel tar emot flera värden före händelsen. Värden som stöds är: </p> <p> <b>Senaste</b>: Det sista eVar-värdet får alltid medarbetare för lyckade händelser tills eVar-värdet förfaller. </p> <p> <b>Originalvärde</b>: Den första eVar får alltid medarbetare för lyckade händelser tills eVar upphör att gälla. </p> <p> <b> Linear</b>:Allokerar lyckade händelser lika i alla eVar-värden. Eftersom linjär allokering endast distribuerar värden inom ett besök bör du använda linjär allokering med eVar-förfallodatum för besök. </p> <p>Obs!  Genom att växla allokering till eller från Linear förhindrar du att historiska data visas. Blandning av allokeringstyper i rapporteringsgränssnittet kan leda till feldata i rapporter. Linjär allokering kan t.ex. dela intäkt över ett antal olika eVar-värden. När du har ändrat tillbaka till Senaste allokering är 100 % av denna intäkt kopplad till det senaste värdet. Den här associationen kan leda till felaktiga slutsatser från användarna. </p> <p>För att undvika risken för förvirring i rapporteringen gör Analytics att historiska data inte är tillgängliga för gränssnittet. Den kan visas om du bestämmer dig för att ändra den angivna eVar tillbaka till den ursprungliga allokeringsinställningen, men du bör inte ändra eVar-allokeringsinställningarna bara för att få tillgång till historiska data. Adobe rekommenderar att du använder en ny eVar när nya allokeringsinställningar är önskade för data som redan har registrerats, i stället för att ändra allokeringsinställningarna för en eVar som redan har en stor mängd historiska data inbyggda. </p> </td> 
+   <td colname="col2"> <p>Avgör hur Analytics tilldelar krediter för en success-händelse om en variabel tar emot flera värden före händelsen. Värden som stöds är: </p> <p> <b>Senaste</b>: Det sista eVar-värdet får alltid medarbetare för lyckade händelser tills eVar-värdet förfaller. </p> <p> <b>Originalvärde</b>: Den första eVar får alltid medarbetare för lyckade händelser tills eVar upphör att gälla. </p> <p> <b> Linear</b>:Allokerar lyckade händelser lika i alla eVar-värden. Eftersom linjär allokering endast distribuerar värden inom ett besök bör du använda linjär allokering med eVar-förfallodatum för besök. </p> <p>Obs!  Genom att växla allokering till eller från Linear förhindrar du att historiska data visas. Blandning av allokeringstyper i rapporteringsgränssnittet kan leda till feldata i rapporter. Linjär allokering kan t.ex. dela intäkt över ett antal olika eVar-värden. När du har ändrat tillbaka till Senaste allokering är 100 % av denna intäkt kopplad till det senaste värdet. Den här associationen kan leda till felaktiga slutsatser från användarna. </p> <p>För att undvika risken för förvirring vid rapportering gör Analytics historiska data otillgängliga för gränssnittet. Den kan visas om du bestämmer dig för att ändra den angivna eVar tillbaka till den ursprungliga allokeringsinställningen, men du bör inte ändra eVar-allokeringsinställningarna bara för att få tillgång till historiska data. Adobe rekommenderar att du använder en ny eVar när nya allokeringsinställningar är önskade för data som redan har registrerats, i stället för att ändra allokeringsinställningarna för en eVar som redan har en stor mängd historiska data inbyggda. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Förfaller efter</span> </p> </td> 
