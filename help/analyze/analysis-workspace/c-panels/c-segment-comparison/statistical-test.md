@@ -5,7 +5,10 @@ title: Statistiska tester som används vid segmentjämförelse
 topic: Reports and analytics
 uuid: c3f52470-5bfc-4e6b-8638-1c142b08d013
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 2%
 
 ---
 
@@ -24,4 +27,6 @@ I tabellen Top Metrics (Övre mått) använder segmentjämförelseverktyget två
 
 För att beräkna differenspoängen i tabellerna Top Dimension Items och Top Segment Difference används en relativ riskdifferentieringsalgoritm (som i riskförhållandet, men med en differens i stället för en kvot). En riskdifferens beräknas genom att subtrahera den kumulativa incidensen för en dimensionspost (eller överlappa med ett segment från segmenttabellen) för det ena segmentet från det andra. Ett poängvärde för stora skillnader (nära 1) innebär att den specifika dimensionsposten eller det eftergymnasiala segmentet var mycket framträdande i ett av de valda segmenten och inte i det andra.
 
->[!NOTE] I alla tre tabellerna baseras differensstatistiken på ett lämpligt urval besökare för att få processen att löpa så snabbt som möjligt samtidigt som den förblir statistiskt korrekt. Skillnaden baseras på ett prov, men resultaten i tabellen samplas inte. För att säkerställa statistisk signifikans förlitar sig varje statistiskt test på en dynamisk allokeringsalgoritm så att det mindre segmentet innehåller en samplingsstorlek som ger mindre än 3 % felmarginal. Om ett segment innehåller mycket få besökare (färre än 1 000) använder vi alla tillgängliga data och tar inte prov på att beräkna poängen.
+>[!NOTE]
+>
+>I alla tre tabellerna baseras differensstatistiken på ett lämpligt urval besökare för att få processen att löpa så snabbt som möjligt samtidigt som den förblir statistiskt korrekt. Skillnaden baseras på ett prov, men resultaten i tabellen samplas inte. För att säkerställa statistisk signifikans förlitar sig varje statistiskt test på en dynamisk allokeringsalgoritm så att det mindre segmentet innehåller en samplingsstorlek som ger mindre än 3 % felmarginal. Om ett segment innehåller mycket få besökare (färre än 1 000) använder vi alla tillgängliga data och tar inte prov på att beräkna poängen.
