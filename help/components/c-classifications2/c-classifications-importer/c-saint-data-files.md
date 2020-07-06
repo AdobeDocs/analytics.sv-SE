@@ -1,16 +1,19 @@
 ---
 description: Importören låter dig ladda upp klassificeringsdata gruppvis för att analysera rapporter i en fil. Importen kräver ett specifikt filformat för slutförda dataöverföringar.
 subtopic: Classifications
-title: Klassificeringsdatafiler
+title: Datafiler för klassificering
 topic: Admin tools
 uuid: f27bb812-56e0-472a-9993-d869f0fea700
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1733'
+ht-degree: 0%
 
 ---
 
 
-# Klassificeringsdatafiler
+# Datafiler för klassificering
 
 Importören låter dig ladda upp klassificeringsdata gruppvis för att analysera rapporter i en fil. Importen kräver ett specifikt filformat för slutförda dataöverföringar.
 
@@ -99,7 +102,9 @@ En datafil måste följa följande strukturregler:
 
 ## Kolumnrubrikformat
 
->[!NOTE] Adobe rekommenderar att du begränsar antalet import- och exportkolumner till 30.
+>[!NOTE]
+>
+>Adobe rekommenderar att du begränsar antalet import- och exportkolumner till 30.
 
 Klassificeringsfiler har stöd för följande kolumnrubriker:
 
@@ -111,7 +116,9 @@ Varje värde måste vara unikt i hela systemet. Värdet i det här fältet motsv
 
 Rapporter och analyser innehåller till exempel automatiskt två klassificeringar för [!UICONTROL Campaign] variabler: [!UICONTROL Campaigns] och [!UICONTROL Creative Elements]. Om du vill lägga till data i [!UICONTROL Campaigns] klassificeringen blir kolumnrubriken i klassificeringsdatafilen [!UICONTROL Campaigns].
 
->[!NOTE] Värdena i [!UICONTROL Classifications] kolumnrubriken måste exakt matcha klassificeringens namnkonvention, annars misslyckas importen. Om administratören till exempel ändrar [!UICONTROL Campaigns] till [!UICONTROL Internal Campaign Names] i [!UICONTROL Campaign Set-up Manager]måste filkolumnrubriken ändras så att den matchar.
+>[!NOTE]
+>
+>Värdena i [!UICONTROL Classifications] kolumnrubriken måste exakt matcha klassificeringens namnkonvention, annars misslyckas importen. Om administratören till exempel ändrar [!UICONTROL Campaigns] till [!UICONTROL Internal Campaign Names] i [!UICONTROL Campaign Set-up Manager]måste filkolumnrubriken ändras så att den matchar.
 
 Dessutom stöder datafilen följande ytterligare rubriktexter för att identifiera underklassificeringar och andra specialiserade datakolumner:
 
@@ -161,9 +168,11 @@ Kampanjdatum är vanligtvis intervall (start- och slutdatum) som associeras med 
 
 Mer information finns i [Konverteringsklassificeringar](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
 
->[!NOTE] I underhållserbjudandet från 10 maj 2018 började [!DNL Analytics] Adobe begränsa funktionaliteten för datumaktiverade och numeriska klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya datumaktiverade och numeriska klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering.
+>[!NOTE]
+>
+>I underhållserbjudandet från 10 maj 2018 började [!DNL Analytics] Adobe begränsa funktionaliteten för datumaktiverade och numeriska klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya datumaktiverade och numeriska klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering.
 
-## Använda datum tillsammans med [!UICONTROL classifications]{#section_966A07B228CD4643B258E73FB8BA150A}
+## Använda datum i kombination med [!UICONTROL classifications] {#section_966A07B228CD4643B258E73FB8BA150A}
 
 [!UICONTROL Classifications] kan användas för att tilldela datumintervall till era kampanjer eller annan konvertering [!UICONTROL classifications]vilket ger en mer korrekt kampanjmätning. När du har angett datumintervallet för ett värde kommer alla matchande värden utanför datumintervallet inte att klassificeras. Detta är användbart för kampanjmätning som vill utnyttja de exakta datum som en kampanj var Live, och inte alla träffar som matchar själva kampanjen. För att ett värde ska kunna klassificeras med ett datumintervall måste följande vara uppfyllt:
 
@@ -188,9 +197,11 @@ Så här klassificerar du kampanjer baserat på datumintervall:
    * Om månaden eller dagen är en enda siffra är det en inledande nolla.
    * Det finns ett startdatumintervall. slutdatumintervallet är valfritt.
 
-1. Spara filen och överför den till [!DNL Analytics] Admin| Klassificeringar| Importera fil.
+1. Spara filen och överför den till [!DNL Analytics] Admin | Klassificeringar | Importera fil.
 
->[!NOTE] Ett specifikt nyckelvärde får inte ha mer än ett datumintervall.
+>[!NOTE]
+>
+>Ett specifikt nyckelvärde får inte ha mer än ett datumintervall.
 
 ## Felsöka klassificeringar
 
