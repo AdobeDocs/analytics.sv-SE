@@ -2,7 +2,10 @@
 title: linkTrackEvents
 description: Bestäm vilka händelser som ska ingå i förfrågningar om länkspårningsbilder.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +20,9 @@ Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-m
 
 Launch identifierar automatiskt händelser som definierats i gränssnittet och inkluderar dem i länkspårningsträffar.
 
->[!IMPORTANT] Om du anger händelser i Launch med den anpassade kodredigeraren måste du även inkludera händelsen i `linkTrackEvents` att använda anpassad kod.
+>[!IMPORTANT]
+>
+>Om du anger händelser i Launch med den anpassade kodredigeraren måste du även inkludera händelsen i `linkTrackEvents` att använda anpassad kod.
 
 ## s.linkTrackEvents i AppMeasurement and Launch custom code editor
 
@@ -33,7 +38,9 @@ s.linkTrackEvents = "event1,event2,event3,purchase";
 
 Standardvärdet för den här variabeln är en tom sträng. Om den här variabeln inte är definierad inkluderas alla händelser i förfrågningar om länkspårningsbilder. Observera att Launch automatiskt fyller i den här variabeln baserat på händelser som angetts i gränssnittet, så den anges alltid i implementeringar med Launch.
 
->[!TIP] Undvik att använda objektidentifieraren för Analytics (`s.`) när du anger händelser i den här variabeln. Till exempel `s.linkTrackEvents = "event1";` är korrekt medan `s.linkTrackEvents = "s.event1";` är felaktig.
+>[!TIP]
+>
+>Undvik att använda Analytics objektidentifierare (`s.`) när du anger händelser i den här variabeln. Till exempel `s.linkTrackEvents = "event1";` är korrekt medan `s.linkTrackEvents = "s.event1";` är felaktig.
 
 ## Exempel
 
