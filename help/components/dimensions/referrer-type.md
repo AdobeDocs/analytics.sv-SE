@@ -2,7 +2,7 @@
 title: Referenstyp
 description: Vilken typ av referent det är, beroende på varifrån besökaren kom.
 translation-type: tm+mt
-source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -33,7 +33,9 @@ Dimensionsvärden är typen av träffens referent. Specifika värden är:
 
 Följande lista refererar till den söktabell för sociala nätverk som Adobe använder. Adobe tillhandahåller den här listan som en tjänst åt Adobe Analytics-kunder. Om du vill rekommendera Adobe att lägga till en domän i listan ska du ha en supportrepresentant i din organisation. Kontakta kundtjänst.
 
->[!NOTE] Den här listan skiljer sig från standardlistan med sociala nätverk i [bearbetningsreglerna](../c-marketing-channels/c-rules.md)för marknadsföringskanaler.
+>[!NOTE]
+>
+>Den här listan skiljer sig från standardlistan med sociala nätverk i [bearbetningsreglerna](../c-marketing-channels/c-rules.md)för marknadsföringskanaler.
 
 * `12seconds.tv`
 * `t.163.com`
