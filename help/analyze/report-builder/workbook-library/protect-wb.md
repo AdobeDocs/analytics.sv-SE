@@ -1,15 +1,18 @@
 ---
 description: Du kan skydda alla begäranden i en arbetsbok mot att lägga till och redigera begäranden genom att låsa arbetsboken. Detta gör att arbetsböcker kan redigeras offline genom att alla rapportförfrågningar pausas för effektivare redigering.
-title: Lås/lås upp arbetsböcker
+title: Låsa/låsa upp arbetsböcker
 topic: Report builder
 uuid: ef5c276c-5f74-4741-b6fa-4c79eda29f62
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 1%
 
 ---
 
 
-# Lås/lås upp arbetsböcker
+# Låsa/låsa upp arbetsböcker
 
 Du kan skydda alla begäranden i en arbetsbok mot att lägga till och redigera begäranden genom att låsa arbetsboken. Detta gör att arbetsböcker kan redigeras offline genom att alla rapportförfrågningar pausas för effektivare redigering.
 
@@ -28,7 +31,9 @@ Du kan låsa upp en låst arbetsbok om du har någon av följande behörigheter:
 * Du är administratör, eller
 * Du är den person som ursprungligen låste arbetsboken. I det här fallet behöver du inte vara administratör.
 
->[!NOTE] Du kan inte lägga till en begäran i en skyddad arbetsbok om du inte har behörighet att låsa upp arbetsboken.
+>[!NOTE]
+>
+>Du kan inte lägga till en begäran i en skyddad arbetsbok om du inte har behörighet att låsa upp arbetsboken.
 
 När en arbetsbok är låst för redigering av begäranden,
 
