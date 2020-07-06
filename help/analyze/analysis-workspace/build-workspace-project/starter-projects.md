@@ -3,7 +3,10 @@ description: 'null'
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1370'
+ht-degree: 3%
 
 ---
 
@@ -12,9 +15,9 @@ source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 Du kan välja om du vill skapa ett projekt från:
 
-* **Tomt projekt (standard)**: Instruktioner finns i [Skapa ett projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md)för analysarbetsytan.
+* **Tomt projekt (standard)**: Instruktioner finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md).
 * **Standardmall**: Mallarna skapas av Adobe och levereras med produkten.
-* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats behörighet i Admin Console [!UICONTROL Analysis Workspace: Save as Template] . [Läs mer...](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
+* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats behörighet i Admin Console [!UICONTROL Analysis Workspace: Save as Template] . [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -39,7 +42,7 @@ Användare med administratörsbehörighet kan omvandla projekt de skapar till en
 
 | Åtgärd | Beskrivning |
 |--- |--- |
-| Redigera mall | Låter en administratör redigera mallen genom att ändra dess datakälla, ändra komponenter, visualiseringar, datumintervall osv.  Om du vill redigera en anpassad mall, antingen<ul><li>Visa listan med egna mallar i Analysis Workspace, markera en och klicka sedan på Edit Template (Redigera mall) eller</li><li>Navigera till Komponenter > Projekt i Analytics och filtrera sedan efter Mallar. Klicka på namnet på mallen som du vill redigera.</li></ul>**Obs!** När du har redigerat en mall kan du välja mellan två alternativ: Spara, Spara som. Så här skiljer de sig:<ul><li>**Spara:** Uppdaterar den anpassade mallen för alla användare. När någon annan skapar ett projekt från den här anpassade mallen ser de ändringarna som du har gjort.</li><li>**Spara som:** Skapar en kopia av den anpassade mallen med dina ändringar. (Du ser att du är i redigeringsläge när menyalternativet Dela > Dela projekt är inaktiverat.)</li></ul> |
+| Redigera mall | Låter en administratör redigera mallen genom att ändra dess datakälla, ändra komponenter, visualiseringar, datumintervall osv.  Om du vill redigera en anpassad mall, antingen<ul><li>Visa listan med egna mallar i Analysis Workspace, markera en och klicka sedan på Redigera mall, eller</li><li>I Analytics går du till Komponenter > Projekt och filtrerar sedan efter Mallar. Klicka på namnet på mallen som du vill redigera.</li></ul>**Obs!** När du har redigerat en mall kan du välja mellan två alternativ: Spara, Spara som. Så här skiljer de sig:<ul><li>**Spara:** Uppdaterar den anpassade mallen för alla användare. När någon annan skapar ett projekt från den här anpassade mallen ser de ändringarna som du har gjort.</li><li>**Spara som:** Skapar en kopia av den anpassade mallen med dina ändringar. (Du ser att du är i redigeringsläge när menyalternativet Dela > Dela projekt är inaktiverat.)</li></ul> |
 | Sök efter mallar | I dialogrutan Egna mallar klickar du på Sökmallar. |
 | Sortera mallar | Du kan sortera mallar i bokstavsordning, efter relevans och efter skapandedatum.  I dialogrutan Egna mallar klickar du på Sortera:. |
 | Använd taggar på mall | Öppna mallen och gå till Projekt > Projektinformation och inställningar. Klicka på Lägg till taggar. |
@@ -48,7 +51,7 @@ Användare med administratörsbehörighet kan omvandla projekt de skapar till en
 
 ## Standardmallar
 
-När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra listen. Mallar för Analysis Workspace omfattar vanliga användningsfall. De grupperas efter de lodräta värden de tillhör och fylls i med olika dimensioner, segment, mätvärden och visualiseringar, beroende på vilken rapportserie du har valt.
+När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra listen. Analysis Workspace-mallar täcker vanliga användningsfall. De grupperas efter de lodräta värden de tillhör och fylls i med olika dimensioner, segment, mätvärden och visualiseringar, beroende på vilken rapportserie du har valt.
 
 Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter dina behov (genom att till exempel lägga till eller ersätta mått eller visualiseringar) och spara dem under ett nytt namn.
 
@@ -68,7 +71,7 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 >[!IMPORTANT]
 >
->Annonsmallar är bara tillgängliga om din rapportsserie har aktiverats för Advertising Cloud.
+>Annonsmallar är bara tillgängliga om rapportsviten är aktiverad för Advertising Cloud.
 
 * **Betalsökmotorer**: Den här mallen bryter ned reklamtrender, annonsplattformar, nyckelord, konton, kampanjer med mera.
 
@@ -108,11 +111,13 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 * **Behåll:** Vilka typer av användare är sannolikt lojala användare på min webbplats?
 * **Teknik:** Vilken teknik använder folk för att komma åt min webbplats?
 
-### Folk
+### Personer
 
->[!NOTE] Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/en/device-co-op/using/data/people.html).
+>[!NOTE]
+>
+>The People template and its associated People metric is available for use only as part of the [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/data/people.html).
 
-Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Personmåttet är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
+Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
 
 * Segmentera era data för USA/Kanada jämfört med resten av världen. Device Co-op finns för närvarande endast i Nordamerika.
 * Jämför mätvärden för personer och unika besökare sida vid sida.
@@ -120,7 +125,7 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 * Jämför de enhetstyper kunderna använder
 * Se hur många enheter per person som används i genomsnitt.
 * Upptäck hur du använder segmentstackning med personmåttet.
-* Upptäck hur Experience Cloud ID i er miljö förbättrar effektiviteten i personmätningen.
+* Upptäck hur Experience Cloud-ID:t i din miljö förbättrar effektiviteten i personmätningen.
 
 ### Resa-IQ: Mall för enhetsövergripande analys
 
@@ -129,7 +134,7 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är endast tillgängligt för kunder som har tillgång till [Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (CDA).
 
 * **Specialanteckning för medlemmarna i Co-op Graph**: Visar vilken del av rapportsviten som innehåller besökare i regioner där koordinatdiagrammet stöds och regioner där det inte stöds.
-* **Identifiering av användare**: Visar hur ofta besökare på er webbplats identifieras med hjälp av metoder som baseras på enhetsövergripande analys.
+* **Identifiering av användare**: Visar hur ofta besökare på din webbplats identifieras med hjälp av metoder som baseras på Analytics för olika enheter.
 * **Mäta målgruppens storlek**: Visar en jämförelse mellan Unika enheter och Personer. Andelen av dessa två tal kallas för komprimering mellan enheter, ett beräknat mått som visas på den här panelen. Detta komprimeringsmått är beroende av ett stort antal faktorer:
    * **Använda Co-op-diagrammet eller det privata diagrammet**: I allmänhet tenderar organisationer som använder enhetskoordinaterna att se bättre komprimeringsgrader än organisationer som använder det privata diagrammet.
    * **Inloggningshastighet**: Ju fler användare som loggar in på er webbplats, desto mer kan Adobe identifiera och sätta ihop besökare på olika enheter. Platser med låg inloggningshastighet har också låg komprimeringshastighet.
