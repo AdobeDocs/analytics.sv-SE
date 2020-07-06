@@ -1,8 +1,8 @@
 ---
 title: Vad är kohortanalys?
-description: Lär dig mer om kohortanalys i Analysis Workspace
+description: Läs om kohortanalys i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 79849c574909543d74e2935e493008927700585d
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Vad är [!UICONTROL Cohort Analysis]?
 
-A *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. [!UICONTROL Cohort Analysis] är till exempel användbart när du vill veta hur en kohort interagerar med ett varumärke. Du kan enkelt upptäcka ändringar i trender och sedan svara på dem. (Förklaringar [!UICONTROL Cohort Analysis] finns på webben, t.ex. i [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
+A *`cohort`* is a group of people sharing common characteristics over a specified period. [!UICONTROL Cohort Analysis] är till exempel användbart när du vill veta hur en kohort interagerar med ett varumärke. Du kan enkelt upptäcka ändringar i trender och sedan svara på dem. (Förklaringar [!UICONTROL Cohort Analysis] finns på webben, t.ex. i [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
 När du har skapat en kohortrapport kan du strukturera komponenterna (specifika dimensioner, mått och segment) och sedan dela kohortrapporten med vem som helst. Se [Kuratera och dela](/help/analyze/analysis-workspace/curate-share/curate.md).
 
@@ -24,13 +24,15 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 * Få idéer för A/B-testning inom områden som priser, uppgraderingsalternativ osv.
 * Visa en [!UICONTROL Cohort Analysis] rapport i en rapport för guidad analys.
 
-[!UICONTROL Cohort Analysis] finns för alla Adobe Analytics-kunder med åtkomstbehörighet till [!UICONTROL Analysis Workspace].
+[!UICONTROL Cohort Analysis] är tillgängligt för alla Adobe Analytics-kunder med åtkomsträttigheter till [!UICONTROL Analysis Workspace].
 
 [Kohortanalys på YouTube](https://www.youtube.com/watch?v=kqOIYrvV-co&amp;index=45&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:36)
 
 >[!IMPORTANT]
 >
->[!UICONTROL Cohort Analysis] stöder inte icke-segmenterbara mått (inklusive beräknade värden), icke-heltalsvärden (t.ex. Intäkter) eller förekomster. Endast mätvärden som kan användas i segment kan användas i
+>[!UICONTROL Cohort Analysis]
+>
+>stöder inte icke-segmenterbara mått (inklusive beräknade värden), icke-heltalsvärden (t.ex. Intäkter) eller förekomster. Endast mätvärden som kan användas i segment kan användas i
 >[!UICONTROL Cohort Analysis]och de kan bara ökas med 1 i taget.
 
 ## Funktioner för kohortanalyser
