@@ -2,16 +2,21 @@
 title: Händelseserialisering
 description: Hjälper dig att deduplicera mätvärden på din webbplats.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 
 
 # Händelse-ID-serialisering
 
-Händelseserialisering är processen att implementera åtgärder för att förhindra att dubbletthändelser anges i analysrapporter. Det är viktigt att deduplicera händelser i fall där du inte vill att besökarna ska uppdatera sidan ska få statistik som ökar.
+Händelseserialisering är processen att implementera åtgärder för att förhindra att dubblerade händelser kommer in i Analytics-rapportering. Det är viktigt att deduplicera händelser i fall där du inte vill att besökarna ska uppdatera sidan ska få statistik som ökar.
 
->[!NOTE] Datakällor stöder inte händelseserialisering eller borttagning av dubbletter.
+>[!NOTE]
+>
+>Datakällor stöder inte händelseserialisering eller borttagning av dubbletter.
 
 ## Konfigurera händelseserialisering
 
@@ -23,7 +28,9 @@ När du använder händelse-ID:n utförs borttagning av dubbletter på följande
 * Deduplicering sker globalt för alla besökare. Om besökare A skickar `event1:ABC` så ignorerar Adobe den andra förekomsten från besökare B `event1:ABC`också.
 * Borttagning av dubbletter upphör inte att gälla. Om en besökare skickar tillbaka `event1:ABC` sedan två år tillbaka och skickar `event1:ABC` igen, ignorerar Adobe den andra förekomsten.
 
->[!TIP] Om du vill avduplicera [`purchase`](event-purchase.md) händelsen använder du [`purchaseID`](../purchaseid.md) variabeln i stället.
+>[!TIP]
+>
+>Om du vill avduplicera [`purchase`](event-purchase.md) händelsen använder du [`purchaseID`](../purchaseid.md) variabeln i stället.
 
 ## Använd händelse-ID:n i Adobe Experience Platform Launch
 
@@ -33,7 +40,7 @@ Du kan ange fältet för händelse-ID när du konfigurerar Analytics-tillägget 
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] till [!UICONTROL Action Type] [!UICONTROL Set Variables].
+5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på [!UICONTROL Events] avsnittet där varje händelse innehåller ett [!UICONTROL Event ID] fält.
 
 Giltiga värden är alfanumeriska tecken som är upp till 20 byte långa.
