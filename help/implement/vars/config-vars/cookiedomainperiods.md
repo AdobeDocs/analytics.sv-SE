@@ -2,7 +2,10 @@
 title: cookieDomainPeriods
 description: Hjälp AppMeasurement att förstå vilken domän cookies ska lagras i om din domän har en punkt i suffixet.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 1%
 
 ---
 
@@ -11,12 +14,14 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 AppMeasurement bestämmer cookie-platsen genom att titta på domänen och domänsuffixet. För domäner som `example.com`AppMeasurement anges cookies på rätt plats. För andra domäner som `example.co.uk`AppMeasurement kan dock cookies av misstag anges `co.uk`. De flesta webbläsare avvisar cookies som angetts i den här ogiltiga domänen, vilket orsakar problem med besökaridentifiering.
 
-Variabeln hjälper AppMeasurement att avgöra var Analytics-cookies anges genom att anropa att domänsuffixet har en extra period. `cookieDomainPeriods` Den här variabeln tillåter AppMeasurement att anpassa den extra perioden i domänsuffixet och ange cookies på rätt plats.
+Variabeln hjälper AppMeasurement att avgöra var Analytics cookies är angivna genom att anropa att domänsuffixet har en extra period. `cookieDomainPeriods` Den här variabeln tillåter AppMeasurement att anpassa den extra perioden i domänsuffixet och ange cookies på rätt plats.
 
 * För domäner som `example.com` eller `www.example.com`behöver variabeln inte anges. Om det behövs kan du ange variabeln till `"2"`.
 * För domäner som `example.co.uk` eller `www.example.co.jp`anger du den här variabeln som `"3"`.
 
->[!IMPORTANT] Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `cookieDomainPeriods` på exempel-URL `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
+>[!IMPORTANT]
+>
+>Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `cookieDomainPeriods` på exempel-URL `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
 
 ## Domänperioder i Adobe Experience Platform Launch
 
