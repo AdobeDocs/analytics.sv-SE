@@ -1,21 +1,26 @@
 ---
 description: På samma sätt som du kopierar och klistrar in begäranden kan du även flytta begäranden till en annan del av kalkylbladet genom att välja Klippbegäran på snabbmenyn.
-title: Kopiera intilliggande begäranden
+title: Kopiera intilliggande förfrågningar
 topic: Report builder
 uuid: c8abec0d-6fbd-4a98-8672-ede81317487b
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 2%
 
 ---
 
 
-# Kopiera intilliggande begäranden
+# Kopiera intilliggande förfrågningar
 
 På samma sätt som du kopierar och klistrar in begäranden kan du även flytta begäranden till en annan del av kalkylbladet genom att välja Klippbegäran på snabbmenyn.
 
 När du klipper ut en begäran tas den bort från sin ursprungliga plats och placeras på den nya platsen när du har valt [!UICONTROL Paste Request]. Om du ångrar dig efter att ha klippt en viss begäran och beslutar dig för att kopiera eller klippa ut en annan begäran från en annan cell, lämnar Report Builder den första begäran i sin ursprungliga cell och agerar (antingen kopior eller klipp ut) den andra.
 
->[!NOTE] Report Builder stöder inte Excel-kommandot Ångra för att klippa ut eller klistra in begäranden. Var därför försiktig när du skär ned begäranden.
+>[!NOTE]
+>
+>Report Builder stöder inte Excel-kommandot Ångra för att klippa ut eller klistra in begäranden. Var därför försiktig när du skär ned begäranden.
 
 Du är inte begränsad till att kopiera och klistra in i samma blad i arbetsboken. Du kan kopiera en begäran i ett blad och klistra in den på en plats i ett annat blad i samma arbetsbok.
 
