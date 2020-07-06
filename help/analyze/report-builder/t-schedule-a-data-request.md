@@ -4,7 +4,10 @@ title: Schemalägg en databegäran
 topic: Report builder
 uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
@@ -15,11 +18,15 @@ Du kan schemalägga arbetsböcker, ange avancerade leveransalternativ, ange mott
 
 Du kan till exempel schemalägga att arbetsböcker ska levereras omedelbart eller enligt ett återkommande schema, och ange filformatet i [!DNL Advanced Delivery Options]. Filstorleksgränsen är 5 MB för överföring av arbetsbok.
 
-När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa och redigera schemat i **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**. (Se [Rapportschema och distribution](/help/analyze/reports-analytics/scheduling.md) i hjälpen för rapporter och analyser.)
+När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa och redigera schemat i **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**. (Se [Rapportera schema och distribution](/help/analyze/reports-analytics/scheduling.md) i Rapporter och Analytics-hjälp.)
 
->[!NOTE] Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst 10 schemalagda arbetsböcker per Report Builder-licens. Du kan dock öka antalet genom att subtrahera från andra licenser. Det gör du genom att gå till **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Report Builder Reports]**. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
+>[!NOTE]
+>
+>Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst 10 schemalagda arbetsböcker per Report Builder-licens. Du kan dock öka antalet genom att subtrahera från andra licenser. Det gör du genom att gå till **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Report Builder Reports]**. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
 
->[!NOTE] &quot;Leveranstid&quot;/&quot;Dagtid&quot; som anges av användaren anger den tid som arbetsboken ska påbörja bearbetningen, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som arbetsboken levereras baseras främst på hur lång tid det tar att bearbeta (komplexa och stora arbetsböcker tar längre tid att bearbeta än enklare arbetsböcker). Om en arbetsbok t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
+>[!NOTE]
+>
+>&quot;Leveranstid&quot;/&quot;Dagtid&quot; som anges av användaren anger den tid som arbetsboken ska påbörja bearbetningen, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som arbetsboken levereras baseras främst på hur lång tid det tar att bearbeta (komplexa och stora arbetsböcker tar längre tid att bearbeta än enklare arbetsböcker). Om en arbetsbok t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
 >Det finns dessutom ett antal andra faktorer som kan öka fördröjningen innan arbetsboken levereras ytterligare:
 >
 > * **Om du kör många olika scheman av samma typ samtidigt** kan systemet överbelastas. Schemaläggningssystemet tillåter endast ett fåtal (5-10) arbetsböcker av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra arbetsböcker är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags arbetsböcker vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
@@ -28,7 +35,7 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 > * **Rapporteringssvitens fördröjning** (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda arbetsböcker.
 
 
-## Schemalägg en arbetsbok
+## Schemalägga en arbetsbok
 
 1. Generera och spara en arbetsbok.
 1. Klicka på i verktygsfältet Report Builder **[!UICONTROL Schedule]**.
