@@ -4,7 +4,10 @@ title: Besöksrapporter
 topic: Ad hoc analysis
 uuid: 3e9b41d1-d6ff-47a8-aa6b-829df1040c34
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Visar information om besökare, t.ex. antal besökare, kundlojalitet och besökaregenskaper.
 
-## Returfrekvens {#concept_447A99B71E484D27A7A02888CC51FD3D}
+## Återbesöksfrekvens {#concept_447A99B71E484D27A7A02888CC51FD3D}
 
 Visar hur lång tid det tar mellan besök av återkommande besökare och antalet besök som hamnar i varje tidslängdskategori. Använd rapporten för att se hur lång tid det i genomsnitt tar för återkommande besökare att besöka er webbplats, samt trenderna för återkommande kunder.
 
@@ -25,7 +28,7 @@ c_reports_return_freq.xml
 
 Om du till exempel visar ordermåttet i den här rapporten blir det lättare för en återförsäljare att förstå den mest effektiva tiden mellan besök för att generera konvertering. Använd den här informationen för att effektivt marknadsföra besökare som har gått en viss tid utan att besöka er webbplats.
 
-Du kan:
+Ni kan:
 
 * Identifiera antalet återvändande besökare och frekvensen för deras återbesök.
 * Utvärdera webbplatsens tilltalande och relevans för besökarna över tid.
@@ -41,7 +44,7 @@ Som standard har den här rapporten följande tidslängder:
 * Fjorton dagar till en månad
 * Längre än en månad
 
-## Besök nummer {#concept_BBB614072FD74379B1A8520ACB75AE9A}
+## Besöksnummer {#concept_BBB614072FD74379B1A8520ACB75AE9A}
 
 Visar vilka besöksnummer på er webbplats som mest påverkade er framgångsstatistik. En besökare som gör ett första besök på er webbplats räknas med i radartikeln Besök nummer 1. Besökare som återvänder till platsen för ett andra besök räknas i posten Besök nummer 2 o.s.v.
 
@@ -60,7 +63,9 @@ Du kan dela upp den här rapporten med vilken annan rapport eller variabel som h
 * Hur många besök tar en användare som klickat via kampanj XYZ för att göra ett inköp.
 * Om användare i Tokyo till exempel gör fler besök innan de genererar ett lead än användare i London.
 
->[!NOTE] Om samma besökare besöker din webbplats flera gånger under samma period, ökas varje angivet besöksnummer för varje besök.
+>[!NOTE]
+>
+>Om samma besökare besöker din webbplats flera gånger under samma period, ökas varje angivet besöksnummer för varje besök.
 
 Den här rapporten baseras på besökar-ID-data som skickas till Adobe vid varje besökarträff. När dessa data tas emot jämför Adobe dem med historiska besökar-ID-data för att avgöra om träffen är:
 
@@ -68,7 +73,9 @@ Den här rapporten baseras på besökar-ID-data som skickas till Adobe vid varje
 * En tidigare besökare som fortsätter ett besök (besöksnumret räknas inte upp).
 * En tidigare besökare som gjort ett nytt besök (Besök nummer räknas upp med ett).
 
->[!NOTE] Varje besökar-ID för Analytics är kopplat till en besökarprofil på Adobes servrar. Besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett om en cookie-fil för besöks-ID har gått ut eller inte.
+>[!NOTE]
+>
+>Varje besökar-ID från Analytics är kopplat till en besökarprofil på Adobes servrar. Besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett om en cookie-fil för besöks-ID har gått ut eller inte.
 
 ## Kundlojalitet {#concept_991F758BAA304B7B9D48BD73BBB62FE5}
 
@@ -87,7 +94,9 @@ I [!UICONTROL Customer Loyalty] rapporten visas köpmönster för kunder baserat
 * **Returkund**: Besökare som gjort 2 inköp
 * **Lojala kunder**: Besökare som har köpt 3+
 
->[!NOTE] När du använder dessa mått representeras alla användarbesök (eller alla besökare) i den här rapporten, oavsett om besöket (eller besökaren) innehöll ett köp.
+>[!NOTE]
+>
+>När du använder dessa mått representeras alla användarbesök (eller alla besökare) i den här rapporten, oavsett om besöket (eller besökaren) innehöll ett köp.
 
 Förmånsstatusen ändras efter besökets slut, där en köphändelse inträffar. Exempel: En ny kund (1 köp) gör ett köp och registrerar sig sedan för ett nyhetsbrev efter köpet inom samma besök. Nyhetsbrevets registreringshändelse betraktas fortfarande som en interaktion med nya kunder, eftersom besökarens kundlojalitetsstatus inte ändras förrän vid nästa besök.
 
@@ -109,7 +118,7 @@ c_reports_visitor_profile.xml
 
 **[!UICONTROL Visitor ZIP/Postal Code]**: Visar de postnummer som producerade kunderna och som hade störst effekt på köpets framgångsmått.
 
-## GeoSegmentation {#concept_7C1B930F90F945B49205D3855CAE1813}
+## Geosegmentering {#concept_7C1B930F90F945B49205D3855CAE1813}
 
 <!-- 
 
