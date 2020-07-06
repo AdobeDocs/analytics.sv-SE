@@ -2,20 +2,25 @@
 title: Översikt över plugin-program
 description: Klistra in kod på webbplatsen för att få nya funktioner.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 1%
 
 ---
 
 
 # Översikt över plugin-program
 
-Plugin-program är kodfragment som utför flera avancerade funktioner som hjälper er att implementera Analytics. Dessa plugin-program utökar JavaScript-filens funktioner så att du får fler funktioner som inte är tillgängliga med en grundläggande implementering. Adobe erbjuder ett antal andra plugins som en del i avancerade lösningar.
+Plugin-program är kodfragment som utför flera avancerade funktioner för att underlätta implementeringen av Analytics. Dessa plugin-program utökar JavaScript-filens funktioner så att du får fler funktioner som inte är tillgängliga med en grundläggande implementering. Adobe erbjuder ett antal andra plugins som en del i avancerade lösningar.
 
->[!IMPORTANT] Plugin-program tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för dessa plugin-program, inklusive installation och felsökning. Om du behöver hjälp med ett plugin-program kontaktar du din organisations Account Manager. De kan ordna ett möte med en konsult för att få hjälp.
+>[!IMPORTANT]
+>
+>Plugin-program tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för dessa plugin-program, inklusive installation och felsökning. Om du behöver hjälp med ett plugin-program kontaktar du din organisations Account Manager. De kan ordna ett möte med en konsult för att få hjälp.
 
 Adobe erbjuder flera sätt att installera ett visst plugin-program:
 
-1. Använd tillägget&quot;Common Analytics Plugins&quot; med Adobe Experience Platform Launch
+1. Använd tillägget&quot;Vanliga Analytics-plugin-program&quot; med Adobe Experience Platform Launch
 2. Klistra in plugin-kod med den anpassade kodredigeraren för Launch
 3. Klistra in plugin-programkoden i `AppMeasurement.js` filen
 
