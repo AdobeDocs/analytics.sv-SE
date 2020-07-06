@@ -4,7 +4,10 @@ title: Differentiera länkar som refererar till samma länk-ID och region
 topic: Activity map
 uuid: f2da0cda-a33b-4a12-8d99-1f58386d6d30
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 5%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 Du kan differentiera länkar genom att anpassa länk-ID med variabeln s_objectID, genom att anpassa regionen och genom att anpassa modulen AppMeasurement ActivityMap.
 
-Låt oss säga att du har flera&quot;Köp&quot;-länkar som identifieras av aktivitetskartan under samma länk-ID och region:
+Låt oss säga att du har flera&quot;Köp&quot;-länkar som identifieras av Activity Map under samma Link ID och Region:
 
 <table id="table_3020E2C0175D455C84E794CF51BE5A93"> 
  <thead> 
@@ -48,11 +51,11 @@ Hur kan du anpassa din webbsida och taggning för att särskilja länkarnas vär
 
 ## Anpassa länk-ID med s_objectID {#section_01B0D463397B4837B2D46F087A6E5937}
 
-Genom att skapa ett unikt objekt-ID för en länk eller länkplats på en sida kan du antingen förbättra spårningen av aktivitetskartan eller använda aktivitetskarta för att rapportera en länktyp eller plats, i stället för länkens URL. Klicka [här](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) om du vill ha mer information om variabeln s_objectID.
+Genom att skapa ett unikt objekt-ID för en länk eller länkplats på en sida kan du antingen förbättra spårningen av Activity Map eller använda Activity Map för att rapportera en länktyp eller plats, i stället för länkens URL. Klicka [här](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) om du vill ha mer information om variabeln s_objectID.
 
 >[!IMPORTANT]
 >
->Observera att ett avslutande semikolon (;) krävs när s_objectID används i aktivitetskartan.
+>Observera att ett avslutande semikolon (;) krävs när du använder s_objectID i Activity Map.
 
 <table id="table_9439A5F320304E439A19842CF3EBA456"> 
  <thead> 
@@ -87,7 +90,9 @@ Genom att skapa ett unikt objekt-ID för en länk eller länkplats på en sida k
 
 Du kan anpassa regionen genom att se till att varje köplänk har en egen region definierad. Om du vill göra det lägger du till en id-parameter i någon av de överordnade taggarna för varje Buy-ankartagg.
 
->[!NOTE] Du är inte strikt begränsad till parametern&quot;id&quot; som en regionidentifierare. Du kan också ange en egen identifierare med JavaScript-variabeln&quot;s.ActivityMap.regionIDAttribute&quot;.
+>[!NOTE]
+>
+>Du är inte strikt begränsad till parametern&quot;id&quot; som en regionidentifierare. Du kan också ange en egen identifierare med JavaScript-variabeln&quot;s.ActivityMap.regionIDAttribute&quot;.
 
 <table id="table_250DB52A869C466B942517BABA1C287B"> 
  <thead> 
