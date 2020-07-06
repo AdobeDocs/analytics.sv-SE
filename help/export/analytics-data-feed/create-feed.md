@@ -2,7 +2,10 @@
 title: Skapa eller redigera en datafeed
 description: Lär dig hur du skapar eller redigerar en datafeed.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +62,9 @@ Följande 11 AWS-standardregioner stöds (med lämplig signaturalgoritm där det
 * eu-west-1
 * sa-east-1
 
->[!NOTE] Regionen cn-North-1 stöds inte.
+>[!NOTE]
+>
+>Regionen cn-North-1 stöds inte.
 
 ### Azure Blob
 
@@ -67,7 +72,9 @@ Datamatningar stöder Azure Blob-mål. Kräver en behållare, ett konto och en n
 
 ![Azure-information](assets/azure.png)
 
->[!NOTE] Du måste implementera en egen process för att hantera diskutrymme på matningsmålet. Adobe tar inte bort några data från servern.
+>[!NOTE]
+>
+>Du måste implementera en egen process för att hantera diskutrymme på matningsmålet. Adobe tar inte bort några data från servern.
 
 ## Datakolumdefinitioner
 
