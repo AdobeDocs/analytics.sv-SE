@@ -1,15 +1,18 @@
 ---
 description: I en referensbegäran används värden från celler som indata för parametrar, till exempel ett datafilter eller relationsfilter.
-title: Kopiera hänvisningsbegäranden
+title: Kopiera referensförfrågningar
 topic: Report builder
 uuid: b6f64630-868f-455b-8682-471ff9fc596e
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '535'
+ht-degree: 1%
 
 ---
 
 
-# Kopiera hänvisningsbegäranden
+# Kopiera referensförfrågningar
 
 I en referensbegäran används värden från celler som indata för parametrar, till exempel ett datafilter eller relationsfilter.
 
@@ -17,7 +20,9 @@ Du måste ha skapat minst en giltig begäran i kalkylbladet för att kunna sprid
 
 Du kan också skapa begäranden som refererar till indatafilter från begäranden i olika kalkylblad, men inte i olika arbetsböcker. En begäran i Sheet 2 kan t.ex. använda en rapportsvit från en viss cell i Sheet 1 och ett datumintervall från en cell i en begäran i Sheet 2. De nya utdata kan placeras antingen i ett blad eller i ett nytt blad i samma arbetsbok. När du klistrar in en relativ begäran, och ett indatafilter finns på ett kalkylblad som inte är det kalkylblad där den kopierade begäran finns, klistras filtret in som ett absolut filter.
 
->[!NOTE] Du kan inte skriva ut en enstaka begäran i flera kalkylblad. Dessutom kan systemet inte klistra in vissa av de kopierade begäranden i nya arbetsböcker eftersom förfrågningarna innehåller indatafilter från andra kalkylblad. Indatafiltren innehåller rapportsviter från celler, datumintervall från celler, filter från celler och andra relaterade parametrar.
+>[!NOTE]
+>
+>Du kan inte skriva ut en enstaka begäran i flera kalkylblad. Dessutom kan systemet inte klistra in vissa av de kopierade begäranden i nya arbetsböcker eftersom förfrågningarna innehåller indatafilter från andra kalkylblad. Indatafiltren innehåller rapportsviter från celler, datumintervall från celler, filter från celler och andra relaterade parametrar.
 
 **Så här kopierar du referensbegäranden**
 
