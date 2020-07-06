@@ -1,17 +1,20 @@
 ---
 title: s_objectID
-description: Hjälpaktivitetskartan identifierar unika länkar på din webbplats.
+description: Hjälp Activity Map att identifiera unika länkar på din webbplats.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
 
 # s_objectID
 
-Variabeln ger `s_objectID` en unik identifierare för en länk. Det används för att göra rapporter i [aktivitetskartan](/help/analyze/activity-map/activity-map.md) mer korrekta. Om du har länkar på en sida som ändras ofta, kan du använda variabeln för att visa aktivitetskartan för en unik länkplats så att den kan gruppera data på rätt sätt. `s_objectID`
+Variabeln ger `s_objectID` en unik identifierare för en länk. Det används för att göra rapporter i [Activity Map](/help/analyze/activity-map/activity-map.md) mer korrekta. Om du har länkar på en sida som ändras ofta kan du använda variabeln för att ange Activity Map för en unik länkplats så att den kan gruppera data på rätt sätt. `s_objectID`
 
-Om en korrekt aktivitetskarta är viktig för din organisation rekommenderar Adobe att du inkluderar variabeln i händelse `s_objectID` `onClick` av länkar på din webbplats. Mer information finns i [Användningsexempel för länkspårning](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-use-case.md) av aktivitetskarta i Användarhandboken för Analysera.
+Om Activity Map är viktigt för din organisation rekommenderar Adobe att du tar med variabeln om det `s_objectID` `onClick` finns länkar på din webbplats. Mer information finns i användningsexempel [för](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-use-case.md) Activity Map-länkspårning i användarhandboken för Analysera.
 
 ## Objekt-ID i Adobe Experience Platform Launch
 
@@ -19,7 +22,7 @@ Det finns inget dedikerat fält i Launch som kan använda den här variabeln. An
 
 ## s_objectID i AppMeasurement och Launch, anpassad kodredigerare
 
-Variabeln `s_objectID` är en global variabel, vilket innebär att den fungerar oberoende av Analytics-spårningsobjektet (`s` som standard). Giltiga värden för den här variabeln kan vara valfri sträng som är upp till 100 byte lång. Om variabeln inte är definierad används länkens URL som identifierare.
+Variabeln `s_objectID` är en global variabel, vilket innebär att den fungerar oberoende av spårningsobjektet för Analytics (`s` som standard). Giltiga värden för den här variabeln kan vara valfri sträng som är upp till 100 byte lång. Om variabeln inte är definierad använder Activity Map länkens URL som identifierare för länken.
 
 Den här variabeln ställs vanligtvis in i händelse `onClick` av en HTML-länk.
 
@@ -27,15 +30,17 @@ Den här variabeln ställs vanligtvis in i händelse `onClick` av en HTML-länk.
 <a href="https://example.com" onClick="s_objectID='Example identifier';">Example link</a>
 ```
 
->[!NOTE] Inkludera alltid det semikolon som avslutar en JavaScript-programsats. Semikolon krävs för att aktivitetskartan ska fungera.
+>[!NOTE]
+>
+>Inkludera alltid det semikolon som avslutar en JavaScript-programsats. Semikolon krävs för att Activity Map ska fungera.
 
 ## Användningsexempel
 
-Variabeln är användbar när du vill ha större noggrannhet i rapportering av aktivitetskartor. `s_objectID`
+Variabeln är värdefull när du vill ha större noggrannhet vid rapportering från Activity Map. `s_objectID`
 
 ### Sammanställa länkar från mycket dynamiskt innehåll
 
-Vissa webbplatser har mycket dynamiskt innehåll, till exempel nyhetssajter eller butikssajter med ofta roterande objekt. Eftersom URL:en för länken används som standard i aktivitetskartan är det svårt att förstå de områden som du klickar mest på på sidor där länkarna ändras ofta. Om du använder länkarna `s_objectID` i de här länkarna förstår Activity Map vilka länkar som kan aggregeras, oavsett vilka URL:er de pekar på.
+Vissa webbplatser har mycket dynamiskt innehåll, till exempel nyhetssajter eller butikssajter med ofta roterande objekt. Eftersom Activity Map använder länkens URL som standard är det svårt att förstå vilka områden som har klickats mest på sidor där länkarna ändras ofta. Om du använder länkarna `s_objectID` i dessa länkar, förstår Activity Map vilka länkar som kan aggregeras, oavsett vilka URL-adresser de pekar på.
 
 ```HTML
 <a href="story1.html" onClick="s_objectID='Top left link';">Story 1</a>
@@ -43,15 +48,15 @@ Vissa webbplatser har mycket dynamiskt innehåll, till exempel nyhetssajter elle
 <a href="story3.html" onClick="s_objectID='Top right link';">Story 3</a>
 ```
 
-Oavsett var länkarna pekar eller hur ofta du ändrar dessa länkar, samlar Activity Map in data baserat på värdet i `s_objectID`.
+Oavsett var länkarna pekar eller hur ofta du ändrar länkarna, sammanställer Activity Map data baserat på värdet i `s_objectID`.
 
 ### Håll länkarna åtskilda på en sida
 
-Vissa webbplatser har länkar som pekar på samma plats på olika platser. En länk till startsidan i sidhuvudet och sidfoten på webbplatsen. Eftersom dessa länkar har samma URL, samlar Activity Map in deras data. Du kan separera dem med hjälp av `s_objectID` variabeln:
+Vissa webbplatser har länkar som pekar på samma plats på olika platser. En länk till startsidan i sidhuvudet och sidfoten på webbplatsen. Eftersom de här länkarna har samma URL-adress samlar Activity Map data om dem. Du kan separera dem med hjälp av `s_objectID` variabeln:
 
 ```HTML
 <a href="index.html" onClick="s_objectID='Header home link';">Example link in Header</a>
 <a href="index.html" onClick="s_objectID='Footer home link';">Example link in Footer</a>
 ```
 
-Även om länkar pekar på samma URL kan aktivitetskartan använda variabeln för att skilja dem från varandra på rätt sätt vid rapportering. `s_objectID`
+Även om länkar pekar på samma URL-adress kan Activity Map använda variabeln för att särskilja dem på rätt sätt vid rapportering. `s_objectID`
