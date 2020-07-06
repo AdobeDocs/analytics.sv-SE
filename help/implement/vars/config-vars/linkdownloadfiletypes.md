@@ -2,7 +2,10 @@
 title: linkDownloadFileTypes
 description: Fastställ filtillägg som automatiskt spåras som nedladdningslänkar.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
@@ -13,11 +16,13 @@ När [`trackDownloadLinks`](trackdownloadlinks.md) är aktiverat och en besökar
 
 Anpassa `linkDownloadFileTypes` vilka filtillägg du vill räkna som nedladdningslänkar.
 
->[!NOTE] Endast faktiska klick spåras automatiskt. Följande typer av länkar spåras inte automatiskt:
+>[!NOTE]
+>
+>Endast faktiska klick spåras automatiskt. Följande typer av länkar spåras inte automatiskt:
 >
 > * Filnedladdningar som startar automatiskt när en sida läses in
 > * Hämtar utlösaren efter en omdirigering
-> * Högerklicka och välj &#39;Spara mål som..&#39;
+> * Högerklicka och välj &#39;Spara Target som...&#39;
 > * Länkar som använder JavaScript, till exempel `javascript:openLink()`
 >
 > 
@@ -27,7 +32,7 @@ Om en klickad länk matchar både villkoren för avslutningslänk och nedladdnin
 
 ## Ladda ned tillägg i Adobe Experience Platform Launch
 
-Hämtningstillägg är en lista med filtillägg med ett fält som lägger till mer i dragspelet när du konfigurerar Adobe Analytics-tillägget [!UICONTROL Link Tracking] .
+Hämtningstillägg är en lista med filtillägg med ett fält som du kan lägga till mer i dragspelet [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
 
 1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
