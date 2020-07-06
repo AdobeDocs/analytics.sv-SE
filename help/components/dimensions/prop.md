@@ -2,7 +2,7 @@
 title: Prop
 description: En anpassad dimension som du kan använda vid rapportering.
 translation-type: tm+mt
-source-git-commit: 10e157e370367374b55ee9c87c0e5c7ca9e99c1a
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -16,7 +16,9 @@ ht-degree: 0%
 
 Props är anpassade variabler som du kan använda hur du vill. De finns inte kvar efter den träff de har ställts in.
 
-> [!TIP] Adobe rekommenderar att du använder [eVars](evar.md) i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
+>[!TIP]
+>
+>Adobe rekommenderar att du använder [eVars](evar.md) i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
 
 Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md)kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Hur många som är tillgängliga beror på ditt avtal med Adobe. Upp till 75 props finns om ditt avtal med Adobe ger support.
 
