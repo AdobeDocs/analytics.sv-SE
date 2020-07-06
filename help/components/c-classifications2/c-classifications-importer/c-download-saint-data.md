@@ -5,7 +5,10 @@ title: Klassificeringsmall
 topic: Admin tools
 uuid: 4edd411b-164c-4b4d-a872-b57a3163ca72
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +33,9 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Mallen innehåller de för närvarande definierade klassificeringarna (kolumnrubriker) för en viss datauppsättning utan att inkludera de data som är kopplade till varje klassificering.
 
->[!NOTE] Mallmetoden begränsar nedladdningen av klassificeringsdata till en enda rapportserie.
+>[!NOTE]
+>
+>Mallmetoden begränsar nedladdningen av klassificeringsdata till en enda rapportserie.
 
 Mer information om datafilens struktur finns i [Klassificeringsdatafiler](/help/components/c-classifications2/c-classifications-importer/c-saint-data-files.md).
 
@@ -38,7 +43,9 @@ Mer information om datafilens struktur finns i [Klassificeringsdatafiler](/help/
 
 Mallen innehåller det filformat som du måste följa för klassificeringar.
 
->[!NOTE] Mallmetoden begränsar datainläsningen till en enda rapportserie.
+>[!NOTE]
+>
+>Mallmetoden begränsar datainläsningen till en enda rapportserie.
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. På **[!UICONTROL Download Template]** fliken anger du [datamallens konfiguration](/help/components/c-classifications2/c-classifications-importer/c-download-saint-data.md).
