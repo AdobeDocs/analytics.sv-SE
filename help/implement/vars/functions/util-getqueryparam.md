@@ -2,7 +2,10 @@
 title: Util.getQueryParam
 description: Returnerar värdet för en frågesträngsparameter.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Frågesträngens parametervärde lagras i dataelementet. Du kan sedan referera t
 
 ## s.Util.getQueryParam() i AppMeasurement och Launch, anpassad kodredigerare
 
-Anropa `s.Util.getQueryParam()` metoden för att hämta ett frågesträngsvärde från webbläsarens URL. Strängargumentet som innehåller en frågesträngsparameter krävs. Den här metoden returnerar en sträng som du kan tilldela Analytics-variabler:
+Anropa `s.Util.getQueryParam()` metoden för att hämta ett frågesträngsvärde från webbläsarens URL. Strängargumentet som innehåller en frågesträngsparameter krävs. Den här metoden returnerar en sträng som du kan tilldela till Analytics-variabler:
 
 ```js
 s.eVar1 = s.Util.getQueryParam("cid");
@@ -50,4 +53,6 @@ var customString = "https://example.com?q1=value1;q2=value2;q3=value3";
 s.eVar1 = s.Util.getQueryParam("q2",customString,";");
 ```
 
->[!TIP] Det finns ett liknande plugin-program med namnet [`s.getQueryParam`](../plugins/getqueryparam.md) . Detta plugin-program innehåller mer avancerade funktioner, men är också mer komplext och ingår inte i AppMeasurement som standard.
+>[!TIP]
+>
+>Det finns ett liknande plugin-program med namnet [`s.getQueryParam`](../plugins/getqueryparam.md) . Detta plugin-program innehåller mer avancerade funktioner, men är också mer komplext och ingår inte i AppMeasurement som standard.
