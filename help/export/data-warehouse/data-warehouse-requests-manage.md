@@ -1,19 +1,22 @@
 ---
 description: Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.
-title: Hantera datalagerbegäranden
+title: Hantera Data Warehouse-förfrågningar
 topic: Data warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 5%
 
 ---
 
 
-# Hantera datalagerbegäranden
+# Hantera Data Warehouse-förfrågningar
 
 Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.
 
-Välj fliken **[!UICONTROL Request Manager]** i Datalager.
+I Data warehouse väljer du **[!UICONTROL Request Manager]** fliken.
 
 Om du arbetar på den här fliken kan du
 
@@ -28,5 +31,7 @@ Om du arbetar på den här fliken kan du
 * Prioritera om rapporter genom att dra och släppa dem på en ny plats i kön.
 * Om du vill se när en begäran har börjat bearbetas klickar du på ett ID för en schemalagd begäran och undersöker popup-fönstret som öppnas.
 
->[!NOTE] Om du vill avbryta en begäran om ett datalager [följer du de här stegen](https://helpx.adobe.com/analytics/kb/cancel-data-warehouse-requests.html).
+>[!NOTE]
+>
+>Om du vill avbryta en begäran från Data warehouse [följer du de här stegen](https://helpx.adobe.com/analytics/kb/cancel-data-warehouse-requests.html).
 
