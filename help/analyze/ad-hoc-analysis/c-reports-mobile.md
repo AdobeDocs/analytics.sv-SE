@@ -3,7 +3,7 @@ description: Visar information om webbplatsåtkomst från en mobil enhet. Mobilr
 title: Mobilrapporter
 uuid: feb1fc34-3541-4b2d-b9cb-84d2e91d9539
 translation-type: tm+mt
-source-git-commit: f7c2a366b409995c1fe790db97de5c708882ab3d
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 0%
@@ -19,9 +19,11 @@ Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter för
 
 Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter förbättrar besökaridentifieringen genom att samla in data om mobila enheter som används för att visa webbplatsen. Mobilrapporter kan identifiera en enhets tillverkare och funktioner, som skärmstorlekar, video-, ljud- och cookie-stöd och andra mätvärden. Mobilrapporter finns för alla rapportsviter.
 
-Om du vill förbättra besökaridentifieringen för mobila enheter måste du vara med på listan över leverantörer (allowlist) för att kunna skicka prenumerations-ID:n till en domän. (Du kan visa transportföretaget i **[!UICONTROL Visitor Profile]** >- **[!UICONTROL Domains]** rapporten.)
+Om du vill förbättra besökaridentifieringen för mobila enheter måste du vara med på transportföretagets lista (tillåtelselista) för att kunna skicka prenumerations-ID:n till en domän. (Du kan visa transportföretaget i **[!UICONTROL Visitor Profile]** >- **[!UICONTROL Domains]** rapporten.)
 
->[!NOTE] Om du vill visa rapporter på en mobil enhet loggar du in på [Experience Cloud](https://login.experiencecloud.adobe.com).
+>[!NOTE]
+>
+>Om du vill visa rapporter på en mobil enhet loggar du in på [Experience Cloud](https://login.experiencecloud.adobe.com).
 
 Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https://www.adobe.com/experience-cloud/topics/mobile-analytics.html) .
 
@@ -68,7 +70,7 @@ Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https
   </tr> 
   <tr> 
    <td colname="col1"> <p>Färgdjupsrapport </p> </td> 
-   <td colname="col2"> <p>Grupperar träffar på mobila enheter efter det antal färger som stöds. Rapporten visar det totala antalet besökare på webbplatsen som använde en mobil enhet och delar upp dem i grupper baserat på antalet färger som konfigurerats i deras mobila enheter. Om besökarens mobiltelefon t.ex. har stöd för 24 färger ökar marknadsföringsrapporter och analyser radobjektet som motsvarar 24 färger. </p> </td> 
+   <td colname="col2"> <p>Grupperar träffar på mobila enheter efter det antal färger som stöds. Rapporten visar det totala antalet besökare på webbplatsen som använde en mobil enhet och delar upp dem i grupper baserat på antalet färger som konfigurerats i deras mobila enheter. Om besökarens mobiltelefon t.ex. har stöd för 24 färger ökar marketing reports and analytics det radobjekt som motsvarar 24 färger. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Rapport om stöd för ljud </p> </td> 
