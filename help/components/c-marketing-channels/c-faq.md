@@ -2,7 +2,7 @@
 description: Läs om bästa praxis och exempel på hur ni kan fylla i olika regler som ni kan konfigurera för era marknadsföringskanaler.
 title: Vanliga frågor om marknadsföringskanaler
 translation-type: tm+mt
-source-git-commit: d26edeed2f8d2c78c6e8cddaf8973870372a8b3d
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Se [Skapa regler](/help/components/c-marketing-channels/c-rules.md) för bearbetning av marknadsföringskanaler för definitioner av fält som visas på [!UICONTROL Marketing Channel Processing Rules] sidan.
 
-## Frågor och svar {#faq}
+## Vanliga frågor {#faq}
 
 Alla implementeringar av regler för bearbetning av marknadsföringskanaler kan variera beroende på dina spårningskoder. Om du konfigurerar regler som ger resultat du är ute efter kan du behöva lite kreativt tänkande för att lösa problem.
 
@@ -73,7 +73,9 @@ Om reglerna inte samlar in data, eller om reglerna inte är korrekt konfigurerad
 
 Den här typen av regel fungerar som en&quot;catch all&quot;-regel för att säkerställa att kanaltrafiken alltid matchar den externa trafiken, och hamnar vanligtvis inte i **[!UICONTROL No Channel Identified]**. Var försiktig så att du inte skapar en regel som även identifierar intern trafik. Att ange kanalens värde till **[!UICONTROL Referring Domain]** eller till **[!UICONTROL Page URL]** är det vanligaste och mest användbara sättet att skapa en effektiv Andra regel.
 
->[!NOTE] Det kan fortfarande finnas kanaltrafik som kan ingå i kategorin Ingen kanal identifierad. Till exempel: En besökare kommer till webbplatsen och bokmärker en sida, och på samma besök kommer sidan tillbaka via bokmärket. Eftersom detta inte är den första sidan av besöket kommer det inte att gå vare sig i direktkanalen eller i den andra kanalen eftersom det inte finns någon referensdomän.
+>[!NOTE]
+>
+>Det kan fortfarande finnas kanaltrafik som kan ingå i kategorin Ingen kanal identifierad. Till exempel: En besökare kommer till webbplatsen och bokmärker en sida, och på samma besök kommer sidan tillbaka via bokmärket. Eftersom detta inte är den första sidan av besöket kommer det inte att gå vare sig i direktkanalen eller i den andra kanalen eftersom det inte finns någon referensdomän.
 
 ## Orsaker till internt (sessionsuppdatering) {#internal}
 
@@ -97,7 +99,7 @@ En besökare flyttar från en domän som utlöses till Suite A till en andra dom
 
 **Scenario 5: Långa inläsningstider**
 
-En besökare hamnar på sida A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildförfrågan från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin Adobe Analytics-bildförfrågan. Eftersom Page A:s bildförfrågan aldrig har lästs in, visas den andra sidan som den första träffen av besöket i Adobe Analytics, där Sida A är referent. Besöken klassificeras som Sessionsuppdatering.
+En besökare hamnar på sidan A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildbegäran från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin begäran om Adobe Analytics-bilder. Eftersom Page A:s bildförfrågan aldrig har lästs in visas den andra sidan som den första träffen vid besöket i Adobe Analytics, där Page A är hänvisare. Besöken klassificeras som Sessionsuppdatering.
 
 **Scenario 6: Rensar cookies mitt på webbplatsen**
 
