@@ -4,10 +4,10 @@ title: Skapa segment
 topic: Segments
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 translation-type: tm+mt
-source-git-commit: aaf7123b1ed8ced67076affd108e337b10fe0f39
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '1923'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -18,10 +18,10 @@ Med [!UICONTROL Segment Builder] verktyget kan du skapa enkla eller komplexa seg
 
 Det finns flera sätt att komma åt segmentbyggaren:
 
-* **Övre navigering** i analyser: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
+* **Analytics toppnavigering**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, öppna ett projekt och klicka **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
 * **[!UICONTROL Reports & Analytics]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen och klicka sedan på **[!UICONTROL Add]**.
-* **[!UICONTROL Ad Hoc Analysis]**: [Bygg segment i ad hoc-analys](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md#build-segments).
+* **[!UICONTROL Ad Hoc Analysis]**: [Bygg segment i Ad Hoc Analysis](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md#build-segments).
 * **[!UICONTROL Report Builder]**: [Lägg till eller redigera segment i Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/data-requests/segmentation.html).
 
 ## Builder-villkor {#section_F61C4268A5974C788629399ADE1E6E7C}
@@ -70,11 +70,11 @@ Du kan lägga till regeldefinitioner och behållare för att definiera segment.
 1. **[!UICONTROL Segments]**: Klicka på rubriken för att expandera.
 1. **[!UICONTROL Report suite selector]**: Här kan du välja den rapportserie som det här segmentet ska sparas under. Du kan fortfarande använda segmentet i alla rapportsviter.
 1. **[!UICONTROL Segment Preview]**: Här kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt segment och hur brett segmentet är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här segmentet. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL Hits], [!UICONTROL Visits]och [!UICONTROL Visitors] för ett segment som körs mot en datauppsättning. Diagrammet uppdateras omedelbart när du har skapat eller ändrat segmentdefinitionen.
-1. **[!UICONTROL Product Compatibility]**: Innehåller en lista över vilka Adobe Analytics-produkter (Analysis Workspace, [!UICONTROL Reports & Analytics]Ad Hoc Analysis, Data Warehouse) som segmentet du skapade är kompatibelt med. De flesta segment är kompatibla med alla produkter. Alla operatorer och dimensioner är dock inte kompatibla med alla Analytics-produkter, särskilt [Data Warehouse](/help/components/c-segmentation/seg-reference/seg-compatibility.md). Diagrammet uppdateras omedelbart efter att du har gjort ändringar i segmentdefinitionen.
+1. **[!UICONTROL Product Compatibility]**: Innehåller en lista över vilka Adobe Analytics-produkter (Analysis Workspace, [!UICONTROL Reports & Analytics], Ad Hoc Analysis, Data warehouse) som segmentet du skapade är kompatibelt med. De flesta segment är kompatibla med alla produkter. Alla operatorer och dimensioner är dock inte kompatibla med alla Analytics-produkter, särskilt [Data warehouse](/help/components/c-segmentation/seg-reference/seg-compatibility.md). Diagrammet uppdateras omedelbart efter att du har gjort ändringar i segmentdefinitionen.
 
-Segment med inbäddade datumintervall fungerar annorlunda i Analysis Workspace jämfört med [!UICONTROL Reports & Analytics]: I Arbetsyta åsidosätter ett segment med ett inbäddat datumintervall panelens datumintervall. I stället [!UICONTROL Reports & Analytics] visas skärningspunkten för rapportdatumintervallet och segmentets inbäddade datumintervall.
+Segment med inbäddade datumintervall fungerar fortfarande annorlunda i Analysis Workspace jämfört med [!UICONTROL Reports & Analytics]: I Arbetsyta åsidosätter ett segment med ett inbäddat datumintervall panelens datumintervall. I stället [!UICONTROL Reports & Analytics] visas skärningspunkten för rapportdatumintervallet och segmentets inbäddade datumintervall.
 
-**[!UICONTROL Experience Cloud Publishing]**: (Visas inte på skärmen) Det här alternativet visas bara om rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md). Genom att publicera ett segment i Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target]och [!DNL Audience Manager]. [Läs mer](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html) om Experience Cloud-publicering.
+**[!UICONTROL Experience Cloud Publishing]**: (Visas inte på skärmen) Det här alternativet visas bara om rapportsviten som du sparar segmentet i är [aktiverad för Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md). Genom att publicera ett segment på Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target]och [!DNL Audience Manager]. [Läs mer](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html) om Experience Cloud.
 
 ## Skapa segment {#build-segments}
 
@@ -140,7 +140,9 @@ Genom att använda segmentstackning kan du minska antalet segment till 22 och st
 * ett segment för surfplattor
 * 20 segment för de olika geografiska områdena
 
->[!NOTE] När du staplar två segment förenas de som standard med en AND-sats. Detta kan inte ändras till en OR-sats.
+>[!NOTE]
+>
+>När du staplar två segment förenas de som standard med en AND-sats. Detta kan inte ändras till en OR-sats.
 
 1. Gå till Segment Builder.
 1. Ange en rubrik och beskrivning för segmentet.
@@ -194,7 +196,7 @@ Mallar betecknas med Adobes A-logotyp. Ett exempel på mallarna visas nedan:
    <td colname="col2">Visa data för besökare som har deltagit i en orderhändelse. I segmentdefinitionen är behållaren Visitor. Regeln är <p>Beställningar är inte null. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Returbesök </td> 
+   <td colname="col1"> Återbesök </td> 
    <td colname="col2">Visa data från besökare som har besökt minst en gång. I segmentdefinitionen är behållaren Visit. Regeln är <p>Besöksnumret är större än 1. </p> </td> 
   </tr> 
   <tr> 
