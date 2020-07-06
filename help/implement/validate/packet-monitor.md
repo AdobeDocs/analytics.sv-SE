@@ -2,7 +2,10 @@
 title: Paketanalysatorer
 description: Med paketanalyserare kan du visa data som skickas av implementeringen till Adobes datainsamlingsservrar.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,9 @@ I mycket sällsynta fall rapporterar felsökaren en bildförfrågan, men ingen b
 
 Även om Adobe inte har någon officiell paketövervakare finns det många sådana på internet. Här följer några exempel på paketskärmar som andra tycker är användbara.
 
->[!NOTE] Dessa listor är inte avsedda att vara heltäckande, utan snarare information om ofta använda bildskärmar. Om du har en paketskärm som du använder och tycker är användbar kan du ge feedback med knappen till höger i det här fönstret. [!UICONTROL Feedback]
+>[!NOTE]
+>
+>Dessa listor är inte avsedda att vara heltäckande, utan snarare information om ofta använda bildskärmar. Om du har en paketskärm som du använder och tycker är användbar kan du ge feedback med knappen till höger i det här fönstret. [!UICONTROL Feedback]
 
 | Firefox | Internet Explorer | Krom | Fristående program |
 |---|---|---|---|
@@ -32,7 +37,9 @@ I mycket sällsynta fall rapporterar felsökaren en bildförfrågan, men ingen b
 | [HttpWatch](https://www.httpwatch.com/) |  |  |  |
 | [Firebug](https://getfirebug.com/) |  |  |  |
 
->[!NOTE] Adobe ger INTE support för eller felsökning av eventuella problem som du kan råka ut för med dessa paketskärmar. Mer information om hur du får hjälp finns på paketskärmens ursprungliga webbplats.
+>[!NOTE]
+>
+>Adobe ger INTE support för eller felsökning av eventuella problem som du kan råka ut för med dessa paketskärmar. Mer information om hur du får hjälp finns på paketskärmens ursprungliga webbplats.
 
 ## NS_BINDING_ABORTED i svarskoder
 
