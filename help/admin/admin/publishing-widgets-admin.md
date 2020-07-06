@@ -4,18 +4,23 @@ title: Publiceringswidget
 topic: Admin tools
 uuid: 4ecf6a5a-8a4e-4707-b282-39890eba3c5d
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 1%
 
 ---
 
 
 # Publiceringswidget
 
-En publiceringswidget är en behållare som gör att du kan bädda in analysrapporter (bokmärken och instrumentpaneler) på en webbsida. Personer i organisationen som inte har tillgång till analysrapporter kan visa relevanta data.
+En publiceringswidget är en behållare där du kan bädda in Analytics-rapporter (bokmärken och instrumentpaneler) på en webbsida. Personer i organisationen som inte har tillgång till Analytics-rapporter kan visa relevanta data.
 
 Du kan till exempel skapa en kontrollpanel så att företagsledningen kan se antalet besökare, antalet unika sidbesökare och så vidare.
 
->[!CAUTION] Ingen autentisering krävs för att visa data som publicerats via publiceringswidgeten. På grund av detta bör publicerade data inte anses vara säkrare än data som skickas till en e-postgrupp eller listserver. Använd widgeten endast i enlighet med organisationens säkerhetsstandarder, befintliga avtalskrav och tillämplig lag. Med publiceringswidgeten kan du begränsa, per IP-adress eller domänsökväg, var du kan publicera data. Dessa mekanismer är dock enbart avsedda att förhindra oavsiktlig datadistribution och är inte ett effektivt sätt att säkra tillgången till data som distribueras via publiceringswidgeten.
+>[!CAUTION]
+>
+>Ingen autentisering krävs för att visa data som publicerats via publiceringswidgeten. På grund av detta bör publicerade data inte anses vara säkrare än data som skickas till en e-postgrupp eller listserver. Använd widgeten endast i enlighet med organisationens säkerhetsstandarder, befintliga avtalskrav och tillämplig lag. Med publiceringswidgeten kan du begränsa, per IP-adress eller domänsökväg, var du kan publicera data. Dessa mekanismer är dock enbart avsedda att förhindra oavsiktlig datadistribution och är inte ett effektivt sätt att säkra tillgången till data som distribueras via publiceringswidgeten.
 >
 > Adobe frånsäger sig allt ansvar för data som exponeras via publiceringswidgeten.
 
@@ -31,7 +36,9 @@ Om du ser dataskillnader mellan publiceringswidgeten och rapportgränssnittet ka
 1. Klicka **[!UICONTROL Save]** på widgeten.
 1. Kör widgeten igen. (Förhandsgranskningsläget använder inte widgetens cache.)
 
->[!NOTE] Publiceringswidgetar visar bara den första datakolumnen i en rapport.
+>[!NOTE]
+>
+>Publiceringswidgetar visar bara den första datakolumnen i en rapport.
 
 ## Beskrivning av publiceringswidgetar {#section_D67478AECCA946B19A3E4C7071EB4871}
 
