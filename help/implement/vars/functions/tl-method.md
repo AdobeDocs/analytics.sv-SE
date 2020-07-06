@@ -2,18 +2,21 @@
 title: tl
 description: Skicka ett länkspårningssamtal till Adobe.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
 
 # tl
 
-Metoden är en viktig `tl()` komponent i Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar dessa data till Adobes datainsamlingsservrar. Den fungerar på ungefär samma sätt som [`t()`](t-method.md) metoden, men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
+Metoden är en viktig `tl()` komponent i Adobe Analytics. Den tar alla Analytics-variabler som definierats på sidan, kompilerar dem till en bildförfrågan och skickar dessa data till Adobes datainsamlingsservrar. Den fungerar på ungefär samma sätt som [`t()`](t-method.md) metoden, men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
 
 Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverat anropar AppMeasurement automatiskt `tl()` metoden för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa `tl()` metoden manuellt. Anpassade länkar kan bara spåras manuellt.
 
-## Länkspårningssamtal i Adobe Experience Platform Launch
+## Länkspårningsanrop i Adobe Experience Platform Launch
 
 Launch har en dedikerad plats som anger ett länkspårningsanrop.
 
@@ -21,8 +24,8 @@ Launch har en dedikerad plats som anger ett länkspårningsanrop.
 1. Klicka på önskad egenskap.
 1. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 1. Klicka på ikonen + [!UICONTROL Actions]under
-1. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] &quot; [!UICONTROL Action Type] Skicka Beacon&quot;.
-1. Klicka på `s.tl()` alternativknappen.
+1. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och välj [!UICONTROL Action Type] Skicka beacon.
+1. Click the `s.tl()` radio button.
 
 Du kan inte ange några valfria argument i Launch.
 
@@ -44,7 +47,9 @@ s.tl([Link object],[Link type],[Link name],[Override variable]);
 
 Argumentet för läntobjekt avgör om webbläsaren väntar upp till 500 ms innan den navigerar bort från sidan. Om en bildbegäran skickas tidigare än 500 ms navigerar sidan direkt till den klickade länken.
 
->[!NOTE] Med AppMeasurement aktiveras automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
+>[!NOTE]
+>
+>Med AppMeasurement aktiveras automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
 
 * `this`: Vänta i upp till 500 ms för att ge AppMeasurement tid att skicka en bildbegäran. Standardvärde.
 * `true`: Vänta inte.
