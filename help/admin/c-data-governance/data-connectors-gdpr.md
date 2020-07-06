@@ -2,8 +2,11 @@
 description: På den här sidan listas alla partnervariabler i Data Connectors (som tidigare kallats Genesis) som kan innehålla de registrerade personernas direkt identifierbara data eller indirekt identifierbara data.
 title: Datasekretess och Data Connectors (Genesis)
 uuid: d3a32c09-d3c5-452c-8302-8da28e62ead3
-translation-type: ht
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +19,9 @@ Med den här informationen kan du identifiera direkt identifierbara data eller i
 
 Om du använder en integrering av någon av nedanstående anslutningar kan du bara kontrollera vilka partnervariabler/klassificeringar i integreringen som kan innehålla direkt identifierbara data eller indirekt identifierbara data.
 
->[!NOTE] Den här informationen tillhandahålls för att hjälpa dig att identifiera variabler som måste [etiketteras](/help/admin/c-data-governance/gdpr-setup-reportsuite.md), men det är ditt ansvar som personuppgiftsansvarig att använda lämpliga etiketter eller utföra andra åtgärder för att bli [redo för datasekretess](/help/admin/c-data-governance/an-gdpr-overview.md) (som t.ex. att uppdatera klassificeringar, o.s.v.).
+>[!NOTE]
+>
+>Den här informationen tillhandahålls för att hjälpa dig att identifiera variabler som måste [etiketteras](/help/admin/c-data-governance/gdpr-setup-reportsuite.md), men det är ditt ansvar som personuppgiftsansvarig att använda lämpliga etiketter eller utföra andra åtgärder för att bli [redo för datasekretess](/help/admin/c-data-governance/an-gdpr-overview.md) (som t.ex. att uppdatera klassificeringar, o.s.v.).
 
 <table id="table_4DE59253898D46E282EF5F9CB0ED34B5"> 
  <thead> 
