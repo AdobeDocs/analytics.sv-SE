@@ -1,17 +1,20 @@
 ---
-description: Kom igång med Ad hoc-analys.
+description: Kom igång med Ad Hoc Analysis.
 title: Komma igång
 uuid: 6a698e18-4e62-405e-b020-b973c9c4008b
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1329'
+ht-degree: 2%
 
 ---
 
 
-# Kom igång med ad hoc-analys{#concept_48936BA28FAE42DB81F1B2CD4726EB17}
+# Kom igång med Ad Hoc Analysis{#concept_48936BA28FAE42DB81F1B2CD4726EB17}
 
 >[!Iviktig]
->Den 6 augusti 2018 meddelade Adobe att man hade för avsikt att göra en Ad hoc-analys i slutet av livscykeln. Ett slutdatum meddelas så snart det är tillgängligt. Mer information, inklusive vilka versioner av Java som kommer att vara kompatibla under perioden, finns på [https://adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace).
+>Den 6 augusti 2018 meddelade Adobe att man hade för avsikt att avsluta livscykeln Ad Hoc Analysis. Ett slutdatum meddelas så snart det är tillgängligt. Mer information, inklusive vilka versioner av Java som kommer att vara kompatibla under perioden, finns på [https://adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace).
 
 Du kan utföra ögonblicklig, avancerad analys av webbplatsaktiviteter. Du kan visa flera rapporter samtidigt och tillämpa segment över flera dimensioner. Ni kan analysera data från både mikro- och makroperspektiv för att se hur de påverkar era viktiga affärsvärden.
 
@@ -27,11 +30,11 @@ Med de här funktionerna kan du besvara frågor om webbplatstrafik, demografi f�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1. Logga in på Adobe <span class="keyword"> Analytics</span>. </p> </td> 
-   <td colname="col2"> <p>Gå till <a href="https://experiencecloud.adobe.com"  > marketing.adobe.com </a>och logga in med inloggningsuppgifterna för Adobe Analytics. </p> </td> 
+   <td colname="col2"> <p>Gå till <a href="https://experiencecloud.adobe.com"  > marketing.adobe.com </a>och logga in med dina inloggningsuppgifter för Adobe Analytics. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>2. Starta ad hoc-analys. </p> </td> 
-   <td colname="col2">Klicka på <span class="uicontrol"> Adobe Analytics</span> &gt; <span class="uicontrol"> Tools</span> &gt; <span class="uicontrol"> Ad Hoc Analysis</span>och klicka sedan på <span class="uicontrol"> Launch Ad Hoc Analysis</span> . <p> <p>Obs! Om du inte ser knappen <b>Starta ad hoc-analys</b> på den här sidan ska du vara säker på att administratören har lagt till dig i gruppen <i>Ad Hoc Analysis License User</i> i Admin Tools. </p> </p> </td> 
+   <td colname="col1"> <p>2. Starta Ad Hoc Analysis. </p> </td> 
+   <td colname="col2">Klicka på <span class="uicontrol"> Adobe Analytics</span> &gt; <span class="uicontrol"> Verktyg</span> &gt; <span class="uicontrol"> Ad hoc analysis</span>och klicka sedan på <span class="uicontrol"> Starta Ad hoc analysis</span> . <p> <p>Obs! Om du inte ser knappen <b>Starta Ad hoc analysis</b> på den här sidan kontrollerar du att administratören har lagt till dig i gruppen <i>Ad hoc analysis License User</i> i Admin Tools. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3. Skapa ett projekt. </p> </td> 
@@ -64,7 +67,9 @@ c_sys_reqs.xml
 
  -->
 
->[!NOTE] Från och med juli 2018 kommer Ad Hoc Analysis endast att ha stöd för Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja implementeringen av Ad Hoc Analysis.
+>[!NOTE]
+>
+>Från och med juli 2018 stöder Ad Hoc Analysis endast Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja din Ad hoc analysis implementering.
 
 * Grafikkort med stöd för OpenGL 2.0
 * Cookies: Obligatoriskt
@@ -75,11 +80,11 @@ c_sys_reqs.xml
 * JavaScript: Aktiverad
 * Java-version: Java 1.7 eller senare (se anm. ovan)
 
-   Om du inte har rätt version av Java installerad installeras den åt dig. Om du har en icke-kompatibel version av Java installerad hämtas och du uppmanas att installera uppdateringarna.
+   Om du inte har rätt version av Java installerad installeras den åt dig. Om du har en icke-kompatibel version av Java installerad hämtas och uppmanas du att installera uppdateringarna Ad hoc analysis.
 
 ## Instruktioner för Java-uppgradering {#section_E4C0C6492FF24636A0FF71A59331111D}
 
-Från och med juli 2018 kommer Ad Hoc Analysis endast att ha stöd för Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja implementeringen av Ad Hoc Analysis.
+Från och med juli 2018 stöder Ad Hoc Analysis endast Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja din Ad hoc analysis implementering.
 
 Våra .jar-filer är signerade med en säker 256-bitarskryptering som inte stöds av Java-versioner som är mindre än 1.7.0_76. Detta 256-bitars certifikat ger dig bättre säkerhet.
 
@@ -96,7 +101,7 @@ Om du fortfarande har Java 7 installerat måste du uppgradera före underhållsv
 
    1. Kontakta IT-avdelningen för att få den senaste versionen av Java installerad.
 
-## Starta ad hoc-analys {#concept_B1CE3C1E6D1A4311B9835BEB69812E55}
+## Launch Ad Hoc Analysis {#concept_B1CE3C1E6D1A4311B9835BEB69812E55}
 
 <!-- 
 
@@ -104,7 +109,7 @@ c_login.xml
 
  -->
 
-Du kan logga in från [!DNL Experience Cloud] eller från en URL-adress. Om du loggar in från Rapporter och Analytics loggas du in automatiskt. Du behöver bara logga in med en URL om du kommer åt ad hoc-analysens URL från en annan plats, till exempel en länk eller från en favoritmeny.
+Du kan logga in från [!DNL Experience Cloud] eller från en URL-adress. Om du loggar in från Rapporter och Analytics loggas du in automatiskt. Du behöver bara logga in med en URL-adress om du kommer åt den ad hoc analysis URL-adressen från en annan plats, till exempel en länk eller från en favoritmeny.
 
 ## Logga in från Experience Cloud {#task_128ED319F3AE49ED886EA3DFA8D0987F}
 
@@ -120,11 +125,11 @@ t_login_suite.xml
 1. Skriv ditt företagsnamn, ditt användarnamn och ditt lösenord. Klicka sedan på **[!UICONTROL Sign In]**.
 1. Klicka på **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Ad Hoc Analysis]**.
 
-   Om du inte ser knappen **Starta ad hoc-analys** på den här sidan ska du vara säker på att administratören har lagt till dig i gruppen *Ad Hoc Analysis License User* i Admin Tools.
+   Om du inte ser knappen **Starta Ad hoc analysis** på den här sidan kontrollerar du att administratören har lagt till dig i gruppen *Ad hoc analysis License User* i Admin Tools.
 1. Klicka på **[!UICONTROL Launch Ad Hoc Analysis]**.
 1. Spara [!DNL discover.jnlp] filen lokalt.
 
-   Du kan köra den här sparade filen när du vill starta ad hoc-analys.
+   Du kan köra den här sparade filen när du vill starta Ad Hoc Analysis.
 
 ## Projekt och arbetsytor {#concept_FAE346335B0347A192C6C806C775D72B}
 
@@ -174,7 +179,7 @@ t_recent_workspace.xml
 
 ## Dela projekt {#task_5911780D90164F3A8A677C8BC719750D}
 
-Delade projekt är tillgängliga för alla Ad hoc-analysanvändare i företaget.
+Delade projekt är tillgängliga för alla Ad Hoc Analysis i företaget.
 
 <!-- 
 
@@ -238,11 +243,11 @@ Du kan komma åt mallar när du skapar ett projekt ( **[!UICONTROL File]** > **[
 |--- |--- |
 | Rankad | Innehåller en tom arbetsyta där du kan skapa en tabell. En sidrapport rangordnar till exempel sidorna på din webbplats baserat på trafik. Detaljtabellen visar procenttal och siffror för mätvärden som Sidvyer och Intäkter. |
 | Trender | Gör att du kan undersöka hur konverteringar och händelser trendar under en viss tidsperiod (timme, dag, vecka, månad, kvartal eller år) under en rapporteringsperiod. |
-| Summor | En rapport på chefsnivå som visar siffror i resultatet. Den innehåller data för Total Intäkter, Sidvisningar och Beställningar. |
+| Totalt | En rapport på chefsnivå som visar siffror i resultatet. Den innehåller data för Total Intäkter, Sidvisningar och Beställningar. |
 | Utfall | Gör att du kan skapa en kanal som visar konverterings- och utfallsfrekvenser mellan kontrollpunkter. Du kan till exempel spåra en besökares utfallspunkter under en köpprocess. |
 | Flöde | Visar de vanligaste sökvägarna som användare tar över sidor, webbplatsavsnitt och servrar. |
-| Konverteringsström | Visar konverteringsprocentsatser mellan specifika måtthändelser. Du kan använda den här rapporten för att förstå antalet klickningar som genererar försäljning och antalet sålda enheter. |
-| Platsanalys | Ett tredimensionellt verktyg för webbplatspaltning som visar hur besökarna rör sig mellan angivna sidor och händelser. |
+| Konverteringstratt | Visar konverteringsprocentsatser mellan specifika måtthändelser. Du kan använda den här rapporten för att förstå antalet klickningar som genererar försäljning och antalet sålda enheter. |
+| Webbplatsanalys | Ett tredimensionellt verktyg för webbplatspaltning som visar hur besökarna rör sig mellan angivna sidor och händelser. |
 | Grupp för virtuellt fokus | Besök dig slumpmässigt från dina besök och visar en stor mängd data om besöket. Du kan använda rapporten för att skapa fokusgrupper utifrån besökarpopulationen. |
 
 ## Öppna en rapport {#task_0AC455CDA198497AA546622FB05F300D}
