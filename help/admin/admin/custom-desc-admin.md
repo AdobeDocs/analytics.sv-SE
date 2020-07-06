@@ -4,7 +4,10 @@ title: Anpassade rapportbeskrivningar
 topic: Admin tools
 uuid: df7b57ab-4bd9-4465-bcd1-d47647eed3ff
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,9 @@ Du kan ange anpassade rapportbeskrivningar för eVars, props, klassificeringar o
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL *variabel *]**
 
->[!NOTE] Det går att lägga till beskrivningar för de flesta traditionella klassificeringar, men för närvarande inte för mobilklassificeringar.
+>[!NOTE]
+>
+>Det går att lägga till beskrivningar för de flesta traditionella klassificeringar, men för närvarande inte för mobilklassificeringar.
 
 ![](assets/report_descriptions.png)
 
