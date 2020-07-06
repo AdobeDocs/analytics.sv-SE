@@ -1,8 +1,11 @@
 ---
 title: Implementera Analytics för mobila enheter
 description: Bestämma vilket AppMeasurement-bibliotek för mobila enheter som ska användas.
-translation-type: ht
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+translation-type: tm+mt
+source-git-commit: ea8eefbf35bfec52ed794a886b5e67f63c121ce9
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +16,7 @@ Mer information om hur du implementerar Analytics för mobila enheter finns i f�
 
 ## SDK:er för Experience Platform för mobila enheter
 
-* [SDK-databasen](https://github.com/Adobe-Marketing-Cloud/aep-sdks-documentation/blob/master/resources/frequently-asked-questions/current-sdk-versions.md)
+* [SDK-databasen](https://github.com/Adobe-Marketing-Cloud/aep-sdks-documentation)
 * [Dokumentation](https://aep-sdks.gitbook.io/docs/)
 
 ## SDK:er för version 4 för mobila enheter
