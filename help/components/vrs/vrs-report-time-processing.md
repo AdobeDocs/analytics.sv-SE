@@ -3,7 +3,10 @@ description: Bearbetning av rapporttid är en virtuell rapportsvitsinställning 
 title: Bearbetning av rapporttid
 uuid: 1a1d82ea-8c93-43cc-8689-cdcf59c309b1
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1424'
+ht-degree: 0%
 
 ---
 
@@ -12,21 +15,23 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Bearbetning av rapporttid är en virtuell rapportsvitsinställning som gör att data kan behandlas på ett icke-förstörande, retroaktivt sätt.
 
->[!NOTE] Rapporttidsbearbetning är bara tillgängligt för Analysis Workspace.
+>[!NOTE]
+>
+>Rapporttidsbearbetning är bara tillgängligt för Analysis Workspace.
 
 Tidsbearbetning för rapportering påverkar bara data i den virtuella rapportsviten och påverkar inte data eller datainsamling i basrapportsviten. Skillnaden mellan Report Time Processing och traditionell Analytics-bearbetning är bäst att förstå med följande diagram:
 
 ![Google1](assets/google1.jpg)
 
-Under databearbetningen i Analytics flödar data genom datainsamlingsflödet och in i ett förbearbetningssteg, som förbereder data för rapportering. I det här förbearbetningssteget används bl.a. förfallologik och eVar-beständighetslogik för data när de samlas in. Den främsta nackdelen med den här förbehandlingsmodellen är att den kräver att all konfiguration görs i förväg innan data samlas in. Det innebär att ändringar i förbehandlingsinställningarna bara gäller för nya data från den tidpunkten och framåt. Det här är problematiskt om data kommer i fel ordning eller om inställningarna är felkonfigurerade.
+Under databearbetningen i Analytics flödar data genom datainsamlingsflödet och in i ett förbearbetningssteg som förbereder data för rapportering. I det här förbearbetningssteget används bl.a. förfallologik och eVar-beständighetslogik för data när de samlas in. Den främsta nackdelen med den här förbehandlingsmodellen är att den kräver att all konfiguration görs i förväg innan data samlas in. Det innebär att ändringar i förbehandlingsinställningarna bara gäller för nya data från den tidpunkten och framåt. Det här är problematiskt om data kommer i fel ordning eller om inställningarna är felkonfigurerade.
 
-Tidsbearbetning för rapportering är ett helt annat sätt att behandla analysdata för rapportering. I stället för att förbestämma bearbetningslogiken innan data samlas in, ignorerar Analytics datauppsättningen under förbearbetningssteget och använder den här logiken varje gång en rapport körs:
+Report Time Processing är ett helt annat sätt att behandla Analytics-data för rapportering. I stället för att förbestämma bearbetningslogiken innan data samlas in, ignorerar Analytics datauppsättningen under förbearbetningssteget och använder logiken varje gång en rapport körs:
 
 ![Google2](assets/google2.jpg)
 
 Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan till exempel ändra besökets timeout-period till hur lång tid du vill på ett icke-förstörande sätt, och dessa ändringar återspeglas i din eVar-beständighet och segmentbehållare retroaktivt som om du hade använt dessa inställningar innan data samlades in. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
 
-Med Report Time Processing kan Analytics även förhindra bakgrundstötningar från att starta nya besök, och [mobil-SDK](https://marketing.adobe.com/developer/get-started/mobile/c-measuring-mobile-applications) kan ange att rapportering ska starta ett nytt besök när en Appstart-händelse utlöses.
+Med Report Time Processing kan Analytics även förhindra att bakgrundstötningar startar nya besök, och [mobil-SDK](https://marketing.adobe.com/developer/get-started/mobile/c-measuring-mobile-applications) kan ange att rapportering ska starta ett nytt besök när en appstartshändelse utlöses.
 
 Följande konfigurationsalternativ är tillgängliga för virtuella rapportsviter med rapporttidsbearbetning aktiverat:
 
@@ -36,14 +41,14 @@ Följande konfigurationsalternativ är tillgängliga för virtuella rapportsvite
 * **Starta ett nytt besök vid varje appstart:** Förutom tidsgränsen för besök kan du tvinga ett besök att börja när en Appstart-händelse har spelats in från Mobile SDK:er oavsett inaktivitetsfönstret. Den här inställningen påverkar besöksmåtten och besökssegmentbehållaren, liksom logiken för besökets förfallodatum på eVars.
 * **Starta nytt besök med evenemang:** En ny session startar när en händelse utlöses, oavsett om en session har uppnått tidsgränsen eller inte. Den nyligen skapade sessionen innehåller händelsen som startade den. Dessutom kan du använda flera händelser för att starta en session och en ny session utlöses om någon av dessa händelser observeras i data. Den här inställningen påverkar antalet besök, besökssegmenteringsbehållaren och besökets förfallologik på eVars.
 
-Rapporttidsbearbetningen stöder inte alla mått och mått som är tillgängliga i traditionella analysrapporter. Virtuella rapportsviter som använder Report Time Processing är bara tillgängliga på Analysis Workspace och kommer inte att vara tillgängliga i [!UICONTROL Reports & Analytics], Ad Hoc Analysis, Data Warehouse, Report Builder, Data Feeds eller API:t för rapportering.
+Report Time Processing stöder inte alla mått som finns i traditionell Analytics-rapportering. Virtuella rapportsviter som använder Report Time Processing är bara tillgängliga i Analysis Workspace och är inte tillgängliga i [!UICONTROL Reports & Analytics], Ad Hoc Analysis, Data warehouse, Report Builder, Data Feeds eller API:t för rapportering.
 
 Dessutom bearbetas endast data som kommer från rapportens datumintervall (kallas datumfönster nedan). Det innebär att eVar-värden som är inställda på&quot;aldrig förfaller&quot; för en besökare före rapportens datumintervall inte finns kvar i rapporteringsfönstren och inte visas i rapporter. Detta innebär också att kundlojalitetsmätningarna enbart baseras på data som finns i rapporteringsdatumintervallet och inte på hela historiken före rapportens datumintervall.
 
 Nedan finns en lista med mått och mått som för närvarande inte stöds vid bearbetning av rapporttid:
 
-* **Analyser för Target:** Stöds inte för närvarande. Framtida stöd planeras.
-* **Analyser för Advertising Cloud-reserverade mått:** Stöds inte för närvarande. Framtida stöd planeras.
+* **Analytics för Target:** Stöds inte för närvarande. Framtida stöd planeras.
+* **Analytics för Advertising Cloud reserverade mått:** Stöds inte för närvarande. Framtida stöd planeras.
 * **Mått för enkel åtkomst:** Stöds inte permanent.
 * **Listvariabler:** Stöds inte för närvarande. Framtida stöd planeras.
 * **Counter eVars:** Stöds inte permanent.
