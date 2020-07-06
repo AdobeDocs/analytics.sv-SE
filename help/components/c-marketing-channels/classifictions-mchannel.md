@@ -2,7 +2,10 @@
 title: Klassificeringar i marknadsföringskanaler
 description: Använd klassificeringar för att kategorisera värden i relaterade grupper och för att rapportera på gruppnivå. Du kan till exempel klassificera alla betalsökningskampanjer i en kategori som videokort. Sedan kan du rapportera om resultatet för den kategorin i förhållande till mätvärden som instanser (eller klickningar).
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 4%
 
 ---
 
@@ -13,7 +16,9 @@ Använd klassificeringar för att kategorisera värden i relaterade grupper och 
 
 Klassificeringar som du lägger till i den här proceduren visas i [!UICONTROL Marketing Channel Overview] rapporten som [!UICONTROL Channel Values]. Kanalvärden är oklassificerade värden i kanalinformationen.
 
->[!NOTE] Se till att du är van vid att skapa klassificeringar i [klassificeringar](/help/components/c-classifications2/c-classifications.md).
+>[!NOTE]
+>
+>Se till att du är van vid att skapa klassificeringar i [klassificeringar](/help/components/c-classifications2/c-classifications.md).
 
 >[!IMPORTANT]
 >
@@ -21,7 +26,7 @@ Klassificeringar som du lägger till i den här proceduren visas i [!UICONTROL M
 
 ## Klassificeringar av marknadsföringskanaler - definitioner {#mktg-channel-classifications}
 
-| Villkor | Definition |
+| Term | Definition |
 |--- |--- |
 | Textklassificeringar | Anger den typ av klassificeringskategori som gör att du kan gruppera variabeldata för rapportering. |
 | Namn | Klassificeringens namn. Den klassificering som du lägger till visas som alternativet Kanaluppdelning i Marketing Channel Manager. |
