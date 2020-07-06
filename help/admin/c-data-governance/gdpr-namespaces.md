@@ -2,8 +2,11 @@
 description: Varje ID som du vill kunna söka efter tilldelas ett namnutrymme, som är en anpassad sträng som identifierar det ID:t i variabeln där det används i alla rapportsviter.
 title: Namnutrymmen
 uuid: cab61844-3209-4980-b14c-6859de777606
-translation-type: ht
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '903'
+ht-degree: 100%
 
 ---
 
@@ -64,7 +67,9 @@ Värdet måste anges som ett 38-siffrigt decimaltal. Om du hämtar det här tale
 
 Det går också att använda `"namespaceId": 4` istället för, eller som tillägg till, `"namespace": "ECID"` och vissa andra Adobe-produkter använder det formuläret.
 
->[!NOTE] Experience Cloud ID (ECID) kallades tidigare för Marketing Cloud ID (MCID) och kallas fortfarande för det namnet i en del befintlig dokumentation.
+>[!NOTE]
+>
+>Experience Cloud ID (ECID) kallades tidigare för Marketing Cloud ID (MCID) och kallas fortfarande för det namnet i en del befintlig dokumentation.
 >
 >Dessa ID:n är de enda ID:n som stöds av Analytics som använder ett annat ”type”-värde än ”analytics”.
 
@@ -104,8 +109,12 @@ För ID:n i anpassade trafik- eller konverteringsvariabler (props eller eVars), 
 
 Du kan också se namnutrymmen som du tidigare har definierat för andra variabler eller rapportsviter och återanvända en av dem, så att samma namnutrymme enkelt kan användas för alla rapportsviter som lagrar den typen av ID. Det går också att tilldela samma namnutrymme till flera variabler i en rapportsvit. En del kunder lagrar till exempel ett CRM-ID i en trafikvariabel och en konverteringsvariabel (beroende på sidan är det ibland i den ena eller båda), och de kan tilldela båda variablerna namnutrymmet CRM-ID.
 
->[!TIP] Undvik att använda en variabels egna namn (namnet som visas i användargränssnittet för rapportering) eller variabelns nummer (till exempel eVar12) när du anger namnutrymmet till API:t för datasekretess, såvida det inte är det namnutrymme som anges när etiketten ID-DEVICE eller ID-PERSON används. Om du använder ett namnutrymme i stället för ett eget namn kan samma block för användaridentitet ange rätt variabel för flera rapportsviter. Om ID:t till exempel finns i olika eVars i vissa av rapportsviterna, eller om de egna namnen inte stämmer överens (till exempel när det egna namnet har lokaliserats för en viss rapportsvit).
+>[!TIP]
+>
+>Undvik att använda en variabels egna namn (namnet som visas i användargränssnittet för rapportering) eller variabelns nummer (till exempel eVar12) när du anger namnutrymmet till API:t för datasekretess, såvida det inte är det namnutrymme som anges när etiketten ID-DEVICE eller ID-PERSON används. Om du använder ett namnutrymme i stället för ett eget namn kan samma block för användaridentitet ange rätt variabel för flera rapportsviter. Om ID:t till exempel finns i olika eVars i vissa av rapportsviterna, eller om de egna namnen inte stämmer överens (till exempel när det egna namnet har lokaliserats för en viss rapportsvit).
 
->[!CAUTION] Namnutrymmena ”visitorId” och ”customVisitorId” är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
+>[!CAUTION]
+>
+>Namnutrymmena ”visitorId” och ”customVisitorId” är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
 Mer information finns i [Ange ett namnutrymme när du anger en variabel som ID-DEVICE eller ID-PERSON.](/help/admin/c-data-governance/gdpr-labels.md)
