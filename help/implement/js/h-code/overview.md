@@ -2,18 +2,25 @@
 title: H Code JavaScript implementation overview
 description: Lär dig arbetsflödet för att implementera H-kod på din webbplats.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 0%
 
 ---
 
 
 # H Code JavaScript implementation overview
 
->[!IMPORTANT] Den här versionen av datainsamling stöds inte längre. Uppgradera till [Adobe Experience Platform Launch](../../launch/overview.md) eller [AppMeasurement for JavaScript](../overview.md).
+>[!IMPORTANT]
+>
+>Den här versionen av datainsamling stöds inte längre. Uppgradera till [Adobe Experience Platform Launch](../../launch/overview.md) eller [AppMeasurement for JavaScript](../overview.md).
 
-Du måste ha tillgång till värdservrarna för att kunna implementera en sida med kod för att samla in data. Följande steg visar dig vägen genom en grundläggande H-kodimplementering i Analytics.
+Du måste ha tillgång till värdservrarna för att kunna implementera en sida med kod för att samla in data. Följande steg visar dig en grundläggande implementering av Analytics H Code.
 
->[!NOTE] Du måste ha en befintlig kopia av `s_code.js` för att kunna följa dessa instruktioner. Adobe erbjuder inte längre något alternativ för att hämta H-kod i Code Manager.
+>[!NOTE]
+>
+>Du måste ha en befintlig kopia av `s_code.js` för att kunna följa dessa instruktioner. Adobe erbjuder inte längre något alternativ för att hämta H-kod i Code Manager.
 
 1. **Uppdatera grundläggande JS-filvariabler**: Redigera `s_code.js` filen och kontrollera att följande variabler är uppdaterade:
    * `s_account` innehåller det rapportsvit-ID som du vill skicka data till. Se
@@ -22,7 +29,7 @@ Du måste ha tillgång till värdservrarna för att kunna implementera en sida m
 3. **Referens`s_code.js`på alla sidor**: Se till att alla enskilda sidor anropar JavaScript-huvudfilen och gör det i HTML- `<body>` taggen (inte `<head>` -taggen).
    > [!TIP] H-koden kräver att `s_code.js` skriptet anropas inom `<body>` -taggen. Detta skiljer sig från andra implementeringsmetoder, varav de flesta kräver skriptreferenser i `<head>` -taggen.
 4. **Definiera sidspecifika variabler på varje sida**: Varje sida ska ha individuella variabler definierade, till exempel sidnamn eller eVars. Enskilda variabler definieras vanligtvis med en intern `<script>` tagg på varje sida.
-5. **Använd felsökaren för att verifiera datainsamling**: Hämta och installera [Experience Cloud-felsökaren](../../validate/debugger.md) för att se till att data skickas till Adobe och att sidvariabler definieras korrekt.
+5. **Använd felsökaren för att verifiera datainsamling**: Hämta och installera felsökningsprogrammet [för](../../validate/debugger.md) Experience Cloud för att säkerställa att data skickas till Adobe och att sidvariabler definieras korrekt.
 
 ## Cachelagring
 
