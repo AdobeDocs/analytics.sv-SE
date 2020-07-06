@@ -1,15 +1,18 @@
 ---
 description: Fältbeskrivningar för Hantera begäranden i Report Builder.
-title: Hantera begäranden - definitioner
+title: Hantera förfrågningar – definitioner
 topic: Report builder
 uuid: 01b21d0e-c870-4df8-95b9-f4aef1f4d16b
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 2%
 
 ---
 
 
-# Hantera begäranden - definitioner
+# Hantera förfrågningar – definitioner
 
 Fältbeskrivningar för Hantera begäranden i Report Builder.
 
@@ -19,7 +22,9 @@ Här [!UICONTROL Request Manager] finns en detaljerad översikt över statusen f
 
 Fältet [!UICONTROL Request Manager] visas när du klickar **[!UICONTROL Manage]** ( ![](assets/edit_request.gif) i verktygsfältet Report Builder.
 
->[!NOTE] Adobe Report Builder verkställer frågeberoenden endast inom samma kalkylblad, inte mellan kalkylblad. Genom att begränsa till beroenden i ett enda kalkylblad säkerställs att körningen går så snabbt som möjligt.
+>[!NOTE]
+>
+>Adobe Report Builder verkställer frågeberoenden endast inom samma kalkylblad, inte mellan kalkylblad. Genom att begränsa till beroenden i ett enda kalkylblad säkerställs att körningen går så snabbt som möjligt.
 
 ## Definitioner {#section_FD29D8614DE74F32A0027FA130F40304}
 
@@ -57,11 +62,11 @@ Fältet [!UICONTROL Request Manager] visas när du klickar **[!UICONTROL Manage]
   </tr> 
   <tr> 
    <td colname="col1"> <p>Lägg till </p> </td> 
-   <td colname="col2"> <p>Visar dialogrutan Begäranguiden. Se <a href="/help/analyze/report-builder/data-requests/t-create-a-data-request.md"   > Skapa en dataförfrågan</a>. </p> </td> 
+   <td colname="col2"> <p>Visar dialogrutan Begäranguiden. See <a href="/help/analyze/report-builder/data-requests/t-create-a-data-request.md"   > Create a Data Request</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Redigera </p> </td> 
-   <td colname="col2"> <p> (eller Redigera flera) Redigerar en markerad begäran. Systemet visar dialogrutan <span class="wintitle"> Request Wizard</span> . Se <a href="/help/analyze/report-builder/manage-requests/t-edit-multiple-requests.md"   > Redigera flera begäranden</a>. </p> </td> 
+   <td colname="col2"> <p> (eller Redigera flera) Redigerar en markerad begäran. Systemet visar dialogrutan <span class="wintitle"> Request Wizard</span> . See <a href="/help/analyze/report-builder/manage-requests/t-edit-multiple-requests.md"   > Edit Multiple Requests</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ta bort </p> </td> 
@@ -77,7 +82,7 @@ Fältet [!UICONTROL Request Manager] visas när du klickar **[!UICONTROL Manage]
   </tr> 
   <tr> 
    <td colname="col1"> <p> Uppdatera </p> </td> 
-   <td colname="col2"> <p>Uppdaterar en enskild begäran eller ett urval av begäranden. (Se <a href="/help/analyze/report-builder/manage-requests/t-refresh-a-request.md"   > Uppdatera en begäran</a>.) </p> </td> 
+   <td colname="col2"> <p>Uppdaterar en enskild begäran eller ett urval av begäranden. (See <a href="/help/analyze/report-builder/manage-requests/t-refresh-a-request.md"   > Refresh a Request</a>.) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Uppdatera lista </p> </td> 
