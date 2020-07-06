@@ -1,19 +1,22 @@
 ---
 description: Rapporterna från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
-title: Trafikkällrapporter
+title: Traffic Sources-rapporter
 topic: Ad hoc analysis
 uuid: 246afbdc-9f7b-4956-a44a-b7aad948f392
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1134'
+ht-degree: 1%
 
 ---
 
 
-# Trafikkällrapporter
+# Traffic Sources-rapporter
 
 Rapporterna från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
 
-## Trafikkällrapporter {#concept_0F1772141E1345C5BCF63BE7C544C0CB}
+## Traffic Sources-rapporter {#concept_0F1772141E1345C5BCF63BE7C544C0CB}
 
 Rapporterna från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
 
@@ -28,7 +31,7 @@ Med trafikkällrapporter kan du:
 
 Dessutom [!UICONTROL Traffic Sources]kvarstår alla rapportvärden och får kredit tills de skrivs över eller tills besöket upphör, beroende på vilket som inträffar först. Tidigare var endast nyckelord och referensdomäner beständiga. Om en besökare till exempel gör en Google-sökning efter&quot;DVD&quot;, som tar dem till din webbplats för ett köp på 100 dollar, tilldelas 100 dollar till nyckelordet&quot;DVD&quot; och även till sökmotorn i Google. Den här funktionen går inte att ändra, oavsett [!DNL Admin Console] inställningar.
 
-## Sök nyckelord {#concept_071FDCBD0A3B4242BA00744786D1C59C}
+## Sökord {#concept_071FDCBD0A3B4242BA00744786D1C59C}
 
 Visar en beskrivning av nyckelord för Alla, Betalda och Naturliga sökningar.
 
@@ -90,13 +93,15 @@ c_reports_referrers.xml
 
  -->
 
-Om en besökare till exempel klickar på en länk från plats A och kommer till din plats, är plats A referenten om den inte är definierad som en del av din domän. Under implementeringen av marknadsföringsrapporter och analyser kan er implementeringskonsult hjälpa er att definiera de domäner och URL:er som ingår i er webbplats. (Den här ändringen kan göras efter implementeringen.)
+Om en besökare till exempel klickar på en länk från plats A och kommer till din plats, är plats A referenten om den inte är definierad som en del av din domän. Under implementeringen av marketing reports and analytics kan din implementeringskonsult hjälpa dig att definiera de domäner och URL:er som är en del av din webbplats. (Den här ändringen kan göras efter implementeringen.)
 
 Domäner eller URL-adresser som inte ingår i de definierade domänerna och URL-adresserna betraktas som referenter. Webbsida A och webbsida B läggs till i det interna URL-filtret, men webbsida C läggs inte till. I det här fallet betraktas webbsida C som en referent.
 
 Mer information finns i [Interna URL-filter](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/internal-url-filter-admin.html) i [!DNL Admin Console] hjälpen.
 
->[!NOTE] Marknadsföringsrapporter och analyser registrerar en hänvisande domän som ett e-postmeddelande när besökare klickar på en e-postmeddelandelänk som innehåller protokollet [!DNL imap://] eller [!DNL mail://] kommer till din webbplats. Allt som kommer från [!DNL https://mail.yahoo.com] räknas till exempel inte som e-postreferent eftersom protokollet är [!DNL https://]. E-post från Outlook rapporteras på raden Typed/Bookmarked, medan alla referenter med ett HTTP-protokoll där domänen är en känd sökmotor rapporteras på raden Sökmotor.
+>[!NOTE]
+>
+>Marketing reports and analytics registrerar en hänvisande domän som ett e-postmeddelande när besökare klickar på en e-postmeddelandelänk som innehåller protokollet [!DNL imap://] eller [!DNL mail://] kommer till din webbplats. Allt som kommer från [!DNL https://mail.yahoo.com] räknas till exempel inte som e-postreferent eftersom protokollet är [!DNL https://]. E-post från Outlook rapporteras på raden Typed/Bookmarked, medan alla referenter med ett HTTP-protokoll där domänen är en känd sökmotor rapporteras på raden Sökmotor.
 
 ## Referenstyp {#concept_689E42D8F96C450DA41C7167C7388198}
 
@@ -129,5 +134,7 @@ Följande radobjekt kan visas när den här rapporten körs:
 
 **USENET (newsgroup)**: Det innebär att URL:en för en referent börjar med `news://`. Refererarlänken publicerades i en diskussionsgrupp i användargruppen i stället för på en webbsida.
 
->[!NOTE] Referenstypslogiken matchar andra trafikkällrapporter (till exempel [!UICONTROL Referrers] och [!UICONTROL Referring Domains]). Detta bör reducera eller eliminera förekomster av Inside Your Site och Inga JavaScript-radobjekt i [!UICONTROL Referrer Type] rapporten.
+>[!NOTE]
+>
+>Referenstypslogiken matchar andra trafikkällrapporter (till exempel [!UICONTROL Referrers] och [!UICONTROL Referring Domains]). Detta bör reducera eller eliminera förekomster av Inside Your Site och Inga JavaScript-radobjekt i [!UICONTROL Referrer Type] rapporten.
 
