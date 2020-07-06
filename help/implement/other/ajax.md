@@ -1,8 +1,11 @@
 ---
 title: Implementera med AJAX
-description: Lär dig hur du implementerar Adobe Analytics på en webbplats med AJAX.
+description: Lär dig implementera Adobe Analytics på en webbplats med AJAX.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
@@ -11,9 +14,9 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 AJAX är ett sätt att använda JavaScript och HTML för att rensa och generera innehåll utan att läsa in en ny sida.
 
-Adobe Analytics förlitar sig vanligtvis på att sidor läses in igen för att återställa Analytics-spårningsobjektet. Varje gång du navigerar till en annan URL återställs alla Analytics-variabler och kan definieras igen. När du använder AJAX på din webbplats bör du justera implementeringen runt bristen på siduppdateringar för att säkerställa att data inte bevaras inkorrekt mellan träffar.
+Adobe Analytics förlitar sig normalt på att sidor laddas om för att återställa spårningsobjektet för Analytics. Varje gång du navigerar till en annan URL återställs alla Analytics-variabler och kan definieras igen. När du använder AJAX på din webbplats bör du justera implementeringen runt bristen på siduppdateringar för att säkerställa att data inte bevaras inkorrekt mellan träffar.
 
-När ni har åtgärder för att rensa variabelvärden är Adobe Analytics på webbplatser som använder AJAX i huvudsak detsamma som andra implementeringsmetoder.
+När du har åtgärder för att rensa variabelvärden är implementering av Adobe Analytics på webbplatser som använder AJAX i huvudsak detsamma som andra implementeringsmetoder.
 
 ## Bestämma interaktioner och träfftyper
 
@@ -24,13 +27,17 @@ Eftersom sidor som använder AJAX vanligtvis inte läses in på nytt finns det f
 * Om svaret är **ja** kan du använda ett spårningsanrop (`s.t()`) för sidvyn.
 * Om svaret är **nej** bör du spåra interaktionen med ett länkspårningsanrop (`s.tl()`).
 
->[!NOTE] Alla interaktioner eller klick behöver inte spelas in. Tänk noga igenom vilka åtgärder som är viktigast att spåra och skicka data till Adobe i enlighet med detta.
+>[!NOTE]
+>
+>Alla interaktioner eller klick behöver inte spelas in. Tänk noga igenom vilka åtgärder som är viktigast att spåra och skicka data till Adobe i enlighet med detta.
 
 ## Rensa variabler på varje sida
 
 Variabelvärden finns kvar på sidor som använder AJAX eftersom sidan inte läses in igen. Det krävs därför en särskild inkvartering för att rensa variabla värden så att de inte kvarstår felaktigt i träffar. Adobe erbjuder en funktion som [`clearVars`](../vars/functions/clearvars.md) enkelt tar bort variabelvärden. Kontrollera att du använder den här funktionen när du har skickat varje träff till Adobe och innan du anger variabelvärden för nästa träff.
 
->[!TIP] Funktionen `clearVars()` är inte tillgänglig i H-koden. Om du inte har uppgraderat till AppMeasurement anger du en tom sträng för varje Analytics-variabelvärde.
+>[!TIP]
+>
+>Funktionen `clearVars()` är inte tillgänglig i H-koden. Om du inte har uppgraderat till AppMeasurement anger du en tom sträng för varje Analytics-variabelvärde.
 
 ## Exempel
 
