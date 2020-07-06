@@ -2,25 +2,30 @@
 description: Ställ in åtgärder som du vill att villkoret ska utlösas.
 keywords: Dynamic Tag Management;rule;create rule;new rule;javascript/third party tags;set up actions for condition;add new script;non-sequential javascript;sequential javascript;non-sequential html
 solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
-title: Ställ in åtgärder för villkoret som ska utlösas
+title: Ställ in åtgärder för villkoret som ska utlösa
 uuid: 2e892f0b-7261-41ee-b849-6e3054a38de0
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 7%
 
 ---
 
 
-# Ställ in åtgärder för villkoret som ska utlösas
+# Ställ in åtgärder för villkoret som ska utlösa
 
 Ställ in åtgärder som du vill att villkoret ska utlösas.
 
 När du har ställt in villkoret måste du ställa in de åtgärder som du vill att villkoret ska utlösas. Dessa åtgärder kan omfatta [!DNL Analytics] händelser, taggar från tredje part och egna skript. I det här exemplet beskrivs hur du konfigurerar skript eller tredjepartstaggar.
 
-Förutom integrerade verktyg som [!DNL Adobe Analytics] och Google Analytics kan Dynamic Tag Management utlösa alla typer av JavaScript-skript eller mata in HTML på er webbplats, på utvalda sidor eller i specifika scenarier.
+Förutom integrerade verktyg som [!DNL Adobe Analytics] och Google Analytics kan Dynamic Tag Management utlösa alla typer av JavaScript eller infoga HTML på din webbplats, på utvalda sidor eller i specifika scenarier.
 
 Varje regel kan utlösa så många skript eller HTML-injektioner du vill.
 
->[!NOTE] Eftersom du kan använda DTM för att mata in egen kod på sidan bör du se till att inte skapa XSS-sårbarheter (XSS) (mer information finns i [OWASP:s guide](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) ). Att använda dataelement i ett skript kräver särskild uppmärksamhet. Anta alltid att dataelementvärden kan komma från en otillförlitlig källa.
+>[!NOTE]
+>
+>Eftersom du kan använda DTM för att mata in egen kod på sidan bör du se till att inte skapa XSS-sårbarheter (XSS) (mer information finns i [OWASP:s guide](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) ). Att använda dataelement i ett skript kräver särskild uppmärksamhet. Anta alltid att dataelementvärden kan komma från en otillförlitlig källa.
 
 **Så här ställer du in åtgärder för villkoret som ska utlösas**
 
