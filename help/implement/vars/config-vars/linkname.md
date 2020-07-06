@@ -2,7 +2,10 @@
 title: linkName
 description: Ange namnet på den anpassade länkträffen.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 1%
 
 ---
 
@@ -21,14 +24,16 @@ Du kan ange länknamnsfältet när du konfigurerar en regel för att skicka en f
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Klicka på ikonen + [!UICONTROL Actions]under
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] &quot; [!UICONTROL Action Type] Skicka Beacon&quot;.
+5. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och välj [!UICONTROL Action Type] Skicka beacon.
 6. Klicka på den `s.tl()` alternativknapp som visar [!UICONTROL Link Name] fältet.
 
 ## s.linkName i AppMeasurement and Launch custom code editor
 
 Variabeln `s.linkName` är en sträng som bestämmer dimensionsvärdet för anpassade länkar, hämtningslänkar eller avslutslänkar (beroende på vad som [`s.linkType`](linktype.md) är). Den kan innehålla upp till 100 byte.
 
->[!TIP] Den här variabeln är den tredje parametern i `tl()` metoden och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkName` `tl()` metoden.
+>[!TIP]
+>
+>Den här variabeln är den tredje parametern i `tl()` metoden och behöver vanligtvis inte anges som en fristående variabel. Du kan dock använda variabeln om du inte vill ange värden som argument i `linkName` `tl()` metoden.
 
 ```js
 s.linkName = "Example custom link";
