@@ -1,22 +1,27 @@
 ---
-description: Information om Analysis Workspace-mallen och rapporter i Rapporter och analyser samt Report Builder.
+description: Information om Analysis Workspace-mallen och rapportering i Rapporter & Analytics och Report Builder.
 title: Rapport om annonsdata i Adobe Analytics
 uuid: e57996b5-b922-4614-8cee-0c1a7d97b428
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 5%
 
 ---
 
 
 # Rapport om annonsdata i Adobe Analytics
 
-Information om Analysis Workspace-mallen och rapporter i Rapporter och analyser samt Report Builder.
+Information om Analysis Workspace-mallen och rapportering i Rapporter &amp; Analytics och Report Builder.
 
->[!NOTE] Du bör vänta minst 24 timmar innan sökmotordata börjar fylla i era Analytics-rapporter. Observera också att analysrapporter inte returnerar data för timgranularitet eftersom AMO-data inte stöder timgranularitet.
+>[!NOTE]
+>
+>Du bör vänta minst 24 timmar innan sökmotordata börjar fyllas i i dina Analytics-rapporter. Observera också att Analytics-rapportering inte returnerar data för timgranularitet eftersom AMO-data inte stöder timgranularitet.
 
 ## Analysis Workspace: Sökmotorer {#section_8173F42B2C784F41B9FD82CBB66F9ADF}
 
-Med den här mallen kan alla som implementerar den här sökmotorintegreringen få tillgång till kopierade sökmotordata i Analytics. Du kommer åt den via **[!UICONTROL Workspace]** > **[!UICONTROL Templates]** > **[!UICONTROL Advertising]** > **[!UICONTROL Search Engines.]**
+Med den här mallen kan alla som implementerar den här sökmotorintegrationen få tillgång till kopierade sökmotordata i Analytics. Du kommer åt den via **[!UICONTROL Workspace]** > **[!UICONTROL Templates]** > **[!UICONTROL Advertising]** > **[!UICONTROL Search Engines.]**
 
 >[!NOTE]
 >
@@ -28,7 +33,7 @@ Med den här mallen kan alla som implementerar den här sökmotorintegreringen f
 |--- |--- |
 | Annonstrender | Översikt över dagliga trender för AMO Impressions, AMO Clicks och AMO Cost. |
 | Annonsplattformar | Ring diagram för kostnaden för de två främsta plattformarna (Google, Bing). |
-| Summor för annonsplattform | Frihandstabell över de översta plattformarna uppdelade efter AMO Impressions, AMO Clicks, AMO Costs, AMO Avg. Position, AMO Avg. Kvalitetspoäng. |
+| Lägg till Platform-summor | Frihandstabell över de översta plattformarna uppdelade efter AMO Impressions, AMO Clicks, AMO Costs, AMO Avg. Position, AMO Avg. Quality Score. |
 | Konton | Staplad kostnadsyta. |
 | Kontosummor | Frihandstabell för de översta kontona uppdelade efter associerade mått. |
 | Kampanjer | Stapeldiagram över kampanjkostnader. |
@@ -40,12 +45,12 @@ Med den här mallen kan alla som implementerar den här sökmotorintegreringen f
 | Nyckelord | Punktdiagram över visningar, klickningar och kostnader för alla kombinationer av nyckelord/matchningstyper. |
 | Summor för nyckelord | Frihandstabell för de översta nyckelords-/matchningstyppskombinationerna uppdelade efter associerade mätvärden. |
 
-## Rapporter och analyser {#section_BB2E75DF909C49EA8D4E92D14D6DFD85}
+## Rapporter och Analytics {#section_BB2E75DF909C49EA8D4E92D14D6DFD85}
 
-Så snart du har konfigurerat ett Advertising Analytics-konto blir rapporten Advertising Analytics tillgänglig.
+Så snart du har skapat ett Advertising Analytics-konto kommer Advertising Analytics-rapporten att bli tillgänglig.
 
 ![](assets/aa_randa.png)
 
 ## Report Builder {#section_8E0371CF81144C33990D909685D1726E}
 
-Så snart du har konfigurerat ett Advertising Analytics-konto blir rapporten Advertising Analytics tillgänglig.
+Så snart du har skapat ett Advertising Analytics-konto kommer Advertising Analytics-rapporten att bli tillgänglig.
