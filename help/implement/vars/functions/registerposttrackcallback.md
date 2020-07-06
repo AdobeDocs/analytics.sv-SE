@@ -2,7 +2,10 @@
 title: registerPostTrackCallback
 description: Skapa callback-funktioner när du har skickat en träff till Adobe.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: 0d7e7dcb2cc382d83e267e51b1abeff38da270d3
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Det finns inget dedikerat fält i Launch som kan använda den här variabeln. An
 
 ## s.registerPostTrackCallback i AppMeasurement and Launch custom code editor
 
-Funktionen `s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs precis innan en bildbegäran skickas.
+Funktionen `s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs omedelbart när en bildbegäran har skickats.
 
 ```js
 s.registerPostTrackCallback(function(){/* Desired code */});
