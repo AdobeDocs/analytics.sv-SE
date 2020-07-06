@@ -1,14 +1,17 @@
 ---
 description: 'null'
-title: Varningsverktyg
+title: Alert Builder
 uuid: 86d00a33-dc99-4dc3-a732-0b895ba487bc
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 1%
 
 ---
 
 
-# Varningsverktyg
+# Alert Builder
 
 >[!IMPORTANT]
 >
@@ -16,7 +19,7 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 Få åtkomst till varningsverktyget på ett av fyra sätt:
 
-* Genom att använda följande genväg i Analysis Workspace:
+* Genom att använda följande kortkommando i Analysis Workspace:
 
    `ctrl (or cmd) + shift + a`
 * Genom att gå till **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]**.
@@ -35,7 +38,9 @@ Ange ett namn för aviseringen. Varningsnamnet kan innehålla rapportens namn el
 
 Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje vecka eller Varje månad.
 
->[!NOTE] För rapportsviter med en anpassad kalender har vi inte stöd för månatlig granularitet i varningsverktyget.
+>[!NOTE]
+>
+>För rapportsviter med en anpassad kalender har vi inte stöd för månatlig granularitet i varningsverktyget.
 
 **Mottagare**
 
