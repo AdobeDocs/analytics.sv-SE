@@ -2,7 +2,7 @@
 title: registerPostTrackCallback
 description: Skapa callback-funktioner när du har skickat en träff till Adobe.
 translation-type: tm+mt
-source-git-commit: 0d7e7dcb2cc382d83e267e51b1abeff38da270d3
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -14,11 +14,15 @@ ht-degree: 0%
 
 Variabeln gör att din organisation kan koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. `registerPostTrackCallback` Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
 
->[!IMPORTANT] Anropa inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti `registerPostTrackCallback` variabeln. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
+>[!IMPORTANT]
+>
+>Anropa inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti `registerPostTrackCallback` variabeln. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
 
 Varje gång du anropar `registerPostTrackCallback` variabeln, kopplar du den funktionen till körning omedelbart efter att en bildbegäran har skickats. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
 
->[!NOTE] Tidpunkten och ordningen för funktioner som utlöses mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` är inte säkerställda. Undvik beroenden mellan dessa två funktioner.
+>[!NOTE]
+>
+>Tidpunkten och ordningen för funktioner som utlöses mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` är inte säkerställda. Undvik beroenden mellan dessa två funktioner.
 
 ## Registrera återanrop efter spår i Adobe Experience Platform Launch
 
