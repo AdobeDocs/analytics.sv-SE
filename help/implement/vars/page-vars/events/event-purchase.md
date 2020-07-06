@@ -2,10 +2,10 @@
 title: Inköpshändelse
 description: Använd inköpshändelsen för att samla in data för måtten"Beställningar","Enheter" och"Intäkter".
 translation-type: tm+mt
-source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -20,15 +20,17 @@ När du anger en köphändelse påverkas följande mått:
 * Måttet Enheter ökas med antalet produkter i `products` variabeln
 * Måttet Intäkter ökar med summan av prisparametrarna i `products` variabeln
 
->[!NOTE] Intäkter multipliceras inte med kvantitetsfältet. skickar till exempel `s.products="Womens;Socks;5;4.50"` inte 22,50 USD till intäkter; den skickar 4,50 dollar. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Exempel,`s.products="Womens;Socks;5;22.50"`.
+>[!NOTE]
+>
+>Intäkter multipliceras inte med kvantitetsfältet. skickar till exempel `s.products="Womens;Socks;5;4.50"` inte 22,50 USD till intäkter; den skickar 4,50 dollar. Se till att implementeringen överför de totala intäkterna för den angivna kvantiteten. Exempel,`s.products="Womens;Socks;5;22.50"`.
 
-## Ställ in inköpshändelsen i Adobe Experience Platform Launch
+## Ställ in köphändelsen i Adobe Experience Platform Launch
 
 1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] till [!UICONTROL Action Type] [!UICONTROL Set Variables].
+5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på [!UICONTROL Events] avsnittet och ställ in listrutan för händelser på [!UICONTROL purchase].
 
 Andra beroende variabler som `products` och `purchaseID` saknar dedikerade fält i Launch. Använd den anpassade kodredigeraren efter AppMeasurement-syntax för dessa variabler.
