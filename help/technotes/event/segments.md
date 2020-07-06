@@ -2,7 +2,10 @@
 title: Exkludera specifika datum i analysen
 description: Tips för att exkludera datum eller datumintervall om du inte vill inkludera det i rapporter.
 translation-type: tm+mt
-source-git-commit: e5a4dc54abdaa029381296c013a07fe6f5aa05b2
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +61,9 @@ Om du inte vill visa nollor i tabellen eller visualiseringar (som orsakar dips) 
 
 Du kan använda segmentet Uteslut påverkade dagar i ett Workspace-projekt. Dra det uteslutna segmentet till arbetsytan med namnet *Släpp ett segment här*.
 
->[!TIP] Inkludera en anteckning om uteslutna data i panelens beskrivning som kan hjälpa dem som tittar på rapporten. Högerklicka på en paneltitel och klicka sedan på **[!UICONTROL Edit description]**.
+>[!TIP]
+>
+>Inkludera en anteckning om uteslutna data i panelens beskrivning som kan hjälpa dem som tittar på rapporten. Högerklicka på en paneltitel och klicka sedan på **[!UICONTROL Edit description]**.
 
 ![Segment tillämpat på en panel](assets/exclude_segment_panel.jpg)
 
