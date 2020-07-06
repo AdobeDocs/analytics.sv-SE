@@ -1,15 +1,18 @@
 ---
 description: När du har kört en rapport kan du anpassa rapporten för att visa och analysera data efter dina behov. Du kan filtrera rapportdata, ändra hur data presenteras grafiskt, ändra granularitet för datum och så vidare.
-title: Anpassa rapportöversikt
+title: Anpassa rapporter – översikt
 topic: Reports and analytics
 uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
 translation-type: tm+mt
-source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 4%
 
 ---
 
 
-# Anpassa rapportöversikt
+# Anpassa rapporter – översikt
 
 När du har kört en rapport kan du anpassa rapporten för att visa och analysera data efter dina behov. Du kan filtrera rapportdata, ändra hur data presenteras grafiskt, ändra granularitet för datum och så vidare.
 
@@ -58,7 +61,7 @@ När du öppnar en kontrollpanel med rapporter som har olika datumintervall kan 
 1. Klicka på kalenderikonen högst upp till höger.
 1. Välj ett datum.
 
-   Du kan:
+   Ni kan:
 
    * Visa dagar, månader eller årsperioder (upp till tre).
    * Dra markören över datum för att markera ett intervall.
@@ -81,7 +84,9 @@ t_reports_comparing_dates.xml
 
 Du kan inte jämföra datum mellan trendrapporter.
 
->[!NOTE] Om du vill göra en datumjämförelse av nyckeltal på en kontrollpanel kan du hämta data till [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
+>[!NOTE]
+>
+>Om du vill göra en datumjämförelse av nyckeltal på en kontrollpanel kan du hämta data till [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
 
 Så här jämför du datum mellan rankade rapporter i Rapporter och analyser:
 
@@ -158,11 +163,11 @@ Förutom den grafiska visningen ger tabellen i rapporten en procentuell jämför
 * Trafikkällor
 * Kampanjer
 * Produkter
-* Bevarande av besökare
+* Kvarhållning av besökare
 * Besökarprofil
 * Anpassad konvertering
 * Anpassad trafik
-* Mål
+* Målgrupp
 * Undersökning
 
 **Jämför rapportsviter**
@@ -214,8 +219,8 @@ try_in_workspace.xml
 
  -->
 
-De flesta rapporter i Rapporter och analyser innehåller nu knappen Testa i arbetsytan så att du kan återskapa den aktuella vyn i Analysis Workspace och anpassa den ytterligare.
+De flesta rapporter i Rapporter och Analytics innehåller nu knappen &quot;Prova i arbetsyta&quot; som gör att du kan återskapa den aktuella vyn i Analysis Workspace för ytterligare anpassning.
 
 För närvarande är knappen bara tillgänglig om ditt användarnamn har fullständig behörighet till Analysis Workspace.
 
-Mer information om alla sätt att anpassa rapporten finns i guiden [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) .
+Mer information om alla sätt att anpassa rapporten finns i guiden till [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) .
