@@ -5,7 +5,10 @@ title: Integreringsfunktioner
 topic: Data connectors
 uuid: 4ad8e6e8-3449-498a-8596-37c0ac1657cd
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,9 @@ När Data Connectors DFA-integreringen har aktiverats ger den följande mätvär
 * (valfritt) DFA-kostnadsdata
 * (valfritt) DFA-frågefel, timeout
 
->[!NOTE] Den här integreringen har inte stöd för klickningsspårare (tidigare klickningskommandon). Klickspårare används för att registrera antalet klick på textlänkar, länkar i e-postmeddelanden eller på andra element som är hårdkodade på en webbplats.
+>[!NOTE]
+>
+>Den här integreringen har inte stöd för klickningsspårare (tidigare klickningskommandon). Klickspårare används för att registrera antalet klick på textlänkar, länkar i e-postmeddelanden eller på andra element som är hårdkodade på en webbplats.
 
 DFA-integreringen för Data Connectors skapar automatiskt DFA-spårningskoder från data som returneras av DFA. Dessa spårningskoder är utformade för att unikt identifiera en annons tillsammans med tillhörande placering och kreativ. Följande visar strukturen för spårningskoden, beroende på version av integreringen. Version 1.5 ser ut så här:
 
@@ -36,7 +41,7 @@ Dessa ID:n fungerar som en delad nyckel mellan Genesis och DFA för att associer
 |---|---|
 | Annons-ID | Ett ID för det kommersiella meddelande som levereras till en användare. Ad Name-klassificeringen innehåller annonsens namn enligt din organisations definition i DFA-systemet. Exempel: `Hybrid Coup Textlink - Build`. |
 | Placement-ID | En representation på ditt DFA-konto för en webbplats, del av en webbplats eller grupp av webbplatser där du har köpt annonsutrymme. |
-| Kreativt ID | Bilden, Flash SWF eller någon annan resurs som ska visas för besökaren. Klassen Creative Name innehåller det namn du angett för den här kreativa personen i DFA-gränssnittet. |
+| Kreativt ID | Bilden, Flash SWF eller annan resurs som ska visas för besökaren. Klassen Creative Name innehåller det namn du angett för den här kreativa personen i DFA-gränssnittet. |
 
 De andra två klassificeringarna, Delivery Tool (DoubleClick for Advertisers) och Channel (Banner Ad), har samma värden för alla DFA-kampanjer och hjälper till att skilja på DFA-importerade data.
 
@@ -55,5 +60,7 @@ Om **[!UICONTROL SearchCenter]** > **[!UICONTROL DFA deduplication]** är valt i
 
 * Om det är en DFA-vy fyller integreringen i strängen &quot;DFA Viewthrough&quot; till SCM eVar.
 
->[!NOTE] Om SearchCenter > DFA deduplicering är aktiverat och frågesträngsparametern SearchCenter är inställd, kommer besöket inte att användas för DFA-bearbetning. Det innebär att frågesträngsparametern SearchCenter ska skilja sig från DFA-klickningsparametern och att inga visningsannonser ska ange frågesträngsparametern SearchCenter.
+>[!NOTE]
+>
+>Om SearchCenter > DFA deduplicering är aktiverat och frågesträngsparametern SearchCenter är inställd, kommer besöket inte att användas för DFA-bearbetning. Det innebär att frågesträngsparametern SearchCenter ska skilja sig från DFA-klickningsparametern och att inga visningsannonser ska ange frågesträngsparametern SearchCenter.
 
