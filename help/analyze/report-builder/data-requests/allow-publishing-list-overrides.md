@@ -4,7 +4,10 @@ title: Tillåt åsidosättning av publiceringslista
 topic: Report builder
 uuid: f2cc9878-ab54-4c6f-8a88-3f3b579955e3
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '157'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 När du schemalägger en rapport kan du välja en publiceringslista som ska användas för distribution.
 
-Publiceringslistor konfigureras i verktygen för Analytics Admin.
+Publiceringslistor konfigureras i Analytics Admin-verktygen.
 
 Se [Publiceringslisthanteraren](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/publishing-list.html) i Analytics Reference.
 
@@ -23,5 +26,7 @@ Om du aktiverar [!UICONTROL Allow Publishing List Override]ersätter rapportsvit
 
 Det här alternativet är inte tillgängligt för rapportsviter som du markerar i celler.
 
->[!NOTE] Om du skickar den schemalagda rapporten till flera publiceringslistor körs rapporten en gång för varje lista. Variabla rapportsviter ersätts med rapportsviten som tilldelats publiceringslistan.
+>[!NOTE]
+>
+>Om du skickar den schemalagda rapporten till flera publiceringslistor körs rapporten en gång för varje lista. Variabla rapportsviter ersätts med rapportsviten som tilldelats publiceringslistan.
 
