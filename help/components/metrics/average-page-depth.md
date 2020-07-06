@@ -2,7 +2,7 @@
 title: Genomsnittligt siddjup
 description: Hur många sidor i genomsnitt dimensionen finns på.
 translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -38,7 +38,9 @@ If 'Count repeat instances' is disabled:
 (1 + 4) / 2 = 2.5, rounded up to 3
 ```
 
->[!TIP] Om du vill visa genomsnittligt siddjup med en decimal, skapar du ett beräknat mått med det här måttet som det enda elementet i formeln. Öka antalet decimaler i det beräknade måttet till önskad decimal.
+>[!TIP]
+>
+>Om du vill visa genomsnittligt siddjup med en decimal, skapar du ett beräknat mått med det här måttet som det enda elementet i formeln. Öka antalet decimaler i det beräknade måttet till önskad decimal.
 
 ## Procent över 100 %
 
