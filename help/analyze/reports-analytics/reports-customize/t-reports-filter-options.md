@@ -4,7 +4,10 @@ title: Filtrera rapportdata
 topic: Reports and analytics
 uuid: b6dcaaf7-61f0-4793-870d-e1d156575d5a
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +48,9 @@ Med avancerade filter kan du styra omfattningen av sökningen med hjälp av en s
 
 Matchar om termen hittas någonstans i radobjektet. Detta fungerar på samma sätt som det enkla filtret.
 
->[!NOTE] Blanksteg kan inte användas i filter eftersom blanksteg är avgränsare i sökningar
+>[!NOTE]
+>
+>Blanksteg kan inte användas i filter eftersom blanksteg är avgränsare i sökningar
 
 **Innehåller inte**
 
@@ -79,11 +84,11 @@ Mens:Desk & TravelJewelry & Accessories:Accessories:Hats:Mens
 Sale & Values
 ```
 
-**Lika med**
+**Är lika med**
 
 Matchar om hela radobjektet, inklusive blanksteg och andra tecken, matchar den angivna frasen.
 
-Lika med: `mens:desk & travel`
+Är lika med: `mens:desk & travel`
 
 `Mens:Desk & Travel`
 
@@ -91,7 +96,7 @@ Lika med: `mens:desk & travel`
 
 Matchar om radobjektet, inklusive blanksteg och andra tecken, börjar med den angivna frasen.
 
-Börjar med: `mens`
+Starts With: `mens`
 
 Matchar följande sidor:
 
@@ -107,7 +112,7 @@ Mens Hemp/Bamboo Flip Flops
 
 Matchar om radobjektet, inklusive blanksteg och andra tecken, slutar med den angivna frasen.
 
-Slutar med: `jean`
+Ends With: `jean`
 
 Matchar följande sidor:
 
