@@ -5,7 +5,10 @@ title: Bot Rules - översikt
 topic: Admin tools
 uuid: 3cb9e29d-1c37-43de-b7ac-34441093a60e
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1309'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,9 @@ Adobe kan inte tillhandahålla den detaljerade IAB-robotlistan till kunder, men 
 
 ## Anpassade robotregler
 
->[!NOTE] Användargränssnittet tillåter att 500 regler definieras manuellt. När den här gränsen har nåtts måste reglerna hanteras i grupp med alternativen Importera fil och Exportera batchregler.
+>[!NOTE]
+>
+>Användargränssnittet tillåter att 500 regler definieras manuellt. När den här gränsen har nåtts måste reglerna hanteras i grupp med alternativen Importera fil och Exportera batchregler.
 
 Med anpassade robotregler kan du filtrera trafikbaserade villkor som du definierar.
 
@@ -121,7 +126,9 @@ VISTA-regler används efter punktregler (se [Bearbetningsordning).](/help/admin/
 
 **Bearbetning av högfrekvent besök:** Om fler än 100 träffar inträffar under ett besök avgör rapporten om besökets tid i sekunder är mindre än eller lika med antalet träffar under besöket. I denna situation, på grund av kostnaderna för att behandla långa, intensiva besök, börjar rapporteringen om med ett nytt besök. Besök med många träffar orsakas normalt av robotattacker och betraktas inte som normala besökare.
 
->[!NOTE] Träffar markerade som *`bots`* faktureras som [serversamtal.](/help/admin/c-server-call-usage/overage-overview.md)
+>[!NOTE]
+>
+>Träffar markerade som *`bots`* faktureras som [serversamtal.](/help/admin/c-server-call-usage/overage-overview.md)
 
 ## Inverkan av IP-förfalskning på robotfiltrering {#section_92E60B95BE8940D983F28C79E0CD6B12}
 
