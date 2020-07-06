@@ -1,9 +1,12 @@
 ---
-description: Dessa förändringar i hur beräknade mätvärden fungerar i Analytics kan påverka er.
+description: Dessa förändringar i hur beräknade mätvärden fungerar i Analytics kan påverka dig.
 title: Vanliga frågor
 uuid: 9b7f1cd1-b969-4b15-8af1-969d816b65b8
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '2105'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +47,7 @@ De här förändringarna av hur beräknade mätvärden fungerar i [!DNL Analytic
 
 [Varför visar vissa av de beräknade måtten formler utan de parenteser som jag har lagt till?](/help/components/c-calcmetrics/cm-transition.md#section_AC0D1E9714AD487F9A1C73359F518B5E)
 
-[(Endast ad hoc-analys) Stöds fortfarande beräknade värden med inbäddade eller inbäddade segmentdefinitioner?](/help/components/c-calcmetrics/cm-transition.md#section_B25C924A282F49388AB604E3D826F44C)
+[(Endast Ad Hoc Analysis) Stöds fortfarande beräknade värden med inbäddade eller inbäddade segmentdefinitioner?](/help/components/c-calcmetrics/cm-transition.md#section_B25C924A282F49388AB604E3D826F44C)
 
 [(Endast Report Builder) Varför har beräknade värden försvunnit från mina förfrågningar?](/help/components/c-calcmetrics/cm-transition.md#section_DA4792FE5D7945218CD5E6328DE08E82)
 
@@ -75,9 +78,13 @@ Du skulle bara se ett antal beräknade mätvärden med samma namn (men som har s
 
 Överväg att konsolidera beräknade värden med liknande namn och definitioner, men var försiktig när du gör det. Du kan kontrollera om det finns beräknade värden i rapportsviten i hanteraren för beräknade mått om du vill verifiera den ursprungliga rapportsviten. Du bör också kontrollera måttdefinitionerna när du tar bort potentiella dubbletter för att vara säker på att du konsoliderar mätvärden korrekt.
 
->[!NOTE] Även om beräknade värden inte längre är bundna till en viss rapportserie och kan användas i alla rapportsviter som är synliga för inloggningsföretaget, är rapportsviten som beräkningarna skapades i eller senast sparades fortfarande synlig i Beräknade mätvärden.
+>[!NOTE]
+>
+>Även om beräknade värden inte längre är bundna till en viss rapportserie och kan användas i alla rapportsviter som är synliga för inloggningsföretaget, är rapportsviten som beräkningarna skapades i eller senast sparades fortfarande synlig i Beräknade mätvärden.
 
->[!NOTE] Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
+>[!NOTE]
+>
+>Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
 
 ## Vad hände med mina globala beräknade värden? {#section_7351D4C7361F4ABAA1B43F8E89AAD211}
 
@@ -89,7 +96,9 @@ Globala beräknade värden ägs nu av den första Admin-användaren i inloggning
 
 Ingenting. Den nya administratörsägaren bör dock vara försiktig när de ändrar eller tar bort dessa beräknade värden. De kan användas i ett antal bokmärkta rapporter och instrumentpaneler.
 
->[!NOTE] Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
+>[!NOTE]
+>
+>Även om ett beräknat mått tas bort fungerar fortfarande bokmärken och kontrollpaneler som refererar till det måttet.
 
 ## Vad hände med Global Calculated Metrics som delades mellan olika inloggningsföretag? {#section_59E5CD948ED643AE9AD3D2E4277647F8}
 
@@ -101,7 +110,9 @@ Globala beräknade värden kan inte längre delas mellan inloggningsföretag. De
 * Standardvärdet är &quot;delad med alla&quot;.
 * Kopior kommer att vara oberoende av alla andra inloggningsföretag.
 
->[!NOTE] Om det beräknade måttet användes i ett bokmärke, en kontrollpanel, en avisering eller en schemalagd rapport kommer redigering av den nya kopian INTE att påverka det gamla beständiga beräknade måttet.
+>[!NOTE]
+>
+>Om det beräknade måttet användes i ett bokmärke, en kontrollpanel, en avisering eller en schemalagd rapport kommer redigering av den nya kopian INTE att påverka det gamla beständiga beräknade måttet.
 
 ## Vad hände med Beräknade mått med Numeric eller Numeric2-klassificering? {#section_71AFE6C4A7CD4AA19AB3A9D3C41D115B}
 
@@ -109,7 +120,7 @@ Globala beräknade värden kan inte längre delas mellan inloggningsföretag. De
 
 Beräknade mätvärden med en numerisk eller numerisk2-klassificering kommer nu även i fortsättningen att vara synliga i [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder]och i API:erna. De stöds dock inte i någon rapport där ett segment används.
 
-Dessutom stöds inte beräknade värden med en Numeric- eller Numeric2-klassificering i följande komponenter: [!UICONTROL Ad Hoc Analysis], [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter [!UICONTROL Anomaly Detection], och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått med en numerisk eller numerisk2-klassificering visas en kompatibilitetsvarning om att det beräknade måttet inte är kompatibelt med vissa delar av produkten.
+Dessutom stöds inte beräknade värden med en Numeric- eller Numeric2-klassificering i följande komponenter: [!UICONTROL Ad Hoc Analysis], [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter [!UICONTROL Anomaly Detection]och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått med en numerisk eller numerisk2-klassificering visas en kompatibilitetsvarning om att det beräknade måttet inte är kompatibelt med vissa delar av produkten.
 
 **Vad du behöver göra**
 
@@ -123,15 +134,15 @@ Eventuella bokmärken, kontrollpaneler, schemalagda rapporter eller aviseringar 
 
 ## Vad behöver jag veta om beräknade mätvärden som baseras på unika besöksmätningar varje dag/vecka/månad/kvartal/år? {#section_E9A77EBB41CE4881B196CC1C282B2DF3}
 
-Beräknade mätvärden som baseras på unika besökarmått visas i följande [!DNL Analytics] komponenter: [!UICONTROL Reports & Analytics]och [!UICONTROL Report Builder]rapporterings-API.
+Beräknade mätvärden som baseras på unika besökarmått visas i följande [!DNL Analytics] komponenter: [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder]och API för rapportering.
 
-Dessa mått stöds dock inte i följande komponenter: [!UICONTROL Segments], [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter [!UICONTROL Anomaly Detection], och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått baserat på Unika besökarvärden visas en kompatibilitetsvarning om att måttet inte är kompatibelt med vissa delar av produkten.
+Dessa mått stöds dock inte i följande komponenter: [!UICONTROL Segments], [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter [!UICONTROL Anomaly Detection]och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått baserat på Unika besökarvärden visas en kompatibilitetsvarning om att måttet inte är kompatibelt med vissa delar av produkten.
 
 Du använder ett unikt basbesökarmått för en rapport med ett segment. Du kan skapa ett beräknat mått baserat på ett unikt besökarmått; Det beräknade måttet kan dock inte tillämpas på en rapport med ett segment, och det beräknade måttet kan inte heller ha ett inbäddat segment.
 
 ## Vad händer med beräknade värden som skapats eller hanterats med API-metoder för den gamla rapportsviten? {#section_13ED1BAD02634674BDAEB479B060A4B6}
 
-Tidigare sparades ett beräknat mått med API-metoden (1.3 eller 1.4) ReportSuite.SaveCalculatedMetrics på samma sätt som när ett beräknat mått skapades eller uppdaterades i Admin Console. Samma sak gäller för ReportSuite.DeleteCalculatedMetrics. Listan med beräknade värden som visades i Admin Console eller när ReportSuite.GetCalculatedMetrics anropades var också densamma.
+Tidigare sparade du ett beräknat mått med API-metoden ReportSuite.SaveCalculatedMetrics (1.3 eller 1.4) på samma sätt som när du skapade eller uppdaterade ett beräknat mått i Admin Console. Samma sak gäller för ReportSuite.DeleteCalculatedMetrics. Listan med beräknade värden som visades i Admin Console eller när ReportSuite.GetCalculatedMetrics anropades var också densamma.
 
 Nu kommer API-metoderna (1.3 eller 1.4) för ReportSuite CalculatedMetrics att fortsätta att spara, ta bort och hämta beräknade värden med den gamla butiken. Befintliga beräknade värden migreras och visas i nya Calculated Metrics Builder. **Nya beräknade mätvärden som skapats med API-metoder visas bara i API:t. De kan fortfarande användas i Rapporterings-API:t.**
 
@@ -173,13 +184,13 @@ Nu är endast de beräknade mätvärden som har sin allokeringstyp specifikt ins
 
 Under migreringen tog Adobe bort överflödiga parenteser från vissa formler. Endast parenteser som inte påverkar hur måttet beräknas togs bort. Detta ändrar inte informationen - det förenklar bara formeln.
 
-## (Endast Ad hoc-analys) Stöds även beräknade värden med inbäddade eller inbäddade segmentdefinitioner? {#section_B25C924A282F49388AB604E3D826F44C}
+## (Endast Ad Hoc Analysis) Stöds fortfarande beräknade värden med inbäddade eller textbundna segmentdefinitioner? {#section_B25C924A282F49388AB604E3D826F44C}
 
-Beräknade mätvärden som skapats i Ad Hoc-analyser kan tidigare innehålla inlinesegmentdefinitioner. Detta är inte längre möjligt.
+Beräknade mätvärden som har skapats i Ad hoc analysis kan tidigare innehålla inline-segmentdefinitioner. Detta är inte längre möjligt.
 
 **Vad du behöver göra**
 
-Du måste spara segmentet explicit. Befintliga beräknade mätvärden med interna segmentdefinitioner kommer att fortsätta att fungera korrekt och kan visas i Ad hoc-analys, men de kan inte sparas utan att segmentet sparas explicit.
+Du måste spara segmentet explicit. Befintliga beräknade mätvärden med infogade segmentdefinitioner fortsätter att fungera korrekt och kan visas i Ad Hoc Analysis, men de kan inte sparas utan att segmentet sparas explicit.
 
 ## (Endast Report Builder) Varför har beräknade värden försvunnit från mina förfrågningar? {#section_DA4792FE5D7945218CD5E6328DE08E82}
 
