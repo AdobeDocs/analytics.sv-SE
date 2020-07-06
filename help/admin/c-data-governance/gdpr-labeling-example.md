@@ -2,8 +2,11 @@
 description: 'null'
 title: Exempel på etiketter
 uuid: a9a5b937-dbde-4f0f-a171-005ef4c79df9
-translation-type: ht
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+translation-type: tm+mt
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '802'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ Anta att du har följande träffdata:
 
 | Etiketter | I2<br>ID-PERSON<br>DEL-PERSON<br>ACC-PERSON | I2<br>ID-DEVICE<br>DEL-DEVICE<br>ACC-ALL | I2<br>DEL-PERSON<br>ACC-PERSON | I2<br>DEL-DEVICE<br>DEL-PERSON<br>ACC-ALL | I2<br>ID-DEVICE<br>DEL-DEVICE<br>ACC-ALL |
 |---|---|---|---|---|---|
-| **Variabelnamn**<br>**(namnutrymme)** | **MyProp1**<br>**(användare)** | **Besökar-ID**<br>**(AAID)** | **MyEvar1** | **MyEvar2** | **MyEvar3**<br>**(xyz)** |
+| **Variabelnamn **<br>**(namnutrymme)** | **MyProp1 **<br>**(användare)** | **Besökar-ID **<br>**(AAID)** | **MyEvar1** | **MyEvar2** | **MyEvar3 **<br>**(xyz)** |
 | Träffdata | Mary | 77 | A | M | X |
 |  | Mary | 88 | B | N | Y |
 |  | Mary | 99 | C | O | Z |
@@ -65,7 +68,9 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 | John | 55 | G | R | X |
 | Alice | 66 | A | N | W |
 
->[!NOTE] Endast celler på rader som innehåller AAID = 77 och en DEL-DEVICE-etikett påverkas.
+>[!NOTE]
+>
+>Endast celler på rader som innehåller AAID = 77 och en DEL-DEVICE-etikett påverkas.
 
 | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt |
 |--- |---|---|---|---|
@@ -79,7 +84,9 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 | John | 55 | G | R | X |
 | Alice | 66 | A | N | W |
 
->[!NOTE] Endast celler på rader som innehåller användare=Mary och etiketten DEL-PERSON påverkas. I praktiken är variabeln som innehåller A_ID antagligen en prop eller eVar och dess ersättningsvärde blir en sträng som börjar med ”Sekretess-”, följt av ett slumpmässigt tal (GUID), snarare än att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
+>[!NOTE]
+>
+>Endast celler på rader som innehåller användare=Mary och etiketten DEL-PERSON påverkas. I praktiken är variabeln som innehåller A_ID antagligen en prop eller eVar och dess ersättningsvärde blir en sträng som börjar med ”Sekretess-”, följt av ett slumpmässigt tal (GUID), snarare än att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
 
 | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant |
 |--- |---|---|---|---|
