@@ -2,7 +2,7 @@
 title: eVar (Merchandising)
 description: Egna variabler som knyts till enskilda produkter.
 translation-type: tm+mt
-source-git-commit: 52e00470df0f0c6bff84b26c1548e64ff5114fb8
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
@@ -18,7 +18,9 @@ ht-degree: 0%
 
 Innan du använder eVars i implementeringen måste du konfigurera eVar till önskad syntax i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
->[!IMPORTANT] Om det inte går att konfigurera eVars för försäljning korrekt resulterar det i oväntade värden eller dataförlust för variabeln. Kontrollera att den är korrekt konfigurerad för din implementering.
+>[!IMPORTANT]
+>
+>Om det inte går att konfigurera eVars för försäljning korrekt resulterar det i oväntade värden eller dataförlust för variabeln. Kontrollera att den är korrekt konfigurerad för din implementering.
 
 ## Implementera med produktsyntax
 
@@ -39,7 +41,7 @@ Värdet för `eVar1` tilldelas produkten. Alla efterföljande lyckade händelser
 
 ## Implementera med konverteringsvariabelsyntax
 
-Konverteringsvariabelsyntax används när eVar-värdet inte är tillgängligt för att anges i `products` variabeln. Detta scenario innebär vanligtvis att sidan inte har något sammanhang för försäljningskanalen eller sökmetoden. I dessa fall ställer du in variabeln för försäljning innan du kommer till produktsidan, och värdet kvarstår tills bindningshändelsen inträffar.
+Konverteringsvariabelsyntax används när eVar-värdet inte är tillgängligt för att anges i `products` variabeln. Det här scenariot innebär vanligtvis att sidan inte har något sammanhang för försäljningskanalen eller sökmetoden. I dessa fall ställer du in variabeln för försäljning innan du kommer till produktsidan, och värdet kvarstår tills bindningshändelsen inträffar.
 
 När bindningshändelsen som väljs under konfigurationen inträffar, kopplas det beständiga värdet för eVar till produkten. Om `prodView` till exempel anges som bindningshändelse är marknadsföringskategorin bunden till den aktuella produktlistan endast när händelsen inträffar. Endast efterföljande bindningshändelser kan uppdatera en eVar för försäljning som redan har tilldelats en produkt.
 
