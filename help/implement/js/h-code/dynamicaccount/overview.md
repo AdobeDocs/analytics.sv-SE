@@ -2,18 +2,25 @@
 title: Översikt över dynamiska konton
 description: Lär dig arbetsflödet om hur du dynamiskt väljer en rapportserie med H-kod.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 4%
 
 ---
 
 
 # Översikt över dynamiska konton
 
->[!IMPORTANT] Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Launch.
+>[!IMPORTANT]
+>
+>Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller Adobe Experience Platform Launch.
 
 Dynamiska konton är en implementeringsfunktion som gör att du kan avgöra vilken rapportsvit som ska användas baserat på kriterier som du anger. Om din organisation behöver mer än en rapportserie men vill använda samma implementering mellan dina webbplatser är dynamiska konton en bra lösning.
 
->[!TIP] Adobe rekommenderar att du skickar data till en enda rapportserie och sedan använder virtuella rapportsviter för att separera data om det behövs. Mer information finns i avsnittet om [Global Report Suite](../../../prepare/global-rs.md) .
+>[!TIP]
+>
+>Adobe rekommenderar att du skickar data till en enda rapportserie och sedan använder virtuella rapportsviter för att separera data om det behövs. Mer information finns i avsnittet om [Global Report Suite](../../../prepare/global-rs.md) .
 
 Tre variabler används för att dynamiskt välja en rapportserie.
 
