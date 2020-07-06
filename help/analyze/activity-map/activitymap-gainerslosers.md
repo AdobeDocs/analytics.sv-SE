@@ -1,21 +1,24 @@
 ---
 description: Med övertäckningar kan du konfigurera datavisualisering på flera sätt så att du enkelt kan se och förstå hur populära länkarna på en sida är.
-title: Anpassningsbara övertäckningar
+title: Anpassningsbara överlagringar
 topic: Activity map
 uuid: c1e56480-c1df-4a81-8a2a-42ea1362175c
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 1%
 
 ---
 
 
-# Anpassningsbara övertäckningar
+# Anpassningsbara överlagringar
 
 Med övertäckningar kan du konfigurera datavisualisering på flera sätt så att du enkelt kan se och förstå hur populära länkarna på en sida är.
 
-Med övertäckningar kan du visualisera klickdata direkt på sidan. Det är det som skiljer ett visuellt analysverktyg som Activity Map från de flesta tabellverktyg och grafiska verktyg som Reports &amp; Analytics.
+Med övertäckningar kan du visualisera klickdata direkt på sidan. Det är det som skiljer ett visuellt analysverktyg som Activity Map från de flesta tabell- och grafikverktyg som Reports &amp; Analytics.
 
-Det finns tre typer av övertäckningar i aktivitetskartan:
+Activity Map har tre typer av övertäckningar:
 
 * Övertoningsövertäckning (Heatmap)
 * Bubbelövertäckning
@@ -43,11 +46,13 @@ Dessa mätvärden läggs ovanpå sidans länkar som en slags&quot;värmekarta&qu
 
 Bubbelövertäckningen visar övertäckningsinnehållet (mått, procent eller rankning) i en liten pratbubbla.
 
-Bubbelövertäckningar visas när du markerar den här övertäckningen i verktygsfältet Övertäckningstyp. . Bubbelövertäckningar visas för alla länkar som matchar markeringen i Inställningar [för](/help/analyze/activity-map/activitymap-overlay-settings.md) aktivitetskarta (de 30 översta, de 50 översta, alla..). Övertoningsövertäckningar visas om det här alternativet inte är markerat.
+Bubbelövertäckningar visas när du markerar den här övertäckningen i verktygsfältet Övertäckningstyp. . Bubbelövertäckningar visas för alla länkar som matchar markeringen i inställningarna [för](/help/analyze/activity-map/activitymap-overlay-settings.md) Activity Map (30 överst, 50 överst, alla..). Övertoningsövertäckningar visas om det här alternativet inte är markerat.
 
 ![](assets/bubble_overlay.png)
 
->[!NOTE] Bubbelövertäckningar för undermenyer visas bara när du visar undermenyn:
+>[!NOTE]
+>
+>Bubbelövertäckningar för undermenyer visas bara när du visar undermenyn:
 >
 >![](assets/bubbles_submenu.png)>
 
