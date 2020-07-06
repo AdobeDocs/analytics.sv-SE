@@ -3,7 +3,10 @@ description: 'null'
 title: Administratörsverktyg
 uuid: 6961e956-14ea-4367-bdbd-eb0bcc456aae
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 36%
 
 ---
 
@@ -12,7 +15,9 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]**
 
->[!IMPORTANT] Öppna inte flera administratörsflikar i samma webbläsare. Detta kan leda till att du oavsiktligt sparar inställningar i fel rapportsvit. Om du t.ex. behöver jämföra regeluppsättningar och kopiera dem till en ny rapportserie föreslår vi att du öppnar en ny webbläsare eller tar en skärmdump för att jämföra regeluppsättningar.
+>[!IMPORTANT]
+>
+>Öppna inte flera administratörsflikar i samma webbläsare. Detta kan leda till att du oavsiktligt sparar inställningar i fel rapportsvit. Om du t.ex. behöver jämföra regeluppsättningar och kopiera dem till en ny rapportserie föreslår vi att du öppnar en ny webbläsare eller tar en skärmdump för att jämföra regeluppsättningar.
 
 + [Fakturering](billing-admin.md)
 + [Bot Rules - översikt](bot-removal/bot-rules.md)
@@ -33,18 +38,18 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 + [Menyanpassning](customize-menus.md)
 + [Måttsynlighet](metric-visibility.md)
 + [Mobilhantering](mobile-management.md)
-+ [Översikt över betald sökningsidentifiering](paid-search-detection/paid-search-detection.md)
++ [Översikt över betald sökdetektering](paid-search-detection/paid-search-detection.md)
 + [Publiceringslistor](publishing-list.md)
 + [Publiceringswidget](publishing-widgets-admin.md)
 + [Inställningshanteraren](preferences-manager.md)
 + [Sekretessinställningar](privacy-settings.md)
-+ [Översikt över bearbetningsregler](c-processing-rules/processing-rules.md)
++ [Översikt över behandlingsregler](c-processing-rules/processing-rules.md)
 + [Översikt över realtidsrapporter](realtime/realtime.md)
 + [Schemalagd rapportkö](scheduled-reports-admin.md)
 + [Översikt över vidarebefordran på serversidan](c-server-side-forwarding/ssf.md)
 + [Enklare rapportmeny](t-simplified-menu.md)
 + [Social förvaltning](social-management.md)
-+ [Översikt över lyckade händelser](c-success-events/success-event.md)
++ [Översikt över slutförda händelser](c-success-events/success-event.md)
 + [Tidsstämplar (valfritt)](timestamp-optional.md)
 + [Översikt över trafikvariabeln (prop)](c-traffic-variables/traffic-var.md)
 + [Ange variabeln Unik besökare](unique-visitor-variable-admin/t-unique-visitor-variable.md)
