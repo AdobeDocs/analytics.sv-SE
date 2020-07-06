@@ -2,26 +2,33 @@
 title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 1%
 
 ---
 
 
 # Implementera länkar för avanmälan
 
->[!IMPORTANT] Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-regler. Se Översikt över [anmälningstjänsten](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) i användarhandboken för Experience Cloud Identity Service.
+>[!IMPORTANT]
+>
+>Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-regler. Se Översikt över [](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) Opt-in-tjänsten i användarhandboken för Experience Cloud Identity Service.
 
 Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder besökare på er webbplats möjlighet att avanmäla sig från den information de samlar in. Alla implementeringstyper finns tillgängliga. din organisation ansvarar för din egen sekretesspolicy och för att den förblir i enlighet med dina signerade villkor.
 
 När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie anges, fortsätter JavaScript-filen att skicka data till Adobe-servrar. Dessa data behandlas dock inte och inkluderas inte i rapporter.
 
->[!TIP] Adobe erbjuder också sekretessinställningar per rapport. Se [Sekretessinställningar](../../admin/admin/privacy-settings.md) i användarhandboken för Admin.
+>[!TIP]
+>
+>Adobe erbjuder också sekretessinställningar per rapport. Se [Sekretessinställningar](../../admin/admin/privacy-settings.md) i användarhandboken för Admin.
 
 ## URL för avanmälan
 
 Avanmälningssidan för din organisation beror på det [`trackingServer`](../vars/config-vars/trackingserver.md) variabla värdet i implementeringen.
 
-* I Adobe Experience Platform Launch:
+* Starta Adobe Experience Platform:
    1. Logga in på [launch.adobe.com](https://launch.adobe.com) och klicka på önskad egenskap.
    2. Klicka på [!UICONTROL Extensions] fliken och sedan på [!UICONTROL Configure] under Adobe Analytics.
    3. Klicka på [!UICONTROL General] dragspelet och notera [!UICONTROL Tracking Server] värdet.
@@ -32,7 +39,7 @@ Avanmälningssidan för din organisation beror på det [`trackingServer`](../var
 
 * Använda [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html):
    1. Navigera till webbplatsen med webbläsaren Chrome.
-   2. Öppna Experience Cloud Debugger och gå till [!UICONTROL Network tab].
+   2. Öppna Felsökning för Experience Cloud och gå till [!UICONTROL Network tab].
    3. Notera [!UICONTROL Request URL - Hostname] värdet.
 
 När du har hittat implementeringens `trackingServer` domän lägger du till sökvägen `/optout.html` till slutet. Exempel:
@@ -73,7 +80,9 @@ Växla automatiskt språk för avanmälningssidan genom att ta med `locale` frå
 
 Till exempel läses avanmälningssidan in på koreanska. `https://example.sc.omtrdc.net/optout.html?locale=ko_KR`
 
->[!TIP] Frågesträngsvärdet är inte obligatoriskt eftersom sidan läses in på engelska som standard. `en_US`
+>[!TIP]
+>
+>Frågesträngsvärdet är inte obligatoriskt eftersom sidan läses in på engelska som standard. `en_US`
 
 ### Popup
 
@@ -81,7 +90,9 @@ Lägger till knappen Stäng fönster på sidan, vilket gör att avanmälningssid
 
 Du kan till exempel `https://example.sc.omtrdc.net/optout.html?popup=1` läsa in avanmälningssidan med knappen Stäng fönster.
 
->[!NOTE] Historiskt sett har den här frågesträngsparametern tvingat fram ett popup-fönster. De flesta moderna webbläsare ger dock användaren kontroll över popup-fönster.
+>[!NOTE]
+>
+>Historiskt sett har den här frågesträngsparametern tvingat fram ett popup-fönster. De flesta moderna webbläsare ger dock användaren kontroll över popup-fönster.
 
 ### Avanmälan med ett klick
 
