@@ -2,7 +2,7 @@
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
 translation-type: tm+mt
-source-git-commit: 0dfab8e0b48b6a3be40bd1e2b39636b53b71113f
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 2%
@@ -87,4 +87,6 @@ Om du till exempel skapar ett VRS med segmentet &quot;Visa träffar&quot; kan du
 
 ![Virtuellt rapportpaket endast för visning](assets/vrs-aiq-example.png)
 
->[!NOTE] Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsvärden, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment returnera lägre värden än ett filter med en jämförbar definition.
+>[!NOTE]
+>
+>Om ett segment undertrycker träffar som innehåller dina mått, kommer dessa metriska instanser inte att tillskrivas någon dimension. Ett liknande rapportfilter döljer bara vissa dimensionsvärden, utan att påverka de värden som bearbetas enligt attribueringsmodellen. Därför kan ett segment returnera lägre värden än ett filter med en jämförbar definition.
