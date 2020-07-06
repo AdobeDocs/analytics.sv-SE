@@ -3,7 +3,10 @@ description: 'null'
 title: Översikt över användning av serversamtal
 uuid: 6e014364-efc1-4769-a0b5-cf105c0ed9b1
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 1%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
 
 ## Varför övervaka och varna för användning av serversamtal? {#section_060C29BF1D00444B85892AD1FCF55290}
 
-Adobe Analytics Server Call Usage behandlar era förfrågningar om genomskinlighet både vad gäller webbläsare och mobilserveranrop. Du får tillgång till
+Adobe Analytics Server Call Usage behandlar dina förfrågningar om genomskinlighet både i webbläsare och på mobilservern. Du får tillgång till
 
 * En kontrollpanel för användning av serversamtal som spårar dina förbrukningsdata för serversamtal och jämför dem med din avtalsgräns. (**[!UICONTROL Analytics > Admin > Server Call Usage]**)
 * En varningstyp för användning av serveranrop i varningsverktyget, som gör att du kan konfigurera varningar för att förhindra överbelastning (**[!UICONTROL Analytics > Components >Alerts]**)
@@ -26,7 +29,7 @@ Tidigare uppdaterades dessa data endast 6 dagar efter att faktureringen hade st�
 
 ## Förutsättningar {#section_49AE590FFC7C4E8A83C640C4AAA581AA}
 
-* **Behörigheter:** För att få tillgång till kontrollpanelen för användning av serversamtal och varningsbyggaren/hanteraren måste du vara en Adobe Analytics-administratör.
+* **Behörigheter:** För att få tillgång till kontrollpanelen Serversamtalsanvändning och varningsverktyget måste du vara en Adobe Analytics-administratör.
 * **Behörigheter:** Administratörer kan ge åtkomst till icke-administratörer: behörigheten anropas **[!UICONTROL Server Call Usage]**. Se [Användarbehörighet](/help/admin/c-server-call-usage/overage-overview.md#section_FCC58EB635954A32990D4E67B52B4369)för serversamtal.
 
 ## Viktig terminologi {#section_CBA348A039F34563B097CD8890AB358D}
@@ -36,7 +39,7 @@ Här är en kort introduktion till viktig terminologi för användning av server
 <table id="table_4E97F85F13344A2C962FA4FA5A51642E"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Villkor </th> 
+   <th colname="col1" class="entry"> Term </th> 
    <th colname="col2" class="entry"> Definition </th> 
   </tr> 
  </thead>
@@ -60,8 +63,8 @@ Här är en kort introduktion till viktig terminologi för användning av server
     </ul> <p>Obs!  Data om användningen av serversamtal för <u>alla</u> rapportsviter inom ett faktureringsföretag visas för alla användare med rätt <a href="/help/admin/c-server-call-usage/overage-overview.md#section_FCC58EB635954A32990D4E67B52B4369"> behörighet</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud-organisation </p> </td> 
-   <td colname="col2"> <p>En organisation är den enhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning i Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla Experience Cloud-produkter och -lösningar. </p> <p>Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer. </p> </td> 
+   <td colname="col1"> <p>Experience Cloud organisation </p> </td> 
+   <td colname="col2"> <p>En organisation är den enhet som gör det möjligt för en administratör att konfigurera grupper och användare samt att styra enkel inloggning i Experience Cloud. Organisationen fungerar som ett inloggningsföretag som omfattar alla produkter och lösningar från Experience Cloud. </p> <p>Oftast är en organisation ditt företagsnamn. Ett företag kan dock ha många organisationer. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Serversamtalsåtagande </p> </td> 
@@ -78,11 +81,13 @@ Här är en kort introduktion till viktig terminologi för användning av server
  </tbody> 
 </table>
 
-## Användarbehörighet för serveranrop {#section_FCC58EB635954A32990D4E67B52B4369}
+## Server Call Usage Permission {#section_FCC58EB635954A32990D4E67B52B4369}
 
-Behörighet för användning av serveranrop beviljas automatiskt till Analytics-administratörer. Det gör att användarna kan visa kontrollpanelen och skapa serversamtalsaviseringar. Administratörer kan välja att ge icke-administratörer denna behörighet.
+Behörighet för användning av serversamtal beviljas automatiskt till Analytics-administratörer. Det gör att användarna kan visa kontrollpanelen och skapa serversamtalsaviseringar. Administratörer kan välja att ge icke-administratörer denna behörighet.
 
->[!NOTE] Ditt företag kan välja vilka inloggningsföretag som har åtkomst till serversamtalsanvändning.
+>[!NOTE]
+>
+>Ditt företag kan välja vilka inloggningsföretag som har åtkomst till serversamtalsanvändning.
 
 <table id="table_86256AD8B4554F369439A8FDF2F545E1"> 
  <thead> 
@@ -98,13 +103,13 @@ Behörighet för användning av serveranrop beviljas automatiskt till Analytics-
    <td colname="col3"> 
     <ol id="ol_13A984328D264488B7045DC7521A5F55"> 
      <li id="li_ACDA518C7D184084AC1DFA7B38C67314">Logga in på Analytics via sc.omniture.com. </li> 
-     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"><span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Användarhantering </span> &gt; <span class="uicontrol"> Grupper </span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> </span> <span class="uicontrol"> </span> <span class="uicontrol"> </span> Analysverktyg¥ &gt; Customize¥ &gt; serversamtalsanvändning¥ </span> </li> 
+     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"> Admin <span class="uicontrol"> &gt; </span> Användarhantering <span class="uicontrol"> &gt; </span> Grupper <span class="uicontrol"> &gt; </span> Redigera all rapportåtkomst <span class="uicontrol"> &gt; </span> <span class="uicontrol"> </span> <span class="uicontrol"> </span> <span class="uicontrol"> Analytics Tools¥ &gt; Customize¥ &gt;Serversamtalsanvändning. </span> </span> </li> 
     </ol> </td> 
    <td colname="col4"> 
     <ol id="ol_518673ED323A4C5993A3B9F4BA09E405"> 
      <li id="li_56FF685A3B454ECEA5F16BB591A60034">Logga in på login.experienceCloud.adobe.com.</li> 
      <li id="li_FA1AE0F19DEF4AB2AA77B22CCA2995F9">Klicka på <span class="uicontrol"> Analytics </span>. </li> 
-     <li id="li_22A4CBB84B5A451780873BBE67E6E6EF">Navigera till <span class="ignoretag"> Produkter <span class="uicontrol"> &gt; </span> Produktprofil <span class="uicontrol"> &gt; </span> Behörigheter <span class="uicontrol"> &gt; </span> Analysverktyg <span class="uicontrol"> &gt; </span> <span class="uicontrol"> </span> Serversamtalsanvändning¥ </span> </li> 
+     <li id="li_22A4CBB84B5A451780873BBE67E6E6EF">Navigera till <span class="ignoretag"> Produkter <span class="uicontrol"> &gt; </span> Produktprofil <span class="uicontrol"> &gt; </span> Behörigheter <span class="uicontrol"> &gt; </span> Analytics Tools <span class="uicontrol"> &gt; </span> <span class="uicontrol"> Server Call Usage </span> </span> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
