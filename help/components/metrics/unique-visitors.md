@@ -2,7 +2,7 @@
 title: Unika besökare
 description: Antalet unika personer (eller enheter).
 translation-type: tm+mt
-source-git-commit: 8cfd797e336e006bf4134a2c10a89ad1003c53dc
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -34,7 +34,9 @@ Det här måttet räknar antalet unika besökar-ID:n för ett givet dimensionsv�
 | 4 | `fid` | Besökaren har en befintlig [`s_fid`](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) cookie, eller om `aid` och `mid` inte kunde anges av någon anledning. |
 | 5 | IP-adress, användaragent, gateway-IP-adress | Den sista utvägen för att identifiera en unik besökare om besökarens webbläsare inte accepterar cookies. |
 
->[!NOTE] Varje besökar-ID från Analytics är knutet till en profil på Adobes servrar. Dessa besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett när en cookie för besöks-ID förfaller.
+>[!NOTE]
+>
+>Varje besökar-ID från Analytics är knutet till en profil på Adobes servrar. Dessa besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett när en cookie för besöks-ID förfaller.
 
 ## Beteende som påverkar antalet unika besökare
 
