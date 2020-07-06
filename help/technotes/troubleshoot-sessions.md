@@ -2,16 +2,19 @@
 title: Felsöka sessioner i Adobe Analytics
 description: Lär dig hur du löser problem med utloggning från Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
 
 # Felsöka sessioner i Adobe Analytics
 
-Den här sidan handlar om felsökningssessioner, vilket innebär att du kan logga in utan att behöva logga in. Om du har problem med att logga in på Adobe Analytics, se [Felsöka inloggning på Adobe Analytics](troubleshoot-login.md).
+Den här sidan handlar om felsökningssessioner, vilket innebär att du kan logga in utan att behöva logga in. Om du har problem med att logga in på Adobe Analytics kan du läsa [Felsöka inloggning på Adobe Analytics](troubleshoot-login.md).
 
-Nästan alla sessionsbaserade problem kommer från en organisations anpassade företagsnätverk. Om du kan logga in på Adobe Analytics men har problem med att vara inloggad kan du använda den här artikeln för att fastställa orsaken.
+Nästan alla sessionsbaserade problem kommer från en organisations anpassade företagsnätverk. Om du kan logga in på Adobe Analytics men inte kan vara inloggad kan du använda den här artikeln för att fastställa orsaken.
 
 ## Kontrollera om problemet beror på din organisations nätverk
 
@@ -25,7 +28,9 @@ Adobe använder en auktoriseringshuvud när förfrågningar görs till Adobe. Vi
 
 För att lösa problemet rekommenderar Adobe att ni samarbetar med IT-avdelningen i er organisation för att tillåta behörighetshuvudet via er organisations proxy.
 
->[!NOTE] Även om medlemmar i Analytics-communityn tycker att följande länkar är användbara, ägs de inte av Adobe. Tänk på detta när du visar innehållet.
+>[!NOTE]
+>
+>Även om medlemmar i Analytics-communityn tycker att följande länkar är användbara, ägs de inte av Adobe. Tänk på detta när du visar innehållet.
 
 Information om Symantec-proxies och autentiseringshuvuden finns här:
 
