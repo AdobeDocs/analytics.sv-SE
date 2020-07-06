@@ -2,7 +2,7 @@
 title: Söknyckelord
 description: Det söknyckelord som besökaren använde för att nå din webbplats.
 translation-type: tm+mt
-source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -14,7 +14,9 @@ ht-degree: 0%
 
 Dimensionen Sök nyckelord rapporterar söknyckelorden som besökarna använder för att nå din webbplats.
 
->[!IMPORTANT] De flesta sökmotorer skickar inte längre sökordet på grund av ökad sekretess. Slutar där Adobe känner igen en sökmotor men saknar nyckelordsgrupper under dimensionsvärdet `"Keyword unavailable"`.
+>[!IMPORTANT]
+>
+>De flesta sökmotorer skickar inte längre sökordet på grund av ökad sekretess. Slutar där Adobe känner igen en sökmotor men saknar nyckelordsgrupper under dimensionsvärdet `"Keyword unavailable"`.
 
 En referent måste uppfylla båda följande för att kunna klassificeras som ett söknyckelord:
 
