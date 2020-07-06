@@ -4,7 +4,10 @@ title: Skapa sekventiella segment
 topic: Segments
 uuid: 7fb9f1c7-a738-416a-aaa2-d77e40fa7e61
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '3673'
+ht-degree: 1%
 
 ---
 
@@ -244,7 +247,9 @@ Skapa ett enkelt sekvenssegment genom att dra två [!UICONTROL Hit] behållare t
 Behållare för logikgrupp krävs för att gruppera villkor i en enda kontrollpunkt för sekventiellt segment. Den speciella logikgruppsbehållaren är endast tillgänglig i sekventiell segmentering för att säkerställa att villkoren uppfylls efter en sekventiell kontrollpunkt och före efterföljande kontrollpunkter. Villkoren i Logic Group-kontrollpunkten kan uppfyllas i vilken ordning som helst. Icke-sekventiella behållare (träff, besök, besökare) kräver däremot inte att deras villkor uppfylls i den övergripande sekvensen, vilket ger ointuitiva resultat om de används med en THEN-operator.
 Behållaren [!UICONTROL Logic Group] är utformad för att hantera *flera kontrollpunkter som en grupp*, *utan någon ordning* mellan de grupperade kontrollpunkterna. Med andra ord, vi bryr oss inte om ordningen på kontrollpunkterna i den gruppen. Du kan till exempel inte kapsla en [!UICONTROL Visitor] behållare i en [!UICONTROL Visitor] behållare. I stället kan du kapsla en [!UICONTROL Logic Group] behållare i en [!UICONTROL Visitor] behållare med specifika kontrollpunkter [!UICONTROL Visit]på nivå och [!UICONTROL Hit]nivå.
 
->[!NOTE] En [!UICONTROL Logic Group] kan bara definieras i ett sekventiellt segment, vilket innebär att [!UICONTROL THEN] operatorn används i uttrycket.
+>[!NOTE]
+>
+>En [!UICONTROL Logic Group] kan bara definieras i ett sekventiellt segment, vilket innebär att [!UICONTROL THEN] operatorn används i uttrycket.
 
 | Behållarhierarki | Illustration | Definition |
 |---|---|---|
@@ -267,7 +272,7 @@ Du kan skapa det här segmentet utan en logikgruppsbehållare, men det är kompl
 * `Visitor Container [Page A THEN Page D THEN Page B THEN Page C] or`
 * `Visitor Container [Page A THEN Page D THEN Page C THEN Page B]`
 
-En logikgruppsbehållare gör det enklare att bygga det här segmentet, vilket visas här:
+En logikgruppsbehållare förenklar byggandet av det här segmentet avsevärt, vilket visas här:
 
 ![](assets/logic-grp-example.png)
 
