@@ -1,16 +1,19 @@
 ---
-description: En översikt över rapportmenyn i Rapporter och analyser.
-title: Rapporter-menyn
+description: En översikt över rapportmenyn i Rapporter och Analytics.
+title: Rapportmeny
 uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 3%
 
 ---
 
 
-# Rapporter-menyn{#reports-menu}
+# Rapportmeny{#reports-menu}
 
-En översikt över rapportmenyn i Rapporter och analyser.
+En översikt över rapportmenyn i Rapporter och Analytics.
 
 Rapporter-menyn innehåller:
 
@@ -31,13 +34,15 @@ Mer information om enskilda rapporter finns i [Rapportbeskrivningar](https://doc
 
 ## Sök efter rapporter {#section_E5EF11E36CB9451AA7B079E585CA7DB6}
 
-Menyn Rapporter ger en förbättrad sökfunktion. Klicka på **[!UICONTROL View All Reports]** eller tryck på snedstreckstangenten (/) och börja sedan skriva för att snabbt hitta en rapport. Rapportsökningen har utökats så att den omfattar allt i vänsternavigeringen i Analytics (Admin, Components, etc.).
+Menyn Rapporter ger en förbättrad sökfunktion. Klicka på **[!UICONTROL View All Reports]** eller tryck på snedstreckstangenten (/) och börja sedan skriva för att snabbt hitta en rapport. Rapportsökningen har utökats så att den omfattar allt i den vänstra navigeringen i Analytics (Admin, Komponenter osv.).
 
 ![](assets/menu-search.png)
 
 Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rapporter. Tryck på Esc om du vill stänga sökningen utan att ändra den aktuella rapporten, eller tryck på Retur om du vill läsa in den markerade rapporten.
 
->[!NOTE] Du kan också söka i rapportlistan efter prop, eVar och händelsenummer. Ange prop-, eVar- eller händelsenummer i sökfältet.
+>[!NOTE]
+>
+>Du kan också söka i rapportlistan efter prop, eVar och händelsenummer. Ange prop-, eVar- eller händelsenummer i sökfältet.
 
 ## Navigeringsöversikt {#section_A6A0A369207149BABE504753B48A42D7}
 
@@ -50,8 +55,8 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1">Menyn Experience Cloud Solutions <img placement="inline"  src="assets/mc-icon.png" width="30px" id="image_B75D0F6991F74389A77068D999C9A910" /> </td> 
-   <td colname="col2"> När du klickar på den här ikonen expanderas Experience Cloud-menyn så att du kan komma åt andra Marketing Could-lösningar. </td> 
+   <td colname="col1">Experience Cloud Solutions Menu <img placement="inline"  src="assets/mc-icon.png" width="30px" id="image_B75D0F6991F74389A77068D999C9A910" /> </td> 
+   <td colname="col2"> När du klickar på den här ikonen expanderas menyn Experience Cloud så att du kan komma åt andra Marketing Could-lösningar. </td> 
   </tr> 
   <tr> 
    <td colname="col1">Växla rapportmeny <img placement="inline"  src="assets/toggle_icon.png" id="image_32296B71E82C4694821D99867305F5FE" width="30px" /> </td> 
@@ -62,7 +67,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
    <td colname="col2">Flyttar uppåt segmentets rand så att du kan lägga till eller hantera segment. Du kan även komma åt gränssnitten <a href="/help/components/c-segmentation/c-segmentation-workflow/seg-build.md"  > Segment Builder</a> och <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html"  > Segment Manager</a> från segmentspåret. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="uicontrol">Mått <img placement="inline"  src="assets/metrics_icon.png" width="30px" id="image_88620CB8A9CC4BC3BE4CE30BDA727512" /></span> </td> 
+   <td colname="col1"><span class="uicontrol">Mätvärden <img placement="inline"  src="assets/metrics_icon.png" width="30px" id="image_88620CB8A9CC4BC3BE4CE30BDA727512" /></span> </td> 
    <td colname="col2"> Hämtar måttspåret som gör att du kan lägga till eller hantera mätvärden och beräknade mätvärden. </td> 
   </tr> 
   <tr> 
@@ -79,7 +84,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Visas ofta</span> </td> 
-   <td colname="col2"> Adobe Analytics håller reda på de tio rapporter som du har kört oftast under de senaste 90 dagarna och visar dem här, sorterade efter hur ofta du har kört dem. Om du inte har varit med i den här rapportsviten på mer än 90 dagar visas en allmän lista med tio populära rapporter i listan. </td> 
+   <td colname="col2"> Adobe Analytics håller reda på de tio rapporter som du har kört oftast under de senaste 90 dagarna och visar dem här, sorterade efter hur ofta du kör dem. Om du inte har varit med i den här rapportsviten på mer än 90 dagar visas en allmän lista med tio populära rapporter i listan. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Rapporthistorik</span> </td> 
@@ -102,12 +107,12 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
    <td colname="col2">Gör att du kan lägga till rapporten på en <a href="/help/analyze/reports-analytics/dashboard.md"  > kontrollpanel</a>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="uicontrol"> Mer ...</span> </td> 
+   <td colname="col1"><span class="uicontrol"> Mer...</span> </td> 
    <td colname="col2"> Gör att du kan utföra alla eller några av följande åtgärder: skriva ut, extrahera data, lägga till en varning, skapa en anpassad rapport, kopiera ett diagram, länka till den här rapporten och öppna ett nytt fönster. </td> 
   </tr> 
   <tr> 
    <td colname="col1">Rapportsvitväljare <img placement="inline"  src="assets/report-suite-selector.png" width="30px" id="image_9F64944D46574B2AA38D81A7C82C4AC4" /> </td> 
-   <td colname="col2">Här kan du välja <a href="https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html"  > basrapportsviter</a> eller <a href="https://docs.adobe.com/help/en/analytics/components/virtual-report-suites/vrs-about.html"  > virtuella rapportsviter</a>. </td> 
+   <td colname="col2">Här kan du välja <a href="https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html"  > basrapportsviter</a> eller <a href="https://docs.adobe.com/help/sv-SE/analytics/components/virtual-report-suites/vrs-about.html"  > virtuella rapportsviter</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1">Kalender <img placement="inline"  src="assets/calendar-icon.png" width="30px" id="image_C5E4F87F964C4C3E98496D38A1123502" /> </td> 
