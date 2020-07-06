@@ -5,7 +5,10 @@ title: DFA-integrering
 topic: Data connectors
 uuid: 972a9d62-24fd-4463-a34c-5ec0b926e81e
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+workflow-type: tm+mt
+source-wordcount: '2590'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +71,7 @@ Konfigurationssidorna ger en översikt över integreringen, tillsammans med prak
   <tr> 
    <td colname="col1"> 3 </td> 
    <td colname="col2"> DFA-annonsvariabel </td> 
-   <td colname="col3"> Den eVar-analys som tar emot DFA-kampanjattribut, visningar och klickdata. Vanligtvis är det här spårningskoden eVar ( <span class="varname"> s.campaign </span>), men du kan välja valfri tillgänglig eVar. Data Connectors lägger även till följande DFA-relaterade klassificeringar i den valda eVar: <p><b>Kampanjer</b>: En samling annonser som betjänas av flera webbplatser med vanliga meddelanden. </p> <p><b>Platsnamn</b>: Webbplatsen där annonsen tjänstgjordes. </p> <p><b>Annonsnamn</b>: Annonsnamnet, enligt definition i ditt DFA-konto. </p> <p><b>Platsplaceringsnamn</b>: Webbplatsen och sidan där annonsen fanns. </p> <p><b>Leveransverktyg</b>: Dubbelklicka för annonsörer. </p> <p><b>Kanal</b>: Banderollannons </p> <p><b>Kostnadsstruktur</b>: CPM, CPC eller Fixed, baserat på annonsens kostnadsstruktur. </p> <p><b>Kreativt namn</b>: Namnet på den som är kopplad till ett annons-/placerings-/kreativt ID. </p> <p><b>DFA &gt; SearchCenter Deduplicering</b>: Anger att DFA ska placera värden i SearchCenter-variabler när DFA-klickningar eller Vyer sker. </a> . </p> </td> 
+   <td colname="col3"> Den Analytics eVar som tar emot DFA-kampanjattribut, avtryck och klickdata. Vanligtvis är det här spårningskoden eVar ( <span class="varname"> s.campaign </span>), men du kan välja valfri tillgänglig eVar. Data Connectors lägger även till följande DFA-relaterade klassificeringar i den valda eVar: <p><b>Kampanjer</b>: En samling annonser som betjänas av flera webbplatser med vanliga meddelanden. </p> <p><b>Platsnamn</b>: Webbplatsen där annonsen tjänstgjordes. </p> <p><b>Annonsnamn</b>: Annonsnamnet, enligt definition i ditt DFA-konto. </p> <p><b>Platsplaceringsnamn</b>: Webbplatsen och sidan där annonsen fanns. </p> <p><b>Leveransverktyg</b>: Dubbelklicka för annonsörer. </p> <p><b>Kanal</b>: Banderollannons </p> <p><b>Kostnadsstruktur</b>: CPM, CPC eller Fixed, baserat på annonsens kostnadsstruktur. </p> <p><b>Kreativt namn</b>: Namnet på den som är kopplad till ett annons-/placerings-/kreativt ID. </p> <p><b>DFA &gt; SearchCenter Deduplicering</b>: Anger att DFA ska placera värden i SearchCenter-variabler när DFA-klickningar eller Vyer sker. </a> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 4 </td> 
@@ -78,17 +81,17 @@ Konfigurationssidorna ger en översikt över integreringen, tillsammans med prak
   <tr> 
    <td colname="col1"> 4 </td> 
    <td colname="col2"> Klickningar </td> 
-   <td colname="col3"> Välj den anpassade händelse som tar emot DFA-klickningsdata. Klickningar anger antalet gånger besökarna klickat på annonsen enligt DFA:s omdirigering. Klickmåttet korrelerar med analysens klickningsmått. <p>Obs!  DFA Click and Analytics Click-through kanske inte matchar exakt på grund av skillnader i hur data samlas in.  </a>. </p> </td> 
+   <td colname="col3"> Välj den anpassade händelse som tar emot DFA-klickningsdata. Klickningar anger antalet gånger besökarna klickat på annonsen enligt DFA:s omdirigering. Klickmåttet korrelerar med Analytics Click-through-måttet. <p>Obs!  DFA-klick och Analytics-klick matchar kanske inte exakt på grund av skillnader i hur data samlas in.  </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 5 </td> 
    <td colname="col2"> Direktvariabel </td> 
-   <td colname="col3"> <p>Den eVar-analys som tar emot DFA-vydata. Med variabeln Visa-genom kan du se hur genomsiktningen påverkar konverteringsgraden på din webbplats. </p> <p>Data Connectors lägger till samma DFA-relaterade klassificeringar i denna eVar som i DFA Ad Variable (se ovan). </p> </td> 
+   <td colname="col3"> <p>Den Analytics eVar som tar emot DFA-vydata. Med variabeln Visa-genom kan du se hur genomsiktningen påverkar konverteringsgraden på din webbplats. </p> <p>Data Connectors lägger till samma DFA-relaterade klassificeringar i denna eVar som i DFA Ad Variable (se ovan). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 5 </td> 
    <td colname="col2"> Tid sedan senaste vy (variabel för hela tidsintervall för visning) </td> 
-   <td colname="col3"> Den eVar-analys som tar emot DFA-tidsdata sedan senaste vyn. Tid sedan senaste vy visar hur lång tid som har gått sedan den senaste annonsvyn. </td> 
+   <td colname="col3"> Den Analytics eVar som tar emot DFA-tidsdata sedan senaste vyn. Tid sedan senaste vy visar hur lång tid som har gått sedan den senaste annonsvyn. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 5 </td> 
@@ -109,7 +112,7 @@ Konfigurationssidorna ger en översikt över integreringen, tillsammans med prak
   <tr> 
    <td colname="col1"> 6 </td> 
    <td colname="col2"> Timeout-händelse </td> 
-   <td colname="col3"> <p>Räknarhändelsen för analys ökar varje gång <span class="varname"> s.maxDelay- </span> timern upphör att gälla och inget svar togs emot från DFA-servrarna. Använd den här händelsen för att konfigurera <span class="varname"> s.maxDelay- </span> variabeln Tuning s.maxDelay </a>.) </p> </td> 
+   <td colname="col3"> <p>Analytics Counter Event som ökar varje gång som <span class="varname"> s.maxDelay- </span> timern förfaller och inget svar togs emot från DFA-servrarna. Använd den här händelsen för att konfigurera <span class="varname"> s.maxDelay- </span> variabeln Tuning s.maxDelay </a>.) </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -138,7 +141,9 @@ För att förstå när ni ska begära genomskinlighets- och klickningsdata från
 
 Genesis-integreringen för DFA utnyttjar DFA Floodlight Configuration ID (dfa_SPOTID), vilket förbättrar rapportens enhetlighet mellan DFA och Adobes datainsamlingssystem.
 
->[!NOTE] Termen Spotlight ändrades till Floodlight i en nyligen släppt version av Google DFA. JavaScript-parametern `dfa_SPOTID` namngavs baserat på Spotlight-terminologin, men används för båda versionerna.
+>[!NOTE]
+>
+>Termen Spotlight ändrades till Floodlight i en nyligen släppt version av Google DFA. JavaScript-parametern `dfa_SPOTID` namngavs baserat på Spotlight-terminologin, men används för båda versionerna.
 
 Om du vill aktivera DFA-integreringen på din webbplats måste du uppdatera din JavaScript-kod för datainsamling genom att lägga till följande:
 
@@ -191,11 +196,11 @@ DFA Integrate Settings Block anger variabler som krävs för DFA-integrering. V�
 
 **SPOTID**: Konfiguration av flytande ljus (kallades tidigare Spotlight-ID). Data Connectors förifyller den här variabeln med ditt DFA Floodlight Configuration ID, baserat på den DFA-kontoinformation som du angav i Integreringsguiden.
 
-**Evar**: Överföringsvariabel. Data Connectors fyller i variabeln i förväg med det Analytics-variabelnamn som du angav för View-Through-variabeln i Integreringsguiden. Ändra inte detta värde utan noggrann samordning med Adobes tekniker och ingenjörstjänster.
+**Evar**: Överföringsvariabel. Data Connectors fyller i den här variabeln i förväg med det Analytics-variabelnamn som du angav för variabeln View-Through i Integreringsguiden. Ändra inte detta värde utan noggrann samordning med Adobes tekniker och ingenjörstjänster.
 
-**errorEvar**: Felvariabel. Datakopplingar fyller i den här variabeln i förväg med det analysvariabelnamn du angav för DFA-frågefelsvariabeln i Integreringsguiden.
+**errorEvar**: Felvariabel. Datakopplingar fyller i den här variabeln i förväg med det Analytics-variabelnamn som du angav för DFA-frågefelsvariabeln i Integreringsguiden.
 
-**timeoutEvent**: Timeout-händelse. Datakopplingar fyller i den här variabeln i förväg med det analysvariabelnamn som du angav för Timeout-händelsevariabeln i Integreringsguiden.
+**timeoutEvent**: Timeout-händelse. Datakopplingar fyller i den här variabeln i förväg med det Analytics-variabelnamn som du angav för Timeout-händelsevariabeln i Integreringsguiden.
 
 **requestURL**: DFA-fjärrvärden som ska fråga efter annonsinformation. Ändra inte det här värdet om inte Adobe rekommenderar det.
 
