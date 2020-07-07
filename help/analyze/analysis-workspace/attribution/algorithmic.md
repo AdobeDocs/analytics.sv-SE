@@ -2,19 +2,15 @@
 title: Algoritmisk attribuering
 description: Information om algoritmisk attribueringsmodell.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 54063d26875aee57ced7825f3427c6051c4f8686
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '257'
 ht-degree: 1%
 
 ---
 
 
 # Algoritmisk attribuering
-
->[!NOTE]
->
->**[!UICONTROL Algorithmic attribution]** har för närvarande begränsad testning. Mer information finns i [funktionsreleaser](/help/landing/an-releases.md) för Adobe Analytics.
 
 Den algoritmiska [attribueringsmodellen](models.md) i Analysis Workspace skiljer sig från andra modeller på så sätt att den använder statistiska tekniker för att allokera kredit över dimensionsvärdena i din rapport eller frihandstabell. Precis som alla andra attribueringsmodeller i Analysis Workspace kan den användas på alla dimensioner eller mätvärden och har stöd för obegränsad segmentering och uppdelningar och distribuerar 100 % av konverteringarna till de dimensioner som anges i tabellen (kallas även&quot;fraktionerad&quot; attribuering).
 
