@@ -6,9 +6,9 @@ title: Referens för datakolumner
 topic: Reports and analytics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: e6bff325cdceb2048554b47944567d50d3c8133f
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3664'
 ht-degree: 0%
 
 ---
@@ -267,7 +267,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `visid_low` | Används i kombination med visid_high för att unikt identifiera en besökare. | bigint unsigned |
 | `visid_new` | Flagga som identifierar om träffen innehåller ett nyligen genererat besökar-ID. | char(1) |
 | `visid_timestamp` | Om besökar-ID nyligen genererades, anger tidsstämpeln (i Unix-tid) för när besökar-ID genererades. | int |
-| `visid_type` | Numeriskt ID som representerar vilken metod som användes för att identifiera besökaren. <br>0: Anpassat besökarID <br>1: IP-adress och reserv för användaragent <br>2: HTTP Mobile Subscriber Header <br>3: Äldre cookie-värde (s_vi) <br>4: Värde för reservcookie (s_fid) <br>5: Identitetstjänst | tinyint unsigned |
+| `visid_type` | Ej för extern användning. används internt av Adobe för att bearbeta optimeringar. Numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>0: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>1: IP-adress och reserv för användaragent <br>2: HTTP Mobile Subscriber Header <br>3: Äldre cookie-värde (s_vi) <br>4: Värde för reservcookie (s_fid) <br>5: Identitetstjänst | tinyint unsigned |
 | `visit_keywords` | Variabel som används i söknyckelordsdimensionen. I den här kolumnen används en teckengräns som inte är standard för att rymma den serverlogik som används av Adobe. | varchar(244) |
 | `visit_num` | Variabel som används i dimensionen Besöksnummer. Börjar vid 1 och ökar stegvis varje gång ett nytt besök påbörjas per besökare. | int unsigned |
 | `visit_page_num` | Variabel som används i dimensionen Träff. Ökar med 1 för varje träff som användaren skapar. Återställer varje besök. | int unsigned |
