@@ -2,7 +2,7 @@
 description: På panelen Analytics för Target (A4T) kan du analysera dina Adobe Target aktiviteter och upplevelser i Analysis Workspace.
 title: Panelen Analytics för Target (A4T)
 translation-type: tm+mt
-source-git-commit: f9190c15da2d94b3c9006f973fa4aef92162ff04
+source-git-commit: fe6202288cfc07575db437f7d0c055f1b40ddcf6
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Du kan konfigurera A4T-panelen med följande indatainställningar:
 | Framgångsmått | Välj upp till tre standardhändelser (ej beräknade) från listrutorna, eller dra och släpp mätvärden från den vänstra listen. Varje mätvärde har en dedikerad tabell och visualisering på den renderade panelen. |
 | Kalenderdatumintervall | Detta fylls i automatiskt baserat på aktivitetsdatumintervallet från Adobe Target. Du kan ändra den om det behövs. |
 
-![Panel builder](assets/a4t-panel-builder.png)
+![Panel builder](assets/a4t-panel-builder2.png)
 
 ## Panelutdata {#Output}
 
