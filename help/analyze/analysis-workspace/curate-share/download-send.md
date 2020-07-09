@@ -3,7 +3,10 @@ description: Du kan hämta sparade och osparade projekt i PDF- och CSV-format.
 title: Hämta PDF- eller CSV-filer
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 08d564f7fb06b94c2010515ea4a1dcbb2e6e2815
+source-git-commit: 422b69a9f671bbd3c4e8f033916296cbdf7f27d9
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,14 +27,15 @@ Tänk på detta:
 1. Skapa eller öppna ett projekt.
 1. Klicka på **[!UICONTROL Project]** > **[!UICONTROL Download CSV (or Download PDF).]**
 
-Den 11 april 2019 gjordes flera ändringar av **[!CSV hämtningar]** (och **[!Ckopiering till Urklipp]**) från Analysis Workspace för att ta bort formatering från exporterade data.
-* tusentalsavgränsaren tas inte med längre. (Decimalavgränsaren tas med och följer det format som definieras i **[!UICONTROL Components > Report Settings > Thousands Separator]**).
+Den 11 april 2019 gjordes flera ändringar av **[!UICONTROL CSV downloads]** (och **[!UICONTROL Copy to Clipboard]**) från Analysis Workspace för att ta bort formatering från exporterade data.
+* Programmet **[!UICONTROL Thousands Separator]** ingår inte längre. (Decimalavgränsaren tas med och följer det format som definieras i **[!UICONTROL Components > Report Settings > Thousands Separator]**).
 * Inga valutasymboler visas.
 * Inga procentsymboler visas.
 * Procentsatserna anges i decimalform. 75 % representeras t.ex. som 0,75.
 * Tiden visas i sekunder.
 * Kohorttabeller visar endast råvärden. procenttal tas bort.
 * Om ett tal är ogiltigt visas en tom cell.
+* Ingen avrundning används (även om den anges i beräknade värden) - råvärden visas.
 
 >[!NObs!]
 >
