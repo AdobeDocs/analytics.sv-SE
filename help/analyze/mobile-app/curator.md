@@ -1,40 +1,40 @@
 ---
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
-title: Markörguide för kontrollpaneler i Adobe Analytics
+title: Markörguide för Adobe Analytics-kontrollpaneler
 translation-type: tm+mt
-source-git-commit: 3883abc6cc3e8e8e5511af353ad9d88186220acd
+source-git-commit: 2dfd5d78e66ba1569b285070a152c46922e37daa
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2307'
 ht-degree: 0%
 
 ---
 
 
 
-# Kuratorguide för Adobe Analytics-instrumentpaneler
+# Curator&#39;s guide for Adobe Analytics dashboards
 
-Följande information instruerar chefer för Adobe Analytics-data om hur du konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i [Adobe Analytics Dashboards Scorecard Builder](https://youtu.be/tnnl6hrcP94).
+Följande information instruerar chefer för Adobe Analytics-data om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Om du vill se en video som demonstrerar den här informationen kan du gå till [Adobe Analytics Dashboards Scorecard Builder](https://youtu.be/tnnl6hrcP94).
 
 ## Introduktion
 
-Adobe Analytics-instrumentpaneler ger dig alltid insikter från Adobe Analytics. Appen ger användarna mobil åtkomst till intuitiva styrkort som ni skapar och delar med Adobe Analytics persondatorgränssnitt. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Du kan anpassa styrkort efter de data som är viktigast för dig. Kontrollpaneler för analyser stöds på både iOS- och Android-operativsystem.
+Adobe Analytics dashboards ger dig alltid tillgång till insikter från Adobe Analytics. Appen ger användare mobil åtkomst till intuitiva styrkort som du skapar och delar från Adobe Analytics användargränssnitt. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Du kan anpassa styrkort efter de data som är viktigast för dig. Analytics kontrollpaneler stöds på både iOS- och Android-operativsystem.
 
 ## Mer om den här guiden
 
-Den här guiden är avsedd att hjälpa chefer för Adobe Analytics-data att konfigurera styrkort för sina chefsanvändare på kontrollpaneler. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att skapa styrkort för appar, som gör det möjligt för chefsanvändare att snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter. Även om chefsanvändare är slutanvändare för kontrollpaneler i Analytics kommer den här guiden att hjälpa datavärdare att konfigurera appen effektivt för dessa användare.
+Den här guiden är avsedd att hjälpa chefer för Adobe Analytics-data att konfigurera styrkort för sina chefsanvändare på kontrollpaneler. Lärare kan vara organisationsadministratörer eller personer i andra roller som ansvarar för att skapa styrkort för appar, som gör det möjligt för chefsanvändare att snabbt och enkelt visa en bred återgivning av viktiga sammanfattningsdata på sina egna mobila enheter. Även om chefsanvändare är slutanvändare för Analytics-kontrollpaneler hjälper den här guiden datarectorn att konfigurera appen effektivt för dessa användare.
 
 ## Ordlista
 
-I följande tabell beskrivs villkoren för att förstå målgruppen, funktionerna och funktionen för kontrollpanelerna i Analytics.
+I följande tabell beskrivs villkoren för att förstå målgruppen, funktionerna och funktionen för Analytics-kontrollpanelerna.
 
 | Term | Definition |
 |--- |--- |
 | Konsument | Chefspersonalen som tittar på viktiga mätvärden och insikter från Analytics på en mobil enhet |
-| Kurator | Datalitterera persona som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
+| Kurator | Personen som hittar och distribuerar insikter från Analytics och konfigurerar styrkorten så att de kan ses av konsumenterna |
 | Insamling | Att skapa eller redigera ett mobilstyrt styrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
 | Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
 | Platta | En återgivning för ett mätresultat i en styrkortsvy |
-| Uppdelning | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
+| Uppdelningar | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
 | Datumintervall | Det primära datumintervallet för instrumentpanelsrapporter |
 | Jämförelsedatumintervall | Datumintervallet som jämförs med det primära datumintervallet |
 
@@ -66,7 +66,7 @@ Du kommer åt mallen Tomt Mobile Scorecard på något av följande sätt:
 
 1. Öppna Adobe Analytics och klicka på fliken **Arbetsyta** .
 2. Klicka på knappen **Skapa nytt projekt** och välj projektmallen **Tomt Mobile Scorecard** .
-3. Klicka på knappen **Skapa** .
+3. Click the **Create** button.
 
 ![Styrkortsmall](assets/new_template.png)
 
@@ -76,9 +76,9 @@ På skärmen **Projekt** , under fliken **Komponenter** , klickar du på knappen
 
 ![Lägg till projekt](assets/add_project.png)
 
-**Använd analysverktyg**
+**Använda Analytics verktyg**
 
-Klicka på **Verktyg** -menyn i Analytics och välj **Dashboards**. På nästa skärm klickar du på knappen **Skapa styrkort** .
+I Analytics klickar du på **Verktyg** -menyn och väljer **kontrollpaneler**. På nästa skärm klickar du på knappen **Skapa styrkort** .
 
 ### Konfigurera styrkortet med data och spara det
 
@@ -142,14 +142,12 @@ Så här delar du styrkortet med en verkställande användare:
    * Ange en beskrivning av styrkortet
    * Lägga till relevanta taggar
    * Ange mottagare för styrkortet
-   * Välj alternativet att **dela inbäddade komponenter med mottagare** för att se till att den verkställande användaren har åtkomst till alla komponenter i styrkortet.
 
 3. Klicka på **Dela**.
 
 ![Dela_styrkort](assets/new_share.png)
 
-
-När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
+När du har delat ett styrkort kan mottagarna komma åt det på sina Analytics-kontrollpaneler. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 
 Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **Dela inbäddade komponenter automatiskt med mottagare** ) för att se till att chefsanvändarna har tillgång till dessa ändringar.
 
@@ -164,7 +162,7 @@ För att underlätta för chefsanvändare att komma åt dina styrkort i appen se
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
 * De har en giltig inloggning på Adobe Analytics
 * Du har skapat mobila styrkort för dem och delat dessa styrkort med dem
-* De har tillgång till Analysis Workspace och rapportsviten som styrkortet baseras på
+* De har tillgång till Analysis Workspace och rapportsviten att styrkortet bygger på
 * De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort för att **automatiskt dela inbäddade komponenter med mottagare**.
 
 ### Hjälp chefsanvändare med appen
@@ -175,23 +173,24 @@ För chefer:
 
    **För företagsledare på iOS:**
 
-   * Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
+   * Klicka på följande länk (den finns även i Analytics under **Verktyg** > **Kontrollpaneler**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
       [iOS-länk](https://apple.co/2zXq0aN)
    **För chefsanvändare på Android:**
 
-   * Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
+   * Klicka på följande länk (den finns även i Analytics under **Verktyg** > **Kontrollpaneler**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
       [Android-länk](https://bit.ly/2LM38Oo)
-   När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-inloggningsuppgifter. vi stöder både Adobe och Enterprise/Federated ID.
+   När programmet har laddats ned och installerats kan företagsanvändare logga in i programmet med sina befintliga Adobe Analytics-inloggningsuppgifter. vi stöder både Adobe och Enterprise/Federated ID.
 
    ![App - välkomstskärm](assets/welcome.png)
 
 2. Hjälp dem komma åt styrkortet. När chefsanvändare har loggat in i appen visas skärmen **Välj ett företag** . På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör. Så här hjälper du dem att komma till styrkortet:
 
-   * Tryck på namnet på det inloggningsföretag eller den Experience Cloud-organisation som gäller för det styrkort som du delade. Styrkortslistan visar sedan alla styrkort som har delats med den verkställande direktören under det inloggningsföretaget.
+   * Tryck på namnet på inloggningsföretaget eller Experience Cloud-organisationen som gäller för styrkortet som du delade. Styrkortslistan visar sedan alla styrkort som har delats med den verkställande direktören under det inloggningsföretaget.
    * Hjälp dem att sortera listan efter **Senast ändrad**, om tillämpligt.
    * Tryck på namnet på styrkortet för att visa det.
+
    ![Välj ett företag](assets/accesscard.png)
 
    Om den verkställande användaren loggar in och ser ett meddelande om att inget har delats:
@@ -203,7 +202,7 @@ För chefer:
       ![Inget delat](assets/nothing.png)
 
 
-   * Kontrollera att chefsanvändaren kan logga in på rätt Analytics-instans och att styrkortet har delats.
+   * Kontrollera att chefsanvändaren kan logga in i rätt Analytics-instans och att styrkortet har delats.
 
 
 3. Förklara för den verkställande användaren hur rutor visas i de styrkort du delar (det första styrkortet nedan är i mörkt läge). se **Inställningar** nedan om du tror att din chefsanvändare föredrar detta visningsalternativ):
