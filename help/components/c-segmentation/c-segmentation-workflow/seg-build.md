@@ -4,9 +4,9 @@ title: Skapa segment
 topic: Segments
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 2dfd5d78e66ba1569b285070a152c46922e37daa
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1937'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Det finns flera sätt att komma åt segmentbyggaren:
 
 Du kan lägga till regeldefinitioner och behållare för att definiera segment.
 
-![](assets/segment_builder_ui.png)
+![](assets/segment_builder_ui_2.png)
 
 1. **[!UICONTROL Title]**: Namnge segmentet.
 1. **[!UICONTROL Description]**: Ange en beskrivning av segmentet.
@@ -40,11 +40,15 @@ Du kan lägga till regeldefinitioner och behållare för att definiera segment.
    * **[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) till segmentdefinitionen.
    * **[!UICONTROL Exclude]**: Gör att du kan definiera segmentet genom att utesluta en eller flera dimensioner, segment eller mått.
 
+1. **[!UICONTROL Dimensions]**: Komponenter dras och tas bort från dimensionslistan (orange sidofält).
+1. **[!UICONTROL Operator]**: Du kan jämföra och begränsa värden med valda operatorer.
+1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
 1. **[!UICONTROL Attribution Models]**: Dessa modeller är bara tillgängliga för dimensioner och avgör vilka värden i en dimension som ska segmenteras. Dimensionsmodeller är särskilt användbara vid sekventiell segmentering.
 
    * **[!UICONTROL Repeating]** (standard): Inkluderar instanser och beständiga värden för dimensionen.
    * **[!UICONTROL Instance]**: Inkluderar instanser för dimensionen.
    * **[!UICONTROL Non-repeating instance]**: Inkluderar unika instanser (icke-upprepande) för dimensionen. Detta är den modell som används i Flow när upprepade instanser utesluts.
+
    ![](assets/attribution-models.jpg)
 
    **Exempel: Träffsegment där eVar1 = A**
@@ -54,27 +58,23 @@ Du kan lägga till regeldefinitioner och behållare för att definiera segment.
    | Upprepande | X | X | X | - | X | - |
    | Instance | X | X | - | - | X | - |
    | Icke upprepande instans | X | - | - | - | X | - |
-
-1. **[!UICONTROL Operator]**: Du kan jämföra och begränsa värden med valda operatorer.
-1. **[!UICONTROL Dimensions]**: Dimensionen dras och tas bort från dimensionslistan (orange sidofält).
-1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
 1. **[!UICONTROL And/Or/Then]**: Tilldelar operatorer mellan behållare eller regler [!UICONTROL AND/OR/THEN] . Med operatorn THEN kan du [definiera sekventiella segment](/help/components/c-segmentation/c-segmentation-workflow/seg-sequential-build.md).
 1. **[!UICONTROL Metric]**: (Grönt sidofält) Mätvärden som har dragits och tagits bort från listan Metrisk.
 1. **[!UICONTROL Comparison]** operator: Du kan jämföra och begränsa värden med valda operatorer.
 1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
 1. **[!UICONTROL X]**: (Ta bort) Du kan ta bort den här delen av segmentdefinitionen.
-1. **[!UICONTROL Save]** eller **[!UICONTROL Cancel]**: Sparar eller avbryter segmentet. När du har klickat **[!UICONTROL Save]** kommer du till segmenthanteraren där du kan hantera segmentet.
+1. **[!UICONTROL Experience Cloud publishing]**: Genom att publicera ett Adobe Analytics-segment i Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!DNL Audience Manager] och i andra aktiveringskanaler. [Läs mer …](/help/components/c-segmentation/c-segmentation-workflow/seg-publish.md)
+1. **[!UICONTROL Audience library]**: Adobes målgruppstjänster hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet till Experience Cloud. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Söker i listan över dimensioner, segment eller mått.
 1. **[!UICONTROL Dimensions]**: (Lista) Klicka på rubriken för att expandera.
 1. **[!UICONTROL Metrics]**: Klicka på rubriken för att expandera.
 1. **[!UICONTROL Segments]**: Klicka på rubriken för att expandera.
-1. **[!UICONTROL Report suite selector]**: Här kan du välja den rapportserie som det här segmentet ska sparas under. Du kan fortfarande använda segmentet i alla rapportsviter.
+1. **[!UICONTROL Report suite selector]**: Här kan du välja den rapportsserie som det här segmentet ska sparas under. Du kan fortfarande använda segmentet i alla rapportsviter.
 1. **[!UICONTROL Segment Preview]**: Här kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt segment och hur brett segmentet är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här segmentet. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL Hits], [!UICONTROL Visits]och [!UICONTROL Visitors] för ett segment som körs mot en datauppsättning. Diagrammet uppdateras omedelbart när du har skapat eller ändrat segmentdefinitionen.
 1. **[!UICONTROL Product Compatibility]**: Innehåller en lista över vilka Adobe Analytics-produkter (Analysis Workspace, [!UICONTROL Reports & Analytics], Ad Hoc Analysis, Data warehouse) som segmentet du skapade är kompatibelt med. De flesta segment är kompatibla med alla produkter. Alla operatorer och dimensioner är dock inte kompatibla med alla Analytics-produkter, särskilt [Data warehouse](/help/components/c-segmentation/seg-reference/seg-compatibility.md). Diagrammet uppdateras omedelbart efter att du har gjort ändringar i segmentdefinitionen.
+1. **[!UICONTROL Save]** eller **[!UICONTROL Cancel]**: Sparar eller avbryter segmentet. När du har klickat **[!UICONTROL Save]** kommer du till segmenthanteraren där du kan hantera segmentet.
 
 Segment med inbäddade datumintervall fungerar fortfarande annorlunda i Analysis Workspace jämfört med [!UICONTROL Reports & Analytics]: I Arbetsyta åsidosätter ett segment med ett inbäddat datumintervall panelens datumintervall. I stället [!UICONTROL Reports & Analytics] visas skärningspunkten för rapportdatumintervallet och segmentets inbäddade datumintervall.
-
-**[!UICONTROL Experience Cloud Publishing]**: (Visas inte på skärmen) Det här alternativet visas bara om rapportsviten som du sparar segmentet i är [aktiverad för Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md). Genom att publicera ett segment på Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i [!UICONTROL Audience Library], [!DNL Target]och [!DNL Audience Manager]. [Läs mer](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-publish.html) om Experience Cloud.
 
 ## Skapa segment {#build-segments}
 
