@@ -2,9 +2,9 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för Adobe Analytics-kontrollpaneler
 translation-type: tm+mt
-source-git-commit: 2dfd5d78e66ba1569b285070a152c46922e37daa
+source-git-commit: 8013f767027147b58118dd33c9f207c2b158ca7c
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2301'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,7 @@ Så här delar du styrkortet med en verkställande användare:
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina Analytics-kontrollpaneler. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 
-Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **Dela inbäddade komponenter automatiskt med mottagare** ) för att se till att chefsanvändarna har tillgång till dessa ändringar.
+Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **Dela inbäddade komponenter** ) för att se till att dina chefsanvändare har tillgång till dessa ändringar.
 
 ## Konfigurera företagsledare med appen
 
@@ -163,7 +163,7 @@ För att underlätta för chefsanvändare att komma åt dina styrkort i appen se
 * De har en giltig inloggning på Adobe Analytics
 * Du har skapat mobila styrkort för dem och delat dessa styrkort med dem
 * De har tillgång till Analysis Workspace och rapportsviten att styrkortet bygger på
-* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort för att **automatiskt dela inbäddade komponenter med mottagare**.
+* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort för att **dela inbäddade komponenter**.
 
 ### Hjälp chefsanvändare med appen
 
