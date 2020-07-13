@@ -1,14 +1,21 @@
 ---
 description: 'null'
-title: Selligent Data Connector for Adobe Analytics
+title: Selligent Data Connector för Adobe Analytics
 uuid: e16c3ca6-b131-44b1-a36c-e39697677a96
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 2%
 
 ---
 
 
-# Selligent Data Connector for Adobe Analytics{#selligent-data-connector-for-adobe-analytics}
+# Selligent Data Connector för Adobe Analytics{#selligent-data-connector-for-adobe-analytics}
+
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 Integreringen innehåller följande viktiga fördelar:
 
@@ -27,31 +34,31 @@ Den här e-postintegreringen stöder dynamiska marknadsföringssegment som hjäl
 | **Beteendeprofil för produkt-/innehållsvy** | Nå potentiella kunder genom marknadsföringssegment baserat på produktvisningar och profiler för innehållsåtkomst. |
 | **Anpassade segment för återmarknadsföring** | Kunderna kan också skapa och schemalägga anpassade segment för ny marknadsföring som är specifika för användarnas behov. |
 
-## Innan du aktiverar den här integreringen{#before-you-activate-this-integration}
+## Before you Activate this Integration{#before-you-activate-this-integration}
 
-Innan du aktiverar den här integreringen ska du granska följande objekt mot dina distributioner av Adobe Analytics och ditt e-postprogram.
+Innan du aktiverar integreringen bör du granska följande artiklar mot dina distributioner av Adobe Analytics och ditt e-postprogram.
 
 På så sätt säkerställs att bästa praxis och krav finns innan aktiveringen. Detta resulterar i en optimal och lyckad integrering.
 
 ## Krav för Adobe Analytics{#prerequisites-for-adobe-analytics}
 
-Listar de åtgärder som krävs för att genomföra Adobe Analytics innan ni kan distribuera integreringen.
+Visar de åtgärder som krävs för att genomföra Adobe Analytics innan du kan distribuera integreringen.
 
 | Förutsättning | Anteckningar |
 |---|---|
 | Välj Report Suite | Observera att den här integreringen är specifik för rapportsviten. Kontrollera att du har valt önskat rapportpaket innan du aktiverar integreringen. |
-| Konfigurera analysvariabler | Den här integreringen kräver anpassade händelser och anpassade eVars-variabler, samt eventuellt ytterligare händelser och ytterligare eVars-variabler. Se Konfigurera analysvariabler för Selligent. |
+| Konfigurera Analytics-variabler | Den här integreringen kräver anpassade händelser och anpassade eVars-variabler, samt eventuellt ytterligare händelser och ytterligare eVars-variabler. Se Konfigurera Analytics-variabler för Selligent. |
 | Auktoriserad representant | Observera att aktiveringen av integreringen kan medföra att ditt företag debiteras i enlighet med ditt serviceavtal med Adobe, Inc. eller ditt serviceavtal med någon av Adobes betrodda partners, beroende på vad som är tillämpligt. Genom att aktivera integreringen intygar du härmed att du är en behörig representant för ditt företag; och som sådan går ditt företag med på att betala eventuella avgifter som anges i det serviceavtal som beskrivs ovan. |
-| Aktivera Adobe Data Warehouse™ | Den här integreringen kräver att datalagret är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat Adobe Data Warehouse kontaktar du Adobe för mer information. |
-| Mottagar-ID | Integreringen kräver att vi hämtar och lagrar ett &quot;Visitor ID&quot; i en Analytics-variabel (eVar). Besökar-ID:t (kallas ofta för mottagar-ID) är en kodad eller numerisk representation av en e-postadress från Selligent-systemet. Detta&quot;Mottagar-ID&quot; är kopplat till besökarbeteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som återförs till Selligent-systemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden. |
+| Aktivera Adobe Data warehouse™ | Denna integrering kräver att Data warehouse är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat Adobe Data warehouse kontaktar du Adobe för mer information. |
+| Mottagar-ID | Integreringen kräver att vi hämtar och lagrar ett besökar-ID inom en Analytics-variabel (eVar). Besökar-ID:t (kallas ofta för mottagar-ID) är en kodad eller numerisk representation av en e-postadress från Selligent-systemet. Detta&quot;Mottagar-ID&quot; är kopplat till besökarbeteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som återförs till Selligent-systemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden. |
 | Extern spårning | Om du för närvarande inte följer den bästa metoden att aktivera extern spårning för varje e-postkampanj som du skickar måste du göra det för att integreringen ska lyckas. Mer information finns i avsnittet Selligent nedan. |
 | Integritetsefterlevnad | Genom att aktivera spårning av mottagare eller besökar-ID kan den här funktionen spåra personligt identifierbar information om webbplatsens besökare. Detta påverkar integriteten och kräver att organisationen implementerar lämpliga procedurer, som att meddela besökarna på webbplatsen och ge dem sitt samtycke. |
 
-## Konfigurera analysvariabler för Selligent{#configure-analytics-variables-for-selligent}
+## Konfigurera Analytics-variabler för Selligent{#configure-analytics-variables-for-selligent}
 
 Den här integreringen kräver att 2 eVars reserveras för varje implementering av rapportsviten.
 
-Förutom dessa eVars kan ett antal händelser reserveras beroende på data från Selligent, som du vill se i Analytics. Dessa eVars och händelser beskrivs nedan:
+Förutom dessa eVars kan ett fåtal händelser reserveras beroende på data från Selligent, som du vill se i Analytics. Dessa eVars och händelser beskrivs nedan:
 
 <table id="table_2FFB865DBD80412F90DA8E224B12FB62"> 
  <thead> 
