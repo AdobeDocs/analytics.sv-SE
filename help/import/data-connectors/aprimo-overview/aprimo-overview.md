@@ -1,14 +1,21 @@
 ---
 description: Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Adobe Analytics® med e-postmarknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
-title: April Data Connector for Adobe Analytics
+title: Aprimo Data Connector för Adobe Analytics
 uuid: 590ded4b-b250-43b4-9cec-68508b853e00
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 1%
 
 ---
 
 
-# April Data Connector for Adobe Analytics{#aprimo-data-connector-for-adobe-analytics}
+# Aprimo Data Connector för Adobe Analytics{#aprimo-data-connector-for-adobe-analytics}
+
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Adobe Analytics® med e-postmarknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 
@@ -35,15 +42,15 @@ Integrationen omfattar följande dynamiska marknadsföringssegment:
 
 ## Innan du aktiverar{#before-you-activate}
 
-Fyll i följande krav innan du startar integreringen av Data Connectors för :
+Innan du startar integreringen av Data Connectors för ska du uppfylla följande krav:
 
 ### Krav för Adobe Analytics {#section-960e70fd2eae4a1cb88a2e4b53a97313}
 
 * **Report Suite-specifik:** Den här integreringen är specifik för rapportsviten. Kontrollera att du har valt önskat rapportpaket innan du aktiverar integreringen.
 * **Tillgängliga och konfigurerade Adobe Analytics-variabler:** Den här integreringen kräver anpassade händelser och anpassade eVars-variabler, samt eventuellt ytterligare händelser och ytterligare eVars-variabler.
 * **Auktoriserat ombud:** Observera att aktiveringen av integreringen kan medföra att ditt företag debiteras i enlighet med ditt serviceavtal med Adobe, Inc. eller ditt serviceavtal med någon av Adobes betrodda partners, beroende på vad som är tillämpligt. Genom att aktivera integreringen intygar du härmed att du är en behörig representant för ditt företag; och som sådan går ditt företag med på att betala eventuella avgifter som anges i det serviceavtal som beskrivs ovan.
-* **Datalager™:** Den här integreringen kräver att datalagret är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat datalager kontaktar du Adobe för mer information.
-* **[!UICONTROL Partner~]:**Integreringen kräver att vi hämtar och lagrar en[!DNL ~partner~]inom en Adobe Analytics-variabel (eVar). Detta ID är en kodad eller numerisk representation av en e-postadress från[!DNL ~partnersystemet~]. Denna[!DNL ~partner~]är kopplad till besökares beteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som förs in i[!DNL ~Partner~]-systemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden.
+* **Data warehouse™:** Denna integrering kräver att Data warehouse är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat Data warehouse kontaktar du Adobe för mer information.
+* **[!UICONTROL Partner~]:**Integreringen kräver att vi samlar in och lagrar en[!DNL ~partner~]inom en Adobe Analytics-variabel (eVar). Detta ID är en kodad eller numerisk representation av en e-postadress från[!DNL ~partnersystemet~]. Denna[!DNL ~partner~]är kopplad till besökares beteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som förs in i[!DNL ~Partner~]-systemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden.
 * **Extern spårning:** Om du för närvarande inte följer den bästa metoden att aktivera extern spårning för varje e-postkampanj som du skickar måste du göra det för att integreringen ska lyckas. Mer information finns i avsnittet [!DNL ~Partner~] nedan.
 * **Integritetsefterlevnad:** Genom att aktivera spårning av mottagare eller besökar-ID kan den här funktionen spåra personligt identifierbar information om webbplatsens besökare. Detta påverkar integriteten och kräver att organisationen implementerar lämpliga procedurer, som att meddela besökarna på webbplatsen och ge dem sitt samtycke.
 
@@ -61,8 +68,8 @@ Det kan finnas återkommande kostnader och implementeringskostnader som är kopp
 
 Det kan finnas återkommande avgifter och implementeringsavgifter som är kopplade till den här integreringen. Kontakta [!DNL ~partnern~] om du vill ha prisinformation.
 
-## Adobe Analytics-variabler{#adobe-analytics-variables}
+## Adobe Analytics Variables{#adobe-analytics-variables}
 
 Den här integreringen kräver Adobe Analytics-variabler för att spåra mätvärden.
 
-När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de aktiveras i Adobe Analytics Admin Console (mer information finns i [Rapportsviterna](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) ).
+När du har identifierat vilka Event- och eVars-objekt som ska användas med integreringen måste de aktiveras i Adobe Analytics Admin Console (mer information finns i [Rapportsviterna](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) ).
