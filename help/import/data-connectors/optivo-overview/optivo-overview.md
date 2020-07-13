@@ -1,22 +1,29 @@
 ---
-description: Integrationen kombinerar kraften i det integrerade systemet för feedback och beteenderapportering i Adobe Analytics, som hjälper er att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
+description: Integrationen kombinerar kraften i det integrerade systemet för feedback och beteenderapportering från Adobe Analytics för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
 title: optivo® broadcast Data Connector for Adobe Analytics
 uuid: bd713080-9d1a-49ee-aad0-86dd5c37c34a
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '1086'
+ht-degree: 0%
 
 ---
 
 
-# optivo® broadcast Data Connector for Adobe Analytics{#optivo-broadmail-data-connector-for-adobe-analytics}
+# optivo® broadmail Data Connector for Adobe Analytics{#optivo-broadmail-data-connector-for-adobe-analytics}
 
-Integrationen kombinerar kraften i det integrerade systemet för feedback och beteenderapportering i Adobe Analytics, som hjälper er att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+
+Integrationen kombinerar kraften i det integrerade systemet för feedback och beteenderapportering från Adobe Analytics för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
 
 [!DNL ~Partner~] är ett professionellt program för e-postmarknadsföring. Dess huvudsakliga funktion är att skapa, skicka och utvärdera nyhetsbrev och e-postkampanjer. `[~Partner~]` finns som molntjänst (programvara som tjänst).
 
 Integreringen erbjuder automatiserad återmarknadsföring och datasynkronisering, vilket leder till ökad konvertering och ökade intäkter. `[~Partner~]` Tack vare integreringen kan marknadsförarna synkronisera automatiska segment för sina kunder utifrån deras e-postinteraktion och webbplatsbeteende. Det automatiserade datautbytet av anpassningsbara segment hjälper er att skapa extremt målinriktade e-postkampanjer som ökar försäljningen, till exempel övergivna kundvagnar och återmarknadsföring efter köp av produkter som är både större och större.
 
-Denna integrering utbyter också statistik om framgångsrika e-postkampanjer från `[~Partner~]` till Adobe Analytics. Viktiga data visas centralt i översikten över e-postkampanjer.
+Denna integrering utbyter också mätvärden från lyckade e-postkampanjer från `[~Partner~]` till Adobe Analytics. Viktiga data visas centralt i översikten över e-postkampanjer.
 
 ## Data Connectors Laboratory Program {#section-51f9864851b64d96873127b9ac9c9a2b}
 
@@ -47,7 +54,7 @@ Integrationen omfattar följande dynamiska marknadsföringssegment:
 
 ## Innan du aktiverar{#before-you-activate}
 
-Fyll i följande krav innan du startar integreringen av Data Connectors för :
+Innan du startar integreringen av Data Connectors för ska du uppfylla följande krav:
 
 ## Krav för Adobe Analytics {#section-960e70fd2eae4a1cb88a2e4b53a97313}
 
@@ -79,8 +86,8 @@ Nuvarande kunder av Adobe Analytics-lösningen har inga extrakostnader kopplade 
 
 Den här integreringen är tillgänglig för [!DNL ~partnerkunder~] , men ytterligare integreringsavgifter tillkommer. Kontakta sales@optivo.com för närmare information om priser. Kontakta [!DNL ~partnern~] om du vill ha prisinformation.
 
-## Adobe Analytics-variabler{#adobe-analytics-variables}
+## Adobe Analytics Variables{#adobe-analytics-variables}
 
 Den här integreringen kräver Adobe Analytics-variabler för att spåra mätvärden.
 
-När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de aktiveras i administrationskonsolen för Analytics (se [Rapportsviter](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) för instruktioner).
+När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de vara aktiverade i Analytics Admin Console (mer information finns i [Rapportsviterna](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) ).
