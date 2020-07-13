@@ -1,20 +1,27 @@
 ---
-description: Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med Silverpop-marknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
-title: Silverpop Data Connector for Adobe Analytics
+description: Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med e-postmarknadsföring i Silverpop för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+title: Silverpop Data Connector för Adobe Analytics
 uuid: 579d3100-4c34-48ff-a181-1465fa32b250
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 2%
 
 ---
 
 
-# Silverpop Data Connector for Adobe Analytics{#silverpop-data-connector-for-adobe-analytics}
+# Silverpop Data Connector för Adobe Analytics{#silverpop-data-connector-for-adobe-analytics}
 
-Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med Silverpop-marknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+
+Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med e-postmarknadsföring i Silverpop för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 
 Leverans av relevanta e-postmeddelanden till dessa marknadssegment kan leda till helt nya intäktsmöjligheter och leda till ökad konvertering och ökade intäkter bland nya och befintliga e-postkampanjer. Att leverera relevanta e-postmeddelanden baserade på produkter som visats under ett besök eller produkter som lämnats i en övergiven kundvagn har till exempel visat sig ha en dramatisk inverkan på intäkterna, med minimal inverkan på kostnaden eftersom det bara är att dra nytta av besökare som sajten redan får.
 
-Den här ökningen av marknadsföringseffektiviteten är en av de största fördelarna med att integrera Analytics med Silverpop. Dessutom synkroniserar den här integreringen automatiskt e-poststatistik med analysdata så ofta som en timme för rapporter med slutna slingor.
+Den här ökningen av marknadsföringens effektivitet är en av de största fördelarna med att integrera Analytics med Silverpop. Dessutom synkroniserar den här integreringen automatiskt e-poststatistik med Analytics-data så ofta som en timme för rapporter i slutna slingor.
 
 ## Viktiga fördelar och funktioner{#key-benefits-and-features}
 
