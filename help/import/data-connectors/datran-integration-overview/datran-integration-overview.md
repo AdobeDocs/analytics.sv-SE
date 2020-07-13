@@ -1,18 +1,25 @@
 ---
-description: Denna e-postintegrering med Adobe® Data Connectors kombinerar beteendeinformation från Adobe Analytics® med e-postmarknadsföring från Datran för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+description: Denna e-postintegrering med Adobe® Data Connectors kombinerar beteendeinformation från Adobe® med e-postmarknadsföring från Datran för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 title: Datran Data Connector för Adobe Analytics
 uuid: f97655c4-9623-4d06-a3c6-894246eba80f
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
 
 # Datran Data Connector för Adobe Analytics {#datran-data-connector-for-adobe-analytics}
 
-Denna e-postintegrering med Adobe® Data Connectors kombinerar beteendeinformation från Adobe Analytics® med e-postmarknadsföring från Datran för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
-Leverans av relevanta e-postmeddelanden till dessa marknadssegment kan leda till helt nya intäktsmöjligheter och leda till ökad konvertering och ökade intäkter bland nya och befintliga e-postkampanjer. Att leverera relevanta e-postmeddelanden baserade på produkter som visats under ett besök eller produkter som lämnats i en övergiven kundvagn har till exempel visat sig ha en dramatisk inverkan på intäkterna, med minimal inverkan på kostnaden eftersom det bara är att dra nytta av besökare som sajten redan får. Den ökade marknadsföringseffektiviteten är en av de största fördelarna med att integrera Adobe Analytics med Dataran. Dessutom synkroniserar den här integreringen automatiskt e-poststatistik med Adobe Analytics-data så ofta som en timme för rapporter med slutna slingor.
+Denna e-postintegrering med Adobe® Data Connectors kombinerar beteendeinformation från Adobe® med e-postmarknadsföring från Datran för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+
+Leverans av relevanta e-postmeddelanden till dessa marknadssegment kan leda till helt nya intäktsmöjligheter och leda till ökad konvertering och ökade intäkter bland nya och befintliga e-postkampanjer. Att leverera relevanta e-postmeddelanden baserade på produkter som visats under ett besök eller produkter som lämnats i en övergiven kundvagn har till exempel visat sig ha en dramatisk inverkan på intäkterna, med minimal inverkan på kostnaden eftersom det bara är att dra nytta av besökare som sajten redan får. Den ökade effektiviteten i marknadsföringen är en av de största fördelarna med att integrera Adobe Analytics med Datran. Dessutom synkroniseras e-poststatistik automatiskt med Adobe Analytics-data så ofta som en timme för rapporter i slutna slingor.
 
 ## Viktiga fördelar{#key-benefits}
 
@@ -41,7 +48,7 @@ Integreringen av dessa Data Connectors kräver följande:
 
 ### Krav från Adobe {#section-bce14015fb7f41b3bc754da0eb7567bc}
 
-* Datalager
+* Data Warehouse
 * Adobe Analytics-konto
 * Tillgängliga och konfigurerade Adobe Analytics-variabler, inklusive eVars och anpassade händelser.
 
@@ -73,17 +80,17 @@ Det kan finnas avgifter kopplade till den här integreringen.
 
 ## Vad du bör veta innan du aktiverar integreringen{#what-you-should-know-before-activating-this-integration}
 
-Innan du aktiverar den här integreringen ska du granska följande artiklar mot dina distributioner av Adobe Analytics® och e-postprogramvaran.
+Innan du aktiverar integreringen bör du granska följande artiklar mot dina distributioner av Adobe Analytics® och e-postprogramvaran.
 
 På så sätt säkerställs att bästa praxis och förutsättningar finns på plats före aktiveringen, vilket ger en optimal och lyckad integrering.
 
 ### Adobe Analytics{#adobe-analytics}
 
-Läs följande information om den här integreringen av Data Connectors när det gäller Adobe Analytics:
+Läs följande information om integreringen av dessa Data Connectors när det gäller Adobe Analytics:
 
 * **Report Suite-specifik:** Den här integreringen är specifik för rapportsviten. Kontrollera att du har valt önskat rapportpaket innan du aktiverar integreringen.
 * **Auktoriserat ombud:** Observera att aktiveringen av integreringen kan medföra att ditt företag debiteras i enlighet med ditt serviceavtal med Adobe, Inc. eller ditt serviceavtal med någon av Adobes betrodda partners, beroende på vad som är tillämpligt. Genom att aktivera integreringen intygar du härmed att du är en behörig representant för ditt företag; och som sådan går ditt företag med på att betala eventuella avgifter som anges i det serviceavtal som beskrivs ovan.
-* **Omniture Data Warehouse™:** Den här integreringen kräver att datalagret är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat datalagret kontaktar du Adobe för mer information.
+* **Omniture Data warehouse™:** Denna integrering kräver att Data warehouse är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat Data warehouse kontaktar du Adobe för mer information.
 * **Mottagar-ID:** Integreringen kräver att vi hämtar och lagrar ett besökar-ID i en Adobe Analytics-variabel (eVar). Besökar-ID (kallas ofta för &quot;Mottagar-ID&quot;) är en kodad eller numerisk representation av en e-postadress från Datran-systemet. Detta&quot;Mottagar-ID&quot; är kopplat till besökarbeteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som förs in i datasystemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden.
 * **Extern spårning:** Om du för närvarande inte följer den bästa metoden att aktivera extern spårning för varje e-postkampanj som du skickar måste du göra det för att integreringen ska lyckas. Mer information finns i datasektionen nedan.
 * **Integritetsefterlevnad:** Genom att aktivera spårning av mottagare eller besökar-ID kan den här funktionen spåra personligt identifierbar information om webbplatsens besökare. Detta påverkar integriteten och kräver att organisationen implementerar lämpliga procedurer, som att meddela besökarna på webbplatsen och ge dem sitt samtycke.
