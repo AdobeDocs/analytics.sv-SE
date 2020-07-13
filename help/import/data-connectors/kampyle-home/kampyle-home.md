@@ -1,18 +1,25 @@
 ---
 description: 'null'
-title: Kampyle Data Connector for Adobe Analytics
+title: Kampyle Data Connector för Adobe Analytics
 uuid: f7733c81-93f5-4c50-b83a-721a6fbd4e8e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 5%
 
 ---
 
 
-# Kampyle Data Connector for Adobe Analytics{#kampyle-data-connector-for-adobe-analytics}
+# Kampyle Data Connector för Adobe Analytics{#kampyle-data-connector-for-adobe-analytics}
 
-Kampyle Data Connector for Adobe Analytics kombinerar Kampyles integrerade feedbacksystem och Adobe Analytics® beteenderapportering för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
-Marknadsförare på webben inser i allt högre grad kundernas relevans när det gäller att bygga upp varumärken och få affärsresultat. Kampyle Data Connector för Adobe Analytics® ger besökarna feedback och mått i Adobe Analytics. Det gör att ni kan analysera besökarnas beteende i samband med deras attityder och åsikter. På så sätt kan du optimera baserat på feedback och förbättra konverteringsgraden.
+Kampyle Data Connector for Adobe Analytics kombinerar Kampyles integrerade feedbacksystem och beteenderapporteringen i Adobe Analytics® för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
+
+Marknadsförare på webben inser i allt högre grad kundernas relevans när det gäller att bygga upp varumärken och få affärsresultat. Kampyle Data Connector för Adobe Analytics® ger feedback och dimensioner till besökare i Adobe Analytics. Det gör att ni kan analysera besökarnas beteende i samband med deras attityder och åsikter. På så sätt kan du optimera baserat på feedback och förbättra konverteringsgraden.
 
 ## Krav för integrering{#integration-prerequisites}
 
@@ -20,7 +27,7 @@ Krav att tänka på innan du kan aktivera dataanslutningen.
 
 ### Krav för Adobe-kunder: {#section-d9c2e266931249e596de5f4406b5b6f0}
 
-* Du måste vara en aktuell Adobe Analytics-kund.
+* Du måste vara en befintlig Adobe Analytics-kund.
 * Du måste vara en administratörsanvändare.
 * Du måste ha 1 tillgänglig och aktiverad eVar-variabel i rapportsviten.
 * Du måste ha 3 tillgängliga och aktiverade anpassade händelser i rapportsviten (typ: räknare).
