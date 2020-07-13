@@ -2,9 +2,9 @@
 description: Läs om när och varför Analytics dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics dataanslutningar
 translation-type: tm+mt
-source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+source-git-commit: 7a6337efdbf08d31f2e2c632b57c781d0b566828
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,6 @@ Det officiella slutdatumet för livscykeln ska fortfarande fastställas, men vi 
 
 ## Hur påverkar borttagningen av den här funktionen dig?
 
-Om du är Adobe-partner får du möjlighet att tala om för oss om du kommer att migrera eller avbryta integreringen.
+Om du är Adobe-partner får du möjlighet att tala om för oss om du kommer att migrera eller avbryta integreringen. Information om hur du migrerar din integrering till vårt nya Adobe Exchange-program finns [här](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360003867071-Adobe-Analytics-Integration-Tools) i vår dokumentation.
 
 Om du är en Data Connector-kund och vill begära att den integrering du använder ska migreras, bör du dirigera alla begäranden direkt till integreringspartnern. Att skicka en förfrågan till Adobe via Customer Care ger inte samma resultat.
