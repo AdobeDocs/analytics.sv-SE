@@ -1,20 +1,27 @@
 ---
 description: 'null'
 keywords: DFA
-title: DFA Data Connector for Adobe Analytics
+title: DFA Data Connector för Adobe Analytics
 topic: Data connectors
 uuid: 8d04909f-6f17-4b7d-a199-99c923253474
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '1727'
+ht-degree: 2%
 
 ---
 
 
-# DFA Data Connector for Adobe Analytics{#dfa-data-connector-for-adobe-analytics}
+# DFA Data Connector för Adobe Analytics{#dfa-data-connector-for-adobe-analytics}
+
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 I dagens allt mer komplexa och konkurrensutsatta onlinemarknadsföring måste annonsörer och onlinebyråer kontinuerligt förbättra sin förståelse för onlinemarknadsföringsmiljön och avkastningen på sina reklamutgifter. Även om annonsörer, byråer och utgivare har individuella verktyg för att uppnå dessa mål, kan manuell sammanställning av data från olika datasystem och processer allvarligt hämma effektiviteten i onlinemarknadsföringskampanjer, vilket resulterar i mindre optimala kampanjresultat, diskrepanser och förvirring.
 
-Integreringen med DoubleClick for Advertisers (DFA) löser problemet genom att använda Adobe® Data Connectors™ för att tillåta att DoubleClick DFA automatiskt skickar data till Rapporter och analyser.
+Integreringen med DoubleClick for Advertisers (DFA) löser problemet genom att använda Adobe® Data Connectors™ för att tillåta att DoubleClick DFA automatiskt skickar data till Reports &amp; Analytics.
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Data Connectors]**
 
@@ -25,11 +32,11 @@ Integreringen med DoubleClick for Advertisers (DFA) löser problemet genom att a
 Viktiga fördelar med Data Connector - DFA-integrering omfattar:
 
 * **Ökad konvertering**: Få riktade insikter för att optimera annonskampanjernas placering och konvertering på plats baserat på besökarnas beteende och önskemål efter klickningen.
-* **Delad plats för data**: Kombinera dubbelklickning på DFA-klickning och genomskinlighetsdata med rapporter och analyser för att förbättra samarbetet mellan olika organisationer och för att fatta objektiva beslut.
+* **Delad plats för data**: Kombinera dubbelklickning på DFA-klicknings- och vydata med rapporter och Analytics för att förbättra samarbetet mellan olika organisationer och för att fatta objektiva beslut.
 * **Mervärdesanalys**: Tack vare den automatiska integrationen mellan DFA och Adobe Reports &amp; Analytics kan annonsörer och byråer lägga mindre tid på att ta fram data och mer tid på att analysera rapporter och vidta åtgärder.
 * **Djupare kundinsikter**: Få bättre insikt i var besökarna kommer ifrån och vad de gör på er webbplats.
 * **Resultatstatistik** för livstid: Mät hur effektiva era kundvärvningskampanjer är under hela besökarens livscykel.
-* **Integrerad rapportering**: Synkronisera automatiskt data mellan DFA och rapporter och analyser för smidiga affärsprocesser och rapporter.
+* **Integrerad rapportering**: Synkronisera automatiskt data mellan DFA och Reports &amp; Analytics för smidiga affärsprocesser och rapportering.
 * **Livstidsbesöksanalys**: Mät kampanjens effektivitet med hjälp av flera användardefinierade lyckade händelser och livstidsvärde.
 * **Kostnadsmått**: Optimera avkastningen på investeringar genom att jämföra DFA-kostnadssiffror och intäkter från dessa kostnader i ett enda system.
 
@@ -63,7 +70,7 @@ När data kommer in, eller tar för lång tid, utlöses träffen till Adobes sp�
 
 Modulen Integrate är en speciell Adobe JavaScript-modul som gör att Adobes bildfyr fördröjs och väntar på en begäran från tredje part för en viss tid (`s.maxDelay`). `s.maxDelay` definierar hur länge Integrate-modulen ska vänta på data från DFA:s Floodlight Server innan bildtaggen aktiveras i besökarens webbläsare. Detta beteende är viktigt så att grundläggande besöksdata fortfarande samlas in, även när DFA-servern för Floodlight är nedladdad eller kraftigt inläst. Om Floodlight-data kommer innan `s.maxDelay` förfallodatumet aktiveras Adobe-spårningsdata omedelbart och innehåller ytterligare DFA-data.
 
-När en timeout inträffar kan sidkoden ange en Adobe Reports &amp; Analytics-händelse som ska användas som en Timeout-händelse. Den här händelsen är användbar när du vill diagnostisera problem med integreringen eller när du justerar `s.maxDelay`. Om det finns för många timeout-värden ökar du `s.maxDelay`. `s.maxDelay` kan dock ställas in för högt, vilket innebär att besökare kan ha möjlighet att lämna webbplatsen innan `s.maxDelay` tidsperioden går ut. .
+När en timeout inträffar kan sidkoden ange en Adobe Reports &amp; Analytics Event som ska användas som en Timeout-händelse. Den här händelsen är användbar när du vill diagnostisera problem med integreringen eller när du justerar `s.maxDelay`. Om det finns för många timeout-värden ökar du `s.maxDelay`. `s.maxDelay` kan dock ställas in för högt, vilket innebär att besökare kan ha möjlighet att lämna webbplatsen innan `s.maxDelay` tidsperioden går ut. .
 
 Ibland kan servern svara med fel om besökaren. Detta inträffar vanligtvis när Floodlight-servern inte känner till något om besökaren, eftersom besökaren ännu inte har sett några annonser eller inte har någon DFA-besökarcookie. Sidkoden kan ange en anpassad konverteringsvariabel (eVar) som samlar in felen och kan vara till hjälp vid felsökning av implementeringsproblem eller framhäva problem med Google-transaktionen. De vanligaste felen är Ingen historik, Ingen cookie, Frågefel och Vald ut enligt beskrivningen i följande tabell:
 
@@ -99,7 +106,7 @@ I följande tabell sammanfattas funktionerna i varje version av integreringen.
 
 ### Om version 1.5 {#section-b5a3e967cfa141ea8f740612336181be}
 
-Version 1.5 av integreringen introducerar modulen Integrera på startsidan Java Script. Modulen Integrate tillåter begäranden i fast storlek till DFA-annonsservern (ad.doubleclick.net), som överskrider 2K-begärandegränserna för den tidigare integreringen. Det introducerar också en konfigurerbar tidsgräns *`s.maxDelay`* för att fortsätta samla in besöksdata från Adobe när nätverksavbrott inträffar. Fel och tidsgränser kan också samlas i analysvariabler.
+Version 1.5 av integreringen introducerar modulen Integrera på startsidan Java Script. Modulen Integrate tillåter begäranden i fast storlek till DFA-annonsservern (ad.doubleclick.net), som överskrider 2K-begärandegränserna för den tidigare integreringen. Det introducerar också en konfigurerbar tidsgräns *`s.maxDelay`* för att fortsätta samla in besöksdata från Adobe när nätverksavbrott inträffar. Fel och timeout kan också fångas in i Analytics-variabler.
 
 Följande bild visar nätverksinteraktioner på landningssidan i version 1.5.
 
@@ -115,7 +122,7 @@ En viktig egenskap i den nya JavaScript-koden är att det inte krävs någon imp
 
 Den senaste versionen av DFA-integreringen samlar in data för en hel Floodlight-konfiguration i integreringen. Före version 2.0 var enskilda integreringar kopplade till en enda DFA-annons. I och med den här förändringen inkluderas klick, tryck och kostnadsvärden för hela Floodlight-konfigurationen i den integrerade rapportsviten. Det går också att spåra visningen över flera platser när dessa två platser finns i samma Floodlight-konfiguration.
 
-Mediekostnadsstatistik är också tillgängliga från och med version 2.0 av integreringen. Om du vill aktivera mediekursstatistik för en integrering måste du välja en rapport- och analyshändelse för Mediekostnad i Genesis-guiden och ange vilken valuta måtten finns i DFA-gränssnittet.
+Mediekostnadsstatistik är också tillgängliga från och med version 2.0 av integreringen. Om du vill aktivera mått för mediekostnader för en integrering måste du välja en händelse för Rapporter och Analytics för Mediekostnad i guiden Genesis, samt ange vilken valuta måtten finns i DFA-gränssnittet.
 
 Timeout förväntas minska med 2.0-integreringen eftersom 302 omdirigeringar har tagits bort. Genom att eliminera dessa hopp bör du minska tidsgränserna och öka mängden DFA-data som du kan integrera.
 
