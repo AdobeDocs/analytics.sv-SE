@@ -3,12 +3,19 @@ description: 'null'
 title: ContactLab Data Connector för Adobe Analytics
 uuid: 9e6ed7cd-dce1-4c00-9090-d4306202e3ea
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 7%
 
 ---
 
 
 # ContactLab Data Connector för Adobe Analytics{#contactlab-data-connector-for-adobe-analytics}
+
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 Tack vare integreringen av ContactLab och Adobe Analytics kan befintliga ContactLab-kunder öka avkastningen från e-postmarknadsföring. Ni kan förstå kampanjens effektivitet ur praktiskt taget alla vinklar och sedan återmarknadsföra dem till kunderna baserat på kundvagnsöverläggningar, produktinköp, produktvisningar med mera.
 
@@ -25,7 +32,7 @@ Visar de viktigaste fördelarna med integrationen mellan Adobe Analytics och Con
 
 ## Krav för Adobe-kunder {#section-23ba9dd1a1774f3099a6764d3fadd4ef}
 
-* Måste vara en aktuell kund till Adobe Analytics.
+* Måste vara en befintlig kund till Adobe Analytics.
 * Måste ha administratörsbehörighet.
 * Två eVars måste vara tillgängliga och aktiverade i rapportsviten.
 * 5 tillgängliga händelser måste vara aktiverade i rapportsviten.
