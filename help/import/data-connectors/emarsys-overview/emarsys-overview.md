@@ -1,14 +1,21 @@
 ---
 description: Den här e-postintegreringen med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med e-postmarknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
-title: Emarsys Data Connector for Adobe Analytics
+title: Emarsys Data Connector för Adobe Analytics
 uuid: 6f2fbabc-dc6c-4975-887d-ec22eba42f9e
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+workflow-type: tm+mt
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
 
-# Emarsys Data Connector for Adobe Analytics{#emarsys-data-connector-for-adobe-analytics}
+# Emarsys Data Connector för Adobe Analytics{#emarsys-data-connector-for-adobe-analytics}
+
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 Den här e-postintegreringen med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med e-postmarknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 
@@ -43,7 +50,7 @@ Integreringen av dessa Data Connectors kräver följande:
 
 ### Krav från Adobe {#section-bce14015fb7f41b3bc754da0eb7567bc}
 
-* Datalager
+* Data Warehouse
 * Adobe- [!DNL Analytics] konto
 * Tillgängliga och konfigurerade [!DNL Analytics] variabler, inklusive eVars och anpassade händelser.
 
@@ -67,7 +74,7 @@ Det kan finnas avgifter kopplade till den här integreringen. Kontakta din relat
 
 ## Vad du bör veta innan du aktiverar integreringen{#what-you-should-know-before-activating-this-integration}
 
-Innan du aktiverar den här integreringen ska du granska följande objekt mot dina distributioner av Adobe Analytics och ditt e-postprogram.
+Innan du aktiverar integreringen bör du granska följande artiklar mot dina distributioner av Adobe Analytics och ditt e-postprogram.
 
 På så sätt säkerställs att bästa praxis och förutsättningar finns på plats före aktiveringen, vilket ger en optimal och lyckad integrering. Granska följande information om den här integreringen av Data Connectors i relation till emarsys:
 
@@ -77,12 +84,12 @@ På så sätt säkerställs att bästa praxis och förutsättningar finns på pl
 
 ### Adobe Analytics{#adobe-analytics}
 
-Läs följande information om den här integreringen av Data Connectors när det gäller Adobe Analytics:
+Läs följande information om integreringen av dessa Data Connectors när det gäller Adobe Analytics:
 
 * **Report Suite-specifik:** Den här integreringen är specifik för rapportsviten. Kontrollera att du har valt önskat rapportpaket innan du aktiverar integreringen.
 * **Auktoriserat ombud:** Observera att aktiveringen av integreringen kan medföra att ditt företag debiteras i enlighet med ditt serviceavtal med Adobe, Inc. eller ditt serviceavtal med någon av Adobes betrodda partners, beroende på vad som är tillämpligt. Genom att aktivera integreringen intygar du härmed att du är en behörig representant för ditt företag; och som sådan går ditt företag med på att betala eventuella avgifter som anges i det serviceavtal som beskrivs ovan.
-* **Datalager:** Den här integreringen kräver att datalagret är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat datalagret kontaktar du Adobe för mer information.
-* **Mottagar-ID:** Integreringen kräver att vi hämtar och lagrar ett &quot;Visitor ID&quot; i en Analytics-variabel (eVar). Besökar-ID (kallas ofta för &quot;Mottagar-ID&quot;) är en kodad eller numerisk representation av en e-postadress från e-postsystemet. Detta&quot;Mottagar-ID&quot; är kopplat till besökarbeteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som förs in i datasystemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden.
+* **Data warehouse:** Denna integrering kräver att Data warehouse är aktiverat för att generera segment för återmarknadsföring. Om du inte har aktiverat Data warehouse kontaktar du Adobe för mer information.
+* **Mottagar-ID:** Integreringen kräver att vi hämtar och lagrar ett besökar-ID inom en Analytics-variabel (eVar). Besökar-ID (kallas ofta för &quot;Mottagar-ID&quot;) är en kodad eller numerisk representation av en e-postadress från e-postsystemet. Detta&quot;Mottagar-ID&quot; är kopplat till besökarbeteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som förs in i datasystemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden.
 * **Extern spårning:** Om du för närvarande inte följer den bästa metoden att aktivera extern spårning för varje e-postkampanj som du skickar måste du göra det för att integreringen ska lyckas. Mer information finns i meddelandeavsnittet nedan.
 * **Integritetsefterlevnad:** Genom att aktivera spårning av mottagare eller besökar-ID kan den här funktionen spåra personligt identifierbar information om webbplatsens besökare. Detta påverkar integriteten och kräver att organisationen implementerar lämpliga procedurer, som att meddela besökarna på webbplatsen och ge dem sitt samtycke.
 
