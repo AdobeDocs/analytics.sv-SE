@@ -2,9 +2,9 @@
 description: Importera spårningsdata från tredjepartsprogram till Analytics.
 title: Komma igång med Analytics dataanslutningar
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 Adobe förser organisationer med användbar realtidsinformation om deras digitala strategier och marknadsföringsinitiativ. Med dataanslutningar kan du importera spårningsdata från tredjepartsprogram till Analytics, så att du kan samla in och använda data från en central plats. Om du använder någon av partnerprodukterna kan du skapa en integrering som importerar programdata till marknadsföringsrapporter. När de är integrerade kan du generera rapporter som innehåller data från programmet.
 
 En e-postintegrering kan till exempel vilja använda en e-postpartner för att distribuera en e-postkampanj. När besökarna kommer till er webbplats vill ni veta vilka som kom som svar på er e-postkampanj. Dataanslutarna integrerar data från er e-postpartner i marknadsföringsrapporter, så att ni kan fastställa den här informationen för att mäta effektiviteten i er e-postkampanj.
+
+>[!IMPORTANT]
+>
+>Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 **Systemkrav**
 
