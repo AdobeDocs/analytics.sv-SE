@@ -2,9 +2,9 @@
 title: contextData
 description: Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 44ee19e468b9455c8c510421e507dd3f091fbc88
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,7 @@ s.contextData["example_variable"] = "Example value";
 
 ## Använd bearbetningsregler för att fylla i analysvariabler
 
->[!IMPORTANT]
->
->Sammanhangsdatavariabler tas bort efter att regler har bearbetats. Om du inte har aktiva bearbetningsregler som placerar värden i variabler, kommer dessa data att gå förlorade permanent!
+>[!IMPORTANT] Sammanhangsdatavariabler tas bort efter att regler har bearbetats. Om du inte har aktiva bearbetningsregler som placerar värden i variabler, kommer dessa data att gå förlorade permanent!
 
 1. Uppdatera implementeringen för att ange kontextdatavariabelnamn och -värden.
 2. Logga in på Adobe Analytics och gå till Admin > Report Suites.
@@ -55,4 +53,19 @@ Inkludera kontextdatavariabeln som en egenskap för `contextData` i [`s.linkTrac
 s.contextData["example_variable"] = "Example value";
 s.linkTrackVars = "contextData.example_variable";
 s.tl(true,"o","Example context data link");
+```
+
+## Öka händelser med hjälp av kontextdatavariabler
+
+När du skapar bearbetningsregler kan du tilldela kontextdatavariabler till händelser.
+
+* Om en kontextdatavariabel innehåller någon typ av text ökas händelsen med ett.
+* Om en kontextdatavariabel innehåller ett heltal ökas händelsen med det heltalsvärdet.
+
+```js
+// Assigning this context data variable to an event increments it by one
+s.contextData["example_text"] = "Text value";
+
+// Assigning this context data variable to an event increments it by four
+s.contextData["example_number"] = "4";
 ```
