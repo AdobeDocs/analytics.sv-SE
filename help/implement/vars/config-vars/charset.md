@@ -2,14 +2,19 @@
 title: charSet
 description: Variabeln charSet avgör vilken kodning Adobe använder för att analysera din bildbegäran.
 translation-type: tm+mt
-source-git-commit: f769da139d9890fd736a9b277934b11aa131e166
+source-git-commit: 70410af433f540764b71bd29a81ff9d8210cb95c
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
 
 # charSet
 
-Variabeln charSet används av Adobe för att konvertera inkommande data till UTF-8 för lagring och rapportering från Analytics. Om din webbplats använder en annan teckenuppsättning än UTF-8 tillåter den här variabeln att dina data kodas korrekt av Adobe. Den här variabeln kan ställas in sida för sida om webbplatsen använder olika kodningar på olika sidor.
+Variabeln charSet används av Adobe för att konvertera inkommande data till UTF-8 för lagring och rapportering från Analytics. De flesta webbplatser behöver inte ange den här variabeln.
+
+Ange bara den här variabeln om du ser förvrängda värden ([mojibake](https://en.wikipedia.org/wiki/Mojibake)) i rapporter. Du kan ange den här variabeln sida för sida om webbplatsen använder olika kodningar på olika sidor.
 
 ## Teckenuppsättning i Adobe Experience Platform Launch
 
@@ -20,11 +25,11 @@ Teckenuppsättning är ett fält under [!UICONTROL General] dragspelet när Adob
 3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
 4. Expandera dragspelsfliken, som visar [!UICONTROL General] [!UICONTROL Character Set] fältet.
 
-Du kan antingen använda en förinställd teckenuppsättning eller en anpassad teckenuppsättning. Detta värde bör matcha teckenkodningen på din webbplats. De flesta webbplatser använder `UTF-8`.
+Du kan antingen använda en förinställd teckenuppsättning eller en anpassad teckenuppsättning. Undvik att ändra värdet från `UTF-8` om du inte ser förvrängda värden i rapporter.
 
 ## s.charSet i AppMeasurement and Launch custom code editor
 
-Variabeln `charSet` är en sträng. Ange den här variabeln till samma värde som HTML- `<meta charset="">` taggen på din plats.
+Variabeln `charSet` är en sträng. Om du har blandat ihop värden i Adobe Analytics anger du den här variabeln till samma värde som HTML- `<meta charset="">` taggen på din webbplats.
 
 ```js
 s.charSet = "UTF-8";
