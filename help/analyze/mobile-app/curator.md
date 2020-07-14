@@ -2,7 +2,7 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för Adobe Analytics-kontrollpaneler
 translation-type: tm+mt
-source-git-commit: 8013f767027147b58118dd33c9f207c2b158ca7c
+source-git-commit: 810083aad3a096a3d352416480bf48ad8d7b3f2b
 workflow-type: tm+mt
 source-wordcount: '2301'
 ht-degree: 0%
@@ -145,7 +145,7 @@ Så här delar du styrkortet med en verkställande användare:
 
 3. Klicka på **Dela**.
 
-![Dela_styrkort](assets/new_share.png)
+![Dela_styrkort](assets/new_share2.png)
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina Analytics-kontrollpaneler. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 
