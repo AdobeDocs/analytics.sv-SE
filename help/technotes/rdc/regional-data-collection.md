@@ -2,9 +2,9 @@
 title: Regional datainsamling
 description: Information om regional datainsamling
 translation-type: tm+mt
-source-git-commit: 91867f379c9f3e0f4e7fdeed572a94ff798653ba
+source-git-commit: 058516ed9fb6cf7e73df4001404da45fb527e568
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '471'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Adobe Experience Cloud använder regional datainsamling (RDC) så att interaktio
 
 >[!IMPORTANT]
 >
->Det kinesiska paketet för prestandaoptimering (Kina Performance Optimization) är ett tilläggsprogram som kan debiteras Adobe Analytics. Kontakta din Adobe-återförsäljare för mer information.
+>Det kinesiska paketet för prestandaoptimering (Kina Performance Optimization) är ett tilläggsprogram som kan debiteras Adobe Analytics. Adobes prestandaoptimering på det kinesiska fastlandet gör det möjligt för kunder i Kina att skicka data direkt till den kinesiska kantnoden i stället för till andra platser globalt. Detta förbättrar sidinläsningstiden och datakvaliteten jämfört med att skicka data till noder utanför Kina. Kontakta din Adobe-återförsäljare för mer information.
 
 Följande platser (kan ändras) ingår för närvarande i RDC:
 
