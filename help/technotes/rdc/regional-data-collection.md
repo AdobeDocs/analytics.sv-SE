@@ -2,7 +2,10 @@
 title: Regional datainsamling
 description: Information om regional datainsamling
 translation-type: tm+mt
-source-git-commit: 449a64e361523d7a68514d60541c443a4f696c9d
+source-git-commit: 91867f379c9f3e0f4e7fdeed572a94ff798653ba
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 2%
 
 ---
 
@@ -10,6 +13,10 @@ source-git-commit: 449a64e361523d7a68514d60541c443a4f696c9d
 # Regional datainsamling
 
 Adobe Experience Cloud använder regional datainsamling (RDC) så att interaktionen mellan slutanvändarna och Adobe Experience Cloud sker så nära slutanvändarna som möjligt. Detta förbättrar prestanda för er webbplats/app och säkerställer att data samlas in så snabbt som möjligt för att optimera slutanvändarens upplevelse. När data från dina digitala egenskaper samlas in lokalt på ett datainsamlingscenter (DCC) vidarebefordras de via en säker anslutning till ett datacenter (DPC) där de bearbetas och görs tillgängliga för produkter i Adobe Experience Cloud.
+
+>[!IMPORTANT]
+>
+>Det kinesiska paketet för prestandaoptimering (Kina Performance Optimization) är ett tilläggsprogram som kan debiteras Adobe Analytics. Kontakta din Adobe-återförsäljare för mer information.
 
 Följande platser (kan ändras) ingår för närvarande i RDC:
 
@@ -19,7 +26,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 |---------------------|-------------------|
 | Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney |
 
-Obs! Om din Analytics-bildförfrågan skickas till `2o7.net` - eller `omtdrc.net` slutpunkterna har du en datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
+Obs! Om din Analytics-bildbegäran skickas till `2o7.net` - eller `omtdrc.net` slutpunkterna har du en datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
 
 ## Insamling av HTTPS-data från första part
 
