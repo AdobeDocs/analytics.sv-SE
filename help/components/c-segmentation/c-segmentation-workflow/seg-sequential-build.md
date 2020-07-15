@@ -4,9 +4,9 @@ title: Skapa sekventiella segment
 topic: Segments
 uuid: 7fb9f1c7-a738-416a-aaa2-d77e40fa7e61
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 3b587a04ec2c0e358fde386ed5e1be4f9b77a881
 workflow-type: tm+mt
-source-wordcount: '3673'
+source-wordcount: '3688'
 ht-degree: 1%
 
 ---
@@ -262,9 +262,9 @@ Logikgrupper kan verka skrämmande - här följer några tips om hur du använde
 Om du vill gruppera sekventiella kontrollpunkter är din&quot;behållare&quot; logikgrupp. Om dessa sekventiella kontrollpunkter måste finnas inom ett enda träffs- eller besöksomfång, krävs dock en träff- eller besöksbehållare. (En träff passar förstås inte för en grupp av sekventiella kontrollpunkter, när en träff inte kan kreditera mer än en kontrollpunkt).
 
 **Förenklar logikgrupper skapandet av sekventiella segment?**
-Ja, det kan de. Låt oss anta att du försöker svara på den här frågan: **Såg besökaren sida B, sida C eller sida D efter sida A?**
+Ja, det kan de. Låt oss anta att du försöker identifiera det här segmentet av besökare: **Besökare som visade sida A visade sedan sidorna i B, C och D**
 
-Du kan skapa det här segmentet utan en logikgruppsbehållare, men det är komplicerat och mödosamt:
+Du kan skapa det här segmentet utan en logikgruppsbehållare, men det är komplicerat och mödosamt. Du måste ange varje sidsekvens som besökaren kan visa:
 * `Visitor Container [Page A THEN Page B THEN Page C THEN Page D] or`
 * `Visitor Container [Page A THEN Page B THEN Page D THEN Page C] or`
 * `Visitor Container [Page A THEN Page C THEN Page B THEN Page D] or`
