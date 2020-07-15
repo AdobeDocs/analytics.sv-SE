@@ -3,15 +3,48 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 8ce13270a254af140e38b981e9edd9b5e122cdf9
 workflow-type: tm+mt
-source-wordcount: '7195'
-ht-degree: 100%
+source-wordcount: '7747'
+ht-degree: 97%
 
 ---
 
 
 # Nyheter i Analysis Workspace
+
+## Juli 2020
+
+Ny funktion släppt 16 juli 2020.
+
+| Funktion | Beskrivning |
+|--- |--- |
+| Nya förinställningar för datumintervall | Fyra nya datumintervall har lagts till: ([!UICONTROL This week/month/quarter/year (excluding today)]). På så sätt kan du välja från datumintervall som inte innehåller data för delar av dagen från och med idag. |
+
+## Juni 2020
+
+Nya funktioner som släpptes 18 juni 2020.
+
+| Funktion | Beskrivning |
+|--- |--- |
+| Attribution IQ: Algoritmisk attribuering | I modellen för algoritmisk attribuering i Analysis Workspace används statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. Tillgängligt för kunder som har Adobe Analytics Ultimate. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
+| Attribution IQ: Anpassade uppslagsfönster | Du kan nu konfigurera alla attribueringsmodeller i Attribution IQ så att de inkluderar kontaktytor från upp till 90 dagar före rapporteringsperioden. Detta ökar vanligen attribueringens exakthet för händelser som inträffar tidigt under rapporteringsperioden genom att redovisa interaktioner som inträffat under föregående månad(er). Tillgängligt för kunder som har Adobe Analytics Foundation, Select, Prime, Premium, Premium Attribution, Premium Complete och Ultimate. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
+| Projektroller för delade Workspace-projekt | När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
+| Skrivskyddade Workspace-projekt | Skrivskyddade Workspace-projekt kan delas med användare som Can view. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/view-only-projects.translate.html) |
+| Möjlighet att samredigera Workspace-projekt | Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
+| Uppdaterad tom panel | Den tomma panelen innehåller nu paneler och visualiseringar, vilket gör det enklare att välja det analysarbetsflöde som fungerar bäst för dig. |
+| Panelen Snabbinformation (25 juni 2020) | Quick Insights ger vägledning till icke-analytiker och nya användare av Analysis Workspace så att de snabbt och enkelt kan lära sig att svara på affärsfrågor. [Läs mer...](/help/analyze/analysis-workspace/c-panels/quickinsight.md) |
+| Panelen Analytics for Target i Workspace (25 juni 2020) | Med panelen Analytics for Target (A4T) kan du analysera dina Adobe Target aktiviteter och upplevelser i Analysis Workspace. [Läs mer …](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) |
+| Om sidan Arbetsyta | Sidan Om arbetsyta innehåller information om din Analysis Workspace-miljö, om dina Adobe Analytics-administratörer (om du behöver support) och ett sätt att ge produktfeedback. Den finns under Arbetsyta > Hjälp > Om arbetsyta. |
+
+## Maj 2020
+
+Nya funktioner släpptes 21 maj 2020.
+
+| Funktion | Beskrivning |
+|--- |--- |
+| Bygg frihandstabeller automatiskt från ett tomt läge | Tidigare gick det inte att släppa komponenter direkt i ett tomt projekt eller en tom panel. du var tvungen att lägga till en friformstabell först. Nu kan du släppa komponenter direkt i ett tomt projekt eller en tom panel, och en frihandstabell skapas automatiskt i det format som rekommenderas. Dessutom har vi förbättrat hur blandade komponenttyper (som dimensioner och mätvärden) hanteras när de släpps i en tom frihandstabell tillsammans. |
+| Tillgänglighetsförbättringar | Adobe Analytics-teamet har gjort flera tillgänglighetsförbättringar för Analysis Workspace, och har bland annat förbättrat stöd för tangentbordsnavigering, färgkontrast och skärmläsare. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/workspace-faq/aw-accessibility.html) |
 
 ## April 2020
 
