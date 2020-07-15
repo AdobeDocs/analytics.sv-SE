@@ -4,15 +4,17 @@ title: Interna URL-filter
 topic: Admin tools
 uuid: 70868edb-208d-4dad-9401-70967468d40c
 translation-type: tm+mt
-source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+source-git-commit: 9237315927b769aaf454a7e81932fdf63572295f
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # Interna URL-filter
+
+**[!UICONTROL Admin > Report Suites > Edit Settings > General > Internal URL Filters > Add Filter]**
 
 Interna URL-filter identifierar de referenser som du anser vara interna för din webbplats. De hjälper trafikkällor att fylla i data och hjälper till att filtrera intern trafik.
 
