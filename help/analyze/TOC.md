@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: f87f0fc7de15371dcfac739611ea63c41328303c
+source-git-commit: 9237315927b769aaf454a7e81932fdf63572295f
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 95%
+source-wordcount: '1098'
+ht-degree: 96%
 
 ---
 
@@ -79,8 +79,8 @@ ht-degree: 95%
       + [Trädkarta](analysis-workspace/visualizations/treemap.md)
    + Paneler {#panels}
       + [Översikt över paneler](analysis-workspace/c-panels/panels.md)
-      + [Analyser för målpanelen (A4T)](analysis-workspace/c-panels/a4t-panel.md)
-      + [Attributionspanelen](analysis-workspace/c-panels/attribution.md)
+      + [Panelen Analytics för Target (A4T)](analysis-workspace/c-panels/a4t-panel.md)
+      + [Panelen Attribution](analysis-workspace/c-panels/attribution.md)
       + [Tom panel](analysis-workspace/c-panels/blank-panel.md)
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
@@ -91,7 +91,7 @@ ht-degree: 95%
    + Samla in eller dela projekt {#curate-share}
       + [Kuratera arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
-      + [Visa endast arbetsyteprojekt](analysis-workspace/curate-share/view-only-projects.md)
+      + [Skrivskyddade Workspace-projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
       + [Skicka fil – schemalägga ett projekt för leverans](analysis-workspace/curate-share/t-schedule-report.md)
@@ -124,7 +124,7 @@ ht-degree: 95%
       + [Analysis Workspace jämfört med Ad Hoc Analysis](analysis-workspace/workspace-faq/adhocanalysis-vs-analysisworkspace.md)
       + [Begränsningar i Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
-      + [Tillgänglighet på analysarbetsytan](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
    + [Adobe Report Builder – hjälp](report-builder/home.md)
    + [Nyheter i Report Builder](report-builder/whats-new-arb.md)
@@ -300,7 +300,6 @@ ht-degree: 95%
    + [Mål](reports-analytics/targets.md)
    + [Larm](reports-analytics/alerts.md)
    + [Kalenderhändelser](reports-analytics/t-calendar-event.md)
-   + [Data Warehouse-förfrågningar](reports-analytics/data-warehouse.md)
    + [Vanliga frågor](reports-analytics/frequently-asked-questions.md)
    + [Felsökning](reports-analytics/report-troubleshooting.md)
 + Ad Hoc Analysis {#ad-hoc-analysis}
@@ -336,7 +335,7 @@ ht-degree: 95%
 + Labs {#tech-previews}
    + [Labs – översikt](tech-previews/overview.md)
 + Adobe Analytics-paneler {#mobapp}
-   + [Adobe Analytics-instrumentpaneler - översikt](mobile-app/home.md)
+   + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Insamlingshandsbok](mobile-app/curator.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
 + Progressive Web Apps {#pwa}
