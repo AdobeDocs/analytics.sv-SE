@@ -2,9 +2,9 @@
 description: På panelen Analytics för Target (A4T) kan du analysera dina Adobe Target aktiviteter och upplevelser i Analysis Workspace.
 title: Panelen Analytics för Target (A4T)
 translation-type: tm+mt
-source-git-commit: fe6202288cfc07575db437f7d0c055f1b40ddcf6
+source-git-commit: efdab27f9449e1aabc9647b0663b02d8fe74cc29
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '912'
 ht-degree: 2%
 
 ---
@@ -44,11 +44,11 @@ I varje frihandstabell visas följande måttkolumner:
 | Normaliserar mätvärden | Unika besökare, besök eller aktivitetsexponeringar. |
 | Resultatmått | Det mått som valts i verktyget |
 | Konverteringsgrad | Resultatmått/normaliseringsmått |
-| Lyft | Jämför konverteringsgraden för varje upplevelse med kontrollupplevelsen.<br>**Obs!**Lyft är en&quot;låst mätmetod&quot; för Target upplevelser. den inte kan brytas ned eller användas med andra dimensioner. |
+| Lyft | Jämför konverteringsgraden för varje upplevelse med kontrollupplevelsen.<br>**Obs!**Lyft är en&quot;låst mätmetod&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner. |
 | Lyft (nedre) | Representerar den värsta klippet en variant kan ha över kontrollen. |
 | Lyft (mitten) | Representerar mittpunktshöjningen som en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall. Det här är&quot;Lyft&quot; i rapporter och Analytics. |
 | Lyft (övre) | Representerar den bästa lyften en variantupplevelse kan ha över kontrollen. |
-| Förtroende | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. <br>**Obs!**Förtroende är ett&quot;låst mått&quot; för Target upplevelser. den inte kan brytas ned eller användas med andra dimensioner. |
+| Förtroende | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. <br>**Obs!**Förtroende är ett&quot;låst mätresultat&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner. |
 
 Precis som med andra paneler i Analysis Workspace kan du fortsätta att analysera genom att lägga till ytterligare tabeller och [visualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) som hjälper dig att analysera dina Adobe Target-aktiviteter.
 
@@ -61,5 +61,7 @@ Precis som med andra paneler i Analysis Workspace kan du fortsätta att analyser
 | Varför kan unika besökare variera mellan Target och Analytics? | [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports.html) om olika unika besökare mellan produkter. |
 | Varför returneras orelaterade upplevelser när jag väljer ett träffsegment för en viss Target-aktivitet i min analys? | A4T-dimensionen är en listvariabel, vilket betyder att den kan innehålla många aktiviteter (och upplevelser) samtidigt. [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports.html) |
 | Betyder konfidensmätningen extrema order eller används en Bonferroni-korrigering för flera erbjudanden? | Nej. [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence.html) om hur Analytics beräknar självförtroende. |
+| Kan lyftnings- och tillförlitlighetsvärden användas med andra dimensioner eller uppdelningar? | Lyft och självförtroende är&quot;låsta mätvärden&quot; för Target Experience-dimensionen eftersom de kräver en kontroll och variant för att kunna beräknas. De kan därför inte delas upp eller användas med andra dimensioner. |
+| När beräknas lyft och självförtroende om? | Lyft och tillförsikt räknas om när panelen körs (eller körs om), när panelens datumintervall ändras eller när ett segment tillämpas på panelen eller tabellen. |
 
 Mer information om Analytics för Target-rapportering finns på [A4T-rapportering](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/reporting.html)
