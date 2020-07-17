@@ -3,7 +3,7 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentval för Virtual Report Suites
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 4c5dd32b51693d2c0eccd4365cae1ac5a29e6d34
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 14%
@@ -36,13 +36,16 @@ Om du vill aktivera komponenturval
    * [!UICONTROL Ad Hoc Analysis]
    * [!UICONTROL Data Warehouse]
    * [!UICONTROL Report Builder]
+   * [!UICONTROL Activity Map]
    * API för Analytics-rapportering
+
    När du har markerat det här alternativet kan du lägga till de komponenter som du vill ska ingå i den virtuella rapportsviten genom att dra de tillämpliga komponenterna från kolumnen&quot;Uteslutna komponenter&quot; till kolumnen&quot;inkluderade komponenter&quot;. De komponenter som kan inkluderas och exkluderas är:
 
    * Mått
    * Mätvärden
    * Segment
    * Datumintervall
+
    >[!NOTE]
    >
    >Du behöver inte *dela* kuraterade komponenter (segment, beräknade värden, datumintervall). De visas alltid i Analysis Workspace om de har kuraterats för den virtuella rapportsviten, även om de inte delas.
