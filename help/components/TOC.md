@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: 0bd595d8936756cb36fa59ce5e01fb200f99d0de
+source-git-commit: 271cffdc32c6063da955ac3fbd7f774a15cac8d2
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 61%
+source-wordcount: '632'
+ht-degree: 59%
 
 ---
 
@@ -205,9 +205,13 @@ ht-degree: 61%
       + [Hantera virtuella rapportsviter](vrs/c-workflow-vrs/vrs-manage.md)
       + [Visa information om virtuella rapportsviter](vrs/c-workflow-vrs/vrs-view.md)
 + Enhetsövergripande analys {#cda}
-   + [Översikt över enhetsövergripande analys](cda/cda-home.md)
-   + [Konfigurera enhetsövergripande analys](cda/cda-setup.md)
-   + [Vanliga frågor om enhetsövergripande analys](cda/cda-faq.md)
+   + [Översikt över enhetsövergripande analys](cda/overview.md)
+   + [Fältbaserad stygn](cda/field-based-stitching.md)
+   + [Enhetsdiagram](cda/device-graph.md)
+   + [Konfigurera Analytics för olika enheter](cda/setup.md)
+   + [Så här spelar du upp](cda/replay.md)
+   + [CDA Workspace-mall](cda/workspace-template.md)
+   + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
 + Larm {#alerts}
    + [Intelligenta aviseringar](c-alerts/intellligent-alerts.md)
    + [Alert Builder](c-alerts/alert-builder.md)
