@@ -1,15 +1,21 @@
 ---
 description: När du skapar en integrering med en Adobe-partner med hjälp av dataanslutningar kan Adobe föra över återmarknadsföring eller andra data till ett FTP-konto, som du eller partnern kan hämta.
 keywords: ftp;sftp
-title: Dataanslutningar
-uuid: 76edb815-f40d-413d-986f-565b6619648d
+title: Data Connectors
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: d5840838b092eb19165d4b716e808a1d2d1fc4dc
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 4%
 
 ---
 
 
-# Dataanslutningar
+# Data Connectors
+
+>[!IMPORTANT]
+>
+>Adobe Data Connector-tekniken upphör i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 När du skapar en integrering med en Adobe-partner med hjälp av [dataanslutningar](https://www.adobeexchange.com/experiencecloud.html)kan Adobe föra över återmarknadsföring eller andra data till ett FTP-konto som du eller partnern kan hämta.
 
