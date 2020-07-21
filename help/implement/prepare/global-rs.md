@@ -2,7 +2,7 @@
 title: Global rapportserie i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 9704267cd3ebf480facd68f6cca44167b1d9686d
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%
@@ -19,7 +19,7 @@ En global rapportserie är en rapportserie som samlar in data från alla domäne
 Adobe rekommenderar att man i de flesta fall implementerar en global rapportserie.
 
 * **Sammanställda data:** Med globala rapportsviter kan du se KPI:er och framgångshändelser på egna webbplatser. Segmentering och virtuella rapportsviter kan användas för att visa platsspecifika data.
-* **Stöd för Analytics mellan olika enheter:** CDA kräver en rapportserie som samlar in data från flera platser, till exempel din webbplats och mobilapp. Separata enheter kan sammanfoga data om de implementeras på rätt sätt. Mer information finns i Analytics [för](../../components/cda/cda-home.md) olika enheter i användarhandboken för komponenter.
+* **Stöd för Analytics mellan olika enheter:** CDA kräver en rapportserie som samlar in data från flera platser, till exempel din webbplats och mobilapp. Separata enheter kan sammanfoga data om de implementeras på rätt sätt. Mer information finns i Analytics [för](../../components/cda/overview.md) olika enheter i användarhandboken för komponenter.
 * **Du behöver inte mer än en rapportserie:** Alla data kan samlas in i en enda rapportserie, så det är mindre troligt att en utvecklare av misstag skickar data till fel rapportserie.
 * **Inga sammanslagningar:** Sammanslagningar är en funktion som är ganska daterad och som sammanställer data från enskilda rapporteringsprogram dagligen. Upplysta listor tar inte bort besöks- eller besöksdata, vilket kan leda till ett högt antal. Mer information finns i [Samlingar](../../admin/c-manage-report-suites/rollup-report-suite.md) i användarhandboken för Admin.
 * **Spara tid:** Arbetsyteprojekt, klassificeringar, segment och beräknade värden är kopplade till samma globala rapportserie. Administratörer lägger mindre tid på att hantera dessa komponenter och datastyrning.
