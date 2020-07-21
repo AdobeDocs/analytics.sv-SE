@@ -5,7 +5,7 @@ title: Attribution och persistence
 topic: Developer and implementation
 uuid: 5dd706be-83f6-498a-a856-e3c5af995348
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 9704267cd3ebf480facd68f6cca44167b1d9686d
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se Analytics [för](/help/components/cda/cda-home.md) olika enheter i användarhandboken för komponenter.
+>Den här metoden för att identifiera besökare på olika enheter rekommenderas inte längre. Se Analytics [för](/help/components/cda/overview.md) olika enheter i användarhandboken för komponenter.
 
 När besökarprofiler sammanfogas efter att de har associerats med samma variabel för besökar-ID, ändras inte attribueringen i den historiska datauppsättningen.
 
