@@ -2,7 +2,7 @@
 title: Unika besökare
 description: Antalet unika personer (eller enheter).
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 9704267cd3ebf480facd68f6cca44167b1d9686d
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Måttet&quot;Unika besökare&quot; visar antalet besökar-ID:n för dimensionsvärdet. Det är en av de vanligaste måtten som används för att fastställa trafik, eftersom det ger en översikt på hög nivå över hur populärt ett dimensionsvärde är. En besökare kan till exempel komma till din webbplats varje dag i en månad, men de räknas ändå som en unik besökare.
 
-Om du använder [Enhetsövergripande analys](../cda/cda-home.md)får det här måttet namnet namnet&quot;Unika enheter&quot;.
+Om du använder [Enhetsövergripande analys](../cda/overview.md)får det här måttet namnet namnet&quot;Unika enheter&quot;.
 
 ## unika besökare varje dag, vecka, månad, kvartal och år
 
@@ -44,7 +44,7 @@ Unika besöksidentifierare lagras vanligtvis i en webbläsarcookie. En ny unik b
 
 * Rensar cacheminnet när som helst
 * Öppnar en annan webbläsare på samma dator. En unik besökare räknas per webbläsare.
-* Samma person som surfar på din webbplats på olika enheter. En separat unik besökare räknas per enhet. Ni kan använda [enhetsövergripande analys](../cda/cda-home.md) för att kombinera besökare med [personmätaren](people.md) .
+* Samma person som surfar på din webbplats på olika enheter. En separat unik besökare räknas per enhet. Ni kan använda [enhetsövergripande analys](../cda/overview.md) för att kombinera besökare med [personmätaren](people.md) .
 * Öppnar en privat surfsession (till exempel Chrome&#39;s Incognito-fliken).
 
 En ny unik besökare räknas *inte* så länge cookie-identifieraren bevaras:
