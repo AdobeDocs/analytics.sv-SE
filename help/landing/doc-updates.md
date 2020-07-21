@@ -3,10 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 translation-type: tm+mt
-source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+source-git-commit: de7783174d55c03ac73140e8ab05005284788459
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 97%
 
 ---
 
@@ -24,6 +24,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Datum | Beskrivning |
 |---|---|
+| 21 juli 2020 | Viktiga uppdateringar och revideringar av Analytics [för](/help/components/cda/overview.md)olika enheter. Lagt till [fältbaserad sammanfogning](/help/components/cda/field-based-stitching.md). |
 | 28 april 2020 | Dokumentation för mätvärdet [Content Velocity](/help/components/metrics/content-velocity.md) har lagts till. |
 | 12 mars 2020 | [Publicera segment i Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-publish.md) har uppdaterats. |
 | 12 mars 2020 | Uppdateringar av svarstider för CDA-sammanfogning. |
@@ -31,7 +32,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 25 februari 2020 | [`useLinkTrackSessionStorage`](/help/implement/vars/config-vars/uselinktracksessionstorage.md)-variabel har lagts till. |
 | 18 februari 2020 | [`writeSecureCookies`](/help/implement/vars/config-vars/writesecurecookies.md)-variabel har lagts till. |
 | 12 februari 2020 | Uppdateringar och omorganisering av dokumentationen för [marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
-| 7 februari 2020 | Uppdateringar av [Konfigurera Analytics över enheter](../components/cda/cda-setup.md) och [Vanliga frågor och svar](../components/cda/cda-faq.md). |
+| 7 februari 2020 | Uppdateringar av [Konfigurera Analytics över enheter](../components/cda/setup.md) och [Vanliga frågor och svar](../components/cda/faq.md). |
 | 4 februari 2020 | Fullständig omarbetning av [användarhandboken för implementering](../implement/home.md). |
 | 22 januari 2020 | Sidan om frihandstabeller har uppdaterats med information om nya [Freeform Table Builder](/help/analyze/analysis-workspace/visualizations/freeform-table.md). |
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](../technotes/cookies.md) har lagts till. |
