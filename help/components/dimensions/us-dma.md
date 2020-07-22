@@ -2,7 +2,7 @@
 title: US DMA
 description: Marknadsområdet för träffen.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Den här dimensionen refererar till interna uppslagsregler för Adobe. Uppslagsv
 >
 >Om din organisation följer strikta sekretessregler där det inte räcker med att [komplicera IP-adressen](/help/admin/admin/general-acct-settings-admin.md) kan du begära att få inaktivera geopositioneringsdata helt och hållet. Kontakta kundtjänst med rapportsvitens ID och be att få stänga av Geography för rapportsviten.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena inkluderar besökarens DMA- och DMA-kod. Den tresiffriga koden är inte ett postnummer, utan DMA-koden från Nielsen. Exempelvärdena inkluderar `"Dallas-Ft. Worth (623)"`, `"New York (501)"`eller `"Los Angeles (803)"`. Dimensionsvärdet `"No Metro (0)"` omfattar all internationell trafik utanför USA.
+Dimensionsobjekten inkluderar besökarens DMA- och DMA-kod. Den tresiffriga koden är inte ett postnummer, utan DMA-koden från Nielsen. Exempelvärdena inkluderar `"Dallas-Ft. Worth (623)"`, `"New York (501)"`eller `"Los Angeles (803)"`. Dimensionsposten `"No Metro (0)"` omfattar all internationell trafik utanför USA.
 
 ## Skillnader mellan rapporterad och faktisk plats
 
