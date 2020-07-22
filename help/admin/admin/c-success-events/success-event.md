@@ -1,25 +1,25 @@
 ---
 description: Success-händelser är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som lyckad händelse.
 keywords: event
-title: Översikt över lyckade händelser
+title: Översikt över slutförda händelser
 topic: Admin tools
 uuid: 410eee44-8960-462c-a9c3-07b44d0b1df0
 translation-type: tm+mt
-source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
-# Översikt över lyckade händelser
+# Översikt över slutförda händelser
 
 Success-händelser är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som lyckad händelse.
 
 Gå till sidan Success Events i inställningarna för rapportsviten:
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com) med dina inloggningsuppgifter för AdobeID.
+1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your AdobeID credentials.
 2. Klicka på knappen med nio stödraster längst upp och klicka sedan på [!UICONTROL Analytics].
 3. Navigera till [!UICONTROL Admin] > [!UICONTROL Report Suites]
 4. Välj önskad rapportsvit och navigera sedan till [!UICONTROL Edit Settings] > [!UICONTROL Conversion] > [!UICONTROL Success Events].
@@ -48,9 +48,9 @@ På sidan Success Events kan du konfigurera de händelsevariabler som används p
 | Händelse | Händelsens ursprungliga namn. |
 | Namn | Ge meningsfulla namn till de framgångshändelser som används på er webbplats. Om till exempel event1 används för att spåra registreringar, ändrar du namnet här så att event1 representeras som mätvärdet för &quot;Registreringar&quot; i alla konverteringsrapporter. |
 | Typ | Den valda typen avgör om händelsen är en räknarhändelse (standard), numerisk händelse eller valutakurs. Numeriska händelser och valutakurshändelser gör att du kan öka måtten med mer än en.  Räknarhändelser används för att spela in en händelse i tid, medan valutahändelser spelar in ett decimaltal, som moms eller frakt. Det värde som skickas till valutakurshändelser konverteras från sidvalutan till rapportsvitens basvaluta vid inleverans. Kontakta en Adobe-representant om du vill ha mer information om hur du använder valutasändningar. Numeriska händelser används för att rapportera icke-valutanummer, t.ex. antalet kuponger som används i en order. Valutahändelser används för att spåra moms och fraktkostnader. Händelser som används i standardtypen för datakällor måste vara numeriska händelser eller valutakurshändelser. |
-| Polaritet | Med hjälp av metrisk polaritet kan du ange om Adobe Analytics ska anse det vara bra eller dåligt om en viss anpassad händelse (metrisk) inträffar. Det gör att Adobe Analytics kan visa riktningsvisare (pilar) för olika mätvärden för att lägga till kontext (till exempel vecka-över-vecka-jämförelser).  Exempel: Om&quot;Buggar som skickas&quot; går upp i veckan över en vecka, ska Adobe Analytics överväga det bra eller dåligt? En ökning av antalet e-postregistreringar är förmodligen bra. Men en ökning av antalet inskickningsfel i formulär är antagligen felaktig.  I Analysis Workspace tillämpas polarity på: Villkorsstyrd formatering av friformstabell, visualiseringar av sammanfattningsändringar och färgschemat Positive/Negative för mappningsvisualisering. |
+| Polaritet | Med hjälp av metrisk polaritet kan du ange om Adobe Analytics ska se det som bra eller dåligt om en viss anpassad händelse (metrisk) inträffar. Det gör att Adobe Analytics kan visa riktningsvisare (pilar) för olika mätvärden för att lägga till kontext (t.ex. vecka för vecka-jämförelser).  Exempel: Om &quot;Bugs Suballowed&quot; går upp i veckan över en vecka, skulle Adobe då anse det vara bra eller dåligt? En ökning av antalet e-postregistreringar är förmodligen bra. Men en ökning av antalet inskickningsfel i formulär är antagligen felaktig.  I Analysis Workspace tillämpas polaritet på Villkorsstyrd formatering av friformstabell, visualiseringar av sammanfattningsändringar och färgschemat Positive/Negative för mappningsvisualisering. |
 | Beskrivning | En kort beskrivning av evenemangets syfte och användning. |
 | Unik händelsinspelning | **Registrera en gång per besök**: Kopplar den angivna händelsen till besökarens session. Efterföljande antal till en viss händelse i samma besök ignoreras. Den här typen av händelseserialisering kräver inga implementeringsändringar.<br>**Använd händelse-ID **: Kopplar den angivna händelsen till ett anpassat ID. Efterföljande antal till en viss händelse med samma händelse-ID ignoreras. Den här typen av händelseserialisering kräver ett anpassat ID i träffar för att dubblettvärden ska kunna tas bort. Se Serialisering[av](../../../implement/vars/page-vars/events/event-serialization.md)händelse-ID i användarhandboken för Implementering. |
-| deltagande | Ger fullständig attribueringskreditering till alla dimensionsvärden vid besöket. |
+| Deltagande | Ger fullständig attribueringskreditering till alla dimensionsobjekt i besöket. |
 | Varning (valutakändelse) | När händelsetyper ändras till eller från en valutakurs visas ett meddelande om att historiska data inte är tillgängliga i rapporter.  Olika händelsetyper använder separata datatabeller och kan inte användas samtidigt. Vissa historiska data kan återställas om användaren återställer händelsetypen. Data som samlats in efter den första ändringen är dock inte tillgängliga. Var försiktig när du ändrar en händelsetyp. |
 
