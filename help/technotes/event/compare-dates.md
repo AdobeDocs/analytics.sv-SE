@@ -2,7 +2,10 @@
 title: Jämför datum som påverkas av en händelse med tidigare intervall
 description: Lär dig mer om effekten av en händelse, till exempel ett implementeringsproblem eller ett driftstopp, genom att jämföra den med tidigare trender.
 translation-type: tm+mt
-source-git-commit: 74a1edadde1899c9e51019cb7e7bb120b6e04d64
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Du kan jämföra alla mått mellan datumintervallet för händelsen med liknande
 
 ## Beräkna procentskillnader mellan händelsen och liknande tidigare intervall
 
-Jämför dimensionsvärden mellan en händelses datumintervall och liknande tidigare datumintervall med hjälp av en frihandsvisualisering av tabeller. De här stegen illustrerar ett vecko-över-vecka-exempel som du kan följa.
+Jämför dimensionsobjekt mellan en händelses datumintervall och liknande tidigare datumintervall med hjälp av en frihandsvisualisering. De här stegen illustrerar ett vecko-över-vecka-exempel som du kan följa.
 
 1. Öppna ett Workspace-projekt och lägg till en **icke-tidsdimension** i frihandstabellen. Du kan till exempel använda dimensionen &quot;Mobilenhetstyp&quot;. Använd det nyligen skapade datumintervallet som är staplat på ett mätvärde, till exempel &#39;Förekomster&#39;:
 
