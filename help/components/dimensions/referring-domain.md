@@ -2,7 +2,7 @@
 title: Refererande domän
 description: Den överordnade domänen som en besökare var på innan han/hon klickade igenom till din plats.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Refererande domän
 
-Dimensionen Refererande domän visar vilka domäner besökarna klickar igenom för att nå din webbplats. Den här dimensionen är användbar för att förstå vilka tredjepartswebbplatser som genererar mest trafik till din. Det måste finnas en länk på den externa platsen och en besökare måste klicka på den för att dimensionsvärdet ska kunna visas.
+Dimensionen Refererande domän visar vilka domäner besökarna klickar igenom för att nå din webbplats. Den här dimensionen är användbar för att förstå vilka tredjepartswebbplatser som genererar mest trafik till din. Det måste finnas en länk på den externa platsen och en besökare måste klicka på den för att dimensionsobjektet ska kunna visas.
 
 >[!IMPORTANT]
 >
@@ -27,6 +27,6 @@ Den här dimensionen kräver konfiguration i Analytics gränssnitt och data i bi
 
 Adobe fortsätter att referera till en domän för ett besök. Om en besökare lämnar och klickar via en länk på en annan domän inom ett enda besök uppdateras det nya värdet och kvarstår under resten av besöket. Om du bara vill se det ursprungliga värdet läser du i [Ursprunglig hänvisande domän](original-referring-domain.md).
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena inkluderar domäner som besökarna klickar igenom till din webbplats. Om en träff inte har några referensdata (antingen angivna eller beständiga) grupperas den under dimensionsvärdet `"Typed/Bookmarked"`. Dimensionsvärdet innebär att det inte fanns något referensvärde, till exempel om besökaren skrev webbläsaradressen manuellt i adressfältet eller klickade på ett bokmärke.
+Dimensionsobjekten inkluderar domäner som besökarna klickar igenom till din webbplats. Om en träff inte har några referensdata (antingen angivna eller beständiga) grupperas den under dimensionsobjektet `"Typed/Bookmarked"`. Dimensionsobjektet betyder att det inte fanns något referensvärde, till exempel om besökaren skrev webbläsaradressen manuellt i adressfältet eller klickade på ett bokmärke.
