@@ -2,7 +2,7 @@
 title: Hämta länk
 description: Namnet på nedladdningslänken.
 translation-type: tm+mt
-source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -28,6 +28,6 @@ Om du vill skicka data till den här dimensionen med AppMeasurement:
 * Ställ in [`linkType`](/help/implement/vars/config-vars/linktype.md) variabeln på `"d"`.
 * Skicka en [`tl()`](/help/implement/vars/functions/tl-method.md) bildförfrågan.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vilka dimensionsvärden som är. Adobe rekommenderar att du grupperar länkar i meningsfulla kategorier baserat på dina rapporteringsbehov.
+Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vad dimensionsobjekten är. Adobe rekommenderar att du grupperar länkar i meningsfulla kategorier baserat på dina rapporteringsbehov.
