@@ -1,40 +1,40 @@
 ---
 title: Översikt över attribuering
-description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsvärden.
+description: Konceptet för att attribuera kredit för en lyckad händelse till flera dimensionsobjekt.
 translation-type: tm+mt
-source-git-commit: 53f5c4273a7621f3b447e36b19010a797e4ddffe
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '419'
-ht-degree: 1%
+ht-degree: 52%
 
 ---
 
 
 # Översikt över attribuering
 
-Attribution ger analytiker möjlighet att anpassa hur dimensionsvärden får kredit för lyckade händelser. Exempel:
+Attribution ger analytiker möjlighet att anpassa hur dimensionsposter får kredit för lyckade händelser. Exempel:
 
 1. En besökare på webbplatsen klickar på en betalsöklänk till en av dina produktsidor. Lägg produkten i kundvagnen, men köp den inte.
 2. Nästa dag ser du ett inlägg på sociala medier från en av deras vänner, klickar på länken och slutför sedan köpet.
 
-I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering. Det är tillgängligt för alla organisationer med Adobe Analytics Ultimate, Prime, Select och Foundation. Om du är osäker på vilken typ av kontrakt du har med Adobe kontaktar du din organisations Account Manager.
+I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering. Det är tillgängligt för alla organisationer på Adobe Analytics Ultimate, Prime, Select och Foundation. Om du är osäker på vilken typ av kontrakt du har med Adobe kontaktar du din organisations Account Manager.
 
 ## Värde för attribuerings-IQ
 
-En viss kundresa är inte linjär och ofta oförutsägbar. Varje kund går i sin egen takt. ofta används andra icke-linjära beteenden som att de backa, stall, startar om eller deltar i andra beteenden. Dessa organiska åtgärder gör det svårt att veta hur marknadsföringen påverkar hela kundresan. Det hämmar också arbetet med att knyta samman flera kanaler med data.
+Kundresor är inte linjära, och de är dessutom ofta oförutsägbara. Alla kunder har sitt eget tempo. De går fram och tillbaka, hit och dit, börjar om eller rör sig på andra icke-linjära sätt. De här organiska aktiviteterna gör det svårt att veta hur olika marknadsföringssatsningar påverkar olika delar av kundresan. Det hämmar också arbetet med att knyta samman olika datakanaler.
 
-![Attributets IQ-problem](assets/attribution_iq_problem.png)
+![Problemet med Attribution IQ](assets/attribution_iq_problem.png)
 
-Adobe Analytics förbättrar attribueringen genom att ni kan:
+Adobe Analytics förbättrar attribueringen eftersom ni kan:
 
-* Definiera attribuering bortom betalda medier: Alla dimensioner, mätvärden, kanaler och händelser kan tillämpas på modeller (t.ex. intern sökning), inte bara marknadsföringskampanjer.
-* Använd obegränsad jämförelse av attribueringsmodell: jämför dynamiskt så många modeller du vill.
-* Undvik implementeringsändringar: Med rapporttidshantering och sammanhangsberoende sessioner kan kundresan byggas in och tillämpas vid körning.
-* Skapa den session som bäst matchar ditt attribueringsscenario.
-* Dela upp attribuering efter segment: Jämför enkelt resultatet i era marknadsföringskanaler i alla viktiga segment (t.ex. nya jämfört med upprepade kunder, produkt X jämfört med produkt Y, lojalitetsnivå eller CLV).
-* Inspektera kanalöverskridande analys och multitouch-analys: Använd Venndiagram och histogram samt trendattribueringsresultat.
-* Analysera viktiga marknadsföringssekvenser visuellt: utforska banor som leder till visuell konvertering med flernodsflöde och visualiseringar av bortfall.
-* Skapa beräknade värden: använda valfritt antal allokeringsmetoder för attribuering.
+* Definiera attribuering för mer än betalda medier: alla mått, mätvärden, kanaler och händelser kan användas i modellerna (till exempel intern sökning), inte bara marknadsföringskampanjer.
+* Jämföra attribueringsmodeller utan begränsningar: jämför dynamiskt hur många modeller ni vill.
+* Undvika implementeringsändringar: med hjälp av rapporttidshantering och sammanhangsberoende sessioner kan kundresan byggas in och användas vid körning.
+* Skapa den session som bäst matchar attribueringsscenariot.
+* Dela upp attribueringen efter segment: jämför enkelt resultatet för marknadsföringskanalerna i alla viktiga segment (till exempel nya jämfört med återkommande kunder, produkt X jämfört med produkt Y, lojalitetsnivå eller kundens livstidsvärde).
+* Granska analyser av kontaktytor och kanalbyten: använd venndiagram och histogram samt trendattribuering.
+* Analysera viktiga marknadsföringssekvenser visuellt: utforska vägar som leder till konvertering visuellt med flernodsflöde och bortfallsvisualisering.
+* Skapa beräknade värden: använd valfria metoder för attribueringstilldelning.
 
 ## Funktioner
 
