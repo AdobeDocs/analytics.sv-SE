@@ -2,14 +2,17 @@
 description: Olika rapporter i Adobe Analytics kan visa Ospecificerad, Annan eller Okänd, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig.
 title: Ospecificerad, annan och okänd vid rapportering
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
 
 # &quot;Ospecificerad&quot;, &quot;Annan&quot; och &quot;Okänd&quot; vid rapportering
 
-Olika rapporter i Adobe Analytics kan visa Ospecificerad, Annan eller Okänd, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig. Nedan finns en omfattande lista över hur varje rapport kan innehålla en av dessa radposter.
+Olika rapporter i Adobe Analytics kan visa &quot;Ospecificerad&quot;, &quot;Annan&quot; eller &quot;Okänd&quot;, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig. Nedan finns en omfattande lista över hur varje rapport kan innehålla en av dessa radposter.
 
 ## &quot;Ospecificerad&quot; i rapportering
 
@@ -17,8 +20,8 @@ Olika rapporter i Adobe Analytics kan visa Ospecificerad, Annan eller Okänd, be
 
 * **En händelse utlöses utan en konverteringsvariabel:** En användare kommer till exempel till din webbplats och gör ett köp utan något eVar1-värde. Om du visar order med dimensionen eVar1 finns det inget värde att tilldela den här ordningen till. Därför tilldelas den automatiskt till&quot;Ospecificerad&quot;.
 * **Oklassificerade data i klassificeringsrapporter:** När klassificeringsdata visas returneras &quot;Ospecificerad&quot; om ett värde inte har data associerade med den aktuella klassificeringen. Du löser det här problemet genom att klassificera det överordnade variabelvärdet.
-* **Uppdelningsrapporter där endast en variabel utlöses:** När du tillämpar en uppdelning på en variabel måste alla instanser av variabeln tas med i beräkningen. Om den andra variabeln inte kunde ses, eller om den kvarstod från en tidigare träff, är dimensionsvärdet &quot;Ospecificerat&quot;.
-* **Icke-mobila träffar i mobilrapporter:** Alla träffar som inte är mobila i mobilrapporter listas som Ospecificerade (&quot;Inte mobilt&quot; i Rapporter och analyser).
+* **Uppdelningsrapporter där endast en variabel utlöses:** När du tillämpar en uppdelning på en variabel måste alla instanser av variabeln tas med i beräkningen. Om den andra variabeln inte kunde ses eller om den bestod från en tidigare träff är dimensionsobjektet &quot;Ospecificerat&quot;.
+* **Icke-mobila träffar i mobilrapporter:** Alla träffar som inte är mobila i mobilrapporter listas som Ospecificerade (&quot;Inte mobilt&quot; i rapporter och Analytics).
 
 ## ’Övrigt’ i rapporteringen
 
