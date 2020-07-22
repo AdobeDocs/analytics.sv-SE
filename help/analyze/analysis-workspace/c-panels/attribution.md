@@ -1,23 +1,23 @@
 ---
-title: Attributionspanelen
+title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 834783e4eae9100233afc164e2fabef96f089874
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Attributionspanelen
+# Panelen Attribution
 
 attribueringspanelen är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Det är en funktion i [Attribution IQ](../attribution/overview.md) som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
 
 ## Skapa en attribueringspanel
 
 1. Klicka på panelikonen till vänster.
-1. Dra panelen Attribution till analysarbetsyteprojektet.
+1. Dra panelen Attribution till ditt Analysis Workspace-projekt.
 
    ![Ny attribueringspanel](assets/Attribution_Panel_1.png)
 
@@ -36,7 +36,7 @@ attribueringspanelen är ett enkelt sätt att skapa en analys som jämför olika
 * **Totalt mått**: Det totala antalet konverteringar som inträffade under rapporttidsperioden. Detta är de konverteringar som tilldelas för den dimension som du har valt.
 * **Jämförelsetabell** för måttattribut: Jämför de tilldelade konverteringarna visuellt för var och en av dimensionsobjekten från den valda dimensionen. Varje stapelfärg representerar en distinkt attribueringsmodell.
 * **Friformstabell** för måttattribut: Visar samma data som stapeldiagrammet, som en tabell. Om du markerar olika kolumner eller rader i den här tabellen filtreras stapeldiagrammet och flera andra visualiseringar i panelen. Den här tabellen fungerar på ungefär samma sätt som andra frihandstabeller i arbetsytan, vilket gör att du kan lägga till komponenter som mått, segment och uppdelningar.
-* **Dimensionsöverlappningsdiagram**: Ett Venndiagram som visar de tre viktigaste dimensionsvärdena och hur ofta de deltar tillsammans i en konvertering. Storleken på bubbelöverlappningen anger till exempel hur ofta konverteringar inträffade när en besökare exponerades för båda dimensionsvärdena. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
+* **Dimensionsöverlappningsdiagram**: Ett Venndiagram som visar de tre viktigaste dimensionsobjekten och hur ofta de deltar tillsammans i en konvertering. Storleken på bubbelöverlappningen anger till exempel hur ofta konverteringar inträffade när en besökare exponerades för båda dimensionsobjekten. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
 * **Marknadsföringskontaktytor per resa**: Ett histogram som anger hur många kontaktytor en besökare har i uppslagsfönstret. Det här är användbart om du vill se hur effektfull multitouch-attribuering är för din datauppsättning. Om nästan alla besökare bara har en enda kontaktyta visar olika attribueringsmodeller troligen liknande data.
 * **Prestandainformation** för marknadsföringskanal: Gör att du kan jämföra upp till tre attribueringsmodeller visuellt med en punktdiagram.
 * **Marknadsföringskanalflöde**: Gör att du kan se vilka kanaler som interagerar med de flesta, och i vilken ordning, på en besökares resa.
