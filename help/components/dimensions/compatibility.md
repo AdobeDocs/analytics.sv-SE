@@ -2,7 +2,7 @@
 title: Analytics Dimensions-kompatibilitet
 description: Referens för Analytics dimensioner och rapporter.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 8%
@@ -16,7 +16,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 
 >[!NOTE]
 >
->Anpassade variabelnamn, klassificeringar och besökarattribut tas inte med i listan. Dessa dimensionsvärden är specifika för enskilda rapportsviter.
+>Anpassade variabelnamn, klassificeringar och besökarattribut tas inte med i listan. Dessa dimensionsobjekt är specifika för enskilda rapportsviter.
 
 >[!NOTE]
 >
