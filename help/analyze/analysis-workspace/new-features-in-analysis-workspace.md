@@ -3,10 +3,10 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 8ce13270a254af140e38b981e9edd9b5e122cdf9
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '7747'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -345,7 +345,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
-   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill se trenden för procentvärden, till exempel hur ett mått står sig jämfört med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
+   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  >Visualiseringsinställning för ”100 % staplad”</a> </p> </td> 
@@ -515,7 +515,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ändringar av ingen/ospecificerad </p> </td> 
-   <td colname="col2"> <p>Ändring av hur ingen/ospecificerad fungerar i Analysis Workspace så att det överensstämmer med rapporter och analyser, segmentverktyget och menyn för mått i Analysis Workspace. </p> <p>Det innebär att värdet visas som ospecificerat i stället för som inget i de flesta projekt i Analysis Workspace. </p> </td> 
+   <td colname="col2"> <p>Ändrade hur Ingen/Ospecificerad fungerar i Analysis Workspace så att det stämmer överens med Rapporter &amp; Analytics, Segment Builder och menyn för dimensionsobjekt i Analysis Workspace. </p> <p>Det innebär att värdet visas som ospecificerat i stället för som inget i de flesta projekt i Analysis Workspace. </p> </td> 
   </tr> 
  </tbody> 
 </table>
