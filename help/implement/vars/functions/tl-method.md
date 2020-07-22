@@ -2,7 +2,7 @@
 title: tl
 description: Skicka ett länkspårningssamtal till Adobe.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 1%
@@ -79,7 +79,7 @@ s.tl(true,"e");
 
 ### Länknamn
 
-Argumentet för länknamn är en sträng som avgör dimensionsvärdet för länkspårning. Det är samma sak som att ställa in [`linkName`](../config-vars/linkname.md) variabeln.
+Argumentet för länknamn är en sträng som avgör dimensionsobjektet för länkspårning. Det är samma sak som att ställa in [`linkName`](../config-vars/linkname.md) variabeln.
 
 ```js
 s.tl(true,"d","Example download link");
