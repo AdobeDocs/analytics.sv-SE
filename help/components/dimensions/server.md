@@ -2,7 +2,7 @@
 title: Server
 description: Serverns namn.
 translation-type: tm+mt
-source-git-commit: 1869d69566d26aa7d99c520efc2e835901439d48
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -20,6 +20,6 @@ Dimensionen är relaterad till dimensionerna för [sid](page.md) - och [webbplat
 
 Den här dimensionen hämtar data från [`server` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med hjälp av [`server`](/help/implement/vars/page-vars/server.md) variabeln.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena inkluderar servrar på din plats. Din organisation avgör vilka specifika dimensionsvärden du vill använda. Vissa organisationer använder `window.location.hostname`medan andra formulerar egna värden. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+Dimensionsobjekten inkluderar servrar på din plats. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Vissa organisationer använder `window.location.hostname`medan andra formulerar egna värden. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
