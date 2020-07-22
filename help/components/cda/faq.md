@@ -2,7 +2,7 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om Analytics för olika enheter
 translation-type: tm+mt
-source-git-commit: f8b70ada0a2003e43a841b6721aaa474aa9699f0
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -92,4 +92,4 @@ Om du vill byta CDA-identifieringsmetod ska du prata med din organisations Accou
 
 ## Hur hanterar Adobe unika gränser för en eVar som används vid fältbaserad sammanfogning?
 
-CDA hämtar eVar-dimensionsvärden innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot försökte använda det proffsen/eVar i ett Workspace-projekt kan du fortfarande se [(lågtrafikdimensionen)](/help/technotes/low-traffic.md) .
+CDA hämtar eVar-dimensionsobjekt innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot försökte använda det proffset/eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(låg trafik)](/help/technotes/low-traffic.md) .
