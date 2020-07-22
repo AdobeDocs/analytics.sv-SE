@@ -2,7 +2,7 @@
 title: Sida
 description: Sidans namn.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 1%
@@ -20,9 +20,9 @@ Dimensionen är relaterad till [platsavsnittet](site-section.md) och [serverdime
 
 Den här dimensionen hämtar data från [`pageName` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med hjälp av `pageName` variabeln. Om variabeln inte är definierad återgår den till att använda sidans URL. `pageName`
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena innehåller namnen på sidorna på din webbplats. Din organisation avgör vilka specifika dimensionsvärden du vill använda. Vissa organisationer använder direkt `document.title`medan andra formulerar en anpassad felsökningsfunktion. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+Dimensionsobjekten innehåller namnen på sidorna på din plats. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Vissa organisationer använder direkt `document.title`medan andra formulerar en anpassad felsökningsfunktion. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
 
 >[!NOTE]
 >
