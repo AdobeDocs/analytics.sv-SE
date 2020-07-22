@@ -3,7 +3,7 @@ title: Översikt över panelen Segmentjämförelse
 description: Lär dig hur du använder segmentjämförelsepanelen, en del av segmentanalysen i Analysis Workspace.
 keywords: Analysis Workspace;Segment IQ
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 4%
@@ -91,19 +91,19 @@ Till höger om måtttabellen finns en länkad visualisering. Du kan klicka på e
 
 ### Övre dimensioner
 
-Visar de mest statistiskt signifikanta dimensionsvärdena för alla dimensioner. Varje rad visar procentandelen för varje segment som har detta dimensionsvärde. Den här tabellen kan till exempel visa att 100 % av besökarna i segment A hade dimensionsobjektet Browser Type: Google, medan endast 19,6 % av Segment B hade denna dimensionspost. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
+Visar de mest statistiskt signifikanta dimensionsobjekten i alla dimensioner. Varje rad visar procentandelen för varje segment som har denna dimensionspost. Den här tabellen kan till exempel visa att 100 % av besökarna i segment A hade dimensionsobjektet Browser Type: Google, medan endast 19,6 % av Segment B hade denna dimensionspost. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
 
-Den här visualiseringen liknar frihandsritningar i Analysis Workspace. Om du vill ha mer detaljerad analys av ett visst dimensionsvärde för du muspekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera det specifika dimensionsvärdet. Om ett dimensionsvärde inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort det.
+Den här visualiseringen liknar frihandsritningar i Analysis Workspace. Om du vill göra en djupgående analys av ett visst dimensionsobjekt håller du pekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera den specifika dimensionsobjektet. Om en dimensionspost inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort den.
 
 >[!NOTE]
 >
->Dimensionsvärden som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
+>Dimensionsobjekt som läggs till i den här tabellen efter att segmentjämförelsen har slutförts får inte en Differenspoäng.
 
 ![Övre dimensioner](assets/top-dimension-item1.png)
 
 ### Dimensionsobjekt per segment
 
-Till höger om dimensionstabellen finns en länkad stapeldiagramvisualisering. Den visar alla dimensionsvärden som visas i ett stapeldiagram. Om du klickar på ett radobjekt i tabellen till vänster uppdateras visualiseringen till höger.
+Till höger om dimensionstabellen finns en länkad stapeldiagramvisualisering. Den visar alla visade dimensionsobjekt i ett stapeldiagram. Om du klickar på ett radobjekt i tabellen till vänster uppdateras visualiseringen till höger.
 
 ![Diagram över övre dimensioner](assets/top-dimension-item.png)
 
