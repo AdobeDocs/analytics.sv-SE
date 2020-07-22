@@ -2,7 +2,7 @@
 title: Prop
 description: En anpassad dimension som du kan använda vid rapportering.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Varje prop samlar in data från frågesträngen [`c1` - `c75` i bildbegäranden]
 
 AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `prop1` - `prop75`. Mer information om implementeringsriktlinjer finns i [beskrivningen](/help/implement/vars/page-vars/prop.md) i Implementera användarhandbok.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Eftersom utkast innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsvärden som finns för varje steg. Se till att du registrerar syftet med varje utkast och typiska dimensionsvärden i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+Eftersom utkast innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekt som finns för varje steg. Se till att du registrerar syftet med varje utkast och typiska dimensionsobjekt i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
 
 ## Värde för uttryck över eVars
 
