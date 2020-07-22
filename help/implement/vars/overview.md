@@ -3,17 +3,20 @@ title: Variabler, funktioner, metoder och plugin-program - översikt
 description: Lär dig vilka variabler du kan ta med i de data du skickar till Adobe för att förbättra rapporteringen.
 keywords: appmeasurement,variables,vars,configuration,page,implementation
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 3%
 
 ---
 
 
 # Variabler, funktioner, metoder och plugin-program - översikt
 
-Analytics ger ett antal variabler för att samla in analysdata. Variablerna i det här avsnittet är uppdelade i flera avsnitt:
+Analytics tillhandahåller ett antal variabler för att samla in Analytics-data. Variablerna i det här avsnittet är uppdelade i flera avsnitt:
 
 * **Sidvariabler** är värden som vanligtvis används direkt vid rapportering. Vanliga sidvariabler är bl.a. `props`, `eVars`och `events`.
-* **Konfigurationsvariabler** är inställningsvärden som hjälper till att säkerställa att rätt data når Adobe. Vanliga config-variabler är bl.a. `trackingServerSecure`, `charSet`och `linkTrackVars`. Konfigurationsvariabler fyller vanligtvis inte i dimensionsvärden.
+* **Konfigurationsvariabler** är inställningsvärden som hjälper till att säkerställa att rätt data når Adobe. Vanliga config-variabler är bl.a. `trackingServerSecure`, `charSet`och `linkTrackVars`. Konfigurationsvariabler fyller vanligtvis inte i dimensionsobjekt.
 * **Funktioner och metoder** är koddelar som utför en viss uppgift när de refereras. Vanliga funktioner är `t()`, `tl()`och `clearVars()`.
 
 ## Variabler och implementeringsmetoder
@@ -22,7 +25,7 @@ Adobe erbjuder flera sätt att implementera Adobe Analytics. På varje sida finn
 
 ## Operationsordning
 
-AppMeasurement-bibliotek som publiceras av Adobe Analytics följer en specifik ordning när data skickas till Adobe. Om du utför dessa åtgärder i fel ordning kan data vara ofullständiga.
+AppMeasurement-bibliotek som publiceras av Adobe Analytics följer en viss ordning när data skickas till Adobe. Om du utför dessa åtgärder i fel ordning kan data vara ofullständiga.
 
 1. Om webbplatsen använder ett datalager måste alla tillämpliga variabler fyllas i först. Mer information finns i [Datalager](../prepare/data-layer.md) .
 2. Använd datalagret för att fylla i Analytics-variabler. Om du använder Launch kan du enkelt utföra den här uppgiften genom att använda dataelement och sedan tilldela dataelementet till en variabel. Se [Dataelement](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html) i användarhandboken för Launch.
