@@ -2,7 +2,7 @@
 title: Operativsystemstyper
 description: Operativsystemet oavsett version.
 translation-type: tm+mt
-source-git-commit: ad206649488a1a2dead717cdfe53f4c630ba3f3b
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
@@ -16,8 +16,8 @@ Dimensionen &#39;Operativsystemtyper&#39; visar det operativsystem som besökare
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till en söktabell som är intern för Adobe. Uppslagsvärdet baseras på HTTP-huvudet i bildbegäranden `User-Agent` . Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen som den ska.
+Den här dimensionen refererar till en söktabell som är intern för Adobe. Uppslagsvärdet baseras på HTTP-huvudet i bildbegäranden `User-Agent` . Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen direkt.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärden är den typ av operativsystem som används. Exempel är `"Microsoft Windows"`, `"Apple Macintosh"`, `"Google Android"`och `"Apple iOS"`.
+Dimensionsobjekten är den typ av operativsystem som används. Exempel är `"Microsoft Windows"`, `"Apple Macintosh"`, `"Google Android"`och `"Apple iOS"`.
