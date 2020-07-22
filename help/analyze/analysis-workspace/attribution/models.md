@@ -1,8 +1,8 @@
 ---
 title: Attributmodeller och uppslagsfönster
-description: Hur olika typer av attribuering delar upp kredit mellan dimensionsvärden.
+description: Hur olika typer av attribuering delar upp kredit mellan dimensionsposter.
 translation-type: tm+mt
-source-git-commit: fdfc07702993510e53b28ccc172a48c5f079e23e
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '1483'
 ht-degree: 0%
