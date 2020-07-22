@@ -2,7 +2,7 @@
 title: Unika besökare
 description: Antalet unika personer (eller enheter).
 translation-type: tm+mt
-source-git-commit: 9704267cd3ebf480facd68f6cca44167b1d9686d
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Unika besökare
 
-Måttet&quot;Unika besökare&quot; visar antalet besökar-ID:n för dimensionsvärdet. Det är en av de vanligaste måtten som används för att fastställa trafik, eftersom det ger en översikt på hög nivå över hur populärt ett dimensionsvärde är. En besökare kan till exempel komma till din webbplats varje dag i en månad, men de räknas ändå som en unik besökare.
+Måttet&quot;Unika besökare&quot; visar antalet besökar-ID:n för dimensionsobjektet. Det är ett av de vanligaste måtten som används för att fastställa trafik, eftersom det ger en översikt på hög nivå över en dimensionsposts popularitet. En besökare kan till exempel komma till din webbplats varje dag i en månad, men de räknas ändå som en unik besökare.
 
 Om du använder [Enhetsövergripande analys](../cda/overview.md)får det här måttet namnet namnet&quot;Unika enheter&quot;.
 
@@ -20,11 +20,11 @@ Om du använder [Enhetsövergripande analys](../cda/overview.md)får det här m�
 
 Rapporter och Analytics innehåller alternativ för unika besökare varje dag, vecka, månad, kvartal och år. I stället för att räkna en unik besökare för hela tidsperioden, räknar unika besökare baserat på det valda mätvärdet. Du vill till exempel titta på unika besökare varje dag för din webbplats. Om en besökare kommer till er webbplats på morgonen och igen på natten räknas de som en enda unik besökare varje dag. Om en besökare kommer till er webbplats på måndag och igen på tisdag räknas de som två unika besökare varje dag.
 
-Analysis Workspace behandlar unika besökare baserat på rapportens detaljrikedom. Om du till exempel använder dimensionen [Dag](../dimensions/day.md) visas unika besökare varje dag för varje dimensionsvärde. För rapportsumman har den dock ersatts med unika besökare för friformstabellens datumintervall.
+Analysis Workspace behandlar unika besökare baserat på rapportens detaljrikedom. Om du till exempel använder dimensionen [Dag](../dimensions/day.md) , ser du unika besökare varje dag för varje dimensionspost. För rapportsumman har den dock ersatts med unika besökare för friformstabellens datumintervall.
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet unika besökar-ID:n för ett givet dimensionsvärde. Det använder flera avancerade mekanismer för att identifiera unika besökare, eftersom det finns flera sätt att identifiera dem. I följande tabell visas hur en besökare identifieras samt dess prioritet. Vissa träffar kan ha flera metoder för identifiering av besökare. I dessa fall används metoden med högre prioritet.
+Det här måttet räknar antalet unika besökar-ID:n för en given dimensionspost. Det använder flera avancerade mekanismer för att identifiera unika besökare, eftersom det finns flera sätt att identifiera dem. I följande tabell visas hur en besökare identifieras samt dess prioritet. Vissa träffar kan ha flera metoder för identifiering av besökare. I dessa fall används metoden med högre prioritet.
 
 | Använd order | Frågeparameter (samlingsmetod) | Presentera när |
 | --- | --- | --- |
