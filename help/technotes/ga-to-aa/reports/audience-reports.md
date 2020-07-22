@@ -2,7 +2,7 @@
 title: Målgruppsrapporter i Adobe Analytics
 description: Lär dig hur du skapar målgruppsbaserade rapporter med Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Målgruppsrapporter visar information om vilka typer av personer som besöker er webbplats.
 
-På den här sidan förutsätts att användaren har grundläggande kunskaper i Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för Google Analytics-användare](create-report.md) om du ännu inte känner till verktyget i Adobe Analytics.
+Den här sidan förutsätter att användaren har grundläggande kunskaper om att använda Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för Google Analytics-användare](create-report.md) om du ännu inte känner till verktyget i Adobe Analytics.
 
 ## Aktiva användare
 
-Aktiva användare visar det kumulativa antalet användare till din webbplats under de föregående 1, 7, 14 eller 28 dagarna. Även om Adobe inte har den exakta beräkning som används i Google Analytics, kan du använda måttet Unika besökare för att se antalet användare på din webbplats som inte har duplicerats baserat på det valda datumintervallet.
+Aktiva användare visar det kumulativa antalet användare till din webbplats under de föregående 1, 7, 14 eller 28 dagarna. Även om Adobe inte har den exakta beräkning som används i Google Analytics kan du använda måttet Unika besökare för att se antalet användare som inte duplicerats till din webbplats baserat på det valda datumintervallet.
 
 Så här får du ett linjediagram över unika besökare:
 
@@ -46,20 +46,20 @@ Se [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/c
 
 ## Målgrupper
 
-Målgruppsrapporten i Google Analytics kräver att målgrupper skapas. Publiken måste också konfigureras i Adobe via Adobe Audience Manager. Mer information finns i användarhandboken för Adobe Audience Manager.
+Målgruppsrapporten i Google Analytics kräver att man skapar målgrupper. Publiken måste också konfigureras i Adobe via Adobe Audience Manager. Mer information finns i användarhandboken för Adobe Audience Manager.
 
 ## Användarutforskaren
 
 Med rapporten User Explorer kan analytiker visa enskilda besök via anonyma identifierare. Adobe identifierar inte backend-ID:n utanför dataflöden, som är rådataexport på träffnivå.
 
-* Om du vill använda dessa data i Analysis Workspace kan du arbeta med en implementeringskonsult för att skicka det anonymiserade unika identifieringsvärdet för cookie till en eVar. Observera att detta bara fungerar med mindre implementeringar som består av mindre än 1 miljon unika besökare per månad.
+* Om dessa data efterfrågas i Analysis Workspace går det att samarbeta med en implementeringskonsult för att skicka det anonyma unika identifieringscookie-värdet till en eVar. Observera att detta bara fungerar med mindre implementeringar som består av mindre än 1 miljon unika besökare per månad.
 * Om data önskas i dataflöden är de sammanfogade kolumnerna `visid_high` och `visid_low` det vanligaste sättet att identifiera unika besökare. Läs mer om [datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Export.
 
 ## Demografiska rapporter och intresserapporter
 
 Demografiska data och intressedata ger information om webbplatsanvändarnas ålder, kön och intressen. Dessa data samlas in av Google via deras funktioner för spårning mellan webbplatser.
 
-Demografiska data och intressedata samlas inte in automatiskt av Adobe. Men om din organisation hämtar dessa data kan du använda kundattribut, en funktion i Adobe Experience Cloud-plattformen. Det ger fullständig kontroll över hur data ordnas efter attribut och är inte begränsat till enbart demografi eller intressen.
+Demografiska data och intressedata samlas inte in automatiskt av Adobe. Men om din organisation hämtar dessa data kan du använda kundattribut, en funktion i Adobe Experience Cloud Platform. Det ger fullständig kontroll över hur data ordnas efter attribut och är inte begränsat till enbart demografi eller intressen.
 
 Mer information finns i hjälpen om kundattribut.
 
@@ -109,7 +109,7 @@ Om du även vill ha ett linjediagram:
 
 ## Beteende - Täthet och senaste
 
-Frekvensrapporten och rapporten för senaste besök är ungefär lika med dimensionen för **besöksnummer** på arbetsytan för analyser.
+Frekvensrapporten och rapporten om senaste besök är ungefär lika med **besöksnummerdimensionen** i Analysis Workspace.
 
 1. På komponentmenyn letar du upp dimensionen **Besök nummer** och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
@@ -129,11 +129,11 @@ Mer information finns i [Tidsåtgång per besök](/help/components/dimensions/ti
 
 Det finns flera primära dimensioner i rapporten för webbläsare och operativsystem.
 
-* Den primära dimensionen för **webbläsaren** är även tillgänglig som en dimension i Analysis Workspace.
-* Den primära dimensionen för **operativsystemet** är också tillgänglig som en dimension i Analysis Workspace.
+* Den primära dimensionen för **webbläsaren** är även tillgänglig i Analysis Workspace som en dimension.
+* Det primära **operativsystemet** är också tillgängligt i Analysis Workspace som en dimension.
 * Den primära dimensionen **Skärmupplösning** är tillgänglig i Analysis Workspace som dimension för **Bildskärmsupplösning** .
-* Den primära dimensionen **Skärmfärger** är tillgänglig i Analysis Workspace som dimension för **färgdjup** .
-* Den primära dimensionen för **Flash-versionen** är inte tillgänglig i Adobe Analytics, men dessa data kan samlas in av en eVar om det behövs.
+* Den primära dimensionen **Skärmfärger** är tillgänglig i Analysis Workspace som mått för **färgdjup** .
+* Den primära dimensionen i **Flash-versionen** är inte tillgänglig i Adobe Analytics, men dessa data kan samlas in av en eVar om det behövs.
 
 1. På komponentmenyn letar du upp den önskade dimensionen ovan och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
@@ -172,9 +172,9 @@ Rapporten för mobila enheter är ungefär densamma som dimensionen för **mobil
 
 Mer information finns i [Mobile device](/help/components/dimensions/mobile-dimensions.md) dimension i användarhandboken för komponenter.
 
-## Egen
+## Anpassad
 
-Anpassade rapporter definieras per implementering. Samarbeta med er organisations Analytics-administratör och/eller implementeringskonsult för att tolka dessa rapporter. Vanligtvis underhåller en organisation ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) för att hålla reda på anpassade variabelvärden och hur de fylls i.
+Anpassade rapporter definieras per implementering. Samarbeta med Analytics-administratören och/eller implementeringskonsulten för att tolka rapporterna. Vanligtvis underhåller en organisation ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) för att hålla reda på anpassade variabelvärden och hur de fylls i.
 
 ## Benchmarking
 
@@ -185,6 +185,6 @@ Tack vare analysrapporter kan ni se hur olika aspekter av era data jämfört med
 Flödesrapporten är tillgänglig på båda plattformarna. Så här skapar du en flödesrapport:
 
 1. Klicka på visualiseringsikonen till vänster och dra en Flow-visualisering till arbetsytan ovanför frihandstabellen
-2. Leta reda på **siddimensionen** och klicka sedan på pilikonen för att visa sidvärden. Dimensionsvärden är gula.
+2. Leta reda på **siddimensionen** och klicka sedan på pilikonen för att visa sidvärden. Dimensionsobjekten är gulfärgade.
 3. Leta reda på det önskade sidvärdet som du vill börja med och dra det till utrymmet som är märkt &quot;Dimension eller item&quot; i mitten
 4. Den här flödesrapporten är interaktiv. Klicka på något av värdena för att utöka flödena till efterföljande eller föregående sidor. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
