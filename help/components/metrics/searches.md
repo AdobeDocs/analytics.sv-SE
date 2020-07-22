@@ -2,17 +2,17 @@
 title: Sökningar
 description: Antal gånger en träff matchade externa sökvillkor.
 translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Sökningar
 
-Måttet Sökningar visar antalet träffar som matchar Adobes externa sökidentifiering. Det här måttet är användbart när du vill titta på dimensionsvärden som inte är sökbara och se hur de har bidragit till sökmotortrafiken.
+Måttet Sökningar visar antalet träffar som matchar Adobes externa sökidentifiering. Det här måttet är användbart när du vill titta på dimensionsobjekt som inte är sökningar och se hur de bidrog till sökmotortrafiken.
 
 ## Hur det här måttet beräknas
 
