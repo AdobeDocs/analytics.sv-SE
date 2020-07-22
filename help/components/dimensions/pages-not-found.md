@@ -2,7 +2,7 @@
 title: Sidorna hittades inte
 description: URL:er som returnerade ett fel på din plats.
 translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -23,6 +23,6 @@ Dimensionen &quot;Sidor som inte hittas&quot; visar URL:er som innehåller ett f
 
 Den här dimensionen hämtar data från [`pageType` - och `g` frågesträngarna](/help/implement/validate/query-parameters.md) i bildbegäranden. Om `pageType` frågesträngen är lika med `errorPage`, spelas `g` frågesträngen (sid-URL) in. AppMeasurement samlar in dessa data med hjälp av [`pageType`](/help/implement/vars/page-vars/pagetype.md) variabeln. Om `pageType` variabeln inte är definierad eller inställd på något annat än `errorPage`samlas inga data för den här dimensionen in.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena innehåller URL:er för sidorna på webbplatsen där ett fel uppstod.
+Dimensionsobjekten inkluderar URL:er för sidorna på din webbplats där ett fel uppstod.
