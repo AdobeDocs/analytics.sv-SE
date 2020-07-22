@@ -2,7 +2,7 @@
 title: Mobila dimensioner
 description: Dimensioner baserade på användar-agent-strängen för enheten.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 0%
@@ -24,17 +24,17 @@ Dessa dimensioner hänvisar till interna sökregler för Adobe. Uppslagsvärdet 
 
 >[!NOTE]
 >
->Dimensionsvärden som är märkta `"None"` är icke-mobila enheter. Om du vill ha en rapport som bara innehåller mobila enheter drar du dimensionen &quot;Mobil enhet&quot; till segmentområdet på arbetsytan.
+>Dimensionsobjekt som är märkta `"None"` är icke-mobila enheter. Om du vill ha en rapport som bara innehåller mobila enheter drar du dimensionen &quot;Mobil enhet&quot; till segmentområdet på arbetsytan.
 
-* **Stöd** för mobilljud: Bestämmer vilka filformat som enheten kan spela upp. Exempelvärdena inkluderar `"MP3"`, `"AAC"`och `"MIDI Monophonic"`. Värdena i denna dimension utesluter inte varandra. en enda träff kan tilldelas flera dimensionsvärden.
-* **Mobiloperatör**: Om användaragenten innehåller en transportörspecifik enhet är transportören ett dimensionsvärde. Exempelvärden är `"Reliance Jio"`, `"Airtel"`, `"Vodafone"`och `"Verizon"`.
+* **Stöd** för mobilljud: Bestämmer vilka filformat som enheten kan spela upp. Exempelvärdena inkluderar `"MP3"`, `"AAC"`och `"MIDI Monophonic"`. Värdena i denna dimension utesluter inte varandra. en enda träff kan attribuera till flera dimensionsobjekt.
+* **Mobiloperatör**: Om användaragenten innehåller en transportörspecifik enhet är transportören en dimensionspost. Exempelvärden är `"Reliance Jio"`, `"Airtel"`, `"Vodafone"`och `"Verizon"`.
 * **Mobil färgdjup**: Färgdjupet för den mobila enheten, i bitar.
-* **Stöd** för Mobile cookie: Avgör om den mobila enheten stöder cookies. Den här rapporten anger inte om webbläsaren accepterar cookies. Dimensionsvärdena inkluderar `"Supported"`, `"Not supported"`och `"Unknown"`.
+* **Stöd** för Mobile cookie: Avgör om den mobila enheten stöder cookies. Den här rapporten anger inte om webbläsaren accepterar cookies. Dimensionsobjekten inkluderar `"Supported"`, `"Not supported"`och `"Unknown"`.
 * **Mobil enhet**: Den mobila enhet som besökaren använder.
-* **Mobilenhetsnummer**: Avgör om den mobila enheten skickar numret. Dimensionsvärdena inkluderar `"Supported"`, `"Not supported"`och `"Unknown"`.
+* **Mobilenhetsnummer**: Avgör om den mobila enheten skickar numret. Dimensionsobjekten inkluderar `"Supported"`, `"Not supported"`och `"Unknown"`.
 * **Typ** av mobil enhet: Typ av mobil enhet. Exempelvärden är `"Mobile phone"`, `"Tablet"`, `"Media player"`och `"Gaming console"`.
 * **Mobil DRM**: Den typ av DRM som den mobila enheten stöder. Exempelvärdena inkluderar `"DRM OMA forward"`, `"DRM OMA combined delivery"`och `"DRM OMA separate delivery"`.
-* **Stöd** för mobilbilder: De typer av bilder som stöds av en mobil enhet. Exempelvärdena inkluderar `"PNG"`, `"JPEG"`och `"GIF 87"`. Värdena i denna dimension utesluter inte varandra. en enda träff kan tilldelas flera dimensionsvärden.
+* **Stöd** för mobilbilder: De typer av bilder som stöds av en mobil enhet. Exempelvärdena inkluderar `"PNG"`, `"JPEG"`och `"GIF 87"`. Värdena i denna dimension utesluter inte varandra. en enda träff kan attribuera till flera dimensionsobjekt.
 * **Mobilinformationstjänster**: De typer av nyhetstjänster som stöds av enheten. Senaste enheter rapporterar vanligtvis inte den här informationen.
 * **Mobil Java VM**: De versioner av Java som enheten stöder.
 * **Dekoration** av mobilpost: Avgör om enheten stöder Decomail, en funktion som tidigare var populär på japanska enheter.
@@ -48,7 +48,7 @@ Dessa dimensioner hänvisar till interna sökregler för Adobe. Uppslagsvärdet 
 * **Höjd på** mobilskärm: Skärmens höjd i pixlar. Observera att iPhone alltid rapporterar `"480"` på grund av att det inte går att fastställa iPhone-enhetens version. Se avsnittet nedan om hur du avgör iPhone-enhetens version.
 * **Skärmstorlek** för mobiler: Den mobila enhetens fullständiga dimensioner i pixlar. Den rapporterade skärmstorleken anger inte enhetens orientering. Oavsett skärmorientering har varje enhet en fast skärmupplösning i rapporten. Storleken baseras på forskning som avgör vilken orientering som är mer sannolik. Du kan se storlekar som `"768x1024"` och `"1024x768"` i samma rapport där varje storlek representerar en eller flera olika enheter.
 * **Bredd** på mobilskärm: Skärmens bredd i pixlar.
-* **Stöd** för mobilvideo: De videofilformat och kodekar som den mobila enheten stöder. Det finns flera dimensionsvärden för olika kodekar av MP4- och 3GPP-filer. Värdena i denna dimension utesluter inte varandra. en enda träff kan tilldelas flera dimensionsvärden.
+* **Stöd** för mobilvideo: De videofilformat och kodekar som den mobila enheten stöder. Det finns flera dimensionsobjekt för olika kodekar av MP4- och 3GPP-filer. Värdena i denna dimension utesluter inte varandra. en enda träff kan attribuera till flera dimensionsobjekt.
 
 ## Separera iPhone efter modell eller version
 
