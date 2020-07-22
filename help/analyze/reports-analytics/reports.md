@@ -2,7 +2,7 @@
 title: Rapporter
 description: Dimensionerna och måtten som Rapporter och Analytics använder för varje rapport.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -88,19 +88,19 @@ Innehåller rapporter om äldre mobilrapporter. Dessa rapporter baserar sina dat
 
 Innehåller rapporter som gör att du kan se sökdata för besökare.
 
-* Nästa sidflöde: Använder en flödesrapport på dimensionsvärdet för den översta sidan. Banvyer liknar [instanser](/help/components/metrics/instances.md). Du kan ändra det rapporterade dimensionsvärdet. En liknande rapport i Analysis Workspace är tillgänglig med hjälp av en [Flow-visualisering](../analysis-workspace/visualizations/c-flow/flow.md).
-* Nästa sida: Tar det översta siddimensionsvärdet och visar dig de nästa sidor besökarna besöker.
-* Föregående sidflöde: Använder en flödesrapport på det översta siddimensionsvärdet En liknande rapport i Analysis Workspace är tillgänglig med hjälp av en [flödesvisualisering](../analysis-workspace/visualizations/c-flow/flow.md).
-* Föregående sida: Tar det översta siddimensionsvärdet och visar de föregående sidorna besökarna kom från.
-* Utfall: Gör att du kan välja siddimensionsvärden i steg, och visar andelen personer som inte följde och följde den banan. En liknande rapport i Analysis Workspace finns tillgänglig med hjälp av en [utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
-* Fullständiga sökvägar: Visar enskilda sökvägar som dimensionsvärden. Pensionärer i Analysis Workspace; använd [Flow-visualisering](../analysis-workspace/visualizations/c-flow/flow.md) i stället.
+* Nästa sidflöde: Använder en flödesrapport på dimensionsobjektet för den översta sidan. Banvyer liknar [instanser](/help/components/metrics/instances.md). Du kan ändra den rapporterade dimensionsobjektet. En liknande rapport i Analysis Workspace är tillgänglig med hjälp av en [Flow-visualisering](../analysis-workspace/visualizations/c-flow/flow.md).
+* Nästa sida: Tar det översta sidobjektet och visar dig de nästa sidor besökarna besöker.
+* Föregående sidflöde: Använder en flödesrapport på dimensionsobjektet för den översta sidan En liknande rapport i Analysis Workspace är tillgänglig med hjälp av en [flödesvisualisering](../analysis-workspace/visualizations/c-flow/flow.md).
+* Föregående sida: Tar det översta sidobjektet och visar de föregående sidorna besökarna kom från.
+* Utfall: Gör att du kan välja siddimensionsobjekt i steg, och visar andelen personer som inte följde den banan. En liknande rapport i Analysis Workspace finns tillgänglig med hjälp av en [utfallsvisualisering](../analysis-workspace/visualizations/fallout/fallout-flow.md).
+* Fullständiga sökvägar: Visar enskilda sökvägar som dimensionsobjekt. Pensionärer i Analysis Workspace; använd [Flow-visualisering](../analysis-workspace/visualizations/c-flow/flow.md) i stället.
 * PathFinder: Innehåller flera typer av rapporter som gör att du kan analysera banor (som tagits bort i Analysis Workspace).
 * Banlängd: Använder dimensionen för [besöksdjup](/help/components/dimensions/visit-depth.md) .
 * Sidanalys
-   * Sidsammanfattning: Tar det översta siddimensionsvärdet och visar en trendvy. Visar även startpunkter, tidigare sidor, slutpunkter och nästa sidor för det övre siddimensionsvärdet.
+   * Sidsammanfattning: Tar det översta sidobjektet och visar en trendvy. Visar även startpunkter, tidigare sidor, slutpunkter och nästa sidor för den översta sidobjektet.
    * Läs in igen: Använder [siddimensionen](/help/components/dimensions/page.md) med måttet [Läser in igen](/help/components/metrics/reloads.md) .
    * Tid som använts på sidan: Använder den [tid som har använts på sidan - paketerad](/help/components/dimensions/time-spent-on-page.md) dimension.
-   * Klicka på sidan: Tar det översta siddimensionsvärdet och visar hur många klick det tog att gå till den sidan under ett visst besök.
+   * Klicka på sidan: Tar den översta sidobjektet och visar antalet klick som det tog att gå till den sidan vid ett visst besök.
 * Poster och utträden
    * Anmälningssidor: Använder dimensionen för [anmälningssidor](/help/components/dimensions/entry-dimensions.md) .
    * Ursprungliga startsidor: Använder [startsidans ursprungliga](/help/components/dimensions/entry-dimensions.md) dimension.
@@ -171,7 +171,7 @@ Innehåller rapporter om vem som besöker er webbplats.
    * USA: Använder dimensionen för [USA](/help/components/dimensions/us-states.md) .
    * US DMA: Använder DMA-dimensionen i [USA](/help/components/dimensions/us-dma.md) .
 * Språk: Använder dimensionen [Språk](/help/components/dimensions/language.md) .
-* Tidszoner: Använder tidszonsdimensionen (pensionerad i Analysis Workspace). Dimensionsvärden är GMT-förskjutningen för träffen.
+* Tidszoner: Använder tidszonsdimensionen (pensionerad i Analysis Workspace). Dimensionsobjekt är GMT-förskjutningen för träffen.
 * Domän: Använder [domändimensionen](/help/components/dimensions/domain.md) .
 * Domän på översta nivån: Använder domändimensionen på den översta nivån (pensionerad i Analysis Workspace). Den grupperar [domändimensionen](/help/components/dimensions/domain.md) i kategorier på högre nivå, vanligtvis efter domänens land.
 * Teknik: Mappen innehåller rapporter om vad besökaren använde för att få åtkomst till din plats.
@@ -184,12 +184,12 @@ Innehåller rapporter om vem som besöker er webbplats.
    * Skärmfärgdjup: Använder [färgdjupsdimensionen](/help/components/dimensions/color-depth.md) .
    * Bildskärmsupplösning: Använder dimensionen [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md) .
    * Java: Använder den [Java-aktiverade](/help/components/dimensions/java-enabled.md) dimensionen.
-   * JavaScript: Använder den JavaScript-aktiverade dimensionen (som tagits bort i Analysis Workspace). Dimensionsvärdena är &#39;Enabled&#39;, &#39;Disabled&#39; eller &#39;Unknown&#39;, beroende på om JavaScript är aktiverat i webbläsaren.
-   * JavaScript-version: använder JavaScript-versionsdimensionen (som tagits bort i Analysis Workspace). Dimensionsvärden visar vilken version av JavaScript som webbläsaren använder.
+   * JavaScript: Använder den JavaScript-aktiverade dimensionen (som tagits bort i Analysis Workspace). Dimensionsobjekten är &#39;Enabled&#39;, &#39;Disabled&#39; eller &#39;Unknown&#39;, beroende på om JavaScript är aktiverat i webbläsaren.
+   * JavaScript-version: använder JavaScript-versionsdimensionen (som tagits bort i Analysis Workspace). Dimensionsobjekt visar vilken version av JavaScript som webbläsaren använder.
    * Cookies: Använder [Cookie-supportdimensionen](/help/components/dimensions/cookie-support.md) .
    * Anslutningstyper: Använder dimensionen [Anslutningstyp](/help/components/dimensions/connection-type.md) .
    * Mobiloperatör: Använder dimensionen [Mobiloperatör](/help/components/dimensions/mobile-dimensions.md) .
-* Besökarstatus: Använder dimensionen State (pensionerad i Analysis Workspace). Dimensionsvärden härstammar från [`state`](../../implement/vars/page-vars/state.md) variabeln.
+* Besökarstatus: Använder dimensionen State (pensionerad i Analysis Workspace). Dimensionsobjekt härstammar från [`state`](../../implement/vars/page-vars/state.md) variabeln.
 * Besökarens postnummer: Använder dimensionen för [postnummer](/help/components/dimensions/zip-code.md) .
 
 ## Anpassad konvertering
@@ -204,7 +204,7 @@ Innehåller rapporter som är specifika för implementeringen. Anpassade trafikr
 
 Innehåller rapporter som omfattar [marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 
-* Översiktsrapport för kanal: En anpassad rapport som är specifik för Reports &amp; Analytics. Marknadsföringskanaler används som dimensionsvärden, med mätvärden som använder första eller sista beröringsattribuering.
+* Översiktsrapport för kanal: En anpassad rapport som är specifik för Reports &amp; Analytics. Marknadsföringskanaler används som dimensionsposter, med mätvärden som använder första eller sista beröringsattribuering.
 * Första beröringskanalen: Använder dimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-channel.md) .
 * Första beröringskanaldetalj: Använder detaljdimensionen för den [första beröringskanalen](/help/components/dimensions/first-touch-detail.md) .
 * Senaste pekkanal: Använder dimensionen för den [sista beröringskanalen](/help/components/dimensions/last-touch-channel.md) .
