@@ -2,7 +2,7 @@
 title: Besökare med Experience Cloud ID
 description: Antalet unika besökare som använder Adobe Experience Cloud ID-tjänsten.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 4%
@@ -38,4 +38,4 @@ Genom att lägga till det beräknade måttet i rapporten kan du sortera sidrappo
 
 ![Sidor utan ID-tjänst](assets/metric-mcvid3.png)
 
-Observera att dimensionsvärdet &quot;Produktsnabbvyer&quot; inte implementeras korrekt med identitetstjänsten. Du kan samarbeta med lämpliga team inom organisationen för att uppdatera dessa sidor så snart som möjligt. Du kan skapa en liknande rapport med vilken typ av dimension som helst, till exempel [webbläsartyp](../dimensions/browser-type.md), [platsavsnitt](../dimensions/site-section.md)eller [eVar](../dimensions/evar.md).
+Observera att dimensionsobjektet&quot;Produktsnabbvyer&quot; inte implementeras korrekt med identitetstjänsten. Du kan samarbeta med lämpliga team inom organisationen för att uppdatera dessa sidor så snart som möjligt. Du kan skapa en liknande rapport med vilken typ av dimension som helst, till exempel [webbläsartyp](../dimensions/browser-type.md), [platsavsnitt](../dimensions/site-section.md)eller [eVar](../dimensions/evar.md).
