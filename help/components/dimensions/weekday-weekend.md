@@ -2,7 +2,7 @@
 title: Veckodag/Veckoslut
 description: Fastställer om träffen inträffade under en veckodag eller en helg.
 translation-type: tm+mt
-source-git-commit: 05ea2778cd5cd324c660fd0f1d2ac02373829f0f
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -18,6 +18,6 @@ Dimensionen &#39;Veckodag/helg&#39; ger insikter om huruvida träffen inträffad
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Den här dimensionen innehåller alltid exakt två dimensionsvärden: `"Weekday"` och `"Weekend"`. Dimensionsvärdet `"Weekday"` gäller alla träffar måndag till fredag, medan dimensionsvärdet `"Weekend"` gäller alla träffar på lördag och söndag.
+Den här dimensionen innehåller alltid exakt två dimensionsobjekt: `"Weekday"` och `"Weekend"`. Dimensionsobjektet `"Weekday"` gäller alla träffar måndag till fredag, medan dimensionsobjektet `"Weekend"` gäller alla träffar på lördag och söndag.
