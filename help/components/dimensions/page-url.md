@@ -2,7 +2,7 @@
 title: Sidans URL
 description: Sidans URL.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
@@ -28,6 +28,6 @@ Adobe rekommenderar att du anger en eVar för den sammanfogade strängen `window
 
 Om du vill att eVar ska matcha sidans URL-mått exakt i Data warehouse kan du använda [dynamiska variabler](/help/implement/vars/page-vars/dynamic-variables.md) och ställa in eVar på `D=g` varje träff. Observera att den här metoden inte fungerar för anpassade länkträffar eftersom sidans URL rensas för alla [`tl()`](/help/implement/vars/functions/tl-method.md) anrop.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena inkluderar URL:er för sidorna på din webbplats.
+Dimensionsobjekten inkluderar URL:er för sidorna på din plats.
