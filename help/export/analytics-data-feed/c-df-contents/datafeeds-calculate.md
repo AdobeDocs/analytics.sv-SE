@@ -5,7 +5,7 @@ title: Beräkna mätvärden
 topic: Reports and analytics
 uuid: a45ea5bb-7c83-468f-b94a-63add78931d7
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Träffarna måste först grupperas efter besök och sedan sorteras efter träffn
 1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num`och `visit_start_time_gmt`.
 2. Sortera efter det här sammanfogade värdet och använd sedan en andra sortering efter `visit_page_num`.
 3. Om en träff inte är den sista vid ett besök tar du bort `post_cust_hit_time` värdet från den efterföljande träffens `post_cust_hit_time` värde.
-4. Detta är den tid (i sekunder) som träffen tar. Filter kan användas för att fokusera på dimensionsvärden och händelser.
+4. Detta är den tid (i sekunder) som träffen tar. Filter kan användas för att fokusera på dimensionsobjekt eller händelser.
 
 ## Beställningar, enheter och intäkter
 
