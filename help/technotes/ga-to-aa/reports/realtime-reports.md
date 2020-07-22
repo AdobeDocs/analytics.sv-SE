@@ -2,7 +2,7 @@
 title: Realtidsrapporter i Adobe Analytics
 description: Lär dig hur du kan dra igång realtidsrapporter i Adobe Analytics som är avsedda för användare som är mer bekanta med Google Analytics.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Händelser i realtid talar om vilka händelser som inträffar mest på er webbpl
 
 >[!NOTE]
 >
->När du använder anpassade händelser i realtidsrapporter måste dimensionsvärdet definieras i samma träff som den anpassade händelsen. Om du till exempel visar en anpassad registreringshändelse för dimensionen Referensdomän, returneras inga data utan ytterligare implementering. Eftersom referensdomänen bara visas vid den första träffen och en anpassad händelse normalt visas senare under besöket, kan data inte kopplas till realtidsrapporter. Dessa data är tillgängliga via Analysis Workspace med standardfördröjning, som vanligtvis är 30-90 minuter.
+>När du använder anpassade händelser i realtidsrapporter måste dimensionsobjektet definieras i samma träff som den anpassade händelsen. Om du till exempel visar en anpassad registreringshändelse för dimensionen Referensdomän, returneras inga data utan ytterligare implementering. Eftersom referensdomänen bara visas vid den första träffen och en anpassad händelse normalt visas senare under besöket, kan data inte kopplas till realtidsrapporter. Dessa data är tillgängliga via Analysis Workspace med standardfördröjning, som vanligtvis är 30-90 minuter.
 
 ## Konverteringar i realtid
 
