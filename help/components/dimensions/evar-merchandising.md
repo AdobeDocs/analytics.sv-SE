@@ -2,10 +2,10 @@
 title: eVar (Merchandising)
 description: Egna variabler som är kopplade till produktdimensionen.
 translation-type: tm+mt
-source-git-commit: 1968162d856b6a74bc61f22f2e5a6b1599d04c79
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -43,12 +43,12 @@ Om du har aktiverat varuexponering för eVar i det föregående exemplet `"goggl
 
 Se [Merchandising eVars](/help/implement/vars/page-vars/evar-merchandising.md) för implementeringsinstruktioner.
 
-## Instanser av försäljningsvariabler
+## Instanser av marknadsföringsvariabler
 
 Instansmåttet [rekommenderas inte för](../metrics/instances.md) försäljningsvariabler.
 
 * För variabler som används i produktsyntax ökas inte antalet instanser alls.
-* För marknadsföringsvariabler som använder konverteringsvariabelsyntax räknas instanser varje gång eVar anges. Den kopplar dock till dimensionsvärdet `"None"` såvida inte allt av följande inträffar i samma träff:
+* För marknadsföringsvariabler som använder konverteringsvariabelsyntax räknas instanser varje gång eVar anges. Den kopplar dock till dimensionsobjektet `"None"` såvida inte allt av följande inträffar i samma träff:
    * eVar för varuexponering anges med ett värde.
    * Variabeln `products` definieras med ett värde.
    * En bindningshändelse har angetts.
