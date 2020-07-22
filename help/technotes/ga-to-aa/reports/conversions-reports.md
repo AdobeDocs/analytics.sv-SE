@@ -2,7 +2,7 @@
 title: Konverteringsrapporter i Adobe Analytics
 description: Lär dig hur du använder konverteringsrapporter i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 6fc8145d9a94427ec942d55776b6029f7dd6f79c
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 0%
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 En &#39;konvertering&#39; är en åtgärd som en besökare utför på er webbplats som direkt översätts till organisationens nyckelindikatorer. Konverteringsrapporter visar detaljer om hur besökare konverterar.
 
-På den här sidan förutsätts att användaren har grundläggande kunskaper i Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för Google Analytics-användare](create-report.md) om du ännu inte känner till verktyget i Adobe Analytics.
+Den här sidan förutsätter att användaren har grundläggande kunskaper om att använda Analysis Workspace. Se [Skapa en grundläggande rapport i Analysis Workspace för Google Analytics-användare](create-report.md) om du ännu inte känner till verktyget i Adobe Analytics.
 
 ## Målrapporter
 
-Goals ger Google Analytics-användare ett sätt att definiera konverteringen av en webbplats. De är standardmetoden för att skapa kanaler, omvänt beteendeflöde, flerkanalskanaler och attribuering. Mål i Google Analytics är inte retroaktiva och kan bara ställas in på administratörssidan. Dessutom baseras de endast på en sida, en händelse, en använd tid eller ett genomsnittligt antal sidor.
+Goals ger Google Analytics-användare ett sätt att definiera konverteringen av en webbplats. De är standardmetoden för att skapa kanaler, omvänt beteendeflöde, flerkanalskanaler och attribuering. Mål i Google Analytics är inte retroaktiva och kan bara ställas in på adminsidan. Dessutom baseras de endast på en sida, en händelse, en använd tid eller ett genomsnittligt antal sidor.
 
-I Adobe Analytics krävs inte konceptet med ett mål eftersom mätvärden kan användas i alla sammanhang. Så länge implementeringen klarar de händelser du vill spåra kan du justera alla konverteringsrapporter och omedelbart få resultat för historiska data.
+I Adobe Analytics behövs inte konceptet med ett mål eftersom mätvärden kan användas i alla sammanhang. Så länge implementeringen klarar de händelser du vill spåra kan du justera alla konverteringsrapporter och omedelbart få resultat för historiska data.
 
 ### Trattvisualisering
 
 Med trattvisualiseringsrapporten kan analytiker fokusera på en viss serie steg som krävs för konvertering. Innan en besökare gör ett inköp måste han eller hon till exempel gå till kundvagnen, fakturerings- och leveranssidan, betalningssidan och ordergranskningssidan.
 
-I Analysis Workspace kan dessa data visas med hjälp av Utfallsvisualisering.
+I Analysis Workspace kan dessa data visas med hjälp av utfallsvisualiseringen.
 
 1. Klicka på visualiseringsikonen till vänster och dra en utfallsvisualisering till arbetsytan ovanför frihandstabellen
 2. Klicka på komponentikonen till vänster och leta upp dimensionen **Sidor** .
-3. Klicka på pilikonen bredvid siddimensionen för att visa sidvärden. Dimensionsvärden är gula.
+3. Klicka på pilikonen bredvid siddimensionen för att visa sidvärden. Dimensionsobjekten är gulfärgade.
 4. Leta reda på sidan som du vill ska fungera som första kontaktyta och dra den till utrymmet med etiketten Lägg till pekpunkt i visualiseringen.
 5. Fortsätt lägga till önskade kontaktytor genom att dra sidvärden till visualiseringen.
 
@@ -40,7 +40,7 @@ Utfallsvisualiseringen är inte begränsad till bara siddimensionen. Alla dimens
 
 ## E-handelsrapporter
 
-E-handelsrapporter används vanligtvis av webbplatser som säljer produkter eller tjänster för att mäta beställningar och intäkter på inköpta artiklar. Den här funktionen är tillgänglig i Adobe Analytics och kallas för produktrapporter.
+E-handelsrapporter används vanligtvis av webbplatser som säljer produkter eller tjänster för att mäta beställningar och intäkter på inköpta artiklar. Den här funktionen finns i Adobe Analytics och kallas för produktrapporter.
 
 Både e-handelsrapporter i Google Analytics och produktrapporter i Adobe Analytics kräver anpassade implementeringsändringar. Mer information finns i [produktdimensionen](/help/components/dimensions/product.md) i användarhandboken för komponenter.
 
@@ -50,18 +50,18 @@ Flerkanaliga trattrapporter ger ytterligare marknadsföringskanaldata utöver va
 
 >[!NOTE]
 >
-> Användningen av flerkanalsrapporter i Adobe Analytics kräver både konfiguration av marknadsföringskanaler och en anpassad implementering för att passa produktvariabeln och inköpshändelsen. Adobe rekommenderar att du arbetar med en implementeringskonsult om dessa funktioner ännu inte har konfigurerats för rapportsviten.
+> Användningen av flerkanalsrapporter i Adobe Analytics kräver både installation av marknadsföringskanaler och en anpassad implementering för att passa produktvariabeln och inköpshändelsen. Adobe rekommenderar att du arbetar med en implementeringskonsult om dessa funktioner ännu inte har konfigurerats för rapportsviten.
 
 ### Flerkanals - assisterade konverteringar
 
-Med hjälp av konverteringar visas hur många gånger varje kanal hanteras med en konvertering. I Analysis Workspace kan **Order Assists** -måttet användas.
+Med hjälp av konverteringar visas hur många gånger varje kanal hanteras med en konvertering. I Analysis Workspace kan du använda **orderassistenternas** mått.
 
 1. På menyn Komponenter letar du reda på dimensionen för **marknadsföringskanalen** och drar den till det stora frihandsritabellområdet med etiketten &#39;Släpp en dimension här&#39;.
 2. Ersätt den automatiskt skapade metriska rubriken **Förekomster** genom att dra **ordningsassistentmåttet** över den. Ytterligare mätvärden kan dras till arbetsytan om det behövs.
 
 ### Flerkanals - övre konverteringsbanor
 
-I rapporten med de översta konverteringssökvägarna visas de översta kanalsökvägarna som en användare tar innan konverteringen. Analysis Workspace använder en flödesrapport för att visualisera de översta konverteringssökvägarna.
+I rapporten med de översta konverteringssökvägarna visas de översta kanalsökvägarna som en användare tar innan konverteringen. Analysis Workspace använder en flödesrapport för att visualisera toppkonverteringsbanor.
 
 1. Klicka på panelikonen till vänster och dra en attributpanel ovanför frihandstabellen.
 2. Klicka på ikonen Komponenter till vänster, leta upp dimensionen för **marknadsföringskanalen** och dra den till rutan Lägg till dimension.
@@ -75,7 +75,7 @@ Denna flödesvisualisering är interaktiv. Klicka på varje kanal för att utök
 
 ### Flerkanals - tidsfördröjning
 
-I tidsfördröjningsrapporten visas hur lång tid det tog för en besökare att konvertera på webbplatsen. I Analysis Workspace är dessa data tillgängliga med dimensionen **Days Before First Purchase** . Den är bara tillgänglig i samband med en korrekt implementerad köphändelse.
+I tidsfördröjningsrapporten visas hur lång tid det tog för en besökare att konvertera på webbplatsen. I Analysis Workspace är dessa data tillgängliga med dimensionen **Dagar före första köp** . Den är bara tillgänglig i samband med en korrekt implementerad köphändelse.
 
 1. På menyn Komponenter letar du upp dimensionen **Dagar före första köp** och drar den till det stora frihandsritbordet med etiketten &#39;Släpp en dimension här&#39;.
 2. Dra de önskade måtten till arbetsytan tillsammans med det automatiskt skapade **förekomstmåttet** . Mer information om hur du får tillgång till respektive mätvärde finns i [översättningsguiden](common-metrics.md) för mätvärden.
@@ -91,7 +91,7 @@ Adobe rekommenderar att du använder denna dimension tillsammans med anpassade h
 
 ### Flera kanaler - längd på bana
 
-I rapporten om sökvägslängd visas antalet kanaler som berörts före en konverteringshändelse. I Analysis Workspace innehåller panelen Attribution dessa data i en av dess visualiseringar.
+I rapporten om sökvägslängd visas antalet kanaler som berörts före en konverteringshändelse. I Analysis Workspace innehåller attributpanelen dessa data i en av dess visualiseringar.
 
 1. Klicka på ikonen Paneler till vänster och dra en attributpanel ovanför frihandstabellen
 2. Klicka på ikonen Komponenter till vänster, leta upp dimensionen för **marknadsföringskanalen** och dra den till rutan Lägg till dimension.
