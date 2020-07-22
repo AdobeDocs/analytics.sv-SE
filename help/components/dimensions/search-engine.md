@@ -2,7 +2,7 @@
 title: Sökmotor
 description: Sökmotorn som besökaren använde för att nå din webbplats.
 translation-type: tm+mt
-source-git-commit: 1869d69566d26aa7d99c520efc2e835901439d48
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -27,6 +27,6 @@ Om du vill kunna skilja på betald och naturlig sökning måste du identifiera [
 
 Den här dimensionen refererar till flera uppslagstabeller som är interna för Adobe. Varje värde baseras på [träffens](referrer.md) referens, som är beroende av [interna URL-filter](/help/admin/admin/internal-url-filter-admin.md). Kontrollera att referensdimensionen och interna URL-filter är korrekt konfigurerade.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärden är sökmotorer som används för att nå din webbplats. Exempelvärdena inkluderar `"Google"`, `"Microsoft Bing"`och `"DuckDuckGo"`. Dimensionsvärdet är all trafik som inte är sökbar. `"Unspecified"`
+Dimensionsobjekten inkluderar sökmotorer som används för att nå din webbplats. Exempelvärdena inkluderar `"Google"`, `"Microsoft Bing"`och `"DuckDuckGo"`. Dimensionsobjektet `"Unspecified"` är all trafik som inte söks.
