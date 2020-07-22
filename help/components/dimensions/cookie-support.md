@@ -2,7 +2,7 @@
 title: Cookie-stöd
 description: Anger om webbläsaren stöder cookies.
 translation-type: tm+mt
-source-git-commit: a8dc233e962a49674a30ff3c9f0b5d0d45b09f24
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -16,11 +16,11 @@ Dimensionsrapporten &#39;Cookie support&#39; om webbläsaren stöder cookies fö
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`k` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement försöker ange en cookie med namnet `s_cc`och identifierar sedan om cookien finns. Resultatet är parametervärdet för frågesträngen `Y` (om webbläsaren stöder och har aktiverat cookies) eller `N` (om webbläsaren har inaktiverat cookies). Om du använder AppMeasurement (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen som den ska. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med frågesträngsparametern för varje träff med värdet `k` eller `Y` `N`.
+Den här dimensionen samlar in data från [`k` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement försöker ange en cookie med namnet `s_cc`och identifierar sedan om cookien finns. Resultatet är parametervärdet för frågesträngen `Y` (om webbläsaren stöder och har aktiverat cookies) eller `N` (om webbläsaren har inaktiverat cookies). Om du använder AppMeasurement (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med frågesträngsparametern för varje träff med värdet `k` eller `Y` `N`.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena inkluderar `Enabled`, `Disabled`och `Unknown`.
+Dimensionsobjekten inkluderar `Enabled`, `Disabled`och `Unknown`.
 
 * **`Enabled`**: Webbläsaren stöder cookies och har dem aktiverade.
 * **`Disabled`**: Webbläsaren stöder inte cookies eller så inaktiverades de av besökaren.
