@@ -2,7 +2,7 @@
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i Analytics för olika enheter
 translation-type: tm+mt
-source-git-commit: f8b70ada0a2003e43a841b6721aaa474aa9699f0
+source-git-commit: 2230fa2c48358346d1d449f2db335ff75c6b1631
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Så snart en träff har samlats försöker CDA sy ihop den till kända enheter. 
 *Data så som de visas den dag de samlas in:*
 
 | Tidsstämpel | ECID | eVar1 eller CustomerID | Förklaring av träffen | Personmått (kumulativt) med Device Graph | Personmått (kumulativt) med fältbaserad sytning |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | Bob på sin dator, oautentiserad | `1` (246) | `1` (246) |
 | `2` | `246` | `Bob` | Bob loggar in på sitt skrivbord | `1` (246) | `2` (246 och Bob) |
 | `3` | `3579` | - | Bob på sin mobila enhet, oautentiserad | `2` (246 och 3579) | `3` (246, Bob och 3579) |
@@ -56,7 +56,7 @@ CDA beräknar historiska data ungefär en gång i veckan baserat på enheter som
 *Samma data efter replay:*
 
 | Tidsstämpel | ECID | eVar1 eller CustomerID | Förklaring av träffen | Personmått (kumulativt) med Device Graph | Personmått (kumulativt) med fältbaserad sytning |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | Bob på sin dator, oautentiserad | `1` (kluster1) | `1` (Bob) |
 | `2` | `246` | `Bob` | Bob loggar in på sitt skrivbord | `1` (kluster1) | `1` (Bob) |
 | `3` | `3579` | - | Bob på sin mobila enhet, oautentiserad | `1` (kluster1) | `1` (Bob) |
