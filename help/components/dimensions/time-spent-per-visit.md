@@ -2,7 +2,7 @@
 title: Tid per besök
 description: Den totala tiden för besöket.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -34,11 +34,11 @@ Den här dimensionen är relaterad till [genomsnittlig tid på webbplatsen](../m
 
 De här dimensionerna passar alla implementeringar. Om en rapportsvit innehåller data fungerar de här dimensionerna.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
 Det finns flera dimensioner av den tid som tillbringas per besök:
 
-* **Tid per besök - inbuktad**: Tidsmängden är spärrad. Dimensionsvärdena varierar från `"Less than 1 minute"` till `"More than 15 hours"`. Besök varar vanligtvis inte längre än 12 timmar. besöken kan dock överskrida 12 timmar om tidsstämplade träffar eller datakällor används.
-* **Tidsåtgång per besök - i korthet**: Varje antal sekunder är ett unikt dimensionsvärde. Den här dimensionen är inte tillgänglig i Rapporter &amp; Analytics eller Data warehouse.
+* **Tid per besök - inbuktad**: Tidsmängden är spärrad. Dimensionsobjekten varierar från `"Less than 1 minute"` till `"More than 15 hours"`. Besök varar vanligtvis inte längre än 12 timmar. besöken kan dock överskrida 12 timmar om tidsstämplade träffar eller datakällor används.
+* **Tidsåtgång per besök - i korthet**: Varje antal sekunder är ett unikt dimensionsobjekt. Den här dimensionen är inte tillgänglig i Rapporter &amp; Analytics eller Data warehouse.
 
 Mer allmän information om hur lång tid du tillbringar finns i [Tidsåtgång - översikt](../metrics/time-spent.md) .
