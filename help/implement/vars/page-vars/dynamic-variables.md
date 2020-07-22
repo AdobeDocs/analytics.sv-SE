@@ -2,7 +2,7 @@
 title: Dynamiska variabler
 description: Kopiera variabler utan att öka längden på bildbegäran.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 1%
@@ -26,14 +26,14 @@ När Adobe känner igen ett dynamiskt variabelprefix kopieras automatiskt fråge
 
 ## Dynamiska variabler i Adobe Experience Platform Launch
 
-Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en sträng. Dimensionsvärden anges vanligtvis när Analytics-tillägget (globala variabler) eller under regler konfigureras.
+Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en sträng. Dimensionsobjekt anges vanligtvis när Analytics-tillägget (globala variabler) eller enligt regler konfigureras.
 
 1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
 5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Leta reda på önskat dimensionsvärde.
+6. Leta reda på önskad dimensionsobjekt.
 
 Placera det dynamiska variabelprefixet i textfältet följt av frågesträngsparametern eller HTTP-huvudet som du vill referera till. Som standard är det dynamiska variabelprefixet `D=`.
 
