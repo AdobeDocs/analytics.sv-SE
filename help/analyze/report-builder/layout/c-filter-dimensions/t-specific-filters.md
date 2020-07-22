@@ -4,7 +4,10 @@ title: Specifika filter
 topic: Report builder
 uuid: b3a8187a-3d59-4da0-abca-e933664332e3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 2%
 
 ---
 
@@ -33,6 +36,6 @@ Du kan söka efter specifika dimensionsobjekt genom att skapa ett filter som mat
    * **Från lista:** Gör att du kan välja data från en lista som du kan lägga till data i.
 1. Om du aktiverar **[!UICONTROL From List]** markerar du alla tillgängliga listobjekt eller klickar på **[!UICONTROL Add]**.
 
-   När du klickar **[!UICONTROL Add]** visar [!UICONTROL Select From List] formuläret en lista med tillgängliga dimensionsvärden för det aktuella datumintervallet för begäran, begränsat till de första 10 000 objekten. Du kan söka bland dessa objekt eller klicka **[!UICONTROL More ...]** så visas [!UICONTROL Search Form]texten så att du kan göra en mer detaljerad sökning efter dimensioner.
+   När du klickar **[!UICONTROL Add]** visar [!UICONTROL Select From List] formuläret en lista över tillgängliga dimensionsobjekt för aktuellt datumintervall för begäran, begränsat till de första 10 000 objekten. Du kan söka bland dessa objekt eller klicka **[!UICONTROL More ...]** så visas [!UICONTROL Search Form]texten så att du kan göra en mer detaljerad sökning efter dimensioner.
 1. Klicka på [!UICONTROL Select From List]på **[!UICONTROL OK]**.
 1. Spara det specifika filtret i [!UICONTROL Choose Page] formuläret om du vill och klicka sedan på **[!UICONTROL OK]**.
