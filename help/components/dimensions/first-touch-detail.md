@@ -2,7 +2,7 @@
 title: Första beröringskanaldetalj
 description: Information om den första marknadsföringskanalen inom besökarens förfallotid för engagemang.
 translation-type: tm+mt
-source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -20,15 +20,15 @@ Den här dimensionen kopierar värden från andra variabler. Variabeln som anvä
 
 Om du vill ställa in dimensionen på ett specifikt värde måste du utföra följande steg:
 
-* Kontrollera att det önskade dimensionsvärdet finns i ett träffattribut eller en anpassad variabel.
+* Kontrollera att önskat dimensionsobjekt finns i ett träffattribut eller en anpassad variabel.
 * Ange en bearbetningsregel för marknadsföringskanal som innehåller de önskade villkoren för träffen.
 * Välj önskat listrutevärde under [!UICONTROL Set the channel's value] bearbetningsregeln för marknadsföringskanal.
 * Besökarens träff på er webbplats måste matcha de villkor som anges i regeln för bearbetning av marknadsföringskanaler _och_ måste vara det första värdet i marknadsföringskanalen för att göra det under besökarens engagemangsperiod.
 
 Om en efterföljande träff matchar kriterier under en annan marknadsföringskanal skrivs denna dimension inte över med den nya marknadsföringskanalen.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena beror på kanalvärdets listruta. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsvärdena sidadresser på webbplatsen. Om du anger kanalens värde till Referensdomän inkluderar dimensionsvärdena domäner som besökarna klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsvärden, oavsett vilken kanal de finns i.
+Dimensionsobjekt beror på kanalvärdets listruta. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsobjekten sidadresser på din webbplats. Om du anger kanalens värde till Referensdomän inkluderar dimensionsobjekten domäner som besökare klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsobjekt, oavsett vilken kanal de finns i.
 
 Adobe rekommenderar att du ställer in kanalvärden för marknadsföringskanalen för att få information om kanaldetaljer.
