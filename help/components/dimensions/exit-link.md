@@ -2,7 +2,7 @@
 title: Avsluta länk
 description: Namnet på länken för att avsluta.
 translation-type: tm+mt
-source-git-commit: c9e696201d0e9ec97dcdd6ff797ca72244dcf366
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -24,6 +24,6 @@ Om du vill skicka data till den här dimensionen med AppMeasurement:
 * Ställ in [`linkType`](/help/implement/vars/config-vars/linktype.md) variabeln på `"e"`.
 * Skicka en [`tl()`](/help/implement/vars/functions/tl-method.md) bildförfrågan.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vilka dimensionsvärden som är. Adobe rekommenderar att du grupperar länkar i meningsfulla kategorier baserat på dina rapporteringsbehov.
+Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vad dimensionsobjekten är. Adobe rekommenderar att du grupperar länkar i meningsfulla kategorier baserat på dina rapporteringsbehov.
