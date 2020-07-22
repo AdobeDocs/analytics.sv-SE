@@ -2,7 +2,7 @@
 title: Tid före händelse
 description: Hur lång tid det tar mellan mätvärdet och besökets första träff.
 translation-type: tm+mt
-source-git-commit: 1869d69566d26aa7d99c520efc2e835901439d48
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,6 +18,6 @@ Dimensionen&quot;Tid före händelse&quot; visar hur lång tid det tog mellan be
 
 Även om den här dimensionen tekniskt sett fungerar som den ska för alla implementeringar fungerar den bäst med anpassade händelser och köphändelser. Adobe rekommenderar att du implementerar anpassade händelser på din webbplats. Om du implementerar anpassade händelser krävs ingen ytterligare implementering för den här dimensionen.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena inkluderar tidsbaserade bucklar från `"Less than 1 minute"` till `"More than 15 hours"`. Om det till exempel tog en besökare 23 minuter från den första träffen till ett köp, hör den till under `"10 to 30 minutes"` dimensionsvärdet.
+Dimensionsobjekten kan vara tidsbaserade buketter från `"Less than 1 minute"` till `"More than 15 hours"`. Om det till exempel tog en besökare 23 minuter från den första träffen till ett köp, hör den till under `"10 to 30 minutes"` dimensionsposten.
