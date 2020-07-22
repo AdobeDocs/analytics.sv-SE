@@ -2,17 +2,17 @@
 title: Enheter
 description: Det totala antalet produkter som köpts i alla order.
 translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Enheter
 
-Måttet Enheter visar det totala antalet produkter som köpts i alla order. Detta mått är avgörande för e-handelsplatser när det gäller att mäta konvertering. Du kan kombinera det här måttet med valfri dimension för att se vilka dimensionsvärden som bidrog till hur många produkter som köptes. Du kan till exempel se de bästa kampanjerna (med [spårningskod](../dimensions/tracking-code.md) ) eller de viktigaste interna söktermerna (med en [eVar](../dimensions/evar.md)) som har bidragit till köpta produkter.
+Måttet Enheter visar det totala antalet produkter som köpts i alla order. Detta mått är avgörande för e-handelsplatser när det gäller att mäta konvertering. Du kan kombinera det här måttet med valfri dimension för att se vilka dimensionsartiklar som bidrog till hur många produkter som köptes. Du kan till exempel se de bästa kampanjerna (med [spårningskod](../dimensions/tracking-code.md) ) eller de viktigaste interna söktermerna (med en [eVar](../dimensions/evar.md)) som har bidragit till köpta produkter.
 
 ## Hur det här måttet beräknas
 
