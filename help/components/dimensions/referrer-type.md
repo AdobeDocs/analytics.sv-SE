@@ -2,7 +2,7 @@
 title: Referenstyp
 description: Vilken typ av referent det är, beroende på varifrån besökaren kom.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Referenstyp
 
-Dimensionerna Refererartyp rapporterar vilka generiska kanaler besökarna klickade igenom för att komma till din webbplats. Adobe behåller reglerna för varje dimensionsvärde, till skillnad från [marknadsföringskanaler](marketing-channel.md), där organisationen behåller reglerna för varje kanal.
+Dimensionerna Refererartyp rapporterar vilka generiska kanaler besökarna klickade igenom för att komma till din webbplats. Adobe underhåller reglerna för varje dimensionsobjekt, till skillnad från [marknadsföringskanaler](marketing-channel.md), där organisationen upprätthåller regler för varje kanal.
 
 ## Fyll den här dimensionen med data
 
 Den här dimensionen refererar till flera uppslagstabeller som är interna för Adobe. Varje värde baseras på [träffens](referrer.md) referens, som är beroende av [interna URL-filter](/help/admin/admin/internal-url-filter-admin.md). Kontrollera att referensdimensionen och interna URL-filter är korrekt konfigurerade.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärden är typen av träffens referent. Specifika värden är:
+Dimensionsobjekten inkluderar typen av träffens referent. Specifika värden är:
 
 * **Typat/bokmärkt**: Det finns inga referensdata för träffen.
 * **Sökmotorer**: Referenten kom från en identifierad sökmotor som innehåller en nyckelordsfrågesträng.
@@ -195,9 +195,9 @@ Följande lista refererar till den söktabell för sociala nätverk som Adobe an
 * `zooomr.com`
 * `zhihu.com`
 
-### Sökmotorer i dimensionsvärdet &quot;Andra webbplatser&quot;
+### Sökmotorer i dimensionsobjektet Andra webbplatser
 
 När du visar specifika domäner i dimensionen &quot;Refererartyp&quot; kan det finnas domäner som du förväntar dig under &quot;Sökmotorer&quot; i stället för under &quot;Andra webbplatser&quot;. Du kan till exempel se `'google.com'` under Andra webbplatser.
 
-* **Sökmotordomäner i dimensionsvärdet** Sökmotorer: Referenten uppfyllde alla kriterier för att klassificeras som sökmotor av Adobe. Den refererande domänen är en giltig sökmotor *och* den refererande URL:en innehåller en nyckelordsfrågesträngsparameter.
-* **Sökmotordomäner i dimensionsvärdet** Andra webbplatser: Den refererande URL:en uppfyllde inte alla kriterier för att klassificeras som sökmotor. Vanliga exempel är underdomäner som är dedikerade till andra funktioner förutom sökning. Till exempel, `mail.google.com` eller `autos.yahoo.com` är inte sökmotorer, men finns på en toppnivådomän som vanligtvis är kopplad till sökning. Dessa underdomäner innehåller inte någon nyckelordsfrågesträng, vilket är orsaken till att de ingår i Andra webbplatser i stället för Sökmotorer.
+* **Sökmotordomäner i dimensionsobjektet** Sökmotorer: Referenten uppfyllde alla kriterier för att klassificeras som sökmotor av Adobe. Den refererande domänen är en giltig sökmotor *och* den refererande URL:en innehåller en nyckelordsfrågesträngsparameter.
+* **Sökmotordomäner i dimensionsobjektet** Andra webbplatser: Den refererande URL:en uppfyllde inte alla kriterier för att klassificeras som sökmotor. Vanliga exempel är underdomäner som är dedikerade till andra funktioner förutom sökning. Till exempel, `mail.google.com` eller `autos.yahoo.com` är inte sökmotorer, men finns på en toppnivådomän som vanligtvis är kopplad till sökning. Dessa underdomäner innehåller inte någon nyckelordsfrågesträng, vilket är orsaken till att de ingår i Andra webbplatser i stället för Sökmotorer.
