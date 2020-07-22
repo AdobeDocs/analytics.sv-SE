@@ -2,7 +2,7 @@
 title: eVar
 description: En anpassad dimension som du kan använda vid rapportering.
 translation-type: tm+mt
-source-git-commit: 10e157e370367374b55ee9c87c0e5c7ca9e99c1a
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
@@ -24,13 +24,13 @@ Varje eVar samlar in data från frågesträngen [`v1` - `v250` i bildbegäranden
 
 AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `eVar1` - `eVar250`. Mer information om implementeringsriktlinjer finns i [eVar](/help/implement/vars/page-vars/evar.md) i Implementeringsanvändarhandboken.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Eftersom eVars innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsvärden som finns för varje eVar. Se till att du registrerar syftet med varje eVar och typiska dimensionsvärden i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+Eftersom eVars innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekten är för varje eVar. Se till att du registrerar syftet med varje eVar- och typisk dimensionsobjekt i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
 
 ## Hur eVars fungerar
 
-När ni skickar data till Adobe Analytics översätter datainsamlingsservrarna träffen till en enda rad med hundratals kolumner. Två kolumner är dedikerade till varje eVar; en för direkt datainsamling och den andra för beständiga värden.
+När du skickar data till Adobe Analytics översätter datainsamlingsservrar träffen till en enda rad med hundratals kolumner. Två kolumner är dedikerade till varje eVar; en för direkt datainsamling och den andra för beständiga värden.
 
 * En standardkolumn innehåller data som skickats till Adobe från bildbegäran.
 * En post-kolumn innehåller beständiga data, vilket beror på eVar-filens förfallodatum och allokering.
@@ -64,13 +64,13 @@ En förenklad version av rådata skulle se ut ungefär så här:
 
 ### Översätta datainsamling till rapportering
 
-Verktyg i Adobe Analytics, t.ex. Analysis Workspace, arbetar med den här insamlade informationen. Om du till exempel har dragit en rapport med eVar1 som mått och order visas en rapport som ser ut ungefär så här:
+Verktyg i Adobe Analytics, t.ex. Analysis Workspace, arbetar med dessa insamlade data. Om du till exempel har dragit en rapport med eVar1 som mått och order visas en rapport som ser ut ungefär så här:
 
 | `Internal search term (eVar1)` | `Orders` |
 | --- | --- |
 | `cats` | `1` |
 
-Analysis Workspace hämtar den här rapporten med följande logik:
+Analysis Workspace hämtar denna rapport med hjälp av följande logik:
 
 * Titta igenom alla `event_list` värden och välj ut alla träffar `purchase` i dem.
 * Visa `post_evar1` värdet av de träffarna.
