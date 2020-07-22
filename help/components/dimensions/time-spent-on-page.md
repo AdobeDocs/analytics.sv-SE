@@ -2,7 +2,7 @@
 title: Tid som använts på sidan
 description: Den tid en besökare tillbringade på sidan.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -32,11 +32,11 @@ Den här dimensionen är träffbaserad, vilket innebär att värdet är olika f�
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
 Det finns flera dimensioner för tidsåtgången på sidan:
 
-* **Tid som använts på sidan - paketerad**: Tidsmängden är spärrad. Dimensionsvärdena varierar från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan sidvyerna räcker vanligtvis inte längre än 30 minuter. tiden mellan sidvyerna kan dock överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
-* **Tid som använts på sidan - granulärt**: Varje antal sekunder är ett unikt dimensionsvärde.
+* **Tid som använts på sidan - paketerad**: Tidsmängden är spärrad. Dimensionsobjekten varierar från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan sidvyerna räcker vanligtvis inte längre än 30 minuter. tiden mellan sidvyerna kan dock överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
+* **Tid som använts på sidan - granulärt**: Varje antal sekunder är ett unikt dimensionsobjekt.
 
 Mer allmän information om hur lång tid du tillbringar finns i [Tidsåtgång - översikt](../metrics/time-spent.md) .
