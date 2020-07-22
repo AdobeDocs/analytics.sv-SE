@@ -2,7 +2,7 @@
 title: Site section
 description: Namnet på webbplatsavsnittet.
 translation-type: tm+mt
-source-git-commit: 1869d69566d26aa7d99c520efc2e835901439d48
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -20,6 +20,6 @@ Dimensionen är relaterad till dimensionerna [Sida](page.md) och [Server](server
 
 Den här dimensionen hämtar data från [`ch` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med hjälp av [`channel`](/help/implement/vars/page-vars/channel.md) variabeln.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena innehåller namnen på webbplatsens avsnitt på din plats. Din organisation avgör vilka specifika dimensionsvärden du vill använda. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+Dimensionsobjekten innehåller namnen på webbplatsens avsnitt på din plats. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
