@@ -2,7 +2,7 @@
 title: Dagar sedan senaste besök
 description: Antalet dagar mellan den aktuella träffen och den senaste gången de besökte.
 translation-type: tm+mt
-source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
@@ -24,6 +24,6 @@ Nybörjarbesökare ingår inte i den här dimensionen.
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena omfattar antalet dagar mellan besökarens senaste besök och den aktuella träffen. Varje antal dagar är ett separat dimensionsvärde, med `"Same day"` vilket en besökares senaste besök och den aktuella träffen inträffade samma dag.
+Dimensionsobjekten är antalet dagar mellan besökarens senaste besök och den aktuella träffen. Varje antal dagar är en separat dimensionspost där `"Same day"` det inträffade en besökares senaste besök och den aktuella träffen inträffade samma dag.
