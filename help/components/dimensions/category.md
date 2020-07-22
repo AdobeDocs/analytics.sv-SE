@@ -2,7 +2,7 @@
 title: Kategori
 description: Produktkategorin för träffen.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 1%
@@ -18,9 +18,9 @@ Dimensionen Kategori rapporterar produktkategorin för träffen. Det är använd
 
 Den här dimensionen refererar till den första delen av strängen i [`products`](/help/implement/vars/page-vars/products.md) variabeln. Allt före det första semikolon (`;`) fyller i den här dimensionen.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vilka dimensionsvärden som är. Adobe rekommenderar att du grupperar enskilda produkter i meningsfulla kategorier, både med dimensionerna &quot;Produkt&quot; och &quot;Kategori&quot;.
+Eftersom den här variabeln baseras på en anpassad sträng i implementeringen avgör organisationen vad dimensionsobjekten är. Adobe rekommenderar att du grupperar enskilda produkter i meningsfulla kategorier, både med dimensionerna &quot;Produkt&quot; och &quot;Kategori&quot;.
 
 >[!TIP]
 >
