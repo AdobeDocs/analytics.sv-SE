@@ -2,7 +2,7 @@
 title: Genomsnittligt siddjup
 description: Hur många sidor i genomsnitt dimensionen finns på.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Genomsnittligt siddjup
 
-Mätvärdet för genomsnittlig siddjup visar hur långt i ett visst besök dimensionsvärdet finns. På din hemsida visas till exempel vanligtvis ett mindre siddjup än på din inköpsbekräftelsesida, som vanligtvis skulle vara längre fram vid ett besök. Det här måttet är användbart när du vill förstå hur många sidor i ett givet dimensionsvärde som ligger i genomsnitt. Du kan använda den här informationen för att optimera vissa sidor mot nya besökare om sidan i genomsnitt har ett lågt djup.
+Måttet för genomsnittlig siddjup visar hur långt i ett visst besök dimensionsobjektet finns. På din hemsida visas till exempel vanligtvis ett mindre siddjup än på din inköpsbekräftelsesida, som vanligtvis skulle vara längre fram vid ett besök. Det här måttet är användbart när du vill veta hur många sidor i en given dimensionspost som finns i genomsnitt. Du kan använda den här informationen för att optimera vissa sidor mot nya besökare om sidan i genomsnitt har ett lågt djup.
 
->[TIP] Använd detta mätvärde tillsammans med andra mätvärden (till exempel [Besök](visits.md)) för att få bättre insikter. Om du bara använder det här måttet får du dimensionsvärden som innehåller avvikande siddjup, vilket vanligtvis inte är värdefullt.
+>[TIP] Använd detta mätvärde tillsammans med andra mätvärden (till exempel [Besök](visits.md)) för att få bättre insikter. Om du bara använder det här måttet får du dimensionsobjekt som innehåller avvikande siddjup, vilket vanligtvis inte är värdefullt.
 
 ## Hur det här måttet beräknas
 
 Den första sidan av ett besök har siddjupet `0`. Nästa sida har siddjupet 1 och ökar sidvisningen till slutet av besöket. Det här måttet ökar bara med anrop till sidvyn ([`t()`](/help/implement/vars/functions/t-method.md)) och inte med anrop till länkspårning ([`tl()`](/help/implement/vars/functions/tl-method.md)).
 
-För ett givet dimensionsvärde lägger du till alla siddjup för det dimensionsvärdet och dividerar det med besök. Resultatet är det genomsnittliga siddjupet, avrundat till närmaste heltal. Dimensionsvärden med ett genomsnittligt siddjup på `0` innebär att de ofta fanns på besökets första sida.
+För en given dimensionsuppgift lägger du till alla siddjup för den dimensionsobjektet och dividerar den med besök. Resultatet är det genomsnittliga siddjupet, avrundat till närmaste heltal. Dimensionsobjekt med ett genomsnittligt siddjup på `0` innebär att de ofta fanns på besökets första sida.
 
 Här följer ett exempel:
 
@@ -28,7 +28,7 @@ Här följer ett exempel:
 Page1 > Page2 > Page2 > Page3 > Page4 > Page2
 ```
 
-Om vi ville ha ett genomsnittligt siddjup för dimensionsvärdet `Page2`skulle det beräknas så här:
+Om vi ville ha ett genomsnittligt siddjup för dimensionsobjektet `Page2`skulle det beräknas så här:
 
 ```text
 If 'Count repeat instances' is enabled:
@@ -44,4 +44,4 @@ If 'Count repeat instances' is disabled:
 
 ## Procent över 100 %
 
-Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga siddjup och täljaren är dimensionvärdets genomsnittliga siddjup. Om medelvärdet för hela dimensionens siddjup är lägre än medelvärdet för ett givet dimensionsvärde, visas procentvärden över 100 %. Om du sorterar rankade rapporter efter det här måttet visas ett genomsnittligt siddjup som vanligen inte är värdefullt. Adobe rekommenderar sortering efter andra mätvärden, till exempel [Besök](visits.md), i rankade rapporter.
+Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga siddjup och täljaren är dimensionsobjektets genomsnittliga siddjup. Om medelvärdet för hela dimensionens siddjup är lägre än medelvärdet för en given dimensionsposts siddjup visas procentvärden över 100 %. Sortering av rankade rapporter efter det här måttet visar ett onormalt medelvärde för siddjup, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering efter andra mätvärden, till exempel [Besök](visits.md), i rankade rapporter.
