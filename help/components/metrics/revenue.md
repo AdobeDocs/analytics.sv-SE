@@ -2,17 +2,17 @@
 title: Intäkter
 description: Det monetära beloppet för produkter som köpts på alla order.
 translation-type: tm+mt
-source-git-commit: 87d0c7e20594e2e39f55284e8d50d425cc1cdacf
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Intäkter
 
-Måttet&quot;Intäkt&quot; visar det monetära beloppet för produkter som köpts in på alla order. Detta mått är avgörande för e-handelsplatser när det gäller att mäta konvertering. Du kan kombinera det här måttet med valfri dimension för att se vilka dimensionsvärden som har bidragit till intäkterna. Du kan till exempel se de bästa kampanjerna (med [spårningskoddimensionen](../dimensions/tracking-code.md) ) eller de vanligaste interna söktermerna (med en [eVar](../dimensions/evar.md)).
+Måttet&quot;Intäkt&quot; visar det monetära beloppet för produkter som köpts in på alla order. Detta mått är avgörande för e-handelsplatser när det gäller att mäta konvertering. Du kan kombinera det här måttet med vilken dimension som helst för att se vilka dimensionsartiklar som har bidragit till intäkterna. Du kan till exempel se de bästa kampanjerna (med [spårningskoddimensionen](../dimensions/tracking-code.md) ) eller de vanligaste interna söktermerna (med en [eVar](../dimensions/evar.md)).
 
 ## Hur det här måttet beräknas
 
