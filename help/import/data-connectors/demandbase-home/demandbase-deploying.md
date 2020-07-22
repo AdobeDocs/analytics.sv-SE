@@ -3,7 +3,7 @@ description: Distribuering av den här integreringen är en enkel process som kr
 title: Distribuera integreringen
 uuid: 9c116ca8-4dbf-44eb-a832-574527ee88b7
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 1%
@@ -119,7 +119,7 @@ Om du behöver göra justeringar beskrivs dock några av kodinställningarna ned
   </tr> 
   <tr> 
    <td colname="col1"> db._delim </td> 
-   <td colname="col2"> Avgränsaren som används för att separera Demandbase-dimensionsvärden när de skickas till Adobe Analytics. Om du ändrar den här inställningen kan det medföra att klassificeringsreglerna inte fungerar som de ska. </td> 
+   <td colname="col2"> Avgränsaren som används för att separera Demandbase-dimensionsobjekten när de skickas till Adobe Analytics. Om du ändrar den här inställningen kan det medföra att klassificeringsreglerna inte fungerar som de ska. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> db._setTnt </td> 
