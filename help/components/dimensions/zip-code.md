@@ -2,7 +2,7 @@
 title: Postnummer
 description: Besökarens postnummer.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -27,6 +27,6 @@ Under [!UICONTROL Zip option] Allmänna kontoinställningar [](/help/admin/admin
 >
 >Rapportsvitens inställning är viktig om du vill ha fullständig kontroll över hur du fyller i den här dimensionen.
 
-## Dimensionsvärden
+## Dimensionsobjekt
 
-Dimensionsvärdena inkluderar besökarens postnummer.
+Dimensionsobjekten är besökarens postnummer.
