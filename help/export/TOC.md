@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 user-guide-url: /content/help/en/analytics/export/home.html
 translation-type: tm+mt
-source-git-commit: 50ed50f951b6c7309359a19538323b1e12322a80
+source-git-commit: b4405f4934ffca5561bb43216a6c3133fd59c0c7
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 92%
+source-wordcount: '258'
+ht-degree: 91%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 92%
       + [Översikt över innehåll i datafeeds](analytics-data-feed/c-df-contents/datafeeds-contents.md)
       + [Beräkna mätvärden](analytics-data-feed/c-df-contents/datafeeds-calculate.md)
       + [Referens för datakolumner](analytics-data-feed/c-df-contents/datafeeds-reference.md)
-      + [Huvudresurser](analytics-data-feed/c-df-contents/headers.md)
-      + [Söka efter sidhändelse](analytics-data-feed/c-df-contents/datafeeds-page-event.md)
+      + [Sökning efter sidhändelse](analytics-data-feed/c-df-contents/datafeeds-page-event.md)
+      + [Mobilattributsökning](analytics-data-feed/c-df-contents/mobile-attributes-lookup.md)
       + [Specialtecken](analytics-data-feed/c-df-contents/datafeeds-spec-chars.md)
       + [Sena träffar](analytics-data-feed/c-df-contents/late-arriving-hits.md)
    + [Vanliga frågor om datafeeds](analytics-data-feed/df-faq.md)
