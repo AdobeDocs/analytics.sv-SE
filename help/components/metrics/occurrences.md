@@ -2,9 +2,9 @@
 title: Förekomster
 description: Antalet träffar som en variabel har angetts eller befunnits vara.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 422e99d9ea70f0192443d7ebc3631c6bf99e7591
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '157'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Måttet &#39;Förekomster&#39; visar antalet träffar där en given dimension ha
 
 ## Hur det här måttet beräknas
 
-Av alla träffar i en rapportsserie ska du ta med träffar där ett dimensionsobjekt definieras eller bevaras. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), finns kvar utanför den träff de är inställda på. Mätvärden som [sidvyer](page-views.md) och [förekomster](occurrences.md) räknar både inledande och beständiga värden. Det här måttet räknar inte beständiga värden.
+Av alla träffar i en rapportsserie ska du ta med träffar där ett dimensionsobjekt definieras eller bevaras. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), finns kvar utanför den träff de är inställda på. Mätvärden som [sidvyer](page-views.md) och [förekomster](occurrences.md) räknar både inledande och beständiga värden.
 
 ## Jämför med liknande mätvärden
 
