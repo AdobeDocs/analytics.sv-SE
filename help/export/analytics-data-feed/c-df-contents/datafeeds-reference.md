@@ -6,9 +6,9 @@ title: Referens för datakolumner
 topic: Reports and analytics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 translation-type: tm+mt
-source-git-commit: e6bff325cdceb2048554b47944567d50d3c8133f
+source-git-commit: 422e99d9ea70f0192443d7ebc3631c6bf99e7591
 workflow-type: tm+mt
-source-wordcount: '3664'
+source-wordcount: '3669'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `geo_region` | Namnet på den stat eller region som träffen kom från, baserat på IP. Adobe samarbetar med Digital Envoy för att matcha IP-adressen med delstat/region. | char(32) |
 | `geo_zip` | Postnumret som träffen kom från baseras på IP. Adobe samarbetar med Digital Envoy för att matcha IP-adressen med postkoden. | varchar(16) |
 | `hier1 - hier5` | Används av hierarkivariabler. Innehåller en avgränsad lista med värden. Avgränsaren väljs under rapportsvitens inställningar. | varchar(255) |
-| `hit_source` | Anger vilken källa träffen kom ifrån. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br>3: Ladda upp datakällor live med tidsstämplar <br>4: Används inte <br>5: Allmän överföring av datakälla <br>6: Uppladdning av datakälla med fullständig bearbetning <br>7: Överföring av datakälla för TransactionID <br>8: Används inte längre. Tidigare versioner av Adobe Advertising Cloud datakällor <br>9: Används inte längre. Sammanfattningsstatistik för Adobe Social | tinyint unsigned |
+| `hit_source` | Anger vilken källa träffen kom ifrån. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br>3: Ladda upp datakällor live med tidsstämplar <br>4: Används inte <br>5: Allmän överföring av datakälla <br>6: Uppladdning av datakälla med fullständig bearbetning <br>7: Överföring av datakälla för TransactionID <br>8: Används inte längre. Tidigare versioner av Adobe Advertising Cloud datakällor <br>9: Används inte längre. Adobe Social summary metrics <br>10: Vidarebefordran på serversidan i Audience Manager används | tinyint unsigned |
 | `hit_time_gmt` | Tidsstämpeln för de träffande Adobe-datainsamlingsservrarna tog emot träffen, baserat på Unix-tid. | int |
 | `hitid_high` | Används i kombination med hitid_low för att unikt identifiera en träff. | bigint unsigned |
 | `hitid_low` | Används i kombination med hitid_high för att unikt identifiera en träff. | bigint unsigned |
