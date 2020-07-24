@@ -2,9 +2,9 @@
 title: Dynamiska jämfört med statiska dimensionsobjekt
 description: Hur man interagerar med dynamiska och statiska dimensionsobjekt i tabeller.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 1ec0e17e8ca5083ce658603bb623ebc1026ff699
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '473'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,4 @@ Dimensionsobjekt från olika dimensioner kan läggas till i samma register. Radh
 Dynamiska och statiska rader fungerar på olika sätt i den totala frihandsraden. Som standard:
 
 * Dynamiska rader summeras på serversidan och dubblettvärden som besök och besökare tas bort
-* Statiska rader summeras på klientsidan och dubbletter tas **inte** bort.
-
-[Läs mer om alternativen för total](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) arbetsyta för dynamiska och statiska rader.
+* Statiska rader summeras på klientsidan och dubbletter tas **inte** bort. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
