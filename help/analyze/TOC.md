@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 422e99d9ea70f0192443d7ebc3631c6bf99e7591
+source-git-commit: 0fff218b18c17a4a3ee3bf1c01c7036db8d09b77
 workflow-type: tm+mt
 source-wordcount: '1100'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 96%
       + Kolumn- och radinställningar {#column-row-settings}
          + [Kolumninställningar](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
          + [Radinställningar](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Manuella kontra dynamiska rader](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Dynamiska jämfört med statiska artiklar](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
       + [Ångra och göra om inställningar](analysis-workspace/build-workspace-project/undo-redo.md)
       + [Kortkommandon i Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Sidnumrering, filtrering och sortering av tabeller](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
