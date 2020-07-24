@@ -1,10 +1,10 @@
 ---
-title: Dynamiska jämfört med statiska dimensionsobjekt
+title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 description: Hur man interagerar med dynamiska och statiska dimensionsobjekt i tabeller.
 translation-type: tm+mt
-source-git-commit: 1ec0e17e8ca5083ce658603bb623ebc1026ff699
+source-git-commit: 0fff218b18c17a4a3ee3bf1c01c7036db8d09b77
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '476'
 ht-degree: 2%
 
 ---
@@ -24,6 +24,8 @@ När du t.ex. drar dimensionen Webbläsartyp till tabellen visas dimensionsobjek
 
 Objekt med dynamiska dimensioner har alternativet radfilter och har **inga** lås- och X-ikoner.
 
+![](assets/dynamic-items.png)
+
 ## Statiska dimensionsobjekt
 
 Statiska dimensionsobjekt ändras inte med tiden. de är fasta komponenter som alltid returneras i en frihandstabell. Statiska dimensionsobjekt föredras när du alltid vill analysera samma objekt, oavsett om det är specifika kampanjer eller specifika dagar i veckan.
@@ -37,9 +39,13 @@ Om du t.ex. drar över vissa objekt i webbläsartypen, t.ex. Microsoft och Apple
 
 Statiska dimensionsobjekt har **inte** alternativet radfilter. Istället visas lås- och X-ikoner för varje objekt. Klicka på X-ikonen för att ta bort dimensionsobjektet från tabellen.
 
+![](assets/static-items.png)
+
 ## Blandade dimensionsobjekt
 
 Dimensionsobjekt från olika dimensioner kan läggas till i samma register. Radhuvudet säger&quot;Blandade dimensioner&quot; i dessa fall. Dessa dimensionsobjekt är statiska. Du kan till exempel lägga till specifika dimensionsobjekt från dimensionen Webbläsartyp och andra dimensionsobjekt från dimensionen Webbläsare.
+
+![](assets/mixed-dimensions.png)
 
 ## Frihandsrader
 
