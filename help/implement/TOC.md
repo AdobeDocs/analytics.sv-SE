@@ -1,26 +1,27 @@
 ---
 product: analytics
 audience: all
-user-guide-title: Analytics Implementeringshandbok
+user-guide-title: Implementeringshandbok för Analytics
+user-guide-description: Customize what data is collected to get more out of Adobe Analytics. Includes content on Adobe Experience Platform Launch and JavaScript implementations.
 user-guide-url: /content/help/en/analytics/implementation/home.html
 translation-type: tm+mt
-source-git-commit: 0bd595d8936756cb36fa59ce5e01fb200f99d0de
+source-git-commit: ef8c7f83e93ac5ee52856a6bb0978725fa1cc3ff
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 4%
+ht-degree: 98%
 
 ---
 
 
-# Analytics Implementeringshandbok {#implementation}
+# Implementeringshandbok för Analytics {#implementation}
 
-+ [Hjälp om implementering av Analytics](home.md)
-+ [Versionsinformation om AppMeasurement](appmeasurement-updates.md)
-+ Analytics-variabler, -funktioner och -metoder {#vars}
++ [Hjälp med implementering av Analytics](home.md)
++ [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
++ Variabler, funktioner och metoder för Analytics {#vars}
    + [Översikt](vars/overview.md)
    + Konfigurationsvariabler {#config-vars}
       + [Översikt över konfigurationsvariabler](vars/config-vars/configuration-variables.md)
-      + [avbryta](vars/config-vars/abort.md)
+      + [avbryt](vars/config-vars/abort.md)
       + [konto](vars/config-vars/account.md)
       + [charSet](vars/config-vars/charset.md)
       + [cookieDomain](vars/config-vars/cookiedomain.md)
@@ -61,27 +62,27 @@ ht-degree: 4%
       + [Dynamiska variabler](vars/page-vars/dynamic-variables.md)
       + [eVar](vars/page-vars/evar.md)
       + [eVar (Merchandising)](vars/page-vars/evar-merchandising.md)
-      + events {#events}
+      + händelser {#events}
          + [Översikt över händelser](vars/page-vars/events/events-overview.md)
          + [Inköpshändelse](vars/page-vars/events/event-purchase.md)
          + [Händelseserialisering](vars/page-vars/events/event-serialization.md)
-      + [hövding](vars/page-vars/hier.md)
-      + [list](vars/page-vars/list.md)
+      + [hierarki](vars/page-vars/hier.md)
+      + [lista](vars/page-vars/list.md)
       + [pageName](vars/page-vars/pagename.md)
       + [pageType](vars/page-vars/pagetype.md)
       + [pageURL](vars/page-vars/pageurl.md)
       + [produkter](vars/page-vars/products.md)
-      + [prop](vars/page-vars/prop.md)
+      + [egenskap](vars/page-vars/prop.md)
       + [purchaseID](vars/page-vars/purchaseid.md)
-      + [hänvisare](vars/page-vars/referrer.md)
+      + [referent](vars/page-vars/referrer.md)
       + [s_objectID](vars/page-vars/s-objectid.md)
       + [server](vars/page-vars/server.md)
-      + [läge](vars/page-vars/state.md)
+      + [tillstånd](vars/page-vars/state.md)
       + [tidsstämpel](vars/page-vars/timestamp.md)
       + [transactionID](vars/page-vars/transactionid.md)
       + [zip](vars/page-vars/zip.md)
    + Funktioner och metoder {#functions}
-      + [Funktioner - översikt](vars/functions/overview.md)
+      + [Översikt över funktioner](vars/functions/overview.md)
       + [s_gi](vars/functions/s-gi.md)
       + [t](vars/functions/t-method.md)
       + [tl](vars/functions/tl-method.md)
@@ -100,7 +101,7 @@ ht-degree: 4%
       + [addProductEvar](vars/plugins/addproductevar.md)
       + [addProductEvent](vars/plugins/addproductevent.md)
       + [apl](vars/plugins/apl.md)
-      + [clearStr](vars/plugins/cleanstr.md)
+      + [cleanStr](vars/plugins/cleanstr.md)
       + [formatTime](vars/plugins/formattime.md)
       + [getAndPersistValue](vars/plugins/getandpersistvalue.md)
       + [getGeoCoordinates](vars/plugins/getgeocoordinates.md)
@@ -125,82 +126,82 @@ ht-degree: 4%
       + [pt](vars/plugins/pt-plugin.md)
       + [removeFromList](vars/plugins/removefromlist.md)
    + [Integrera modul](vars/integrate.md)
-+ Förbereda för att implementera Adobe Analytics {#prepare}
++ Förberedelser inför att implementera Adobe Analytics {#prepare}
    + [Skapa ett datalager](prepare/data-layer.md)
-   + [Överväganden för globala rapportsviter](prepare/global-rs.md)
-   + [Implementera modal](prepare/implementation-modal.md)
+   + [Att tänka på för den globala rapportsviten](prepare/global-rs.md)
+   + [Implementeringsmodal](prepare/implementation-modal.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
 + Implementera Analytics med JavaScript {#js}
-   + [JavaScript - översikt](js/overview.md)
+   + [Översikt över JavaScript](js/overview.md)
    + [Implementera länkar för avanmälan](js/opt-out.md)
    + [Variabla åsidosättningar](js/overrides.md)
    + [Migrera från H-kod](js/migrate-from-hcode.md)
    + H-kod {#h-code}
-      + [H-kodöversikt](js/h-code/overview.md)
+      + [Översikt över H-kod](js/h-code/overview.md)
       + Dynamiska konton {#dynamicaccount}
          + [Översikt över dynamiska konton](js/h-code/dynamicaccount/overview.md)
          + [dynamicAccountList](js/h-code/dynamicaccount/dynamicaccountlist.md)
          + [dynamicAccountMatch](js/h-code/dynamicaccount/dynamicaccountmatch.md)
          + [dynamicAccountSelection](js/h-code/dynamicaccount/dynamicaccountselection.md)
-      + [Felsök H-koden](js/h-code/troubleshooting.md)
-   + Äldre enhets-ID {#xdevice-visid}
-      + [Ansluta användare till olika enheter - översikt](js/xdevice-visid/xdevice-connecting.md)
+      + [Felsök H-kod](js/h-code/troubleshooting.md)
+   + Identifiering av olika äldre enheter {#xdevice-visid}
+      + [Översikt över hur man ansluter användare på flera olika enheter](js/xdevice-visid/xdevice-connecting.md)
       + [Variabel beständighet](js/xdevice-visid/variable-persistence.md)
-      + [Besök exemplet](js/xdevice-visid/visit-example.md)
-      + [Vanliga frågor och svar om äldre enheter](js/xdevice-visid/xdevice-faq.md)
+      + [Besök exempel](js/xdevice-visid/visit-example.md)
+      + [Vanliga frågor om olika äldre enheter](js/xdevice-visid/xdevice-faq.md)
    + [Felsök AppMeasurement](js/troubleshooting.md)
 + Implementera Analytics med Adobe Experience Platform Launch {#launch}
-   + [Översikt](launch/overview.md)
+   + [Översikt över Launch](launch/overview.md)
    + [Skapa en Analytics-egenskap](launch/create-analytics-property.md)
-   + [Distribuera till en dev-miljö](launch/deploy-dev.md)
+   + [Distribuera till en utvecklarmiljö](launch/deploy-dev.md)
    + [Validera och publicera för produktion](launch/validate-publish-prod.md)
    + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
    + [Mappa Launch-dataelement till Analytics-variabler](launch/elements-to-variable.md)
 + Implementera Analytics på andra plattformar {#other}
    + [Implementera Analytics med hårdkodade bildbegäranden](other/hardcoded.md)
    + Implementera Analytics med DTM {#dtm}
-      + [Implementering av dynamisk tagghantering - översikt](other/dtm/dtm-implementation-overview.md)
+      + [Översikt över implementering av Dynamic Tag Management](other/dtm/dtm-implementation-overview.md)
       + [Skapa webbegenskap](other/dtm/t-create-web-property.md)
       + [Konfigurera värdalternativ](other/dtm/t-configure-hosting.md)
       + Sidhuvuden och sidfötter {#headers-footers}
-         + [Lägg till sidhuvud och sidfot](other/dtm/c-headers-footers/t-header-footer-code.md)
-         + [Verifiera kod för sidhuvud och sidfot](other/dtm/c-headers-footers/t-verify-header-footer.md)
-      + Adobe Analytics {#analytics-tool}
-         + [Lägg till Adobe Analytics](other/dtm/c-aa-tool/analytics-dtm.md)
+         + [Lägg till sidhuvuds- och sidfotskod](other/dtm/c-headers-footers/t-header-footer-code.md)
+         + [Verifiera sidhuvuds- och sidfotskod](other/dtm/c-headers-footers/t-verify-header-footer.md)
+      + Adobe Analytics-verktyg {#analytics-tool}
+         + [Lägg till Adobe Analytics-verktyg](other/dtm/c-aa-tool/analytics-dtm.md)
          + [Allmänt](other/dtm/c-aa-tool/general-settings-analytics.md)
          + [Bibliotekshantering](other/dtm/c-aa-tool/library-management.md)
-         + [Infoga AppMeasurement-huvudkod](other/dtm/c-aa-tool/t-appmeasurement-code.md)
+         + [Infoga kärnkod för AppMeasurement](other/dtm/c-aa-tool/t-appmeasurement-code.md)
          + [Globala variabler](other/dtm/c-aa-tool/global-variables.md)
-         + [Sidvyer och innehåll](other/dtm/c-aa-tool/pageviews-content.md)
+         + [Sidvisningar och innehåll](other/dtm/c-aa-tool/pageviews-content.md)
          + [Länkspårning](other/dtm/c-aa-tool/link-tracking.md)
          + [Referenter och kampanjer](other/dtm/c-aa-tool/referrers-campaigns.md)
          + [Cookies](other/dtm/c-aa-tool/cookies-analytics.md)
          + [Anpassa sidkod](other/dtm/c-aa-tool/customize-page-code.md)
-         + [Frågor och svar om Adobe Analytics Tool](other/dtm/c-aa-tool/dtm-faq.md)
+         + [Vanliga frågor om Adobe Analytics-verktyget](other/dtm/c-aa-tool/dtm-faq.md)
       + [Skapa ett dataelement](other/dtm/t-data-element.md)
       + [Implementera Adobe Analytics manuellt (äldre)](other/dtm/t-analytics-deploy.md)
       + Regler {#rules}
          + [Skapa ny regel](other/dtm/c-rules/t-rules-create.md)
          + [Skapa villkor för händelsebaserade regler](other/dtm/c-rules/t-rules-event-conditions.md)
-         + [Skapa villkor för sidladdningsregler](other/dtm/c-rules/t-rules-page-conditions.md)
-         + [Skapa villkor för direktanropsregler ](other/dtm/c-rules/t-rules-direct-conditions.md)
-         + [Ställ in åtgärder för villkoret som ska utlösas](other/dtm/c-rules/t-rules-actions.md)
+         + [Skapa villkor för sidinläsningsregler](other/dtm/c-rules/t-rules-page-conditions.md)
+         + [Skapa villkor för direktanropsregler](other/dtm/c-rules/t-rules-direct-conditions.md)
+         + [Ställ in åtgärder för villkoret som ska utlösa](other/dtm/c-rules/t-rules-actions.md)
          + [Testa opublicerade regler för Akamai-värdtjänster](other/dtm/c-rules/t-test-rules-akamai.md)
-         + [Testregler för hämtning av bibliotek eller FTP](other/dtm/c-rules/t-test-rules-ftp.md)
+         + [Testregler för bibliotekshämtning eller FTP](other/dtm/c-rules/t-test-rules-ftp.md)
    + [Implementera Analytics på Ajax](other/ajax.md)
    + [Implementera Analytics på AMP](other/amp.md)
-   + [Implementera Analytics om digitala assistenter](other/digital-assistants.md)
+   + [Implementera Analytics på digitala assistenter](other/digital-assistants.md)
    + [Implementera Analytics på Facebook Instant Articles](other/fb-instant-articles.md)
 + [Implementera Analytics på mobila enheter](mobile-device-sdk.md)
-+ Användningsexempel för implementering {#use-cases}
-   + [Spåra olika implementeringstyper](use-cases/cross-type-implementation.md)
++ Användningsfall för implementering {#use-cases}
+   + [Spåra på olika implementeringstyper](use-cases/cross-type-implementation.md)
    + [Extern e-postspårning](use-cases/email-external.md)
-+ Validera implementeringen {#validate}
-   + [Äldre Adobe Experience Cloud-felsökning](validate/debugger.md)
++ Validera din implementering {#validate}
+   + [Äldre Adobe Experience Cloud-felsökare](validate/debugger.md)
    + [Frågeparametrar för datainsamling](validate/query-parameters.md)
-   + [Packet monitor](validate/packet-monitor.md)
+   + [Paketövervakare](validate/packet-monitor.md)
    + [Hash-kollisioner](validate/hash-collisions.md)
-+ [Frågor och svar](faq.md)
++ [Vanliga frågor](faq.md)
 + Använd XDM-data med Analytics {#aep-edge}
-   + [Använd AEP Web SDK](aep-edge/xdmoverview.md)
+   + [Använd SDK för AEP Web](aep-edge/xdmoverview.md)
    + [Mappa XDM-data till Analytics manuellt](aep-edge/xdm-manual.md)
