@@ -3,7 +3,7 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 translation-type: tm+mt
-source-git-commit: e7d1a690076d9fbb68797224d7ab53a6350f787d
+source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
 workflow-type: tm+mt
 source-wordcount: '2119'
 ht-degree: 3%
@@ -35,7 +35,7 @@ Releasedatum: **5 mars 2020**
 
 Releasedatum: **21 februari 2020**
 
-* Audience Management-modulen har uppdaterats till DIL 9.4. (AN-209341)
+* Uppdaterad målgruppshanteringsmodul till DIL 9.4. (AN-209341)
 
 ## Version 2.18.0
 
@@ -62,7 +62,7 @@ Releasedatum: **15 augusti 2019**
 
 ## Version 2.15.0
 
-Releasedatum: **15 juli 2019**
+Release Date: **July 15, 2019**
 
 * Lagt till spårning av rullningsområde för ActivityMap i tillägget Activity Map (AN-172949)
 * DIL 9.2 har lagts till i AppMeasurement (AN-182472)
@@ -92,7 +92,7 @@ Releasedatum: **22 februari 2019**
 
 Releasedatum: **11 februari 2019**
 
-* Stöd för de nya funktionerna för Adobes anmälningstjänster i AppMeasurement har lagts till. (AN-163546)
+* Stöd har lagts till för de nya Adobe-funktionerna för anmälningstjänster i AppMeasurement. (AN-163546)
 * Stöd för lagring av länkspårningsdata i sessionslagring har lagts till. (AN-162272)
 * Stöd för medieströmstyp för Audio Analytics har lagts till. (AN-173265)
 
@@ -102,7 +102,7 @@ Releasedatum: **20 september 2018**
 
 Den här versionen ser till att [!DNL AppMeasurement] biblioteket skickar cookies korrekt för alla anslutningstyper.
 
-* [!DNL AppMeasurement] blockerar cookie-överföringar under POST. (AN-165538)
+* [!DNL AppMeasurement] blockerar överföringar av cookies under POST. (AN-165538)
 * Släpp stöd för XDomainRequest. (AN-165733)
 * Minska [!DNL AppMeasurement] standardlivstiden för cookies från fem till två år. (AN-158572)
 * Ta bort mediemodulen från kodhanteraren ( [!DNL AppMeasurement]) (AN-166590)
@@ -243,7 +243,7 @@ Uppdaterat: **4 augusti 2016**
 
 ## Version 1.6.2
 
-Releasedatum: **21 juli 2016**
+Release Date: **July 21, 2016**
 
 * Inkludering av Visitor API 1.6.0.
 * Korrigerade ett problem som gjorde [!DNL AppMeasurement] att fel felplacerade metod anropades i Visitor API. (AN-126006)
@@ -354,9 +354,9 @@ Releasedatum: **18 september 2014**
 * På sidor som är dubbeltaggade med H-kod har en loop som kan inträffa vid automatisk länkspårning (hämtning och avslut) korrigerats med när fast länkspårning är aktiverat (standard i Webkit-webbläsare). Dessutom lades en allmän skyddsåtgärd till runt automatisk länkspårning för att förhindra liknande slingor. Detta skydd begränsar automatisk länkspårning av upprepade klickningar till *samma* objekt till en gång var 10:e sekund. Skyddet gäller endast automatisk länkspårning, så manuella länkspårningsanrop (s.tl) är inte begränsade. Klickningar på olika objekt påverkas inte heller av den här skyddsfunktionen och spåras.
 * Korrigerad hantering av klickade objekt när en fördröjning behövs.
 * Korrigerade ett problem som orsakade ett dubbelsidigt antal sidor när s.t anropades från en länk-onclick-funktion, om Visitor-API:t inte har de värden som behövs ännu.
-* Stöd för HTTP POST.
+* Stöd för HTTP-POST.
 
-   > [!IMPORTANT] Om du vill [!DNL Analytics] anropa metoden POST i stället för metoden GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
+   >[!IMPORTANT] Om du vill [!DNL Analytics] anropa metoden POST i stället för metoden GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
 
 ## Version 1.4
 
@@ -405,7 +405,7 @@ Releasedatum: **20 februari 2014**
 
 Releasedatum: **6 februari 2014**
 
-* Ett kompatibilitetsproblem med DIL-modulen har korrigerats. [!DNL Audience Manager] [!DNL Audience Manager] kunderna måste också uppdatera till version 4.8 av DIL-modulen.
+* Ett kompatibilitetsproblem med modulen [!DNL Audience Manager] DIL har korrigerats. [!DNL Audience Manager] man måste också uppdatera till version 4.8 i modulen DIL.
 
 ## Version 1.2.1
 
@@ -436,12 +436,12 @@ Releasedatum: **18 september 2013**
 
 Releasedatum: **15 augusti 2013**
 
-* Stöd för driftsättning via Adobes tagghantering har lagts till.
+* Stöd för driftsättning via tagghantering i Adobe har lagts till.
 * Korrigerade ett problem som förhindrade att hierarkivariabler angavs för [!DNL AppMeasurement] objektet.
 
 ## Version 1.0.2
 
-Releasedatum: **18 juli 2013**
+Release Date: **July 18, 2013**
 
 * Hash/fragment ignoreras nu av automatisk länkspårning. Tidigare spårades följande URL automatiskt eftersom hela URL:en `href` slutade i `.pdf`:
 
