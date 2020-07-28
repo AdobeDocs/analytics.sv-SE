@@ -2,7 +2,7 @@
 title: H Code JavaScript implementation overview
 description: Lär dig arbetsflödet för att implementera H-kod på din webbplats.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -27,9 +27,10 @@ Du måste ha tillgång till värdservrarna för att kunna implementera en sida m
    * `s.trackingServer` innehåller de platscookies som lagras. Se [trackingServer](../../vars/config-vars/trackingserver.md).
 2. **Lägg`s_code.js`filen på din plats** som värd: Den här filen finns vanligtvis tillsammans med andra skript på webbservern.
 3. **Referens`s_code.js`på alla sidor**: Se till att alla enskilda sidor anropar JavaScript-huvudfilen och gör det i HTML- `<body>` taggen (inte `<head>` -taggen).
-   > [!TIP] H-koden kräver att `s_code.js` skriptet anropas inom `<body>` -taggen. Detta skiljer sig från andra implementeringsmetoder, varav de flesta kräver skriptreferenser i `<head>` -taggen.
+
+   >[!TIP] H-koden kräver att `s_code.js` skriptet anropas inom `<body>` -taggen. Detta skiljer sig från andra implementeringsmetoder, varav de flesta kräver skriptreferenser i `<head>` -taggen.
 4. **Definiera sidspecifika variabler på varje sida**: Varje sida ska ha individuella variabler definierade, till exempel sidnamn eller eVars. Enskilda variabler definieras vanligtvis med en intern `<script>` tagg på varje sida.
-5. **Använd felsökaren för att verifiera datainsamling**: Hämta och installera felsökningsprogrammet [för](../../validate/debugger.md) Experience Cloud för att säkerställa att data skickas till Adobe och att sidvariabler definieras korrekt.
+5. **Använd felsökaren för att verifiera datainsamling**: Hämta och installera felsökningsprogrammet [för](../../validate/debugger.md) Experience Cloud för att se till att data skickas till Adobe och att sidvariabler definieras korrekt.
 
 ## Cachelagring
 
@@ -37,4 +38,4 @@ JavaScript-filen cachelagras i besökarens webbläsare efter att den först läs
 
 ## H-kodkomprimering
 
-Om du är orolig för nedladdningsstorleken på `s_code.js` filen rekommenderar Adobe att du komprimerar `s_code.js` filen med GZIP. GZIP stöds av alla större webbläsare och ger bättre prestanda än JavaScript-komprimering. Se [Apache Module mod_deflate](http://httpd.apache.org/docs/current/mod/mod_deflate.html) i dokumentationen för Apache.
+Om du är orolig för `s_code.js` filens hämtningsstorlek rekommenderar Adobe att du komprimerar `s_code.js` filen med GZIP. GZIP stöds av alla större webbläsare och ger bättre prestanda än JavaScript-komprimering. Se [Apache Module mod_deflate](http://httpd.apache.org/docs/current/mod/mod_deflate.html) i dokumentationen för Apache.
