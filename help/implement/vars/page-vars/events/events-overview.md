@@ -2,9 +2,9 @@
 title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 2fd6e3b561d02bdbdd77b0be982614e765c870e2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '664'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # händelser
 
-Dimensioner och mätvärden är viktiga komponenter i rapporter. Variabeln `events` används för datainsamling av många mätvärden på din webbplats.
+Dimensioner och mätvärden är viktiga komponenter i rapporter. Variabeln `events` används för datainsamling av många mätvärden på din webbplats. Händelser ökar vanligtvis [måtten](/help/components/metrics/overview.md) i rapporter.
 
-## Händelser i Adobe Experience Platform Launch
+Innan du implementerar händelser måste du skapa och konfigurera dem under [lyckade händelser](/help/admin/admin/c-success-events/success-event.md) i inställningarna för rapportsviten. Om du tänker använda anpassade händelser i länkspårningsträffar måste du se till att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) är korrekt inställda.
+
+## Evenemang i Adobe Experience Platform Launch
 
 Du kan ange händelser antingen när du konfigurerar Analytics-tillägget (globala variabler) eller enligt regler.
 
@@ -22,7 +24,7 @@ Du kan ange händelser antingen när du konfigurerar Analytics-tillägget (globa
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+5. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta rätt på [!UICONTROL Events] avsnittet.
 
 Flera funktioner är tillgängliga:
@@ -77,12 +79,14 @@ s.events = "event1=2,event2";
 
 Du kan ändra en anpassad händelse så att den använder valuta i stället för heltal. Valutahändelser konverteras automatiskt till rapportsvitens valuta om rapportsvitens valuta och `currencyCode` variabeln inte stämmer överens. De är användbara för att beräkna fraktkostnader, rabatter eller återbetalningar. Du kan ange valutakändelser i `products` variabeln om du bara vill tilldela händelsen till den produkten.
 
+Innan du implementerar valutakurser måste du ange att den önskade händelsen ska vara &quot;Valuta&quot; under [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
+
 ```js
-// Send $9.99 USD in event1 using the events variable. Make sure the event type for event1 is Currency in report suite settings
+// Send $9.99 USD in event1 using the events variable. Make sure the event type for event1 is Currency in Report suite settings
 s.currencyCode = "USD";
 s.events = "event1=9.99";
 
-// Send $9.99 USD in event1 using the products variable. Make sure the event type for event1 is Currency in report suite settings
+// Send $9.99 USD in event1 using the products variable. Make sure the event type for event1 is Currency in Report suite settings
 s.currencyCode = "USD";
 s.events = "event1";
 s.products = "Example category;Example product;1;0;event1=9.99";
@@ -96,11 +100,13 @@ s.products = "Example category;Example product;1;0;event1=9.99";
 
 Du kan ändra en anpassad händelse och acceptera decimalvärden i stället för heltal. Numeriska händelser fungerar på ungefär samma sätt som valutakändelser, förutom att de inte använder valutakonvertering. Du kan ange numeriska händelser i `products` variabeln om du vill att händelsen bara ska vara den produkten.
 
+Innan du implementerar numeriska händelser måste du se till att du ställer in den önskade händelsen på Numeric under [Success-händelser](/help/admin/admin/c-success-events/success-event.md) i inställningarna för rapportsviten.
+
 ```js
-// Send 4.5 in event1 using the events variable. Make sure the event type for event1 is Numeric in report suite settings
+// Send 4.5 in event1 using the events variable. Make sure the event type for event1 is Numeric in Report suite settings
 s.events = "event1=4.5";
 
-// Send 4.5 in event1 using the products variable. Make sure the event type for event1 is Numeric in report suite settings
+// Send 4.5 in event1 using the products variable. Make sure the event type for event1 is Numeric in Report suite settings
 s.events = "event1";
 s.products = "Example category;Example product;1;0;event1=4.5";
 ```
