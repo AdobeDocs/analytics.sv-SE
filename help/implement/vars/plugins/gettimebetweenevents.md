@@ -2,7 +2,7 @@
 title: getTimeBetweenEvents
 description: Mät tiden mellan två händelser.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Med plugin-programmet kan du hålla reda på hur lång tid det tar mellan två Analytics-event, inklusive kundvagn och anpassade händelser. `getTimeBetweenEvents` Det är användbart för att spåra hur lång tid det tar för en utcheckningsprocess att slutföra eller för andra processer som du vill mäta tid. Denna plugin behövs inte om du inte har några konverteringsprocesser som du vill mäta hur lång tid de tar.
 
-## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
+## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
-Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
 1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
@@ -70,7 +70,7 @@ I metoden används följande argument: `getTimeBetweenEvents`
 * **`rt`** (obligatoriskt, booleskt): Starta om tidsinställningen. Ange till `true` om du vill starta om timern varje gång variabeln `events` innehåller en starttidshändelse. Ange till `false` om du inte vill att timern ska starta om när en starttidsinställningshändelse visas.
 * **`stp`** (required, string): Stoppa timerhändelser. En kommaavgränsad sträng med Analytics-händelser som&quot;stoppar timern&quot;.
 * **`res`** (obligatoriskt, booleskt): Återställ alternativet Timer. Ange till `true` om du vill registrera tiden sedan timern startades OCH återställa timern efter att den stoppats. Ange till `false` om du vill spela in tiden men inte stoppa timern. Om det anges till `false`fortsätter timern att köras efter det att händelsemabeln har registrerat en stop-händelse.
-   > [!TIP] Om du ställer in det här argumentet på `false`bör du ställa in `rte` argumentet nedan.
+   >[!TIP] Om du ställer in det här argumentet på `false`bör du ställa in `rte` argumentet nedan.
 * **`cn`** (valfri, sträng): Det cookie-namn där tidpunkten för den första händelsen lagras. Standardvärdet är `"s_tbe"`.
 * **`etd`** (valfritt, heltal): Förfallotid för cookien i dagar. Anges `0` till förfallodatum i slutet av webbläsarsessionen. Standardvärdet är 1 dag om den inte anges.
 * **`fmt`** (valfri, sträng): Formatet på den tid som antalet sekunder returneras i (standardvärdet är ingenting)
@@ -106,7 +106,7 @@ s.eVar1 = s.getTimeBetweenEvents("event1", true, "event2", true, "", 0, "s", 2, 
 * Timern återställs (dvs. gå till 0 sekunder) varje gång s.events innehåller event2
 * Timern återställs också när s.events innehåller event3 ELLER om besökaren stänger sin webbläsare
 * När en faktisk tid mellan event1 och event2 spelas in, ställer plugin-programmet in eVar1 som lika med antalet sekunder mellan de två händelser som ställs in, avrundat till närmaste 2-sekunders test (t.ex. 0 sekunder, 2 sekunder, 4 sekunder, 10 sekunder, 184 sekunder osv.)
-* Om s.events innehåller event2 innan en timer har startats, kommer eVar1 inte att anges alls.
+* Om s.events innehåller event2 innan en timer har startats, ställs inte eVar1 in alls.
 
 ### Exempel 2
 
@@ -123,7 +123,7 @@ s.eVar1 = s.getTimeBetweenEvents("event1", false, "event2", false, "s_20", 20, "
 * Timern stoppas INTE när s.events innehåller event2, men plugin-programmet spelar in tiden sedan den ursprungliga inställningen för event1 spelades in
 * Timern lagras i en cookie med namnet&quot;s_20&quot;
 * Timern återställs endast när s.events innehåller event3 ELLER om 20 dagar har gått sedan timern startades
-* När en tid mellan (den ursprungliga) händelse1 och händelse2 registreras, kommer plugin-programmet att ställa in eVar1 lika med antalet timmar mellan de två händelser som ställs in, avrundat till närmaste 1/2-timmars riktmärke (t.ex. 0 timmar, 1,5 timmar, 3 timmar, 7,5 timmar, 478,5 timmar osv.)
+* När en tid mellan (ursprunglig) händelse1 och händelse2 registreras, kommer plugin-programmet att ställa in eVar1 som lika med antalet timmar mellan de två händelser som ställs in, avrundat till närmaste 1/2-timmars riktmärke (t.ex. 0 timmar, 1,5 timmar, 3 timmar, 7,5 timmar, 478,5 timmar osv.)
 
 ### Exempel 3
 
