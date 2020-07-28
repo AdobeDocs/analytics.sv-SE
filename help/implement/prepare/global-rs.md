@@ -1,8 +1,8 @@
 ---
-title: Global rapportserie i Adobe Analytics
+title: Globala rapportsviter i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
 translation-type: tm+mt
-source-git-commit: 9704267cd3ebf480facd68f6cca44167b1d9686d
+source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%
@@ -16,7 +16,7 @@ En global rapportserie är en rapportserie som samlar in data från alla domäne
 
 ## Fördelar
 
-Adobe rekommenderar att man i de flesta fall implementerar en global rapportserie.
+Adobe rekommenderar att man i de flesta fall genomför en global rapportserie.
 
 * **Sammanställda data:** Med globala rapportsviter kan du se KPI:er och framgångshändelser på egna webbplatser. Segmentering och virtuella rapportsviter kan användas för att visa platsspecifika data.
 * **Stöd för Analytics mellan olika enheter:** CDA kräver en rapportserie som samlar in data från flera platser, till exempel din webbplats och mobilapp. Separata enheter kan sammanfoga data om de implementeras på rätt sätt. Mer information finns i Analytics [för](../../components/cda/overview.md) olika enheter i användarhandboken för komponenter.
@@ -24,11 +24,11 @@ Adobe rekommenderar att man i de flesta fall implementerar en global rapportseri
 * **Inga sammanslagningar:** Sammanslagningar är en funktion som är ganska daterad och som sammanställer data från enskilda rapporteringsprogram dagligen. Upplysta listor tar inte bort besöks- eller besöksdata, vilket kan leda till ett högt antal. Mer information finns i [Samlingar](../../admin/c-manage-report-suites/rollup-report-suite.md) i användarhandboken för Admin.
 * **Spara tid:** Arbetsyteprojekt, klassificeringar, segment och beräknade värden är kopplade till samma globala rapportserie. Administratörer lägger mindre tid på att hantera dessa komponenter och datastyrning.
 * **Exaktare varumärkesattribuering:** Om ett besök börjar på en webbplats och sedan klickar på en annan av dina ägda webbplatser innan en lyckad händelse utlöses, samlas attribueringen in korrekt. En besökare klickar till exempel på en betald söklänk och hamnar på plats A. De klickar sedan på en länk till webbplats B och gör sedan ett köp. En global rapportsvit har korrekta attribut som återgår till betalsökningar.
-* **Förenklad implementering:** Eftersom alla varumärken/webbplatser skickar data till samma rapporteringsprogram justeras implementeringarna för varje webbplats. Den här tvingande styrningen säkerställer att en viss dimension eller mätvärden sparas i samma eVar eller händelse. Administratörer, testare, tagghanteringsägare och analytiker drar nytta av denna förenkling.
+* **Förenklad implementering:** Eftersom alla varumärken/webbplatser skickar data till samma rapporteringsprogram justeras implementeringarna för varje webbplats. Denna tvingande styrning säkerställer att en viss dimension eller mätvärden sparas i samma eVar eller händelse. Administratörer, testare, tagghanteringsägare och analytiker drar nytta av denna förenkling.
 
 >[!NOTE]
 >
->Att samordna en global rapportsvitsimplementering är ett stort projekt. Adobe rekommenderar att du samarbetar med en konsult för att minska antalet komplikationer och problem som kan uppstå.
+>Att samordna en global rapportsvitsimplementering är ett stort projekt. Adobe rekommenderar att ni samarbetar med en konsult för att minska antalet komplikationer och problem som kan uppstå.
 
 ## Starta en ny implementering med en global rapportserie
 
@@ -36,11 +36,11 @@ Använd följande allmänna riktlinjer för att förstå hur man implementerar e
 
 1. Skapa den globala rapportsviten i Adobe Analytics. Mer information finns i [Skapa en rapportsserie](../../admin/admin-console/create-report-suite.md) i användarhandboken för Admin.
 2. Arbeta med team i organisationen som ansvarar för varje domän. Många team har rapporteringskrav som är specifika för deras verksamhetsområde.
-3. Registrera och samla alla dessa krav i ett [konstruktionsdokument](solution-design.md). Om team har liknande krav för en dimension kan de använda samma anpassade variabel. Om till exempel plats A och plats B båda kräver en bredd-crumb-dimension, kan implementeringar för båda platserna skicka dessa data via eVar1.
-   > [!IMPORTANT] Se till att alla anpassade variabler används på samma sätt i alla domäner. Använd inte samma eVar eller händelse för olika syften på olika platser.
+3. Registrera och samla alla dessa krav i ett [konstruktionsdokument](solution-design.md). Om team har liknande krav för en dimension kan de använda samma anpassade variabel. Om till exempel plats A och plats B båda kräver en omfattande dimension, kan implementeringar för båda platserna skicka dessa data via eVar1.
+   >[!IMPORTANT] Se till att alla anpassade variabler används på samma sätt i alla domäner. Använd inte samma eVar eller händelse för olika syften på alla era webbplatser.
 4. Se till att varje domän har ett datalager som förenklar datainsamlingen. Data kan fortfarande samlas in utan ett datalager, men tillförlitligheten och varaktigheten i implementeringen minskar, särskilt när sajten genomgår omformningar.
 5. Använd Adobe Experience Platform Launch för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [Startöversikt](https://docs.adobe.com/content/help/en/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
-6. Inkludera [Adobe Experience Cloud ID Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) och använd funktionen [appendVisitorIDsTo](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html) . Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
+6. Inkludera [Adobe Experience Cloud ID-tjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) och använd funktionen [appendVisitorIDsTo](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html) . Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
 
 ## Ändra en befintlig implementering med en global rapportserie
 
