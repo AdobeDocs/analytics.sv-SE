@@ -3,7 +3,7 @@ description: Kom igång med Ad Hoc Analysis.
 title: Komma igång
 uuid: 6a698e18-4e62-405e-b020-b973c9c4008b
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: b6802e785deadfed17631ade1d9539e578515d7a
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 # Kom igång med Ad Hoc Analysis{#concept_48936BA28FAE42DB81F1B2CD4726EB17}
 
 >[!Iviktig]
->Den 6 augusti 2018 meddelade Adobe att man hade för avsikt att avsluta livscykeln Ad Hoc Analysis. Ett slutdatum meddelas så snart det är tillgängligt. Mer information, inklusive vilka versioner av Java som kommer att vara kompatibla under perioden, finns på [https://adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace).
+>Den 6 augusti 2018 meddelade Adobe sin avsikt att avsluta livscykeln Ad hoc analysis. Ett slutdatum meddelas så snart det är tillgängligt. Mer information, inklusive vilka versioner av Java som kommer att vara kompatibla under perioden, finns på [https://adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace).
 
 Du kan utföra ögonblicklig, avancerad analys av webbplatsaktiviteter. Du kan visa flera rapporter samtidigt och tillämpa segment över flera dimensioner. Ni kan analysera data från både mikro- och makroperspektiv för att se hur de påverkar era viktiga affärsvärden.
 
@@ -30,11 +30,11 @@ Med de här funktionerna kan du besvara frågor om webbplatstrafik, demografi f�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1. Logga in på Adobe <span class="keyword"> Analytics</span>. </p> </td> 
-   <td colname="col2"> <p>Gå till <a href="https://experiencecloud.adobe.com"  > marketing.adobe.com </a>och logga in med dina inloggningsuppgifter för Adobe Analytics. </p> </td> 
+   <td colname="col2"> <p>Gå till <a href="https://experiencecloud.adobe.com"  > marketing.adobe.com </a>och logga in med dina Adobe Analytics-inloggningsuppgifter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Starta Ad Hoc Analysis. </p> </td> 
-   <td colname="col2">Klicka på <span class="uicontrol"> Adobe Analytics</span> &gt; <span class="uicontrol"> Verktyg</span> &gt; <span class="uicontrol"> Ad hoc analysis</span>och klicka sedan på <span class="uicontrol"> Starta Ad hoc analysis</span> . <p> <p>Obs! Om du inte ser knappen <b>Starta Ad hoc analysis</b> på den här sidan kontrollerar du att administratören har lagt till dig i gruppen <i>Ad hoc analysis License User</i> i Admin Tools. </p> </p> </td> 
+   <td colname="col2">Klicka på <span class="uicontrol"> Adobe Analytics</span> &gt; <span class="uicontrol"> Verktyg</span> &gt; <span class="uicontrol"> Ad hoc analysis</span>och sedan på <span class="uicontrol"> Starta Ad hoc analysis</span> . <p> <p>Obs! Om du inte ser knappen <b>Starta Ad hoc analysis</b> på den här sidan kontrollerar du att administratören har lagt till dig i gruppen <i>Ad hoc analysis License User</i> i Admin Tools. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3. Skapa ett projekt. </p> </td> 
@@ -57,7 +57,7 @@ Med de här funktionerna kan du besvara frågor om webbplatstrafik, demografi f�
  </tbody> 
 </table>
 
-## Systemrekommendationer {#concept_6691331B45174290BD9B839806A9B52D}
+## System Recommendations {#concept_6691331B45174290BD9B839806A9B52D}
 
 Även om rapporter fungerar som de ska i de flesta webbläsare så fungerar de bäst i system som uppfyller vissa rekommendationer.
 
@@ -69,7 +69,7 @@ c_sys_reqs.xml
 
 >[!NOTE]
 >
->Från och med juli 2018 stöder Ad Hoc Analysis endast Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja din Ad hoc analysis implementering.
+>Från och med juli 2018 stöder Ad Hoc Analysis endast Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 har Adobe inte längre stöd för Ad hoc analysis implementering.
 
 * Grafikkort med stöd för OpenGL 2.0
 * Cookies: Obligatoriskt
@@ -84,7 +84,7 @@ c_sys_reqs.xml
 
 ## Instruktioner för Java-uppgradering {#section_E4C0C6492FF24636A0FF71A59331111D}
 
-Från och med juli 2018 stöder Ad Hoc Analysis endast Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 kommer Adobe inte längre att stödja din Ad hoc analysis implementering.
+Från och med juli 2018 stöder Ad Hoc Analysis endast Java 8 eller senare. Om du väljer att köra Ad Hoc Analysis på Java 7 efter Maintenance Release från juli 2018 har Adobe inte längre stöd för Ad hoc analysis implementering.
 
 Våra .jar-filer är signerade med en säker 256-bitarskryptering som inte stöds av Java-versioner som är mindre än 1.7.0_76. Detta 256-bitars certifikat ger dig bättre säkerhet.
 
@@ -93,8 +93,8 @@ Om du fortfarande har Java 7 installerat måste du uppgradera före underhållsv
 * Om du får installera program på datorn:
 
    1. Gå till https://www.java.com.
-   1. Klicka på **[!UICONTROL Free Java Download]**.
-   1. Klicka på **[!UICONTROL Agree and Start Free Download]**.
+   1. Klicka på **[!UICONTROL Java Download]**.
+   1. Klicka på **[!UICONTROL Agree and Start Download]**.
    1. Installera den senaste Java-versionen som är specifik för ditt operativsystem.
 
 * Om du **inte** får installera program på datorn:
@@ -109,7 +109,7 @@ c_login.xml
 
  -->
 
-Du kan logga in från [!DNL Experience Cloud] eller från en URL-adress. Om du loggar in från Rapporter och Analytics loggas du in automatiskt. Du behöver bara logga in med en URL-adress om du kommer åt den ad hoc analysis URL-adressen från en annan plats, till exempel en länk eller från en favoritmeny.
+Du kan logga in från [!DNL Experience Cloud] eller från en URL-adress. Om du loggar in från Reports and Analytics loggas du in automatiskt. Du behöver bara logga in med en URL-adress om du kommer åt den ad hoc analysis URL-adressen från en annan plats, till exempel en länk eller från en favoritmeny.
 
 ## Logga in från Experience Cloud {#task_128ED319F3AE49ED886EA3DFA8D0987F}
 
