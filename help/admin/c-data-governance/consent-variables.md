@@ -2,8 +2,11 @@
 description: Variabler för sekretessrapportering inom datasekretess.
 title: Variabler för sekretessrapportering
 topic: Admin tools
-translation-type: ht
-source-git-commit: ddbd724231850c816e7b2b2e56dc139d31276d0c
+translation-type: tm+mt
+source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 100%
 
 ---
 
@@ -42,7 +45,7 @@ Varje rapportsvit kan konfigureras på följande sätt:
 
 1. Klicka på knappen **[!UICONTROL Enable Data Privacy Reports]**.
 
-   > [!NOTE] När variablerna har aktiverats kan de inte stängas av.
+   >[!NOTE] När variablerna har aktiverats kan de inte stängas av.
 
    ![](assets/rsm-privacy-enable.png)
 
