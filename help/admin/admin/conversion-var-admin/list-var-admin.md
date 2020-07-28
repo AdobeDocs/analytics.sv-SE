@@ -2,7 +2,10 @@
 title: Listvariabler
 description: Skapa och konfigurera listvariabler för rapportering.
 translation-type: tm+mt
-source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
+source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
@@ -11,7 +14,7 @@ source-git-commit: 751d19227d74d66f3ce57888132514cf8bd6f7fc
 
 Skapa och konfigurera listvariabler för rapportering. Ange värden för avgränsare, förfallodatum, allokering och max här.
 
-Du kan komma åt konfigurationen i Admin Console:
+Du kommer åt konfigurationen i Admin Console:
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**
 2. Välj rapportsviten.
@@ -20,9 +23,9 @@ Du kan komma åt konfigurationen i Admin Console:
 * **Namn**: Varje avgränsat värde kan innehålla högst 255 tecken (eller mindre om flerbytetecken används). Det här är maxlängden för varje element.
 * **Värdeavgränsare**: Det tecken som används för att avgränsa värden inom List Var. De vanligaste är tecken som kommatecken, kolon, rör eller liknande.
 
-   > [!NOTE] Flerbytetecken stöds inte som avgränsare i List Vars. Avgränsaren måste vara en byte.
+   >[!NOTE] Flerbytetecken stöds inte som avgränsare i List Vars. Avgränsaren måste vara en byte.
 
-* **Förfallodatum**: På samma sätt som eVar-förfallodatum avgör detta hur lång tid det kan ta mellan List Var och konverteringshändelsen för dem att vara relaterade.
+* **Förfallodatum**: På samma sätt som när eVar förfaller avgör detta hur lång tid det kan ta mellan List Var och konverteringshändelsen för dem att vara relaterade.
    * **På en sidvy eller en besöksnivå**: Framgångshändelser utanför sidvyn eller besöket länkar inte tillbaka till några värden i List Var.
    * **Baserat på en tidsperiod, t.ex** dag, vecka, månad: Slutförda händelser efter den angivna tidsperioden länkar inte tillbaka till några värden i List Var. Ett anpassat antal dagar kan också definieras.
    * **Specifika konverteringshändelser**: Andra lyckade händelser som utlöses efter den angivna händelsen länkas inte tillbaka till några värden i List Var.
