@@ -1,9 +1,9 @@
 ---
-description: Den här hjälpsidan innehåller rekommenderade användningsexempel för alla Adobe Analytics-verktyg. Verktyg bör beaktas i den ordning de anges. Om ett visst verktyg inte uppfyller behovet går du vidare till nästa verktyg för övervägande.
+description: Den här hjälpsidan innehåller rekommenderade användningsexempel för varje Adobe Analytics-verktyg. Verktyg bör beaktas i den ordning de anges. Om ett visst verktyg inte uppfyller behovet går du vidare till nästa verktyg för övervägande.
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 2%
@@ -13,11 +13,11 @@ ht-degree: 2%
 
 # Vilket Adobe Analytics-verktyg ska jag använda?
 
-Den här hjälpsidan innehåller rekommenderade användningsexempel för alla Adobe Analytics-verktyg. Verktyg bör beaktas i den ordning de anges. Om ett visst verktyg inte uppfyller behovet går du vidare till nästa verktyg för övervägande.
+Den här hjälpsidan innehåller rekommenderade användningsexempel för varje Adobe Analytics-verktyg. Verktyg bör beaktas i den ordning de anges. Om ett visst verktyg inte uppfyller behovet går du vidare till nästa verktyg för övervägande.
 
 Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md).
 
-## Adobe Analytics Reporting - användargränssnitt {#section_8265460EBB47405AB19A3B2B0729C8A4}
+## Adobe Analytics Reporting-användargränssnitt {#section_8265460EBB47405AB19A3B2B0729C8A4}
 
 **[Analysis Workspace](/help/analyze/analysis-workspace/home.md)**bör vara användargränssnittet för alla dina rapporterings- och analysbehov. Adobe fortsätter att investera i och släppa månadsuppdateringar av den här produkten. Om det finns en uppgift du inte kan göra i Analysis Workspace bör du tänka på de andra gränssnitten nedan.**
 
@@ -48,7 +48,7 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 
 ## Importera data till Adobe Analytics {#section_B42B998D6E3E4357B024AEFA4EC69A23}
 
-**[Klassificeringar](/help/components/c-classifications2/c-classifications.md)**bör användas:
+**[Klassificeringar](/help/components/classifications/c-classifications.md)**bör användas:
 
 * När det finns metadata som du vill koppla till ett samlingsvärde (eVar, prop, marknadsföringskanal)
 * Alternativ:
@@ -63,24 +63,24 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 
    * Sammanfattning: enkel dataöverföring per dag eller begränsade dimensioner
    * Transaktions-ID: överföring av data som kopplar en online-slutpunkt till offlinedata och kopplar importerade data till en besökarögonblicksbild som tagits online (t.ex. online-beställningar och returneras offline)
-   * Fullständig bearbetning: tidstämplade datakällor, bearbetade som om de vore en träff som samlats in av Adobes servrar. Dvs. data infogas direkt i besökarresan.
+   * Fullständig bearbetning: tidstämplade datakällor, bearbetade som om de hade samlats in av Adobe-servrar. Dvs. data infogas direkt i besökarresan.
 
 **[Dataanslutningar](https://www.adobeexchange.com/experiencecloud.html)(tidigare Genesis)**ska användas:
 
-* När du kontaktar en tredjepartsleverantör som har byggt en anslutning med Adobe Analytics. Data Connectors lägger vanligtvis in data på sammanfattningsnivå i Adobe Analytics permanent och automatiskt, regelbundet.
+* När du kontaktar en tredjepartsleverantör som har skapat en anslutning som stöds av Adobe Analytics. Data Connectors lägger vanligtvis in data på sammanfattningsnivå i Adobe Analytics permanent och automatiskt, regelbundet.
 
 **[API](/help/import/c-data-insertion-api/c-data-insertion-api.md)**för datainmatning ska användas:
 
-* När du behöver överföra data till Adobe Analytics, och inte kan använda Adobe AppMeasurement eller mobil SDK-kod.
+* När du behöver överföra data till Adobe Analytics och inte kan använda Adobe AppMeasurement eller mobil SDK-kod.
 
 **[Kundattribut](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html)**ska användas:
 
 * Om du samlar in företagsdata i en CRM-databas (customer relationship management) och vill överföra data till Experience Cloud.
 * Om du vill använda CRM-data för en mer detaljerad analys i Analytics, eller som målinriktningskriterier i Adobe Target.
 
-**[Målgruppen Analytics](/help/integrate/c-audience-analytics/mc-audiences-aam.md)**ska användas:
+**[Audience Analytics](/help/integrate/c-audience-analytics/mc-audiences-aam.md)**ska användas:
 
-* Om du vill inkludera målgruppsdata från Adobe Audience Manager (AAM), t.ex. demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data eller annonsvisningsdata i ett Analytics-arbetsflöde.
+* Om du vill inkludera Adobe Audience Manager (AAM) målgruppsdata som demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data eller annonsvisningsdata i ett Analytics-arbetsflöde.
 * Om du vill att överförda CRM-data ska vara tidsbaserade, eftersom den här integreringen skickar ny information till Analytics som träffats vid en träff.
 
 ## Exportera data från Adobe Analytics {#section_901C06ABF2014E92B2952906723DF235}
@@ -88,7 +88,7 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 **[Report Builder](/help/analyze/report-builder/home.md)**ska användas:
 
 * Om de anpassade layoutalternativen för arbetsytan är begränsade (allt är möjligt i Report Builder, inom Excel-gränserna).
-* Lättare att knyta indata från användare eller offlinedatakällor (visningar, kostnader) till Adobe-data. En mer permanent lösning för att binda data är datakällor (se Importera data till Analytics).
+* För att smidigt knyta indata från användare eller offlinedatakällor (visningar, kostnader) till data från Adobe. En mer permanent lösning för att binda data är datakällor (se Importera data till Analytics).
 * Att sammanfoga data från olika flerdimensionella rapporter (t.ex. en rapport om kampanjavtryck tillsammans med en kampanjrapport för klick-till-konvertering).
 * Om du vill visa flera rapporter samtidigt.
 * Om automatisering genom schemaläggning önskas (XLSX, XLSM, CSV, PDF, TXT, XML, MHT).
@@ -98,19 +98,19 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 * Om du vill få åtkomst till variabler som annars är dolda i användargränssnittet - IP-adress, Experience Cloud-ID, Analytics Visitor-ID, sidadress)
 * Få åtkomst till mer detaljerade data än användargränssnittet (denormaliserad tabellvy)
 * Hämta data i ett format som passar för pivottabellindata
-* Om kunden vill lägga in Adobe-data i ett datavisualiseringsverktyg från tredje part (något sammanfattande, inte på träffnivå)
-* För att få tillgång till alla unika dimensionsobjekt om du kör i&quot;Låg trafik&quot; i Adobe Analytics
+* Om klienten vill mata in data från Adobe i ett datavisualiseringsverktyg från tredje part (något summerat och inte på träffnivå)
+* För att få åtkomst till alla unika dimensionsobjekt om du kör i&quot;Låg trafik&quot; i Adobe Analytics
 
 **[Analytics Data Feed](/help/export/analytics-data-feed/c-df-contents/datafeeds-contents.md)**ska användas:
 
 * För att kunna använda den mest detaljerade datafeed som vi kan tillhandahålla (besökar-ID, tryck).
-* Om kunden vill ha Adobe-data lagrade i en databas på klientsidan, på den mest detaljerade nivå vi kan skicka.
-* Om kunden vill utveckla ett verktyg för Business Intelligence (BI) eller lägga in data på träffnivå i ett verktyg från tredje part.
+* Om klienten vill ha Adobe-data lagrade i en klientdatabas, på den mest detaljerade nivå vi kan skicka.
+* Om klienten vill utveckla ett verktyg för Business Intelligence (BI) eller mata in data på träffnivå i ett verktyg från tredje part.
 
 **[Rapporterings-API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md)**bör användas när de andra visualiseringsalternativen inte uppfyller dina behov. De tre API-alternativen omfattar:
 
-* **Fullt bearbetad**: när ni vill ha funktionsrika data (inklusive besök, besökare och segment). Det här är typiska Analytics-användargränssnitt som sammanfattar data som är tillgängliga inom cirka 30-90 minuter. Kan användas med Report Builder.
-* **Realtid**: när du vill visa ett par mätvärden och dimensioner med några sekunders fördröjning. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Innehåller unika algoritmer för de flesta populära, vinnare och förlorare. Kan användas med Report Builder.
+* **Fullt bearbetad**: när ni vill ha funktionsrika data (inklusive besök, besökare och segment). Det här är typiska Analytics-användargränssnitt som sammanfattar data som är tillgängliga inom cirka 30-90 minuter. Kan användas via Report Builder.
+* **Realtid**: när du vill visa ett par mätvärden och dimensioner med några sekunders fördröjning. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Innehåller unika algoritmer för de flesta populära, vinnare och förlorare. Kan användas via Report Builder.
 * **[!UICONTROL Live Stream]**: när du vill ha en ström av delvis bearbetade Analytics-data på träffnivå inom några sekunder från insamlingen. Detta är delvis bearbetade data som är tillgängliga inom cirka 30 sekunder. Endast för Analytics Premium. Kräver ett sätt att visualisera data, vanligtvis genom ett engagemang från Engineering Services.
 
 ## Anpassade lösningar {#section_4A212F26A15947599DFB0399A0440CB6}
