@@ -2,9 +2,9 @@
 title: Prop
 description: En anpassad dimension som du kan använda vid rapportering.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 7c722e361978a3d7517e95c23442b703e7e25270
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Props är anpassade variabler som du kan använda hur du vill. De finns inte kva
 >
 >Adobe rekommenderar att du använder [eVars](evar.md) i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
 
-Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md)kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Hur många som är tillgängliga beror på ditt avtal med Adobe. Upp till 75 props finns om ditt avtal med Adobe ger support.
+Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md)kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Antalet tillgängliga props beror på ditt kontrakt med Adobe. Upp till 75 props finns om ditt avtal med Adobe stöder det.
 
 ## Fylla i uttryck med data
 
@@ -28,9 +28,19 @@ Varje prop samlar in data från frågesträngen [`c1` - `c75` i bildbegäranden]
 
 AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `prop1` - `prop75`. Mer information om implementeringsriktlinjer finns i [beskrivningen](/help/implement/vars/page-vars/prop.md) i Implementera användarhandbok.
 
-## Dimensionsobjekt
+## Dimensioner
 
 Eftersom utkast innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekt som finns för varje steg. Se till att du registrerar syftet med varje utkast och typiska dimensionsobjekt i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+
+## Skiftlägeskänslighet
+
+Props är som standard inte skiftlägeskänsliga. Om du skickar samma värde i olika fall (till exempel `"DOG"` och `"Dog"`) grupperar Analysis Workspace dem tillsammans i samma dimensionsobjekt. När det första värdet som visas i början av rapportmånaden används. Data warehouse visar det första värdet som påträffades under begärandeperioden.
+
+Du kan göra vilket som helst skiftlägeskänsligt. Du kan även inaktivera skiftlägeskänslighet för alla uttryck när det är aktiverat. Kontakta Adobe kundtjänst med rapportsvitens-ID och de variabler du vill använda för att växla skiftlägeskänslighet.
+
+>[!IMPORTANT]
+>
+>Växla skiftlägeskänslighet kan klippa ut dimensionsobjekt, skapa oväntade resultat med segment och orsaka problem med filter. Adobe rekommenderar starkt att du växlar den här inställningen mellan två större tidsperioder, till exempel början av en månad eller ett år.
 
 ## Värde för uttryck över eVars
 
