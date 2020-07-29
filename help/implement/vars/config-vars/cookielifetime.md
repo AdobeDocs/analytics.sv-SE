@@ -2,7 +2,7 @@
 title: cookieLifetime
 description: Åsidosätt förfallodatumet för cookies som skapas i AppMeasurement.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 7c0d363cc3d0f504d638479b02bf4435491b22fd
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 1%
@@ -48,4 +48,4 @@ s.cookieLifetime = "SESSION";
 
 // Expire cookies after exactly 24 hours
 s.cookieLifetime = "86400";
-
+```
