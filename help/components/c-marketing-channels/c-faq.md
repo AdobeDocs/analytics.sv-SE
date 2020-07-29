@@ -1,10 +1,10 @@
 ---
-description: Läs om bästa praxis och exempel på hur ni kan fylla i olika regler som ni kan konfigurera för era marknadsföringskanaler.
 title: Vanliga frågor om marknadsföringskanaler
+description: Vanliga frågor och svar om marknadsföringskanaler.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 7c722e361978a3d7517e95c23442b703e7e25270
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -12,32 +12,28 @@ ht-degree: 0%
 
 # Vanliga frågor om marknadsföringskanaler
 
-Se [Skapa regler](/help/components/c-marketing-channels/c-rules.md) för bearbetning av marknadsföringskanaler för definitioner av fält som visas på [!UICONTROL Marketing Channel Processing Rules] sidan.
+Vanliga frågor och svar om marknadsföringskanaler.
 
-## Vanliga frågor {#faq}
-
-Alla implementeringar av regler för bearbetning av marknadsföringskanaler kan variera beroende på dina spårningskoder. Om du konfigurerar regler som ger resultat du är ute efter kan du behöva lite kreativt tänkande för att lösa problem.
-
-**Fråga**: Mina spårningskoder följer inget mönster och jag har tusentals som måste anges för min Filials-kanal.
+## Mina spårningskoder följer inget mönster och jag har tusentals som måste anges för min Filials-kanal.
 
 * Använd elimineringsprocessen. Om kanalerna E-post och Filialer använder samma frågesträngsparameter, men du bara har ett fåtal e-postspårningskoder, kan du ange e-postspårningskoderna i en regeluppsättning som definierar e-post. Sedan klassificerar du alla andra spårningskoder med *`affiliates.`*
 * I e-postsystemet lägger du till en frågesträngsparameter i alla URL-adresser för landningssidor, till exempel *`&ch=eml`*. Skapa en regeluppsättning som identifierar om ch-frågeparametern är lika med *`eml`*. Om det inte innehåller något *`eml`*&#x200B;är det ett närstående bolag.
 
-**Fråga**: Referensdomäner innehåller mer data än jag förväntade mig.
+## Referensdomäner innehåller mer data än jag förväntade mig.
 
 * Referensdomäner kan vara för höga i listan över bearbetningsregler. Det ska vara en av de sista (eller sista) regeluppsättningarna, eftersom bearbetningsordningen är viktig.
 
-**Fråga**: Jag har skapat en regel som matchar en frågesträngsparameter och som inte fungerar.
+## Jag har skapat en regel som matchar en frågesträngsparameter och som inte fungerar.
 
 * Kontrollera att parameternamnet har angetts i frågesträngsparameterfälten (vanligtvis ett alfanumeriskt värde). Kontrollera också att parametervärdet anges efter operatorn, vilket visas i följande exempel på en e-postregel.
 
    ![](assets/example_email.png)
 
-**Fråga**: Varför tillskrivs all min trafik med sista handen en intern domän?
+## Varför tillskrivs all min trafik med sista handen en intern domän?
 
 * Du har en regel som matchar intern trafik. Kom ihåg att dessa regler gäller för varje träff som besökaren gör på er webbplats, inte bara för det första besöket. Om du har en regel som *`Page URL exists`* utan andra villkor matchas kanalen för varje efterföljande träff på webbplatsen, eftersom det alltid finns en sidadress.
 
-**Fråga**: Hur felsöker jag trafik som visas i Ingen kanal identifierad i rapporten?
+## Hur felsöker jag trafik som visas i Ingen kanal identifierad i rapporten?
 
 * Regelprocessen är i ordning. Om inga specifika kriterier har matchats faller träffarna in i en av tre kategorier:
 
@@ -81,27 +77,37 @@ Den här typen av regel fungerar som en&quot;catch all&quot;-regel för att säk
 
 Senaste-beröringen av sessionsuppdatering kan bara utföras om det också var den första beröringen - se Relation mellan första och sista beröringen ovan. Scenarierna nedan förklarar hur Sessionsuppdatering kan vara en kanal med första klicket.
 
-**Scenario 1: Tidsgräns för session**
+* **Tidsgräns** för session: En besökare kommer till webbplatsen och lämnar sedan fliken öppen i sin webbläsare för användning vid ett senare tillfälle. Besökarens engagemangsperiod går ut (eller så tar de frivilligt bort sina cookies) och de använder den öppna fliken för att besöka webbplatsen igen. Eftersom den refererande URL:en är en intern domän kommer besöket att klassificeras som Sessionsuppdatering.
 
-En besökare kommer till webbplatsen och lämnar sedan fliken öppen i sin webbläsare för användning vid ett senare tillfälle. Besökarens engagemangsperiod går ut (eller så tar de frivilligt bort sina cookies) och de använder den öppna fliken för att besöka webbplatsen igen. Eftersom den refererande URL:en är en intern domän kommer besöket att klassificeras som Sessionsuppdatering.
+* **Alla webbplatssidor är inte taggade**: En besökare kommer till sida A som inte är taggad och går sedan till sida B som är taggad. Sidan A betraktas som den interna referenten och besöket klassificeras som Sessionsuppdatering.
 
-**Scenario 2: Alla webbplatssidor är inte taggade**
+* **Omdirigeringar**: Om en omdirigering inte är inställd för att skicka referensdata till den nya landningssidan, förloras alla data i den verkliga posten, och nu visas omdirigeringssidan (troligtvis en intern sida) som den refererande domänen. Besöken klassificeras som Sessionsuppdatering.
 
-En besökare kommer till sida A som inte är taggad och går sedan till sida B som är taggad. Sidan A betraktas som den interna referenten och besöket klassificeras som Sessionsuppdatering.
+* **Domänövergripande trafik**: En besökare flyttar från en domän som utlöses till Suite A till en andra domän som utlöses till Suite B. Om de interna URL-filtren i Suite B innehåller den första domänen kommer besöket i Suite B att registreras som Internal, eftersom Marketing Channels ser det som ett nytt besök i den andra sviten. Besöken klassificeras som Sessionsuppdatering.
 
-**Scenario 3: Omdirigeringar**
+( **Långa inläsningstider** på startsidan: En besökare hamnar på sidan A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildbegäran från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin begäran om Adobe Analytics-bilder. Eftersom Page A:s bildförfrågan aldrig har lästs in visas den andra sidan som den första träffen vid besöket i Adobe Analytics, där Page A är hänvisare. Besöken klassificeras som Sessionsuppdatering.
 
-Om en omdirigering inte är inställd för att skicka referensdata till den nya landningssidan, förloras alla data i den verkliga posten, och nu visas omdirigeringssidan (troligtvis en intern sida) som den refererande domänen. Besöken klassificeras som Sessionsuppdatering.
+* **Rensar cookies på** mitt-plats: En besökare kommer till webbplatsen och mitt-session rensar deras cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
 
-**Scenario 4: Domänövergripande trafik**
+## Varför ändras vissa kanaler efter att ha ändrat bearbetningsreglerna för marknadsföringskanaler?
 
-En besökare flyttar från en domän som utlöses till Suite A till en andra domän som utlöses till Suite B. Om de interna URL-filtren i Suite B innehåller den första domänen kommer besöket i Suite B att registreras som Internal, eftersom Marketing Channels ser det som ett nytt besök i den andra sviten. Besöken klassificeras som Sessionsuppdatering.
+Ibland konfigureras regler för bearbetning av marknadsföringskanal felaktigt, vilket gör det nödvändigt att ändra bearbetningsreglerna. När du har tillämpat ändringarna kan du se vissa mätvärden fortfarande attributera data till en felaktig kanal. Det finns flera saker att tänka på:
 
-**Scenario 5: Långa inläsningstider**
+* **Data för marknadsföringskanalen samlas in i realtid**: Marknadsföringskanaldata bearbetas vid datainsamling och är 100 % permanenta. Om du ändrar bearbetningsregler påverkas inte data retroaktivt.
+* **Om du ändrar bearbetningsreglerna påverkas inte direkt First Touch-data**: Till exempel:
+   1. En användare kommer in via din e-postkanal eftersom den har konfigurerats felaktigt och sedan lämnar platsen.
+   2. Nästa dag ändrar du din bearbetningsregel för e-post för att korrigera den.
+   3. Användaren kommer tillbaka flera dagar senare genom naturlig sökning och gör ett inköp.
+   4. E-postkanalen får First Touch-kredit och naturlig sökning får Last Touch-kredit.
 
-En besökare hamnar på sidan A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildbegäran från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin begäran om Adobe Analytics-bilder. Eftersom Page A:s bildförfrågan aldrig har lästs in visas den andra sidan som den första träffen vid besöket i Adobe Analytics, där Page A är hänvisare. Besöken klassificeras som Sessionsuppdatering.
+   Även flera dagar efter att du ändrat bearbetningsreglerna kan data fortfarande samlas in i fel First Touch-kanal. Första beröringsdata samlas kontinuerligt in i fel kanal tills alla användares besökarengagemang upphör.
 
-**Scenario 6: Rensar cookies mitt på webbplatsen**
+Det bästa sättet att åtgärda dessa skillnader är att göra något eller båda av följande:
 
-En besökare kommer till webbplatsen och mitt-session rensar deras cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
+* **Förfaller alla besökares interaktionsperioder** manuellt: Den här inställningen upphör omedelbart att gälla alla första och sista beröringskanaler för alla besökare:
+   1. Gå till Administratörsverktyg > Rapportsviter.
+   2. Hovra över Inställningar för bildredigering > Marknadsföringskanaler > Förfallotid för besökarengagemang
+   3. Klicka på Förfalla alla.
+   4. Klicka på OK i popup-fönstret för varningar och bekräfta att du är införstådd med vad det kommer att göra.
 
+* **Visa endast Senaste beröringsstatistik från den tidpunkt du korrigerade reglerna framåt**: Senaste beröringsmått följer alltid den aktuella linjaluppsättningen. Om du visar tiden från när du ändrade bearbetningsregler framåt korrekt, visas de senaste bearbetningsreglerna.
