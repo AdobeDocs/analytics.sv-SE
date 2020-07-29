@@ -2,9 +2,9 @@
 description: Systemkrav och en jämförelse mellan Analysis Workspace, rapporter och Analytics, Ad Hoc Analysis, Report Builder, Data warehouse och Data Workbench
 title: Produktjämförelse och krav för analyser
 translation-type: tm+mt
-source-git-commit: 22d6e88f01868e38e6de4de2efa277d5d16954d5
+source-git-commit: 0885a42ccf79565d2ad55cf84e346926f2328f77
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '672'
 ht-degree: 36%
 
 ---
@@ -26,9 +26,9 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
 | **Synlig radgräns (före sidnumrering)** | 400 | 200 | 50000 | Obegränsad | Obegränsad | Obegränsad | 50000 |
 | **Flera rapportsviter** | [Ja](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) | Ja, med begränsningar | Ja | Nej | Ja | Nej | Ja |
 | **Antal uppdelningar** | Obegränsad | Upp till 2 | Upp till 2 | Obegränsad | Obegränsad | Obegränsad | Obegränsat, kör över flera frågor |
-| &quot;**Segmentering** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-workflow.html) | Ja | Ja | Ja | Ja, med [begränsningar](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segment-reference/seg-compatibility.html) | Ja | Nej | Ja |
+| **Segmentering** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-workflow.html) | Ja | Ja | Ja | Ja, med [begränsningar](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segment-reference/seg-compatibility.html) | Ja | Nej | Ja |
 | **Beräknade mätvärden** <br>[Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/components/calculated-metrics/cm-overview.html) | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) | Ja | Ja | Nej | Ja | Nej | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) |
-| **Marknadsföringskanaler** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-getting-started-mchannel.html) | Ja | Ja | Ja | Ja | Ja | Ja - va_finder, va_Närmare | Ja |
+| **Marknadsföringskanaler** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-getting-started-mchannel.html) | Ja | Ja | Ja | Ja | Ja | Ja - [va_finder, va_close](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html) | Ja |
 | **Kohortanalys** | [Ja](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.html) | Nej | Nej | Nej | Ja | Nej | Nej |
 | **Attribuering** | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) | Begränsad | Begränsad | Nej | Ja | Nej | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) |
 | **Funktioner** i Virtual Analyst <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/overview.html) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
