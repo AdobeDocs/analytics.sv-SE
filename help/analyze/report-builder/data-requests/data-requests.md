@@ -1,14 +1,17 @@
 ---
 description: 'null'
-title: Databegäranden - Guiden Begär begäran, steg 1
+title: Dataförfrågningar – frågeguiden steg 1
 uuid: 717542c3-e4aa-4e00-b0ca-cadecd219d13
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: 178e372e63c436268a1f7028d986504983430b2f
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 5%
 
 ---
 
 
-# Databegäranden - Guiden Begär begäran, steg 1
+# Dataförfrågningar – frågeguiden steg 1
 
 I Request Wizard: Steg 1-formulär väljer du rapportsviten, rapporttyp, segment och konfigureringsdatum.
 
@@ -18,11 +21,11 @@ I Request Wizard: Steg 1-formulär väljer du rapportsviten, rapporttyp, segment
 
 1. **Intervallväljare**: Gör att du kan välja ett rapportpaket-ID från en cell i Excel. Se [Välj rapportsviter](/help/analyze/report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
 
-1. **Segment**: Segment är anpassade datadeluppsättningar eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Mer information om segment finns i [segmentguiden](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) för analys.
+1. **Segment**: Segment är anpassade datadeluppsättningar eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Mer information om segment finns i [Analytics Segmenteringshandbok](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) .
 
    Du kan till exempel köra ett [!UICONTROL Pages Report]och sedan använda segmentet Första gången du besöker.
 
-1. **Tillåt åsidosättning** av publiceringslista: När du schemalägger en rapport kan du välja en publiceringslista som ska användas för distribution. Publiceringslistor konfigureras i **[!UICONTROL Analytics]** > **[!UICONTROL Admin tools]**. Rapportsviten för den här begäran ersätts av det rapportsvits-ID som tilldelats varje mottagare i publiceringslistan. Se [Tillåt åsidosättning](/help/analyze/report-builder/data-requests/allow-publishing-list-overrides.md)av publiceringslista.
+1. **Tillåt åsidosättning** av publiceringslista: När du schemalägger en rapport kan du välja en publiceringslista som ska användas för distribution. Publiceringslistor konfigureras i **[!UICONTROL Analytics]** > **[!UICONTROL Admin tools]**. Rapportsviten för den här begäran ersätts av det rapportsvits-ID som tilldelats varje mottagare i publiceringslistan. See [Allow Publishing List Overrides](/help/analyze/report-builder/data-requests/allow-publishing-list-overrides.md).
 
 1. **Typ** av rapportering: Anger den basrapport som du vill köra i din databegäran. Du kör en rapport per begäran och den rapporten kan ha en-till-många-dimensioner och en-till-många-mått. Mätvärden och dimensioner för en rapporttyp visas i [!UICONTROL Request Wizard; Step 2] gränssnittet. Se [Välj rapporttyper](/help/analyze/report-builder/data-requests/c-report-types/select-report-types.md).
 
@@ -30,7 +33,18 @@ I Request Wizard: Steg 1-formulär väljer du rapportsviten, rapporttyp, segment
 
 1. **Använd granularitet**: Anger den tidsbaserade detaljnivå som ingår i rapporten. Se [Kornighet](/help/analyze/report-builder/data-requests/configuring-report-dates/granularity.md).
 
->[!MORELIKETHIS]
->
->* [Skapa en dataförfrågan](/help/analyze/report-builder/data-requests/t-create-a-data-request.md)
+## Felsökning
 
+Ibland visas begärandeguiden utanför skärmen, särskilt för användare som växlar mellan skärminställningarna. Du kan till exempel använda en dockningsstation på jobbet och en skärm på din bärbara dator hemma. Om du klickar på Skapa igen när en begärandeguide redan är öppen visas följande fel:
+
+&quot;Du måste först slutföra begärandeguiden innan du påbörjar en ny.&quot;
+
+Problemet åtgärdas genom att begärandeguiden flyttas tillbaka till skärmen.
+
+1. Öppna Microsoft Excel och logga in på Report Builder.
+2. Klicka [!UICONTROL Create]så öppnas begärandeguiden utanför skärmen.
+3. Tryck på `[Alt]` + `[Space]`.
+4. Tryck `[M]`.
+5. Tryck på någon av piltangenterna.
+6. Flytta musen som kopplar begärandeguiden till markören
+7. Klicka med musen för att släppa begärandeguiden på skärmen.
