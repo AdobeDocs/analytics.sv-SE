@@ -5,7 +5,7 @@ user-guide-title: Komponenthandbok för Analytics
 user-guide-description: Understand the features that help organize your data. Components include segments, calculated metrics, virtual report suites, alerts, and more. This guide also includes a variable reference, explaining all dimensions and metrics available.
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: ef8c7f83e93ac5ee52856a6bb0978725fa1cc3ff
+source-git-commit: a6eddfc9cd326bfe0b774bf4fcd03614a73490c4
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 59%
@@ -17,8 +17,8 @@ ht-degree: 59%
 
 + [Hjälp för Analytics-komponenter](home.md)
 + Dimensioner {#dimensions}
-   + [Översikt över dimensioner](dimensions/overview.md)
-   + [Dimensionskompatibilitet](dimensions/compatibility.md)
+   + [Översikt över Dimensioner](dimensions/overview.md)
+   + [Kompatibilitet med Dimensioner](dimensions/compatibility.md)
    + [Alla söksidor rankade](dimensions/all-search-page-rank.md)
    + [AM/PM](dimensions/am-pm.md)
    + [Webbläsarhöjd](dimensions/browser-height.md)
@@ -219,33 +219,33 @@ ht-degree: 59%
    + [Alert Manager](c-alerts/alert-manager.md)
    + [Intelligenta aviseringar – användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
-   + [Om klassificeringar](c-classifications2/c-classifications.md)
-   + [Om underklassificeringar](c-classifications2/c-sub-classifications.md)
-   + [Klassificeringar för konvertering](c-classifications2/conversion-classifications.md)
-   + [Trafikklassificeringar](c-classifications2/traffic-classifications.md)
-   + [Klassificeringshierarkier](c-classifications2/classification-hierarchies.md)
+   + [Om klassificeringar](classifications/c-classifications.md)
+   + [Om underklassificeringar](classifications/c-sub-classifications.md)
+   + [Klassificeringar för konvertering](classifications/conversion-classifications.md)
+   + [Trafikklassificeringar](classifications/traffic-classifications.md)
+   + [Klassificeringshierarkier](classifications/classification-hierarchies.md)
    + Importera klassificeringar (ladda upp) {#classifications-importer}
-      + [Importera klassificeringar – översikt](c-classifications2/c-classifications-importer/c-working-with-saint.md)
-      + [Datafiler för klassificering](c-classifications2/c-classifications-importer/c-saint-data-files.md)
-      + [Ta bort klassificeringsdata](c-classifications2/c-classifications-importer/t-delete-classification-data.md)
-      + [Avbryta klassificeringsdata](c-classifications2/c-classifications-importer/t-classifications-escape-data.md)
-      + [Ej klassificerade nycklar](c-classifications2/c-classifications-importer/nonclassified-keys.md)
-      + [Klassificeringsmall](c-classifications2/c-classifications-importer/c-download-saint-data.md)
-      + [Import via webbläsare och FTP](c-classifications2/c-classifications-importer/import-file.md)
-      + [Import via webbläsare](c-classifications2/c-classifications-importer/browser-import.md)
-      + [FTP-import](c-classifications2/c-classifications-importer/c-uploading-saint-data-files-via-ftp.md)
+      + [Importera klassificeringar – översikt](classifications/c-classifications-importer/c-working-with-saint.md)
+      + [Datafiler för klassificering](classifications/c-classifications-importer/c-saint-data-files.md)
+      + [Ta bort klassificeringsdata](classifications/c-classifications-importer/t-delete-classification-data.md)
+      + [Avbryta klassificeringsdata](classifications/c-classifications-importer/t-classifications-escape-data.md)
+      + [Ej klassificerade nycklar](classifications/c-classifications-importer/nonclassified-keys.md)
+      + [Klassificeringsmall](classifications/c-classifications-importer/c-download-saint-data.md)
+      + [Import via webbläsare och FTP](classifications/c-classifications-importer/import-file.md)
+      + [Import via webbläsare](classifications/c-classifications-importer/browser-import.md)
+      + [FTP-import](classifications/c-classifications-importer/c-uploading-saint-data-files-via-ftp.md)
    + Classification Rule Builder {#classifications-rulebuilder}
-      + [Arbetsflöde för Classification Rule Builder](c-classifications2/crb/classification-rule-builder.md)
-      + [Uppsättningar med klassificeringsregler](c-classifications2/crb/classification-rule-set.md)
-      + [Klassificeringsregler](c-classifications2/crb/classification-quickstart-rules.md)
-      + [Klassificeringsregler – definitioner](c-classifications2/crb/classification-rule-definitions.md)
-      + [Underklassificeringar och Rule Builder](c-classifications2/crb/sub-classification-rule-builder.md)
+      + [Arbetsflöde för Classification Rule Builder](classifications/crb/classification-rule-builder.md)
+      + [Uppsättningar med klassificeringsregler](classifications/crb/classification-rule-set.md)
+      + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
+      + [Klassificeringsregler – definitioner](classifications/crb/classification-rule-definitions.md)
+      + [Underklassificeringar och Rule Builder](classifications/crb/sub-classification-rule-builder.md)
    + Numeriska klassificeringar 2 {#numeric2-classification}
-      + [Översikt över numeriska klassificeringar 2](c-classifications2/c-numeric-2/c-numeric-2-classifications.md)
-      + [Skapa numeriska klassificeringar 2](c-classifications2/c-numeric-2/t-create-numeric-2-classifications.md)
-      + [Importera numeriska klassificeringar 2](c-classifications2/c-numeric-2/c-import-numeric-2-classifications.md)
-      + [Exempel](c-classifications2/c-numeric-2/c-examples.md)
-   + [Felsöka klassificeringar](c-classifications2/c-classifications-troubleshooting.md)
+      + [Översikt över numeriska klassificeringar 2](classifications/c-numeric-2/c-numeric-2-classifications.md)
+      + [Skapa numeriska klassificeringar 2](classifications/c-numeric-2/t-create-numeric-2-classifications.md)
+      + [Importera numeriska klassificeringar 2](classifications/c-numeric-2/c-import-numeric-2-classifications.md)
+      + [Exempel](classifications/c-numeric-2/c-examples.md)
+   + [Felsöka klassificeringar](classifications/c-classifications-troubleshooting.md)
 + [Kalenderhändelser](t-calendar-event.md)
 + Rapporter i realtid {#real-time-reporting}
    + [Översikt över rapporter i realtid](c-real-time-reporting/realtime.md)
