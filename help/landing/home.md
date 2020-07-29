@@ -1,39 +1,42 @@
 ---
 title: Tekniska handböcker för Adobe Analytics
-description: Användarhandböcker och resurser för analyser
+description: Användarhandböcker och resurser för Analytics
 translation-type: tm+mt
-source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
+source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 100%
 
 ---
 
 
 # Adobe Analytics-dokumentation
 
-Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokumentationen. Här finns självhjälp och supportinformation för rapporteringsverktyg som [!UICONTROL Analysis Workspace], [!UICONTROL Report Builder]Reporting API [!UICONTROL Data Workbench]och [!UICONTROL Activity Map]. Du kan även få tillgång till dokumentation för produkt- och användaradministration, implementering och alla funktioner som stöds i Adobe Analytics.
+Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokumentationen. Här finns självhjälp och supportinformation för rapporteringsverktyg som [!UICONTROL Analysis Workspace], [!UICONTROL Report Builder], rapport-API, [!UICONTROL Data Workbench] och [!UICONTROL Activity Map]. Du kan även få tillgång till dokumentation för produkt- och användaradministration, implementering och alla funktioner som stöds i Adobe Analytics.
 
-[![Tools](assets/analyze_50px.png)](/help/analyze/home.md)[Analytics Tools Guide](/help/analyze/home.md) - ger tillgång till [Analysis Workspace](/help/analyze/analysis-workspace/home.md), det ledande verktyget för analys och visualisering av analyser. Innehåller också alla analysverktyg ([!UICONTROL Report Buidler], Reporting API [!UICONTROL Data Workbench]och [!UICONTROL Activity Map]) som du kan använda i Adobe Analytics.
+[![Verktyg](assets/analyze_50px.png)](/help/analyze/home.md) [Verktygshandbok för Analytics](/help/analyze/home.md) – Behandlar [Analysis Workspace](/help/analyze/analysis-workspace/home.md), det ledande verktyget för analys och visualisering för Analytics. Täcker alla analysverktyg ([!UICONTROL Report Buidler], rapport-API, [!UICONTROL Data Workbench] och [!UICONTROL Activity Map]) som du kan använda i Adobe Analytics.
 
-[![Admin](assets/admin_50px.png)](/help/admin/home.md)[Admin Guide](/help/admin/home.md) - Lär dig mer om hur du hanterar användare och produkter i Experience Cloud Admin Console, konfigurerar rapportsviter, företagsinställningar, datastyrning, användning av serversamtal, trafikhantering med mera.
+[![Administration](assets/admin_50px.png)](/help/admin/home.md) [Administrationshandbok](/help/admin/home.md) – Läs mer om hur du hanterar användare och produkter i Experience Cloud Admin Console, konfigurerar rapportsviter, företagsinställningar, datastyrning, använder serveranrop, hanterar trafik med mera.
 
-[![Implementeringshandbok](assets/implement_50px.png)](/help/implement/home.md)för[implementering](/help/implement/home.md) - Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. Innehåller innehåll i [!UICONTROL Adobe Experience Platform Launch] och JavaScript-implementeringar.
+[![Implementering](assets/implement_50px.png)](/help/implement/home.md) [Implementeringshandbok](/help/implement/home.md) – Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. Täcker innehåll i [!UICONTROL Adobe Experience Platform Launch] och JavaScript-implementeringar.
 
-[![Komponenthandbok](assets/components_50px.png)](/help/components/home.md)för[komponenter](/help/components/home.md) - Förstå funktionerna som hjälper dig att ordna dina data. Komponenterna omfattar segment, beräknade värden, virtuella rapportsviter, varningar med mera. Den här guiden innehåller även en variabelreferens som förklarar alla tillgängliga mått och mätvärden.
+[![Komponenter](assets/components_50px.png)](/help/components/home.md) [Komponenthandbok](/help/components/home.md) – Förstå funktionerna som hjälper dig att organisera dina data. Komponenter omfattar segment, beräknade värden, virtuella rapportsviter, varningar med mera. Handboken har även ett referensavsnitt med alla variabler som förklarar alla tillgängliga dimensioner och mätvärden.
 
-[![Exportera](assets/export_50px.png)](/help/export/home.md)[exportguide](/help/export/home.md) - Få ut data ur Adobe Analytics: Används [!UICONTROL Data Feeds] för att ta emot en timexport eller daglig export av rådata. Hämta data från kalkylblad med [!UICONTROL Data Warehouse].
+[![Exportera](assets/export_50px.png)](/help/export/home.md) [Exporthandbok](/help/export/home.md) – Hämta data från Adobe Analytics: Använd [!UICONTROL Data Feeds] när du vill få rådataexporter varje timme eller varje dag. Hämta data i kalkylbladsformat med [!UICONTROL Data Warehouse].
 
-[![Importera](assets/import_50px.png)](/help/import/home.md)[importguiden](/help/import/home.md) - Hämta in data till analyser från externa källor, antingen satsvis eller i realtid. Innefattar [!UICONTROL Data Sources], [!UICONTROL Data Insertion API]och [!UICONTROL Data Connectors].
+[![Importera](assets/import_50px.png)](/help/import/home.md) [Importhandbok](/help/import/home.md) – Överför data till Analytics från externa källor, antingen satsvis eller i realtid. Inkluderar [!UICONTROL Data Sources], [!UICONTROL Data Insertion API] och [!UICONTROL Data Connectors].
 
-[![Integreringshandbok](assets/integrate_50px.png)](/help/integrate/home.md)för[integrering](/help/integrate/home.md) - Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, till exempel Audience Manager, Advertising Cloud och Target.
+[![Integrering](assets/integrate_50px.png)](/help/integrate/home.md) [Integreringshandbok](/help/integrate/home.md) – Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, till exempel Audience Manager, Advertising Cloud och Target.
 
-[![Media Analytics](assets/media_50px.png)](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)[Media Analytics Guide](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) - Implementera analyser för ljud- och videokällor. Innehåller Media SDK och Media Collection API.
+[![Media Analytics](assets/media_50px.png)](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) [Media Analytics-handbok](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) – Implementera Analytics för ljud- och videokällor. Innehåller Media SDK och Media Collection API.
 
-[![Handböcker](assets/workbench_50px.png)](https://docs.adobe.com/content/help/en/data-workbench/using/home.html)för DWB[](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) Data Workbench - Lär dig mer om de flexibla, kraftfulla flerkanalsfunktionerna i [!UICONTROL Data Workbench]. Innehåller [!UICONTROL Data Workbench Client], installation, guider [!UICONTROL Dataset Configuration] med mera.
+[![DWB](assets/workbench_50px.png)](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) [Data Workbench-handböcker](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) – Läs mer om de flexibla, kraftfulla flerkanalsfunktionerna i [!UICONTROL Data Workbench]. Inkluderar [!UICONTROL Data Workbench Client], installation, [!UICONTROL Dataset Configuration]-handböcker med mera.
 
-[![Technotes](assets/technotes_50px.png)](/help/technotes/home.md)[Analytics Tech Notes](/help/technotes/home.md) - En kunskapsbas som innehåller användbara artiklar som inte hör till ett visst analysverktyg eller en viss komponent.
+[![Technotes](assets/technotes_50px.png)](/help/technotes/home.md) [Analytics Tech Notes](/help/technotes/home.md) – En kunskapsdatabas som innehåller användbara artiklar som inte handlar om ett visst analysverktyg eller en viss komponent.
 
-| Nya och aktuella objekt | Viktiga analysresurser |
+| Nya och aktuella objekt | Viktiga Analytics-resurser |
 | --- | --- |
-| <ul><li>[Regional datainsamling](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera arbetsytans prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md)</li><li>[Analytics - produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: [Dokumentationsuppdateringar för 2019](doc-updates.md) | <ul><li> [Versionsinformation](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)</li><li> [Adobe Analytics Youtube-kanal](https://www.youtube.com/channel/UC8I6bqCk7gO6YdoMz6W5fvw)</li><li>[Självstudiekurser och videofilmer om analys](https://helpx.adobe.com/analytics/kt/index/analytics-videos.html)</li><li>[Forum om Analytics](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga kurser och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/support/analytics.html)</li></ul> |
+| <ul><li>[Insamling av regionala data](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md)</li><li>[Analytics – produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: [Dokumentationsuppdateringar för 2019](doc-updates.md) | <ul><li> [Versionsinformation](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)</li><li> [Adobe Analytics YouTube-kanal](https://www.youtube.com/channel/UC8I6bqCk7gO6YdoMz6W5fvw)</li><li>[Självstudiekurser och videofilmer om Analytics](https://helpx.adobe.com/se/analytics/kt/index/analytics-videos.html)</li><li>[Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga utbildningar och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/se/support/analytics.html)</li></ul> |
 
 <!-- Keep around for now
 
@@ -55,7 +58,7 @@ Here is a comprehensive list of and links to all the reporting capabilities in A
 *   [Anomaly Detection](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
 *   [Bot filtering](/help/admin/admin/bot-removal/bot-rules.md)
 *   [Calculated Metrics](/help/components/c-calcmetrics/cm-overview.md)
-*   [Classifications](/help/components/c-classifications2/c-classifications.md)
+*   [Classifications](/help/components/classifications/c-classifications.md)
 *   [Cohort Analysis](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
 *   [Contribution Analysis](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
 *   [Data Connectors](https://www.adobeexchange.com/experiencecloud.html)
