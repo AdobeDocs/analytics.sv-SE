@@ -2,7 +2,7 @@
 title: Klassificeringar i marknadsföringskanaler
 description: Använd klassificeringar för att kategorisera värden i relaterade grupper och för att rapportera på gruppnivå. Du kan till exempel klassificera alla betalsökningskampanjer i en kategori som videokort. Sedan kan du rapportera om resultatet för den kategorin i förhållande till mätvärden som instanser (eller klickningar).
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 4%
@@ -18,7 +18,7 @@ Klassificeringar som du lägger till i den här proceduren visas i [!UICONTROL M
 
 >[!NOTE]
 >
->Se till att du är van vid att skapa klassificeringar i [klassificeringar](/help/components/c-classifications2/c-classifications.md).
+>Se till att du är van vid att skapa klassificeringar i [klassificeringar](/help/components/classifications/c-classifications.md).
 
 >[!IMPORTANT]
 >
