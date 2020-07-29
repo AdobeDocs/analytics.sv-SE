@@ -4,7 +4,10 @@ title: Konfiguration av rapporter i realtid
 topic: Admin tools
 uuid: f48692a0-77c0-4ee4-b3ec-eaa842d06ac8
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 2%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
 
 Administrativa steg för att skapa realtidsrapporter.
 
-Att konfigurera realtidsrapporter i rapporter och analyser består av att välja rapportsviten och konfigurera upp till tre rapporter för den.
+Du skapar realtidsrapporter i Rapporter och Analytics genom att välja rapportsviten och konfigurera upp till tre rapporter för den.
 
 1. Välj den rapportsvit som du vill aktivera realtidsrapporter för.
 
@@ -34,7 +37,7 @@ Att konfigurera realtidsrapporter i rapporter och analyser består av att välja
 
    ![](assets/real_time_admin.png)
 
-   Information om vilka realtidsmått och -mått som stöds finns i [Metrisk och dimensioner](/help/admin/admin/realtime/realtime-metrics.md)som stöds.
+   Mer information om vilka realtidsmått och -mått som stöds finns i [Metrisk och Dimensioner](/help/admin/admin/realtime/realtime-metrics.md)som stöds.
 
    Om du har skapat klassificeringar visas de med indrag under den dimension som de definierats för:
 
@@ -44,11 +47,11 @@ Att konfigurera realtidsrapporter i rapporter och analyser består av att välja
    >
    >För en enda realtidsrapport stöder vi för närvarande inte aktivering av dubblettdimensioner, även om en annan klassificering väljs för varje dimension.
 
-   Mer information om klassificeringar finns i [Om klassificeringar](/help/components/c-classifications2/c-classifications.md).
+   Mer information om klassificeringar finns i [Om klassificeringar](/help/components/classifications/c-classifications.md).
 
    >[!NOTE]
    >
-   >Vissa dimensioner, till exempel&quot;Sök nyckelord&quot; eller&quot;Produkt&quot;, finns inte kvar i realtid på samma sätt som i andra delar av Adobe Analytics. När du väljer ett icke-beständigt mått visas följande varning:
+   >Vissa dimensioner, som &quot;Sök nyckelord&quot; eller &quot;Produkt&quot;, finns inte kvar i realtid på samma sätt som i andra delar av Adobe Analytics. När du väljer ett icke-beständigt mått visas följande varning:
 
    ![](assets/warning_dimensions.png)
 
