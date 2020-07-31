@@ -3,7 +3,7 @@ description: Med kurering kan du begränsa komponenter innan du delar ett projek
 keywords: Analysis Workspace curation
 title: Kuratera arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: 2b4cf53582b746f697c18cb63a1840dfee9b693f
+source-git-commit: 63a827b4cfa858e503431579755f1b4dba4b5bdf
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 3%
@@ -39,6 +39,7 @@ När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av
 ## Ta bort projekturval
 
 Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra listen:
+
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 1. Klicka på **[!UICONTROL Remove Curation]**.
 1. Klicka på **[!UICONTROL Done]**.
