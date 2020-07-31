@@ -2,10 +2,10 @@
 description: Systemkrav och en jämförelse mellan Analysis Workspace, rapporter och Analytics, Ad Hoc Analysis, Report Builder, Data warehouse och Data Workbench
 title: Produktjämförelse och krav för analyser
 translation-type: tm+mt
-source-git-commit: 54d6b4c2993c5b0391b9243c76661db1da4087b8
+source-git-commit: 63a827b4cfa858e503431579755f1b4dba4b5bdf
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 35%
+source-wordcount: '432'
+ht-degree: 39%
 
 ---
 
@@ -16,26 +16,26 @@ Den här sidan innehåller en jämförelse av olika Adobe Analytics-produkter: A
 
 Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help/admin/c-analytics-product-comparison/which-analytics-tool.md).
 
-| Produkt- och hjälplänk | [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) | [Rapporter och Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html) | [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html) | [Data Warehouse](https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse.html) | [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) | [Datafeeds](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html) | [Analytics API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
-|---|---|---|---|---|---|---|---|
-| **Åtkomstmetod** | [Webbläsare](https://docs.adobe.com/content/help/sv-SE/analytics/admin/sys-reqs.html) | [Webbläsare](https://docs.adobe.com/content/help/sv-SE/analytics/admin/sys-reqs.html) | [MS Excel för Windows](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/report-builder-setup/system-requirements.html) | Konfigurera via webbläsaren. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/admin/sys-reqs.html) | [Windows 64 bitar](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html) | Konfigurera via webbläsaren. [Läs mer](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html) | RESTful API tools. Logga in med inloggningsuppgifter för Adobe. [Läs mer](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
+| Produkt- och hjälplänk | [Analysis Workspace](/help/analyze/analysis-workspace/home.md) | [Rapporter och Analytics](/help/analyze/reports-analytics/getting-started.md) | [Report Builder](/help/analyze/report-builder/home.md) | [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) | [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) | [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) | [Analytics API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Åtkomstmetod** | [Webbläsare](/help/admin/sys-reqs.md) | [Webbläsare](/help/admin/sys-reqs.md) | [MS Excel för Windows](/help/analyze/report-builder/setup/system-requirements.md) | Konfigurera via webbläsaren. [Läs mer](/help/admin/sys-reqs.md) | [Windows 64 bitar](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html) | Konfigurera via webbläsaren. [Läs mer](/help/export/analytics-data-feed/data-feed-overview.md) | RESTful API tools. Logga in med inloggningsuppgifter för Adobe. [Läs mer](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
 | **Datagranularitet** | Sammanställd | Sammanställd | Sammanställd | Sammanställd | Träff | Träff | Sammanställd |
 | **Expierence Cloud ID (ECID) är tillgängligt** | Nej | Nej | Nej | Ja | Ja | Ja | Nej |
 | **Tidsstämpel tillgänglig** | Nej | Nej | Nej | Nej | Ja | Ja | Nej |
-| **Bearbetningsnivå** | Fullt bearbetad | Fullständigt bearbetad, med separat [realtidsrapport](https://docs.adobe.com/content/help/en/analytics/components/real-time-reporting/realtime.html) | Fullständigt bearbetad, med separat [realtidsrapport](https://docs.adobe.com/content/help/en/analytics/components/real-time-reporting/realtime.html) | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad |
-| **Administratörsfilterdata ingår** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/bot-removal/bot-removal.html) | Nej | Ja - separat robotrapport | Ja - separat robotrapport | Nej | Nej | Nej | Nej |
-| **Låg trafik (Uniques-** överstigna) visas <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/technotes/low-traffic.html) | Ja | Ja | Ja | Nej | Nej | Nej | Ja |
+| **Bearbetningsnivå** | Fullt bearbetad | Fullständigt bearbetad, med separat [realtidsrapport](/help/components/c-real-time-reporting/realtime.md) | Fullständigt bearbetad, med separat [realtidsrapport](/help/components/c-real-time-reporting/realtime.md) | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad |
+| **Administratörsrobotfilterdata ingår** <br> [Läs mer](/help/admin/admin/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Ja - separat robotrapport | Nej | Nej | Nej | Nej |
+| **Låg trafik (Uniques-gränsen överskrids) visas** <br> [Läs mer](/help/technotes/low-traffic.md) | Ja | Ja | Ja | Nej | Nej | Nej | Ja |
 | **Synlig radgräns (före sidnumrering)** | 400 | 200 | 50000 | Obegränsad | Obegränsad | Obegränsad | 50000 |
-| **Flera rapportsviter** | [Ja](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) | Ja, med begränsningar | Ja | Nej | Ja | Nej | Ja |
+| **Flera rapportsviter** | [Ja](/help/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.md) | Ja, med begränsningar | Ja | Nej | Ja | Nej | Ja |
 | **Antal uppdelningar** | Obegränsad | Upp till 2 | Upp till 2 | Obegränsad | Obegränsad | Obegränsad | Obegränsat, kör över flera frågor |
-| **Segmentering** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-workflow.html) | Ja | Ja | Ja | Ja, med [begränsningar](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segment-reference/seg-compatibility.html) | Ja | Nej | Ja |
-| **Beräknade mätvärden** <br>[Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/components/calculated-metrics/cm-overview.html) | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) | Ja | Ja | Nej | Ja | Nej | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) |
-| **Marknadsföringskanaler** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-getting-started-mchannel.html) | Ja | Ja | Ja | Ja | Ja | Ja - [va_finder, va_close](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html) | Ja |
-| **Kohortanalys** | [Ja](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.html) | Nej | Nej | Nej | Ja | Nej | Nej |
-| **Attribuering** | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) | Begränsad | Begränsad | Nej | Ja | Nej | Ja, med [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/overview.html) |
-| **Funktioner** i Virtual Analyst <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/overview.html) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
-| **Kurva** <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) | Ja - projekt och VRS | Nej | Nej | Nej | Nej | Nej | Ja - endast VRS |
-| **Projektdelning** <br>[Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) | Ja, med projektroller | Ja | Ja | Nej | Ja | Nej | Nej |
+| **Segmentering** <br> [Läs mer](/help/components/c-segmentation/c-segmentation-workflow/seg-workflow.md) | Ja | Ja | Ja | Ja, med [begränsningar](/help/components/c-segmentation/seg-reference/seg-compatibility.md) | Ja | Nej | Ja |
+| **Beräknade värden** <br> [Läs mer](/help/components/c-calcmetrics/cm-overview.md) | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) | Ja | Ja | Nej | Ja | Nej | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) |
+| **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja | Ja | Ja - [va_finder, va_close](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
+| **Kohortanalys** | [Ja](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Nej | Nej | Nej | Ja | Nej | Nej |
+| **Attribuering** | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Begränsad | Nej | Ja | Nej | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) |
+| **Funktioner i Virtual Analyst** <br> [Läs mer](/help/analyze/analysis-workspace/virtual-analyst/overview.md) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
+| **Kuration** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/curate.md) | Ja - projekt och VRS | Nej | Nej | Nej | Nej | Nej | Ja - endast VRS |
+| **Projektdelning** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md) | Ja, med projektroller | Ja | Ja | Nej | Ja | Nej | Nej |
 | **Schemalagd leverans** | Ja | Ja | Ja | Ja | Nej | Ja | Nej |
-| **Leveransmål** | E-post | E-post | E-post, FTP, SFTP, [publicera till Microsoft PowerBI](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/publish-powerbi/power-bi.html) | E-post, FTP. Kontakta kundtjänst för ytterligare destinationssupport som SFTP, Azure Blob, Amazon S3 | - | FTP, SFTP, Azure Blob, Amazon S3 | - |
-| **Tidsbearbetning** för VRS-rapport <br>[Läs mer](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-report-time-processing.html) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
+| **Leveransmål** | E-post | E-post | E-post, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/report-builder/c-publish-power-bi/power-bi.md) | E-post, FTP. Kontakta kundtjänst för ytterligare destinationssupport som SFTP, Azure Blob, Amazon S3 | - | FTP, SFTP, Azure Blob, Amazon S3 | - |
+| **Tidsbearbetning för VRS-rapport** <br> [Läs mer](/help/components/vrs/vrs-report-time-processing.md) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
