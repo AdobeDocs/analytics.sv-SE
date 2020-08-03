@@ -6,9 +6,9 @@ title: Referens för datakolumner
 topic: Reports and analytics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 translation-type: tm+mt
-source-git-commit: 422e99d9ea70f0192443d7ebc3631c6bf99e7591
+source-git-commit: 93545364fe8c99dd9049eeeac06f2c15367defc0
 workflow-type: tm+mt
-source-wordcount: '3669'
+source-wordcount: '3674'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 
 >[!NOTE]
 >
->De flesta kolumner innehåller en liknande kolumn med prefixet `post_`. Bokför kolumner innehåller värden efter serversidans logik, bearbetningsregler och VISTA-regler. I de flesta fall bör du använda inläggskolumner. Mer information finns i Vanliga frågor om [dataflöden](../df-faq.md) .
+>De flesta kolumner innehåller en liknande kolumn med prefixet `post_`. Bokför kolumner innehåller värden efter serversidans logik, bearbetningsregler och VISTA-regler. Adobe rekommenderar att du i de flesta fall använder inläggskolumner. Mer information finns i Vanliga frågor om [dataflöden](../df-faq.md) .
 
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |
@@ -84,8 +84,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `geo_region` | Namnet på den stat eller region som träffen kom från, baserat på IP. Adobe samarbetar med Digital Envoy för att matcha IP-adressen med delstat/region. | char(32) |
 | `geo_zip` | Postnumret som träffen kom från baseras på IP. Adobe samarbetar med Digital Envoy för att matcha IP-adressen med postkoden. | varchar(16) |
 | `hier1 - hier5` | Används av hierarkivariabler. Innehåller en avgränsad lista med värden. Avgränsaren väljs under rapportsvitens inställningar. | varchar(255) |
-| `hit_source` | Anger vilken källa träffen kom ifrån. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br>3: Ladda upp datakällor live med tidsstämplar <br>4: Används inte <br>5: Allmän överföring av datakälla <br>6: Uppladdning av datakälla med fullständig bearbetning <br>7: Överföring av datakälla för TransactionID <br>8: Används inte längre. Tidigare versioner av Adobe Advertising Cloud datakällor <br>9: Används inte längre. Adobe Social summary metrics <br>10: Vidarebefordran på serversidan i Audience Manager används | tinyint unsigned |
-| `hit_time_gmt` | Tidsstämpeln för de träffande Adobe-datainsamlingsservrarna tog emot träffen, baserat på Unix-tid. | int |
+| `hit_source` | Anger vilken källa träffen kom ifrån. Hit_sources 0, 1, 2 och 6 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br>3: Ladda upp datakällor live med tidsstämplar <br>4: Används inte <br>5: Allmän överföring av datakälla <br>6: Uppladdning av datakälla med fullständig bearbetning <br>7: Överföring av datakälla för TransactionID <br>8: Används inte längre. Tidigare versioner av Adobe Advertising Cloud datakällor <br>9: Används inte längre. Adobe Social summary metrics <br>10: Vidarebefordran på serversidan i Audience Manager används | tinyint unsigned |
+| `hit_time_gmt` | Tidsstämpeln för Adobe-datainsamlingsservrarna tog emot träffen, baserat på Unix-tid. | int |
 | `hitid_high` | Används i kombination med hitid_low för att unikt identifiera en träff. | bigint unsigned |
 | `hitid_low` | Används i kombination med hitid_high för att unikt identifiera en träff. | bigint unsigned |
 | `homepage` | Används inte längre. Anger om den aktuella URL:en är webbläsarens hemsida. | char(1) |
@@ -149,13 +149,13 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `monthly_visitor` | Flagga som anger att besökaren är unik för den aktuella månaden. | tinyint unsigned |
 | `mvvar1` - `mvvar3` | Lista variabelvärden. Innehåller en avgränsad lista med anpassade värden beroende på implementering. | text |
 | `namespace` | Används inte. En del av en kasserad funktion för många år sedan. | varchar(50) |
-| `new_visit` | Flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobes servrar efter 30 minuters inaktivitet. | tinyint unsigned |
+| `new_visit` | Flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobe-servrar efter 30 minuters besöksinaktivitet. | tinyint unsigned |
 | `os` | Numeriskt ID som representerar besökarens operativsystem. Baserat på kolumnen user_agent. Använder OS-sökning. | int unsigned |
 | `p_plugins` | Används inte längre. Lista över plugin-program som är tillgängliga för webbläsaren. Använder JavaScript-funktionen navigator.plugins(). | text |
 | `page_event` | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). See [Page event lookup](datafeeds-page-event.md). | tinyint unsigned |
 | `page_event_var1` | Används endast vid förfrågningar om länkspårningsbilder. URL-adressen till den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickat på. | text |
 | `page_event_var2` | Används endast vid förfrågningar om länkspårningsbilder. Länkens anpassade namn (om det anges). | varchar(100) |
-| `page_event_var3` | Används inte längre. Behållna data från undersökningen och mediemodulen. Fyllda videorapporter i tidigare versioner av Adobe Analytics. | text |
+| `page_event_var3` | Används inte längre. Behållna data från undersökningen och mediemodulen. Fyllda gamla videorapporter i tidigare versioner av Adobe Analytics. | text |
 | `page_type` | Används för att fylla i dimensionen Ej hittade sidor, som används exklusivt för 404 sidor. Variabeln ska antingen vara tom eller innehålla ErrorPage. | char(20) |
 | `page_url` | URL:en för träffen. Används inte i bildbegäranden för länkspårning. | varchar(255) |
 | `pagename` | Används för att fylla siddimensionen. Om sidnamnsvariabeln är tom använder Analytics page_url i stället. | varchar(100) |
@@ -165,8 +165,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `plugins` | Används inte längre. Lista med numeriska ID:n som motsvarar plugin-program som är tillgängliga i webbläsaren. Använder plugins.tsv-sökning. | varchar(180) |
 | `pointofinterest` | Intressepunktsnamn för mobiltjänster | varchar(255) |
 | `pointofinterestdistance` | Avstånd för mobiltjänster till intressanta center | varchar(255) |
-| `post_ columns` | Innehåller värdet som används i rapporterna. Varje inläggskolumn fylls i efter serversidans logik, bearbetningsregler och VISTA-regler. I de flesta fall bör du använda inläggskolumner. | Se respektive icke-postkolumn |
-| `prev_page` | Används inte. Adobes egen identifierare för föregående sida. | int unsigned |
+| `post_ columns` | Innehåller värdet som används i rapporterna. Varje inläggskolumn fylls i efter serversidans logik, bearbetningsregler och VISTA-regler. Adobe rekommenderar att du i de flesta fall använder inläggskolumner. | Se respektive icke-postkolumn |
+| `prev_page` | Används inte. Adobe egen identifierare för föregående sida. | int unsigned |
 | `product_list` | Produktlistan har skickats in via produktvariabeln. Produkterna avgränsas med kommatecken medan de enskilda produktegenskaperna avgränsas med semikolon. | text |
 | `product_merchandising` | Används inte. Använd product_list i stället. | text |
 | `prop1` - `prop75` | Anpassade trafikvariabler 1-75. | varchar(100) |
@@ -199,7 +199,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `socialownedpropertyname` | Används inte längre. Namn på egendom som ägs av sociala medier | varchar(255) |
 | `socialownedpropertypropertyvsapp` | Används inte längre. Egendom i sociala medier kontra app | varchar(255) |
 | `state` | State-variabel. | varchar(50) |
-| `stats_server` | Inte till användning. Adobes interna server som bearbetade träffen. | char(30) |
+| `stats_server` | Inte till användning. Adobe intern server som bearbetade träffen. | char(30) |
 | `t_time_info` | Lokal tid för besökaren. Formatet är följande: M/D/YYYY HH:MM:SS Month (0-11, 0=January) Tidszonsförskjutning (i minuter) | varchar(100) |
 | `tnt` | Används i integreringar med Adobe Target. | text |
 | `tnt_action` | Används i integreringar med Adobe Target. | text |
@@ -267,8 +267,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `visid_low` | Används i kombination med visid_high för att unikt identifiera en besökare. | bigint unsigned |
 | `visid_new` | Flagga som identifierar om träffen innehåller ett nyligen genererat besökar-ID. | char(1) |
 | `visid_timestamp` | Om besökar-ID nyligen genererades, anger tidsstämpeln (i Unix-tid) för när besökar-ID genererades. | int |
-| `visid_type` | Ej för extern användning. används internt av Adobe för att bearbeta optimeringar. Numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>0: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>1: IP-adress och reserv för användaragent <br>2: HTTP Mobile Subscriber Header <br>3: Äldre cookie-värde (s_vi) <br>4: Värde för reservcookie (s_fid) <br>5: Identitetstjänst | tinyint unsigned |
-| `visit_keywords` | Variabel som används i söknyckelordsdimensionen. I den här kolumnen används en teckengräns som inte är standard för att rymma den serverlogik som används av Adobe. | varchar(244) |
+| `visid_type` | Ej för extern användning. som används internt av Adobe för att bearbeta optimeringar. Numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>0: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>1: IP-adress och reserv för användaragent <br>2: HTTP Mobile Subscriber Header <br>3: Äldre cookie-värde (s_vi) <br>4: Värde för reservcookie (s_fid) <br>5: Identitetstjänst | tinyint unsigned |
+| `visit_keywords` | Variabel som används i söknyckelordsdimensionen. I den här kolumnen används en teckengräns som inte är standard för att rymma serverlogik som används av Adobe. | varchar(244) |
 | `visit_num` | Variabel som används i dimensionen Besöksnummer. Börjar vid 1 och ökar stegvis varje gång ett nytt besök påbörjas per besökare. | int unsigned |
 | `visit_page_num` | Variabel som används i dimensionen Träff. Ökar med 1 för varje träff som användaren skapar. Återställer varje besök. | int unsigned |
 | `visit_ref_domain` | Baserat på kolumnen visit_reference. Den första refererande domänen för besöket. | varchar(100) |
