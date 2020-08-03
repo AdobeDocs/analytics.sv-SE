@@ -3,9 +3,9 @@ description: 'null'
 title: Optimera prestanda för Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 3cf68f3ba50c7a27a86d37591477812537b8ae1a
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -40,17 +40,15 @@ Dessutom kan [klassificeringar](/help/components/classifications/c-classificatio
 
 De data som begärs i ett helt projekt påverkar Analysis Workspace prestanda.
 
-**Bästa tillvägagångssätt för dataintervall**
+**Bästa tillvägagångssätt för datumintervall**
 
-Dra inte in mer data än du behöver när det är möjligt.
+Dra inte in mer data än du behöver när det är möjligt. Begränsa panelkalendern till relevanta datum för analysen eller använd datumintervallkomponenter (lila komponenter) i frihandstabellerna. Datumintervall som används i en tabell åsidosätter panelens datumintervall. Du kan till exempel lägga till sista månaden, sista veckan och igår i tabellkolumnerna för att begära dessa specifika dataintervall. Mer information om hur du arbetar med datumintervall i Analysis Workspace finns i [den här videon](https://www.youtube.com/watch?v=MIkT6FZ5gKk) .
 
-Kom ihåg att datumintervall (lila komponenter) åsidosätter panelens datumintervall. Om du använder olika datumintervall som kolumner (t.ex. sista månaden, sista veckan och sista kolumnen) behöver alltså inte panelens datumintervall omfatta alla kolumndatumintervall. Den kan helt enkelt ställas in på igår eftersom de dataområden som används i frihandstabellen åsidosätter panelen. Mer information om hur du arbetar med datumintervall i Analysis Workspace finns i [den här videon](https://www.youtube.com/watch?v=ybmv6EBmhn0) .
-
-Använd [datumjämförelsealternativ](/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md) för att hämta in de specifika tidsperioderna för data som du vill jämföra. Om du t.ex. vill visa data för förra månaden jämfört med samma månad förra året, i stället för att ställa in panelen på de sista 13 månaderna, använder du bara alternativet för att jämföra tidsperioder för att visa resultatet för varje år.
+Minimera antalet årliga jämförelser som används i projektet. När en jämförelse mellan år och år beräknas, utförs en genomgång av alla 13 månaders data mellan de givna månaderna. Detta har samma effekt som att ändra panelens datumintervall till de senaste 13 månaderna.
 
 ## Antal visualiseringar
 
-Antalet grafvisualiseringar i ett projekt kommer att påverka Analysis Workspace allmänna svarstider.
+Antalet visualiseringar i ett projekt kommer att påverka Analysis Workspace svar totalt. Detta beror på att varje visualisering, oavsett om det är en tabell eller ett diagram, har en datakälla som behöver begäras.
 
 **Bästa praxis för antal visualiseringar**
 
@@ -63,7 +61,7 @@ Den typ av visualisering (t.ex. bortfall jämfört med frihandstabell) som lägg
 * Intervall av begärda uppgifter enligt ovan
 * Antal segment som används. till exempel segment som används som rader i en frihandstabell
 * Användning av komplicerade segment
-* Statiska objektrader eller kolumner i frihandstabeller
+* [Statiska objektrader](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html) eller kolumner i frihandstabeller
 * Filter som används på rader i frihandstabeller
 * Antal mätvärden som ingår, särskilt beräknade mätvärden som använder segment
 
@@ -83,14 +81,14 @@ Försök inte att lägga till allt i ett projekt, utan i stället skapa distinkt
 
 Om du vill organisera fler projekt bör du tänka på att [direktlänkning](https://www.youtube.com/watch?v=6IOEewflG2U) till projektet är ett alternativ. Skapa ett internt projektindex så att intressenter enklare kan hitta det de behöver.
 
-Om flera paneler behövs i en arbetsyta bör du komprimera panelerna innan du sparar och delar dem. När ett projekt har lästs in läser Analysis Workspace bara in innehåll för de utökade panelerna. Komprimerade paneler läses inte in förrän användaren expanderar dem. Detta tillvägagångssätt hjälper på två sätt:
+Om flera paneler behövs i ett projekt bör du komprimera panelerna innan du sparar och delar dem. När ett projekt har lästs in läser Analysis Workspace bara in innehåll för de utökade panelerna. Komprimerade paneler läses inte in förrän användaren expanderar dem. Detta tillvägagångssätt hjälper på två sätt:
 
 * Komprimerade paneler sparar tid på den totala inläsningstiden för ett projekt
 * Komprimerade paneler är ett bra sätt att ordna dina projekt på ett logiskt sätt för rapportens konsument
 
 ## Rapportsvitens storlek
 
-Rapportsvitens storlek kan tyckas vara en drivkraft, men i själva verket spelar den bara en liten roll i projektresultatet på grund av hur Adobe hanterar databehandlingen
+Rapportsvitens storlek kan tyckas vara en drivkraft, men i själva verket spelar den bara en liten roll i projektresultatet på grund av hur Adobe hanterar databearbetningen. Det kan finnas undantag från denna regel; rådfråga ditt implementeringsteam eller en Adobe-expert för att fastställa om det finns implementeringsförbättringar som kan göras för att förbättra den övergripande upplevelsen i Adobe Analytics.
 
 ## Antal användare som samtidigt använder Analysis Workspace
 
