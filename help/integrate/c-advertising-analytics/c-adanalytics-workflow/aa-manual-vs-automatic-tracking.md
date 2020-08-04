@@ -1,18 +1,18 @@
 ---
-description: Spårning avgör hur sökmotordata spåras av Adobe Analytics-implementeringen. Detta är ett nödvändigt steg för att utöka Adobe Analytics-data korrekt med sökmotordata.
+description: Spårning avgör hur sökmotordata spåras av din Adobe Analytics-implementering. Detta är ett nödvändigt steg för att utöka Adobe Analytics data med sökmotordata.
 title: Spåra manuellt läge och automatiskt läge
 translation-type: tm+mt
-source-git-commit: b92beee43756a3c5ec3902eee4ffaab0bcd43ce9
+source-git-commit: 69db61bdfd9375df4d090add7d8ed08135d1f087
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 0%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
 
 # Spårning: Manuellt läge och autoläge
 
-Spårning avgör hur sökmotordata spåras av Adobe Analytics-implementeringen. Detta är ett nödvändigt steg för att utöka Adobe Analytics-data korrekt med sökmotordata.
+Spårning avgör hur sökmotordata spåras av din Adobe Analytics-implementering. Detta är ett nödvändigt steg för att utöka Adobe Analytics data med sökmotordata.
 
 Två spårningslägen stöds: Automatiskt läge och Manuellt läge.
 
@@ -33,7 +33,7 @@ Observera att du ansvarar för följande åtgärder när du konfigurerar ett sö
 
 ## Manuell lägesspårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 
-I det manuella läget måste du ange hur sökmotordata ska hanteras av dataintegreringsprocessen för Advertising Analytics.
+I det manuella läget måste du ange hur sökmotordata ska hanteras av dataintegreringsprocessen i Advertising Analytics.
 
 ### Lägg till manuell spårning till Google-konto {#section_41C1EB1AEB034544A5BC291F53C05C67}
 
@@ -101,7 +101,7 @@ Exempel på spårningskoder i olika slutliga URL-suffixformat:
 **{lpurl}**
 
 ```
-{lpurl}?s_kwcid=AL!9999!10!{AdId}!{OrderItemId}`
+{lpurl}?s_kwcid=AL!9999!10!{AdId}!{OrderItemId}
 ```
 
 **`{lpurl}`med ytterligare URL-parameter **
@@ -111,10 +111,10 @@ Exempel på spårningskoder i olika slutliga URL-suffixformat:
 s_kwcid=AL!9999!10!{AdId}!{OrderItemId}
 ```
 
-**Tredje part (DoubleClick) `{unescapeLURL}**
+**Tredje part (DoubleClick)`{unescapedlpurl}`**
 
-```https://clickserve.dartsearch.net/link/click?{_dssagcrid}&{_dssftfiid}&ds_e_adid={creative}&ds_e_matchtype={ifsearch:search}{ifcontent:content}&ds_e_device={device}&ds_e_network={network}&{ifpla:ds_e_product_group_id={product_partition_id}&ds_e_product_id={product_id}&ds_e_product_merchant_id={merchant_id}&ds_e_product_country={product_country}&ds_e_product_language={product_language}&ds_e_product_channel={product_channel}&ds_e_product_store_id={product_store_id}}&ds_url_v=2&ds_dest_url={unescapedlpurl}?s_kwcid=AL!9999!10!{AdId}!{OrderItemId}
-
+```
+https://clickserve.dartsearch.net/link/click?{_dssagcrid}&{_dssftfiid}&ds_e_adid={creative}&ds_e_matchtype={ifsearch:search}{ifcontent:content}&ds_e_device={device}&ds_e_network={network}&{ifpla:ds_e_product_group_id={product_partition_id}&ds_e_product_id={product_id}&ds_e_product_merchant_id={merchant_id}&ds_e_product_country={product_country}&ds_e_product_language={product_language}&ds_e_product_channel={product_channel}&ds_e_product_store_id={product_store_id}}&ds_url_v=2&ds_dest_url={unescapedlpurl}?s_kwcid=AL!9999!10!{AdId}!{OrderItemId}
 ```
 
 **Tredje part (DoubleClick)`{lpurl}`**
