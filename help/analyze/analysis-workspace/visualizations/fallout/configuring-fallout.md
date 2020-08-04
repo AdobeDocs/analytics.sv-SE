@@ -3,7 +3,10 @@ description: 'null'
 title: Konfigurera en utfallsvisualisering
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: 68ff30395daf5cfb26d3e597ec4e6098a856fb51
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +43,7 @@ Du kan göra saker på eVars, t.ex. sälja eVars och [listVars](https://docs.ado
 
    ![](assets/multiple_obj_touchpoint.png)
 
-1. Du kan också **begränsa enskilda kontaktytor till nästa träff** (till skillnad från&quot;till slut&quot;) i banan. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
+1. You can also **constrain individual touchpoints to the next hit** (as opposed to &quot;eventually&quot;) within the path. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
 
    ![](assets/next-hit-eventually.png)
 
@@ -61,8 +64,7 @@ Du kan göra saker på eVars, t.ex. sälja eVars och [listVars](https://docs.ado
 
 | Inställning | Beskrivning |
 |--- |--- |
-| Utfallsbehållare <ul><li>Besök</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
-| Visa&quot;Alla besökare&quot; som första kontaktyta | Du kan avmarkera det här alternativet om du inte vill ha&quot;Alla besökare&quot; som första kontaktyta. |
+| Utfallsbehållare <ul><li>Gå in på</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
 
 När du **högerklickar på en kontaktyta** visas följande alternativ:
 
