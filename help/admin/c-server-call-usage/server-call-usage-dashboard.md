@@ -3,7 +3,7 @@ description: 'null'
 title: Visa aktuell användning av serversamtal
 uuid: 1a42a45f-4bbc-4b5a-9706-c8937265de2b
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 4%
@@ -28,7 +28,9 @@ Kontrollpanelen Aktuell användning
 
 * Jämför den aktuella periodens användning med förra årets användning (blå rad). Den blå raden visas bara om ditt företag har serversamtalsanvändningsdata från det föregående året.
 
-   >[!NOTE] Om du vill visa användningen för en tidigare tidsperiod måste du gå till fliken [Report Suite-användning](/help/admin/c-server-call-usage/report-suite-usage.md) och hämta användningsdata för en tidigare period.
+   >[!NOTE]
+   >
+   >Om du vill visa användningen för en tidigare tidsperiod måste du gå till fliken [Report Suite-användning](/help/admin/c-server-call-usage/report-suite-usage.md) och hämta användningsdata för en tidigare period.
 
 * Visar hur många procent anrop som har gjorts (i procent och rådata) och hur många procent av användningsperioden som har använts (i procent och rådata).
 * Som standard uppdateras varje dag med en 5-dagars svarstid.
