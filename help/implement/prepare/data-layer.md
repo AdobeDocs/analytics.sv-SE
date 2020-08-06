@@ -1,8 +1,8 @@
 ---
 title: Skapa ett datalager
-description: Lär dig vad ett datalager är i din Analytics-implementering och hur det kan användas för att mappa variabler i Adobe Analytics.
+description: Lär dig vad ett datalager är i Analytics-implementeringen och hur det kan användas för att mappa variabler i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 2%
@@ -23,10 +23,13 @@ Ett datalager är ett ramverk av JavaScript-objekt på platsen som innehåller a
 Implementering av Adobe Analytics med ett datalager följer vanligtvis dessa steg:
 
 1. **Samarbeta med webbplatsens utvecklingsteam för att implementera ett datalager**: Webbplatsutvecklingsteamet ansvarar i första hand för att se till att datalagret fylls med korrekta värden. Granska den här sidan med ditt utvecklingsteam för att se till att förväntningarna är desamma i olika team.
-   >[!NOTE] Följande Adobe rekommenderade datalagerspecifikationer är valfria. Om du redan har ett datalager, eller på annat sätt väljer att inte följa Adobe specifikationer, måste du se till att din organisation anpassar sig efter vilken specifikation som ska följas.
-2. **Validera datalagret med en webbläsarkonsol**: När ett datalager har skapats kan du validera att det fungerar med hjälp av en webbläsares utvecklarkonsol. Du kan öppna utvecklarkonsolen i de flesta webbläsare med hjälp av `F12` . Ett exempelvariabelvärde skulle vara `digitalData.page.pageInfo.pageID`.
-3. **Använd Adobe Experience Platform Launch för att mappa datalager-objekt till Launch-dataelement**: Skapa dataelement i Launch och mappa dem till de JavaScript-attribut som beskrivs i datalagret.
-4. **Använd Adobe Analytics-tillägget i Launch för att mappa dataelement till Analytics-variabler**: Tilldela varje dataelement till rätt Analytics-variabel efter lösningsdesigndokumentet.
+
+   >[!NOTE]
+   >
+   >Följande Adobe rekommenderade datalagerspecifikationer är valfria. Om du redan har ett datalager, eller på annat sätt väljer att inte följa Adobe specifikationer, måste du se till att din organisation anpassar sig efter vilken specifikation som ska följas.
+1. **Validera datalagret med en webbläsarkonsol**: När ett datalager har skapats kan du validera att det fungerar med hjälp av en webbläsares utvecklarkonsol. Du kan öppna utvecklarkonsolen i de flesta webbläsare med hjälp av `F12` . Ett exempelvariabelvärde skulle vara `digitalData.page.pageInfo.pageID`.
+1. **Använd Adobe Experience Platform Launch för att mappa datalager-objekt till Launch-dataelement**: Skapa dataelement i Launch och mappa dem till de JavaScript-attribut som beskrivs i datalagret.
+1. **Använd Adobe Analytics-tillägget i Launch för att mappa dataelement till analysvariabler**: Tilldela varje dataelement till rätt Analytics-variabel efter lösningsdesigndokumentet.
 
 ## Specifikationer
 
