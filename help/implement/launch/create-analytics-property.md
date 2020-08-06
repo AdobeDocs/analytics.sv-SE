@@ -2,9 +2,9 @@
 title: Skapa en Analytics-egenskap i Launch
 description: Skapa ett utrymme för att anpassa hur data samlas in med Adobe Experience Platform Launch.
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 1%
 
 # Skapa en Analytics-egenskap i Adobe Experience Platform Launch
 
-Adobe Experience Platform Launch är det verktyg du kan använda för att integrera Experience Cloud lösningar på din webbplats (inklusive Analytics). På den här sidan beskrivs särskilt hur en Launch-administratör kan konfigurera en grundläggande Adobe Analytics-implementering korrekt.
+Adobe Experience Platform Launch är det verktyg du kan använda för att integrera Experience Cloud-lösningar på din webbplats (inklusive Analytics). På den här sidan beskrivs särskilt hur en Launch-administratör kan konfigurera en grundläggande Adobe Analytics-implementering korrekt.
 
 ## Förutsättningar
 
-[Skapa en rapportsvit](/help/admin/admin-console/create-report-suite.md): Skapa en silo för Analytics-data som ska samlas in
+[Skapa en rapportsvit](/help/admin/admin-console/create-report-suite.md): Skapa en silo för att samla in analysdata
 
 ## Skapa en egenskap och installera viktiga tillägg
 
@@ -24,7 +24,7 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
 1. Klicka på Ny egenskap.
-1. Ge din Egenskap ett namn, t.ex. webbplatsens titel, och ange den domän du tänker implementera Analytics på. Klicka på Spara.
+1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på Spara.
 1. Klicka på den nyligen skapade egenskapen för att ange dess inställningar.
 1. Klicka på fliken Tillägg och sedan på Katalog.
 1. Leta reda på identitetstjänsten och klicka sedan på Installera.
@@ -36,22 +36,25 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 Dataelement är referenser till specifika delar av webbplatsen för att samla in variabelvärden.
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
-2. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
-3. Klicka på fliken Dataelement och sedan på Skapa nytt dataelement.
-4. Ge dataelementet följande inställningar:
+1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
+1. Klicka på fliken Dataelement och sedan på Skapa nytt dataelement.
+1. Ge dataelementet följande inställningar:
+
    * Namn: Sidnamn
    * Tillägg: Core
    * Dataelementtyp: JavaScript-variabel
    * Sökväg till variabel: `window.document.title`
 
-      >[!NOTE] Obs! Detta är ett exempelvärde som hjälper dig att komma igång. Om din organisation definierar ett bättre värde för sidnamn, till exempel ett datalagervärde, kan du ange det här.
+      >[!NOTE]
+      >
+      >Detta är ett exempelvärde som hjälper dig att komma igång. Om din organisation definierar ett bättre värde för sidnamn, till exempel ett datalagervärde, kan du ange det här.
    * Rensa text
    * Varaktighet: Sidvy
-5. Klicka på Spara.
+1. Klicka på Spara.
 
 ## Skapa regler för Adobe Analytics
 
-Regler mappar dataelement till Analytics variabelvärden och avgör när dessa värden skickas till Adobe-servrar.
+Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa värden skickas till Adobe-servrar.
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
 1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
@@ -84,4 +87,4 @@ Regler mappar dataelement till Analytics variabelvärden och avgör när dessa v
 
 ## Nästa steg
 
-[Driftsätt implementeringen av Analytics i din utvecklingsmiljö](deploy-dev.md): Få Analytics-kod att fungera i en testmiljö.
+[Distribuera er Analytics-implementering i er utvecklingsmiljö](deploy-dev.md): Få Analytics-koden att fungera i en testmiljö.
