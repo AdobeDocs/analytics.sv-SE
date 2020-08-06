@@ -3,7 +3,7 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '2119'
 ht-degree: 3%
@@ -94,7 +94,7 @@ Releasedatum: **11 februari 2019**
 
 * Stöd har lagts till för de nya Adobe-funktionerna för anmälningstjänster i AppMeasurement. (AN-163546)
 * Stöd för lagring av länkspårningsdata i sessionslagring har lagts till. (AN-162272)
-* Stöd för medieströmstyp för Audio Analytics har lagts till. (AN-173265)
+* Stöd för medieströmstyp för ljudanalys har lagts till. (AN-173265)
 
 ## Version 2.10.0
 
@@ -356,7 +356,9 @@ Releasedatum: **18 september 2014**
 * Korrigerade ett problem som orsakade ett dubbelsidigt antal sidor när s.t anropades från en länk-onclick-funktion, om Visitor-API:t inte har de värden som behövs ännu.
 * Stöd för HTTP-POST.
 
-   >[!IMPORTANT] Om du vill [!DNL Analytics] anropa metoden POST i stället för metoden GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
+   >[!IMPORTANT]
+   >
+   >Om du vill [!DNL Analytics] anropa metoden POST i stället för metoden GET i [!DNL AppMeasurement] (en metod för att lösa [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
 
 ## Version 1.4
 
