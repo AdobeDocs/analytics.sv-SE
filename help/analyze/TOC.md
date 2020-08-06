@@ -5,9 +5,9 @@ user-guide-title: Handbok om Analytics-verktyg
 user-guide-description: Provides access to Analysis Workspace , the premier analysis and visualization tool for Analytics. Also features all the analysis tools (Report Buidler, Reporting API, Data Workbench, and Activity Map) that you can use in Adobe Analytics.
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 9758f88439ae550a68ba937ccb56425e2df127cc
+source-git-commit: 07652c76120fae6b3e7b10bbe55b84a9cfe8b8c7
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1103'
 ht-degree: 95%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 95%
       + [Trädkarta](analysis-workspace/visualizations/treemap.md)
    + Paneler {#panels}
       + [Översikt över paneler](analysis-workspace/c-panels/panels.md)
-      + [Panelen Analytics för Target (A4T)](analysis-workspace/c-panels/a4t-panel.md)
+      + [Analyser för målpanelen (A4T)](analysis-workspace/c-panels/a4t-panel.md)
       + [Panelen Attribution](analysis-workspace/c-panels/attribution.md)
       + [Tom panel](analysis-workspace/c-panels/blank-panel.md)
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
@@ -92,6 +92,7 @@ ht-degree: 95%
    + Samla in eller dela projekt {#curate-share}
       + [Kuratera arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
+      + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
       + [Skrivskyddade Workspace-projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
@@ -336,7 +337,7 @@ ht-degree: 95%
    + [Tid](ad-hoc-analysis/c-time.md)
 + Labs {#tech-previews}
    + [Labs – översikt](tech-previews/overview.md)
-+ Adobe Analytics-paneler {#mobapp}
++ Adobe Analytics dashboards {#mobapp}
    + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Insamlingshandsbok](mobile-app/curator.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
