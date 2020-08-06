@@ -2,7 +2,7 @@
 title: getTimeBetweenEvents
 description: Mät tiden mellan två händelser.
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med plugin-programmet kan du hålla reda på hur lång tid det tar mellan två Analytics-event, inklusive kundvagn och anpassade händelser. `getTimeBetweenEvents` Det är användbart för att spåra hur lång tid det tar för en utcheckningsprocess att slutföra eller för andra processer som du vill mäta tid. Denna plugin behövs inte om du inte har några konverteringsprocesser som du vill mäta hur lång tid de tar.
+Med `getTimeBetweenEvents` plugin-programmet kan du hålla reda på hur lång tid det tar mellan två olika Analytics-händelser, inklusive kundvagn och anpassade händelser. Det är användbart för att spåra hur lång tid det tar för en utcheckningsprocess att slutföra eller för andra processer som du vill mäta tid. Denna plugin behövs inte om du inte har några konverteringsprocesser som du vill mäta hur lång tid de tar.
 
 ## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
@@ -30,7 +30,7 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Vanliga Analytics-plugin-program
+   * Tillägg: Plugin-program för vanlig analys
    * Åtgärdstyp: Initiera getTimeBetweenEvents
 1. Spara och publicera ändringarna i regeln.
 
@@ -47,7 +47,7 @@ Om du inte vill använda plugin-programtillägget kan du använda den anpassade 
 
 ## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -70,7 +70,10 @@ I metoden används följande argument: `getTimeBetweenEvents`
 * **`rt`** (obligatoriskt, booleskt): Starta om tidsinställningen. Ange till `true` om du vill starta om timern varje gång variabeln `events` innehåller en starttidshändelse. Ange till `false` om du inte vill att timern ska starta om när en starttidsinställningshändelse visas.
 * **`stp`** (required, string): Stoppa timerhändelser. En kommaavgränsad sträng med Analytics-händelser som&quot;stoppar timern&quot;.
 * **`res`** (obligatoriskt, booleskt): Återställ alternativet Timer. Ange till `true` om du vill registrera tiden sedan timern startades OCH återställa timern efter att den stoppats. Ange till `false` om du vill spela in tiden men inte stoppa timern. Om det anges till `false`fortsätter timern att köras efter det att händelsemabeln har registrerat en stop-händelse.
-   >[!TIP] Om du ställer in det här argumentet på `false`bör du ställa in `rte` argumentet nedan.
+
+   >[!TIP]
+   >
+   >Om du ställer in det här argumentet på `false`bör du ställa in `rte` argumentet nedan.
 * **`cn`** (valfri, sträng): Det cookie-namn där tidpunkten för den första händelsen lagras. Standardvärdet är `"s_tbe"`.
 * **`etd`** (valfritt, heltal): Förfallotid för cookien i dagar. Anges `0` till förfallodatum i slutet av webbläsarsessionen. Standardvärdet är 1 dag om den inte anges.
 * **`fmt`** (valfri, sträng): Formatet på den tid som antalet sekunder returneras i (standardvärdet är ingenting)
