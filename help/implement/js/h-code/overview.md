@@ -2,7 +2,7 @@
 title: H Code JavaScript implementation overview
 description: Lär dig arbetsflödet för att implementera H-kod på din webbplats.
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Den här versionen av datainsamling stöds inte längre. Uppgradera till [Adobe Experience Platform Launch](../../launch/overview.md) eller [AppMeasurement for JavaScript](../overview.md).
 
-Du måste ha tillgång till värdservrarna för att kunna implementera en sida med kod för att samla in data. Följande steg visar dig en grundläggande implementering av Analytics H Code.
+Du måste ha tillgång till värdservrarna för att kunna implementera en sida med kod för att samla in data. Följande steg visar dig vägen genom en grundläggande H-kodimplementering i Analytics.
 
 >[!NOTE]
 >
@@ -25,12 +25,14 @@ Du måste ha tillgång till värdservrarna för att kunna implementera en sida m
 1. **Uppdatera grundläggande JS-filvariabler**: Redigera `s_code.js` filen och kontrollera att följande variabler är uppdaterade:
    * `s_account` innehåller det rapportsvit-ID som du vill skicka data till. Se
    * `s.trackingServer` innehåller de platscookies som lagras. Se [trackingServer](../../vars/config-vars/trackingserver.md).
-2. **Lägg`s_code.js`filen på din plats** som värd: Den här filen finns vanligtvis tillsammans med andra skript på webbservern.
-3. **Referens`s_code.js`på alla sidor**: Se till att alla enskilda sidor anropar JavaScript-huvudfilen och gör det i HTML- `<body>` taggen (inte `<head>` -taggen).
+1. **Lägg`s_code.js`filen på din plats** som värd: Den här filen finns vanligtvis tillsammans med andra skript på webbservern.
+1. **Referens`s_code.js`på alla sidor**: Se till att alla enskilda sidor anropar JavaScript-huvudfilen och gör det i HTML- `<body>` taggen (inte `<head>` -taggen).
 
-   >[!TIP] H-koden kräver att `s_code.js` skriptet anropas inom `<body>` -taggen. Detta skiljer sig från andra implementeringsmetoder, varav de flesta kräver skriptreferenser i `<head>` -taggen.
-4. **Definiera sidspecifika variabler på varje sida**: Varje sida ska ha individuella variabler definierade, till exempel sidnamn eller eVars. Enskilda variabler definieras vanligtvis med en intern `<script>` tagg på varje sida.
-5. **Använd felsökaren för att verifiera datainsamling**: Hämta och installera felsökningsprogrammet [för](../../validate/debugger.md) Experience Cloud för att se till att data skickas till Adobe och att sidvariabler definieras korrekt.
+   >[!TIP]
+   >
+   >H-koden kräver att `s_code.js` skriptet anropas inom `<body>` -taggen. Detta skiljer sig från andra implementeringsmetoder, varav de flesta kräver skriptreferenser i `<head>` -taggen.
+1. **Definiera sidspecifika variabler på varje sida**: Varje sida ska ha individuella variabler definierade, till exempel sidnamn eller eVars. Enskilda variabler definieras vanligtvis med en intern `<script>` tagg på varje sida.
+1. **Använd felsökaren för att verifiera datainsamling**: Hämta och installera felsökningsprogrammet [för](../../validate/debugger.md) Experience Cloud för att se till att data skickas till Adobe och att sidvariabler definieras korrekt.
 
 ## Cachelagring
 
