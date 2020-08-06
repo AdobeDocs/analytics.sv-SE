@@ -3,7 +3,7 @@ description: 'null'
 title: Aktivera rapportsvit för Advertising Analytics
 uuid: 934f0e02-b5d7-4eca-93d8-92f95bd7014a
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 10%
@@ -23,7 +23,9 @@ Om du vill kunna se Advertising Analytics sökdata i Analytics måste du konfigu
 
    ![Rapportering](assets/aa_reporting.png)
 
-   >[!IMPORTANT] AMO ID refererar till den Adobe Advertising Cloud-variabel i vilken sökdata ska infogas.
+   >[!IMPORTANT]
+   >
+   >AMO ID refererar till den Adobe Advertising Cloud-variabel i vilken sökdata ska infogas.
 
 1. Ange variabelallokering och förfallodatum som du vill att variabeln AMO ID ska använda. Med konverteringsvariabler (eVars) kan Adobe Analytics attribuera success-händelser till specifika variabelvärden. Ibland påträffar variabler mer än ett värde innan en success-händelse inträffar. I dessa fall avgör allokeringen vilket variabelvärde som får kredit för händelsen.
 
