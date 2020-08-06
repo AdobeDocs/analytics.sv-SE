@@ -2,7 +2,7 @@
 title: Listvariabler
 description: Skapa och konfigurera listvariabler för rapportering.
 translation-type: tm+mt
-source-git-commit: a492de4ccbcd6f3f8ca81c9fecbcca4780e0f589
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 1%
@@ -23,7 +23,9 @@ Du kommer åt konfigurationen i Admin Console:
 * **Namn**: Varje avgränsat värde kan innehålla högst 255 tecken (eller mindre om flerbytetecken används). Det här är maxlängden för varje element.
 * **Värdeavgränsare**: Det tecken som används för att avgränsa värden inom List Var. De vanligaste är tecken som kommatecken, kolon, rör eller liknande.
 
-   >[!NOTE] Flerbytetecken stöds inte som avgränsare i List Vars. Avgränsaren måste vara en byte.
+   >[!NOTE]
+   >
+   >Flerbytetecken stöds inte som avgränsare i List Vars. Avgränsaren måste vara en byte.
 
 * **Förfallodatum**: På samma sätt som när eVar förfaller avgör detta hur lång tid det kan ta mellan List Var och konverteringshändelsen för dem att vara relaterade.
    * **På en sidvy eller en besöksnivå**: Framgångshändelser utanför sidvyn eller besöket länkar inte tillbaka till några värden i List Var.
