@@ -1,18 +1,18 @@
 ---
 description: Steg som beskriver hur du konfigurerar lyckade händelser.
-title: Konfigurera lyckade händelser
+title: Konfigurera slutförda händelser
 topic: Admin tools
 uuid: ca3d3f46-5fad-4481-aef6-04cad6bc6e2d
 translation-type: tm+mt
-source-git-commit: 0df5a32a0cb0e38692e973f26b39e7a846225b12
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 
-# Konfigurera lyckade händelser
+# Konfigurera slutförda händelser
 
 Steg som beskriver hur du konfigurerar lyckade händelser.
 
@@ -25,7 +25,9 @@ Steg som beskriver hur du konfigurerar lyckade händelser.
 1. Markera kryssrutan bredvid varje objekt i kolumnen för att aktivera redigering och ange sedan önskat namn. **[!UICONTROL Name]**
 1. Markera kryssrutan invid varje objekt i kolumnen för att aktivera den nedrullningsbara listan och välj sedan önskad typ. **[!UICONTROL Type]**
 
-   >[!NOTE] Innan du ändrar en händelsetyp ska du läsa [Ändra händelsetyp](/help/admin/admin/c-success-events/event-type.md).
+   >[!NOTE]
+   >
+   >Innan du ändrar en händelsetyp ska du läsa [Ändra händelsetyp](/help/admin/admin/c-success-events/event-type.md).
 
    Se sidan [Success Events - beskrivningar](/help/admin/admin/c-success-events/success-event.md) för information om dessa element.
 
@@ -37,7 +39,9 @@ Steg som beskriver hur du konfigurerar lyckade händelser.
 1. Kontrollera om händelsen alltid ska spelas in.
 1. Aktivera eller inaktivera deltagarstatistik.
 
-   >[!NOTE] Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagarvärden i [verktyget för beräkning av](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md) statistik.
+   >[!NOTE]
+   >
+   >Du kan aktivera deltagande för upp till 100 anpassade händelser. Utöver detta kan du skapa deltagarvärden i [verktyget för beräkning av](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md) statistik.
 
 1. Klicka på **[!UICONTROL Save]**.
 
