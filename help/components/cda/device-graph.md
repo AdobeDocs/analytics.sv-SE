@@ -2,7 +2,7 @@
 title: Enhetsdiagram
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med hjälp av enhetsdiagrammet.
 translation-type: tm+mt
-source-git-commit: eb2bee26dd58dcff13b4ddf41c6f6ab337d8d374
+source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Enhetsdiagram
 
-Analytics erbjuder två olika sätt att knyta ihop data. Den här metoden använder Adobe Experience Platform Identity Service Co-op Graph eller Private Graph för att knyta ihop data. CDA kommunicerar regelbundet med enhetsdiagrammet för att länka samman enheter.
+Med Analytics för olika enheter kan ni sammanfoga data på två olika sätt. Den här metoden använder Adobe Experience Platform Identity Service Co-op Graph eller Private Graph för att knyta ihop data. CDA kommunicerar regelbundet med enhetsdiagrammet för att länka samman enheter.
 
 ## Skillnader mellan foto-diagram och privat diagram
 
@@ -23,9 +23,11 @@ Adobe erbjuder två typer av enhetsdiagram som en del av ID-tjänsten:
 
 ## Förutsättningar som är specifika för enhetsdiagrammet
 
-Om du tänker implementera Analytics för olika enheter med hjälp av enhetens diagrammetod krävs följande. Samarbeta med team inom organisationen och er kontoansvarige på Adobe för att säkerställa att ni uppfyller alla följande krav.
+Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs följande. Samarbeta med team inom organisationen och kontohanteraren för Adobe för att säkerställa att ni uppfyller alla följande:
 
->[!IMPORTANT] Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera Analytics för olika enheter eller till dåliga resultat när du sammanfogar data.
+>[!IMPORTANT]
+>
+>Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när data sammanfogas.
 
 * Alla krav som anges på [översiktssidan](overview.md).
 * Din organisation måste använda Adobe Experience Platform Identity Service Co-op Graph eller Private Graph. Se [hemsidan](https://docs.adobe.com/content/help/en/device-co-op/using/home.html) i användarhandboken för Device Co-op.
@@ -34,12 +36,12 @@ Om du tänker implementera Analytics för olika enheter med hjälp av enhetens d
 
 ## Begränsningar som är specifika för enhetsdiagrammet
 
-* Äldre Analytics-ID:n stöds inte. Endast besökare med Experience Cloud ID sammanfogas.
+* Äldre analys-ID:n stöds inte. Endast besökare med Experience Cloud ID sammanfogas.
 * Om din organisation använder ett privat diagram tar det upp till 24 timmar för nya enheter att sy ihop.
 * Om din organisation använder Co-op Graph kan det ta upp till två veckor för nya enheter som besöker din webbplats att sammanfogas. Symbolnivån i CDA under de senaste två veckorna är vanligtvis lägre än för datumintervall som är äldre än två veckor.
 * Enhetsdiagram från tredje part stöds inte.
 
 ## Nästa steg
 
-När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [konfigurera Analytics](setup.md)för olika enheter.
+När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [konfigurera Cross-Device Analytics](setup.md).
 
