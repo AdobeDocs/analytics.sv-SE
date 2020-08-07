@@ -3,9 +3,9 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace sharing
 title: Dela arbetsyteprojekt
 translation-type: tm+mt
-source-git-commit: 192951d794b5e45cbbce22122adff573cb853054
+source-git-commit: 2189354bc296fa8b39dc646b2ad3aec28ded92cd
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1030'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 
 ### Ingen roll har tilldelats (mottagare av projektlänkar)
 
-Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.
+Om en mottagare inte har tilldelats en roll och får en [länk](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.
 
 ### Flera roller har tilldelats
 
@@ -66,7 +66,7 @@ Alla användare kan dela projekt med grupper, som är en samling mottagare. I Ad
 
 ## Dela en projektlänk {#Links}
 
-Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.
+Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.[Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html)om hur du skapar delningsbara länkar till arbetsyteprojekt.
 
 ## Dela projekt i projektledaren {#Manager}
 
