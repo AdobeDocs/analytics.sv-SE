@@ -3,10 +3,10 @@ description: Du kan hämta sparade och osparade projekt i PDF- och CSV-format.
 title: Hämta PDF- eller CSV-filer
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 422b69a9f671bbd3c4e8f033916296cbdf7f27d9
+source-git-commit: 3660806bc25b2a234c4f694cf5e661f4e23d5cac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '344'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Tänk på detta:
 1. Skapa eller öppna ett projekt.
 1. Klicka på **[!UICONTROL Project]** > **[!UICONTROL Download CSV (or Download PDF).]**
 
-Den 11 april 2019 gjordes flera ändringar av **[!UICONTROL CSV downloads]** (och **[!UICONTROL Copy to Clipboard]**) från Analysis Workspace för att ta bort formatering från exporterade data.
+Den 11 april 2019 gjordes flera ändringar i **[!UICONTROL CSV downloads]** (och **[!UICONTROL Copy to Clipboard]**) från Analysis Workspace för att ta bort formatering från exporterade data.
 * Programmet **[!UICONTROL Thousands Separator]** ingår inte längre. (Decimalavgränsaren tas med och följer det format som definieras i **[!UICONTROL Components > Report Settings > Thousands Separator]**).
 * Inga valutasymboler visas.
 * Inga procentsymboler visas.
@@ -37,6 +37,6 @@ Den 11 april 2019 gjordes flera ändringar av **[!UICONTROL CSV downloads]** (oc
 * Om ett tal är ogiltigt visas en tom cell.
 * Ingen avrundning används (även om den anges i beräknade värden) - råvärden visas.
 
->[!NObs!]
+>[!NOTE]
 >
-> Numeriska värden som använder kommatecken som decimalavgränsare fortsätter att citeras i den exporterade CSV-filen.
+>Numeriska värden som använder kommatecken som decimalavgränsare fortsätter att citeras i den exporterade CSV-filen.
