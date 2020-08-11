@@ -1,50 +1,24 @@
 ---
-description: Du kan dela och strukturera projekt och skicka projektfiler (i PDF- eller CSV-format) direkt eller enligt ett schema.
+description: Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen.
 title: Dela-menyn
 uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
 translation-type: tm+mt
-source-git-commit: d1e3daa8b13b148191583e678cd58f415701d407
+source-git-commit: 63efd2f046ac43640a9dd0fe2b3ee9fa3f182a8f
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 17%
 
 ---
 
 
 # Dela-menyn
 
-Du kan dela och strukturera projekt och skicka projektfiler (i PDF- eller CSV-format) direkt eller enligt ett schema.
+Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i din organisation på menyn **** Dela i arbetsyta.
 
-**[!UICONTROL Workplace]** > **[!UICONTROL Share]**
-
-<table id="table_5104A6D817E94A268BBDD47C5C8BB26E"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Alternativ </th> 
-   <th colname="col2" class="entry"> Använda </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Dela projekt </td> 
-   <td colname="col2"><a href="/help/analyze/analysis-workspace/curate-share/share-projects.md"  > Mer information</a> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Hämta projektlänk </td> 
-   <td colname="col2"> <p>Kopiera och dela länken för att skicka andra direkt till det här projektet. Användarna måste logga in. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Skicka fil nu </td> 
-   <td colname="col2"> <p>Ange filtyp, beskrivning och mottagare. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Skicka fil enligt schema </td> 
-   <td colname="col2"> <p>Ange startdatum, intervall och frekvens samt slutdatum. <a href="/help/analyze/analysis-workspace/curate-share/schedule-projects.md"  > Mer information</a> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Kuratera projektdata </td> 
-   <td colname="col2"> <p><a href="/help/analyze/analysis-workspace/curate-share/curate.md"  > Mer information</a> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
+| Menyalternativ | Beskrivning |
+|---|---|
+| Dela projekt | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
+| Hämta projektlänk | Skapa en delbar länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) |
+| Skicka fil nu | Skicka ett projekt som en CSV eller PDF direkt till angivna mottagare. |
+| Skicka fil enligt schema | Skicka ett projekt som en CSV- eller PDF-fil enligt ett schema till angivna mottagare. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html) |
+| Kuratera projektdata | Begränsa de komponenter (mått, mått, segment, datumintervall) som finns i ett projekt. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html) |
