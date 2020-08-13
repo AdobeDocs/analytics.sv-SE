@@ -1,25 +1,41 @@
 ---
-description: 'null'
-title: Sammanfattningsnummer och sammanfattning
+description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att visa viktiga datapunkter i ett projekt.
+title: Sammanfattning av antal och förändring
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: cffcceae49fe51558aab0044281156e2c2d1027d
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 6%
 
 ---
 
 
-# Sammanfattningsnummer och sammanfattning
+# Sammanfattning av antal och förändring
 
-## Visualisering av sammanfattningsnummer
+## Visualisering av sammanfattningsnummer {#summary-number}
+
+Använd visualisering av sammanfattningsnummer för att markera ett stort tal som är viktigt i ett projekt. Den här visualiseringen fungerar på följande sätt:
 
 * Markerar kolumnsumman om ingen cell är markerad.
 * Om en enskild cell är markerad visas sammanfattningen för den cellen.
 * Om flera celler är markerade visas den första cellen som är markerad.
 * Om kolumnen är markerad väljs det första cellvärdet i kolumnen.
 
-![](assets/summary-number.png)
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
 
-## Visualisering av sammanfattningsändring
+| Inställning | Definition |
+|--- |--- |
+| Procenttal | Visa procenttal i stället för råa tal. |
+| Förklaring synlig | Visa information om måttet som visas. |
+| Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
+| Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
+
+## Visualisering av sammanfattningsändring {#summary-change}
+
+Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) eller med alternativet [Visa uppåttrend som](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) för ett beräknat mått.
+
+Den här visualiseringen fungerar på följande sätt:
 
 * Om ingen cell är markerad jämförs de två första cellvärdena i kolumnen.
 * Om en cell är markerad visas 0, eftersom cellvärdet jämförs med sig själv.
@@ -27,18 +43,12 @@ source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 * Om fler än två celler är markerade kommer endast de första två att användas för jämförelse.
 * Om ett cellintervall är markerat jämförs den första med den sista cellen i intervallet.
 * Om kolumnen är markerad jämförs det första värdet med sig självt, vilket innebär en ändring på 0.
-* Den gröna och röda färgen i sammanfattningsändringen kan styras med:
-   * [Anpassad händelsepolaritet](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html).
-   * Alternativet [Visa uppåttrend som](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) för ett beräknat mått.
 
-## Ändra inställningar för sammanfattning {#section_2581AC0107634FB4990AB8347E5897AA}
-
-Klicka på kugghjulsikonen bredvid visualiseringen för att konfigurera summeringsinställningarna:
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
 
 | Inställning | Definition |
 |--- |--- |
-| Procenttal | Använd procenttal i stället för råtal. |
-| Förklaring synlig | Visar de mått som används. |
-| Alternativ för sammanfattningsnummer: Förkortningsvärde | Du kan välja mellan 0 och 3 decimaler för förkortade värden. |
-| Alternativ för sammanfattning: Visa procentuell ändring | Visar ändringen i procent mellan de två talen. |
-| Alternativ för sammanfattning: Visa råskillnad | Visar den obearbetade skillnaden mellan de två talen. |
+| Procenttal | Visa procenttal i stället för råa tal. |
+| Förklaring synlig | Visa information om måttet som visas. |
+| Visa procentuell ändring | Visar procentändringen mellan de två talen. |
+| Visa råskillnad | Visar den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |
