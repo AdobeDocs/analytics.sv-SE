@@ -3,19 +3,19 @@ description: Med kolumninställningar kan du konfigurera kolumnformatering, som 
 title: Kolumninställningar
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: 834783e4eae9100233afc164e2fabef96f089874
+source-git-commit: dd14c576a6c447026c2389a864afce16e6bdc77d
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 1%
+source-wordcount: '614'
+ht-degree: 23%
 
 ---
 
 
-# Kolumninställningar
+# [!UICONTROL Column Settings]
 
-Med kolumninställningar kan du konfigurera kolumnformatering, som vissa kan vara villkorliga.
+[!UICONTROL Column Settings] gör att du kan konfigurera kolumnformatering, som vissa kan vara villkorliga.
 
-## Kolumninställningar {#section_C5A9C13553BF4BFDAD7FACE0139AECA3}
+## Redigera [!UICONTROL Column Settings] {#column-settings}
 
 Du öppnar [!UICONTROL Column Settings]genom att dra en friformstabell till projektet och sedan klicka på kugghjulsikonen i kolumnrubriken.
 
@@ -24,7 +24,7 @@ Du öppnar [!UICONTROL Column Settings]genom att dra en friformstabell till proj
 Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara flera kolumner och klicka på inställningsikonen för någon av dessa kolumner. Alla ändringar du gör gäller för alla kolumner där celler är markerade.
 
 | Element | Beskrivning |
-|--- |--- |
+| --- | --- |
 | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
 | Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs!  Vi kan visa procenttal större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna kan växa i för stora bredder. |
 | Anomalier | Avgör om avvikelseidentifiering körs på värdena i den här kolumnen. |
@@ -35,22 +35,20 @@ Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara f
 | Villkorsstyrd formatering | Se avsnittet nedan. |
 | Förhandsgranskning av tabellcell | Visar en förhandsvisning av hur varje cell visas med de valda formateringsalternativen. |
 
-
-## Villkorsstyrd formatering {#section_3DD847151DA14914888A70FC4FD7BDFB}
+## Conditional formatting {#conditional-formatting}
 
 Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre gränser som du kan definiera. Om du använder villkorsstyrd formatering (färger o.s.v.) i frihandstabeller aktiveras även automatiskt vid uppdelning, såvida inte &quot;Anpassade&quot; gränser har valts.
 
 ![](assets/conditional-formatting.png)
 
 | Element | Beskrivning |
-|--- |--- |
-| Villkorsstyrd formatering | Tillämpar följande färger på celler baserat på datavärden: <ul><li>Grön: höga värden</li><li>Gul: mittpunktsvärden</li><li>Röd: låga värden</li></ul><br>Om du ersätter en dimension i tabellen återställs de villkorliga formateringsgränserna. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått finns på Y-axeln). |
-| Använd procentgränser | Används för att använda övre, mellersta och nedre gränser baserat på procentvärden för varje mätvärde. Detta fungerar för mätvärden som endast är procentbaserade (som Studsfrekvens) samt för mätvärden som har ett antal och ett procenttal (som sidvyer). |
-| Automatiskt genererad | Genererar automatiskt gränser för villkorsstyrd formatering. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är den lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
-| Egen | Du kan tilldela värden manuellt för fälten Övre, Mittpunkt och Nedre gräns för villkorsstyrd formatering. Detta ger dig flexibilitet att avgöra när ett kolumnvärde blir bra, medelvärde eller dåligt. |
-| Förhandsgranskning av tabellcell | Visar en förhandsvisning av hur varje cell visas med de valda formateringsalternativen. |
+| --- | --- |
+| Villkorsstyrd formatering | Använder följande färger på celler baserat på datavärden: <ul><li>Grön: höga värden</li><li>Gul: mittpunktsvärden</li><li>Röd: låga värden</li></ul> <br> Om du ersätter ett mått i tabellen återställs gränserna för villkorsstyrd formatering. Om du ersätter ett mätvärde räknas gränserna för den kolumnen om (där ett mätvärde finns på X-axeln och ett mått på Y-axeln). |
+| Använd procentgränser | Ändra gränsintervallet så att det baseras på procentvärden i stället för absoluta värden. Detta fungerar för mätvärden som endast är procentbaserade (som Studsfrekvens) samt för mätvärden som har ett antal och ett procenttal (som sidvyer). |
+| Automatiskt genererad | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
+| Anpassad | Tilldela manuellt övre/mellersta/nedre gränser. Då får du den flexibilitet du behöver för att avgöra när ett kolumnvärde blir bra, medelbra eller dåligt. |
 
-## Använd en attribueringsmodell som inte är standard
+## Använd en attribueringsmodell som inte är standard {#attribution}
 
 Analysis Workspace stöder [attribuering](../../attribution/overview.md) för nästan alla mätvärden.
 
@@ -58,10 +56,9 @@ Analysis Workspace stöder [attribuering](../../attribution/overview.md) för n�
 
    ![Kryssrutan Attribut](assets/attribution-checkbox.png)
 
-2. Under **[!UICONTROL Data Settings]**, kolla **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributmodeller](../../attribution/models.md).
+1. Under **[!UICONTROL Data Settings]**, kolla **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributmodeller](../../attribution/models.md).
 
    ![Välj attribueringsmodell](assets/attribution-select.png)
-
 
 >[!MORELIKETHIS]
 >
