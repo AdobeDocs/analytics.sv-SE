@@ -2,7 +2,7 @@
 title: Tekniska handböcker för Adobe Analytics
 description: Användarhandböcker och resurser för Analytics
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 100%
@@ -69,7 +69,7 @@ Here is a comprehensive list of and links to all the reporting capabilities in A
 *   [Intelligent Alerts](/help/components/c-alerts/intellligent-alerts.md)
 *   [Mobile App SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)  
 *   [Real-time reporting](/help/components/c-real-time-reporting/realtime.md)
-*   [Segmentation](/help/components/c-segmentation/seg-home.md)
+*   [Segmentation](/help/components/segmentation/seg-home.md)
 *   [Segment Comparison](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
 *   [Video Tracking](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 *   [Virtual Report Suites](/help/components/vrs/vrs-about.md)
