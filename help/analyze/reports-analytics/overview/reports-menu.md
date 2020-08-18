@@ -1,9 +1,9 @@
 ---
-description: En översikt över rapportmenyn i Rapporter och Analytics.
+description: En översikt över rapportmenyn i Rapporter och analyser.
 title: Rapportmeny
 uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Rapportmeny{#reports-menu}
 
-En översikt över rapportmenyn i Rapporter och Analytics.
+En översikt över rapportmenyn i Rapporter och analyser.
 
 Rapporter-menyn innehåller:
 
@@ -34,7 +34,7 @@ Mer information om enskilda rapporter finns i [Rapportbeskrivningar](https://doc
 
 ## Sök efter rapporter {#section_E5EF11E36CB9451AA7B079E585CA7DB6}
 
-Menyn Rapporter ger en förbättrad sökfunktion. Klicka på **[!UICONTROL View All Reports]** eller tryck på snedstreckstangenten (/) och börja sedan skriva för att snabbt hitta en rapport. Rapportsökningen har utökats så att den omfattar allt i den vänstra navigeringen i Analytics (Admin, Komponenter osv.).
+Menyn Rapporter ger en förbättrad sökfunktion. Klicka på **[!UICONTROL View All Reports]** eller tryck på snedstreckstangenten (/) och börja sedan skriva för att snabbt hitta en rapport. Rapportsökningen har utökats så att den omfattar allt i vänsternavigeringen i Analytics (Admin, Components, etc.).
 
 ![](assets/menu-search.png)
 
@@ -42,7 +42,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
 
 >[!NOTE]
 >
->Du kan också söka i rapportlistan efter prop, eVar och händelsenummer. Ange prop-, eVar- eller händelsenummer i sökfältet.
+>Du kan också söka i rapportlistan efter hjälp, eVar och händelsenummer. I sökfältet anger du prop-, eVar- eller händelsenummer.
 
 ## Navigeringsöversikt {#section_A6A0A369207149BABE504753B48A42D7}
 
@@ -64,7 +64,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol">Segment <img placement="inline"  src="assets/segment_icon.png" width="30px" id="image_6BF461356C8640EA8E93B74092320E91" /></span> </td> 
-   <td colname="col2">Flyttar uppåt segmentets rand så att du kan lägga till eller hantera segment. Du kan även komma åt gränssnitten <a href="/help/components/c-segmentation/c-segmentation-workflow/seg-build.md"  > Segment Builder</a> och <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html"  > Segment Manager</a> från segmentspåret. </td> 
+   <td colname="col2">Flyttar uppåt segmentets rand så att du kan lägga till eller hantera segment. Du kan även komma åt gränssnitten <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > Segment Builder</a> och <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html"  > Segment Manager</a> från segmentspåret. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol">Mätvärden <img placement="inline"  src="assets/metrics_icon.png" width="30px" id="image_88620CB8A9CC4BC3BE4CE30BDA727512" /></span> </td> 
@@ -84,7 +84,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Visas ofta</span> </td> 
-   <td colname="col2"> Adobe Analytics håller reda på de tio rapporter som du har kört oftast under de senaste 90 dagarna och visar dem här, sorterade efter hur ofta du kör dem. Om du inte har varit med i den här rapportsviten på mer än 90 dagar visas en allmän lista med tio populära rapporter i listan. </td> 
+   <td colname="col2"> Adobe Analytics håller reda på de tio rapporter som du har kört oftast under de senaste 90 dagarna och visar dem här, sorterade efter hur ofta du har kört dem. Om du inte har varit med i den här rapportsviten på mer än 90 dagar visas en allmän lista med tio populära rapporter i listan. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Rapporthistorik</span> </td> 
