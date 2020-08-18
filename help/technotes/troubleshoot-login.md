@@ -2,45 +2,59 @@
 title: Felsöka inloggning på Adobe Analytics
 description: Steg som ska utföras när du inte kan logga in på Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 7c722e361978a3d7517e95c23442b703e7e25270
+source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 2%
+source-wordcount: '490'
+ht-degree: 3%
 
 ---
 
 
 # Felsöka inloggning på Adobe Analytics
 
-Adobe Analytics använder Adobe ID för att autentisera med Experience Cloud.
+Adobe Analytics använder flera autentiseringsmetoder för att logga in:
 
-Om du regelbundet kommer åt Analytics och råkar ut för inloggningsproblem, löser rensning av webbläsarens cookies och cache dessa problem oftast.
+* Adobe ID via Experience Cloud
+* ID för äldre analys
+* Enkel inloggning
 
-## Access experience.adobe.com
+**Om du regelbundet kommer åt Analytics och slumpmässigt påträffar inloggningsproblem kan du lösa de flesta problem genom att rensa webbläsarens cookies och cache.**
 
-Navigera till [experience.adobe.com](https://experience.adobe.com).
+Ibland kan tillgänglighetsproblem påverka inloggningsförmågan. Kontrollera [status.adobe.com](https://status.adobe.com) om det finns några öppna incidenter. I annat fall använder du rätt avsnitt beroende på organisationens autentiseringsmetod.
 
-Om du inte kan komma åt den här platsen:
+## Adobe ID
 
-* Din organisation kanske inte tillåter den här domänen via din brandvägg. Samarbeta med IT-avdelningen i organisationen för att göra det möjligt. Se [IP-adresser och domäner som används i Adobe Experience Cloud](https://helpx.adobe.com/se/analytics/kb/adobe-ip-addresses.html) för att få användbar information att ge IT-avdelningen.
-* Kontrollera [status.adobe.com](https://status.adobe.com) för att kontrollera att det inte finns några tillgänglighetsproblem.
+Felsöka problem med att logga in på Adobe Analytics med Experience Cloud.
 
-## Autentisera med Adobe ID
+1. Navigera till [experience.adobe.com](https://experience.adobe.com). Om du inte kan komma åt den här webbplatsen kanske din organisation inte tillåter den här domänen via din brandvägg. Samarbeta med IT-avdelningen i organisationen för att göra det möjligt. Se [IP-adresser och domäner som används i Adobe Experience Cloud](https://helpx.adobe.com/se/analytics/kb/adobe-ip-addresses.html) för att få användbar information att ge IT-avdelningen.
 
-Klicka på **[!UICONTROL Sign In with an Adobe ID]**.
+2. Autentisera med Adobe ID: Klicka **[!UICONTROL Sign In with an Adobe ID]**. Om du inte kan logga in kontrollerar du att din e-postadress är korrekt angiven. Annars klickar du på **[!UICONTROL Reset password]** och följer anvisningarna för att återställa ditt Adobe ID-lösenord.
 
-Om du inte kan logga in:
+3. Åtkomstanalys efter autentisering: Klicka på ikonen med nio rutnät i det övre högra hörnet och klicka sedan på Analytics (Analyser). Om du inte har det här alternativet, eller om det är nedtonat, kan du samarbeta med en produktadministratör i organisationen för att kontrollera att du har rätt behörighet för att få tillgång till Analytics.
 
-* Kontrollera att din e-postadress är korrekt.
-* Klicka **[!UICONTROL Reset password]** och följ anvisningarna för att återställa Adobe ID.
+## ID för äldre analys
 
-## Kan inte komma åt Analytics efter autentisering
+Det händer att en användare i organisationen får följande felmeddelande när han/hon loggar in:
 
-Klicka på ikonen med nio rutnät i det övre högra hörnet och klicka sedan på Analytics.
+*Av säkerhetsskäl har det här kontot låsts på grund av för många misslyckade inloggningsförsök.*
 
-Om du inte har det här alternativet, eller om du är nedtonad, kan du samarbeta med en produktadministratör i din organisation för att kontrollera att du har rätt behörighet för att få tillgång till Analytics.
+Om problemet inte kan lösas genom att du rensar webbläsarens cookies/cache kan du kontakta en Analytics-administratör i organisationen för att återställa användarens lösenord.
 
-## Andra personliga inloggningsproblem
+>[!IMPORTANT]
+>
+>Följande steg för att återställa en användares lösenord gäller endast äldre ID:n för analys, inte Adobe ID. Om din organisation använder Adobe ID kan du hantera användarkonton på [adminconsole.adobe.com](https://adminconsole.adobe.com).
+
+1. Logga in på Adobe Analytics med ett konto som har administratörsbehörighet.
+2. Navigera till **[!UICONTROL Admin]** > **[!UICONTROL User Management]**.
+3. Klicka på **[!UICONTROL Users]** fliken och klicka sedan **[!UICONTROL Edit]** bredvid önskad användare.
+4. Ändra lösenordet till valfritt värde och markera kryssrutan **[!UICONTROL Require user to change password on next login]**.
+5. Informera användaren om det nya lösenordet.
+
+## Enkel inloggning
+
+Kontakta en administratör i organisationen för att lösa problem med enkel inloggning.
+
+## Andra inloggningsproblem
 
 Om inget av ovanstående steg fungerar, ska du fastställa bredden på inloggningsproblemet:
 
