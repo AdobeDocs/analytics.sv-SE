@@ -3,7 +3,7 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 translation-type: tm+mt
-source-git-commit: de7783174d55c03ac73140e8ab05005284788459
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 97%
@@ -24,9 +24,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Datum | Beskrivning |
 |---|---|
-| 21 juli 2020 | Viktiga uppdateringar och revideringar av Analytics [för](/help/components/cda/overview.md)olika enheter. Lagt till [fältbaserad sammanfogning](/help/components/cda/field-based-stitching.md). |
+| 21 juli 2020 | Viktiga uppdateringar och revideringar av [enhetsövergripande analyser](/help/components/cda/overview.md). Lagt till [fältbaserad sammanfogning](/help/components/cda/field-based-stitching.md). |
 | 28 april 2020 | Dokumentation för mätvärdet [Content Velocity](/help/components/metrics/content-velocity.md) har lagts till. |
-| 12 mars 2020 | [Publicera segment i Experience Cloud](/help/components/c-segmentation/c-segmentation-workflow/seg-publish.md) har uppdaterats. |
+| 12 mars 2020 | [Publicera segment i Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-publish.md) har uppdaterats. |
 | 12 mars 2020 | Uppdateringar av svarstider för CDA-sammanfogning. |
 | 27 februari 2020 | Dokumentation för [Adobe Analytics Labs](https://docs.adobe.com/content/help/en/analytics/analyze/tech-previews/overview.html) har lagts till. |
 | 25 februari 2020 | [`useLinkTrackSessionStorage`](/help/implement/vars/config-vars/uselinktracksessionstorage.md)-variabel har lagts till. |
