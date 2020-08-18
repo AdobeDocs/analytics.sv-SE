@@ -4,7 +4,7 @@ title: Översikt över Data Warehouse
 topic: Data warehouse
 uuid: 768557dd-1644-4ce6-bfc2-8c46dd6e1cd1
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 1%
@@ -14,21 +14,21 @@ ht-degree: 1%
 
 # Översikt över Data Warehouse
 
-Data warehouse refererar till kopian av Analytics-data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. Du kan begära rapporter för att visa avancerade datarelationer från rådata baserat på dina unika frågor. Data warehouse-rapporter skickas via e-post eller FTP och kan ta upp till 72 timmar att behandla. Bearbetningstiden beror på frågans komplexitet och mängden data som begärs.
+data warehouse refererar till kopian av Analytics-data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. Du kan begära rapporter för att visa avancerade datarelationer från rådata baserat på dina unika frågor. Data warehouse-rapporter skickas via e-post eller FTP och kan ta upp till 72 timmar att behandla. Bearbetningstiden beror på frågans komplexitet och mängden data som begärs.
 
 Adobe aktiverar endast Data warehouse för användare på administratörsnivå för särskilda rapportsviter. (Den kan aktiveras för globala och underordnade rapportsviter, men inte för sammanslagningsrapportsviter.) Administratören kan skapa en grupp som har åtkomst till Data warehouse och sedan associera icke-administratörsnivåanvändare till den gruppen.
 
-Data warehouse packar automatiskt alla filer som är större än 1 MB. Den maximala storleken för e-postbilagor är 10 MB.
+data warehouse packar automatiskt alla filer som är större än 1 MB. Den maximala storleken för e-postbilagor är 10 MB.
 
-Data warehouse kan bearbeta ett obegränsat antal rader i en och samma begäran för enskilda schemalagda och nedladdade rapporter.
+data warehouse kan bearbeta ett obegränsat antal rader i en och samma begäran för enskilda schemalagda och nedladdade rapporter.
 
 >[!NOTE]
 >
->Data warehouse rapporterar det första värdet som påträffats under rapporteringsperioden.
+>data warehouse rapporterar det första värdet som påträffats under rapporteringsperioden.
 
 >[!IMPORTANT]
 >
->Vid segmentering på klassificerade värden behandlar Analysis Workspace och Data warehouse ospecificerade värden olika. &#39;Ospecificerad&#39; i arbetsytan avser värden som inte är klassificerade, medan &#39;Ospecificerad&#39; i Data warehouse avser värden som du klassificerat som &#39;Ospecificerad&#39;.
+>Vid segmentering på klassificerade värden behandlar Analysis Workspace och Data warehouse &#39;ospecificerade&#39; värden annorlunda. &#39;Ospecificerad&#39; i arbetsytan avser värden som inte är klassificerade, medan &#39;Ospecificerad&#39; i Data warehouse avser värden som du klassificerat som &#39;Ospecificerad&#39;.
 
 ## Beskrivningar av förfrågningar från Data warehouse {#section_F21C78ED36884C389C852E876AF5CDE8}
 
@@ -53,11 +53,11 @@ Tabellen beskriver fälten och alternativen på [!UICONTROL Data Warehouse Reque
      <li id="li_4D7C26812DF94ED7B64F985309541F46"> <span class="wintitle"> Anpassad</span>: Ett datumintervall som du konfigurerar i kalendern. </li> 
      <li id="li_2B272087006847148A936350D1B2D523"> <span class="wintitle"> Förinställning</span>: Ett förinställt intervall. Förinställningsintervallet är relativt rapportdatumet. </li> 
      <li id="li_745989965BB94D489FF7046587E13C42"> <span class="wintitle"> Kornighet</span>: Tidsgranulariteten. Giltiga värden är None, Hour, Day, Week, Month, Quarter och Year. </li> 
-    </ul> <p>Rapportering från Data warehouse i virtuella rapportsviter har stöd för den alternativa tidszon som har konfigurerats i den virtuella rapportsviten. </p> </td> 
+    </ul> <p>Rapportering från data warehouse i virtuella rapportsviter har stöd för den alternativa tidszon som har konfigurerats i den virtuella rapportsviten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Tillgängliga segment</span> </td> 
-   <td colname="col2"> <p>Gör att du kan markera den del av besökspopulationen som du vill granska och generera komplexa segment. Du kan läsa in förkonfigurerade segment, skapa nya segment och lagra segmentkomponenter i ett bibliotek och använda dem när du skapar ytterligare segment. </p> <p>Nu kan du stapla segment. När du markerar flera segment visas en kommaseparerad lista med namn (t.ex. Segment1, Segment2) i förhandsvisningsområdet, begärandehanteraren och popup-fönstret Frågedetaljer. </p> <p>Mer information finns i <a href="/help/components/c-segmentation/seg-home.md"> segmenteringshandboken</a> . </p> <p>Obs!  Du kan inte inkludera både ett segmentfilter och en uppdelning på samma segment i samma Data warehouse-rapport. Om du gör det blir det ett fel. </p> </td> 
+   <td colname="col2"> <p>Gör att du kan markera den del av besökspopulationen som du vill granska och generera komplexa segment. Du kan läsa in förkonfigurerade segment, skapa nya segment och lagra segmentkomponenter i ett bibliotek och använda dem när du skapar ytterligare segment. </p> <p>Nu kan du stapla segment. När du markerar flera segment visas en kommaseparerad lista med namn (t.ex. Segment1, Segment2) i förhandsvisningsområdet, begärandehanteraren och popup-fönstret Frågedetaljer. </p> <p>Mer information finns i <a href="/help/components/segmentation/seg-home.md"> segmenteringshandboken</a> . </p> <p>Obs!  Du kan inte inkludera både ett segmentfilter och en uppdelning på samma segment i samma Data warehouse-rapport. Om du gör det blir det ett fel. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Uppdelningar</span> </td> 
@@ -69,7 +69,7 @@ Tabellen beskriver fälten och alternativen på [!UICONTROL Data Warehouse Reque
   </tr> 
   <tr> 
    <td colname="col1"><span class="wintitle"> Metrisk sortering</span> </td> 
-   <td colname="col2">Tillhandahåller rankade uppdelningsrapporter, sorterade efter fallande måttvärden, som liknar det som visas i användargränssnittet för Rapporter och Analytics, Datan Workbench osv. <a href="/help/export/data-warehouse/sorting-by-metric.md"  > Mer...</a> </td> 
+   <td colname="col2">Tillhandahåller rankade uppdelningsrapporter, sorterade efter fallande mätvärden, som liknar det som visas i användargränssnittet för Rapporter och analyser, Data Workbench osv. <a href="/help/export/data-warehouse/sorting-by-metric.md"  > Mer...</a> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Schemalägg leverans</span> </td> 
