@@ -3,10 +3,10 @@ description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade
 title: Linjediagram
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 78ed02b7bb7a4dc042c837817d36fc8ce30dce79
+source-git-commit: 34db4e99589827fd41f642788e3409834b96d78a
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 3%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Den här visualiseringen representerar mätvärden som använder en rad för att
 
 >[!IMPORTANT]
 >
-> Vissa inställningar för linjevisualisering, till exempel Lägg till trendlinje, är för närvarande i begränsad testning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html).
+> Vissa inställningar för linjevisualisering, till exempel Visa trendlinje, är för närvarande i begränsad testning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html).
 
 Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen för att komma åt [**visualiseringsinställningarna**](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html#section_D3BB5042A92245D8BF6BCF072C66624B) . Inställningarna är indelade i:
 
@@ -29,11 +29,15 @@ Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen f�
 
 ### Ändra granularitet
 
-Med en listruta för granularitet i [visualiseringsinställningarna](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B) kan du ändra en trendvisualisering (t.ex. rad, rad) från dag till vecka till månad, osv.
+Med en listruta för granularitet i [visualiseringsinställningarna](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B) kan du ändra en trendvisualisering (t.ex. rad, rad) från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen.
 
-### Lägga till en trendlinjeövertäckning
+### Visa min eller max
 
-Under **Visualiseringsinställningar > Övertäckningar > Lägg till trendlinje** kan du välja att lägga till en regressionstrendlinje i radserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
+Under **Visualiseringsinställningar > Övertäckningar > Visa min/max** kan du överlappa en etikett för minsta och högsta värde för att snabbt markera toppar och dalar i ett mätresultat.
+
+### Visa trendlinjeövertäckning
+
+Under **Visualiseringsinställningar > Övertäckningar > Visa trendlinje** kan du välja att lägga till en regressionstrendlinje i din radserie. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
 
 Alla modeller passas in med vanliga minsta fyrkanter:
 
