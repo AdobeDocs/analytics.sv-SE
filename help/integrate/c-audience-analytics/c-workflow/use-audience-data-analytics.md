@@ -1,21 +1,24 @@
 ---
-description: 'Ni kan använda AAM Audience-dimensionerna i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen"mc_audiences". Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller LiveStream. Några exempel på hur publikens dimensioner kan utnyttjas är '
+description: 'Ni kan använda AAM Audience-dimensioner i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen"mc_audiences". Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller livream. Några exempel på hur publikens dimensioner kan utnyttjas är '
 solution: Experience Cloud
 title: Använd målgruppsdata i Analytics
 uuid: 203925fb-f070-441c-813a-43099cb9b2b9
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 8%
 
 ---
 
 
 # Använd målgruppsdata i Analytics
 
-Ni kan använda AAM Audience-dimensionerna i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen&quot;mc_audiences&quot;. Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller LiveStream. Några exempel på hur publikens dimensioner kan utnyttjas är:
+Ni kan använda AAM Audience-dimensioner i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen&quot;mc_audiences&quot;. Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller livream. Några exempel på hur publikens dimensioner kan utnyttjas är:
 
 ## Analysis Workspace {#section_C70837499BEA4DED885B3486C9E02C68}
 
-I Analysis Workspace visas AAM-segmenten som två dimensioner.
+I Analysis Workspace visas AAM som två dimensioner.
 
 1. Gå till **[!UICONTROL Workspace]**.
 1. Välj dimensioner **[!UICONTROL Dimensions]** eller **[!UICONTROL Audience ID]** i listan över **[!UICONTROL Audience Name]**. Namnet är en användarvänlig klassificering av ID:t.
@@ -24,7 +27,7 @@ I Analysis Workspace visas AAM-segmenten som två dimensioner.
 
 ## Segmentjämförelse {#section_E72B80B6470C42D4B9B19BE90E6070A2}
 
-[Segmentjämförelsen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) visar de mest statistiskt signifikanta skillnaderna mellan två segment. Målgruppsdata kan användas i segmentjämförelsen på två sätt: 1) som de två segment som jämförs och 2) som objekt i tabellen&quot;Top Dimension Items&quot;.
+[Segmentjämförelsen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) visar de mest statistiskt signifikanta skillnaderna mellan två segment. Målgruppsdata kan användas i segmentjämförelsen på två sätt: 1) som de två segment som ska jämföras och 2) som objekt i tabellen&quot;Objekt på den översta Dimensionen&quot;.
 
 1. Gå till **[!UICONTROL Workspace]** och välj **[!UICONTROL Segment Comparison]** panelen i den vänstra listen.
 
@@ -35,13 +38,13 @@ I Analysis Workspace visas AAM-segmenten som två dimensioner.
 1. (Valfritt): Du kan även infoga andra dimensionsobjekt eller segment, upp till 2 kan jämföras.
 1. Klicka på **[!UICONTROL Build]**.
 
-   Måtten för publikens ID och namn visas automatiskt i tabellen&quot;Top Dimension Items&quot; eftersom de är ytterligare profildata för de två segment som jämförs.
+   Måtten för publikens ID och namn visas automatiskt i tabellen&quot;Objekt i den översta Dimensionen&quot;, eftersom de är ytterligare profildata för de två segment som jämförs.
 
    ![](assets/aud-segcompare.png)
 
-## Kundresa (flöde) på analysarbetsytan {#section_FC30E5795C9D4539838E30FE11FAEA6E}
+## Kundresa (flöde) i Analysis Workspace {#section_FC30E5795C9D4539838E30FE11FAEA6E}
 
-AAM-segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan hamna i ett segment (t.ex. &quot;Kännedom&quot;), kan senare kvalificera sig för ett mer kvalificerat segment (t.ex. &quot;Övervägande&quot;). Du kan använda [Flow](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
+AAM segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan hamna i ett segment (t.ex. &quot;Kännedom&quot;), kan senare kvalificera sig för ett mer kvalificerat segment (t.ex. &quot;Övervägande&quot;). Du kan använda [Flow](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
 
 1. Gå till **[!UICONTROL Workspace]** och välj **[!UICONTROL Flow]** visualisering från den vänstra listen.
 
@@ -53,7 +56,7 @@ AAM-segmentdata överförs till Analytics från en träffsäker nivå och repres
 
 Publiken kan också användas i [bortfallsvisualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html).
 
-## Visualisering av Venner i analysarbetsytan {#section_E78AB764FB5047148B51DC1526B0DF89}
+## Visualisering av Venner i Analysis Workspace {#section_E78AB764FB5047148B51DC1526B0DF89}
 
 [Vennvisualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/venn.html) visar överlappningen mellan upp till 3 segment.
 
@@ -69,7 +72,7 @@ Publiken kan också användas i [bortfallsvisualiseringar](https://docs.adobe.co
 
 ## Segment Builder {#section_2AA81852A1404AB894472CA8959461B6}
 
-Ni kan införliva målgruppsdimensionerna i [segmentbyggaren](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md)för Analytics, tillsammans med den beteendeinformation som samlas in i Analytics.
+Ni kan införliva målgruppsdimensionerna i [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md)för Analytics, tillsammans med den beteendeinformation som samlas in i Analytics.
 
 1. Gå till **[!UICONTROL Components]** > **[!UICONTROL Segments]** .
 1. Klicka **[!UICONTROL Add]** för att skapa ett nytt segment.
