@@ -1,16 +1,19 @@
 ---
-description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensioner, mått, segment och funktioner på en arbetsyta för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
-title: Bygg mått
+description: I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
+title: Skapa mätvärden
 uuid: 3f51e911-cafa-4af4-90dd-5a4cb42bf0a7
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+workflow-type: tm+mt
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
 
-# Bygg mått
+# Skapa mätvärden
 
-Med verktyget Beräknade mätvärden kan du dra och släppa dimensioner, mått, segment och funktioner på en arbetsyta för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
+I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
 
 Det finns flera sätt att komma åt verktyget för beräkning av mått:
 
@@ -85,7 +88,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Produktkompatibilitet </span> </td> 
-   <td colname="col3"> <p>Produktkompatibiliteten visar om mätvärdena är kompatibla med <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/current-data.html"  > aktuella data </a>, fullständigt bearbetade data eller endast med marknadsföringskanalrapporter (första-beröringstilldelning). <p>Obs!  Aktuella data stöder inte alla mått. Mätvärden som innehåller segment eller funktioner är inte kompatibla med aktuella data. <a href="/help/components/c-calcmetrics/cm-compatibility.md"  > Mer ... </a> </p> </p> </td> 
+   <td colname="col3"> <p>Produktkompatibiliteten visar om mätvärdena är kompatibla med <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/current-data.html"  > aktuella data </a>, fullständigt bearbetade data eller endast med marknadsföringskanalrapporter (första-beröringstilldelning). <p>Obs!  Aktuella data stöder inte alla mått. Mätvärden som innehåller segment eller funktioner är inte kompatibla med aktuella data. <a href="/help/components/c-calcmetrics/cm-compatibility.md"  > Mer... </a> </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Lägg till </span> </td> 
@@ -102,14 +105,14 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> + Ny </span> </td> 
-   <td colname="col3"> <p>Gör att du kan skapa en ny komponent, t.ex. ett nytt segment (som tar dig till <a href="/help/components/c-segmentation/c-segmentation-workflow/seg-build.md"  > segmentbyggaren </a>). </p> </td> 
+   <td colname="col3"> <p>Gör att du kan skapa en ny komponent, t.ex. ett nytt segment (som tar dig till <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > segmentbyggaren </a>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Sökkomponenter </p> </td> 
    <td colname="col3"> <p>Med det här sökfältet kan du söka efter dimensioner, mått, segment (endast avancerade beräknade värden) och funktioner (endast avancerade beräknade värden). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>Lista över dimensioner </p> </td> 
+   <td colname="col2"> <p>Lista över Dimensioner </p> </td> 
    <td colname="col3"> <p>Istället för att lämna beräkningsverktyget för att skapa ett enkelt segment (i segmentbyggaren), t.ex. "Page = Homepage" kan du dra i Page och välja Homepage direkt från Calculated Metric Builder. </p> <p>Detta ger ett mycket effektivare arbetsflöde för att skapa segmenterade beräknade mätvärden. </p> </td> 
   </tr> 
   <tr> 
@@ -117,7 +120,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
    <td colname="col3"> <p>Mätvärden finns i tre kategorier: </p> 
     <ul id="ul_7BF50F4964EF45858FBA1634FBFA45CF"> 
      <li id="li_90F2312927A6499CA1CE04F8FFC912CF">Standardvärden ( <img placement="inline"  src="assets/met_icon.png" id="image_65A80F54D73443E78542FE0B31CC3F20" />) </li> 
-     <li id="li_A3F59083E79B4AC780D6F8CEDFFD20C9">Calculated metrics ( <img placement="inline"  src="assets/calc_met_icon.png" id="image_C5674AB9B9EB4DA9A56782D15822C319" />) </li> 
+     <li id="li_A3F59083E79B4AC780D6F8CEDFFD20C9">Beräknade värden ( <img placement="inline"  src="assets/calc_met_icon.png" id="image_C5674AB9B9EB4DA9A56782D15822C319" />) </li> 
      <li id="li_8735E76637ED4C3F983731A66E04C93E">Mätmallar ( <img placement="inline"  src="assets/cm_template_icon.png" width="25px" id="image_D236601511CC4DD3828F223431E27E88" />) - längst ned i listan. </li> 
     </ul> <p>När du hovrar över ett mätresultat visas ikonen Info till höger om det: <img placement="inline"  src="assets/info.png" width="150px" id="image_5A65E772A68A4B94ACAD6552CCF21F5F" />. Om du klickar på den här ikonen visas följande information: </p> 
     <ul id="ul_DF35DDB9FBFA40C8A93FA0F2286A0BBE"> 
@@ -128,7 +131,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
   </tr> 
   <tr> 
    <td colname="col2"> <p>Segmentlista </p> </td> 
-   <td colname="col3"> <p>(Endast avancerade beräknade värden) Som administratör visar den här listan alla segment som har skapats i ditt inloggningsföretag. Om du inte är administratör visas de segment du äger och de som delas med dig i den här listan. <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segment-reference/seg-rights.html"  > Mer ... </a> </p> </td> 
+   <td colname="col3"> <p>(Endast avancerade beräknade värden) Som administratör visar den här listan alla segment som har skapats i ditt inloggningsföretag. Om du inte är administratör visas de segment du äger och de som delas med dig i den här listan. <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segment-reference/seg-rights.html"  > Mer... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Lista över funktioner </p> </td> 
