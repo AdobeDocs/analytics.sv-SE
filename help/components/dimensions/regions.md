@@ -2,9 +2,9 @@
 title: Regioner
 description: Besökarens geografiska region.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: fdc77997c8aea07cc7db1d06c5c0c2cd2f2abbd9
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,17 @@ Dimensionen &#39;Regioner&#39; rapporterar besökarens geografiska region. Det �
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till interna uppslagsregler för Adobe. Uppslagsvärdet baseras på den IP-adress som skickades med träffen. Adobe samarbetar med [Digital Element](https://www.digitalelement.com/) för att upprätthålla sökningar mellan IP-adresser och länder. Den här dimensionen fungerar som den ska för alla implementeringar.
+Den här dimensionen refererar till uppslagsregler som är interna för Adobe. Uppslagsvärdet baseras på den IP-adress som skickades med träffen. Adobe samarbetar med [Digital Element](https://www.digitalelement.com/) för att upprätthålla sökningar mellan IP-adresser och länder. Den här dimensionen fungerar som den ska för alla implementeringar.
 
 >[!TIP]
 >
 >Om din organisation följer strikta sekretessregler där det inte räcker med att [komplicera IP-adressen](/help/admin/admin/general-acct-settings-admin.md) kan du begära att få inaktivera geopositioneringsdata helt och hållet. Kontakta kundtjänst med rapportsvitens ID och be att få stänga av Geography för rapportsviten.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten omfattar regioner och landet som regionen finns i. Exempelvärdena inkluderar `"California (United States)"`, `"Tokyo (Japan)"`eller `"Sao Paulo (Brazil)"`.
+Dimensioner är bland annat regioner och det land som regionen bor i. Exempelvärdena inkluderar `"California (United States)"`, `"Tokyo (Japan)"`eller `"Sao Paulo (Brazil)"`.
+
+Vissa dimensionsobjekt kan vara `"AOL"`en Internetleverantör med uppringd anslutning. Prenumeranter på den här tjänsten tilldelas en åtkomstpunkt baserat på det land där deras kontonummer är etablerat. AOL-användare använder IP-adressen för den här åtkomstpunkten. Eftersom den här dimensionen baseras på IP-adressen används åtkomstpunktens geopositionering i stället för besökarens faktiska plats.
 
 ## Skillnader mellan rapporterad och faktisk plats
 
