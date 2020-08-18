@@ -5,7 +5,7 @@ title: Om underklassificeringar
 topic: Admin tools
 uuid: 48bd7fc1-54a1-40ef-bc55-395338522f2d
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 7%
@@ -32,7 +32,7 @@ Varje klassificering i denna modell är oberoende och motsvarar en ny delrapport
 | 123 | ABC | A12B |
 | 456 | DEF | C3D4 |
 
-Mer information om datafilen finns i [Klassificeringsdatafiler](/help/components/classifications/c-classifications-importer/c-saint-data-files.md).
+Mer information om datafilen finns i [Klassificeringsdatafiler](/help/components/classifications/importer/c-saint-data-files.md).
 
 Klassificeringar på flera nivåer består av överordnade och underordnade klassificeringar. Exempel:
 
@@ -46,7 +46,7 @@ Varje klassificering, antingen överordnad eller underordnad, utgör en datakolu
 
 `<parent_name>^<child_name>`
 
-Mer information om datafilformatet finns i [Klassificeringsdatafiler](/help/components/classifications/c-classifications-importer/c-saint-data-files.md).
+Mer information om datafilformatet finns i [Klassificeringsdatafiler](/help/components/classifications/importer/c-saint-data-files.md).
 
 Exempel:
 
