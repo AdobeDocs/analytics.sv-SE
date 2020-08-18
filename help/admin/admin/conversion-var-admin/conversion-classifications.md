@@ -5,7 +5,7 @@ title: Konverteringsklassificeringar
 topic: Admin tools
 uuid: b088ea4b-8ab7-4ccf-96c6-8567d91fb8cf
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Klassificeringar används för att kategorisera värden i grupper och rapportera
 
 Med konverteringsklassificeringar kan du klassificera konverteringsvariabler. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med hjälp av de associerade dataegenskaperna.
 
-När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/c-classifications-importer/c-working-with-saint.md) för att tilldela specifika värden till lämplig klassificering.
+När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till lämplig klassificering.
 
 ## Beskrivningar av konverteringsklassificeringar {#section_4A98DD5F5C314B9DAEE710AEE4EE51D4}
 
