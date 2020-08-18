@@ -6,7 +6,7 @@ title: Anpassa behörigheter för verktyg i rapportsviten
 topic: Admin tools
 uuid: 3c95d296-ffd0-4971-9c5f-110ddbe042ce
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 89a5524ac0e96d63acd54c2ef3e22c17314f332d
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 9%
@@ -47,8 +47,8 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | [URL-filter](/help/admin/admin/internal-url-filter-admin.md) | Ger behörighet till interna URL-filter i rapportsviter. Interna URL-filter används för att avgöra vilka referenser, eller refererande sidor, som är interna för din webbplats. |
 | [Anpassad kalender](/help/admin/admin/custom-calendar.md) | Ger behörighet att redigera anpassad kalender. |
 | [Betalsökning](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) | Betalsökningsidentifiering skiljer betald från naturlig sökning i rapporten Sökmotorer och Söknyckelord. |
-| [Menyanpassning](/help/admin/admin/customize-menus.md) | Anpassa rapportmenyerna som en användare ser i Rapporter och Analytics. |
-| [Rapportkonfiguration i realtid](/help/admin/admin/realtime/t-realtime-admin.md) | Behörigheter att skapa realtidsrapporter för Analytics. |
+| [Menyanpassning](/help/admin/admin/customize-menus.md) | Anpassa rapportmenyerna som en användare ser i Rapporter och analyser. |
+| [Rapportkonfiguration i realtid](/help/admin/admin/realtime/t-realtime-admin.md) | Behörighet att konfigurera realtidsrapporter, Analytics. |
 | [Videoinställningar](/help/admin/admin/video-management.md) | Behörighet att ange en uppsättning anpassade konverteringsvariabler (eVars) och anpassade händelser som ska användas för att spåra och rapportera video. |
 | [Videoklassificeringar](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html) | Behörighet att ange en uppsättning anpassade konverteringsvariabler (eVars) och anpassade händelser som ska användas för att spåra och rapportera video. |
 | [Trafikvariabler](/help/admin/admin/c-traffic-variables/traffic-var.md) | Behörighet att korrelera anpassade data med specifika trafikrelaterade händelser. |
@@ -60,16 +60,16 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | [Konverteringsklassificeringar](/help/admin/admin/conversion-var-admin/conversion-classifications.md) | Konsoliderad i klassificeringar (under Verktyg och rapporter). |
 | [Unik besökare](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/unique-visitor-variable/t-unique-visitor-variable.html) | Ger behörighet att ange variabeln Unik besökare. |
 | [Success Events](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) | Åtgärder som kan spåras, t.ex. produktvy, utcheckning och inköp. |
-| [Klassificeringshierarkier](/help/components/classifications/classification-hierarchies.md) | Konsoliderad i klassificeringar (under Verktyg och rapporter). |
+| [Klassificeringshierarkier](/help/admin/admin/conversion-var-admin/classification-hierarchies.md) | Konsoliderad i klassificeringar (under Verktyg och rapporter). |
 | [Listvariabler](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) | Kallas även List Var. På samma sätt som funktionen List Props tillåter List Vars flera värden inom samma bildbegäran. |
-| [Standardmått](/help/admin/admin/default-metrics.md) | Rapporter och Analytics visar en standarduppsättning med mätvärden i alla konverteringsrapporter, såvida inte en användare väljer en anpassad uppsättning mätvärden. De valda mätvärdena visas för alla användare i den associerade rapportsviten. |
+| [Standardmått](/help/admin/admin/default-metrics.md) | Rapporter och analyser visar en standarduppsättning med mätvärden i alla konverteringsrapporter, såvida inte en användare väljer en anpassad uppsättning mätvärden. De valda mätvärdena visas för alla användare i den associerade rapportsviten. |
 | [Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) | Ger åtkomst till bearbetningsregler som förenklar datainsamling och hantering av innehåll när det skickas till rapporter. |
 | **Verktyg och rapporter** |  |
 | [Avvikelseidentifiering](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) | Ger tillstånd till avvikelseidentifiering, som tillhandahåller en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data. |
 | [Kanalrapport](/help/components/c-marketing-channels/analyze-mc.md) | Ger tillstånd till Marketing Channel-rapporter, som finns i Rapporter > Marketing Channel Reports. |
 | [Realtidsrapport](/help/admin/admin/realtime/t-realtime-admin.md) | Ger åtkomst till realtidsrapporten. |
-| [Punktsidor](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Startsidor är för specifika rapporter och Analytics-rapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
-| [Robotar](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Början är till för specifika rapporter och Analytics-rapporter, inte för att hantera robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bots kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
+| [Punktsidor](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Startsidor är för specifika rapporter- och analysrapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
+| [Robotar](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Bots är till för specifika rapporter- och analysrapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bots kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
 | [Anpassad Data warehouse-rapport](/help/export/data-warehouse/data-warehouse.md) | Data warehouse avser kopian av obearbetade data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. Du kan begära rapporter för att visa avancerade datarelationer från rådata baserat på dina unika frågor. |
 | Dagliga återbesök | (Äldre) Rapport som visar antalet besökare på webbplatsen mer än en gång på en viss dag. En dag definieras som den sista 24-timmarsperioden. |
 | [Data Sources Manager](/help/admin/admin/data-sources.md) | Med funktionen Datakällor kan du importera data till Analytics från offlinekällor. |
@@ -82,6 +82,6 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | Klassificeringar | Kombinerar följande behörigheter: Trafikklassificeringar, Videoklassificeringar, Konverteringsklassificeringar, Klassificeringshierarkier, Klassificeringshanterare och Klassificeringsimporterare/Exporterare och Regelbyggare.  Obs!  Med den här behörigheten kan användarna redigera klassificeringar för alla rapportsviter, inte bara för de markerade. |
 | [Bidragsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html) | Ger rätt att använda bidragsanalys i Analysis Workspace. |
 | **Kontrollpanelsobjekt** |  |
-| Inställningarna i Kontrollpanelsobjekt ger åtkomst till [rapporter](https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html) i Rapporter och Analytics:, Mina rekommenderade rapporter, Företagssammanfattningsrapport, Bild, KPI/mätarrapport, Rapportsvitsummor, Text, Rapporter, Användningssammanfattningsrapport och Webbresurser |  |
+| Inställningarna i Kontrollpanelsobjekt ger åtkomst till [rapporter](https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html) i Rapporter och analyser:, Mina rekommenderade rapporter, Företagssammanfattningsrapport, Bild, KPI/mätarrapport, Rapportsvitens summor, Text, Rapport, Användningssammanfattningsrapport och Webbresurser |  |
 | **Övriga** |  |
 | Social | Styr åtkomsten till menyn Social Management i Report Suite Manager. |
