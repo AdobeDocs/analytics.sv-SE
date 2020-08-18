@@ -1,12 +1,12 @@
 ---
-description: Beskriver de steg som Analytics Admin måste slutföra för att aktivera Activity Map länksamling och hämtning av användare.
+description: Beskriver de steg som Analytics Admin måste slutföra för att aktivera Activity Map-länksamling och användarhämtning.
 title: Aktivera Activity Map
 topic: Activity map
 uuid: 30433319-d0e6-4977-951a-4492b356e1f2
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: aea3b4448b61e8b1b217b4f74b0b80c9fbedd070
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '369'
 ht-degree: 6%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Aktivera Activity Map{#enable-activity-map}
 
-Beskriver de steg som Analytics Admin måste slutföra för att aktivera Activity Map länksamling och hämtning av användare.
+Beskriver de steg som Analytics Admin måste slutföra för att aktivera Activity Map-länksamling och användarhämtning.
 
 ## Steg 1. Uppdatera din AppMeasurement-kod (JavaScript) till v1.6 (eller senare) {#section_5D1586289DF2489289B1B6C1C80C300D}
 
@@ -41,10 +41,10 @@ Data från Activity Map kan inte samlas in om du inte uppdaterar till den här v
 
 Först måste du aktivera Activity Map-rapporter på rapportsvitnivå.
 
-1. Logga in på Adobe Analytics och gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin > Report Suites >[select report suite]> Edit Settings > Activity Map]** > **[!UICONTROL Activity Map Reporting]** .
+1. Logga in på Adobe Analytics och gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > Välj rapportsvit > **[!UICONTROL Edit Settings]** > **[!UICONTROL Activity Map]** > **[!UICONTROL Activity Map Reporting]** .
 1. Activity Map samlar in länkdata i Activity Map-rapporter. För att aktivera måste du först aktivera variablerna genom att klicka på **[!UICONTROL Enable Activity Map Reports]**.
 
-   I det här steget läggs alla Analytics-dimensioner till som du behöver för att samla in data.
+   I det här steget läggs alla analysdimensioner till som du behöver för att samla in data.
 
 1. Efter ungefär en timme kontrollerar du rapporten [för](/help/analyze/activity-map/activitymap-reporting-analytics.md)Activity Map-sidan, som visar alla sidor där användare klickade på en länk.
 
@@ -60,4 +60,4 @@ Först måste du aktivera Activity Map-rapporter på rapportsvitnivå.
 
 >[!NOTE]
 >
->Om du vill att icke-adminanvändare ska hämta Activity Map skapar du en ny användargrupp som ger behörighet till Tools och Legacy ClickMap Installation. Den här behörighetsnivån kombinerat med Activity Map Access ger behörighet att hämta och använda verktyget.
+>Om du vill att användare som inte är administratörer ska hämta Activity Map skapar du en ny användargrupp som ger behörighet till Tools och Legacy ClickMap Installation. Den här behörighetsnivån kombinerat med Activity Map Access ger behörighet att hämta och använda verktyget.
