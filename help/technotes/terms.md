@@ -2,7 +2,7 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Dataanslutningar:** En komplett utvecklingslösning som gör det möjligt för en tredje part att automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. De flesta dataanslutningar använder ett liknande arbetsflöde som används i datakällor. Se Dataanslutningar i användarhandboken för Import.
 * **Dataflöde:** En export av rådata som visar alla träffar som rader och variabler som separata kolumner. De vanligaste är att exportera Adobe Analytics-data till en tredjepartsdatabas. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Export.
 * **Datakällor:** Användare kan överföra data från en fil till Adobe Analytics. Filen hämtas vanligtvis från en FTP-plats. Se [Datakällor](/help/import/c-data-sources/datasrc-home.md) i användarhandboken för Import.
-* **Data warehouse:** En funktion i Adobe Analytics som gör att du kan begära större rapporter. Se [Data warehouse](/help/export/data-warehouse/data-warehouse.md) i användarhandboken för Export.
+* **data warehouse:** En funktion i Adobe Analytics som gör att du kan begära större rapporter. Se [Data warehouse](/help/export/data-warehouse/data-warehouse.md) i användarhandboken för Export.
 * **Dimension:** En komponenttyp som innehåller variabelvärden, som text. Exempel är sidnamn, spårningskod eller referensdomän. Ett mätvärde är vanligtvis dess motsvarighet.
 * **Dynamisk tagghantering:** Adobe tagghanteringslösning. Se Översikt över [DTM-implementering](/help/implement/other/dtm/dtm-implementation-overview.md) i användarhandboken för implementering. Adobe rekommenderar att du använder Adobe Experience Platform Launch istället.
 * **Händelseserialisering:** Processen med att vidta åtgärder för att förhindra insamling av dubbletthändelser. Se [Händelseserialisering](../implement/vars/page-vars/events/event-serialization.md) i Användarhandbok för implementering.
@@ -56,7 +56,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Händelse:** Se Success event.
 * **ExcelClient:** Används inte längre som term. Namnet på föregångaren till Report Builder.
 * **Förfallodatum:** I kontexten för en konverteringsvariabel, hur länge värdet finns kvar på serverdelen. Denna beständighet gör att händelser kan associeras med variabelvärden före händelsens träff. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i användarhandboken för Admin.
-* **Flöde:** En typ av visualisering i Analysis Workspace som visar vilka sökvägar användare har tagit på din webbplats. Se [Flödesvisualisering](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) i användarhandboken för Analysera.
+* **Flöde:** En typ av visualisering i Analysis Workspace som visar vilka sökvägar användare har på din webbplats. Se [Flödesvisualisering](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) i användarhandboken för Analysera.
 * **Genesis:** Används inte längre som term. Det tidigare namnet på Data Connectors.
 * **Global rapportsvit:** En informell term som tilldelats en rapportserie som samlar in träffar från flera webbplatser.
 * **H-kod:** En föregångare till AppMeasurement. I tidigare versioner av Adobe Analytics mättes kodversionerna med&quot;H version&quot;, t.ex. H.27.5, H.26 osv.
@@ -95,8 +95,8 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **s_code.js:** Namnet på JavaScript-filen som används i tidigare versioner av Adobe Analytics. Det aktuella namnet på JavaScript-filen som används är AppMeasurement.js.
 * **Satellit:** Används inte längre som term. Det tidigare produktnamnet för Dynamic Tag Management.
 * **Sekundärt serveranrop:** Alternativt namn för bildbegäran eller träff, används mest i samband med märkning och fakturering av flera sviter. När samma träff skickas till flera rapportsviter är alla rapportsviter efter den första listan sekundära serveranrop. Se även primära serveranrop.
-* **Segment:** Gör att du kan fokusera på specifika delar av dina data. Se [Segmentering](/help/components/c-segmentation/seg-overview.md) i användarhandboken för komponenter.
-* **Segmentbehållare:** Den del av ett segment som avgör hur mycket data som ska hämtas in. Behållare kan baseras på sidvisning, besök eller besökare. Se [Segmentering](/help/components/c-segmentation/seg-overview.md) i användarhandboken för komponenter.
+* **Segment:** Gör att du kan fokusera på specifika delar av dina data. Se [Segmentering](/help/components/segmentation/seg-overview.md) i användarhandboken för komponenter.
+* **Segmentbehållare:** Den del av ett segment som avgör hur mycket data som ska hämtas in. Behållare kan baseras på sidvisning, besök eller besökare. Se [Segmentering](/help/components/segmentation/seg-overview.md) i användarhandboken för komponenter.
 * **Serialisering:** Se Händelseserialisering.
 * **Serversamtal:** Alternativt namn för en bildförfrågan eller träff, används mest i samband med fakturering.
 * **Enkel åtkomst:** Ett besök där en dimension bara hade ett unikt värde. Besöken kan få flera träffar, förutsatt att det inte finns flera unika värden. Se måttet för [enkel åtkomst](/help/components/metrics/single-access.md) i användarhandboken för komponenter. Se även Studsa.
