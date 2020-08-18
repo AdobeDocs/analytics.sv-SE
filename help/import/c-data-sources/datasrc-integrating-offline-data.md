@@ -1,16 +1,19 @@
 ---
 description: Datakällor erbjuder två ytterligare sätt att integrera händelser som inträffar offline med dina onlinedata.
 subtopic: Data sources
-title: Transaktion och kundintegrering
+title: Transaktions- och kundintegrering
 topic: Developer and implementation
 uuid: 71f73a47-3436-4314-a182-36de4bd935ba
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: aea3b4448b61e8b1b217b4f74b0b80c9fbedd070
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 2%
 
 ---
 
 
-# Transaktion och kundintegrering
+# Transaktions- och kundintegrering
 
 Datakällor erbjuder två ytterligare sätt att integrera händelser som inträffar offline i dina onlinedata.
 
@@ -24,7 +27,7 @@ Dessa integreringar kopplar offlinedata till en specifik onlinetransaktion eller
 
 Transaktions-ID kan aktiveras/inaktiveras från användargränssnittet utan att ClientCare behöver aktiveras:
 
-Gå till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL[Select Report Suite]]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL General Account Settings]**.
+Gå till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > Välj rapportserie > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL General Account Settings]**.
 
 <!-- 
 
