@@ -5,10 +5,10 @@ user-guide-title: Tekniska anteckningar för Analytics
 user-guide-description: A knowledge base containing helpful articles that don't belong to a specific analytics tool or component.
 user-guide-url: /content/help/en/analytics/technotes/home.html
 translation-type: tm+mt
-source-git-commit: a6eddfc9cd326bfe0b774bf4fcd03614a73490c4
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 96%
+source-wordcount: '145'
+ht-degree: 93%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 96%
       + [Konverteringar](ga-to-aa/reports/conversions-reports.md)
    + [Frågor och svar](ga-to-aa/faq.md)
    + [Bearbetningsskillnader mellan plattformar](ga-to-aa/processing-differences.md)
+   + [Jämför data med tredjepartsprodukter](ga-to-aa/compare-data.md)
 + Analysera data som påverkas av händelser {#event}
    + [Analysera data som påverkas av händelser - översikt](event/overview.md)
    + [Felsöka tagningar/fall i data](event/spikes-drops.md)
