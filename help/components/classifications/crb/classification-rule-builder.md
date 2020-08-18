@@ -5,7 +5,7 @@ title: Arbetsflöde för Classification Rule Builder
 topic: Admin tools
 uuid: edb1f07e-fa86-4055-8f4b-cce2d370edbb
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 2%
@@ -42,7 +42,7 @@ Nedan följer några steg för att implementera klassificeringsregler:
 | Steg 4: [Lägg till klassificeringsregler i uppsättningen](/help/components/classifications/crb/classification-quickstart-rules.md). | [!UICONTROL Classification Rule Builder] > &lt;din regeluppsättning> | Matcha ett villkor med en klassificering och ange sedan vilken åtgärd som ska vidtas för regeln.  Läs mer om [hur reglerna behandlas](/help/components/classifications/crb/classification-quickstart-rules.md). |
 | Steg 5: [Testa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-quickstart-rules.md) | [!DNL Testing Page] | Du vill testa reglerna för validering genom att redigera dem i utkastläge. I utkastläge kan reglerna inte köras.<br>Det här steget är viktigt när du använder [reguljära uttryck](/help/components/classifications/crb/classification-quickstart-rules.md). |
 | Steg 6: [Aktivera giltiga regler](/help/components/classifications/crb/classification-rule-definitions.md). | [!DNL Rules Page] | När reglerna är giltiga aktiverar du regeluppsättningen.  Du kan skriva över befintliga nycklar om det behövs. Se [hur reglerna behandlas](/help/components/classifications/crb/classification-quickstart-rules.md). |
-| Steg 7 (valfritt): [Ta bort oönskade regler](/help/components/classifications/crb/classification-rule-definitions.md). | [!DNL Rules Page] | Ta bort oönskade regler från en uppsättning.<br>Obs!  Klassificerade data som överförts tas inte bort när du tar bort regler.  Se [Ta bort klassificeringsdata](/help/components/classifications/c-classifications-importer/t-delete-classification-data.md) om du behöver ta bort klassificerade data. |
+| Steg 7 (valfritt): [Ta bort oönskade regler](/help/components/classifications/crb/classification-rule-definitions.md). | [!DNL Rules Page] | Ta bort oönskade regler från en uppsättning.<br>Obs!  Klassificerade data som överförts tas inte bort när du tar bort regler.  Se [Ta bort klassificeringsdata](/help/components/classifications/importer/t-delete-classification-data.md) om du behöver ta bort klassificerade data. |
 
 >[!NOTE]
 >
