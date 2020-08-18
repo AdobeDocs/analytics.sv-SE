@@ -3,7 +3,10 @@ description: Genom att segmentera enskilda mätvärden kan ni göra mätjämför
 title: Segmenterade mätvärden
 uuid: 88f9829b-76e4-4598-9494-084a91602bc1
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+workflow-type: tm+mt
+source-wordcount: '580'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Låt oss titta på den första frågan: Hur fungerar innehållssökning jämför
 
    >[!NOTE]
    >
-   >Du kan också göra detta i [Segmentverktyget](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md), men vi har förenklat arbetsflödet genom att göra dimensioner tillgängliga i verktyget Beräknad metrisk.
+   >Du kan också göra detta i [Segmentverktyget](/help/components/segmentation/segmentation-workflow/seg-build.md), men vi har förenklat arbetsflödet genom att göra dimensioner tillgängliga i verktyget Beräknad metrisk.
 
    >[!NOTE]
    >
@@ -40,7 +43,7 @@ Låt oss titta på den första frågan: Hur fungerar innehållssökning jämför
    ![](assets/german-visitors.png)
 
 1. Upprepa steg 3 med segmentet Internationell besökare och mätvärdet Unik besökare för att skapa ett internationellt besökarmått.
-1. I Analysis Workspace drar du **[!UICONTROL Page]** dimensionen till en frihandstabell och drar de två nya beräknade måtten till varandra högst upp:
+1. I Analysis Workspace drar du **[!UICONTROL Page]** Dimensionen till en frihandstabell och drar de två nya beräknade måtten till varandra högst upp:
 
    ![](assets/workspace-pages.png)
 
