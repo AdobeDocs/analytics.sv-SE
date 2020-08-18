@@ -5,10 +5,10 @@ user-guide-title: Komponenthandbok för Analytics
 user-guide-description: Understand the features that help organize your data. Components include segments, calculated metrics, virtual report suites, alerts, and more. This guide also includes a variable reference, explaining all dimensions and metrics available.
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+source-git-commit: 3c39b43866f8adc7b08c67a28f93f85f91128ab8
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 58%
+source-wordcount: '612'
+ht-degree: 57%
 
 ---
 
@@ -219,11 +219,7 @@ ht-degree: 58%
    + [Alert Manager](c-alerts/alert-manager.md)
    + [Intelligenta aviseringar – användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
-   + [Om klassificeringar](classifications/c-classifications.md)
-   + [Om underklassificeringar](classifications/c-sub-classifications.md)
-   + [Klassificeringar för konvertering](classifications/conversion-classifications.md)
-   + [Trafikklassificeringar](classifications/traffic-classifications.md)
-   + [Klassificeringshierarkier](classifications/classification-hierarchies.md)
+   + [Översikt över klassificeringar](classifications/c-classifications.md)
    + Klassificeringsimportör {#classifications-importer}
       + [Importera klassificeringar – översikt](classifications/importer/c-working-with-saint.md)
       + [Datafiler för klassificering](classifications/importer/c-saint-data-files.md)
@@ -242,6 +238,8 @@ ht-degree: 58%
       + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
       + [Klassificeringsregler – definitioner](classifications/crb/classification-rule-definitions.md)
       + [Underklassificeringar och Rule Builder](classifications/crb/sub-classification-rule-builder.md)
+   + [Underklassificeringar](classifications/c-sub-classifications.md)
+   + [Vanliga frågor om klassificeringar](classifications/faq.md)
 + [Kalenderhändelser](t-calendar-event.md)
 + Rapporter i realtid {#real-time-reporting}
    + [Översikt över rapporter i realtid](c-real-time-reporting/realtime.md)
