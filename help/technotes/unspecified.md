@@ -1,27 +1,27 @@
 ---
-description: Olika rapporter i Adobe Analytics kan visa Ospecificerad, Annan eller Okänd, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig.
-title: Ospecificerad, annan och okänd vid rapportering
+description: Olika rapporter i Adobe Analytics kan visa Ospecificerad, Ingen, Annan eller Okänd, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig.
+title: Ospecificerad, Ingen, Annan och Okänd vid rapportering
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: fc54cb27f365015b6c7716d68bfc4cbe80b40b8b
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 
-# &quot;Ospecificerad&quot;, &quot;Annan&quot; och &quot;Okänd&quot; vid rapportering
+# &quot;Ospecificerad&quot;, &quot;Ingen&quot;, &quot;Annan&quot; och &quot;Okänd&quot; vid rapportering
 
 Olika rapporter i Adobe Analytics kan visa &quot;Ospecificerad&quot;, &quot;Annan&quot; eller &quot;Okänd&quot;, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig. Nedan finns en omfattande lista över hur varje rapport kan innehålla en av dessa radposter.
 
-## &quot;Ospecificerad&quot; i rapportering
+## &quot;Ospecificerad&quot; (eller &quot;Ingen&quot;) vid rapportering
 
-&quot;Ospecificerad&quot; är ett vanligt radobjekt i rapporter.
+&quot;Ospecificerad&quot; är ett vanligt radobjekt i rapporter. Den kallas även&quot;ingen&quot;.
 
-* **En händelse utlöses utan en konverteringsvariabel:** En användare kommer till exempel till din webbplats och gör ett köp utan något eVar1-värde. Om du visar order med dimensionen eVar1 finns det inget värde att tilldela den här ordningen till. Därför tilldelas den automatiskt till&quot;Ospecificerad&quot;.
+* **En händelse utlöses utan en konverteringsvariabel:** En användare kommer till exempel till din webbplats och gör ett köp utan något värde för eVar1. Om du visar order med dimensionen eVar1 finns det inget värde att tilldela ordern till. Därför tilldelas den automatiskt till&quot;Ospecificerad&quot;.
 * **Oklassificerade data i klassificeringsrapporter:** När klassificeringsdata visas returneras &quot;Ospecificerad&quot; om ett värde inte har data associerade med den aktuella klassificeringen. Du löser det här problemet genom att klassificera det överordnade variabelvärdet.
 * **Uppdelningsrapporter där endast en variabel utlöses:** När du tillämpar en uppdelning på en variabel måste alla instanser av variabeln tas med i beräkningen. Om den andra variabeln inte kunde ses eller om den bestod från en tidigare träff är dimensionsobjektet &quot;Ospecificerat&quot;.
-* **Icke-mobila träffar i mobilrapporter:** Alla träffar som inte är mobila i mobilrapporter listas som Ospecificerade (&quot;Inte mobilt&quot; i rapporter och Analytics).
+* **Icke-mobila träffar i mobilrapporter:** Alla träffar som inte är mobila i mobilrapporter listas som&quot;Ospecificerade&quot; (&quot;Inte mobilt&quot; i Reports and Analytics).
 
 ## ’Övrigt’ i rapporteringen
 
