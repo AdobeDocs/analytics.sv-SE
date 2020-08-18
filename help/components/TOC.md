@@ -5,10 +5,10 @@ user-guide-title: Komponenthandbok för Analytics
 user-guide-description: Understand the features that help organize your data. Components include segments, calculated metrics, virtual report suites, alerts, and more. This guide also includes a variable reference, explaining all dimensions and metrics available.
 user-guide-url: /content/help/en/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: a6eddfc9cd326bfe0b774bf4fcd03614a73490c4
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 59%
+source-wordcount: '617'
+ht-degree: 58%
 
 ---
 
@@ -141,31 +141,31 @@ ht-degree: 59%
    + [Besökare med Experience Cloud ID](metrics/visitors-with-ecid.md)
    + [Besök](metrics/visits.md)
 + Segmentering {#segmentation}
-   + [Analytics-segmentering](c-segmentation/seg-home.md)
-   + [Om segment och behållare](c-segmentation/seg-overview.md)
-   + [Segmenteringsfunktioner i Analysis Workspace](c-segmentation/segmentation-in-analysis-workspace.md)
+   + [Analytics-segmentering](segmentation/seg-home.md)
+   + [Om segment och behållare](segmentation/seg-overview.md)
+   + [Segmenteringsfunktioner i Analysis Workspace](segmentation/segmentation-in-analysis-workspace.md)
    + Arbetsflöde för segmentering {#segmentation-workflow}
-      + [Översikt över segmenteringsarbetsflöde](c-segmentation/c-segmentation-workflow/seg-workflow.md)
-      + [Planera segment](c-segmentation/c-segmentation-workflow/seg-plan.md)
-      + [Skapa segment](c-segmentation/c-segmentation-workflow/seg-build.md)
-      + [Skapa sekventiella segment](c-segmentation/c-segmentation-workflow/seg-sequential-build.md)
-      + [Tagga segment](c-segmentation/c-segmentation-workflow/seg-tag.md)
-      + [Godkänna segment](c-segmentation/c-segmentation-workflow/seg-approve.md)
-      + [Dela segment](c-segmentation/c-segmentation-workflow/t-seg-share.md)
-      + [Publicera segment till Experience Cloud](c-segmentation/c-segmentation-workflow/seg-publish.md)
-      + [Markera och tillämpa segment](c-segmentation/c-segmentation-workflow/t-seg-apply.md)
-      + [Filtrera segment](c-segmentation/c-segmentation-workflow/t-seg-filter.md)
-      + [Markera segment som favoriter](c-segmentation/c-segmentation-workflow/t-seg-favorite.md)
-      + [Ta bort segment](c-segmentation/c-segmentation-workflow/seg-delete.md)
-      + [Hantera segment](c-segmentation/c-segmentation-workflow/seg-manage.md)
+      + [Översikt över segmenteringsarbetsflöde](segmentation/segmentation-workflow/seg-workflow.md)
+      + [Planera segment](segmentation/segmentation-workflow/seg-plan.md)
+      + [Skapa segment](segmentation/segmentation-workflow/seg-build.md)
+      + [Skapa sekventiella segment](segmentation/segmentation-workflow/seg-sequential-build.md)
+      + [Tagga segment](segmentation/segmentation-workflow/seg-tag.md)
+      + [Godkänna segment](segmentation/segmentation-workflow/seg-approve.md)
+      + [Dela segment](segmentation/segmentation-workflow/t-seg-share.md)
+      + [Publicera segment till Experience Cloud](segmentation/segmentation-workflow/seg-publish.md)
+      + [Markera och tillämpa segment](segmentation/segmentation-workflow/t-seg-apply.md)
+      + [Filtrera segment](segmentation/segmentation-workflow/t-seg-filter.md)
+      + [Markera segment som favoriter](segmentation/segmentation-workflow/t-seg-favorite.md)
+      + [Ta bort segment](segmentation/segmentation-workflow/seg-delete.md)
+      + [Hantera segment](segmentation/segmentation-workflow/seg-manage.md)
    + Segmentreferens {#segment-reference}
-      + [Jämförelseoperatorer för segment](c-segmentation/seg-reference/seg-operators.md)
-      + [Segmentkompatibilitet för Data Warehouse](c-segmentation/seg-reference/seg-compatibility.md)
-      + [Segmentbehörigheter efter roll](c-segmentation/seg-reference/seg-rights.md)
-      + [Felsökning](c-segmentation/seg-reference/c-troubleshooting.md)
-   + [Vanliga frågor](c-segmentation/seg-transition.md)
-   + [Nyheter i Analytics Segmentation](c-segmentation/whats-new-segmentation.md)
-   + [Övergångshandbok för Ad Hoc Analysis](c-segmentation/seg-transition-ad-hoc.md)
+      + [Jämförelseoperatorer för segment](segmentation/seg-reference/seg-operators.md)
+      + [Segmentkompatibilitet för Data Warehouse](segmentation/seg-reference/seg-compatibility.md)
+      + [Segmentbehörigheter efter roll](segmentation/seg-reference/seg-rights.md)
+      + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
+   + [Vanliga frågor](segmentation/seg-transition.md)
+   + [God praxis](segmentation/best-practices.md)
+   + [Övergångshandbok för Ad Hoc Analysis](segmentation/seg-transition-ad-hoc.md)
 + Beräknade mätvärden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) värden](c-calcmetrics/cm-overview.md)
    + [Vanliga frågor](c-calcmetrics/cm-transition.md)
@@ -209,7 +209,7 @@ ht-degree: 59%
    + [Översikt över enhetsövergripande analys](cda/overview.md)
    + [Fältbaserad stygn](cda/field-based-stitching.md)
    + [Enhetsdiagram](cda/device-graph.md)
-   + [Konfigurera Analytics för olika enheter](cda/setup.md)
+   + [Konfigurera enhetsövergripande analys](cda/setup.md)
    + [Så här spelar du upp](cda/replay.md)
    + [CDA Workspace-mall](cda/workspace-template.md)
    + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
@@ -224,28 +224,24 @@ ht-degree: 59%
    + [Klassificeringar för konvertering](classifications/conversion-classifications.md)
    + [Trafikklassificeringar](classifications/traffic-classifications.md)
    + [Klassificeringshierarkier](classifications/classification-hierarchies.md)
-   + Importera klassificeringar (ladda upp) {#classifications-importer}
-      + [Importera klassificeringar – översikt](classifications/c-classifications-importer/c-working-with-saint.md)
-      + [Datafiler för klassificering](classifications/c-classifications-importer/c-saint-data-files.md)
-      + [Ta bort klassificeringsdata](classifications/c-classifications-importer/t-delete-classification-data.md)
-      + [Avbryta klassificeringsdata](classifications/c-classifications-importer/t-classifications-escape-data.md)
-      + [Ej klassificerade nycklar](classifications/c-classifications-importer/nonclassified-keys.md)
-      + [Klassificeringsmall](classifications/c-classifications-importer/c-download-saint-data.md)
-      + [Import via webbläsare och FTP](classifications/c-classifications-importer/import-file.md)
-      + [Import via webbläsare](classifications/c-classifications-importer/browser-import.md)
-      + [FTP-import](classifications/c-classifications-importer/c-uploading-saint-data-files-via-ftp.md)
+   + Klassificeringsimportör {#classifications-importer}
+      + [Importera klassificeringar – översikt](classifications/importer/c-working-with-saint.md)
+      + [Datafiler för klassificering](classifications/importer/c-saint-data-files.md)
+      + [Ta bort klassificeringsdata](classifications/importer/t-delete-classification-data.md)
+      + [Avbryta klassificeringsdata](classifications/importer/t-classifications-escape-data.md)
+      + [Ej klassificerade nycklar](classifications/importer/nonclassified-keys.md)
+      + [Klassificeringsmall](classifications/importer/c-download-saint-data.md)
+      + [Import via webbläsare och FTP](classifications/importer/import-file.md)
+      + [Import via webbläsare](classifications/importer/browser-import.md)
+      + [FTP-import](classifications/importer/c-uploading-saint-data-files-via-ftp.md)
+      + [Bearbetningstid](classifications/importer/processing-time.md)
+      + [Felsökning](classifications/importer/troubleshooting.md)
    + Classification Rule Builder {#classifications-rulebuilder}
       + [Arbetsflöde för Classification Rule Builder](classifications/crb/classification-rule-builder.md)
       + [Uppsättningar med klassificeringsregler](classifications/crb/classification-rule-set.md)
       + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
       + [Klassificeringsregler – definitioner](classifications/crb/classification-rule-definitions.md)
       + [Underklassificeringar och Rule Builder](classifications/crb/sub-classification-rule-builder.md)
-   + Numeriska klassificeringar 2 {#numeric2-classification}
-      + [Översikt över numeriska klassificeringar 2](classifications/c-numeric-2/c-numeric-2-classifications.md)
-      + [Skapa numeriska klassificeringar 2](classifications/c-numeric-2/t-create-numeric-2-classifications.md)
-      + [Importera numeriska klassificeringar 2](classifications/c-numeric-2/c-import-numeric-2-classifications.md)
-      + [Exempel](classifications/c-numeric-2/c-examples.md)
-   + [Felsöka klassificeringar](classifications/c-classifications-troubleshooting.md)
 + [Kalenderhändelser](t-calendar-event.md)
 + Rapporter i realtid {#real-time-reporting}
    + [Översikt över rapporter i realtid](c-real-time-reporting/realtime.md)
