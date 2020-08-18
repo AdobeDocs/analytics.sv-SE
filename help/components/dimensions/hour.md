@@ -2,9 +2,9 @@
 title: Timme
 description: Den timme som mätvärdet inträffade på.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,13 @@ Dimensionen Timme anger timmen då ett givet mätresultat inträffade (avrundat 
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten inkluderar en given timme inom rapportens datumintervall tillsammans med dess datum. Den är formaterad som `HH:HH YYYY-MM-DD`.
+Dimensioner omfattar en viss timme inom rapportens datumintervall tillsammans med dess datum. Den är formaterad som `HH:HH YYYY-MM-DD`.
+
+## Besparingstid för dagsljus
+
+Sommartid är en övning där klockor ställs in en timme framåt på våren och backa en timme i hösten. Om DST används i en rapportsvits tidszon justerar Adobe data efter den timmen.
+
+* **När sommartid börjar**: I mars visar rapporter vanligtvis ett timgap i data där sommartid börjar. Timmen fanns inte, så den ingår inte i datainsamlingen. Observera att en liten mängd data fortfarande kan göra det till den här timmen. Adobe datainsamlingsservrar tar flera sekunder (upp till en minut) att ta hänsyn till DST-justeringar.
+* **När sommartid slutar**: I november visas vanligtvis en dubbel-staplad timme där sommartid tar slut. Timmen inträffade två gånger, så båda timmarna sammanställs i rapporter.
