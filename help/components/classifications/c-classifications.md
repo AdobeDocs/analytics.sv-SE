@@ -1,19 +1,16 @@
 ---
-description: En klassificering är ett sätt att kategorisera Analytics-variabeldata och sedan visa data på olika sätt när du genererar rapporter.
-subtopic: Classifications
-title: Om klassificeringar
-topic: Admin tools
-uuid: abc1a1be-8e37-4b7e-81fd-3e99ac27fc6a
+title: Översikt över klassificeringar
+description: Anpassa grupperingen av dimensionsobjekt.
 translation-type: tm+mt
-source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
+source-git-commit: 3c39b43866f8adc7b08c67a28f93f85f91128ab8
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
 
 
-# Om klassificeringar
+# Översikt över klassificeringar
 
 En klassificering är ett sätt att kategorisera Analytics-variabeldata och sedan visa data på olika sätt när du genererar rapporter.
 
@@ -27,17 +24,9 @@ När du klassificerar etablerar du en relation mellan variabeln och de metadata 
 
 När de har klassificerats kan alla rapporter som du kan generera med nyckelvariabeln också genereras med de associerade attributen. Du kan till exempel klassificera [!UICONTROL Product IDs] med ytterligare produktattribut, som produktnamn, färg, storlek, beskrivning och SKU. Förstärkning av rapporterings- och analysdata med ytterligare attribut ger djupare och mer komplexa rapporteringsmöjligheter.
 
->[!IMPORTANT]
->
->Möjligheten att importera Numeric 2- och Date-Enabled-klassificeringar har tagits bort från kodbasen. Denna ändring träder i kraft i underhållsutgåvan från juni 2019. Om du har numeriska eller datumaktiverade kolumner i importfilen, ignoreras dessa celler och alla andra data i filen importeras som vanligt. Befintliga klassificeringar kan fortfarande exporteras via standardarbetsflödet för klassificering och kommer att vara tillgängliga i rapporter.
-
->[!NOTE]
->
->I underhållsutgåvan av Analytics Maintenance, 10 maj 2018, började Adobe begränsa funktionaliteten för datumaktiverade och numeriska klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya datumaktiverade och numeriska klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering.
-
 När du har skapat klassificeringarna kan du använda de nya dataattributen i hela Adobe Analytics.
 
-**Exempel på spårningskoder**
+## Exempel på spårningskoder
 
 Anta att ni i stället för att bara visa kampanjer med spårningskod vill se kampanjresultaten med sökmotorn, nyckelordet och kampanjkanalen. I stället för att avrunda konverteringsvariablerna för var och en av dem kan du skapa tre klassificeringar av kampanjvariabeln som representerar sökmotorn, nyckelordet och kampanjkanalen. Med den här strategin kan du se webbplatsens framgångshändelser med alla fyra variablerna, utan ytterligare taggning.
 
