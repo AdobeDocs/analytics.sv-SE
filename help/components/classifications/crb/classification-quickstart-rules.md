@@ -5,7 +5,7 @@ title: Klassificeringsregler
 topic: Admin tools
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 1%
@@ -66,7 +66,7 @@ about_classification_rules.xml
 
 * **Rapportsviter**: Du kan inte välja en klassificering förrän minst en rapportserie har valts. Du kan inte använda rapportsviten förrän du har skapat regeluppsättningen och tilldelat en variabel.
 
-   När du testar regeluppsättningen kan du använda nycklar (variabeln som klassificeras) från rapporten för att se hur de kommer att påverkas av regeluppsättningen. ( [Nyckeln](/help/components/classifications/c-classifications-importer/c-saint-data-files.md) är den variabel som klassificeras, eller den första kolumnen i tabellen för överföring av klassificering.)
+   När du testar regeluppsättningen kan du använda nycklar (variabeln som klassificeras) från rapporten för att se hur de kommer att påverkas av regeluppsättningen. ( [Nyckeln](/help/components/classifications/importer/c-saint-data-files.md) är den variabel som klassificeras, eller den första kolumnen i tabellen för överföring av klassificering.)
 
 * **Regelprioritet**: Om en nyckel matchar flera regler som anger samma klassificering (i [!UICONTROL Set Classification] kolumnen), används den sista regeln som matchar klassificeringen. Se [Om regelprioritet](/help/components/classifications/crb/classification-quickstart-rules.md).
 
@@ -79,7 +79,7 @@ about_classification_rules.xml
 
 ## När klassificerar regler inte nycklar?
 
-När du aktiverar regler kan du skriva över befintliga klassificeringar. I följande situationer klassificerar en klassificeringsregel inte en [nyckel](/help/components/classifications/c-classifications-importer/c-saint-data-files.md)(variabel) om:
+När du aktiverar regler kan du skriva över befintliga klassificeringar. I följande situationer klassificerar en klassificeringsregel inte en [nyckel](/help/components/classifications/importer/c-saint-data-files.md)(variabel) om:
 
 * Nyckeln är redan klassificerad och du väljer inte [Skriv över klassificeringar](/help/components/classifications/crb/classification-rule-definitions.md).
 
