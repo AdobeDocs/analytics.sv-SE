@@ -2,9 +2,9 @@
 title: Refererande domän
 description: Den överordnade domänen som en besökare var på innan han/hon klickade igenom till din plats.
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Dimensionen Refererande domän visar vilka domäner besökarna klickar igenom f�
 >
 >Du måste konfigurera rapportsvitens [interna URL-filter](/help/admin/admin/internal-url-filter-admin.md) för att kunna använda den här dimensionen. Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna domäner eller förhindra att externa domäner visas.
 
-Samma rapport kan visa olika resultat mellan Analysis Workspace och Data warehouse. Analysis Workspace rapporterar den refererande domänen för varje enskild sida, exklusive värden som matchar interna URL-filter. Data warehouse rapporterar endast den första refererande domänen för besöket och ignorerar interna URL-filter.
+Samma rapport kan visa olika resultat mellan Analysis Workspace och Data warehouse. Analysis Workspace rapporterar referensdomänen för varje enskild sida, exklusive värden som matchar interna URL-filter. data warehouse rapporterar endast den första refererande domänen för besöket och ignorerar interna URL-filter.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen kräver konfiguration i Analytics gränssnitt och data i bildbegäranden.
+Den här dimensionen kräver konfiguration i analysgränssnittet och data i bildbegäranden.
 
 * I implementeringen hämtar den här dimensionen data från [`r` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `document.referrer` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen som standard. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t), måste du ta med frågesträngsparametern i bildbegäranden. `r`
 * I Analytics-gränssnittet måste du konfigurera rapportsvitens [interna URL-filter](/help/admin/admin/internal-url-filter-admin.md). Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna domäner eller förhindra att externa domäner visas.
@@ -31,7 +31,7 @@ Adobe fortsätter att referera till en domän för ett besök. Om en besökare l
 
 ## Dimensioner
 
-Bland Dimensionerna finns domäner som besökarna klickar igenom till webbplatsen. Om en träff inte har några referensdata (antingen angivna eller beständiga) grupperas den under dimensionsobjektet `"Typed/Bookmarked"`. Dimensionsobjektet betyder att det inte fanns något referensvärde, till exempel om besökaren skrev webbläsaradressen manuellt i adressfältet eller klickade på ett bokmärke.
+Bland Dimensionerna finns domäner som besökarna klickar igenom till webbplatsen. Om en träff inte har några referensdata (antingen angivna eller beständiga) grupperas den under dimensionsobjektet `"Typed/Bookmarked"`. Dimensionsobjektet betyder att det inte fanns något referensvärde, till exempel om besökaren skrev webbläsaradressen manuellt i adressfältet eller klickade på ett bokmärke. Dimensionsobjektet visas också för omdirigeringar som inte stöder Analytics. `"Typed/Bookmarked"` Se [Omdirigeringar och alias](/help/technotes/redirects.md) i användarhandboken för Technotes.
 
 ### Dimensioner som innehåller `googleusercontent.com`
 
