@@ -2,14 +2,17 @@
 title: Felsöka JavaScript-implementering
 description: Lär dig mer om vanliga problem och de bästa sätten att felsöka JavaScript-implementeringen.
 translation-type: tm+mt
-source-git-commit: 8aa6932dcbb6dad88c27ba1cd4f5aad3bafcfc52
+source-git-commit: b569f87dde3b9a8b323e0664d6c4d1578d410bb7
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 1%
 
 ---
 
 
 # Felsöka JavaScript-implementering
 
-Nedan följer flera orsaker till varför din organisation kan ha problem med att hämta data till Adobe Analytics på rätt sätt.
+Nedan följer några orsaker till varför ditt företag kan ha problem med att hämta in data korrekt i Adobe Analytics.
 
 ## Använda citattecken
 
@@ -48,7 +51,7 @@ Vissa variabler använder versaler. JavaScript-variabler är skiftlägeskänslig
 
 ## Plugin-program
 
-Vissa organisationer använder plugin-program för att förbättra implementeringen av Adobe Analytics. När du uppgraderar AppMeasurement-versioner ska du inte glömma att ta med installerade plugin-program igen. Koden som skapas i [!UICONTROL Code Manager] saknar plugin-kod. Gör en kopia av din befintliga kod om du behöver återställa en tidigare version av AppMeasurement.
+Vissa organisationer använder plugins för att förbättra sin implementering av Adobe Analytics. När du uppgraderar AppMeasurement-versioner ska du inte glömma att ta med installerade plugin-program igen. Koden som skapas i [!UICONTROL Code Manager] saknar plugin-kod. Gör en kopia av din befintliga kod om du behöver återställa en tidigare version av AppMeasurement.
 
 ## Tomt utrymme i variabelvärden
 
@@ -78,3 +81,30 @@ s.pageName = "        Home Page";
 ```
 
 Dessa två variabelvärden betraktas som separata i Adobe Analytics. Det tomma utrymmet tas dock automatiskt bort för visning. Resultatet är en rapport som visar två till synes identiska radobjekt på&quot;hemsidan&quot;. Kontrollera att variabelvärdena inte innehåller blanksteg före eller efter det önskade värdet.
+
+## Trunkerade bildbegäranden
+
+Implementeringar som fyller i många variabler med långa värden kan ibland leda till trunkerade bildförfrågningar. Vissa äldre webbläsare, t.ex. Internet Explorer, har en begränsning på 2 083 tecken för bildförfrågnings-URL:er. Om din organisation har mycket långa bildbegäranden kan du pröva följande:
+
+* **Använd tjänsten** Experience Cloud ID: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP-POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Mer information finns i [Adobe Experience Cloud ID-tjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) .
+* **Använd bearbetningsregler**: [Bearbetningsregler](/help/admin/admin/c-processing-rules/processing-rules.md) kan kopiera värden från en variabel till en annan. Med den här metoden kan du inte ange samma värde i flera variabler. Exempel:
+
+   Kör alltid:<br>
+Skriv över värdet för prop1 med eVar1<br>Skriv över värdet för eVar2 med eVar1<br>Skriv över värdet för prop2 med eVar1<br>
+
+   Ange sedan eVar1 i implementeringen:
+
+   ```js
+   s.eVar1 = "The quick brown fox jumps over the lazy dog";
+   ```
+
+* **Använd dynamiska variabler**: Om implementeringen fyller i många variabler med samma värde kan du använda [dynamiska variabler](/help/implement/vars/page-vars/dynamic-variables.md) för att korta URL:en för begäran:
+
+   ```js
+   s.eVar1 = "The quick brown fox jumps over the lazy dog";
+   s.eVar2 = "D=v1";
+   s.prop1 = "D=v1";
+   s.prop2 = "D=v1";
+   ```
+
+* **Använd klassificeringar**: Om produkt- eller sidnamnen är ovanligt långa kan du använda ett identifierande värde eller en identifierande kod och sedan använda [klassificeringar](/help/components/classifications/c-classifications.md) för att visa ett mer användarvänligt namn.
