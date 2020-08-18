@@ -1,23 +1,26 @@
 ---
-description: Ad Hoc Analysis kan integreras med segmenteringsmiljön i Analytics så att ni kan skapa, dela, hantera och tillämpa besökarsegment för alla Adobe-produkter. Ad Hoc Analysis har ett Java-baserat användargränssnitt för segmentbyggaren och segmenthanteraren som är identiskt med de webbaserade verktyg som används av andra analysverktyg, som matchar serveranrop och ger samma funktioner och funktionalitet från en Java-baserad konsol.
+description: Ad Hoc Analysis integreras med segmenteringsmiljön i Analytics så att ni kan skapa, dela, hantera och tillämpa besökarsegment för alla Adobe-produkter. Ad Hoc Analysis har ett Java-baserat användargränssnitt för segmentbyggaren och segmenthanteraren som är identiskt med de webbaserade verktyg som används av andra analysverktyg, som matchar serveranrop och som tillhandahåller samma funktioner från en Java-baserad konsol.
 title: Skapa segment
 topic: Ad hoc analysis
 uuid: e14fb777-900a-4700-8dc7-56a45c678d29
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 1%
 
 ---
 
 
 # Skapa segment
 
-Ad Hoc Analysis kan integreras med segmenteringsmiljön i Analytics så att ni kan skapa, dela, hantera och tillämpa besökarsegment för alla Adobe-produkter. Ad Hoc Analysis har ett Java-baserat användargränssnitt för segmentbyggaren och segmenthanteraren som är identiskt med de webbaserade verktyg som används av andra analysverktyg, som matchar serveranrop och ger samma funktioner och funktionalitet från en Java-baserad konsol.
+Ad Hoc Analysis integreras med segmenteringsmiljön i Analytics så att ni kan skapa, dela, hantera och tillämpa besökarsegment för alla Adobe-produkter. Ad Hoc Analysis har ett Java-baserat användargränssnitt för segmentbyggaren och segmenthanteraren som är identiskt med de webbaserade verktyg som används av andra analysverktyg, som matchar serveranrop och som tillhandahåller samma funktioner från en Java-baserad konsol.
 
-Ad hoc-analys innehåller välbekanta funktioner för att bygga segment, plus nya funktionsuppgraderingar som [Segment Manager](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html) som används för att skapa ett [arbetsflöde](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-workflow.html)för segmenthantering. Som alltid kan du skapa och spara segment i [Segment Builder](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md) eller [generera segment från en utfallsrapport](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html) från ad hoc-analyskonsolen och sedan spara de nya eller utökade segmenten i målgruppsbiblioteket för allmän åtkomst och användning. ![](assets/seg__overview_ad_hoc.png)
+Ad Hoc Analysis innehåller välbekanta funktioner för att bygga segment, plus nya funktionsuppgraderingar som [segmenthanteraren](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html) som används för att skapa ett [arbetsflöde](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-workflow.html)för segmenthantering. Som alltid kan du skapa och spara segment i [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) eller [generera segment från en utfallsrapport](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html) från ad hoc-analyskonsolen och sedan spara de nya eller utökade segmenten i målgruppsbiblioteket för allmän åtkomst och användning. ![](assets/seg__overview_ad_hoc.png)
 
-## Enhetlig segmentering i ad hoc-analys {#section_5FA03A06DE054448AD519CE30C39E294}
+## Enhetlig segmentering i Ad Hoc Analysis {#section_5FA03A06DE054448AD519CE30C39E294}
 
-Information och instruktioner om hur du skapar och hanterar segment i den enhetliga segmenteringsmiljön, inklusive ad hoc-analysfunktioner, finns i dokumentationen för [enhetlig segmentering](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md) .
+Information och instruktioner om hur du skapar och hanterar segment i den enhetliga segmenteringsmiljön, inklusive ad hoc-analysfunktioner, finns i dokumentationen för [enhetlig segmentering](/help/components/segmentation/segmentation-workflow/seg-build.md) .
 
 * [Nya funktioner](/help/analyze/ad-hoc-analysis/c-content-ref.md#section_BD58629D1A9346BF879E229FA6BEC7A2)
 * [Vad hände med mina befintliga segment?](/help/analyze/ad-hoc-analysis/c-content-ref.md#section_76CF47142D1A4FB6A0718AD9073049FE)
@@ -34,13 +37,13 @@ Information och instruktioner om hur du skapar och hanterar segment i den enhetl
 
 * [Segmenten](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html) är universella för alla rapportsviter. Tidigare var segment specifika för rapporteringsprogram.
 * Med [segmenthanteraren](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html) kan du skapa [arbetsflöden](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-workflow.html) med segmentdelning, taggning, verifiering och godkännandefunktioner.
-* Segmentbyggaren [](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md) har uppdaterats för att förenkla skapandet av segment.
+* Segmentbyggaren [](/help/components/segmentation/segmentation-workflow/seg-build.md) har uppdaterats för att förenkla skapandet av segment.
 * Du kan [tagga segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-tag.html) för att ordna och söka senare i stället för att använda mappar. Tidigare använde du mappar (i [!DNL ad hoc analysis]) för att ordna dina segment.
-* Du kan skapa [sekventiella segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html) utanför ad hoc-analysen.
+* Du kan skapa [sekventiella segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html) utanför Ad Hoc Analysis.
 
    >[!NOTE]
    >
-   >I Ad hoc-analys kan du inte lägga till datumintervall till segment. Den här funktionen är tillgänglig på Analysis Workspace. Du kan inte heller använda Endast före/Endast efter-sekvenser i Ad Hoc-analys.
+   >I Ad Hoc Analysis kan du inte lägga till datumintervall i segment. Den här funktionen är tillgänglig i Analysis Workspace. Du kan inte heller använda Endast före/Endast efter-sekvenser i Ad Hoc Analysis.
 
 ## Vad hände med mina befintliga segment? {#section_76CF47142D1A4FB6A0718AD9073049FE}
 
@@ -50,11 +53,11 @@ De flesta tidigare fördefinierade och suite-segment migreras som segmentmallar 
 
 ## Vad hände med mina befintliga segmentmappar? {#section_FB04DCF775694E69B761DCA53F301C30}
 
-I stället för (Ad hoc-analys) använder segmenthanteraren [taggar](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-tag.html). Dina mappnamn konverteras automatiskt till taggar och dessa taggar används i respektive segment.
+I stället för Ad Hoc Analysis-mappar använder segmenthanteraren [taggar](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-tag.html). Dina mappnamn konverteras automatiskt till taggar och dessa taggar används i respektive segment.
 
 ## Kan jag hantera alla analyssegment i segmenthanteraren? {#section_AF5EDD72C74A4739BD40C4AF125CE489}
 
-I segmenthanteraren för ad hoc-analys kan du bara se de segment som tillhör dig (de segment som du har skapat) och de segment som delas med dig.
+I Ad Hoc Analysis Segment Manager kan du bara se de segment som tillhör dig (de segment som du har skapat) och de segment som du har delat med dig.
 
 ## Vad är en träbehållare? Skiljer det sig från en sidvisningsbehållare? {#section_65BBE60A836C4001938830DDA15DC256}
 
@@ -85,7 +88,7 @@ Eftersom segment fungerar i flera rapportsviter kan det finnas flera segment med
 
 ## Varför kan jag inte ta bort det här segmentet? {#section_0FEB6711031A4ABCA915CDA745ECF38D}
 
-Om segmentet har [publicerats i Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)kan du inte ta bort eller redigera det. Du kan dock kopiera den och redigera den kopierade versionen.
+Om segmentet har [publicerats på Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html)kan du inte ta bort eller redigera det. Du kan dock kopiera den och redigera den kopierade versionen.
 
 ## Mer information om vad som händer med befintliga segment {#section_83ACAB256F394DCD8B424D8920BDD853}
 
@@ -98,8 +101,8 @@ Om segmentet har [publicerats i Experience Cloud](https://docs.adobe.com/content
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Favoritsegment (ad hoc-analys) </td> 
-   <td colname="col2">Dessa Ad hoc-analyssegment visas som vanliga segment i Adobe Analytics. <p>De ska inte blandas ihop med favoritfunktionen i segmenthanteraren som gör att du kan markera segment som favoriter. </p> </td> 
+   <td colname="col1"> Favoritsegment (Ad Hoc Analysis) </td> 
+   <td colname="col2">Dessa Ad Hoc Analysis-segment visas som vanliga segment i Adobe Analytics. <p>De ska inte blandas ihop med favoritfunktionen i segmenthanteraren som gör att du kan markera segment som favoriter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1">Förkonfigurerade segment: 
@@ -113,7 +116,7 @@ Om segmentet har [publicerats i Experience Cloud](https://docs.adobe.com/content
    <td colname="col2"> <p>Dessa segment migreras som segmentmallar till segmentbyggaren. </p> <p>Befintliga rapporter som använder dessa segment fortsätter att fungera korrekt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Experience Cloud-segment (Suite): 
+   <td colname="col1">Experience Cloud (Suite): 
     <ul id="ul_6968AFF6DEDA4BC8A7885B07CC1F57DF"> 
      <li id="li_073D9496F0C64AEB855855D01E65C1BA">Icke-köpare </li> 
      <li id="li_8958FD4272A14E16A9AA08216E8BC573">Inköpare </li> 
