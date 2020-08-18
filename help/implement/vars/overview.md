@@ -1,9 +1,9 @@
 ---
 title: Variabler, funktioner, metoder och plugin-program - översikt
-description: Lär dig vilka variabler du kan ta med i de data du skickar till Adobe för att förbättra rapporteringen.
+description: Lär dig vilka variabler du kan ta med i data som du skickar till Adobe för att förbättra rapporteringen.
 keywords: appmeasurement,variables,vars,configuration,page,implementation
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 3%
@@ -13,10 +13,10 @@ ht-degree: 3%
 
 # Variabler, funktioner, metoder och plugin-program - översikt
 
-Analytics tillhandahåller ett antal variabler för att samla in Analytics-data. Variablerna i det här avsnittet är uppdelade i flera avsnitt:
+Analytics ger ett antal variabler för att samla in analysdata. Variablerna i det här avsnittet är uppdelade i flera avsnitt:
 
 * **Sidvariabler** är värden som vanligtvis används direkt vid rapportering. Vanliga sidvariabler är bl.a. `props`, `eVars`och `events`.
-* **Konfigurationsvariabler** är inställningsvärden som hjälper till att säkerställa att rätt data når Adobe. Vanliga config-variabler är bl.a. `trackingServerSecure`, `charSet`och `linkTrackVars`. Konfigurationsvariabler fyller vanligtvis inte i dimensionsobjekt.
+* **Konfigurationsvariabler** är inställningsvärden som gör att rätt data når Adobe. Vanliga config-variabler är bl.a. `trackingServerSecure`, `charSet`och `linkTrackVars`. Konfigurationsvariabler fyller vanligtvis inte i dimensionsobjekt.
 * **Funktioner och metoder** är koddelar som utför en viss uppgift när de refereras. Vanliga funktioner är `t()`, `tl()`och `clearVars()`.
 
 ## Variabler och implementeringsmetoder
@@ -40,4 +40,4 @@ Följande tecken och strängar tillåts aldrig i JavaScript-variabler.
 * Newline (`0x0A`)
 * HTML-taggar (t.ex. `<b></b>` eller `&#153`)
 
-Vissa variabler har ytterligare begränsningar eller syntaxkrav. Variabeln reserverar t.ex. semikolon och kommatecken för att avgränsa separata produkter och kategorier. `products`
+Vissa variabler har ytterligare begränsningar eller syntaxkrav. Variabeln reserverar t.ex. semikolon och kommatecken för att avgränsa separata produkter och kategorier. [`products`](page-vars/products.md)
