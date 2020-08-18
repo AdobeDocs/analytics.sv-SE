@@ -5,7 +5,7 @@ title: Virtuella rapportsviter och taggar för flera programsviter
 topic: Adobe Analytics
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 0%
@@ -31,13 +31,13 @@ Tänk på följande när du avgör om du ska använda taggar för flera sviter e
 
 Delning av segment till Adobe Experience Cloud stöds inte för virtuella rapportsviter. Användare som vill dela ett segment med Experience Cloud måste ha tillgång till källrapportsviten.
 
-Segment kan ännu inte publiceras till Adobe Experience Cloud från en virtuell rapportsvit för personalisering och målinriktning. Alla användare som publicerar segment måste ha tillgång till källrapportsviten för detta ändamål. Du vill till exempel att användarna bara ska ha tillgång till data för sina geografiska regioner, men du vill att de ska kunna skapa och dela segment från Adobe Analytics till Adobe Experience Cloud för att de ska kunna målinrikta sig i Adobe Target. I det här fallet rekommenderar Adobe att du använder taggar för flera programsviter. Om du inte har något emot att användare har tillgång till den globala rapportsviten eller att du inte behöver publicera segment för användning i andra lösningar, kan virtuella rapportsviter användas.
+Segment kan ännu inte publiceras till Adobe Experience Cloud från en virtuell rapportsvit för personalisering och målinriktning. Alla användare som publicerar segment måste ha tillgång till källrapportsviten för detta ändamål. Du vill t.ex. att användarna bara ska ha tillgång till data för sina geografiska regioner, men du vill att de ska kunna skapa och dela segment från Adobe Analytics till Adobe Experience Cloud för målinriktning i Adobe Target. I det här fallet rekommenderar Adobe att du använder taggar för flera programsviter. Om du inte har något emot att användare har tillgång till den globala rapportsviten eller att du inte behöver publicera segment för användning i andra lösningar, kan virtuella rapportsviter användas.
 
 ### Realtid och aktuella data
 
-Realtidsrapporter stöds inte i virtuella rapportsviter eftersom data segmenteras. Aktuella data stöds inte heller i virtuella rapportsviter eftersom de inte stöder segmentering. Båda dessa funktioner är specifika för Rapporter och Analytics.
+Realtidsrapporter stöds inte i virtuella rapportsviter eftersom data segmenteras. Aktuella data stöds inte heller i virtuella rapportsviter eftersom de inte stöder segmentering. Båda dessa funktioner är specifika för Rapporter och analyser.
 
-[Realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md) och [aktuella data](/help/technotes/latency.md) är inte tillgängliga i virtuella rapportsviter. Detta påverkar användare som svarar på trender som visas i Rapporter och Analytics inom några sekunder eller några minuter efter datainsamlingen. Det kan till exempel inkludera redaktörer i ett nyhetsrum som justerar rubriker baserat på innehållskonsumtion i realtid. Överväg att använda flera svit-taggning om du har betydande datatillgångar i realtid som är specifika för enskilda rapportsviter. Realtid och aktuella data kan fortfarande användas i den globala rapportsviten.
+[Realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md) och [aktuella data](/help/technotes/latency.md) är inte tillgängliga i virtuella rapportsviter. Detta påverkar användare som reagerar på trender som visas i rapporter och analyser inom några sekunder eller några minuter efter datainsamlingen. Det kan till exempel inkludera redaktörer i ett nyhetsrum som justerar rubriker baserat på innehållskonsumtion i realtid. Överväg att använda flera svit-taggning om du har betydande datatillgångar i realtid som är specifika för enskilda rapportsviter. Realtid och aktuella data kan fortfarande användas i den globala rapportsviten.
 
 ### Unika gränser
 
@@ -97,11 +97,11 @@ Om du väljer att ta bort sekundära serveranrop till förmån för virtuella ra
 
 1. Skapa virtuella rapportsviter för att matcha data i dina underordnade rapportsviter. Segmentera i en anpassad dimension som skiljer era webbplatser från varandra.
    * Om du migrerar från en befintlig taggad implementering av flera programsviter ska du jämföra den virtuella rapportsvitens segment med dina befintliga underordnade rapportsviter. Du måste se till att data är jämförbara innan du flyttar användare till den virtuella rapportsviten.
-   * Ett tips är att överväga att använda [segmentstackning](/help/components/c-segmentation/c-segmentation-workflow/seg-build.md) så att du kan redigera ett segment på en plats och låta det gälla för alla beroende virtuella rapportsviter.
+   * Ett tips är att överväga att använda [segmentstackning](/help/components/segmentation/segmentation-workflow/seg-build.md) så att du kan redigera ett segment på en plats och låta det gälla för alla beroende virtuella rapportsviter.
    * Använd träffbehållare om du vill att virtuella rapportsviter ska vara mer ömsesidigt uteslutande.
 2. När du har bekräftat att de virtuella rapportsviterna är korrekt konfigurerade tar du bort de sekundära rapportsvitens ID:n från implementeringen. Så här tar du bort sekundära rapportsviter:
    * I Adobe Experience Platform Launch klickar du på x bredvid de rapportsviter som du inte längre vill använda.
-   * Leta reda på egenskapen och Analytics-verktyget i DTM. I fälten Produktionskonto-ID och ID för mellanlagringskonto tar du bort alla rapport-ID:n som du inte längre vill använda.
+   * Leta reda på egenskaps- och analysverktyget i DTM. I fälten Produktionskonto-ID och ID för mellanlagringskonto tar du bort alla rapport-ID:n som du inte längre vill använda.
    * I äldre JavaScript-implementeringar letar du reda på variabeln och tar bort alla rapport-Suite-ID:n som du inte längre vill använda. `s.account`
    * I samtliga fall lämnar du bara det globala/överordnade rapportsvitens ID för att samla in data för dina webbplatser och appar.
    * Gå till Admin > Rapportsviter och dölj eventuella sekundära rapportsviter som inte längre används.
