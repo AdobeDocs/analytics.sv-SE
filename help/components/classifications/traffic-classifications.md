@@ -5,7 +5,7 @@ title: Trafikklassificeringar
 topic: Admin tools
 uuid: 091bec9b-98ff-4d67-b789-e51c2712839f
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 7%
@@ -23,7 +23,7 @@ Trafikklassificeringar gör att du kan klassificera trafikvariabler (props). Tra
 
 På sidan Trafikklassificeringar kan du skapa klassificeringar för de valda rapportsviterna. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med de associerade attributen.
 
-När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/c-classifications-importer/c-working-with-saint.md) för att tilldela specifika värden till rätt klassificering.
+När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till rätt klassificering.
 
 ## Lägg till en trafikklassificering {#task_4DB49CCB1D764483907BC33A5CEB7315}
 
