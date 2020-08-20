@@ -5,7 +5,10 @@ solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
 title: Anpassa sidkod
 uuid: b7cad069-3eb8-4388-b0b0-34f54001e05f
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: 4b6107fe57787e639fb06ef957d6230d1bc45bd1
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 8%
 
 ---
 
@@ -14,9 +17,7 @@ source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
 
 Använd fältbeskrivningar i Dynamic Tag Management för att anpassa sidkod när Analytics distribueras.
 
-**[!UICONTROL  *`Property`*]** > **[!UICONTROL ![](assets/settings_gear.png)
-
-Redigera]** > **[!UICONTROL Customize Page Code]**
+**[!UICONTROL `Property`]** > **[!UICONTROL Edit Tool]** ![](assets/settings_gear.png) > **[!UICONTROL Customize Page Code]**
 
 <table id="table_A4676A5FEE814DF9A05DA0E56F8B4C6D"> 
  <thead> 
