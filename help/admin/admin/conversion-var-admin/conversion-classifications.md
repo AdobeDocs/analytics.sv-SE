@@ -1,13 +1,10 @@
 ---
 description: Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan t.ex. klassificera alla betalsökningskampanjer i en kategori som popmusiktermer och rapportera hur framgångsrik den kategorin är i förhållande till mått som instanser (klickningar) och konvertering till lyckade händelser.
-subtopic: Classifications
 title: Konverteringsklassificeringar
-topic: Admin tools
-uuid: 4c8726c9-f527-44e1-be01-8c7b3b5c20f0
 translation-type: tm+mt
-source-git-commit: 3c39b43866f8adc7b08c67a28f93f85f91128ab8
+source-git-commit: de7dd41bba6907d6af7a59dc385ca6a185d503ae
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '473'
 ht-degree: 4%
 
 ---
@@ -15,46 +12,22 @@ ht-degree: 4%
 
 # Konverteringsklassificeringar
 
-Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan t.ex. klassificera alla betalsökningskampanjer i en kategori som popmusiktermer och rapportera hur framgångsrik den kategorin är i förhållande till mått som instanser (klickningar) och konvertering till lyckade händelser.
-
-## Konverteringsklassificeringar {#concept_B4B1478A8CB540599AC9D4A58CA4B6FE}
-
 Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan t.ex. klassificera alla betalsökningskampanjer i en kategori som *popmusiktermer* och rapportera om framgången i den kategorin i förhållande till mätvärden som instanser (klickningar) och konvertering till framgångshändelser.
 
 Med konverteringsklassificeringar kan du klassificera konverteringsvariabler. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med hjälp av de associerade dataegenskaperna.
 
 När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till lämplig klassificering.
 
-## Beskrivningar av konverteringsklassificeringar {#section_4A98DD5F5C314B9DAEE710AEE4EE51D4}
+## Beskrivningar av konverteringsklassificeringar
 
-<table id="table_0B72C485467348E2A34BF913441F4AF5"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Element </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <span class="wintitle"> Namn</span> </td> 
-   <td colname="col2"> Klassificeringsnamnet. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="wintitle"> Aktiverat den (endast text)</span> </td> 
-   <td colname="col2"> <p>Anger om textklassificeringen är ett datumintervall för kampanjvariabler. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="wintitle"> Alternativ (endast text)</span> </td> 
-   <td colname="col2">Skapar en lista över klassificeringsvärden som är tillgängliga för den här klassificeringen. Använd <span class="wintitle"> Alternativ</span> med kampanjvariabler för att ge användarna en lista över värden som stöds för klassificeringen i <span class="wintitle"> Campaign Manager</span>. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="wintitle"> Nummertyp (endast numeriskt)</span> </td> 
-   <td colname="col2">Anger siffertypen i den numeriska klassificeringen. Alternativen är <span class="wintitle"> Numeric</span>, <span class="wintitle"> Percent</span>och <span class="wintitle"> Currency</span>. </td> 
-  </tr> 
- </tbody> 
-</table>
+| Element | Beskrivning |
+| --- | --- |
+| Namn | Klassificeringsnamnet |
+| Aktiverat den (endast text) | Anger om textklassificeringen är ett datumintervall för kampanjvariabler. |
+| Alternativ (endast text) | Skapar en lista över klassificeringsvärden som är tillgängliga för den här klassificeringen. Använd Alternativ med kampanjvariabler för att ge användarna en lista över värden som stöds för klassificeringen i Campaign Manager. |
+| Nummertyp (endast numeriskt) | Anger siffertypen i den numeriska klassificeringen. Alternativen är Numeric, Percent och Currency. |
 
-## Lägg till konverteringsklassificeringar {#task_D535D09E3EAF4CD1A15A6B93C0BB1BB5}
+## Lägg till konverteringsklassificeringar
 
 Steg som beskriver hur du lägger till konverteringsklassificeringar i Admin.
 
@@ -74,9 +47,10 @@ Steg som beskriver hur du lägger till konverteringsklassificeringar i Admin.
 1. Lägg till eller ta bort alternativ i **[!UICONTROL Dropdown List]** dialogrutan.
 
    Med Alternativ för att lägga till skapas en lista med klassificeringsvärden som är tillgängliga för den här klassificeringen. Du kan använda det här alternativet med Campaign-variabler för att ge användarna en lista över värden som stöds för klassificeringen i Campaign Manager. Använd detta för klassificeringsdimensioner där du har ett litet antal tillåtna värden som sällan eller aldrig ändras. Du kan till exempel köra olika kampanjer som har olika kundlojalitetsnivåer: Silver, Gold och Platinum. Du kan sedan använda listrutan för att se till att de enda värden som är godkända är de som matchar dina tre nivåer. Om någon försöker använda ett annat värde, tas det bort.
+
 1. Klicka på **[!UICONTROL Save]**.
 
-## Ta bort en konverteringsklassificering {#task_566651BC245944618A6A833E58211FDE}
+## Ta bort en konverteringsklassificering
 
 Ta bort en konverteringsklassificering när den inte längre behövs.
 
