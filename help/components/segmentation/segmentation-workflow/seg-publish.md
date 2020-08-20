@@ -4,10 +4,10 @@ title: Publicera segment till Experience Cloud
 topic: Segments
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 translation-type: tm+mt
-source-git-commit: 9e70cd51f8828cdcb698175a2b4c0150610d14d0
+source-git-commit: 627a2b8b35db1bdf08b650de8708c04f2d5718d6
 workflow-type: tm+mt
 source-wordcount: '1274'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -132,6 +132,6 @@ I AAM utvärderas listan över besökare med ECID för ett visst segment i direk
 ## Visa segmentet i [!DNL Adobe Target]
 
 När du skapar segment i Adobe Analytics kan du använda kryssrutan när du skapar segment i det anpassade målgruppsbiblioteket i Adobe Target. [!UICONTROL Publish this segment to the Experience Cloud] Ett segment som skapats i Analytics eller Audience Manager kan användas för aktiviteter i Target. Ni kan till exempel skapa kampanjaktiviteter baserat på analysstatistik och målgruppssegment som skapats i Analytics.
-], click [!UICONTROL Audiences].
-1. På [!UICONTROL Audiences] sidan kan du hitta målgruppen som kommer från [!DNL Experience Cloud]. Dessa målgrupper är tillgängliga för användning i [!DNL Target] aktiviteter.
 
+1. Klicka på [!UICONTROL Audiences].
+1. På [!UICONTROL Audiences] sidan kan du hitta målgruppen som kommer från [!DNL Experience Cloud]. Dessa målgrupper är tillgängliga för användning i [!DNL Target] aktiviteter.
