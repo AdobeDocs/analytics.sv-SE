@@ -2,10 +2,10 @@
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 translation-type: tm+mt
-source-git-commit: 8e8eb2c7787f97104c983cc4b0f11e5ed57de069
+source-git-commit: 4b6107fe57787e639fb06ef957d6230d1bc45bd1
 workflow-type: tm+mt
 source-wordcount: '2004'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Fortsätt nedåt på den här sidan om du vill se rekommendationer för kanalreg
 
 ### Ange värdet för marknadsföringskanalen
 
-**[!UICONTROL Add Rule]**Ange kanalens värde]**definierar detaljdimensionen för marknadsföringskanalen som är tillgänglig för den kanalen. På så sätt kan ni dela upp dimensionerna för marknadsföringskanalen och se mer detaljerad information om kanalen.
+**[!UICONTROL Add Rule]** **Ange kanalens värde** för att definiera detaljdimensionen för marknadsföringskanalen som är tillgänglig för den kanalen. På så sätt kan ni dela upp dimensionerna för marknadsföringskanalen och se mer detaljerad information om kanalen.
 
 Vi rekommenderar att kanalvärdet ställs in på samma villkor som används för att definiera själva kanalen. Om frågesträngsparametern till exempel används för att definiera kanalen anger du frågesträngsparametern som kanalvärde.
 
@@ -71,18 +71,18 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 |--- |--- |
 | Alla | Aktiverar endast den här kanalen när alla regler i den numrerade regeln är sanna. |
 | Alla | Aktiverar den här kanalen när någon av reglerna i regeluppsättningen är true. Det här alternativet är bara tillgängligt om det finns mer än en regel i den numrerade regeln. |
-| AMO-ID | Den primära spårningskod som används av integreringarna i Advertising Cloud och Advertising Analytics. När en av dessa integreringar är aktiverad kan spårningskodprefixet användas för att identifiera Advertising Cloud-specifika kanaler. Använd&quot;AMO ID&quot; börjar med&quot;AL&quot; för sökning,&quot;AC&quot; för visning eller&quot;AO&quot; för sociala medier. När AMO-ID används i marknadsföringskanaler kan värdena för klickning/kostnad/intryck tillskrivas rätt kanal (om de inte är konfigurerade går dessa värden till Direkt eller Ingen). |
+| AMO-ID | Den primära spårningskod som används av Advertising Cloud- och Advertising Analytics-integreringar. När en av dessa integreringar är aktiverad kan spårningskod-prefixet användas för att identifiera Advertising Cloud-specifika kanaler. Använd&quot;AMO ID&quot; börjar med&quot;AL&quot; för sökning,&quot;AC&quot; för visning eller&quot;AO&quot; för sociala medier. När AMO-ID används i marknadsföringskanaler kan värdena för klickning/kostnad/intryck tillskrivas rätt kanal (om de inte är konfigurerade går dessa värden till Direkt eller Ingen). |
 | AMO ED ID | Den sekundära spårningskod som används av Advertising Cloud. Huvudsyftet med den här spårningskoden är att den ska fungera som nyckel för att skicka data tillbaka till Ad Cloud. Den kan dock även användas för att identifiera ClickThrottings jämfört med ViewThaves om du vill se dessa som två separata marknadsföringskanaler. Detta kan du göra genom att ställa in marknadsföringskanallogiken för&quot;AMO EF ID&quot; avslutas med &quot;:d&quot; för Display ClickTheves eller&quot;AMO EF ID&quot; slutar med &quot;:i&quot; för DisplayThrotts. Om du inte vill dela upp Visning i två kanaler använder du AMO ID-dimensionen i stället. |
 | Konverteringsvariabler | Består av eVars som är aktiverade för den här rapportsviten och gäller bara när dessa variabler ställs in via Adobe-koden på sidan.  Se Implementeringshandboken . |
 | Finns | Det finns flera tillgängliga markeringar, bland annat:<ul><li>**Finns** inte: Anger att träffattributet inte finns i begäran. Om användaren till exempel skriver en URL eller klickar på ett bokmärke i en hänvisande domän finns inte det refererande domänattributet.</li><li>**Är tom**: Anger att ett träffattribut finns, vanligtvis en eVar- eller frågesträngsparameter, men det finns inget värde som är associerat med träffattributet.</li><li>**Innehåller** inte: Här kan du till exempel ange att en hänvisande domän inte innehåller ett visst värde (till skillnad från att använda markeringen &quot;Innehåller&quot;).</li></ul> |
 | Identifiera kanalen som | Associerar regeln med en marknadsföringskanal som du har lagt till på sidan för Marketing Channel Manager.  Se Lägga till marknadsföringskanaler. |
-| Matchar regler för betald sökidentifiering | En betald sökning som identifierats av Adobe. Betalda sökningar är när företag betalar en avgift för sökmotorn för att visa sin webbplats. Betalda sökningar visas vanligtvis högst upp eller till höger i sökresultaten. |
+| Matchar regler för betald sökidentifiering | En betald sökning upptäcktes av Adobe. Betalda sökningar är när företag betalar en avgift för sökmotorn för att visa sin webbplats. Betalda sökningar visas vanligtvis högst upp eller till höger i sökresultaten. |
 | Matchar reglerna för identifiering av naturlig sökning | En obetald sökning upptäcktes av Adobe. |
 | Referenten matchar interna URL-filter | Ett besök vars sid-URL matchar ett internt URL-filter, enligt definition för rapportsviten i Admin Tools. |
 | Referenten matchar inte interna URL-filter | Den refererande URL:en matchar inte ett internt URL-filter, som definierats för rapportsviten i Admin Tools. Du kan använda den här inställningen med sidans URL och Exists för att ställa in en regel för att spara alla, så att inga besök hamnar i rapportens avsnitt Ingen kanal identifierad. |
 | Ignorera träffar som matchar interna URL-filter | (För referenter) Spårar bara träffar som kommer från externt refererade platser. Vanligtvis låter du den här inställningen vara aktiverad om du inte vill inkludera intern trafik. |
 | Är första sidan av besök | Den första sidan av ett besök som Adobe rapporterar. |
-| Sida | Sidnamnet på en webbsida på din webbplats som är taggad med Adobes webbfyr. Detta värde motsvarar s.pageName . Exempel är `Home Page` och `About Us`. |
+| Sida | Sidnamnet på en webbsida på din webbplats som är taggad med Adobe webbfyr. Detta värde motsvarar s.pageName . Exempel är `Home Page` och `About Us`. |
 | Siddomän | Domänen för den sida som besökaren hamnar på, t.ex. `products.example.co.uk`. |
 | Siddomän och sökväg | Domänen och sökvägen, till exempel `products.example.co.uk/mens/pants/overview.html` . |
 | Sidrotdomän (TLD+1) | Rotdomänen för den sida där besökaren pekar, till exempel example.co.uk . |
@@ -94,8 +94,8 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 | Refererande parameter | En frågesträngsparameter på referensens URL. Om besökarna till exempel kommer från `example.com/?page=12345&cat=1`är sidan och katten de refererande parametrarna. |
 | Refererande rotdomän | Referensens rotdomän. Det finns en referent utanför den definierade domänen. |
 | Sökmotor | En sökmotor som Google eller Yahoo! som förde besökare till er webbplats. |
-| Sök nyckelord | Ett ord som används för att utföra en sökning med en sökmotor. |
-| Sökmotor + nyckelord | En sammanfogning av söknyckelordet och sökmotorn för att unikt identifiera sökmotorn. Om du till exempel söker efter ordet dator identifieras sökmotorn och nyckelordet enligt följande: `Search Tracking Code = "<search_type>:<search engine>:<search keyword>" where    search_type = "n" or "p", search_engine = "Google", and search_keyword = "computer"`**Obs!**n = naturlig; p = Betalad |
+| Sökord | Ett ord som används för att utföra en sökning med en sökmotor. |
+| Sökmotor + nyckelord | En sammanfogning av söknyckelordet och sökmotorn för att unikt identifiera sökmotorn. Om du till exempel söker efter ordet dator identifieras sökmotorn och nyckelordet enligt följande: `Search Tracking Code = "<search_type>:<search engine>:<search keyword>" where    search_type = "n" or "p", search_engine = "Google", and search_keyword = "computer"`**Obs!** n = naturlig; p = Betalad |
 | Ange kanalens värde till | Förutom att ni vet vilken marknadsföringskanal som för besökaren till er webbplats vet ni vilken banderollannons, söknyckelord eller e-postkampanj i kanalen som får tillgodoräkna er för besökarens webbplatsaktivitet. Detta ID är ett kanalvärde som lagras tillsammans med kanalen. Detta värde är ofta ett kampanj-ID som är inbäddat på landningssidan eller den refererande URL:en. i andra fall är det sökmotorn och nyckelordskombinationen för sökning, eller den refererande URL:en som identifierar besökaren från en viss kanal bäst. |
 
 ## Regelordning och definitioner för marknadsföringskanal {#channel-rules}
@@ -108,7 +108,7 @@ Nedan visas den rekommenderade ordningen för kanalregler samt exempeldefinition
 
 Betalsökning är ett ord eller en fras som du betalar en sökmotor för placering i sökresultat. Den här kanalen definieras vanligtvis baserat på frågesträngsparametrar (se Exempel på visningskanal) eller regler för betalsökningsidentifiering. Beslutet beror på vilken detaljinformation om marknadsföringskanalen du vill spela in.
 
-#### Påvisande av betald sökning
+#### Betald sökdetektering
 
 Marknadskanalen använder inställningar som är konfigurerade på [!UICONTROL Paid Search Detection] sidan för att matcha regler för betald sökningsidentifiering. ( **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Paid Search Detection]**). Mål-URL:en matchar den befintliga regeln för avkänning av betald sökning för den sökmotorn.
 
