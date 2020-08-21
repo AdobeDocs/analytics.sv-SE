@@ -5,7 +5,10 @@ title: Bearbetningsordning
 topic: Admin tools
 uuid: cea01d13-dfd5-40f7-8b2f-b6e2fe8354df
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: 31506d4d3fa26a3012cce2c6a8fdeb7af52c2537
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ I följande tabeller visas de data som vanligtvis är tillgängliga före och ef
 |--- |--- |
 | Dynamisk variabelsökning | Variabler fylls i dynamiskt genom att information hämtas från HTTP-huvuden eller andra variabler. Till exempel `s.eVar5="D=c1"` placeras värdet för prop1 i eVar5. |
 | AppMeasurement | Funktioner och plugin-program som används i AppMeasurement körs i webbläsaren eller klientprogrammet. |
-| Dynamisk tagghantering | Regler som definieras i Dynamic Tag Management körs enligt definition. |
+| Tagghantering | Regler som definieras i Adobe Launch eller Dynamic Tag Management körs enligt definition. |
 | Punktregler | [Med punktregler](/help/admin/admin/bot-removal/bot-rules.md) kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. |
 
 ## Efter bearbetning av regler
@@ -40,6 +43,6 @@ I följande tabeller visas de data som vanligtvis är tillgängliga före och ef
 
 ## Hur bearbetningsregler tillämpas vid kopiering av träffar med VISTA {#section_576EE8C240A24CBA979BD614E8D5338D}
 
-Om du har en VISTA-regel konfigurerad att kopiera träffar till en annan rapportsvit, skickas träffar via eventuella bearbetningsregler som har definierats i den andra rapportsviten.
+Om du har en VISTA-regel konfigurerad att kopiera träffar till en annan rapportsvit, skickas dessa träffar via eventuella bearbetningsregler som definieras i den andra rapportsviten.
 
 Om du har definierat bearbetningsregler för den ursprungliga rapportsviten kan dessa tillämpas eller inte baserat på hur VISTA-regeln konfigurerades av Engineering Services. Om du vill veta mer kan du fråga din implementeringsspecialist om VISTA-regeln kopierar värdena för&quot;före&quot; eller&quot;efter&quot; till den extra rapportsviten. Om värdet &quot;pre&quot; kopieras, tillämpas inte bearbetningsregler som definierats i den ursprungliga rapportsviten. Om värdet &quot;post&quot; kopieras tillämpas bearbetningsreglerna innan träffen kopieras.
