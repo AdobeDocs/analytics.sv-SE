@@ -3,7 +3,7 @@ description: 'null'
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: be842d1ca4080171dbec7fd8b5966d8861f79487
+source-git-commit: 226bbce18750825d459056ac2a87549614eb3c2c
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 3%
@@ -57,7 +57,7 @@ Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter 
 
 [Standardmallar i Analysis Workspace på YouTube](https://www.youtube.com/watch?v=aRgYwPneVXg&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=6) (2:46)
 
-Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
+Här finns mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
@@ -77,7 +77,9 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 ### Handel
 
-* **Magento: Marknadsföring och handel**: Den här mallen bryter ned din e-handelskonvertering genom kanalattribuering, och ger insikt genom söknyckelord, landningssida, geografisk plats med mera. Om du vill se en videoöversikt besöker du webbplatsen >[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+* **Magento: Marknadsföring och handel**: Den här mallen bryter ned din e-handelskonvertering genom kanalattribuering, och ger insikt genom söknyckelord, landningssida, geografisk plats med mera. En videoöversikt finns i:
+
+>[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
 
 ### Media
 
@@ -96,7 +98,7 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 * **Appanvändning:** Hur många appanvändare, starter och första starter hade appen och hur lång var den genomsnittliga sessionslängden?
 * **Förvärv:** Se hur länkar till mobilförvärv fungerar.
 * **Prestanda:** Hur fungerar appen och var har användarna problem?
-* **Behåll:** Vilka är mina lojala användare och vad gör de?
+* **Kvarhållning:** Vilka är mina lojala användare och vad gör de?
 * **Resor:** Vilka är de framträdande användningsmönstren för min app?
 
 ### Detaljhandel
@@ -108,7 +110,7 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 * **Förvärv:** Vilka är de viktigaste trafikdrivande faktorerna på min webbplats?
 * **Innehållskonsumtion:** Vilka är de främsta platserna på min webbplats?
-* **Behåll:** Vilka typer av användare är sannolikt lojala användare på min webbplats?
+* **Kvarhållning:** Vilka typer av användare är sannolikt lojala användare på min webbplats?
 * **Teknik:** Vilken teknik använder folk för att komma åt min webbplats?
 
 ### Personer
