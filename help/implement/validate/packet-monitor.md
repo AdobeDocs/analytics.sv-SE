@@ -3,7 +3,7 @@ title: Paketanalysatorer
 description: Med paketanalyserare kan du visa data som skickas av implementeringen till datainsamlingsservrar i Adobe.
 keywords: packet sniffer, http status, 200, 302, charles
 translation-type: tm+mt
-source-git-commit: 178e372e63c436268a1f7028d986504983430b2f
+source-git-commit: b359582fe8ab6ee04bb478825d9989d850390f96
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -33,8 +33,8 @@ I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen beg�
 | Firefox | Internet Explorer | Krom | Fristående program |
 |---|---|---|---|
 | [Observera punkt](https://www.observepoint.com/product#plugin) (taggvisningsprogram) | [HttpWatch](https://www.httpwatch.com/) | [Observera punkt](https://www.observepoint.com/product#plugin) (taggvisningsprogram) | [Charles](https://www.charlesproxy.com/) |
-| [HttpFox](https://addons.mozilla.org/en-US/firefox/addon/httpfox/) |  | [Verktyg för Chrome Developer](https://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.fiddler2.com/fiddler2/) |
-| [Manipuleringsdata](https://addons.mozilla.org/en-us/firefox/addon/tamper-data/) |  | [Firebug Lite](https://chrome.google.com/webstore/detail/bmagokdooijbeehmkpknfglimnifench) | [Wireshark](https://www.wireshark.org/) |
+| [HttpFox](https://addons.thunderbird.net/en-us/firefox/addon/httpfox/) |  | [Verktyg för Chrome Developer](https://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.fiddler2.com/fiddler2/) |
+| [Manipuleringsdata](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/) |  | [Firebug Lite](https://chrome.google.com/webstore/detail/bmagokdooijbeehmkpknfglimnifench) | [Wireshark](https://www.wireshark.org/) |
 | [HttpWatch](https://www.httpwatch.com/) |  |  |  |
 | [Firebug](https://getfirebug.com/) |  |  |  |
 
@@ -50,7 +50,7 @@ När AppMeasurement skickar data till datainsamlingsservrar i Adobe svarar servr
 * **302 HITTADES**: Det finns några möjliga skäl till att få detta svar:
    * Den första bildförfrågan från en besökare: En omdirigering sker om en användare besöker webbplatsen för första gången. Den här omdirigeringen är att få en besöks-cookie. Det påverkar inte datainsamlingen.
    * Integrering mellan Comscore och Adobe: Om din organisation använder en Comscore/Analytics-integrering resulterar varje bildförfrågan alltid i ett 302-svar.
-* **404 HITTADES** INTE: Det här svaret innebär att bildbegäran inte hittades och att data inte skickas till datainsamlingsservrar i Adobe. Det här svaret är också möjligt när hårdkodade bildbegäranden inte är korrekt formaterade. Samarbeta med den person eller det team som implementerat Analytics för att lösa problemet.
+* **404 HITTADES** INTE: Det här svaret innebär att bildbegäran inte hittades och att data inte skickas till datainsamlingsservrar i Adobe. Det här svaret är också möjligt när hårdkodade bildbegäranden inte är korrekt formaterade. Samarbeta med den person eller det team som implementerade Analytics för att lösa problemet.
 
 ## NS_BINDING_ABORTED i svarskoder
 
