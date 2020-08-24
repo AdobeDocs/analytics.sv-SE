@@ -3,10 +3,10 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentval för Virtual Report Suites
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
 translation-type: tm+mt
-source-git-commit: 4c5dd32b51693d2c0eccd4365cae1ac5a29e6d34
+source-git-commit: 780d1d70c1bef907ef3dc1a942eaf399c9d3ba48
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 14%
+source-wordcount: '387'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar ko
 
 >[!NOTE]
 >
->Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [updated curation experience](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate-projects-vrs.html) allows for more fine-grained control over which components are visible.
+>Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [updated curation experience](/help/analyze/analysis-workspace/curate-share/curate.md) allows for more fine-grained control over which components are visible.
 
 Om du vill aktivera komponenturval
 
@@ -60,7 +60,7 @@ Du kan ändra visningsnamnen för inkluderade komponenter som är specifika för
 
 ![](assets/vrs-rename-component.png)
 
-Klicka på informationsikonen för en ingående komponent i Analysis Workspace för att visa det ursprungliga namnet på den namnändrade komponenten:
+I Analysis Workspace klickar du på informationsikonen för någon av komponenterna för att visa det ursprungliga namnet för den nya komponenten:
 
 ![](assets/vrs-aw-renamed.png)
 
