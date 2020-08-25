@@ -3,9 +3,9 @@ description: 'null'
 title: Begränsningar och specifikationer
 uuid: 6717b6ea-7e01-49b8-8f6e-fb733a03b687
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 0f362008f0041a6ac31437ce4da934064c3fa134
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '614'
 ht-degree: 1%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # Begränsningar och specifikationer
 
-## Publiceringsbegränsningar för Power BI {#section_D4BDD70B20F94A0FAE53531CA528AE42}
+## Power BI publiceringsbegränsningar {#section_D4BDD70B20F94A0FAE53531CA528AE42}
 
 >[!NOTE]
 >
->Dessa begränsningar gäller endast alternativet Publicera Report Builder-begäranden som Power BI-datauppsättningstabeller.
+>Dessa begränsningar gäller endast alternativet&quot;Publish Report Builder Requests as Power BI Dataset Tables&quot;.
 
 * Högst 100 Report Builder-begäranden kan exporteras till Power BI per arbetsbok.
 * Schemaläggningsprocessen avbryter exporten av begäranden när den 101:e begäran nås.
-* Endast de första 10 000 raderna med Analytics-data skickas till Power BI per Report Builder-begäran. De återstående raderna ignoreras.
+* Endast de första 10 000 raderna i Analytics-data skickas till Power BI per Report Builder-begäran. De återstående raderna ignoreras.
 
 ## Redigera en Report Builder-begäran efter publicering till Power BI {#section_6989E74F68DD43F08D37C36B6777DB50}
 
@@ -29,34 +29,35 @@ ht-degree: 1%
 >
 >Specifikationen gäller alternativen&quot;Publicera alla Report Builder-begäranden som Power BI-datauppsättningstabeller&quot; och&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot;.
 
-Om du redigerar en Report Builder-begäran efter att ha publicerat den till Power BI kan det orsaka problem.
+Om du redigerar en Report Builder-begäran efter att ha publicerat den på Power BI kan det orsaka problem.
 
-* **Fall 1**: Du publicerar en arbetsbok till Power BI och skapar en visualisering baserat på dess data. Därefter gör du ändringar i arbetsboken, vilket gör att en av kolumnerna i datauppsättningen som refereras till försvinner. Sedan publicerar du igen. Detta bryter visualiseringen i Power BI.
+* **Fall 1**: Du publicerar en arbetsbok på Power BI och skapar en visualisering baserat på dess data. Därefter gör du ändringar i arbetsboken, vilket gör att en av kolumnerna i datauppsättningen som refereras till försvinner. Sedan publicerar du igen. Detta bryter visualiseringen i Power BI.
 
    **Här är ett exempel på hur visualiseringen bryts:**
 
    1. I Report Builder skapar du en arbetsbok med en begäran med måtten Siddimension och Sidvisning.
-   1. [Schemalägg den här begäran](/help/analyze/report-builder/whats-new-arb.md#rb-5-5-section) för publicering till Power BI.
-   1. I Power BI skapar du en visualisering för sid- och sidvyer.
-   1. Redigera nu arbetsboken genom att ta bort sidvyer från begäran.
-   1. Redigera schemat med den uppdaterade arbetsboken och publicera om begäran till Power BI.
-   1. När den nya arbetsboken har skickats till Power BI
+   2. Schemalägg den här begäran för publicering på Power BI.
+   3. I Power BI skapar du en visualisering för sid- och sidvyer.
+   4. Redigera nu arbetsboken genom att ta bort sidvyer från begäran.
+   5. Redigera schemat med den uppdaterade arbetsboken och återpublicera begäran till Power BI.
+   6. När den nya arbetsboken har skickats till Power BI
 
       1. Kontrollera att den har skrivit över den befintliga datauppsättningen som skapades när du först publicerade den.
-      1. Kontrollera att tabellen page_1 är korrekt uppdaterad med kolumnerna Sida och Besök.
-      1. Kontrollera att visualiseringen är bruten eftersom den refererar till kolumnen Sidvyer som inte längre finns i tabellen page_1.
+      2. Kontrollera att tabellen page_1 är korrekt uppdaterad med kolumnerna Sida och Besök.
+      3. Kontrollera att visualiseringen är bruten eftersom den refererar till kolumnen Sidvyer som inte längre finns i tabellen page_1.
+
    **Här följer ett exempel på hur visualiseringen INTE bryts:**
 
    1. I Report Builder skapar du en arbetsbok med en begäran med måtten Siddimension och Sidvisning.
-   1. [Schemalägg den här begäran](/help/analyze/report-builder/whats-new-arb.md#rb-5-5-section) för publicering till Power BI.
-   1. I Power BI skapar du en visualisering för sid- och sidvyer.
-   1. Redigera nu arbetsboken i Report Builder och lägg till besöksmåtten samtidigt som du behåller sid- och sidvyerna.
-   1. Redigera schemat med den uppdaterade arbetsboken och publicera om begäran till Power BI.
-   1. När den nya arbetsboken har skickats till Power BI
+   2. Schemalägg den här begäran för publicering på Power BI.
+   3. I Power BI skapar du en visualisering för sid- och sidvyer.
+   4. Redigera nu arbetsboken i Report Builder och lägg till besöksmåtten samtidigt som du behåller sid- och sidvyerna.
+   5. Redigera schemat med den uppdaterade arbetsboken och återpublicera begäran till Power BI.
+   6. När den nya arbetsboken har skickats till Power BI
 
       1. Kontrollera att den har skrivit över den befintliga datauppsättningen som skapades när du först publicerade den.
-      1. Kontrollera att tabellen page_1 är korrekt uppdaterad med kolumnerna Sida, Sidvyer och Besök.
-      1. Kontrollera att visualiseringen fortsätter att fungera som den ska eftersom den refererar till två kolumner som fortfarande finns i tabellen page_1.
+      2. Kontrollera att tabellen page_1 är korrekt uppdaterad med kolumnerna Sida, Sidvyer och Besök.
+      3. Kontrollera att visualiseringen fortsätter att fungera som den ska eftersom den refererar till två kolumner som fortfarande finns i tabellen page_1.
 
 
 * **Fall 2**: Du fäster ett avsnitt i arbetsboken på en instrumentpanel i Power BI och du tar senare bort det fästa avsnittet (till exempel ett diagram eller en tabell) från arbetsboken. Det här kommer att bryta visualiseringen.
