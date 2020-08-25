@@ -2,10 +2,10 @@
 title: Felsöka inloggning på Adobe Analytics
 description: Steg som ska utföras när du inte kan logga in på Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
+source-git-commit: 47b14bde1bb1217bcb172c6d4f01d68f917d44db
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 3%
+source-wordcount: '588'
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ Felsöka problem med att logga in på Adobe Analytics med Experience Cloud.
 
 ## ID för äldre analys
 
-Det händer att en användare i organisationen får följande felmeddelande när han/hon loggar in:
+En användare i organisationen kan få följande fel när de försöker logga in:
 
 *Av säkerhetsskäl har det här kontot låsts på grund av för många misslyckade inloggningsförsök.*
 
-Om problemet inte kan lösas genom att du rensar webbläsarens cookies/cache kan du kontakta en Analytics-administratör i organisationen för att återställa användarens lösenord.
+Om problemet inte kan lösas genom att du rensar webbläsarens cookies/cache kan du kontakta en Analytics-administratör i organisationen och återställa användarens lösenord.
 
 >[!IMPORTANT]
 >
@@ -53,6 +53,14 @@ Om problemet inte kan lösas genom att du rensar webbläsarens cookies/cache kan
 ## Enkel inloggning
 
 Kontakta en administratör i organisationen för att lösa problem med enkel inloggning.
+
+## Utgångna inloggningar
+
+En användare i organisationen kan få följande fel när de försöker logga in:
+
+*Fel: Inloggningen har upphört att gälla.*
+
+Felet fungerar som det ska. Adobe Analytics ger administratörer möjlighet att ange ett datumintervall som ett användarkonto är giltigt. Om det aktuella datumet ligger utanför det giltiga datumintervallet för kontot kan de inte logga in. Samarbeta med en Analytics-administratör i organisationen för att utöka det giltiga datumintervallet för inloggningen. Adobe kundtjänst har inte behörighet att ändra giltiga inloggningsdatumintervall för användarkonton.
 
 ## Andra inloggningsproblem
 
