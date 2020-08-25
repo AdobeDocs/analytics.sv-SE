@@ -5,10 +5,10 @@ user-guide-title: Handbok om Analytics-verktyg
 user-guide-description: Provides access to Analysis Workspace , the premier analysis and visualization tool for Analytics. Also features all the analysis tools (Report Buidler, Reporting API, Data Workbench, and Activity Map) that you can use in Adobe Analytics.
 user-guide-url: /content/help/en/analytics/analyze/home.html
 translation-type: tm+mt
-source-git-commit: 8a48a5bd9e7ef38ffc90ecb9c640166bb3ac4405
+source-git-commit: 47b14bde1bb1217bcb172c6d4f01d68f917d44db
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 95%
+source-wordcount: '1102'
+ht-degree: 94%
 
 ---
 
@@ -131,7 +131,6 @@ ht-degree: 95%
       + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
    + [Adobe Report Builder – hjälp](report-builder/home.md)
-   + [Nyheter i Report Builder](report-builder/whats-new-arb.md)
    + Konfigurera Report Builder {#report-builder-setup}
       + [Systemkrav](report-builder/setup/system-requirements.md)
       + [Installera Report Builder](report-builder/setup/t-install-arb.md)
@@ -241,8 +240,9 @@ ht-degree: 95%
       + [God praxis](report-builder/c-publish-power-bi/bi-best-practices.md)
       + [Felsöka Power BI-integrering](report-builder/c-publish-power-bi/troubleshooting.md)
       + [Adobe Analytics-innehållspaket för Power BI](report-builder/c-publish-power-bi/integration-power-bi.md)
-   + [Felsökning och bästa praxis för Report Builder](report-builder/troubleshoot.md)
    + [Visual Basic-makron](report-builder/vba.md)
+   + [Report Builder, felsökning](report-builder/troubleshoot.md)
+   + [Vanliga frågor om Report Builder](report-builder/faq.md)
 + Activity Map {#activity-map}
    + [Översikt över Activity Map](activity-map/activity-map.md)
    + Kom igång {#getting-started}
