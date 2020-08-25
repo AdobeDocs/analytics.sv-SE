@@ -2,9 +2,9 @@
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av begreppen samt en specifik dokumentationslänk med mer information om ämnet.
 title: Adobe Analytics – viktiga begrepp
 translation-type: tm+mt
-source-git-commit: 68826433e028825fc43c948d32456416b9d2a13e
+source-git-commit: ed7b4de020c2258a4ba95370293ed1cf1dd9a1ed
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1863'
 ht-degree: 98%
 
 ---
@@ -45,7 +45,7 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | Segment | Förmågan att skapa, hantera, dela och använda kraftfulla, fokuserade målgruppssegment i Analytics-rapporter. Segment delas mellan olika Analytics-produkter och kan delas över hela Experience Cloud. | [Segmentering](/help/components/segmentation/seg-home.md) |
 | Tid (datumintervall) | Förmågan att filtrera datum till valfri tidsperiod och skapa anpassade datumintervall som kan återanvändas i analyser. | [Datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md) |
 | Visualiseringar | Detaljerade visualiseringar som skapar liv i era projekt. | [Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md) |
-| Insamling | Förmågan att begränsa vilka komponenter som är tillgängliga i ett projekt eller Virtual Report Suite. | [VRS-kurva](/help/components/vrs/vrs-components.md) <br> [Projekturval](/help/analyze/analysis-workspace/curate-share/curate.md) <br> [Jämförelse](/help/analyze/analysis-workspace/curate-share/curate-projects-vrs.md) |
+| Insamling | Förmågan att begränsa vilka komponenter som är tillgängliga i ett projekt eller Virtual Report Suite. | [VRS-kurva](/help/components/vrs/vrs-components.md) <br> [Projekturval](/help/analyze/analysis-workspace/curate-share/curate.md) |
 
 ## Viktiga rapporter
 
