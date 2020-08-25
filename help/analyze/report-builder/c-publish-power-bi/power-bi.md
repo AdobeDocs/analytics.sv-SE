@@ -3,10 +3,10 @@ description: 'null'
 title: Publicera till Power BI – översikt
 uuid: ad688817-6e3c-45da-983d-48c123465309
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 0f362008f0041a6ac31437ce4da934064c3fa134
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 12%
+source-wordcount: '951'
+ht-degree: 13%
 
 ---
 
@@ -21,18 +21,12 @@ Genom att kombinera rapportgenereringsfunktionen i Report Builder med visualiser
 
 ![](assets/aaplusbi.png)
 
-Tack vare integreringen med Adobe Report Builder kan du
-
-* [Publicera schemalagda Report Builder-arbetsböcker till Power BI](/help/analyze/report-builder/whats-new-arb.md#rb-5-5-section)
-* [Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller](/help/analyze/report-builder/whats-new-arb.md#rb-5-5-section)
-* [Publicera alla Report Builder-begäranden som Power BI-datauppsättningstabeller](/help/analyze/report-builder/whats-new-arb.md#rb-5-5-section)
-
 ## Systemkrav {#section_0B71092D853446F38FA36447DAC0D32B}
 
 * Adobe Report Builder 5.5 [installerat](/help/analyze/report-builder/setup/t-install-arb.md)
 * Aktivt Microsoft-konto som gör att du kan logga in på Power BI
 
-## Publicera arbetsbok till Power BI {#section_21CA66229EC240D49594A9A7D3FBA687}
+## Publicera arbetsbok på Power BI {#section_21CA66229EC240D49594A9A7D3FBA687}
 
 Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data från Adobe Analytics och skickas regelbundet.
 
@@ -48,11 +42,11 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data f
 1. Ange din e-postadress och skicka omedelbart eller ange schemaläggningsfrekvens (timme, dag, osv.).
 1. Klicka **[!UICONTROL OK]** för att publicera.
 1. Du ombeds nu logga in på ditt Microsoft-konto. Ange dina autentiseringsuppgifter.
-1. Arbetsboken i Report Builder schemaläggs och publiceras i Power BI.
+1. Report Builder-arbetsboken schemaläggs och publiceras på Power BI.
 
-   För varje schemalagd instans och när schemaläggningsprocessen i Report Builder har uppdaterat arbetsboken med uppdaterade Analytics-data publiceras arbetsboken till Microsoft Power BI.
+   För varje schemalagd instans och när schemaläggningsprocessen i Report Builder har uppdaterat arbetsboken med uppdaterade analysdata publiceras arbetsboken i Microsoft Power BI.
 
-**Visa arbetsboksdata i Report Builder i Power BI**
+**Visa Report Builder-arbetsboksdata i Power BI**
 
 1. I Power BI dubbelklickar du på arbetsboken under [!UICONTROL Workbooks] menyn.
 
@@ -60,13 +54,13 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data f
 
 1. Nu kan du visa arbetsbokens kontrollpanelsdata.  ![](assets/view-data-pbi.png)
 
-1. Du kan sedan fästa ett område i den här arbetsboken för att inkludera det i någon av dina Power BI-instrumentpaneler.
+1. Du kan sedan fästa ett område i den här arbetsboken så att du kan ta med det på dina Power BI-kontrollpaneler.
 
-## Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningsregister {#section_7C54A54E75184DD6BAEF4ACCE241239A}
+## Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller {#section_7C54A54E75184DD6BAEF4ACCE241239A}
 
 >[!NOTE]
 >
->Om arbetsboken innehåller ett makro kommer&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot; att inaktiveras.
+>Om arbetsboken innehåller ett makro inaktiveras&quot;Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller&quot;.
 
 I stället för att importera hela arbetsboken kan du bara importera innehållet i alla formaterade tabeller i arbetsboken.
 
@@ -84,7 +78,7 @@ I stället för att importera hela arbetsboken kan du bara importera innehållet
 
    ![](assets/advanced-schedule-wizard2.png)
 
-1. (Valfritt) Du kan anpassa namnet på den publicerade resursen i Power BI. Detta kan vara användbart om du använder versionshantering som en del av arbetsbokens namn (t.ex. myworkbook_v1.1.xlsx) och du inte vill att versionsnumret ska visas i namnet på den publicerade Power BI-resursen. Den har en fördel som den publicerade resursen inte kommer att ändras om versionsnumret ändras. (Se [specifikationerna](/help/analyze/report-builder/c-publish-power-bi/specifications-limits.md) här.)
+1. (Valfritt) Du kan anpassa namnet på den publicerade resursen i Power BI. Detta kan vara användbart om du använder versionshantering som en del av arbetsbokens namn (t.ex. minworkbook_v1.1.xlsx) och du inte vill att versionsnumret ska visas i det publicerade Power BIET-resursens namn. Den har en fördel som den publicerade resursen inte kommer att ändras om versionsnumret ändras. (Se [specifikationerna](/help/analyze/report-builder/c-publish-power-bi/specifications-limits.md) här.)
 
 **Visa tabelldata i Power BI**
 
@@ -112,9 +106,9 @@ Ni kan förvandla alla era förfrågningar till datauppsättningstabeller och sk
 
 >[!IMPORTANT]
 >
->Om arbetsboken innehåller fler än 100 begäranden publiceras endast de första 100 förfrågningarna till Power BI. För varje begäran som publiceras till Power BI publiceras dessutom bara de 10 000 första dataraderna. Så även om dessa förfrågningar kan levereras via schemaläggning är publiceringens omfattning begränsad till Power BI.
+>Om arbetsboken innehåller fler än 100 begäranden publiceras endast de första 100 begäranden i Power BI. För varje begäran som publiceras på Power BI publiceras dessutom bara de 10 000 första dataraderna. Så även om dessa förfrågningar kan levereras genom schemaläggning är publiceringsmöjligheterna för Power BI begränsade.
 
-1. Öppna eller skapa en arbetsbok med Report Builder-begäranden i Report Builder.
+1. Öppna eller skapa en arbetsbok med förfrågningar från Report Builder i Report Builder.
 1. Klicka på **[!UICONTROL Schedule]** > **[!UICONTROL New]** i verktygsfältet Report Builder.
 
 1. Klicka på i guiden Grundläggande schemaläggning **[!UICONTROL Advanced Scheduling Options]**.
@@ -122,9 +116,9 @@ Ni kan förvandla alla era förfrågningar till datauppsättningstabeller och sk
 
 1. Klicka på **[!UICONTROL OK]**.
 
-**Visa begärandedata i Power BI**
+**Visa data för begäran i Power BI**
 
-Varje schemalagd Report Builder-begäran publiceras som en tabell i datauppsättningen. Varje begärandetabell namnges efter den primära dimensionen i begäran och har en [!UICONTROL Report Suite] och en [!UICONTROL Segments] kolumn.
+Varje begäran som schemalagts Report Builder kommer att publiceras som en tabell i datauppsättningen. Varje begärandetabell namnges efter den primära dimensionen i begäran och har en [!UICONTROL Report Suite] och en [!UICONTROL Segments] kolumn.
 
 1. Gå till menyn **[!UICONTROL Workspaces]** > **[!UICONTROL Datasets]** i Power BI.
 
@@ -136,7 +130,7 @@ Varje schemalagd Report Builder-begäran publiceras som en tabell i datauppsätt
 
    >[!NOTE]
    >
-   >Oavsett hur du konfigurerade din Report Builder-begäran så att den kan placeras på kalkylbladet (pivottayout, anpassad layout, vissa kolumner är osynliga) kommer Report Builder alltid att publicera din begäran i samma tvådimensionella radformat med en rubrik: Datum, Dimensioner, Metrisk, Rapportsviter, Segment.
+   >Oavsett hur du konfigurerade din Report Builder-förfrågan att läggas ut på kalkylbladet (pivotlayout, anpassad layout, vissa osynliga kolumner) kommer Report Builder alltid att publicera din begäran i samma tvådimensionella radformat: Datum, Dimensioner, statistik, rapportsviter, segment.
 
 1. Lägg också märke till att det finns en annan tabell som heter **[!UICONTROL Legend]**. Om du tar en begäran ur Report Builder-kontexten kan det vara svårt att komma ihåg vad varje begäran står för. Syftet med förklaringstabellen är till exempel att visa namnet på varje begäran under Tabell-ID. Du kan också lägga till de andra förklaringskolumnerna för att få en fullständig vy över begäran.
 
