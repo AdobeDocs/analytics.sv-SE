@@ -5,10 +5,10 @@ user-guide-title: Implementeringshandbok för Analytics
 user-guide-description: Customize what data is collected to get more out of Adobe Analytics. Includes content on Adobe Experience Platform Launch and JavaScript implementations.
 user-guide-url: /content/help/en/analytics/implementation/home.html
 translation-type: tm+mt
-source-git-commit: ef8c7f83e93ac5ee52856a6bb0978725fa1cc3ff
+source-git-commit: 47b14bde1bb1217bcb172c6d4f01d68f917d44db
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 98%
+source-wordcount: '447'
+ht-degree: 97%
 
 ---
 
@@ -194,6 +194,7 @@ ht-degree: 98%
    + [Implementera Analytics på Facebook Instant Articles](other/fb-instant-articles.md)
 + [Implementera Analytics på mobila enheter](mobile-device-sdk.md)
 + Användningsfall för implementering {#use-cases}
+   + [Använd AppMeasurement med iFrames](use-cases/iframe.md)
    + [Spåra på olika implementeringstyper](use-cases/cross-type-implementation.md)
    + [Extern e-postspårning](use-cases/email-external.md)
 + Validera din implementering {#validate}
