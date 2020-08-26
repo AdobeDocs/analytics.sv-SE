@@ -3,9 +3,9 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta PDF- eller CSV-filer
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: ab5d2be12100306410486fea31bacc6ee9756738
+source-git-commit: d432fd5386c89b3db82d39b0c21603d96bcf13b9
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '995'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Hämta PDF- eller CSV-filer från Workspace
 
-Det finns flera olika sätt att exportera data från Analysis Workspace beroende på vilken datauppsättning du vill analysera utanför verktyget och vem som behöver få informationen. Exporterade data kan vara i form av kopierade data, CSV- eller PDF-filer. En PDF-fil är vanligtvis att föredra om du vill att visualiseringar ska ingå i filen, medan en CSV-fil (eller kopierade data) är att föredra om du bara vill ha oformaterade textdata.
+Det finns flera olika sätt att exportera data från Analysis Workspace, beroende på vilken datauppsättning du vill analysera utanför verktyget och vem som behöver få informationen. Exporterade data kan vara i form av kopierade data, CSV- eller PDF-filer. En PDF-fil är vanligtvis att föredra om du vill att visualiseringar ska ingå i filen, medan en CSV-fil (eller kopierade data) är att föredra om du bara vill ha oformaterade textdata.
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,9 @@ Det finns flera olika sätt att exportera data från Analysis Workspace beroende
 
 ## Ladda ned projekt som CSV eller PDF {#download-project}
 
-Du kan hämta ett fullständigt projekt genom att gå till Projekt > **Hämta som PDF (eller som CSV)**. Den hämtade filen innehåller alla tabeller och visualiseringar som visas i projektet. En PDF-fil är vanligtvis att föredra om du vill att visualiseringar ska ingå i filen, medan en CSV-fil är att föredra om du bara vill ha oformaterade textdata.
+Du kan ladda ned ett helt projekt genom att gå till **[!UICONTROL Project > Download as PDF (or as CSV)]**. Den hämtade filen innehåller alla tabeller och visualiseringar som visas (synliga) i projektet. En PDF-fil är vanligtvis att föredra om du vill att visualiseringar ska ingå i filen, medan en CSV-fil är att föredra om du bara vill ha oformaterade textdata.
+
+![](assets/download-project.png)
 
 När det gäller projektnedladdningar bör du tänka på följande:
 
@@ -32,20 +34,24 @@ När det gäller projektnedladdningar bör du tänka på följande:
 
 ## Kopiera data till Urklipp (snabbtangent: Ctrl+C) {#copy-data}
 
-Högerklicka > Kopiera till urklipp om du snabbt vill kopiera data från arbetsytan och klistra in dem någon annanstans.
+Med högerklicksalternativet **[!UICONTROL Copy to clipboard]** kan du snabbt kopiera data från arbetsytan och klistra in dem någon annanstans.
 
 * Om du vill att den visade tabellen ska kopieras högerklickar du på tabellrubriken och väljer **Kopiera visade data till Urklipp**.
 * Om du vill att en delmängd av data ska kopieras gör du en markering i tabellen och högerklickar sedan > **Kopiera markering till Urklipp**.
 
-Snabbtangenten **Ctrl+C** kopierar dessutom markeringen till Urklipp. När du har kopierat kan du gå till ett annat verktyg och klistra in informationen (eller trycka på Ctrl+V).
+Dessutom `Ctrl+C` kopierar snabbtangenten ditt val till Urklipp. När du har kopierat kan du gå till ett annat verktyg och klistra in informationen (eller trycka `Ctrl+V`).
+
+![](assets/copy-selection.png)
 
 ## Hämta data som CSV {#download-data}
 
-Högerklicka > Hämta som CSV-alternativ om du vill hämta en datatabell eller datakällan för en visualisering som en CSV-fil.
+Med högerklicksalternativet **[!UICONTROL Download data as CSV]** kan du hämta en datatabell eller datakällan för en visualisering som en CSV-fil.
 
-* Högerklicka > **Hämta visade data som CSV** i tabellhuvudet. Detta hämtar de data som visas i tabellen som en CSV-fil.
-* Om en markering görs i tabellen anger alternativet **Hämta markering som CSV**. Endast markeringen laddas ned med det här alternativet, till skillnad från den fullständiga tabellen som visas.
-* Högerklicka > **Hämta data som CSV** i huvudet på en visualisering. Detta hämtar datakälltabellen för en visualisering som en CSV-fil. Obs! Kartvyn stöder inte det här alternativet.
+* Högerklicka i tabellhuvudet **[!UICONTROL Download displayed data as CSV]**. Detta hämtar visade data i tabellen som en CSV-fil.
+* Om en markering görs i tabellen, så står det **[!UICONTROL Download selection as CSV]**. Endast markeringen laddas ned med det här alternativet, i motsats till den fullständiga tabellen som visas.
+* Högerklicka i huvudet på en visualisering **[!UICONTROL Download data as CSV]**. Detta hämtar datakälltabellen för en visualisering som en CSV-fil. Obs! Kartvyn stöder inte det här alternativet.
+
+![](assets/download-data-viz.png)
 
 ## Hämta objekt som CSV {#download-items}
 
@@ -57,6 +63,8 @@ Om du vill analysera mer än de 400 synliga dataraderna i en tabell högerklicka
 
 Du kan utföra flera uppgifter samtidigt i projektet och till och med navigera till ett nytt Workspace-projekt på samma flik medan hämtningen pågår. Hämtningen pausas om du öppnar en ny flik i webbläsaren. Hämtningen avbryts om du lämnar arbetsytan helt eller stänger webbläsarfliken.
 
+![](assets/download-items.png)
+
 ### Nedladdad objektfil
 
 Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följande:
@@ -67,13 +75,17 @@ Tabellens funktioner kommer att tillämpas på den hämtade filen enligt följan
 
 I exemplet ovan hämtas sidobjekt med panelsegmentet (kunder med nya besökare) och komponenterna ovan (marknadsföringskanal = e-post) som filter, och komponenterna nedan (mobilenhetstyp) tas bort från den hämtade CSV-filen.
 
+![](assets/downloaded-file.png)
+
 ### Hämta meddelanden
 
-När filen hämtas visas ett informationsmeddelande med förloppet. Du kan när som helst avbryta nedladdningen genom att klicka på Avbryt nedladdning. Om du stänger popup **avbryts inte** hämtningen.
+När filen hämtas visas ett informationsmeddelande med förloppet. Du kan när som helst avbryta hämtningen genom att klicka på **[!UICONTROL Cancel download]**. Om du stänger popup **avbryts inte** hämtningen.
 
 När filen är klar visas ett meddelande om att den är klar och filen hämtas till webbläsaren.
 
 Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning kommer att ställas i kö tills den tidigare nedladdningen är klar.
+
+![](assets/toast.png)
 
 ## Vanliga frågor {#faq}
 
@@ -81,5 +93,5 @@ Om du begär mer än en nedladdning åt gången får du ett meddelande om att va
 | --- | --- |
 | Varför är min nedladdade PDF-fil en sida? | Arbetsytan sidnumrerar för närvarande inte hämtade PDF-filer. |
 | Kan jag exportera mer än 50 000 objekt med alternativet &quot;Hämta objekt som CSV&quot;? | Varje nedladdning kan innehålla upp till 50 000 dimensionsobjekt, men du kan ändra sorteringsordningen i tabellen för att hämta längre slutobjekt eller använda ett filter för att hämta mer specifika objekt. |
-| Vad innebär&quot;Kopiera visualisering&quot;? | Visualisering av kopia är inte ett exportalternativ. Du kan kopiera en visualisering eller panel från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. [Se videon](https://www.youtube.com/watch?v=lvmAdKNfWQw) |
+| Vad gör **[!UICONTROL Copy visualization]** du? | **[!UICONTROL Copy visualization]** är inte ett exportalternativ. Du kan kopiera en visualisering eller panel från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. [Se videon](https://www.youtube.com/watch?v=lvmAdKNfWQw) |
 
