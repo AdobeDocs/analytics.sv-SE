@@ -3,7 +3,7 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta PDF- eller CSV-filer
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: d432fd5386c89b3db82d39b0c21603d96bcf13b9
+source-git-commit: c06298eef53896fa542baf1061c4ae4658cbddd2
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Med högerklicksalternativet **[!UICONTROL Download data as CSV]** kan du hämta
 
 ## Hämta objekt som CSV {#download-items}
 
-Om du vill analysera mer än de 400 synliga dataraderna i en tabell högerklickar du på tabellrubriken eller valfri rad och väljer **Hämta objekt som CSV (Dimensionens namn)**. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt för den valda dimensionen (baserat på tabellsortering) med filter och segment. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen. Även om inga begränsningar används i friformstabellen rekommenderar vi att alternativet Hämta objekt används i tabeller med mindre än 20 kolumner för att optimera prestandan.
+Om du vill analysera mer än de 400 synliga dataraderna i en tabell högerklickar du på tabellrubriken eller valfri rad och väljer **Hämta objekt som CSV (Dimensionens namn)**. Med det här alternativet exporteras upp till 50 000 dimensionsobjekt (baserat på tabellsortering) för den valda dimensionen med filter och segment. Om du väljer det här alternativet överst i tabellen exporteras den första dimensionen i tabellen. Även om inga begränsningar används i friformstabellen rekommenderar vi att alternativet Hämta objekt används i tabeller med mindre än 20 kolumner för att optimera prestandan.
 
 >[!TIP]
 >
