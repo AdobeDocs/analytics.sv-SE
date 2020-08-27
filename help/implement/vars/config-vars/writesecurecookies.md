@@ -2,10 +2,10 @@
 title: writeSecureCookies
 description: Tillåter AppMeasurement att ange cookies med attributet Secure.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: defb701d01747685a421b89a553f47efe40f1432
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,12 @@ Variabeln gör att AppMeasurement kan ange `writeSecureCookies` säkra cookies [
 
 ## Skriv säkra cookies i Adobe Experience Platform Launch
 
-Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+[!UICONTROL Write secure cookies] är en kryssruta under [!UICONTROL Cookies] dragspelet när du konfigurerar Adobe Analytics-tillägget.
+
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på önskad egenskap.
+3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
+4. Expandera dragspelsfliken så att [!UICONTROL Cookies] kryssrutan visas [!UICONTROL Write secure cookies] .
 
 ## s.writeSecureCookies i AppMeasurement and Launch custom code editor
 
