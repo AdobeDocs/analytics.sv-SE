@@ -3,10 +3,10 @@ description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att
 title: Sammanfattning av antal och förändring
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 0a3c4a6839d0c6ee2d8a98394ed38c433ea811d1
+source-git-commit: f3f1fdda35552d23767cc9bd64d47c4b99a5900b
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 6%
+source-wordcount: '462'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,15 @@ Använd visualisering av sammanfattningsnummer för att markera ett stort tal so
 * Om flera celler är markerade visas den första cellen som är markerad.
 * Om kolumnen är markerad väljs det första cellvärdet i kolumnen.
 
-![](assets/summary-number.png)
+Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
+
+| Inställning | Definition |
+|--- |--- |
+| Procenttal | Visa procenttal i stället för råa tal. |
+| Förklaring synlig | Visa information om måttet som visas. |
+| Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
+| Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
+
 
 Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
 
@@ -32,6 +40,7 @@ Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för at
 | Förklaring synlig | Visa information om måttet som visas. |
 | Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
 | Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
+
 
 ## Visualisering av sammanfattningsändring {#summary-change}
 
@@ -46,7 +55,9 @@ Den här visualiseringen fungerar på följande sätt:
 * Om ett cellintervall är markerat jämförs den första med den sista cellen i intervallet.
 * Om kolumnen är markerad jämförs det första värdet med sig självt, vilket innebär en ändring på 0.
 
+
 ![](assets/summary-change.png)
+
 
 Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
 
