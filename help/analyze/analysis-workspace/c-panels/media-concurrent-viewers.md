@@ -1,16 +1,16 @@
 ---
-title: Panelen Samtidiga visningsprogram
-description: Så här använder och tolkar du panelen Samtidiga visningsprogram i Analysis Workspace.
+title: Media Concurrent Viewers panel
+description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 807c5e31b376799f4494ecc24cebfd9498c39e63
+source-git-commit: c9e60b97d97ddc13fb85c576d0f397bf8a10c6b3
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
 
 
-# Panelen Samtidiga visningsprogram
+# Media Concurrent Viewers panel
 
 >[!IMPORTANT]
 >
