@@ -5,10 +5,10 @@ user-guide-title: Tekniska anteckningar för Analytics
 user-guide-description: A knowledge base containing helpful articles that don't belong to a specific analytics tool or component.
 user-guide-url: /content/help/en/analytics/technotes/home.html
 translation-type: tm+mt
-source-git-commit: 47b14bde1bb1217bcb172c6d4f01d68f917d44db
+source-git-commit: 35952706f89bf70cd4fd5d33f83b4b2df5b8ffee
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 91%
+source-wordcount: '155'
+ht-degree: 87%
 
 ---
 
@@ -43,9 +43,10 @@ ht-degree: 91%
 + [Uteslut data](exclude-data.md)
 + [Latens](latency.md)
 + [Lågtrafikvärde](low-traffic.md)
++ [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)
++ [Stöd för flera valutor](multicurrency.md)
 + [Sekretessöversikt](privacy-overview.md)
 + [Omdirigering och alias](redirects.md)
-+ [Stöd för flera valutor](multicurrency.md)
 + Regional datainsamling {#rdc}
    + [Regional datainsamling - hjälp](rdc/regional-data-collection.md)
    + [SSL-certifieringslicensiering](rdc/ssl-cert-licensing.md)
