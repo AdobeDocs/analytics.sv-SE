@@ -5,10 +5,10 @@ user-guide-title: Tekniska anteckningar för Analytics
 user-guide-description: A knowledge base containing helpful articles that don't belong to a specific analytics tool or component.
 user-guide-url: /content/help/en/analytics/technotes/home.html
 translation-type: tm+mt
-source-git-commit: 35952706f89bf70cd4fd5d33f83b4b2df5b8ffee
+source-git-commit: 4faa557120f937eb240e6d12ab0e2fc0ae7372ab
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 87%
+source-wordcount: '162'
+ht-degree: 83%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 87%
 + [Webbläsarcookies](cookies.md)
 + [Datalagring](data-retention.md)
 + [Uteslut data](exclude-data.md)
++ [IP-adresser och domäner som används av Adobe Analytics](ip-addresses.md)
 + [Latens](latency.md)
 + [Lågtrafikvärde](low-traffic.md)
 + [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)
