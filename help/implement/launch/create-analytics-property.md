@@ -2,10 +2,10 @@
 title: Skapa en Analytics-egenskap i Launch
 description: Skapa ett utrymme för att anpassa hur data samlas in med Adobe Experience Platform Launch.
 translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+source-git-commit: dd506bf171c480c880863c03eee55be8fd9e15cb
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '521'
+ht-degree: 3%
 
 ---
 
@@ -23,13 +23,13 @@ Adobe Experience Platform Launch är det verktyg du kan använda för att integr
 Egenskaper är överliggande behållare som du använder för att hantera taggar. Med tillägg kan du installera produktspecifika taggar och konfigurera dem.
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
-1. Klicka på Ny egenskap.
-1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på Spara.
+1. Klicka på **[!UICONTROL New Property]**.
+1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på **[!UICONTROL Save]**.
 1. Klicka på den nyligen skapade egenskapen för att ange dess inställningar.
-1. Klicka på fliken Tillägg och sedan på Katalog.
-1. Leta reda på identitetstjänsten och klicka sedan på Installera.
-1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på Spara.
-1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på Installera.
+1. Klicka på **[!UICONTROL Extensions]** fliken och sedan på **[!UICONTROL Catalog]**.
+1. Leta reda på identitetstjänsten och klicka sedan på **[!UICONTROL Install]**.
+1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
+1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
 
 ## Skapa dataelement för Adobe Analytics
 
@@ -37,7 +37,7 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
 1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
-1. Klicka på fliken Dataelement och sedan på Skapa nytt dataelement.
+1. Klicka på **[!UICONTROL Data Elements]** fliken och sedan på **[!UICONTROL Create New Data Element]**.
 1. Ge dataelementet följande inställningar:
 
    * Namn: Sidnamn
@@ -50,7 +50,7 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
       >Detta är ett exempelvärde som hjälper dig att komma igång. Om din organisation definierar ett bättre värde för sidnamn, till exempel ett datalagervärde, kan du ange det här.
    * Rensa text
    * Varaktighet: Sidvy
-1. Klicka på Spara.
+1. Klicka på **[!UICONTROL Save]**.
 
 ## Skapa regler för Adobe Analytics
 
@@ -58,26 +58,26 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
 1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
-1. Klicka på Skapa ny regel och ge den ett namn `Global Rule`.
-1. Klicka på Lägg till bredvid händelser och ange följande inställningar:
+1. Klicka **[!UICONTROL Create New Rule]** och ge den ett namn `Global Rule`.
+1. Klicka **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
    * Tillägg: Core
    * Händelsetyp: Bibliotek inläst (sidan ovanpå)
    * Namn: Kärna - Bibliotek inläst (sidan ovanpå)
    * Ordning: 50
-1. Klicka på Behåll ändringar.
-1. Klicka på Lägg till under Åtgärder och ange följande inställningar:
+1. Klicka på **[!UICONTROL Keep Changes]**.
+1. Under **[!UICONTROL Actions]** klickar du på **[!UICONTROL Add]** och anger följande inställningar:
    * Tillägg: Adobe Analytics
    * Åtgärdstyp: Ange variabler
    * Sidnamn: klicka på behållarikonen och markera dataelementet `Page Name` .
    * Campaign: Frågeparameter med värdet `cid`
-1. Klicka på Behåll ändringar.
+1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Klicka på plustecknet bredvid åtgärder för att lägga till en annan åtgärd och ange följande inställningar:
    * Tillägg: Adobe Analytics
    * Åtgärdstyp: Skicka Beacon
    * Namn: Adobe Analytics - skicka Beacon
    * Spårning: s.t()
-1. Klicka på Behåll ändringar.
-1. Kontrollera att händelsen och två åtgärder är angivna och klicka sedan på Spara.
+1. Klicka på **[!UICONTROL Keep Changes]**.
+1. Kontrollera att händelsen och två åtgärder är angivna och klicka sedan på **[!UICONTROL Save]**.
 
 ## Dokumentation och ytterligare resurser
 
