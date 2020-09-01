@@ -3,9 +3,9 @@ description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade
 title: Linjediagram
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 3ace7c4fc42e578b621433860ae3f0dba6be06fd
+source-git-commit: 5bb2fc217cb7da3696a7c55ef8d193a93c18c2d8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Med en listruta för granularitet i [visualiseringsinställningarna](freeform-an
 
 ## Visa min eller max
 
-Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show min/max]** kan du täcka över en etikett för minsta och högsta värde för att snabbt markera toppar och dalar i ett mätresultat.
+Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show min/max]** kan du täcka över en etikett för minsta och högsta värde för att snabbt markera toppar och dalar i ett mätresultat. Obs! min/max-värdena härleds från de synliga datapunkterna i visualiseringen, inte från hela uppsättningen värden inom en dimension.
 
 ![Visa min/max](assets/min-max-labels.png)
 
