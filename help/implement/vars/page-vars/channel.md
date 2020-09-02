@@ -2,7 +2,10 @@
 title: kanal
 description: Fyll i dimensionen 'Platsavsnitt'.
 translation-type: tm+mt
-source-git-commit: c7d596be4f70c820039725be6a5fddc8572156d9
+source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
+workflow-type: tm+mt
+source-wordcount: '157'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ Du kan ange kanal antingen när du konfigurerar Analytics-tillägget (globala va
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] till [!UICONTROL Action Type] [!UICONTROL Set Variables].
+5. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta rätt på [!UICONTROL Channel] avsnittet.
 
 Du kan ställa in kanalen på valfritt strängvärde eller dataelement.
@@ -30,4 +33,10 @@ Variabeln `s.channel` är en sträng som vanligtvis innehåller sidans webbplats
 
 ```js
 s.channel = "Example site section";
+```
+
+Om du använder `digitalData` datalagret [](../../prepare/data-layer.md):
+
+```js
+s.channel = digitalData.page.category.primaryCategory;
 ```
