@@ -2,7 +2,10 @@
 title: Mappa datalagerobjekt till dataelement
 description: Konfigurera Launch för att läsa från datalagret.
 translation-type: tm+mt
-source-git-commit: 283fcd5832abe4c09caa332c2ebc3a22029e6707
+source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 10%
 
 ---
 
@@ -19,18 +22,18 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
 
 [Dataelement](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html#create-a-data-element) är komponenter i Launch som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
 
-1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till detta.
+1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
 1. Klicka på önskad Launch-egenskap.
-1. Klicka på [!UICONTROL Data Elements] fliken och sedan på [!UICONTROL Add Data Element].
+1. Klicka på **[!UICONTROL Data Elements]** fliken och sedan på **[!UICONTROL Add Data Element]**.
 
    ![skapa dataelement](assets/createelement.png)
 
 1. Ange ett namn för dataelementet. Det kan vara en enkel etikett som motsvarar en JavaScript-variabel i datalagret som du vill spåra.
-1. Välj under [!UICONTROL Extension] listrutan [!UICONTROL Core].
-1. Välj under [!UICONTROL Data Element Type] listrutan [!UICONTROL JavaScript Variable]. Ett textfält visas till höger där du kan ange JavaScript-variabeln som ska mappas till det här dataelementet.
-1. Ange önskad JavaScript-variabel, vanligtvis i datalagret. Om t.ex. organisationens datalager är i linje med Adobes rekommenderade praxis kan ett värde vara `digitalData.page.pageInfo.pageName`. Du kan använda webbläsarens konsol för att validera JavaScript-variabelsyntax och -värden.
-1. Klicka på [!UICONTROL Save].
+1. Välj under **[!UICONTROL Extension]** listrutan **[!UICONTROL Core]**.
+1. Välj under **[!UICONTROL Data Element Type]** listrutan **[!UICONTROL JavaScript Variable]**. Ett textfält visas till höger där du kan ange JavaScript-variabeln som ska mappas till det här dataelementet.
+1. Ange önskad JavaScript-variabel, vanligtvis i datalagret. Om t.ex. din organisations datalager är i linje med den praxis som rekommenderas av Adobe, kan ett värde vara `digitalData.page.pageInfo.pageName`. Du kan använda webbläsarens konsol för att validera JavaScript-variabelsyntax och -värden.
+1. Klicka på **[!UICONTROL Save]**.
 
 ## Nästa steg
 
-[Mappa dataelement till analysvariabler](elements-to-variable.md): Tilldela dataelement till analysvariabler så att du kan använda dem som dimensioner i Analysis Workspace.
+[Mappa dataelement till analysvariabler](elements-to-variable.md): Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
