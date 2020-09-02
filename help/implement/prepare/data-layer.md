@@ -2,9 +2,9 @@
 title: Skapa ett datalager
 description: Lär dig vad ett datalager är i Analytics-implementeringen och hur det kan användas för att mappa variabler i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '479'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Ett datalager är ett ramverk av JavaScript-objekt på platsen som innehåller a
 
 ## Förutsättningar
 
-[Skapa ett designdokument](solution-design.md) för lösningar - Det är viktigt för er organisation att följa spårningskraven. Se till att du är förberedd på ett dokument för lösningsdesign innan du kontaktar utvecklingsteamen i organisationen.
+[Skapa ett designdokument](solution-design.md) för lösningar - Det är viktigt för er organisation att följa spårningskraven. Se till att du är förberedd på ett lösningsdesigndokument innan du kontaktar utvecklingsteamen i organisationen.
 
 ## Arbetsflöde
 
@@ -61,14 +61,14 @@ digitalData = {
         },
         category: {
             primaryCategory: "Example page category",
-            subCategory1: "Sub-category example"
+            subCategory: "Sub-category example"
         },
         attributes: {
             country: "US",
             language: "en-US"
         }
     },
-    product1: {
+    product: [{
         productInfo: {
             productID: "4859",
             productName: "Example product",
@@ -77,13 +77,14 @@ digitalData = {
             productImage: "https://example.com/product_image.png",
             productThumbnail: "https://example.com/product_thumbnail.png",
             manufacturer: "Example manufacturer",
+            quantity: 1,
             size: "Product size"
         },
         category: {
             primaryCategory: "Example product category",
             subCategory: "Example sub-category"
         }
-    },
+    }],
     cart: {
         cartID: "934856",
         price: {
@@ -124,13 +125,13 @@ digitalData = {
             }
         }
     },
-    event1: {
+    event: [{
         category: {
             primaryCategory: "Example event category",
             subCategory: "Example sub-category"
         }
-    },
-    component1: {
+    }],
+    component: [{
         componentInfo: {
             componentID: "4921",
             componentName: "Example component"
@@ -139,10 +140,10 @@ digitalData = {
             primaryCategory: "Example event category",
             subCategory: "Example sub-category"
         }
-    },
-    user1: {
+    }],
+    user: [{
         segment: "Premium membership",
-        profile1: {
+        profile: [{
             profileInfo: {
                 profileID: "exampleprofile",
                 userName: "exampleusername",
@@ -154,19 +155,19 @@ digitalData = {
                 facebook: "examplefacebookid",
                 twitter: "exampletwitterhandle"
             }
-        }
-    },
+        }]
+    }],
     privacy: {
-        accessCategories1: {
+        accessCategories: [{
             categoryName: "Default",
             domains: "adobedtm.com"
-        }
+        }]
     },
     version: "1.0"
 }
 ```
 
-Använd rapporten [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf) för mer information om varje objekt och underobjekt. Alla platser använder inte alla objekt. Om du till exempel har en nyhetswebbplats som värd är det osannolikt att du har använt för `digitalData.product` objektet.
+Använd rapporten [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf) för mer information om varje objekt och underobjekt. Alla platser använder inte alla objekt. Om du till exempel är värd för en nyhetswebbplats är det osannolikt att du har använt för `digitalData.product` objektarrayen.
 
 Datalager är utökningsbara. om du har särskilda krav för organisationen, kan du inkludera objekt i datalagret för att tillgodose dessa behov.
 
