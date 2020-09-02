@@ -2,9 +2,9 @@
 description: Lär dig hur du migrerar bearbetningsregler för mobila tjänster till Adobe Analytics
 title: Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
 translation-type: tm+mt
-source-git-commit: bdb6f9ba435513cd1dc3febf35eae0e821c756ca
+source-git-commit: c2610bf25c960039ca8638cecbd05f3a8b28376f
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 I och med den kommande (hittills oanmälda) uppgången av Adobe Mobile Services-funktionen ger det här dokumentet dig anvisningar om hur du migrerar eventuella ytterligare bearbetningsregler - utöver Lifecycle Metrics - som du har skapat i användargränssnittet för mobila tjänster till Adobe Analytics.
 
 Bearbetningsregler används för att flytta värden från kontextdatavariabler till props och eVars. Du kan till exempel placera värdet för en&quot;sökterm&quot;-kontextdatavariabel i värdet för en Commerce Variable-eVar och skriva över det värdet för varje träff. Utan bearbetningsregler är kontextdatavariabler meningslösa och fyller inte i några rapporter i Analytics.
+
+I det här dokumentet behandlas även rapporter om mobilanvändning i Analysis Workspace och möjligheten att migrera andra Mobile Services-funktioner beskrivs.
 
 ## Migrera bearbetningsregler
 
