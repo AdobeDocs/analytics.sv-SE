@@ -3,7 +3,7 @@ description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade
 title: Linjediagram
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 5bb2fc217cb7da3696a7c55ef8d193a93c18c2d8
+source-git-commit: e3e67de7c6f3b82198aa8d823c066030f3c3111e
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!
 Alla modeller passas in med vanliga minsta fyrkanter:
 
 | Modell | Beskrivning |
-|---|---|
+| --- | --- |
 | Linjär | Skapar en rät linje som passar bäst för enkla linjära datauppsättningar och är användbar när data ökar eller minskar med en konstant hastighet. Ekvation: `y = a + b * x` |
 | Logaritmisk | Skapar en kurvformad linje som passar bäst och är användbar när ändringshastigheten i data snabbt ökar eller minskar och sedan Nivåer ut. En logaritmisk trendlinje kan använda negativa och positiva värden. Ekvation: `y = a + b * log(x)` |
 | Exponentiell | Skapar en böjd linje och är användbar när data ökar eller minskar med konstant ökande hastighet. Det här alternativet ska inte användas om dina data innehåller noll eller negativa värden. Ekvation: `y = a + e^(b * x)` |
