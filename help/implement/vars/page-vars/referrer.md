@@ -1,13 +1,16 @@
 ---
-title: hänvisare
+title: referent
 description: Åsidosätt den automatiskt insamlade referenten för en träff.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 1%
 
 ---
 
 
-# hänvisare
+# referent
 
 Variabeln `referrer` åsidosätter den automatiskt insamlade referenten i rapporter. Den här variabeln är användbar i situationer där referenten kan förloras, till exempel vid omdirigeringar eller när besökaren tillfälligt vidarebefordras till en betalningsbehandlare. Den här variabeln används för att fylla i dimensionerna Referer och Refererande domän.
 
@@ -19,7 +22,7 @@ Du kan ange referent antingen när Analytics-tillägget (globala variabler) konf
 2. Klicka på önskad egenskap.
 3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan till Adobe Analytics och [!UICONTROL Extension] till [!UICONTROL Action Type] [!UICONTROL Set Variables].
+5. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta rätt på [!UICONTROL Referrer] avsnittet.
 
 Du kan ställa in referenten på valfritt strängvärde, inklusive dataelement.
@@ -32,7 +35,15 @@ Variabeln `s.referrer` är en sträng som innehåller URL:en för föregående s
 s.referrer = "https://example.com";
 ```
 
-Undvik att ställa in den här variabeln på värden som inte är URL-adresser.
+Om du använder `digitalData` datalagret [](../../prepare/data-layer.md):
+
+```js
+s.referrer = digitalData.page.pageInfo.referringURL;
+```
+
+>[!CAUTION]
+>
+>Undvik att ställa in den här variabeln på värden som inte är URL-adresser.
 
 ## Exempel
 
