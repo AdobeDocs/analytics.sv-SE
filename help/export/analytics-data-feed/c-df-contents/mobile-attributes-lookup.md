@@ -2,7 +2,7 @@
 title: Mobilattributsökning
 description: Sök efter mobilattribut i filen.
 translation-type: tm+mt
-source-git-commit: b4405f4934ffca5561bb43216a6c3133fd59c0c7
+source-git-commit: 33fd282e6aefa3408574f43ccccbc8a1bb141c37
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Mobilattribut visar egenskaper för den mobila enheten i träffen. Den här file
 * Kolumnen `mobile_id` inkluderas.
 * Kolumnen är exkluderad `user_agent` . Detta undantag krävs på grund av licensavtal med DeviceAtlas.
 
-Hämta `mobile_attributes_headers.tsv`eller referera till listan här:
+Hämta [`mobile_attributes_headers.tsv`](assets/mobile_attributes.tsv)eller referera till listan här:
 
 * `mobile_id`
 * `Manufacturer`
