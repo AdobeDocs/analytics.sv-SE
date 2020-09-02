@@ -2,9 +2,9 @@
 description: Lär dig hur du migrerar bearbetningsregler för mobila tjänster till Adobe Analytics
 title: Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 67c8880e125ca31aa96ecea56a7ef0b85bc3abba
+source-git-commit: bdb6f9ba435513cd1dc3febf35eae0e821c756ca
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,10 @@ Förutom mobilstatistik och mått (om rapportsviten är aktiverad för Mobile Se
 * Prestanda: Hur fungerar appen och var har användarna problem?
 * Kvarhållning: Vilka är mina lojala användare och vad gör de?
 * Resor: Vilka är de framträdande användningsmönstren för min app?
+
+Här är ett utdrag från mallen Mobile App Usage:
+
+![Användning av mobilappar](assets/mobile-app-usage.png)
 
 Så här kommer du åt mallarna:
 
