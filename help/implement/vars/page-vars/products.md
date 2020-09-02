@@ -2,17 +2,17 @@
 title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 1%
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
 
 # produkter
 
-Variabeln `products` spårar produkter och egenskaper som är knutna till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och Adobe tolkar värdet i separata dimensionsobjekt.
+Variabeln `products` spårar produkter och egenskaper som är knutna till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och att Adobe tolkar värdet i separata dimensionsobjekt.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Exa
 
 >[!IMPORTANT]
 >
->Ta bort alla semikolon, komman och rör från produktnamn, kategorier och eVar-värden. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
+>Ta bort alla semikolon, kommatecken och rör från produktnamn, kategorier och försäljningsvärden för eVar. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
 
 ## Exempel
 
@@ -95,4 +95,17 @@ s.products = ";Example product;;;;eVar1=Merchandising value";
 // Multiple products using multiple different events and multiple different merchandising eVars
 s.events = "event1,event2,event3,event4,purchase";
 s.products = "Example category 1;Example product 1;3;12.60;event1=1.4|event2=9;eVar1=Merchandising value|eVar2=Another merchandising value,Example category 2;Example product 2;1;59.99;event3=6.99|event4=1;eVar3=Merchandising value 3|eVar4=Example value four";
+```
+
+Om du använder `digitalData` datalagret [kan du iterera genom](../../prepare/data-layer.md)`digitalData.product` objektarrayen:
+
+```js
+for(var i=0; i<digitalData.product.length; i++) {
+    // Add individual product info to the product string
+    s.products += digitalData.product[i].category.primaryCategory + ";" + digitalData.product[i].productInfo.productName;
+    // If there are more products, add a comma
+    if(i != digitalData.product.length-1) {
+        s.products += ",";
+    }
+}
 ```
