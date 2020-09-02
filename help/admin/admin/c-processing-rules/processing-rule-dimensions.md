@@ -1,16 +1,19 @@
 ---
 description: De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetningsregler.
 subtopic: Processing rules
-title: Tillgängliga dimensioner för bearbetningsregler
+title: Tillgängliga dimensioner för behandlingsregler
 topic: Admin tools
 uuid: ba73ab59-a8cf-491c-8757-5fb03d6b0745
 translation-type: tm+mt
-source-git-commit: 327fdfd6a6d6bfe1c7bae9825fc8812b5ac7d095
+source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 3%
 
 ---
 
 
-# Tillgängliga dimensioner för bearbetningsregler
+# Tillgängliga dimensioner för behandlingsregler
 
 De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetningsregler.
 
@@ -43,7 +46,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
  </tbody> 
 </table>
 
-## Trafikvariabler {#section_225156106F8B41F8BC1E68D58DDC2652}
+## Traffic Variables {#section_225156106F8B41F8BC1E68D58DDC2652}
 
 <table id="table_575F618C59DC4933BC77F935518EAE39"> 
  <thead> 
@@ -88,11 +91,11 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sidnamn </p> </td> 
-   <td colname="col2"> <p> <code> s.pageName</code> </p> <p>Obs!  En sidvy räknas för alla träffar där sidnamnet inte är tomt. När en länk spåras tar datainsamlingsservern bort sidnamnet från träffen så att sidvyerna inte räknas. Om du infogar ett sidnamn på nytt i dessa anrop med bearbetningsregler, räknas en sidvy. Vi rekommenderar att du kontrollerar att sidnamnet redan har angetts innan du ändrar sidnamnet. </p> </td> 
+   <td colname="col2"> <p> <code> s.pageName</code> </p> <p>Obs!  Länkspårningsanrop tar bort <code>pageName</code> variabeln innan de når bearbetningsregler. Om du infogar ett sidnamnsvärde igen med bearbetningsregler betraktas träffen som en sidvy i stället för som ett länkspårningsanrop. Adobe rekommenderar att du kontrollerar att sidnamnet redan har angetts innan du ändrar det. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sidans URL </p> </td> 
-   <td colname="col2"> <code> s.pageURL</code> eller den aktuella sidans URL om <code> s.pageURL</code> inte anges. </td> 
+   <td colname="col2"> <code> s.pageURL</code> eller den aktuella sidans URL om <code> s.pageURL</code> inte anges. <p>Obs!  Länkspårningsanrop tar bort <code>pageURL</code> variabeln innan de når bearbetningsregler. Om du infogar ett URL-värde för en sida på nytt med bearbetningsregler, betraktas träffen som en sidvy i stället för som ett länkspårningsanrop. Adobe rekommenderar att du kontrollerar att sidans URL är inställd innan du ändrar den. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Frågesträngsparameter </p> </td> 
@@ -149,7 +152,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
  </tbody> 
 </table>
 
-## Konverteringsvariabler {#section_311856B21B3B49DBAA0539CFA06C409F}
+## Conversion Variables {#section_311856B21B3B49DBAA0539CFA06C409F}
 
 <table id="table_E28729026EDA485989178A3B887B5983"> 
  <thead> 
