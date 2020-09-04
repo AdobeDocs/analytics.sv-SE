@@ -1,10 +1,10 @@
 ---
-description: Du kan differentiera länkar genom att anpassa länk-ID med variabeln s_objectID, genom att anpassa regionen och genom att anpassa modulen AppMeasurement ActivityMap.
+description: Du kan skilja länkar åt genom att anpassa länk-ID med variabeln s_objectID, genom att anpassa regionen och genom att anpassa modulen AppMeasurement ActivityMap.
 title: Differentiera länkar som refererar till samma länk-ID och region
 topic: Activity map
 uuid: f2da0cda-a33b-4a12-8d99-1f58386d6d30
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 370d81bafc523b00a38b0064ad4ca3e6bb655d9f
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 5%
