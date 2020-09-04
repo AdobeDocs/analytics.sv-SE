@@ -5,7 +5,10 @@ title: Inställningar för användargrupp
 topic: Admin tools
 uuid: b411032a-7d56-44fd-b676-abee4af756f9
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 82cf5ddfd4d18af09c2dbedba20514e4b643a94b
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Hanteringen av användare och produkter går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
 
 Beskrivningar av element på sidan Definiera användargrupp.
 
@@ -57,7 +60,6 @@ Beskrivningar av element på sidan Definiera användargrupp.
   <tr> 
    <td colname="col1"> <p><b>Rapportåtkomst</b> </p> </td> 
    <td colname="col2"> 
-    <draft-comment> 
      <p> 
       <ul id="ul_81ABB1701BEC44ECB548F98EB818F83B"> 
        <li id="li_FCE10A56AF904C9CBCE24AC91025639C"><b>Trafikrapporter</b>: Ger åtkomst till alla rapporter baserat på trafik, t.ex. sidvisningar, besök och unika besökare. </li> 
@@ -69,14 +71,14 @@ Beskrivningar av element på sidan Definiera användargrupp.
        <li id="li_03CE1718D51049D596DB061932D97506"><b>SearchCenter</b> </li> 
        <li id="li_78AB0BCEDBA946718F90B6D7AB52CB80"><b>Webbtjänster </b>(ger åtkomst till API-resurser för både rapportering och administration.) </li> 
        <li id="li_DCA83780F6214AF1A82255BC977744F1"><b>Mätvärden</b> (ger åtkomst till mätvärden som används i rapporter och analyser, inklusive standardmått som sidvyer och andra mätvärden som anpassade händelser.)</li> 
-       <li id="li_A200E3CED33D4B15BFD30CBDD930912C"><b>Admin Console </b>(ger åtkomst till olika komponenter på Admin Menu, till exempel loggar och Report Suite-inställningar.) </li> 
+       <li id="li_A200E3CED33D4B15BFD30CBDD930912C"><b>Admin Console </b>(Ger åtkomst till olika komponenter på Admin Menu, t.ex. Logs och Report Suite-inställningar.) </li> 
        <li id="li_CF3FA04D402A47618401633BA8583010"><b>Rapporthämtning</b> (Ger möjlighet att hämta rapporter inifrån analysgränssnittet.) </li> 
        <li id="li_03AC2D9FF43648CB90E514C62DC31217"><b>Undersökning</b> (Ger tillgång till undersökningsrapporter om din organisation även använder den inaktuella Adobe Survey-funktionen.) </li> 
        <li id="li_9FC3F25F335641B5AC9232BDC2DCCECA"><b>Avancerad rapportering</b> (Ger åtkomst till avancerade rapporter som marknadsföringskanaler, avvikelseidentifiering, segment och beräknade värden.) </li> 
        <li id="li_DB56BEB8D31A4918B5CCD3CBBC1DF40A"><b>Socialt</b> (ger åtkomst till rapporter som genererats från data i Adobe Social.) </li> 
        <li id="li_3C2F4F91B92A4CD9BCDD69E6FCE85EEE"><b>Dataanslutningar </b>(Tillåter användare att skapa, uppdatera eller ta bort dataanslutningar.) </li> 
       </ul> </p> 
-    </draft-comment> </td> 
+   </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -92,7 +94,7 @@ Beskrivningar av element på sidan Definiera användargrupp.
      </ul> </p> </td> 
    <td colname="col2"> <p>Gruppmedlemmar kan komma åt en delmängd av rapporterna i rapportgruppen. Klicka på <span class="uicontrol"> Anpassa</span> för att öppna en sida där du kan välja de specifika rapporter i rapportgruppen som gruppmedlemmarna kan komma åt. </p> 
     <ul id="ul_16D5EF18D57D4608AEEDEC40D90D8828"> 
-     <li id="li_F29E84C6228A464C8807F09205AEAAC6"><a href="/help/admin/user-management2/c-customize-report-access/groups-analytics-tools.md"> Analysverktyg</a>: Aktivera användarbehörigheter för allmänna objekt (fakturering, loggar osv.), företagshantering, verktyg, Web Service Access, Report Builder och integrering med Data Connectors. </li> 
+     <li id="li_F29E84C6228A464C8807F09205AEAAC6"><a href="/help/admin/user-management2/c-customize-report-access/groups-analytics-tools.md"> Analysverktyg</a>: Aktivera användarbehörigheter för allmänna objekt (fakturering, loggar osv.), företagshantering, verktyg, webbtjänståtkomst, Report Builder och integrering med Data Connectors. </li> 
      <li id="li_A6EB788162A2455E94CE54B9279A854D"><a href="/help/admin/user-management2/c-customize-report-access/groups-report-suite-tools.md"> Report Suite-verktyg</a>: Aktivera användarbehörigheter för API-åtkomst, Report Suite-hantering, verktyg och rapporter samt instrumentpanelsobjekt. </li> 
      <li id="li_EDB0255E009B4F1CAFAF53966B41363C"><a href="/help/admin/user-management2/c-customize-report-access/groups-metrics.md"> Mätvärden</a>: Aktivera behörigheter för trafik, konvertering, anpassade händelser, lösningshändelser, innehållsmedveten osv. </li> 
      <li id="li_8DAE87D1DEF54803A9C6FE31C01F0FB0"><a href="/help/admin/user-management2/c-customize-report-access/groups-dimensions.md"> Dimensioner</a>: Anpassa användaråtkomsten på detaljnivå: eVars, trafikrapporter, lösningsrapporter och kundvägsrapporter. </li> 
