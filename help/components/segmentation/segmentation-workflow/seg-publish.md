@@ -4,7 +4,7 @@ title: Publicera segment till Experience Cloud
 topic: Segments
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 translation-type: tm+mt
-source-git-commit: 627a2b8b35db1bdf08b650de8708c04f2d5718d6
+source-git-commit: 82cf5ddfd4d18af09c2dbedba20514e4b643a94b
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 3%
@@ -65,7 +65,7 @@ Vi har också ökat det maximala antalet publicerbara Adobe Analytics-segment ti
 
 | Element | Beskrivning |
 |---|---|
-| **[!UICONTROL Publish this segment to the Experience Cloud (for *<report suite>*)]** | När det här alternativet är aktiverat delas segmentets namn och definition (dvs. gränssnittets målgrupp så ofta som den används i annonsplattformar) direkt med Experience Cloud, medan segmentmedlemskapet utvärderas och delas var fjärde timme. <br> När den målgruppen är kopplad till en aktivitet i [!DNL Target]till exempel [!DNL Analytics] börjar skicka ID:n för besökare som är kvalificerade för den Experience Cloud och [!DNL Target] målgruppen. Då börjar målgruppsnamnet och motsvarande data visas på Experience Cloud Publiker-sidan. </br> |
+| **[!UICONTROL Publish this segment to the Experience Cloud (for *`<report suite>`*)]** | När det här alternativet är aktiverat delas segmentets namn och definition (dvs. gränssnittets målgrupp så ofta som den används i annonsplattformar) direkt med Experience Cloud, medan segmentmedlemskapet utvärderas och delas var fjärde timme. <br> När den målgruppen är kopplad till en aktivitet i [!DNL Target]till exempel [!DNL Analytics] börjar skicka ID:n för besökare som är kvalificerade för den Experience Cloud och [!DNL Target] målgruppen. Då börjar målgruppsnamnet och motsvarande data visas på Experience Cloud Publiker-sidan. </br> |
 | **[!UICONTROL Audience Creation Window]** | Den tidsram du väljer används för att skapa målgruppen baserat på rullande kalenderinformation. Exempel:&quot;De senaste 30 dagarna&quot; (standard) innehåller besökare som har kvalificerat sig för målgruppen under de senaste 30 dagarna från dagens datum (INTE från det ursprungliga datumet när segmentet skapades). |
 | **[!UICONTROL Create in Audience Library]** | Segmenten som du skapar och publicerar kan göras tillgängliga utan fördröjning i Experience Cloud Audience Library. De är inte beroende av Analytics-uppdateringar. Dessa segment räknas inte av mot din gräns på 75 publicerade segment. |
 | **[!UICONTROL x of 75 Published]** | Visar antalet segment som du har publicerat till Experience Cloud. Klicka på länken för att visa en lista över publicerade segment och deras associerade rapportsvit och ägare. |
