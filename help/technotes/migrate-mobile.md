@@ -2,9 +2,9 @@
 description: Lär dig hur du migrerar bearbetningsregler för mobila tjänster till Adobe Analytics
 title: Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
 translation-type: tm+mt
-source-git-commit: c2610bf25c960039ca8638cecbd05f3a8b28376f
+source-git-commit: d6601640d06f65dd1ddd09cb9bde0267df20eec3
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
 
-I och med den kommande (hittills oanmälda) uppgången av Adobe Mobile Services-funktionen ger det här dokumentet dig anvisningar om hur du migrerar eventuella ytterligare bearbetningsregler - utöver Lifecycle Metrics - som du har skapat i användargränssnittet för mobila tjänster till Adobe Analytics.
+Det här dokumentet innehåller instruktioner om hur du migrerar eventuella ytterligare bearbetningsregler - utöver Lifecycle Metrics - som du har skapat i gränssnittet för mobila tjänster till Adobe Analytics.
 
 Bearbetningsregler används för att flytta värden från kontextdatavariabler till props och eVars. Du kan till exempel placera värdet för en&quot;sökterm&quot;-kontextdatavariabel i värdet för en Commerce Variable-eVar och skriva över det värdet för varje träff. Utan bearbetningsregler är kontextdatavariabler meningslösa och fyller inte i några rapporter i Analytics.
 
-I det här dokumentet behandlas även rapporter om mobilanvändning i Analysis Workspace och möjligheten att migrera andra Mobile Services-funktioner beskrivs.
+Det här dokumentet visar även hur du rapporterar om mobilanvändning i Analysis Workspace.
 
 ## Migrera bearbetningsregler
 
@@ -24,31 +24,33 @@ Om ni använder mobiltjänster för kostnadsfria funktioner som bearbetningsregl
 
 Men om du skapar ytterligare bearbetningsregler i gränssnittet för mobila tjänster (utöver Lifecycle Metrics) bör du migrera dem så att du kan redigera/ta bort dem i Analytics när du har förlorat åtkomsten till Mobile Services.
 
-1. Logga in på experience.adobe.com och gå till Mobile Services.
+1. Logga in på `experience.adobe.com` och gå till Mobiltjänster.
 1. Klicka på kugghjulsikonen för en mobilapp vars kontextvariabelmappningar du vill migrera till Adobe Analytics.
 1. Klicka på **[!UICONTROL Manage Variables and Metrics]** menyalternativet och sedan på **[!UICONTROL Custom Variables]** fliken. Här ser du vilka kontextvariabelmappningar (kontextdata) som har lagts till i konfigurationen. Anteckna dessa konfigurationer (eller ta en skärmbild). Exempel:
 
    ![Kontextvariabel](assets/context-var.png)
 
 1. Gå till Experience Cloud, byt till Adobe Analytics och se till att du är med i samma mobila rapportsserie som du tittade på i Mobiltjänster.
-1. Gå till Admin > Report Suites > Edit Settings > General > Processing Rules.
-1. Klicka på Lägg till regel.
+1. Gå till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Processing Rules]**.
+1. Klicka på **[!UICONTROL Add Rule]**.
 1. Ignorera villkoren och fortsätt att lägga till samma sammanhangsvariabler som finns i Mobiltjänster.
 
    ![Bearbetar regel](assets/proc-rule.png)
+
+1. Klicka på **[!UICONTROL Save]**.
 
 ## Rapportering om mobilanvändning i Analysis Workspace
 
 Förutom mobilstatistik och mått (om rapportsviten är aktiverad för Mobile Services) innehåller Analysis Workspace flera mallar för Mobile-projekt som kan underlätta analys:
 
-* Meddelanden: Fokuserar på prestanda i appen och push-meddelanden.
-* Plats: Innehåller en karta som visar platsdata.
-* Nyckeltal: Håll koll på nyckelmätningarna i appen.
-* Appanvändning: Hur många appanvändare, starter och första starter hade appen och hur lång var den genomsnittliga sessionslängden?
-* Förvärv: Hur fungerar mobilförvärv?
-* Prestanda: Hur fungerar appen och var har användarna problem?
-* Kvarhållning: Vilka är mina lojala användare och vad gör de?
-* Resor: Vilka är de framträdande användningsmönstren för min app?
+* **[!UICONTROL Messaging]**: Fokuserar på prestanda i appen och push-meddelanden.
+* **[!UICONTROL Location]**: Innehåller en karta som visar platsdata.
+* **[!UICONTROL Key Metrics]**: Håll koll på nyckelmätningarna i appen.
+* **[!UICONTROL App Usage]**: Hur många appanvändare, starter och första starter hade appen och hur lång var den genomsnittliga sessionslängden?
+* **[!UICONTROL Acquisition]**: Hur fungerar mobilförvärv?
+* **[!UICONTROL Performance]**: Hur fungerar appen och var har användarna problem?
+* **[!UICONTROL Retention]**: Vilka är mina lojala användare och vad gör de?
+* **[!UICONTROL Journeys]**: Vilka är de framträdande användningsmönstren för min app?
 
 Här är ett utdrag från mallen Mobile App Usage:
 
@@ -56,11 +58,11 @@ Här är ett utdrag från mallen Mobile App Usage:
 
 Så här kommer du åt mallarna:
 
-1. Logga in på experience.adobe.com och välj Analytics.
+1. Logga in på `experience.adobe.com` och välj Analytics.
 1. Se till att du har en rapportsserie som är aktiverad för mobiltjänster.
-1. Klicka på fliken Arbetsyta.
-1. Klicka på Skapa nytt projekt.
-1. Välj någon av mobilmallarna och klicka på Skapa.
+1. Klicka på **[!UICONTROL Workspace]** fliken.
+1. Klicka på **[!UICONTROL Create New Project]**.
+1. Välj någon av mobilmallarna och klicka på **[!UICONTROL Create]**.
 
 ## Migrera andra mobiltjänster
 
@@ -74,5 +76,5 @@ Följande Mobile Services-funktionalitet är kopplad till Adobe Analytics, men k
 Om du använder mobiltjänster för betalfunktionalitet har du inte någon genomförbar migreringsväg till andra interna/externa verktyg:
 
 * För värvningslänkar kan vi hänvisa dig till Adobe Partners för att tillgodose dina behov.
-* Även om det finns varianter av Push Messaging och In-app Messaging i Adobe Campaign Standard och Adobe Campaign Classic (endast push) är den underliggande datauppsättning som används för målanpassning annorlunda och det går inte att migrera data eller meddelandeaktiviteter.
+* Push Messaging och In-app Messaging är tillgängliga i Adobe Campaign Standard och Adobe Campaign Classic (endast push). Den underliggande datauppsättning som används för målinriktning är dock annorlunda. Vi föreslår att du samarbetar med ditt Adobe-kontoteam för att fastställa migreringsalternativ för meddelandedata.
 * För platsfunktioner rekommenderar vi att du använder den nya [Adobe Experience Platform Location Service](https://www.adobe.com/experience-platform/location-service.html), som är kostnadsfri för alla AEP-kunder.
