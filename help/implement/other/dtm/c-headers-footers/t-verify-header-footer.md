@@ -1,16 +1,19 @@
 ---
 description: Kontrollera att ditt bibliotek för dynamisk tagghantering läses in korrekt på din plats.
 keywords: Analytics Implementation;implementation method;dynamic tag management;dtm;code;page code;header code;footer code;embed code;verify code;verify header code;verify footer code;embed tab;embed
-title: Verifiera kod för sidhuvud och sidfot
+title: Verifiera sidhuvuds- och sidfotskod
 topic: Developer and implementation
 uuid: d395a417-0c61-41a6-a124-d2f400f4626f
 translation-type: tm+mt
-source-git-commit: ebf149df7974f9f2889b6fe938088eda90c84051
+source-git-commit: 82cf5ddfd4d18af09c2dbedba20514e4b643a94b
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 7%
 
 ---
 
 
-# Verifiera kod för sidhuvud och sidfot
+# Verifiera sidhuvuds- och sidfotskod
 
 Kontrollera att ditt bibliotek för dynamisk tagghantering läses in korrekt på din plats.
 
@@ -26,6 +29,6 @@ Kontrollera att ditt bibliotek för dynamisk tagghantering läses in korrekt på
 
    Om du får det här felet bör du kontrollera att:
 
-* Du har inkluderat den fullständiga rubriktexten på alla sidor på webbplatsen i [!DNL HEAD] -avsnittet, så nära [!DNL <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">] tagga så mycket som möjligt.
+* Du har inkluderat den fullständiga sidhuvudskoden på alla sidor på webbplatsen i [!DNL HEAD] -avsnittet så nära `<head>` -taggen som möjligt.
 * Det finns inga oväntade tecken i kodfragmentet, eventuellt till följd av kopiering och inklistring från ett formaterat dokument.
 
