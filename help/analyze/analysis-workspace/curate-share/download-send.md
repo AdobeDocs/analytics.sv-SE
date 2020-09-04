@@ -3,9 +3,9 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta PDF- eller CSV-filer
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: c06298eef53896fa542baf1061c4ae4658cbddd2
+source-git-commit: 1cad7c4338f346dddb12f52b49040d3606801646
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '985'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ När det gäller projektnedladdningar bör du tänka på följande:
 
 Med högerklicksalternativet **[!UICONTROL Copy to clipboard]** kan du snabbt kopiera data från arbetsytan och klistra in dem någon annanstans.
 
-* Om du vill att den visade tabellen ska kopieras högerklickar du på tabellrubriken och väljer **Kopiera visade data till Urklipp**.
+* Om du vill att den visade tabellen ska kopieras högerklickar du på tabellrubriken och väljer **Kopiera data till Urklipp**.
 * Om du vill att en delmängd av data ska kopieras gör du en markering i tabellen och högerklickar sedan > **Kopiera markering till Urklipp**.
 
 Dessutom `Ctrl+C` kopierar snabbtangenten ditt val till Urklipp. När du har kopierat kan du gå till ett annat verktyg och klistra in informationen (eller trycka `Ctrl+V`).
@@ -47,9 +47,8 @@ Dessutom `Ctrl+C` kopierar snabbtangenten ditt val till Urklipp. När du har kop
 
 Med högerklicksalternativet **[!UICONTROL Download data as CSV]** kan du hämta en datatabell eller datakällan för en visualisering som en CSV-fil.
 
-* Högerklicka i tabellhuvudet **[!UICONTROL Download displayed data as CSV]**. Detta hämtar visade data i tabellen som en CSV-fil.
+* Högerklicka i huvudet på en tabell eller visualisering **[!UICONTROL Download data as CSV]**. Detta hämtar visade data i tabellen eller den underliggande datakällan för en visualisering som en CSV-fil. Obs! Kartvyn stöder inte det här alternativet.
 * Om en markering görs i tabellen, så står det **[!UICONTROL Download selection as CSV]**. Endast markeringen laddas ned med det här alternativet, i motsats till den fullständiga tabellen som visas.
-* Högerklicka i huvudet på en visualisering **[!UICONTROL Download data as CSV]**. Detta hämtar datakälltabellen för en visualisering som en CSV-fil. Obs! Kartvyn stöder inte det här alternativet.
 
 ![](assets/download-data-viz.png)
 
