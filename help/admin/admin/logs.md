@@ -4,7 +4,10 @@ title: Loggar
 topic: Admin tools
 uuid: d5d4723d-f4cf-403e-ae9c-76d7faed2be6
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 3603722ee3cbaf64b6d7bc0cbfa4af176f85a87a
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 3%
 
 ---
 
@@ -29,9 +32,50 @@ Med [!UICONTROL Usage and Access Log] den kan du utvärdera rapportanvändningen
 | Inloggning | Filtrera loggen efter användarnamn. |
 | IP | Filtrera loggen med en IP-adress. |
 | Report Suite | Filtrera loggen med ett specifikt rapportpaket-ID. |
-| Händelsetyp | Filtrera loggen efter en händelsetyp. Välj en händelsetyp i listrutan. |
+| Händelsetyp | Filtrera loggen efter en händelsetyp. Välj en händelsetyp i listrutan. Se den fullständiga listan över händelsetyper nedan. |
 | Händelse | Filtrera loggen med ett ord eller en fras i händelsebeskrivningen. |
 | Hämta rapport | Exporterar innehållet i filen [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
+
+### Händelsetyper
+
+| Händelsetyp | Beskrivning |
+| --- |--- |
+| Ingen kategori |  |
+| Inloggningen misslyckades |  |
+| Inloggningen har slutförts |  |
+| Administratörsåtgärd |  |
+| Ändring av säkerhetsinställning |  |
+| Rapporten har visats |  |
+| Rapporten har hämtats |  |
+| Aviseringen har skickats |  |
+| Användaråtgärd |  |
+| Verktyget visas |  |
+| Omniture Action |  |
+| Lösenordsåterställning |  |
+| BookMarks |  |
+| Kontrollpaneler |  |
+| Larm |  |
+| Kalenderhändelser |  |
+| Målgrupper |  |
+| Rapportinställningar |  |
+| Schemalagda rapporter |  |
+| Exkludera efter IP |  |
+| Namnge sidor |  |
+| Klassificeringar |  |
+| Datakällor |  |
+| Arbetsyteprojekt |  |
+| Segment |  |
+| Beräknade mått |  |
+| Datumintervall |  |
+| Virtual Report Suite |  |
+| Bidragsanalys |  |
+| Begäran om Excel-datablock |  |
+| Excel-inloggningsfel |  |
+| Excel-inloggning klar |  |
+| Fel vid mobilinloggning |  |
+| Inloggning på mobilen lyckades |  |
+| API-metod |  |
+
 
 ## Ändringslogg för Report Suite {#section_3864966639414BBEA871F4D0352F56B6}
 
