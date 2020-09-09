@@ -2,9 +2,9 @@
 title: Panelen för samtidiga medieanvändare
 description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: b55faba0298dffa9df9e45c13c2770fe7ffcdce4
+source-git-commit: d63c9b2e3b8241b8b40f4bb2e440cb1e96add69f
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1080'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Du kan konfigurera panelen Medievisningsprogram för samtidig användning med de
 
 | Inställning | Beskrivning |
 |---|---|
-| Panelens datumintervall | Panelens datumintervall är som standard Idag.  Du kan redigera den för att visa en enstaka dag eller flera månader i taget. <br> <br> Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå).  Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
+| Panelens datumintervall | Panelens datumintervall är som standard Idag.  Du kan redigera den för att visa en enstaka dag eller flera månader i taget. <br> <br>Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå).  Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
 | Kornighet | Granularitetsstandardvärdet är Minut. <br> <br>Den här visualiseringen är begränsad till 1 440 datarader (till exempel 24 timmar vid granularitet på minutnivå).  Om ett datumintervall och en granularitetskombination resulterar i mer än 1 440 rader uppdateras granulariteten automatiskt för att passa det fullständiga datumintervallet. |
 | Sammanfattningsnummer för panel | Det finns en sammanfattning av datum- och tidsinformation för samtidiga visningsprogram. Maximal visar detaljer för maximal samtidighet. Minimivärdet visar information om dalvärdet.  Som standard visas bara Maximum, men du kan ändra den till Minimum eller både Maximum och Minimum.<br><br>Om du använder uppdelningar visas ett summeringsnummer för varje. |
 | Uppdelning efter serie | Du kan även dela upp visualiseringen efter segment, dimensioner, dimensionsobjekt eller datumintervall. <br><br>- Du kan visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå.<br><br>- När du drar en dimension markeras de översta dimensionsobjekten automatiskt baserat på det valda panelens datumintervall.<br><br>- Om du vill jämföra datumintervall drar du 2 eller fler datumintervall till serieuppdelningsfiltret. |
@@ -77,7 +77,7 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 | Kan jag köra avvikelseidentifiering? | Nej.  Anomalsidentifiering är inte tillgängligt för den här panelen. |
 | Varför använda unika besökare istället för aktiva sessioner? | Genom att använda unika besökare kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
 | Vad innebär det att ha samtidiga visningsprogram med högre granularitet än en minut? | Med en granularitet som är större än en minut är samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom det tidsintervallet.  På timnivå är till exempel samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom timmen. |
-| Vad gör jag om jag vill se mer än en dag i granularitet på minutnivå? | Om du vill få åtkomst till data på minutnivå med granularitet i upp till en månad i taget kan du använda API:erna i Analytics 2.0. Mer information finns i API:er för [Analytics 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html). |
-| Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika besökare som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br></br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika besökskonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
+| Vad gör jag om jag vill se mer än en dag i granularitet på minutnivå? | Om du vill få åtkomst till data på minutnivå med granularitet i upp till en månad i taget kan du använda API:erna i Analytics 2.0. Mer information finns i [Hämta JSON-rapportdata för samtidiga visningsprogram med API:er](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html)för Analytics 2.0. |
+| Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika besökare som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika besökskonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->
