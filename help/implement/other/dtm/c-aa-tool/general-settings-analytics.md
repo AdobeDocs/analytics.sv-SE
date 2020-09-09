@@ -6,6 +6,9 @@ topic: Developer and implementation
 uuid: 93008719-6fb6-4e39-9a75-c937fe3247b9
 translation-type: tm+mt
 source-git-commit: ebf149df7974f9f2889b6fe938088eda90c84051
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +59,7 @@ Fältbeskrivningar för de allmänna inställningarna i DTM för distribution av
   </tr> 
   <tr> 
    <td colname="col1"> <p>Datacenter </p> </td> 
-   <td colname="col2"> <p>Det datacenter från Adobe som används för datainsamling. </p> </td> 
+   <td colname="col2"> <p>Datacentret Adobe som används för datainsamling. </p> </td> 
   </tr> 
  </tbody> 
 </table>
