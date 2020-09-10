@@ -4,7 +4,10 @@ keywords: Calculated Metrics;Derived Metrics;Advanced Calculated Metrics
 title: Beräknade och avancerade beräknade (härledda) värden
 uuid: 2553c115-b15a-4109-8de2-733dbc1eeb9e
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: e659c6ee0a503c01f7603a0fecf99a093e876caa
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 6%
 
 ---
 
@@ -13,20 +16,12 @@ source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.
 
->[!IMPORTANT]
->
->I juli 2018 införde Adobe [attribuerings-IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html), som reviderade metoderna för utvärdering av tilldelningsmodeller i beräknade värden. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
->
->* Allokeringsmodellerna&quot;sista beröringen i marknadsföringskanalen&quot; och&quot;Första beröringen i marknadsföringskanalen&quot; migrerades till de nya attribueringsmodellerna&quot;Sista beröringen&quot; respektive&quot;Första beröringen&quot; (Obs! &quot;Marknadsföringskanaler&quot; har inte tagits bort - bara de två allokeringsmodellerna som visas i beräknade värden har tagits bort).
->* Dessutom har vi korrigerat hur linjär fördelning beräknas. För kunder som använder beräknade värden med linjär allokering kan rapporterna ändras något för att återspegla den nya, korrigerade attribueringsmodellen. Den här förändringen av beräknade värden återspeglas i [!UICONTROL Analysis Workspace], [!UICONTROL Reports & Analytics]rapporterings-API:t, Report Builder och Ad hoc-analysen. Mer information finns i [How Linear Allocation will work from 19 juli 2018](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md#section_EDBB2E14A6C248C5A79C0913C02D7CA1).
-
-
 Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra er [!DNL Analytics] implementering. De anpassade mätvärden som finns i varje [!DNL Analytics] paket är:
 
 * Adobe [!DNL Analytics] Foundation: Beräknat
-* [Adobe Analytics Select](https://www.adobe.com/data-analytics-cloud/analytics/select.html): Beräknat + Avancerat beräknat
-* [Adobe Analytics Prime](https://www.adobe.com/data-analytics-cloud/analytics/prime.html): Beräknat + Avancerat beräknat
-* [Adobe Analytics Ultimate](https://www.adobe.com/data-analytics-cloud/analytics/ultimate.html): Beräknat + Avancerat beräknat
+* [Adobe Analytics Select](https://www.adobe.com/se/data-analytics-cloud/analytics/select.html): Beräknat + Avancerat beräknat
+* [Adobe Analytics Prime](https://www.adobe.com/se/data-analytics-cloud/analytics/prime.html): Beräknat + Avancerat beräknat
+* [Adobe Analytics Ultimate](https://www.adobe.com/se/data-analytics-cloud/analytics/ultimate.html): Beräknat + Avancerat beräknat
 
 Här följer en jämförelse av funktionerna för beräknade värden och avancerade beräknade värden:
 
@@ -42,7 +37,7 @@ Här följer en jämförelse av funktionerna för beräknade värden och avancer
 
 ## Funktioner {#section_A0A5C275B68A4D628950BBB0B1EE631F}
 
-Du kan
+Ni kan
 
 * Skapa mätvärden för [!UICONTROL Analysis Workspace], [!UICONTROL Reports & Analytics], [!UICONTROL Ad Hoc Analysis], [!UICONTROL Report Builder], [!UICONTROL Anomaly Detection]och [!UICONTROL Contribution Analysis].
 * Skapa segmenterade mätvärden som genereras vid rapportkörning, [utan att implementeringen](https://youtu.be/CuQTm9RaUpY)behöver ändras. Dessa kan ses historiskt eftersom de baseras på segment.
@@ -53,7 +48,7 @@ Du kan
 
    >[!NOTE]
    >
-   >Du kan fortsätta att skapa mätvärden i Ad Hoc-analys. Det beräknade användargränssnittet för metrisk byggaren liknar nu det nya metriska verktyget.
+   >Du kan fortsätta att skapa mätvärden i Ad Hoc Analysis. Det beräknade användargränssnittet för metrisk byggaren liknar nu det nya metriska verktyget.
 
 ## Begränsningar {#section_CB878B02451541D68A68B508D4DBD19A}
 
@@ -96,7 +91,7 @@ Här följer en kort översikt över [!UICONTROL Calculated Metrics] verktygen:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md"  > Beräknad måtthanterare</a> </td> 
+   <td colname="col1"><a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md"  > Hanterare för beräknade mätvärden</a> </td> 
    <td colname="col2"> 
     <ul id="ul_E4D20D5DD3904CC6A85785B5BD4C1B1E"> 
      <li id="li_E0B216BA1478406EB6212263DF71D85B">Dela mätvärden med andra. </li> 
@@ -112,7 +107,7 @@ Här följer en kort översikt över [!UICONTROL Calculated Metrics] verktygen:
   </tr> 
   <tr> 
    <td colname="col1"><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/README.md"  > API för beräknade värden</a> </td> 
-   <td colname="col2"> <p>Ingår i Adobe Analytics 2.0 API-uppsättningen. </p> </td> 
+   <td colname="col2"> <p>En del av API-uppsättningen för Adobe Analytics 2.0. </p> </td> 
   </tr> 
  </tbody> 
 </table>
