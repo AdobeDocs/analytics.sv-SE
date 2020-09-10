@@ -3,7 +3,7 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 translation-type: tm+mt
-source-git-commit: 476f13e80141e67c6e5a416778314a1a41224c80
+source-git-commit: 31ccee8681f2a5b51f1d773d80aa89b70e4d3b65
 workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 4%
@@ -21,7 +21,7 @@ Du kan hämta den senaste versionen av AppMeasurement i [Code Manager](/help/adm
 
 ## Version 2.22.0
 
-Release Date: **August4, 2020**
+Release Date: **August 4, 2020**
 
 * Korrigera för saknad hänvisare när första träffen inte skickades på grund av användarens avanmälningsinställningar.
 
