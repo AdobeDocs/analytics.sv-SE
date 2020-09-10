@@ -2,9 +2,9 @@
 title: Skapa eller redigera en datafeed
 description: Lär dig hur du skapar eller redigerar en datafeed.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 8454f64604afaea03af8bb4d7cefc3cbab889ec6
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Skapa eller redigera en datafeed
 
-Genom att skapa en datafeed vet Adobe var rådatafilerna ska skickas och vad du vill inkludera i varje fil. På den här sidan visas enskilda inställningar som du kan anpassa när du skapar en datafeed.
+Genom att skapa en datafeed kan Adobe veta var rådatafiler ska skickas och vad du vill inkludera i varje fil. På den här sidan visas enskilda inställningar som du kan anpassa när du skapar en datafeed.
 
 Grundläggande kunskap om dataflöden rekommenderas innan du läser den här sidan. Se Översikt över [](data-feed-overview.md) Dataflöden för att kontrollera att du uppfyller kraven för att skapa en datafeed.
 
@@ -32,7 +32,7 @@ Vilka fält som är tillgängliga under målfält beror på måltypen.
 
 ### FTP
 
-Data från dataflöden kan levereras till en FTP-plats hos Adobe eller en kund. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas; feeds genererar ett fel om den angivna sökvägen inte finns.
+Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kund. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas; feeds genererar ett fel om den angivna sökvägen inte finns.
 
 ![FTP-information](assets/dest-ftp.jpg)
 
@@ -44,12 +44,13 @@ SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett 
 
 ### S3
 
-Du kan skicka feeds direkt till Amazon S3-buketter. Kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Mer information finns i [Amazon S3 bucket naming requirements](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3 docs.
+Du kan skicka feeds direkt till Amazon S3-butiker. Kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Mer information finns i [Amazon S3 bucket naming requirements](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3 docs.
 
 ![S3-info](assets/dest-s3.jpg)
 
-Följande 11 AWS-standardregioner stöds (med lämplig signaturalgoritm där det behövs):
+Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det behövs):
 
+* us-east-2
 * us-east-1
 * us-west-1
 * us-west-2
@@ -58,8 +59,12 @@ Följande 11 AWS-standardregioner stöds (med lämplig signaturalgoritm där det
 * ap-southeast-1
 * ap-southeast-2
 * ap-northeast-1
+* ca-central-1
 * eu-central-1
 * eu-west-1
+* eu-west-2
+* eu-west-3
+* eu-nord-1
 * sa-east-1
 
 >[!NOTE]
@@ -83,7 +88,7 @@ Alla kolumner är tillgängliga, oavsett om de har data. En datafeed måste inne
 * **Ta bort escape-tecken**: När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Markera den här rutan om du vill att dessa tecken ska tas bort från feed-filerna.
 * **Komprimeringsformat**: Den typ av komprimering som används. Gzip genererar filer i `.tar.gz` format. Zip-utdatafiler i `.zip` format.
 * **Pakettyp**: En enda fil genererar en enda, potentiellt stor fil `hit_data.tsv` . Flera filer sidnumrerar data i 2 GB-segment (okomprimerade). Om flera filer är markerade och okomprimerade data för rapportfönstret är mindre än 2 GB, skickas en fil. Adobe rekommenderar att du använder flera filer för de flesta dataflöden.
-* **Kolumnmallar**: När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. Adobe tillhandahåller också flera mallar som standard.
+* **Kolumnmallar**: När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. Adobe har också flera mallar som standard.
 * **Tillgängliga kolumner**: Alla tillgängliga datakolumner i Adobe Analytics. Klicka [!UICONTROL Add all] för att inkludera alla kolumner i en datafeed.
 * **Inkluderade kolumner**: De kolumner som ska inkluderas i en datafeed. Klicka [!UICONTROL Remove all] för att ta bort alla kolumner från en datafeed.
 * **Hämta CSV**: Hämtar en CSV-fil som innehåller alla inkluderade kolumner.
