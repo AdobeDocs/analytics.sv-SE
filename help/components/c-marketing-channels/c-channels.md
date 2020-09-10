@@ -5,9 +5,9 @@ title: Hantera marknadsföringskanaler
 topic: Reports and analytics
 uuid: 9d367bb6-a17b-49b8-9cd5-24fac35ae982
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: f96be5fb0ba50b9b06aa65da7eff51c869e2a6f4
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '700'
 ht-degree: 3%
 
 ---
@@ -28,17 +28,9 @@ Här följer riktlinjer för hur du skapar kanaler:
 
 ## Förutsättningar {#prereqs}
 
-Kontakta kundtjänst om det behövs för att få hjälp med följande:
-
-* Aktivera alternativet **[!UICONTROL Conversion Level]** (e-handel) för rapportsviten i administrationskonsolen (Allmänna kontoinställningar).
-
-   Mer information finns i [Allmänna kontoinställningar](https://docs.adobe.com/content/help/sv-SE/analytics/admin/admin-tools/general-acct-settings-admin.html) i hjälpen för Analytics.
-
 * Ställ in åtkomst till dimensionerna för marknadsföringskanalen.
 
    See [Marketing Channels permissions](/help/components/c-marketing-channels/c-channel-report-access.md).
-
-* Se till att din kontohanterare har aktiverat **[!UICONTROL Channel Reports]** för din rapportsvit.
 
 ## Lägg till marknadsföringskanaler {#add-mktg-channels}
 
@@ -79,7 +71,7 @@ Det finns olika inställningar som kan användas för varje kanal på [!UICONTRO
 | Åsidosätt sista tryckkanalen | Gör att du kan välja om du vill åsidosätta en befintlig, beständig sista-beröringskanal med den valda kanalen. Om du markerar den här kryssrutan åsidosätts en befintlig sista-beröringskanal av alla kanaler (inklusive Direkt och Intern). Resultatet är att konverteringen tilldelas en kanal som kanske inte förtjänar någon kredit. Det här alternativet kan till exempel säkerställa att direktkanalen inte får krediter för konvertering om användaren tidigare har förvärvats via den naturliga sökkanalen. |
 | Kanaluppdelning | Gör att du kan dela upp en kanal med det här värdet. Du kan lägga till möjliga kanaluppdelningar (delkanaler) när du skapar [marknadsföringskanalklassificeringar](/help/components/c-marketing-channels/classifictions-mchannel.md). |
 | Typ | Anger hur användaren kom till din plats. Du kan välja Online eller Offline. Använd onlinekanaler för besökare som kommer via en sökmotor eller e-postkampanj. Offlinekanaler gäller besökare som har hittat er webbplats via tidningskuponger eller tidningsannonser. Offlinekanaler inkluderar vanligtvis data som importerats via rapportering av datakällor. See [Data Sources](https://docs.adobe.com/content/help/en/analytics/import/data-sources/datasrc-home.html). Se [Lägg till offlinedata](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
-| Färg | Endast rapporter och Analytics: Färgen som är associerad med den här marknadsföringskanalen. Den här färgen representerar kanalen i Marketing Channel-rapporten. |
+| Färg | Endast rapporter och analyser: Färgen som är associerad med den här marknadsföringskanalen. Den här färgen representerar kanalen i Marketing Channel-rapporten. |
 
 ### Åsidosätta bästa praxis
 
@@ -95,7 +87,7 @@ Adobe tillhandahåller flera fördefinierade kanaler under en [automatisk konfig
 
 >[!NOTE]
 >
->Adobe rekommenderar att du skapar rapporten i en rapportsserie som du kan använda som mall för testning. Du kan använda mallen för att tillämpa kanal- och regeluppsättningar globalt på en eller flera produktionsrapportsviter.
+>Adobe rekommenderar att du skapar rapporten i en rapportsserie som du kan använda som mall för testningsändamål. Du kan använda mallen för att tillämpa kanal- och regeluppsättningar globalt på en eller flera produktionsrapportsviter.
 >
 >Se [Använda inställningar för mallrapportssviten på flera rapportsviter](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 
