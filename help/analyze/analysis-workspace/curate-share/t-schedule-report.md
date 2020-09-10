@@ -5,9 +5,9 @@ title: Schemalagda projekt
 topic: Reports and analytics
 uuid: 9244d7b2-1b7e-4323-98ef-cf22de3b666a
 translation-type: tm+mt
-source-git-commit: 04b5c7af0ac0052d059bea86cae13aa7fb05fff3
+source-git-commit: 159de461edb07475d295d8c0dddb7c849addc043
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 1. Klicka på **Skicka nu**.
 1. (Valfritt) Klicka på **Visa schemaläggningsalternativ** för att ange ett leveransschema.
 
+![Skicka filen nu](assets/send-file-now.png)
+
 ## Skicka fil enligt schema
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
@@ -40,11 +42,15 @@ Så här skickar du en fil i ett återkommande schema till mottagarna via e-post
 1. Ange leveransfrekvens. Varje frekvens tillåter olika anpassningar.
 1. Klicka på **Skicka enligt schema**.
 
+![](assets/send-on-schedule.png)
+
 ## Schemalagd projekthanterare
 
 Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
 
 I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
+
+![](assets/scheduled-project-manager.png)
 
 Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 
