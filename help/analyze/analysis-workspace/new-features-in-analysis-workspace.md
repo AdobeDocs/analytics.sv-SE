@@ -3,7 +3,7 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 159de461edb07475d295d8c0dddb7c849addc043
 workflow-type: tm+mt
 source-wordcount: '7747'
 ht-degree: 96%
@@ -28,14 +28,14 @@ Nya funktioner som släpptes 18 juni 2020.
 | Funktion | Beskrivning |
 |--- |--- |
 | Attribution IQ: Algoritmisk attribuering | I modellen för algoritmisk attribuering i Analysis Workspace används statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. Tillgängligt för kunder som har Adobe Analytics Ultimate. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
-| Attribution IQ: Anpassade uppslagsfönster | Du kan nu konfigurera alla attribueringsmodeller i Attribution IQ så att de inkluderar kontaktytor från upp till 90 dagar före rapporteringsperioden. Detta ökar vanligen attribueringens exakthet för händelser som inträffar tidigt under rapporteringsperioden genom att redovisa interaktioner som inträffat under föregående månad(er). Tillgängligt för kunder som har Adobe Analytics Foundation, Select, Prime, Premium, Premium Attribution, Premium Complete och Ultimate. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
+| Attribution IQ: Anpassade uppslagsfönster | Nu kan du konfigurera alla attribueringsmodeller i Attribution IQ så att de omfattar kontaktytor från upp till 90 dagar före rapporteringsperioden. Detta ökar vanligen attribueringens exakthet för händelser som inträffar tidigt under rapporteringsperioden genom att redovisa interaktioner som inträffat under föregående månad(er). Tillgängligt för kunder som har Adobe Analytics Foundation, Select, Prime, Premium, Premium Attribution, Premium Complete och Ultimate. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
 | Projektroller för delade Workspace-projekt | När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
 | Skrivskyddade Workspace-projekt | Skrivskyddade Workspace-projekt kan delas med användare som Can view. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/view-only-projects.translate.html) |
 | Möjlighet att samredigera Workspace-projekt | Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
 | Uppdaterad tom panel | Den tomma panelen innehåller nu paneler och visualiseringar, vilket gör det enklare att välja det analysarbetsflöde som fungerar bäst för dig. |
 | Panelen Snabbinformation (25 juni 2020) | Quick Insights ger vägledning till icke-analytiker och nya användare av Analysis Workspace så att de snabbt och enkelt kan lära sig att svara på affärsfrågor. [Läs mer...](/help/analyze/analysis-workspace/c-panels/quickinsight.md) |
 | Panelen Analytics for Target i Workspace (25 juni 2020) | Med panelen Analytics for Target (A4T) kan du analysera dina Adobe Target aktiviteter och upplevelser i Analysis Workspace. [Läs mer …](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) |
-| Om sidan Arbetsyta | Sidan Om arbetsyta innehåller information om din Analysis Workspace-miljö, om dina Adobe Analytics-administratörer (om du behöver support) och ett sätt att ge produktfeedback. Den finns under Arbetsyta > Hjälp > Om arbetsyta. |
+| Om sidan Arbetsyta | Sidan Om arbetsyta innehåller information om din Analysis Workspace-miljö, om Adobe Analytics-administratörer (om du behöver support) och ett sätt att ge produktfeedback. Den finns under Arbetsyta > Hjälp > Om arbetsyta. |
 
 ## Maj 2020
 
@@ -345,7 +345,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
-   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
+   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, till exempel hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  >Visualiseringsinställning för ”100 % staplad”</a> </p> </td> 
@@ -515,7 +515,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ändringar av ingen/ospecificerad </p> </td> 
-   <td colname="col2"> <p>Ändrade hur Ingen/Ospecificerad fungerar i Analysis Workspace så att det stämmer överens med Rapporter &amp; Analytics, Segment Builder och menyn för dimensionsobjekt i Analysis Workspace. </p> <p>Det innebär att värdet visas som ospecificerat i stället för som inget i de flesta projekt i Analysis Workspace. </p> </td> 
+   <td colname="col2"> <p>Ändrade hur Ingen/Ospecificerad fungerar i Analysis Workspace så att det överensstämmer med Rapporter och analyser, Segment Builder och menyn för dimensionsobjekt i Analysis Workspace. </p> <p>Det innebär att värdet visas som ospecificerat i stället för som inget i de flesta projekt i Analysis Workspace. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -736,7 +736,7 @@ Nya funktioner som släpptes 20 juli 2017.
    <td colname="col2"> <p>När du tidigare loggade in med dina Experience Cloud-inloggningsuppgifter och navigerade till Analytics kunde du inte använda funktionen <span class="ignoretag"> <span class="uicontrol"> Dela </span>  &gt; <span class="uicontrol"> Hämta projektlänk</span> </span>. Vi har åtgärdat det här problemet. Du måste fortfarande spara projektet innan du kan klicka på alternativet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/curate-share/schedule-projects.md"  > Filter för utgångna projekt i hanteraren för schemalagda projekt </a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/curate-share/t-schedule-report.md"  > Filter för utgångna projekt i hanteraren för schemalagda projekt </a></b> </p> </td> 
    <td colname="col2"> <p>Du kan nu filtrera utgångna projekt i hanteraren för schemalagda projekt. Sedan kan du bestämma om du vill starta om eller ta bort dessa projekt. </p> </td> 
   </tr> 
  </tbody> 
