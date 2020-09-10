@@ -3,10 +3,10 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+source-git-commit: 476f13e80141e67c6e5a416778314a1a41224c80
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 3%
+source-wordcount: '2138'
+ht-degree: 4%
 
 ---
 
@@ -18,6 +18,12 @@ Cumulative release notes for [!DNL AppMeasurement] for JavaScript.
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
 Du kan hämta den senaste versionen av AppMeasurement i [Code Manager](/help/admin/admin/code-manager-admin.md).
+
+## Version 2.22.0
+
+Release Date: **August4, 2020**
+
+* Korrigera för saknad hänvisare när första träffen inte skickades på grund av användarens avanmälningsinställningar.
 
 ## Version 2.21.0
 
@@ -52,7 +58,7 @@ Releasedatum: **23 augusti 2019**
 
 ## Version 2.16.0
 
-Releasedatum: **15 augusti 2019**
+Release Date: **August 15, 2019**
 
 * Implementerat `sendBeacon` stöd i [!UICONTROL AppMeasurement] för avslutningslänkar. Om en träff används `sendBeacon` och sidan tas bort är begäran fortfarande slutförd. Detta är mycket användbart för avslutslänkar eftersom det är mer sannolikt att träffen når datainsamlingsservrar. (AN-175142)
 * ECID-/FID-värden cachelagras nu vid den första träffen trots att OptIn-inställningarna ändras. (AN-175142)
@@ -222,7 +228,7 @@ Uppdaterat: **11 november 2016**
 
 ## Version 1.6.4
 
-Uppdaterat: **18 augusti 2016**
+Uppdaterades: **18 augusti 2016**
 
 * Uppdaterat [!DNL AppMeasurement] för att läsa och skriva AMCV-cookies. (AN-127098)
 * Inkludering av Visitor API 1.7.0.
@@ -233,7 +239,7 @@ Uppdaterat: **18 augusti 2016**
 
 ## Version 1.6.3
 
-Uppdaterat: **4 augusti 2016**
+Uppdaterades: **4 augusti 2016**
 
 * Korrigerade ett problem där anslutningar för begäranden avslutades i [!DNL AppMeasurement] förtid. (AN-126448)
 
@@ -325,7 +331,7 @@ Release Date: **April 16, 2015**
 Releasedatum: **19 februari 2015**
 
 * Hanteringen av fördröjda spårningsanrop är konsekvent, vilket åtgärdar problem med säkerhetskopierade variabler under fördröjningen, till exempel klickade objekt.
-* Ändrad till att inte utföra automatisk spårning av referenser efter det första spårningsanropet, så att det andra, tredje osv. spårningsanropet (vanligtvis länkspårning) inte dubbelräknar referenten när *`s.referrer`* den ställdes in manuellt före det första spårningsanropet.
+* Ändrad till att inte utföra automatisk spårning av referenser efter det första spårningsanropet, så att det andra, tredje osv. spårningsanropet (vanligtvis länkspårning) inte dubbelräknar referenten när den *`s.referrer`* ställdes in manuellt före det första spårningsanropet.
 * Distributionszippen uppdaterades så att den innehöll Visitor API 1.3.5.
 
 ## Version 1.4.2
@@ -362,7 +368,7 @@ Releasedatum: **18 september 2014**
 
 ## Version 1.4
 
-Releasedatum: **21 augusti 2014**
+Release Date: **August 21, 2014**
 
 * Spårning av webbläsarplugin-program (frågeparameter) har tagits bort eftersom plugin-program inte längre rapporteras i version 15.`p`
 * Tillägg av **[!UICONTROL AudienceManagement]** Modulen i nedladdningszippen.
@@ -436,7 +442,7 @@ Releasedatum: **18 september 2013**
 
 ## Version 1.0.3
 
-Releasedatum: **15 augusti 2013**
+Release Date: **August 15, 2013**
 
 * Stöd för driftsättning via tagghantering i Adobe har lagts till.
 * Korrigerade ett problem som förhindrade att hierarkivariabler angavs för [!DNL AppMeasurement] objektet.
