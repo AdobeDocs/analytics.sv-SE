@@ -2,13 +2,14 @@
 product: analytics
 audience: end-user
 user-guide-title: Exporthandbok för Analytics
+breadcrumb-title: Export Guide
 user-guide-description: Get data out of Adobe Analytics. Use Data Feeds to receive an hourly or daily export of raw data. Retrieve a spreadsheet output of data using Data Warehouse.
 user-guide-url: /content/help/en/analytics/export/home.html
 translation-type: tm+mt
-source-git-commit: a6eddfc9cd326bfe0b774bf4fcd03614a73490c4
+source-git-commit: 4cfcb8a8c86d86d0a3a5b038406be9e2b1980ab3
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -69,6 +70,6 @@ ht-degree: 90%
       + [Skicka Adobe-data till ett externt FTP-konto med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-transfer.md)
       + [Skicka Data Warehouse-förfrågningar till SFTP-servrar](ftp-and-sftp/c-sftp/ftp-sftp-dw.md)
       + [Ansluta till Adobe via SFTP utan lösenord](ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
-+ [Analysis Workspace nedladdningar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/download-send.html)
++ [Analysis Workspace nedladdningar](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/download-send.html)
 + [Adobe Analytics API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
 + [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html)
