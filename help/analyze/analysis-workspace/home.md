@@ -4,9 +4,9 @@ title: Översikt över Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: 3fa9053bd9f9bec6e169230c3b9416cbe2284b54
+source-git-commit: a4e50c13ea8f567a38b0912ce7dc06d457c684a1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '540'
 ht-degree: 7%
 
 ---
@@ -24,15 +24,21 @@ Om du bara har några minuter kan du titta på den här korta översikten för a
 
 Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics på [experience.adobe.com/analytics](http://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
 
+![](assets/login-analytics.png)
+
 ## Använda självstudiekursen Utbildning {#training-tutorial}
 
-När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Börja med självstudiekursen genom att klicka på **Skapa nytt projekt** och sedan välja **Utbildning** i det nya projektmodala projektet.
+När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Börja med självstudiekursen genom att klicka **[!UICONTROL Create New Project]** och sedan välja **Utbildningskurs** i det nya projektet.
+
+![](assets/training-tutorial.png)
 
 ## Create a new project {#new-project}
 
 När självstudiekursen är klar kan du börja skapa ditt första projekt. Det **nya modala** projektet ger dig olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller ett [tomt mobilstyrkort](https://docs.adobe.com/content/help/en/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela analysen från webbläsaren eller Adobe Analytics-mobilappen för kontrollpaneler.
 
-Dessutom kan du börja analysera med färdiga **mallar**, antingen standardmallar som tillhandahålls av Adobe eller egna mallar som skapats av organisationen. Det finns flera olika mallar tillgängliga beroende på vilken analys eller vilket användningsfall du har tänkt dig. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) om de olika mallalternativen.
+![](assets/create-new-project.png)
+
+Du kan också börja analysera med färdiga **mallar**, antingen standardmallar som tillhandahålls av Adobe eller egna mallar som skapats av organisationen. Det finns flera olika mallar tillgängliga, beroende på vilken analys eller vilket användningsfall du har tänkt dig. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) om de olika mallalternativen.
 
 ## Bygg en analys {#analysis}
 
@@ -40,15 +46,21 @@ I ditt Workspace-projekt är **paneler, tabeller, visualiseringar och komponente
 
 ### Komponenter
 
-**Komponenter** är dimensioner, mått, segment eller datumintervall, som alla kan kombineras i en **frihandstabell** för att börja besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) innan du går in på analysen. När du har lärt dig komponentterminologin kan du börja dra och släppa för att [skapa en analys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) i en frihandstabell.
+**Komponenter** är dimensioner, mätvärden, segment eller datumintervall, som alla kan kombineras i en **[!UICONTROL Freeform table]** för att du ska kunna besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) innan du går in på analysen. När du har lärt dig mer om komponentterminologi kan du börja dra och släppa för att [skapa en analys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) i ett **[!UICONTROL Freeform table]**.
+
+![](assets/build-components.png)
 
 ### Visualiseringar
 
-**Visualiseringar**, som stapel- eller linjediagram, läggs sedan till ovanpå data för att visuellt förverkliga dem i ditt projekt. På den vänstra listen väljer du ikonen för mellanvisualisering för att se en fullständig lista över [tillgängliga visualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) .
+**Visualiseringar**, som stapel- eller linjediagram, läggs sedan till ovanpå data för att visuellt förverkliga dem. På den vänstra listen väljer du mittenikonen **[!UICONTROL Visualizations]** för att se en fullständig lista över [tillgängliga visualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) .
+
+![](assets/build-visualizations.png)
 
 ### Paneler
 
-**Paneler** används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. På den vänstra listen väljer du ikonen för de översta panelerna för att se en fullständig lista över [paneler](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html) som är tillgängliga.
+**Paneler** används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. På den vänstra listen väljer du den övre **[!UICONTROL Panels]** ikonen för att se en fullständig lista över [paneler](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html) som är tillgängliga.
+
+![](assets/build-panels.png)
 
 ## Ytterligare resurser {#resources}
 
