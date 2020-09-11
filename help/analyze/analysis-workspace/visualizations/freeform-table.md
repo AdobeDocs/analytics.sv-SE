@@ -1,13 +1,16 @@
 ---
-title: Frihandsregister
+title: Frihandstabell
 description: Läs mer om frihandsritningar och frihandsritningstabeller
 translation-type: tm+mt
-source-git-commit: ce06a5ca2caeb266c729947c76e93c611502e6d9
+source-git-commit: 677539632878655a6e573176321b59b531e1ab2c
+workflow-type: tm+mt
+source-wordcount: '535'
+ht-degree: 4%
 
 ---
 
 
-# Frihandsregister
+# Frihandstabell
 
 I Analysis Workspace är en frihandstabell inte bara en datatabell, utan även en interaktiv visualisering. Du kan dra och släppa en kombination av [komponenter](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) i rader och kolumner för att skapa en anpassad tabell för analysen. När varje komponent släpps uppdateras tabellen omedelbart så att du kan göra en snabb analys.
 
@@ -16,7 +19,7 @@ Du kan anpassa tabellen på flera olika sätt:
 * **Rader**
    * Varje dimensionsrad kan visa upp till 400 rader, innan sidnumreringen görs. Du kan anpassa fler rader till en enda skärm genom att justera projektets [visningsdensitet](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html).
    * Rader kan delas upp efter ytterligare komponenter. Om du vill dela upp flera rader samtidigt markerar du bara flera rader och drar sedan nästa komponent över de markerade raderna. Läs mer om [uppdelningar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html).
-   * Rader kan [filtreras](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/pagination-filtering-sorting.html) för att visa en reducerad uppsättning med objekt. Ytterligare inställningar finns under [Radinställningar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/table-settings.html).
+   * Rader kan [filtreras](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/pagination-filtering-sorting.html) för att visa en reducerad uppsättning med objekt. Ytterligare inställningar finns under [Radinställningar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/table-settings.html).
 
 * **Kolumner**
    * Komponenter kan staplas i kolumner för att skapa segmenterade mätvärden, tabbanalyser med mera.
@@ -40,7 +43,7 @@ Se hur Frihand tabellbyggaren fungerar [här](https://youtu.be/GUMWiJAmMGI).
 
 ## Exportera frihandstabelldata
 
-Data i en friformstabell kan kopieras från Analysis Workspace på några sätt:
+Data i en frihandstabell kan kopieras från Analysis Workspace på några sätt:
 
 * Högerklicka på tabellrubriken och välj **[!UICONTROL Copy to Clipboard]**. Den fullständiga (synliga) tabellen exporteras.
 * Markera specifika celler i tabellen, högerklicka och markera **[!UICONTROL Copy to Clipboard]** eller använd snabbtangenten Ctrl + C.
