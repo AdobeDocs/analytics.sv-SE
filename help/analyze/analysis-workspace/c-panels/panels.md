@@ -1,59 +1,65 @@
 ---
-description: 'null'
+description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: 68ff30395daf5cfb26d3e597ec4e6098a856fb51
+source-git-commit: 8cfd2106df3aed48136ec82bca7d2cb19a479d61
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 2%
+source-wordcount: '754'
+ht-degree: 3%
 
 ---
 
 
 # Översikt över paneler
 
-En panel är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i arbetsytan. Paneler är användbara när du vill ordna dina projekt efter tidsperioder, affärsenheter, geografi, osv. Följande sex typer av paneler finns i Analysis Workspace:
+En panel är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i arbetsytan. Paneler är användbara när du vill ordna dina projekt efter tidsperioder, rapportsviter eller användningsfall för analyser. Följande paneltyper är tillgängliga i Analysis Workspace:
 
-* [Tom panel](blank-panel.md)
-* [Panelen Snabbinsikter](quickinsight.md)
-* [Analyser för målpanelen](a4t-panel.md)
-* [Panelen Attribution](attribution.md)
-* [Frihandspanel](freeform-panel.md)
-* [Segmentjämförelsepanel](c-segment-comparison/segment-comparison.md)
+| Panelnamn | Beskrivning |
+|---|---|
+| [Tom panel](blank-panel.md) | Välj bland tillgängliga paneler och visualiseringar för att starta analysen. |
+| [Panelen Snabbinsikter](quickinsight.md) | Bygg snabbt ett frihandsbord och en medföljande visualisering för att analysera och hitta insikter snabbare. |
+| [Analyser för målpanelen](a4t-panel.md) | Analysera Target-aktiviteter och -upplevelser i Analysis Workspace. |
+| [Panelen Attribution](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
+| [Frihandspanel](freeform-panel.md) | Utför obegränsade jämförelser och uppdelningar och lägg sedan till visualiseringar för att berätta en utförlig databerättelse. |
+| [Panelen för samtidiga medieanvändare](media-concurrent-viewers.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
+| [Segmentjämförelsepanel](c-segment-comparison/segment-comparison.md) | Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader. |
 
-Panelerna Quick Insights, Blank och Frihand är bra platser att börja med, medan Analytics for Target, Attribution IQ och Segment Comparison passar in på mer avancerade analyser. En `"+"` knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
+Snabbinsikter, tomma paneler och frihandspaneler är bra platser att starta analysen på, medan Analytics for Target, Attribution IQ, Media Concurrent Viewer och Segment Comparison är mer avancerade analyser. En `"+"` knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
 
 Standardstartpanelen är friformspanelen, men du kan även göra den [tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standard.
 
-## Nedrullningsbara filter i paneler {#section_D2828EEDD52944528E87F470EAB581CF}
+## Panel report suite {#report-suite}
 
-Panelens listzon har funktioner för nedrullningsbar filtrering. Med dessa filter kan du interagera med projektdata på ett kontrollerat sätt så att du kan göra djupgående analyser, förenkla projekt och/eller dela insikter med andra.
+Tabeller och visualiseringar i en panel hämtar data från rapportsviten som valts i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [flera rapportsviter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel.
 
-Här är ett exempel på ett förenklat projekt: Anta att du har flera versioner av ett projekt/en panel för landsspecifik rapportering. Du kan nu komprimera dessa projekt/paneler till en enda panel och lägga till i en nedrullningsbar listruta i stället för att filtrera mellan olika datauppsättningar.
+## Panelkalender {#calendar}
 
-![](assets/dropdowns.png)
+Panelkalendern styr rapporteringsintervallet för tabeller och visualiseringar inom en panel. Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering eller paneldropzon åsidosätts panelkalendern.
 
-Tänk på detta:
+## Panelens dropzon {#dropzone}
 
-* Du kan släppa flera komponenter (eller dimensionsobjekt) och sedan växla mellan dem i en listruta för att filtrera panelinnehållet.
-* Du kan också skapa flera nedrullningsbara listor på samma panel.
-* Du kan anpassa titeln på den nedrullningsbara listan genom att klicka på titeln och ändra den, eller ta bort titeln helt genom att klicka på x:et bredvid den.
-* Du kan skapa nedrullningsbara filter med valfri komponenttyp: dimensioner, datumintervall, segment och mätvärden. Observera att datumintervall i listrutan alltid åsidosätter panelens datumintervall.
-* Vi behåller komponentfärgerna från vänster skena: gult för dimensionsobjektlistrutor, grönt för mätvärden, blått för segment och lila för datumintervall.
-* Dropzone kommer fortfarande att skapa träffnivåsegment för objekt som dras som segment. Du kan ändra dessa som vanligt genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
+Med panelens listruta kan du tillämpa segment- och listrutefilter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel. Titeln ovanför varje filter kan ändras genom att du klickar på redigeringspennan eller så kan du högerklicka för att ta bort den helt.
 
-**Så här skapar och använder du nedrullningsbara filter:**
+### Segmentfilter
 
-1. Markera ett objekt i den vänstra listen och släpp det **i panelens släppzon samtidigt som du håller ned tangenten**.
+Dra och släpp ett segment från den vänstra listen i panelens släppzon för att börja filtrera panelen.
 
-   ![](assets/create_dropdown.png)
+### Egna segmentfilter
 
-   Detta gör att komponenterna förvandlas till en nedrullningsbar lista i stället för till ett segment. (Du kan även lägga till segment genom att inte hålla ned tangenten.)
+Komponenter som inte tillhör segment kan också dras direkt till dropzone för att skapa **adhoc-segment**, vilket sparar tid och kraft åt att gå till Segment Builder. Segment som skapas på det här sättet definieras automatiskt som träffnivåsegment. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
 
-   ![](assets/dropdown.png)
+Adhoc-segment är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
 
-1. Välj ett av alternativen i listrutan om du vill ändra data i panelen nedan. (Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.)
-1. Om du till exempel även vill segmentera data efter marknadsföringskanal kan du lägga till en annan listruta som kallas&quot;marknadsföringskanal&quot;:
+### Nedrullningsbara filter {#dropdown-filter}
 
-   ![](assets/mc_dropdown.png)
+Förutom segmentfilter gör **nedrullningsbara filter** att du kan interagera med data på ett kontrollerat sätt. Du kan t.ex. lägga till ett nedrullningsbart filter för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
 
+Nedrullningsbara filter kan även användas för att konsolidera flera projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landsfilter.
+
+**Skapa och använda nedrullningsbara filter:**
+
+1. Om du vill skapa ett nedrullningsbart filter med hjälp av objekt i Dimensionen, till exempel värden i marknadsföringskanalen, klickar du på markeringen bredvid dimensionen i det vänstra fältet. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
+1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, segment eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
+1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
+
+[Titta på videon](https://www.youtube.com/watch?v=vpJywtsFVPI) och lär dig mer om hur du lägger till nedrullningsbara filter i ett projekt.
