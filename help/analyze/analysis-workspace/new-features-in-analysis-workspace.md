@@ -3,7 +3,7 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 159de461edb07475d295d8c0dddb7c849addc043
+source-git-commit: 8529a25cc98293421775207f8ccce77c7388ce6d
 workflow-type: tm+mt
 source-wordcount: '7747'
 ht-degree: 96%
@@ -1135,9 +1135,9 @@ Det nya segmentet visas i gruppen [!UICONTROL Segments] på panelen [!UICONTROL 
 
 *`Save As`* finns även för [!UICONTROL Calculated Metric Builder] och [!UICONTROL Date Range Builder].
 
-## Knappen Lägg till nytt segment {#section_85CC88C02C79456EA2B41F2BFBB64FC4}
+## Lägg till nytt segment
 
-Knappen **[!UICONTROL Add New Segment]** har lagts till på den plats där du drar och släpper segment i ett projekt.
+Släppzonen har lagts till så att du kan dra och släppa segment i ett projekt **[!UICONTROL Drop a Segment here]** .
 
 ![](assets/add-new-segment.png)
 
