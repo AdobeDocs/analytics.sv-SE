@@ -1,10 +1,10 @@
 ---
-description: Lista över kända begränsningar i Adobe Analysis Workspace och dess relaterade komponenter
+description: Förteckning över kända begränsningar i Adobe Analysis Workspace och dess tillhörande komponenter
 title: Kända begränsningar i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 8e8a6672b95da56bba4af0fbf66981f85cb36415
+source-git-commit: 00f36d8583ec9224337404cfd7fa020502d89c2d
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Kända begränsningar i Analysis Workspace
 
-Här är en lista över kända begränsningar i Analysis Workspace och dess relaterade komponenter:
+Här är en lista över kända begränsningar i Analysis Workspace och dess komponenter:
 
 ## Tabeller
 
@@ -35,7 +35,7 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess rela
 ## Komponenter > Segment
 
 * Vissa mätvärden och dimensioner kan inte segmenteras, t.ex. [!UICONTROL Occurrences][!UICONTROL Unique Visitors].
-* Vissa komponenter och operatorer är inte tillgängliga om ett segment skapas från Workspace (till skillnad från det som skapas från [!UICONTROL Components > Segments]). Exempel: IP-adress.
+* De ad hoc-segment som skapas i [panelens dropzone](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html) visas inte i den vänstra listen i Workspace eller segmentkomponenthanteraren, såvida de inte publiceras. Detta kan du göra genom att redigera segmentet och markera **[!UICONTROL Make this segment public]**.
 
 ## Komponenter > Beräknade mått
 
@@ -53,8 +53,8 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess rela
 
 ## Komponenter > Rapportinställningar
 
-* Vissa av inställningarna på [!UICONTROL Report Settings] sidan gäller inte. I Analysis Workspace används endast de [!UICONTROL Language/Currency/Encoding] inställningar som finns längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding]och [!UICONTROL CSV Separator Character].
+* Vissa av inställningarna på [!UICONTROL Report Settings] sidan gäller inte. Analysis Workspace använder bara inställningarna [!UICONTROL Language/Currency/Encoding] längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding]och [!UICONTROL CSV Separator Character].
 
 ## Attribution IQ
 
-* En delmängd av mätvärden stöds inte i [!UICONTROL Attribution IQ]. En fullständig lista finns i Vanliga frågor om [attribuering](../attribution/faq.md).
+* En delmängd av mätvärden stöds inte i [!UICONTROL Attribution IQ]. En fullständig lista finns i Vanliga frågor om [Attribution IQ](../attribution/faq.md).
