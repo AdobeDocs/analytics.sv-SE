@@ -2,9 +2,9 @@
 title: Härleda data som påverkats av händelser
 description: Använd beräknade värden för att korrigera trenddata som påverkas av en händelse.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 8e193de6dbb51cb640218a0c7b1b501d4f1eaa27
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
@@ -12,11 +12,15 @@ ht-degree: 4%
 
 # Härleda data som påverkats av händelser
 
-Om du har data [som påverkas av en händelse](overview.md)kan du använda beräknade värden för att härleda trendvärden under händelseperioden. Om du till exempel har haft en händelse som orsakade en 25-procentig dataminskning kan du använda den som multiplikator i ett beräknat mått.
+Om du har data [som påverkas av en händelse](overview.md)kan du använda beräknade värden för att härleda beräknade värden under händelseperioden. Om du till exempel har haft en händelse som orsakade en 25-procentig dataminskning kan du använda den som multiplikator i ett beräknat mått.
+
+De här stegen fungerar bäst när du förstår effekten av en händelse, både från en segmentering och en datumjämförelse. Se till att följa [Jämför datum som påverkas av en händelse med tidigare intervall](compare-dates.md) och [Uteslut specifika datum i analysen](segments.md) innan du följer den här sidan.
 
 >[!NOTE]
 >
->De här stegen fungerar bäst när du förstår effekten av en händelse, både från en segmentering och en datumjämförelse. Se till att följa [Jämför datum som påverkas av en händelse med tidigare intervall](compare-dates.md) och [Uteslut specifika datum i analysen](segments.md) innan du följer den här sidan.
+>Denna metod är en uppskattning baserad på en specifik uppsättning indata och datumintervall. Det kommer inte att vara en heltäckande lösning för alla användningsfall eller datasegment. Dessutom kräver det här tillvägagångssättet att det berörda datumintervallet har minst 1 träff att beräkna från.
+
+Så här skapar du ett uppskattat beräknat mått för den påverkade tidsperioden:
 
 1. Skapa två segment för&quot;Påverkade dagar&quot; och&quot;Uteslut påverkade dagar&quot;, enligt beskrivningen under [Uteslut specifika datum i analysen](segments.md).
 2. Navigera till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]**.
