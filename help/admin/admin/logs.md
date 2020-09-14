@@ -4,10 +4,10 @@ title: Loggar
 topic: Admin tools
 uuid: d5d4723d-f4cf-403e-ae9c-76d7faed2be6
 translation-type: tm+mt
-source-git-commit: 3603722ee3cbaf64b6d7bc0cbfa4af176f85a87a
+source-git-commit: b7f7fd7511167e70c66c0a2636880234e23bcbd5
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 3%
+source-wordcount: '598'
+ht-degree: 2%
 
 ---
 
@@ -40,41 +40,41 @@ Med [!UICONTROL Usage and Access Log] den kan du utvärdera rapportanvändningen
 
 | Händelsetyp | Beskrivning |
 | --- |--- |
-| Ingen kategori |  |
-| Inloggningen misslyckades |  |
-| Inloggningen har slutförts |  |
-| Administratörsåtgärd |  |
-| Ändring av säkerhetsinställning |  |
-| Rapporten har visats |  |
-| Rapporten har hämtats |  |
-| Aviseringen har skickats |  |
-| Användaråtgärd |  |
-| Verktyget visas |  |
-| Omniture Action |  |
-| Lösenordsåterställning |  |
-| BookMarks |  |
-| Kontrollpaneler |  |
-| Larm |  |
-| Kalenderhändelser |  |
-| Målgrupper |  |
-| Rapportinställningar |  |
-| Schemalagda rapporter |  |
-| Exkludera efter IP |  |
-| Namnge sidor |  |
-| Klassificeringar |  |
-| Datakällor |  |
-| Arbetsyteprojekt |  |
-| Segment |  |
-| Beräknade mått |  |
-| Datumintervall |  |
-| Virtual Report Suite |  |
-| Bidragsanalys |  |
+| Ingen kategori | Kan vara vilken händelsetyp som helst. |
+| Inloggningen misslyckades | Användarinloggningsprocessen misslyckades. |
+| Inloggningen har slutförts | Användaren har loggat in. |
+| Administratörsåtgärd | En administratörsåtgärd inträffade, till exempel redigering av en rapportserie, ändring av företagsinställningar, skapande av användare. |
+| Ändring av säkerhetsinställning | En säkerhetsinställning har ändrats. |
+| Rapporten har visats | En rapport om rapporter och analyser har visats. |
+| Rapporten har hämtats | En rapport för rapporter och analyser hämtades. |
+| Aviseringen har skickats | En varning skickades. |
+| Användaråtgärd | Användarinformationen har redigerats. |
+| Verktyget visas | Ett verktyg visades. |
+| Omniture Action | En åtgärd utfördes av Adobe. |
+| Lösenordsåterställning | Ett lösenord har återställts. |
+| BookMarks | Ett bokmärke hanterades. |
+| Kontrollpaneler | En instrumentpanel hanterades. |
+| Larm | En avisering hanterades. |
+| Kalenderhändelser | En kalenderhändelse hanterades. |
+| Målgrupper | Ett mål hanterades. |
+| Rapportinställningar | En rapportinställning hanterades. |
+| Schemalagda rapporter | En schemalagd rapport hanterades. |
+| Exkludera efter IP | IP-inställningen ändrades. |
+| Namnge sidor | Föråldrat. |
+| Klassificeringar | En klassificering hanterades. |
+| Datakällor | En datakälla hanterades. |
+| Arbetsyteprojekt | Ett Workspace-projekt har visats eller redigerats. |
+| Segment | Ett segment skapades/redigerades. |
+| Beräknade mått | Ett beräknat mått skapades/redigerades. |
+| Datumintervall | Ett datumintervall skapades/redigerades. |
+| Virtual Report Suite | En virtuell rapportsvit skapades/redigerades. |
+| Bidragsanalys | Ett avgiftsanalysjobb kördes. |
 | Begäran om Excel-datablock |  |
 | Excel-inloggningsfel |  |
 | Excel-inloggning klar |  |
 | Fel vid mobilinloggning |  |
 | Inloggning på mobilen lyckades |  |
-| API-metod |  |
+| API-metod | Ett API-anrop gjordes. |
 
 
 ## Ändringslogg för Report Suite {#section_3864966639414BBEA871F4D0352F56B6}
