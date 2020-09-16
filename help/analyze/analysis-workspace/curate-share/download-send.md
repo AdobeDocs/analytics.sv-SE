@@ -3,10 +3,10 @@ description: Du kan hämta data från Analysis Workspace genom att kopiera dem e
 title: Hämta PDF- eller CSV-filer
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 1cad7c4338f346dddb12f52b49040d3606801646
+source-git-commit: c09923a3f946e43f8287d477eb6df928f001b32e
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 1%
+source-wordcount: '957'
+ht-degree: 0%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Hämta PDF- eller CSV-filer från Workspace
 
 Det finns flera olika sätt att exportera data från Analysis Workspace, beroende på vilken datauppsättning du vill analysera utanför verktyget och vem som behöver få informationen. Exporterade data kan vara i form av kopierade data, CSV- eller PDF-filer. En PDF-fil är vanligtvis att föredra om du vill att visualiseringar ska ingå i filen, medan en CSV-fil (eller kopierade data) är att föredra om du bara vill ha oformaterade textdata.
-
->[!IMPORTANT]
->
-> Vissa alternativ som hänvisas till på den här sidan, till exempel **Hämta objekt som CSV**, är för närvarande i begränsad testning. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html)
 
 ## Ladda ned projekt som CSV eller PDF {#download-project}
 
