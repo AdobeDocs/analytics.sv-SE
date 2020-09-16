@@ -4,7 +4,7 @@ title: Loggar
 topic: Admin tools
 uuid: d5d4723d-f4cf-403e-ae9c-76d7faed2be6
 translation-type: tm+mt
-source-git-commit: b7f7fd7511167e70c66c0a2636880234e23bcbd5
+source-git-commit: fff1fb97f9224b7e68f85b24ac440083503df54f
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 2%
@@ -39,7 +39,7 @@ Med [!UICONTROL Usage and Access Log] den kan du utvärdera rapportanvändningen
 ### Händelsetyper
 
 | Händelsetyp | Beskrivning |
-| --- |--- |
+| --- | --- |
 | Ingen kategori | Kan vara vilken händelsetyp som helst. |
 | Inloggningen misslyckades | Användarinloggningsprocessen misslyckades. |
 | Inloggningen har slutförts | Användaren har loggat in. |
