@@ -5,10 +5,10 @@ title: Snabbtangenter (kortkommandon) som är tillgängliga i Analysis Workspace
 topic: Reports and analytics
 uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
 translation-type: tm+mt
-source-git-commit: bbc137a8914afeba02af326fb3bb9b92c0f16eb3
+source-git-commit: a0ace35eb1e622b5410c1a0a2d0b18245582ef2c
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 4%
+source-wordcount: '285'
+ht-degree: 5%
 
 ---
 
@@ -17,14 +17,16 @@ ht-degree: 4%
 
 Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys och demokratisering.
 
-Obs! `CTRL` = Windows och `command` = Mac
+Obs!
+* `Ctrl` = Windows och `Command` = Mac
+* `Alt` = Windows och `Option` = Mac
 
 ## Navigeringsåtgärder
 
 | Åtgärd | Genväg |
 |---|---|
-| Skapa nytt projekt | Ctrl (eller cmd) + Skift + p |
-| Öppna befintligt projekt | ctrl (eller cmd) + o |
+| Skapa nytt projekt | Ctrl + Skift + p |
+| Öppna befintligt projekt | ctrl + o |
 | Gå till rutan Paneler | Alt + Skift + 1 |
 | Gå till fönstret Visualiseringar | Alt + Skift + 2 |
 | Gå till rutan Komponenter | Alt + Skift + 3 |
@@ -38,17 +40,17 @@ Obs! `CTRL` = Windows och `command` = Mac
 | Åtgärd | Genväg |
 |---|---|
 | Sök i vänster list | ctrl + / |
-| Skapa en avisering | Ctrl (eller cmd) + Skift + a |
-| Skapa beräknat mått | Ctrl (eller cmd) + Skift + c |
-| Skapa ett datumintervall | Ctrl (eller cmd) + Skift + d |
-| Skapa ett segment | Ctrl (eller cmd) + Skift + e |
+| Skapa en avisering | Ctrl + Skift + a |
+| Skapa beräknat mått | Ctrl + Skift + C |
+| Skapa ett datumintervall | Ctrl + Skift + D |
+| Skapa ett segment | Ctrl + Skift + e |
 | Rensa alla | alt + w |
-| Kopiera | ctrl (eller cmd) + c |
-| Gör om | Ctrl (eller cmd) + Skift + z |
-| Ångra | ctrl (eller cmd) + z |
+| Kopiera | ctrl + c |
+| Gör om | Ctrl + Skift + z |
+| Ångra | Ctrl + z |
 | Uppdatera komponenter | Alt + Skift + R |
 | Uppdatera projekt | alt + r |
-| Ange som landningssida | Ctrl (eller cmd) + Skift + l |
+| Ange som landningssida | Ctrl + Skift + l |
 
 ## Lägga till paneler och visualiseringar
 
@@ -69,13 +71,13 @@ Obs! `CTRL` = Windows och `command` = Mac
 
 | Åtgärd | Genväg |
 |---|---|
-| Spara projekt | ctrl (eller cmd) + s |
-| Spara projekt som | Ctrl (eller cmd) + Skift + s |
+| Spara projekt | Ctrl + s |
+| Spara projekt som | Ctrl + Skift + S |
 | Spara som mall | alt + t |
-| Hämta som CSV | Ctrl (eller cmd) + Skift + V |
-| Hämta som PDF | Ctrl (eller cmd) + Skift + b |
-| Kuratera projektdata | Ctrl (eller cmd) + Skift + g |
-| Dela projekt | ctrl (eller cmd) + g |
+| Hämta som CSV | Ctrl + Skift + V |
+| Hämta som PDF | Ctrl + Skift + b |
+| Kuratera projektdata | Ctrl + Skift + g |
+| Dela projekt | Ctrl + g |
 | Hämta projektlänk | alt + l |
 | Skicka fil nu | alt + s |
 | Skicka fil enligt schema | Skift+Alt+s |
