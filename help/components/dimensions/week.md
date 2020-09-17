@@ -2,9 +2,9 @@
 title: Vecka
 description: Veckan som måttet inträffade på.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: a94b8e090b9a3c75a57fd396cac8486bba2e5d79
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Veckodimensionen rapporterar veckan om att ett visst mått har inträffat. Den f
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten inkluderar datumet (månad, dag och år) för den första dagen i veckan.
+I Analysis Workspace omfattar dimensionsobjekten datumet (månad, dag och år) för den första dagen i veckan.
+
+I Data warehouse omfattar dimensionsobjekten numrerade veckor baserat på begärans datumintervall. Den första hela veckan är till exempel `"Week 1"`. Om en begäran innehåller en partiell vecka grupperas data i dimensionsposten `"Week 0"`.
