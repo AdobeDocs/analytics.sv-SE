@@ -1,18 +1,25 @@
 ---
 description: Konfigurera användare och lär dig mer om datainsamling.
-title: Administration
+title: Administrering
 uuid: 12f90223-139f-4a8d-bfd3-5cd9af7489d2
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '711'
+ht-degree: 2%
 
 ---
 
 
-# Administration
+# Administrering
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Konfigurera användare och lär dig mer om datainsamling.
 
-Mer [!DNL Admin Console] information finns i [Analytics Reference](https://docs.adobe.com/content/help/en/analytics/landing/home.html).
+Mer [!DNL Admin Console] information finns i [Analytics Reference](https://docs.adobe.com/content/help/sv-SE/analytics/landing/home.html).
 
 ## Användarlicenser {#concept_C1440741C77C471EB38A243B013EA620}
 
@@ -28,7 +35,7 @@ När antalet inloggade användare överstiger antalet tillgängliga licenser vis
 
 ## Bevilja användarlicenser {#task_22AE669703EC48BA9685414538D8B1FA}
 
-Steg som beskriver hur lokala Rapporter- och Analytics-administratörer kan bevilja användarlicenser via behörighetssystemet.
+Steg som beskriver hur lokala Reports and Analytics-administratörer kan bevilja användarlicenser via behörighetssystemet.
 
 <!-- 
 
