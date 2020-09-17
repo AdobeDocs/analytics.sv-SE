@@ -2,9 +2,9 @@
 description: Introduktion till Ad Hoc Analysis
 title: Ad Hoc Analysis – översikt
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '152'
 ht-degree: 6%
 
 ---
@@ -16,7 +16,7 @@ Ad Hoc Analysis hjälper er att identifiera värdefulla kundsegment med obegrän
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 ## Nya och populära ämnen
 
