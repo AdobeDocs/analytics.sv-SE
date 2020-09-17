@@ -5,7 +5,7 @@ title: Snabbtangenter (kortkommandon) som är tillgängliga i Analysis Workspace
 topic: Reports and analytics
 uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
 translation-type: tm+mt
-source-git-commit: a0ace35eb1e622b5410c1a0a2d0b18245582ef2c
+source-git-commit: f0bb68488bbd987203a1abf0f4fbc0fdb3d4824e
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 5%
@@ -24,7 +24,7 @@ Obs!
 ## Navigeringsåtgärder
 
 | Åtgärd | Genväg |
-|---|---|
+| --- | --- |
 | Skapa nytt projekt | Ctrl + Skift + p |
 | Öppna befintligt projekt | ctrl + o |
 | Gå till rutan Paneler | Alt + Skift + 1 |
@@ -35,10 +35,10 @@ Obs!
 | Gå till nästa panel | Alt + Högertangent |
 | Gå till föregående panel | Alt + Vänsterpil |
 
-## Analysåtgärder
+## Ljudåtgärder
 
 | Åtgärd | Genväg |
-|---|---|
+| --- | --- |
 | Sök i vänster list | ctrl + / |
 | Skapa en avisering | Ctrl + Skift + a |
 | Skapa beräknat mått | Ctrl + Skift + C |
@@ -55,7 +55,7 @@ Obs!
 ## Lägga till paneler och visualiseringar
 
 | Åtgärd | Genväg |
-|---|---|
+| ---|---|
 | Ny analys för målpanelen | alt + g |
 | Ny attributpanel | alt + e |
 | Ny tom panel | alt + b |
@@ -70,7 +70,7 @@ Obs!
 ## Demokratiseringsåtgärder
 
 | Åtgärd | Genväg |
-|---|---|
+| --- | --- |
 | Spara projekt | Ctrl + s |
 | Spara projekt som | Ctrl + Skift + S |
 | Spara som mall | alt + t |
