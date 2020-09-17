@@ -5,9 +5,9 @@ title: Skapa projekt – översikt
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 68246d319bdfa27a0fabda493b3550085d2e5528
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '732'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
-Du kan skapa ett robust Analytics-projekt baserat på valfri kombination av visualiseringar, rapportkomponenter och datatabeller. Här finns många tabellverktyg från Ad Hoc Analysis i Analytics.
+Ni kan skapa ett robust Analytics-projekt baserat på valfri kombination av visualiseringar, rapportkomponenter och datatabeller. Här ingår många av tabellutvecklingsfunktionerna från Ad Hoc Analysis i Analytics.
 
 I Analysis Workspace kan du jämföra och dela upp data på sätt som inte tidigare varit möjligt. Du kan till exempel konfigurera rankade rapporter och göra omedelbara iterativa ändringar i datafrågan, och sedan få tillgång till och ändra värdena på rapportnivå.
 
@@ -33,14 +33,18 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 
 | Element | Beskrivning |
 |---|---|
-| Projektmallar [](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md) | Du kan använda de här förifyllda projektmallarna som de är eller anpassa dem efter dina behov (genom att till exempel lägga till eller ersätta mått eller visualiseringar) och spara dem under ett nytt namn. |
 | [Skapa nytt projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden. |
 | Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt och du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
-| Visa självstudiekurser | Tar dig till [YouTube-videor](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)i Analysis Workspace. |
+| Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
+| Visa Tutorials | Gå till [Analysis Workspace YouTube-videor](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS). |
 | Namn | Namn på Workspace-projektet. |
-| Skapad av | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
+| Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
+| Typ | Anger om det här är ett arbetsyteprojekt eller ett [Mobile Scorecard](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/mobapp/home.html). |
+| Projektroll | Anger om du är ägare, om du kan redigera projektet eller om det är ett duplicerat projekt. |
 | Taggar | Taggar som tillämpades på projektet, antingen i komponenthanteraren för projekt eller under **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]**. |
 | Senast ändrad | Datum och tid när projektet senast ändrades. |
+| Mina favoritprojekt | Om du vill markera ett projekt som favorit öppnar du projektet och klickar på stjärnan bredvid namnet. Den visas i den här listan nästa gång du öppnar Arbetsyta. |
+| Projekt som visas ofta | Listar alla projekt som du öppnar ofta, så att de blir lätta att komma åt. |
 
 ## Projektinformation och inställningar {#section_63773D0B9E4543E88068ECECB9EEB4C6}
 
@@ -87,7 +91,7 @@ Undermenyerna innehåller följande alternativ.
 
 ## Vänster linje {#section_271295C26EC840ABB2A8E7EC0498B60E}
 
-Den vänstra listen har tre ikoner som ger dig åtkomst till paneler, [visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och [komponenter](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)(dimensioner, mått, segment, dataintervall) med ett enda klick:
+Den vänstra listen har tre ikoner som ger dig åtkomst till paneler, [visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)och [komponenter](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)(Dimensioner, mått, segment, dataintervall) med ett enda klick:
 
 ![](assets/panels.png) ![](assets/visualizations.png) ![](assets/components.png)
 
