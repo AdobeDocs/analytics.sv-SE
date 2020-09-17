@@ -3,12 +3,19 @@ description: Tid är en rapportdimension som är användbar för trender över t
 title: Tid
 uuid: a6efbf80-342c-4aeb-80f3-91a3dbdbd33c
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 2%
 
 ---
 
 
 # Tid
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Tid är en rapportdimension som är användbar för trender över timmar, dagar, veckor och datumintervall. En produktrapport visar till exempel hur mycket intäkter en produkt har haft under det valda datumintervallet. Du kan lägga till en dagdimension för att se trenden för varje dag i rapporteringsperioden. Med Tid får du detaljinställningar för Timme, Dag, Vecka, Månad, Kvartal och År. Förinställningar för datumintervall innehåller inställningar som Idag, Gårdagen och Senaste 7 dagarna.
 
@@ -34,5 +41,5 @@ r_time_panel.xml
 
 | Fält | Definition |
 |--- |--- |
-| Datumintervall | Gör att du kan markera en eller flera tidsperioder och dra dem till tabellverktyget eller rapportstödrastret. Visa tidsperioder som uppdelningar i rader eller som kolumnrubriker. Du kan välja perioder som dag, vecka, månad eller anpassade datumintervall. Om du använder en anpassad kalender i SiteCatalyst ärver rapportsviterna dessa inställningar. |
+| Datumintervall | Gör att du kan markera en eller flera tidsperioder och dra dem till tabellverktyget eller rapportstödrastret. Visa tidsperioder som uppdelningar i rader eller som kolumnrubriker. Du kan välja perioder som dag, vecka, månad eller anpassade datumintervall. Om du använder en anpassad kalender i SiteCatalyst ärver rapportsviterna de inställningarna. |
 | Trender | Gör att du kan trendrapportera över timme, dag, vecka, månad och så vidare. När du drar objekt från Trending till rapporten, visar du data över en tidsinställning som styrs av det angivna datumintervallet från kalendern. |
