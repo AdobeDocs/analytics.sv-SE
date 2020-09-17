@@ -3,9 +3,9 @@ description: Använd tabellverktyget för att skapa en rapport med valfri konfig
 title: Table Builder
 uuid: d5dbd05e-9ebd-4571-b3a5-3856c28b65f3
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '759'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 Använd tabellverktyget för att skapa en rapport med valfri konfiguration av mått, dimensioner och segment. Du kan till exempel lägga till flera mått i tabellverktyget och sedan använda segment på alla samtidigt. Du kan använda objekt från verktygspanelerna som rader och uppdelningar, eller som kolumner, och enkelt rotera tabellen för en annan vy. När du har skapat tabellen kan du interagera direkt med den resulterande datatabellen för ytterligare analys. Tänk på att när du genererar en datatabell från Table Builder körs en fråga och en ny datatabell skapas.
 
