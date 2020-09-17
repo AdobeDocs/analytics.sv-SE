@@ -3,12 +3,19 @@ description: Lär dig mer om de olika åtgärder du kan utföra på en rapport, 
 title: Konfigurera befintliga rapporter
 uuid: 5c7bb66a-a9a2-49fe-ba98-1a99a922f6b1
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '1019'
+ht-degree: 2%
 
 ---
 
 
 # Konfigurera befintliga rapporter
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Lär dig mer om de olika åtgärder du kan utföra på en rapport, som att konfigurera diagram, diagram, uppdelningar och extrahera data.
 
@@ -209,10 +216,10 @@ I Rapporter och analyser kan du ange att ett fält ska innehålla användar-ID-d
 
 **Extrahera besökar-ID:n**
 
-1. Lägg till ett datalagersegment i rapporten.
+1. Lägg till ett Data warehouse-segment i rapporten.
 1. Högerklicka på segmentet och välj **[!UICONTROL Extract Visitor IDs]**.
 
-   Datalagerprogrammet startas.
+   Programmet Data warehouse startas.
 1. Skriv filternamnet på [!UICONTROL Data Warehouse Request] fliken.
 1. Klicka på **[!UICONTROL Request this Report]**.
 
@@ -262,6 +269,6 @@ c_reports_custom.xml
 
  -->
 
-Anpassade rapporter kan tillföra mer värde till er som analytiker, eftersom de har bedömts vara värdiga att vara med på allas marknadsföringsrapporter och analysmeny. Om du ser rapporter i ditt gränssnitt som inte matchar någon annans (till exempel under Utbildning), kan din administratör ha konfigurerat några av dessa anpassade rapporter.
+Anpassade rapporter kan tillföra mer värde till dig som analytiker eftersom de har bedömts vara värdiga att vara med på allas marketing reports and analytics-meny. Om du ser rapporter i ditt gränssnitt som inte matchar någon annans (till exempel under Utbildning), kan din administratör ha konfigurerat några av dessa anpassade rapporter.
 
 Dessutom kan du spara rapporter som är viktiga för dig. Dessa rapporter kallas bokmärken. Du kan också lägga in flera rapporter på en arbetsyta för att snabbt få en överblick över de viktigaste rapporterna. Dessa kallas kontrollpaneler och är även användarspecifika. Gränssnittet visar ett fält ovanför diagrammet med bokmärkena och kontrollpanelerna.
