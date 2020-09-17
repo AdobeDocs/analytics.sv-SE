@@ -2,7 +2,10 @@
 description: Hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: f0bb68488bbd987203a1abf0f4fbc0fdb3d4824e
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 0%
 
 ---
 
@@ -16,17 +19,17 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 
 ![](assets/total-row.png)
 
-## Visa total inställning
+## Visa total inställning {#display-total}
 
 Under **[!UICONTROL Column Settings]** finns alternativ för **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte är rimliga, t.ex. i vissa [beräkningsscenarier](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
 
 ![](assets/column-settings-total.png)
 
-## Inställningar för totalt antal statiska rader
+## Inställningar för totalt antal statiska rader {#static-row-total}
 
 [Statiska radsummor](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html) fungerar annorlunda och styrs under **[!UICONTROL Row Settings]**.
 
-* **[!UICONTROL Show sum of current rows as the total]** - här visas en summa av raderna i tabellen på klientsidan, vilket innebär att summan **inte** kan deduplicera mått som besök eller besökare.
+* **[!UICONTROL Show sum of current rows as the total]** - här visas en summa av raderna i tabellen på klientsidan, vilket innebär att summan **inte** avduplicerar mått som besök eller besökare.
 * **[!UICONTROL Show Grand Total]** - detta visar en summa på serversidan, vilket innebär att summan kommer att ta bort dubbletter av statistik som besök eller besökare.
 
 ![](assets/static-rows.png)
