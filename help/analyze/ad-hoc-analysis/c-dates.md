@@ -3,15 +3,19 @@ description: I kalendern kan du ange datum och datumintervall eller välja en f�
 title: Datum och datumintervall
 uuid: 8f099db7-e74b-4384-ac46-61a545f1dd62
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '469'
 ht-degree: 2%
 
 ---
 
 
 # Datum och datumintervall
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 I kalendern kan du ange datum och datumintervall eller välja en förinställning. Du kan göra kalenderval på projekt-, arbetsyta- och rapportnivåer. Ett projekts datumintervall är standarddatum. Ett arbetsytans datumintervall åsidosätter dock projektets datumintervall. På samma sätt åsidosätter datumintervallet för en rapport datuminställningarna för en arbetsyta och ett projekt. Du kan inte välja ett datumintervall utanför ditt datatillgänglighetsintervall.
 
@@ -33,7 +37,7 @@ När du väljer ett datumintervall när du skapar ett projekt kommer förkonfigu
 
 ## Äldre datumsegment {#concept_53AA34DB3CE647608CAF4B41D6EAF45E}
 
-Under andra halvåret 2010 började Adobe migrera rapporteringsprogram till en enhetlig dataplattform för förbättrad bearbetning och lagring. Data som finns före migreringen betraktas som äldre (eller historiska) data som begränsas av en kvartal- eller årsgräns.
+Under det andra halvåret 2010 började Adobe migrera rapporteringsprogram till en enhetlig dataplattform för förbättrad bearbetning och lagring. Data som finns före migreringen betraktas som äldre (eller historiska) data som begränsas av en kvartal- eller årsgräns.
 
 <!-- 
 
