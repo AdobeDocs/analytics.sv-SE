@@ -1,28 +1,35 @@
 ---
-description: Visa och segmentera trafikdata för Adobe Target i en Analytics-rapport.
+description: Visa och segmentera era trafikdata från Adobe Target i en Analytics-rapport.
 title: Adobe Target
 topic: Ad hoc analysis
 uuid: 420da093-9d0d-454e-a193-e0595f36d3b1
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '157'
+ht-degree: 5%
 
 ---
 
 
 # Adobe Target
 
-Visa och segmentera trafikdata för Adobe Target i en Analytics-rapport.
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+
+Visa och segmentera era trafikdata från Adobe Target i en Analytics-rapport.
 
 ## Adobe Target {#topic_EBC899DB84A84780A1B8EE95C6C4CF18}
 
-Visa och segmentera trafikdata för Adobe Target i en Analytics-rapport.
+Visa och segmentera era trafikdata från Adobe Target i en Analytics-rapport.
 
 Exempel:
 
-* Mät framgången för Adobe Target-kampanjer med hjälp av nyckeltal för analyser.
+* Mät hur framgångsrika Adobe Target-kampanjer är med hjälp av nyckeltal från Analytics.
 * Dela upp Target-kampanjer och hämta data med Analytics-konverteringsvariabler.
-* Dela upp andra rapporter och analysrapporter med Target-kampanjer och hämta trafikdata.
+* Dela upp andra Reports and Analytics-rapporter med Target-kampanjer och hämta trafikdata.
 
-Genom att utnyttja data i rapporter och analyser kan ni fördjupa er i era Target-recept med hjälp av uppdelningar och upptäcka högpresterande segment som är idealiska för framtida tester och potentiellt målinriktade kampanjer. Rapporterna och analysrapporten visar konverteringsdata i stället för målets konverteringsdata.
+Genom att utnyttja data i Reports and Analytics kan ni fördjupa er i era Target-recept med hjälp av uppdelningar och upptäcka högpresterande segment som är idealiska för framtida tester och potentiellt målinriktade kampanjer. Reports and Analytics-rapporten visar konverteringsdata i stället för målets konverteringsdata.
 
-Mer information finns i hjälpsystemet för [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) .
+Mer information finns i [Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html) hjälpsystem.
