@@ -4,9 +4,9 @@ title: Schemaläggningshanterare
 topic: Ad hoc analysis
 uuid: 82a054ef-109d-414d-a6e1-e09ee57c163f
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '979'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 Du kan anpassa leveransschemat för rapporter. Du kan stoppa leveransen vid en viss tidpunkt eller ange hur många gånger du vill skicka en rapport. Nya scheman använder det datumintervall som definieras i rapporten. Om du till exempel skapar en rapport för de senaste 90 dagarna och schemalägger att den ska köras dagligen, får du en rapport för de senaste 90 dagarna varje dag. Om du skapar en rapport med ett statiskt datumintervall från kalendern visas samma rapport varje gång den skickas.
 
