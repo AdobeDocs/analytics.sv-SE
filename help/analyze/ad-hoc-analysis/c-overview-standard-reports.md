@@ -1,21 +1,28 @@
 ---
-description: Standardrapporter visar data för webbplats- och besöksaktivitet, trafikmönster, referensdata, annonskampanjer, besökarlojalitet, produktdata med mera. Du kan köra rapporter och sedan komma åt verktyg för att konfigurera segment, mätvärden och rapportjämförelser.
+description: Standardrapporter visar data för webbplats- och besöksaktivitet, trafikmönster, referensdata, annonskampanjer, besökares lojalitet, produktdata med mera. Du kan köra rapporter och sedan komma åt verktyg för att konfigurera segment, mätvärden och rapportjämförelser.
 title: Översikt över rapporter
 topic: Ad hoc analysis
 uuid: 36722dcd-5dc9-4047-8a17-16de876193bf
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 3%
 
 ---
 
 
 # Översikt över rapporter
 
-Standardrapporter visar data för webbplats- och besöksaktivitet, trafikmönster, referensdata, annonskampanjer, besökarlojalitet, produktdata med mera. Du kan köra rapporter och sedan komma åt verktyg för att konfigurera segment, mätvärden och rapportjämförelser.
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+
+Standardrapporter visar data för webbplats- och besöksaktivitet, trafikmönster, referensdata, annonskampanjer, besökares lojalitet, produktdata med mera. Du kan köra rapporter och sedan komma åt verktyg för att konfigurera segment, mätvärden och rapportjämförelser.
 
 ## Översikt över rapporter {#concept_41459A705F2048EEA4EFA80F6BD9FFAB}
 
-Standardrapporter visar data för webbplats- och besöksaktivitet, trafikmönster, referensdata, annonskampanjer, besökarlojalitet, produktdata med mera. Du kan köra rapporter och sedan komma åt verktyg för att konfigurera segment, mätvärden och rapportjämförelser.
+Standardrapporter visar data för webbplats- och besöksaktivitet, trafikmönster, referensdata, annonskampanjer, besökares lojalitet, produktdata med mera. Du kan köra rapporter och sedan komma åt verktyg för att konfigurera segment, mätvärden och rapportjämförelser.
 
 Du kan samla in anpassade data för att skapa rapporter som är specifika för din webbplats. Om du till exempel har en sökfunktion på webbplatsen kan du spåra de sökord som skickats in och skapa en rapport som visar dessa termer och sökresultaten.
 
@@ -29,7 +36,7 @@ Standarduppsättningen med rapporter omfattar ämnen som är gemensamma för all
 * Bevarande av besökare
 * Produktinformation
 
-Om ni använder marknadsföringsrapporter och analyser är rapporttyperna och menyerna bekanta. Ad hoc-analyser kategoriserar rapporter baserat på följande typer:
+Om du använder marketing reports and analytics är rapporttyperna och menyerna bekanta. Ad hoc-analyser kategoriserar rapporter baserat på följande typer:
 
 **Sammanfattningsrapporter**
 
@@ -101,7 +108,7 @@ Funktionen Medel beräknas ungefär som datakolumner i Microsoft Excel. Detta in
   <tr> 
    <th colname="col1" align="center" class="entry"> Datum </th> 
    <th colname="col2" align="center" class="entry"> Enstaka besök </th> 
-   <th colname="col3" align="center" class="entry"> Poster </th> 
+   <th colname="col3" align="center" class="entry"> Första besökssida </th> 
    <th colname="col4" align="center" class="entry"> Studsfrekvens </th> 
    <th colname="col5" align="center" class="entry"> </th> 
   </tr>
@@ -149,7 +156,7 @@ Förutom vanliga [statistiska beräkningar](/help/analyze/ad-hoc-analysis/c-over
 
 ## Grupphanteraren {#concept_E1433974A61144858E87334C006982B2}
 
-I stället för att använda en enda sida i en rapport kan du gruppera flera sidor och använda dem som kategorier för att starta, mellanlagra eller ange destinationsplats i [!UICONTROL Fallout] - och [!UICONTROL Site Analysis] -rapporterna. Du kan redigera grupper på huvudmenyn eller inifrån rapporten. Kategorier som du har skapat i marknadsföringsrapporter och analyser visas också i [!UICONTROL Checkpoint Selector] listan.
+I stället för att använda en enda sida i en rapport kan du gruppera flera sidor och använda dem som kategorier för att starta, mellanlagra eller ange destinationsplats i [!UICONTROL Fallout] - och [!UICONTROL Site Analysis] -rapporterna. Du kan redigera grupper på huvudmenyn eller inifrån rapporten. Kategorier som du har skapat i marketing reports and analytics visas också i [!UICONTROL Checkpoint Selector] listan.
 
 <!-- 
 
