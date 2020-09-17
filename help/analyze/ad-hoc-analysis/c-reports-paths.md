@@ -4,12 +4,19 @@ title: Sökvägsrapporter
 topic: Ad hoc analysis
 uuid: 5881cb1c-6d66-49fe-ac84-70b82662acd2
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '1183'
+ht-degree: 1%
 
 ---
 
 
 # Sökvägsrapporter
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Visar information om i vilken ordning sidorna på webbplatsen nås. Du kan samla in information om var en besökare besöker webbplatsen före och efter en sida.
 
@@ -19,7 +26,7 @@ Visar information om i vilken ordning sidorna på webbplatsen nås. Du kan samla
 
 Sökvägsrapporter innehåller detaljerade standardanalysrapporter och valfria avancerade analysrapporter som visar klickströmmen av visade sidor. Du kan identifiera fullständiga banor, längsta banor och de vanligaste banorna. förklara sidflöde, bortfall och utfall grafiskt, visa nya och föränderliga mönster över tid, och analysera ingångs- och avslutsbanor.
 
-**[!UICONTROL Next Page Flow]** eller **[!UICONTROL Next Site Flow]**: Visar en förgreningsbild på två nivåer av en markerad sida (eller avsnitt, avdelning och så vidare) som besökarna ser efter att ha flyttat bort från den markerade sidan. Använd den här rapporten för att analysera och identifiera de steg besökarna tar oftast efter att ha visat en vald sida. Du kan:
+**[!UICONTROL Next Page Flow]** eller **[!UICONTROL Next Site Flow]**: Visar en förgreningsbild på två nivåer av en markerad sida (eller avsnitt, avdelning och så vidare) som besökarna ser efter att ha flyttat bort från den markerade sidan. Använd den här rapporten för att analysera och identifiera de steg besökarna tar oftast efter att ha visat en vald sida. Ni kan:
 
 * Förstå vilka steg som utförs oftast när du har visat en markerad sida.
 * Optimera sajtens sökvägsdesign för att flytta trafiken till önskad målsida.
@@ -61,7 +68,7 @@ c_reports_fallout.xml
 
  -->
 
-Du kan analysera utfallsdata på besöks- eller besöksnivå. Du kan också se en bana som du ser som en graf över utfallet under en viss period. Du kan ange enstaka sidor eller grupper av sidor som rapportkontrollpunkter, eller lägga till mått eller mätvärden i valfri kombination eller sekvens. Du kan också använda kategorier som du konfigurerar i marknadsföringsrapporter och analyser som kontrollpunkter i den här rapporten.
+Du kan analysera utfallsdata på besöks- eller besöksnivå. Du kan också se en bana som du ser som en graf över utfallet under en viss period. Du kan ange enstaka sidor eller grupper av sidor som rapportkontrollpunkter, eller lägga till mått eller mätvärden i valfri kombination eller sekvens. Du kan också använda kategorier som du konfigurerar i marketing reports and analytics som kontrollpunkter i den här rapporten.
 
 Den här rapporten är användbar för att analysera:
 
