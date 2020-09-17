@@ -4,12 +4,19 @@ title: Rapporttyper
 topic: Ad hoc analysis
 uuid: 357102eb-a172-40ec-a302-01c87abaacb5
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 1%
 
 ---
 
 
 # Rapporttyper
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Beskrivningar av rapporttyper som används i Experience Cloud.
 
