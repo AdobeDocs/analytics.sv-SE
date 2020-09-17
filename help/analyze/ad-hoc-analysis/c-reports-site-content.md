@@ -1,24 +1,31 @@
 ---
-description: Visar information om vilka sidor och områden på platsen som är mest aktiva och vilka servrar som används mest.
-title: Rapporter om webbplatsinnehåll
+description: Visar information om vilka sidor och områden på webbplatsen som är mest aktiva och vilka servrar som används mest.
+title: Site Content-rapporter
 uuid: 70317d28-a52e-4660-9f8e-a8fce012836c
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 13%
 
 ---
 
 
-# Rapporter om webbplatsinnehåll
+# Site Content-rapporter
 
-Visar information om vilka sidor och områden på platsen som är mest aktiva och vilka servrar som används mest.
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
-## Rapporter om webbplatsinnehåll {#concept_6FD804C43698437A88E1E8A19821851E}
+Visar information om vilka sidor och områden på webbplatsen som är mest aktiva och vilka servrar som används mest.
 
-Visar information om vilka sidor och områden på platsen som är mest aktiva och vilka servrar som används mest.
+## Site Content-rapporter {#concept_6FD804C43698437A88E1E8A19821851E}
+
+Visar information om vilka sidor och områden på webbplatsen som är mest aktiva och vilka servrar som används mest.
 
 **Sidor**: Ordnar sidorna på webbplatsen baserat på de sidor som får flest trafik. Om din affärsfråga handlar om kvantitativa data för sidor kan du använda den här rapporten för att besvara den frågan genom att lägga till rätt statistik.
 
-**Platsavsnitt**: Visar de områden på din webbplats som besökarna mest har åtkomst till. Platsavsnitt kan innehålla produktgrupper, ungefär som kategorier, som du definierar. Du kan till exempel ha en grupp med kameror, en grupp med datorer och så vidare. Data för [!UICONTROL Conversion Site Sections] rapporten importeras från [!UICONTROL Site Section] rapporten i [!UICONTROL Traffic] gruppen, som tar emot informationen från kanalvariabeln i marknadsföringsrapporterna och analysspårningskoden. Du kan använda den här rapporten för att identifiera den största effekten på webbplatsstatistik från objekt i olika avsnitt på webbplatsen.
+**Platsavsnitt**: Visar de områden på din webbplats som besökarna mest har åtkomst till. Platsavsnitt kan innehålla produktgrupper, ungefär som kategorier, som du definierar. Du kan till exempel ha en grupp med kameror, en grupp med datorer och så vidare. Data för [!UICONTROL Conversion Site Sections] rapporten importeras från [!UICONTROL Site Section] rapporten i [!UICONTROL Traffic] gruppen, som tar emot information från kanalvariabeln i marketing reports and analytics spårningskod. Du kan använda den här rapporten för att identifiera den största effekten på webbplatsstatistik från objekt i olika avsnitt på webbplatsen.
 
 **Hierarki**: Visar den hierarkiska layouten för sidorna på webbplatsen och visar dessa sidor i ordning utifrån hur de är konfigurerade i *`hierN`* variabeln. Den här rapporten fylls i med korrekt variabelkonfiguration som du anger för varje sida som du vill delta i hierarkin. I den här rapporten kan du se valda värden (t.ex. unika besökare) för hierarkin.
 
