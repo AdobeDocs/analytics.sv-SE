@@ -3,12 +3,19 @@ description: Använd tabellverktyget för att skapa en rapport med valfri konfig
 title: Table Builder
 uuid: d5dbd05e-9ebd-4571-b3a5-3856c28b65f3
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 1%
 
 ---
 
 
 # Table Builder
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Använd tabellverktyget för att skapa en rapport med valfri konfiguration av mått, dimensioner och segment. Du kan till exempel lägga till flera mått i tabellverktyget och sedan använda segment på alla samtidigt. Du kan använda objekt från verktygspanelerna som rader och uppdelningar, eller som kolumner, och enkelt rotera tabellen för en annan vy. När du har skapat tabellen kan du interagera direkt med den resulterande datatabellen för ytterligare analys. Tänk på att när du genererar en datatabell från Table Builder körs en fråga och en ny datatabell skapas.
 
@@ -38,7 +45,7 @@ Det [!UICONTROL Table Builder] är inte tillgängligt för vissa betalningsrappo
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Egenskaper för uppdelning</span> </td> 
-   <td colname="col2"> <p><img placement="inline"  src="assets/Settings_Illustrative.png" id="image_C46860621CF94E88AF592B8660F28E57"> </img> </p> <p>Här kan du ange standardinställningar för hur många rader och uppdelningar du vill visa, baserat på i vilken ordning du lägger till objekt. Du kan ange hur många totala resultat som ska visas per sida och hur många av raderna som ska delas upp. </p> <p>De inställningar du gör i <span class="wintitle"> tabellverktyget</span> åsidosätter standardinställningarna i <span class="wintitle"> Egenskaper</span>förnedbrytning. </p> </td> 
+   <td colname="col2"> <p><img placement="inline"  src="assets/Settings_Illustrative.png" id="image_C46860621CF94E88AF592B8660F28E57"> </img> </p> <p>Här kan du ange standardinställningar för hur många rader och uppdelningar du vill visa, baserat på i vilken ordning du lägger till objekt. Du kan ange hur många totala resultat som ska visas per sida och hur många av dessa rader som ska delas upp. </p> <p>De inställningar du gör i <span class="wintitle"> tabellverktyget</span> åsidosätter standardinställningarna i <span class="wintitle"> Egenskaper</span>förnedbrytning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Redigera objekt</span> </td> 
