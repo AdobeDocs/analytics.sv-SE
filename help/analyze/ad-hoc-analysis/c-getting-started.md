@@ -3,9 +3,9 @@ description: Kom igång med Ad Hoc Analysis.
 title: Komma igång
 uuid: 6a698e18-4e62-405e-b020-b973c9c4008b
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1253'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 Du kan utföra ögonblicklig, avancerad analys av webbplatsaktiviteter. Du kan visa flera rapporter samtidigt och tillämpa segment över flera dimensioner. Ni kan analysera data från både mikro- och makroperspektiv för att se hur de påverkar era viktiga affärsvärden.
 
