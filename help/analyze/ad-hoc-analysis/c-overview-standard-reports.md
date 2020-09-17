@@ -4,9 +4,9 @@ title: Översikt över rapporter
 topic: Ad hoc analysis
 uuid: 36722dcd-5dc9-4047-8a17-16de876193bf
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '975'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 Standardrapporter visar data för webbplats- och besöksaktivitet, trafikmönster, referensdata, annonskampanjer, besökares lojalitet, produktdata med mera. Du kan köra rapporter och sedan komma åt verktyg för att konfigurera segment, mätvärden och rapportjämförelser.
 
