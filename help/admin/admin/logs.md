@@ -2,9 +2,8 @@
 description: Logga filer som hjälper dig att se när användare loggar in, deras användning, åtkomst, rapportsviter och administratörsändringar.
 title: Loggar
 topic: Admin tools
-uuid: d5d4723d-f4cf-403e-ae9c-76d7faed2be6
 translation-type: tm+mt
-source-git-commit: fff1fb97f9224b7e68f85b24ac440083503df54f
+source-git-commit: ebcd348dd952c24b5a5eaadb46ec3a521aba2e98
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 2%
