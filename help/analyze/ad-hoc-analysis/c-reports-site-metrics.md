@@ -4,12 +4,19 @@ title: Site Metrics-rapporter
 topic: Ad hoc analysis
 uuid: 0730747a-216f-4a58-b62b-a9812968cde5
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 0%
 
 ---
 
 
 # Site Metrics-rapporter
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Visar kvantitativ information om webbplatsen, t.ex. hur många gånger besökarna tittade på vissa sidor, antalet totala inköp från specifika sidor, när de kom och liknande kvantitativa data. Var och en av dessa rapporter är ett mätvärde som du kan placera i andra objektbaserade rapporter.
 
@@ -41,11 +48,11 @@ c_reports_visits.xml
 
  -->
 
-I marknadsföringsrapporter och analyser kan du köra en [!UICONTROL Visits Report] på en vald sida. Vid ad hoc-analys kan du segmentera data för att visa specifika sidor.
+I marketing reports and analytics kan du köra en [!UICONTROL Visits Report] på en markerad sida. Vid ad hoc-analys kan du segmentera data för att visa specifika sidor.
 
 ## Unika besökarrapporter {#concept_39097C54E46C496CBAD537329DB3C84A}
 
-En trendrapport som visar hur många unika besökare som har besökt er webbplats. Varje besökare räknas en gång oavsett hur många gånger personen besöker er webbplats. Adobe använder en patentsökt cookie-handskakningsteknik för att skilja en unik besökare från en återkommande besökare. cookie-handskakningen överträffar begränsningarna i webbläsar-cookie-tekniken.
+En trendrapport som visar hur många unika besökare som har besökt er webbplats. Varje besökare räknas en gång oavsett hur många gånger personen besöker er webbplats. Adobe använder en patentsökt cookie-handskakningsteknik för att skilja en unik besökare från en returbesökare. cookie-handskakningen överträffar begränsningarna i webbläsar-cookie-tekniken.
 
 <!-- 
 
@@ -71,7 +78,7 @@ c_reports_visitors.xml
 
 Det totala värdet som visas längst ned i tabellen är summan av alla besök för den angivna tidsperioden och återspeglar inte alltid antalet unika besökare. Om du till exempel kör en [!UICONTROL Daily Unique Visitors Report] med en tidsram på flera dagar, kan summan innehålla återkommande besökare, eftersom samma besökare kan komma tillbaka nästa dag och räknas om. Om du däremot kör en [!UICONTROL Monthly Unique Visitors Report]sträng återspeglar värdet i kolumnen Summor exakt hur många unika besökare som kom under månaden.
 
-## Tidsåtgång per besök - rapport {#concept_5CDB759F9C9B4002A786A71F2BDBB292}
+## Time Spent per Visit Report {#concept_5CDB759F9C9B4002A786A71F2BDBB292}
 
 Visar hur lång tid besökarna tillbringar med att visa din webbplats under varje besök. Den har också en genomsnittlig tid på Webbplatsstatistik som visar den genomsnittliga tid som besökare tillbringade med att visa din webbplats.
 
@@ -159,8 +166,8 @@ c_reports_marketing_channel.xml
 
  -->
 
-**[!UICONTROL First or Last Touch Channel Report]**: Visar mätvärden som visar data om en viss första-beröringskanal eller sista-beröringskanal. I de här rapporterna kan du dela upp en kanal och visa information om varje kanal. Om AdLens är aktiverat visas klassificeringar i marknadsföringsrapporter och rapporter om analyskanaler.
+**[!UICONTROL First or Last Touch Channel Report]**: Visar mätvärden som visar data om en viss första-beröringskanal eller sista-beröringskanal. I de här rapporterna kan du dela upp en kanal och visa information om varje kanal. Om du har aktiverat AdLens visas klassificeringar i marketing reports and analytics kanalrapporter.
 
 **[!UICONTROL First or Last Touch Channel Detail Reports]**: Visar detaljer som sidnamn och referenser, som hämtas från kanalvärdena som du anger i [!UICONTROL Set the channel's value to] alternativet när regler konfigureras. Med kanaldetaljrapporter kan du noggrant granska kanaldetaljvärdena från översiktsrapporten.
 
-Mer ingående information om hur du konfigurerar marknadsföringskanalen i marknadsföringsrapporter och analyser finns i hjälpsystemet för [marknadsföringskanaler](/help/components/c-marketing-channels/analyze-mc.md) .
+Mer ingående information om hur du konfigurerar marknadsföringskanalen i marketing reports and analytics finns i hjälpsystemet för [marknadsföringskanaler](/help/components/c-marketing-channels/analyze-mc.md) .
