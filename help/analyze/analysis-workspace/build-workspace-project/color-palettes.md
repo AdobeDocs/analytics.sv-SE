@@ -3,9 +3,9 @@ description: 'null'
 title: Färgpaletter
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: f0bb68488bbd987203a1abf0f4fbc0fdb3d4824e
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '187'
 ht-degree: 4%
 
 ---
@@ -34,5 +34,5 @@ Tänk på följande:
    ![](assets/custom_palette.png)
 
 1. Om du vill ange en egen palett väljer du **[!UICONTROL Custom Palette]** under förinställningarna.
-1. Ange upp till 16 kommaavgränsade hexadecimala värden (till exempel #00a4e4) för de färger som du vill använda. Om du t.ex. bara vill använda fyra värden upprepas dessa färger automatiskt i visualiseringar som innehåller fler färger.
+1. Ange upp till 16 kommaavgränsade hexadecimala värden (till exempel #00a4e4) för de färger som du vill använda. Om du till exempel bara vill använda fyra värden upprepas dessa färger automatiskt i visualiseringar som innehåller fler färger.
 
