@@ -3,9 +3,9 @@ description: 'null'
 title: Visa konverterade projekt i Analysis Workspace
 uuid: 5f8b6d0a-1a2c-42da-b51d-ecb355f470af
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '98'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 Innan du visar dina projekt i Workspace bör du läsa [Frågor och svar](/help/analyze/ad-hoc-analysis/c-aha-project-converter/aha2aw-converter-faq.md#topic_8231595303AD403E9322645A63632D57) och läsa [skillnaderna i terminologi](/help/analyze/ad-hoc-analysis/c-aha-project-converter/aha2aw-converter-faq.md#topic_8231595303AD403E9322645A63632D57) mellan Ad Hoc Analysis och Workspace.
 
