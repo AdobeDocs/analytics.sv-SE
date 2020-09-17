@@ -3,9 +3,9 @@ description: Visar information om vilka sidor och omr책den p책 webbplatsen som �
 title: Site Content-rapporter
 uuid: 70317d28-a52e-4660-9f8e-a8fce012836c
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '537'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [L채s mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [L채s mer](https://adobe.ly/discoverworkspace)
 
 Visar information om vilka sidor och omr책den p책 webbplatsen som 채r mest aktiva och vilka servrar som anv채nds mest.
 
