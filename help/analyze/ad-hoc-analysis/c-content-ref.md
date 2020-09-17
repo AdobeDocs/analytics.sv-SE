@@ -4,9 +4,9 @@ title: Skapa segment
 topic: Ad hoc analysis
 uuid: e14fb777-900a-4700-8dc7-56a45c678d29
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 42782779a9b9d5f4795b2663ec78678cd3aada02
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 Ad Hoc Analysis integreras med segmenteringsmiljön i Analytics så att ni kan skapa, dela, hantera och tillämpa besökarsegment för alla Adobe-produkter. Ad Hoc Analysis har ett Java-baserat användargränssnitt för segmentbyggaren och segmenthanteraren som är identiskt med de webbaserade verktyg som används av andra analysverktyg, som matchar serveranrop och som tillhandahåller samma funktioner från en Java-baserad konsol.
 
