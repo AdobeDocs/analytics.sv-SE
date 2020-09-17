@@ -3,15 +3,19 @@ description: Visar information om webbplatsåtkomst från en mobil enhet. Mobilr
 title: Mobilrapporter
 uuid: feb1fc34-3541-4b2d-b9cb-84d2e91d9539
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
 
 
 # Mobilrapporter
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Visar information om webbplatsåtkomst från en mobil enhet. Mobilrapporter förbättrar besökaridentifieringen genom att samla in data om mobila enheter som används för att visa webbplatsen. Mobilrapporter kan identifiera en enhets tillverkare och funktioner, som skärmstorlekar, video-, ljud- och cookie-stöd och andra mätvärden. Mobilrapporter finns för alla rapportsviter.
 
@@ -62,7 +66,7 @@ Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https
   </tr> 
   <tr> 
    <td colname="col1"> <p>Cookie-supportrapport </p> </td> 
-   <td colname="col2"> <p>Grupperar träffar på mobila enheter utifrån om de stöder cookies eller inte. Besökarna delas in i grupper med supportcookies och grupper som inte gör det. Typen av mobil enhet identifieras i användaragentsträngen. Adobe har en lista över mobila enheter som har stöd för cookies. Om den mobila enhet som anges i användaragentsträngen också finns med i Adobes lista över mobila enheter, ökas raden som stöds i rapporten <span class="wintitle"> Cookie-stöd</span> . I annat fall ökas radobjektet Stöds inte i rapporten. </p> </td> 
+   <td colname="col2"> <p>Grupperar träffar på mobila enheter utifrån om de stöder cookies eller inte. Besökarna delas in i grupper med supportcookies och grupper som inte gör det. Typen av mobil enhet identifieras i användaragentsträngen. Adobe har en lista över mobila enheter som har stöd för cookies. Om den mobila enhet som anges i användaragentsträngen också finns med i Adobe lista över mobila enheter, ökas raden som stöds i rapporten <span class="wintitle"> Cookie-stöd</span> . I annat fall ökas radobjektet Stöds inte i rapporten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bildsupportrapport </p> </td> 
@@ -70,7 +74,7 @@ Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https
   </tr> 
   <tr> 
    <td colname="col1"> <p>Färgdjupsrapport </p> </td> 
-   <td colname="col2"> <p>Grupperar träffar på mobila enheter efter det antal färger som stöds. Rapporten visar det totala antalet besökare på webbplatsen som använde en mobil enhet och delar upp dem i grupper baserat på antalet färger som konfigurerats i deras mobila enheter. Om besökarens mobiltelefon t.ex. har stöd för 24 färger ökar marketing reports and analytics det radobjekt som motsvarar 24 färger. </p> </td> 
+   <td colname="col2"> <p>Grupperar träffar på mobila enheter efter antalet färger som stöds. Rapporten visar det totala antalet besökare på webbplatsen som använde en mobil enhet och delar upp dem i grupper baserat på antalet färger som konfigurerats i deras mobila enheter. Om besökarens mobiltelefon t.ex. har stöd för 24 färger ökar marketing reports and analytics det radobjekt som motsvarar 24 färger. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Rapport om stöd för ljud </p> </td> 
@@ -82,7 +86,7 @@ Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https
   </tr> 
   <tr> 
    <td colname="col1"> <p>DRM-rapport </p> </td> 
-   <td colname="col2"> <p>Grupperar mobila enheter baserat på den typ av DRM (Digital Rights Management) som de stöder. DRM-grupper omfattar <span class="term"> Forward Lock</span>, <span class="term"> combined Delivery</span>, <span class="term"> Separate Delivery</span>och <span class="term"> Unknown</span>. </p> </td> 
+   <td colname="col2"> <p>Grupperar mobila enheter baserat på den typ av Digital Rights Management (DRM) som de stöder. DRM-grupper omfattar <span class="term"> Forward Lock</span>, <span class="term"> combined Delivery</span>, <span class="term"> Separate Delivery</span>och <span class="term"> Unknown</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Nettoprotokollrapport </p> </td> 
@@ -122,7 +126,7 @@ Mer information om mobilspårning finns på webbplatsen [Mobile Analytics](https
   </tr> 
   <tr> 
    <td colname="col1"> Information Services-rapport </td> 
-   <td colname="col2"> <p>Grupperar mobila enheter baserat på nyhetstjänsterna (Channel I/B, EZ News Flash, W+INFO osv.). som de stöder. När en besökare använder en mobil enhet med stöd för nyhetstjänster för att få tillgång till din webbplats ökar rapporten om informationstjänster med minst en. Om telefonen har stöd för flera nyhetstjänster ökar rapportens storlek för var och en av grupperna. Därför kan summan av grupperna vara större än summan som visas längst ned i rapporten. </p> </td> 
+   <td colname="col2"> <p>Grupperar mobila enheter baserat på nyhetstjänster (kanal I/B, EZ News Flash, W+INFO osv.) som de stöder. När en besökare använder en mobil enhet med stöd för nyhetstjänster för att få tillgång till din webbplats ökar rapporten om informationstjänster med minst en. Om telefonen har stöd för flera nyhetstjänster ökar rapportens storlek för var och en av grupperna. Därför kan summan av grupperna vara större än summan som visas längst ned i rapporten. </p> </td> 
   </tr> 
  </tbody> 
 </table>
