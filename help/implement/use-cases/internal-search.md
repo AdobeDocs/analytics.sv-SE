@@ -2,7 +2,7 @@
 title: Hämta interna söktermer
 description: Använd en anpassad variabel för att hämta interna söktermer.
 translation-type: tm+mt
-source-git-commit: 091e4b859addc1780d94d90c8b59748277890241
+source-git-commit: a94b8e090b9a3c75a57fd396cac8486bba2e5d79
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Follow [Map Launch data elements to Analytics variables](../launch/elements-to-v
 
 Följ [Distribuera en analysimplementering till en utvecklingsmiljö](../launch/deploy-dev.md). När du har bekräftat att det fungerar i utvecklingsmiljön kan du [validera en implementering och publicera i produktionen](../launch/validate-publish-prod.md).
 
-## Rapportering i arbetsytan.
+## Rapportering på arbetsytan
 
 Ge implementeringen lite tid att samla in data, så kan ni börja använda dimensionen i Analysis Workspace.
 
