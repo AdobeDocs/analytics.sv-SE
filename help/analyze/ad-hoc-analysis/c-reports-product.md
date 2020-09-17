@@ -4,16 +4,23 @@ title: Produktrapporter
 topic: Ad hoc analysis
 uuid: e2a8814b-735d-4f63-97ee-af1afac4d75d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 3%
 
 ---
 
 
 # Produktrapporter
 
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+
 Visar information om de saker du säljer, distribuerar eller visar på din webbplats. Du kan se data om beställningar eller nedladdningar för produkter, program eller innehåll.
 
-## Produktkonverteringsfunktion {#concept_9F13DAFEDF104B63AA0BF8CA1F3AD478}
+## Konverteringstratt för produkter {#concept_9F13DAFEDF104B63AA0BF8CA1F3AD478}
 
 Visar medelvärden för måtten Produktvyer, kundvagnstillägg, Beställningar, Intäkter och Enheter. Här visas också viktiga konverteringar mellan viktiga data i varje rapporteringsgrupp och standardkonverteringsvärden (order, enheter och intäkter). Den översta delen (översikt) av tratten ger en visuell sammanfattning av konverteringsdata. I trattavsnittet visas statistik för alla händelser i översiktsavsnittet baserat på beställningar och upp till två andra mått, som Intäkter och Enheter.
 
