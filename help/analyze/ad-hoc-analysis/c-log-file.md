@@ -2,15 +2,19 @@
 title: Loggfil
 description: Hämta en loggfil för felsökning.
 translation-type: tm+mt
-source-git-commit: aea3b4448b61e8b1b217b4f74b0b80c9fbedd070
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '211'
 ht-degree: 2%
 
 ---
 
 
 # Loggfil
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 När du felsöker problem med Ad Hoc Analysis är det ibland nödvändigt att hämta loggfilen. Adobe kan använda loggfilen för att hitta orsaken till problemet och ge en lösning. Filen `discover.log` innehåller alla användarinteraktioner, rapportinläsningsinformation och Java-felmeddelanden för alla sessioner. Den kraschar all skyddad information, t.ex. användarens lösenord. Stora loggfiler delas upp i steg om 10 MB. När du förser Adobe med loggfilerna måste du se till att alla filer är markerade.
 
