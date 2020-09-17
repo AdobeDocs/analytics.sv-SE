@@ -1,18 +1,25 @@
 ---
 description: Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, datum, enheter, order, intäkter osv. Mätvärden och associerade data visas i rapportkolumnerna.
-title: Mått
+title: Mätvärden
 uuid: ab9d8a45-0297-4757-b0f0-d8b0e0db8d67
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 3%
 
 ---
 
 
-# Mått
+# Mätvärden
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, datum, enheter, order, intäkter osv. Mätvärden och associerade data visas i rapportkolumnerna.
 
-## Mått {#concept_46A67930CFDB4A078225C5B189688AF3}
+## Mätvärden {#concept_46A67930CFDB4A078225C5B189688AF3}
 
 Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, datum, enheter, order, intäkter osv. Mätvärden och associerade data visas i rapportkolumnerna.
 
@@ -38,7 +45,7 @@ t_organize_metrics.xml
 
  -->
 
-1. Klicka på i [!UICONTROL Metrics] verktygspanelen **[!UICONTROL More Actions]**. ( ![](assets/tools_icon.png)
+1. Klicka på i [!UICONTROL Metrics] verktygspanelen **[!UICONTROL More Actions]**. (  ![](assets/tools_icon.png)
 
    )
 1. Klicka på **[!UICONTROL Organize Metrics]**.
@@ -72,7 +79,7 @@ t_add_metrics_dsc.xml
 
 ## Beräknad metrisk Builder {#concept_F8E213CE786A43FB93847C5BA883A29C}
 
-Den beräknade metriska generatorn i Ad Hoc-analys är nu kopplad till Analytics Unified Calculated Metrics. Användargränssnittet liknar det i Analytics (Beräknad metrisk Builder).
+Ad Hoc Analysis Calculated Metric Builder är nu knutet till Analytics Unified Calculated Metrics. Användargränssnittet liknar det i Analytics (Beräknad metrisk Builder).
 
 <!-- 
 
@@ -80,7 +87,7 @@ c_calc_metric_builder.xml
 
  -->
 
-Mer information om hur du skapar och hanterar beräknade mått finns i [Handboken](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/cm-overview.html)för beräknade mått.
+Mer information om hur du skapar och hanterar beräknade mått finns i [Handboken](https://docs.adobe.com/content/help/sv-SE/analytics/components/calculated-metrics/cm-overview.html)för beräknade mått.
 
 Så här kommer du åt verktyget Beräknade mätvärden i Ad Hoc Analysis:
 
