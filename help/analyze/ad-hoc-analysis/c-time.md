@@ -3,9 +3,9 @@ description: Tid är en rapportdimension som är användbar för trender över t
 title: Tid
 uuid: a6efbf80-342c-4aeb-80f3-91a3dbdbd33c
 translation-type: tm+mt
-source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
+source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+>Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
 Tid är en rapportdimension som är användbar för trender över timmar, dagar, veckor och datumintervall. En produktrapport visar till exempel hur mycket intäkter en produkt har haft under det valda datumintervallet. Du kan lägga till en dagdimension för att se trenden för varje dag i rapporteringsperioden. Med Tid får du detaljinställningar för Timme, Dag, Vecka, Månad, Kvartal och År. Förinställningar för datumintervall innehåller inställningar som Idag, Gårdagen och Senaste 7 dagarna.
 
