@@ -4,15 +4,19 @@ title: Besöksrapporter
 topic: Ad hoc analysis
 uuid: 3e9b41d1-d6ff-47a8-aa6b-829df1040c34
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
 
 # Besöksrapporter
+
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
 
 Visar information om besökare, t.ex. antal besökare, kundlojalitet och besökaregenskaper.
 
@@ -75,7 +79,7 @@ Den här rapporten baseras på besökar-ID-data som skickas till Adobe vid varje
 
 >[!NOTE]
 >
->Varje besökar-ID från Analytics är kopplat till en besökarprofil på Adobes servrar. Besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett om en cookie-fil för besöks-ID har gått ut eller inte.
+>Varje besökar-ID för Analytics är kopplat till en besökarprofil på Adobe-servrar. Besökarprofiler tas bort efter minst 13 månaders inaktivitet, oavsett om en cookie-fil för besöks-ID har gått ut eller inte.
 
 ## Kundlojalitet {#concept_991F758BAA304B7B9D48BD73BBB62FE5}
 
