@@ -1,24 +1,28 @@
 ---
-description: Rapporterna från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
+description: Rapporter från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
 title: Traffic Sources-rapporter
 topic: Ad hoc analysis
 uuid: 246afbdc-9f7b-4956-a44a-b7aad948f392
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d4cb2acb4ecaecce3644a2f3cf29913440e5cd6a
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 1%
+source-wordcount: '1150'
+ht-degree: 2%
 
 ---
 
 
 # Traffic Sources-rapporter
 
-Rapporterna från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
+>[!IMPORTANT]
+>
+>Adobe flyttar Ad Hoc Analysis till livscykelns slutstatus den 1 mars 2021. [Läs mer...](https://adobe.ly/discoverworkspace).
+
+Rapporter från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
 
 ## Traffic Sources-rapporter {#concept_0F1772141E1345C5BCF63BE7C544C0CB}
 
-Rapporterna från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
+Rapporter från trafikkällor ger er djupgående insikter om hur besökarna interagerar med er webbplats.
 
 Med trafikkällrapporter kan du:
 
@@ -128,11 +132,11 @@ I listan nedan definieras de olika typerna av referenser:
 
 Följande radobjekt kan visas när den här rapporten körs:
 
-**Inuti din webbplats**: De här objekten är URL:er som är taggade med de interna URL-filtren. De här objekten räknas inte som referensinstanser utan kan ses vid rapportering av andra mätvärden.
+**Inuti din webbplats**: De här objekten är URL:er som är taggade med de interna URL-filtren. De här objekten räknas inte som referensinstanser utan kan ses vid rapportering av andra mått.
 
 **Inget Java-skript**: Det fanns inget JavaScript, så typen var oidentifierbar (okänd). Det innebär att det inte fanns någon referensinformation från en klient i en webbläsare, som inte rapporterar att Javascript stöds. Dessa räknas inte som &quot;refererarinstanser&quot; men kan ses när andra mätvärden rapporteras.
 
-**USENET (newsgroup)**: Det innebär att URL:en för en referent börjar med `news://`. Refererarlänken publicerades i en diskussionsgrupp i användargruppen i stället för på en webbsida.
+**USENET (newsgroup)**: Det innebär att URL:en för en referent börjar med `news://`. Därför lades refererarlänken upp på en diskussionsgrupp i användargruppen i stället för på en webbsida.
 
 >[!NOTE]
 >
