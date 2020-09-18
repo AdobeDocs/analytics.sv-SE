@@ -4,9 +4,9 @@ title: Anpassa kalender
 topic: Admin tools
 uuid: 4e5e538b-54c9-4c2f-8b6c-9f91b6c7bcc7
 translation-type: tm+mt
-source-git-commit: aea3b4448b61e8b1b217b4f74b0b80c9fbedd070
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Kalenderalternativ i andra format än den gregorianska modellen. Alternativen ä
 
 >[!CAUTION]
 >
->Om du ändrar kalendern ändras det sätt som data behandlas på (dvs. definitionen av unika besökare varje vecka och månad). När en kalenders definition av veckor och månader ändras, ändras inte historiska data.
+>Om du ändrar kalendern ändras det sätt som data behandlas på (dvs. definitionen av unika besökare varje vecka och månad). När en kalenders definition av veckor och månader ändras, ändras inte historiska data. Den här inställningen påverkar även segment som baseras på datumintervall.
 
 Du kan använda kalendern för att definiera den första dagen i veckan och året eller använda ett annat återförsäljningsformat. Kalenderformaten används för olika syften, inklusive försäljningsjämförelse och prognosstandardisering, lönekostnadsanalys eller reglering av fysiskt lagerantal. Detaljhandeln använder till exempel räkenskapskalendern för 4-5-4 som stöd för försäljningssäsongens särdrag i detaljhandeln. Varje kalenderformat beskrivs nedan.
 
