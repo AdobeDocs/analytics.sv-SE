@@ -1,23 +1,26 @@
 ---
 description: Bearbetningsregler förenklar datainsamling och hantering av innehåll när det skickas till rapportering.
 subtopic: Processing rules
-title: Översikt över bearbetningsregler
+title: Översikt över behandlingsregler
 topic: Admin tools
 uuid: 6b4ee7c9-2b86-47a6-b64c-c8d644fff67d
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
 
-# Översikt över bearbetningsregler
+# Översikt över behandlingsregler
 
 Bearbetningsregler förenklar datainsamling och hantering av innehåll när det skickas till rapportering. Bearbetningsreglerna förenklar interaktionen med IT-grupper och webbutvecklare genom ett gränssnitt för att
 
 * Ange en händelse på produktöversiktssidan
 * Fyll i kampanj med en frågesträngsparameter
 * Sammanfoga kategori- och sidnamn i ett utkast för enklare rapportering
-* Kopiera en eVar till ett utkast för att se banor
+* Kopiera en eVar till en svällning för att se banor
 * Rensa felstavade webbplatsavsnitt
 * Hämta interna söktermer eller ett kampanj-ID från frågesträngen till en eVar
 
@@ -27,7 +30,7 @@ Bearbetningsregler förenklar datainsamling och hantering av innehåll när det 
 
 ## Få behörighet att använda bearbetningsregler {#section_8A4846688050453784DAE4D89355169A}
 
-Före den 20 april 2017 var alla användare (inklusive administratörer) tvungna att genomgå en tentamen och få tillstånd att använda bearbetningsreglerna av Adobes kundtjänst.
+Före den 20 april 2017 var alla användare (inklusive administratörer) tvungna att genomgå en tentamen och beviljas tillstånd att använda bearbetningsreglerna av Adobe Customer Care.
 
 Nu har administratörer behörighet att använda bearbetningsregler **som standard**. Tentamen behövs inte längre. Administratörer kan även ge dessa rättigheter till icke-administratörer via gränssnittet Administratörsverktyg. Så här:
 
@@ -40,11 +43,11 @@ Nu har administratörer behörighet att använda bearbetningsregler **som standa
 
 >[!IMPORTANT]
 >
->Eftersom bearbetningsregler påverkar Analytics-data permanent rekommenderar vi att regeladministratörer får certifieringsutbildning i Adobe Analytics och känner till alla datakällor för rapportsviterna (standardwebbplatser, mobilwebbplatser, mobilappar, API för datainfogning och så vidare). Kunskap om kontextdatavariabler och standardvariabler som är ifyllda på olika plattformar hjälper till att förhindra oavsiktlig radering eller ändring av data.
+>Eftersom bearbetningsregler permanent påverkar Analytics-data rekommenderar Adobe att regeladministratörer får certifieringsutbildning i Adobe Analytics och känner till alla datakällor för rapportsviterna (standardwebbplatser, mobilwebbplatser, mobilappar, API för datainfogning och så vidare). Kunskap om kontextdatavariabler och standardvariabler som är ifyllda på olika plattformar hjälper till att förhindra oavsiktlig radering eller ändring av data.
 
 ## Använd kontextdata för att förenkla datainsamling {#section_09EEA03612D24C15839631AA9E9668D8}
 
-Sammanhangsdatavariabler är en ny typ av variabler som bara är tillgängliga för bearbetning av regler. Om du vill använda kontextdatavariabler skickas nyckeldatapar/värdepar in av implementeringen, och bearbetningsregler används för att hämta dessa värden i vanliga Analytics-variabler. Detta frigör programmerare från att förstå exakt vilket prop och/eller eVar som ska innehålla vilket värde.
+Sammanhangsdatavariabler är en typ av variabler som bara är tillgängliga för bearbetning av regler. Om du vill använda kontextdatavariabler skickas nyckeldatapar/värdepar in av implementeringen, och bearbetningsregler används för att hämta dessa värden i vanliga Analytics-variabler. Detta frigör programmerare från att förstå exakt vilka prop och/eller eVar som ska innehålla vilket värde.
 
 ![](assets/evar-context-map.png)
 
