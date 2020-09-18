@@ -1,16 +1,19 @@
 ---
 description: Det här avsnittet innehåller svar på vanliga frågor.
 subtopic: Data sources
-title: Vanliga frågor om datakällor
+title: Vanliga frågor om Data Sources
 topic: Developer and implementation
 uuid: 394a627f-093c-400a-bfb3-c2aa24568deb
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+workflow-type: tm+mt
+source-wordcount: '1494'
+ht-degree: 0%
 
 ---
 
 
-# Vanliga frågor om datakällor
+# Vanliga frågor om Data Sources
 
 Det här avsnittet innehåller svar på vanliga frågor.
 
@@ -50,7 +53,7 @@ Data för datakällor skriver aldrig över befintliga rapportdata. I stället l�
 
 När du överför data från datakällor överför du de mätvärden som är tillgängliga i rapportgränssnittet.
 
-Om du till exempel överför Call Center Revenue för produkter du säljer på din webbplats kan du ha denna Call Center Revenue i samma rapport som Online Revenue. Du kommer dock inte att kunna använda den tillsammans med Besök, eftersom du inte överförde antalet Besök med den. Adobe kan bara rapportera mätvärden och element som du har överfört via datakällor (utöver de vanliga mätvärdena för marknadsföringsrapporter).
+Om du till exempel överför Call Center Revenue för produkter du säljer på din webbplats kan du ha denna Call Center Revenue i samma rapport som Online Revenue. Du kommer dock inte att kunna använda den tillsammans med Besök, eftersom du inte överförde antalet Besök med den. Adobe kan bara rapportera mätvärden och element som du har överfört via datakällor (utöver de vanliga mätvärdena i marknadsföringsrapporten).
 
 ## Vad händer om jag skickar negativa värden till rapportering via datakällor? {#section_77E5F37F3CFB4407BA32A91E6F3132B2}
 
@@ -98,9 +101,9 @@ Om du har en datakällfil där en eller flera av posterna inte har samma antal k
 
 ## Samlas information om datakällor in? {#section_E0E44C55A84245918E7CF5A4232F5C88}
 
-Information om datakällor kan sammanfogas. Adobe Customer Care måste dock bearbeta sammanslagningen på nytt från det tidigare datumet för att inkludera historiska data. Om det aktuella datumet till exempel är den 31 oktober 2015 och du överför data för 1-15 augusti 2015 med Datakällor, måste sammanslagningen ställas in på att bearbeta om från och med den 1 augusti 2015, så att de nyimporterade data inkluderas.
+Information om datakällor kan sammanfogas. adobe Customer Care måste dock bearbeta sammanslagningen på nytt från det historiska datumet för att inkludera historiska data. Om det aktuella datumet till exempel är den 31 oktober 2015 och du överför data för 1-15 augusti 2015 med Datakällor, måste sammanslagningen ställas in på att bearbeta om från och med den 1 augusti 2015, så att de nyimporterade data inkluderas.
 
-Observera också att data aldrig ska överföras direkt till en sammanslagningsrapportsserie med datakällor. Om du behöver dessa data i en sammanslagning bör de importeras till en standardrapport, som även kallas en *`child suite`* till sammanslagningen. Kontakta Adobes kundtjänst om du vill ha mer information.
+Observera också att data aldrig ska överföras direkt till en sammanslagningsrapportsserie med datakällor. Om du behöver dessa data i en sammanslagning bör de importeras till en standardrapport, som även kallas en *`child suite`* till sammanslagningen. Kontakta Adobe kundtjänst om du vill ha mer information.
 
 ## Varför visar inte sidvisningsrapporten några datakällsdata för en enstaka dag, men rätt data visas för en vecka? {#section_E361A93AFDE1487989B4B0C4438EEDF7}
 
@@ -121,7 +124,7 @@ I version 15 beter sig datakällorna olika beroende på källtypen:
 * Datakällor för fullständig bearbetning, webblogg och transaktions-ID visas som vanligt. När segment används filtreras data enligt segmentreglerna.
 * Standard- eller konverteringsdatakällor (annonskampanjer, CRM, kundnöjdhet, webbplatsprestanda, generiska sammanfattningsdata, onlineköp, leads och offerter samt offlinekanaldata) visas i version 15. Eftersom dessa datakällor inte är knutna till besök eller besökare filtreras de bort när segment tillämpas.
 
-## Är mätvärden som importeras med ett transaktions-ID tillgängliga i Clickstream-dataflöden och datalager? {#section_01CD14CA3E11490CB2CBA433C649029E}
+## Finns det data som importeras med ett transaktions-ID i Clickstream-dataflöden och data warehouse? {#section_01CD14CA3E11490CB2CBA433C649029E}
 
 Datafeeden innehåller alla transaktions-ID-mått som har tagits emot. Om du däremot överför transaktions-ID-data för ett tidigare datum är det enda sättet att hämta dessa data att hämta dataflödet igen för den dagen.
 
@@ -133,3 +136,14 @@ Nej för fullständig bearbetning, ja för transaktions-ID. Datakällor med full
 
 Nej. eVaror som överförs via datakällor för transaktions-ID läser bara från den lagrade profilinformationen, inte från profilen.
 Nej. eVars är de enda variabler som sparas i ögonblicksbilden av besökarprofilen.
+
+## Hur fungerar numeriska händelser och valutakurser med datakällor?
+
+Fullständig bearbetning stöder endast äldre händelselistformat, med undantag för händelsevärdet numeric/currency/Counter (mer än 1) direkt i händelselistan, det vill säga `"eventNN,eventKK"` inte `"eventNN=#.##"`. Det betyder att det bara stöder en räknarhändelse om den skickas i händelsekolumnen i datakällfilen och den ökar med 1.
+
+Om numeriska händelser, valutatecken eller räknarhändelser (fler än 1) krävs, använd produktlistan:
+
+```js
+s.products="Footwear;Running Shoes;1;99.99;event1=4.50";
+s.products="Footwear;Running Shoes;1;99.99;event1=4.50|event4=1.99";
+```
