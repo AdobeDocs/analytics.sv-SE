@@ -6,9 +6,9 @@ title: Referens för datakolumner
 topic: Reports and analytics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 translation-type: tm+mt
-source-git-commit: ca9b77ebf8104a1937d87aba5021e2deeccd6f8b
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3667'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |
 | `accept_language` | Visar alla godkända språk enligt HTTP-huvudet Accept-Language i en bildbegäran. | char(20) |
-| `aemassetid` | En variabel med flera värden som motsvarar tillgångs-ID:n (GUID:n) för en uppsättning med Adobe Experience Manager Assets. Ökar imponeringshändelser. | text |
+| `aemassetid` | En variabel med flera värden som motsvarar tillgångar-ID:n (GUID:n) för en uppsättning Adobe Experience Manager Assets. Ökar imponeringshändelser. | text |
 | `aemassetsource` | Identifierar resurshändelsens källa. Används i Adobe Experience Manager. | varchar(255) |
 | `aemclickedassetid` | Tillgångs-ID för en Adobe Experience Manager-resurs. Ökningar Klicka på händelser. | varchar(255) |
 | `browser` | Numeriskt ID för webbläsaren. Refererar till söktabellen browser.tsv. | int unsigned |
@@ -39,7 +39,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `browser_width` | Bredd i pixlar i webbläsarfönstret. | smallint unsigned |
 | `c_color` | Färgpalettens bitdjup. Används som en del av beräkningen av färgdjupsdimensionen. Använder JavaScript-funktionen screen.colorDepth(). | char(20) |
 | `campaign` | Variabel som används i spårningskoddimensionen. | varchar(255) |
-| `carrier` | Adobe Advertising Cloud integrationsvariabel. Anger mobiloperatör. Refererar till transportörens sökregister. | varchar(100) |
+| `carrier` | Adobe Advertising Cloud integrationsvariabel. Anger mobiloperatör. Refererar till transportörens uppslagstabell. | varchar(100) |
 | `channel` | Variabel som används i dimensionen Platsavsnitt. | varchar(100) |
 | `click_action` | Används inte längre. Adress för länkad som klickats i det äldre klickningsverktyget. | varchar(100) |
 | `click_action_type` | Används inte längre. Länktyp för det äldre klickmappsverktyget.<br>0: HREF URL<br>1: Anpassat ID<br>2: JavaScript onClick event<br>3: Formulärelement | tinyint unsigned |
@@ -71,7 +71,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `ef_id` | Det ef_id som används i Adobe Advertising Cloud-integreringar. | varchar(255) |
 | `evar1 - evar250` | Egna variabler 1-250. Varje organisation använder eVars på olika sätt. Det bästa stället att få mer information om hur er organisation fyller i respektive eVars är ett dokument som är specifikt för er organisation. | varchar(255) |
 | `event_list` | Kommaavgränsad lista med numeriska ID:n som representerar händelser som utlöses vid träffen. Innehåller både standardhändelser och anpassade händelser 1-1000. Använder Event.tsv-sökning. | text |
-| `exclude_hit` | Flagga som anger att träffen har uteslutits från rapportering. Kolumnen besök_num ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag<br>för användaragent 4: Undantag baserat på IP-adress<br>5: Viktig träffinformation saknas, t.ex. page_url, pagename, page_event eller event_list<br>6: JavaScript bearbetade inte korrekt träff<br>7: Kontospecifikt undantag, som i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träffen saknade en tidsstämpel i en rapportsserie som bara innehåller tidsstämplar, eller en träff innehöll en tidsstämpel i en rapportsvit<br>som inte är en tidsstämpel: 12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Target-träff som inte matchar en Analytics-träff<br>15: Används inte för närvarande.<br>16: Advertising Cloud-träff som inte matchar en Analytics-träff | tinyint unsigned |
+| `exclude_hit` | Flagga som anger att träffen har uteslutits från rapportering. Kolumnen besök_num ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag<br>för användaragent 4: Undantag baserat på IP-adress<br>5: Information om allvarlig träff saknas, t.ex. `page_url`, `pagename`, `page_event`eller `event_list`<br>6: JavaScript bearbetade inte korrekt träff<br>7: Kontospecifikt undantag, som i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träffen saknade en tidsstämpel i en rapportsserie som bara innehåller tidsstämplar, eller en träff innehöll en tidsstämpel i en rapportsvit<br>som inte är en tidsstämpel: 12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Målträff som inte matchar en Analytics-träff<br>15: Används inte för närvarande.<br>16: Advertising Cloud-träff som inte matchar en Analytics-träff | tinyint unsigned |
 | `first_hit_page_url` | Besökarens allra första URL. | varchar(255) |
 | `first_hit_pagename` | Variabel som används i dimensionen Ursprungligt på startsidan. Besökarens ursprungliga startsidnamn. | varchar(100) |
 | `first_hit_ref_domain` | Variabel som används i den ursprungliga referensdomändimensionen. Baserat på first_hit_reference. Den första refererande domänen för besökaren. | varchar(100) |
@@ -161,7 +161,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `pagename` | Används för att fylla siddimensionen. Om sidnamnsvariabeln är tom använder Analytics page_url i stället. | varchar(100) |
 | `paid_search` | Flagga som anges om träffen matchar betald sökningsidentifiering. | tinyint unsigned |
 | `partner_plugins` | Används inte. En del av en kasserad funktion för många år sedan. | varchar(255) |
-| `persistent_cookie` | Används av Persistent Cookie Support-dimensionen. Anger om besökaren stöder cookies som inte tas bort efter varje träff. | char(1) |
+| `persistent_cookie` | Används av dimensionen Persistent Cookie Support. Anger om besökaren stöder cookies som inte tas bort efter varje träff. | char(1) |
 | `plugins` | Används inte längre. Lista med numeriska ID:n som motsvarar plugin-program som är tillgängliga i webbläsaren. Använder plugins.tsv-sökning. | varchar(180) |
 | `pointofinterest` | Intressepunktsnamn för mobiltjänster | varchar(255) |
 | `pointofinterestdistance` | Avstånd för mobiltjänster till intressanta center | varchar(255) |
@@ -201,8 +201,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `state` | State-variabel. | varchar(50) |
 | `stats_server` | Inte till användning. Adobe intern server som bearbetade träffen. | char(30) |
 | `t_time_info` | Lokal tid för besökaren. Formatet är följande: M/D/YYYY HH:MM:SS Month (0-11, 0=January) Tidszonsförskjutning (i minuter) | varchar(100) |
-| `tnt` | Används i integreringar med Adobe Target. | text |
-| `tnt_action` | Används i integreringar med Adobe Target. | text |
+| `tnt` | Används i Adobe Target integreringar. | text |
+| `tnt_action` | Används i Adobe Target integreringar. | text |
 | `tnt_post_vista` | Används inte längre. Använd post_tnt i stället. | text |
 | `transactionid` | En unik identifierare där olika datapunkter kan överföras senare via datakällor. | text |
 | `truncated_hit` | En flagga som anger att bildbegäran har trunkerats. Anger att en partiell träff togs emot. <br>Y: Träet trunkerades. partiell träff mottagen <br>N: Träet trunkerades inte. fullständig träff mottagen | char(1) |
