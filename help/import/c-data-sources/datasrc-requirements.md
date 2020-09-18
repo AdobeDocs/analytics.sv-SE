@@ -5,7 +5,10 @@ title: Krav och överföringsgränser
 topic: Developer and implementation
 uuid: d79fca77-fa0e-4171-b978-cdee5c67d9df
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 Information om kraven för rapportsviten innan du använder datakällor.
 
-I följande avsnitt visas begränsningar som gäller för datakällor och data som importeras till marknadsföringsrapporter och analyser.
+I följande avsnitt visas begränsningar som gäller för datakällor och data som importeras till marketing reports and analytics.
 
 * [Storleksgränser](/help/import/c-data-sources/datasrc-requirements.md#section_77B06D82CB374FFABD39F7D9A49D8E18)
 * [Datum](/help/import/c-data-sources/datasrc-requirements.md#section_2B8E69BA1E0B4DEAB4E2034C2B9E16C2)
@@ -40,7 +43,7 @@ I följande avsnitt visas begränsningar som gäller för datakällor och data s
 
 * När du överför en datakällfil utför datakällor en grundläggande dataverifiering för att säkerställa att filen inte innehåller formateringsfel. Om ett fel påträffas i en fil skickas ett e-postmeddelande och bearbetningen avbryts.
 * Datafält får inte innehålla semikolon. Datakällor hoppar över poster som innehåller ett semikolon.
-* Data från webblogg, trafik och vissa allmänna datakällgrupper är inte tillgängliga i datalager eller Discover. Mer information finns i [Datatyper och -kategorier](/help/import/c-data-sources/c-datasrc-types/datasrc-categories.md).
+* Data från webblogg, trafik och vissa allmänna datakällgrupper är inte tillgängliga i Data warehouse eller Discover. Mer information finns i [Datatyper och -kategorier](/help/import/c-data-sources/c-datasrc-types/datasrc-categories.md).
 * Datakällor stöder inte serialiserade händelser.
 
 ## Stöd för flera byte {#section_96C8D26B21184C3E839865DB6F23EA22}
@@ -92,8 +95,8 @@ Om du skickar en UTF-8- eller ISO-8859-1-fil och rapportsviten inte har konfigur
 * De mest användbara rapporterna för att visa webbloggdata är trafikrapporter, till exempel sidvyer.
 * Sidnamn visas som hela URL:en, inklusive frågesträngen.
 * Varje filbegäran visas som en separat sidvy, inklusive formatmallar och bildfiler.
-* Om du lägger till information i URL:en kan filerna spelas in som separata sidor. Marknadsföringsrapporter registrerar till exempel följande URL:er som två separata sidor:
+* Om du lägger till information i URL:en kan filerna spelas in som separata sidor. Adobe registrerar till exempel följande URL:er som två separata sidor:
 
-[!DNL /jokes/misc/snail_joke.html?userid=12345]
+`/jokes/misc/snail_joke.html?userid=12345`
 
-[!DNL /jokes/misc/snail_joke.html?userid=98765]
+`/jokes/misc/snail_joke.html?userid=98765`
