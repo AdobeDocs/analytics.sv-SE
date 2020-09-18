@@ -4,9 +4,9 @@ title: Hantera Data Warehouse-förfrågningar
 topic: Data warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '152'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,6 @@ Om du arbetar på den här fliken kan du
 * Prioritera om rapporter genom att dra och släppa dem på en ny plats i kön.
 * Om du vill se när en begäran har börjat bearbetas klickar du på ett ID för en schemalagd begäran och undersöker popup-fönstret som öppnas.
 
->[!NOTE]
->
->Om du vill avbryta en begäran från Data warehouse [följer du de här stegen](https://helpx.adobe.com/analytics/kb/cancel-data-warehouse-requests.html).
+Klicka på ett jobb för att se enskilda begäranden för det jobbet.
 
+* Begränsad tariff: Din organisation kör för många Data warehouse-begäranden. Begäran pausas tills andra dataförfrågningar har slutförts.
