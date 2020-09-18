@@ -2,9 +2,9 @@
 title: Felsökning av klassificeringsimporterare
 description: Vanliga överföringsproblem vid användning av klassificeringsimporteraren.
 translation-type: tm+mt
-source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ De vanligaste problemen vid överföring av klassificeringsdata till Adobe.
 
 Klassificeringar kräver en viss filtyp och ett visst format för att kunna överföras. Om den sparas felaktigt genereras ett fel och inga rader bearbetas. Felet som returnerades är ofta *&quot;Första kolumnen måste vara nyckeln&quot;*, men kan vara hur många fel som helst. Kontrollera följande:
 
-* **Överföra ett kalkylblad (.xlsx) i stället för en .tab- eller .txt-fil**: Klassificeringsimporteraren kan inte hantera .xls- eller .xlsx-filer. I dialogrutan Spara som i Excel anger du rätt typ av Spara som:
+* **Överföra ett kalkylblad (.xlsx) i stället för en .tab- eller .txt-fil**: Du kan få felmeddelandet *&quot;Den första kolumnen måste vara nyckeln&quot;* när du överför klassificeringsfiler i ett felaktigt format. Klassificeringsimporteraren kan inte hantera .xls- eller .xlsx-filer. I dialogrutan Spara som i Excel anger du rätt typ av Spara som:
    * I Windows använder du filformatet `Text (Tab delimited) (*.txt)`
    * I Mac ska du använda filformatet `Windows Formatted Text`.
 * **Ändra filnamnstillägget när du har sparat det som en arbetsbok**: Om du försöker byta namn direkt på ett filtillägg genereras en ogiltig arbetsbok. Använd bara Excel-funktionen Spara som eller redigera klassificeringar i en textredigerare som Anteckningar++.
@@ -38,6 +38,7 @@ Om överföringsfilen är korrekt formaterad försöker den att importera så m�
 * **Det finns underklassificeringar som är felaktigt konfigurerade**: Om det finns underklassificeringar kontrollerar du följande:
    * Alla underklassificeringsvärden har ett överordnat klassificeringsvärde
    * Inga två underklassificeringar refererar till samma överordnade klassificeringsvärde
+* **Kolumnmatchningsfel**: Felmeddelandet *&quot;Nyckeln på raden har för många kolumner&quot;* visas om det finns ett ogiltigt antal kolumner på en rad. Du har till exempel tre kolumner i din klassificeringsöverföring och variabeln har bara en klassificering. Validera överföringsfilen för att kontrollera att antalet kolumner inte är större än antalet klassificeringar som har konfigurerats för variabeln.
 
 ## Felsöka FTP-import
 
