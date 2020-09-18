@@ -2,9 +2,9 @@
 title: Genomsnittlig tid på plats
 description: Genomsnittlig tid mellan träffar för en given dimensionsartikel.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,10 @@ Den totala tidsåtgången för `Product page A` är `00:03:10`. Det fanns två s
 
 Den genomsnittliga tiden på platsen för `Product page A` är `00:01:35`.
 
+>[!NOTE]
+>
+>Det här måttet visar värdet `"Invalid"` om dimensionsobjektet endast innehåller träffar som var de senaste vid ett besök. Det här måttet kräver en efterföljande träff för att spåra hur mycket tid som använts.
+
 ## Genomsnittlig tid på plats (sekunder)
 
 Mätvärdet för genomsnittlig tid på plats (sekunder) visar samma data som ett heltal i stället för i `HH:MM:SS` format. Det här måttet är mest värdefullt som en komponent i beräknade värden.
@@ -77,6 +81,6 @@ Eftersom det fanns en enda sekvens i uppdelningsdimensionen används en annan n�
 
 ## Procent över 100 %
 
-Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga tid på platsen, och täljaren är dimensionsobjektets genomsnittliga tid på platsen. Om hela dimensionens genomsnittliga tid på platsen är lägre än en given dimensionsposts genomsnittliga tid på platsen, visas procentsatser över 100 %. Sortering av rankade rapporter efter det här måttet visar en onormal genomsnittlig tid på webbplatsvärden, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering efter andra mätvärden, till exempel [Besök](visits.md), i rankade rapporter.
+Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga tid på platsen, och täljaren är dimensionsobjektets genomsnittliga tid på platsen. Om hela dimensionens genomsnittliga tid på platsen är lägre än en given dimensionsposts genomsnittliga tid på platsen, visas procentsatser över 100 %. Sortering av rankade rapporter efter det här måttet visar en onormal genomsnittlig tid på webbplatsvärden, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering efter andra mätvärden, som [Besök](visits.md), i rankade rapporter.
 
 Mer allmän information om hur lång tid du tillbringar finns i [Tidsåtgång - översikt](time-spent.md) .
