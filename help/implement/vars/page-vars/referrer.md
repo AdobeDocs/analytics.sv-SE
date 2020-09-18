@@ -2,9 +2,9 @@
 title: referent
 description: Åsidosätt den automatiskt insamlade referenten för en träff.
 translation-type: tm+mt
-source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '246'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ s.referrer = digitalData.page.pageInfo.referringURL;
 
 >[!CAUTION]
 >
->Undvik att ställa in den här variabeln på värden som inte är URL-adresser.
+>Undvik att ställa in den här variabeln på värden som inte är URL-adresser. Ta inte bort URL-adressens protokoll.
 
 ## Exempel
 
