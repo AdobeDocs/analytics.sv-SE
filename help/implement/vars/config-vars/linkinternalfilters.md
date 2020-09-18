@@ -2,9 +2,9 @@
 title: linkInternalFilters
 description: Använd variabeln linkInternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # linkInternalFilters
 
-Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om [`trackExternalLinks`](trackexternallinks.md) är aktiverat skickas en bildförfrågan till Adobe direkt när en besökare klickar på en länk för att lämna din webbplats. Variablerna [`linkExternalFilters`](linkexternalfilters.md) och `linkInternalFilters` bestämmer vilka länkar som betraktas som interna/externa.
+Med AppMeasurement kan du automatiskt spåra länkar som pekar utanför webbplatsen. Om [`trackExternalLinks`](trackexternallinks.md) är aktiverat skickas en bildförfrågan till Adobe till höger när en besökare klickar på en länk för att lämna din webbplats. Variablerna [`linkExternalFilters`](linkexternalfilters.md) och `linkInternalFilters` bestämmer vilka länkar som betraktas som interna/externa.
 
 Om den här variabeln innehåller ett värde fungerar automatisk spårning av avslutningslänk som en blockeringslista. Om ett länkklick inte matchar några `linkInternalFilters` värden betraktas det som en avslutslänk. Hela URL:en granskas mot den här variabeln. Om [`linkLeaveQueryString`](linkleavequerystring.md) är aktiverat undersöks även frågesträngen.
 
 Om du använder både `linkInternalFilters` och `linkExternalFilters` samtidigt måste den klickade länken matcha `linkExternalFilters` och **inte matcha** `linkInternalFilters` för att betraktas som en avslutslänk. Om en klickad länk matchar både villkoren för avslutningslänk och nedladdningslänk får nedladdningslänkstypen prioritet.
+
+Aktivitetskartan använder den här variabeln för att avgöra vilka länkar som är interna för din plats. Adobe rekommenderar att du ställer in den här variabeln för implementeringar som använder aktivitetskarta.
 
 >[!NOTE]
 >
@@ -24,7 +26,7 @@ Om du använder både `linkInternalFilters` och `linkExternalFilters` samtidigt 
 
 ## Utgående länkar - Spåra aldrig i Adobe Experience Platform Launch
 
-Fältet Aldrig spårning är en kommaavgränsad lista med filter (vanligtvis domäner) under [!UICONTROL Link Tracking] dragspelet när Adobe Analytics-tillägget konfigureras.
+Fältet Aldrig spårning är en kommaavgränsad lista med filter (vanligtvis domäner) under [!UICONTROL Link Tracking] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
 1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
@@ -38,7 +40,7 @@ Placera filter som du aldrig vill ska spåras som avslutningslänkar i det här 
 Variabeln `s.linkInternalFilters` är en sträng som innehåller filter (till exempel domäner) som du anser vara interna för platsen. Separera flera filter med kommatecken utan mellanslag.
 
 ```js
-s.linkInternalFilters = "example.com,example.net,example.org";
+s.linkInternalFilters = "example.com,example.net";
 ```
 
 Tänk på följande implementeringsexempel som om det vore på `adobe.com`:
@@ -50,5 +52,5 @@ Tänk på följande implementeringsexempel som om det vore på `adobe.com`:
 </script>
 
 <!-- The following link is an exit link because it does not match the anything under linkInternalFilters -->
-<a href = "example.com">Example link 2</a>
+<a href = "example.org">Example link 2</a>
 ```
