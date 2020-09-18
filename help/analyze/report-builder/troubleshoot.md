@@ -4,10 +4,10 @@ title: Felsökning och bästa praxis för Report Builder
 topic: Report builder
 uuid: 36a08143-dc78-40f5-9ce9-7d16980aa27b
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 86%
+source-wordcount: '1378'
+ht-degree: 82%
 
 ---
 
@@ -86,3 +86,4 @@ En lista med felmeddelanden som ibland kan visas när du använder Report Builde
    3. Ta bort `calcChain.xml`.
    4. Zippa upp innehållet igen och ändra filnamnstillägget tillbaka till `.xlsx`.
    5. Öppna arbetsboken i Excel och uppdatera alla förfrågningar från Report Builder.
+* **Excel-celler som är associerade med indatafiltren eller utdataområdet kan ha tagits bort**: Report Builder använder Excel-namn för att bifoga dataförfrågningar till celler. Om du tar bort Excel-namn från Names Manager visas det här felet. Begäranden kan inte återställas om Excel-namn tas bort. Om arbetsboken har schemalagts kan du antingen hämta en kopia från schemaläggningshanteraren eller öppna tidigare levererade kopior av arbetsboken.
