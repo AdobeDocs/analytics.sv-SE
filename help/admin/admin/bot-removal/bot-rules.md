@@ -5,9 +5,9 @@ title: Bot Rules - översikt
 topic: Admin tools
 uuid: 3cb9e29d-1c37-43de-b7ac-34441093a60e
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1314'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Punkttrafikdata lagras i en separat databas för visning i rapporter om start- o
 
 ## Standard IAB-robotregler
 
-Du kan aktivera standardregler för IAB-robotar genom att markera [!UICONTROL Enable IAB Bot Filtering Rules] kryssrutan. Det här urvalet tar bort botar i IAB:s lista International Advertising Bureau&#39;s (International Advertising Bureau&#39;s) International Spiders &amp; Bots för att ta bort robottrafiken. IAB uppdaterar den här listan varje månad.
+Du kan aktivera standardregler för IAB-robotar genom att markera [!UICONTROL Enable IAB Bot Filtering Rules] kryssrutan. Det här urvalet tar bort botar i IAB:s lista International Advertising Bureau&#39;s (International Advertising Bureau&#39;s) International Spiders &amp; Bots för att ta bort robottrafiken. Adobe uppdaterar denna lista från IAB varje månad.
 
 ![](assets/bot-iab-checkbox.png)
 
-Adobe kan inte tillhandahålla den detaljerade IAB-robotlistan till kunder, men du kan använda Bots Report för att visa en lista med bots som har kommit åt din webbplats. Om du vill skicka in en robot till IAB-listan går du till [IAB](https://www.iab.com).
+Adobe kan inte tillhandahålla den detaljerade IAB-robotlistan till kunder, men du kan använda Bots Report för att visa en lista med bots som har använt din webbplats. Om du vill skicka in en robot till IAB-listan går du till [IAB](https://www.iab.com).
 
 ## Anpassade robotregler
 
