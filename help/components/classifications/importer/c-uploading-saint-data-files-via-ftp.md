@@ -5,9 +5,9 @@ title: FTP-import
 topic: Admin tools
 uuid: a914970d-ba02-4111-9dcf-06448f71b9f3
 translation-type: tm+mt
-source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '703'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Efter en inledande överföring i en rapportserie (för en viss variabel eller r
 
 Varje nytt nyckelvärde som du överför räknas mot dina unika värden för den variabeln för månaden.
 
-Om du har överskridit dina unika värden för månaden visas inte motsvarande klassificeringsdata för de unika värdena i rapporten. Dessa klassificeringar visas antingen i data warehouse eller i ad hoc-analyser.
+Om du har överskridit dina unika värden för månaden visas inte motsvarande klassificeringsdata för de unika värden som har överskridits vid rapportering. Dessa klassificeringar visas antingen i data warehouse eller i ad hoc-analyser.
 
 >[!NOTE]
 >
@@ -95,3 +95,7 @@ Mer information om FTP-servrar finns i [FTP och sFTP](https://docs.adobe.com/con
 1. Klicka på **[!UICONTROL Save]**.
 
 När du har skapat ett FTP-konto kan du redigera eller ta bort det genom att klicka på lämplig länk bredvid det önskade FTP-kontot.
+
+>[!NOTE]
+>
+>Meddelanden skickas inte om en import inte medför några ändringar i en klassificering. Ett e-postmeddelande skickas bara om det lyckas och leder till ändringar i en klassificering.
