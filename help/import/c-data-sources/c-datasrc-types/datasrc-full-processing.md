@@ -5,9 +5,9 @@ title: Fullständig bearbetning
 topic: Developer and implementation
 uuid: 590ae89c-6e17-453b-b701-ce1adbea6fa4
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '722'
 ht-degree: 8%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 8%
 
 # Fullständig bearbetning
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Fullständig bearbetning av datakällor kommer att bli inaktuell i framtiden.
+>Adobe rekommenderar att man använder API:t för [datainfogning (BDIA)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda hela datakällor. Adobe planerar att i framtiden ta bort alla datakällor för bearbetning.
 
 Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
 
-Fullständig databearbetning av datakälldata bearbetas som om de togs emot av Adobe-servrar vid den angivna tidpunkten (varje träff innehåller en tidsstämpel).
+Data från datakällor bearbetas som om de togs emot av Adobe-servrar vid den angivna tidpunkten (varje träff innehåller en tidsstämpel).
 
 * [Besökarprofil](/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md#section_6065627D0C144506965F562C80AE67F8)
 * [Kolumnreferens](/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md#section_92BAE76639E3404E97276B1BE0581078)
@@ -66,7 +66,7 @@ En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen
   <tr> 
    <td colname="col1"> <p><i>eVarN</i> </p> </td> 
    <td colname="col2"> <p><i>eVarN</i>, dvs. &lt;eVar2&gt;..&lt;/eVar2&gt; </p> </td> 
-   <td colname="col3"> <p>Konvertera eVar-namn. Du kan ha upp till 75 eVars ( <span class="varname"> eVar1 </span> - <span class="varname"> eVar75 </span>). </p> <p>Du kan ange eVar-namnet (eVar12) eller ett eget namn (Ad Campaign 3). </p> </td> 
+   <td colname="col3"> <p>Konverteringsnamn för eVar. Du kan ha upp till 75 eVars ( <span class="varname"> eVar1 </span> - <span class="varname"> eVar75 </span>). </p> <p>Du kan ange eVar namn (eVar12) eller ett eget namn (annonskampanj 3). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>händelser </p> </td> 
@@ -114,12 +114,12 @@ En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen
   <tr> 
    <td colname="col1"> <p>pageURL </p> </td> 
    <td colname="col2"> <p>pageURL </p> </td> 
-   <td colname="col3"> <p>Sidans URL (till exempel <code>https://www.mysite.com/index.html)</code>. </p> </td> 
+   <td colname="col3"> <p>Sidans URL (till exempel <code>https://www.example.com/index.html)</code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>produkter </p> </td> 
    <td colname="col2"> <p>produkter </p> </td> 
-   <td colname="col3"> <p>Produktlista (till exempel <code> "Sports;Ball;1;5.95") </code>. </p> </td> 
+   <td colname="col3"> <p>Produktlista (till exempel <code> "Sports;Ball;1;5.95"</code>). Kan innehålla maximalt 4 096 byte per rad.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prop1 - prop75 </p> </td> 
