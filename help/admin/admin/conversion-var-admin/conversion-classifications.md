@@ -2,10 +2,10 @@
 description: Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan t.ex. klassificera alla betalsökningskampanjer i en kategori som popmusiktermer och rapportera hur framgångsrik den kategorin är i förhållande till mått som instanser (klickningar) och konvertering till lyckade händelser.
 title: Konverteringsklassificeringar
 translation-type: tm+mt
-source-git-commit: de7dd41bba6907d6af7a59dc385ca6a185d503ae
+source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 4%
+source-wordcount: '511'
+ht-degree: 3%
 
 ---
 
@@ -17,6 +17,10 @@ Klassificeringar används för att kategorisera värden i grupper och rapportera
 Med konverteringsklassificeringar kan du klassificera konverteringsvariabler. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med hjälp av de associerade dataegenskaperna.
 
 När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till lämplig klassificering.
+
+>[!WARNING]
+>
+>Om du byter namn på en klassificering kan det orsaka problem med befintliga regler som har skapats i [klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md). Om du byter namn på en klassificering som har klassificeringsregler måste du korrigera varje regel så att den pekar på den nya klassificeringen.
 
 ## Beskrivningar av konverteringsklassificeringar
 
