@@ -2,10 +2,10 @@
 title: Vanliga frågor om implementering
 description: Vanliga frågor om implementering och länkar till mer information.
 translation-type: tm+mt
-source-git-commit: b569f87dde3b9a8b323e0664d6c4d1578d410bb7
+source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 68%
+source-wordcount: '498'
+ht-degree: 48%
 
 ---
 
@@ -49,3 +49,13 @@ var s = new Object();
 >* Ta bort hela `s_code.js` filen, såvida du inte också tar bort alla referenser till filen på varje sida.
 >* Ändra variabeln så att den pekar bort från Adobe. `trackingServer` AppMeasurement skickar fortfarande bildbegäranden som returnerar 404 fel.
 
+
+## Jag körde AppMeasurement via en kodanalyserare och flaggade användningen av appen `Math.random()` som en potentiell säkerhetsrisk. Används `Math.random()` med känsliga data?
+
+Nej. Siffrorna som använder `Math.random()` används inte för att maskera, skicka eller ta emot känsliga data. Data som skickas till datainsamlingsservrar för Adobe är beroende av säkerheten för den underliggande HTTPS-anslutningen. <!-- AN-173590 -->
+
+AppMeasurement använder `Math.random()` i tre huvudområden:
+
+* **Prov**: Beroende på hur implementeringen fungerar kan viss information samlas in för endast en liten andel av besökarna på webbplatsen. `Math.random()` används för att avgöra om en viss besökare ska skicka data. I de flesta implementeringar används inte samplingar.
+* **ID för reservbesökare**: Om besökar-ID:t inte kan hämtas från cookies genereras ett slumpmässigt besökar-ID. Den här delen av AppMeasurement använder två anrop till `Math.random()`.
+* **Cachepublicering**: Ett slumpmässigt tal läggs till i slutet av URL:er för bildbegäran för att förhindra webbläsarcachelagring.
