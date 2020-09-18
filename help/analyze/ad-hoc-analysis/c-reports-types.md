@@ -4,7 +4,7 @@ title: Rapporttyper
 topic: Ad hoc analysis
 uuid: 357102eb-a172-40ec-a302-01c87abaacb5
 translation-type: tm+mt
-source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
+source-git-commit: 10f93420cbc957bcce51394cd3f399bd51114af7
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 1%
@@ -125,7 +125,7 @@ c_reports_next_server_flow.xml
 
  -->
 
-Om du till exempel har specifika data på olika servrar eller har speglade data på separata servrar visar rapporten sökvägen mellan servrar som användarna träffar på. Detta gäller även domäner på webbplatsen. Du kan till exempel se hur många användare som har gått från en `https://www.mysite.com` till `https://info.mysite.com` eller `https://sales.mysite.com`.
+Om du till exempel har specifika data på olika servrar eller har speglade data på separata servrar visar rapporten sökvägen mellan servrar som användarna träffar på. Detta gäller även domäner på webbplatsen. Du kan till exempel se hur många användare som har gått från en `https://www.example.com` till `https://info.example.com` eller `https://sales.example.com`.
 
 ## Nästa avsnittsflöde {#concept_7C9C8567E7DF477DA186E47DD3FD47A4}
 
@@ -176,7 +176,7 @@ c_reports_previous_server_flow.xml
 
  -->
 
-Om du till exempel har specifika data på olika servrar eller har speglade data på separata servrar visar rapporten sökvägen mellan servrar som användarna träffar på. Detta gäller även domäner på webbplatsen. Du kan till exempel se hur många användare som har gått från en `www.mysite.com` till `info.mysite.com` eller `sales.mysite.com`.
+Om du till exempel har specifika data på olika servrar eller har speglade data på separata servrar visar rapporten sökvägen mellan servrar som användarna träffar på. Detta gäller även domäner på webbplatsen. Du kan till exempel se hur många användare som har gått från en `www.example.com` till `info.example.com` eller `sales.example.com`.
 
 ## Konverteringstrattrapporter {#concept_35A2EB61E84441CBB670C2E02CA26F81}
 
