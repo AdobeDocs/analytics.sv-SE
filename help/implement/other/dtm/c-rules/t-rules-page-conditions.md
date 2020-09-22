@@ -1,16 +1,19 @@
 ---
 description: Skapa regler som bestämmer vilka sidor en regel aktiveras på.
 keywords: Dynamic Tag Management;rule;create rule;new rule;page load rule
-solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
-title: Skapa villkor för sidladdningsregler
+solution: Experience Cloud,Analytics,Target
+title: Skapa villkor för sidinläsningsregler
 uuid: 30a6c69f-56e7-414e-9636-64c262e7ccd4
 translation-type: tm+mt
-source-git-commit: ebf149df7974f9f2889b6fe938088eda90c84051
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 10%
 
 ---
 
 
-# Skapa villkor för sidladdningsregler
+# Skapa villkor för sidinläsningsregler
 
 Skapa regler som bestämmer vilka sidor en regel aktiveras på.
 
