@@ -1,11 +1,14 @@
 ---
 description: Skapa ett dataelement i Dynamic Tag Management.
 keywords: Dynamic Tag Management;data element;create new data element;name;type;default value;force lowercase value;remember this value for
-solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
+solution: Experience Cloud,Analytics,Target
 title: Skapa ett dataelement
 uuid: eacd5c60-6197-4129-a9e1-a39e9a58b38a
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +29,7 @@ Skapa ett dataelement i Dynamic Tag Management.
     </thead> 
     <tr class="chrow strow"> 
       <td class="choption"><strong>Namn</strong></td> 
-      <td class="chdesc stentry"> <p>Dataelementets egna namn som en marknadsförare kan identifiera. Exempel, 
+      <td class="chdesc stentry"> <p>Dataelementets egna namn som en marknadsförare kan känna igen. Exempel, 
         <code>
           Product ID
         </code>. </p> <p> <p>Obs!  Namnet refereras av regelbyggaren, inte ett ID. Om du ändrar namnet på dataelementet måste du ändra dess referens i alla regler som använder det. </p> </p> </td> 
@@ -54,5 +57,5 @@ Skapa ett dataelement i Dynamic Tag Management.
     </tr> 
    </table>
 
-   Mer information om hur du använder dataelement finns i [Dataelement](https://docs.adobe.com/content/help/en/dtm/using/resources/data-elements.html) i produktdokumentationen för Adobe Tag Management.
+   Mer information om hur du använder dataelement finns i [Dataelement](https://docs.adobe.com/content/help/en/dtm/using/resources/data-elements.html) i produktdokumentationen för tagghantering i Adobe.
 1. Klicka på **[!UICONTROL Save Data Element]**.
