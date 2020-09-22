@@ -1,18 +1,21 @@
 ---
-description: A FAQ about the automatic configuration of the Adobe Analytics deployment. Den automatiska konfigurationsmetoden hanterar AppMeasurement-koden åt dig.
+description: Frågor och svar om den automatiska konfigurationen av Adobe Analytics-distributionen. Den automatiska konfigurationsmetoden hanterar AppMeasurement-koden åt dig.
 keywords: Dynamic Tag Management;plug-ins;staging;effect on current settings;revision history;potential pitfalls;report suite id;currency code;tracking server;ssl tracking server;custom code;library management
-solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
-title: Frågor och svar om Adobe Analytics Tool
+solution: Experience Cloud,Analytics,Target
+title: Vanliga frågor om Adobe Analytics-verktyget
 uuid: 8fcef893-e305-4a95-a033-9066a56b09cd
 translation-type: tm+mt
-source-git-commit: 2ffa989156dd9bc4f6ef9a216e8c06425cc39440
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 4%
 
 ---
 
 
-# Frågor och svar om Adobe Analytics Tool
+# Vanliga frågor om Adobe Analytics-verktyget
 
-A FAQ about the automatic configuration of the Adobe Analytics deployment. Den automatiska konfigurationsmetoden hanterar koden åt dig [!DNL AppMeasurement] .
+Frågor och svar om den automatiska konfigurationen av Adobe Analytics-distributionen. Den automatiska konfigurationsmetoden hanterar koden åt dig [!DNL AppMeasurement] .
 
 <table id="table_A50D00E2C47A473B92DA800FB08FE640"> 
  <thead> 
@@ -24,7 +27,7 @@ A FAQ about the automatic configuration of the Adobe Analytics deployment. Den a
  <tbody> 
   <tr> 
    <td colname="col1"> <p> Var lägger jag mina plugin-program när jag implementerar Adobe Analytics via DTM? </p> </td> 
-   <td colname="col2"> <p> Om du använder DTM för att hantera <code> s_code</code><code> s_code</code>plugin-program manuellt kan de läggas till i samma redigerare som värddatorn, på samma sätt som i en vanlig Adobe Analytics-implementering. </p> <p>Det är emellertid också ett alternativ att placera plugin-programmen i redigeraren under <span class="term"> Anpassa sidkod</span> i verktygsinställningarna. Båda genomförandemetoderna bör vara lika effektiva. </p> </td> 
+   <td colname="col2"> <p> Om du använder DTM för att hantera <code> s_code</code>plugin-program manuellt kan de läggas till i samma redigerare som värddatorn <code> s_code</code>på samma sätt som i en vanlig Adobe Analytics-implementering. </p> <p>Det är emellertid också ett alternativ att placera plugin-programmen i redigeraren under <span class="term"> Anpassa sidkod</span> i verktygsinställningarna. Båda genomförandemetoderna bör vara lika effektiva. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Om jag gör konfigurationsändringar i den nya versionen av verktyget, kan jag testa mellanlagring innan jag publicerar till produktion? </p> </td> 
@@ -35,7 +38,7 @@ A FAQ about the automatic configuration of the Adobe Analytics deployment. Den a
    <td colname="col2"> <p>Nej. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Om jag byter från manuell bibliotekshantering till Hanteras av Adobe, kommer mina aktuella inställningar eller kod att påverkas? </p> </td> 
+   <td colname="col1"> <p>Om jag byter från manuell bibliotekshantering till Hanteras av Adobe, kommer mina nuvarande inställningar eller kod att påverkas? </p> </td> 
    <td colname="col2"> <p>All användarkod som du har angett skrivs över med det grundläggande <span class="keyword"> AppMeasurement</span> -biblioteket. Du måste flytta den här koden till det nya avsnittet <span class="wintitle"> Egen sidkod</span> i slutet av verktygskonfigurationen så att koden fortsätter att köras. Med den här metoden kan <span class="keyword"> AppMeasurement</span> -biblioteket hanteras (och uppgraderas) separat från användarens anpassade kod. </p> </td> 
   </tr> 
   <tr> 
@@ -45,7 +48,7 @@ A FAQ about the automatic configuration of the Adobe Analytics deployment. Den a
  </tbody> 
 </table>
 
-Se [Lägg till Adobe Analytics Tool](/help/implement/other/dtm/c-aa-tool/analytics-dtm.md) för konfigurationsinformation.
+Mer konfigurationsinformation finns i [Lägg till Adobe Analytics-verktyg](/help/implement/other/dtm/c-aa-tool/analytics-dtm.md) .
 
 ## Potentiella förmåner {#section_201BF9E0EB7D4BC2B72A617543C2030B}
 
