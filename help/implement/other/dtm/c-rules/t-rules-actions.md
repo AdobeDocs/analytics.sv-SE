@@ -1,11 +1,11 @@
 ---
 description: Ställ in åtgärder som du vill att villkoret ska utlösas.
 keywords: Dynamic Tag Management;rule;create rule;new rule;javascript/third party tags;set up actions for condition;add new script;non-sequential javascript;sequential javascript;non-sequential html
-solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
+solution: Experience Cloud,Analytics,Target
 title: Ställ in åtgärder för villkoret som ska utlösa
 uuid: 2e892f0b-7261-41ee-b849-6e3054a38de0
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 7%
@@ -19,7 +19,7 @@ Ställ in åtgärder som du vill att villkoret ska utlösas.
 
 När du har ställt in villkoret måste du ställa in de åtgärder som du vill att villkoret ska utlösas. Dessa åtgärder kan omfatta [!DNL Analytics] händelser, taggar från tredje part och egna skript. I det här exemplet beskrivs hur du konfigurerar skript eller tredjepartstaggar.
 
-Förutom integrerade verktyg som [!DNL Adobe Analytics] och Google Analytics kan Dynamic Tag Management utlösa alla typer av JavaScript eller infoga HTML på din webbplats, på utvalda sidor eller i specifika scenarier.
+Förutom integrerade verktyg som [!DNL Adobe Analytics] och Google Analytics kan Dynamic Tag Management utlösa alla typer av JavaScript eller injicera HTML på din webbplats, på utvalda sidor eller i specifika scenarier.
 
 Varje regel kan utlösa så många skript eller HTML-injektioner du vill.
 
