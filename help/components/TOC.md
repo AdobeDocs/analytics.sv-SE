@@ -4,9 +4,8 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Components Guide
 user-guide-description: Help organize your data using components such as segments, calculated metrics, virtual report suites, and alerts.
-breadcrumb-url: /docs/analytics/components/home.html
 translation-type: tm+mt
-source-git-commit: c9b9fc1d39e0d042d423003113888a990099fd68
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 57%
@@ -93,7 +92,7 @@ ht-degree: 57%
    + [Spårningskod](dimensions/tracking-code.md)
    + [Anledning till avanmälan av spårning](dimensions/tracking-opt-out-reason.md)
    + [US DMA](dimensions/us-dma.md)
-   + [Dusdelstater](dimensions/us-states.md)
+   + [USA](dimensions/us-states.md)
    + [Besöksdjup](dimensions/visit-depth.md)
    + [Besöksnummer](dimensions/visit-number.md)
    + [Vecka](dimensions/week.md)
