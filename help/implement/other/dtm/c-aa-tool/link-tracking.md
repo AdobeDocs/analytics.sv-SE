@@ -1,14 +1,14 @@
 ---
 description: Fältbeskrivningar i Dynamic Tag Management för länkspårning vid distribution av Analytics.
 keywords: Dynamic Tag Management;link tracking;enable clickmap;track download links;download extensions;track outbound links;keep url parameters
-solution: Experience Cloud,Analytics,Dynamic Tag Management
+solution: Experience Cloud,Analytics
 title: Länkspårning
 uuid: 982b744b-5696-4c31-b1d1-410486b0eedd
 translation-type: tm+mt
-source-git-commit: 354785439a5920d8fc53d566fa9306c74e2504d2
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
