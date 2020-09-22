@@ -1,11 +1,14 @@
 ---
 description: Fältbeskrivningar i Dynamic Tag Management för referenser och kampanjalternativ när Dynamic Tag Management distribueras i Adobe Analytics.
 keywords: Dynamic Tag Management;referrers;campaigns;referrer override;campaign variable;query param
-solution: Experience Cloud,Analytics,Dynamic Tag Management
+solution: Experience Cloud,Analytics
 title: Referenter och kampanjer
 uuid: 56580206-a382-4993-9bba-a488da65cf89
 translation-type: tm+mt
-source-git-commit: 5e47974fcf95625def21a9011ad981197ae39c99
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 6%
 
 ---
 
