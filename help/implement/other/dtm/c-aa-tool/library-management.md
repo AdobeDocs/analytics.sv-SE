@@ -1,11 +1,11 @@
 ---
 description: Beskrivningar av fälten och alternativen i inställningarna för bibliotekshantering i Dynamic Tag Management.
 keywords: library management;page code;load library at;managed by adobe;custom;code hosted;s_code hosted
-solution: Experience Cloud,Dynamic Tag Management
+solution: Experience Cloud
 title: Bibliotekshantering
 uuid: 4cfa47f9-ae98-4feb-a58d-a3a6e45f8d5b
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 13%
@@ -21,7 +21,7 @@ Beskrivningar av fälten och alternativen i inställningarna för bibliotekshant
 
 >[!NOTE]
 >
->Om mer än ett Adobe Analytics-verktyg används i en enda webbegenskap måste varje verktyg ha ett unikt spårningsvariabelnamn. Dubbla objektvariabelnamn mellan Adobe Analytics-verktyg i en enda webbegenskap orsakar konflikter.
+>Om flera Adobe Analytics-verktyg används i en enda webbegenskap måste varje verktyg ha ett unikt spårningsvariabelnamn. Dubbla objektvariabelnamn mellan Adobe Analytics-verktyg i en enda webbegenskap orsakar konflikter.
 
 <table id="table_2758C770C91B4025AD74009B360D71F7"> 
  <thead> 
@@ -37,7 +37,7 @@ Beskrivningar av fälten och alternativen i inställningarna för bibliotekshant
   </tr> 
   <tr> 
    <td colname="col1"> <p>Läs in bibliotek på &lt;<span class="term"> Page Top</span> or <span class="term"> Page Bottom</span>&gt; </p> </td> 
-   <td colname="col2"> <p>Anger var och när sidkoden ska läsas in. Oavsett vad du väljer måste alla regler som använder Analytics-verktyget ha samma inställning. </p> </td> 
+   <td colname="col2"> <p>Anger var och när sidkoden ska läsas in. Oavsett vad du väljer måste alla regler som använder analysverktyget ha samma inställning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Hanteras av Adobe (rekommenderas) </p> </td> 
