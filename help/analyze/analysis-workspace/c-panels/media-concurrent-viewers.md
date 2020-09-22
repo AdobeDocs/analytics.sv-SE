@@ -2,19 +2,15 @@
 title: Panelen för samtidiga medieanvändare
 description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: d63c9b2e3b8241b8b40f4bb2e440cb1e96add69f
+source-git-commit: aea820324da5153c85ab1c12110c756748aedec9
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 2%
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
 
 # Panelen för samtidiga medieanvändare
-
->[!IMPORTANT]
->
->Den här funktionen används i begränsad testning för kunder inom medieanalys. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html)
 
 Media Analytics-kunder kan analysera samtidiga tittare för att förstå var maximal samtidighet har inträffat eller var bortfall har skett för att ge värdefull insikt i kvaliteten på innehåll och tittarengagemang och för att hjälpa till med felsökning eller planering av volym eller skala.
 
