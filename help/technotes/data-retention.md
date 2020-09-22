@@ -2,9 +2,9 @@
 title: Datalagringspolicy
 description: En datalagringspolicy avgör hur länge Adobe lagrar dina data.
 translation-type: tm+mt
-source-git-commit: 4dd0710454a29faadb197d97e58394c753cec0ec
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Datalagringspolicy
 
-Data som samlas in av Adobe Analytics lagras under en viss tidsperiod. Den tid som Adobe sparar dessa data varierar från kontrakt till kontrakt och beskrivs i en organisations datalagringspolicy. Den här principen gäller själva data, vilket innebär att den påverkar alla analysrapporteringsfunktioner (Analysis Workspace, Reporting API, etc.).
+Data som samlas in av Adobe Analytics sparas under en viss tidsperiod. Den tid som Adobe lagrar dessa data varierar från kontrakt till kontrakt och beskrivs i en organisations policy för datalagring. Den här principen gäller själva data, vilket innebär att den påverkar alla analysrapporteringsfunktioner (Analysis Workspace, API för rapportering m.m.).
 
-**Standarddatalagringspolicyn för Adobe Analytics är 25 månader.** Din organisations lagringspolicy kan vara annorlunda, beroende på avtal.
+**Standardprincipen för datalagring för Adobe Analytics är 25 månader.** Din organisations lagringspolicy kan vara annorlunda, beroende på avtal.
 
-Data som lagras baseras på aktuellt datum och datum/tid för historiska data. Datumet/tiden som registreras för träffar kan vara ett annat än det datum/den tidpunkt då träffarna togs emot av Adobe.
+Data som lagras baseras på aktuellt datum och datum/tid för historiska data. Datumet/tiden som spelades in i träffar kan vara ett annat datum/tid än det datum/den tidpunkt då träffarna togs emot av Adobe.
 
 ## Justera standardperioden för datalagring
 
@@ -27,11 +27,11 @@ Om du vill minska eller förlänga standardperioden för datalagring kontaktar d
 
 ## Datalagring och dataintegritet
 
-Adobe måste i sin roll som personuppgiftsbiträde vidta lämpliga åtgärder för att hjälpa sina kunder med att uppfylla åtkomst, radering och andra förfrågningar från enskilda personer. Att tillämpa lämpliga, säkra och vältajmade principer för borttagning är en viktig del av att uppfylla denna skyldighet. GDPR gäller alla kunder som marknadsför eller bearbetar information till EU-medborgare. CCPA gäller alla kunder som marknadsför eller bearbetar information om Kalifornien-medborgare. Därför är dataintegritet en förändring i den globala lagstiftningen.
+Adobe måste i sin roll som personuppgiftsbiträde vidta lämpliga åtgärder för att hjälpa sina kunder med att uppfylla kraven på åtkomst, borttagning och andra förfrågningar från enskilda personer. Att tillämpa lämpliga, säkra och vältajmade principer för borttagning är en viktig del av att uppfylla denna skyldighet. GDPR gäller alla kunder som marknadsför eller bearbetar information till EU-medborgare. CCPA gäller alla kunder som marknadsför eller bearbetar information om Kalifornien-medborgare. Därför är dataintegritet en förändring i den globala lagstiftningen.
 
 ## Radering av data
 
-När data överskrider er datalagringspolicy behåller Adobe rätten att radera dem utan möjlighet till återställning. Ni måste se till att alla data som ni vill behålla ligger inom er organisations datalagringspolicy.
+När data överskrider din datalagringspolicy behåller Adobe rätten att ta bort dem utan alternativ för återställning. Ni måste se till att alla data som ni vill behålla ligger inom er organisations datalagringspolicy.
 
 ## Frågor och svar
 
@@ -45,8 +45,8 @@ Datalagringspolicyn definierar ett rullande datalagringsfönster där fullständ
 
 **Kan jag begära en kopia av mina data innan de tas bort?**
 
-Ja. Adobe kan tillhandahålla en historik över datapassage av råa data på träffnivå. Mer information finns i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Export. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du din organisations kontoansvarige. Särskilda inkvarteringar kan göras. kostnaderna kan variera.
+Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffnivå. Mer information finns i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Export. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du din organisations kontoansvarige. Särskilda inkvarteringar kan göras. kostnaderna kan variera.
 
-**När raderar Adobe data?**
+**När tar Adobe bort data?**
 
 Kontakta er organisations kontoansvarige för den specifika tid då era data ska tas bort. Data tas vanligtvis bort rullande månadsvis.
