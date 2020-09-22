@@ -1,23 +1,26 @@
 ---
 description: Infoga AppMeasurement-kod när dynamisk tagghantering distribueras manuellt i Adobe Analytics.
 keywords: Dynamic Tag Management;linked accounts;linking accounts;edit code;appmeasurement;appmeasurement code
-solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
-title: Infoga AppMeasurement-huvudkod
+solution: Experience Cloud,Analytics,Target
+title: Infoga kärnkod för AppMeasurement
 uuid: 3f83fbb1-3ed5-4e45-888a-0a183aac1a90
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 5%
 
 ---
 
 
-# Infoga AppMeasurement-huvudkod
+# Infoga kärnkod för AppMeasurement
 
 Infoga AppMeasurement-kod när dynamisk tagghantering distribueras manuellt i Adobe Analytics.
 
 1. Expandera [!DNL Adobe Analytics] avsnittet på **[!UICONTROL General]** verktygssidan och klicka sedan på **[!UICONTROL Open Editor]**.
 1. Zippa upp den [!DNL AppMeasurement_JavaScript*.zip] fil du laddat ned i [distribuera Adobe Analytics](/help/implement/other/dtm/t-analytics-deploy.md).
 
-   Om du väljer ett anpassat bibliotek har det redan den senaste kodversionen när du öppnar fönstret. Du behöver inte hämta zip-filen från Admin Console.
+   Om du väljer ett anpassat bibliotek har det redan den senaste kodversionen när du öppnar fönstret. Du behöver inte ladda ned zip-filen från Admin Console.
 1. Öppna [!DNL AppMeasurement.js] i en textredigerare.
 1. Kopiera och klistra in innehållet i **[!UICONTROL Edit Code]** fönstret.
 
