@@ -1,18 +1,21 @@
 ---
-description: Skapa villkor för direktanrop.
+description: Skapa villkor för direktanropsregler.
 keywords: Dynamic Tag Management;rule;create rule;new rule;direct call rule
-solution: Experience Cloud,Analytics,Target,Dynamic Tag Management
-title: 'Skapa villkor för direktanropsregler '
+solution: Experience Cloud,Analytics,Target
+title: Skapa villkor för direktanropsregler
 uuid: bab0e058-a5b8-4039-8333-5e8f3d06ade4
 translation-type: tm+mt
-source-git-commit: dfe8409b13fcf67eae6a0c404f83c1209f89ae12
+source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+workflow-type: tm+mt
+source-wordcount: '76'
+ht-degree: 26%
 
 ---
 
 
-# Skapa villkor för direktanropsregler 
+# Skapa villkor för direktanropsregler
 
-Skapa villkor för direktanrop.
+Skapa villkor för direktanropsregler.
 
 1. I **[!UICONTROL Conditions]** dialogrutan anger du strängen som ska skickas till `_satellite.track()` i ditt direktanrop, utan citattecken.
 
