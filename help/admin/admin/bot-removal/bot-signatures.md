@@ -2,9 +2,9 @@
 title: Vanliga robotsignaturer
 description: Identifiera vanliga identifierare för botar.
 translation-type: tm+mt
-source-git-commit: 8edfd278fdb4316c304301e5178dc07949127758
+source-git-commit: 2f4c54ec57eeddc03f0b0d12a0a7f391e36ab0fc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Moderna användare har mycket högre upplösningsskärmar än tidigare. Träffar
 
 ## Land + tidszon matchar inte
 
-Det kommer att finnas en felmatchning mellan ursprungslandet och tidszonen. Till exempel en plats i USA men har en GMT-tidszon.
+Det skulle finnas en felmatchning mellan det ursprungliga landet och tidszonen. Platsen kan till exempel vara USA men tidszonen kan vara GMT.
 
 ![](assets/bots-country-time-zone.png)
 
