@@ -2,7 +2,7 @@
 title: Använda XDM-data med Analytics
 description: 'Översikt över hur du använder XDM-data från Experience Platform i Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+source-git-commit: 0a570f52c3eb62ca517770fa12f2272f6ccc978d
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
