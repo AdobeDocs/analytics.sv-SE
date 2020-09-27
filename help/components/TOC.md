@@ -5,7 +5,7 @@ user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Components Guide
 user-guide-description: Help organize your data using components such as segments, calculated metrics, virtual report suites, and alerts.
 translation-type: tm+mt
-source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 57%
@@ -15,7 +15,7 @@ ht-degree: 57%
 
 # [!DNL Analytics] Komponenthandbok {#components}
 
-+ [Hjälp för Analytics-komponenter](home.md)
++ [Komponenthandbok för Analytics](home.md)
 + Dimensioner {#dimensions}
    + [Översikt över Dimensioner](dimensions/overview.md)
    + [Kompatibilitet med Dimensioner](dimensions/compatibility.md)
@@ -92,12 +92,12 @@ ht-degree: 57%
    + [Spårningskod](dimensions/tracking-code.md)
    + [Anledning till avanmälan av spårning](dimensions/tracking-opt-out-reason.md)
    + [US DMA](dimensions/us-dma.md)
-   + [USA](dimensions/us-states.md)
+   + [Dusdelstater](dimensions/us-states.md)
    + [Besöksdjup](dimensions/visit-depth.md)
    + [Besöksnummer](dimensions/visit-number.md)
    + [Vecka](dimensions/week.md)
    + [Veckodag/Veckoslut](dimensions/weekday-weekend.md)
-   + [År](dimensions/year.md)
+   + [Spår](dimensions/year.md)
    + [Postnummer](dimensions/zip-code.md)
 + Mätvärden {#metrics}
    + [Översikt över mätvärden](metrics/overview.md)
