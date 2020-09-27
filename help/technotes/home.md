@@ -1,12 +1,16 @@
 ---
-title: Tech notes - startsida
-translation-type: ht
-source-git-commit: 444a2b93a39cad0d2f62a4bf8d889b71ba726092
+title: Analytics Tech Notes
+description: Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
+translation-type: tm+mt
+source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 93%
 
 ---
 
 
-# Tech notes - startsida
+# Analytics Tech Notes
 
 Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
 
