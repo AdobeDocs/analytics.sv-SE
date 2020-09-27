@@ -1,8 +1,8 @@
 ---
-title: Hjälp för Analytics-administratör
+title: Administratörshandbok för Analytics
 description: Administrationshjälp för Adobe Analytics-administratörer, inklusive användar- och produkthantering i Admin Console, där du kan skapa rapportsviter, variabler, klassificeringar och datainsamling.
 translation-type: tm+mt
-source-git-commit: fb0833530a9ec67f01226b986d124ab1e441d7e4
+source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 95%
