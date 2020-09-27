@@ -1,8 +1,11 @@
 ---
-title: Hjälp för import i Analytics
-description: Hjälp för import i Analytics
-translation-type: ht
-source-git-commit: ebdf5ed1ca2b83b94284f1d8013a2b0c6b717714
+title: Importguide för Analytics
+description: Den här guiden förklarar hur du hämtar data till Analytics med hjälp av datakällor, API för datainfogning och Data Connectors.
+translation-type: tm+mt
+source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 85%
 
 ---
 
