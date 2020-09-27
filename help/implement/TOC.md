@@ -5,7 +5,7 @@ user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementation Guide
 user-guide-description: Customize what data is collected to get more out of Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 97%
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 # Implementeringshandbok för Analytics {#implementation}
 
-+ [Hjälp med implementering av Analytics](home.md)
++ [Implementera Adobe Analytics](home.md)
 + [Versionsinformation för AppMeasurement](appmeasurement-updates.md)
 + Variabler, funktioner och metoder för Analytics {#vars}
    + [Översikt](vars/overview.md)
