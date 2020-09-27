@@ -1,8 +1,11 @@
 ---
-title: Hjälp för export i Analytics
-description: 'null'
-translation-type: ht
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+title: Exporthandbok för Analytics
+description: I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics med dataflöden och Data warehouse.
+translation-type: tm+mt
+source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 88%
 
 ---
 
