@@ -1,33 +1,33 @@
 ---
-title: Hjälp för Analytics-komponenter
+title: Komponenthandbok för Analytics
 description: 'null'
 translation-type: tm+mt
-source-git-commit: 1968162d856b6a74bc61f22f2e5a6b1599d04c79
+source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 19%
+ht-degree: 84%
 
 ---
 
 
-# Handbok för analyskomponenter
+# Komponenthandbok för Analytics
 
 ![Banderoll](../../assets/doc_banner_components.png)
 
-Analyskomponenterna hjälper er att finjustera och förbättra dataanalysen. Komponenterna är:
+Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen. Komponenter är bland annat:
 
 * **Dimensioner:** Referens för dimensioner som kan användas i Adobe Analytics.
 * **Mätvärden:** Referens för mätvärden som kan användas i Adobe Analytics.
-* **Segmentering:** Fokusera på en delmängd av era data.
-* **Beräknade mått:** Använd enkla formler för att kombinera mätvärden eller avancerade funktioner för statistisk analys.
-* **Virtuella rapportsviter:** Skapa en virtuell silo med data baserat på en rapportserie. Möjlighet att rensa eller segmentera data för en bättre användarupplevelse. Vissa funktioner kan bara användas i virtuella rapportsviter.
+* **Segmentering:** Fokusera på en delmängd av data.
+* **Beräknade mätvärden:** Använd enkla formler för att kombinera mätvärden eller avancerade funktioner för statistiska analyser.
+* **Virtuella rapportsviter:** Skapa en virtuell datasilo baserat på en rapportsvit. Möjlighet att rensa eller segmentera data för en bättre användarupplevelse. Vissa funktioner kan bara användas i virtuella rapportsviter.
 * **Enhetsövergripande analys**: Med en särskild typ av virtuellt rapportpaket kan du konfigurera enhetsövergripande analys.
-* **Varningar:** Få meddelanden när tidsdata överskrider eller under ett tröskelvärde.
-* **Klassificeringar:** Ordna om och gruppera dimensionerna för att få ytterligare insikter.
+* **Varningar:** Få aviseringar när tidsdata överskrider eller underskrider ett tröskelvärde.
+* **Klassificeringar:** Ordna om och gruppera dimensioner för fler insikter.
 * **Realtidsrapportering:** Få rapporter och trender så fort de blir tillgängliga.
-* **Marknadsföringskanaler:** Förstå hur besökarna kommer till er webbplats och avgöra vilka kanaler som är mest framgångsrika.
+* **Marknadsföringskanaler:** Förstå hur besökarna kommer till er webbplats och avgör vilka kanaler som är mest framgångsrika.
 
-## Viktiga artiklar om analyskomponenter
+## Viktiga artiklar om Analytics-komponenter
 
 * [Dimensioner](dimensions/overview.md)
 * [Mätvärden](metrics/overview.md)
