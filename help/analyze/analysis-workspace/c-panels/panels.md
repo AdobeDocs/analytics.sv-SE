@@ -2,9 +2,9 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: 0a29fa005c7b86a399ab39f0b499d22b6f86e373
+source-git-commit: f772494e6e3f8b5ab186c5b0c891f4f5043470f9
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '737'
 ht-degree: 3%
 
 ---
@@ -74,7 +74,7 @@ Nedrullningsbara filter kan även användas för att konsolidera flera projekt t
 
 ![](assets/create-dropdown.png)
 
-1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items]till exempel värden inom [!UICONTROL Marketing Channel] dimensionen klickar du på högerpilen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
+1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items]till exempel värden inom [!UICONTROL Marketing Channel] dimensionen klickar du på högerpilsikonen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
 1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, segment eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
 1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
 
