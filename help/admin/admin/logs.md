@@ -3,9 +3,9 @@ description: Logga filer som hjälper dig att se när användare loggar in, dera
 title: Loggar
 topic: Admin tools
 translation-type: tm+mt
-source-git-commit: ebcd348dd952c24b5a5eaadb46ec3a521aba2e98
+source-git-commit: 9b56730548975435c5607428e4c71efda1d6a8d0
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '582'
 ht-degree: 2%
 
 ---
@@ -68,11 +68,6 @@ Med [!UICONTROL Usage and Access Log] den kan du utvärdera rapportanvändningen
 | Datumintervall | Ett datumintervall skapades/redigerades. |
 | Virtual Report Suite | En virtuell rapportsvit skapades/redigerades. |
 | Bidragsanalys | Ett avgiftsanalysjobb kördes. |
-| Begäran om Excel-datablock |  |
-| Excel-inloggningsfel |  |
-| Excel-inloggning klar |  |
-| Fel vid mobilinloggning |  |
-| Inloggning på mobilen lyckades |  |
 | API-metod | Ett API-anrop gjordes. |
 
 
