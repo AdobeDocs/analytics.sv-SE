@@ -3,9 +3,9 @@ description: Det nya systemet för intelligenta aviseringar ger mer exakt kontro
 title: Översikt över intelligenta aviseringar
 uuid: b9bf75ad-bb6f-49fe-8c55-355ea3c50a71
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '356'
 ht-degree: 10%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 10%
 
 Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet.
 
-[Intelligent Alerts på YouTube](https://www.youtube.com/watch?v=UVH9xr_2REA) (5:34)
+Här är en självstudievideo om [intelligenta aviseringar](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
 
 ## Översikt
 
-Den nya varningsfunktionen i Analysis Workspace ersätter den befintliga varningsfunktionen i Rapporter och Analytics. Med intelligenta aviseringar kan du:
+Den nya varningsfunktionen i Analysis Workspace ersätter den befintliga varningsfunktionen i Rapporter och analyser. Med intelligenta aviseringar kan du:
 
 * Skapa aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %), % förändring, ovanför/nedanför)
 * Förhandsgranska hur ofta en avisering utlöses
@@ -34,7 +34,7 @@ Det finns fyra sätt att komma åt Varningsverktyget:
 
    ![Skapa avisering från markering](assets/create-alert-from-selection.png)
 
-* I en rapport från Reports &amp; Analytics går du till **[!UICONTROL More]** > **[!UICONTROL Add Alert]** . Detta öppnar varningsverktyget och fyller i relevanta mått och filter som tillämpas från rapporten. Du kan redigera varningen vid behov.
+* I en rapport från Rapporter och analyser går du till **[!UICONTROL More]** > **[!UICONTROL Add Alert]** . Detta öppnar varningsverktyget och fyller i relevanta mått och filter som tillämpas från rapporten. Du kan redigera varningen vid behov.
 
    ![Lägg till avisering](assets/add-alert.png)
 
