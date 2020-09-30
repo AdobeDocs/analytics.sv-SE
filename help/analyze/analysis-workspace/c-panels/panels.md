@@ -2,9 +2,9 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 00c8e309a597a733e25c8a43dbffbad517f9a2da
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '779'
 ht-degree: 3%
 
 ---
@@ -33,6 +33,8 @@ Standardstartpanelen är [!UICONTROL Freeform] panelen, men du kan även göra d
 ## Panel report suite {#report-suite}
 
 Tabeller och visualiseringar i en panel hämtar data från de [!UICONTROL report suite] markerade i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [flera rapportsviter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel.
+
+Listan med rapportsviter sorteras efter relevans, som Adobe definierar utifrån hur nyligen och ofta sviten har använts av den aktuella användaren och hur ofta sviten används i organisationen.
 
 ![](assets/panel-report-suite.png)
 
@@ -72,10 +74,11 @@ Nedrullningsbara filter kan även användas för att konsolidera flera projekt t
 
 **Skapa och använda nedrullningsbara filter:**
 
-![](assets/create-dropdown.png)
-
 1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items]till exempel värden inom [!UICONTROL Marketing Channel] dimensionen klickar du på högerpilsikonen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
 1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, segment eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
 1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
 
+![](assets/create-dropdown.png)
+
 [Titta på videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) och lär dig mer om hur du lägger till nedrullningsbara filter i ett projekt.
+
