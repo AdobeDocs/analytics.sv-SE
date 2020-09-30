@@ -3,9 +3,9 @@ description: Lär dig hur du skapar delningsbara länkar till projekt eller visu
 keywords: Analysis Workspace sharing
 title: Skapa delningsbara länkar
 translation-type: tm+mt
-source-git-commit: e529ea26b02c1fdb4d1dd3587ab9065a70a97baa
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '282'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 * Högerklicka på en panelrubrik **[!UICONTROL Get panel link]**
 * Högerklicka på en tabell eller ett visualiseringshuvud **[!UICONTROL Get visualization link]**
 
-[Titta på videon](https://www.youtube.com/watch?v=lvmAdKNfWQw) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
+[Titta på videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
 
 ![](assets/get-viz-link.png)
 
@@ -36,6 +36,6 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 
 Ett tips för att utnyttja de olika länkalternativen är att alltid ta med en innehållsförteckning högst upp i arbetsyteprojektet. I innehållsförteckningen kan du länka till andra relevanta projekt, särskilda paneler och specifika visualiseringar. Detta gör det enklare för projektmottagaren att navigera.
 
-[Titta på videon](https://www.youtube.com/watch?v=Xo6fTguWm-M) om hur du skapar en innehållsförteckning med hjälp av länkar och arbetsytans RTF-redigerare.
+[Titta på videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) om hur du skapar en innehållsförteckning med hjälp av länkar och arbetsytans RTF-redigerare.
 
 ![](assets/toc.png)
