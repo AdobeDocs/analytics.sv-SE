@@ -4,9 +4,9 @@ title: Om segment och behållare
 topic: Segments
 uuid: e8b1edd1-5d6c-4213-994b-fed789ad30a4
 translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '3685'
+source-wordcount: '3673'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,7 @@ Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtg�
 
 ## Videoinstruktion {#section_89D6184890AF4086A8056BFBB0B68C29}
 
-Den här YouTube-videon ger en kort översikt över vilka segmentbehållare som är och hur de används.
-
-| Videonamn | Videolänk |
-|---|---|
-| Segmentbehållare | [Segmentbehållare i Adobe Analytics](https://www.youtube.com/watch?v=A513j-ej0oc&amp;index=2&amp;list=PL2tCx83mn7GtHqZicFTa--aE6d02BvvTd) |
+Den här videon ger en kort översikt över vilka segmentbehållare som är och hur de används: [Segmentbehållare i Adobe Analytics](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/segmentation/segment-containers.html)
 
 ## Om behållare {#section_AF2A28BE92474DB386AE85743C71B2D6}
 
