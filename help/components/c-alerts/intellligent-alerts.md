@@ -3,7 +3,10 @@ description: Det nya systemet för intelligenta aviseringar ger mer exakt kontro
 title: Intelligenta aviseringar
 uuid: ac8c9710-d245-46e9-b906-32d3bb0013c0
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 6%
 
 ---
 
@@ -16,14 +19,14 @@ Det nya systemet för intelligenta aviseringar ger mer exakt kontroll över avis
 
 >[!IMPORTANT]
 >
->Intelligenta aviseringar är endast tillgängliga för kunder med Adobe [!DNL Analytics] Prime och Adobe [!DNL Analytics] Ultimate.
+>Intelligenta aviseringar är endast tillgängliga för kunder som använder Adobe [!DNL Analytics] Prime och Adobe [!DNL Analytics] Ultimate.
 
 Den nya varningsfunktionen och varningsfunktionen ersätter den befintliga varningsfunktionen i Adobe [!DNL Analytics]. Med intelligenta aviseringar kan du
 
 * Skapa aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %), % förändring, ovanför/nedanför).
-* Förhandsgranska hur ofta en varning utlöses.
+* Förhandsgranska hur ofta en avisering utlöses.
 * Skicka aviseringar via e-post eller SMS med länkar till automatiskt genererade Analysis Workspace-projekt.
-* Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering.
+* Skapa ”staplade” aviseringar som omfattar flera mätvärden i en enda avisering.
 
 Det nya larmsystemet omfattar följande komponenter: Varningsbyggaren, Varningshanteraren, Förhandsgranskning av varning och bättre kontextbaserad åtkomst för att skapa varningar. Det gamla varningssystemgränssnittet kommer inte längre att vara tillgängligt, men aviseringarna kommer att migreras. Vissa äldre varningsfunktioner [kommer inte längre att vara tillgängliga](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/alerts.html).
 
@@ -73,7 +76,7 @@ Tröskelvärdena i % är standardavvikelser. Exempel: 95 % = 2 standardavvikelse
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Kan jag få en tabell med de "förväntade värdena" som utgör den streckade linjen, eller någon typ av utdata av vad dessa värden är? </b> </p> </td> 
-   <td colname="col2"> <p>Inte på arbetsytan, men du kan göra det i Report Builder (se den här videon om <a href="https://www.youtube.com/watch?v=-a-8W6GQZnU"  > avvikelseidentifiering i Report Builder </a>). </p> <p>Kom ihåg att Report Builder använder mindre avancerade avvikelseidentifieringsmetoder. Den använder en fast 30-dagars utbildningsperiod, med ett fast 95-procentigt intervall, och liknar avvikelseidentifiering i <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/layout/t-anomaly.html"  > rapporter och analyser <span class="uicontrol"></span> </a>. </p> </td> 
+   <td colname="col2"> <p>Inte på arbetsytan, men du kan göra det i Report Builder (se den här videon om <a href="https://docs.adobe.com/content/help/en/analytics-learn/tutorials/exporting/report-builder/anomaly-detection-in-report-builder.html"  > avvikelseidentifiering i Report Builder </a>). </p> <p>Tänk på att Report Builder använder mindre sofistikerade avvikelsedetekteringsmetoder. Den använder en fast 30-dagars utbildningsperiod, fast 95-procentigt intervall. </p> </td> 
   </tr> 
  </tbody> 
 </table>
