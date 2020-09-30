@@ -5,9 +5,9 @@ user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Tools Guide
 user-guide-description: Provides how-to instructions for Analysis Workspace, the premier analysis and visualization tool for Analytics, as well as tools like Report Builder and Activity Map.
 translation-type: tm+mt
-source-git-commit: a290e5790591d73c397b2eb99f0c070e0ea71b10
+source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1094'
 ht-degree: 93%
 
 ---
@@ -92,13 +92,13 @@ ht-degree: 93%
          + [Användningsexempel på segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
    + Samla in eller dela projekt {#curate-share}
-      + [Kuratera arbetsyteprojekt](analysis-workspace/curate-share/curate.md)
-      + [Dela arbetsyteprojekt](analysis-workspace/curate-share/share-projects.md)
+      + [Dela-menyn](analysis-workspace/curate-share/send-schedule-files.md)
+      + [Kuratprojekt](analysis-workspace/curate-share/curate.md)
+      + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](analysis-workspace/curate-share/shareable-links.md)
-      + [Skrivskyddade Workspace-projekt](analysis-workspace/curate-share/view-only-projects.md)
+      + [Visa endast  projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
-      + [Dela och schemalägga projektfiler](analysis-workspace/curate-share/send-schedule-files.md)
-      + [Skicka fil – schemalägga ett projekt för leverans](analysis-workspace/curate-share/t-schedule-report.md)
+      + [Schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
    + Attribution IQ {#attribution}
       + [Översikt över attribuering](analysis-workspace/attribution/overview.md)
       + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)
