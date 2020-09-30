@@ -4,9 +4,9 @@ title: Hantera segment
 topic: Segments
 uuid: 47d54822-a662-471d-8dab-03ddf6c2f395
 translation-type: tm+mt
-source-git-commit: 9e70cd51f8828cdcb698175a2b4c0150610d14d0
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '500'
 ht-degree: 4%
 
 ---
@@ -23,7 +23,7 @@ Segmenthanteraren i Analytics visar alla segment som du äger och som har delats
 
 ## Videoinstruktion {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
 
-Den här [Adobe Analytics YouTube-videon](https://www.youtube.com/watch?v=CdfOq98PTrg&amp;index=6&amp;list=PL2tCx83mn7GtHqZicFTa--aE6d02BvvTd) ger en kort översikt över hur du använder segmenthanteraren.
+I den här [Adobe Analytics-videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) får du en kort översikt över hur du använder segmenthanteraren.
 
 ## Användargränssnitt för segmenthanteraren {#section_7FDCD12949BE4741A402DB83AB7B37DF}
 
@@ -50,7 +50,7 @@ Den här [Adobe Analytics YouTube-videon](https://www.youtube.com/watch?v=CdfOq9
 
 Segmentsorteraren i ad hoc-analyser visar alla segment som du äger och de som delas med dig.
 
-Så här öppnar du segmentSorteraren i [!DNL ad hoc analysis]:
+Så här kommer du åt segmentsorteraren i [!DNL ad hoc analysis]:
 
 * Gå till **[!UICONTROL Segments]** fliken i den vänstra panelen och klicka sedan på skiftnyckelsikonen ![](assets/wrench_icon.png) och välj **[!UICONTROL Organize Segments]** från menyn.
 
