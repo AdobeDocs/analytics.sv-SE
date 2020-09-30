@@ -3,9 +3,9 @@ description: Lär dig mer om visualiseringar och visualiseringsinställningar i 
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1046'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. Varje visualisering har sina egna inställningar som du kan hantera. Klicka på namnet på visualiseringen för mer detaljerad information.
 
-YouTube Video: [Visualiseringstyper i Analysis Workspace](https://www.youtube.com/watch?v=b1zLEywRa6w&amp;index=39&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:57)
+Videosjälvstudiekurs: [Visualiseringstyper i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/visualization-types.html) (2:57)
 
 | Visualiseringsnamn | Beskrivning |
 |---|---|
@@ -44,7 +44,7 @@ Om du vill visa visualiseringspanelen klickar du **[!UICONTROL Visualizations]**
 
 ![Stegresultat](assets/visualizations.png)
 
-De flesta visualiseringstyper (till exempel Area-, Bar-, Donut- och Line-diagram) är välbekanta för dig om du använder Adobe Analytics. Analysis Workspace tillhandahåller dock visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
+De flesta visualiseringstyper (till exempel diagram för område, stapel, ring och linje) är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
 ## Visualiseringsinställningar {#section_D3BB5042A92245D8BF6BCF072C66624B}
 
@@ -109,4 +109,4 @@ Om du vill redigera en förklaringsetikett i ett linjediagram, till exempel
 1. Ange den nya etikettexten.
 1. Tryck för **[!UICONTROL Enter]** att spara.
 
-Här är en [länk till en video](https://www.youtube.com/watch?v=mry3vDrTml0&amp;index=61&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) om det här ämnet.
+Här är en [länk till en video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om det här ämnet.
