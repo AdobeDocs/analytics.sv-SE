@@ -2,7 +2,7 @@
 title: Implementera med AMP
 description: Implementera Adobe Analytics på AMP-sidor.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 684e67203b2e3d5f0cb82cdbdda1f24d37a677f0
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 0%
@@ -33,9 +33,9 @@ I följande tabell jämförs dessa två metoder:
 | Tjänst för besökar-ID | Stöds inte | Stöds |
 | Video- och länkspårning | Delvis stöd | Stöds ännu inte |
 | Svårighet att genomföra | Något svårt | relativt enkelt |
-| Integreringar med Adobe Experience Cloud | Stöds inte | Delvis stöd |
+| Adobe Experience Cloud integreringar | Stöds inte | Delvis stöd |
 
-Väg in proffsen och ikonerna i organisationen för att avgöra vilken metod du vill använda. Se [AMP-exempel](https://github.com/Adobe-Marketing-Cloud/mobile-services/tree/master/samples/mobile-web) på Adobes GitHub-databas för exempelkod.
+Väg in proffsen och ikonerna i organisationen för att avgöra vilken metod du vill använda. Se [AMP-exempel](https://github.com/Adobe-Marketing-Cloud/mobile-services/tree/master/samples/mobile-web) på Adobe GitHub-databasen för exempelkod.
 
 >[!WARNING]
 >
@@ -62,7 +62,7 @@ I följande kodexempel har två utlösare definierats: `pageLoad` och `click`. U
       "triggers": {
         "pageLoad": {
           "on": "visible",
-          "request": "pageView"
+          "request": "pageview"
         },
         "click": {
           "on": "click",
@@ -86,7 +86,7 @@ Dessutom har stöd för ett antal variabelersättningar så att AMP kan tillhand
 >
 >Bildbegäranden som skickas till Adobe med den här metoden innehåller inte data för många standardrapporter (till exempel webbläsare, skärmstorlek eller referent). Om du vill ta med den här informationen i träffar kontrollerar du att de ingår i frågesträngen för bildbegäran. Mer information finns i [Frågeparametrar](../validate/query-parameters.md) för datainsamling.
 
-Adobe identifierar besökare med en inbyggd AMP-funktion och ställer in cookien `adobe_amp_id`. Detta besökar-ID är unikt för alla andra ID:n som angetts av Adobe Analytics (till exempel `s_vi` cookie). Adobe Experience Cloud ID Service stöds inte med den här implementeringsmetoden.
+Adobe identifierar besökare med en inbyggd AMP-funktion och ställer in cookien `adobe_amp_id`. Detta besökar-ID är unikt för alla andra ID:n som har angetts av Adobe Analytics (till exempel `s_vi` cookie). Adobe Experience Cloud ID-tjänsten stöds inte med den här implementeringsmetoden.
 
 >[!NOTE]
 >
