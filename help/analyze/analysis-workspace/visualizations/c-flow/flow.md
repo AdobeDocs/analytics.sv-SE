@@ -3,9 +3,9 @@ description: 'null'
 title: Översikt över flöden
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '204'
 ht-degree: 2%
 
 ---
@@ -23,9 +23,9 @@ Här kan du:
 
 >[!NOTE]
 >
->Mer information om hur resultatet av att använda segment i Flow kan skilja sig åt mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
+>Mer information om hur resultatet av att tillämpa segment i Flow kan skilja sig mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
-[Flödesvisualisering på YouTube](https://www.youtube.com/watch?v=3R1HTM7y_RM&amp;index=55&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS)(4:56)
+[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)om flödesvisualisering (4:56)
 
 ## Inter-Dimensional Flows {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
