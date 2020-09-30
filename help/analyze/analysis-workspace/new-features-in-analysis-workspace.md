@@ -3,9 +3,9 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 8529a25cc98293421775207f8ccce77c7388ce6d
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '7747'
+source-wordcount: '7716'
 ht-degree: 96%
 
 ---
@@ -989,9 +989,7 @@ Nya funktioner som släpptes 20 oktober 2016:
      <li id="li_4D10DFE307344D06AA60792FABE5B57E"> 
       <!--AN-124168: -->En åtgärdsknapp har lagts till på den vänstra navigeringslisten med följande åtgärder: tagga, ange som favorit, godkänn, <b>dela (nytt!)</b>, <b>ta bort (nytt!)</b>. </li> 
      <li id="li_946EC05568D4447193E9307546DF6F9B">Ett filter har lagts till i sökfältet för att filtrera efter taggar, favoriter, godkända objekt och komponenter. </li> 
-     <li id="li_4EA118ACCD3B4F88B0ECF72717F631FA">En förhandsgranskningsikon har lagts till för manuella rader (inte för dynamiska rader som listar måttobjekt) så att du kan förhandsgranska segment, mätvärden och datumintervall. </li> 
-     <li id="li_81D5241EA3FD49CEA0E9F412837D87A8"> 
-      <!--AN-128702: -->YouTube-länken för Analysis Workspace-självstudiekurser har uppdaterats till: <a href="https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS"  >https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS</a>. </li> 
+     <li id="li_4EA118ACCD3B4F88B0ECF72717F631FA">En förhandsgranskningsikon har lagts till för manuella rader (inte för dynamiska rader som listar måttobjekt) så att du kan förhandsgranska segment, mätvärden och datumintervall. </li>  
      <li id="li_D81DB98C49664D2884CCCC1DB0058CD8"> 
       <!--AN-124004:-->För visualiseringar har vi lagt till ett högerklicksalternativ på snabbmenyn som heter <span class="uicontrol">Börja om</span> (fungerar för flöden, venndiagram och histogram), som tar bort konfigurationen för den aktuella visualiseringen och öppnar en ny panel där du kan konfigurera om den. </li> 
      <li id="li_84632BFCE1794B49A31FF45067FA04B7">Med en ny visualiseringsinställning som heter Förklaring synlig kan du dölja filterinformationstexten för visualiseringar av sammanfattningsnummer/-ändringar. </li> 
