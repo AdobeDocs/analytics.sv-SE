@@ -1,17 +1,17 @@
 ---
 description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
 keywords: Analysis Workspace curation
-title: Kuratera arbetsyteprojekt
+title: Kuratprojekt
 translation-type: tm+mt
-source-git-commit: 63a827b4cfa858e503431579755f1b4dba4b5bdf
+source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 3%
 
 ---
 
 
-# Kuratera arbetsyteprojekt
+# Kuratprojekt
 
 Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderas innan du delar ett projekt.
 
