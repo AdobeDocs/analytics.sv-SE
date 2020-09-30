@@ -1,17 +1,17 @@
 ---
 description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace sharing
-title: Dela arbetsyteprojekt
+title: Dela projekt
 translation-type: tm+mt
-source-git-commit: 2189354bc296fa8b39dc646b2ad3aec28ded92cd
+source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1028'
 ht-degree: 3%
 
 ---
 
 
-# Dela arbetsyteprojekt
+# Dela projekt
 
 Delning gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. All [kuration](curate.md) du har använt återspeglas när mottagarna öppnar projektet.
 
@@ -30,7 +30,7 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 
 ### Ingen roll har tilldelats (mottagare av projektlänkar)
 
-Om en mottagare inte har tilldelats en roll och får en [länk](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.
+Om en mottagare inte har tilldelats en roll och får en [länk](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**.
 
 ### Flera roller har tilldelats
 
@@ -66,7 +66,7 @@ Alla användare kan dela projekt med grupper, som är en samling mottagare. I Ad
 
 ## Dela en projektlänk {#Links}
 
-Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**.[Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html)om hur du skapar delningsbara länkar till arbetsyteprojekt.
+Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) om hur du skapar delningsbara länkar till arbetsyteprojekt.
 
 ## Dela projekt i projektledaren {#Manager}
 
@@ -91,4 +91,4 @@ När du har valt Projekt A och B läggs mottagarna 4 och 7 till i resurslistorna
 | Vad händer om två redigerare sparar ett projekt samtidigt? | Ändringarna sammanfogas inte och den senast sparade projektversionen behålls. Analysis Workspace stöder för närvarande inte live-samarbete. |
 | Vilken projekterfarenhet vill jag som administratör se? | Administratörer som placerats i en **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** roll får dessa begränsade upplevelser när de öppnar ett projekt. Om du vill kan en administratör när som helst utöka sin roll till **[!UICONTROL Can edit]** via **[!UICONTROL Components]>[!UICONTROL Projects]**. |
 | Vad händer om en mottagare placeras i en roll som enskild person och en annan roll som medlem i en grupp? | Om en mottagare placeras i flera roller får de alltid den högre upplevelsen. Om en mottagare till exempel får rollen som **[!UICONTROL Can edit]** individ och rollen som **[!UICONTROL Can view]** medlem i en grupp får han/hon en **[!UICONTROL Can edit]** projekterfarenhet. |
-| Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Mottagarna får rollen som du placerade dem i den delade modalen. Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]**och icke-administratörer får **[!UICONTROL Can duplicate]**. |
+| Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Mottagarna får rollen som du placerade dem i den delade modalen. Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. |
