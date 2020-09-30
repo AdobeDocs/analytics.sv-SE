@@ -2,9 +2,9 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: f772494e6e3f8b5ab186c5b0c891f4f5043470f9
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '742'
 ht-degree: 3%
 
 ---
@@ -78,4 +78,4 @@ Nedrullningsbara filter kan även användas för att konsolidera flera projekt t
 1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, segment eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
 1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
 
-[Titta på videon](https://www.youtube.com/watch?v=vpJywtsFVPI) och lär dig mer om hur du lägger till nedrullningsbara filter i ett projekt.
+[Titta på videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) och lär dig mer om hur du lägger till nedrullningsbara filter i ett projekt.
