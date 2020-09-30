@@ -3,9 +3,9 @@ description: 'null'
 title: Optimera prestanda för Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 3cf68f3ba50c7a27a86d37591477812537b8ae1a
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Optimera prestanda för Analysis Workspace
 
-Vissa faktorer kan påverka ett projekts prestanda i Analysis Workspace. Det är viktigt att du vet vad dessa medarbetare är innan du börjar bygga ett projekt, så att du kan planera och bygga projektet på det optimala sättet. Nedan visas en lista med faktorer som påverkar prestanda och bästa praxis för optimering av projekt. Analysis Workspace prestanda är en av Adobe främsta prioriteringar och något som vi fortsätter att förbättra varje dag.
+Vissa faktorer kan påverka prestanda i ett projekt inom Analysis Workspace. Det är viktigt att du vet vad dessa medarbetare är innan du börjar bygga ett projekt, så att du kan planera och bygga projektet på det optimala sättet. Nedan visas en lista med faktorer som påverkar prestanda och bästa praxis för optimering av projekt. Analysis Workspace prestationer är en av Adobe främsta prioriteringar och något som vi fortsätter att förbättra varje dag.
 
 ## Segmentlogikens komplexitet
 
@@ -38,21 +38,21 @@ Dessutom kan [klassificeringar](/help/components/classifications/c-classificatio
 
 ## Intervall med begärda data
 
-De data som begärs i ett helt projekt påverkar Analysis Workspace prestanda.
+De data som begärs under ett helt projekt påverkar Analysis Workspace prestanda.
 
 **Bästa tillvägagångssätt för datumintervall**
 
-Dra inte in mer data än du behöver när det är möjligt. Begränsa panelkalendern till relevanta datum för analysen eller använd datumintervallkomponenter (lila komponenter) i frihandstabellerna. Datumintervall som används i en tabell åsidosätter panelens datumintervall. Du kan till exempel lägga till sista månaden, sista veckan och igår i tabellkolumnerna för att begära dessa specifika dataintervall. Mer information om hur du arbetar med datumintervall i Analysis Workspace finns i [den här videon](https://www.youtube.com/watch?v=MIkT6FZ5gKk) .
+Dra inte in mer data än du behöver när det är möjligt. Begränsa panelkalendern till relevanta datum för analysen eller använd datumintervallkomponenter (lila komponenter) i frihandstabellerna. Datumintervall som används i en tabell åsidosätter panelens datumintervall. Du kan till exempel lägga till sista månaden, sista veckan och igår i tabellkolumnerna för att begära dessa specifika dataintervall. Mer information om hur du arbetar med datumintervall i Analysis Workspace finns i [den här videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/date-ranges-and-calendar-in-analysis-workspace.html) .
 
 Minimera antalet årliga jämförelser som används i projektet. När en jämförelse mellan år och år beräknas, utförs en genomgång av alla 13 månaders data mellan de givna månaderna. Detta har samma effekt som att ändra panelens datumintervall till de senaste 13 månaderna.
 
 ## Antal visualiseringar
 
-Antalet visualiseringar i ett projekt kommer att påverka Analysis Workspace svar totalt. Detta beror på att varje visualisering, oavsett om det är en tabell eller ett diagram, har en datakälla som behöver begäras.
+Antalet visualiseringar i ett projekt kommer att påverka Analysis Workspace totala svarstider. Detta beror på att varje visualisering, oavsett om det är en tabell eller ett diagram, har en datakälla som behöver begäras.
 
 **Bästa praxis för antal visualiseringar**
 
-Minska antalet visualiseringar i projektet. Analysis Workspace arbetar mycket bakom kulisserna för varje bild som ni lägger till, så prioritera de bilder som är viktigast för rapportens konsument och dela upp stödet till ett separat, mer detaljerat projekt om det behövs.
+Minska antalet visualiseringar i projektet. Analysis Workspace arbetar mycket bakom kulisserna för varje bild som ni lägger till, så prioritera de bilder som är viktigast för konsumenten av rapporten och dela upp stödet till bilder i ett separat, mer detaljerat projekt om det behövs.
 
 ## Komplexitet i visualiseringar (segment, mätvärden, filter)
 
@@ -73,13 +73,13 @@ Om du hela tiden använder segment och beräknade värden för datapunkter som �
 
 ## Antal paneler
 
-En panel kan innehålla många visualiseringar, och därför kan antalet paneler också påverka Analysis Workspace allmänna svarstider.
+En panel kan innehålla många visualiseringar, och därför kan antalet paneler också påverka hur snabbt Analysis Workspace svarar.
 
 **Bästa praxis för antal paneler**
 
 Försök inte att lägga till allt i ett projekt, utan i stället skapa distinkta projekt som har ett specifikt syfte eller en grupp intressenter. Använd taggar för att ordna projekt i viktiga teman och dela relaterade projekt med grupper av intressenter.
 
-Om du vill organisera fler projekt bör du tänka på att [direktlänkning](https://www.youtube.com/watch?v=6IOEewflG2U) till projektet är ett alternativ. Skapa ett internt projektindex så att intressenter enklare kan hitta det de behöver.
+Om du vill organisera fler projekt bör du tänka på att [direktlänkning](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/curate-and-share-projects/direct-link-to-a-project.html) till projektet är ett alternativ. Skapa ett internt projektindex så att intressenter enklare kan hitta det de behöver.
 
 Om flera paneler behövs i ett projekt bör du komprimera panelerna innan du sparar och delar dem. När ett projekt har lästs in läser Analysis Workspace bara in innehåll för de utökade panelerna. Komprimerade paneler läses inte in förrän användaren expanderar dem. Detta tillvägagångssätt hjälper på två sätt:
 
@@ -92,7 +92,7 @@ Rapportsvitens storlek kan tyckas vara en drivkraft, men i själva verket spelar
 
 ## Antal användare som samtidigt använder Analysis Workspace
 
-Antalet användare som samtidigt använder Analysis Workspace eller särskilda projekt påverkar inte Analysis Workspace prestanda i någon större utsträckning, om användare använder olika rapportsviter. Om samtidiga användare använder samma rapportserie påverkas prestandan.
+Antalet användare som använder Analysis Workspace eller specifika projekt samtidigt påverkar inte Analysis Workspace prestanda i någon större utsträckning, om användarna använder olika rapportsviter. Om samtidiga användare använder samma rapportserie påverkas prestandan.
 
 ## Vanliga felmeddelanden i Analysis Workspace
 
