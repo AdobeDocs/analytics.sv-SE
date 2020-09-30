@@ -3,9 +3,9 @@ description: 'null'
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 226bbce18750825d459056ac2a87549614eb3c2c
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1376'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra li
 
 Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter dina behov (genom att till exempel lägga till eller ersätta mått eller visualiseringar) och spara dem under ett nytt namn.
 
-[Standardmallar i Analysis Workspace på YouTube](https://www.youtube.com/watch?v=aRgYwPneVXg&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=6) (2:46)
+Här är en självstudiekurs (video) om [standardmallar i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/standard-templates-in-analysis-workspace.html) (2:46)
 
 Här finns mallar och de frågor som varje mall kan besvara.
 
@@ -65,7 +65,7 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 * **Självstudiekurs - intern sökanalys**: Självstudiekursen för intern sökning hjälper dig att förstå vad besökarna letar efter på webbplatsen eller i appen, men inte att hitta. Genom att analysera den här typen av data kan ni identifiera möjligheter till innehållsoptimering.
 
-* **Självstudiekurs - marknadsanalys**: Den här självstudiekursen visar hur ni sammanställer en marknadsföringsanalys för era chefer, inklusive vilka anpassade mått och mätvärden som är viktiga.
+* **Självstudiekurs - marknadsanalys**: Den här självstudiekursen visar hur ni sammanställer en marknadsföringsanalys för era chefer, inklusive vilka anpassade dimensioner och mätvärden som är viktiga.
 
 ### Reklam
 
@@ -77,9 +77,9 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 ### Handel
 
-* **Magento: Marknadsföring och handel**: Den här mallen bryter ned din e-handelskonvertering genom kanalattribuering, och ger insikt genom söknyckelord, landningssida, geografisk plats med mera. En videoöversikt finns i:
+* **Magento: Marknadsföring och handel**: Den här mallen bryter ned e-handelskonverteringen genom kanalattribuering, och ger insikt genom sökord, landningssida, geografisk plats med mera. En videoöversikt finns i:
 
->[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+>[!VIDEO](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/integrations/magento/magento-analysis-workspace-template.html)
 
 ### Media
 
