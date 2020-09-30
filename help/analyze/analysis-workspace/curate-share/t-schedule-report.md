@@ -1,17 +1,17 @@
 ---
 description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
 keywords: Analysis Workspace
-title: Schemalagda projekt
+title: Schemalägg projekt
 translation-type: tm+mt
-source-git-commit: 8529a25cc98293421775207f8ccce77c7388ce6d
+source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Schemalagda projekt
+# Schemalägg projekt
 
 På menyn **** Dela i arbetsytan kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
 
