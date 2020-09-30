@@ -2,10 +2,10 @@
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av begreppen samt en specifik dokumentationslänk med mer information om ämnet.
 title: Adobe Analytics – viktiga begrepp
 translation-type: tm+mt
-source-git-commit: ed7b4de020c2258a4ba95370293ed1cf1dd9a1ed
+source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
 workflow-type: tm+mt
-source-wordcount: '1863'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -113,5 +113,5 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | DTM och Adobe Launch | Se Analytics-verktyg. |  |
 | VISTA | Gör att ni kan använda logik på serversidan för att ändra eller segmentera data som samlas in. | [VISTA-regler](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md) |
 | Bearbetningsregler | Förmågan att ange, ändra och kopiera variabler i Analytics-gränssnittet för att ändra data som samlas in. | [Bearbetningsregler](/help/admin/admin/c-processing-rules/processing-rules.md) |
-| Felsökningsalternativ | Det finns flera felsökare och paketanalysatorer som kan hjälpa er att validera implementeringen, inklusive Adobe Experience Cloud-felsökaren. | [Adobe Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=sv) |
+| Felsökningsalternativ | Det finns flera felsökare och paketutlösare som kan hjälpa dig att validera implementeringen, inklusive Adobe Experience Cloud debugger. | [Adobe Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=sv) |
 | API för datainfogning | API:t för datainfogning är en mekanism för datainsamling på serversidan och överföring till Experience Cloud-servrar. I stället för att använda JavaScript-beacons på varje webbsida för att överföra besöksdata till Experience Cloud-servrarna, samlar serversidan in data som enbart baseras på webbläsarfrågor och webbserversvar. | [Steg för att implementera API för infogning av Adobe Analytics-data med POST](https://helpx.adobe.com/se/analytics/kb/data-insertion-api-post-method-adobe-analytics.html) |
