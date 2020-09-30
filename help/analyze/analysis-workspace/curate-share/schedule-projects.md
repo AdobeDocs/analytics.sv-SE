@@ -1,16 +1,18 @@
 ---
-description: Hantera schemalagda Analysis Workspace-projekt.
+description: Hantera schemalagda Analysis Workspace-projekt
 keywords: Analysis Workspace
-title: Schemalagd projektledare
-topic: Reports and analytics
+title: Projekthanterare för schemaläggning
 uuid: 28e3e0de-3cca-40b1-a9de-93a10bd31646
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 4%
 
 ---
 
 
-# Schemalagd projektledare
+# Projekthanterare för schemaläggning
 
 Hantera schemalagda Analysis Workspace-projekt.
 
