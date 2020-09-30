@@ -1,29 +1,32 @@
 ---
-description: Data som samlas in från webbplatser, mobilappar eller överförs med hjälp av webbtjänste-API:er eller datakällor behandlas och lagras i Adobes datalager. Dessa råa klickströmsdata utgör den datauppsättning som används av Adobe Analytics.
+description: Data som samlas in från webbplatser, mobilappar eller överförs med hjälp av webbtjänste-API:er eller datakällor behandlas och lagras i Adobe Data warehouse. Dessa råa klickströmsdata utgör den datauppsättning som används av Adobe Analytics.
 keywords: clickstream;data feed;datafeed;Data Feed
 title: Översikt över Analytics Data Feed
 uuid: 6bdbe90c-e6ed-4bb0-b5be-24fd795adde4
 translation-type: tm+mt
-source-git-commit: dabaf6247695bc4f3d9bfe668f3ccfca12a52269
+source-git-commit: f6f638bcd6a9630d857996a44312dbb739a0c2a8
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 5%
 
 ---
 
 
 # Översikt över Analytics Data Feed
 
-Dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. Dessa rådata kan användas på andra plattformar utanför Adobe för att användas efter eget gottfinnande. Data levereras i timbatchar vid varje timmes slut, eller i dagliga satser vid varje dags slut.
+Dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. Dessa rådata kan användas på andra plattformar utanför Adobe efter eget gottfinnande. Data levereras i timbatchar vid varje timmes slut, eller i dagliga satser vid varje dags slut.
 
 ## Förutsättningar
 
 Kontrollera att du uppfyller alla följande krav innan du använder dataflöden.
 
-* Ha en FTP-plats och autentiseringsuppgifter tillgängliga. Dataflöden kan bara skickas till ett servermål. Din organisation tillhandahåller vanligtvis FTP-autentiseringsuppgifter. Adobe kan på din begäran tillhandahålla en FTP-plats med en liten mängd lagringsutrymme. Kontakta kundtjänst om du vill begära en FTP-destination för dataflöden.
-* En fungerande implementering som skickar data till Adobes datainsamlingsservrar. Se [Validera och publicera en implementering i Launch](/help/implement/launch/validate-publish-prod.md) i användarhandboken för Implementera.
+* Ha en FTP-plats och autentiseringsuppgifter tillgängliga. Dataflöden kan bara skickas till ett servermål. Din organisation tillhandahåller vanligtvis FTP-autentiseringsuppgifter. Adobe kan tillhandahålla en FTP-plats med en liten mängd lagringsutrymme på din begäran. Kontakta kundtjänst om du vill begära en FTP-destination för dataflöden.
+* En fungerande implementering som skickar data till Adobe datainsamlingsservrar. Se [Validera och publicera en implementering i Launch](/help/implement/launch/validate-publish-prod.md) i användarhandboken för Implementera.
 * Ditt konto är en produktadministratör för Analytics, eller så tillhör ditt konto en produktprofil med tillgång till dataflöden.
 
 ## Steg för att komma igång
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
+1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 2. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
 3. Navigera till Admin > Dataflöden i det övre navigeringsfältet.
 4. Klicka på [!UICONTROL Add]. En ny sida med tre huvudkategorier visas: [!UICONTROL Feed information], [!UICONTROL Destination]och [!UICONTROL Data Column Definitions].
@@ -41,7 +44,7 @@ Kontrollera att du uppfyller alla följande krav innan du använder dataflöden.
    * Användarnamn: Ange användarnamnet för att logga in på FTP-platsen.
    * Lösenord och bekräfta lösenord: Ange lösenordet för att logga in på FTP-platsen.
 7. Fyll i [!UICONTROL Data Column Definitions].
-   * Välj den senaste mallen &quot;Alla Adobe-kolumner&quot; i listrutan.
+   * Välj den senaste mallen All Adobe Columns (Alla) i listrutan.
    * Komprimeringsformat: Gzip
    * Paketeringstyp: Flera filer
    * Manifest: Ingen fil
@@ -65,4 +68,4 @@ När ni förstår det grundläggande arbetsflödet för att hämta dataflöden k
 
 Video som navigerar i datafeedgränssnittet:
 
->[!VIDEO](https://www.youtube.com/watch?v=m_fb--gNtR4)
+>[!VIDEO](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/exporting/data-feeds/data-feeds-management-ui.html)
