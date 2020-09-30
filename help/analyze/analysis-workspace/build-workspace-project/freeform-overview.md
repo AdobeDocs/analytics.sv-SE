@@ -5,10 +5,10 @@ title: Skapa projekt – översikt
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 68246d319bdfa27a0fabda493b3550085d2e5528
+source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 8%
+source-wordcount: '731'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 | [Skapa nytt projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden. |
 | Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt och du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
 | Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
-| Visa Tutorials | Gå till [Analysis Workspace YouTube-videor](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS). |
+| Visa Tutorials | Här finns [Analysis Workspace videokurser](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html). |
 | Namn | Namn på Workspace-projektet. |
 | Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
 | Typ | Anger om det här är ett arbetsyteprojekt eller ett [Mobile Scorecard](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/mobapp/home.html). |
