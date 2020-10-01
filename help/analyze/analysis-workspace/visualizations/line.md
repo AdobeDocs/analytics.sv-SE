@@ -3,9 +3,9 @@ description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade
 title: Linjediagram
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: c607489f14057be10a5582b8e6d9e07d7f075b6f
+source-git-commit: ac3a859a7ee54eb772b7cd947f3cdaad861b1078
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!
 
 >[!TIP]
 >
->Vi rekommenderar att trendlinjer tillämpas på data som inte innehåller dagens (partiella data) eller framtida datum, eftersom de förvränger trendlinjen. Om du behöver ta med framtida datum tar du dock bort nollor från data för att undvika skevning för dessa dagar. Det gör du genom att gå till visualiseringens datakälltabell och välja måttkolumnen. Gå sedan till [!UICONTROL Column Settings] och kolla **[!UICONTROL Interpret zero as no value]**.)
+>Vi rekommenderar att trendlinjer tillämpas på data som inte innehåller dagens (partiella data) eller framtida datum, eftersom de skevar trendlinjen. Om du behöver ta med framtida datum tar du dock bort nollor från data för att undvika skevning för dessa dagar. Det gör du genom att gå till visualiseringens datakälltabell, välja måttkolumnen och sedan aktivera **[!UICONTROL Column Settings]** > **[!UICONTROL Interpret zero as no value]**.
 
 ![Linjär trendlinje](assets/show-linear-trendline.png)
 
@@ -54,4 +54,4 @@ Alla trendlinjer för regressionsmodellen passas in med vanliga minsta fyrkanter
 | Exponentiell | Skapar en böjd linje och är användbar när data ökar eller minskar med konstant ökande hastighet. Det här alternativet ska inte användas om dina data innehåller noll eller negativa värden. Ekvation: `y = a + e^(b * x)` |
 | Strömförsörjning | Skapar en böjd linje och är användbar för datauppsättningar som jämför mått som ökar med en viss hastighet. Det här alternativet ska inte användas om dina data innehåller noll eller negativa värden. Ekvation: `y = a * x^b` |
 | Kvadratisk | Söker efter den bästa passningen för en datauppsättning som är formad som en parabola (konkav uppåt eller nedåt). Ekvation: `y = a + b * x + c * x^2` |
-| Glidande medelvärde | Skapar en jämn trendlinje baserad på en uppsättning medelvärden. Exempel är 7 dagars glidande medelvärde eller 4 veckors glidande medelvärde. Ett glidande medelvärde, som också kallas rullande medelvärde, beräknar medelvärdet för ett tidigare intervall, använder det som trendlinjedatapunkt och går sedan till nästa period för att upprepas. Indata för Perioder definierar intervallet som ska användas för att beräkna medelvärdet över. |
+| Glidande medelvärde | Skapar en jämn trendlinje baserad på en uppsättning medelvärden. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av ditt urval av &#39;Perioder&#39;), jämför dem och använder medelvärdet som en punkt på raden. Exempel är 7 dagars glidande medelvärde eller 4 veckors glidande medelvärde. |
