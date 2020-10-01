@@ -2,7 +2,7 @@
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 translation-type: tm+mt
-source-git-commit: 616a6e50e08be831b05f4abdbb3d47f659046d6f
+source-git-commit: 436d0c2706f47a79cc70e4dcdbda6bd2c9a4d98c
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Adobe Analytics använder följande värdar för att förbättra prestanda och p
 
 | Teknik | Domän |
 | --- | --- |
-| Adobe Analytics-domän | `adobe.com` |
+| Adobe Analytics domäner | `adobe.com`, `adobe.net`, `adobe.io` |
 | Adobe Analytics äldre domän | `omniture.com` |
 | Amazon AWS | `aaui-879784980514.s3.us-east-2.amazonaws.com` |
 | Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
@@ -120,15 +120,15 @@ Adobe Analytics använder Amazon Web Services som en del av datainsamlingsproces
 | Australien | `13.238.77.77` |
 | Australien | `52.62.21.192` |
 | Australien | `54.66.152.159` |
-| Frankrike | `15.188.154.177` |
+| Irland | `15.188.154.177` |
 | Frankrike | `15.236.175.233` |
-| Japan | `15.236.9.100` |
+| Irland | `15.236.9.100` |
 | Indien | `13.232.177.101` |
 | Indien | `13.235.4.163` |
 | Indien | `3.6.119.69` |
 | Irland | `52.17.94.37` |
 | Frankrike | `52.49.253.16` |
-| Irland | `52.51.63.15` |
+| Frankrike | `52.51.63.15` |
 | Oregon | `52.42.60.49` |
 | Oregon | `54.212.169.56` |
 | Oregon | `54.214.170.191` |
