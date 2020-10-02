@@ -1,26 +1,29 @@
 ---
 description: Skapa ett projekt och lägg till komponenter (mått, mått, segment, datumintervall) på frihandspanelen.
 keywords: Analysis Workspace
-title: Skapa ett arbetsyteprojekt
+title: Skapa ett Workspace-projekt
 topic: Reports and analytics
 uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
 translation-type: tm+mt
-source-git-commit: ad9a7729924636055e456d0fd7ab928be227034d
+source-git-commit: cf88e73a67db9ba55ba6721df57e3c2db649b31d
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 14%
 
 ---
 
 
-# Skapa ett arbetsyteprojekt
+# Skapa ett Workspace-projekt
 
 Skapa ett projekt och lägg till komponenter (mått, mått, segment, datumintervall) på frihandspanelen.
 
-I den här artikeln får du information om gränssnittselementen för Analysis Workspace och hur du skapar ett projekt. Specifika användningsexempel finns i [Användningsexempel för arbetsytan](/help/analyze/analysis-workspace/freeform-analysis-examples-use-cases.md)Analys.
+I den här artikeln får du information om Analysis Workspace gränssnittselement och hur du skapar ett projekt.
 
 ## Skapa ett projekt
 
 1. Ange användarbehörighet för att skapa och strukturera projekt.
 
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratören lägga till dig i en grupp med aktiverad **[!UICONTROL Create / Curate Projects in Analysis Workspace]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Grupper](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html)).
+   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med aktiverad **[!UICONTROL Create / Curate Projects in Analysis Workspace]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Groups](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Klicka [!DNL Experience Cloud]på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
@@ -35,7 +38,7 @@ I den här artikeln får du information om gränssnittselementen för Analysis W
    Du kan välja om du vill skapa ett projekt från
 
 * Ett tomt projekt (standard). Instruktioner finns nedan.
-* En standardmall. Mallarna skapas av Adobe och skickas ut direkt. Instruktioner finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
+* En standardmall. Mallarna skapas av Adobe och skickas ut. Instruktioner finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
 * En anpassad mall. De här mallarna skapas av användare med administratörsbehörighet. Instruktioner finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
 
    ![](assets/start_modal.png)
@@ -44,6 +47,7 @@ I den här artikeln får du information om gränssnittselementen för Analysis W
 
    * Klicka sedan **[!UICONTROL Create]** eller
    * Klicka bara **[!UICONTROL Enter]**.
+
    Ett tomt projekt visas med en friformspanel och en datatabellvisualisering.
 
    ![](assets/fa_project_new.png)
@@ -79,9 +83,9 @@ I den här artikeln får du information om gränssnittselementen för Analysis W
 
    ![](assets/save_project.png)
 
-1. Du kan nu högerklicka och kopiera en visualisering eller panel och sedan klistra in (&quot;infoga&quot;) det kopierade elementet på en annan plats i projektet eller i ett annat projekt.
+1. Du kan nu högerklicka och kopiera en visualisering eller panel och sedan klistra in (infoga) det kopierade elementet på en annan plats i projektet eller i ett annat projekt.
 
-   Du kan använda den här funktionen för att skapa&quot;byggstenar&quot; - fördefinierade visualiseringar/paneler - som kan kopieras till andra projekt för att komma igång snabbare, med data som är specifika för ditt företag.
+   Du kan använda den här funktionen för att skapa byggstenar – fördefinierade visualiseringar/paneler – som kan kopieras till andra projekt för att komma igång snabbare och med data som är specifika för ert företag.
 
    >[!NOTE]
    >
@@ -105,7 +109,7 @@ I den här artikeln får du information om gränssnittselementen för Analysis W
  <tbody> 
   <tr> 
    <td colname="col1"> Dimensioner (orange) </td> 
-   <td colname="col2"> <p>Använd på projektnivå </p> <p><img  src="assets/dimensions.png" id="image_353BAF1A7AC04C7DB5F5CDFDE7614402" align="left" placement="break" width="300px" /> </p> <p>Prop#, eVar# och event# läggs till i dimensionsnamnen och du kan söka på dessa tal. Exempel: "Internal Campaign" visas i det vänstra fältet som "Internal Campaign (evar2)". </p> <p> Observera att prop-, eVar- och händelsenumren inte visas i tabellen (för att titlarna ska vara korta). </p> <p>Det finns en standardsorteringsordning för vissa färdiga dimensioner, när de dras till en friformstabell eller när de visas i den vänstra listen. När"Timme på dagen" släpps till exempel i ett bord eller visas i det vänstra fältet sorteras det från 12:00-11:00. Du kan fortfarande sortera efter en måttkolumn. </p> </td> 
+   <td colname="col2"> <p>Använd på projektnivå </p> <p><img  src="assets/dimensions.png" id="image_353BAF1A7AC04C7DB5F5CDFDE7614402" align="left" placement="break" width="300px" /> </p> <p>Prop#, eVar# och event# läggs till i dimensionsnamnen, och du kan söka efter dessa siffror. Exempel: "Internal Campaign" visas i det vänstra fältet som "Internal Campaign (evar2)". </p> <p> Observera att prop-, eVar- och händelsenumren inte visas i tabellen (för att hålla titlarna korta). </p> <p>Det finns en standardsorteringsordning för vissa färdiga dimensioner, när de dras till en friformstabell eller när de visas i den vänstra listen. När"Timme på dagen" släpps till exempel i ett bord eller visas i det vänstra fältet sorteras det från 12:00-11:00. Du kan fortfarande välja att sortera efter valfri mätvärdeskolumn. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrisk (grön) </td> 
@@ -113,7 +117,7 @@ I den här artikeln får du information om gränssnittselementen för Analysis W
   </tr> 
   <tr> 
    <td colname="col1"> Segment (blå) </td> 
-   <td colname="col2"> <p>Det går bara att dra på panelnivå, men du kan skapa textbundna segment i datatabellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Mer information finns i <a href="/help/analyze/analysis-workspace/freeform-analysis-examples-use-cases.md"  > Använd ärenden för arbetsytan</a> Analys. </p> </td> 
+   <td colname="col2"> <p>Det går bara att dra på panelnivå, men du kan skapa textbundna segment i datatabellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>See <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segments </a> for more information. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Datumintervall och detaljrikedom (lila) </td> 
@@ -167,10 +171,10 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Uppdelning</a> 
+   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Uppdelningar</a> 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
-     <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensioner </li> 
-     <li id="li_EA16EE017B2E4A6998918706938A21BF">Mått </li> 
+     <li id="li_6CA84ED293EA4940A7495DA9D9121264">Mått </li> 
+     <li id="li_EA16EE017B2E4A6998918706938A21BF">Mätvärden </li> 
      <li id="li_0405D339CD01405DB508A7D8D1A976B4">Segment </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">Tid </li> 
     </ul> </td> 
@@ -207,4 +211,4 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
  </tbody> 
 </table>
 
-Information om hur du kopierar och väljer rader finns i [Tangentbords- och musinteraktioner på arbetsytan](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för analyser.
+Se [Tangentbords- och musinteraktioner i Analysis Workspace](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för mer information om hur du kopierar och markerar rader.
