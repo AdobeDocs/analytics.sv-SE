@@ -5,9 +5,9 @@ title: Översikt över behandlingsregler
 topic: Admin tools
 uuid: 6b4ee7c9-2b86-47a6-b64c-c8d644fff67d
 translation-type: tm+mt
-source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
+source-git-commit: 4cacd06d268c501ade05487c594bc68aa22e9f4c
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
@@ -24,20 +24,11 @@ Bearbetningsregler förenklar datainsamling och hantering av innehåll när det 
 * Rensa felstavade webbplatsavsnitt
 * Hämta interna söktermer eller ett kampanj-ID från frågesträngen till en eVar
 
->[!VIDEO](https://tv.adobe.com/embed/1181/16506/)
+>[!VIDEO](https://video.tv.adobe.com/v/26124/?quality=12&learn=on)
 
-*Titta på översikten över bearbetningsreglerna och kursen från Adobe Summit för att få reda på varför du bör använda bearbetningsregler.*
+## Bearbetar regelbehörigheter {#section_8A4846688050453784DAE4D89355169A}
 
-## Få behörighet att använda bearbetningsregler {#section_8A4846688050453784DAE4D89355169A}
-
-Före den 20 april 2017 var alla användare (inklusive administratörer) tvungna att genomgå en tentamen och beviljas tillstånd att använda bearbetningsreglerna av Adobe Customer Care.
-
-Nu har administratörer behörighet att använda bearbetningsregler **som standard**. Tentamen behövs inte längre. Administratörer kan även ge dessa rättigheter till icke-administratörer via gränssnittet Administratörsverktyg. Så här:
-
-1. Om du inte redan har gjort det [skapar du en grupp](/help/admin/user-management2/c-user-groups/groups.md) som bara innehåller de icke-administratörer som bör ha behörighet att använda bearbetningsregler.
-1. [Lägg till icke-administratörer i den gruppen](/help/admin/user-management2/c-user-management/t-add-user-to-group.md).
-1. Gå sedan till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL `group name`]** > **[!UICONTROL Edit]** > **[!UICONTROL Report Access]** > **[!UICONTROL Report Suite Tools]** > **[!UICONTROL Customize]** > **[!UICONTROL Report Suite Management]**.
-1. Markera rutan intill [!UICONTROL Processing Rules] och klicka **[!UICONTROL OK]**.
+Administratörer har behörighet att använda bearbetningsregler **som standard**. Administratörer kan även ge dessa rättigheter till icke-administratörer via gränssnittet Administratörsverktyg. Instruktioner finns i []
 
 ![](assets/processing-rules.png)
 
