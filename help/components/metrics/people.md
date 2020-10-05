@@ -1,17 +1,15 @@
 ---
-title: Folk
+title: Personer
 description: Antalet unika individer, vanligtvis med flera enheter.
 translation-type: tm+mt
-source-git-commit: 0328de560185e716a3913080feda9cd078e0f206
+source-git-commit: 60fe85adaebee8ca390e59727dda949c12c1ee26
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 0%
+source-wordcount: '61'
+ht-degree: 18%
 
 ---
 
 
-# Folk
+# Personer
 
-Personmåttet räknar antalet personer, eller grupper av enheter, baserat på Adobes Device Graph. Det är en mer korrekt representation av antalet [unika besökare](unique-visitors.md).
-
-Se [personmåttet](https://docs.adobe.com/content/help/en/device-co-op/using/data/people.html) i användarhandboken för Device Co-op.
+Med personmåttet räknas antalet personer, eller grupper av enheter, baserat på Adobe Device Graph. Det är en mer korrekt representation av antalet [unika besökare](unique-visitors.md). Det här måttet kräver att du använder ett [enhetsdiagram](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/data/people.html) eller [enhetsövergripande analys](../cda/overview.md).
