@@ -5,9 +5,9 @@ user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Components Guide
 user-guide-description: Help organize your data using components such as segments, calculated metrics, virtual report suites, and alerts.
 translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+source-git-commit: 60fe85adaebee8ca390e59727dda949c12c1ee26
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '616'
 ht-degree: 57%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 57%
    + [Träff-typ](dimensions/hit-type.md)
    + [Timme på dagen](dimensions/hour-of-day.md)
    + [Timme](dimensions/hour.md)
+   + [Identifierat läge](dimensions/identified-state.md)
    + [Java aktiverat](dimensions/java-enabled.md)
    + [Språk](dimensions/language.md)
    + [Senaste pekkanal](dimensions/last-touch-channel.md)
@@ -92,12 +93,12 @@ ht-degree: 57%
    + [Spårningskod](dimensions/tracking-code.md)
    + [Anledning till avanmälan av spårning](dimensions/tracking-opt-out-reason.md)
    + [US DMA](dimensions/us-dma.md)
-   + [Dusdelstater](dimensions/us-states.md)
+   + [USA](dimensions/us-states.md)
    + [Besöksdjup](dimensions/visit-depth.md)
    + [Besöksnummer](dimensions/visit-number.md)
    + [Vecka](dimensions/week.md)
    + [Veckodag/Veckoslut](dimensions/weekday-weekend.md)
-   + [Spår](dimensions/year.md)
+   + [År](dimensions/year.md)
    + [Postnummer](dimensions/zip-code.md)
 + Mätvärden {#metrics}
    + [Översikt över mätvärden](metrics/overview.md)
@@ -136,6 +137,7 @@ ht-degree: 57%
    + [Tid per besökare](metrics/time-spent-per-visitor.md)
    + [Tidsåtgång - översikt](metrics/time-spent.md)
    + [Totalt antal sekunder som använts](metrics/total-seconds-spent.md)
+   + [Unika enheter](metrics/unique-devices.md)
    + [Unika besökare](metrics/unique-visitors.md)
    + [Enheter](metrics/units.md)
    + [Besökare med Experience Cloud ID](metrics/visitors-with-ecid.md)
