@@ -3,9 +3,9 @@ description: 'null'
 title: Optimera prestanda för Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 8ac408613d9aae1745cc6b876ef2a4c252f0665d
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1302'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ De data som begärs under ett helt projekt påverkar Analysis Workspace prestand
 
 **Bästa tillvägagångssätt för datumintervall**
 
-Dra inte in mer data än du behöver när det är möjligt. Begränsa panelkalendern till relevanta datum för analysen eller använd datumintervallkomponenter (lila komponenter) i frihandstabellerna. Datumintervall som används i en tabell åsidosätter panelens datumintervall. Du kan till exempel lägga till sista månaden, sista veckan och igår i tabellkolumnerna för att begära dessa specifika dataintervall. Mer information om hur du arbetar med datumintervall i Analysis Workspace finns i [den här videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/date-ranges-and-calendar-in-analysis-workspace.html) .
+Dra inte in mer data än du behöver när det är möjligt. Begränsa panelkalendern till relevanta datum för analysen eller använd datumintervallkomponenter (lila komponenter) i frihandstabellerna. Datumintervall som används i en tabell åsidosätter panelens datumintervall. Du kan till exempel lägga till sista månaden, sista veckan och igår i tabellkolumnerna för att begära dessa specifika dataintervall. Titta på [den här videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/date-ranges-and-calendar-in-analysis-workspace.html)om du vill ha mer information om hur du arbetar med datumintervall i Analysis Workspace.
 
 Minimera antalet årliga jämförelser som används i projektet. När en jämförelse mellan år och år beräknas, utförs en genomgång av alla 13 månaders data mellan de givna månaderna. Detta har samma effekt som att ändra panelens datumintervall till de senaste 13 månaderna.
 
@@ -61,7 +61,7 @@ Den typ av visualisering (t.ex. bortfall jämfört med frihandstabell) som lägg
 * Intervall av begärda uppgifter enligt ovan
 * Antal segment som används. till exempel segment som används som rader i en frihandstabell
 * Användning av komplicerade segment
-* [Statiska objektrader](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html) eller kolumner i frihandstabeller
+* [Statiska objektrader](/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md) eller kolumner i frihandstabeller
 * Filter som används på rader i frihandstabeller
 * Antal mätvärden som ingår, särskilt beräknade mätvärden som använder segment
 
@@ -99,10 +99,10 @@ Antalet användare som använder Analysis Workspace eller specifika projekt samt
 Fel kan uppstå vid interaktion med Analysis Workspace. Fel kan uppstå av flera orsaker och de vanligaste är de som anges nedan.
 
 | Felmeddelande | Varför inträffar detta? |
-|---|---|
-| `The report suite is experiencing unusually heavy reporting. Please try again later.` | Din organisation försöker köra för många samtidiga begäranden mot en viss rapportserie. Medarbetare till det här felet är API-begäranden, schemalagda projekt, schemalagda rapporter, schemalagda aviseringar och samtidiga användare som gör rapporteringsförfrågningar. Vi rekommenderar att era förfrågningar och tidsplaner för rapportsviten sprids jämnare under dagen. |
-| `A system error has occurred. Please log a Customer Care request under Help > Submit Support Ticket and include your error code.` | Adobe har ett problem som måste lösas. Vi rekommenderar att du skickar felkoden via en kundtjänst. |
-| `The request is too complex.` | Din rapporteringsbegäran är för stor och kan inte utföras. Medarbetare till det här felet är timeout på grund av begärans storlek, för många matchade objekt i ett segment eller sökfilter, för många mätvärden, inkompatibla mått- och mätkombinationer osv. Vi rekommenderar att du förenklar din begäran. |
-| `One of the segments or the search in this visualization contains a text search that returned too many results.` | Vi rekommenderar att du begränsar sökvillkoren och försöker utföra begäran igen. |
-| `This dimension does not currently support non-default attribution models.` | Vi rekommenderar att du ersätter tabelldimensionen med en som är kompatibel med [Attribution IQ](../attribution/overview.md). |
-| `Your request failed as a result of too many columns or pre-configured rows.` | Vi rekommenderar att du tar bort vissa kolumner eller rader, eller att du delar upp dem i separata visualiseringar. |
+| --- | --- |
+| [!UICONTROL The report suite is experiencing unusually heavy reporting. Please try again later.] | Din organisation försöker köra för många samtidiga begäranden mot en viss rapportserie. Medarbetare till det här felet är API-begäranden, schemalagda projekt, schemalagda rapporter, schemalagda aviseringar och samtidiga användare som gör rapporteringsförfrågningar. Vi rekommenderar att era förfrågningar och tidsplaner för rapportsviten sprids jämnare under dagen. |
+| [!UICONTROL A system error has occurred. Please log a Customer Care request under Help > Submit Support Ticket and include your error code.] | Adobe har ett problem som måste lösas. Vi rekommenderar att du skickar felkoden via en kundtjänst. |
+| [!UICONTROL The request is too complex.] | Din rapporteringsbegäran är för stor och kan inte utföras. Medarbetare till det här felet är timeout på grund av begärans storlek, för många matchade objekt i ett segment eller sökfilter, för många mätvärden, inkompatibla mått- och mätkombinationer osv. Vi rekommenderar att du förenklar din begäran. |
+| [!UICONTROL One of the segments or the search in this visualization contains a text search that returned too many results.] | Vi rekommenderar att du begränsar sökvillkoren och försöker utföra begäran igen. |
+| [!UICONTROL This dimension does not currently support non-default attribution models.] | Vi rekommenderar att du ersätter tabelldimensionen med en som är kompatibel med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md). |
+| [!UICONTROL Your request failed as a result of too many columns or pre-configured rows.] | Vi rekommenderar att du tar bort vissa kolumner eller rader, eller att du delar upp dem i separata visualiseringar. |
