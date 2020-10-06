@@ -2,18 +2,23 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för Adobe Analytics-kontrollpaneler
 translation-type: tm+mt
-source-git-commit: 541c6c02a961b9a328539d719f3e0ecdb6642260
+source-git-commit: 3be37fd47de552e378033ade196538e6d84d31c5
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2376'
 ht-degree: 0%
 
 ---
 
 
-
 # Curator&#39;s guide for Adobe Analytics dashboards
 
-Följande information instruerar cheferna för Adobe Analytics data om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i [Adobe Analytics dashboards Scorecard Builder](https://youtu.be/tnnl6hrcP94).
+>[!IMPORTANT]
+>
+>Från och med oktober 2020 kommer Adobe gradvis att lansera en rad förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta din CSM om du vill avanmäla dig från dessa prestandaförbättringsfunktioner.
+
+Följande information instruerar cheferna för Adobe Analytics data om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i videon Adobe Analytics dashboards Scorecard Builder:
+
+>[!VIDEO](https://video.tv.adobe.com/v/34544)
 
 ## Introduktion
 
@@ -38,25 +43,20 @@ I följande tabell beskrivs villkoren för att förstå målgruppen, funktionern
 | Datumintervall | Det primära datumintervallet för instrumentpanelsrapporter |
 | Jämförelsedatumintervall | Datumintervallet som jämförs med det primära datumintervallet |
 
- 
 ## Skapa ett styrkort för chefsanvändare
 
 Ett styrkort visar viktiga datavisualiseringar för chefsanvändare i en sidindelad layout, vilket visas nedan:
 
-
 ![Exempelstyrkort](assets/intro_scorecard.png)
-
 
 Som kurator för det här styrkortet kan du använda Styrkortbyggaren för att konfigurera vilka rutor som ska visas på styrkortet för din kund. Du kan också konfigurera hur detaljerade vyer, eller uppdelningar, kan justeras när användaren trycker på rutorna. Gränssnittet i Scorecard Builder visas nedan:
 
 ![Styrkortbyggaren](assets/scorecard_builder.png)
 
-
 Om du vill skapa styrkortet måste du göra följande:
 
 1. Öppna mallen Tomt Mobile Scorecard.
 2. Konfigurera styrkortet med data och spara det.
-
 
 ### Åtkomst till mallen Tomt Mobile-styrkort
 
@@ -205,7 +205,7 @@ För chefer:
    * Kontrollera att chefsanvändaren kan logga in på rätt Analytics-instans och att styrkortet har delats.
 
 
-3. Förklara för den verkställande användaren hur rutor visas i de styrkort du delar (det första styrkortet nedan är i mörkt läge). se **Inställningar** nedan om du tror att din chefsanvändare föredrar detta visningsalternativ):
+3. Förklara för den verkställande användaren hur rutor visas i de styrkort du delar (det första styrkortet nedan är i mörkt läge). se **Inställningar** nedan om du tror att din verkställande användare föredrar detta visningsalternativ):
 
    ![Förklaringar](assets/newexplain.png)
 
