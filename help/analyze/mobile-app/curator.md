@@ -2,7 +2,7 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för Adobe Analytics-kontrollpaneler
 translation-type: tm+mt
-source-git-commit: 3be37fd47de552e378033ade196538e6d84d31c5
+source-git-commit: 7ec56bb72638f157b6a501d73495b91ae52d7de9
 workflow-type: tm+mt
 source-wordcount: '2376'
 ht-degree: 0%
@@ -11,10 +11,6 @@ ht-degree: 0%
 
 
 # Curator&#39;s guide for Adobe Analytics dashboards
-
->[!IMPORTANT]
->
->Från och med oktober 2020 kommer Adobe gradvis att lansera en rad förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta din CSM om du vill avanmäla dig från dessa prestandaförbättringsfunktioner.
 
 Följande information instruerar cheferna för Adobe Analytics data om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i videon Adobe Analytics dashboards Scorecard Builder:
 
@@ -263,3 +259,7 @@ Tryck på alternativet och välj en underkategori för förslaget. I förslagsfo
 **Så här ställer du en fråga**:
 
 Tryck på alternativet och ange din e-postadress i det övre fältet och din fråga i fältet nedanför. En skärmdump bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka frågan trycker du på pappersplansikonen i formulärets övre högra hörn.
+
+>[!IMPORTANT]
+>
+>Från och med oktober 2020 kommer Adobe gradvis att lansera en rad förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta din CSM om du vill avanmäla dig från dessa prestandaförbättringsfunktioner.
