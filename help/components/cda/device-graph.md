@@ -2,7 +2,7 @@
 title: Enhetsdiagram
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med hjälp av enhetsdiagrammet.
 translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+source-git-commit: 954927359420cfdb3d0e908758fc36464e15fee5
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
