@@ -1,10 +1,10 @@
 ---
 title: Så här spelar du upp
-description: Förstå begreppet"replay" i Analytics för olika enheter
+description: Förstå begreppet"replay" i enhetsövergripande analys
 translation-type: tm+mt
-source-git-commit: 2230fa2c48358346d1d449f2db335ff75c6b1631
+source-git-commit: 954927359420cfdb3d0e908758fc36464e15fee5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Så här spelar du upp
 
-Analytics för flera enheter skickar data i ett virtuellt rapportpaket:
+Med Analytics för olika enheter kan ni överföra data i en virtuell rapportserie på två olika sätt:
 
-* **Livestning**: CDA försöker sy ihop varje träff när den kommer in. Netto nya enheter till rapportsviten som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
+* **Livestning**: CDA försöker sy ihop varje träff när den kommer in. Nya Net-enheter i rapportsviten som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
 * **Spela upp**: CDA&quot;spelar upp&quot; data ungefär en gång i veckan baserat på unika identifierare som man har lärt sig. I det här skedet sammanfogas nya enheter i rapportsviten.
 
 ## Exempeltabell
