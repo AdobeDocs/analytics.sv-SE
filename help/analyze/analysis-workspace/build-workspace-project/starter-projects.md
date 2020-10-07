@@ -3,7 +3,7 @@ description: 'null'
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 519cb7e83e5f49ecacc9c4bd0c12bc59088c662c
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Du kan välja om du vill skapa ett projekt från:
 
-* **Tomt projekt (standard)**: Instruktioner finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md).
+* **Tomt projekt (standard)**: Instruktioner finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/home.md).
 * **Standardmall**: Mallarna skapas av Adobe och levereras med produkten.
 * **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har fått tillstånd från [!UICONTROL Analysis Workspace: Save as Template] Admin Console. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
 
@@ -57,7 +57,7 @@ Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter 
 
 Här är en självstudiekurs (video) om [standardmallar i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/standard-templates-in-analysis-workspace.html) (2:46)
 
-Här finns mallar och de frågor som varje mall kan besvara.
+Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
