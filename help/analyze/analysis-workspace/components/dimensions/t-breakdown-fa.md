@@ -5,7 +5,7 @@ title: Dela upp dimensioner
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 519cb7e83e5f49ecacc9c4bd0c12bc59088c662c
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 14%
@@ -19,7 +19,7 @@ Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 
 Analysera data på obegränsade sätt efter just era behov och bygg frågor med hjälp av relevanta mätvärden, mått, segment, tidslinjer och andra analysvärden.
 
-1. [Skapa ett projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) med en datatabell.
+1. [Skapa ett projekt](/help/analyze/analysis-workspace/home.md) med en datatabell.
 1. Högerklicka på ett radobjekt i datatabellen och välj **[!UICONTROL Breakdown]** > *`<item>`*.
 
    ![Stegresultat](assets/fa_data_table_actions.png)
