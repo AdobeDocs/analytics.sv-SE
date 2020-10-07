@@ -4,10 +4,10 @@ title: Översikt över Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
 translation-type: tm+mt
-source-git-commit: 4cacd06d268c501ade05487c594bc68aa22e9f4c
+source-git-commit: e70cd7056a88f58a905c5a3cb9a173b31a7b53be
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 9%
+source-wordcount: '516'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ Analysis Workspace är ett flexibelt webbläsarverktyg som gör att du snabbt ka
 
 Om du bara har några minuter kan du titta på den här korta översikten för att se vad som är möjligt.
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
 ## Logga in på Adobe Analytics {#login}
 
@@ -46,7 +46,7 @@ I ditt Workspace-projekt är **paneler, tabeller, visualiseringar och komponente
 
 ### Komponenter
 
-**Komponenter** är dimensioner, mätvärden, segment eller datumintervall, som alla kan kombineras i en **[!UICONTROL Freeform table]** för att du ska kunna besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) innan du går in på analysen. När du har lärt dig mer om komponentterminologi kan du börja dra och släppa för att [skapa en analys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) i ett **[!UICONTROL Freeform table]**.
+**Komponenter** är dimensioner, mätvärden, segment eller datumintervall, som alla kan kombineras i en **[!UICONTROL Freeform table]** för att du ska kunna besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](/help/analyze/analysis-workspace/components/analysis-workspace-components.md) innan du går in på analysen. När du har lärt dig mer om komponentterminologi kan du börja dra och släppa för att [skapa en analys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) i ett **[!UICONTROL Freeform table]**.
 
 ![](assets/build-components.png)
 
