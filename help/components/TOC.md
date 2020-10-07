@@ -5,10 +5,10 @@ user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Components Guide
 user-guide-description: Help organize your data using components such as segments, calculated metrics, virtual report suites, and alerts.
 translation-type: tm+mt
-source-git-commit: 60fe85adaebee8ca390e59727dda949c12c1ee26
+source-git-commit: c337f43e13849e5162c3447962f30cff822ad74d
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 57%
+source-wordcount: '622'
+ht-degree: 56%
 
 ---
 
@@ -214,6 +214,7 @@ ht-degree: 57%
    + [Konfigurera enhetsövergripande analys](cda/setup.md)
    + [Så här spelar du upp](cda/replay.md)
    + [CDA Workspace-mall](cda/workspace-template.md)
+   + [Begränsa ett VRS till vissa datum](cda/limit-vrs-date.md)
    + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
 + Larm {#alerts}
    + [Intelligenta aviseringar](c-alerts/intellligent-alerts.md)
