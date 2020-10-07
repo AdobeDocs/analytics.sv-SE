@@ -3,9 +3,9 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 519cb7e83e5f49ecacc9c4bd0c12bc59088c662c
 workflow-type: tm+mt
-source-wordcount: '7716'
+source-wordcount: '7712'
 ht-degree: 96%
 
 ---
@@ -414,8 +414,7 @@ Nya funktioner och förbättringar som släpptes 8 februari 2018.
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md#create-custom-template"  > Anpassade Workspace-mallar </a> </p> </td> 
    <td colname="col2"> <p>Nu kan du skapa egna mallar i Workspace och spara dem så att andra användare i organisationen kan börja med data som är relevanta för dem. </p> </td> 
   </tr> 
-  <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md"  > Nytt modalt fönster för att starta projekt </a> </p> </td> 
+  <tr>  
    <td colname="col2"> <p>När du klickar på Nytt projekt öppnas ett nytt fönster, där du kan välja att börja från: </p> 
     <ul id="ul_FE90E6B9AF334A029D66A43901F8FA0B"> 
      <li id="li_F1DFD9AE140C4E5B849D4C522D5968DB">ett tomt projekt, </li> 
@@ -498,7 +497,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
    <td colname="col2"> <p>Kartvisualiseringen, som introducerades i oktober 2017, kan nu återges i PDF-format. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md"  > Relativa internlänkar</a> när du kopierar/sparar som </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/home.md"  > Relativa internlänkar</a> när du kopierar/sparar som </p> </td> 
    <td colname="col2"> <p>Tidigare när du kopierade ett projekt eller sparade som ledde alla internlänkar som sparades i projektet till det ursprungliga projektet, inte till det kopierade projektet. </p> <p>Internlänkarna är nu relativa till det projekt där de finns när du kopierar/sparar som. </p> </td> 
   </tr> 
   <tr> 
@@ -568,7 +567,7 @@ Nya funktioner som släpptes 26 oktober 2017.
    <td colname="col2"> <p>Om det finns visualiseringar anslutna till en friforms- eller kohorttabell visas de anslutna visualiseringarna nu i den övre vänstra punkten (Inställningar för datakälla). Vid hovring markeras den länkade visualiseringen och om du klickar på den kommer du till den. </p> <p>Dessutom finns det en kryssruta för att visa/dölja datatabellen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md"  > Händelsenummer har lagts till i händelsenamnen i den vänstra listen </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/home.md"  > Händelsenummer har lagts till i händelsenamnen i den vänstra listen </a> </p> </td> 
    <td colname="col2"> <p>Redan innan oktober 2017 lades evariabelnummer och egenskapsnummer till i måttnamnen, och du kunde söka på dessa nummer. Nu fungerar det likadant med händelser också. </p> <p>Exempel: ”Prenumerationer” visas nu i den vänstra listen som ”Prenumerationer (händelse1)”. </p> <p>Tänk på följande: </p> 
     <ul id="ul_5DF85C65F7004539949DDC4F23922296"> 
      <li id="li_A685834B4914460D87568583BB39C474">Händelsenumret visas inte i tabellen (för att titlarna ska vara korta). </li> 
@@ -576,7 +575,7 @@ Nya funktioner som släpptes 26 oktober 2017.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md"  > Färdiga mått sorteras logiskt som standard </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/home.md"  > Färdiga mått sorteras logiskt som standard </a> </p> </td> 
    <td colname="col2"> <p>Standardsorteringsordningen för vissa färdiga mått har uppdaterats i följande fall: </p> 
     <ul id="ul_B9C0C761F39E43A4977EC028F4D4525C"> 
      <li id="li_FE72ADDCD32A4FF7907462726D6E7758">När de dras till en friformstabell. </li> 
@@ -677,7 +676,7 @@ Nya funktioner som släpptes 17 augusti 2017.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md"  > Tagga ett projekt när du sparar </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/home.md"  > Tagga ett projekt när du sparar </a> </p> </td> 
    <td colname="col2"> <p>Du kan nu lägga till taggar i ett projekt när du sparar det. </p> </td> 
   </tr> 
   <tr> 
