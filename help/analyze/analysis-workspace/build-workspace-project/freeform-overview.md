@@ -5,7 +5,7 @@ title: Skapa projekt – översikt
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 519cb7e83e5f49ecacc9c4bd0c12bc59088c662c
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 7%
@@ -33,7 +33,7 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 
 | Element | Beskrivning |
 |---|---|
-| [Skapa nytt projekt](/help/analyze/analysis-workspace/build-workspace-project/t-freeform-project.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden. |
+| [Skapa nytt projekt](/help/analyze/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden. |
 | Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt och du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
 | Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
 | Visa Tutorials | Här finns [Analysis Workspace videokurser](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html). |
