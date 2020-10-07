@@ -1,10 +1,10 @@
 ---
 description: Importera spårningsdata från tredjepartsprogram till Analytics.
-title: Komma igång med Analytics dataanslutningar
+title: Komma igång med Analytics-dataanslutningar
 translation-type: tm+mt
-source-git-commit: 6967ed62ced07cf817bdfd7137c5659831ae3520
+source-git-commit: 92bb5e7fe675ddd78da05ffb63cb5da0692e55bb
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Översikt över dataanslutningar
 
-Adobe förser organisationer med användbar realtidsinformation om deras digitala strategier och marknadsföringsinitiativ. Med dataanslutningar kan du importera spårningsdata från tredjepartsprogram till Analytics, så att du kan samla in och använda data från en central plats. Om du använder någon av partnerprodukterna kan du skapa en integrering som importerar programdata till marknadsföringsrapporter. När de är integrerade kan du generera rapporter som innehåller data från programmet.
+Adobe förser organisationer med åtgärdbar realtidsinformation om deras digitala strategier och marknadsföringsinitiativ. Med dataanslutningar kan ni importera spårningsdata från tredjepartsprogram till Analytics, så att ni kan samla in och använda data från en central plats. Om du använder någon av partnerprodukterna kan du skapa en integrering som importerar programdata till marknadsföringsrapporter. När de är integrerade kan du generera rapporter som innehåller data från programmet.
 
 En e-postintegrering kan till exempel vilja använda en e-postpartner för att distribuera en e-postkampanj. När besökarna kommer till er webbplats vill ni veta vilka som kom som svar på er e-postkampanj. Dataanslutarna integrerar data från er e-postpartner i marknadsföringsrapporter, så att ni kan fastställa den här informationen för att mäta effektiviteten i er e-postkampanj.
 
 >[!IMPORTANT]
 >
->Adobe Data Connector-tekniken upphör i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+>Vi kommer att avsluta livscykeln för Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 **Systemkrav**
 
@@ -41,11 +41,11 @@ Innan du konfigurerar en dataanslutningsintegration för din produkt gör du fö
 * Ha de nödvändiga inloggningsuppgifterna för partnerproduktkontot, med rätt att få tillgång till alla data som du vill integrera med marknadsföringsrapporter. Du kanske vill skapa ett särskilt e-postkonto för rapportdistributörer och för meddelanden om de integrerade åtgärderna.
 * Identifiera anpassade variabler som innehåller kampanjinformationen. Detta kallas vanligtvis kampanjspårningskod, men din organisation kan använda någon annan terminologi.
 * Bestäm vilka händelser du vill ska ta emot visningar och klicka på data. Du kanske vill byta namn på händelserna i enlighet med detta.
-* Placera lämplig kod på landningssidan så att Analytics kan göra lämplig modellering med data från partnerprodukten. Specifika instruktioner för respektive partnerprodukt finns i avsnittet i Data Connectors Showcase på fliken Resources.
+* Placera lämplig kod på landningssidan så att Analytics kan göra lämplig modellering med data som kommer från partnerprodukten. Specifika instruktioner för respektive partnerprodukt finns i avsnittet i Data Connectors Showcase på fliken Resources.
 
 ## Lägg till en integrering
 
-Du måste ha ett aktuellt konto för att komma åt [!UICONTROL Data Connectors] landningssidan (konsolen). Vi rekommenderar även att du känner till Adobe Analytics.
+Du måste ha ett aktuellt konto för att komma åt [!UICONTROL Data Connectors] landningssidan (konsolen). Vi rekommenderar också att du känner till Adobe Analytics.
 
 1. Logga in på Adobe Experience Cloud.
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Data Connectors]**.
@@ -66,7 +66,7 @@ När du har aktiverat en integrering visas den på [!UICONTROL Data Connectors] 
 
 Remarketing-segment är datafiler som skapas baserat på de variabler som används i en dataanslutningsintegrering.
 
-Adobe Analytics skickar dessa som separata filer via data warehouse till en FTP som skapats av Adobe för tredje part. Den tredje parten distribuerar sedan dessa filer till klienten. Företagen använder ofta dessa för att marknadsföra sig mot dem som besökt webbplatsen och tittade på en produkt, men som inte köpte den. (Du kan till exempel kontakta en kund som erbjuder en rabatt på en produkt som de har tittat på, men som inte köpt den).
+Adobe Analytics skickar dessa i separata dagliga filer via data warehouse till en FTP som skapats av Adobe för tredje part. Den tredje parten distribuerar sedan dessa filer till klienten. Företagen använder ofta dessa för att marknadsföra sig mot dem som besökt webbplatsen och tittade på en produkt, men som inte köpte den. (Du kan till exempel kontakta en kund som erbjuder en rabatt på en produkt som de har tittat på, men som inte köpt den).
 
 **Segment**
 
@@ -78,7 +78,7 @@ Adobe Analytics skickar dessa som separata filer via data warehouse till en FTP 
 
 För att lyckas genomföra remarknadsföringssegmenten måste följande villkor vara uppfyllda:
 
-* Ett kontrakt för dataanslutningar har upprättats och din organisation har slutfört implementeringsfasen med en Adobe-konsult.
+* Ett avtal om dataanslutningar har upprättats och din organisation har slutfört implementeringsfasen med en konsult från Adobe.
 * Motsvarande händelse utlöses samtidigt som produktvariabeln:
    * Cart Abandonment: `scAdd` event
    * Inköp: `purchase` event
@@ -86,8 +86,9 @@ För att lyckas genomföra remarknadsföringssegmenten måste följande villkor 
 
 >[!NOTE]
 >
->Om produkten definieras utan en associerad händelse utlöses händelsen prodView automatiskt.
-Om ovanstående krav inte uppfylls rapporteras inte motsvarande segment för återmarknadsföring korrekt.
+>Om produkten definieras utan någon tillhörande händelse utlöses `prodView` händelsen automatiskt.
+>
+>Om ovanstående krav inte uppfylls rapporteras inte motsvarande segment för återmarknadsföring korrekt.
 
 [!UICONTROL Cart Abandonment]: utlöses efter att användaren har lagt till en produkt i kundvagnen:
 
