@@ -3,22 +3,48 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 519cb7e83e5f49ecacc9c4bd0c12bc59088c662c
+source-git-commit: 60bc50752c307aa83c11885380e0962243025373
 workflow-type: tm+mt
-source-wordcount: '7712'
-ht-degree: 96%
+source-wordcount: '8021'
+ht-degree: 92%
 
 ---
 
 
 # Nyheter i Analysis Workspace
 
+Du får tillgång till versionsinformationen för Adobe Experience Cloud som helhet [här](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+
+## Oktober 2020
+
+Nya funktioner som släpptes i oktober 2020.
+
+| Funktion | Beskrivning |
+| --- | --- |
+| Linjevisualisering: [Alternativ för glidande medeltrendlinje](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | **[!UICONTROL Moving average]** har lagts till i trendlinjeinställningarna för linjevisualisering. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av ett **[!UICONTROL Periods]** urval), ett genomsnittsvärde för dem och ett medelvärde används som en punkt på raden. |
+| [Hjälpsida för prestanda](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html) | På hjälpsidan för Analysis Workspace prestanda visas olika faktorer som påverkar projektets prestanda och länkar till tips för optimering. |
+
+## September 2020
+
+Nya funktioner släpptes i september 2020.
+
+| Funktion | Beskrivning |
+| --- | --- |
+| [Ladda ned 50 000 artiklar för en enda dimension](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/download-send.html#download-items) | Nu kan du ladda ned 50 000 objekt för en enda dimension i en friformstabell med segment och filter. Det ger dig åtkomst till mer än de 400 dataraderna utanför Analysis Workspace. |
+| [Förbättringar av linjevisualisering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla linjevisualiseringar. Detta kan vara praktiskt när linjevisualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen är [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential]och [!UICONTROL Power] [!UICONTROL Quadratic].</li></ul> |
+| Nya datumintervall | Vi har lagt till fem nya datumintervall så att du kan välja mellan datumintervall som inte innehåller data för delar av dagen från idag: De senaste 7 fullständiga dagarna, de senaste 14 fullständiga dagarna, de senaste 30 fullständiga dagarna, de senaste 60 fullständiga dagarna, de senaste 90 fullständiga dagarna |
+
+
+## Augusti 2020
+
+Inga nya funktioner släpptes i augusti 2020.
+
 ## Juli 2020
 
 Ny funktion släppt 16 juli 2020.
 
 | Funktion | Beskrivning |
-|--- |--- |
+| --- | --- |
 | Nya förinställningar för datumintervall | Fyra nya datumintervall har lagts till: ([!UICONTROL This week/month/quarter/year (excluding today)]). På så sätt kan du välja från datumintervall som inte innehåller data för delar av dagen från och med idag. |
 
 ## Juni 2020
@@ -115,7 +141,7 @@ Förbättringar som släpptes 18 juli 2019.
 Förbättring som släpptes 13 juni 2019.
 
 | Förbättring | Beskrivning |
-|--- |--- |
+| --- |--- |
 | Nya färdiga filter | Nya färdiga filter har lagts till i sökningen i den vänstra listen. Utöver det som redan finns (mått, mätvärden, godkända med mera) har vi lagt till nya filter, som beräknade värden, kundattribut, evariabler, egenskaper och video, för att det ska vara enklare att hitta de komponenter du behöver. |
 
 ## Maj 2019
@@ -207,6 +233,7 @@ Nya funktioner och förbättringar som släpptes 13 september 2018.
   </tr> 
  </tbody> 
 </table>
+
 ## Augusti 2018
 
 Nya funktioner och förbättringar som släpptes 9 augusti 2018.
