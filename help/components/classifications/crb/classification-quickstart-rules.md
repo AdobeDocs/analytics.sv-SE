@@ -5,7 +5,7 @@ title: Klassificeringsregler
 topic: Admin tools
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
 translation-type: tm+mt
-source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
+source-git-commit: 4c3af6b91e264bd23e6765e99bf640dac284c75d
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 1%
@@ -325,11 +325,15 @@ Lägg till regler genom att matcha ett villkor med en klassificering och ange å
    Sidan visas **[!UICONTROL Select Report Suites]** .
 
    >[!NOTE]
-   Rapportsviter visas på den här sidan *`only`* när följande villkor uppfylls:        >
-
-   * Rapportsviterna har minst en klassificering definierad för den variabeln i [!UICONTROL Admin Tools].
-   (Se *`Variable`* i [Klassificeringsregeluppsättningar](/help/components/classifications/crb/classification-rule-set.md) för en förklaring av den här förutsättningen.)
-
+   >
+   >Rapportsviter visas på den här sidan *`only`* när följande villkor uppfylls:
+   >
+   >* Rapportsviterna har minst en klassificering definierad för den variabeln i [!UICONTROL Admin Tools].
+      >
+      >   
+      (Se *`Variable`* i [Klassificeringsregeluppsättningar](/help/components/classifications/crb/classification-rule-set.md) för en förklaring av den här förutsättningen.)
+      >
+      >
    * Du har valt rapportsviten på **[!UICONTROL Available Report Suites]** sidan, som visas när du klickar på [Lägg till regeluppsättning](/help/components/classifications/crb/classification-rule-set.md) för att skapa regeluppsättningen.
 
 
