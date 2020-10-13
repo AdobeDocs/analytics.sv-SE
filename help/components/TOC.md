@@ -2,13 +2,13 @@
 product: analytics
 audience: end-user
 user-guide-title: Komponenthandbok för Analytics
-breadcrumb-title: Components Guide
-user-guide-description: Help organize your data using components such as segments, calculated metrics, virtual report suites, and alerts.
+breadcrumb-title: Komponenthandbok
+user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
 translation-type: tm+mt
 source-git-commit: c337f43e13849e5162c3447962f30cff822ad74d
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 56%
+source-wordcount: '640'
+ht-degree: 55%
 
 ---
 
