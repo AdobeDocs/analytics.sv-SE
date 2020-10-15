@@ -5,10 +5,10 @@ title: Kontrollpanelshanterare
 topic: Reports and analytics
 uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 6efb60ae2f565e67426c78bf830ada655e29b3af
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 2%
+source-wordcount: '743'
+ht-degree: 1%
 
 ---
 
@@ -20,10 +20,6 @@ Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera och schemaläg
 >[!IMPORTANT]
 >
 >Det bästa sättet att använda kontrollpanelshanteraren är att inte ha fler än 300 kontrollpaneler för en enskild användare. Observera även att hanteraren läser in alla delade instrumentpaneler nedan, så var klok med att dela instrumentpaneler.
-
-## Kontrollpanelshanterare
-
-Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera och schemalägga kontrollpaneler för leverans.
 
 Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Dashboards]**.
 
@@ -53,7 +49,7 @@ Steg som beskriver hur du använder alternativen för hantering av delade instru
  </tr> 
  <tr class="chrow strow"> 
   <td class="choption"><strong>Instrumentpanelsspelare</strong></td> 
-  <td class="chdesc stentry"> <p>SiteCatalyst 14-servrar kommer inte längre att svara på dataförfrågningar från Dashboard Player. Alla instrumentpaneler som för närvarande visas i Dashboard Player kan nås via standardgränssnittet Rapporter och Analytics eller återskapas som en realtidsinstrumentpanel. Kontrollpaneler i realtid är särskilt utformade för kontinuerlig visning och har helskärmsläge så att du kan visa dem på tv-apparater eller andra stora skärmar. </p> <p>Användaråtgärd krävs: Du måste sluta använda Dashboard Player. </p> </td> 
+  <td class="chdesc stentry"> <p>SiteCatalyst 14-servrar kommer inte längre att svara på dataförfrågningar från Dashboard Player. Alla instrumentpaneler som för närvarande visas i Dashboard Player kan nås via standardgränssnittet Rapporter och analyser eller skapas om som en realtidsinstrumentpanel. Kontrollpaneler i realtid är särskilt utformade för kontinuerlig visning och har helskärmsläge så att du kan visa dem på tv-apparater eller andra stora skärmar. </p> <p>Användaråtgärd krävs: Du måste sluta använda Dashboard Player. </p> </td> 
  </tr> 
  <tr class="chrow strow"> 
   <td class="choption"><strong>Copy Me</strong></td> 
@@ -75,7 +71,7 @@ Befintliga gamla kontrollpaneler kommer att fortsätta att köras och du kan for
 
 >[!NOTE]
 >
->Gå vidare, överväg att använda [Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) och möjligheten att ladda ned och planera dem.
+>Gå vidare, överväg att använda [Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) och möjligheten att ladda ned och schemalägga dem.
 
 När du kopierar den äldre kontrollpanelen öppnas den äldre kontrollpanelen för redigering, där du kan lägga till äldre innehåll eller nytt innehåll. När du kopierar en äldre kontrollpanel bevaras originalet i listan med äldre kontrollpaneler.
 
