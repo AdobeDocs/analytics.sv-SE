@@ -2,13 +2,13 @@
 product: analytics
 audience: end-user
 user-guide-title: Exporthandbok för Analytics
-breadcrumb-title: Export Guide
-user-guide-description: Use Data Feeds to receive an hourly or daily export of raw data. Use Data Warehouse to retrieve a spreadsheet output of data.
+breadcrumb-title: Exporthandbok
+user-guide-description: Använd dataflöden för att få en timbaserad eller daglig export av rådata. Använd Data warehouse för att hämta data från kalkylblad.
 translation-type: tm+mt
 source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 93%
+source-wordcount: '289'
+ht-degree: 85%
 
 ---
 
