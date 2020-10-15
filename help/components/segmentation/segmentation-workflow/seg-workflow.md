@@ -4,19 +4,15 @@ title: Översikt över segmenteringsarbetsflöde
 topic: Segments
 uuid: e15aaa2f-a604-46dd-9bdd-e2a340c74927
 translation-type: tm+mt
-source-git-commit: 9e70cd51f8828cdcb698175a2b4c0150610d14d0
+source-git-commit: 6efb60ae2f565e67426c78bf830ada655e29b3af
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 3%
+source-wordcount: '248'
+ht-degree: 2%
 
 ---
 
 
 # Översikt över segmenteringsarbetsflöde
-
-Beskriver ett föreslaget arbetsflöde för segment som skapats med segmentbyggaren och hanteras med segmenthanteraren.
-
-## Översikt över segmenteringsarbetsflöde
 
 Beskriver ett föreslaget arbetsflöde för segment som skapats med segmentbyggaren och hanteras med segmenthanteraren.
 
