@@ -5,19 +5,15 @@ title: Uppsättningar med klassificeringsregler
 topic: Admin tools
 uuid: c4d7b77c-fa98-44be-955f-9aee7f73480b
 translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: 6efb60ae2f565e67426c78bf830ada655e29b3af
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 3%
+source-wordcount: '356'
+ht-degree: 2%
 
 ---
 
 
 # Uppsättningar med klassificeringsregler
-
-En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. Du använder en variabel för regeluppsättningen. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter.
-
-## Uppsättningar med klassificeringsregler
 
 En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. Du använder en variabel för regeluppsättningen. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter.
 
