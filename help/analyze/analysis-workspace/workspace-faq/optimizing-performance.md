@@ -3,15 +3,15 @@ description: Faktorer som påverkar arbetsytans prestanda och optimeringar som d
 title: Analysis Workspace prestandafaktorer och optimering
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 93eb4f4c8f2990c8a4485f75ef5c13a00a28f19d
+source-git-commit: 5d1046a4e24c21b33d804d1ec06c05e28e77a031
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
 
 
-# Optimera prestanda för Analysis Workspace
+# Optimera [!UICONTROL Analysis Workspace performance]
 
 Olika faktorer kan påverka prestanda i ett projekt inom Analysis Workspace. Det är viktigt att du vet vad dessa medarbetare är innan du börjar bygga ett projekt, så att du kan planera och bygga projektet på det optimala sättet. Den här sidan innehåller en lista med faktorer som påverkar prestanda och optimeringar som du kan göra för att få bästa prestanda i Analysis Workspace.
 
@@ -19,9 +19,10 @@ Olika faktorer kan påverka prestanda i ett projekt inom Analysis Workspace. Det
 >
 >Prestandasidan i Analysis Workspace är i begränsad version. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/landing/an-releases.html)
 
-## Hjälp > Prestanda i Analysis Workspace
+## [!UICONTROL Help] > [!UICONTROL Performance] i Analysis Workspace
 
-Under **[!UICONTROL Analysis Workspace > Help > Performance]** kan du se faktorer som påverkar projektets prestanda, t.ex. nätverk, webbläsare och projektfaktorer. Du får bäst resultat om du tillåter att projektet läses in fullständigt innan du öppnar sidan Prestanda.
+Under **Analysis Workspace > [!UICONTROL Help] >[!UICONTROL Performance]** kan du se faktorer som påverkar projektets prestanda, t.ex. nätverk, webbläsare och projektfaktorer. Du får bäst resultat om du tillåter att projektet läses in fullständigt innan du öppnar sidan Prestanda.
+
 * Kolumnen Aktuellt projekt visar resultaten för ditt aktuella projekt och din användarmiljö.
 * I kolumnen Riktlinje visas det rekommenderade tröskelvärdet för Adobe för varje faktor.
 
@@ -35,7 +36,7 @@ Dessutom kan du **hämta prestandainnehållet som CSV** och enkelt dela det med 
 
 ## Nätverksfaktorer
 
-Hjälp > Prestandanätverksfaktorer:
+[!UICONTROL Help] > [!UICONTROL Performance] nätverksfaktorer:
 
 | Faktor | Definition | Berörd av | Optimering |
 | --- | --- | --- | --- |
@@ -45,7 +46,7 @@ Hjälp > Prestandanätverksfaktorer:
 
 ## Webbläsarfaktorer
 
-Hjälp > Prestandafaktorer för webbläsare:
+[!UICONTROL Help] > [!UICONTROL Performance] bland annat följande faktorer:
 
 | Faktor | Definition | Berörd av | Optimering |
 | --- | --- | --- | --- |
@@ -56,7 +57,7 @@ Hjälp > Prestandafaktorer för webbläsare:
 
 ## Projektfaktorer
 
-Hjälp > Projektfaktorer för prestanda:
+[!UICONTROL Help] > [!UICONTROL Performance] projektfaktorer:
 
 | Faktor | Definition | Optimering |
 | --- | --- | --- |
@@ -88,5 +89,5 @@ Det kan uppstå fel vid interaktion med Analysis Workspace som också påverkar 
 | [!UICONTROL A system error has occurred. Please log a Customer Care request under Help > Submit Support Ticket and include your error code.] | Adobe har ett problem som måste lösas. | Skicka felkoden till kundtjänst. |
 | [!UICONTROL The request is too complex.] | Din rapporteringsbegäran är för stor och kan inte utföras. Medarbetare till det här felet är timeout på grund av begärans storlek, för många matchade objekt i ett segment eller sökfilter, för många mätvärden, inkompatibla mått- och mätkombinationer osv. | Förenkla begäran genom att ta bort vissa kolumner eller rader i tabellen, eller dela upp tabellen i separata begäranden. |
 | [!UICONTROL One of the segments or the search in this visualization contains a text search that returned too many results.] | Segmentkriterierna eller rapportfiltret är för brett. | Begränsa sökvillkoren och försök igen. |
-| [!UICONTROL This dimension does not currently support non-default attribution models.] | Attribuering som inte är standard stöds inte för den dimension som du använder. | Ersätt dimensionen i tabellen med en som är kompatibel med [Attribution IQ](../attribution/overview.md). |
+| [!UICONTROL This dimension does not currently support non-default attribution models.] | Attribuering som inte är standard stöds inte för den dimension som du använder. | Ersätt dimensionen i tabellen med en som är kompatibel med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md). |
 | [!UICONTROL Your request failed as a result of too many columns or pre-configured rows.] | Tabellen innehåller för många frihandsceller (rad * kolumner). | Ta bort kolumner eller rader i tabellen eller dela upp tabellen i separata begäranden. |
