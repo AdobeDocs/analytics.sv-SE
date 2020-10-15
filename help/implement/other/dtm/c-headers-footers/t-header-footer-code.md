@@ -5,7 +5,7 @@ title: Lägg till sidhuvuds- och sidfotskod
 topic: Developer and implementation
 uuid: 23d89ae0-340a-4b12-91d1-953b4613c98e
 translation-type: tm+mt
-source-git-commit: 82cf5ddfd4d18af09c2dbedba20514e4b643a94b
+source-git-commit: 6efb60ae2f565e67426c78bf830ada655e29b3af
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Med Dynamic Tag Management skapas inbäddningskoder för testning och produktion
 
 1. Kopiera koden för produktionssidfoten och placera den i avsnittet för [!DNL BODY] din webbplats-HTML.
 
-   Placera koden så nära [!DNL </body>] tagga så mycket som möjligt.
+   Placera koden så nära `</body>` -taggen som möjligt.
 1. Kopiera koden för sidhuvud och sidfot för mellanlagring och upprepa sedan stegen ovan på mellanlagringsplatsen.
 
    >[!NOTE]
