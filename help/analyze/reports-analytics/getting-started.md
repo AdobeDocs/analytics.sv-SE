@@ -1,11 +1,14 @@
 ---
-description: Innan du använder Rapporter och Analytics bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
+description: Innan du använder Reports and Analytics bör du känna till dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 subtopic: Get started
-title: Komma igång med rapporter och analyser
+title: Komma igång med Reports and Analytics
 topic: Reports and analytics
 uuid: ea76ec40-6025-4ee5-8f75-855b5b823737
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 6efb60ae2f565e67426c78bf830ada655e29b3af
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 1%
 
 ---
 
@@ -13,10 +16,6 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 # Komma igång med rapporter och analyser
 
 Innan du använder Rapporter och analyser bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
-
-## Komma igång med rapporter och analyser
-
-Innan du använder Rapporter och Analytics bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 
 Rapportering ger insikter om era traditionella webbaserade kanaler och om de kanaler som utvecklas, som mobiler, video och sociala nätverk. Några exempel på marknadsföringsrapporter är:
 
@@ -41,14 +40,14 @@ Webbläsare och systemkrav för att logga in i gränssnittet Rapporter och analy
 
       >[!NOTE]
       >
-      >Adobe upphörde med stödet för Internet Explorer 11 i Adobe Analytics den 13 november 2018. Växla så snart som möjligt till Microsoft Edge eller någon annan webbläsare som stöds.
+      >Adobe slutade stödja Internet Explorer 11 i Adobe Analytics den 13 november 2018. Växla så snart som möjligt till Microsoft Edge eller någon annan webbläsare som stöds.
 
 * Cookies och JavaScript måste vara aktiverade.
 * Bildskärmsupplösning på 1 024 x 768 med 16-bitars färgdjup (eller högre).
 
-## Logga in på Rapporter och analyser
+## Logga in på Reports and Analytics
 
-Innan du får åtkomst till gränssnittet bör du samarbeta med din kontoansvarige eller Adobes kundtjänst för att konfigurera ditt företags konto.
+Innan du får åtkomst till gränssnittet bör du samarbeta med din kontoansvarige eller Adobe kundtjänst för att konfigurera ditt företags konto.
 
 ## Logga in med Experience Cloud
 
@@ -117,7 +116,7 @@ Alla användare har tillgång till [!UICONTROL Account Information] sidan. Följ
   </tr> 
   <tr> 
    <td> <p>Webbtjänst </p> </td> 
-   <td> <p>Visar webbtjänstens användarnamn och delade hemligheter som är associerade med det här kontot. Använd de här inloggningsuppgifterna när du använder Experience Cloud via API:erna för webbtjänster. Mer information finns i <a href="https://marketing.adobe.com/developer"  > Developer Connection</a>. </p> <p> <p>Obs!  Den här informationen visas endast om kontot är auktoriserat som webbtjänstanvändare. </p> </p> </td> 
+   <td> <p>Visar webbtjänstens användarnamn och delade hemligheter som är associerade med det här kontot. Använd dessa autentiseringsuppgifter när du använder Experience Cloud via webbtjänstens API:er. Mer information finns i <a href="https://marketing.adobe.com/developer"  > Developer Connection</a>. </p> <p> <p>Obs!  Den här informationen visas endast om kontot är auktoriserat som webbtjänstanvändare. </p> </p> </td> 
   </tr> 
   <tr> 
    <td> <p> Uteslut den här datorn </p> </td> 
@@ -128,9 +127,9 @@ Alla användare har tillgång till [!UICONTROL Account Information] sidan. Följ
 
 ## Ändra gränssnittsspråk
 
-Steg som beskriver hur gränssnittsspråket ändras. Du kan visa gränssnittet Rapporter och Analytics på det språk du väljer.
+Steg som beskriver hur gränssnittsspråket ändras. Du kan visa Reports and Analytics-gränssnittet på det språk du vill.
 
 1. Logga in på Analytics och välj **[!UICONTROL Reports]** fliken.
 1. Klicka på det aktiva språket på **[!UICONTROL Language]** menyn i sidfoten och välj sedan önskat språk.
 
-Du kan komma åt dokumentationen och hemsidan från Adobe Experience Cloud. ( **[!UICONTROL Help]** > **[!UICONTROL Help Home]**.)
+Du kommer åt dokumentationen och hemsidan från Adobe Experience Cloud. ( **[!UICONTROL Help]** > **[!UICONTROL Help Home]**.)
