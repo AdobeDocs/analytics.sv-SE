@@ -3,7 +3,7 @@ description: Med kolumninställningar kan du konfigurera kolumnformatering, som 
 title: Kolumninställningar
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: f0bb68488bbd987203a1abf0f4fbc0fdb3d4824e
+source-git-commit: 6efb60ae2f565e67426c78bf830ada655e29b3af
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 20%
@@ -15,7 +15,7 @@ ht-degree: 20%
 
 [!UICONTROL Column Settings] gör att du kan konfigurera kolumnformatering, som vissa kan vara villkorliga.
 
-## Redigera [!UICONTROL Column Settings] {#column-settings}
+## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
 
 Du öppnar [!UICONTROL Column Settings]genom att dra en friformstabell till projektet och sedan klicka på kugghjulsikonen i kolumnrubriken.
 
