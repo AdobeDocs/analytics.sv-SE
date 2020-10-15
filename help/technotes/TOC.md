@@ -2,13 +2,13 @@
 product: analytics
 audience: all
 user-guide-title: Tekniska anteckningar för Analytics
-breadcrumb-title: Tech Notes
-user-guide-description: A knowledge base containing helpful articles that don't belong to a specific analytics tool or component.
+breadcrumb-title: Tekniska anteckningar
+user-guide-description: En kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
 translation-type: tm+mt
 source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 81%
+source-wordcount: '180'
+ht-degree: 73%
 
 ---
 
