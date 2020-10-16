@@ -2,9 +2,9 @@
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 translation-type: tm+mt
-source-git-commit: 4b6107fe57787e639fb06ef957d6230d1bc45bd1
+source-git-commit: 91009f0c184987726e9e7e6714f14f56ae831576
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2091'
 ht-degree: 1%
 
 ---
@@ -32,8 +32,6 @@ Ytterligare information om bearbetning:
 
 Skapa regler för bearbetning av marknadsföringskanaler, som avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal.
 
-I den här proceduren används en e-postregel som exempel. Exemplet förutsätter att du har lagt till en e-postkanal i din lista över kanaler på sidan för Marketing Channel Manager.
-
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 2. Välja en rapportsvit.
 
@@ -41,17 +39,15 @@ I den här proceduren används en e-postregel som exempel. Exemplet förutsätte
 
    Se [Köra den automatiska installationen](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 
-3. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Processing Rules]**.
+3. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Processing Rules]**. Om du har kört den automatiska konfigurationen har en uppsättning kanaler och regler definierats automatiskt åt dig.
 
    ![Stegresultat](assets/marketing_channel_rules.png)
 
-4. Välj på **[!UICONTROL Add New Rule Set]** menyn **[!UICONTROL Email]**.
-
-   Här väljer du inte kanal, utan en mall som fyller i regeln med några av de nödvändiga parametrarna. Du kan ändra den här mallen efter behov.
+4. Om du vill lägga till en ny regel väljer du på **[!UICONTROL Add New Rule Set]** menyn. Om du väljer en kanal får du en regelmall och om du väljer Egen börjar du från en tom skiva. Med båda alternativen kan du ändra regeluppsättningen efter behov.
 
    ![Stegresultat](assets/example_email.png)
 
-5. Om du vill fortsätta skapa regler klickar du på **[!UICONTROL Add Rule]**.
+5. Om du vill fortsätta skapa regler klickar du på **[!UICONTROL Add New Rule SetRule]**.
 6. Om du vill prioritera regler drar och släpper du dem till önskad plats.
 7. Klicka på **[!UICONTROL Save.]**
 
@@ -59,13 +55,17 @@ Fortsätt nedåt på den här sidan om du vill se rekommendationer för kanalreg
 
 ### Ange värdet för marknadsföringskanalen
 
-**[!UICONTROL Add Rule]** **Ange kanalens värde** för att definiera detaljdimensionen för marknadsföringskanalen som är tillgänglig för den kanalen. På så sätt kan ni dela upp dimensionerna för marknadsföringskanalen och se mer detaljerad information om kanalen.
+**[!UICONTROL Set the channel's value]** definierar detaljdimensionen för marknadsföringskanalen som är tillgänglig för den kanalen. På så sätt kan ni dela upp dimensionerna för marknadsföringskanalen och se mer detaljerad information om kanalen.
 
 Vi rekommenderar att kanalvärdet ställs in på samma villkor som används för att definiera själva kanalen. Om frågesträngsparametern till exempel används för att definiera kanalen anger du frågesträngsparametern som kanalvärde.
 
 ### Regelkriterier
 
 Den här referenstabellen definierar de fält, alternativ och träffattribut som du kan använda för att definiera regler för bearbetning av marknadsföringskanaler.
+
+>[!NOTE]
+>
+>Alla textfält som du definierar, till exempel frågesträngsparametrar eller listor med värden som ska matchas mot, utvärderas som **skiftlägesokänsliga** värden. Om du till exempel har en regel där frågesträngsparametern cmp = abc123, kommer alla versioner av både &#39;cmp&#39; och &#39;abc123&#39; att matcha regeln. Du behöver inte lista flera versioner av dessa värden.
 
 | Term | Definition |
 |--- |--- |
@@ -88,7 +88,7 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 | Sidrotdomän (TLD+1) | Rotdomänen för den sida där besökaren pekar, till exempel example.co.uk . |
 | Sidans URL | URL-adressen till en webbsida på webbplatsen. |
 | Refererande domän | Vilken domän dina besökare kom ifrån innan de besökte din webbplats, till exempel referenter från `abcsite.com` kontra `xyzsite.com`. |
-| Frågesträngsparameter | Om en sidadress på webbplatsen ser ut som `https://example.com/?page=12345&cat=1`så är både page och cat frågesträngparametrar. (Se `https://en.wikipedia.org/wiki/Query_string`.)  Du kan bara ange en frågesträngsparameter per regeluppsättning. Om du vill lägga till ytterligare frågesträngsparametrar använder du operatorn och lägger sedan till nya frågesträngsparametrar i regeln. `ANY` |
+| Frågesträngsparameter | Om en sidadress på din webbplats ser ut som `https://example.com/?page=12345&cat=1`så är både page och cat frågesträngparametrar. (Se `https://en.wikipedia.org/wiki/Query_string`.)  Du kan bara ange en frågesträngsparameter per regeluppsättning. Om du vill lägga till ytterligare frågesträngsparametrar använder du operatorn och lägger sedan till nya frågesträngsparametrar i regeln. `ANY` Frågesträngsparametrar utvärderas som skiftlägeskänsliga; &quot;cat&quot; och &quot;CAT&quot; kommer till exempel att utvärderas på samma sätt. |
 | Referent | Webbsidans plats (fullständig URL) som besökarna var på innan de kom till webbplatsen. Det finns en referens utanför den definierade domänen. |
 | Refererande domän och sökväg | En sammanfogning av den refererande domänen och URL-sökvägen. Exempel:    `www.example.com/products/id/12345` eller `ad.example.com/foo` |
 | Refererande parameter | En frågesträngsparameter på referensens URL. Om besökarna till exempel kommer från `example.com/?page=12345&cat=1`är sidan och katten de refererande parametrarna. |
@@ -130,7 +130,7 @@ För marknadsföringskanalregeln är de naturliga sökinställningarna följande
 
 ### Visa {#display}
 
-Den här regeln identifierar besökare som kommer från banderollannonser. Den identifieras av en frågesträngsparameter i mål-URL:en, i det här fallet *`Ad_01`*.
+Den här regeln identifierar besökare som kommer från banderollannonser. Den identifieras av en frågesträngsparameter i mål-URL:en, i det här fallet *`Ad_01`*. Frågesträngsparametern och de värden den söker efter utvärderas som skiftlägeskänsliga värden.
 
 ![](assets/example_display.png)
 
@@ -154,7 +154,7 @@ Ett bra tillvägagångssätt är att inkludera en&quot;annan kampanjkanal&quot; 
 
 ### Sociala nätverk {#social-networks}
 
-Den här regeln identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook*. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
+Denna regel identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook;. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
 
 ![](assets/example_social.png)
 
@@ -164,7 +164,7 @@ Den här regeln används av besökare där den refererande URL:en matchar instä
 
 ![](assets/int-channel1.png)
 
-Mer information om varför den här kanalen används finns i [Orsaker till intern (Sessionsuppdatering)](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-faq.html) .
+Mer information om varför den här kanalen används finns i [Orsaker till intern (Sessionsuppdatering)](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-faq.html#internal) .
 
 ### Direkt {#direct}
 
