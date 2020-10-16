@@ -1,8 +1,8 @@
 ---
-source-git-commit: 78d9346ec82d802136cbaf2bfed31b6d25af207e
+source-git-commit: 81f351588ef25b0ee0376f471c947391387afb6e
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -56,4 +56,4 @@ Behörighetsobjekt för analysverktyg ger åtkomst till funktioner som är obero
 
 Utvecklare liknar användare, förutom att de har möjlighet att använda Experience Cloud API i Adobe I/O. Mer information finns i [Hantera utvecklare](https://helpx.adobe.com/enterprise/using/manage-developers.html) i användarhandboken för Enterprise. Om en användare beviljas Developer Access för någon profil kan han/hon få åtkomst till Dev Console (console.adobe.io) och redigera Adobe Analytics-integreringar. De API-anrop och svar för Analytics som är auktoriserade för användaren är beroende av nettobehörigheten för alla profiler där användaren har Developer Access.
 
-Med behörigheter för Analysis Workspace Access, alla mätvärden, alla dimensioner och en rapportsvit kan användaren till exempel göra lyckade API-anrop till /reporting-slutpunkten för alla rapporter i den sviten. När avvikelseidentifiering har lagts till kan rapporterna innehålla fler svar, vilket lägger till mer avvikelsedata. Som tumregel gäller att om en profil beviljar åtkomst till ett scenario i Adobe Analytics-gränssnittet så aktiverar Developer Access för samma profil motsvarande API-anrop och svar.
+Med till exempel profilbehörigheter som omfattar alla mått, alla dimensioner och en rapportsvit kan en utvecklaråtkomstmedlem i profilen göra API-anrop relevanta för alla komponenter i den relevanta sviten. När avvikelseidentifiering har lagts till kan rapporterna innehålla fler svar, vilket lägger till mer avvikelsedata. Som tumregel gäller att om en profil beviljar åtkomst till ett scenario i Adobe Analytics-gränssnittet, så aktiverar Developer Access för en profil som är definierad på liknande sätt motsvarande API-anrop och svar.
