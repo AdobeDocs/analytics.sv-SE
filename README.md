@@ -1,12 +1,16 @@
 ---
-source-git-commit: 18d57362af9e0667d26fde67e37671cf6bb6bab6
+source-git-commit: 373d58b67e943b90b39c33d61a9c816bab6e727e
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '435'
-ht-degree: 6%
+source-wordcount: '517'
+ht-degree: 5%
 
 ---
 # Contribute-artikel
+
+| EXL-PR | EXL | Förhandsgranska | Aktivera | Publicerad | Hjälp |
+|--- |--- |--- |--- |--- |--- |
+| [![Byggstatus](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics.en_pr-exl/lastBuild/) | [![Byggstatus](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics.en_exl/lastBuild/lastBuild) | [Förhandsgranska URL](https://experienceleague.corp.adobe.com/docs/analytics/analyze/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=en) | [Redigeringshandbok](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Vi välkomnar bidrag från både vår community och från Adobe anställda utanför dokumentationsteamen.
 
