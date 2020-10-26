@@ -2,9 +2,9 @@
 title: trackingServerSecure
 description: Bestäm var bildbegäranden ska skickas på HTTPS-sidor.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d9fa9fa6afb6b76ae37a92c86d9ca21a9c3fb22e
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 >
 >Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 
-## SSL Tracking Server i Adobe Experience Platform Launch
+## SSL-spårningsserver i Adobe Experience Platform Launch
 
 [!UICONTROL SSL Tracking Server] är ett fält under [!UICONTROL General] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
@@ -41,4 +41,4 @@ Den person som initialt konfigurerar cookie-implementeringen från första part 
 s.trackingServerSecure = "data.example.com";
 ```
 
-CNAME-poster pekar vanligtvis på en underdomän på `ssl.d1.sc.omtrdc.net`.
+CNAME-poster pekar vanligtvis på en underdomän på `data.adobedc.net`, `sc.omtrdc.net` eller `2o7.net`.
