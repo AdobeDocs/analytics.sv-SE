@@ -2,9 +2,9 @@
 title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d9fa9fa6afb6b76ae37a92c86d9ca21a9c3fb22e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 
 ## Spårningsserver i Adobe Experience Platform Launch
 
-Tracking Server är ett fält under [!UICONTROL General] dragspelet när Adobe Analytics-tillägget konfigureras.
+Spårningsservern är ett fält under [!UICONTROL General] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
 1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
@@ -51,22 +51,22 @@ Den person som initialt konfigurerar cookie-implementeringen från första part 
 s.trackingServer = "data.example.com";
 ```
 
-Vanligtvis har CNAME-poster redan konfigurerats och pekar på `sc.omtrdc.net`. Domänen `2o7.net` är också ett giltigt CNAME-mål, som främst används i tidigare versioner av Adobe Analytics.
-
 ### cookies från tredje part
 
 >[!TIP]
 >
 >Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. Adobe rekommenderar att du följer arbetsflödet för cookies från första part.
 
-Om du använder en cookie-implementering från tredje part är värdet för `trackingServer` en underdomän till `sc.omtrdc.net`. Exempel:
+Om du använder en cookie-implementering från tredje part är värdet för `trackingServer` en underdomän till `data.adobedc.net`. Exempel:
 
 ```js
-s.trackingServer = "example.sc.omtrdc.net";
+s.trackingServer = "example.data.adobedc.net";
 ```
 
-Välj en underdomän som är unik för din organisation och som sannolikt inte plockas av någon annan organisation som använder Adobe Analytics. Se till att alla implementeringar i organisationen använder samma spårningsserver. Det kan vara praktiskt att behålla denna information i ett [lösningsdesigndokument](../../prepare/solution-design.md).
+Välj en underdomän som är unik för din organisation och som sannolikt inte plockas av någon annan organisation som använder Adobe Analytics.  Vi rekommenderar att besökarens namnutrymme tilldelas din organisation.  Se till att alla implementeringar i organisationen använder samma spårningsserver. Det kan vara praktiskt att behålla denna information i ett [lösningsdesigndokument](../../prepare/solution-design.md).
+
+Din organisation kanske redan använder en spårningsserver från tredje part i `sc.omtrdc.net` - eller `2o7.net` -domänerna.  Dessa användes huvudsakligen i tidigare versioner av Adobe Analytics och är fortfarande giltiga.
 
 >[!NOTE]
 >
->Använd inte underdomäner djupare än `example.sc.omtrdc.net`. Detta `custom.example.sc.omtrdc.net` är till exempel inte en giltig spårningsserver.
+>Använd inte underdomäner djupare än `example.data.adobedc.net`. Detta `custom.example.data.adobedc.net` är till exempel inte en giltig spårningsserver.
