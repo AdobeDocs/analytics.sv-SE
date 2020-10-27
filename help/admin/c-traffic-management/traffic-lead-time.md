@@ -4,9 +4,9 @@ title: Ledtid som krävs för trafikökningar
 topic: Admin tools
 uuid: aa3fb882-51b0-458f-917b-7c54d5659623
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: a114bef4679da24d4fd6323a55c9ccf52ac772ed
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '332'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ Allokering av maskinvara styrs av varningar som skickas via användargränssnitt
 
 >[!IMPORTANT]
 >
->Adobe kan inte hantera platshållare för trafikändringsbegäranden. Om inget annat anges, följ den föreslagna ledtiden så nära som möjligt, inklusive att inte skicka en varning för tidigt. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) eller [Ange permanent trafikökning](/help/admin/c-traffic-management/t-traffic-permanent.md).
+>Adobe kan inte hantera platshållartrafikändringsbegäranden. Om inget annat anges, följ den föreslagna ledtiden så nära som möjligt, inklusive att inte skicka en varning för tidigt. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) eller [Ange permanent trafikökning](/help/admin/c-traffic-management/t-traffic-permanent.md).
 
 Använd följande riktlinjer för att avgöra hur långt i förväg du måste skicka in en trafikvarning:
 
@@ -69,7 +69,7 @@ Andra saker att tänka på:
    * Beräknade träffar per dag
    * Publiceringsdatum
 
-* Klientaviseringar behövs också när trafikminskningar är eller en rapportsserie är inaktuell.
+* Klientaviseringar behövs också när trafiken minskar eller när en rapportsserie är inaktuell.
 
 ## Maskinvaruavallokering på grund av orealiserad trafik
 
