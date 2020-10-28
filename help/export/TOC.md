@@ -5,10 +5,10 @@ user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Exporthandbok
 user-guide-description: Använd dataflöden för att få en timbaserad eller daglig export av rådata. Använd Data warehouse för att hämta data från kalkylblad.
 translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+source-git-commit: 6ff39a73a6e0bcbfb38d2e7264e48191af97f12d
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 85%
+source-wordcount: '283'
+ht-degree: 84%
 
 ---
 
@@ -43,7 +43,6 @@ ht-degree: 85%
    + [Schemalägga en återkommande förfrågan](data-warehouse/dw-schedule-recurring.md)
    + [Hantera Data Warehouse-förfrågningar](data-warehouse/data-warehouse-requests-manage.md)
    + [Komponenter som stöds i Data Warehouse](data-warehouse/component-support.md)
-   + [Dimensioner som är inkompatibla med Data Warehouse-segment](data-warehouse/dw-dimensions-incompatible-dwsegments.md)
    + [Vanliga frågor om data warehouse](data-warehouse/faq.md)
    + [Bästa praxis för Data Warehouse](data-warehouse/data-warehouse-bp.md)
 + FTP och SFTP {#ftp-and-sftp}
