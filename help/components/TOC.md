@@ -5,9 +5,9 @@ user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
 translation-type: tm+mt
-source-git-commit: c337f43e13849e5162c3447962f30cff822ad74d
+source-git-commit: 7d102d7625e61de962836e866f0863168abcbaa6
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '643'
 ht-degree: 55%
 
 ---
@@ -60,6 +60,7 @@ ht-degree: 55%
    + [Senaste pekkanal](dimensions/last-touch-channel.md)
    + [Senaste beröringskanaldetalj](dimensions/last-touch-detail.md)
    + [Marknadsföringskanal](dimensions/marketing-channel.md)
+   + [Marknadskanalsdetaljer](dimensions/marketing-detail.md)
    + [Minut](dimensions/minute.md)
    + [Mobila dimensioner](dimensions/mobile-dimensions.md)
    + [Bildskärmsupplösning](dimensions/monitor-resolution.md)
