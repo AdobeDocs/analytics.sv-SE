@@ -2,7 +2,7 @@
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 translation-type: tm+mt
-source-git-commit: 5115fb38815997842fcf6131755b9a0fc8f51fc9
+source-git-commit: 6258154ab299d6f01ffcab866a5f9677778025da
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -123,9 +123,9 @@ Adobe Analytics använder Amazon Web Services som en del av datainsamlingsproces
 | Frankrike | `15.237.76.117` |
 | Frankrike | `15.237.136.106` |
 | Frankrike | `35.181.18.61` |
-| Indien | `13.232.177.101` |
-| Indien | `13.235.4.163` |
-| Indien | `3.6.119.69` |
+| Indien | `65.0.114.116` |
+| Indien | `65.0.115.179` |
+| Indien | `65.0.25.111` |
 | Irland | `18.202.158.78` |
 | Irland | `54.72.205.114` |
 | Irland | `54.78.36.71` |
@@ -135,9 +135,9 @@ Adobe Analytics använder Amazon Web Services som en del av datainsamlingsproces
 | Singapore | `52.220.116.94` |
 | Singapore | `52.76.68.91` |
 | Singapore | `54.179.114.68` |
-| Tokyo | `13.112.72.86` |
-| Tokyo | `18.178.74.225` |
-| Tokyo | `18.179.88.228` |
+| Tokyo | `18.182.161.178` |
+| Tokyo | `54.168.58.167` |
+| Tokyo | `54.178.61.109` |
 | Virginia | `3.213.168.181` |
 | Virginia | `3.219.249.186` |
 | Virginia | `3.220.129.153` |
