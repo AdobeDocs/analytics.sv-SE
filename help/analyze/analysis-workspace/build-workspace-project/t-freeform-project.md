@@ -5,7 +5,7 @@ title: Skapa ett Workspace-projekt
 topic: Reports and analytics
 uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
 translation-type: tm+mt
-source-git-commit: cf88e73a67db9ba55ba6721df57e3c2db649b31d
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 14%
@@ -73,7 +73,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
    <td colname="col2"> <p>Objekt som du kan dra till panelen eller projektområdena i gränssnittet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-table.md"  > Frihandspanelen </a> </td> 
+   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md"  > Frihandspanelen </a> </td> 
    <td colname="col2"> <p>Arbetsytan eller arbetsytan som du interagerar med i Analysis Workspace. </p> </td> 
   </tr> 
  </tbody> 
