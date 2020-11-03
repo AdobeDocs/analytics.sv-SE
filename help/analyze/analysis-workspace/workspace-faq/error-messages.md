@@ -2,7 +2,7 @@
 description: Lista över felmeddelanden i Adobe Analysis Workspace och dess tillhörande komponenter
 title: Vanliga felmeddelanden i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 6b191170130018fd9c3555f4470962c702e52cd7
+source-git-commit: 4fd3cf105dff0723ee6454ab6e3a58119928ddc0
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
