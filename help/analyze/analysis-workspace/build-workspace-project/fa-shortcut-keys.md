@@ -1,21 +1,19 @@
 ---
 description: Interaktioner med tangentbord, kortkommandon och beteenden för peka och klicka som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
-title: Snabbtangenter (kortkommandon) som är tillgängliga i Analysis Workspace
-topic: Reports and analytics
-uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
+title: Snabbtangenter (kortkommandon)
 translation-type: tm+mt
-source-git-commit: f0bb68488bbd987203a1abf0f4fbc0fdb3d4824e
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '282'
 ht-degree: 5%
 
 ---
 
 
-# Snabbtangenter (kortkommandon) som är tillgängliga i Analysis Workspace
+# Snabbtangenter (kortkommandon)
 
-Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys och demokratisering.
+Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys, tillägg av paneler och visualiseringar samt demokratisering (delning).
 
 Obs!
 * `Ctrl` = Windows och `Command` = Mac
@@ -35,7 +33,7 @@ Obs!
 | Gå till nästa panel | Alt + Högertangent |
 | Gå till föregående panel | Alt + Vänsterpil |
 
-## Ljudåtgärder
+## Analysåtgärder
 
 | Åtgärd | Genväg |
 | --- | --- |
