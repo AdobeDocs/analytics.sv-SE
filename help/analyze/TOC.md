@@ -5,10 +5,10 @@ user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det ledande verktyget för analys och visualisering av analyser, samt verktyg som Report Builder och Activity Map.
 translation-type: tm+mt
-source-git-commit: 6b191170130018fd9c3555f4470962c702e52cd7
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 91%
+source-wordcount: '1107'
+ht-degree: 90%
 
 ---
 
@@ -23,17 +23,10 @@ ht-degree: 91%
       + [Skapa projekt – översikt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + [Mallar](analysis-workspace/build-workspace-project/starter-projects.md)
-      + [Flera rapportsviter i Workspace](analysis-workspace/build-workspace-project/multiple-report-suites.md)
-      + Kolumn- och radinställningar {#column-row-settings}
-         + [Kolumninställningar](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
-         + [Radinställningar](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Dynamiska jämfört med statiska artiklar](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Ångra och göra om inställningar](analysis-workspace/build-workspace-project/undo-redo.md)
-      + [Kortkommandon i Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
-      + [Sidnumrering, filtrering och sortering av tabeller](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [Flera rapportsviter](analysis-workspace/build-workspace-project/multiple-report-suites.md)
+      + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
-      + [Summor för Workspace](analysis-workspace/build-workspace-project/workspace-totals.md)
    + Komponenter {#components}
       + [Komponenter – översikt](analysis-workspace/components/analysis-workspace-components.md)
       + Dimensioner {#dimensions}
@@ -49,7 +42,14 @@ ht-degree: 91%
    + Visualiseringar {#visualizations}
       + [Översikt över visualiseringar](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)
-      + [Frihandstabell](analysis-workspace/visualizations/freeform-table.md)
+      + Frihandstabell {#freeform-table}
+         + [Frihandstabell](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + Kolumn- och radinställningar {#column-row-settings}
+            + [Kolumninställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
+            + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+            + [Dynamiska jämfört med statiska artiklar](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Sidnumrering, filtrering och sortering av tabeller](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [Summor för Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
          + [Vad är kohortanalys?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera en kohortanalysrapport](analysis-workspace/visualizations/cohort-table/t-cohort.md)
