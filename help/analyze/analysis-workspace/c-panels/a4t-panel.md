@@ -2,10 +2,10 @@
 description: Med Analytics for Target-panelen (A4T) kan du analysera dina Adobe Target-aktiviteter och -upplevelser i Analysis Workspace.
 title: Analyser för målpanelen (A4T)
 translation-type: tm+mt
-source-git-commit: 677539632878655a6e573176321b59b531e1ab2c
+source-git-commit: c93520f7a3dacfbfb05c79809bf58c0cc0f34a9f
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 2%
+source-wordcount: '1022'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Du kan konfigurera A4T-panelen med följande indatainställningar:
 
 | Inställning | Beskrivning |
 |---|---|
-| Verksamhetens syfte? | Välj i en lista över målaktiviteter eller dra och släpp en aktivitet från den vänstra listen.<br>**Obs!** Listan innehåller de senaste sex månaderna av aktiviteter som hade minst en träff. Om du inte ser någon aktivitet i listan kan den vara äldre än 6 månader. Den kan fortfarande läggas till från den vänstra listen, som har en summeringstid på upp till 18 månader. |
+| Verksamhetens syfte? | Välj i en lista över målaktiviteter eller dra och släpp en aktivitet från den vänstra listen. Obs! Listan innehåller de senaste sex månaderna av aktiviteter som hade minst en träff. Om du inte ser någon aktivitet i listan kan den vara äldre än 6 månader. Den kan fortfarande läggas till från den vänstra listen, som har en summeringstid på upp till 18 månader. |
 | Kontrollupplevelse | Välj din kontrollupplevelse. Du kan ändra den om det behövs i listrutan. |
 | Normaliserar mätvärden | Välj bland unika besökare, besök eller aktivitetsimpressioner. Unika besökare rekommenderas för de flesta användningsfall för analyser. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Det påverkar också hur data aggregeras innan konfidensberäkningen tillämpas. |
 | Framgångsmått | Välj upp till tre standardhändelser (ej beräknade) från listrutorna, eller dra och släpp mätvärden från den vänstra listen. Varje mätvärde har en dedikerad tabell och visualisering på den renderade panelen. |
@@ -44,11 +44,11 @@ I varje frihandstabell visas följande måttkolumner:
 | Normaliserar mätvärden | Unika besökare, besök eller aktivitetsexponeringar. |
 | Resultatmått | Det mått som valts i verktyget |
 | Konverteringsgrad | Resultatmått/normaliseringsmått |
-| Lyft | Jämför konverteringsgraden för varje upplevelse med kontrollupplevelsen.<br>**Obs!** Lyft är ett&quot;låst mätvärde&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner. |
-| Lyft (nedre) | Representerar den värsta klippet en variant kan ha över kontrollen. |
-| Lyft (mitten) | Representerar mittpunktshöjningen som en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall. Det här är&quot;Lyft&quot; i rapporter och analyser. |
-| Lyft (övre) | Representerar den bästa lyften en variantupplevelse kan ha över kontrollen. |
-| Förtroende | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. <br>**Obs!** Förtroende är ett&quot;låst mått&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner. |
+| Lyft | Jämför konverteringsgraden för varje upplevelse med kontrollupplevelsen. Obs! Lyft är ett&quot;låst mätvärde&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner. |
+| Lyft (nedre) | Representerar det värsta klippet en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Beräkning: (x/y ± 1.96 std_err(x,y)) / (x_control/y_control ∓ 1.96 std_err(x_control,y_control)). Här är std_err(x,y) sqrt(xx/y - (x/y)^2), där xx anger summan av fyrkanterna. |
+| Lyft (mitten) | Representerar mittpunktshöjningen som en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall. Det här är&quot;Lyft&quot; i rapporter och analyser.<br>Beräkning: (x/y)/(x_control/y_control) - 1 |
+| Lyft (övre) | Representerar den bästa lyften en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Beräkning: Se Lyft (nedre). |
+| Förtroende | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. Obs! Förtroende är ett&quot;låst mått&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner.<br>Beräkning: Använd ett tvådelat t-test med y+y_control-2 frihetsgrader för att hitta p-värdet om x/y är lika med x_control/y_control. Beräkna t-score, där stdern är sqrt( (xx/y-(x/y)^2)/y + (xx_control/y_control-(x_control/y_control)^2)/y_control). Returnera 1-p som tryggheten att de är olika. |
 
 Precis som med andra paneler i Analysis Workspace kan du fortsätta med analysen genom att lägga till ytterligare tabeller och [visualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) som hjälper dig att analysera dina Adobe Target-aktiviteter.
 
