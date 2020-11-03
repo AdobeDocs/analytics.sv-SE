@@ -3,7 +3,7 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 translation-type: tm+mt
-source-git-commit: 7c825eabaa5c1c43ef11bc1654a8af7a1d27d709
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 97%
@@ -34,7 +34,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 12 februari 2020 | Uppdateringar och omorganisering av dokumentationen för [marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
 | 7 februari 2020 | Uppdateringar av [Konfigurera Analytics över enheter](/help/components/cda/setup.md) och [Vanliga frågor och svar](/help/components/cda/faq.md). |
 | 4 februari 2020 | Fullständig omarbetning av [användarhandboken för implementering](/help/implement/home.md). |
-| 22 januari 2020 | Sidan om frihandstabeller har uppdaterats med information om nya [Freeform Table Builder](/help/analyze/analysis-workspace/visualizations/freeform-table.md). |
+| 22 januari 2020 | Sidan om frihandstabeller har uppdaterats med information om nya [Freeform Table Builder](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md). |
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](/help/technotes/cookies.md) har lagts till. |
 | 29 november 2019 | Dokumentationen för [dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) har setts över. |
 | 25 november 2019 | Nytt avsnitt om [Slutet av livscykeln för Tvinga begränsningar för IP-inloggning](/help/admin/company/login-restrictions-eol.md). |
