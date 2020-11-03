@@ -3,7 +3,7 @@ description: Lär dig mer om visualiseringar och visualiseringsinställningar i 
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Videosjälvstudiekurs: [Visualiseringstyper i Analysis Workspace](https://docs.a
 | [Ringdiagram](/help/analyze/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. |
 | [Utfall](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md) | Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. |
 | [Flöde](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) | Visar kundvägar via era webbplatser och appar. |
-| [Frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. |
+| [Frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. |
 | [Histogram](/help/analyze/analysis-workspace/visualizations/histogram.md) | Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). |
 | [Vågrätt fält](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
 | [Linjediagram](/help/analyze/analysis-workspace/visualizations/line.md) | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension. |
