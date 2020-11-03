@@ -1,13 +1,16 @@
 ---
-title: Beräknade mätsummor
+title: Summor för beräknade mätvärden
 description: Läs om hur de beräknade mätvärdena skiljer sig åt i analysverktygen
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 2%
 
 ---
 
 
-# Beräknade mätsummor
+# Summor för beräknade mätvärden
 
 Hur beräknade måttsummor visas skiljer sig mellan [!DNL Reports & Analytics] och [!DNL Analysis Workspace]. I det här avsnittet förklaras skillnaderna.
 
@@ -26,7 +29,7 @@ Eftersom det inte finns någon logisk och konkret metod för att avgöra om ett 
 
 * Skapa ett beräknat mätvärde som innehåller de totala versionerna av mätvärdena som du vill inkludera.
 * Skapa en Data Extract-rapport som kan schemaläggas.
-* Skapa en databegäran i [!DNL ReportBuilder].
+* Create a data request within [!DNL ReportBuilder].
 * Använd [!DNL Analysis Workspace] (se nedan).
 
 ## Beräknade metriska summor i [!DNL Analysis Workspace]
@@ -35,5 +38,5 @@ När du visar data i Analysis Workspace visas i de flesta fall beräknade mätv�
 
 När summorna visas beräknas de ofta på serversidan, vilket innebär att den totala mängden avduplicerade mått, som besök eller besökare. Under vissa omständigheter genereras beräknade värden på klientsidan genom summering över tabellraderna, vilket innebär att summan inte avduplicerar mått som besök eller besökare. Detta inträffar:
 
-* När [statiska rader](/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md) används i frihandstabeller markeras **[!UICONTROL Show as sum of current rows]** alternativet (standard).
+* När [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) används i frihandstabeller markeras **[!UICONTROL Show as sum of current rows]** alternativet (standard).
 * I [Donut-visualiseringen](/help/analyze/analysis-workspace/visualizations/donut.md)blir siffrorna 100 %.
