@@ -1,13 +1,16 @@
 ---
-title: Flera rapportsviter i Workspace
+title: Flera rapportsviter
 description: Lär dig hur och varför du skapar projekt i Workspace med flera rapportsviter
 translation-type: tm+mt
-source-git-commit: 03ab0edc60f4e858acd98f14390d058387af67fa
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 0%
 
 ---
 
 
-# Flera rapportsviter i Workspace
+# Flera rapportsviter
 
 Nu kan du skapa projekt i Analysis Workspace med data från mer än en rapportserie. Rapportsviterna väljs nu på panelnivå så att du kan välja olika rapportsviter för varje panel i samma Workspace-projekt.
 
@@ -63,4 +66,4 @@ Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv pane
 
    * Var ett segment ska skapas: [Segment Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
    * Där ett beräknat mätvärde skapas: [Beräknad metrisk Builder](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
-   * Var en varning ska skapas: [Alert Builder](https://docs.adobe.com/content/help/en/analytics/components/alerts/alert-builder.html).
+   * Var en varning ska skapas: [Varningsbyggaren](https://docs.adobe.com/content/help/en/analytics/components/alerts/alert-builder.html).
