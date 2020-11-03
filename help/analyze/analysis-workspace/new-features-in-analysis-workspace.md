@@ -3,9 +3,9 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 19c5713e7ddedd943746534878200b1339f217a2
+source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
 workflow-type: tm+mt
-source-wordcount: '8021'
+source-wordcount: '8024'
 ht-degree: 92%
 
 ---
@@ -105,7 +105,7 @@ Ny funktion som släpptes 16 januari 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| [Verktyg för friformstabeller](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/visualizations/freeform-table.html) | Med tabellverktyget aktiverat kan du dra och släppa i många mått, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa affärsfrågor. Data uppdateras inte omedelbart. I stället uppdateras de när du klickar på **[!UICONTROL Build]**, vilket sparar tid när du väl vet vilken tabell du vill skapa. Dessutom har den här funktionen följande:<ul><li>**Förhandsgranskning**: Du kan förhandsgranska tabellformatet innan du lägger tid på att återge verkliga data.</li><li>**Inställningar för flexibla rader och uppdelning**: Du kan ange rad- och uppdelningsnivåer för alla måttrader. Tidigare användes standardvärden som inte gick att ändra förrän data returnerades.</li><li>**Uppdelning efter position**: Du kan ange att måttrader alltid ska _delas upp efter position_ i stället för _efter ett visst objekt_ (standard).</li><li>**Ordna statiska rader manuellt**: Du kan ordna statiska rader manuellt så att tabellraderna visas exakt som du vill ha dem. Tidigare kunde statiska rader bara sorteras efter en mätvärdeskolumn eller i bokstavsordning.</li></ul> |
+| [Verktyg för friformstabeller](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html) | Med tabellverktyget aktiverat kan du dra och släppa i många mått, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa affärsfrågor. Data uppdateras inte omedelbart. I stället uppdateras de när du klickar på **[!UICONTROL Build]**, vilket sparar tid när du väl vet vilken tabell du vill skapa. Dessutom har den här funktionen följande:<ul><li>**Förhandsgranskning**: Du kan förhandsgranska tabellformatet innan du lägger tid på att återge verkliga data.</li><li>**Inställningar för flexibla rader och uppdelning**: Du kan ange rad- och uppdelningsnivåer för alla måttrader. Tidigare användes standardvärden som inte gick att ändra förrän data returnerades.</li><li>**Uppdelning efter position**: Du kan ange att måttrader alltid ska _delas upp efter position_ i stället för _efter ett visst objekt_ (standard).</li><li>**Ordna statiska rader manuellt**: Du kan ordna statiska rader manuellt så att tabellraderna visas exakt som du vill ha dem. Tidigare kunde statiska rader bara sorteras efter en mätvärdeskolumn eller i bokstavsordning.</li></ul> |
 
 ## Oktober 2019
 
@@ -113,7 +113,7 @@ Förbättringar som släpptes 10 oktober 2019.
 
 | Förbättring | Beskrivning |
 |--- |--- |
-| Uppdatering av totalsummor för friformstabeller | Friformstabeller innehåller nu två totalsummor, en **[!UICONTROL Table total]** och en **[!UICONTROL Grand total]**. Raden med tabellsumman avser de [rapportfilter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/pagination-filtering-sorting.html) som används. Tidigare påverkades summorna bara av segmentering. [Läs mer](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)<br/>Dessutom har alternativen **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]** lagts till i **[!UICONTROL Column Settings]**.<br/>Med den här förändringen av totalsummor för friformstabeller uppdateras beroende visualiseringar (som länkade **[!UICONTROL Summary Number]**-visualiseringar) samt exporterade CSV- och PDF-data. |
+| Uppdatering av totalsummor för friformstabeller | Friformstabeller innehåller nu två totalsummor, en **[!UICONTROL Table total]** och en **[!UICONTROL Grand total]**. Raden med tabellsumman avser de [rapportfilter](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) som används. Tidigare påverkades summorna bara av segmentering. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)<br/>Dessutom har alternativen **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]** lagts till i **[!UICONTROL Column Settings]**.<br/>Med den här förändringen av totalsummor för friformstabeller uppdateras beroende visualiseringar (som länkade **[!UICONTROL Summary Number]**-visualiseringar) samt exporterade CSV- och PDF-data. |
 | Alternativ för att ta bort ospecificerad/ingen | Möjligheten att enkelt ta bort ospecificerad/ingen har lagts till som ett alternativ i rapportfiltren. |
 | Borttagning av lila komponenter för tidsperioder | Lila komponenter för tidsperioder (minut, timme, dag, vecka, månad, kvartal, år) har tagits bort. De lila tidskomponenterna har alltid fungerat på exakt samma sätt som deras motsvarande oranga mått, och den här förändringen förenklar det hela. Du **behöver inte göra något** om du tidigare har använt någon av de lila tidskomponenterna.<br/>Den här ändringen innebär även att det lila avsnittet **[!UICONTROL Time]** har bytt namn till **[!UICONTROL Date Ranges]**. |
 
@@ -366,11 +366,11 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md"  > Radbrytning av rubriktext är aktiverat som standard </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md"  > Radbrytning av rubriktext är aktiverat som standard </a> </p> </td> 
    <td colname="col2"> <p>Kolumninställningen att <span class="uicontrol">radbryta rubriktext</span> är nu aktiverad som standard för friformstabeller. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
    <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, till exempel hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
   </tr> 
   <tr> 
@@ -397,7 +397,7 @@ Nya funktioner och förbättringar som släpptes 8 mars 2018.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md"  > Radbrytning av rubriktext </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md"  > Radbrytning av rubriktext </a> </p> </td> 
    <td colname="col2"> <p>Nu kan du radbryta rubriktexten i friformstabeller så att rubrikerna blir mer lättlästa och tabellerna enklare att dela. Vi har lagt till ett alternativ i kolumninställningarna för att radbryta rubriktext. Detta är särskilt användbart för återgivning av PDF-filer och för mätvärden med långa namn. </p> </td> 
   </tr> 
   <tr> 
@@ -453,11 +453,11 @@ Nya funktioner och förbättringar som släpptes 8 februari 2018.
    <td colname="col2"> <p>Vi har lagt till ett högerklicksalternativ för att kopiera till Urklipp, så att du kan kopiera celler/tabeller på ett enhetligt sätt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md"  > Förbättring av kolumnprocent </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md"  > Förbättring av kolumnprocent </a> </p> </td> 
    <td colname="col2"> <p>Procentandelen av totalsumman som visades i kolumner begränsades till 100 %, även när vissa scenarier ledde till rader på över 100 % av totalsumman (till exempel med medelvärden). </p> <p>Nu visas procenttal som är större än 100 % för ökad precision. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna kan bli stora. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md#section_3DD847151DA14914888A70FC4FD7BDFB"  > Villkorsstyrd formatering aktiverat för uppdelningar </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md#section_3DD847151DA14914888A70FC4FD7BDFB"  > Villkorsstyrd formatering aktiverat för uppdelningar </a> </p> </td> 
    <td colname="col2"> <p>Användning av villkorsstyrd formatering (färger med mera) i friformstabeller aktiveras nu automatiskt för uppdelningar, såvida inte anpassade gränser har valts. </p> </td> 
   </tr> 
   <tr> 
@@ -484,7 +484,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Fler <a href="/help/analyze/analysis-workspace/build-workspace-project/pagination-filtering-sorting.md"  >filtreringsalternativ</a> för måttobjekt i friformstabeller </p> </td> 
+   <td colname="col1"> <p>Fler <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md"  >filtreringsalternativ</a> för måttobjekt i friformstabeller </p> </td> 
    <td colname="col2"> <p>Dessa (avancerade) filtreringsalternativ för måttobjekt har lagts till (utöver de befintliga alternativen för ”innehåller” och ”innehåller inte”): </p> 
     <ul id="ul_869B3E943E304C0282D56AD96BB79E18"> 
      <li id="li_81A49BA0CA3041C7AB892FAD2D129E5A">Innehåller alla termer </li> 
@@ -515,7 +515,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
    <td colname="col2"> <p>När du ändrar storlek på den vänstra kolumnen behåller Workspace nu breddprocenten för övriga kolumner (och justerar inte bara nästa kolumnbredd till höger). Tack vare den här ändringen går det snabbare att skapa tabeller för både analys och delning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Visa <a href="/help/analyze/analysis-workspace/visualizations/freeform-table.md"  >400 rader</a> i en tabell </p> </td> 
+   <td colname="col1"> <p>Visa <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md"  >400 rader</a> i en tabell </p> </td> 
    <td colname="col2"> <p>Nu kan du visa 400 rader i en tabell (tidigare 200) för att kunna visa 365-dagarstrender. </p> </td> 
   </tr> 
   <tr> 
@@ -655,7 +655,7 @@ Nya funktioner som släpptes 21 september 2017.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md"  > Hantera flera kolumner samtidigt i friformstabeller </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md"  > Hantera flera kolumner samtidigt i friformstabeller </a> </p> </td> 
    <td colname="col2"> <p>Du kan nu ändra inställningarna för flera kolumner samtidigt. Markera bara flera kolumner och klicka på inställningsikonen för någon av dessa kolumner. Alla ändringar du gör gäller för alla kolumner där celler är markerade. </p> </td> 
   </tr> 
   <tr> 
@@ -814,7 +814,7 @@ Nya funktioner som släpptes 8 juni 2017.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.md"  > Kryssrutan Använd procentgränser</a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md"  > Kryssrutan Använd procentgränser</a></b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_7B6B794EDF874A4D87770AB9BAB42F33"> 
      <li id="li_0B403D892320434FBAD9A7F7B808947C"> En kryssruta för att ange gränser för procent har lagts till, avsedd särskilt för procentbaserade mätvärden (fungerar även med icke-procentbaserade mätvärden). </li> 
@@ -866,7 +866,7 @@ Nya funktioner som släpptes 20 april 2017.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Förbättringar av alternativet Ångra/Gör om </p> </td> 
-   <td colname="col2"> <p>De här listorna visar vad du kan och inte kan <a href="/help/analyze/analysis-workspace/build-workspace-project/undo-redo.md"  >ångra/göra om i Analysis Workspace</a>. </p> </td> 
+   <td colname="col2"> <p>De här listorna visar vad du kan och inte kan ångra/göra om i Analysis Workspace</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -884,7 +884,7 @@ Ny funktion som släpptes 16 februari 2017:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/table-settings.md"  > Uppdelning efter position </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md"  > Uppdelning efter position </a> </p> </td> 
    <td colname="col2"> <p>Medger uppdelning efter tabellposition. Exempel: ”Jag vill alltid att de sju översta raderna i en friformstabell ska delas upp.” Nu finns det en kryssruta när du skapar en friformstabell där du kan aktivera Uppdelning efter position. Den här inställningen är inaktiverad som standard. </p> <p>Tidigare var listan med värden i uppdelningen låst. Detta innebar att om du till exempel gjorde en uppdelning för <span class="wintitle">datum</span> efter <span class="wintitle">sida</span> så fick du en lista över de 50 översta sidorna för det valda datumintervallet. </p> <p>Om du sparade den rapporten och sedan körde den igen en månad senare hade de 50 översta sidorna förmodligen ändrats. Men Analysis Workspace ”litade på” resultatet från den ursprungliga uppdelningen och returnerade samma sidor, men med den aktuella månaden som datumintervall. </p> </td> 
   </tr> 
  </tbody> 
@@ -1037,7 +1037,7 @@ Nya funktioner som släpptes 16 juni 2016:
 * En ny [typ av vennvisualisering](/help/analyze/analysis-workspace/visualizations/venn.md) med vilken du kan dra in upp till tre segment och ett mätvärde och skapa ett venndiagram.
 * [Trendmarkering](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A) (linjediagram) för en rankad tabell är nu länkat.
 * [Ikonen Skapa visualisering](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md): Om du klickar på den här ikonen får du en smart gissning vid nästa åtgärd (till exempel stapel- eller venndiagram).
-* Utökade funktioner för [manuella rader](/help/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+* Utökade funktioner för [manuella rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
 * Släppzon för [Lägg till segment](/help/analyze/analysis-workspace/components/t-freeform-project-segment.md)
 * Mindre uppdateringar:
 
