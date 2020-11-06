@@ -2,7 +2,7 @@
 title: Använda XDM-data med Analytics
 description: 'Översikt över hur du använder XDM-data från Experience Platform i Adobe Analytics '
 translation-type: tm+mt
-source-git-commit: 0a570f52c3eb62ca517770fa12f2272f6ccc978d
+source-git-commit: 01e9a456dece2a7c3f96bb2c6c9625f654a05059
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
@@ -21,11 +21,11 @@ Analytics samlar in XDM-data på två sätt:
 
 ## Automatisk mappning
 
-[Automatisk mappning](xdm-manual.md) är beroende av ett [standardschema](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html) i XDM som automatiskt fyller i JSON-objekt som ingår i vanlig Analytics-datainsamling. Analysvariablerna som automatiskt mappas från XDM till dina konfigurerade rapportsviter kräver inte något utvecklarstöd för att införlivas.
+Automatisk mappning är beroende av ett standardschema [](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html) i XDM som automatiskt fyller i JSON-objekt som ingår i vanlig Analytics-datainsamling. Analysvariablerna som automatiskt mappas från XDM till dina konfigurerade rapportsviter kräver inte något utvecklarstöd för att införlivas.
 
 ## Manuell mappning
 
-Manuell mappning av XDM-data till Analytics bygger på [kontextdatavariabler](../vars/page-vars/contextdata.md) i Analytics. Dessa variabler placeras i JSON-objekt som motsvarar tillämpliga scheman. Vanligtvis lägger ditt utvecklingsteam till kontextdata vid implementeringen och sedan anger administratörer [bearbetningsregler](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md) för att tillämpa dessa data på angivna rapportsviter.
+[Manuell mappning av XDM-data till Analytics](xdm-manual.md) bygger på [kontextvariabler](../vars/page-vars/contextdata.md) i Analytics. Dessa variabler placeras i JSON-objekt som motsvarar tillämpliga scheman. Vanligtvis lägger ditt utvecklingsteam till kontextdata vid implementeringen och sedan anger administratörer [bearbetningsregler](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md) för att tillämpa dessa data på angivna rapportsviter.
 
 ## Inställningar
 
