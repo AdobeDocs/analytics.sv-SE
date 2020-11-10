@@ -5,10 +5,10 @@ user-guide-title: Importguide för Analytics
 breadcrumb-title: Importera guide
 user-guide-description: 'Hämta in data i analyser från externa källor, antingen i bulk eller i realtid. '
 translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+source-git-commit: a6b12b7a343318186b5672dbabd8b7c56d09e653
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 96%
+source-wordcount: '525'
+ht-degree: 94%
 
 ---
 
@@ -128,3 +128,5 @@ ht-degree: 96%
       + [Variabler för Analytics-integrering](data-connectors/silverpop-overview/silverpop-variables.md)
       + [Silverpop-integrering](data-connectors/silverpop-overview/silverpop-wizard.md)
       + [Kod för Analytics-plugin](data-connectors/silverpop-overview/silverpop-analytics-code.md)
++ Importera användningsfall {#use-cases}
+   + [Importera mått för betald sökning med datakällor](use-cases/paid-search-metrics.md)
