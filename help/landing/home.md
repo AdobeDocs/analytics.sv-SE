@@ -2,10 +2,10 @@
 title: Tekniska handböcker för Adobe Analytics
 description: Användarhandböcker och resurser för Analytics
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 13fefcf8f743d1890044e2ac6b5864846d2c8cb7
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 99%
+source-wordcount: '411'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokum
 
 [![Integrering](assets/integrate_50px.png)](/help/integrate/home.md) [Integreringshandbok](/help/integrate/home.md) – Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, till exempel Audience Manager, Advertising Cloud och Target.
 
-[![Media Analytics](assets/media_50px.png)](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) [Media Analytics-handbok](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) – Implementera Analytics för ljud- och videokällor. Innehåller Media SDK och Media Collection API.
+[![Streaming Media Analytics](assets/media_50px.png)](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)[Streaming Media Analytics Guide](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) - Implementera Adobe Analytics för Streaming Media. Innehåller Media SDK och Media Collection API.
 
 [![DWB](assets/workbench_50px.png)](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) [Data Workbench-handböcker](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) – Läs mer om de flexibla, kraftfulla flerkanalsfunktionerna i [!UICONTROL Data Workbench]. Inkluderar [!UICONTROL Data Workbench Client], installation, [!UICONTROL Dataset Configuration]-handböcker med mera.
 
