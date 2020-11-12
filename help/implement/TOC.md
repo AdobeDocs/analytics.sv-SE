@@ -5,10 +5,10 @@ user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
 translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+source-git-commit: 57cc9cdbec8a0ebd28d3087fc1b203e8044878d6
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 94%
+source-wordcount: '469'
+ht-degree: 93%
 
 ---
 
@@ -131,6 +131,7 @@ ht-degree: 94%
    + [Att tänka på för den globala rapportsviten](prepare/global-rs.md)
    + [Implementeringsmodal](prepare/implementation-modal.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
+   + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
 + Implementera Analytics med JavaScript {#js}
    + [Översikt över JavaScript](js/overview.md)
    + [Implementera länkar för avanmälan](js/opt-out.md)
