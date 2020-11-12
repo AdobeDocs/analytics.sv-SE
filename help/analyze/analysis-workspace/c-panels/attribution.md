@@ -2,9 +2,9 @@
 title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: e1cfaea079f69daeec639c6d43ef4fa442cfaa97
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
@@ -27,16 +27,16 @@ attribueringspanelen är ett enkelt sätt att skapa en analys som jämför olika
 
 1. Välj de [attribueringsmodeller och det uppslagsfönster](../attribution/models.md) som du vill jämföra.
 
-1. Attributionspanelen returnerar en mängd data och visualiseringar som jämför attribuering för den valda dimensionen och det valda måttet.
+1. Attributpanelen returnerar en mängd data och visualiseringar som jämför attribuering för den valda dimensionen och måttet.
 
    ![Attributionsvisualiseringar](assets/attr_panel_vizs.png)
 
 ## Attributionsvisualiseringar
 
 * **Totalt mått**: Det totala antalet konverteringar som inträffade under rapporttidsperioden. Detta är de konverteringar som tilldelas för den dimension som du har valt.
-* **Jämförelsetabell** för måttattribut: Jämför de tilldelade konverteringarna visuellt för var och en av dimensionsobjekten från den valda dimensionen. Varje stapelfärg representerar en distinkt attribueringsmodell.
-* **Friformstabell** för måttattribut: Visar samma data som stapeldiagrammet, som en tabell. Om du markerar olika kolumner eller rader i den här tabellen filtreras stapeldiagrammet och flera andra visualiseringar i panelen. Den här tabellen fungerar på ungefär samma sätt som andra frihandstabeller i arbetsytan, vilket gör att du kan lägga till komponenter som mått, segment och uppdelningar.
-* **Dimensionsöverlappningsdiagram**: Ett Venndiagram som visar de tre viktigaste dimensionsobjekten och hur ofta de deltar tillsammans i en konvertering. Storleken på bubbelöverlappningen anger till exempel hur ofta konverteringar inträffade när en besökare exponerades för båda dimensionsobjekten. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
-* **Marknadsföringskontaktytor per resa**: Ett histogram som anger hur många kontaktytor en besökare har i uppslagsfönstret. Det här är användbart om du vill se hur effektfull multitouch-attribuering är för din datauppsättning. Om nästan alla besökare bara har en enda kontaktyta visar olika attribueringsmodeller troligen liknande data.
-* **Prestandainformation** för marknadsföringskanal: Gör att du kan jämföra upp till tre attribueringsmodeller visuellt med en punktdiagram.
-* **Marknadsföringskanalflöde**: Gör att du kan se vilka kanaler som interagerar med de flesta, och i vilken ordning, på en besökares resa.
+* **Attribution Comparison Bar**: Jämför de tilldelade konverteringarna visuellt för var och en av dimensionsobjekten från den valda dimensionen. Varje stapelfärg representerar en distinkt attribueringsmodell.
+* **Attributjämförelsetabell**: Visar samma data som stapeldiagrammet, som en tabell. Om du markerar olika kolumner eller rader i den här tabellen filtreras stapeldiagrammet och flera andra visualiseringar i panelen. Den här tabellen fungerar på ungefär samma sätt som andra frihandstabeller i arbetsytan, vilket gör att du kan lägga till komponenter som mått, segment och uppdelningar.
+* **Överlappningsdiagram**: Ett Venndiagram som visar de tre viktigaste dimensionsobjekten och hur ofta de deltar tillsammans i en konvertering. Storleken på bubbelöverlappningen anger till exempel hur ofta konverteringar inträffade när en besökare exponerades för båda dimensionsobjekten. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
+* **Prestandainformation**: Gör att du kan jämföra upp till tre attribueringsmodeller visuellt med en punktdiagram.
+* **Trendprestanda**: Visar trenden för allokerade konverteringar för den översta dimensionsobjektet. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
+* **Flöde**: Gör att du kan se vilka kanaler som interagerar med de flesta, och i vilken ordning, på en besökares resa.
