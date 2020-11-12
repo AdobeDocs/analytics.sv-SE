@@ -1,8 +1,11 @@
 ---
 title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
-translation-type: ht
-source-git-commit: 8a090574a6822a76366343ad5c657280bf7475eb
+translation-type: tm+mt
+source-git-commit: 34ccd89d0ac4223af87b36a48e778fb678d5cd59
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 97%
 
 ---
 
@@ -33,6 +36,7 @@ Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat p
 
 ## Viktiga artiklar om implementering av Analytics
 
+* [Ta hand om en befintlig Adobe Analytics-implementering](/help/implement/prepare/existing-implementation.md)
 * [Adobe Debugger](validate/debugger.md)
 * [Skapa en egenskap i Experience Platform Launch](launch/create-analytics-property.md)
 * [AppMeasurement-uppdateringar](appmeasurement-updates.md)
