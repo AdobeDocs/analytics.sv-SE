@@ -2,7 +2,7 @@
 title: Ta hand om en befintlig Adobe Analytics-implementering
 description: Instruktioner för administratörer som inte har använt en befintlig Adobe Analytics-implementering tidigare.
 translation-type: tm+mt
-source-git-commit: c95ff254d2df8373776a2ce261a5786045169181
+source-git-commit: d3b05bddef89d7525c21f9f4686707daa27bc669
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Tar du över en Adobe Analytics-implementering från den tidigare tekniska ägaren? Vår ärvda implementeringsspelbok hjälper dig att ta kontrollen som ny teknisk ägare av en befintlig implementering. I det nedladdningsbara kalkylbladet får du hjälp med att upptäcka, granska och dokumentera aktiviteter som du bör göra under de första tio veckorna av jobbet när du tar över en befintlig implementering.
 
-Ladda ned spelningsboken för [ärvd implementering](assets/adobe_analytics_inherited_implementation_playbook.xlsx).
+**Ladda ned spelningsboken för [ärvd implementering](assets/adobe_analytics_inherited_implementation_playbook.xlsx).**
 
 ![Playbook](assets/inherited-impl-playbook.png)
 
