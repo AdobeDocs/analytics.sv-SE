@@ -2,9 +2,9 @@
 title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: e1cfaea079f69daeec639c6d43ef4fa442cfaa97
+source-git-commit: 7962e7dbb8003103ceb6fd1f9ccd11c110e59ad3
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
@@ -12,12 +12,12 @@ ht-degree: 1%
 
 # Panelen Attribution
 
-attribueringspanelen är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Det är en funktion i [Attribution IQ](../attribution/overview.md) som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
+Panelen är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. [!UICONTROL Attribution] Det är en funktion i [Attribution IQ](../attribution/overview.md) som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
 
 ## Skapa en attribueringspanel
 
 1. Klicka på panelikonen till vänster.
-1. Dra panelen Attribution till ditt Analysis Workspace-projekt.
+1. Dra panelen [!UICONTROL Attribution] till ditt Analysis Workspace-projekt.
 
    ![Ny attribueringspanel](assets/Attribution_Panel_1.png)
 
@@ -40,3 +40,4 @@ attribueringspanelen är ett enkelt sätt att skapa en analys som jämför olika
 * **Prestandainformation**: Gör att du kan jämföra upp till tre attribueringsmodeller visuellt med en punktdiagram.
 * **Trendprestanda**: Visar trenden för allokerade konverteringar för den översta dimensionsobjektet. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
 * **Flöde**: Gör att du kan se vilka kanaler som interagerar med de flesta, och i vilken ordning, på en besökares resa.
+
