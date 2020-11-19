@@ -2,9 +2,9 @@
 title: Besök
 description: En sekvens med sidvisningar under en session.
 translation-type: tm+mt
-source-git-commit: 178e372e63c436268a1f7028d986504983430b2f
+source-git-commit: ee9868b53b93c1ffabdd48e83e38d3cafc9a4c2a
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '654'
 ht-degree: 1%
 
 ---
@@ -55,3 +55,7 @@ Ett besök räknas för varje berörd tidsperiod. Om du till exempel har en bes�
 ## Besök på en dimension jämfört med totalt antal besök
 
 Besök i samband med en dimension (t.ex. [marknadsföringskanal](../dimensions/marketing-channel.md)) visar antalet besök som innehåller en viss dimensionspost när som helst. Det finns ofta flera dimensionsobjekt i olika träffar på samma besök. Försök att summera besök som rapporterar om dimensionsobjekt är vanligtvis inte rimligt.
+
+## Besök alla besökare i Data warehouse
+
+Måttet Besök - Alla besökare är tillgängligt i Data warehouse utöver Visits-måttet. Mätvärdet &#39;Besök - alla besökare&#39; är jämförbart med mätvärdet &#39;Besök&#39; i andra analysverktyg. Mätvärdet &#39;Besök&#39; i Data warehouse utesluter besökare som inte har beständiga cookies. Adobe rekommenderar att du använder &#39;Besök - alla besökare&#39; i Data warehouse där besök önskas som mätvärden.
