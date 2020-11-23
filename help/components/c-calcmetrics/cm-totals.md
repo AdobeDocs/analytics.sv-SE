@@ -2,10 +2,10 @@
 title: Summor för beräknade mätvärden
 description: Läs om hur de beräknade mätvärdena skiljer sig åt i analysverktygen
 translation-type: tm+mt
-source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+source-git-commit: bbe2b96960fd5aa6df331a77fdf5b04a769b6e84
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 2%
+source-wordcount: '423'
+ht-degree: 1%
 
 ---
 
@@ -40,3 +40,6 @@ När summorna visas beräknas de ofta på serversidan, vilket innebär att den t
 
 * När [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) används i frihandstabeller markeras **[!UICONTROL Show as sum of current rows]** alternativet (standard).
 * I [Donut-visualiseringen](/help/analyze/analysis-workspace/visualizations/donut.md)blir siffrorna 100 %.
+
+Mer information om totalsummor i Analysis Workspace finns på [Arbetsytesummor](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=en#static-row-total).
+
