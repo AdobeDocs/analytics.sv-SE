@@ -2,7 +2,7 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: c9ceebef6afc60551304ed703050757269d8cb30
+source-git-commit: 6b9d3395e1c11f56452694229b9b8eb12b4ed8c0
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 2%
@@ -84,7 +84,11 @@ Så här skapar du nedrullningsbara filter:
 
 ## Högerklicka på menyn {#right-click}
 
-Ytterligare funktioner för en panel är tillgängliga genom att högerklicka på panelhuvudet. Följande inställningar är tillgängliga:
+Ytterligare funktioner för en panel är tillgängliga genom att högerklicka på panelhuvudet.
+
+![](assets/right-click-menu.png)
+
+Följande inställningar är tillgängliga:
 
 | Inställning | Beskrivning |
 | --- | --- |
