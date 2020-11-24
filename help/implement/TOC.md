@@ -5,10 +5,10 @@ user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
 translation-type: tm+mt
-source-git-commit: 57cc9cdbec8a0ebd28d3087fc1b203e8044878d6
+source-git-commit: 145b31d01b7ec52ae3c65035774a5be54abbc51a
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 93%
+source-wordcount: '488'
+ht-degree: 89%
 
 ---
 
@@ -204,6 +204,10 @@ ht-degree: 93%
    + [Paketövervakare](validate/packet-monitor.md)
    + [Hash-kollisioner](validate/hash-collisions.md)
 + [Vanliga frågor](faq.md)
++ Granska implementeringen {#review}
+   + [Mindre implementeringsgranskning (efter varje webbplatsrelease)](review/minor-review.md)
+   + [Genomförandegranskning (var sjätte månad)](review/major-review.md)
+   + [Definiera de fem viktigaste KPI:erna](review/define-kpis.md)
 + Använd XDM-data med Analytics {#aep-edge}
    + [Använd SDK för AEP Web](aep-edge/xdmoverview.md)
    + [Mappa XDM-data till Analytics manuellt](aep-edge/xdm-manual.md)
