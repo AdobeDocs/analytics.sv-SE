@@ -3,9 +3,9 @@ description: Visa dina data visuellt med visualiseringar.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
 translation-type: tm+mt
-source-git-commit: 71cf46157917c77a815b8474bc635c01d6d13a25
+source-git-commit: 60aacc2d2d5f7f66c08d270a41d2f6c86ee34a6b
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1080'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,11 @@ ht-degree: 3%
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
-Du kan komma åt visualiseringar från den övre vänstra ikonen i arbetsytan, från en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html)eller från högerklicksmenyn i arbetsflödet. Följande visualiseringstyper finns i Analysis Workspace:
+Du kan komma åt visualiseringar från den övre vänstra ikonen i arbetsytan, från en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html)eller från högerklicksmenyn i arbetsflödet.
+
+![](assets/viz-rail.png)
+
+Följande visualiseringstyper finns i Analysis Workspace:
 
 | Visualiseringsnamn | Beskrivning |
 | --- | --- |
@@ -40,20 +44,22 @@ Du kan komma åt visualiseringar från den övre vänstra ikonen i arbetsytan, f
 
 ## Inställningar {#settings}
 
-Varje visualisering har sina egna inställningar som du kan hantera. Klicka på [!UICONTROL Visualization Settings]kugghjulsikonen för att komma åt [!UICONTROL Visualization Settings] den. Vissa inställningar inkluderar:
+Varje visualisering har sina egna inställningar som du kan hantera. Klicka på [!UICONTROL Visualization Settings]kugghjulsikonen för att komma åt [!UICONTROL Visualization Settings] den.
+
+![](assets/settings.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
 | Visualiseringstyp | Ändra den typ av visuell information som används för att avbilda data. |
-| Kornighet | För trendvisualiseringar kan du ändra tidsåterstämmelsen (dag, vecka, månad osv.) från den här listrutan. Den här ändringen gäller även för datakälltabellen. |
+| Kornighet | För trendvisualiseringar kan du ändra tidshalten (dag, vecka, månad osv.) från den här listrutan. Den här ändringen gäller även för datakälltabellen. |
 | Procenttal | Visar värden i procent. |
-| 100 % staplad | Den här inställningen för staplade ytor, staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![](assets/stacked_100_percent.png) |
+| 100 % staplad | Den här inställningen för staplade ytor, staplade staplar eller vågräta staplade visualiseringar gör att diagrammet blir en&quot;100 % staplade&quot; visualisering. Exempel: ![Staplad 100 %](assets/stacked_100_percent.png) |
 | Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för visualiseringen av Sammanfattningsnummer/Sammanfattningsändring. |
 | Begränsa maximalt antal objekt | Gör att du kan begränsa antalet objekt som visas i en visualisering. |
 | Ankra Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
 | Normalisering | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | Visa dubbel axel | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
-| Visa avvikelser | Förbättrar linjediagram och frihandstabeller genom att visa avvikande dekoration. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
+| Visa avvikelser | Förbättrar linjediagram och frihandstabeller genom att visa avvikelseidentifiering. Analysidentifiering i linjevisualiseringar inkluderar ett förväntat värde (streckad linje) och ett förväntat intervall (skuggat band). |
 
 ## Förklaring {#legend}
 
@@ -77,7 +83,7 @@ Här är en [länk till en video](https://docs.adobe.com/content/help/en/analyti
 
 Ytterligare funktioner för en visualisering är tillgängliga genom att högerklicka på visualiseringsrubriken. Inställningarna varierar beroende på visualisering. Några av de tillgängliga inställningarna är:
 
-![](assets/right-click_menu.png)
+![](assets/right-click.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
@@ -94,4 +100,4 @@ Ytterligare funktioner för en visualisering är tillgängliga genom att högerk
 
 Om du är osäker på vilken visualisering du ska välja klickar du på **[!UICONTROL Create Visual]** ikonen i valfri tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat 3 segmentrader skapas ett Venndiagram.
 
-![](assets/create-visual.png)
+![](assets/quick-viz.png)
