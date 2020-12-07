@@ -5,9 +5,9 @@ solution: Experience Cloud,Analytics
 title: Cookies
 uuid: 9c81ecbb-0f02-4c1a-a5a5-426cdea57f38
 translation-type: tm+mt
-source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+source-git-commit: 1ff9c892670e7b120bf727e556ff70f76c6751be
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '169'
 ht-degree: 4%
 
 ---
@@ -41,7 +41,7 @@ Fältbeskrivningar för de globala Cookies-inställningarna som används för di
   </tr> 
   <tr> 
    <td colname="col1"> FP-domänperioder </td> 
-   <td colname="col2"> <p>Variabeln <span class="term"> fpCookieDomainPeriods</span> är för cookies som anges av JavaScript (<code> s_sq</code>, <code> s_cc</code>, plugin-program) som är cookies från första part, även om implementeringen använder domänerna 2o7.net <span class="filepath"> eller</span> omtrdc.net <span class="filepath"></span> från tredje part. </p> <p>Se <a href="/help/implement/vars/config-vars/fpcookiedomainperiods.md"  > s.fpCookieDomainPeriods</a>. </p> </td> 
+   <td colname="col2"> <p>Variabeln <span class="term"> fpCookieDomainPeriods</span> är för cookies som anges av JavaScript (<code> s_sq</code>, <code> s_cc</code>, plugin-program) som är cookies från första part, även om implementeringen använder domänen <span class="filepath"> adobedc.net</span> från tredje part eller den gamla (men fortfarande giltiga) <span class="filepath"> 2o7.net</span> eller <span class="filepath"> omtrdc.net</span> . </p> <p>Se <a href="/help/implement/vars/config-vars/fpcookiedomainperiods.md"  > s.fpCookieDomainPeriods</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Transaktions-ID </td> 
