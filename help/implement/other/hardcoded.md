@@ -2,7 +2,7 @@
 title: Implementera med hårdkodade bildbegäranden
 description: Implementera Adobe Analytics med en HTML-bildtagg (hårdkodad bildbegäran)
 translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -25,11 +25,11 @@ Den här implementeringsmetoden kan användas på alla plattformar som visar bil
 Följande är ett exempel på hårdkodad bildbegäran med HTML:
 
 ```html
-<img src="https://example.sc.omtrdc.net/b/ss/examplersid/1?AQB=1&g=http%3A%2F%2Fexample.com&pageName=Example%20hardcoded%20hit&v1=Example%20value&AQE=1"/>
+<img src="https://example.sc.adobedc.net/b/ss/examplersid/1?AQB=1&g=http%3A%2F%2Fexample.com&pageName=Example%20hardcoded%20hit&v1=Example%20value&AQE=1"/>
 ```
 
 * `https://` anger protokollet. Matcha det protokoll som används i bildbegäran med det protokoll som används av resten av din plats.
-* `example.sc.omtrdc.net` är värdet i [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) variabeln.
+* `example.sc.adobedc.net` är värdet i [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) variabeln.
 * `/b/ss/` ingår i alla bildbegäranden. Den ingår i filstrukturen för bilder som lagras på datainsamlingsservrar i Adobe.
 * `examplersid` är det rapportsvit-ID som du vill skicka data till.
 * `/1/` är träffkällan. Se `hit_source` under [Datakolumnreferens](../../export/analytics-data-feed/c-df-contents/datafeeds-reference.md) i användarhandboken för Export. Styr i vilken ordning cookies och andra metoder används för att identifiera besökare.
@@ -45,7 +45,7 @@ Eftersom de flesta e-postmeddelanden är HTML-baserade går det att spåra e-pos
 Så här skapar du ett Outlook-e-postmeddelande som innehåller en bildbegäran:
 
 1. Öppna en HTML-redigerare. Om en HTML-redigerare inte är tillgänglig fungerar även en vanlig textredigerare.
-2. I en ny HTML-fil infogar du en hårdkodad `<img>` bildbegärandetagg som omsluts av en `<body>` -tagg.
+2. I en ny HTML-fil infogar du en hårdkodad `<img>` bildbegärandetagg som är kapslad i en `<body>` -tagg.
 3. Spara HTML-filen.
 4. Öppna Microsoft Outlook och skapa ett e-postmeddelande.
 5. Gå till fliken Infoga och klicka på **Bifoga fil**. Välj en HTML-fil för bildbegäran.
