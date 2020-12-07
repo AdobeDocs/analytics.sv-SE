@@ -2,7 +2,7 @@
 title: Implementera med AMP
 description: Implementera Adobe Analytics på AMP-sidor.
 translation-type: tm+mt
-source-git-commit: 684e67203b2e3d5f0cb82cdbdda1f24d37a677f0
+source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 0%
@@ -20,8 +20,8 @@ Eftersom Adobe Analytics använder ett JavaScript-bibliotek för att kompilera o
 
 Adobe har skapat två metoder för att implementera Adobe Analytics på sidor med AMP. Båda använder `<amp-analytics>` HTML-taggen. Mer information finns i taggen [](https://github.com/ampproject/amphtml/tree/master/extensions/amp-analytics) amp-analytics på GitHub-projektet för ampproject.
 
-* **Använd`"adobeanalytics"`spårningsmallen**: Skapa Analytics-begäran direkt på sidan
-* **Använd`"analytics_nativeConfig"`spårningsmallen**: Använd en iframe som innehåller samma AppMeasurement-kod som du distribuerar på din normala webbplats
+* **Använd `"adobeanalytics"` spårningsmallen**: Skapa Analytics-begäran direkt på sidan
+* **Använd `"analytics_nativeConfig"` spårningsmallen**: Använd en iframe som innehåller samma AppMeasurement-kod som du distribuerar på din normala webbplats
 
 I följande tabell jämförs dessa två metoder:
 
@@ -55,7 +55,7 @@ I följande kodexempel har två utlösare definierats: `pageLoad` och `click`. U
         "myClick": "${click}&v1=${eVar1}",
       },
       "vars": {
-        "host": "example.sc.omtrdc.net",
+        "host": "example.sc.adobedc.net",
         "reportSuites": "reportSuiteID",
         "pageName": "Adobe Analytics Using amp-analytics tag"
       },
@@ -109,7 +109,7 @@ Taggen är enklare att implementera eftersom den använder samma taggmetod som d
         "iframeMessage": "${base}/stats.html?campaign=${queryParam(campaign)}&pageURL=${ampdocUrl}&ref=${documentReferrer}"
       },
       "vars": {
-        "host": "example.sc.omtrdc.net"
+        "host": "example.sc.adobedc.net"
       },
       "extraUrlParams": {
       "pageName": "Example AMP page",
@@ -133,7 +133,7 @@ En HTML-sida på dina webbservrar krävs också:
     <script>
       var v_orgId = "INSERT-ORG-ID-HERE";
       var s_account = "examplersid";
-      var s_trackingServer = "example.sc.omtrdc.net";
+      var s_trackingServer = "example.sc.adobedc.net";
       var visitor = Visitor.getInstance(v_orgId);
       visitor.trackingServer = s_trackingServer;
       var s = s_gi(s_account);
