@@ -5,7 +5,10 @@ title: Migrering av besökare
 topic: Developer and implementation
 uuid: af31928c-85d7-407f-a583-0c8f2852ceb3
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 4910c19f4471e8c79516747c7e69f1cdfda54d72
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 2%
 
 ---
 
@@ -16,11 +19,11 @@ Migrering av besökare är en process där besökar-ID-cookie migreras från en 
 
 Med migrering av besökare kan du bevara cookies för identifiering av besökare när du ändrar datainsamlingsdomäner. Domäner för datainsamling kan ändras av följande skäl:
 
-* Från `2o7.net` till `omtrdc.net` ( [Regional Data Collection](hhttps://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html)).
+* Gå från `2o7.net` till `adobedc.net` ([Regional Data Collection](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html)).
 
-* Du implementerar [Experience Cloud Visitor ID-tjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html) och går från en CNAME-/förstapartsdomän för datainsamling till `2o7.net` eller `omtrdc.net` ( [regional datainsamling](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html))
+* Du implementerar [Experience Cloud Visitor ID-tjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) och går från en CNAME-/förstapartsdomän för datainsamling till `adobedc.net1`, `2o7.net` eller `omtrdc.net` ( [regional datainsamling](https://docs.adobe.com/content/help/en/analytics/technotes/rdc/regional-data-collection.html))
 
-* Gå från `2o7.net` eller `omtrdc.net` till en namnsamling/datainsamling från första part ( [cookies från första part)](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html).
+* Gå från `2o7.net` eller `adobedc.net` till en namnsamling/datainsamling från första part ( [cookies från första part)](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html).
 
 * Flyttar från en CNAME till en annan (föränderliga domäner).
 
@@ -44,11 +47,11 @@ I följande tabell visas de uppgifter som krävs för migrering av besökare:
     <ul id="ul_067EC5C7619141A6BDFBC209C9FD47E2"> 
      <li id="li_0723D948465A49C1871B81207AEDC4DC">example.112.2o7.net &gt; metrics.example.com </li> 
      <li id="li_B0CA15A593BD4AB9802E33A3FF037C7A">example.102.112.2o7.net &gt; smetrics.example.com </li> 
-    </ul> <p>Migreringsvärdnamnen har konfigurerats på Adobe Data Collection-servern. Kundtjänst meddelar när ändringen är klar så att du kan planera för nästa steg. </p> </td> 
+    </ul> <p>Migreringsvärdnamnen har konfigurerats på Adobe datainsamlingsserver. Kundtjänst meddelar när ändringen är klar så att du kan planera för nästa steg. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>6+ timmar efter konfigurationsändring</b>: Uppdatera <code> s.trackingServer</code> och <code> s.trackingServerSecure</code> variabler i JavaScript-koden för Analytics så att de använder de nya datainsamlingsservrarna. </p> </td> 
-   <td colname="col3"> <p>När du har gjort den här ändringen använder du en <a href="../implement/validate/packet-monitor.md"> paketövervakare</a> för att verifiera att bildbegäran för Analytics kommer till den uppdaterade datainsamlingsservern. </p> </td> 
+   <td colname="col3"> <p>När du har gjort den här ändringen använder du en <a href="../implement/validate/packet-monitor.md"> paketövervakare</a> för att verifiera att Analytics-bildbegäran kommer till den uppdaterade datainsamlingsservern. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Omedelbart efter uppdatering av Analytics-koden</b>: Testa webbplatsen för att verifiera att omdirigeringen till den tidigare datainsamlingsdomänen sker. </p> </td> 
@@ -63,4 +66,4 @@ I följande tabell visas de uppgifter som krävs för migrering av besökare:
 
 ## Variablerna visitorMigrationKey och visitorMigrationServer är inaktuella {#section_32FCEE2575944D039EA0FEBFB5814259}
 
-Från om med mars 2013 är variablerna `visitorMigrationKey`, `visitorMigrationServer`och `visitorMigrationServerSecure` datainsamling föråldrade och används inte längre. De data som tidigare fanns i dessa variabler lagras nu på Adobes servrar för ökad säkerhet.
+Från om med mars 2013 är variablerna `visitorMigrationKey`, `visitorMigrationServer`och `visitorMigrationServerSecure` datainsamling föråldrade och används inte längre. De data som tidigare fanns i dessa variabler lagras nu på Adobe-servrar för ökad säkerhet.
