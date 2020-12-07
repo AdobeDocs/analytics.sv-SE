@@ -2,7 +2,7 @@
 title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
 translation-type: tm+mt
-source-git-commit: d9fa9fa6afb6b76ae37a92c86d9ca21a9c3fb22e
+source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Spårningsservern är ett fält under [!UICONTROL General] dragspelet när du ko
 3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
 4. Expandera dragspelsfliken, som visar [!UICONTROL General] [!UICONTROL Tracking Server] fältet.
 
-Om fältet lämnas tomt blir det som standard `[rsid].112.2o7.net`.
+Om fältet lämnas tomt blir det som standard `[rsid]sc.adobedc.net`.
 
 ## s.trackingServer i AppMeasurement och Launch, anpassad kodredigerare
 
@@ -65,7 +65,7 @@ s.trackingServer = "example.data.adobedc.net";
 
 Välj en underdomän som är unik för din organisation och som sannolikt inte plockas av någon annan organisation som använder Adobe Analytics.  Vi rekommenderar att besökarens namnutrymme tilldelas din organisation.  Se till att alla implementeringar i organisationen använder samma spårningsserver. Det kan vara praktiskt att behålla denna information i ett [lösningsdesigndokument](../../prepare/solution-design.md).
 
-Din organisation kanske redan använder en spårningsserver från tredje part i `sc.omtrdc.net` - eller `2o7.net` -domänerna.  Dessa användes huvudsakligen i tidigare versioner av Adobe Analytics och är fortfarande giltiga.
+Din organisation kanske redan använder en spårningsserver från tredje part i `sc.adobedc.net` - eller `2o7.net` -domänerna.  Dessa användes huvudsakligen i tidigare versioner av Adobe Analytics och är fortfarande giltiga.
 
 >[!NOTE]
 >
