@@ -2,7 +2,7 @@
 title: trackingServerSecure
 description: Bestäm var bildbegäranden ska skickas på HTTPS-sidor.
 translation-type: tm+mt
-source-git-commit: d9fa9fa6afb6b76ae37a92c86d9ca21a9c3fb22e
+source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 2%
@@ -41,4 +41,4 @@ Den person som initialt konfigurerar cookie-implementeringen från första part 
 s.trackingServerSecure = "data.example.com";
 ```
 
-CNAME-poster pekar vanligtvis på en underdomän på `data.adobedc.net`, `sc.omtrdc.net` eller `2o7.net`.
+CNAME-poster pekar vanligtvis på en underdomän på `data.adobedc.net`, `sc.adobedc.net` eller `2o7.net`.
