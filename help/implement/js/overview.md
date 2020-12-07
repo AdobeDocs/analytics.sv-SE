@@ -2,18 +2,21 @@
 title: AppMeasurement for JavaScript
 description: Lär dig hur du implementerar Adobe Analytics med JavaScript utan ett tagghanteringssystem.
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
 
 # AppMeasurement for JavaScript
 
-AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att implementera Adobe Analytics. Vi rekommenderar dock att du använder [Adobe Experience Platform Launch](../launch/overview.md) i allt större popularitet hos tagghanteringssystem.
+AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att implementera Adobe Analytics. Vi rekommenderar dock att [Adobe Experience Platform Launch](../launch/overview.md) används i allt större popularitet hos tagghanteringssystem.
 
 ## Övergripande arbetsflöde för att skicka data till Adobe med JavaScript
 
-1. Läs in `AppMeasurement.js` filen. Filen innehåller de bibliotek som krävs för att skicka data till Adobe.
+1. Läs in `AppMeasurement.js` filen. Den här filen innehåller de bibliotek som krävs för att skicka data till Adobe.
 
    ```html
    <script src="AppMeasurement.js"></script>
@@ -26,7 +29,7 @@ AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att
    var s_account = "examplersid";
    var s=s_gi(s_account);
    // Make sure data is sent to the correct location
-   s.trackingServer = "example.omtrdc.net";
+   s.trackingServer = "example.adobedc.net";
    ```
 
 3. Definiera sidnivåvariabler i webbplatsens sidkod. Variablerna avgör vilka mått och mätvärden som skickas till Adobe. En fullständig lista med variabler som du kan definiera finns i [Sidvariabler](../vars/page-vars/page-variables.md) .
@@ -37,7 +40,7 @@ AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att
    s.events = "event1";
    ```
 
-4. När alla sidnivåvariabler är definierade skickar du data till Adobe med `t()` metoden . Mer information [finns](../vars/functions/t-method.md) i den.
+4. När alla sidnivåvariabler är definierade skickar du data till Adobe med `t()` metoden . See [t](../vars/functions/t-method.md) for more information.
 
    ```js
    s.t();
