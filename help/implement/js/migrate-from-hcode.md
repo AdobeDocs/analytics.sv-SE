@@ -2,14 +2,17 @@
 title: Migrera till AppMeasurement för JavaScript
 description: Bestäm vad som behövs för att migrera implementeringen av H-koden.
 translation-type: tm+mt
-source-git-commit: 8a090574a6822a76366343ad5c657280bf7475eb
+source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
 
 # Migrera till AppMeasurement för JavaScript
 
-Om implementeringen fortfarande använder H Code rekommenderar Adobe migrering till den senaste versionen av AppMeasurement. Vi rekommenderar att Analytics implementeras via [Adobe Experience Platform Launch](../launch/overview.md) , men en uppdaterad JavaScript-implementering kan användas.
+Om implementeringen fortfarande använder H Code rekommenderar Adobe starkt migrering till den senaste versionen av AppMeasurement. Vi rekommenderar att Analytics implementeras via [Adobe Experience Platform Launch](../launch/overview.md) , men en uppdaterad JavaScript-implementering kan användas.
 
 Följande betydande ändringar finns i AppMeasurement jämfört med H-koden:
 
@@ -24,10 +27,10 @@ Följande betydande ändringar finns i AppMeasurement jämfört med H-koden:
 I följande steg beskrivs ett typiskt migreringsarbetsflöde.
 
 1. **Hämta den nya AppMeasurement-filen**: Du kommer åt den nya filen genom att logga in på Adobe Analytics och sedan gå till Admin > Code Manager. Den nedladdade komprimerade filen innehåller en minifierad `AppMeasurement.js` fil tillsammans med medie- och integreringsmoduler.
-1. **Kopiera dina`s_code.js`anpassningar till`AppMeasurement.js`**: Flytta all kod före`DO NOT ALTER ANYTHING BELOW THIS LINE`avsnittet i`s_code.js`till början av`AppMeasurement.js`.
+1. **Kopiera dina `s_code.js` anpassningar till`AppMeasurement.js`**: Flytta all kod före `DO NOT ALTER ANYTHING BELOW THIS LINE` avsnittet i `s_code.js` till början av `AppMeasurement.js`.
 1. **Uppdatera alla plugin-program**: Kontrollera att du använder den senaste versionen av varje plugin-program som finns i din `s_code.js` fil. Detta inkluderar medie- och integreringsmodulerna.
 1. **Distribuera filen** AppMeasurement.js: Överför din `AppMeasurement.js` fil till webbservern.
-1. **Uppdatera skriptreferenser så att de pekar på`AppMeasurement.js`**: Se till att alla sidor refererar`AppMeasurement.js`i stället för`s_code.js`.
+1. **Uppdatera skriptreferenser så att de pekar på`AppMeasurement.js`**: Se till att alla sidor refererar `AppMeasurement.js` i stället för `s_code.js`.
 
 ## Exempel på måttkod
 
@@ -59,7 +62,7 @@ s.doPlugins = s_doPlugins;
 /* WARNING: Changing any of the below variables will cause drastic
 changes to how your visitor data is collected.  Changes should only be
 made when instructed to do so by your account manager.*/
-s.trackingServer="example.sc.omtrdc.net";
+s.trackingServer="example.sc.adobedc.net";
 
 /************************** PLUGINS SECTION *************************/
 
