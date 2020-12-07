@@ -2,7 +2,7 @@
 title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 1%
@@ -14,21 +14,21 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-regler. Se Översikt över [](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) Opt-in-tjänsten i användarhandboken för Experience Cloud Identity Service.
+>Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-reglerna. Se Översikt över [](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) Opt-in-tjänsten i användarhandboken för Experience Cloud Identity Service.
 
-Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder besökare på er webbplats möjlighet att avanmäla sig från den information de samlar in. Alla implementeringstyper finns tillgängliga. din organisation ansvarar för din egen sekretesspolicy och för att den förblir i enlighet med dina signerade villkor.
+Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder möjlighet att ge besökare på er webbplats möjlighet att avanmäla sig från den information de samlar in. Alla implementeringstyper finns tillgängliga. din organisation ansvarar för din egen sekretesspolicy och för att den förblir i enlighet med dina signerade villkor.
 
-När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie anges, fortsätter JavaScript-filen att skicka data till Adobe-servrar. Dessa data behandlas dock inte och inkluderas inte i rapporter.
+När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie ställs in, fortsätter JavaScript-filen att skicka data till Adobe-servrar. Dessa data behandlas dock inte och inkluderas inte i rapporter.
 
 >[!TIP]
 >
->Adobe erbjuder också sekretessinställningar per rapport. Se [Sekretessinställningar](../../admin/admin/privacy-settings.md) i användarhandboken för Admin.
+>Adobe erbjuder även sekretessinställningar per rapport. Se [Sekretessinställningar](../../admin/admin/privacy-settings.md) i användarhandboken för Admin.
 
 ## URL för avanmälan
 
 Avanmälningssidan för din organisation beror på det [`trackingServer`](../vars/config-vars/trackingserver.md) variabla värdet i implementeringen.
 
-* Starta Adobe Experience Platform:
+* I Adobe Experience Platform Launch:
    1. Logga in på [launch.adobe.com](https://launch.adobe.com) och klicka på önskad egenskap.
    2. Klicka på [!UICONTROL Extensions] fliken och sedan på [!UICONTROL Configure] under Adobe Analytics.
    3. Klicka på [!UICONTROL General] dragspelet och notera [!UICONTROL Tracking Server] värdet.
@@ -39,12 +39,12 @@ Avanmälningssidan för din organisation beror på det [`trackingServer`](../var
 
 * Använda [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html):
    1. Navigera till webbplatsen med webbläsaren Chrome.
-   2. Öppna Felsökning för Experience Cloud och gå till [!UICONTROL Network tab].
+   2. Öppna Experience Cloud Debugger och gå till [!UICONTROL Network tab].
    3. Notera [!UICONTROL Request URL - Hostname] värdet.
 
 När du har hittat implementeringens `trackingServer` domän lägger du till sökvägen `/optout.html` till slutet. Exempel:
 
-* Cookies från tredje part: `https://example.sc.omtrdc.net/optout.html`
+* Cookies från tredje part: `https://example.sc.adobedc.net/optout.html`
 * cookies från första part: `https://stats.example.com/optout.html`
 
 ## Avanmäl frågesträngsparametrar
@@ -78,7 +78,7 @@ Växla automatiskt språk för avanmälningssidan genom att ta med `locale` frå
 * sk_SK (Slovakiska)
 * es_ES (spanska)
 
-Till exempel läses avanmälningssidan in på koreanska. `https://example.sc.omtrdc.net/optout.html?locale=ko_KR`
+Till exempel läses avanmälningssidan in på koreanska. `https://example.sc.adobedc.net/optout.html?locale=ko_KR`
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ Till exempel läses avanmälningssidan in på koreanska. `https://example.sc.omt
 
 Lägger till knappen Stäng fönster på sidan, vilket gör att avanmälningssidan kan göras till ett popup-fönster. Använd frågesträngsparametern och ge den värdet `popup` `1`.
 
-Du kan till exempel `https://example.sc.omtrdc.net/optout.html?popup=1` läsa in avanmälningssidan med knappen Stäng fönster.
+Du kan till exempel `https://example.sc.adobedc.net/optout.html?popup=1` läsa in avanmälningssidan med knappen Stäng fönster.
 
 >[!NOTE]
 >
@@ -98,10 +98,10 @@ Du kan till exempel `https://example.sc.omtrdc.net/optout.html?popup=1` läsa in
 
 Låter användaren omedelbart välja bort spårning. Lägg till de två frågesträngsparametrarna `opt_out` och `confirm_change`ge varje värde `1`.
 
-Exempel: installerar `https://example.sc.omtrdc.net/optout.html?opt_out=1&confirm_change=1` omedelbart avanmälningscookien på besökarens sida.
+Exempel: installerar `https://example.sc.adobedc.net/optout.html?opt_out=1&confirm_change=1` omedelbart avanmälningscookien på besökarens sida.
 
 ### Anmäl dig med ett klick
 
 Tillåter användaren att omedelbart välja tillbaka till spårning genom att ta bort denna cookie. Lägg till de två frågesträngsparametrarna `opt_in` och `confirm_change`ge varje värde `1`.
 
-Till exempel tar `https://example.sc.omtrdc.net/optout.html?opt_in=1&confirm_change=1` omedelbart bort avanmälningscookien för besökaren.
+Till exempel tar `https://example.sc.adobedc.net/optout.html?opt_in=1&confirm_change=1` omedelbart bort avanmälningscookien för besökaren.
