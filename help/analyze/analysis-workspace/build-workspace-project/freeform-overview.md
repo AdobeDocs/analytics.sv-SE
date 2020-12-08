@@ -5,7 +5,7 @@ title: Översikt över projekt
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: 87cd6c3ceb404361be163845899015a43ec0fb14
+source-git-commit: f6d8c52845f6949954f5b961d75edfeeeef2e151
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 2%
@@ -44,6 +44,8 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 
 I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga till komponenter, söka efter hjälp och mycket mer. Du kan även komma åt alla menyalternativ med [kortkommandon](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html).
 
+![](assets/menu.png)
+
 | Menyalternativ | Beskrivning |
 |---|---|
 | Projekt | Innehåller vanliga åtgärder för projekthantering, bland annat Ny, Öppna, Spara, Spara som och [Spara som mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html). Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Med alternativen för att hämta CSV och PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) kan du exportera data från Workspace. [Projektinformation och inställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?#info-settings) innehåller många alternativ för att hantera ditt projekt. |
@@ -81,6 +83,8 @@ Du kan även komma åt visualiseringar och paneler från den [tomma panelen](htt
 
 Komponenter (Dimensioner, Metrisk, Segment, Datumintervall) i det vänstra fältet relaterar till rapportsviten för den aktiva panelen. Den aktiva panelen har en blå ram runt sig och den aktiva rapportsviten visas högst upp i komponentspåret.
 
+![](assets/left-rail.png)
+
 ## Projektarbetsyta {#canvas}
 
 Projektarbetsytan är där du sammanför paneler, tabeller, visualiseringar och komponenter för att bygga din analys. Ett projekt kan innehålla många paneler, och varje panel kan innehålla många tabeller och visualiseringar.
@@ -89,11 +93,15 @@ Paneler är användbara när du vill ordna dina projekt efter tidsperioder, rapp
 
 Beroende på vilken startpunkt du väljer för dina projekt har du antingen en [frihandstabell](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html) eller en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html) på arbetsytan som du vill börja med. Det snabbaste sättet att börja analysera är att markera en eller flera komponenter och helt enkelt dra och släppa dem på arbetsytan i projektet. En datatabell återges automatiskt åt dig. [Lär dig mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html) om de olika alternativen för att skapa en tabell eller använd vår [självstudiekurs](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?#training-tutorial) för mer vägledning om hur du skapar ditt första projekt.
 
+![](assets/canvas.png)
+
 ## Projektledare {#manager}
 
 Analysis Workspace-projekt kan hanteras under **Analytics > Components > Projects**. Projekthanteraren visar de objekt som en viss användare har skapat. Projektägarskap kan överföras till en ny användare under Admin > Analytics Users &amp; Assets > Transfer Assets.
 
 I Projects Manager kan du lägga till, tagga, dela, duplicera/kopiera och mycket mer. Sök efter ett projekt i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, ägare, projekttyp med mera.
+
+![](assets/project-manager.png)
 
 Följande är vanliga åtgärder i Projects Manager och kan utföras på ett eller flera projekt samtidigt:
 
