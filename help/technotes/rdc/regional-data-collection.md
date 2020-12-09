@@ -2,9 +2,9 @@
 title: Regional datainsamling
 description: Information om regional datainsamling
 translation-type: tm+mt
-source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
+source-git-commit: 731209e28dab9f17e06948614149a4c99938fdae
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '475'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,11 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 
 | Typ av domänkontrollant | Datainsamlingscentral |
 |---------------------|-------------------|
-| Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney |
+| Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney, Kina* |
 
 Obs! Om din Analytics-bildförfrågan skickas till `adobedc`slutpunkterna `2o7.net` eller `omtrdc.net` slutpunkterna har du en datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
+
+*China RDC kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan.
 
 ## Insamling av HTTPS-data från första part
 
@@ -36,8 +38,19 @@ Obs! Om din Analytics-bildförfrågan skickas till `adobedc`slutpunkterna `2o7.n
 | Endast Amerika | Oregon, Virginia |
 | Endast Europa | Irland, Paris |
 | Endast Asien och Stillahavsområdet | Mumbai, Singapore, Tokyo, Sydney |
+| Endast Kina* | Beijing |
 
-Obs! Experience Edge Global ger bästa prestanda för dina slutanvändare.  Om du vill använda en alternativ RDC-typ kontaktar du Adobe kundtjänst.
+*China RDC kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan.
+
+Obs! Experience Edge Global ger bästa prestanda för dina slutanvändare.  Om du vill använda en alternativ RDC-typ kontaktar du Adobe kundtjänst för att få hjälp.
+
+## Fördelar med RDC
+
+| Fördelar | Beskrivning |
+| --- | --- |
+| Prestanda | Med RDC kan besökarna ansluta till närmaste DCC. Detta ger den snabbaste svarstiden, vilket ger mer exakt spårning och snabbare laddningstider. |
+| Redundans | Om kommunikationen med en DCC avbryts dirigeras datainsamlingen automatiskt till nästa närmaste DCC, vilket säkerställer tjänstens kontinuitet. |
+| Redundans | Om kommunikationen mellan DCC och din DPC avbryts, sparar Adobe RDC-infrastruktur data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs. |
 
 ## Så här fungerar RDC
 
