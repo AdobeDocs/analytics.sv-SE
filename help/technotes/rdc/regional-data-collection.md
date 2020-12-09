@@ -2,10 +2,10 @@
 title: Regional datainsamling
 description: Information om regional datainsamling
 translation-type: tm+mt
-source-git-commit: 4910c19f4471e8c79516747c7e69f1cdfda54d72
+source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 2%
+source-wordcount: '362'
+ht-degree: 1%
 
 ---
 
@@ -46,18 +46,3 @@ I följande lista beskrivs den datainsamlingsprocess som används av Adobe:
 1. DNS löser automatiskt samlingens värdnamn till IP-adressen för datainsamlingscentret som finns närmast besökaren.
 1. Besökaren skickar data till den platsen.
 1. Uppgifterna vidarebefordras omedelbart via en säker anslutning till Data Processing Center, där de behandlas och görs tillgängliga för Adobe Experience Cloud-produkterna.
-
-## Fördelar med RDC
-
-| Fördelar | Beskrivning |
-|---------|-----------|
-| Prestanda | Med RDC ansluter besökarna till närmaste DCC. Det innebär att svarstiderna på sidan minskar (lägre är bättre), vilket ger mer exakt spårning och snabbare laddningstider. |
-| Redundans | Om kommunikationen med en DCC avbryts dirigeras datainsamlingen automatiskt till nästa närmaste DCC för att säkerställa tjänstens kontinuitet. |
-| Redundans | Om kommunikationen mellan DCC och din DPC avbryts, sparar Adobe RDC-infrastrukturen data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs. |
-
-## Versionshistorik för dokumentation
-
-| Uppdatera | Beskrivning |
-|--------|---------|
-| 4 februari 2020 | Uppdatera RDC-platser |
-| 20 februari 2019 | Fullständig omskrivning. Tillagd information om RDC-nätverk. |
