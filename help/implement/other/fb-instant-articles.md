@@ -2,7 +2,7 @@
 title: Implementera med Facebook Instant Articles
 description: Implementera Adobe Analytics på Facebook Instant Article-sidor.
 translation-type: tm+mt
-source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
+source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -40,7 +40,7 @@ HTML-exempelkoden nedan kan användas för att hämta statistik från snabbartik
     <script>
       var v_orgId = "INSERT-ORG-ID-HERE";
       var s_account = "examplersid";
-      var s_trackingServer = "example.sc.adobedc.net";
+      var s_trackingServer = "example.data.adobedc.net";
       var visitor = Visitor.getInstance(v_orgId);
       visitor.trackingServer = s_trackingServer;
 
