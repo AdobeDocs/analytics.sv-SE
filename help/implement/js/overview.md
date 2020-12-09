@@ -2,7 +2,7 @@
 title: AppMeasurement for JavaScript
 description: Lär dig hur du implementerar Adobe Analytics med JavaScript utan ett tagghanteringssystem.
 translation-type: tm+mt
-source-git-commit: dfe2b09b2ee287219d18099c51b6fbd7c86bab21
+source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -29,7 +29,7 @@ AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att
    var s_account = "examplersid";
    var s=s_gi(s_account);
    // Make sure data is sent to the correct location
-   s.trackingServer = "example.adobedc.net";
+   s.trackingServer = "example.data.adobedc.net";
    ```
 
 3. Definiera sidnivåvariabler i webbplatsens sidkod. Variablerna avgör vilka mått och mätvärden som skickas till Adobe. En fullständig lista med variabler som du kan definiera finns i [Sidvariabler](../vars/page-vars/page-variables.md) .
