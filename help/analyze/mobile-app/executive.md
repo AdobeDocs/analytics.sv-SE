@@ -1,23 +1,23 @@
 ---
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
-title: Chefshandbok för Adobe Analytics-instrumentpaneler
+title: Chefshandbok för Adobe Analytics Dashboards
 translation-type: tm+mt
-source-git-commit: a388a66b431d9652a4bc436a9b923157e129b02c
+source-git-commit: 27a923ec3acb9a0343ba71e395e565a0f9ede251
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Analytics-paneler: snabbstartsguide för företagsanvändare
+# Adobe Analytics kontrollpaneler: snabbstartsguide för företagsanvändare
 
-Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics-kontrollpaneler. En video som visar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://youtu.be/QXqQ_PkArbA).
+Följande information ger chefsanvändare information om de effektivaste strategierna för att använda och visa Adobe Analytics dashboards. En video som visar den här informationen finns i [Adobe Analytics-instrumentpaneler i appupplevelsen](https://youtu.be/QXqQ_PkArbA).
 
 
 ## Introduktion
 
-Adobe Analytics-instrumentpaneler ger dig alltid insikter från Adobe Analytics.  Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Kontrollpaneler stöds på både iOS- och Android-operativsystem.
+Adobe Analytics dashboards ger dig insikter från Adobe Analytics när som helst och var som helst.  Appen ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Kontrollpaneler stöds på både iOS- och Android-operativsystem.
 
 ## Mer om den här guiden
 
@@ -32,7 +32,7 @@ Den här guiden är avsedd att hjälpa chefsanvändare att läsa och tolka styrk
 | Insamling | Att skapa eller redigera ett mobilstyrkort med relevanta mått, dimensioner och andra komponenter för konsumenten |
 | Styrkort | En instrumentpanelsvy som innehåller en eller flera paneler |
 | Platta | En återgivning för ett mätresultat i en styrkortsvy |
-| Uppdelning | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
+| Uppdelningar | En sekundär vy som du kommer åt genom att trycka på en platta i styrkortet. Den här vyn utökas med det mått som visas på rutan och kan även innehålla rapporter om ytterligare uppdelningsdimensioner. |
 | Datumintervall | Det primära datumintervallet för instrumentpanelsrapporter |
 | Jämförelsedatumintervall | Datumintervallet som jämförs med det primära datumintervallet |
 
@@ -53,17 +53,17 @@ Följ stegen i operativsystemet på enheten för att hämta och installera progr
 
 **För företagsledare på iOS:**
 
-Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den finns även i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
 [iOS-länk](https://apple.co/2zXq0aN)
 
 **För chefsanvändare på Android:**
 
-Klicka på följande länk (den finns även i Analytics under **Tools** > **dashboards**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den finns även i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
 [Android-länk](https://bit.ly/2LM38Oo)
 
-När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-autentiseringsuppgifter.
+När programmet har laddats ned och installerats kan företagsanvändare logga in i det med sina befintliga Adobe Analytics-inloggningsuppgifter.
 
 ![App - välkomstskärm](assets/welcome.png)
 
@@ -75,7 +75,7 @@ Så här använder du kontrollpaneler:
 
    ![Logga in sekvens](assets/signseq.png)
 
-2. Välj ett företag. När du har loggat in på kontrollpaneler visas skärmen **Välj ett företag** . På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
+2. Välj ett företag. När du har loggat in på kontrollpaneler visas **[!UICONTROL Choose a company]** skärmen. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
 
 3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort som du vill visa.
 
@@ -85,9 +85,10 @@ Så här använder du kontrollpaneler:
 
    * Du kan logga in på rätt Analytics-instans
    * Styrkortet har delats med dig
+
    ![Inget delat](assets/nothing.png)
 
-4. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). (mer information finns i **Inställningar** nedan).
+4. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). mer information finns **[!UICONTROL Preferences]** nedan).
 
    ![Förklarade plattor](assets/newexplain.png)
 
@@ -101,6 +102,7 @@ Så här använder du kontrollpaneler:
    * Formeln för ändring av procentvärde är metrisk summa (aktuellt datumintervall) - metrisk summa (jämförelsedatumintervall) / metrisk summa (jämförelsedatumintervall).
 
    * Du kan dra ned skärmen för att uppdatera styrkortet.
+
    Följande exempel på Styrkort visas i normalläge:
 
    ![Exempelstyrkort](assets/intro_scorecard.png)
@@ -116,23 +118,23 @@ Så här använder du kontrollpaneler:
 
    * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
-   * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Under listan **JÄMFÖR MED** , tryck på ett av alternativen som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **Klar** i skärmens övre högra hörn. Fälten **Datumintervall** och Styrkortsinställningarna uppdateras med nya jämförelsedata från de nya intervall som du har valt.
+   * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Tryck på ett av alternativen i listan **[!UICONTROL COMPARE TO]** för att jämföra data för den här tidsperioden med det första datumintervallet du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten och styrkortets **[!UICONTROL Date Ranges]** paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
 7. Om du vill använda ett segmentfilter på styrkortet trycker du på filterlistrutan och väljer ett segment som har konfigurerats av markören. [Filter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Analytics Workspace.
 
    ![Segmentfilter](assets/segment_filter.png)
 
-8. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller uppdelningar som du kan vara intresserad av kontaktar du analysteamet så att styrkortet uppdateras. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
+8. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller indelningar som du kan vara intresserad av kontaktar du analysteamet så att styrkortet uppdateras. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
 
 9. Lämna feedback om den här appen:
 
    1. Tryck på inställningsikonen i appskärmens övre högra hörn.
-   2. Tryck på alternativet **Feedback** på skärmen **Inställningar** .
+   2. Tryck på **[!UICONTROL Settings]** alternativet på **[!UICONTROL Feedback]** skärmen.
    3. Tryck för att visa alternativen för att lämna feedback.
 
       ![Inställningsskärm](assets/settings.png)
 
-10. Om du vill ändra inställningarna trycker du på **alternativet Inställningar** ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+10. Om du vill ändra inställningarna trycker du på det **[!UICONTROL Preferences]** alternativ som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
    ![Mörkt läge](assets/darkmode.png)
 
