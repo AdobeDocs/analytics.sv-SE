@@ -2,9 +2,9 @@
 title: getTimeParting
 description: Mät tiden då en viss åtgärd utförs.
 translation-type: tm+mt
-source-git-commit: c56891495b610ae14b0341e6a8e64edd115ae105
+source-git-commit: 01dce7813d60801f5c7826a903bb97d0db5d2617
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,6 @@ Analysis Workspace har liknande färdiga dimensioner som formateras något annor
 >[!IMPORTANT]
 >
 >Version 4.0+ av denna plug-in skiljer sig avsevärt från tidigare versioner. Adobe rekommenderar att du implementerar det här plugin-programmet från grunden. Kod som refererar till plugin-programmet före version 4.0 är inte kompatibel med den aktuella versionen av det här plugin-programmet.
-
->[!IMPORTANT]
->
->Tidigare versioner av denna plugin kunde inte användas för alla år i framtiden. Om du använder en tidigare version av detta plugin-program rekommenderar Adobe starkt att du uppgraderar till den senaste versionen för att undvika JavaScript-fel och dataförluster. Om det inte går att uppgradera det här plugin-programmet kontrollerar du att variabeln `s._tpdst` i plugin-programkoden innehåller rätt år i framtiden. Den här variabeln finns inte eller är inte nödvändig i den senaste versionen av plugin-programmet.
 
 ## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
@@ -157,6 +153,10 @@ s.eVar13 = getTimeParting("Australia/Sydney");
 
 * Point Release (omkompilerad, mindre kodstorlek)
 * Behovet av parametern `tpDST` har tagits bort eftersom start-/slutdatum för sommartid nu identifieras automatiskt
+
+>[!CAUTION]
+>
+>Tidigare versioner av denna plugin kunde inte användas för alla år i framtiden. Om du använder en tidigare version av detta plugin-program rekommenderar Adobe starkt att du uppgraderar till den senaste versionen för att undvika JavaScript-fel och dataförluster. Om det inte går att uppgradera det här plugin-programmet kontrollerar du att variabeln `s._tpdst` i plugin-programkoden innehåller rätt år i framtiden.
 
 ### 4.0 (22 augusti 2016)
 
