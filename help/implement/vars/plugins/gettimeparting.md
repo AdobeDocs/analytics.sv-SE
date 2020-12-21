@@ -2,9 +2,9 @@
 title: getTimeParting
 description: Mät tiden då en viss åtgärd utförs.
 translation-type: tm+mt
-source-git-commit: 226bbce18750825d459056ac2a87549614eb3c2c
+source-git-commit: c56891495b610ae14b0341e6a8e64edd115ae105
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med `getTimeParting` plugin-programmet kan du hämta information om när mätbara aktiviteter äger rum på webbplatsen. Denna plugin är värdefull när du vill att mätvärden ska delas upp efter en upprepningsbar uppdelning av tiden i ett visst datumintervall. Du kan till exempel jämföra konverteringsgraden mellan två olika veckodagar, till exempel alla söndagar jämfört med alla torsdagar. Du kan också jämföra tidsperioder på dagen, t.ex. alla tider jämfört med alla kvällar.
+Med plugin-programmet `getTimeParting` kan du samla in information om när mätbara aktiviteter äger rum på din plats. Denna plugin är värdefull när du vill att mätvärden ska delas upp efter en upprepningsbar uppdelning av tiden i ett visst datumintervall. Du kan till exempel jämföra konverteringsgraden mellan två olika veckodagar, till exempel alla söndagar jämfört med alla torsdagar. Du kan också jämföra tidsperioder på dagen, t.ex. alla tider jämfört med alla kvällar.
 
 Analysis Workspace har liknande färdiga dimensioner som formateras något annorlunda än denna plugin. Mer information finns i [Tidsdelningsdimensioner](/help/analyze/analysis-workspace/components/dimensions/time-parting-dimensions.md) i användarhandboken för Analysera. Vissa organisationer tycker att Analysis Workspace färdiga dimensioner är tillräckliga.
 
@@ -24,14 +24,18 @@ Analysis Workspace har liknande färdiga dimensioner som formateras något annor
 >
 >Version 4.0+ av denna plug-in skiljer sig avsevärt från tidigare versioner. Adobe rekommenderar att du implementerar det här plugin-programmet från grunden. Kod som refererar till plugin-programmet före version 4.0 är inte kompatibel med den aktuella versionen av det här plugin-programmet.
 
+>[!IMPORTANT]
+>
+>Tidigare versioner av denna plugin kunde inte användas för alla år i framtiden. Om du använder en tidigare version av detta plugin-program rekommenderar Adobe starkt att du uppgraderar till den senaste versionen för att undvika JavaScript-fel och dataförluster. Om det inte går att uppgradera det här plugin-programmet kontrollerar du att variabeln `s._tpdst` i plugin-programkoden innehåller rätt år i framtiden. Den här variabeln finns inte eller är inte nödvändig i den senaste versionen av plugin-programmet.
+
 ## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] tillägget
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -44,16 +48,16 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics-tillägget.
-1. Expandera dragspelsfliken så att [!UICONTROL Configure tracking using custom code] den visar [!UICONTROL Open Editor] knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
 ## Installera plugin-programmet med AppMeasurement
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen efter att Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -64,9 +68,9 @@ var getTimeParting=function(a){a=document.documentMode?void 0:a||"Etc/GMT";a=(ne
 
 ## Använda plugin-programmet
 
-I metoden används följande argument: `getTimeParting`
+Metoden `getTimeParting` använder följande argument:
 
-**`t`** (Valfritt men rekommenderas, sträng): Namnet på den tidszon som besökarens lokala tid ska konverteras till.  Standardvärdet är UTC/GMT-tid. En fullständig lista över giltiga värden finns i [List of TZ database time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) on Wikipedia.
+**`t`** (Valfritt men rekommenderas, sträng): Namnet på den tidszon som besökarens lokala tid ska konverteras till.  Standardvärdet är UTC/GMT-tid. En fullständig lista över giltiga värden finns i [Lista över tidszoner för TZ-databaser](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) på Wikipedia.
 
 Vanliga giltiga värden är:
 
@@ -105,11 +109,11 @@ Om kunden befinner sig i det afrikanska landet Ghana:
 s.eVarX = getTimeParting();
 ```
 
-Ghana ligger inom tidzonen UTC/GMT.  I det här exemplet visas att inga plug-in-argument behövs under sådana omständigheter.
+Ghana ligger inom tidzonen UTC/GMT. I det här exemplet visas att inget plug-in-argument krävs för UTC/GMT.
 
 ### Redovisning för Internet Explorer-webbläsare
 
-Använd följande exempel om du vill exkludera tidsdelade data från Internet Explorer-besökare (eftersom det värde som returneras från IE-webbläsare bara kan finnas i besökarens lokala tid)
+Använd följande exempel om du vill exkludera tidsåtgången för att dela data från Internet Explorer-besökare. Värdet som returneras från IE-webbläsare finns bara i besökarens lokala tid.
 
 ```js
 if(!document.documentMode) s.eVarX = getTimeParting("America/New_York");
@@ -118,39 +122,21 @@ else s.eVarX = "Internet Explorer Visitors";
 
 ### Resultat från samtal
 
-Om en besökare från Denver besöker Colorado en webbplats den 31 augusti 2020 kl. 9.15,
-
-Kör följande kod..
+Tänk dig ett scenario där en besökare från Denver Colorado besöker en webbplats den 31 augusti 2020 kl. 9.15.
 
 ```js
 s.eVar10 = getTimeParting("Europe/Athens");
+// Returns the string value "year=2020 | month=August | date=31 | day=Friday | time=6:15 PM"
+
+s.eVar11 = getTimeParting("America/Nome");
+// Returns the string value "year=2020 | month=August | date=31 | day=Friday | time=6:15 AM"
+
+s.eVar12 = getTimeParting("Asia/Calcutta");
+// Returns the string value "year=2020 | month=August | date=31 | day=Friday | time=8:45 PM"
+
+s.eVar13 = getTimeParting("Australia/Sydney");
+// Returns the string value "year=2020 | month=September | date=1 | day=Saturday | time=1:15 AM"
 ```
-
-...skulle ange s.eVar10 som lika med &quot;year=2020 | month=August | date=31 | day=Friday | time=6:15 PM&quot;
-
-När följande kod..
-
-```js
-s.eVar10 = getTimeParting("America/Nome");
-```
-
-...skulle ange s.eVar10 som lika med &quot;year=2020 | month=August | date=31 | day=Friday | time=6:15&quot;
-
-Följande kod...
-
-```js
-s.eVar10 = getTimeParting("Asia/Calcutta");
-```
-
-...skulle ange s.eVar10 som lika med &quot;year=2020 | month=August | date=31 | day=Friday | time=8:45 PM&quot;
-
-Och följande kod..
-
-```js
-s.eVar10 = getTimeParting("Australia/Sydney");
-```
-
-...skulle ange s.eVar10 som lika med &quot;year=2020 | month=September | date=1 | day=Saturday | time=1:15&quot;
 
 ## Versionshistorik
 
@@ -170,7 +156,7 @@ s.eVar10 = getTimeParting("Australia/Sydney");
 ### 5.0 (17 april 2018)
 
 * Point Release (omkompilerad, mindre kodstorlek)
-* Behovet av `tpDST` parametern har tagits bort eftersom start- och slutdatum för sommartid nu identifieras automatiskt
+* Behovet av parametern `tpDST` har tagits bort eftersom start-/slutdatum för sommartid nu identifieras automatiskt
 
 ### 4.0 (22 augusti 2016)
 
