@@ -2,9 +2,9 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 translation-type: tm+mt
-source-git-commit: 6b9d3395e1c11f56452694229b9b8eb12b4ed8c0
+source-git-commit: 272c50040a009d2b69885924e7b1f402636e8889
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '980'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Översikt över paneler
 
-A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, rapportsviter eller användningsfall för analyser. Följande paneltyper är tillgängliga i Analysis Workspace:
+En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, rapportsviter eller användningsfall för analyser. Följande paneltyper är tillgängliga i Analysis Workspace:
 
 | Panelnamn | Beskrivning |
 | --- | --- |
@@ -26,13 +26,13 @@ A [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt 
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Blank] och [!UICONTROL Freeform] paneler är bra platser att börja med, medan [!UICONTROL Analytics for Target], [!UICONTROL Attribution IQ]och [!UICONTROL Media Concurrent Viewers] [!UICONTROL Segment Comparison] ger sig ut på mer avancerade analyser. En `"+"` knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
+[!UICONTROL Quick Insights],  [!UICONTROL Blank] och  [!UICONTROL Freeform] paneler är bra platser för att starta analysen, medan  [!UICONTROL Analytics for Target],  [!UICONTROL Attribution IQ]och  [!UICONTROL Media Concurrent Viewers]   [!UICONTROL Segment Comparison] ge sig ut på mer avancerade analyser. En `"+"`-knapp är tillgänglig i projekt, så du kan när som helst lägga till tomma paneler.
 
-Standardstartpanelen är [!UICONTROL Freeform] panelen, men du kan även göra den [tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standard.
+Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standard.[
 
-## Rapportsvit {#report-suite}
+## Rapportsviten {#report-suite}
 
-Tabeller och visualiseringar i en panel hämtar data från de [!UICONTROL report suite] markerade i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [flera rapportsviter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt **högerklickar du på panelhuvudet > Använd rapportserie för alla paneler**.
+Tabeller och visualiseringar i en panel hämtar data från det [!UICONTROL report suite] som är markerat i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [många rapportsviter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt **högerklickar du på panelhuvudet > Använd rapportserie för alla paneler**.
 
 Listan med rapportsviter sorteras efter relevans, som Adobe definierar utifrån hur nyligen och ofta sviten har använts av den aktuella användaren och hur ofta sviten används i organisationen.
 
@@ -46,7 +46,7 @@ Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering el
 
 ![](assets/panel-calendar.png)
 
-## Dropzon {#dropzone}
+## Dropzone {#dropzone}
 
 Med panelens listruta kan du tillämpa segment- och listrutefilter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel. Titeln ovanför varje filter kan ändras genom att du klickar på redigeringspennan eller så kan du högerklicka för att ta bort den helt.
 
@@ -74,13 +74,13 @@ Nedrullningsbara filter kan även användas för att konsolidera flera projekt t
 
 Så här skapar du nedrullningsbara filter:
 
-1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items]till exempel värden inom [!UICONTROL Marketing Channel] dimensionen klickar du på högerpilsikonen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
+1. Om du vill skapa ett nedrullningsbart filter med [!UICONTROL Dimension items], t.ex. värden inom dimensionen [!UICONTROL Marketing Channel], klickar du på högerpilsikonen bredvid dimensionen i den vänstra listen. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **samtidigt som du håller ned Skift-tangenten**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
 1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, segment eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
-1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
+1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att välja **[!UICONTROL No filter]**.
 
 ![](assets/create-dropdown.png)
 
-[Titta på videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) och lär dig mer om hur du lägger till nedrullningsbara filter i ett projekt.
+[Titta på ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) videon och lär dig mer om hur du lägger till nedrullningsbara filter i ditt projekt.
 
 ## Högerklicka på menyn {#right-click}
 
