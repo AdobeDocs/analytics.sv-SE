@@ -3,25 +3,26 @@ description: Gör att du kan lägga till användardefinierad text på arbetsytan
 title: Text
 uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: eac7c7ffed4007e3bebb65f1b6cf5bbb4c3a28a8
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 1%
 
 ---
 
 
 # Text
 
-Gör att du kan lägga till användardefinierad text på arbetsytan.
+Du kan lägga till användardefinierad text i ett Workspace-projekt med hjälp av textvisualiseringar eller panel-/visualiseringsbeskrivningar (högerklicka på sidhuvud > Redigera beskrivning). Du kan också ändra textens formatering, lägga till hyperlänkar och lägga till bilder.
 
-Du kan ändra teckensnittsinställningarna (fet, kursiv, osv.) och lägga till hyperlänkar i textrutevisualiseringar och beskrivningar av paneler/visualiseringar.
+## Formaterar {#format}
 
-## Ändra teckensnittsinställningar {#section_32727EE03FD04A8EB1D1B387DCAF6537}
+När du redigerar textrutan eller beskrivningen kan du justera den markerade textens teckensnittsstorlek (rubriknivåer), färg, liggande (fet, kursiv) och justering. Du kan också lägga till punktlistor och numrerade listor.
 
-![](assets/rich-text1.png)
+## Hyperlänkar {#hyperlinks}
 
-När du har dragit en textvisualisering till en panel och lagt till text kan du formatera texten genom att lägga till rubriknivåer, ändra textens fet/kursiv/understruken, ändra textfärgen osv.
+Om du vill lägga till en hyperlänk markerar du texten och klickar på hyperlänkikonen på menyn. Hyperlänkar till kan länka till externa webbplatser, dokumentationssidor, [projekt/paneler/visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) med mera för att ytterligare hjälpa projektmottagarna.
 
-## Lägg till hyperlänkar {#section_D55B857188A74A06B49006DF3511DC7C}
+## Bilder {#images}
 
-![](assets/rich-text2.png)
-
-Markera text och klicka på hyperlänkikonen på formateringsmenyn för att lägga till hyperlänkar.
+Om du vill lägga till en bild i projektet klickar du på bildikonen på menyn och infogar en URL för en offentlig bild. Bildens URL måste vara tillgänglig för alla, börja med https och ha formatet .png, .jpeg, .jpg eller .gif. Statiska och animerade bilder stöds.
