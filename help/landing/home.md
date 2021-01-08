@@ -2,10 +2,10 @@
 title: Tekniska handböcker för Adobe Analytics
 description: Användarhandböcker och resurser för Analytics
 translation-type: tm+mt
-source-git-commit: 13fefcf8f743d1890044e2ac6b5864846d2c8cb7
+source-git-commit: 4fdab23700659e68d5c577369dd005b94eef56b2
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 95%
+source-wordcount: '431'
+ht-degree: 91%
 
 ---
 
@@ -28,7 +28,7 @@ Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokum
 
 [![Integrering](assets/integrate_50px.png)](/help/integrate/home.md) [Integreringshandbok](/help/integrate/home.md) – Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, till exempel Audience Manager, Advertising Cloud och Target.
 
-[![Streaming Media Analytics](assets/media_50px.png)](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)[Streaming Media Analytics Guide](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) - Implementera Adobe Analytics för Streaming Media. Innehåller Media SDK och Media Collection API.
+[![Streaming Media Analytics](assets/media_50px.png)](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) [Streaming Media Analytics Guide](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)  - Implementera Adobe Analytics för Streaming Media. Innehåller Media SDK och Media Collection API.
 
 [![DWB](assets/workbench_50px.png)](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) [Data Workbench-handböcker](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) – Läs mer om de flexibla, kraftfulla flerkanalsfunktionerna i [!UICONTROL Data Workbench]. Inkluderar [!UICONTROL Data Workbench Client], installation, [!UICONTROL Dataset Configuration]-handböcker med mera.
 
@@ -36,7 +36,7 @@ Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokum
 
 | Nya och aktuella objekt | Viktiga Analytics-resurser |
 | --- | --- |
-| <ul><li>[Insamling av regionala data](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md)</li><li>[Analytics – produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: [Dokumentationsuppdateringar för 2019](doc-updates.md) | <ul><li> [Versionsinformation](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)</li><li> [Adobe Analytics videosjälvstudiekurser](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga utbildningar och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/se/support/analytics.html)</li></ul> |
+| <ul><li>[Fullständig utvärdering](https://experienceleague.adobe.com/docs/analytics/implementation/review/full-review.html)</li><li>[Fokuserad implementeringsgranskning](https://experienceleague.adobe.com/docs/analytics/implementation/review/focused-review.html)</li><li>[Insamling av regionala data](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md)</li><li>[Analytics – produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: [Dokumentationsuppdateringar för 2019](doc-updates.md) | <ul><li> [Versionsinformation](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html)</li><li> [Adobe Analytics videosjälvstudiekurser](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga utbildningar och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/se/support/analytics.html)</li></ul> |
 
 <!-- Keep around for now
 
