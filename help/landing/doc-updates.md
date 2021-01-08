@@ -3,10 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 translation-type: tm+mt
-source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+source-git-commit: 4fdab23700659e68d5c577369dd005b94eef56b2
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 97%
+source-wordcount: '420'
+ht-degree: 90%
 
 ---
 
@@ -20,11 +20,12 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 * Mer information om nya funktioner finns i [Nya funktioner i Analysis Workspace](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) i användarhandboken för verktyg.
 * Mer information om Adobe Analytics för ljud och video finns i [Mäta ljud och video i Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
-## Uppdateringsinformation
+## Information om större uppdateringar
 
 | Datum | Beskrivning |
 |---|---|
-| 21 juli 2020 | Viktiga uppdateringar och revideringar av [enhetsövergripande analyser](/help/components/cda/overview.md). Lagt till [fältbaserad sammanfogning](/help/components/cda/field-based-stitching.md). |
+| November 2020 | Nya granskningsdokument för implementering: <ul><li>[Fullständig utvärdering](https://experienceleague.adobe.com/docs/analytics/implementation/review/full-review.html)</li><li>[Fokuserad implementeringsgranskning](https://experienceleague.adobe.com/docs/analytics/implementation/review/focused-review.html)</li></ul> |
+| 21 juli 2020 | Stora uppdateringar och revideringar av [Enhetsövergripande analys](/help/components/cda/overview.md). Lade till [Fältbaserad sammanfogning](/help/components/cda/field-based-stitching.md). |
 | 28 april 2020 | Dokumentation för mätvärdet [Content Velocity](/help/components/metrics/content-velocity.md) har lagts till. |
 | 12 mars 2020 | [Publicera segment i Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-publish.md) har uppdaterats. |
 | 12 mars 2020 | Uppdateringar av svarstider för CDA-sammanfogning. |
