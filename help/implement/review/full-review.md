@@ -2,9 +2,9 @@
 title: Fullständig granskning
 description: Se över implementeringen var sjätte månad för att säkerställa fortsatt anpassning till affärsbehoven och nyckeltalen.
 translation-type: tm+mt
-source-git-commit: a7f1da79bd5a6f78ed1a706ccae01b03a2f5665c
+source-git-commit: 769e29e08871d2da704aa4eabe22371148d486bf
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Träffa företagsägaren och/eller analytikerna för att se hur verksamhetens be
 
 ## 2. Se till att mätvärden och variabler fortfarande fungerar bra.
 
-Granska kortfattat alla mätvärden och variabler, i den ordning de är viktiga för företaget, för att säkerställa att data samlas in korrekt. Börja med era viktigaste mätvärden och variabler - de som är kopplade till era 5 KPI:er. Så här gör du:
+Granska kortfattat alla mätvärden och variabler, i den ordning de är viktiga för företaget, för att säkerställa att data samlas in korrekt. Börja med dina viktigaste mått och variabler - de som är kopplade till dina [5 KPI:er](https://experienceleague.adobe.com/docs/analytics/implementation/review/define-kpis.html?lang=en#review). Så här gör du:
 
 * Skapa instrumentpaneler för att se månatliga trendvyer av mätvärden och variabler (eller konfigurera intelligenta aviseringar för var och en av dem) för att säkerställa att ni får de data ni förväntar er och att data är korrekta. Om du hittar avvikelser bör du undersöka datalagret, tagghanteringsreglerna och bearbetningsreglerna för att ta reda på varför.
 * Kör om [Analytics Health Dashboard](https://assets.adobe.com/public/9549dbe7-765a-4899-77b8-85cbba1a4252) för att övervaka breda trender för mätvärden och variabler.
