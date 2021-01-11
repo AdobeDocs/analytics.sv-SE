@@ -2,9 +2,9 @@
 title: Fullständig granskning
 description: Se över implementeringen var sjätte månad för att säkerställa fortsatt anpassning till affärsbehoven och nyckeltalen.
 translation-type: tm+mt
-source-git-commit: 769e29e08871d2da704aa4eabe22371148d486bf
+source-git-commit: ad7274dbed3b85ca24cd92bf3a0d36d1f2e3597b
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Träffa företagsägaren och/eller analytikerna för att se hur verksamhetens be
 
 Granska kortfattat alla mätvärden och variabler, i den ordning de är viktiga för företaget, för att säkerställa att data samlas in korrekt. Börja med dina viktigaste mått och variabler - de som är kopplade till dina [5 KPI:er](https://experienceleague.adobe.com/docs/analytics/implementation/review/define-kpis.html?lang=en#review). Så här gör du:
 
-* Skapa instrumentpaneler för att se månatliga trendvyer av mätvärden och variabler (eller konfigurera intelligenta aviseringar för var och en av dem) för att säkerställa att ni får de data ni förväntar er och att data är korrekta. Om du hittar avvikelser bör du undersöka datalagret, tagghanteringsreglerna och bearbetningsreglerna för att ta reda på varför.
+* Skapa instrumentpaneler för att se månatliga trendvyer av mätvärden och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html#analysis-workspace) för var och en av dem) för att vara säker på att du får de data du förväntar dig och att data är korrekta. Om du hittar avvikelser bör du undersöka datalagret, tagghanteringsreglerna och bearbetningsreglerna för att ta reda på varför.
 * Kör om [Analytics Health Dashboard](https://assets.adobe.com/public/9549dbe7-765a-4899-77b8-85cbba1a4252) för att övervaka breda trender för mätvärden och variabler.
 
 Tillåt inte implementeringen att bli fullödig med mätvärden och variabler som du inte behöver. Inaktivera mått eller variabler som företaget inte längre behöver eller använder. Du kanske vill ta bort eller återanvända dem senare.
