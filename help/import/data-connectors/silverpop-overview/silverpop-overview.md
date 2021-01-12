@@ -1,11 +1,11 @@
 ---
-description: Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med e-postmarknadsföring i Silverpop för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+description: Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med Silverpop-marknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 title: Silverpop Data Connector för Adobe Analytics
 uuid: 579d3100-4c34-48ff-a181-1465fa32b250
 translation-type: tm+mt
-source-git-commit: 6967ed62ced07cf817bdfd7137c5659831ae3520
+source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 2%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe Data Connector-tekniken upphör i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+>Adobe Data Connector-tekniken upphör den 1 augusti 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
-Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med e-postmarknadsföring i Silverpop för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med Silverpop-marknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 
 Leverans av relevanta e-postmeddelanden till dessa marknadssegment kan leda till helt nya intäktsmöjligheter och leda till ökad konvertering och ökade intäkter bland nya och befintliga e-postkampanjer. Att leverera relevanta e-postmeddelanden baserade på produkter som visats under ett besök eller produkter som lämnats i en övergiven kundvagn har till exempel visat sig ha en dramatisk inverkan på intäkterna, med minimal inverkan på kostnaden eftersom det bara är att dra nytta av besökare som sajten redan får.
 
-Den här ökningen av marknadsföringens effektivitet är en av de största fördelarna med att integrera Analytics med Silverpop. Dessutom synkroniserar den här integreringen automatiskt e-poststatistik med Analytics-data så ofta som en timme för rapporter i slutna slingor.
+Den här ökningen av marknadsföringseffektiviteten är en av de största fördelarna med att integrera Analytics med Silverpop. Dessutom synkroniserar den här integreringen automatiskt e-poststatistik med analysdata så ofta som en timme för rapporter med slutna slingor.
 
 ## Viktiga fördelar och funktioner{#key-benefits-and-features}
 
@@ -48,8 +48,8 @@ Den här e-postintegreringen av Data Connectors stöder dynamiska marknadsförin
 Den här integreringen innehåller följande marknadsföringssegment:
 
 * **Inköpsprofiler:** Öka antalet upprepade order och det genomsnittliga ordervärdet genom kampanjer riktade mot besökares inköpsmönster.
-* **Beteendeprofil för produkt-/innehållsvy:** Nå potentiella kunder genom marknadsföringssegment baserat på produktvisningar och profiler för innehållsåtkomst.
+* **Beteendeprofil för produkt-/innehållsvy:** Nå potentiella kunder genom marknadsföringssegment baserat på produktvyer och profiler för innehållsåtkomst.
 * **Cart Abandonment Profile:** Hjälp besökarna att konvertera till kunder med finjusterade kampanjer som är särskilt utformade för dem som tvekar att slutföra kundvagnen.
-* **Profil för formuläravhopp (valfritt):** Uppmuntra besökare att fylla i ett ofärdigt formulär med kampanjer som är särskilt utformade för dem som började och inte fyllde i ett onlineformulär. Det här segmentet skapas bara om 2 händelser skapas för att formuläret ska kunna startas och formuläret ska fyllas i.
-* **Filhämtningsprofil (valfritt):** Nå potentiella kunder genom kampanjer som utformats för dem som har visat intresse genom att ladda ned en rapport eller annan typ av nedladdning. Det här segmentet skapas endast om 1 händelse skapas för att filhämtningen ska lyckas.
+* **Profil för att ta bort formulär (valfritt):** Uppmuntra besökare att fylla i ett ofärdigt formulär med kampanjer som är särskilt utformade för dem som startade och inte fyllde i ett onlineformulär. Det här segmentet skapas bara om 2 händelser skapas för att formuläret ska kunna startas och formuläret ska fyllas i.
+* **Profil för nedladdning av filer (valfritt):** Nå potentiella kunder genom kampanjer som utformats för dem som har visat intresse genom att ladda ned en rapport eller annan typ av nedladdning. Det här segmentet skapas endast om 1 händelse skapas för att filhämtningen ska lyckas.
 * Kunderna kan också skapa och schemalägga anpassade marknadsföringssegment som är specifika för användarnas behov.
