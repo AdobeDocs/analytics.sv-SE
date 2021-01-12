@@ -3,9 +3,9 @@ description: Beskriver de marknadsföringseffektiviteter som uppnås genom integ
 title: Lyris Data Connector för Adobe Analytics
 uuid: db213865-1296-4a93-a0a2-781c026b2be5
 translation-type: tm+mt
-source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+>Adobe Data Connector-tekniken upphör den 1 augusti 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
-E-postintegreringen med Adobe® Data Connectors™ kombinerar beteendeinformation från Adobe Analytics med e-postmarknadsföring från Lyris för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
+E-postintegreringen av Adobe® Data Connectors™ kombinerar beteendeinformation från Adobe Analytics med e-postmarknadsföring från Lyris för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 
 Leverans av relevanta e-postmeddelanden till dessa marknadssegment kan leda till helt nya intäktsmöjligheter och leda till ökad konvertering och ökade intäkter bland nya och befintliga e-postkampanjer. Att leverera relevanta e-postmeddelanden baserade på produkter som visats under ett besök eller produkter som lämnats i en övergiven kundvagn har till exempel visat sig ha en dramatisk inverkan på intäkterna, med minimal inverkan på kostnaden eftersom det bara är att dra nytta av besökare som sajten redan får.
 
-Den ökade effektiviteten i marknadsföringen är en av de största fördelarna med att integrera Adobe Analytics med Lyris. Dessutom synkroniseras e-poststatistik automatiskt med Adobe Analytics-data så ofta som en timme för rapporter i slutna slingor.
+Den här ökningen av marknadsföringens effektivitet är en av de största fördelarna med att integrera Adobe Analytics med Lyris. Dessutom synkroniserar den här integreringen automatiskt e-poststatistik med Adobe Analytics-data så ofta som en timme för rapporter i slutna slingor.
 
 ## Viktiga fördelar och funktioner{#key-benefits-and-features}
 
 Beskriver de viktigaste fördelarna med att integrera Lyris och Adobe Marketing reports and analytics.
 
-Integreringen av Lyris och Adobe Analytics ger följande fördelar:
+Integreringen av Lyris och Adobe Analytics ger följande viktiga fördelar:
 
 * Samla marknadsförings- och analysdata via e-post i ett enda rapporteringsgränssnitt
 * Optimera e-postkampanjer genom konvertering och bidrag till intäkter och webbplatsens framgång
@@ -40,23 +40,23 @@ E-postintegreringen stöder dynamiska marknadsföringssegment som hjälper er at
 * **Profil** för kundvagnsöverlämning: Hjälp besökarna att konvertera till kunder med finjusterade kampanjer som är särskilt utformade för dem som tvekar att slutföra kundvagnen
 * **Inköpsprofiler**: Öka antalet upprepade order och det genomsnittliga ordervärdet genom kampanjer riktade mot besökares inköpsmönster
 * **Beteendeprofil** för produkt-/innehållsvy: Nå potentiella kunder genom marknadsföringssegment baserat på produktvisningar och profiler för innehållsåtkomst
-* Kunderna kan också skapa och schemalägga **anpassade ommarknadsföringssegment** som är specifika för användarnas behov.
+* Kunderna kan också skapa och schemalägga **anpassade segment för återmarknadsföring** som är specifika för användarnas behov.
 
 ## Krav för integrering{#integration-prerequisites}
 
 Beskriver förutsättningarna för en lyckad integrering.
 
-Innan du aktiverar den här integreringen bör du granska följande artiklar mot dina distributioner av Adobe Analytics och ditt e-postprogram.
+Innan du aktiverar den här integreringen bör du granska följande objekt mot dina distributioner av Adobe Analytics och ditt e-postprogram.
 
 Detta garanterar att bästa praxis och förutsättningar finns på plats före aktiveringen, vilket ger en optimal och lyckad integrering.
 
 ### Krav för Adobe Analytics {#section-ddb9d4f3b283438ea33788f47f35e69a}
 
 * **Report-Suite-specifik**: Observera att den här integreringen är specifik för rapportsviten. Kontrollera att du har valt önskat rapportpaket innan du aktiverar integreringen
-* **Tillgängliga och konfigurerade Analytics-variabler**: Den här integreringen kräver anpassade händelser och anpassade eVars-variabler, samt eventuellt ytterligare händelser och ytterligare eVars-variabler.
+* **Tillgängliga och konfigurerade analysvariabler**: Den här integreringen kräver anpassade händelser och anpassade eVars-variabler, samt eventuellt ytterligare händelser och ytterligare eVars-variabler.
 
-* **Auktoriserat ombud**: Observera att aktiveringen av integreringen kan medföra att ditt företag debiteras i enlighet med ditt serviceavtal med Adobe, Inc. eller ditt serviceavtal med någon av Adobes betrodda partners, beroende på vad som är tillämpligt. Genom att aktivera integreringen intygar du härmed att du är en behörig representant för ditt företag; och som sådan går ditt företag med på att betala eventuella avgifter som anges i det serviceavtal som beskrivs ovan.
-* **Adobe Analytics data warehouse**: Integreringen kräver att Adobe Analytics data warehouse aktiveras för att man ska kunna generera segment för ny marknadsföring. Om du inte har aktiverat data warehouse kontaktar du Adobe för mer information.
+* **Auktoriserat ombud**: Observera att aktiveringen av den här integreringen kan medföra att ditt företag debiteras i enlighet med ditt serviceavtal med Adobe, Inc. eller ditt serviceavtal med någon av Adobe tillförlitliga partners, beroende på vad som är tillämpligt. Genom att aktivera integreringen intygar du härmed att du är en behörig representant för ditt företag; och som sådan går ditt företag med på att betala eventuella avgifter som anges i det serviceavtal som beskrivs ovan.
+* **Adobe Analytics data warehouse**: Denna integrering kräver att Adobe Analytics data warehouse aktiveras för att generera segment för återmarknadsföring. Om du inte har aktiverat data warehouse kontaktar du Adobe för mer information.
 * **Mottagar-ID**: Integreringen kräver att vi hämtar och lagrar ett besökar-ID i en Analytics-variabel (eVar). Besökar-ID (kallas ofta för &quot;Mottagar-ID&quot;) är en kodad eller numerisk representation av en e-postadress från Lyris-systemet. Detta&quot;Mottagar-ID&quot; är kopplat till besökarbeteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som återförs till Lyris-systemet och kan utnyttjas för återmarknadsföring. Som en del av konfigurationsprocessen måste du identifiera en eVar för detta när du uppmanas till det av guiden.
 * **Extern spårning**: Om du för närvarande inte följer den bästa metoden att aktivera extern spårning för varje e-postkampanj som du skickar måste du göra det för att integreringen ska lyckas. Se avsnittet Lyris nedan för mer information
 * **Integritetsefterlevnad**: Genom att aktivera spårning av mottagare eller besökar-ID kan den här funktionen spåra personligt identifierbar information om webbplatsens besökare. Detta påverkar integriteten och kräver att organisationen implementerar lämpliga procedurer, t.ex. meddelar besökarna på webbplatsen och ger dem sitt samtycke.
@@ -75,7 +75,7 @@ Detta garanterar att bästa praxis och förutsättningar finns på plats före a
 
 Beskriver de eVars och Events som ska reserveras för varje implementering av rapportsviten.
 
-Den här integreringen kräver att minst 2 eVars reserveras för varje implementering av rapportsviten. Förutom dessa eVars kan ett fåtal händelser reserveras beroende på vilka Lyris-data du vill se i Analytics. Dessa eVars och händelser beskrivs i tabellen nedan:
+Den här integreringen kräver att minst 2 eVars reserveras för varje implementering av rapportsviten. Förutom dessa eVars kan ett antal händelser reserveras beroende på vilka Lyris-data du vill se i Analytics. Dessa eVars och händelser beskrivs i tabellen nedan:
 
 <table id="table_43E32344E9E54FED8491F28047249329"> 
  <thead> 
