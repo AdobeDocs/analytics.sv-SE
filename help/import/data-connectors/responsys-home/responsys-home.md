@@ -3,9 +3,9 @@ description: 'null'
 title: Responsys Data Connector för Adobe Analytics
 uuid: 1181ae49-59c4-4c6a-a5cf-f7a0ec956850
 translation-type: tm+mt
-source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '270'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+>Adobe Data Connector-tekniken upphör den 1 augusti 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 Adobe Analytics erbjuder en mängd nya målgruppsmöjligheter för e-postmarknadsförare som använder Responsys Interact. Genom att leverera relevanta e-postmeddelanden i rätt tid till de dynamiska marknadsföringssegment som identifieras av Adobe Analytics (tidigare SiteCatalyst) kan ni öka både konverteringsgraden och intäkterna för både potentiella och nuvarande kunder.
 
@@ -31,11 +31,11 @@ Visar de viktigaste fördelarna med integrationen av Adobe Analytics och Respons
 
 ## Krav för integrering{#integration-prerequisites}
 
-Listar förutsättningarna för Adobe Analytics och för Responssystemkunder.
+Listar förutsättningarna för Adobe Analytics- och svarskunder.
 
 ### Krav för Adobe-kunder {#section-23ba9dd1a1774f3099a6764d3fadd4ef}
 
-* Måste vara en befintlig kund till Adobe Analytics.
+* Måste vara Adobe Analytics nuvarande kund.
 * Måste ha administratörsbehörighet.
 * Två eVars måste vara tillgängliga och aktiverade i rapportsviten.
 * 6 tillgängliga numeriska händelser måste vara aktiverade i rapportsviten.
