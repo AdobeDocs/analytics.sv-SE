@@ -3,35 +3,45 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+source-git-commit: 6e4c40c7d6c1713f624a9562da3e49a3ee5d67de
 workflow-type: tm+mt
-source-wordcount: '8024'
-ht-degree: 92%
+source-wordcount: '8122'
+ht-degree: 91%
 
 ---
 
 
 # Nyheter i Analysis Workspace
 
-Du får tillgång till versionsinformationen för Adobe Experience Cloud som helhet [här](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud som helhet går du [hit](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+
+## Februari 2021
+
+| Funktion | Måldatum | Beskrivning |
+| --- | --- | --- |
+| Komponentval | 4 februari 2021 | Den nedrullningsbara zonkomponent som finns i Snabbinsikter läggs till i alla släppzoner i Workspace. Den här förbättringen gör att du kan välja från en nedrullningsbar lista med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
+
+
+## Januari 2021
+
+| Funktion | Måldatum | Beskrivning |
+| --- | --- | --- |
+| Bild-URL:er | 14 januari 2021 | Du kan lägga till bilder i arbetsyteprojekt genom att referera till en offentlig bild-URL. |
+| Kombinerad käll- och inställningshanterare för visualiseringar | 14 januari 2021 | Datakällhanteraren (punkt) och inställningshanteraren (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
 
 ## Oktober 2020
 
-Nya funktioner som släpptes i oktober 2020.
-
 | Funktion | Beskrivning |
 | --- | --- |
-| Linjevisualisering: [Alternativ för glidande medeltrendlinje](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | **[!UICONTROL Moving average]** har lagts till i trendlinjeinställningarna för linjevisualisering. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av ett **[!UICONTROL Periods]** urval), ett genomsnittsvärde för dem och ett medelvärde används som en punkt på raden. |
+| Linjevisualisering: [Alternativ för glidande medeltrendlinje](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | **[!UICONTROL Moving average]** har lagts till i trendlinjeinställningarna för linjevisualisering. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av en **[!UICONTROL Periods]**-markering), jämför dem och använder medelvärdet som en punkt på raden. |
 | [Hjälpsida för prestanda](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html) | På hjälpsidan för Analysis Workspace prestanda visas olika faktorer som påverkar projektets prestanda och länkar till tips för optimering. |
 
 ## September 2020
 
-Nya funktioner släpptes i september 2020.
-
 | Funktion | Beskrivning |
 | --- | --- |
 | [Ladda ned 50 000 artiklar för en enda dimension](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/download-send.html#download-items) | Nu kan du ladda ned 50 000 objekt för en enda dimension i en friformstabell med segment och filter. Det ger dig åtkomst till mer än de 400 dataraderna utanför Analysis Workspace. |
-| [Förbättringar av linjevisualisering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla linjevisualiseringar. Detta kan vara praktiskt när linjevisualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen är [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential]och [!UICONTROL Power] [!UICONTROL Quadratic].</li></ul> |
+| [Förbättringar av linjevisualisering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla linjevisualiseringar. Detta kan vara praktiskt när linjevisualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen är [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential], [!UICONTROL Power] och [!UICONTROL Quadratic].</li></ul> |
 | Nya datumintervall | Vi har lagt till fem nya datumintervall så att du kan välja mellan datumintervall som inte innehåller data för delar av dagen från idag: De senaste 7 fullständiga dagarna, de senaste 14 fullständiga dagarna, de senaste 30 fullständiga dagarna, de senaste 60 fullständiga dagarna, de senaste 90 fullständiga dagarna |
 
 ## Augusti 2020
@@ -54,9 +64,9 @@ Nya funktioner som släpptes 18 juni 2020.
 |--- |--- |
 | Attribution IQ: Algoritmisk attribuering | I modellen för algoritmisk attribuering i Analysis Workspace används statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. Tillgängligt för kunder som har Adobe Analytics Ultimate. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
 | Attribution IQ: Anpassade uppslagsfönster | Nu kan du konfigurera alla attribueringsmodeller i Attribution IQ så att de omfattar kontaktytor från upp till 90 dagar före rapporteringsperioden. Detta ökar vanligen attribueringens exakthet för händelser som inträffar tidigt under rapporteringsperioden genom att redovisa interaktioner som inträffat under föregående månad(er). Tillgängligt för kunder som har Adobe Analytics Foundation, Select, Prime, Premium, Premium Attribution, Premium Complete och Ultimate. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
-| Projektroller för delade Workspace-projekt | När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
-| Skrivskyddade Workspace-projekt | Skrivskyddade Workspace-projekt kan delas med användare som Can view. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/view-only-projects.translate.html) |
-| Möjlighet att samredigera Workspace-projekt | Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/curate-share/share-projects.translate.html) |
+| Projektroller för delade Workspace-projekt | När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
+| Skrivskyddade Workspace-projekt | Skrivskyddade Workspace-projekt kan delas med användare som Can view. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html) |
+| Möjlighet att samredigera Workspace-projekt | Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
 | Uppdaterad tom panel | Den tomma panelen innehåller nu paneler och visualiseringar, vilket gör det enklare att välja det analysarbetsflöde som fungerar bäst för dig. |
 | Panelen Snabbinformation (25 juni 2020) | Quick Insights ger vägledning till icke-analytiker och nya användare av Analysis Workspace så att de snabbt och enkelt kan lära sig att svara på affärsfrågor. [Läs mer...](/help/analyze/analysis-workspace/c-panels/quickinsight.md) |
 | Panelen Analytics for Target i Workspace (25 juni 2020) | Med panelen Analytics for Target (A4T) kan du analysera dina Adobe Target aktiviteter och upplevelser i Analysis Workspace. [Läs mer …](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) |
@@ -69,7 +79,7 @@ Nya funktioner släpptes 21 maj 2020.
 | Funktion | Beskrivning |
 |--- |--- |
 | Bygg frihandstabeller automatiskt från ett tomt läge | Tidigare gick det inte att släppa komponenter direkt i ett tomt projekt eller en tom panel. du var tvungen att lägga till en friformstabell först. Nu kan du släppa komponenter direkt i ett tomt projekt eller en tom panel, och en frihandstabell skapas automatiskt i det format som rekommenderas. Dessutom har vi förbättrat hur blandade komponenttyper (som dimensioner och mätvärden) hanteras när de släpps i en tom frihandstabell tillsammans. |
-| Tillgänglighetsförbättringar | Adobe Analytics-teamet har gjort flera tillgänglighetsförbättringar för Analysis Workspace, och har bland annat förbättrat stöd för tangentbordsnavigering, färgkontrast och skärmläsare. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/workspace-faq/aw-accessibility.html) |
+| Tillgänglighetsförbättringar | Adobe Analytics-teamet har gjort flera tillgänglighetsförbättringar för Analysis Workspace, och har bland annat förbättrat stöd för tangentbordsnavigering, färgkontrast och skärmläsare. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/workspace-faq/aw-accessibility.html) |
 
 ## April 2020
 
@@ -85,7 +95,7 @@ Nya funktioner som släpptes 12 mars 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| Stöd för flera rapportsviter i Workspace | Nu kan du samla in data från flera rapportsviter i ett enda projekt och visa dem sida vid sida. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) |
+| Stöd för flera rapportsviter i Workspace | Nu kan du samla in data från flera rapportsviter i ett enda projekt och visa dem sida vid sida. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) |
 | Mall för självstudiekurser | Den här nya standardmallen vägleder dig bland vanliga termer och steg när du skapar din första analys i Workspace. Den finns som en standardmall i det modala fönstret Nytt projekt och ersätter det exempelprojekt som finns idag för nya användare, som inte har andra projekt i sin lista. [Läs mer …](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md) |
 
 ## Februari 2020
@@ -95,7 +105,7 @@ Nya funktioner som släpptes 20 februari 2020.
 | Funktion | Beskrivning |
 |--- |--- |
 | Ny Workspace-mall för organisationer som använder analys över olika enheter | Den här mallen visar hur effektivt funktionen för analys över olika enheter sammanfogar besök och utbildar dig om mått och mätvärden som är specifika för just den här analysen. En rapportsvit som har analys över olika enheter krävs. Mer information finns i [Konfigurera analys över olika enheter](https://docs.adobe.com/content/help/sv-SE/analytics/components/cda/cda-setup.html). |
-| Nya kortkommandon i Workspace | <ul><li>Visa/dölj alla paneler: `alt + m`</li><li>Visa/dölj aktiv panel: `alt + ctrl + m`</li><li>Sök i vänster list: `ctrl + /`</li><li>Gå till nästa panel: `alt + Right Key`</li><li>Gå till föregående panel: `alt + Left Key`</li></ul>[Läs mer …](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) |
+| Nya kortkommandon i Workspace | <ul><li>Visa/dölj alla paneler: `alt + m`</li><li>Visa/dölj aktiv panel: `alt + ctrl + m`</li><li>Sök i vänster list: `ctrl + /`</li><li>Gå till nästa panel: `alt + Right Key`</li><li>Gå till föregående panel: `alt + Left Key`</li></ul>[Läs mer …](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) |
 | Andra förbättringar av Workspace | <ul><li>När en panel eller visualisering släpps i Workspace växlar den vänstra listen nu automatiskt till komponenter för ett smidigare arbetsflöde.</li><li>Mallkomponenter kan nu användas direkt (till exempel taggas, anges som favoriter eller godkännas).</li><li>Filtrerade mätvärdes- och segmentlistor har en plusknapp för att lägga till en ny komponent om du inte hittar det du behöver.</li></ul> |
 | Felsökare för Workspace | Felsökaren för Workspace har lagts till på menyn Hjälp för att göra det lättare att aktivera den för felsökning av begäranden. [Läs mer …](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md) |
 
@@ -131,9 +141,9 @@ Förbättringar som släpptes 18 juli 2019.
 
 | Förbättring | Beskrivning |
 |--- |--- |
-| Förbättrad kohortanalys | Nya [inställningar för kohortanalys](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.html) har lagts till: <ul><li>Visa endast procent</li><li>Avrunda procent till närmaste heltal</li><li>Visa en rad genomsnittlig procent</li></ul> |
+| Förbättrad kohortanalys | Nya [inställningar för kohortanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.html) har lagts till: <ul><li>Visa endast procent</li><li>Avrunda procent till närmaste heltal</li><li>Visa en rad genomsnittlig procent</li></ul> |
 | Visa objekt från de senaste 18 månaderna | I den vänstra listen kan användarna nu _visa objekt från de senaste 18 månaderna_. Tidigare var den perioden högst 6 månader. Detta gör det enklare att jämföra med sidor eller kampanjer från föregående år, upp till för 18 månader sedan. |
-| Ny Analysis Workspace-mall | Vi har lagt till en ny mall med namnet [Magento: marknadsföring och handel](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) i Analysis Workspace. Den är särskilt utformad för Magentos e-handelskunder, men alla återförsäljare kan använda den för att få unika insikter i e-handelsverksamheten. |
+| Ny Analysis Workspace-mall | Vi har lagt till en ny mall med namnet [Magento: marknadsföring och handel](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) i Analysis Workspace. Den är särskilt utformad för Magentos e-handelskunder, men alla återförsäljare kan använda den för att få unika insikter i e-handelsverksamheten. |
 
 ## Juni 2019
 
@@ -1160,7 +1170,7 @@ Det nya segmentet visas i gruppen [!UICONTROL Segments] på panelen [!UICONTROL 
 
 ## Lägg till nytt segment
 
-Släppzonen har lagts till så att du kan dra och släppa segment i ett projekt **[!UICONTROL Drop a Segment here]** .
+Släppzonen **[!UICONTROL Drop a Segment here]** har lagts till så att du kan dra och släppa segment i ett projekt.
 
 ![](assets/add-new-segment.png)
 
