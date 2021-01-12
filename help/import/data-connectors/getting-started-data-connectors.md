@@ -2,9 +2,9 @@
 description: Importera spårningsdata från tredjepartsprogram till Analytics.
 title: Komma igång med Analytics-dataanslutningar
 translation-type: tm+mt
-source-git-commit: 92bb5e7fe675ddd78da05ffb63cb5da0692e55bb
+source-git-commit: 6e4c40c7d6c1713f624a9562da3e49a3ee5d67de
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ En e-postintegrering kan till exempel vilja använda en e-postpartner för att d
 
 >[!IMPORTANT]
 >
->Vi kommer att avsluta livscykeln för Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+>Adobe Data Connector-tekniken upphör den 1 augusti 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 **Systemkrav**
 
@@ -45,12 +45,12 @@ Innan du konfigurerar en dataanslutningsintegration för din produkt gör du fö
 
 ## Lägg till en integrering
 
-Du måste ha ett aktuellt konto för att komma åt [!UICONTROL Data Connectors] landningssidan (konsolen). Vi rekommenderar också att du känner till Adobe Analytics.
+Du måste ha ett aktuellt konto för att komma åt startsidan för [!UICONTROL Data Connectors] (konsol). Vi rekommenderar också att du känner till Adobe Analytics.
 
 1. Logga in på Adobe Experience Cloud.
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Data Connectors]**.
 1. Klicka på **[!UICONTROL Add New]**.
-1. Gå igenom **[!UICONTROL Add Integration]** gränssnittet.
+1. Gå igenom gränssnittet **[!UICONTROL Add Integration]**.
 
    Beroende på den enskilda produktintegreringen kan du behöva ange specifik konfigurationsinformation som en del av integrationsprocessen.
 
@@ -58,7 +58,7 @@ Du måste ha ett aktuellt konto för att komma åt [!UICONTROL Data Connectors] 
 
 ## Data Connectors Console
 
-När du har aktiverat en integrering visas den på [!UICONTROL Data Connectors] sidan. Du kan visa information och göra konfigurationsändringar på konsolen. Ni kan visa aktiva integreringar och integreringar för alla rapportsviter i ert företag. Du kan också visa en aktivitetslogg, ange en integrering som en kontrollpanel, konfigurera en integrering och hitta hjälp.
+När du har aktiverat en integrering visas den på sidan [!UICONTROL Data Connectors]. Du kan visa information och göra konfigurationsändringar på konsolen. Ni kan visa aktiva integreringar och integreringar för alla rapportsviter i ert företag. Du kan också visa en aktivitetslogg, ange en integrering som en kontrollpanel, konfigurera en integrering och hitta hjälp.
 
 ![Data Connectors-konsol](assets/data-connectors-console.png)
 
@@ -72,7 +72,7 @@ Adobe Analytics skickar dessa i separata dagliga filer via data warehouse till e
 
 * [!UICONTROL Cart Abandonment]: Procentandelen besökare som lade till en artikel i kundvagnen men inte köpte den. Tekniskt sett är det ett beräknat mått som består av order dividerat med kundvagnstillägg.
 * [!UICONTROL Purchases]: Mottagar-ID:n (eller besökar-ID:n) som gjorde inköp baserat på meddelande-ID:t i en viss produkt.
-* [!UICONTROL Product Views]: Liknar [!UICONTROL Cart Abandonment]det här är också ett beräknat mått. Rapporten är [!UICONTROL Product Views] uppdelad efter beställningar eftersom kunderna visar intresse för produkten.
+* [!UICONTROL Product Views]: Liknar  [!UICONTROL Cart Abandonment]det här är också ett beräknat mått. Den rapporterar [!UICONTROL Product Views] dividerat med beställningar, eftersom kundernas intresse för produkten är stort.
 
 **Implementeringsexempel**
 
@@ -80,13 +80,13 @@ För att lyckas genomföra remarknadsföringssegmenten måste följande villkor 
 
 * Ett avtal om dataanslutningar har upprättats och din organisation har slutfört implementeringsfasen med en konsult från Adobe.
 * Motsvarande händelse utlöses samtidigt som produktvariabeln:
-   * Cart Abandonment: `scAdd` event
-   * Inköp: `purchase` event
-   * Produktvyer: `prodView` event
+   * Cart Abandonment: `scAdd`-händelse
+   * Inköp: `purchase`-händelse
+   * Produktvyer: `prodView`-händelse
 
 >[!NOTE]
 >
->Om produkten definieras utan någon tillhörande händelse utlöses `prodView` händelsen automatiskt.
+>Om produkten definieras utan en associerad händelse utlöses händelsen `prodView` automatiskt.
 >
 >Om ovanstående krav inte uppfylls rapporteras inte motsvarande segment för återmarknadsföring korrekt.
 
