@@ -2,9 +2,9 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 translation-type: tm+mt
-source-git-commit: 5eb3aba2032118036808edbdab5f411b5f327949
+source-git-commit: ab23222ffbfe2e98a4186f16db4942504d4d6fa4
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 10%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 I över ett decennium har Adobe Analytics siktat på att tillhandahålla den bästa lösningen för webb- och marknadsföringsanalys som uppfyller kundernas behov. I takt med att teknologi- och affärsbehoven utvecklas strävar vi efter att kontinuerligt leverera och uppfylla de högsta standarderna.  Tyvärr uppfyller de API:er som stöder den här integreringen inte längre dessa standarder och kan inte användas i den moderna Adobe Analytics-teknikinfrastrukturen.
 
-Från och med den 1 augusti 2021 avser Adobe att avbryta integreringen av dataanslutningar. Slutet av livscykeln är en del av en teknikprodukts livscykel och Adobe vill göra övergången så smidig som möjligt för våra kunder och partners. Många av dessa integreringar är tillgängliga via Adobe Exchange och kan fortsätta att användas.
+**Från och med den 1 augusti 2021** har Adobe för avsikt att upphöra med integreringar av dataanslutningar. Slutet av livscykeln är en del av en teknikprodukts livscykel och Adobe vill göra övergången så smidig som möjligt för våra kunder och partners. Många av dessa integreringar är tillgängliga via Adobe Exchange och kan fortsätta att användas.
 
 ## Varför upphör den här funktionen?
 
@@ -41,7 +41,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Använder | Migrerar till Adobe Exchange |
 | Appen | Finns på Adobe Exchange |
 | AppsFlyer | Migrerar till Adobe Exchange |
-| aprimo Enterprise Marketing Engagement |
+| aprimo Enterprise Marketing Engagement | Undertryckt |
 | Apteligent | Finns på Exchange |
 | BlueHornet eMarketing Suite | Undertryckt |
 | Gren | Migrerar till Exchange |
