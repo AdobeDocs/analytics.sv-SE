@@ -1,12 +1,12 @@
 ---
-description: Integreringen av Adobes dataanslutningar kombinerar kraften i appillustrationerna med den integrerade appbutiksanalysen och den direkta appspårningen i Adobe Analytics för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
+description: Integreringen av Adobe-dataanslutningar kombinerar kraften i AppFigures integrerade mobilappsanalyser och direkt appspårning i Adobe Analytics för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
 keywords: AppFigures
 title: appFigures Data Connector för Adobe Analytics
 uuid: b9bdb88c-2d7d-4fe4-aa05-da531224993f
 translation-type: tm+mt
-source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '236'
 ht-degree: 11%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 11%
 
 >[!IMPORTANT]
 >
->Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+>Adobe Data Connector-tekniken upphör den 1 augusti 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
-Integreringen av Adobes dataanslutningar kombinerar kraften i appillustrationerna med den integrerade appbutiksanalysen och den direkta appspårningen i Adobe Analytics för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
+Integreringen av Adobe-dataanslutningar kombinerar kraften i AppFigures integrerade mobilappsanalyser och direkt appspårning i Adobe Analytics för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
 
 I mobilapparnas värld delas den viktigaste prestandamätningen upp i två datauppsättningar:
 
@@ -31,7 +31,7 @@ Genom att kombinera dessa två datauppsättningar från Analytics kan ni få en 
 
 Integreringen ger följande viktiga fördelar:
 
-* Automatiserad daglig synkronisering av appbutikens mått och mätvärden mellan appFigures och Adobe Analytics.
+* Automatiserad daglig synkronisering av appbutikens dimensioner och mått mellan appFigures och Adobe Analytics.
 * Bakåtspårning av data i upp till 13 månader innan integreringen aktiveras. Kontakta appFigures om du har haft någon tidigare integrering med App Store-dataleverantören för att undvika överlappning.
 * Dedikerade variabler för appbutiksdata, så du behöver inte använda anpassade e-handelsvariabler och händelser.
 
