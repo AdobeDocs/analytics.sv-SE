@@ -3,9 +3,9 @@ description: 'null'
 title: Kampyle Data Connector för Adobe Analytics
 uuid: f7733c81-93f5-4c50-b83a-721a6fbd4e8e
 translation-type: tm+mt
-source-git-commit: 0fed9fd179feadae26a364a2ca79ac396251e8f6
+source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '262'
 ht-degree: 5%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->Vi upphör med Adobe Data Connector-tekniken i mitten av slutet av 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
+>Adobe Data Connector-tekniken upphör den 1 augusti 2021. [Läs mer …](/help/import/data-connectors/data-connectors-eol.md)
 
 Kampyle Data Connector for Adobe Analytics kombinerar Kampyles integrerade feedbacksystem och beteenderapporteringen i Adobe Analytics® för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
 
-Marknadsförare på webben inser i allt högre grad kundernas relevans när det gäller att bygga upp varumärken och få affärsresultat. Kampyle Data Connector för Adobe Analytics® ger feedback och dimensioner till besökare i Adobe Analytics. Det gör att ni kan analysera besökarnas beteende i samband med deras attityder och åsikter. På så sätt kan du optimera baserat på feedback och förbättra konverteringsgraden.
+Marknadsförare på webben inser i allt högre grad kundernas relevans när det gäller att bygga upp varumärken och få affärsresultat. Kampyle Data Connector for Adobe Analytics® ger Adobe Analytics feedback-statistik och dimensioner. Det gör att ni kan analysera besökarnas beteende i samband med deras attityder och åsikter. På så sätt kan du optimera baserat på feedback och förbättra konverteringsgraden.
 
 ## Krav för integrering{#integration-prerequisites}
 
 Krav att tänka på innan du kan aktivera dataanslutningen.
 
-### Krav för Adobe-kunder: {#section-d9c2e266931249e596de5f4406b5b6f0}
+### Krav för kunder i Adobe: {#section-d9c2e266931249e596de5f4406b5b6f0}
 
-* Du måste vara en befintlig Adobe Analytics-kund.
+* Du måste vara Adobe Analytics kund.
 * Du måste vara en administratörsanvändare.
 * Du måste ha 1 tillgänglig och aktiverad eVar-variabel i rapportsviten.
 * Du måste ha 3 tillgängliga och aktiverade anpassade händelser i rapportsviten (typ: räknare).
@@ -35,15 +35,15 @@ Krav att tänka på innan du kan aktivera dataanslutningen.
 ### Krav för Kampyle-kunder: {#section-4bbbca50e74d4f218414ae0cc535b8e9}
 
 * Du måste vara kund hos Kampyle för webben.
-* Du måste vara en Adobe Experience Cloud-administratörsanvändare med behörigheter för att kunna aktivera dataanslutningar.
+* Du måste vara en Adobe Experience Cloud-administratörsanvändare med behörighet för att kunna aktivera dataanslutningar.
 * Du måste kunna hämta Kampyle Private Key från gränssnittet för formulärhantering i Kampyle Feedback.
 
-## Hämta Kampyle Private Key{#retrieve-the-kampyle-private-key}
+## Hämta Kampyle-privat nyckel{#retrieve-the-kampyle-private-key}
 
 Steg för att hämta nyckeln i Kampyle-gränssnittet.
 
 1. Logga in på ditt Kampyle-konto på [https://www.kampyle.com/login](https://www.kampyle.com/login).
-1. I den vänstra navigeringen går du till **[!UICONTROL Feedback Form]** > **[!UICONTROL Feedback Form Customization]**.
+1. Gå till **[!UICONTROL Feedback Form]** > **[!UICONTROL Feedback Form Customization]** i den vänstra navigeringen.
 
    ![](assets/retrieve_key1.png)
 
