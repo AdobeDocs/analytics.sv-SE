@@ -2,7 +2,7 @@
 title: Fokuserad granskning (efter varje webbplatsrelease)
 description: Följ de här stegen för att se till att implementeringen inte är felfri och att den överensstämmer med dina nyckeltal.
 translation-type: tm+mt
-source-git-commit: ad7274dbed3b85ca24cd92bf3a0d36d1f2e3597b
+source-git-commit: 8c4ea92523f5e969b9ffe462ea6fb4c21c176141
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -24,7 +24,8 @@ Kom ihåg att koduppdateringar kan få oönskade konsekvenser. Du vill kontrolle
 
 * Skapa instrumentpaneler om du vill se timvisa trender över viktiga mått och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html#analysis-workspace) för varje mätvärde). Övervaka dem sedan i en eller två dagar för att säkerställa att ni får de data ni förväntar er och att data är korrekta. Håll utkik efter inflammationspunkter. Var beredd på att åtgärda allvarliga problem omedelbart. Om du hittar avvikelser kan du ta reda på varför i datalagret, tagghanteringsreglerna och bearbetningsreglerna.
 * Kör om [Analytics Health Dashboard](https://assets.adobe.com/public/9549dbe7-765a-4899-77b8-85cbba1a4252) för att övervaka breda trender för KPI-mått och -variabler.
-   *Mer information om hur du ser till att dina mätvärden och variabler fungerar som de ska  [finns i ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608) tipsen från Adobe Analytics Champion Sarah Owen.*
+
+*Mer information om hur du ser till att dina mätvärden och variabler fungerar som de ska  [finns i ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608) tipsen från Adobe Analytics Champion Sarah Owen.*
 
 ## 3. Granska noggrant data från den uppdaterade delen av din webbplats.
 
