@@ -5,9 +5,9 @@ user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det ledande verktyget för analys och visualisering av analyser, samt verktyg som Report Builder och Activity Map.
 translation-type: tm+mt
-source-git-commit: f6d8c52845f6949954f5b961d75edfeeeef2e151
+source-git-commit: 5b130de23d7826a266f34ed1830540c8c0865560
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1099'
 ht-degree: 90%
 
 ---
@@ -135,7 +135,6 @@ ht-degree: 90%
       + [Installera Report Builder](report-builder/setup/t-install-arb.md)
       + [Uppgradera Report Builder](report-builder/setup/upgrade-arb.md)
       + [Inloggning i Report Builder](report-builder/setup/login.md)
-      + [Logga in på Report Builder](report-builder/setup/t-loggin-in-to-reportbuilder.md)
       + [Avinstallera Report Builder](report-builder/setup/t-uninstall-arb.md)
       + [Anropa Report Builder-funktioner från Microsoft Excel-funktioner](report-builder/setup/invoke-arb-excel-function.md)
    + [Verktygsfältet i Report Builder](report-builder/reportbuilder-toolbar.md)
@@ -339,7 +338,7 @@ ht-degree: 90%
    + [Tid](ad-hoc-analysis/c-time.md)
 + Labs {#tech-previews}
    + [Labs – översikt](tech-previews/overview.md)
-+ Adobe Analytics dashboards {#mobapp}
++ Adobe Analytics-instrumentpaneler {#mobapp}
    + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Insamlingshandsbok](mobile-app/curator.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
