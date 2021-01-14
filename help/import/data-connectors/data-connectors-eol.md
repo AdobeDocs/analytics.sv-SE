@@ -2,10 +2,10 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 translation-type: tm+mt
-source-git-commit: ab23222ffbfe2e98a4186f16db4942504d4d6fa4
+source-git-commit: 58127bc9482ae4889a295e6c11112d3842510f4d
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 10%
+source-wordcount: '536'
+ht-degree: 11%
 
 ---
 
@@ -34,68 +34,68 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 
 | Partner | Status |
 | --- | --- |
-| Acxiom | Finns på Adobe Exchange |
-| Anpassa | Finns på Adobe Exchange |
+| Acxiom | Undertryckt |
+| Anpassa | Undertryckt |
 | Justera | Migrerar till Adobe Exchange |
 | Adobe Campaign | Migrerar till Adobe Exchange |
 | Använder | Migrerar till Adobe Exchange |
-| Appen | Finns på Adobe Exchange |
+| Appen | Undertryckt |
 | AppsFlyer | Migrerar till Adobe Exchange |
 | aprimo Enterprise Marketing Engagement | Undertryckt |
-| Apteligent | Finns på Exchange |
+| Apteligent | Undertryckt |
 | BlueHornet eMarketing Suite | Undertryckt |
 | Gren | Migrerar till Exchange |
-| BrightEdge 2.0 | Finns på Exchange |
+| BrightEdge 2.0 | Undertryckt |
 | Bronto Software | Undertryckt |
 | CheetahMail av Experian | Migrerar till Exchange |
-| ClickTale | Finns på Exchange |
+| ClickTale | Undertryckt |
 | Klickbar certifikatutfärdare | Undertryckt |
-| Konduktor 2.0 | Finns på Exchange |
-| ContactLab 2.0 (Contact Send Connector) | Finns på Exchange |
-| Coradiant TrueSight | Finns på Exchange |
-| D&amp;B Visitor Intelligence | Finns på Exchange |
+| Konduktor 2.0 | Undertryckt |
+| ContactLab 2.0 (Contact Send Connector) | Undertryckt |
+| Coradiant TrueSight | Undertryckt |
+| D&amp;B Visitor Intelligence | Undertryckt |
 | Datran Media | Undertryckt |
-| Decibel Insight | Finns på Exchange |
-| Decipher | Finns på Exchange |
+| Decibel Insight | Undertryckt |
+| Decipher | Undertryckt |
 | Delivra | Undertryckt |
-| Demandbase CA | Finns på Exchange |
+| Demandbase CA | Undertryckt |
 | Demandbase v3 | Undertryckt |
-| DialogTech | Finns på Exchange |
+| DialogTech | Undertryckt |
 | DoubleClick for Advertisers (DFA) | Undertryckt (Mer info här **Länk till DFA EOL-SIDA**) |
 | DREAM | Undertryckt |
 | DREAMmail 2.0 | Undertryckt |
 | Dynamisk signal (Nital Vora) | Migrerar till Exchange |
 | eDialog Precision Central | Undertryckt |
 | eC-messenger | Undertryckt |
-| Emailvision Campaign Commander | Finns på Exchange |
+| Emailvision Campaign Commander | Undertryckt |
 | emarsys xpress | Undertryckt |
 | Epsilon Harmony | Migrerar till Exchange |
-| AllaSociala för Adobe Analytics | Finns på Exchange |
+| AllaSociala för Adobe Analytics | Undertryckt |
 | Fiksu | Undertryckt |
 | Foresee (v2.0) | Undertryckt |
-| ForeSee-feedback | Finns på Exchange |
-| Gigya | Finns på Exchange |
+| ForeSee-feedback | Undertryckt |
+| Gigya | Undertryckt |
 | hybris | Undertryckt |
 | Kampyle (nu Medallia) Feedback Analytics (1.1) | Undertryckt |
 | Listrak | Migrerar till Exchange |
 | Lyris HQ | Undertryckt |
-| MaritzCX (V 2.0) | Finns på Exchange |
-| Merkle | Finns på Exchange |
+| MaritzCX (V 2.0) | Undertryckt |
+| Merkle | Undertryckt |
 | Oracle Eloqua-integrering | Undertryckt |
 | optivo broadmail (Episerver) | Migrerar till Exchange |
 | Qualtrics v2 | Migrerar till Exchange |
 | Responsys 2.0 | Undertryckt |
-| Selligent | Finns på Exchange |
-| seoClarity 2.0 | Finns på Exchange |
+| Selligent | Undertryckt |
+| seoClarity 2.0 | Undertryckt |
 | Silverpop Engage (v2.0) | Undertryckt |
-| Sizmek | Finns på Exchange |
-| SpotEffects | Finns på Exchange |
+| Sizmek | Undertryckt |
+| SpotEffects | Undertryckt |
 | StrongMail Systems, Inc | Undertryckt |
 | Syngeri!360 | Undertryckt |
 | ThinData EMS | Undertryckt |
-| TUNE | Finns på Exchange |
+| TUNE | Undertryckt |
 | Stads flygbolag | Undertryckt |
-| Verktyget UserZoom Survey | Finns på Exchange |
-| WhatCounts Email | Finns på Exchange |
+| Verktyget UserZoom Survey | Undertryckt |
+| WhatCounts Email | Undertryckt |
 | wywy | Undertryckt |
-| Yesmail Enterprise | Finns på Exchange |
+| Yesmail Enterprise | Undertryckt |
