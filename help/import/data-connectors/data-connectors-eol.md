@@ -2,9 +2,9 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 translation-type: tm+mt
-source-git-commit: 58127bc9482ae4889a295e6c11112d3842510f4d
+source-git-commit: 90ff77f548149333da34d19e3da672cc2dccf383
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '528'
 ht-degree: 11%
 
 ---
@@ -61,7 +61,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Demandbase CA | Undertryckt |
 | Demandbase v3 | Undertryckt |
 | DialogTech | Undertryckt |
-| DoubleClick for Advertisers (DFA) | Undertryckt (Mer info här **Länk till DFA EOL-SIDA**) |
+| DoubleClick for Advertisers (DFA) | Undertryckt |
 | DREAM | Undertryckt |
 | DREAMmail 2.0 | Undertryckt |
 | Dynamisk signal (Nital Vora) | Migrerar till Exchange |
