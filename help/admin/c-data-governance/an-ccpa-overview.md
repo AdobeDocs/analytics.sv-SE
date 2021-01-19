@@ -3,7 +3,7 @@ description: Det här dokumentet beskriver vad du måste göra i Adobe Analytics
 title: Adobe Analytics och CCPA
 uuid: 16fd5af8-9148-4e09-ad54-9e3cdd2b3c6d
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 8315770adbe49474dcf8b74345a45d88b05d35ce
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 100%
@@ -38,7 +38,7 @@ Bekanta dig med [hur Adobe Analytics hanterar GDPR](https://www.adobe.com/data-a
 Adobe inser att du är mest bekant med anpassade data i dina rapportsviter och vi ger dig möjlighet att definiera inställningar och preferenser för datastyrning.
 Adobe Analytics tillhandahåller före detta ändamål ett användargränssnitt för datastyrning som du i egenskap av personuppgiftsansvariga kan använda för att ange [sekretessetiketter](/help/admin/c-data-governance/gdpr-labels.md#data-governance-labels) i dina Analytics-rapportsviter och alla dimensioner och metriker i dessa rapportsviter. Du kan identifiera de kolumner i datauppsättningen som innehåller direkt identifierbara data eller indirekt identifierbara data, så att du kan skicka dina begäranden om åtkomst och borttagning för att hantera dessa data. För varje begäran kommer etiketterna som definieras i användargränssnittet för Analytics Data Governance att respekteras för den specifika identifierare som motsvarar den begäran.
 
-Mer information om hur du ställer in etiketterna finns i [Data i etikettrapportsvit](/help//admin/c-data-governance/gdpr-setup-reportsuite.md).
+Mer information om hur du ställer in etiketterna finns i [Data i etikettrapportsvit](/help/admin/c-data-governance/gdpr-setup-reportsuite.md).
 
 ## Förutsättningar
 
