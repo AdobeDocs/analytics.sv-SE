@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Visar exempel på hur du kan etikettera data för träffdata, åtkomstbegäranden och borttagningsbegäranden
 title: Exempel på etiketter
 uuid: a9a5b937-dbde-4f0f-a171-005ef4c79df9
 translation-type: tm+mt
-source-git-commit: b3e8f77bfa7c48fc82e5ebd5bbe66511ea82c9f4
+source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 99%
+source-wordcount: '815'
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Om jag skickar en åtkomstbegäran innehåller sammanfattningsfilen de värden s
 |--- |--- |--- |---|---|---|---|---|
 | **Namnutrymme/ID** | **expandIDs** |  | **MyProp1** | **Besökar-ID** | **MyEvar1** | **MyEvar2** | **MyEvar3** |
 | AAID=77 | falskt | enhet | Variabeln finns inte | 77 | Variabeln finns inte | M, P | X, W |
-| AAID=77 | sant | enhet | Variabeln finns inte | 77 | Variabeln finns inte | M, P | X, W |
+| AAID=77 | sant | enhet | Variabeln finns inte | 77 | Variabeln finns inte | M, P | X, B |
 | användare=Mary | falskt | person | Mary | 77, 88, 99 | A, B, C | M, N, O | X, Y, Z |
 | användare=Mary | sant | person | Mary | 77, 88, 99 | A, B, C | M, N, O | X, Y, Z |
 | användare=Mary | sant | enhet | ej närvarande | 77, 88 | ej närvarande | N, P | U, W |
@@ -66,7 +66,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 | John | 88 | E | N | U |
 | John | 44 | F | Q | V |
 | John | 55 | G | R | X |
-| Alice | 66 | A | N | W |
+| Alice | 66 | A | N | B |
 
 >[!NOTE]
 >
@@ -74,15 +74,15 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt | användare=Mary<br>expandIDs=falskt |
 |--- |---|---|---|---|
-| **MyProp1** | **AAID** | **MyEvar1** | **MyEvar2** | **MyEvar3** |
+| **MyProp1** | **STÖD** | **MyEvar1** | **MyEvar2** | **MyEvar3** |
 | Sekretess-0523 | 77 | Sekretess-1866 | Sekretess-3681 | X |
 | Sekretess-0523 | 88 | Sekretess-2178 | Sekretess-1975 | Y |
 | Sekretess-0523 | 99 | Sekretess-9045 | Sekretess-2864 | Z |
-| John | 77 | D | P | W |
+| John | 77 | D | P | B |
 | John | 88 | E | N | U |
 | John | 44 | F | Q | V |
 | John | 55 | G | R | X |
-| Alice | 66 | A | N | W |
+| Alice | 66 | A | N | B |
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant | användare=Mary<br>expandIDs=sant |
 |--- |---|---|---|---|
-| **MyProp1** | **AAID** | **MyEvar1** | **MyEvar2** | **MyEvar3** |
+| **MyProp1** | **STÖD** | **MyEvar1** | **MyEvar2** | **MyEvar3** |
 | Sekretess-5782 | 09 | Sekretess-0859 | Sekretess-8183 | Sekretess-9152 |
 | Sekretess-5782 | 16 | Sekretess-6104 | Sekretess-2911 | Sekretess-6821 |
 | Sekretess-5782 | 83 | Sekretess-2714 | Sekretess-0219 | Sekretess-4395 |
@@ -98,7 +98,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 | John | 16 | E | Sekretess-2911 | Sekretess-2930 |
 | John | 44 | F | Q | V |
 | John | 55 | G | R | X |
-| Alice | 66 | A | N | W |
+| Alice | 66 | A | N | B |
 
 Observera följande:
 
