@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 translation-type: tm+mt
-source-git-commit: a46b68c7e4ea82b31ed400bf3e6180a7358bb3b5
+source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -37,31 +37,31 @@ Adobe behandlar tidsstämplade träffar som om de togs emot vid tidpunkten för 
 
 ## Hur skiljer sig CDA från anpassade besökar-ID:n?
 
-Att använda ett anpassat besökar-ID är en äldre metod för att [ansluta användare till olika enheter](/help/implement/js/xdevice-visid/xdevice-connecting.md). Med ett anpassat besökar-ID använder du variabeln för att explicit ange det ID som används för besökarlogik. [`visitorID`](/help/implement/vars/config-vars/visitorid.md) Variabeln åsidosätter alla cookie-baserade ID:n som finns. `visitorID`
+Att använda ett anpassat besökar-ID är en äldre metod för att [ansluta användare mellan enheter](/help/implement/js/xdevice-visid/xdevice-connecting.md). Med ett anpassat besökar-ID använder du variabeln [`visitorID`](/help/implement/vars/config-vars/visitorid.md) för att explicit ange det ID som används för besökarlogik. Variabeln `visitorID` åsidosätter alla cookie-baserade ID:n som finns.
 
-Anpassade besökar-ID:n har flera biverkningar som CDA överträffar eller minimerar. Metoden med anpassat besökar-ID har till exempel inga [repriser](replay.md) . Om en användare autentiseras under ett besök är den första delen av besöket kopplad till ett annat besöks-ID än den senare delen av besöket. De separata besökar-ID:n leder till besöks- och besöksinflammation. CDA omregistrerar historiska data så att oautentiserade träffar tillhör rätt person.
+Anpassade besökar-ID:n har flera biverkningar som CDA överträffar eller minimerar. Metoden med anpassat besökar-ID har till exempel inga [replay](replay.md)-funktioner. Om en användare autentiseras under ett besök är den första delen av besöket kopplad till ett annat besöks-ID än den senare delen av besöket. De separata besökar-ID:n leder till besöks- och besöksinflammation. CDA omregistrerar historiska data så att oautentiserade träffar tillhör rätt person.
 
 ## Kan jag uppgradera från anpassat besökar-ID till CDA?
 
-Kunder som redan använder ett anpassat besökar-ID kan uppgradera till CDA utan implementeringsändringar. Variabeln `visitorID` används fortfarande i källrapportsviten. CDA ignorerar dock variabeln `visitorID` i den virtuella rapportsviten om en användare autentiserar.
+Kunder som redan använder ett anpassat besökar-ID kan uppgradera till CDA utan implementeringsändringar. Variabeln `visitorID` används fortfarande i källrapportsviten. CDA ignorerar emellertid variabeln `visitorID` i den virtuella rapportsviten om en användare autentiserar.
 
 ## Hur hanterar enhetsdiagrammet delade enheter?
 
 I vissa situationer är det möjligt att flera personer loggar in från samma enhet. Exempel är en delad enhet hemma, delade datorer i ett bibliotek eller en kioskdator i ett butiksuttag.
 
-* **Om du använder ett enhetsdiagram**&#x200B;är möjligheten att hantera delade enheter begränsad. Enhetsdiagrammet använder en algoritm för att fastställa ägarskap för ett kluster och kan ändras varje gång klustret publiceras. Användare av den delade enheten är beroende av vilket kluster de tillhör.
-* **Om du använder fältbaserad sammanfogning**&#x200B;åsidosätter det utkast eller den eVar du väljer för att hjälpa till att identifiera inloggade användare andra identifierare. Delade enheter betraktas som separata personer, även om de kommer från samma enhet.
+* **Om du använder ett enhetsdiagram** är möjligheten att hantera delade enheter begränsad. Enhetsdiagrammet använder en algoritm för att fastställa ägarskap för ett kluster och kan ändras varje gång klustret publiceras. Användare av den delade enheten är beroende av vilket kluster de tillhör.
+* **Om du använder fältbaserad sammanfogning** åsidosätter det utkast eller den eVar du väljer för att hjälpa till att identifiera inloggade användare andra identifierare. Delade enheter betraktas som separata personer, även om de kommer från samma enhet.
 
 ## Hur hanterar CDA situationer där en person har MÅNGA enheter/ECID:n?
 
 I vissa fall kan en enskild användare associera med ett stort antal ECID. Detta kan inträffa om användaren använder många webbläsare eller appar och kan förvärras om de ofta tar bort cookies eller använder webbläsarens privata eller inkodade webbläsarläge.
 
 * **Om du använder ett enhetsdiagram**, anger CDA att antalet ECID som kopplas till ett visst användar-ID ska vara 50. Om ett användar-ID är kopplat till för många ECID:n antar enhetsdiagrammet att användar-ID:t är ogiltigt och tar bort klustret som är kopplat till det användar-ID:t. Användar-ID:t läggs sedan till i en blockeringslista för att förhindra att det läggs till i kluster i framtiden. Resultatet vid rapportering är att användar-ID inte sammanfogas mellan olika enheter.
-* **Om du använder fältbaserad sammanfogning**&#x200B;är antalet enheter irrelevanta för det propp/den eVar som du väljer för att hjälpa till att identifiera inloggade användare. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar CDA:s möjlighet att sammanfoga enheter.
+* **Om du använder fältbaserad sammanfogning** är antalet enheter irrelevanta för det propp/den eVar som du väljer för att hjälpa till att identifiera inloggade användare. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar CDA:s möjlighet att sammanfoga enheter.
 
 ## Vad är skillnaden mellan personmåttet i CDA och det unika besökarmåttet utanför CDA?
 
-Mätvärdet för [Personer](/help/components/metrics/people.md) liknar det för [unika besökare](/help/components/metrics/unique-visitors.md) i och med att det rapporterar antalet unika individer. Men när ni använder enhetsövergripande analys kombineras unika besökare när de annars registreras som två separata unika besökare utanför CDA. Måttet Personer ersätter måttet Unika besökare när Analytics för olika enheter är aktiverat.
+Måttet [Personer](/help/components/metrics/people.md) liknar måttet [Unika besökare](/help/components/metrics/unique-visitors.md) eftersom det rapporterar om antalet unika personer. Men när ni använder enhetsövergripande analys kombineras unika besökare när de annars registreras som två separata unika besökare utanför CDA. Måttet Personer ersätter måttet Unika besökare när Enhetsanalys är aktiverat. Det finns ett nytt mätvärde, [Unika enheter](/help/components/metrics/unique-devices.md), som är ungefär lika med Unika besökare utanför Enhetsanalys.
 
 ## Vad är skillnaden mellan måttet &#39;Unika enheter&#39; i CDA och mätvärdet &#39;Unika besökare&#39; utanför CDA?
 
@@ -71,7 +71,7 @@ Dessa två mätvärden är ungefär likvärdiga.
 
 Ja. Analysis Workspace använder 2.0-API:t för att begära data från Adobe-servrar, och du kan visa API-anrop som Adobe använder för att skapa egna rapporter:
 
-1. När du är inloggad på Analysis Workspace går du till [!UICONTROL Help] > [!UICONTROL Enable debugger].
+1. Gå till [!UICONTROL Help] > [!UICONTROL Enable debugger] när du är inloggad på Analysis Workspace.
 2. Klicka på felsökningsikonen i den önskade panelen och välj önskad visualisering och tid för begäran.
 3. Leta reda på JSON-begäran som du kan använda i API-anropet till Adobe.
 
@@ -81,10 +81,10 @@ Ja. Om en individ skickar träffar från två separata enheter i din virtuella r
 
 ## Vilket är det ultimata besökar-ID som CDA använder? Kan jag exportera från Adobe Analytics?
 
-* **Om du använder ett enhetsdiagram**&#x200B;är ett anpassat ID baserat på deras kluster den primära identifieraren.
-* **Om du använder fältbaserad sammanfogning**&#x200B;är ett anpassat ID baserat på det utkast/den eVar du väljer den primära identifieraren.
+* **Om du använder ett enhetsdiagram** är ett anpassat ID baserat på deras kluster den primära identifieraren.
+* **Om du använder fältbaserad sammanfogning** är ett anpassat ID baserat på det utkast/den eVar du väljer den primära identifieraren.
 
-Båda dessa identifierare beräknas av Adobe vid den tidpunkt då rapporten körs, vilket också kallas [rapporttidsbearbetning](../vrs/vrs-report-time-processing.md). Bearbetningen under rapporttiden innebär att den inte är kompatibel med Data warehouse, dataflöden eller andra exportfunktioner som Adobe erbjuder.
+Båda dessa identifierare beräknas av Adobe när rapporten körs, och kallas även [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md). Bearbetningen under rapporttiden innebär att den inte är kompatibel med Data warehouse, dataflöden eller andra exportfunktioner som Adobe erbjuder.
 
 ## Hur kan jag gå från enhetsgrafen till fältbaserad sammanfogning, eller vice versa?
 
@@ -92,4 +92,4 @@ Om du vill byta CDA-identifieringsmetod ska du prata med din organisations Accou
 
 ## Hur hanterar Adobe unika gränser för en eVar som används vid fältbaserad sammanfogning?
 
-CDA hämtar dimensionsobjekt för eVar innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot har försökt använda detta utkast/eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(Låg trafik)](/help/technotes/low-traffic.md) .
+CDA hämtar dimensionsobjekt för eVar innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot försökte använda det proffset/eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(Låg trafik)](/help/technotes/low-traffic.md).
