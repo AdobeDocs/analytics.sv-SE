@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Arbetsflöde för Ad Hoc Analysis Project Converter
 title: Konvertera projekt i Ad Hoc Analysis
 uuid: 20bd9974-209e-457c-9e52-d50f90078af6
 translation-type: tm+mt
-source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
+source-git-commit: f2fe11eeafc7b188ff7a886847b33a82ab80e47a
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '278'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 6%
 >
 >Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
 
-## Konvertera projekt {#topic_5A55F73488704C5D8E42CDD04B5984DE}
+## Konvertera dina projekt {#topic_5A55F73488704C5D8E42CDD04B5984DE}
 
 Observera följande innan du konverterar dina projekt:
 
@@ -38,12 +38,12 @@ Det finns två alternativ för att konvertera Ad Hoc Analysis-projekt:
 
    ![](assets/aha2aw_convert.png)
 
-1. I **[!UICONTROL Convert Projects to Analysis Workspace]** dialogrutan väljer du det projekt som ska konverteras eller trycker på + för att markera hela listan.
+1. I dialogrutan **[!UICONTROL Convert Projects to Analysis Workspace]** väljer du det projekt som ska konverteras eller trycker på + för att markera hela listan.
 
    ![](assets/aha2aw_projects.png)
 
 1. Klicka på **[!UICONTROL Convert]**.
-1. I en lista visas [!UICONTROL Conversion Summary] nu alla projekt som har konverterats, tillsammans med statuskolumner som anger att konverteringen lyckades eller misslyckades, tillsammans med felkoden. Kontakta Adobe kundtjänst för ytterligare diagnos med &quot;`Error-Id: <Error-Code>`&quot;.
+1. I [!UICONTROL Conversion Summary] visas nu alla projekt som har konverterats, tillsammans med statuskolumner som anger Slutfört eller Fel att konvertera, tillsammans med felkoden. Kontakta Adobe Client Care för ytterligare diagnos med &quot;`Error-Id: <Error-Code>`&quot;.
 
    ![](assets/export_summary.png)
 
@@ -52,4 +52,4 @@ Det finns två alternativ för att konvertera Ad Hoc Analysis-projekt:
 1. Öppna ett projekt som du vill konvertera i Ad Hoc Analysis.
 1. Klicka på **[!UICONTROL Convert current project to Analysis Workspace.]** ![](assets/export_current.png)
 
-1. I en lista visas [!UICONTROL Conversion Summary] nu alla projekt som har konverterats, tillsammans med statuskolumner som anger att konverteringen lyckades eller misslyckades, tillsammans med felkoden. Kontakta Adobe kundtjänst för ytterligare diagnos med &quot;`Error-Id: <Error-Code>`&quot;.
+1. I [!UICONTROL Conversion Summary] visas nu alla projekt som har konverterats, tillsammans med statuskolumner som anger Slutfört eller Fel att konvertera, tillsammans med felkoden. Kontakta Adobe Client Care för ytterligare diagnos med &quot;`Error-Id: <Error-Code>`&quot;.
