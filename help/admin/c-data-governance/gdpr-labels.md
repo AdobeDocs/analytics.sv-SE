@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
 uuid: a37a1278-7a0d-4e14-ae35-43bc460e7d12
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
 workflow-type: tm+mt
-source-wordcount: '3634'
-ht-degree: 100%
+source-wordcount: '3642'
+ht-degree: 99%
 
 ---
 
@@ -276,7 +276,7 @@ Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariable
   <tr> 
    <td colname="col1"> <p>Klassificeringar </p> </td> 
    <td colname="col2"> <p>I1/I2, S1/S2 </p> <p>ACC-ALL, ACC-PERSON, </p> </td> 
-   <td colname="col3"> <p>ID-DEVICE, ID-PERSON </p> <p>DEL-DEVICE, DEL-PERSON </p> </td> 
+   <td colname="col3"> <p>ID-ENHET, ID-PERSON </p> <p>DEL-DEVICE, DEL-PERSON </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 
@@ -290,7 +290,7 @@ Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariable
   <tr> 
    <td colname="col1"> <p>De flesta andra variablerna </p> <p><i>(Se tabellen nedan för undantag)</i> </p> </td> 
    <td colname="col2"> <p>ACC-ALL, ACC-PERSON </p> </td> 
-   <td colname="col3"> <p>I1/I2, S1/S2 </p> <p>ID-DEVICE, ID-PERSON </p> <p>DEL-DEVICE, DEL-PERSON </p> </td> 
+   <td colname="col3"> <p>I1/I2, S1/S2 </p> <p>ID-ENHET, ID-PERSON </p> <p>DEL-DEVICE, DEL-PERSON </p> </td> 
   </tr> 
  </tbody> 
 </table>
