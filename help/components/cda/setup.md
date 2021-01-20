@@ -1,8 +1,8 @@
 ---
-title: Ställ in enhetsövergripande analys
+title: Konfigurera enhetsövergripande analys
 description: Konfigurera en virtuell rapportsvit för att aktivera CDA.
 translation-type: tm+mt
-source-git-commit: da4f4d843e02865c006df2190d19a85306dbf2d0
+source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Ställ in enhetsövergripande analys
+# Konfigurera enhetsövergripande analys
 
 När alla förutsättningar är uppfyllda gör du följande för att aktivera enhetsövergripande analys. Du måste tillhöra en produktprofiladministratörsgrupp eller ha administratörsbehörighet i Adobe Analytics för att kunna följa dessa steg.
 
