@@ -2,7 +2,7 @@
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i enhetsövergripande analys
 translation-type: tm+mt
-source-git-commit: 954927359420cfdb3d0e908758fc36464e15fee5
+source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Så här spelar du upp
 
-Med Analytics för olika enheter kan ni överföra data i en virtuell rapportserie på två olika sätt:
+Enhetsövergripande analys gör att data kan skickas vidare i en virtuell rapportserie:
 
 * **Livestning**: CDA försöker sy ihop varje träff när den kommer in. Nya Net-enheter i rapportsviten som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
 * **Spela upp**: CDA&quot;spelar upp&quot; data ungefär en gång i veckan baserat på unika identifierare som man har lärt sig. I det här skedet sammanfogas nya enheter i rapportsviten.
 
 ## Exempeltabell
 
-Följande tabeller visar hur både CDA-metoder ([fältbaserad sammanfogning](field-based-stitching.md) och [enhetsdiagram](device-graph.md)) beräknar antalet unika personer:
+Följande tabeller visar hur både CDA-metoder ([Fältbaserad sammanfogning](field-based-stitching.md) och [Enhetsdiagram](device-graph.md)) beräknar antalet unika personer:
 
 ### Live-syn
 
@@ -40,14 +40,14 @@ Så snart en träff har samlats försöker CDA sy ihop den till kända enheter. 
 
 Både oautentiserade och autentiserade träffar på nya enheter räknas som separata personer (tillfälligt).
 
-* **Om du använder enhetsdiagrammet** sammanfogas oautentiserade träffar på identifierade enheter när ett kluster publiceras av enhetsdiagrammet. Klusterpublicering tar allt från tre timmar till två veckor.
+* **Om du använder enhetsdiagrammet kommer** oautentiserade träffar på identifierade enheter att sysas i realtid när ett kluster publiceras av enhetsdiagrammet. Klusterpublicering tar allt från tre timmar till två veckor.
 
    En tredje kumulativ person läggs också till när ett kluster publiceras. Den här tredje personen representerar själva klustret, förutom de enskilda enheterna. Den tredje &quot;personen&quot; finns kvar tills data spelas upp.
 
    Attribuering fungerar inte på alla enheter förrän ett kluster har publicerats, och till och med så har det bara sytts live från den punkten framåt. I exemplet ovan sammanfogas inga träffar på enheter ännu. Enhetsövergripande attribuering i befintliga träffar fungerar inte förrän du har repeterat sammanfogningen.
-* **Om du använder fältbaserad sammanfogning** kommer oautentiserade träffar på identifierade enheter att sammanfogas från den punkten och framåt.
+* **Om du använder fältbaserad sammanfogning kommer** oautentiserade träffar på identifierade enheter att sammanfogas från den punkten och framåt.
 
-   Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla träffar utom träffar 1 och 3 sammanfogade (alla använder `Bob` identifieraren). Attribution works on hits 1 and 3 after replay stitching.
+   Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla träffar utom träffar 1 och 3 sammansydda (de använder alla identifieraren `Bob`). Attribution works on hits 1 and 3 after replay stitching.
 
 ### Spela upp sammanfogning
 
@@ -68,6 +68,6 @@ CDA beräknar historiska data ungefär en gång i veckan baserat på enheter som
 
 ## Omslag
 
-* **Om du använder ett enhetsdiagram sammanfogas data** när ett kluster publiceras (vanligtvis 3 timmar till 2 veckor).
-* **Om du använder fältbaserad sammanfogning** sammanfogar data som är yngre än en vecka omedelbart kända enheter, men sammanfogar inte omedelbart nya eller okända enheter.
+* **Om du använder ett enhetsdiagram sammanfogas** data när ett kluster publiceras (vanligtvis 3 timmar till 2 veckor).
+* **Om du använder fältbaserad sammanfogning sammanfogar** data som är yngre än en vecka omedelbart kända enheter, men sammanfogar inte omedelbart nya eller okända enheter.
 * Data spelas upp en gång i veckan och ändrar historiska data i den virtuella rapportsviten baserat på enheter som den har lärt sig identifiera.
