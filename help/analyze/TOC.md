@@ -5,9 +5,9 @@ user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det ledande verktyget för analys och visualisering av analyser, samt verktyg som Report Builder och Activity Map.
 translation-type: tm+mt
-source-git-commit: 5b130de23d7826a266f34ed1830540c8c0865560
+source-git-commit: 67108d1d51a75ae6f015b8808254cd88b6308fbf
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1104'
 ht-degree: 90%
 
 ---
@@ -135,6 +135,7 @@ ht-degree: 90%
       + [Installera Report Builder](report-builder/setup/t-install-arb.md)
       + [Uppgradera Report Builder](report-builder/setup/upgrade-arb.md)
       + [Inloggning i Report Builder](report-builder/setup/login.md)
+      + [Logga in på Report Builder](report-builder/setup/t-loggin-in-to-reportbuilder.md)
       + [Avinstallera Report Builder](report-builder/setup/t-uninstall-arb.md)
       + [Anropa Report Builder-funktioner från Microsoft Excel-funktioner](report-builder/setup/invoke-arb-excel-function.md)
    + [Verktygsfältet i Report Builder](report-builder/reportbuilder-toolbar.md)
