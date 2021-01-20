@@ -1,9 +1,12 @@
 ---
-description: 'null'
+description: Här beskrivs stegen för hur du aktiverar din Adobe Analytics-implementering för att ge stöd åt de registrerade för åtkomst till och radering av data.
 title: Arbetsflöde för sekretess
 uuid: f24e8be3-8b5c-409b-ad6b-770198ae2549
-translation-type: ht
-source-git-commit: dcb07f8717337da904b252864eb7f800f1728231
+translation-type: tm+mt
+source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 94%
 
 ---
 
