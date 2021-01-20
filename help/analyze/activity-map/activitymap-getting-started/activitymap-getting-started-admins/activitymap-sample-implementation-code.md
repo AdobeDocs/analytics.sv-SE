@@ -1,10 +1,13 @@
 ---
-description: 'null'
+description: Exempel på hur AppMeasurement-biblioteket och modulen Activity Map kombineras
 title: Exempel på implementeringskod
 topic: Activity map
 uuid: 73879252-5ce1-42a5-ad0e-dcee73244b28
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: f2fe11eeafc7b188ff7a886847b33a82ab80e47a
+workflow-type: tm+mt
+source-wordcount: '42'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
 
 ## Exempel på AppMeasurement.js-fil
 
-Följande är ett exempel på hur AppMeasurement-biblioteket och Activity Map-modulen kombineras i [!DNL AppMeasurement.js] filen.
+Följande är ett exempel på hur AppMeasurement-biblioteket och modulen Activity Map kombineras i [!DNL AppMeasurement.js]-filen.
 
 ```
 // Initialize AppMeasurement 
