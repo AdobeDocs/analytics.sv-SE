@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 uuid: 6961e956-14ea-4367-bdbd-eb0bcc456aae
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 36%
+source-wordcount: '157'
+ht-degree: 34%
 
 ---
 
