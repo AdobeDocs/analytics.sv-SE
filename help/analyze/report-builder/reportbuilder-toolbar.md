@@ -4,9 +4,9 @@ title: Verktygsfältet i Report Builder
 topic: Report builder
 uuid: 9f340fb0-f99a-4dd4-bcca-19c54e5499e6
 translation-type: tm+mt
-source-git-commit: e1c9f4e1b534b8cc1ebc22ee8e856ec437f74840
+source-git-commit: 67108d1d51a75ae6f015b8808254cd88b6308fbf
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '293'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ När du har installerat Report Builder och startat Excel klickar du på **[!UICO
 
 ![](assets/report_builder_toolbar.png)
 
-**Logga in:** Visar  [!UICONTROL Login] formuläret så att du kan logga in med dina inloggningsuppgifter eller som en annan användare. Visar även ditt företagsnamn efter inloggning. Se [Report Builder-inloggning](/help/analyze/report-builder/setup/login.md).
+**Logga in:** Visar  [!UICONTROL Login] formuläret så att du kan logga in med dina inloggningsuppgifter eller som en annan användare. Visar även ditt företagsnamn efter inloggning. Se [Logga in på Report Builder](/help/analyze/report-builder/setup/t-loggin-in-to-reportbuilder.md).
 
 **Skapa:** Startar  [!UICONTROL Request Wizard]programmet. Om du inte är inloggad uppmanas du att göra det. Se [Dataförfrågningar](/help/analyze/report-builder/data-requests/data-requests.md).
 
