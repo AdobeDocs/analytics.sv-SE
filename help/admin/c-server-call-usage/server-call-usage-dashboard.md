@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Hur du visar aktuell användning av serversamtal i Adobe Analytics.
 title: Visa aktuell användning av serversamtal
 uuid: 1a42a45f-4bbc-4b5a-9706-c8937265de2b
 translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 4%
+source-wordcount: '281'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Kontrollpanelen Aktuell användning
 
    >[!NOTE]
    >
-   >Om du vill visa användningen för en tidigare tidsperiod måste du gå till fliken [Report Suite-användning](/help/admin/c-server-call-usage/report-suite-usage.md) och hämta användningsdata för en tidigare period.
+   >Om du vill visa användningen för en tidigare tidsperiod måste du gå till fliken [Report Suite Usage](/help/admin/c-server-call-usage/report-suite-usage.md) och hämta användningsdata för en tidigare period.
 
 * Visar hur många procent anrop som har gjorts (i procent och rådata) och hur många procent av användningsperioden som har använts (i procent och rådata).
 * Som standard uppdateras varje dag med en 5-dagars svarstid.
@@ -39,7 +39,7 @@ Kontrollpanelen Aktuell användning
 ![](assets/server_call_dashboard.png)
 
 | Användargränssnittsterm | Definition |
-|---|---|
+| --- | --- |
 | Aktuell periodanvändning (grön) | Den aktuella perioden baseras på [användningsperioden](/help/admin/c-server-call-usage/overage-overview.md). |
 | Föregående periodanvändning (blå) | Föregående period definieras som den aktuella användningsperioden minus 1 år. |
 | Användningsgräns (röd) | Din avtalsenliga användningsgräns för den här användningsperioden. |
