@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Översikt över Ad Hoc Analysis Project Converter
 title: Översikt över Ad Hoc Analysis Project Converter
 uuid: 7d78753d-d56c-4eea-b1dd-7c9ec225cce3
 translation-type: tm+mt
-source-git-commit: 62abc14883f678771d9b192efc4192f58f97a64b
+source-git-commit: f2fe11eeafc7b188ff7a886847b33a82ab80e47a
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 21%
+source-wordcount: '87'
+ht-degree: 26%
 
 ---
 
