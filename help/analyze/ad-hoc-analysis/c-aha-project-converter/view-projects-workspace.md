@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: Visa konverterade projekt i Analysis Workspace
 title: Visa konverterade projekt i Analysis Workspace
-uuid: 5f8b6d0a-1a2c-42da-b51d-ecb355f470af
 translation-type: tm+mt
-source-git-commit: 5d96a2868bee48e2294ec2fb27e0340a3bcc50ae
+source-git-commit: f2fe11eeafc7b188ff7a886847b33a82ab80e47a
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 17%
+source-wordcount: '105'
+ht-degree: 15%
 
 ---
 
