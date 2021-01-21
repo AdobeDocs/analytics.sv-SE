@@ -1,19 +1,18 @@
 ---
-description: 'null'
-title: Färgpaletter
-uuid: 18252889-8dc0-48fa-820f-df534156c22f
+description: Använda färgpaletten för visualisering i Analysis Workspace
+title: Vad är visualiseringsfärgpaletter och hur fungerar de?
 translation-type: tm+mt
-source-git-commit: f0bb68488bbd987203a1abf0f4fbc0fdb3d4824e
+source-git-commit: ff0608b809b6471fc59097370e9acbf0bb7dc94f
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 4%
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
 
-# Visualiseringsfärgpalett
+# Visualiseringsfärgpaletter
 
-Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men påverkar **inte** Sammanfattningsändring, villkorsstyrd formatering i friformstabeller och Kartvyalisering.
+Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men den påverkar **inte** Sammanfattningsändring, villkorsstyrd formatering i frihandstabeller och Kartvymulering.
 
 >[!NOTE]
 >
@@ -29,10 +28,10 @@ Tänk på följande:
 ## Ändra din färgpalett:
 
 1. Navigera till **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]**.
-1. I **[!UICONTROL Project Color Palette]** listrutan kan du välja ett av fem förinställda färgscheman.
+1. I listrutan **[!UICONTROL Project Color Palette]** kan du välja ett av fem förinställda färgscheman.
 
    ![](assets/custom_palette.png)
 
-1. Om du vill ange en egen palett väljer du **[!UICONTROL Custom Palette]** under förinställningarna.
+1. Om du vill ange en egen palett väljer du **[!UICONTROL Custom Palette]** under de förinställda alternativen.
 1. Ange upp till 16 kommaavgränsade hexadecimala värden (till exempel #00a4e4) för de färger som du vill använda. Om du till exempel bara vill använda fyra värden upprepas dessa färger automatiskt i visualiseringar som innehåller fler färger.
 
