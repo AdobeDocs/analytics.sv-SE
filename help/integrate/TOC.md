@@ -5,10 +5,10 @@ user-guide-title: Integreringshandbok för Analytics
 breadcrumb-title: Integreringshandbok
 user-guide-description: Konfigurera integreringar med andra Adobe Experience Cloud-lösningar som Audience Manager, Advertising Cloud och Target.
 translation-type: tm+mt
-source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+source-git-commit: 41d3cfb510fb7cac77abbe0a80046c96042d0946
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 88%
+source-wordcount: '162'
+ht-degree: 82%
 
 ---
 
@@ -39,7 +39,8 @@ ht-degree: 88%
       + [Felsöka Advertising Analytics](c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md)
    + [Vanliga frågor](c-advertising-analytics/aa-faq.md)
 + [Analytics för Target - A4T](https://docs.adobe.com/content/help/sv-SE/target/using/integrate/a4t/a4t.html)
-+ [Adobe Campaign-rapportering](adobe-campaign.md)
++ [Adobe Campaign-rapportering i Analytics](adobe-campaign.md)
++ [Integrera analysdata med Campaign Classic](analytics-to-campaign-classic.md)
 + [AEM Assets-rapportering](aem-assets-reporting.md)
 + [Activity Map-rapportering](activitmap-reporting.md)
 + [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.analytics.html#product)
