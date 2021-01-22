@@ -1,11 +1,10 @@
 ---
-description: Vanliga frågor och svar om projektkonverteraren Ad Hoc Analysis till Analysis Workspace
-title: Vanliga frågor om Project Converter
-uuid: 8e1bf0e9-ce0f-443a-bcfe-45d3e2c82b1c
+description: Vanliga frågor om projektkonverteraren Ad Hoc Analysis till Analysis Workspace
+title: Frågor och svar om Ad Hoc Analysis-till-Analysis Workspace Project Converter
 translation-type: tm+mt
-source-git-commit: f2fe11eeafc7b188ff7a886847b33a82ab80e47a
+source-git-commit: 59d89f7678310aea71191849735f9a61d77249a0
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '951'
 ht-degree: 3%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 3%
 ## Kända konverteringsproblem {#section_39C922A58B2E49C9877B363042801361}
 
 | Problem | Beskrivning |
-|--- |--- |
+| --- | --- |
 | Minut granularitet med uppdelningar eller kolumner | Om du har använt minimala granulariteter eller om det finns minimala granulariteter i kolumner, kan projektet inte konverteras till Analysis Workspace.  Du kan komma runt problemet genom att ta bort detaljerna i minuterna och sedan konvertera projektet. Du kan sedan göra indelningar i Analysis Workspace. |
 | Intern beräknad mätmetod används tillsammans med ett kolumnsegment | Om du använder ett internt beräknat mått tillsammans med ett kolumnsegment, kan projektet inte konverteras till Analysis Workspace. Du kan lösa problemet genom att ta bort interna beräknade värden från projektet före konverteringen och sedan lägga till dem igen i Analysis Workspace. |
 
