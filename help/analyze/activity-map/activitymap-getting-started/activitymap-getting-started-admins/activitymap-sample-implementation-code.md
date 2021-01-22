@@ -1,12 +1,11 @@
 ---
-description: Exempel på hur AppMeasurement-biblioteket och modulen Activity Map kombineras
-title: Exempel på implementeringskod
+description: Exempel på hur AppMeasurement-biblioteket och modulen Activity Map kombineras i Adobe Analytics implementeringskod
+title: Visa exempel på implementeringskod för Activity Map
 topic: Activity map
-uuid: 73879252-5ce1-42a5-ad0e-dcee73244b28
 translation-type: tm+mt
-source-git-commit: f2fe11eeafc7b188ff7a886847b33a82ab80e47a
+source-git-commit: 59d89f7678310aea71191849735f9a61d77249a0
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '51'
 ht-degree: 0%
 
 ---
