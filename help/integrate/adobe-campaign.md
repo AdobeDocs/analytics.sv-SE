@@ -1,12 +1,11 @@
 ---
-description: 'null'
-title: Adobe Campaign-rapportering
-uuid: 0919ae9f-84eb-43a5-8282-6cd6dec63dc1
+description: Lär dig hur du aktiverar Adobe Campaign-rapportering i Adobe Analytics
+title: Hur integrerar jag Adobe Campaign Reporting i Adobe Analytics?
 translation-type: tm+mt
-source-git-commit: 82cf5ddfd4d18af09c2dbedba20514e4b643a94b
+source-git-commit: 84337e8112b63859927d31568010ef0f0d604333
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 100%
+source-wordcount: '447'
+ht-degree: 95%
 
 ---
 
@@ -38,20 +37,9 @@ För att kunna visa Campaign-data i Analytics måste du först aktivera Campaign
 
 Integrationen mellan Adobe Campaign Standard och Adobe Analytics ger följande rapport under **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**
 
-<table id="table_3627F40DC90646A7B5E217A88B6FD630"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Rapport </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Adobe Campaign Executed Delivery ID </p> </td> 
-   <td colname="col2"> <p>Visar data som importerats från Adobe Campaign om e-postmeddelanden som skickats från Adobe Campaign. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Rapport | Definition |
+|--- |--- |
+| Adobe Campaign Executed Delivery ID | Visar data som importerats från Adobe Campaign om e-postmeddelanden som skickats från Adobe Campaign. |
 
 ## Steg 3. Använd Adobe Campaign-klassificeringar {#section_74A28AF3F4CA4091943789DE4D8B2B63}
 
