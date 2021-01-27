@@ -1,93 +1,92 @@
 ---
 title: tl
-description: Skicka ett länkspårningssamtal till Adobe.
+description: Skicka ett länkspårningsanrop till Adobe.
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 5bdd07b147d1ea5ef80336a893c02057e7bf5785
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 1%
+source-wordcount: '601'
+ht-degree: 0%
 
 ---
 
 
 # tl
 
-Metoden är en viktig `tl()` komponent i Adobe Analytics. Den tar alla Analytics-variabler som definierats på sidan, kompilerar dem till en bildförfrågan och skickar dessa data till Adobes datainsamlingsservrar. Den fungerar på ungefär samma sätt som [`t()`](t-method.md) metoden, men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
+Metoden `tl()` är en viktig komponent för Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar data till datainsamlingsservrarna i Adobe. Den fungerar på ungefär samma sätt som metoden [`t()`](t-method.md), men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
 
-Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverat anropar AppMeasurement automatiskt `tl()` metoden för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa `tl()` metoden manuellt. Anpassade länkar kan bara spåras manuellt.
+Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverade anropar AppMeasurement automatiskt metoden `tl()` för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa metoden `tl()` manuellt. Anpassade länkar kan bara spåras manuellt.
 
-## Länkspårningsanrop i Adobe Experience Platform Launch
+## Länkspårningssamtal i Adobe Experience Platform Launch
 
 Launch har en dedikerad plats som anger ett länkspårningsanrop.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
-1. Klicka på ikonen + [!UICONTROL Actions]under
-1. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och välj [!UICONTROL Action Type] Skicka beacon.
-1. Click the `s.tl()` radio button.
+1. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
+1. Klicka på plustecknet under [!UICONTROL Actions]
+1. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och listrutan [!UICONTROL Action Type] på Skicka Beacon.
+1. Klicka på alternativknappen `s.tl()`.
 
 Du kan inte ange några valfria argument i Launch.
 
 ## s.tl()-metoden i AppMeasurement och den anpassade kodredigeraren Launch
 
-Anropa `s.tl()` metoden när du vill skicka ett spårningsanrop till Adobe.
-
-```js
-s.tl();
-```
-
-Den här metoden kan också innehålla flera argument:
+Anropa metoden `s.tl()` när du vill skicka ett spårningsanrop till Adobe.
 
 ```js
 s.tl([Link object],[Link type],[Link name],[Override variable]);
 ```
 
-### Länkobjekt
+### Länkobjekt (obligatoriskt)
 
 Argumentet för läntobjekt avgör om webbläsaren väntar upp till 500 ms innan den navigerar bort från sidan. Om en bildbegäran skickas tidigare än 500 ms navigerar sidan direkt till den klickade länken.
 
 >[!NOTE]
 >
->Med AppMeasurement aktiveras automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
+>AppMeasurement aktiverar automatiskt variabeln [`useBeacon`](../config-vars/usebeacon.md) för avslutningslänkar, vilket gör att det här argumentet inte längre behövs i moderna webbläsare. Det här argumentet användes oftare i tidigare versioner av AppMeasurement.
 
 * `this`: Vänta i upp till 500 ms för att ge AppMeasurement tid att skicka en bildbegäran. Standardvärde.
 * `true`: Vänta inte.
 
 ```JavaScript
-// Include a 500ms delay
-s.tl(this);
+// Include a 500ms delay with an exit link
+s.tl(this,"e","Example exit link");
 
-// Do not include a 500ms delay
-s.tl(true);
+// Do not include a 500ms delay with an exit link
+s.tl(true,"e","Example exit link");
 ```
 
-### Länktyp
+### Länktyp (obligatoriskt)
 
-Argumentet för länktyp är en sträng med en bokstav som avgör typen av länkspårningsanrop. Det är samma sak som att ställa in [`linkType`](../config-vars/linktype.md) variabeln.
+Argumentet för länktyp är en sträng med ett tecken som avgör typen av anrop för länkspårning. Det finns tre giltiga värden.
+
+* `o`: Länken är en  [anpassad länk](/help/components/dimensions/custom-link.md).
+* `d`: Länken är en  [nedladdningslänk](/help/components/dimensions/download-link.md).
+* `e`: Länken är en  [avslutningslänk](/help/components/dimensions/exit-link.md).
 
 ```js
 // Send a custom link
-s.tl(true,"o");
+s.tl(true,"o","Example custom link");
 
 // Send a download link
-s.tl(true,"d");
+s.tl(true,"d","Example download link");
 
 // Send an exit link
-s.tl(true,"e");
+s.tl(true,"e","Example exit link");
 ```
 
-### Länknamn
+### Länknamn (rekommenderas)
 
-Argumentet för länknamn är en sträng som avgör dimensionsobjektet för länkspårning. Det är samma sak som att ställa in [`linkName`](../config-vars/linkname.md) variabeln.
+Argumentet för länknamn är en sträng som avgör dimensionsobjektet för länkspårning. När du använder [den anpassade länken](/help/components/dimensions/custom-link.md), [Hämta länk](/help/components/dimensions/download-link.md) eller [Avsluta länk](/help/components/dimensions/exit-link.md)-dimensioner i rapportering innehåller den här strängen dimensionsobjektet. Om det här argumentet inte anges används variabeln [linkURL](../config-vars/linkurl.md).
 
 ```js
-s.tl(true,"d","Example download link");
+// When using the Download link dimension, this method call increases the occurrences metric for "Sea turtle PDF report" by 1.
+s.tl(true,"d","Sea turtle PDF report");
 ```
 
-### Variabla åsidosättningar
+### Variabla åsidosättningar (valfritt)
 
-Gör att du kan ändra variabelvärden för ett enskilt anrop. Mer information finns i [Variabelåsidosättningar](../../js/overrides.md) .
+Gör att du kan ändra variabelvärden för ett enskilt anrop. Mer information finns i [variabelåsidosättningar](../../js/overrides.md).
 
 ```js
 var y = new Object();
@@ -108,14 +107,6 @@ Använd JavaScript för att göra ett grundläggande anrop för länkspårning m
 
 ```JavaScript
 s.tl(true,"o","Example link");
-```
-
-Använd JavaScript för att göra samma grundläggande anrop för länkspårning med hjälp av olika variabler:
-
-```js
-s.linkType = "o";
-s.linkName = "Example link";
-s.tl();
 ```
 
 ### Göra länkspårningsanrop i en anpassad funktion
@@ -140,7 +131,7 @@ Du kan sedan anropa funktionen när du vill spåra en viss länk:
 
 ### Undvik att spåra dubblettlänkar
 
-Om `trackDownloadLinks` eller `trackExternalLinks` är aktiverade gör AppMeasurement automatiskt ett länkspårningsanrop om rätt filter matchar. Om du även ringer `s.tl()` manuellt för dessa länkklick kan du skicka duplicerade data till Adobe. Duplicerade data ökar rapportnummer och gör dem mindre exakta.
+Om `trackDownloadLinks` eller `trackExternalLinks` är aktiverade gör AppMeasurement automatiskt ett länkspårningsanrop om rätt filter matchar. Om du även manuellt anropar `s.tl()` för dessa länkklick kan du skicka duplicerade data till Adobe. Duplicerade data ökar rapportnummer och gör dem mindre exakta.
 
 Följande funktion skickar till exempel två länkspårningsanrop för samma länkklickning (manuella och automatiska hämtningslänkar):
 
