@@ -2,9 +2,9 @@
 title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 69c1daa9dbf3bbf39072cc7104f2dd32fb95eb79
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -14,18 +14,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin-programmet mäter en besökares rullningsaktivitet för att se hur mycket av en sida de visar innan de går vidare till en annan sida. `getPercentPageViewed` Denna plugin behövs inte om sidorna är små i höjdled eller inte vill mäta rullningsaktiviteten.
+Plugin-programmet `getPercentPageViewed` mäter en besökares rullningsaktivitet för att se hur mycket av en sida de visar innan de går vidare till en annan sida. Denna plugin behövs inte om sidorna är små i höjdled eller inte vill mäta rullningsaktiviteten.
 
 ## Installera plugin-programmet med den anpassade kodredigeraren för Launch
 
-Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
-
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics-tillägget.
-1. Expandera dragspelsfliken så att [!UICONTROL Configure tracking using custom code] den visar [!UICONTROL Open Editor] knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -48,12 +46,12 @@ s.p_fo=function(on){var s=this;s.__fo||(s.__fo={});if(s.__fo[on])return!1;s.__fo
 
 ## Använda plugin-programmet
 
-I metoden används följande argument: `getPercentPageViewed`
+Metoden `getPercentPageViewed` använder följande argument:
 
-* **`pid`** (valfri, sträng):  En sidbaserad identifierare som du kan korrelera med procentsatserna som anges i plugin-programmets mått.  Standardvärdet är `pageName` variabeln.
-* **`ch`** (valfritt, boolesk):  Ange det här till `false` (eller `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som görs i sidstorleken efter den första inläsningen. Om det utelämnas används det här argumentet som standard `true`. Adobe rekommenderar att du i de flesta fall utelämnar det här argumentet.
+* **`pid`** (valfri, sträng): En sidbaserad identifierare som du kan korrelera med procentsatserna som anges i plugin-programmets mått.  Standardvärdet är variabeln `pageName`.
+* **`ch`** (valfritt, boolesk): Ange det här till  `false` (eller  `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som görs i sidstorleken efter den första inläsningen. Om det utelämnas blir det här argumentet som standard `true`. Adobe rekommenderar att detta argument utelämnas i de flesta fall.
 
-Om metoden anropas returneras ingenting. i stället anges följande variabler:
+Om metoden anropas returneras ingenting; i stället anges följande variabler:
 
 * `s._ppvPreviousPage`: Namnet på föregående sida som visades. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
 * `s._ppvHighestPercentViewed`: Den högsta procentandel av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida.
@@ -64,7 +62,7 @@ Om metoden anropas returneras ingenting. i stället anges följande variabler:
 
 Tilldela en eller flera av dessa variabler till eVars för att visa dimensionsdata i rapporter.
 
-Denna plugin skapar en cookie `s_ppv` som heter förstahandsval och innehåller värdena ovan. Den förfaller i slutet av webbläsarsessionen.
+Detta plugin-program skapar en cookie från första part med namnet `s_ppv` som innehåller ovanstående värden. Den förfaller i slutet av webbläsarsessionen.
 
 ## Exempelanrop
 
@@ -87,7 +85,7 @@ if(s._ppvPreviousPage)
    * Koden ställer in s.prop1 lika med värdet för s._ppvPreviousPage (dvs. det föregående värdet för s.pageName eller föregående sida)
    * Koden ställer också in s.prop2 som lika med den högsta procentandelen som visades på föregående sida och den inledande procentandelen som visades på föregående sida, tillsammans med antalet vikningar som besökaren har nått och antalet vikningar som var tillgängliga
 
-**Obs**:  Om en hel sida är synlig när den först läses in, blir både de högsta procentvärdena som visas och de inledande procentvärdena som visas lika med 100, och både folderna som visas och Tillgängliga blir lika med 1.   När en hel sida INTE är synlig när den först läses in, men besökaren aldrig rullar nedåt på sidan innan han/hon går till nästa sida, blir både de högsta procentvärdena visade och de inledande procentvärdena visade lika med samma värde.
+**Obs**: Om en hel sida är synlig när den först läses in, blir både de högsta procentvärdena som visas och de inledande procentvärdena som visas lika med 100, och både folderna som visas och Tillgängliga blir lika med 1.   När en hel sida INTE är synlig när den först läses in, men besökaren aldrig rullar nedåt på sidan innan han/hon går till nästa sida, blir både de högsta procentvärdena visade och de inledande procentvärdena visade lika med samma värde.
 
 ### Exempel 2
 
@@ -108,7 +106,7 @@ if(s._ppvPreviousPage)
 
 ### v4.0 (7 oktober 2019)
 
-* Lagt till `s._ppvFoldsSeen` och `s._ppvFoldsAvailable` lösningar
+* Lagt till `s._ppvFoldsSeen`- och `s._ppvFoldsAvailable`-lösningar
 
 ### v3.01 (13 augusti 2018)
 
