@@ -5,9 +5,9 @@ user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
 translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+source-git-commit: 632fa007fecadf01e2cef67fd3c2519799636e46
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '717'
 ht-degree: 95%
 
 ---
@@ -115,7 +115,6 @@ ht-degree: 95%
       + [Behörighetsobjekt för verktyg i rapportsviten](admin-console/permissions/report-suite-tools.md)
       + [Behörighetsobjekt för Analytics-verktyg](admin-console/permissions/analytics-tools.md)
    + [Handbok för nya Adobe Analytics-administratörer](admin-console/first-admin-guide.md)
-   + [Skapa en rapportsvit](admin-console/create-report-suite.md)
 + Företagsinställningar {#company-settings}
    + [Översikt över företagsinställningar](company/c-company-settings.md)
    + [Åtkomstnivåer](company/feature-access-levels.md)
