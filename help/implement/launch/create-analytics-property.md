@@ -2,7 +2,7 @@
 title: Skapa en Analytics-egenskap i Launch
 description: Skapa ett utrymme för att anpassa hur data samlas in med Adobe Experience Platform Launch.
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 632fa007fecadf01e2cef67fd3c2519799636e46
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 3%
@@ -16,7 +16,7 @@ Adobe Experience Platform Launch är det verktyg du kan använda för att integr
 
 ## Förutsättningar
 
-[Skapa en rapportsvit](/help/admin/admin-console/create-report-suite.md): Skapa en silo för att samla in analysdata
+[Skapa en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Skapa en silo för att samla in analysdata
 
 ## Skapa en egenskap och installera viktiga tillägg
 
@@ -26,7 +26,7 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 1. Klicka på **[!UICONTROL New Property]**.
 1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på **[!UICONTROL Save]**.
 1. Klicka på den nyligen skapade egenskapen för att ange dess inställningar.
-1. Klicka på **[!UICONTROL Extensions]** fliken och sedan på **[!UICONTROL Catalog]**.
+1. Klicka på fliken **[!UICONTROL Extensions]** och sedan på **[!UICONTROL Catalog]**.
 1. Leta reda på identitetstjänsten och klicka sedan på **[!UICONTROL Install]**.
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
 1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
@@ -37,7 +37,7 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
 1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
-1. Klicka på **[!UICONTROL Data Elements]** fliken och sedan på **[!UICONTROL Create New Data Element]**.
+1. Klicka på fliken **[!UICONTROL Data Elements]** och sedan på **[!UICONTROL Create New Data Element]**.
 1. Ge dataelementet följande inställningar:
 
    * Namn: Sidnamn
@@ -58,17 +58,17 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
 
 1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
 1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
-1. Klicka **[!UICONTROL Create New Rule]** och ge den ett namn `Global Rule`.
-1. Klicka **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
+1. Klicka på **[!UICONTROL Create New Rule]** och ge den namnet `Global Rule`.
+1. Klicka på **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
    * Tillägg: Core
    * Händelsetyp: Bibliotek inläst (sidan ovanpå)
    * Namn: Kärna - Bibliotek inläst (sidan ovanpå)
    * Ordning: 50
 1. Klicka på **[!UICONTROL Keep Changes]**.
-1. Under **[!UICONTROL Actions]** klickar du på **[!UICONTROL Add]** och anger följande inställningar:
+1. Klicka på **[!UICONTROL Add]** under **[!UICONTROL Actions]** och ange följande inställningar:
    * Tillägg: Adobe Analytics
    * Åtgärdstyp: Ange variabler
-   * Sidnamn: klicka på behållarikonen och markera dataelementet `Page Name` .
+   * Sidnamn: klicka på behållarikonen och välj dataelementet `Page Name`.
    * Campaign: Frågeparameter med värdet `cid`
 1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Klicka på plustecknet bredvid åtgärder för att lägga till en annan åtgärd och ange följande inställningar:
@@ -77,7 +77,7 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
    * Namn: Adobe Analytics - skicka Beacon
    * Spårning: s.t()
 1. Klicka på **[!UICONTROL Keep Changes]**.
-1. Kontrollera att händelsen och två åtgärder är angivna och klicka sedan på **[!UICONTROL Save]**.
+1. Kontrollera att du har angett händelsen och två åtgärder och klicka sedan på **[!UICONTROL Save]**.
 
 ## Dokumentation och ytterligare resurser
 
