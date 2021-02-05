@@ -2,7 +2,7 @@
 title: Globala rapportsviter i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: 632fa007fecadf01e2cef67fd3c2519799636e46
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Adobe rekommenderar att man i de flesta fall genomför en global rapportserie.
 
 Använd följande allmänna riktlinjer för att förstå hur man implementerar en global rapportserie.
 
-1. Skapa den globala rapportsviten i Adobe Analytics. Mer information finns i [Skapa en rapportserie](../../admin/admin-console/create-report-suite.md) i användarhandboken för Admin.
+1. Skapa den globala rapportsviten i Adobe Analytics. Mer information finns i [Skapa en rapportserie](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) i användarhandboken för Admin.
 1. Arbeta med team i organisationen som ansvarar för varje domän. Många team har rapporteringskrav som är specifika för deras verksamhetsområde.
 1. Registrera och samla alla dessa krav i ett [lösningsdesigndokument](solution-design.md). Om team har liknande krav för en dimension kan de använda samma anpassade variabel. Om till exempel plats A och plats B båda kräver en omfattande dimension, kan implementeringar för båda platserna skicka dessa data via eVar1.
 
