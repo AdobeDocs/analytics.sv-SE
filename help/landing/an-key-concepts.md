@@ -2,10 +2,10 @@
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av begreppen samt en specifik dokumentationslänk med mer information om ämnet.
 title: Adobe Analytics – viktiga begrepp
 translation-type: tm+mt
-source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
+source-git-commit: 12d2391e2429f80648ca674540e65ecd224b1b02
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1876'
+ht-degree: 96%
 
 ---
 
@@ -21,11 +21,11 @@ Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en 
 | Analysis Workspace | Webbläsarlösning för att skapa stabila, anpassade analysprojekt och demokratisera insikter. Ger större rapportflexibilitet än Reports and Analytics | [Analysis Workspace - startsida](/help/analyze/analysis-workspace/home.md) |
 | Reports and Analytics (tidigare SiteCatalyst) | Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet. | [Reports and Analytics - startsida](/help/analyze/reports-analytics/getting-started.md) |
 | Report Builder | Excel-tillägg som gör att du kan skapa anpassade förfrågningar för Adobe Analytics-data och visualisera dem med Microsoft Excel. | [Report Builder – startsida](/help/analyze/report-builder/home.md) |
-| Ad Hoc Analysis (tidigare Discover) | Java-baserat verktyg för avancerad digital analys. | [Ad Hoc Analysis – startsida](/help/analyze/ad-hoc-analysis/adhoc-home.md) |
+| Ad Hoc Analysis (tidigare Discover) | Java-baserat verktyg för avancerad digital analys. EOL-datum: 1 mars 2021. | [Ad Hoc Analysis – startsida](/help/analyze/ad-hoc-analysis/adhoc-home.md) |
 | Data Workbench (tidigare Insight) | Utformat för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner både online och offline över flera kanaler. | [Data Workbench-klient](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html) |
 | Data Warehouse | Obearbetade rådata för lagring och anpassade rapporter som du kan köra genom att filtrera data. Inte på träffnivå. | [Data Warehouse – startsida](/help/export/data-warehouse/data-warehouse.md) |
 | Adobe Mobile Services | Sammanför funktioner för mobil marknadsföring i mobilappar från hela Adobe Experience Cloud så att ni kan förstå och förbättra användarengagemanget i era appar. | [Mobile Services – startsida](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) |
-| Adobe Exchange Data Connectors (tidigare Genesis) | Importera spårningsdata från tredjepartsprogram till Analytics för att ge heltäckande insyn i prestanda på en central plats. | [Data Connectors – startsida](/help/import/data-connectors/data-connectors-eol.md) |
+| Adobe Exchange Data Connectors (tidigare Genesis) | Importera spårningsdata från tredjepartsprogram till Analytics för att ge heltäckande insyn i prestanda på en central plats. Från och med den 1 augusti 2021 avser Adobe att avbryta integreringen av dataanslutningar. | [Data Connectors – startsida](/help/import/data-connectors/data-connectors-eol.md) |
 | Dynamic Tag Management (DTM) | Hjälper er att hantera Analytics-, Target- och andra taggar på alla era webbplatser, oavsett hur många domäner ni har. | [DTM – startsida](/help/implement/other/dtm/dtm-implementation-overview.md) |
 | Adobe Launch | Nästa generation av funktioner för webbplatstaggar och mobil SDK-hantering från Adobe. | [Adobe Launch – startsida](https://docs.adobe.com/content/help/en/launch/using/overview.html) |
 
@@ -99,7 +99,7 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | Nedladdning och schemaläggning av användargränssnitt | Exportera data från Analysis Workspace som CSV eller PDF. | [Hämta PDF- eller CSV-filer](/help/analyze/analysis-workspace/curate-share/download-send.md) |
 | Report Builder | Se Analytics-verktyg. |  |
 | API för Analytics | Skapa egna frågor för Analytics-data. | <ul><li>[API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)</li><li>[API 1.4](https://github.com/AdobeDocs/analytics-1.4-apis)</li></ul> |
-| Data Warehouse | Se Analytics-verktyg. |  |
+| data warehouse | Se Analytics-verktyg. |  |
 | Datafeed i Analytics | Det mest detaljerade sättet att hämta data från Analytics. Konfigurera en feed på träffnivå med Analytics. | [Analytics-datafeed](/help/export/analytics-data-feed/data-feed-overview.md) |
 
 ## Datainsamling och validering {#concept_E07350D4CA5047DAA7D81F762F29606A}
