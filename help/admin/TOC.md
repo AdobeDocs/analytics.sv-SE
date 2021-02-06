@@ -5,10 +5,10 @@ user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
 translation-type: tm+mt
-source-git-commit: 632fa007fecadf01e2cef67fd3c2519799636e46
+source-git-commit: 445cf81cd157bb311cbd4df6e9e2b0b052a64f96
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 95%
+source-wordcount: '726'
+ht-degree: 91%
 
 ---
 
@@ -108,12 +108,12 @@ ht-degree: 95%
       + [Ange variabeln Unik besökare](admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
       + [Användningsfall – extrahera besökar-ID:n](admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
    + [Videohantering](admin/video-management.md)
-+ Experience Cloud Admin Console {#admin-console}
-   + [Hjälp med Experience Cloud Admin Console](admin-console/home.md)
++ Analyser i Adobe Admin Console {#admin-console}
+   + [Analyser i Adobe Admin Console](admin-console/home.md)
    + Behörigheter {#permissions}
-      + [Hjälp för produktprofiler](admin-console/permissions/product-profile.md)
-      + [Behörighetsobjekt för verktyg i rapportsviten](admin-console/permissions/report-suite-tools.md)
-      + [Behörighetsobjekt för Analytics-verktyg](admin-console/permissions/analytics-tools.md)
+      + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
+      + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
+      + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
    + [Handbok för nya Adobe Analytics-administratörer](admin-console/first-admin-guide.md)
 + Företagsinställningar {#company-settings}
    + [Översikt över företagsinställningar](company/c-company-settings.md)
