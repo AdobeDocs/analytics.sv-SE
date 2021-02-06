@@ -1,18 +1,18 @@
 ---
-source-git-commit: 4ca2e15575e66107ec5947c9903a01565f74e264
+source-git-commit: 45edc5eacde90dc5b5da140ad50561f0f32bb41d
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '650'
-ht-degree: 1%
+source-wordcount: '649'
+ht-degree: 4%
 
 ---
-# Report Suite-verktyg listade i produktprofilbehörigheter
+# Produktprofilbehörigheter för Report Suite-verktyg
 
 Använd den här sidan om du vill förstå alla behörighetsobjekt under Report Suite-verktyg.
 
 | Behörighetsobjekt för Report Suite-verktyg | Beskrivning |
 |------|------|
-| Data Warehouse | Används inte. Använd &#39;Rapport för anpassat datalager&#39; i stället. |
+| Data Warehouse | Används inte. Använd&quot;Anpassad Data warehouse-rapport&quot; i stället. |
 | Site Catalyst | Används inte. Använd Analysis Workspace Access i stället. |
 | Rapportsviter (läs) | Används inte. |
 | Rapportsviter (skriv) | Används inte. |
@@ -35,24 +35,24 @@ Använd den här sidan om du vill förstå alla behörighetsobjekt under Report 
 | Listvariabler | Ger åtkomst till Conversion > List Variables i Report Suite Manager. |
 | Standardmått | Ger åtkomst till Inställningar > Standardvärden i Report Suite Manager för enskilda rapportsviter. |
 | Bearbetningsregler | Ger åtkomst till Allmänt > Bearbetningsregler och Allmänt > Punktregler i Report Suite Manager. |
-| Konfiguration av annonsanalys | Används inte. |
-| Avvikelseidentifiering | Ger åtkomst till avvikelseidentifiering på arbetsytan för analyser. |
-| Bidragsanalys | Ger åtkomst till högerklicksmenyn Kör bidragsanalys på Analysis Workspace. |
+| Konfiguration av Advertising Analytics | Används inte. |
+| Avvikelseidentifiering | Ger åtkomst till avvikelseidentifiering i Analysis Workspace. |
+| Bidragsanalys | Ger åtkomst till högerklicksmenyn Kör bidragsanalys i Analysis Workspace. |
 | Kanalrapport | Ger åtkomst till marknadsföringskanalerna > Kanalöversiktsrapport i rapporter och analyser. |
 | RealTime Report | Ger åtkomst till Site Metrics > Real-Time i Reports &amp; Analytics. Använd behörighetsobjektet Konfiguration av realtidsrapport om du vill bevilja åtkomst för att konfigurera rapporten. |
 | Punktsidor | Ger åtkomst till Site Metrics > Bots > Bot Pages report in Reports &amp; Analytics. |
-| Bots | Ger åtkomst till Site Metrics > Bots > Bots report in Reports &amp; Analytics. |
+| Robotar | Ger åtkomst till Site Metrics > Bots > Bots report in Reports &amp; Analytics. |
 | Hanteraren för dataflöden | Ger åtkomst till Admin > Datafeeds i den övre navigeringen i Analytics. |
-| Rapport för anpassat datalager | Ger åtkomst till Verktyg > Datalager i den övre navigeringen i Analytics. |
+| Anpassad Data warehouse-rapport | Ger åtkomst till Verktyg > Data warehouse i den övre navigeringen i Analytics. |
 | Dagliga återbesök | Ger åtkomst till Behåll besökare > Dagliga besök i rapporter och analyser. |
-| Datakällhanteraren | Ger åtkomst till Admin > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
+| Data Sources Manager | Ger åtkomst till Admin > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
 | Exkludera efter IP-adress | Ger åtkomst till Admin > Exkludera med IP i den övre navigeringen i Analytics. |
 | De senaste 100 besökarna | Används inte. |
 | Äldre ClickMap | Används inte. Använd Activity Map under Analytics Tools i stället. |
 | Äldre ClickMap-installation | Används inte. Använd Activity Map under Analytics Tools i stället. |
-| Returbesök | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
+| Återbesök | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
 | Översiktsrapport för mobilappar | Används inte. |
-| Klassificeringar | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager. Detta behörighetsobjekt innehåller: <br>Trafik > Traffic<br>ClassificationsConversion > Conversion<br>ClassificationsConversion > Classification<br>HierarchiesMarketing Channels > Marketing Channel<br>ClassificationsApp Management > App<br>ClassificationsMedia Management > Media<br>ClassificationsAEM > AEM Assets<br>ClassificationsAdobe Campaign > Adobe Classifications |
+| Klassificeringar | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager. Detta behörighetsobjekt innehåller: <br>Trafik > Trafikklassificeringar<br>Konvertering > Konverteringsklassificeringar<br>Konvertering > Klassificeringshierarkier<br>Marknadskanaler > Marknadskanalklassificeringar<br>Programhantering > Programklassificeringar<br>Mediehantering > Medieklassificeringar<br>AEM > AEM Assets-klassificeringar<br>Adobe Campaign > Adobe-klassificeringar |
 | Mina rekommenderade rapporter | Ger åtkomst till Site Metrics > My Recommended Reports in Reports &amp; Analytics. |
 | Sammanfattningsrapport för företag | Används inte. |
 | Bild | Används inte. |
