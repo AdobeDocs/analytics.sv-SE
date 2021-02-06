@@ -1,8 +1,8 @@
 ---
-source-git-commit: 45edc5eacde90dc5b5da140ad50561f0f32bb41d
+source-git-commit: 9f1b7f13a35a4c5c9fc82a2d71cbdb544396f82e
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '559'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Analysis Workspace Access | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra den här gruppen (helst) eller Rapporter och analyser för att kunna använda Adobe Analytics. |
 | Rapporter och analysåtkomst | Ger åtkomst till rapporter och analyser. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |
 | Analysis Workspace: Spara som mall | Ger åtkomst till Projekt > Spara som mall i Analysis Workspace. |
-| Åtkomst till labb | För närvarande under utveckling. När de släpps ger tillgång till Labs. |
+| Åtkomst till labb | Ge användarna tillgång till Labs och prototyperna i Labs. |
 | Skapande av beräknade mätvärden | Ger möjlighet att skapa beräknade värden för alla Analytics-funktioner. |
 | Skapa segment | Ger möjlighet att skapa och dela segment över alla Analytics-funktioner. |
 | Hantering av Advertising Analytics | Används inte. |
