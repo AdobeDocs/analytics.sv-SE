@@ -1,14 +1,14 @@
 ---
-source-git-commit: 81f351588ef25b0ee0376f471c947391387afb6e
+source-git-commit: 03b1195225b97f3ea151eb5b4f39fbed746b3654
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
-# Produktprofiler i Adobe Analytics
+# Produktprofiler för Adobe Analytics
 
-Produktprofiler är en behörighetsförinställning som produktadministratörer kan tilldela användare inom en organisation. Om du skapar en produktprofil och tilldelar en Experience Cloud-användare till produktprofilen ärver de behörighetsobjekten som finns i produktprofilen.
+Produktprofiler är behörighetsförinställningar som produktadministratörer kan tilldela användare inom en organisation. Om du skapar en produktprofil och tilldelar en Experience Cloud-användare till produktprofilen ärver de behörighetsobjekten som finns i produktprofilen.
 
 Se [Hantera produkter och profiler](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) i Enterprise-användarhandboken för allmän information om produktprofiler.
 
@@ -26,7 +26,7 @@ Produktprofiladministratörer är en valfri grupp som kan lägga till eller ta b
 Följande behörigheter krävs i en produktprofil för att få tillgång till Adobe Analytics:
 
 * Produktprofilen måste ha tillgång till minst en rapportserie
-* Produktprofilen måste tillhöra behörighetsobjektet Analytics Tools **Analysis Workspace Access** (eller **Rapporter &amp; Analytics Access**)
+* Produktprofilen måste tillhöra behörighetsobjektet för analysverktygen **Analysis Workspace Access** (eller **Rapporter och analysåtkomst**)
 
 ### Rapportsviter
 
@@ -46,11 +46,11 @@ Anpassade variabler, som eVars, har etiketten Custom Conversion 1-250 för att d
 
 ### Report Suite-verktyg
 
-Rapportsvitens verktyg ger behörighetsobjekt åtkomst till funktioner som är specifika för de rapportsviter som användaren har tillgång till. En fullständig lista över behörighetsobjekt och beskrivningar finns i [Report Suite-verktygen](report-suite-tools.md) .
+Rapportsvitens verktyg ger behörighetsobjekt åtkomst till funktioner som är specifika för de rapportsviter som användaren har tillgång till. I [Report Suite Tools](report-suite-tools.md) finns en fullständig lista över behörighetsobjekt och beskrivningar.
 
 ### Analysverktyg
 
-Behörighetsobjekt för analysverktyg ger åtkomst till funktioner som är oberoende av inställningarna för rapportsviten. En fullständig lista över behörighetsobjekt och beskrivningar finns i [Analytics Tools](analytics-tools.md) .
+Behörighetsobjekt för analysverktyg ger åtkomst till funktioner som är oberoende av inställningarna för rapportsviten. En fullständig lista över behörighetsobjekt och beskrivningar finns i [Behörigheter för produktprofiler för analysverktygen](analytics-tools.md).
 
 ## Produktprofilutvecklare
 
