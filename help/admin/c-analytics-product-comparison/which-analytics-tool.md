@@ -3,10 +3,10 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 translation-type: tm+mt
-source-git-commit: 12d2391e2429f80648ca674540e65ecd224b1b02
+source-git-commit: f2db5f611952ee315c84f925d038c539da110e38
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 4%
+source-wordcount: '1157'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ Den här hjälpsidan innehåller rekommenderade användningsexempel för varje A
 
 Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md).
 
-## Adobe Analytics Reporting-användargränssnitt {#section_8265460EBB47405AB19A3B2B0729C8A4}
+## Adobe Analytics Reporting-användargränssnitt {#user-interfaces}
 
 **[Analysis](/help/analyze/analysis-workspace/home.md)** Workspaces bör vara det självklara användargränssnittet för alla dina rapporterings- och analysbehov. Adobe fortsätter att investera i och släppa månadsuppdateringar av den här produkten. Om du inte kan göra något i Analysis Workspace bör du överväga de andra gränssnitten nedan.**
 
@@ -31,15 +31,6 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 * Få tillgång till unika videovisualiseringar av Video Daypart och Viewer Drop-off.
 * För att utnyttja publiceringslistor i schemalagda rapporter.
 
-**[Ad hoc-](/help/analyze/ad-hoc-analysis/adhoc-home.md)** analys ska användas:
-
->[!IMPORTANT]
->
->Adobe flyttar Ad Hoc Analysis till livets slut den 1 mars 2021. [Läs mer](https://adobe.ly/discoverworkspace)
-
-* Om du vill ha en tabbordning för projektarbete.
-* Så här använder du platsanalysrapporten (rapport om 3D-målning).
-
 **[Data ](https://docs.adobe.com/content/help/en/data-workbench/using/home.html)** Worktest ska användas:
 
 * Det mest flexibla analysverktyget (ned till besökarnivå, träffnivåanalys).
@@ -49,7 +40,7 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 * För fördröjningsanalys (tid före/sedan en händelse).
 * För identifiering och export av komplexa segment i hela Adobe Experience Cloud.
 
-## Importera data till Adobe Analytics {#section_B42B998D6E3E4357B024AEFA4EC69A23}
+## Importera data till Adobe Analytics {#import}
 
 **[Klassificeringar](/help/components/classifications/c-classifications.md)** ska användas:
 
@@ -90,14 +81,14 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 * Om du vill inkludera Adobe Audience Manager (AAM) målgruppsdata, t.ex. demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data eller annonsvisningsdata i ett Analytics-arbetsflöde.
 * Om du vill att överförda CRM-data ska vara tidsbaserade, eftersom den här integreringen skickar ny information till Analytics som träffats av en träff.
 
-## Exporterar data från Adobe Analytics {#section_901C06ABF2014E92B2952906723DF235}
+## Exporterar data från Adobe Analytics {#export}
 
 **[Report](/help/analyze/report-builder/home.md)** Builder ska användas:
 
 * Om de anpassade layoutalternativen för arbetsytan är begränsade (allt är möjligt i Report Builder, inom Excel-gränserna).
 * För att smidigt knyta indata från användare eller offlinedatakällor (visningar, kostnader) till data från Adobe. En mer permanent lösning för att binda data är datakällor (se Importera data till analys).
 * Att sammanfoga data från olika flerdimensionella rapporter (t.ex. en rapport om kampanjavtryck tillsammans med en kampanjrapport för klick-till-konvertering).
-* Om du vill visa flera rapporter samtidigt.
+* Om du vill sammanfoga data från olika rapportsviter, antingen genom att summera eller visa dem i samma tabell sida vid sida.
 * Om automatisering genom schemaläggning önskas (XLSX, XLSM, CSV, PDF, TXT, XML, MHT).
 
 **[Datalagret](/help/export/data-warehouse/data-warehouse.md)** bör användas:
@@ -120,7 +111,7 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 * **Realtid**: när du vill visa ett par mätvärden och dimensioner med några sekunders fördröjning. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Innehåller unika algoritmer för de flesta populära, vinnare och förlorare. Kan användas via Report Builder.
 * **[!UICONTROL Live Stream]**: när ni vill ha en ström av delvis bearbetade analysdata på träffnivå inom sekunder från insamlingen. Detta är delvis bearbetade data som är tillgängliga inom cirka 30 sekunder. Endast tillgängligt för Analytics Premium. Kräver ett sätt att visualisera data, vanligtvis genom ett engagemang från Engineering Services.
 
-## Anpassade lösningar {#section_4A212F26A15947599DFB0399A0440CB6}
+## Anpassade lösningar {#custom-solutions}
 
 Tekniktjänster bör användas när
 
