@@ -2,9 +2,9 @@
 description: Med Analytics for Target-panelen (A4T) kan du analysera dina Adobe Target-aktiviteter och -upplevelser i Analysis Workspace.
 title: Analyser för målpanelen (A4T)
 translation-type: tm+mt
-source-git-commit: 284d8237091fbf7c341fc0f577c023cfe7e536d4
+source-git-commit: 6f86a45ae745df86f1f6fc924d995437b9992484
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1103'
 ht-degree: 1%
 
 ---
@@ -62,6 +62,6 @@ Precis som med andra paneler i Analysis Workspace kan du fortsätta med analysen
 | När jag använder ett träffsegment för en viss Target-aktivitet i min analys, varför ser jag då orelaterade upplevelser returneras? | A4T-dimensionen är en listvariabel, vilket betyder att den kan innehålla många aktiviteter (och upplevelser) samtidigt. [Läs mer](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-viewing-reports.html) |
 | Betyder konfidensmätningen extrema order eller används en Bonferroni-korrigering för flera erbjudanden? | Nej. [Läs ](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t-faq/a4t-faq-lift-and-confidence.html) mer om hur Analytics beräknar förtroendet. |
 | Kan lyftnings- och tillförlitlighetsvärden användas med andra dimensioner eller uppdelningar? | Lyft och självförtroende är&quot;låsta mätvärden&quot; för Target Experiences-dimensionen eftersom de kräver en kontroll och variant som kan beräknas över. De kan därför inte delas upp eller användas med andra dimensioner. |
-| När beräknas lyft och självförtroende om? | Lyft och tillförsikt räknas om när panelen körs (eller körs om), när panelens datumintervall ändras eller när ett segment tillämpas på panelen eller tabellen. |
+| När beräknas lyft och självförtroende om? | Lyft och beräkna tryggheten när panelen körs (eller körs om), när panelens datumintervall ändras eller när ett segment tillämpas på panelen eller tabellen. När du använder ett segmentfilter på frihandstabellen måste det användas på alla kolumner eller lyft och förtroendet uppdateras inte korrekt. Segment på kolumnnivå stöds inte för närvarande. |
 
 Mer information om Analytics för Target-rapportering finns på [A4T reporting](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/reporting.html)
