@@ -1,17 +1,16 @@
 ---
-description: 'null'
-title: Översikt över Advertising Analytics
-uuid: 00e461ff-3e17-4071-818b-93fd1e4b36f1
+description: Upptäck allt du kan göra med Advertising Analytics i den här detaljerade guiden, inklusive behörigheter som krävs och tillgängliga mått och mätvärden.
+title: A Guide to Advertising Analytics
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: c588087b949093152435967f62e43758e9e86208
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 100%
+source-wordcount: '1276'
+ht-degree: 97%
 
 ---
 
 
-# Översikt över Advertising Analytics
+# A guide to Advertising Analytics
 
 Med Advertising Analytics kan du se alla dina Google- och Bing Paid Search-data sida vid sida, inifrån Adobe Analytics. Tidigare måste alla Google AdWords/DFA- och Microsoft Bing Ads-data visas i Adobe Advertising Cloud (AMO) eller i Google/Bing. Du får nu följande data i Adobe Analytics: Impressions, Clicks, Costs, Quality Score och Average Position direkt från sökmotorerna samt som en AMO ID-instans (klicka på Instances).
 
