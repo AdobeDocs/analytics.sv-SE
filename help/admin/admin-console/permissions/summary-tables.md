@@ -2,9 +2,9 @@
 title: Adobe Analytics Permissions - summary tables
 description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Admin Console.
 translation-type: tm+mt
-source-git-commit: 5c300548b9677c7ffe21fa66b4b7c9859179ff8e
+source-git-commit: ef0a917c10959e59ad4e7ea1a4e9a019558f7325
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1255'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Kostnader | x |  |  |  | Ger åtkomst till marknadsföringskanaler > Marknadskanalkostnader i Report Suite Manager. |
 | Anpassad kalender | x |  |  |  | Ger åtkomst till Allmänt > Anpassa kalender i Report Suite Manager. |
 | Hanteraren för dataflöden | x |  |  |  | Ger åtkomst till Admin > Datafeeds i den övre navigeringen i Analytics. |
-| API för datareparation | x |  |  |  | Nytt (i betaversion) - Ger åtkomst till API:t för datareparation |
+| API för datareparation | x |  |  |  | Ger åtkomst till API:t för datareparation |
 | Data Sources Manager | x |  |  |  | Ger åtkomst till Admin > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
 | Standardmått | x |  |  |  | Ger åtkomst till Inställningar > Standardvärden i Report Suite Manager för enskilda rapportsviter. |
 | Exkludera efter IP-adress | x |  |  |  | Ger åtkomst till Admin > Exkludera med IP i den övre navigeringen i Analytics. |
