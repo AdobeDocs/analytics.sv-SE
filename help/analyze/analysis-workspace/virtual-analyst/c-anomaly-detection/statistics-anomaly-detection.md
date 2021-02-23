@@ -1,16 +1,18 @@
 ---
-description: Analysidentifiering i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
+description: Inkonsekventa data kan orsaka stora problem. Lär dig hur du identifierar statistiska avvikelser med avvikelsedetekteringstekniker från Adobe. Kom igång idag.
 title: Statistiska tekniker som används för avvikelseidentifiering
-uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: c588087b949093152435967f62e43758e9e86208
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 1%
 
 ---
 
 
 # Statistiska tekniker som används för avvikelseidentifiering
 
-Analysidentifiering i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
+Analysupptäckt i Analysis Workspace använder en rad avancerade statistiska tekniker för att avgöra om en observation bör anses onormal eller inte.
 
 Beroende på vilket datum som använts i rapporten används tre olika statistiska metoder - särskilt för att upptäcka avvikelser per timme, dag, vecka/månad. Varje statistisk metod beskrivs nedan.
 
@@ -18,7 +20,7 @@ Beroende på vilket datum som använts i rapporten används tre olika statistisk
 
 För dagliga granularitetsrapporter anser algoritmen att flera viktiga faktorer är viktiga för att få bästa möjliga resultat. För det första avgör algoritmen vilken typ av modell som ska användas baserat på tillgängliga data som vi väljer mellan en av två klasser - en tidsseriebaserad modell eller en avbrottsdetekteringsmodell (kallas funktionell filtrering).
 
-Urvalet av tidsseriemodell baseras på följande kombinationer av typ av fel, trend och säsongsberoende (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Algoritmen försöker i synnerhet med följande kombinationer:
+Urvalet av tidsseriemodell baseras på följande kombinationer för typ av fel, trend och säsongsberoende (ETS) enligt beskrivningen i [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Algoritmen försöker i synnerhet med följande kombinationer:
 
 1. ANA (additivt fel, ingen trend, additiv säsongsvariation)
 1. AAA (additivt fel, additiv trend, additiv säsongsvariation)
@@ -31,15 +33,15 @@ Algoritmen testar lämpligheten hos vart och ett av dessa genom att välja det s
 Efter modellval justerar algoritmen sedan resultaten baserat på helger och årstidsberoende. För helger kontrollerar algoritmen om någon av följande helger finns i datumintervallet för rapportering:
 
 * Minnesdag
-* 4 juli
+* Juli 4
 * Thanksgiving
 * Black Friday
 * Cyber Monday
 * 24-26 december
-* 1 januari
+* Januari 1
 * 31 december
 
-Dessa helgdagar valdes ut baserat på omfattande statistisk analys av många kunddatapunkter för att identifiera helger som har störst betydelse för det högsta antalet kundtrender. Även om listan inte är fullständig för alla kunder eller affärscykler, fann vi att användningen av dessa helger avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
+Dessa helgdagar valdes ut baserat på omfattande statistisk analys av många kunddatapunkter för att identifiera helger som matchar flest kundtrender. Även om listan inte är fullständig för alla kunder eller affärscykler, fann vi att användningen av dessa helger avsevärt förbättrade algoritmens prestanda totalt för nästan alla kunders dataset.
 
 När modellen har valts och helger har identifierats i rapportdatumintervallet utförs algoritmen på följande sätt:
 
@@ -61,7 +63,7 @@ Timdata bygger på samma algoritm för tidsserier som den dagliga granularitetsa
 
 Utbildningsfönstren för timtrender är beroende av ett 336-timmars uppslagsfönster.
 
-## Analysidentifiering för varje vecka och månad {#section_5D421576BFBC4B24A58DFCC0A6407545}
+## Analysidentifiering för vecko- och månadsgranulariteter {#section_5D421576BFBC4B24A58DFCC0A6407545}
 
 Trender för varje vecka och månad visar inte samma trender för varje vecka eller varje dag som finns på en daglig eller timbaserad noggrannhet, vilket innebär att en sådan separat algoritm används. För varje vecka och varje månad används en metod med tvåstegsidentifiering som kallas GESD-test (Generalized Extreme Studentized Deviate). I detta test beaktas det maximala antalet förväntade avvikelser i kombination med den justerade boxrumsmetoden (en icke-parametrisk metod för oulier-upptäckt) för att fastställa det maximala antalet avvikande värden. De två stegen är:
 
