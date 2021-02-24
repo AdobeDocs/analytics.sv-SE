@@ -5,7 +5,7 @@ title: Översikt över behandlingsregler
 topic: Administratörsverktyg
 uuid: 6b4ee7c9-2b86-47a6-b64c-c8d644fff67d
 translation-type: tm+mt
-source-git-commit: a42fdbf2938f08ab09f9be7e0e3e89bab4f50eae
+source-git-commit: 7f34aa3b5056c56516daea6144723a1751ef9051
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 2%
@@ -62,4 +62,4 @@ Bearbetningsregler kan övervaka inkommande värden för att omforma vanliga typ
 
 När kontextdatavariabler definieras i implementeringen måste de kopieras till variabler som eVars för att användas vid rapportering.
 
-Mer information finns i [Kopiera en kontextdatavariabel till en eVar](processing-rules-examples/processing-rules-copy-context-data.md) och [Ange en händelse med hjälp av en kontextdatavariabel](/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md).
+Mer information finns i [Kopiera en kontextdatavariabel till en eVar](processing-rules-examples/processing-rules-copy-context-data.md) och [Ange en händelse med hjälp av en kontextdatavariabel](processing-rules-examples/processing-rules-copy-context-data-event.md).
