@@ -1,44 +1,46 @@
 ---
-description: Du kan använda metoden s.tl() för att spåra anpassade element och för att konfigurera övertäckningsåtergivning för dynamiskt innehåll.
-title: Använda metoden s.tl()
-topic: Activity map
-uuid: 59e062af-6a1c-46ff-9c3b-6cf7a0453711
+title: Använd metoden tl() med Activity Map
+description: Du kan använda metoden tl() för att spåra anpassade element och för att konfigurera övertäckningsåtergivning för dynamiskt innehåll.
+topic: Aktivitetskarta
 translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+source-git-commit: 65cb0a49ef74156f0b8adf4a11c6fec6394d306f
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 0%
 
 ---
 
 
-# Använda `tl()` metoden
+# Använd metoden `tl()` med Activity Map
 
-Du kan använda metoden för att spåra anpassade element och för att konfigurera överläggsåtergivning för dynamiskt innehåll. `tl()`
+Du kan använda metoden `tl()` för att spåra anpassade element och för att konfigurera övertäckningsåtergivning för dynamiskt innehåll.
 
-## Spåra anpassade element {#section_5D6688DFFFC241718249A9A0C632E465}
+## Spåra anpassade element
 
-Med hjälp av [`tl()` metoden](/help/implement/vars/functions/tl-method.md) som en del av Activity Map AppMeasurement-modulen kan du spåra alla objekt som du klickar på, även objekt som inte är ankartaggar eller bildelement. Med s.tl kan du spåra alla anpassade element som inte medför att sidan läses in.
+Med metoden [`tl()`](/help/implement/vars/functions/tl-method.md) som en del av modulen Activity Map AppMeasurement kan du spåra alla objekt som du klickar på, även objekt som inte är ankartaggar eller bildelement. Med `tl()` kan du spåra alla anpassade element som inte resulterar i sidinläsning.
 
-I `tl()` metoden är det den `linkName` parameter som används för att identifiera avslutslänkar, anpassade länkar osv. används nu även för att identifiera länk-ID:t för aktivitetskartan.
+I metoden `tl()` används parametern `linkName` för att identifiera avslutslänkarna, anpassade länkar osv. används nu även för att identifiera Link ID för variabeln Activity Map.
 
 ```js
-s.tl(this,linkType,linkName,variableOverrides)
+s.tl([Link object],[Link type],[Link name],[Override variable]);
 ```
 
-Med andra ord, om du använder `s.tl()` för att spåra dina anpassade element hämtas länk-ID:t från värdet som skickas som den tredje parametern (linkName) i `s.tl()` metoden. Den hämtas inte från den standardalgoritm för länkspårning som används för [standardspårning](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md) i aktivitetskartan.
+Med andra ord, om du använder `tl()` för att spåra dina anpassade element hämtas länk-ID:t från värdet som skickas som den tredje parametern (länknamn) i metoden `tl()`. Den hämtas inte från den standardalgoritm för länkspårning som används för [standardspårning](activitymap-link-tracking-methodology.md) i Activity Map.
 
-## Överläggsåtergivning för dynamiskt innehåll {#section_FD24B61A732149C7B58BA957DD84A5E7}
+## Överläggsåtergivning för dynamiskt innehåll
 
-När funktionen s.tl() anropas direkt från HTML-elementets on-click-händelse kan aktivitetskartan visa en övertäckning för det elementet när webbsidan läses in. Exempel:
+När metoden `tl()` anropas direkt från HTML-elementets on-click-händelse kan Activity Map visa en övertäckning för det elementet när webbsidan läses in. Exempel:
 
 ```html
-<div onclick="s.tl(this,'o','Example custom link')">Example link text</a>
+<a href="javascript:" onclick="s.tl(this,'o','Example custom link');">Example link text</a>
 ```
 
-När webbsidesinnehåll läggs till på sidan efter att den första sidan har lästs in, anropas metoden indirekt och vi kan inte visa övertäckningar för det nya innehållet om det inte uttryckligen aktiveras/klickas. `tl()` Därefter utlöses en ny länksamlingsprocess från aktivitetskartan.
+När webbsidesinnehåll läggs till på sidan efter att den första sidan har lästs in, anropas metoden `tl()` indirekt och vi kan inte visa övertäckningar för det nya innehållet om det inte uttryckligen aktiveras/klickas. Därefter utlöses en ny länksamlingsprocess från Activity Map.
 
-När `tl()` metoden inte anropas direkt från HTML-elementets on-click-händelse kan aktivitetskartan bara visa övertäckning när användaren har klickat på elementet. Här är ett exempel där `tl()` metoden anropas indirekt:
+När metoden `tl()` inte anropas direkt från HTML-elementets on-click-händelse, kan Activity Map bara visa övertäckning när användaren har klickat på det elementet. Här är ett exempel där metoden `tl()` anropas indirekt:
 
 ```html
-<div onclick="someFn(event)"></div>
+<a href="javascript:" onclick="someFn(event);">Example link text</a>
 <script>function someFn (event)
 {
   s.tl(event.srcElement,'o','Example custom link');
@@ -46,14 +48,18 @@ När `tl()` metoden inte anropas direkt från HTML-elementets on-click-händelse
 </script>
 ```
 
-Det bästa sättet för Activity Map att täcka över länkar med dynamiskt innehåll är att ha en anpassad ActivityMap.link-funktion inställd så att den anropar samma funktion vars returvärde skickas till `s.tl`. Exempel:
+Det bästa sättet för Activity Map att täcka över länkar för dynamiskt innehåll är att ha en anpassad `ActivityMap.link`-funktion inställd så att den anropar samma funktion vars returvärde skickas till `tl()`. Exempel:
 
 ```js
 var originalLinkFunction = s.ActivityMap.link;
-s.ActivityMap.link = function(element,linkName) {
-    return linkName ||      // if this is a s.tl call, just return string passed
-        makeLinkName(element) || // this is ActivityMap reporting time
-        originalLinkFunction(element,linkName); // our custom function didn't return anything, so just return the default ActivityMap Link
+s.ActivityMap.link = function(element,linkName)
+{
+    // if this is a s.tl call, just return string passed
+    return linkName ||      
+    // this is ActivityMap reporting time
+    makeLinkName(element) ||
+    // our custom function didn't return anything, so just return the default ActivityMap Link
+    originalLinkFunction(element,linkName);
 };
 ```
 
@@ -61,8 +67,8 @@ s.ActivityMap.link = function(element,linkName) {
 <button type="button" onclick="s.tl(this,'o',makeLinkName(this)">Add To Cart</button>
 ```
 
-Här har vi åsidosatt funktionen ActivityMap.link för att göra en av tre saker när den anropas:
+Här har vi åsidosatt funktionen `ActivityMap.link` för att göra en av tre saker när den anropas:
 
-1. Om linkName skickas anropas detta av s.tl(), så returnera bara det som s.tl skickade som linkName.
-2. Detta anropas av Activity Map vid rapporttidpunkten, så linkName skickas aldrig och anropa makeLinkName() med link-elementet. Det här är det avgörande steget här - anropet &quot;makeLinkName(element)&quot; ska vara detsamma vid s.tl-anropets tredje argument i `<button>` -taggen. Det innebär att när s.tl anropas spåras strängen som returneras av makeLinkName. När aktivitetskartan rapporterar på länkarna på sidan används samma anrop för att skapa en länk.
-3. Den sista lösningen är bara att returnera det ursprungliga returvärdet för länkfunktionen ActivityMap. Om du behåller den här referensen så att den anropas i standardfallet behöver du bara åsidosätta eller skriva anpassad kod för makeLinkName och inte behöva ange ett länkreturvärde för alla länkar på sidan.
+1. Om `linkName` skickas anropades detta av `tl()`, så returnera bara det `tl()` som skickades som `linkName`.
+2. När det anropas av Activity Map vid rapporteringstidpunkten skickas aldrig en `linkName`, och anropa därför `makeLinkName()` med länkelementet. Detta är det avgörande steget här - anropet `makeLinkName(element)` ska vara samma som anropets tredje argument i taggen `<button>`. `tl()` Det innebär att när `tl()` anropas spåras strängen som returneras av `makeLinkName()`. När Activity Map rapporterar på länkarna på sidan används samma anrop för att skapa en länk.
+3. Den sista lösningen är bara att returnera det ursprungliga returvärdet för länkfunktionen ActivityMap. Om du behåller den här referensen så att den anropas i standardfallet behöver du bara åsidosätta eller skriva anpassad kod för `makeLinkName()` och inte behöva ange ett länkreturvärde för alla länkar på sidan.
