@@ -2,9 +2,9 @@
 title: Implementera med AMP
 description: Implementera Adobe Analytics på AMP-sidor.
 translation-type: tm+mt
-source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
+source-git-commit: c3c581eab8a4677831968574c9fb8d6f6eadd7e9
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -12,16 +12,16 @@ ht-degree: 0%
 
 # Implementera med AMP
 
-[AMP](https://amp.dev) är ett HTML-ramverk med öppen källkod som ger ett enkelt sätt att skapa snabba och smidiga webbsidor.
+[AMP ](https://amp.dev) är ett HTML-ramverk med öppen källkod som ger ett enkelt sätt att skapa snabba och smidiga webbsidor.
 
 Eftersom Adobe Analytics använder ett JavaScript-bibliotek för att kompilera och skicka en bildbegäran, krävs justeringar i implementeringen för att skicka data till Adobe på sidor med AMP.
 
 ## Bestäm vilken metod som ska användas för att implementera Adobe Analytics på sidor med AMP
 
-Adobe har skapat två metoder för att implementera Adobe Analytics på sidor med AMP. Båda använder `<amp-analytics>` HTML-taggen. Mer information finns i taggen [](https://github.com/ampproject/amphtml/tree/master/extensions/amp-analytics) amp-analytics på GitHub-projektet för ampproject.
+Adobe har skapat två metoder för att implementera Adobe Analytics på sidor med AMP. Båda använder HTML-taggen `<amp-analytics>`. Mer information finns i [amp-analystagg](https://amp.dev/documentation/components/amp-analytics) i AMP:s dokumentation.
 
-* **Använd `"adobeanalytics"` spårningsmallen**: Skapa Analytics-begäran direkt på sidan
-* **Använd `"analytics_nativeConfig"` spårningsmallen**: Använd en iframe som innehåller samma AppMeasurement-kod som du distribuerar på din normala webbplats
+* **Använd  `"adobeanalytics"` spårningsmallen**: Skapa Analytics-begäran direkt på sidan
+* **Använd  `"analytics_nativeConfig"` spårningsmallen**: Använd en iframe som innehåller samma AppMeasurement-kod som du distribuerar på din normala webbplats
 
 I följande tabell jämförs dessa två metoder:
 
@@ -35,17 +35,17 @@ I följande tabell jämförs dessa två metoder:
 | Svårighet att genomföra | Något svårt | relativt enkelt |
 | Adobe Experience Cloud integreringar | Stöds inte | Delvis stöd |
 
-Väg in proffsen och ikonerna i organisationen för att avgöra vilken metod du vill använda. Se [AMP-exempel](https://github.com/Adobe-Marketing-Cloud/mobile-services/tree/master/samples/mobile-web) på Adobe GitHub-databasen för exempelkod.
+Väg in proffsen och ikonerna i organisationen för att avgöra vilken metod du vill använda. Se [AMP-exempel](https://github.com/Adobe-Marketing-Cloud/mobile-services/tree/master/samples/mobile-web) i Adobe GitHub-databasen för exempelkod.
 
 >[!WARNING]
 >
->Använd inte både `"adobeanalytics"` - och `"adobeanalytics_nativeConfig"` -mallarna på samma sida med AMP. Om du försöker göra det kan du generera fel i webbläsarkonsolen och dubbelräkna besökare.
+>Använd inte båda mallarna `"adobeanalytics"` och `"adobeanalytics_nativeConfig"` på samma sida med AMP. Om du försöker göra det kan du generera fel i webbläsarkonsolen och dubbelräkna besökare.
 
 ## Metod 1: Använd taggen amp-analytics med mallen&quot;adobeanalytics&quot;
 
-Spårningsmallen använder `"adobeanalytics"` `<amp-analytics>` HTML-taggen för att skapa en spårningsbegäran direkt. Du kan ange träffförfrågningar som startar vid specifika sidhändelser, som att sidan blir synlig eller vid ett klick. Klickhändelser kan anpassas för att tillämpas på vissa element-ID:n eller klasser genom att du anger en väljare. Du kan läsa in mallen genom `type="adobeanalytics"` att lägga till den i taggen amp-analytics.
+Spårningsmallen `"adobeanalytics"` använder HTML-taggen `<amp-analytics>` för att skapa en spårningsbegäran direkt. Du kan ange träffförfrågningar som startar vid specifika sidhändelser, som att sidan blir synlig eller vid ett klick. Klickhändelser kan anpassas för att tillämpas på vissa element-ID:n eller klasser genom att du anger en väljare. Du kan läsa in mallen genom att lägga till `type="adobeanalytics"` till taggen amp-analytics.
 
-I följande kodexempel har två utlösare definierats: `pageLoad` och `click`. Utlösaren aktiveras när dokumentet blir synligt och innehåller den `pageLoad` variabel som definieras i `pageName` `vars` avsnittet. Den andra utlösaren `click` utlöses när någon klickar på en knapp. `eVar1` är inställd för den här händelsen med värdet `button clicked`.
+I följande kodexempel har två utlösare definierats: `pageLoad` och `click`. Utlösaren `pageLoad` aktiveras när dokumentet blir synligt och innehåller variabeln `pageName` som definieras i avsnittet `vars`. Den andra utlösaren `click` utlöses när någon klickar på en knapp. `eVar1` är inställd för den här händelsen med värdet  `button clicked`.
 
 ```html
 <amp-analytics type="adobeanalytics">
@@ -78,15 +78,15 @@ I följande kodexempel har två utlösare definierats: `pageLoad` och `click`. U
 </amp-analytics>
 ```
 
-I `click` utlösaren kan du ange en väljare som ser till att när någon klickar på det specifika DOM-elementet (i det här fallet en knapp), utlöses `buttonClick` begäran och ställs in automatiskt för att ange den här träffen som ett länkspårningsanrop.
+I `click`-utlösaren kan du ange en väljare som ser till att när någon klickar på det specifika DOM-elementet (i det här fallet en knapp), utlöses `buttonClick`-begäran och ställs in automatiskt för att ange att träffen ska vara ett länkspårningsanrop.
 
-Dessutom har stöd för ett antal variabelersättningar så att AMP kan tillhandahålla datavärden som man känner till. `amp-analytics` Mer information finns i [variabler som stöds i](https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/analytics-vars.md) amp-analytics på GitHub.
+`amp-analytics` har dessutom stöd för ett antal variabelersättningar så att AMP kan tillhandahålla datavärden som det känner till. Mer information finns i [variabler som stöds i amp-analytics](https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/analytics-vars.md) i GitHub.
 
 >[!NOTE]
 >
->Bildbegäranden som skickas till Adobe med den här metoden innehåller inte data för många standardrapporter (till exempel webbläsare, skärmstorlek eller referent). Om du vill ta med den här informationen i träffar kontrollerar du att de ingår i frågesträngen för bildbegäran. Mer information finns i [Frågeparametrar](../validate/query-parameters.md) för datainsamling.
+>Bildbegäranden som skickas till Adobe med den här metoden innehåller inte data för många standardrapporter (till exempel webbläsare, skärmstorlek eller referent). Om du vill ta med den här informationen i träffar kontrollerar du att de ingår i frågesträngen för bildbegäran. Mer information finns i [Frågeparametrar för datainsamling](../validate/query-parameters.md).
 
-Adobe identifierar besökare med en inbyggd AMP-funktion och ställer in cookien `adobe_amp_id`. Detta besökar-ID är unikt för alla andra ID:n som har angetts av Adobe Analytics (till exempel `s_vi` cookie). Adobe Experience Cloud ID-tjänsten stöds inte med den här implementeringsmetoden.
+Adobe identifierar besökare med en inbyggd AMP-funktion och ställer in cookien `adobe_amp_id`. Detta besökar-ID är unikt för alla andra ID:n som har angetts av Adobe Analytics (till exempel `s_vi`-cookien). Adobe Experience Cloud ID-tjänsten stöds inte med den här implementeringsmetoden.
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ Den här lösningen kräver att den spårningsserver som du anger i egenskapen `
 
 ## Metod 2: Använd taggen amp-analytics med mallen&quot;adobeanalytics_nativeConfig&quot;
 
-Taggen är enklare att implementera eftersom den använder samma taggmetod som du använder på dina vanliga webbsidor. `"adobeanalytics_nativeConfig"` Lägg till följande i din `amp-analytics` tagg:
+Taggen `"adobeanalytics_nativeConfig"` är enklare att implementera eftersom den använder samma taggningsmetod som du använder på dina vanliga webbsidor. Lägg till följande i din `amp-analytics`-tagg:
 
 ```html
 <amp-analytics type="adobeanalytics_nativeConfig">
@@ -152,13 +152,13 @@ En HTML-sida på dina webbservrar krävs också:
 </html>
 ```
 
-Den här metoden skickar data till en verktygswebbsida via frågesträngsparametrar som har lagts till i parametern request `iframeMessage` . Dessa frågesträngsparametrar kan namnges precis som du vill, förutsatt att din `stats.html` sida har konfigurerats för att samla in data från dem.
+Det här arbetssättet skickar data till en verktygswebbsida via frågesträngsparametrar som har lagts till i parametern `iframeMessage` request. Dessa frågesträngsparametrar kan namnges precis som du vill, förutsatt att din `stats.html`-sida är konfigurerad för att samla in data från dem.
 
-I mallen läggs också frågesträngsparametrar till baserat på de variabler som listas i avsnittet i `"adobeanalytics_nativeConfig"` `extraUrlParams` taggen amp-analytics. I ovanstående exempel inkluderas parametrarna `pageName` och `v1` .
+Mallen `"adobeanalytics_nativeConfig"` lägger också till frågesträngsparametrar baserade på variablerna som listas i avsnittet `extraUrlParams` i taggen amp-analytics. I ovanstående exempel inkluderas parametrarna `pageName` och `v1`.
 
 >[!IMPORTANT]
 >
->Din `stats.html` sida måste ligga på en separat underdomän från den domän som AMP-servern finns på. AMP-ramverket tillåter inte iframes från samma underdomän som själva AMP-sidan finns på. Om din AMP till exempel ligger på `amp.example.com`en värdserver, kan du lägga din `stats.html` sida på en separat underdomän, till exempel `ampmetrics.example.com`.
+>Din `stats.html`-sida måste finnas på en separat underdomän från den domän där AMP finns. AMP-ramverket tillåter inte iframes från samma underdomän som själva AMP-sidan finns på. Om din AMP till exempel finns på `amp.example.com`, ska du lägga din `stats.html`-sida på en separat underdomän som `ampmetrics.example.com`.
 
 Om en användare väljer den här metoden och inte vill följa spårningen på din primära plats, avanmäls de också från spårning på alla AMP:er. Att använda den här verktygssidan innebär också att AMP kan stödja Adobe Experience Cloud ID-tjänsten. Det krävs ingen separat rapportserie.
 
@@ -168,12 +168,12 @@ Länkspårning och videospårning kan inte användas med den här metoden. Tagge
 
 **Är videospårning tillgängligt för båda metoderna?**
 
-Nej. AMP-standarden stöder bara utlösare för &quot;visible&quot;, &quot;click&quot; och &quot;timer&quot;. Den stöder ännu inte explicita utlösare för videospårning som `amp-analytics` -taggen kan lyssna på. Mallen kan dessutom bara läsas in en gång, så efterföljande bildbegäranden efter att en sida har lästs in är inte möjliga. `"adobeanalytics_nativeConfig"`
+Nej. AMP-standarden stöder bara utlösare för &quot;visible&quot;, &quot;click&quot; och &quot;timer&quot;. Det stöder ännu inte explicita utlösare för videospårning som `amp-analytics`-taggen kan lyssna på. Dessutom kan mallen `"adobeanalytics_nativeConfig"` bara läsas in en gång, så efterföljande bildbegäranden efter att en sida har lästs in är inte möjliga.
 
 **Hur kan jag skilja AMP-besökare från andra i mina data?**
 
-För alla AMP-sidor samlar [!UICONTROL JavaScript Version] dimensionen in ett värde som liknar `AMP vX.X`. Du kan också ställa in en anpassad dimension på AMP så att du kan segmentera dessa besökare.
+För alla AMP-sidor samlar dimensionen [!UICONTROL JavaScript Version] in ett värde som liknar `AMP vX.X`. Du kan också ställa in en anpassad dimension på AMP så att du kan segmentera dessa besökare.
 
 **Hur skiljer sig den här implementeringsmetoden från Facebook Instant Articles?**
 
-Direktartiklar på Facebook stöder en lösning som liknar `"adobeanalytics_nativeConfig"` metoden. Sidan `stats.html` för den här metoden kan tillgodose analysbehoven för både AMP och FIA samtidigt. Mer information om hur du implementerar spårning på FIA finns i [Direktartiklar](fb-instant-articles.md)på Facebook.
+Direktartiklar på Facebook stöder en lösning som liknar metoden `"adobeanalytics_nativeConfig"`. Sidan `stats.html` för den här metoden kan tillgodose analysbehoven för både AMP och FIA samtidigt. Mer information om hur du implementerar spårning på FIA finns i [Facebook Instant Articles](fb-instant-articles.md).
