@@ -5,10 +5,10 @@ user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
 translation-type: tm+mt
-source-git-commit: ae75341a1fcf15044c385d9d8ea2048190b9c1c3
+source-git-commit: 35f0f3fb9a349b7fceb035be771ee462ec0799aa
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 91%
+source-wordcount: '735'
+ht-degree: 90%
 
 ---
 
@@ -176,8 +176,9 @@ ht-degree: 91%
       + [Anpassa dimensionsbehörigheter](user-management2/c-customize-report-access/groups-dimensions.md)
    + [E-postanvändare](user-management2/t-email-users.md)
 + Datastyrning {#data-governance}
-   + [Adobe Analytics och GDPR](c-data-governance/an-gdpr-overview.md)
+   + [Adobe Analytics och GDPR - översikt](c-data-governance/an-gdpr-overview.md)
    + [Adobe Analytics och CCPA](c-data-governance/an-ccpa-overview.md)
+   + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
    + [Frågor och svar](c-data-governance/gdpr-faq.md)
    + [Arbetsflöde för datasekretess i Adobe Analytics](c-data-governance/an-gdpr-workflow.md)
    + [Visa/hantera rapportsvitens inställningar för datastyrning](c-data-governance/gdpr-view-settings.md)
