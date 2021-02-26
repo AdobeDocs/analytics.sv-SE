@@ -4,9 +4,9 @@ title: Hantera segment
 topic: Report builder
 uuid: 4e4edc39-ed93-498f-913d-7b231b10e7a0
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -16,18 +16,18 @@ ht-degree: 3%
 
 Så här lägger du till, redigerar, tillämpar och filtrerar Adobe Analytics-segment i Report Builder.
 
-I Report Builder finns en segmenteringspanel i steg 1 i begärandeguiden där du kan skapa och hantera segment.
+Report Builder har en segmenteringspanel i steg 1 i begärandeguiden där du kan skapa och hantera segment.
 
 ![](assets/seg_dialog.png)
 
-## Lägga till eller redigera segment {#section_B2BC136F9A53498D90C7C2ECC5DB892B}
+## Lägg till eller redigera segment {#section_B2BC136F9A53498D90C7C2ECC5DB892B}
 
 >[!NOTE]
 >
->Om du vill lägga till eller redigera segment startar segmentgränssnittet i Report Builder Analytics segmentbyggare i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
+>Om du vill lägga till eller redigera segment startar segmentgränssnittet i Report Builder segmentet segmentverktyget i segmentet Analytics i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
 
-1. Klicka på i segmentpanelen i steg 1 i begärandeguiden **[!UICONTROL Add]**.
-1. Ett Internet Explorer-fönster öppnas som öppnar Analytics Segment Builder-gränssnittet. Mer information om hur du skapar segment finns i [Analytics-segmentering](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
+1. Klicka på **[!UICONTROL Add]** på segmentpanelen i steg 1 i begärandeguiden.
+1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns i [Analyssegmentering](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
 1. När du har definierat och sparat segmentet går du tillbaka till Begärandeguiden.
 1. Klicka på ikonen Uppdatera för att uppdatera segmentlistan.
 
@@ -35,29 +35,29 @@ I Report Builder finns en segmenteringspanel i steg 1 i begärandeguiden där du
 >
 >Den här listan cachelagras och det segment du skapade visas inte om du inte uppdaterar.
 
-## Skapa sammanhangsberoende segment {#section_6DD2C663B2854469AA1075438F907678}
+## Skapa kontextsegment {#section_6DD2C663B2854469AA1075438F907678}
 
-Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla till ett segment. Du kan skapa de här segmenten från gränssnittet i Report Builder. Välj till exempel några sidor från en sidförfrågan och skapa ett segment baserat på dessa värden.
+Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla till ett segment. Du kan skapa de här segmenten från Report Builder-gränssnittet. Välj till exempel några sidor från en sidförfrågan och skapa ett segment baserat på dessa värden.
 
 1. Markera de rapportutdataobjekt som du vill omvandla till ett segment.
-1. Högerklicka för att markera **[!UICONTROL Create In-Context Segment in]** och ange rätt behållare (träffar-behållare, besöksbehållare, besöksbehållare).
+1. Högerklicka för att välja **[!UICONTROL Create In-Context Segment in]** och ange rätt behållare (träffar-behållare, besöksbehållare, besöksbehållare).
 
    ![](assets/seg_in_context.png)
 
-   Mer information om behållare finns i [segmenteringshandboken](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
+   Mer information om behållare finns i [Segmenteringshandboken](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
 
 1. Segment Builder-gränssnittet kommer nu att startas i Internet Explorer. Användargränssnittet för segmentbyggaren initieras med den behållare och det filter som du angav.
-1. När du har lagt till ett namn och en beskrivning för segmentet sparar du det.
+1. När du har lagt till ett namn och en beskrivning i segmentet sparar du det.
 1. Gå tillbaka till Report builder och klicka på ikonen Uppdatera för att uppdatera listan med segment.
 1. Du kan nu använda det här segmentet.
 
-## Söka efter och använda segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
+## Sök efter och tillämpa segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
 
-Alla segment som har skapats i Rapporter &amp; Analytics, Ad Hoc Analysis, Report Builder eller Data warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ( ![](assets/refresh_icon.png).
+Alla segment som har skapats i Rapporter och analyser, Report Builder eller Data warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ( ![](assets/refresh_icon.png)).
 
 Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar sekventiella segment.
 
-1. Gå till **[!UICONTROL Segment]** listrutan och klicka på den lilla nedåtpilen i **[!UICONTROL Choose Segment]** rutan för att visa alla segment.
+1. Gå till listrutan **[!UICONTROL Segment]** och klicka på den lilla nedåtpilen i rutan **[!UICONTROL Choose Segment]** för att visa alla segment.
 
    ![](assets/seg_list.png)
 
@@ -65,19 +65,19 @@ Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar 
 
 >[!NOTE]
 >
->Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig. (I gränssnittet Marketing Reports &amp; Analytics kan administratören se alla segment i organisationen.)
+>Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig. (I användargränssnittet Marketing Reports &amp; Analytics kan administratören se alla segment i organisationen.)
 
 ## Filtrera segment {#section_376E986D3E684999A7CDB08E53854159}
 
-**Filtrera** segment genom att klicka på filterikonen:  ![](assets/segment_filter.png)
+**Filtrera** segment genom att klicka på filterikonen:   ![](assets/segment_filter.png)
 
 Tillgängliga filter:
 
 | Filternamn | Beskrivning |
 |---|---|
-| Taggar | Gör att du kan filtrera segment med specifika taggar. Observera att taggfilter använder operatorn AND. Om du markerar två taggar visar den högra rutan segment som har taggats med **båda** taggarna. |
-| Ägare | Gör att du kan filtrera segment efter ägare. Observera att ägarfilter använder operatorn OR. Om du markerar två ägare visas de segment i den högra rutan som ägs av **endera** ägaren. |
-| Andra filter > Endast *rapportsvitens namn* | Om du använder filtret&quot;Endast *rapportsvitens namn*&quot; i segmentbyggaren i [!DNL marketing reports & analytics]och sedan visar det avancerade filtret i [!DNL report builder]visas endast segmentet för den valda rapportsviten. |
+| Taggar | Gör att du kan filtrera segment med specifika taggar. Observera att taggfilter använder operatorn AND. Om du markerar två taggar visar den högra rutan segment som har taggats med **båda**-taggarna. |
+| Ägare | Gör att du kan filtrera segment efter ägare. Observera att ägarfilter använder operatorn OR. Om du markerar två ägare visar den högra rutan segment som ägs av **antingen**-ägaren. |
+| Andra filter > Endast *rapportsvitens namn* | Om du använder filtret&quot;Endast *rapportsvitens namn*&quot; i segmentbyggaren i [!DNL marketing reports & analytics] och sedan visar det avancerade filtret i [!DNL report builder], visar filtret Avancerat endast segmentet för den valda rapportsviten. |
 | Andra filter > Mitt | Visar alla segment som du äger. |
 | Andra filter > Delat med mig | Visar alla segment som andra delar med dig. |
 | Andra filter > Favoriter | Visar alla segment som du har markerat som Favoriter. |
@@ -98,17 +98,17 @@ Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbo
    * Om den inte är markerad uppdateras de associerade parametrarna för begäran, men förfrågningarna uppdateras inte.
 
 1. Ange segmentkontrollens övre vänstra cellplacering.
-1. Klicka **[!UICONTROL OK]** så visas segmentkontrollen på den angivna platsen.
+1. Klicka på **[!UICONTROL OK]** så visas segmentkontrollen på den angivna platsen.
 
    ![](assets/seg_control2.png)
 
 ## Uppdatera listan med segment {#section_22E4A86789444B4A998532396B476EFB}
 
-När du lägger till ett nytt segment eller redigerar ett befintligt bör du klicka på ikonen Uppdatera ( ![](assets/refresh_icon.png) för att uppdatera den cachelagrade listan med segment.
+När du lägger till ett nytt segment eller redigerar ett befintligt bör du klicka på ikonen Uppdatera ( ![](assets/refresh_icon.png)) för att uppdatera den cachelagrade listan med segment.
 
-## Hantera segment över förfrågningar {#section_C3D63FCBE1A94369A319243313B03C93}
+## Hantera segment över begäranden {#section_C3D63FCBE1A94369A319243313B03C93}
 
-Före v5.4 kunde användare ändra segment vid flera begäranden med Report Builder. Den här processen ersätter dock alltid de befintliga segmenten. Användare som vill lägga till ett nytt segment i varje begäran kunde inte göra detta eftersom den tidigare uppsättningen segment som redan tilldelats varje begäran skulle tas bort om segmentet lades till.
+Före v5.4 kan Report Builder ändra segment vid flera förfrågningar. Den här processen ersätter dock alltid de befintliga segmenten. Användare som vill lägga till ett nytt segment i varje begäran kunde inte göra detta eftersom den tidigare uppsättningen segment som redan tilldelats varje begäran skulle tas bort om segmentet lades till.
 
 Med Report Builder 5.4 kan du lägga till, ta bort, ersätta och ersätta alla segment i flera begäranden:
 
