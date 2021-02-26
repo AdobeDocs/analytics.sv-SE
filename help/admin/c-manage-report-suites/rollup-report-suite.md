@@ -1,12 +1,12 @@
 ---
 description: Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsviter och visar dem i en sammanfattande datauppsättning.
 title: Sammanslagning och globala rapportsviter
-topic: Admin tools
+topic: Administratörsverktyg
 uuid: c90b8e38-2c95-4318-8165-a362106b6142
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '568'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsvit
 
 >[!TIP]
 >
->Om du bara använder en global rapportserie med [virtuella rapportsviter](../../components/vrs/vrs-considerations.md)behövs inga sekundära serveranrop.
+>Om du bara använder en global rapportserie med [virtuella rapportsviter](../../components/vrs/vrs-considerations.md) behövs inga sekundära serveranrop.
 
 **Implementeringsändringar**: Vid sammanslagning krävs inga implementeringsändringar, medan globala rapportsviter kräver att du inkluderar det globala rapportsvitens ID i implementeringen.
 
@@ -53,6 +53,6 @@ Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsvit
 
 **Rapporter**: Globala rapportsviter innehåller data om alla dimensioner. sammanslagningar tillhandahåller aggregerade data på enbart högnivårapporter.
 
-**Produkter** som stöds: Samlingar kan bara användas i Rapporter och Analytics. De stöds inte i Analysis Workspace, Data warehouse eller Ad Hoc Analysis. Globala rapportsviter kan användas för alla produkter.
+**Produkter** som stöds: Samlingar kan bara användas i rapporter och analyser. De stöds inte i Analysis Workspace eller Data warehouse. Globala rapportsviter kan användas för alla produkter.
 
 **Antal aggregerade rapportsviter**: Samlingar stöder endast maximalt 40 underordnade rapportsviter. Globala rapportsviter kan implementeras på valfritt antal domäner eller appar som du äger.
