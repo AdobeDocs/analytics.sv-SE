@@ -2,9 +2,9 @@
 title: Adobe Analytics Permissions - summary tables
 description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Admin Console.
 translation-type: tm+mt
-source-git-commit: ef0a917c10959e59ad4e7ea1a4e9a019558f7325
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1243'
 ht-degree: 4%
 
 ---
@@ -89,7 +89,7 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Trafikhantering | x |  |  |  | Ger åtkomst till Admin > Traffic Management. |
 | Webbtjänster | x |  |  |  | Ger åtkomst till Admin > Företagsinställningar > Webbtjänster. |
 | Activity Map |  | x |  |  | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
-| Ad Hoc Analysis License Users |  | x |  |  | Aktiverar hämtningsknappen under Verktyg > Ad Hoc Analysis och tillåter användaren att autentisera med verktyget. [Mer information](https://spark.adobe.com/page/S9Bhp66VJ2fEn/). |
+| Ad Hoc Analysis License Users |  | x |  |  | Ad Hoc Analysis har blivit uppsagd. [Mer information](https://spark.adobe.com/page/S9Bhp66VJ2fEn/). |
 | Analysis Workspace Access |  | x |  |  | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra den här gruppen (helst) eller Rapporter och analyser för att kunna använda Adobe Analytics. |
 | Analysis Workspace: Spara som mall |  | x |  |  | Ger åtkomst till Projekt > Spara som mall i Analysis Workspace. |
 | Skapande av beräknade mätvärden |  | x |  |  | Ger möjlighet att skapa beräknade värden för alla Analytics-funktioner. |
