@@ -3,12 +3,15 @@ description: Rättigheter för beräknade värden skiljer sig mellan användare 
 title: Rollbaserade rättigheter för beräknade mätvärden
 uuid: 7c14d32d-370c-4afa-8f80-5bbd8fc12ec7
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 6%
 
 ---
 
 
-# Beräknade mått: rollbaserade rättigheter
+# Beräknade mätvärden: rollbaserade behörigheter
 
 Rättigheter för beräknade värden skiljer sig mellan användare på administratörsnivå och icke-administratörer.
 
@@ -26,9 +29,9 @@ Rättigheter för beräknade värden skiljer sig mellan användare på administr
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Användare på administratörsnivå</b> </td> 
-   <td colname="col02"> Administratörer kan skapa beräknade värden och skapa <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-groups/groups.html"  > grupper </a> för att begränsa användarnas behörighet att skapa beräknade värden. </td> 
+   <td colname="col02"> Administratörer kan skapa beräknade värden och skapa <a href="https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html"  > grupper </a> för att begränsa användarnas behörighet att skapa beräknade värden. </td> 
    <td colname="col2"> Kan delas med hela företaget, med användargrupper och med enskilda användare. </td> 
-   <td colname="col3"> <span class="keyword"> Rapporter och analyser</span>: Kan visa/redigera/ta bort/etc. egna och andra användares beräknade värden. <p> <span class="keyword"> Ad hoc-analys </span> och <span class="keyword"> Report Builder </span>: Kan visa/redigera/ta bort/etc. sina egna beräknade värden och de som delas med dem. </p> </td> 
+   <td colname="col3"> <span class="keyword"> Rapporter och analyser</span>: Kan visa/redigera/ta bort/etc. egna och andra användares beräknade värden. <p> <span class="keyword"> Report Builder  </span>: Kan visa/redigera/ta bort/etc. sina egna beräknade värden och de som delas med dem. </p> </td> 
    <td colname="col4"> Kan godkänna beräknade värden som kanoniska. </td> 
    <td colname="col5"> Kan använda alla beräknade värden i hela organisationen. </td> 
   </tr> 
