@@ -1,13 +1,13 @@
 ---
 description: Segmentfunktionaliteten skiljer sig nu oftast mellan användare på administrationsnivå och icke-administratörer.
 title: Segmentbehörigheter efter roll
-topic: Segments
+topic: Segment
 uuid: 62b742c5-c918-45b7-98c7-f6badc0b9fc7
 translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 5%
+source-wordcount: '134'
+ht-degree: 6%
 
 ---
 
@@ -30,7 +30,7 @@ Segmentfunktionaliteten skiljer sig nu oftast mellan användare på administrati
   <tr> 
    <td colname="col1"> <b>Användare på administratörsnivå</b> </td> 
    <td colname="col2"> Kan delas med hela företaget, med användargrupper och med enskilda användare. </td> 
-   <td colname="col3"> <span class="keyword"> Analysis Workspace, Reports &amp; Analytics </span>: Kan visa/redigera/ta bort/etc. sina egna och andra användarsegment. <p> <span class="keyword"> Ad Hoc Analysis </span> och <span class="keyword"> Report Builder </span>: Kan visa/redigera/ta bort/etc. sina egna segment och de som delas med dem. </p> </td> 
+   <td colname="col3"> <span class="keyword"> Analysis Workspace, Reports &amp; Analytics  </span>: Kan visa/redigera/ta bort/etc. sina egna och andra användarsegment. <p> <span class="keyword"> Report Builder  </span>: Kan visa/redigera/ta bort/etc. sina egna segment och de som delas med dem. </p> </td> 
    <td colname="col4"> Kan godkänna segment som kanoniska. </td> 
    <td colname="col5"> Kan användas i alla segment i hela organisationen. </td> 
   </tr> 
