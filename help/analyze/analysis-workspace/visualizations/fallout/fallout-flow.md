@@ -3,9 +3,9 @@ description: 'null'
 title: Översikt över utfall
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '495'
 ht-degree: 2%
 
 ---
@@ -33,11 +33,11 @@ En bortfallsvisualisering är användbar vid analys av:
 * Allmänna, bredare trafikflöden: Av de personer som såg hemsidan visar det här flödet hur många som har gjort en sökning och sedan hur många som till slut gick vidare för att titta på ett visst objekt.
 * Korrelationer mellan händelser på din webbplats. Korrelationer visar hur många procent av dem som tittade på din integritetspolicy fortsatte att köpa en produkt.
 
-[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html) om fallout-visualisering (4:15)
+[Videosjälvstudievideo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)  för bortfallsvisualisering (4:15)
 
 ## Segmentering som grund för flöde och utfall {#section_654F37A398C24DDDB1552A543EE29AA9}
 
-Segment som tillämpas på arbetsytepaneler fungerar något annorlunda än segment som används i bortfalls- och flödesrapporter i rapporter och analyser eller Ad Hoc Analysis. Oftast ger de exakt samma resultat. Den största skillnaden är att Rapporter och analyser och Ad Hoc Analysis använder segmentet i varje steg i sekvensen. Detta kan ge något annorlunda resultat.
+Segment som tillämpas på arbetsytepaneler fungerar något annorlunda än segment som tillämpas på bortfalls- och flödesrapporter i rapporter och analyser. Oftast ger de exakt samma resultat. Den största skillnaden är att Rapporter och analyser använder segmentet vid varje steg i sekvensen. Detta kan ge något annorlunda resultat.
 
 Låt oss ta ett exempel på bortfallet med två steg:
 
@@ -47,15 +47,15 @@ Om du sedan använder ett segment på arbetsytans panelnivå kombineras segmente
 
 ![](assets/fallout_seg.png)
 
-När Rapporter &amp; Analytics och Ad Hoc Analysis beräknar segmentet kombineras segmentet på följande sätt:
+När Rapporter och analyser däremot beräknar segmentet kombineras segmentet på det här sättet:
 
 ![](assets/fallout_segments3.png)
 
-Rapporter och analyser och Ad Hoc Analysis kombinerar segmentet med varje steg. När behållarna är på samma nivå som utfallet (t.ex. besök eller besöksnivå) kommer detta att resultera i matchning av antalet besök eller besökare.
+Rapporter och analyser kombinerar segmentet med varje steg. När behållarna är på samma nivå som utfallet (t.ex. besök eller besöksnivå) kommer detta att resultera i matchning av antalet besök eller besökare.
 
-Om segmentet som används på panelen är mindre än utfallsnivån (t.ex. träffnivå) visas dock olika resultat på grund av hur det kombineras av rapporten. I de flesta fall matchar siffrorna i Analysis Workspace siffrorna i Rapporter och analyser och i Ad Hoc Analysis. De kommer **inte** att matcha enbart om samtliga fall nedan är uppfyllda:
+Om segmentet som används på panelen är mindre än utfallsnivån (t.ex. träffnivå) visas dock olika resultat på grund av hur det kombineras av rapporten. I de flesta fall matchar siffrorna i Analysis Workspace siffrorna i Rapporter och analyser. De **matchar inte** bara om alla fall nedan är sanna:
 
 * Segmentet är inte på samma nivå som utfallet.
 * Segmentet har en variabel där besökaren/besöket kan ha flera värden under ett besök/en besökare.
 
-I de sällsynta fall där du behöver ha Analysis Workspace som matchar metoden Rapporter och analyser för att tillämpa segment på utfall/flöde, släpper du bara segmentet i varje utfallssteg i Workspace så får du samma antal.
+I de sällsynta fall där du behöver ha Analysis Workspace som matchar metoden Rapporter och analyser för att tillämpa segment på bortfall/flöde, släpper du bara segmentet i varje utfallssteg i Workspace och ger samma antal.
