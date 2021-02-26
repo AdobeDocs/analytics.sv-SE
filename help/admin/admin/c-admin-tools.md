@@ -3,9 +3,9 @@ description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 uuid: 6961e956-14ea-4367-bdbd-eb0bcc456aae
 translation-type: tm+mt
-source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+source-git-commit: 78f67c6a58395fb9520384094c13514ef29669d2
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '155'
 ht-degree: 34%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 34%
 + [Exkludera efter IP-adress](exclude-ip.md)
 + [Sökmetoder](finding-methods.md)
 + [Allmänna kontoinställningar](general-acct-settings-admin.md)
-+ [Grupphantering](group.md)
 + [Interna URL-filter](internal-url-filter-admin.md)
 + [Loggar](logs.md)
 + [Marknadsföringskanaler](marketing-channels-admin.md)
