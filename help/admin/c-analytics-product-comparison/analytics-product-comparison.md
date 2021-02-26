@@ -1,10 +1,10 @@
 ---
-description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och analyser, Ad Hoc Analysis, Report Builder, Data warehouse och Data Workbench
+description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och analyser, Report Builder, Data warehouse och Data Workbench
 title: Produktjämförelse och krav för analyser
 translation-type: tm+mt
-source-git-commit: 8a48a5bd9e7ef38ffc90ecb9c640166bb3ac4405
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '429'
 ht-degree: 39%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 Den här sidan innehåller en jämförelse av olika Adobe Analytics-produkter: Analysis Workspace, Reports &amp; Analytics, Report Builder, Data warehouse, Data Workbench, Data Feeds och Analytics API 2.0.
 
-Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help/admin/c-analytics-product-comparison/which-analytics-tool.md).
+Information om vilken Adobe Analytics-produkt som ska användas finns [här](/help/admin/c-analytics-product-comparison/which-analytics-tool.md).
 
 | Produkt- och hjälplänk | [Analysis Workspace](/help/analyze/analysis-workspace/home.md) | [Rapporter och analyser](/help/analyze/reports-analytics/getting-started.md) | [Report Builder](/help/analyze/report-builder/home.md) | [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) | [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) | [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) | [Analytics API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
 |---|---|---|---|---|---|---|---|
-| **Åtkomstmetod** | [Webbläsare](/help/admin/sys-reqs.md) | [Webbläsare](/help/admin/sys-reqs.md) | [MS Excel för Windows](/help/analyze/report-builder/setup/system-requirements.md) | Konfigurera via webbläsaren. [Läs mer](/help/admin/sys-reqs.md) | [Windows 64 bitar](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html) | Konfigurera via webbläsaren. [Läs mer](/help/export/analytics-data-feed/data-feed-overview.md) | RESTful API tools. Logga in med inloggningsuppgifter för Adobe. [Läs mer](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
+| **Åtkomstmetod** | [Webbläsare](/help/admin/sys-reqs.md) | [Webbläsare](/help/admin/sys-reqs.md) | [MS Excel för Windows](/help/analyze/report-builder/setup/system-requirements.md) | Konfigurera via webbläsaren. [Läs mer](/help/admin/sys-reqs.md) | [Windows 64 bitar](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html) | Konfigurera via webbläsaren. [Läs mer](/help/export/analytics-data-feed/data-feed-overview.md) | RESTful API tools. Logga in med inloggningsuppgifter för Adobe I/O. [Läs mer](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
 | **Datagranularitet** | Sammanställd | Sammanställd | Sammanställd | Sammanställd | Träff | Träff | Sammanställd |
 | **Experience Cloud-ID (ECID) tillgängligt** | Nej | Nej | Nej | Ja | Ja | Ja | Nej |
 | **Tidsstämpel tillgänglig** | Nej | Nej | Nej | Nej | Ja | Ja | Nej |
@@ -30,7 +30,7 @@ Information om vilken Adobe Analytics-produkt du ska använda finns [här](/help
 | **Antal uppdelningar** | Obegränsad | Upp till 2 | Upp till 2 | Obegränsad | Obegränsad | Obegränsad | Obegränsat, kör över flera frågor |
 | **Segmentering** <br> [Läs mer](/help/components/segmentation/segmentation-workflow/seg-workflow.md) | Ja | Ja | Ja | Ja, med [begränsningar](/help/components/segmentation/seg-reference/seg-compatibility.md) | Ja | Nej | Ja |
 | **Beräknade värden** <br> [Läs mer](/help/components/c-calcmetrics/cm-overview.md) | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) | Ja | Ja | Nej | Ja | Nej | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) |
-| **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja | Ja | Ja - [va_finder, va_close](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
+| **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja | Ja | Ja - [va_finder, va_Närmare](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
 | **Kohortanalys** | [Ja](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Nej | Nej | Nej | Ja | Nej | Nej |
 | **Attribuering** | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Begränsad | Nej | Ja | Nej | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) |
 | **Funktioner i Virtual Analyst** <br> [Läs mer](/help/analyze/analysis-workspace/virtual-analyst/overview.md) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
