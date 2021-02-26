@@ -5,9 +5,9 @@ user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Exporthandbok
 user-guide-description: Använd dataflöden för att få en timbaserad eller daglig export av rådata. Använd Data warehouse för att hämta data från kalkylblad.
 translation-type: tm+mt
-source-git-commit: 6ff39a73a6e0bcbfb38d2e7264e48191af97f12d
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '278'
 ht-degree: 84%
 
 ---
@@ -53,7 +53,6 @@ ht-degree: 84%
       + [Datakällor](ftp-and-sftp/c-set-up-ftp-accounts/ftp-datasources.md)
       + [Data Connectors](ftp-and-sftp/c-set-up-ftp-accounts/ftp-genesis.md)
       + [Datafeeds](ftp-and-sftp/c-set-up-ftp-accounts/ftp-datafeeds.md)
-      + [Levererade Ad Hoc Analysis-rapporter](ftp-and-sftp/c-set-up-ftp-accounts/ftp-discover-reports.md)
       + [Levererade Data Warehouse-rapporter](ftp-and-sftp/c-set-up-ftp-accounts/ftp-dw-reports.md)
       + [Levererade Report Builder-rapporter](ftp-and-sftp/c-set-up-ftp-accounts/ftp-arb-reports.md)
       + [Engineering Services-åtgärder med FTP](ftp-and-sftp/c-set-up-ftp-accounts/ftp-eng-services.md)
