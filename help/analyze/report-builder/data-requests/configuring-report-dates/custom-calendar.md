@@ -4,7 +4,10 @@ title: Anpassad kalender
 topic: Report builder
 uuid: 88d24bf9-de46-41e0-937e-b8a1fe36c55d
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +45,7 @@ Varje kalenderformat beskrivs nedan.
      <li id="li_E9B9E8F03E324DBDA9139C2D0D599092"><b>4-5-4</b>: Januari har fyra veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
      <li id="li_D0675DBDEC4641D2A8645B5CDFC565AB"><b>4-4-5</b>: Januari har fyra veckor, februari har fyra veckor, mars har fem veckor och så vidare. </li> 
      <li id="li_6743BBB9AC9A4CFEAA0CBCE51052BC29"><b>5-5-4</b>: Januari har fem veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
-    </ul> <p>Obs!  Det här kalenderalternativet stöds av alla Adobe Analytics-verktyg (Analysis Workspace, Reports &amp; Analytics, Report Builder, Activity Map, Ad Hoc Analysis), förutom för Data Warehouse, som inte stöder anpassade kalendrar. </p> </td> 
+    </ul> <p>Obs!  Det här kalenderalternativet stöds av alla Adobe Analytics-verktyg (Analysis Workspace, Reports &amp; Analytics, Report Builder och Activity Map). Undantaget är Data warehouse, som inte har stöd för anpassade kalendrar. </p> </td> 
   </tr> 
  </tbody> 
 </table>
