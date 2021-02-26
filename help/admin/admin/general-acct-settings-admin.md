@@ -1,12 +1,12 @@
 ---
 description: Fältbeskrivningar för rapportsvitens allmänna kontoinställningar i Admin.
 title: Allmänna kontoinställningar
-topic: Admin tools
+topic: Administratörsverktyg
 uuid: c1ab5c34-2c41-4d12-a706-0e760dff8a95
 translation-type: tm+mt
-source-git-commit: d4ecb31e7a79546c97207772e9df3eb4d673c35f
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -29,5 +29,4 @@ De här inställningarna innehåller redigeringsalternativ för grundläggande r
 | Ersätt den sista oktetten med IP-adresser med 0 | Borttagning av den sista oktetten görs innan bearbetningen av träffen görs, inklusive före IP-filtrering/uteslutning, innan du kontrollerar robotregler, innan sökningar efter geosegmentering osv. Den sista oktetten ersätts med 0, och reglerna för IP-undantag måste uppdateras för att matcha IP-adresser med en nolla på slutet. Matchande * ska matcha 0. IP-adressen 11.22.33.44 ändras till exempel till 11.22.33.0. Geosegmenteringsdata kommer inte att vara lika exakta som när hela IP-adressen används. Närmare bestämt kommer stadens exakthet att påverkas mer än precisionen i länder och regioner. Både batchregler och VISTA-regler påverkas eftersom hela IP-adressen inte är tillgänglig för dem. Dessutom påverkas alla bearbetningsregler som är IP-baserade, inklusive regler för marknadsföringskanaler och regler för bearbetning av rapportsviter, av den här inställningen. <br> **Obs**: Den här inställningen är aktiverad som standard för alla nya rapportsviter som skapas i London Data Center efter januari 2019, men bara om inställningarna för dessa rapportsviter kopieras från en mall som listas i Admin Console. Rapportsviter vars inställningar dupliceras från andra rapportsviter ärver alla inställningar från den valda rapportsviten. |
 | IP-förvanskning | Ändrar IP-adresser till oidentifierbara strängar, vilket i huvudsak tar bort dem från datalagret i Adobe. När IP-förfalskning är aktiverat går de ursprungliga IP-adresserna förlorade permanent. <br> **Obs**: IP-adresserna är dolda överallt i Analytics, inklusive Data warehouse. IP-inställningen i Target styrs dock separat, så den här inställningen påverkar inte Target.<br> Om IP-förfalskning är aktiverat utförs all nödvändig bearbetning, inklusive IP-filtrering/uteslutning, robotregler och geosegmenteringssökningar innan IP-adressen döljs. Du behöver inte ändra någonting när du aktiverar IP-förfalskning.<ul><li>Om du kontrollerar **Inaktiverad** lämnas IP-adressen i data.</li><li>Om du markerar **Obfuscera IP-adressen** ändras IP-adressen till två kolon följt av ett hash-värde (t.ex. `::1932023538`).</li><li>Om du markerar **Ta bort IP-adress** ersätts IP-adressen med `::X.X.X.X` i data, efter geosökning.</li></ul>**Obs**: Den här inställningen kan kräva ändringar av anpassade  [robotregler ](/help/admin/admin/bot-removal/bot-rules.md) eller  [IP-undantag](/help/admin/admin/exclude-ip.md). |
 | Lagring av transaktions-ID | Gör att du kan använda datakällor för [transaktions-ID](/help/import/c-data-sources/c-datasrc-types/datasrc-transactionid.md). |
-| Aktivera Ad Hoc Analysis | Anger om rapportsviten i fråga visas som en tillgänglig rapportsvit i Ad Hoc Analysis. Använd den här inställningen för att begränsa vilka rapportsviter som visas som ett alternativ för Ad Hoc Analysis. Du kan till exempel inaktivera Ad Hoc Analysis för utveckling och QA-rapportsviter. |
 | Aktivera Data warehouse | Aktiverar användargränssnittet för Data warehouse under Analytics > Tools > Data warehouse. |
