@@ -2,10 +2,10 @@
 title: Systemkrav
 description: Systemkraven för Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+source-git-commit: 564263be46b8c4fef996381819b4b13abb865b7a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 8%
+source-wordcount: '108'
+ht-degree: 5%
 
 ---
 
@@ -32,5 +32,4 @@ De flesta Adobe Analytics-lösningar, inklusive Analysis Workspace, är webbläs
 På den länkade lösningssidan hittar du systemkraven för den lösningen.
 
 * [Report Builder](/help/analyze/report-builder/setup/system-requirements.md)
-* [Ad Hoc Analysis](/help/analyze/ad-hoc-analysis/c-getting-started.md)
 * [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html)
