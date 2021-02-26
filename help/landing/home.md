@@ -2,7 +2,7 @@
 title: Tekniska handböcker för Adobe Analytics
 description: Användarhandböcker och resurser för Analytics
 translation-type: tm+mt
-source-git-commit: 4fdab23700659e68d5c577369dd005b94eef56b2
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 91%
@@ -50,7 +50,6 @@ Here is a comprehensive list of and links to all the reporting capabilities in A
 * [Mobile Services UI](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
 * [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html)
 * [Reports & Analytics](/help/analyze/reports-analytics/getting-started.md)
-* [Ad Hoc Analysis](/help/analyze/ad-hoc-analysis/adhoc-home.md)
 
 ### Analytics feature list
 
