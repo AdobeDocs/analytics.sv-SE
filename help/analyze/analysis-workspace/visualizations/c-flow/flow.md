@@ -3,9 +3,9 @@ description: 'null'
 title: Översikt över flöden
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '201'
 ht-degree: 2%
 
 ---
@@ -23,11 +23,11 @@ Här kan du:
 
 >[!NOTE]
 >
->Mer information om hur resultatet av att tillämpa segment i Flow kan skilja sig mellan Analysis Workspace och Reports &amp; Analytics/Ad Hoc Analysis finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
+>Information om hur resultaten av att tillämpa segment på Flow kan skilja sig åt mellan Analysis Workspace och Rapporter och analyser finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
-[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)om flödesvisualisering (4:56)
+[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) om flödesvisualisering (4:56)
 
-## Inter-Dimensional Flows {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Medeldimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
 Du kan visa [flödet mellan dimensioner](/help/analyze/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
 
