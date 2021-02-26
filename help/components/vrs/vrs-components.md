@@ -3,7 +3,7 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentval för Virtual Report Suites
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
 translation-type: tm+mt
-source-git-commit: 07aa9068e4500d11a80d1e340912b249156fd3b9
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 12%
@@ -33,7 +33,6 @@ Om du vill aktivera komponenturval
    >Om komponentanpassning är aktiverat är den virtuella rapportsviten bara tillgänglig i Analysis Workspace **och är inte tillgänglig i följande:**
    >
    >* [!UICONTROL Reports & Analytics]
-   >* [!UICONTROL Ad Hoc Analysis]
    >* [!UICONTROL Data Warehouse]
    >* [!UICONTROL Report Builder]
    >* [!UICONTROL Activity Map]
