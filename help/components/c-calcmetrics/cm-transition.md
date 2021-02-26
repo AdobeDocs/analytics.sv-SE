@@ -1,11 +1,11 @@
 ---
-description: Dessa förändringar i hur beräknade mätvärden fungerar i Analytics kan påverka dig.
+description: Dessa förändringar i hur beräknade mätvärden fungerar i Analytics kan påverka er.
 title: Vanliga frågor
 uuid: 9b7f1cd1-b969-4b15-8af1-969d816b65b8
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2015'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Vanliga frågor
 
-De här förändringarna av hur beräknade mätvärden fungerar i [!DNL Analytics] kan påverka dig.
+De här ändringarna av hur beräknade mätvärden fungerar i [!DNL Analytics] kan påverka dig.
 
 [Hur får jag åtkomst till Calculated Metric Builder?](/help/components/c-calcmetrics/cm-transition.md#section_D9AE9A0ACF824BACB5D05F0C2F7E9CA1)
 
@@ -47,22 +47,20 @@ De här förändringarna av hur beräknade mätvärden fungerar i [!DNL Analytic
 
 [Varför visar vissa av de beräknade måtten formler utan de parenteser som jag har lagt till?](/help/components/c-calcmetrics/cm-transition.md#section_AC0D1E9714AD487F9A1C73359F518B5E)
 
-[(Endast Ad Hoc Analysis) Stöds fortfarande beräknade värden med inbäddade eller inbäddade segmentdefinitioner?](/help/components/c-calcmetrics/cm-transition.md#section_B25C924A282F49388AB604E3D826F44C)
-
-[(Endast Report Builder) Varför har beräknade värden försvunnit från mina förfrågningar?](/help/components/c-calcmetrics/cm-transition.md#section_DA4792FE5D7945218CD5E6328DE08E82)
+[(Endast Report Builder) Varför har beräknade mätvärden försvunnit från mina förfrågningar?](/help/components/c-calcmetrics/cm-transition.md#section_DA4792FE5D7945218CD5E6328DE08E82)
 
 [Hur fungerar summor för beräknade värden?](/help/components/c-calcmetrics/cm-transition.md#section_57BA3A299C7948ABB82B0392A9B0F33E)
 
 ## Hur får jag åtkomst till Calculated Metric Builder? {#section_D9AE9A0ACF824BACB5D05F0C2F7E9CA1}
 
-* Klicka **[!UICONTROL + Add]** högst upp i Beräknad metrisk hanterare, eller
+* Klicka på **[!UICONTROL + Add]** högst upp i hanteraren för beräknade mått, eller
 * I en Analytics-rapport klickar du på Metrics-ikonen ![](assets/metrics_icon.png) till vänster om en rapport för att visa Metrics-spåret. Klicka sedan på **[!UICONTROL Add]**.
 
 ## Hur kommer jag åt Calculated Metric Manager? {#section_DD0BD13E9EC940268EBE8BC88241A152}
 
 * Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Calculated Metrics]**.
 
-* Klicka på Metrics-ikonen till vänster [!DNL Analytics] om en rapport för att visa måttspåret i en ![](assets/metrics_icon.png) rapport och klicka sedan på **[!UICONTROL Manage]**.
+* I en [!DNL Analytics]-rapport klickar du på Metrics-ikonen ![](assets/metrics_icon.png) till vänster om en rapport för att visa Metrics rail och sedan på **[!UICONTROL Manage]**.
 
 ## Varför ser jag så många beräknade värden med samma namn? {#section_E15C5B6CCC58498CAEC3FBDA8988F0A1}
 
@@ -70,7 +68,7 @@ De här förändringarna av hur beräknade mätvärden fungerar i [!DNL Analytic
 
 Nu är mätvärden inte längre åtskilda av rapportsviter. Om ett mätvärde i en rapportserie har samma namn som ett mätvärde i en annan rapportserie, kommer de båda att vara synliga i beräkningsverktyget och mätväljaren och kan visas som dubblettmått även om de har samma definition eller inte.
 
-Du skulle bara se ett antal beräknade mätvärden med samma namn (men som har skapats i olika rapportsviter) om du avmarkerade kryssrutan (endast `<report suite>`) enligt följande:
+Du skulle bara se ett antal beräknade mått med samma namn (men skapade i olika rapportsviter) om du avmarkerade kryssrutan (endast `<report suite>`) som visas här:
 
 ![](assets/report_suite.png)
 
@@ -116,11 +114,11 @@ Globala beräknade värden kan inte längre delas mellan inloggningsföretag. De
 
 ## Vad hände med Beräknade mått med Numeric eller Numeric2-klassificering? {#section_71AFE6C4A7CD4AA19AB3A9D3C41D115B}
 
-(Tidigare var beräknade värden med en Numeric- eller Numeric2-klassificering bara synliga i [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder]och API:erna.)
+(Tidigare var beräknade värden med en numerisk eller numerisk2-klassificering bara synliga i [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder] och API:erna.)
 
-Beräknade mätvärden med en numerisk eller numerisk2-klassificering kommer nu även i fortsättningen att vara synliga i [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder]och i API:erna. De stöds dock inte i någon rapport där ett segment används.
+Beräknade värden med en numerisk eller numerisk2 klassificering kommer nu även i fortsättningen att vara synliga i [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder] och API:erna. De stöds dock inte i någon rapport där ett segment används.
 
-Dessutom stöds inte beräknade värden med en Numeric- eller Numeric2-klassificering i följande komponenter: [!UICONTROL Ad Hoc Analysis], [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter [!UICONTROL Anomaly Detection]och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått med en numerisk eller numerisk2-klassificering visas en kompatibilitetsvarning om att det beräknade måttet inte är kompatibelt med vissa delar av produkten.
+Dessutom stöds inte beräknade värden med en Numeric- eller Numeric2-klassificering i följande komponenter: [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter, [!UICONTROL Anomaly Detection] och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått med en numerisk eller numerisk2-klassificering visas en kompatibilitetsvarning om att det beräknade måttet inte är kompatibelt med vissa delar av produkten.
 
 **Vad du behöver göra**
 
@@ -128,23 +126,23 @@ Undvik att skapa beräknade värden med Numeric1- eller Numeric2-klassificeringa
 
 ## Vad hände med Life-Time Metrics? {#section_AEDB02EF24584DAD8731BED9DDCE4F48}
 
-Livstidsstatistik (alias heltidsmått) stöds inte längre och visas inte längre i [!UICONTROL Reports & Analytics] användargränssnittet eller något annat användargränssnitt. De kan inte frågas av rapport-API:t.
+Livstidsstatistik (alias heltidsmått) stöds inte längre och visas inte längre i [!UICONTROL Reports & Analytics]-gränssnittet eller något annat gränssnitt. De kan inte frågas av rapport-API:t.
 
 Eventuella bokmärken, kontrollpaneler, schemalagda rapporter eller aviseringar som innehöll ett heltidsmått fortsätter att köras utan det måttet så länge som minst ett annat giltigt mått också finns i rapporten. Om det enda mätvärdet för bokmärket, kontrollpanelen, den schemalagda rapporten eller aviseringen är ett heltidsmått, kommer rapporten inte längre att köras.
 
 ## Vad behöver jag veta om beräknade mätvärden som baseras på unika besöksmätningar varje dag/vecka/månad/kvartal/år? {#section_E9A77EBB41CE4881B196CC1C282B2DF3}
 
-Beräknade mätvärden som baseras på unika besökarmått visas i följande [!DNL Analytics] komponenter: [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder]och API för rapportering.
+Beräknade mätvärden som baseras på unika besökarmått visas i följande [!DNL Analytics]-komponenter: [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder] och API för rapportering.
 
-Dessa mått stöds dock inte i följande komponenter: [!UICONTROL Segments], [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter [!UICONTROL Anomaly Detection]och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått baserat på Unika besökarvärden visas en kompatibilitetsvarning om att måttet inte är kompatibelt med vissa delar av produkten.
+Dessa mått stöds dock inte i följande komponenter: [!UICONTROL Segments], [!UICONTROL Analysis Workspace], [!UICONTROL Real-Time] rapporter, [!UICONTROL Anomaly Detection] och [!UICONTROL Contribution Analysis]. När du skapar eller redigerar ett beräknat mått baserat på Unika besökarvärden visas en kompatibilitetsvarning om att måttet inte är kompatibelt med vissa delar av produkten.
 
 Du använder ett unikt basbesökarmått för en rapport med ett segment. Du kan skapa ett beräknat mått baserat på ett unikt besökarmått; Det beräknade måttet kan dock inte tillämpas på en rapport med ett segment, och det beräknade måttet kan inte heller ha ett inbäddat segment.
 
 ## Vad händer med beräknade värden som skapats eller hanterats med API-metoder för den gamla rapportsviten? {#section_13ED1BAD02634674BDAEB479B060A4B6}
 
-Tidigare sparade du ett beräknat mått med API-metoden ReportSuite.SaveCalculatedMetrics (1.3 eller 1.4) på samma sätt som när du skapade eller uppdaterade ett beräknat mått i Admin Console. Samma sak gäller för ReportSuite.DeleteCalculatedMetrics. Listan med beräknade värden som visades i Admin Console eller när ReportSuite.GetCalculatedMetrics anropades var också densamma.
+Tidigare var det samma sak att spara ett beräknat mått med API-metoden (1.3 eller 1.4) ReportSuite.SaveCalculatedMetrics som att skapa eller uppdatera ett beräknat mått i Admin Console. Samma sak gäller för ReportSuite.DeleteCalculatedMetrics. Listan med beräknade värden som visades i Admin Console eller när ReportSuite.GetCalculatedMetrics anropades var också densamma.
 
-Nu kommer API-metoderna (1.3 eller 1.4) för ReportSuite CalculatedMetrics att fortsätta att spara, ta bort och hämta beräknade värden med den gamla butiken. Befintliga beräknade värden migreras och visas i nya Calculated Metrics Builder. **Nya beräknade mätvärden som skapats med API-metoder visas bara i API:t. De kan fortfarande användas i Rapporterings-API:t.**
+Nu kommer API-metoderna (1.3 eller 1.4) för ReportSuite CalculatedMetrics att fortsätta att spara, ta bort och hämta beräknade värden med den gamla butiken. Befintliga beräknade värden migreras och visas i nya Calculated Metrics Builder. **Nya beräknade mätvärden som skapats med API-metoder visas bara i API:t. De kan fortfarande användas i rapporterings-API:t.**
 
 **Vad du behöver göra**
 
@@ -184,15 +182,7 @@ Nu är endast de beräknade mätvärden som har sin allokeringstyp specifikt ins
 
 Under migreringen tog Adobe bort överflödiga parenteser från vissa formler. Endast parenteser som inte påverkar hur måttet beräknas togs bort. Detta ändrar inte informationen - det förenklar bara formeln.
 
-## (Endast Ad Hoc Analysis) Stöds fortfarande beräknade värden med inbäddade eller textbundna segmentdefinitioner? {#section_B25C924A282F49388AB604E3D826F44C}
-
-Beräknade mätvärden som har skapats i Ad hoc analysis kan tidigare innehålla inline-segmentdefinitioner. Detta är inte längre möjligt.
-
-**Vad du behöver göra**
-
-Du måste spara segmentet explicit. Befintliga beräknade mätvärden med infogade segmentdefinitioner fortsätter att fungera korrekt och kan visas i Ad Hoc Analysis, men de kan inte sparas utan att segmentet sparas explicit.
-
-## (Endast Report Builder) Varför har beräknade värden försvunnit från mina förfrågningar? {#section_DA4792FE5D7945218CD5E6328DE08E82}
+## (Endast Report Builder) Varför har beräknade mätvärden försvunnit från mina förfrågningar? {#section_DA4792FE5D7945218CD5E6328DE08E82}
 
 Om begäran skapades i v5.2 och den innehåller beräknade värden, visas dessa värden inte i v5.1 (eller tidigare versioner). Detta beror på att beräknade värden nu använder globala ID:n (icke-rapportsvitspecifika ID:n).
 
@@ -202,7 +192,7 @@ Du måste uppgradera till v5.2 för att kunna se dessa mätvärden.
 
 ## Hur fungerar summor för beräknade värden? {#section_57BA3A299C7948ABB82B0392A9B0F33E}
 
-När [!UICONTROL Reports & Analytics] en beräknad summa av mätvärden visas i [!UICONTROL Reports & Analytics]används formeln bara på summan. Summan för beräknade måttorder/besök tar till exempel totalt antal order och dividerar dem med totalt antal besök. I vissa fall är den beräknade summan inte bara summan av radobjekten utan en summa för platsen.
+När [!UICONTROL Reports & Analytics] visar en summa för beräknade mått i [!UICONTROL Reports & Analytics], används formeln bara på summan. Summan för beräknade måttorder/besök tar till exempel totalt antal order och dividerar dem med totalt antal besök. I vissa fall är den beräknade summan inte bara summan av radobjekten, utan en summa för platsen.
 
 Exempel 1: Besökare för en sökterm: samma besökare kan ha sökt efter flera termer, så i det här fallet är det totala antalet besökare som inte är lika med summan av radobjekten.
 
