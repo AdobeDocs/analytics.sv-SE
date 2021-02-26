@@ -1,12 +1,12 @@
 ---
-description: Med den här funktionen kan du anpassa rapportmenyerna som en användare ser i Rapporter och Analytics. Du kan visa eller dölja rapporter, samt flytta dem i olika mappar för alla användare. Den här funktionen är särskilt användbar om din organisation bara använder vissa rapporter och inte vill rensa den vänstra menyn med oanvända eller irrelevanta data.
+description: Med den här funktionen kan du anpassa rapportmenyerna som en användare ser i Rapporter och analyser. Du kan visa eller dölja rapporter, samt flytta dem i olika mappar för alla användare. Den här funktionen är särskilt användbar om din organisation bara använder vissa rapporter och inte vill rensa den vänstra menyn med oanvända eller irrelevanta data.
 title: Menyanpassning
-topic: Admin tools
+topic: Administratörsverktyg
 uuid: 31e335e7-c91a-4669-a9b7-00f9e385375a
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # Menyanpassning
 
-Med den här funktionen kan du anpassa rapportmenyerna som en användare ser i Rapporter och Analytics. Du kan visa eller dölja rapporter, samt flytta dem i olika mappar för alla användare. Den här funktionen är särskilt användbar om din organisation bara använder vissa rapporter och inte vill rensa den vänstra menyn med oanvända eller irrelevanta data.
+Med den här funktionen kan du anpassa rapportmenyerna som en användare ser i Rapporter och analyser. Du kan visa eller dölja rapporter, samt flytta dem i olika mappar för alla användare. Den här funktionen är särskilt användbar om din organisation bara använder vissa rapporter och inte vill rensa den vänstra menyn med oanvända eller irrelevanta data.
 
 Menyändringarna gäller alla användare som har åtkomst till rapportsviten. Användare kan dock återställa en menys standardkonfiguration när de använder rapportsviten.
 
 >[!NOTE]
 >
->Ändringar i menystrukturen påverkar inte Report Builder och Ad Hoc Analysis. Att byta namn på en rapport kommer dock att återspeglas i båda verktygen.
+>Ändringar i menystrukturen påverkar inte Report Builder. Om du byter namn på en rapport återspeglas det dock i det här verktyget.
 
 ## Beskrivningar av menyanpassning {#section_B0D224DACB914A378902A4E0E1234889}
 
