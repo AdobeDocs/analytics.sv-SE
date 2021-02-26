@@ -1,20 +1,23 @@
 ---
 description: Steg som beskriver hur du tilldelar användarkontoobjekt (kontrollpaneler, beräknade värden, kalenderhändelser, varningar, bokmärken, segment, Analysis Workspace-projekt och schemalagda projekt) från ett användarkonto till ett annat användarkonto.
 subtopic: Users and groups
-title: Överför användarkontoobjekt
-topic: Admin tools
+title: Överför objekt på användarkonto
+topic: Administratörsverktyg
 uuid: b083c622-1397-45ab-8796-f7cdc7043ec6
 translation-type: tm+mt
-source-git-commit: 3997889ae72920d719203edbb159b55b983158e7
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 7%
 
 ---
 
 
-# Överför användarkontoobjekt
+# Överför objekt på användarkonto
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
 
 Steg som beskriver hur du tilldelar användarkontoobjekt (kontrollpaneler, beräknade värden, kalenderhändelser, varningar, bokmärken, segment, Analysis Workspace-projekt och schemalagda projekt) från ett användarkonto till ett annat användarkonto.
 
@@ -22,13 +25,8 @@ Steg som beskriver hur du tilldelar användarkontoobjekt (kontrollpaneler, berä
 1. Klicka på **[!UICONTROL Edit Users]**.
 1. Hitta användaren som du vill överföra resurser från och markera kryssrutan bredvid den här användarens rad.
 1. Välj **[!UICONTROL Transfer Assets]** i åtgärdsfältet högst upp.
-1. På **[!UICONTROL Transfer]** sidan väljer du det användarkonto som ska ta emot den här användarens kontoobjekt.
+1. På sidan **[!UICONTROL Transfer]** väljer du det användarkonto som ska ta emot den här användarens kontoobjekt.
 1. Markera de kontoobjekt som ska överföras och klicka sedan på **[!UICONTROL Transfer]**.
-1. Klicka **[!UICONTROL OK]** för att bekräfta att du vill överföra de valda kontoresurserna.
+1. Klicka på **[!UICONTROL OK]** för att bekräfta att du vill överföra de valda kontoresurserna.
 
    Den mottagande användaren får alla rättigheter för de valda kontoresurserna som ägs av den ursprungliga användaren, med undantag för rättigheter till schemalagda rapporter.
-
-   >[!NOTE]
-   >
-   >Ad hoc-analysresurser kan inte överföras. Om din organisation använder flera inloggningsföretag kan du inte överföra någonting mellan inloggningsföretag.
-
