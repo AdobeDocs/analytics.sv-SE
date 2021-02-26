@@ -5,9 +5,9 @@ user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
 translation-type: tm+mt
-source-git-commit: 6dcdbf7d49000e4e04d590b83da47d49f8e53ebf
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '727'
 ht-degree: 90%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 90%
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Hitta metoder](admin/finding-methods.md)
    + [Allmänna kontoinställningar](admin/general-acct-settings-admin.md)
-   + [Grupphantering](admin/group.md)
    + [Interna URL-filter](admin/internal-url-filter-admin.md)
    + [Loggar](admin/logs.md)
    + [Marknadsföringskanaler](admin/marketing-channels-admin.md)
@@ -164,7 +163,6 @@ ht-degree: 90%
          + [Migrera Analytics-användarkonton för Enterprise och Federated ID](user-management2/user-migration/migrate-enterprise.md)
          + [Inaktivera äldre inloggningar](user-management2/user-migration/t-disable-legacy-login.md)
          + [API:er som påverkas av migreringen](user-management2/user-migration/developer.md)
-      + [Hantera ad hoc-analysanvändare](user-management2/c-user-management/t-manage-dsc-users-admin.md)
    + Användargrupper {#user-groups}
       + [Lägg till en användargrupp](user-management2/c-user-groups/t-user-group.md)
       + [Inställningar för användargrupp](user-management2/c-user-groups/groups.md)
