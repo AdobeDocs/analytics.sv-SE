@@ -1,14 +1,14 @@
 ---
 description: Innehåll för äldre behörigheter
-keywords: groups;permissions
+keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Behörighetsändringar för användare och grupper
-topic: Admin tools
+topic: Administratörsverktyg
 uuid: 94f2727b-17e4-4003-a222-35c821d6959e
 translation-type: tm+mt
-source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1556'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ Eftersom API:t och gränssnittet använder samma behörighetssystem, kommer alla
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ändringar i fördefinierade grupper </p> </td> 
-   <td colname="col2"> <p> <b>Administratörsåtkomst:</b> Fördefinierade grupper krävs inte längre för administratörer. Administratörer har nu tillgång till alla objekt (verktyg, mått, mått) samt webbtjänståtkomst, Report Builder, Activity Map och Ad Hoc Analysis. </p> <p>Framöver är syftet med grupper att ge eller begränsa åtkomst till icke-administrativa användare. </p> <p> <b>Egna grupper:</b> Egna grupper har ersatt fördefinierade grupper. Befintliga fördefinierade grupper migreras till anpassade grupper med samma gruppnamn. Alla anpassade grupper som du har skapat, inklusive deras inställningar, bevaras. Du kommer dock att märka att platsen för inställningarna kommer att ha flyttats. Företagsinställningar (i Anpassa Admin Console) finns nu i <a href="/help/admin/user-management2/c-customize-report-access/groups-analytics-tools.md"> Anpassa analysverktyg</a>. </p> <p> Användare som tillhör <span class="term"> All Report Access</span> har migrerats till en anpassad grupp med åtkomst till: </p> 
+   <td colname="col2"> <p> <b>Administratörsåtkomst:</b> Fördefinierade grupper krävs inte längre för administratörer. Administratörer har nu tillgång till alla objekt (verktyg, mått, mått) samt webbtjänståtkomst, Report Builder och Activity Map. </p> <p>Framöver är syftet med grupper att ge eller begränsa åtkomst till icke-administrativa användare. </p> <p> <b>Egna grupper:</b> Egna grupper har ersatt fördefinierade grupper. Befintliga fördefinierade grupper migreras till anpassade grupper med samma gruppnamn. Alla anpassade grupper som du har skapat, inklusive deras inställningar, bevaras. Du kommer dock att märka att platsen för inställningarna kommer att ha flyttats. Företagsinställningar (i Anpassa Admin Console) finns nu i <a href="/help/admin/user-management2/c-customize-report-access/groups-analytics-tools.md"> Anpassa analysverktyg</a>. </p> <p> Användare som tillhör <span class="term"> All Report Access</span> har migrerats till en anpassad grupp med åtkomst till: </p> 
     <ul id="ul_696A9243F5FD4AF187352C2F4B1CFDC2"> 
      <li id="li_683A0A3BB7214CFFBC61D5A4CD237F48">Alla Dimensioner </li> 
      <li id="li_D8FDBF6A32224731AB706315DEA0A03E">Alla mått </li> 
@@ -162,7 +162,7 @@ I följande tabell visas uppgifter och var de kan utföras (beroende på ett fö
   </tr> 
   <tr> 
    <td colname="col1"> Logga in på Analytics </td> 
-   <td colname="col2"> <p> <b>Experience Cloud:  </b> <span class="filepath"> marketing.adobe.com</span>. Endast tillgängligt för användare av Experience Cloud. </p> <p> <b>Analytics (legacy):</b> <span class="filepath"> sc.omniture.com</span>. Endast för användare av Analytics och för Experience Cloud med deras Analytics-autentiseringsuppgifter </p> </td> 
+   <td colname="col2"> <p> <b>Experience Cloud:  </b> <span class="filepath"> marketing.adobe.com</span>. Endast tillgängligt för användare av Experience Cloud. </p> <p> <b>Analytics (legacy):</b> <span class="filepath"> sc.omniture.com</span>. För användare som endast använder Analytics och för Experience Cloud som har sina Analytics-autentiseringsuppgifter </p> </td> 
    <td colname="col3"> <p> <span class="filepath"> marketing.adobe.com</span>  - endast för Experience Cloud. </p> <p> <span class="filepath"> sc.omniture.com</span> - För användare med enbart analys och för Experience Cloud med deras inloggningsuppgifter för Analytics. </p> <p>Under migreringen kan administratörer inaktivera inloggningsfunktionen <span class="filepath"> omniture.com</span> för specifika användare. </p> </td> 
    <td colname="col4"> <p>Admin Console </p> </td> 
   </tr> 
