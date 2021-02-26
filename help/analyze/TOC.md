@@ -5,10 +5,10 @@ user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det ledande verktyget för analys och visualisering av analyser, samt verktyg som Report Builder och Activity Map.
 translation-type: tm+mt
-source-git-commit: 9538934c409ab4f2b089d0df748d8cfc5295656b
+source-git-commit: 29df2b4ee8ebf671b8ac7b97dbc8e31ddb765f2b
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 89%
+source-wordcount: '1048'
+ht-degree: 88%
 
 ---
 
@@ -313,29 +313,6 @@ ht-degree: 89%
       + [Visa konverterade projekt i Analysis Workspace](ad-hoc-analysis/c-aha-project-converter/view-projects-workspace.md)
       + [Vanliga frågor om Project Converter](ad-hoc-analysis/c-aha-project-converter/aha2aw-converter-faq.md)
    + [Ad Hoc Analysis – översikt](ad-hoc-analysis/adhoc-home.md)
-   + [Komma igång](ad-hoc-analysis/c-getting-started.md)
-   + [Administrering](ad-hoc-analysis/c-administration.md)
-   + [Kör Ad Hoc Analysis med Java 11](ad-hoc-analysis/adhoc-java.md)
-   + [Konfigurera befintliga rapporter](ad-hoc-analysis/c-reports-configure.md)
-   + [Datum och datumintervall](ad-hoc-analysis/c-dates.md)
-   + [Dimensioner](ad-hoc-analysis/c-dimensions.md)
-   + [Loggfil](ad-hoc-analysis/c-log-file.md)
-   + [Mätvärden](ad-hoc-analysis/c-metrics.md)
-   + [Översikt över rapporter](ad-hoc-analysis/c-overview-standard-reports.md)
-   + [Rapporttyper](ad-hoc-analysis/c-reports-types.md)
-   + [Site Metrics-rapporter](ad-hoc-analysis/c-reports-site-metrics.md)
-   + [Site Content-rapporter](ad-hoc-analysis/c-reports-site-content.md)
-   + [Mobilrapporter](ad-hoc-analysis/c-reports-mobile.md)
-   + [Traffic Sources-rapporter](ad-hoc-analysis/c-reports-traffic.md)
-   + [Sökvägsrapporter](ad-hoc-analysis/c-reports-paths.md)
-   + [Produktrapporter](ad-hoc-analysis/c-reports-product.md)
-   + [Besöksrapporter](ad-hoc-analysis/c-reports-visitor.md)
-   + [Adobe Target](ad-hoc-analysis/c-reports-tnt.md)
-   + [Skapa segment](ad-hoc-analysis/c-content-ref.md)
-   + [Inställningar](ad-hoc-analysis/c-global-settings.md)
-   + [Schemaläggningshanterare](ad-hoc-analysis/c-schedule.md)
-   + [Table Builder](ad-hoc-analysis/c-tablebuilder.md)
-   + [Tid](ad-hoc-analysis/c-time.md)
 + Labs {#tech-previews}
    + [Labs – översikt](tech-previews/overview.md)
 + Adobe Analytics-instrumentpaneler {#mobapp}
