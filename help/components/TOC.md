@@ -5,10 +5,10 @@ user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
 translation-type: tm+mt
-source-git-commit: 7d102d7625e61de962836e866f0863168abcbaa6
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 55%
+source-wordcount: '637'
+ht-degree: 54%
 
 ---
 
@@ -168,7 +168,6 @@ ht-degree: 55%
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
    + [Vanliga frågor](segmentation/seg-transition.md)
    + [God praxis](segmentation/best-practices.md)
-   + [Övergångshandbok för Ad Hoc Analysis](segmentation/seg-transition-ad-hoc.md)
 + Beräknade mätvärden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) värden](c-calcmetrics/cm-overview.md)
    + [Vanliga frågor](c-calcmetrics/cm-transition.md)
