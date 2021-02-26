@@ -1,13 +1,13 @@
 ---
 description: Segmenthanteraren erbjuder många sätt att strukturera segment, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 title: Hantera segment
-topic: Segments
+topic: Segment
 uuid: 47d54822-a662-471d-8dab-03ddf6c2f395
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 4%
+source-wordcount: '424'
+ht-degree: 5%
 
 ---
 
@@ -18,14 +18,14 @@ Segmenthanteraren erbjuder många sätt att strukturera segment, som att dela, f
 
 Segmenthanteraren i Analytics visar alla segment som du äger och som har delats med dig. Administratörsnivåanvändare kan se alla segment i organisationen. I den här översikten presenteras användargränssnittet och funktionerna i segmenthanteraren. Åtkomst till segmenthanteraren via
 
-* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]** i den övre navigeringen.
+* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]** i den översta navigeringen.
 * Visa en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**.
 
-## Videoinstruktion {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
+## Instruktionsvideo {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
 
-I den här [Adobe Analytics-videon](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) får du en kort översikt över hur du använder segmenthanteraren.
+Denna [Adobe Analytics-video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) ger en kort översikt över hur du använder segmenthanteraren.
 
-## Användargränssnitt för segmenthanteraren {#section_7FDCD12949BE4741A402DB83AB7B37DF}
+## Segmenthanterarens användargränssnitt {#section_7FDCD12949BE4741A402DB83AB7B37DF}
 
 ![](assets/segment_manager_ui.png)
 
@@ -33,7 +33,7 @@ I den här [Adobe Analytics-videon](https://docs.adobe.com/content/help/en/analy
 |---|---|---|
 | 1 | Verktygsfält för segmenthantering | När du har markerat ett segment visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
 | 2 | Visa filter | När du klickar på filterikonen visas filtermenyn. Du kan filtrera efter taggar, ägare, Visa alla (endast administratör), Min, Favoriter, Godkänd och Delade med mig. |
-| 3 | Kryssrutor | Kontrollera ett segment för att hantera det. |
+| 1 | Kryssrutor | Kontrollera ett segment för att hantera det. |
 | 4 | Favoriter | Om du klickar på stjärnan bredvid ett segment ändras stjärnans gula färg och segmentet markeras som en favorit. |
 | 5 | Segmenttitlar och beskrivningar | Tillhandahålls i Segment Builder. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till segmentbyggaren. |
 | 6 | Rapportsviter | Den här kolumnen anger i vilken rapportsserie segmentet senast sparades. |
@@ -45,15 +45,3 @@ I den här [Adobe Analytics-videon](https://docs.adobe.com/content/help/en/analy
 | 12 | Ikon för delad | Anger att det här segmentet delas av dig eller med dig. |
 | 13 | Ikonen Godkänd | Anger att det här segmentet har godkänts av en administratör. |
 | 14 | Filter | Gör att du kan visa och välja filter under Taggar, Rapportsviter, Ägare och Annat (Visa alla, Min, Dela med mig, Godkänd, Favoriter). |
-
-## Segmenthanteraren i Ad Hoc Analysis {#section_CC8BDC968EBC4BC1919870869D8443A9}
-
-Segmentsorteraren i ad hoc-analyser visar alla segment som du äger och de som delas med dig.
-
-Så här kommer du åt segmentsorteraren i [!DNL ad hoc analysis]:
-
-* Gå till **[!UICONTROL Segments]** fliken i den vänstra panelen och klicka sedan på skiftnyckelsikonen ![](assets/wrench_icon.png) och välj **[!UICONTROL Organize Segments]** från menyn.
-
-![](assets/ad_hoc_organize_segments.png)
-
-I likhet med segmenthanteraren i webbanvändargränssnittet innehåller den här konsolen flera funktioner, bland annat segmentdelning, filtrering, taggning, godkännande, kopiering, borttagning och markering som favoriter.
