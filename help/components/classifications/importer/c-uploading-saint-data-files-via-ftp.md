@@ -2,12 +2,12 @@
 description: Steg som beskriver hur du överför datafiler via FTP.
 subtopic: Classifications
 title: FTP-import
-topic: Admin tools
+topic: Administratörsverktyg
 uuid: a914970d-ba02-4111-9dcf-06448f71b9f3
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Efter en inledande överföring i en rapportserie (för en viss variabel eller r
 
 Varje nytt nyckelvärde som du överför räknas mot dina unika värden för den variabeln för månaden.
 
-Om du har överskridit dina unika värden för månaden visas inte motsvarande klassificeringsdata för de unika värden som har överskridits vid rapportering. Dessa klassificeringar visas antingen i data warehouse eller i ad hoc-analyser.
+Om du har överskridit dina unika värden för månaden visas inte motsvarande klassificeringsdata för de unika värden som har överskridits vid rapportering. Du kan se klassificeringarna i Data warehouse.
 
 >[!NOTE]
 >
@@ -55,13 +55,13 @@ Steg som beskriver hur du använder ett FTP-konto för att importera klassificer
 Mer information om hur du skapar ett FTP-konto finns i [Skapa ett FTP-konto](/help/components/classifications/importer/c-uploading-saint-data-files-via-ftp.md#task_C019268E6C934C7C95F4326F42A22CCF).
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
-1. Klicka **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
-1. Klicka på bredvid det FTP-konto som du vill använda **[!UICONTROL View]**.
+1. Klicka på **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
+1. Klicka på **[!UICONTROL View]** bredvid det FTP-konto du vill använda.
 1. Använd FTP-åtkomstinformationen (värd, inloggning, lösenord) för att komma åt FTP-servern via en valfri FTP-klient.
 1. Överför datafilen ( [!DNL .tab] eller [!DNL .txt]) till FTP-servern.
 1. När du har överfört datafilen överför du en FIN-fil som anger att filen är klar att bearbetas.
 
-   FIN-filen är en tom fil med samma namn som datafilen, med ett [!DNL .fin] filnamnstillägg. Om datafilen till exempel är [!DNL classdata1.tab]FIN-filens namn är [!DNL classdata1.fin].
+   FIN-filen är en tom fil som har samma namn som datafilen, med filnamnstillägget [!DNL .fin]. Om datafilen till exempel är [!DNL classdata1.tab] är FIN-filnamnet [!DNL classdata1.fin].
 
 Med jämna mellanrum hämtar Adobe överförda datafiler som har en associerad FIN-fil. Adobe importerar dem till de rapportsviter och datauppsättningar som anges i FTP-kontokonfigurationen.
 
@@ -75,11 +75,11 @@ t_create_an_ftp_account.xml
 
  -->
 
-Mer information om FTP-servrar finns i [FTP och sFTP](https://docs.adobe.com/content/help/en/analytics/export/ftp-and-sftp/ftp-overview.html) .
+Mer information om FTP-servrar i Adobe finns i [FTP och sFTP](https://docs.adobe.com/content/help/en/analytics/export/ftp-and-sftp/ftp-overview.html).
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
-1. Klicka **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
-1. On the **[!UICONTROL Import File]** tab, click **[!UICONTROL Add New]**.
+1. Klicka på **[!UICONTROL Import File]** och sedan på **[!UICONTROL FTP Import]**.
+1. Klicka på **[!UICONTROL Add New]** på fliken **[!UICONTROL Import File]**.
 1. Ange information om FTP-kontot:
 
    | Element | Beskrivning |
