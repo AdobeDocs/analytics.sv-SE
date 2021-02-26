@@ -1,9 +1,9 @@
 ---
-source-git-commit: 9f1b7f13a35a4c5c9fc82a2d71cbdb544396f82e
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '559'
-ht-degree: 3%
+source-wordcount: '547'
+ht-degree: 4%
 
 ---
 # Produktprofilbehörigheter för analysverktyg
@@ -32,7 +32,7 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Excel-licensanvändare | Används inte. |
 | Activity Map | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
 | Aktuella data | Aktiverar alternativet att visa aktuella data i rapporter och analysrapporter. |
-| Ad Hoc Analysis License Users | Aktiverar hämtningsknappen under Verktyg > Ad Hoc Analysis och tillåter användaren att autentisera med verktyget. Se [adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace). |
+| Ad Hoc Analysis License Users | Ad Hoc Analysis har blivit uppsagd. Se [adobe.ly/discoverworkspace](https://adobe.ly/discoverworkspace). |
 | Administratör för mobilapp | Används inte. |
 | Webbtjänståtkomst | Ger möjlighet att använda API:t, inklusive autentisering med tredjepartswebbplatser och sändande API-anrop. |
 | Report Builder | Aktiverar hämtningsknappen under Verktyg > Report Builder och tillåter att användaren autentiserar i Microsoft Excel. |
