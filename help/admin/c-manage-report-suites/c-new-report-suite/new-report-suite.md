@@ -1,12 +1,12 @@
 ---
 description: Du kan skapa en ny rapportserie genom att välja en fördefinierad mall eller genom att använda en av dina befintliga rapportsviter som modell.
 title: Ny rapportsvit – inställningar
-topic: Admin tools
+topic: Administratörsverktyg
 uuid: 3508f684-11a3-4c8f-a233-bea6bafd57c0
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Du kan skapa en ny rapportserie genom att välja en fördefinierad mall eller genom att använda en av dina befintliga rapportsviter som modell.
 
-Beskrivningar av de element som används när [du skapar en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md).
+Beskrivningar av elementen som används när [en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) skapas.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Beskrivningar av de element som används när [du skapar en rapportsvit](/help/a
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Platsrubrik</span> </td> 
-   <td colname="col2">Identifierar rapportsviten i <span class="wintitle"> Admin Tools</span>. Den här titeln används också i listrutan <span class="wintitle"> Report Suite</span> i Suite-rubriken. </td> 
+   <td colname="col2">Identifierar rapportsviten i <span class="wintitle"> Admin Tools</span>. Titeln används också i listrutan <span class="wintitle"> Report Suite</span> i Suite-rubriken. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Tidszon</span> </td> 
@@ -48,11 +48,11 @@ Beskrivningar av de element som används när [du skapar en rapportsvit](/help/a
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Standardsida</span> </td> 
-   <td colname="col2"> <p>(Valfritt) Tar bort förekomster av värdet för <span class="wintitle"> standardsida</span> från URL:er som upptäcks. Om rapporten med <span class="wintitle"> mest populära sidor</span> innehåller URL-adresser i stället för sidnamn, förhindrar den här inställningen att flera URL-adresser för samma webbsida används. </p> <p>URL-adresserna<span class="filepath"> https://example.com</span> och <span class="filepath"> https://example.com/index.html</span> är till exempel vanligtvis samma sida. Du kan ta bort överflödiga filnamn så att båda dessa URL-adresser visas som <span class="filepath"> https://example.com</span> i dina rapporter. </p> <p>Om du inte anger det här värdet tar Analytics automatiskt bort följande filnamn från URL:er: <span class="filepath"> index.htm</span>, <span class="filepath"> index.html</span>, <span class="filepath"> index.cgi</span>, <span class="filepath"> index.asp</span>, <span class="filepath"> default.htm</span>, <span class="filepath"></span><span class="filepath"></span><span class="filepath"></span><span class="filepath"></span><span class="filepath"></span><span class="filepath"></span><span class="filepath"></span>default.html, -standard.cgi, -standard.asp, -hem.htm¥, -home.html¥, -home.cgiUnder och¥.asp¥. </p> <p>Om du vill inaktivera filnamnsborttagning anger du ett standardsidvärde som aldrig förekommer i dina URL-adresser. </p> </td> 
+   <td colname="col2"> <p>(Valfritt) Tar bort förekomster av värdet <span class="wintitle"> för standardsida</span> från URL:er som påträffas. Om din <span class="wintitle">-rapport för de populäraste sidorna</span> innehåller URL-adresser i stället för sidnamn, förhindrar den här inställningen att flera URL-adresser för samma webbsida används. </p> <p>URL:erna<span class="filepath"> https://example.com</span> och <span class="filepath"> https://example.com/index.html</span> är till exempel vanligtvis samma sida. Du kan ta bort överflödiga filnamn så att båda dessa URL:er visas som <span class="filepath"> https://example.com</span> i dina rapporter. </p> <p>Om du inte anger det här värdet tar Analytics automatiskt bort följande filnamn från URL:er: <span class="filepath"> index.htm</span>, <span class="filepath"> index.html</span>, <span class="filepath"> index.cgi</span>, <span class="filepath"> index.asp</span>, <span class="filepath"> default.htm</span>, <span class="filepath"> default.html</span>, &lt;a1 2/&gt; default.cgi</span>, <span class="filepath"> default.asp</span>, <span class="filepath"> home.htm</span>, <span class="filepath"> home.html</span>, <span class="filepath"> home.cgi</span> och<span class="filepath"> home.asp</span>.<span class="filepath"> </span></p> <p>Om du vill inaktivera filnamnsborttagning anger du ett standardsidvärde som aldrig förekommer i dina URL-adresser. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Go Live Date </p> </td> 
-   <td colname="col2">Informerar Adobe om vilket datum du förväntar dig att den här rapportsviten ska aktiveras. Om ditt driftsättningsschema ändras kan du göra en uppdaterad trafikberäkning med hjälp av verktyget för permanent förväntad trafik <span class="wintitle"> i</span> trafikhantering <a href="/help/admin/c-traffic-management/traffic-management.md"></a>. </td> 
+   <td colname="col2">Informerar Adobe om vilket datum du förväntar dig att den här rapportsviten ska aktiveras. Om ditt distributionsschema ändras kan du göra en uppdaterad trafikberäkning med verktyget <span class="wintitle"> Permanent Expected Traffic</span> i <a href="/help/admin/c-traffic-management/traffic-management.md"> Traffic Management</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Beräknade sidvisningar per dag</span> </td> 
@@ -63,13 +63,9 @@ Beskrivningar av de element som används när [du skapar en rapportsvit](/help/a
    <td colname="col2"> <p>Anger standardvalutan som används för att lagra alla monetära data. Analysrapporter konverterar transaktioner i andra valutor till basvalutan med hjälp av den aktuella konverteringsgraden vid den tidpunkt då data tas emot. </p> <p> Analysrapporter använder JavaScript-variabeln <span class="varname"> currencyCode</span> för att identifiera valutan för en viss transaktion. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <span class="wintitle"> Inaktivera stöd för flerbytetecken </span> </td> 
-   <td colname="col2"> <p>Inaktiverar stöd för flerbytetecken för rapportsviten. Om du inaktiverar stöd för flerbytetecken antas data vara i ISO-8859-1-format. Webbsidorna måste ange sin teckenuppsättning i JavaScript-variabeln <span class="varname"> charSet</span> . </p> <p>Stöd för flerbytetecken lagrar tecken i rapportsviten med UTF-8. Vid mottagande konverterar systemet data från webbsidans teckenuppsättning till teckenuppsättningen UTF-8, så att du kan använda vilket språk som helst i dina marknadsföringsrapporter. </p> <p>Kontakta din kontoansvarige eller kundtjänst om du vill ändra stödet för flerbytetecken för en befintlig rapportsvit. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <span class="wintitle"> Aktivera Ad Hoc Analysis för den här sviten</span> </td> 
-   <td colname="col2"> Möjliggör visning av den här rapportsviten när du utför ad hoc-analyser. </td> 
-  </tr> 
+   <td colname="col1"> <span class="wintitle"> Inaktivera stöd för flerbytetecken  </span> </td> 
+   <td colname="col2"> <p>Inaktiverar stöd för flerbytetecken för rapportsviten. Om du inaktiverar stöd för flerbytetecken antas data vara i ISO-8859-1-format. Webbsidorna måste ange sin teckenuppsättning i JavaScript-variabeln <span class="varname"> charSet</span>. </p> <p>Stöd för flerbytetecken lagrar tecken i rapportsviten med UTF-8. Vid mottagande konverterar systemet data från webbsidans teckenuppsättning till teckenuppsättningen UTF-8, så att du kan använda vilket språk som helst i dina marknadsföringsrapporter. </p> <p>Kontakta din kontoansvarige eller kundtjänst om du vill ändra stödet för flerbytetecken för en befintlig rapportsvit. </p> </td> 
+  </tr>  
  </tbody> 
 </table>
 
