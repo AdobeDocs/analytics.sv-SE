@@ -3,11 +3,11 @@ product: analytics
 audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
-user-guide-description: Innehåller instruktioner för Analysis Workspace, det ledande verktyget för analys och visualisering av analyser, samt verktyg som Report Builder och Activity Map.
+user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
 translation-type: tm+mt
-source-git-commit: 29df2b4ee8ebf671b8ac7b97dbc8e31ddb765f2b
+source-git-commit: a52f2f916db322ddb6226a5d3aa1f5585bf09539
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1017'
 ht-degree: 88%
 
 ---
@@ -306,15 +306,6 @@ ht-degree: 88%
    + [Kalenderhändelser](reports-analytics/t-calendar-event.md)
    + [Vanliga frågor](reports-analytics/frequently-asked-questions.md)
    + [Felsökning](reports-analytics/report-troubleshooting.md)
-+ Ad Hoc Analysis {#ad-hoc-analysis}
-   + Ad Hoc Analysis Project Converter {#aha-project-converter}
-      + [Översikt över Ad Hoc Analysis Project Converter](ad-hoc-analysis/c-aha-project-converter/aha2aw-overview.md)
-      + [Konvertera projekt i Ad Hoc Analysis](ad-hoc-analysis/c-aha-project-converter/aha2aw-workflow.md)
-      + [Visa konverterade projekt i Analysis Workspace](ad-hoc-analysis/c-aha-project-converter/view-projects-workspace.md)
-      + [Vanliga frågor om Project Converter](ad-hoc-analysis/c-aha-project-converter/aha2aw-converter-faq.md)
-   + [Ad Hoc Analysis – översikt](ad-hoc-analysis/adhoc-home.md)
-+ Labs {#tech-previews}
-   + [Labs – översikt](tech-previews/overview.md)
 + Adobe Analytics-instrumentpaneler {#mobapp}
    + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Insamlingshandsbok](mobile-app/curator.md)
@@ -325,3 +316,5 @@ ht-degree: 88%
    + [API för Analytics-rapportering – översikt](c-reporting-api/c-reporting-api.md)
    + [API för Analytics-rapportering – jämförelse](c-reporting-api/api-comparison.md)
    + [https://github.com/AdobeDocs/analytics-2.0-apis](https://github.com/AdobeDocs/analytics-2.0-apis)
++ Labs {#tech-previews}
+   + [Labs – översikt](tech-previews/overview.md)
