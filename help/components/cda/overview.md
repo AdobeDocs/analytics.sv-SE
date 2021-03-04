@@ -2,9 +2,9 @@
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 translation-type: tm+mt
-source-git-commit: a46b68c7e4ea82b31ed400bf3e6180a7358bb3b5
+source-git-commit: 16dd381909b3a49087b244f11881000401155a0a
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -29,23 +29,24 @@ När enheter sammanfogas överförs variabel beständighet mellan olika enheter.
 
 Av en anda av partnerskap och transparens vill vi att våra kunder ska vara medvetna om vår användning av Microsoft Azure tillsammans med Cross-Device Analytics. Adobe använder Azure för att lagra enhetsdiagramdata och för att utföra sammanfogning mellan enheter. Därför skickas Adobe Analytics-data fram och tillbaka mellan Adobe databehandlingscenter och Adobe&#39;s provisionerade instanser av Microsoft Azure.
 
-Se [Journey IQ: Spark-sidan](http://adobe.ly/aacda) för analys av olika enheter om du vill veta mer om funktionerna och funktionerna i Cross-Device Analytics.
+Se [Resa-IQ: Paragrafsidan för analys av olika enheter](http://adobe.ly/aacda) om du vill veta mer om funktionerna och funktionerna i analyser av olika enheter.
 
 ## Förutsättningar
 
-Användning av CDA kräver allt av följande: [Fältbaserade sammanfogningsmetoder](field-based-stitching.md) och [enhetsdiagrammetoder](device-graph.md) har också sina egna specifika förutsättningar.
+Användning av CDA kräver allt av följande: [Fältbaserade ](field-based-stitching.md) sammanfogningsmetoder och  [Device ](device-graph.md) Graphics-metoder har också sina egna specifika förutsättningar.
 
 * Ett kontrakt måste undertecknas med Adobe som innehåller Adobe Analytics Ultimate.
 * Enhetsövergripande analys aktiveras per rapport. Adobe rekommenderar att du skapar en rapportserie som innehåller data för olika enheter, vilket innebär data från flera olika typer av enheter (webb, app, osv.). Vissa organisationer hänvisar till detta koncept som en&quot;global&quot; rapportserie, även om CDA inte strikt måste vara global ur ett geografiskt perspektiv.
 
 ## Begränsningar
 
-Enhetsövergripande analys är en banbrytande och robust funktion, men har begränsningar i hur den kan användas. [Fältbaserade stygn](field-based-stitching.md) - och [enhetsgraf](device-graph.md) -metoder har också egna specifika begränsningar.
+Enhetsövergripande analys är en banbrytande och robust funktion, men har begränsningar i hur den kan användas. [Fältbaserade ](field-based-stitching.md) sammanfogningsmetoder och  [Device ](device-graph.md) Graphics-metoder har också egna specifika begränsningar.
 
 * CDA är endast tillgängligt via Analysis Workspace.
 * Enhetsövergripande analyser fungerar inte i alla rapportsviter och inte heller kombineras data från flera rapportsviter.
 * Adobe Analytics rapporteringsprogram kan inte mappa till mer än en IMS-organisation. Eftersom CDA sammanfogar enheter inom en viss rapportserie kan CDA inte användas för att sammanfoga data över flera IMS-organ.
 * CDA är för närvarande inte kompatibelt med kundattribut. Dessa två funktioner kan sammanfalla i separata virtuella rapportsviter som refererar till samma källrapportsserie.
-* Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar. Mer information om dessa begränsningar finns i [Virtuella rapportsviter](../vrs/vrs-about.md) och [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md) .
+* CDA är för närvarande inte kompatibelt med A4T.
+* Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar. Mer information om de här begränsningarna finns i [Virtuella rapportsviter](../vrs/vrs-about.md) och [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md).
 * 1.4-API:t stöds inte. Power BI-anslutningar och Report Builder är båda beroende av 1.4-API:t och är därför inte kompatibla med CDA.
 * Historiska data i den virtuella rapportsviten ändras baserat på hur Adobe identifierar och syr ihop enheter. Data i källrapportsviten ändras inte.
