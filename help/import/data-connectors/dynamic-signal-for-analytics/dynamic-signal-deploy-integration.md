@@ -1,23 +1,26 @@
 ---
-description: 'null'
+description: Distribuera den dynamiska signaldataanslutningen för användning i Adobe Analytics.
 title: Distribuera integreringen
 uuid: 1a0770a7-c61b-4eec-a9b3-983def842ad8
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 4%
 
 ---
 
 
 # Distribuera integreringen{#deploying-the-integration}
 
-Att implementera integreringen är en enkel process som består av att slutföra Adobe Integration Wizard och verifiera integreringen.
+Att implementera den här integreringen är en enkel process som består av att slutföra guiden för integrering av Adobe och verifiera integreringen.
 
-## Slutför Adobe Integration Wizard{#completing-the-adobe-integration-wizard}
+## Slutför guiden för integrering av Adobe{#completing-the-adobe-integration-wizard}
 
 Steg för att slutföra integreringsguiden i gränssnittet för Data Connectors.
 
-1. Navigera till området Data Connectors (tidigare Genesis) i Adobe Experience Cloud.
-1. Starta integreringsguiden för dynamiska signaler.
+1. Navigera till området Dataanslutningar (tidigare Genesis) i Adobe Experience Cloud.
+1. Starta integreringsguiden för dynamisk signal.
 1. Välj önskad Report Suite och ge integreringen ett namn.
 1. Konfigurera följande objekt:
 
@@ -25,13 +28,13 @@ Steg för att slutföra integreringsguiden i gränssnittet för Data Connectors.
    |---|---|
    | E-postadress | Den primära kontaktens e-postadress. |
    | Beskrivning | (Valfritt) Beskrivning av den här integrationsinställningen. |
-   | Community-ID | Du kan få det här ID:t från din representant för Dynamic Signal. |
+   | Community-ID | Du kan få detta ID från din representant för Dynamic Signal. |
 
-1. Konfigurera följande **[!UICONTROL Variable Mappings]** objekt:
+1. Konfigurera följande **[!UICONTROL Variable Mappings]**-objekt:
 
    | Objekt | Beskrivning |
    |---|---|
-   | Spårningskod | Välj en tillgänglig eVar-variabel från rapportsviten. |
+   | Spårningskod | Välj en tillgänglig variabel i din rapportserie. |
 
 1. Granska klassificeringarna som ska skapas för den här integreringen.
 1. Markera kryssrutan för att skapa kontrollpanelen för integrering av dynamisk signal (valfri, men rekommenderas).
@@ -43,12 +46,12 @@ Steg för att slutföra integreringsguiden i gränssnittet för Data Connectors.
 Steg för att visa konfigurationen av integreringen av Dynamic Signal VoiceStorm i Adobe Experience Cloud
 
 1. Visa integrationsinställningarna för dynamiska signaler i aktivitetsloggen för integrering.
-   1. Gå till **[!UICONTROL Support]** > **[!UICONTROL Integration Activity Log]** i Adobe Experience Cloud.
+   1. I Adobe Experience Cloud går du till **[!UICONTROL Support]** > **[!UICONTROL Integration Activity Log]**.
 
       ![](assets/integration_activity_log.png)
 
-   1. Leta efter tävlingsbidrag som **[!UICONTROL Classification Data imported successfully]**. Dessa poster ska visas inom 24 timmar efter att distributionen lyckades.
-1. Granska de dynamiska signeringsrapporterna i Adobe Analytics med den Dashboard som automatiskt skapades för dig med hjälp av Adobe Integration Wizard (steg 7). Du kan också navigera till Dynamic Signal-rapporten i menystrukturen för Adobe Analytics - se följande skärmbilder.
+   1. Sök efter poster som **[!UICONTROL Classification Data imported successfully]**. Dessa poster ska visas inom 24 timmar efter att distributionen lyckades.
+1. Granska dina Dynamic Signal-rapporter i Adobe Analytics med den Dashboard som automatiskt skapades för dig med hjälp av guiden för integrering av Adobe (steg 7). Du kan också navigera till Dynamic Signal-rapporten i menystrukturen för Adobe Analytics - se följande skärmbilder.
 
    **Obs**: Dessa data ska visas inom 24-48 timmar efter att distributionen lyckades.
 
