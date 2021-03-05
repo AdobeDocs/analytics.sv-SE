@@ -1,9 +1,12 @@
 ---
-description: 'null'
+description: Power BI best practices.
 title: God praxis
 uuid: 6d55a9aa-030e-4e4d-963c-ec9cc38e1731
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +19,7 @@ När du har skapat en begäran har den alltid samma referens i Power BI. Om du t
 
 Om du tar bort en begäran i arbetsboken bör du kontrollera att det inte finns någon visualisering som pekar på den begäran i Power BI, eftersom visualiseringen annars inte fungerar.
 
-* Ta inte bort begäranden som du skapat i Report Builder om det är möjligt.
-* Om du tar bort begäranden i Report Builder måste du även ta bort motsvarande visualisering i Power BI.
+* Om det är möjligt, ta inte bort begäranden som du skapat i Report Builder
+* Se till att du även tar bort motsvarande visualisering i Power BI om du gör borttagningsbegäranden på Report Builder.
 * Om du inte är säker: ta bort begäranden som du inte längre behöver, publicera igen och gå till Power BI för att se vilka visualiseringar som har brutits
 
