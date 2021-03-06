@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Skapa arbetsyteprojekt baserade på standardmallar eller anpassade mallar.
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 519cb7e83e5f49ecacc9c4bd0c12bc59088c662c
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1384'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 3%
 
 Du kan välja om du vill skapa ett projekt från:
 
-* **Tomt projekt (standard)**: Instruktioner finns i [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/home.md).
+* **Tomt projekt (standard)**: Instruktioner finns i  [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/home.md).
 * **Standardmall**: Mallarna skapas av Adobe och levereras med produkten.
-* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har fått tillstånd från [!UICONTROL Analysis Workspace: Save as Template] Admin Console. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
+* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats  [!UICONTROL Analysis Workspace: Save as Template] tillstånd i Admin Console. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
-## Skapa en egen mall {#create-custom-template}
+## Skapa en anpassad mall {#create-custom-template}
 
 Användare med administratörsbehörighet kan omvandla projekt de skapar till en egen mall. Så här:
 
@@ -42,7 +42,7 @@ Användare med administratörsbehörighet kan omvandla projekt de skapar till en
 
 | Åtgärd | Beskrivning |
 |--- |--- |
-| Redigera mall | Låter en administratör redigera mallen genom att ändra dess datakälla, ändra komponenter, visualiseringar, datumintervall osv.  Om du vill redigera en anpassad mall, antingen<ul><li>Visa listan med egna mallar i Analysis Workspace, markera en och klicka sedan på Redigera mall, eller</li><li>Navigera till Komponenter > Projekt i Analytics och filtrera sedan efter Mallar. Klicka på namnet på mallen som du vill redigera.</li></ul>**Obs!** När du har redigerat en mall kan du välja mellan två alternativ: Spara, Spara som. Så här skiljer de sig:<ul><li>**Spara:** Uppdaterar den anpassade mallen för alla användare. När någon annan skapar ett projekt från den här anpassade mallen ser de ändringarna som du har gjort.</li><li>**Spara som:** Skapar en kopia av den anpassade mallen med dina ändringar. (Du ser att du är i redigeringsläge när menyalternativet Dela > Dela projekt är inaktiverat.)</li></ul> |
+| Redigera mall | Låter en administratör redigera mallen genom att ändra dess datakälla, ändra komponenter, visualiseringar, datumintervall osv.  Om du vill redigera en anpassad mall, antingen<ul><li>Visa listan med egna mallar i Analysis Workspace, markera en och klicka sedan på Redigera mall, eller</li><li>Navigera till Komponenter > Projekt i Analytics och filtrera sedan efter Mallar. Klicka på namnet på mallen som du vill redigera.</li></ul>**Obs!** När du har redigerat en mall kan du välja mellan två alternativ, beroende på situationen: Spara, Spara som. Så här skiljer de sig:<ul><li>**Spara:** Uppdaterar den anpassade mallen för alla användare. När någon annan skapar ett projekt från den här anpassade mallen ser de ändringarna som du har gjort.</li><li>**Spara som:** Skapar en kopia av den anpassade mallen med dina ändringar. (Du ser att du är i redigeringsläge när menyalternativet Dela > Dela projekt är inaktiverat.)</li></ul> |
 | Sök efter mallar | I dialogrutan Egna mallar klickar du på Sökmallar. |
 | Sortera mallar | Du kan sortera mallar i bokstavsordning, efter relevans och efter skapandedatum.  I dialogrutan Egna mallar klickar du på Sortera:. |
 | Använd taggar på mall | Öppna mallen och gå till Projekt > Projektinformation och inställningar. Klicka på Lägg till taggar. |
@@ -57,7 +57,7 @@ Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter 
 
 Här är en självstudiekurs (video) om [standardmallar i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/standard-templates-in-analysis-workspace.html) (2:46)
 
-Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
+Här finns mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
@@ -92,11 +92,11 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 >
 >Mobilmallar är bara tillgängliga om rapportsviten är aktiverad för Mobile.
 
-* **Meddelanden:** Fokuserar på prestanda i appen och push-meddelanden.
+* **Meddelanden:** Fokusera på prestanda i appen och push-meddelanden.
 * **Plats:** Innehåller en karta som visar platsdata.
-* **Nyckeltal:** Håll koll på nyckelmätningarna i appen.
-* **Appanvändning:** Hur många appanvändare, starter och första starter hade appen och hur lång var den genomsnittliga sessionslängden?
-* **Förvärv:** Se hur länkar till mobilförvärv fungerar.
+* **Viktiga mätvärden:** Håll koll på nyckelmätningarna i appen.
+* **Appanvändning:** Hur många appanvändare, starter och första starter har appen och vilken genomsnittlig sessionslängd var den?
+* **Anskaffning:** Se hur mobilförvärv fungerar.
 * **Prestanda:** Hur fungerar appen och var har användarna problem?
 * **Kvarhållning:** Vilka är mina lojala användare och vad gör de?
 * **Resor:** Vilka är de framträdande användningsmönstren för min app?
@@ -108,16 +108,16 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 ### Webb
 
-* **Förvärv:** Vilka är de viktigaste trafikdrivande faktorerna på min webbplats?
+* **Förvärv:** Vilka är de viktigaste trafikdrivrutinerna på min webbplats?
 * **Innehållskonsumtion:** Vilka är de främsta platserna på min webbplats?
 * **Kvarhållning:** Vilka typer av användare är sannolikt lojala användare på min webbplats?
-* **Teknik:** Vilken teknik använder folk för att komma åt min webbplats?
+* **Teknik:** Vilken teknik använder människor för att komma åt min webbplats?
 
 ### Personer
 
 >[!NOTE]
 >
->The People template and its associated People metric is available for use only as part of the [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/data/people.html).
+>Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/data/people.html).
 
 Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
 
@@ -133,7 +133,7 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 
 <!--This content is mirrored in the CDA doc.-->
 
-Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är endast tillgängligt för kunder som har tillgång till [Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (CDA).
+Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (CDA).
 
 * **Specialanteckning för medlemmarna i Co-op Graph**: Visar vilken del av rapportsviten som innehåller besökare i regioner där koordinatdiagrammet stöds och regioner där det inte stöds.
 * **Identifiering av användare**: Visar hur ofta besökare på er webbplats identifieras med hjälp av metoder som baseras på enhetsövergripande analys.
