@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Använd Selligent-dataanslutningen med Adobe Analytics.
 title: Selligent Data Connector för Adobe Analytics
 uuid: e16c3ca6-b131-44b1-a36c-e39697677a96
 translation-type: tm+mt
-source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '896'
 ht-degree: 2%
 
 ---
