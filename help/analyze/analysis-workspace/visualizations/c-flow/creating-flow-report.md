@@ -1,9 +1,12 @@
 ---
-description: 'null'
+description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Konfigurera en flödesvisualisering
 uuid: ff36dc09-6175-43ed-a82a-630d28bca806
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 2%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
 Med Flow kan du spåra en bana genom sidorna eller dimensionerna, t.ex. eVars:
 
 * Post (endast dimensioner)
-* Dimensioner eller artiklar
+* Dimensioner eller objekt
 * Avsluta (endast dimensioner)
 
 Var och en av dessa kategorier visas på skärmen som en&quot;släppzon&quot;. Dra objekt från listan och släpp dem i önskad släppzon. Sidor och andra objekt som inte är dimensioner kan bara placeras i den mittersta släppzonen. Om du släpper en dimension i mellanzonen körs automatiskt en rapport som infogar de översta objekten för den dimensionen.
@@ -32,11 +35,11 @@ Flödesdiagrammet är interaktivt. För musen över diagrammet för att ändra d
 
 Banorna i diagrammet är proportionella. Banor med mer aktivitet ser tjockare ut.
 
-När du klickar på en nod i diagrammet visas information om den noden. Om du till exempel klickar **[!UICONTROL Search Results]** längst upp till höger i det övre diagrammet ovan utökas diagrammet så att mer information om noden för sökresultat visas. Klicka på en nod igen för att komprimera den.
+När du klickar på en nod i diagrammet visas information om den noden. Om du till exempel klickar på **[!UICONTROL Search Results]** längst upp till höger i det övre diagrammet ovan, expanderas diagrammet så att mer information om noden för sökresultat visas. Klicka på en nod igen för att komprimera den.
 
 ![](assets/flow3.jpg)
 
-Som standard visas de fem översta flödena i diagrammet. Om du klickar på **[!UICONTROL More]** noden längst ned i diagrammet utökas diagrammet nedåt så att ytterligare fem flöden visas. Fortsätt att klicka **[!UICONTROL More]** för att expandera tills det inte finns några ytterligare flöden att visa.
+Som standard visas de fem översta flödena i diagrammet. Om du klickar på noden **[!UICONTROL More]** längst ned i diagrammet utökas diagrammet nedåt så att ytterligare fem flöden visas. Fortsätt att klicka på **[!UICONTROL More]** för att expandera tills det inte finns några ytterligare flöden att visa.
 
 Det finns inga gränser för hur mycket du kan utforska i flödesdiagrammet.
 
