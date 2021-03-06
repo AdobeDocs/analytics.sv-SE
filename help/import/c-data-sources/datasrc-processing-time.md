@@ -1,14 +1,17 @@
 ---
-description: 'null'
-title: Bearbetningstid för datakällor
+description: Information om hur lång tid det tar för Adobe att bearbeta datakällor.
+title: Bearbetningstider för Data Sources
 uuid: d7cd679a-f9e3-4740-87cf-6171f3fe5cd9
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 6%
 
 ---
 
 
-# Bearbetningstid för datakällor
+# Bearbetningstider för Data Sources
 
 >[!NOTE]
 >Eventuella databehandlingsperioder ska betraktas som ungefärliga och utgör inte ett serviceavtal (SLA).
