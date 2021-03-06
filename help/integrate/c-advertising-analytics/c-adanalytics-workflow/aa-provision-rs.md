@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Konfigurera en rapportsvit som mappats till Experience Cloud för användning i Advertising Analytics.
 title: Aktivera rapportsvit för Advertising Analytics
 uuid: 934f0e02-b5d7-4eca-93d8-92f95bd7014a
 translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '267'
 ht-degree: 10%
 
 ---
@@ -35,5 +35,5 @@ Om du vill kunna se Advertising Analytics sökdata i Analytics måste du konfigu
    | Senaste (senaste) | Det senaste värdet som har identifierats får fullständig allokeringskreditering för händelsen success, oavsett vilka variabler som sparades innan. |
    | Förfaller efter | Gör att du kan ange en tidsperiod eller händelse efter vilken eVar förfaller (dvs. inte längre får kredit för lyckade händelser).  Om en lyckad händelse inträffar efter att eVar har upphört att gälla, får värdet Ingen kredit för händelsen (ingen eVar var aktiv). |
 
-1. Klicka **[!UICONTROL Enable Advertising Analytics Reporting]** (första gången) eller **[!UICONTROL Update Advertising Analytics Reporting]** (efterföljande gånger). Din rapportsvit är nu klar att ta emot data från Advertising Analytics Search. Du är inte redo att [skapa annonskonton](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md).
+1. Klicka på **[!UICONTROL Enable Advertising Analytics Reporting]** (första gången) eller **[!UICONTROL Update Advertising Analytics Reporting]** (efterföljande gånger). Din rapportsvit är nu klar att ta emot data från Advertising Analytics Search. Du är inte redo att [skapa annonskonton](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md).
 
