@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Använd Report Builder med Microsoft Power BI.
 title: Publicera till Power BI – översikt
 uuid: ad688817-6e3c-45da-983d-48c123465309
 translation-type: tm+mt
-source-git-commit: 0f362008f0041a6ac31437ce4da934064c3fa134
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '957'
 ht-degree: 13%
 
 ---
@@ -23,7 +23,7 @@ Genom att kombinera rapportgenereringsfunktionen i Report Builder med visualiser
 
 ## Systemkrav {#section_0B71092D853446F38FA36447DAC0D32B}
 
-* Adobe Report Builder 5.5 [installerat](/help/analyze/report-builder/setup/t-install-arb.md)
+* Adobe Report Builder 5.5 [installerad](/help/analyze/report-builder/setup/t-install-arb.md)
 * Aktivt Microsoft-konto som gör att du kan logga in på Power BI
 
 ## Publicera arbetsbok på Power BI {#section_21CA66229EC240D49594A9A7D3FBA687}
@@ -35,12 +35,12 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data f
 1. Generera och spara en arbetsbok i Report Builder.
 1. Klicka på **[!UICONTROL Schedule]** > **[!UICONTROL New]** i verktygsfältet Report Builder.
 
-1. Markera kryssrutan invid **[!UICONTROL Publish Workbook to Microsoft Power BI]** guiden Grundläggande schemaläggning.
+1. Markera rutan bredvid **[!UICONTROL Publish Workbook to Microsoft Power BI]** i guiden Grundläggande schemaläggning.
 
    ![](assets/simple-schedule-wizard.png)
 
 1. Ange din e-postadress och skicka omedelbart eller ange schemaläggningsfrekvens (timme, dag, osv.).
-1. Klicka **[!UICONTROL OK]** för att publicera.
+1. Klicka på **[!UICONTROL OK]** för att publicera.
 1. Du ombeds nu logga in på ditt Microsoft-konto. Ange dina autentiseringsuppgifter.
 1. Report Builder-arbetsboken schemaläggs och publiceras på Power BI.
 
@@ -48,7 +48,7 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data f
 
 **Visa Report Builder-arbetsboksdata i Power BI**
 
-1. I Power BI dubbelklickar du på arbetsboken under [!UICONTROL Workbooks] menyn.
+1. I Power BI dubbelklickar du på arbetsboken under menyn [!UICONTROL Workbooks].
 
    ![](assets/workbooks-power-bi.png)
 
@@ -56,7 +56,7 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data f
 
 1. Du kan sedan fästa ett område i den här arbetsboken så att du kan ta med det på dina Power BI-kontrollpaneler.
 
-## Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller {#section_7C54A54E75184DD6BAEF4ACCE241239A}
+## Publicera alla formaterade tabeller i arbetsboken som Power BI-datatabeller {#section_7C54A54E75184DD6BAEF4ACCE241239A}
 
 >[!NOTE]
 >
@@ -69,16 +69,16 @@ I stället för att importera hela arbetsboken kan du bara importera innehållet
 **Publicera en formaterad tabell i Report Builder**
 
 1. Generera en datatabell med en rubrikrad, följt av en datarad i Report Builder.
-1. Markera tabellen och välj **[!UICONTROL Format as Table]** på [!UICONTROL Home] menyn. Tabellen namnges som standard (Tabell 1, Tabell 2 osv.), men du kan ändra namnet på [!UICONTROL Design]menyn.
+1. Markera tabellen och välj **[!UICONTROL Format as Table]** på menyn [!UICONTROL Home]. Tabellen namnges som standard (Tabell 1, Tabell 2 osv.), men du kan ändra namnet på [!UICONTROL Design]menyn.
 
 1. Klicka på **[!UICONTROL Schedule]** > **[!UICONTROL New]** i verktygsfältet Report Builder.
 
-1. Klicka på i guiden Grundläggande schemaläggning **[!UICONTROL Advanced Scheduling Options]**.
-1. Markera kryssrutan bredvid på [!UICONTROL Scheduling Wizard - Advanced]fliken **[!UICONTROL Publishing Options]** . **[!UICONTROL Publish all Formatted Tables as Power BI dataset tables]**.
+1. Klicka på **[!UICONTROL Advanced Scheduling Options]** i guiden Grundläggande schemaläggning.
+1. Markera rutan bredvid **[!UICONTROL Publish all Formatted Tables as Power BI dataset tables]** på fliken **[!UICONTROL Publishing Options]** i [!UICONTROL Scheduling Wizard - Advanced].
 
    ![](assets/advanced-schedule-wizard2.png)
 
-1. (Valfritt) Du kan anpassa namnet på den publicerade resursen i Power BI. Detta kan vara användbart om du använder versionshantering som en del av arbetsbokens namn (t.ex. minworkbook_v1.1.xlsx) och du inte vill att versionsnumret ska visas i det publicerade Power BIET-resursens namn. Den har en fördel som den publicerade resursen inte kommer att ändras om versionsnumret ändras. (Se [specifikationerna](/help/analyze/report-builder/c-publish-power-bi/specifications-limits.md) här.)
+1. (Valfritt) Du kan anpassa namnet på den publicerade resursen i Power BI. Detta kan vara användbart om du använder versionshantering som en del av arbetsbokens namn (t.ex. minworkbook_v1.1.xlsx) och du inte vill att versionsnumret ska visas i det publicerade Power BIET-resursens namn. Den har en fördel som den publicerade resursen inte kommer att ändras om versionsnumret ändras. (Visa [specifikationer](/help/analyze/report-builder/c-publish-power-bi/specifications-limits.md) här.)
 
 **Visa tabelldata i Power BI**
 
@@ -86,7 +86,7 @@ I stället för att importera hela arbetsboken kan du bara importera innehållet
 
    ![](assets/datasets-menu.png)
 
-1. Markera den datauppsättning som du publicerade och klicka på [!UICONTROL Create report] ikonen bredvid den. Observera att tabellerna kommer att visas som fält.
+1. Markera den datauppsättning som du publicerade och klicka på ikonen [!UICONTROL Create report] bredvid den. Observera att tabellerna kommer att visas som fält.
 
    ![](assets/formatted-tables.png)
 
@@ -94,13 +94,13 @@ I stället för att importera hela arbetsboken kan du bara importera innehållet
 
    ![](assets/view-table-dataset.png)
 
-1. På [!UICONTROL Visualizations] menyn kan du välja hur en tabell ska visas i Power BI. Du kan till exempel välja att presentera data som ett linjediagram:
+1. På menyn [!UICONTROL Visualizations] kan du välja hur en tabell ska visas i Power BI. Du kan till exempel välja att presentera data som ett linjediagram:
 
    ![](assets/bi-line-graph.png)
 
 1. Härifrån kan du skapa visualiseringar från den här datauppsättningstabellen.
 
-## Publicera alla Report Builder-begäranden som Power BI-datauppsättningstabeller {#section_0C26057C7DBB4068A643FDD688F6E463}
+## Publicera alla Report Builder-begäranden som Power BI Dataset-tabeller {#section_0C26057C7DBB4068A643FDD688F6E463}
 
 Ni kan förvandla alla era förfrågningar till datauppsättningstabeller och skapa visualiseringar ovanpå dem.
 
@@ -111,20 +111,20 @@ Ni kan förvandla alla era förfrågningar till datauppsättningstabeller och sk
 1. Öppna eller skapa en arbetsbok med förfrågningar från Report Builder i Report Builder.
 1. Klicka på **[!UICONTROL Schedule]** > **[!UICONTROL New]** i verktygsfältet Report Builder.
 
-1. Klicka på i guiden Grundläggande schemaläggning **[!UICONTROL Advanced Scheduling Options]**.
-1. Markera kryssrutan invid [!UICONTROL Scheduling Wizard - Advanced]på **[!UICONTROL Publishing Options]** fliken **[!UICONTROL Publish all Report Builder Requests as Power BI Dataset Tables]** ![](assets/advanced-schedule-wizard2.png)
+1. Klicka på **[!UICONTROL Advanced Scheduling Options]** i guiden Grundläggande schemaläggning.
+1. Markera kryssrutan bredvid **[!UICONTROL Publish all Report Builder Requests as Power BI Dataset Tables]** ![](assets/advanced-schedule-wizard2.png) på fliken **[!UICONTROL Publishing Options]**[!UICONTROL Scheduling Wizard - Advanced]
 
 1. Klicka på **[!UICONTROL OK]**.
 
 **Visa data för begäran i Power BI**
 
-Varje begäran som schemalagts Report Builder kommer att publiceras som en tabell i datauppsättningen. Varje begärandetabell namnges efter den primära dimensionen i begäran och har en [!UICONTROL Report Suite] och en [!UICONTROL Segments] kolumn.
+Varje begäran som schemalagts Report Builder kommer att publiceras som en tabell i datauppsättningen. Varje begärandetabell namnges efter den primära dimensionen i begäran och har en [!UICONTROL Report Suite]- och en [!UICONTROL Segments]-kolumn.
 
 1. Gå till menyn **[!UICONTROL Workspaces]** > **[!UICONTROL Datasets]** i Power BI.
 
-1. Markera den förfrågan som du har publicerat och klicka på [!UICONTROL Create report] ikonen bredvid den.
+1. Markera den begäran som du publicerade och klicka på ikonen [!UICONTROL Create report] bredvid den.
 
-   Observera att förfrågningarna visas som tabeller på [!UICONTROL Fields] menyn.
+   Observera att förfrågningarna visas som tabeller på [!UICONTROL Fields]-menyn.
 
    ![](assets/published-requests.png)
 
@@ -132,7 +132,7 @@ Varje begäran som schemalagts Report Builder kommer att publiceras som en tabel
    >
    >Oavsett hur du konfigurerade din Report Builder-förfrågan att läggas ut på kalkylbladet (pivotlayout, anpassad layout, vissa osynliga kolumner) kommer Report Builder alltid att publicera din begäran i samma tvådimensionella radformat: Datum, Dimensioner, statistik, rapportsviter, segment.
 
-1. Lägg också märke till att det finns en annan tabell som heter **[!UICONTROL Legend]**. Om du tar en begäran ur Report Builder-kontexten kan det vara svårt att komma ihåg vad varje begäran står för. Syftet med förklaringstabellen är till exempel att visa namnet på varje begäran under Tabell-ID. Du kan också lägga till de andra förklaringskolumnerna för att få en fullständig vy över begäran.
+1. Observera också att det finns en annan tabell med namnet **[!UICONTROL Legend]**. Om du tar en begäran ur Report Builder-kontexten kan det vara svårt att komma ihåg vad varje begäran står för. Syftet med förklaringstabellen är till exempel att visa namnet på varje begäran under Tabell-ID. Du kan också lägga till de andra förklaringskolumnerna för att få en fullständig vy över begäran.
 
    ![](assets/legend-table.png)
 
