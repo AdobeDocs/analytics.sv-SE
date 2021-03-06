@@ -1,9 +1,12 @@
 ---
-description: 'null'
+description: Hantera konton i Advertising Analytics.
 title: Hantera annonskonton
 uuid: 0b205046-2eb5-4cd6-be62-cdf716fe934e
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 7%
 
 ---
 
@@ -24,11 +27,11 @@ Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** 
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Åtgärder</b> </p> </td> 
-   <td colname="col2"> <p><b>Obs! Åtgärder visas bara om du har valt minst ett annonskonto. </b> </p> </td> 
+   <td colname="col2"> <p><b>Obs! Åtgärder visas bara om du har valt minst ett annonskonto.  </b> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>+ Lägg till </p> </td> 
-   <td colname="col2"> <p>Tar dig till gränssnittet för <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md"  > Konfigurera annonskonto</a> . </p> </td> 
+   <td colname="col2"> <p>Tar dig till gränssnittet <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md"  > Set Up Advertising Account</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Byt namn </p> </td> 
