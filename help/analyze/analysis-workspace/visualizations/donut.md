@@ -1,13 +1,16 @@
 ---
-description: 'null'
-title: Munk
+description: Använd donutvisualisering i ett Workspace-projekt.
+title: Ringdiagram
 translation-type: tm+mt
-source-git-commit: 77b126b2add78113c266265f413240f27f89bced
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '43'
+ht-degree: 4%
 
 ---
 
 
-# Munk
+# Ringdiagram
 
 På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd ett munpunktsdiagram när du jämför procentandelar av en summa, vanligtvis med ett litet antal objekt.
 
