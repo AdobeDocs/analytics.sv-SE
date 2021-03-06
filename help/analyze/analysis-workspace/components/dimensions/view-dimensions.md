@@ -1,9 +1,12 @@
 ---
-description: 'null'
+description: Visa de översta värdena för en dimension innan du använder den i ett projekt.
 title: Förhandsvisa dimensioner
 uuid: dd1f87de-2d83-4c6b-b8cd-ce81c741d7a3
 translation-type: tm+mt
-source-git-commit: b36505c9fd7bf1d2da4d076d6b49298f01ad1cfc
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 29%
 
 ---
 
@@ -16,9 +19,9 @@ Håll pekaren över informationsikonen (i) bredvid en dimension. Detta visar de 
 
 Som standard visas nu dynamiska värden i stället för statiska, med möjlighet att omvandla dem till statiska värden. Andra saker att notera:
 
-* När dina data uppdateras uppdateras de dynamiska dimensionskolumnerna så att de aktuella 5/15 dimensionsobjekten visas.
-* En kolumn för dynamiska dimensioner som kopieras eller flyttas blir statisk.
-* När du hovrar en statisk dimensionskolumn visas en låsikon som anger att dimensionen är statisk.
+* När data uppdateras uppdateras kolumnerna för dynamiska mått så att de aktuella 5/15 måttobjekten visas.
+* En kolumn för dynamiska mått som kopieras eller flyttas blir statisk.
+* När du håller markören över en statisk måttkolumn visas en låsikon, som anger att måttet är statiskt.
 
 ![](assets/dimension_static.png)
 
@@ -26,4 +29,4 @@ Som standard visas nu dynamiska värden i stället för statiska, med möjlighet
 
 När du håller muspekaren över ett mått och klickar på den grå högerpilen bredvid det visas en lista med dimensionsobjekt. Alla listor med dimensionsobjekt visar vanligtvis de översta artiklarna de senaste 30 dagarna.
 
-Om du bläddrar nedåt till listan visas ett **[!UICONTROL Show Top Items From Last 6 Months]**. Klicka på det här alternativet om du vill visa de översta dimensionsobjekten från de senaste 180 dagarna.
+Om du bläddrar nedåt i listan visas ett **[!UICONTROL Show Top Items From Last 6 Months]**. Klicka på det här alternativet om du vill visa de översta dimensionsobjekten från de senaste 180 dagarna.
