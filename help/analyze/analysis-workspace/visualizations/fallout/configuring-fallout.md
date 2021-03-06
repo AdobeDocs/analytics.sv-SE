@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Konfigurera en utfallsvisualisering.
 title: Konfigurera en utfallsvisualisering
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 68ff30395daf5cfb26d3e597ec4e6098a856fb51
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '677'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ Du kan till och med lägga till segment inom en kontaktyta. Du kanske vill jämf
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
-Du kan göra saker på eVars, t.ex. sälja eVars och [listVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
-1. Dra en [!UICONTROL Fallout] visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
+1. Dra en [!UICONTROL Fallout]-visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
 
-1. Dra siddimensionen till friformstabellen och dra sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]** fältet som första kontaktyta.
+1. Dra siddimensionen till friformstabellen och dra sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]**-fältet som första kontaktyta.
 
    ![](assets/fallout1.png)
 
@@ -35,7 +35,7 @@ Du kan göra saker på eVars, t.ex. sälja eVars och [listVars](https://docs.ado
 
 1. Fortsätt lägga till kontaktytor tills sekvensen är klar.
 
-   Du kan **kombinera flera kontaktytor** genom att dra en eller flera kontaktytor till en kontaktyta.
+   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare kontaktytor till en kontaktyta.
 
    >[!NOTE]
    >
@@ -43,7 +43,7 @@ Du kan göra saker på eVars, t.ex. sälja eVars och [listVars](https://docs.ado
 
    ![](assets/multiple_obj_touchpoint.png)
 
-1. You can also **constrain individual touchpoints to the next hit** (as opposed to &quot;eventually&quot;) within the path. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
+1. Du kan också **begränsa enskilda kontaktytor till nästa träff** (till skillnad från&quot;finally&quot;) i banan. Under varje kontaktyta finns det en väljare med alternativen&quot;Eventual Path&quot; och&quot;Next Hit&quot;, vilket visas här:
 
    ![](assets/next-hit-eventually.png)
 
@@ -60,7 +60,7 @@ Du kan göra saker på eVars, t.ex. sälja eVars och [listVars](https://docs.ado
  </tbody> 
 </table>
 
-## Utfallsinställningar {#section_0C7C89D72F0B4D6EB467F278AC979093}
+## Bortfallsinställningar {#section_0C7C89D72F0B4D6EB467F278AC979093}
 
 | Inställning | Beskrivning |
 |--- |--- |
