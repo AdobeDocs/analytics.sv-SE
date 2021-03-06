@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Använd ContactLab-dataanslutningen för Adobe Analytics.
 title: ContactLab Data Connector för Adobe Analytics
 uuid: 9e6ed7cd-dce1-4c00-9090-d4306202e3ea
 translation-type: tm+mt
-source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 7%
+source-wordcount: '209'
+ht-degree: 6%
 
 ---
 
