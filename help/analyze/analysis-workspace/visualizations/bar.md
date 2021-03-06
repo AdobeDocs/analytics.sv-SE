@@ -1,16 +1,19 @@
 ---
-description: 'null'
-title: Stolpstreck och stapel
+description: Använd fältvisualisering i ett Workspace-projekt.
+title: Stapeldiagram och staplat stapeldiagram
 uuid: 45d2d9f3-3fb3-460f-bc87-7d6e3cc44494
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 9%
 
 ---
 
 
-# Stolpstreck och stapel
+# Stapeldiagram och staplat stapeldiagram
 
-## Liggande {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
+## Stapel {#section_2E96E55D4E8E488CBCA6A3508DDF3918}
 
 Den här visualiseringen visar lodräta staplar som representerar olika värden för ett eller flera mätvärden.
 
