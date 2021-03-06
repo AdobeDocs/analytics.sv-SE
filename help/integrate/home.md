@@ -1,11 +1,11 @@
 ---
 title: Analytics-integrering
-description: 'null'
+description: Lär dig hur du kan integrera data från andra platser i Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 100%
+source-wordcount: '163'
+ht-degree: 92%
 
 ---
 
