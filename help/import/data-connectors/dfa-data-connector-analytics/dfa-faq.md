@@ -1,13 +1,13 @@
 ---
-description: 'null'
+description: Vanliga frågor och svar om DFA-dataanslutningen.
 keywords: DFA
 title: Vanliga frågor
-topic: Data connectors
+topic: Dataanslutningar
 uuid: 59d187e9-1ec1-4cf3-8831-b981f87c9372
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Varför accepterar inte guiden för dataanslutningar mina inloggningsuppgifter? {#section-f019b3de18774df3954af7881aa564fa}
 
-Om du har verifierat att inloggningsuppgifterna är giltiga kontrollerar du sedan att det användarnamn som har angetts för integreringen är aktiverat för API-åtkomst. Guiden Data Connectors använder DFA API för att validera inloggningsuppgifter samt stänger av och aktiverar Adobe-specifika inställningar i DFA API. API Access är en inställning som måste aktiveras inifrån DFA-gränssnittet av en administratör. Kontrollera sedan att du har behörighet att komma åt det annonsanvändar-ID eller det konfigurations-ID för Floodlight som valts i guiden.
+Om du har verifierat att inloggningsuppgifterna är giltiga kontrollerar du sedan att det användarnamn som har angetts för integreringen är aktiverat för API-åtkomst. Guiden Data Connectors använder DFA API för att validera inloggningsuppgifter samt för att inaktivera och aktivera Adobe-specifika inställningar i DFA API. API Access är en inställning som måste aktiveras inifrån DFA-gränssnittet av en administratör. Kontrollera sedan att du har behörighet att komma åt det annonsanvändar-ID eller det konfigurations-ID för Floodlight som valts i guiden.
 
 ## Varför ser jag inga data från de nightly uploaded metrics (DFA Impressions, DFA Clicks osv.)? {#section-465fd22ae6b447ffb6baf20b57daa433}
 
@@ -43,10 +43,10 @@ Det finns några annonser som bara spelar in klickdata, som kallas klickningssp�
 
 Det kan finnas ett av många svar på detta.
 
-Kontrollera först att annonsen i fråga har en landningssid-URL som båda är (a) taggad med Adobe-kod för samma rapportsvit som du visar avvikelsen i och (b) innehåller frågesträngsparametern *`clickThroughParam`* .
+Kontrollera först att annonsen i fråga har en URL för landningssidan som båda är (a) taggad med Adobe-kod för samma rapportsvit som du visar avvikelsen i och (b) innehåller frågesträngsparametern *`clickThroughParam`*.
 
-För det andra kontrollerar du att du har en fungerande integrering genom att följa stegen i [Bekräfta en lyckad DFA-integrering](../dfa-data-connector-analytics/dfa-integration.md). Om en DFA-spårningskod visas med Adobe-träffen på landningssidan bör du se att Click-through-koden finns i DFA Campaigns-rapporten. Om du inte ser att det kommer fram kontrollerar du att rapportsviterna matchar landningssidans *`s.account`* variabel och att rapportsviten visas i Rapporter och Analytics. Om de här matchar kontrollerar du om det finns spårningskoder i rapporten View Through eVar som ser ut som DFA:XXX:XXX:XXX:llXXX:XXX:XXX:XXX:XXX.
+Kontrollera sedan att du har en fungerande integrering genom att följa stegen i [Bekräfta en lyckad DFA-integrering](../dfa-data-connector-analytics/dfa-integration.md). Om du ser en DFA-spårningskod visas med Adobe-träffen på landningssidan bör du se att Click-through-koden finns i DFA Campaigns-rapporten. Om du inte ser att det kommer fram kontrollerar du att rapportsviterna matchar mellan landningssidans *`s.account`*-variabel och att rapportsviten visas i Rapporter och analyser. Om de stämmer överens kontrollerar du om det finns spårningskoder i rapporten Visa via eVar som ser ut som DFA:XXX:XXX:XXX:llXXX:XXX:XXX:XXX:XXX.
 
-Dessa indikerar fel i DFA VISTA-regeln när rådata från DFA ska samlas. Detta problem kan åtgärdas genom att en supportanmälan öppnas via din Adobe-kontorepresentant.
+Dessa indikerar fel i DFA VISTA-regeln när rådata från DFA ska samlas. Det här problemet kan åtgärdas genom att en supportanmälan öppnas via din kontorepresentant på Adobe.
 
-Om ingen av lösningarna ovan förklarar problemet, se [Avstämning av metriska avvikelser](../dfa-data-connector-analytics/dfa-reconciling-metric-discrepancies.md) för att utforska andra möjligheter.
+Om ingen av lösningarna ovan förklarar problemet kan du läsa [Avstämning av mätarfel](../dfa-data-connector-analytics/dfa-reconciling-metric-discrepancies.md) för att utforska andra möjligheter.
