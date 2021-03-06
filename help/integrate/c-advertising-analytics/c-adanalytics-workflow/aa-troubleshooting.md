@@ -1,21 +1,24 @@
 ---
-description: 'null'
-title: Felsöka annonsanalys
+description: Felsöka och åtgärda problem som rör Advertising Analytics.
+title: Felsöka Advertising Analytics
 uuid: d0abe7cc-ed13-4d3d-87a6-f0d649c7ad2d
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 9%
 
 ---
 
 
-# Felsöka annonsanalys
+# Felsöka Advertising Analytics
 
 * [Jag ser inte min rapportsvit i mappningsavsnittet](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_9CAACDE6445C492DBAE542BA74DE6316)
 * [Jag får ett fel vid autentisering till Google Adwords-konto..](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_C99EA9A1946E4908B36778A331142B84)
 
 ## Jag ser inte min rapportsvit i mappningsavsnittet {#section_9CAACDE6445C492DBAE542BA74DE6316}
 
-Du försöker [konfigurera ett nytt Advertising-konto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) och du ser inte din rapportsvit som visas i **[!UICONTROL Select Report Suite]** listrutan. Det finns två möjliga orsaker till detta:
+Du försöker [konfigurera ett nytt Advertising Account](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) och du ser inte din rapportsvit som visas i listrutan **[!UICONTROL Select Report Suite]**. Det finns två möjliga orsaker till detta:
 
 <table id="table_271D7E817B4C44818717A47C3223E592"> 
  <thead> 
@@ -26,12 +29,12 @@ Du försöker [konfigurera ett nytt Advertising-konto](/help/integrate/c-adverti
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1. Rapportsviten är inte mappad till Experience Cloud-organisations-ID:t för inloggningsanvändaren. </p> </td> 
-   <td colname="col2"> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html"  > Kartrapportsviter för en organisation</a> . </p> </td> 
+   <td colname="col1"> <p>1. Rapportsviten är inte mappad till inloggningsanvändarens Experience Cloud-Org-ID. </p> </td> 
+   <td colname="col2"> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/sv-SE/core-services/interface/about-core-services/report-suite-mapping.html"  > Mappa rapportsviter till en organisation</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Report Suite har inte etablerats för Advertising Analytics-rapportering. </p> </td> 
-   <td colname="col2"> <p>Anvisningar finns i <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md"  > Provisionera Report Suite</a> . </p> </td> 
+   <td colname="col2"> <p>Mer information finns i <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md"  > Provisionera Report Suite</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
