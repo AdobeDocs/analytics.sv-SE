@@ -1,16 +1,19 @@
 ---
-description: 'null'
-title: Vågrätt streck och vågrätt streck staplade
+description: Använd den vågräta fältvisualiseringen i ett Workspace-projekt.
+title: Liggande stapeldiagram och staplat liggande stapeldiagram
 uuid: 3730929d-42e6-4543-b12a-d002f86ac82d
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 18%
 
 ---
 
 
-# Vågrätt streck och vågrätt streck staplade
+# Liggande stapeldiagram och staplat liggande stapeldiagram
 
-## Vågrätt streck {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
+## Vågrätt fält {#section_73A4D6F6C8864045A97B0B32B5FFFEDB}
 
 Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
 
@@ -18,11 +21,11 @@ Den här visualiseringen visar vågräta staplar som representerar olika värden
 
 ## Staplad vågrät stapel {#section_50C08E9E20A94024A6553BC352ADB597}
 
-Den här visualiseringen är som [!UICONTROL Horizontal Bar Chart]den, men seriestaplarna ser skiktade ut.
+Den här visualiseringen liknar [!UICONTROL Horizontal Bar Chart], men seriestaplarna visas som staplade.
 
 ![](assets/horizontal-bar-stacked.png)
 
-Visualiseringsinställningen på staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering: [!UICONTROL Horizontal Bar Stacked]
+Visualiseringsinställningen [!UICONTROL Horizontal Bar Stacked] för staplade visualiseringar gör diagrammet till en 100 % staplad visualisering:
 
 ![](assets/horizstacked100.png)
 
