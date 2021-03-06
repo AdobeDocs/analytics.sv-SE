@@ -1,16 +1,19 @@
 ---
-description: 'null'
-title: Intelligenta aviseringar - användningsfall
+description: Använd exempel för att skapa och hantera intelligenta aviseringar.
+title: Intelligenta aviseringar – användningsexempel
 uuid: 2aa8e00f-4885-4861-a47f-40c8df1f8539
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 9%
 
 ---
 
 
-# Intelligenta aviseringar - användningsfall
+# Intelligenta aviseringar – användningsexempel
 
-## Skapa en enkel avisering filtrerad av två segment {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## Skapa enkel avisering filtrerad av två segment {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
 
 <!-- 
 
@@ -20,7 +23,7 @@ Update screenshots for better readability.
 
 ![](assets/alerts_example1.png)
 
-## Skapa en avisering från ett tabellval {#section_AE6D42E1255D498D908A2FA60370A419}
+## Skapa en avisering från en tabellmarkering {#section_AE6D42E1255D498D908A2FA60370A419}
 
 I frihandstabeller kan du nu skapa snabbmeddelanden genom att högerklicka på en tabellrad och välja **[!UICONTROL Create Alert from Selection]**.
 
