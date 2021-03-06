@@ -1,13 +1,13 @@
 ---
-description: 'null'
+description: Använd DoubleClick för Advertisers-integrering med Adobe Analytics.
 keywords: DFA
 title: DFA Data Connector för Adobe Analytics
-topic: Data connectors
+topic: Dataanslutningar
 uuid: 8d04909f-6f17-4b7d-a199-99c923253474
 translation-type: tm+mt
-source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1736'
 ht-degree: 2%
 
 ---
