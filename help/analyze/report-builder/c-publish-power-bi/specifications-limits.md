@@ -1,11 +1,11 @@
 ---
-description: 'null'
+description: Begränsningar när du använder Report Builder och Microsoft Power BI.
 title: Begränsningar och specifikationer
 uuid: 6717b6ea-7e01-49b8-8f6e-fb733a03b687
 translation-type: tm+mt
-source-git-commit: 0f362008f0041a6ac31437ce4da934064c3fa134
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -70,5 +70,5 @@ Kom ihåg
 
 * Etiketten kan inte vara en kombination av bokstäver och siffror som kan vara felaktiga för en rad- och kolumnadress. A100 kan till exempel inte vara en etikett eftersom det är adressen till en cell i ett kalkylblad.
 * Följande tecken är inte giltiga etikettecken: &#39;#&#39;, &#39;@&#39;, &#39;!&#39;, &#39;$&#39;, &#39;^&#39;, &#39;&amp;&#39;, &#39;*&#39;, &#39;`&#39;, &#39;~&#39;, &#39; . De ersätts med ett understreck.
-* När du anger ett ogiltigt namn visas ett varningsmeddelande som föreslår ett automatiskt genererat namn. Om du klickar **[!UICONTROL Yes]** används det här namnet. Om du klickar **[!UICONTROL No]** kan du ange det nya namnet med hjälp av gränssnittet för Avancerad guide.
+* När du anger ett ogiltigt namn visas ett varningsmeddelande som föreslår ett automatiskt genererat namn. Om du klickar på **[!UICONTROL Yes]** används det här namnet. Om du klickar på **[!UICONTROL No]** kan du ange det nya namnet med hjälp av gränssnittet för den avancerade guiden.
 
