@@ -1,18 +1,21 @@
 ---
-description: 'null'
-title: Karta
+description: Använd kartvisualisering i ett Workspace-projekt.
+title: Mappa
 uuid: 6038f336-62a3-4efa-8316-4d7792468db3
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 2%
 
 ---
 
 
-# Karta
+# Mappa
 
 ## Översikt {#section_19F740FAF08D47B1AF1EF239A74FC75C}
 
-Mappningsvisualisering i Analysis Workspace
+The Map Visualization in Analysis Workspace
 
 * Gör att du kan skapa en visuell karta över alla mått (inklusive beräknade värden).
 * Är användbart för att identifiera och jämföra mätdata för olika geografiska regioner.
@@ -22,7 +25,7 @@ Mappningsvisualisering i Analysis Workspace
 
 ## Skapa en kartvisualisering {#section_61BBFA3A7BFD48DA8D305A69D9416299}
 
-1. Dra **[!UICONTROL Map]** till en friformspanel från listan över visualiseringar:
+1. Dra **[!UICONTROL Map]** från listan över visualiseringar till en friformspanel:
 
    ![](assets/map-viz1.png)
 
@@ -33,11 +36,11 @@ Mappningsvisualisering i Analysis Workspace
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Mobile Lat/Long</b> </p> </td> 
-   <td colname="col2"> <p>Det här alternativet representerar mobilappsdata. </p> <p>Det här alternativet visas bara om du har aktiverat det för din rapportsvit i <span class="ignoretag"><span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Report Suites </span> &gt; <span class="uicontrol"> &lt;select report suite&gt; </span> <span class="uicontrol"> </span> <span class="uicontrol"> </span> <span class="uicontrol"> </span> </span>&gt; Redigera inställningar¥ &gt; Mobile Management¥ &gt; Aktivera Location Tracking¥. </p> <p>Det här är standardinställningen (om platsspårning är aktiverat). </p> </td> 
+   <td colname="col2"> <p>Det här alternativet representerar mobilappsdata. </p> <p>Det här alternativet visas bara om du har aktiverat det för din rapportsserie i <span class="ignoretag"> <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Report Suites </span> &gt; <span class="uicontrol"> &lt;select report suite&gt; </span> &gt; <span class="uicontrol"> Redigera inställningar </span> &gt; &lt;a1 1/&gt; Mobile Management </span> &gt; <span class="uicontrol"> Enable Location Tracking </span> </span>.<span class="uicontrol"> </span></p> <p>Det här är standardinställningen (om platsspårning är aktiverat). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>Geografisk dimension </b> </p> </td> 
-   <td colname="col2"> <p>Det här alternativet representerar geosegmenteringsdata om besökarens plats baserat på besökarens IP-adress. Dessa data omvandlas till Land, Region och Stad. Observera att det inte går till DMA- eller Zip-kodnivån. </p> <p>Nästan alla rapportsviter har den här dimensionen aktiverad. Om du inte har det kontaktar du Adobes kundtjänst för att aktivera geografiska rapporter. </p> </td> 
+   <td colname="col1"> <p><b>Geografisk Dimension  </b> </p> </td> 
+   <td colname="col2"> <p>Det här alternativet representerar geosegmenteringsdata om besökarens plats baserat på besökarens IP-adress. Dessa data omvandlas till Land, Region och Stad. Observera att det inte går till DMA- eller Zip-kodnivån. </p> <p>Nästan alla rapportsviter har den här dimensionen aktiverad. Om du inte har det kontaktar du Adobe kundtjänst för att aktivera geografiska rapporter. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,31 +54,31 @@ Mappningsvisualisering i Analysis Workspace
 1. Nu kan du
 
    * **Zooma** in på kartan för att förstora vissa områden genom att dubbelklicka på kartan eller använda rullningshjulet. Kartan zoomas enligt var du har placerat markören. Genom zoominteraktion uppdateras den nödvändiga dimensionen (land > stat > stad) automatiskt utifrån zoomnivån.
-   * **Jämför** två eller flera kartvyer i samma projekt genom att placera dem sida vid sida.
+   * **Jämför** två eller flera mappningsvisualiseringar i samma projekt genom att placera dem sida vid sida.
    * **Visa jämförelser** för perioden över perioden (t.ex. år över år):
 
       * Visa negativa tal: Om du till exempel ritar upp ett årligt mått kan kartan visa -33 % över New York.
-      * Med mätvärden som är av typen &quot;percent&quot; beräknar du procentvärdena tillsammans.
+      * Med mätvärden av typen procent beräknar klustring det genomsnittliga procentvärdet.
       * Ett grönt/rött färgschema: Positiv/negativ
-   * **Rotera** kartan i 2D eller 3D genom att hålla ned [!UICONTROL Ctrl] tangenten och flytta kartan.
+   * **Rotera kartan** i 2D eller 3D genom att hålla ned  [!UICONTROL Ctrl] tangenten och flytta kartan.
 
-   * **Växla** till en annan vy, till exempel värmekartan, med [inställningarna](/help/analyze/analysis-workspace/visualizations/map-visualization.md#section_5F89C620A6AA42BC8E0955478B3A427E) nedan. Observera att bubbelvyn är standardinställningen.
+   * **Växla** till en annan vy, t.ex. värmekartan, med de  [](/help/analyze/analysis-workspace/visualizations/map-visualization.md#section_5F89C620A6AA42BC8E0955478B3A427E) inställningar som beskrivs nedan. Observera att bubbelvyn är standardinställningen.
 
 
-1. **Spara** projektet för att spara alla kartinställningar (koordinater, zoomning, rotation).
+1. **** Spara projektet för att spara alla kartinställningar (koordinater, zoomning, rotation).
 1. Tabellen på frihand, nedanför visualiseringen, kan fyllas med genom att du drar i platsdimensioner och mått från den vänstra listen:
 
    ![](assets/location-dimensions.png)
 
-## Inställningar för kartvisualisering {#section_5F89C620A6AA42BC8E0955478B3A427E}
+## Inställningar för mappningsvisualisering {#section_5F89C620A6AA42BC8E0955478B3A427E}
 
 Det finns två uppsättningar inställningar för kartan:
 
-Ikonen **för** skiftnyckel längst upp till höger visar den inledande dialogrutan där du kan ändra måttet och datakällan:
+**skiftnyckelsikonen** längst upp till höger återställer den inledande dialogrutan där du kan ändra måttet och datakällan:
 
 ![](assets/map-wrench.png)
 
-Om du klickar på **kugghjulsikonen** visas följande visualiseringsinställningar:
+Om du klickar på **kugghjulsikonen** visas dessa visualiseringsinställningar:
 
 | Inställning | Beskrivning |
 |--- |--- |
