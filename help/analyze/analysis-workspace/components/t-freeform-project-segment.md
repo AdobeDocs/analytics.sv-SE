@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Använd segment i Analysis Workspace.
 title: Segment
 uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 translation-type: tm+mt
-source-git-commit: 56ca9fa36db9d7dd126808280ba17f29f4b787d9
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 2%
+source-wordcount: '368'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ Segmentspåret under menyn Komponenter visar både segment och segmentmallar, en
 
 ![](assets/segment_icons.png)
 
-[Använda segment i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-in-analysis-workspace.html)(6:46)
+[Använda segment i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-in-analysis-workspace.html) (6:46)
 
 ## Skapa segment {#section_693CFADA668B4542B982446C2B4CF0F5}
 
@@ -42,7 +42,7 @@ Kom ihåg:
 Du kan välja att göra dessa segment offentliga (globala) genom att följa dessa steg:
 
 1. Håll pekaren över segmentet i släppzonen och klicka på ikonen i.
-1. Klicka på den informationspanel som visas **[!UICONTROL Make public]**.
+1. Klicka på **[!UICONTROL Make public]** på informationspanelen som visas.
 
    ![](assets/segment-info.png)
 
@@ -53,6 +53,6 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 | Åtgärd | Beskrivning |
 |--- |--- |
 | Skapa segment från markering | Skapa ett textbundet segment. Markera rader, högerklicka på markeringen och skapa sedan ett textbundet segment. Det här segmentet gäller bara det öppna projektet och sparas inte som ett Analytics-segment. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka på *Skapa segment från markering*. |
-| Komponenter > Nytt segment | Visar segmentbyggaren. Mer information om segmentering finns i [Segment Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html) . |
-| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6)kan du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
+| Komponenter > Nytt segment | Visar segmentbyggaren. Mer information om segmentering finns i [Segmentbyggare](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html). |
+| Dela > Dela projekt eller Dela > Kuratera projektdata | I [Curate and Share](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) kan du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
 | Använd segment som Dimensioner | Video: [Använda segment som Dimensioner i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/segmentation/using-segments-as-dimensions-in-analysis-workspace.html) |
