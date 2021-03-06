@@ -1,12 +1,12 @@
 ---
-description: 'null'
+description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Översikt över flöden
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 2%
+source-wordcount: '208'
+ht-degree: 1%
 
 ---
 
