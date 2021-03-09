@@ -1,13 +1,13 @@
 ---
 description: Steg som beskriver hur du skapar en sammanslagningsrapportsserie.
 title: Skapa en sammanslagen rapportsvit
-topic: Admin tools
+topic: Administratörsverktyg
 uuid: d4bab32a-2a09-49a7-b280-29f8f33ee021
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: 42cdbdafdafb94b336253ff49dfa2fb77ed9f339
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 16%
+source-wordcount: '98'
+ht-degree: 12%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 16%
 
 Steg som beskriver hur du skapar en sammanslagningsrapportsserie.
 
+>[!NOTE]
+>
+>[!DNL Reports & Analytics] är det enda verktyget som stöder sammanslagningsrapporter, och Adobe rekommenderar inte längre att du använder sammanslagningar. Se &quot;[Rapportera metoder](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/rollup-report-suite.html)&quot; för alternativ.
+
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. Klicka [!UICONTROL Report Suite Groups]i **[!UICONTROL Add]** bredvid **[!UICONTROL Rollups]** rubriken.
-1. Ange följande information i **[!UICONTROL Create a New Rollup]** dialogrutan:
+1. I [!UICONTROL Report Suite Groups] klickar du på **[!UICONTROL Add]** bredvid rubriken **[!UICONTROL Rollups]**.
+1. Ange följande information i dialogrutan **[!UICONTROL Create a New Rollup]**:
 
    **[!UICONTROL Report Suite ID:]** Sammanslagningens rapport-Suite-ID.
 
@@ -26,7 +30,3 @@ Steg som beskriver hur du skapar en sammanslagningsrapportsserie.
 
    **[!UICONTROL Time Zone:]** Den tidszon där data rapporteras.
 1. Klicka på **[!UICONTROL Create Rollup]**.
-
->[!NOTE]
->
->Samlingar stöds inte i Analysis Workspace.
