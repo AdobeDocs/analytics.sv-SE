@@ -1,7 +1,11 @@
 ---
 title: Apache-licens
+description: Villkor för Apache-licensen.
 translation-type: tm+mt
-source-git-commit: 8f17602b6295864d0391695061cdf2e381c954b2
+source-git-commit: 4d0d5ca99049e48fcf1f248f78ecef94534b6815
+workflow-type: tm+mt
+source-wordcount: '1576'
+ht-degree: 0%
 
 ---
 
@@ -15,65 +19,185 @@ VILLKOR FÖR ANVÄNDNING, REPRODUKTION OCH DISTRIBUTION
 
 1. Definitioner.
 
-   licens: de villkor för användning, reproduktion och distribution som definieras i avsnitten 1-9 i detta dokument.
+   licens: villkoren för användning, reproduktion,
+och distribution enligt definition i avsnitten 1-9 i detta dokument.
 
-   licensgivare: den upphovsrättsinnehavare eller den upphovsrättsinnehavare som beviljar licensen.
+   licensgivare: upphovsrättsinnehavare eller upphovsrättsenhet som auktoriserats av
+copyright-ägaren som beviljar licensen.
 
-   Med juridisk enhet avses den sammanslutning av den agerande enheten och alla andra enheter som kontrollerar, kontrolleras av eller står under gemensam kontroll med den enheten. I denna definition avses med kontroll i) direkt eller indirekt befogenhet att leda eller förvalta en sådan enhet, antingen genom avtal eller på annat sätt, eller ii) ägande av femtio procent (50 %) eller mer av de utestående aktierna, eller iii) verkligt ägande av denna enhet.
+   juridisk enhet: den agerande enhetens förening och alla
+andra enheter som kontrollerar, kontrolleras av eller är under gemensamma
+kontroll med den enheten. I denna definition avses med
+kontroll i) den direkta eller indirekta effekten som kan orsaka
+leda eller förvalta en sådan enhet, antingen genom avtal eller
+i annat fall, eller ii) äger femtio procent (50 %) eller mer av
+utestående aktier, eller iii) verkligt ägande av sådana enheter.
 
-   &quot;You&quot; (eller &quot;Your&quot;) avser en fysisk eller juridisk person som utövar de tillstånd som denna licens ger.
+   &quot;Du&quot; (eller &quot;Din&quot;) avser en fysisk eller juridisk person
+att utöva behörigheter som beviljas av denna licens.
 
-   &quot;Källformulär&quot;: det formulär som föredras för att göra ändringar, inklusive men inte begränsat till källkod, dokumentationskälla och konfigurationsfiler för programvaran.
+   källformulär: den form som föredras för att göra ändringar,
+inklusive, men inte begränsat till, programvarans källkod, dokumentation
+käll- och konfigurationsfiler.
 
-   Med objektform avses varje form som är ett resultat av mekanisk omvandling eller översättning av ett källformulär, inklusive, men inte begränsat till kompilerad objektkod, genererad dokumentation och konvertering till andra medietyper.
+   Objektform: alla former som härrör från mekanisk
+omformning eller översättning av ett källformulär, inklusive
+inte begränsat till kompilerad objektkod, genererad dokumentation,
+och konverteringar till andra medietyper.
 
-   Med &quot;arbete&quot; avses det verk av redaktörer, oavsett om det är i källformulär eller objektsformulär, som gjorts tillgängligt enligt licensen, vilket framgår av ett copyrightmeddelande som ingår i eller är kopplat till verket (ett exempel finns i tillägget nedan).
+   arbete: författararbete, oavsett om det sker i källan eller
+Objektformulär som görs tillgängligt under licensen, vilket anges av en
+copyrightmeddelande som ingår i eller är kopplat till verket
+(ett exempel finns i bilagan nedan).
 
-   &quot;Derivativa verk&quot; avser allt arbete, oavsett om det är i käll- eller objektform, som bygger på (eller härrör från) arbetet och för vilket de redaktionella revideringarna, anteckningarna, utarbetandet eller andra modifieringar tillsammans utgör ett originalverk i författarskapet. I denna licens ska Derivative Works inte omfatta verk som kan skiljas från eller bara länkas (eller bindas efter namn) till gränssnittet för Work och Derivative Works.
+   &quot;Derivativa arbeten&quot;: alla arbeten, oavsett om de är källarbeten eller föremål
+som bygger på (eller härrör från) arbetet och för vilket
+redaktionella ändringar, kommentarer, ändringar
+utgör tillsammans ett originalverk av författare. I detta syfte
+i detta tillstånd ska Derivative Works inte omfatta arbeten som återstår
+kan separeras från eller endast länka (eller binda efter namn) till gränssnitten för,
+Arbetet och det tillhörande arbetet.
 
-   Med bidrag avses allt verk av upphovsman, inklusive originalversionen av verket och alla ändringar eller tillägg av detta verk eller verk som härrör från detta, som avsiktligt har lämnats till licensgivaren för införande i arbetet av upphovsrättshavaren av en person eller en juridisk enhet som har tillstånd att lämna in för upphovsrättsägarens räkning. I denna definition avses med &quot;inskickad&quot; varje form av elektronisk, verbal eller skriftlig kommunikation som skickas till licensgivaren eller dess representanter, inklusive men inte begränsat till kommunikation om elektroniska sändningslistor, system för källkodskontroll och system för uppföljning av utfärdande som sköts av licensgivaren eller på dennes vägnar i syfte att diskutera och förbättra arbetet, men utan undantag för kommunikation som är tydligt markerad eller på annat sätt skriftligen av upphovsrättsinnehavaren &quot;Inte ett bidrag.&quot;
+   &quot;Bidrag&quot; avser alla former av författararbete, inbegripet
+originalversionen av arbetet och eventuella ändringar eller tillägg
+till detta verk eller konstverk till detta, dvs. avsiktligt
+har skickats till licensgivaren för inkludering i arbetet av upphovsrättsägaren
+eller av en fysisk eller juridisk person som är bemyndigad att lämna in uppgifter för
+copyright-ägaren. I denna definition avses med &quot;inlämnat&quot;
+alla former av elektronisk, verbal eller skriftlig kommunikation som skickas
+licensgivaren eller dess företrädare, inklusive men inte begränsat till
+kommunikation om elektroniska sändningslistor, system för källkodskontroll,
+och ärendehanteringssystem som hanteras av, eller för,
+Licensgivare för diskussion och förbättring av arbetet, men
+utesluta kommunikation som är väl synlig eller på annat sätt
+skriftligen har utsetts av upphovsrättsinnehavaren till&quot;Inte ett bidrag&quot;.
 
-   &quot;Bidragsgivare&quot; avser licensgivaren och varje fysisk eller juridisk person för vars räkning ett bidrag har mottagits av licensgivaren och senare införlivats i arbetet.
+   &quot;Bidragsgivare&quot; avser licensgivare och alla enskilda eller juridiska personer
+för vilka ett bidrag har tagits emot av licensgivaren och
+som senare införlivats i arbetet.
 
-2. Beviljande av licens för upphovsrätt I enlighet med villkoren i denna licens ger varje medverkande en permanent, världsomspännande, icke-exklusiv, royaltyfri, oåterkallelig, upphovsrättsskyddad licens att reproducera, förbereda Derivative Works av, offentligt visa, offentligt utföra, underlicensiera och distribuera arbetet och sådana Derivative Works i käll- eller objektform.
+2. Beviljande av licens för upphovsrätt I enlighet med villkoren i
+den här licensen, ger varje medverkande en permanent licens,
+världsomspännande, icke-exklusiv, kostnadsfri, royaltyfri, oåterkallelig
+copyright license to reproduce, prepare Derivative Works of,
+offentligt visa, offentligt utföra, underlicensiera och distribuera
+Arbeta och sådana Derivative Works i käll- eller objektformat.
 
-3. Beviljande av patentlicens. I enlighet med villkoren i denna licens beviljar varje medverkande dig härmed en permanent, världsomspännande, icke-exklusiv, kostnadsfri, royaltyfri, oåterkallelig (utom i enlighet med vad som anges i detta avsnitt) patentlicens att skapa, låta göra, använda, erbjuda att sälja, importera och på annat sätt överföra arbetet, när en sådan licens endast gäller för patentanspråk som sådana medverkande har licens för och som nödvändigtvis kränks av deras medverkande Bidrag, enskilt eller genom en kombination av deras bidrag och det arbete som bidraget eller bidragen lämnats in till. Om ni inför patentmål mot någon enhet (inklusive ett gemensamt anspråk eller ett genkäromål i en rättegång) som hävdar att arbetstagaren har ett bidrag som är inbyggt i Work utgör en patentöverträdelse som riktar sig till direktören, ska alla patentlicenser som ni har beviljats enligt denna licens för detta verk upphöra från och med den dag då tvisten görs gällande.
+3. Beviljande av patentlicens. I enlighet med villkoren i
+den här licensen, ger varje medverkande en permanent licens,
+världsomspännande, icke-exklusiv, kostnadsfri, royaltyfri, oåterkallelig
+(utom i enlighet med vad som anges i detta avsnitt) patentlicens att tillverka,
+användning, erbjudande om att sälja, sälja, importera och på annat sätt överföra arbetet,
+om en sådan licens endast gäller för de patentanspråk som kan licensieras
+av en sådan medarbetare som med nödvändighet överträds av deras
+Bidrag, enskilt eller genom en kombination av deras bidrag
+med det arbete som dessa bidrag har lämnats in till. Om du
+inleda patenttvister mot ett företag (inklusive
+genkäromål eller genkäromål i en rättegång som hävdar att verket
+eller ett bidrag som ingår i verket utgör
+eller bidragande patentintrång, därefter eventuella patentlicenser
+som har beviljats dig enligt denna licens för detta arbete ska upphöra
+från och med den dag då en sådan talan har väckts.
 
-4. Omdistribution. Du får reproducera och distribuera kopior av Work (Arbetet) eller Derivative Works (detta material) i vilket medium som helst, med eller utan ändringar, och i käll- eller objektform, förutsatt att du uppfyller följande villkor:
+4. Omdistribution. Du får reproducera och distribuera kopior av
+Arbete eller konstverk av sådana slag, oavsett medium, med eller utan
+ändringar och i käll- eller objektformulär, förutsatt att du
+uppfyller följande villkor:
 
-   (a) Du måste ge alla andra mottagare av Work eller Derivative Works en kopia av denna licens; och
+   (a) Du måste ge alla andra mottagare av arbetet eller
+Derivative Works har en kopia av denna licens; och
 
-   (b) Du måste göra så att ändrade filer får tydliga meddelanden om att du har ändrat filerna. och
+   (b) Du måste se till att ändrade filer innehåller väl synliga meddelanden
+att du ändrat filerna, och
 
-   (c) Du måste behålla alla meddelanden om upphovsrätt, patent, varumärke och attribuering från arbetets källformulär i källformuläret, i källformuläret för de Derivative Workers som du distribuerar, med undantag för de meddelanden som inte gäller någon del av det Derivative Works. och
+   (c) Du måste behålla alla Derivative Works i källformat
+som du distribuerar, all upphovsrätt, patent, varumärken och
+attribueringsmeddelanden från arbetets källformulär,
+utelämna de meddelanden som inte gäller någon del av
+Derivativa verk. och
 
-   d) Om tävlingsbidraget innehåller en NOTICE-textfil som en del av distributionen måste alla Derivative Works som du distribuerar innehålla en läsbar kopia av de attribueringsmeddelanden som finns i NOTICE-filen, med undantag för de meddelanden som inte gäller någon del av Derivative Works, på minst en av följande platser: inom en NOTICE-textfil som distribueras som en del av Derivative Works, i källformulärsdokumentationen, om sådan finns tillsammans med de Derivative Works, eller, inom en skärm som genererats av Derivative Works, om och var tredjepartsmeddelanden normalt förekommer. Innehållet i NOTICE-filen är endast avsett som information och ändrar inte licensen. Du kan lägga till egna attribueringsmeddelanden i Derivative Works som du distribuerar, tillsammans med eller som ett tillägg till NOTICE-texten från Work, förutsatt att sådana ytterligare attribueringsmeddelanden inte kan tolkas som att du ändrar licensen.
+   d) Om arbetsytan innehåller en NOTICE-textfil som en del av
+distribution, måste alla Derivative Works som du distribuerar
+inkludera en läsbar kopia av de meddelanden om attribuering som finns
+inom en sådan NOTICE-fil, med undantag för de meddelanden som inte
+gäller alla delar av Derivative Works, i minst en
+av följande platser: inom en NOTICE-textfil som distribueras
+som en del av Derivative Works, i källformuläret eller
+dokumentation, om sådan finns tillsammans med de Derivative Works, eller
+på en skärm som genererats av Derivative Works, om och
+närhelst sådana tredjepartsmeddelanden normalt visas. Innehållet
+av NOTICE-filen endast är avsedd som information, och
+ändrar inte licensen. Du kan lägga till din egen attribuering
+meddelanden i Derivative Works som du distribuerar, tillsammans med
+eller som ett tillägg till NOTICE-texten från Work, under
+att sådana ytterligare attribueringsmeddelanden inte kan tolkas
+som att ändra licensen.
 
-   Du kan lägga till din egen copyrightbeskrivning till dina ändringar och du kan ange ytterligare eller olika licensvillkor för användning, återgivning eller distribution av dina ändringar, eller för sådana dynamiska verk som helhet, förutsatt att din användning, återgivning och distribution av arbetet i övrigt uppfyller villkoren som anges i denna licens.
+   Du kan lägga till din egen copyrightbeskrivning till dina ändringar och
+kan erbjuda ytterligare eller olika licensvillkor
+för användning, reproduktion eller distribution av dina ändringar, eller
+för alla sådana dynamiska verk som helhet, förutsatt att du använder
+reproduktion och distribution av Work i övrigt uppfyller
+villkoren i denna licens.
 
-5. Bidragsansökningar. Såvida du inte uttryckligen anger något annat ska bidrag som avsiktligt har skickats in för att ingå i Workby You till licensgivaren vara enligt villkoren i denna licens, utan ytterligare villkor.
-Oaktat det ovan anförda ersätter eller ändrar inget av villkoren i något separat licensavtal som du har ingått med licensgivaren avseende sådana bidrag.
+5. Bidragsansökningar. Om du inte uttryckligen anger något annat,
+Bidrag som avsiktligt har lämnats in för deltagande i arbetet
+som du skickar till licensgivaren ska uppfylla villkoren i
+denna licens, utan ytterligare villkor.
+Oaktat ovanstående ska inget av detta ersätta eller ändra
+villkoren i de separata licensavtal som du har genomfört
+med licensgivaren om sådana bidrag.
 
-6. Varumärken. Denna licens ger inte tillstånd att använda licensgivarens varumärken, varumärken, tjänstmärken eller produktnamn, förutom vad som krävs för rimlig och traditionell användning vid beskrivning av arbetets ursprung och återgivning av innehållet i NOTICE-filen.
+6. Varumärken. Licensen ger inte tillstånd att använda handeln
+Licensgivarens namn, varumärken, tjänstmärken eller produktnamn.
+utom i enlighet med vad som krävs för rimlig och anpassad användning vid beskrivning av
+arbetets ursprung och återgivning av innehållet i NOTICE-filen.
 
-7. Ansvarsfriskrivning. Såvida inte annat krävs enligt tillämplig lag eller skriftligen överenskommits tillhandahåller licensgivaren arbetet (och varje medverkande lämnar sina bidrag) på basis av&quot;i befintligt skick&quot;,UTAN GARANTIER ELLER VILLKOR AV NÅGOT slag, antingen uttryckligt eller underförstått, inklusive, utan begränsning, eventuella garantier eller villkor i TITLE, ICKE-ÖVERTRÄDELSE, MERCHANTABILITY eller FITNESS FOR SÄRSKILT ÄNDAMÅL. Du är ensam ansvarig för att avgöra om du är lämplig att använda eller distribuera om arbetet och tar på dig alla risker som är förknippade med din utövande av behörigheter under denna licens.
+7. Ansvarsfriskrivning. Om inte annat krävs enligt tillämplig lag eller
+som godkänts skriftligen tillhandahåller licensgivaren arbetet (och
+Contributor tillhandahåller sina bidrag) på basis av AS IS,
+UTAN GARANTIER ELLER VILLKOR AV NÅGOT SLAG, uttryckliga eller
+underförstådda, inklusive, utan begränsning, eventuella garantier eller villkor
+AVDELNING, ICKE-ÖVERTRÄDELSE, MERCHANTABILITET ELLER LÄMPLIGHET FÖR
+SÄRSKILT ÄNDAMÅL. Du ansvarar själv för att fastställa
+lämplighet att använda eller omfördela arbetet och utgå från
+risker i samband med din utövande av behörigheter enligt denna licens.
 
-8. Ansvarsbegränsning. Under inga omständigheter och under ingen rättslig teori, vare sig det sker i rätt ordning (inklusive försumlighet), i kontrakt eller på annat sätt, såvida inte det krävs enligt tillämplig lag (såsom avsiktliga eller grosvårdslösa handlingar) eller skriftligen överenskommits, ska en medverkande som kan antas för dig för skada, inbegripet varje direkt, indirekt, särskild, oavsiktlig eller följdskada av något slag som uppkommer till följd av denna licens eller på användning eller oförmåga att använda den Arbete (inklusive, men inte begränsat till, skador på grund av förlust av goodwill, avbrott i arbetet, datorfel eller andra kommersiella skador eller förluster), även om sådana medarbetare har informerats om möjligheten till sådana skador.
+8. Ansvarsbegränsning. Under inga omständigheter och under inga rättsliga teorier.
+oavsett om det är i kartong (inklusive försumlighet), i kontrakt eller på annat sätt,
+om det inte krävs enligt tillämplig lag (t.ex. avsiktligt och grovt
+oaktsam handling) eller skriftligt överenskommet om, ska alla medverkande
+kan åläggas dig för skadestånd, inklusive alla direkta, indirekta, särskilda,
+oavsiktliga eller följdskador av någon karaktär som uppstår som en
+resultatet av denna licens eller av att användaren inte kan använda
+Arbete (inklusive men inte begränsat till skador på grund av förlust av goodwill)
+avbrott i arbetet, datorfel eller felfunktion, eller något och alla
+andra kommersiella skador eller förluster), även om sådana medverkande
+har informerats om möjligheten till sådana skador.
 
-9. Accepterar garanti eller ytterligare ansvar. När du återdistribuerar arbetet eller det Derivative Works kan du välja att erbjuda och debitera en avgift för, godkännande av support, garanti, gottgörelse eller andra ansvarskrav och/eller rättigheter som är förenliga med denna licens. När du accepterar sådana skyldigheter får du dock agera enbart för din egen räkning och på ditt eget ansvar, inte för någon annan medverkandes räkning, och endast om du samtycker till att gottgöra, försvara och hålla varje medarbetare skadefri för eventuella förpliktelser som åsamkats, eller anspråk som hävdats mot, den medverkande på grund av att du godtagit sådan garanti eller ytterligare ansvar.
+9. Accepterar garanti eller ytterligare ansvar. Vid omfördelning
+Arbetet eller det arbete som härrör från detta kan du välja att erbjuda
+och ta ut en avgift för, godkännande av stöd, garanti, gottgörelse,
+eller andra förpliktelser och/eller rättigheter som är förenliga med detta
+Licens. När du accepterar sådana skyldigheter får du dock endast agera
+för din egen räkning och på ditt eget ansvar, inte för din räkning
+för andra medverkande, och endast om du går med på att ersätta,
+försvara och hålla alla medverkande oskyldiga för allt ansvar
+har åsamkats av, eller anspråk som har bekräftats av, en sådan medverkande
+om du accepterar sådan garanti eller ytterligare ansvar.
 
 SLUTET AV VILLKOREN
 
 TILLÄGG: Hur du använder Apache License i ditt arbete.
 
-    Om du vill använda Apache-licensen på ditt arbete ska du bifoga
+    Om du vill använda Apache-licensen på ditt arbete ska du bifoga 
     följande standardmeddelande med fälten omgivna av hakparenteser &quot;{}&quot;
     ersatta med din egen identifieringsinformation. (Inkludera inte
-    hakparenteserna!)  Texten ska omslutas av
-    lämplig syntax för filformatet. Vi rekommenderar också att
-    fil- eller klassnamn och beskrivning av ändamålet inkluderas på
-    samma&quot;utskrivna sida&quot; som copyrightanmälan för
-    enklare identifiering i tredjepartsarkiv.
+    hakparenteserna!)  Texten ska omslutas av rätt 
+    kommentarssyntax för filformatet. Vi rekommenderar också att du inkluderar en
+    fil- eller klassnamn och beskrivning av syftet på 
+    samma&quot;utskrivna sida&quot; som copyrightmeddelandet för enklare
+    identifiering i tredjepartsarkiv.
 
 Copyright 2018 Adobe Systems, Inc
 
@@ -83,5 +207,8 @@ Du kan få en kopia av licensen på
 
     https://www.apache.org/licenses/LICENSE-2.0
 
-Såvida det inte krävs enligt tillämplig lag eller skriftligen godkänns, distribueras programvara som distribueras enligt licensen på&quot;AS IS&quot;-basis, UTAN GARANTIER ELLER VILLKOR AV NÅGOT slag, uttryckliga eller underförstådda.
-Se Licensen för information om språk som styr behörigheter och begränsningar i licensen.
+Såvida det inte krävs enligt tillämplig lag eller skriftligen överenskommits om, programvara
+distribueras under licensen på en&quot;AS IS&quot;-bas,
+UTAN GARANTIER ELLER VILLKOR AV NÅGOT SLAG, uttryckliga eller underförstådda.
+Se licensen för det språk som styr behörigheter och
+begränsningar enligt licensen.
