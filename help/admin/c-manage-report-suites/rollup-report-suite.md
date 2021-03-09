@@ -1,43 +1,74 @@
 ---
-description: Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsviter och visar dem i en sammanfattande datauppsättning.
-title: Sammanslagning och globala rapportsviter
+description: Beskrivningar av rapporttyper och jämförelse av globala rapportsviter och sammanfattningsrapportsviter.
+title: Rapportera metoder för programsvit
+topic: Administratörsverktyg
+uuid: c90b8e38-2c95-4318-8165-a362106b6142
 translation-type: tm+mt
-source-git-commit: 4d0d5ca99049e48fcf1f248f78ecef94534b6815
+source-git-commit: 9bc2e0425fa99efb32561ad1f80605e078eb7650
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 1%
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
 
-# Sammanslagning och globala rapportsviter
+# Rapportera metoder för programsvit
 
-Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsviter och visar dem i en sammanfattande datauppsättning. De är en praktisk plats där du kan se summerade summor som sidvisningar, intäkter eller andra grundläggande dimensioner. Samlingar används ofta eftersom de inte kräver någon ytterligare implementering.
+<!-- change filename since page name changed? -->
 
-## Definitioner av rapporttyper
+Du kan konfigurera dina rapportsviter som antingen *globala rapportsviter* eller *sammanslagningsrapportsviter*.
 
-**Global rapportsvit**: Implementeringen ändras för att skicka bildbegäranden mellan domäner till en enda global rapportserie. Om träffar också skickas till enskilda rapportsviter kallas detta för märkning av flera programsviter.
+## Globala rapportsviter
 
-**Rapport**: Skapat i Admin Tools. Tar summan av varje mätvärde i slutet av varje dag.
+En global rapportserie samlar in data från alla domäner och appar som organisationen äger. Implementeringen kräver att alla bildbegäranden skickas till en enda rapportserie.
 
-* Det är fritt att använda sammanslagningar och det ökar inte användningen av serveranrop.
-* Sammanslagningar ger totaldata, men rapporterar inte enskilda värden i rapporter. eVar1-värden inkluderas till exempel inte, men dess sammanlagda summa kan vara det.
-* Data dedupliceras inte när data kombineras mellan olika rapportsviter.
-* Upprullningar körs på nattbasis.
+Adobe rekommenderar att man i de flesta fall genomför en global rapportserie. Se &quot;[Överväganden i den globala rapportsviten](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html)&quot; för fördelarna med att implementera en global rapportserie.
+
+Du kan tillhandahålla delmängder av företagets globala rapportsvitdata till olika slutanvändare med hjälp av *taggning för flera programsviter* och *Virtual Report Suite*-metoderna:
+
+* **Märk flera programsviter**: Med taggar för flera programsviter kan du skicka bildbegäranden inte bara till en global rapportsvit utan även till enskilda underordnade rapportsviter. De globala rapportdata dedupliceras i alla rapportsviter.
+
+   Du kan till exempel samla in alla data i en global rapportserie och även skapa sekundära rapportsviter baserade på varumärke, region eller annan differentiator. De olika teamen i företaget kan sedan fokusera på data i de rapportsviter som är relevanta för dem.
+
+   Om du vill använda flera svittaggar implementerar du underordnade rapportsviter och en global rapportserie som innehåller alla data från de underordnade. Spårningskoden för dina webbsidor och appar inkluderar Report Suite-ID (RSID) för den globala rapportsviten och även RSID:n för de underordnade rapportsviterna.<!-- Wording/be more specific? And include any links? -->
+
+   Ett separat serveranrop görs till varje rapportssvit i bildbegäran. Anropen till de underordnade rapportsviterna är sekundära anrop.
+
+* **Virtuellt rapportpaket**: En  [virtuell rapportssvit ](/help/components/vrs/vrs-about.md) är en fråga om angivna segment som samlats in i en global rapportsvit och som är tillgänglig för angivna användargrupper. Med virtuella rapportsviter kan du strukturera rapportelement för olika slutanvändare utan att behöva använda flera svittaggar, vilket undviker sekundära serveranrop.
+
+   Om du vill använda virtuella rapportsviter implementerar du en global rapportsvit och tolkar sedan data för att skapa virtuella rapportsviter med specifika segment och med specifika gruppbehörigheter. Du kan skapa virtuella rapportsviter i Virtual Report Suite Manager ([!UICONTROL Components] > [!UICONTROL Virtual Report Suites]). Mer information finns i &quot;[Arbetsflöde för Virtual Report Suite](/help/components/vrs/c-workflow-vrs/vrs-workflow.md)&quot;.
+
+Att använda virtuella rapportsviter i stället för taggning i flera sviter är ofta en bra metod, men virtuella rapportsviter har vissa begränsningar. Se &quot;[Virtuella rapportsviter och taggningsöverväganden för flera sviter](/help/components/vrs/vrs-considerations.md)&quot; för att ta reda på vilken rapportritmetod som är det bästa valet för ditt företags behov. En detaljerad jämförelse av virtuella rapportsviter och taggningsfunktioner för flera sviter finns i &quot;[Virtual Report Suites vs. Multisuite Tagging](/help/components/vrs/vrs-about.md#section_317E4D21CCD74BC38166D2F57D214F78).&quot;
+
+## Sammanslagningsrapporter
+
+>[!NOTE]
+>
+>[!DNL Reports & Analytics] är det enda verktyget som stöder sammanslagningsrapporter, och Adobe rekommenderar inte längre att du använder sammanslagningar. Överväg i stället att använda en global rapportserie med taggar för flera programsviter eller virtuella rapportsviter.
+
+En sammanslagningsrapport är en enkel sammanställning av data från flera rapportsviter, utan borttagning av dubbletter eller någon segmentering eller datauppdelning. För sammanslagningar krävs ingen kodimplementering. [implementera underordnade rapportsviter](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) och [kombinera dem i en sammanslagningsrapport](/help/admin/c-manage-report-suites/t-rollups.md) med [!UICONTROL Admin Tools] om du vill använda sammanslagningsrapporter.
+
+Sammanslagningsrapporter är kostnadsfria: den underordnade rapportsviten har egna serveranrop, men sammanslagningen medför inga ytterligare anrop. Sammanslagning är en äldre funktion och har många begränsningar.
+
+### Begränsningar för sammanslagningsrapporter {#limitations-rollups}
+
+* Sammanslagningar ger totaldata, men de rapporterar inte enskilda värden i rapporter. eVar1-värden inkluderas till exempel inte, men deras sammanlagda summa kan vara det.
+* Data dedupliceras inte när sammanslagningen kombinerar data mellan olika rapportsviter.
+* Upprullningar går nattetid vid midnatt.
 * När du lägger till en rapportserie i en befintlig sammanslagning inkluderas inte historiska data i sammanslagningen.
-* Alla underordnade rapportsviter måste ha data för att en sammanslagning ska fungera. Om nya rapportsviter ingår i en sammanslagning måste du skicka minst en sidvy till dessa rapportsviter.
-* Sammanslagningsrapportsviter är begränsade till högst 40 underordnade rapportsviter.
-* Sammanslagningsrapportsviter är begränsade till högst 100 händelser.
-* Data i sammanfattningsrapportsviter stöder inte uppdelningar eller segment.
+* Alla underordnade rapportsviter måste ha data i dem för att en sammanslagning ska fungera. Om nya rapportsviter ingår i en sammanslagning måste du skicka minst en sidvy till var och en av dessa rapportsviter.
+* Sammanslagningsrapportsviter kan innehålla maximalt 40 underordnade rapportsviter.
+* Sammanslagningsrapportsviter kan innehålla maximalt 100 händelser.
+* Data i sammanslagningsrapportsviter stöder inte uppdelningar eller segment.
 * Sidrapporten ersätts med rapporten Most Popular Sites (Populära platser), som rapporterar mått på underordnad svitnivå.
 
-## Sammanslagning jämfört med globala rapportsviter
+## Jämförelse av funktionerna i Global Report Suite och Sammanslagningsrapport
 
 **Sekundära serveranrop**: Vid sammanslagning uppstår inga ytterligare serveranrop utöver vad en enda rapportserie samlar in. Om din organisation använder taggar för flera programsviter görs sekundära serveranrop för varje extra rapportsvit som ingår i en bildbegäran.
 
 >[!TIP]
 >
->Om du bara använder en global rapportserie med [virtuella rapportsviter](../../components/vrs/vrs-considerations.md) behövs inga sekundära serveranrop.
+>Om du bara använder en global rapportserie med [virtuella rapportsviter](/help/components/vrs/vrs-considerations.md) behövs inga sekundära serveranrop.
 
 **Implementeringsändringar**: Vid sammanslagning krävs inga implementeringsändringar, medan globala rapportsviter kräver att du inkluderar det globala rapportsvitens ID i implementeringen.
 
@@ -45,7 +76,7 @@ Sammanslagningsrapportsviter samlar in data från flera underordnade rapportsvit
 
 **Tidsram**: Samlingar behandlas endast vid midnatt varje kväll, medan globala rapportsviter rapporterar data med standardfördröjning.
 
-**Bredd**: Uppsättningar kan inte kommunicera mellan rapportsviter. Globala rapportsviter kan attribuera konverteringar till konverteringsvariabler mellan olika rapportsviter, samt tillhandahålla sökvägar mellan rapportsviter.
+**Bredd**: Uppsättningar kan inte kommunicera mellan rapportsviter. Globala rapportsviter kan attribuera konverteringar till konverteringsvariabler mellan olika rapportsviter och tillhandahålla sökvägar mellan rapportsviter.
 
 **Historiska data**: Sammanslagningar kan samla in historiska data, medan globala rapportsviter bara rapporterar data från den punkt de implementerades.
 
