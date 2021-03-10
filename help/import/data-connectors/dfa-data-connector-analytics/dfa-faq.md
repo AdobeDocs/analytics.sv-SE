@@ -5,7 +5,7 @@ title: Vanliga frågor
 topic: Dataanslutningar
 uuid: 59d187e9-1ec1-4cf3-8831-b981f87c9372
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 6669f678c1327b6af4a5b67c8033a9b7d8c9dbcf
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -47,6 +47,6 @@ Kontrollera först att annonsen i fråga har en URL för landningssidan som båd
 
 Kontrollera sedan att du har en fungerande integrering genom att följa stegen i [Bekräfta en lyckad DFA-integrering](../dfa-data-connector-analytics/dfa-integration.md). Om du ser en DFA-spårningskod visas med Adobe-träffen på landningssidan bör du se att Click-through-koden finns i DFA Campaigns-rapporten. Om du inte ser att det kommer fram kontrollerar du att rapportsviterna matchar mellan landningssidans *`s.account`*-variabel och att rapportsviten visas i Rapporter och analyser. Om de stämmer överens kontrollerar du om det finns spårningskoder i rapporten Visa via eVar som ser ut som DFA:XXX:XXX:XXX:llXXX:XXX:XXX:XXX:XXX.
 
-Dessa indikerar fel i DFA VISTA-regeln när rådata från DFA ska samlas. Det här problemet kan åtgärdas genom att en supportanmälan öppnas via din kontorepresentant på Adobe.
+Dessa indikerar fel i DFA VISTA-regeln när rådata från DFA ska samlas. Detta problem kan åtgärdas genom att en supportanmälan öppnas via din kontorepresentant på Adobe.
 
 Om ingen av lösningarna ovan förklarar problemet kan du läsa [Avstämning av mätarfel](../dfa-data-connector-analytics/dfa-reconciling-metric-discrepancies.md) för att utforska andra möjligheter.
