@@ -5,10 +5,10 @@ user-guide-title: Importguide för Analytics
 breadcrumb-title: Importera guide
 user-guide-description: 'Hämta in data i analyser från externa källor, antingen i bulk eller i realtid. '
 translation-type: tm+mt
-source-git-commit: a6b12b7a343318186b5672dbabd8b7c56d09e653
+source-git-commit: 946be738843a691a711cf6a84fd5556abbfb532d
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 94%
+source-wordcount: '529'
+ht-degree: 93%
 
 ---
 
@@ -71,6 +71,7 @@ ht-degree: 94%
       + [Standarddimensioner i Demandbase](data-connectors/demandbase-home/demandbase-standard-dimensions.md)
       + [Anpassade dimensioner i Demandbase](data-connectors/demandbase-home/demandbase-custom-dimensions.md)
    + DFA Data Connector för Adobe Analytics {#dfa}
+      + [Information om upphörande av DFA-integrering](data-connectors/dfa-data-connector-analytics/dfa-eol.md)
       + [DFA Data Connector för Adobe Analytics](data-connectors/dfa-data-connector-analytics/dfa-data-connector-analytics.md)
       + [Förutsättningar](data-connectors/dfa-data-connector-analytics/dfa-prerequisites.md)
       + [Integreringsfunktioner](data-connectors/dfa-data-connector-analytics/dfa-integration-features.md)
