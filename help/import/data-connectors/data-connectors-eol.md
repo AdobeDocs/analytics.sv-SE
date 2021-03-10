@@ -2,7 +2,7 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 translation-type: tm+mt
-source-git-commit: 0a7dad7108359b465fe64a110b38624a64fd2ab7
+source-git-commit: 5a9f3d32964dddd9df2728449d2d388a155e64a9
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 11%
@@ -61,7 +61,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Demandbase CA | Undertryckt |
 | Demandbase v3 | Undertryckt |
 | DialogTech | Finns på Adobe Exchange |
-| DoubleClick for Advertisers (DFA) | Undertryckt |
+| [DoubleClick for Advertisers (DFA)](/help/import/data-connectors/dfa-data-connector-analytics/dfa-eol.md) | Undertryckt |
 | DREAM | Undertryckt |
 | DREAMmail 2.0 | Undertryckt |
 | Dynamisk signal (Nital Vora) | Migrerar till Exchange |
@@ -81,7 +81,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Lyris HQ | Undertryckt |
 | MaritzCX (V 2.0) | Undertryckt |
 | Merkle | Undertryckt |
-| Oracle Eloqua-integrering | Undertryckt |
+| Oraclets officiella Eloqua-integrering | Undertryckt |
 | optivo broadmail (Episerver) | Migrerar till Exchange |
 | Qualtrics v2 | Migrerar till Exchange |
 | Responsys 2.0 | Undertryckt |
