@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: 087ea279f55d4828d68b1ec16a5505855b34055d
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,11 @@ Om du använder mobilenhetstyp enligt bilden ovan kan du se hur människor rör 
 
 ## Hur långt bak stygger CDA besökare?
 
-Adobe behåller data för att fästa enheten i cirka 30 dagar. Om en enhet till att börja med inte identifieras, men identifieras senare inom 30 dagar, går CDA tillbaka och uppger att enheten tillhör den identifierade personen upp till 30 dagar tidigare. Om en del av en användares oidentifierade beteende ligger utanför 30-dagars uppslagsfönstret sammanfogas inte den delen av användarens resa.
+CDA:s sammanfogning mellan enheter sker i två samtidiga processer.
+
+* Den första processen kallas för&quot;live stitching&quot;, som inträffar när data strömmar till Adobe Analytics. Under livelösa stygn gör CDA det bästa som kan göras om på personnivå. Men om personen är okänd vid tiden för syning av live, återgår CDA till besökar-ID:t för att representera personen.
+
+* Den andra processen kallas &quot;replay&quot;. Under uppspelning går CDA bakåt i tiden och återställer historiska data, där det är möjligt, inom ett angivet uppslagsfönster. Detta fönster är antingen 1 dag eller 7 dagar, beroende på hur du har begärt att CDA ska konfigureras. Under repriser försöker CDA att skicka tillbaka träffar där personen tidigare var okänd.
 
 * **Om du använder ett enhetsdiagram** behåller Adobe enhetsmappningar i Co-op-diagrammet och det privata diagrammet i ungefär 6 månader. Ett ECID som inte har någon aktivitet på mer än sex månader tas bort från diagrammet. Data som redan sammanfogats i CDA påverkas inte, men efterföljande träffar för detta ECID behandlas som en ny person.
 
