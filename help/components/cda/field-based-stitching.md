@@ -2,9 +2,9 @@
 title: Fältbaserad stygn
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med fältbaserad sammanfogning.
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: 7b43c4ebbf9446507ab90a90e26c51635303dcc6
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,8 @@ Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfog
 ## Begränsningar som är specifika för fältbaserad sammanfogning
 
 * Fältbaserad sammanfogning fungerar bäst på rapportsviter med hög användaridentifieringsfrekvens. Om rapportsviten har låg identifierings- eller inloggningsfrekvens bör du använda [Co-op-diagrammet](device-graph.md).
+* Även om props och eVars har regler för hur versaler och gemener hanteras för rapportering, innebär fältbaserad stygn inte att den propp eller eVar som används för stygn omvandlas på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns efter VISTA-regler och regler för efterbearbetning. Om ibland ordet &#39;Bob&#39; visas i utkastet/eVar och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer.
 
 ## Nästa steg
 
-När din organisation uppfyller alla krav och förstår begränsningarna kan du börja med [Konfigurera Cross-Device Analytics](setup.md).
+När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [konfigurera enhetsövergripande analyser](setup.md).
