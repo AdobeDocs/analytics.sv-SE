@@ -2,9 +2,9 @@
 title: Konfigurera enhetsövergripande analys
 description: Konfigurera en virtuell rapportsvit för att aktivera CDA.
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: 97e1c0ac5fbf7f932c3f772c33e7fa8880c653a6
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ CDA tillhandahålls av Adobe Engineering på ditt enhetsövergripande rapportpak
 * Rapportsvitens-ID för det rapportpaket för olika enheter som du vill aktivera med CDA
 * Vilken metod för CDA du vill använda (fältbaserad sammanfogning, privat Adobe-diagram eller Adobe-foto-diagram)
 * Om du tänker använda fältbaserad sammanfogning är det utkast eller den eVar som innehåller användar-ID:t
+* Din inställning för repetitionsfrekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
 
 När din CSM väl har fått den här informationen arbetar de tillsammans med Adobe Engineering för att aktivera den rapportsvit du valt för CDA-bearbetning.
 
