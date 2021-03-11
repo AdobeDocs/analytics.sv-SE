@@ -2,9 +2,9 @@
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i enhetsövergripande analys
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: f3f5f82a236d376eda07d4d39e7effa60e929499
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,12 @@ Både oautentiserade och autentiserade träffar på nya enheter räknas som sepa
 
 ### Spela upp sammanfogning
 
-CDA beräknar historiska data ungefär en gång i veckan baserat på enheter som nu känns igen. Om en enhet till att börja med skickar data utan att vara autentiserad och sedan loggar in, binder CDA dessa oautentiserade träffar till rätt person. Följande tabell representerar samma data som ovan, men visar olika tal baserat på hur data spelas upp.
+Uppspelningen sker antingen varje dag eller varje vecka, beroende på hur du har begärt att CDA ska konfigureras. Under uppspelning försöker CDA att omfördela historiska data inom ett definierat uppslagsfönster:
+
+* Daglig uppspelning använder ett 1-dagars uppslagsfönster
+* Veckovis omspelning använder ett 7-dagars uppslagsfönster.
+
+Om en enhet till att börja med skickar data utan att vara autentiserad och sedan loggar in, binder CDA dessa oautentiserade träffar till rätt person. Följande tabell representerar samma data som ovan, men visar olika tal baserat på hur data spelas upp.
 
 *Samma data efter replay:*
 
@@ -65,9 +70,3 @@ CDA beräknar historiska data ungefär en gång i veckan baserat på enheter som
 | `6` | `246` | `Bob` | Bob loggar in igen via skrivbordet | `1` (kluster1) | `1` (Bob) |
 | `7` | `3579` | - | Bob kommer åt din webbplats igen på mobilen | `1` (kluster1) | `1` (Bob) |
 | `8` | `3579` | `Bob` | Bob loggar in igen via mobilen | `1` (kluster1) | `1` (Bob) |
-
-## Omslag
-
-* **Om du använder ett enhetsdiagram sammanfogas** data när ett kluster publiceras (vanligtvis 3 timmar till 2 veckor).
-* **Om du använder fältbaserad sammanfogning sammanfogar** data som är yngre än en vecka omedelbart kända enheter, men sammanfogar inte omedelbart nya eller okända enheter.
-* Data spelas upp en gång i veckan och ändrar historiska data i den virtuella rapportsviten baserat på enheter som den har lärt sig identifiera.
