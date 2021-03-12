@@ -2,9 +2,9 @@
 title: Fältbaserad stygn
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med fältbaserad sammanfogning.
 translation-type: tm+mt
-source-git-commit: 7b43c4ebbf9446507ab90a90e26c51635303dcc6
+source-git-commit: beed7ffcc39b9b2628b1487b5e2eac42fa3a94d0
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,14 @@ Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfog
 
 ## Begränsningar som är specifika för fältbaserad sammanfogning
 
-* Fältbaserad sammanfogning fungerar bäst på rapportsviter med hög användaridentifieringsfrekvens. Om rapportsviten har låg identifierings- eller inloggningsfrekvens bör du använda [Co-op-diagrammet](device-graph.md).
-* Även om props och eVars har regler för hur versaler och gemener hanteras för rapportering, innebär fältbaserad stygn inte att den propp eller eVar som används för stygn omvandlas på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns efter VISTA-regler och regler för efterbearbetning. Om ibland ordet &#39;Bob&#39; visas i utkastet/eVar och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer.
+* Fältbaserad sammanfogning fungerar bäst på rapportsviter med hög användaridentifierings-/autentiseringsfrekvens.
+* Även om props och eVars har regler för hur versaler och gemener hanteras för rapportering, innebär fältbaserad stygn inte att den propp eller eVar som används för stygn omvandlas på något sätt. Fältbaserad sammanfogning använder värdet i det angivna fältet så som det finns efter VISTA-regler och regler för efterbearbetning. Smältningsprocessen är skiftlägeskänslig. Om ibland ordet &#39;Bob&#39; visas i utkastet/eVar och ibland ordet &#39;BOB&#39; visas, behandlas dessa som två separata personer genom sammanfogningsprocessen.
+* Med tanke på att fältbaserad sammanfogning är skiftlägeskänslig rekommenderar Adobe att man granskar VISTA-regler eller bearbetningsregler som gäller för det utkast eller den eVar som används för fältbaserad sammanfogning. De måste granskas för att säkerställa att ingen av dessa regler inför nya formulär med samma ID. Du bör t.ex. se till att inga VISTA-regler eller bearbetningsregler för endast en del av träffarna medför lägre radering av proppen eller eVar.
+* Fältbaserad sammanfogning stöder inte användning av mer än en prop eller eVar för sammanfogningsändamål. Om till exempel eVar12 innehåller inloggnings-ID och eVar20 innehåller e-post-ID måste du välja ett av dem.
+* Fältbaserad sammanfogning varken kombinerar eller sammanfogar fält (t.ex. eVar10 + prop5).
+* Säljaren eller eVar ska innehålla en enda typ av ID. Kortet eller eVar får till exempel inte innehålla en kombination av inloggnings-ID:n och e-post-ID:n.
+* Om flera träffar inträffar med samma tidsstämpel för samma besökare, men med olika värden i sömningsproppen eller eVar, väljer CDA i alfabetisk ordning. Om besökare A har två träffar med samma tidsstämpel och en av träffarna anger Bob och den andra anger Ann, väljer CDA Ann.
+
 
 ## Nästa steg
 
