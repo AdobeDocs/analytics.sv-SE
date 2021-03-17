@@ -2,9 +2,9 @@
 description: Lär dig mer om riktlinjerna och rekommendationerna för användares samtycke till att lagra eller läsa cookies som inte är nödvändiga på enheter eller webbläsare.
 title: Vilka är CNIL-riktlinjerna för användarens samtycke och cookies?
 translation-type: tm+mt
-source-git-commit: 36259e3a36cad221d7264e5caa0a09a757dc4fe8
+source-git-commit: fefc2433ef42bae232a9a9afc1040be8d04b2bbe
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Riktlinjerna ger ett begränsat undantag från kravet på samtycke (&quot;medgiv
 * Gränsen för 13-månaders cookie är inställd på ett statiskt datum, inte rullande.  Du kan åsidosätta förfallodatumet för din analyscookie med variabeln `cookieLifetime`.  [cookieLifetime](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/cookielifetime.html)
 * Begränsat omfång. Cookie-filen måste begränsas till en enda plats eller tillämpning. [Webbläsarcookies](https://experienceleague.adobe.com/docs/analytics/technotes/cookies.html?lang=en&quot;\l&quot;cookie-implementations från tredje part)
 * Anonymisering. Anonymisera IP-adressens sista oktett. [Allmänna kontoinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/general-acct-settings-admin.html)
-* Dölj besökar-ID från rapportering.  Besökar-ID:n visas inte som standard i Adobe Workspace och Adobe Reports and Analytics.  Besökar-ID:n är tillgängliga i Dataflöden och Data warehouse.  Åtkomsten till datafeeds och Data warehouse kan begränsas av [Åtkomstbehörigheter i Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en&quot;\l&quot;task_040673FE3E429B9531FBCB8B6A4391)
+* Dölj besökar-ID från rapportering.  Besökar-ID:n visas inte som standard i Adobe Workspace och Adobe Reports and Analytics.  Besökar-ID:n är tillgängliga i Dataflöden och Data warehouse.  Åtkomsten till datafeeds och Data warehouse kan begränsas av [åtkomstbehörigheter i Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en&quot;\l&quot;task_040673FE3E429B9531FBCB8B6A4391) och [kolumnreferens för datafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en#columns%2C-descriptions%2C-and-data-types)
 * Parametrar för geopositionering. Geolokalisering kan inte vara mer exakt än postnummernivå. [Postalternativ ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/zip.html?lang=en&quot;\l&quot;zip-in-adobe-experience-platform-launch) och  [allmänna kontoinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/general-acct-settings-admin.html?lang=en&quot;\l&quot;admin-tools)
 * Ange alternativ för deltagande.  Med anmälningstjänsten kan du ange besökarprotokoll för att avgöra om du kan ange en cookie på användarens enhet eller webbläsare när du besöker webbplatsen. [Anmälningstjänst](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html)
 * Förhindra datadelning.  Om du vill utesluta datadelning till Adobe Audience Manager använder du kontextvariabeln `opt.dmp` för [Sekretessrapportering](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/consent-variables.html?lang=en&quot;\l&quot;variabler) för att förhindra att träffar delas.
@@ -33,7 +33,7 @@ Följande ytterligare överväganden gäller:
 
 * Överväg att samla in anmälningsstatusen i en Analytics-variabel för att separera indata från indata som avvalts för segmentering, virtuella rapportsviter eller för att dirigera till separata slutpunkter.
 * Ingen mätning utanför webbplatsen eller appen utan förhandsgodkännande, till exempel inga kampanjer utanför webbplatsen, e-postkampanjer eller iFrames.
-* Insamling av personuppgifter i variabler är inte tillåtet utan samtycke.
+* Insamling av personuppgifter i variabler är inte tillåtet utan samtycke. [Åtgärder för kontroll av Experience Cloud baserat på användares samtycke](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.html?lang=en%22%20\l%20%22implementation#implementation)
 * Uppgifterna får endast användas för att producera anonym statistik, utan kombination med andra uppgifter.
 * Data används inte för korsreferensåtgärder.
 * GPS-geopositioneringsdata samlas inte in.
