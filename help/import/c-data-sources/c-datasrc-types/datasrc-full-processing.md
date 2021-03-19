@@ -1,13 +1,10 @@
 ---
 description: Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
-subtopic: Data sources
-title: Fullständig bearbetning
-topic: Developer and implementation
-uuid: 590ae89c-6e17-453b-b701-ce1adbea6fa4
+title: Fullständigt bearbetningsalternativ för datakällor
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: 537b41ee45cfa21bdf2e282fabc43a17fd90e327
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '728'
 ht-degree: 8%
 
 ---
@@ -17,7 +14,7 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->Adobe rekommenderar att man använder API:t för [datainfogning (BDIA)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda hela datakällor. Adobe planerar att i framtiden ta bort alla datakällor för bearbetning.
+>Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Adobe planerar att i framtiden ta bort alla datakällor för bearbetning. [Läs mer](/help/import/c-data-sources/c-datasrc-types/datasrc-fullproc-eol.md)
 
 Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
 
@@ -30,7 +27,7 @@ Data från datakällor bearbetas som om de togs emot av Adobe-servrar vid den an
 
 Data från datakällor bearbetas i sin helhet med hjälp av separata besökarprofiler, så även om besökar-ID:t i överförda data matchar data som samlats in med JavaScript eller något annat AppMeasurement-bibliotek kopplas inte besökarprofilerna från ett eVar-allokeringsperspektiv.
 
-En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen från en marknadsföringskampanj med namnet&quot;Spring Sale&quot;, som lagras i kampanjvariabeln. Om du senare överför en transaktion med samma besökar-ID får kampanjen &quot;Spring Sale&quot; ingen kredit för några intäkt- eller lyckade händelser som överförts med hjälp av fullständiga bearbetningsdatakällor.
+En användare med besökar-ID `"user@example.com"` besöker till exempel din webbplats från en marknadsföringskampanj som heter &quot;Spring Sale&quot;, som lagras i kampanjvariabeln. Om du senare överför en transaktion med samma besökar-ID får kampanjen &quot;Spring Sale&quot; ingen kredit för några intäkt- eller lyckade händelser som överförts med hjälp av fullständiga bearbetningsdatakällor.
 
 ## Kolumnreferens {#section_92BAE76639E3404E97276B1BE0581078}
 
@@ -61,24 +58,24 @@ En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen
   <tr> 
    <td colname="col1"> <p>tidsstämpel </p> </td> 
    <td colname="col2"> <p>datum </p> </td> 
-   <td colname="col3"> <p>Använd datumformatet ISO 8601 för <code> YYYY-MM-DDThh:mm:ss±UTC_offset </code> (till exempel <code> 2013-09-01T12:00:00-07:00 </code>) eller Unix Time-format (antalet sekunder som gått sedan 1 januari 1970). </p> </td> 
+   <td colname="col3"> <p>Använd ISO 8601-datumformatet <code> YYYY-MM-DDThh:mm:ss±UTC_offset </code> (till exempel <code> 2013-09-01T12:00:00-07:00 </code>) eller Unix Time-format (antalet sekunder som gått sedan 1 januari 1970). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>eVarN</i> </p> </td> 
-   <td colname="col2"> <p><i>eVarN</i>, dvs. &lt;eVar2&gt;..&lt;/eVar2&gt; </p> </td> 
+   <td colname="col1"> <p>eVar<i>N</i> </p> </td> 
+   <td colname="col2"> <p>eVar<i>N</i>, dvs. &lt;eVar2&gt;..&lt;/eVar2&gt; </p> </td> 
    <td colname="col3"> <p>Konverteringsnamn för eVar. Du kan ha upp till 75 eVars ( <span class="varname"> eVar1 </span> - <span class="varname"> eVar75 </span>). </p> <p>Du kan ange eVar namn (eVar12) eller ett eget namn (annonskampanj 3). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>händelser </p> </td> 
    <td colname="col2"> <p>händelser </p> </td> 
-   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som <a href="https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events- </a> variabeln. </p> <p>Exempel: </p> 
+   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som variabeln <a href="https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events </a>. </p> <p>Exempel: </p> 
     <code>
       scAdd,event1,event7 
     </code> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>hierN</i> </p> </td> 
-   <td colname="col2"> <p><i>hierN</i>, dvs. &lt;hier2&gt;..&lt;/hier2&gt; </p> </td> 
+   <td colname="col1"> <p>högre<i>N</i> </p> </td> 
+   <td colname="col2"> <p>hier<i>N</i>, dvs. &lt;hier2&gt;..&lt;/hier2&gt; </p> </td> 
    <td colname="col3"> <p>Hierarkinamn. Du kan ha upp till 5 hierarkier ( <span class="varname"> hier1 </span> - <span class="varname"> hier5 </span>). </p> <p>Du kan ange standardnamn för hierarkin ( <span class="varname"> hier2 </span>) eller ett eget namn ( <span class="term"> Yankees </span>). </p> </td> 
   </tr> 
   <tr> 
@@ -114,7 +111,7 @@ En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen
   <tr> 
    <td colname="col1"> <p>pageURL </p> </td> 
    <td colname="col2"> <p>pageURL </p> </td> 
-   <td colname="col3"> <p>Sidans URL (till exempel <code>https://www.example.com/index.html)</code>. </p> </td> 
+   <td colname="col3"> <p>Sidans URL (t.ex. <code>https://www.example.com/index.html)</code>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>produkter </p> </td> 
@@ -123,8 +120,8 @@ En användare med besökar-ID:t för `"user@example.com"` besök på webbplatsen
   </tr> 
   <tr> 
    <td colname="col1"> <p>prop1 - prop75 </p> </td> 
-   <td colname="col2"> <p><i>propN</i>, dvs. &lt;prop2&gt;..&lt;/prop2&gt; </p> </td> 
-   <td colname="col3"> <p>Property# string (t.ex. <span class="term"> Sports Section </span>). </p> </td> 
+   <td colname="col2"> <p>prop<i>N</i>, dvs. &lt;prop2&gt;..&lt;/prop2&gt; </p> </td> 
+   <td colname="col3"> <p>Egenskapssträng (t.ex. <span class="term"> Sport Section </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>purchaseID </p> </td> 
