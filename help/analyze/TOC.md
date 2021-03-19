@@ -5,9 +5,9 @@ user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
 translation-type: tm+mt
-source-git-commit: 9964a512e05191b8baad631076adb6fe02a23134
+source-git-commit: 2c55fed7655b4985234b09bfb6884d227bdfb02e
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1012'
 ht-degree: 88%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 88%
          + [Alert Builder](analysis-workspace/c-intelligent-alerts/alert-builder.md)
          + [Alert Manager](analysis-workspace/c-intelligent-alerts/alert-manager.md)
          + [Intelligenta aviseringar – användningsexempel](analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
+   + [Användarinställningar](analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
       + [Vanliga frågor](analysis-workspace/workspace-faq/faq.md)
       + [Optimera prestanda för Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
