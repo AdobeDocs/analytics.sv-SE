@@ -3,9 +3,9 @@ description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 6e4c40c7d6c1713f624a9562da3e49a3ee5d67de
+source-git-commit: 2c55fed7655b4985234b09bfb6884d227bdfb02e
 workflow-type: tm+mt
-source-wordcount: '8122'
+source-wordcount: '8116'
 ht-degree: 91%
 
 ---
@@ -19,7 +19,7 @@ Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud 
 
 | Funktion | Måldatum | Beskrivning |
 | --- | --- | --- |
-| Komponentval | 4 februari 2021 | Den nedrullningsbara zonkomponent som finns i Snabbinsikter läggs till i alla släppzoner i Workspace. Den här förbättringen gör att du kan välja från en nedrullningsbar lista med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
+| Komponentval | 4 februari 2021 | Den nedrullningsbara eller släppzon-komponent som finns i [!UICONTROL Quick Insights] kommer att läggas till i alla släppzoner i [!UICONTROL Workspace]. Den här förbättringen gör att du kan välja från en nedrullningsbar lista med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
 
 
 ## Januari 2021
@@ -27,13 +27,13 @@ Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud 
 | Funktion | Måldatum | Beskrivning |
 | --- | --- | --- |
 | Bild-URL:er | 14 januari 2021 | Du kan lägga till bilder i arbetsyteprojekt genom att referera till en offentlig bild-URL. |
-| Kombinerad käll- och inställningshanterare för visualiseringar | 14 januari 2021 | Datakällhanteraren (punkt) och inställningshanteraren (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
+| Kombinerad käll- och inställningshanterare för visualiseringar | 14 januari 2021 | Hanteraren för [!UICONTROL Data Source] (punkt) och inställningar (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
 
 ## Oktober 2020
 
 | Funktion | Beskrivning |
 | --- | --- |
-| Linjevisualisering: [Alternativ för glidande medeltrendlinje](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | **[!UICONTROL Moving average]** har lagts till i trendlinjeinställningarna för linjevisualisering. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av en **[!UICONTROL Periods]**-markering), jämför dem och använder medelvärdet som en punkt på raden. |
+| Linjevisualisering: [Alternativ för glidande medeltrendlinje](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | **[!UICONTROL Moving average]** har lagts till i  [!UICONTROL Line] visualiseringens trendlinjeinställningar. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av en **[!UICONTROL Periods]**-markering), jämför dem och använder medelvärdet som en punkt på raden. |
 | [Hjälpsida för prestanda](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html) | På hjälpsidan för Analysis Workspace prestanda visas olika faktorer som påverkar projektets prestanda och länkar till tips för optimering. |
 
 ## September 2020
@@ -41,7 +41,7 @@ Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud 
 | Funktion | Beskrivning |
 | --- | --- |
 | [Ladda ned 50 000 artiklar för en enda dimension](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/download-send.html#download-items) | Nu kan du ladda ned 50 000 objekt för en enda dimension i en friformstabell med segment och filter. Det ger dig åtkomst till mer än de 400 dataraderna utanför Analysis Workspace. |
-| [Förbättringar av linjevisualisering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla linjevisualiseringar. Detta kan vara praktiskt när linjevisualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen är [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential], [!UICONTROL Power] och [!UICONTROL Quadratic].</li></ul> |
+| [Förbättringar av linjevisualisering](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla [!UICONTROL Line]-visualiseringar. Detta kan vara praktiskt när dina [!UICONTROL Line]-visualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen är [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential], [!UICONTROL Power] och [!UICONTROL Quadratic].</li></ul> |
 | Nya datumintervall | Vi har lagt till fem nya datumintervall så att du kan välja mellan datumintervall som inte innehåller data för delar av dagen från idag: De senaste 7 fullständiga dagarna, de senaste 14 fullständiga dagarna, de senaste 30 fullständiga dagarna, de senaste 60 fullständiga dagarna, de senaste 90 fullständiga dagarna |
 
 ## Augusti 2020
@@ -381,7 +381,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
-   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, till exempel hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
+   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  >Visualiseringsinställning för ”100 % staplad”</a> </p> </td> 
