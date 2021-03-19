@@ -5,10 +5,10 @@ user-guide-title: Importguide för Analytics
 breadcrumb-title: Importera guide
 user-guide-description: 'Hämta in data i analyser från externa källor, antingen i bulk eller i realtid. '
 translation-type: tm+mt
-source-git-commit: 946be738843a691a711cf6a84fd5556abbfb532d
+source-git-commit: 537b41ee45cfa21bdf2e282fabc43a17fd90e327
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 93%
+source-wordcount: '535'
+ht-degree: 92%
 
 ---
 
@@ -36,6 +36,7 @@ ht-degree: 93%
       + [Transaktions-ID](c-data-sources/c-datasrc-types/datasrc-transactionid.md)
       + [Besökar-ID](c-data-sources/c-datasrc-types/datasrc-visitorid.md)
       + [Fullständig bearbetning](c-data-sources/c-datasrc-types/datasrc-full-processing.md)
+      + [Slutet av livscykeln för fullständig bearbetning](c-data-sources/c-datasrc-types/datasrc-fullproc-eol.md)
    + [Transaktions- och kundintegrering](c-data-sources/datasrc-integrating-offline-data.md)
    + [Transaktions-ID och besökarprofiler](c-data-sources/datasrc-tid-visitor-profile.md)
    + [Vanliga frågor om Data Sources](c-data-sources/datasrc-faq.md)
