@@ -2,9 +2,9 @@
 title: Mobila dimensioner
 description: Dimensioner baserade på enhetens IP-adress.
 translation-type: tm+mt
-source-git-commit: 5e196b34d4fc689d5fd36f669670f3d9b085f00d
+source-git-commit: 76605232c180fb6a3d4c181614f43b75e1d06cd5
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Mobila dimensioner ger insikter om egenskaperna hos de mobila enheter som besök
 
 ## Fyll i dessa dimensioner med data
 
-Dessa dimensioner hänvisar till interna sökregler för Adobe. [!UICONTROL Mobile Carrier] sökningar bestäms av IP-adressen, med hjälp av data från NetAcuity (en Digital Element-produkt).
+Dessa dimensioner hänvisar till uppslagsregler som är interna för Adobe. [!UICONTROL Mobile Carrier] sökningar bestäms av IP-adressen, med hjälp av data från NetAcuity (en Digital Elements-produkt).
 Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar alla mobildimensioner som standard.
 
 ## Beskrivningar av mobildimension
@@ -28,7 +28,7 @@ Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience 
 >Dimensioner som är märkta `"None"` är inte mobila enheter. Om du vill ha en rapport som bara innehåller mobila enheter drar du dimensionen &quot;Mobil enhet&quot; till segmentområdet på arbetsytan.
 
 * **Stöd** för mobilljud: Bestämmer vilka filformat som enheten kan spela upp. Exempelvärden är `"MP3"`, `"AAC"` och `"MIDI Monophonic"`. Värdena i denna dimension utesluter inte varandra. en enda träff kan attribuera till flera dimensionsobjekt.
-* **Mobiloperatör**: Om användaragenten innehåller en transportörspecifik enhet är transportören en dimensionspost. Exempelvärden är `"Reliance Jio"`, `"Airtel"`, `"Vodafone"` och `"Verizon"`.
+* **Mobiloperatör**: Värdena för den här dimensionen fylls i genom att tredjepartsdata (Digital Elements) söks igenom baserat på de IP-adresser som analysdata har hämtat. Exempelvärden är `"Reliance Jio"`, `"Airtel"`, `"Vodafone"` och `"Verizon"`.
 * **Mobil färgdjup**: Färgdjupet för den mobila enheten, i bitar.
 * **Stöd** för Mobile cookie: Avgör om den mobila enheten stöder cookies. Den här rapporten anger inte om webbläsaren accepterar cookies. Bland Dimensionerna finns `"Supported"`, `"Not supported"` och `"Unknown"`.
 * **Mobil enhet**: Den mobila enhet som besökaren använder.
