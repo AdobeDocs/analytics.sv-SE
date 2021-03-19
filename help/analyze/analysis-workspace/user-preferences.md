@@ -2,10 +2,10 @@
 title: Ange användarinställningar i Analysis Workspace
 description: null
 translation-type: tm+mt
-source-git-commit: 2c55fed7655b4985234b09bfb6884d227bdfb02e
+source-git-commit: 537b41ee45cfa21bdf2e282fabc43a17fd90e327
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 1%
+source-wordcount: '198'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Allmänna inställningar gäller för din Adobe Analytics-upplevelse i webbläsa
 
 ## Projektinställningar
 
-Projektinställningar gäller för nya projekt och nya paneler som skapas i Analysis Workspace. Inställningar kan också hanteras per projekt under Arbetsyta > Projekt > Projektinformation och inställningar.
+Projektinställningar gäller för nya projekt och nya paneler som skapas i Analysis Workspace. Inställningarna kan också hanteras per projekt under [!UICONTROL Workspace] > [!UICONTROL Project] > [!UICONTROL Project Info & Settings].
 
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
