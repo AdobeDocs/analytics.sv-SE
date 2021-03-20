@@ -1,11 +1,11 @@
 ---
-title: null
-description: null
+title: Slutet av livscykeln för fullständiga datakällor
+description: Orsaker till slutet av livscykeln och jämförelser mellan API:t för inmatning av gruppdata och fullständiga datakällor för databearbetning.
 translation-type: tm+mt
-source-git-commit: 537b41ee45cfa21bdf2e282fabc43a17fd90e327
+source-git-commit: 2e077db74b7719f49aec513fc99dad33a4d5b831
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 4%
+source-wordcount: '732'
+ht-degree: 3%
 
 ---
 
