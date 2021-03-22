@@ -2,9 +2,9 @@
 title: getNewRepeat
 description: Spåra aktiviteter för nya eller återkommande besökare.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 9d44226202cd690d069f9c0c85c8af2ef8fd0106
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med `getNewRepeat` plugin-programmet kan du avgöra om en besökare på webbplatsen är en ny besökare eller en återkommande besökare inom ett visst antal dagar. Adobe rekommenderar att du använder denna plugin om du vill identifiera besökare som&quot;nya&quot; med ett anpassat antal dagar. Denna plugin behövs inte om dimensionerna för besökaren New/Repeat i Analysis Workspace uppfyller organisationens behov.
+Med plugin-programmet `getNewRepeat` kan du avgöra om en besökare på webbplatsen är en ny besökare eller en återkommande besökare inom ett visst antal dagar. Adobe rekommenderar att du använder denna plugin om du vill identifiera besökare som&quot;nya&quot; med ett anpassat antal dagar. Denna plugin behövs inte om dimensionerna Ny/Upprepa besökare i Analysis Workspace uppfyller organisationens behov.
 
-## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
+## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
-Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] tillägget
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Vanliga Analytics-plugin-program
+   * Tillägg: Plugin-program för vanlig analys
    * Åtgärdstyp: Initiera getNewRepeat
 1. Spara och publicera ändringarna i regeln.
 
@@ -38,10 +38,10 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics-tillägget.
-1. Expandera dragspelsfliken så att [!UICONTROL Configure tracking using custom code] den visar [!UICONTROL Open Editor] knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -51,26 +51,26 @@ Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när A
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
-/* Adobe Consulting Plugin: getNewRepeat v2.1 */
-s.getNewRepeat=function(d){d=d?d:30;var s=this,p="s_nr"+d,b=new Date,e=s.c_r(p),f=e.split("-"),c=b.getTime();b.setTime(c+864E5*d); if(""===e||18E4>c-f[0]&&"New"===f[1])return s.c_w(p,c+"-New",b),"New";s.c_w(p,c+"-Repeat",b);return"Repeat"};
+/* Adobe Consulting Plugin: getNewRepeat v3.0 (Requires AppMeasurement) */
+function getNewRepeat(d){var a=d;if("-v"===a)return{plugin:"getNewRepeat",version:"3.0"};var d=function(){if("undefined"!==typeof window.s_c_il)for(var c=0,b;c<window.s_c_il.length;c++)if(b=window.s_c_il[c],b._c&&"s_c"===b._c)return b}();"undefined"!==typeof d&&(d.contextData.getNewRepeat="3.0");window.cookieWrite=window.cookieWrite||function(c,b,f){if("string"===typeof c){var h=window.location.hostname,a=window.location.hostname.split(".").length-1;if(h&&!/^[0-9.]+$/.test(h)){a=2<a?a:2;var e=h.lastIndexOf(".");if(0<=e){for(;0<=e&&1<a;)e=h.lastIndexOf(".",e-1),a--;e=0<e?h.substring(e):h}}g=e;b="undefined"!==typeof b?""+b:"";if(f||""===b)if(""===b&&(f=-60),"number"===typeof f){var d=new Date;d.setTime(d.getTime()+6E4*f)}else d=f;return c&&(document.cookie=encodeURIComponent(c)+"="+encodeURIComponent(b)+"; path=/;"+(f?" expires="+d.toUTCString()+";":"")+(g?" domain="+g+";":""),"undefined"!==typeof cookieRead)?cookieRead(c)===b:!1}};window.cookieRead=window.cookieRead||function(c){if("string"===typeof c)c=encodeURIComponent(c);else return"";var b=" "+document.cookie,a=b.indexOf(" "+c+"="),d=0>a?a:b.indexOf(";",a);return(c=0>a?"":decodeURIComponent(b.substring(a+2+c.length,0>d?b.length:d)))?c:""};a=a?a:30;d="s_nr"+a;var k=new Date,m=cookieRead(d),n=m.split("-"),l=k.getTime();k.setTime(l+864E5*a);if(""===m||18E5>l-n[0]&&"New"===n[1])return cookieWrite(d,l+"-New",k),"New";cookieWrite(d,l+"-Repeat",k);return"Repeat"};
 /******************************************** END CODE TO DEPLOY ********************************************/
 ```
 
 ## Använda plugin-programmet
 
-I metoden används följande argument: `getNewRepeat`
+Metoden `getNewRepeat` använder följande argument:
 
-* **`d`** (heltal, valfritt): Minsta antal dagar mellan besöken som återställer besökarna till `"New"`. Om argumentet inte är inställt är det som standard 30 dagar.
+* **`d`** (heltal, valfritt): Minsta antal dagar mellan besöken som återställer besökarna till  `"New"`. Om argumentet inte är inställt är det som standard 30 dagar.
 
-Den här metoden returnerar värdet för `"New"` om den cookie som angetts av plugin-programmet inte finns eller har upphört att gälla. Det returnerar värdet för `"Repeat"` om den cookie som angetts av plugin-programmet finns och tiden sedan den aktuella träffen och tiden som angetts i cookien är längre än 30 minuter. Den här metoden returnerar samma värde för ett helt besök.
+Den här metoden returnerar värdet `"New"` om den cookie som angetts av plugin-programmet inte finns eller har upphört att gälla. Värdet `"Repeat"` returneras om den cookie som angetts av plugin-programmet finns och tiden sedan den aktuella träffen och tiden som angetts i cookien är längre än 30 minuter. Den här metoden returnerar samma värde för ett helt besök.
 
-Denna plugin använder en cookie med namnet `"s_nr[LENGTH]"` där `[LENGTH]` är lika med `d` argumentet. Cookien innehåller en Unix-tidsstämpel som representerar den aktuella tiden och besökarens aktuella status (`"New"` eller `"Repeat"`).
+Detta plugin-program använder en cookie med namnet `"s_nr[LENGTH]"` där `[LENGTH]` är lika med argumentet `d`. Cookien innehåller en Unix-tidsstämpel som representerar den aktuella tiden och besökarens aktuella status (`"New"` eller `"Repeat"`).
 
 ## Exempelanrop
 
 ### Exempel 1
 
-Följande kod ställer in s.eVar1 lika med värdet &quot;New&quot; för nya besökare och fortsätter att ställa in s.eVar1 lika med värdet &quot;New&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
+Följande kod ställer in s.eVar1 som lika med värdet &quot;Nytt&quot; för nya besökare och fortsätter att ställa in s.eVar1 som värdet &quot;Nytt&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
 ```js
 s.eVar1=s.getNewRepeat();
@@ -78,7 +78,7 @@ s.eVar1=s.getNewRepeat();
 
 ### Exempel 2
 
-Om besökaren kommer tillbaka till webbplatsen när som helst mellan 31 minuter och 30 dagar sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att ange s.eVar1 som lika med värdet för &quot;Repeat&quot; och kommer att fortsätta att ange s.eVar1 som lika med värdet för &quot;Repeat&quot; (med varje nytt anrop) under resten av besökarens besök på webbplatsen.
+Om besökaren kommer tillbaka till webbplatsen när som helst mellan 31 minuter och 30 dagar sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att ange värdet s.eVar1 som lika med värdet &quot;Repeat&quot; och kommer att fortsätta att ange s.eVar1 som lika med värdet &quot;Repeat&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
 ```js
 s.eVar1=s.getNewRepeat();
@@ -86,7 +86,7 @@ s.eVar1=s.getNewRepeat();
 
 ### Exempel 3
 
-Om besökaren inte har varit på webbplatsen på minst 30 dagar sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att anges som s.eVar1 lika med värdet &quot;New&quot; och kommer att fortsätta att anges som s.eVar1 lika med värdet &quot;New&quot; (med varje nytt anrop) under resten av besökarens besök på webbplatsen.
+Om besökaren inte har varit på webbplatsen på minst 30 dagar sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att ange värdet s.eVar1 som &quot;Nytt&quot; och fortsätta att ange s.eVar1 som lika med värdet &quot;Nytt&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
 ```js
 s.eVar1=s.getNewRepeat();
@@ -94,7 +94,7 @@ s.eVar1=s.getNewRepeat();
 
 ### Exempel 4
 
-Om besökaren kommer tillbaka till webbplatsen när som helst 31 minuter till 365 dagar (dvs. 1 år) sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att anges som s.eVar1 lika med värdet för &quot;Repeat&quot; och fortsätter att ange s.eVar1 lika med värdet för &quot;Repeat&quot; (med varje nytt anrop) under resten av besökaren Vi besöker sajten.
+Om besökaren kommer tillbaka till webbplatsen när som helst 31 minuter till 365 dagar (dvs. 1 år) sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att anges som 1.eVar1 lika med värdet för &quot;Repeat&quot; och kommer att fortsätta att anges som s.eVar1 lika med värdet för &quot;Repeat&quot; (med varje nytt anrop) under resten av besökarens besöka webbplatsen.
 
 ```js
 s.eVar1=s.getNewRepeat(365);
@@ -102,13 +102,17 @@ s.eVar1=s.getNewRepeat(365);
 
 ### Exempel 5
 
-Om besökaren inte har varit på webbplatsen på minst 365 dagar (dvs. 1 år) sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att anges som s.eVar1 lika med värdet för &quot;New&quot; och kommer att fortsätta att anges som s.eVar1 lika med värdet för &quot;New&quot; (med varje nytt anrop) under resten av besökarens besök till sajten.
+Om besökaren inte har varit på webbplatsen på minst 365 dagar (dvs. 1 år) sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att anges som .eVar1 lika med värdet &quot;Nytt&quot; och kommer att fortsätta att anges som s.eVar1 lika med värdet &quot;Nytt&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen .
 
 ```js
 s.eVar1=s.getNewRepeat(365);
 ```
 
 ## Versionshistorik
+
+### 3.0 (19 mars 2021)
+
+* Versionsnummer har lagts till som kontextdata.
 
 ### 2.1 (30 september 2019)
 
@@ -117,4 +121,4 @@ s.eVar1=s.getNewRepeat(365);
 ### 2.0 (16 april 2018)
 
 * Kompilerad med mindre kodstorlek
-* Det gick inte att namnge cookien för att lagra besöksinformationen. Plugin-programmet namnger nu cookien dynamiskt baserat på det värde som skickas till `d` argumentet.
+* Det gick inte att namnge cookien för att lagra besöksinformationen. Plugin-programmet namnger nu cookien dynamiskt baserat på det värde som skickas till `d`-argumentet.
