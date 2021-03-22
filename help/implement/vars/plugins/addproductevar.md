@@ -2,9 +2,9 @@
 title: addProductEvar
 description: Lägger till eVars för försäljning i variabeln products.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: abed7197898d6c27448069350c9f2217d58293c4
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -14,27 +14,27 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med `addProductEvar` plugin-programmet kan du enkelt lägga till en Adobe Analytics-försäljningsvariabel som använder produktsyntax i variabeln utan att behöva oroa dig för om det redan befintliga innehållet i variabeln ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntax för varuexponering för eVars i [`products`](../page-vars/products.md) -variabeln. Du behöver inte använda plugin-programmet om du inte använder eVars för försäljning med produktsyntax. `addProductEvar`
+Med plugin-programmet `addProductEvar` kan du enkelt lägga till en Adobe Analytics-eVar som använder produktsyntax i variabeln products utan att behöva bekymra dig om det redan befintliga innehållet i variabeln products ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntaxer för varuexponering av eVars i variabeln [`products`](../page-vars/products.md). Du behöver inte använda plugin-programmet `addProductEvar` om du inte använder eVars för försäljning med produktsyntax.
 
 >[!NOTE]
 >
 >Denna plugin ersätter inte eVars som redan finns i en produktpost. Det lägger bara till värden som du anger med det här plugin-programmet. Var försiktig när du lägger till eVars som redan finns för den produkten.
 
-## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
+## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
-Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] tillägget
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Vanliga Analytics-plugin-program
+   * Tillägg: Plugin-program för vanlig analys
    * Åtgärdstyp: Initiera addProductEvar
 1. Spara och publicera ändringarna i regeln.
 
@@ -42,10 +42,10 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics-tillägget.
-1. Expandera dragspelsfliken så att [!UICONTROL Configure tracking using custom code] den visar [!UICONTROL Open Editor] knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -55,20 +55,20 @@ Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när A
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
-/* Adobe Consulting Plugin: addProductEvar v1.0 */
-s.addProductEvar=function(en,ev,ap){if("string"===typeof en&&"string"===typeof ev&&""!==ev)if(ap=ap||!1,this.products){var e=this.products.split(","),f=e.length;ap=ap?0:f-1;for(var a;ap<f;ap++)a=e[ap].split(";"),a[5]&&-1<a[5].toLowerCase().indexOf("evar")?a[5]=a[5]+"|"+en+"="+ev:a[5]?a[5]=en+"="+ev:a[5]||(a[4]||(a[4]=""),a[3]||(a[3]=""),a[2]||(a[2]=""),a[1]||(a[1]=""),a[5]=en+"="+ev),e[ap]=a.join(";");this.products=e.join(",")}else this.products=";;;;;"+en+"="+ev};
+/* Adobe Consulting Plugin: addProductEvar v2.0 */
+function addProductEvar(en,ev,ap){var e=en,f=ev,d=ap;if("-v"===e)return{plugin:"addProductEvar",version:"2.0"};a:{if("undefined"!==typeof window.s_c_il){var b=0;for(var c;b<window.s_c_il.length;b++)if(c=window.s_c_il[b],c._c&&"s_c"===c._c){b=c;break a}}b=void 0}if("undefined"!==typeof b&&(b.contextData.addProductEvar="2.0","string"===typeof e&&"string"===typeof f&&""!==f))if(d=d||!1,b.products){c=b.products.split(",");var g=c.length;d=d?0:g-1;for(var a;d<g;d++)a=c[d].split(";"),a[5]&&-1<a[5].toLowerCase().indexOf("evar")?a[5]=a[5]+"|"+e+"="+f:a[5]?a[5]=e+"="+f:a[5]||(a[4]||(a[4]=""),a[3]||(a[3]=""),a[2]||(a[2]=""),a[1]||(a[1]=""),a[5]=e+"="+f),c[d]=a.join(";");b.products=c.join(",")}else b.products=";;;;;"+e+"="+f};
 /******************************************** END CODE TO DEPLOY ********************************************/
 ```
 
 ## Använda plugin-programmet
 
-Plugin-programmet använder `addProductEvar` följande argument:
+Plugin-programmet `addProductEvar` använder följande argument:
 
-* **`en`** (required, string): Den eVar som ska läggas till i den sista posten som finns i variabeln products. Om variabeln products är tom skapar plugin-programmet en&quot;tom&quot; produktpost med värdet eVar kopplat till slutet av posten.
+* **`en`** (required, string): eVar som ska läggas till i den sista posten som finns i variabeln products. Om variabeln products är tom skapar plugin-programmet en tom produktpost med det eVar som är bifogat till slutet av posten.
 * **`ev`** (required, string): Värdet som tilldelats eVar.
-* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost läggs värdet true (eller 1) till i **alla** produktposter.  Standardvärdet är false (eller 0), vilket innebär att eVar endast läggs till i den **sista** posten som finns i variabeln products.
+* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost läggs värdet true (eller 1) till i  **** alla produktposter.  Standardvärdet är false (eller 0), vilket innebär att eVar läggs till endast i den **sista**-posten som finns i produktvariabeln.
 
-Plugin-programmet returnerar ingenting `addProductEvar` . I stället läggs värdet eVar (och eVar) som anges i `en` argumentet och `ev` till i `products` variabeln.
+Plugin-programmet `addProductEvar` returnerar ingenting. I stället läggs eVar (och eVar) som anges i argumentet `en` och `ev` till i variabeln `products`.
 
 ## Exempel
 
@@ -98,6 +98,10 @@ s.addProductEvar("eVar1", "blue");
 ```
 
 ## Versionshistorik
+
+### 2.0 (19 mars 2021)
+
+* Versionsnummer har lagts till som kontextdata.
 
 ### 1.0 (7 oktober 2019)
 
