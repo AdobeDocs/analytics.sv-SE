@@ -2,9 +2,9 @@
 title: pt
 description: Kör en funktion i en lista med variabler.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: fc7e6953e69cdff7b326705a906687be634d9b5f
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin- `pt` programmet kör en funktion eller metod i en lista med Analytics-variabler. Du kan till exempel selektivt köra metoden på flera variabler utan att anropa metoden manuellt varje gång. [`clearVars`](../functions/clearvars.md) Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en viss funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
+Plugin-programmet `pt` kör en funktion eller metod i en lista med Analytics-variabler. Du kan till exempel selektivt köra metoden [`clearVars`](../functions/clearvars.md) på flera variabler utan att anropa metoden manuellt varje gång. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
 
-## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
+## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
-Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] tillägget
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Vanliga Analytics-plugin-program
+   * Tillägg: Plugin-program för vanlig analys
    * Åtgärdstyp: Initiera pt
 1. Spara och publicera ändringarna i regeln.
 
@@ -38,10 +38,10 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics-tillägget.
-1. Expandera dragspelsfliken så att [!UICONTROL Configure tracking using custom code] den visar [!UICONTROL Open Editor] knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -51,21 +51,21 @@ Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när A
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
-/* Adobe Consulting Plugin: pt v2.01 */
- s.pt=function(l,de,cf,fa){if(l&&this[cf]){l=l.split(de||",");de=l.length;for(var e,c=0;c<de;c++)if(e=this[cf](l[c],fa))return e}};
+/* Adobe Consulting Plugin: pt v3.0 */
+function pt(l,de,cf,fa){var b=l,d=de,f=cf,g=fa;if("-v"===b)return{plugin:"pt",version:"3.0"};a:{if("undefined"!==typeof window.s_c_il){var a=0;for(var c;a<window.s_c_il.length;a++)if(c=window.s_c_il[a],c._c&&"s_c"===c._c){a=c;break a}}a=void 0}if("undefined"!==typeof a&&(a.contextData.pt="3.0",b&&a[f])){b=b.split(d||",");d=b.length;for(var e=0;e<d;e++)if(c=a[f](b[e],g))return c}};
 /******************************************** END CODE TO DEPLOY ********************************************/
 ```
 
 ## Använda plugin-programmet
 
-I metoden används följande argument: `pt`
+Metoden `pt` använder följande argument:
 
-* **`l`** (required, string): En lista med variabler som funktionen i `cf` argumentet kan köras mot.
-* **`de`** (valfri, sträng): Avgränsaren som avgränsar variabellistan i `l` argumentet. Standardvärdet är ett komma (`,`).
-* **`cf`** (required, string): Namnet på callback-funktionen i AppMeasurement-objektet som ska anropas mot alla variabler som finns i `l` argumentet.
-* **`fa`** (valfri, sträng): Om funktionen i `cf` argumentet anropar ytterligare argument när den körs, ska du inkludera dem här. Standardvärdet är `undefined`.
+* **`l`** (required, string): En lista med variabler som funktionen i  `cf` argumentet kan köras mot.
+* **`de`** (valfri, sträng): Avgränsaren som avgränsar variabellistan i  `l` argumentet. Standardvärdet är ett komma (`,`).
+* **`cf`** (required, string): Namnet på callback-funktionen i AppMeasurement-objektet som ska anropas mot alla variabler som finns i  `l` argumentet.
+* **`fa`** (valfri, sträng): Om funktionen i  `cf` argumentet anropar ytterligare argument när det körs, tar du med dem här. Standardvärdet är `undefined`.
 
-Om den här metoden anropas returneras ett värde om återanropsfunktionen (i `cf` argumentet) returnerar ett värde.
+Om den här metoden anropas returneras ett värde om callback-funktionen (i `cf`-argumentet) returnerar ett värde.
 
 ## Exempelanrop
 
@@ -74,7 +74,7 @@ Om den här metoden anropas returneras ett värde om återanropsfunktionen (i `c
 Följande kod ingår i plugin-programmet getQueryParam.  Den kör hjälpfunktionen getParameterValue mot vart och ett av de nyckel/värde-par som finns i URL:ens frågesträng (fullQueryString).  För att extrahera varje nyckelvärdepar måste fullQueryString avgränsas och delas upp med ett et-tecken (&amp;). ParameternKey refererar till frågesträngsparametern som plugin-programmet specifikt försöker extrahera från frågesträngen
 
 ```javascript
-returnValue = s.pt(fullQueryString, "&", "getParameterValue", parameterKey)
+returnValue = pt(fullQueryString, "&", "getParameterValue", parameterKey)
 ```
 
 Ovanstående rad är en genväg för att köra kod som liknar följande:
@@ -91,6 +91,10 @@ for(var i = 0; i < parametersLength; i++)
 ```
 
 ## Versionshistorik
+
+### 3.0 (19 mars 2021)
+
+* Versionsnummer har lagts till som kontextdata.
 
 ### 2.01 (24 september 2019)
 
