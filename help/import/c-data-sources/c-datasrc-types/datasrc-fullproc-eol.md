@@ -2,10 +2,10 @@
 title: Slutet av livscykeln för fullständiga datakällor
 description: Orsaker till slutet av livscykeln och jämförelser mellan API:t för inmatning av gruppdata och fullständiga datakällor för databearbetning.
 translation-type: tm+mt
-source-git-commit: 2e077db74b7719f49aec513fc99dad33a4d5b831
+source-git-commit: 97e60e4c3a593405f92f47e5aa79ece70e0b3d60
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 3%
+source-wordcount: '1221'
+ht-degree: 5%
 
 ---
 
@@ -39,18 +39,59 @@ Mer information finns i följande jämförelse av fältvärden som är tillgäng
 
 ## Jämförelse av fältvärden som är tillgängliga i BDIA och FPDS
 
-| BDIA, FPDS, båda | BDIA-variabel | Kolumnvariabel för fullständig bearbetning | Beskrivning |
-| --- | --- | --- | --- |
-| BDIA | aamlh | Stöds inte | Platstips för Adobe Audience Manager. Se giltiga ID-värden i tabellen nedan AAM region. |
-| Båda | browserHeight | browserHeight | Webbläsarhöjd i pixlar (till exempel 768) |
-| Båda | browserWidth | browserWidth | Webbläsarbredd i pixlar (till exempel 1024) |
-| Båda | kampanj | kampanj | Kod för spårning av konverteringskampanj |
-| Båda | kanal | kanal | Kanalsträng (till exempel Sport Section) |
-| Båda | colorDepth | colorDepth | Bildskärmens färgdjup i bitar (t.ex. 24) |
-| Båda | connectionType | connectionType | Besökarens anslutningstyp (LAN eller modem) |
-| BDIA | contextData.key | Stöds inte | Nyckelvärdepar anges i genom att rubriken&quot;contextData.product&quot; eller&quot;contextData.color&quot; namnges |
-| Båda | cookiesEnabled | cookiesEnabled | `Y` eller  `N` om besökaren stöder cookies från första part |
-| Båda | currencyCode | currencyCode | Valutakod för intäkt (till exempel `USD`) |
-| BDIA | customerID.[customerIDType].authState | Stöds inte | Besökarens autentiserade tillstånd. Värden som stöds är: 0, 1, 2, UNKNOWN, AUTHENTICATED, LOGGED_OUT eller &#39;&#39; (ej skiftlägeskänsligt). Två på varandra följande enkla citattecken (&#39;&#39;) gör att värdet utelämnas från frågesträngen, som översätts till 0 när träffen görs. Observera att de numeriska värden som stöds för authState anger följande: 0 = UNKNOWN, 1 = AUTHENTICATED, 2 = LOGGED_OUT. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
-| BDIA | customerID.[customerIDType].id | Stöds inte | Kund-ID som ska användas. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
-| BDIA | customerID.[customerIDType].isMCSeed | Stöds inte | Anger om detta är startvärdet för Marketing Cloud Visitor-ID:t. Värden som stöds är: 0, 1, TRUE, FALSE, &#39;&#39; (skiftlägesokänslig). Om du använder 0, FALSE eller två på varandra följande enkla citattecken (&#39;&#39;) utelämnas värdet från frågesträngen. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
+| BDIA-variabel | Kolumnvariabel för fullständig bearbetning | Beskrivning |
+| --- | --- | --- |
+| aamlh | Stöds inte | Platstips för Adobe Audience Manager. |
+| browserHeight | browserHeight | Webbläsarhöjd i pixlar (till exempel 768) |
+| browserWidth | browserWidth | Webbläsarbredd i pixlar (till exempel 1024) |
+| kampanj | kampanj | Kod för spårning av konverteringskampanj |
+| kanal | kanal | Kanalsträng (till exempel Sport Section) |
+| colorDepth | colorDepth | Bildskärmens färgdjup i bitar (t.ex. 24) |
+| connectionType | connectionType | Besökarens anslutningstyp (LAN eller modem) |
+| contextData.key | Stöds inte | Nyckelvärdepar anges i genom att rubriken&quot;contextData.product&quot; eller&quot;contextData.color&quot; namnges |
+| cookiesEnabled | cookiesEnabled | `Y` eller  `N` om besökaren stöder cookies från första part |
+| currencyCode | currencyCode | Valutakod för intäkt (till exempel `USD`) |
+| customerID.[customerIDType].authState | Stöds inte | Besökarens autentiserade tillstånd. Värden som stöds är: 0, 1, 2, UNKNOWN, AUTHENTICATED, LOGGED_OUT eller &#39;&#39; (ej skiftlägeskänsligt). Två på varandra följande enkla citattecken (&#39;&#39;) gör att värdet utelämnas från frågesträngen, som översätts till 0 när träffen görs. Observera att de numeriska värden som stöds för authState anger följande: 0 = UNKNOWN, 1 = AUTHENTICATED, 2 = LOGGED_OUT. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
+| customerID.[customerIDType].id | Stöds inte | Kund-ID som ska användas. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
+| customerID.[customerIDType].isMCSeed | Stöds inte | Anger om detta är startvärdet för Marketing Cloud Visitor-ID:t. Värden som stöds är: 0, 1, TRUE, FALSE, &#39;&#39; (skiftlägesokänslig). Om du använder 0, FALSE eller två på varandra följande enkla citattecken (&#39;&#39;) utelämnas värdet från frågesträngen. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
+| eVarN | eVarN, dvs. `<eVar2>`..`<eVar>` | Konverteringsnamn för eVar. Du kan ha upp till 75 eVars ( eVar1 - eVar75 ) Du kan ange eVar namn (eVar12) eller ett eget namn (Ad Campaign 3). |
+| händelser | händelser | [Händelsesträng](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html?lang=en#vars), formaterad med samma syntax som variabeln s.events. Till exempel: scAdd,event1,event7 |
+| hierN | hierN, dvs. `<hier2>`..`</hier2>` | Hierarkinamn. Du kan ha upp till 5 hierarkier ( hier1 - hier5 ). Du kan ange standardnamnet för hierarkin `hier2` eller ett eget namn (Yankees). |
+| homePage | homePage | Y eller N - är den aktuella sidan för besökarens hemsida. |
+| ipaddress | Stöds inte | Besökarens IP-adress. |
+| javaEnabled | javaEnabled | J eller N - har besökaren Java aktiverat. |
+| javaScriptVersion | javaScriptVersion | JavaScript-version (till exempel 1.3). |
+| språk | Stöds inte | Webbläsarens språk som stöds. Exempel, `en-us`. |
+| linkName | linkName | Namn på länk. |
+| linkType | linkType | Typ av länk. Värden som stöds är: `d: Download link`, `e: Exit link`, `o: Custom link`. |
+| linkURL | linkURL | HREF of link. |
+| list Exempelvis list2. | Stöds inte | En avgränsad lista med värden som skickas till en variabel och sedan rapporteras som enskilda radposter för rapportering. |
+| marketingCloudVisitorID | Stöds inte | Marketing Cloud ID. Se [Besökaridentifiering](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en#id-service-api) och Marketing Cloud Visitor ID-tjänsten. |
+| Stöds inte | charSet | Den teckenuppsättning som stöds för din webbplats. Exempel: UTF-8, ISO-8859-1 osv. |
+| Stöds inte | clickAction | Objektidentifierare för besökarens klickkarta (oid) |
+| Stöds inte | clickActionType | Objektidentifierartyp för klickkarta för besökare (oidt) |
+| Stöds inte | clickContext | Sididentifierare för besökarens klickkarta (pid) |
+| Stöds inte | clickContextType | Sididentifierartyp för klickkarta (pidt) för besökare |
+| Stöds inte | clickSourceID | Källindex för besökarens klickkarta (oi) |
+| Stöds inte | clickTag | Objekttaggsnamn för besökarens klickkarta (inte) |
+| Stöds inte | scXmlVer | Marknadsföringen rapporterar XML-begärans versionsnummer (till exempel 1.0). |
+| Stöds inte | tidszon | Besökarens tidszonsförskjutning från GMT i timmar (till exempel -8). |
+| pageName | pageName | Sidans namn. |
+| pageType | pageType | Typ av sida (t.ex. &quot;Felsida&quot;). |
+| pageURL | pageURL | Sidans URL (t.ex. https://www.example.com/index.html). |
+| plugin-program | plugin-program | Semikolonavgränsad lista med namn på webbläsarplugin-program. |
+| produkter | produkter | Lista över alla produkter på sidan. Separera produkter med kommatecken. Till exempel: Idrott;Kula;1;5.95,Leksaker; Överkant;1:1.99. |
+| prop1 - prop75 | propN, dvs. `<prop2>`..`</prop2>` | Property#-sträng (till exempel Sport Section). |
+| propN | propN | Egenskapsvärden för dina egenskaper. |
+| purchaseID | purchaseID | Inköps-ID-nummer. |
+| referent | referent | URL för sidreferenten. |
+| reportSuiteID | s_account | Anger de rapportsviter där du vill skicka data. Du bör separera flera rapportpaket-ID:n med kommatecken. |
+| upplösning | upplösning | Bildskärmsupplösning (till exempel 1 024 × 768). |
+| server | server | Serversträng. |
+| tillstånd | tillstånd | Conversion state string. |
+| tidsstämpel | datum | Använd datumformatet ISO 8601 för YYYY-MM-DDThh:mm:ss±UTC_offset (t.ex. 2021-09-01T12:00:00-07:00) eller Unix Time Format (antalet sekunder som gått sedan 1 januari 1970) ). |
+| trackingServer | Stöds inte | Kan endast anges via kolumnrubrik. |
+| transactionID | Stöds inte | Gemensamt värde som används för att knyta samman flerkanalsanvändaraktiviteter för rapportering. Mer information finns i [Användarhandbok för datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html?lang=en#data-sources). |
+| userAgent | Stöds inte | Användaragentsträng |
+| visitorID | visitorID | Besökarens analys-ID. Se [Besökaridentifiering](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en). |
+| zip | zip | Postnummer för konvertering. |
