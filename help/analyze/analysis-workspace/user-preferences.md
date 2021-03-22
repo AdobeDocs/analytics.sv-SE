@@ -1,11 +1,11 @@
 ---
 title: Ange användarinställningar i Analysis Workspace
-description: null
+description: Du kan ange landningssidor och projektreferenser på en central plats.
 translation-type: tm+mt
-source-git-commit: 537b41ee45cfa21bdf2e282fabc43a17fd90e327
+source-git-commit: 97e60e4c3a593405f92f47e5aa79ece70e0b3d60
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 2%
+source-wordcount: '210'
+ht-degree: 1%
 
 ---
 
