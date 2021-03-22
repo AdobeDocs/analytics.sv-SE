@@ -2,9 +2,9 @@
 title: getVisitDuration
 description: Spåra hur mycket tid en besökare har varit på webbplatsen hittills.
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: ca8e563118dcc74dfa718bd203db295faf4e9aa6
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin- `getVisitDuration` programmet håller reda på hur lång tid i minuter besökaren har varit på webbplatsen fram till den tidpunkten. Adobe rekommenderar att du använder denna plugin om du vill följa upp den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Denna plugin spårar inte tiden mellan händelser. om du vill ha den här funktionen använder du plugin-programmet [`getTimeBetweenEvents`](gettimebetweenevents.md) .
+Plugin-programmet `getVisitDuration` håller reda på hur lång tid i minuter som besökaren har varit på webbplatsen fram till den punkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Denna plugin spårar inte tiden mellan händelser. Om du vill använda den här funktionen använder du plugin-programmet [`getTimeBetweenEvents`](gettimebetweenevents.md).
 
-## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
+## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
 
-Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] tillägget
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Vanliga Analytics-plugin-program
+   * Tillägg: Plugin-program för vanlig analys
    * Åtgärdstyp: Initiera getVisitDuration
 1. Spara och publicera ändringarna i regeln.
 
@@ -38,10 +38,10 @@ Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-pr
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics-tillägget.
-1. Expandera dragspelsfliken så att [!UICONTROL Configure tracking using custom code] den visar [!UICONTROL Open Editor] knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -51,21 +51,21 @@ Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när A
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
-/* Adobe Consulting Plugin: getVisitDuration v2.0 */
-s.getVisitDuration=function(){var d=new Date,c=d.getTime(),b=this.c_r("s_dur");if(isNaN(b)||18E5<c-b)b=c;var a=c-b;d.setTime(c+18E5); this.c_w("s_dur",b+"",d);if(0===a)return"first hit of visit";a=Math.floor(a/6E4);return 0===a?"less than a minute":1===a?"1 minute": a+" minutes"};
+/* Adobe Consulting Plugin: getVisitDuration v2.1 */
+function getVisitDuration(){if(arguments&&"-v"===arguments[0])return{plugin:"getVisitDuration",version:"2.1"};var d=function(){if("undefined"!==typeof window.s_c_il)for(var c=0,b;c<window.s_c_il.length;c++)if(b=window.s_c_il[c],b._c&&"s_c"===b._c)return b}();"undefined"!==typeof d&&(d.contextData.getVisitDuration="2.1");window.cookieWrite=window.cookieWrite||function(c,b,f){if("string"===typeof c){var h=window.location.hostname,a=window.location.hostname.split(".").length-1;if(h&&!/^[0-9.]+$/.test(h)){a=2<a?a:2;var e=h.lastIndexOf(".");if(0<=e){for(;0<=e&&1<a;)e=h.lastIndexOf(".",e-1),a--;e=0<e?h.substring(e):h}}g=e;b="undefined"!==typeof b?""+b:"";if(f||""===b)if(""===b&&(f=-60),"number"===typeof f){var d=new Date;d.setTime(d.getTime()+6E4*f)}else d=f;return c&&(document.cookie=encodeURIComponent(c)+"="+encodeURIComponent(b)+"; path=/;"+(f?" expires="+d.toUTCString()+";":"")+(g?" domain="+g+";":""),"undefined"!==typeof cookieRead)?cookieRead(c)===b:!1}};window.cookieRead=window.cookieRead||function(c){if("string"===typeof c)c=encodeURIComponent(c);else return"";var b=" "+document.cookie,a=b.indexOf(" "+c+"="),d=0>a?a:b.indexOf(";",a);return(c=0>a?"":decodeURIComponent(b.substring(a+2+c.length,0>d?b.length:d)))?c:""};d=(new Date).getTime();var k=cookieRead("s_dur"),a=0;if(isNaN(k)||18E5<d-k)k=d;a=d-k;cookieWrite("s_dur",k+"",30);if(0===a)return"first hit of visit";a=Math.floor(a/6E4);return 0===a?"less than a minute":1===a?"1 minute":a+" minutes"};
 /******************************************** END CODE TO DEPLOY ********************************************/
 ```
 
 ## Använda plugin-programmet
 
-Metoden använder inte några argument `getVisitDuration` . Det returnerar ett av följande värden:
+Metoden `getVisitDuration` använder inga argument. Det returnerar ett av följande värden:
 
 * `"first hit of visit"`
 * `"less than a minute"`
 * `"1 minute"`
-* `"[x] minutes"` (där `[x]` är antalet minuter som gått sedan besökaren landade på platsen)
+* `"[x] minutes"` (där  `[x]` är antalet minuter som gått sedan besökaren landade på platsen)
 
-Denna plugin skapar en cookie `"s_dur"`från första part som kallas antal millisekunder sedan besökaren landade på webbplatsen. Kakan går ut efter 30 minuters inaktivitet.
+Denna plugin skapar en cookie för första part som heter `"s_dur"`, vilket är antalet millisekunder som har gått sedan besökaren landade på webbplatsen. Kakan går ut efter 30 minuters inaktivitet.
 
 ## Exempelanrop
 
@@ -77,9 +77,9 @@ Följande kod...
 s.eVar10 = s.getVisitDuration();
 ```
 
-...anger alltid eVar10 som det antal minuter som gått sedan besökaren landade på platsen
+...ställer alltid in eVar10 som lika med antalet minuter som gått sedan besökaren landade på platsen
 
-### Exempel 2
+### Exempel 3
 
 Följande kod...
 
@@ -87,7 +87,7 @@ Följande kod...
 if(s.inList(s.events, "purchase")) s.eVar10 = s.getVisitDuration();
 ```
 
-...I används plugin-programmet inList för att kontrollera om händelsvariabeln innehåller inköpshändelsen.  I så fall anges eVar10 som antalet minuter mellan besökarens början av besöket och tidpunkten för köpet.
+...I används plugin-programmet inList för att kontrollera om händelsvariabeln innehåller inköpshändelsen.  I så fall kommer eVar10 att ställas in som lika med antalet minuter mellan besökarens början av besöket och tidpunkten för köpet.
 
 ### Exempel 3
 
@@ -100,6 +100,10 @@ s.prop10 = s.getVisitDuration();
 ...anger alltid prop10 som det antal minuter som gått sedan besökaren landade på platsen.  Detta är användbart om prop10 har målning aktiverad.  Om du lägger till mätvärdet för utgångar i prop10-rapporten visas en detaljerad rapport om hur lång tid det tog innan en besökare lämnade webbplatsen.
 
 ## Versionshistorik
+
+### 2.1 (19 mars 2021)
+
+* Versionsnummer har lagts till som kontextdata.
 
 ### 2.0 (2 maj 2018)
 
