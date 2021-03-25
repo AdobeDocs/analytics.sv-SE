@@ -2,9 +2,9 @@
 title: Ange användarinställningar i Analysis Workspace
 description: Du kan ange landningssidor och projektreferenser på en central plats.
 translation-type: tm+mt
-source-git-commit: cbfe63bcb620bbd089d8d6a795662f50643a0109
+source-git-commit: e4ab66f078588ce594cebd9109924a7efadffc14
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Användarinställningar
 
-På sidan [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera Analysis Workspace-inställningar och relaterade komponenter för dina användare. Användarinställningarna gäller för alla *nya* projekt eller paneler.
+På sidan [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera inställningar för Analysis Workspace och dess relaterade komponenter på användarnivå. Användarinställningarna gäller för alla *nya* projekt eller paneler.
 
 ![Användarinställningar](assets/user-preferences.png)
 
