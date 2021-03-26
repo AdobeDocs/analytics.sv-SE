@@ -2,7 +2,7 @@
 description: Instruktioner för hur du använder instrumentpanelernas styrkort.
 title: Chefshandbok för Adobe Analytics Dashboards
 translation-type: tm+mt
-source-git-commit: 27a923ec3acb9a0343ba71e395e565a0f9ede251
+source-git-commit: 2a1d3234444dbacb9cb68d85bd00527b2609d1c7
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 0%
@@ -53,13 +53,13 @@ Följ stegen i operativsystemet på enheten för att hämta och installera progr
 
 **För företagsledare på iOS:**
 
-Klicka på följande länk (den finns även i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
 [iOS-länk](https://apple.co/2zXq0aN)
 
 **För chefsanvändare på Android:**
 
-Klicka på följande länk (den finns även i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
 [Android-länk](https://bit.ly/2LM38Oo)
 
@@ -75,9 +75,9 @@ Så här använder du kontrollpaneler:
 
    ![Logga in sekvens](assets/signseq.png)
 
-2. Välj ett företag. När du har loggat in på kontrollpaneler visas **[!UICONTROL Choose a company]** skärmen. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
+2. Välj ett företag. När du har loggat in på kontrollpaneler visas skärmen **[!UICONTROL Choose a company]**. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
 
-3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort som du vill visa.
+3. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort du vill visa.
 
    ![Välj ett företag](assets/nextseq.png)
 
@@ -88,7 +88,7 @@ Så här använder du kontrollpaneler:
 
    ![Inget delat](assets/nothing.png)
 
-4. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). mer information finns **[!UICONTROL Preferences]** nedan).
+4. Granska hur rutorna visas i styrkortet (det första styrkortet visas i mörkt läge). se **[!UICONTROL Preferences]** nedan för mer information).
 
    ![Förklarade plattor](assets/newexplain.png)
 
@@ -118,23 +118,23 @@ Så här använder du kontrollpaneler:
 
    * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
 
-   * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Tryck på ett av alternativen i listan **[!UICONTROL COMPARE TO]** för att jämföra data för den här tidsperioden med det första datumintervallet du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten och styrkortets **[!UICONTROL Date Ranges]** paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
+   * Beroende på vilket intervall du trycker på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det intervall som omedelbart föregår det. Tryck på något av dessa två alternativ för att markera det första intervallet. I listan **[!UICONTROL COMPARE TO]** trycker du på ett av de alternativ som visas för att jämföra data för den här tidsperioden med det första datumintervallet som du valde. Tryck på **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
-7. Om du vill använda ett segmentfilter på styrkortet trycker du på filterlistrutan och väljer ett segment som har konfigurerats av markören. [Filter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Analytics Workspace.
+7. Om du vill använda ett segmentfilter på styrkortet trycker du på filterlistrutan och väljer ett segment som har konfigurerats av markören. [Filtren ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i arbetsytan för analyser.
 
    ![Segmentfilter](assets/segment_filter.png)
 
-8. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller indelningar som du kan vara intresserad av kontaktar du analysteamet så att styrkortet uppdateras. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
+8. Hämta styrkortsuppdateringar. Om ett styrkort inte innehåller alla mätvärden eller uppdelningar som du kan vara intresserad av kontaktar du analysteamet så att styrkortet uppdateras. När kortet har uppdaterats kan du dra ned det på skärmen för att uppdatera det och läsa in nyligen tillagda data.
 
 9. Lämna feedback om den här appen:
 
    1. Tryck på inställningsikonen i appskärmens övre högra hörn.
-   2. Tryck på **[!UICONTROL Settings]** alternativet på **[!UICONTROL Feedback]** skärmen.
+   2. Tryck på alternativet **[!UICONTROL Feedback]** på skärmen **[!UICONTROL Settings]**.
    3. Tryck för att visa alternativen för att lämna feedback.
 
       ![Inställningsskärm](assets/settings.png)
 
-10. Om du vill ändra inställningarna trycker du på det **[!UICONTROL Preferences]** alternativ som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+10. Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]**-alternativet som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
    ![Mörkt läge](assets/darkmode.png)
 
