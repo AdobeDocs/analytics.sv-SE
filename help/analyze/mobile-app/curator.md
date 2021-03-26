@@ -2,9 +2,9 @@
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för Adobe Analytics-kontrollpaneler
 translation-type: tm+mt
-source-git-commit: 27a923ec3acb9a0343ba71e395e565a0f9ede251
+source-git-commit: ea1915fa48a2da55684b7aa9f81fbe0c7d91171b
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Curator&#39;s guide for Adobe Analytics dashboards
 
-Följande information instruerar cheferna för Adobe Analytics data om hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i videon Adobe Analytics dashboards Scorecard Builder:
+Följande information beskriver för chefer av Adobe Analytics-data hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. En video som visar den här informationen finns i videon Adobe Analytics dashboards Scorecard Builder:
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
@@ -51,40 +51,40 @@ Som kurator för det här styrkortet kan du använda Styrkortbyggaren för att k
 
 Om du vill skapa styrkortet måste du göra följande:
 
-1. Öppna [!UICONTROL Blank Mobile Scorecard] mallen.
+1. Öppna mallen [!UICONTROL Blank Mobile Scorecard].
 2. Konfigurera styrkortet med data och spara det.
 
-### Åtkomst till [!UICONTROL Blank Mobile Scorecard] mallen
+### Åtkomst till [!UICONTROL Blank Mobile Scorecard]-mallen
 
-Du kommer åt [!UICONTROL Blank Mobile Scorecard] mallen på något av följande sätt:
+Du kan komma åt [!UICONTROL Blank Mobile Scorecard]-mallen på något av följande sätt:
 
 **Skapa ett nytt projekt**
 
-1. Öppna Adobe Analytics och klicka på **[!UICONTROL Workspace]** fliken.
-2. Klicka på **[!UICONTROL Create New Project]** knappen och välj **[!UICONTROL Blank Mobile Scorecard]** projektmallen.
+1. Öppna Adobe Analytics och klicka på fliken **[!UICONTROL Workspace]**.
+2. Klicka på knappen **[!UICONTROL Create New Project]** och välj projektmallen **[!UICONTROL Blank Mobile Scorecard]**.
 3. Klicka på knappen **[!UICONTROL Create]**.
 
 ![Styrkortsmall](assets/new_template.png)
 
 **Lägg till ett projekt**
 
-Klicka på **[!UICONTROL Projects]** knappen på skärmen under **[!UICONTROL Components]** fliken och välj **[!UICONTROL Add]** **[!UICONTROL Mobile Scorecard]**.
+På skärmen **[!UICONTROL Projects]**, under fliken **[!UICONTROL Components]**, klickar du på knappen **[!UICONTROL Add]** och väljer **[!UICONTROL Mobile Scorecard]**.
 
 ![Lägg till projekt](assets/add_project.png)
 
-**Använda [!DNL Analytics] verktyg**
+**eller**
 
-Klicka [!DNL Analytics]på **[!UICONTROL Tools]** menyn och välj **[!UICONTROL Analytics dashboards (Mobile App)]**. Klicka på **[!UICONTROL Create new scorecard]** knappen på nästa skärm.
+Välj **[!UICONTROL Analytics dashboards (Mobile App)]** på menyn **[!UICONTROL Tools]**. Klicka på knappen **[!UICONTROL Create new scorecard]** på nästa skärm.
 
 ### Konfigurera styrkortet med data och spara det
 
 Så här implementerar du styrkortsmallen:
 
-1. Under **[!UICONTROL Properties]** (i den högra listen) anger du den **[!UICONTROL Project report suite]** varifrån du vill använda data.
+1. Under **[!UICONTROL Properties]** (i den högra listen) anger du **[!UICONTROL Project report suite]** från vilken du vill använda data.
 
    ![Val av rapportsvit](assets/properties_save.png)
 
-2. Om du vill lägga till en ny platta i styrkortet drar du ett mått från den vänstra panelen och släpper det i **[!UICONTROL Drag and Drop Metrics Here]** zonen. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
+2. Om du vill lägga till en ny platta i styrkortet drar du ett mått från den vänstra panelen och släpper det i **[!UICONTROL Drag and Drop Metrics Here]**-zonen. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
 
    ![Lägg till rutor](assets/build_list.png)
 
@@ -92,15 +92,15 @@ Så här implementerar du styrkortsmallen:
    *Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.*
 
 
-3. Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta. Du kan t.ex. lägga till lämpliga mått (som **[!DNL DMA Region]** i det här exemplet) till **[!UICONTROL Unique Visitors]** måttet genom att dra och släppa det på plattan; de dimensioner som du lägger till visas under uppdelningsavsnittet för rutespecifika **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
+3. Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta. Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL DMA Region]**, i det här exemplet) till **[!UICONTROL Unique Visitors]**-måttet genom att dra och släppa det på plattan; Dimensionerna som du lägger till visas under detaljavsnittet för den rutspecifikt **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
 
    ![Lägg till dimensioner](assets/layer_dimensions.png)
 
-   Du kan också lägga till en dimension till alla plattor genom att släppa den på styrkortets arbetsyta.
-
    När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. I den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och alternativt konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
 
-   Om du klickar på plattor visas även ett dynamiskt popup-fönster hur fördelningsvyn ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan, kommer uppdelningsdimensionen att vara **timme** eller **dagar**, beroende på standarddatumintervallet.
+   ![Egenskapspanelen](assets/properties_tile.png)
+
+   Om du klickar på plattor visas även ett dynamiskt popup-fönster hur fördelningsvyn ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
 
    ![Brytningsvy](assets/break_view.png)
 
@@ -110,19 +110,31 @@ Så här implementerar du styrkortsmallen:
 
    ![Skapa segment för filter](assets/segment_ui.png)
 
-5. Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du för musen över komponenten, så som visas för **[!DNL Mobile Customers]** segmentet nedan:
+5. Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, så som visas nedan för segmentet **First Time Visits**:
 
    ![Remove_components](assets/new_remove.png)
 
-6. Under Styrkort **[!UICONTROL Properties]** kan du även ange följande:
+6. Lägg till och ta bort datumintervallkombinationer som kan väljas i styrkortet genom att markera listrutan för datumintervall.
 
-   * A **[!UICONTROL Default date range]**. De intervall som du anger här kommer att vara samma som används för den verkställande användarens första åtkomst till styrkortet i deras app.
+   ![Nytt poängkort](assets/new_score_card.png)
 
-   * A **[!UICONTROL Comparison date range]**
+   Varje nytt styrkort börjar med 6 kombinationer av datumintervall som fokuserar på data från idag och igår. Du kan ta bort onödiga datumintervall genom att klicka på x eller redigera varje datumintervallkombination genom att klicka på pennan.
 
-   * Alla **[!UICONTROL Segments]** som ska användas för hela styrkortet
+   ![Nytt poängkort2](assets/new_score_card2.png)
 
-7. Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänster på skärmen och skriver det nya namnet.
+   Om du vill skapa eller ändra ett primärt datum använder du listrutan för att välja bland tillgängliga datumintervall eller drar och släpper en datumkomponent från den högra listen i släppzonen.
+
+   ![Nytt poängkort3](assets/new_score_card3.png)
+
+   Om du vill skapa ett jämförelsedatum kan du välja bland praktiska förinställningar för vanliga tidsjämförelser i listrutan. Du kan också dra och släppa en datumkomponent från den högra listen.
+
+   ![Nytt poängkort4](assets/new_score_card4.png)
+
+   Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett nytt genom att klicka på kalenderikonen.
+
+   ![Nytt poängkort4](assets/new_score_card5.png)
+
+7. Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent. Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänster på skärmen och skriver det nya namnet.
 
    ![Naming_Scorecards](assets/new_name.png)
 
@@ -130,9 +142,9 @@ Så här implementerar du styrkortsmallen:
 
 Så här delar du styrkortet med en verkställande användare:
 
-1. Klicka på **[!UICONTROL Share]** menyn och välj **[!UICONTROL Share scorecard]**.
+1. Klicka på menyn **[!UICONTROL Share]** och välj **[!UICONTROL Share scorecard]**.
 
-2. Fyll i fälten i **[!UICONTROL Share mobile scorecard]** formuläret genom att:
+2. Fyll i fälten i **[!UICONTROL Share mobile scorecard]**-formuläret genom att:
 
    * Ange namnet på styrkortet
    * Ange en beskrivning av styrkortet
@@ -145,7 +157,7 @@ Så här delar du styrkortet med en verkställande användare:
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 
-Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera **[!UICONTROL Share embedded components]** alternativet) för att se till att dina chefsanvändare har tillgång till dessa ändringar.
+Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **[!UICONTROL Share embedded components]**) för att se till att dina chefsanvändare har tillgång till dessa ändringar.
 
 ## Konfigurera företagsledare med appen
 
@@ -169,22 +181,22 @@ För chefer:
 
    **För företagsledare på iOS:**
 
-   * Klicka på följande länk (den finns även i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+   * Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
       [iOS-länk](https://apple.co/2zXq0aN)
    **För chefsanvändare på Android:**
 
-   * Klicka på följande länk (den finns även i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+   * Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
       [Android-länk](https://bit.ly/2LM38Oo)
    När de har hämtats och installerats kan företagsanvändare logga in i appen med sina befintliga Adobe Analytics-inloggningsuppgifter. har stöd för både Adobe och Enterprise/Federated ID.
 
    ![App - välkomstskärm](assets/welcome.png)
 
-2. Hjälp dem komma åt styrkortet. När chefsanvändare har loggat in i appen visas **[!UICONTROL Choose a company]** skärmen. På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör. Så här hjälper du dem att komma till styrkortet:
+2. Hjälp dem komma åt styrkortet. När chefsanvändare har loggat in i appen visas skärmen **[!UICONTROL Choose a company]**. På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör. Så här hjälper du dem att komma till styrkortet:
 
    * Tryck på namnet på inloggningsföretaget eller Experience Cloud-organisationen som gäller för styrkortet som du delade. Styrkortslistan visar sedan alla styrkort som har delats med den verkställande direktören under det inloggningsföretaget.
-   * Hjälp dem att sortera listan efter **[!UICONTROL Most recently modified]** om tillämpligt.
+   * Hjälp dem att sortera listan efter **[!UICONTROL Most recently modified]**, om tillämpligt.
    * Tryck på namnet på styrkortet för att visa det.
 
    ![Välj ett företag](assets/accesscard.png)
@@ -201,7 +213,7 @@ För chefer:
    * Kontrollera att chefsanvändaren kan logga in på rätt Analytics-instans och att styrkortet har delats.
 
 
-3. Förklara för den verkställande användaren hur rutor visas i de styrkort du delar (det första styrkortet nedan är i mörkt läge). se **[!UICONTROL Preferences]** nedan om du tror att din chefsanvändare föredrar detta visningsalternativ):
+3. Förklara för den verkställande användaren hur rutor visas i de styrkort du delar (det första styrkortet nedan är i mörkt läge). se **[!UICONTROL Preferences]** nedan om du tror att den verkställande användaren föredrar detta visningsalternativ):
 
    ![Förklaringar](assets/newexplain.png)
 
@@ -225,23 +237,19 @@ För chefer:
 
    * En tabell inkluderas för att visa data med dimensioner som lagts till i rutan. Tryck på nedpilen för att välja mått. Om ingen dimension har lagts till i rutan visas diagramdata i tabellen.
 
-5. Så här ändrar du datumintervall för styrkortet:
+5. Om du vill ändra datumintervall för styrkortet trycker du på datumhuvudet och väljer den primära kombination och den kombination av datumintervall som du vill visa.
 
    ![Ändra datum](assets/changedate.png)
-
-   * Du kan också ändra datumintervallen i den detaljerade vyn som visas ovan på samma sätt.
-
-   * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det som ligger omedelbart före det. Tryck på något av dessa två alternativ för att markera det första intervallet. Tryck på ett av alternativen i listan **[!UICONTROL COMPARE TO]** för att jämföra data för den här tidsperioden med det första datumintervallet du valde. Tryck **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten och styrkortets **[!UICONTROL Date Ranges]** paneler uppdateras med nya jämförelsedata från de nya intervallen som du valde.
 
 6. Lämna feedback om den här appen:
 
    1. Tryck på inställningsikonen i appskärmens övre högra hörn.
-   2. Tryck på **[!UICONTROL Settings]** alternativet på **[!UICONTROL Feedback]** skärmen.
+   2. Tryck på alternativet **[!UICONTROL Feedback]** på skärmen **[!UICONTROL Settings]**.
    3. Tryck för att visa alternativen för att lämna feedback.
 
       ![Inställningsskärm](assets/settings.png)
 
-7. Om du vill ändra inställningarna trycker du på det **[!UICONTROL Preferences]** alternativ som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+7. Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]**-alternativet som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
    ![Mörkt läge](assets/darkmode.png)
 
