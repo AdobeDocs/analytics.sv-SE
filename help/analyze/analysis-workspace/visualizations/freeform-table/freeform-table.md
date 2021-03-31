@@ -1,10 +1,12 @@
 ---
 title: Frihandstabell
 description: Frihandsregister är grunden för dataanalys i Workspace
+feature: Frihandstabeller
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c53af8e7658b838bff53f02abc6ea6f7b570a34b
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '514'
 ht-degree: 2%
 
 ---
@@ -24,7 +26,7 @@ Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i e
 
 ## Frihandsritbordsverktyget
 
-Om du föredrar att lägga till flera komponenter i tabellen först och sedan återge data, kan du aktivera Frihand tabellverktyg. Med verktyget aktiverat kan du dra och släppa i många dimensioner, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa frågor. Data uppdateras inte direkt, utan uppdateras när du klickar **[!UICONTROL Build]**.
+Om du föredrar att lägga till flera komponenter i tabellen först och sedan återge data, kan du aktivera Frihand tabellverktyg. Med verktyget aktiverat kan du dra och släppa i många dimensioner, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa frågor. Data uppdateras inte direkt, utan uppdateras när du klickar på **[!UICONTROL Build]**.
 
 ![](assets/table-builder.png)
 
@@ -33,7 +35,7 @@ Om du föredrar att lägga till flera komponenter i tabellen först och sedan å
 Du kan interagera med och anpassa en frihandstabell på flera olika sätt:
 
 * **Rader**
-   * Du kan anpassa fler rader till en enda skärm genom att justera projektets [visningsdensitet](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html).
+   * Du kan anpassa fler rader till en enda skärm genom att justera projektets [vydensitet](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html).
    * Varje dimensionsrad kan visa upp till 400 rader, innan sidnumreringen görs. Klicka på siffran intill &quot;Rader&quot; för att visa fler rader på en sida. Navigera till en annan sida med sidpilen i sidhuvudet.
    * Rader kan delas upp efter ytterligare komponenter. Om du vill dela upp flera rader samtidigt markerar du bara flera rader och drar sedan nästa komponent över de markerade raderna. Läs mer om [uppdelningar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html).
    * Rader kan [filtreras](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) för att visa en reducerad uppsättning med objekt. Ytterligare inställningar finns under [Radinställningar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html).
@@ -41,16 +43,16 @@ Du kan interagera med och anpassa en frihandstabell på flera olika sätt:
 * **Kolumner**
    * Komponenter kan staplas i kolumner för att skapa segmenterade mätvärden, tabbanalyser med mera.
    * Vyn för varje kolumn kan justeras under [kolumninställningarna](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html).
-   * Flera åtgärder är tillgängliga via [högerklicksmenyn](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html). Menyn innehåller olika åtgärder beroende på om du klickar på tabellhuvudet, raderna eller kolumnerna.
+   * Flera åtgärder är tillgängliga via högerklicksmenyn [](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html). Menyn innehåller olika åtgärder beroende på om du klickar på tabellhuvudet, raderna eller kolumnerna.
 
 ## Exportera frihandstabelldata
 
-Läs mer om alla [exportalternativ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) för Analysis Workspace.
+Läs mer om alla dataalternativ [för export](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) för Analysis Workspace.
 
-* Högerklicka > **[!UICONTROL Copy data to clipboard]** exporterar visade tabelldata. Om du markerar en tabell visas det här alternativet **[!UICONTROL Copy selection to clipboard]**. Snabbtangenten **Ctrl+C** kopierar även markerade data.
-* Högerklicka > **[!UICONTROL Download data as CSV]** hämtar visade tabelldata som en CSV-fil. Om du markerar en tabell visas det här alternativet **[!UICONTROL Download selection as CSV]**.
+* Högerklicka > **[!UICONTROL Copy data to clipboard]** exporterar de tabelldata som visas. Om en tabellmarkering görs kommer det här alternativet att ange **[!UICONTROL Copy selection to clipboard]**. Snabbtangenten **Ctrl+C** kopierar även markerade data.
+* Högerklicka > **[!UICONTROL Download data as CSV]** hämtar visade tabelldata som en CSV-fil. Om en tabellmarkering görs kommer det här alternativet att ange **[!UICONTROL Download selection as CSV]**.
 * Högerklicka > **[!UICONTROL Project > Download items as CSV]** exporterar upp till 50 000 dimensionsobjekt för den valda dimensionen.
 
-Läs mer om alla [exportalternativ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) för Analysis Workspace.
+Läs mer om alla dataalternativ [för export](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) för Analysis Workspace.
 
 ![](assets/export-options.png)
