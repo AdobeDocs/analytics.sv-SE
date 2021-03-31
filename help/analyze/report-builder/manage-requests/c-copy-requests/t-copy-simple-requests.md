@@ -1,19 +1,23 @@
 ---
 description: Kopiera en enkel begäran i stället för en referensbegäran. En enkel begäran är en begäran som inte innehåller några referenser till en annan begäran eller innehållet i en cell.
-title: Kopiera enkla begäranden
-topic: Report builder
+title: Kopiera enkla förfrågningar
 uuid: ff20560a-01ee-47e7-8bd1-b73edb010456
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 1%
 
 ---
 
 
-# Kopiera enkla begäranden
+# Kopiera enkla förfrågningar
 
 Kopiera en enkel begäran i stället för en referensbegäran. En enkel begäran är en begäran som inte innehåller några referenser till en annan begäran eller innehållet i en cell.
 
-I en [referensbegäran](/help/analyze/report-builder/manage-requests/c-copy-requests/t-copy-referential-requests.md) används värden från celler som indata för parametrar, till exempel ett datafilter eller relationsfilter. Dessa filter använder antingen matchning eller trending och baseras på resultatet från en tidigare begäran eller på det innehåll som användaren anger i en cell, som kallas indatacell.
+En [referensbegäran](/help/analyze/report-builder/manage-requests/c-copy-requests/t-copy-referential-requests.md) använder värden från celler som indata för parametrar, till exempel ett datafilter eller relationsfilter. Dessa filter använder antingen matchning eller trending och baseras på resultatet från en tidigare begäran eller på det innehåll som användaren anger i en cell, som kallas indatacell.
 1. Skapa en giltig begäran.
 1. Högerklicka på en av cellerna där förfrågan har mappats, eller markera ett område med celler som innehåller förfrågningar.
 
@@ -21,7 +25,7 @@ I en [referensbegäran](/help/analyze/report-builder/manage-requests/c-copy-requ
 1. Välj **[!UICONTROL Copy Request]**.
 1. I en annan del av kalkylbladet högerklickar du på en tom cell (en cell som inte innehåller någon begäran).
 
-   Du kan inte klistra in celler som innehåller förfrågningar i celler som är mappade med förfrågningar för att förhindra att förfrågningar som du redan har skapat går förlorade eller skadas. Om du kopierar eller klipper ut celler som innehåller förfrågningar blir alternativet inte tillgängligt på snabbmenyn när du högerklickar på celler (eller celluppsättningen) som innehåller förfrågningar. [!UICONTROL Paste Requests] Du måste markera en annan cell som mål för inklistringsåtgärden så att förfrågningar inte överlappar varandra. Detta gäller oavsett om du markerar en enskild cell med en begäran om att klistra in eller ett område med celler som innehåller begäranden.
+   Du kan inte klistra in celler som innehåller förfrågningar i celler som är mappade med förfrågningar för att förhindra att förfrågningar som du redan har skapat går förlorade eller skadas. Om du kopierar eller klipper ut celler som innehåller förfrågningar blir alternativet [!UICONTROL Paste Requests] inte tillgängligt på snabbmenyn när du högerklickar på celler (eller celluppsättningen) som innehåller förfrågningar. Du måste markera en annan cell som mål för inklistringsåtgärden så att förfrågningar inte överlappar varandra. Detta gäller oavsett om du markerar en enskild cell med en begäran om att klistra in eller ett område med celler som innehåller begäranden.
 1. Klicka på **[!UICONTROL Paste Request]**.
 
    En kopia av den ursprungliga begäran placeras i cellen/cellerna på en eller flera platser i förhållande till den ursprungliga begäran.
