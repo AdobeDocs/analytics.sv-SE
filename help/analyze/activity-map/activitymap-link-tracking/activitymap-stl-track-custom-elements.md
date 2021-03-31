@@ -1,11 +1,12 @@
 ---
 title: Använd metoden tl() med Activity Map
 description: Du kan använda metoden tl() för att spåra anpassade element och för att konfigurera övertäckningsåtergivning för dynamiskt innehåll.
-topic: Aktivitetskarta
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 65cb0a49ef74156f0b8adf4a11c6fec6394d306f
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
