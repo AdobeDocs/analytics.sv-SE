@@ -1,12 +1,13 @@
 ---
-description: Den här funktionen integrerar Report Builder-användningen ytterligare i det naturliga Excel-arbetsflödet, utan att du behöver använda gränssnittet i Report Builder.
+description: Den här möjligheten integrerar användningen av Report Builder i det naturliga Excel-arbetsflödet utan att du behöver använda användargränssnittet i Report Builder.
 title: Anropa Report Builder-funktioner från Microsoft Excel-funktioner
-topic: Report builder
 uuid: 5342cc4f-085d-4a2d-a498-38b00a3ef4d3
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '481'
 ht-degree: 3%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 3%
 
 # Anropa Report Builder-funktioner från Microsoft Excel-funktioner
 
-Den här funktionen integrerar Report Builder-användningen ytterligare i det naturliga Excel-arbetsflödet, utan att du behöver använda gränssnittet i Report Builder.
+Den här möjligheten integrerar användningen av Report Builder i det naturliga Excel-arbetsflödet utan att du behöver använda användargränssnittet i Report Builder.
 
-Du kanske vill uppdatera Report Builder-begäranden automatiskt, vars indatafilter baseras på data som hämtats i Excel från andra källor. Nu kan du göra detta med strängen RefreshRequestsInCellsRange(..) funktion. Alla anrop är asynkrona. De returnerar omedelbart och väntar inte på att ett anrop ska köras helt.
+Du kan till exempel automatiskt uppdatera Report Builder-begäranden vars indatafilter baseras på data som hämtats i Excel från andra källor. Nu kan du göra detta med strängen RefreshRequestsInCellsRange(..) funktion. Alla anrop är asynkrona. De returnerar omedelbart och väntar inte på att ett anrop ska köras helt.
 
 >[!NOTE]
 >
@@ -28,17 +29,17 @@ Här följer en tabell med en lista över funktioner som visas:
 |---|---|
 | string AsyncRefreshAll() | Uppdaterar alla Report Builder-begäranden som finns i en arbetsbok. |
 | string AsyncRefreshRange(strängintervallAddressInA1Format) | Uppdaterar alla Report Builder-begäranden som finns i den angivna cellintervalladressen (ett stränguttryck som representerar ett cellintervall i A1-format, till exempel &quot;Sheet1!A2:A10&quot;). |
-| string AsyncRefreshRangeAltTextParam() | Uppdaterar alla Report Builder-begäranden som finns i det angivna cellområdet som skickas via den alternativa texten i MS Form Control. |
+| string AsyncRefreshRangeAltTextParam() | Uppdaterar alla Report Builder-begäranden som finns i det angivna cellintervallet som skickas via den alternativa texten i MS Form Control. |
 | string AsyncRefreshActiveWorksheet() | Uppdaterar alla Report Builder-begäranden som finns i det aktiva kalkylbladet. |
 | string AsyncRefreshWorksheet(string worksheetName) | Uppdaterar alla Report Builder-begäranden som finns i det angivna kalkylbladet (kalkylbladets namn så som det visas på fliken). |
-| string AsyncRefreshWorksheetAltTextParam(); | Uppdaterar alla Report Builder-begäranden som finns i det specifika kalkylbladsnamnet som skickades via den alternativa texten i MS Form Control |
+| string AsyncRefreshWorksheetAltTextParam(); | Uppdaterar alla Report Builder-begäranden som finns i det specifika kalkylbladsnamnet som skickades via den alternativa texten i MS-formulärkontrollen |
 | string GetLastRunStatus() | Returnerar en sträng som beskriver statusen för den senaste körningen. |
 
-Om du vill få åtkomst till de här funktionerna i Report Builder går du till [!UICONTROL Formulas] > [!UICONTROL Insert Function]. Längst ned i kategorilistan finns Adobe.ReportBuilder.Bridge:
+Gå till [!UICONTROL Formulas] > [!UICONTROL Insert Function] om du vill komma åt funktionerna i Report builder. Längst ned i kategorilistan finns Adobe.ReportBuilder.Bridge:
 
 ![](assets/arb_functions.png)
 
-## Använd de här funktionerna i en formel {#section_034311081C8D4D7AA9275C1435A087CD}
+## Använd de här funktionerna i formeln {#section_034311081C8D4D7AA9275C1435A087CD}
 
 Formeln
 
@@ -69,12 +70,12 @@ De två funktionerna som tar en parameter kan användas med Formatkontroll, men 
 
    ![](assets/format_control.png)
 
-1. Klicka på [!UICONTROL Alt Text] fliken.
+1. Klicka på fliken [!UICONTROL Alt Text].
 
    ![](assets/alt_text.png)
 
-1. Under [!UICONTROL Alternative text]anger du cellområdet som du vill uppdatera.
-1. Öppna listan med parametrar för Report builder under [!UICONTROL Formulas] > [!UICONTROL Insert Function]> [!UICONTROL Adobe.ReportBuilder.Bridge].
+1. Under [!UICONTROL Alternative text] anger du cellområdet som du vill uppdatera.
+1. Öppna listan över parametrar för Report builder under [!UICONTROL Formulas] > [!UICONTROL Insert Function] [!UICONTROL Adobe.ReportBuilder.Bridge].
 
 1. Välj en av de två funktionerna som slutar med AltTextParam och klicka på **[!UICONTROL OK]**.
 
