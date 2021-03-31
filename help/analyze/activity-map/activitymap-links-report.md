@@ -1,10 +1,14 @@
 ---
 description: Länkarna rapporterar om länkarna som finns på den aktuella sidan. Den rapporterar inte om alla länkar som samlats in för den sidan.
 title: Länkrapport
-topic: Activity map
 uuid: 1e7ca5d8-d144-4a21-a2f9-e05bd3232c59
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 6b27755178d156b1eaf159640d466bd84659983d
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +17,9 @@ source-git-commit: 6b27755178d156b1eaf159640d466bd84659983d
 
 Länkarna rapporterar om länkarna som finns på den aktuella sidan. Den rapporterar inte om alla länkar som samlats in för den sidan.
 
-I rapporten Länkar på sidan finns länkarna i en tabell. Ibland kanske du vill se länkklick (eller andra mätvärden) rankade i en enda vy. På så sätt kan du bättre jämföra en länk med en annan. Skapa rapporten Länkar på sida med en rankad lista över alla länkar på sidan (per länk-ID), klickinformationen (# och %) och regionen på sidan. Klicka på rapportknappen Länkar i sidan i verktygsfältet Aktivitetskarta.
+I rapporten Länkar på sidan finns länkarna i en tabell. Ibland kanske du vill se länkklick (eller andra mätvärden) rankade i en enda vy. På så sätt kan du bättre jämföra en länk med en annan. Skapa rapporten Länkar på sida med en rankad lista över alla länkar på sidan (per länk-ID), klickinformationen (# och %) och regionen på sidan. Klicka på rapportknappen Länkar i sidan i verktygsfältet Activity Map.
 
-Rapporten öppnas under webbläsarramen på kontrollpanelen för aktivitetskarta. **[!UICONTROL Links On Page]**
+Rapporten **[!UICONTROL Links On Page]** öppnas under webbläsarramen på kontrollpanelen i Activity Map.
 
 ## Standardläge {#section_C8D2A1C07A2A4E3A8F84AC9240603FA7}
 
@@ -37,7 +41,7 @@ I standardläge visar rapporten Länkar på sidan länkdata från en dag till fl
   </tr> 
   <tr> 
    <td colname="col1"> Länk-ID </td> 
-   <td colname="col2">Länkens primära ID (för mer information om hur primärt ID definieras av den <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md">nya länkspårningsmetoden</a>) </td> 
+   <td colname="col2">Länkens primära ID (för mer information om hur primärt ID definieras av <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md">metoden för ny länkspårning</a>) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Klickningar </td> 
@@ -60,7 +64,7 @@ I standardläge visar rapporten Länkar på sidan länkdata från en dag till fl
 
 **Filtrera data**
 
-När du vill nollställa en länk kan du söka efter en relaterad term i **[!UICONTROL Filter Data]** fältet. Endast länkarna som matchar sökningen kommer att ha övertäckningar. Utan ett filter visas de övertäckningar som anges i inställningarna [för](/help/analyze/activity-map/activitymap-overlay-settings.md) aktivitetskartan.
+När du vill nollställa en länk kan du söka efter en relaterad term i fältet **[!UICONTROL Filter Data]**. Endast länkarna som matchar sökningen kommer att ha övertäckningar. Utan ett filter visas de övertäckningar som anges i [inställningarna för Activity Map](/help/analyze/activity-map/activitymap-overlay-settings.md).
 
 ## Live-läge {#section_AC1967217B5A4532ACB01D33636F6770}
 
