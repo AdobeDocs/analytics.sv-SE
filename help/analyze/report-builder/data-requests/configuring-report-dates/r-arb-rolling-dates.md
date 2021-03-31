@@ -1,15 +1,19 @@
 ---
 description: Fältdefinitioner för rullande datum i Report Builder.
-title: Definitioner av begärandeguiden - rullande datum
-topic: Report builder
+title: Definitioner i frågeguiden – rullande datum
 uuid: 19e25900-96a3-4f6c-9551-9f7af8cc6963
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 52b4a48ad8f2424978fd882efedeb002e20acbd6
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 16%
 
 ---
 
 
-# Definitioner av begärandeguiden - rullande datum
+# Definitioner i frågeguiden – rullande datum
 
 Fältdefinitioner för rullande datum i Report Builder.
 
