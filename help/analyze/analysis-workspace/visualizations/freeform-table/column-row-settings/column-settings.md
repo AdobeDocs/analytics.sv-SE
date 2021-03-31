@@ -2,10 +2,12 @@
 description: Med kolumninställningar kan du konfigurera kolumnformatering, som vissa kan vara villkorliga.
 title: Kolumninställningar
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
+feature: Frihandstabeller
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: f2c6cda9743094cf198b4449b9163e3004d9e151
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '707'
 ht-degree: 20%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 20%
 
 ## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
 
-Du öppnar [!UICONTROL Column Settings]genom att dra en friformstabell till projektet och sedan klicka på kugghjulsikonen i kolumnrubriken.
+Om du vill komma åt [!UICONTROL Column Settings] drar du en frihandstabell till projektet och klickar sedan på kugghjulsikonen i kolumnrubriken.
 
 ![](assets/column_settings.png)
 
@@ -26,7 +28,7 @@ Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara f
 | Element | Beskrivning |
 | --- | --- |
 | **Totalt antal celler** |  |
-| Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen visas, inklusive [!UICONTROL Include None] alternativet. |
+| Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i friformstabellen, inklusive alternativet [!UICONTROL Include None], visas. |
 | Visa totalsumma | Denna summa representerar alla träffar som har samlats in, ibland kallade&quot;rapportsvitsummor&quot;. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar segmentvillkoren visas. Summan stöds inte för tabeller eller uppdelningar med [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
 | **Tabellceller** |  |
 | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
@@ -39,7 +41,7 @@ Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara f
 | Villkorsstyrd formatering | Se avsnittet nedan. |
 | Förhandsgranskning av tabellcell | Visar en förhandsvisning av hur varje cell visas med de valda formateringsalternativen. |
 
-## Conditional formatting {#conditional-formatting}
+## Villkorsstyrd formatering {#conditional-formatting}
 
 Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre gränser som du kan definiera. Om du använder villkorsstyrd formatering (färger o.s.v.) i frihandstabeller aktiveras även automatiskt vid uppdelning, såvida inte &quot;Anpassade&quot; gränser har valts.
 
@@ -52,7 +54,7 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 | Automatiskt genererad | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
 | Anpassad | Tilldela manuellt övre/mellersta/nedre gränser. Då får du den flexibilitet du behöver för att avgöra när ett kolumnvärde blir bra, medelbra eller dåligt. |
 
-## Använd en attribueringsmodell som inte är standard {#attribution}
+## Använd en icke-standardattribueringsmodell {#attribution}
 
 Analysis Workspace stöder [attribuering](/help/analyze/analysis-workspace/attribution/overview.md) för nästan alla mätvärden.
 
@@ -60,7 +62,7 @@ Analysis Workspace stöder [attribuering](/help/analyze/analysis-workspace/attri
 
    ![Kryssrutan Attribut](assets/attribution-checkbox.png)
 
-1. Under **[!UICONTROL Data Settings]**, kolla **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributmodeller](/help/analyze/analysis-workspace/attribution/models.md).
+1. Markera **[!UICONTROL Use non-default attribution model]** under **[!UICONTROL Data Settings]**. Mer information om olika attribueringsmodeller finns i [Attribution models](/help/analyze/analysis-workspace/attribution/models.md).
 
    ![Välj attribueringsmodell](assets/attribution-select.png)
 
