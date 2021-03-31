@@ -1,15 +1,19 @@
 ---
 description: Du kan ange ett komplext datumintervall genom att skapa ett anpassat uttryck.
-title: Anpassade datumuttryck - översikt
-topic: Report builder
+title: Anpassade datumuttryck – översikt
 uuid: 7d6d7c03-a3f4-4dec-8343-de2e6478bf06
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: fa1b0b7fb24d0cd2c205fbbb6a1e526f243531f8
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 4%
 
 ---
 
 
-# Anpassade datumuttryck - översikt
+# Anpassade datumuttryck – översikt
 
 Du kan ange ett komplext datumintervall genom att skapa ett anpassat uttryck.
 
@@ -19,7 +23,7 @@ Vi rekommenderar att du refererar till en kalender när du skapar uttryck för a
 
 Detta är ett exempel som använder **[!UICONTROL Rolling Dates]**.
 
-1. I [!UICONTROL Request Wizard: Step 1]stället för att använda **[!UICONTROL Preset Dates]** väljer du **[!UICONTROL Rolling Dates]**.
+1. Välj **[!UICONTROL Rolling Dates]** i stället för att använda **[!UICONTROL Preset Dates]**.[!UICONTROL Request Wizard: Step 1]
 
    ![](assets/rolldates1.png)
 
