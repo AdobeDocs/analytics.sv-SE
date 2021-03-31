@@ -2,18 +2,20 @@
 description: Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i organisationen.
 title: Dela-menyn
 uuid: d8539e0b-eaa5-4a3d-8282-a37d47e2fe96
+feature: Kuratera och dela
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 63efd2f046ac43640a9dd0fe2b3ee9fa3f182a8f
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 17%
+source-wordcount: '176'
+ht-degree: 16%
 
 ---
 
 
 # Dela-menyn
 
-Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i din organisation på menyn **** Dela i arbetsyta.
+Du kan strukturera, dela och schemalägga PDF/CSV-projekt till mottagare i din organisation på menyn Dela **Dela**.
 
 | Menyalternativ | Beskrivning |
 |---|---|
