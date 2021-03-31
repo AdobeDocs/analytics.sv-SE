@@ -2,10 +2,12 @@
 description: Interaktioner med tangentbord, kortkommandon och beteenden för peka och klicka som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
 title: Snabbtangenter (kortkommandon)
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '289'
 ht-degree: 5%
 
 ---
@@ -16,8 +18,8 @@ ht-degree: 5%
 Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys, tillägg av paneler och visualiseringar samt demokratisering (delning).
 
 Obs!
-* `Ctrl` = Windows och `Command` = Mac
-* `Alt` = Windows och `Option` = Mac
+* `Ctrl` = Windows och  `Command` = Mac
+* `Alt` = Windows och  `Option` = Mac
 
 ## Navigeringsåtgärder
 
