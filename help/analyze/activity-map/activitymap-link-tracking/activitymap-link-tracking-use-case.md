@@ -1,13 +1,14 @@
 ---
 description: Du kan skilja länkar åt genom att anpassa länk-ID med variabeln s_objectID, genom att anpassa regionen och genom att anpassa modulen AppMeasurement ActivityMap.
 title: Differentiera länkar som refererar till samma länk-ID och region
-topic: Activity map
 uuid: f2da0cda-a33b-4a12-8d99-1f58386d6d30
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 370d81bafc523b00a38b0064ad4ca3e6bb655d9f
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 6%
 
 ---
 
@@ -80,7 +81,7 @@ Genom att skapa ett unikt objekt-ID för en länk eller länkplats på en sida k
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;onClick="s_objectID='Product3';"&nbsp;href="product3.html"&gt;Buy&lt;/a&gt; 
      &nbsp;&nbsp;&nbsp;&lt;/div&gt;&nbsp;&nbsp;&nbsp; 
     </code> </td> 
-   <td colname="col2"> <p> </p> <p> </p> <p> </p>Product1 <p> </p> <p> </p> <p>Produkt 2 </p> <p> </p> <p> </p> <p>Produkt 3 </p> <p> </p> </td> 
+   <td colname="col2"> <p> </p> <p> </p> <p> </p>Produkt1 <p> </p> <p> </p> <p>Produkt 2 </p> <p> </p> <p> </p> <p>Produkt 3 </p> <p> </p> </td> 
    <td colname="col3"> <p> </p> <p> </p> <p> </p> <p>rekommendationspanel </p> <p> </p> <p> </p> <p>rekommendationspanel </p> <p> </p> <p> </p> <p>rekommendationspanel </p> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -123,7 +124,7 @@ Du kan anpassa regionen genom att se till att varje köplänk har en egen region
  </tbody> 
 </table>
 
-## Anpassa filen AppMeasurement ActivityMap Module {#section_B933BB9F944E4D5389002908A5A881F8}
+## Anpassa AppMeasurement ActivityMap-modulfilen {#section_B933BB9F944E4D5389002908A5A881F8}
 
 >[!CAUTION]
 >
