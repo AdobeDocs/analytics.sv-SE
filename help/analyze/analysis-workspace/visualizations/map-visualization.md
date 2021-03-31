@@ -2,11 +2,13 @@
 description: Använd kartvisualisering i ett Workspace-projekt.
 title: Mappa
 uuid: 6038f336-62a3-4efa-8316-4d7792468db3
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 2%
+source-wordcount: '626'
+ht-degree: 3%
 
 ---
 
