@@ -1,17 +1,21 @@
 ---
-description: Steg för och överväganden angående uppgradering av Report Builder.
+description: Steg för och överväganden rörande uppgradering av Report Builder.
 title: Uppgradera Report Builder
-topic: Report builder
 uuid: 19cfae11-0b40-498b-89ca-5e854e7b164f
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 4%
 
 ---
 
 
 # Uppgradera Report Builder
 
-Steg för och överväganden angående uppgradering av Report Builder.
+Steg för och överväganden rörande uppgradering av Report Builder.
 
 ## Vanliga frågor om uppgradering {#section_AFE40FF5544C418790A1C298C25CC18A}
 
@@ -30,7 +34,7 @@ S: Nej, alla inställningar, inklusive autentiseringsinställningar, fortsätter
 ## Uppgraderingsinstruktioner {#section_73B8110A619549189A30079735E81867}
 
 1. Logga in på din nuvarande version av Report Builder.
-1. Gå till **[!UICONTROL Options]** menyn för att uppgradera till den senaste versionen. Det aktuella versionsnumret visas längst ned i dialogrutan Alternativ.
+1. Gå till menyn **[!UICONTROL Options]** och uppgradera till den senaste versionen. Det aktuella versionsnumret visas längst ned i dialogrutan Alternativ.
 
    ![](assets/upgrade.png)
 
@@ -38,9 +42,9 @@ S: Nej, alla inställningar, inklusive autentiseringsinställningar, fortsätter
 
    >[!NOTE]
    >
-   >Om den här knappen är nedtonad finns ingen ny version av Report Builder tillgänglig.
+   >Om den här knappen är nedtonad finns det ingen ny version av Report Builder.
 
-1. Du kan även markera **[!UICONTROL Update when a new version is available]** kryssrutan. I framtiden kommer detta att starta uppdateringsprocessen automatiskt när en ny version blir tillgänglig.
+1. Du kan också markera kryssrutan **[!UICONTROL Update when a new version is available]**. I framtiden kommer detta att starta uppdateringsprocessen automatiskt när en ny version blir tillgänglig.
 1. När installationsskärmen visas klickar du på **[!UICONTROL Next >]**.
 
    ![](assets/setup.png)
@@ -53,6 +57,6 @@ Du kan alltid hämta den senaste versionen av Report Builder från Adobe Analyti
 
 1. Logga in på Adobe Analytics och gå till **[!UICONTROL Tools]**.
 1. Klicka på **[!UICONTROL Report Builder]**.
-1. Välj 32- eller 64-bitarsversionen på **[!UICONTROL Overview]** skärmen.
+1. Välj 32- eller 64-bitarsversionen på skärmen **[!UICONTROL Overview]**.
 1. Klicka på **[!UICONTROL Download Now!]**.
 
