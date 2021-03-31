@@ -1,10 +1,14 @@
 ---
 description: En introduktion till funktionerna i en rapport, inklusive verktygsfältet, kalendern och detaljtabellen.
 title: Rapportfunktioner
-topic: Reports and analytics
 uuid: 32f72961-cb94-4e50-ae18-03326e02bc8b
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +17,9 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 En introduktion till funktionerna i en rapport, inklusive verktygsfältet, kalendern och detaljtabellen.
 
-I det här exemplet visas en [!UICONTROL Pages Report]bild. Konfigurationsalternativen kan variera beroende på vilken rapport du kör. I stället för att välja Trended eller Ranked i en [!UICONTROL Site Content] rapport kan du ange granularitet och sidnamn för en [!UICONTROL Site Metrics] rapport.
+I det här exemplet visas en [!UICONTROL Pages Report]. Konfigurationsalternativen kan variera beroende på vilken rapport du kör. I stället för att välja Trended eller Ranked i en [!UICONTROL Site Content]-rapport kan du ange granularitet och sidnamn för en [!UICONTROL Site Metrics]-rapport.
 
-## Exempelsidrapport {#section_288CC85536684C2DB184141358481EF0}
+## Exempel på sidor, rapport {#section_288CC85536684C2DB184141358481EF0}
 
 Ett exempel på en sidrapport ( **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages Reports]** > **[!UICONTROL Pages]**).
 
@@ -35,7 +39,7 @@ Visar rapportinställningar och låter dig konfigurera rapporttypen, välja mät
 
 ![](assets/settings_header.png){width=&quot;672px&quot;}
 
-Mer information finns i [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md) .
+Mer information finns i [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md).
 
 ## Kalender {#section_8C6C4AD84D9043E8ABD53FF8F645AAB1}
 
@@ -61,13 +65,13 @@ Beroende på vilken typ av diagram du har markerat kan du vanligtvis se de över
 
 Se [Anpassa rapporter.](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md)
 
-## Mått {#section_8B8F9EC72B864E29B91039E7B7381EAD}
+## Mätvärden {#section_8B8F9EC72B864E29B91039E7B7381EAD}
 
 Lägg till mätvärden i rapporten. Administratörer kan ange standardvärden.
 
 ![](assets/metrics.png)
 
-Se [Metrisk.](/help/analyze/reports-analytics/metrics.md)
+Se [Mätvärden.](/help/analyze/reports-analytics/metrics.md)
 
 ## Detaljtabell {#section_449A5DC848744F65A10DA12E189B835D}
 
