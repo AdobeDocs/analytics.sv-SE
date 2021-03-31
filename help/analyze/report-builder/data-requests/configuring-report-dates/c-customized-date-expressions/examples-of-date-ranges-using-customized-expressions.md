@@ -1,10 +1,14 @@
 ---
 description: Exempel, anteckningar och syntaxanteckningar om hur du använder datumintervall i anpassade uttryck.
 title: Exempel på datumintervall med anpassade uttryck
-topic: Report builder
 uuid: 3f46816d-9eee-4b2d-83be-bf1c9fb97fcf
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 52b4a48ad8f2424978fd882efedeb002e20acbd6
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 5%
 
 ---
 
@@ -18,9 +22,9 @@ I tabellen antas dagens datum vara måndag, 10 november 2011, med den gregorians
 | Exempel | Datumintervall | Anpassa uttryck | Rapportens datumintervall |
 |---|---|---|---|
 |  |  | **Från** | **Till** |  |
-| 1 | För två veckor sedan | cw-2w | cw-1w-1d | 26 okt till 1 nov |
+| 3 | För två veckor sedan | cw-2w | cw-1w-1d | 26 okt till 1 nov |
 | 2 | De första 3 dagarna i den femte månaden i det senaste året | cy-1y+4m | cy-1y+4m+2d | 1 maj-3 maj 2010 |
-| 3 | En hel vecka med början för 4 veckor sedan | cw-4w | cw-3w-1d | 12 okt till 18 okt |
+| 1 | En hel vecka med början för 4 veckor sedan | cw-4w | cw-3w-1d | 12 okt till 18 okt |
 | 4 | Förra veckan föregående år | cw-53w | cw-52w-1d | 9 nov 2010-9 nov |
 | 5 | En månad med början för 2 månader sedan | cm-2m | cm-1m-1d | 1 sept till 30 sept |
 | 6 | För 12 månader sedan föregående år | cm-12m | cm-11m-1d | 1 nov till 30 nov 2010 |
