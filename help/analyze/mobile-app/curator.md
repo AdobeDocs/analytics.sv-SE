@@ -1,10 +1,12 @@
 ---
 description: Instruktioner för hur du ställer in instrumentpanelernas styrkort.
 title: Markörguide för Adobe Analytics-kontrollpaneler
+feature: Kontrollpaneler för analyser
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: ea1915fa48a2da55684b7aa9f81fbe0c7d91171b
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2328'
 ht-degree: 0%
 
 ---
