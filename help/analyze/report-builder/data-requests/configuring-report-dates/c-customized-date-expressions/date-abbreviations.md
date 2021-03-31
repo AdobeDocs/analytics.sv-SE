@@ -1,10 +1,14 @@
 ---
 description: Tidsförkortningar avser ett visst datum när en punkt börjar, inte ett intervall med dagar. Ett intervall med dagar uttrycks genom att ange ett start- och ett slutdatum för två tidsförkortningar (eller termer).
 title: Förkortningar av datum
-topic: Report builder
 uuid: 829d613e-5900-4586-a9fc-239988492d8b
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
@@ -21,10 +25,10 @@ Mer information om hur du använder rätt syntax finns i [Syntaxanteckningar](/h
 * cq = aktuellt kvartal (första dagen i aktuellt kvartal)
 * cy = aktuellt år (första dagen i aktuellt år)
 
-I följande lista anger *[UNIT]* en heltalsmultiplikator.
+I följande lista visar *[UNIT]* en heltalsmultiplikator.
 
-* [UNIT] d = dag
-* [UNIT] w = vecka
-* [UNIT] m = månad
-* [UNIT] q = kvartal
-* [UNIT] y = år
+* [] UNITd = dag
+* [] UNITw = vecka
+* [] UNITm = månad
+* [] UNITq = kvartal
+* [] UNITy = år
