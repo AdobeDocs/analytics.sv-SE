@@ -1,16 +1,21 @@
 ---
-description: Med Datumjämförelse på arbetsytan för analyser kan du ta valfri kolumn som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år-över-år, kvartal-över-kvartal, månad-över-månad.
+description: Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år för år, kvartal för kvartal, månad för månad.
 title: Datumjämförelse
 uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '565'
+ht-degree: 6%
 
 ---
 
 
 # Datumjämförelse
 
-Med Datumjämförelse på arbetsytan för analyser kan du ta valfri kolumn som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
+Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
 ## Jämför tidsperioder {#section_C4E36BFE0F5C4378A74E705747C9DEE4}
 
@@ -35,7 +40,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
    >[!NOTE]
    >
-   >När du väljer ett anpassat antal dagar, till exempel 7 oktober-20 oktober (ett 14-dagarsintervall), får du bara två alternativ: **[!UICONTROL Prior 14 days before this date range]**, och **[!UICONTROL Select range]**.
+   >När du väljer ett anpassat antal dagar, till exempel 7 oktober-20 oktober (ett 14-dagarsintervall), får du bara två alternativ: **[!UICONTROL Prior 14 days before this date range]** och **[!UICONTROL Select range]**.
 
 1. Jämförelsen ser ut så här:
 
@@ -47,13 +52,13 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
    ![](assets/compare-time-barchart.png)
 
-   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste inställningen vara markerad i [!UICONTROL Percentages] fältet [!UICONTROL Visualization Settings].
+   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages]-inställningen markerad i [!UICONTROL Visualization Settings].
 
-## Lägg till en tidsperiodkolumn för jämförelse {#section_93CC2B4F48504125BEC104046A32EB93}
+## Lägg till en tidsperiodkolumn för jämförelsen {#section_93CC2B4F48504125BEC104046A32EB93}
 
-Nu kan du lägga till en tidsperiod för varje kolumn i en tabell, så att du kan lägga till en annan tidsperiod än den som du har angett för kalendern. Detta är ett annat sätt att jämföra datum.
+Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan lägga till en annan tidsperiod än den som du har angett för kalendern. Detta är ett annat sätt att jämföra datum.
 
-1. Högerklicka på en kolumn i tabellen och välj **[!UICONTROL Add Time Period Column]**![](assets/add-time-period-column.png)
+1. Högerklicka på en kolumn i tabellen och välj **[!UICONTROL Add Time Period Column]** ![](assets/add-time-period-column.png)
 
 1. Beroende på hur du har angett tabellens datumintervall kan du göra följande jämförelser:
 
@@ -65,7 +70,7 @@ Nu kan du lägga till en tidsperiod för varje kolumn i en tabell, så att du ka
 
    >[!NOTE]
    >
-   >När du väljer ett anpassat antal dagar, till exempel 7 oktober-20 oktober (ett 14-dagarsintervall), får du bara två alternativ: **[!UICONTROL Prior 14 days before this date range]**, och **[!UICONTROL Select range]**.
+   >När du väljer ett anpassat antal dagar, till exempel 7 oktober-20 oktober (ett 14-dagarsintervall), får du bara två alternativ: **[!UICONTROL Prior 14 days before this date range]** och **[!UICONTROL Select range]**.
 
 1. Tidsperioden infogas ovanpå den markerade kolumnen:
 
@@ -77,15 +82,15 @@ Nu kan du lägga till en tidsperiod för varje kolumn i en tabell, så att du ka
 
 1. Du kan dessutom sortera efter varje kolumn, vilket ändrar ordningen på dagar beroende på vilken kolumn du sorterar efter.
 
-## Justera kolumndatum så att de börjar på samma rad {#section_5085E200082048CB899C3F355062A733}
+## Justera kolumndatum så att de startar på samma rad {#section_5085E200082048CB899C3F355062A733}
 
-Du kan använda en ny inställning för alla tabeller **[!UICONTROL Align Dates from each column to all start on the same row (applies to entire table)]**. &quot;Gäller hela tabellen&quot; betyder att om du t.ex. gör en uppdelning i tabellen, och om du ändrar den här inställningen för uppdelningen, så ändras inställningen för hela tabellen.
+Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from each column to all start on the same row (applies to entire table)]**. &quot;Gäller hela tabellen&quot; betyder att om du t.ex. gör en uppdelning i tabellen, och om du ändrar den här inställningen för uppdelningen, så ändras inställningen för hela tabellen.
 
 ![](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
->Den här inställningen är **inaktiverad** (avmarkerad) för alla befintliga projekt och **aktiverad** (markerad) för alla nya projekt.
+>Den här inställningen är **inaktiverad** (omarkerad) för alla befintliga projekt och **aktiverad** (markerad) för alla nya projekt.
 
 Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse mellan oktober och september 2016 börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september:
 
