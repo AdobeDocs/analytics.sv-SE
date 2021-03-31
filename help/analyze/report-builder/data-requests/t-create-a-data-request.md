@@ -1,36 +1,40 @@
 ---
-description: Steg för att skapa en grundläggande begäran om Report Builder-data.
-title: Skapa en databegäran
-topic: Report builder
+description: Steg för att skapa en grundläggande databegäran från Report Builder.
+title: Skapa en dataförfrågan
 uuid: 5d0151f1-e23d-43eb-84a4-96ae06c3a564
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 6%
 
 ---
 
 
-# Skapa en Report Builder-databegäran
+# Skapa en databegäran från Report Builder
 
 Steg för att skapa en grundläggande databegäran.
 
-1. Klicka i Excel **[!UICONTROL Create]**.
-1. I [!UICONTROL Request Wizard: Step 1] fönstret väljer du en [rapportserie](/help/analyze/report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
+1. Klicka på **[!UICONTROL Create]** i Excel.
+1. I fönstret [!UICONTROL Request Wizard: Step 1] väljer du en [rapportsvit](/help/analyze/report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
 1. (Valfritt) Markera ett segment som ska användas i begäran. När du har markerat ett eller flera segment flyttas de högst upp i listan.
 
-   I Report Builder används segment på samma sätt som i Adobe Analytics. Se [Analytics Segmentation Guide](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html). 1. (Valfritt) Välj en [publiceringslista](/help/analyze/report-builder/data-requests/allow-publishing-list-overrides.md) som ska användas för distribution.
+   Report Builder använder segment på samma sätt som Adobe Analytics använder dem. Se [Analytics Segmentation Guide](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html). 1. (Valfritt) Välj en [publiceringslista](/help/analyze/report-builder/data-requests/allow-publishing-list-overrides.md) som ska användas för distribution.
 1. Välj en [rapporttyp](/help/analyze/report-builder/data-requests/c-report-types/select-report-types.md).
 1. Ange ett [datumintervall](/help/analyze/report-builder/data-requests/configuring-report-dates/custom-calendar.md) och rapportera [granularitet](/help/analyze/report-builder/data-requests/configuring-report-dates/granularity.md).
 1. Klicka på **[!UICONTROL Next]**.
-1. Ange en layout i fönstret [Layout - Request Wizard Step 2](/help/analyze/report-builder/layout/layout.md) :
+1. I fönstret [Layout - Request Wizard Step 2](/help/analyze/report-builder/layout/layout.md) anger du en layout:
 
    | Element | Beskrivning |
    |---|---|
    | Pivotlayout | Innehåller ett rad-, kolumn- och måttstödraster för layout, som liknar Excel-standardtabeller. Med den här layouten kan du lägga till brytningsbegäranden i en ursprunglig begäran. |
    | Anpassad layout | Innehåller det mesta av funktionaliteten i [!UICONTROL Pivot Layout] men låter dig välja var varje objekt i rutnätet ska placeras i kalkylbladet. Den här layouten ger den flexibilitet som finns i tidigare versioner. |
 
-1. Dubbelklicka på (eller dra) mätvärden i trädet på [!UICONTROL Metrics] fliken för att lägga till dem i [!UICONTROL Metrics] rutnätet.
-1. Dubbelklicka (eller dra) på [!UICONTROL Dimensions] fliken till [!UICONTROL Row Labels] rutnätet.
+1. Dubbelklicka (eller dra) på fliken [!UICONTROL Metrics] för att lägga till dem i [!UICONTROL Metrics]-rutnätet.
+1. Dubbelklicka (eller dra) på fliken [!UICONTROL Dimensions] till rutnätet [!UICONTROL Row Labels].
 
-   Vilka [dimensioner](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/layout/filter-dimenson/filter-dimensions.html) som är tillgängliga i steg 2 beror på den basrapport du valde i steg 1 och på konfigurationen av rapportsviten. Dimensionerna är artiklar som korrelerar, underrelaterar eller är en klassificering av det ursprungliga rapporttypsmåttet som du valde i [!UICONTROL Request Wizard: Step 1] fönstret. Om du lägger till mer än en dimension i steg 2 skapar du en uppdelning i din databegäran.
+   Vilka [dimensioner](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/layout/filter-dimenson/filter-dimensions.html) som är tillgängliga i steg 2 beror på vilken basrapport du valde i steg 1 och på hur rapportsviten är konfigurerad. Dimensionerna är artiklar som korrelerar, underrelaterar eller är en klassificering av det ursprungliga rapporttypsmåttet som du valde i [!UICONTROL Request Wizard: Step 1]-fönstret. Om du lägger till mer än en dimension i steg 2 skapar du en uppdelning i din databegäran.
 
-   Mer information finns i [Lägg till mått](/help/analyze/report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md) .
+   Mer information finns i [Lägg till mått och Dimensioner](/help/analyze/report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md).
