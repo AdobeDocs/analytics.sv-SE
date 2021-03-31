@@ -1,15 +1,19 @@
 ---
 description: Du kan filtrera efter dimensioner som du lägger till i rutnätet Radetiketter. Filter begränsar de data som returneras av begäranden och kan tillämpas från pivottabellen eller anpassade layouter. När du konfigurerar dimensionsfiltrering från pivotlayouten kan du dessutom ange antalet poster från cellen.
-title: Översikt över filterdimensioner
-topic: Report builder
+title: Filtrera dimensioner – översikt
 uuid: c54d5add-f278-476d-8f14-73f1c2e37671
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 9%
 
 ---
 
 
-# Översikt över filterdimensioner
+# Filtrera dimensioner – översikt
 
 Du kan filtrera efter dimensioner som du lägger till i rutnätet Radetiketter. Filter begränsar de data som returneras av begäranden och kan tillämpas från pivottabellen eller anpassade layouter. När du konfigurerar dimensionsfiltrering från pivotlayouten kan du dessutom ange antalet poster från cellen.
 
@@ -17,7 +21,7 @@ Det valda filterformuläret fylls i baserat på det element och mått som valts 
 
 ## Definiera filter - värden och specialtecken {#section_15840216A4044C40974945FAA435AD93}
 
-Information om filter i **[!UICONTROL Most Popular Filter]** > **[!UICONTROL Define Filter]** -panelen.
+Information om filter i panelen **[!UICONTROL Most Popular Filter]** > **[!UICONTROL Define Filter]**.
 
 ![](assets/define_filter.png)
 
@@ -37,10 +41,10 @@ Följande tabeller innehåller exempel och information om filter:
    <td colname="col1"> <p>Innehåller alla termer </p> </td> 
    <td colname="col02"> <p>Innehåller alla blankstegsavgränsade värden i valfri ordning. </p> </td> 
    <td colname="col2"> <p>a b c </p> </td> 
-   <td colname="col3"> <p>Matchar <span class="term"> a b</span>coch <span class="term"> b a c</span>osv. </p> </td> 
+   <td colname="col3"> <p>Matchar <span class="term"> a b c</span>och <span class="term"> b a c</span> o.s.v. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Innehåller alla termer </p> </td> 
+   <td colname="col1"> <p>Innehåller valfri term </p> </td> 
    <td colname="col02"> <p>Innehåller minst ett av filtren (utrymmesavgränsat). </p> </td> 
    <td colname="col2"> <p>A B C </p> </td> 
    <td colname="col3"> <p>Matchar <span class="term"> A1</span>, <span class="term"> B2</span>, <span class="term"> C3</span>, men inte <span class="term"> D4</span>. </p> </td> 
@@ -64,16 +68,16 @@ Följande tabeller innehåller exempel och information om filter:
    <td colname="col3"> <p>Utesluter <span class="term"> abc</span>, <span class="term"> abc def</span> och matchar <span class="term"> def</span> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Lika med </p> </td> 
+   <td colname="col1"> <p>Är lika med </p> </td> 
    <td colname="col02"> <p>Returnerar en exakt matchning. </p> </td> 
    <td colname="col2"> <p>abc </p> </td> 
-   <td colname="col3"> <p> <span class="term"> abc</span> returneras, och inget annat. </p> </td> 
+   <td colname="col3"> <p> <span class="term"> abcis </span> returnerades, och inget annat. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Är inte lika med </p> </td> 
    <td colname="col02"> <p>Returnerar allt som inte matchar inmatningen exakt. </p> </td> 
    <td colname="col2"> <p>a </p> </td> 
-   <td colname="col3"> <p>Matchar inte <span class="term"> en</span>. </p> <p>Matchar <span class="term"> a b c</span>. </p> <p>Matchar <span class="term"> abc</span>. </p> </td> 
+   <td colname="col3"> <p>Matchar inte <span class="term"> a</span>. </p> <p>Matchar <span class="term"> a b c</span>. </p> <p>Matchar <span class="term"> abc</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Börjar med </p> </td> 
@@ -90,8 +94,8 @@ Följande tabeller innehåller exempel och information om filter:
   <tr> 
    <td colname="col1"> <p>Avancerat (specialtecken) </p> </td> 
    <td colname="col02"> <p>Här kan du skriva regextecken: </p> <p> <code> "", ^, -, *, $, | </code> </p> </td> 
-   <td colname="col2"> <p>"^Home*Page$"| sport </p> </td> 
-   <td colname="col3"> <p> Detta definierar ett filter som börjar med <span class="term"> Hem</span>, söker efter noll eller flera tecken och slutar sedan med <span class="term"> Sida</span>. </p> <p>Alla sidor med <span class="term"> sport</span> . </p> <p>Några exempel matchar: </p> 
+   <td colname="col2"> <p>"^Home*Page$" | sport </p> </td> 
+   <td colname="col3"> <p> Detta definierar ett filter som börjar med <span class="term"> Home</span>, letar efter noll eller flera tecken och slutar sedan med <span class="term"> Page</span>. </p> <p>Alla sidor med <span class="term"> sport</span> i den. </p> <p>Några exempel matchar: </p> 
     <ul id="ul_72D76C5AFEAF405E8A0E4E3C604D10AE"> 
      <li id="li_4D490059B667450DA8A0103167C7B391">HomePage </li> 
      <li id="li_1351619156274092AEB2771D882AD357">Home and (other characters) Page </li> 
@@ -115,8 +119,8 @@ Följande tabeller innehåller exempel och information om filter:
  <tbody> 
   <tr> 
    <td colname="col1"> " " </td> 
-   <td colname="col2"> Lika med </td> 
-   <td colname="col3"> <p>Inte escape-konverterad om den inte paras med en annan citattecken. 17-tums bildskärm <span class="term"></span> är till exempel inte en fras. </p> </td> 
+   <td colname="col2"> Är lika med </td> 
+   <td colname="col3"> <p>Inte escape-konverterad om den inte paras med ett annat citattecken. Exempelvis är <span class="term"> 17" Display</span> inte en fras. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> * </td> 
@@ -141,7 +145,7 @@ Följande tabeller innehåller exempel och information om filter:
   <tr> 
    <td colname="col1"> | </td> 
    <td colname="col2"> eller </td> 
-   <td colname="col3"> <p>Stöds endast i filtret <span class="term"> Avancerat (specialtecken)</span> . </p> </td> 
+   <td colname="col3"> <p>Stöds endast i <span class="term">-filtret Avancerat (specialtecken)</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
