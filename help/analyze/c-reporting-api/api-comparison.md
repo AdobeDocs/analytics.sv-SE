@@ -1,11 +1,13 @@
 ---
-description: En jämförelsetabell för Analytics API:er för rapportering. Det finns länkar till styrkande dokumentation.
+description: En jämförelsetabell för API:er för analysrapportering. Det finns länkar till styrkande dokumentation.
 title: API för Analytics-rapportering – jämförelse
 uuid: fa533a8e-33c0-42f4-a294-cabee0258c8f
+feature: API
+role: Utvecklare
 translation-type: tm+mt
-source-git-commit: 49875f086be6fe47552f50b41d8111179039f7c4
+source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '284'
 ht-degree: 21%
 
 ---
@@ -13,11 +15,11 @@ ht-degree: 21%
 
 # API för Analytics-rapportering – jämförelse
 
-En jämförelsetabell för Analytics API:er för rapportering. Det finns länkar till styrkande dokumentation.
+En jämförelsetabell för API:er för analysrapportering. Det finns länkar till styrkande dokumentation.
 
 >[!NOTE]
 >
->När det gäller fördröjning kombinerar Analytics för Target (A4T) Analytics- och Target-data på samma träff för integrerad rapportering. Eftersom Analytics- och Target-anrop sker vid olika tidpunkter, lagras träffar innan någon behandling utförs för att samla in data från båda lösningarna. Den här processen lägger till **ytterligare 7-10 minuters** fördröjning till alla kontrollpunkter.
+>När det gäller fördröjning kombinerar Analytics for Target (A4T) Analytics- och Target-data på samma träff för integrerad rapportering. Eftersom anrop till Analytics och Target sker vid olika tidpunkter, lagras träffar innan någon behandling utförs för att samla in data från båda lösningarna. Den här processen lägger till **ytterligare 7-10 minuter** med fördröjning till alla kontrollpunkter.
 
 <table id="table_7AF4FD678D494063ADF459B3CBC3EF3F"> 
  <thead> 
@@ -54,9 +56,9 @@ En jämförelsetabell för Analytics API:er för rapportering. Det finns länkar
   <tr> 
    <td colname="col1"> <a href="https://docs.adobe.com/content/help/sv-SE/analytics/landing/home.html"  > Rapporteringsgränssnitt</a> </td> 
    <td colname="col2"> Analysis Workspace, Reports &amp; Analytics, Report Builder, API </td> 
-   <td colname="col3"> Real-time report in Reports &amp; Analytics, Report Builder, 1.4 API </td> 
+   <td colname="col3"> Realtidsrapport i Rapporter och analyser, Report Builder, 1.4 API </td> 
    <td colname="col4"> Endast API </td> 
-   <td colname="col5"> Data warehouse &amp; API </td> 
+   <td colname="col5"> data warehouse &amp; API </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Datakorprecision</b> </td> 
@@ -91,6 +93,6 @@ En jämförelsetabell för Analytics API:er för rapportering. Det finns länkar
 
 **Relaterad hjälp**
 
-* [Adobe/IO](https://www.adobe.io/) - En omfattande källa till den tekniska dokumentation och de verktyg som behövs för att integrera Adobe-teknik i era tillämpningar.
+* [Adobe/IO](https://www.adobe.io/)  - En omfattande källa till den tekniska dokumentation och de verktyg som behövs för att integrera Adobe-teknik i era tillämpningar.
 * [Data Workbench Query API](https://marketing.adobe.com/developer/documentation/data-workbench-query-api/c-ins-qry-api)
 
