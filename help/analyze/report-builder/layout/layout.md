@@ -1,15 +1,19 @@
 ---
 description: I fönstret Request Wizard Step 2 kan du konfigurera rapportlayout, rubrikformatering och dimensionsfiltrering för utdata. Du kan använda en pivotlayout för att konfigurera begäran, vilket liknar hur du skapar en pivottabell i Excel.
-title: Layout - guide för begäran Steg 2
-topic: Report builder
+title: Layout – frågeguide steg 2
 uuid: 92409e22-8b21-4827-af2f-bfef8368e0f7
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 9%
 
 ---
 
 
-# Layout - guide för begäran Steg 2
+# Layout – frågeguide steg 2
 
 Begärandeguiden: I steg 2 kan du konfigurera rapportlayout, rubrikformatering och dimensionsfiltrering för utdata. Du kan använda en pivotlayout för att konfigurera begäran, vilket liknar hur du skapar en pivottabell i Excel.
 
