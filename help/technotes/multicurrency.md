@@ -1,10 +1,12 @@
 ---
 description: Beskriver hur du definierar målvalutakoder för stöd för flera valutor som ska fungera.
 title: Stöd för flera valutor
-topic: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: 63a6ca92ae5fe103648c74bd16bcdf90858c71f3
+source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
+workflow-type: tm+mt
+source-wordcount: '1383'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +24,7 @@ Du kan ange en JavaScript-variabel för målvalutan på sidnivå. Webbplatsägar
 
 ## Rapportsvitens nivå
 
-**Basvalutan** anges när rapportsviter [skapas](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html). Det här är standardinställningen för valuta och har företräde framför valutakoder som har angetts på sidnivå. Om en rapportsvit har order som godkänner amerikanska dollar, euro och brittiska pund och rapportsviten har standardvalutakoden inställd på US Dollars, översätts alla transaktioner till US Dollars av den rapporterande databasen.
+**basvalutan** anges när [rapportsviter](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) skapas. Det här är standardinställningen för valuta och har företräde framför valutakoder som har angetts på sidnivå. Om en rapportsvit har order som godkänner amerikanska dollar, euro och brittiska pund och rapportsviten har standardvalutakoden inställd på US Dollars, översätts alla transaktioner till US Dollars av den rapporterande databasen.
 
 Marknadsföringsrapporter använder valutakursen vid den tidpunkt då bildbegäran görs för att översätta sidnivåvalutavärden till standardvalutavärdena för rapportsviten. Rapporteringssviter använder&quot;US Dollars&quot; som standardvaluta.
 
@@ -96,7 +98,7 @@ CVE&#39; Kap Verde Escudos (CVE)
 
 KYD Caymanöarna Dollars (KYD)
 
-CLP Chile Pesos (CLP)
+CLP’ Chile Pesos (CLP)
 
 CNY&#39; China Yuan Renminbi (CNY)
 
@@ -413,7 +415,7 @@ ZWD Zimbabwes dollar (ZWD)
 
 ## AppMeasurement.js-exempel
 
-Variabeln `currencyCode` kan definieras globalt i filen AppMeasurement.js. Genom att definiera variabeln currencyCode i den här filen säkerställs att en enhetlig valutakod används för alla valutatransaktioner. I exemplet nedan anges Euros som `currencyCode` variabel i filen AppMeasurement.js `CONFIG SECTION` . Alla inköpshändelser tolkas genom att de rapporteras som eurotransaktioner.
+Variabeln `currencyCode` kan definieras globalt i filen AppMeasurement.js. Genom att definiera variabeln currencyCode i den här filen säkerställs att en enhetlig valutakod används för alla valutatransaktioner. I exemplet nedan anges euro som variabeln `currencyCode` i `CONFIG SECTION` för filen AppMeasurement.js. Alla inköpshändelser tolkas genom att de rapporteras som eurotransaktioner.
 
 ```
 /************************** CONFIG SECTION **************************/ 
@@ -428,7 +430,7 @@ s.linkTrackEvents="None"
     
 ```
 
-Mer information om hur du redigerar filen AppMeasurement.js finns i [Infoga kod i filen](https://docs.adobe.com/content/help/en/analytics/implementation/implement-analytics-with-dtm/analytics-tool/t-appmeasurement-code.html)AppMeasurement.js.
+Mer information om hur du redigerar filen AppMeasurement.js finns i [Infoga kod i filen AppMeasurement.js](https://docs.adobe.com/content/help/en/analytics/implementation/implement-analytics-with-dtm/analytics-tool/t-appmeasurement-code.html).
 
 ## Ytterligare implementeringsinformation
 
