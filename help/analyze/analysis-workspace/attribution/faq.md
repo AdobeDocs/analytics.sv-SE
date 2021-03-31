@@ -1,10 +1,12 @@
 ---
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
+feature: Attribuering
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 14ec79335ff0b37e3072a0a1b04b0727100cad76
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1030'
 ht-degree: 2%
 
 ---
