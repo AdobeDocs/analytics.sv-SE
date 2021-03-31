@@ -2,10 +2,12 @@
 description: Använd fältvisualisering i ett Workspace-projekt.
 title: Stapeldiagram och staplat stapeldiagram
 uuid: 45d2d9f3-3fb3-460f-bc87-7d6e3cc44494
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '92'
 ht-degree: 9%
 
 ---
