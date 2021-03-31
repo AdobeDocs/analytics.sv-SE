@@ -1,10 +1,14 @@
 ---
 description: Steg som beskriver hur du anpassar diagrammet så att det är mest användbart för den avsedda målgruppen.
 title: Ändra rapportdiagram
-topic: Reports and analytics
 uuid: c2e81c6c-bfe9-4457-8b5d-512255ca9711
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +17,7 @@ source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
 
 Steg som beskriver hur du anpassar diagrammet så att det är mest användbart för den avsedda målgruppen.
 
-Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du kör. Trend Line-diagram är till exempel användbara för trendrapporter, men du kan också använda ett vertikalt Bar-diagram med trendlinjer som tydligt visar trender över dagar, veckor, månader och så vidare. Du kan också välja ett cirkeldiagram om du vill visa procentvärden för de visade sidorna.
+Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du kör. Trend Line-diagram är till exempel användbara för trendrapporter, men du kan också använda ett vertikalt liggande diagram med trendlinjer som tydligt visar trender över dagar, veckor, månader osv. Du kan också välja ett cirkeldiagram om du vill visa procentvärden för de visade sidorna.
 
 **Ändra ett rapportdiagram**
 
@@ -25,7 +29,7 @@ Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du k
 
    ![](assets/graph_trend_line.png)
 
-   **[!UICONTROL Smooth Line]**: Du använder den här diagramtypen tillsammans med [!UICONTROL Video Detail Report]. Den visar antalet eller procentandelen vyer för specifika segment i en video. En ökning av vyerna för ett visst segment i videon anger att tittarna har rullat tillbaka och visat det avsnittet flera gånger. Om du använder procentvärden är procentandelen som visas i diagrammet en procentandel av alla segment som visas, inte en procentandel av de tittare som såg segmentet. I diagrammet är summan av alla rapportsegment till exempel 39. Antalet vyer för segmentet 0 till 10 sekunder är 10. Procentandelen vyer för det här segmentet är därför ungefär 26 procent.
+   **[!UICONTROL Smooth Line]**: Du använder den här diagramtypen tillsammans med  [!UICONTROL Video Detail Report]. Den visar antalet eller procentandelen vyer för specifika segment i en video. En ökning av vyerna för ett visst segment i videon anger att tittarna har rullat tillbaka och visat det avsnittet flera gånger. Om du använder procentvärden är procentandelen som visas i diagrammet en procentandel av alla segment som visas, inte en procentandel av de tittare som såg segmentet. I diagrammet är summan av alla rapportsegment till exempel 39. Antalet vyer för segmentet 0 till 10 sekunder är 10. Procentandelen vyer för det här segmentet är därför ungefär 26 procent.
 
    ![](assets/graph_smooth_line.png)
 
@@ -41,7 +45,7 @@ Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du k
 
    ![](assets/graph_vertical_bars.png)
 
-   **[!UICONTROL Stacked Vertical Bar]**: Genom att stapla liknande objekt kan du snabbt få en bild av hur mycket ett objekt påverkar. I ett exempel [!UICONTROL Campaign Report]kan ni stapla liknande framgångsmått och se vilken kampanj som genererar störst framgång. Stapling gör det enklare att hitta kampanjer som inte är de främsta i ett mätresultat, men som är de bästa resultaten i en kombination av mätvärden.
+   **[!UICONTROL Stacked Vertical Bar]**: Genom att stapla liknande objekt kan du snabbt få en bild av hur mycket ett objekt påverkar. I en [!UICONTROL Campaign Report] kan ni till exempel stapla liknande framgångsmått och se vilken kampanj som genererar störst framgång. Stapling gör det enklare att hitta kampanjer som inte är de främsta i ett mätresultat, men som är de bästa resultaten i en kombination av mätvärden.
 
    ![](assets/graph_stacked_vertical.png)
 
