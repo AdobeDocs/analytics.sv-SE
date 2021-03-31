@@ -1,12 +1,13 @@
 ---
 description: Exempel på hur AppMeasurement-biblioteket och modulen Activity Map kombineras i Adobe Analytics implementeringskod
 title: Visa exempel på implementeringskod för Activity Map
-topic: Activity map
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 59d89f7678310aea71191849735f9a61d77249a0
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 0%
+source-wordcount: '56'
+ht-degree: 3%
 
 ---
 
