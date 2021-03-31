@@ -1,10 +1,12 @@
 ---
 title: Flera rapportsviter
 description: Lär dig hur och varför du skapar projekt i Workspace med flera rapportsviter
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -60,10 +62,10 @@ Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv pane
 
 1. Ändra panelen till en annan rapportsserie och observera hur komponentetiketten (för närvarande aktiv rapportsvit) och listade komponenter uppdateras baserat på den nya rapportsviten.
 
-1. Använd ett kortkommando (`shift` när du drar) för att omvandla en inaktiv panel till en aktiv panel.
+1. Använd ett kortkommando (`shift`) när du drar för att omvandla en inaktiv panel till en aktiv panel.
 
 1. (Valfritt) Du kan också gå till andra komponentbyggare i Analytics och se till att de nu visar en etikett för rapportsviten som anger
 
-   * Var ett segment ska skapas: [Segment Builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
-   * Där ett beräknat mätvärde skapas: [Beräknad metrisk Builder](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
+   * Var ett segment ska skapas: [Segmentbyggare](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+   * Där ett beräknat mätvärde skapas: [Beräknad metrisk byggare](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
    * Var en varning ska skapas: [Varningsbyggaren](https://docs.adobe.com/content/help/en/analytics/components/alerts/alert-builder.html).
