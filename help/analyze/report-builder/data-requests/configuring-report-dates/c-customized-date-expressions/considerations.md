@@ -1,10 +1,14 @@
 ---
 description: 'Två viktiga saker att tänka på när du använder Anpassa uttryck för att ange datumintervall '
 title: Anpassade datumöverväganden
-topic: Report builder
 uuid: a3bb3a63-0f15-4292-ade7-4ea852fe68c8
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +22,11 @@ Två viktiga saker att tänka på när du använder Anpassa uttryck för att ang
 
 Eftersom tillgängligheten av data är känslig både för rapportens tidsram och det datum då du uppdaterar begäranden i rapporten, måste du köra rapporten på rätt dag för att extrahera den önskade informationen. Exemplen nedan visar båda dessa överväganden.
 
-Anta att du begär att få [!UICONTROL Page Views] använda den aggregerade granulariteten. I Nordamerika börjar veckan på söndag. Om du vill få uppdaterade rapporter för perioden söndag till lördag (t.ex. den 23 november till den 29 november 2008) kör du rapporten (begäran om uppdatering) söndag (den 30 november) för föregående vecka (den 11/23 till 11/29).
+Anta att du begär [!UICONTROL Page Views] med Aggregerad granularitet. I Nordamerika börjar veckan på söndag. Om du vill få uppdaterade rapporter för perioden söndag till lördag (t.ex. den 23 november till den 29 november 2008) kör du rapporten (begäran om uppdatering) söndag (den 30 november) för föregående vecka (den 11/23 till 11/29).
 
 Använd det här anpassade uttrycket:
 
-*Från:* cw-1w *till:* cw-1d
+*Från:* cw-1w  *till:* cw-1d
 
 En analys av det anpassade uttrycket när den inkluderade [!UICONTROL End Date] för begäran är 11/30:
 
@@ -34,9 +38,9 @@ den dag i den aktuella veckan som börjar på söndag, 30 november minus sju dag
 
 den dag i den aktuella veckan som börjar på söndag, 30 november minus en dag = lördag, 29 november
 
-När det anpassade uttrycket har mappats till kalkylbladet uppdaterar du begäran med söndag den 30 november 2008 som inklusiv [!UICONTROL End Date] för den flytande begäran. Uppgifterna återspeglar den veckovisa perioden.
+När det anpassade uttrycket har mappats till kalkylbladet uppdaterar du begäran med söndag den 30 november 2008 som den inledande [!UICONTROL End Date] för den flytande begäran. Uppgifterna återspeglar den veckovisa perioden.
 
-Om du i stället uppdaterar uttrycket och anger lördag den 29 november som [!UICONTROL End Date] för den flytande begäran, kommer data att återspegla veckan 11/16 till 11/22. Detta beror på att referensdatumet för uppdateringsbegäran är en dag tidigare.
+Om du i stället uppdaterar uttrycket och anger lördag den 29 november som [!UICONTROL End Date] för den flytande begäran, återspeglar data veckan 11/16 till 11/22. Detta beror på att referensdatumet för uppdateringsbegäran är en dag tidigare.
 
 Här är skillnaderna när den inkluderade [!UICONTROL End Date] för begäran är 29/11:
 
