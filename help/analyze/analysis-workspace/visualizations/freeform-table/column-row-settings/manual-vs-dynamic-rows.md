@@ -1,10 +1,12 @@
 ---
 title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 description: Hur man interagerar med dynamiska och statiska dimensionsobjekt i tabeller.
+feature: Frihandstabeller
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -20,9 +22,9 @@ Objekt med dynamiska dimensioner ändras med tiden och är beroende av vilket m�
 
 När du släpper en dimension i en frihandstabell returneras dynamiska rader. De representerar de översta artiklarna som motsvarar dimensionen för ett givet mätvärde och en viss tidsperiod. Du kan också släppa en dimension i tabellkolumner på fri hand, och dimensionen utökas automatiskt till de fem främsta dimensionsobjekten.
 
-När du t.ex. drar dimensionen Typ av webbläsare till tabellen visas dimensionsobjekten för Typ av webbläsare överst (t.ex. Microsoft, Apple, Google) Återgå dynamiskt till tabellraderna. Om de utelämnas i en kolumn returneras dimensionsobjekten för de fem vanligaste webbläsartyperna dynamiskt.
+När du t.ex. drar dimensionen Webbläsartyp till tabellen visas dimensionsobjekten för webbläsartypen överst (t.ex. Microsoft, Apple, Google) Återgå dynamiskt till tabellraderna. Om de utelämnas i en kolumn returneras dimensionsobjekten för de fem vanligaste webbläsartyperna dynamiskt.
 
-Objekt med dynamiska dimensioner har alternativet radfilter och har **inga** lås- och X-ikoner.
+Objekt med dynamiska dimensioner har radfilteralternativet och gör **inte** har lås- och X-ikoner.
 
 ![](assets/dynamic-items.png)
 
@@ -32,12 +34,12 @@ Statiska dimensionsobjekt ändras inte med tiden. de är fasta komponenter som a
 
 Varje gång du manuellt markerar och släpper specifika komponentvärden (mått, mått, segment, datumintervall) i en tabell blir resultatet en statisk lista med rader eller kolumner. Statiska dimensionsobjekt kan också skapas om du väljer att:
 
-* Högerklicka från rader > [!UICONTROL Display only selected rows]
-* Högerklicka från kolumner > [!UICONTROL Make item static]
+* Högerklicka > [!UICONTROL Display only selected rows] från rader
+* Högerklicka > [!UICONTROL Make item static] från kolumner
 
 Om du t.ex. drar över vissa objekt i webbläsartypen, t.ex. Microsoft och Apple, hämtas dessa två objekt alltid till tabellen.
 
-Statiska dimensionsobjekt har **inte** alternativet radfilter. Istället visas lås- och X-ikoner för varje objekt. Klicka på X-ikonen för att ta bort dimensionsobjektet från tabellen.
+Statiska dimensionsobjekt **har inte** radfilteralternativet. Istället visas lås- och X-ikoner för varje objekt. Klicka på X-ikonen för att ta bort dimensionsobjektet från tabellen.
 
 ![](assets/static-items.png)
 
@@ -52,4 +54,4 @@ Dimensioner från olika dimensioner kan läggas till i samma tabell. Radhuvudet 
 Dynamiska och statiska rader fungerar på olika sätt i den totala frihandsraden. Som standard:
 
 * Dynamiska rader summeras på serversidan och dubblettvärden som besök och besökare tas bort
-* Statiska rader summeras på klientsidan och dubbletter tas **inte** bort. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* Statiska rader summeras på klientsidan och gör **inte** avduplicerade mått. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
