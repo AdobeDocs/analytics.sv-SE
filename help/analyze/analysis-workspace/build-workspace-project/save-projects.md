@@ -1,21 +1,23 @@
 ---
 description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som och spara som mall.
 title: Spara projekt
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: a70f2c6c8aecae9a8a4e22e460dd2b8e6b885db9
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '308'
 ht-degree: 3%
 
 ---
 
 # Spara projekt
 
-Gå till **[!UICONTROL Project]** menyn Arbetsyta om du vill spara ändringarna i ett projekt. Dessutom sparar Adobe projekt automatiskt i vissa fall.
+Om du vill spara ändringarna i ett projekt går du till menyn Arbetsyta **[!UICONTROL Project]**. Dessutom sparar Adobe projekt automatiskt i vissa fall.
 
 ## Spara projektalternativ {#Save}
 
-Det finns olika sparåtgärder som du kan utföra på **[!UICONTROL Project]** menyn, beroende på hur du vill få tillgång till analysen i framtiden.
+Det finns olika åtgärder att spara som du kan utföra under menyn **[!UICONTROL Project]**, beroende på hur du vill komma åt analysen i framtiden.
 
 | Åtgärd | Beskrivning |
 |---|---| 
@@ -25,7 +27,7 @@ Det finns olika sparåtgärder som du kan utföra på **[!UICONTROL Project]** m
 
 ![](assets/save-project.png)
 
-## Spara automatiskt {#Autosave}
+## Spara {#Autosave} automatiskt
 
 Befintliga projekt, dvs. projekt som har sparats minst en gång tidigare, sparas automatiskt varannan minut på den lokala datorn. Nya projekt som aldrig har sparats sparas för närvarande inte automatiskt.
 
@@ -45,8 +47,8 @@ Webbläsaren varnar för att ändringar som inte sparats går förlorade. Du kan
 
 ### Webbläsaren kraschar eller sessionstider ut
 
-När användaren återgår till arbetsytan för **befintliga** projekt visas ett modalt sätt för **projektåterställning** . Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
+När användaren återgår till arbetsytan för **befintliga**-projekt visas en modal **projektåterställning**. Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
 
 ![](assets/project-recovery.png)
 
-För **nya** projekt som aldrig har sparats går det inte att återställa ändringar som inte har sparats.
+För **nya**-projekt som aldrig har sparats går det inte att återställa ändringar som inte har sparats.
