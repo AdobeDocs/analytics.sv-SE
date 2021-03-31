@@ -2,10 +2,12 @@
 description: Gör att du kan lägga till användardefinierad text på arbetsytan.
 title: Text
 uuid: 904b7170-073f-44ea-9fcb-4019befcaf8a
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 19cdf2b854dabf8c21ccdacc3de0aff05b31af9c
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '170'
 ht-degree: 1%
 
 ---
