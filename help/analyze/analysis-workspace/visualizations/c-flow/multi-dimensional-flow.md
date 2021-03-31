@@ -1,14 +1,19 @@
 ---
 description: Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
-title: Flerdimensionella flöden
+title: Intradimensionella flöden
 uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 87bfd1124e7f467e741f13deddd5770296f23827
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 1%
 
 ---
 
 
-# Flerdimensionella flöden
+# Intradimensionella flöden
 
 Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
 
@@ -20,17 +25,17 @@ Vi ska titta på två användningsfall: ett exempel på appanvändning och ett e
 
 ## Använd fall ett: app {#section_3D31D37B9C9F4134AE46C96291E41294}
 
-Dimensionen lades till [!UICONTROL Action Name] i flödet, med den översta returnerade artikeln som [!UICONTROL ItemAdded]:
+Dimensionen [!UICONTROL Action Name] lades till i flödet, där det översta returnerade objektet var [!UICONTROL ItemAdded]:
 
 ![](assets/multi-dimensional-flow.png)
 
 Om du vill utforska interaktionen mellan skärmar/sidor och åtgärder i den här appen kan du dra siddimensionen till flera platser, beroende på vad du vill utforska:
 
-* Dra den till valfri ände av släppzonen (inuti den svarta trimmade rektangulära zonen som visas) för att **ersätta** de övre resultaten i ändarna:
+* Dra den till valfri ände av släppzonen (inuti den svarta trimmade rektangulära zonen som visas) för att **ersätta** det övre resultatet i ändarna:
 
    ![](assets/multi-dimensional-flow2.png) ![](assets/multi-dimensional-flow3.png)
 
-* Dra den till det tomma utrymmet på slutet (lägg märke till den svarta parentesen) för att **lägga till den** i visualiseringen:
+* Dra den till det tomma utrymmet på slutet (lägg märke till den svarta parentesen) för att **lägga till i** visualiseringen:
 
    ![](assets/multi-dimensional-flow4.png)
 
