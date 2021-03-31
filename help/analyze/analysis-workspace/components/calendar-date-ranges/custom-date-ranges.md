@@ -1,18 +1,22 @@
 ---
-description: Skapa anpassade datumintervall i Analysis Workspace och spara dem som Time-komponenter.
+description: Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
 keywords: Analysis Workspace
 title: Skapa anpassade datumintervall
-topic: Reports and analytics
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 4%
 
 ---
 
 
 # Skapa anpassade datumintervall
 
-Skapa anpassade datumintervall i Analysis Workspace och spara dem som Time-komponenter.
+Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
 
 **[!UICONTROL Components]** > **[!UICONTROL New Date Range]**
 
@@ -24,7 +28,7 @@ I följande anpassade datumintervall visas ett datumintervall för&quot;två må
 
 ![](assets/date-range-two-months-ago.png)
 
-Det anpassade datumintervallet visas högst upp på [!UICONTROL Date Range] komponentpanelen i projektet:
+Det anpassade datumintervallet visas högst upp på [!UICONTROL Date Range]-komponentpanelen i ditt projekt:
 
 ![](assets/date-range-panel-two-months-ago.png)
 
@@ -44,8 +48,8 @@ Du kan till exempel skapa ett datumintervall som anger ett 7-dagars rullande fö
 
 Använd *`rolling daily`*.
 
-* Startinställningarna blir *`current day minus 14 days`*.
+* Startinställningarna är *`current day minus 14 days`*.
 
-* Slutinställningarna blir *`current day minus 7 days`*.
+* Slutinställningarna är *`current day minus 7 days`*.
 
 Datumintervallet kan vara en komponent som du drar till en frihandstabell.
