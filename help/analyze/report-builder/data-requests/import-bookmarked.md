@@ -1,13 +1,14 @@
 ---
 description: Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu som dimensioner i begärandeguiden steg 1 och kan importeras som rapportbyggarbegäranden.
 title: Importera bokmärkta rapporter och minirapporter från kontrollpaneler
-topic: Report builder
 uuid: 0fdbdb2e-5db7-4f64-b571-23482ba3606d
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '340'
+ht-degree: 4%
 
 ---
 
@@ -22,11 +23,11 @@ Så här visar begärandeguiden steg 1 en kontrollpanel och dess rapportplatser:
 
 ![](assets/import_dashboard_reportlet.png)
 
-När du klickar **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Retrieve your Bookmarks]** hämtas och klistras dina befintliga instrumentpanels- och/eller bokmärkesdata in i kalkylbladet.
+När du klickar på **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Retrieve your Bookmarks]** hämtas dina befintliga instrumentpanels- och/eller bokmärkesdata och klistras in i kalkylbladet.
 
 >[!NOTE]
 >
->I Report Builder är listan med tillgängliga kontrollpaneler och bokmärken begränsad till användaren, men även till de som gäller för den rapportserie som du valde i steg 1 i guiden. I marknadsföringsrapporter och -analyser får ni däremot tillgång till alla bokmärken och instrumentpaneler som är tillgängliga för er, oavsett vilka rapportsviter dessa instrumentpaneler och bokmärken använder.
+>I Report Builder är listan med tillgängliga kontrollpaneler och bokmärken begränsad till användaren, men även till de som gäller för den rapportserie du valde i steg 1 i guiden. I marknadsföringsrapporter och -analyser får ni däremot tillgång till alla bokmärken och instrumentpaneler som är tillgängliga för er, oavsett vilka rapportsviter dessa instrumentpaneler och bokmärken använder.
 
 >[!NOTE]
 >
@@ -34,9 +35,9 @@ När du klickar **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Re
 
 När du har skapat en begäran genom att importera en kontrollpanelsrapport (eller ett bokmärke) kopplas begäran sedan till rapportletens (eller bokmärkets) primära dimension. Om du redigerar begäran kommer trädvyn därför inte längre att välja trädvisningsnoden (eller bokmärkesnoden) för kontrollpanelsrapporten: i stället väljs dess primära dimension.
 
-Det importerade bokmärkesschemat kommer att ställa in rapportsviten, det valda segmentet, dimensionen och valda mätvärden på samma parametrar som visas i bokmärket Rapporter och Analytics.
+Det importerade bokmärkesschemat ställer in rapportsviten, det valda segmentet, dimensionen och valda mätvärden på samma parametrar som visas i bokmärket Rapporter och analyser.
 
 >[!IMPORTANT]
 >
->Datumintervallet ställs in på samma datumintervall, men som ett statiskt datumintervall - även om det här datumintervallet var ett löpande datumintervall i bokmärket Rapporter och Analytics.
+>Datumintervallet ställs in på samma datumintervall, men som ett statiskt datumintervall - även om det här datumintervallet var ett rullande datumintervall i bokmärket Rapporter och analyser.
 
