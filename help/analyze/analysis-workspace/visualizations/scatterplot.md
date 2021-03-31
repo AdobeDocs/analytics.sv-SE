@@ -1,11 +1,13 @@
 ---
 title: Spridningsdiagram
 description: En visualisering som visar relationen mellan upp till tre mätvärden.
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 2%
+source-wordcount: '115'
+ht-degree: 3%
 
 ---
 
