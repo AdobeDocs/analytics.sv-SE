@@ -1,39 +1,43 @@
 ---
-description: Fullständiga underrelationer aktiveras för alla konverteringsrapporter, så du kan dela upp alla eVar med en annan eVar. Menyn Uppdelning efter i rapporttabellen matchar rapportmenyn i standardanalysrapporten, vilket ger enhetliga val
-title: Underrelationer
-topic: Reports and analytics
+description: Fullständiga underrelationer är aktiverade för alla konverteringsrapporter, så du kan dela upp alla eVar med en annan eVar. Menyn Uppdelning efter i rapporttabellen matchar rapportmenyn i standardanalysrapporten, vilket ger enhetliga val
+title: Underordnade relationer
 uuid: ca6df50f-5d4c-4f91-bf27-86ccd01391a2
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
 
-# Underrelationer
+# Underordnade relationer
 
-Fullständiga underrelationer aktiveras för alla konverteringsrapporter, så du kan dela upp alla eVar med en annan eVar. Menyn Uppdelning efter i rapporttabellen matchar rapportmenyn i standardanalysrapporten, vilket ger enhetliga val
+Fullständiga underrelationer är aktiverade för alla konverteringsrapporter, så du kan dela upp alla eVar med en annan eVar. Menyn Uppdelning efter i rapporttabellen matchar rapportmenyn i standardanalysrapporten, vilket ger enhetliga val
 
 ![](assets/subrelations.png)
 
-## Så fungerar underrelationer {#section_5BD862BB74FE411B96B59204520E4631}
+## Så här fungerar delrelationer {#section_5BD862BB74FE411B96B59204520E4631}
 
 Ta följande exempel som illustrerar hur underrelationer fungerar:
 
 1. En användare kommer till din webbplats via Campaign_A och kommer till startsidan.
-1. Användaren söker efter &quot;katter&quot; och ser sökresultaten. eVar1 håller reda på interna söktermer.
+1. Användaren söker efter &quot;katter&quot; och visar sökresultaten. eVar1 håller reda på interna söktermer.
 1. Användaren prenumererar på en e-postlista som spåras med event1.
 1. En annan användare kommer till din webbplats även via Campaign_A och kommer till din hemsida.
-1. Användaren söker efter kattungar och visar sökresultat (eVar1) och prenumererar även på utskickslistan (event1).
+1. Den här användaren söker efter &quot;kattungar&quot; och visas i sökresultat (eVar1) och prenumererar även på utskickslistan (event1).
 
 Om du har tagit fram en rapport om spårningskod ser du följande:
 
 ![](assets/subrel_1.png)
 
-Om du har tagit fram en eVar1-rapport ser du följande:
+Om du tog fram en eVar1-rapport skulle du se följande:
 
 ![](assets/subrel_2.png)
 
-Om du har relaterat kampanjrapporten till eVar1 får du följande:
+Om du har relaterat Campaign-rapporten till eVar1 får du följande:
 
 ![](assets/subrel_3.png)
 
@@ -41,7 +45,7 @@ Om du har relaterat eVar1-rapporten till Campaigns får du följande:
 
 ![](assets/subrel_4.png)
 
-På grund av konverteringsvariablernas beständiga karaktär används två datakolumner för att lagra eVar-värden. värdet som utlöses och värdet som kvarstår. Om vi tittar på en export av rådata för det här exemplet skulle det se ut så här (förenklat för det här exemplet):
+På grund av konverteringsvariablernas beständiga karaktär används två datakolumner för att lagra eVar. värdet som utlöses och värdet som kvarstår. Om vi tittar på en export av rådata för det här exemplet skulle det se ut så här (förenklat för det här exemplet):
 
 ![](assets/subrel_5.png)
 
