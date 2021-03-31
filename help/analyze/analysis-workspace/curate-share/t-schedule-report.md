@@ -2,10 +2,12 @@
 description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
 keywords: Analysis Workspace
 title: Schemalägg projekt
+feature: Kuratera och dela
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # Schemalägg projekt
 
-På menyn **** Dela i arbetsytan kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
+På arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
 
 ## Skicka filen nu
 
@@ -32,7 +34,7 @@ Så här skickar du en fil direkt till mottagarna via e-post:
 
 Så här skickar du en fil i ett återkommande schema till mottagarna via e-post:
 
-1. Klicka på **Dela > Skicka fil enligt schema**.
+1. Klicka på **Dela > Skicka fil på schema**.
 1. Ange filtypen (CSV eller PDF).
 1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
@@ -44,7 +46,7 @@ Så här skickar du en fil i ett återkommande schema till mottagarna via e-post
 
 ## Schemalagd projekthanterare
 
-Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
+Schemalagda Analysis Workspace-projekt kan hanteras under **Analys > Komponenter > Schemalagda projekt**.
 
 I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, godkända scheman, ägare med mera.
 
@@ -61,4 +63,4 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **Visa utgångna scheman** | Navigera till den vänstra listen > Andra filter > Förfallen om du vill visa scheman som har upphört att gälla. Klicka på schemats titel för att ställa in ett nytt leveransschema. |
 | **Visa schema-ID** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
-I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägarskap kan **överföras** till en ny användare under **Admin > Analysanvändare och resurser > Överför resurser**.
+I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägarskap kan vara **överförd** till en ny användare under **Admin > Analysanvändare och resurser > Överför resurser**.
