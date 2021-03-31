@@ -1,10 +1,14 @@
 ---
 description: Med målgrupperna kan ni mäta webbplatsens resultat och följa utvecklingen mot målmålen. Du kan till exempel vilja öka antalet besökare som kommer från en geografisk region, intäkterna per order eller antalet träffar som kommer från en viss hänvisare.
 title: Målgrupper
-topic: Reports and analytics
 uuid: bfe29dc8-8da8-4107-8bb1-4a7494f12bc9
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +29,7 @@ Du kan till exempel mäta antalet unika besökare på webbplatsen och använda d
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Targets]**.
 
-Beskrivningar av fält och alternativ på [!UICONTROL Add/Edit Target] sidan.
+Beskrivningar av fält och alternativ på [!UICONTROL Add/Edit Target]-sidan.
 
 <table id="table_E08728BECC204DF59F0AC99957A68CAE"> 
  <thead> 
@@ -37,7 +41,7 @@ Beskrivningar av fält och alternativ på [!UICONTROL Add/Edit Target] sidan.
  <tbody> 
   <tr> 
    <td colname="col1"> Målnamn </td> 
-   <td colname="col2">Ange ett målnamn som visas på sidan <span class="wintitle"> för målhanteraren</span> . </td> 
+   <td colname="col2">Ange ett målnamn, som visas på sidan <span class="wintitle"> Målhanteraren</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Använd på </td> 
@@ -45,15 +49,15 @@ Beskrivningar av fält och alternativ på [!UICONTROL Add/Edit Target] sidan.
   </tr> 
   <tr> 
    <td colname="col1"> Välj objekt </td> 
-   <td colname="col2"> <p>Visar urvalsformuläret för det markerade attributet eller eVar, så att du kan utföra en avancerad sökning för relaterade objekt. Om du till exempel väljer eVar- <span class="uicontrol"> länder</span>kan du ange vilket land i objektlistan. Om du väljer eVar- <span class="uicontrol"> produkter</span>kan du ange vilken produkt i artikellistan. Variabler för anpassade insikter visas också på menyn. Om du har ställt in en anpassad insiktsvariabel för att mäta besökares åldersintervall, visas sidintervallen i objektlistan, t.ex. 18-24, 25-35 osv. </p> </td> 
+   <td colname="col2"> <p>Visar urvalsformuläret för det markerade attributet eller eVar, så att du kan utföra en avancerad sökning för relaterade objekt. Om du till exempel väljer eVar <span class="uicontrol"> Länder</span> kan du ange vilket land i objektlistan. Om du väljer eVar <span class="uicontrol"> Produkter</span> kan du ange vilken produkt i listan. Variabler för anpassade insikter visas också på menyn. Om du har ställt in en anpassad insiktsvariabel för att mäta besökares åldersintervall, visas sidintervallen i objektlistan, t.ex. 18-24, 25-35 osv. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mått </td> 
-   <td colname="col2">Gör att du kan tillämpa målet på ett mätresultat. Den här menyn visar endast de mätvärden som gäller för en viss eVar. Om du t.ex. väljer <span class="uicontrol"> Produkter</span> som eVar gäller inte mått som <span class="uicontrol"> Sidutträde</span> . Måttet <span class="uicontrol"> Sidan avslutas</span> kan användas på en webbsida som eVar. </td> 
+   <td colname="col2">Gör att du kan tillämpa målet på ett mätresultat. Den här menyn visar endast de mätvärden som gäller för en viss eVar. Om du t.ex. väljer <span class="uicontrol"> Produkter</span> som eVar gäller inte mått som <span class="uicontrol"> Sidan avslutas</span>. Måttet <span class="uicontrol"> Sidan avslutas</span> kan användas för en eVar på en webbsida. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Period </td> 
-   <td colname="col2"> <p>Här kan du definiera inställningarna för <span class="uicontrol"> datumintervall</span> och <span class="uicontrol"> granularitet</span> för målet. Beroende på datumintervallets specifikationer gäller inte vissa granularitetsalternativ. När du anger värden för måtten anger du ett värde för varje granularitetsinställning. Om datumintervallet till exempel är februari-månaden och ditt val av granularitet är en vecka, anger du ett värde för varje vecka i februari-månaden. Målrapporter visas för varje granularitetsinställning. </p> </td> 
+   <td colname="col2"> <p>Gör att du kan definiera inställningarna <span class="uicontrol"> Datumintervall</span> och <span class="uicontrol"> Granularitet</span> för målet. Beroende på datumintervallets specifikationer gäller inte vissa granularitetsalternativ. När du anger värden för måtten anger du ett värde för varje granularitetsinställning. Om datumintervallet till exempel är februari-månaden och ditt val av granularitet är en vecka, anger du ett värde för varje vecka i februari-månaden. Målrapporter visas för varje granularitetsinställning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Värden </td> 
@@ -73,13 +77,13 @@ t_add_a_target.xml
  -->
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Targets]**.
-1. På [!UICONTROL Target Manager] sidan klickar du på **[!UICONTROL Add New]**.
-1. Konfigurera alternativen som beskrivs i [Målfältbeskrivningar](/help/analyze/reports-analytics/targets.md#section_44DFFB4A7AC54D65BC2345411686B2AD).
+1. Klicka på **[!UICONTROL Add New]** på sidan [!UICONTROL Target Manager].
+1. Konfigurera alternativen som beskrivs i [Beskrivning av målfält](/help/analyze/reports-analytics/targets.md#section_44DFFB4A7AC54D65BC2345411686B2AD).
 1. Klicka på **[!UICONTROL OK]**.
 
 ## Redigera ett mål {#task_946C558D2ECC4922ABD4A5A6183A095A}
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Targets]**.
-1. Klicka på **[!UICONTROL Manage]** ikonen i **[!UICONTROL Edit]** kolumnen.
-1. Konfigurera alternativen som beskrivs i [Målfältbeskrivningar](/help/analyze/reports-analytics/targets.md#section_44DFFB4A7AC54D65BC2345411686B2AD).
+1. Klicka på ikonen **[!UICONTROL Edit]** i kolumnen **[!UICONTROL Manage]**.
+1. Konfigurera alternativen som beskrivs i [Beskrivning av målfält](/help/analyze/reports-analytics/targets.md#section_44DFFB4A7AC54D65BC2345411686B2AD).
 1. Klicka på **[!UICONTROL OK]**.
