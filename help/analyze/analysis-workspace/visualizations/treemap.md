@@ -1,19 +1,24 @@
 ---
-description: Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar.
-title: Treemap
+description: Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar.
+title: Treemap-diagram
 uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '98'
+ht-degree: 96%
 
 ---
 
 
-# Treemap
+# Treemap-diagram
 
-Visar hierarkiska (trädstrukturerade) data som en uppsättning kapslade rektanglar.
+Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar.
 
-Varje förgrening i trädet får en rektangel som sedan visas sida vid sida med mindre rektanglar som representerar undergrenar.
+Varje förgrening i trädet tilldelas en rektangel, som sedan visas med mindre rektanglar som representerar undergrenar.
 
 ![](assets/treemap.png)
 
-När färg- och storleksmåtten på något sätt korrelerar med trädstrukturen kan man ofta se mönster som är svåra att dekorera på andra sätt, t.ex. om en viss färg är särskilt relevant. En annan fördel med treemaps är att de genom sin konstruktion utnyttjar utrymmet på ett effektivt sätt.
+När färger och storleksmått korrelerar med trädstrukturen är det ofta lätt att se mönster som annars är svåra upptäcka, till exempel om en viss färg är särskilt relevant. En annan fördel med treemap-diagram är att de genom sin konstruktion utnyttjar utrymmet effektivt.
