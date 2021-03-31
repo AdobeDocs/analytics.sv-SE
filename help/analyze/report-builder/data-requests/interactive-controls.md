@@ -1,10 +1,14 @@
 ---
 description: Med interaktiva kontroller kan du redigera segment och datumintervall för en eller flera begäranden direkt från kalkylbladet. Detta ger större flexibilitet vid uppdatering av förfrågningar från Report builder.
 title: Interaktiva kontroller
-topic: Report builder
 uuid: 5f324b61-e032-455e-9947-5037f013e0fa
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +26,8 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 >
 >Du måste ha Report Builder v5.0 installerat för att de interaktiva kontrollerna ska fungera. >
 >* Om du kör Microsoft Excel i Windows men kör en äldre version av Report Builder, eller om du inte har Report Builder installerat: Du kan ändra värdet i den interaktiva kontrollen, men det kommer inte att uppdatera den associerade begäran eller uppdatera de associerade parametrarna för begäran.
->* Om du kör Excel på Mac och ändrar värdet i kontrollen visas följande meddelande: &quot;Det går inte att hitta makrot &#39;Adobe.ReportBuilder.Bridge.FormControlClick.Event&#39;.&quot;
+>* Om du kör Excel på Mac och ändrar värdet i kontrollen visas följande meddelande: &quot;Det går inte att hitta makrot &quot;Adobe.ReportBuilder.Bridge.FormControlClick.Event&quot;.&quot;
+
 >
 
 
@@ -31,10 +36,10 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 >
 >Manipulera inte med namnet på kontrollen. (Om du vill se namnet anger du fokus på kontrollen så visas kontrollnamnet precis ovanför Excel-stödrastret i det övre vänstra hörnet.)
 
-## Implementera interaktiv kontroll för datumintervall {#section_39B228F2D2C44985863D31424C953280}
+## Implementera interaktiv datumintervallkontroll {#section_39B228F2D2C44985863D31424C953280}
 
-1. I steg 1 i begärandeguiden väljer du till exempel **[!UICONTROL Page]** rapporten.
-1. Klicka på **[!UICONTROL Commonly Used Dates]** ikonen bredvid **[!UICONTROL Control Settings]** listrutan:
+1. I steg 1 i begärandeguiden väljer du till exempel rapporten **[!UICONTROL Page]**.
+1. Klicka på ikonen **[!UICONTROL Control Settings]** bredvid listrutan **[!UICONTROL Commonly Used Dates]**:
 
    ![](assets/date_range_control.png)
 
@@ -66,7 +71,7 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 
 Att implementera den interaktiva segmentkontrollen liknar att implementera datumintervallkontrollen.
 
-1. I steg 1 i begärandeguiden, bredvid den **[!UICONTROL Segment]** nedrullningsbara listan, väljer du ikonen Inställningar för segmentkontroll:
+1. I steg 1 i begärandeguiden, bredvid listrutan **[!UICONTROL Segment]**, väljer du ikonen Inställningar för segmentkontroll:
 
    ![](assets/segment_interactive_1.png)
 
