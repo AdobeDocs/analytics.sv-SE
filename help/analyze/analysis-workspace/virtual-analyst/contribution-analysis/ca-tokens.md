@@ -2,10 +2,12 @@
 description: Använd bidragsanalys för att identifiera statistiska avvikelser och korrelationer i data.
 title: Översikt över bidragsanalys
 uuid: 2bd295b0-c5ce-4443-86af-024efd20c021
+feature: AI-verktyg
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1161'
 ht-degree: 6%
 
 ---
