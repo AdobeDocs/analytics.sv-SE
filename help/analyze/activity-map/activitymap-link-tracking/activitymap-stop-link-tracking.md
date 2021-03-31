@@ -1,17 +1,21 @@
 ---
-description: Steg för att stoppa länkspårning i Activity Map eller Legacy ClickMap.
+description: Steg för att stoppa länkspårning i Activity Map eller äldre ClickMap.
 title: Stoppa länkspårning
-topic: Activity map
 uuid: e17fb7bd-d6ed-45c3-a006-9150d5718cff
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '79'
+ht-degree: 12%
 
 ---
 
 
 # Stoppa länkspårning
 
-Steg för att stoppa länkspårning i Activity Map eller Legacy ClickMap.
+Steg för att stoppa länkspårning i Activity Map eller äldre ClickMap.
 
 <table id="table_1745199B3105467CBA26F50B3B1CCE99"> 
  <thead> 
@@ -22,7 +26,7 @@ Steg för att stoppa länkspårning i Activity Map eller Legacy ClickMap.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Aktivitetskarta </td> 
+   <td colname="col1"> Activity Map </td> 
    <td colname="col2"> Ta bort följande innehåll från filen Appmeasurement.js: 
     <code>
      /*
@@ -39,8 +43,8 @@ Steg för att stoppa länkspårning i Activity Map eller Legacy ClickMap.
     </code> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> ClickMap (tidigare Visitor ClickMap) </td> 
-   <td colname="col2"> <p>Ställ in variabeln <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/configuration-variables.html"  > trackInlineStats</a> på false (det här är standardvärdet). Syntaxen är följande: 
+   <td colname="col1"> ClickMap (tidigare Visitor-ClickMap) </td> 
+   <td colname="col2"> <p>Ställ in variabeln <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/configuration-variables.html"  > trackInlineStats</a> på false (detta är standardvärdet). Syntaxen är följande: 
      <code>
        s.trackInlineStats=false
      </code> </p> </td> 
