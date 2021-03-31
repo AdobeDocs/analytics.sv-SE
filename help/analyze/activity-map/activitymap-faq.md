@@ -1,12 +1,13 @@
 ---
 description: Vanliga frågor och svar om hur du konfigurerar, konfigurerar och använder funktioner i Activity Map.
 title: Vanliga frågor om Activity Map
-topic: Activity map
 uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '504'
 ht-degree: 1%
 
 ---
@@ -38,12 +39,12 @@ Vissa rankade länkar, t.ex. undermenylänkar, är dolda på sidan. Därför vis
 
 ## Hur bestäms länkrankningen i rapporten Alla länkar?**
 
-* **I läget**&#x200B;Övertoning och Bubbel: Rankningen bestäms av måttkolumnen. För länkar med samma måttvärde baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
-* **I grönt och glesare läge**: Rankningen bestäms primärt av kolumnen % vinst. För länkar med samma ökning baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
+* **I läget** Övertoning och Bubbel: Rankningen bestäms av måttkolumnen. För länkar med samma måttvärde baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
+* **I läget** Ingenjör och Lägre: Rankningen bestäms primärt av kolumnen % vinst. För länkar med samma ökning baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
 
 ## Hur fungerar Activity Map med sidor som använder flera rapportsviter?
 
-Som standard använder Activity Map den rapportserie som är associerad med den första taggen som skickas av sidan. Du kan välja en annan taggad rapportserie på fliken **[!UICONTROL Activity Map Settings]** > **[!UICONTROL Others]** .
+Som standard använder Activity Map den rapportserie som är associerad med den första taggen som skickas av sidan. Du kan välja en annan taggad rapportserie via fliken **[!UICONTROL Activity Map Settings]** > **[!UICONTROL Others]**.
 
 ## Hur länge söker Activity Map efter Adobe Analytics på sidan?
 
