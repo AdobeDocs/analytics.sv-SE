@@ -2,10 +2,12 @@
 description: Använd segment i Analysis Workspace.
 title: Segment
 uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '373'
 ht-degree: 1%
 
 ---
