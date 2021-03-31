@@ -1,9 +1,13 @@
 ---
 description: Med sidanalys i realtid (Live-läge) kan du få resultat med minimal granularitet i realtid.
-title: Realtidsanalys (Live)
-topic: Activity map
+title: Sidanalys i realtid (live)
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 7%
 
 ---
 
@@ -12,7 +16,7 @@ source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
 
 Med sidanalys i realtid (Live-läge) kan du få resultat med minimal granularitet i realtid.
 
-Activity Map visar nu analysdata i steg om 1 minut till 15 minuter för att övervaka länkpopulariteten baserat på mikrotrender för valda sidor. Detta är särskilt viktigt för förlag när det gäller att följa upp och reagera på ökat eller minskat intresse för berättelser och för att övervaka trafikflödet i realtid.
+Activity Map visar nu analysdata i steg om 1 minut till 15 minuter för att övervaka länkpopulariteten baserat på mikrotrender för utvalda sidor. Detta är särskilt viktigt för förlag när det gäller att följa upp och reagera på ökat eller minskat intresse för berättelser och för att övervaka trafikflödet i realtid.
 
 Som ägare av webbplatsinnehåll är en del av ditt jobb att förstå när vi ska marknadsföra och ta bort innehåll och behålla vår upplevelse konstant relevant. Realtidsdata är livsnerven i detta ansvar. Om ni förstår vilka länkar och vilket innehåll som trendar just nu kan ni agera snabbt och beslutsamt för att hålla läsarna och kunderna engagerade med ert varumärke.
 
@@ -32,13 +36,13 @@ Om du vill kontrollera vilket element som klickas mest i Live-läge:
 
 ## Datalatens som ett resultat av A4T-konfiguration
 
-När [A4T-integreringen](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
+När [A4T-integreringen](https://docs.adobe.com/content/help/sv-SE/target/using/integrate/a4t/a4t.html) har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
 
-Ökningen återspeglas i alla Adobe Analytics-tjänster och -verktyg, inklusive liveströmmen och realtidsrapporter, och gäller i följande scenarier:
+Ökningen återspeglas i alla Adobe Analytics tjänster och verktyg, inklusive liveströmmen och realtidsrapporter, och gäller i följande scenarier:
 
 * För liveströmmar, realtidsrapporter och API-begäranden samt aktuella data för trafikvariabler fördröjs bara träffar med ett extra data-ID.
 * För aktuella data om konverteringsmått, slutförda data och dataflöden fördröjs alla träffar ytterligare 5-7 minuter.
 
-Tänk på att latensökningen börjar efter att du har implementerat [identitetstjänsten](https://docs.adobe.com/content/help/en/id-service/using/home.html), även om du inte har implementerat den här integreringen fullständigt.
+Tänk på att latensökningen börjar efter att du har implementerat [identitetstjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html), även om du inte har implementerat den här integreringen fullständigt.
 
 Mer information [här](/help/analyze/activity-map/activitymap-standard-live.md).
