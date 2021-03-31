@@ -1,12 +1,13 @@
 ---
 description: Du kan schemalägga rapporter som ska skickas enligt den tid och det filformat som du anger.
 title: Schemalägg en databegäran
-topic: Report builder
 uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -18,35 +19,35 @@ Du kan schemalägga arbetsböcker, ange avancerade leveransalternativ, ange mott
 
 Du kan till exempel schemalägga att arbetsböcker ska levereras omedelbart eller enligt ett återkommande schema, och ange filformatet i [!DNL Advanced Delivery Options]. Filstorleksgränsen är 5 MB för överföring av arbetsbok.
 
-När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa och redigera schemat i **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**. (Se [Rapportera schema och distribution](/help/analyze/reports-analytics/scheduling.md) i Rapporter och Analytics-hjälp.)
+När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa och redigera schemat i **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**. (Se [Rapportera schema och distribution](/help/analyze/reports-analytics/scheduling.md) i Hjälp för Rapporter och analyser.)
 
 >[!NOTE]
 >
->Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst 10 schemalagda arbetsböcker per Report Builder-licens. Du kan dock öka antalet genom att subtrahera från andra licenser. Det gör du genom att gå till **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Report Builder Reports]**. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
+>Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst 10 schemalagda arbetsböcker per licens för Report Builder. Du kan dock öka antalet genom att subtrahera från andra licenser. Om du vill göra det går du till **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Report Builder Reports]**. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
 
 >[!NOTE]
 >
 >&quot;Leveranstid&quot;/&quot;Dagtid&quot; som anges av användaren anger den tid som arbetsboken ska påbörja bearbetningen, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som arbetsboken levereras baseras främst på hur lång tid det tar att bearbeta (komplexa och stora arbetsböcker tar längre tid att bearbeta än enklare arbetsböcker). Om en arbetsbok t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
 >Det finns dessutom ett antal andra faktorer som kan öka fördröjningen innan arbetsboken levereras ytterligare:
 >
-> * **Om du kör många olika scheman av samma typ samtidigt** kan systemet överbelastas. Schemaläggningssystemet tillåter endast ett fåtal (5-10) arbetsböcker av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra arbetsböcker är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags arbetsböcker vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
-> * Förutom den specifika arbetsbokstypen väntar arbetsböcker också i rad om företaget har **mer än 15-20 arbetsbokstyper som schemalagts samtidigt (för alla olika arbetsbokstyper)**. Detta kan minskas genom att tidsintervallen ökas i stället för att många körs exakt samtidigt.
-> * **Problem i underordnade tjänster** som Schemaläggaren förlitar sig på kan också påverka leveransen av arbetsböcker. Om du t.ex. använder API:erna separat för att köra arbetsböcker och fylla i API-begärandekön kan dina schemalagda arbetsböcker leverera långsamt medan du konkurrerar om den resursen.
-> * **Rapporteringssvitens fördröjning** (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda arbetsböcker.
+> * **Om du kör många olika scheman av samma typ samtidigt** kan systemet överbelastas. Schemaläggningssystemet tillåter endast ett fåtal (5-10) arbetsböcker av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta på att andra arbetsböcker ska avslutas innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags arbetsböcker vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
+> * Förutom den specifika arbetsbokstypen väntar arbetsböckerna också i rad om företaget har **mer än 15-20 av någon typ av arbetsbok som schemaläggs samtidigt (för alla olika arbetsbokstyper)**. Detta kan minskas genom att tidsintervallen ökas i stället för att många körs exakt samtidigt.
+> * **Problem i underordnade** tjänster som Schemaläggaren förlitar sig på kan också påverka leveransen av arbetsböcker. Om du t.ex. använder API:erna separat för att köra arbetsböcker och fylla i API-begärandekön kan dina schemalagda arbetsböcker leverera långsamt medan du konkurrerar om den resursen.
+> * **Rapporteringssvitens fördröjning**  (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda arbetsböcker.
 
 
 ## Schemalägga en arbetsbok
 
 1. Generera och spara en arbetsbok.
-1. Klicka på i verktygsfältet Report Builder **[!UICONTROL Schedule]**.
+1. Klicka på **[!UICONTROL Schedule]** i verktygsfältet Report Builder.
 
-   På [!UICONTROL Scheduled Reports] fliken visas en sammanfattning av alla uppgifter du har skapat samt antalet återstående uppgifter.
-1. On the **[!UICONTROL Scheduled Reports]** tab, click **[!UICONTROL New]**.
+   Fliken [!UICONTROL Scheduled Reports] sammanfattar alla uppgifter du har skapat samt antalet återstående uppgifter.
+1. Klicka på **[!UICONTROL New]** på fliken **[!UICONTROL Scheduled Reports]**.
 1. Guiden Basic Scheduling visar:
 
    ![](assets/simple-schedule-wizard.png)
 
-1. I [!UICONTROL Basic Scheduling Wizard]konfigurerar du följande alternativ:
+1. Konfigurera följande alternativ i [!UICONTROL Basic Scheduling Wizard]:
 
 | Fält | Beskrivning |
 |--- |--- |
@@ -56,13 +57,13 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 | Till | Visar adressboken i Outlook, om tillämpligt. |
 | Skicka till: E-post | E-postmottagaren för arbetsboken. |
 | Skicka till: Publiceringslista | Visar en lista över tillgängliga distributionslistor för det här företaget. |
-| Power BI | Mer information finns i [Publicera arbetsbok till Microsoft Power BI](/help/analyze/report-builder/c-publish-power-bi/integration-power-bi.md) . |
+| Power BI | Mer information finns i [Publicera arbetsbok på Microsoft Power BI](/help/analyze/report-builder/c-publish-power-bi/integration-power-bi.md). |
 | Ämne | En användardefinierad beskrivning. |
 | Schemaläggning | Här kan du ange när arbetsboken ska skickas. (Omedelbart, varje timme, varje dag, varje vecka, varje månad och varje år.) |
 
 ## Avancerade leveransalternativ
 
-1. Klicka **[!UICONTROL Advanced Delivery Options]** för att konfigurera fil- och publiceringsalternativ:
+1. Klicka på **[!UICONTROL Advanced Delivery Options]** för att konfigurera fil- och publiceringsalternativ:
 
 | Fält | Beskrivning |
 |--- |--- |
@@ -74,12 +75,12 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 | Filformat | Gör att du kan välja ett leveransformat för Excel 2007 (.xlsx) eller 2003 (.xls), .pdf, .csv, .mht, .txt och .xml. |
 | Filmål | Anger e-post eller FTP. Alternativen på sidan ändras beroende på vad du väljer. För FTP måste du se till att värden är tillgänglig externt. |
 | Publiceringslista | Om du skickar den schemalagda arbetsboken till flera publiceringslistor körs arbetsboken en gång för varje lista. Variabla rapportsviter ersätts med rapportsviten som tilldelats publiceringslistan. |
-| Språk för filinnehåll | Anger det språk som du vill använda för omslagsbrevet. Du kan välja kinesiska (förenklad eller traditionell), tyska, franska, japanska, koreanska, portugisiska (Brasilien) eller spanska. |
+| Språk för filinnehåll | Anger vilket språk du vill använda för omslagsbrevet. Du kan välja kinesiska (förenklad eller traditionell), tyska, franska, japanska, koreanska, portugisiska (Brasilien) eller spanska. |
 | **Fliken Publiceringsalternativ** |  |
-| Publicera till Power BI | <ul><li>Publicera arbetsbok till Power BI</li><li>Publicera alla Report Builder-begäranden som Power BI-datauppsättningar</li><li>Publicera alla formaterade tabeller som Power BI-datauppsättningar</li></ul> |
-| Ange den här Power BI-rapporten som | Etikettinformation |
+| Publicera på Power BI | <ul><li>Publicera arbetsbok till Power BI</li><li>Publicera alla Report Builder-begäranden som Power BI-datauppsättningar</li><li>Publicera alla formaterade tabeller som Power BI-datauppsättningar</li></ul> |
+| Ange etiketten för den här Power BIET som | Etikettinformation |
 
-1. Klicka **[!UICONTROL OK]** och sedan på **[!UICONTROL Exit]**.
+1. Klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Exit]**.
 
-   Report Builder visar den schemalagda arbetsboken i [Schemalagd Task Manager](/help/analyze/report-builder/r-arb-scheduled-reports.md).
+   Report Builder visar den schemalagda arbetsboken i [Schemalagd aktivitetshanterare](/help/analyze/report-builder/r-arb-scheduled-reports.md).
 
