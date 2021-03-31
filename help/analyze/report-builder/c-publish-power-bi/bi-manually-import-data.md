@@ -1,19 +1,24 @@
 ---
-description: Om du vill importera Analytics-data manuellt via Power BI följer du dessa anvisningar.
+description: Följ dessa anvisningar om du vill importera Analytics-data manuellt via Power BI.
 title: Importera data manuellt till Power BI
 uuid: c84f7a90-7b40-4065-9fe7-5eb19e5e2473
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '77'
+ht-degree: 18%
 
 ---
 
 
 # Importera data manuellt till Power BI
 
-Om du vill importera Analytics-data manuellt via Power BI följer du dessa anvisningar.
+Följ dessa anvisningar om du vill importera Analytics-data manuellt via Power BI.
 
-1. I Power BI klickar du **[!UICONTROL Get Data]** i den nedre vänstra skärmen.
-1. Klicka på under **[!UICONTROL Import or Connect to Data]** > **[!UICONTROL Files]**. **[!UICONTROL Get]**.
+1. Klicka på **[!UICONTROL Get Data]** i det nedre vänstra Power BIET.
+1. Klicka på **[!UICONTROL Get]** under **[!UICONTROL Import or Connect to Data]** > **[!UICONTROL Files]**.
 
    ![](assets/get-data.png)
 
@@ -22,7 +27,7 @@ Om du vill importera Analytics-data manuellt via Power BI följer du dessa anvis
    ![](assets/local-file.png)
 
 1. Välj vilken fil som ska överföras och klicka på **[!UICONTROL Open]**.
-1. Klicka **[!UICONTROL Upload]** under **[!UICONTROL Upload your Excel file to Power BI]**.
+1. Klicka på **[!UICONTROL Upload]** under **[!UICONTROL Upload your Excel file to Power BI]**.
 
    ![](assets/upload-excel-file.png)
 
