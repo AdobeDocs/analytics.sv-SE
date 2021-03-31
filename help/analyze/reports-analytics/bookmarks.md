@@ -1,18 +1,22 @@
 ---
-description: Bokmärken ger dig tillgång till de rapporter du använder mest. Bokmärkena som du skapar läggs till i Experience Cloud och är tillgängliga i integrerade funktioner som dataanslutningar.
+description: Bokmärken ger dig tillgång till de rapporter du använder mest. Bokmärkena som du skapar läggs till i Experience Cloud och finns i integrerade funktioner som dataanslutningar.
 subtopic: Bookmarks
-title: Bokmärkeshanteraren
-topic: Reports and analytics
+title: Bokmärkeshanterare
 uuid: 7a1287da-8a39-4dad-90b0-f311b5e83722
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 2%
 
 ---
 
 
-# Bokmärkeshanteraren
+# Bokmärkeshanterare
 
-Bokmärken ger dig tillgång till de rapporter du använder mest. Bokmärkena som du skapar läggs till i Experience Cloud och är tillgängliga i integrerade funktioner som dataanslutningar.
+Bokmärken ger dig tillgång till de rapporter du använder mest. Bokmärkena som du skapar läggs till i Experience Cloud och finns i integrerade funktioner som dataanslutningar.
 
 ## Skapa ett bokmärke {#task_305BDB470E374026AD48F19D11A387A6}
 
@@ -27,10 +31,10 @@ t_bookmarks_creating.xml
 1. Kör en rapport och klicka sedan på **[!UICONTROL Bookmark.]**.
 
        |Namn|Ett användarvänligt namn för det här bokmärket.|
-    |—|—|
-    |Lägg till i|Anger i vilken mapp du vill placera bokmärket.|
-    |Gör offentlig| Gör det här bokmärket tillgängligt för användare som har tillgång till rapportsviten.|
-    |Visa rapport vid inloggning| Visar rapporten när du loggar in.|
+       |—|—|
+       |Lägg till i|Anger i vilken mapp du vill placera bokmärket.|
+       |Gör offentlig| Gör det här bokmärket tillgängligt för användare med åtkomst till rapportsviten.|
+       |Visa rapport vid inloggning| Visar rapporten när du loggar in.|
    
 ## Hantera bokmärken {#task_1EE793CB52EA467787817BBD98DEF150}
 
@@ -68,7 +72,7 @@ t_bookmarks_managing.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p><img placement="inline"  src="assets/icon_edit_VideoSharing.png" id="image_5B8C0321ED5848ECBE3AF65514AD9A44"> </img> </p> </td> 
-   <td colname="col2"> <p> Här kan du redigera ett bokmärke. Du kan byta namn på bokmärket och ange i vilken bokmärkesmapp du vill att rapporten ska visas. Du kan också ange om du vill att bokmärket ska visas vid inloggningen. </p> </td> 
+   <td colname="col2"> <p> Här kan du redigera ett bokmärke. Du kan byta namn på bokmärket och ange i vilken bokmärkesmapp du vill att rapporten ska visas. Du kan också ange om du vill att bokmärket ska visas vid inloggning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><img placement="inline"  src="assets/icon_delete_VideoSharing.png" id="image_945A859920C44BC08825CC062C10543A"> </img> </p> </td> 
@@ -93,11 +97,11 @@ t_bookmarks_managing.xml
  <tbody> 
   <tr> 
    <td colname="col1"> Gör offentlig </td> 
-   <td colname="col2"> <p>Anger att bokmärket är offentligt. De här bokmärkena visas som delade bokmärken i <span class="wintitle"> allmänna bokmärken</span>. </p> </td> 
+   <td colname="col2"> <p>Anger att bokmärket är offentligt. Dessa bokmärken visas som ett delat bokmärke i <span class="wintitle"> allmänna bokmärken</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Copy Me </td> 
-   <td colname="col2"> <p>Skapar en kopia av bokmärkena och placerar dem i en standardmapp i kolumnen <span class="uicontrol"> Bokmärken</span> . </p> </td> 
+   <td colname="col2"> <p>Skapar en kopia av bokmärkena och placerar dem i en standardmapp i kolumnen <span class="uicontrol"> Bokmärken</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> På menyn </td> 
