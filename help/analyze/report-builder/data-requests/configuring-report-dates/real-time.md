@@ -1,13 +1,14 @@
 ---
 description: Visar webbsidans trafik och rangordnar sidvyerna i realtid, så att du snabbare kan förstå vad som är trender på webbplatsen.
 title: Realtidsrapporter
-topic: Report builder
 uuid: eb39b4a5-fb6f-476d-9383-e5323afcc51d
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 2%
+source-wordcount: '266'
+ht-degree: 3%
 
 ---
 
@@ -25,8 +26,8 @@ Ni kan:
 * Använd en anpassad händelse, varukorshändelse eller instans.
 * Visa upp till 20 timmars historik och realtidsdata.
 
-I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter aktiveras i [administratörsverktygen](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
+I realtid respekteras behörigheter för användare och grupper. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata. eVars (konverteringsmått) stöds inte. Realtidsbehörigheter är aktiverade i [Admin Tools](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
 
 >[!NOTE]
 >
->[!UICONTROL Real-Time Reports] är inte samma sak som funktionen [Inkludera aktuella data](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/options.html) (datagenstid) som lanserades tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan de är klara.
+>[!UICONTROL Real-Time Reports] är inte samma sak som funktionen  [Inkludera aktuella data](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/options.html)  (datagenstid) som lanserades tidigare, vilket reducerade fördröjningen för standardrapportering genom att visa data innan de är klara.
