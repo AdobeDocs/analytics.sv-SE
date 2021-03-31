@@ -2,12 +2,13 @@
 description: Använd varningar i Rapporter och analyser.
 subtopic: Alerts
 title: Larm
-topic: Rapporter och analyser
 uuid: e1333a9b-eba0-45b7-b7e6-46e06190db64
+feature: Larm
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '879'
 ht-degree: 6%
 
 ---
