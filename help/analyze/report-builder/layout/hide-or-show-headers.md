@@ -1,19 +1,23 @@
 ---
 description: I den här proceduren beskrivs hur du döljer eller visar rubriker.
-title: Dölj eller visa rubriker
-topic: Report builder
+title: Dölj eller visa sidhuvuden
 uuid: ab0ef56f-3531-48fb-9456-1220718d59c5
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '39'
+ht-degree: 25%
 
 ---
 
 
-# Dölj eller visa rubriker
+# Dölj eller visa sidhuvuden
 
 I den här proceduren beskrivs hur du döljer eller visar rubriker.
 
-Klicka **[!UICONTROL Hide/Show]** i [!UICONTROL Pivot Layout] eller [!UICONTROL Custom Layout] i utdata på [!UICONTROL Request Wizard: Step 2] formuläret.
+Klicka på **[!UICONTROL Hide/Show]** i [!UICONTROL Pivot Layout]- eller [!UICONTROL Custom Layout]-utdata i [!UICONTROL Request Wizard: Step 2]-formuläret.
 
 ![](assets/hide_show_header.png)
 
