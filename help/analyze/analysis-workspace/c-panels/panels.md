@@ -1,10 +1,12 @@
 ---
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
+feature: Paneler
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 272c50040a009d2b69885924e7b1f402636e8889
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '984'
 ht-degree: 2%
 
 ---
