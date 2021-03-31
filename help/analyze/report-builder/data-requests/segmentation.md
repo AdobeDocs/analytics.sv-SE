@@ -1,12 +1,13 @@
 ---
 description: Så här lägger du till, redigerar, tillämpar och filtrerar Adobe Analytics-segment i Report Builder.
 title: Hantera segment
-topic: Report builder
 uuid: 4e4edc39-ed93-498f-913d-7b231b10e7a0
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '899'
 ht-degree: 3%
 
 ---
