@@ -1,10 +1,14 @@
 ---
 description: På fliken Sidinformation visas sidrapporten som en tabell och sidflödesrapporten visas som en rosettrapport (fjäril).
 title: Sidinformation
-topic: Activity map
 uuid: f527b454-7920-4907-869b-4e1d9ab2c606
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
@@ -34,5 +38,5 @@ Sidflödesrapporten är bara tillgänglig i standardläge.
 | Externa referenter | URL för andra webbplatser som refererar till den aktuella sidan. |
 | Föregående sidor | Namnger den interna sidan i rapportsviten före den aktuella sidan. |
 | Nästa sidor | Sidan som besöks efter att den aktuella sidan har lämnat den. |
-| Platsen avslutas | Nummer som har lämnat webbplatsen helt efter att sidan har visats. |
+| Platsen avslutas | Nummer som har lämnat webbplatsen helt efter att ha visat sidan. |
 
