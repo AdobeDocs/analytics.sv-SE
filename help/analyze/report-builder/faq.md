@@ -1,10 +1,12 @@
 ---
 title: Vanliga frågor om Report Builder
 description: Frågor och svar om Report Builder.
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 47b14bde1bb1217bcb172c6d4f01d68f917d44db
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -14,15 +16,15 @@ ht-degree: 0%
 
 Frågor och svar om Report Builder.
 
-## Kan jag använda funktionen `TODAY()` eller `DATERANGE()` funktionen i arbetsböcker?
+## Kan jag använda funktionen `TODAY()` eller `DATERANGE()` i arbetsböcker?
 
-Funktionen [`TODAY()`](https://support.microsoft.com/en-us/office/today-function-5eb3078d-a82c-4736-8930-2f51a028fdd9) i Excel returnerar den aktuella dagen. Funktionen [`DATEVALUE()`](https://support.microsoft.com/en-us/office/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252) konverterar en datumsträng till ett serievärde. Även om det är praktiskt för många funktioner i Excel rekommenderar Adobe starkt att du inte använder dessa funktioner som en del av den schemalagda begäran från Report Builder. Adobe kundtjänst stöder inte felsökningsförfrågningar med någon av dessa funktioner.
+Funktionen [`TODAY()` i Excel returnerar den aktuella dagen. ](https://support.microsoft.com/en-us/office/today-function-5eb3078d-a82c-4736-8930-2f51a028fdd9) Funktionen [`DATEVALUE()`](https://support.microsoft.com/en-us/office/datevalue-function-df8b07d4-7761-4a93-bc33-b7471bbff252) konverterar en datumsträng till ett serievärde. Även om det är praktiskt för många funktioner i Excel rekommenderar Adobe starkt att du inte använder dessa funktioner som en del av den schemalagda begäran från Report Builder. Adobe kundtjänst stöder inte felsökningsförfrågningar med någon av dessa funktioner.
 
-Schemalagda rapporter bearbetas på servrar som troligen inte delar tidszoner som rapportsviten. Den `TODAY()` användare som förväntas och den bearbetningsserver som `TODAY()` används kan ofta vara annorlunda. Det datum som används baseras dessutom på när bearbetningen startar. Om många rapporter körs samtidigt kan datumet ändras mellan den tidpunkt då det begärs och den tidpunkt då bearbetningen startar på grund av förseningar. Problemet uppstår om den schemalagda tiden är nära midnatt.
+Schemalagda rapporter bearbetas på servrar som troligen inte delar tidszoner som rapportsviten. Den `TODAY()` som en användare förväntar sig och den `TODAY()` som bearbetningsservern använder kan ofta vara annorlunda. Det datum som används baseras dessutom på när bearbetningen startar. Om många rapporter körs samtidigt kan datumet ändras mellan den tidpunkt då det begärs och den tidpunkt då bearbetningen startar på grund av förseningar. Problemet uppstår om den schemalagda tiden är nära midnatt.
 
-Schemalagda rapporter bearbetas även på servrar som troligtvis inte har samma datumsyntax. Du kan till exempel `7/1/YYYY` hänvisa till 1 juli eller 7 januari beroende på ditt land eller din region. Om du använder `DATEVALUE()` funktionen på det här datumet kan serievärdena variera beroende på vilken dator som kör den.
+Schemalagda rapporter bearbetas även på servrar som troligtvis inte har samma datumsyntax. `7/1/YYYY` kan t.ex. hänvisa till 1 juli eller 7 januari beroende på ditt land eller din region. Om du använder funktionen `DATEVALUE()` på det här datumet kan serievärdena variera beroende på vilken dator som kör den.
 
-Som ett alternativ till att använda dessa Excel-funktioner rekommenderar Adobe att du använder datumintervall i Report Builder-begäranden. På den första sidan i begärandeguiden väljer du **[!UICONTROL Preset Dates]** i listrutan och sedan väljer du **[!UICONTROL Today]** eller ett annat datumintervall under Vanligt använda datum. Den här inställningen används vid körningen av rapportsviten och inte vid tidpunkten för serverbearbetningen av begäran.
+Som ett alternativ till att använda dessa Excel-funktioner rekommenderar Adobe att du använder datumintervall i Report Builder-begäranden. Välj **[!UICONTROL Preset Dates]** i listrutan på den första sidan i begärandeguiden och välj sedan **[!UICONTROL Today]** eller ett annat önskat datumintervall under Vanligt använda datum. Den här inställningen används vid körningen av rapportsviten och inte vid tidpunkten för serverbearbetningen av begäran.
 
 ## Hur stora och komplexa kan jag göra mina arbetsböcker?
 
