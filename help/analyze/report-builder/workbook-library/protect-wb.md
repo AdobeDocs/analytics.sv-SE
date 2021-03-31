@@ -1,12 +1,13 @@
 ---
 description: Du kan skydda alla begäranden i en arbetsbok mot att lägga till och redigera begäranden genom att låsa arbetsboken. Detta gör att arbetsböcker kan redigeras offline genom att alla rapportförfrågningar pausas för effektivare redigering.
 title: Låsa/låsa upp arbetsböcker
-topic: Report builder
 uuid: ef5c276c-5f74-4741-b6fa-4c79eda29f62
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '466'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ Du kan skydda alla begäranden i en arbetsbok mot att lägga till och redigera b
 
 Om du låser en arbetsbok som analytiker kan du skydda din arbetsbok mot obehörig åtkomst från andra användare i organisationen. Samtidigt kan dessa användare fortfarande uppdatera förfrågningarna i arbetsboken.
 
-Om du vill skydda en arbetsbok mot redigering klickar du **[!UICONTROL Locked]** på verktygsfältet i Report Builder ( ![](assets/locked_icon.png)
+Om du vill skydda en arbetsbok mot redigering klickar du på **[!UICONTROL Locked]** i verktygsfältet Report Builder ( ![](assets/locked_icon.png)
 
 ).
 
@@ -44,7 +45,7 @@ När en arbetsbok är låst för redigering av begäranden,
 * Användarna kan uppdatera begäranden, antingen individuellt eller som en del av en grupp.
 * Om indatavärden från celler (datumintervall, segment, filter) används i begäran, kan användarna ändra dessa värden i cellerna och därmed redigera förfrågningarna indirekt genom att uppdatera dem.
 
-Om du försöker redigera en skyddad arbetsbok (via snabbmenyn, eller **[!UICONTROL Request Manager]**, eller **[!UICONTROL Edit Multiple Requests]**) kanske du inte kan göra det:
+Om du försöker redigera en skyddad arbetsbok (via snabbmenyn, **[!UICONTROL Request Manager]** eller **[!UICONTROL Edit Multiple Requests]**) kan du göra det eller inte:
 
 * Om du inte har behörighet att låsa upp begäranden visas följande uppmaning:
 
