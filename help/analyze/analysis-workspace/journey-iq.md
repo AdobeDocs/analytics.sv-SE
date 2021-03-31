@@ -1,10 +1,12 @@
 ---
 title: Resa-IQ
 description: Förstå de funktioner som Journey IQ består av, en uppsättning funktioner som ingår i Adobe Analytics.
+feature: AI-verktyg
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 4a987a16be74e3a990294664179778fd2e9fcea7
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -18,8 +20,8 @@ Resans-IQ är en uppsättning funktioner som ger lättanvända, helt anpassnings
 
 Resans IQ omfattar följande:
 
-* [Kohortanalys:](visualizations/cohort-table/cohort-analysis.md) Visualisera kundlojalitet och kundengagemang för att förstå vad som händer.
+* [Kohortanalys:](visualizations/cohort-table/cohort-analysis.md) Visualisera kundlojalitet och kundernas engagemang för att förstå var förändringar sker.
 * [Sammanhangsberoende sessioner:](../../components/vrs/vrs-report-time-processing.md) Ändra definitionen för ett besök, inklusive när ett besök tar slut och förhindra bakgrundstötar från att starta ett nytt besök. Använder en funktion som kallas rapporttidsbearbetning, som ingår i virtuella rapportsviter.
-* [Flödesanalys:](visualizations/c-flow/flow.md) Förstå var användarna navigerar härnäst och var de kommer ifrån.
-* [Bortfallsanalys:](visualizations/fallout/fallout-flow.md) Fånga när en kund tappar engagemanget och förstå vart han/hon ska gå.
-* [Analytics för olika enheter:](../../components/cda/overview.md) Samla smidigt beteenden från olika enheter för att bättre förstå vilka beröringspunkter varje enhet får.
+* [Flödesanalys:](visualizations/c-flow/flow.md) Förstå var användarna navigerar och varifrån de kommer.
+* [Bortfallsanalys:](visualizations/fallout/fallout-flow.md) Fånga när en kund tappar kontakten och förstå vart den ska gå.
+* [Enhetsövergripande analys:](../../components/cda/overview.md) Samla smidigt beteenden från flera enheter för att bättre förstå vilka beröringspunkter varje enhet får.
