@@ -1,12 +1,14 @@
 ---
 description: Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace.
-keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
+keywords: utfall och segmentering;segment i utfallsanalys;jämför segment i utfall
 title: Använda segment i utfallsanalys
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '404'
 ht-degree: 2%
 
 ---
@@ -38,7 +40,7 @@ Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och
 
    Du kan nu använda det här segmentet i vilken rapport som helst.
 
-## Lägga till ett segment som kontaktyta {#section_17611C1A07444BE891DC21EE8FC03EFC}
+## Lägg till ett segment som kontaktyta {#section_17611C1A07444BE891DC21EE8FC03EFC}
 
 Om du till exempel vill se hur användarna i USA trendar och påverkar utfallet drar du bara segmentet för användare i USA till utfallet:
 
@@ -50,7 +52,7 @@ Du kan också skapa en OCH-kontaktyta genom att dra användarsegmentet i USA til
 
 Du kan jämföra ett obegränsat antal segment i utfallsvisualiseringen.
 
-1. Markera de segment som du vill jämföra från [!UICONTROL Segments] listen till vänster. I vårt exempel har vi valt två segment: Användare i USA och användare utanför USA.
+1. Markera de segment som du vill jämföra från [!UICONTROL Segments]-listen till vänster. I vårt exempel har vi valt två segment: Användare i USA och användare utanför USA.
 1. Dra dem till segmentsläppzonen längst upp.
 
    ![](assets/segment-drop.png)
