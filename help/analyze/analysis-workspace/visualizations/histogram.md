@@ -2,10 +2,12 @@
 description: Ett histogram är en ny visualiseringstyp i Analysis Workspace.
 title: Histogram
 uuid: 8a6bd2c4-da15-4f64-b889-ab9add685046
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 3%
 
 ---
@@ -13,13 +15,13 @@ ht-degree: 3%
 
 # Histogram
 
-Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Analytics automatiserar numreringen i intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
+Ett histogram liknar ett stapeldiagram, men det grupperar nummer i intervall (intervall). Analytics automatiserar&quot;paketeringen&quot; av tal i intervall, men du kan ändra inställningarna i [Avancerade inställningar](#section_09D774C584864D4CA6B5672DC2927477).
 
 ## Skapa ett histogram {#section_74647707CC984A1CB6D3097F43A30B45}
 
 Så här skapar du ett histogram:
 
-1. Klicka **[!UICONTROL Visualizations]** i den vänstra listen.
+1. Klicka på **[!UICONTROL Visualizations]** i den vänstra listen.
 1. Dra **[!UICONTROL Histogram]** till panelen.
 1. Välj ett mått som du vill dra till histogramvisualiseringen och klicka på **[!UICONTROL Build]**.
 
@@ -42,7 +44,7 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 | Startar Bucket | Anger vilken bucket histogrammet börjar med. &quot;1&quot; är standardvärdet. Du kan ange startnummer från 0 till oändlighet (inga negativa tal). |
 | Mätbuffertar | Gör att du kan öka/minska antalet dataintervall (bucket). Det högsta antalet bucklor är 50. |
 | Storlek på mätpyts | Gör att du kan ange storleken för varje bucket. Du kan till exempel ändra bucketstorleken från en sidvy till två sidvyer. |
-| Inventeringsmetod | Här kan du välja mellan [besökare](/help/components/metrics/unique-visitors.md), [besök](/help/components/metrics/visits.md)eller [träff](/help/components/dimensions/hit-type.md). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
+| Inventeringsmetod | Här kan du välja mellan [Besökare](/help/components/metrics/unique-visitors.md), [Besök](/help/components/metrics/visits.md) eller [Träfftyp](/help/components/dimensions/hit-type.md). Exempel: sidvisningar per besök eller sidvisningar per besökare eller sidvisningar per träff. För Träff används&quot;Förekomster&quot; som y-axelmått i en friformstabell. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -53,7 +55,7 @@ Om du vill justera histograminställningarna klickar du på inställningsikonen 
 
 ## Visa och redigera histogramdata {#section_B2CD7CDF0F6B432F928103AE7AAA3617}
 
-Om du vill visa eller ändra datakällan för histogramdiagrammet klickar du på punkten bredvid histogramhuvudet för att gå till **[!UICONTROL Data Source Settings]** > **[!UICONTROL Show Data Source]**.
+Om du vill visa eller ändra datakällan för histogramdiagrammet klickar du på punkten bredvid histogramhuvudet och går till **[!UICONTROL Data Source Settings]** > **[!UICONTROL Show Data Source]**.
 
 ![](assets/manage-data-source.png)
 
@@ -61,4 +63,4 @@ Färdiga segment som visas i tabellen är interna segment och visas inte i segme
 
 ![](assets/prebuilt_segments.png)
 
-Om du vill utforska fler sätt att hantera datatabeller i Freeform och andra visualiseringar, som att göra datauppdelningar, kan du gå [hit](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
+Om du vill utforska fler sätt att hantera frihandsdatatabeller och andra visualiseringar, till exempel att göra datauppdelningar, går du [hit](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
