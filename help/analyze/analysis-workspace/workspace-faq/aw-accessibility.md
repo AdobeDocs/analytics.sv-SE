@@ -1,10 +1,12 @@
 ---
 description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 97309a5be19912432ca75c7029999085c45ba353
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '647'
 ht-degree: 2%
 
 ---
@@ -12,7 +14,7 @@ ht-degree: 2%
 
 # Tillgänglighet i Analysis Workspace
 
-Läs om tillgänglighetsstödet i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Adobe Analytics.
+Läs om stödet för tillgänglighet i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Adobe Analytics.
 
 Med hjälpmedel avses att göra produkter användbara för personer med funktionshinder som syn-, hörsel-, kognitiv-, motor- eller andra funktionshinder. Exempel på hjälpmedelsfunktioner för programprodukter är skärmläsarstöd, textmotsvarigheter för grafik, kortkommandon, ändringar av visningsfärger till hög kontrast osv.
 
@@ -22,9 +24,9 @@ Med hjälpmedel avses att göra produkter användbara för personer med funktion
 
 Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och vänster > höger. Följande navigeringselement underlättar tillgängligheten:
 
-* Med `Tab` tangenten kan du skapa genvägar mellan större avsnitt i arbetsytan. I den vänstra listen kan du också `Tab` gå från ett dragbart alternativ till nästa.
-* Flytten `left/right arrows` mellan enskilda element efter `Tab` att det har markerats.
-* Navigerar `F6` till den första panelen i projektet och går mellan visualiseringarna på den panelen. Sedan flyttas den till nästa panel i projektet och upprepas.
+* Med `Tab`-tangenten kan du skapa genvägar mellan större avsnitt i arbetsytan. I den vänstra listen kan du också med `Tab` gå från ett dragbart alternativ till nästa.
+* `left/right arrows`-förflyttningen mellan enskilda element efter att `Tab` har markerat den.
+* `F6` navigerar till den första panelen i projektet och förflyttar sig mellan visualiseringarna på den panelen. Sedan flyttas den till nästa panel i projektet och upprepas.
 * Vi använder fokusindikatorer så att synkade tangentbordsanvändare får en tydlig indikation på vilket gränssnittselement som för närvarande är i fokus. Indikatorn är en blå ram runt det markerade elementet.
 
    ![Fokusindikator](assets/focus-indicator.png)
@@ -33,7 +35,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 
 1. Tabba tills du har nått menyraden.
 1. Använd vänster-/högerpilstangenterna för att navigera till den meny som du vill använda.
-1. Tryck för `Enter` att markera menyn och visa dess alternativ.
+1. Tryck på `Enter` för att markera menyn och visa dess alternativ.
 1. Använd upp-/nedpilarna för att navigera till det menyalternativ du vill använda.
 1. Tryck på `Enter` för att välja alternativet.
 
@@ -44,17 +46,17 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 1. Gå till en komponent i den vänstra listen.
 1. Tryck på `Enter` för att markera.
 1. Använd piltangenterna för att navigera till det område där du vill släppa komponenten.
-1. Tryck för `Enter` att montera komponenten.
+1. Placera komponenten genom att trycka på `Enter`.
 
 ### Kortkommandon (snabbtangenter)
 
-[!UICONTROL Analysis Workspace] erbjuder en mängd [kortkommandon](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
+[!UICONTROL Analysis Workspace] erbjuder en mängd  [kortkommandon ](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
 
 #### Navigering
 
 | Genväg | Åtgärd |
 |---|---|
-| Alt + Skift + 1 / 2 / 3 | Hoppa till olika skenor: [!UICONTROL Panels], [!UICONTROL Visualizations]eller [!UICONTROL Components] |
+| Alt + Skift + 1 / 2 / 3 | Hoppa till olika skenor: [!UICONTROL Panels], [!UICONTROL Visualizations] eller [!UICONTROL Components] |
 | Alt + Vänsterpil/Högerpil | Navigera mellan paneler |
 | Alt + M | Komprimera/expandera alla paneler |
 | Alt+Ctrl+M | Komprimera/expandera aktiv panel |
@@ -90,13 +92,13 @@ En skärmläsare läser upp text som visas på datorskärmen. Den läser även i
 
 [!UICONTROL Analysis Workspace] eftersträvar WCAG 2.1-överensstämmelse, inklusive krav på färgkontrast.
 
-Dessutom kan användarna välja en egen färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
+Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
 
 ## Obligatorisk fältvalidering i komponentbyggare
 
 När du skapar en komponent valideras de obligatoriska fälten när du sparar. Om ett obligatoriskt fält inte godkänns vid valideringen visas det i rött med en felikon. En skriftlig beskrivning visas av problemet som behöver åtgärdas.
 
-När en komponent har validerats helt stängs byggaren när du trycker `Save` på.
+När en komponent har validerats stängs byggaren när du trycker på `Save`.
 
 ![Felvalidering](assets/error-validation.png)
 
