@@ -1,10 +1,12 @@
 ---
 description: Inkonsekventa data kan orsaka stora problem. Lär dig hur du identifierar statistiska avvikelser med avvikelsedetekteringstekniker från Adobe. Kom igång idag.
 title: Statistiska tekniker som används för avvikelseidentifiering
+feature: AI-verktyg
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c588087b949093152435967f62e43758e9e86208
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
