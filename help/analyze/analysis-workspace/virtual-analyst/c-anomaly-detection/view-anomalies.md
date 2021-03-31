@@ -1,14 +1,19 @@
 ---
 description: Du kan visa avvikelser i en tabell eller i ett linjediagram.
-title: Visa avvikelser i analysarbetsytan
+title: Visa avvikelser i Analysis Workspace
 uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
+feature: AI-verktyg
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 4%
 
 ---
 
 
-# Visa avvikelser i analysarbetsytan
+# Visa avvikelser i Analysis Workspace
 
 Du kan visa avvikelser i en tabell eller i ett linjediagram.
 
@@ -29,7 +34,7 @@ Om du klickar på en vit punkt blir den grön och den visar dig:
 * Datumet då avvikelsen inträffade
 * avvikelsens råvärde
 * Procentvärdet över eller under det förväntade värdet, som representeras av den helgröna linjen.
-* Länken Analysera för att starta [bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md).
+* Länken Analysera startar [bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md).
 
 ![](assets/anomaly_linechart.png)
 
@@ -37,7 +42,7 @@ Om du har flera mätvärden i linjediagrammet visar vi bara avvikelserna och du 
 
 Konfidensintervallet för avvikelseidentifiering skalar inte automatiskt y-axeln i en visualisering för att göra diagrammet mer läsbart.
 
-Du kan välja att tillåta konfidensintervallet för att skala diagrammet. Klicka bara på ikonen Inställningar (kugghjulet) och markera **[!UICONTROL Allow Anomaly Detection to Scale Y Axis]**.
+Du kan välja att tillåta konfidensintervallet för att skala diagrammet. Klicka bara på inställningsikonen (kugghjulsikonen) och markera **[!UICONTROL Allow Anomaly Detection to Scale Y Axis]**.
 
 ![](assets/scale-y-axis.png)
 
