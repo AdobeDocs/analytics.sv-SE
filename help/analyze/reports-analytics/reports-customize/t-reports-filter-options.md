@@ -1,12 +1,13 @@
 ---
 description: Med filter kan du begränsa rapporten så att den omfattar eller exkluderar radobjekt som matchar ett filter.
 title: Filtrera rapportdata
-topic: Reports and analytics
 uuid: b6dcaaf7-61f0-4793-870d-e1d156575d5a
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '652'
 ht-degree: 2%
 
 ---
@@ -96,7 +97,7 @@ Matchar om hela radobjektet, inklusive blanksteg och andra tecken, matchar den a
 
 Matchar om radobjektet, inklusive blanksteg och andra tecken, börjar med den angivna frasen.
 
-Starts With: `mens`
+Börjar med: `mens`
 
 Matchar följande sidor:
 
@@ -112,7 +113,7 @@ Mens Hemp/Bamboo Flip Flops
 
 Matchar om radobjektet, inklusive blanksteg och andra tecken, slutar med den angivna frasen.
 
-Ends With: `jean`
+Slutar med: `jean`
 
 Matchar följande sidor:
 
@@ -131,11 +132,11 @@ Med Avancerat kan du utföra jokertecken och andra komplexa sökningar.
 | Avancerat (specialtecken) | Beskrivning |
 |--- |--- |
 | `" "` | Matcha exakt fras. |
-| `*` | Vildkort, girig matchning. <br>Matchar till exempel `r*p` &quot;Registrering&quot;. |
+| `*` | Vildkort, girig matchning. <br>Matchar t.ex.  `r*p`  Registrering. |
 | `^` | Börjar med. <br>Använd inte blanksteg mellan specialtecknet och sökfrasen. |
 | `$` | Slutar med. <br>Använd inte blanksteg mellan specialtecknet och sökfrasen. |
 | `-` | Nej. <br>Använd inte blanksteg mellan specialtecknet och sökfrasen. |
-| `|` | <br>OrNote:  Du måste inkludera ett mellanslag på varje sida av lodstreck `" | "`. |
+| `|` | Eller<br>Obs!  Du måste inkludera ett blanksteg på varje sida om vertikalstrecket, `" | "`. |
 
 ## Skapa rapportspecifika filter {#task_DEBB0632411D4CA8AA0B3BA267A5B35F}
 
@@ -147,16 +148,16 @@ t_reports_filter_specific.xml
 
  -->
 
-Vissa rapporter innehåller ett filter som är specifikt för den rapporten. Med en [!UICONTROL Purchase Conversion Funnel Report] kan du till exempel filtrera efter webbsidor. Med ett [!UICONTROL Geosegmentation Report] filter kan du filtrera efter geografisk region. Ytterligare rapporter har andra filter som är specifika för dessa rapporter.
+Vissa rapporter innehåller ett filter som är specifikt för den rapporten. Med [!UICONTROL Purchase Conversion Funnel Report] kan du till exempel filtrera efter webbsidor. Med [!UICONTROL Geosegmentation Report] kan du filtrera efter geografisk region. Ytterligare rapporter har andra filter som är specifika för dessa rapporter.
 
 När du använder dessa filter kan du visa rapportvärden för de objekt som anges i listan.
 
 **Skapa rapportspecifika filter**
 
 1. Generera en rapport, till exempel en [!UICONTROL Purchase Report] ( **[!UICONTROL Site Metrics]** > **[!UICONTROL Purchases]** > **[!UICONTROL Purchase Conversion Funnel]**).
-1. Klicka på **[!UICONTROL Filter]** länken i rapportrubriken.
-1. Klicka på [!UICONTROL Filter Selector] sidan **[!UICONTROL Apply a Filter]** och välj sedan en filtertyp.
-1. Om du vill söka efter ett objekt skriver du en teckensträng i **[!UICONTROL Search]** fältet.
+1. Klicka på länken **[!UICONTROL Filter]** i rapportrubriken.
+1. Klicka på **[!UICONTROL Apply a Filter]** på sidan [!UICONTROL Filter Selector] och välj sedan en filtertyp.
+1. Om du vill söka efter ett objekt skriver du en teckensträng i fältet **[!UICONTROL Search]**.
 1. Klicka på **[!UICONTROL OK]**.
 
 ## Lägg till ett korrelationsfilter {#task_065042E384DA4BF3864C58AF2B88D6E2}
@@ -169,13 +170,13 @@ t_reports_correlation_filter.xml
 
  -->
 
-I vissa rapporter kan du lägga till anpassade korrelationsfilter. Om du t.ex. visar [!UICONTROL Pages Report] en rapport för en rapportsvit som har platsavsnitt som är kopplade till en kvinnosida, kan du skapa en filterregel som genererar en rapport som visar de vanligaste sidorna när Webbplatsavsnitt = Kvinnor.
+I vissa rapporter kan du lägga till anpassade korrelationsfilter. Om du till exempel visar [!UICONTROL Pages Report] för en rapportserie som har platsavsnitt som är kopplade till en kvinnosida, kan du skapa en filterregel som genererar en rapport som visar de populäraste sidorna när Webbplatsavsnitt = Kvinnor.
 
 Du kan filtrera data som visas i en korrelationsrapport med hjälp av valfri tillgänglig korrelation. Exemplet här visar hur du lägger till ett korrelationsfilter för sökmotor.
 
 **Lägga till ett korrelationsfilter**
 
-1. Kör en rapport som stöder korrelationer. (Se [Köra en fördelningsrapport](/help/analyze/reports-analytics/reports-customize/breakdowns.md#task_F685624830E64C829C8BE6435A107F69).)
-1. Klicka på **[!UICONTROL Correlation Filter]** länken i rapportrubriken.
-1. Under [!UICONTROL Filter Rule Creator]väljer du en kategori att korrelera med en artikel.
+1. Kör en rapport som stöder korrelationer. (Se [Köra en detaljrapport](/help/analyze/reports-analytics/reports-customize/breakdowns.md#task_F685624830E64C829C8BE6435A107F69).)
+1. Klicka på länken **[!UICONTROL Correlation Filter]** i rapportrubriken.
+1. Välj en kategori som ska korreleras med ett objekt under [!UICONTROL Filter Rule Creator].
 1. Klicka på **[!UICONTROL OK.]**
