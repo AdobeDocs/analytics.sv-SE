@@ -2,10 +2,12 @@
 description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade)
 title: Linjediagram
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: ac3a859a7ee54eb772b7cd947f3cdaad861b1078
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -17,7 +19,7 @@ Radvisualiseringen representerar mätvärden som använder en rad för att visa 
 
 ![Radvisualisering](assets/line-viz.png)
 
-Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen för att komma åt [**visualiseringsinställningarna**](freeform-analysis-visualizations.md) . Inställningarna är indelade i:
+Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen för att komma åt [**Visualiseringsinställningarna**](freeform-analysis-visualizations.md) tillgängliga. Inställningarna är indelade i:
 
 * **Allmänt**: Inställningar som är gemensamma för olika visualiseringstyper
 * **Axel**: Inställningar som påverkar x- eller y-axeln i linjens visualisering
@@ -27,7 +29,7 @@ Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen f�
 
 ## Ändra granularitet
 
-Med en listruta för granularitet i [visualiseringsinställningarna](freeform-analysis-visualizations.md) kan du ändra en trendvisualisering (t.ex. rad, rad) från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen.
+Med en listruta för granularitet i [visualiseringsinställningarna](freeform-analysis-visualizations.md) kan du ändra en anpassad visualisering (t.ex. rad, bar) från dag till vecka till månad, osv. Granulariteten uppdateras också i datakälltabellen.
 
 ## Visa min eller max
 
@@ -37,7 +39,7 @@ Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!
 
 ## Visa trendlinjeövertäckning
 
-Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]** kan du välja att lägga till en regression eller en glidande medeltrendlinje i linjeserierna. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
+Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]** kan du välja att lägga till en regression eller en glidande medeltrendlinje i radserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
 
 >[!TIP]
 >
