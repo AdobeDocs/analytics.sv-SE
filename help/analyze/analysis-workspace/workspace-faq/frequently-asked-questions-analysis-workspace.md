@@ -2,12 +2,13 @@
 description: Systemkrav för Analysis Workspace.
 keywords: Analysis Workspace
 title: Administrationskrav
-topic: Rapporter och analyser
 uuid: 6c8bfeaa-0cf8-435d-a4d1-67e2cb55da4c
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 26620ed59941721d65bdf57d0971a6e02eb01648
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '150'
 ht-degree: 5%
 
 ---
