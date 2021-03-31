@@ -1,11 +1,13 @@
 ---
 description: Använd donutvisualisering i ett Workspace-projekt.
 title: Ringdiagram
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 4%
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 
