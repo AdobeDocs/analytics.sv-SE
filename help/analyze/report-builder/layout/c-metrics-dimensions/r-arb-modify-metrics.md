@@ -1,15 +1,19 @@
 ---
 description: Fältbeskrivningar för att konfigurera mått i Report Builder.
-title: Ändra mått - fältdefinitioner
-topic: Report builder
+title: Ändra mätvärden – fältdefinitioner
 uuid: 5b82f4f7-f9d2-41c3-b5cb-eefcc2c1d3a6
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 5%
 
 ---
 
 
-# Ändra mått - fältdefinitioner
+# Ändra mätvärden – fältdefinitioner
 
 Fältbeskrivningar för att konfigurera mått i Report Builder.
 
