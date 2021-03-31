@@ -1,11 +1,13 @@
 ---
 title: Handbok om Analytics-verktyg
 description: Produktdokumentation och självhjälp för Analysis Workspace, Adobe Analytics dashboards, Activity Map, Report Builder, Reporting API samt Reports & Analytics.
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 76%
+source-wordcount: '227'
+ht-degree: 74%
 
 ---
 
