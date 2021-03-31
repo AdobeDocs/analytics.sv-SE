@@ -2,13 +2,14 @@
 description: Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 keywords: Analysis Workspace
 title: Dela upp dimensioner
-topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 519cb7e83e5f49ecacc9c4bd0c12bc59088c662c
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 14%
+source-wordcount: '231'
+ht-degree: 15%
 
 ---
 
@@ -19,7 +20,7 @@ Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 
 Analysera data på obegränsade sätt efter just era behov och bygg frågor med hjälp av relevanta mätvärden, mått, segment, tidslinjer och andra analysvärden.
 
-1. [Skapa ett projekt](/help/analyze/analysis-workspace/home.md) med en datatabell.
+1. [Skapa ett ](/help/analyze/analysis-workspace/home.md) projekt med en datatabell.
 1. Högerklicka på ett radobjekt i datatabellen och välj **[!UICONTROL Breakdown]** > *`<item>`*.
 
    ![Stegresultat](assets/fa_data_table_actions.png)
@@ -30,12 +31,12 @@ Analysera data på obegränsade sätt efter just era behov och bygg frågor med 
    >
    >Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen kommer att öka för export av uppdelningar.
 
-[Lägga till Dimensioner och statistik i ditt projekt i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/metrics/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace.html) (11:39)
+[Lägga till Dimensioner och statistik i ditt projekt i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/metrics/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace.html)  (11:39)
 
-[Arbeta med Dimensioner i en frihandstabell](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table.html) (15:35)
+[Arbeta med Dimensioner i en frihandstabell](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table.html)  (15:35)
 
 ## Tillämpa attribueringsmodeller på uppdelningar
 
-Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över uppdelningsmodellen och klickar på **[!UICONTROL Edit]**:
+Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du pekaren över nedbrytningsmodellen och klickar på **[!UICONTROL Edit]**:
 
 ![Brytningsinställningar](assets/breakdown_settings.png)
