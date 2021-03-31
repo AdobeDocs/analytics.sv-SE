@@ -2,11 +2,13 @@
 description: Med dataextraheringarna kan du välja vilka parametrar du vill visa både på rapportens X- och Y-axlar samt det objekt som rapporten filtreras efter.
 subtopic: Schedule
 title: Dataextrahering
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 19c5713e7ddedd943746534878200b1339f217a2
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 3%
+source-wordcount: '139'
+ht-degree: 2%
 
 ---
 
