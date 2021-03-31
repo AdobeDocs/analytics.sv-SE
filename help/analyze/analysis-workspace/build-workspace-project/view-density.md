@@ -1,8 +1,13 @@
 ---
 description: Lär dig hur du justerar visningsdensiteten.
 title: Visa densitet
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 4%
 
 ---
 
@@ -20,6 +25,6 @@ Det finns tre alternativ när du växlar visningsdensitet med alternativknappar:
 
 Så här anger du visningsdensitet:
 
-1. Navigera till **[!UICONTROL Projects]** > **[!UICONTROL Project Info and Settings]** i Arbetsyta.
+1. Gå till **[!UICONTROL Projects]** > **[!UICONTROL Project Info and Settings]** i arbetsytan.
 
-1. Välj bland de tre alternativen ovan och klicka på **[!UICONTROL Save]**.
+1. Välj något av de tre alternativen ovan och klicka på **[!UICONTROL Save]**.
