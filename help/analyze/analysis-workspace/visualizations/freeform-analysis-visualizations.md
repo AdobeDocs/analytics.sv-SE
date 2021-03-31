@@ -2,11 +2,13 @@
 description: Visa dina data visuellt med visualiseringar.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 60aacc2d2d5f7f66c08d270a41d2f6c86ee34a6b
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 3%
+source-wordcount: '1086'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
-Du kan komma åt visualiseringar från den övre vänstra ikonen i arbetsytan, från en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html)eller från högerklicksmenyn i arbetsflödet.
+Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html) eller genom högerklicksmenyn i arbetsflödet.
 
 ![](assets/viz-rail.png)
 
@@ -26,7 +28,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Yta](/help/analyze/analysis-workspace/visualizations/area.md) | Som ett linjediagram, men med ett färgat område under linjen. Använd ett ytdiagram när du har flera mätvärden och vill visualisera området som uttrycks genom skärningspunkten för två eller flera mätvärden. |
 | [Liggande](/help/analyze/analysis-workspace/visualizations/bar.md) | Visar lodräta staplar som representerar olika värden för ett eller flera mätvärden. |
 | [Punktdiagram](/help/analyze/analysis-workspace/visualizations/bullet-graph.md) | Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål). |
-| [Kohortabell](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* is a group of people sharing common characteristics over a specified period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
+| [Kohortabell](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | En *`cohort`* är en grupp personer som delar gemensamma egenskaper under en angiven period. Kohortanalys är användbart för analys av kvarhållande, bortfall eller fördröjning. |
 | [Ringdiagram](/help/analyze/analysis-workspace/visualizations/donut.md) | På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. |
 | [Utfall](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md) | Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens. Kan anges till sekvenser av typen slutlig eller exakt |
 | [Flöde](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) | Visar exakta kundvägar via era webbplatser och appar. |
@@ -44,7 +46,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 
 ## Inställningar {#settings}
 
-Varje visualisering har sina egna inställningar som du kan hantera. Klicka på [!UICONTROL Visualization Settings]kugghjulsikonen för att komma åt [!UICONTROL Visualization Settings] den.
+Varje visualisering har sina egna inställningar som du kan hantera. Om du vill komma åt [!UICONTROL Visualization Settings] klickar du på kugghjulsikonen [!UICONTROL Visualization Settings].
 
 ![](assets/settings.png)
 
@@ -65,7 +67,7 @@ Varje visualisering har sina egna inställningar som du kan hantera. Klicka på 
 
 En visualiseringsförklaring hjälper dig att relatera datum i en källtabell till plottade serier i visualiseringen. Förklaringen är interaktiv - du kan klicka på ett förklaringsobjekt om du vill visa/dölja en serie i visualiseringen. Detta är praktiskt om du vill förenkla de data som visualiseras.
 
-Dessutom kan du byta namn på förklaringsetiketter så att det blir lättare att använda bilderna. Note: legend editing does **not** apply to: Treemap, Bullet, Summary Change/Number, Text, Freeform, Histogram, Cohort or Flow visualizations.
+Dessutom kan du byta namn på förklaringsetiketter så att det blir lättare att använda bilderna. Obs! förklaringsredigering **gäller inte** för: Treemap, Bullet, Summary Change/Number, Text, Freeform, Histogram, Kohort eller Flow-visualiseringar.
 
 Så här redigerar du en förklaringsetikett:
 
@@ -75,7 +77,7 @@ Så här redigerar du en förklaringsetikett:
    ![](assets/edit-label.png)
 
 1. Ange den nya etikettexten.
-1. Tryck för **[!UICONTROL Enter]** att spara.
+1. Tryck på **[!UICONTROL Enter]** för att spara.
 
 Här är en [länk till en video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om det här ämnet.
 
@@ -96,8 +98,8 @@ Ytterligare funktioner för en visualisering är tillgängliga genom att högerk
 | Hämta visualiseringslänk | Gör att du kan dirigera någon till en viss visualisering i ett projekt. När användaren klickar på länken måste mottagaren logga in innan den dirigeras till den exakta visualisering som är länkad till den. |
 | Börja om | (Works for Flow, Venn, Histogram) Tar bort konfigurationen för den aktuella visualiseringen så att du kan konfigurera om den från början. |
 
-## Ikonen Skapa visuell {#quick-viz}
+## Skapa visuell ikon {#quick-viz}
 
-Om du är osäker på vilken visualisering du ska välja klickar du på **[!UICONTROL Create Visual]** ikonen i valfri tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat 3 segmentrader skapas ett Venndiagram.
+Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat 3 segmentrader skapas ett Venndiagram.
 
 ![](assets/quick-viz.png)
