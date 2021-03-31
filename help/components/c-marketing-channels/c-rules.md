@@ -2,7 +2,7 @@
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 translation-type: tm+mt
-source-git-commit: 91009f0c184987726e9e7e6714f14f56ae831576
+source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
 workflow-type: tm+mt
 source-wordcount: '2091'
 ht-degree: 1%
@@ -17,16 +17,16 @@ Bearbetningsreglerna för marknadsföringskanaler avgör om en besökare når up
 ![](assets/buckets_2.png)
 
 Ytterligare information om bearbetning:
-* Data som samlas in med dessa regler är helt permanenta, och regler som ändras efter det att data har samlats in är inte retroaktiva. Vi rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar, [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
+* Data som samlas in med dessa regler är helt permanenta, och regler som ändras efter det att data har samlats in är inte retroaktiva. Vi rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
 * Rapporten kan bearbeta upp till 25 kanaler i taget.
 * Regler kan komma åt variabler som har angetts av VISTA, men de kan inte komma åt data som har tagits bort av VISTA.
 * Två marknadsföringskanaler får aldrig någon kredit för samma event (som köp eller klick). På så sätt skiljer sig marknadsföringskanalerna från eVars (där två eVars kan få krediter för samma händelse).
-* Om det finns ett luckor i reglerna kan du se [Ingen kanal identifierad.](/help/components/c-marketing-channels/c-faq.md)
+* Om det finns en lucka i reglerna kan du se [Ingen kanal identifierad.](/help/components/c-marketing-channels/c-faq.md)
 
 ## Förutsättningar
 
-* Granska konceptuell information i [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
-* Skapa en eller flera kanaler så att du kan tilldela regler till dem. Se [Lägga till marknadsföringskanaler.](/help/components/c-marketing-channels/c-channels.md)
+* Granska den konceptuella informationen i [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
+* Skapa en eller flera kanaler så att du kan tilldela regler till dem. Se [Lägg till marknadsföringskanaler.](/help/components/c-marketing-channels/c-channels.md)
 
 ## Skapa regler för bearbetning av marknadsföringskanal
 
@@ -35,19 +35,19 @@ Skapa regler för bearbetning av marknadsföringskanaler, som avgör om en besö
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 2. Välja en rapportsvit.
 
-   Om inga kanaler har definierats för rapportsviten visas [!UICONTROL Marketing Channels: Auto Setup] sidan.
+   Om din rapportserie inte har definierade kanaler visas sidan [!UICONTROL Marketing Channels: Auto Setup].
 
-   Se [Köra den automatiska installationen](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
+   Se [Kör de automatiska inställningarna](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 
 3. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Processing Rules]**. Om du har kört den automatiska konfigurationen har en uppsättning kanaler och regler definierats automatiskt åt dig.
 
    ![Stegresultat](assets/marketing_channel_rules.png)
 
-4. Om du vill lägga till en ny regel väljer du på **[!UICONTROL Add New Rule Set]** menyn. Om du väljer en kanal får du en regelmall och om du väljer Egen börjar du från en tom skiva. Med båda alternativen kan du ändra regeluppsättningen efter behov.
+4. Om du vill lägga till en ny regel väljer du den på menyn **[!UICONTROL Add New Rule Set]**. Om du väljer en kanal får du en regelmall och om du väljer Egen börjar du från en tom skiva. Med båda alternativen kan du ändra regeluppsättningen efter behov.
 
    ![Stegresultat](assets/example_email.png)
 
-5. Om du vill fortsätta skapa regler klickar du på **[!UICONTROL Add New Rule SetRule]**.
+5. Klicka på **[!UICONTROL Add New Rule SetRule]** om du vill fortsätta skapa regler.
 6. Om du vill prioritera regler drar och släpper du dem till önskad plats.
 7. Klicka på **[!UICONTROL Save.]**
 
@@ -65,7 +65,7 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 
 >[!NOTE]
 >
->Alla textfält som du definierar, till exempel frågesträngsparametrar eller listor med värden som ska matchas mot, utvärderas som **skiftlägesokänsliga** värden. Om du till exempel har en regel där frågesträngsparametern cmp = abc123, kommer alla versioner av både &#39;cmp&#39; och &#39;abc123&#39; att matcha regeln. Du behöver inte lista flera versioner av dessa värden.
+>Alla textfält som du definierar, till exempel frågesträngsparametrar eller listor med värden som ska matchas mot, utvärderas som **skiftlägesokänsliga**-värden. Om du till exempel har en regel där frågesträngsparametern cmp = abc123, kommer alla versioner av både &#39;cmp&#39; och &#39;abc123&#39; att matcha regeln. Du behöver inte lista flera versioner av dessa värden.
 
 | Term | Definition |
 |--- |--- |
@@ -83,19 +83,19 @@ Den här referenstabellen definierar de fält, alternativ och träffattribut som
 | Ignorera träffar som matchar interna URL-filter | (För referenter) Spårar bara träffar som kommer från externt refererade platser. Vanligtvis låter du den här inställningen vara aktiverad om du inte vill inkludera intern trafik. |
 | Är första sidan av besök | Den första sidan av ett besök som Adobe rapporterar. |
 | Sida | Sidnamnet på en webbsida på din webbplats som är taggad med Adobe webbfyr. Detta värde motsvarar s.pageName . Exempel är `Home Page` och `About Us`. |
-| Siddomän | Domänen för den sida som besökaren hamnar på, t.ex. `products.example.co.uk`. |
-| Siddomän och sökväg | Domänen och sökvägen, till exempel `products.example.co.uk/mens/pants/overview.html` . |
+| Siddomän | Domänen för den sida som besökaren kommer till, till exempel `products.example.co.uk`. |
+| Siddomän och sökväg | Domän och sökväg, till exempel `products.example.co.uk/mens/pants/overview.html`. |
 | Sidrotdomän (TLD+1) | Rotdomänen för den sida där besökaren pekar, till exempel example.co.uk . |
 | Sidans URL | URL-adressen till en webbsida på webbplatsen. |
-| Refererande domän | Vilken domän dina besökare kom ifrån innan de besökte din webbplats, till exempel referenter från `abcsite.com` kontra `xyzsite.com`. |
-| Frågesträngsparameter | Om en sidadress på din webbplats ser ut som `https://example.com/?page=12345&cat=1`så är både page och cat frågesträngparametrar. (Se `https://en.wikipedia.org/wiki/Query_string`.)  Du kan bara ange en frågesträngsparameter per regeluppsättning. Om du vill lägga till ytterligare frågesträngsparametrar använder du operatorn och lägger sedan till nya frågesträngsparametrar i regeln. `ANY` Frågesträngsparametrar utvärderas som skiftlägeskänsliga; &quot;cat&quot; och &quot;CAT&quot; kommer till exempel att utvärderas på samma sätt. |
+| Refererande domän | Vilken domän dina besökare kom ifrån innan de besökte din webbplats, till exempel referenter från `abcsite.com` jämfört med `xyzsite.com`. |
+| Frågesträngsparameter | Om en sidadress på din webbplats ser ut som `https://example.com/?page=12345&cat=1` är både page och cat frågesträngsparametrar. (Se `https://en.wikipedia.org/wiki/Query_string`.)  Du kan bara ange en frågesträngsparameter per regeluppsättning. Om du vill lägga till ytterligare frågesträngsparametrar använder du `ANY` som operator och lägger sedan till nya frågesträngsparametrar i regeln. Frågesträngsparametrar utvärderas som skiftlägeskänsliga; &quot;cat&quot; och &quot;CAT&quot; kommer till exempel att utvärderas på samma sätt. |
 | Referent | Webbsidans plats (fullständig URL) som besökarna var på innan de kom till webbplatsen. Det finns en referens utanför den definierade domänen. |
 | Refererande domän och sökväg | En sammanfogning av den refererande domänen och URL-sökvägen. Exempel:    `www.example.com/products/id/12345` eller `ad.example.com/foo` |
-| Refererande parameter | En frågesträngsparameter på referensens URL. Om besökarna till exempel kommer från `example.com/?page=12345&cat=1`är sidan och katten de refererande parametrarna. |
+| Refererande parameter | En frågesträngsparameter på referensens URL. Om besökarna till exempel kommer från `example.com/?page=12345&cat=1` är sidan och katten de refererande parametrarna. |
 | Refererande rotdomän | Referensens rotdomän. Det finns en referent utanför den definierade domänen. |
 | Sökmotor | En sökmotor som Google eller Yahoo! som förde besökare till er webbplats. |
 | Sökord | Ett ord som används för att utföra en sökning med en sökmotor. |
-| Sökmotor + nyckelord | En sammanfogning av söknyckelordet och sökmotorn för att unikt identifiera sökmotorn. Om du till exempel söker efter ordet dator identifieras sökmotorn och nyckelordet enligt följande: `Search Tracking Code = "<search_type>:<search engine>:<search keyword>" where    search_type = "n" or "p", search_engine = "Google", and search_keyword = "computer"`**Obs!** n = naturlig; p = Betalad |
+| Sökmotor + nyckelord | En sammanfogning av söknyckelordet och sökmotorn för att unikt identifiera sökmotorn. Om du till exempel söker efter ordet dator identifieras sökmotorn och nyckelordet enligt följande: `Search Tracking Code = "<search_type>:<search engine>:<search keyword>" where    search_type = "n" or "p", search_engine = "Google", and search_keyword = "computer"`**Obs!** n = naturligt; p = Betalad |
 | Ange kanalens värde till | Förutom att ni vet vilken marknadsföringskanal som för besökaren till er webbplats vet ni vilken banderollannons, söknyckelord eller e-postkampanj i kanalen som får tillgodoräkna er för besökarens webbplatsaktivitet. Detta ID är ett kanalvärde som lagras tillsammans med kanalen. Detta värde är ofta ett kampanj-ID som är inbäddat på landningssidan eller den refererande URL:en. i andra fall är det sökmotorn och nyckelordskombinationen för sökning, eller den refererande URL:en som identifierar besökaren från en viss kanal bäst. |
 
 ## Regelordning och definitioner för marknadsföringskanal {#channel-rules}
@@ -110,9 +110,9 @@ Betalsökning är ett ord eller en fras som du betalar en sökmotor för placeri
 
 #### Betald sökdetektering
 
-Marknadskanalen använder inställningar som är konfigurerade på [!UICONTROL Paid Search Detection] sidan för att matcha regler för betald sökningsidentifiering. ( **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Paid Search Detection]**). Mål-URL:en matchar den befintliga regeln för avkänning av betald sökning för den sökmotorn.
+Marknadskanalen använder inställningar som är konfigurerade på sidan [!UICONTROL Paid Search Detection] för att matcha regler för betald sökningsidentifiering. ( **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Paid Search Detection]**). Mål-URL:en matchar den befintliga regeln för avkänning av betald sökning för den sökmotorn.
 
-För marknadsföringskanalregeln är [!UICONTROL Paid Search] inställningarna följande:
+För marknadsföringskanalregeln är [!UICONTROL Paid Search]-inställningarna följande:
 
 ![](assets/example_paid_search.png)
 
@@ -154,7 +154,7 @@ Ett bra tillvägagångssätt är att inkludera en&quot;annan kampanjkanal&quot; 
 
 ### Sociala nätverk {#social-networks}
 
-Denna regel identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook;. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
+Den här regeln identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook;. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
 
 ![](assets/example_social.png)
 
@@ -164,7 +164,7 @@ Den här regeln används av besökare där den refererande URL:en matchar instä
 
 ![](assets/int-channel1.png)
 
-Mer information om varför den här kanalen används finns i [Orsaker till intern (Sessionsuppdatering)](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-faq.html#internal) .
+Se [Orsaker till intern (Sessionsuppdatering)](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-faq.html#internal) för mer information om varför den här kanalen inträffar.
 
 ### Direkt {#direct}
 
