@@ -1,12 +1,13 @@
 ---
 description: Analysidentifiering använder statistisk modellering för att automatiskt hitta oväntade trender i dina data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. När en oväntad krökning eller släppning inträffar visas en varning i rapporten.
 title: Avvikelseidentifiering
-topic: Report builder
 uuid: 02da21b4-3394-471b-97b5-aa1bddf1f445
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
@@ -56,7 +57,7 @@ Analysidentifiering lägger till nya mätvärden för varje mätvärde som du v�
  </tbody> 
 </table>
 
-Report builder använder dessa värden på valda mätvärden. Om du t.ex. väljer ett mått för sidvisning och använder avvikelseidentifiering, används ett *`Page Views Lower Bound`* mått.
+Report builder använder dessa värden på valda mätvärden. Om du till exempel väljer ett mått för sidvisning och tillämpar avvikelseidentifiering, används ett *`Page Views Lower Bound`*-mått.
 
 **Hur avvikelseidentifiering beräknas**
 
