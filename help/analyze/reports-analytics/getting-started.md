@@ -1,10 +1,12 @@
 ---
 description: Innan du använder Reports and Analytics bör du känna till dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 title: Komma igång med Reports and Analytics
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c588087b949093152435967f62e43758e9e86208
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
