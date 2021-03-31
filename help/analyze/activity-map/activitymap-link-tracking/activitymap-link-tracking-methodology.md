@@ -1,10 +1,14 @@
 ---
 description: Det här avsnittet är avsett för Adobe Analytics-administratörer. Det fokuserar på de nya parametrarna för länkspårning och hur de säkerställer att länkar är unika och enhetliga i olika webbläsare och enheter, samt förbättrar hanteringen av länkpositionering på en sida.
 title: Metod för länkspårning
-topic: Activity map
 uuid: 67864bf9-33cd-46fa-89a8-4d83d3b81152
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '1005'
+ht-degree: 1%
 
 ---
 
@@ -15,9 +19,9 @@ Det här avsnittet är avsett för Adobe Analytics-administratörer. Det fokuser
 
 >[!IMPORTANT]
 >
->Alla länkar där texten (inte href) kan innehålla PII (personligt identifierbar information) ska implementeras explicit med [s_objectID](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) eller genom att utesluta ActivityMap-länksamlingen med [s.ActivityMap.linkExclusions eller s.ActivityMap.regionExclusions](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md#configuration-vars). Mer information om hur aktivitetskartan samlar in PII-data finns [här](/help/analyze/activity-map/lnk-tracking-overview.md).
+>Alla länkar där texten (inte href) kan innehålla PII (personligt identifierbar information) ska implementeras explicit med [s_objectID](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) eller genom att utesluta ActivityMap-länksamlingen med [s.ActivityMap.linkExclusions eller s.ActivityMap.regionExclusions](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md#configuration-vars). Mer information om hur Activity Map kan samla in PII-data finns [här](/help/analyze/activity-map/lnk-tracking-overview.md).
 
-I Activity Map används följande två ID:n som grund för länkspårningen:
+Activity Map baserar länkspårningen på följande två ID:
 
 * Primärt ID: det här är länkens identifierbara parameter.
 * Länkområde: Detta är en sekundär parameter som gör att användare kan ange en sträng som är representativ för det övergripande länkområdet på sidan eller i regionen. Den här parametern kan genereras automatiskt om den inte tillhandahålls av användaren.
@@ -45,9 +49,9 @@ Därför använder vi InnerText med följande fördelar jämfört med att använ
 * Det är en bra representation av länkidentiteten. Dubblering av primärt ID är betydligt mindre eftersom det inte är vanligt att ha flera länkar med samma text.
 * Det säkerställer enhetlighet för det primära ID:t på olika enheter och webbläsartyper.
 * Den påverkas inte av en omplacering av länkar på sidan.
-* Det förbättrar läsbarheten så att användare kan börja analysera länkspårningsrapporter utanför aktivitetskartan.
+* Det förbättrar läsbarheten så att användare kan börja analysera rapporter om länkspårning utanför Activity Map.
 
-## Länka område {#section_75BF9B9E3CE94B59ACC3D9AF63E04535}
+## Länkområde {#section_75BF9B9E3CE94B59ACC3D9AF63E04535}
 
 Med det här nya attributet kan användare ange en sträng som är representativ för det sidområde där länken finns.
 
@@ -114,7 +118,7 @@ s.ActivityMap.regionIDAttribute="lpos";
 
 ## Konfigurationsvariabler {#configuration-vars}
 
-Observera att dessa variabler listas endast i referenssyfte. Aktivitetskartan bör konfigureras korrekt direkt, men du kan anpassa implementeringen med dessa variabler.
+Observera att dessa variabler listas endast i referenssyfte. Activity Map bör vara korrekt konfigurerat, men du kan anpassa implementeringen med dessa variabler.
 
 <table id="table_7BC8DC3F35CF49288D94BA707F06B283"> 
  <thead> 
@@ -128,7 +132,7 @@ Observera att dessa variabler listas endast i referenssyfte. Aktivitetskartan b�
   <tr> 
    <td colname="col1"> s.ActivityMap.regionIDAttribute </td> 
    <td colname="col2"> Standardvärdet är "id"-parametern. Du kan ange den här till en annan parameter. </td> 
-   <td colname="col3"> Sträng som identifierar det taggattribut som ska användas som region-ID från något överordnat element (parent, parent.parent, ...) i s.linkObject, dvs. <b>det element som klickades</b>på. </td> 
+   <td colname="col3"> Sträng som identifierar det taggattribut som ska användas som region-ID från något överordnat element (parent, parent.parent, ...) i s.linkObject, dvs. <b>elementet som klickades på</b>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> s.ActivityMap.link </td> 
@@ -136,7 +140,7 @@ Observera att dessa variabler listas endast i referenssyfte. Aktivitetskartan b�
     <code>
       //&nbsp;only&nbsp;ever&nbsp;use&nbsp;"title"&nbsp;attributes&nbsp;from&nbsp;A&nbsp;tags function(clickedElement){ &nbsp;&nbsp;&nbsp;var&nbsp;linkId; &nbsp;&nbsp;&nbsp;if(clickedElement&nbsp;&amp;&amp;&nbsp;clickedElement.tagName.toUpperCase()&nbsp;===&nbsp;'A'){ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linkId&nbsp;=&nbsp;clickedElement.getAttribute('title'); &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;return&nbsp;linkId; } 
     </code> </td> 
-   <td colname="col3"> Funktion som tar emot det klickade HTMLElement och ska returnera ett strängvärde som representerar <b>den länk som klickades</b>. <p>Om returvärdet är false (null, undefined, empty string, 0) spåras ingen länk. </p> </td> 
+   <td colname="col3"> Funktion som tar emot det klickade HTMLElement och ska returnera ett strängvärde som representerar <b>länken som klickades på</b>. <p>Om returvärdet är false (null, undefined, empty string, 0) spåras ingen länk. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> s.ActivityMap.region </td> 
@@ -144,7 +148,7 @@ Observera att dessa variabler listas endast i referenssyfte. Aktivitetskartan b�
     <code>
       //&nbsp;only&nbsp;ever&nbsp;use&nbsp;lowercase&nbsp;version&nbsp;of&nbsp;tag&nbsp;name&nbsp;concatenated&nbsp;with&nbsp;first&nbsp;className&nbsp;as&nbsp;the&nbsp;region function(clickedElement){ &nbsp;&nbsp;&nbsp;var&nbsp;regionId,className; &nbsp;&nbsp;&nbsp;while(clickedElement&nbsp;&amp;&amp;&nbsp;(clickedElement=&nbsp;clickedElement.parentNode)){ &nbsp;regionId&nbsp;=&nbsp;clickedElement.tagName; &nbsp;if(regionId){ &nbsp;return&nbsp;regionId.toLowerCase(); &nbsp;} &nbsp;} } 
     </code> </td> 
-   <td colname="col3"> Funktion som tar emot det klickade HTMLElement-elementet och ska returnera ett strängvärde som representerar <b>den region där länken påträffades när användaren klickade</b>på den. <p>Om returvärdet är false (null, undefined, empty string, 0) spåras ingen länk. </p> </td> 
+   <td colname="col3"> Funktion som tar emot det klickade HTMLElement-objektet och ska returnera ett strängvärde som representerar <b>regionen där länken påträffades när användaren klickade på</b>. <p>Om returvärdet är false (null, undefined, empty string, 0) spåras ingen länk. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> s.ActivityMap.linkExclusions </td> 
@@ -152,7 +156,7 @@ Observera att dessa variabler listas endast i referenssyfte. Aktivitetskartan b�
     <code>
       //&nbsp;Exclude&nbsp;links&nbsp;tagged&nbsp;with&nbsp;a&nbsp;special&nbsp;linkExcluded&nbsp;CSS&nbsp;class &nbsp;&lt;style&gt; .linkExcluded{ &nbsp;&nbsp;display:&nbsp;block; &nbsp;&nbsp;height:&nbsp;1px; &nbsp;&nbsp;left:&nbsp;-9999px; &nbsp;&nbsp;overflow:&nbsp;hidden; &nbsp;&nbsp;position:&nbsp;absolute; &nbsp;&nbsp;width:&nbsp;1px; } &lt;/style&gt; &lt;a&nbsp;href="next-page.html"&gt;Link&nbsp;is&nbsp;tracked&nbsp;because&nbsp;link&nbsp;does&nbsp;not&nbsp;have&nbsp;hidden&nbsp;text&nbsp;matching&nbsp;the&nbsp;filter.&nbsp;&lt;/a&gt; &lt;a&nbsp;href="next-page.html"&gt;Link&nbsp;not&nbsp;tracked&nbsp;because&nbsp;s.ActivityMap.linkExclusions&nbsp;is&nbsp;set&nbsp;and&nbsp;this&nbsp;link&nbsp;has&nbsp;hidden&nbsp;text&nbsp;matching&nbsp;the&nbsp;filter. &nbsp;&lt;span&nbsp;class="linkExcluded"&gt;exclude-link1&lt;/span&gt; &lt;/a&gt; &lt;a&nbsp;href="next-page.html"&gt;Link&nbsp;not&nbsp;tracked&nbsp;because&nbsp;s.ActivityMap.linkExclusions&nbsp;is&nbsp;set&nbsp;and&nbsp;this&nbsp;link&nbsp;has&nbsp;hidden&nbsp;text&nbsp;matching&nbsp;the&nbsp;filter. &nbsp;&lt;span&nbsp;class="linkExcluded"&gt;exclude-link2&lt;/span&gt; &lt;/a&gt; &lt;script&gt; &nbsp;&nbsp;var&nbsp;s&nbsp;=&nbsp;s_gi('samplersid'); &nbsp;&nbsp;s.ActivityMap.linkExclusions&nbsp;=&nbsp;'exclude-link1,exclude-link2'; &lt;/script&gt; 
     </code> </td> 
-   <td colname="col3"> <p>Sträng som tar emot en kommaavgränsad lista med strängar att söka efter i länktext. Om länken hittas, utesluts den från att spåras av aktivitetskartan. Om den inte anges görs inget försök att sluta spåra länken efter aktivitetskarta. </p> </td> 
+   <td colname="col3"> <p>Sträng som tar emot en kommaavgränsad lista med strängar att söka efter i länktext. Om den hittas utesluts länken från att spåras av Activity Map. Om den inte anges görs inget försök att stoppa spårningen av länken av Activity Map. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> s.ActivityMap.regionExclusions </td> 
@@ -160,7 +164,7 @@ Observera att dessa variabler listas endast i referenssyfte. Aktivitetskartan b�
     <code>
       //&nbsp;Exclude&nbsp;regions&nbsp;on&nbsp;the&nbsp;page&nbsp;from&nbsp;its&nbsp;links&nbsp;being&nbsp;trackable&nbsp;by&nbsp;ActivityMap &lt;div&nbsp;id="links-included"&gt;&nbsp; &nbsp;&nbsp;&lt;a&nbsp;href="next-page.html"&gt;Link&nbsp;is&nbsp;tracked&nbsp;because&nbsp;s.ActivityMap.regionExclusions&nbsp;is&nbsp;set&nbsp;but&nbsp;does&nbsp;not&nbsp;match&nbsp;the&nbsp;filter.&lt;/a&gt; &lt;/div&gt; &lt;div&nbsp;id="links-excluded"&gt;&nbsp; &nbsp;&nbsp;&lt;a&nbsp;href="next-page.html"&gt;Link&nbsp;not&nbsp;tracked&nbsp;because&nbsp;s.ActivityMap.regionExclusions&nbsp;is&nbsp;set&nbsp;and&nbsp;this&nbsp;link&nbsp;matches&nbsp;the&nbsp;filter.&lt;/a&gt; &lt;/div&gt; &lt;script&gt; &nbsp;&nbsp;var&nbsp;s&nbsp;=&nbsp;s_gi('samplersid'); &nbsp;&nbsp;s.ActivityMap.regionExclusions&nbsp;=&nbsp;'links-excluded'; &lt;/script&gt;
     </code> </td> 
-   <td colname="col3"> <p>Sträng som tar emot en kommaavgränsad lista med strängar som ska sökas efter i regionstext. Om länken hittas, utesluts den från att spåras av aktivitetskartan. Om den inte anges görs inget försök att sluta spåra länken efter aktivitetskarta. </p> </td> 
+   <td colname="col3"> <p>Sträng som tar emot en kommaavgränsad lista med strängar som ska sökas efter i regionstext. Om den hittas utesluts länken från att spåras av Activity Map. Om den inte anges görs inget försök att stoppa spårningen av länken av Activity Map. </p> </td> 
   </tr> 
  </tbody> 
 </table>
