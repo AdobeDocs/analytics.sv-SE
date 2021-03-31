@@ -1,13 +1,14 @@
 ---
 description: Lär dig hur du loggar in på Report Builder med ditt Experience Cloud-inloggningskonto.
 title: Logga in på Report Builder
-topic: Report builder
 uuid: 9a21b791-e323-46d2-b850-2d67babe964b
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 7e659a0c2b2e5c9ba30b3875bc5d19b5309bfe38
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 5%
+source-wordcount: '198'
+ht-degree: 6%
 
 ---
 
