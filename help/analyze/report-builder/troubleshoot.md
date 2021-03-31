@@ -1,12 +1,13 @@
 ---
 description: Olika sätt som du kan optimera leveransen av Report Builder och en lista över felmeddelanden som ibland kan förekomma.
 title: Felsökning och bästa praxis för Report Builder
-topic: Report builder
 uuid: 36a08143-dc78-40f5-9ce9-7d16980aa27b
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: ec93137d0b5334e312fe0ec42953457243117d4a
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1383'
 ht-degree: 82%
 
 ---
@@ -80,10 +81,10 @@ En lista med felmeddelanden som ibland kan visas när du använder Report Builde
 * **Det markerade intervallet är inte giltigt. Välj ett annat intervall.**: Om en cell i kalkylbladet är markerad och redan har en begäran mappad till sig, inträffar det här felet. Du kan antingen ta bort den begäran som är kopplad till cellerna eller välja ett annat cellintervall att mappa. När du vill ta bort celler är det viktigt att leta reda på celler som innehåller begäranden och ta bort begäran innan cellerna tas bort (rader eller kolumner tas bort).
 * **Avsluta Excel-cellen med fokus innan du använder den här funktionen.**: Om du är i *redigeringsläge* i en Excel-cell och klickar på någon av Report Builder-ikonerna visas det här felmeddelandet. Redigeringsläget i en Excel-cell innebär att cellen är markerad och att markören visas inuti cellen. Du är också i redigeringsläge i en Excel-cell när du skriver direkt i fältet [!UICONTROL Formula] eller i [!UICONTROL Name Box] överst i Excel.
 * **Det markerade intervallet överlappar en annan begärans intervall. Ändra ditt val.**: Om du redan har kopplat en uppsättning celler till kalkylbladet visas det här felet.
-* **Reparationer av arbetsboken (Borttagna poster: Formel från /xl/calcChain.xml del)**: Ibland kan formler i en arbetsbok bli skadade när du sparar eller överför den. När filen öppnas försöker Excel köra formlerna och misslyckas. Du kan lösa problemet genom att ta bort `calcChain.xml` från kalkylbladet och tvinga Excel att uppdatera sina formelberäkningar.
+* **Reparationer av arbetsboken (Borttagna poster: Formel från /xl/calcChain.xml del)**: Ibland kan formler i en arbetsbok bli skadade när du sparar eller överför den. När filen öppnas försöker Excel köra formlerna och misslyckas. Du kan lösa det här problemet genom att ta bort `calcChain.xml` från kalkylbladet och tvinga Excel att uppdatera sina formelberäkningar.
    1. Byt namn på arbetsbokens filtillägg från `.xlsx` till `.zip`.
-   2. Zippa upp innehållet och öppna `/xl/` mappen.
+   2. Zippa upp innehållet och öppna mappen `/xl/`.
    3. Ta bort `calcChain.xml`.
-   4. Zippa upp innehållet igen och ändra filnamnstillägget tillbaka till `.xlsx`.
+   4. Zippa upp innehållet igen och ändra filnamnstillägget till `.xlsx`.
    5. Öppna arbetsboken i Excel och uppdatera alla förfrågningar från Report Builder.
 * **Excel-celler som är associerade med indatafiltren eller utdataområdet kan ha tagits bort**: Report Builder använder Excel-namn för att bifoga dataförfrågningar till celler. Om du tar bort Excel-namn från Names Manager visas det här felet. Begäranden kan inte återställas om Excel-namn tas bort. Om arbetsboken har schemalagts kan du antingen hämta en kopia från schemaläggningshanteraren eller öppna tidigare levererade kopior av arbetsboken.
