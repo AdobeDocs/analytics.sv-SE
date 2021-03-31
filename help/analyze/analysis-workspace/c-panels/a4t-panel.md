@@ -1,10 +1,12 @@
 ---
 description: Med Analytics for Target-panelen (A4T) kan du analysera dina Adobe Target-aktiviteter och -upplevelser i Analysis Workspace.
 title: Analyser för målpanelen (A4T)
+feature: Paneler
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 6f86a45ae745df86f1f6fc924d995437b9992484
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
