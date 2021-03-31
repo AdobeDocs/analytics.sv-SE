@@ -1,19 +1,21 @@
 ---
 description: projekt med endast visning i arbetsytan
-keywords: View-only projects
+keywords: Visa endast  projekt
 title: Visa endast  projekt
+feature: Kuratera och dela
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 232a8376d605fc2345b16fc6579b77dbe2eb7709
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '254'
+ht-degree: 3%
 
 ---
 
 
 # Visa endast  projekt
 
-Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via arbetsflödet [för](/help/analyze/analysis-workspace/curate-share/share-projects.md)projektdelning. Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
+Du kan dela projekt som&quot;endast visning&quot; till mottagare via arbetsflödet [Projektdelning](/help/analyze/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
 ![](assets/view-only-project.png)
 
