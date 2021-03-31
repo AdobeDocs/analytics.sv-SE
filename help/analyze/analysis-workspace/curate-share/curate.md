@@ -1,11 +1,13 @@
 ---
 description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
-keywords: Analysis Workspace curation
+keywords: Analysis Workspace kurser
 title: Kuratprojekt
+feature: Kuratera och dela
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 1c482bdd84b230731c4b72bf7cacf4a92f2f9fe3
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
