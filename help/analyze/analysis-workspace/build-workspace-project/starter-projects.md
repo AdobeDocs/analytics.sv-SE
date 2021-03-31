@@ -2,10 +2,12 @@
 description: Skapa arbetsyteprojekt baserade på standardmallar eller anpassade mallar.
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1389'
 ht-degree: 3%
 
 ---
