@@ -1,8 +1,13 @@
 ---
 title: Användarhandbok för Labs
 description: Förhandsgranska prototypprojekt för Adobe Analytics
+feature: Labs
+role: Administratör
 translation-type: tm+mt
-source-git-commit: 0567265c062a1a3501ba2d5bffc43c18acfbd4d0
+source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
+workflow-type: tm+mt
+source-wordcount: '416'
+ht-degree: 0%
 
 ---
 
@@ -10,7 +15,7 @@ source-git-commit: 0567265c062a1a3501ba2d5bffc43c18acfbd4d0
 
 # [!UICONTROL Labs] Användarhandbok
 
-[!UICONTROL Labs] gör det möjligt att skapa snabbare prototyper av idéer i ett tidigt skede. Det är en kombination av verktyg och processer som snabbar upp utvecklingen på ett öppet sätt, med kundfokus. Det gör det möjligt för användarna att interagera med ny teknik, att upptäcka värdefulla insikter och att påverka framtida funktionsutveckling och prioriteringar. Ni kan använda Labs för att få tidig tillgång till Adobe Analytics-innovationer och utvärdera kommande funktioner i samband med era egna affärsanvändningsfall och data.
+[!UICONTROL Labs] gör det möjligt att skapa snabbare prototyper av idéer i ett tidigt skede. Det är en kombination av verktyg och processer som snabbar upp utvecklingen på ett öppet sätt, med kundfokus. Det gör det möjligt för användarna att interagera med ny teknik, att upptäcka värdefulla insikter och att påverka framtida funktionsutveckling och prioriteringar. Ni kan använda Labs för att få tidig tillgång till Adobe Analytics innovationer och utvärdera kommande funktioner i samband med era egna användningsfall och data.
 
 ## Krav
 
@@ -18,23 +23,23 @@ source-git-commit: 0567265c062a1a3501ba2d5bffc43c18acfbd4d0
 
 Om du inte redan har gjort det läser du och signerar de tillämpliga formulären för sekretessavtal och villkor.
 
-## Öppna [!UICONTROL Labs] portalen
+## Åtkomst till [!UICONTROL Labs]-portalen
 
 Så här kommer du åt [!UICONTROL Labs]:
 
-1. Om du inte redan har åtkomst till [!UICONTROL Workspace] och [!UICONTROL Labs]ber du administratören om behörighet.
+1. Om du inte redan har åtkomst till [!UICONTROL Workspace] och [!UICONTROL Labs] ber du administratören om behörighet.
 
-1. Klicka på **[!UICONTROL Labs]** fliken.
+1. Klicka på fliken **[!UICONTROL Labs]**.
 
 ## Utvärdera en prototyp
 
 Så här startar och utvärderar du en prototyp:
 
-1. På [!UICONTROL Labs] skärmen klickar du **[!UICONTROL Launch]** för den prototyp som du vill se. När prototypen startas visas dess namn i det övre vänstra hörnet i prototypmiljön.
+1. På skärmen [!UICONTROL Labs] klickar du på **[!UICONTROL Launch]** för den prototyp som du vill se. När prototypen startas visas dess namn i det övre vänstra hörnet i prototypmiljön.
 
    ![prototypnamn](https://user-images.githubusercontent.com/29133525/58670566-c03b6c00-82fc-11e9-8b29-ee34260c4024.png)
 
-1. Titta på en video som markerar prototypen genom att klicka **[!UICONTROL Watch Video]** i skärmens övre högra hörn. Klicka **[!UICONTROL Close]** när videon är klar.
+1. Titta på en video som markerar prototypen genom att klicka på **[!UICONTROL Watch Video]** i skärmens övre högra hörn. Klicka på **[!UICONTROL Close]** när videon är klar.
 
    ![förhandsvisningsalternativ](https://user-images.githubusercontent.com/29133525/58670261-a2213c00-82fb-11e9-88db-cc839c98fdab.png)
 
@@ -50,17 +55,17 @@ Så här startar och utvärderar du en prototyp:
 
 ## Lämna feedback
 
-1. Klicka **[!UICONTROL Give Feedback]** för att lämna feedback i meddelanderutan när du arbetar med prototypen.
+1. Klicka på **[!UICONTROL Give Feedback]** för att lämna feedback i meddelanderutan när du arbetar med prototypen.
 
    ![feedback_box](assets/give_feedback.png)
 
-1. Klicka **[!UICONTROL Submit]** för att skicka din feedback.
+1. Klicka på **[!UICONTROL Submit]** för att skicka din feedback.
 
-1. Om du vill testa en annan prototyp eller avsluta prototypmiljön klickar du **[!UICONTROL Leave Prototype]** i skärmens övre högra hörn och slutför den korta enkäten för prototypen. Alla ändringar som görs i ett prototypprojekt går förlorade när prototypmiljön avslutas.
+1. Om du vill testa en annan prototyp eller avsluta prototypmiljön klickar du på **[!UICONTROL Leave Prototype]** i skärmens övre högra hörn och slutför den korta enkäten för prototypen. Alla ändringar som görs i ett prototypprojekt går förlorade när prototypmiljön avslutas.
 
    ![ny feedbackruta](assets/short-survey.png)
 
-1. Klicka **[!UICONTROL Submit]** för att gå tillbaka till huvudförhandsvisningsporten.
+1. Klicka på **[!UICONTROL Submit]** för att återgå till huvudförhandsvisningsporten.
 
 ## Ytterligare information
 
