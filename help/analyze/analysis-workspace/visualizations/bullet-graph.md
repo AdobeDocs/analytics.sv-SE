@@ -2,8 +2,13 @@
 description: Här kan du se hur ett värde som du är intresserad av kan jämföras med eller mäta mot andra prestandaintervall (mål).
 title: Punktdiagram
 uuid: 2f133189-2a50-45af-b225-7d2b433fbef5
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 12%
 
 ---
 
