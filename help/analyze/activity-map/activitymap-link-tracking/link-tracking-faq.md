@@ -1,23 +1,27 @@
 ---
-description: Vanliga frågor och svar om länkspårning i aktivitetskartan.
+description: Frågor och svar om länkspårning i Activity Map.
 title: Vanliga frågor om länkspårning
-topic: Activity map
 uuid: 10172073-b98b-4950-8397-67a18b37b3b4
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '527'
+ht-degree: 1%
 
 ---
 
 
 # Vanliga frågor om länkspårning
 
-Vanliga frågor och svar om länkspårning i aktivitetskartan.
+Frågor och svar om länkspårning i Activity Map.
 
 >[!CAUTION]
 >
->Genom att aktivera spårning av aktivitetskarta kan **du samla in data om personligt identifierbar information (PII).** Dessa data kan användas fristående eller tillsammans med annan information för att identifiera, kontakta eller hitta en person, eller för att identifiera en individ i sitt sammanhang.
+>Genom att aktivera spårning av Activity Map kan **du samla in data om personligt identifierbar information (PII).** Dessa data kan användas fristående eller tillsammans med annan information för att identifiera, kontakta eller hitta en person, eller för att identifiera en individ i sitt sammanhang.
 
-Här är några kända fall där PII-data kan samlas in med hjälp av aktivitetskartspårning:
+Här är några kända fall där PII-data kan samlas in med Activity Map Tracking:
 
 * `Mailto` länkar. En mailto-länk är en typ av HTML-länk som aktiverar standardklienten för e-post på datorn för att skicka ett e-postmeddelande.
 * `User ID` länkar som kan visas i sidhuvudet/sidfoten på en webbplats när användaren har loggat in.
@@ -28,7 +32,7 @@ Här är några kända fall där PII-data kan samlas in med hjälp av aktivitets
  <tbody> 
   <tr> 
    <td colname="col1"> <b>F: När inträffar länkspårning?</b> <p> </p> </td> 
-   <td colname="col2"> S: Länk- och områdesidentifiering för aktivitetskarta inträffar när användare klickar på en sida. </td> 
+   <td colname="col2"> S: Länk- och regionsidentifiering i Activity Map inträffar när användare klickar på en sida. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>F: Vad spåras som standard?</b> <p> </p> </td> 
@@ -39,20 +43,20 @@ Här är några kända fall där PII-data kan samlas in med hjälp av aktivitets
      <li id="li_D4B0AEEEA58A4F82A1BCBD3971A60D02">Är detta en INPUT-tagg eller en SKICKA-knapp med ett värde eller en underordnad text? </li> 
      <li id="li_F7ABE88308E1413E9B9C2224DEC91BAB">Är detta en INPUT-tagg med typen IMAGE och en src-egenskap? </li> 
      <li id="li_F34A0C986E8040109A1DDF88C26E56D5">Är det här en &lt;Button&gt;? </li> 
-    </ul> <p>Om svaret är <b>Ja</b> på någon av frågorna ovan behandlas elementet som en länk och spåras. </p> <p>Viktigt:  Button-taggar med attributet type="button" betraktas inte som länkar av AppMeasurement. Ta bort "type='button'" i knapptaggarna och lägg till role="button" eller submit="button" i stället. </p> <p>Viktigt: En ankartagg med en href som börjar med "#" betraktas som en intern målplats med AppMeasurement, inte som en länk (eftersom du inte lämnar sidan). Aktivitetskartan spårar som standard inte dessa interna målplatser. Det spårar bara länkar som navigerar användaren till en ny sida.</p></td> 
+    </ul> <p>Om svaret är <b>Ja</b> på någon av frågorna ovan behandlas elementet som en länk och spåras. </p> <p>Viktigt:  Button-taggar med attributet type="button" betraktas inte som länkar av AppMeasurement. Ta bort "type='button'" i knapptaggarna och lägg till role="button" eller submit="button" i stället. </p> <p>Viktigt: En ankartagg med en href som börjar med "#" betraktas som en intern målplats med AppMeasurement, inte som en länk (eftersom du inte lämnar sidan). Som standard spårar inte Activity Map dessa interna målplatser. Det spårar bara länkar som navigerar användaren till en ny sida.</p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>F: Hur spårar Activity Map andra visuella HTML-element?</b> </td> 
    <td colname="col2"> 
     <ol id="ol_DA3AED165CFF44B08DFB386D4DEE26C5"> 
-     <li id="li_E3E3F498F37B4FADAFDA39CCAE41511F"> <b>Via <code> s.tl() </code> funktionen</b> <p>Om klickningen inträffade via ett s.tl-anrop, kommer Activity Map även att ta emot klickhändelsen och avgöra om en linkName-strängvariabel hittades. Under s.tl-körningen anges linkName som länk-ID för aktivitetskarta. Elementet som klickades och som kom från anropet s.tl() kommer att användas för att avgöra regionen. Exempel: </p> <p> 
+     <li id="li_E3E3F498F37B4FADAFDA39CCAE41511F"> <b>Via  <code> s.tl() </code> funktionen</b> <p>Om klickningen inträffade via ett s.tl-anrop får Activity Map även den här click-händelsen och avgör om en linkName-strängvariabel hittades. Under s.tl-körningen anges detta linkName som Activity Map Link-ID. Elementet som klickades och som kom från anropet s.tl() kommer att användas för att avgöra regionen. Exempel: </p> <p> 
        <code>
          &lt;img&amp;nbsp;onclick="s.tl(true,'o','abc')"&amp;nbsp;src="someimageurl.png"/&gt; 
        </code> </p> </li> 
-     <li id="li_A93725B810FE408BA5E6B267CF8CEAE5"> <b>Via <code> s_objectID </code> variabeln</b> <p>Exempel: </p> <p> 
+     <li id="li_A93725B810FE408BA5E6B267CF8CEAE5"> <b>Via  <code> s_objectID </code> variabeln</b> <p>Exempel: </p> <p> 
        <code>
          &lt;img&nbsp;onclick="s_objectID='abc';"&nbsp;src="someimageurl.png"/&gt; &lt;a&nbsp;href="some-url.html"&nbsp;onclick="s_objectID='abc';"&nbsp;&gt;Link&nbsp;Text&nbsp;Here&lt;/a&gt;
-       </code> </p> <p>Viktigt:  Observera att ett avslutande semikolon (;) krävs när s_objectID används i aktivitetskartan. </p> </li> 
+       </code> </p> <p>Viktigt:  Observera att ett avslutande semikolon (;) krävs när du använder s_objectID i Activity Map. </p> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -85,16 +89,20 @@ Här är några kända fall där PII-data kan samlas in med hjälp av aktivitets
    <td colname="col1"> <b>F: Kan du ge mig några exempel på länkar som INTE kommer att spåras?</b> </td> 
    <td colname="col2"> 
     <ol id="ol_CDFDB572F76B4F68A64B66A6B0237547"> 
-     <li id="li_99372060646B43EF94C13A9C682CE693">Orsak: Ankartaggen har ingen giltig href <code>
+     <li id="li_99372060646B43EF94C13A9C682CE693">Orsak: Ankartaggen har ingen giltig href 
+      <code>
         &lt;a&amp;nbsp;name="innerAnchor"&gt;Section&amp;nbsp;header&lt;/a&gt; 
       </code> </li> 
-     <li id="li_736A5F7DC2D74B4DA1CECEE3AD10EB19">Orsak: Varken <code> s_ObjectID </code> eller <code> s.tl() </code> närvarande <code>
+     <li id="li_736A5F7DC2D74B4DA1CECEE3AD10EB19">Orsak: Varken <code> s_ObjectID </code> eller <code> s.tl() </code> finns 
+      <code>
         &lt;p&nbsp;onclick="showPanel('market&nbsp;rates')"&gt; &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class="title"&gt;Current&nbsp;Market&nbsp;Rates&lt;/span&gt;&lt;span&nbsp; class="subtitle"&gt;1.45USD&lt;/span&gt; &lt;/p&gt;
       </code> </li> 
-     <li id="li_45F9ED97140F47F99F8C167BC1DC546F">Orsak: Varken <code> s_ObjectID </code> eller <code> s.tl() </code> närvarande <code>
+     <li id="li_45F9ED97140F47F99F8C167BC1DC546F">Orsak: Varken <code> s_ObjectID </code> eller <code> s.tl() </code> finns 
+      <code>
         &lt;input&nbsp;type="radio"&nbsp;onclick="changeState(this)"&nbsp;name="group1"&nbsp;value="A"/&gt; &lt;input&nbsp;type="radio"&nbsp;onclick="changeState(this)"&nbsp;name="group1"&nbsp;value="B"/&gt; &lt;input&nbsp;type="radio"&nbsp;onclick="changeState(this)"&nbsp;name="group1"&nbsp;value="C"/&gt;
       </code> </li> 
-     <li id="li_9EBFCC58F3A94F30BA62156F14B15D55">Orsak: src-egenskapen saknar ett indataelement för formulär <code>
+     <li id="li_9EBFCC58F3A94F30BA62156F14B15D55">Orsak: src-egenskapen saknar ett indataelement för formulär 
+      <code>
         &lt;input&amp;nbsp;type="image"/&gt; 
       </code> </li> 
     </ol> </td> 
