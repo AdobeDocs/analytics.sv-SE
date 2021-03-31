@@ -2,12 +2,13 @@
 description: Med alternativet Inkludera aktuella data i rapporter och analyser kan du visa de senaste Analytics-data, ofta innan data har bearbetats fullständigt och slutförts. Aktuella data visar de flesta mätvärden på några minuter och ger användbara data för snabba beslut.
 subtopic: Current Data
 title: Aktuella data
-topic: Reports
 uuid: 601d3695-be13-4b7f-9df0-de01c8bd64ee
+feature: Rapporter och analysgrunder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 03b1195225b97f3ea151eb5b4f39fbed746b3654
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
