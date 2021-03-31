@@ -2,10 +2,12 @@
 description: Det finns två sätt att använda mätvärden i Analysis Workspace.
 title: Mätvärden
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
+feature: Grundläggande om arbetsytan
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: f6f638bcd6a9630d857996a44312dbb739a0c2a8
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '246'
 ht-degree: 5%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 5%
 
 Det finns två sätt att använda mätvärden i Analysis Workspace.
 
-Du kan antingen dra en standardmall för mått, beräknade värden eller beräknade värden från [!UICONTROL Components] menyn till tabellen:
+Du kan antingen dra en standardmall för mått, beräknade värden eller beräknade värden från menyn [!UICONTROL Components] till tabellen:
 
 ![](assets/metrics_icons.png)
 
@@ -23,17 +25,17 @@ Du kan antingen dra en standardmall för mått, beräknade värden eller beräkn
 >
 >Även om detta ser enkelt ut är användningen av mätvärden ganska kraftfull. Du kan lägga till mätvärden i en rapport genom att dra lämpliga mätvärden till måttavsnittet i en tabell. Du kan också dela upp mått efter mått och på så sätt få detaljkontroll över tabellvyn. Dessutom kan du infoga ett mått som en dimension och en dimension som ett mått för att skapa en övertidsrapport. Lek med de olika komponenterna och se vad du kan göra. Möjligheterna är oändliga.
 
-Du kan också klicka **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Då kommer du till [beräkningsverktyget](/help/components/c-calcmetrics/cm-overview.md)där du kan skapa anpassade mätvärden utifrån befintliga mätvärden.
+Du kan också klicka på **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Detta tar dig till [Calculated Metric Builder](/help/components/c-calcmetrics/cm-overview.md) där du kan skapa anpassade mått utifrån befintliga mätvärden.
 
-To make it easier to quickly create calculated metrics, **[!UICONTROL Create metric from selection]** has been added to the column right-click menu in Freeform Tables. Det här alternativet visas när en eller flera rubrikkolumnceller är markerade.
+**[!UICONTROL Create metric from selection]** har lagts till i högerklicksmenyn i frihandstabeller för att göra det enklare att snabbt skapa beräknade värden. Det här alternativet visas när en eller flera rubrikkolumnceller är markerade.
 
 ![](assets/calc_metrics.png)
 
-[Beräknade mått: Implementeringsfria mätvärden](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+[Beräknade mått: Implementeringsfria mätvärden](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html)  (3:42)
 
 ## Jämför mätvärden med olika attribueringsmodeller
 
-Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan högerklickar du på ett mätresultat och väljer **[!UICONTROL Compare Attribution Models]**:
+Om du snabbt och enkelt vill jämföra en attribueringsmodell med en annan högerklickar du på ett mätvärde och väljer **[!UICONTROL Compare Attribution Models]**:
 
 ![Jämför attribuering](assets/compare-attribution.png)
 
