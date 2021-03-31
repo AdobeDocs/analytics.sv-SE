@@ -1,13 +1,18 @@
 ---
 description: Läs om frihandspaneler
-title: Frihandspanelen
+title: Frihandspanel
+feature: Paneler
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 77b126b2add78113c266265f413240f27f89bced
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '28'
+ht-degree: 17%
 
 ---
 
 
-# Frihandspanelen
+# Frihandspanel
 
 En friformspanel är en tom panel med en friformstabell som startläge.
 
