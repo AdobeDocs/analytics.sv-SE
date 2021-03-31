@@ -1,10 +1,12 @@
 ---
 title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
+feature: Attribuering
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 7962e7dbb8003103ceb6fd1f9ccd11c110e59ad3
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -12,7 +14,7 @@ ht-degree: 1%
 
 # Panelen Attribution
 
-Panelen är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. [!UICONTROL Attribution] Det är en funktion i [Attribution IQ](../attribution/overview.md) som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
+Panelen [!UICONTROL Attribution] är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Det är en funktion i [Attribution IQ](../attribution/overview.md) som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
 
 ## Skapa en attribueringspanel
 
@@ -25,7 +27,7 @@ Panelen är ett enkelt sätt att skapa en analys som jämför olika attribuering
 
    ![Välj dimension och mått](assets/attribution_panel2.png)
 
-1. Välj de [attribueringsmodeller och det uppslagsfönster](../attribution/models.md) som du vill jämföra.
+1. Välj de [attribueringsmodeller och uppslagsfönster](../attribution/models.md) som du vill jämföra.
 
 1. Attributpanelen returnerar en mängd data och visualiseringar som jämför attribuering för den valda dimensionen och måttet.
 
