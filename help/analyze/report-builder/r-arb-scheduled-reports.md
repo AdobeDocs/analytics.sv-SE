@@ -1,12 +1,13 @@
 ---
 description: Fältbeskrivningar för den schemalagda aktivitetshanteraren.
 title: Schemalagd aktivitetshanterare
-topic: Report builder
 uuid: dec259f0-2a04-4c94-abbc-5008cf2f1cb8
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 9edb2224b711cb41552488c8d73cbce1a9577a61
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '400'
 ht-degree: 2%
 
 ---
