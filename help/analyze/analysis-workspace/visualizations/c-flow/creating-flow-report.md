@@ -2,10 +2,12 @@
 description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Konfigurera en flödesvisualisering
 uuid: ff36dc09-6175-43ed-a82a-630d28bca806
+feature: Visualiseringar
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '348'
 ht-degree: 2%
 
 ---
