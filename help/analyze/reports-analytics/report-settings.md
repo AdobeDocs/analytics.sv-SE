@@ -1,10 +1,13 @@
 ---
 description: Inställningar som definierar hur alla rapporter visas och information som mappar standardmenyalternativen till deras plats på den förenklade menyn.
 title: Visningsinställningar och navigering för rapporter
-topic: Reports,Reports and analytics
 uuid: e7e571ce-a1cf-4714-b400-9571805ceeac
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '1467'
+ht-degree: 7%
 
 ---
 
@@ -22,20 +25,20 @@ Inställningar som definierar hur alla rapporter visas och information som mappa
 | **Allmänna inställningar** |  |
 | Inkludera relaterat måttavsnitt | Relaterade mätvärden är nära relaterade till den rapport som du för närvarande visar (till exempel de fem främsta sidorna i rapporten över sidvisningar). |
 | Visa Internet-genomsnitt i informationsavsnittet | Uttrycker det genomsnittliga värdet för en viss statistik, taget på flera tusen företagswebbplatser. När det här avsnittet är aktiverat visas det som en separat kolumn i avsnitten för rapportsammanfattning och rapportinformation. Den här funktionen används endast av trafikrapporter i teknikgruppen samt av sökmotorer, språk och domänrapporter. |
-| Visa Adobes standardmenystruktur | Ignorerar inställningarna i administratörsverktygen, där administratörer anpassar rapportmenyer efter användarinställningar och återställer rapportmenyn till standardinställningarna. |
+| Visa menystrukturen Adobe | Ignorerar inställningarna i administratörsverktygen, där administratörer anpassar rapportmenyer efter användarinställningar och återställer rapportmenyn till standardinställningarna. |
 | Tvinga kolumnbredder när rapporter visas | Tvingar fram kolumnbredder för rapporter till en estetiskt tilltalande konsekvens. Den här inställningen är användbar när fler än tre mätvärden visas. |
 | **Diagram** |  |
 | Markera helger i trenddiagram | Markerar heltalsdatum i trendrapportdiagram lodrätt. Trendrapporter kan vara mycket enklare att utvärdera när helger identifieras. |
 | Inkludera prognos i diagram och sammanfattning | Uppskattar hur mycket en viss statistik kommer att uppkomma i framtiden. Prognosen visas i rapportsammanfattningsavsnittet när den är aktiverad. |
 | Inkludera kalenderhändelser i rapporter | Spåra platsprestanda i förhållande till specifika händelser. När det här alternativet är aktiverat visas dessa händelser i dina rapporter. |
-| Använda Flash-diagram | Aktiverar Flash-diagram i dina rapporter. I Flash-diagram finns skarpare och mer interaktiva bilder för rapporter, men du kan inte enkelt kopiera eller spara bilderna. Om du snabbt vill kopiera eller spara bilder inaktiverar du det här alternativet (bilderna kommer att vara i .gif-format). Om du avmarkerar det här alternativet visas inte knappen för att kopiera diagram i rapportverktygsfältet. |
+| Använd Flash-diagram | Aktiverar Flash-diagram i dina rapporter. Med Flash-diagram får du skarpare och mer interaktiva bilder för rapporter, men du kan inte enkelt kopiera eller spara bilderna. Om du snabbt vill kopiera eller spara bilder inaktiverar du det här alternativet (bilderna kommer att vara i .gif-format). Om du avmarkerar det här alternativet visas inte knappen för att kopiera diagram i rapportverktygsfältet. |
 | Visa&quot;Alla andra&quot;-data i markerade diagram | Visar alla andra under de fem översta grupperade i ett enskilt objekt. (I stapeldiagram visas de fem populäraste webbsidorna eller andra data i rapporten.) |
 | Visa&quot;Ingen&quot;,&quot;Ospecificerad&quot; och&quot;Typad/Bokmärkt&quot;-data i rapportdiagram | Visar mått där inget värde fick kredit för det angivna måttet. |
 | Visa miniatyrbilder i rankade rapporter | Visar ett miniatyrdiagram i fältet för rankade rapporter. Detta ger en snabb bild av den övergripande trenden utan att generera en separat rapport. |
 | **Acceleration** |  |
 | Aktivera Report Accelerator för att visa rapporter snabbare | Aktiverar rapportacceleratorn, som använder en tidsbaserad algoritm för att cachelagra nyligen begärda rapporter och undersöker endast de mest förekommande unika objekten, vilket ger ännu snabbare rapportleverans. Genom att cachelagra begärda rapporter i 15 minuter kan rapportacceleratorn hämta dessa rapporter för efterföljande begäranden nästan direkt. Den här inställningen är användbar när du bläddrar fram och tillbaka, skriver ut rapporter eller ofta vill få tillgång till samma rapporter. När det är inaktiverat genereras rapporter om varje gång de begärs. |
 | Aktivera Dashboard Accelerator och visa tillgängliga cachade versioner | Aktiverar instrumentpanelsacceleratorn, som lagrar en cachelagrad version av instrumentpanelen för efterföljande visning. Genom att cachelagra en vy av instrumentpanelen i 24 timmar kan instrumentpanelsacceleratorn hämta den vyn nästan direkt eftersom den intensiva databasfrågan och bearbetningen görs i förväg. Om den tillgängliga cachelagrade versionen är äldre än 24 timmar skapas en ny instrumentpanel och en ny cachelagrad version skapas. På samma sätt skapas en ny cachelagrad version när du uppdaterar kontrollpanelen (eller en rapport som visas på kontrollpanelen). Cachen är användarbaserad. Andra användare som visar en delad kontrollpanel ser en version som baseras på deras egen användning av instrumentpanelsacceleratorn och uppdatering av instrumentpanelen. |
-| Aktivera nätverksacceleration för förbättrade rapportprestanda | Snabbar upp leveransen av data till er genom att optimera sökvägen mellan Adobes infrastruktur och er miljö. |
+| Aktivera nätverksacceleration för förbättrade rapportprestanda | Snabbar upp leveransen av data till din plats genom att optimera vägen mellan infrastrukturen i Adobe och din miljö. |
 | Aktivera regional acceleration för en snabbare användarupplevelse i Kina | Regional Accelerator använder regionspecifika accelererade domäner för att ge en snabbare användarupplevelse i en viss region. För närvarande stöds regional acceleration bara för Kina. Om du aktiverar den här funktionen för användare som inte finns i Kina blir användarupplevelsen långsammare. När du har aktiverat regional acceleration måste du logga in igen för att inställningen ska få effekt. Om du vill inaktivera Regional Accelerator avmarkerar du den här kryssrutan. |
 | **Språk/valuta/kodning** |  |
 | Tusentalsavgränsare | Välj en avgränsare för varje tusende (decimal eller komma). I många länder används ett decimaltal för att avgränsa tusentaltalet. (Den här avgränsaren används på alla tal i hela systemet, inte bara i valuta.) |
@@ -56,10 +59,10 @@ Om du är van vid standardmenyn gör följande tabell det enklare att hitta meny
 
 | Plats på standardmenyn | Plats på förenklad meny |
 |---|---|
-| **Webbplatsmått** |  |  |
+| **Mätvärden för webbplats** |  |  |
 |  | Webbplatsöversikt | Mått > Webbplatsöversikt |
-|  | Nyckelmått | Metrics > Key Metrics |
-|  | Sidvyer | Mått > Sidvyer |
+|  | Nyckeltal | Metrics > Key Metrics |
+|  | Sidvisningar | Mått > Sidvyer |
 |  | Besök | Metrisk > Besök |
 |  | Besökare | Metrisk > Besökare |
 |  | Tid per besök | Mått > Tid per besök |
@@ -67,15 +70,15 @@ Om du är van vid standardmenyn gör följande tabell det enklare att hitta meny
 |  | Inköp | Metrisk > Inköp |
 |  | Kundvagn | Metrisk > Kundvagn |
 |  | Anpassade händelser | Metrisk > Egna händelser |
-|  | Bots | Audience > Bots |
-|  | Analysidentifiering | Metrisk > Anomaly Detection |
+|  | Robotar | Audience > Bots |
+|  | Avvikelseidentifiering | Metrisk > Anomaly Detection |
 |  | Realtid | Metrics > Real-Time |
 | **Webbplatsinnehåll** |  |  |
 |  | Sidor | Innehåll > Sidor |
-|  | Platsavsnitt | Innehåll > Platsavsnitt |
+|  | Webbplatsavsnitt | Innehåll > Platsavsnitt |
 |  | Servrar | Innehåll > Servrar |
 |  | Länkar | Navigation > Custom Links; Navigation > Exit Links; Navigation > ClickMap; Navigation > File Downloads |
-|  | Sidorna hittades inte | Navigering > Sidor hittades inte |
+|  | Sidor som inte hittades | Navigering > Sidor hittades inte |
 | **Mobil** |  |  |
 |  | Enheter | Audience > Mobile > Devices |
 |  | Enhetstyp | Målgrupp > Mobil > Enhetstyp |
@@ -89,7 +92,7 @@ Om du är van vid standardmenyn gör följande tabell det enklare att hitta meny
 |  | Ljudstöd | Audience > Mobile > Audio Support |
 |  | Stöd för video | Audience > Mobile > Video Support |
 |  | Operativsystem | Målgrupp > Mobil > Operativsystem |
-| **Banor** |  |  |
+| **Sökvägar** |  |  |
 |  | Sidor | Navigering > Banor > Sidor |
 |  | Interna sökvillkor | Navigering > Banor > Interna sökvillkor |
 | **Trafikkällor** |  |  |
@@ -105,21 +108,21 @@ Om du är van vid standardmenyn gör följande tabell det enklare att hitta meny
 |  | Referenter | Traffic Sources > Referrers |
 |  | Refererartyper | Trafikkällor > Refererartyper |
 | **Kampanjer** |  |  |
-|  | Kampanjkonverteringsström | Traffic Sources > Campaigns > Campaign Conversion Trnel |
+|  | Konverteringstratt för kampanj | Traffic Sources > Campaigns > Campaign Conversion Trnel |
 |  | Spårningskod | Traffic Sources > Campaigns > Tracking Code |
 | **Produkter** |  |  |
-|  | Produktkonverteringsfunktion | Conversion > Products > Products Conversion Trnel |
+|  | Konverteringstratt för produkter | Conversion > Products > Products Conversion Trnel |
 |  | Produkter | Conversion > Products > Products |
 |  | Korsförsäljning | Conversion > Products > Cross Sell |
 |  | Kategorier | Konvertering > Produkter > Kategorier |
-| **Bevarande av besökare** |  |  |
-|  | Returfrekvens | Målgrupp > Behåll besökare > Returfrekvens |
-|  | Returbesök | Målgrupp > Behåll besökare > Returbesök |
+| **Kvarhållning av besökare** |  |  |
+|  | Återbesöksfrekvens | Målgrupp > Behåll besökare > Returfrekvens |
+|  | Återbesök | Målgrupp > Behåll besökare > Returbesök |
 |  | Dagliga återbesök | Målgrupp > Behåll besökare > Dagliga besök |
-|  | Besök nummer | Målgrupp > Behåll besökare > Besök nummer |
+|  | Besöksnummer | Målgrupp > Behåll besökare > Besök nummer |
 |  | Försäljningscykel | Audience > Visitor Retention > Sales Cycle |
 | **Besökarprofil** |  |  |
-|  | GeoSegmentation | Audience > Visitor Profile > GeoSegmentation |
+|  | Geosegmentering | Audience > Visitor Profile > GeoSegmentation |
 |  | Språk | Målgrupp > Besökarprofil > Språk |
 |  | Tidszoner | Målgrupp > Besökarprofil > Tidszoner |
 |  | Domäner | Målgrupp > Besökarprofil > Domäner |
