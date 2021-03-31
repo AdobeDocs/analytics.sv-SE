@@ -2,10 +2,12 @@
 description: Använd Report Builder med Microsoft Power BI.
 title: Publicera till Power BI – översikt
 uuid: ad688817-6e3c-45da-983d-48c123465309
+feature: Report Builder
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '962'
 ht-degree: 13%
 
 ---
