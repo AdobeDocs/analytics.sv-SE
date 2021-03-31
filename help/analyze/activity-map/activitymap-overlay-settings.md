@@ -1,25 +1,29 @@
 ---
-description: På inställningspanelen för aktivitetskarta kan du ändra inställningar och egenskaper för alla typer av övertäckningsvisualiseringar.
-title: Konfigurera inställningar för aktivitetskarta
-topic: Activity map
+description: På inställningspanelen Activity Map kan du ändra inställningar och egenskaper för alla typer av övertäckningsvisualiseringar.
+title: Konfigurera inställningar för Activity Map
 uuid: 42a0309e-3efc-4506-989b-09b6fe419423
+feature: Activity Map
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 2%
 
 ---
 
 
-# Konfigurera inställningar för aktivitetskarta
+# Konfigurera inställningar för Activity Map
 
-På inställningspanelen för aktivitetskarta kan du ändra inställningar och egenskaper för alla typer av övertäckningsvisualiseringar.
+På inställningspanelen Activity Map kan du ändra inställningar och egenskaper för alla typer av övertäckningsvisualiseringar.
 
-Gå till panelen Inställningar för aktivitetskarta genom att klicka på kugghjulsikonen i verktygsfältet för aktivitetskarta.
+Gå till inställningspanelen Activity Map genom att klicka på kugghjulsikonen i verktygsfältet Activity Map.
 
 På inställningspanelen visas olika innehåll baserat på det valda programläget. Fliken Annan innehåller allmänna inställningar.
 
-| Standard | **[!UICONTROL Gradient]** eller **[!UICONTROL Bubble]** övertäckningar |
+| Standard | **[!UICONTROL Gradient]** eller  **[!UICONTROL Bubble]** övertäckningar |
 |---|---|
-| Live | **[!UICONTROL Gainers & Losers]**, **[!UICONTROL Gradient]**, **[!UICONTROL Bubble]** övertäckningar |
+| Live | **[!UICONTROL Gainers & Losers]**,  **[!UICONTROL Gradient]**,  **[!UICONTROL Bubble]** övertäckningar |
 | Övriga | Val av rapportsvit och språkval |
 
 ## Inställningar för standardlägesövertäckning {#section_24DB95376E1A448494ECF3F57743FC19}
@@ -50,7 +54,7 @@ På inställningspanelen visas olika innehåll baserat på det valda programläg
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Visa</span> </td> 
-   <td colname="col3">Välj <span class="uicontrol"> Överkant</span>, <span class="uicontrol"> Underkant</span>eller <span class="uicontrol"> Alla länkar</span> som ska visas i övertäckningen. Om du väljer Överkant eller Underkant måste du också välja hur många länkar som ska visas. </td> 
+   <td colname="col3">Välj <span class="uicontrol"> Överkant</span>, <span class="uicontrol"> Underkant</span> eller <span class="uicontrol"> Alla länkar</span> som ska visas i övertäckningen. Om du väljer Överkant eller Underkant måste du också välja hur många länkar som ska visas. </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Dölj övertäckningar för länkar som inte fått några träffar.</span> </td> 
@@ -58,7 +62,7 @@ På inställningspanelen visas olika innehåll baserat på det valda programläg
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Övertoningsfärg / Bubbelfärg</span> </td> 
-   <td colname="col3">Välj bland ett färgintervall om du vill visa länkrankningar för övertäckning för <span class="uicontrol"> övertoning</span> eller <span class="uicontrol"> bubbelövertäckning</span> . </td> 
+   <td colname="col3">Välj mellan ett färgintervall om du vill visa länkrankningar för övertäckning för övertoningar <span class="uicontrol"> Övertoning</span> eller <span class="uicontrol"> Bubbla</span> övertäckningsvisualiseringar. </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Färgövertoning baserad på</span> </td> 
@@ -81,7 +85,7 @@ På inställningspanelen visas olika innehåll baserat på det valda programläg
 
 | Inställningar | Beskrivning |
 |---|---|
-| **[!UICONTROL Display Top]** | Markera antalet länkar som ska visas (eller alla) och **[!UICONTROL Gainers]** eller **[!UICONTROL Losers]** (eller båda) som ska visas som övertäckningar. |
+| **[!UICONTROL Display Top]** | Välj antalet länkar som ska visas (eller alla) och **[!UICONTROL Gainers]** eller **[!UICONTROL Losers]** (eller båda) som ska visas som övertäckningar. |
 | **[!UICONTROL Exclude bottom (%)]** | Välj det här alternativet om du vill ta bort Gainers-Losers-länkar med sparse-data. Filtrera ut den nedre procentandelen av länkändringar så att bara länkarna med tillräckligt med data visas för att visa relevanta vinster eller förluster. Procentandelen beräknas utifrån antalet länkar på den sidan. Om du t.ex. filtrerar bort de nedre 10 % av en lista med 200 länkar filtreras de sista 20 länkarna ut. |
 | **[!UICONTROL Auto Update Data]** | Här kan du bestämma om Analytics-data som visas i gränssnittet ska uppdateras automatiskt när en ny period beräknas, eller inte. |
 | **[!UICONTROL Auto Update Period]** | När det här alternativet är markerat uppdateras webbsidan med varje ny datahämtning så att länkarna på sidan kan synkroniseras mer med de insamlade data. |
@@ -94,11 +98,11 @@ På inställningspanelen visas olika innehåll baserat på det valda programläg
  <tbody> 
   <tr> 
    <td colname="col1"> Report Suite </td> 
-   <td colname="col2"> <p>Listan med rapportsviter som är tillgängliga för dig är inte längre begränsad till de rapportsviter som definieras i webbsidestaggen. Nu kan du ersätta den valda rapportsviten (som motsvarar en av taggarna på sidan) med en annan rapportserie. Den här nya rapportsviten behöver inte länkas till en tagg på sidan. Om du ändrar den valda rapportsviten i Inställningar för aktivitetskarta kommer alla berörda analysrapporter att uppdateras om du väljer <span class="uicontrol"> Spara</span> . </p> <p> <p>Viktigt: Virtuella rapportsviter är inte kompatibla med Live-läge, endast med standardläge. Om du är i Live-läge för en standardrapportsserie, men väljer en virtuell rapportserie i den här dialogrutan, visas standardläget när du klickar på <span class="uicontrol"> OK</span> här. </p> </p> <p>Dessutom initieras kalenderkontrollen om så att den matchar rapportsvitens kalendertyp (gregoriansk, återförsäljning, anpassad...). </p> </td> 
+   <td colname="col2"> <p>Listan med rapportsviter som är tillgängliga för dig är inte längre begränsad till de rapportsviter som definieras i webbsidestaggen. Nu kan du ersätta den valda rapportsviten (som motsvarar en av taggarna på sidan) med en annan rapportserie. Den här nya rapportsviten behöver inte länkas till en tagg på sidan. Om du ändrar den markerade rapportsviten i inställningarna för Activity Map uppdateras alla berörda analysrapporter om du väljer <span class="uicontrol"> Spara</span>-processen. </p> <p> <p>Viktigt: Virtuella rapportsviter är inte kompatibla med Live-läge, endast med standardläge. Om du är i Live-läge för en standardrapportsserie, men väljer en virtuell rapportserie i den här dialogrutan, visas standardläget när du klickar på <span class="uicontrol"> OK</span> här. </p> </p> <p>Dessutom initieras kalenderkontrollen om så att den matchar rapportsvitens kalendertyp (gregoriansk, återförsäljning, anpassad...). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Språk </td> 
-   <td colname="col2"> Valet motsvarar de språk som finns för Adobe Analytics. </td> 
+   <td colname="col2"> Valet motsvarar de språk som erbjuds för Adobe Analytics. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Om </td> 
