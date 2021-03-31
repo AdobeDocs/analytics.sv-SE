@@ -1,13 +1,14 @@
 ---
 description: Steg för att lägga till kalenderhändelser och hantera delade händelser.
 title: Kalenderhändelser
-topic: Reports and analytics
 uuid: 5e928c70-8eba-4a97-928d-2c4b3e9ff972
+feature: Kalender
+role: Affärsledare, administratör
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 97%
+source-wordcount: '313'
+ht-degree: 95%
 
 ---
 
@@ -35,6 +36,7 @@ För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanje
    1. Klicka på **[!UICONTROL Push To Users]**.
    1. Klicka på **[!UICONTROL Check All]** eller markera rutan bredvid användarnamnen.
    1. Klicka på **[!UICONTROL Save]**.
+
    Det gör kalenderhändelser mer användbara. Nu kan analytiker tvinga fram en överlagring på användarnas rapporter för att få mer kontext.
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Calendar Events]**.
 1. Ange något av följande alternativ under Delade kalenderhändelser:
