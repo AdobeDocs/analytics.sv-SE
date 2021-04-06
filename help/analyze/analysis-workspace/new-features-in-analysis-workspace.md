@@ -4,18 +4,26 @@ keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
 feature: Grundläggande om arbetsytan
 role: Affärsledare, administratör
+exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: 896e5a868f42c3bd76c3a2c3c92e7b9bd54f40ac
 workflow-type: tm+mt
-source-wordcount: '8121'
-ht-degree: 91%
+source-wordcount: '8216'
+ht-degree: 90%
 
 ---
-
 
 # Nyheter i Analysis Workspace
 
 Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud som helhet går du [hit](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html).
+
+## Mars 2021
+
+| Funktion | Måldatum | Beskrivning |
+| --- | --- | --- |
+| [!UICONTROL Components] > [!UICONTROL User preferences] | 25 mars 2021 | På sidan [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera [!UICONTROL Analysis Workspace]-inställningar och relaterade komponenter för din användare. [!UICONTROL User preferences] gäller för alla nya projekt och paneler. <br>**Obs!** Följande inställningar har flyttats till  [!UICONTROL User preferences] sidan:<ul><li>Rapportinställningar: Tusentalsavgränsare (kallas nu _Nummerformat_)</li><li>Rapportinställningar: CSV-avgränsare</li><li>Arbetsyteprojekt: Hjälp > Aktivera tips</li><li>Arbetsyteprojekt: Panelen Tom _Starta nya projekt med det här panelalternativet_</li></ul> |
+| [!UICONTROL Histogram Smart Bucket Prediction] | 25 mars 2021 | [!UICONTROL Histogram Smart Bucket Prediction] hjälper till med histogram med höga kardinalitetsmått genom att automatiskt identifiera rätt bredd och antal buckar för ert datauppslag. För lågkardinalitetsmått fungerar visualiseringen på samma sätt som tidigare. |
+
 
 ## Februari 2021
 
@@ -383,7 +391,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
-   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
+   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, till exempel hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  >Visualiseringsinställning för ”100 % staplad”</a> </p> </td> 
