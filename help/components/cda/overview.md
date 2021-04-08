@@ -1,14 +1,14 @@
 ---
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
+exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
 translation-type: tm+mt
-source-git-commit: 16dd381909b3a49087b244f11881000401155a0a
+source-git-commit: 20ba12a4af4c73bfc981692ab630d9a5f648dc84
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
-
 
 # Enhetsövergripande analys
 
@@ -45,8 +45,9 @@ Enhetsövergripande analys är en banbrytande och robust funktion, men har begr�
 * CDA är endast tillgängligt via Analysis Workspace.
 * Enhetsövergripande analyser fungerar inte i alla rapportsviter och inte heller kombineras data från flera rapportsviter.
 * Adobe Analytics rapporteringsprogram kan inte mappa till mer än en IMS-organisation. Eftersom CDA sammanfogar enheter inom en viss rapportserie kan CDA inte användas för att sammanfoga data över flera IMS-organ.
-* CDA är för närvarande inte kompatibelt med kundattribut. Dessa två funktioner kan sammanfalla i separata virtuella rapportsviter som refererar till samma källrapportsserie.
+* Privat diagram använder samma ID-synk som de som används av funktionen [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=en#customer-attributes) i Experience Cloud och Adobe Analytics. Men de virtuella CDA-rapporteringssviterna (oavsett om de baseras på ett privat diagram eller fältbaserad sammanfogning) är inte kompatibla med resten av funktionen för kundattribut. Det innebär att kundattributbaserade dimensioner inte är tillgängliga för användning inom den virtuella CDA-rapportsviten.
 * CDA är för närvarande inte kompatibelt med A4T.
 * Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar. Mer information om de här begränsningarna finns i [Virtuella rapportsviter](../vrs/vrs-about.md) och [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md).
 * 1.4-API:t stöds inte. Power BI-anslutningar och Report Builder är båda beroende av 1.4-API:t och är därför inte kompatibla med CDA.
 * Historiska data i den virtuella rapportsviten ändras baserat på hur Adobe identifierar och syr ihop enheter. Data i källrapportsviten ändras inte.
+* Den aktiva övervakningen av CDA-sammanslagningsprocessen av Adobe är begränsad till enbart produktionsrapportsviter.
