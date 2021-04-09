@@ -1,14 +1,14 @@
 ---
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
+exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
 translation-type: tm+mt
-source-git-commit: 087ea279f55d4828d68b1ec16a5505855b34055d
+source-git-commit: 510fe26c51391c040527e646ea0a8f131daa6f2d
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
-
 
 # Frågor och svar
 
@@ -97,3 +97,11 @@ Om du vill byta CDA-identifieringsmetod ska du prata med din organisations Accou
 ## Hur hanterar Adobe unika gränser för en eVar som används vid fältbaserad sammanfogning?
 
 CDA hämtar dimensionsobjekt för eVar innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot försökte använda det proffset/eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(Låg trafik)](/help/technotes/low-traffic.md).
+
+## Hur många av mitt företags rapportsviter kan aktiveras för CDA?
+
+Flera rapportsviter kan vara aktiverade, men varje ytterligare rapportserie ökar den totala provisioneringstiden om flera rapportsviter begärs samtidigt. CDA sammanfogar inte rapportsviter. Varje rapportsvit som har aktiverats för CDA måste vara enhetsövergripande (innehålla data från flera ytor, t.ex. datorwebben, mobilwebben, mobilappar)
+
+## Om min Experience Cloud organisation (även kallad IMS org) har flera företag i olika regioner, kan jag då aktivera CDA för samtliga?
+
+Nej. För samma organisation kan bara en region ha CDA aktiverat.
