@@ -1,18 +1,18 @@
 ---
 description: Upptäck allt du kan göra med Advertising Analytics i den här detaljerade guiden, inklusive behörigheter som krävs och tillgängliga mått och mätvärden.
 title: A Guide to Advertising Analytics
+exl-id: bc18b74a-0317-4871-b2e0-ec0977ef1731
 translation-type: tm+mt
-source-git-commit: c588087b949093152435967f62e43758e9e86208
+source-git-commit: 797dd2c700cd6e11db91e3b5e6bf4b7bfbefdabe
 workflow-type: tm+mt
-source-wordcount: '1276'
-ht-degree: 97%
+source-wordcount: '1253'
+ht-degree: 93%
 
 ---
 
-
 # A guide to Advertising Analytics
 
-Med Advertising Analytics kan du se alla dina Google- och Bing Paid Search-data sida vid sida, inifrån Adobe Analytics. Tidigare måste alla Google AdWords/DFA- och Microsoft Bing Ads-data visas i Adobe Advertising Cloud (AMO) eller i Google/Bing. Du får nu följande data i Adobe Analytics: Impressions, Clicks, Costs, Quality Score och Average Position direkt från sökmotorerna samt som en AMO ID-instans (klicka på Instances).
+Med Advertising Analytics kan du se alla dina Google- och Bing Paid Search-data sida vid sida, inifrån Adobe Analytics. Tidigare måste alla Google AdWords/DFA- och Microsoft Bing Ads-data visas i Adobe Advertising Cloud (AMO) eller i Google/Bing. Du får nu följande data från Adobe Analytics: Impressions, Click, Costs data directly from the search engines as as a AMO ID Instances (Click Instances). Kvalitetspoäng och genomsnittliga positioner kommer inte längre att samlas in eftersom Google har tolkat dessa värden i september 2019.
 
 >[!NOTE]
 >
@@ -117,5 +117,3 @@ Advertising Analytics lägger till följande dimensioner och mätvärden i Analy
 | AMO Impressions | Antalet annonsvisningar som rapporteras av sökmotorn. |
 | AMO Clicks | Antalet klick på annonser som rapporterats av sökmotorn. |
 | AMO Cost | Kostnaden för varje nyckelord/annons som rapporteras av sökmotorn. |
-| Medel Pos | Ett beräknat mätvärde som återspeglar den genomsnittliga position för annonserna som rapporteras av sökmotorn. |
-| Medel Kvalitetspoäng | Ett beräknat mätvärde som återspeglar den genomsnittliga kvalitetspoäng som rapporteras av sökmotorn. |
