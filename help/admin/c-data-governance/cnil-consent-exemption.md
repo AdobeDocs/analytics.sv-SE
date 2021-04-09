@@ -1,14 +1,14 @@
 ---
 description: Lär dig mer om riktlinjerna och rekommendationerna för användares samtycke till att lagra eller läsa cookies som inte är nödvändiga på enheter eller webbläsare.
 title: Vilka är CNIL-riktlinjerna för användarens samtycke och cookies?
+exl-id: 04179e58-dbba-45e2-ba57-7fe5fdedc483
 translation-type: tm+mt
-source-git-commit: fefc2433ef42bae232a9a9afc1040be8d04b2bbe
+source-git-commit: 0e09f6ee34560ca7f036e8f3fb743c822d5fcfc4
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
-
 
 # Undantag för CNIL-samtycke
 
@@ -18,7 +18,7 @@ Riktlinjerna ger ett begränsat undantag från kravet på samtycke (&quot;medgiv
 
 * 25 månaders datalagring max.  Du kan granska dina aktuella inställningar för datalagring under Analytics > Admin > Data Governance.  [Datalagring](https://experienceleague.adobe.com/docs/analytics/technotes/data-retention.html)
 * Inaktivera cookies från tredje part i ECID. [disableThirdPartyCall](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disablethirdpartycalls.html?lang=en#id-service-api),  [disableThirdPartyCookies](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disable-cookies.html?lang=en#id-service-api) och  [disableIdSyncs](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disableidsync.html?lang=en#id-service-api)
-* Gränsen för 13-månaders cookie är inställd på ett statiskt datum, inte rullande.  Du kan åsidosätta förfallodatumet för din analyscookie med variabeln `cookieLifetime`.  [cookieLifetime](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/cookielifetime.html)
+* 13-månaders cookie-gräns.  Du kan åsidosätta förfallodatumet för din analyscookie med variabeln `cookieLifetime`. Experience Cloud cookies, inklusive Analytics och ECID, förlänger utgångsdatumet för cookie vid varje besök.  Om du vill ange en statisk, icke-rullande cookie-förfallotid kan du antingen: (1) skriv egen kod för att ange ett datum då cookien ska tas bort, eller (2) använd din CMP för att styra datumet för cookie-återställningen.   [Cookies ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/cookielifetime.html) för cookieLifetime och  [Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html?lang=en#ec-cookies)
 * Begränsat omfång. Cookie-filen måste begränsas till en enda plats eller tillämpning. [Webbläsarcookies](https://experienceleague.adobe.com/docs/analytics/technotes/cookies.html?lang=en&quot;\l&quot;cookie-implementations från tredje part)
 * Anonymisering. Anonymisera IP-adressens sista oktett. [Allmänna kontoinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/general-acct-settings-admin.html)
 * Dölj besökar-ID från rapportering.  Besökar-ID:n visas inte som standard i Adobe Workspace och Adobe Reports and Analytics.  Besökar-ID:n är tillgängliga i Dataflöden och Data warehouse.  Åtkomsten till datafeeds och Data warehouse kan begränsas av [åtkomstbehörigheter i Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en&quot;\l&quot;task_040673FE3E429B9531FBCB8B6A4391) och [kolumnreferens för datafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=en#columns%2C-descriptions%2C-and-data-types)
