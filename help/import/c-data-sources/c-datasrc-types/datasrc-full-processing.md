@@ -2,20 +2,20 @@
 description: Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
 title: Fullständig bearbetning
 topic: Utvecklare och implementering
+exl-id: 9eb8c754-f4de-4483-934e-3f79134516ca
 translation-type: tm+mt
-source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
+source-git-commit: 4e8a79648b0573e68d9059c518f6ec8fb3d9a694
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 9%
 
 ---
-
 
 # Fullständig bearbetning
 
 >[!IMPORTANT]
 >
->Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Adobe planerar att i framtiden ta bort alla datakällor för bearbetning. [Läs mer](/help/import/c-data-sources/c-datasrc-types/datasrc-fullproc-eol.md)
+>Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Adobe planerar att ta bort datakällor med fullständig bearbetning den 31 juli 2021. [Läs mer](/help/import/c-data-sources/c-datasrc-types/datasrc-fullproc-eol.md)
 
 Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
 
@@ -256,4 +256,3 @@ Följande tabell innehåller trafikvariabler som fylls i automatiskt när JavaSc
   </tr> 
  </tbody> 
 </table>
-
