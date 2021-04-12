@@ -1,20 +1,20 @@
 ---
 title: Slutet av livscykeln för fullständiga datakällor
 description: Orsaker till slutet av livscykeln och jämförelser mellan API:t för inmatning av gruppdata och fullständiga datakällor för databearbetning.
+exl-id: 24a44b7a-64fd-4a99-975f-4887f4638812
 translation-type: tm+mt
-source-git-commit: 97e60e4c3a593405f92f47e5aa79ece70e0b3d60
+source-git-commit: 03a2b346dc6940bc7471de454f73c58f5462a0bb
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1208'
 ht-degree: 5%
 
 ---
-
 
 # Slutet av livscykeln för fullständiga datakällor
 
 I flera år har du kunnat skicka in data på träffnivå till Adobe Analytics med fullständig databehandling. Dessa data bearbetades på samma sätt som data som samlats in via våra JavaScript-bibliotek och SDK för mobilappar. 2020 släppte Adobe [API:t för datainmatning i grupp](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md), som utför samma funktioner som fullständiga datakällor, men med ytterligare funktioner. Det här avsnittet innehåller information om ytterligare funktioner som tillhandahålls av API:t för inmatning av gruppdata och visar skillnader i filformat.
 
-Från och med 25 mars 2021 kommer Adobe att förhindra att nya anslutningar för fullständiga datakällor skapas. Befintliga anslutningar stöds tills tjänsten är helt inaktuell. Utbyggnaden kommer att äga rum 2021, men ett visst datum har ännu inte fastställts.
+Från och med 25 mars 2021 kommer Adobe att förhindra att nya anslutningar för fullständiga datakällor skapas. Befintliga anslutningar stöds tills tjänsten är helt inaktuell den 31 juli 2021.
 
 ## Varför upphör den här funktionen?
 
