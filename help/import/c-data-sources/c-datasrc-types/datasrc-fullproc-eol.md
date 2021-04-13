@@ -3,7 +3,7 @@ title: Slutet av livscykeln för fullständiga datakällor
 description: Orsaker till slutet av livscykeln och jämförelser mellan API:t för inmatning av gruppdata och fullständiga datakällor för databearbetning.
 exl-id: 24a44b7a-64fd-4a99-975f-4887f4638812
 translation-type: tm+mt
-source-git-commit: 03a2b346dc6940bc7471de454f73c58f5462a0bb
+source-git-commit: 53b15f9c5895e856ff627fbc520d4743fbc57eba
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 5%
@@ -65,8 +65,8 @@ Mer information finns i följande jämförelse av fältvärden som är tillgäng
 | linkName | linkName | Namn på länk. |
 | linkType | linkType | Typ av länk. Värden som stöds är: `d: Download link`, `e: Exit link`, `o: Custom link`. |
 | linkURL | linkURL | HREF of link. |
-| list Exempelvis list2. | Stöds inte | En avgränsad lista med värden som skickas till en variabel och sedan rapporteras som enskilda radposter för rapportering. |
-| marketingCloudVisitorID | Stöds inte | Marketing Cloud ID. Se [Besökaridentifiering](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en#id-service-api) och Marketing Cloud Visitor ID-tjänsten. |
+| list Exempelvis list2. | Stöds inte | En avgränsad lista med värden som skickas till en variabel och sedan rapporteras som enskilda radposter för rapportering |
+| marketingCloudVisitorID | Stöds inte | Marketing Cloud ID. Se [Besökaridentifiering](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en#id-service-api) och tjänsten Marketing Cloud Visitor ID |
 | Stöds inte | charSet | Den teckenuppsättning som stöds för din webbplats. Exempel: UTF-8, ISO-8859-1 osv. |
 | Stöds inte | clickAction | Objektidentifierare för besökarens klickkarta (oid) |
 | Stöds inte | clickActionType | Objektidentifierartyp för klickkarta för besökare (oidt) |
@@ -76,7 +76,7 @@ Mer information finns i följande jämförelse av fältvärden som är tillgäng
 | Stöds inte | clickTag | Objekttaggsnamn för besökarens klickkarta (inte) |
 | Stöds inte | scXmlVer | Marknadsföringen rapporterar XML-begärans versionsnummer (till exempel 1.0). |
 | Stöds inte | tidszon | Besökarens tidszonsförskjutning från GMT i timmar (till exempel -8). |
-| pageName | pageName | Sidans namn. |
+| pageName | pageName | Sidans namn |
 | pageType | pageType | Typ av sida (t.ex. &quot;Felsida&quot;). |
 | pageURL | pageURL | Sidans URL (t.ex. https://www.example.com/index.html). |
 | plugin-program | plugin-program | Semikolonavgränsad lista med namn på webbläsarplugin-program. |
