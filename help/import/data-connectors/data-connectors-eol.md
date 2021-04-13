@@ -1,14 +1,14 @@
 ---
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
+exl-id: b407675a-9fcf-4f24-bc88-69ccdb5b3658
 translation-type: tm+mt
-source-git-commit: 5a9f3d32964dddd9df2728449d2d388a155e64a9
+source-git-commit: b1d4425a81fe4b3ee3ff7516ca7505698fe2ea3a
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '533'
 ht-degree: 11%
 
 ---
-
 
 # Slutet av livscykeln för Adobe-dataanslutningar
 
@@ -81,7 +81,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Lyris HQ | Undertryckt |
 | MaritzCX (V 2.0) | Undertryckt |
 | Merkle | Undertryckt |
-| Oraclets officiella Eloqua-integrering | Undertryckt |
+| Oraclets officiella Eloqua-integrering | Migrerar till Exchange |
 | optivo broadmail (Episerver) | Migrerar till Exchange |
 | Qualtrics v2 | Migrerar till Exchange |
 | Responsys 2.0 | Undertryckt |
