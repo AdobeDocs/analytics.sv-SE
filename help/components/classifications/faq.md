@@ -1,14 +1,14 @@
 ---
 title: Vanliga frågor om klassificeringar
 description: Frågor och svar om hur du använder klassificeringar.
+exl-id: e929d7cb-0bfd-46de-88d1-aea2b4b91911
 translation-type: tm+mt
-source-git-commit: a63b8ae3948ffd9a37058696aa1b1d4c923709ba
+source-git-commit: ecef181e0d2ab06c68a5af2b50f14f4c7dd7c285
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # Vanliga frågor om klassificeringar
 
@@ -34,6 +34,8 @@ Ja, *Om du gör det räknas varje dimensionsobjekt som ett fakturerbart serversa
 * Om du använder funktionen för att skapa klassificeringsregler klassificeras inte objekt som inte finns och medför därför inte någon extra kostnad.
 
 ## Hur klassificerar jag värden som innehåller specialtecken?
+
+Det går inte att använda inledande och avslutande blanksteg i någon av klassificeringsdata och träffdata eftersom Adobe Analytics kommer att korta av tomma tecken från dessa data.
 
 Att använda specialtecken som kommatecken eller dubbla citattecken i rapporter rekommenderas vanligtvis inte. I vissa fall är det dock nödvändigt att använda dem. Om dina rapportvärden innehåller tecken som du väljer att klassificera gör du så här:
 
