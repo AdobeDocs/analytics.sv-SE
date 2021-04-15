@@ -1,20 +1,20 @@
 ---
-description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som och spara som mall.
+description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som, spara som mall och öppna tidigare versioner.
 title: Spara projekt
 feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
 translation-type: tm+mt
-source-git-commit: b199eb9b5eea1a6a0f336dbc0898114102f58348
+source-git-commit: e4bfa3c523efc10d8ae7a32dc59861894ef0e1bf
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
 
 # Spara projekt
 
-Om du vill spara ändringarna i ett projekt går du till menyn Arbetsyta **[!UICONTROL Project]**. Dessutom sparar Adobe projekt automatiskt i vissa fall.
+Om du vill spara ändringarna i ett projekt går du till menyn Arbetsyta **[!UICONTROL Project]**. Arbetsytan sparar även projekt automatiskt i vissa fall.
 
 ## Spara projektalternativ {#Save}
 
@@ -22,8 +22,8 @@ Det finns olika åtgärder att spara som du kan utföra under menyn **[!UICONTRO
 
 | Åtgärd | Beskrivning |
 |---|---| 
-| **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en (valfri) beskrivning och (valfritt) att lägga till taggar. |
-| **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningarna lagras med projektversionen och är tillgängliga för alla redigerare under Projekt > Öppna föregående version. |
+| **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en beskrivning (valfritt) och lägga till (valfria) taggar. |
+| **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningar lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
 | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
 | **[!UICONTROL Save as template]** | Spara projektet som en [anpassad mall](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgänglig för din organisation under **[!UICONTROL Project > New]** |
 
@@ -49,7 +49,7 @@ Webbläsaren varnar för att ändringar som inte sparats går förlorade. Du kan
 
 ### Webbläsaren kraschar eller sessionstider ut
 
-När användaren återgår till arbetsytan för **befintliga**-projekt visas en modal **projektåterställning**. Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
+När du återgår till arbetsytan för **befintliga**-projekt visas en modal **projektåterställning**. Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
 
 ![](assets/project-recovery.png)
 
