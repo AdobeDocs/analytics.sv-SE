@@ -5,9 +5,9 @@ feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
 translation-type: tm+mt
-source-git-commit: b6bf9e97c2eada3b9510d50c4c9196d7b09b5a65
+source-git-commit: b199eb9b5eea1a6a0f336dbc0898114102f58348
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '442'
 ht-degree: 2%
 
 ---
@@ -57,9 +57,14 @@ För **nya**-projekt som aldrig har sparats går det inte att återställa ändr
 
 ## Öppna föregående version {#previous-version}
 
+>[!NOTE]
+>
+>Tidigare projektversioner är för närvarande i begränsad version.
+
 Så här öppnar du en tidigare version av ett projekt:
 
-1. Gå till Projekt > Öppna föregående version
-1. Granska listan över tidigare versioner. Tidsstämpel och redigerare tillhandahålls, förutom anteckningar om de lades till när redigeraren sparades. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
-1. Välj en tidigare version och klicka på Läs in.
-1. Den föregående versionen läses in med ett meddelande. Den tidigare versionen blir inte den aktuella sparade versionen av projektet förrän du klickar på Spara. Om du navigerar bort från den inlästa versionen visas den senast sparade versionen av projektet när du kommer tillbaka.
+1. Gå till **[!UICONTROL Project]** > **[!UICONTROL Open previous version]**
+1. Granska listan över tidigare versioner.
+   [!UICONTROL Timestamp] och  [!UICONTROL Editor] visas förutom  [!UICONTROL Notes] om de lades till när de  [!UICONTROL Editor] sparades. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
+1. Välj en tidigare version och klicka på **[!UICONTROL Load]**.
+Den föregående versionen läses sedan in med ett meddelande. Den tidigare versionen blir inte den aktuella sparade versionen av projektet förrän du klickar på **[!UICONTROL Save]**. Om du navigerar bort från den inlästa versionen visas den senast sparade versionen av projektet när du kommer tillbaka.
