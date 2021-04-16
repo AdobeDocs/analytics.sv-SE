@@ -2,16 +2,16 @@
 description: Krav för att använda DFA-dataanslutningen med Adobe Analytics.
 keywords: DFA
 title: Förutsättningar
-topic: Dataanslutningar
+feature: Data Connectors
 uuid: b5f5e30c-e269-41a4-9236-5ddc404bfd94
+exl-id: aa47c54f-d98a-47cb-806f-3f16d783c207
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '394'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Förutsättningar{#prerequisites}
 
@@ -31,4 +31,3 @@ Innan du startar integreringen av DFA med Adobe Data Connectors gör du följand
 * (Valfritt) Identifiera rapporter och analyshändelser som lagrar DFA-kostnadsdata. Du kanske vill byta namn på händelserna.
 * (Valfritt) Identifiera en anpassad variabel för rapporter och analyser och en lyckad händelse som lagrar DFA-fel och tidsgränser. Dessa variabler hjälper till att diagnostisera problem som kan uppstå med integreringen.
 * (Valfritt) Skapa ett särskilt e-postkonto för att ta emot information och meddelanden relaterade till integreringen av Data Connectors för DFA.
-
