@@ -1,13 +1,16 @@
 ---
 description: Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter och andra Suite-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via Analytics-gränssnittet.
 title: Webbtjänster
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: ccae04cf-f58c-490e-baaa-ee04c534b28d
+exl-id: d003d40e-b0b6-44f3-b9ef-ce6af61f5eb5
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
-
 
 # Webbtjänster
 
@@ -17,11 +20,11 @@ Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter 
 
 ## Hantera webbtjänster
 
-I Hantering av användare > [Grupper](/help/admin/user-management2/c-user-groups/groups.md) kan du uppdatera webbtjänståtkomstgruppen så att den omfattar de användare som behöver åtkomst till webbtjänstens API:er.
+I Användarhantering > [Grupper](/help/admin/user-management2/c-user-groups/groups.md) kan du uppdatera webbtjänståtkomstgruppen så att den omfattar de användare som behöver åtkomst till webbtjänstens API:er.
 
 ## WSDL: Ladda ned Web Services API WSDL för webbtjänstutvecklare.
 
-Besök [Adobe I/O](https://www.adobe.io/apis/experiencecloud/analytics.html), som innehåller dokumentation, exempelkod och forum för API:erna för Web Services. Klicka på Webbtjänstens API:er - översikt för mer information.
+Besök [Adobe I/O](https://www.adobe.io/apis/experiencecloud/analytics.html), som innehåller dokumentation, exempelkod och forum för webbtjänstens API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
 
 ## Filtreringsalternativ
 
