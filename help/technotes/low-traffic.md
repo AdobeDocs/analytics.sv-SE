@@ -1,20 +1,20 @@
 ---
 description: När en rapport har ett stort antal unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten.
 title: Lågtrafikvärde i Adobe Analytics
-topic: Metrics
+feature: Mätvärden
 uuid: 56f723f8-94e8-478f-8ea3-16dad21dfa1f
+exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
 
-
 # Lågtrafikvärde i Adobe Analytics
 
-När en rapport har ett stort antal unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten. Unika variabelvärden som samlats in efter cirka 500 000 befintliga värden listas under en radobjekt med namnet **(lågtrafik)**.
+När en rapport har ett stort antal unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten. Unika variabelvärden som samlats in efter cirka 500 000 befintliga värden listas under ett radobjekt med namnet **(Lågtrafik)**.
 
 ## Hur låg trafik fungerar
 
@@ -48,7 +48,7 @@ Olika funktioner behandlar lågtrafikvärden på olika sätt.
 
 * **data warehouse:** Det finns ingen gräns för antalet unika värden i Data warehouse-rapporter. Dess unika arkitektur gör det möjligt att rapportera hur många unika värden som helst.
    * I vissa begränsade scenarier kan lågtrafikvärden fortfarande förekomma. Exempel är listvariabler, listprops, eVars för försäljning och detaljdimensioner för marknadsföringskanaler.
-* **Segmentering:** Om segmentkriterierna innehåller en variabel med ett stort antal unika värden, inkluderas inte värden som hämtats under lågtrafik.
-* **Klassificeringar:** Klassificeringsrapporterna omfattas också av unika begränsningar. Om en klassificerings överordnade variabelvärde inkluderas under lågtrafik, klassificeras inte värdet.
+* **Segmentering:** Om segmentvillkoret innehåller en variabel med ett stort antal unika värden, inkluderas inte värden som hämtats under lågtrafik.
+* **Klassificeringar:** Klassificeringsrapporter omfattas också av unika begränsningar. Om en klassificerings överordnade variabelvärde inkluderas under lågtrafik, klassificeras inte värdet.
    * Lågtrafikklassificerade värden som erhållits av importören kan visas i Data warehouse. <!-- AN-115871 -->
    * Lågtrafikklassificeringsvärden som erhållits via regelbyggaren *kan inte* visas i Data warehouse. <!-- AN-122872 -->
