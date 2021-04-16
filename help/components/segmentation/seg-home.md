@@ -1,23 +1,23 @@
 ---
 description: Med Adobe Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter.
-keywords: segmentation;segments
+keywords: segmentering;segment
 title: Analytics-segmentering
-topic: Segments
+feature: Segment
 uuid: 845c1743-1264-4090-bccc-78830477f52e
+exl-id: e8adafc2-1d25-47ba-80e8-5b5c8d54567d
 translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 4%
 
 ---
-
 
 # Analytics-segmentering
 
 Med Adobe Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter.
 
-Analyssegmentering innefattar [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) för att konstruera segment och köra ett test före testet, och [segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela segment i hela organisationen.
+Analyssegmentering inkluderar [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md) för att konstruera segment och köra en förhandstestning, och [Segment Manager](/help/components/segmentation/segmentation-workflow/seg-workflow.md) för att samla in, tagga, godkänna, ställa in säkerhet och dela segment i hela organisationen.
 
 ![](assets/seg__overview.png)
 
@@ -25,4 +25,4 @@ Data Scientister och marknadsföringsanalytiker kan använda, utöka och förfin
 
 **Komma igång**
 
-Börja med att [konfigurera ett segmenteringsarbetsflöde](/help/components/segmentation/segmentation-workflow/seg-workflow.md) eller [skapa segment](/help/components/segmentation/segmentation-workflow/seg-build.md), eller se [Om segment](/help/components/segmentation/seg-overview.md) för en snabb översikt.
+Börja med [Konfigurera ett segmenteringsarbetsflöde](/help/components/segmentation/segmentation-workflow/seg-workflow.md) eller [Bygga segment](/help/components/segmentation/segmentation-workflow/seg-build.md), eller läs [Om segment](/help/components/segmentation/seg-overview.md) om du vill ha en snabb översikt.
