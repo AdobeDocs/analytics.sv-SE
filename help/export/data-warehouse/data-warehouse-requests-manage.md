@@ -1,27 +1,27 @@
 ---
 description: Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.
 title: Hantera Data Warehouse-förfrågningar
-topic: Data warehouse
+feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
+exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 5%
+source-wordcount: '154'
+ht-degree: 6%
 
 ---
-
 
 # Hantera Data Warehouse-förfrågningar
 
 Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.
 
-I Data warehouse väljer du **[!UICONTROL Request Manager]** fliken.
+I Data warehouse väljer du fliken **[!UICONTROL Request Manager]**.
 
 Om du arbetar på den här fliken kan du
 
 * Visa senaste rapportbegäranden efter rapportnamn, använt segment, begärande, datum och status för begäran.
-* Dubblettbegäranden. Klicka **[!UICONTROL Duplicate]** bredvid förfrågan.
+* Dubblettbegäranden. Klicka på **[!UICONTROL Duplicate]** bredvid begäran.
 
    >[!NOTE]
    >
