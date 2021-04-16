@@ -2,16 +2,16 @@
 description: Bearbetningsregler förenklar datainsamling och hantering av innehåll när det skickas till rapportering.
 subtopic: Processing rules
 title: Översikt över behandlingsregler
-topic: Administratörsverktyg
+feature: Administratörsverktyg
 uuid: 6b4ee7c9-2b86-47a6-b64c-c8d644fff67d
+exl-id: 0244aba2-4345-463a-8528-d4dcd2f872ff
 translation-type: tm+mt
-source-git-commit: 7f34aa3b5056c56516daea6144723a1751ef9051
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 2%
 
 ---
-
 
 # Översikt över behandlingsregler
 
