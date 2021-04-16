@@ -2,16 +2,16 @@
 description: Implementera Adobe Analytics med dynamisk tagghantering.
 keywords: Analysimplementering;implementeringsmetod;dynamisk tagghantering;dtm
 title: Översikt över DTM-implementering
-topic: Utvecklare och implementering
+topic-fix: Developer and implementation
 uuid: 2d40cb7a-5c69-4f41-81a7-c48373c2d720
+exl-id: 0198422b-af3a-45ce-a41c-bbc9242580bc
 translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # Översikt över DTM-implementering
 
@@ -32,4 +32,3 @@ Den här guiden leder dig genom följande steg för att implementera Analytics m
 1. Skapa [dataelement](/help/implement/other/dtm/t-data-element.md), [regler och villkor](/help/implement/other/dtm/c-rules/t-rules-create.md) och [åtgärder](/help/implement/other/dtm/c-rules/t-rules-actions.md).
 
 1. Publicera verktyg och regler på produktionsservern.
-
