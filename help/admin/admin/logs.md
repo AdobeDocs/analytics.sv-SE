@@ -1,15 +1,15 @@
 ---
 description: Logga filer som hjälper dig att se när användare loggar in, deras användning, åtkomst, rapportsviter och administratörsändringar.
 title: Loggar
-topic: Admin tools
+feature: Administratörsverktyg
+exl-id: 43f79e2a-2cb9-47eb-982a-54714c9cbafc
 translation-type: tm+mt
-source-git-commit: 9b56730548975435c5607428e4c71efda1d6a8d0
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '584'
 ht-degree: 2%
 
 ---
-
 
 # Loggar
 
@@ -17,13 +17,13 @@ Logga filer som hjälper dig att se när användare loggar in, deras användning
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Logs]**
 
-## Administratörslogg {#section_8ADE8A7204A8401C968ABC20AECA381D}
+## Administratörsloggen {#section_8ADE8A7204A8401C968ABC20AECA381D}
 
 Administratörsloggen rapporterar alla ändringar som gjorts av administratörer i administrationsverktygen. Loggen tillhandahåller en gateway till användardefinierade rapporter från någon av de tre loggarna. Du kan söka efter händelser som matchar de valda villkoren i ett visst datumintervall.
 
 ## Logg för användning och åtkomst {#section_6FBAF92D9EA244809C45A78A2F0A7232}
 
-Med [!UICONTROL Usage and Access Log] den kan du utvärdera rapportanvändningen på användarkontonivån. Den spårar till exempel åtgärder som är öppna, skapa, uppdatera, dela upp och ta bort i Analysis Workspace. Detta ger bättre synlighet för vem som använder Workspace och hur ofta.
+Med [!UICONTROL Usage and Access Log] kan du utvärdera rapportanvändningen på användarkontonivån. Den spårar till exempel åtgärder som är öppna, skapa, uppdatera, dela upp och ta bort i Analysis Workspace. Detta ger bättre synlighet för vem som använder Workspace och hur ofta.
 
 | Element | Beskrivning |
 |---|---|
@@ -33,7 +33,7 @@ Med [!UICONTROL Usage and Access Log] den kan du utvärdera rapportanvändningen
 | Report Suite | Filtrera loggen med ett specifikt rapportpaket-ID. |
 | Händelsetyp | Filtrera loggen efter en händelsetyp. Välj en händelsetyp i listrutan. Se den fullständiga listan över händelsetyper nedan. |
 | Händelse | Filtrera loggen med ett ord eller en fras i händelsebeskrivningen. |
-| Hämta rapport | Exporterar innehållet i filen [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
+| Hämta rapport | Exporterar innehållet i [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
 
 ### Händelsetyper
 
@@ -75,7 +75,7 @@ Med [!UICONTROL Usage and Access Log] den kan du utvärdera rapportanvändningen
 
 Ändringsloggen för Report Suite visar ändringar som gjorts i rapportsviterna utanför Admin.
 
-Verktyg som kan ändra en rapportssvit utanför [!UICONTROL Admin Tools] :
+Verktyg som kan ändra en rapportserie utanför [!UICONTROL Admin Tools] är:
 
 * Klassificeringar som överförts i en webbläsare (klassificeringar som överförts via FTP inkluderas inte i ändringsloggen)
 * Ändringar som gjorts i tidigare versioner.
@@ -88,5 +88,4 @@ Verktyg som kan ändra en rapportssvit utanför [!UICONTROL Admin Tools] :
 | Inloggning | Filtrera loggen efter användarnamn. |
 | IP | Filtrera loggen med en IP-adress. |
 | Händelse | Filtrera loggen med ett ord eller en fras i händelsebeskrivningen. |
-| Hämta rapport | Exporterar innehållet i filen [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
-
+| Hämta rapport | Exporterar innehållet i [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
