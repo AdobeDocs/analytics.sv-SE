@@ -2,13 +2,13 @@
 description: (Valfritt) Innan du importerar klassificeringar till marknadsföringsrapporter kan du hämta en mall som hjälper dig att skapa en klassificeringsdatafil. I datafilen används de klassificeringar du vill använda som kolumnrubriker, och sedan ordnas rapportdatauppsättningen under rätt klassificeringsrubriker.
 subtopic: Classifications
 title: Klassificeringsmall
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: 4edd411b-164c-4b4d-a872-b57a3163ca72
 translation-type: tm+mt
-source-git-commit: af41b67c4fb1bb3cfe363be5619d382399cf5bca
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 3%
+source-wordcount: '311'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +36,7 @@ Mallen innehåller de för närvarande definierade klassificeringarna (kolumnrub
 >
 >Mallmetoden begränsar nedladdningen av klassificeringsdata till en enda rapportserie.
 
-Mer information om datafilens struktur finns i [Klassificeringsdatafiler](/help/components/classifications/importer/c-saint-data-files.md).
+Mer information om datafilens struktur finns i [Om klassificeringsdatafiler](/help/components/classifications/importer/c-saint-data-files.md).
 
 ## Hämta en mall för klassificeringsdata (valfritt) {#task_8DFCF309B6FD43ABB1D6FEE9AFAEC596}
 
@@ -47,9 +47,9 @@ Mallen innehåller det filformat som du måste följa för klassificeringar.
 >Mallmetoden begränsar datainläsningen till en enda rapportserie.
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
-1. På **[!UICONTROL Download Template]** fliken anger du [datamallens konfiguration](/help/components/classifications/importer/c-download-saint-data.md).
+1. På fliken **[!UICONTROL Download Template]** anger du [datamallskonfigurationen](/help/components/classifications/importer/c-download-saint-data.md).
 1. Klicka på **[!UICONTROL Download]**.
 1. Spara mallfilen på ditt lokala system.
 
-   Mallfilen är en tabbavgränsad datafil ( [!DNL .tab] filnamnstillägg) som stöds av de flesta kalkylbladsprogram.
+   Mallfilen är en tabbavgränsad datafil ( [!DNL .tab] filnamnstillägg) som stöds i de flesta kalkylbladsprogram.
 
