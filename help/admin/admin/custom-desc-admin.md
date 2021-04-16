@@ -1,22 +1,22 @@
 ---
 description: Du kan ange anpassade rapportbeskrivningar för eVars, props, klassificeringar och händelser. Beskrivningarna är synliga för alla slutanvändare.
 title: Anpassade rapportbeskrivningar
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: df7b57ab-4bd9-4465-bcd1-d47647eed3ff
+exl-id: f9bcd01c-acca-47a4-b9b5-751b3068a5ad
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 2%
 
 ---
-
 
 # Anpassade rapportbeskrivningar
 
 Du kan ange anpassade rapportbeskrivningar för eVars, props, klassificeringar och händelser. Beskrivningarna är synliga för alla slutanvändare.
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL *variabel *]**
+**[!UICONTROL Analytics]** >  **[!UICONTROL Admin]** >  **[!UICONTROL Report Suites]** >  **[!UICONTROL Edit Settings]** >  **[!UICONTROL *variabel *]**
 
 >[!NOTE]
 >
@@ -36,4 +36,3 @@ Beskrivningen visas på två ställen:
 * Som ett verktygstips när du hovrar över rapporten i den vänstra navigeringen:
 
    ![](assets/report_description_3.png)
-
