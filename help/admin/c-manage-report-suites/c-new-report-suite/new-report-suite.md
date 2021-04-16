@@ -1,16 +1,16 @@
 ---
 description: Du kan skapa en ny rapportserie genom att välja en fördefinierad mall eller genom att använda en av dina befintliga rapportsviter som modell.
 title: Ny rapportsvit – inställningar
-topic: Administratörsverktyg
+feature: Administratörsverktyg
 uuid: 3508f684-11a3-4c8f-a233-bea6bafd57c0
+exl-id: ea5f8543-058d-4e08-bc66-575e3a7460c2
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 2%
 
 ---
-
 
 # Ny rapportsvit – inställningar
 
@@ -68,4 +68,3 @@ Beskrivningar av elementen som används när [en rapportsvit](/help/admin/c-mana
   </tr>  
  </tbody> 
 </table>
-
