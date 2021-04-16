@@ -2,13 +2,16 @@
 description: Datakällkategorier identifierar olika typer av datakällor som erbjuder liknande funktionalitet.
 subtopic: Data sources
 title: Översikt över datatyper och kategorier
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: b5004cdc-b68a-4a82-a159-a7cd7b8bfe21
+exl-id: d459fd06-a0fe-49e6-8624-b42f0c60ee6e
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 4%
 
 ---
-
 
 # Översikt över datatyper och kategorier
 
@@ -29,11 +32,11 @@ Med kategorier kan du gruppera datakällor utifrån användarens perspektiv. Nä
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Webbserverloggfiler </p> </td> 
-   <td colname="col2"> <p> <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-web-log.md"   > Webblogg </a> </p> </td> 
+   <td colname="col2"> <p> <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-web-log.md"   > Webblogg  </a> </p> </td> 
    <td colname="col3"> <p>De flesta webbservrar genererar loggfiler som registrerar varje sida som hanteras. Med den här datakällan kan du bearbeta loggfilerna från de flesta webbserverdata och lägga till dessa data i dina rapporter. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Advertising Cloud - massöverföring </p> </td> 
+   <td colname="col1"> <p>Advertising Cloud Bulk Upload </p> </td> 
    <td colname="col2"> <p> <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-conversion.md"   > Konvertering </a> </p> </td> 
    <td colname="col3"> <p>Ger manuella och automatiserade massöverföringar i Advertising Cloud. </p> </td> 
   </tr> 
@@ -103,7 +106,7 @@ Med kategorier kan du gruppera datakällor utifrån användarens perspektiv. Nä
  </tbody> 
 </table>
 
-## Nöjda kunder {#section_1058CA3860044630B0B06EEDA261DBA2}
+## Kundnöjdhet {#section_1058CA3860044630B0B06EEDA261DBA2}
 
 <table id="table_3811CA1E2B7C45D7A0CBEC5CE44C11A8"> 
  <thead> 
@@ -155,11 +158,11 @@ Med kategorier kan du gruppera datakällor utifrån användarens perspektiv. Nä
   <tr> 
    <td colname="col1"> <p> </p> <p>Allmän datakälla (endast sammanfattningsdata) </p> </td> 
    <td colname="col2"> <p> <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-conversion.md"   > Konvertering </a> </p> </td> 
-   <td colname="col3"> <p>Använd den här datakällan när det inte finns någon bättre överensstämmelse med den typ av data som du vill importera till marknadsföringsrapporter och analyser. </p> </td> 
+   <td colname="col3"> <p>Använd den här datakällan när det inte finns någon bättre matchning mot den typ av data som du vill importera till marketing reports and analytics. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Allmän datakälla (fullständig bearbetning) </p> </td> 
-   <td colname="col2"> <p> <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning </a> </p> </td> 
+   <td colname="col2"> <p> <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning  </a> </p> </td> 
    <td colname="col3"> <p>Gör att du kan importera loggfilsdata. Dessa data bearbetas som om de togs emot av datainsamlingsservrar vid den angivna tidpunkten (varje träff får en tidsstämpel). </p> </td> 
   </tr> 
   <tr> 
@@ -227,4 +230,3 @@ Med kategorier kan du gruppera datakällor utifrån användarens perspektiv. Nä
   </tr> 
  </tbody> 
 </table>
-
