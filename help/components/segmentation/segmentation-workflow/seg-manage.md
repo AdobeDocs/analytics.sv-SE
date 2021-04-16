@@ -1,16 +1,16 @@
 ---
 description: Segmenthanteraren erbjuder många sätt att strukturera segment, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 title: Hantera segment
-topic: Segment
+feature: Segment
 uuid: 47d54822-a662-471d-8dab-03ddf6c2f395
+exl-id: be182a55-23cb-415f-a7d0-3c1efeead1a1
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 5%
 
 ---
-
 
 # Hantera segment
 
@@ -31,9 +31,9 @@ Denna [Adobe Analytics-video](https://docs.adobe.com/content/help/en/analytics-l
 
 | # | Gränssnittsfunktion | Beskrivning |
 |---|---|---|
-| 1 | Verktygsfält för segmenthantering | När du har markerat ett segment visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
+| 3 | Verktygsfält för segmenthantering | När du har markerat ett segment visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
 | 2 | Visa filter | När du klickar på filterikonen visas filtermenyn. Du kan filtrera efter taggar, ägare, Visa alla (endast administratör), Min, Favoriter, Godkänd och Delade med mig. |
-| 1 | Kryssrutor | Kontrollera ett segment för att hantera det. |
+| 3 | Kryssrutor | Kontrollera ett segment för att hantera det. |
 | 4 | Favoriter | Om du klickar på stjärnan bredvid ett segment ändras stjärnans gula färg och segmentet markeras som en favorit. |
 | 5 | Segmenttitlar och beskrivningar | Tillhandahålls i Segment Builder. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till segmentbyggaren. |
 | 6 | Rapportsviter | Den här kolumnen anger i vilken rapportsserie segmentet senast sparades. |
