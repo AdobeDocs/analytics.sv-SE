@@ -2,12 +2,12 @@
 description: Importören låter dig ladda upp klassificeringsdata gruppvis för att analysera rapporter i en fil. Importen kräver ett specifikt filformat för slutförda dataöverföringar.
 subtopic: Classifications
 title: Datafiler för klassificering
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: f27bb812-56e0-472a-9993-d869f0fea700
 translation-type: tm+mt
-source-git-commit: af41b67c4fb1bb3cfe363be5619d382399cf5bca
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Importören låter dig ladda upp klassificeringsdata gruppvis för att analysera
 
 Du kan skapa giltiga datafiler genom att hämta en mallfil som innehåller en filstruktur där du kan klistra in klassificeringsdata. Mer information finns i [Hämta klassificeringsmall](/help/components/classifications/importer/c-download-saint-data.md).
 
-Mer information om teckengränser i klassificeringar finns i [Allmän filstruktur](/help/components/classifications/importer/c-saint-data-files.md) .
+Mer information om teckengränser i klassificeringar finns i [Allmän filstruktur](/help/components/classifications/importer/c-saint-data-files.md).
 
 ## Allmän filstruktur
 
@@ -32,7 +32,7 @@ En datafil måste följa följande strukturregler:
 * Klassificeringar kan inte ha värdet 0 (noll).
 * Adobe rekommenderar att du begränsar antalet import- och exportkolumner till 30.
 * Överförda filer ska använda UTF-8 utan BOM-teckenkodning.
-* Specialtecken, som tabbar, radmatningar och citattecken, kan bäddas in i en cell förutsatt att filformatet v2.1 har angetts och cellen [escape-konverteras](/help/components/classifications/importer/t-classifications-escape-data.md). Specialtecken är:
+* Specialtecken som tabbar, radmatningar och citattecken kan bäddas in i en cell förutsatt att filformatet v2.1 har angetts och cellen är korrekt [escape](/help/components/classifications/importer/t-classifications-escape-data.md). Specialtecken är:
 
    ```
    \t     tab character 
@@ -44,10 +44,10 @@ En datafil måste följa följande strukturregler:
    Kommatecknet är inte ett specialtecken.
 
 * Klassificeringar kan inte innehålla cirkumflex (^) eftersom det här tecknet används för att ange en underklassificering.
-* Var försiktig när du använder bindestreck. Om du t.ex. använder ett bindestreck (-) i en social term tolkas bindestrecket som en [!DNL Not] operator (minustecknet) i Social. Om du t.ex. anger *`fragrance-free`* en term med hjälp av importen tolkas termen som *`minus`* fri från fragment, och inlägg som innehåller *`fragrance`*, men inte *`free`*, samlas in.
+* Var försiktig när du använder bindestreck. Om du t.ex. använder ett bindestreck (-) i en social term tolkas bindestrecket som en [!DNL Not]-operator (minustecknet) i Social. Om du till exempel anger *`fragrance-free`* som en term med importen känner Social igen termen som fragment *`minus`* ledigt och samlar in inlägg som anger *`fragrance`*, men inte *`free`*.
 * Teckengränser används för att klassificera rapportdata. Om du till exempel överför en klassificeringstextfil för produkter ( *`s.products`*) med produktnamn som är längre än 100 tecken (byte) visas inte produkterna i rapporter. Spårningskoder och alla anpassade konverteringsvariabler (eVars) tillåter 255 byte.
 * Tabbavgränsad datafil (skapa mallfilen med valfritt kalkylbladsprogram eller textredigeringsprogram).
-* Antingen ett [!DNL .tab] - eller [!DNL .txt] filtillägg.
+* Antingen ett [!DNL .tab]- eller [!DNL .txt]-filtillägg.
 * Ett nummertecken (#) identifierar raden som en användarkommentar. Adobe ignorerar alla rader som börjar med #.
 * Ett dubbelnummertecken följt av SC (# SC) identifierar raden som en huvudkommentar för förbearbetning som används vid rapportering. Ta inte bort de här raderna.
 * Klassificeringsexporter kan ha dubblettnycklar på grund av radmatningstecken i nyckeln. I en FTP- eller webbläsarexport kan detta lösas genom aktivering av offert för FTP-kontot. Då placeras citattecken runt varje tangent med radmatningstecken.
@@ -71,7 +71,7 @@ En datafil måste följa följande strukturregler:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>&lt;Ny rad&gt; </p> </td> 
+   <td colname="col1"> <p>&lt;new Line=""&gt; </p> </td> 
    <td colname="col2"> <p>Ett nytt radtecken är den enda avgränsare som stöds mellan datarader/poster i datafilen. Normalt behöver du bara infoga dessa tecken när du skriver ett program för att automatiskt generera datafiler. </p> </td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ En datafil måste följa följande strukturregler:
   </tr> 
   <tr> 
    <td colname="col1"> <p>PER-modifierare </p> </td> 
-   <td colname="col2"> <p>Anger att datakolumnen representerar ett <span class="wintitle"> PER Modifier- </span> fält. Se <a href="/help/components/classifications/importer/c-saint-data-files.md"  > PER Modifier Headings </a>. </p> </td> 
+   <td colname="col2"> <p>Anger att datakolumnen representerar ett <span class="wintitle"> PER Modifier </span>-fält. Se <a href="/help/components/classifications/importer/c-saint-data-files.md"  > PER Modifier Headings </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -108,57 +108,57 @@ Klassificeringsfiler har stöd för följande kolumnrubriker:
 
 ### Nyckel
 
-Varje värde måste vara unikt i hela systemet. Värdet i det här fältet motsvarar ett värde som är tilldelat till [!DNL Analytics] variabeln i [!DNL JavaScript] beacon på din webbplats. Data i den här kolumnen kan innehålla ~autogen~ eller annan unik spårningskod.
+Varje värde måste vara unikt i hela systemet. Värdet i det här fältet motsvarar ett värde som tilldelats variabeln [!DNL Analytics] på webbplatsens [!DNL JavaScript]-fyr. Data i den här kolumnen kan innehålla ~autogen~ eller någon annan unik spårningskod.
 
 ### Klassificeringskolumnrubrik
 
-Rapporter och analyser innehåller till exempel automatiskt två klassificeringar för [!UICONTROL Campaign] variabler: [!UICONTROL Campaigns] och [!UICONTROL Creative Elements]. Om du vill lägga till data i [!UICONTROL Campaigns] klassificeringen blir kolumnrubriken i klassificeringsdatafilen [!UICONTROL Campaigns].
+Rapporter och analyser innehåller till exempel automatiskt två klassificeringar för [!UICONTROL Campaign]-variabler: [!UICONTROL Campaigns] och [!UICONTROL Creative Elements]. Om du vill lägga till data i [!UICONTROL Campaigns]-klassificeringen är kolumnrubriken i klassificeringsdatafilen [!UICONTROL Campaigns].
 
 >[!NOTE]
 >
->Värdena i [!UICONTROL Classifications] kolumnrubriken måste exakt matcha klassificeringens namnkonvention, annars misslyckas importen. Om administratören till exempel ändrar [!UICONTROL Campaigns] till [!UICONTROL Internal Campaign Names] i [!UICONTROL Campaign Set-up Manager]måste filkolumnrubriken ändras så att den matchar.
+>Värdena i [!UICONTROL Classifications]-kolumnrubriken måste exakt matcha klassificeringens namnkonvention, annars misslyckas importen. Om administratören till exempel ändrar [!UICONTROL Campaigns] till [!UICONTROL Internal Campaign Names] i [!UICONTROL Campaign Set-up Manager] måste filkolumnrubriken ändras så att den matchar.
 
 Dessutom stöder datafilen följande ytterligare rubriktexter för att identifiera underklassificeringar och andra specialiserade datakolumner:
 
 ### Underklassificeringsrubrik
 
-är till exempel [!UICONTROL Campaigns^Owner] en kolumnrubrik för kolumnen som innehåller [!UICONTROL Campaign Owner] värden. På samma sätt [!UICONTROL Creative Elements^Size] är en kolumnrubrik för den kolumn som innehåller [!UICONTROL Size] underklassificeringen av [!UICONTROL Creative Elements] klassificeringen.
+[!UICONTROL Campaigns^Owner] är till exempel en kolumnrubrik för kolumnen som innehåller [!UICONTROL Campaign Owner]-värden. På samma sätt är [!UICONTROL Creative Elements^Size] en kolumnrubrik för kolumnen som innehåller underklassificeringen [!UICONTROL Size] för [!UICONTROL Creative Elements]-klassificeringen.
 
 ### Klassificeringsmåttrubriker
 
-Hänvisar till exempel [!UICONTROL Campaigns^~Cost] till [!UICONTROL Cost] måttet i [!UICONTROL Campaigns] klassificeringen.
+[!UICONTROL Campaigns^~Cost] refererar till exempel till måttet [!UICONTROL Cost] i [!UICONTROL Campaigns]-klassificeringen.
 
 ### Rubrik PER-modifierare
 
-*`Per Modifier`* Rubriker betecknas genom tillägg *`~per`* till klassificeringsmeterrubriken. Om rubriken till exempel är *`Metric`* *`Campaigns^~Cost`*&#x200B;är PER-modifierarrubriken *`Campaigns^~Cost~per`*. Adobe stöder följande *`PER Modifier`* nyckelord:
+*`Per Modifier`* Rubriker betecknas genom tillägg  *`~per`* till klassificeringsmeterrubriken. Om rubriken *`Metric`* till exempel är *`Campaigns^~Cost`* är PER-modifierarrubriken *`Campaigns^~Cost~per`*. Adobe stöder följande *`PER Modifier`*-nyckelord:
 
 Dessa tecken har en speciell betydelse i en datafil. Undvik om möjligt att använda dessa ord i attributnamn och data.
 
-**FASTSTÄLLT:** Fast värde. Utför ingen skalförändring.
+**FIXED:** Fast värde. Utför ingen skalförändring.
 
-**DAG:** Multiplicera värdet med antalet dagar i rapporten.
+**DAY:** Multiplicera värdet med antalet dagar i rapporten.
 
-**BESTÄLLNING:** Multiplicera värdet med antalet order för radartikeln i rapporten.
+**ORDER:** Multiplicera värdet med antalet order för radartikeln i rapporten.
 
-**UTCHECKNING:** Multiplicera värdet med antalet utcheckningar för radobjektet i rapporten.
+**CHECKOUT:** Multiplicera värdet med antalet utcheckningar för radobjektet i rapporten.
 
 **ENHET:** Multiplicera värdet med antalet enheter för radobjektet i rapporten.
 
 **INTÄKTER:** Multiplicera värdet med intäktsbeloppet för radposten i rapporten.
 
-**SCAD:** Multiplicera värdet med det antal gånger som [!UICONTROL Shopping Cart Add] händelsen anropades per radartikel i rapporten.
+**SCAD:** Multiplicera värdet med antalet gånger som  [!UICONTROL Shopping Cart Add] händelsen anropades per radobjekt i rapporten.
 
-**SCREMOVE:** Multiplicera värdet med det antal gånger som [!UICONTROL Shopping Cart Remove] händelsen anropades per radartikel i rapporten.
+**SCREMOVE:** Multiplicera värdet med det antal gånger  [!UICONTROL Shopping Cart Remove] händelsen anropades per radobjekt i rapporten.
 
 **INSTANS:** Multiplicera värdet med antalet instanser för radobjektet i rapporten.
 
 **KLICKA:** Multiplicera värdet med antalet klick för radobjektet i rapporten.
 
-**HÄNDELSE:** Multiplicera värdet med det antal gånger som den angivna anpassade händelsen inträffade per radartikel i rapporten.
+**HÄNDELSE:** Multiplicera värdet med det antal gånger den angivna anpassade händelsen inträffade per radartikel i rapporten.
 
-**Exempel:** Om Campaign A kostar 10 000 USD innehåller kolumnen [!UICONTROL Campaigns^~Cost] värdet 10 000 och kolumnen [!UICONTROL Campaigns^~~Kostnad] innehåller [!UICONTROL FIXED]. När du visar kostnaden för kampanj A i rapporterna ser du 10 000 USD som fast kostnad för kampanj A för datumintervallet.
+**Exempel:** Om Campaign A kostar $10 000 innehåller  [!UICONTROL Campaigns^~Cost] kolumnen värdet 10 000 och  [!UICONTROL Campaigns^~~] Costpercolumn innehåller  [!UICONTROL FIXED]. När du visar kostnaden för kampanj A i rapporterna ser du 10 000 USD som fast kostnad för kampanj A för datumintervallet.
 
-**Exempel:** Om Campaign B kostar ungefär $2 per klick innehåller kolumnen 2 och kolumnen [!UICONTROL Campaigns^~Cost] Stper **[!UICONTROL Campaigns^~~innehåller]** [!UICONTROL CLICK]. När du visar kostnaden för Campaign B i rapporterna beräknas Adobe (2 * [antal klick]) direkt för rapportens datumintervall. Detta ger en total kostnadsberäkning baserad på antalet klick som har utförts med Campaign B.
+**Exempel:** Om Campaign B kostar ungefär $2 per klick innehåller  [!UICONTROL Campaigns^~Cost] kolumnen 2 och  **[!UICONTROL Campaigns^~~]** Costpercolumn innehåller  [!UICONTROL CLICK]. När du visar kostnaden för Campaign B i rapporterna beräknas Adobe (2 * [antal klick]) direkt för rapportens datumintervall. Detta ger en total kostnadsberäkning baserad på antalet klick som har utförts med Campaign B.
 
 ### Datum
 
@@ -168,24 +168,25 @@ Mer information finns i [Konverteringsklassificeringar](https://docs.adobe.com/c
 
 >[!NOTE]
 >
->I underhållserbjudandet från 10 maj 2018 började Adobe begränsa funktionaliteten för datumaktiverade och numeriska [!DNL Analytics] klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya datumaktiverade och numeriska klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering.
+>I underhållsutgåvan [!DNL Analytics] från 10 maj 2018 började Adobe begränsa funktionaliteten för datumaktiverade och numeriska klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya datumaktiverade och numeriska klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering.
 
-## Använda datum i kombination med [!UICONTROL classifications] {#section_966A07B228CD4643B258E73FB8BA150A}
+## Använda datum tillsammans med [!UICONTROL classifications] {#section_966A07B228CD4643B258E73FB8BA150A}
 
-[!UICONTROL Classifications] kan användas för att tilldela datumintervall till era kampanjer eller annan konvertering [!UICONTROL classifications]vilket ger en mer korrekt kampanjmätning. När du har angett datumintervallet för ett värde kommer alla matchande värden utanför datumintervallet inte att klassificeras. Detta är användbart för kampanjmätning som vill utnyttja de exakta datum som en kampanj var Live, och inte alla träffar som matchar själva kampanjen. För att ett värde ska kunna klassificeras med ett datumintervall måste följande vara uppfyllt:
+[!UICONTROL Classifications] kan användas för att tilldela datumintervall till era kampanjer eller annan konvertering  [!UICONTROL classifications]vilket ger en mer korrekt kampanjmätning. När du har angett datumintervallet för ett värde kommer alla matchande värden utanför datumintervallet inte att klassificeras. Detta är användbart för kampanjmätning som vill utnyttja de exakta datum som en kampanj var Live, och inte alla träffar som matchar själva kampanjen. För att ett värde ska kunna klassificeras med ett datumintervall måste följande vara uppfyllt:
 
-* Värdet [!UICONTROL classification] måste baseras på en konverteringsvariabel.
-* Den [!UICONTROL classification] som används måste vara Date-Enabled eller Numeric 2.
+* [!UICONTROL classification] måste baseras på en konverteringsvariabel.
+* Det [!UICONTROL classification] som används måste anges som datumaktiverat eller Numerisk 2.
 * Det berörda datumintervallet måste innehålla ett startdatum och (eventuellt) ett slutdatum.
 
 Så här klassificerar du kampanjer baserat på datumintervall:
 
 1. Logga in på [!DNL Analytics] och gå till Admin > Klassificeringar.
-1. Klicka på **[!UICONTROL Browser Export]** fliken, kontrollera att inställningarna för den datumaktiverade klassificeringen är korrekta och klicka sedan på Exportera fil.
+1. Klicka på fliken **[!UICONTROL Browser Export]**, kontrollera att inställningarna för den datumaktiverade klassificeringen är korrekta och klicka sedan på Exportera fil.
 1. Öppna den här filen i Microsoft Excel eller en annan kalkylbladsredigerare som du känner till.
 1. En av kolumnerna avslutas med
 
-   ^~punkt~som är den kolumn där datumintervallet ska anges.
+   ^~punkt~
+vilken kolumn som datumintervallet ska anges i.
 1. I den här kolumnen anger du datumintervallet för varje värde i följande format:
 
    `YYYY/MM/DD - YYYY/MM/DD`. Kontrollera följande:
@@ -195,7 +196,7 @@ Så här klassificerar du kampanjer baserat på datumintervall:
    * Om månaden eller dagen är en enda siffra är det en inledande nolla.
    * Det finns ett startdatumintervall. slutdatumintervallet är valfritt.
 
-1. Spara filen och överför den till [!DNL Analytics] Admin | Klassificeringar | Importera fil.
+1. Spara filen och överför den till [!DNL Analytics] genom att gå till Admin | Klassificeringar | Importera fil.
 
 >[!NOTE]
 >
