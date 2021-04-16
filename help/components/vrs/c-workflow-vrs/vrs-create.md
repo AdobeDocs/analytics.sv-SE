@@ -2,13 +2,16 @@
 description: Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
 keywords: Virtual Report Suite
 title: Skapa virtuella rapportsviter
-topic: Reports and analytics
+feature: Rapporter och analysgrunder
 uuid: 022a6656-808e-4c92-b7ec-4d2a42e84fa8
+exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 4%
 
 ---
-
 
 # Skapa virtuella rapportsviter
 
@@ -51,7 +54,7 @@ Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
   </tr> 
   <tr> 
    <td colname="col1"> Överordnad Report Suite </td> 
-   <td colname="col2"> <p>Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (t.ex. eVar-inställningar, bearbetningsregler, klassificeringar o.s.v.) ärvs. Om du vill ändra de här ärvda inställningarna för ett VRS-system måste du redigera den överordnade rapportsviten (<span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Rapportsviter</span></span>). </p> </td> 
+   <td colname="col2"> <p>Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för ett VRS måste du redigera den överordnade rapportsviten (<span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Rapportsviter</span></span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Tidszon </td> 
@@ -59,8 +62,7 @@ Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
   </tr> 
   <tr> 
    <td colname="col1"> Segment </td> 
-   <td colname="col2"> <p>Du kan bara lägga till ett segment eller <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html"  > stapla segment</a>. </p> <p> <p>Obs!  När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. </p> </p> <p>När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. </p> </td> 
+   <td colname="col2"> <p>Du kan lägga till endast ett segment eller <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html"  > stacksegment</a>. </p> <p> <p>Obs!  När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. </p> </p> <p>När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
