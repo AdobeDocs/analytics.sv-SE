@@ -1,18 +1,18 @@
 ---
 description: Exempel som innehåller ett exempel på serversamtal som skickas i en gemensam kundinteraktion.
-keywords: Analytics Implementation
+keywords: Implementering av analyser
 subtopic: Visitors
 title: Exempel på identifiering av besökare på olika enheter
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: bc5f8f56-52e3-42d8-af1a-7f5c7b9496c0
+exl-id: c68bb745-29de-48e3-8731-d714503a2447
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 11%
 
 ---
-
 
 # Exempel på identifiering av besökare på olika enheter
 
@@ -24,12 +24,12 @@ Följande exempel visar hur identifieringen av besökare på olika enheter funge
 
 | Serversamtal | Åtgärd | Cookie för besökar-ID | Variabel för besökar-ID | Gällande besökar-ID | Besök sidnummer | Besöksnummer |
 |--- |--- |--- |--- |--- |--- |--- |
-| 3 | En besökare klickar på en länk i ett marknadsföringsmejl och besöker er webbplats från hemdatorn. Den här besökaren har besökt din webbplats 7 gånger tidigare. | 3 | - | 1 | 3 | 8 |
-| 2-8 | Besök ytterligare 7 sidor på platsen. | 3 | - | 3 | 2-8 | 8 |
+| 1 | En besökare klickar på en länk i ett marknadsföringsmejl och besöker er webbplats från hemdatorn. Den här besökaren har besökt din webbplats 7 gånger tidigare. | 1 | - | 3 | 1 | 8 |
+| 2-8 | Besök ytterligare 7 sidor på platsen. | 1 | - | 3 | 2-8 | 8 |
 | 9 | Autentiserar på hemdator. | 3 | CID1 | CID1 | 9 <br> (Detta är CID1:s första träff någonsin, så det tar över och fortsätter på besökarprofilen från besökar-ID 1.) | 8 |
 | 10 | Besök ytterligare 1 sida. | 1 | CID1 | CID1 | 10 | 8 |
-| 11 | Öppnar webbplatsen från den bärbara datorn på kontoret. Den här besökaren har inte besökt din webbplats innan den här enheten användes. | 2 | - | 2 | 3 | 3 |
-| 12 | Autentiserar på bärbar dator. | 2 | CID1 | CID1 | 3 | 9 |
+| 11 | Öppnar webbplatsen från den bärbara datorn på kontoret. Den här besökaren har inte besökt din webbplats innan den här enheten användes. | 2 | - | 2 | 1 | 3 |
+| 12 | Autentiserar på bärbar dator. | 2 | CID1 | CID1 | 1 | 9 |
 | 13 | Visar ytterligare en sida. | 2 | CID1 | CID1 | 2 | 9 |
 
 ## Besök inventeringen
@@ -48,7 +48,7 @@ När du använder besöksidentifiering på olika enheter kan antalet unika besö
 
 ![](assets/visitors.png)
 
-Efter den första associationen återgår antalet besök till det normala eftersom besökaren är kopplad via sin webbläsarcookie. Om besökaren senare visar din webbplats och sedan autentiserar, ökar inte antalet besökare eftersom det faktiska besökar-ID:t inte ändras efter autentiseringen.
+Efter den första associationen återgår antalet besök till det normala eftersom besökaren är kopplad via sin webbläsarcookie. Om besökaren senare visar din webbplats och sedan autentiserar, fylls besökarantalet inte i eftersom det faktiska besökar-ID:t inte ändras efter autentiseringen.
 
 ![](assets/visitors_2.png)
 
