@@ -1,17 +1,17 @@
 ---
 description: En webbegenskap kan vara vilken gruppering som helst av en eller flera domäner och underdomäner med ett regelbibliotek, som ingår i en inbäddningskod.
-keywords: Analytics Implementation;implementation method;dynamic tag management;dtm;web property;property
+keywords: Analysimplementering;implementeringsmetod;dynamisk tagghantering;dtm;web property;property
 title: Skapa webbegenskap
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: f19d5504-eb44-4d93-a387-7470ab4b3a3a
+exl-id: f89381d0-bdf7-4e01-96a3-2ea160da2b44
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '471'
 ht-degree: 2%
 
 ---
-
 
 # Skapa webbegenskap
 
@@ -48,7 +48,7 @@ Allmän information om webbegenskaper och metodtips finns i [Webbegenskaper](htt
     <td colname="col2"> <p>Egenskapens bas-URL. </p> </td> 
     </tr> 
     <tr> 
-    <td colname="col1"> <span class="uicontrol"> Den här webbplatsen sträcker sig över flera domäner </span> </td> 
+    <td colname="col1"> <span class="uicontrol"> Den här webbplatsen sträcker sig över flera domäner  </span> </td> 
     <td colname="col2"> <p>Du kan lägga till och ta bort domäner om du vill att besöksdata ska finnas kvar mellan domäner. Om det här alternativet är markerat kvarstår data för besöket i alla underdomäner. </p> <p>Med den här inställningen kan du ange hur du vill spåra trafik mellan dina associerade underdomäner eller domäner. Länkar till underdomäner behandlas som utgående länkar. Besök i underdomäner spåras separat. </p> </td> 
     </tr> 
     </tbody> 
