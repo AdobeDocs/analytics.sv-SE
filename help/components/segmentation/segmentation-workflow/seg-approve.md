@@ -1,16 +1,16 @@
 ---
 description: I segmenthanteraren kan du konfigurera ett arbetsflöde som innefattar godkännande av segment för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciperna.
 title: Godkänna segment
-topic: Segments
+feature: Segment
 uuid: 01f4ff51-d923-4328-a68d-c4e793cb5b34
+exl-id: dc56adb0-56b3-4dcb-b47b-d76b0a32ec62
 translation-type: tm+mt
-source-git-commit: 9e70cd51f8828cdcb698175a2b4c0150610d14d0
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '122'
 ht-degree: 4%
 
 ---
-
 
 # Godkänna segment
 
@@ -19,12 +19,11 @@ I segmenthanteraren kan du konfigurera ett arbetsflöde som innefattar godkänna
 Så här flaggar du ett segment som godkänt:
 
 1. Markera kryssrutan till vänster om segmenttiteln i segmenthanteraren.
-1. Klicka **[!UICONTROL Approve]** i aktivitetsfältet för segmenthantering.
+1. Klicka på **[!UICONTROL Approve]** i aktivitetsfältet för segmenthantering.
 1. Överväg att dela de godkända segmenten med din organisation.
 1. Klicka på **[!UICONTROL OK]**.
 1. Lägg märke till godkännandeikonen bredvid segmentet i listan.
 
    ![](assets/seg_approved.png)
 
-1. Du kan också avgodkänna ett godkänt segment genom att klicka **[!UICONTROL Unapprove]**.
-
+1. Du kan också avgodkänna ett godkänt segment genom att klicka på **[!UICONTROL Unapprove]**.
