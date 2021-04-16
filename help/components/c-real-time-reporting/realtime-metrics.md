@@ -1,28 +1,31 @@
 ---
 description: Visar mått och dimensioner som stöds av realtidsrapporter. Klassificeringar stöds också om du har definierat dem.
 title: Mätvärden och dimensioner som stöds i realtid
-topic: Reports
+topic-fix: Reports
 uuid: a3a869ef-0f4a-44b5-a386-2746cc0822c4
+exl-id: 736a3caf-ee04-4aa4-8d9b-ba891cabda61
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 23%
 
 ---
-
 
 # Mätvärden och dimensioner som stöds i realtid
 
 Visar mått och dimensioner som stöds av realtidsrapporter. Klassificeringar stöds också om du har definierat dem.
 
-## Mätvärden som stöds {#section_514ED8B382494C47BFC0657894D1AF94}
+## Mått som stöds {#section_514ED8B382494C47BFC0657894D1AF94}
 
 * Intäkter
 * Beställningar
 * Enheter
 * Korgar
-* Vyer
+* Kundvagnsvisningar
 * Utcheckningar
-* Cart Additions
-* Cart Removals
+* Tillägg i kundvagn
+* Raderingar i kundvagn
 * Instanser
 * Anpassade händelser 1-100 (om det är aktiverat i rapportsviten)
 
@@ -40,8 +43,7 @@ Visar mått och dimensioner som stöds av realtidsrapporter. Klassificeringar st
 * Server
 * Platsavsnitt
 * Spårningskod
-* Egen länk
+* Anpassad länk
 * Filhämtning
 * Avsluta länk
-* Custom Insight variables (props) 1-75 (if enabled in the report suite)
-
+* Custom Insight-variabler (props) 1-75 (om de är aktiverade i rapportsviten)
