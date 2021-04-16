@@ -1,16 +1,16 @@
 ---
 description: Fältbeskrivningar för rapportsvitens allmänna kontoinställningar i Admin.
 title: Allmänna kontoinställningar
-topic: Administratörsverktyg
+feature: Administratörsverktyg
 uuid: c1ab5c34-2c41-4d12-a706-0e760dff8a95
+exl-id: f49babb2-8e26-4cc6-b264-b4d7be93f130
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
 
 ---
-
 
 # Allmänna kontoinställningar
 
