@@ -1,20 +1,23 @@
 ---
 description: Klicka på ikonen i (Info) bredvid rapportsvitens namn för att få information om det.
 keywords: Virtual Report Suite
-title: Visa information om den virtuella rapportsviten
-topic: Reports and analytics
+title: Visa information om virtuella rapportsviter
+feature: Rapporter och analysgrunder
 uuid: 7aa9da77-604e-473d-a914-6c0bc558548a
+exl-id: 92e89d40-db94-4b0c-881e-e57ca4bb6999
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 9%
 
 ---
 
-
-# Visa information om den virtuella rapportsviten
+# Visa information om virtuella rapportsviter
 
 Klicka på ikonen i (Info) bredvid rapportsvitens namn för att få information om det.
 
-## I rapportsvitväljaren {#section_74E43B60C1CA4180B5ACA57574C1FA0F}
+## I Report Suite-väljaren {#section_74E43B60C1CA4180B5ACA57574C1FA0F}
 
 Om du klickar på Info-ikonen bredvid den virtuella rapportsviten i Report Suite-väljaren visas följande information:
 
@@ -24,4 +27,3 @@ Om du klickar på Info-ikonen bredvid den virtuella rapportsviten i Report Suite
 * Totalt antal unika besökare.
 
 ![](assets/vrs-info.png)
-
