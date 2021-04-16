@@ -1,20 +1,23 @@
 ---
 description: Med bearbetningsregler kan du ändra data baserat på definierade villkor. När attribut eller värden matchar definierade villkor kan värden anges och tas bort, och händelser kan anges.
 subtopic: Processing rules
-title: Hur bearbetningsregler fungerar
-topic: Admin tools
+title: Så fungerar behandlingsregler
+feature: Administratörsverktyg
 uuid: 19c31f94-c8d8-47b1-97fa-29ed98c94e87
+exl-id: 9d2d9f2d-1e16-486f-9191-2c43776374da
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 2%
 
 ---
 
-
-# Hur bearbetningsregler fungerar
+# Så fungerar behandlingsregler
 
 Med bearbetningsregler kan du ändra data baserat på definierade villkor. När attribut eller värden matchar definierade villkor kan värden anges och tas bort, och händelser kan anges.
 
-Bearbetningsregler tillämpas på data när de samlas in, och regler tillämpas på alla data som kommer via AppMeasurement-biblioteken och via API:t för datainmatning. Bearbetningsreglerna gäller även för den fullständiga datakällan och loggdatakällan. De här källorna innehåller data som representerar en åtgärd *`hit`* eller en åtgärd som en användare utför. Bearbetningsreglerna gäller inte för andra datakällor.
+Bearbetningsregler tillämpas på data när de samlas in, och regler tillämpas på alla data som kommer via AppMeasurement-biblioteken och via API:t för datainmatning. Bearbetningsreglerna gäller även för den fullständiga datakällan och loggdatakällan. De här källorna innehåller data som representerar en *`hit`* eller en åtgärd som en användare utför. Bearbetningsreglerna gäller inte för andra datakällor.
 
 ## Viktiga begrepp {#section_EB138775E7C64C74B0D1D3213F7A823C}
 
@@ -30,7 +33,7 @@ Följande tabell innehåller viktiga begrepp som du måste förstå när du anv�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Reglerna gäller för en enda rapportserie. </p> </td> 
-   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules-copy-to-rs.md"> Kopiera bearbetningsregler till en annan rapportserie </a> </p> </td> 
+   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules-copy-to-rs.md"> Kopiera behandlingsregler till en annan rapportsvit </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsreglerna tillämpas i den ordning som anges. </p> </td> 
@@ -38,15 +41,15 @@ Följande tabell innehåller viktiga begrepp som du måste förstå när du anv�
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsreglerna tillämpas omedelbart på rapportsviten när de har sparats. </p> </td> 
-   <td colname="col2"> <p>Ändringar i bearbetningsreglerna ska visas i rapportsviten inom några minuter efter att de har sparats. När du testar bearbetningsregler rekommenderar vi att du konfigurerar <a href="/help/admin/admin/realtime/t-realtime-admin.md"> realtidsrapporter</a> i testrapportsviten så att du snabbt kan se resultatet av en bearbetningsregel. </p> </td> 
+   <td colname="col2"> <p>Ändringar i bearbetningsreglerna ska visas i rapportsviten inom några minuter efter att de har sparats. När du testar bearbetningsregler rekommenderar vi att du konfigurerar <a href="/help/admin/admin/realtime/t-realtime-admin.md">-realtidsrapporter</a> i testrapportsviten så att du snabbt kan se resultatet av en bearbetningsregel. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsregler är det enda sättet att få åtkomst till kontextdatavariabler. </p> </td> 
-   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md"> Kopiera en kontextdatavariabel till en eVar </a> </p> </td> 
+   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md"> Kopiera en kontextdatavariabel till en eVar  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsregler tillämpas före VISTA-regler och regler för marknadsföringskanal. </p> </td> 
-   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md"> Bearbetningsordning </a> </p> </td> 
+   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md"> Bearbetningsordning  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Det går inte att utesluta träffar. </p> </td> 
@@ -78,11 +81,11 @@ Följande tabell innehåller viktiga begrepp som du måste förstå när du anv�
   </tr> 
   <tr> 
    <td colname="col1"> <p>Värdejämförelser i användargränssnittet är skiftlägeskänsliga. </p> </td> 
-   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/clean-up-values-in-a-report.md"> Rensar värden i en rapport </a>. </p> </td> 
+   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/clean-up-values-in-a-report.md"> Rensar värden i en rapport  </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sammanhangsdatavariabelnamn får bara innehålla alfanumeriska tecken, understreck och punkter. Eventuella ytterligare tecken tas bort. </p> </td> 
-   <td colname="col2"> <p>Datavariabeln context blir till exempel <code> login_page-home</code> automatiskt <code> login_pagehome</code>. Alla data som skickas till <code> login_page-home</code> variabeln fördelas under <code> login_pagehome</code>. </p> <p>Kontextdatavariabler som innehåller tecken som inte stöds kan inte läggas till i gränssnittet Bearbetningsregler. </p> </td> 
+   <td colname="col2"> <p>Kontextdatavariabeln <code> login_page-home</code> blir till exempel automatiskt <code> login_pagehome</code>. Alla data som skickas till variabeln <code> login_page-home</code> allokeras under <code> login_pagehome</code>. </p> <p>Kontextdatavariabler som innehåller tecken som inte stöds kan inte läggas till i gränssnittet Bearbetningsregler. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Cirkumflex (^) är ett specialtecken i bearbetningsregelsystemet. </p> </td> 
