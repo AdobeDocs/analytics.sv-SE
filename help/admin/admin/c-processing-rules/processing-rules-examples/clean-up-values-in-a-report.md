@@ -2,13 +2,16 @@
 description: Du kan matcha värden mot vanliga felstavningar och uppdatera dem så att de visas korrekt i rapporter.
 subtopic: Processing rules
 title: Rensa värden i en rapport
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: fcd72afc-3a3c-47a9-a5e4-53389dba7d83
+exl-id: 109005a3-2ea4-4b61-a733-d1019218ec56
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 13%
 
 ---
-
 
 # Rensa värden i en rapport
 
@@ -24,4 +27,3 @@ Om du vill vara säker på att du inte oavsiktligt matchar andra värden använd
 Exempel:
 
 ![](assets/clean-up-values-in-report.png)
-
