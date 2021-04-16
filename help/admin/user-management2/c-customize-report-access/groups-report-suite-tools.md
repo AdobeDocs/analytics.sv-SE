@@ -1,28 +1,28 @@
 ---
 description: Aktivera användarbehörigheter för API-åtkomst, Report Suite-hantering, verktyg och rapporter samt instrumentpanelsobjekt.
-keywords: groups;permissions
+keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Anpassa behörigheter för verktyg i rapportsviten
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: 3c95d296-ffd0-4971-9c5f-110ddbe042ce
+exl-id: 8b776055-66a5-4ada-8d92-391c50a1d4f1
 translation-type: tm+mt
-source-git-commit: 89a5524ac0e96d63acd54c2ef3e22c17314f332d
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1145'
 ht-degree: 9%
 
 ---
-
 
 # Anpassa behörigheter för verktyg i rapportsviten
 
 >[!IMPORTANT]
 >
->Hanteringen av användare och produkter går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
 
 Aktivera användarbehörigheter för API-åtkomst, Report Suite-hantering, verktyg och rapporter samt instrumentpanelsobjekt.
 
-**[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL Report Access]** > **[!UICONTROL Report Suite Tools]** > **[!UICONTROL Customize]**
+**[!UICONTROL User Management]** >  **[!UICONTROL Groups]** >  **[!UICONTROL Report Access]** >  **[!UICONTROL Report Suite Tools]** >  **[!UICONTROL Customize]**
 
 Sidan [!UICONTROL Customize Report Suite Tools] ger medlemmar i en grupp åtkomst till följande objekt.
 
@@ -30,13 +30,13 @@ Sidan [!UICONTROL Customize Report Suite Tools] ger medlemmar i en grupp åtkoms
 
 ## Fältbeskrivningar
 
-Inställningarna på den här sidan gäller för de rapportsviter som är markerade på [!UICONTROL Define User Groups] sidan.
+Inställningarna på den här sidan gäller för de rapportsviter som har valts på sidan [!UICONTROL Define User Groups].
 
 | Element | Beskrivning |
 |--- |--- |
 | **Webbtjänster** |  |
 | Med de här inställningarna kan användare anropa metoden Data warehouse och hämta inställningar för rapportsviten. |  |
-| Data Warehouse | Används av en icke-admin-användare för att ringa anrop med Data warehouse-metoder via Web Services API. Se [Data warehouse - dokumentation för utvecklare](/help/export/data-warehouse/data-warehouse.md) |
+| Data Warehouse | Används av en icke-admin-användare för att ringa anrop med Data warehouse-metoder via Web Services API. Se [Data warehouse - Utvecklardokumentation](/help/export/data-warehouse/data-warehouse.md) |
 | Rapportsviter (läs) | Tillåter en icke-admin-användare att använda rapportsvitens metoder i API:t. |
 | Rapportsviter (skriv) | Tillåter en icke-admin-användare att använda rapportsvitens metoder i API:t. |
 | **Report Suite-hantering** |  |
@@ -77,11 +77,11 @@ Inställningarna på den här sidan gäller för de rapportsviter som är marker
 | Äldre ClickMap | Ger åtkomst till menyn för det gamla övertäckningsverktyget för ClickMap. |
 | Installation av äldre klickkarta | Ger installationsbehörighet till det äldre verktyget för ClickMap. |
 | Återbesök | En rapport som visar antalet besök där besöksnumret är större än 1. Rapporten om återkommande besök innehåller besökare som inte är cookies. |
-| [Klassificeringsimporteraren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html) /exporteraren och [regelbyggaren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html) | Konsoliderad i klassificeringar (se nedan). |
+| [Klassificeringsimporteraren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html) /exporteraren och  [regelbyggaren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html) | Konsoliderad i klassificeringar (se nedan). |
 | Hanteraren för dataflöden | Ger rättigheter till Analytics Data Feed. |
 | Klassificeringar | Kombinerar följande behörigheter: Trafikklassificeringar, Videoklassificeringar, Konverteringsklassificeringar, Klassificeringshierarkier, Klassificeringshanterare och Klassificeringsimporterare/Exporterare och Regelbyggare.  Obs!  Med den här behörigheten kan användarna redigera klassificeringar för alla rapportsviter, inte bara för de markerade. |
 | [Bidragsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html) | Ger rätt att använda bidragsanalys i Analysis Workspace. |
 | **Kontrollpanelsobjekt** |  |
-| Inställningarna i Kontrollpanelsobjekt ger åtkomst till [rapporter](https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html) i Rapporter och analyser:, Mina rekommenderade rapporter, Företagssammanfattningsrapport, Bild, KPI/mätarrapport, Rapportsvitens summor, Text, Rapport, Användningssammanfattningsrapport och Webbresurser |  |
+| Inställningarna i Kontrollpanelsobjekt ger åtkomst till [rapporter](https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html) i Rapporter och analys:, Mina rekommenderade rapporter, Sammanfattningsrapport för företag, Bild, KPI/mätarrapport, Rapportsvitsummor, Text, Rapport, Användningssammanfattningsrapport och Webbresurser |  |
 | **Övriga** |  |
 | Social | Styr åtkomsten till menyn Social Management i Report Suite Manager. |
