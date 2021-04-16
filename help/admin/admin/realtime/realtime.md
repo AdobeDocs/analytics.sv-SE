@@ -1,16 +1,16 @@
 ---
 description: Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
 title: Realtidsrapporter
-topic: Reports
+topic-fix: Reports
 uuid: c09cc605-0b3b-41ab-9b46-8c2a26f579a3
+exl-id: 267246ba-617f-4284-aaad-d0ace0f6a8cf
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
 
 ---
-
 
 # Realtidsrapporter
 
@@ -18,7 +18,7 @@ Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller anv
 
 >[!NOTE]
 >
->Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i Konfiguration av [realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md).
+>Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i [Konfiguration av realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md).
 
 **[!UICONTROL Site Metrics]** > **[!UICONTROL Real-Time]**
 
@@ -26,7 +26,7 @@ Realtid besvarar följande frågor: Vad är trender på min webbplats och varfö
 
 ![](assets/report-realtime.png)
 
-Kontrollpanelen innehåller Adobe Analytics högfrekventa mätvärden och webbplatsanalyser för att visuellt rapportera trafik- och sidvytrender för dynamiska nyheter och butikswebbplatser. Realtid förstår trender i data från minut till minut, inom sekunder från insamlingen. Den samlar in och strömmar data till ett automatiskt uppdaterat användargränssnitt med hjälp av korrelation i realtid och spårning av innehåll och viss konvertering.
+Kontrollpanelen innehåller Adobe Analytics högfrekventa mätvärden och webbplatsanalyser för att visuellt rapportera trafik- och sidvytrender för dynamiska nyheter och butikswebbplatser. Realtid förstår trender i era data från minut till minut, inom sekunder från insamlingen. Den samlar in och strömmar data till ett automatiskt uppdaterat användargränssnitt med hjälp av korrelation i realtid och spårning av innehåll och viss konvertering.
 
 Två av de vanligaste användningsscenarierna är utgivare som vill marknadsföra/nedgradera artiklar när användaraktiviteten ändras, och marknadsförare som vill spåra lanseringen av en ny produktlinje.
 
@@ -44,13 +44,13 @@ Som administratör kan du
 
 * Jämför till exempel förra veckans värden med förra årets värden (liksom med dagens totala värde).
 
-Tänk på att eVars (konverteringsmått) inte stöds eftersom det inte finns något koncept för beständighet. Du kan välja konverteringsmått, men de fungerar bara om de är inställda på samma sida som dimensionerna. Mer information finns i varningsmeddelandet som visas i [Konfigurera realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md).
+Tänk på att eVars (konverteringsmått) inte stöds eftersom det inte finns något koncept för beständighet. Du kan välja konverteringsmått, men de fungerar bara om de är inställda på samma sida som dimensionerna. Mer information finns i det varningsmeddelande som visas i [Konfigurera realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md).
 
 Det är endast administratörer eller användare i behörighetsgrupperna All Report Access och Advanced Reporting som kan konfigurera och visa realtidsrapporter. Real-Time respekterar dock behörigheter. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata.
 
-## Datasvarstid som ett resultat av A4T-konfiguration {#section_806CE36354FC4C539A0DED9266A5C704}
+## Datasvarstid som ett resultat av A4T-konfigurationen {#section_806CE36354FC4C539A0DED9266A5C704}
 
-När A4T-integreringen har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Med den här fördröjningsökningen kan data från Analytics och Target lagras på samma träff, vilket gör att du kan bryta ned tester per sida och webbplats.
+När A4T-integreringen har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
 
 Ökningen återspeglas i alla Adobe Analytics tjänster och verktyg, inklusive liveströmmen och realtidsrapporter, och gäller i följande scenarier:
 
