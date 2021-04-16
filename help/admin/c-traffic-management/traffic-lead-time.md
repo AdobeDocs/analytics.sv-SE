@@ -1,16 +1,16 @@
 ---
 description: Adobe kräver förhandsmeddelande om nya kontoinställningar, trafiktoppar och trafikökningar. Maskinvara måste tilldelas i förväg för att minimera latens och eventuella negativa konsekvenser för det övergripande systemet.
 title: Ledtid som krävs för trafikökningar
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: aa3fb882-51b0-458f-917b-7c54d5659623
+exl-id: fb428f8d-9dff-43a6-a1e8-1a892cbed7ac
 translation-type: tm+mt
-source-git-commit: a114bef4679da24d4fd6323a55c9ccf52ac772ed
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 4%
+source-wordcount: '334'
+ht-degree: 5%
 
 ---
-
 
 # Ledtid som krävs för trafikökningar
 
@@ -20,7 +20,7 @@ Allokering av maskinvara styrs av varningar som skickas via användargränssnitt
 
 >[!IMPORTANT]
 >
->Adobe kan inte hantera platshållartrafikändringsbegäranden. Om inget annat anges, följ den föreslagna ledtiden så nära som möjligt, inklusive att inte skicka en varning för tidigt. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) eller [Ange permanent trafikökning](/help/admin/c-traffic-management/t-traffic-permanent.md).
+>Adobe kan inte hantera platshållartrafikändringsbegäranden. Om inget annat anges, följ den föreslagna ledtiden så nära som möjligt, inklusive att inte skicka en varning för tidigt. Se [Schemalägg en trafikspik](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) eller [Ange permanent trafikökning](/help/admin/c-traffic-management/t-traffic-permanent.md).
 
 Använd följande riktlinjer för att avgöra hur långt i förväg du måste skicka in en trafikvarning:
 
@@ -41,16 +41,16 @@ Använd följande riktlinjer för att avgöra hur långt i förväg du måste sk
    <td colname="col3"> Ingen produktionstid behövs </td>
   </tr>
   <tr>
-   <td colname="col1"> 1,000,000 - 5,000,000 </td>
+   <td colname="col1"> 1 000 000 - 5 000 000 </td>
    <td colname="col2"> Två affärsdagar </td>
    <td colname="col3" morerows="3"> Alla trafikökningar som ska genomföras november-december ska vara inlämnade senast den 1 september. Detta för att ge tid för inköp av kapacitet om det behövs för att ta hand om semestertrafiken. </td>
   </tr>
   <tr>
-   <td colname="col1"> 5,000,000 - 10,000,000 </td>
+   <td colname="col1"> 5 000 000 - 10 000 000 </td>
    <td colname="col2"> En kalendervecka </td>
   </tr>
   <tr>
-   <td colname="col1"> 10,000,000 - 25,000,000 </td>
+   <td colname="col1"> 10 000 000 - 25 000 000 </td>
    <td colname="col2"> Två kalenderveckor </td>
   </tr>
   <tr>
