@@ -2,16 +2,16 @@
 description: Det här avsnittet innehåller svar på vanliga frågor.
 subtopic: Data sources
 title: Vanliga frågor om Data Sources
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 394a627f-093c-400a-bfb3-c2aa24568deb
+exl-id: 2a5d38fe-5c5b-4275-bc44-e9cb02ec2f5d
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 0%
 
 ---
-
 
 # Vanliga frågor om Data Sources
 
@@ -19,7 +19,7 @@ Det här avsnittet innehåller svar på vanliga frågor.
 
 ## Hur knyter vi offlinedata till online-event? {#section_F48A9474A70D4CB8B449DE305F199AD6}
 
-För att datakällor för transaktions-ID ska kunna koppla offlinedata till online-händelser måste du aktivera registrering av transaktions-ID. Mer information finns i Inspelning av [transaktions-ID](/help/import/c-data-sources/datasrc-integrating-offline-data.md#section_30D6D47AEC0F4A36B87EBFE4C858F20C) .
+För att datakällor för transaktions-ID ska kunna koppla offlinedata till online-händelser måste du aktivera registrering av transaktions-ID. Mer information finns i [Inspelning av transaktions-ID](/help/import/c-data-sources/datasrc-integrating-offline-data.md#section_30D6D47AEC0F4A36B87EBFE4C858F20C).
 
 ## Hur mycket kostar det att använda funktionen Datakälla? {#section_0B84E3E8891B45E8970EA9D8AAD1ADEC}
 
@@ -86,7 +86,7 @@ Eftersom processen för datakälla (för allmän DS, icke-trafik) skapar enskild
 
 ## Är filtilläggen skiftlägeskänsliga för en överföring av datakälla eller en klassificeringsfil? {#section_710787BA4D8C403D8326D666807832B8}
 
-Om tilläggen för en överförd datakällfil eller en klassificeringsfil har inledande versal kommer filerna inte att bearbetas. Filtillägg för överföring av datakälla måste vara gemener. Till exempel [!DNL file.TXT] och [!DNL file.FIN] kommer inte att bearbetas. På samma sätt [!DNL .TAB] kommer och [!DNL .FIN] kommer inte att bearbetas. Men [!DNL .txt] och [!DNL .fin] bearbetas.
+Om tilläggen för en överförd datakällfil eller en klassificeringsfil har inledande versal kommer filerna inte att bearbetas. Filtillägg för överföring av datakälla måste vara gemener. Till exempel kommer [!DNL file.TXT] och [!DNL file.FIN] inte att bearbetas. På samma sätt kommer [!DNL .TAB] och [!DNL .FIN] inte att bearbetas. [!DNL .txt] och [!DNL .fin] bearbetas dock.
 
 ## Kan jag lägga till ytterligare händelser i den genererade mallen eller är jag begränsad till tre? {#section_F184913926DD43B1872956CED308ADB5}
 
@@ -101,9 +101,9 @@ Om du har en datakällfil där en eller flera av posterna inte har samma antal k
 
 ## Samlas information om datakällor in? {#section_E0E44C55A84245918E7CF5A4232F5C88}
 
-Information om datakällor kan sammanfogas. adobe Customer Care måste dock bearbeta sammanslagningen på nytt från det historiska datumet för att inkludera historiska data. Om det aktuella datumet till exempel är den 31 oktober 2015 och du överför data för 1-15 augusti 2015 med Datakällor, måste sammanslagningen ställas in på att bearbeta om från och med den 1 augusti 2015, så att de nyimporterade data inkluderas.
+Information om datakällor kan sammanfogas. Adobe Customer Care måste dock bearbeta sammanslagningen på nytt från det historiska datumet för att inkludera historiska data. Om det aktuella datumet till exempel är den 31 oktober 2015 och du överför data för 1-15 augusti 2015 med Datakällor, måste sammanslagningen ställas in på att bearbeta om från och med den 1 augusti 2015, så att de nyimporterade data inkluderas.
 
-Observera också att data aldrig ska överföras direkt till en sammanslagningsrapportsserie med datakällor. Om du behöver dessa data i en sammanslagning bör de importeras till en standardrapport, som även kallas en *`child suite`* till sammanslagningen. Kontakta Adobe kundtjänst om du vill ha mer information.
+Observera också att data aldrig ska överföras direkt till en sammanslagningsrapportsserie med datakällor. Om du behöver dessa data som ingår i en sammanslagning, ska de importeras till en standardrapport som även kallas *`child suite`* för sammanslagningen. Kontakta Adobe kundtjänst om du vill ha mer information.
 
 ## Varför visar inte sidvisningsrapporten några datakällsdata för en enstaka dag, men rätt data visas för en vecka? {#section_E361A93AFDE1487989B4B0C4438EEDF7}
 
@@ -111,7 +111,7 @@ Datakällor rapporterar inte data per timme. När du försöker köra en rapport
 
 ## Hur beräknas unika besökare i en webbserverlogg över datakällor? {#section_477FEDFD1DBE45278E7D09AFBD59CDAC}
 
-Antalet unika besökare i en webbserverlogg beräknas som olika distinkta kombinationer av *`IP Address`* och *`User Agent`* i webbloggen. Varje unik kombination av dessa två objekt beräknas som en unik besökare. Om kolumnen är tom (eller inte ingår i webbloggen) går det inte att identifiera antalet unika besökare, och hela överföringen räknas bara som en unik besökare (även om det finns flera IP-adresser). [!UICONTROL User Agent]
+Antalet unika besökare i en webbserverlogg beräknas som olika distinkta kombinationer av *`IP Address`* och *`User Agent`* i webbloggen. Varje unik kombination av dessa två objekt beräknas som en unik besökare. Om kolumnen [!UICONTROL User Agent] är tom (eller inte ingår i webbloggen) kan vi inte identifiera antal unika besökare, och hela överföringen räknas bara som en unik besökare (även om det finns flera IP-adresser).
 
 ## I Datakällor, hur vet jag vilken inloggning som tillhör vilken rapportsvit? {#section_8EF9D22D5BE14C218724B06E78EF7DF4}
 
@@ -130,7 +130,7 @@ Datafeeden innehåller alla transaktions-ID-mått som har tagits emot. Om du dä
 
 ## Är eVars som för närvarande finns kvar i besökarprofilen allokerade till mått som överförts med datakällor? {#section_1748BD5C6A12467F8082E07D6A9CD595}
 
-Nej för fullständig bearbetning, ja för transaktions-ID. Datakällor med fullständig bearbetning bearbetas med separata besökarprofiler, så även om besökar-ID:n matchar varandra kommer de inte att kopplas ihop från ett eVar-allokeringsperspektiv. Datakällor för transaktions-ID är knutna till huvudbesökarprofilen, så beständiga eVars-variabler tilldelas händelser som överförs med transaktions-ID.
+Nej för fullständig bearbetning, ja för transaktions-ID. Datakällor med fullständig bearbetning bearbetas med separata besökarprofiler, så även om besökar-ID:n matchar varandra kommer de inte att kopplas ihop från ett eVar-allokeringsperspektiv. Datakällor för transaktions-ID är knutna till huvudbesökarprofilen, så beständiga eVars-variabler tilldelas händelser som överförts med transaktions-ID.
 
 ## Bevaras eVars som överförs med datakällor för senare onlinebeteende? {#section_0B490CEAAB604826AFD3E8B2531C8F2D}
 
@@ -139,7 +139,7 @@ Nej. eVars är de enda variabler som sparas i ögonblicksbilden av besökarprofi
 
 ## Hur fungerar numeriska händelser och valutakurser med datakällor?
 
-Fullständig bearbetning stöder endast äldre händelselistformat, med undantag för händelsevärdet numeric/currency/Counter (mer än 1) direkt i händelselistan, det vill säga `"eventNN,eventKK"` inte `"eventNN=#.##"`. Det betyder att det bara stöder en räknarhändelse om den skickas i händelsekolumnen i datakällfilen och den ökar med 1.
+Fullständig bearbetning stöder endast äldre händelselistformat förutom händelsevärdet numeric/currency/Counter (mer än 1) direkt i händelselistan, det vill säga `"eventNN,eventKK"` inte `"eventNN=#.##"`. Det betyder att det bara stöder en räknarhändelse om den skickas i händelsekolumnen i datakällfilen och den ökar med 1.
 
 Om numeriska händelser, valutatecken eller räknarhändelser (fler än 1) krävs, använd produktlistan:
 
