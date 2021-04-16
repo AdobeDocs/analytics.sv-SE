@@ -1,22 +1,22 @@
 ---
-description: Steg för att implementera den förenklade rapportmenyn i Rapporter och Analytics.
+description: Steg för att implementera den förenklade rapportmenyn i Reports and Analytics.
 title: Enklare rapportmeny
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: cc7023e4-9e28-477e-9266-6d06e5379559
+exl-id: fa383f68-9858-4d85-972a-a375b24da61a
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 3%
+source-wordcount: '165'
+ht-degree: 4%
 
 ---
 
-
 # Enklare rapportmeny
 
-Steg för att implementera den förenklade rapportmenyn i Rapporter och Analytics.
+Steg för att implementera den förenklade rapportmenyn i Reports and Analytics.
 
-Med den förenklade menyn Adobe Reports &amp; Analytics kan du välja att använda en alternativ och förenklad meny med omstrukturerade mappar under. Den förenklade menyn visar följande alternativ som standard:
+Med den förenklade Adobe-menyn Rapporter och analyser kan du välja att använda en alternativ och förenklad meny med omstrukturerade mappar under. Den förenklade menyn visar följande alternativ som standard:
 
 ![](assets/simplified-menu.png)
 
@@ -27,7 +27,7 @@ Med den förenklade menyn Adobe Reports &amp; Analytics kan du välja att använ
 1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** för att öppna Report Suite Manager.
 1. Välj den rapportsvit som du vill implementera den förenklade menystrukturen för.
 1. Gå till **[!UICONTROL Edit settings]** > **[!UICONTROL General]** > **[!UICONTROL Customize Menus]**.
-1. Klicka **[!UICONTROL Restore Simplified]** för att implementera den förenklade menystrukturen.
+1. Klicka på **[!UICONTROL Restore Simplified]** för att implementera den förenklade menystrukturen.
 
    ![](assets/restore-simplified.png)
 
