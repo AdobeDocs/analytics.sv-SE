@@ -2,16 +2,16 @@
 description: Lär dig hur du anger förfallodatum för besökarengagemang i marknadsföringskanaler.
 subtopic: Marketing channels
 title: Utgångsdatum för marknadsföringskanal
-topic: Reports and analytics
+feature: Rapporter och analysgrunder
 uuid: 47f1ccaf-3ce7-494d-b456-956a3a3c6c9a
+exl-id: a9df659b-3b6a-4bdb-bd77-f4490d2b7c79
 translation-type: tm+mt
-source-git-commit: 46dae8ee28b202578f5ad0c2446b1fd63e5144cc
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Utgångsdatum för marknadsföringskanal
 
@@ -42,10 +42,9 @@ Förfallotid:
 Ange besökarens anställningsperiod.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-2. I [!UICONTROL Report Suite Manager]klickar du på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
+2. I [!UICONTROL Report Suite Manager] klickar du på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
 
    ![](assets/mchannel_expiration.png)
 
 3. Konfigurera fälten för besökarens interaktionsperiod.
 4. Klicka på **[!UICONTROL Save.]**
-
