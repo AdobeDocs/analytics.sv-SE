@@ -1,17 +1,17 @@
 ---
 description: Virtuella rapportsviter och märkning av flera programsviter har olika fördelar. Ta reda på vilket som är bäst för er organisation.
-keywords: Virtual Report Suite,VRS
+keywords: Virtual Report Suite, VRS
 title: Virtuella rapportsviter och taggar för flera programsviter
-topic: Adobe Analytics
+feature: Inställningar för Report Suite
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
+exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
 translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1742'
 ht-degree: 0%
 
 ---
-
 
 # Virtuella rapportsviter och taggar för flera programsviter
 
@@ -37,11 +37,11 @@ Segment kan ännu inte publiceras till Adobe Experience Cloud från en virtuell 
 
 Realtidsrapporter stöds inte i virtuella rapportsviter eftersom data segmenteras. Aktuella data stöds inte heller i virtuella rapportsviter eftersom de inte stöder segmentering. Båda dessa funktioner är specifika för Rapporter och analyser.
 
-[Realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md) och [aktuella data](/help/technotes/latency.md) är inte tillgängliga i virtuella rapportsviter. Detta påverkar användare som reagerar på trender som visas i rapporter och analyser inom några sekunder eller några minuter efter datainsamlingen. Det kan till exempel inkludera redaktörer i ett nyhetsrum som justerar rubriker baserat på innehållskonsumtion i realtid. Överväg att använda flera svit-taggning om du har betydande datatillgångar i realtid som är specifika för enskilda rapportsviter. Realtid och aktuella data kan fortfarande användas i den globala rapportsviten.
+[Realtidsrapporter ](/help/admin/admin/realtime/t-realtime-admin.md) och  [aktuella ](/help/technotes/latency.md) data är inte tillgängliga i virtuella rapportsviter. Detta påverkar användare som reagerar på trender som visas i rapporter och analyser inom några sekunder eller några minuter efter datainsamlingen. Det kan till exempel inkludera redaktörer i ett nyhetsrum som justerar rubriker baserat på innehållskonsumtion i realtid. Överväg att använda flera svit-taggning om du har betydande datatillgångar i realtid som är specifika för enskilda rapportsviter. Realtid och aktuella data kan fortfarande användas i den globala rapportsviten.
 
 ### Unika gränser
 
-Om du har en global rapportserie som kombinerar ett stort antal webbplatser, är det möjligt att du ofta stöter på [lågtrafikraden](/help/technotes/low-traffic.md) . Om du använder taggar för flera programsviter är detta bara ett problem för den globala rapportsviten (det är mindre troligt att lågtrafik visas i enskilda rapportsviter). Om du använder virtuella rapportsviter delas unika gränser, vilket gör att enskilda rapportsviter även visar låg trafik. Överväg att använda flera svittaggar om du vill undvika att lagra data i låg trafik.
+Om du har en global rapportserie som kombinerar ett stort antal webbplatser, är det möjligt att du ofta stöter på radobjektet [low-trafik](/help/technotes/low-traffic.md). Om du använder taggar för flera programsviter är detta bara ett problem för den globala rapportsviten (det är mindre troligt att lågtrafik visas i enskilda rapportsviter). Om du använder virtuella rapportsviter delas unika gränser, vilket gör att enskilda rapportsviter även visar låg trafik. Överväg att använda flera svittaggar om du vill undvika att lagra data i låg trafik.
 
 En stor medieorganisation äger till exempel 100 webbegenskaper. Varje fastighet publicerar ett fåtal tusen nyhetsartiklar varje månad, förutom att ha alla artiklar från tidigare månader som webbhotell. Den här organisationen använder en global rapportserie där eVar1 är &#39;Artikelnamn&#39;. I den här rapporten finns det ungefär 4 miljoner unika artikelnamn varje månad från de olika egenskaperna. Om man använder sig av en virtuell rapporteringsserie ingår de 500 000 värden som utgör merparten av trafiken i de virtuella rapporteringssviterna. De återstående 3,5 miljoner inkluderas under lågtrafik. Om du använder taggar för flera programsviter kan varje enskild rapportserie se sina egna 500 kB-värden. Den globala rapportsvitens unika gränser är densamma när du använder taggar för flera sviter och virtuella rapportsviter.
 
@@ -53,11 +53,11 @@ Virtuella rapporteringsprogram har inte sina egna uppsättningar mått och mätv
 
 Olika webbplatser har olika implementeringsbehov. Vissa dimensioner och händelser kan delas mellan två platser. En e-postregistrering kan till exempel använda samma händelse på flera webbplatser och utlösa samma anpassade händelse. Andra dimensioner kan vara specifika för en plats. Till exempel kan bara en av dina webbplatser ändra sin profilbild. Denna anpassade händelse skulle bara implementeras på den webbplats som stöder den.
 
-Se till att antalet unika mått och mätvärden får plats i en enda global rapportserie. Om du ser att det finns för många unika mått eller mätvärden granskar du varje dimension inom varje implementering. Det finns troligtvis överlappningar och dimensioner som inte är avgörande för företagets framgång. Du bör också använda [klassificeringar](/help/components/classifications/c-classifications.md) . I stället för att hämta produktnamn i eVar5 skapar du till exempel en produktnamnsklassificering som baseras på produktdimensionen. Klassificeringar i en källrapportsserie är automatiskt tillgängliga för alla beroende virtuella rapportsviter.
+Se till att antalet unika mått och mätvärden får plats i en enda global rapportserie. Om du ser att det finns för många unika mått eller mätvärden granskar du varje dimension inom varje implementering. Det finns troligtvis överlappningar och dimensioner som inte är avgörande för företagets framgång. Överväg även att använda [klassificeringar](/help/components/classifications/c-classifications.md). I stället för att hämta produktnamn i eVar5 skapar du till exempel en produktnamnsklassificering som baseras på produktdimensionen. Klassificeringar i en källrapportsserie är automatiskt tillgängliga för alla beroende virtuella rapportsviter.
 
 >[!TIP]
 >
->Med introduktionen av [kurering](/help/analyze/analysis-workspace/curate-share/curate.md)kan du ändra namnet på en given dimension eller mätvärde per VRS-nivå.
+>Med introduktionen av [kuration](/help/analyze/analysis-workspace/curate-share/curate.md) kan du ändra namnet på en given dimension eller mätvärde per VRS.
 
 ### Segmenteringsenheter
 
@@ -102,6 +102,6 @@ Om du väljer att ta bort sekundära serveranrop till förmån för virtuella ra
 2. När du har bekräftat att de virtuella rapportsviterna är korrekt konfigurerade tar du bort de sekundära rapportsvitens ID:n från implementeringen. Så här tar du bort sekundära rapportsviter:
    * I Adobe Experience Platform Launch klickar du på x bredvid de rapportsviter som du inte längre vill använda.
    * Leta reda på egenskaps- och analysverktyget i DTM. I fälten Produktionskonto-ID och ID för mellanlagringskonto tar du bort alla rapport-ID:n som du inte längre vill använda.
-   * I äldre JavaScript-implementeringar letar du reda på variabeln och tar bort alla rapport-Suite-ID:n som du inte längre vill använda. `s.account`
+   * I äldre JavaScript-implementeringar letar du reda på variabeln `s.account` och tar bort alla rapport-Suite-ID:n som du inte längre vill använda.
    * I samtliga fall lämnar du bara det globala/överordnade rapportsvitens ID för att samla in data för dina webbplatser och appar.
    * Gå till Admin > Rapportsviter och dölj eventuella sekundära rapportsviter som inte längre används.
