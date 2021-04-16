@@ -2,16 +2,16 @@
 description: Information om hur Adobe ger åtkomst till datakällor.
 subtopic: Data sources
 title: Så fungerar Data Sources
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: ee9e6e74-9b00-4733-9a4b-d9f2b954cc7c
+exl-id: 3d56ca3f-6c45-48d0-bbd2-53d6babfbb83
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 5%
 
 ---
-
 
 # Så fungerar Data Sources
 
@@ -30,10 +30,10 @@ Det finns två metoder för att skicka data:
 
 ## FTP {#section_0E70022648F94061AF5B4AD6C7145243}
 
-Du kan skapa och hantera FTP-baserade datakällor med hjälp av marknadsföringsrapporter, som använder FTP-filöverföring för att importera datafiler till datakällor. När du har skapat en datakälla får du en FTP-plats som du kan använda för att överföra datakällfiler. När datakällorna har överförts hittas och bearbetas de automatiskt av datakällor. När uppgifterna har bearbetats finns de tillgängliga för marknadsföringsrapporter.
+Du kan skapa och hantera FTP-baserade datakällor med hjälp av marknadsföringsrapporter, som använder FTP-filöverföring för att importera datafiler till datakällor. När du har skapat en datakälla får du en FTP-plats i Adobe som du kan använda för att överföra datakällfiler. När datakällorna har överförts hittas och bearbetas de automatiskt av datakällor. När uppgifterna har bearbetats finns de tillgängliga för marknadsföringsrapporter.
 
 ## API {#section_65DACC9CE00C437BBFDD02D19C25A4BD}
 
-Adobe erbjuder ett API för datakällor som gör att du kan koppla program till datakällor via programmering. Detta eliminerar behovet av en mellanliggande FTP-server och överför data via HTTP, SOAP och REST.
+Adobe har ett API för datakällor som gör att du kan koppla program till datakällor via programmering. Detta eliminerar behovet av en mellanliggande FTP-server och överför data via HTTP, SOAP och REST.
 
-Se API-dokumentation för [datakällor](https://github.com/AdobeDocs/analytics-1.4-apis/tree/master/docs/data-sources-api).
+Se [API-dokumentation för datakällor](https://github.com/AdobeDocs/analytics-1.4-apis/tree/master/docs/data-sources-api).
