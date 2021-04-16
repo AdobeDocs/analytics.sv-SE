@@ -2,16 +2,16 @@
 description: Information om mallen för datakälla .txt.
 subtopic: Data sources
 title: Importera filreferens
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: cc58f8d8-cb6e-4908-846f-0a41c6da805d
+exl-id: 7966b156-04bf-4d39-a720-ab47a665d1e2
 translation-type: tm+mt
-source-git-commit: a28a05047e95d12343fd94f7b11e5cabf7fac070
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 2%
 
 ---
-
 
 # Importera filreferens
 
@@ -26,7 +26,7 @@ Använd guiden Datakällor för att generera en importmall. Importfilen för dat
 
 Kolumnrubriker används för att identifiera data i varje kolumn i datakällfilen. Det finns tre typer av kolumnrubriker:
 
-**Datum**: (Obligatoriskt) En tidsstämpel för varje datarad i filen, i formatet `m/d/yyyy`.
+**Datum**: (Obligatoriskt) En tidsstämpel för varje datarad i filen, i formatet  `m/d/yyyy`.
 
 **Variabler**: Namnen på rapportvariablerna mappade till datakällans datamått.
 
@@ -56,13 +56,13 @@ Använd mallen Datakälla för att skapa en datakällfil som innehåller data so
    log_2009-01-01_13:30.txt
    ```
 
-* För att bearbetningen av datakällfilen ska gå snabbare rekommenderar Adobe att händelsedata samlas i en rad per datum.
+* För att påskynda bearbetningen av din datakällfil rekommenderar Adobe att händelsedata samlas i en rad per datum.
 
    Om din datakällfil till exempel mappar och visningsdata till Event 6, skapar du en enda datarad som innehåller det totala antalet annonsvisningar för varje dag, i stället för att skapa en separat dataradspost för varje annonsintryck som inträffade en viss dag.
 * Om du behöver överföra data från datum som infaller innan rapportsvitens skapandedatum, kontaktar du din Account Manager för att ändra det äldsta datum som du kan köra rapporter för.
 
 **.FIN-fil**
 
-När du har fyllt i datakällfilen kan du FTP-lägga den i Analytics. Det krävs dock ytterligare en fil för att dina data ska kunna behandlas. Du måste överföra en tom textfil med samma namn som datafilen, men med ett [!DNL .fin] filtillägg.
+När du har fyllt i datakällfilen kan du FTP-lägga den i Analytics. Det krävs dock ytterligare en fil för att dina data ska kunna behandlas. Du måste överföra en tom textfil med samma namn som datafilen, men med filnamnstillägget [!DNL .fin].
 
-Om du till exempel överför en (tabbavgränsad) datafil med namnet [!DNL myproductdata.txt], måste du även överföra en tom textfil med namnet [!DNL myproductdata.fin]. Utan [!DNL .fin] filen skulle data aldrig bearbetas.
+Om du till exempel överför en (tabbavgränsad) datafil med namnet [!DNL myproductdata.txt], måste du även överföra en tom textfil med namnet [!DNL myproductdata.fin]. Utan [!DNL .fin]-filen skulle data aldrig bearbetas.
