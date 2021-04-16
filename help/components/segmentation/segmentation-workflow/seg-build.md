@@ -1,16 +1,16 @@
 ---
 description: I Segment Builder finns en arbetsyta där du kan dra och släppa metriska Dimensioner, segment och händelser för att segmentera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa segment som identifierar besökarattribut och -åtgärder för besök och sidträffar.
 title: Skapa segment
-topic: Segment
+feature: Segment
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
+exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '1929'
 ht-degree: 1%
 
 ---
-
 
 # Segment Builder
 
@@ -244,4 +244,3 @@ Mallar betecknas med Adobe&quot;A&quot;-logotypen. Ett exempel på mallarna visa
   </tr> 
  </tbody> 
 </table>
-
