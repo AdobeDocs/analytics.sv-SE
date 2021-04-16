@@ -2,12 +2,12 @@
 description: Skapa ett projekt och lägg till komponenter (mått, mått, segment, datumintervall) på frihandspanelen.
 keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
-topic: Reports and analytics
+feature: Rapporter och analysgrunder
 uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
 translation-type: tm+mt
-source-git-commit: b952ea84a63cdb73684e8765dde6551785c0d6c1
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 14%
 
 ---
@@ -23,9 +23,9 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
 
 1. Ange användarbehörighet för att skapa och strukturera projekt.
 
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med aktiverad **[!UICONTROL Create / Curate Projects in Analysis Workspace]** behörighet eller i **[!UICONTROL All Report Access]** användargruppen. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Groups](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)).
+   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med behörigheten **[!UICONTROL Create / Curate Projects in Analysis Workspace]** aktiverad, eller i användargruppen **[!UICONTROL All Report Access]**. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Grupper](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)).
 
-1. Klicka [!DNL Experience Cloud]på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** i [!DNL Experience Cloud].
 
    ![](assets/analysis_workspace_menu.png)
 
@@ -38,15 +38,15 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
    Du kan välja om du vill skapa ett projekt från
 
 * Ett tomt projekt (standard). Instruktioner finns nedan.
-* En standardmall. Mallarna skapas av Adobe och skickas ut. Instruktioner finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
-* En anpassad mall. De här mallarna skapas av användare med administratörsbehörighet. Instruktioner finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
+* En standardmall. Mallarna skapas av Adobe och skickas ut. Mer information finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
+* En anpassad mall. De här mallarna skapas av användare med administratörsbehörighet. Mer information finns i [Mallar](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
 
    ![](assets/start_modal.png)
 
 1. Om du vill skapa ett projekt från ett tomt projekt klickar du på **[!UICONTROL Blank Project]**.
 
-   * Klicka sedan **[!UICONTROL Create]** eller
-   * Klicka bara **[!UICONTROL Enter]**.
+   * Klicka sedan på **[!UICONTROL Create]** eller
+   * Klicka bara på **[!UICONTROL Enter]**.
 
    Ett tomt projekt visas med en friformspanel och en datatabellvisualisering.
 
@@ -73,7 +73,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
    <td colname="col2"> <p>Objekt som du kan dra till panelen eller projektområdena i gränssnittet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md"  > Frihandspanelen </a> </td> 
+   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md"  > Frihandspanelen  </a> </td> 
    <td colname="col2"> <p>Arbetsytan eller arbetsytan som du interagerar med i Analysis Workspace. </p> </td> 
   </tr> 
  </tbody> 
@@ -113,11 +113,11 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
   </tr> 
   <tr> 
    <td colname="col1"> Metrisk (grön) </td> 
-   <td colname="col2"> <p>Använd på projektnivå. </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term"> Förekomster</span> är datatabellens standardmått. </p> </td> 
+   <td colname="col2"> <p>Använd på projektnivå. </p> <p><img  src="assets/metrics.png" id="image_7C874C72992E414CBEE6B90CEF7B9F3C" /> </p> <p> <span class="term"> Förekomst </span> är datatabellens standardmått. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Segment (blå) </td> 
-   <td colname="col2"> <p>Det går bara att dra på panelnivå, men du kan skapa textbundna segment i datatabellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>See <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segments </a> for more information. </p> </td> 
+   <td colname="col2"> <p>Det går bara att dra på panelnivå, men du kan skapa textbundna segment i datatabellen. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Mer information finns i <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segment </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Datumintervall och detaljrikedom (lila) </td> 
@@ -128,7 +128,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
 
 **[Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
 
-Panelen innehåller [!UICONTROL Visualizations] standarddiagram för analyser, diagram, donuts, datatabeller, [kohorttabeller](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) , Venndiagram osv. Du kan dra och släppa flera visualiseringar i ditt projekt.
+Panelen [!UICONTROL Visualizations] innehåller standarddiagram för analyser, diagram, donuts, datatabeller, [kohort](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)-tabeller, Venndiagram o.s.v. Du kan dra och släppa flera visualiseringar i ditt projekt.
 
 ![Stegresultat](assets/visualizations.png)
 
@@ -136,7 +136,7 @@ Panelen innehåller [!UICONTROL Visualizations] standarddiagram för analyser, d
 
 1. Steg
 
-## Använd högerklicksmenyn för att anpassa data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Använd högerklicksmenyn för att anpassa dina data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken cell i en tabell du högerklickar på.
 
@@ -211,4 +211,4 @@ Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken c
  </tbody> 
 </table>
 
-Se [Tangentbords- och musinteraktioner i Analysis Workspace](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för mer information om hur du kopierar och markerar rader.
+Mer information om hur du kopierar och markerar rader finns i [Interaktioner för tangentbord och mus i Analysis Workspace](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
