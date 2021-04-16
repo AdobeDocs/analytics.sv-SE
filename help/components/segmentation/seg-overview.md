@@ -1,16 +1,16 @@
 ---
 description: Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov, och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
 title: Om segment och behållare
-topic: Segment
+feature: Segment
 uuid: e8b1edd1-5d6c-4213-994b-fed789ad30a4
+exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '3676'
 ht-degree: 0%
 
 ---
-
 
 # Om segment och behållare
 
@@ -297,4 +297,3 @@ Sammanfattningsvis
 
 * Besöksbehållaren returnerar alla sidor som visas vid ett besök där minst en sida uppfyller kriterierna. Om en sida bara visas på besök 1 dag 1 inkluderas alla sidor som visas under hela besöket i informationen.
 * Var försiktig när det villkor du segmenterar på är en eVar eller en annan typ av beständig variabel. Du kan till exempel använda villkoret&quot;där kampanjen innehåller e-post&quot; och det upphör att gälla efter 7 dagar. Så om kampanjen sätts in vid det första besöket kommer den att finnas kvar i ytterligare 7 dagar. Varje besök kommer att ingå även om kampanjen inte kunde genomföras förrän vid det första besöket. De övriga besöken kommer också att ingå (så länge de ligger inom rapportens datumintervall). Om du vill ta bort beständiga värden från att inkluderas använder du antingen händelsen &quot;instance of&quot; eller en motsvarande Prop-variabel, om en sådan finns.
-
