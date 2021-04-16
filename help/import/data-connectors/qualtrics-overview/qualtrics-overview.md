@@ -2,16 +2,16 @@
 description: Integrationen kombinerar Qualtrics Research Suites funktioner för kundundersökningar med de omfattande data ni samlar in inom Adobe Analytics för att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
 subtopic: Qualtrics
 title: Qualtrics Data Connector för Adobe Analytics
-topic: Data connectors
+feature: Data Connectors
 uuid: f1fa90b6-1b80-4da4-a39b-efb8bac1692a
+exl-id: 5c1234b1-bca8-4e7a-981e-1379e88821b8
 translation-type: tm+mt
-source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 4%
+source-wordcount: '303'
+ht-degree: 5%
 
 ---
-
 
 # Qualtrics Data Connector för Adobe Analytics{#qualtrics-data-connector-for-adobe-analytics}
 
