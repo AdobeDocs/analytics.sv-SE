@@ -1,23 +1,26 @@
 ---
 description: Definierar vanliga inställningar för en webbplats som samlar innehåll, till exempel en nyhetsportal.
-title: Aggregator-portal
-topic: Admin tools
+title: Aggregatorportal
+feature: Administratörsverktyg
 uuid: d227c209-4d88-4eff-b126-994b2a179c51
+exl-id: 48f57f27-289c-4e26-9fb2-e34d48c1f2e6
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 22%
 
 ---
 
-
-# Aggregator-portal
+# Aggregatorportal
 
 Definierar vanliga inställningar för en webbplats som samlar innehåll, till exempel en nyhetsportal.
 
-| Konverteringsvariabler | Typ | Underrelationer | Allokering | Förfaller | `s_code` variabel |
+| Konverteringsvariabler | Typ | Underordnade relationer | Allokering | Förfaller | `s_code` variabel |
 |---|---|---|---|---|---|
-| Intern kampanj | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar1` |
-| Interna sökvillkor | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar2` |
-| Referenskategori | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar3` |
+| Intern kampanj | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar1` |
+| Interna sökvillkor | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar2` |
+| Referenskategori | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar3` |
 
 | Success Events | Typ | `s_code` variabel |
 |---|---|---|
@@ -25,7 +28,7 @@ Definierar vanliga inställningar för en webbplats som samlar innehåll, till e
 | Referensvy | Räknare (inga underrelationer) | `event2` |
 | Referensklickningar | Räknare (inga underrelationer) | `event3` |
 
-| Anpassade insiktsvariabler | `s_code` variabel |
+| Custom Insight Variables | `s_code` variabel |
 |---|---|
 | Trafikegenskap 1-5 | `prop1, prop2, prop3, prop4, prop5` |
 
@@ -37,13 +40,12 @@ Följande tabell innehåller en lista med standardhändelser för e-handel. Den 
 | Beställningar | Räknare | `purchase` |
 | Enheter | Räknare | `purchase` |
 | Korgar | Räknare | `scOpen` |
-| Vyer | Räknare | `scView` |
+| Kundvagnsvisningar | Räknare | `scView` |
 | Instanser | Räknare | Ej tillämpligt |
 | Utcheckningar | Räknare | `scCheckout` |
-| Cart Additions | Räknare | `scAdd` |
-| Cart Removals | Räknare | `scRemove` |
+| Tillägg i kundvagn | Räknare | `scAdd` |
+| Raderingar i kundvagn | Räknare | `scRemove` |
 | Besök | Räknare (inga underrelationer) | Ej tillämpligt |
-| Sidvyer | Räknare (inga underrelationer) | Ej tillämpligt |
+| Sidvisningar | Räknare (inga underrelationer) | Ej tillämpligt |
 | Dagliga unika besökare | Räknare (inga underrelationer) | Ej tillämpligt |
 | Unika besökare | Räknare (inga underrelationer) | Ej tillämpligt |
-
