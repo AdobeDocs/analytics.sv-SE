@@ -1,16 +1,19 @@
 ---
 description: När DFA- och Adobe®-samlingsservrar kan kommunicera kan ni generera rapporter i rapporter och analyser som innehåller DFA-data.
 keywords: DFA
-title: Analysrapporter med DFA-data
-topic: Data connectors
+title: Analytics-rapporter med DFA-data
+feature: Data Connectors
 uuid: a4fe4a6c-f4a4-431d-bce9-9eedbcafedd6
+exl-id: e8b2dc3d-0360-4232-9a24-aa14e52f25d5
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 4%
 
 ---
 
-
-# Analysrapporter med DFA-data{#analytics-reports-using-dfa-data}
+# Analytics-rapporter med DFA-data{#analytics-reports-using-dfa-data}
 
 När DFA- och Adobe®-samlingsservrar kan kommunicera kan ni generera rapporter i rapporter och analyser som innehåller DFA-data.
 
@@ -35,7 +38,7 @@ Så här skapar du en DFA-rapport:
 
 1. I den vänstra navigeringen väljer du konverteringsvariabeln som hämtar DFA-klickdata och sedan önskad DFA-rapport.
 1. Klicka på **[!UICONTROL Add Metrics]**. Dialogrutan Metrisk väljare öppnas.
-1. Kontrollera Impressions and Click-måtten i **[!UICONTROL Available Metrics]** listan och klicka på **[!UICONTROL Apply]**.
+1. Kontrollera Impressions and Clicks-måtten i listan **[!UICONTROL Available Metrics]** och klicka på **[!UICONTROL Apply]**.
 
    Den resulterande rapporten visar Impressions-, Click- och Revenue-data så att ni kan se hur era DFA-tjänster kan omsättas i intäkter från slutsumman.
 En DFA Ad Name-rapport visar till exempel de visningar, klickningar och intäktsdata som direkt kan hänföras till specifika banners i din aktuella DFA-annonskampanj:
@@ -46,7 +49,7 @@ Den här rapporten har följande viktiga funktioner:
 
 * Rapportrubriken, med namnet DFA_Ad Name Report, visar rapporttidsperioden (februari 2009) och anger att det här är en rankad rapport i ett vågrätt Bar-format.
 * I själva diagrammet visas tre mätvärden (Impressions, Click, and Revenue) för varje DFA Ad i rapporten.
-* I diagrammet visas data för varje mätvärde som en procentandel av den totala mätningen, i stället för att de faktiska siffrorna för varje mätvärde används. Du kan ändra detta i **[!UICONTROL Configure Report]** dialogrutan.
+* I diagrammet visas data för varje mätvärde som en procentandel av den totala mätningen, i stället för att de faktiska siffrorna för varje mätvärde används. Du kan ändra detta i dialogrutan **[!UICONTROL Configure Report]**.
 * Under diagrammet visar DFA_Ad-namnrapporten rapportinformationen för varje DFA-annons och visar både numeriska data och procentdata för annonsresultatet.
 * Välj ett specifikt DFA-annonsnamn för att öppna en meny med alternativ för att få mer information om just den DFA-annonsen.
 * Varje måttkolumn innehåller en färgnyckel som motsvarar måttets tilldelade färg i diagrammet.
