@@ -1,16 +1,16 @@
 ---
 description: Visar en lista över några saker du bör tänka på innan du tar bort segment.
 title: Ta bort segment
-topic: Segment
+feature: Segment
 uuid: cb6db6ad-f400-4633-900a-8a02dcfccf2c
+exl-id: 434b6fec-1dfa-4375-a9de-d47fad2c64bc
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 2%
 
 ---
-
 
 # Ta bort segment
 
