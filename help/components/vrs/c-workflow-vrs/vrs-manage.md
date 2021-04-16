@@ -2,16 +2,16 @@
 description: Med Virtual Report Suite Manager kan administratörer redigera, lägga till, tagga, ta bort, byta namn på, godkänna, kopiera, exportera och filtrera virtuella rapportsviter. Den är inte synlig för användare som inte är administratörer.
 keywords: Virtual Report Suite
 title: Hantera virtuella rapportsviter
-topic: Reports and analytics
+feature: Rapporter och analysgrunder
 uuid: ce683c01-2d7d-4f2a-98db-946f68eda99b
+exl-id: b6d58456-bd07-4d97-aff8-216e8440fdc0
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '456'
 ht-degree: 3%
 
 ---
-
 
 # Hantera virtuella rapportsviter
 
@@ -23,7 +23,7 @@ Med Virtual Report Suite Manager kan administratörer redigera, lägga till, tag
 
 >[!NOTE]
 >
->I Virtual Report Suite Manager kan du bara se dina egna virtuella rapportsviter. Du måste klicka **[!UICONTROL Show All]** för att se alla andras.
+>I Virtual Report Suite Manager kan du bara se dina egna virtuella rapportsviter. Du måste klicka på **[!UICONTROL Show All]** för att se alla andras.
 
 | Uppgift | Beskrivning |
 |--- |--- |
