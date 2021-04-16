@@ -1,14 +1,17 @@
 ---
 description: Du kan distribuera dynamisk tagghantering med ett eller flera av de tillgängliga värdalternativen.
-keywords: Analytics Implementation;implementation method;dynamic tag management;dtm;hosting;hosting options;akamai;self hosting;self-hosting;ftp delivery;ftp hosting;library download
+keywords: Analysimplementering;implementeringsmetod;dynamisk tagghantering;dtm;hosting;hosting options;akamai;self hosting;self hosting;ftp delivery;ftp hosting;library download
 title: Konfigurera värdalternativ
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 04268f2d-e76f-4fe4-8fcc-f0db3a016502
+exl-id: cef5205e-bb21-4d8d-862b-33dc800e1118
 translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '527'
+ht-degree: 1%
 
 ---
-
 
 # Konfigurera värdalternativ
 
@@ -16,7 +19,7 @@ Du kan distribuera [!UICONTROL Dynamic Tag Management] med ett eller flera av de
 
 [!UICONTROL Dynamic Tag Management] innehåller ett antal alternativ för att hantera de JavaScript-filer som behövs.
 
-Mer information om värdtjänster finns i [Bädda in kod och värdalternativ](https://docs.adobe.com/content/help/en/dtm/using/client-side/client-side-information.html) i [!UICONTROL Dynamic Tag Management] produktdokumentationen.
+Mer information om värdtjänster finns i [Bädda in kod och värdalternativ](https://docs.adobe.com/content/help/en/dtm/using/client-side/client-side-information.html) i [!UICONTROL Dynamic Tag Management] produktdokumentation.
 
 Välj ett värdalternativ på fliken Bädda in.
 
@@ -41,7 +44,7 @@ Välj ett värdalternativ på fliken Bädda in.
   </tr> 
   <tr> 
    <td colname="col1"> Självvärdande: FTP-leverans </td> 
-   <td colname="col2"> <p>En <span class="term"> push</span> -metod där Dynamic Tag Management exporterar anpassade JavaScript-bibliotek direkt till webbinnehållsserverns värd via FTP-protokollet. </p> <p>Den här lösningen kräver att en FTP-server och autentiseringsuppgifter är tillgängliga på webbinnehållsservern för att kunna publicera ändringar i de anpassade biblioteken för dynamisk tagghantering. </p> <p>Mer detaljerad information finns i <a href="https://docs.adobe.com/help/en/dtm/using/client-side/deployment.html#task_A7B37CB2C89941A4A4D1F9AF06FC493D"> FTP</a> i produktdokumentationen för Dynamic Tag Management. </p> </td> 
+   <td colname="col2"> <p>En <span class="term"> push</span>-metod, där Dynamic Tag Management exporterar anpassade JavaScript-bibliotek direkt till webbinnehållsserverns värd via FTP-protokollet. </p> <p>Den här lösningen kräver att en FTP-server och autentiseringsuppgifter är tillgängliga på webbinnehållsservern för att kunna publicera ändringar i de anpassade biblioteken för dynamisk tagghantering. </p> <p>Mer detaljerad information finns i <a href="https://docs.adobe.com/help/en/dtm/using/client-side/deployment.html#task_A7B37CB2C89941A4A4D1F9AF06FC493D"> FTP</a> i produktdokumentationen för Dynamic Tag Management. </p> </td> 
    <td colname="col3"> 
     <ol id="ol_60348F9C991D4F2B9457006B0F98C834"> 
      <li id="li_24A141C3C7074BF9897C022A22CAE78C">Dynamic Tag Management genererar anpassade JavaScript-bibliotek. </li> 
@@ -51,7 +54,8 @@ Välj ett värdalternativ på fliken Bädda in.
   </tr> 
   <tr> 
    <td colname="col1"> Självvärdande: Bibliotekshämtning </td> 
-   <td colname="col2"> <p>En <span class="term"> stegvis</span> metod som innebär att programmet exporterar anpassade JavaScript-bibliotek <!-- to Amazon S3-->. Där kan biblioteken nås via en serverprocess. </p> <p>Dessutom är biblioteken tillgängliga via webbnedladdning direkt från gränssnittet för dynamisk tagghantering. </p> <p>Lösningen kräver antingen manuell hämtning och publicering av Dynamic Tag Management-biblioteken eller skapande av en automatiserad process som hämtar biblioteken från Akamai till webbinnehållsservern. </p> <p>Det här arbetssättet tar mest tid att skapa, men är också det säkraste och mest flexibla alternativet. </p> <p>Om du vill kontrollera om det finns referenser till den senaste versionen av biblioteksfilen använder du kommandot </p> <p>Mer detaljerad information finns<a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/deployment.html#task_B7A42F3B1D3E4B71B0BADD17C181F22A"> i Bibliotekshämtning</a> i produktdokumentationen för Dynamic Tag Management. </p> </td> 
+   <td colname="col2"> <p>En <span class="term"> pull</span>-metod, där programmet exporterar anpassade JavaScript-bibliotek
+     <!-- to Amazon S3-->. Där kan biblioteken nås via en serverprocess. </p> <p>Dessutom är biblioteken tillgängliga via webbnedladdning direkt från gränssnittet för dynamisk tagghantering. </p> <p>Lösningen kräver antingen manuell hämtning och publicering av Dynamic Tag Management-biblioteken eller skapande av en automatiserad process som hämtar biblioteken från Akamai till webbinnehållsservern. </p> <p>Det här arbetssättet tar mest tid att skapa, men är också det säkraste och mest flexibla alternativet. </p> <p>Om du vill kontrollera om det finns referenser till den senaste versionen av biblioteksfilen använder du kommandot </p> <p>Mer information finns i<a href="https://docs.adobe.com/content/help/en/dtm/using/client-side/deployment.html#task_B7A42F3B1D3E4B71B0BADD17C181F22A"> Library Download</a> i produktdokumentationen för Dynamic Tag Management. </p> </td> 
    <td colname="col3"> 
     <ol id="ol_F40B721306FE473496BD657262DFD585"> 
      <li id="li_4EA4D6B555CE4E9CA476C7550C18C061">Dynamic Tag Management genererar anpassade JavaScript-bibliotek. </li> 
