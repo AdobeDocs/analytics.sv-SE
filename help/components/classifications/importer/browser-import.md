@@ -2,16 +2,16 @@
 description: Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här metoden begränsar din överföring av klassificeringsdata till en enda rapportserie
 subtopic: Classifications
 title: Import via webbläsare
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: 56dfbf4c-36e6-49f4-b5cb-8ab714432825
+exl-id: 5bef1f6d-9b27-464d-8343-472f300a7437
 translation-type: tm+mt
-source-git-commit: 0870ace3fea8e3ef650d2de2960006a0d655cf9f
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 3%
+source-wordcount: '287'
+ht-degree: 4%
 
 ---
-
 
 # Import via webbläsare
 
@@ -23,7 +23,7 @@ Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här met
 
 **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**
 
-## Import av klassificeringswebbläsare - fältbeskrivningar {#section_F628C47081DA4026A4D30E3D3454B1DA}
+## Import av klassificeringsläsare - fältbeskrivningar {#section_F628C47081DA4026A4D30E3D3454B1DA}
 
 <table id="table_7FC7E510E7E74C2D9E8F316C5C6B66DB"> 
  <thead> 
@@ -66,9 +66,8 @@ t_upload_a_saint_data_file_via_web_browser.xml
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka på **[!UICONTROL Import File]**.
-1. Konfigurera **[!UICONTROL Browser Import]** fälten.
+1. Konfigurera fälten **[!UICONTROL Browser Import]**.
 1. Klicka på **[!UICONTROL Import File]**.
 1. Titta på statusfönstret för att bearbeta meddelanden.
-1. (Villkorligt) Om du väljer **[!UICONTROL Automatically Download Classification File After Upload is Complete]** det här alternativet anger du var du vill spara den resulterande filen när bearbetningen är klar.
+1. (Villkorligt) Om du valde **[!UICONTROL Automatically Download Classification File After Upload is Complete]** anger du var du vill spara den resulterande filen när bearbetningen är klar.
 >Om importen lyckas visas omedelbart de ändringar som gjorts i en export. Dataändringar i rapporter tar dock upp till fyra timmar vid användning av en webbläsarimport och upp till 24 timmar vid användning av en FTP-import.
-
