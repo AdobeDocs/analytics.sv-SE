@@ -5,7 +5,7 @@ feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
 translation-type: tm+mt
-source-git-commit: e4bfa3c523efc10d8ae7a32dc59861894ef0e1bf
+source-git-commit: cfeb681805108c9d9422d88b6d7146d0eb186204
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 2%
@@ -64,6 +64,9 @@ För **nya**-projekt som aldrig har sparats går det inte att återställa ändr
 Så här öppnar du en tidigare version av ett projekt:
 
 1. Gå till **[!UICONTROL Project]** > **[!UICONTROL Open previous version]**
+
+   ![](assets/previous-versions.png)
+
 1. Granska listan över tidigare versioner.
    [!UICONTROL Timestamp] och  [!UICONTROL Editor] visas förutom  [!UICONTROL Notes] om de lades till när de  [!UICONTROL Editor] sparades. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
 1. Välj en tidigare version och klicka på **[!UICONTROL Load]**.
