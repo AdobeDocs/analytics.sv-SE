@@ -1,13 +1,13 @@
 ---
 description: Om du är van vid att arbeta med Segment Builder i Ad Hoc Analysis, förklarar denna Frågor och svar vad som händer med befintliga segment och mappar och vilka åtgärder du måste vidta.
-keywords: segmentation;segments
+keywords: segmentering;segment
 title: Övergångshandbok för Ad Hoc Analysis
-topic: Segments
+feature: Segment
 uuid: d409d71a-f8d9-42a2-add2-37d426cd40d1
 translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Nu när segment fungerar i flera rapportsviter kan det finnas flera segment med 
 
 Om segmentet publicerades i Experience Cloud kan du inte ta bort eller redigera det. Du kan dock kopiera den och redigera den kopierade versionen.
 
-## Mer information om vad som händer med befintliga segment {#section_83ACAB256F394DCD8B424D8920BDD853}
+## Mer information om vad som händer med dina befintliga segment {#section_83ACAB256F394DCD8B424D8920BDD853}
 
 <table id="table_0AE814A64D2A48ABB28402C4303F420E"> 
  <thead> 
