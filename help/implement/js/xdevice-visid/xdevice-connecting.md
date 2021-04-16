@@ -1,18 +1,18 @@
 ---
 description: Identifiering av besökare på olika enheter hjälper er att koppla samman besökare på olika enheter. Identifiering av besökare på olika enheter använder variabeln besökar-ID, s.visitorID, för att associera en användare på olika enheter.
-keywords: Analytics Implementation
+keywords: Implementering av analyser
 subtopic: Visitors
 title: Koppla samman användare på olika enheter
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 6243957b-5cc1-49ef-aa94-5b5ec4eac313
+exl-id: dfe278db-01de-4bba-b07a-66d52de1dbe2
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # Koppla samman användare på olika enheter
 
