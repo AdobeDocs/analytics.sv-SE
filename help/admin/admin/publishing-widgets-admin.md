@@ -1,28 +1,28 @@
 ---
 description: En publiceringswidget är en behållare där du kan bädda in marknadsföringsrapporter (bokmärken och instrumentpaneler) på en webbsida. Personer i organisationen som inte har tillgång till marknadsföringsrapporter kan visa relevanta data.
 title: Publiceringswidget
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: 4ecf6a5a-8a4e-4707-b282-39890eba3c5d
+exl-id: 97ec07d8-29ad-4ef3-9227-bfdc14a59b97
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
 
-
 # Publiceringswidget
 
-En publiceringswidget är en behållare där du kan bädda in Analytics-rapporter (bokmärken och instrumentpaneler) på en webbsida. Personer i organisationen som inte har tillgång till Analytics-rapporter kan visa relevanta data.
+En publiceringswidget är en behållare som gör att du kan bädda in analysrapporter (bokmärken och instrumentpaneler) på en webbsida. Personer i organisationen som inte har tillgång till analysrapporter kan visa relevanta data.
 
 Du kan till exempel skapa en kontrollpanel så att företagsledningen kan se antalet besökare, antalet unika sidbesökare och så vidare.
 
 >[!CAUTION]
 >
->Ingen autentisering krävs för att visa data som publicerats via publiceringswidgeten. På grund av detta bör publicerade data inte anses vara säkrare än data som skickas till en e-postgrupp eller listserver. Använd widgeten endast i enlighet med organisationens säkerhetsstandarder, befintliga avtalskrav och tillämplig lag. Med publiceringswidgeten kan du begränsa, per IP-adress eller domänsökväg, var du kan publicera data. Dessa mekanismer är dock enbart avsedda att förhindra oavsiktlig datadistribution och är inte ett effektivt sätt att säkra tillgången till data som distribueras via publiceringswidgeten.
+>Ingen autentisering krävs för att visa data som publicerats via publiceringswidgeten. På grund av detta bör publicerade data inte anses vara säkrare än data som skickas till en e-postgrupp eller listserver. Använd widgeten endast i enlighet med organisationens säkerhetsstandarder, befintliga avtalskrav och tillämplig lag. Med publiceringswidgeten kan du begränsa, per IP-adress eller domänsökväg, var du kan publicera data. Dessa mekanismer är dock enbart avsedda att förhindra oavsiktlig datadistribution och är inte ett effektivt sätt att säkra åtkomst till data som distribueras via publiceringswidgeten.
 >
-> Adobe frånsäger sig allt ansvar för data som exponeras via publiceringswidgeten.
+> Adobe tar inget ansvar för data som exponeras via publiceringswidgeten.
 
 Eftersom Publishing Widget kan generera stora trafikvolymer förbehåller sig Adobe rätten att, efter eget gottfinnande, inaktivera ett företags publiceringswidgetar för felaktig användning eller för stor trafik som påverkar den totala prestandan.
 
@@ -33,7 +33,7 @@ Första gången någon ser den distribuerade publiceringswidgeten körs rapporte
 Om du ser dataskillnader mellan publiceringswidgeten och rapportgränssnittet kan du behöva rensa publiceringswidgetens cache.
 
 1. Klicka i publiceringswidgeten (så att widgeten har fokus).
-1. Klicka **[!UICONTROL Save]** på widgeten.
+1. Klicka på **[!UICONTROL Save]** i widgeten.
 1. Kör widgeten igen. (Förhandsgranskningsläget använder inte widgetens cache.)
 
 >[!NOTE]
@@ -46,5 +46,5 @@ Om du ser dataskillnader mellan publiceringswidgeten och rapportgränssnittet ka
 |--- |--- |
 | Namn | Widgetens namn. |
 | Beskrivning | (Valfritt) Ange en beskrivning för widgeten. |
-| Rapport | I den övre listrutan Rapport väljer du en mapp eller en kontrollpanel. Välj ett rapportmärke eller bokmärke i den nedre listrutan Rapport.  Dessa rapporter kräver ingen besöksautentisering. <br>När en besökare läser in en webbsida som innehåller en publiceringswidget visar widgeten automatiskt den associerade rapporten med aktuella rapportdata. Om du ändrar en publiceringswidget, till exempel ändrar den associerade rapporten, uppdateras rapportutdata automatiskt för alla webbsidor som använder den widgeten, utan att du behöver distribuera om webbsidorna.</br> |
+| Rapport | I den övre listrutan Rapport väljer du en mapp eller en kontrollpanel. Välj ett rapportmärke eller bokmärke i den nedre listrutan Rapport.  Dessa rapporter kräver ingen besöksautentisering. <br>När en besökare läser in en webbsida som innehåller en publiceringswidget visar widgeten automatiskt den associerade rapporten med aktuella rapportdata. Ändringar i en publiceringswidget, till exempel ändring av den associerade rapporten, uppdaterar automatiskt rapportutdata för alla webbsidor som använder den widgeten, utan att du behöver distribuera om webbsidorna.</br> |
 | Mål | Ange widgetens mål.   Destinationerna måste ha ett giltigt URL-format, inklusive prefixet https:// eller https://. Publiceringswidgetens mål är inkluderade, vilket innebär att publiceringswidgeten fungerar på alla URL:er som innehåller det angivna målet. <br>Om du till exempel anger som mål för https://www.corp1.com/sales/ kan du publicera widgetar på alla webbsidor på eller under försäljningssidan på www.corp1.com webbplats.</br> |
