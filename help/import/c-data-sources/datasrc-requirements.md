@@ -2,16 +2,16 @@
 description: Information om kraven för rapportsviten innan du använder datakällor.
 subtopic: Data sources
 title: Krav och överföringsgränser
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: d79fca77-fa0e-4171-b978-cdee5c67d9df
+exl-id: 97a7cc65-f99a-4227-94f2-6f428ebdfad3
 translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
 
 ---
-
 
 # Krav och överföringsgränser
 
@@ -35,15 +35,15 @@ I följande avsnitt visas begränsningar som gäller för datakällor och data s
 * Endast data med aktuella eller tidigare datum kan importeras. Försök inte använda framtida datum i dina datakällsdata.
 * Alla rader måste ha ett angivet datum för att rapportdiagramfunktioner ska kunna aktiveras. Om en rad inte innehåller något datum genererar datakällor ett fel och avvisar filen. Datum-/tidsformatet varierar beroende på datakälltyp:
 
-   * **Datakällor** med fullständig bearbetning: Använd datumformatet ISO 8601 för `YYYY-MM-DDThh:mm:ss±UTC_offset` (till exempel `2013-09-01T12:00:00-07:00`) eller Unix Time-format (antalet sekunder som gått sedan 1 januari 1970).
+   * **Datakällor** med fullständig bearbetning: Använd ISO 8601-datumformatet för  `YYYY-MM-DDThh:mm:ss±UTC_offset` (till exempel  `2013-09-01T12:00:00-07:00`) eller Unix-tidsformat (antalet sekunder som gått sedan 1 januari 1970).
 
-   * **Standarddatakällor och integreringsdatakällor**: Använd följande datumformat: `MM/DD/YYYY/HH/mm/SS` (till exempel `01/01/2013/06/00/00`)
+   * **Standarddatakällor och integreringsdatakällor**: Använd följande datumformat:  `MM/DD/YYYY/HH/mm/SS` (till exempel  `01/01/2013/06/00/00`)
 
 ## Allmänt {#section_1CD337F660484ABDB7D8CAE96FF46ACF}
 
 * När du överför en datakällfil utför datakällor en grundläggande dataverifiering för att säkerställa att filen inte innehåller formateringsfel. Om ett fel påträffas i en fil skickas ett e-postmeddelande och bearbetningen avbryts.
 * Datafält får inte innehålla semikolon. Datakällor hoppar över poster som innehåller ett semikolon.
-* Data från webblogg, trafik och vissa allmänna datakällgrupper är inte tillgängliga i Data warehouse eller Discover. Mer information finns i [Datatyper och -kategorier](/help/import/c-data-sources/c-datasrc-types/datasrc-categories.md).
+* Data från webblogg, trafik och vissa allmänna datakällgrupper är inte tillgängliga i Data warehouse eller Discover. Mer information finns i [Datatyper och kategorier](/help/import/c-data-sources/c-datasrc-types/datasrc-categories.md).
 * Datakällor stöder inte serialiserade händelser.
 
 ## Stöd för flera byte {#section_96C8D26B21184C3E839865DB6F23EA22}
