@@ -2,16 +2,16 @@
 description: Datakällor erbjuder två ytterligare sätt att integrera händelser som inträffar offline med dina onlinedata.
 subtopic: Data sources
 title: Transaktions- och kundintegrering
-topic: Utvecklare och implementering
+topic-fix: Developer and implementation
 uuid: 71f73a47-3436-4314-a182-36de4bd935ba
+exl-id: d4e4388b-6449-4fef-a94d-01b3a52c2190
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '299'
 ht-degree: 2%
 
 ---
-
 
 # Transaktions- och kundintegrering
 
