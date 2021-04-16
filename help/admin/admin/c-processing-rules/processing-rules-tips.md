@@ -2,13 +2,16 @@
 description: Det här avsnittet innehåller riktlinjer för testning av bearbetningsregler och en lista över vanliga misstag som ska undvikas.
 subtopic: Processing rules
 title: Tips och tricks för regler
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: e3a9ff8a-b81a-41c9-9f61-e40cb4bf7d99
+exl-id: e663d98b-dcfd-4420-84ac-07ddfe55a3f2
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 2%
 
 ---
-
 
 # Tips och tricks för regler
 
@@ -24,7 +27,7 @@ Om du vill se villkor som baseras på en sökning, t.ex. om prop1 innehåller &q
 
 **Testregler som läser variabler**
 
-Skapa en tom HTML-sida på skrivbordet, inkludera s_code från webbplatsen och ange variabeln till en dev-rapportserie. `s.account` Om dina regler baseras på en referent, refererande domän och så vidare, kan du ta några exempel-URL:er från live-referensrapporten, ange variabeln med ett av dessa värden och läsa in sidan. `s.referrer` På samma sätt kan du ange `s.pageURL`om regeln baseras på sidans URL-värde. Samma process kan användas för alla variabler.
+Skapa en tom HTML-sida på skrivbordet, ta med s_code från webbplatsen och ställ in variabeln `s.account` på en dev-rapportserie. Om dina regler baseras på en referent, refererande domän och så vidare, kan du ta några exempel-URL:er från direktreferensrapporten, ange variabeln `s.referrer` med ett av dessa värden och läsa in sidan. På samma sätt kan du ange `s.pageURL` om regeln baseras på sidans URL-värde. Samma process kan användas för alla variabler.
 
 **Använda en Dev Report Suite**
 
@@ -36,7 +39,7 @@ När du skapar en regel bör du tänka på skiftläget när ett värde är tomt.
 
 ![](assets/tips-set-value-acquisition-code.png)
 
-Det är också viktigt att ta hänsyn till bearbetningsordningen. I följande exempel visas att det anpassade eVar-värdet för Föregående sidnamn kommer att anges till URL-adressen om det inte finns något sidnamn. URL:en placeras emellertid i sidnamnet när bearbetningsreglerna har tillämpats, så i det här fallet är sidnamnet tomt om det inte har angetts på sidan.
+Det är också viktigt att ta hänsyn till bearbetningsordningen. I följande exempel visas att den anpassade eVar Föregående sidnamn ställs in på URL-adressen om det inte finns något sidnamn. URL:en placeras emellertid i sidnamnet när bearbetningsreglerna har tillämpats, så i det här fallet är sidnamnet tomt om det inte har angetts på sidan.
 
 ![](assets/tips-copy-page-name-to-evar.png)
 
@@ -48,7 +51,7 @@ Den här regeln bör konfigureras om så att varje kontextdatavariabel testas ef
 
 ![](assets/tips-search-keyword.png)
 
-## Koda sökvillkor till UTF-8 eller Unicode {#section_3BBBE1FB8FEA48589362452DE51DB575}
+## Koda söktermer till UTF-8 eller Unicode {#section_3BBBE1FB8FEA48589362452DE51DB575}
 
 Söktermer som hämtas från en frågesträng måste kodas korrekt, annars matchas de inte av bearbetningsregler.
 
