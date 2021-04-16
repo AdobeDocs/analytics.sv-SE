@@ -1,16 +1,16 @@
 ---
 description: Beskriver ett föreslaget arbetsflöde för segment som skapats med segmentbyggaren och hanteras med segmenthanteraren.
 title: Översikt över segmenteringsarbetsflöde
-topic: Segment
+feature: Segment
 uuid: e15aaa2f-a604-46dd-9bdd-e2a340c74927
+exl-id: 2ed6e327-d69d-4cdb-9b87-99ebebc37e2c
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 2%
 
 ---
-
 
 # Översikt över segmenteringsarbetsflöde
 
