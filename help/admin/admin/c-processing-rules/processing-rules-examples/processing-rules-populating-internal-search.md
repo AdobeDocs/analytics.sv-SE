@@ -1,18 +1,21 @@
 ---
-description: Om du använder en vanlig variabel, t.ex. q, för att fylla i söktermer, kan du använda bearbetningsregler för att fylla i eVar-satsen för de interna söktermerna med dessa värden.
+description: Om du använder en vanlig variabel, till exempel q, för att fylla i söktermer, kan du använda bearbetningsregler för att fylla i eVar för interna söktermer med dessa värden.
 subtopic: Processing rules
 title: Fylla i interna söktermer med en frågesträngsparameter
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: 05ae2b0a-8797-468c-8f59-643beac614c5
+exl-id: bc7cc712-0f2a-4260-a82c-ad0e48149e73
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 18%
 
 ---
 
-
 # Fylla i interna söktermer med en frågesträngsparameter
 
-Om du använder en vanlig variabel, t.ex. q, för att fylla i söktermer, kan du använda bearbetningsregler för att fylla i eVar-satsen för de interna söktermerna med dessa värden.
+Om du använder en vanlig variabel, till exempel q, för att fylla i söktermer, kan du använda bearbetningsregler för att fylla i eVar för interna söktermer med dessa värden.
 
 Frågesträngsvärden måste kodas i Unicode eller UTF-8 för att kunna läsas av bearbetningsregler.
 
@@ -24,4 +27,3 @@ Frågesträngsvärden måste kodas i Unicode eller UTF-8 för att kunna läsas a
 Exempel:
 
 ![](assets/populate-internal-search-terms.png)
-
