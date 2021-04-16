@@ -1,28 +1,31 @@
 ---
 description: Bearbetningsregler anges för rapportsviter.
 subtopic: Processing rules
-title: Skapa bearbetningsregler
-topic: Admin tools
+title: Skapa behandlingsregler
+feature: Administratörsverktyg
 uuid: fd92e6c9-8ef0-4604-8fd4-4225527b4fa9
+exl-id: e28380da-e499-4b73-8ae8-b62f847d10e1
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 7%
 
 ---
 
-
-# Skapa bearbetningsregler
+# Skapa behandlingsregler
 
 Bearbetningsregler anges för rapportsviter.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Processing Rules]**.
-1. På **[!UICONTROL Processing Rules]** sidan klickar du på **[!UICONTROL Add Rule]**.
-1. Klicka **[!UICONTROL Add Condition]** och välj sedan när regeln gäller.
+1. Klicka på **[!UICONTROL Add Rule]** på sidan **[!UICONTROL Processing Rules]**.
+1. Klicka på **[!UICONTROL Add Condition]** och välj sedan när regeln gäller.
 
-   Om du lägger till mer än ett villkor klickar du i den **[!UICONTROL All]** nedrullningsbara rutan för att välja vilka villkor som måste matcha för att regeln ska gälla. Om du inte lägger till några villkor körs alltid den definierade åtgärden.
+   Om du lägger till mer än ett villkor klickar du i listrutan **[!UICONTROL All]** för att välja vilka villkor som måste matcha för att regeln ska gälla. Om du inte lägger till några villkor körs alltid den definierade åtgärden.
 
-1. Klicka **[!UICONTROL Add Action]** och välj sedan den åtgärd som du vill ska utföras när villkoren matchar.
+1. Klicka på **[!UICONTROL Add Action]** och välj sedan den åtgärd som du vill ska utföras när villkoren matchar.
 1. Lägg till en anteckning som innehåller information om regeln och klicka sedan på **[!UICONTROL Save]**.
 
    Om du har flera regler drar och släpper du dem på sidan för att ändra bearbetningsordningen.
