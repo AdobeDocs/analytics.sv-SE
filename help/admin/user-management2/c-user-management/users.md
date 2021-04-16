@@ -2,25 +2,28 @@
 description: Med Hantera rapportanvändare och grupper på sidan Användarhantering kan du hantera användare och grupper samt styra åtkomsten till rapporter, verktyg och rapportsviter.
 subtopic: Users and groups
 title: Översikt över användarhantering
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: 6f1d67cd-e169-461b-9f08-eec2c6b4e6df
+exl-id: 0c722098-4888-4827-b3b1-2eb45c7d43f3
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 6%
 
 ---
-
 
 # Översikt över användarhantering
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
 
 Med Hantera rapportanvändare och grupper på sidan Användarhantering kan du hantera användare och grupper samt styra åtkomsten till rapporter, verktyg och rapportsviter.
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Edit Users]**
 
-## Beskrivningar av användarkonton {#section_14A7E169514A42A88E06387CC7C2E9AD}
+## Beskrivningar av användarkonto {#section_14A7E169514A42A88E06387CC7C2E9AD}
 
 **Aktuellt lösenord**
 
@@ -79,7 +82,7 @@ Skapar en standardinstrumentpanel för en angiven rapportserie.
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Användare</span> </td> 
-   <td colname="col2"> <p> Ger bara användaren de markerade gruppbehörigheterna. Markera önskade grupper i fältet <span class="uicontrol"> Tillgängliga grupper</span> (till vänster) och klicka sedan på <span class="uicontrol"> Lägg till</span>. De tilldelade grupperna visas i fältet <span class="uicontrol"> Tilldelade grupper</span> (till höger). Mer information om hur du skapar och hanterar grupper finns i <a href="/help/admin/user-management2/c-user-groups/groups.md"> Grupper</a>. </p> </td> 
+   <td colname="col2"> <p> Ger bara användaren de markerade gruppbehörigheterna. Markera önskade grupper i fältet <span class="uicontrol"> Tillgängliga grupper</span> (till vänster) och klicka sedan på <span class="uicontrol"> Lägg till</span>. De tilldelade grupperna visas i fältet <span class="uicontrol"> Tilldelade grupper</span> (till höger). Mer information om att skapa och hantera grupper finns i <a href="/help/admin/user-management2/c-user-groups/groups.md"> Grupper</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -92,4 +95,3 @@ Skapar en standardinstrumentpanel för en angiven rapportserie.
 | [!UICONTROL Custom Message] | Lägger till ytterligare innehåll i välkomstmeddelandet. Det anpassade meddelandefältet har stöd för HTML, men du kan inte inkludera bilagor. |
 | [!UICONTROL Preview Email] | Visar välkomstmeddelandet i ett separat webbläsarfönster. |
 | [!UICONTROL Set as default Welcome Message] | Ändrar standardvälkomstmeddelandet så att det innehåller det anpassade innehållet som har angetts i rutan Anpassat meddelande. |
-
