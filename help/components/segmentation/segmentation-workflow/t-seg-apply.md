@@ -1,23 +1,23 @@
 ---
-description: Hur man lägger in ett eller flera segment i en rapport från segmentets spårvidd.
+description: Så här använder du ett eller flera segment i en rapport från segmentspåret.
 title: Markera och tillämpa segment
-topic: Segments
+feature: Segment
 uuid: f835ddc1-4650-4e5f-848d-6c97fb7d6141
+exl-id: 870026e2-a3a3-4d87-a6c2-6189098d3676
 translation-type: tm+mt
-source-git-commit: 9e70cd51f8828cdcb698175a2b4c0150610d14d0
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 4%
 
 ---
 
-
 # Markera och tillämpa segment
 
-Hur man lägger in ett eller flera segment i en rapport från segmentets spårvidd.
+Så här använder du ett eller flera segment i en rapport från segmentspåret.
 
-1. Visa rapporten som du vill tillämpa ett segment på, till exempel [!UICONTROL Pages Report].
-1. Klicka **[!UICONTROL Show Segments]** ovanför rapporten. Segmentspåret öppnas.
+1. Ta fram rapporten som du vill tillämpa ett segment på, till exempel [!UICONTROL Pages Report].
+1. Klicka på **[!UICONTROL Show Segments]** ovanför rapporten. Segmentspåret öppnas.
 
    ![](assets/segment_rail.png)
 
@@ -31,7 +31,7 @@ Hur man lägger in ett eller flera segment i en rapport från segmentets spårvi
    >
    >Om du klickar på informationsikonen (i) bredvid segmentnamnet kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt segment och hur brett segmentet är.
 
-1. Du kan filtrera efter rapportsviten genom att markera **[!UICONTROL (Only) `<report suite name>`]** kryssrutan. Detta visar endast de segment som senast sparades i rapportsviten.
-1. Klicka **[!UICONTROL Apply Segment]** så uppdateras rapporten. Det eller de segment som tillämpas visas nu högst upp i rapporten:
+1. Du kan filtrera efter rapportserie genom att markera kryssrutan **[!UICONTROL (Only) `<report suite name>`]**. Detta visar endast de segment som senast sparades i rapportsviten.
+1. Klicka på **[!UICONTROL Apply Segment]** så uppdateras rapporten. Det eller de segment som tillämpas visas nu högst upp i rapporten:
 
    ![](assets/applied_segments.png)
