@@ -2,22 +2,22 @@
 description: Beskrivningar av element på sidan Definiera användargrupp.
 subtopic: Users and groups
 title: Inställningar för användargrupp
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: b411032a-7d56-44fd-b676-abee4af756f9
+exl-id: f5cb40e6-bfcc-4071-bc6b-f3575f998edc
 translation-type: tm+mt
-source-git-commit: 82cf5ddfd4d18af09c2dbedba20514e4b643a94b
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '600'
+ht-degree: 2%
 
 ---
-
 
 # Inställningar för användargrupp (äldre)
 
 >[!IMPORTANT]
 >
->Hanteringen av användare och produkter går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
 
 Beskrivningar av element på sidan Definiera användargrupp.
 
@@ -48,7 +48,7 @@ Beskrivningar av element på sidan Definiera användargrupp.
      <ul id="ul_62D4A028A1194E02B2F0D364D01E741C"> 
       <li id="li_11ADAD0A625046409B4FCCEF1D14E1E6">Tillgängliga rapportsviter </li> 
      </ul> </p> </td> 
-   <td colname="col2"> <p>Visar alla rapportsviter som den här gruppen har åtkomst till. </p> <p>Välj önskad rapportserie och klicka sedan på <span class="uicontrol"> Lägg till</span>. </p> <p>De tilldelade rapportsviterna visas i de <span class="wintitle"> rapportsviter som ingår i gruppen</span>. </p> <p><b>Alla åtkomst till</b>Report Suite: När du lägger till rapportsviter som ska inkluderas i en grupp kan du ange <span class="uicontrol"> Alla rapportsvitåtkomst</span>. Den här inställningen tillämpar gruppbehörigheter för alla aktuella och framtida rapportsviter. </p> </td> 
+   <td colname="col2"> <p>Visar alla rapportsviter som den här gruppen har åtkomst till. </p> <p>Välj önskad rapportserie och klicka sedan på <span class="uicontrol"> Lägg till</span>. </p> <p>De tilldelade rapportsviterna visas i <span class="wintitle">-rapportsviterna som ingår i gruppen</span>. </p> <p><b>Alla åtkomst till</b> Report Suite: När du lägger till rapportsviter som ska inkluderas i en grupp kan du ange  <span class="uicontrol"> Alla rapportsvitåtkomst</span>. Den här inställningen tillämpar gruppbehörigheter för alla aktuella och framtida rapportsviter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -63,20 +63,20 @@ Beskrivningar av element på sidan Definiera användargrupp.
      <p> 
       <ul id="ul_81ABB1701BEC44ECB548F98EB818F83B"> 
        <li id="li_FCE10A56AF904C9CBCE24AC91025639C"><b>Trafikrapporter</b>: Ger åtkomst till alla rapporter baserat på trafik, t.ex. sidvisningar, besök och unika besökare. </li> 
-       <li id="li_2742B7A661FC45F496DFFBBB6CE675DE"><b>Verktyg</b> (ger åtkomst till verktyg som används i rapporter och analyser, t.ex. Exkludera via IP, klassificeringar och äldre klickkarta.) </li> 
+       <li id="li_2742B7A661FC45F496DFFBBB6CE675DE"><b>Verktyg</b>  (ger åtkomst till verktyg som används i rapporter och analyser, t.ex. Exkludera via IP, klassificeringar och äldre klickkarta.) </li> 
        <li id="li_88D54C31211B4A38B46FF64651718865"><b>Video- och mobilrapporter</b> </li> 
-       <li id="li_DBC756832B52433DA6467EA8AEC02DBA"><b>Sökvägsrapporter</b> (Ger åtkomst till pausrapporter som Nästa sida, Utfall och Tid använt på sida.) </li> 
+       <li id="li_DBC756832B52433DA6467EA8AEC02DBA"><b>Sökvägsrapporter</b>  (Ger åtkomst till pausrapporter som Nästa sida, Utfall och Tid använt på sida.) </li> 
        <li id="li_D0B1B964C071441EAEC919DD7CC08E3D"><b>Anpassade sökvägsrapporter</b> </li> 
-       <li id="li_D63F60FF2DD2418A876B53404634D12D"><b>Test och Target </b>(Bevilja åtkomst till Target-rapporter om din organisation använder både Analytics och Target.) </li> 
+       <li id="li_D63F60FF2DD2418A876B53404634D12D"><b>Test och Target  </b>(Bevilja åtkomst till Target-rapporter om din organisation använder både Analytics och Target.) </li> 
        <li id="li_03CE1718D51049D596DB061932D97506"><b>SearchCenter</b> </li> 
-       <li id="li_78AB0BCEDBA946718F90B6D7AB52CB80"><b>Webbtjänster </b>(ger åtkomst till API-resurser för både rapportering och administration.) </li> 
-       <li id="li_DCA83780F6214AF1A82255BC977744F1"><b>Mätvärden</b> (ger åtkomst till mätvärden som används i rapporter och analyser, inklusive standardmått som sidvyer och andra mätvärden som anpassade händelser.)</li> 
-       <li id="li_A200E3CED33D4B15BFD30CBDD930912C"><b>Admin Console </b>(Ger åtkomst till olika komponenter på Admin Menu, t.ex. Logs och Report Suite-inställningar.) </li> 
-       <li id="li_CF3FA04D402A47618401633BA8583010"><b>Rapporthämtning</b> (Ger möjlighet att hämta rapporter inifrån analysgränssnittet.) </li> 
-       <li id="li_03AC2D9FF43648CB90E514C62DC31217"><b>Undersökning</b> (Ger tillgång till undersökningsrapporter om din organisation även använder den inaktuella Adobe Survey-funktionen.) </li> 
-       <li id="li_9FC3F25F335641B5AC9232BDC2DCCECA"><b>Avancerad rapportering</b> (Ger åtkomst till avancerade rapporter som marknadsföringskanaler, avvikelseidentifiering, segment och beräknade värden.) </li> 
-       <li id="li_DB56BEB8D31A4918B5CCD3CBBC1DF40A"><b>Socialt</b> (ger åtkomst till rapporter som genererats från data i Adobe Social.) </li> 
-       <li id="li_3C2F4F91B92A4CD9BCDD69E6FCE85EEE"><b>Dataanslutningar </b>(Tillåter användare att skapa, uppdatera eller ta bort dataanslutningar.) </li> 
+       <li id="li_78AB0BCEDBA946718F90B6D7AB52CB80"><b>Webbtjänster  </b>(ger åtkomst till API-resurser för både rapportering och administration.) </li> 
+       <li id="li_DCA83780F6214AF1A82255BC977744F1"><b>Metrisk</b> (Ger åtkomst till mått som används i rapporter och analyser, inklusive standardmått som sidvyer och andra mått som anpassade händelser.)</li> 
+       <li id="li_A200E3CED33D4B15BFD30CBDD930912C"><b>Admin Console  </b>(Ger åtkomst till olika komponenter på Admin Menu, t.ex. Logs och Report Suite-inställningar.) </li> 
+       <li id="li_CF3FA04D402A47618401633BA8583010"><b>Rapportera nedladdning</b>  (Ger möjlighet att hämta rapporter inifrån analysgränssnittet.) </li> 
+       <li id="li_03AC2D9FF43648CB90E514C62DC31217"><b>Undersökning</b>  (Ger tillgång till undersökningsrapporter om din organisation även använder den inaktuella Adobe Survey-funktionen.) </li> 
+       <li id="li_9FC3F25F335641B5AC9232BDC2DCCECA"><b>Avancerad rapportering</b>  (Ger åtkomst till avancerade rapporter som marknadsföringskanaler, avvikelseidentifiering, segment och beräknade värden.) </li> 
+       <li id="li_DB56BEB8D31A4918B5CCD3CBBC1DF40A"><b>Socialt</b>  (ger åtkomst till rapporter som genererats från data i Adobe Social.) </li> 
+       <li id="li_3C2F4F91B92A4CD9BCDD69E6FCE85EEE"><b>Dataanslutningar  </b>(Tillåter användare att skapa, uppdatera eller ta bort dataanslutningar.) </li> 
       </ul> </p> 
    </td> 
   </tr> 
@@ -116,7 +116,7 @@ Beskrivningar av element på sidan Definiera användargrupp.
      <ul id="ul_19FCA8B24B7E4477B9AC9564D6CF2D44"> 
       <li id="li_F006EF42026F43069AEC0BFE01D7CBC8">TagManager (all åtkomst, anpassa, ingen åtkomst) </li> 
      </ul> </p> </td> 
-   <td colname="col2"> <p>Behörigheter stöds för kunder som har aktiva <span class="keyword"> TagManager</span> -behållare. Inte tillgängligt för nya användare. </p> <p>Adobe rekommenderar <a href="https://docs.adobe.com/content/help/en/dtm/using/migration/atm-migration.html"> Dynamic Tag Management</a> för distribution. </p> </td> 
+   <td colname="col2"> <p>Behörigheter stöds för kunder som har aktiva <span class="keyword"> TagManager</span>-behållare. Inte tillgängligt för nya användare. </p> <p>Adobe rekommenderar <a href="https://docs.adobe.com/content/help/en/dtm/using/migration/atm-migration.html"> dynamisk tagghantering</a> för distribution. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Tilldela användarinloggningar</b> </td> 
@@ -127,7 +127,7 @@ Beskrivningar av element på sidan Definiera användargrupp.
      <ul id="ul_8C68B33A3847467DBDC58838E3E85612"> 
       <li id="li_9BA51B0001AA41DE949322083A6CE70D">Tillgängliga användare </li> 
      </ul> </p> </td> 
-   <td colname="col2"> <p>Visar alla användarkonton som är definierade. Markera önskade användarkonton och klicka sedan på <span class="uicontrol"> Lägg till</span>. De tilldelade användarkontona visas i fältet <span class="uicontrol"> Gruppmedlemmar</span> . </p> </td> 
+   <td colname="col2"> <p>Visar alla användarkonton som är definierade. Markera önskade användarkonton och klicka sedan på <span class="uicontrol"> Lägg till</span>. De tilldelade användarkontona visas i fältet <span class="uicontrol"> Gruppmedlemmar</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 
@@ -138,4 +138,3 @@ Beskrivningar av element på sidan Definiera användargrupp.
   </tr> 
  </tbody> 
 </table>
-
