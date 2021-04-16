@@ -1,17 +1,17 @@
 ---
 description: När besökarprofiler sammanfogas efter att de har associerats med samma variabel för besökar-ID, ändras inte attribueringen i den historiska datauppsättningen.
-keywords: Analytics Implementation
+keywords: Implementering av analyser
 title: Attribution och persistence
-topic: Developer and implementation
+topic-fix: Developer and implementation
 uuid: 5dd706be-83f6-498a-a856-e3c5af995348
+exl-id: 7a6305f6-c8ec-4f26-8373-45ce586bc69d
 translation-type: tm+mt
-source-git-commit: 12c026fec44f2e66e2997e8b338823f2c7d790e4
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
-
 
 # Attribution och persistence
 
