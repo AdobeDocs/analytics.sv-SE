@@ -2,13 +2,13 @@
 description: En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. Du använder en variabel för regeluppsättningen. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter.
 subtopic: Classifications
 title: Uppsättningar med klassificeringsregler
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: c4d7b77c-fa98-44be-955f-9aee7f73480b
 translation-type: tm+mt
-source-git-commit: 6efb60ae2f565e67426c78bf830ada655e29b3af
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 2%
+source-wordcount: '358'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 En regeluppsättning är en grupp klassificeringsregler för en specifik variabel. Du använder en variabel för regeluppsättningen. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter.
 
-## Classification Rule Builder Page {#section_C60B0888C76D49C596EF19F11808B718}
+## Skapandesida för klassificeringsregel {#section_C60B0888C76D49C596EF19F11808B718}
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Classification Rule Builder]**
 
@@ -62,7 +62,7 @@ Ge klassificeringsregeluppsättningen ett namn, använd variabeln och ange över
 
    (Se [Klassificeringar](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) i Admin Tools-hjälpen om hur du lägger till klassificeringar.)
 
-   Variabler visas bara på [!UICONTROL New Rule Set] panelen när de har minst en klassificering definierad för den variabeln.
+   Variabler visas bara på panelen [!UICONTROL New Rule Set] när de har minst en klassificering definierad för den variabeln.
 
    Du kan skapa klassificeringar för en variabel i **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic Classifications]** (eller **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**). Markera sedan variabeln och klicka på **[!UICONTROL Add Classification]**.
 
@@ -79,6 +79,6 @@ Ge klassificeringsregeluppsättningen ett namn, använd variabeln och ange över
 
    Rapportsviten och variabellistan fylls i med alla klassificerade variabler som är tillgängliga i alla rapportsviter i ditt inloggningsföretag. En enskild variabel i en rapportserie kan bara tillhöra en regeluppsättning.
 
-   Mer information finns *`Variable`* i definitionerna för sidan [Klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-definitions.md) .
+   Mer information finns i *`Variable`* i definitionerna för sidan [Klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-definitions.md).
 1. Ange de rapportsviter och variabler som ska användas och klicka sedan på **[!UICONTROL Save]**.
-1. Fortsätt genom [att lägga till klassificeringsregler](/help/components/classifications/crb/classification-rule-set.md) i regeluppsättningen.
+1. Fortsätt med [att lägga till klassificeringsregler](/help/components/classifications/crb/classification-rule-set.md) i regeluppsättningen.
