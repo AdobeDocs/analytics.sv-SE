@@ -7,7 +7,7 @@ feature: Rapporter och analysgrunder
 uuid: 82a86314-4841-4133-a0dc-4e7c6cd14fc1
 exl-id: 7456ed99-c2f3-4b19-a63e-6b4e457e7d55
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 05c85e0eee25a04be154d8bcae9b133791667d75
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 0%
@@ -116,7 +116,7 @@ När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehål
 
 När data har samlats in under en timme får du en enda komprimerad datafil och en manifestfil. Datafilen heter:
 
-`[rsid]_[YYYY-mm-dd]-[HHMMSS].[compression_suffix]`
+`[rsid]_[YYYYmmdd]-[HHMMSS].[compression_suffix]`
 
 När datafilen extraheras innehåller den en enda `hit_data.tsv`-fil med alla data för den timmen, samt sökfiler efter eventuella nödvändiga kolumner.
 
@@ -124,7 +124,7 @@ När datafilen extraheras innehåller den en enda `hit_data.tsv`-fil med alla da
 
 När data har samlats in under en timme får du en eller flera komprimerade datafiler och en manifestfil. Datafilen heter:
 
-`[index]-[rsid]_[YYYY-mm-dd]-[HHMMSS].[compression_suffix]`
+`[index]-[rsid]_[YYYYmmdd]-[HHMMSS].[compression_suffix]`
 
 När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehåller ungefär 2 GB okomprimerade data samt sökfiler efter eventuella nödvändiga kolumner.
 
