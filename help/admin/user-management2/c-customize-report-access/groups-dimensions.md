@@ -1,28 +1,28 @@
 ---
 description: 'Anpassa användaråtkomsten på detaljnivå: eVars, trafikrapporter, lösningsrapporter och kundvägsrapporter.'
-keywords: groups;permissions
+keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Anpassa dimensionsbehörigheter
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: aaf164ad-3863-4129-864e-39ec71c6a8eb
+exl-id: 51c4193a-426e-46a0-8494-163b58588157
 translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '501'
 ht-degree: 13%
 
 ---
-
 
 # Anpassa dimensionsbehörigheter
 
 >[!IMPORTANT]
 >
->Hanteringen av användare och produkter går över till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat tas hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
 
 Anpassa användaråtkomsten på detaljnivå: eVars, trafikrapporter, lösningsrapporter och kundvägsrapporter.
 
-**[!UICONTROL User Management]** > **[!UICONTROL Groups]** > **[!UICONTROL Report Access]** > **[!UICONTROL Dimensions]** > **[!UICONTROL Customize]**
+**[!UICONTROL User Management]** >  **[!UICONTROL Groups]** >  **[!UICONTROL Report Access]** >  **[!UICONTROL Dimensions]** >  **[!UICONTROL Customize]**
 
 >[!IMPORTANT]
 >
@@ -30,22 +30,22 @@ Anpassa användaråtkomsten på detaljnivå: eVars, trafikrapporter, lösningsra
 >
 >Dessa dimensioner är tillgängliga för alla användare, oavsett andra behörigheter.
 
-Inställningarna på den här sidan gäller för de rapportsviter som är markerade på [!UICONTROL Define User Groups] sidan.
+Inställningarna på den här sidan gäller för de rapportsviter som har valts på sidan [!UICONTROL Define User Groups].
 
 ![](assets/permissions-dimensions.png)
 
-Förstå följande information om dimensionskategorin för behörigheter.
+Läs mer om behörighetskategorin nedan.
 
 * eVars 1-250 är individuellt tillåtna.
 * Alla trafikrapporter är dimensioner.
-* Video- och mobilrapporter är dimensioner samt andra rapporter från Analytics-lösningar (Experience Manager, Advertising Cloud, Social och så vidare).
+* Video- och mobilrapporter är dimensioner samt andra rapporter om analyslösningar (Experience Manager, Advertising Cloud, Social och så vidare).
 * Matchningsrapporter är tillgängliga om en användare har åtkomst till den överordnade dimensionen.
 * Alla aktuella dimensioner och mått i anpassade grupper har automatiskt migrerats till de nya kategorierna. Om en befintlig grupp har mätvärden aktiverade får den som standard alla nya tillåtna mått (eVars och innehållsmedvetna) och mätvärden.
-* Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av tillgången till den [variabel](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html) som klassificeringen baseras på.
+* Behörigheter för klassificeringsimporteraren (tidigare SAINT): Åtkomsten till klassificeringar bestäms av åtkomsten till variabeln [som klassificeringen baseras på.](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html)
 
-Mer information finns i [Användar- och gruppbehörighetsändringar](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html).
+Mer information finns i [Ändringar av användar- och gruppbehörighet](https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/permissions-changes.html).
 
-**Anpassa dimensioner**
+**Anpassa Dimensioner**
 
 Följande objekt är dimensioner som du kan ge behörighet.
 
@@ -63,26 +63,26 @@ Följande objekt är dimensioner som du kan ge behörighet.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/evar.html"> Props </a> </p> </td> 
-   <td colname="col2"> <p>Props är anpassade trafikvariabler. </p> <p>Se Traffic Props och konvertering av eVars <a href="https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/evar.html"> </a> i Analytics-implementering. </p> </td> 
+   <td colname="col2"> <p>Props är anpassade trafikvariabler. </p> <p>Se <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html"> Traffic Props and conversion eVars </a> in Analytics Implementation. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html"> Hierarki </a> </p> </td> 
    <td colname="col2"> <p> Variabeln hierarki (hierN) bestämmer platsen för en sida i platsens hierarki eller sidstruktur. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html"> Listvar </a> </p> </td> 
-   <td colname="col2"> <p> Listan liknar hur funktionen List Props tillåter listvariabler flera värden inom samma bildbegäran. </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html"> Listvar  </a> </p> </td> 
+   <td colname="col2"> <p> Listvariabler liknar hur funktionen List Props tillåter flera värden inom samma bildbegäran. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Standard </p> </td> 
-   <td colname="col2"> <p>Avser standardmåtten (färdiga) i Analytics. </p> </td> 
+   <td colname="col2"> <p>Avser standardmått (färdiga) i Analytics. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="https://helpx.adobe.com/support/experience-manager.html"> AEM </a> </p> </td> 
    <td colname="col2"> <p>Adobe Experience Manager </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://helpx.adobe.com/support/advertising-cloud.html"> AMO </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://helpx.adobe.com/support/advertising-cloud.html"> AMO  </a> </p> </td> 
    <td colname="col2"> <p>Adobe Advertising Cloud </p> </td> 
   </tr> 
   <tr> 
@@ -98,7 +98,7 @@ Följande objekt är dimensioner som du kan ge behörighet.
    <td colname="col2"> <p>Den här partnerintegreringen är inte längre aktiv. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html"> Nielsen </a> </p> </td> 
+   <td colname="col1"> <p> <a href="https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html"> Nielsen  </a> </p> </td> 
    <td colname="col2"> <p>Den här partnerintegreringen är inte längre aktiv. </p> </td> 
   </tr> 
   <tr> 
