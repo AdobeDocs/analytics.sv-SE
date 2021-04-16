@@ -1,15 +1,18 @@
 ---
 description: Följande information kan hjälpa till att felsöka problem med rapportsvitens latens i Analytics-data.
-keywords: missing data;slow
+keywords: data saknas;långsam
 subtopic: Current data
 title: Datatillgänglighet och fördröjning
-topic: Reports
+topic-fix: Reports
 uuid: 1f0e67e3-6cea-4af8-8b18-7ae9223df7c8
+exl-id: fedef3ea-dde6-460f-90e3-1e661ed29b78
 translation-type: tm+mt
-source-git-commit: a4a4d9e6e2d3e3ed88b4ef66e9da3b05865a9b79
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 0%
 
 ---
-
 
 # Datatillgänglighet och fördröjning i Adobe Analytics
 
@@ -19,7 +22,7 @@ Du kan vanligtvis förvänta dig att få se fullständiga data i rapporter 2 tim
 
 Varje datainsamlingsserver hämtar in och bearbetar råanalysdata och överför sedan batchdata timvis för rapportering. Överföringsprocessen tar vanligtvis 30 minuter, så normal fördröjning för trafik som sker direkt efter den föregående överföringsprocessen är ungefär 90 minuter (60 minuter tills nästa batchöverföring sker, sedan 30 minuter för filöverföring och visning). För trafik som sker direkt före en överföring kan datalatensen vara så kort som 30 minuter (0 minuter tills nästa batchöverföring sker, sedan 30 minuter för filöverföring och visning).
 
-Vid behov kan Adobes kundtjänst aktivera 30 minuters batchvis överföring av data (i stället för timvis) för de mest använda rapportsviterna.
+Vid behov kan Adobe kundtjänst aktivera 30 minuters batchvis dataöverföring (i stället för timvis) för dina mest använda rapportsviter.
 
 ## Medarbetare till fördröjning
 
@@ -27,9 +30,9 @@ Latens är en fördröjning som är längre än de vanliga två timmarna det tar
 
 Latens orsakas av en av följande allmänna kategorier:
 
-* **Oväntad trafiktoppning:** Den här typen av fördröjning inträffar när fler data skickas till en rapportsvit än vad som har bekräftats eller förväntades enligt avtal. Det är den vanligaste orsaken till latens.
-* **Vanliga maskinvaruproblem:** Adobe använder förstklassiga strategier för hantering och övervakning av datacenter, dataredundans och maskinvarans tillförlitlighet. Maskinvaran uppdateras regelbundet och i samband med publicerade underhållsfönster. Nödunderhåll av felaktig maskinvara kan kräva ett nödvändigt och tillfälligt avbrott i databearbetningen (inte i datainsamlingen) eftersom ersättningsmaskinvara ansluts. Detta tillfälliga stopp i bearbetningen kan leda till märkbar fördröjning.
-* **Onormala data:** Onaturliga datamönster, till exempel ovanligt långa besök som orsakas av en robot eller crawler, kan tillfälligt öka vissa bearbetningsbelastningar som resulterar i fördröjning.
+* **Oväntad trafiktoppning:** Den här typen av fördröjning inträffar när fler data skickas till en rapportsvit än vad som har bekräftats eller förväntas enligt avtal. Det är den vanligaste orsaken till latens.
+* **Normala maskinvaruproblem:** Adobe har förstklassiga strategier för hantering och övervakning av datacenter, redundans av data och maskinvarutillförlitlighet. Maskinvaran uppdateras regelbundet och i samband med publicerade underhållsfönster. Nödunderhåll av felaktig maskinvara kan kräva ett nödvändigt och tillfälligt avbrott i databearbetningen (inte i datainsamlingen) eftersom ersättningsmaskinvara ansluts. Detta tillfälliga stopp i bearbetningen kan leda till märkbar fördröjning.
+* **Onormala data:** Onaturliga datamönster, som ovanligt långa besök orsakade av en robot eller crawler, kan tillfälligt öka vissa bearbetningsbelastningar som resulterar i fördröjning.
 
 ## Funktioner som är beroende av latens
 
@@ -42,7 +45,7 @@ Vissa funktioner i Adobe Experience Cloud har en kort latenstid utöver den vanl
 
 Det finns flera strategier för att förhindra fördröjning eller minska återställningstiden när den inträffar:
 
-* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiksprång på er webbplats, kan det finnas fall där ni förväntar er en betydande ökning av trafiken. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe erbjuda ett sätt för er organisation att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin för att lära dig hur du informerar Adobe om ökad trafik.
+* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiksprång på er webbplats, kan det finnas fall där ni förväntar er en betydande trafikökning. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe ge er organisation möjlighet att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafikspik](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin om du vill veta hur du ska meddela Adobe om ökad trafik.
 * **Överväg att läsa in när du aktiverar nya funktioner:** Vissa funktioner är mer bearbetningsintensiva än andra. Ju fler funktioner som är aktiverade i en rapportserie, desto svårare är det att återställa efter fördröjning. När du aktiverar funktioner i en rapportserie bör du tänka på följande funktioner som ökar mängden data som ska bearbetas:
 
    * Implementera mer än 20 händelser på samma sida
@@ -54,4 +57,4 @@ Det finns flera strategier för att förhindra fördröjning eller minska åters
 
 ## Vad du ska göra med svarstid
 
-I de fall där fördröjning inträffar kan du vara säker på att Adobe proaktivt övervakar bearbetningsflödet och gör allt som är möjligt för att återställa bearbetningstiden till den normala. Många latensproblem löses inom några timmar. Om du är orolig för en viss rapportserie kan en av de användare i organisationen som stöds kontakta Kundtjänst med det rapportsvit-ID som har fördröjning. Adobe-representanten kan validera latensen och informera dig när problemet förbättras och är löst.
+I de fall där fördröjning inträffar kan du vara säker på att Adobe proaktivt övervakar bearbetningsflödet och gör allt som är möjligt för att återställa bearbetningstiden till normal så snabbt som möjligt. Många latensproblem löses inom några timmar. Om du är orolig för en viss rapportserie kan en av de användare i organisationen som stöds kontakta Kundtjänst med det rapportsvit-ID som har fördröjning. Adobe kan validera latensen och informera dig när problemet förbättras och är löst.
