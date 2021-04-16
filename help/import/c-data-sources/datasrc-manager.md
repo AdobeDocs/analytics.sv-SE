@@ -1,14 +1,17 @@
 ---
 description: Skapa, hantera och visa användningen av datakällor i en rapportserie.
 subtopic: Data sources
-title: Datakällhanteraren
-topic: Developer and implementation
+title: Data Sources Manager
+topic-fix: Developer and implementation
 uuid: ccfa4a1c-7c56-421b-8ee6-a42b334659b1
+exl-id: a63137b8-deeb-4865-9be9-322416b00186
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
-
 
 # Datakällhanteraren
 
@@ -20,9 +23,9 @@ Skapa, hantera och visa användningen av datakällor i en rapportserie.
 
 På fliken [!UICONTROL Create] kan du konfigurera en ny datakälla för den aktuella rapportsviten. När du aktiverar en datakälla vägleder [!UICONTROL Data Sources Wizard] dig genom processen att skapa en mall för datakällor och skapar en FTP-plats för överföring av data.
 
-Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas. Se [Skapa en importfilsmall](/help/import/c-data-sources/datasrc-template/t-datasrc-creating-data-sources-file.md).
+Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas. Se [Generera en importfilsmall](/help/import/c-data-sources/datasrc-template/t-datasrc-creating-data-sources-file.md).
 
-## Fliken Hantera {#section_DD559A6701CA45F1A85E56F840F48DBE}
+## Hantera flik {#section_DD559A6701CA45F1A85E56F840F48DBE}
 
 <table id="table_F74696EC855441328CFE0BF49C20D9B0"> 
  <thead> 
@@ -34,7 +37,7 @@ Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Starta om bearbetningen </p> </td> 
-   <td colname="col2"> <p>Startar om bearbetning av datakälla som tidigare avbröts på grund av fel eller varningar. Bearbetningen fortsätter tills nästa fel påträffas. Datakällor avbryter bara bearbetningen av en datakällfil när du väljer <span class="uicontrol"> Avbryt bearbetning vid fel</span>. </p> </td> 
+   <td colname="col2"> <p>Startar om bearbetning av datakälla som tidigare avbröts på grund av fel eller varningar. Bearbetningen fortsätter tills nästa fel påträffas. Datakällor avbryter endast bearbetning av en datakällfil när du väljer <span class="uicontrol"> Avbryt bearbetning vid fel</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Slutför bearbetning </p> </td> 
@@ -46,7 +49,7 @@ Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas
   </tr> 
   <tr> 
    <td colname="col1"> <p>Stoppa bearbetning av fel/varningar </p> </td> 
-   <td colname="col2"> <p> Instruerar bearbetningsmotorn för datakällor att avbryta bearbetningen när ett fel påträffas. Datakällan återupptar inte bearbetningen förrän du väljer Starta om bearbetning. Alternativet Stoppa bearbetning vid varningar gäller endast för <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning</a>. </p> <p>När datakällor påträffar ett filfel får du ett meddelande om felet. Systemet flyttar datakällfilen med felet till mappen <span class="filepath"> files_with_errors</span> på FTP-servern. När du har löst problemet skickar du datakällfilen igen för bearbetning. </p> </td> 
+   <td colname="col2"> <p> Instruerar bearbetningsmotorn för datakällor att avbryta bearbetningen när ett fel påträffas. Datakällan återupptar inte bearbetningen förrän du väljer Starta om bearbetning. Alternativet Stoppa bearbetning på varningar gäller endast för <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning</a>. </p> <p>När datakällor påträffar ett filfel får du ett meddelande om felet. Systemet flyttar datakällfilen med felet till en mapp med namnet <span class="filepath"> files_with_errors</span> på FTP-servern. När du har löst problemet skickar du datakällfilen igen för bearbetning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konfigurera </p> </td> 
@@ -64,7 +67,7 @@ Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas
    <td colname="col1"> <p>Status </p> </td> 
    <td colname="col2"> <p> Filens aktuella status. Möjliga statusvärden är: </p> 
     <ul id="ul_56A0BF8C1BE249F6BB39B0D11DA3997F"> 
-     <li id="li_BAB359E08EDE4E0298C0362258789603">I kö (steg 1 av 3): Filen finns, men bearbetningen har inte påbörjats. Om filen inte visas inom 30 minuter kontrollerar du att den associerade <span class="filepath"> .fin</span> -filen finns </li> 
+     <li id="li_BAB359E08EDE4E0298C0362258789603">I kö (steg 1 av 3): Filen finns, men bearbetningen har inte påbörjats. Om filen inte visas inom 30 minuter kontrollerar du att den associerade <span class="filepath"> .fin</span>-filen finns </li> 
      <li id="li_A09A14F42CB74F01B694799740B3DA17">Förberedelse (steg 2 av 3): Filen genomsöks efter fel eller varningar </li> 
      <li id="li_793FDCDB64CF434D82CAF5B6E9BDE557">Bearbetning (steg 3 av 3): Filen bearbetas </li> 
      <li id="li_1D8C4B241FF0453EAF7DDFD8354C5573">Misslyckades: Filen bearbetades inte på grund av fel </li> 
