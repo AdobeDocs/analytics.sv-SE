@@ -1,32 +1,35 @@
 ---
 description: Definierar vanliga inställningar för en e-handelswebbplats.
 title: Handel
-topic: Admin tools
+feature: Administratörsverktyg
 uuid: 85fc235d-0180-4245-b831-0243ebe3c40c
+exl-id: 90e5d446-10b8-4d40-8bd0-8b13e1c2f603
 translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 22%
 
 ---
-
 
 # Handel
 
 Definierar vanliga inställningar för en e-handelswebbplats.
 
-| Konverteringsvariabler | Typ | Underrelationer | Allokering | Förfaller | `s_code` variabel |
+| Konverteringsvariabler | Typ | Underordnade relationer | Allokering | Förfaller | `s_code` variabel |
 |---|---|---|---|---|---|
-| Interna kampanjer | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar1` |
-| Interna sökvillkor | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar2` |
-| Marknadsföringskategori | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar3` |
-| Handelsvariabel 4 | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar4` |
-| Handelsvariabel 5 | Sträng | Grundläggande | Senaste (senaste) | Besök | `evar5` |
+| Interna kampanjer | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar1` |
+| Interna sökvillkor | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar2` |
+| Marknadsföringskategori | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar3` |
+| Handelsvariabel 4 | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar4` |
+| Handelsvariabel 5 | Sträng | Grundläggande | Senaste (senaste) | Gå in på | `evar5` |
 
 | Success Events | Typ | `s_code` variabel |
 |---|---|---|
 | Registreringar | Räknare (inga underrelationer) | `event1` |
 | Anpassade händelser 1-5 | Räknare (inga underrelationer) | `event1, event2, event3, event4, event5` |
 
-| Anpassade insiktsvariabler | `s_code` variabel |
+| Custom Insight Variables | `s_code` variabel |
 |---|---|
 | Trafikegenskap 1-5 | `prop1, prop2, prop3, prop4, prop5` |
 
@@ -38,13 +41,12 @@ Följande tabell innehåller en lista med standardhändelser för e-handel. Den 
 | Beställningar | Räknare | `purchase` |
 | Enheter | Räknare | `purchase` |
 | Korgar | Räknare | `scOpen` |
-| Vyer | Räknare | `scView` |
+| Kundvagnsvisningar | Räknare | `scView` |
 | Instanser | Räknare | Ej tillämpligt |
 | Utcheckningar | Räknare | `scCheckout` |
-| Cart Additions | Räknare | `scAdd` |
-| Cart Removals | Räknare | `scRemove` |
+| Tillägg i kundvagn | Räknare | `scAdd` |
+| Raderingar i kundvagn | Räknare | `scRemove` |
 | Besök | Räknare (inga underrelationer) | Ej tillämpligt |
-| Sidvyer | Räknare (inga underrelationer) | Ej tillämpligt |
+| Sidvisningar | Räknare (inga underrelationer) | Ej tillämpligt |
 | Dagliga unika besökare | Räknare (inga underrelationer) | Ej tillämpligt |
 | Unika besökare | Räknare (inga underrelationer) | Ej tillämpligt |
-
