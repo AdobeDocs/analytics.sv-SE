@@ -2,10 +2,13 @@
 description: Exempel på hur du använder datatabeller och segment samt förslag på användningsområden för Analysis Workspace.
 keywords: Analysis Workspace
 title: Användningsområden för Analysis Workspace
-topic: Reports and analytics
+feature: Rapporter och analysgrunder
 uuid: 09e20b76-8c31-4d20-920b-bebc877b3b70
-translation-type: ht
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+translation-type: tm+mt
+source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 99%
 
 ---
 
