@@ -2,13 +2,13 @@
 description: Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 keywords: Datafeed;jobb;mått;förkolumn;efterkolumn;bots;datumfiltrering;händelsesträng;vanliga;formler
 title: Beräkna mätvärden
-feature: Rapporter och analysgrunder
+feature: Rapporter och analyser - Grunderna och analyser
 uuid: a45ea5bb-7c83-468f-b94a-63add78931d7
 exl-id: f9b0d637-7a6e-416a-adff-3c7e533bfac7
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
