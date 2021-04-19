@@ -33,12 +33,11 @@ För att aktivera integreringen måste du slutföra integreringsguiden för Qual
    | Adobe SiteCatalyst Token | [Generera Qualtrics Adobe Analytics-token](../qualtrics-overview/qualtrics-token.md) |
 
 1. **Guidesteg 2 - Variabelmappningar**
- | Svarslista för variabler | Välj en tillgänglig listvariabel från rapportsviten. (Du kan behöva aktivera en ny listVar i Report Suite Manager.)  |
-|—|—|
-| Svars-ID för frågor  | Välj en tillgänglig eVar eller ett förslag i din rapportsserie. (Du kan behöva aktivera en ny listVar i Report Suite Manager.)  |
-| Spårningsserver  |Ange spårningsserverinställningen (domän) som du använder för att spåra Adobe Analytics-data. Använd 
-`trackingServerSecure` spårningsserver om den skiljer sig från standardinställningen för spårningsserver.  |
-| Kvartalsenkäter  | Välj en tillgänglig händelse i rapportsviten (du kan behöva aktivera en ny händelse i Report Suite Manager).  |
+   | Svarslista för variabler | Välj en tillgänglig listvariabel från rapportsviten. (Du kan behöva aktivera en ny listVar i Report Suite Manager.)  |
+   |---|---|
+   | Svars-ID för frågor  | Välj en tillgänglig eVar eller ett förslag i din rapportsserie. (Du kan behöva aktivera en ny listVar i Report Suite Manager.)  |
+   | Spårningsserver  |Ange spårningsserverinställningen (domän) som du använder för att spåra Adobe Analytics-data. Använd `trackingServerSecure` spårningsserver om den skiljer sig från standardinställningen för spårningsserver.  |
+   | Kvartalsenkäter  | Välj en tillgänglig händelse i rapportsviten (du kan behöva aktivera en ny händelse i Report Suite Manager).  |
 
 1. **Steg 3** i guiden: Inget krävs, endast information.
 
