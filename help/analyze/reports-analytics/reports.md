@@ -1,16 +1,16 @@
 ---
 title: Rapporter
 description: Dimensionerna och måtten som Rapporter och analyser använder för varje rapport.
-feature: Rapporter och analysgrunder
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna och analyser
+role: Business Practitioner, Administrator
+exl-id: e3c23d17-fc4b-479e-9c48-6f27ef0de4e3
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
-
 
 # Rapporter
 
