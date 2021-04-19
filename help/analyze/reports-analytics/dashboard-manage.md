@@ -3,16 +3,16 @@ description: Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera o
 subtopic: Dashboards
 title: Kontrollpanelshanterare
 uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
-feature: Rapporter
-role: Affärsledare, administratör
+feature: Rapporter och analysgrunder
+role: Business Practitioner, Administrator
+exl-id: abd5acf5-f743-4c94-81fb-fc6cc69e8f26
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 2%
+source-wordcount: '746'
+ht-degree: 1%
 
 ---
-
 
 # Kontrollpanelshanterare
 
