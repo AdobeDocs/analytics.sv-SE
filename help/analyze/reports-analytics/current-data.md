@@ -3,16 +3,16 @@ description: Med alternativet Inkludera aktuella data i rapporter och analyser k
 subtopic: Current Data
 title: Aktuella data
 uuid: 601d3695-be13-4b7f-9df0-de01c8bd64ee
-feature: Rapporter och analysgrunder
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna och analyser
+role: Business Practitioner, Administrator
+exl-id: 4e90f5ad-ba12-4282-a0d9-55765d88104b
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '571'
 ht-degree: 1%
 
 ---
-
 
 # Aktuella data
 
