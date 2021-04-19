@@ -2,14 +2,14 @@
 description: En översikt över de steg som krävs för att planera och implementera virtuella rapportsviter.
 keywords: Virtual Report Suite
 title: Arbetsflöde för Virtual Report Suites
-feature: Rapporter och analysgrunder
+feature: Rapporter och analyser - Grunderna och analyser
 uuid: 7039029d-f776-4491-a8d7-f1425894eb85
 exl-id: 6f68b5a2-04d6-4521-86d0-85c9f323d03c
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 3%
+source-wordcount: '268'
+ht-degree: 2%
 
 ---
 
