@@ -3,16 +3,16 @@ description: Information om schemaläggning, hämtning och distribution av rappo
 subtopic: Schedule
 title: Rapportschema och distribution
 uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
-feature: Rapporter, rapporter och analyser
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna, rapporter och analyser
+role: Business Practitioner, Administrator
+exl-id: ec59d365-f294-41da-ae36-3b4ebe64ab23
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1626'
 ht-degree: 1%
 
 ---
-
 
 # Rapportschema och distribution
 
