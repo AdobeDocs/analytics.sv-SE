@@ -3,13 +3,13 @@ description: Information om specialtecken som används i dataflödet.
 keywords: Datafeed;jobb;specialtecken;hit_data;multivärdesvariabler;events_list;products_list;mvvars
 subtopic: data feeds
 title: Specialtecken i dataflöden
-feature: Rapporter och analysgrunder
+feature: Rapporter och analyser - Grunderna och analyser
 uuid: 5efe019b-39e6-4226-a936-88202a02f5e6
 exl-id: b816ebc5-0b23-4420-aa8c-b88953d031e6
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
