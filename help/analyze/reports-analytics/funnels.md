@@ -2,16 +2,16 @@
 description: Konverteringsförhållanden mäter vanligtvis konverteringen mellan start-, slut- och milstolpehändelser eller punkter i en konverteringsprocess. När du har kodat framgångshändelserna på din webbplats skapar rapporten proportionerna mellan de olika framgångshändelserna och visar dem i en konverteringsrapport.
 title: Konverteringstratt
 uuid: a67ce302-fae1-434a-b662-91672e85cab3
-feature: Rapporter och analysgrunder
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna och analyser
+role: Business Practitioner, Administrator
+exl-id: 8c1c1bc1-0e45-43d7-9581-bd070e2b687e
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
-
 
 # Konverteringstratt
 
@@ -36,4 +36,3 @@ Rapporttabellen visar statistik för genomsnittlig försäljning per klickfrekve
 >[!NOTE]
 >
 >Förekomster inom ramen för dessa rapporter motsvarar det totala antalet besök där en eVar eller händelse har definierats.
-
