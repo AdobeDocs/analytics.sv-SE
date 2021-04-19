@@ -2,16 +2,16 @@
 description: Steg som beskriver hur du anpassar diagrammet så att det är mest användbart för den avsedda målgruppen.
 title: Ändra rapportdiagram
 uuid: c2e81c6c-bfe9-4457-8b5d-512255ca9711
-feature: Rapporter och analysgrunder
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna och analyser
+role: Business Practitioner, Administrator
+exl-id: 5a098b38-0939-4dd2-9a05-1b6b678f2d50
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
-
 
 # Ändra rapportdiagram
 
@@ -68,4 +68,3 @@ Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du k
    **[!UICONTROL Bubble]**: I bubbeldiagrammet visas en bubbelvisning av de mätvärden du väljer i förhållande till varandra. Bubblornas placering visar förhållandet mellan mätvärdena på den vågräta och lodräta axeln, medan storleken på bubblan visar huvudrapportens mätvärden. Med bubbeldiagram kan du visualisera data i två dimensioner, så att du kan identifiera vilka objekt som är avvikelser.
 
    ![](assets/graph_bubble.png)
-
