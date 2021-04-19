@@ -3,16 +3,16 @@ description: Bokmärken ger dig tillgång till de rapporter du använder mest. B
 subtopic: Bookmarks
 title: Bokmärkeshanterare
 uuid: 7a1287da-8a39-4dad-90b0-f311b5e83722
-feature: Rapporter och analysgrunder
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna och analyser
+role: Business Practitioner, Administrator
+exl-id: 8b923484-0988-4271-8186-317bb33f2210
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '323'
 ht-degree: 2%
 
 ---
-
 
 # Bokmärkeshanterare
 
@@ -117,4 +117,3 @@ t_bookmarks_managing.xml
   </tr> 
  </tbody> 
 </table>
-
