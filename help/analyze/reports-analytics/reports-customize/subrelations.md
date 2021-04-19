@@ -2,16 +2,16 @@
 description: Fullständiga underrelationer är aktiverade för alla konverteringsrapporter, så du kan dela upp alla eVar med en annan eVar. Menyn Uppdelning efter i rapporttabellen matchar rapportmenyn i standardanalysrapporten, vilket ger enhetliga val
 title: Underordnade relationer
 uuid: ca6df50f-5d4c-4f91-bf27-86ccd01391a2
-feature: Rapporter och analysgrunder
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna och analyser
+role: Business Practitioner, Administrator
+exl-id: 615ed00e-91cd-45de-ae1f-e0d09ff01d26
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # Underordnade relationer
 
@@ -56,4 +56,3 @@ Delrelationer följer i själva verket dessa steg för att fylla i rapporten:
 * Isolera bildbegäranden som innehåller de lyckade händelser som du visar i rapporten.
 * Returnera de beständiga värdena från varje konverteringsvariabel som används i underrelationen.
 * Ordna värdena baserat på delrelationens ordning. Om en variabel inte har ett beständigt värde (till exempel om en eVar aldrig har definierats eller gått ut), kommer den att paketeras under Ingen.
-
