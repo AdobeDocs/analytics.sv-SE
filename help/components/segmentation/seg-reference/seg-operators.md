@@ -1,11 +1,11 @@
 ---
 description: Med segmentbyggaren kan du jämföra och begränsa värden med valda operatorer.
 title: Jämförelseoperatorer för segment
-feature: Segment
+feature: Segmentering
 uuid: 02ad814c-2c7c-4833-9bb2-4113dcf9475d
 exl-id: 1ec1ff05-03a9-4151-8fcb-a72ebbce87dd
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Det enda jokertecken som stöds är asterisk: *. Om du behöver söka efter * ka
 | innehåller | Returnerar objekt som jämför med delsträngarna för de angivna värdena. Om regeln för &quot;Sida&quot; till exempel innehåller &quot;Sök&quot;, kommer den att matcha alla sidor som innehåller delsträngen &quot;Sök&quot;, inklusive &quot;Sökresultat&quot;, &quot;Sök&quot; och &quot;Sökning&quot;. |
 | innehåller inte | Returnerar inversen av regeln &quot;contains&quot;. I synnerhet kommer alla objekt som matchar det angivna värdet att exkluderas från de angivna värdena. Om regeln för &quot;Sida&quot; till exempel inte innehåller &quot;Sök&quot;, kommer den inte att matcha någon sida som innehåller delsträngen &quot;Sök&quot;, inklusive &quot;Sökresultat&quot;, &quot;Sök&quot; och &quot;Sökning&quot;. Dessa värden kommer att uteslutas från resultaten. |
 | innehåller alla | Returnerar objekt jämfört med delsträngarna, inklusive flera värden som sammanfogats. Om du till exempel anger &quot;Sökresultat&quot; med den här operatorn skulle det matcha &quot;Sökresultat&quot; och &quot;Sökresultat&quot;, men inte &quot;Sök&quot; eller &quot;Resultat&quot; separat. Det skulle matcha sökningar och resultat som hittades tillsammans. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
-| innehåller inte alla | Identifierar objekt jämfört med delsträngar - inklusive flera värden som förenas - och returnerar sedan bara objekt utan dessa värden. Om du till exempel anger &quot;Sökresultat&quot; med den här operatorn skulle det identifiera &quot;Sökresultat&quot; och &quot;Sökresultat&quot; (men inte &quot;Sök&quot; eller &quot;Resultat&quot; separat) och sedan utesluta dessa objekt. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
+| innehåller inte alla | Identifierar objekt jämfört med delsträngar - inklusive flera värden som förenas - och returnerar sedan bara objekt utan dessa värden. Om du t.ex. anger &quot;Sökresultat&quot; med den här operatorn skulle det identifiera &quot;Sökresultat&quot; och &quot;Sökresultat&quot; (men inte &quot;Sök&quot; eller &quot;Resultat&quot; separat) och sedan utesluta dessa objekt. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
 | innehåller någon av | Returnerar objekt jämfört med delsträngarna, inklusive flera värden som är förenade eller oberoende av varandra. Om du till exempel anger &quot;Sökresultat&quot; med den här operatorn matchar det &quot;Sökresultat&quot;, &quot;Sökresultat&quot;, &quot;Sök&quot; och &quot;Resultat&quot;. Det skulle matcha antingen &quot;Sök&quot; ELLER &quot;Resultat&quot; som hittades tillsammans eller oberoende av varandra. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
 | innehåller inte något av | Identifierar objekt baserat på delsträngar och returnerar sedan värden som inte innehåller dessa delsträngar. Den kan ha flera sammanfogade värden eller värden som identifieras separat. Om du till exempel anger &quot;Sökresultat&quot; matchar&quot;Sökresultat&quot;, &quot;Sökresultat&quot;, &quot;Sök&quot; och &quot;Resultat&quot; där antingen &quot;Sök&quot; eller &quot;Resultat&quot; hittas tillsammans eller oberoende av varandra. Då exkluderas objekt som innehåller dessa delsträngar. Indatafältet för den här operatorn är blankstegsavgränsat (100 ord). |
 | börjar med | Returnerar objekt som börjar med tecknet eller strängarna för det angivna värdet. |
