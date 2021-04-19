@@ -2,16 +2,16 @@
 description: En introduktion till vanliga webbanalystermer som används i marknadsföringsrapporter.
 title: Vanliga termer
 uuid: 0560dc7d-9f92-46d4-848b-3cf297073382
-feature: Rapporter, rapporter och analyser
-role: Affärsledare, administratör
+feature: Rapporter och analyser - Grunderna, rapporter och analyser
+role: Business Practitioner, Administrator
+exl-id: 78ad3e11-2bfa-49bd-b17a-c586701b56ad
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '728'
 ht-degree: 3%
 
 ---
-
 
 # Vanliga termer
 
@@ -71,4 +71,3 @@ En introduktion till vanliga Adobe Analytics-termer.
   </tr> 
  </tbody> 
 </table>
-
