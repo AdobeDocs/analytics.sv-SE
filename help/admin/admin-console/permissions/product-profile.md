@@ -1,11 +1,15 @@
 ---
-source-git-commit: 03b1195225b97f3ea151eb5b4f39fbed746b3654
-workflow-type: tm+mt
+title: Produktprofiler för Adobe Analytics
+description: Lär dig hur produktprofiler kan användas som behörighetsförinställningar som produktadministratörer kan tilldela användare inom en organisation.
+exl-id: 834e4cf1-20b0-4c9d-939a-19e00494c8dd
 translation-type: tm+mt
-source-wordcount: '646'
+source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+workflow-type: tm+mt
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
+
 # Produktprofiler för Adobe Analytics
 
 Produktprofiler är behörighetsförinställningar som produktadministratörer kan tilldela användare inom en organisation. Om du skapar en produktprofil och tilldelar en Experience Cloud-användare till produktprofilen ärver de behörighetsobjekten som finns i produktprofilen.
@@ -54,6 +58,6 @@ Behörighetsobjekt för analysverktyg ger åtkomst till funktioner som är obero
 
 ## Produktprofilutvecklare
 
-Utvecklare liknar användare, förutom att de har möjlighet att använda Experience Cloud API i Adobe I/O. Mer information finns i [Hantera utvecklare](https://helpx.adobe.com/enterprise/using/manage-developers.html) i användarhandboken för Enterprise. Om en användare beviljas Developer Access för någon profil kan han/hon få åtkomst till Dev Console (console.adobe.io) och redigera Adobe Analytics-integreringar. De API-anrop och svar för Analytics som är auktoriserade för användaren är beroende av nettobehörigheten för alla profiler där användaren har Developer Access.
+Utvecklare liknar användare, men de har möjlighet att använda Experience Cloud API på Adobe I/O. Mer information finns i [Hantera utvecklare](https://helpx.adobe.com/enterprise/using/manage-developers.html) i användarhandboken för Enterprise. Om en användare beviljas Developer Access för någon profil kan han/hon få åtkomst till Dev Console (console.adobe.io) och redigera Adobe Analytics-integreringar. De API-anrop och svar för Analytics som är auktoriserade för användaren är beroende av nettobehörigheten för alla profiler där användaren har Developer Access.
 
-Med till exempel profilbehörigheter som omfattar alla mått, alla dimensioner och en rapportsvit kan en utvecklaråtkomstmedlem i profilen göra API-anrop relevanta för alla komponenter i den relevanta sviten. När avvikelseidentifiering har lagts till kan rapporterna innehålla fler svar, vilket lägger till mer avvikelsedata. Som tumregel gäller att om en profil beviljar åtkomst till ett scenario i Adobe Analytics-gränssnittet, så aktiverar Developer Access för en profil som är definierad på liknande sätt motsvarande API-anrop och svar.
+Med profilbehörigheter som inkluderar alla mått, alla dimensioner och en rapportsvit kan en utvecklaråtkomstmedlem i profilen göra API-anrop relevanta för alla komponenter i den relevanta sviten. När avvikelseidentifiering har lagts till kan rapporterna innehålla fler svar, vilket lägger till mer avvikelsedata. Som tumregel gäller att om en profil beviljar åtkomst till ett scenario i Adobe Analytics-gränssnittet, så aktiverar Developer Access för en profil som är definierad på liknande sätt motsvarande API-anrop och svar.
