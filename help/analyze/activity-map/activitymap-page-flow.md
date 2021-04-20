@@ -3,7 +3,7 @@ description: På fliken Sidinformation visas sidrapporten som en tabell och sidf
 title: Sidinformation
 uuid: f527b454-7920-4907-869b-4e1d9ab2c606
 feature: Activity Map
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ description: Adobe Analytics Content Packs innehåller färdiga Power BI-kontrol
 title: Adobe Analytics-innehållspaket för Power BI
 uuid: 4711e135-a4b2-4761-ba6c-728bfe0ca84d
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 description: Segment är anpassade datadeluppsättningar eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare.
 title: Analytics-segmentering
 uuid: c8837cad-af30-43b8-8e3c-36bf6adb58d6
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: Business Practitioner, Administrator
 exl-id: 021cd591-4e87-4351-bfee-9e3cc79a6a45
 translation-type: tm+mt

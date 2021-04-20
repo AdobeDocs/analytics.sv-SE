@@ -2,7 +2,7 @@
 description: När du har kört en rapport kan du anpassa rapporten för att visa och analysera data efter dina behov. Du kan filtrera rapportdata, ändra hur data presenteras grafiskt, ändra granularitet för datum och så vidare.
 title: Anpassa rapporter – översikt
 uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 role: Business Practitioner, Administrator
 exl-id: 5a042fac-926e-4560-83bf-11f66ddb8273
 translation-type: tm+mt

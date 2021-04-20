@@ -3,7 +3,7 @@ description: Du kan skilja länkar åt genom att anpassa länk-ID med variabeln 
 title: Differentiera länkar som refererar till samma länk-ID och region
 uuid: f2da0cda-a33b-4a12-8d99-1f58386d6d30
 feature: Activity Map
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: f9d9c7dbaf5fde5bd51c929d927d4cd3f61cb63b
 workflow-type: tm+mt

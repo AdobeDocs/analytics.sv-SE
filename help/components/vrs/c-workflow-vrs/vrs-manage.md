@@ -2,7 +2,7 @@
 description: Med Virtual Report Suite Manager kan administratörer redigera, lägga till, tagga, ta bort, byta namn på, godkänna, kopiera, exportera och filtrera virtuella rapportsviter. Den är inte synlig för användare som inte är administratörer.
 keywords: Virtual Report Suite
 title: Hantera virtuella rapportsviter
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 uuid: ce683c01-2d7d-4f2a-98db-946f68eda99b
 exl-id: b6d58456-bd07-4d97-aff8-216e8440fdc0
 translation-type: tm+mt

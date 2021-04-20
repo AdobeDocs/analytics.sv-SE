@@ -2,7 +2,7 @@
 description: Använd uppdelningar när du vill veta mer om hur ett rapportobjekt eller segment relaterar till andra rapporter. Detta kallas ofta för att"bryta ned" en rapport från en annan rapport.
 title: Uppdelningar
 uuid: a49fa18b-f518-4d1a-a4db-793451b427cc
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 role: Business Practitioner, Administrator
 exl-id: bc695b30-c5ac-4bb4-90f4-db6dd83c2f30
 translation-type: tm+mt

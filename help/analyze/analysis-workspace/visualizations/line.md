@@ -2,8 +2,8 @@
 description: Använd linjevisualisering för att avbilda trenddata (tidsbaserade)
 title: Linjediagram
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
-feature: Visualiseringar
-role: Affärsledare, administratör
+feature: Visualizations
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

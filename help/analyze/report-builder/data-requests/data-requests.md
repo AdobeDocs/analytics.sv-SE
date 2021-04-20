@@ -2,7 +2,7 @@
 description: Det första steget när du skapar en begäran i Report Builder.
 title: Dataförfrågningar – frågeguiden steg 1
 uuid: 717542c3-e4aa-4e00-b0ca-cadecd219d13
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

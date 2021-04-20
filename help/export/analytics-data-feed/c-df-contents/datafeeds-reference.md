@@ -3,7 +3,7 @@ description: Tabelldata som beskriver kolumnerna i dataflödet.
 keywords: Datafeed;kolumner
 subtopic: data feeds
 title: Referens för datakolumner
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
 translation-type: tm+mt

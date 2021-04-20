@@ -2,7 +2,7 @@
 description: Med bearbetningsregler kan du ändra data baserat på definierade villkor. När attribut eller värden matchar definierade villkor kan värden anges och tas bort, och händelser kan anges.
 subtopic: Processing rules
 title: Så fungerar behandlingsregler
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 19c31f94-c8d8-47b1-97fa-29ed98c94e87
 exl-id: 9d2d9f2d-1e16-486f-9191-2c43776374da
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 description: För att bearbetningsreglerna ska kunna användas på ett effektivt sätt är det viktigt att förstå när de tillämpas under datainsamlingen.
 subtopic: Processing rules
 title: Bearbetningsordning
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: cea01d13-dfd5-40f7-8b2f-b6e2fe8354df
 exl-id: c7143527-017c-4550-b55e-09ea437d7c85
 translation-type: tm+mt

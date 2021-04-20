@@ -2,7 +2,7 @@
 description: Klicka på ikonen i (Info) bredvid rapportsvitens namn för att få information om det.
 keywords: Virtual Report Suite
 title: Visa information om virtuella rapportsviter
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 uuid: 7aa9da77-604e-473d-a914-6c0bc558548a
 exl-id: 92e89d40-db94-4b0c-881e-e57ca4bb6999
 translation-type: tm+mt

@@ -3,7 +3,7 @@ description: Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu
 title: Importera bokmärkta rapporter och minirapporter från kontrollpaneler
 uuid: 0fdbdb2e-5db7-4f64-b571-23482ba3606d
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

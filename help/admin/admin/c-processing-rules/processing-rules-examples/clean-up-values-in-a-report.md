@@ -2,7 +2,7 @@
 description: Du kan matcha värden mot vanliga felstavningar och uppdatera dem så att de visas korrekt i rapporter.
 subtopic: Processing rules
 title: Rensa värden i en rapport
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: fcd72afc-3a3c-47a9-a5e4-53389dba7d83
 exl-id: 109005a3-2ea4-4b61-a733-d1019218ec56
 translation-type: tm+mt

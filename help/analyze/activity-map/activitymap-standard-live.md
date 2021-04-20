@@ -3,7 +3,7 @@ description: Activity Map har två grundläggande sätt att komplettera rapporte
 title: Standardläge jämfört med live-läge
 uuid: 8b97b56e-ff20-4a8b-8c37-7f7b45c9a86b
 feature: Activity Map
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

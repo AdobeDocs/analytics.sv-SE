@@ -2,7 +2,7 @@
 description: Virtuella rapportsviter och märkning av flera programsviter har olika fördelar. Ta reda på vilket som är bäst för er organisation.
 keywords: Virtual Report Suite, VRS
 title: Virtuella rapportsviter och taggar för flera programsviter
-feature: Inställningar för Report Suite
+feature: Report Suite Settings
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
 translation-type: tm+mt

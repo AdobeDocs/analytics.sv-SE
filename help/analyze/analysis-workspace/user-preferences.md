@@ -1,7 +1,7 @@
 ---
 title: Ange användarinställningar i Analysis Workspace
 description: Du kan ange allmänna inställningar och projektinställningar för användare.
-feature: Grundläggande om arbetsytan
+feature: Workspace Basics
 role: Business Practitioner, Administrator
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
 translation-type: tm+mt

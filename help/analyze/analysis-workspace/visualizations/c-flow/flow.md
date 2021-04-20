@@ -2,8 +2,8 @@
 description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Översikt över flöden
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
-feature: Visualiseringar
-role: Affärsledare, administratör
+feature: Visualizations
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

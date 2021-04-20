@@ -2,7 +2,7 @@
 description: En introduktion till funktionerna i en rapport, inklusive verktygsfältet, kalendern och detaljtabellen.
 title: Rapportfunktioner
 uuid: 32f72961-cb94-4e50-ae18-03326e02bc8b
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 role: Business Practitioner, Administrator
 exl-id: f872b9fb-d857-4170-9c9d-7d2c14e0fd45
 translation-type: tm+mt

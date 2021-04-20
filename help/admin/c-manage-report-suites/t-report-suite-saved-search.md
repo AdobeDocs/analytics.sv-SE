@@ -1,7 +1,7 @@
 ---
 description: Steg som beskriver hur du definierar en uppsättning villkor som bestämmer medlemmarna i en rapportsvitssökning.
 title: Spara en sökning i en rapportsvit
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: dd83eed6-1374-429c-9fc3-709055698a44
 exl-id: 67744e7f-7f78-46c6-9faf-4d410f2deec8
 translation-type: tm+mt

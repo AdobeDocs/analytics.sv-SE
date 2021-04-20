@@ -2,8 +2,8 @@
 description: Faktorer som påverkar arbetsytans prestanda och optimeringar som du kan göra
 title: Analysis Workspace prestandafaktorer och optimering
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
-feature: Grundläggande om arbetsytan
-role: Affärsledare, administratör
+feature: Workspace Basics
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

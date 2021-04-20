@@ -2,7 +2,7 @@
 description: Med dataextraheringarna kan du välja vilka parametrar du vill visa både på rapportens X- och Y-axlar samt det objekt som rapporten filtreras efter.
 subtopic: Schedule
 title: Dataextrahering
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 role: Business Practitioner, Administrator
 exl-id: fac6049d-3996-41df-adca-399b0ffcc5e2
 translation-type: tm+mt

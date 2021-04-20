@@ -3,7 +3,7 @@ description: I den här proceduren beskrivs hur du döljer eller visar rubriker.
 title: Dölj eller visa sidhuvuden
 uuid: ab0ef56f-3531-48fb-9456-1220718d59c5
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

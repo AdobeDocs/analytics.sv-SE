@@ -3,7 +3,7 @@ description: Om du redigerar arbetsboken och vill ge plats för nya begäranden 
 title: Ta bort utdatamappning
 uuid: a6805800-4cb9-4ccc-aada-198a15def643
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

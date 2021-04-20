@@ -1,7 +1,7 @@
 ---
 description: Att publicera listor är ett enkelt sätt att skicka olika rapporter som är specifika för olika grupper i organisationen utan att behöva skapa flera separata schemalagda rapporter. Publiceringslistor är användbara om du har platsspecifika rapportsviter och vill ge varje avdelning en kopia av en specifik kontrollpanel. Du kan också använda publiceringslistor för att skicka data till många personer utan att behöva skriva in deras e-postadresser separat, om du arbetar med en enda rapportserie.
 title: Publiceringslistor
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 07dad661-c302-4981-80d1-3169ad1fe90e
 exl-id: 5c9a0ae7-742b-4247-bcbc-2e979af6160c
 translation-type: tm+mt

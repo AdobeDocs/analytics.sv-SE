@@ -1,7 +1,7 @@
 ---
 description: Steg som beskriver hur du genererar ett Excel-kalkylblad som innehåller alla inställningar för den valda rapportsviten.
 title: Hämta inställningar för rapportsviten
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: f0aa19a5-eb5d-4ad4-b463-9400abb07038
 exl-id: f3e45bd5-048a-4200-a95d-4284cad72bad
 translation-type: tm+mt

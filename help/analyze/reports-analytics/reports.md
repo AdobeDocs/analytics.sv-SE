@@ -1,7 +1,7 @@
 ---
 title: Rapporter
 description: Dimensionerna och måtten som Rapporter och analyser använder för varje rapport.
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 role: Business Practitioner, Administrator
 exl-id: e3c23d17-fc4b-479e-9c48-6f27ef0de4e3
 translation-type: tm+mt

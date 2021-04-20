@@ -2,7 +2,7 @@
 description: Bearbetningsregler kan utlösa händelser baserade på kontextdatavariabler.
 subtopic: Processing rules
 title: Ange en händelse med hjälp av en kontextdatavariabel
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 4a6018eb-03e2-4ec8-874b-e48bf716e103
 exl-id: f0af0e23-c08a-4f82-85b4-25064eeaa3c6
 translation-type: tm+mt

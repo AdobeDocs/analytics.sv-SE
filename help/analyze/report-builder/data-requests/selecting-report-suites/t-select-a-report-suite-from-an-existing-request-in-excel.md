@@ -3,7 +3,7 @@ description: Steg som hjälper dig att välja en rapportserie från den befintli
 title: Välja en rapportsvit från en befintlig förfrågan i Excel
 uuid: 92fe4823-6b8a-4178-9c94-fb4f5e03e4a5
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

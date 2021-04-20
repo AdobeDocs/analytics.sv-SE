@@ -2,8 +2,8 @@
 description: Bidragsanalys är en intensiv maskininlärningsprocess som utformats för att identifiera medverkande till en konstaterad avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
 title: Statistiska tekniker som används vid bidragsanalys
 uuid: f77eb4e4-4fd6-4397-b8a8-a063f199b676
-feature: AI-verktyg
-role: Affärsledare, administratör
+feature: AI Tools
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 description: På sidan Hantera väntande åtgärder kan du visa en lista över väntande åtgärder i din Analytics-miljö. En väntande åtgärd är en systemändring som kräver godkännande från Adobe före implementeringen.
 title: Väntande åtgärder
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 63efbf6d-22d6-4ffe-af25-69e10bed7989
 exl-id: c1526937-99c8-4647-b7e0-da0ebb0c1116
 translation-type: tm+mt

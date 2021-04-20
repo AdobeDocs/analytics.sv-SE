@@ -1,7 +1,7 @@
 ---
 description: En publiceringswidget är en behållare där du kan bädda in marknadsföringsrapporter (bokmärken och instrumentpaneler) på en webbsida. Personer i organisationen som inte har tillgång till marknadsföringsrapporter kan visa relevanta data.
 title: Publiceringswidget
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 4ecf6a5a-8a4e-4707-b282-39890eba3c5d
 exl-id: 97ec07d8-29ad-4ef3-9227-bfdc14a59b97
 translation-type: tm+mt

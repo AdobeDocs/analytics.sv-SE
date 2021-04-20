@@ -2,7 +2,7 @@
 title: Rapportera bästa praxis och felsökning
 description: Bästa tillvägagångssätt och felsökningstips när du skapar rapporter.
 keywords: bästa praxis;fel;timeout;felsökning;långsam
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

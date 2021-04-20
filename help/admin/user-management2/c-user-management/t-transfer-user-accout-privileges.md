@@ -2,7 +2,7 @@
 description: Steg som beskriver hur du tilldelar användarkontoobjekt (kontrollpaneler, beräknade värden, kalenderhändelser, varningar, bokmärken, segment, Analysis Workspace-projekt och schemalagda projekt) från ett användarkonto till ett annat användarkonto.
 subtopic: Users and groups
 title: Överför objekt på användarkonto
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: b083c622-1397-45ab-8796-f7cdc7043ec6
 exl-id: 13e2e412-14ea-4a9a-8f68-c914125d551e
 translation-type: tm+mt

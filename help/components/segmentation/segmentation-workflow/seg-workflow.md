@@ -1,7 +1,7 @@
 ---
 description: Beskriver ett föreslaget arbetsflöde för segment som skapats med segmentbyggaren och hanteras med segmenthanteraren.
 title: Översikt över segmenteringsarbetsflöde
-feature: Segmentering
+feature: Segmentation
 uuid: e15aaa2f-a604-46dd-9bdd-e2a340c74927
 exl-id: 2ed6e327-d69d-4cdb-9b87-99ebebc37e2c
 translation-type: tm+mt

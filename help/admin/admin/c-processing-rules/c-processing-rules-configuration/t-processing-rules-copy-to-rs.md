@@ -2,7 +2,7 @@
 description: Steg som beskriver hur bearbetningsregler kopieras från en rapportsserie och ersätter eller lägger till dessa regler i en annan rapportsvit.
 subtopic: Processing rules
 title: Kopiera behandlingsregler till en annan rapportsvit
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: e6aa50b9-a46b-4332-b4e1-6df0f828077d
 exl-id: 6b3cb570-780a-4d18-8aba-4cb674f5b16c
 translation-type: tm+mt

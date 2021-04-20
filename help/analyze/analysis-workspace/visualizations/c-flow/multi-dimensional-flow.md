@@ -2,8 +2,8 @@
 description: Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
 title: Intradimensionella flöden
 uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
-feature: Visualiseringar
-role: Affärsledare, administratör
+feature: Visualizations
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

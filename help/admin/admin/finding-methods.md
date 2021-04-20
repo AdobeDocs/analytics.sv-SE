@@ -1,7 +1,7 @@
 ---
 description: På sidan Sökmetoder visas hur olika sökmetoder rapporterar om konverteringsframgångar på din webbplats. Om en sökmotor till exempel refererar till en besökare till webbplatsen som gör ett köp, anger sökmetoderna hur sökmotorn får krediter för hänskjutningen.
 title: Sökmetoder
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 1053993e-7fc4-4874-84fa-367ecdcd7b45
 exl-id: 58c4510c-2343-4b0a-9c09-5583f6d4250f
 translation-type: tm+mt

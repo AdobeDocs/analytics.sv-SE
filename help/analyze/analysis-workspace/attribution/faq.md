@@ -1,8 +1,8 @@
 ---
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
-feature: Attribuering
-role: Affärsledare, administratör
+feature: Attribution
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

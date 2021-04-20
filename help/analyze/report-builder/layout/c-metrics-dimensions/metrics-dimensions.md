@@ -3,7 +3,7 @@ description: Du kan lägga till mått och mått i Request Wizard Step 2 för att
 title: Mätvärden och dimensioner – översikt
 uuid: eb305a06-d914-45c6-a7b1-fd0342473b0c
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

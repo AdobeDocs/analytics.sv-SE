@@ -2,8 +2,8 @@
 description: Visa de översta värdena för en dimension innan du använder den i ett projekt.
 title: Förhandsvisa dimensioner
 uuid: dd1f87de-2d83-4c6b-b8cd-ce81c741d7a3
-feature: Grundläggande om arbetsytan
-role: Affärsledare, administratör
+feature: Workspace Basics
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

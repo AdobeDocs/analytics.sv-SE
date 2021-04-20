@@ -1,8 +1,8 @@
 ---
 title: Vad är Cohort Analysis och hur fungerar den?
 description: Gräv djupare in i informationen om er målgrupp och dela in i relaterade grupper med Cohort Analysis. Läs om kohortanalyser i Analysis Workspace.
-feature: Visualiseringar
-role: Affärsledare, administratör
+feature: Visualizations
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

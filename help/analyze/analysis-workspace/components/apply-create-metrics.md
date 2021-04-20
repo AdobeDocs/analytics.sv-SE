@@ -2,8 +2,8 @@
 description: Det finns två sätt att använda mätvärden i Analysis Workspace.
 title: Mätvärden
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
-feature: Grundläggande om arbetsytan
-role: Affärsledare, administratör
+feature: Workspace Basics
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

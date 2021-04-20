@@ -3,7 +3,7 @@ description: Förutsatt att du har installerat rätt webbläsarplugin kan du sta
 title: Starta Activity Map
 uuid: f617fbc3-a577-4bd2-a316-578959219874
 feature: Activity Map
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 description: Du kan ange anpassade rapportbeskrivningar för eVars, props, klassificeringar och händelser. Beskrivningarna är synliga för alla slutanvändare.
 title: Anpassade rapportbeskrivningar
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: df7b57ab-4bd9-4465-bcd1-d47647eed3ff
 exl-id: f9bcd01c-acca-47a4-b9b5-751b3068a5ad
 translation-type: tm+mt

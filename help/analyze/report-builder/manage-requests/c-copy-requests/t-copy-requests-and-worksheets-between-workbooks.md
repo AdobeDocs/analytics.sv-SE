@@ -3,7 +3,7 @@ description: Kopiera ett helt kalkylblad i en källarbetsbok till ett kalkylblad
 title: Kopiera förfrågningar och kalkylblad mellan arbetsböcker
 uuid: 6b2c4259-d8cb-430e-819f-38e213dd2661
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

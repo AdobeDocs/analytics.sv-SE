@@ -2,7 +2,7 @@
 description: När du har kopierat lämpliga data till klassificeringsmallfilen kan du importera (överföra) dem till datainsamlingsservrar i Adobe.
 subtopic: Classifications
 title: Import via webbläsare och FTP
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: a1d501be-6df0-4bc8-bb36-838e8d6744e3
 exl-id: 3b5eb6b4-42a2-4cf7-864b-33a5a7766255
 translation-type: tm+mt

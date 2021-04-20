@@ -2,7 +2,7 @@
 description: Kundattribut lagras i en ny typ av element som kallas VisAttr, som kan konfigureras som en dimension eller ett mått.
 title: Kundattribut
 uuid: a8340b83-d7ba-46fe-bb20-b546cdf375b8
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ description: Följ dessa anvisningar om du vill importera Analytics-data manuell
 title: Importera data manuellt till Power BI
 uuid: c84f7a90-7b40-4065-9fe7-5eb19e5e2473
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

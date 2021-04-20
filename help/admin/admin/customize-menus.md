@@ -1,7 +1,7 @@
 ---
 description: Med den här funktionen kan du anpassa rapportmenyerna som en användare ser i Rapporter och analyser. Du kan visa eller dölja rapporter, samt flytta dem i olika mappar för alla användare. Den här funktionen är särskilt användbar om din organisation bara använder vissa rapporter och inte vill rensa den vänstra menyn med oanvända eller irrelevanta data.
 title: Menyanpassning
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 31e335e7-c91a-4669-a9b7-00f9e385375a
 exl-id: 0cba7569-81e9-44be-8633-79da83ec8bd3
 translation-type: tm+mt

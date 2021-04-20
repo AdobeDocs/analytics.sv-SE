@@ -1,7 +1,7 @@
 ---
 description: Om du kopierade inställningar från en befintlig rapportserie identifieras alla inställningar som inte har kopierats till den nya rapportsviten av ett systemmeddelande.
 title: Inställningar som inte kopierats från en källrapportssvit
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 5176c561-a278-43e4-837f-a17759985d52
 exl-id: be683f6d-038e-44ba-ac27-862dd86a2954
 translation-type: tm+mt

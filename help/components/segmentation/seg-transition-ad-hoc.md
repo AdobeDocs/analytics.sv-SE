@@ -2,7 +2,7 @@
 description: Om du är van vid att arbeta med Segment Builder i Ad Hoc Analysis, förklarar denna Frågor och svar vad som händer med befintliga segment och mappar och vilka åtgärder du måste vidta.
 keywords: segmentering;segment
 title: Övergångshandbok för Ad Hoc Analysis
-feature: Segmentering
+feature: Segmentation
 uuid: d409d71a-f8d9-42a2-add2-37d426cd40d1
 translation-type: tm+mt
 source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48

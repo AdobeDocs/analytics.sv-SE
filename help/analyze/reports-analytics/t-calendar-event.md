@@ -2,8 +2,8 @@
 description: Steg för att lägga till kalenderhändelser och hantera delade händelser.
 title: Kalenderhändelser
 uuid: 5e928c70-8eba-4a97-928d-2c4b3e9ff972
-feature: Kalender
-role: Affärsledare, administratör
+feature: Calendar
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

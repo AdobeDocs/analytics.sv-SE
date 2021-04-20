@@ -3,7 +3,7 @@ description: Beskriver hur du skapar sökvägsrapporter med fördefinierade filt
 title: Filtrera sökvägsrapporter genom att lägga till underordnade förfrågningar
 uuid: dd1294f8-a26b-4254-a9f6-1365b2912adf
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -3,8 +3,8 @@ description: Du kan skapa segment från en kontaktyta, lägga till segment som k
 keywords: utfall och segmentering;segment i utfallsanalys;jämför segment i utfall
 title: Använda segment i utfallsanalys
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
-feature: Visualiseringar
-role: Affärsledare, administratör
+feature: Visualizations
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

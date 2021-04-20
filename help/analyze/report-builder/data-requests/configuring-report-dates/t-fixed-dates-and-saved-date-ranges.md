@@ -3,7 +3,7 @@ description: När du anger ett fast datum eller datumintervall visas rapportkale
 title: Fasta datum och sparade datumintervall
 uuid: f00218c0-07f3-4505-98b0-de05187401fd
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

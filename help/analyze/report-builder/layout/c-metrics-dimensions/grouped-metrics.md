@@ -3,7 +3,7 @@ description: Du kan nu kombinera dessa två mätningstyper i en och samma begär
 title: Kombinera trafik- och handelsmätvärden i en förfrågan
 uuid: 2813d594-f4ec-4f6a-8539-ec7d954a392f
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

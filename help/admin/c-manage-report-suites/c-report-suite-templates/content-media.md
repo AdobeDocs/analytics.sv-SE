@@ -1,7 +1,7 @@
 ---
 description: Definierar vanliga inställningar för en webbplats som utvecklar ursprungligt innehåll och visar artiklar och videoklipp.
 title: Innehåll och media
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 281b0bf8-59dc-46dc-b5d5-5e42827b785d
 exl-id: 9983ff86-9341-4b01-b4f3-41042874a9fb
 translation-type: tm+mt

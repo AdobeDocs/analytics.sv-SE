@@ -2,7 +2,7 @@
 description: Ej klassificerade nycklar grupperas tillsammans i klassificeringsrapporter som ett enda radobjekt med namnet Ingen. Det kan vara praktiskt att ändra namnet till Inget till något mer beskrivande.
 subtopic: Classifications
 title: Ej klassificerade nycklar
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: b73a9161-0c6f-4c8d-900b-54ab2c36147c
 exl-id: 37288c2d-f6f6-4343-87a1-3c3a7b56fe32
 translation-type: tm+mt

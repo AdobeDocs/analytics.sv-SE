@@ -2,7 +2,7 @@
 description: Det här avsnittet innehåller riktlinjer för testning av bearbetningsregler och en lista över vanliga misstag som ska undvikas.
 subtopic: Processing rules
 title: Tips och tricks för regler
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: e3a9ff8a-b81a-41c9-9f61-e40cb4bf7d99
 exl-id: e663d98b-dcfd-4420-84ac-07ddfe55a3f2
 translation-type: tm+mt

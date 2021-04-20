@@ -1,7 +1,7 @@
 ---
 description: Marknadsföringskanaler används ofta för att ge insikter om hur besökarna kommer in på er webbplats. Ni kan skapa och anpassa regler för kanalbearbetning för marknadsföring baserat på vilka kanaler ni vill spåra och hur ni vill spåra dem.
 title: Marknadsföringskanaler
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 05a74391-b694-4ed3-9793-5538d6373db2
 exl-id: d9721fb9-2aa4-4db0-8030-cc7907bd953c
 translation-type: tm+mt

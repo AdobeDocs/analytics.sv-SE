@@ -3,7 +3,7 @@ description: Aktivera användarbehörigheter för allmänna objekt (fakturering,
 keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Anpassa behörigheter för Analytics-verktyg
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 8e86bc17-46d3-4c5e-ac25-9f3bfc29b8fa
 exl-id: fe3a9f65-f121-438f-91d0-45cfaea94416
 translation-type: tm+mt

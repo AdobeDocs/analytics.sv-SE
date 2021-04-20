@@ -2,8 +2,8 @@
 title: Översikt över segmentanalys
 description: Läs om vad Adobe Analytics Segment IQ är och hur det kan hjälpa er organisation.
 keywords: Analysis Workspace;Segmentanalys
-feature: AI-verktyg
-role: Affärsledare, administratör
+feature: AI Tools
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

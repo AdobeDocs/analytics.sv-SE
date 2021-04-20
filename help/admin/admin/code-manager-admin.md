@@ -1,7 +1,7 @@
 ---
 description: Med kodhanteraren kan du hämta datainsamlingskod för webb- och mobilplattformar.
 title: Kodhanteraren
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 7b60bca7-756f-444f-a7e6-abd3e0f1a15e
 exl-id: 90591e91-0830-46e3-a8a1-f09c4f108eb2
 translation-type: tm+mt

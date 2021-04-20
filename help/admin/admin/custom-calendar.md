@@ -1,7 +1,7 @@
 ---
 description: Kalenderalternativ i andra format än den gregorianska modellen. Alternativen är kalendermodellerna 4-4-5, 4-5-4 och 5-4-4, som alla används som standard för detaljhandeln. Dessutom erbjuder rapportering ett alternativ för en helt anpassningsbar kalender som du kan konfigurera själv.
 title: Anpassa kalender
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 4e5e538b-54c9-4c2f-8b6c-9f91b6c7bcc7
 exl-id: 2196c7b7-7183-43a8-bb91-5a1e479819d4
 translation-type: tm+mt

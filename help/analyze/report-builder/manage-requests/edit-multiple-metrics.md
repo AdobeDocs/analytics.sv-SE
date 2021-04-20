@@ -2,7 +2,7 @@
 description: Med funktionen Redigera mått över flera begäranden kan du enkelt lägga till, ta bort eller ersätta mått i en befintlig begäran eller i en hel grupp med förfrågningar.
 title: Redigera mätvärden för flera förfrågningar
 uuid: 50fba4e7-ca7d-4a5c-98a9-c9725b436e4a
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 description: I Segment Builder finns en arbetsyta där du kan dra och släppa metriska Dimensioner, segment och händelser för att segmentera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa segment som identifierar besökarattribut och -åtgärder för besök och sidträffar.
 title: Skapa segment
-feature: Segmentering
+feature: Segmentation
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
 translation-type: tm+mt

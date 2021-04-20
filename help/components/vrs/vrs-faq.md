@@ -2,7 +2,7 @@
 description: Tips och bästa praxis för nya användare av virtuella rapportsviter.
 keywords: Virtual Report Suite
 title: Vanliga frågor om VRS
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 uuid: 91225743-765a-4145-9ce5-4268e80ea7e8
 exl-id: ab961bec-5719-4b90-bc10-c929b63dc923
 translation-type: tm+mt

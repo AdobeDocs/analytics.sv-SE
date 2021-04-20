@@ -2,7 +2,7 @@
 description: Ändringar av bearbetningsregler kan visas i Historik.
 subtopic: Processing rules
 title: Visa historik för behandlingsregel
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 8020d27b-8c9d-4caf-92c2-03adba76a94b
 exl-id: 29587190-9243-4480-a7dc-6293cbcb2007
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 description: Uppslagstabell som avgör typen av träff baserat på värdet för page_event.
 keywords: Datafeed;page;event;page_event;post_page_event
 title: Sökning efter sidhändelse
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 uuid: 73af597c-5560-466e-94b2-ddd1d64797c8
 exl-id: ef0467df-b94b-4cec-b312-96d8f42c23b0
 translation-type: tm+mt

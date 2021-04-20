@@ -2,8 +2,8 @@
 description: Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar.
 title: Treemap-diagram
 uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
-feature: Visualiseringar
-role: Affärsledare, administratör
+feature: Visualizations
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

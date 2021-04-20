@@ -2,7 +2,7 @@
 description: Använd importverktyget för att överföra klassificeringar till Adobe Analytics. Du kan också exportera data för uppdatering före en import.
 subtopic: Classifications
 title: Importera klassificeringar – översikt
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: b1500423-e100-483a-bec2-ab4f1f3c0902
 exl-id: b38556a2-e075-4fea-b5da-24300a62fa7f
 translation-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 description: Med avsnitten Permanent trafik kan du ändra förväntade trafiknivåer så att Adobe kan omfördela resurser för att hantera den nya trafiknivån.
 title: Ange permanent trafikökning
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 53acbe97-7f63-4608-b2f3-bd885eae7e6d
 exl-id: a1e2bc5c-4443-4c88-8b6c-cc320c689c99
 translation-type: tm+mt

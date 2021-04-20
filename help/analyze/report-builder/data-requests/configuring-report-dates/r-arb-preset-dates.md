@@ -3,7 +3,7 @@ description: Med förinställda datum kan du välja datum eller datum som du har
 title: Definitioner i frågeguiden – förinställda datum
 uuid: 5eba7b85-f3f5-4e9c-a078-757d9e85f4d1
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

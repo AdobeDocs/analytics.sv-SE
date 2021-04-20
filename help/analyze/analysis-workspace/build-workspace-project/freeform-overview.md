@@ -3,8 +3,8 @@ description: Lär dig grunderna i hur du arbetar i ett Workspace-projekt.
 keywords: Analysis Workspace
 title: Översikt över projekt
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
-feature: Grundläggande om arbetsytan
-role: Affärsledare, administratör
+feature: Workspace Basics
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

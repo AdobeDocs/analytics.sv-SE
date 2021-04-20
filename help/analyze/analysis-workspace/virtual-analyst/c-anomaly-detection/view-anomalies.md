@@ -2,8 +2,8 @@
 description: Du kan visa avvikelser i en tabell eller i ett linjediagram.
 title: Visa avvikelser i Analysis Workspace
 uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
-feature: AI-verktyg
-role: Affärsledare, administratör
+feature: AI Tools
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

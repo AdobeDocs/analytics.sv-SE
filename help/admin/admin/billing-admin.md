@@ -1,7 +1,7 @@
 ---
 description: På sidan Fakturering kan du få tillgång till faktureringsinformation, inklusive trafikinformation för varje rapportsvit. Endast en auktoriserad administratör har åtkomst till den här sidan.
 title: Fakturering
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: ad6ee1c4-d317-4320-a36e-ee966c8f145e
 exl-id: cea802e4-99c4-491e-99c2-8476870001f7
 translation-type: tm+mt

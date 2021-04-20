@@ -2,7 +2,7 @@
 description: Steg som beskriver hur du anpassar diagrammet så att det är mest användbart för den avsedda målgruppen.
 title: Ändra rapportdiagram
 uuid: c2e81c6c-bfe9-4457-8b5d-512255ca9711
-feature: Rapporter och analyser - Grunderna och analyser
+feature: Reports & Analytics Basics & Analytics Basics
 role: Business Practitioner, Administrator
 exl-id: 5a098b38-0939-4dd2-9a05-1b6b678f2d50
 translation-type: tm+mt

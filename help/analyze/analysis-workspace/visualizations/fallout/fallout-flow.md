@@ -2,8 +2,8 @@
 description: Använd utfallsvisualisering i ett Workspace-projekt.
 title: Översikt över utfall
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
-feature: Visualiseringar
-role: Affärsledare, administratör
+feature: Visualizations
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

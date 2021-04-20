@@ -1,7 +1,7 @@
 ---
 description: data warehouse har en funktion som gör att du kan extrahera en lista med besökar-ID:n. Dessa ID:n är inte cookie-ID:n, utan ID:n som du hämtar i en av dina konverteringsvariabler. Även om det finns andra sätt att komma åt den här informationen är följande exempel en genväg till att generera en Data warehouse-begäran.
 title: Användningsfall - Extraherar besökar-ID:n
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: ed228334-619c-43d7-b781-a18af73b00bb
 exl-id: b1fc41af-31c7-42cd-aab7-0c659577781d
 translation-type: tm+mt

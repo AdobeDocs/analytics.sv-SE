@@ -3,7 +3,7 @@ description: Om du inte känner till ett rapportsvits-ID kan du dra och släppa 
 title: Använda Excel för att hitta ett rapportsvits-ID
 uuid: 087d5720-f438-4db3-bebb-e6452f1f2ba6
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

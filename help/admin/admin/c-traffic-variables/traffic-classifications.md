@@ -2,7 +2,7 @@
 description: Trafikklassificeringar gör att du kan klassificera trafikvariabler (props). Trafikklassificeringar kan bara använda textklassificeringar.
 subtopic: Classifications
 title: Trafikklassificeringar
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 091bec9b-98ff-4d67-b789-e51c2712839f
 exl-id: 320d7dcb-7fb7-4360-96dd-d2d5bd0bfdd5
 translation-type: tm+mt

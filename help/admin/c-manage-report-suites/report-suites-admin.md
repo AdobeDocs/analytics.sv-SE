@@ -1,7 +1,7 @@
 ---
 description: En rapportsvit definierar den fullständiga, oberoende rapporteringen på en vald webbplats, en uppsättning webbplatser eller en delmängd av webbsidor. Vanligtvis är en rapportserie en webbplats, men den kan vara ett globalt segment där du har kombinerat flera webbplatsers nummer för att få summor. När du loggar in på en Adobe Analytics-lösning väljer du en rapportsvit att använda (förutom när du använder sammanslagningar som kombinerar rapportsviter). En rapportsvit kan dessutom vara mindre än en webbplats om du vill köra rapporter för en del av webbplatsen. Analyslösningar sammanställer och rapporterar om dessa datalager. Med Admin Report Suite Manager kan du definiera regler som styr hur data behandlas i en rapportserie.
 title: Hanterare för rapportsvit
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 018c4f63-4d87-4a2e-8c71-1ba7f5dd9446
 exl-id: c36e5378-c8a7-4f18-b143-8ce862638c76
 translation-type: tm+mt

@@ -3,7 +3,7 @@ description: Kopiera en enkel begäran i stället för en referensbegäran. En e
 title: Kopiera enkla förfrågningar
 uuid: ff20560a-01ee-47e7-8bd1-b73edb010456
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 description: Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen.
 title: Radinställningar
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
-feature: Frihandstabeller
-role: Affärsledare, administratör
+feature: Freeform Tables
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

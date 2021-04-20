@@ -1,7 +1,7 @@
 ---
 description: Definierar vanliga inställningar för en webbplats som ger information om tjänster och produkter som vanligtvis säljs via ytterligare engagemang.
 title: Generering av leads
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: e7d3cc4a-1bee-4722-92c1-4454f7613d39
 exl-id: 4a629908-2bb4-4d61-a934-42906edff9df
 translation-type: tm+mt

@@ -3,7 +3,7 @@ description: Fältbeskrivningar för att konfigurera mått i Report Builder.
 title: Ändra mätvärden – fältdefinitioner
 uuid: 5b82f4f7-f9d2-41c3-b5cb-eefcc2c1d3a6
 feature: Report Builder
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

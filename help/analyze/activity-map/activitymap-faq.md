@@ -3,7 +3,7 @@ description: Vanliga frågor och svar om hur du konfigurerar, konfigurerar och a
 title: Vanliga frågor om Activity Map
 uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
 feature: Activity Map
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
 workflow-type: tm+mt

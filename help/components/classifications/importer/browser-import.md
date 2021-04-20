@@ -2,7 +2,7 @@
 description: Du kan importera (överföra) klassificeringsdata via webbläsaren. Den här metoden begränsar din överföring av klassificeringsdata till en enda rapportserie
 subtopic: Classifications
 title: Import via webbläsare
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: 56dfbf4c-36e6-49f4-b5cb-8ab714432825
 exl-id: 5bef1f6d-9b27-464d-8343-472f300a7437
 translation-type: tm+mt
