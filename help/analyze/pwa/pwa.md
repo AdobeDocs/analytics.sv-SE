@@ -4,9 +4,9 @@ description: Progressiva webbprogram för Adobe Analytics
 role: Business Practitioner, Administrator
 exl-id: f28e0bfc-0e3e-4f28-9533-6788a36d37fe
 translation-type: tm+mt
-source-git-commit: 960274fde798287568ada9e6d8ec96783449dd99
+source-git-commit: 3f3a9b7f81ce671a94b7fe71c3ef7e4ae206b875
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -51,4 +51,4 @@ Mer information om hur du redigerar filen AppMeasurement.js finns i [Infoga AppM
 
 Mer information om hur du konfigurerar filen AppMeasurement.js finns i [Översikt över konfigurationsvariabler](/help/implement/vars/config-vars/configuration-variables.md) och de enskilda variabelspecifika sidorna i samma underkapitel.
 
-Mer information om egenskaperna för filen AppMeasurement.js finns i [översikten över JavaScript-implementeringen](/help/implement/js/overview.md).
+Mer information om egenskaperna för filen AppMeasurement.js finns i [Översikt över JavaScript-implementering](/help/implement/js/overview.md).
