@@ -1,15 +1,15 @@
 ---
 title: PWA for Analytics
 description: Progressiva webbprogram för Adobe Analytics
-role: Affärsledare, administratör
+role: Business Practitioner, Administrator
+exl-id: f28e0bfc-0e3e-4f28-9533-6788a36d37fe
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: 960274fde798287568ada9e6d8ec96783449dd99
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 3%
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
-
 
 # PWA för Adobe Analytics
 
@@ -27,7 +27,7 @@ Om du vill samla in och analysera dina PWA-data med [!UICONTROL Analytics] behö
 
 ## Lägg till offline-spårning för att öka effektiviteten i PWA
 
-Du kan öka effektiviteten för PWA genom att använda Adobe Analytics [offlinespårningsfunktioner](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/offline-tracking.html). Som standard är den här funktionen inaktiverad, men du kan lägga till följande egenskap i filen AppMeasurement.js för att aktivera den: `s.trackOffline=true;`.
+Du kan öka effektiviteten för PWA genom att använda Adobe Analytics [offlinespårningsfunktioner](/help/implement/vars/config-vars/trackoffline.md). Som standard är den här funktionen inaktiverad, men du kan lägga till följande egenskap i filen AppMeasurement.js för att aktivera den: `s.trackOffline=true;`.
 
 I följande AppMeasurement.js-fil läggs egenskapen till i slutet av `CONFIG SECTION`:
 
@@ -47,8 +47,8 @@ s.trackOffline=true
 *** 
 ```
 
-Mer information om hur du redigerar filen AppMeasurement.js finns i [Infoga kod i filen AppMeasurement.js](https://docs.adobe.com/content/help/en/analytics/implementation/implement-analytics-with-dtm/analytics-tool/t-appmeasurement-code.html).
+Mer information om hur du redigerar filen AppMeasurement.js finns i [Infoga AppMeasurement-huvudkod](/help/implement/other/dtm/c-aa-tool/t-appmeasurement-code.md).
 
-Exempel på konfigurationer i filen AppMeasurement.js finns i [Konfigurera filen AppMeasurement.js](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/appmeasure-mjs-pagecode.html#section_042412C29CC249E298F19B2BC2F43CE7).
+Mer information om hur du konfigurerar filen AppMeasurement.js finns i [Översikt över konfigurationsvariabler](/help/implement/vars/config-vars/configuration-variables.md) och de enskilda variabelspecifika sidorna i samma underkapitel.
 
-Mer information om egenskaperna för filen AppMeasurement.js finns i [översikten över JavaScript-implementeringen](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/appmeasurement-js/appmeasure-mjs.html).
+Mer information om egenskaperna för filen AppMeasurement.js finns i [översikten över JavaScript-implementeringen](/help/implement/js/overview.md).
