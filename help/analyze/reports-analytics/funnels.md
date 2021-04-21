@@ -2,13 +2,13 @@
 description: Konverteringsförhållanden mäter vanligtvis konverteringen mellan start-, slut- och milstolpehändelser eller punkter i en konverteringsprocess. När du har kodat framgångshändelserna på din webbplats skapar rapporten proportionerna mellan de olika framgångshändelserna och visar dem i en konverteringsrapport.
 title: Konverteringstratt
 uuid: a67ce302-fae1-434a-b662-91672e85cab3
-feature: Reports & Analytics Basics & Analytics Basics
+feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: 8c1c1bc1-0e45-43d7-9581-bd070e2b687e
 translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '311'
 ht-degree: 2%
 
 ---
