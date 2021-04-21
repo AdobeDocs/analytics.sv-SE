@@ -2,13 +2,13 @@
 description: En översikt över rapportmenyn i Rapporter och analyser.
 title: Rapportmeny
 uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
-feature: Reports & Analytics Basics & Analytics Basics
+feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: c2adbe93-6a52-45a0-8a81-2799bf63f70f
 translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '782'
 ht-degree: 3%
 
 ---
@@ -82,7 +82,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Mina favoriter  </span> </td> 
-   <td colname="col2">Du kan enkelt hämta de rapporter som du har markerat som <span class="uicontrol"> favoriter</span> från det här området. För varje användare och per rapport visas tio Favoriter och <span class="uicontrol"> Mer..</span>-länk om du har fler än tio favoriter. <p>Observera att du kan byta namn på rapporter men inte instrumentpaneler i Mina favoriter. </p> <p>Favoriter liknar bokmärken, men de lagras inte i en mapp eller hanteras via bokmärkeshanteraren <a href="/help/analyze/reports-analytics/bookmarks.md"  ></a>, som bokmärken. </p> </td> 
+   <td colname="col2">Du kan enkelt hämta rapporter som du har markerat som <span class="uicontrol"> Favorited</span> från det här området. För varje användare och per rapport visas tio Favoriter och <span class="uicontrol"> Mer..</span>-länk om du har fler än tio favoriter. <p>Observera att du kan byta namn på rapporter men inte instrumentpaneler i Mina favoriter. </p> <p>Favoriter liknar bokmärken, men de lagras inte i en mapp eller hanteras via bokmärkeshanteraren <a href="/help/analyze/reports-analytics/bookmarks.md"  ></a>, som bokmärken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Visas ofta</span> </td> 
