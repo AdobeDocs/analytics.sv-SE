@@ -2,13 +2,13 @@
 description: Med målgrupperna kan ni mäta webbplatsens resultat och följa utvecklingen mot målmålen. Du kan till exempel vilja öka antalet besökare som kommer från en geografisk region, intäkterna per order eller antalet träffar som kommer från en viss hänvisare.
 title: Målgrupper
 uuid: bfe29dc8-8da8-4107-8bb1-4a7494f12bc9
-feature: Reports & Analytics Basics & Analytics Basics
+feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: 6852e429-5b05-432c-bc6b-27f8c464dc50
 translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '585'
 ht-degree: 1%
 
 ---
