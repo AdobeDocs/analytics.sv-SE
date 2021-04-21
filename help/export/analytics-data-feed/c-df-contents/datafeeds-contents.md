@@ -3,13 +3,13 @@ description: I det här avsnittet beskrivs de filer som hittas vid leverans av e
 keywords: Datafeed;jobb;innehåll;manifest;fil;sökning;träffdata;leveransinnehåll
 subtopic: data feeds
 title: Innehåll i datafeed - översikt
-feature: Reports & Analytics Basics & Analytics Basics
+feature: Rapporter och analysgrunder
 uuid: 82a86314-4841-4133-a0dc-4e7c6cd14fc1
 exl-id: 7456ed99-c2f3-4b19-a63e-6b4e457e7d55
 translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
