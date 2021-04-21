@@ -1,14 +1,14 @@
 ---
 description: Steg för att lägga till kalenderhändelser och hantera delade händelser.
 title: Kalenderhändelser
-feature: Reports & Analytics Basics & Analytics Basics
+feature: Rapporter och analysgrunder
 uuid: 15d4f0c8-b566-43b0-b914-4ea35b7fac7f
 exl-id: 5765b377-bdad-41a7-8277-b9fd521c12bd
 translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 96%
+source-wordcount: '309'
+ht-degree: 97%
 
 ---
 
