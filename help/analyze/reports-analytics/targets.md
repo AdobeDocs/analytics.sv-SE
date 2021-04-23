@@ -6,7 +6,7 @@ feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: 6852e429-5b05-432c-bc6b-27f8c464dc50
 translation-type: tm+mt
-source-git-commit: 3926f1e451c8d100387745a125bb82b2e850de01
+source-git-commit: 274348296f2215389377ec94ff4d39b1769e81cc
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Beskrivningar av fält och alternativ på [!UICONTROL Add/Edit Target]-sidan.
 | [!UICONTROL Select Item] | Visar urvalsformuläret för det markerade attributet eller eVar, så att du kan utföra en [!UICONTROL Advanced]-sökning efter relaterade objekt. Om du till exempel markerar eVar [!UICONTROL Countries] kan du ange vilket land i objektlistan. Om du väljer eVar [!UICONTROL Products] kan du ange vilken produkt i objektlistan. Variabler för anpassade insikter visas också på menyn. Om du har ställt in en anpassad insiktsvariabel för att mäta besökares åldersintervall, visas sidintervallen i objektlistan, t.ex. 18-24, 25-35 osv. |
 | [!UICONTROL Metric] | Gör att du kan tillämpa målet på ett mätresultat. Den här menyn visar endast de mätvärden som gäller för en viss eVar. Om du t.ex. väljer [!UICONTROL Products] som eVar gäller inte mått som [!UICONTROL Page Exits] för den. Måttet [!UICONTROL Page Exits] kan användas för en eVar på en webbsida. |
 | [!UICONTROL Period] | Gör att du kan definiera målets [!UICONTROL Date Range]- och [!UICONTROL Granularity]-inställningar. Beroende på datumintervallets specifikationer gäller inte vissa granularitetsalternativ. När du anger värden för måtten anger du ett värde för varje granularitetsinställning. Om datumintervallet till exempel är februari-månaden och ditt val av granularitet är en vecka, anger du ett värde för varje vecka i februari-månaden. [!UICONTROL Target] rapporter visas för varje granularitetsinställning. |
-| [!UICONTROL Values] | Här kan du ange målvärden för tidsperioden och det valda måttet. Det här värdet är de målnummer som du försöker nå. Om målet till exempel baserades på intäkter, och du planerade 10 000 USD i intäkter för en viss månad, skulle du ange 10 000 i värdefältet för månaden. |
+| [!UICONTROL Values] | Här kan du ange målvärden för tidsperioden och det valda måttet. Dessa värden är de målnummer som du försöker nå. Om målet till exempel baserades på intäkter, och du planerade 10 000 USD i intäkter för en viss månad, skulle du ange 10 000 i värdefältet för månaden. |
 
 ## Lägg till en [!UICONTROL Target] {#task_94915391E26E4F808F2538AA92BC7E71}
 
