@@ -1,39 +1,24 @@
 ---
 description: Beskriver de tre alternativen för produktkompatibilitet.
-title: Mätkompatibilitet
+title: Mätvärdeskompatibilitet
 uuid: f2706e2b-c0cc-4af2-bcb4-1318796e9845
+exl-id: 936d8139-7bbc-4de4-9e30-60ef5e12be08
 translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+source-git-commit: a8db56bca986e11db3c363aa75fcf212358c7f91
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 4%
 
 ---
 
-
-# Mätkompatibilitet
+# Mätvärdeskompatibilitet
 
 Beskriver de tre alternativen för produktkompatibilitet.
 
 När du skapar beräknade eller avancerade beräknade mått i verktyget för beräkning av mätvärden visas dina mått som kompatibla med 1 eller flera alternativ: Aktuella data, fullständigt bearbetade data eller marknadsföringskanalrapporter.
 
-<table id="table_DF7F6D55467B4B76AC34026465D44F7A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Kompatibel med </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Aktuella data </td> 
-   <td colname="col2"> <p>Med alternativet Inkludera aktuella data i Analytics kan ni visa de senaste Analytics-data, ofta innan data har bearbetats fullständigt och slutförts. <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/current-data.html"  > Aktuella data</a> visar de flesta mätvärden på några minuter och ger användbara data för snabba beslut. </p> <p>Aktuella data har endast stöd för beräknade värden (de som innehåller multiplikation, division, addition och subtraktion). Aktuella data stöder inte avancerade beräknade värden (som innehåller segment eller funktioner). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Fullt bearbetade data </td> 
-   <td colname="col2"> <p>Data som är fullständigt bearbetade och innehåller segment och klassificeringar. Om du hellre vill visa alla mätvärden efter att data har bearbetats fullständigt kan du inaktivera aktuella data genom att ta bort användare från gruppen Aktuella dataanvändare. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Marketing Channel-rapporter </td> 
-   <td colname="col2"> <p>Mätvärden med första-touch-allokering är bara kompatibla med Marketing Channel-rapporter. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
+| Kompatibel med | Beskrivning |
+| --- | --- |
+| [Aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html) | Med alternativet [!UICONTROL Include Current Data] i Adobe Analytics kan du visa de senaste Analytics-data, ofta innan data har bearbetats och slutförts fullständigt. [!UICONTROL Current Data] visar de flesta mätvärden på några minuter och ger användbara data för snabba beslut. [!UICONTROL Current Data] stöder endast beräknade värden (de som innehåller multiplikation, division, addition och subtraktion). [!UICONTROL Current Data] stöder inte avancerade beräknade värden (som innehåller segment eller funktioner). |
+| Fullt bearbetade data | Data som är fullständigt bearbetade och innehåller segment och klassificeringar. Om du hellre vill visa alla mätvärden efter att data har bearbetats fullständigt kan du inaktivera [!UICONTROL Current Data] genom att ta bort användare från gruppen Aktuella dataanvändare. |
+| Marketing Channel-rapporter | Mätvärden med första-touch-allokering är bara kompatibla med Marketing Channel-rapporter. |
