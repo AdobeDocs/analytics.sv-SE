@@ -3,9 +3,9 @@ title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
 translation-type: tm+mt
-source-git-commit: a8db56bca986e11db3c363aa75fcf212358c7f91
+source-git-commit: 60856c2c410d7b45ba54d1ae7bdd659d181965ff
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1668'
 ht-degree: 0%
 
 ---
@@ -111,3 +111,7 @@ Nej. För samma organisation kan bara en region ha CDA aktiverat.
 Fördelen med 7-dagars uppspelningsfönster är att CDA kan gå tillbaka längre och försöka associera tidigare anonyma händelser med någon som senare loggade in inom dessa 7 dagar. Nackdelarna med 7-dagars uppslagsfönstret är 1) uppspelningen körs endast en gång i veckan och 2) de senaste 7 dagarna kan komma att ändras.
 
 Fördelarna med att använda 1-dagars uppspelningsfönster är 1) uppspelningsomgångar varje dag och 2) endast i går kan komma att ändras. Nackdelen med 1-dagars uppslagsfönstret är att CDA bara kan gå tillbaka en dag för att försöka associera tidigare anonyma händelser med en person som loggade in i går.
+
+## Vad händer med sammanfogade data i mina virtuella CDA-rapporteringsprogram om mitt företag bestämmer sig för att nedgradera från Analytics Ultimate?
+
+Om kunden uppgraderar från Ultimate har de inte längre tillgång till sammansatta data. Alla data som tidigare sammanfogats tas bort. Detta innebär att den virtuella CDA-rapportsviten nu inte kommer att återspegla enhetssammanfogning. Data kommer att se ut ungefär som den ursprungliga osökta rapportsviten.
