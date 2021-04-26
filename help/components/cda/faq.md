@@ -3,9 +3,9 @@ title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
 translation-type: tm+mt
-source-git-commit: 510fe26c51391c040527e646ea0a8f131daa6f2d
+source-git-commit: a8db56bca986e11db3c363aa75fcf212358c7f91
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Hur kan jag använda CDA för att se hur människor flyttar från en enhetstyp till en annan?
 
-Du kan använda en Flow-visualisering med mobilenhetstypen.
+Du kan använda en [!UICONTROL Flow]-visualisering med dimensionen Mobilenhetstyp.
 
 1. Logga in på Adobe Analytics och skapa ett nytt tomt Workspace-projekt.
 2. Klicka på fliken Visualiseringar till vänster och dra en flödesvisualisering till arbetsytan till höger.
@@ -105,3 +105,9 @@ Flera rapportsviter kan vara aktiverade, men varje ytterligare rapportserie öka
 ## Om min Experience Cloud organisation (även kallad IMS org) har flera företag i olika regioner, kan jag då aktivera CDA för samtliga?
 
 Nej. För samma organisation kan bara en region ha CDA aktiverat.
+
+## Vilka är fördelarna och nackdelarna med en 7-dagars repriser jämfört med en 1-dagars repriser?
+
+Fördelen med 7-dagars uppspelningsfönster är att CDA kan gå tillbaka längre och försöka associera tidigare anonyma händelser med någon som senare loggade in inom dessa 7 dagar. Nackdelarna med 7-dagars uppslagsfönstret är 1) uppspelningen körs endast en gång i veckan och 2) de senaste 7 dagarna kan komma att ändras.
+
+Fördelarna med att använda 1-dagars uppspelningsfönster är 1) uppspelningsomgångar varje dag och 2) endast i går kan komma att ändras. Nackdelen med 1-dagars uppslagsfönstret är att CDA bara kan gå tillbaka en dag för att försöka associera tidigare anonyma händelser med en person som loggade in i går.
