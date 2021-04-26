@@ -1,14 +1,14 @@
 ---
 title: Konfigurera enhetsövergripande analys
 description: Konfigurera en virtuell rapportsvit för att aktivera CDA.
+exl-id: e6d4e0c2-6b85-4f89-b51f-c0eed7a4e3da
 translation-type: tm+mt
-source-git-commit: 97e1c0ac5fbf7f932c3f772c33e7fa8880c653a6
+source-git-commit: 005cb590f4f7d31d3de801437a0ba6fa25b2ea64
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera enhetsövergripande analys
 
@@ -18,9 +18,9 @@ När alla förutsättningar är uppfyllda gör du följande för att aktivera en
 >
 >Alla förutsättningar måste vara uppfyllda innan du följer dessa steg. Om alla förutsättningar inte uppfylls är funktionen inte tillgänglig eller fungerar inte. Se översiktssidan [och önskad sammanfogningsmetod ([Fältbaserad sammanfogning](field-based-stitching.md) eller [Enhetsdiagram](device-graph.md)) för krav och begränsningar.](overview.md)
 
-## Kontakta din Customer Success Manager om du vill att CDA ska vara etablerat på din rapportserie för olika enheter
+## Öppna en biljett hos Kundtjänst om du vill att CDA ska vara etablerat på din enhetsövergripande rapportsvit
 
-CDA tillhandahålls av Adobe Engineering på ditt enhetsövergripande rapportpaket. Kontakta din Customer Success Manager med följande information:
+CDA tillhandahålls av Adobe Engineering på ditt enhetsövergripande rapportpaket. Kontakta Kundtjänst och be om följande information för att starta processen:
 
 * Ditt Adobe Experience Cloud org-ID (en alfanumerisk sträng som slutar med @AdobeOrg)
 * Rapportsvitens-ID för det rapportpaket för olika enheter som du vill aktivera med CDA
@@ -28,7 +28,7 @@ CDA tillhandahålls av Adobe Engineering på ditt enhetsövergripande rapportpak
 * Om du tänker använda fältbaserad sammanfogning är det utkast eller den eVar som innehåller användar-ID:t
 * Din inställning för repetitionsfrekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
 
-När din CSM väl har fått den här informationen arbetar de tillsammans med Adobe Engineering för att aktivera den rapportsvit du valt för CDA-bearbetning.
+När du har försett kundtjänst med den här informationen arbetar de tillsammans med Adobe Engineering för att aktivera den rapportserie du valt för CDA-bearbetning.
 
 ## Skapa en virtuell rapportsvit för olika enheter för att se vyn över olika enheter
 
