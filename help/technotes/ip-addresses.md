@@ -1,14 +1,14 @@
 ---
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
+exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
 translation-type: tm+mt
-source-git-commit: 80eab18fd133875c90ca72532867a8839938364f
+source-git-commit: 8986b30ca08224e2b992e8ed238e74e40e9a7b41
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # IP-adresser och domäner som används av Adobe Analytics
 
@@ -33,7 +33,7 @@ Adobe Analytics använder följande värdar för att förbättra prestanda och p
 | Microsoft Azure Blob Storage | `awaascicdprodva7.blob.core.windows.net` |
 | Microsoft Azure CDN | `aauicdnva7.azureedge.net` |
 
-## Alla Adobe Analytics IP-adressblock
+## Alla IP-adressblock för Adobe Analytics Data Collection
 
 Följande tabell omfattar alla standardservrar för datainsamling och regionala datainsamlingsservrar för Adobe Analytics. De omfattar inte enskilda AWS-värdar.
 
@@ -113,7 +113,7 @@ Om din organisation föredrar att tillåta specifika IP-adressintervall kan du a
 
 ## AWS-värdar
 
-Adobe Analytics använder Amazon Web Services som en del av datainsamlingsprocessen. Följande tabell innehåller AWS-värdar som är reserverade för Adobe. Dessa värdar ingår **inte** i det aggregerade blockintervallet ovan.
+Adobe Analytics använder Amazon Web Services som en del av datainsamlingsprocessen. Följande tabell innehåller AWS-värdar som är reserverade för Adobe. Dessa värdar **ingår inte** i det aggregerade blockintervallet ovan.
 
 | Plats | Värd |
 | --- | --- |
