@@ -1,29 +1,29 @@
 ---
 title: Skapa eller redigera en datafeed
 description: Lär dig hur du skapar eller redigerar en datafeed.
+exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
 translation-type: tm+mt
-source-git-commit: 8454f64604afaea03af8bb4d7cefc3cbab889ec6
+source-git-commit: 769f8cf2dc726df5b71b453f5bbcfb9f0e78e6d7
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
-
 
 # Skapa eller redigera en datafeed
 
 Genom att skapa en datafeed kan Adobe veta var rådatafiler ska skickas och vad du vill inkludera i varje fil. På den här sidan visas enskilda inställningar som du kan anpassa när du skapar en datafeed.
 
-Grundläggande kunskap om dataflöden rekommenderas innan du läser den här sidan. Se Översikt över [](data-feed-overview.md) Dataflöden för att kontrollera att du uppfyller kraven för att skapa en datafeed.
+Grundläggande kunskap om dataflöden rekommenderas innan du läser den här sidan. Se [Översikt över dataflöden](data-feed-overview.md) för att kontrollera att du uppfyller kraven för att skapa en datafeed.
 
 ## Fält för matningsinformation
 
 * **Namn**: Dataflödets namn. Måste vara unikt i den valda rapportsviten och får innehålla upp till 255 tecken.
 * **Rapportsvit:** Rapportsviten som dataflödet baseras på. Om flera dataflöden skapas för samma rapportserie måste de ha olika kolumndefinitioner. Endast källrapportsviter stöder dataflöden. virtuella rapportsviter stöds inte.
 * **Mejla när det är klart**: E-postadressen som ska meddelas när en feed har bearbetats. E-postadressen måste vara korrekt formaterad.
-* **Feedintervall**: Timmatningar innehåller en timmes data. Dagliga feeds innehåller data för en hel dag.
+* **Feedintervall**: Timmatningar innehåller en timmes data. Dagliga matningar innehåller en hel dags data. de innehåller data från midnatt till midnatt i rapportsvitens tidszon.
 * **Fördröjningsbearbetning**: Vänta en viss tid innan du bearbetar en datafeedfil. En fördröjning kan vara användbar för att ge mobila implementeringar möjlighet att komma online och skicka data på offlineenheter. Den kan också användas för att hantera serverprocesser i organisationen när tidigare bearbetade filer hanteras. I de flesta fall behövs ingen fördröjning. En feed kan fördröjas med upp till 120 minuter.
-* **Start- och slutdatum**: Startdatumet anger det första datum då du vill ha en datafeed. Ange det här datumet i det förflutna för att omedelbart börja bearbeta dataflöden för historiska data. Bearbetningen av feeds fortsätter tills de når slutdatumet.
+* **Start- och slutdatum**: Startdatumet anger det första datum då du vill ha en datafeed. Ange det här datumet i det förflutna för att omedelbart börja bearbeta dataflöden för historiska data. Bearbetningen av feeds fortsätter tills de når slutdatumet. Start- och slutdatumen baseras på rapportsvitens tidszon.
 * **Löpande matning**: Den här kryssrutan tar bort slutdatumet, vilket gör att en feed kan köras på obestämd tid. När en feed har avslutat bearbetningen av historiska data väntar en feed på data för att slutföra insamlingen under en given timme eller dag. När den aktuella timmen eller dagen är slut börjar bearbetningen efter den angivna fördröjningen.
 
 ## Målfält
@@ -86,9 +86,9 @@ Datamatningar stöder Azure Blob-mål. Kräver en behållare, ett konto och en n
 Alla kolumner är tillgängliga, oavsett om de har data. En datafeed måste innehålla minst en kolumn.
 
 * **Ta bort escape-tecken**: När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Markera den här rutan om du vill att dessa tecken ska tas bort från feed-filerna.
-* **Komprimeringsformat**: Den typ av komprimering som används. Gzip genererar filer i `.tar.gz` format. Zip-utdatafiler i `.zip` format.
-* **Pakettyp**: En enda fil genererar en enda, potentiellt stor fil `hit_data.tsv` . Flera filer sidnumrerar data i 2 GB-segment (okomprimerade). Om flera filer är markerade och okomprimerade data för rapportfönstret är mindre än 2 GB, skickas en fil. Adobe rekommenderar att du använder flera filer för de flesta dataflöden.
+* **Komprimeringsformat**: Den typ av komprimering som används. Gzip skickar filer i `.tar.gz`-format. Zip skickar filer i `.zip`-format.
+* **Pakettyp**: En enda fil skickar  `hit_data.tsv` filen i en enda, potentiellt enorm fil. Flera filer sidnumrerar data i 2 GB-segment (okomprimerade). Om flera filer är markerade och okomprimerade data för rapportfönstret är mindre än 2 GB, skickas en fil. Adobe rekommenderar att du använder flera filer för de flesta dataflöden.
 * **Kolumnmallar**: När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. Adobe har också flera mallar som standard.
-* **Tillgängliga kolumner**: Alla tillgängliga datakolumner i Adobe Analytics. Klicka [!UICONTROL Add all] för att inkludera alla kolumner i en datafeed.
-* **Inkluderade kolumner**: De kolumner som ska inkluderas i en datafeed. Klicka [!UICONTROL Remove all] för att ta bort alla kolumner från en datafeed.
+* **Tillgängliga kolumner**: Alla tillgängliga datakolumner i Adobe Analytics. Klicka på [!UICONTROL Add all] om du vill ta med alla kolumner i en datafeed.
+* **Inkluderade kolumner**: De kolumner som ska inkluderas i en datafeed. Klicka på [!UICONTROL Remove all] om du vill ta bort alla kolumner från en datafeed.
 * **Hämta CSV**: Hämtar en CSV-fil som innehåller alla inkluderade kolumner.
