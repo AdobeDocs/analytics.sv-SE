@@ -1,8 +1,8 @@
 ---
 title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketing Channels
-description: Uppdaterad praxis för användning av marknadsföringskanaler med Attribution IQ och Customer Journey Analytics
+description: Uppdaterad bästa praxis för användning av marknadsföringskanaler med Attribution IQ och Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 5422a051be1c55f394cf3f7fc5bb4f8822a7fb90
+source-git-commit: 9f978ecaa86eed450c80ab5a864f321b6223ba8c
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Använd Attribution IQ med marknadsföringskanaler - bästa praxis
+# Attribution IQ med marknadsföringskanaler - bästa praxis
 
 [Marketing ](/help/components/c-marketing-channels/c-getting-started-mchannel.md) Channel är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades vid en tidpunkt när varken [Attribution IQ](https://experienceleague.corp.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en#analysis-workspace) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases) fanns.
 
@@ -38,6 +38,6 @@ Anpassade attribueringsmodeller som används med marknadsföringskanaldimensione
 
 Om du ställer in besökarinteraktionsperioden på minst &quot;1 dag&quot; minimeras risken för bestående värden. Eftersom anpassade attribueringsmodeller (AIQ) tillåter flexibla sökningsfönster rekommenderar vi att du anger ett minimivärde för att minimera effekten av den här inställningen.
 
-## Bästa praxis nr 5: Bearbetningsregler för marknadsföringskanaler finns bara för aktiverade kanaler
+## Bästa praxis nr 5: Bearbetningsregler för marknadsföringskanaler ska bara finnas för aktiverade kanaler
 
 Se till att du tar bort alla regler för bearbetning av marknadsföringskanaler för inaktiverade kanaler. Regler ska bara finnas för marknadsföringskanaler som är markerade som aktiverade.
