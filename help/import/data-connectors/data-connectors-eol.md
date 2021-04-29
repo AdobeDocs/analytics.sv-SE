@@ -3,7 +3,7 @@ description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 exl-id: b407675a-9fcf-4f24-bc88-69ccdb5b3658
 translation-type: tm+mt
-source-git-commit: 9c8c201d4bb57f3594ca907c20e5985746b423f0
+source-git-commit: 9f978ecaa86eed450c80ab5a864f321b6223ba8c
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 9%
@@ -30,12 +30,6 @@ Alla företag som erbjuder en integrering fick möjlighet att migrera sin integr
 
 Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 
-## Undantag: Adobe Campaign Classic
-
-ETT undantag till datumet 1 augusti 2021 är Adobe Campaign Classic-integreringen. Denna integrering kommer officiellt att bli inaktuell den 1 mars 2022.
-
-Den 1 augusti 2021 kommer Adobe Campaign Classic att tas bort från användargränssnittet för Data Connectors tillsammans med alla andra integreringar. Befintliga Campaign-integreringar kommer dock att fortsätta att samla in och skicka data till Adobe Analytics fram till den 1 mars 2022. Den 1 mars 2022 upphör integreringen att samla in och skicka uppgifter till Adobe Analytics. Adobe Campaign skapar en ny integrering på Adobe Exchange som ersätter den nuvarande integreringen av Data Connectors. Adobe Campaign räknar med att den nya integrationen ska bli klar i tid så att kunderna kan migrera till den nya integreringen före borttagningsdatumet i mars 2022.
-
 ## Status för Data Connector-partner
 
 | Partner | Status |
@@ -43,7 +37,7 @@ Den 1 augusti 2021 kommer Adobe Campaign Classic att tas bort från användargr�
 | Acxiom | Undertryckt |
 | Anpassa | Undertryckt |
 | Justera | Migrerar till Adobe Exchange |
-| Adobe Campaign | Migrera till Adobe Exchange (se anm. ovan) |
+| Adobe Campaign | Migrera till Adobe Exchange (se anm. nedan) |
 | Använder | Migrerar till Adobe Exchange |
 | Appen | Undertryckt |
 | AppsFlyer | Migrerar till Adobe Exchange |
@@ -105,3 +99,9 @@ Den 1 augusti 2021 kommer Adobe Campaign Classic att tas bort från användargr�
 | WhatCounts Email | Undertryckt |
 | wywy | Undertryckt |
 | Yesmail Enterprise | Undertryckt |
+
+## Undantag: Adobe Campaign Classic
+
+ETT undantag till datumet 1 augusti 2021 är Adobe Campaign Classic-integreringen. Denna integrering kommer officiellt att bli inaktuell den 1 mars 2022.
+
+Den 1 augusti 2021 kommer Adobe Campaign Classic att tas bort från användargränssnittet för Data Connectors tillsammans med alla andra integreringar. Befintliga Campaign-integreringar kommer dock att fortsätta att samla in och skicka data till Adobe Analytics fram till den 1 mars 2022. Den 1 mars 2022 upphör integreringen att samla in och skicka uppgifter till Adobe Analytics. Adobe Campaign skapar en ny integrering på Adobe Exchange som ersätter den nuvarande integreringen av Data Connectors. Adobe Campaign räknar med att den nya integrationen ska bli klar i tid så att kunderna kan migrera till den nya integreringen före borttagningsdatumet i mars 2022.
