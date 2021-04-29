@@ -2,9 +2,9 @@
 title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketing Channels
 description: Uppdaterad bästa praxis för användning av marknadsföringskanaler med Attribution IQ och Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 9f978ecaa86eed450c80ab5a864f321b6223ba8c
+source-git-commit: 402546c3110e78240e9379ea28957b070f22e697
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -24,19 +24,31 @@ Eftersom dimensionerna för marknadsföringskanalen är beroende av en tradition
 
 Vi rekommenderar att du använder [Attribution IQ](https://experienceleague.corp.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en#analysis-workspace) i stället för den befintliga attribueringen av marknadsföringskanalen för att finjustera analysen av marknadsföringskanalen. Följ andra metodtips för att försäkra dig om att analysen är konsekvent och att den har effektiva kontroller över Attribution IQ.
 
+![](assets/attribution.png)
+
+* Konfigurationen av dimensionerna Marketing Channel och Marketing Channel Detail fastställer kontaktytor som ska utvärderas, vilket motsvarar varje instans av marknadsföringskanalen.
+* Vid mätanalys bör organisationen anpassa sig till en eller flera attribueringsmodeller. Spara anpassade mätvärden med den här modellen för enkel återanvändning.
+* Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Med Attribution IQ-metriska modeller får du bättre kontroll över uppslagsfönstren och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html?lang=en#analysis-workspace).
+
 ## Best Practice #2: Inga kanaldefinitioner för direkt- och sessionsuppdatering
 
 Direkta och interna uppdateringskanaler/sessioner rekommenderas inte för användning med anpassade attribueringsmodeller (Attribution IQ).
 
 Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du skapar en klassificering för dina marknadsföringskanaler och låter de två kanalerna vara oklassificerade. Den klassificerade dimensionen ger samma Attribution IQ som om kanalerna aldrig hade konfigurerats.
 
+![](assets/direct-session-refresh.png)
+
 ## Bästa praxis nr 3: Aktivera Åsidosätt sista tryckkanal för alla kanaler
 
 Anpassade attribueringsmodeller som används med marknadsföringskanaldimensionen i arbetsytan fungerar bäst när den här inställningen är aktiverad. Om du aktiverar den här inställningen räknas en instans av marknadsföringskanalen av när en ny kanal/detalj påträffas. Du bör aktivera detta för alla kanaler förutom för Direkt eller Intern/Sessionsuppdatering, som vi inte längre rekommenderar för användning med anpassade attribueringsmodeller (Attribution IQ).
 
+![](assets/override.png)
+
 ## Bästa praxis nr 4: Minimera besökarengagemangsperioden
 
 Om du ställer in besökarinteraktionsperioden på minst &quot;1 dag&quot; minimeras risken för bestående värden. Eftersom anpassade attribueringsmodeller (AIQ) tillåter flexibla sökningsfönster rekommenderar vi att du anger ett minimivärde för att minimera effekten av den här inställningen.
+
+![](assets/expiration.png)
 
 ## Bästa praxis nr 5: Bearbetningsregler för marknadsföringskanaler ska bara finnas för aktiverade kanaler
 
