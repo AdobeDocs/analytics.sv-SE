@@ -2,9 +2,9 @@
 title: Vanliga frågor om marknadsföringskanaler
 description: Vanliga frågor och svar om marknadsföringskanaler.
 translation-type: tm+mt
-source-git-commit: 89c91aa7620eaba3d24e3d5de4055609c472f9f7
+source-git-commit: 7202a49dda7c3ef4f4b535476d3cf637b9e9f7f6
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -12,12 +12,16 @@ ht-degree: 0%
 
 # Vanliga frågor om marknadsföringskanaler
 
+>[!NOTE]
+>
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+
 Vanliga frågor och svar om marknadsföringskanaler.
 
 ## Mina spårningskoder följer inget mönster och jag har tusentals som måste anges för min Filials-kanal.
 
 * Använd elimineringsprocessen. Om kanalerna E-post och Filialer använder samma frågesträngsparameter, men du bara har ett fåtal e-postspårningskoder, kan du ange e-postspårningskoderna i en regeluppsättning som definierar e-post. Sedan klassificerar du alla andra spårningskoder med *`affiliates.`*
-* I e-postsystemet lägger du till en frågesträngsparameter i alla URL-adresser för landningssidor, till exempel *`&ch=eml`*. Skapa en regeluppsättning som identifierar om ch-frågeparametern är lika med *`eml`*. Om det inte innehåller något *`eml`*&#x200B;är det ett närstående bolag.
+* I e-postsystemet lägger du till en frågesträngsparameter i alla URL-adresser för landningssidor, till exempel *`&ch=eml`*. Skapa en regeluppsättning som identifierar om ch-frågeparametern är lika med *`eml`*. Om det inte innehåller *`eml`* är det ett närstående bolag.
 
 ## Referensdomäner innehåller mer data än jag förväntade mig.
 
@@ -31,7 +35,7 @@ Vanliga frågor och svar om marknadsföringskanaler.
 
 ## Varför tillskrivs all min trafik med sista handen en intern domän?
 
-* Du har en regel som matchar intern trafik. Kom ihåg att dessa regler gäller för varje träff som besökaren gör på er webbplats, inte bara för det första besöket. Om du har en regel som *`Page URL exists`* utan andra villkor matchas kanalen för varje efterföljande träff på webbplatsen, eftersom det alltid finns en sidadress.
+* Du har en regel som matchar intern trafik. Kom ihåg att dessa regler gäller för varje träff som besökaren gör på er webbplats, inte bara för det första besöket. Om du har en regel som *`Page URL exists`* utan andra villkor matchas den kanalen för varje efterföljande träff på webbplatsen, eftersom det alltid finns en sidadress.
 
 ## Hur felsöker jag trafik som visas i Ingen kanal identifierad i rapporten?
 
@@ -45,13 +49,13 @@ Vanliga frågor och svar om marknadsföringskanaler.
 
 Se till att du har en kanal för de här tre möjligheterna. Skapa till exempel regler som säger:
 
-1. **[!UICONTROL Referrer]** och **[!UICONTROL Does Not Exist]** och **[!UICONTROL Is First Page of Visit]**. (Se [Direkt.](/help/components/c-marketing-channels/c-faq.md))
+1. **[!UICONTROL Referrer]** och  **[!UICONTROL Does Not Exist]** och  **[!UICONTROL Is First Page of Visit]**. (Se [Direkt.](/help/components/c-marketing-channels/c-faq.md))
 
-2. **[!UICONTROL Referrer Matches Internal URL Filters]** och **[!UICONTROL Is First page of Visit]**. (Se [Intern](/help/components/c-marketing-channels/c-faq.md).)
+2. **[!UICONTROL Referrer Matches Internal URL Filters]** och  **[!UICONTROL Is First page of Visit]**. (Se [Intern](/help/components/c-marketing-channels/c-faq.md).)
 
-3. **[!UICONTROL Referrer]** och **[!UICONTROL Exists]** och **[!UICONTROL Referrer Does Not Match Internal URL Filters]**.
+3. **[!UICONTROL Referrer]** och  **[!UICONTROL Exists]** och  **[!UICONTROL Referrer Does Not Match Internal URL Filters]**.
 
-Skapa slutligen en *annan* kanal som fångar upp de återstående träffarna, enligt beskrivningen i [Ingen kanal identifierad](/help/components/c-marketing-channels/c-faq.md#no-channel-identified).
+Skapa till sist en *annan*-kanal som hämtar återstående träffar, enligt beskrivningen i [Ingen kanal identifierad](/help/components/c-marketing-channels/c-faq.md#no-channel-identified).
 
 ## Relation mellan första och sista beröringen
 
@@ -63,17 +67,17 @@ Skärningen där den första motsvarar den sista beröringen är tabellens diago
 
 ## Orsaker till att ingen kanal har identifierats {#no-channel-identified}
 
-Om reglerna inte samlar in data, eller om reglerna inte är korrekt konfigurerade, visar rapporten data på rapportraden i [!UICONTROL No Channel Identified] rapporten. Du kan skapa en regeluppsättning med namnet *Annan*, till exempel i slutet av bearbetningsordningen, som även identifierar intern trafik.
+Om reglerna inte samlar in data, eller om reglerna inte är korrekt konfigurerade, visas data i [!UICONTROL No Channel Identified]-raden i rapporten. Du kan skapa en regeluppsättning med namnet *Annat*, till exempel i slutet av bearbetningsordningen, som även identifierar intern trafik.
 
 ![](assets/example_other.png)
 
-Den här typen av regel fungerar som en&quot;catch all&quot;-regel för att säkerställa att kanaltrafiken alltid matchar den externa trafiken, och hamnar vanligtvis inte i **[!UICONTROL No Channel Identified]**. Var försiktig så att du inte skapar en regel som även identifierar intern trafik. Att ange kanalens värde till **[!UICONTROL Referring Domain]** eller till **[!UICONTROL Page URL]** är det vanligaste och mest användbara sättet att skapa en effektiv Andra regel.
+Den här typen av regel fungerar som en&quot;catch-all&quot;-regel för att säkerställa att kanaltrafiken alltid matchar extern trafik, och hamnar vanligtvis inte i **[!UICONTROL No Channel Identified]**. Var försiktig så att du inte skapar en regel som även identifierar intern trafik. Att ange kanalens värde till **[!UICONTROL Referring Domain]** eller till **[!UICONTROL Page URL]** är det vanligaste och mest användbara sättet att skapa en effektiv Andra regel.
 
 >[!NOTE]
 >
 >Det kan fortfarande finnas kanaltrafik som kan ingå i kategorin Ingen kanal identifierad. Till exempel: En besökare kommer till webbplatsen och bokmärker en sida, och på samma besök kommer sidan tillbaka via bokmärket. Eftersom detta inte är den första sidan av besöket kommer det inte att gå vare sig i direktkanalen eller i den andra kanalen eftersom det inte finns någon referensdomän.
 
-## Orsaker till internt (sessionsuppdatering) {#internal}
+## Orsaker till intern (sessionsuppdatering) {#internal}
 
 Senaste beröring internt (sessionsuppdatering) kan bara inträffa om det också var den första beröringen - se Relation mellan första och sista beröringen ovan. Scenarierna nedan förklarar hur Sessionsuppdatering kan vara en kanal med första klicket.
 
