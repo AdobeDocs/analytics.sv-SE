@@ -1,14 +1,14 @@
 ---
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
+exl-id: 825f70a5-cce3-4b1c-bb42-828388348216
 translation-type: tm+mt
-source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
+source-git-commit: 9f978ecaa86eed450c80ab5a864f321b6223ba8c
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2098'
 ht-degree: 1%
 
 ---
-
 
 # Bearbetningsregler för marknadsföringskanaler
 
@@ -17,6 +17,7 @@ Bearbetningsreglerna för marknadsföringskanaler avgör om en besökare når up
 ![](assets/buckets_2.png)
 
 Ytterligare information om bearbetning:
+
 * Data som samlas in med dessa regler är helt permanenta, och regler som ändras efter det att data har samlats in är inte retroaktiva. Vi rekommenderar att du granskar och tar hänsyn till alla omständigheter innan du sparar [!UICONTROL Marketing Channel Processing Rules] för att minska risken för att data samlas in i felaktiga kanaler.
 * Rapporten kan bearbeta upp till 25 kanaler i taget.
 * Regler kan komma åt variabler som har angetts av VISTA, men de kan inte komma åt data som har tagits bort av VISTA.
@@ -27,6 +28,7 @@ Ytterligare information om bearbetning:
 
 * Granska den konceptuella informationen i [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 * Skapa en eller flera kanaler så att du kan tilldela regler till dem. Se [Lägg till marknadsföringskanaler.](/help/components/c-marketing-channels/c-channels.md)
+* Granska de bästa sätten att använda [!UICONTROL Marketing Channels] med [!UICONTROL Attribution IQ].
 
 ## Skapa regler för bearbetning av marknadsföringskanal
 
@@ -154,7 +156,7 @@ Ett bra tillvägagångssätt är att inkludera en&quot;annan kampanjkanal&quot; 
 
 ### Sociala nätverk {#social-networks}
 
-Den här regeln identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook;. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
+Denna regel identifierar besökare som kommer från ett socialt nätverk, t.ex. Facebook;. Kanalen byter ofta namn till Organic Social. Inställningarna kan vara följande:
 
 ![](assets/example_social.png)
 
