@@ -5,9 +5,9 @@ user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
 translation-type: tm+mt
-source-git-commit: a8db56bca986e11db3c363aa75fcf212358c7f91
+source-git-commit: 3fab253cb7c9aad0f0b1e82fee48a69822305099
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '639'
 ht-degree: 54%
 
 ---
@@ -249,6 +249,7 @@ ht-degree: 54%
    + [Mätvärden och dimensioner som stöds i realtid](c-real-time-reporting/realtime-metrics.md)
 + Marknadsföringskanaler {#marketing-channels}
    + [Kom igång med marknadsföringskanaler](c-marketing-channels/c-getting-started-mchannel.md)
+   + [Attribution IQ med marknadsföringskanaler](c-marketing-channels/mchannel-best-practices.md)
    + [Hantera marknadsföringskanaler](c-marketing-channels/c-channels.md)
    + [Bearbetningsregler för marknadsföringskanaler](c-marketing-channels/c-rules.md)
    + [Klassificeringar i marknadsföringskanaler](c-marketing-channels/classifictions-mchannel.md)
