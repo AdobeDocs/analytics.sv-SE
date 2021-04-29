@@ -6,14 +6,18 @@ feature: Rapporter och analysgrunder
 uuid: 47f1ccaf-3ce7-494d-b456-956a3a3c6c9a
 exl-id: a9df659b-3b6a-4bdb-bd77-f4490d2b7c79
 translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: 7202a49dda7c3ef4f4b535476d3cf637b9e9f7f6
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
 # Utgångsdatum för marknadsföringskanal
+
+>[!NOTE]
+>
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 Lär dig hur du anger förfallotiden, eller besökarengagemangsperioden, för marknadsföringskanaler.
 
