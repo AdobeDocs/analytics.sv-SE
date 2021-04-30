@@ -5,9 +5,9 @@ user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Exporthandbok
 user-guide-description: Använd dataflöden för att få en timbaserad eller daglig export av rådata. Använd Data warehouse för att hämta data från kalkylblad.
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: e9969fbcc2adb58fba8d2bd293580181a05d1bac
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 84%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 84%
       + [Sena träffar](analytics-data-feed/c-df-contents/late-arriving-hits.md)
    + [Vanliga frågor om datafeeds](analytics-data-feed/df-faq.md)
    + [Bästa praxis för datafeeds](analytics-data-feed/data-feeds-best-practices.md)
-   + [Felsöka datafeeds](analytics-data-feed/feed-troubleshooting.md)
    + [Felsöka jobb](analytics-data-feed/jobs-troubleshooting.md)
 + Data Warehouse {#data-warehouse}
    + [Översikt över Data Warehouse](data-warehouse/data-warehouse.md)
