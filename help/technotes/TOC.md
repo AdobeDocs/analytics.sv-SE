@@ -5,10 +5,10 @@ user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: En kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
 translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+source-git-commit: 07c76cea1f6fd64957fd4fd20bc5187976f3c14c
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 73%
+source-wordcount: '190'
+ht-degree: 70%
 
 ---
 
@@ -38,7 +38,9 @@ ht-degree: 73%
    + [Jämföra datum med tidigare intervall](event/compare-dates.md)
    + [Härleda data som påverkats av händelser](event/calcmetrics.md)
    + [Kommunicera händelser till användare](event/communicate.md)
-+ [Webbläsarcookies](cookies.md)
++ [Cookies] {#cookies}
+   + [Webbläsarcookies](cookies/cookies.md)
+   + [Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookies/cookieless.md)
 + [Datalagring](data-retention.md)
 + [Uteslut data](exclude-data.md)
 + [IP-adresser och domäner som används av Adobe Analytics](ip-addresses.md)
