@@ -4,14 +4,14 @@ title: Vanliga frågor om Activity Map
 uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
 feature: Activity Map
 role: Business Practitioner, Administrator
+exl-id: 6b2767cb-6c2c-4bf3-b9a9-a23418624650
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: a283ba5d5678498cde9d0065a4f9f6b8a98558dd
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '643'
 ht-degree: 1%
 
 ---
-
 
 # Vanliga frågor om Activity Map
 
@@ -20,6 +20,15 @@ Vanliga frågor och svar om hur du konfigurerar, konfigurerar och använder funk
 ## Har alla Analytics-kunder tillgång till sidan ActivityMap Enablement för Admin Tools?
 
 Organisationer som har ett kontrakt för Adobe Analytics Standard, Premium och Ultimate har tillgång till Activity Map.
+
+## Hur stöder Activity Map enkelsidiga program (SPA)?
+
+Med några sekunders mellanrum skannar Activity Map webbsidan och letar efter ändringar på sidan. ActivityMap hittar nytt innehåll på sidan utan att en ny sidinläsning krävs, men det nya innehållet tilldelas alltid till den första pageName som hittades när sidan lästes in.
+
+* Activity Map kontrollerar om synligheten för länkar som de känner till har ändrats. Om en synlighetsändring hittas uppdateras kolumnen Present (Länkar på sida) för den länken med [!UICONTROL Displayed] eller [!UICONTROL Hidden].
+
+* När användarinteraktion skapar nytt innehåll läggs alla nya element som AppMeasurement finner vara en länk till i tabellen [!UICONTROL Links On Page]. Activity Map skickar en ny databegäran som innehåller de nya länkarna. De nya länkarna ska visas i tabellen [!UICONTROL Links On Page] när databegäran hanteras av användargränssnittet.
+
 
 ## Tillhandahåller Activity Map data om&quot;vyer&quot;?
 
