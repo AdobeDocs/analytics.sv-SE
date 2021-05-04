@@ -3,9 +3,9 @@ title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
 translation-type: tm+mt
-source-git-commit: 60856c2c410d7b45ba54d1ae7bdd659d181965ff
+source-git-commit: 50ffeac17a07478e98e8d83bd3a87db0d9a1145d
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Båda dessa identifierare beräknas av Adobe när rapporten körs, och kallas ä
 
 ## Hur kan jag gå från enhetsgrafen till fältbaserad sammanfogning, eller vice versa?
 
-Om du vill byta CDA-identifieringsmetod ska du prata med din organisations Account Manager. Kontohanteraren kan distribuera din rapportsserie till den metod du vill använda för att identifiera personer. *Historiska sammanfogade data från föregående metod går förlorade.*
+Du kan behöva byta från enhetsdiagram till fältbaserad sammanfogning eller vice versa via kundtjänst. Det kan dock ta några veckor eller mer att slutföra en sådan växling och *historiska sammanfogade data från den föregående metoden går förlorade.*
 
 ## Hur hanterar Adobe unika gränser för en eVar som används vid fältbaserad sammanfogning?
 
