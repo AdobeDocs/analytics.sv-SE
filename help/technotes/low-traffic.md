@@ -1,30 +1,30 @@
 ---
 description: När en rapport har ett stort antal unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten.
 title: Lågtrafikvärde i Adobe Analytics
-feature: Metrics
+feature: Mätvärden
 uuid: 56f723f8-94e8-478f-8ea3-16dad21dfa1f
 exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 482dcc04b7d68c6a555d318d8493c309e5899ae1
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # Lågtrafikvärde i Adobe Analytics
 
-När en rapport har ett stort antal unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten. Unika variabelvärden som samlats in efter cirka 500 000 befintliga värden listas under ett radobjekt med namnet **(Lågtrafik)**.
+När en rapport har många unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten. Unika variabelvärden som samlats in efter cirka 500 000 befintliga värden listas under ett radobjekt med namnet **(Lågtrafik)**.
 
 ## Hur låg trafik fungerar
 
 * Rapporteringen påverkas inte om variabeln inte når 500 000 unika värden under en viss månad.
 * När en variabel når detta första tröskelvärde på 500 000 kommer data att paketeras under låg trafik. Varje värde som ligger utanför detta tröskelvärde följer följande logik:
    * Om ett värde redan finns i rapporter lägger du till det som vanligt.
-   * Om ett värde ännu inte har rapporterats kontrollerar du om värdet har setts mer än ungefär tio gånger idag. Om så är fallet lägger du till det här värdet i rapporteringen. Om den inte har räknats mer än tio gånger, lämna den under lågtrafik.
+   * Om ett värde ännu inte rapporteras beror tröskelvärdena för antal&quot;observerade&quot; på serverdelskonfigurationer. De är inte exakta&quot; 10&quot; - eller&quot; 100&quot; gånger som de ses.
 * Om en rapportserie når över 1 000 000 unika värden tillämpas mer aggressiv filtrering:
    * Om ett värde redan finns i rapporter lägger du till det som vanligt.
-   * Om ett värde ännu inte har rapporterats kontrollerar du om värdet har setts mer än cirka 100 gånger idag. Om så är fallet lägger du till värdet i rapporten. Om det inte gör det, lämna det under lågtrafik.
+   * Om ett värde ännu inte rapporteras beror tröskelvärdena för antal&quot;observerade&quot; på serverdelskonfigurationer. De är inte exakta&quot; 10&quot; - eller&quot; 100&quot; gånger som de ses.
 
 >[!NOTE]
 >
