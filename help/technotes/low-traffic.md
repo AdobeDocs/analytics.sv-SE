@@ -5,30 +5,28 @@ feature: Mätvärden
 uuid: 56f723f8-94e8-478f-8ea3-16dad21dfa1f
 exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
 translation-type: tm+mt
-source-git-commit: 482dcc04b7d68c6a555d318d8493c309e5899ae1
+source-git-commit: 65190776da25437e854e0226cd349e3ba13fc8c9
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
 # Lågtrafikvärde i Adobe Analytics
 
-När en rapport har många unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten. Unika variabelvärden som samlats in efter cirka 500 000 befintliga värden listas under ett radobjekt med namnet **(Lågtrafik)**.
+När en rapport har många unika värden tillhandahåller Adobe funktioner som säkerställer att de viktigaste värdena visas i rapporten. Unika variabelvärden som samlats in efter ungefär 500 000 befintliga värden listas under ett radobjekt med namnet **[!UICONTROL Low-Traffic]**.
 
-## Hur låg trafik fungerar
+## Så här fungerar [!UICONTROL Low-Traffic]
 
 * Rapporteringen påverkas inte om variabeln inte når 500 000 unika värden under en viss månad.
 * När en variabel når detta första tröskelvärde på 500 000 kommer data att paketeras under låg trafik. Varje värde som ligger utanför detta tröskelvärde följer följande logik:
-   * Om ett värde redan finns i rapporter lägger du till det som vanligt.
-   * Om ett värde ännu inte rapporteras beror tröskelvärdena för antal&quot;observerade&quot; på serverdelskonfigurationer. De är inte exakta&quot; 10&quot; - eller&quot; 100&quot; gånger som de ses.
+   * Om ett värde redan visas i rapporter lägger du till det värdet som vanligt.
+   * Om ett värde ännu inte visas i rapporter visas det i [!UICONTROL Low-Traffic]-radobjektet. Om ett värde som har inkluderats i [!UICONTROL Low-Traffic]-radobjektet ses ett betydande antal gånger inom en kort tid, kommer det att börja tolkas som sitt eget radobjekt. Det betydande antal gånger som ett objekt måste ses har många beroenden, till exempel antalet bearbetningsservrar och daemoner som bearbetar data för just den rapportsviten.
 * Om en rapportserie når över 1 000 000 unika värden tillämpas mer aggressiv filtrering:
-   * Om ett värde redan finns i rapporter lägger du till det som vanligt.
-   * Om ett värde ännu inte rapporteras beror tröskelvärdena för antal&quot;observerade&quot; på serverdelskonfigurationer. De är inte exakta&quot; 10&quot; - eller&quot; 100&quot; gånger som de ses.
+   * Om ett värde redan visas i rapporter lägger du till det värdet som vanligt.
+   * Om ett värde ännu inte visas i rapporter visas det i [!UICONTROL Low-Traffic]-radobjektet. Om ett värde som har inkluderats i [!UICONTROL Low-Traffic]-radobjektet ses ett betydande antal gånger inom en kort tid, kommer det att börja tolkas som sitt eget radobjekt. Det betydande antal gånger som ett objekt måste ses har många beroenden, till exempel antalet bearbetningsservrar och daemoner som bearbetar data för just den rapportsviten.
 
->[!NOTE]
->
->Om ett variabelvärde tar emot tillräckligt mycket trafik för att lämna lågtrafikpytsen flyttas inte de första värdena som samlas in till respektive radpost. De första 10-100 instanserna har låg trafik.
+Varför flyttar Adobe ett objekt från radobjektet [!UICONTROL Low Traffic] till ett eget radobjekt? Den här flyttningen kan till exempel identifiera en populär ny sida eller ett nytt objekt som lades till senare under månaden (efter att uniques överskreds) och som får många träffar/vyer. Flyttningen är inte avsedd att fånga allt som får ett visst antal träffar/vyer per dag eller månad.
 
 ## Ändra unika gränströsklar
 
