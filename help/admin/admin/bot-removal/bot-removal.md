@@ -1,12 +1,12 @@
 ---
 title: Borttagning av bot i Adobe Analytics
-description: 3 sätt att ta bort botar i Adobe Analytics
+description: Så här tar du bort objekt i Adobe Analytics
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
 translation-type: tm+mt
-source-git-commit: b78e8303277b08a4c693283e45416f2e104268b7
+source-git-commit: bb8ccbf782a1431e5278a95923a42c9e9e9e862b
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 2%
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Mer information finns i [Översikt över punktregler](/help/admin/admin/bot-remo
 
 ## Använd plugin-programmet [!UICONTROL websiteBot] för att identifiera objekt
 
-Med plugin-programmet websiteBot kan du dynamiskt identifiera om besökarna är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
+Med plugin-programmet [!UICONTROL websiteBot] kan du dynamiskt identifiera om besökarna är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
 
 Denna plug-in utför två kontroller:
 
@@ -38,19 +38,19 @@ Mer information finns i [Adobe Analytics Implementeringshandbok](https://experie
 
 ## Använda en kombination av Adobe-verktyg
 
-Eftersom botar dessutom morfar snabbt erbjuder Adobe flera andra kraftfulla funktioner som, när de kombineras korrekt och regelbundet, kan bidra till att avlägsna dessa fiender för datakvalitet. De här funktionerna är: Experience Cloud ID-tjänst, segmentering, Data warehouse, kundattribut och virtuella rapportsviter. Här får du en översikt över hur du kan utnyttja dessa verktyg.
+Eftersom botar dessutom morfar snabbt erbjuder Adobe flera andra kraftfulla funktioner som, när de kombineras korrekt och regelbundet, kan bidra till att avlägsna dessa fiender för datakvalitet. De här funktionerna är: Experience Cloud ID-tjänst, segmentering, Data warehouse, kundattribut och virtuella rapportsviter. Här är en översikt över hur du kan använda dessa verktyg.
 
 ### Steg 1: Överför besökarnas Experience Cloud-ID till ett nytt deklarerat ID
 
-Börja med att skapa ett nytt deklarerat ID i [People Core Service](https://docs.adobe.com/content/help/sv-SE/core-services/interface/audiences/audience-library.html). Du måste skicka besökarens Experience Cloud-ID till det nya deklarerade ID:t, vilket kan göras snabbt och enkelt med [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html). Låt oss använda namnet &quot;ECID&quot; för det deklarerade ID:t.
+Börja med att skapa ett nytt deklarerat ID i [People Core Service](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html). Skicka besökarens Experience Cloud-ID till detta nya deklarerade ID, som kan göras snabbt och enkelt med [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html). Låt oss använda namnet &quot;ECID&quot; för det deklarerade ID:t.
 
 ![](assets/bot-cust-attr-setup.png)
 
-Så här kan detta ID hämtas via dataelement. Se till att du fyller i ditt Experience Cloud OrgID i dataelementet korrekt.
+Så här kan detta ID hämtas via dataelement. Fyll i ditt Experience Cloud OrgID i dataelementet korrekt.
 
 ```return Visitor.getInstance("REPLACE_WITH_YOUR_ECORG_ID@AdobeOrg").getExperienceCloudVisitorID();```
 
-När dataelementet har konfigurerats följer du [dessa instruktioner](https://docs.adobe.com/content/help/en/launch/using/implement/solutions/idservice-save.html) för att skicka deklarerade ID:n till ECID-verktyget i Launch.
+När dataelementet har konfigurerats följer du [dessa instruktioner](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html) för att skicka deklarerade ID:n till ECID-verktyget i Adobe Launch.
 
 ### Steg 2: Använd segmentering för att identifiera bottnar
 
@@ -60,18 +60,18 @@ Nu när besökarens ECID skickas till ett deklarerat ID kan du använda [segment
 
 ### Steg 3: Exportera alla [!DNL Experience Cloud IDs] från segmentet via Data warehouse
 
-Nu när du har identifierat bottarna med hjälp av segment är nästa steg att dra Data warehouse för att extrahera alla Experience Cloud-ID:n som är kopplade till det här segmentet. Så här bör du konfigurera din [Data warehouse](https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse.html)-begäran:
+Nu när du har identifierat bottarna med hjälp av segment är nästa steg att använda Data warehouse för att extrahera alla Experience Cloud-ID:n som är kopplade till det här segmentet. På den här skärmbilden visas hur du bör konfigurera din [Data warehouse](/help/export/data-warehouse/data-warehouse.md)-begäran:
 
 ![](assets/bot-dwh-3.png)
 
-Kom ihåg att använda Experience Cloud Visitor-ID som dimension och att använda segmentet Bots.
+Kom ihåg att använda Experience Cloud Visitor-ID som dimension och tillämpa segmentet &#39;Bts&#39;.
 
 ### Steg 4: Skicka tillbaka listan till Adobe som kundattribut
 
-När Data warehouse-rapporten kommer har du en lista över ECID:n som måste filtreras från historiska data. Kopiera och klistra in dessa ECID:n i en tom .CSV-fil med bara två kolumner, ECID och Bot Flag.
+När Data warehouse-rapporten kommer har du en lista över ECID som måste filtreras från historiska data. Kopiera och klistra in dessa ECID:n i en tom .CSV-fil med bara två kolumner, ECID och Bot Flag.
 
 * **ECID**: Kontrollera att den här kolumnrubriken matchar namnet som du gav det nya deklarerade ID:t ovan.
-* **Punktflagga**: Lägg till detta som en schemamodell för kundattribut.
+* **Punktflagga**: Lägg till &#39;Bot Flag&#39; som en schemdimension för kundattribut.
 
 Använd den här .CSV-filen som import av kundattribut och prenumerera sedan dina rapportsviter på kundattributet enligt beskrivningen i det här [blogginlägget](https://theblog.adobe.com/link-digital-behavior-customers).
 
@@ -85,12 +85,12 @@ När datauppsättningen har bearbetats och integrerats i Analysis Workspace skap
 
 ### Steg 6: Använd det här segmentet som Virtual Report Suite-filter
 
-Slutligen bör du skapa en [Virtual Report Suite](/help/components/vrs/vrs-about.md) som använder det här segmentet för att filtrera bort de identifierade delarna:
+Skapa slutligen en [Virtual Report Suite](/help/components/vrs/vrs-about.md) som använder det här segmentet för att filtrera bort identifierade objekt:
 
 ![](assets/bot-vrs.png)
 
-Den här nysegmenterade virtuella rapportsviten kommer nu att resultera i en betydligt renare uppsättning data, med de identifierade robotarna helt borttagna.
+Den här nysegmenterade virtuella rapportsviten kommer nu att resultera i en renare uppsättning data med identifierade bottar borttagna.
 
 ### Steg 7: Upprepa steg 2, 3 och 4 regelbundet
 
-Ställ in minst en månatlig påminnelse för att identifiera och filtrera nya robotar, kanske före regelbundna schemalagda analyser.
+Ställ in minst en månatlig påminnelse för att identifiera och filtrera nya robotar, kanske före en vanlig schemalagd analys.
