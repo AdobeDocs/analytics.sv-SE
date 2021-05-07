@@ -5,10 +5,10 @@ user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: En kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
 translation-type: tm+mt
-source-git-commit: ebed6c96d82a5a93e53e015f1e89431d2d8abae4
+source-git-commit: 6588896cd47e15127b1b1d0a2d229e0ed2dbaaaa
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 70%
+source-wordcount: '193'
+ht-degree: 68%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 70%
    + [Jämföra datum med tidigare intervall](event/compare-dates.md)
    + [Härleda data som påverkats av händelser](event/calcmetrics.md)
    + [Kommunicera händelser till användare](event/communicate.md)
+   + [Intelligent datautjämning](event/intelligent-data-smoothing.md)
 + Cookies {#cookies}
    + [Webbläsarcookies](cookies/cookies.md)
    + [Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookies/cookieless.md)
