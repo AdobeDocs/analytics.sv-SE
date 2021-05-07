@@ -2,16 +2,16 @@
 description: Använd bidragsanalys för att identifiera statistiska avvikelser och korrelationer i data.
 title: Översikt över bidragsanalys
 uuid: 2bd295b0-c5ce-4443-86af-024efd20c021
-feature: AI Tools
+feature: AI-verktyg
 role: Business Practitioner, Administrator
+exl-id: 86fc8696-90a8-4626-b1c7-6413d3f8a648
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: 6588896cd47e15127b1b1d0a2d229e0ed2dbaaaa
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 6%
+source-wordcount: '1149'
+ht-degree: 3%
 
 ---
-
 
 # Översikt över bidragsanalys
 
@@ -47,41 +47,14 @@ Antalet körningar per företag begränsas av månatliga tokens som beviljas bas
 
 ## Vanliga frågor {#section_11D0431AD2014B96AB9561CA66A367CE}
 
-<table id="table_357775E5058644099E26B15A6790E8AF"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Fråga </th> 
-   <th colname="col2" class="entry"> Svar </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Varför har Adobe introducerat tokens?  </b> </p> </td> 
-   <td colname="col2"> <p>Contribute Analysis har varit en av de mest intressanta funktionerna i Adobe Analytics. Om du får ett litet antal"fullständiga" körningar per månad (i stället för bara tre dimensioner för vissa Analytics-produkter) kan du bättre se vad en obegränsad, fullständig bidragsanalys kan göra för dig. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Hur fungerar tokenering i bidragsanalys? Kostar det en token att läsa in ett projekt med en befintlig bidragsanalys, eller bara när ett helt nytt projekt körs?</b> </p> </td> 
-   <td colname="col2"> <p>Varje inloggningsföretag (inte varje användare) får ett visst antal tokens per månad, vilket gör att du kan köra en"fullständig" bidragsanalys i Analysis Workspace. </p> <p>Varje gång du genererar en ny bidragsanalys betalar du en token. Att läsa in projekt med bidragsanalyser som körs i förväg kostar ingen token. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Gäller tokens för bidragsanalys i rapporter och analyser?</b> </p> </td> 
-   <td colname="col2"> <p>Nej. Bidragsanalys erbjuds inte längre i rapporter och analyser från och med versionen från april 2018. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Vad kan vi göra om mitt företag har slut på tokens och vill köra ytterligare bidragsanalyser?</b> </p> </td> 
-   <td colname="col2"> <p>Du kan uppgradera till en annan Adobe Analytics-produkt, till exempel från Standard (2 tokens/månad) till Ultimate (20 tokens/månad). Du kan inte köpa fler tokens - du måste uppgradera inom det befintliga paketeringsramverket. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Hur begränsar jag åtkomsten till bidragsanalys?</b> </p> </td> 
-   <td colname="col2"> <p>Som standard har bara administratörer tillgång till att köra Contribute Analyses, men administratörer kan bevilja åtkomst till andra användare genom att skapa en behörighetsgrupp i Admin Console <a href="https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html"  > </a>. Du bör endast ge tillstånd att använda bidragsanalys till användare som har en legitim anledning att använda den och som är betrodda att inte missbruka sin åtkomst. </p> <p>Behörigheten kallas för"bidragsanalys" under <span class="ignoretag"><span class="uicontrol"> Analytics</span> &gt; <span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Användarhantering</span> &gt; <span class="uicontrol"> Redigera grupper</span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst</span> &gt; <span class="uicontrol"> Anpassa rapportverktyg</span> &gt; <span class="uicontrol"> Verktyg och rapporter</span></span>. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Hur vet jag hur många tokens mitt företag har rätt till per månad och hur många vi har använt under den aktuella månaden?</b> </p> </td> 
-   <td colname="col2"> <p>Gå till <span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Företagsinställningar</span> &gt; <span class="uicontrol"> Visa åtkomstnivåer för funktioner</span></span>. Det finns två nya objekt på den här sidan: </p> <p><img placement="break"  src="assets/ca_access_level.png" id="image_16012FE1162C485EA768D175F43D7563" width="500px" /> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
+| Fråga | Svar |
+| --- | --- |
+| Varför har Adobe introducerat tokens? | Contribute Analysis har varit en av de mest intressanta funktionerna i Adobe Analytics. Om du får ett litet antal&quot;fullständiga&quot; körningar per månad (i stället för bara tre dimensioner för vissa Analytics-produkter) kan du bättre se vad en obegränsad, fullständig bidragsanalys kan göra för dig. |
+| Hur fungerar tokenering i bidragsanalys? Kostar det en token att läsa in ett projekt med en befintlig bidragsanalys, eller bara när ett helt nytt projekt körs? | Varje inloggningsföretag (inte varje användare) får ett visst antal tokens per månad, vilket gör att du kan köra en&quot;fullständig&quot; bidragsanalys i Analysis Workspace.  Varje gång du genererar en ny bidragsanalys betalar du en token. Att läsa in projekt med bidragsanalyser som körs i förväg kostar ingen token. |
+| Gäller tokens för bidragsanalys i rapporter och analyser? | Nej. Bidragsanalys erbjuds inte längre i rapporter och analyser från och med april 2018. |
+| Vad kan vi göra om mitt företag har slut på tokens och vill köra ytterligare bidragsanalyser? | Du kan uppgradera till en annan Adobe Analytics-produkt, till exempel från Standard (2 tokens/månad) till Ultimate (20 tokens/månad). Du kan inte köpa fler tokens - du måste uppgradera inom det befintliga paketeringsramverket. |
+| Hur begränsar jag åtkomsten till bidragsanalys? | Som standard har bara administratörer tillgång till att köra Contribute Analyses. Administratörer kan dock ge andra användare åtkomst genom att skapa en behörighetsgrupp i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html). Du bör endast ge tillstånd att använda bidragsanalys till användare som har en legitim anledning att använda den och som är betrodda att inte missbruka sin åtkomst. Behörigheten kallas [!UICONTROL Contribution Analysis] under [!UICONTROL Report Suite Tools]. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/report-suite-tools.html) |
+| Hur vet jag hur många tokens mitt företag har rätt till per månad och hur många vi har använt under den aktuella månaden? | Gå till [!UICONTROL Admin] > [!UICONTROL All Admin] >[!UICONTROL Company Settings Home] >[!UICONTROL View Feature Access Levels]. Titta under<ul><li>Bidragsanalys: Antal token för månatlig användning</li><li>Bidragsanalys: Antal användningstoken som används den här månaden</li></ul> |
 
 ## Anomaldetekterings- och bidragsanalysberättiganden {#section_9278D58F21A840AA9B1ED1BD07A1EF0A}
 
@@ -89,7 +62,7 @@ Nedan finns en lista med detaljerade berättiganden för avvikelseidentifiering 
 
 >[!IMPORTANT]
 >
->Avvikelseidentifiering och bidragsanalys har tagits bort från funktionerna för rapporter och analyser och är nu bara tillgängliga via Analysis Workspace. Tänk på att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till avvikelseidentifiering på dagsnivå i Workspace.
+>Analys av avvikelseidentifiering och bidrag har tagits bort från funktionerna Rapporter och analyser och är nu endast tillgängliga via Analysis Workspace. Tänk på att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till avvikelseidentifiering på dagsnivå i Workspace.
 
 <table id="table_5C9B7E4AE82640B5A913519E576889B5"> 
  <thead> 
