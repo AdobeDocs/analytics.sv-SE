@@ -6,10 +6,10 @@ feature: Activity Map
 role: Business Practitioner, Administrator
 exl-id: 65c9c690-81e0-4f0f-989d-586d247ed380
 translation-type: tm+mt
-source-git-commit: d4296a721e01e37c57a8fb44b67599a3cc9e4758
+source-git-commit: 700d3b21a238af23719b291fe60df207e916bb87
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 3%
+source-wordcount: '584'
+ht-degree: 2%
 
 ---
 
@@ -43,8 +43,8 @@ De här inställningarna gäller för standardlägesövertäckningen.
 
 | Inställning | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Dynamic Data Filtering]** |  |
-| **[!UICONTROL Hide overlays for links that received no hits]**. | Med den här kryssrutan kan du dölja övertäckningar för länkar som inte fått några träffar för att få bättre ordning i gränssnittet. |
+| **[!UICONTROL Dynamic Data Filtering]** | I den här listrutan kan du visa övertäckningar för<ul><li>(standard) Alla länkar på sidan</li><li>Den översta (översta) eller nedersta (nedersta) # rankade länkar på sidan, där # kan vara något av alternativen 1, 10, 50 eller 100.</li></ul> |
+| **[!UICONTROL Hide overlays for links that received no hits]**. | En kryssruta som växlar synligheten för övertäckningar för länkar som inte har några data.<ul><li>(standard) Om kryssrutan är markerad visas ingen övertäckning när en länk inte har några ActivityMap-länkdata.</li><li>Om kryssrutan inte är markerad och en länk inte har några ActivityMap-länkdata, visas en övertäckning med etiketten &quot;-&quot;, vilket betyder N/A (ej tillämpligt). |
 
 ## Live-inställningar {#section_D30F6E62FB5D404090B588F396A460AF}
 
