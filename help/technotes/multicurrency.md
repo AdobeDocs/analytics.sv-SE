@@ -2,14 +2,14 @@
 description: Beskriver hur du definierar målvalutakoder för stöd för flera valutor som ska fungera.
 title: Stöd för flera valutor
 uuid: null
+exl-id: b67f459c-0636-4eac-af52-51846bb583b5
 translation-type: tm+mt
-source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1358'
 ht-degree: 0%
 
 ---
-
 
 # Stöd för flera valutor
 
@@ -429,8 +429,6 @@ s.linkTrackEvents="None"
 ***
     
 ```
-
-Mer information om hur du redigerar filen AppMeasurement.js finns i [Infoga kod i filen AppMeasurement.js](https://docs.adobe.com/content/help/en/analytics/implementation/implement-analytics-with-dtm/analytics-tool/t-appmeasurement-code.html).
 
 ## Ytterligare implementeringsinformation
 
