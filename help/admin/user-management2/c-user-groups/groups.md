@@ -2,13 +2,13 @@
 description: Beskrivningar av element på sidan Definiera användargrupp.
 subtopic: Users and groups
 title: Inställningar för användargrupp
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: b411032a-7d56-44fd-b676-abee4af756f9
 exl-id: f5cb40e6-bfcc-4071-bc6b-f3575f998edc
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '563'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
+>Användar- och produkthanteringen har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
 
 Beskrivningar av element på sidan Definiera användargrupp.
 
@@ -110,14 +110,7 @@ Beskrivningar av element på sidan Definiera användargrupp.
   <tr> 
    <td colname="col1"><b>Alla rapportsviter</b> </td> 
    <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> 
-     <ul id="ul_19FCA8B24B7E4477B9AC9564D6CF2D44"> 
-      <li id="li_F006EF42026F43069AEC0BFE01D7CBC8">TagManager (all åtkomst, anpassa, ingen åtkomst) </li> 
-     </ul> </p> </td> 
-   <td colname="col2"> <p>Behörigheter stöds för kunder som har aktiva <span class="keyword"> TagManager</span>-behållare. Inte tillgängligt för nya användare. </p> <p>Adobe rekommenderar <a href="https://docs.adobe.com/content/help/en/dtm/using/migration/atm-migration.html"> dynamisk tagghantering</a> för distribution. </p> </td> 
-  </tr> 
+  </tr>  
   <tr> 
    <td colname="col1"><b>Tilldela användarinloggningar</b> </td> 
    <td colname="col2"> </td> 
