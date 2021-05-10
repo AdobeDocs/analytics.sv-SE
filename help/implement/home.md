@@ -1,14 +1,14 @@
 ---
 title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
+exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
 translation-type: tm+mt
-source-git-commit: 34ccd89d0ac4223af87b36a48e778fb678d5cd59
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 97%
+source-wordcount: '364'
+ht-degree: 95%
 
 ---
-
 
 # Implementera Adobe Analytics
 
@@ -30,7 +30,7 @@ JavaScript-koden skickar en bildbegäran till Adobes datainsamlingsservrar. Sidd
 Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat program för att kunna skicka data till datainsamlingsservrar. Det finns flera metoder för att implementera den här koden, beroende på plattform och organisationens behov.
 
 * **Adobe Experience Platform Launch:** Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics. Placera en inläsartagg på varje sida och använd Launchs gränssnitt för att bestämma hur varje variabel ska definieras.
-* **Dynamic Tag Management:** Föregångaren till Launch. DTM använder ett liknande gränssnitt för att implementera Analytics, men uppdateras inte längre och är inte lika flexibelt. Adobe rekommenderar att du använder Launch för att implementera Adobe Analytics.
+* **Dynamisk tagghantering**: Dynamic Tag Management har slutat gälla.
 * **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Beskriver variabler och inställningar som används i en implementering, vilket kan vara användbart för Launch-implementeringar som använder regler med anpassad kod.
 * **SDK för mobila enheter:** Dedikerade bibliotek för att enkelt skicka data till Adobe från mobilappen.
 
