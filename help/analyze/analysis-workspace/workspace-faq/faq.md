@@ -1,22 +1,22 @@
 ---
 description: Vanliga frågor om Workspace
 title: Vanliga frågor och felsökningsarbetsyta
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
+exl-id: cf7a9a73-bcbe-4bf5-b5dc-913199ab229c
 translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 44%
+source-wordcount: '521'
+ht-degree: 42%
 
 ---
-
 
 # Frågor och svar
 
 | Fråga | Svar |
 |--- |--- |
-| Vilka är förutsättningarna för att använda Analysis Workspace? | [Skicka data till Adobe Analytics med Adobe Experience Platform Launch](/help/implement/launch/validate-publish-prod.md): Analysis Workspace kräver en fungerande implementering. Kontrollera att er organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som DTM eller äldre manuella implementeringar, kan också fungera. |
+| Vilka är förutsättningarna för att använda Analysis Workspace? | [Skicka data till Adobe Analytics med Adobe Experience Platform Launch](/help/implement/launch/validate-publish-prod.md): Analysis Workspace kräver en fungerande implementering. Kontrollera att er organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som till exempel äldre manuella implementeringar, kan också fungera. |
 | Vilka är kraven för administration och åtkomst för Analysis Workspace? | Se [Administrationskrav](/help/analyze/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
 | Kommer Analysis Workspace att påverka datainsamlingen? | Eftersom Analysis Workspace är ett rapportverktyg påverkar det inte datainsamlingen. Du kan dra komponenter till ett projekt för att se vad som fungerar utan att oroa dig för följderna. Dra olika kombinationer av mått och mätvärden till Workspace-projektet för att se vad som är tillgängligt för dig. Om du av misstag drar en ogiltig komponent till Workspace-projektet eller vill gå bakåt ett steg trycker du på Ctrl+Z (Windows) eller Kommando+Z (Mac) för att ångra den senaste åtgärden. Du kan också börja från början genom att klicka på *[!UICONTROL Project] > [!UICONTROL New]* i den övre vänstra menyn. |
 | Hur många rapportsviter kan visas i ett Analysis Workspace-projekt? | Nu kan du skapa projekt i Analysis Workspace med data från fler [rapportsviter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html). |
