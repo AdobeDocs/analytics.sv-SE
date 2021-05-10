@@ -1,14 +1,14 @@
 ---
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av begreppen samt en specifik dokumentationslänk med mer information om ämnet.
 title: Adobe Analytics – viktiga begrepp
+exl-id: 359c6663-33fd-4491-8ea0-55cd9ae31859
 translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 96%
+source-wordcount: '1834'
+ht-degree: 95%
 
 ---
-
 
 # Adobe Analytics – viktiga begrepp
 
@@ -25,8 +25,7 @@ Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en 
 | Data Warehouse | Obearbetade rådata för lagring och anpassade rapporter som du kan köra genom att filtrera data. Inte på träffnivå. | [Data Warehouse – startsida](/help/export/data-warehouse/data-warehouse.md) |
 | Adobe Mobile Services | Sammanför funktioner för mobil marknadsföring i mobilappar från hela Adobe Experience Cloud så att ni kan förstå och förbättra användarengagemanget i era appar. | [Mobile Services – startsida](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) |
 | Adobe Exchange Data Connectors (tidigare Genesis) | Importera spårningsdata från tredjepartsprogram till Analytics för att ge heltäckande insyn i prestanda på en central plats. Från och med den 1 augusti 2021 avser Adobe att avbryta integreringen av dataanslutningar. | [Data Connectors – startsida](/help/import/data-connectors/data-connectors-eol.md) |
-| Dynamic Tag Management (DTM) | Hjälper er att hantera Analytics-, Target- och andra taggar på alla era webbplatser, oavsett hur många domäner ni har. | [DTM – startsida](/help/implement/other/dtm/dtm-implementation-overview.md) |
-| Adobe Launch | Nästa generation av funktioner för webbplatstaggar och mobil SDK-hantering från Adobe. | [Adobe Launch – startsida](https://docs.adobe.com/content/help/en/launch/using/overview.html) |
+| Adobe Experience Platform Launch | Nästa generation av funktioner för webbplatstaggar och mobil SDK-hantering från Adobe. | [Adobe Experience Platform Launch - startsida](https://experienceleague.adobe.com/docs/launch/using/home.html) |
 
 ## Viktiga termer {#concept_E473ACBB8E4A42B4AC005538AC12F154}
 
@@ -109,7 +108,7 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | Implementeringshandbok | En beskrivning av datainsamlingsvariabler och detaljer om hur ni implementerar datainsamlingskod i JavaScript. | [Implementeringshandbok](/help/implement/home.md) |
 | Appmätning (s_code) | Global variabelhantering. | [AppMeasurement](/help/implement/js/migrate-from-hcode.md) |
 | App-SDK:er | Anpassat paket som innehåller en förifylld version av konfigurationsfilen för appar. | <ul><li>[iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)</li><li>[Android](https://docs.adobe.com/content/help/en/mobile-services/android/getting-started-android/requirements.html)</li></ul> |
-| DTM och Adobe Launch | Se Analytics-verktyg. |  |
+| Adobe Experience Platform Launch | Se Analytics-verktyg. |  |
 | VISTA | Gör att ni kan använda logik på serversidan för att ändra eller segmentera data som samlas in. | [VISTA-regler](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md) |
 | Bearbetningsregler | Förmågan att ange, ändra och kopiera variabler i Analytics-gränssnittet för att ändra data som samlas in. | [Bearbetningsregler](/help/admin/admin/c-processing-rules/processing-rules.md) |
 | Felsökningsalternativ | Det finns flera felsökare och paketutlösare som kan hjälpa dig att validera implementeringen, inklusive Adobe Experience Cloud debugger. | [Adobe Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=sv) |
