@@ -2,13 +2,13 @@
 description: Virtuella rapportsviter och märkning av flera programsviter har olika fördelar. Ta reda på vilket som är bäst för er organisation.
 keywords: Virtual Report Suite, VRS
 title: Virtuella rapportsviter och taggar för flera programsviter
-feature: Report Suite Settings
+feature: Inställningar för Report Suite
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,6 @@ Om du väljer att ta bort sekundära serveranrop till förmån för virtuella ra
    * Använd träffbehållare om du vill att virtuella rapportsviter ska vara mer ömsesidigt uteslutande.
 2. När du har bekräftat att de virtuella rapportsviterna är korrekt konfigurerade tar du bort de sekundära rapportsvitens ID:n från implementeringen. Så här tar du bort sekundära rapportsviter:
    * I Adobe Experience Platform Launch klickar du på x bredvid de rapportsviter som du inte längre vill använda.
-   * Leta reda på egenskaps- och analysverktyget i DTM. I fälten Produktionskonto-ID och ID för mellanlagringskonto tar du bort alla rapport-ID:n som du inte längre vill använda.
    * I äldre JavaScript-implementeringar letar du reda på variabeln `s.account` och tar bort alla rapport-Suite-ID:n som du inte längre vill använda.
    * I samtliga fall lämnar du bara det globala/överordnade rapportsvitens ID för att samla in data för dina webbplatser och appar.
    * Gå till Admin > Rapportsviter och dölj eventuella sekundära rapportsviter som inte längre används.
