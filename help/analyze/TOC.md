@@ -5,10 +5,10 @@ user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
 translation-type: tm+mt
-source-git-commit: 2c55fed7655b4985234b09bfb6884d227bdfb02e
+source-git-commit: 20e57f1bef787329d7b871edd9e337b57feeb4e9
 workflow-type: tm+mt
 source-wordcount: '1012'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
 
@@ -246,7 +246,7 @@ ht-degree: 88%
    + Kom igång {#getting-started}
       + Kom igång för administratörer {#get-started-admins}
          + [Aktivera Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md)
-         + [Exempel på implementeringskod](activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md)
+         + [Implementera Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md)
       + Kom igång för användare {#get-started-users}
          + [Installera webbläsarplugin-program för Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-install.md)
          + [Starta Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md)
