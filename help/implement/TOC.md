@@ -5,10 +5,10 @@ user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
 translation-type: tm+mt
-source-git-commit: 69c1daa9dbf3bbf39072cc7104f2dd32fb95eb79
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 89%
+source-wordcount: '376'
+ht-degree: 86%
 
 ---
 
@@ -158,35 +158,7 @@ ht-degree: 89%
    + [Mappa Launch-dataelement till Analytics-variabler](launch/elements-to-variable.md)
 + Implementera Analytics på andra plattformar {#other}
    + [Implementera Analytics med hårdkodade bildbegäranden](other/hardcoded.md)
-   + Implementera Analytics med DTM {#dtm}
-      + [Översikt över implementering av Dynamic Tag Management](other/dtm/dtm-implementation-overview.md)
-      + [Skapa webbegenskap](other/dtm/t-create-web-property.md)
-      + [Konfigurera värdalternativ](other/dtm/t-configure-hosting.md)
-      + Sidhuvuden och sidfötter {#headers-footers}
-         + [Lägg till sidhuvuds- och sidfotskod](other/dtm/c-headers-footers/t-header-footer-code.md)
-         + [Verifiera sidhuvuds- och sidfotskod](other/dtm/c-headers-footers/t-verify-header-footer.md)
-      + Adobe Analytics-verktyg {#analytics-tool}
-         + [Lägg till Adobe Analytics-verktyg](other/dtm/c-aa-tool/analytics-dtm.md)
-         + [Allmänt](other/dtm/c-aa-tool/general-settings-analytics.md)
-         + [Bibliotekshantering](other/dtm/c-aa-tool/library-management.md)
-         + [Infoga kärnkod för AppMeasurement](other/dtm/c-aa-tool/t-appmeasurement-code.md)
-         + [Globala variabler](other/dtm/c-aa-tool/global-variables.md)
-         + [Sidvisningar och innehåll](other/dtm/c-aa-tool/pageviews-content.md)
-         + [Länkspårning](other/dtm/c-aa-tool/link-tracking.md)
-         + [Referenter och kampanjer](other/dtm/c-aa-tool/referrers-campaigns.md)
-         + [Cookies](other/dtm/c-aa-tool/cookies-analytics.md)
-         + [Anpassa sidkod](other/dtm/c-aa-tool/customize-page-code.md)
-         + [Vanliga frågor om Adobe Analytics-verktyget](other/dtm/c-aa-tool/dtm-faq.md)
-      + [Skapa ett dataelement](other/dtm/t-data-element.md)
-      + [Implementera Adobe Analytics manuellt (äldre)](other/dtm/t-analytics-deploy.md)
-      + Regler {#rules}
-         + [Skapa ny regel](other/dtm/c-rules/t-rules-create.md)
-         + [Skapa villkor för händelsebaserade regler](other/dtm/c-rules/t-rules-event-conditions.md)
-         + [Skapa villkor för sidinläsningsregler](other/dtm/c-rules/t-rules-page-conditions.md)
-         + [Skapa villkor för direktanropsregler](other/dtm/c-rules/t-rules-direct-conditions.md)
-         + [Ställ in åtgärder för villkoret som ska utlösa](other/dtm/c-rules/t-rules-actions.md)
-         + [Testa opublicerade regler för Akamai-värdtjänster](other/dtm/c-rules/t-test-rules-akamai.md)
-         + [Testregler för bibliotekshämtning eller FTP](other/dtm/c-rules/t-test-rules-ftp.md)
+   + [Implementera Analytics med DTM](other/dtm-implementation-overview.md)
    + [Implementera Analytics på Ajax](other/ajax.md)
    + [Implementera Analytics på AMP](other/amp.md)
    + [Implementera Analytics på digitala assistenter](other/digital-assistants.md)
