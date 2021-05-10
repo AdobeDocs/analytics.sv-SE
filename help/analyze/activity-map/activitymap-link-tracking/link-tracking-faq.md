@@ -6,9 +6,9 @@ feature: Activity Map
 role: Business Practitioner, Administrator
 exl-id: b6ccdf91-98ce-413f-842d-c5423598ed49
 translation-type: tm+mt
-source-git-commit: 56d272b72d3274057668d3b45c416cb7487d56a2
+source-git-commit: af3e4fc64085e94ec5616b8b6851a823e4954b36
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '513'
 ht-degree: 1%
 
 ---
@@ -43,10 +43,14 @@ Om en klickningshändelse inträffar för ett element måste elementet genomgå 
 * Är detta en `BUTTON`?
 
 Om svaret är Ja på någon av frågorna ovan behandlas elementet som en länk och spåras.
- 
-Viktigt:  Button-taggar med attributet type=&quot;button&quot; betraktas inte som länkar av AppMeasurement. Ta bort type=&quot;button&quot; i knapptaggarna och lägg till role=&quot;button&quot; eller submit=&quot;button&quot; i stället.
- 
-Viktigt: En ankartagg med en href som börjar med &quot;#&quot; betraktas som en intern målplats med AppMeasurement, inte som en länk (eftersom du inte lämnar sidan). Som standard spårar inte Activity Map dessa interna målplatser. Det spårar bara länkar som navigerar användaren till en ny sida.
+
+>[!IMPORTANT]
+>
+>Button-taggar med attributet type=&quot;button&quot; betraktas inte som länkar av AppMeasurement. Ta bort type=&quot;button&quot; i knapptaggarna och lägg till role=&quot;button&quot; eller submit=&quot;button&quot; i stället.
+
+>[!IMPORTANT]
+>
+>En ankartagg med href som börjar med # betraktas som en intern målplats med AppMeasurement, inte som en länk (eftersom du inte lämnar sidan). Som standard spårar inte Activity Map dessa interna målplatser. Det spårar bara länkar som navigerar användaren till en ny sida.
 
 ## Hur spårar Activity Map andra visuella HTML-element?
 
@@ -55,7 +59,6 @@ a. Via funktionen `s.tl()`.
 Om klickhändelsen inträffade via ett `s.tl()`-anrop får Activity Map även klickhändelsen och avgör om en `linkName`-strängvariabel hittades. Under `s.tl()`-körningen anges detta linkName som Activity Map Link-ID. Det element som klickades på och som härstammar från `s.tl()`-anropet används för att avgöra regionen. Exempel:
 
 ```
-    
 <img onclick="s.tl(true,'o','abc')" src="someimageurl.png"/>
 ```
 
@@ -70,7 +73,9 @@ b. Via variabeln `s_objectID`. Exempel:
     
     &quot;
 
-Viktigt:  Observera att ett avslutande semikolon (;) krävs när du använder `s_objectID` i Activity Map.
+>[!IMPORTANT]
+>
+>Ett avslutande semikolon (;) krävs när du använder `s_objectID` i Activity Map.
 
 ## Kan du ge mig några exempel på länkar som kommer att spåras?
 
