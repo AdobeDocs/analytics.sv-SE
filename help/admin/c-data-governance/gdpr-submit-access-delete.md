@@ -2,19 +2,16 @@
 description: Skicka in förfrågningar om dataåtkomst och radering i Adobe Analytics.
 title: Skicka in begäran om åtkomst och borttagning
 uuid: d006cd5c-e3cd-4385-8683-acaf73cb681b
+exl-id: bb94cedf-ac9b-4d38-9136-bd3da2acf018
 translation-type: tm+mt
-source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 99%
+source-wordcount: '1307'
+ht-degree: 96%
 
 ---
 
-
 # Skicka in begäran om åtkomst och borttagning
-
-
-## Översikt {#section_BD70882995894C1CA19C205C49FEC23C}
 
 Om era kunder (konsumenter/registrerade) vill veta vilka data du har om dem eller om de bestämmer sig för att de ska tas bort från era Analytics-egenskaper, ansvarar du som personuppgiftsansvarig för att svara på dessa begäranden. Den personuppgiftsansvarige avgör hur organisationen ska interagera med de registrerade (t.ex. via en användarportal för registrerade) och hanterar interaktioner med den registrerade. Det är också den personuppgiftsansvariges ansvar att sluta kretsloppet med den registrerade när begäran är slutförd. Med andra ord kommer Adobe Experience Cloud, som personuppgiftsbiträde, inte att acceptera begäranden direkt från registrerade eller returnera data direkt till dem. Adobe kommer i stället att ta emot begäranden från och returnera data till enbart dig som personuppgiftsansvarig.
 
@@ -22,7 +19,7 @@ Du kanske också vill se till att dina mobilappar och webbplatser har relevanta 
 
 ## Hantera konsumentsamtycke {#section_3012015E7E8942519FB9279CF7057EAB}
 
-Som personuppgiftsansvarig ansvarar du för att erhålla uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (inklusive Adobe Analytics-data) och för att [implementera en avanmälningsmekanism](https://docs.adobe.com/content/help/sv-SE/dtm/using/tools/opt-in.html) på din webbplats. På så vis kan era registrerade personer avanmäla sig från framtida datainsamling i Adobe Experience Cloud.
+Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (eventuellt inklusive Adobe Analytics-data) och för att implementera en [avanmälningsmekanism](https://www.adobe.com/privacy/opt-out.html#customeruse) på din webbplats. På så vis kan era registrerade personer avanmäla sig från framtida datainsamling i Adobe Experience Cloud.
 
 ## Validera användare och deras data {#section_AFB2CC225AA94AF6A3CE9F24EF788358}
 
