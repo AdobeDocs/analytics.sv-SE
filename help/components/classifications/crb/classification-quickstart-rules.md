@@ -2,12 +2,12 @@
 description: Klassificeringsreglerna söker regelbundet efter oklassificerade termer. Om en regelmatchning hittas lägger reglerna automatiskt till villkoren i dina klassificeringsdatatabeller. Du kan också använda klassificeringsregler för att skriva över befintliga nycklar.
 subtopic: Classifications
 title: Klassificeringsregler
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
 translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 8deec1546bc0c7ef7419eb733e54c2fffe90e252
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1969'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Klassificeringsreglerna söker regelbundet efter oklassificerade termer. Om en r
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Classification Rule Builder]**
 
-Med regelverktyget kan du skapa en *`classification rule set`*, som är en lista med *`classification rules`*. En regel matchar de kriterier du anger och utför sedan en åtgärd.
+Med regelverktyget kan du skapa en *klassificeringsregeluppsättning*, som är en lista med *klassificeringsregler*. En regel matchar de kriterier du anger och utför sedan en åtgärd.
 
 Klassificeringsreglerna är praktiska för:
 
@@ -266,7 +266,7 @@ I det här resultatet visar `a:b:1313` inte någon matchning.
 | `a{3,}` | 3 eller fler av en |
 | `a{3,6}` | Mellan 3 och 6 i |
 
-En bra resurs för att testa giltigheten för reguljära uttryck är https://rubular.com/.
+En bra resurs för att testa giltigheten för reguljära uttryck är [https://rubular.com/](https://rubular.com/).
 
 ## Om regelprioritet
 
@@ -286,7 +286,7 @@ Här följer ett exempel på en sökordsregel som klassificerar sökningstyper f
 |---|---|---|---|---|
 | 1 | Innehåller | Cowboy | Söktyp | Team |
 | 2 | Innehåller | Fantasy | Söktyp | Fantasy |
-| 3 | Innehåller | Romo | Söktyp | Player |
+| 1 | Innehåller | Romo | Söktyp | Player |
 
 Om en användare söker efter *`Cowboys fantasy Tony Romo`* klassificeras termen *`Player`*, eftersom den matchar den senast givna klassificeringen som visas i kolumnen Ange klassificering.
 
@@ -294,7 +294,7 @@ Anta på samma sätt att du ställer in två regler i en uppsättning för följ
 
 | Regelnummer | Regeltyp | Matcha | Ange klassificering | Till |
 |---|---|---|---|---|
-| 1 | Innehåller | Cowboy | Ort | Dallas |
+| 3 | Innehåller | Cowboy | Ort | Dallas |
 | 2 | Innehåller | Broncos | Ort | Denver |
 
 En användare söker efter *`Cowboys vs. Broncos`*. Om regelbyggaren hittar en konflikt i regelmatchning, gäller klassificeringen för den andra regeln (Denver) den här sökningen.
@@ -326,12 +326,12 @@ Lägg till regler genom att matcha ett villkor med en klassificering och ange å
 
    >[!NOTE]
    >
-   >Rapportsviter visas på den här sidan *`only`* när följande villkor uppfylls:
+   >Rapportsviter visas på den här sidan *endast* när följande villkor uppfylls:
    >
    >* Rapportsviterna har minst en klassificering definierad för den variabeln i [!UICONTROL Admin Tools].
       >
       >   
-      (Se *`Variable`* i [Klassificeringsregeluppsättningar](/help/components/classifications/crb/classification-rule-set.md) för en förklaring av den här förutsättningen.)
+      (Se *Variabel* i [Klassificeringsregeluppsättningar](/help/components/classifications/crb/classification-rule-set.md) för en förklaring av den här förutsättningen.)
       >
       >
    * Du valde rapportsviten på sidan **[!UICONTROL Available Report Suites]**, som visas när du klickar på [Lägg till regeluppsättning](/help/components/classifications/crb/classification-rule-set.md) för att skapa regeluppsättningen.
@@ -407,7 +407,7 @@ Steg som beskriver hur klassificeringsregler valideras och aktiveras.
 
    ![](assets/overwrite_keys.png)
 
-1. (Valfritt) Om du vill skriva över klassificeringar aktiverar du **[!UICONTROL Overwrite classifications for]** *`<selection>`*.
+1. (Valfritt) Om du vill skriva över klassificeringar aktiverar du **[!UICONTROL Overwrite classifications for]** &lt;*markering*>.
 
    Med det här alternativet kan du skriva över befintliga klassificeringar för berörda nycklar.
 
