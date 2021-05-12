@@ -2,14 +2,13 @@
 description: Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment.
 title: Översikt över Virtual Report Suites
 uuid: 51c63c56-dd58-4c23-a997-ea6942480d22
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
+source-git-commit: fb5de8ad4eee3e9017ab547823a7fa9132fa2457
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 2%
 
 ---
-
 
 # Översikt över Virtual Report Suites
 
@@ -45,15 +44,15 @@ Virtuella rapportsviter - hjälp:
 
 Virtuella rapportsviter har följande begränsningar:
 
-* Eventuella begränsningar för segment gäller för virtuella rapportsviter
+* Eventuella begränsningar för segment gäller även för virtuella rapportsviter
 
-   En virtuell rapportsvit är inget annat än ett segment som används i en rapportsvit. Eftersom varje rapportsvit har sin egen data warehouse och sin egen datafeed, ger flera rapportsviter vissa fördelar som segment inte ger.
+   En virtuell rapportsvit är inget annat än ett segment som används i en rapportsvit. Eftersom varje rapportsvit har sin egen Data warehouse och sin egen datafeed, ger flera rapportsviter vissa fördelar som segment inte ger.
 * Realtidsrapport
 * Inställningar och variabelnamn kan inte anpassas på samma sätt i en fullständig rapportserie
 
-## Virtual Report Suites vs. Multisuite Tagging {#section_317E4D21CCD74BC38166D2F57D214F78}
+## Virtual Report Suites vs. Multi-suite Tagging {#section_317E4D21CCD74BC38166D2F57D214F78}
 
-| Funktion | Virtual Report Suite | Märken för flera programsviter |
+| Funktion | Virtual Report Suite | Taggar för flera programsviter |
 |--- |--- |--- |
 | Ger realtidsrapportering eller&quot;aktuella data&quot;-rapportering | Nej | Ja |
 | Fungerar i alla analysverktyg (Analysis Workspace, Report Builder, etc.) | Ja. **Obs!** Du kan redigera och identifiera dem som virtuella rapportsviter endast i Rapporter och analyser. Du kan dock välja dem i listrutorna för rapportsviten i de andra verktygen. | Ja |
@@ -62,7 +61,7 @@ Virtuella rapportsviter har följande begränsningar:
 | Kan läggas till individuellt i behörighetsgrupper | Ja | Ja |
 | Kan använda administratörsfunktioner för att ändra enskilda inställningar för den här rapportsviten (Admin > Rapportsviter) | Nej (inställningarna ärvs från överordnad) | Ja |
 
-## Kombinera Virtual Report Suites och Multisuite Tagging {#section_026FA3FCD7314DD18220E73EC5702AFF}
+## Kombinera virtuella rapportsviter och taggar för flera programsviter {#section_026FA3FCD7314DD18220E73EC5702AFF}
 
 I vissa fall finns det fördelar med att använda både virtuella rapportsviter och taggning för flera programsviter.
 
