@@ -2,13 +2,12 @@
 description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-translation-type: tm+mt
-source-git-commit: 896e5a868f42c3bd76c3a2c3c92e7b9bd54f40ac
+source-git-commit: 9f15dccf3fb994898f51cbccdc5ee37e35870575
 workflow-type: tm+mt
-source-wordcount: '8216'
+source-wordcount: '8213'
 ht-degree: 90%
 
 ---
@@ -24,13 +23,11 @@ Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud 
 | [!UICONTROL Components] > [!UICONTROL User preferences] | 25 mars 2021 | På sidan [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera [!UICONTROL Analysis Workspace]-inställningar och relaterade komponenter för din användare. [!UICONTROL User preferences] gäller för alla nya projekt och paneler. <br>**Obs!** Följande inställningar har flyttats till  [!UICONTROL User preferences] sidan:<ul><li>Rapportinställningar: Tusentalsavgränsare (kallas nu _Nummerformat_)</li><li>Rapportinställningar: CSV-avgränsare</li><li>Arbetsyteprojekt: Hjälp > Aktivera tips</li><li>Arbetsyteprojekt: Panelen Tom _Starta nya projekt med det här panelalternativet_</li></ul> |
 | [!UICONTROL Histogram Smart Bucket Prediction] | 25 mars 2021 | [!UICONTROL Histogram Smart Bucket Prediction] hjälper till med histogram med höga kardinalitetsmått genom att automatiskt identifiera rätt bredd och antal buckar för ert datauppslag. För lågkardinalitetsmått fungerar visualiseringen på samma sätt som tidigare. |
 
-
 ## Februari 2021
 
 | Funktion | Måldatum | Beskrivning |
 | --- | --- | --- |
 | Komponentval | 4 februari 2021 | Den nedrullningsbara eller släppzon-komponent som finns i [!UICONTROL Quick Insights] kommer att läggas till i alla släppzoner i [!UICONTROL Workspace]. Den här förbättringen gör att du kan välja från en nedrullningsbar lista med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
-
 
 ## Januari 2021
 
@@ -391,7 +388,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
-   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, till exempel hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
+   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  >Visualiseringsinställning för ”100 % staplad”</a> </p> </td> 
