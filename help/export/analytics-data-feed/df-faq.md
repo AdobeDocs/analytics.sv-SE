@@ -3,10 +3,9 @@ description: Vanliga frågor och svar om dataflöden
 keywords: Datautmatning;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-translation-type: tm+mt
-source-git-commit: e9969fbcc2adb58fba8d2bd293580181a05d1bac
+source-git-commit: 7312b61b8d73f45afa3eb9aac73cc4d5fd39bc82
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 Vanliga frågor och svar om dataflöden.
 
-## Måste feed-namn vara unika?{#section_EF38BB51A7E240D69DAD4C07A34D9AD5}
+## Måste feed-namnen vara unika?{#section_EF38BB51A7E240D69DAD4C07A34D9AD5}
 
 Namnen på datafeedsfilerna består av rapportsvitens ID och datumet. Alla två flöden som är konfigurerade för samma RSID och datum får samma filnamn. Om dessa flöden levereras till samma plats skriver en fil över den andra. Om du vill förhindra att en fil skrivs över kan du inte skapa en feed som kan skriva över en befintlig feed på samma plats.
 
@@ -70,17 +69,6 @@ För vissa tidszoner ändras tiden två gånger per år på grund av DST-definit
 När man gör STD -> DST-övergångar (&quot;Spring Forward&quot;) får man bara 23 filer. Timmen som hoppas över i DST-övergången utelämnas. Om övergången till exempel sker kl. 2 får de en fil för 1:00 timme och en fil för 3:00 timme. Det finns ingen 2:00-fil eftersom den vid 2:00 STD blir 3:00 DST.
 
 När man gör DST -> STD-övergångar (&quot;Fall Back&quot;) får man 24 filer. Övergångstimmen innehåller emellertid faktiskt två timmars data. Om övergången till exempel sker klockan 2:00 fördröjs filen för 1:00 med en timme, men den innehåller data i två timmar. Den innehåller data från 1:00 DST till 2:00 STD (som skulle ha varit 3:00 DST). Nästa fil börjar klockan 2:00 STD.
-
-## Får jag manifestfiler när inga data samlas in? {#section_72510794694D42A9A75C966B812AEB0F}
-
-Du kan konfigurera en datafeed så att den levererar en manifestfil om inga data samlas in under en viss period. Om du aktiverar det här alternativet får du en manifestfil som ser ut ungefär så här:
-
-```text
-Datafeed-Manifest-Version: 1.0
- Lookup-Files: 0
- Data-Files: 0
- Total-Records: 0
-```
 
 ## Hur hanterar Analytics FTP-överföringsfel? {#section_4BD44E9167F0494FB2B379D2BA132AD8}
 
