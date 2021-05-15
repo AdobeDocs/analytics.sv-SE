@@ -2,10 +2,9 @@
 title: Skapa eller redigera en datafeed
 description: Lär dig hur du skapar eller redigerar en datafeed.
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-translation-type: tm+mt
-source-git-commit: 769f8cf2dc726df5b71b453f5bbcfb9f0e78e6d7
+source-git-commit: 7312b61b8d73f45afa3eb9aac73cc4d5fd39bc82
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -88,6 +87,15 @@ Alla kolumner är tillgängliga, oavsett om de har data. En datafeed måste inne
 * **Ta bort escape-tecken**: När du samlar in data kan vissa tecken (till exempel nya rader) orsaka problem. Markera den här rutan om du vill att dessa tecken ska tas bort från feed-filerna.
 * **Komprimeringsformat**: Den typ av komprimering som används. Gzip skickar filer i `.tar.gz`-format. Zip skickar filer i `.zip`-format.
 * **Pakettyp**: En enda fil skickar  `hit_data.tsv` filen i en enda, potentiellt enorm fil. Flera filer sidnumrerar data i 2 GB-segment (okomprimerade). Om flera filer är markerade och okomprimerade data för rapportfönstret är mindre än 2 GB, skickas en fil. Adobe rekommenderar att du använder flera filer för de flesta dataflöden.
+* **Manifest**: Om Adobe ska leverera en  [manifestfil ](c-df-contents/datafeeds-contents.md#feed-manifest) till målet när inga data samlas in för ett feed-intervall. Om du väljer Manifest File får du en manifestfil som liknar följande när inga data samlas in:
+
+```text
+   Datafeed-Manifest-Version: 1.0
+    Lookup-Files: 0
+    Data-Files: 0
+    Total-Records: 0
+```
+
 * **Kolumnmallar**: När du skapar många dataflöden rekommenderar Adobe att du skapar en kolumnmall. Om du väljer en kolumnmall inkluderas automatiskt de angivna kolumnerna i mallen. Adobe har också flera mallar som standard.
 * **Tillgängliga kolumner**: Alla tillgängliga datakolumner i Adobe Analytics. Klicka på [!UICONTROL Add all] om du vill ta med alla kolumner i en datafeed.
 * **Inkluderade kolumner**: De kolumner som ska inkluderas i en datafeed. Klicka på [!UICONTROL Remove all] om du vill ta bort alla kolumner från en datafeed.
