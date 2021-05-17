@@ -5,9 +5,9 @@ title: Vanliga frågor om VRS
 feature: Rapporter och analysgrunder
 uuid: 91225743-765a-4145-9ce5-4268e80ea7e8
 exl-id: ab961bec-5719-4b90-bc10-c929b63dc923
-source-git-commit: 3f8c9d0309c7d4c023e0c936e0a713b24e1482f6
+source-git-commit: c93cd1b14cd6b8e803c4e06209153c8e69af077a
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,4 @@ Tips och bästa praxis för nya användare av virtuella rapportsviter.
 | Jag kollade&quot;starta nytt besök vid lanseringen&quot;. Varför ser jag besöken fortfarande mycket högre än lanseringarna? | När&quot;starta nytt besök vid start&quot; är markerat gäller timeout-värdet fortfarande. Om en användare använder appen i tio minuter med en paus på en minut mellan varje åtgärd, startar ett nytt besök vid lanseringen, så skapas ytterligare nio besök när besöket tar slut. Om du vill att starter och besök ska hållas så nära som möjligt när du använder alternativet&quot;Starta nytt besök vid start&quot; bör du använda en tidsgräns som är längre än den tidsgräns för sessioner som angetts i SDK. |
 | Jag ställer in&quot;starta nytt besök vid start&quot; och ställer in en längre tidsgräns än min SDK. Varför är mina starter fortfarande mycket lägre än besök? | Om tidsgränsen är högre än det värde som angetts i SDK är det mycket troligt att din app skickar in träffar i bakgrunden och dessa träffar registreras som nya besök. Kontrollera detta genom att använda träfftypsdimensionen i den överordnade rapportsviten för att se om det finns några bakgrundstötningar.<br>**Obs**: Hår för bakgrund och förgrund skiljer sig endast åt i version 4.13.6 och senare av SDK. Om du använder en lägre version visas alla träffar som förgrund. Om du har rätt version av SDK bör du aktivera inställningen &quot;Förhindra bakgrundstötningar från att starta ett nytt besök&quot;.    Obs! Om du har inaktiverat tidigare bearbetning för bakgrundstötlar i Admin Console visas de inte i den överordnade rapportsviten utan visas i den virtuella rapportsviten. |
 | Vilken version av SDK behöver jag för att spåra bakgrundstötar? | Du måste ha version 4.13.6 eller senare av SDK. |
-| Hur hittar jag ett ID för en Virtual Report Suite? | I [API:t för Virtual Report Suite](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/vrs.md). |
+| Hur hittar jag ett ID för en Virtual Report Suite? | <ul><li>Genom att öppna ett Workspace-projekt klickar du på Report Suite-väljaren och söker efter namnet på en Virtual Report Suite i sökrutan. ID:t visas under namnet i sökresultatet:<br>![](assets/vrs-id.png)</li><li> Eller via programmering i API:t [Virtual Report Suite](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/vrs.md).</li></ul> |
