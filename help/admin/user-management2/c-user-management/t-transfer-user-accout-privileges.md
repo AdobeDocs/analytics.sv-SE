@@ -2,11 +2,10 @@
 description: Steg som beskriver hur du tilldelar användarkontoobjekt (kontrollpaneler, beräknade värden, kalenderhändelser, varningar, bokmärken, segment, Analysis Workspace-projekt och schemalagda projekt) från ett användarkonto till ett annat användarkonto.
 subtopic: Users and groups
 title: Överför objekt på användarkonto
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: b083c622-1397-45ab-8796-f7cdc7043ec6
 exl-id: 13e2e412-14ea-4a9a-8f68-c914125d551e
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 8%
@@ -17,11 +16,11 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** att tas bort.
 
 Steg som beskriver hur du tilldelar användarkontoobjekt (kontrollpaneler, beräknade värden, kalenderhändelser, varningar, bokmärken, segment, Analysis Workspace-projekt och schemalagda projekt) från ett användarkonto till ett annat användarkonto.
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]**.
 1. Klicka på **[!UICONTROL Edit Users]**.
 1. Hitta användaren som du vill överföra resurser från och markera kryssrutan bredvid den här användarens rad.
 1. Välj **[!UICONTROL Transfer Assets]** i åtgärdsfältet högst upp.
