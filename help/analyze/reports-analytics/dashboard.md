@@ -4,14 +4,13 @@ subtopic: Dashboards
 title: Kontrollpaneler och minirapporter
 uuid: 7a7b3bc9-0a3c-49b0-9168-e2878ae67b97
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 399765a3-0f90-46b9-b62e-9f41d98eaa9a
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
-
 
 # Kontrollpaneler och minirapporter
 
@@ -43,11 +42,11 @@ Tänk på att vissa rapporter som visas ofta inte kan visas i kontrollpaneler. B
 
 Förutom de instrumentpaneler du skapar finns följande färdigpaketerade instrumentpaneler för varje användare:
 
-**[!UICONTROL Components]> [!UICONTROL Dashboards] > [!UICONTROL Shared Dashboards] >[!UICONTROL Local Sites]**
+**[!UICONTROL Components]>  [!UICONTROL All components] >  [!UICONTROL Dashboards] >  [!UICONTROL Shared Dashboards] >[!UICONTROL Local Sites]**
 
 Med den här anpassningsbara kontrollpanelen kan du släppa rapporter i mallen som visas.
 
-**[!UICONTROL Components]>  [!UICONTROL Dashboards] >  [!UICONTROL Shared Dashboards] >[!UICONTROL Site Operations Dashboard]**
+**[!UICONTROL Components]>  [!UICONTROL All components] >  [!UICONTROL Dashboards] >  [!UICONTROL Shared Dashboards] >[!UICONTROL Site Operations Dashboard]**
 
 Den här instrumentpanelen ger dig en översikt över viktiga mätvärden för webbplatsåtgärder. Rapporterna på den här instrumentpanelen innehåller:
 
@@ -119,7 +118,7 @@ t_dashboard_add_report.xml
 
    Rapportleten läggs till på menyn **[!UICONTROL Dashboard Contents]** i instrumentpanelsredigeraren.
 
-## Lägg till innehåll på en kontrollpanel {#task_90D7FAC1CC3E4DB786B4C87CC33B5459}
+## Lägga till innehåll på en kontrollpanel {#task_90D7FAC1CC3E4DB786B4C87CC33B5459}
 
 Steg som beskriver hur du lägger till innehåll från andra instrumentpaneler och delade instrumentpaneler. Du kan också lägga till innehåll från anpassade och externa källor, som text och bilder.
 
@@ -188,7 +187,7 @@ t_dashboard_edit.xml
 
 **Så här redigerar du kontrollpanels- och rapportletsdata**
 
-1. Klicka på **[!UICONTROL Components]** > **[!UICONTROL Dashboards]** > *instrumentpanelsnamn* för att öppna en instrumentpanel.
+1. Klicka på **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Dashboards]** > *instrumentpanelsnamn* för att öppna en instrumentpanel.
 1. Klicka på **[!UICONTROL Layout]**.
 
 | Till | Gör detta |
@@ -206,7 +205,7 @@ t_dashboard_edit.xml
 | Skriva ut en instrumentpanel | Klicka på [!UICONTROL More] > Skriv ut på en kontrollpanel. |
 | Spara en kontrollpanel | Klicka på Spara som på en kontrollpanel och ange ett namn. |
 
-## Sammärka en instrumentpanel {#task_603BDE7700B945699AF5514C2DEB81F7}
+## Sammärka en kontrollpanel {#task_603BDE7700B945699AF5514C2DEB81F7}
 
 Steg som beskriver hur du överför en bild som ska visas på en kontrollpanel.
 
@@ -216,14 +215,14 @@ t_dashboard_branding.xml
 
  -->
 
-1. **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]**.
+1. **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]**.
 1. Klicka på **[!UICONTROL Co-Brand the Adobe Experience Cloud]** på sidan [!UICONTROL Company Settings].
 1. Klicka på **[!UICONTROL Enable Co-Branding]**.
 1. Bläddra för att överföra bilden och klicka sedan på **[!UICONTROL Save.]**
 
    För bästa resultat när du visar bilden i en webbläsare ska du överföra en bild på 100 x 30 px. För bästa resultat i PDF-format överför du en bild på 417px x 125px (300 dpi). Stora bilder krymps till sin storlek samtidigt som proportionerna bevaras.
 
-## Använd segment med instrumentpaneler {#concept_ED030C3713D54D03971FB7B209285750}
+## Använd segment med kontrollpaneler {#concept_ED030C3713D54D03971FB7B209285750}
 
 Kontrollpaneler kan, precis som de flesta rapporter i Adobe Analytics, använda segment för att hämta önskade data.
 
