@@ -2,11 +2,10 @@
 description: Upptäck allt du kan göra med Advertising Analytics i den här detaljerade guiden, inklusive behörigheter som krävs och tillgängliga mått och mätvärden.
 title: A Guide to Advertising Analytics
 exl-id: bc18b74a-0317-4871-b2e0-ec0977ef1731
-translation-type: tm+mt
-source-git-commit: 797dd2c700cd6e11db91e3b5e6bf4b7bfbefdabe
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 93%
+source-wordcount: '1257'
+ht-degree: 91%
 
 ---
 
@@ -57,13 +56,13 @@ Analyserna har två behörigheter som automatiskt tilldelas Analytics-administra
   <tr> 
    <td colname="col1"> <p>Hantering av Advertising Analytics </p> </td> 
    <td colname="col2"> <p>Tillåter användare att konfigurera/redigera/visa annonssökkonton. </p> </td> 
-   <td colname="col3"><span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> User Management</span> &gt; <span class="uicontrol"> Groups</span> &gt; <span class="uicontrol"> Edit All Report Access</span> &gt; <span class="uicontrol"> Customize Analytics Tools</span> &gt; <span class="uicontrol"> Advertising Analytics Management</span></span> </td> 
+   <td colname="col3"><span class="ignoretag"><span class="uicontrol"> Admin</span> &gt;  <span class="uicontrol"> All admin  </span>  &gt;  <span class="uicontrol"> Användarhantering</span>  &gt;  <span class="uicontrol"> Grupper</span>  &gt;  <span class="uicontrol"> Redigera åtkomst</span>  till <span class="uicontrol">  alla rapporter &gt; </span>   <span class="uicontrol"> Anpassa analysverktyg¥&gt;¥Advertising Analytics Management</span></span> </td> 
    <td colname="col4"><span class="ignoretag"><span class="uicontrol"> Logga in på adminconsole.adobe.com</span> &gt; <span class="uicontrol"> Products</span> &gt; <span class="uicontrol"> Product Profile</span> &gt; <span class="uicontrol"> fliken Permissions</span> &gt; <span class="uicontrol"> Analytics Tools</span> &gt; <span class="uicontrol"> Advertising Analytics Management</span></span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konfiguration av Advertising Analytics </p> </td> 
    <td colname="col2"> <p>Användaren kan konfigurera rapportsviter som ska etableras för Advertising Analytics. </p> </td> 
-   <td colname="col3"><span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> User Management</span> &gt; <span class="uicontrol"> Groups</span> &gt; <span class="uicontrol"> Edit All Report Access</span> &gt; <span class="uicontrol"> Customize Report Suite Tools</span> &gt; <span class="uicontrol"> Advertising Analytics Configuration</span></span> </td> 
+   <td colname="col3"><span class="ignoretag"><span class="uicontrol"> Admin</span> &gt;  <span class="uicontrol"> All admin  </span>  &gt;  <span class="uicontrol"> Användarhantering</span>  &gt;  <span class="uicontrol"> Grupper</span>  &gt;  <span class="uicontrol"> Redigera åtkomst</span>  till <span class="uicontrol">  alla rapporter &gt; </span>   <span class="uicontrol"> Anpassa Report Suite-verktygen &gt;Konfiguration av Advertising Analytics</span></span> </td> 
    <td colname="col4"><span class="ignoretag"><span class="uicontrol"> Logga in på adminconsole.adobe.com</span> &gt; <span class="uicontrol"> Products</span> &gt; <span class="uicontrol"> Product Profile</span> &gt; <span class="uicontrol"> fliken Permissions</span> &gt; <span class="uicontrol"> Report Suite Tools</span> &gt; <span class="uicontrol"> Advertising Analytics Configuration</span></span> </td> 
   </tr> 
  </tbody> 
