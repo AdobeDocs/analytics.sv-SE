@@ -2,11 +2,10 @@
 description: Gör att du kan dölja rapportsviter i Adobe Analytics användargränssnitt.
 keywords: ta bort rapportserie
 title: Dölj rapportsviter
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 3e857ba7-d48e-44d5-ad60-f3349e203e10
 exl-id: f7809247-dc34-4ab4-94ce-424051d90a2a
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 4%
@@ -25,7 +24,7 @@ Om du döljer en rapportserie kan den inte visas i den nedrullningsbara menyn f�
 >
 >Data som skickas till en dold rapportserie från din webbplats fortsätter att samlas in, bearbetas och faktureras. Med andra ord tas en rapportsvit aldrig bort helt.
 
-Om du vill dölja rapportsviten går du till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Hide Report Suites]**. Markera kryssrutan **[!UICONTROL Hidden]** till vänster om rapportsvitens namn.
+Om du vill dölja rapportsviten går du till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Hide Report Suites]**. Markera kryssrutan **[!UICONTROL Hidden]** till vänster om rapportsvitens namn.
 
 Om du vill visa rapportsviten avmarkerar du kryssrutan **[!UICONTROL Hidden]**.
 
