@@ -3,11 +3,10 @@ description: Information om schemaläggning, hämtning och distribution av rappo
 subtopic: Schedule
 title: Rapportschema och distribution
 uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
-feature: Reports & Analytics Basics,Reports and analytics
+feature: Rapporter och analyser - Grunderna, rapporter och analyser
 role: Business Practitioner, Administrator
 exl-id: ec59d365-f294-41da-ae36-3b4ebe64ab23
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 1%
@@ -74,7 +73,7 @@ Steg som beskriver hur du laddar ned och skickar rapporter via e-post i en mäng
 | Leveransfrekvens | <ul><li>**Timme**: Levererar e-postmeddelandet varje timme, varannan timme eller något annat timintervall.</li><li>**Dagligen**: Skickar e-postmeddelandet varje dag, varannan dag, var tredje dag eller något annat intervall av dagar. Du kan också få det skickat varje veckodag.</li><li>**Varje vecka**: Skickar e-postmeddelandet varje vecka, varannan vecka, var tredje vecka eller något annat veckointervall. Du kan också ange vilken veckodag den skickas.</li><li>**Varje månad**: Anger intervallet i antal månader, och du kan också välja dagen i den månad då det skickas, eller veckodagen i en viss vecka i månaden.</li><li>**Årsvis**: Anger dagen på året då rapporten skickas eller så kan du skicka den en viss dag i veckan i vilken vecka som helst på året.</li><li>**Tid på dagen**: Gäller den tidszon som är kopplad till den valda rapportsviten.</li></ul> |
 | Alternativ för slutleverans | <ul><li>**Aldrig slut**: Anger inget slut.</li><li>**Sluta efter  `value` förekomster**: Anger antalet förekomster innan leveransen avslutas.</li><li>**Sluta den**: Här kan du ange ett specifikt datum. Om du vill bearbeta data på samma datum som rapportdata, innehåller rapporten bara data som har placerats i databasen när rapporten skickas. Eftersom en fullständig behandling för en dag kan ta upp till 24 timmar, kanske fullständiga data inte är tillgängliga när rapporten skickas. För fullständiga data ska du alltid ange bearbetningstiden i 24 timmar efter rapportperiodens slut.</li></ul> |
 
-## Skriv ut en rapport {#task_0F7CF6D6ED54462CAE4A793E271AF7E5}
+## Skriva ut en rapport {#task_0F7CF6D6ED54462CAE4A793E271AF7E5}
 
 Steg som beskriver hur du skriver ut en rapport.
 
@@ -109,7 +108,7 @@ I [!UICONTROL Schedule Reports Manager] kan du redigera och ta bort återkommand
 
 [!UICONTROL Schedule Report Manager] visar de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser.
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Scheduled Reports]** för att komma åt hanteraren.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Scheduled reports]** för att komma åt hanteraren.
 
 ## Dela en rapportlänk {#task_9711DDE9E140451B8C914EC5513E21EC}
 
