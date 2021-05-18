@@ -5,8 +5,7 @@ title: Data Sources Manager
 topic-fix: Developer and implementation
 uuid: ccfa4a1c-7c56-421b-8ee6-a42b334659b1
 exl-id: a63137b8-deeb-4865-9be9-322416b00186
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -17,7 +16,7 @@ ht-degree: 1%
 
 Skapa, hantera och visa användningen av datakällor i en rapportserie.
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Data Sources]**.
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data sources]**.
 
 ## Skapa flik {#section_74603FDA3D8842E49F1A51624A06DE20}
 
@@ -25,7 +24,7 @@ På fliken [!UICONTROL Create] kan du konfigurera en ny datakälla för den aktu
 
 Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas. Se [Generera en importfilsmall](/help/import/c-data-sources/datasrc-template/t-datasrc-creating-data-sources-file.md).
 
-## Hantera flik {#section_DD559A6701CA45F1A85E56F840F48DBE}
+## Fliken Hantera {#section_DD559A6701CA45F1A85E56F840F48DBE}
 
 <table id="table_F74696EC855441328CFE0BF49C20D9B0"> 
  <thead> 
