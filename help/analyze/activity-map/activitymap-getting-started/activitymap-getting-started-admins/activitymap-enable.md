@@ -4,14 +4,13 @@ title: Aktivera Activity Map
 uuid: 30433319-d0e6-4977-951a-4492b356e1f2
 feature: Activity Map
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '371'
 ht-degree: 7%
 
 ---
-
 
 # Aktivera Activity Map{#enable-activity-map}
 
@@ -23,7 +22,7 @@ Modulen Activity Map är en del av filen AppMeasurement.js (som finns högst upp
 
 Data från Activity Map kan inte samlas in om du inte uppdaterar till den här versionen (eller senare) av AppMeasurement.
 
-1. Hämta den senaste AppMeasurement-koden (AppMeasurement_Javascript-1.6.zip) genom att gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]** och [implementera den](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html).
+1. Hämta den senaste AppMeasurement-koden (AppMeasurement_Javascript-1.6.zip) genom att gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** och [implementera den](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html).
 
    Vi har inkluderat [exempelkod](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md) för att hjälpa dig visualisera ändringarna som har gjorts i koden genom att inkludera modulen Activity Map.
 
@@ -49,7 +48,7 @@ Först måste du aktivera Activity Map-rapporter på rapportsvitnivå.
 
 1. Efter ungefär en timme kontrollerar du [Activity Map-sidrapporten](/help/analyze/activity-map/activitymap-reporting-analytics.md), som visar alla sidor där användare klickade på en länk.
 
-## Steg 3. Lägg till användare i åtkomstgruppen för Activity Map {#section_4C7A47BB7DEF4AFFBC276392467F9675}
+## Steg 3. Lägg till användare i åtkomstgruppen Activity Map {#section_4C7A47BB7DEF4AFFBC276392467F9675}
 
 1. Klicka på **[!UICONTROL Add Users to Group]**.
 
