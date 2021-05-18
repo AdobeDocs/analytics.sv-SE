@@ -2,14 +2,13 @@
 description: Översikt över Adobe Analytics serversamtalsfunktion.
 title: Översikt över användning av serversamtal
 uuid: 6e014364-efc1-4769-a0b5-cf105c0ed9b1
-translation-type: tm+mt
-source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+exl-id: d3d64f1e-f01b-4b9e-9aee-c14e574fc40b
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1029'
 ht-degree: 1%
 
 ---
-
 
 # Översikt över användning av serversamtal
 
@@ -103,7 +102,7 @@ Behörighet för användning av serversamtal beviljas automatiskt till Analytics
    <td colname="col3"> 
     <ol id="ol_13A984328D264488B7045DC7521A5F55"> 
      <li id="li_ACDA518C7D184084AC1DFA7B38C67314">Logga in på Analytics via sc.omniture.com. </li> 
-     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"> <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Användarhantering </span> &gt; <span class="uicontrol"> Grupper </span> &gt; Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> Analysverktyg </span> &gt; <span class="uicontrol"> Anpassa </span> &gt; &lt;a Användning av serversamtal </span> </span><span class="uicontrol"><span class="uicontrol"> </span></span></li> 
+     <li id="li_066D90AB071941C3869EDAFCE981707A">Navigera till <span class="ignoretag"> <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Alla administratörer </span> &gt; <span class="uicontrol"> Användarhantering </span> &gt; <span class="uicontrol"> Grupper </span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> Analysverktyg </span> &gt; &lt;a 13/&gt; Anpassa </span> &gt; <span class="uicontrol"> Användning av serversamtal </span> </span><span class="uicontrol"> </span></li> 
     </ol> </td> 
    <td colname="col4"> 
     <ol id="ol_518673ED323A4C5993A3B9F4BA09E405"> 
@@ -114,4 +113,3 @@ Behörighet för användning av serversamtal beviljas automatiskt till Analytics
   </tr> 
  </tbody> 
 </table>
-
