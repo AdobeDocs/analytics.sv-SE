@@ -2,11 +2,10 @@
 description: Steg som beskriver hur du lägger till en användargrupp.
 subtopic: Users and groups
 title: Lägg till en användargrupp
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 01b662df-040d-48e6-a5c1-6ce65341bf79
 exl-id: a954c88a-7e68-4a2a-a231-c957257ae433
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 9%
@@ -17,11 +16,11 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** att tas bort.
 
 Steg som beskriver hur du lägger till en användargrupp.
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]**.
 1. Klicka på **[!UICONTROL Add New User Group]** och fyll sedan i fälten och alternativen som beskrivs i [Definiera användargrupper](/help/admin/user-management2/c-user-groups/groups.md).
 
    Snabblänkar:
