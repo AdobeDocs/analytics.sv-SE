@@ -1,14 +1,13 @@
 ---
 title: Frågeparametrar för datainsamling
 description: Visar alla frågesträngsparametrar som används i bildbegäranden.
-translation-type: tm+mt
-source-git-commit: 423e9b753a3b7b1e0a8e8b9748f9694d718abd18
+exl-id: 2eb2ade7-a3db-4b00-8a70-2632d1c0aaaf
+source-git-commit: 7025d132da9d281da6d57973a195a5e86a39bf18
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '688'
 ht-degree: 5%
 
 ---
-
 
 # Frågeparametrar för datainsamling
 
@@ -46,6 +45,7 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `j` | Ingen | JavaScript-versionen som är installerad i webbläsaren. |
 | `k` | Ingen | Används i [Cookie-stödet](/help/components/dimensions/cookie-support.md)-dimensionen. |
 | `l1` -  `l3` | [`list1` -  `list3`](../vars/page-vars/list.md) | Listvariabler. |
+| `lrt` | Ingen | Tidsåtgången för senaste begäran, som är tidsåtgången vid växling till och från den senaste begäran, i millisekunder. Det skickas bara när mer än en begäran går ut från en sida eller när sidan är ett ensidigt program (SPA). |
 | `mid` | Ingen | Experience Cloud besökar-ID. |
 | `ndh` | Ingen | En flagga som anger om bildbegäran härstammar från AppMeasurement. |
 | `ns` | [`visitorNameSpace`](../vars/config-vars/visitornamespace.md) | Hjälper till att avgöra var cookies är inställda. |
