@@ -3,11 +3,10 @@ description: Aktivera användarbehörigheter för allmänna objekt (fakturering,
 keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Anpassa behörigheter för Analytics-verktyg
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 8e86bc17-46d3-4c5e-ac25-9f3bfc29b8fa
 exl-id: fe3a9f65-f121-438f-91d0-45cfaea94416
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 9%
@@ -18,7 +17,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL User Management]** att tas bort.
+>Användar- och produkthanteringen har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** att tas bort.
 
 Aktivera användarbehörigheter för allmänna objekt (fakturering, loggar osv.), företagshantering, verktyg, webbtjänståtkomst, Report Builder och integrering med Data Connectors.
 
