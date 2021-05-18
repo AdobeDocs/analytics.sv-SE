@@ -2,10 +2,9 @@
 title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '592'
 ht-degree: 3%
 
 ---
@@ -17,22 +16,22 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Behörighetsobjekt för analysverktyg | Beskrivning |
 |----|----|
 | Användning av serversamtal | Ger åtkomst till Admin > Serversamtalsanvändning. |
-| Kodhanteraren | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Code Manager. I de flesta fall bör du använda de bibliotek som finns i Adobe Experience Platform Launch i stället. |
+| Kodhanteraren | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall bör du använda de bibliotek som finns i Adobe Experience Platform Launch i stället. |
 | Kodhanteraren - webbtjänster | Ger åtkomst till Code Manager via 1.4-API:t. |
-| Loggar | Ger åtkomst till Admin > Logs. |
+| Loggar | Ger åtkomst till Admin > Alla administratörer > Loggar. |
 | Loggar - webbtjänster | Ger åtkomst till pull-loggar via 1.4-API:t. |
-| Trafikhantering | Ger åtkomst till Admin > Traffic Management. |
-| Behörighetshantering | Används inte längre. Ger åtkomst till det äldre användarhanteringsgränssnittet under Admin > Användarhantering. |
+| Trafikhantering | Ger åtkomst till Admin > All admin > Traffic Management. |
+| Behörighetshantering | Används inte längre. Ger åtkomst till det äldre användarhanteringsgränssnittet under Admin > Alla administratörer > Användarhantering. |
 | Behörigheter (läs) - webbtjänster | Används inte längre. Låter användaren visa äldre Analytics-behörigheter med Admin API. Använd Adobe Admin Console istället. |
 | Behörigheter (skrivbehörighet) - webbtjänster | Används inte längre. Låter användaren redigera äldre analysbehörigheter med hjälp av Admin API. Använd Adobe Admin Console istället. |
-| Säkerhet | Ger åtkomst till Admin > Företagsinställningar > Säkerhetshanteraren. |
-| Support | Ger åtkomst till Admin > Företagsinställningar > Supportinformation. |
-| Webbtjänster | Ger åtkomst till Admin > Företagsinställningar > Webbtjänster. |
+| Säkerhet | Ger åtkomst till Admin > All admin > Company settings > Security Manager. |
+| Support | Ger åtkomst till Admin > All admin > Company settings > Support Information. |
+| Webbtjänster | Ger åtkomst till Admin > All admin > Company settings > Web Services. |
 | Enkel inloggning | Används inte längre. Ger åtkomst till den inaktuella Single Sign-On-tjänsten. |
-| Väntande åtgärder | Ger åtkomst till Admin > Företagsinställningar > Väntande åtgärder. |
-| Samprofilering | Används inte längre. Ger åtkomst till Admin > Företagsinställningar > Sammärkning. |
+| Väntande åtgärder | Ger åtkomst till Admin > Alla administratörer > Företagsinställningar > Väntande åtgärder. |
+| Samprofilering | Används inte längre. Ger åtkomst till Admin > All admin > Company settings > Co-Branding. |
 | Inställningar | Används inte. |
-| Dölj rapportsviter | Ger åtkomst till Admin > Företagsinställningar > Dölj rapportsviter. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
+| Dölj rapportsviter | Ger åtkomst till Admin > All admin > Company settings > Hide Report Suites. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
 | Excel-licensanvändare | Används inte. |
 | Activity Map | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
 | Aktuella data | Aktiverar alternativet att visa aktuella data i rapporter och analysrapporter. |
@@ -48,6 +47,6 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Skapa segment | Ger möjlighet att skapa och dela segment över alla Analytics-funktioner. |
 | Hantering av Advertising Analytics | Används inte. |
 | Segmentpublicering | Ger möjlighet att göra ett segment till en Experience Cloud-målgrupp när du skapar eller redigerar ett segment. |
-| Integreringar (skapa) | Ger åtkomst till Admin > Data Connectors och låter användaren skapa dataanslutningar. |
-| Integreringar (uppdatering) | Ger åtkomst till Admin > Data Connectors och låter användaren ändra befintliga kopplingskonfigurationer. |
-| Integreringar (ta bort) | Ger åtkomst till Admin > Data Connectors och tillåter användaren att ta bort dataanslutningar. |
+| Integreringar (skapa) | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren skapa dataanslutningar. |
+| Integreringar (uppdatering) | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren ändra befintliga kopplingskonfigurationer. |
+| Integreringar (ta bort) | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren ta bort dataanslutningar. |
