@@ -3,10 +3,9 @@ description: Innehåll för äldre behörigheter
 keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Behörighetsändringar för användare och grupper
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 94f2727b-17e4-4003-a222-35c821d6959e
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 3%
@@ -18,7 +17,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Användar- och produkthantering har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
+>Användar- och produkthantering har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** att tas bort.
 
 ## Vad har ändrats? {#section_2C205DE94155441B9E9D3E4C46CCF2EE}
 
