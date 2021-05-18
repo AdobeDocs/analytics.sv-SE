@@ -5,8 +5,7 @@ uuid: 2bd295b0-c5ce-4443-86af-024efd20c021
 feature: AI-verktyg
 role: Business Practitioner, Administrator
 exl-id: 86fc8696-90a8-4626-b1c7-6413d3f8a648
-translation-type: tm+mt
-source-git-commit: 6588896cd47e15127b1b1d0a2d229e0ed2dbaaaa
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '1149'
 ht-degree: 3%
@@ -45,7 +44,7 @@ Alla kunder med ett Contribute Analysis-berättigande kan köra en fullständig 
 
 Antalet körningar per företag begränsas av månatliga tokens som beviljas baserat på den Adobe Analytics-produkt som ditt företag har köpt. Detta inkluderar möjligheten att begränsa åtkomst till bidragsanalys för att undvika tokenmissbruk.
 
-## Vanliga frågor {#section_11D0431AD2014B96AB9561CA66A367CE}
+## Frågor och svar {#section_11D0431AD2014B96AB9561CA66A367CE}
 
 | Fråga | Svar |
 | --- | --- |
@@ -54,7 +53,7 @@ Antalet körningar per företag begränsas av månatliga tokens som beviljas bas
 | Gäller tokens för bidragsanalys i rapporter och analyser? | Nej. Bidragsanalys erbjuds inte längre i rapporter och analyser från och med april 2018. |
 | Vad kan vi göra om mitt företag har slut på tokens och vill köra ytterligare bidragsanalyser? | Du kan uppgradera till en annan Adobe Analytics-produkt, till exempel från Standard (2 tokens/månad) till Ultimate (20 tokens/månad). Du kan inte köpa fler tokens - du måste uppgradera inom det befintliga paketeringsramverket. |
 | Hur begränsar jag åtkomsten till bidragsanalys? | Som standard har bara administratörer tillgång till att köra Contribute Analyses. Administratörer kan dock ge andra användare åtkomst genom att skapa en behörighetsgrupp i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html). Du bör endast ge tillstånd att använda bidragsanalys till användare som har en legitim anledning att använda den och som är betrodda att inte missbruka sin åtkomst. Behörigheten kallas [!UICONTROL Contribution Analysis] under [!UICONTROL Report Suite Tools]. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/report-suite-tools.html) |
-| Hur vet jag hur många tokens mitt företag har rätt till per månad och hur många vi har använt under den aktuella månaden? | Gå till [!UICONTROL Admin] > [!UICONTROL All Admin] >[!UICONTROL Company Settings Home] >[!UICONTROL View Feature Access Levels]. Titta under<ul><li>Bidragsanalys: Antal token för månatlig användning</li><li>Bidragsanalys: Antal användningstoken som används den här månaden</li></ul> |
+| Hur vet jag hur många tokens mitt företag har rätt till per månad och hur många vi har använt under den aktuella månaden? | Gå till [!UICONTROL Admin] > [!UICONTROL All admin] >[!UICONTROL Company settings Home] >[!UICONTROL View Feature Access Levels]. Titta under<ul><li>Bidragsanalys: Antal token för månatlig användning</li><li>Bidragsanalys: Antal användningstoken som används den här månaden</li></ul> |
 
 ## Anomaldetekterings- och bidragsanalysberättiganden {#section_9278D58F21A840AA9B1ED1BD07A1EF0A}
 
