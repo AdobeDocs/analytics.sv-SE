@@ -4,8 +4,7 @@ title: Kalenderhändelser
 feature: Rapporter och analysgrunder
 uuid: 15d4f0c8-b566-43b0-b914-4ea35b7fac7f
 exl-id: 5765b377-bdad-41a7-8277-b9fd521c12bd
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 97%
@@ -22,7 +21,7 @@ Steg för att lägga till kalenderhändelser och hantera delade händelser.
 
 För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden. Du skapar en kalenderhändelse genom att namnge händelsen, ange datum, lägga till anteckningar och ställa in en ikon. Om du till exempel använder Social kan du skapa en kalenderhändelse som visar att det fanns en korrelation mellan en ökning av webbplatstrafiken och att en kändis nämnde er produkt på Twitter.
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Calendar Events]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Calendar events]**.
 1. Klicka på **[!UICONTROL Add New]**.
    1. Under **[!UICONTROL Title]** anger du namnet på kalenderhändelsen.
    1. Ange **[!UICONTROL Event Date]**.
@@ -37,7 +36,7 @@ För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanje
    1. Klicka på **[!UICONTROL Save]**.
 
    Det gör kalenderhändelser mer användbara. Nu kan analytiker tvinga fram en överlagring på användarnas rapporter för att få mer kontext.
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Calendar Events]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Calendar events]**.
 1. Under **[!UICONTROL Shared Calendar Events]** anger du något av följande alternativ:
 
    | **Copy Me** | Lägger till en kopia i händelselistan med samma namn som originalet. Du kan dock inte se några uppdateringar eller ändringar som har gjorts av händelsens ägare. |
