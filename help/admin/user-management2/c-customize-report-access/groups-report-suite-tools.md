@@ -3,11 +3,10 @@ description: Aktivera användarbehörigheter för API-åtkomst, Report Suite-han
 keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Anpassa behörigheter för verktyg i rapportsviten
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 3c95d296-ffd0-4971-9c5f-110ddbe042ce
 exl-id: 8b776055-66a5-4ada-8d92-391c50a1d4f1
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 9%
@@ -18,7 +17,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
+>Användar- och produkthanteringen övergår till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare. När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** att tas bort.
 
 Aktivera användarbehörigheter för API-åtkomst, Report Suite-hantering, verktyg och rapporter samt instrumentpanelsobjekt.
 
