@@ -5,10 +5,9 @@ title: Skapa virtuella rapportsviter
 feature: Rapporter och analysgrunder
 uuid: 022a6656-808e-4c92-b7ec-4d2a42e84fa8
 exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 4%
 
 ---
@@ -50,7 +49,7 @@ Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
   </tr> 
   <tr> 
    <td colname="col1"> Grupper </td> 
-   <td colname="col2"> <p>Välj de behörighetsgrupper som du vill ska ha åtkomst till detta VRS. (Du kan också hantera gruppbehörigheter från <span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Användarhantering</span> &gt; <span class="uicontrol"> Grupper</span></span>.) </p> </td> 
+   <td colname="col2"> <p>Välj de behörighetsgrupper som du vill ska ha åtkomst till detta VRS. (Du kan också hantera gruppbehörigheter från <span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Alla administratörer </span> &gt; <span class="uicontrol"> Användarhantering</span> &gt; <span class="uicontrol"> Grupper</span></span>.) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Överordnad Report Suite </td> 
