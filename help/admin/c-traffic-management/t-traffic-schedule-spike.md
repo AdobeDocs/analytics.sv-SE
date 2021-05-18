@@ -1,14 +1,13 @@
 ---
 title: Schemalägg en trafiktopp
 description: Samarbeta med Adobe för att säkerställa att högtrafikhändelser inte får någon fördröjning.
-translation-type: tm+mt
-source-git-commit: 47b14bde1bb1217bcb172c6d4f01d68f917d44db
+exl-id: a6bbd975-6d31-40f5-8f80-491ec3a5c5f5
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 2%
 
 ---
-
 
 # Schemalägg en trafiktopp
 
@@ -16,14 +15,14 @@ Adobe försöker att samarbeta med kunder för att säkerställa att ett trafikr
 
 Avancerad databalansering på serversidan med flera dedikerade medarbetare används för att säkerställa att alla kunder har de senaste rapporterna som är möjliga. När er organisation informerar Adobe om trafiktoppar kan Adobe se till att den plötsliga trafikökningen är en positiv upplevelse. Underlåtenhet att meddela Adobe om trafikökningar kan öka latensen under kritiska rapporteringsperioder.
 
-Läs informationen om [nödvändig ledtid för trafikökningar](/help/admin/c-traffic-management/traffic-lead-time.md) innan du schemalägger en trafiktopp.
+Läs informationen om [Begärd ledtid för trafikökningar](/help/admin/c-traffic-management/traffic-lead-time.md) innan du schemalägger en trafikspik.
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]**.
 1. Välja en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic Management]** > **[!UICONTROL Schedule Spike]**.
-1. I **[!UICONTROL Spike Start Date]** fältet anger du det datum då du förväntar dig att trafikökningen ska starta.
-1. I **[!UICONTROL Spike End Date]** fältet anger du det datum då du förväntar att trafiktoppen ska sluta.
-1. I **[!UICONTROL Expected Daily Page Views During Spike]** fältet anger du den totala förväntade dagliga sidvisningen under trafiktoppsperioden och klickar sedan på **[!UICONTROL Submit]**.
+1. I fältet **[!UICONTROL Spike Start Date]** anger du det datum då du förväntar att trafiktoppen ska starta.
+1. I fältet **[!UICONTROL Spike End Date]** anger du det datum då du förväntar dig att trafikspiken ska sluta.
+1. I fältet **[!UICONTROL Expected Daily Page Views During Spike]** anger du den totala förväntade dagliga sidvisningen under trafikspikperioden och klickar sedan på **[!UICONTROL Submit]**.
 
    Se till att du anger det totala antalet förväntade sidvyer, inte bara ytterligare sidvyer.
 
@@ -43,6 +42,6 @@ När kunderna informerar Adobe om trafiktoppar för varje rapporteringsprogram g
 
 Adobe vill säkerställa att era erfarenheter av aktuell rapportering är enhetliga. Adobe rekommenderar starkt följande för att kunna göra detta så effektivt som möjligt:
 
-* Schemalägg alla trafiktoppar enligt [obligatorisk ledtid för trafikökningar](traffic-lead-time.md). **Det är särskilt viktigt att alla trafiktoppar som förväntas under november-december planeras till den 15 september**. Om du missar deadline, schemalägg toppen så snart som möjligt. Mindre ledtid är bättre än inget, och Adobe arbetar med de aktuella resurserna för att bäst kunna hantera era rapportsviter.
+* Schemalägg alla trafiktoppar enligt [Begärd ledtid för trafikökningar](traffic-lead-time.md). **Det är särskilt viktigt att alla trafiktoppar som förväntas under november-december planeras till den 15 september**. Om du missar deadline, schemalägg toppen så snart som möjligt. Mindre ledtid är bättre än inget, och Adobe arbetar med de aktuella resurserna för att bäst kunna hantera era rapportsviter.
 * Om Adobe kontaktar dig angående en schemalagd trafiktoppning ska du informera dig om realtidsrapportering eller fullständig bearbetningsrapportering är viktigare. Vissa organisationer förlitar sig mer på realtidsrapportering än andra. Att förstå vilken typ av rapportering du använder kan hjälpa Adobe att prioritera på rätt sätt.
 * De viktigaste rapporterna och när du hämtar dem kan du kommunicera med din kontoansvarige för att hjälpa dem att rekommendera åt dig.
