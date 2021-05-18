@@ -5,10 +5,9 @@ title: DFA-integrering
 feature: Data Connectors
 uuid: 972a9d62-24fd-4463-a34c-5ec0b926e81e
 exl-id: 27eb7789-30a5-4f4a-8b23-06e3625996ec
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '2593'
+source-wordcount: '2592'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ Gå igenom DFA Data Connectors Integration.
 Konfigurationssidorna ger en översikt över integreringen, tillsammans med praktiska länkar för mer information. Det finns både Adobe- och DoubleClick-avgifter för den här integreringen. Kontakta en säljare för båda organisationerna och se till att du förstår avgiftsstrukturen.
 
 1. Logga in på [!DNL Adobe Analytics].
-1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Data Connectors]**.
+1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data connectors]**.
 
    ![](assets/data_connectors.png)
 
@@ -49,7 +48,7 @@ Konfigurationssidorna ger en översikt över integreringen, tillsammans med prak
    <td colname="col3"> Det integrationsnamn som Genesis visas i rapportsvitens lista över aktiv integrering. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 3 </td> 
+   <td colname="col1"> 1 </td> 
    <td colname="col2"> E-postadress för integrering </td> 
    <td colname="col3"> E-postadressen som tar emot alla meddelanden som rör den här integreringen. </td> 
   </tr> 
@@ -69,7 +68,7 @@ Konfigurationssidorna ger en översikt över integreringen, tillsammans med prak
    <td colname="col3"> <p>DFA-annonserings-ID eller överordnat Floodlight Configuration ID. Data Connectors använder det här ID:t för att identifiera DFA Advertiser för att spåra (version 1.5 av integreringen). Det här Advertiser-ID:t används inte i version 2.0 av integreringen - det överordnade konfigurations-ID:t för Floodlight kommer att slås upp och användas. Se instruktionerna på skärmen </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 1 </td> 
+   <td colname="col1"> 3 </td> 
    <td colname="col2"> DFA-annonsvariabel </td> 
    <td colname="col3"> Den Analytics-eVar som tar emot DFA-kampanjattribut, visningar och klickdata. Vanligtvis är det här eVar för spårningskod ( <span class="varname"> s.campaign </span>), men du kan välja vilken eVar som helst. Data Connectors lägger även till följande DFA-relaterade klassificeringar i den valda eVar: <p><b>Kampanjer</b>: En samling annonser som betjänas av flera webbplatser med vanliga meddelanden. </p> <p><b>Platsnamn</b>: Webbplatsen där annonsen tjänstgjordes. </p> <p><b>Annonsnamn</b>: Annonsnamnet, enligt definition i ditt DFA-konto. </p> <p><b>Platsplaceringsnamn</b>: Webbplatsen och sidan där annonsen fanns. </p> <p><b>Leveransverktyg</b>: Dubbelklicka för annonsörer. </p> <p><b>Kanal</b>: Banderollannons </p> <p><b>Kostnadsstruktur</b>: CPM, CPC eller Fixed, baserat på annonsens kostnadsstruktur. </p> <p><b>Kreativt namn</b>: Namnet på den som är kopplad till ett annons-/placerings-/kreativt ID. </p> <p><b>DFA &gt; SearchCenter Deduplicering</b>: Anger att DFA ska placera värden i SearchCenter-variabler när DFA-klickningar eller Vyer sker.  </a> . </p> </td> 
   </tr> 
