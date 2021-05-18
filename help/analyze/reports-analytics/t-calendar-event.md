@@ -2,16 +2,15 @@
 description: Steg för att lägga till kalenderhändelser och hantera delade händelser.
 title: Kalenderhändelser
 uuid: 5e928c70-8eba-4a97-928d-2c4b3e9ff972
-feature: Calendar
+feature: Kalender
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: e89be5ce-3ec0-4b2d-8574-7bd2041ed18a
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 95%
+source-wordcount: '310'
+ht-degree: 96%
 
 ---
-
 
 # Kalenderhändelser
 
@@ -23,7 +22,7 @@ Steg för att lägga till kalenderhändelser och hantera delade händelser.
 
 För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden. Du skapar en kalenderhändelse genom att namnge händelsen, ange datum, lägga till anteckningar och ställa in en ikon. Om du till exempel använder Social kan du skapa en kalenderhändelse som visar att det fanns en korrelation mellan en ökning av webbplatstrafiken och att en kändis nämnde er produkt på Twitter.
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Calendar Events]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Calendar events]**.
 1. Klicka på **[!UICONTROL Add New]**.
    1. Under **[!UICONTROL Title]** anger du namnet på kalenderhändelsen.
    1. Ange **[!UICONTROL Event Date]**.
@@ -38,7 +37,7 @@ För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanje
    1. Klicka på **[!UICONTROL Save]**.
 
    Det gör kalenderhändelser mer användbara. Nu kan analytiker tvinga fram en överlagring på användarnas rapporter för att få mer kontext.
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Calendar Events]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Calendar events]**.
 1. Ange något av följande alternativ under Delade kalenderhändelser:
 
        | **Copy Me** | Lägger till en kopia i händelselistan med samma namn som originalet. Du kan dock inte se några uppdateringar eller ändringar som har gjorts av händelsens ägare. |
