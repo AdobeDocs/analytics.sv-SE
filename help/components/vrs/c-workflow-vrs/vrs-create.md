@@ -5,10 +5,10 @@ title: Skapa virtuella rapportsviter
 feature: Rapporter och analysgrunder
 uuid: 022a6656-808e-4c92-b7ec-4d2a42e84fa8
 exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 20bd38fc38fb14d724603b492bf093d313acbb7d
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 4%
+source-wordcount: '649'
+ht-degree: 3%
 
 ---
 
@@ -25,43 +25,50 @@ Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
 
    ![](assets/new_vrs.png)
 
-1. Fyll i fälten:
+## Definiera inställningar
 
-<table id="table_0F85B56480BB46CBA5BE236BBD70156D"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Element </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Namn </td> 
-   <td colname="col2"> <p>Namnet på den virtuella rapportsviten ärvs inte från den överordnade rapportsviten och ska vara distinkt. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Beskrivning </td> 
-   <td colname="col2"> <p>Lägg till en bra beskrivning för dina företagsanvändare. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Taggar </td> 
-   <td colname="col2"> <p>Du kan lägga till taggar för att ordna dina rapportsviter. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Grupper </td> 
-   <td colname="col2"> <p>Välj de behörighetsgrupper som du vill ska ha åtkomst till detta VRS. (Du kan också hantera gruppbehörigheter från <span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Alla administratörer </span> &gt; <span class="uicontrol"> Användarhantering</span> &gt; <span class="uicontrol"> Grupper</span></span>.) </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Överordnad Report Suite </td> 
-   <td colname="col2"> <p>Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för ett VRS måste du redigera den överordnade rapportsviten (<span class="ignoretag"><span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Rapportsviter</span></span>). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Tidszon </td> 
-   <td colname="col2"> <p>Det är valfritt att välja en tidszon. </p> <p>Om du väljer en tidszon sparas den tillsammans med VRS. Om du inte väljer någon tidszon används den överordnade rapportsvitens tidszon. </p> <p>När du redigerar ett VRS-system visas den tidszon som har sparats med VRS i den nedrullningsbara väljaren. Om VRS skapades innan tidszonsstödet lades till visas den överordnade rapportsvitens tidszon i den nedrullningsbara väljaren. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Segment </td> 
-   <td colname="col2"> <p>Du kan lägga till endast ett segment eller <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html"  > stacksegment</a>. </p> <p> <p>Obs!  När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. </p> </p> <p>När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+Definiera de här inställningarna på fliken [!UICONTROL Settings] och klicka sedan på **[!UICONTROL Continue]**.
+
+| Element | Beskrivning |
+| --- |--- |
+| Namn | Namnet på den virtuella rapportsviten ärvs inte från den överordnade rapportsviten och ska vara distinkt. |
+| Beskrivning | Lägg till en bra beskrivning för dina företagsanvändare. |
+| Taggar | Du kan lägga till taggar för att ordna dina rapportsviter. |
+| Källa | Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för ett VRS-system måste du redigera den överordnade rapportsviten (Admin > Rapportsviter). |
+| Tidszon | Det är valfritt att välja en tidszon. Om du väljer en tidszon sparas den tillsammans med VRS. Om du inte väljer någon tidszon används den överordnade rapportsvitens tidszon.  När du redigerar ett VRS-system visas den tidszon som har sparats med VRS i den nedrullningsbara väljaren. Om VRS skapades innan tidszonsstödet lades till visas den överordnade rapportsvitens tidszon i den nedrullningsbara väljaren. |
+| Segment | Du kan bara lägga till ett segment eller stapla segment.   Obs!  När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. |
+
+## Definiera besöksdefinition
+
+Definiera de här inställningarna på fliken [!UICONTROL Visit Definition] och klicka sedan på **[!UICONTROL Continue]**.
+
+![](assets/visit-definition.png)
+
+| Element | Beskrivning |
+| --- |--- |
+| **Konfigurera besöksdefinition** |  |
+| Aktivera bearbetning av rapporttid | Använd rapporttidsbearbetning för att ändra standardlängden för besökstidsgränsen. De här inställningarna är icke-förstörande och gäller endast i Analysis Workspace. [Läs mer](/help/components/vrs/vrs-report-time-processing.md) |
+| Besök timeout | Definierar hur mycket inaktivitet en unik besökare måste ha innan ett nytt besök startas automatiskt. Detta påverkar besöksmått, besökssegmentbehållare och eVars som förfaller vid besök. |
+| Starta nytt besök med event | Startar en ny session när någon av de angivna händelserna utlöses, oavsett om en session har uppnått tidsgränsen eller inte. |
+| **Besöksinställningar för mobilappar** | Ändra hur besök definieras för mobilappsträffar som samlas in av Adobe SDK:er för mobiler. De här inställningarna är icke-förstörande och gäller endast i Analysis Workspace. |
+| Förhindra bakgrundstömningar från att starta ett nytt besök | Förhindrar att bakgrundstötningar startar ett nytt besök och ökar antalet besök och unika besökarmått. |
+| Starta ett nytt besök varje gång appen startas | Startar en ny session när en app startas. [Läs mer](/help/components/vrs/vrs-mobile-visit-processing.md) |
+
+## Inkludera och byta namn på komponenter
+
+![](assets/components.png)
+
+1. På fliken [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
+Mer information om VRS-kurering finns i [Virtuell Report Suite-komponentkuration](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html?lang=en#virtual-report-suites).
+
+1. Dra komponenter (mått, mått, segment eller datumintervall) som du vill inkludera i VRS till [!UICONTROL Included Components]-avsnittet.
+
+1. När du är klar klickar du på **[!UICONTROL Save]**.
+
+## Förhandsgranska data
+
+Till höger på varje flik kan du förhandsgranska det totala antalet träffar, antalet besök och det totala antalet besökare i den här virtuella rapportsviten, jämfört med det ursprungliga rapportpaketet.
+
+## Visa produktkompatibilitet
+
+Vissa funktioner i Virtual Report Suites stöds inte av alla Adobe Analytics-produkter. Med produktkompatibilitetslistan kan du se vilka produkter i Adobe Analytics som stöds baserat på dina aktuella inställningar för Virtual Report Suite.
