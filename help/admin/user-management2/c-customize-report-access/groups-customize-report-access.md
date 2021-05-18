@@ -3,11 +3,10 @@ description: Anpassa gruppbehörigheter till analysverktyg, rapportsvitsverktyg,
 keywords: grupper;behörigheter
 subtopic: Users and groups
 title: Anpassa rapportåtkomst – översikt
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 818a7196-8b43-4654-8d5f-800b3122aad3
 exl-id: f70b53b5-1399-4b9b-ad09-df8425baeca4
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 5%
@@ -18,7 +17,7 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->Användar- och produkthanteringen har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin Tools]** > **[!UICONTROL User Management]** att tas bort.
+>Användar- och produkthanteringen har flyttats till [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). När alla kunder har migrerat kommer hjälpinnehåll för **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** att tas bort.
 
 Anpassa gruppbehörigheter till analysverktyg, rapportsvitsverktyg, mätvärden och dimensioner.
 
@@ -30,7 +29,7 @@ Avsnittet [!UICONTROL Report Access] på sidan [!UICONTROL Define User Group] in
 
 Du kan till exempel skapa en grupp med tillgång till flera analysverktyg ( [!UICONTROL Analysis Workspace], [!UICONTROL Reports & Analytics] och [!UICONTROL Report Builder]), med behörighet till specifika mått och mått (inklusive eVars) och funktioner som att skapa segment eller beräknade värden.
 
-## Vad du bör känna till om behörigheter {#section_3D25D4A5BD044008870C5B98F696244E}
+## Vad du bör veta om behörigheter {#section_3D25D4A5BD044008870C5B98F696244E}
 
 <table id="table_DB7806E05E2040EC9A4CB7C3596879EC"> 
  <thead> 
