@@ -4,14 +4,13 @@ title: Schemalägg en databegäran
 uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 feature: Report Builder
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 6aaadaa8-d68f-4a03-8838-53a61b152e31
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
-
 
 # Schemalägg arbetsböcker
 
@@ -23,7 +22,7 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 
 >[!NOTE]
 >
->Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst 10 schemalagda arbetsböcker per licens för Report Builder. Du kan dock öka antalet genom att subtrahera från andra licenser. Om du vill göra det går du till **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Report Builder Reports]**. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
+>Du måste ha Excel 2007 eller kompatibilitetspaketet installerat för att kunna schemalägga en arbetsbok. Du kan ha högst 10 schemalagda arbetsböcker per licens för Report Builder. Du kan dock öka antalet genom att subtrahera från andra licenser. Om du vill göra det går du till **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Report Builder Reports]**. En arbetsbok som har schemalagts (eller överförts till arbetsboksbiblioteket) och som inte har ändrats (uppdaterats, ersatts) på mer än 28 månader kommer att tas bort.
 
 >[!NOTE]
 >
@@ -83,4 +82,3 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 1. Klicka på **[!UICONTROL OK]** och sedan på **[!UICONTROL Exit]**.
 
    Report Builder visar den schemalagda arbetsboken i [Schemalagd aktivitetshanterare](/help/analyze/report-builder/r-arb-scheduled-reports.md).
-
