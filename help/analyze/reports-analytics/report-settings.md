@@ -3,14 +3,13 @@ description: Inställningar som definierar hur alla rapporter visas och informat
 title: Visningsinställningar och navigering för rapporter
 uuid: e7e571ce-a1cf-4714-b400-9571805ceeac
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 2c2d4d59-b189-42e0-887e-77dc7a48721a
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1464'
 ht-degree: 7%
 
 ---
-
 
 # Visningsinställningar och navigering för rapporter
 
@@ -18,7 +17,7 @@ Inställningar som definierar hur alla rapporter visas och information som mappa
 
 ## Visningsinställningar och navigering för rapporter {#concept_09832A2CA0FF4982B1AA37C1B635220B}
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Report Settings]**
+**[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All Components]** > **[!UICONTROL Report settings]**
 
 | Element | Beskrivning |
 |--- |--- |
@@ -149,4 +148,3 @@ Om du är van vid standardmenyn gör följande tabell det enklare att hitta meny
 | **Anpassade rapporter** |  |  |
 |  | Anpassade rapporter visas bara för dig som har någon konfiguration. | Anpassade rapporter |
 |  |  |  |
-
