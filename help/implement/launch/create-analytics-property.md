@@ -1,14 +1,13 @@
 ---
 title: Skapa en Analytics-egenskap i Launch
 description: Skapa ett utrymme för att anpassa hur data samlas in med Adobe Experience Platform Launch.
-translation-type: tm+mt
-source-git-commit: 632fa007fecadf01e2cef67fd3c2519799636e46
+exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
+source-git-commit: c46feec3f08b78ca7882193ab86914db49617c1c
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '529'
 ht-degree: 3%
 
 ---
-
 
 # Skapa en Analytics-egenskap i Adobe Experience Platform Launch
 
@@ -81,8 +80,8 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
 
 ## Dokumentation och ytterligare resurser
 
-* [Adobe Analytics-tilläggsdokumentation](https://docs.adobelaunch.com/extension-reference/web/adobe-analytics-extension): Fullständig dokumentation som är specifik för Adobe Analytics-tillägget i Adobe Experience Platform Launch.
-* [Komma igång med Launch](https://docs.adobelaunch.com/getting-started): Fullständig dokumentation för Launch, inklusive en mer ingående guide för att komma igång
+* [Adobe Analytics-tilläggsdokumentation](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=en#extensions-ref): Fullständig dokumentation som är specifik för Adobe Analytics-tillägget i Adobe Experience Platform Launch.
+* [Komma igång med Launch](https://experienceleague.adobe.com/docs/launch/using/get-started/quick-start.html?lang=en#get-started): Fullständig dokumentation för Launch, inklusive en mer ingående guide för att komma igång
 * [Adobe Experience Platform Launch-kanal](https://experienceleague.adobe.com/?tag=Launch#recommended/solutions/experience-platform): Lär dig använda Launch via videor
 
 ## Nästa steg
