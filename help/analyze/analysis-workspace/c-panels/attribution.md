@@ -4,7 +4,7 @@ description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Attribuering
 role: Business Practitioner, Administrator
 exl-id: 96ce3cb9-7753-4ec0-b551-e70a1508e3b7
-source-git-commit: e3005892edd0854f76956a500ca3a8927d0b31b1
+source-git-commit: c38e20a7f9a295609181cc9435489ac86cda0852
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
