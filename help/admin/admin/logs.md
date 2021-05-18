@@ -1,10 +1,9 @@
 ---
 description: Logga filer som hjälper dig att se när användare loggar in, deras användning, åtkomst, rapportsviter och administratörsändringar.
 title: Loggar
-feature: Admin Tools
+feature: Administratörsverktyg
 exl-id: 43f79e2a-2cb9-47eb-982a-54714c9cbafc
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 2%
@@ -15,9 +14,9 @@ ht-degree: 2%
 
 Logga filer som hjälper dig att se när användare loggar in, deras användning, åtkomst, rapportsviter och administratörsändringar.
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Logs]**
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Logs]**
 
-## Administratörsloggen {#section_8ADE8A7204A8401C968ABC20AECA381D}
+## Administratörslogg {#section_8ADE8A7204A8401C968ABC20AECA381D}
 
 Administratörsloggen rapporterar alla ändringar som gjorts av administratörer i administrationsverktygen. Loggen tillhandahåller en gateway till användardefinierade rapporter från någon av de tre loggarna. Du kan söka efter händelser som matchar de valda villkoren i ett visst datumintervall.
 
