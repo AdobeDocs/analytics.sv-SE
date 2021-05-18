@@ -2,10 +2,9 @@
 title: Produktprofilbehörigheter för Report Suite-verktyg
 description: Förstå varje behörighetsobjekt under Report Suite Tools.
 exl-id: ca38d02f-2e88-49a3-a08c-515f21ee0099
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '664'
 ht-degree: 3%
 
 ---
@@ -49,7 +48,7 @@ Använd den här sidan om du vill förstå alla behörighetsobjekt under Report 
 | Hanteraren för dataflöden | Ger åtkomst till Admin > Datafeeds i den övre navigeringen i Analytics. |
 | Anpassad Data warehouse-rapport | Ger åtkomst till Verktyg > Data warehouse i den övre navigeringen i Analytics. |
 | Dagliga återbesök | Ger åtkomst till Behåll besökare > Dagliga besök i rapporter och analyser. |
-| Data Sources Manager | Ger åtkomst till Admin > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
+| Data Sources Manager | Ger åtkomst till Admin > Alla administratörer > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
 | Exkludera efter IP-adress | Ger åtkomst till Admin > Exkludera med IP i den övre navigeringen i Analytics. |
 | De senaste 100 besökarna | Används inte. |
 | Äldre ClickMap | Används inte. Använd Activity Map under Analytics Tools i stället. |
