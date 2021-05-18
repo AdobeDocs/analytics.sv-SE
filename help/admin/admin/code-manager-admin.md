@@ -1,11 +1,10 @@
 ---
 description: Med kodhanteraren kan du hämta datainsamlingskod för webb- och mobilplattformar.
 title: Kodhanteraren
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 7b60bca7-756f-444f-a7e6-abd3e0f1a15e
 exl-id: 90591e91-0830-46e3-a8a1-f09c4f108eb2
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 11%
@@ -16,7 +15,7 @@ ht-degree: 11%
 
 Med kodhanteraren kan du hämta datainsamlingskod för webb- och mobilplattformar.
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Code Manager]**.
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]**.
 
 När du har hämtat biblioteket måste du konfigurera koden så att den skickar data till rätt spårningsserver och rapportserie. Ytterligare implementeringsresurser finns i användarhandboken för [Implementering](/help/implement/home.md).
 
