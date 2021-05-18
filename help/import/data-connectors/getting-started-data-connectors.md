@@ -1,14 +1,13 @@
 ---
 description: Importera spårningsdata från tredjepartsprogram till Analytics.
 title: Komma igång med Analytics-dataanslutningar
-translation-type: tm+mt
-source-git-commit: 6e4c40c7d6c1713f624a9562da3e49a3ee5d67de
+exl-id: 2ad117ba-1ef1-4808-a546-de9833dfa49d
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
 
 ---
-
 
 # Översikt över dataanslutningar
 
@@ -48,7 +47,7 @@ Innan du konfigurerar en dataanslutningsintegration för din produkt gör du fö
 Du måste ha ett aktuellt konto för att komma åt startsidan för [!UICONTROL Data Connectors] (konsol). Vi rekommenderar också att du känner till Adobe Analytics.
 
 1. Logga in på Adobe Experience Cloud.
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Data Connectors]**.
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data connectors]**.
 1. Klicka på **[!UICONTROL Add New]**.
 1. Gå igenom gränssnittet **[!UICONTROL Add Integration]**.
 
