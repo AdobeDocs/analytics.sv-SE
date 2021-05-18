@@ -3,11 +3,10 @@ description: Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera o
 subtopic: Dashboards
 title: Kontrollpanelshanterare
 uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
-feature: Reports & Analytics Basics
+feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: abd5acf5-f743-4c94-81fb-fc6cc69e8f26
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 1%
@@ -22,7 +21,7 @@ Använd Kontrollpanelshanteraren för att kopiera, dela, arkivera och schemaläg
 >
 >Det bästa sättet att använda kontrollpanelshanteraren är att inte ha fler än 300 kontrollpaneler för en enskild användare. Observera även att hanteraren läser in alla delade instrumentpaneler nedan, så var klok med att dela instrumentpaneler.
 
-Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Dashboards]**.
+Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Dashboards]**.
 
 | Element | Beskrivning |
 |--- |--- |
@@ -36,7 +35,7 @@ Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONT
 
 Steg som beskriver hur du använder alternativen för hantering av delade instrumentpaneler.
 
-1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Dashboards]**.
+1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Dashboards]**.
 1. Under [!UICONTROL Shared Dashboards] letar du reda på den delade kontrollpanelen (eller den äldre kontrollpanelen) som du vill hantera och väljer ett eller flera av följande alternativ:
 
 <table id="choicetable_857E0E816D63404683D4E24DC8D7FC69"> 
