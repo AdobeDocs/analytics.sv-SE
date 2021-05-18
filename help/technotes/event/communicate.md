@@ -1,25 +1,27 @@
 ---
 title: förmedla genomslag till användarna
 description: Lär dig effektiva sätt att förmedla effekten av en händelse i organisationen.
-translation-type: tm+mt
-source-git-commit: 022d9cbfdae11d7efe1efb7fe503f4fdaa785be1
+exl-id: 9ba83f3f-2eea-44c2-80b2-a0a9111d51cf
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+workflow-type: tm+mt
+source-wordcount: '387'
+ht-degree: 1%
 
 ---
 
-
 # Informera användarna om händelseeffekter
 
-Om du har data [som påverkas av en händelse](overview.md)är det viktigt att du kommunicerar händelsen med användarna i organisationen.
+Om du har data [som påverkas av en händelse](overview.md) är det viktigt att kommunicera den händelsen till användare i organisationen.
 
 * Utveckla en gemensam ansvarsfriskrivning som du kan använda i kommunikationen för att uppnå enhetlighet
 * Kommunicera kontinuerligt till Analytics-användare och viktiga intressenter under och efter evenemanget
 * Placera en påminnelse i kalendern för efterföljande milstolpar, t.ex. följande månad eller år. Den här informationen kan i framtiden hjälpa till att påminna användare som tittar på rapporter om effekten i månads- eller årsrapporter.
 
-I Adobe Analytics visas följande avsnitt olika sätt att kommunicera med användare i organisationen. Du kan även använda andra metoder utanför Adobe Analytics, till exempel e-post, för att kommunicera med användarna.
+I Adobe Analytics visas olika sätt att kommunicera med användare i organisationen i följande avsnitt. Du kan även använda andra metoder utanför Adobe Analytics, till exempel e-post, för att kommunicera med användare.
 
 ## Kommunicera via paneler eller visualiseringsbeskrivningar
 
-Om du har ett Workspace-projekt som delas mellan användare i din organisation kan du förmedla effekten av en händelse via paneler eller visualiseringsbeskrivningar. Högerklicka på en panel eller ett visualiseringshuvud och välj sedan **[!UICONTROL Edit description]**.
+Om du har ett Workspace-projekt som delas mellan användare i din organisation kan du kommunicera effekten av en händelse via paneler eller visualiseringsbeskrivningar. Högerklicka på en panel eller ett visualiseringshuvud och välj sedan **[!UICONTROL Edit description]**.
 
 ![Panelbeskrivning](assets/panel_description.png)
 
@@ -33,7 +35,7 @@ Du kan också förmedla påverkan av en händelse genom dedikerade textvisualise
 
 För all visualisering i Workspace kan du lägga till i en serie som representerar det datumintervall som påverkas.
 
-1. Skapa ett beräknat mätvärde med segmentet&quot;Påverkade dagar&quot; genom att följa [Uteslut specifika datum i analysen](segments.md).
+1. Skapa ett beräknat mätvärde med segmentet&quot;Påverkade dagar&quot; genom att följa [Uteslut specifika datum i analys](segments.md).
 1. Lägg till det önskade måttet på den beräknade mätarbetsytan.
 
    ![Mått](assets/calcmetric_event.png)
@@ -44,7 +46,7 @@ För all visualisering i Workspace kan du lägga till i en serie som representer
 
 1. Lägg till dimensionen Dag i ett frihandsbord. Lägg till &#39;Besök&#39; och ditt beräknade mått som kolumner sida vid sida.
 
-   ![Frihandsregister](assets/calcmetric_freeform.png)
+   ![Frihandstabell](assets/calcmetric_freeform.png)
 
 1. Klicka på kugghjulsikonen för kolumninställningarna för det beräknade måttet och aktivera **[!UICONTROL Interpret zero as no value]**.
 
@@ -56,9 +58,9 @@ För all visualisering i Workspace kan du lägga till i en serie som representer
 
 ## Använd en kalenderhändelse i Rapporter och analyser
 
-Om du använder Rapporter och analyser kan du använda en [kalenderhändelse](/help/components/t-calendar-event.md) för att markera berörda dagar i alla trendrapporter. Den här metoden gäller inte för Analysis Workspace.
+Om du använder Rapporter och analys kan du använda en [kalenderhändelse](/help/components/t-calendar-event.md) för att markera berörda dagar i en trendrapport. Den här metoden gäller inte Analysis Workspace.
 
-1. Navigera till **[!UICONTROL Components]** > **[!UICONTROL Calendar events]**.
+1. Navigera till **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Calendar events]**.
 2. Ange önskad titel, datumintervall och anteckningstext.
 3. Klicka på **[!UICONTROL Save]**.
 
