@@ -1,16 +1,15 @@
 ---
 title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
-feature: Attribution
+feature: Attribuering
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 96ce3cb9-7753-4ec0-b551-e70a1508e3b7
+source-git-commit: e3005892edd0854f76956a500ca3a8927d0b31b1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
-
 
 # Panelen Attribution
 
@@ -40,6 +39,5 @@ Panelen [!UICONTROL Attribution] är ett enkelt sätt att skapa en analys som j�
 * **Attributjämförelsetabell**: Visar samma data som stapeldiagrammet, som en tabell. Om du markerar olika kolumner eller rader i den här tabellen filtreras stapeldiagrammet och flera andra visualiseringar i panelen. Den här tabellen fungerar på ungefär samma sätt som andra frihandstabeller i arbetsytan, vilket gör att du kan lägga till komponenter som mått, segment och uppdelningar.
 * **Överlappningsdiagram**: Ett Venndiagram som visar de tre viktigaste dimensionsobjekten och hur ofta de deltar tillsammans i en konvertering. Storleken på bubbelöverlappningen anger till exempel hur ofta konverteringar inträffade när en besökare exponerades för båda dimensionsobjekten. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
 * **Prestandainformation**: Gör att du kan jämföra upp till tre attribueringsmodeller visuellt med en punktdiagram.
-* **Trendprestanda**: Visar trenden för allokerade konverteringar för den översta dimensionsobjektet. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
+* **Trendprestanda**: Som standard visas trenden för konverteringsprestanda per attribueringsmodell för den första dimensionen i den intilliggande frihandstabellen. Du kan välja olika dimensionsrader i frihandstabellen för att visa trenden för de valda dimensionerna (till exempel Total intäkt för varje attribueringsmodell för sociala kampanjer och betald sökning). Alternativt kan du markera celler i kolumnerna för alla kombination av mått och attribueringstyp i friformstabellen för att se hur prestanda efter dimensionsvärde har utvecklats för de angivna attribueringsmodellerna (t.ex. Total intäkt per marknadsföringskanal med hjälp av Last Touch- och First Touch-attribuering).
 * **Flöde**: Gör att du kan se vilka kanaler som interagerar med de flesta, och i vilken ordning, på en besökares resa.
-
