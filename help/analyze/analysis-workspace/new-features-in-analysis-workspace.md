@@ -5,10 +5,10 @@ title: Nyheter i Analysis Workspace
 feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 9f15dccf3fb994898f51cbccdc5ee37e35870575
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '8213'
-ht-degree: 90%
+source-wordcount: '8217'
+ht-degree: 89%
 
 ---
 
@@ -388,7 +388,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td> 
-   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
+   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, till exempel hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  >Visualiseringsinställning för ”100 % staplad”</a> </p> </td> 
@@ -435,7 +435,7 @@ Nya funktioner och förbättringar som släpptes 8 mars 2018.
    <td colname="col2"> <p>För de senast släppta anpassade mallarna har vi gjort följande: </p> 
     <ul id="ul_787F48253F454163B99F6DD50F199FE2"> 
      <li id="li_828DD547DDB54A81B9FFB9FE92790F6C">Lagt till en mallikon längst upp i projektet (nära titeln) för att göra det lättare att skilja mellan läget för mallredigering och när du använder en mall som startpunkt för ett projekt. </li> 
-     <li id="li_EEAA4D115CB74A57BABD524B2561E0CC">Gett icke-administratörer möjlighet att skapa (spara som) och redigera mallar för Workspace-projekt, förutsatt att de har beviljats behörighet att skapa/strukturera projekt i Analysis Workspace. (<span class="ignoretag"><span class="uicontrol">Admin </span> &gt; <span class="uicontrol">Användarhantering</span> &gt; <span class="uicontrol">Grupper</span> &gt; <span class="uicontrol">Redigera behörighet för alla rapporter</span> &gt; <span class="uicontrol">Anpassa Analytics-verktyg</span> &gt; <span class="uicontrol">Skapa/strukturera projekt i Analysis Workspace</span></span>). </li> 
+     <li id="li_EEAA4D115CB74A57BABD524B2561E0CC">Gett icke-administratörer möjlighet att skapa (spara som) och redigera mallar för Workspace-projekt, förutsatt att de har beviljats behörighet att skapa/strukturera projekt i Analysis Workspace. ( <span class="ignoretag"> <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Alla administratörer </span> &gt; <span class="uicontrol"> Användarhantering </span> &gt; <span class="uicontrol"> Grupper </span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> Anpassa analysverktyg </span> &gt; a13/&gt; Skapa/Kuratera projekt i Analysis Workspace </span> </span>).<span class="uicontrol"> </span></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -545,7 +545,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bidragsanalys: <a href="https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html"  >Tokenavisering</a> </p> </td> 
-   <td colname="col2"> <p>Om företaget har ett begränsat antal tokens för bidragsanalys visas nu en avisering i gränssnittet för Analysis Workspace när du konsumerar en token. Du får då veta hur många tokens ni har kvar.  </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa tokens genom att redigera gruppbehörigheten. Behörigheten kallas för avvikelseidentifiering och bidragsanalys under <span class="uicontrol">Analytics</span> &gt; <span class="uicontrol">Admin</span> &gt; <span class="uicontrol">Användarhantering</span> &gt; <span class="uicontrol">Redigera grupper</span> &gt; <span class="uicontrol">Redigera behörighet för alla rapporter</span> &gt; <span class="uicontrol">Anpassa verktyg i rapportsvit</span> &gt; <span class="uicontrol"> Verktyg och rapporter</span>.)  </p> </td> 
+   <td colname="col2"> <p>Om företaget har ett begränsat antal tokens för bidragsanalys visas nu en avisering i gränssnittet för Analysis Workspace när du konsumerar en token. Du får då veta hur många tokens ni har kvar.  </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa tokens genom att redigera gruppbehörigheten. Behörigheten kallas Anomaly Detection and Contribution Analysis under <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> All admin </span> &gt; <span class="uicontrol"> User management </span> <span class="uicontrol"> Edit Groups </span> &gt; <span class="uicontrol"> Edit All Report Access &lt;a1 1/&gt; &gt; <span class="uicontrol"> Anpassa Report Suite-verktygen </span> &gt; <span class="uicontrol"> Verktyg och rapporter </span>. ) </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CSV-filer med multibyte-tecken </p> </td> 
@@ -1249,4 +1249,4 @@ När du sparar ett projekt står det `<Project Name>` – Analysis Workspace på
 
 Administratörer kan överföra [!UICONTROL Analysis Workspace]-projekt från en användare till en annan.
 
-Navigera till **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Transfer]** för att överföra projekt.
+Navigera till **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** > **[!UICONTROL Transfer]** för att överföra projekt.
