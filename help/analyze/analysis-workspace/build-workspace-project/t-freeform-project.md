@@ -4,8 +4,7 @@ keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
 feature: Rapporter och analysgrunder
 uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 14%
@@ -23,7 +22,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
 
 1. Ange användarbehörighet för att skapa och strukturera projekt.
 
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med behörigheten **[!UICONTROL Create / Curate Projects in Analysis Workspace]** aktiverad, eller i användargruppen **[!UICONTROL All Report Access]**. ( **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > [Grupper](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)).
+   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med behörigheten **[!UICONTROL Create / Curate Projects in Analysis Workspace]** aktiverad, eller i användargruppen **[!UICONTROL All Report Access]**. (**[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** > [Grupper](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** i [!DNL Experience Cloud].
 
@@ -136,7 +135,7 @@ Panelen [!UICONTROL Visualizations] innehåller standarddiagram för analyser, d
 
 1. Steg
 
-## Använd högerklicksmenyn för att anpassa dina data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Använd högerklicksmenyn för att anpassa data {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 Med högerklicksmenyn kan du utföra följande åtgärder, beroende på vilken cell i en tabell du högerklickar på.
 
