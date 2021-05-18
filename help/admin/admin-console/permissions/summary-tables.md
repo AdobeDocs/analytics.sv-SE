@@ -1,14 +1,13 @@
 ---
 title: Adobe Analytics Permissions - summary tables
 description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Admin Console.
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: f1abbdb7-0f76-4d9b-a3ca-b12fa3cecb50
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1271'
 ht-degree: 4%
 
 ---
-
 
 # Adobe Analytics Permissions - summary tables
 
@@ -24,9 +23,9 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Konverteringsvariabler | x |  |  |  | Ger åtkomst till Conversion > Conversion Variables i Report Suite Manager. |
 | Kostnader | x |  |  |  | Ger åtkomst till marknadsföringskanaler > Marknadskanalkostnader i Report Suite Manager. |
 | Anpassad kalender | x |  |  |  | Ger åtkomst till Allmänt > Anpassa kalender i Report Suite Manager. |
-| Hanteraren för dataflöden | x |  |  |  | Ger åtkomst till Admin > Datafeeds i den övre navigeringen i Analytics. |
+| Hanteraren för dataflöden | x |  |  |  | Ger åtkomst till Admin > Dataflöden i den övre navigeringen i Analytics. |
 | API för datareparation | x |  |  |  | Ger åtkomst till API:t för datareparation |
-| Data Sources Manager | x |  |  |  | Ger åtkomst till Admin > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
+| Data Sources Manager | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
 | Standardmått | x |  |  |  | Ger åtkomst till Inställningar > Standardvärden i Report Suite Manager för enskilda rapportsviter. |
 | Exkludera efter IP-adress | x |  |  |  | Ger åtkomst till Admin > Exkludera med IP i den övre navigeringen i Analytics. |
 | Sökmetoder | x |  |  |  | Ger åtkomst till Conversion > Finding Methods i Report Suite Manager. |
@@ -74,20 +73,20 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 
 | Analysverktyg | Administrering | Åtkomstkontroller | Funktioner endast för rapporter | Föråldrat | Beskrivning |
 | --- | --- | --- | --- | --- | --- |
-| Kodhanteraren | x |  |  |  | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Code Manager. I de flesta fall bör du använda de bibliotek som finns i Adobe Experience Platform Launch i stället. |
+| Kodhanteraren | x |  |  |  | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall bör du använda de bibliotek som finns i Adobe Experience Platform Launch i stället. |
 | Kodhanteraren - webbtjänster | x |  |  |  | Ger åtkomst till Code Manager via 1.4-API:t. |
-| Dölj rapportsviter | x |  |  |  | Ger åtkomst till Admin > Företagsinställningar > Dölj rapportsviter. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
-| Integreringar (skapa) | x |  |  |  | Ger åtkomst till Admin > Data Connectors och låter användaren skapa dataanslutningar. |
-| Integreringar (ta bort) | x |  |  |  | Ger åtkomst till Admin > Data Connectors och tillåter användaren att ta bort dataanslutningar. |
-| Integreringar (uppdatering) | x |  |  |  | Ger åtkomst till Admin > Data Connectors och låter användaren ändra befintliga kopplingskonfigurationer. |
-| Loggar | x |  |  |  | Ger åtkomst till Admin > Logs. |
+| Dölj rapportsviter | x |  |  |  | Ger åtkomst till Admin > All admin > Company settings > Hide Report Suites. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
+| Integreringar (skapa) | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren skapa dataanslutningar. |
+| Integreringar (ta bort) | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren ta bort dataanslutningar. |
+| Integreringar (uppdatering) | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren ändra befintliga kopplingskonfigurationer. |
+| Loggar | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Loggar. |
 | Loggar - webbtjänster | x |  |  |  | Ger åtkomst till pull-loggar via 1.4-API:t. |
-| Väntande åtgärder | x |  |  |  | Ger åtkomst till Admin > Företagsinställningar > Väntande åtgärder. |
-| Säkerhet | x |  |  |  | Ger åtkomst till Admin > Företagsinställningar > Säkerhetshanteraren. |
+| Väntande åtgärder | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Företagsinställningar > Väntande åtgärder. |
+| Säkerhet | x |  |  |  | Ger åtkomst till Admin > All admin > Company settings > Security Manager. |
 | Användning av serversamtal | x |  |  |  | Ger åtkomst till Admin > Serversamtalsanvändning. |
-| Support | x |  |  |  | Ger åtkomst till Admin > Företagsinställningar > Supportinformation. |
-| Trafikhantering | x |  |  |  | Ger åtkomst till Admin > Traffic Management. |
-| Webbtjänster | x |  |  |  | Ger åtkomst till Admin > Företagsinställningar > Webbtjänster. |
+| Support | x |  |  |  | Ger åtkomst till Admin > All admin > Company settings > Support Information. |
+| Trafikhantering | x |  |  |  | Ger åtkomst till Admin > All admin > Traffic Management. |
+| Webbtjänster | x |  |  |  | Ger åtkomst till Admin > All admin > Company settings > Web Services. |
 | Activity Map |  | x |  |  | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
 | Ad Hoc Analysis License Users |  | x |  |  | Ad Hoc Analysis har blivit uppsagd. [Mer information](https://spark.adobe.com/page/S9Bhp66VJ2fEn/). |
 | Analysis Workspace Access |  | x |  |  | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra den här gruppen (helst) eller Rapporter och analyser för att kunna använda Adobe Analytics. |
@@ -101,10 +100,10 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Aktuella data |  |  | x |  | Aktiverar alternativet att visa aktuella data i rapporter och analysrapporter. |
 | Rapporter och analysåtkomst |  |  | x |  | Ger åtkomst till rapporter och analyser. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |
 | Hantering av Advertising Analytics |  |  |  | x | Används inte. |
-| Samprofilering |  |  |  | x | Används inte längre. Ger åtkomst till Admin > Företagsinställningar > Sammärkning. |
+| Samprofilering |  |  |  | x | Används inte längre. Ger åtkomst till Admin > All admin > Company settings > Co-Branding. |
 | Excel-licensanvändare |  |  |  | x | Används inte. |
 | Administratör för mobilapp |  |  |  | x | Används inte. |
-| Behörighetshantering |  |  |  | x | Används inte längre. Ger åtkomst till det äldre användarhanteringsgränssnittet under Admin > Användarhantering. |
+| Behörighetshantering |  |  |  | x | Används inte längre. Ger åtkomst till det äldre användarhanteringsgränssnittet under Admin > Alla administratörer > Användarhantering. |
 | Behörigheter (läs) - webbtjänster |  |  |  | x | Används inte längre. Låter användaren visa äldre Analytics-behörigheter med Admin API. Använd Adobe Admin Console istället. |
 | Behörigheter (skrivbehörighet) - webbtjänster |  |  |  | x | Används inte längre. Låter användaren redigera äldre analysbehörigheter med hjälp av Admin API. Använd Adobe Admin Console istället. |
 | Inställningar |  |  |  | x | Används inte. |
