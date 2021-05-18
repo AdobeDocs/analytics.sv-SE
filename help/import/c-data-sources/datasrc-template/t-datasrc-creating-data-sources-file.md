@@ -5,8 +5,7 @@ title: Generera en importfilsmall
 topic-fix: Developer and implementation
 uuid: bcd90e34-42e6-4cd1-b67e-87586dea25d8
 exl-id: c2717936-a011-4224-8a9e-94753abbcb33
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 3%
@@ -26,7 +25,7 @@ Mallen Datakälla är en .txt-fil som du kan öppna med valfri textredigerare. D
 Mer information finns i [Importera filreferens](/help/import/c-data-sources/datasrc-template/datasrc-import-file-reference.md).
 
 1. Logga in på Analytics.
-1. Välj **[!UICONTROL Admin]** > **[!UICONTROL Data Sources]** i Suite-huvudet.
+1. Välj **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data sources]** i Suite-huvudet.
 1. Välj en mallkategori och typ på fliken **[!UICONTROL Data Sources Create]**.
 1. Granska aktiveringsinstruktionerna/informationen och klicka sedan på **[!UICONTROL Activate]**.
 
@@ -34,11 +33,11 @@ Mer information finns i [Importera filreferens](/help/import/c-data-sources/data
 
    | Guiden Sida | Fält | Beskrivning |
    |--- |--- |--- |
-   | 3 | Namn | Mallnamnet som visas i Analytics (Hanteraren för datakällor). |
+   | 1 | Namn | Mallnamnet som visas i Analytics (Hanteraren för datakällor). |
    | 1 | E-post | E-postadressen som tar emot alla meddelanden som rör användningen av den här datakällmallen. |
    | 3 | Kryssruta för associerade avgifter | Markera kryssrutan för att ange att du godkänner avgifterna som är kopplade till användningen av den här datakällmallen. |
    | 2 | Välj mått | Välj de mätvärden som ska importeras med den här datakällan. Analyser rekommenderar vissa mått baserade på datakällkategorin och typen som valts i steg 3.  Om du vill ange ett annat mått skriver du namnet i ett tomt fält och markerar kryssrutan för att aktivera måttet. |
-   | 3 | Mappningsmått | Välj en analyshändelse som ska ta emot varje importerat mätvärde som valts på guidesidan 2.  Dessa ska vara nya, ej tilldelade händelser som du tidigare har tilldelat namn som motsvarar de importerade mätdata som de får via datakällor.  Om en variabel för eVar, produkt eller spårningskod är en målvariabel, och de överförda värdena matchar befintliga hämtade värden, lägger de överförda händelserna i princip till mått i befintliga värden. Du kan t.ex. skapa ett offlineordermått med en produktdatdimension som redan har produktvyer, utcheckningar och beställningar som befintliga mätvärden. |
+   | 1 | Mappningsmått | Välj en analyshändelse som ska ta emot varje importerat mätvärde som valts på guidesidan 2.  Dessa ska vara nya, ej tilldelade händelser som du tidigare har tilldelat namn som motsvarar de importerade mätdata som de får via datakällor.  Om en variabel för eVar, produkt eller spårningskod är en målvariabel, och de överförda värdena matchar befintliga hämtade värden, lägger de överförda händelserna i princip till mått i befintliga värden. Du kan t.ex. skapa ett offlineordermått med en produktdatdimension som redan har produktvyer, utcheckningar och beställningar som befintliga mätvärden. |
    | 4 | Välj Dimensioner | Välj de datamått som ska användas för att dela upp importerade mätvärden från den här datakällan. Analyser rekommenderar vissa datamått baserade på den datakälltyp som valts i steg 3.  Om du vill ange en annan datamängd anger du dess namn i ett tomt fält och markerar sedan kryssrutan för att aktivera datamätningen. |
    | 5 | Dimensioner för kartdata | Markera en standardrapport eller eVar som ska ta emot varje importerad datamängd som valts på guidesidan 4. |
 
