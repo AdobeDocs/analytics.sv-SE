@@ -1,11 +1,10 @@
 ---
 description: Låter dig styra åtkomsten till rapportdata. Du kan välja starka lösenord, lösenord, IP-inloggningsbegränsningar och e-postdomänbegränsningar.
 title: Säkerhetshanteraren
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: b3fbdba0-e2bf-4d67-92e3-ef05711141d4
 exl-id: 6dcf0354-4b4a-4bd5-ba6c-ae42c7b9e4df
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 1%
@@ -18,7 +17,7 @@ Med Säkerhetshanteraren kan du styra åtkomsten till rapportdata. Du kan välja
 
 ## Inställningar
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Company Settings]** > **[!UICONTROL Security]**
+**[!UICONTROL Analytics]** >  **[!UICONTROL Admin]** >  **[!UICONTROL All admin]** >  **[!UICONTROL Company settings]** >  **[!UICONTROL Security]**
 
 | Inställning | Beskrivning |
 |--- |--- |
