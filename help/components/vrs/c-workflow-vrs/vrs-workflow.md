@@ -5,10 +5,9 @@ title: Arbetsflöde för Virtual Report Suites
 feature: Rapporter och analysgrunder
 uuid: 7039029d-f776-4491-a8d7-f1425894eb85
 exl-id: 6f68b5a2-04d6-4521-86d0-85c9f323d03c
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: cfdab79225f1025805652b2dee074fa49318bfc0
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '207'
 ht-degree: 3%
 
 ---
@@ -29,17 +28,8 @@ När en virtuell rapportsvit har skapats behandlas den på samma sätt som en ba
 
 Klicka på ikonen Info bredvid rapportsvitens namn för att [visa information om den](/help/components/vrs/c-workflow-vrs/vrs-view.md).
 
-![](assets/step3_icon.png) Ange  [gruppbehörigheter ](/help/components/vrs/c-workflow-vrs/vrs-create.md) för den.
+![](assets/step3_icon.png) Öppna ett projekt eller en rapport och välj en virtuell rapportserie för att få en segmenterad vy av data.
 
-Du lägger till gruppbehörigheter som en del av skapandet av en virtuell rapportserie.
-
-Du kan redigera gruppbehörigheter på två sätt:
-
-* Redigera den virtuella rapportsviten i Virtual Report Suite Manager.
-* Gå till Admin > Användarhantering > Grupper, markera gruppen som har behörighet till den virtuella rapportsviten och klicka på Redigera.
-
-![](assets/step4_icon.png) Öppna ett projekt eller en rapport och välj en virtuell rapportserie för att få en segmenterad vy av data.
-
-![](assets/step5_icon.png) [Hantera ](/help/components/vrs/c-workflow-vrs/vrs-manage.md) den virtuella rapportsviten.
+![](assets/step4_icon.png) [Hantera ](/help/components/vrs/c-workflow-vrs/vrs-manage.md) den virtuella rapportsviten.
 
 Med Virtual Report Suite Manager kan du redigera, lägga till, tagga, ta bort, byta namn på, godkänna, kopiera, exportera och filtrera virtuella rapportsviter. Den är inte synlig för användare som inte är administratörer.
