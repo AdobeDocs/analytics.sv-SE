@@ -2,8 +2,7 @@
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-translation-type: tm+mt
-source-git-commit: 8986b30ca08224e2b992e8ed238e74e40e9a7b41
+source-git-commit: 9e013f484c9f417a1e2ac2c2a59d2e918cedf787
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -117,9 +116,9 @@ Adobe Analytics använder Amazon Web Services som en del av datainsamlingsproces
 
 | Plats | Värd |
 | --- | --- |
-| Australien | `13.238.77.77` |
-| Australien | `52.62.21.192` |
-| Australien | `54.66.152.159` |
+| Australien | `13.54.219.183` |
+| Australien | `52.62.137.88` |
+| Australien | `54.79.162.112` |
 | Kina | `52.81.111.133` |
 | Kina | `140.179.22.22` |
 | Frankrike | `15.237.76.117` |
