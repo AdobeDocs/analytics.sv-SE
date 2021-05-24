@@ -2,16 +2,15 @@
 description: Konfigurera en utfallsvisualisering.
 title: Konfigurera en utfallsvisualisering
 uuid: fc117745-baf3-46fb-873d-9307092cc337
-feature: Visualizations
+feature: Visualiseringar
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 9d2a0163-a5cb-4a1c-97e9-e78a8f99aaee
+source-git-commit: d2edb8921afa2aeb7ce4b932f1e1320acac7de70
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 2%
 
 ---
-
 
 # Konfigurera en utfallsvisualisering
 
@@ -53,7 +52,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Evental sökväg </p> <p>(Standard) </p> </td> 
-   <td colname="col2"> <p>Besökare räknas som"så småningom" landar på nästa sida i banan, men inte nödvändigtvis på nästa träff. </p> </td> 
+   <td colname="col2"> <p>Besökare räknas som"så småningom" kommer att landa på nästa sida i banan i den sessionen, men inte nödvändigtvis på nästa träff. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Nästa träff </p> </td> 
@@ -62,7 +61,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
  </tbody> 
 </table>
 
-## Bortfallsinställningar {#section_0C7C89D72F0B4D6EB467F278AC979093}
+## Utfallsinställningar {#section_0C7C89D72F0B4D6EB467F278AC979093}
 
 | Inställning | Beskrivning |
 |--- |--- |
