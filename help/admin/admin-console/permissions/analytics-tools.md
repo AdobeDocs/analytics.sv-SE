@@ -2,10 +2,10 @@
 title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 8d409f27024a8c58bc875555ad5aa980815d1fc9
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 3%
+source-wordcount: '494'
+ht-degree: 4%
 
 ---
 
@@ -21,16 +21,10 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Loggar | Ger åtkomst till Admin > Alla administratörer > Loggar. |
 | Loggar - webbtjänster | Ger åtkomst till pull-loggar via 1.4-API:t. |
 | Trafikhantering | Ger åtkomst till Admin > All admin > Traffic Management. |
-| Behörighetshantering | Används inte längre. Ger åtkomst till det äldre användarhanteringsgränssnittet under Admin > Alla administratörer > Användarhantering. |
-| Behörigheter (läs) - webbtjänster | Används inte längre. Låter användaren visa äldre Analytics-behörigheter med Admin API. Använd Adobe Admin Console istället. |
-| Behörigheter (skrivbehörighet) - webbtjänster | Används inte längre. Låter användaren redigera äldre analysbehörigheter med hjälp av Admin API. Använd Adobe Admin Console istället. |
 | Säkerhet | Ger åtkomst till Admin > All admin > Company settings > Security Manager. |
 | Support | Ger åtkomst till Admin > All admin > Company settings > Support Information. |
 | Webbtjänster | Ger åtkomst till Admin > All admin > Company settings > Web Services. |
-| Enkel inloggning | Används inte längre. Ger åtkomst till den inaktuella Single Sign-On-tjänsten. |
 | Väntande åtgärder | Ger åtkomst till Admin > Alla administratörer > Företagsinställningar > Väntande åtgärder. |
-| Samprofilering | Används inte längre. Ger åtkomst till Admin > All admin > Company settings > Co-Branding. |
-| Inställningar | Används inte. |
 | Dölj rapportsviter | Ger åtkomst till Admin > All admin > Company settings > Hide Report Suites. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
 | Excel-licensanvändare | Används inte. |
 | Activity Map | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
