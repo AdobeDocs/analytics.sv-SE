@@ -1,16 +1,15 @@
 ---
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
-feature: Panels
+feature: Paneler
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 2%
+source-wordcount: '977'
+ht-degree: 1%
 
 ---
-
 
 # Översikt över paneler
 
@@ -34,7 +33,7 @@ Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den tom
 
 ## Rapportsviten {#report-suite}
 
-Tabeller och visualiseringar i en panel hämtar data från det [!UICONTROL report suite] som är markerat i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [många rapportsviter](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt **högerklickar du på panelhuvudet > Använd rapportserie för alla paneler**.
+Tabeller och visualiseringar i en panel hämtar data från det [!UICONTROL report suite] som är markerat i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [många rapportsviter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt **högerklickar du på panelhuvudet > Använd rapportserie för alla paneler**.
 
 Listan med rapportsviter sorteras efter relevans, som Adobe definierar utifrån hur nyligen och ofta sviten har använts av den aktuella användaren och hur ofta sviten används i organisationen.
 
@@ -48,7 +47,7 @@ Obs! Om en (lila) datumintervallkomponent används i en tabell, visualisering el
 
 ![](assets/panel-calendar.png)
 
-## Dropzone {#dropzone}
+## Dropzon {#dropzone}
 
 Med panelens listruta kan du tillämpa segment- och listrutefilter på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera filter på en panel. Titeln ovanför varje filter kan ändras genom att du klickar på redigeringspennan eller så kan du högerklicka för att ta bort den helt.
 
@@ -82,7 +81,7 @@ Så här skapar du nedrullningsbara filter:
 
 ![](assets/create-dropdown.png)
 
-[Titta på ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) videon och lär dig mer om hur du lägger till nedrullningsbara filter i ditt projekt.
+[Titta på ](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) videon och lär dig mer om hur du lägger till nedrullningsbara filter i ditt projekt.
 
 ## Högerklicka på menyn {#right-click}
 
