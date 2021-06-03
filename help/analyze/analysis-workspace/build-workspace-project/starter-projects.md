@@ -2,16 +2,15 @@
 description: Skapa arbetsyteprojekt baserade på standardmallar eller anpassade mallar.
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 3%
+source-wordcount: '1376'
+ht-degree: 1%
 
 ---
-
 
 # Mallar
 
@@ -19,7 +18,7 @@ Du kan välja om du vill skapa ett projekt från:
 
 * **Tomt projekt (standard)**: Instruktioner finns i  [Skapa ett Analysis Workspace-projekt](/help/analyze/analysis-workspace/home.md).
 * **Standardmall**: Mallarna skapas av Adobe och levereras med produkten.
-* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats  [!UICONTROL Analysis Workspace: Save as Template] tillstånd i Admin Console. [Läs mer …](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/permissions/product-profile.html)
+* **Egen mall**: De här mallarna kan skapas, delas eller tas bort av användare med administratörsbehörighet eller av icke-administratörer, förutsatt att de har beviljats  [!UICONTROL Analysis Workspace: Save as Template] tillstånd i Admin Console. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -57,9 +56,9 @@ När du först öppnar en arbetsyta är mallarna tillgängliga i den vänstra li
 
 Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter dina behov (genom att till exempel lägga till eller ersätta mått eller visualiseringar) och spara dem under ett nytt namn.
 
-Här är en självstudiekurs (video) om [standardmallar i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/standard-templates-in-analysis-workspace.html) (2:46)
+Här är en självstudiekurs (video) om [standardmallar i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/standard-templates-in-analysis-workspace.html) (2:46)
 
-Här finns mallar och de frågor som varje mall kan besvara.
+Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
@@ -81,7 +80,7 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 * **Magento: Marknadsföring och handel**: Den här mallen bryter ned e-handelskonverteringen genom kanalattribuering, och ger insikt genom sökord, landningssida, geografisk plats med mera. En videoöversikt finns i:
 
->[!VIDEO](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/integrations/magento/magento-analysis-workspace-template.html)
+>[!VIDEO](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/integrations/magento/magento-analysis-workspace-template.html)
 
 ### Media
 
@@ -119,7 +118,7 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 
 >[!NOTE]
 >
->Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://docs.adobe.com/content/help/sv-SE/device-co-op/using/data/people.html).
+>Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/data/people.html).
 
 Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
 
@@ -135,7 +134,7 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 
 <!--This content is mirrored in the CDA doc.-->
 
-Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) (CDA).
+Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/cda-home.html) (CDA).
 
 * **Specialanteckning för medlemmarna i Co-op Graph**: Visar vilken del av rapportsviten som innehåller besökare i regioner där koordinatdiagrammet stöds och regioner där det inte stöds.
 * **Identifiering av användare**: Visar hur ofta besökare på er webbplats identifieras med hjälp av metoder som baseras på enhetsövergripande analys.
