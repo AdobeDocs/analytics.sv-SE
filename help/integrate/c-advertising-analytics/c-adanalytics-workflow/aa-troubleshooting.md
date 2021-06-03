@@ -2,14 +2,13 @@
 description: Felsöka och åtgärda problem som rör Advertising Analytics.
 title: Felsöka Advertising Analytics
 uuid: d0abe7cc-ed13-4d3d-87a6-f0d649c7ad2d
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+exl-id: 29e39a15-504a-4155-8794-aceb47046a54
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 9%
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
-
 
 # Felsöka Advertising Analytics
 
@@ -30,7 +29,7 @@ Du försöker [konfigurera ett nytt Advertising Account](/help/integrate/c-adver
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1. Rapportsviten är inte mappad till inloggningsanvändarens Experience Cloud-Org-ID. </p> </td> 
-   <td colname="col2"> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/sv-SE/core-services/interface/about-core-services/report-suite-mapping.html"  > Mappa rapportsviter till en organisation</a>. </p> </td> 
+   <td colname="col2"> <p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html"  > Mappa rapportsviter till en organisation</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Report Suite har inte etablerats för Advertising Analytics-rapportering. </p> </td> 
@@ -55,4 +54,3 @@ Du försöker [konfigurera ett nytt Advertising Account](/help/integrate/c-adver
   </tr> 
  </tbody> 
 </table>
-
