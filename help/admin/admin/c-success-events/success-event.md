@@ -2,14 +2,13 @@
 description: Success-händelser är åtgärder som kan spåras. Du avgör vilken händelse som lyckas. Om en besökare till exempel köper ett objekt kan köphändelsen betraktas som lyckad händelse.
 keywords: event
 title: Översikt över slutförda händelser
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 410eee44-8960-462c-a9c3-07b44d0b1df0
 exl-id: d52a691a-8124-4601-932f-d6d2d0a7842b
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 4%
+source-wordcount: '688'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +34,7 @@ Det finns många typer av framgångsrika händelser, beroende på webbplatstypen
 * **Högteknologi**: Nedladdning av rapporter, offertförfrågan, ifyllnad av formulär, supportförfrågningar
 * **Bilar**: Leadinlämning, anbudsförfrågan, nedladdning av broschyrer
 
-Variabeln [s.events](https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html) definierar en success-händelse.
+Variabeln [s.events](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html) definierar en success-händelse.
 
 ## Sidan Slutförda händelser - beskrivningar {#section_681ECEC981694CABBDBF00E18165B447}
 
