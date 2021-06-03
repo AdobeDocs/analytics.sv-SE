@@ -2,14 +2,13 @@
 description: Vanliga frågor om datahantering i Adobe Analytics
 title: Frågor och svar
 uuid: 1cd41253-d74f-4b92-92e6-56f9afa3df85
-translation-type: tm+mt
-source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1804'
 ht-degree: 99%
 
 ---
-
 
 # Frågor och svar
 
@@ -53,7 +52,7 @@ ht-degree: 99%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Hur ska personuppgiftsansvariga se på datalagring när det gäller datasekretess?</b> </p> </td> 
-   <td colname="col2"> <p>Datasekretess kräver i allmänhet att personuppgifter inte lagras längre än nödvändigt för att uppnå det syfte för vilket de samlades in. </p> <p>Enligt Adobes kundkommunikation från februari kommer vi att tillämpa en plan för 25 månaders datalagring för de flesta kunder, såvida inte andra arrangemang har gjorts (med förbehåll för kundmeddelande och tillstånd). Kunderna måste ange sin policy för datalagring innan Adobe kan behandla en begäran om datasekretess. </p> <p>Adobe Analytics kräver att kunderna anger sin datalagring till att behandla sina begäranden om datasekretess. Varje rapportsvits aktuella policy för datalagring visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna ska kontakta sin Adobe-representant om de behöver ändra sina regler för datalagring. Se <a href="https://docs.adobe.com/content/help/sv-SE/analytics/technotes/latency.html"> Vanliga frågor och svar om datalagring i Adobe Analytics. </a> </p> </td> 
+   <td colname="col2"> <p>Datasekretess kräver i allmänhet att personuppgifter inte lagras längre än nödvändigt för att uppnå det syfte för vilket de samlades in. </p> <p>Enligt Adobes kundkommunikation från februari kommer vi att tillämpa en plan för 25 månaders datalagring för de flesta kunder, såvida inte andra arrangemang har gjorts (med förbehåll för kundmeddelande och tillstånd). Kunderna måste ange sin policy för datalagring innan Adobe kan behandla en begäran om datasekretess. </p> <p>Adobe Analytics kräver att kunderna anger sin datalagring till att behandla sina begäranden om datasekretess. Varje rapportsvits aktuella policy för datalagring visas i det nya användargränssnittet för datastyrningsadministratörer. Kunderna ska kontakta sin Adobe-representant om de behöver ändra sina regler för datalagring. Se <a href="https://experienceleague.adobe.com/docs/analytics/technotes/latency.html"> Vanliga frågor och svar om datalagring i Adobe Analytics. </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Kan en kund minska eller förlänga standardperioden för datalagring?</b> </p> </td> 
