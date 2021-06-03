@@ -2,14 +2,13 @@
 description: I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
 title: Skapa mätvärden
 uuid: 3f51e911-cafa-4af4-90dd-5a4cb42bf0a7
-translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+exl-id: 12bb3734-e25d-4c67-8c62-e1226d9aef94
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '954'
 ht-degree: 1%
 
 ---
-
 
 # Skapa mätvärden
 
@@ -18,11 +17,11 @@ I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och sl
 Det finns flera sätt att komma åt verktyget för beräkning av mått:
 
 * Öppna ett projekt i Analysis Workspace och klicka på **[!UICONTROL + New]** > **[!UICONTROL Create Metric]** .
-* Gå [!DNL Analytics]till **[!UICONTROL Components]** > **[!UICONTROL Calculated Metrics]**.
+* I [!DNL Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated Metrics]**.
 
-* Klicka **[!UICONTROL + Add]** högst upp i [Beräknad metrisk hanterare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), eller
+* Klicka på **[!UICONTROL + Add]** högst upp i [hanteraren för beräknade mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), eller
 
-* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en rapport och klicka på Metrics-ikonen ![](assets/metrics_icon.png) för att visa Metrics-rälen. Klicka sedan på **[!UICONTROL Add]**.
+* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en rapport och klicka på Metrics icon ![](assets/metrics_icon.png) för att visa Metrics rail och klicka sedan på **[!UICONTROL Add]**.
 
 ![](assets/cm_builder_ui.png)
 
@@ -37,7 +36,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Titel </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Titel  </span> </td> 
    <td colname="col3"> <p>Det är obligatoriskt att namnge måttet. Du kan inte spara måttet om det inte har ett namn. </p> </td> 
   </tr> 
   <tr> 
@@ -45,30 +44,30 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
    <td colname="col3"> <p>Ge den en användarvänlig beskrivning för att visa vad den används för och skilja den från liknande. </p> <p>Beskrivningen visas också i en rapport. Det är bäst att INTE placera formeln i beskrivningen. Beskriv i stället vad det här måttet ska och inte ska användas för. (Formeln genereras när du bygger måttet, under rubriken Sammanfattning. Därför behöver du inte lägga till formeln i beskrivningen.) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Format </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Format  </span> </td> 
    <td colname="col3"> <p>Du kan välja Decimal, Time, Percent och Currency. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Decimaler </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Decimaler  </span> </td> 
    <td colname="col3"> <p>Visar hur många decimaler som ska visas i rapporten. Det maximala antalet decimaler som du kan ange är 10. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Visa uppåttrend som.. </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Visa uppåttrend som..  </span> </td> 
    <td colname="col3"> <p>Den här inställningen för metrisk polaritet visar om Analytics bör ta hänsyn till en uppåtgående trend i mätvärdet som god (grön) eller dålig (röd). Därför visas rapportens diagram som grönt eller rött när det går upp. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Taggar </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Taggar  </span> </td> 
    <td colname="col3"> <p>Taggning är ett bra sätt att ordna mätvärden. Alla användare kan skapa taggar och använda en eller flera taggar i ett mätresultat. Men du kan bara se taggar för de segment som du äger eller som har delats med dig. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar: 
      <ul id="ul_9A6CE5F179424687A39F2D5C1A953258"> 
-      <li id="li_A8815F2D8D284874AD701A7B103D82A3">Taggar baserade på <b>teamnamn</b>, som social marknadsföring och mobilmarknadsföring. </li> 
-      <li id="li_A51A4515A541488E9D90296A955E9F4F"><b>Projekttaggar</b> (analystaggar), t.ex. Sidanalys. </li> 
-      <li id="li_B4605470A7094026AC168420B64BBCC3"><b>Kategorimärkord</b> : Män geografi. </li> 
-      <li id="li_B6EAB0F2A96C41209C4EC97B9E64390B"><b>Arbetsflödestaggar</b> : För godkännande. Kuraterad för (en specifik affärsenhet) </li> 
+      <li id="li_A8815F2D8D284874AD701A7B103D82A3">Taggar baserade på <b>teamnamn</b>, som Social Marketing, Mobile Marketing. </li> 
+      <li id="li_A51A4515A541488E9D90296A955E9F4F"><b></b> Projectags (analystaggar), t.ex. Entry-page analysis. </li> 
+      <li id="li_B4605470A7094026AC168420B64BBCC3"><b></b> Kategoritaggar: Män geografi. </li> 
+      <li id="li_B6EAB0F2A96C41209C4EC97B9E64390B"><b></b> Arbetsflödestaggar: För godkännande. Kuraterad för (en specifik affärsenhet) </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Sammanfattning </span> </td> 
-   <td colname="col3"> <p>Den <span class="uicontrol"> sammanfattande </span> formeln uppdateras när du ändrar måttdefinitionen. Formeln visas också i måttfältet till vänster när du håller muspekaren över ett mätresultat och klickar på <img placement="inline"  src="assets/i_icon.png" id="image_BDA0EAF89C19440CB02AE248BA3F968E" /> ikonen. </p> </td> 
+   <td colname="col2"> <span class="uicontrol"> Sammanfattning  </span> </td> 
+   <td colname="col3"> <p><span class="uicontrol">-sammanfattningen </span>-formeln uppdateras när du ändrar måttdefinitionen. Formeln visas också i måttfältet till vänster när du håller muspekaren över ett mätresultat och klickar på ikonen <img placement="inline"  src="assets/i_icon.png" id="image_BDA0EAF89C19440CB02AE248BA3F968E" />. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Definition </span> </td> 
@@ -79,19 +78,19 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Operator </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Operator  </span> </td> 
    <td colname="col3"> <p>Dividerad med ( <img placement="inline"  src="assets/divided_icon.png" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) är standardoperatorn, plus operatorerna +, - och x. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Förhandsgranska </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Förhandsgranska  </span> </td> 
    <td colname="col3"> <p>Ger en snabb läsning av eventuella fel. Förhandsvisningen täcker de senaste 90 dagarna. Det här är ett sätt att först mäta om du har valt rätt komponenter för måttet. Ett oväntat resultat skulle innebära att du måste ta en andra titt på måttdefinitionen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Produktkompatibilitet </span> </td> 
-   <td colname="col3"> <p>Produktkompatibiliteten visar om mätvärdena är kompatibla med <a href="https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/current-data.html"  > aktuella data </a>, fullständigt bearbetade data eller endast med marknadsföringskanalrapporter (första-beröringstilldelning). <p>Obs!  Aktuella data stöder inte alla mått. Mätvärden som innehåller segment eller funktioner är inte kompatibla med aktuella data. <a href="/help/components/c-calcmetrics/cm-compatibility.md"  > Mer... </a> </p> </p> </td> 
+   <td colname="col2"> <span class="uicontrol"> Produktkompatibilitet  </span> </td> 
+   <td colname="col3"> <p>Produktkompatibiliteten visar om mätvärdet är kompatibelt med <a href="https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html"  > aktuella data </a>, fullständigt bearbetade data eller endast med marknadsföringskanalrapporter (allokering vid första beröringen). <p>Obs!  Aktuella data stöder inte alla mått. Mätvärden som innehåller segment eller funktioner är inte kompatibla med aktuella data. <a href="/help/components/c-calcmetrics/cm-compatibility.md"  > Mer... </a> </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> Lägg till </span> </td> 
+   <td colname="col2"> <span class="uicontrol"> Lägg till  </span> </td> 
    <td colname="col3"> <p>För alla typer av beräknade värden kan du lägga till behållare och statiska tal i definitionen. För avancerade beräknade mätvärden kan du även lägga till segment och funktioner. </p> <p> 
      <ul id="ul_607C1B303F334062BC620317667DE490"> 
       <li id="li_53462789B8AF4F1AA9B45565D37CF22B">Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas alltså före nästa åtgärd. </li> 
@@ -100,12 +99,12 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> Kugghjulsikon ( <span class="uicontrol"> Mättyp </span>, <span class="uicontrol"> Attribution </span>) </td> 
-   <td colname="col3"> <p>Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md"  > mät- och attribueringsmodeller </a>. </p> </td> 
+   <td colname="col2"> Kugghjulsikon ( <span class="uicontrol"> Måtttyp </span>, <span class="uicontrol"> Attribution </span>) </td> 
+   <td colname="col3"> <p>Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md"  >-måtttypen och attribueringsmodellerna </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <span class="uicontrol"> + Ny </span> </td> 
-   <td colname="col3"> <p>Gör att du kan skapa en ny komponent, t.ex. ett nytt segment (som tar dig till <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > segmentbyggaren </a>). </p> </td> 
+   <td colname="col2"> <span class="uicontrol"> + Ny  </span> </td> 
+   <td colname="col3"> <p>Gör att du kan skapa en ny komponent, till exempel ett nytt segment (som tar dig till <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > Segment Builder </a>.) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Sökkomponenter </p> </td> 
@@ -119,9 +118,9 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
    <td colname="col2"> <p>Lista över mått </p> </td> 
    <td colname="col3"> <p>Mätvärden finns i tre kategorier: </p> 
     <ul id="ul_7BF50F4964EF45858FBA1634FBFA45CF"> 
-     <li id="li_90F2312927A6499CA1CE04F8FFC912CF">Standardvärden ( <img placement="inline"  src="assets/met_icon.png" id="image_65A80F54D73443E78542FE0B31CC3F20" />) </li> 
+     <li id="li_90F2312927A6499CA1CE04F8FFC912CF">Standardmått ( <img placement="inline"  src="assets/met_icon.png" id="image_65A80F54D73443E78542FE0B31CC3F20" />) </li> 
      <li id="li_A3F59083E79B4AC780D6F8CEDFFD20C9">Beräknade värden ( <img placement="inline"  src="assets/calc_met_icon.png" id="image_C5674AB9B9EB4DA9A56782D15822C319" />) </li> 
-     <li id="li_8735E76637ED4C3F983731A66E04C93E">Mätmallar ( <img placement="inline"  src="assets/cm_template_icon.png" width="25px" id="image_D236601511CC4DD3828F223431E27E88" />) - längst ned i listan. </li> 
+     <li id="li_8735E76637ED4C3F983731A66E04C93E">Mätningsmallar ( <img placement="inline"  src="assets/cm_template_icon.png" width="25px" id="image_D236601511CC4DD3828F223431E27E88" />) - längst ned i listan. </li> 
     </ul> <p>När du hovrar över ett mätresultat visas ikonen Info till höger om det: <img placement="inline"  src="assets/info.png" width="150px" id="image_5A65E772A68A4B94ACAD6552CCF21F5F" />. Om du klickar på den här ikonen visas följande information: </p> 
     <ul id="ul_DF35DDB9FBFA40C8A93FA0F2286A0BBE"> 
      <li id="li_4215AA9BF93F4C8B941002A7A4D2F50B">Formeln för hur den beräknas. </li> 
@@ -131,7 +130,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
   </tr> 
   <tr> 
    <td colname="col2"> <p>Segmentlista </p> </td> 
-   <td colname="col3"> <p>(Endast avancerade beräknade värden) Som administratör visar den här listan alla segment som har skapats i ditt inloggningsföretag. Om du inte är administratör visas de segment du äger och de som delas med dig i den här listan. <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segment-reference/seg-rights.html"  > Mer... </a> </p> </td> 
+   <td colname="col3"> <p>(Endast avancerade beräknade värden) Som administratör visar den här listan alla segment som har skapats i ditt inloggningsföretag. Om du inte är administratör visas de segment du äger och de som delas med dig i den här listan. <a href="https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-rights.html"  > Mer... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Lista över funktioner </p> </td> 
@@ -143,4 +142,3 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
   </tr> 
  </tbody> 
 </table>
-
