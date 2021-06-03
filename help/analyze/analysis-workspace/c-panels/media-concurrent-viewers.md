@@ -1,16 +1,15 @@
 ---
 title: Panelen för samtidiga medieanvändare
 description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
-feature: Panels
+feature: Paneler
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 29575b51-e319-4156-9834-aa0b671afb31
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
-
 
 # Panelen för samtidiga medieanvändare
 
@@ -75,7 +74,7 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 | Kan jag köra avvikelseidentifiering? | Nej.  Anomalsidentifiering är inte tillgängligt för den här panelen. |
 | Varför använda unika besökare istället för aktiva sessioner? | Genom att använda unika besökare kan du ta bort oönskade toppar vid visningsgränserna (där sessionerna avslutas och börjar samtidigt). |
 | Vad innebär det att ha samtidiga visningsprogram med högre granularitet än en minut? | Med en granularitet som är större än en minut är samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom det tidsintervallet.  På timnivå är till exempel samtidiga visningsprogram summan av unika samtidiga visningsprogram för alla minuter inom timmen. |
-| Vad gör jag om jag vill se mer än en dag i granularitet på minutnivå? | Om du vill få åtkomst till data på minutnivå med granularitet i upp till en månad i taget kan du använda API:erna i Analytics 2.0. Mer information finns i [Hämta JSON-rapportdata för samtidiga visningsprogram med API:er för Analytics 2.0](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html). |
+| Vad gör jag om jag vill se mer än en dag i granularitet på minutnivå? | Om du vill få åtkomst till data på minutnivå med granularitet i upp till en månad i taget kan du använda API:erna i Analytics 2.0. Mer information finns i [Hämta JSON-rapportdata för samtidiga visningsprogram med API:er för Analytics 2.0](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html). |
 | Visar arbetsytan samma information som rapporten Samtidiga visningsprogram? | Nej.  I Analysis Workspace definieras samtidiga visningsprogram som antalet unika besökare som visar medieströmmen vid en viss tidpunkt, oavsett antalet sessioner.<br><br>Detta skiljer sig från Concurrent Viewer-rapporteringen i avsnittet Rapporter, där Concurrent Active Sessions används.  Med unika besökskonton kan du ta bort oönskade toppar vid visningsgränserna, där sessionerna avslutas och börjar samtidigt. |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->
