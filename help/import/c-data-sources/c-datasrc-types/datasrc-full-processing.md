@@ -3,11 +3,10 @@ description: Datakällor har stöd för följande variabler när data bearbetas 
 title: Fullständig bearbetning
 topic-fix: Developer and implementation
 exl-id: 9eb8c754-f4de-4483-934e-3f79134516ca
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 9%
+source-wordcount: '719'
+ht-degree: 7%
 
 ---
 
@@ -69,7 +68,7 @@ En användare med besökar-ID `"user@example.com"` besöker till exempel din web
   <tr> 
    <td colname="col1"> <p>händelser </p> </td> 
    <td colname="col2"> <p>händelser </p> </td> 
-   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som variabeln <a href="https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events </a>. </p> <p>Exempel: </p> 
+   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som variabeln <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events </a>. </p> <p>Exempel: </p> 
     <code>
       scAdd,event1,event7 
     </code> </td> 
@@ -172,7 +171,7 @@ Följande tabell innehåller trafikvariabler som fylls i automatiskt när JavaSc
   </tr> 
   <tr> 
    <td colname="col1"> <p>charSet </p> </td> 
-   <td colname="col2"> <p>Den teckenuppsättning som stöds för din webbplats. Exempel: UTF-8, ISO-8859-1 osv. </p> <p>En fullständig lista finns i <a href="https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/configuration-variables.html#concept_E65B9A8F75C3482C87D0D455805F89BD"  > Multi-Byte Character Sets </a> (Internationalization). </p> </td> 
+   <td colname="col2"> <p>Den teckenuppsättning som stöds för din webbplats. Exempel: UTF-8, ISO-8859-1 osv. </p> <p>En fullständig lista finns i <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/configuration-variables.html#concept_E65B9A8F75C3482C87D0D455805F89BD"  > Multi-Byte Character Sets </a> (Internationalization). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>clickAction </p> </td> 
