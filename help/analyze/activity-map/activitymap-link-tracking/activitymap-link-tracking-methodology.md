@@ -4,14 +4,13 @@ title: Metod för länkspårning
 uuid: 67864bf9-33cd-46fa-89a8-4d83d3b81152
 feature: Activity Map
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: f9d9c7dbaf5fde5bd51c929d927d4cd3f61cb63b
+exl-id: 6aef3a0f-d0dd-4c84-ad44-07b286edbe18
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
-
 
 # Metod för länkspårning
 
@@ -19,7 +18,7 @@ Det här avsnittet är avsett för Adobe Analytics-administratörer. Det fokuser
 
 >[!IMPORTANT]
 >
->Alla länkar där texten (inte href) kan innehålla PII (personligt identifierbar information) ska implementeras explicit med [s_objectID](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) eller genom att utesluta ActivityMap-länksamlingen med [s.ActivityMap.linkExclusions eller s.ActivityMap.regionExclusions](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md#configuration-vars). Mer information om hur Activity Map kan samla in PII-data finns [här](/help/analyze/activity-map/lnk-tracking-overview.md).
+>Alla länkar där texten (inte href) kan innehålla PII (personligt identifierbar information) ska implementeras explicit med [s_objectID](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) eller genom att utesluta ActivityMap-länksamlingen med [s.ActivityMap.linkExclusions eller s.ActivityMap.regionExclusions](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md#configuration-vars). Mer information om hur Activity Map kan samla in PII-data finns [här](/help/analyze/activity-map/lnk-tracking-overview.md).
 
 Activity Map baserar länkspårningen på följande två ID:
 
@@ -51,7 +50,7 @@ Därför använder vi InnerText med följande fördelar jämfört med att använ
 * Den påverkas inte av en omplacering av länkar på sidan.
 * Det förbättrar läsbarheten så att användare kan börja analysera rapporter om länkspårning utanför Activity Map.
 
-## Länkområde {#section_75BF9B9E3CE94B59ACC3D9AF63E04535}
+## Länka område {#section_75BF9B9E3CE94B59ACC3D9AF63E04535}
 
 Med det här nya attributet kan användare ange en sträng som är representativ för det sidområde där länken finns.
 
