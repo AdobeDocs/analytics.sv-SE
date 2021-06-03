@@ -4,10 +4,9 @@ subtopic: Classifications
 title: Klassificeringsregler
 feature: Administratörsverktyg
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
-translation-type: tm+mt
-source-git-commit: 8deec1546bc0c7ef7419eb733e54c2fffe90e252
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1967'
 ht-degree: 1%
 
 ---
@@ -60,7 +59,7 @@ about_classification_rules.xml
 
 ## Viktig information om regler
 
-* Ange [gruppbehörigheter](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
+* Ange [gruppbehörigheter](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) för klassificeringar i [!UICONTROL Admin Tools].
 
 * **Reguljära uttryck**: Hjälp finns under  [Reguljära uttryck i klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md).
 
@@ -159,7 +158,7 @@ Konfigurera regeln på följande sätt i [!UICONTROL Rule Builder]:
 
 Se [Reguljära uttryck - referenstabell](/help/components/classifications/crb/classification-quickstart-rules.md#section_0211DCB1760042099CCD3ED7A665D716) för information om vad tecknen i ett reguljärt uttryck betyder.
 
-## Reguljärt uttryck - klassificerar ett specifikt tecken {#section_5D300C03FA484BADACBFCA983E738ACF}
+## Reguljärt uttryck - klassificera ett visst tecken {#section_5D300C03FA484BADACBFCA983E738ACF}
 
 Ett sätt att använda ett reguljärt uttryck är att klassificera ett visst tecken i en teckensträng. Anta till exempel att följande spårningskod innehåller två viktiga tecken:
 
@@ -284,7 +283,7 @@ Här följer ett exempel på en sökordsregel som klassificerar sökningstyper f
 
 | Regelnummer | Regeltyp | Matcha | Ange klassificering | Till |
 |---|---|---|---|---|
-| 1 | Innehåller | Cowboy | Söktyp | Team |
+| 3 | Innehåller | Cowboy | Söktyp | Team |
 | 2 | Innehåller | Fantasy | Söktyp | Fantasy |
 | 1 | Innehåller | Romo | Söktyp | Player |
 
