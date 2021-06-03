@@ -5,11 +5,10 @@ title: Förbereda för att använda Data Sources
 topic-fix: Developer and implementation
 uuid: 876ea069-574b-4e23-93b7-e3828bfd90f5
 exl-id: 3cad7c33-f31c-41a2-9dd2-9535713c7620
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 5%
+source-wordcount: '567'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +28,7 @@ Det är viktigt att förstå mätvärden eller mått som finns i datakällorna, 
 
 När du har fastställt lämpliga metrisk-till-händelse-mappningar för Data Sources-data ändrar du namn på händelserna med beskrivande namn som passar för det associerade datakällmåttet.
 
-Se [Slutförda händelser](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) i hjälpen för Admin Tools.
+Se [Slutförda händelser](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) i hjälpen för Admin Tools.
 
 >[!NOTE]
 >
@@ -51,7 +50,7 @@ När du har definierat de datamängder som ska användas med en datakälla integ
 
 När du använder eVars kan du använda befintliga eVars eller nya eVars som datamått. När du har valt en eVar som ska ta emot en datamängd från datakällor måste du namnge dem korrekt.
 
-Se [Success Events](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) i Analytics-hjälpen.
+Se [Success Events](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) i Analytics-hjälpen.
 
 ## Kampanjspårningskod {#section_468222796FF449ABAA90D88EB3264CB1}
 
