@@ -2,16 +2,15 @@
 description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att visa viktiga datapunkter i ett projekt.
 title: Sammanfattning av antal och förändring
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
-feature: Visualizations
+feature: Visualiseringar
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: d6a08201-ca3a-48ff-983a-3ec6b989deda
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 5%
+source-wordcount: '459'
+ht-degree: 3%
 
 ---
-
 
 # Sammanfattning av antal och förändring
 
@@ -46,7 +45,7 @@ Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för at
 
 ## Visualisering av sammanfattning {#summary-change}
 
-Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) eller [alternativet Visa uppåttrend som](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) för ett beräknat mått.
+Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) eller [alternativet Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) för ett beräknat mått.
 
 Den här visualiseringen fungerar på följande sätt:
 
