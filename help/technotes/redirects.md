@@ -6,10 +6,9 @@ title: Omdirigering och alias
 topic-fix: Developer and implementation
 uuid: 11f9ad7a-5c45-410f-86dd-b7d2cec2aae3
 exl-id: 0ed2aa9b-ab42-415d-985b-2ce782b6ab51
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
@@ -59,7 +58,7 @@ redirects_implement.xml
 
 När du slutför följande steg behålls den information som den ursprungliga referenten (till exempel `https://www.google.com/search?hl=en&ie=UTF-8&q=discount+airline+tickets` i scenariot ovan) skickar till din plats:
 
-## Konfigurera referens åsidosätter JavaScript-kod {#section_87BB1D47D9C345C18339078824645CC4}
+## Konfigurera referens åsidosätta JavaScript-kod {#section_87BB1D47D9C345C18339078824645CC4}
 
 <!-- 
 
@@ -85,7 +84,7 @@ s.pageURL=""
 >
 >Ange *`s.referrer`* bara en gång på sidan. Om du anger det mer än en gång med varje spårningsanrop eller med varje länkklick som spåras, kommer referenten att räknas dubbelt och relaterade dimensioner, som sökmotorer och nyckelord.
 
-## Omdirigerar med getQueryParam {#section_EE924E399F7A431C8FC8E8A2BEF84DEC}
+## Omdirigeringar med getQueryParam {#section_EE924E399F7A431C8FC8E8A2BEF84DEC}
 
 Även om [!UICONTROL getQueryParam] är ett enkelt sätt att fylla i [!DNL Analytics]-variabler med frågesträngsvärden, måste den implementeras tillsammans med en tillfällig variabel så att berättigade referenser inte skrivs över när frågesträngen är tom. Det bästa sättet att använda [!UICONTROL getQueryParam] är i anslutning till [!UICONTROL getValue]-pluginen enligt följande pseudokod.
 
@@ -140,7 +139,7 @@ s.referrer="https://www.google.com/search?hl=en&ie=UTF-8&q=discount+airline+tick
 s.pageURL="https://www.flytohawaiiforfree.com"
 ```
 
-## Verifiera referenten med felsökaren för Adobe {#section_B3E85941982E4E1698B271375AD669B9}
+## Verifiera referenten med Adobe-felsökaren {#section_B3E85941982E4E1698B271375AD669B9}
 
 <!-- 
 
@@ -150,7 +149,7 @@ redirects_verify_referrer.xml
 
 Kör ett test för att verifiera att referenten, ursprunglig URL ( *`s_server`*) och kampanjvariabler hämtas.
 
-Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+Dessa variabler representeras som följande parametrar i [Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 <table id="table_5F3B987D4D514CA283F7B9F52EBC2301"> 
  <thead> 
