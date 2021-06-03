@@ -2,16 +2,15 @@
 description: Visa dina data visuellt med visualiseringar.
 keywords: Analysis Workspace
 title: Översikt över visualiseringar
-feature: Visualizations
+feature: Visualiseringar
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1081'
 ht-degree: 4%
 
 ---
-
 
 # Översikt över visualiseringar
 
@@ -79,7 +78,7 @@ Så här redigerar du en förklaringsetikett:
 1. Ange den nya etikettexten.
 1. Tryck på **[!UICONTROL Enter]** för att spara.
 
-Här är en [länk till en video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om det här ämnet.
+Här är en [länk till en video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) om det här ämnet.
 
 ## Högerklicka på menyn {#right-click}
 
