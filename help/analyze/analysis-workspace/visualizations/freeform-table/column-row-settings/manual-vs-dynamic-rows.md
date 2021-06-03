@@ -1,16 +1,15 @@
 ---
 title: Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 description: Hur man interagerar med dynamiska och statiska dimensionsobjekt i tabeller.
-feature: Freeform Tables
+feature: Frihandstabeller
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 4cdc93b5-67ed-46a4-ba9f-a96e640da9d9
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
-
 
 # Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller
 
@@ -54,4 +53,4 @@ Dimensioner från olika dimensioner kan läggas till i samma tabell. Radhuvudet 
 Dynamiska och statiska rader fungerar på olika sätt i den totala frihandsraden. Som standard:
 
 * Dynamiska rader summeras på serversidan och dubblettvärden som besök och besökare tas bort
-* Statiska rader summeras på klientsidan och gör **inte** avduplicerade mått. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
+* Statiska rader summeras på klientsidan och gör **inte** avduplicerade mått. Om du vill beräkna den totala radserversidan ändrar du radinställningen till **Visa totalsumma**. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
