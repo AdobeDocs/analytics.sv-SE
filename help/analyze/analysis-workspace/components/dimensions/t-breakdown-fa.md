@@ -3,16 +3,15 @@ description: Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
 keywords: Analysis Workspace
 title: Dela upp dimensioner
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 0d26c920-d0d9-4650-9cf0-b67dbc4629e1
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '224'
 ht-degree: 15%
 
 ---
-
 
 # Dela upp dimensioner
 
@@ -31,9 +30,9 @@ Analysera data på obegränsade sätt efter just era behov och bygg frågor med 
    >
    >Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen kommer att öka för export av uppdelningar.
 
-[Lägga till Dimensioner och statistik i ditt projekt i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/metrics/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace.html)  (11:39)
+[Lägga till Dimensioner och statistik i ditt projekt i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/metrics/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace.html)  (11:39)
 
-[Arbeta med Dimensioner i en frihandstabell](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table.html)  (15:35)
+[Arbeta med Dimensioner i en frihandstabell](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table.html)  (15:35)
 
 ## Tillämpa attribueringsmodeller på uppdelningar
 
