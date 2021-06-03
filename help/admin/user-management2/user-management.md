@@ -5,10 +5,10 @@ title: Hantering av användare och produkter
 feature: Administratörsverktyg
 uuid: 891a8cb3-b77d-46f6-ab23-cbed49f215b5
 exl-id: c0fbbb3a-0011-49d2-89a2-70fce11e0fb2
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 5%
+source-wordcount: '550'
+ht-degree: 3%
 
 ---
 
@@ -32,11 +32,11 @@ Hantera Analytics-användare, -grupper och -produkter i Admin Console.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Migrera användar-ID:n för Analytics till Admin Console </p> </td> 
-   <td colname="col2"> <p> Adobe hjälper Analytics-administratörer att migrera användar-ID:n till Adobe Admin Console. Den här insatsen sker i vågor. När det är din tur att migrera dina användare kommer Adobe att meddela Analytics-administratörer via e-post med instruktioner. Då kommer ett <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html">-migreringsverktyg</a> att vara tillgängligt i Användarhantering för Analytics för att förenkla den här uppgiften. </p> <p>Viktigt: När dina användare migreras kopieras dina tidigare behörighetsgrupper automatiskt till Admin Console. Du kan inte längre bjuda in nya användare eller skapa nya grupper i administrationsverktygen för Analytics. Granska Frågor och svar och hjälp i <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html"> Analytics User Migration till Admin Console</a> för information om hur du förbereder dig för migreringen och om administrativa funktioner som påverkas. </p> </td> 
+   <td colname="col2"> <p> Adobe hjälper Analytics-administratörer att migrera användar-ID:n till Adobe Admin Console. Den här insatsen sker i vågor. När det är din tur att migrera dina användare kommer Adobe att meddela Analytics-administratörer via e-post med instruktioner. Då kommer ett <a href="https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html">-migreringsverktyg</a> att vara tillgängligt i Användarhantering för Analytics för att förenkla den här uppgiften. </p> <p>Viktigt: När dina användare migreras kopieras dina tidigare behörighetsgrupper automatiskt till Admin Console. Du kan inte längre bjuda in nya användare eller skapa nya grupper i administrationsverktygen för Analytics. Granska Frågor och svar och hjälp i <a href="https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html"> Analytics User Migration till Admin Console</a> för information om hur du förbereder dig för migreringen och om administrativa funktioner som påverkas. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Starta Admin Console </p> </td> 
-   <td colname="col2"> <p>När dina användarkonton har migrerats kan du hantera användare och produkter över alla lösningar i Admin Console </p> <p>Navigera till: <a href="https://adminconsole.adobe.com/enterprise/#"> https://adminconsole.adobe.com/enterprise/</a>. </p> <p>Mer information finns i <a href="https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html"> Hantera användare och produkter av Experience Cloud</a> för uppdateringar av användarhantering och produkthantering för Experience Cloud i Admin Console. </p> </td> 
+   <td colname="col2"> <p>När dina användarkonton har migrerats kan du hantera användare och produkter över alla lösningar i Admin Console </p> <p>Navigera till: <a href="https://adminconsole.adobe.com/enterprise/#"> https://adminconsole.adobe.com/enterprise/</a>. </p> <p>Mer information finns i <a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html"> Hantera användare och produkter av Experience Cloud</a> för uppdateringar av användarhantering och produkthantering för Experience Cloud i Admin Console. </p> </td> 
   </tr> 
  </tbody> 
 </table>
