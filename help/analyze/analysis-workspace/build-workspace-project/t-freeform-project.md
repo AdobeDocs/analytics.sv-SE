@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Skapa ett Workspace-projekt
 feature: Rapporter och analysgrunder
 uuid: c1def77a-a76e-4699-9feb-1ede5b70b7ba
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 14%
+source-wordcount: '730'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +22,7 @@ I den här artikeln får du information om Analysis Workspace gränssnittselemen
 
 1. Ange användarbehörighet för att skapa och strukturera projekt.
 
-   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med behörigheten **[!UICONTROL Create / Curate Projects in Analysis Workspace]** aktiverad, eller i användargruppen **[!UICONTROL All Report Access]**. (**[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** > [Grupper](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html)).
+   Innan du skapar eller strukturerar ett Analysis Workspace-projekt måste administratörer lägga till dig i en grupp med behörigheten **[!UICONTROL Create / Curate Projects in Analysis Workspace]** aktiverad, eller i användargruppen **[!UICONTROL All Report Access]**. (**[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** > [Grupper](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** i [!DNL Experience Cloud].
 
