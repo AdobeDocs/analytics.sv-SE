@@ -1,13 +1,12 @@
 ---
 description: Segmenthanteraren erbjuder många sätt att strukturera segment, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 title: Hantera segment
-feature: Segmentation
+feature: Segmentering
 uuid: 47d54822-a662-471d-8dab-03ddf6c2f395
 exl-id: be182a55-23cb-415f-a7d0-3c1efeead1a1
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '422'
 ht-degree: 5%
 
 ---
@@ -21,11 +20,11 @@ Segmenthanteraren i Analytics visar alla segment som du äger och som har delats
 * Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]** i den översta navigeringen.
 * Visa en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**.
 
-## Instruktionsvideo {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
+## Videoinstruktion {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
 
-Denna [Adobe Analytics-video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) ger en kort översikt över hur du använder segmenthanteraren.
+Denna [Adobe Analytics-video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) ger en kort översikt över hur du använder segmenthanteraren.
 
-## Segmenthanterarens användargränssnitt {#section_7FDCD12949BE4741A402DB83AB7B37DF}
+## Användargränssnitt för segmenthanteraren {#section_7FDCD12949BE4741A402DB83AB7B37DF}
 
 ![](assets/segment_manager_ui.png)
 
@@ -33,7 +32,7 @@ Denna [Adobe Analytics-video](https://docs.adobe.com/content/help/en/analytics-l
 |---|---|---|
 | 1 | Verktygsfält för segmenthantering | När du har markerat ett segment visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
 | 2 | Visa filter | När du klickar på filterikonen visas filtermenyn. Du kan filtrera efter taggar, ägare, Visa alla (endast administratör), Min, Favoriter, Godkänd och Delade med mig. |
-| 3 | Kryssrutor | Kontrollera ett segment för att hantera det. |
+| 1 | Kryssrutor | Kontrollera ett segment för att hantera det. |
 | 4 | Favoriter | Om du klickar på stjärnan bredvid ett segment ändras stjärnans gula färg och segmentet markeras som en favorit. |
 | 5 | Segmenttitlar och beskrivningar | Tillhandahålls i Segment Builder. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till segmentbyggaren. |
 | 6 | Rapportsviter | Den här kolumnen anger i vilken rapportsserie segmentet senast sparades. |
