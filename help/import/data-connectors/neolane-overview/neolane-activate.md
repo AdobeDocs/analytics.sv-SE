@@ -2,18 +2,20 @@
 description: Använd konfigurationsguiden för Adobe Data Connectors för att konfigurera integreringen.
 title: Aktivera integreringen
 uuid: 93c59f8e-3cf5-44c1-9a04-22460af93d5d
-translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+exl-id: d36c26ad-09c4-4a4d-a653-670c18f2ab19
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '416'
+ht-degree: 3%
 
 ---
-
 
 # Aktivera integreringen{#activate-the-integration}
 
 Använd konfigurationsguiden för Adobe Data Connectors för att konfigurera integreringen.
 
-1. Starta [Data Connectors](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/getting-started-data-connectors.html) och klicka **[!UICONTROL + Add New]** för att [lägga till en ny integrering](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/getting-started-data-connectors.html).
-1. I **[!UICONTROL Show]** listan markerar du **[!UICONTROL By Name]** och drar [!DNL ~partnerintegreringen~] till en tom plugin-plats.
+1. Starta [Dataanslutningar](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/getting-started-data-connectors.html) och klicka på **[!UICONTROL + Add New]** för att [lägga till en ny integrering](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/getting-started-data-connectors.html).
+1. I listan **[!UICONTROL Show]** väljer du **[!UICONTROL By Name]** och drar integreringen [!DNL ~Partner~] till en tom plugin-plats.
 1. Slutför integreringsguiden med hjälp av informationen i följande tabell:
 
 | Fält | Beskrivning |
