@@ -1,16 +1,15 @@
 ---
 description: Funktioner för tillgänglighetsstöd i Analysis Workspace
 title: Tillgänglighet i Analysis Workspace
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 2bacbee8-097c-4fc5-8be4-7e4f284db08c
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 2%
+source-wordcount: '638'
+ht-degree: 1%
 
 ---
-
 
 # Tillgänglighet i Analysis Workspace
 
@@ -50,7 +49,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 
 ### Kortkommandon (snabbtangenter)
 
-[!UICONTROL Analysis Workspace] erbjuder en mängd  [kortkommandon ](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
+[!UICONTROL Analysis Workspace] erbjuder en mängd  [kortkommandon ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) för ett smidigare arbetsflöde. Nedan listas några vanliga genvägar för navigering, skapande av analyser och demokratisering av insikter.
 
 #### Navigering
 
@@ -71,7 +70,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar överst > nedåt och väns
 | Ctrl + Skift + D | Nytt datumintervall |
 | Ctrl + Skift + E | Nytt segment |
 | Ctrl + Z | Ångra |
-| Håll ned skift (i panelsegmentets dropzone) | Skapa ett [listrutefilter](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| Håll ned skift (i panelsegmentets dropzone) | Skapa ett [listrutefilter](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
 
 #### Demokratisering
 
@@ -92,7 +91,7 @@ En skärmläsare läser upp text som visas på datorskärmen. Den läser även i
 
 [!UICONTROL Analysis Workspace] eftersträvar WCAG 2.1-överensstämmelse, inklusive krav på färgkontrast.
 
-Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
+Dessutom kan användare ange en egen önskad färgpalett för ett projekt under **[!UICONTROL Project]** > **[!UICONTROL Project settings]** > [Projektfärgpalett](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html).
 
 ## Obligatorisk fältvalidering i komponentbyggare
 
