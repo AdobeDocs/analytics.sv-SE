@@ -4,14 +4,13 @@ title: Differentiera länkar som refererar till samma länk-ID och region
 uuid: f2da0cda-a33b-4a12-8d99-1f58386d6d30
 feature: Activity Map
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: f9d9c7dbaf5fde5bd51c929d927d4cd3f61cb63b
+exl-id: 43fe4eb9-08fe-4e20-bc02-3f712c3dec1d
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 5%
+source-wordcount: '364'
+ht-degree: 6%
 
 ---
-
 
 # Differentiera länkar som refererar till samma länk-ID och region
 
@@ -76,7 +75,7 @@ Hur kan du anpassa din webbsida och taggning för att särskilja länkarnas vär
 
 ## Anpassa länk-ID med s_objectID {#section_01B0D463397B4837B2D46F087A6E5937}
 
-Genom att skapa ett unikt objekt-ID, `s_objectID`, för en länk eller länkplats på en sida kan du antingen förbättra spårningen av Activity Map eller använda Activity Map för att rapportera en länktyp eller plats, i stället för länkens URL. Klicka [här](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) om du vill ha mer information om variabeln `s_objectID`.
+Genom att skapa ett unikt objekt-ID, `s_objectID`, för en länk eller länkplats på en sida kan du antingen förbättra spårningen av Activity Map eller använda Activity Map för att rapportera en länktyp eller plats, i stället för länkens URL. Klicka [här](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) om du vill ha mer information om variabeln `s_objectID`.
 
 >[!IMPORTANT]
 >
@@ -195,7 +194,7 @@ Du kan anpassa regionen genom att se till att varje köplänk har en egen region
  </tbody>
 </table>
 
-## Anpassa AppMeasurement ActivityMap-modulfilen {#section_B933BB9F944E4D5389002908A5A881F8}
+## Anpassa filen AppMeasurement ActivityMap Module {#section_B933BB9F944E4D5389002908A5A881F8}
 
 >[!CAUTION]
 Kontrollera att du testar den ändrade koden så att den fungerar som den ska. Adobe ansvarar inte för hur den ändrade koden fungerar.
