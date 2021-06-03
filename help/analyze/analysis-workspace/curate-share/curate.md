@@ -2,16 +2,15 @@
 description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
 keywords: Analysis Workspace kurser
 title: Kuratprojekt
-feature: Curate and Share
+feature: Kuratera och dela
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 5e23be83-586a-4543-9be9-65c631b8b0b7
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '518'
+ht-degree: 0%
 
 ---
-
 
 # Kuratprojekt
 
@@ -48,7 +47,7 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## VRS-kuration (Virtual Report Suite)
 
-Om du vill använda kurering på rapportsvitnivå, så att den gäller för många projekt samtidigt, kan du [strukturera komponenter i en VRS (Virtual Report Suite)](https://docs.adobe.com/content/help/en/analytics/components/virtual-report-suites/vrs-components.html).
+Om du vill använda kurering på rapportsvitnivå, så att den gäller för många projekt samtidigt, kan du [strukturera komponenter i en VRS (Virtual Report Suite)](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html).
 
 >[!NOTE]
 > VRS-kurering används alltid före projektkurering. Detta innebär att även om ditt kuraterade projekt innehåller vissa komponenter, kommer de att filtreras bort om det aktuella VRS inte innehåller dem.
