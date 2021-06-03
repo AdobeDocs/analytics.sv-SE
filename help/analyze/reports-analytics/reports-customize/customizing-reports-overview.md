@@ -5,11 +5,10 @@ uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
 feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: 5a042fac-926e-4560-83bf-11f66ddb8273
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 4%
+source-wordcount: '868'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +38,7 @@ Endast administratörer kan skapa en anpassad rapport. När du skapar en anpassa
 
 >[!MORELIKETHIS]
 >
->* [Menyanpassning](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/customize-menus.html)
+>* [Menyanpassning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/customize-menus.html)
 
 
 ## Välj ett datum eller datumintervall {#task_9BEF7D4D839A4748B76E8500D1406C34}
@@ -87,7 +86,7 @@ Du kan inte jämföra datum mellan trendrapporter.
 
 >[!NOTE]
 >
->Om du vill utföra en datumjämförelse på nyckelvärden i en kontrollpanel kan du hämta data till [Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/home.html) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
+>Om du vill utföra en datumjämförelse på nyckelvärden i en kontrollpanel kan du hämta data till [Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
 
 Så här jämför du datum mellan rankade rapporter i Rapporter och analyser:
 
@@ -224,4 +223,4 @@ De flesta rapporter i Rapporter och analyser innehåller nu knappen Testa i arbe
 
 För närvarande är knappen bara tillgänglig om ditt användarnamn har fullständig behörighet till Analysis Workspace.
 
-Mer information om alla sätt att anpassa rapporten finns i [Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html)-guiden.
+Mer information om alla sätt att anpassa rapporten finns i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)-guiden.
