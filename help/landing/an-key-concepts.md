@@ -2,11 +2,10 @@
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av begreppen samt en specifik dokumentationslänk med mer information om ämnet.
 title: Adobe Analytics – viktiga begrepp
 exl-id: 359c6663-33fd-4491-8ea0-55cd9ae31859
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 95%
+source-wordcount: '1822'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +20,9 @@ Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en 
 | Analysis Workspace | Webbläsarlösning för att skapa stabila, anpassade analysprojekt och demokratisera insikter. Ger större rapportflexibilitet än Reports and Analytics | [Analysis Workspace - startsida](/help/analyze/analysis-workspace/home.md) |
 | Reports and Analytics (tidigare SiteCatalyst) | Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet. | [Reports and Analytics - startsida](/help/analyze/reports-analytics/getting-started.md) |
 | Report Builder | Excel-tillägg som gör att du kan skapa anpassade förfrågningar för Adobe Analytics-data och visualisera dem med Microsoft Excel. | [Report Builder – startsida](/help/analyze/report-builder/home.md) |
-| Data Workbench (tidigare Insight) | Utformat för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner både online och offline över flera kanaler. | [Data Workbench-klient](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html) |
+| Data Workbench (tidigare Insight) | Utformat för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner både online och offline över flera kanaler. | [Data Workbench-klient](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html) |
 | Data Warehouse | Obearbetade rådata för lagring och anpassade rapporter som du kan köra genom att filtrera data. Inte på träffnivå. | [Data Warehouse – startsida](/help/export/data-warehouse/data-warehouse.md) |
-| Adobe Mobile Services | Sammanför funktioner för mobil marknadsföring i mobilappar från hela Adobe Experience Cloud så att ni kan förstå och förbättra användarengagemanget i era appar. | [Mobile Services – startsida](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) |
+| Adobe Mobile Services | Sammanför funktioner för mobil marknadsföring i mobilappar från hela Adobe Experience Cloud så att ni kan förstå och förbättra användarengagemanget i era appar. | [Mobile Services – startsida](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) |
 | Adobe Exchange Data Connectors (tidigare Genesis) | Importera spårningsdata från tredjepartsprogram till Analytics för att ge heltäckande insyn i prestanda på en central plats. Från och med den 1 augusti 2021 avser Adobe att avbryta integreringen av dataanslutningar. | [Data Connectors – startsida](/help/import/data-connectors/data-connectors-eol.md) |
 | Adobe Experience Platform Launch | Nästa generation av funktioner för webbplatstaggar och mobil SDK-hantering från Adobe. | [Adobe Experience Platform Launch - startsida](https://experienceleague.adobe.com/docs/launch/using/home.html) |
 
@@ -59,7 +58,7 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | Customer Journey-rapporter | Visar information om den väg som användarna tar genom webbplatsen eller appen. Prop, eVars och händelser kan användas i den här analysen i Analysis Workspace. | [Analysis Workspace Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md) <br> [Analysis Workspace Flow](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) <br> [Reports and Analytics Pathing](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) |
 | Marknadsföringskanaler | Rapporter som visar vilka externa kanaler som driver användare till er webbplats och vilka som är mest effektiva när det gäller konvertering. Vyer för första och sista kontaktpunkt finns. Det här är den rekommenderade rapporten för externa trafikkällor i Adobe Analytics (i stället för Campaigns eller Traffic Sources) eftersom den ger den mest omfattande översikten över både betalda och organiska kanaler. | [Marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) |
 | Mobil | Visar information om webbplatser som öppnas via en mobil enhet eller surfplatta. | [Mobilrapport](/help/components/dimensions/mobile-dimensions.md) |
-| Mobilapp | Visar grundläggande användningsinformation om mobilappar. Rapporterna är tillgängliga när vår SDK har implementerats och rapportering är aktiverat.  Dessutom har Adobe Mobile Services skapat ett separat mobilappsgränssnitt som ger mer omfattande appdata så att ni kan förstå och förbättra användarengagemanget i era appar.  Gå till gränssnittet [här](https://mobilemarketing.adobe.com). | [Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) |
+| Mobilapp | Visar grundläggande användningsinformation om mobilappar. Rapporterna är tillgängliga när vår SDK har implementerats och rapportering är aktiverat.  Dessutom har Adobe Mobile Services skapat ett separat mobilappsgränssnitt som ger mer omfattande appdata så att ni kan förstå och förbättra användarengagemanget i era appar.  Gå till gränssnittet [här](https://mobilemarketing.adobe.com). | [Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) |
 | Produkter | Identifierar hur enskilda produkter och grupper av produkter (kategorier) bidrar till olika konverteringsvärden, som intäkter eller utcheckningar. | [Produktrapport](/help/components/dimensions/product.md) |
 | Segmentjämförelse | Identifierar de statistiskt mest signifikanta skillnaderna mellan segment genom en automatiserad analys av alla mätvärden och dimensioner du har tillgång till. | [Segmentjämförelse](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md) |
 | Webbplatsinnehållsrapport | Visar information om vilka sidor och områden på webbplatsen som är mest aktiva och vilka servrar som används mest. | [Webbplatsinnehållsrapport](/help/components/dimensions/page.md) |
@@ -85,7 +84,7 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | --- | --- | --- |
 | Classification Importer | Importera metadata för insamlade dimensioner via webbläsare eller FTP-överföring. Manuell metod jämfört med Rule Builder. | [Classification Importer](/help/components/classifications/importer/c-working-with-saint.md) |
 | Rule Builder | Skapa metadataklassificeringar av dimensioner automatiskt baserat på användardefinierade regler. | [Classification Rule Builder](/help/components/classifications/crb/classification-rule-builder.md) |
-| Kundattribut | CRM-data överförda till Experience Cloud för användning i Adobe Analytics och Adobe Target. | [Kundattribut](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html) |
+| Kundattribut | CRM-data överförda till Experience Cloud för användning i Adobe Analytics och Adobe Target. | [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) |
 | Datakällor | Importera offlinemätvärden i Analytics efter dimensioner eller helt enkelt efter dag. | [Datakällor](/help/import/c-data-sources/datasrc-home.md) |
 | Adobe Exchange Data Connectors | Se [Analytics-verktyg.](/help/import/data-connectors/data-connectors-eol.md) |  |
 | Inbyggda integreringar | Audience Analytics och Advertising Analytics. | Se avsnittet Viktiga rapporter. |
@@ -107,7 +106,7 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | Resurser för utvecklare | Dokumentation som visar vilka bibliotek som är tillgängliga för att samla in Analytics-data på alla tillgängliga plattformar (webb, mobilapp, video, flash osv.) | [Utvecklardokument](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
 | Implementeringshandbok | En beskrivning av datainsamlingsvariabler och detaljer om hur ni implementerar datainsamlingskod i JavaScript. | [Implementeringshandbok](/help/implement/home.md) |
 | Appmätning (s_code) | Global variabelhantering. | [AppMeasurement](/help/implement/js/migrate-from-hcode.md) |
-| App-SDK:er | Anpassat paket som innehåller en förifylld version av konfigurationsfilen för appar. | <ul><li>[iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)</li><li>[Android](https://docs.adobe.com/content/help/en/mobile-services/android/getting-started-android/requirements.html)</li></ul> |
+| App-SDK:er | Anpassat paket som innehåller en förifylld version av konfigurationsfilen för appar. | <ul><li>[iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)</li><li>[Android](https://experienceleague.adobe.com/docs/mobile-services/android/getting-started-android/requirements.html)</li></ul> |
 | Adobe Experience Platform Launch | Se Analytics-verktyg. |  |
 | VISTA | Gör att ni kan använda logik på serversidan för att ändra eller segmentera data som samlas in. | [VISTA-regler](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md) |
 | Bearbetningsregler | Förmågan att ange, ändra och kopiera variabler i Analytics-gränssnittet för att ändra data som samlas in. | [Bearbetningsregler](/help/admin/admin/c-processing-rules/processing-rules.md) |
