@@ -1,14 +1,16 @@
 ---
 description: Fliken Report Suite-användning innehåller serveranvändningsdata för varje rapportsvit i alla inloggningsföretag som är kopplade till ditt faktureringsföretag, för den aktuella användningsperioden.
-title: Visa rapportsvitanvändning
+title: Visa användning av rapportsvit
 uuid: c609ed99-9acc-4023-905a-81a40dd07a79
-translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+exl-id: bedd4ed8-1c8b-45fd-a059-fed88e9fbe73
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 2%
 
 ---
 
-
-# Visa rapportsvitanvändning
+# Visa användning av rapportsvit
 
 Fliken Report Suite-användning innehåller serveranvändningsdata för varje rapportsvit i alla inloggningsföretag som är kopplade till ditt faktureringsföretag, för den aktuella användningsperioden.
 
@@ -16,7 +18,7 @@ Fliken Report Suite-användning innehåller serveranvändningsdata för varje ra
 
 >[!IMPORTANT]
 >
->Om en rapportsvit inte är [länkad till en Experience Cloud-organisation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html)återspeglas dess användningsdata inte i den här instrumentpanelen. Ett fakturerings-ID kan även kopplas till flera Experience Cloud-organisationer. det inte alltid finns en 1:1-relation mellan en organisation och ett fakturerings-ID.
+>Om en rapportsvit inte är [länkad till en Experience Cloud-organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html) återspeglas inte dess användningsdata i den här instrumentpanelen. Ett fakturerings-ID kan även vara knutet till flera Experience Cloud Orgs. det inte alltid finns en 1:1-relation mellan en organisation och ett fakturerings-ID.
 
 Kontrollpanelen för användning av Report Suite
 
@@ -24,7 +26,7 @@ Kontrollpanelen för användning av Report Suite
 * Visar procentandel av den totala användningen per kategori för serversamtal.
 * Uppdateras dagligen.
 * Kan laddas ned.
-* Gör att du kan komma åt **[!UICONTROL Manage Alerts]** gränssnittet.
+* Gör att du kan komma åt användargränssnittet för **[!UICONTROL Manage Alerts]**.
 
 ![](assets/report-suite-usage.png)
 
@@ -52,7 +54,7 @@ Med det här alternativet kan du hämta aktuella användningsdata och data från
 | Filnamn | Hårdkodat namn: Användningsrapport `day and time of report creation.csv` |
 | Inkluderade rapportsviter | Alla rapportsviter som du har valt på sidan Report Server-användning ingår i den här listan. |
 | Inkluderade samtalstyper | Ange en kombination av dessa:  Alla samtal (standard), primära, sekundära, primära, primära, sekundära, mobila. |
-| Tidsintervall | Du kan välja den aktuella användningsperioden eller ange ett anpassat intervall.  Ange intervallstart och intervallslut för ett anpassat intervall. <br>**Obs!**Du kan inte hämta användningsdata före januari 2015</br>. |
+| Tidsintervall | Du kan välja den aktuella användningsperioden eller ange ett anpassat intervall.  Ange intervallstart och intervallslut för ett anpassat intervall. <br>**Obs!** Du kan inte hämta användningsdata före januari 2015  </br>. |
 
 1. Klicka på **[!UICONTROL Download]**.
 
