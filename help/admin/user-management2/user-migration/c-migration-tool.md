@@ -2,10 +2,10 @@
 description: Vad du behöver veta om migreringen av användar-ID:n för Analytics till Admin Console i Adobe Experience Cloud.
 title: Migrering av Analytics-användare till Admin Console
 uuid: 7d020713-693b-4945-aa52-3669a631aacb
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '3127'
-ht-degree: 1%
+source-wordcount: '3117'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ Vad du behöver veta om migreringen av användar-ID:n för Analytics till Admin 
 
 Allmän hjälp om ämnen som rör Admin Console (som inte rör Analytics-migrering) finns i [användarhandboken för Admin Console](https://helpx.adobe.com/enterprise/administering/user-guide.html).
 
-När du har migrerat kan du [hantera användare och produkter av Experience Cloud](https://docs.adobe.com/content/help/sv-SE/core-services/interface/manage-users-and-products/admin-getting-started.html) i Admin Console.
+När du har migrerat kan du [hantera användare och produkter av Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) i Admin Console.
 
 ## Vad är migreringen av Analytics-användar-ID:n? {#section-adbe49aba10c4e62afa836a97894107c}
 
@@ -47,7 +47,7 @@ Fördelarna med att använda Admin Console är bland annat:
      <li id="li_DC31AE8BAAB843F39A7CC9EB047265D5">Bjud in nya användare </li> 
      <li id="li_73724DD7D79E41F8A1D58C74E37674BA">Skapa produktprofiler </li> 
      <li id="li_7E75FC68E0F84873A9A211D2707B6DE7">Ge användare behörighet till specifika produkter och tjänster </li> 
-     <li id="li_9C8A340A7C9A45A98EC0BD4AF9E100FF">Få tillgång till <a href="https://docs.adobe.com/content/help/en/core-services/interface/experience-cloud.html">-tjänster </a> för flera lösningar som är tillgängliga i Adobe Experience Cloud </li> 
+     <li id="li_9C8A340A7C9A45A98EC0BD4AF9E100FF">Få tillgång till <a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html">-tjänster </a> för flera lösningar som är tillgängliga i Adobe Experience Cloud </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -75,7 +75,7 @@ Svar på frågor som du kan ha innan migreringen.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Uppdatera Report Builder </p> </td> 
-   <td colname="col2"> <p> <p>Viktigt: Uppdatera din installation av <a href="https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
+   <td colname="col2"> <p> <p>Viktigt: Uppdatera din installation av <a href="https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html"> Report Builder</a> till den senaste versionen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>När börjar migreringen? </p> </td> 
@@ -97,7 +97,7 @@ Svar på frågor som du kan ha innan migreringen.
      <li id="li_418476105FE341229CE146E730AAB33D">Dina befintliga behörighetsgrupper i Analytics replikeras automatiskt i Admin Console som produktprofiler, inklusive deras beskrivning och detaljerade behörigheter i rapportsviter, mått, analyser och rapportsviter. </li> 
      <li id="li_412F88C454B0455A8F3BC8016226855C">Om någon av dina nuvarande Analytics-användare har skapats i Admin Console (vilket innebär att de har ett länkat Adobe/Enterprise ID) läggs de till i rätt produktprofiler i Admin Console. </li> 
      <li id="li_8A05137EC05C4FD5910E73FE58300DCB">Avsnittet Användarhantering på fliken Admin i Analytics ställs in på <span class="term"> skrivskyddat</span>. Du kommer inte längre att kunna skapa nya användare eller behörighetsgrupper här och du måste utföra båda funktionerna i Admin Console. Mer information finns i <a href="/help/admin/user-management2/user-migration/c-migration-tool.md#section-928ffba27a0446e0af575b720434ef56"> Analysfunktioner som inte stöds i Admin Console</a>. </li> 
-     <li id="li_2742DE69E9B547198A58E1F33E908361">Som administratör får du åtkomst till <a href="https://docs.adobe.com/content/help/en/analytics/admin/user-product-management/user-management/migrate-users/t-migrate-users.html">migreringsverktyget för användar-ID</a>. Dessutom visas ett meddelande i produkten som innehåller slutdatumet för migreringen (vanligtvis 60 dagar i framtiden) utöver länkar till hjälpinnehåll och vanliga frågor. </li> 
+     <li id="li_2742DE69E9B547198A58E1F33E908361">Som administratör får du åtkomst till <a href="https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/t-migrate-users.html">migreringsverktyget för användar-ID</a>. Dessutom visas ett meddelande i produkten som innehåller slutdatumet för migreringen (vanligtvis 60 dagar i framtiden) utöver länkar till hjälpinnehåll och vanliga frågor. </li> 
      <li id="li_095D42E3A3544FC59A60A8C8F94C971B">Du får åtkomst till fliken Behörigheter i Admin Console som gör att du kan skapa produktprofiler med alla detaljerade alternativ som du känner till i Analytics. </li> 
     </ul> </td> 
   </tr> 
@@ -321,7 +321,7 @@ Vårt företag börjar migrera alla Adobe Analytics-konton från [!DNL https://m
 
 **Användbara resurser:**
 
-[Logga in och hantera dina profilinställningar](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/getting-started-experience-cloud.html).
+[Logga in och hantera dina profilinställningar](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/getting-started-experience-cloud.html).
 
 Kontakta era Analytics-administratörer om ni har några frågor eller problem.
 
