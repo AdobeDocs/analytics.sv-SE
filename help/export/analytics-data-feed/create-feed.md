@@ -2,9 +2,9 @@
 title: Skapa eller redigera en datafeed
 description: Lär dig hur du skapar eller redigerar en datafeed.
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 7312b61b8d73f45afa3eb9aac73cc4d5fd39bc82
+source-git-commit: 46ba345247c6a2553cd30b446d87eeb7b15ee94b
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '944'
 ht-degree: 1%
 
 ---
@@ -43,9 +43,19 @@ SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett 
 
 ### S3
 
-Du kan skicka feeds direkt till Amazon S3-butiker. Kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Mer information finns i [Amazon S3 bucket naming requirements](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3 docs.
+Du kan skicka feeds direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Mer information finns i [Amazon S3 bucket naming requirements](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3 docs.
 
 ![S3-info](assets/dest-s3.jpg)
+
+Användaren som du anger för överföring av dataflöden måste ha följande [behörigheter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html):
+
+* s3:GetObject
+* s3:PutObject
+* s3:PutObjectAcl
+
+   >[!NOTE]
+   >
+   >För varje överföring till en Amazon S3-bucket lägger [!DNL Analytics] till bucket-ägaren till BucketOwnerFullControl ACL, oavsett om bucket har en princip som kräver det eller inte. Mer information finns i &quot;[Vad är inställningen BucketOwnerFullControl för Amazon S3-dataflöden?](df-faq.md#BucketOwnerFullControl)&quot;
 
 Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det behövs):
 
