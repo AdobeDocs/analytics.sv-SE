@@ -2,14 +2,13 @@
 description: Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Adobe Analytics® med e-postmarknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 title: Aprimo Data Connector för Adobe Analytics
 uuid: 590ded4b-b250-43b4-9cec-68508b853e00
-translation-type: tm+mt
-source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
+exl-id: cd5191c9-68fb-42ad-98f6-23d5a72878da
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
-
 
 # Aprimo Data Connector för Adobe Analytics{#aprimo-data-connector-for-adobe-analytics}
 
@@ -72,4 +71,4 @@ Det kan finnas återkommande avgifter och implementeringsavgifter som är koppla
 
 Den här integreringen kräver Adobe Analytics-variabler för att spåra mätvärden.
 
-När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de vara aktiverade i Adobe Analytics Admin Console (mer information finns i [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)).
+När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de vara aktiverade i Adobe Analytics Admin Console (mer information finns i [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)).
