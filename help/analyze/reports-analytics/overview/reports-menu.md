@@ -5,11 +5,10 @@ uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
 feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: c2adbe93-6a52-45a0-8a81-2799bf63f70f
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 3%
+source-wordcount: '774'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +31,7 @@ Rapporterna navigeras i en hierarkisk kolumnvy. Klicka på **[!UICONTROL View Al
 
 ![](assets/reports-landing.png){width=&quot;672px&quot;}
 
-Mer information om enskilda rapporter finns i [Rapportbeskrivningar](https://docs.adobe.com/content/help/en/analytics/components/variables/c-variables.html).
+Mer information om enskilda rapporter finns i [Rapportbeskrivningar](https://experienceleague.adobe.com/docs/analytics/components/variables/c-variables.html).
 
 ## Sök efter rapporter {#section_E5EF11E36CB9451AA7B079E585CA7DB6}
 
@@ -66,7 +65,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol">Segment <img placement="inline"  src="assets/segment_icon.png" width="30px" id="image_6BF461356C8640EA8E93B74092320E91" /></span> </td> 
-   <td colname="col2">Flyttar uppåt segmentets rand så att du kan lägga till eller hantera segment. Du kan även komma åt gränssnitten <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > Segment Builder</a> och <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html"  > Segment Manager</a> från segmentlisten. </td> 
+   <td colname="col2">Flyttar uppåt segmentets rand så att du kan lägga till eller hantera segment. Du kan även komma åt gränssnitten <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > Segment Builder</a> och <a href="https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html"  > Segment Manager</a> från segmentlisten. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol">Mätvärden <img placement="inline"  src="assets/metrics_icon.png" width="30px" id="image_88620CB8A9CC4BC3BE4CE30BDA727512" /></span> </td> 
@@ -114,7 +113,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1">Rapportsvitväljare <img placement="inline"  src="assets/report-suite-selector.png" width="30px" id="image_9F64944D46574B2AA38D81A7C82C4AC4" /> </td> 
-   <td colname="col2">Gör att du kan välja <a href="https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html"  > basrapportsviter</a> eller <a href="https://docs.adobe.com/help/sv-SE/analytics/components/virtual-report-suites/vrs-about.html"  > virtuella rapportsviter</a>. </td> 
+   <td colname="col2">Gör att du kan välja <a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html"  > basrapportsviter</a> eller <a href="https://docs.adobe.com/help/sv-SE/analytics/components/virtual-report-suites/vrs-about.html"  > virtuella rapportsviter</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1">Kalender <img placement="inline"  src="assets/calendar-icon.png" width="30px" id="image_C5E4F87F964C4C3E98496D38A1123502" /> </td> 
@@ -125,4 +124,4 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
 
 ## Anpassa menyn Alla rapporter {#section_7E47312747564FBE8A55EE5726B7DFF4}
 
-Administratörer kan ändra de rapporter som finns på menyn Rapporter. Se [Menyanpassning](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/customize-menus.html) i Admin-hjälpen.
+Administratörer kan ändra de rapporter som finns på menyn Rapporter. Se [Menyanpassning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/customize-menus.html) i Admin-hjälpen.
