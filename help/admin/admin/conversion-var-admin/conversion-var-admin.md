@@ -2,13 +2,12 @@
 description: Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på vissa webbsidor på din webbplats. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. En eVar kan vara besöksbaserad och fungera på liknande sätt som cookies. Värden som skickas till eVar följer användaren under en förbestämd tidsperiod.
 keywords: eVar
 title: Konverteringsvariabler (eVar)
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 exl-id: 822ecaff-a06c-42e1-aee8-ef4a43df4230
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1577'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Om trafikmätning eller vägning önskas rekommenderas användning av trafikvari
 
 >[!NOTE]
 >
->Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar rekommenderar vi att du implementerar [listvariabler (listvar)](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html).
+>Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar rekommenderar vi att du implementerar [listvariabler (listvar)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html).
 
 ## Konverteringsvariabler - beskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
 
@@ -89,7 +88,7 @@ Beskrivningar av fält som används när [konverteringsvariabler](/help/admin/ad
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Merchandising</span> </p> <p>(endast eVar) </p> </td> 
-   <td colname="col2"> <p>Merchandising-variabler kan följa på en av två syntaxer: </p> <p> <b>Produktsyntax</b>:</span> Associerar eVar med en produkt. Obs!  Om produktsyntax är markerad är avsnittet om bindningshändelse för marknadsföring inaktiverat och kan inte redigeras. Bindningshändelser gäller inte för den här syntaxen. </p> </p> <p> <b>Konverteringsvariabelsyntax</b>:</span> Associerar eVar med en produkt endast om en bindningshändelse inträffar. I det här fallet väljer du de händelser som fungerar som Bindningshändelser. </p> <p>Om du ändrar den här inställningen utan att uppdatera JavaScript-koden därefter, kommer förlorade data att uppstå. Se <a href="https://docs.adobe.com/content/help/en/analytics/components/variables/merchandising-variables/var-merchandising.html"> Marknadsföringsvariabler</a>. </p> </td> 
+   <td colname="col2"> <p>Merchandising-variabler kan följa på en av två syntaxer: </p> <p> <b>Produktsyntax</b>:</span> Associerar eVar med en produkt. Obs!  Om produktsyntax är markerad är avsnittet om bindningshändelse för marknadsföring inaktiverat och kan inte redigeras. Bindningshändelser gäller inte för den här syntaxen. </p> </p> <p> <b>Konverteringsvariabelsyntax</b>:</span> Associerar eVar med en produkt endast om en bindningshändelse inträffar. I det här fallet väljer du de händelser som fungerar som Bindningshändelser. </p> <p>Om du ändrar den här inställningen utan att uppdatera JavaScript-koden därefter, kommer förlorade data att uppstå. Se <a href="https://experienceleague.adobe.com/docs/analytics/components/variables/merchandising-variables/var-merchandising.html"> Marknadsföringsvariabler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="uicontrol"> Marknadsföringsbindningshändelse</span> </p> <p>(endast eVar) </p> </td> 
