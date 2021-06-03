@@ -2,20 +2,19 @@
 description: Hantera aviseringar.
 title: Alert Manager
 uuid: 6c228754-af8b-4ff2-ae88-9ca7ddbee242
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '146'
 ht-degree: 2%
 
 ---
-
 
 # Aviseringshanteraren
 
 ![](assets/alert-manager.png)
 
-Varningshanteraren ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Alerts]**) är mycket strukturerad som [segmenthanteraren](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-manage.html) och [hanteraren för beräknade mått](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html) och gör att du kan
+Varningshanteraren ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Alerts]**) är mycket strukturerad som [segmenthanteraren](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html) och [hanteraren för beräknade mått](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html) och gör att du kan
 
 ![](assets/alert-manager-tasks.png)
 
@@ -34,4 +33,3 @@ Varningshanteraren ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > 
 * Ange/ändra ägare för en avisering.
 * Lägg till andra filter.
 * Definiera en varning **utgångsdatum**.
-
