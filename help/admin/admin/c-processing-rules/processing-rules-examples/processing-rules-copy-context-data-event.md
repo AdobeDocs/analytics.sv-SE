@@ -2,13 +2,12 @@
 description: Bearbetningsregler kan utlösa händelser baserade på kontextdatavariabler.
 subtopic: Processing rules
 title: Ange en händelse med hjälp av en kontextdatavariabel
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 4a6018eb-03e2-4ec8-874b-e48bf716e103
 exl-id: f0af0e23-c08a-4f82-85b4-25064eeaa3c6
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '160'
+source-wordcount: '158'
 ht-degree: 12%
 
 ---
@@ -38,4 +37,4 @@ Exempel:
 
 ![](assets/processing_rule_set_event.png)
 
-Se [Kontextdatavariabler](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/contextdata.html) i implementeringshjälpen.
+Se [Kontextdatavariabler](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html) i implementeringshjälpen.
