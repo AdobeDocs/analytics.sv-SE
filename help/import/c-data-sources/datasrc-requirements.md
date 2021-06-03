@@ -5,10 +5,9 @@ title: Krav och överföringsgränser
 topic-fix: Developer and implementation
 uuid: d79fca77-fa0e-4171-b978-cdee5c67d9df
 exl-id: 97a7cc65-f99a-4227-94f2-6f428ebdfad3
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
@@ -60,7 +59,7 @@ Datakällor har stöd för multibyte-kodning. Datakällor försöker identifiera
  <tbody> 
   <tr> 
    <td colname="col1"> UTF-8 </td> 
-   <td colname="col2"> <p>Stöds. Rapportsviten som används med datakällor måste ha stöd för flera byte-tecken aktiverat. </p> <p>Se <a href="https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html"  > New Report Suite</a> i hjälpen </p> </td> 
+   <td colname="col2"> <p>Stöds. Rapportsviten som används med datakällor måste ha stöd för flera byte-tecken aktiverat. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html"  > New Report Suite</a> i hjälpen </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> UTF-8 med byteordningsmärke (EF BB BF) </td> 
