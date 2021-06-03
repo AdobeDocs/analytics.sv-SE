@@ -4,10 +4,10 @@ title: Kodhanteraren
 feature: Administratörsverktyg
 uuid: 7b60bca7-756f-444f-a7e6-abd3e0f1a15e
 exl-id: 90591e91-0830-46e3-a8a1-f09c4f108eb2
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 11%
+source-wordcount: '129'
+ht-degree: 5%
 
 ---
 
@@ -25,5 +25,5 @@ När du har hämtat biblioteket måste du konfigurera koden så att den skickar 
 |--- |--- |
 | [!UICONTROL Name] | Namnet matchar plattformen där du vill aktivera datainsamling. Inbyggda bibliotek tillhandahålls för varje plattform som visas i den här kolumnen. |
 | [!UICONTROL Type] | Typ av program som kan mätas med varje bibliotek. |
-| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionshistoriken](https://docs.adobe.com/content/help/sv-SE/analytics/implementation/appmeasurement-updates.html). |
+| [!UICONTROL Version] | Lista den senaste versionen av biblioteket. Klicka på versionsnumret för att visa [versionshistoriken](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html). |
 | [!UICONTROL Documentation] | Visa biblioteksreferensdokumentationen. |
