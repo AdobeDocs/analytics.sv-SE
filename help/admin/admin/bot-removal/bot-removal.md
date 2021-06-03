@@ -2,10 +2,9 @@
 title: Borttagning av bot i Adobe Analytics
 description: Så här tar du bort objekt i Adobe Analytics
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
-translation-type: tm+mt
-source-git-commit: bb8ccbf782a1431e5278a95923a42c9e9e9e862b
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -54,7 +53,7 @@ När dataelementet har konfigurerats följer du [dessa instruktioner](https://ex
 
 ### Steg 2: Använd segmentering för att identifiera bottnar
 
-Nu när besökarens ECID skickas till ett deklarerat ID kan du använda [segmentering i Analysis Workspace](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/t-freeform-project-segment.html) för att identifiera besökare som beter sig som botar. Boter definieras ofta av sitt beteende: Enskilda besök, ovanliga användaragenter, okänd information om enhet/webbläsare, inga hänvisningar, nya besökare, ovanliga landningssidor osv. Använd kraften i Workspace-detaljgranskning och segmentering för att identifiera de robotar som har undgått IAB-filtrering och era regler för rapportrutins robotar. Här är till exempel en skärmbild av ett segment som du kan använda:
+Nu när besökarens ECID skickas till ett deklarerat ID kan du använda [segmentering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/t-freeform-project-segment.html) för att identifiera besökare som beter sig som botar. Boter definieras ofta av sitt beteende: Enskilda besök, ovanliga användaragenter, okänd information om enhet/webbläsare, inga hänvisningar, nya besökare, ovanliga landningssidor osv. Använd kraften i Workspace-detaljgranskning och segmentering för att identifiera de robotar som har undgått IAB-filtrering och era regler för rapportrutins robotar. Här är till exempel en skärmbild av ett segment som du kan använda:
 
 ![](assets/bot-filter-seg1.png)
 
