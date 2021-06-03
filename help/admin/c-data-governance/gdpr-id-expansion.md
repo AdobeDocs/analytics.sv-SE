@@ -2,14 +2,13 @@
 description: 'De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran '
 title: ID-expansion
 uuid: 2672d17d-c957-4e08-8dd9-16d54bf2be18
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 312a249f-e0e7-44da-bb3d-b19f1bb4c706
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 100%
+source-wordcount: '1350'
+ht-degree: 99%
 
 ---
-
 
 # ID-expansion
 
@@ -31,7 +30,7 @@ Se [Exempel på JSON-begäran](/help/admin/c-data-governance/gdpr-submit-access-
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Cookie-ID-expansion </p> </td> 
-   <td colname="col2"> <p>Många Analytics-kunder använde ursprungligen (den äldre) <a href="https://docs.adobe.com/content/help/sv-SE/core-services/interface/ec-cookies/cookies-privacy.html"> Analytics-cookien </a>, men använder nu <a href="https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html"> Identity Service (ECID) </a>, som tidigare kallades Marketing Cloud ID Service (MCID). För webbplatsbesökare som först besökte efter övergången finns endast ECID. Men de som besökte för första gången när endast den gamla cookien fanns tillgänglig och sedan dess har besökt igen: vissa av deras data kommer att ha båda cookies, men de äldre data kommer endast att ha Analytics-cookien, och i sällsynta fall har de senaste data bara en ECID. </p> <p>Du måste se till att du hittar alla data för en besökare som identifieras via en Analytics-cookie (besökar-ID) eller en ECID. Om du för närvarande använder ECID och tidigare använde Analytics-cookien. ska du inkludera båda ID:n i begäran eller ange alternativet expandIds när du skickar en begäran med någon typ av ID. När du anger expandIds söker Adobe efter andra ECID:n eller Analytics-cookies som motsvarar de cookie-ID:n du anger. Begäran utökas automatiskt så att den innehåller dessa nyligen identifierade cookie-ID:n. </p> </td> 
+   <td colname="col2"> <p>Många Analytics-kunder använde ursprungligen (den äldre) <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html"> Analytics-cookien </a>, men använder nu <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html"> Identity Service (ECID) </a>, som tidigare kallades Marketing Cloud ID Service (MCID). För webbplatsbesökare som först besökte efter övergången finns endast ECID. Men de som besökte för första gången när endast den gamla cookien fanns tillgänglig och sedan dess har besökt igen: vissa av deras data kommer att ha båda cookies, men de äldre data kommer endast att ha Analytics-cookien, och i sällsynta fall har de senaste data bara en ECID. </p> <p>Du måste se till att du hittar alla data för en besökare som identifieras via en Analytics-cookie (besökar-ID) eller en ECID. Om du för närvarande använder ECID och tidigare använde Analytics-cookien. ska du inkludera båda ID:n i begäran eller ange alternativet expandIds när du skickar en begäran med någon typ av ID. När du anger expandIds söker Adobe efter andra ECID:n eller Analytics-cookies som motsvarar de cookie-ID:n du anger. Begäran utökas automatiskt så att den innehåller dessa nyligen identifierade cookie-ID:n. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Anpassat ID till cookie-ID-expansion </p> </td> 
@@ -66,4 +65,3 @@ Utöver standardvärdet stöder prioritetsfältet även värdet ”låg”. Du b
 Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för sekretesstjänsten inte är lämpligt för detta ändamål.
 
 Kontakta din Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för ytterligare granskning och åtgärder för att lösa eventuella PII- eller dataproblem.
-
