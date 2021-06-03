@@ -4,14 +4,13 @@ title: Hantera segment
 uuid: 4e4edc39-ed93-498f-913d-7b231b10e7a0
 feature: Report Builder
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: c4ad89e0-91c9-47e1-a226-69d82fdb8918
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 3%
+source-wordcount: '892'
+ht-degree: 1%
 
 ---
-
 
 # Hantera segment
 
@@ -21,14 +20,14 @@ Report Builder har en segmenteringspanel i steg 1 i begärandeguiden där du kan
 
 ![](assets/seg_dialog.png)
 
-## Lägg till eller redigera segment {#section_B2BC136F9A53498D90C7C2ECC5DB892B}
+## Lägga till eller redigera segment {#section_B2BC136F9A53498D90C7C2ECC5DB892B}
 
 >[!NOTE]
 >
 >Om du vill lägga till eller redigera segment startar segmentgränssnittet i Report Builder segmentet segmentverktyget i segmentet Analytics i ett Microsoft Internet Explorer-fönster. Din Report Builder-session förblir aktiv. Andra webbläsare än Internet Explorer stöds inte för den här åtgärden.
 
 1. Klicka på **[!UICONTROL Add]** på segmentpanelen i steg 1 i begärandeguiden.
-1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns i [Analyssegmentering](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
+1. Ett Internet Explorer-fönster öppnas som öppnar gränssnittet i segmentbyggaren i Analytics. Mer information om hur du skapar segment finns i [Analyssegmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
 1. När du har definierat och sparat segmentet går du tillbaka till Begärandeguiden.
 1. Klicka på ikonen Uppdatera för att uppdatera segmentlistan.
 
@@ -36,7 +35,7 @@ Report Builder har en segmenteringspanel i steg 1 i begärandeguiden där du kan
 >
 >Den här listan cachelagras och det segment du skapade visas inte om du inte uppdaterar.
 
-## Skapa kontextsegment {#section_6DD2C663B2854469AA1075438F907678}
+## Skapa sammanhangsberoende segment {#section_6DD2C663B2854469AA1075438F907678}
 
 Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla till ett segment. Du kan skapa de här segmenten från Report Builder-gränssnittet. Välj till exempel några sidor från en sidförfrågan och skapa ett segment baserat på dessa värden.
 
@@ -45,14 +44,14 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 
    ![](assets/seg_in_context.png)
 
-   Mer information om behållare finns i [Segmenteringshandboken](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html).
+   Mer information om behållare finns i [Segmenteringshandboken](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
 
 1. Segment Builder-gränssnittet kommer nu att startas i Internet Explorer. Användargränssnittet för segmentbyggaren initieras med den behållare och det filter som du angav.
 1. När du har lagt till ett namn och en beskrivning i segmentet sparar du det.
 1. Gå tillbaka till Report builder och klicka på ikonen Uppdatera för att uppdatera listan med segment.
 1. Du kan nu använda det här segmentet.
 
-## Sök efter och tillämpa segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
+## Söka efter och använda segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
 
 Alla segment som har skapats i Rapporter och analyser, Report Builder eller Data warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ( ![](assets/refresh_icon.png)).
 
@@ -107,7 +106,7 @@ Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbo
 
 När du lägger till ett nytt segment eller redigerar ett befintligt bör du klicka på ikonen Uppdatera ( ![](assets/refresh_icon.png)) för att uppdatera den cachelagrade listan med segment.
 
-## Hantera segment över begäranden {#section_C3D63FCBE1A94369A319243313B03C93}
+## Hantera segment över förfrågningar {#section_C3D63FCBE1A94369A319243313B03C93}
 
 Före v5.4 kan Report Builder ändra segment vid flera förfrågningar. Den här processen ersätter dock alltid de befintliga segmenten. Användare som vill lägga till ett nytt segment i varje begäran kunde inte göra detta eftersom den tidigare uppsättningen segment som redan tilldelats varje begäran skulle tas bort om segmentet lades till.
 
@@ -126,4 +125,3 @@ Med Report Builder 5.4 kan du lägga till, ta bort, ersätta och ersätta alla s
    | Ersätt segment | Här kan du välja vilka segment som ska ersättas med ett eller flera segment. |
    | Ersätt alla segment med | Gör att du kan välja ett eller flera segment att ersätta det aktuella segmentet/de aktuella segmenten med. |
    | Ta bort segment | Gör att du kan ta bort segment från begäranden. |
-
