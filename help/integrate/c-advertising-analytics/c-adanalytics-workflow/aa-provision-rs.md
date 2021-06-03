@@ -2,20 +2,19 @@
 description: Konfigurera en rapportsvit som mappats till Experience Cloud för användning i Advertising Analytics.
 title: Aktivera rapportsvit för Advertising Analytics
 uuid: 934f0e02-b5d7-4eca-93d8-92f95bd7014a
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+exl-id: 3a467e41-2755-46c1-b077-b42946562e6b
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 10%
+source-wordcount: '265'
+ht-degree: 6%
 
 ---
-
 
 # Aktivera rapportsvit för Advertising Analytics
 
 Om du vill kunna se Advertising Analytics sökdata i Analytics måste du konfigurera varje rapportsvit som mappas av Experience Cloud för Advertising Analytics-rapportering.
 
-1. [Kartlägg din rapportsvit för en organisation](https://docs.adobe.com/content/help/sv-SE/core-services/interface/about-core-services/report-suite-mapping.html).
+1. [Kartlägg din rapportsvit för en organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
 1. Navigera till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
 1. Välj den rapportsvit som är mappad till din Experience Cloud-organisation.
@@ -36,4 +35,3 @@ Om du vill kunna se Advertising Analytics sökdata i Analytics måste du konfigu
    | Förfaller efter | Gör att du kan ange en tidsperiod eller händelse efter vilken eVar förfaller (dvs. inte längre får kredit för lyckade händelser).  Om en lyckad händelse inträffar efter att eVar har upphört att gälla, får värdet Ingen kredit för händelsen (ingen eVar var aktiv). |
 
 1. Klicka på **[!UICONTROL Enable Advertising Analytics Reporting]** (första gången) eller **[!UICONTROL Update Advertising Analytics Reporting]** (efterföljande gånger). Din rapportsvit är nu klar att ta emot data från Advertising Analytics Search. Du är inte redo att [skapa annonskonton](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md).
-
