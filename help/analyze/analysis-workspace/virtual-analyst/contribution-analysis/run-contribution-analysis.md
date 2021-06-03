@@ -2,16 +2,15 @@
 description: Kör en bidragsanalysrapport i ett Workspace-projekt.
 title: Köra bidragsanalys
 uuid: 5282a5f9-0771-4974-93cb-335204bde114
-feature: AI Tools
+feature: AI-verktyg
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 5%
+source-wordcount: '573'
+ht-degree: 3%
 
 ---
-
 
 # Köra bidragsanalys
 
@@ -40,9 +39,9 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
    * En visualisering som visar antalet **besök** den dagen.
    * En månatlig **Besök trendlinje** för kontext.
-   * **De viktigaste** objekten som bidrog till avvikelsen, sorterade efter  [bidragspoängen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html), plus måttet i fråga och ett unikt besökarmått som sätter måttet i rätt kontext ur ett storleksändringsperspektiv.
+   * **De viktigaste** objekten som bidrog till avvikelsen, sorterade efter  [bidragspoängen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html), plus måttet i fråga och ett unikt besökarmått som sätter måttet i rätt kontext ur ett storleksändringsperspektiv.
 
-   * Tabellen [Genererade segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters) identifierar associationer av de översta objekten baserat på bidragsresultat, avvikelser och total procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
+   * Tabellen [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters) identifierar associationer av de översta objekten baserat på bidragsresultat, avvikelser och total procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
 
       ![](assets/auto_segment.png)
 
@@ -74,4 +73,3 @@ Det kan finnas tillfällen då du vill utesluta vissa dimensioner från bidragsa
    ![](assets/excluded-dimensions.png)
 
 1. Ta bara bort oönskade dimensioner genom att klicka på x:et bredvid dem och spara sedan listan genom att klicka på **[!UICONTROL Set as Default]**.
-
