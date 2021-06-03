@@ -1,30 +1,29 @@
 ---
 description: 'Komponenterna i Analysis Workspace består av mått, mått, segment och datumintervall som du kan dra och släppa i ett projekt. '
 title: Komponenter – översikt
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 7%
+source-wordcount: '668'
+ht-degree: 5%
 
 ---
-
 
 # Komponenter – översikt
 
 Komponenterna i Analysis Workspace består av mått, mått, segment och datumintervall som du kan dra och släppa i ett projekt.
 
-Du öppnar komponentmenyn genom att klicka på ikonen **[!UICONTROL Components]** i den vänstra listen. Du kan växla mellan [paneler](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html), [Visualiseringar](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) och komponenter från ikonerna för den vänstra listen eller genom att använda [snabbtangenter](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Du öppnar komponentmenyn genom att klicka på ikonen **[!UICONTROL Components]** i den vänstra listen. Du kan växla mellan [paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html), [Visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) och komponenter från ikonerna för den vänstra listen eller genom att använda [snabbtangenter](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
 ![](assets/component-overview.png)
 
-Du kan också justera [Visa täthetsinställningarna](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet om du vill visa fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
+Du kan också justera [Visa täthetsinställningarna](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet om du vill visa fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
 
-## Dimensioner {#dimensions}
+## Mått {#dimensions}
 
-[**Dimensioner**](https://docs.adobe.com/content/help/en/analytics/components/dimensions/overview.html) är textattribut som beskriver besökarens beteende och kan visas, delas upp och jämföras i analysen. De finns i den vänstra delen av komponentraden (den orange delen) och används vanligtvis som rader i en tabell.
+[**Dimensioner**](https://experienceleague.adobe.com/docs/analytics/components/dimensions/overview.html) är textattribut som beskriver besökarens beteende och kan visas, delas upp och jämföras i analysen. De finns i den vänstra delen av komponentraden (den orange delen) och används vanligtvis som rader i en tabell.
 
 Exempel på dimensioner är [!UICONTROL Page Name], [!UICONTROL Marketing Channels], [!UICONTROL Device Type] och [!UICONTROL Products]. Dimensioner tillhandahålls av Adobe och hämtas via din anpassade implementering (eVar, utkast, klassificeringar osv.).
 
@@ -36,25 +35,25 @@ Exempel på dimensionsobjekt är [!UICONTROL Homepage] (inom dimensionen [!UICON
 
 ## Mätvärden {#metrics}
 
-[****](https://docs.adobe.com/content/help/en/analytics/components/metrics/overview.html) Metrict är kvantitativa mått på besökares beteende. De finns i den vänstra komponenträlen (den gröna delen) och används vanligtvis som kolumner i en tabell.
+[****](https://experienceleague.adobe.com/docs/analytics/components/metrics/overview.html) Metrict är kvantitativa mått på besökares beteende. De finns i den vänstra komponenträlen (den gröna delen) och används vanligtvis som kolumner i en tabell.
 
-Exempel på mätvärden är [!UICONTROL Page views], [!UICONTROL Visits], [!UICONTROL Orders], [!UICONTROL Average Time spent] och [!UICONTROL Revenue/Order]. Mätvärdena tillhandahålls av Adobe, hämtas via din anpassade implementering ([!UICONTROL Success events]) eller skapas med [Calculated metric builder](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
+Exempel på mätvärden är [!UICONTROL Page views], [!UICONTROL Visits], [!UICONTROL Orders], [!UICONTROL Average Time spent] och [!UICONTROL Revenue/Order]. Mätvärdena tillhandahålls av Adobe, hämtas via din anpassade implementering ([!UICONTROL Success events]) eller skapas med [Calculated metric builder](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
 
 ![](assets/metrics.png)
 
 ## Segment {#segments}
 
-[**Segmentera är**](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/t-freeform-project-segment.html) målgruppsfilter som tillämpas på analysen. De finns i den vänstra komponentlisten (blå sektion) och används vanligtvis längst upp på en panel eller ovanför måttkolumnerna i en tabell.
+[**Segmentera är**](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/t-freeform-project-segment.html) målgruppsfilter som tillämpas på analysen. De finns i den vänstra komponentlisten (blå sektion) och används vanligtvis längst upp på en panel eller ovanför måttkolumnerna i en tabell.
 
-Exempel på segment är [!UICONTROL Mobile Device Visitors], [!UICONTROL Visits from Email] och [!UICONTROL Authenticated Hits]. Segmenten tillhandahålls av Adobe, skapas i [panelens dropzone](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html), eller skapas med [Segment builder](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+Exempel på segment är [!UICONTROL Mobile Device Visitors], [!UICONTROL Visits from Email] och [!UICONTROL Authenticated Hits]. Segmenten tillhandahålls av Adobe, skapas i [panelens dropzone](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html), eller skapas med [Segment builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
 
 ![](assets/segments.png)
 
 ## Datumintervall {#date-ranges}
 
-[**Datumintervall**](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/calendar-date-ranges/calendar.html) är det datumintervall som du utför analysen över. De finns i den vänstra komponentspåret (lila avsnitt) och används vanligtvis i kalendern för varje panel.
+[**Datumintervall**](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/calendar.html) är det datumintervall som du utför analysen över. De finns i den vänstra komponentspåret (lila avsnitt) och används vanligtvis i kalendern för varje panel.
 
-Exempel på datumintervall är juli 2019, [!UICONTROL Last 4 weeks] och [!UICONTROL This month]. Datumintervall tillhandahålls av Adobe, används i [panelkalendern](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/panels.html) eller skapas med [datumintervallverktyget](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html).
+Exempel på datumintervall är juli 2019, [!UICONTROL Last 4 weeks] och [!UICONTROL This month]. Datumintervall tillhandahålls av Adobe, används i [panelkalendern](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) eller skapas med [datumintervallverktyget](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html).
 
 ![](assets/date-ranges.png)
 
