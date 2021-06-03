@@ -1,18 +1,20 @@
 ---
 description: Integreringen av Data Connectors för emarsys använder Analytics-variabler för att spåra olika mässiffror.
-title: Analysvariabler
+title: Analytics-variabler
 uuid: 4d5e087c-f495-4aab-9ad1-9b901d34a254
-translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+exl-id: a59216f2-047b-429b-8714-a2bdaa271911
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 6%
 
 ---
 
-
-# Analysvariabler{#analytics-variables}
+# Analytics-variabler{#analytics-variables}
 
 Integreringen av Data Connectors för emarsys använder Analytics-variabler för att spåra olika mässiffror.
 
-När du har identifierat händelser och eVars som ska användas med minnesintegreringen aktiverar du dem i [Admin Console](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/c-admin-tools.html).
+När du har identifierat händelsen och eVars som ska användas med minnesintegreringen aktiverar du dem i [Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/c-admin-tools.html).
 
 **Obligatoriska variabler**
 
@@ -70,4 +72,3 @@ När du har identifierat händelser och eVars som ska användas med minnesintegr
   </tr> 
  </tbody> 
 </table>
-
