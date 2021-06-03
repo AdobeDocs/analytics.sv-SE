@@ -2,10 +2,9 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2429'
 ht-degree: 0%
 
 ---
@@ -42,7 +41,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **korrelation:** Används inte längre som term; ersätts med dimensionsfördelningar. I tidigare versioner av Adobe Analytics gav korrelations möjlighet att bryta ned trafikvariabler. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
 * **Aktuella data:** Ett alternativ i vissa rapporter som tillåter att nyligen insamlade data som ännu inte har bearbetats inkluderas. Se [Aktuella data](/help/analyze/reports-analytics/current-data.md) i användarhandboken för Analysera.
 * **Egen länk:** En typ av träff som innehåller data som inte är sidvy. Se funktionen [s.tl()](../implement/vars/functions/tl-method.md) i Användarhandboken för Implementering. Se även Träff.
-* **Kundattribut:** En Experience Cloud-funktion som tillåter överföring av attributdata. Se [Kundattribut](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html) i användarhandboken för bastjänsterna.
+* **Kundattribut:** En Experience Cloud-funktion som tillåter överföring av attributdata. Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) i användarhandboken för bastjänsterna.
 * **Kundsupportrepresentant:** En utsedd användare som är behörig att interagera direkt med Adobe kundtjänst. Se [Kundsupportrepresentanter](https://helpx.adobe.com/experience-cloud/supported-users.html) i Experience Cloud Knowledgebase.
 * **Datainsamlingsserver:** Adobe-ägda servrar som tar emot och bearbetar data. Bildbegäranden skickas till Adobe datainsamlingsservrar för användning vid rapportering.
 * **Dataanslutningar:** En komplett utvecklingslösning som gör det möjligt för tredje part att automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. De flesta dataanslutningar använder ett liknande arbetsflöde som används i datakällor. Se Dataanslutningar i användarhandboken för Import.
@@ -66,7 +65,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
    * Custom Insight, ett historiskt namn för en anpassad trafikvariabel.
 * **KPI:** Förkortning för nyckelutförandeindikator. Mätvärden som hjälper ett företag att förstå hur webbplatsen fungerar. Varje organisation har olika nyckeltal som mäter olika aspekter av sin verksamhet. Se [Skapa ett lösningsdesigndokument](/help/implement/prepare/solution-design.md) i Användarhandboken Implementera.
 * **Latens:** Fördröjningen mellan när data samlas in och när de är tillgängliga i rapporter. Vanlig fördröjning i en rapportserie är 30-90 minuter. Se [Latens](/help/technotes/latency.md) i TechNotes-användarhandboken.
-* **Launch:** Short for Adobe Experience Platform Launch, Adobe current implementation solution. Se [Översikt](https://docs.adobe.com/content/help/en/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
+* **Launch:** Short for Adobe Experience Platform Launch, Adobe current implementation solution. Se [Översikt](https://experienceleague.adobe.com/docs/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
 * **Listtecken:** En inställning som konverterar en typisk trafikvariabel som stöder flera värden i samma träff. Alla anpassade trafikvariabler kan bli en listprop om inställningen är aktiverad. Se [prop](../implement/vars/page-vars/prop.md) i Användarhandboken för implementering.
 * **List var:** En distinkt variabel som är skild från konverteringsvariabler. Listvariabler har stöd för flera värden i samma träff, och variabelvärden bevaras vid ett besök, på liknande sätt som konverteringsvariabler. Endast tre listvariabler är tillgängliga för en organisation. Se [lista](/help/implement/vars/page-vars/list.md) i Användarhandboken för implementering.
 * **Inloggningsföretag:** En samling rapportsviter som används av din organisation. Vissa organisationer har flera inloggningsföretag som gäller för olika delar av organisationen.
