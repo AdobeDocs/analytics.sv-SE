@@ -5,10 +5,9 @@ title: Användning av tidsstämplar som tillval
 topic-fix: Developer and implementation
 uuid: 956aaa16-6ffa-4b63-b022-a659f5143e00
 exl-id: c6a232d1-d7ce-4f21-9e8a-45703992bc6e
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -27,9 +26,9 @@ Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 >
 >Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
 
-Mer installationsinformation finns i [Tidsstämplar Valfria](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html).
+Mer installationsinformation finns i [Tidsstämplar Valfria](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html).
 
-## Valfria tidsstämplar: Integrera tidsstämplade och icke-tidsstämplade data {#section_BF17CB593044462B993FD0D28EA56518}
+## Valfria tidsstämplar: Integrera tidsstämplade och icke tidsstämplade data {#section_BF17CB593044462B993FD0D28EA56518}
 
 Med funktionen Tidsstämplar (valfritt) kan du kombinera icke-tidsstämplade data med tidsstämplade data utan att data går förlorade. Offlinedata med tidsstämplar som genererats från en mobil enhet kan kombineras med live, tidstämplade data från en webbsida - eller integreras med data från vilken plattform som helst med ett tidsstämpelanrop på klientsidan.
 
@@ -43,7 +42,7 @@ En rapportsvit kan ha någon av följande tidsstämpelinställningar:
 * Tidsstämplar krävs (inställning av visitorID stöds inte)
 * Tidsstämplar är valfria (ange besökarID stöds men inte för tidsstämplade träffar)
 
-## Om tidsstämplar Valfria funktioner {#section_63B2FA9A2AB24B3993E84D2C2B4BF2CE}
+## Om tidsstämplar, valfria funktioner {#section_63B2FA9A2AB24B3993E84D2C2B4BF2CE}
 
 Tidsstämplar Valfritt gör att du kan integrera och rapportera i flera rapportsviter med eller utan tidsstämplar på klientsidan. Med tidsstämplar (valfritt) kan du uppdatera appen så att den använder tidsstämplar medan du fortfarande använder data som inte är tidsstämplade från den tidigare appen.
 
@@ -53,7 +52,7 @@ Tidsstämplar Valfritt gör att du kan integrera och rapportera i flera rapports
 
 **Med tidsstämplar som valfria** kan du integrera icke-tidsstämplade data från en livewebbplats med offlinedata från mobila enheter, eller uppdatera en tidsstämplad app till en tidsstämplad app.
 
-## Kombinera data till en global rapportsserie {#section_5BE3BDF56007402BB1F5C3144D5FE1E0}
+## Kombinera data i en global rapportsserie {#section_5BE3BDF56007402BB1F5C3144D5FE1E0}
 
 Att kombinera data i en global rapportserie kan göras på flera sätt, inklusive märkning med flera programsviter, Vista-regler och importerade batchfiler från offlinekällor.
 
@@ -69,7 +68,7 @@ Nedan följer god praxis och några krav och begränsningar som du bör känna t
 
    Data som inte är i ordning kan omfatta sena data från datainsamling offline och sena träffar, eller osynkroniserade klockor på offline-mobilenheter. Obeställda data kan påverka tidsberäkningar negativt (t.ex. tidsåtgång), attribuering (beständighet mot eVar), antal besök/besök samt rapporter om kundvägar.
 
-* Du bör inte använda tidsstämplar när du anger [s.visitorID](https://docs.adobe.com/content/help/en/analytics/technotes/visitor-identification.html). Det kan leda till oordnade data.
+* Du bör inte använda tidsstämplar när du anger [s.visitorID](https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html). Det kan leda till oordnade data.
 
 * Hybridappar som består av en app (tidsstämplade, offlinedata) som öppnar en webbläsare (utan tidsstämpel, livedata) bör inte använda tidsstämplar. Det resulterar i felaktig rapportering av sessionen.
 
