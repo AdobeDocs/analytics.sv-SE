@@ -2,11 +2,10 @@
 product: analytics
 audience: all
 user-guide-title: Adobe Analytics-dokumentation
-translation-type: tm+mt
-source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 88%
+source-wordcount: '118'
+ht-degree: 24%
 
 ---
 
@@ -15,18 +14,18 @@ ht-degree: 88%
 
 * [Start](home.md)
 * [Adobe Analytics centrala begrepp](an-key-concepts.md)
-* [Verktygshandbok](https://docs.adobe.com/content/help/en/analytics/analyze/home.html)
-* [Administrationshandbok](https://docs.adobe.com/content/help/en/analytics/admin/home.html)
-* [Komponenthandbok](https://docs.adobe.com/content/help/en/analytics/components/home.html)
-* [Exporthandbok](https://docs.adobe.com/content/help/en/analytics/export/home.html)
-* [Implementeringshandbok](https://docs.adobe.com/content/help/en/analytics/implementation/home.html)
-* [Importhandbok](https://docs.adobe.com/content/help/en/analytics/import/home.html)
-* [Integreringshandbok](https://docs.adobe.com/content/help/en/analytics/integration/home.html)
-* [Technotes-handbok](https://docs.adobe.com/content/help/en/analytics/technotes/home.html)
-* [Media Analytics-handbok](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
-* [Data Workbench-handbok](https://docs.adobe.com/content/help/en/data-workbench/using/home.html)
-* [Customer Journey Analytics guide](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
+* [Verktygshandbok](https://experienceleague.adobe.com/docs/analytics/analyze/home.html)
+* [Administrationshandbok](https://experienceleague.adobe.com/docs/analytics/admin/home.html)
+* [Komponenthandbok](https://experienceleague.adobe.com/docs/analytics/components/home.html)
+* [Exporthandbok](https://experienceleague.adobe.com/docs/analytics/export/home.html)
+* [Implementeringshandbok](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
+* [Importhandbok](https://experienceleague.adobe.com/docs/analytics/import/home.html)
+* [Integreringshandbok](https://experienceleague.adobe.com/docs/analytics/integration/home.html)
+* [Technotes-handbok](https://experienceleague.adobe.com/docs/analytics/technotes/home.html)
+* [Media Analytics-handbok](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Data Workbench-handbok](https://experienceleague.adobe.com/docs/data-workbench/using/home.html)
+* [Customer Journey Analytics guide](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
 * [Uppdateringar av analysdokumentation](doc-updates.md)
-* [Versionsinformation](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* [Versionsinformation](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 * [Adobe Analytics funktionsreleaser](an-releases.md)
 
