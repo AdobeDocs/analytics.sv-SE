@@ -1,11 +1,13 @@
 ---
-title: Distribuera Adobe Analytics i en utvecklingsmiljö
+title: Distribuera Adobe Analytics till en dev-miljö
 description: Lär dig hur du använder Adobe Experience Platform Launch för att distribuera Adobe Analytics till din utvecklingsmiljö.
-translation-type: tm+mt
-source-git-commit: 365944140bb1dfc9bc8669ae530c631e8ff1629b
+exl-id: 324943db-cb0b-40b1-8884-56bb3f608278
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '544'
+ht-degree: 1%
 
 ---
-
 
 # Distribuera en analysimplementering till en utvecklingsmiljö
 
@@ -17,9 +19,9 @@ När en egenskap har skapats och konfigurerats i Launch är biblioteken klara at
 
 ## Skapa adaptrar och miljöer
 
-Launch innehåller många organisatoriska arbetsflöden för att distribuera kod. Följ de här stegen för att skapa de komponenter som krävs för en Analytics-implementering. Som Launch-administratör kan ni arbeta inom organisationen för att skapa rätt arbetsflöde för att distribuera Adobe-lösningar.
+Launch innehåller många organisatoriska arbetsflöden för att distribuera kod. Följ de här stegen för att skapa de komponenter som krävs för en Analytics-implementering. Som Launch-administratör kan du arbeta inom organisationen för att skapa rätt arbetsflöde för att distribuera Adobe-lösningar.
 
-1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till detta.
+1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
 2. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
 3. Klicka på fliken Adaptrar och sedan på Lägg till adapter.
 4. Ge den namnet&quot;Akamai&quot; och välj Akamai i listrutan. Klicka på Spara.
@@ -32,11 +34,11 @@ Launch innehåller många organisatoriska arbetsflöden för att distribuera kod
 
 Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publicerats. Om du skapar ett bibliotek som är ungefär översatt som en samling ändringar kan du publicera kod på webbplatsen.
 
-1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till detta.
+1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
 2. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
 3. Klicka på fliken Publicering och sedan på Lägg till nytt bibliotek.
 4. Ge biblioteket namnet &#39;Inledande ändringar&#39; och välj en utvecklingsmiljö.
-5. Klicka på Lägg till alla ändrade resurser, som automatiskt listar Adobe Analytics, Identity Service och Core.
+5. Klicka på Lägg till alla ändrade resurser, som automatiskt visar Adobe Analytics, identitetstjänsten och kärnan.
 6. Klicka på Spara.
 7. Gå tillbaka till arbetsflödesfönstret för publicering, klicka på listrutan bredvid det nya biblioteket och klicka på Skapa för utveckling. Efter några sekunder blir den gula punkten i biblioteket grön, vilket anger att bygget lyckades.
 8. Gå till fliken Miljöer och klicka sedan på utvecklingsmiljön.
@@ -44,7 +46,7 @@ Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publ
 
 ## Installera Launch i webbplatsens utvecklingsmiljö
 
-Om du styr koden för webbplatsen implementerar du de två kodblocken på deras respektive platser (i `<head>` -taggen och precis ovanför den avslutande `</body>` -taggen) på varje sida på webbplatsen. Den här koden placeras vanligtvis i platsens övergripande mall. En tom sida som bara innehåller implementeringskod ser ut så här:
+Om du styr koden för webbplatsen implementerar du de två kodblocken på deras respektive platser (i taggen `<head>` och precis ovanför den avslutande `</body>`-taggen) på varje sida på webbplatsen. Den här koden placeras vanligtvis i platsens övergripande mall. En tom sida som bara innehåller implementeringskod ser ut så här:
 
 ```html
 <!doctype html>
@@ -69,8 +71,8 @@ En vanlig orsak är att det redan finns element i andra bibliotek som har flytta
 
 ## Dokumentation och ytterligare resurser
 
-- [Komma igång med Launch](https://docs.adobe.com/content/help/en/launch/using/intro/get-started/quick-start.html): Lär dig det grundläggande arbetsflödet i Launch
-- [Starta publicering](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html): Läs mer om publicering och miljöer
+- [Komma igång med Launch](https://experienceleague.adobe.com/docs/launch/using/intro/get-started/quick-start.html): Lär dig det grundläggande arbetsflödet i Launch
+- [Starta publicering](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html): Läs mer om publicering och miljöer
 
 ## Nästa steg
 
