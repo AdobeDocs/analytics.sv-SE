@@ -3,16 +3,15 @@ description: Lär dig grunderna i hur du arbetar i ett Workspace-projekt.
 keywords: Analysis Workspace
 title: Översikt över projekt
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 75c551de-297e-4c45-95e6-77472be6628a
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1356'
 ht-degree: 2%
 
 ---
-
 
 # Översikt över projekt
 
@@ -31,10 +30,10 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 | [Skapa nytt projekt](/help/analyze/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden eller från en [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#analysis-workspace) som skapats åt dig. |
 | Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla projekt och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
 | Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
-| [Visa Tutorials](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html) | Här finns Analysis Workspace videokurser. |
+| [Visa Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html) | Här finns Analysis Workspace videokurser. |
 | Namn | Namn på Workspace-projektet. |
 | Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
-| Typ | Anger om det här är ett Workspace-projekt eller ett [Mobile Scorecard](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/mobapp/home.html). |
+| Typ | Anger om det här är ett Workspace-projekt eller ett [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
 | [Projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Anger din roll för projektet - ägare, redigera, duplicera, visa. |
 | Taggar | Taggar som tillämpades på projektet. |
 | Senast ändrad | Datum och tid när projektet senast ändrades. |
