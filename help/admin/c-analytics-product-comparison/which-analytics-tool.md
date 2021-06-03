@@ -2,14 +2,13 @@
 description: Den här hjälpsidan innehåller rekommenderade användningsexempel för varje Adobe Analytics-verktyg. Verktyg bör beaktas i den ordning de anges. Om ett visst verktyg inte uppfyller behovet går du vidare till nästa verktyg för övervägande.
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
-translation-type: tm+mt
-source-git-commit: f2db5f611952ee315c84f925d038c539da110e38
+exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 3%
+source-wordcount: '1153'
+ht-degree: 2%
 
 ---
-
 
 # Vilket Adobe Analytics-verktyg ska jag använda?
 
@@ -31,7 +30,7 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 * Få tillgång till unika videovisualiseringar av Video Daypart och Viewer Drop-off.
 * För att utnyttja publiceringslistor i schemalagda rapporter.
 
-**[Data ](https://docs.adobe.com/content/help/en/data-workbench/using/home.html)** Worktest ska användas:
+**[Data ](https://experienceleague.adobe.com/docs/data-workbench/using/home.html)** Worktest ska användas:
 
 * Det mest flexibla analysverktyget (ned till besökarnivå, träffnivåanalys).
 * Skapa en flerkanalig datauppsättning med online- och offlineinteraktioner från CRM till POS till Web.
@@ -71,7 +70,7 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 
 * API:t för datainfogning och API:t för datainfogning i grupp är båda metoder för att skicka samlingsdata på serversidan till Adobe Analytics. API-anrop för datainfogning görs en händelse i taget. API för datainfogning i grupp accepterar CSV-formaterade filer som innehåller händelsedata, en händelse per rad. Om du arbetar med en ny implementering av en serversidessamling rekommenderar vi att du använder API:t för datainfogning i grupp.
 
-**[Kundattribut ](https://docs.adobe.com/content/help/sv-SE/core-services/interface/customer-attributes/attributes.html)** ska användas:
+**[Kundattribut ](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)** ska användas:
 
 * Om du samlar in företagsdata i en CRM-databas (customer relationship management) och vill överföra data till Experience Cloud.
 * Om ni vill använda CRM-data för en djupare analys i Analytics, eller som målinriktningskriterier i Adobe Target.
@@ -81,7 +80,7 @@ Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin
 * Om du vill inkludera Adobe Audience Manager (AAM) målgruppsdata, t.ex. demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data eller annonsvisningsdata i ett Analytics-arbetsflöde.
 * Om du vill att överförda CRM-data ska vara tidsbaserade, eftersom den här integreringen skickar ny information till Analytics som träffats av en träff.
 
-## Exporterar data från Adobe Analytics {#export}
+## Exportera data från Adobe Analytics {#export}
 
 **[Report](/help/analyze/report-builder/home.md)** Builder ska användas:
 
