@@ -1,14 +1,13 @@
 ---
 description: Spårning avgör hur sökmotordata spåras av din Adobe Analytics-implementering. Detta är ett nödvändigt steg för att utöka Adobe Analytics data med sökmotordata.
 title: Spåra manuellt läge och automatiskt läge
-translation-type: tm+mt
-source-git-commit: 69db61bdfd9375df4d090add7d8ed08135d1f087
+exl-id: 3e2ed26f-dfb2-43ea-8eb6-e332cd10fb29
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 1%
 
 ---
-
 
 # Spårning: Manuellt läge och autoläge
 
@@ -25,11 +24,11 @@ Därför måste du markera kryssrutan Bekräftelse när du väljer Auto-läge in
 Observera att du ansvarar för följande åtgärder när du konfigurerar ett sökmotorkonto i Automatiskt läge:
 
 * Parametern `s_kwcid` och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Ytterligare åtgärder kan krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. **Det är ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan.**
-* Dessutom kan nyckelord infogas i landnings-URL:en som en del av `s_kwcid` värdet. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Exempel: Ett vanligt specialtecken är&quot;+&quot;, som används i nyckelorden&quot;Bred Match Modified&quot;.
+* Dessutom kan nyckelord infogas i landnings-URL:en som en del av `s_kwcid`-värdet. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Exempel: Ett vanligt specialtecken är&quot;+&quot;, som används i nyckelorden&quot;Bred Match Modified&quot;.
 
 >[!IMPORTANT]
 >
->Läs mer om huruvida du bör lägga till parametern `s_kwcid` i [Content Security Policy](https://docs.adobe.com/content/help/en/id-service/using/reference/csp.html).
+>Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html).
 
 ## Manuell lägesspårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 
@@ -41,7 +40,7 @@ Strängen som behöver läggas till i ditt Google-konto visas nedan. Du måste l
 
 >[!IMPORTANT]
 >
->Värdet `<Advertising Analytics ID>` (i **fet stil** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
+>`<Advertising Analytics ID>`-värdet (i **bold** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 
@@ -60,7 +59,7 @@ Exempel på spårningskoder i olika spårningsmallformat:
 {lpurl}?s_kwcid=AL!9999!3!{creative}!{matchtype}!{placement}!network}!{product_partition_id}!{keyword}
 ```
 
-**`{lpurl}`med ytterligare URL-parameter **
+**`{lpurl}`med ytterligare URL-parameter**
 
 ```
 {lpurl}?campaign=PPC&s_kwcid=AL!9999!3!{creative}!{matchtype}!{placement}!network}!{product_partition_id}!{keyword}
@@ -86,7 +85,7 @@ Strängen som behöver läggas till i ditt Bing-konto visas nedan. Du måste lä
 
 >[!IMPORTANT]
 >
->Värdet `<Advertising Analytics ID>` (i **fet stil** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
+>`<Advertising Analytics ID>`-värdet (i **bold** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 
@@ -104,7 +103,7 @@ Exempel på spårningskoder i olika slutliga URL-suffixformat:
 {lpurl}?s_kwcid=AL!9999!10!{AdId}!{OrderItemId}
 ```
 
-**`{lpurl}`med ytterligare URL-parameter **
+**`{lpurl}`med ytterligare URL-parameter**
 
 ```
 {lpurl}?campaign=PPC&
