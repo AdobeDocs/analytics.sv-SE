@@ -5,11 +5,10 @@ title: Använda integreringen
 feature: Data Connectors
 uuid: a1d5045b-4c38-4984-8c71-27e86ebe8b23
 exl-id: 11fc6382-da83-4320-9f2f-bf6ca096f0ae
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 10%
+source-wordcount: '161'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +22,7 @@ När distributionen är klar kan du börja använda de extrafunktioner som den h
 
 Följande åtgärder kan vidtas för att få ut mer av den här integreringen från Adobe Analytics.
 
-1. Skapa ett segment med hjälp av svarsdata från undersökningar (se [Skapa ett segment](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html)).
+1. Skapa ett segment med hjälp av svarsdata från undersökningar (se [Skapa ett segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html)).
 1. Använd segmentet på nyckelrapporter.
 
 ## Exempel {#section-07051d0d60a44408a4e108034586c42f}
