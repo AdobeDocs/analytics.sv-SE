@@ -2,10 +2,9 @@
 title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 exl-id: 825f70a5-cce3-4b1c-bb42-828388348216
-translation-type: tm+mt
-source-git-commit: 7202a49dda7c3ef4f4b535476d3cf637b9e9f7f6
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2112'
 ht-degree: 1%
 
 ---
@@ -122,13 +121,13 @@ För marknadsföringskanalregeln är [!UICONTROL Paid Search]-inställningarna f
 
 ![](assets/example_paid_search.png)
 
-Mer information finns i [Betalsökningsidentifiering](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
+Mer information finns i [Betalsökningsidentifiering](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
 
 ### Naturlig sökning {#natural-search}
 
 En naturlig sökning sker när besökarna hittar din webbplats genom en webbsökning, där sökmotorn rankade din webbplats utan att du betalade för listan.
 
-Det finns ingen naturlig sökidentifiering i Analytics. När du har konfigurerat betald sökidentifiering vet systemet att om en sökreferent inte var en betalande sökreferent måste det vara en naturlig sökreferent. Mer information finns i [Betalsökningsidentifiering](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
+Det finns ingen naturlig sökidentifiering i Analytics. När du har konfigurerat betald sökidentifiering vet systemet att om en sökreferent inte var en betalande sökreferent måste det vara en naturlig sökreferent. Mer information finns i [Betalsökningsidentifiering](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) i Admin.
 
 För marknadsföringskanalregeln är de naturliga sökinställningarna följande:
 
@@ -170,7 +169,7 @@ Den här regeln används av besökare där den refererande URL:en matchar instä
 
 ![](assets/int-channel1.png)
 
-Se [Orsaker till intern (Sessionsuppdatering)](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/c-faq.html#internal) för mer information om varför den här kanalen inträffar.
+Se [Orsaker till intern (Sessionsuppdatering)](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-faq.html#internal) för mer information om varför den här kanalen inträffar.
 
 ### Direkt {#direct}
 
