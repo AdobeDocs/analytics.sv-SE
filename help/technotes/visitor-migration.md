@@ -5,11 +5,10 @@ title: Migrering av besökare
 topic-fix: Developer and implementation
 uuid: af31928c-85d7-407f-a583-0c8f2852ceb3
 exl-id: d44628c8-902f-4e60-b819-41d5537407d8
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '441'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +20,9 @@ Med migrering av besökare kan du bevara cookies för identifiering av besökare
 
 * Flyttar från `2o7.net` till `adobedc.net`.
 
-* Du implementerar tjänsten [Experience Cloud Visitor ID](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) och går från en CNAME/första parts datainsamlingsdomän till `adobedc.net`, `2o7.net` eller `omtrdc.net`
+* Du implementerar tjänsten [Experience Cloud Visitor ID](https://experienceleague.adobe.com/docs/id-service/using/home.html) och går från en CNAME/första parts datainsamlingsdomän till `adobedc.net`, `2o7.net` eller `omtrdc.net`
 
-* Flyttar till en namnsamling/datainsamling från första part ( [cookies från första part)](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.html).
+* Flyttar till en namnsamling/datainsamling från första part ( [cookies från första part)](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html).
 
 * Flyttar från en CNAME till en annan (föränderliga domäner).
 
