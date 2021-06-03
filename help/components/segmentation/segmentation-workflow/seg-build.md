@@ -1,13 +1,12 @@
 ---
 description: I Segment Builder finns en arbetsyta där du kan dra och släppa metriska Dimensioner, segment och händelser för att segmentera besökare baserat på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa segment som identifierar besökarattribut och -åtgärder för besök och sidträffar.
 title: Skapa segment
-feature: Segmentation
+feature: Segmentering
 uuid: c01393df-ccdd-431c-83a6-3c2700bd4999
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1925'
 ht-degree: 1%
 
 ---
@@ -21,9 +20,9 @@ Det finns flera sätt att komma åt segmentbyggaren:
 * **Övre navigering** i analyser: Klicka  **[!UICONTROL Analytics]** >  **[!UICONTROL Components]** >  **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Klicka  **[!UICONTROL Analytics]** >  **[!UICONTROL Workspace]**, öppna ett projekt och klicka  **[!UICONTROL + New]** >  **[!UICONTROL Create Segment]**.
 * **[!UICONTROL Reports & Analytics]**: Klicka  **[!UICONTROL Analytics]** >  **[!UICONTROL Reports]**, öppna en befintlig rapport och klicka på segmentikonen   ![](assets/segment_icon.png) i den vänstra navigeringen och klicka sedan på  **[!UICONTROL Add]**.
-* **[!UICONTROL Report Builder]**:  [Lägg till eller redigera segment i Report Builder](https://docs.adobe.com/content/help/en/analytics/analyze/report-builder/data-requests/segmentation.html).
+* **[!UICONTROL Report Builder]**:  [Lägg till eller redigera segment i Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html).
 
-## Byggkriterier {#section_F61C4268A5974C788629399ADE1E6E7C}
+## Builder-villkor {#section_F61C4268A5974C788629399ADE1E6E7C}
 
 Du kan lägga till regeldefinitioner och behållare för att definiera segment.
 
@@ -63,7 +62,7 @@ Du kan lägga till regeldefinitioner och behållare för att definiera segment.
 1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
 1. **[!UICONTROL X]**: (Ta bort) Du kan ta bort den här delen av segmentdefinitionen.
 1. **[!UICONTROL Experience Cloud publishing]**: Genom att publicera ett Adobe Analytics-segment på Experience Cloud kan ni använda segmentet för marknadsföringsaktiviteter i  [!DNL Audience Manager] och i andra aktiveringskanaler. [Läs mer …](/help/components/segmentation/segmentation-workflow/seg-publish.md)
-1. **[!UICONTROL Audience library]**: Adobe hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet till Experience Cloud. [Läs mer …](https://docs.adobe.com/content/help/sv-SE/core-services/interface/audiences/audience-library.html)
+1. **[!UICONTROL Audience library]**: Adobe hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet till Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Söker i listan över dimensioner, segment eller mått.
 1. **[!UICONTROL Dimensions]**: (Lista) Klicka på rubriken för att expandera.
 1. **[!UICONTROL Metrics]**: Klicka på rubriken för att expandera.
