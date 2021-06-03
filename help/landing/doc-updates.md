@@ -3,11 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-translation-type: tm+mt
-source-git-commit: 07c76cea1f6fd64957fd4fd20bc5187976f3c14c
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 90%
+source-wordcount: '412'
+ht-degree: 84%
 
 ---
 
@@ -15,10 +14,10 @@ ht-degree: 90%
 
 Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
-* Mer information om [!UICONTROL Customer Journey Analytics] finns [här](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html).
-* En omfattande lista över nya Adobe Analytics-funktioner, administratörsmeddelanden och felkorrigeringar finns i den senaste [versionsinformationen för Experience Cloud](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html).
+* Mer information om [!UICONTROL Customer Journey Analytics] finns [här](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html).
+* En omfattande lista över nya Adobe Analytics-funktioner, administratörsmeddelanden och felkorrigeringar finns i den senaste [versionsinformationen för Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
 * Mer information om nya funktioner finns i [Nya funktioner i Analysis Workspace](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) i användarhandboken för verktyg.
-* Mer information om Adobe Analytics för ljud och video finns i [Mäta ljud och video i Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
+* Mer information om Adobe Analytics för ljud och video finns i [Mäta ljud och video i Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 ## Information om större uppdateringar
 
@@ -39,7 +38,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](/help/technotes/cookies/cookies.md) har lagts till. |
 | 29 november 2019 | Dokumentationen för [dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) har setts över. |
 | 25 november 2019 | Nytt avsnitt om [Slutet av livscykeln för Tvinga begränsningar för IP-inloggning](/help/admin/company/login-restrictions-eol.md). |
-| 21 november 2019 | Ny dokumentation för [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html). |
+| 21 november 2019 | Ny dokumentation för [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html). |
 | 28 september 2019 | Nya artiklar om [konfigurationsvariabler för JavaScript-implementering](/help/implement/vars/config-vars/configuration-variables.md). |
 | 12 september 2019 | Ny dokumentation för [Journey IQ: Enhetsövergripande analyser](/help/components/cda/overview.md). |
 | 28 augusti 2019 | Ny artikel om [progressiva webbappar (PWA) för Analytics](/help/analyze/pwa/pwa.md). |
