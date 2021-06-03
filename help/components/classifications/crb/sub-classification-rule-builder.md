@@ -1,10 +1,9 @@
 ---
 description: Du kan inte kombinera klassificeringsregelverktyget med underklassificeringar.
 title: Underklassificeringar och Rule Builder
-translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 2%
 
 ---
@@ -16,7 +15,7 @@ Du kan kombinera klassificeringsregelbyggaren med underklassificeringar om du se
 
 Genom att kombinera klassificeringsregelbyggaren med underklassificeringar kan klassificeringshanteringen förenklas och antalet regler som krävs minskas. Du kanske vill göra detta om spårningskoden består av koder som du vill klassificera separat.
 
-Se [Underklassificeringar](/help/components/classifications/c-sub-classifications.md) för information om underklassificeringar.
+Mer information om underklassificeringar finns i [Underklassificeringar](/help/components/classifications/c-sub-classifications.md).
 
 ## Exempel
 
@@ -28,7 +27,7 @@ Med en klassificeringshierarki kan du tillämpa en klassificering på en klassif
 
 ![](assets/sub_class_table.png)
 
-När du har den här strukturen på plats kan du använda [Klassificeringsregelverktyget](/help/components/classifications/crb/classification-rule-builder.md) för att överföra små filer som bara uppdaterar uppslagstabellerna (de gröna och röda tabellerna i föregående bild). Sedan kan du använda regelbyggaren för att hålla huvudklassificeringstabellen uppdaterad.
+När du har den här strukturen på plats kan du använda [Classifications Rule Builder](/help/components/classifications/crb/classification-rule-builder.md) för att överföra små filer som bara uppdaterar uppslagstabellerna (de gröna och röda tabellerna i föregående bild). Sedan kan du använda regelbyggaren för att hålla huvudklassificeringstabellen uppdaterad.
 
 I följande uppgift beskrivs hur du gör detta.
 
@@ -38,17 +37,17 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
 >[!NOTE]
 >
->Dessa steg beskriver hur du slutför de användningsfall som beskrivs i [Underklassificeringar och Regelbyggaren](/help/components/classifications/crb/sub-classification-rule-builder.md).
+>Dessa steg beskriver hur du slutför det användningsfall som beskrivs i [Underklassificeringar och Regelbyggaren](/help/components/classifications/crb/sub-classification-rule-builder.md).
 
-1. Skapa klassificeringar och underklassificeringar i [Klassificeringshanteraren](https://docs.adobe.com/content/help/en/analytics/components/classifications/c-classifications.html).
+1. Skapa klassificeringar och underklassificeringar i [Klassificeringshanteraren](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html).
 
    Exempel:
 
    ![Steginformation](assets/sub_class_create.png)
 
-1. I [Klassificeringsregelbyggaren](/help/components/classifications/crb/classification-rule-builder.md)kan du klassificera underklassificeringsnyckeln från den ursprungliga spårningskoden.
+1. I [Classifications Rule Builder](/help/components/classifications/crb/classification-rule-builder.md) klassificerar du underklassificeringsnyckeln från den ursprungliga spårningskoden.
 
-   Detta utförs med ett reguljärt uttryck. I det här exemplet använder regeln som ska fyllas *`Broad Campaign code`* det här reguljära uttrycket:
+   Detta utförs med ett reguljärt uttryck. I det här exemplet använder regeln för att fylla i *`Broad Campaign code`* det här reguljära uttrycket:
 
    | `#` | Regeltyp | Matcha | Ange klassificering | Till |
    |---|---|---|---|---|
@@ -57,11 +56,11 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    >[!NOTE]
    >
-   >I nuläget fyller du inte i underklassificeringar *`Campaign Type`* och *`Campaign Director`*.
+   >I nuläget fyller du inte i underklassificeringarna *`Campaign Type`* och *`Campaign Director`*.
 
 1. Överför en klassificeringsfil som endast innehåller de underklassificeringar som anges.
 
-   Se [Klassifikationer](/help/components/classifications/c-sub-classifications.md)på flera nivåer.
+   Se [Klassifikationer på flera nivåer](/help/components/classifications/c-sub-classifications.md).
 
    Exempel:
 
@@ -72,6 +71,6 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
 1. Om du vill underhålla uppslagstabellerna överför du en liten fil (som visas ovan).
 
-   Du överför den här filen, till exempel när en ny *`Broad Campaign code`* introduktion görs. Den här filen gäller för tidigare klassificerade värden. Om du skapar en ny underklassificering (till exempel *`Creative Theme`* som en underklassificering av *`Creative code`*) överför du bara underklassificeringsfilen, i stället för hela klassificeringsfilen.
+   Du skulle till exempel överföra den här filen när en ny *`Broad Campaign code`* introduceras. Den här filen gäller för tidigare klassificerade värden. Om du skapar en ny underklassificering (till exempel *`Creative Theme`* som en underklassificering av *`Creative code`*) överför du bara underklassificeringsfilen i stället för hela klassificeringsfilen.
 
-   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.-->
+   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.—>
