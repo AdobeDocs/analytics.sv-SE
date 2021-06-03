@@ -2,14 +2,13 @@
 description: Denna e-postintegrering med Adobe® Data Connectors™ kombinerar beteendeinformation från Analytics® med e-postmarknadsföring för att skapa ett kraftfullt verktyg för att omdefiniera framgångsmått och inrikta er på målgrupper med mer relevanta meddelanden.
 title: DreamMail Data Connector för Adobe Analytics
 uuid: f6c01bf8-4e6a-4163-9d41-f24fb5f06bdc
-translation-type: tm+mt
-source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
+exl-id: a37bf616-0f2a-4009-825f-92c30e79336f
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
-
 
 # DreamMail Data Connector för Adobe Analytics{#dreammail-data-connector-for-adobe-analytics}
 
@@ -73,4 +72,4 @@ Det kan finnas återkommande avgifter och implementeringsavgifter som är koppla
 
 Den här integreringen kräver analysvariabler för att spåra mätvärden.
 
-När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de aktiveras i Analytics-Admin Console (mer information finns i [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)).
+När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de aktiveras i Analytics-Admin Console (mer information finns i [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)).
