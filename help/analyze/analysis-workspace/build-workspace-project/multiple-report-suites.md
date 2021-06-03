@@ -1,16 +1,15 @@
 ---
 title: Flera rapportsviter
 description: Lär dig hur och varför du skapar projekt i Workspace med flera rapportsviter
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
-
 
 # Flera rapportsviter
 
@@ -66,6 +65,6 @@ Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv pane
 
 1. (Valfritt) Du kan också gå till andra komponentbyggare i Analytics och se till att de nu visar en etikett för rapportsviten som anger
 
-   * Var ett segment ska skapas: [Segmentbyggare](https://docs.adobe.com/content/help/en/analytics/components/segmentation/segmentation-workflow/seg-build.html).
-   * Där ett beräknat mätvärde skapas: [Beräknad metrisk byggare](https://docs.adobe.com/content/help/en/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
-   * Var en varning ska skapas: [Varningsbyggaren](https://docs.adobe.com/content/help/en/analytics/components/alerts/alert-builder.html).
+   * Var ett segment ska skapas: [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html).
+   * Där ett beräknat mätvärde skapas: [Beräknad metrisk byggare](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html).
+   * Var en varning ska skapas: [Varningsbyggaren](https://experienceleague.adobe.com/docs/analytics/components/alerts/alert-builder.html).
