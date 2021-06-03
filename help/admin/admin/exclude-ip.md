@@ -2,10 +2,10 @@
 title: Exkludera efter IP-adress
 description: Förhindra att data som genereras av vissa IP-adresser visas i rapporter.
 exl-id: 315a3000-f043-434b-a677-d111aeed7971
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 3%
+source-wordcount: '214'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Du kan undanta data från specifika IP-adresser, som interna webbplatsaktivitete
 
 >[!NOTE]
 >
->Träffar som exkluderats av IP-adressen faktureras som [serveranrop](https://docs.adobe.com/content/help/en/analytics/technotes/terms.html).
+>Träffar som exkluderats av IP-adressen faktureras som [serveranrop](https://experienceleague.adobe.com/docs/analytics/technotes/terms.html).
 
 Du kan använda jokertecken (*) för att exkludera ett adressintervall. `[!DNL 0.0.*.0]` skulle till exempel exkludera alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
 
