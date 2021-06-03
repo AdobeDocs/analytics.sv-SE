@@ -2,14 +2,13 @@
 description: Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
 title: Komponentval för Virtual Report Suites
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: 19163829-328a-4064-b1be-8c09d1d94a0d
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 12%
+source-wordcount: '385'
+ht-degree: 10%
 
 ---
-
 
 # Komponentval för Virtual Report Suites
 
@@ -72,4 +71,4 @@ Använd komponentgrupper för att göra satsvis komponenttillägg i din virtuell
 
 ## Arbetsytebeteende {#section_6C32F8B642804C0097FCB14E21028D4A}
 
-Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html).
+Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
