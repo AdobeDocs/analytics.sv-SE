@@ -2,10 +2,10 @@
 description: Beskriver den nya strategin för kontinuerlig funktionsrelease för Adobe Analytics
 title: Adobe Analytics funktionsreleaser
 exl-id: 1e403bef-4aab-4a9a-a358-62449ce801ff
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 3%
+source-wordcount: '411'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ För varje funktionsversion kan tidslinjen från RTP till GA variera. Målet är
 
 ## Funktionsflaggor
 
-Funktionsflaggor används för att styra synligheten för nya funktioner under lanseringen. Adobe rekommenderar att du lägger till app.launchdarkly.com i din brandväggs [tillåtelselista](https://docs.adobe.com/content/help/en/analytics/technotes/ip-addresses.html) för att få en optimal upplevelse under lanseringen. Kort efter att GA har nåtts tas flaggan bort.
+Funktionsflaggor används för att styra synligheten för nya funktioner under lanseringen. Adobe rekommenderar att du lägger till app.launchdarkly.com i din brandväggs [tillåtelselista](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html) för att få en optimal upplevelse under lanseringen. Kort efter att GA har nåtts tas flaggan bort.
 
 Du kan när som helst visa de aktiva funktionsflaggorna under **Hjälp > Om arbetsyta > Aktiva funktionsflaggor**.
 
@@ -39,5 +39,5 @@ Med fasade versioner kan Adobe bättre anpassa driftsättningsprocessen och se t
 
 | Fråga | Svar |
 |---|---|
-| Kan jag begära tidig åtkomst till en funktion? | Nej. Tidig tillgång kommer inte att beviljas.<br>Om du vill testa tidiga Analytics-koncept rekommenderar vi att du provar  [Adobe Analytics ](https://docs.adobe.com/content/help/en/analytics/analyze/tech-previews/overview.html) Labs för att få feedback på våra branschledande innovationer. |
-| Påverkar den här versionsstrategin min tillgång till funktioner? | Nej. När en funktion har nått GA får du tillgång till funktionen om den ingår i Analytics-paketet.<br>Du kan visa information om ditt Analytics-paket under  [!UICONTROL Admin] >  [!UICONTROL All admin] >  [!UICONTROL Company settings] >  [Funktionsåtkomstnivåer](https://docs.adobe.com/content/help/en/analytics/admin/company-settings/feature-access-levels.html). |
+| Kan jag begära tidig åtkomst till en funktion? | Nej. Tidig tillgång kommer inte att beviljas.<br>Om du vill testa tidiga Analytics-koncept rekommenderar vi att du provar  [Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/tech-previews/overview.html) Labs för att få feedback på våra branschledande innovationer. |
+| Påverkar den här versionsstrategin min tillgång till funktioner? | Nej. När en funktion har nått GA får du tillgång till funktionen om den ingår i Analytics-paketet.<br>Du kan visa information om ditt Analytics-paket under  [!UICONTROL Admin] >  [!UICONTROL All admin] >  [!UICONTROL Company settings] >  [Funktionsåtkomstnivåer](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/feature-access-levels.html). |
