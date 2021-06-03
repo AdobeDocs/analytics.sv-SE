@@ -2,16 +2,15 @@
 description: projekt med endast visning i arbetsytan
 keywords: Visa endast  projekt
 title: Visa endast  projekt
-feature: Curate and Share
+feature: Kuratera och dela
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 53372247-6902-4c7f-9132-38a1d453186c
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '249'
 ht-degree: 3%
 
 ---
-
 
 # Visa endast  projekt
 
@@ -25,7 +24,7 @@ Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dolt vänster spår
 * Rapportsvit
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till ett [nedrullningsbart filter med datumintervall](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till ett [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
 * Frihand # av synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering
