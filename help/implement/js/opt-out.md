@@ -1,20 +1,19 @@
 ---
 title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
-translation-type: tm+mt
-source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
+exl-id: 08b8c7cc-28c6-45e3-ab44-77471eea8ef1
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
-
 
 # Implementera länkar för avanmälan
 
 >[!IMPORTANT]
 >
->Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-reglerna. Se Översikt över [](https://docs.adobe.com/content/help/en/id-service/using/implementation/opt-in-service/optin-overview.html) Opt-in-tjänsten i användarhandboken för Experience Cloud Identity Service.
+>Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-reglerna. Se [Översikt över anmälningstjänsten](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) i användarhandboken för Experience Cloud Identity Service.
 
 Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder möjlighet att ge besökare på er webbplats möjlighet att avanmäla sig från den information de samlar in. Alla implementeringstyper finns tillgängliga. din organisation ansvarar för din egen sekretesspolicy och för att den förblir i enlighet med dina signerade villkor.
 
@@ -26,23 +25,23 @@ När en besökare når en avanmälnings-URL uppmanas de att installera en avanm�
 
 ## URL för avanmälan
 
-Avanmälningssidan för din organisation beror på det [`trackingServer`](../vars/config-vars/trackingserver.md) variabla värdet i implementeringen.
+Avanmälningssidan för din organisation beror på variabelvärdet [`trackingServer`](../vars/config-vars/trackingserver.md) i implementeringen.
 
 * I Adobe Experience Platform Launch:
    1. Logga in på [launch.adobe.com](https://launch.adobe.com) och klicka på önskad egenskap.
-   2. Klicka på [!UICONTROL Extensions] fliken och sedan på [!UICONTROL Configure] under Adobe Analytics.
-   3. Klicka på [!UICONTROL General] dragspelet och notera [!UICONTROL Tracking Server] värdet.
+   2. Klicka på fliken [!UICONTROL Extensions] och sedan på [!UICONTROL Configure] under Adobe Analytics.
+   3. Klicka på dragspelet [!UICONTROL General] och notera [!UICONTROL Tracking Server]-värdet.
 
 * I en JavaScript-implementering:
    1. På webbservern öppnar du filen AppMeasurement.js som används på webbplatsen i en kod- eller textredigerare.
-   2. Observera `trackingServer` variabelvärdet.
+   2. Observera variabelvärdet `trackingServer`.
 
-* Använda [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html):
+* Använda [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html):
    1. Navigera till webbplatsen med webbläsaren Chrome.
    2. Öppna Experience Cloud Debugger och gå till [!UICONTROL Network tab].
-   3. Notera [!UICONTROL Request URL - Hostname] värdet.
+   3. Observera [!UICONTROL Request URL - Hostname]-värdet.
 
-När du har hittat implementeringens `trackingServer` domän lägger du till sökvägen `/optout.html` till slutet. Exempel:
+När du har hittat implementeringens `trackingServer`-domän lägger du till sökvägen `/optout.html` i slutet. Exempel:
 
 * Cookies från tredje part: `https://example.data.adobedc.net/optout.html`
 * cookies från första part: `https://stats.example.com/optout.html`
@@ -53,7 +52,7 @@ Det finns inställningar som du automatiskt kan läsa in på den här sidan med 
 
 ### Språk
 
-Växla automatiskt språk för avanmälningssidan genom att ta med `locale` frågesträngsparametern. Tilldela den här frågesträngsparametern ett av följande värden:
+Växla språk för avanmälningssidan automatiskt genom att ta med frågesträngsparametern `locale`. Tilldela den här frågesträngsparametern ett av följande värden:
 
 * en_US (engelska, standard)
 * bg_BG (bulgariska)
@@ -78,17 +77,17 @@ Växla automatiskt språk för avanmälningssidan genom att ta med `locale` frå
 * sk_SK (Slovakiska)
 * es_ES (spanska)
 
-Till exempel läses avanmälningssidan in på koreanska. `https://example.data.adobedc.net/optout.html?locale=ko_KR`
+`https://example.data.adobedc.net/optout.html?locale=ko_KR` läser till exempel in avanmälningssidan på koreanska.
 
 >[!TIP]
 >
->Frågesträngsvärdet är inte obligatoriskt eftersom sidan läses in på engelska som standard. `en_US`
+>Frågesträngsvärdet `en_US` är inte obligatoriskt eftersom sidan läses in på engelska som standard.
 
 ### Popup
 
-Lägger till knappen Stäng fönster på sidan, vilket gör att avanmälningssidan kan göras till ett popup-fönster. Använd frågesträngsparametern och ge den värdet `popup` `1`.
+Lägger till knappen Stäng fönster på sidan, vilket gör att avanmälningssidan kan göras till ett popup-fönster. Använd frågesträngsparametern `popup` och ge den värdet `1`.
 
-Du kan till exempel `https://example.data.adobedc.net/optout.html?popup=1` läsa in avanmälningssidan med knappen Stäng fönster.
+`https://example.data.adobedc.net/optout.html?popup=1` läser till exempel in avanmälningssidan med knappen Stäng fönster.
 
 >[!NOTE]
 >
@@ -96,12 +95,12 @@ Du kan till exempel `https://example.data.adobedc.net/optout.html?popup=1` läsa
 
 ### Avanmälan med ett klick
 
-Låter användaren omedelbart välja bort spårning. Lägg till de två frågesträngsparametrarna `opt_out` och `confirm_change`ge varje värde `1`.
+Låter användaren omedelbart välja bort spårning. Lägg till de två frågesträngsparametrarna `opt_out` och `confirm_change` och ge varje värde `1`.
 
-Exempel: installerar `https://example.data.adobedc.net/optout.html?opt_out=1&confirm_change=1` omedelbart avanmälningscookien på besökarens sida.
+`https://example.data.adobedc.net/optout.html?opt_out=1&confirm_change=1` installerar till exempel omedelbart avanmälningscookien på besökarens sida.
 
 ### Anmäl dig med ett klick
 
-Tillåter användaren att omedelbart välja tillbaka till spårning genom att ta bort denna cookie. Lägg till de två frågesträngsparametrarna `opt_in` och `confirm_change`ge varje värde `1`.
+Tillåter användaren att omedelbart välja tillbaka till spårning genom att ta bort denna cookie. Lägg till de två frågesträngsparametrarna `opt_in` och `confirm_change` och ge varje värde `1`.
 
-Till exempel tar `https://example.data.adobedc.net/optout.html?opt_in=1&confirm_change=1` omedelbart bort avanmälningscookien för besökaren.
+`https://example.data.adobedc.net/optout.html?opt_in=1&confirm_change=1` tar till exempel omedelbart bort den avanmälande cookien för besökaren.
