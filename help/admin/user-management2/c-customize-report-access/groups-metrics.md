@@ -6,10 +6,10 @@ title: Anpassa behörigheter för metrik
 feature: Administratörsverktyg
 uuid: 7bfff68a-2add-4068-a07d-87a4f624634c
 exl-id: 84382ff1-845c-442a-9882-7eb9afcdec9a
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 10%
+source-wordcount: '225'
+ht-degree: 5%
 
 ---
 
@@ -29,7 +29,7 @@ Inställningarna på sidan Anpassa mått gäller för de rapportsviter som valts
 
 ## Lösningshändelser
 
-Förutom [Anpassade händelser](https://docs.adobe.com/content/help/sv-SE/analytics/implementation/vars/page-vars/events/event-serialization.html) innehåller den här kategorin analyslösningshändelser, inklusive Experience Manager (AEM), Advertising Cloud (AMO), Mobile, Video och Social.) För varje anpassad grupp med mätvärden läggs alla analyslösningshändelser till som nya mätvärden.
+Förutom [Anpassade händelser](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html) innehåller den här kategorin analyslösningshändelser, inklusive Experience Manager (AEM), Advertising Cloud (AMO), Mobile, Video och Social.) För varje anpassad grupp med mätvärden läggs alla analyslösningshändelser till som nya mätvärden.
 
 Du kan ange behörigheter för händelser i anpassade händelser och analyslösningar (AEM, AMO, Mobile, Video och Social).
 
