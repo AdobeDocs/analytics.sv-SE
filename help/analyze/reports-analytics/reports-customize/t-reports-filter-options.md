@@ -5,10 +5,9 @@ uuid: b6dcaaf7-61f0-4793-870d-e1d156575d5a
 feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: 232c6f69-40bf-487a-8621-d1d7d633681f
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '647'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ Matchar om termen hittas någonstans i radobjektet. Detta fungerar på samma sä
 
 **Innehåller inte**
 
-Matchar om termen inte hittas någonstans i radobjektet. Du kan filtrera &quot;unspecified&quot;, &quot;none&quot;, &quot;keyword unavailable&quot; och andra [specialvärden](https://docs.adobe.com/content/help/en/analytics/technotes/unspecified.html) från rapporter med &quot;does not contain&quot;.
+Matchar om termen inte hittas någonstans i radobjektet. Du kan filtrera &quot;unspecified&quot;, &quot;none&quot;, &quot;keyword unavailable&quot; och andra [specialvärden](https://experienceleague.adobe.com/docs/analytics/technotes/unspecified.html) från rapporter med &quot;does not contain&quot;.
 
 Innehåller inte: `none`
 
