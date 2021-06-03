@@ -2,14 +2,13 @@
 description: 'Läs mer om '
 title: Mätvärdestyp och attribuering
 uuid: 64649698-df2a-42c3-bb31-938f766e1d1f
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '904'
 ht-degree: 4%
 
 ---
-
 
 # Mätvärdestyp och attribuering
 
@@ -28,9 +27,9 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 
 >[!IMPORTANT]
 >
->I juli 2018 införde [!DNL Analytics] [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html), som reviderade hur allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
+>I juli 2018 införde [!DNL Analytics] [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/attribution/attribution.html), som reviderade hur allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
 >
->* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attribution IQ](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)-dokumentationen.
+>* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)-dokumentationen.
 >* Allokeringsmodellerna&quot;sista beröringen i marknadsföringskanalen&quot; och&quot;Första beröringen i marknadsföringskanalen&quot; migreras till de nya attribueringsmodellerna&quot;Sista beröringen&quot; respektive&quot;Första beröringen&quot; (Obs! &quot;Marknadsföringskanaler&quot; kommer inte att bli inaktuella - bara de två allokeringsmodellerna som visas i beräknade värden kommer att vara det).
 >* Dessutom kommer vi att korrigera hur linjär allokering beräknas. För kunder som använder beräknade värden med linjär allokering kan rapporterna ändras något för att återspegla den nya, korrigerade attribueringsmodellen. Den här förändringen av beräknade värden återspeglas i Analysis Workspace, Rapporter och analyser, Rapporterings-API:t och Report Builder. Mer information finns i **How Linear Allocation works (fr.o.m. 19 juli 2018**, nedan.
 
@@ -83,4 +82,3 @@ Efter 19 juli korrigerade vi detta beteende i beräknade mått. I stället för 
 | PROMO B | 2,50 USD | 2,50 USD | 2,50 USD |
 | PROMO C | 2,50 USD | 2,50 USD | 2,50 USD |
 | Totalt | 10.00 USD | 10.00 USD | 10.00 USD |
-
