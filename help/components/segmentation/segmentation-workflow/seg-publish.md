@@ -1,14 +1,13 @@
 ---
 description: Gör att du kan använda segmentet för marknadsföringsaktivitet i målgruppsbiblioteket, målbiblioteket och Audience Manager.
 title: Publicera segment till Experience Cloud
-feature: Segmentation
+feature: Segmentering
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 3%
+source-wordcount: '1261'
+ht-degree: 1%
 
 ---
 
@@ -25,10 +24,10 @@ Vi har också ökat det maximala antalet publicerbara Adobe Analytics-segment ti
 
 ## Förutsättningar
 
-* Se till att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/audiences/t-publish-audience-segment.html). Annars kan du inte publicera den på Experience Cloud.
-* Se till att du arbetar i en rapportserie som är [mappad till din Experience Cloud-organisation](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html).
+* Se till att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html). Annars kan du inte publicera den på Experience Cloud.
+* Se till att du arbetar i en rapportserie som är [mappad till din Experience Cloud-organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
 * Se till att din organisation använder Experience Cloud ID:n.
-* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html) och lägga till dig i produktprofilen.
+* Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) och lägga till dig i produktprofilen.
 
 
 ## Överväganden
@@ -36,7 +35,7 @@ Vi har också ökat det maximala antalet publicerbara Adobe Analytics-segment ti
 * **Report Suite-begränsningar**: Du kan publicera upp till 75 segment per rapportserie. Den här gränsen gäller. Om du redan har 75 segment publicerade kan du inte publicera några ytterligare segment förrän du avpublicerar tillräckligt många segment för att komma under tröskelvärdet på 75 segment.
 * **Medlemskapsbegränsningar**: Målgrupper som delas med  [!DNL Experience Cloud] Adobe Analytics får inte överstiga 20 miljoner unika medlemmar.
 * **Dataintegritet**: Publiken filtreras inte baserat på besökarens autentiseringstillstånd. Om en besökare kan bläddra på webbplatsen i icke-autentiserade och autentiserade lägen, kan åtgärder som utförs när en besökare inte är autentiserad ändå göra att besökaren inkluderas i en målgrupp. Läs [Adobe Experience Cloud sekretess](https://www.adobe.com/privacy/experience-cloud.html) om du vill veta mer om hur målgruppsdelning påverkar integriteten.
-* Om du vill veta mer om skillnaderna **mellan segment i [!DNL Adobe Analytics] och[!DNL Audience Manager]** går du [här](https://docs.adobe.com/content/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html).
+* Om du vill veta mer om skillnaderna **mellan segment i [!DNL Adobe Analytics] och[!DNL Audience Manager]** går du [här](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/aam-analytics-segments.html).
 
 ## Tidslinje för segmentpublicering
 
@@ -97,7 +96,7 @@ I följande skärmbilder visas hur du hämtar AAM UUID i webbläsaren och använ
 
 **Metod 1: Använd Adobe Experience Cloud Debugger**
 
-1. Hämta och installera [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/testing-and-validation/debugger.html) i Chrome Web Store.
+1. Hämta och installera [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/testing-and-validation/debugger.html) i Chrome Web Store.
 1. Starta felsökaren när du läser in en sida.
 1. Bläddra till sektionen Audience Manager och hitta AAM UUID som angetts på den aktuella webbläsarsidan
 (`50814298273775797762943354787774730612` i exemplet nedan)
@@ -108,14 +107,14 @@ I följande skärmbilder visas hur du hämtar AAM UUID i webbläsaren och använ
 
 1. Starta Chrome Developer Tools innan du läser in en sida
 1. Läs in sidan och kontrollera Program > Cookies. AAM UUID ska anges i tredjepartsprodukten
-Demdexcookie ([adobe.demdex.net](https://docs.adobe.com/content/help/en/audience-manager/user-guide/reference/demdex-calls.html) i exemplet nedan). Fältdemonstrationen är AAM UUID-uppsättning
+Demdexcookie ([adobe.demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) i exemplet nedan). Fältdemonstrationen är AAM UUID-uppsättning
 i webbläsaren (`50814298273775797762943354787774730612` i exemplet nedan).
 
 ![Verktyg för Chrome Developer](assets/ggogle-uuid.png)
 
 ## Använd Audience Manager [!UICONTROL Visitor Profile Viewer]
 
-AAM UUID i webbläsaren används som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://docs.adobe.com/content/help/en/audience-manager/user-guide/features/visitor-profile-viewer.html).
+AAM UUID i webbläsaren används som standard när [!UICONTROL Visitor Profile Viewer] läses in. Om du verifierar trait-implementeringar för andra användare anger du ett UUID i UUID-fältet och klickar på [!UICONTROL Refresh]. Mer information finns i [Visitor Profile Viewer](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/visitor-profile-viewer.html).
 
 ![](assets/aam-vpv.png)
 
