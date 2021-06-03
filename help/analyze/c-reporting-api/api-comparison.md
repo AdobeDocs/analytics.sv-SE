@@ -4,14 +4,13 @@ title: API för Analytics-rapportering – jämförelse
 uuid: fa533a8e-33c0-42f4-a294-cabee0258c8f
 feature: API
 role: Developer
-translation-type: tm+mt
-source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
+exl-id: 924f591d-b6ed-4dae-aa69-72d72217e7bd
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 21%
+source-wordcount: '277'
+ht-degree: 12%
 
 ---
-
 
 # API för Analytics-rapportering – jämförelse
 
@@ -40,7 +39,7 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
    <td colname="col5"> Fullständigt bearbetade, slutförda data som används för att dra igång stora dataexporter. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><a href="https://docs.adobe.com/content/help/sv-SE/analytics/technotes/latency.html"  > Latens</a> </p> </td> 
+   <td colname="col1"> <p><a href="https://experienceleague.adobe.com/docs/analytics/technotes/latency.html"  > Latens</a> </p> </td> 
    <td colname="col2"> 30-90 minuter </td> 
    <td colname="col3"> * Sekunder -10 minuter </td> 
    <td colname="col4"> Sekunder -10 minuter </td> 
@@ -54,7 +53,7 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
    <td colname="col5"> Fullständig </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <a href="https://docs.adobe.com/content/help/sv-SE/analytics/landing/home.html"  > Rapporteringsgränssnitt</a> </td> 
+   <td colname="col1"> <a href="https://experienceleague.adobe.com/docs/analytics/landing/home.html"  > Rapporteringsgränssnitt</a> </td> 
    <td colname="col2"> Analysis Workspace, Reports &amp; Analytics, Report Builder, API </td> 
    <td colname="col3"> Realtidsrapport i Rapporter och analyser, Report Builder, 1.4 API </td> 
    <td colname="col4"> Endast API </td> 
@@ -86,7 +85,7 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
    <td colname="col2"> <p> <a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html"  > API för Analytics</a> </p> </td> 
    <td colname="col3"> <p> <a href="https://github.com/AdobeDocs/analytics-1.4-apis"  > Realtidsrapporter</a> </p> </td> 
    <td colname="col4"> <p> <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/live-stream-api/getting_started.md"  > Livesream Overview</a> </p> </td> 
-   <td colname="col5"> <p><a href="https://docs.adobe.com/content/help/en/analytics/export/data-warehouse/data-warehouse.html"  > Data Warehouse</a> </p> </td> 
+   <td colname="col5"> <p><a href="https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse.html"  > Data Warehouse</a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -95,4 +94,3 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
 
 * [Adobe/IO](https://www.adobe.io/)  - En omfattande källa till den tekniska dokumentation och de verktyg som behövs för att integrera Adobe-teknik i era tillämpningar.
 * [Data Workbench Query API](https://marketing.adobe.com/developer/documentation/data-workbench-query-api/c-ins-qry-api)
-
