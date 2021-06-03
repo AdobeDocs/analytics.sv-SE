@@ -1,14 +1,13 @@
 ---
 title: Vanliga frågor om implementering
 description: Vanliga frågor om implementering och länkar till mer information.
-translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+exl-id: 4bab6d51-0077-42ce-8091-f75207d4c4db
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 48%
+source-wordcount: '496'
+ht-degree: 47%
 
 ---
-
 
 # Vanliga frågor om implementering av Analytics
 
@@ -20,7 +19,7 @@ Identitetstjänsten tilldelar en unik, beständig identifierare som kan delas ti
 
 ## Hur implementerar jag videospårning med pulsslag?
 
-Se [Mäta ljud och video i Adobe Analytics](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html).
+Se [Mäta ljud och video i Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 ## Kan ett avbrott i tjänsten hos Adobe påverka prestandan?
 
@@ -34,8 +33,8 @@ AppMeasurement skapar ett bildobjekt på HTML-sidan och webbläsaren begär seda
 
 Ibland vill en organisation ta bort en implementering på grund av kontraktets förfallodatum eller minska antalet serversamtal.
 
-* **Implementeringar med Launch**: Inaktivera eller avinstallera Adobe Analytics-tillägget på [!UICONTROL Extensions] fliken och publicera sedan.
-* **Äldre AppMeasurement-implementeringar**: Ersätt hela innehållet i din `s_code.js` fil med följande kodrad:
+* **Implementeringar med Launch**: Inaktivera eller avinstallera Adobe Analytics-tillägget på  [!UICONTROL Extensions] fliken och publicera sedan.
+* **Äldre AppMeasurement-implementeringar**: Ersätt hela innehållet i  `s_code.js` filen med följande kodrad:
 
 ```js
 var s = new Object();
@@ -46,11 +45,11 @@ var s = new Object();
 >Gör inte:
 >
 >* Ändra rapportsviten till ett ogiltigt värde, eftersom den skapar onödig belastning på Adobe-servrar.
->* Ta bort hela `s_code.js` filen, såvida du inte också tar bort alla referenser till filen på varje sida.
->* Ändra variabeln så att den pekar bort från Adobe. `trackingServer` AppMeasurement skickar fortfarande bildbegäranden som returnerar 404 fel.
+>* Ta bort `s_code.js`-filen helt, såvida du inte också tar bort alla referenser till filen på varje sida.
+>* Ändra variabeln `trackingServer` så att den pekar bort från Adobe. AppMeasurement skickar fortfarande bildbegäranden som returnerar 404 fel.
 
 
-## Jag körde AppMeasurement via en kodanalyserare och flaggade användningen av appen `Math.random()` som en potentiell säkerhetsrisk. Används `Math.random()` med känsliga data?
+## Jag körde AppMeasurement via en kodanalys och flaggade användningen av `Math.random()` som en potentiell säkerhetsrisk. Används `Math.random()` med känsliga data?
 
 Nej. Siffrorna som använder `Math.random()` används inte för att maskera, skicka eller ta emot känsliga data. Data som skickas till datainsamlingsservrar för Adobe är beroende av säkerheten för den underliggande HTTPS-anslutningen. <!-- AN-173590 -->
 
