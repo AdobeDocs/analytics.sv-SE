@@ -1,35 +1,36 @@
 ---
-description: SFTP är ett säkert protokoll för överföring av data som säkerställer att ingen kan se dina data utom du. Adobe Engineering Services kan skapa ett SFTP-konto för att säkert bevara dina data.
+description: SFTP är ett säkert protokoll för överföring av data som säkerställer att ingen kan se dina data utom du. Adobe Engineering Services kan skapa ett SFTP-konto för att säkert behålla dina data.
 keywords: ftp;sftp
-title: Secure File Transfer Protocol - översikt
+title: Secure File Transfer Protocol – översikt
 uuid: 7dd1a867-e828-4c7b-bf11-75a81d4c149c
-translation-type: tm+mt
-source-git-commit: 3fe3442eae1bdd8b90acffc9c25d184714613c16
+exl-id: ea0448f9-1685-4a8f-b2f9-49d315c6ab71
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 9%
 
 ---
 
+# Secure File Transfer Protocol – översikt
 
-# Secure File Transfer Protocol - översikt
-
-SFTP är ett säkert protokoll för överföring av data som säkerställer att ingen kan se dina data utom du. Adobe Engineering Services kan skapa ett SFTP-konto för att säkert bevara dina data.
+SFTP är ett säkert protokoll för överföring av data som säkerställer att ingen kan se dina data utom du. Adobe Engineering Services kan skapa ett SFTP-konto för att säkert behålla dina data.
 
 ## Push-leverans {#section_A47831BB1DCA490BB57F0940617AA506}
 
-Det innebär att Adobes servrar&quot;skickar&quot; filen till dina servrar. I grund och botten levererar vi det till din slutpunkt.
+Det innebär att Adobe-servrar&quot;skickar&quot; filen till dina servrar. I grund och botten levererar vi det till din slutpunkt.
 
-[Data Warehouse](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-dw.md) och [Analytics Data Feed](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-overview.html) kan överföra data via SFTP.
+[Data ](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-dw.md) Warehouseoch  [Analytics Data ](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) Feedkan överföra data via SFTP.
 
 Följande analysverktyg **kan inte** skicka data via SFTP:
 
 * Rapporter och analyser
-* Ad hoc-analys
+* Ad Hoc Analysis
 * Report Builder
 
 ## Pull Delivery {#section_FA29FAEF02FE40B8B32452146A036F48}
 
-Det innebär att filen skickas till någon av Adobes servrar med vanlig FTP. Om du vill ha filen på din server måste du ta bort den från Adobes server med hjälp av SFTP från servern till Adobes FTP-server. Du kan göra detta på något av följande tre sätt:
+Det innebär att filen skickas till en av Adobe servrar med vanlig FTP. Om du vill ha filen på servern måste du ta bort den från Adobe-servern med hjälp av SFTP från servern till Adobe FTP-servern. Du kan göra detta på något av följande tre sätt:
 
-* [Anslut till Adobe via SFTP utan lösenord.](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
+* [Ansluta till Adobe via SFTP utan lösenord.](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
 * [Anslut till ett Adobe FTP-konto med SFTP.](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-connect.md)
-* Du kan skicka alla rapporter du vill till Adobes FTP-liknande dataflöden/R&amp;A/Ad Hoc och så vidare och sedan dra av dem. Adobe kan inte leverera dessa rapporter till den SFTP-server som du har konfigurerat.
-
+* Du kan skicka alla rapporter som du vill ha till Adobe FTP-liknande dataflöden/R&amp;A/Ad Hoc och så vidare och sedan ta bort dem. Adobe kan inte leverera dessa rapporter till den SFTP-server som du har konfigurerat.
