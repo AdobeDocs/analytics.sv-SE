@@ -3,14 +3,13 @@ description: Med sidanalys i realtid (Live-läge) kan du få resultat med minima
 title: Sidanalys i realtid (live)
 feature: Activity Map
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 29ccd89e-d82b-41d4-a940-addc6656b5ec
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 7%
+source-wordcount: '354'
+ht-degree: 1%
 
 ---
-
 
 # Sidanalys i realtid (Live-läge)
 
@@ -36,13 +35,13 @@ Om du vill kontrollera vilket element som klickas mest i Live-läge:
 
 ## Datalatens som ett resultat av A4T-konfiguration
 
-När [A4T-integreringen](https://docs.adobe.com/content/help/sv-SE/target/using/integrate/a4t/a4t.html) har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
+När [A4T-integreringen](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
 
 Ökningen återspeglas i alla Adobe Analytics tjänster och verktyg, inklusive liveströmmen och realtidsrapporter, och gäller i följande scenarier:
 
 * För liveströmmar, realtidsrapporter och API-begäranden samt aktuella data för trafikvariabler fördröjs bara träffar med ett extra data-ID.
 * För aktuella data om konverteringsmått, slutförda data och dataflöden fördröjs alla träffar ytterligare 5-7 minuter.
 
-Tänk på att latensökningen börjar efter att du har implementerat [identitetstjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html), även om du inte har implementerat den här integreringen fullständigt.
+Tänk på att latensökningen börjar efter att du har implementerat [identitetstjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html), även om du inte har implementerat den här integreringen fullständigt.
 
 Mer information [här](/help/analyze/activity-map/activitymap-standard-live.md).
