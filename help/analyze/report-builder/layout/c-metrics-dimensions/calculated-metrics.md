@@ -3,14 +3,13 @@ description: Report Builder 5.2 stöder Adobe Analytics Unified Calculated Metri
 title: Beräknade mätvärden
 uuid: c9814894-cda6-40ff-8ec4-3ab2c1908ebc
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 462086eb-675f-443c-b3a6-b4fa390254da
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 15%
+source-wordcount: '359'
+ht-degree: 13%
 
 ---
-
 
 # Beräknade mätvärden
 
@@ -20,11 +19,11 @@ Report Builder 5.2 stöder Adobe Analytics Unified Calculated Metrics. Bland and
 >
 >Befintliga arbetsböcker kan peka på begäranden med äldre metriska ID:n. När du använder Report Builder 5.2 konverteras dessa äldre mätnings-ID:n till det nya globala ID:t. Om du delar den här arbetsboken med en användare av Report Builder v5.1 eller tidigare, kan den användaren inte se de beräknade måtten.
 
-Mer information om hur du skapar och hanterar beräknade värden med nya Calculated Metric Builder och Manager finns i [Calculated Metrics](https://docs.adobe.com/content/help/sv-SE/analytics/components/calculated-metrics/cm-overview.html) Guide.
+Mer information om hur du skapar och hanterar beräknade värden med nya Calculated Metric Builder och Manager finns i [Calculated Metrics](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) Guide.
 
 I steg 2 i begärandeguiden kan du filtrera och använda beräknade värden.
 
-## Filtrera beräknade mått {#section_376E986D3E684999A7CDB08E53854159}
+## Filtrera beräknade värden {#section_376E986D3E684999A7CDB08E53854159}
 
 **Filterberäknade** mätvärden genom att klicka på filterikonen:   ![](assets/segment_filter.png)
 
@@ -44,9 +43,8 @@ Tillgängliga filter:
 | Andra filter > Mitt | Visar alla mätvärden som du äger. |
 | Andra filter > Delat med mig | Visar alla mått som andra delar med dig. |
 
-## Använd beräknade mått {#section_DF5CF349460A45FDA4B6E6BB8B52F18E}
+## Använd beräknade värden {#section_DF5CF349460A45FDA4B6E6BB8B52F18E}
 
 När du har valt filter klickar du på **[!UICONTROL Apply]** för att tillämpa dem på din begäran. De valda måtten läggs nu till i rapportlayouten.
 
 ![](assets/filtering_for_metric.png)
-
