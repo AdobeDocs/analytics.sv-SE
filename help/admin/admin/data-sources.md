@@ -1,14 +1,13 @@
 ---
 description: Med funktionen Datakällor kan du importera data till Analytics från offlinekällor. När dessa data har importerats kan de behandlas och hanteras på liknande sätt som data som samlats in internt.
 title: Datakällor
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: eab8a22b-5471-4922-b246-c991814c4b8b
 exl-id: 540c7342-64e1-41e3-9ee9-270a2a0a5008
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 8%
+source-wordcount: '167'
+ht-degree: 3%
 
 ---
 
@@ -24,4 +23,4 @@ Använd datakällor för att:
 
 När Datakällor aktiveras för en rapportserie visas en FTP-plats så att du kan överföra filer som ska integreras i rapporter. När data har överförts bearbetar Adobe-servrar automatiskt dessa data och integrerar dem i rapportsviten.
 
-Se [Hjälp om datakällor](https://docs.adobe.com/content/help/en/analytics/import/data-sources/datasrc-home.html).
+Se [Hjälp om datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html).
