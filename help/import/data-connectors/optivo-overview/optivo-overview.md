@@ -2,14 +2,13 @@
 description: Integrationen kombinerar styrkan i det integrerade systemet för feedback och beteenderapportering från Adobe Analytics, som hjälper er att skapa kraftfulla analyser och optimeringsmöjligheter för er organisation.
 title: optivo® broadcast Data Connector for Adobe Analytics
 uuid: bd713080-9d1a-49ee-aad0-86dd5c37c34a
-translation-type: tm+mt
-source-git-commit: 3850dc3503ca57ba4f13f0de63e8420e484db501
+exl-id: fff63047-afa6-420d-9188-ec8ebe407a46
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
-
 
 # optivo® broadcast Data Connector for Adobe Analytics{#optivo-broadmail-data-connector-for-adobe-analytics}
 
@@ -90,4 +89,4 @@ Integrationen är tillgänglig för [!DNL ~Partner~]-kunder, men ytterligare int
 
 Den här integreringen kräver Adobe Analytics-variabler för att spåra mätvärden.
 
-När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de aktiveras i Analytics-Admin Console (mer information finns i [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)).
+När du har identifierat de händelser och eVars som ska användas med den här integreringen måste de aktiveras i Analytics-Admin Console (mer information finns i [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)).
