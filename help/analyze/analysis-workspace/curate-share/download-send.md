@@ -2,16 +2,15 @@
 description: Du kan hämta data från Analysis Workspace genom att kopiera dem eller i PDF- och CSV-format.
 title: Hämta PDF- eller CSV-filer
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
-feature: Curate and Share
+feature: Kuratera och dela
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 085013dc-8263-4fc8-9492-99f0ecadf14b
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '958'
 ht-degree: 1%
 
 ---
-
 
 # Hämta PDF- eller CSV-filer
 
@@ -25,7 +24,7 @@ Du kan hämta ett fullständigt projekt genom att gå till **[!UICONTROL Project
 
 När det gäller projektnedladdningar bör du tänka på följande:
 
-* Projektet kan sparas eller inte sparas när du begär en projekthämtning. Endast sparade projekt kan dock vara [schemalagda](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
+* Projektet kan sparas eller inte sparas när du begär en projekthämtning. Endast sparade projekt kan dock vara [schemalagda](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html).
 * Det kan ta flera minuter att exportera PDF-filer som hämtats i webbläsaren eftersom projektet körs på nytt på Adobe-servrar innan det återges i PDF-format. Vi rekommenderar att du inte lämnar projektet förrän PDF-filen har laddats ned i webbläsaren. Du kan dock fortsätta att ändra projektet medan du väntar. Om en PDF tar längre tid än fem minuter att återge uppmanas du att skicka den via e-post i stället.
 * PDF-nedladdningar återges som en sida utan sidnumrering.
 * När ett projekt återges som PDF återger vi det som finns på sidan. Om ett projekt har visualiseringar och paneler i anpassad storlek måste du ändra dem så att de storleksändras automatiskt (knappen i det övre högra hörnet) så att det inte finns något trunkerat innehåll.
@@ -84,11 +83,10 @@ Om du begär mer än en nedladdning åt gången får du ett meddelande om att va
 
 ![](assets/toast.png)
 
-## Vanliga frågor och svar {#faq}
+## Vanliga frågor {#faq}
 
 | Fråga | Svar |
 | --- | --- |
 | Varför är min nedladdade PDF-fil en sida? | Arbetsytan sidnumrerar för närvarande inte hämtade PDF-filer. |
 | Kan jag exportera mer än 50 000 objekt med alternativet &quot;Hämta objekt som CSV&quot;? | Varje nedladdning kan innehålla upp till 50 000 dimensionsobjekt, men du kan ändra sorteringsordningen i tabellen för att hämta längre slutobjekt eller använda ett filter för att hämta mer specifika objekt. |
-| Vad gör **[!UICONTROL Copy visualization]**? | **[!UICONTROL Copy visualization]** är inte ett exportalternativ. Du kan kopiera en visualisering eller panel från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. [Intralänkande video](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
-
+| Vad gör **[!UICONTROL Copy visualization]**? | **[!UICONTROL Copy visualization]** är inte ett exportalternativ. Du kan kopiera en visualisering eller panel från en plats i Workspace till en annan. Exempel: från en panel till en annan i samma projekt, eller från ett projekt till ett annat projekt. [Intralänkande video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) |
