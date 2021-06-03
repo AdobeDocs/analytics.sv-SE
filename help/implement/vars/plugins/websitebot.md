@@ -2,9 +2,9 @@
 title: websiteBot
 description: Identifiera botar dynamiskt med musrörelser.
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
-source-git-commit: c4b44b573732e7bcdafdac539dec8ee7b680aa92
+source-git-commit: 03584622a570281474d6f6e0a580d453b8ad8fec
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,19 @@ Med plugin-programmet `websiteBot` kan du dynamiskt identifiera om besökarna ä
 
 Denna plug-in utför två kontroller:
 
-* Först avgörs om enheten är en stationär eller mobil enhet som använder variabeln `navigator.UserAgent`. Mobila enheter ignoreras.
-* Om det är en stationär enhet läggs en händelseavlyssnare till för musrörelser.
+* För det första, när det gäller en stationär enhet, lägger den till en händelseavlyssnare för musrörelser.
+* Sedan avgör den om enheten är en stationär eller mobil enhet som använder variabeln `navigator.UserAgent`. Mobila enheter ignoreras.
 
-Om användaragenten finns på ett skrivbord och ingen musrörelse identifieras ställer plugin-programmet in variabeln `websiteBot` till `true`. Om användaragenten är en mobil enhet, eller om musrörelser identifieras, ställer plugin-programmet in variabeln `websiteBot` på `false`.
+Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan plugin-programmet
+
+* Antingen gör du ett [!UICONTROL Direct Call]-regelanrop (för Adobe Experience Platform Launch), eller
+* gör ett `s.tl`-anrop för att ange att besökaren inte är en robot.
 
 ## Förutsättningar
 
 Adobe rekommenderar följande innan denna plugin används:
 
-* **Konfigurera inställningar för** eVar: Ställ in en eVar under  [Konverteringsvariabler ](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatumet till **Aldrig** och allokeringen till **&quot;Ursprungligt värde (första)&quot;**.
+* **Konfigurera inställningar för** eVar: Ställ in en eVar under  [Konverteringsvariabler ](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatumet till **Aldrig** och allokeringen till **&quot;Ursprungligt värde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när antingen regeln [!UICONTROL Direct Call] eller anropet `s.tl` utlöses.
 * **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ställ in en eVar på `navigator.UserAgent` för varje träff för att samla in dessa data.
 
 ## Installera plugin-programmet med den anpassade kodredigeraren för Launch
