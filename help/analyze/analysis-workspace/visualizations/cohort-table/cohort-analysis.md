@@ -1,16 +1,15 @@
 ---
 title: Vad är Cohort Analysis och hur fungerar den?
 description: Gräv djupare in i informationen om er målgrupp och dela in i relaterade grupper med Cohort Analysis. Läs om kohortanalyser i Analysis Workspace.
-feature: Visualizations
+feature: Visualiseringar
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # Läs om [!UICONTROL Cohort Analysis] i Adobe Analytics
 
@@ -28,7 +27,7 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 
 [!UICONTROL Cohort Analysis] är tillgängligt för alla Adobe Analytics-kunder med åtkomsträttigheter till  [!UICONTROL Analysis Workspace].
 
-[Självstudievideo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html)  om kohortanalys (4:36)
+[Självstudievideo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html)  om kohortanalys (4:36)
 
 >[!IMPORTANT]
 >
@@ -72,4 +71,3 @@ Skapa kohorter baserat på en vald dimension, och inte tidsbaserade kohorter, so
 ![](assets/cohort-customizable-cohort-row.png)
 
 Instruktioner om hur du konfigurerar och kör en kohortrapport finns i [Konfigurera en kohortanalysrapport](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md).
-
