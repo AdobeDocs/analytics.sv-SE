@@ -1,20 +1,19 @@
 ---
 title: Översikt över klassificeringar
 description: Anpassa grupperingen av dimensionsobjekt.
-translation-type: tm+mt
-source-git-commit: 3c39b43866f8adc7b08c67a28f93f85f91128ab8
+exl-id: 0d2c77ea-610f-48e0-b6a2-6e91794783b1
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Översikt över klassificeringar
 
 En klassificering är ett sätt att kategorisera Analytics-variabeldata och sedan visa data på olika sätt när du genererar rapporter.
 
-Videoöversikt över [Analytics-klassificeringar](https://video.tv.adobe.com/v/16853/?captions=swe).
+Videoöversikt över [Analysklassificeringar](https://video.tv.adobe.com/v/16853/).
 
 **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > *`<Traffic or Conversion>`*
 
@@ -32,9 +31,9 @@ Anta att ni i stället för att bara visa kampanjer med spårningskod vill se ka
 
 Rapportering och analys innehåller fördefinierade klassificeringar för spårningskodvariabeln, som erbjuder klassificeringsbaserade rapporter som kallas Creative Elements och Campaigns. Du måste konfigurera klassificeringar manuellt för alla andra konverterings- och trafikvariabler.
 
-Se [Trafikklassificeringar](/help/admin/admin/c-traffic-variables/traffic-classifications.md) och [Konverteringsklassificeringar](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
+Se [Trafikklassificeringar](/help/admin/admin/c-traffic-variables/traffic-classifications.md) och [Konverteringsklassificeringar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
 
-I följande tabell beskrivs de olika typer av klassificeringar som är tillgängliga och de variabeltyper som stöder dem. Granska informationen i den [allmänna filstrukturen](/help/components/classifications/importer/c-saint-data-files.md) innan du överför datafiler.
+I följande tabell beskrivs de olika typer av klassificeringar som är tillgängliga och de variabeltyper som stöder dem. Granska informationen i [Allmän filstruktur](/help/components/classifications/importer/c-saint-data-files.md) innan du överför datafiler.
 
 <table id="table_279728C28D9C40EE832ACC9F211B5F17"> 
  <thead> 
@@ -53,13 +52,12 @@ I följande tabell beskrivs de olika typer av klassificeringar som är tillgäng
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> Text aktiverad den</span> </p> <p>Obs!  I underhållsutgåvan av Analytics Maintenance, 10 maj 2018, började Adobe begränsa funktionaliteten för datumaktiverade klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya datumaktiverade klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering. </p> </td> 
    <td colname="col2"> <p>Konverteringsvariabler </p> </td> 
-   <td colname="col3"> <p>Med en datumaktiverad textklassificering kan du tilldela datumintervall till en textklassificering. Detta används vanligtvis med kampanjklassificeringar så att ni kan dra nytta av Gantt-diagramvyn i rapporten <span class="wintitle"> Campaigns</span> . </p> <p>Du kan inkludera faktiska kampanjdatum i den datafil som fyller i klassificeringsdata. </p> <p>Rapporter och analyser samlar in kampanjspårningskoder även om kampanjens slutdatum redan har passerats, men kampanjdata som samlas in efter kampanjens slutdatum är inte associerade med kampanjen. </p> </td> 
+   <td colname="col3"> <p>Med en datumaktiverad textklassificering kan du tilldela datumintervall till en textklassificering. Detta används vanligtvis med kampanjklassificeringar så att du kan dra nytta av Gantt-diagramvyn i <span class="wintitle">-rapporten för kampanjer</span>. </p> <p>Du kan inkludera faktiska kampanjdatum i den datafil som fyller i klassificeringsdata. </p> <p>Rapporter och analyser samlar in kampanjspårningskoder även om kampanjens slutdatum redan har passerats, men kampanjdata som samlas in efter kampanjens slutdatum är inte associerade med kampanjen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="wintitle"> Numeriskt</span> <p>Obs!  I underhållsutgåvan av Analytics Maintenance, 10 maj 2018, började Adobe begränsa funktionaliteten för numeriska klassificeringar. Dessa klassificeringstyper har tagits bort från gränssnitten Admin och Klassificeringsimporter. Inga nya numeriska klassificeringar kan läggas till. Befintliga klassificeringar kan fortfarande hanteras (överföras till, tas bort) via standardarbetsflödet för klassificering, och kommer även i fortsättningen att vara tillgängliga vid rapportering. </p> </p> </td> 
    <td colname="col2"> <p>Konverteringsvariabler </p> </td> 
-   <td colname="col3"> <p>Med numeriska klassificeringar kan du använda fasta numeriska värden på <span class="wintitle"> konverteringsrapporter</span> . Dessa klassificeringar visas som mått i rapporter. </p> <p>När du överväger om du vill lägga till en <span class="wintitle"> numerisk</span> klassificering måste det numeriska värdet vara fast och oföränderligt över tiden. </p> </td> 
+   <td colname="col3"> <p>Med numeriska klassificeringar kan du använda fasta numeriska värden på <span class="wintitle">-konverteringsrapporter</span>. Dessa klassificeringar visas som mått i rapporter. </p> <p>När du överväger om du ska lägga till en <span class="wintitle"> numerisk</span>-klassificering måste det numeriska värdet vara fast och oföränderligt över tiden. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
