@@ -2,12 +2,11 @@
 description: Importören låter dig ladda upp klassificeringsdata gruppvis för att analysera rapporter i en fil. Importen kräver ett specifikt filformat för slutförda dataöverföringar.
 subtopic: Classifications
 title: Datafiler för klassificering
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: f27bb812-56e0-472a-9993-d869f0fea700
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1722'
 ht-degree: 0%
 
 ---
@@ -164,7 +163,7 @@ Dessa tecken har en speciell betydelse i en datafil. Undvik om möjligt att anv�
 
 Kampanjdatum är vanligtvis intervall (start- och slutdatum) som associeras med enskilda kampanjer. Datum ska anges i formatet ÅÅÅ/MM/DD. Exempel: 2013/06/15-2013/06/30.
 
-Mer information finns i [Konverteringsklassificeringar](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
+Mer information finns i [Konverteringsklassificeringar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html).
 
 >[!NOTE]
 >
