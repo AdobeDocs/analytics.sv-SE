@@ -3,14 +3,13 @@ title: Felsöka datainsamling i Activity Map
 description: Bestäm varför du inte kan se Activity Map data i bildbegäranden
 feature: Activity Map
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 7f9e06ba-4040-483b-b18b-cdfe85bca486
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
-
 
 # Felsöka datainsamling i Activity Map
 
@@ -20,7 +19,7 @@ Om du inte ser data för Activity Map-dimensioner kan du använda den här sidan
 
 Kontrollera först att AppMeasurement samlar in Activity Map-data på rätt sätt.
 
-1. Hämta och installera [Adobe Experience Cloud Debugger Chrome Extension](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+1. Hämta och installera [Adobe Experience Cloud Debugger Chrome Extension](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 2. Navigera till webbsidan och klicka sedan på en länk.
 3. Öppna felsökaren när den följande sidan läses in. Verifiera att du ser datavariabler för kontext i Activity Map mellan `activitymap.` och `.activitymap`:
 
