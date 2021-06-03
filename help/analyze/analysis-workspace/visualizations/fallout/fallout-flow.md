@@ -2,16 +2,15 @@
 description: Använd utfallsvisualisering i ett Workspace-projekt.
 title: Översikt över utfall
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
-feature: Visualizations
+feature: Visualiseringar
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 85d0c88e-d159-4870-aaf6-51899d87ff77
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '501'
 ht-degree: 2%
 
 ---
-
 
 # Översikt över utfall
 
@@ -35,7 +34,7 @@ En bortfallsvisualisering är användbar vid analys av:
 * Allmänna, bredare trafikflöden: Av de personer som såg hemsidan visar det här flödet hur många som har gjort en sökning och sedan hur många som till slut gick vidare för att titta på ett visst objekt.
 * Korrelationer mellan händelser på din webbplats. Korrelationer visar hur många procent av dem som tittade på din integritetspolicy fortsatte att köpa en produkt.
 
-[Videosjälvstudievideo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)  för bortfallsvisualisering (4:15)
+[Videosjälvstudievideo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)  för bortfallsvisualisering (4:15)
 
 ## Segmentering som grund för flöde och utfall {#section_654F37A398C24DDDB1552A543EE29AA9}
 
