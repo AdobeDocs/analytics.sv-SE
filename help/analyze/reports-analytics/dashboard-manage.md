@@ -6,9 +6,9 @@ uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
 feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: abd5acf5-f743-4c94-81fb-fc6cc69e8f26
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '744'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Befintliga gamla kontrollpaneler kommer att fortsätta att köras och du kan for
 
 >[!NOTE]
 >
->Om du går framåt kan du använda [Analysis Workspace-projekt](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) och deras möjlighet att hämtas och schemaläggas.
+>Om du går framåt kan du använda [Analysis Workspace-projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) och deras möjlighet att hämtas och schemaläggas.
 
 När du kopierar den äldre kontrollpanelen öppnas den äldre kontrollpanelen för redigering, där du kan lägga till äldre innehåll eller nytt innehåll. När du kopierar en äldre kontrollpanel bevaras originalet i listan med äldre kontrollpaneler.
 
