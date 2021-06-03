@@ -2,24 +2,23 @@
 description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
 title: Översikt över avvikelseidentifiering
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
-feature: AI Tools
+feature: AI-verktyg
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 12%
+source-wordcount: '282'
+ht-degree: 8%
 
 ---
-
 
 # Översikt över avvikelseidentifiering
 
 Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace.
 
-[Videosjälvstudiekurs](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html)  om avvikelseidentifiering (4:53)
+[Videosjälvstudiekurs](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html)  om avvikelseidentifiering (4:53)
 
-[Självstudievideo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/contribution-analysis-workspace.html)  om bidragsanalys (3:20)
+[Självstudievideo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/contribution-analysis-workspace.html)  om bidragsanalys (3:20)
 
 >[!IMPORTANT]
 >
@@ -38,7 +37,7 @@ Exempel på avvikelser du kan undersöka är:
 * Inslag i videobufferthändelser
 * Taggar i låga videobithastigheter
 
-Både avvikelseidentifiering och [bidragsanalys](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot eventuella avvikelser per dag och bädda in resultatet i ditt Analysis Workspace-projekt.
+Både avvikelseidentifiering och [bidragsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot eventuella avvikelser per dag och bädda in resultatet i ditt Analysis Workspace-projekt.
 
 Analysis Workspace avvikelseidentifieringsalgoritm innehåller
 
