@@ -1,18 +1,17 @@
 ---
 title: Besökare med Experience Cloud ID
 description: Antalet unika besökare som använder Adobe Experience Cloud ID-tjänsten.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+exl-id: 16c170d0-3546-4e0a-8f3c-c141b8a0e4fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 4%
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
-
 # Besökare med Experience Cloud ID
 
-Mätvärdet &quot;Besökare med Experience Cloud ID&quot; visar antalet unika besökare som identifieras av Adobe med hjälp av [Experience Cloud ID-tjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html). Den här dimensionen är användbar vid jämförelse med [unika besökarmått](unique-visitors.md) för att säkerställa att de flesta besökare på din webbplats använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
+Mätvärdet &quot;Besökare med Experience Cloud ID&quot; visar antalet unika besökare som identifieras av Adobe med hjälp av [Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Den här dimensionen är användbar vid jämförelse med [unika besökare](unique-visitors.md)-måttet för att säkerställa att de flesta besökare på webbplatsen använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
 
 >[!NOTE]
 >
@@ -20,7 +19,7 @@ Mätvärdet &quot;Besökare med Experience Cloud ID&quot; visar antalet unika be
 
 ## Hur det här måttet beräknas
 
-Det här måttet baseras på [unika besökares](unique-visitors.md) mått, förutom att det endast omfattar individer som identifieras med `mid` frågesträngen (baserat på [`s_ecid`](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html) cookien).
+Det här måttet är baserat på [Unika besökare](unique-visitors.md)-måttet, förutom att det endast omfattar individer som identifieras med frågesträngen `mid` (baserat på [`s_ecid`](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html)-cookien).
 
 ## Felsök konfigurationen av ditt Experience Cloud-ID
 
@@ -38,4 +37,4 @@ Genom att lägga till det beräknade måttet i rapporten kan du sortera sidrappo
 
 ![Sidor utan ID-tjänst](assets/metric-mcvid3.png)
 
-Observera att dimensionsobjektet&quot;Produktsnabbvyer&quot; inte implementeras korrekt med identitetstjänsten. Du kan samarbeta med lämpliga team inom organisationen för att uppdatera dessa sidor så snart som möjligt. Du kan skapa en liknande rapport med vilken typ av dimension som helst, till exempel [webbläsartyp](../dimensions/browser-type.md), [platsavsnitt](../dimensions/site-section.md)eller [eVar](../dimensions/evar.md).
+Observera att dimensionsobjektet&quot;Produktsnabbvyer&quot; inte implementeras korrekt med identitetstjänsten. Du kan samarbeta med lämpliga team inom organisationen för att uppdatera dessa sidor så snart som möjligt. Du kan skapa en liknande rapport med valfri typ av dimension, t.ex. [webbläsartyp](../dimensions/browser-type.md), [platsavsnitt](../dimensions/site-section.md) eller någon [eVar](../dimensions/evar.md).
