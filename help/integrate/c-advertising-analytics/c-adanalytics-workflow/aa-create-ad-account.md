@@ -1,14 +1,13 @@
 ---
 title: Så här konfigurerar du ett annonskonto i Advertising Analytics
 description: Gör att du kan skapa nya annonskonton och mappa flera konton till flera rapportsviter.
-translation-type: tm+mt
-source-git-commit: 4d0d5ca99049e48fcf1f248f78ecef94534b6815
+exl-id: f593c714-e85f-4000-85b2-6294cad81e25
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 6%
+source-wordcount: '844'
+ht-degree: 3%
 
 ---
-
 
 # Konfigurera ett annonskonto
 
@@ -59,13 +58,13 @@ Fyll i **[!UICONTROL Tracking Settings]** enligt följande riktlinjer:
 
    | Inställning | Beskrivning |
    |--- |--- |
-   | Typ | <ul><li>**Auto:** Låter Advertising Cloud Engine avgöra hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. Detta är det enklaste sättet, men kanske inte ger den bästa integrerade datauppsättningen.<br>**Viktigt:** Om du vill konfigurera ett sökmotorkonto i Automatiskt läge ansvarar du för följande åtgärder:<br>- Parametern &quot;s_kwcid&quot; läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Därför kan ytterligare åtgärder krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. **Obs!** Läs mer om huruvida du bör lägga till den här parametern i  [Content Security Policy](https://docs.adobe.com/content/help/en/id-service/using/reference/csp.html).<br>- Nyckelord kan dessutom infogas i landnings-URL:en som en del av värdet &quot;s_kwcid&quot;, så om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken (ett exempel på ett vanligt specialtecken är &quot;+&quot; som används i nyckelorden &quot;Bred matchning ändrad&quot;).</li><li>**Manuell:** Gör att du kan hantera spårningsparametrarna som läggs till i sökmotorns spårningsmallar/mål-URL:er. [Se de här manuella spårningsexemplen för varje sökmotor](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manual-vs-automatic-tracking.md).</li></ul> |
+   | Typ | <ul><li>**Auto:** Låter Advertising Cloud Engine avgöra hur spårningsparametrarna läggs till i sökmotorns spårningsmallar/mål-URL:er. Detta är det enklaste sättet, men kanske inte ger den bästa integrerade datauppsättningen.<br>**Viktigt:** Om du vill konfigurera ett sökmotorkonto i Automatiskt läge ansvarar du för följande åtgärder:<br>- Parametern &quot;s_kwcid&quot; läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Därför kan ytterligare åtgärder krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. **Obs!** Läs mer om huruvida du bör lägga till den här parametern i  [Content Security Policy](https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html).<br>- Nyckelord kan dessutom infogas i landnings-URL:en som en del av värdet &quot;s_kwcid&quot;, så om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken (ett exempel på ett vanligt specialtecken är &quot;+&quot; som används i nyckelorden &quot;Bred matchning ändrad&quot;).</li><li>**Manuell:** Gör att du kan hantera spårningsparametrarna som läggs till i sökmotorns spårningsmallar/mål-URL:er. [Se de här manuella spårningsexemplen för varje sökmotor](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-manual-vs-automatic-tracking.md).</li></ul> |
 
 1. I avsnittet **[!UICONTROL Mapping]** väljer du vilka rapportsviter som ska länkas till det här sökmotorkontot. Du måste ange minst en rapportserie innan du kan spara Advertising Account. Du kan mappa flera konton till flera rapportsviter (1:1, 1:Many, Many:Many). Observera att de data som AMO hämtar från sökmotorn helt enkelt kopieras till en mappad rapportsvit, så det finns ingen delning av data.
 
    >[!IMPORTANT]
    >
-   >Endast rapportsviter som har [mappats till en Experience Cloud-organisation](https://docs.adobe.com/content/help/sv-SE/core-services/interface/about-core-services/report-suite-mapping.html) kan väljas. Om du inte ser din rapportsserie läser du [Felsök Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md).
+   >Endast rapportsviter som har [mappats till en Experience Cloud-organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html) kan väljas. Om du inte ser din rapportsserie läser du [Felsök Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md).
 
    För **[!UICONTROL Mapping Settings]** följande riktlinjer:
 
@@ -79,7 +78,7 @@ Fyll i **[!UICONTROL Tracking Settings]** enligt följande riktlinjer:
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Rapportsvitsmappning </p> </td> 
-      <td colname="col2"> <p>Rapportsvitens mappning avgör vilket rapportpaket som länkas till det här sökmotorkontot. Med andra ord avgör den i vilken rapportssvit/vilka rapportsviter sökmotordata skickas. </p> <p>Om du inte kan se din rapportserie i listan kan du <a href="https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/report-suite-mapping.html"  > mappa din rapportsvit till en Experience Cloud-organisation</a> med det här verktyget. </p> </td> 
+      <td colname="col2"> <p>Rapportsvitens mappning avgör vilket rapportpaket som länkas till det här sökmotorkontot. Med andra ord avgör den i vilken rapportssvit/vilka rapportsviter sökmotordata skickas. </p> <p>Om du inte kan se din rapportserie i listan kan du <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html"  > mappa din rapportsvit till en Experience Cloud-organisation</a> med det här verktyget. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -92,4 +91,3 @@ Fyll i **[!UICONTROL Tracking Settings]** enligt följande riktlinjer:
 >[!NOTE]
 >
 >Du bör vänta minst 24 timmar innan sökmotordata börjar fylla i era Analytics-rapporter.
-
