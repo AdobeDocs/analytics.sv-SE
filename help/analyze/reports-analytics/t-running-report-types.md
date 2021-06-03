@@ -5,11 +5,10 @@ uuid: f59ab2a1-e916-46e8-bb5b-e6361ba00dda
 feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: 2e8cac1b-d133-4095-b5db-886ce0566b82
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '2279'
-ht-degree: 4%
+source-wordcount: '2253'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +33,7 @@ t_reports_ranked.xml
 
    Rankade rapporter kan innehålla upp till 200 artiklar som listas i tabellen (t.ex. produkter, kategorier, webbsidor) och tio siffror (intäkter, order, vyer osv.).
 
-## Kör en trendrapport {#task_F03B4E760B9E4EA29FC3F654E6316887}
+## Köra en trendrapport {#task_F03B4E760B9E4EA29FC3F654E6316887}
 
 Trendrapporter visar mätvärden över tid. Du använder den här rapporttypen när du vill se hur ett segment fungerar från en tidsperiod till nästa.
 
@@ -51,7 +50,7 @@ De flesta konverterings- och trafikrapporter har en trendvy tillgänglig. Med [!
 1. Kör en konverterings- eller trafikrapport, till exempel **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages]**.
 1. Under **[!UICONTROL Report Type]** klickar du på **[!UICONTROL Trended.]**
 
-## Kör en konverteringsTratt-rapport {#task_B926A74AA6A641138C2986C1635120CB}
+## Kör en konverteringsrapport {#task_B926A74AA6A641138C2986C1635120CB}
 
 Konverteringstrattrapporter visar hur många besökare i procent som gått igenom en uppsättning händelser för att utföra en önskad åtgärd. Du kan till exempel se hur många besökare som har gått från att besöka din webbsida, genom att lägga till artiklar i en kundvagn och sedan till att köpa en artikel. Den här rapporten visar också antalet som föll ned längs vägen.
 
@@ -63,9 +62,9 @@ t_reports_conversion_funnel.xml
 
 Om du vill köra den här rapporten väljer du en rapport, till exempel en sidrapport ( **[!UICONTROL Reports]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Tracking Code]** > **[!UICONTROL Campaign Conversion Funnel]**).
 
-En beskrivning finns i [Konverteringsrapporter](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-conversion.html).
+En beskrivning finns i [Konverteringsrapporter](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-conversion.html).
 
-## Kör en utfallsrapport {#task_8FD97C8260464F9DA731A93DB8F80184}
+## Köra en utfallsrapport {#task_8FD97C8260464F9DA731A93DB8F80184}
 
 I [!UICONTROL Fallout Report] visas antalet besökare som besökt en fördefinierad sidsekvens. Här visas också konverterings- och bortfallsfrekvenser mellan varje steg.
 
@@ -75,7 +74,7 @@ t_reports_fallout.xml
 
  -->
 
-Kolla in den nya panelen [Bortfallsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
+Kolla in den nya panelen [Bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
 
 1. I [!UICONTROL Adobe Analytics] klickar du på **[!UICONTROL Reports]** > **[!UICONTROL Paths]** > **[!UICONTROL Pages]** > **[!UICONTROL Fallout]**.
 1. Klicka på **[!UICONTROL Launch the Fallout Report Builder]** på sidan [!UICONTROL Fallout Report].
@@ -89,16 +88,16 @@ Kolla in den nya panelen [Bortfallsanalys](https://docs.adobe.com/content/help/e
 
 >[!MORELIKETHIS]
 >
->* [Beskrivning av bortfallsrapport](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-fallout.html)
+>* [Beskrivning av bortfallsrapport](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-fallout.html)
 
 
-## Kör en sidflödesrapport {#task_133E8B87C3F04DA0A42D10CBA499305B}
+## Köra en sidflödesrapport {#task_133E8B87C3F04DA0A42D10CBA499305B}
 
 Sidflödesrapporter visar i vilken ordning besökarna kommer åt sidorna och navigerar på webbplatsen. Den här rapporten hjälper dig att svara
 
-Kolla in den nya [Flödesvisualiseringen](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
+Kolla in den nya [Flödesvisualiseringen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
 
-Kör en [rapport för sökvägar](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-paths.html).
+Kör en [rapport för sökvägar](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-paths.html).
 
 Klicka till exempel på **[!UICONTROL Reports]** > **[!UICONTROL Paths]** > **[!UICONTROL Pages]** > **[!UICONTROL Next Page Flow]**.
 
@@ -124,7 +123,7 @@ t_reports_funnel.xml
 
  -->
 
-1. Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Products]** > [Produktkonverteringstratt](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-conversion-funnel.html).
+1. Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Products]** > [Produktkonverteringstratt](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-conversion-funnel.html).
 
 ## Kör en marknadsföringskanalrapport {#task_64ADED5CC75248319E06E3E029B47F78}
 
@@ -138,7 +137,7 @@ t_reports_marketing_channel.xml
 
 Mer information finns i hjälpsystemet [Marketing Channel](/help/components/c-marketing-channels/analyze-mc.md).
 
-## Kör en avvikelseidentifieringsrapport {#task_4808C96327354D789C075823F5C3A049}
+## Köra en avvikelseidentifieringsrapport {#task_4808C96327354D789C075823F5C3A049}
 
 Beskriver hur du tolkar Sammanfattning och Individuella måttscheman i avvikelseidentifiering.
 
@@ -148,15 +147,15 @@ t_anomaly_view.xml
 
  -->
 
-Kolla in de nya [analysfunktionerna för avvikelseidentifiering och bidragsanalys](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) i Analysis Workspace!
+Kolla in de nya [analysfunktionerna för avvikelseidentifiering och bidragsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) i Analysis Workspace!
 
 **[!UICONTROL Reports]** > **[!UICONTROL Site Metrics]** > **[!UICONTROL Anomaly Detection]** .
 
 >[!NOTE]
 >
->Du kan också köra avvikelseidentifiering inifrån Analysis Workspace-projekt. [Mer...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html)
+>Du kan också köra avvikelseidentifiering inifrån Analysis Workspace-projekt. [Mer...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html)
 
-Information om hur du konfigurerar avvikelseidentifiering finns i [referenshandboken](https://docs.adobe.com/content/help/en/analytics/analyze/reports-analytics/getting-started.html#Setting_up_Anomaly_Detection).
+Information om hur du konfigurerar avvikelseidentifiering finns i [referenshandboken](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/getting-started.html#Setting_up_Anomaly_Detection).
 
 Analysidentifiering visar två typer av diagram: Ett sammanfattningsdiagram och enskilda mätdiagram. Enskilda måttscheman visas endast om minst en avvikelse har identifierats för det måttet.
 
@@ -183,7 +182,7 @@ Analysidentifiering visar två typer av diagram: Ett sammanfattningsdiagram och 
         <li id="li_4090357A0D214BC7B1C3DE0615875554">Om de nedre gränserna och det förväntade värdet är samma, är avvikelsen % -100 % </li> 
         <li id="li_EF694E1A4E874ECD94E1E8F7302E494F">I annat fall är avvikelsen % ((nedre gränsvärde - faktiskt värde) / (förväntat värde - undre gränsvärde) * -100 </li> 
        </ul> </li> 
-      <li id="li_5C05EF7023484CC993E96D63E842B65C">Om du klickar på <span class="uicontrol"> Visa segment </span> öppnas segmentspåret där du kan tillämpa segment i en avvikelseidentifieringsrapport. <a href="https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html"  > Mer  </a> om segmentering. </li> 
+      <li id="li_5C05EF7023484CC993E96D63E842B65C">Om du klickar på <span class="uicontrol"> Visa segment </span> öppnas segmentspåret där du kan tillämpa segment i en avvikelseidentifieringsrapport. <a href="https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html"  > Mer  </a> om segmentering. </li> 
       <li id="li_1B41CABF13D1407886C68EE3BC201E60">Om du klickar på <span class="uicontrol"> Redigera mått </span>kan du markera och avmarkera mått som du vill identifiera avvikelser för. </li> 
      </ul> </p> </td> 
   </tr> 
@@ -236,11 +235,11 @@ Du ställer in avvikelseidentifiering oberoende av rapportsviten.
 
    ![](assets/ad_top_menu.png)
 
-   Mer information om hur du skapar och hanterar segment finns i [Analytics Segmentation Guide](https://docs.adobe.com/content/help/en/analytics/components/segmentation/seg-home.html). 1. (Valfritt) Favorit eller bokmärk rapporten.
+   Mer information om hur du skapar och hanterar segment finns i [Analytics Segmentation Guide](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html). 1. (Valfritt) Favorit eller bokmärk rapporten.
 1. (Valfritt) Ändra slutdatumet för visningsperioden. Standardvärdet är igår.
 1. Nu kan du börja tolka rapporten. [Visa avvikelseidentifieringsdiagram](/help/analyze/reports-analytics/t-running-report-types.md#task_4808C96327354D789C075823F5C3A049).
 
-## Kör en realtidsrapport {#task_5D25929C918E40B18965222FA94176B0}
+## Köra en realtidsrapport {#task_5D25929C918E40B18965222FA94176B0}
 
 Beskriver hur du visar och tolkar realtidsrapporter.
 
@@ -254,7 +253,7 @@ reports_realtime.xml
 
 Realtidsrapportering innehåller två huvudrapporter - en översiktsrapport och en detaljrapport. De består av ett antal rapporter.
 
-Information om hur du konfigurerar realtidsrapporter finns i [referenshandboken för analyser](https://docs.adobe.com/content/help/en/analytics/landing/home.html#RealTime_Reports_Configuration).
+Information om hur du konfigurerar realtidsrapporter finns i [referenshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/landing/home.html#RealTime_Reports_Configuration).
 
 1. Ta en titt på **[!UICONTROL Overview]**-rapporten och dess komponenter:  ![](assets/rtr_overview_report.png)
 
@@ -265,7 +264,7 @@ Information om hur du konfigurerar realtidsrapporter finns i [referenshandboken 
    </thead> 
    <tr class="chrow strow"> 
    <td class="choption"><strong>Välj Report Suite</strong></td> 
-   <td class="chdesc stentry"> Visar rapportsviten som den här realtidsrapporten omfattar. Information om hur du ändrar rapportsviten finns i <a href="https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html"  > Konfiguration av realtidsrapporter </a>. </td> 
+   <td class="chdesc stentry"> Visar rapportsviten som den här realtidsrapporten omfattar. Information om hur du ändrar rapportsviten finns i <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html"  > Konfiguration av realtidsrapporter </a>. </td> 
    </tr> 
    <tr class="chrow strow"> 
    <td class="choption"><strong>Växla mellan rapporter</strong></td> 
