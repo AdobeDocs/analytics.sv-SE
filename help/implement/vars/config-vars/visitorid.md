@@ -1,31 +1,30 @@
 ---
 title: visitorID
 description: Använd ett anpassat besökar-ID.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: cb336042-01a1-4a66-a947-a221a7919c1b
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 4%
+source-wordcount: '247'
+ht-degree: 1%
 
 ---
 
-
 # visitorID
 
-Adobe använder flera olika metoder för att identifiera besökare på er webbplats. Variabeln `visitorID` åsidosätter alla andra metoder för besöksidentifiering.
+Adobe använder flera olika metoder för att identifiera besökare på din webbplats. Variabeln `visitorID` åsidosätter alla andra metoder för identifiering av besökare.
 
 >[!IMPORTANT]
 >
->Adobe rekommenderar att du inte använder den här variabeln. Använd [Adobe Experience Cloud Identity Service](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) i stället.
+>Adobe avråder från att använda den här variabeln. Använd [Adobe Experience Cloud identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) i stället.
 
 ## Besökar-ID i Adobe Experience Platform Launch
 
-[!UICONTROL Visitor ID] är ett fält under [!UICONTROL Cookies] dragspelet när du konfigurerar Adobe Analytics-tillägget.
+[!UICONTROL Visitor ID] är ett fält under  [!UICONTROL Cookies] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
-4. Expandera dragspelsfliken, som visar [!UICONTROL Cookies] [!UICONTROL Visitor ID] fältet.
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
+4. Expandera dragspelet [!UICONTROL Cookies], som visar fältet [!UICONTROL Visitor ID].
 
 Tilldela det här fältet till dataelementet som innehåller ditt anpassade besökar-ID. Ange inte det här fältet som ett statiskt värde.
 
@@ -35,7 +34,7 @@ Variabeln `s.visitorID` är en sträng som innehåller en anpassad unik identifi
 
 >[!WARNING]
 >
->Om du ställer in variabeln partway genom ett besök resulterar data i två olika unika besökare. `visitorID`
+>Om du ställer in variabeln `visitorID` genom ett besök resulterar data i två separata unika besökare.
 
 ```js
 s.visitorID = "abc123";
