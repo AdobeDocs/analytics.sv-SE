@@ -6,10 +6,10 @@ title: Anpassa behörigheter för verktyg i rapportsviten
 feature: Administratörsverktyg
 uuid: 3c95d296-ffd0-4971-9c5f-110ddbe042ce
 exl-id: 8b776055-66a5-4ada-8d92-391c50a1d4f1
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 9%
+source-wordcount: '1121'
+ht-degree: 3%
 
 ---
 
@@ -45,26 +45,26 @@ Inställningarna på den här sidan gäller för de rapportsviter som har valts 
 | [Kontosammanfattning](/help/admin/admin/general-acct-settings-admin.md) | Ger behörighet att redigera kontoinställningar för en rapportserie. |
 | [URL-filter](/help/admin/admin/internal-url-filter-admin.md) | Ger behörighet till interna URL-filter i rapportsviter. Interna URL-filter används för att avgöra vilka referenser, eller refererande sidor, som är interna för din webbplats. |
 | [Anpassad kalender](/help/admin/admin/custom-calendar.md) | Ger behörighet att redigera anpassad kalender. |
-| [Betalsökning](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) | Betalsökningsidentifiering skiljer betald från naturlig sökning i rapporten Sökmotorer och Söknyckelord. |
+| [Betalsökning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/paid-search-detection/paid-search-detection.html) | Betalsökningsidentifiering skiljer betald från naturlig sökning i rapporten Sökmotorer och Söknyckelord. |
 | [Menyanpassning](/help/admin/admin/customize-menus.md) | Anpassa rapportmenyerna som en användare ser i Rapporter och analyser. |
 | [Rapportkonfiguration i realtid](/help/admin/admin/realtime/t-realtime-admin.md) | Behörighet att konfigurera realtidsrapporter, Analytics. |
 | [Videoinställningar](/help/admin/admin/video-management.md) | Behörighet att ange en uppsättning anpassade konverteringsvariabler (eVars) och anpassade händelser som ska användas för att spåra och rapportera video. |
-| [Videoklassificeringar](https://docs.adobe.com/content/help/sv-SE/media-analytics/using/media-overview.html) | Behörighet att ange en uppsättning anpassade konverteringsvariabler (eVars) och anpassade händelser som ska användas för att spåra och rapportera video. |
+| [Videoklassificeringar](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) | Behörighet att ange en uppsättning anpassade konverteringsvariabler (eVars) och anpassade händelser som ska användas för att spåra och rapportera video. |
 | [Trafikvariabler](/help/admin/admin/c-traffic-variables/traffic-var.md) | Behörighet att korrelera anpassade data med specifika trafikrelaterade händelser. |
 | [Trafikklassificeringar](/help/admin/admin/c-traffic-variables/traffic-classifications.md) | Konsoliderad i klassificeringar (under Verktyg och rapporter). |
 | [Kanaler](/help/components/c-marketing-channels/analyze-mc.md) | Ger behörighet till inställningar för marknadsföringskanal i Report Suite Manager > Redigera inställningar > Marknadskanaler. |
-| [Kostnader](https://docs.adobe.com/content/help/en/analytics/components/marketing-channels/analyze-mc.html) | Aktiverar tillstånd till marknadsföringskanaler > Marketing Channel-kostnader i Report Suite Manager. |
+| [Kostnader](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/analyze-mc.html) | Aktiverar tillstånd till marknadsföringskanaler > Marketing Channel-kostnader i Report Suite Manager. |
 | [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) | Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på vissa webbsidor på din webbplats. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. |
 | [Sökmetoder](/help/admin/admin/finding-methods.md) | Här kan du identifiera hur olika sökmetoder rapporterar om konverteringsframgångar på din webbplats. |
 | [Konverteringsklassificeringar](/help/admin/admin/conversion-var-admin/conversion-classifications.md) | Konsoliderad i klassificeringar (under Verktyg och rapporter). |
-| [Unik besökare](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/unique-visitor-variable/t-unique-visitor-variable.html) | Ger behörighet att ange variabeln Unik besökare. |
-| [Success Events](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) | Åtgärder som kan spåras, t.ex. produktvy, utcheckning och inköp. |
+| [Unik besökare](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/unique-visitor-variable/t-unique-visitor-variable.html) | Ger behörighet att ange variabeln Unik besökare. |
+| [Success Events](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) | Åtgärder som kan spåras, t.ex. produktvy, utcheckning och inköp. |
 | [Klassificeringshierarkier](/help/admin/admin/conversion-var-admin/classification-hierarchies.md) | Konsoliderad i klassificeringar (under Verktyg och rapporter). |
-| [Listvariabler](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) | Kallas även List Var. På samma sätt som funktionen List Props tillåter List Vars flera värden inom samma bildbegäran. |
+| [Listvariabler](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) | Kallas även List Var. På samma sätt som funktionen List Props tillåter List Vars flera värden inom samma bildbegäran. |
 | [Standardmått](/help/admin/admin/default-metrics.md) | Rapporter och analyser visar en standarduppsättning med mätvärden i alla konverteringsrapporter, såvida inte en användare väljer en anpassad uppsättning mätvärden. De valda mätvärdena visas för alla användare i den associerade rapportsviten. |
-| [Bearbetningsregler](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html) | Ger åtkomst till bearbetningsregler som förenklar datainsamling och hantering av innehåll när det skickas till rapporter. |
+| [Bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html) | Ger åtkomst till bearbetningsregler som förenklar datainsamling och hantering av innehåll när det skickas till rapporter. |
 | **Verktyg och rapporter** |  |
-| [Avvikelseidentifiering](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) | Ger tillstånd till avvikelseidentifiering, som tillhandahåller en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data. |
+| [Avvikelseidentifiering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) | Ger tillstånd till avvikelseidentifiering, som tillhandahåller en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data. |
 | [Kanalrapport](/help/components/c-marketing-channels/analyze-mc.md) | Ger tillstånd till Marketing Channel-rapporter, som finns i Rapporter > Marketing Channel Reports. |
 | [Realtidsrapport](/help/admin/admin/realtime/t-realtime-admin.md) | Ger åtkomst till realtidsrapporten. |
 | [Punktsidor](/help/admin/admin/bot-removal/bot-rules.md) | **Obs! Startsidor är för specifika rapporter- och analysrapporter, inte för hantering av robotregler. För närvarande finns det ingen behörighet att tillåta redigering av båda reglerna.** Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats. |
@@ -76,11 +76,11 @@ Inställningarna på den här sidan gäller för de rapportsviter som har valts 
 | Äldre ClickMap | Ger åtkomst till menyn för det gamla övertäckningsverktyget för ClickMap. |
 | Installation av äldre klickkarta | Ger installationsbehörighet till det äldre verktyget för ClickMap. |
 | Återbesök | En rapport som visar antalet besök där besöksnumret är större än 1. Rapporten om återkommande besök innehåller besökare som inte är cookies. |
-| [Klassificeringsimporteraren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-importer/c-working-with-saint.html) /exporteraren och  [regelbyggaren](https://docs.adobe.com/content/help/en/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html) | Konsoliderad i klassificeringar (se nedan). |
+| [Klassificeringsimporteraren](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-working-with-saint.html) /exporteraren och  [regelbyggaren](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-rulebuilder/classification-rule-builder.html) | Konsoliderad i klassificeringar (se nedan). |
 | Hanteraren för dataflöden | Ger rättigheter till Analytics Data Feed. |
 | Klassificeringar | Kombinerar följande behörigheter: Trafikklassificeringar, Videoklassificeringar, Konverteringsklassificeringar, Klassificeringshierarkier, Klassificeringshanterare och Klassificeringsimporterare/Exporterare och Regelbyggare.  Obs!  Med den här behörigheten kan användarna redigera klassificeringar för alla rapportsviter, inte bara för de markerade. |
-| [Bidragsanalys](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html) | Ger rätt att använda bidragsanalys i Analysis Workspace. |
+| [Bidragsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html) | Ger rätt att använda bidragsanalys i Analysis Workspace. |
 | **Kontrollpanelsobjekt** |  |
-| Inställningarna i Kontrollpanelsobjekt ger åtkomst till [rapporter](https://docs.adobe.com/content/help/en/analytics/admin/server-call-usage/server-call-usage-dashboard.html) i Rapporter och analys:, Mina rekommenderade rapporter, Sammanfattningsrapport för företag, Bild, KPI/mätarrapport, Rapportsvitsummor, Text, Rapport, Användningssammanfattningsrapport och Webbresurser |  |
+| Inställningarna i Kontrollpanelsobjekt ger åtkomst till [rapporter](https://experienceleague.adobe.com/docs/analytics/admin/server-call-usage/server-call-usage-dashboard.html) i Rapporter och analys:, Mina rekommenderade rapporter, Sammanfattningsrapport för företag, Bild, KPI/mätarrapport, Rapportsvitsummor, Text, Rapport, Användningssammanfattningsrapport och Webbresurser |  |
 | **Övriga** |  |
 | Social | Styr åtkomsten till menyn Social Management i Report Suite Manager. |
