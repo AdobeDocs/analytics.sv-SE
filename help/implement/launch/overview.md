@@ -1,19 +1,21 @@
 ---
 title: Implementera med Launch-översikt
-description: Lär dig implementera Adobe Analytics med Adobe Experience Platform Launch
-translation-type: tm+mt
-source-git-commit: d1db8da65faac1bf09fa2a290a2645092b542a35
+description: Så här implementerar du Adobe Analytics med Adobe Experience Platform Launch
+exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 0%
 
 ---
 
-
 # Implementera med Launch-översikt
 
-Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Adobes nuvarande rekommendationsmetod är Adobe Experience Platform Launch.
+Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Adobe nuvarande rekommenderade metod är via Adobe Experience Platform Launch.
 
 Launch är en tagghanteringslösning som gör att ni kan driftsätta Analytics-kod tillsammans med andra taggningskrav. Adobe erbjuder integreringar med andra lösningar och produkter och låter er driftsätta anpassad kod. Alla dessa uppgifter kan utföras utan att någon utvecklingsteam i organisationen behöver uppdatera koden på er webbplats.
 
-Alla kunder med ett aktivt Adobe Experience Cloud-avtal kan använda Launch. Om du är osäker på om du har åtkomst kontaktar du en av organisationens Experience Cloud-systemadministratörer.
+Alla kunder som har ett aktivt Adobe Experience Cloud-avtal kan använda Launch. Om du är osäker på om du har åtkomst kan du kontakta någon av Experience Cloud systemadministratörerna i din organisation.
 
 ## Allmänt arbetsflöde
 
@@ -28,8 +30,8 @@ Se [Skapa en Analytics-egenskap i Adobe Experience Platform Launch](create-analy
 
 ## Ytterligare resurser
 
-Launch kan anpassas mycket. Läs mer om hur ni får ut mesta möjliga av Adobe Analytics genom att inkludera rätt data i er implementering.
+Launch kan anpassas mycket. Läs mer om hur du får ut mesta möjliga av Adobe Analytics genom att inkludera rätt data i implementeringen.
 
-* [Startdokumentation](https://docs.adobe.com/content/help/en/launch/using/overview.html): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
-* [Adobe Analytics-tillägg](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html): Använd Analytics-tillägget för att skicka data till Adobe Analytics.
+* [Startdokumentation](https://experienceleague.adobe.com/docs/launch/using/overview.html): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
+* [Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html): Använd Analytics-tillägget för att skicka data till Adobe Analytics.
 * [Implementeringsvariabler](../vars/overview.md): Avgör vilka variabler du vill skicka till datainsamlingsservrar.
