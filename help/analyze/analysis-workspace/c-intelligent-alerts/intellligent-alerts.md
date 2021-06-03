@@ -2,22 +2,21 @@
 description: Det nya systemet för intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet.
 title: Översikt över intelligenta aviseringar
 uuid: b9bf75ad-bb6f-49fe-8c55-355ea3c50a71
-feature: AI Tools
+feature: AI-verktyg
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 49d47896-bf93-4960-b647-2765c935eb25
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '356'
 ht-degree: 10%
 
 ---
-
 
 # Översikt över intelligenta aviseringar
 
 Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet.
 
-Här följer en självstudievideo om [Intelligent Alerts](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
+Här följer en självstudievideo om [Intelligent Alerts](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
 
 ## Översikt
 
