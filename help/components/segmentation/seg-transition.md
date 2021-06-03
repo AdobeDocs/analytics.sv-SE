@@ -1,14 +1,13 @@
 ---
 description: Frågor och svar om segmentering.
 title: Vanliga frågor
-feature: Segmentation
+feature: Segmentering
 uuid: f49dc829-1d53-4183-9add-1aeaa5219d89
 exl-id: 316e2a2e-55d3-4c23-9985-9a6d90390e86
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 2%
+source-wordcount: '2066'
+ht-degree: 1%
 
 ---
 
@@ -20,8 +19,8 @@ Svar på vanliga frågor om segmenteringsfunktioner, åtkomst, behörigheter, b�
 
 * Segmentering i Analysis Workspace:
 
-   * Du kan [jämföra segment](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html).
-   * Använd [segment som dimensioner](https://docs.adobe.com/content/help/sv-SE/core-services/interface/audiences/audience-library.html) i en jämförelse.
+   * Du kan [jämföra segment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html).
+   * Använd [segment som dimensioner](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) i en jämförelse.
    * Använd segment i [bortfallsanalys](https://docs.adobe.com/help/en/analytics/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.html).
 
 * Du kan [använda flera segment i en rapport eller ett projekt](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
@@ -74,7 +73,7 @@ Listrutan för rapportsviten har flyttats bredvid datumväljaren i det övre hö
 
 **Vilka rättigheter och behörigheter behöver jag för att använda, skapa och hantera segment?**
 
-Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
+Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
 
 Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Mer...](/help/components/segmentation/seg-reference/seg-rights.md)
 
@@ -315,7 +314,7 @@ Tabellen nedan innehåller en lista med dimensioner som har bytt namn i Segment 
  </tbody> 
 </table>
 
-## Ändringar av strängbaserade Dimensioner som har kända värden {#section_1A9EDEE5CBC44B5AA6262560052ABE77}
+## Ändrar till strängbaserade Dimensioner som har kända värden {#section_1A9EDEE5CBC44B5AA6262560052ABE77}
 
 Strängbaserade dimensioner med en känd uppsättning värden ändrades till uppräknade typer. När du skapar ett segment med dessa mått fylls listan i med alla kända värden och den enda operatorn som stöds är lika med. På så sätt kan du snabbt segmentera de exakta värden som du sökte efter utan att välja oönskade värden när du använder mindre begränsande matchning.
 
@@ -337,7 +336,7 @@ Följande dimensioner ändrades till uppräknade listor:
 | längd för mobilbokmärke | java aktiverat | betalsökningar |
 | mobil URL-längd | språk |  |
 
-## Ändringar av heltalsbaserade Dimensioner som har kända värden {#section_84A8AAD0344148AD9F9211D3EB271903}
+## Ändrar till heltalsbaserade Dimensioner med kända värden {#section_84A8AAD0344148AD9F9211D3EB271903}
 
 Heltalsbaserade dimensioner (till exempel webbläsarbredd) med en känd uppsättning värden delades upp i uppräknade intervall så att du snabbt kan definiera segment för ett visst intervall. Dessa uppräknade listor läggs till med &quot; - Bucketed&quot; efter dimensionsnamnet. På följande skärm visas hur de här dimensionerna segmenteras med hjälp av det föregående och nya segmentbyggargränssnittet:
 
