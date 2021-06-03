@@ -5,10 +5,10 @@ uuid: 30433319-d0e6-4977-951a-4492b356e1f2
 feature: Activity Map
 role: Business Practitioner, Administrator
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 7%
+source-wordcount: '367'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ Modulen Activity Map är en del av filen AppMeasurement.js (som finns högst upp
 
 Data från Activity Map kan inte samlas in om du inte uppdaterar till den här versionen (eller senare) av AppMeasurement.
 
-1. Hämta den senaste AppMeasurement-koden (AppMeasurement_Javascript-1.6.zip) genom att gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** och [implementera den](https://docs.adobe.com/content/help/en/analytics/implementation/js/overview.html).
+1. Hämta den senaste AppMeasurement-koden (AppMeasurement_Javascript-1.6.zip) genom att gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** och [implementera den](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html).
 
    Vi har inkluderat [exempelkod](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md) för att hjälpa dig visualisera ändringarna som har gjorts i koden genom att inkludera modulen Activity Map.
 
@@ -54,7 +54,7 @@ Först måste du aktivera Activity Map-rapporter på rapportsvitnivå.
 
    Du kommer nu till grupphanteringssidan i Admin Console.
 
-1. [Lägg till användare i den här ](https://docs.adobe.com/content/help/sv-SE/analytics/admin/user-product-management/user-groups/groups.html) gruppen och  **[!UICONTROL Save Group]**.
+1. [Lägg till användare i den här ](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) gruppen och  **[!UICONTROL Save Group]**.
 
 1. Detta gör att dina Admin-användare kan hämta Activity Map från **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL ActivityMap]**.
 
