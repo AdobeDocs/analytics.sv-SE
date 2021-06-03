@@ -1,18 +1,20 @@
 ---
 description: Integreringen av Data Connectors för Silverpop använder Analytics-variabler för att spåra olika Silverpop-mått.
-title: Analytics-integrationsvariabler
+title: Variabler för Analytics-integrering
 uuid: 3aef3caf-e24e-4fe7-b4d7-50ca0f6703b5
-translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+exl-id: 0b8b31f5-65a8-41e0-97d1-d75fb1b91f62
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 4%
 
 ---
 
-
-# Analytics-integrationsvariabler{#analytics-integration-variables}
+# Variabler för Analytics-integrering{#analytics-integration-variables}
 
 Integreringen av Data Connectors för Silverpop använder Analytics-variabler för att spåra olika Silverpop-mått.
 
-När du har identifierat de händelser och eVars som ska användas med Silverpop-integreringen använder du Adobe Analytics Admin Console för att aktivera dem (se [Rapportsviter](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)).
+När du har identifierat de händelser och eVars som ska användas med Silverpop-integreringen kan du aktivera dem med Adobe Analytics Admin Console (se [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)).
 
 I följande tabell beskrivs de Analytics-variabler som behövs för Silverpop-integreringen.
 
@@ -20,7 +22,7 @@ I följande tabell beskrivs de Analytics-variabler som behövs för Silverpop-in
 
 | Variabeltyp | Namn | Populationsmetod | Beskrivning |
 |---|---|---|---|
-| händelse (numerisk) | studsar | Automatiskt importerad från Silverpop. | Med Bounces-händelsen kan du se antalet e-postmeddelanden som inte har levererats till mottagarna på grund av ett leveransproblem. |
+| händelse (numerisk) | Studsar | Automatiskt importerad från Silverpop. | Med Bounces-händelsen kan du se antalet e-postmeddelanden som inte har levererats till mottagarna på grund av ett leveransproblem. |
 | händelse (numerisk) | Klickningar | Automatiskt importerad från Silverpop. | Med händelsen Klickat kan du se antalet besökare som klickade på e-postmeddelandet. |
 | händelse (numerisk) | Öppnar | Automatiskt importerad från Silverpop. | Med händelsen Öppnad kan du se antalet besökare som öppnade e-postmeddelandet. |
 | händelse (numerisk) | Skickar | Automatiskt importerad från Silverpop. | Med händelsen Skicka kan du se hur många e-postmeddelanden som har skickats. |
@@ -38,4 +40,3 @@ I följande tabell beskrivs de Analytics-variabler som behövs för Silverpop-in
 | eVar | E-postadress | Manuellt insamlade via Analytics-taggar. | E-postadressen används för att manuellt samla in e-postadressen på registreringssidor, inloggningssidor eller andra sidor som e-postadressen samlas in på. Den här variabeln används för att återmarknadsföra till användare som har valt att ta emot e-post, men som kanske inte har klickat via ett e-postmeddelande tidigare. |
 | eVar | Hämtad fil | Manuellt insamlade via Analytics-taggar. | Hämtad fil identifierar vilken fil en besökare har laddat ned. |
 | eVar | Formulärnamn | Manuellt insamlade via Analytics-taggar. | Formulärnamn identifierar vilket formulär en besökare överger. |
-
