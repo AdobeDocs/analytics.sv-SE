@@ -2,10 +2,9 @@
 title: Äldre Adobe Experience Cloud Debugger
 description: Installera den gamla Adobe Experience Cloud Debugger. Den här felsökaren undersöker taggar för Analytics, Target, Advertising Cloud, Identity Service och Launch.
 exl-id: 8fd07285-f702-4770-81bd-5f856561f4a9
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar i stället att du använder [Adobe Experience Cloud Debugger Chrome Extension](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+>Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar i stället att du använder [Adobe Experience Cloud Debugger Chrome Extension](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 [!UICONTROL Legacy Debugger] undersöker taggar för de flesta Adobe Experience Cloud-tjänster. Med hjälp av felsökaren kan du se vilka data som skickas till Adobe på en viss sida på webbplatsen. Du kan använda den här informationen för att felsöka eller validera implementeringen av din organisation.
 
@@ -36,7 +35,7 @@ Varje webbläsare har olika sätt att hantera bokmärken, men konceptet är dets
 
 #### Krom
 
-Om du insisterar på att inte använda [chrome-tillägget](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html) kan det gamla felsökningsbokmärket användas i stället.
+Om du insisterar på att inte använda [chrome-tillägget](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) kan det gamla felsökningsbokmärket användas i stället.
 
 1. Klicka på de tre punkterna i det övre högra hörnet och gå sedan till Bokmärken > Bokmärkeshanteraren. Du kan också trycka på `Ctrl` + `Shift` + `O` (Windows) eller `Cmd` + `Shift` + `O` (Mac).
 2. Klicka på de tre punkterna i det övre högra hörnet av bokmärkeshanteraren och klicka sedan på Lägg till nytt bokmärke.
