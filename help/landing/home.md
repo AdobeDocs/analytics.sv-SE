@@ -1,14 +1,13 @@
 ---
 title: Tekniska handböcker för Adobe Analytics
 description: Användarhandböcker och resurser för Analytics
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: f7a06f92-2144-4178-9080-7cb2f3e0e8e1
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 91%
+source-wordcount: '419'
+ht-degree: 82%
 
 ---
-
 
 # Adobe Analytics-dokumentation
 
@@ -28,15 +27,15 @@ Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokum
 
 [![Integrering](assets/integrate_50px.png)](/help/integrate/home.md) [Integreringshandbok](/help/integrate/home.md) – Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, till exempel Audience Manager, Advertising Cloud och Target.
 
-[![Streaming Media Analytics](assets/media_50px.png)](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) [Streaming Media Analytics Guide](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)  - Implementera Adobe Analytics för Streaming Media. Innehåller Media SDK och Media Collection API.
+[![Streaming Media Analytics](assets/media_50px.png)](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) [Streaming Media Analytics Guide](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)  - Implementera Adobe Analytics för Streaming Media. Innehåller Media SDK och Media Collection API.
 
-[![DWB](assets/workbench_50px.png)](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) [Data Workbench-handböcker](https://docs.adobe.com/content/help/en/data-workbench/using/home.html) – Läs mer om de flexibla, kraftfulla flerkanalsfunktionerna i [!UICONTROL Data Workbench]. Inkluderar [!UICONTROL Data Workbench Client], installation, [!UICONTROL Dataset Configuration]-handböcker med mera.
+[![DWB](assets/workbench_50px.png)](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) [Data Workbench-handböcker](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) – Läs mer om de flexibla, kraftfulla flerkanalsfunktionerna i [!UICONTROL Data Workbench]. Inkluderar [!UICONTROL Data Workbench Client], installation, [!UICONTROL Dataset Configuration]-handböcker med mera.
 
 [![Technotes](assets/technotes_50px.png)](/help/technotes/home.md) [Analytics Tech Notes](/help/technotes/home.md) – En kunskapsdatabas som innehåller användbara artiklar som inte handlar om ett visst analysverktyg eller en viss komponent.
 
 | Nya och aktuella objekt | Viktiga Analytics-resurser |
 | --- | --- |
-| <ul><li>[Fullständig utvärdering](https://experienceleague.adobe.com/docs/analytics/implementation/review/full-review.html)</li><li>[Fokuserad implementeringsgranskning](https://experienceleague.adobe.com/docs/analytics/implementation/review/focused-review.html)</li><li>[Insamling av regionala data](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md)</li><li>[Analytics – produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: [Dokumentationsuppdateringar för 2019](doc-updates.md) | <ul><li> [Versionsinformation](https://docs.adobe.com/content/help/sv-SE/release-notes/experience-cloud/current.html)</li><li> [Adobe Analytics videosjälvstudiekurser](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/overview.html)</li><li>[Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga utbildningar och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/se/support/analytics.html)</li></ul> |
+| <ul><li>[Fullständig utvärdering](https://experienceleague.adobe.com/docs/analytics/implementation/review/full-review.html)</li><li>[Fokuserad implementeringsgranskning](https://experienceleague.adobe.com/docs/analytics/implementation/review/focused-review.html)</li><li>[Insamling av regionala data](/help/technotes/rdc/regional-data-collection.md)</li><li>[Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md)</li><li>[Analytics – produktjämförelse](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md)</li><li>[Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)</li></ul><br> Se även: [Dokumentationsuppdateringar för 2019](doc-updates.md) | <ul><li> [Versionsinformation](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)</li><li> [Adobe Analytics videosjälvstudiekurser](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html)</li><li>[Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)</li><li>[Personliga utbildningar och virtuella kurser](https://training.adobe.com/training/courses.html#solution=adobeAnalytics)</li><li>[Experience League](https://landing.adobe.com/experience-league/)</li><li>[Kontakta kundtjänst](https://helpx.adobe.com/se/support/analytics.html)</li></ul> |
 
 <!-- Keep around for now
 
@@ -47,8 +46,8 @@ Here is a comprehensive list of and links to all the reporting capabilities in A
 * [Analysis Workspace](/help/analyze/analysis-workspace/home.md)
 * [Report Builder](/help/analyze/report-builder/home.md)
 * [Data Warehouse](/help/export/data-warehouse/data-warehouse.md)
-* [Mobile Services UI](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)
-* [Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/home.html)
+* [Mobile Services UI](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+* [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html)
 * [Reports & Analytics](/help/analyze/reports-analytics/getting-started.md)
 
 ### Analytics feature list
@@ -66,11 +65,11 @@ Here is a comprehensive list of and links to all the reporting capabilities in A
 *   [Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md)
 *   [Flow](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md)
 *   [Intelligent Alerts](/help/components/c-alerts/intellligent-alerts.md)
-*   [Mobile App SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)  
+*   [Mobile App SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)  
 *   [Real-time reporting](/help/components/c-real-time-reporting/realtime.md)
 *   [Segmentation](/help/components/segmentation/seg-home.md)
 *   [Segment Comparison](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
-*   [Video Tracking](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+*   [Video Tracking](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 *   [Virtual Report Suites](/help/components/vrs/vrs-about.md)
 
 ## Contact options
