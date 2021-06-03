@@ -2,18 +2,20 @@
 description: Använd konfigurationsguiden för Adobe Data Connectors för att konfigurera integreringen.
 title: Aktivera integreringen
 uuid: 9084b691-291d-49f7-9fa4-abda507e060d
-translation-type: tm+mt
-source-git-commit: 8d6685d241443798be46c19d70d8150d222ab9e8
+exl-id: b0d6849b-975a-4476-a2d3-36abeee12273
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 2%
 
 ---
-
 
 # Aktivera integreringen{#activate-the-integration}
 
 Använd konfigurationsguiden för Adobe Data Connectors för att konfigurera integreringen.
 
-1. Starta [Data Connectors](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/getting-started-data-connectors.html) och klicka **[!UICONTROL + Add New]** för att [lägga till en ny integrering](https://docs.adobe.com/content/help/en/analytics/import/dataconnectors/getting-started-data-connectors.html).
-1. I **[!UICONTROL Show]** listan markerar du **[!UICONTROL By Name]** och drar [!DNL ~partnerintegreringen~] till en tom plugin-plats.
+1. Starta [Dataanslutningar](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/getting-started-data-connectors.html) och klicka på **[!UICONTROL + Add New]** för att [lägga till en ny integrering](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/getting-started-data-connectors.html).
+1. I listan **[!UICONTROL Show]** väljer du **[!UICONTROL By Name]** och drar integreringen [!DNL ~Partner~] till en tom plugin-plats.
 1. Slutför integreringsguiden med hjälp av informationen i följande tabell:
 
 | Fält | Beskrivning |
@@ -30,7 +32,7 @@ Använd konfigurationsguiden för Adobe Data Connectors för att konfigurera int
 | Ogiltiga | Antal ogiltiga e-postadresser. |
 | Campaign | Marknadsföringskampanj-ID. |
 | Godkänn | Med händelsen Klickat kan du se antalet besökare som klickade på e-postmeddelandet. |
-| eVar för e-post | En e-postadress från DreamMail-systemet. Den här e-postadressen är kopplad till besökares beteende längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som dras in i DreamMail-systemet och kan utnyttjas för återmarknadsföring. |
+| E-post eVar | En e-postadress från DreamMail-systemet. Den här e-posteVar är kopplad till besökarbeteenden längre fram i kedjan på webbplatsen (kundvagnsöverläggningar, inköp osv.) som dras in i DreamMail-systemet och kan utnyttjas för återmarknadsföring. |
 | Spotlight-händelse | Händelse som kan exporteras i segment för återmarknadsföring. |
 | Spotlight-inköp | Händelse som kan exporteras i segment för återmarknadsföring. |
 | Värde för spotlight | Intäktshändelse som kan exporteras i segment för återmarknadsföring. |
