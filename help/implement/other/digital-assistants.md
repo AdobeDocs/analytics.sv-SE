@@ -1,14 +1,13 @@
 ---
 title: Implementera analyser för digitala assistenter
 description: Implementera Adobe Analytics på Digital Assistants, som Amazon Alexa eller Google Home.
-translation-type: tm+mt
-source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
+exl-id: ebe29bc7-db34-4526-a3a5-43ed8704cfe9
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
-
 
 # Implementera analyser för digitala assistenter
 
@@ -43,7 +42,7 @@ Om du bara är intresserad av att spela in vad som hände med kunden för framti
 
 ## Nya installationer
 
-För vissa digitala assistenter får du ett meddelande när någon installerar kompetensen, särskilt när det gäller autentisering. Adobe rekommenderar att du skickar en Install-händelse genom att ange kontextdatavariabeln `a.InstallEvent=1`. Den här funktionen är inte tillgänglig för alla digitala assistenter, men den är användbar när den är till för att se lojalitet. Följande kodexempel skickar värdena Install event, Install Date och AppID till kontextdatavariabler.
+För vissa digitala assistenter får du ett meddelande när någon installerar kompetensen, särskilt när det gäller autentisering. Adobe rekommenderar att du skickar en Install-händelse genom att ställa in kontextdatavariabeln `a.InstallEvent=1`. Den här funktionen är inte tillgänglig för alla digitala assistenter, men den är användbar när den är till för att se lojalitet. Följande kodexempel skickar värdena Install event, Install Date och AppID till kontextdatavariabler.
 
 ```text
 GET
@@ -58,7 +57,7 @@ Host:
 
 ## Flera assistenter eller flera appar
 
-Det är troligt att din organisation vill ha appar för flera plattformar. Det bästa sättet är att inkludera ett program-ID i varje begäran. Den här variabeln kan anges i `a.AppID` kontextdatavariabeln. Följ formatet för `[AppName] [BundleVersion]`exempelvis BigMac för Alexa 1.2:
+Det är troligt att din organisation vill ha appar för flera plattformar. Det bästa sättet är att inkludera ett program-ID i varje begäran. Den här variabeln kan anges i kontextdatavariabeln `a.AppID`. Följ formatet för `[AppName] [BundleVersion]`, till exempel BigMac för Alexa 1.2:
 
 ```text
 GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.a.Launches=1&c.Product=AmazonEcho&c.OSType=Alexa&pageName=install  HTTP/1.1
@@ -74,9 +73,9 @@ Cache-Control: no-cache
 
 ## Användar-/besökaridentifiering
 
-Adobe Analytics använder [Adobe Experience Cloud identitetstjänst](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) för att knyta interaktioner mellan olika tidpunkter till samma person. De flesta digitala assistenter returnerar en `userID` som du kan använda för att behålla aktiviteten för olika användare. I de flesta fall är det här värdet vad du kan skicka in som en unik identifierare. Vissa plattformar returnerar en identifierare som är längre än 100 tecken. I dessa fall rekommenderar Adobe att du hash-kodar den unika identifieraren till ett fast längdvärde med hjälp av en standardhash-algoritm som MD5 eller Sha1.
+Adobe Analytics använder [Adobe Experience Cloud identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) för att knyta interaktioner över tiden till samma person. De flesta digitala assistenter returnerar en `userID` som du kan använda för att behålla aktiviteten för olika användare. I de flesta fall är det här värdet vad du kan skicka in som en unik identifierare. Vissa plattformar returnerar en identifierare som är längre än 100 tecken. I dessa fall rekommenderar Adobe att du hash-kodar den unika identifieraren till ett fast längdvärde med hjälp av en standardhash-algoritm som MD5 eller Sha1.
 
-Att använda ID-tjänsten ger mest värde när du mappar ECID:n på olika enheter (till exempel webb till digital assistent). Om din app är en mobilapp använder du Experience Platform SDK:n i befintligt skick och skickar användar-ID:t med `setCustomerID` metoden . Om din app är en tjänst använder du användar-ID:t som tillhandahålls av tjänsten som ECID och anger det i `setCustomerID`.
+Att använda ID-tjänsten ger mest värde när du mappar ECID:n på olika enheter (till exempel webb till digital assistent). Om din app är en mobilapp använder du Experience Platform SDK:n som den är och skickar användar-ID:t med metoden `setCustomerID`. Om din app är en tjänst använder du användar-ID:t som tillhandahålls av tjänsten som ECID och anger det i `setCustomerID`.
 
 ```text
 GET /b/ss/examplersid/1?vid=[UserID]&pageName=[intent]  HTTP/1.1
@@ -88,18 +87,18 @@ Cache-Control: no-cache
 
 Eftersom digitala assistenter är konversationer har de ofta begreppet session. Exempel:
 
-**Konsument:** &quot;Okej Google, ring en taxi åt mig&quot;
+**Konsument:** &quot;OK Google, ring en taxi åt mig&quot;
 
 **Google:**: &quot;Vilken tid vill du ha?&quot;
 
 **Konsument:** &quot;20:30&quot;
 
-**Google:** &quot;Låter bra, drivrutinen är vid klockan 20.30&quot;
+**Google:** &quot;Det låter bra, drivrutinen är vid klockan 20.30&quot;
 
 Sessioner är viktiga för att hålla sammanhanget och för att hjälpa till att samla in mer information för att göra den digitala assistenten mer naturlig. När Analytics implementeras i en konversation finns det två saker att göra när en ny session startas:
 
 1. **Nå ut till Audience Manager**: Hämta relevanta segment som en användare är en del av så att du kan anpassa svaret. (Den här personen är till exempel berättigad till rabatt i flera kanaler.)
-2. **Skicka i en ny session eller en starthändelse**: När du skickar det första svaret till Analytics ska du inkludera en starthändelse. Vanligtvis kan detta skickas genom att kontextdata för `a.LaunchEvent=1`.
+2. **Skicka i en ny session eller en starthändelse**: När du skickar det första svaret till Analytics ska du inkludera en starthändelse. Vanligtvis kan detta skickas genom att ange kontextdata för `a.LaunchEvent=1`.
 
 ```text
 GET /b/ss/examplersid/1?vid=[UserID]&c.a.LaunchEvent=1&c.Intent=[intent]&pageName=[intent]  HTTP/1.1
@@ -163,10 +162,10 @@ De flesta plattformar visar inte den enhet som användaren pratade med, men de v
 
 Exempel: `":Audio:Camera:Screen:Video:"`
 
-Inledande och avslutande kolon är till hjälp när du skapar segment. Visa t.ex. alla träffar med `:Audio:` funktioner.
+Inledande och avslutande kolon är till hjälp när du skapar segment. Visa till exempel alla träffar med `:Audio:`-funktioner.
 
-* [Amazon Capabilities](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference) using Amazon Alexa
-* [Google Capabilities](https://developers.google.com/actions/assistant/surface-capabilities) using Actions on Google
+* [Amazon ](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference) CapabilitiesUsing Amazon Alexa
+* [Google ](https://developers.google.com/actions/assistant/surface-capabilities) CapabilitiesAnvända åtgärder på Google
 
 ## Exempel
 
