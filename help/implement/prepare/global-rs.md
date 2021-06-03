@@ -1,14 +1,13 @@
 ---
 title: Globala rapportsviter i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
-translation-type: tm+mt
-source-git-commit: 632fa007fecadf01e2cef67fd3c2519799636e46
+exl-id: fa949b1e-80bd-41cf-a294-c840503b568f
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 2%
+source-wordcount: '872'
+ht-degree: 0%
 
 ---
-
 
 # Att tänka på för den globala rapportsviten
 
@@ -42,8 +41,8 @@ Använd följande allmänna riktlinjer för att förstå hur man implementerar e
    >
    >Se till att alla anpassade variabler används på samma sätt i alla domäner. Använd inte samma eVar eller händelse för olika syften på alla era webbplatser.
 1. Se till att varje domän har ett datalager som förenklar datainsamlingen. Data kan fortfarande samlas in utan ett datalager, men tillförlitligheten och varaktigheten i implementeringen minskar, särskilt när sajten genomgår omformningar.
-1. Använd Adobe Experience Platform Launch för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [Startöversikt](https://docs.adobe.com/content/help/en/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
-1. Ta med [Adobe Experience Cloud ID-tjänsten](https://docs.adobe.com/content/help/sv-SE/id-service/using/home.html) och använd funktionen [appendVisitorIDsTo](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/methods/appendvisitorid.html). Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
+1. Använd Adobe Experience Platform Launch för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [Startöversikt](https://experienceleague.adobe.com/docs/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
+1. Ta med [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html) och använd funktionen [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html). Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
 
 ## Ändra en befintlig implementering med en global rapportserie
 
