@@ -3,10 +3,9 @@ description: Beskriver hur du definierar målvalutakoder för stöd för flera v
 title: Stöd för flera valutor
 uuid: null
 exl-id: b67f459c-0636-4eac-af52-51846bb583b5
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1354'
 ht-degree: 0%
 
 ---
@@ -19,12 +18,12 @@ Målvalutakoder definieras på tre nivåer:
 
 ## Sidnivå
 
-Du kan ange en JavaScript-variabel för målvalutan på sidnivå. Webbplatsägaren ställer in den här variabeln med lämplig ISO 4217-valutakod med tre bokstäver (som anges nedan i det här dokumentet). Om variabeln [currencyCode](https://docs.adobe.com/content/help/en/analytics/implementation/vars/config-vars/currencycode.html) inte är inställd på den här nivån är standardvalutan densamma som den som anges i rapportsviten. Om variabeln på sidnivå står i konflikt med variabeln som anges i rapportsviten, prioriteras variabeln i rapportsviten.
+Du kan ange en JavaScript-variabel för målvalutan på sidnivå. Webbplatsägaren ställer in den här variabeln med lämplig ISO 4217-valutakod med tre bokstäver (som anges nedan i det här dokumentet). Om variabeln [currencyCode](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/currencycode.html) inte är inställd på den här nivån är standardvalutan densamma som den som anges i rapportsviten. Om variabeln på sidnivå står i konflikt med variabeln som anges i rapportsviten, prioriteras variabeln i rapportsviten.
 
 
 ## Rapportsvitens nivå
 
-**basvalutan** anges när [rapportsviter](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) skapas. Det här är standardinställningen för valuta och har företräde framför valutakoder som har angetts på sidnivå. Om en rapportsvit har order som godkänner amerikanska dollar, euro och brittiska pund och rapportsviten har standardvalutakoden inställd på US Dollars, översätts alla transaktioner till US Dollars av den rapporterande databasen.
+**basvalutan** anges när [rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) skapas. Det här är standardinställningen för valuta och har företräde framför valutakoder som har angetts på sidnivå. Om en rapportsvit har order som godkänner amerikanska dollar, euro och brittiska pund och rapportsviten har standardvalutakoden inställd på US Dollars, översätts alla transaktioner till US Dollars av den rapporterande databasen.
 
 Marknadsföringsrapporter använder valutakursen vid den tidpunkt då bildbegäran görs för att översätta sidnivåvalutavärden till standardvalutavärdena för rapportsviten. Rapporteringssviter använder&quot;US Dollars&quot; som standardvaluta.
 
