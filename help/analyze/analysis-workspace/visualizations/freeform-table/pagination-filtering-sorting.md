@@ -2,24 +2,23 @@
 description: Video om paginering, filtrering och sortering.
 title: Sidnumrering, filtrering och sortering av tabeller
 uuid: 53263cec-c378-459b-9689-6adaeb66e5c9
-feature: Freeform Tables
+feature: Frihandstabeller
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
+source-git-commit: 286e42feca0d87ef08b9c1d6be6a6987db9de4d0
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 37%
+source-wordcount: '97'
+ht-degree: 39%
 
 ---
-
 
 # Sidnumrering, filtrering och sortering av tabeller
 
 Titta på den här videosjälvstudiekursen om du vill se en översikt:
 
-[Sidnumrering, filtrering och sortering av tabeller i Analysis Workspace](https://docs.adobe.com/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
+[Sidnumrering, filtrering och sortering av tabeller i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
-## Avancerade filteralternativ {#section_36E92E31442B4EBCB052073590C1F025}
+## Avancerade filtreringsalternativ {#section_36E92E31442B4EBCB052073590C1F025}
 
 Om du klickar på filterikonen och sedan på Visa avancerat bredvid en dimension i en frihandstabell kan du filtrera enligt följande kriterier:
 
@@ -36,4 +35,3 @@ Om du klickar på filterikonen och sedan på Visa avancerat bredvid en dimension
 * Slutar med
 
 ![](assets/advanced-filter.png)
-
