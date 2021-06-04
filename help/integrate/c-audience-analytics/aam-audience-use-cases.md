@@ -3,9 +3,9 @@ description: Användningsexempel kring Advertising Analytics.
 title: Användningsexempel för Audience Analytics
 uuid: 51c0576c-ce8a-4a87-9c8f-be193e50279d
 exl-id: 5e03e78f-225b-4634-8a4c-f89d17603182
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 286e42feca0d87ef08b9c1d6be6a6987db9de4d0
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '213'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ Som Multi-Media Publisher kan du jämföra externa målgrupper med [Segment IQ](
 
 ## Prospekt - analys {#section_7DB1D045DD3F417CBA48C68E9E81E6C0}
 
-Som B2B-återförsäljare kan du nu analysera beteendet hos den potentiella kundens målgrupp innan de köper med hjälp av [sekventiell segmentering](https://docs.adobe.com/help/en/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html), vilket hjälper dig förstå vilka åtgärder som driver konverteringen.
+Som B2B-återförsäljare kan du nu analysera beteendet hos den potentiella kundens målgrupp innan de köper med hjälp av [sekventiell segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html), vilket hjälper dig förstå vilka åtgärder som driver konverteringen.
 
 ## Demografisk målgruppsanpassning {#section_F034DB721A06419283DBD29D4A1B444B}
 
