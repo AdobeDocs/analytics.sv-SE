@@ -1,13 +1,12 @@
 ---
 description: Variabler för sekretessrapportering inom datasekretess.
 title: Variabler för sekretessrapportering
-feature: Admin Tools
+feature: Administratörsverktyg
 exl-id: 3f7980a4-d826-4554-a9a0-673fd5b79653
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 286e42feca0d87ef08b9c1d6be6a6987db9de4d0
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 100%
+source-wordcount: '422'
+ht-degree: 96%
 
 ---
 
@@ -63,13 +62,13 @@ Varje rapportsvit kan konfigureras på följande sätt:
 
 Tre kontextdatavariabler har fördefinierats för att fungera med reserverade variabler för hantering av sekretessrapportering.  Det är upp till respektive implementeringstekniker hur dessa variabler ska hanteras och sparas.
 
-Se [Variabler för kontextdata](https://docs.adobe.com/help/en/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html) för allmän vägledning om hur du implementerar kontextdatavariabler.
+Se [Variabler för kontextdata](https://experienceleague.adobe.com/docs/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html) för allmän vägledning om hur du implementerar kontextdatavariabler.
 
 ### SSF
 
 * Kontextdata: `contextData.['cm.ssf']`
 * Godkända värden:
-   * 1 – När du skickar värdet ”1” innebär det att vidarebefordran på serversidan är i ett avanmälningsläge. Värdet 1 i kombination med den här variabeln blockerar delningen av träffen med Adobe Audience Manager. Se [AAM ePrivacy-efterlevnad](https://docs.adobe.com/help/en/analytics/integration/audience-analytics/audience-analytics-workflow/ssf-gdpr.html).
+   * 1 – När du skickar värdet ”1” innebär det att vidarebefordran på serversidan är i ett avanmälningsläge. Värdet 1 i kombination med den här variabeln blockerar delningen av träffen med Adobe Audience Manager. Se [AAM ePrivacy-efterlevnad](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/ssf-gdpr.html).
    * 0 – Valfritt. Använd värdet ”0” för kunder som samtyckte till riktad marknadsföring. Om du inte anger variabeln får du också samma resultat.
 
 ### DMP
