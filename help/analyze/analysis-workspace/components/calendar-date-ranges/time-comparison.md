@@ -2,22 +2,24 @@
 description: Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år för år, kvartal för kvartal, månad för månad.
 title: Datumjämförelse
 uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
-feature: Workspace Basics
+feature: Grundläggande om arbetsytan
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+exl-id: ea7a42ef-89de-4f70-b468-8a5cf69fea05
+source-git-commit: baea0f33276b07a93144d2225935013ab7007005
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '582'
 ht-degree: 6%
 
 ---
-
 
 # Datumjämförelse
 
 Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
 ## Jämför tidsperioder {#section_C4E36BFE0F5C4378A74E705747C9DEE4}
+
+>[!NOTE]
+>[!UICONTROL Compare Time Periods] utnyttjar avancerade beräknade värden. Det innebär att det endast är tillgängligt för kunder med SKU:erna Analytics Select, Prime och Ultimate.
 
 Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en tidigare tidsperiod. Till exempel frågan&quot;Hur mycket bättre/sämre gör vi nu än i fjol?&quot; är grundläggande för att förstå er verksamhet. Datumjämförelse innehåller automatiskt en&quot;differenskolumn&quot;, som visar den procentuella ändringen jämfört med en angiven tidsperiod.
 
@@ -54,7 +56,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
    Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages]-inställningen markerad i [!UICONTROL Visualization Settings].
 
-## Lägg till en tidsperiodkolumn för jämförelsen {#section_93CC2B4F48504125BEC104046A32EB93}
+## Lägg till en tidsperiodkolumn för jämförelse {#section_93CC2B4F48504125BEC104046A32EB93}
 
 Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan lägga till en annan tidsperiod än den som du har angett för kalendern. Detta är ett annat sätt att jämföra datum.
 
@@ -82,7 +84,7 @@ Nu kan du lägga till en tidsperiod i varje kolumn i en tabell, så att du kan l
 
 1. Du kan dessutom sortera efter varje kolumn, vilket ändrar ordningen på dagar beroende på vilken kolumn du sorterar efter.
 
-## Justera kolumndatum så att de startar på samma rad {#section_5085E200082048CB899C3F355062A733}
+## Justera kolumndatum så att de börjar på samma rad {#section_5085E200082048CB899C3F355062A733}
 
 Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from each column to all start on the same row (applies to entire table)]**. &quot;Gäller hela tabellen&quot; betyder att om du t.ex. gör en uppdelning i tabellen, och om du ändrar den här inställningen för uppdelningen, så ändras inställningen för hela tabellen.
 
@@ -101,4 +103,3 @@ Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse m
 <p>See Jonny Moon's email from November 3. </p>
 
  -->
-
