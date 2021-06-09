@@ -1,12 +1,11 @@
 ---
 description: Skapa en grundläggande behållare för datainsamling i Adobe Analytics
 title: Skapa en rapportsvit
-feature: Admin Tools
+feature: Administratörsverktyg
 exl-id: 255ae051-d993-41a5-8cf3-819a54c17e34
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: b7d71e89c427f1f8ffe68beb1e83646c54e92825
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '372'
 ht-degree: 5%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 5%
 
 En rapportsvit är en silo data som Adobe Analytics använder för att ta fram rapporter. En organisation kan ha många rapportsviter, som alla innehåller olika datauppsättningar. Även om separata rapportsviter var viktiga tidigare har det blivit mer fördelaktigt att ha en enda rapportserie. Med introduktionen av [virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en#virtual-report-suites) och tidsbearbetning för rapporter kan administratörer skapa egna underuppsättningar av data, vilket ger flexibilitet att hämta både globala och platsspecifika data.
 
-Den här artikeln är avsedd för administratörer på systemnivå eller administratörer av analyser som förbereder datainsamling.
+Den här artikeln är avsedd för systemnivåadministratörer eller Adobe Analytics-administratörer som ska förbereda datainsamlingen.
 
 ## Förutsättningar
 
@@ -44,8 +43,8 @@ Det innebär att ditt konto inte har tilldelats rätt behörigheter till Analyti
 
 **När du har loggat in på Adobe Analytics saknas popup-menyn Välkommen till Adobe Analytics.**
 
-Se till att du har loggat in via Experience Cloud och inte via my.omniture.com. Användare som loggar in via my.omniture.com har inte tillgång till installationsguiden för rapportsviten.
+Kontrollera att du har loggat in via [Experience Cloud](https://experience.adobe.com), och inte via my.omniture.com. Användare som loggar in via my.omniture.com har inte tillgång till installationsguiden för rapportsviten.
 
 ## Nästa steg
 
-[Skapa och konfigurera en egenskap för Adobe Analytics i Launch](/help/implement/launch/create-analytics-property.md): Skapa ett område för att hantera er Analytics-implementering
+[Skapa och konfigurera en egenskap för Adobe Analytics i Adobe Experience Platform Launch](/help/implement/launch/create-analytics-property.md): Skapa ett område för att hantera er Analytics-implementering
