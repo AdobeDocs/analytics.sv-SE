@@ -5,9 +5,9 @@ title: Konverteringsvariabler (eVar)
 feature: Administratörsverktyg
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 exl-id: 822ecaff-a06c-42e1-aee8-ef4a43df4230
-source-git-commit: 2501d0a7b9e11569dc9feb3da378d445f72bef3d
+source-git-commit: 212f9c66e2916e629693bf4bf61e767af164900a
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1530'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Ett annat exempel: Om en eVar används i maj för att återspegla interna kampan
 
 **Ärendekänslighet**
 
-Det övre eller nedre fallet som används vid rapportering baseras på det första värdet som serverdelssystemet registrerar. Värdet kan antingen vara den första förekomsten någonsin eller variera med en tidsperiod (t.ex. en månad), beroende på mängden data som är kopplad till rapportsviten.
+Variabler är inte skiftlägeskänsliga. Det övre eller nedre fallet som används vid rapportering baseras på det första värdet som serverdelssystemet registrerar. Värdet kan antingen vara den första förekomsten någonsin eller variera med en tidsperiod (t.ex. en månad), beroende på mängden data som är kopplad till rapportsviten.
 
 **Räknare**
 
