@@ -2,11 +2,10 @@
 title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: 81da9ff9b00a69c49c028fc7f006c161d8ff21d4
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 95%
+source-wordcount: '366'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +21,7 @@ Adobe kräver kod på din webbplats eller i din app för att kunna skicka data t
 JavaScript-koden skickar en bildbegäran till Adobes datainsamlingsservrar. Siddata som du har definierat under implementeringen skickas som en del av en frågesträng i den här bildbegäran.
 
 4. Adobe returnerar en transparent pixelbild.
-5. Adobe-servrarna lagrar insamlade data i en *rapportsvit*.
+5. Adobe-servrar lagrar insamlade data i en eller flera *rapportsviter*.
 6. Rapportsvitens data fyller i de rapporter som du kan få åtkomst till i en webbläsare.
 
    JavaScript-koden körs snabbt och påverkar inte sidinläsningstiden märkbart. På så sätt kan du räkna de sidor som visas när en besökare klickar på **[!UICONTROL Reload]** eller **[!UICONTROL Back]** för att komma till en sida, eftersom JavaScript-skriptet körs även när sidan hämtas från cache.
