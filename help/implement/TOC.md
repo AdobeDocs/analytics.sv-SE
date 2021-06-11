@@ -4,11 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: 81da9ff9b00a69c49c028fc7f006c161d8ff21d4
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 86%
+source-wordcount: '379'
+ht-degree: 85%
 
 ---
 
@@ -127,6 +126,7 @@ ht-degree: 86%
 + Förberedelser inför att implementera Adobe Analytics {#prepare}
    + [Skapa ett datalager](prepare/data-layer.md)
    + [Att tänka på för den globala rapportsviten](prepare/global-rs.md)
+   + [Implementera märkning för flera programsviter](prepare/multi-suite-tagging.md)
    + [Implementeringsmodal](prepare/implementation-modal.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
    + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
@@ -173,7 +173,7 @@ ht-degree: 86%
    + [Frågeparametrar för datainsamling](validate/query-parameters.md)
    + [Paketövervakare](validate/packet-monitor.md)
    + [Hash-kollisioner](validate/hash-collisions.md)
-+ [Vanliga frågor](faq.md)
++ [Frågor och svar](faq.md)
 + Granska implementeringen {#review}
    + [Fokuserad granskning (efter varje webbplatsrelease)](review/focused-review.md)
    + [Fullständig granskning (var sjätte månad)](review/full-review.md)
