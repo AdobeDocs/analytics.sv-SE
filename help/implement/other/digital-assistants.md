@@ -2,7 +2,7 @@
 title: Implementera analyser för digitala assistenter
 description: Implementera Adobe Analytics på Digital Assistants, som Amazon Alexa eller Google Home.
 exl-id: ebe29bc7-db34-4526-a3a5-43ed8704cfe9
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: de0424db27f9d1a3ce07632df8fd5e76b4d7bb4c
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -46,7 +46,7 @@ För vissa digitala assistenter får du ett meddelande när någon installerar k
 
 ```text
 GET
-/b/ss/examplersid/1?vid=[UserID]&c.a.InstallEvent=1&c.a.InstallDate=2017-04-24&c.a.AppID=Spoofify1.0&c.OSType=Alexa&pageName=install
+/b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.InstallEvent=1&c.a.InstallDate=2017-04-24&c.a.AppID=Spoofify1.0&c.OSType=Alexa&pageName=install
 HTTP/1.1
 Host:
 <xref href="https://example.data.adobedc.net">
@@ -60,13 +60,13 @@ Host:
 Det är troligt att din organisation vill ha appar för flera plattformar. Det bästa sättet är att inkludera ett program-ID i varje begäran. Den här variabeln kan anges i kontextdatavariabeln `a.AppID`. Följ formatet för `[AppName] [BundleVersion]`, till exempel BigMac för Alexa 1.2:
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.a.Launches=1&c.Product=AmazonEcho&c.OSType=Alexa&pageName=install  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.a.Launches=1&c.Product=AmazonEcho&c.OSType=Alexa&pageName=install  HTTP/1.1
 Host: example.data.adobedc.net
 Cache-Control: no-cache
 ```
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify2.0&c.a.Launches=1&c.Product=GoogleHome&c.OSType=Android&pageName=install  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify2.0&c.a.Launches=1&c.Product=GoogleHome&c.OSType=Android&pageName=install  HTTP/1.1
 Host: example.data.adobedc.net
 Cache-Control: no-cache
 ```
@@ -78,7 +78,7 @@ Adobe Analytics använder [Adobe Experience Cloud identitetstjänst](https://exp
 Att använda ID-tjänsten ger mest värde när du mappar ECID:n på olika enheter (till exempel webb till digital assistent). Om din app är en mobilapp använder du Experience Platform SDK:n som den är och skickar användar-ID:t med metoden `setCustomerID`. Om din app är en tjänst använder du användar-ID:t som tillhandahålls av tjänsten som ECID och anger det i `setCustomerID`.
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&pageName=[intent]  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&pageName=[intent]  HTTP/1.1
 Host: example.data.adobedc.net
 Cache-Control: no-cache
 ```
@@ -101,7 +101,7 @@ Sessioner är viktiga för att hålla sammanhanget och för att hjälpa till att
 2. **Skicka i en ny session eller en starthändelse**: När du skickar det första svaret till Analytics ska du inkludera en starthändelse. Vanligtvis kan detta skickas genom att ange kontextdata för `a.LaunchEvent=1`.
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&c.a.LaunchEvent=1&c.Intent=[intent]&pageName=[intent]  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.LaunchEvent=1&c.Intent=[intent]&pageName=[intent]  HTTP/1.1
 Host: example.data.adobedc.net
 Cache-Control: no-cache
 ```
@@ -115,7 +115,7 @@ Om en användare till exempel säger&quot;Siri, Skicka John $20 för middag igå
 Genom att skicka in var och en av dessa förfrågningar som eVar kan du köra målningsrapporter för var och en av avsikterna med konversationsappar. Se till att appen även kan hantera förfrågningar utan avsikt. Adobe rekommenderar att du skickar &quot;Ingen metod har angetts&quot; till datavariabeln för intent-kontext i stället för att utelämna variabeln.
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Penmo1.0&c.a.LaunchEvent=1&c.Intent=SendPayment&pageName=[intent]  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Penmo1.0&c.a.LaunchEvent=1&c.Intent=SendPayment&pageName=[intent]  HTTP/1.1
 Host: example.sc.adobedc.net
 Cache-Control: no-cache
 ```
@@ -123,7 +123,7 @@ Cache-Control: no-cache
 eller
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Penmo1.0&c.a.LaunchEvent=1&c.Intent=No_Intent_Specified&pageName=[intent]  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Penmo1.0&c.a.LaunchEvent=1&c.Intent=No_Intent_Specified&pageName=[intent]  HTTP/1.1
 Host: example.data.adobedc.net
 Cache-Control: no-cache
 ```
@@ -139,7 +139,7 @@ Förutom avsikten har digitala assistenter ofta en uppsättning nyckel/värde-pa
 Det finns vanligtvis ett begränsat antal av dessa värden i din app. Om du vill spåra dessa värden i Analytics skickar du dem till kontextdatavariabler och mappar sedan parametrarna till en eVar.
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Penmo1.0=1&c.a.LaunchEvent=1&c.Intent=SendPayment&c.Amount=20.00&c.Reason=Dinner&c.ReceivingPerson=John&c.Intent=SendPayment&pageName=[intent]  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Penmo1.0=1&c.a.LaunchEvent=1&c.Intent=SendPayment&c.Amount=20.00&c.Reason=Dinner&c.ReceivingPerson=John&c.Intent=SendPayment&pageName=[intent]  HTTP/1.1
 Host: example.data.adobedc.net
 Cache-Control: no-cache
 ```
@@ -151,7 +151,7 @@ Ibland förser den digitala assistenten appen med indata som den inte kan hanter
 När det här inträffar ber din app om klargöranden. Skicka dessutom data till Adobe som anger att programmet har ett feltillstånd tillsammans med en eVar som anger vilken typ av fel som uppstod. Se till att du inkluderar fel där indata inte är korrekta och fel där programmet hade problem.
 
 ```text
-GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Penmo1.0&c.Error=1&c.ErrorName=InvalidCurrency&pageName=[intent]  HTTP/1.1
+GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Penmo1.0&c.Error=1&c.ErrorName=InvalidCurrency&pageName=[intent]  HTTP/1.1
 Host: example.data.adobedc.net
 Cache-Control: no-cache
 ```
@@ -171,10 +171,10 @@ Inledande och avslutande kolon är till hjälp när du skapar segment. Visa till
 
 | Person | Enhetssvar | Åtgärd/återgivning | Begäran om GET |
 |---|---|---|---|
-| Installera Spoofify | Inget svar | Installera | `GET /b/ss/examplersid/1?vid=[UserID]&c.a.InstallEvent=1&c.a.InstallDate=[currentDate]&c.a.AppID=Spoofify1.0&c.OSType=Alexa&c.Intent=Install&pageName=Install  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
-| Spela upp Spoofify | &quot;Okej, spela Spoofify&quot; | Spela upp | `GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.a.LaunchEvent=1&c.Intent=Play&pageName=PlayApp  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
-| Ändra låt | &quot;Okej, vilken låt vill du ha?&quot; | ChangeSong | `GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangeSong&pageName= Ask%20For%20Song  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
-| Spela &quot;Baby Shark&quot; | &quot;Okej, spela &quot;Baby Shark&quot; av PinkFong&quot; | ChangeSong | `GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangeSong&pageName=Action%20Play%20Song&c.SongID=[012345]  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
-| Ändra spelningslista | &quot;Vilken spellista vill du ha?&quot; | ChangePlaylist | `GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangePlaylist&pageName=Ask%20For%20Playlist  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
-| Spela upp min favoritspellista | &quot;Okej, spela din favoritspellista&quot; | ChangePlaylist | `GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangePlaylist&pageName=Action%20Play%20Playlist&c.Playlist=My%20Favorite%20Songs  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
-| Stäng av musik | Inget svar, musiken stängs av | Av | `GET /b/ss/examplersid/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=Off&pageName=Music%20Off  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Installera Spoofify | Inget svar | Installera | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.InstallEvent=1&c.a.InstallDate=[currentDate]&c.a.AppID=Spoofify1.0&c.OSType=Alexa&c.Intent=Install&pageName=Install  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Spela upp Spoofify | &quot;Okej, spela Spoofify&quot; | Spela upp | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.a.LaunchEvent=1&c.Intent=Play&pageName=PlayApp  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Ändra låt | &quot;Okej, vilken låt vill du ha?&quot; | ChangeSong | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangeSong&pageName= Ask%20For%20Song  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Spela &quot;Baby Shark&quot; | &quot;Okej, spela &quot;Baby Shark&quot; av PinkFong&quot; | ChangeSong | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangeSong&pageName=Action%20Play%20Song&c.SongID=[012345]  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Ändra spelningslista | &quot;Vilken spellista vill du ha?&quot; | ChangePlaylist | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangePlaylist&pageName=Ask%20For%20Playlist  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Spela upp min favoritspellista | &quot;Okej, spela din favoritspellista&quot; | ChangePlaylist | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=ChangePlaylist&pageName=Action%20Play%20Playlist&c.Playlist=My%20Favorite%20Songs  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
+| Stäng av musik | Inget svar, musiken stängs av | Av | `GET /b/ss/examplersid1,examplersid2/1?vid=[UserID]&c.a.AppID=Spoofify1.0&c.Intent=Off&pageName=Music%20Off  HTTP/1.1`<br>`Host: example.data.adobedc.net`<br>`Cache-Control: no-cache` |
