@@ -1,14 +1,13 @@
 ---
 title: Implementera med hårdkodade bildbegäranden
 description: Implementera Adobe Analytics med en HTML-bildtagg (hårdkodad bildbegäran)
-translation-type: tm+mt
-source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
+exl-id: 84247daf-c94b-456c-9824-6d4a0b3e6065
+source-git-commit: de0424db27f9d1a3ce07632df8fd5e76b4d7bb4c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
-
 
 # Implementera med hårdkodade bildbegäranden
 
@@ -29,11 +28,11 @@ Följande är ett exempel på hårdkodad bildbegäran med HTML:
 ```
 
 * `https://` anger protokollet. Matcha det protokoll som används i bildbegäran med det protokoll som används av resten av din plats.
-* `example.data.adobedc.net` är värdet i [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) variabeln.
+* `example.data.adobedc.net` är värdet i  [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) variabeln.
 * `/b/ss/` ingår i alla bildbegäranden. Den ingår i filstrukturen för bilder som lagras på datainsamlingsservrar i Adobe.
-* `examplersid` är det rapportsvit-ID som du vill skicka data till.
+* `examplersid` är det rapportsvit-ID som du vill skicka data till. Separera ID:n med kommatecken och inga mellanslag (till exempel `examplersid1,examplersid2`) för flera rapportsviter.
 * `/1/` är träffkällan. Se `hit_source` under [Datakolumnreferens](../../export/analytics-data-feed/c-df-contents/datafeeds-reference.md) i användarhandboken för Export. Styr i vilken ordning cookies och andra metoder används för att identifiera besökare.
-* Allt efter frågesträngsavgränsaren (`?`) är data som du vill ta med i rapporter. Se Frågeparametrar [för](../validate/query-parameters.md) datainsamling för en fullständig lista över parametrar som du kan ta med i en bildbegäran.
+* Allt efter frågesträngsavgränsaren (`?`) är data som du vill ta med i rapporter. Se [Frågeparametrar för datainsamling](../validate/query-parameters.md) för en fullständig lista över parametrar som du kan ta med i en bildbegäran.
 
 ## Maskinkodade bildbegäranden i Microsoft Outlook
 
@@ -45,7 +44,7 @@ Eftersom de flesta e-postmeddelanden är HTML-baserade går det att spåra e-pos
 Så här skapar du ett Outlook-e-postmeddelande som innehåller en bildbegäran:
 
 1. Öppna en HTML-redigerare. Om en HTML-redigerare inte är tillgänglig fungerar även en vanlig textredigerare.
-2. I en ny HTML-fil infogar du en hårdkodad `<img>` bildbegärandetagg som är kapslad i en `<body>` -tagg.
+2. I en ny HTML-fil infogar du en hårdkodad bildbegäran `<img>`-tagg i en `<body>`-tagg.
 3. Spara HTML-filen.
 4. Öppna Microsoft Outlook och skapa ett e-postmeddelande.
 5. Gå till fliken Infoga och klicka på **Bifoga fil**. Välj en HTML-fil för bildbegäran.
@@ -59,13 +58,13 @@ Lär dig mer om vanliga frågor med hjälp av hårdkodade bildbegäranden.
 
 ### Är frågesträngsparametrar skiftlägeskänsliga?
 
-Ja. Kontrollera att frågesträngsparametrarna matchar varandra exakt, annars registreras de inte. Till exempel `pagename` är inte en giltig frågesträngsparameter, medan `pageName` är .
+Ja. Kontrollera att frågesträngsparametrarna matchar varandra exakt, annars registreras de inte. Till exempel är `pagename` inte en giltig frågesträngsparameter, medan `pageName` är det.
 
 ### Kan jag inkludera blanksteg i frågesträngen?
 
 Värdena för var och en av frågesträngsparametrarna är URL-kodade. URL-kodning konverterar tecken som normalt är ogiltiga i URL-adresser till giltiga tecken. Ett blankstegstecken konverteras till exempel till `%20`. Kontrollera att alla tecken som inte är alfanumeriska är URL-kodade. Adobe URL-avkodar automatiskt värden när bildbegäranden når datainsamlingsservrar.
 
-Mer information om hur URL-kodning fungerar finns i [HTML URL-kodningsreferens](https://www.w3schools.com/tags/ref_urlencode.asp) för W3Schools.
+Mer information om hur URL-kodning fungerar finns i [HTML URL-kodningsreferens](https://www.w3schools.com/tags/ref_urlencode.asp) på W3Schools.
 
 ### Vilket är det högsta antalet tecken ett enskilt värde kan ha?
 
