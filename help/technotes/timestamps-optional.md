@@ -5,9 +5,9 @@ title: Användning av tidsstämplar som tillval
 topic-fix: Developer and implementation
 uuid: 956aaa16-6ffa-4b63-b022-a659f5143e00
 exl-id: c6a232d1-d7ce-4f21-9e8a-45703992bc6e
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 3ff221b8715ecde6923310b6818904c697a2b003
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Nedan följer god praxis och några krav och begränsningar som du bör känna t
 
    Data som inte är i ordning kan omfatta sena data från datainsamling offline och sena träffar, eller osynkroniserade klockor på offline-mobilenheter. Obeställda data kan påverka tidsberäkningar negativt (t.ex. tidsåtgång), attribuering (beständighet mot eVar), antal besök/besök samt rapporter om kundvägar.
 
-* Du bör inte använda tidsstämplar när du anger [s.visitorID](https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html). Det kan leda till oordnade data.
+* Du bör inte använda tidsstämplar när du anger [s.visitorID](/help/implement/vars/config-vars/visitorid.md). Det kan leda till oordnade data.
 
 * Hybridappar som består av en app (tidsstämplade, offlinedata) som öppnar en webbläsare (utan tidsstämpel, livedata) bör inte använda tidsstämplar. Det resulterar i felaktig rapportering av sessionen.
 
