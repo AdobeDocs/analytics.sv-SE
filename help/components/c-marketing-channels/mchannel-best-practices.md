@@ -1,10 +1,9 @@
 ---
 title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketing Channels
 description: Uppdaterad bästa praxis för användning av marknadsföringskanaler med Attribution IQ och Customer Journey Analytics
-translation-type: tm+mt
-source-git-commit: 9e274e54b7ce494dc5a21961a842e4365cb2a084
+source-git-commit: 35bdd513bee7b01fae1916a0dc1496749752ce62
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ Vi rekommenderar att du använder [Attribution IQ](https://experienceleague.adob
 
 ![](assets/attribution.png)
 
-* Konfigurationen av dimensionerna Marketing Channel och Marketing Channel Detail fastställer kontaktytor som ska utvärderas, vilket motsvarar varje instans av marknadsföringskanalen.
+* Konfigurationen av dimensionerna Marketing Channel och Marketing Channel Detail fastställer kontaktytor som ska utvärderas, som motsvarar varje instans av marknadsföringskanalen.
 * Vid mätanalys bör organisationen anpassa sig till en eller flera attribueringsmodeller. Spara anpassade mätvärden med den här modellen för enkel återanvändning.
 * Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Med Attribution IQ-metriska modeller får du bättre kontroll över uppslagsfönstren och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html?lang=en#analysis-workspace).
 
@@ -34,7 +33,7 @@ Vi rekommenderar att du använder [Attribution IQ](https://experienceleague.adob
 
 Direkta och interna uppdateringskanaler/sessioner rekommenderas inte för användning med anpassade attribueringsmodeller (Attribution IQ).
 
-Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du skapar en klassificering för dina marknadsföringskanaler och låter de två kanalerna vara oklassificerade. Den klassificerade dimensionen ger samma Attribution IQ som om kanalerna aldrig hade konfigurerats.
+Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du [skapar en klassificering](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/classifictions-mchannel.html?lang=en) för First Touch/Last Touch och låter kanalerna Direct- och Session Refresh vara oklassificerade. Den klassificerade dimensionen ger samma Attribution IQ som om kanalerna aldrig hade konfigurerats.
 
 ![](assets/direct-session-refresh.png)
 
