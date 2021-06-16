@@ -3,10 +3,10 @@ description: Visar exempel på hur du kan etikettera data för träffdata, åtko
 title: Exempel på etiketter
 uuid: a9a5b937-dbde-4f0f-a171-005ef4c79df9
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: 3ff221b8715ecde6923310b6818904c697a2b003
+source-git-commit: fe277bea867dc67e8693673a547adecccf169332
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 84%
+source-wordcount: '770'
+ht-degree: 67%
 
 ---
 
@@ -289,7 +289,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 >[!NOTE]
 >
->Endast celler på rader som innehåller användare=Mary och etiketten DEL-PERSON påverkas. I praktiken är variabeln som innehåller A_ID antagligen en prop eller eVar och dess ersättningsvärde blir en sträng som börjar med ”Sekretess-”, följt av ett slumpmässigt tal (GUID), snarare än att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
+>Endast celler på rader som innehåller användare=Mary och etiketten DEL-PERSON påverkas. I praktiken är dessutom variabeln som innehåller A_ID antagligen en prop eller en eVar. Dess ersättningsvärde skulle vara en sträng som börjar med&quot;Sekretess-&quot;, följt av ett slumpmässigt tal (GUID), i stället för att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
 
 <table>
   <tr>
@@ -364,6 +364,6 @@ Observera följande:
 
 * Celler på rader som innehåller `user=Mary` och en `DEL-DEVICE`- eller `DEL-PERSON`-etikett påverkas, och celler med en `DEL-DEVICE`-etikett på rader som innehåller ett Visitor ID (AID) som finns på en rad som innehåller `user=Mary`.
 * Inställningen expandIDs utökas inte till anropet för att inkludera värden som finns i MyEvar3, som har en ID-DEVICE-etikett, när `user=Mary`. Expanderings-ID:n utökas endast så att de inkluderar besökar-ID:n (AAID:n i det här exemplet, men även ECID:n) på rader där `user=Mary`.
-* `MyEvar2` i den fjärde och femte raden uppdateras eftersom dessa rader innehåller samma ID-värden för besökare som på den första och andra raden, så ID-expansion inkluderar dem för borttagning på enhetsnivå.
-* Värdena för `MyEvar2` på rad två och fem matchar både före och efter borttagningen, men efter borttagningen matchar inte längre värdet N som finns på den sista raden, eftersom raden inte uppdaterades som en del av borttagningsbegäran.
-* `MyEvar3` beter sig på ett helt annorlunda än vad det gjorde utan ID-expansion, eftersom ingen `ID-DEVICES` matchade utan ID-expansion. Nu matchar `AAID` på de första fem raderna.
+* `MyEvar2` i den fjärde och femte raden uppdateras eftersom de här raderna innehåller samma besökar-ID-värden som på den första och andra raden. Detta innebär att ID-expansion inkluderar dem för borttagning på enhetsnivå.
+* Värdena för `MyEvar2` i rader två och fem matchar både före och efter borttagningen. Efter borttagningen matchar de emellertid inte längre värdet N som finns på den sista raden, eftersom raden inte uppdaterades som en del av borttagningsbegäran.
+* `MyEvar3` beter sig på ett helt annorlunda än vad det gjorde utan ID-expansion, eftersom ingen `ID-DEVICES` matchade utan ID-expansion. Nu matchar `AAID` de första fem raderna.
