@@ -3,10 +3,10 @@ description: Variabler för sekretessrapportering inom datasekretess.
 title: Variabler för sekretessrapportering
 feature: Administratörsverktyg
 exl-id: 3f7980a4-d826-4554-a9a0-673fd5b79653
-source-git-commit: 286e42feca0d87ef08b9c1d6be6a6987db9de4d0
+source-git-commit: 2b5c7702d31d451ca4d42dc256c338567b17b8de
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 96%
+source-wordcount: '424'
+ht-degree: 95%
 
 ---
 
@@ -68,7 +68,7 @@ Se [Variabler för kontextdata](https://experienceleague.adobe.com/docs/analytic
 
 * Kontextdata: `contextData.['cm.ssf']`
 * Godkända värden:
-   * 1 – När du skickar värdet ”1” innebär det att vidarebefordran på serversidan är i ett avanmälningsläge. Värdet 1 i kombination med den här variabeln blockerar delningen av träffen med Adobe Audience Manager. Se [AAM ePrivacy-efterlevnad](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/ssf-gdpr.html).
+   * 1 – När du skickar värdet ”1” innebär det att vidarebefordran på serversidan är i ett avanmälningsläge. Värdet 1 i kombination med den här variabeln blockerar delningen av träffen med Adobe Audience Manager. Se [AAM ePrivacy-efterlevnad](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/data-privacy.html?lang=en).
    * 0 – Valfritt. Använd värdet ”0” för kunder som samtyckte till riktad marknadsföring. Om du inte anger variabeln får du också samma resultat.
 
 ### DMP
