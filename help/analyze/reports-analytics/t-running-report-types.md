@@ -5,10 +5,10 @@ uuid: f59ab2a1-e916-46e8-bb5b-e6361ba00dda
 feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: 2e8cac1b-d133-4095-b5db-886ce0566b82
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 2b5c7702d31d451ca4d42dc256c338567b17b8de
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 0%
+source-wordcount: '2121'
+ht-degree: 1%
 
 ---
 
@@ -16,16 +16,9 @@ ht-degree: 0%
 
 Steg för att köra de olika rapporttyperna.
 
-
 ## Kör en rankad rapport {#task_C570BA4A213F4F2EB7B30E012934BE7D}
 
 I en rankad rapport visar tabellen rangordningarna av rapportsidorna i förhållande till måttet, utifrån antal eller procent. Rankade rapporter kan visa flera mätvärden i en rapport.
-
-<!-- 
-
-t_reports_ranked.xml
-
- -->
 
 1. Generera en rapport, till exempel en [!UICONTROL Pages Report] ( **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages]**).
 1. Klicka på **[!UICONTROL Ranked.]** i rapportrubriken
@@ -37,12 +30,6 @@ t_reports_ranked.xml
 
 Trendrapporter visar mätvärden över tid. Du använder den här rapporttypen när du vill se hur ett segment fungerar från en tidsperiod till nästa.
 
-<!-- 
-
-t_reports_trended.xml
-
- -->
-
 De flesta konverterings- och trafikrapporter har en trendvy tillgänglig. Med [!UICONTROL Calendar] kan du visa förbättring för alla delningar av tidsperioder, t.ex. dagar i en månad, veckor i ett år, veckor i ett kvartal, månader i ett år o.s.v. Trendrapporter visar trender för ett enskilt mått (intäkter, order, vyer och så vidare) för upp till fem artiklar (som produkter, kategorier, webbsidor och så vidare).
 
 **Köra en trendrapport**
@@ -50,29 +37,9 @@ De flesta konverterings- och trafikrapporter har en trendvy tillgänglig. Med [!
 1. Kör en konverterings- eller trafikrapport, till exempel **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages]**.
 1. Under **[!UICONTROL Report Type]** klickar du på **[!UICONTROL Trended.]**
 
-## Kör en konverteringsrapport {#task_B926A74AA6A641138C2986C1635120CB}
-
-Konverteringstrattrapporter visar hur många besökare i procent som gått igenom en uppsättning händelser för att utföra en önskad åtgärd. Du kan till exempel se hur många besökare som har gått från att besöka din webbsida, genom att lägga till artiklar i en kundvagn och sedan till att köpa en artikel. Den här rapporten visar också antalet som föll ned längs vägen.
-
-<!-- 
-
-t_reports_conversion_funnel.xml
-
- -->
-
-Om du vill köra den här rapporten väljer du en rapport, till exempel en sidrapport ( **[!UICONTROL Reports]** > **[!UICONTROL Campaigns]** > **[!UICONTROL Tracking Code]** > **[!UICONTROL Campaign Conversion Funnel]**).
-
-En beskrivning finns i [Konverteringsrapporter](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-conversion.html).
-
 ## Köra en utfallsrapport {#task_8FD97C8260464F9DA731A93DB8F80184}
 
 I [!UICONTROL Fallout Report] visas antalet besökare som besökt en fördefinierad sidsekvens. Här visas också konverterings- och bortfallsfrekvenser mellan varje steg.
-
-<!-- 
-
-t_reports_fallout.xml
-
- -->
 
 Kolla in den nya panelen [Bortfallsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
 
@@ -85,11 +52,6 @@ Kolla in den nya panelen [Bortfallsanalys](https://experienceleague.adobe.com/do
 1. Klicka på **[!UICONTROL Run Report]**.
 
    ![Stegresultat](assets/fallout_report.png)
-
->[!MORELIKETHIS]
->
->* [Beskrivning av bortfallsrapport](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-fallout.html)
-
 
 ## Köra en sidflödesrapport {#task_133E8B87C3F04DA0A42D10CBA499305B}
 
@@ -113,39 +75,15 @@ Sidan Integritetspolicy kan t.ex. ha totalt 10 000 sidvisningar, men endast 500 
 
 Den relativa procentandelen avbildas av linjens relativa bredd. Som standard visar den här rapporten fem grenar på andra nivån och fem grenar på tredje nivån. Du kan utöka antalet grenar så att du kan visa upp till tio grenar på andra nivån och fem grenar på tredje nivån. Om du gör det höjden på rapporten ökas höjden, vilket troligen kräver bläddring för att visa hela diagrammet.
 
-## Kör en trattrapport {#task_2BBF6FACD48F479E8B2EE458919941CB}
-
-Du kan välja lyckade händelser och lägga till dem i en [!UICONTROL Purchase Conversion Funnel]-rapport eller en [!UICONTROL Product Conversion Funnel]-rapport.
-
-<!-- 
-
-t_reports_funnel.xml
-
- -->
-
-1. Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Products]** > [Produktkonverteringstratt](https://experienceleague.adobe.com/docs/analytics/components/variables/dimensions-reports/reports-conversion-funnel.html).
-
 ## Kör en marknadsföringskanalrapport {#task_64ADED5CC75248319E06E3E029B47F78}
 
 Marketing Channel-rapportering ger en översiktsrapport över den första och sista beröringskanalen, med standardstatistik som intäkter, order och kostnader. Med hjälp av dessa rapporter kan ni analysera hur mycket intäkter varje kanal genererar.
-
-<!-- 
-
-t_reports_marketing_channel.xml
-
- -->
 
 Mer information finns i hjälpsystemet [Marketing Channel](/help/components/c-marketing-channels/analyze-mc.md).
 
 ## Köra en avvikelseidentifieringsrapport {#task_4808C96327354D789C075823F5C3A049}
 
 Beskriver hur du tolkar Sammanfattning och Individuella måttscheman i avvikelseidentifiering.
-
-<!-- 
-
-t_anomaly_view.xml
-
- -->
 
 Kolla in de nya [analysfunktionerna för avvikelseidentifiering och bidragsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) i Analysis Workspace!
 
