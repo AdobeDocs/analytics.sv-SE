@@ -2,9 +2,9 @@
 title: Analysera marknadsföringskanaler
 description: Lär dig hur du använder dimensionerna för marknadsföringskanaler i arbetsytan.
 exl-id: 7030e41a-4e92-45c7-9725-66a3ef019313
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '401'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanaler för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 Ni vill antagligen veta vilka av era marknadsföringskanaler som är mest effektiva och med vilka ni kan inrikta er bättre och få bättre avkastning på era marknadsföringsinvesteringar. I Adobe Analytics är dimensionerna och måtten för marknadsföringskanalerna i Workspace ett av verktygen som kan hjälpa er att spåra olika kanalers påverkan på order, intäkter osv. och ge er användbara kanalinsikter. Här är de mått och mätvärden du kan använda för marknadsföringskanaler:
 
@@ -49,7 +49,7 @@ Marknadsföringskanaler Detaljerna rör sig djupare in i varje kanal för att vi
 
 ## Använd attribueringsmodeller
 
-Du kan använda [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/attribution/use-attribution.html) för att tillämpa olika attribueringsmodeller direkt:
+Du kan använda [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) för att tillämpa olika attribueringsmodeller direkt:
 
 ![](assets/mc-viz5.png)
 
