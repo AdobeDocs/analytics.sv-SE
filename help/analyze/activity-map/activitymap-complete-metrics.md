@@ -5,9 +5,9 @@ uuid: e8d73671-4e96-49e7-9b47-711cfe186821
 feature: Activity Map
 role: Business Practitioner, Administrator
 exl-id: 6de4ef4d-913d-4c66-916e-56cc81f1e6c7
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: f9a5b1ae08209260b4e4694b743932627a0c2019
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '174'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ Gör att du kan få tillgång till en komplett uppsättning mätvärden från Ad
 
 Genom att förstå hur länkklick påverkar användarbeteendet längre fram i kedjan kan ni optimera webbplatsinnehållet och layouten mer effektivt för att förbättra kundresan. Vilka länkar ingår i konverteringarna? Som återförsäljare kanske du vill tilldela intäkter eller order till specifika länkklick. Som utgivare kanske du vill attribuera tiden som ägnats åt webbplatsen till specifika länkklick.
 
-I tidigare versioner av Activity Map fanns det begränsade möjligheter att lägga till andra mätvärden till verktyget. Den här versionen har stöd för alla mätvärden i Adobe Analytics. Mer information om analysstandardvärden finns [här](https://experienceleague.adobe.com/docs/analytics/components/variables/metrics/metricslist.html).
+I tidigare versioner av Activity Map fanns det begränsade möjligheter att lägga till andra mätvärden till verktyget. Den här versionen har stöd för alla mätvärden i Adobe Analytics. Mer information om analysstandardvärden finns [här](/help/components/metrics/overview.md).
 
 Du kan få tillgång till alla mätvärden som stöds av en eVar i Adobe Analytics via den nedrullningsbara menyn i verktygsfältet.
 
