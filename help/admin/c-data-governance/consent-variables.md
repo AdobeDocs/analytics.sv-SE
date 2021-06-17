@@ -3,10 +3,10 @@ description: Variabler för sekretessrapportering inom datasekretess.
 title: Variabler för sekretessrapportering
 feature: Administratörsverktyg
 exl-id: 3f7980a4-d826-4554-a9a0-673fd5b79653
-source-git-commit: 2b5c7702d31d451ca4d42dc256c338567b17b8de
+source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 95%
+source-wordcount: '416'
+ht-degree: 97%
 
 ---
 
@@ -62,7 +62,7 @@ Varje rapportsvit kan konfigureras på följande sätt:
 
 Tre kontextdatavariabler har fördefinierats för att fungera med reserverade variabler för hantering av sekretessrapportering.  Det är upp till respektive implementeringstekniker hur dessa variabler ska hanteras och sparas.
 
-Se [Variabler för kontextdata](https://experienceleague.adobe.com/docs/analytics/implementation/javascript-implementation/variables-analytics-reporting/context-data-variables.html) för allmän vägledning om hur du implementerar kontextdatavariabler.
+Se [Variabler för kontextdata](/help/implement/vars/page-vars/contextdata.md) för allmän vägledning om hur du implementerar kontextdatavariabler.
 
 ### SSF
 
