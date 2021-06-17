@@ -2,9 +2,9 @@
 title: Mappa XDM-data till Analytics manuellt
 description: Mappa XDM-data manuellt från Experience Platform till Adobe Analytics
 exl-id: 6d973b35-1558-435c-9ae5-80c012d4e7ba
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Experience Platform (AEP) Web SDK innehåller hjälpmedel som hjälper dig
 
 För XDM-data som inte automatiskt mappas till Analytics kan du lägga till [kontextdata](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html) så att de matchar ditt [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html). Sedan kan den användas av Analytics [bearbetningsregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) för att fylla i Analytics-variabler.
 
-Du kan också använda en standarduppsättning med åtgärder och produktlistor för att skicka eller hämta data med AEP Web SDK. Mer information finns i [Produkter](https://experienceleague.adobe.com/docs/experience-platform/edge/implement/commerce.html).
+Du kan också använda en standarduppsättning med åtgärder och produktlistor för att skicka eller hämta data med [AEP Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en).
 
 ## Kontextdata
 
