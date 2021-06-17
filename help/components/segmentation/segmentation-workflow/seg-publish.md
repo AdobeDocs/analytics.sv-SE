@@ -4,9 +4,9 @@ title: Publicera segment till Experience Cloud
 feature: Segmentering
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: f9a5b1ae08209260b4e4694b743932627a0c2019
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ I följande skärmbilder visas hur du hämtar AAM UUID i webbläsaren och använ
 
 **Metod 1: Använd Adobe Experience Cloud Debugger**
 
-1. Hämta och installera [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/testing-and-validation/debugger.html) i Chrome Web Store.
+1. Hämta och installera [Adobe Experience Cloud Debugger](/help/implement/validate/debugger.md) i Chrome Web Store.
 1. Starta felsökaren när du läser in en sida.
 1. Bläddra till sektionen Audience Manager och hitta AAM UUID som angetts på den aktuella webbläsarsidan
 (`50814298273775797762943354787774730612` i exemplet nedan)
