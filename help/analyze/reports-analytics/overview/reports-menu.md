@@ -5,9 +5,9 @@ uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
 feature: Rapporter och analysgrunder
 role: Business Practitioner, Administrator
 exl-id: c2adbe93-6a52-45a0-8a81-2799bf63f70f
-source-git-commit: 286e42feca0d87ef08b9c1d6be6a6987db9de4d0
+source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Rapporterna navigeras i en hierarkisk kolumnvy. Klicka på **[!UICONTROL View Al
 
 ![](assets/reports-landing.png){width=&quot;672px&quot;}
 
-Mer information om enskilda rapporter finns i [Rapportbeskrivningar](https://experienceleague.adobe.com/docs/analytics/components/variables/c-variables.html).
+Mer information om enskilda rapporter finns i [Dimensioner](/help/components/dimensions/overview.md).
 
 ## Sök efter rapporter {#section_E5EF11E36CB9451AA7B079E585CA7DB6}
 
@@ -81,7 +81,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Mina favoriter  </span> </td> 
-   <td colname="col2">Du kan enkelt hämta rapporter som du har markerat som <span class="uicontrol"> Favorited</span> från det här området. För varje användare och per rapport visas tio Favoriter och <span class="uicontrol"> Mer..</span>-länk om du har fler än tio favoriter. <p>Observera att du kan byta namn på rapporter men inte instrumentpaneler i Mina favoriter. </p> <p>Favoriter liknar bokmärken, men de lagras inte i en mapp eller hanteras via bokmärkeshanteraren <a href="/help/analyze/reports-analytics/bookmarks.md"  ></a>, som bokmärken. </p> </td> 
+   <td colname="col2">Du kan enkelt hämta de rapporter som du har markerat som <span class="uicontrol"> favoriter</span> från det här området. För varje användare och per rapport visas tio Favoriter och <span class="uicontrol"> Mer..</span>-länk om du har fler än tio favoriter. <p>Observera att du kan byta namn på rapporter men inte instrumentpaneler i Mina favoriter. </p> <p>Favoriter liknar bokmärken, men de lagras inte i en mapp eller hanteras via bokmärkeshanteraren <a href="/help/analyze/reports-analytics/bookmarks.md"  ></a>, som bokmärken. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Visas ofta</span> </td> 
