@@ -3,9 +3,9 @@ description: 'Läs mer om '
 title: Mätvärdestyp och attribuering
 uuid: 64649698-df2a-42c3-bb31-938f766e1d1f
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '888'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 
 >[!IMPORTANT]
 >
->I juli 2018 införde [!DNL Analytics] [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/attribution/attribution.html), som reviderade hur allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
+>[Attribution ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/attribution/attribution.html) IQsreviderade sättet på vilket allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
 >
 >* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)-dokumentationen.
 >* Allokeringsmodellerna&quot;sista beröringen i marknadsföringskanalen&quot; och&quot;Första beröringen i marknadsföringskanalen&quot; migreras till de nya attribueringsmodellerna&quot;Sista beröringen&quot; respektive&quot;Första beröringen&quot; (Obs! &quot;Marknadsföringskanaler&quot; kommer inte att bli inaktuella - bara de två allokeringsmodellerna som visas i beräknade värden kommer att vara det).
@@ -72,9 +72,9 @@ För den första touch-eVar ovan ges A alla 10 dollar. För propen: A = 10 * (2/
 | PROMO C | $1,67 | $0 | 2,50 USD |
 | Totalt | 10.00 USD | 10.00 USD | 10.00 USD |
 
-**Sammanfattning av hur linjär tilldelning fungerar från och med den 19 juli 2018**
+**Sammanfattning av hur linjär allokering fungerar nu**
 
-Efter 19 juli korrigerade vi detta beteende i beräknade mått. I stället för att använda de beständiga värden som baseras på senaste beröring eller första beröring använder [!DNL Analytics] nu bara de värden som skickades (den första raden i den övre tabellen). Inställningarna för dimensionsallokering påverkar inte längre det sätt på vilket linjär allokering beräknas (vilket innebär att props och eVars behandlas på samma sätt), och resultaten avspeglar det som ursprungligen skickades i stället för det första eller sista beröringsvärdet som kan ha varit bestående. I alla tre fallen är alltså A = 10 * (2/4) = $5, B = 10 * (1/4) = $2,50 och C = 10 * (1/4) = $2,50.
+I stället för att använda de beständiga värden som baseras på senaste beröring eller första beröring använder [!DNL Analytics] nu bara de värden som skickades (den första raden i den övre tabellen). Inställningarna för dimensionsallokering påverkar inte längre det sätt på vilket linjär allokering beräknas (vilket innebär att props och eVars behandlas på samma sätt), och resultaten avspeglar det som ursprungligen skickades i stället för det första eller sista beröringsvärdet som kan ha varit bestående. I alla tre fallen är alltså A = 10 * (2/4) = $5, B = 10 * (1/4) = $2,50 och C = 10 * (1/4) = $2,50.
 
 | Värden | Ny eVar för senaste beröring | Ny eVar med första beröring | Nytt utkast |
 |---|---|---|---|
