@@ -4,7 +4,7 @@ title: Publicera segment till Experience Cloud
 feature: Segmentering
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-source-git-commit: f9a5b1ae08209260b4e4694b743932627a0c2019
+source-git-commit: 190c05f7c0bf8c8ae0524a5635ff468a053abedd
 workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 1%
