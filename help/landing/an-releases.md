@@ -2,7 +2,7 @@
 description: Beskriver den nya strategin för kontinuerlig funktionsrelease för Adobe Analytics
 title: Adobe Analytics funktionsreleaser
 exl-id: 1e403bef-4aab-4a9a-a358-62449ce801ff
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: f120c189228892e57e38e4d0e106eb3190326ff1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -38,6 +38,6 @@ Med fasade versioner kan Adobe bättre anpassa driftsättningsprocessen och se t
 ## Vanliga frågor
 
 | Fråga | Svar |
-|---|---|
+| --- | --- |
 | Kan jag begära tidig åtkomst till en funktion? | Nej. Tidig tillgång kommer inte att beviljas.<br>Om du vill testa tidiga Analytics-koncept rekommenderar vi att du provar  [Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/analyze/tech-previews/overview.html) Labs för att få feedback på våra branschledande innovationer. |
 | Påverkar den här versionsstrategin min tillgång till funktioner? | Nej. När en funktion har nått GA får du tillgång till funktionen om den ingår i Analytics-paketet.<br>Du kan visa information om ditt Analytics-paket under  [!UICONTROL Admin] >  [!UICONTROL All admin] >  [!UICONTROL Company settings] >  [Funktionsåtkomstnivåer](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/feature-access-levels.html). |
