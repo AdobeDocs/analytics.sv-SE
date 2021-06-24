@@ -2,10 +2,9 @@
 title: Slutet av livscykeln för fullständiga datakällor
 description: Orsaker till slutet av livscykeln och jämförelser mellan API:t för inmatning av gruppdata och fullständiga datakällor för databearbetning.
 exl-id: 24a44b7a-64fd-4a99-975f-4887f4638812
-translation-type: tm+mt
-source-git-commit: 53b15f9c5895e856ff627fbc520d4743fbc57eba
+source-git-commit: f120c189228892e57e38e4d0e106eb3190326ff1
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1233'
 ht-degree: 5%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 5%
 
 I flera år har du kunnat skicka in data på träffnivå till Adobe Analytics med fullständig databehandling. Dessa data bearbetades på samma sätt som data som samlats in via våra JavaScript-bibliotek och SDK för mobilappar. 2020 släppte Adobe [API:t för datainmatning i grupp](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md), som utför samma funktioner som fullständiga datakällor, men med ytterligare funktioner. Det här avsnittet innehåller information om ytterligare funktioner som tillhandahålls av API:t för inmatning av gruppdata och visar skillnader i filformat.
 
-Från och med 25 mars 2021 kommer Adobe att förhindra att nya anslutningar för fullständiga datakällor skapas. Befintliga anslutningar stöds tills tjänsten är helt inaktuell den 31 juli 2021.
+Från och med 25 mars 2021 kommer Adobe att förhindra att nya anslutningar för fullständiga datakällor skapas. Befintliga anslutningar stöds tills tjänsten är helt inaktuell den 31 juli 2021. Utöver vår standarddokumentation tillhandahåller vi en genomgång av de [steg som behövs för att skicka data via API:t för gruppdatainfogning](http://adobe.ly/aabdia).
 
 ## Varför upphör den här funktionen?
 
@@ -89,7 +88,7 @@ Mer information finns i följande jämförelse av fältvärden som är tillgäng
 | upplösning | upplösning | Bildskärmsupplösning (till exempel 1 024 × 768). |
 | server | server | Serversträng. |
 | tillstånd | tillstånd | Conversion state string. |
-| tidsstämpel | datum | Använd datumformatet ISO 8601 för YYYY-MM-DDThh:mm:ss±UTC_offset (t.ex. 2021-09-01T12:00:00-07:00) eller Unix Time Format (antalet sekunder som gått sedan 1 januari 1970) ). |
+| tidsstämpel | datum | Använd datumformatet ISO 8601 för datumformatet YYYY-MM-DDThh:mm:ss±UTC_offset (t.ex. 2021-09-01T12:00:00-07:00) eller Unix Time-format (antalet sekunder som gått sedan 1 januari 197) 0). |
 | trackingServer | Stöds inte | Kan endast anges via kolumnrubrik. |
 | transactionID | Stöds inte | Gemensamt värde som används för att knyta samman flerkanalsanvändaraktiviteter för rapportering. Mer information finns i [Användarhandbok för datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html?lang=en#data-sources). |
 | userAgent | Stöds inte | Användaragentsträng |
