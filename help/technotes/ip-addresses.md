@@ -2,9 +2,9 @@
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: 31fa03e0d8bba457953e10aa537d22b2d69b84c1
+source-git-commit: 9a43b69bbb7d5a1c331740fff00242e4b1eb2b25
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -124,27 +124,15 @@ Adobe Analytics använder Amazon Web Services som en del av datainsamlingsproces
 | Frankrike | `13.36.218.177` |
 | Frankrike | `15.188.95.229` |
 | Frankrike | `15.236.176.210` |
-| Indien | `65.0.114.116` |
-| Indien | `65.0.115.179` |
-| Indien | `65.0.25.111` |
 | Indien | `3.7.24.204` |
 | Indien | `3.108.50.194` |
 | Indien | `3.108.177.136` |
-| Irland | `18.202.158.78` |
-| Irland | `54.72.205.114` |
-| Irland | `54.78.36.71` |
 | Irland | `54.220.133.225` |
 | Irland | `54.74.170.177` |
 | Irland | `54.195.254.128` |
-| Oregon | `44.233.255.254` |
-| Oregon | `44.237.54.118` |
-| Oregon | `44.238.157.95` |
 | Oregon | `54.212.155.93` |
 | Oregon | `52.10.149.115` |
 | Oregon | `52.40.172.46` |
-| Singapore | `52.220.116.94` |
-| Singapore | `52.76.68.91` |
-| Singapore | `54.179.114.68` |
 | Singapore | `54.255.88.178` |
 | Singapore | `52.220.235.10` |
 | Singapore | `3.1.237.132` |
@@ -154,12 +142,12 @@ Adobe Analytics använder Amazon Web Services som en del av datainsamlingsproces
 | Tokyo | `3.113.78.189` |
 | Tokyo | `13.115.137.161` |
 | Tokyo | `54.178.162.114` |
-| Virginia | `3.213.168.181` |
-| Virginia | `3.219.249.186` |
+| Virginia | `18.205.241.19` |
+| Virginia | `44.194.25.77` |
 | Virginia | `3.220.129.153` |
 | Virginia | `18.206.109.10` |
 | Virginia | `18.211.197.67` |
-| Virginia | `34.227.41.189` |
+| Virginia | `52.0.93.32` |
 | Virginia | `34.228.124.176` |
 | Virginia | `54.90.190.103` |
 | Virginia | `54.174.149.161` |
