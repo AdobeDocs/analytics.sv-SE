@@ -2,10 +2,9 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 exl-id: b407675a-9fcf-4f24-bc88-69ccdb5b3658
-translation-type: tm+mt
-source-git-commit: 06baca24c0cba70fd8c413fae7fe2763fe791359
+source-git-commit: ce3f795b71f1fba6385c9a5005f1ffaac5c2fe6e
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '638'
 ht-degree: 9%
 
 ---
@@ -104,4 +103,4 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 
 ETT undantag till datumet 1 augusti 2021 är Adobe Campaign Classic-integreringen. Denna integrering kommer officiellt att bli inaktuell den 1 mars 2022.
 
-Den 1 augusti 2021 kommer Adobe Campaign Classic att tas bort från användargränssnittet för Data Connectors tillsammans med alla andra integreringar. Befintliga Campaign-integreringar kommer dock att fortsätta att samla in och skicka data till Adobe Analytics fram till den 1 mars 2022. Den 1 mars 2022 upphör integreringen att samla in och skicka uppgifter till Adobe Analytics. Adobe Campaign skapar en ny integrering på Adobe Exchange som ersätter den nuvarande integreringen av Data Connectors. Adobe Campaign räknar med att den nya integrationen ska bli klar i tid så att kunderna kan migrera till den nya integreringen före borttagningsdatumet i mars 2022.
+Den 1 augusti 2021 kommer Adobe Campaign Classic att tas bort från användargränssnittet för Data Connectors tillsammans med alla andra integreringar. Befintliga Campaign-integreringar kommer dock att fortsätta att samla in och skicka data till Adobe Analytics fram till den 1 mars 2022. Den 1 mars 2022 upphör integreringen att samla in och skicka uppgifter till Adobe Analytics. Om ni använder den här integreringen måste ni gå över till den nya anslutningen för Campaign-Analytics före den 1 mars 2022. Läs mer i [Adobe Campaign Classic-dokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/aa-connector-migration.html).
