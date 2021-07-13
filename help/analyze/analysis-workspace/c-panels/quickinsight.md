@@ -1,16 +1,15 @@
 ---
 description: Quick Insights är ett verktyg för nya Workspace-användare som vägleder dem i arbetet med att skapa datatabeller och visualiseringar
 title: Panelen Snabbinsikter
-feature: Panels
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Paneler
+role: User, Admin
+exl-id: 29b26ec9-d410-43d6-a317-ca7587f5dd31
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '987'
 ht-degree: 2%
 
 ---
-
 
 # Panelen Snabbinsikter
 
@@ -107,4 +106,3 @@ Du får en varning innan du lägger till något direkt i tabellen:
 ![](assets/qibuilder8.png)
 
 Om du skapar direkt kommer tabellen nu att fungera som en traditionell Freeform-tabell, utan de praktiska funktionerna för nya användare.
-
