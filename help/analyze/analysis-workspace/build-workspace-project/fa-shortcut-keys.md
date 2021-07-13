@@ -2,16 +2,15 @@
 description: Interaktioner med tangentbord, kortkommandon och beteenden för peka och klicka som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
 title: Snabbtangenter (kortkommandon)
-feature: Workspace Basics
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Grundläggande om arbetsytan
+role: User, Admin
+exl-id: 742e7d69-2acf-48a9-aaf3-1cb3a73944af
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '286'
 ht-degree: 5%
 
 ---
-
 
 # Snabbtangenter (kortkommandon)
 
