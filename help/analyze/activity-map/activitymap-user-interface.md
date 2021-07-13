@@ -3,15 +3,14 @@ description: 'Användargränssnittet i Activity Map består av två delar '
 title: Användargränssnitt för Activity Map
 uuid: f6734b60-0b77-4f50-a45a-6a6936d1524e
 feature: Activity Map
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 461abda1-3238-4a32-b9d3-5a57b00cf0d3
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 5%
 
 ---
-
 
 # Användargränssnitt för Activity Map
 
@@ -28,11 +27,10 @@ Användargränssnittet i Activity Map består av två delar:
 
 Du kan komma åt ytterligare länkinformation genom att hålla markören över varje länkövertäckning:
 
-## Nedersta rapportpanelen {#section_21B129D69B7A4F918E975E8E66DB02EE}
+## Panelen Nedersta rapporter {#section_21B129D69B7A4F918E975E8E66DB02EE}
 
 Längst ned på sidan kan du se [länkarna på sidan](/help/analyze/activity-map/activitymap-links-report.md)-rapporten och [siddetaljrapporten](/help/analyze/activity-map/activitymap-page-flow.md) där du kan visa en sammanfattning av den aktuella webbsidesstatistiken samt information om sidflödet.
 
 Med länkarna i sidrapporten får du en kalkylbladsvy över länkarna på den aktuella sidan, inklusive ytterligare klickinformation. Siddetaljrapporten innehåller analysdata för de sidor som besöktes före och efter navigeringen till den sida som visas.
 
 ![](assets/bottom_panel.png)
-
