@@ -3,15 +3,14 @@ description: När du har skapat rapporter med inbäddade begäranden kan du anv�
 title: Ange villkorsstyrd formatering
 uuid: 13ac12f1-3498-4bf9-a6d0-c5d84e0125dc
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 5a5f2415-8269-4c8a-9193-784537b29edf
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '185'
 ht-degree: 4%
 
 ---
-
 
 # Ange villkorsstyrd formatering
 
@@ -26,4 +25,3 @@ Av säkerhetsskäl är makron som du skriver för arbetsboken med Excel-språket
 >[!NOTE]
 >
 >Villkorsstyrd formatering är en Excel-funktion. Mer information om hur du skapar formateringsregler finns i dokumentationen för Excel.
-
