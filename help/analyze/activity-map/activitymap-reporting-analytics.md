@@ -3,9 +3,9 @@ description: Beskriver hur du anger behörigheter och vilka dimensioner som är 
 title: Activity Map-rapportering i Analytics
 uuid: 057c6ab2-aa06-4779-ac16-f9b367d9ea43
 feature: Activity Map
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 8d7be302-bdfc-4370-b8f0-ab1af1e439ca
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 7%
