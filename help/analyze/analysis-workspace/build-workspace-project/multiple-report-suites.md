@@ -2,9 +2,9 @@
 title: Flera rapportsviter
 description: Lär dig hur och varför du skapar projekt i Workspace med flera rapportsviter
 feature: Grundläggande om arbetsytan
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
