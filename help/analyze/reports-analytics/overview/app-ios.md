@@ -3,10 +3,9 @@ description: En introduktion till iPad-programmet.
 title: Adobe Analytics för iOS
 uuid: 45f91f5a-8ff1-44f0-8880-4c52f03a7b42
 feature: Rapporter och analysgrunder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 04643de2-793f-403b-ba2f-807453efc2fe
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 7%
