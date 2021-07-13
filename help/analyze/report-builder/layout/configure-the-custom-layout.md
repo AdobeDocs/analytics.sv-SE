@@ -3,15 +3,14 @@ description: Den anpassade layouten innehåller de flesta funktioner i pivotlayo
 title: Konfigurera en anpassad layout
 uuid: 4c1404b1-f20e-4343-be97-0b4c03500d52
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: b3f71fd2-4081-4eaa-a9d6-4007446c1802
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 16%
+source-wordcount: '110'
+ht-degree: 17%
 
 ---
-
 
 # Konfigurera en anpassad layout
 
