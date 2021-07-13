@@ -3,15 +3,14 @@ description: Information som hjälper dig förstå hur knapparna i verktygsfält
 title: Verktygsfältet i Report Builder
 uuid: 9f340fb0-f99a-4dd4-bcca-19c54e5499e6
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 6dbf94f1-f70e-40d3-a76f-fef298be19f5
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '293'
 ht-degree: 2%
 
 ---
-
 
 # Verktygsfältet i Report Builder
 
