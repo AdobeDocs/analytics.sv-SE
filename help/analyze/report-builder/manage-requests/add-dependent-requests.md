@@ -3,15 +3,14 @@ description: En beroende begäran är en begäran som är beroende av en befintl
 title: Lägga till underordnade förfrågningar
 uuid: 243619db-81b4-40cc-88c4-e93a14f6993b
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: e45eef96-0bd2-4c5a-b1d1-cd41390c08d4
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '104'
 ht-degree: 7%
 
 ---
-
 
 # Lägga till underordnade förfrågningar
 
