@@ -3,16 +3,15 @@ description: Skapa anpassade datumintervall i Analysis Workspace och spara dem s
 keywords: Analysis Workspace
 title: Skapa anpassade datumintervall
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
-feature: Workspace Basics
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Grundläggande om arbetsytan
+role: User, Admin
+exl-id: 586bb120-3f20-452c-9867-0b93d2e794bc
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '244'
 ht-degree: 4%
 
 ---
-
 
 # Skapa anpassade datumintervall
 
