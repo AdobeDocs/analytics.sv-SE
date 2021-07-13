@@ -3,9 +3,9 @@ description: Projektdelning och projektroller på arbetsytan
 keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Kuratera och dela
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 0%
