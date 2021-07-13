@@ -3,9 +3,9 @@ description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom An
 title: Översikt över avvikelseidentifiering
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
 feature: AI-verktyg
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 8%
