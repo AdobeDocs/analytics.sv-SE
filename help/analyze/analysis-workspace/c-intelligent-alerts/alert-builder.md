@@ -2,16 +2,15 @@
 description: Få aviseringar när projektkomponenterna når vissa tröskelvärden.
 title: Alert Builder
 uuid: ebc2d457-4abd-4b1a-9357-489b5aeb3f64
-feature: AI Tools
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: AI-verktyg
+role: User, Admin
+exl-id: aae28c90-bfdf-49ff-bd38-c9ef63880bf4
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # Varningsverktyg
 
@@ -94,7 +93,7 @@ Ange aviseringens förfallodatum.
 
 Du kan lägga till OCH- eller OR-regler genom att klicka på kugghjulsikonen.
 
-## Förhandsgranska varningar {#section_10D75BA7B77E4C5FAF58A719C082E070}
+## Förhandsgranska aviseringar {#section_10D75BA7B77E4C5FAF58A719C082E070}
 
 I förhandsgranskningen av den interaktiva aviseringen visas hur ofta, ungefär, en avisering utlöses baserat på tidigare erfarenheter.
 
