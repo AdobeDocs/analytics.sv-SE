@@ -3,15 +3,14 @@ description: Du kan spara filter eller andra parametrar i Report Builder och anv
 title: Sparade filter
 uuid: 78702a7e-7b52-4390-a35e-fd332e52c31c
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 0986b6e3-8708-4513-af8d-523fe7e616a3
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '102'
 ht-degree: 5%
 
 ---
-
 
 # Sparade filter
 
@@ -20,4 +19,3 @@ Du kan spara filter eller andra parametrar i Report Builder och använda dem i a
 Du sparar filter i [!UICONTROL Choose Page]-formuläret när du skapar ett filter. Ett exempel på den här proceduren finns i [Specifika filter](/help/analyze/report-builder/layout/c-filter-dimensions/t-specific-filters.md).
 
 ![](assets/choose_page_saved.png)
-
