@@ -3,15 +3,14 @@ description: Steg för och överväganden rörande uppgradering av Report Builde
 title: Uppgradera Report Builder
 uuid: 19cfae11-0b40-498b-89ca-5e854e7b164f
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 4ec876e2-bd8e-443e-8faf-135698d635eb
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '229'
 ht-degree: 4%
 
 ---
-
 
 # Uppgradera Report Builder
 
@@ -59,4 +58,3 @@ Du kan alltid hämta den senaste versionen av Report Builder från Adobe Analyti
 1. Klicka på **[!UICONTROL Report Builder]**.
 1. Välj 32- eller 64-bitarsversionen på skärmen **[!UICONTROL Overview]**.
 1. Klicka på **[!UICONTROL Download Now!]**.
-
