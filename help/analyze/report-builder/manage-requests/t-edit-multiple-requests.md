@@ -3,15 +3,14 @@ description: Du kan ändra flera begäranden samtidigt baserat på rapportsviten
 title: Redigera flera förfrågningar
 uuid: 5be23376-ba94-4d5c-84c7-a60134aacf7d
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 9fd08041-b780-4c8f-ad5d-ad8795b3fde6
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '269'
 ht-degree: 2%
 
 ---
-
 
 # Redigera flera förfrågningar
 
