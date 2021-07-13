@@ -4,10 +4,9 @@ subtopic: Current Data
 title: Aktuella data
 uuid: 601d3695-be13-4b7f-9df0-de01c8bd64ee
 feature: Rapporter och analysgrunder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 4e90f5ad-ba12-4282-a0d9-55765d88104b
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 1%
