@@ -3,15 +3,14 @@ description: Fältdefinitioner för rullande datum i Report Builder.
 title: Definitioner i frågeguiden – rullande datum
 uuid: 19e25900-96a3-4f6c-9551-9f7af8cc6963
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 31caee9b-3488-4dc7-b5b1-361b153c8b68
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 16%
 
 ---
-
 
 # Definitioner i frågeguiden – rullande datum
 
@@ -39,4 +38,3 @@ Fältdefinitioner för rullande datum i Report Builder.
   </tr> 
  </tbody> 
 </table>
-
