@@ -2,15 +2,14 @@
 description: Med funktionen Redigera mått över flera begäranden kan du enkelt lägga till, ta bort eller ersätta mått i en befintlig begäran eller i en hel grupp med förfrågningar.
 title: Redigera mätvärden för flera förfrågningar
 uuid: 50fba4e7-ca7d-4a5c-98a9-c9725b436e4a
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: e537b67a-aa07-4acd-a476-7497426e2f7d
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '535'
 ht-degree: 4%
 
 ---
-
 
 # Redigera mätvärden för flera förfrågningar
 
@@ -77,4 +76,3 @@ Så här tar du bort mått:
 
 1. Välj ett eller flera mått som ska tas bort från begäran.
 1. Uppdatera begäran. Du kommer att se offlinedata tills du uppdaterar.
-
