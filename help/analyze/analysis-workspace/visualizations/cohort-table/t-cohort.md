@@ -3,16 +3,15 @@ description: Skapa en kohort och kör en kohortanalysrapport i Analysis Workspac
 keywords: Analysis Workspace
 title: Köra en kohortanalysrapport
 uuid: 5574230f-8f35-43ea-88d6-cb4960ff0bf4
-feature: Visualizations
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Visualiseringar
+role: User, Admin
+exl-id: 523e6f62-b428-454b-9460-6b06e96742c3
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera en [!UICONTROL Cohort Analysis]-rapport
 
@@ -59,4 +58,3 @@ Skapa en kohort och kör en [!UICONTROL Cohort Analysis]-rapport i Analysis Work
    >[!NOTE]
    >
    >Du måste spara projektet innan kursen är tillgänglig.
-
