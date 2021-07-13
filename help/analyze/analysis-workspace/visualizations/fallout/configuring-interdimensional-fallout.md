@@ -2,16 +2,15 @@
 description: Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
 title: Intradimensionella utfall
 uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
-feature: Visualizations
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Visualiseringar
+role: User, Admin
+exl-id: 12de8e52-02c1-4e11-b530-48294f201fe0
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 2%
+source-wordcount: '165'
+ht-degree: 3%
 
 ---
-
 
 # Intradimensionella utfall
 
@@ -30,4 +29,3 @@ Du kan också lägga till mätvärden i den här mixen. I det här exemplet har 
 Dessutom kan du kombinera olika mått och mätvärden i AND-kontrollpunkter. Bara dra ytterligare mått eller mätvärden över en befintlig dimension:
 
 ![](assets/interdimensional-fallout3.png)
-
