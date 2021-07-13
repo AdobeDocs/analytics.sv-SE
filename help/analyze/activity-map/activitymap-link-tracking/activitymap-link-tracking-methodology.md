@@ -3,9 +3,9 @@ description: Det här avsnittet är avsett för Adobe Analytics-administratörer
 title: Metod för länkspårning
 uuid: 67864bf9-33cd-46fa-89a8-4d83d3b81152
 feature: Activity Map
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 6aef3a0f-d0dd-4c84-ad44-07b286edbe18
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 1%
