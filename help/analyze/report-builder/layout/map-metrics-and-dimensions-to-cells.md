@@ -3,15 +3,14 @@ description: Kontrollera att kalkylbladet inte är skyddat innan du börjar mapp
 title: Mappa mätvärden och dimensioner till celler
 uuid: 50893e1c-5f2c-4558-8001-41e70d74d6e7
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: e63fc679-39eb-417b-9a2b-6620db63a824
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '658'
 ht-degree: 2%
 
 ---
-
 
 # Mappa mätvärden och dimensioner till celler
 
@@ -58,7 +57,7 @@ Om du vill mappa separata rader i en begäran använder du [!UICONTROL Control]-
 
 När du har markerat celler klickar du på **[!UICONTROL Range Selector]** igen i [!UICONTROL Range Selection]-formuläret för att återgå till [!UICONTROL Request Wizard: Step 2].
 
-## Problem vid mappning av {#section_CC1BCF841291447EB3A994EB08F3A099}
+## Problem vid mappning {#section_CC1BCF841291447EB3A994EB08F3A099}
 
 Om du av misstag väljer att mappa till en cell som redan har en aktiv mappning, kommer du att märka att ingen cellreferens visas i textrutan bredvid intervallväljarikonen. När du klickar på [!UICONTROL OK] visas felet &quot;Det markerade intervallet överlappar en annan begärans intervall. Ändra ditt val.&quot;
 
