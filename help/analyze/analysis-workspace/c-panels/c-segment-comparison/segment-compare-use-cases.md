@@ -2,16 +2,15 @@
 title: Användningsexempel på segmentjämförelse
 description: Läs om användningsexempel från verkligheten om hur segmentjämförelsepanelen kan användas för att få insikt i marknadsföringsstrategin.
 keywords: Segment IQ
-feature: Panels
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Paneler
+role: User, Admin
+exl-id: d7c02e5c-5313-4e12-86cb-d483644ccbc7
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '827'
 ht-degree: 0%
 
 ---
-
 
 # Användningsexempel för segment-IQ
 
