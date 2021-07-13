@@ -1,16 +1,15 @@
 ---
 description: Inkonsekventa data kan orsaka stora problem. Lär dig hur du identifierar statistiska avvikelser med avvikelsedetekteringstekniker från Adobe. Kom igång idag.
 title: Statistiska tekniker som används för avvikelseidentifiering
-feature: AI Tools
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: AI-verktyg
+role: User, Admin
+exl-id: e9868296-e453-45ec-b874-b2aa1b37a1bf
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
-
 
 # Statistiska tekniker som används för avvikelseidentifiering
 
@@ -65,7 +64,7 @@ Timdata bygger på samma algoritm för tidsserier som den dagliga granularitetsa
 
 Utbildningsfönstren för timtrender är beroende av ett 336-timmars uppslagsfönster.
 
-## Analysidentifiering för vecko- och månadsgranulariteter {#section_5D421576BFBC4B24A58DFCC0A6407545}
+## Analysidentifiering för varje vecka och månad {#section_5D421576BFBC4B24A58DFCC0A6407545}
 
 Trender för varje vecka och månad visar inte samma trender för varje vecka eller varje dag som finns på en daglig eller timbaserad noggrannhet, vilket innebär att en sådan separat algoritm används. För varje vecka och varje månad används en metod med tvåstegsidentifiering som kallas GESD-test (Generalized Extreme Studentized Deviate). I detta test beaktas det maximala antalet förväntade avvikelser i kombination med den justerade boxrumsmetoden (en icke-parametrisk metod för oulier-upptäckt) för att fastställa det maximala antalet avvikande värden. De två stegen är:
 
