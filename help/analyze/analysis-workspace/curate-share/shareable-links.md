@@ -3,9 +3,9 @@ description: Lär dig hur du skapar delningsbara länkar till projekt eller visu
 keywords: Analysis Workspace-delning
 title: Skapa delningsbara länkar
 feature: Kuratera och dela
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 39fbe18c-2f75-4026-b277-58ec08c6a645
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Om du vill dela en länk till hela projektet går du till **[!UICONTROL Share > 
 
 ![](assets/get-project-link.png)
 
-## Hämta panel eller visualiseringslänk {#panel-link}
+## Hämta panel- eller visualiseringslänk {#panel-link}
 
 Du kan också dela en länk till en viss del av ett projekt, till exempel en panel eller en enskild visualisering. Detta kallas ibland för koncernintern länkning. Detta kan vara användbart för att dra användarnas uppmärksamhet till viktiga insikter i projektet.
 
