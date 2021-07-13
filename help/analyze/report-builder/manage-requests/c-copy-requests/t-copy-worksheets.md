@@ -3,15 +3,14 @@ description: Kopiera ett kalkylblad till ett annat i samma arbetsbok.
 title: Kopiera kalkylblad
 uuid: 817b8c7e-26bd-41a0-a5bb-ff12e5246e03
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 51785d9a-fdd1-42f1-8f44-4ca135d97d99
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '125'
 ht-degree: 4%
 
 ---
-
 
 # Kopiera kalkylblad
 
