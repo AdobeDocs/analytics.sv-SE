@@ -3,15 +3,14 @@ description: Steg som beskriver hur du avinstallerar Adobe Report Builder.
 title: Avinstallera Report Builder
 uuid: 3fade973-e246-4fcb-abc1-0aafddca0536
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 8196d5e2-acf3-4bac-a993-d1b7301214c9
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: '112'
 ht-degree: 9%
 
 ---
-
 
 # Avinstallera Report Builder
 
