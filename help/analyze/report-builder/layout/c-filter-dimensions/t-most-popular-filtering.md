@@ -3,15 +3,14 @@ description: Ranknings- och villkorsstyrda filter som du konfigurerar med hjälp
 title: Filtrera på mest populära
 uuid: 558fa592-41be-4e66-8705-81262afe1fc7
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 31587740-6caa-40cb-bb24-d7a15181f642
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 1%
 
 ---
-
 
 # Filtrera på mest populära
 
