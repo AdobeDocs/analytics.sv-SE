@@ -3,15 +3,14 @@ description: Använd Report Builder med Microsoft Power BI.
 title: Publicera till Power BI – översikt
 uuid: ad688817-6e3c-45da-983d-48c123465309
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 3464c153-2db5-41af-9e83-da081ec64ad3
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 13%
 
 ---
-
 
 # Publicera till Power BI – översikt
 
@@ -58,7 +57,7 @@ Schemalagda arbetsböcker formateras med Excel-kalkylblad som fylls i med data f
 
 1. Du kan sedan fästa ett område i den här arbetsboken så att du kan ta med det på dina Power BI-kontrollpaneler.
 
-## Publicera alla formaterade tabeller i arbetsboken som Power BI-datatabeller {#section_7C54A54E75184DD6BAEF4ACCE241239A}
+## Publicera alla formaterade tabeller i arbetsboken som Power BI-datauppsättningstabeller {#section_7C54A54E75184DD6BAEF4ACCE241239A}
 
 >[!NOTE]
 >
@@ -102,7 +101,7 @@ I stället för att importera hela arbetsboken kan du bara importera innehållet
 
 1. Härifrån kan du skapa visualiseringar från den här datauppsättningstabellen.
 
-## Publicera alla Report Builder-begäranden som Power BI Dataset-tabeller {#section_0C26057C7DBB4068A643FDD688F6E463}
+## Publicera alla Report Builder-begäranden som Power BI-datauppsättningstabeller {#section_0C26057C7DBB4068A643FDD688F6E463}
 
 Ni kan förvandla alla era förfrågningar till datauppsättningstabeller och skapa visualiseringar ovanpå dem.
 
@@ -137,4 +136,3 @@ Varje begäran som schemalagts Report Builder kommer att publiceras som en tabel
 1. Observera också att det finns en annan tabell med namnet **[!UICONTROL Legend]**. Om du tar en begäran ur Report Builder-kontexten kan det vara svårt att komma ihåg vad varje begäran står för. Syftet med förklaringstabellen är till exempel att visa namnet på varje begäran under Tabell-ID. Du kan också lägga till de andra förklaringskolumnerna för att få en fullständig vy över begäran.
 
    ![](assets/legend-table.png)
-
