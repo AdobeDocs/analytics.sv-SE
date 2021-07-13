@@ -3,9 +3,9 @@ description: Du kan schemalägga rapporter som ska skickas enligt den tid och de
 title: Schemalägg en databegäran
 uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 feature: Report Builder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 6aaadaa8-d68f-4a03-8838-53a61b152e31
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
