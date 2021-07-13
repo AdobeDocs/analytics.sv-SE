@@ -3,9 +3,9 @@ description: Skapa arbetsyteprojekt baserade på standardmallar eller anpassade 
 title: Mallar
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 feature: Grundläggande om arbetsytan
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '1378'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Du kan välja om du vill skapa ett projekt från:
 
 ![](assets/start_modal.png)
 
-## Skapa en anpassad mall {#create-custom-template}
+## Skapa en egen mall {#create-custom-template}
 
 Användare med administratörsbehörighet kan omvandla projekt de skapar till en egen mall. Så här:
 
@@ -58,7 +58,7 @@ Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter 
 
 Här är en självstudiekurs (video) om [standardmallar i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/standard-templates-in-analysis-workspace.html) (2:46)
 
-Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
+Här finns mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
