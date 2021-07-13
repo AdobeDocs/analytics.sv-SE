@@ -2,16 +2,15 @@
 description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Flödesinställningar
 uuid: 99822765-1d4f-4c23-a787-b089089cb8d7
-feature: Visualizations
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Visualiseringar
+role: User, Admin
+exl-id: 12a358b4-4f8e-4201-9f97-5c07c91f301e
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '243'
 ht-degree: 4%
 
 ---
-
 
 # Flödesinställningar
 
