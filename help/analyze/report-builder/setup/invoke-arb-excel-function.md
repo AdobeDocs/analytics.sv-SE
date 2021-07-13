@@ -3,15 +3,14 @@ description: Den här möjligheten integrerar användningen av Report Builder i 
 title: Anropa Report Builder-funktioner från Microsoft Excel-funktioner
 uuid: 5342cc4f-085d-4a2d-a498-38b00a3ef4d3
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: b412f2b5-affe-4297-af4b-85e8c6dfd257
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '478'
 ht-degree: 3%
 
 ---
-
 
 # Anropa Report Builder-funktioner från Microsoft Excel-funktioner
 
@@ -39,7 +38,7 @@ Gå till [!UICONTROL Formulas] > [!UICONTROL Insert Function] om du vill komma �
 
 ![](assets/arb_functions.png)
 
-## Använd de här funktionerna i formeln {#section_034311081C8D4D7AA9275C1435A087CD}
+## Använd de här funktionerna i en formel {#section_034311081C8D4D7AA9275C1435A087CD}
 
 Formeln
 
@@ -49,7 +48,7 @@ Formeln
 
 säger&quot;Om värdet i cell P5 är text eller tomt, uppdaterar du det intervall som finns i cell P9.&quot;
 
-## Använd Report Builder-funktioner med formatkontroll {#section_26123090B5BD49748C8D8ED7A1C5ED84}
+## Använda Report Builder-funktioner med formatkontroll {#section_26123090B5BD49748C8D8ED7A1C5ED84}
 
 Nu kan du tilldela ett makro till en kontroll som du har skapat och den kontrollen kan vara en funktion som uppdaterar en arbetsboksförfrågan. Funktionen AsyncRefreshActiveWorksheet uppdaterar till exempel alla begäranden i ett kalkylblad. Ibland kanske du bara vill uppdatera vissa förfrågningar, inte alla.
 
@@ -59,7 +58,7 @@ Nu kan du tilldela ett makro till en kontroll som du har skapat och den kontroll
 
 ![](assets/assign_macro.png)
 
-## Skicka parametrar till Report Builder-funktioner via formatkontroll {#section_ECCA1F4990D244619DFD79138064CEF0}
+## Skicka parametrar till Report Builder via formatkontroll {#section_ECCA1F4990D244619DFD79138064CEF0}
 
 De två funktionerna som tar en parameter kan användas med Formatkontroll, men endast via fältet Alt-text:
 
@@ -78,4 +77,3 @@ De två funktionerna som tar en parameter kan användas med Formatkontroll, men 
 1. Öppna listan över parametrar för Report builder under [!UICONTROL Formulas] > [!UICONTROL Insert Function] [!UICONTROL Adobe.ReportBuilder.Bridge].
 
 1. Välj en av de två funktionerna som slutar med AltTextParam och klicka på **[!UICONTROL OK]**.
-
