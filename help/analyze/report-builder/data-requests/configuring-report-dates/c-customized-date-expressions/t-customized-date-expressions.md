@@ -3,15 +3,14 @@ description: Du kan ange ett komplext datumintervall genom att skapa ett anpassa
 title: Anpassade datumuttryck – översikt
 uuid: 7d6d7c03-a3f4-4dec-8343-de2e6478bf06
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: b3bdc07e-5c2d-4be3-86c9-b4b7380be0f6
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '224'
 ht-degree: 4%
 
 ---
-
 
 # Anpassade datumuttryck – översikt
 
