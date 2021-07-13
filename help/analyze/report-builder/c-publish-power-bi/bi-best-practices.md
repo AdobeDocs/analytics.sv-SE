@@ -3,15 +3,14 @@ description: Power BI best practices.
 title: God praxis
 uuid: 6d55a9aa-030e-4e4d-963c-ec9cc38e1731
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 2d9447f4-77ac-465b-af93-206dc3ea80f7
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '140'
 ht-degree: 4%
 
 ---
-
 
 # God praxis
 
@@ -24,4 +23,3 @@ Om du tar bort en begäran i arbetsboken bör du kontrollera att det inte finns 
 * Om det är möjligt, ta inte bort begäranden som du skapat i Report Builder
 * Se till att du även tar bort motsvarande visualisering i Power BI om du gör borttagningsbegäranden på Report Builder.
 * Om du inte är säker: ta bort begäranden som du inte längre behöver, publicera igen och gå till Power BI för att se vilka visualiseringar som har brutits
-
