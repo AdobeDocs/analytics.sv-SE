@@ -4,9 +4,9 @@ subtopic: Bookmarks
 title: Bokmärkeshanterare
 uuid: 7a1287da-8a39-4dad-90b0-f311b5e83722
 feature: Rapporter och analysgrunder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 8b923484-0988-4271-8186-317bb33f2210
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 2%
