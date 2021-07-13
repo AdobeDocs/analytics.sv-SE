@@ -2,9 +2,9 @@
 description: Med sidanalys i realtid (Live-läge) kan du få resultat med minimal granularitet i realtid.
 title: Sidanalys i realtid (live)
 feature: Activity Map
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 29ccd89e-d82b-41d4-a940-addc6656b5ec
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
