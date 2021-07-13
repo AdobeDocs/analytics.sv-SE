@@ -2,16 +2,15 @@
 description: Skicka ett Analysis Workspace-projekt via e-post eller schemalägg det för leverans.
 keywords: Analysis Workspace
 title: Schemalägg projekt
-feature: Curate and Share
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Kuratera och dela
+role: User, Admin
+exl-id: 2d6854f7-8954-4d55-b2be-25981cfb348b
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
-
 
 # Schemalägg projekt
 
