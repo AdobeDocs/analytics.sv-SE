@@ -3,10 +3,9 @@ description: Lär dig hur du loggar in på Report Builder med ditt Experience Cl
 title: Logga in på Report Builder
 uuid: 9a21b791-e323-46d2-b850-2d67babe964b
 feature: Report Builder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d607ef04-d546-4ebb-9f27-51349235c703
-translation-type: tm+mt
-source-git-commit: 29eb20e5af815779aa3af5b7205e410b7165818b
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 6%
