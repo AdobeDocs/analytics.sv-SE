@@ -3,15 +3,14 @@ description: Fältbeskrivningar för den schemalagda aktivitetshanteraren.
 title: Schemalagd aktivitetshanterare
 uuid: dec259f0-2a04-4c94-abbc-5008cf2f1cb8
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 8bacd7e4-ab50-4b36-842c-a8b6130a58d9
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '397'
 ht-degree: 2%
 
 ---
-
 
 # Schemalagd aktivitetshanterare
 
@@ -36,4 +35,3 @@ Med Schemalagd Task Manager kan du visa en lista över befintliga schemalagda ra
 | Status | Statusen anger om rapporten skickades eller inte skickades. |
 | E-post/FTP | E-postadressen eller FTP-adressen till rapportmottagarens adress. |
 | Filformat | Rapportens leveransformat, t.ex. Excel, PDF, HTML och så vidare. |
-
