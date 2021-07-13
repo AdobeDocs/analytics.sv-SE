@@ -3,16 +3,15 @@ description: Använd exempel för kohortanalys.
 keywords: Analysis Workspace
 title: Användningsexempel på kohortanalyser
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
-feature: Visualizations
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Visualiseringar
+role: User, Admin
+exl-id: fc7e7bad-ab57-4bb8-a448-60b9397ef5af
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
-
 
 # [!UICONTROL Cohort Analysis] användningsfall
 
