@@ -3,15 +3,14 @@ description: Du kan välja bastapportyp för din databegäran, till exempel Webb
 title: Översikt över rapporttyper
 uuid: 63e656d0-f22e-4846-9e24-7ef3299dde5a
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: f92a7597-6c53-4886-bab2-8d3f811dcc18
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 6%
+source-wordcount: '114'
+ht-degree: 7%
 
 ---
-
 
 # Översikt över rapporttyper
 
@@ -22,4 +21,3 @@ Du kan bara välja en basrapporttyp för ett intervall av kalkylbladsceller. Om 
 Du kan söka efter rapporter med hjälp av det automatiska sökfältet. När du har valt en rapport från den här kontrollen väljs den matchande noden automatiskt i trädvyn.
 
 ![](assets/search_reports.png)
-
