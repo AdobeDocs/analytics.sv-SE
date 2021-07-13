@@ -3,15 +3,14 @@ description: Med interaktiva kontroller kan du redigera segment och datuminterva
 title: Interaktiva kontroller
 uuid: 5f324b61-e032-455e-9947-5037f013e0fa
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 2340ff31-1478-4a54-a4c3-c51e73c39109
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '523'
 ht-degree: 1%
 
 ---
-
 
 # Interaktiva kontroller
 
@@ -36,7 +35,7 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 >
 >Manipulera inte med namnet på kontrollen. (Om du vill se namnet anger du fokus på kontrollen så visas kontrollnamnet precis ovanför Excel-stödrastret i det övre vänstra hörnet.)
 
-## Implementera interaktiv datumintervallkontroll {#section_39B228F2D2C44985863D31424C953280}
+## Implementera interaktiv kontroll för datumintervall {#section_39B228F2D2C44985863D31424C953280}
 
 1. I steg 1 i begärandeguiden väljer du till exempel rapporten **[!UICONTROL Page]**.
 1. Klicka på ikonen **[!UICONTROL Control Settings]** bredvid listrutan **[!UICONTROL Commonly Used Dates]**:
@@ -82,4 +81,3 @@ Att implementera den interaktiva segmentkontrollen liknar att implementera datum
 1. Den nya interaktiva kontrollen visas nu i arbetsboken:
 
    ![](assets/segment_interactive_3.png)
-
