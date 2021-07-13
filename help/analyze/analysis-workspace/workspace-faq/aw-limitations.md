@@ -2,9 +2,9 @@
 description: Förteckning över kända begränsningar i Adobe Analysis Workspace och dess tillhörande komponenter
 title: Kända begränsningar i Analysis Workspace
 feature: Grundläggande om arbetsytan
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 520e970b-1387-4f70-985b-bfe397f4a21b
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 1%
