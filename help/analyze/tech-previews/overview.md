@@ -2,16 +2,14 @@
 title: Användarhandbok för Labs
 description: Förhandsgranska prototypprojekt för Adobe Analytics
 feature: Labs
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 4359f451692b86087efe27d4b3ec49ca85b7addc
+role: Admin
+exl-id: e5eafa04-f508-4330-b62a-113a60c5c4bb
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
-
-
 
 # [!UICONTROL Labs] Användarhandbok
 
