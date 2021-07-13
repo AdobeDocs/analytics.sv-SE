@@ -4,9 +4,9 @@ subtopic: Dashboards
 title: Kontrollpanelshanterare
 uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
 feature: Rapporter och analysgrunder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: abd5acf5-f743-4c94-81fb-fc6cc69e8f26
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '744'
 ht-degree: 1%
