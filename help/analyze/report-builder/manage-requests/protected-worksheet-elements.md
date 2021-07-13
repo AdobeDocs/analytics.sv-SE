@@ -3,15 +3,14 @@ description: Om du skyddar kalkylbladet (genom att låsa celler) kan du inte ska
 title: Skyddade kalkylbladselement
 uuid: 4b632862-4943-4567-a458-46a6548952fa
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 8783b6e9-82f5-4bee-a73f-31ea64d7e955
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '105'
 ht-degree: 7%
 
 ---
-
 
 # Skyddade kalkylbladselement
 
