@@ -5,8 +5,7 @@ title: Distribuera integreringen
 feature: Data Connectors
 uuid: 9bdc233d-63f6-456d-8c26-b5736dfdef09
 exl-id: 8637f13d-a07e-412e-9ad7-8a0836301dd6
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 85d199e71fb65e9026156b146201da2e5be37111
 workflow-type: tm+mt
 source-wordcount: '566'
 ht-degree: 5%
@@ -17,7 +16,7 @@ ht-degree: 5%
 
 Distribuering av den här integreringen är en enkel process som kräver följande åtgärder.
 
-## Slutför guiden för integrering av Adobe{#completing-the-adobe-integration-wizard}
+## Guiden Integrering av Adobe slutförs{#completing-the-adobe-integration-wizard}
 
 För att aktivera integreringen måste du slutföra integreringsguiden för Qualtrics i gränssnittet för Data Connectors
 
@@ -33,11 +32,12 @@ För att aktivera integreringen måste du slutföra integreringsguiden för Qual
    | Adobe SiteCatalyst Token | [Generera Qualtrics Adobe Analytics-token](../qualtrics-overview/qualtrics-token.md) |
 
 1. **Guidesteg 2 - Variabelmappningar**
-   | Svarslista för variabler | Välj en tillgänglig listvariabel från rapportsviten. (Du kan behöva aktivera en ny listVar i Report Suite Manager.)  |
+
+   | Svarslista för frågor | Välj en tillgänglig listvariabel från rapportsviten. (Du kan behöva aktivera en ny listVar i Report Suite Manager.) |
    |---|---|
-   | Svars-ID för frågor  | Välj en tillgänglig eVar eller ett förslag i din rapportsserie. (Du kan behöva aktivera en ny listVar i Report Suite Manager.)  |
-   | Spårningsserver  |Ange spårningsserverinställningen (domän) som du använder för att spåra Adobe Analytics-data. Använd `trackingServerSecure` spårningsserver om den skiljer sig från standardinställningen för spårningsserver.  |
-   | Kvartalsenkäter  | Välj en tillgänglig händelse i rapportsviten (du kan behöva aktivera en ny händelse i Report Suite Manager).  |
+   | Svars-ID för frågor | Välj en tillgänglig eVar eller ett erbjudande i din rapportsserie. (Du kan behöva aktivera en ny listVar i Report Suite Manager.) |
+   | Spårningsserver | Ange spårningsserverinställningen (domän) som du använder för att spåra Adobe Analytics-data. Använd spårningsservern `trackingServerSecure` om den skiljer sig från standardinställningen för spårningsserver. |
+   | Qualtrics Survey Submissions | Välj en tillgänglig händelse i rapportsviten (du kan behöva aktivera en ny händelse inifrån Report Suite Manager). |
 
 1. **Steg 3** i guiden: Inget krävs, endast information.
 
@@ -51,7 +51,7 @@ För att aktivera integreringen måste du slutföra integreringsguiden för Qual
 
 1. **Steg 5** i guiden: Granska konfigurationen och klicka sedan på  **[!UICONTROL Activate Now]**.
 
-## Aktivera integrering i Qualtrics Research Suite{#enabling-the-integration-in-qualtrics-research-suite}
+## Aktivera integreringen i Qualtrics Research Suite{#enabling-the-integration-in-qualtrics-research-suite}
 
 När du har slutfört integreringsguiden måste du aktivera integreringen för varje Qualtrics-undersökning som du vill ansluta.
 
