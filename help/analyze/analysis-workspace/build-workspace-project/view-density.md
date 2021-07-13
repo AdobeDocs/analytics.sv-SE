@@ -1,16 +1,15 @@
 ---
 description: Lär dig hur du justerar visningsdensiteten.
 title: Visa densitet
-feature: Workspace Basics
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Grundläggande om arbetsytan
+role: User, Admin
+exl-id: ddb9bab2-cf92-41ad-b8d1-86c626024ed6
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '97'
 ht-degree: 4%
 
 ---
-
 
 # Visa densitet
 
