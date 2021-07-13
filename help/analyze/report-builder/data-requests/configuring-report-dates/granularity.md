@@ -3,15 +3,14 @@ description: I begärandeguiden, steg 1, kan du använda en detaljnivå för dat
 title: Kornighet
 uuid: 948b3ff2-fcff-45fc-9e8c-8a025ac562b1
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 96c3b93a-9adf-4993-b6fc-9146ee5be4bd
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 2%
 
 ---
-
 
 # Kornighet
 
