@@ -3,10 +3,9 @@ description: Fullständiga underrelationer är aktiverade för alla konvertering
 title: Underordnade relationer
 uuid: ca6df50f-5d4c-4f91-bf27-86ccd01391a2
 feature: Rapporter och analysgrunder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 615ed00e-91cd-45de-ae1f-e0d09ff01d26
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%
@@ -19,7 +18,7 @@ Fullständiga underrelationer är aktiverade för alla konverteringsrapporter, s
 
 ![](assets/subrelations.png)
 
-## Så här fungerar delrelationer {#section_5BD862BB74FE411B96B59204520E4631}
+## Så fungerar underrelationer {#section_5BD862BB74FE411B96B59204520E4631}
 
 Ta följande exempel som illustrerar hur underrelationer fungerar:
 
