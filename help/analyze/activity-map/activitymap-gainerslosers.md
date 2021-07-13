@@ -3,15 +3,14 @@ description: Med övertäckningar kan du konfigurera datavisualisering på flera
 title: Anpassningsbara överlagringar
 uuid: c1e56480-c1df-4a81-8a2a-42ea1362175c
 feature: Activity Map
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 1e83d470-36e4-47bb-a262-ac12472b21c3
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '352'
 ht-degree: 1%
 
 ---
-
 
 # Anpassningsbara överlagringar
 
@@ -57,11 +56,10 @@ Bubbelövertäckningar visas när du markerar den här övertäckningen i verkty
 >
 >![](assets/bubbles_submenu.png)>
 
-## Tona och tappa bort övertäckningar {#section_EE80278E20C14824869BF5A27A4634C8}
+## Övertäckningar för matare och förlorare {#section_EE80278E20C14824869BF5A27A4634C8}
 
 **[!UICONTROL Gainers and losers overlays]** är bara tillgängliga i Live-läge. De rapporterar förändringar i länkaktiviteten i realtid genom att jämföra mätvärden från den aktuella perioden med mätvärden från den senaste perioden. De ger dig ett visuellt övertygande sätt att se trender i realtid.
 
 Denna realtidsövertäckning rangordnar klick baserat på förändringar i måttvärdet mellan föregående och aktuella perioder.
 
 ![](assets/gainers_losers.png)
-
