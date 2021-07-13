@@ -3,15 +3,14 @@ description: Analysidentifiering använder statistisk modellering för att autom
 title: Avvikelseidentifiering
 uuid: 02da21b4-3394-471b-97b5-aa1bddf1f445
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 6e3881c8-3e1c-4df8-ba38-e8bc84cfc3d4
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '520'
 ht-degree: 1%
 
 ---
-
 
 # Avvikelseidentifiering{#anomaly-detection}
 
