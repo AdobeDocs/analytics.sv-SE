@@ -6,9 +6,9 @@ uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 feature: Grundläggande om arbetsytan
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 5027c17f1b0efc2fe22915e39aca901ee2beb34a
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1395'
 ht-degree: 2%
 
 ---
@@ -71,7 +71,7 @@ Inställningarna inkluderar:
 | Senast ändrad | Datum för senaste ändring av projektet. |
 | Taggar | Visar alla taggar som har använts i ett projekt för enklare kategorisering. |
 | Beskrivning | En beskrivning är användbar för att förtydliga syftet med ett projekt. Du kan dubbelklicka på beskrivningen för att redigera den. |
-| Räkna upprepade instanser i projekt | Anger om upprepade instanser räknas i rapporter. Obs! den här inställningen gäller inte för visualiseringar av flöde och utfall. |
+| Räkna upprepade instanser i projekt | Anger om upprepade instanser räknas i rapporter. Den här inställningen (när den är aktiverad) hanterar flera på varandra följande sidvyer till samma sida som flera sidvyer. När du avaktiverar det räknas de som en enda sidvy (detta påverkar bara vissa mått, t.ex. enkelsidiga besök). **Obs**: Den här inställningen gäller inte för Flow- eller Fallout-visualiseringar. |
 | [Projektets färgpalett](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Du kan ändra den kategoriserade färgpaletten som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
 | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden av den vänstra listen, frihandstabeller och kohorttabeller. |
 
