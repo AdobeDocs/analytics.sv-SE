@@ -2,16 +2,15 @@
 description: Med Vennvisualiseringen kan du dra i upp till tre segment (från komponenter) och ett mätvärde för att skapa ett Venndiagram.
 title: Venn
 uuid: 0a743378-f588-417f-9108-4a1313d6bfeb
-feature: Visualizations
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Visualiseringar
+role: User, Admin
+exl-id: b5d6a822-e569-433e-990a-16e6cae12bbb
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '95'
 ht-degree: 3%
 
 ---
-
 
 # Venn
 
@@ -28,4 +27,3 @@ Om du vill omvandla Venndiagrammet till en frihandstabell klickar du på den fä
 Gå till ikonen Visualiseringsinställningar och välj **[!UICONTROL Normalization]** för att normalisera Venndiagrammet (ta bort storleken).
 
 ![](assets/normalization.png)
-
