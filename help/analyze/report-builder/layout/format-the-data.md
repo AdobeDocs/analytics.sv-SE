@@ -3,15 +3,14 @@ description: Förutom de standardalternativ för cellformatering som är tillgä
 title: Formatera datum
 uuid: 5211db30-07b3-4413-97c3-e40e6ff223cd
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 9b251b09-9156-40b5-8e1f-fb6594a25c26
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '267'
 ht-degree: 6%
 
 ---
-
 
 # Formatera datum
 
