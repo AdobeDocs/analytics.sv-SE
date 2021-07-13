@@ -1,11 +1,11 @@
 ---
-description: En introduktion till vanliga webbanalystermer som används i marknadsföringsrapporter.
+description: En introduktion till vanliga termer inom marknadsföringsanalys som används i rapporter och analyser.
 title: Vanliga termer
 uuid: 0560dc7d-9f92-46d4-848b-3cf297073382
 feature: Rapporter och analyser - Grunderna, rapporter och analyser
 role: User, Admin
 exl-id: 78ad3e11-2bfa-49bd-b17a-c586701b56ad
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 5027c17f1b0efc2fe22915e39aca901ee2beb34a
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 3%
@@ -46,7 +46,7 @@ En introduktion till vanliga Adobe Analytics-termer.
   </tr> 
   <tr> 
    <td> <p>Gå in på </p> </td> 
-   <td> <p>En sekvens med sidvisningar under en session. Besöken upphör först efter 30 minuters inaktivitet eller efter 12 timmars kontinuerlig aktivitet. (Den här gången är mätningen branschstandarden för webbanalys.) Besök spåras av cookies. Ett besök börjar när en läsare öppnar en sida. Ett besök kallas ibland för en <span class="term">-session</span>, men det är inte en webbläsarsession. Om du går till en annan webbplats, stänger webbläsaren eller till och med startar om datorn avslutas inte besöket. </p> <p> Om tidsgränsen för inaktivitet inträffar när en besökare läser en sida, stängs besöket och behandlas. Ett nytt besök börjar när besökaren klickar till en annan sida. </p> <p>Om datumet ändras under ett besök, t.ex. vid besök på en webbplats vid midnatt, beror besöket på den dag då besöket inleddes. </p> </td> 
+   <td> <p>En sekvens med sidvisningar under en session. Besöken upphör först efter 30 minuters inaktivitet eller efter 12 timmars kontinuerlig aktivitet. (Den här gången är mätningen branschstandarden inom marknadsföringsanalys.) Besök spåras av cookies. Ett besök börjar när en läsare öppnar en sida. Ett besök kallas ibland för en <span class="term">-session</span>, men det är inte en webbläsarsession. Om du går till en annan webbplats, stänger webbläsaren eller till och med startar om datorn avslutas inte besöket. </p> <p> Om tidsgränsen för inaktivitet inträffar när en besökare läser en sida, stängs besöket och behandlas. Ett nytt besök börjar när besökaren klickar till en annan sida. </p> <p>Om datumet ändras under ett besök, t.ex. vid besök på en webbplats vid midnatt, beror besöket på den dag då besöket inleddes. </p> </td> 
   </tr> 
   <tr> 
    <td> <p> Unik besökare </p> </td> 
@@ -62,7 +62,7 @@ En introduktion till vanliga Adobe Analytics-termer.
   </tr> 
   <tr> 
    <td> <p>Konverteringshändelser (slutförda) </p> </td> 
-   <td> <p>Konverteringshändelser är de aktiviteter på din webbplats som du vill att andra ska göra (viktiga resultatindikatorer). För en e-handelsplats kan konverteringshändelser vara en detaljerad produktvy, en utcheckning eller ett köp. För en leadgenereringsplats kan händelsen vara en formulärkomplettering. Konverteringshändelser räknas på webbplatsen och har egna rapporter som visar hur många av dem som hände. Dessa händelser blir också mätvärden som kan användas i andra rapporter och kan visa varför konverteringshändelserna inträffade eller vad som bidrog till att de inträffade. </p> <p>Undantaget från regeln att en händelse ska bli ett mått är händelsen Purchase, som genererar tre mått: Intäkter, beställningar och enheter. </p> <p>Det finns fler konverteringsmått som inte definieras här, men konverteringsvärden utgör grunden för webbanalysen, som bygger på andra mätvärden och rapporter. </p> </td> 
+   <td> <p>Konverteringshändelser är de aktiviteter på din webbplats som du vill att andra ska göra (viktiga resultatindikatorer). För en e-handelsplats kan konverteringshändelser vara en detaljerad produktvy, en utcheckning eller ett köp. För en leadgenereringsplats kan händelsen vara en formulärkomplettering. Konverteringshändelser räknas på webbplatsen och har egna rapporter som visar hur många av dem som hände. Dessa händelser blir också mätvärden som kan användas i andra rapporter och kan visa varför konverteringshändelserna inträffade eller vad som bidrog till att de inträffade. </p> <p>Undantaget från regeln att en händelse ska bli ett mått är händelsen Purchase, som genererar tre mått: Intäkter, beställningar och enheter. </p> <p>Det finns fler konverteringsmått som inte definieras här, men konverteringsvärden utgör grunden för er marknadsföringsanalys, som bygger på andra mätvärden och rapporter. </p> </td> 
   </tr> 
   <tr> 
    <td> <p>Kanal </p> </td> 
