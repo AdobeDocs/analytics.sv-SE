@@ -2,9 +2,9 @@
 description: Hur summor för arbetsytan beräknas.
 title: Summor för arbetsyta
 feature: Frihandstabeller
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 883c3e44-4139-46a1-a261-e11841312465
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
