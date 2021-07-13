@@ -5,10 +5,9 @@ title: Virtuella rapportsviter och taggar för flera programsviter
 feature: Inställningar för Report Suite
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: 1cd14244b81fbf8d1e4c6f0642f181fd4b60705d
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
@@ -85,7 +84,9 @@ Till exempel tillåts bara en Google DCM per rapportsserie. Många företag har 
 
 ### Sammanfattningsdatakällor
 
-Med sammanfattande datakällor kan ni importera aggregerade mätvärden till Adobe Analytics på rapportsvitnivå. Eftersom överföringar av sammanfattande datakällor innehåller aggregerade mått kan de inte segmenteras. Eftersom VRS arbetar med segmentering är alla data som importeras med hjälp av sammanfattningsdatakällor inte tillgängliga i virtuella rapportsviter. Sammanfattningsdatakällor visas bara i källrapportsviten.
+Med sammanfattande datakällor kan ni importera aggregerade mätvärden till Adobe Analytics på rapportsvitnivå. Eftersom överföringar av sammanfattande datakällor innehåller aggregerade mått *utan besökar-ID*, kan de inte segmenteras i [!UICONTROL Visit]- och [!UICONTROL Visitor]-behållare. Eftersom VRS arbetar med segmentering kommer data som importeras med sammanfattningsdatakällor inte att vara tillgängliga i virtuella rapportsviter om segmentet byggs med en besöks- eller besöksbehållare.
+
+Sammanfattningsdatakällor visas i den virtuella rapportsviten om en Träff-behållare används och om Träff-behållaren har regler som är villkorade att inkludera datakällinformationen.
 
 >[!TIP]
 >
