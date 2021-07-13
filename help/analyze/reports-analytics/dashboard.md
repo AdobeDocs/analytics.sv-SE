@@ -3,9 +3,9 @@ description: En kontrollpanel är en samling miniatyrrapporter som kallas rappor
 subtopic: Dashboards
 title: Kontrollpaneler och minirapporter
 uuid: 7a7b3bc9-0a3c-49b0-9168-e2878ae67b97
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 399765a3-0f90-46b9-b62e-9f41d98eaa9a
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 1%
