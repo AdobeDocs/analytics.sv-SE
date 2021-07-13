@@ -3,9 +3,9 @@ description: Det nya systemet för intelligenta aviseringar ger mer exakt kontro
 title: Översikt över intelligenta aviseringar
 uuid: b9bf75ad-bb6f-49fe-8c55-355ea3c50a71
 feature: AI-verktyg
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 49d47896-bf93-4960-b647-2765c935eb25
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 10%
