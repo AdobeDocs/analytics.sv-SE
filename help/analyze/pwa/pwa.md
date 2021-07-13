@@ -1,10 +1,9 @@
 ---
 title: PWA for Analytics
 description: Progressiva webbprogram för Adobe Analytics
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: f28e0bfc-0e3e-4f28-9533-6788a36d37fe
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 0%
