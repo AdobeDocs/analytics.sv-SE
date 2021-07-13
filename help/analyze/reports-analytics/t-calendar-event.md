@@ -3,9 +3,9 @@ description: Steg för att lägga till kalenderhändelser och hantera delade hä
 title: Kalenderhändelser
 uuid: 5e928c70-8eba-4a97-928d-2c4b3e9ff972
 feature: Kalender
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: e89be5ce-3ec0-4b2d-8574-7bd2041ed18a
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 96%
