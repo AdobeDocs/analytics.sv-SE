@@ -3,10 +3,9 @@ description: Med målgrupperna kan ni mäta webbplatsens resultat och följa utv
 title: Målgrupper
 uuid: bfe29dc8-8da8-4107-8bb1-4a7494f12bc9
 feature: Rapporter och analysgrunder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 6852e429-5b05-432c-bc6b-27f8c464dc50
-translation-type: tm+mt
-source-git-commit: 274348296f2215389377ec94ff4d39b1769e81cc
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 1%
@@ -21,7 +20,7 @@ När du skapar mål väljer du vilka attributvärden eller eVars du vill mäta, 
 
 Du kan till exempel mäta antalet unika besökare på webbplatsen och använda det som mål. I så fall väljer du hela webbplatsen. Men om du vill rikta in dig på antalet unika besökare på din webbplats från Chicago kan du ange den eVar i stället för att titta på hela webbplatsen.
 
-## [!UICONTROL Target] Fältbeskrivningar  {#section_44DFFB4A7AC54D65BC2345411686B2AD}
+## [!UICONTROL Target] Fältbeskrivningar {#section_44DFFB4A7AC54D65BC2345411686B2AD}
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Targets]**
 
