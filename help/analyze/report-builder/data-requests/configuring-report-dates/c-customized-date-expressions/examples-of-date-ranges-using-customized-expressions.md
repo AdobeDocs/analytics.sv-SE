@@ -3,15 +3,14 @@ description: Exempel, anteckningar och syntaxanteckningar om hur du använder da
 title: Exempel på datumintervall med anpassade uttryck
 uuid: 3f46816d-9eee-4b2d-83be-bf1c9fb97fcf
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: d936dd4e-d330-4ed9-a979-3273397d7d92
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '402'
 ht-degree: 5%
 
 ---
-
 
 # Exempel på datumintervall med anpassade uttryck
 
@@ -22,7 +21,7 @@ I tabellen antas dagens datum vara måndag, 10 november 2011, med den gregorians
 | Exempel | Datumintervall | Anpassa uttryck | Rapportens datumintervall |
 |---|---|---|---|
 |  |  | **Från** | **Till** |  |
-| 3 | För två veckor sedan | cw-2w | cw-1w-1d | 26 okt till 1 nov |
+| 1 | För två veckor sedan | cw-2w | cw-1w-1d | 26 okt till 1 nov |
 | 2 | De första 3 dagarna i den femte månaden i det senaste året | cy-1y+4m | cy-1y+4m+2d | 1 maj-3 maj 2010 |
 | 1 | En hel vecka med början för 4 veckor sedan | cw-4w | cw-3w-1d | 12 okt till 18 okt |
 | 4 | Förra veckan föregående år | cw-53w | cw-52w-1d | 9 nov 2010-9 nov |
@@ -51,4 +50,3 @@ Du kan skapa anpassade uttryck som täcker de flesta datumintervall genom att l�
 * Förse inte förkortningen med endast en nolla. 0w tillåts till exempel inte.
 * Följande operatorer används för att sammanfoga förkortningar: + -
 * Eftersom datumintervall måste beräknas i förhållande till den aktuella perioden börjar alltid den första termen i ett uttryck med c.
-
