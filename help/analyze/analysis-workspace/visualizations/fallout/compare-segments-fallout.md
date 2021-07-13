@@ -3,16 +3,15 @@ description: Du kan skapa segment från en kontaktyta, lägga till segment som k
 keywords: utfall och segmentering;segment i utfallsanalys;jämför segment i utfall
 title: Använda segment i utfallsanalys
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
-feature: Visualizations
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Visualiseringar
+role: User, Admin
+exl-id: 2177cd09-5a27-4295-8414-580cf53062cb
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '401'
 ht-degree: 2%
 
 ---
-
 
 # Använda segment i utfallsanalys
 
@@ -40,7 +39,7 @@ Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och
 
    Du kan nu använda det här segmentet i vilken rapport som helst.
 
-## Lägg till ett segment som kontaktyta {#section_17611C1A07444BE891DC21EE8FC03EFC}
+## Lägga till ett segment som kontaktyta {#section_17611C1A07444BE891DC21EE8FC03EFC}
 
 Om du till exempel vill se hur användarna i USA trendar och påverkar utfallet drar du bara segmentet för användare i USA till utfallet:
 
