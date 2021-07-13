@@ -3,9 +3,9 @@ description: projekt med endast visning i arbetsytan
 keywords: Visa endast  projekt
 title: Visa endast  projekt
 feature: Kuratera och dela
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 53372247-6902-4c7f-9132-38a1d453186c
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 3%
