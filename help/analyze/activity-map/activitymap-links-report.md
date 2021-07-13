@@ -3,15 +3,14 @@ description: Länkarna rapporterar om länkarna som finns på den aktuella sidan
 title: Länkrapport
 uuid: 1e7ca5d8-d144-4a21-a2f9-e05bd3232c59
 feature: Activity Map
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: d17b1bde-1785-461d-a1d8-66bd9739fc78
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '752'
 ht-degree: 1%
 
 ---
-
 
 # Länkrapport
 
