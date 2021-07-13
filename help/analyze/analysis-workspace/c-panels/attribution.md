@@ -2,9 +2,9 @@
 title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
 feature: Attribuering
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 96ce3cb9-7753-4ec0-b551-e70a1508e3b7
-source-git-commit: c38e20a7f9a295609181cc9435489ac86cda0852
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
