@@ -3,15 +3,14 @@ description: Du kan schemalägga rapportbegäranden, ange avancerade leveransalt
 title: Schemalägga rapportförfrågan
 uuid: d9b65b82-1975-403b-bc50-f22cfea6019f
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: bbc1137d-5549-4f2f-9d67-7165a9970c77
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 7%
+source-wordcount: '62'
+ht-degree: 8%
 
 ---
-
 
 # Schemalägg en rapportbegäran
 
