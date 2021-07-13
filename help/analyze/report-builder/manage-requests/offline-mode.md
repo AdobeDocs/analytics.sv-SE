@@ -3,15 +3,14 @@ description: Offlineläget returnerar platshållardata för att snabba upp proce
 title: Offlineläge för att skapa och redigera förfrågningar
 uuid: 4eb1f754-b6da-4896-a64f-b737563925b8
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: f18859e3-19e4-48af-963f-0bb4d1b46380
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '181'
 ht-degree: 9%
 
 ---
-
 
 # Offlineläge för att skapa och redigera förfrågningar
 
@@ -36,4 +35,3 @@ Så här aktiverar du offlineläge:
    >[!IMPORTANT]
    >
    >Se till att du inaktiverar offlineläget innan du kör dina begäranden med riktiga data. Gå tillbaka till **[!UICONTROL Options]** och ta bort bockmarkeringen.
-
