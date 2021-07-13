@@ -3,15 +3,14 @@ description: Beskriver hur du kan hämta Report Builder-publicerade resurser til
 title: Hämta publicerade resurser till Power BI Desktop
 uuid: ef47d5c7-31e0-44fc-a792-bc9d12bb089e
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: ce6020df-caf4-4cd2-8086-4357309e5bbb
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 10%
 
 ---
-
 
 # Hämta publicerade resurser till Power BI Desktop
 
