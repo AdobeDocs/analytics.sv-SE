@@ -2,16 +2,15 @@
 description: Med kolumninställningar kan du konfigurera kolumnformatering, som vissa kan vara villkorliga.
 title: Kolumninställningar
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
-feature: Freeform Tables
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Frihandstabeller
+role: User, Admin
+exl-id: 82034838-b015-4ca2-adb6-736f20a478d8
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '704'
 ht-degree: 20%
 
 ---
-
 
 # [!UICONTROL Column Settings]
 
@@ -54,7 +53,7 @@ Villkorsstyrd formatering tillämpar formatering på övre, mellersta och nedre 
 | Automatiskt genererad | Beräkna automatiskt övre/mellersta/nedre gränser baserat på data. Den övre gränsen är det största värdet i den här kolumnen. Den undre gränsen är det lägsta och mittpunkten är medelvärdet av de övre och nedre gränserna. |
 | Anpassad | Tilldela manuellt övre/mellersta/nedre gränser. Då får du den flexibilitet du behöver för att avgöra när ett kolumnvärde blir bra, medelbra eller dåligt. |
 
-## Använd en icke-standardattribueringsmodell {#attribution}
+## Använd en attribueringsmodell som inte är standard {#attribution}
 
 Analysis Workspace stöder [attribuering](/help/analyze/analysis-workspace/attribution/overview.md) för nästan alla mätvärden.
 
