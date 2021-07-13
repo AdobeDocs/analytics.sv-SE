@@ -3,15 +3,14 @@ description: Om du redigerar arbetsboken och vill ge plats för nya begäranden 
 title: Ta bort utdatamappning
 uuid: a6805800-4cb9-4ccc-aada-198a15def643
 feature: Report Builder
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: 88afef3b-1559-453b-a8e2-7251ef8c82ec
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '124'
 ht-degree: 6%
 
 ---
-
 
 # Ta bort utdatamappning
 
