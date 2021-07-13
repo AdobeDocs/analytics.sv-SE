@@ -4,9 +4,9 @@ subtopic: Schedule
 title: Rapportschema och distribution
 uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
 feature: Rapporter och analyser - Grunderna, rapporter och analyser
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: ec59d365-f294-41da-ae36-3b4ebe64ab23
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 1%
