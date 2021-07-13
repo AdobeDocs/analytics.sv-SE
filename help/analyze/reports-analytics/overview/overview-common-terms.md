@@ -2,12 +2,12 @@
 description: En introduktion till vanliga termer inom marknadsföringsanalys som används i rapporter och analyser.
 title: Vanliga termer
 uuid: 0560dc7d-9f92-46d4-848b-3cf297073382
-feature: Rapporter och analyser - Grunderna, rapporter och analyser
+feature: Rapporter och analysgrunder
 role: User, Admin
 exl-id: 78ad3e11-2bfa-49bd-b17a-c586701b56ad
-source-git-commit: 5027c17f1b0efc2fe22915e39aca901ee2beb34a
+source-git-commit: a589e2dffd52749ec3e243815451fe3ed2396509
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '725'
 ht-degree: 3%
 
 ---
