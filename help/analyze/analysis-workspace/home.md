@@ -2,9 +2,9 @@
 title: Vad är Analysis Workspace och hur använder jag det?
 description: Analysis Workspace är det främsta analysverktyget för Adobe Analytics. Här kan ni använda paneler, tabeller, visualiseringar och andra komponenter för att ge liv åt data, strukturera en datauppsättning, dela och schemalägga projekt, bland annat.
 feature: Grundläggande om arbetsytan
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics p
 
 ![](assets/login-analytics.png)
 
-## Använd självstudiekursen {#training-tutorial}
+## Använda självstudiekursen Utbildning {#training-tutorial}
 
 När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Starta självstudiekursen genom att klicka på **[!UICONTROL Create New Project]** och sedan välja **Utbildningskurs** inom det nya projektets modala.
 
