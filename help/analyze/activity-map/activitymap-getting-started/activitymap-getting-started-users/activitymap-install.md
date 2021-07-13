@@ -3,15 +3,14 @@ description: Installationsprocessen varierar beroende på vilken webbläsare du 
 title: Installera webbläsarplugin-program för Activity Map
 uuid: b5c07718-e25c-4ba9-885d-3a2a47dd9f60
 feature: Activity Map
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+role: User, Admin
+exl-id: ceec1c10-57e7-462f-8f78-9ed86c938563
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '354'
 ht-degree: 5%
 
 ---
-
 
 # Installera webbläsarplugin-program för Activity Map{#install-activity-map-browser-plug-ins}
 
@@ -26,7 +25,7 @@ Plugin-program för Activity Map-webbläsare:
 * **Kan** injicera verktygsfältet Activity Map på webbsidor som inte innehåller kod för sidan Analytics. Visar ett felmeddelande om sidan inte innehåller koden för sidan Analytics.
 * Kräv att du går igenom en installationsprocess för ett plugin-program för webbläsare.
 
-## Installera plugin-programmet Activity Map i Chrome {#section_6907253D5D5E4422967E6439207A013F}
+## Installera insticksprogrammet Activity Map i Chrome {#section_6907253D5D5E4422967E6439207A013F}
 
 1. Gå till **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL Activity Map]**.  ![](assets/install_am.png)
 1. Klicka på **[!UICONTROL Download Activity Map]**.
