@@ -1,16 +1,15 @@
 ---
 title: Algoritmisk attribuering
 description: Information om algoritmisk attribueringsmodell.
-feature: Attribution
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Attribuering
+role: User, Admin
+exl-id: dd2b2a5b-9c36-4534-999f-f96604f29eab
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '258'
 ht-degree: 1%
 
 ---
-
 
 # Algoritmisk attribuering
 
