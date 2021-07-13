@@ -2,9 +2,9 @@
 description: Inställningar som definierar hur alla rapporter visas och information som mappar standardmenyalternativen till deras plats på den förenklade menyn.
 title: Visningsinställningar och navigering för rapporter
 uuid: e7e571ce-a1cf-4714-b400-9571805ceeac
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 2c2d4d59-b189-42e0-887e-77dc7a48721a
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 7%
