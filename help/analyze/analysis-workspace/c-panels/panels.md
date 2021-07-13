@@ -2,9 +2,9 @@
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
 feature: Paneler
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 1%
@@ -31,7 +31,7 @@ En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt
 
 Standardstartpanelen är panelen [!UICONTROL Freeform], men du kan göra den tomma panelen](/help/analyze/analysis-workspace/c-panels/blank-panel.md) till standard.[
 
-## Rapportsviten {#report-suite}
+## Rapportsvit {#report-suite}
 
 Tabeller och visualiseringar i en panel hämtar data från det [!UICONTROL report suite] som är markerat i panelens övre högra hörn. Rapportsviten avgör också vilka komponenter som är tillgängliga i den vänstra listen. Inom ett projekt kan du använda en eller [många rapportsviter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html) beroende på dina analysexempel. Om du vill använda en enda rapportserie för alla paneler i ett projekt **högerklickar du på panelhuvudet > Använd rapportserie för alla paneler**.
 
