@@ -2,16 +2,15 @@
 description: Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen.
 title: Radinställningar
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
-feature: Freeform Tables
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Frihandstabeller
+role: User, Admin
+exl-id: 9057e930-b4c6-439e-b82a-8ab9828de91d
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
-
 
 # Radinställningar
 
