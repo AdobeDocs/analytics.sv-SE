@@ -2,10 +2,10 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 exl-id: b407675a-9fcf-4f24-bc88-69ccdb5b3658
-source-git-commit: ce3f795b71f1fba6385c9a5005f1ffaac5c2fe6e
+source-git-commit: 5238ea3393deb6bc1089460b44b46a8e5cd7ffd0
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 9%
+source-wordcount: '662'
+ht-degree: 8%
 
 ---
 
@@ -44,12 +44,12 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Apteligent | Undertryckt |
 | BlueHornet eMarketing Suite | Undertryckt |
 | Gren | Migrerar till Exchange |
-| BrightEdge 2.0 | Undertryckt |
+| BrightEdge 2.0, BrightEdge, BrightEdge Express | Undertryckt |
 | Bronto Software | Undertryckt |
 | CheetahMail av Experian | Migrerar till Exchange |
 | ClickTale | Undertryckt |
 | Klickbar certifikatutfärdare | Undertryckt |
-| Konduktor 2.0 | Undertryckt |
+| Konduktor 2.0, konduktor, konduktor, organisk statistik | Undertryckt |
 | ContactLab 2.0 (Contact Send Connector) | Undertryckt |
 | Coradiant TrueSight | Undertryckt |
 | D&amp;B Visitor Intelligence | Undertryckt |
@@ -62,7 +62,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | DialogTech | Finns på Adobe Exchange |
 | [DoubleClick for Advertisers (DFA)](/help/import/data-connectors/dfa-data-connector-analytics/dfa-eol.md) | Undertryckt |
 | DREAM | Undertryckt |
-| DREAMmail 2.0 | Undertryckt |
+| DREAMmail 1.0, DREAMmail 2.0 | Undertryckt |
 | Dynamisk signal (Nital Vora) | Migrerar till Exchange |
 | eDialog Precision Central | Undertryckt |
 | eC-messenger | Undertryckt |
@@ -70,10 +70,11 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | emarsys xpress | Undertryckt |
 | Epsilon Harmony | Migrerar till Exchange |
 | AllaSociala för Adobe Analytics | Undertryckt |
+| ExactTarget, ExactTarget 2.0 | Undertryckt |
 | Fiksu | Undertryckt |
-| Foresee (v2.0) | Undertryckt |
-| ForeSee-feedback | Undertryckt |
+| Foresee (v2.0), Foresee Feedback, Foresee Results | Undertryckt |
 | Gigya | Undertryckt |
+| Hootsuite | Undertryckt |
 | hybris | Undertryckt |
 | Kampyle (nu Medallia) Feedback Analytics (1.1) | Undertryckt |
 | Listrak | Migrerar till Exchange |
@@ -83,11 +84,13 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Oraclets officiella Eloqua-integrering | Migrerar till Exchange |
 | optivo broadmail (Episerver) | Undertryckt |
 | Qualtrics v2 | Migrerar till Exchange |
-| Responsys 2.0 | Undertryckt |
+| Responsys 1.0, Responsys 2.0 | Undertryckt |
+| Salesforce.com | Undertryckt |
 | Selligent | Undertryckt |
-| seoClarity 2.0 | Undertryckt |
+| seoClarity, seoClarity 2.0 | Undertryckt |
 | Silverpop Engage (v2.0) | Undertryckt |
 | Sizmek | Undertryckt |
+| SmartFOCUS Digital | Undertryckt |
 | SpotEffects | Undertryckt |
 | StrongMail Systems, Inc | Undertryckt |
 | Syngeri!360 | Undertryckt |
@@ -98,6 +101,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | WhatCounts Email | Undertryckt |
 | wywy | Undertryckt |
 | Yesmail Enterprise | Undertryckt |
+| Zeta Interactive | Undertryckt |
 
 ## Undantag: Adobe Campaign Classic
 
