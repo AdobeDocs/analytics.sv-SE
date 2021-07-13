@@ -3,9 +3,9 @@ description: Steg för att skapa en grundläggande databegäran från Report Bui
 title: Skapa en dataförfrågan
 uuid: 5d0151f1-e23d-43eb-84a4-96ae06c3a564
 feature: Report Builder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 21d552a0-7a58-4217-ba8a-7c87eb4757f6
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 3%
