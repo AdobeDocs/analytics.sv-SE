@@ -3,9 +3,9 @@ description: Begränsningar när du använder Report Builder och Microsoft Power
 title: Begränsningar och specifikationer
 uuid: 6717b6ea-7e01-49b8-8f6e-fb733a03b687
 feature: Report Builder
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 4bbeec5b-64bc-4285-9f13-33b223b88834
-source-git-commit: c420a9468dc39922bd02047160bb07623503eee4
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 1%
