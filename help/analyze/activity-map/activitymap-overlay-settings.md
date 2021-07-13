@@ -3,10 +3,9 @@ description: På inställningspanelen Activity Map kan du ändra inställningar 
 title: Konfigurera inställningar för Activity Map
 uuid: 42a0309e-3efc-4506-989b-09b6fe419423
 feature: Activity Map
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 65c9c690-81e0-4f0f-989d-586d247ed380
-translation-type: tm+mt
-source-git-commit: 700d3b21a238af23719b291fe60df207e916bb87
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 2%
