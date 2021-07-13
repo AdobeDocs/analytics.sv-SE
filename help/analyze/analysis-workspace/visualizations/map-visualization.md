@@ -2,16 +2,15 @@
 description: Använd kartvisualisering i ett Workspace-projekt.
 title: Mappa
 uuid: 6038f336-62a3-4efa-8316-4d7792468db3
-feature: Visualizations
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 894ee7a8f761f7aa2590e06708be82e7ecfa3f6d
+feature: Visualiseringar
+role: User, Admin
+exl-id: a60544b4-27b6-413a-96ce-ab9487594422
+source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 3%
 
 ---
-
 
 # Mappa
 
@@ -72,7 +71,7 @@ The Map Visualization in Analysis Workspace
 
    ![](assets/location-dimensions.png)
 
-## Inställningar för mappningsvisualisering {#section_5F89C620A6AA42BC8E0955478B3A427E}
+## Inställningar för kartvisualisering {#section_5F89C620A6AA42BC8E0955478B3A427E}
 
 Det finns två uppsättningar inställningar för kartan:
 
