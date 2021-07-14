@@ -4,10 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+source-git-commit: 746c2cfd3236df7ec7498749015ddf75c1e558f5
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '729'
 ht-degree: 90%
 
 ---
@@ -35,6 +34,7 @@ ht-degree: 90%
       + [Konverteringsklassificeringar](admin/conversion-var-admin/conversion-classifications.md)
       + [Klassificeringshierarkier](admin/conversion-var-admin/classification-hierarchies.md)
       + [Listvariabler](admin/conversion-var-admin/list-var-admin.md)
+      + [Marknadsförande eVars](admin/conversion-var-admin/merchandising-evars.md)
    + [Valutakoder](admin/currency.md)
    + [Anpassade rapportbeskrivningar](admin/custom-desc-admin.md)
    + [Anpassa kalender](admin/custom-calendar.md)
