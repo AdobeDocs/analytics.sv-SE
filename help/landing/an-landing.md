@@ -2,22 +2,22 @@
 description: Beskriver hur den nya landningssidan sammanför både Analysis Workspace och Rapporter och analyser i ett enda gränssnitt och en enda åtkomstpunkt under arbetsytans paraply.
 title: Ny startsida för Adobe Analytics
 role: User, Admin
-source-git-commit: d932a02375f6f124d84dd275cd1134bb25ff76ec
+source-git-commit: eda2a34d2431d01d4301d47e547b4aa9955f12a5
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '2988'
 ht-degree: 0%
 
 ---
 
 # Ny startsida för Adobe Analytics
 
-Den nya landningssidan för Adobe Analysis sammanför både Analysis Workspace och Rapporter och analyser i ett enda gränssnitt och en åtkomstpunkt under arbetsytans paraply. Här finns en ny startsida för projektledare, en uppdaterad rapportmeny, uppdaterade rapporter och ett nytt utbildningsavsnitt som hjälper dig att komma igång effektivare.
+Den nya landningssidan för Adobe Analytics sammanför både Analysis Workspace och Rapporter och analyser i ett enda gränssnitt och en enda åtkomstpunkt under arbetsytans paraply. Här finns en ny startsida för projektledare, en uppdaterad rapportmeny, uppdaterade rapporter och ett nytt utbildningsavsnitt som hjälper dig att komma igång effektivare.
 
 Den nya sidan förbättrar upptäckten och guidar användare av rapporter och analyser till en förbättrad rapportupplevelse i Workspace.
 
 >[!IMPORTANT]
 >
->Den här landningssidan kommer snart att vara i allmän betaversion. Det är en valfri startpunkt. Om du vill kan du använda din befintliga landningssida, oavsett om det är Workspace eller Reports. Om du vill delta i betaprogrammet öppnar du sidan och klickar på **[!UICONTROL Provide feedback]** överst på skärmen för att logga din feedback och eventuella buggar. Du kan när som helst avanmäla dig från och gå tillbaka till betaprogrammet. Allt arbete som görs i betaanvändargränssnittet överförs till den befintliga/aktuella arbetsytan.
+>Den här landningssidan kommer att vara i Open Beta från och med 21 juli 2021. Det är en valfri startpunkt. Om du vill kan du använda din befintliga landningssida, oavsett om det är Workspace eller Reports. Om du vill delta i betaprogrammet öppnar du sidan och klickar på **[!UICONTROL Provide feedback]** överst på skärmen för att logga din feedback och eventuella buggar. Du kan när som helst avanmäla dig från och gå tillbaka till betaprogrammet. Allt arbete som görs i betaanvändargränssnittet överförs till den befintliga/aktuella arbetsytan.
 
 ## Öppna den nya landningssidan {#access-landing}
 
