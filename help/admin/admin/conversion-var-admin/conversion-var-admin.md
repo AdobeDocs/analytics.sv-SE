@@ -5,7 +5,7 @@ title: Konverteringsvariabler (eVar)
 feature: Administratörsverktyg
 uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 exl-id: 822ecaff-a06c-42e1-aee8-ef4a43df4230
-source-git-commit: 2b5c7702d31d451ca4d42dc256c338567b17b8de
+source-git-commit: eda2a34d2431d01d4301d47e547b4aa9955f12a5
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Beskrivningar av fält som används när [konverteringsvariabler](/help/admin/ad
 | [!UICONTROL Merchandising]  (endast eVar) | Merchandising-variabler kan följa på en av två syntaxer:<ul><li>**[!UICONTROL Products Syntax]**: Associerar eVar med en produkt. **Obs**: Om  [!UICONTROL Products Syntax] är markerat är  [!UICONTROL Merchandising Binding Event] avsnittet inaktiverat och kan inte redigeras. [!UICONTROL Binding Events] gäller inte för den här syntaxen.</li><li>**[!UICONTROL Conversion Variable Syntax]**: Associerar bara eVar med en produkt om ett  [!UICONTROL Binding Event] uppstår. I det här fallet väljer du de händelser som fungerar som [!UICONTROL Binding Events].  Om du ändrar den här inställningen utan att uppdatera JavaScript-koden därefter, kommer förlorade data att uppstå. Se [Marknadsföringsvariabler](/help/components/dimensions/evar-merchandising.md).</li></ul> |
 | [!UICONTROL Merchandising Binding Event] (endast eVar) | Om Merchandising är inställt på [!UICONTROL Conversion Variable Syntax] binder de markerade händelserna det aktuella eVar med en produkt. Om du vill använda en [!UICONTROL Binding Event] anger du [!UICONTROL Allocation] till [!UICONTROL Most Recent]. Om [!UICONTROL Allocation] är inställt på [!UICONTROL Original Value] återstår den första produktbindningen för eVar tills eVar upphör att gälla. Du kan markera flera händelser genom att hålla ned Ctrl (Windows) eller Cmd (Mac) och klicka på flera objekt i listan. Du kan bara välja en händelse när [!UICONTROL Conversion Variable Syntax] är markerat. |
 
-**Förfaller**
+### Förfaller
 
 `eVars` förfaller efter en tidsperiod som du anger. När eVar har gått ut får den inte längre någon uppskattning för lyckade händelser. eVars kan också konfigureras så att de upphör att gälla vid lyckade händelser. Om du t.ex. har en intern kampanj som upphör efter ett besök, får den interna kampanjen endast kredit för inköp eller registreringar som sker under det besök där de aktiverades.
 
@@ -58,10 +58,10 @@ Om du t.ex. ändrar förfallotiden för en eVar från 30 till 90 dagar, kommer d
 
 Ett annat exempel: Om en eVar används i maj för att återspegla interna kampanjer och upphör efter 21 dagar, och i juni används den för att fånga in interna söknyckelord, bör du den 1 juni tvinga fram en förfallotid för, eller återställning av, variabeln. Om du gör det kommer det att bidra till att bevara de interna kampanjvärdena från juni-rapporterna.
 
-**Ärendekänslighet**
+### Ärendekänslighet
 
 Variabler är inte skiftlägeskänsliga. Det övre eller nedre fallet som används vid rapportering baseras på det första värdet som serverdelssystemet registrerar. Värdet kan antingen vara den första förekomsten någonsin eller variera med en tidsperiod (t.ex. en månad), beroende på mängden data som är kopplad till rapportsviten.
 
-**Räknare**
+### Räknare
 
 eVars används oftast för att lagra strängvärden, men de kan också konfigureras för att fungera som räknare. eVars är användbart som räknare när du försöker räkna antalet åtgärder som en användare utför före en händelse. Du kan till exempel använda en eVar för att hämta antalet interna sökningar före köpet. Varje gång en besökare söker bör eVar innehålla värdet &#39;+1&#39;. Om en besökare söker fyra gånger före ett köp visas en instans för varje totalantal: 1.00, 2.00, 3.00 och 4.00. Endast 4.00 får dock krediter för köphändelsen (beställningar och intäktsstatistik). Endast positiva tal tillåts som värden för en eVar.
