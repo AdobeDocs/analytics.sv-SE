@@ -1,7 +1,7 @@
 ---
 title: Adobe Analytics och webbläsarcookies
 description: Läs om hur spårningsförebyggande åtgärder påverkar cookies från tredje part och från första part som anges av Adobe Analytics.
-source-git-commit: b2f606e74aa0d2ab0f01ab7cbfc795bfd7cda461
+source-git-commit: 2a0cc52664bbeaae66d6160d74fad4840bf692b8
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 0%
@@ -16,11 +16,11 @@ I det här dokumentet förklaras hur de viktigaste åtgärderna för att spåra 
 ## Hur har webbläsarna begränsat användningen av cookies?
 
 >[!NOTE]
->[Enhetsövergripande analyser](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#comparing-cja-to-traditional-adobe-analytics) kan sammanfogas med cookies med ett person-ID, t.ex. ett hash-inloggnings-ID, om ett sådant finns.
+>[Enhetsövergripande analyser](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#comparing-cja-to-traditional-adobe-analytics) kan sammanfoga cookies med ett person-ID, t.ex. ett hashas-inloggnings-ID, om ett sådant finns.
 
 ### Begränsningar för cookies från tredje part
 
-Cookies som används i en tredjepartskontext är ofta föråldrade. Firefox och Safari började som standard blockera cookies från tredje part från och med 2019 respektive 2020. Chrome har meddelat att man under 2022 kommer att upphöra med stödet för cookies från tredje part. När de gör det blir cookies från tredje part oanvändbara.
+Cookies som används i en tredjepartskontext är ofta föråldrade. Firefox och Safari började som standard blockera cookies från tredje part från och med 2019 respektive 2020. Chrome har meddelat att man under 2023 kommer att upphöra med stödet för cookies från tredje part. När de gör det blir cookies från tredje part oanvändbara.
 
 Dessutom tillåter Chrome för närvarande endast att cookies fungerar i en tredjepartskontext om de har attributet &quot;SameSite&quot; inställt på Ingen och de är märkta som säkra, vilket innebär att de bara kan användas via HTTPS. Mer information finns i avsnittet &quot;[Vad är cookie-attributet SameSite och hur påverkar det Analytics?](#samesite-effect)&quot;
 
@@ -38,7 +38,7 @@ Adobe-cookies från första part är begränsade till 7-dagars upphörande eller
 
 För närvarande gäller ITP-principer för alla cookies från första part som anges av Adobe, oavsett om du använder tjänsten för besöks-ID eller det äldre analys-ID:t (&quot;s_vi&quot; cookie). I en punkt tillämpas dessa principer endast på cookies som ställs in på klientsidan och inte på cookies som ställs in på serversidan via en CNAME-implementering. I november 2020 uppdaterades dock ITP för att även gälla för CNAME-implementeringar.
 
-#### Tidslinje för större ändringar av ITP-principen {#ITP-timeline}
+#### Tidslinje för större ändringar av ITP-policyn {#ITP-timeline}
 
 * Februari 2019 med [ITP 2.1](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/): Kakor på klientsidan var begränsade till sju dagars upphörande
 * April 2019 med [ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/): Klientsidans cookies var begränsade till 24 timmar för annonsklickningar när den refererande domänen var a) involverad i spårning av webbplatser och b) den slutliga URL:en innehöll en frågesträng och/eller en fragment-ID.
