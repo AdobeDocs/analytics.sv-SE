@@ -5,10 +5,10 @@ uuid: fa533a8e-33c0-42f4-a294-cabee0258c8f
 feature: API
 role: Developer
 exl-id: 924f591d-b6ed-4dae-aa69-72d72217e7bd
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 3867573780a791ec4cf2b2ceda33707d972f3f5c
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 12%
+source-wordcount: '267'
+ht-degree: 13%
 
 ---
 
@@ -93,4 +93,3 @@ En jämförelsetabell för API:er för analysrapportering. Det finns länkar til
 **Relaterad hjälp**
 
 * [Adobe/IO](https://www.adobe.io/)  - En omfattande källa till den tekniska dokumentation och de verktyg som behövs för att integrera Adobe-teknik i era tillämpningar.
-* [Data Workbench Query API](https://marketing.adobe.com/developer/documentation/data-workbench-query-api/c-ins-qry-api)
