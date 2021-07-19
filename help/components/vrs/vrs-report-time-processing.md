@@ -2,14 +2,13 @@
 description: Bearbetning av rapporttid är en virtuell rapportsvitsinställning som gör att data kan behandlas på ett icke-förstörande, retroaktivt sätt.
 title: Bearbetning av rapporttid
 uuid: 1a1d82ea-8c93-43cc-8689-cdcf59c309b1
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: 3742b9d1-f1fb-4690-bd44-b4719ff9d9bc
+source-git-commit: 3867573780a791ec4cf2b2ceda33707d972f3f5c
 workflow-type: tm+mt
-source-wordcount: '1421'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
-
 
 # Bearbetning av rapporttid
 
@@ -31,7 +30,7 @@ Tidsbearbetning för rapportering är ett helt annat sätt att behandla analysda
 
 Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan t.ex. ändra besökets tidsgräns till hur länge du vill på ett icke-förstörande sätt och dessa ändringar återspeglas i eVar beständighet och segmentbehållare retroaktivt som om du hade använt dessa inställningar innan data samlades in. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
 
-Med Report Time Processing kan Analytics även förhindra bakgrundstötningar från att starta nya besök och gör att [mobil-SDK](https://marketing.adobe.com/developer/get-started/mobile/c-measuring-mobile-applications) kan ange att rapportering ska starta ett nytt besök när en appstartshändelse utlöses.
+Med Report Time Processing kan Analytics även förhindra bakgrundstötningar från att starta nya besök och gör att [mobil-SDK](https://www.adobe.io/apis/cloudplatform/mobile.html) kan ange att rapportering ska starta ett nytt besök när en appstartshändelse utlöses.
 
 Följande konfigurationsalternativ är tillgängliga för virtuella rapportsviter med rapporttidsbearbetning aktiverat:
 
