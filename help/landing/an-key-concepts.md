@@ -2,9 +2,9 @@
 description: Det här avsnittet innehåller de viktigaste begreppen för Adobe Analytics, en kort beskrivning av begreppen samt en specifik dokumentationslänk med mer information om ämnet.
 title: Adobe Analytics – viktiga begrepp
 exl-id: 359c6663-33fd-4491-8ea0-55cd9ae31859
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 3867573780a791ec4cf2b2ceda33707d972f3f5c
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1816'
 ht-degree: 93%
 
 ---
@@ -58,7 +58,7 @@ Klicka [här](/help/technotes/terms.md) om du vill se en utökad ordlista över 
 | Customer Journey-rapporter | Visar information om den väg som användarna tar genom webbplatsen eller appen. Prop, eVars och händelser kan användas i den här analysen i Analysis Workspace. | [Analysis Workspace Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md) <br> [Analysis Workspace Flow](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) <br> [Reports and Analytics Pathing](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) |
 | Marknadsföringskanaler | Rapporter som visar vilka externa kanaler som driver användare till er webbplats och vilka som är mest effektiva när det gäller konvertering. Vyer för första och sista kontaktpunkt finns. Det här är den rekommenderade rapporten för externa trafikkällor i Adobe Analytics (i stället för Campaigns eller Traffic Sources) eftersom den ger den mest omfattande översikten över både betalda och organiska kanaler. | [Marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) |
 | Mobil | Visar information om webbplatser som öppnas via en mobil enhet eller surfplatta. | [Mobilrapport](/help/components/dimensions/mobile-dimensions.md) |
-| Mobilapp | Visar grundläggande användningsinformation om mobilappar. Rapporterna är tillgängliga när vår SDK har implementerats och rapportering är aktiverat.  Dessutom har Adobe Mobile Services skapat ett separat mobilappsgränssnitt som ger mer omfattande appdata så att ni kan förstå och förbättra användarengagemanget i era appar.  Gå till gränssnittet [här](https://mobilemarketing.adobe.com). | [Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) |
+| Mobilapp | Visar grundläggande användningsinformation om mobilappar. Rapporterna är tillgängliga när vår SDK har implementerats och rapportering är aktiverat.  Dessutom har Adobe Mobile Services skapat ett separat mobilappsgränssnitt som ger mer omfattande appdata så att ni kan förstå och förbättra användarengagemanget i era appar. | [Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) |
 | Produkter | Identifierar hur enskilda produkter och grupper av produkter (kategorier) bidrar till olika konverteringsvärden, som intäkter eller utcheckningar. | [Produktrapport](/help/components/dimensions/product.md) |
 | Segmentjämförelse | Identifierar de statistiskt mest signifikanta skillnaderna mellan segment genom en automatiserad analys av alla mätvärden och dimensioner du har tillgång till. | [Segmentjämförelse](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md) |
 | Webbplatsinnehållsrapport | Visar information om vilka sidor och områden på webbplatsen som är mest aktiva och vilka servrar som används mest. | [Webbplatsinnehållsrapport](/help/components/dimensions/page.md) |
