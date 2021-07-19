@@ -1,7 +1,7 @@
 ---
 title: Merchandising eVars and Product Finding Methods
 description: En djupdykning i begreppen bakom försäljning av eVars och hur de bearbetar och allokerar data.
-source-git-commit: cbc3fe2be4f2bca604a218cfd5dfbb121e6a7a5c
+source-git-commit: 9c71c9e94177c9510ca6af050c9de6fb54c8dc6f
 workflow-type: tm+mt
 source-wordcount: '5307'
 ht-degree: 0%
@@ -383,6 +383,6 @@ Om du till exempel anger `s.eVar1="Internal Keyword Search"` som enda instans kr
 
 Utan ytterligare konfigurationer är alltså det färdiga instansmåttet för en eVar som handlar mindre användbart. Som tur är har Adobe släppt [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en). Det gör att du kan använda flera attribueringsmodeller för alla anpassade mätvärden som Adobe Analytics samlar in. Mätvärden som tillämpar dessa attribueringsmodeller använder inte värdena i kolumnerna post_evar eller värdena som är bundna till en viss produkt. I stället används endast de värden som skickas via själva bildbegäran (eller värden som hämtas via Adobe Analytics bearbetningsregler). Du kan använda funktionerna i Attribution IQ för att få ett korrekt angivet instansmått för alla eVars-produkter som handlar med konverteringsvariabelsyntax.
 
-![](assets/merch-evars3.png)
+![](assets/attribution-select.png)
 
 När du lägger till ett instansmått för en försäljningsmodell i en eVar blir rätt Attribution IQ-modell&quot;Last Touch&quot;-modellen. Inställningen för fönstret Sök efter för modellen spelar ingen roll i det här fallet. Orsaken är att en&quot;tvingad&quot; Last Touch-attribueringsmodell alltid ger instanskrediter till varje enskilt värde som skickas via en begäran. Detta är oavsett om eVar faktiska attribuerings-/bindningsinställningar är lika med &quot;Senaste (sista)&quot; till &quot;Originalvärde (första)&quot;.
