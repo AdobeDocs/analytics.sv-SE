@@ -3,10 +3,9 @@ description: Beskriver förbättringar av vidarebefordran på serversidan som ha
 title: GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan
 uuid: 1b90c567-3321-4dbd-a699-38c04e809fa4
 exl-id: 54e43a16-8f15-4ee8-9aa2-579af30be2c9
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: a77fba68de543b51eda8cf4f9a16a0a15271b496
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 3%
 
 ---
@@ -29,7 +28,7 @@ Följ de här stegen beroende på vilken implementeringsmetod du använder.
 
 | Implementeringsmetod | Steg |
 |--- |--- |
-| Adobe Experience Platform Launch | Förutsatt att du har Adobe Analytics-tillägget installerat lägger du till följande kontextdatavariabeldefinition i den anpassade kodredigeraren i åtgärdskonfigurationen för en regel: <br/>`s.contextData['cm.ssf']&nbsp;=&nbsp;'1' ` <br/>Obs!  Definiera kontextdatavariabeln och ange den till 1 om kunden inte samtycker till riktad marknadsföring. Ställ in variabeln `contextdata` på *0* för kunder som samtyckte till riktad marknadsföring. |
+| Taggar i Adobe Experience Platform | Om du har Adobe Analytics-tillägget installerat lägger du till följande kontextdatavariabeldefinition i den anpassade kodredigeraren i åtgärdskonfigurationen för en regel: <br/>`s.contextData['cm.ssf']&nbsp;=&nbsp;'1' ` <br/>Obs!  Definiera kontextdatavariabeln och ange den till 1 om kunden inte samtycker till riktad marknadsföring. Ställ in variabeln `contextdata` på *0* för kunder som samtyckte till riktad marknadsföring. |
 | AppMeasurement | Lägg till variabeldefinitionen för kontextdata i filen AppMeasurement.js:  <br/>`s.contextData['cm.ssf']&nbsp;=&nbsp;'1' ` <br/>Obs!  Definiera kontextdatavariabeln och ange den till 1 om kunden inte samtycker till riktad marknadsföring. Ställ in kontextdatavariabeln på 0 för kunder som samtyckte till riktad marknadsföring. |
 
 ## Rapportering (valfritt) {#section_6AD4028EC11C4DABA2A34469DDC99E89}
