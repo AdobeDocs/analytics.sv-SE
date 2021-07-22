@@ -1,18 +1,20 @@
 ---
 title: Validera en utvecklingsimplementering och publicera till produktion
-description: Lär dig hur du använder Adobe Experience Platform Launch för att distribuera Adobe Analytics till din produktionsmiljö.
-translation-type: tm+mt
-source-git-commit: a94b8e090b9a3c75a57fd396cac8486bba2e5d79
+description: Lär dig hur du använder Adobe Experience Platform-taggar för att distribuera Adobe Analytics till din produktionsmiljö.
+exl-id: 2f5bcfee-d75e-4dac-bea9-91c6cc545173
+source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
 
-
 # Validera en utvecklingsimplementering och publicera till produktion
 
-När ditt Adobe Experience Platform Launch-bibliotek väl är i produktion kan din organisation börja använda Adobe Analytics för att hämta grundläggande rapporter.
+När taggbiblioteket är i produktion kan ni börja använda Adobe Analytics för att hämta in grundläggande rapporter.
+
+>[!NOTE]
+>Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad referens till terminologiska ändringar.
 
 ## Förutsättningar
 
@@ -22,10 +24,10 @@ När ditt Adobe Experience Platform Launch-bibliotek väl är i produktion kan d
 
 Felsökaren Experience Cloud är en Chrome-plugin som visar alla Experience Cloud-taggar som finns på en sida.
 
-1. Öppna [Chrome Web Browser](https://www.google.com/chrome/) och gå till [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) i Chrome Web Store för att installera tillägget.
-2. Navigera till den utvecklingswebbplats som du har implementerat Launch på.
+1. Öppna [Chrome Web Browser](https://www.google.com/chrome/) och gå till [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) på Chrome Web Store för att installera tillägget.
+2. Navigera till den utvecklingswebbplats där du har implementerat taggar.
 3. Klicka på felsökningsikonen för Adobe Experience Cloud i det övre högra hörnet av Chrome
-4. Om allt är korrekt implementerat bör du se innehåll i Adobe Analytics, Adobe Experience Platform Launch och Adobe Experience Cloud Visitor ID:
+4. Om allt är korrekt implementerat bör du se innehåll i Adobe Analytics, taggar och tjänsten Adobe Experience Cloud Visitor ID:
 
 ![debugger][assets/debugger.png]
 
@@ -33,22 +35,24 @@ Felsökaren Experience Cloud är en Chrome-plugin som visar alla Experience Clou
 
 När du har validerat dina data kan du överföra implementeringen till den publicerade versionen av webbplatsen.
 
-1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
-2. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
-3. Klicka på fliken Publicering och leta upp biblioteket i utvecklingskolumnen.
-4. Klicka på listrutan i biblioteket och välj sedan Skicka för godkännande. Klicka på Skicka i det modala fönstret.
-5. Klicka på bibliotekets listruta igen (nu i kolumnen Skickat) och välj Skapa för mellanlagring.
-6. Efter en stund blir det gula färgade ljuset i biblioteket grönt, vilket indikerar att bygget lyckades.
-7. Klicka på bibliotekets listruta igen och välj Godkänn för publicering.
-8. Klicka på bibliotekets listruta igen (nu i kolumnen Godkänd) och välj Skapa och publicera till produktion.
-9. Gå till fliken Miljöer och klicka på Produktionsmiljö.
-10. Kopiera produktionshuvudet + sidfotskoden och ge den till webbplatsägarna. Begär att de implementerar den här koden i din webbplats produktionsmiljö.
+1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
+1. Välj **[!UICONTROL Launch / Data Collection]**.
+1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
+1. Klicka på fliken **[!UICONTROL Publishing]** och leta upp ditt bibliotek i utvecklingskolumnen.
+1. Klicka på listrutan i biblioteket och välj **[!UICONTROL Submit for Approval]**. Klicka på **[!UICONTROL Submit]** i det modala fönstret.
+1. Klicka på bibliotekets listruta igen (nu i kolumnen Skickat) och välj **[!UICONTROL Build for Staging]**.
+1. Efter en stund blir det gula färgade ljuset i biblioteket grönt, vilket indikerar att bygget lyckades.
+1. Klicka på bibliotekets listruta igen och välj **[!UICONTROL Approve for Publishing]**.
+1. Klicka på bibliotekets listruta igen (nu i kolumnen [!UICONTROL Approved]) och välj **[!UICONTROL Build and Publish to Production]**.
+1. Gå till fliken Miljöer och klicka på **[!UICONTROL Production Environment]**.
+1. Kopiera produktionshuvudet + sidfotskoden och ge den till webbplatsägarna. Begär att de implementerar den här koden i din webbplats produktionsmiljö.
 
 ## Validera din produktionsimplementering
 
 Bekräfta att du ser data i den publicerade versionen av din webbplats och börja samla in data för Adobe Analytics.
 
-1. När du har bekräftat från webbplatsägarna att de har överfört startkoden till produktion går du till webbplatsens hemsida i Chrome och öppnar Adobe Experience Cloud Debugger.
+1. När du har bekräftat för webbplatsägarna att de har överfört taggkoden till produktion går du till webbplatsens hemsida i Chrome och öppnar [!UICONTROL Adobe Experience Cloud debugger].
 2. Om allt fungerar bör du se data som liknar dina tester i din utvecklingsmiljö. Nu samlar du in data på webbplatsen och kan börja använda Adobe Analytics för rapportering.
 
 ## Felsökning
@@ -58,7 +62,7 @@ Bekräfta att du ser data i den publicerade versionen av din webbplats och börj
 Öppna webbläsarens utvecklarkonsol (vanligtvis F12) när du är på din plats. Titta på sidans källkod och kontrollera att följande uppfylls:
 
 * Det finns inga JavaScript-fel i konsolen. Samarbeta med webbplatsägarna i organisationen för att säkerställa att alla JS-fel åtgärdas.
-* Huvudkoden är korrekt implementerad: Kontrollera att rubriktexten finns inuti `<head>` -taggen och att filen finns.
+* Huvudkoden är korrekt implementerad: Kontrollera att rubrikkoden finns inuti taggen `<head>` och att filen finns.
 * AppMeasurement-biblioteket finns: Navigera direkt till JS-källan för att kontrollera att JS-filen innehåller kod. Om så inte är fallet kontrollerar du att alla miljöer har skapats och att biblioteket har publicerats i respektive miljö.
 * Interfering plug-ins: Vissa Chrome-plugin-program kan förhindra att bildbegäranden utlöses. Inaktivera plugin-program som kan förhindra att data skickas till Adobe-servrar.
 
