@@ -5,9 +5,9 @@ title: Bearbetningsordning
 feature: Administratörsverktyg
 uuid: cea01d13-dfd5-40f7-8b2f-b6e2fe8354df
 exl-id: c7143527-017c-4550-b55e-09ea437d7c85
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: a77fba68de543b51eda8cf4f9a16a0a15271b496
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ I följande tabeller visas de data som vanligtvis är tillgängliga före och ef
 |--- |--- |
 | Dynamisk variabelsökning | Variabler fylls i dynamiskt genom att information hämtas från HTTP-huvuden eller andra variabler. `s.eVar5="D=c1"` placerar till exempel värdet för prop1 i eVar5. |
 | AppMeasurement | Funktioner och plugin-program som används i AppMeasurement körs i webbläsaren eller klientprogrammet. |
-| Tagghantering | Regler som definieras i Adobe Launch eller Dynamic Tag Management körs enligt definition. |
+| Tagghantering | Regler som definieras i användargränssnittet för datainsamling körs enligt definitionen. |
 | Punktregler | [Med ](/help/admin/admin/bot-removal/bot-rules.md) punktregler kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. |
 
 ## Efter bearbetning av regler
