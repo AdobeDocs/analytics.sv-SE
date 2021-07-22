@@ -2,10 +2,10 @@
 title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-source-git-commit: 81da9ff9b00a69c49c028fc7f006c161d8ff21d4
+source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 92%
+source-wordcount: '359'
+ht-degree: 77%
 
 ---
 
@@ -28,16 +28,15 @@ JavaScript-koden skickar en bildbegäran till Adobes datainsamlingsservrar. Sidd
 
 Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat program för att kunna skicka data till datainsamlingsservrar. Det finns flera metoder för att implementera den här koden, beroende på plattform och organisationens behov.
 
-* **Adobe Experience Platform Launch:** Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics. Placera en inläsartagg på varje sida och använd Launchs gränssnitt för att bestämma hur varje variabel ska definieras.
-* **Dynamisk tagghantering**: Dynamic Tag Management har slutat gälla.
-* **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Beskriver variabler och inställningar som används i en implementering, vilket kan vara användbart för Launch-implementeringar som använder regler med anpassad kod.
+* **Taggar Adobe Experience Platform**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics. Placera en loader-tagg på varje sida och använd användargränssnittet för datainsamling för att avgöra hur varje variabel definieras.
+* **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Skapar konturer av variabler och inställningar som används i en implementering, vilket kan vara användbart för tadimplementeringar med regler med anpassad kod.
 * **SDK för mobila enheter:** Dedikerade bibliotek för att enkelt skicka data till Adobe från mobilappen.
 
 ## Viktiga artiklar om implementering av Analytics
 
 * [Ta hand om en befintlig Adobe Analytics-implementering](/help/implement/prepare/existing-implementation.md)
 * [Adobe Debugger](validate/debugger.md)
-* [Skapa en egenskap i Experience Platform Launch](launch/create-analytics-property.md)
+* [Skapa en taggegenskap i Experience Platform](launch/create-analytics-property.md)
 * [AppMeasurement-uppdateringar](appmeasurement-updates.md)
 
 ## Fler användarhandböcker för Analytics
