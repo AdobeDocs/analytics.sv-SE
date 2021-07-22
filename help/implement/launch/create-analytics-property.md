@@ -1,30 +1,35 @@
 ---
-title: Skapa en Analytics-egenskap i Launch
-description: Skapa ett utrymme för att anpassa hur data samlas in med Adobe Experience Platform Launch.
+title: Skapa en Analytics-egenskap i taggar
+description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av taggar.
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
-source-git-commit: c46feec3f08b78ca7882193ab86914db49617c1c
+source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 3%
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
-# Skapa en Analytics-egenskap i Adobe Experience Platform Launch
+# Skapa en Analytics-taggegenskap
 
-Adobe Experience Platform Launch är det verktyg du kan använda för att integrera Experience Cloud-lösningar på din webbplats (inklusive Analytics). På den här sidan beskrivs särskilt hur en Launch-administratör kan konfigurera en grundläggande Adobe Analytics-implementering korrekt.
+Taggar i Adobe Experience Platform gör att du kan integrera Experience Cloud-lösningar på din webbplats (inklusive Analytics). På den här sidan beskrivs särskilt hur en tagghanterare kan få en grundläggande Adobe Analytics-implementering korrekt konfigurerad.
+
+>[!NOTE]
+>Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad referens till terminologiska ändringar.
 
 ## Förutsättningar
 
-[Skapa en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Skapa en silo för att samla in analysdata
+[Skapa en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Skapa en silo för att samla in analysdata.
 
-## Skapa en egenskap och installera viktiga tillägg
+## Skapa en taggegenskap och installera viktiga tillägg
 
 Egenskaper är överliggande behållare som du använder för att hantera taggar. Med tillägg kan du installera produktspecifika taggar och konfigurera dem.
 
-1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
+1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
+1. Välj **[!UICONTROL Launch / Data Collection]**.
+1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
 1. Klicka på **[!UICONTROL New Property]**.
 1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på **[!UICONTROL Save]**.
-1. Klicka på den nyligen skapade egenskapen för att ange dess inställningar.
+1. Klicka på den nyligen skapade taggegenskapen för att ange dess inställningar.
 1. Klicka på fliken **[!UICONTROL Extensions]** och sedan på **[!UICONTROL Catalog]**.
 1. Leta reda på identitetstjänsten och klicka sedan på **[!UICONTROL Install]**.
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
@@ -34,8 +39,10 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 
 Dataelement är referenser till specifika delar av webbplatsen för att samla in variabelvärden.
 
-1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
-1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
+1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
+1. Välj **[!UICONTROL Launch / Data Collection]**.
+1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 1. Klicka på fliken **[!UICONTROL Data Elements]** och sedan på **[!UICONTROL Create New Data Element]**.
 1. Ge dataelementet följande inställningar:
 
@@ -55,8 +62,10 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
 
 Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa värden skickas till Adobe-servrar.
 
-1. Gå till [launch.adobe.com](https://launch.adobe.com) och logga in om du uppmanas till det.
-1. Klicka på den Launch-egenskap som du vill implementera på webbplatsen.
+1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
+1. Välj **[!UICONTROL Launch / Data Collection]**.
+1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 1. Klicka på **[!UICONTROL Create New Rule]** och ge den namnet `Global Rule`.
 1. Klicka på **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
    * Tillägg: Core
@@ -80,9 +89,9 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
 
 ## Dokumentation och ytterligare resurser
 
-* [Adobe Analytics-tilläggsdokumentation](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=en#extensions-ref): Fullständig dokumentation som är specifik för Adobe Analytics-tillägget i Adobe Experience Platform Launch.
-* [Komma igång med Launch](https://experienceleague.adobe.com/docs/launch/using/get-started/quick-start.html?lang=en#get-started): Fullständig dokumentation för Launch, inklusive en mer ingående guide för att komma igång
-* [Adobe Experience Platform Launch-kanal](https://experienceleague.adobe.com/?tag=Launch#recommended/solutions/experience-platform): Lär dig använda Launch via videor
+* [Adobe Analytics-tilläggsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en): Fullständig dokumentation som är specifik för tillägget Adobe Analytics i taggar.
+* [Komma igång med taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=en): Fullständig dokumentation för taggar, inklusive en mer ingående guide för hur du kommer igång
+* [Adobe Experience Platform Launch-kanal](https://experienceleague.adobe.com/?tag=Launch#recommended/solutions/experience-platform): Lär dig använda taggar via videor
 
 ## Nästa steg
 
