@@ -1,34 +1,37 @@
 ---
-title: Mappa Launch-dataelement till Analytics-variabler
+title: Mappa taggdataelement till analysvariabler
 description: Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
 exl-id: 996c1204-3f8a-453e-8104-5e8e1279517c
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 5%
+source-wordcount: '480'
+ht-degree: 1%
 
 ---
 
-# Mappa Launch-dataelement till Analytics-variabler
+# Mappa taggdataelement till analysvariabler
 
-När du har en databas med dataelement i Adobe Experience Platform Launch kan du tilldela dem till Analytics-dimensioner.
+När du har en databas med taggdataelement kan du tilldela dem till Analytics-dimensioner.
+
+>[!NOTE]
+>Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad referens till terminologiska ändringar.
 
 ## Förutsättningar
 
-[Mappa datalagerobjekt till dataelement](layer-to-elements.md): Se till att du förstår dataelement i Launch och att du har flera att arbeta med.
+[Mappa datalagerobjekt till dataelement](layer-to-elements.md): Se till att du förstår taggdataelementen och att du har flera att arbeta med.
 
 [Skapa ett designdokument](../prepare/solution-design.md): Ett dokument för att utforma lösningar är nödvändigt för att hålla er välorganiserade. Genom att följa ert lösningsdesigndokument förenklas tilldelningen av dataelement till analysvariabler.
 
 ## Tilldela dataelement till analysvariabler
 
-Om du publicerar ett bibliotek i Launch efter att du har utfört de här stegen kan du använda anpassade dimensioner i Analysis Workspace. Du kan ställa in Analytics-variabler globalt eller i enskilda regler.
+Om du publicerar ett taggbibliotek efter att du har utfört de här stegen kan du använda anpassade dimensioner i Analysis Workspace. Du kan ställa in Analytics-variabler globalt eller i enskilda regler.
 
 ### Ange globala variabler
 
 Globala variabler är idealiska om du vill ange variabelvärden på alla sidor där dataelementet finns.
 
 1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
-1. Klicka på önskad Launch-egenskap.
+1. Klicka på den önskade taggegenskapen.
 1. Klicka på [!UICONTROL Extensions tab] och sedan på [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Klicka på dragspelet [!UICONTROL Global variables], som visar gränssnittet för att tilldela globala variabler.
 
@@ -37,7 +40,7 @@ Globala variabler är idealiska om du vill ange variabelvärden på alla sidor d
 Variabler som anges i regler är idealiska om du inte vill ha variabler som anges på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html) i användarhandboken för Adobe Experience Platform Launch.
 
 1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
-1. Klicka på önskad Launch-egenskap.
+1. Klicka på den önskade taggegenskapen.
 1. Klicka på fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en).
 1. Klicka på knappen [!UICONTROL Add] under [!UICONTROL Actions].
 1. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och listrutan [!UICONTROL Action Type] på Ange variabler.
