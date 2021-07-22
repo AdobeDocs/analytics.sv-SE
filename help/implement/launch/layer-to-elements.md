@@ -1,28 +1,33 @@
 ---
 title: Mappa datalagerobjekt till dataelement
-description: Konfigurera Launch för att läsa från datalagret.
+description: Konfigurera taggar som ska läsas från datalagret.
 exl-id: b7594084-cb5f-408e-8a76-0a0815cc7553
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 6%
+source-wordcount: '344'
+ht-degree: 5%
 
 ---
 
 # Mappa datalagerobjekt till dataelement
 
-När organisationen har etablerat och implementerat ett datalager på webbplatsen kan du mappa datalagerobjekt till dataelement i Launch.
+När organisationen har etablerat och implementerat ett datalager på webbplatsen kan du mappa datalagerobjekt till dataelement inom taggar.
+
+>[!NOTE]
+>Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad referens till terminologiska ändringar.
 
 ## Förutsättningar
 
-[Skapa ett datalager](../prepare/data-layer.md): Kontrollera att det finns ett datalager på platsen. Även om du tekniskt kan mappa ett JavaScript-objekt eller skrapa CSS-element direkt från sidan, rekommenderar Adobe att detta görs som en sista utväg. Om webbplatslayouten ändras slutar de CSS-väljare som används i Launch att fungera, vilket orsakar dataförlust.
+[Skapa ett datalager](../prepare/data-layer.md): Kontrollera att det finns ett datalager på platsen. Även om du tekniskt kan mappa ett JavaScript-objekt eller skrapa CSS-element direkt från sidan, rekommenderar Adobe att detta görs som en sista utväg. Om platslayouten ändras slutar de CSS-väljare som används i -taggar att fungera, vilket orsakar dataförlust.
 
-## Använd Adobe Experience Platform Launch för att skapa dataelement
+## Använd taggar för att skapa dataelement
 
-[Dataelement är ](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#create-a-data-element) komponenter i Launch som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
+[Dataelement är ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en) komponenter i användargränssnittet för datainsamling som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
 
-1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
-1. Klicka på önskad Launch-egenskap.
+1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
+1. Välj **[!UICONTROL Launch / Data Collection]**.
+1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Klicka på den önskade taggegenskapen.
 1. Klicka på fliken **[!UICONTROL Data Elements]** och sedan på **[!UICONTROL Add Data Element]**.
 
    ![skapa dataelement](assets/createelement.png)
