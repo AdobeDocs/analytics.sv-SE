@@ -2,10 +2,10 @@
 title: Implementera Analytics för mobila enheter
 description: Bestämma vilket AppMeasurement-bibliotek för mobila enheter som ska användas.
 exl-id: 8a1dc0c1-493f-41da-a0ed-08df0367e5d8
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 86%
+source-wordcount: '96'
+ht-degree: 69%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 86%
 
 Mer information om hur du implementerar Analytics för mobila enheter finns i följande SDK-databaser och dokumentation:
 
-## SDK:er för Experience Platform för mobila enheter
+## Adobe Experience Platform Mobile SDKs
 
 * [SDK-databasen](https://github.com/Adobe-Marketing-Cloud/aep-sdks-documentation)
 * [Dokumentation](https://aep-sdks.gitbook.io/docs/)
@@ -22,17 +22,9 @@ Mer information om hur du implementerar Analytics för mobila enheter finns i f�
 
 >[!CAUTION]
 >
->Supporten för SDK:er för version 4 för mobila enheter upphör den 30 september 2020. Mer information finns i [Vanliga frågor om att supporten ska upphöra för SDK:er för version 4 för mobila enheter](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
+>Stöd för version 4 Mobile SDK upphörde den 30 september 2020. Mer information finns i [Vanliga frågor om att supporten ska upphöra för SDK:er för version 4 för mobila enheter](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
 * [SDK-databas](https://github.com/Adobe-Marketing-Cloud/mobile-services/tree/master/sdks)
 * [iOS-dokumentation](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 * [Android-dokumentation](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
 
-## AppMeasurement 3.x
-
->[!CAUTION]
->
->SDK:erna för AppMeasurement 3.x för mobila enheter stöds inte längre.
-
-* [SDK för AppMeasurement 3.x för iOS-dokumentation](../../assets/adobe_mobile_ios_3x.pdf)
-* [SDK för AppMeasurement 3.x för Android-dokumentation](../../assets/android_3x.pdf)
