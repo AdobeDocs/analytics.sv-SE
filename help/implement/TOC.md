@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
-source-git-commit: 81da9ff9b00a69c49c028fc7f006c161d8ff21d4
+source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 85%
+source-wordcount: '381'
+ht-degree: 80%
 
 ---
 
@@ -149,13 +149,13 @@ ht-degree: 85%
       + [Besök exempel](js/xdevice-visid/visit-example.md)
       + [Vanliga frågor om olika äldre enheter](js/xdevice-visid/xdevice-faq.md)
    + [Felsök AppMeasurement](js/troubleshooting.md)
-+ Implementera Analytics med Adobe Experience Platform Launch {#launch}
-   + [Översikt över Launch](launch/overview.md)
-   + [Skapa en Analytics-egenskap](launch/create-analytics-property.md)
++ Implementera analys med hjälp av taggar i Adobe Experience Platform {#launch}
+   + [Översikt över taggar](launch/overview.md)
+   + [Skapa en Analytics-taggegenskap](launch/create-analytics-property.md)
    + [Distribuera till en utvecklarmiljö](launch/deploy-dev.md)
    + [Validera och publicera för produktion](launch/validate-publish-prod.md)
    + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
-   + [Mappa Launch-dataelement till Analytics-variabler](launch/elements-to-variable.md)
+   + [Mappa taggdataelement till analysvariabler](launch/elements-to-variable.md)
 + Implementera Analytics på andra plattformar {#other}
    + [Implementera Analytics med hårdkodade bildbegäranden](other/hardcoded.md)
    + [Implementera Analytics med DTM](other/dtm-implementation-overview.md)
