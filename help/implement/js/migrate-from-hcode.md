@@ -2,16 +2,16 @@
 title: Migrera till AppMeasurement för JavaScript
 description: Bestäm vad som behövs för att migrera implementeringen av H-koden.
 exl-id: ed606ab4-bd7d-4871-baa1-77e30fdd419e
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
 
 # Migrera till AppMeasurement för JavaScript
 
-Om implementeringen fortfarande använder H Code rekommenderar Adobe starkt migrering till den senaste versionen av AppMeasurement. Vi rekommenderar att Analytics implementeras via [Adobe Experience Platform Launch](../launch/overview.md), men en uppdaterad JavaScript-implementering kan användas.
+Om implementeringen fortfarande använder H Code rekommenderar Adobe starkt migrering till den senaste versionen av AppMeasurement. Du bör implementera Analytics via [taggar i Adobe Experience Platform](../launch/overview.md), men en uppdaterad JavaScript-implementering kan användas.
 
 Följande betydande ändringar finns i AppMeasurement jämfört med H-koden:
 
@@ -24,7 +24,7 @@ Följande betydande ändringar finns i AppMeasurement jämfört med H-koden:
 
 I följande steg beskrivs ett typiskt migreringsarbetsflöde.
 
-1. **Hämta den nya AppMeasurement-filen**: Du kommer åt den nya filen genom att logga in på Adobe Analytics och sedan gå till Admin > All admin > Code Manager. Den hämtade komprimerade filen innehåller en minifierad `AppMeasurement.js`-fil tillsammans med medie- och integreringsmoduler.
+1. **Hämta den nya AppMeasurement-filen**: Du kommer åt den nya filen genom att logga in på Adobe Analytics och sedan gå till Admin > All admin > Code Manager. Den hämtade komprimerade filen innehåller en minifierad `AppMeasurement.js`-fil, tillsammans med medie- och integreringsmoduler.
 1. **Kopiera dina  `s_code.js` anpassningar till`AppMeasurement.js`**: Flytta all kod före  `DO NOT ALTER ANYTHING BELOW THIS LINE` avsnittet i  `s_code.js` till början av  `AppMeasurement.js`.
 1. **Uppdatera alla plugin-program**: Kontrollera att du använder den senaste versionen av varje plugin-program som finns i  `s_code.js` filen. Detta inkluderar medie- och integreringsmodulerna.
 1. **Distribuera filen** AppMeasurement.js: Överför  `AppMeasurement.js` filen till webbservern.
