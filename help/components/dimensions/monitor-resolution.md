@@ -1,20 +1,19 @@
 ---
 title: Bildskärmsupplösning
 description: Upplösningen för besökarens bildskärm i pixlar.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+exl-id: 6bae65eb-4546-4d07-877d-6e257fbe6cfa
+source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
-
 
 # Bildskärmsupplösning
 
 Dimensionen Bildskärmsupplösning visar den aktiva visningens höjd och bredd i pixlar. Den här dimensionen är användbar när du vill förstå var&quot;vika&quot; finns på webbplatsen för besökare eller hur breda besökare kan skapa sitt webbläsarfönster. Genom att förstå var ditt viknät är kan du optimera innehållet för visning.
 
-Den här dimensionen skiljer sig från webbläsarens höjd och bredd. Webbläsarens höjd/bredd är antalet pixlar i webbläsarutrymmet, medan skärmupplösningen är antalet pixlar i hela bildskärmen. Om du vill se skillnaden mellan dessa två variabler på din egen dator öppnar du webbläsarkonsolen (F12 i de flesta webbläsare) och kopierar och klistrar in följande kod i konsolen:
+Den här dimensionen skiljer sig från webbläsarens höjd och bredd. Webbläsarens höjd/bredd är antalet pixlar i det visningsbara webbläsarutrymmet, medan skärmupplösningen är antalet pixlar i hela skärmen. Om du vill se skillnaden mellan dessa två variabler på din egen dator öppnar du webbläsarkonsolen (F12 i de flesta webbläsare) och kopierar och klistrar in följande kod i konsolen:
 
 ```js
 "Monitor resolution: " + screen.width + "x" + screen.height + "\nBrowser resolution: " + window.innerWidth + "x" + window.innerHeight;
@@ -24,8 +23,8 @@ Webbläsardimensionerna är alltid mindre än skärmupplösningen eftersom webbl
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`s` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `screen.width` och `screen.height` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t), måste du ta med frågesträngsparametern i bildbegäranden. `s`
+Den här dimensionen hämtar data från [`s`-frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `screen.width` och `screen.height` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med frågesträngsparametern `s` i bildbegäranden.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten innehåller alla samlade skärmupplösningar. Exempelvärdena inkluderar `1920 x 1080`, `1366 x 768`och `1280 x 720`.
+Dimensionen innehåller alla insamlade skärmupplösningar. Exempelvärden är `1920 x 1080`, `1366 x 768` och `1280 x 720`.
