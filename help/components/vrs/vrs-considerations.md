@@ -5,9 +5,9 @@ title: Virtuella rapportsviter och taggar för flera programsviter
 feature: Inställningar för Report Suite
 uuid: f17d3659-a5b1-4807-a01d-a1b422009a64
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-source-git-commit: 1cd14244b81fbf8d1e4c6f0642f181fd4b60705d
+source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1754'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Om du väljer att ta bort sekundära serveranrop till förmån för virtuella ra
    * Ett tips är att överväga att använda [segmentstackning](/help/components/segmentation/segmentation-workflow/seg-build.md) så att du kan redigera ett segment på en plats och låta det gälla för alla beroende virtuella rapportsviter.
    * Använd träffbehållare om du vill att virtuella rapportsviter ska vara mer ömsesidigt uteslutande.
 2. När du har bekräftat att de virtuella rapportsviterna är korrekt konfigurerade tar du bort de sekundära rapportsvitens ID:n från implementeringen. Så här tar du bort sekundära rapportsviter:
-   * I Adobe Experience Platform Launch klickar du på x bredvid de rapportsviter som du inte längre vill använda.
+   * I användargränssnittet för datainsamling i Adobe Experience Platform klickar du på x bredvid de rapportsviter som du inte längre vill använda.
    * I äldre JavaScript-implementeringar letar du reda på variabeln `s.account` och tar bort alla rapport-Suite-ID:n som du inte längre vill använda.
    * I samtliga fall lämnar du bara det globala/överordnade rapportsvitens ID för att samla in data för dina webbplatser och appar.
    * Gå till Admin > Rapportsviter och dölj eventuella sekundära rapportsviter som inte längre används.
