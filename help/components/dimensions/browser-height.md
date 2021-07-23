@@ -1,14 +1,13 @@
 ---
 title: Webbläsarhöjd - blockerad
 description: Webbläsarfönstrets höjd i pixlar.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+exl-id: bdfd2ef5-c200-4d6e-b478-3917fca66227
+source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
-
 
 # Webbläsarhöjd
 
@@ -24,10 +23,10 @@ Webbläsarhöjden är alltid mindre än eller lika med skärmhöjden eftersom we
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`bh` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `window.innerHeight` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med frågesträngsparametern vid den första träffen vid varje besök. `bh`
+Den här dimensionen hämtar data från [`bh`-frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `window.innerHeight` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med frågesträngsparametern `bh` vid den första träffen vid varje besök.
 
-Adobe besöker webbläsaren på ett besök. Om webbläsarhöjden justeras mitt på besöket registreras inte justeringen.
+Adobe har kvar webbläsarhöjden för ett besök. Om webbläsarhöjden justeras mitt på besöket registreras inte justeringen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten innehåller alla samlade webbläsarhöjder, som delas in i grupper om 100 pixlar. Om webbläsarhöjden för en träff till exempel är `720`grupperad den i dimensionsposten `700 to 799`.
+Dimensionen innehåller alla webbläsarhöjder som samlats in, klassificerade i grupper om 100 pixlar. Om webbläsarhöjden för en träff till exempel är `720` grupperas den i dimensionsobjektet `700 to 799`.
