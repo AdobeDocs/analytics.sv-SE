@@ -2,7 +2,7 @@
 description: Lär dig hur du implementerar märkning för flera programsviter för att skicka bildförfrågningar till flera rapportsviter.
 title: Implementera märkning för flera programsviter
 exl-id: null
-source-git-commit: 81da9ff9b00a69c49c028fc7f006c161d8ff21d4
+source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Om du vill implementera taggning för flera programsviter måste du inkludera Report Suite-ID (RSID) för den globala rapportsviten och även RSID:n för de underordnade rapportsviterna i spårningskoden för dina webbsidor och appar.
 
-* För Adobe Experience Platform Launch-implementeringar anger du var och en av rapportsviterna för [[!DNL Analytics] tillägget](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html).
+* För implementeringar av Adobe Experience Platform-taggar anger du var och en av rapportsviterna för [[!DNL Analytics] tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
 
 * För äldre JavaScript- och mobil-SDK-implementeringar skiljer du RSID:erna med kommatecken och utan blanksteg (`rsid1,rsid2,rsid3` och så vidare).
 
