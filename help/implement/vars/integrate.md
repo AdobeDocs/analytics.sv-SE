@@ -2,10 +2,10 @@
 title: Integrera modul
 description: Med Integrate Module kan Adobe partners integrera sina datainsamlingsaktiviteter med din organisation.
 exl-id: 378ba77b-be81-49af-8f36-81c65bd01a53
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 0caff2caec9cf840e7a232c22497b61f009d8b36
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 3%
+source-wordcount: '880'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ En organisation som arbetar med en Adobe-partner kan använda dessa steg för at
 
 ### Hämta integreringsmodulkod
 
-För att få tillgång till modulkod krävs en användare med produktadministratörsåtkomst eller som tillhör en produktprofil med tillgång till Code Manager. Metoden för att hämta modulkod är densamma för alla implementeringsmetoder, inklusive Adobe Experience Platform Launch.
+För att få tillgång till modulkod krävs en användare med produktadministratörsåtkomst eller som tillhör en produktprofil med tillgång till Code Manager. Metoden för att hämta modulkod är densamma för alla implementeringsmetoder, inklusive taggar i Adobe Experience Platform.
 
 1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
 1. Klicka på ikonen med nio kvadrater i det övre högra hörnet och klicka sedan på den färgade Analytics-logotypen.
@@ -40,13 +40,15 @@ För att få tillgång till modulkod krävs en användare med produktadministrat
 
 ### Placera integreringsmodulen i implementeringen
 
-Du måste ha tillgång till Adobe Experience Platform Launch för att kunna implementera integreringsmodulen på din webbplats. Om du använder en äldre JavaScript-implementering måste du ha tillgång till organisationens källkod för webbplatsen.
+För att kunna implementera integreringsmodulen på din webbplats måste du ha tillgång till användargränssnittet för datainsamling i Adobe Experience Platform. Om du använder en äldre JavaScript-implementering måste du ha tillgång till organisationens källkod för webbplatsen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med dina Adobe ID-inloggningsuppgifter.
-2. Klicka på den Launch-egenskap som du vill redigera.
-3. Klicka på fliken Tillägg och sedan på Konfigurera under Adobe Analytics.
-4. Öppna dragspelet Konfigurera spåraren med egen kod och klicka sedan på &lt;/> Öppna redigerare.
-5. Klistra in integrate-modulkoden i det modala kodfönstret. Klicka på Spara när du är klar.
+1. Gå till `experience.adobe.com` och logga in när du uppmanas till det.
+1. Välj [!UICONTROL Launch / Data Collection].
+1. Klicka på [!UICONTROL Go to Launch / Data Collection] och välj sedan [!UICONTROL Tags].
+1. Klicka på taggegenskapen som du vill redigera.
+1. Klicka på fliken Tillägg och sedan på Konfigurera under Adobe Analytics.
+1. Öppna dragspelet Konfigurera spåraren med egen kod och klicka sedan på &lt;/> Öppna redigerare.
+1. Klistra in integrate-modulkoden i det modala kodfönstret. Klicka på Spara när du är klar.
 
 ## Integrera modulmetoder
 
