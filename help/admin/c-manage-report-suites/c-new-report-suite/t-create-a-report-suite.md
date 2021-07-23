@@ -3,9 +3,9 @@ description: Skapa en grundläggande behållare för datainsamling i Adobe Analy
 title: Skapa en rapportsvit
 feature: Administratörsverktyg
 exl-id: 255ae051-d993-41a5-8cf3-819a54c17e34
-source-git-commit: b7d71e89c427f1f8ffe68beb1e83646c54e92825
+source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '365'
 ht-degree: 5%
 
 ---
@@ -47,4 +47,4 @@ Kontrollera att du har loggat in via [Experience Cloud](https://experience.adobe
 
 ## Nästa steg
 
-[Skapa och konfigurera en egenskap för Adobe Analytics i Adobe Experience Platform Launch](/help/implement/launch/create-analytics-property.md): Skapa ett område för att hantera er Analytics-implementering
+[Skapa en Adobe Analytics-taggegenskap  ](/help/implement/launch/create-analytics-property.md): Skapa ett område för att hantera er Analytics-implementering
