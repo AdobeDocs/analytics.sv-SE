@@ -1,14 +1,13 @@
 ---
 title: Mobila dimensioner
 description: Dimensioner baserade på enhetens IP-adress.
-translation-type: tm+mt
-source-git-commit: 76605232c180fb6a3d4c181614f43b75e1d06cd5
+exl-id: fa460888-513d-4d14-93b1-33d308e0758a
+source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
-
 
 # Mobila dimensioner
 
@@ -19,7 +18,7 @@ Mobila dimensioner ger insikter om egenskaperna hos de mobila enheter som besök
 ## Fyll i dessa dimensioner med data
 
 Dessa dimensioner hänvisar till uppslagsregler som är interna för Adobe. [!UICONTROL Mobile Carrier] sökningar bestäms av IP-adressen, med hjälp av data från NetAcuity (en Digital Elements-produkt).
-Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar alla mobildimensioner som standard.
+Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) kommer alla mobildimensioner att gå ur lådan.
 
 ## Beskrivningar av mobildimension
 
