@@ -2,10 +2,10 @@
 title: Vanliga frågor om implementering
 description: Vanliga frågor om implementering och länkar till mer information.
 exl-id: 4bab6d51-0077-42ce-8091-f75207d4c4db
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 47%
+source-wordcount: '501'
+ht-degree: 42%
 
 ---
 
@@ -23,7 +23,7 @@ Se [Mäta ljud och video i Adobe Analytics](https://experienceleague.adobe.com/d
 
 ## Kan ett avbrott i tjänsten hos Adobe påverka prestandan?
 
-Nej. JavaScript-filen finns inte på Adobes servrar, så ett driftavbrott hos Adobe påverkar inte ditt AppMeasurement-biblioteket. Om du använder Adobe Experience Platform Launch, lagras JavaScript-filen hos Akamai eller på en serverplats som bestäms av din organisation.
+Nej. JavaScript-filen finns inte på Adobes servrar, så ett driftavbrott hos Adobe påverkar inte ditt AppMeasurement-biblioteket. Om du använder taggar i Adobe Experience Platform lagras JavaScript-filen av Akamai eller på en serverplats som bestäms av din organisation.
 
 ## Kan överföringen av data från webbläsaren till Adobes tjänster minska prestandan?
 
@@ -33,7 +33,7 @@ AppMeasurement skapar ett bildobjekt på HTML-sidan och webbläsaren begär seda
 
 Ibland vill en organisation ta bort en implementering på grund av kontraktets förfallodatum eller minska antalet serversamtal.
 
-* **Implementeringar med Launch**: Inaktivera eller avinstallera Adobe Analytics-tillägget på  [!UICONTROL Extensions] fliken och publicera sedan.
+* **Implementeringar med taggar i Adobe Experience Platform**: Inaktivera eller avinstallera Adobe Analytics-tillägget på  [!UICONTROL Extensions] fliken och publicera sedan.
 * **Äldre AppMeasurement-implementeringar**: Ersätt hela innehållet i  `s_code.js` filen med följande kodrad:
 
 ```js
