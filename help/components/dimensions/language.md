@@ -1,14 +1,13 @@
 ---
 title: Språk
 description: Den språkinställning du föredrar i webbläsaren.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+exl-id: 590406a4-d336-42c7-8048-e7cd8e611d43
+source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
-
 
 # Språk
 
@@ -20,8 +19,8 @@ Dimensionen Språk visar de översta språk som besökare föredrar att se inneh
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till en söktabell som är intern för Adobe. Uppslagsvärdet baseras på HTTP-huvudet i bildbegäranden `Accept-Language` . Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen direkt.
+Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på HTTP-huvudet `Accept-Language` i bildbegäranden. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten innehåller egna namn på de språk besökarna föredrar. Exempel är `"English (United States)"`, `"English (United Kingom)"`, `"Chinese (China)"`och `"Spanish (Spain)"`. Om en bildbegäran inte innehåller ett giltigt språk i HTTP-huvudet är dimensionsobjektet `"None"`.
+Dimensionen innehåller egna namn på de språk besökarna föredrar. Exempel är `"English (United States)"`, `"English (United Kingom)"`, `"Chinese (China)"` och `"Spanish (Spain)"`. Om en bildbegäran inte innehåller ett giltigt språk i HTTP-huvudet är dimensionsobjektet `"None"`.
