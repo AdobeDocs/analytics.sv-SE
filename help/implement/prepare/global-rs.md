@@ -2,9 +2,9 @@
 title: Globala rapportsviter i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
 exl-id: fa949b1e-80bd-41cf-a294-c840503b568f
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Använd följande allmänna riktlinjer för att förstå hur man implementerar e
    >
    >Se till att alla anpassade variabler används på samma sätt i alla domäner. Använd inte samma eVar eller händelse för olika syften på alla era webbplatser.
 1. Se till att varje domän har ett datalager som förenklar datainsamlingen. Data kan fortfarande samlas in utan ett datalager, men tillförlitligheten och varaktigheten i implementeringen minskar, särskilt när sajten genomgår omformningar.
-1. Använd Adobe Experience Platform Launch för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [Startöversikt](https://experienceleague.adobe.com/docs/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
+1. Använd taggar i Adobe Experience Platform för att implementera Analytics. Olika webbplatser kommer troligtvis att kräva olika dataelement. Använd regler som är specifika för varje domän för att säkerställa att varje dataelement är korrekt ifyllt och tilldela sedan dessa dataelement till deras respektive eVars- och händelser. Se [taggöversikten](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html).
 1. Ta med [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html) och använd funktionen [appendVisitorIDsTo](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/appendvisitorid.html). Den här funktionen sammanfogar besökardata när användare klickar från en domän till en annan.
 
 ## Ändra en befintlig implementering med en global rapportserie
@@ -50,8 +50,8 @@ Processen med att flytta en befintlig implementering över flera webbplatser til
 
 1. Bestäm om du vill använda någon av dina befintliga rapportsviter eller börja om från början med en ny rapportserie. Om du vill ändra användningsområdena för befintliga variabler i implementeringen rekommenderar vi att du börjar med en ny rapportserie.
 2. Ange ett brytdatum för när du vill byta till en global rapportserie. Det bästa tillfället att göra en övergång är mellan två signifikanta rapportperioder eller tillsammans med större förändringar på er webbplats. Exempel är början av ett räkenskapskvartal eller räkenskapsår, under en webbplatsuppdatering eller ändring till ett nytt tagghanteringssystem.
-3. Följ stegen ovan (skapa en rapportsserie, samla in rapporteringskrav i ett lösningsdesigndokument och skapa ett datalager på varje webbplats). När du implementerar Launch validerar du implementeringen med en utvecklingsversion av din webbplats.
-4. När du har bekräftat att implementeringen fungerar på dev, publicerar du implementeringen av Launch på brytdatumet.
+3. Följ stegen ovan (skapa en rapportsserie, samla in rapporteringskrav i ett lösningsdesigndokument och skapa ett datalager på varje webbplats). När du implementerar taggar i Adobe Experience Platform validerar du implementeringen med en utvecklingsversion av din webbplats.
+4. När du har bekräftat att implementeringen fungerar på dev, publicera taggimplementeringen på brytdatumet.
 
 ## Relaterade sidor
 
