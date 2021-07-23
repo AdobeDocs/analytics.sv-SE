@@ -2,10 +2,10 @@
 title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
 exl-id: 08b8c7cc-28c6-45e3-ab44-77471eea8ef1
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '583'
+ht-degree: 0%
 
 ---
 
@@ -27,19 +27,22 @@ När en besökare når en avanmälnings-URL uppmanas de att installera en avanm�
 
 Avanmälningssidan för din organisation beror på variabelvärdet [`trackingServer`](../vars/config-vars/trackingserver.md) i implementeringen.
 
-* I Adobe Experience Platform Launch:
-   1. Logga in på [launch.adobe.com](https://launch.adobe.com) och klicka på önskad egenskap.
-   2. Klicka på fliken [!UICONTROL Extensions] och sedan på [!UICONTROL Configure] under Adobe Analytics.
-   3. Klicka på dragspelet [!UICONTROL General] och notera [!UICONTROL Tracking Server]-värdet.
+* I användargränssnittet för Adobe Experience Platform Data Collection:
+   1. Gå till `experience.adobe.com` och logga in när du uppmanas till det.
+   1. Välj [!UICONTROL Launch / Data Collection].
+   1. Klicka på [!UICONTROL Go to Launch / Data Collection] och välj sedan [!UICONTROL Tags].
+   1. Klicka på önskad egenskap.
+   1. Klicka på fliken [!UICONTROL Extensions] och sedan på [!UICONTROL Configure] under Adobe Analytics.
+   1. Klicka på dragspelet [!UICONTROL General] och notera [!UICONTROL Tracking Server]-värdet.
 
 * I en JavaScript-implementering:
    1. På webbservern öppnar du filen AppMeasurement.js som används på webbplatsen i en kod- eller textredigerare.
-   2. Observera variabelvärdet `trackingServer`.
+   1. Observera variabelvärdet `trackingServer`.
 
 * Använda [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html):
    1. Navigera till webbplatsen med webbläsaren Chrome.
-   2. Öppna Experience Cloud Debugger och gå till [!UICONTROL Network tab].
-   3. Observera [!UICONTROL Request URL - Hostname]-värdet.
+   1. Öppna Experience Cloud Debugger och gå till [!UICONTROL Network tab].
+   1. Observera [!UICONTROL Request URL - Hostname]-värdet.
 
 När du har hittat implementeringens `trackingServer`-domän lägger du till sökvägen `/optout.html` i slutet. Exempel:
 
