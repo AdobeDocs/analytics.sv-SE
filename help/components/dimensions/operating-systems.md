@@ -1,14 +1,13 @@
 ---
 title: Operativsystem
 description: Operativsystemet för besökaren.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+exl-id: e3911ae0-d242-4da2-a4bc-b2f4877f9dd2
+source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '105'
 ht-degree: 0%
 
 ---
-
 
 # Operativsystem
 
@@ -16,8 +15,8 @@ Dimensionen &#39;Operativsystem&#39; visar det operativsystem och den version so
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till en söktabell som är intern för Adobe. Uppslagsvärdet baseras på HTTP-huvudet i bildbegäranden `User-Agent` . Om du använder ett AppMeasurement-bibliotek (till exempel via Adobe Experience Platform Launch) fungerar den här dimensionen direkt.
+Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på HTTP-huvudet `User-Agent` i bildbegäranden. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten inkluderar operativsystem som besökarna använder. Exempel är `"Windows 10"`, `"OS X 10.15"`, och `"Android 9"`.
+Dimensionen innehåller operativsystem som besökarna använder. Exempel är `"Windows 10"`, `"OS X 10.15"` och `"Android 9"`.
