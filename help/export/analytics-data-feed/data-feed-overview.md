@@ -4,9 +4,9 @@ keywords: klickström;datafeed;datafeed;datafeed
 title: Översikt över Analytics Data Feed
 uuid: 6bdbe90c-e6ed-4bb0-b5be-24fd795adde4
 exl-id: 2cfff9ad-cdb5-4ae9-a266-4f3d3d046f0c
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ Dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. D
 Kontrollera att du uppfyller alla följande krav innan du använder dataflöden.
 
 * Ha en FTP-plats och autentiseringsuppgifter tillgängliga. Dataflöden kan bara skickas till ett servermål. Din organisation tillhandahåller vanligtvis FTP-autentiseringsuppgifter. Adobe kan tillhandahålla en FTP-plats med en liten mängd lagringsutrymme på din begäran. Kontakta kundtjänst om du vill begära en FTP-destination för dataflöden.
-* En fungerande implementering som skickar data till Adobe datainsamlingsservrar. Se [Validera och publicera en implementering i Launch](/help/implement/launch/validate-publish-prod.md) i användarhandboken för Implementera.
+* En fungerande implementering som skickar data till Adobe datainsamlingsservrar. Se [Validera och publicera en implementering](/help/implement/launch/validate-publish-prod.md) i Implementera användarhandboken.
 * Ditt konto är en produktadministratör för Analytics, eller så tillhör ditt konto en produktprofil med tillgång till dataflöden.
 
 ## Steg för att komma igång
