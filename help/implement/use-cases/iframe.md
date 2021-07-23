@@ -2,9 +2,9 @@
 title: Använd AppMeasurement med iframes
 description: Få åtkomst till Adobe Analytics-variabler i en iframe eller en överordnad sida i en iframe.
 exl-id: 59b9cd4f-8599-41ee-8b54-a6a556198ecd
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Du kan referera till AppMeasurement-variabler från både underordnade och överordnade iframes. Det är nödvändigt att definiera alla variabler på samma plats där AppMeasurement-biblioteket finns. I följande exempel beskrivs hur du ställer in grundläggande AppMeasurement-variabler och -metoder i och utanför en iframe.
 
-Om du använder Adobe Experience Platform Launch måste du se till att spårningsobjektet är globalt tillgängligt. Se [Översikt över Adobe Analytics-tillägget](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) i användarhandboken för Launch.
+Om du använder taggar i Adobe Experience Platform måste du se till att spårningsobjektet är globalt tillgängligt. Se [Översikt över Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
 
 >[!CAUTION]
 >
