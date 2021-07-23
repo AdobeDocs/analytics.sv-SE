@@ -1,22 +1,21 @@
 ---
 title: AppMeasurement for JavaScript
 description: Lär dig hur du implementerar Adobe Analytics med JavaScript utan ett tagghanteringssystem.
-translation-type: tm+mt
-source-git-commit: 09b453c1b4cd8555c5d1718759003945f5c230c5
+exl-id: 25b9d768-c641-4f6c-a4ae-0d6c238c4776
+source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-
 # AppMeasurement for JavaScript
 
-AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att implementera Adobe Analytics. Vi rekommenderar dock att [Adobe Experience Platform Launch](../launch/overview.md) används i allt större popularitet hos tagghanteringssystem.
+AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att implementera Adobe Analytics. Om tagghanteringssystemen är allt populärare bör du emellertid använda [taggar i Adobe Experience Platform](../launch/overview.md).
 
 ## Övergripande arbetsflöde för att skicka data till Adobe med JavaScript
 
-1. Läs in `AppMeasurement.js` filen. Den här filen innehåller de bibliotek som krävs för att skicka data till Adobe.
+1. Läs in filen `AppMeasurement.js`. Den här filen innehåller de bibliotek som krävs för att skicka data till Adobe.
 
    ```html
    <script src="AppMeasurement.js"></script>
@@ -32,7 +31,7 @@ AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att
    s.trackingServer = "example.data.adobedc.net";
    ```
 
-3. Definiera sidnivåvariabler i webbplatsens sidkod. Variablerna avgör vilka mått och mätvärden som skickas till Adobe. En fullständig lista med variabler som du kan definiera finns i [Sidvariabler](../vars/page-vars/page-variables.md) .
+3. Definiera sidnivåvariabler i webbplatsens sidkod. Variablerna avgör vilka mått och mätvärden som skickas till Adobe. Se [Sidvariabler](../vars/page-vars/page-variables.md) för en fullständig lista över variabler som du kan definiera.
 
    ```js
    s.pageName = "Example page";
@@ -40,7 +39,7 @@ AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att
    s.events = "event1";
    ```
 
-4. När alla sidnivåvariabler är definierade skickar du data till Adobe med `t()` metoden . See [t](../vars/functions/t-method.md) for more information.
+4. När alla sidnivåvariabler är definierade skickar du data till Adobe med metoden `t()`. Mer information finns i [t](../vars/functions/t-method.md).
 
    ```js
    s.t();
