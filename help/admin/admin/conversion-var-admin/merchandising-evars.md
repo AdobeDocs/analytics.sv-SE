@@ -1,9 +1,9 @@
 ---
 title: Merchandising eVars and Product Finding Methods
 description: En djupdykning i begreppen bakom försäljning av eVars och hur de bearbetar och allokerar data.
-source-git-commit: 9c71c9e94177c9510ca6af050c9de6fb54c8dc6f
+source-git-commit: 0caff2caec9cf840e7a232c22497b61f009d8b36
 workflow-type: tm+mt
-source-wordcount: '5307'
+source-wordcount: '5294'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,9 @@ Om standardinställningen Allokering är lika med &quot;Senaste (senaste)&quot; 
 
 **Inställningar för allokering av eVar (bindning) för marknadsföring**
 
-Som vi nämnt tidigare har alla eVars-handlare med konverteringsvariabelsyntax bara allokeringen&quot;Senaste (senaste)&quot;.  Det är det som&quot;Allocation&quot;-inställningen faktiskt betyder för försäljning av eVars: Som tidigare antytts bestämmer den här inställningen inte vilka värden som infogas i `post_evar`-kolumnen när en besökare fortsätter att använda webbplatsen. I stället avgör inställningen Allokering för att marknadsföra eVars vilka eVar som binds till en produkt och hur sådana produkter allokerar sina lyckade händelser tillbaka till de eVar de är bundna till.
+Som vi nämnt tidigare har alla eVars-handlare med konverteringsvariabelsyntax bara allokeringen&quot;Senaste (senaste)&quot;. Därför bestämmer allokeringsinställningen för att marknadsföra eVars inte vilka värden som infogas i kolumnen post_evar när en besökare fortsätter att använda webbplatsen. I stället avgör den här inställningen vilket eVar som binds till en produkt och hur sådana produkter allokerar sina success-händelser tillbaka till de eVar de är bundna till.
 
-Låt oss diskutera vad som händer om en eVar allokeringsinställning (dvs. bindning) är lika med &quot;Originalvärde (första)&quot;. Alla produkter som anges bredvid `post_evar`-kolumnen och som inte tidigare har bundits till kolumnen post_evar som motsvarar den förbearbetade eVar binds till värdet i kolumnen `post_evar`. Denna bindning mellan eVar och produkt ändras aldrig förrän eVar förfaller enligt inställningarna &quot;Förfaller efter&quot; i inställningarna för Report Suite.
+Följande inträffar när inställningen Allocation (dvs. binding) för en eVar är lika med Original Value (First): Alla produkter som anges bredvid kolumnen post_evar och som inte tidigare har bundits till kolumnen post_evar för motsvarande eVar som bearbetas i förväg binds till värdet i kolumnen post_evar.  Denna bindning mellan eVar och produkt ändras aldrig förrän eVar förfaller enligt inställningen &quot;Förfaller efter&quot; i inställningarna för Report Suite.
 
 Varje gång en bildbegäran uppfyller de kriterier som annars skulle binda en redan bunden eVar till det senast angivna värdet, tvingar inställningen&quot;Originalvärde (första)&quot; Adobe Analytics datainsamlingsservrar att ignorera alla sådana försök att göra det. Motsatsen inträffar när eVars marknadsförs med inställningen Allocation (binding) som är lika med&quot;Most Recent (Last)&quot;. Varje gång en bildbegäran uppfyller villkoren som binder en produkt till en eVar binds (och binds om) produkten till det senaste värdet som skickas till eVar, eller det värde som (alltid) finns i `post_evar`-kolumnen.
 
@@ -132,7 +132,7 @@ Förfallotid för en eVar kan inträffa när en lyckad händelse registreras ell
 
 För produktsökningsmetoden bör det bästa sättet att ange en eVar förfallotid vara att ställa in den som lika med
 
-* ANTINGEN hur lång tid en produkt hålls i kundvagnen innan sajten automatiskt tar bort den från kundvagnen
+* ANTINGEN hur länge en produkt förvaras i kundvagnen på en webbplats innan sajten automatiskt tar bort den från varukorgen (t.ex. 14 dagar, 30 dagar osv.)
 * ELLER när köphändelsen äger rum.
 
 Med båda inställningarna tilldelas eventuella produkter som besökaren köper order-/enhets-/intäktskrediten till de försäljningsvärden som eVar var bundna till vid den tidpunkten.
@@ -168,11 +168,16 @@ Om du vill binda&quot;intern nyckelordssökning&quot; till produkt-ID 12345 stä
 
 `s.products=";12345;;;;eVar1=internal keyword search";`
 
-Alla lyckade händelser (kundvagnsöppningar, inköp) som fångas samtidigt som productID 12345 krediteras både produkt-ID 12345 och `eVar1`-värdet för&quot;intern nyckelordssökning&quot;. Det enda sättet på vilket ett annat `eVar1`-värde fick kredit för lyckade händelser som är kopplade till produkt-ID 12345 är om `eVar1` senare angavs till ett **annat**-värde i variabeln products (tillsammans med produkt-ID 12345). Exempel:
+Alla framgångshändelser (kundvagn lägger till, köp) som hämtas samtidigt som productID 12345 krediteras både produkt-ID 12345 och eVar1-värdet för&quot;intern nyckelordssökning&quot;. Det enda sättet för ett annat eVar1-värde att ta emot krediter för lyckade händelser som är kopplade till produkt-ID 12345 är om eVar1 senare ställs in på ett annat värde i variabeln products (tillsammans med produkt-ID 12345).
 
-`s.products=";12345;;;;eVar1=internal campaign";`
+Exempel:
 
-Den här konfigurationen ändrar bindningen av produkt-ID 12345 från `eVar1`-värdet för &quot;intern nyckelordssökning&quot; till `eVar1`-värdet för &quot;intern kampanj&quot;. Denna ombindning sker varje gång produktsyntax används och inställningen Allokering (bindning) för eVar är inställd på &quot;Senaste (senaste)&quot;. Vad händer om inställningen Allokering (bindning) i stället är inställd på &quot;Originalvärde (första)&quot;? Inställningen eVar1 som är lika med&quot;intern kampanj&quot; tillsammans med produkt-ID 12345 binder inte om produkt-ID 12345 till eVar1-värdet för&quot;intern kampanj&quot;. Bindningen behålls med det ursprungligen bundna värdet -&quot;intern nyckelordssökning&quot;.
+```
+s.products=";12345;;;;eVar1=internal campaign";
+```
+
+Den här variabelinställningen ändrar bindningen för produkt-ID 12345 från eVar1-värdet för&quot;intern nyckelordssökning&quot; till eVar1-värdet för&quot;intern kampanj&quot;. Den här ombindningsändringen äger också rum när eVar har konfigurerats att använda produktsyntax och inställningen Allocation (binding) för&quot;Most Recent (Last)&quot;. Om inställningen Allocation (binding) i stället anges till &quot;Original Value (First)&quot;, kommer det inte att binda om produkt-ID 12345 till eVar1-värdet för &quot;internal campaign&quot; om eVar1 är lika med &quot;internal campaign&quot; tillsammans med produkt-ID 12345. Bindningen behåller i stället det ursprungliga värdet -&quot;intern nyckelordssökning&quot;.
+
 
 ### Problem med att använda produktsyntax
 
@@ -195,6 +200,7 @@ Följande värden skulle alla ha 1 order, 1 enhet och 79,95 USD av intäkter:
 * eVar1-värdet för&quot;intern nyckelordssökning&quot;
 * eVar3-värdet för&quot;icke-intern kampanj&quot;
 * eVar4-värdet för non-browse
+* eVar5 av&quot;icke-korsförsäljning&quot;
 
 Det här är korrekt attribuering, vilket inte är något problem. Det största problemet med detta är snarare att avgöra hur och när produktsökningsmetodens eVars ska anges.
 
@@ -216,9 +222,8 @@ Den här koden binder eVar som visas ovan till sandal123-produkten. För att kun
 
 Om en besökare bestämmer sig för att&quot;hitta&quot; produkten genom att klicka på en länk till produktinformationssidan måste utvecklaren dessutom:
 
-* Skicka informationen om produktsökningsmetoden (se ovan) från sökmetodsidan till produktinformationssidan och * * Sammanställ samma variabelvärde för produkter från objekt som just skickats från föregående sida.
-
-Den här lösningen kräver en hög grad av komplexitet som kanske inte är möjlig.
+* skicka informationen om produktsökningsmetoden (se ovan) från sökmetodsidan till produktinformationssidan, och
+* Återskapa samma variabelvärde för produkter från objekt som just skickats från föregående sida.
 
 ### Där produktsyntax är användbar
 
@@ -238,7 +243,7 @@ I det här fallet får både `eVar10`-värden (childSKU) för&quot;tshirt123-m-b
 
 ### Utmaningar med tilldelning av&quot;senaste&quot;
 
-Du kan stöta på ytterligare problem genom att använda inställningen Allokering (bindning) för&quot;Senaste (senaste)&quot;. I många webbläsar-upplevelser&quot;hittar&quot; besökarna en produkt som de redan har tittat på och/eller lagt till i kundvagnen. Detta sker vanligtvis via ett senare besök eller precis innan de bestämmer sig för att slutföra ett köp. Anta att de vid sitt första besök på webbplatsen hittade produkten&quot;sandal123&quot; via nyckelordssökningen&quot;sandaler&quot;. De lade omedelbart till den i kundvagnen från sidan med sökresultat för nyckelord. Koden som används för att hämta kundvagnen ställs in enligt följande:
+Du kan stöta på ytterligare problem genom att använda inställningen Allokering (bindning) för&quot;Senaste (senaste)&quot;. I många webbläsar-upplevelser&quot;hittar&quot; besökarna en produkt som de redan har tittat på och/eller lagt till i kundvagnen. Detta sker vanligtvis via ett senare besök eller precis innan de bestämmer sig för att slutföra ett köp. Anta att en besökare hittar produkten&quot;sandal123&quot; via nyckelordssökningen i&quot;sandaler&quot; under ett besök på webbplatsen. De lägger omedelbart till den i kundvagnen från sökresultatsidan för nyckelord. Koden som används för att hämta kundvagnen ställs in enligt följande:
 
 ```
 s.linkTrackVars="products,events";
@@ -248,7 +253,7 @@ s.products=";sandal123;;;;eVar2=sandals|eVar1=internal keyword search|eVar3=non-
 
 Därför är alla eVar som visas i den här bildbegäran bundna till produkten&quot;sandal123&quot;.
 
-Tänk dig att besökaren inte köper produkten under besöket, utan kommer tillbaka till webbplatsen tre dagar senare. De vet att de redan har lagt till&quot;sandals123&quot;-produkten i kundvagnen. Men de vill ändå lära sig mer om det innan de gör köpet. Istället för att använda en nyckelordssökning för att hitta produkten bläddrar besökaren igenom webbplatsen. De slutar med att de handlar i &quot;kvinna > skor > sandaler&quot; och handlar i webbläsaren precis innan de hittar produkten på nytt. När de&quot;hittar om&quot; produktinformationssidan för&quot;sandal123&quot;-produkten ställs variablerna in enligt följande (vid sidinläsning):
+Föreställ dig nu att besökaren inte köper produkten under besöket, men kommer tillbaka till webbplatsen tre dagar senare med&quot;sandals123&quot;-produkten fortfarande i kundvagnen. Besökaren vill veta mer om produkten innan han genomför köpet. I stället för att söka efter produkten med hjälp av en nyckelordssökning bläddrar besökaren igenom webbplatsen. De slutar med att de handlar i &quot;kvinna > skor > sandaler&quot; och handlar i webbläsaren precis innan de hittar produkten på nytt. När de&quot;hittar om&quot; produktinformationssidan för&quot;sandal123&quot;-produkten ställs variablerna in enligt följande (vid sidinläsning):
 
 ```
 s.events="prodView";
