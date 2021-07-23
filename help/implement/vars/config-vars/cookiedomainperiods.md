@@ -1,42 +1,43 @@
 ---
 title: cookieDomainPeriods
 description: Hjälp AppMeasurement att förstå vilken domän cookies ska lagras i om din domän har en punkt i suffixet.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: c426d6a7-4521-4d50-bb7d-1664920618d8
+source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-
 # cookieDomainPeriods
 
-AppMeasurement bestämmer cookie-platsen genom att titta på domänen och domänsuffixet. För domäner som `example.com`AppMeasurement anges cookies på rätt plats. För andra domäner som `example.co.uk`AppMeasurement kan dock cookies av misstag anges `co.uk`. De flesta webbläsare avvisar cookies som angetts i den här ogiltiga domänen, vilket orsakar problem med besökaridentifiering.
+AppMeasurement bestämmer cookie-platsen genom att titta på domänen och domänsuffixet. För domäner som `example.com` ställer AppMeasurement in cookies på rätt plats. För andra domäner som `example.co.uk` kan AppMeasurement av misstag ange cookies på `co.uk`. De flesta webbläsare avvisar cookies som angetts i den här ogiltiga domänen, vilket orsakar problem med besökaridentifiering.
 
-Variabeln hjälper AppMeasurement att avgöra var Analytics cookies är angivna genom att anropa att domänsuffixet har en extra period. `cookieDomainPeriods` Den här variabeln tillåter AppMeasurement att anpassa den extra perioden i domänsuffixet och ange cookies på rätt plats.
+Variabeln `cookieDomainPeriods` hjälper AppMeasurement att avgöra var Analytics-cookies anges genom att anropa att domänsuffixet har en extra period. Den här variabeln tillåter AppMeasurement att anpassa den extra perioden i domänsuffixet och ange cookies på rätt plats.
 
-* För domäner som `example.com` eller `www.example.com`behöver variabeln inte anges. Om det behövs kan du ange variabeln till `"2"`.
-* För domäner som `example.co.uk` eller `www.example.co.jp`anger du den här variabeln som `"3"`.
+* För domäner som `example.com` eller `www.example.com` behöver den här variabeln inte anges. Om det behövs kan du ställa in den här variabeln på `"2"`.
+* För domäner som `example.co.uk` eller `www.example.co.jp` anger du den här variabeln till `"3"`.
 
 >[!IMPORTANT]
 >
->Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `cookieDomainPeriods` på exempel-URL `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
+>Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `cookieDomainPeriods` för exempel-URL:en `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
 
 ## Domänperioder i Adobe Experience Platform Launch
 
-Domänperioder är ett fält under [!UICONTROL Cookies] dragspelet när Adobe Analytics-tillägget konfigureras.
+Domänperioder är ett fält under dragspelet [!UICONTROL Cookies] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
-4. Expandera dragspelsfliken, som visar [!UICONTROL Cookies] [!UICONTROL Domain Periods] fältet.
+1. Gå till `experience.adobe.com` och logga in när du uppmanas till det.
+1. Välj [!UICONTROL Launch / Data Collection].
+1. Klicka på [!UICONTROL Go to Launch / Data Collection] och välj sedan [!UICONTROL Tags].
+1. Klicka på önskad egenskap.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
+1. Expandera dragspelet [!UICONTROL Cookies], som visar fältet [!UICONTROL Domain Periods].
 
 Ange det här fältet som `3` endast för domäner som innehåller en punkt i suffixet. Annars kan fältet lämnas tomt.
 
-## s.cookieDomainPeriods i AppMeasurement and Launch custom code editor
+## s.cookieDomainPeriods i AppMeasurement och anpassad kodredigerare
 
-Variabeln `cookieDomainPeriods` är en sträng som vanligtvis är inställd på `"3"`endast i domäner som innehåller en punkt i suffixet. Dess standardvärde är `"2"`, vilket ger plats för de flesta domäner.
+Variabeln `cookieDomainPeriods` är en sträng som vanligtvis är inställd på `"3"`, endast i domäner som innehåller en punkt i suffixet. Dess standardvärde är `"2"`, som rymmer de flesta domäner.
 
 ```js
 // Manually set cookieDomainPeriods for domains with a period in its suffix, such as www.example.co.uk
