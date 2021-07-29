@@ -1,14 +1,13 @@
 ---
 title: getVisitDuration
 description: Spåra hur mycket tid en besökare har varit på webbplatsen hittills.
-translation-type: tm+mt
-source-git-commit: ca8e563118dcc74dfa718bd203db295faf4e9aa6
+exl-id: 5299caa8-1e47-40b0-a8f4-422590f33ee4
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: getVisitDuration
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Plugin-programmet `getVisitDuration` håller reda på hur lång tid i minuter som besökaren har varit på webbplatsen fram till den punkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Denna plugin spårar inte tiden mellan händelser. Om du vill använda den här funktionen använder du plugin-programmet [`getTimeBetweenEvents`](gettimebetweenevents.md).
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getVisitDuration
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -79,7 +78,7 @@ s.eVar10 = s.getVisitDuration();
 
 ...ställer alltid in eVar10 som lika med antalet minuter som gått sedan besökaren landade på platsen
 
-### Exempel 3
+### Exempel 2
 
 Följande kod...
 
