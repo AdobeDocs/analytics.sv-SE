@@ -1,35 +1,34 @@
 ---
 title: tl
 description: Skicka ett länkspårningsanrop till Adobe.
-translation-type: tm+mt
-source-git-commit: 5bdd07b147d1ea5ef80336a893c02057e7bf5785
+exl-id: 470662b2-ce07-4432-b2d5-a670fbb77771
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
-
 
 # tl
 
 Metoden `tl()` är en viktig komponent för Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar data till datainsamlingsservrarna i Adobe. Den fungerar på ungefär samma sätt som metoden [`t()`](t-method.md), men den här metoden ökar inte sidvisningen. Den är användbar för att spåra länkar och andra element som inte skulle betraktas som en fullständig sidinläsning.
 
-Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverade anropar AppMeasurement automatiskt metoden `tl()` för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa metoden `tl()` manuellt. Anpassade länkar kan bara spåras manuellt.
+Om [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverade, anropar AppMeasurement automatiskt metoden `tl()` för att skicka hämtningslänkar och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa metoden `tl()` manuellt. Anpassade länkar kan bara spåras manuellt.
 
-## Länkspårningssamtal i Adobe Experience Platform Launch
+## Länkspårningsanrop med taggar i Adobe Experience Platform
 
-Launch har en dedikerad plats som anger ett länkspårningsanrop.
+Användargränssnittet för datainsamling har en dedikerad plats som anger ett länkspårningsanrop.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
 1. Klicka på plustecknet under [!UICONTROL Actions]
 1. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och listrutan [!UICONTROL Action Type] på Skicka Beacon.
 1. Klicka på alternativknappen `s.tl()`.
 
-Du kan inte ange några valfria argument i Launch.
+Du kan inte ange några valfria argument i användargränssnittet för datainsamling.
 
-## s.tl()-metoden i AppMeasurement och den anpassade kodredigeraren Launch
+## s.tl(), metod i AppMeasurement och anpassad kodredigerare
 
 Anropa metoden `s.tl()` när du vill skicka ett spårningsanrop till Adobe.
 
