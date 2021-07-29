@@ -1,14 +1,13 @@
 ---
 title: getVisitNum
 description: Spåra besökarens aktuella besöksnummer.
-translation-type: tm+mt
-source-git-commit: fb1cdcb53732be46037a79587fc2541e629496e3
+exl-id: 05b3f57c-7268-4585-a01e-583f462ff8df
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: getVisitNum
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Plugin-programmet `getVisitNum` returnerar besöksnumret för alla besökare som kommer till webbplatsen inom det önskade antalet dagar. Analysis Workspace erbjuder en dimension av typen Besök nummer som ger liknande funktionalitet. Adobe rekommenderar att du använder denna plugin om du vill ha mer kontroll över hur besöksnumret ökas. Denna plugin behövs inte om den inbyggda dimensionen &#39;Besök nummer&#39; i Analysis Workspace är tillräcklig för dina rapporteringsbehov.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getVisitNum
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
