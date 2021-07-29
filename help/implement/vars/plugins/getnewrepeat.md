@@ -1,14 +1,13 @@
 ---
 title: getNewRepeat
 description: Spåra aktiviteter för nya eller återkommande besökare.
-translation-type: tm+mt
-source-git-commit: 9d44226202cd690d069f9c0c85c8af2ef8fd0106
+exl-id: 8f64e176-1926-4cb1-bfae-09d7e2c015ae
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: getNewRepeat
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Med plugin-programmet `getNewRepeat` kan du avgöra om en besökare på webbplatsen är en ny besökare eller en återkommande besökare inom ett visst antal dagar. Adobe rekommenderar att du använder denna plugin om du vill identifiera besökare som&quot;nya&quot; med ett anpassat antal dagar. Denna plugin behövs inte om dimensionerna Ny/Upprepa besökare i Analysis Workspace uppfyller organisationens behov.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getNewRepeat
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -84,7 +83,7 @@ Om besökaren kommer tillbaka till webbplatsen när som helst mellan 31 minuter 
 s.eVar1=s.getNewRepeat();
 ```
 
-### Exempel 3
+### Exempel 2
 
 Om besökaren inte har varit på webbplatsen på minst 30 dagar sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att ange värdet s.eVar1 som &quot;Nytt&quot; och fortsätta att ange s.eVar1 som lika med värdet &quot;Nytt&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
