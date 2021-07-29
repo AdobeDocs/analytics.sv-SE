@@ -2,10 +2,10 @@
 title: visitorID
 description: Använd ett anpassat besökar-ID.
 exl-id: cb336042-01a1-4a66-a947-a221a7919c1b
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
@@ -17,18 +17,18 @@ Adobe använder flera olika metoder för att identifiera besökare på din webbp
 >
 >Adobe avråder från att använda den här variabeln. Använd [Adobe Experience Cloud identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) i stället.
 
-## Besökar-ID i Adobe Experience Platform Launch
+## Besökar-ID som använder taggar i Adobe Experience Platform
 
 [!UICONTROL Visitor ID] är ett fält under  [!UICONTROL Cookies] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
 3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
 4. Expandera dragspelet [!UICONTROL Cookies], som visar fältet [!UICONTROL Visitor ID].
 
 Tilldela det här fältet till dataelementet som innehåller ditt anpassade besökar-ID. Ange inte det här fältet som ett statiskt värde.
 
-## s.visitorID i AppMeasurement och Launch custom code editor
+## s.visitorID i AppMeasurement och anpassad kodredigerare
 
 Variabeln `s.visitorID` är en sträng som innehåller en anpassad unik identifierare för besökaren. Giltiga värden är alfanumeriska tecken upp till 100 byte. Undvik att använda streck, blanksteg, understreck och symboler i den här variabeln.
 
