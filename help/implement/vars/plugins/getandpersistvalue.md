@@ -1,14 +1,13 @@
 ---
 title: getAndPersistValue
 description: Lagra ett värde som kan hämtas senare när som helst.
-translation-type: tm+mt
-source-git-commit: a2970e05abf0d1f963175db6e3554aa0e3034a70
+exl-id: b562f9ad-3844-4535-b729-bd3f63f6f0ae
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: getAndPersistValue
 
@@ -16,13 +15,13 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med plugin-programmet `getAndPersistValue` kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som [!UICONTROL Storage duration]-funktionen i Adobe Experience Platform Launch. Adobe rekommenderar att du använder det här plugin-programmet om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Detta plugin-program är inte nödvändigt om funktionen [!UICONTROL Storage duration] i Launch är tillräcklig, eller om du inte behöver ange och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom dessa variabler finns kvar på Adobe.
+Med plugin-programmet `getAndPersistValue` kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som [!UICONTROL Storage duration]-funktionen med taggar i Adobe Experience Platform. Adobe rekommenderar att du använder det här plugin-programmet om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Detta plugin-program är inte nödvändigt om funktionen [!UICONTROL Storage duration] i Adobe Experience Platform är tillräcklig. Du behöver inte heller använda denna plugin om du inte behöver ställa in och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom dessa variabler finns kvar på Adobe.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getAndPersistValue
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -77,7 +76,7 @@ s.eVar21 = "hello";
 s.eVar21 = s.getAndPersistValue(s.eVar21,"ev21gapv",28);
 ```
 
-### Exempel 2
+### Exempel 3
 
 Anta att eVar21 inte har ställts in på den aktuella sidan än, men har ställts in på &quot;hello&quot; på en tidigare sida under de senaste 28 dagarna.   Följande kod ställer bara in eVar21 som är lika med värdet för ev21gapv-cookien (d.v.s. &quot;hej&quot;).  Ev21gapv-cookien återställs inte eftersom eVar21 inte hade angetts på den aktuella sidan innan funktionen anropades.
 
