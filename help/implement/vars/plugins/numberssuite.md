@@ -1,51 +1,50 @@
 ---
 title: Numbers Suite
 description: Producera och ändra tal för användning i andra JavaScript-variabler.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 7af88dce-baf3-4581-b5b6-0d6e41922266
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: Numbers Suite
 
 >[!IMPORTANT]
 >
->Denna plugin tillhandahålls av Adobe Consulting för att hjälpa er att få ut mer av Adobe Analytics. Adobes kundtjänst ger ingen support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 Numbers Suite är en serie JavaScript-funktioner. Den innehåller följande plugin-program:
 
-* **`zeroPad`**: Lägg till ett visst antal nollor i början av ett tal. Detta plugin-program är användbart om en variabel kräver ett visst antal siffror, t.ex. om du arbetar med JavaScript-datumobjekt och vill formatera datumets månad och dag med två siffror i stället för bara en siffra. I stället `01/09/2020` för `1/9/2020`.
+* **`zeroPad`**: Lägg till ett visst antal nollor i början av ett tal. Detta plugin-program är användbart om en variabel kräver ett visst antal siffror, t.ex. om du arbetar med JavaScript-datumobjekt och vill formatera datumets månad och dag med två siffror i stället för bara en siffra. Till exempel `01/09/2020` i stället för `1/9/2020`.
 * **`randomNumber`**: Generera ett slumpmässigt tal med ett visst antal siffror. Detta plugin-program är användbart om du distribuerar taggar från tredje part och vill ha ett slumpmässigt cachelagrat nummer.
 * **`twoDecimals`**: Avrunda ett tal till hundradelsdelen av garderoben. Detta plugin-program är användbart för valutamaterial, så att du kan avrunda ett tal till ett giltigt valutavärde.
 
-## Installera plugin-programmet med tillägget Adobe Experience Platform Launch
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
-Adobe erbjuder ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] tillägget
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
+1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
 1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Vanliga Analytics-plugin-program
+   * Tillägg: Plugin-program för vanlig analys
    * Åtgärdstyp: Initiera Numbers Suite
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics-tillägget.
-1. Expandera dragspelsfliken så att [!UICONTROL Configure tracking using custom code] den visar [!UICONTROL Open Editor] knappen.
+1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -68,24 +67,24 @@ function twoDecimals(v){return"undefined"===typeof v||void 0===v||isNaN(v)?0:Num
 
 ## Använda plugin-programmen
 
-I metoden används följande argument: `zeroPad`
+Metoden `zeroPad` använder följande argument:
 
-* **num** (obligatoriskt, heltal): Numret som ska fyllas ut. Metoden avrundar värdet för det här argumentet om det innehåller decimaler.
-* **nod** (obligatoriskt, heltal): Antalet siffror i det slutliga returvärdet. Om numret som ska fyllas ut har färre siffror än antalet siffror att fylla i, läggs nollor till i början av `num` argumentet.
+* **num** (required, integer): Numret som ska fyllas ut. Metoden avrundar värdet för det här argumentet om det innehåller decimaler.
+* **nod**  (obligatoriskt, heltal): Antalet siffror i det slutliga returvärdet. Om talet som ska fyllas ut har färre siffror än antalet siffror att fylla i, läggs nollor till i början av `num`-argumentet.
 
-I metoden används följande argument: `randomNumber`
+Metoden `randomNumber` använder följande argument:
 
-* **nod** (valfritt, heltal): Antalet siffror i det slumpmässiga tal som du vill generera. Maxvärdet är 17 siffror. Standardvärdet är 10 siffror.
+* **nod**  (valfritt, heltal): Antalet siffror i det slumpmässiga tal som du vill generera. Maxvärdet är 17 siffror. Standardvärdet är 10 siffror.
 
-I metoden används följande argument: `twoDecimals`
+Metoden `twoDecimals` använder följande argument:
 
 * **val** (required, number): Ett tal (som representeras av antingen en sträng eller ett nummerobjekt) som du vill avrunda till närmaste hundradel.
 
 ## Returnerar
 
-* Metoden **zeroPad** returnerar en sträng som är lika med `num` argumentet, men med ett visst antal nollor som läggs till i början av värdet, vilket garanterar att returvärdet har rätt antal siffror.
+* Metoden **zeroPad** returnerar en sträng som är lika med argumentet `num`, men med ett visst antal nollor som läggs till i början av värdet, vilket garanterar att returvärdet har rätt antal siffror.
 * Metoden **randomNumber** returnerar en sträng som är lika med ett slumpmässigt tal med önskat antal siffror.
-* Metoden **twoDecimals** returnerar ett sifferobjekt avrundat till närmaste hundradel.
+* Metoden **twoDecimals** returnerar ett talobjekt avrundat till närmaste hundradel.
 
 ## Exempelanrop
 
