@@ -1,51 +1,50 @@
 ---
 title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
-translation-type: tm+mt
-source-git-commit: ec6d8e6a3cef3a5fd38d91775c83ab95de47fd55
+exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
-
 # produkter
 
-Variabeln `products` spårar produkter och egenskaper som är knutna till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och att Adobe tolkar värdet i separata dimensionsobjekt.
+Variabeln `products` spårar produkter och egenskaper som är kopplade till dem. Den här variabeln ställs vanligtvis in på enskilda produktsidor, kundvagnssidor och bekräftelsesidor för inköp. Det är en variabel med flera värden, vilket innebär att du kan skicka flera produkter i samma träff och att Adobe tolkar värdet i separata dimensionsobjekt.
 
 >[!NOTE]
 >
->Om variabeln anges i en träff utan en kundvagnshändelse i [`events`](events/events-overview.md) -variabeln ökar måttet för [produktvyn](/help/components/metrics/product-views.md) med 1. Se till att du ställer in rätt kundvagnshändelse för varje träff med `products` variabeln.
+>Om den här variabeln anges i en träff utan en kundvagnshändelse i variabeln [`events`](events/events-overview.md), ökar måtten för [produktvyer](/help/components/metrics/product-views.md) med 1. Se till att du ställer in rätt kundvagnshändelse för varje träff med variabeln `products`.
 
-## Produkter i Adobe Experience Platform Launch
+## Produkter som använder taggar i Adobe Experience Platform
 
-Det finns inget dedikerat fält i Launch för att ställa in den här variabeln. Det finns dock flera tillägg från tredje part som kan vara till hjälp.
+Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan ange den här variabeln. Det finns dock flera tillägg från tredje part som kan vara till hjälp.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Catalog] för att visa alla tillgängliga tillägg.
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på [!UICONTROL Catalog] för att visa alla tillgängliga tillägg.
 4. Sök efter termen &quot;product&quot;, som visar flera tillgängliga tillägg som kan hjälpa dig att ange variabeln.
 
 Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren efter AppMeasurement-syntaxen nedan.
 
-## s.products in AppMeasurement and Launch custom code editor
+## s.products in AppMeasurement and custom code editor
 
 Variabeln `s.products` är en sträng som innehåller flera avgränsade fält per produkt. Varje enskild produkt kan innehålla upp till 100 byte i alla fält. Avgränsa varje fält med ett semikolon (`;`) i strängen.
 
-* **Kategori** (valfritt): Den övergripande produktkategorin. Din organisation bestämmer hur produkter ska grupperas i kategorier.
-* **Produktnamn** (obligatoriskt): Produktens namn.
-* **Kvantitet** (valfritt): Hur många av dessa produkter finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
-* **Pris** (valfritt): Produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar [`currencyCode`](../config-vars/currencycode.md) variabeln. Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
-* **Händelser** (valfritt): Händelser som är kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). See [events](events/events-overview.md) for more information.
-* **eVars** (valfritt): Merchandising eVars knutna till produkten. Avgränsa flera eVars-handlare med ett rör (`|`). Mer information finns i [Varor](evar-merchandising.md) .
+* **Kategori**  (valfritt): Den övergripande produktkategorin. Din organisation bestämmer hur produkter ska grupperas i kategorier.
+* **Produktnamn**  (obligatoriskt): Produktens namn.
+* **Kvantitet**  (valfritt): Hur många av dessa produkter finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
+* **Pris**  (valfritt): Produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar variabeln [`currencyCode`](../config-vars/currencycode.md). Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
+* **Händelser**  (valfritt): Händelser som är kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). Mer information finns i [events](events/events-overview.md).
+* **eVars**  (valfritt): Merchandising eVars knutna till produkten. Avgränsa flera eVars-handlare med ett rör (`|`). Mer information finns i [merchandising eVars](evar-merchandising.md).
 
 ```js
 // Set a single product using all available fields
 s.products = "Example category;Example product;1;3.50;event1=4.99|event2=5.99;eVar1=Example merchandising value 1|eVar2=Example merchandising value 2";
 ```
 
-Den här variabeln har stöd för flera produkter i samma träff. Det är värdefullt för kundvagn och inköp som innehåller flera produkter. Även om det finns en gräns på 100 byte per produkt är den totala längden för `products` variabeln 64 kB. Separera varje produkt med ett komma (`,`) i strängen.
+Den här variabeln har stöd för flera produkter i samma träff. Det är värdefullt för kundvagn och inköp som innehåller flera produkter. Även om det finns en gräns på 100 byte per produkt är den totala längden för variabeln `products` 64 kB. Avgränsa varje produkt med ett komma (`,`) i strängen.
 
 ```js
 // Set multiple products - useful for when a visitor views their shopping cart
@@ -58,7 +57,7 @@ s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Exa
 
 ## Exempel
 
-Variabeln är flexibel när du utelämnar fält och inkluderar flera produkter. `products` Denna flexibilitet kan göra det enkelt att missa en avgränsare, vilket gör att implementeringen skickar felaktiga data till Adobe.
+Variabeln `products` är flexibel när du utelämnar fält och inkluderar flera produkter. Denna flexibilitet kan göra det enkelt att missa en avgränsare, vilket gör att implementeringen skickar felaktiga data till Adobe.
 
 ```js
 // Include only product and category. Common on individual product pages
@@ -97,7 +96,7 @@ s.events = "event1,event2,event3,event4,purchase";
 s.products = "Example category 1;Example product 1;3;12.60;event1=1.4|event2=9;eVar1=Merchandising value|eVar2=Another merchandising value,Example category 2;Example product 2;1;59.99;event3=6.99|event4=1;eVar3=Merchandising value 3|eVar4=Example value four";
 ```
 
-Om du använder `digitalData` datalagret [kan du iterera genom](../../prepare/data-layer.md)`digitalData.product` objektarrayen:
+Om du använder `digitalData` [datalagret](../../prepare/data-layer.md) kan du iterera genom `digitalData.product`-objektarrayen:
 
 ```js
 for(var i=0; i<digitalData.product.length; i++) {
