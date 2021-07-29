@@ -2,7 +2,7 @@
 title: Validera en utvecklingsimplementering och publicera till produktion
 description: Lär dig hur du använder Adobe Experience Platform-taggar för att distribuera Adobe Analytics till din produktionsmiljö.
 exl-id: 2f5bcfee-d75e-4dac-bea9-91c6cc545173
-source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -35,9 +35,7 @@ Felsökaren Experience Cloud är en Chrome-plugin som visar alla Experience Clou
 
 När du har validerat dina data kan du överföra implementeringen till den publicerade versionen av webbplatsen.
 
-1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
-1. Välj **[!UICONTROL Launch / Data Collection]**.
-1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 1. Klicka på fliken **[!UICONTROL Publishing]** och leta upp ditt bibliotek i utvecklingskolumnen.
 1. Klicka på listrutan i biblioteket och välj **[!UICONTROL Submit for Approval]**. Klicka på **[!UICONTROL Submit]** i det modala fönstret.
