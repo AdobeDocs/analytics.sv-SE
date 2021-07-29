@@ -1,18 +1,17 @@
 ---
 title: egenskap
 description: Anpassade variabler som du kan använda i implementeringen.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
-
 # egenskap
 
-*På den här hjälpsidan beskrivs hur du implementerar props. Mer information om hur utkast fungerar som en dimension finns i[beskrivningen](/help/components/dimensions/prop.md)i användarhandboken för komponenter.*
+*På den här hjälpsidan beskrivs hur du implementerar props. Mer information om hur utkast fungerar som en dimension finns i [prop](/help/components/dimensions/prop.md) i användarhandboken för komponenter.*
 
 Props är anpassade variabler som du kan använda hur du vill. De finns inte kvar efter den träff de har ställts in.
 
@@ -20,22 +19,22 @@ Props är anpassade variabler som du kan använda hur du vill. De finns inte kva
 >
 >Adobe rekommenderar att du använder [eVars](evar.md) i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
 
-Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md)kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Hur många som är tillgängliga beror på ditt avtal med Adobe. Upp till 75 props finns om ditt avtal med Adobe ger support.
+Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Antalet tillgängliga props beror på ditt kontrakt med Adobe. Upp till 75 props finns om ditt avtal med Adobe stöder det.
 
-## Profiler i Adobe Experience Platform Launch
+## Props med taggar i Adobe Experience Platform
 
 Du kan ange props antingen när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
-4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] åtgärd eller på +-ikonen.
-5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Leta rätt på [!UICONTROL Props] avsnittet.
+3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
+4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
+5. Ange listrutan [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Gå till avsnittet [!UICONTROL Props].
 
 Du kan ställa in ett uttryck på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
-## s.prop1 - s.prop75 in AppMeasurement and Launch custom code editor
+## s.prop1 - s.prop75 in AppMeasurement and custom code editor
 
 Varje prop-variabel är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras maximala längd är 100 byte. värden som är längre än 100 byte trunkeras automatiskt när de skickas till Adobe.
 
@@ -68,4 +67,4 @@ s.prop1 = "value1,value2,value3";
 >
 >Listproppar har fortfarande en maxlängd på 100 byte. Det är lättare att nå den här gränsen och trimma eftersom de kan innehålla flera värden. Använd förkortningar eller förkorta värden om du kanske når denna gräns på 100 byte.
 
-Om du anger samma värde mer än en gång i ett listerbjudande tas de bort från rapporteringen. Analysis Workspace räknar antalet träffar där ett värde visas, och inte antalet gånger som ett värde finns i data.
+Om du anger samma värde mer än en gång i ett listerbjudande tas de bort från rapporteringen. Analysis Workspace räknar antalet träffar där ett värde visas och inte antalet gånger ett värde finns i data.
