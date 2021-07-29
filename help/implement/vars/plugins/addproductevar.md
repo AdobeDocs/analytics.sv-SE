@@ -1,14 +1,13 @@
 ---
 title: addProductEvar
 description: Lägger till eVars för försäljning i variabeln products.
-translation-type: tm+mt
-source-git-commit: abed7197898d6c27448069350c9f2217d58293c4
+exl-id: 6be94a15-78c9-4cbc-8b33-4a16f1b73b96
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 1%
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: addProductEvar
 
@@ -22,11 +21,11 @@ Med plugin-programmet `addProductEvar` kan du enkelt lägga till en Adobe Analyt
 >
 >Denna plugin ersätter inte eVars som redan finns i en produktpost. Det lägger bara till värden som du anger med det här plugin-programmet. Var försiktig när du lägger till eVars som redan finns för den produkten.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -38,11 +37,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera addProductEvar
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
