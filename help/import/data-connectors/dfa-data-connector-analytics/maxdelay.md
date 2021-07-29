@@ -1,14 +1,13 @@
 ---
 title: maxDelay
 description: Fastställ den maximala tid som AppMeasurement väntar på ett svar från DFA innan en bildbegäran skickas.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 154f7e34-39e7-4390-ae36-d4fbc998787f
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
-
 
 # maxDelay
 
@@ -16,13 +15,13 @@ Variabeln `s.maxDelay` används i DFA-datakopplingen för att bestämma timeoutp
 
 Den här variabeln används bara i implementeringar med DFA-datakopplingen. Även med implementeringar med DFA är variabeln valfri.
 
-## Maximal fördröjning vid start av Adobe Experience Platform
+## Maximal fördröjning med taggar i Adobe Experience Platform
 
-Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
-## s.maxDelay in AppMeasurement and Launch custom code editor
+## s.maxDelay i AppMeasurement och anpassad kodredigerare
 
-Variabeln är ett heltal som representerar antalet millisekunder som AppMeasurement väntar på ett svar från DFA. `s.maxDelay` Om AppMeasurement inte får något svar från DFA i tid skickas en bildbegäran till Adobe utan DFA-data.
+Variabeln `s.maxDelay` är ett heltal som representerar antalet millisekunder AppMeasurement väntar på ett svar från DFA. Om AppMeasurement inte får något svar från DFA i tid skickas en bildbegäran till Adobe utan DFA-data.
 
 ```js
 s.maxDelay = 750;
@@ -30,10 +29,10 @@ s.maxDelay = 750;
 
 ## Egenskaper
 
-* Om du ökar väntetiden samlas fler DFA-data in, men det ökar också risken för att Analytics-träffdata går förlorade. Analytics träffdata försvinner när användaren navigerar bort från sidan under `s.maxDelay` perioden.
-* Genom att minska väntetiden minskar risken för att förlora Analytics träffdata, men det kan minska mängden DFA-data som skickas med träffdata.
-* DFA-integreringsdata går förlorade när perioden inte räcker till för att DFA-värden ska kunna svara. `s.maxDelay`
+* Om du ökar väntetiden samlas fler DFA-data in, men det ökar också risken för att Analytics-träffdata går förlorade. Förlorade träffdata i Analytics inträffar när användaren navigerar bort från sidan under `s.maxDelay`-perioden.
+* Genom att minska väntetiden minskar risken för att förlora träffdata i Analytics, men det kan minska mängden DFA-data som skickas med träffdata.
+* DFA-integreringsdata går förlorade när `s.maxDelay`-perioden inte räcker till för att DFA-värden ska kunna svara.
 
 >[!NOTE]
 >
->Adobe har ingen kontroll över DFA:s svarstid. Om du får konsekventa problem även efter att ha ökat den maximala fördröjningsperioden till en rimlig tidsperiod, kontaktar du din organisations DFA-kontoadministratör.
+>Adobe har inte kontroll över DFA:s svarstid. Om du får konsekventa problem även efter att ha ökat den maximala fördröjningsperioden till en rimlig tidsperiod, kontaktar du din organisations DFA-kontoadministratör.
