@@ -1,14 +1,13 @@
 ---
 title: addProductEvent
 description: Lägger till anpassade händelser i variabeln products and events.
-translation-type: tm+mt
-source-git-commit: 3359ed8e7ef7979be57ca5ec9ca1803fc52afe88
+exl-id: 74f4cb93-714a-4d2b-88f3-408d032f6811
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: addProductEvent
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Plugin-programmet `addProductEvent` lägger till en numerisk händelse eller valutakändelse i variabeln [`products`](../page-vars/products.md). Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakändelse i variabeln `products` utan att behöva bekymra dig om produktsträngformatet. Detta plugin-program är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i variabeln `products`.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera addProductEvent
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -95,7 +94,7 @@ s.addProductEvent("event35", 25, 1);
 
 När det tredje argumentet i anropet `addProductEvent` är `true` (eller `1`), har varje produktpost den händelse som anges i anropet lagts till i värdet.
 
-### Exempel 3
+### Exempel 2
 
 Följande kod ställer in variabeln `s.products` till `";product1;3;300;event2=10;eVar33=large|eVar34=men|eVar35=blue,;product2;2;122,;product3;1;25;event33= 12|event34=10|event35=15"`
 
