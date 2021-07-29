@@ -1,14 +1,13 @@
 ---
 title: getPageName
 description: Skapa ett lättläst pageName från den aktuella webbplatssökvägen.
-translation-type: tm+mt
-source-git-commit: 063da38c105072944a46ec0ab31930623b7974c8
+exl-id: a3aaeb5d-65cd-45c1-88bb-f3c0efaff110
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: getPageName
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Plugin-programmet `getPageName` skapar en lättläst, användarvänlig formaterad version av den aktuella URL:en. Adobe rekommenderar att du använder det här plugin-programmet om du vill ha ett [`pageName`](../page-vars/pagename.md)-värde som är enkelt att ställa in och förstå vid rapportering. Denna plugin behövs inte om du redan har en namnstruktur för variabeln `pageName`, till exempel via ett datalager. Den används bäst när du inte har någon annan lösning för att ställa in variabeln `pageName`.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getPageName
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -89,7 +88,7 @@ s.pageName = getPageName()
 s.pageName = "mail.google.com|mail|u|0";
 ```
 
-### Exempel 2
+### Exempel 3
 
 Om den aktuella URL:en var..
 
