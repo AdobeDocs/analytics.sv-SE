@@ -2,7 +2,7 @@
 title: cookieDomain
 description: Variabeln cookieDomain hjälper till att avgöra vilken domän cookies ska användas på.
 exl-id: 7e8c26b8-d1a7-49f7-9c12-45fb1633c9d7
-source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Den här variabeln behöver bara användas när **båda** av följande villkor u
 
 Endast ett litet antal implementeringar har använts för variabeln `cookieDomain`, och även då kan alternativa variabler som [`cookieDomainPeriods`](cookiedomainperiods.md) användas i stället.
 
-## Cookie-domän i Adobe Experience Platform Data Collection
+## Cookie-domän med taggar i Adobe Experience Platform
 
 Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
