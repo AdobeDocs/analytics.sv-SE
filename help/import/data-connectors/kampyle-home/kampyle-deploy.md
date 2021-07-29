@@ -3,9 +3,9 @@ description: Distribuera Kampyle-dataanslutningen i Adobe Analytics.
 title: Distribuera integreringen
 uuid: ebb385ca-7bfb-4cd3-9ff6-a5f5a52db5c9
 exl-id: ac8e1f30-cefe-448a-bec6-cda58ee51025
-source-git-commit: 4078d0be92c8ccd639e408e7372a5636938cad00
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '401'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Att implementera denna integrering är en enkel process som består av att slutföra guiden för integrering av Adobe, distribuera JavaScript-kod och verifiera integreringen.
 
-## Slutför guiden för integrering av Adobe{#complete-the-adobe-integration-wizard}
+## Slutför guiden Integrering av Adobe{#complete-the-adobe-integration-wizard}
 
 Om du vill aktivera integreringen slutför du konfigurationsguiden i gränssnittet för Data Connectors.
 
@@ -36,28 +36,28 @@ Om du vill aktivera integreringen slutför du konfigurationsguiden i gränssnitt
 1. Markera rutan om du vill att kontrollpanelen Kampyle Integration ska skapas automatiskt (rekommenderas).
 1. Granska alla konfigurationsobjekt och klicka på **[!UICONTROL Activate Now]**.
 
-## Distribuera integreringskonfigurationsobjektet{#deploy-the-integration-configuration-object}
+## Distribuera integrationskonfigurationsobjektet{#deploy-the-integration-configuration-object}
 
 Distribuera integreringskonfigurationsobjektet till din webbegenskap när du har slutfört integreringsguiden. I många fall är det enklaste sättet att distribuera integreringskonfigurationsobjektet att inkludera det i din Adobe Analytics-distributionskod.
 
 >[!NOTE]
 >
->Om du använder Adobe Experience Platform Launch kan du enkelt lägga till integreringskonfigurationsobjektet med det verktyget.
+>Om du använder taggar i Adobe Experience Platform kan du enkelt lägga till integreringskonfigurationsobjektet med det verktyget.
 
 1. Navigera till fliken **[!UICONTROL Resources]** > **[!UICONTROL Support]** för integreringen.
-1. Hämta och spara **[!UICONTROL Kampyle Integration Code (JS)]**-resursen. Koden ser ut ungefär så här:
+2. Hämta och spara **[!UICONTROL Kampyle Integration Code (JS)]**-resursen. Koden ser ut ungefär så här:
 
    ```
    /* Kampyle:  Integration configuration settings */
      window.k_sc_param = { "version":1.1 }
    ```
 
-1. Distribuera koden på något av följande sätt:
+3. Distribuera koden på något av följande sätt:
 
-   * Använd Adobe Experience Platform Launch.
+   * Använd taggar i Adobe Experience Platform.
    * Leverera koden till den organisationsresurs som underhåller din Adobe Analytics-distribution.
 
-## Verifiera integrationen{#verify-the-integration}
+## Verifiera integreringen{#verify-the-integration}
 
 Validera att integreringen har överfört data genom att utföra några kontroller.
 
@@ -71,7 +71,7 @@ Visa Kampyle-integrationsinställningarna i Adobe Experience Cloud genom att gå
 
 ![Aktivitetslogg för integrering](assets/integration_activity_log.png)
 
-### Data för Adobe-rapportering {#section-1ae9f0a5e6bc40988478ff55aefd56ac}
+### Rapporteringsdata för Adobe {#section-1ae9f0a5e6bc40988478ff55aefd56ac}
 
 Läs dina Kampyle-feedback-rapporter med Adobe Analytics genom att navigera till Kampyle-rapporten i rätt menystruktur.
 
