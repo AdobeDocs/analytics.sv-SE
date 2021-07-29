@@ -1,31 +1,30 @@
 ---
 title: doPlugins
 description: Konfigurera logik precis innan en träff kompileras och skickas till Adobe.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: c5113be3-04b3-4dd2-8481-ba13149750ca
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '185'
 ht-degree: 1%
 
 ---
 
-
 # doPlugins
 
-Variabeln fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. `doPlugins` Om [`usePlugins`](../config-vars/useplugins.md) den är aktiverad körs den automatiskt precis innan någon typ av bildförfrågan kompileras och skickas till Adobe, inklusive:
+Variabeln `doPlugins` fungerar som ett&quot;sista anrop&quot; för att ange värden i implementeringen. Om [`usePlugins`](../config-vars/useplugins.md) är aktiverat körs den automatiskt precis innan någon typ av bildbegäran kompileras och skickas till Adobe, inklusive:
 
-* Alla sidvysamtal ([`t()`](t-method.md)på eng)
-* Alla länkspårningsanrop ([`tl()`](tl-method.md)inklusive automatiska hämtningslänkar och avslutningslänkar)
+* Alla sidvyanrop ([`t()`](t-method.md))
+* Alla länkspårningsanrop ([`tl()`](tl-method.md)), inklusive automatiska hämtningslänkar och avslutslänkar
 
-Använd variabeln för att anropa plugin-programkod och ange slutliga variabelvärden precis innan en bildbegäran kompileras och skickas till Adobe. `doPlugins`
+Använd variabeln `doPlugins` för att anropa plugin-kod och ange slutgiltiga variabelvärden precis innan en bildbegäran kompileras och skickas till Adobe.
 
-## Plugin-program i Adobe Experience Platform Launch
+## Plugin-program som använder taggar i Adobe Experience Platform
 
-Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
-## s.doPlugins in AppMeasurement and Launch custom code
+## s.doPlugins in AppMeasurement and custom code
 
-Ställ in variabeln på en funktion som innehåller önskad kod. `s.doPlugins` Funktionen körs automatiskt när du gör ett spårningsanrop.
+Ange variabeln `s.doPlugins` till en funktion som innehåller önskad kod. Funktionen körs automatiskt när du gör ett spårningsanrop.
 
 ```js
 s.doPlugins = function() {/* Desired code */};
@@ -33,7 +32,7 @@ s.doPlugins = function() {/* Desired code */};
 
 >[!NOTE]
 >
->Ställ bara in en funktion på `doPlugins` variabeln en gång i implementeringen. Om du anger variabeln mer än en gång används bara den senaste koden. `doPlugins`
+>Ange en funktion för variabeln `doPlugins` endast en gång i implementeringen. Om du anger variabeln `doPlugins` mer än en gång används bara den senaste koden.
 
 ## Exempel
 
@@ -51,4 +50,4 @@ s.doPlugins = function() {
 
 >[!NOTE]
 >
->Tidigare versioner av AppMeasurement hade något annorlunda `doPlugins()` kod. Adobe rekommenderar att du använder ovanstående format som en god praxis.
+>Tidigare versioner av AppMeasurement hade något annorlunda `doPlugins()`-kod. Adobe rekommenderar att du använder formatet ovan som en god praxis.
