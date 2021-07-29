@@ -1,32 +1,31 @@
 ---
 title: forceOnline
 description: Ange onlinetillståndet för AppMeasurement manuellt.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 318408bf-bec6-49aa-a762-9d2eebab233e
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '141'
 ht-degree: 1%
 
 ---
 
-
 # forceOnline
 
-Med den här `forceOnline()` metoden kan du åsidosätta det automatiskt identifierade tillståndet för AppMeasurement.
+Med metoden `forceOnline()` kan du åsidosätta det automatiskt identifierade tillståndet för AppMeasurement.
 
 >[!IMPORTANT]
 >
->Använd bara den här metoden när [`trackOffline`](../config-vars/trackoffline.md) är aktiverad. Om den här funktionen används utanför spårning offline kan data gå förlorade.
+>Använd bara den här metoden när [`trackOffline`](../config-vars/trackoffline.md) är aktiverat. Om den här funktionen används utanför spårning offline kan data gå förlorade.
 
-AppMeasurement identifierar automatiskt enhetens onlineläge. Du kan använda metoden för att tvinga AppMeasurement att behandla träffar som om enheten var online. `forceOnline()` Den här metoden tar inga argument och returnerar inget värde. Dess enda syfte är att åsidosätta onlinetillståndet i AppMeasurement.
+AppMeasurement identifierar automatiskt enhetens onlineläge. Du kan använda metoden `forceOnline()` för att tvinga AppMeasurement att behandla träffar som om enheten var online. Den här metoden tar inga argument och returnerar inget värde. Dess enda syfte är att åsidosätta onlinetillståndet i AppMeasurement.
 
-## Tvinga online i Adobe Experience Platform Launch
+## Tvinga online med taggar i Adobe Experience Platform
 
-Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
-## s.forceOnline() i AppMeasurement och Launch, anpassad kodredigerare
+## s.forceOnline() i AppMeasurement och anpassad kodredigerare
 
-Du kan anropa metoden var som helst i implementeringen när du har initierat Analytics-objektet. `s.forceOnline()`
+Du kan anropa metoden `s.forceOnline()` var som helst i implementeringen efter att du har initierat Analytics-objektet.
 
 ```js
 s.forceOnline();
