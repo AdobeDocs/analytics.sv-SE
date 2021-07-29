@@ -2,9 +2,9 @@
 title: Mappa taggdataelement till analysvariabler
 description: Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
 exl-id: 996c1204-3f8a-453e-8104-5e8e1279517c
-source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,16 @@ Om du publicerar ett taggbibliotek efter att du har utfört de här stegen kan d
 
 Globala variabler är idealiska om du vill ange variabelvärden på alla sidor där dataelementet finns.
 
-1. Gå till `experience.adobe.com` och logga in när du uppmanas till det.
-1. Välj [!UICONTROL Launch / Data Collection].
-1. Klicka på [!UICONTROL Go to Launch / Data Collection] och välj sedan [!UICONTROL Tags].
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på den önskade taggegenskapen.
 1. Klicka på [!UICONTROL Extensions tab] och sedan på [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Klicka på dragspelet [!UICONTROL Global variables], som visar gränssnittet för att tilldela globala variabler.
 
 ### Ange variabler i regler
 
-Variabler som anges i regler är idealiska om du inte vill ha variabler som anges på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) i dokumentationen för Adobe Experience Platform Data Collection.
+Variabler som anges i regler är idealiska om du inte vill ha variabler som anges på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) i dokumentationen för Adobe Experience Platform-taggar.
 
-1. Gå till `experience.adobe.com` och logga in när du uppmanas till det.
-1. Välj [!UICONTROL Launch / Data Collection].
-1. Klicka på [!UICONTROL Go to Launch / Data Collection] och välj sedan [!UICONTROL Tags].
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på den önskade taggegenskapen.
 1. Klicka på fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en).
 1. Klicka på knappen [!UICONTROL Add] under [!UICONTROL Actions].
