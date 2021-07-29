@@ -2,10 +2,9 @@
 title: getQueryParam
 description: Extrahera värdet för en URL:s frågesträngsparameter.
 exl-id: d2d542d1-3a18-43d9-a50d-c06d8bd473b8
-translation-type: tm+mt
-source-git-commit: 5a087087c8f54650173391bd7766bfdfd12ccb7e
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -18,13 +17,13 @@ ht-degree: 0%
 
 Med plugin-programmet `getQueryParam` kan du extrahera värdet för alla frågesträngsparametrar som finns i en URL. Det är användbart för att extrahera kampanjkoder, både interna och externa, från URL:er för landningssidor. Det är också värdefullt när du extraherar söktermer eller andra frågesträngsparametrar.
 
-Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna i Launch eller metoden [`Util.getQueryParam()`](../functions/util-getqueryparam.md) som ingår i AppMeasurement.
+Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna med hjälp av taggar i Adobe Experience Platform eller den [`Util.getQueryParam()`](../functions/util-getqueryparam.md)-metod som ingår i AppMeasurement.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -36,11 +35,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getQueryParam
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -85,7 +84,7 @@ Följande kod ställer in s.campaign som lika med &quot;trackingcode1&quot;:
 s.campaign=s.getQueryParam('cid');
 ```
 
-### Exempel 3
+### Exempel 2
 
 Om den aktuella URL:en är följande:
 
@@ -99,7 +98,7 @@ Följande kod ställer in s.campaign som lika med &quot;trackingcode1:123456&quo
 s.campaign=s.getQueryParam('cid,ecid',':');
 ```
 
-### Exempel 3
+### Exempel 2
 
 Om den aktuella URL:en är följande:
 
