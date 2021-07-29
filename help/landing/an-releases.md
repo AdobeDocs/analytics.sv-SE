@@ -2,9 +2,9 @@
 description: Beskriver den nya strategin för kontinuerlig funktionsrelease för Adobe Analytics
 title: Adobe Analytics funktionsreleaser
 exl-id: 1e403bef-4aab-4a9a-a358-62449ce801ff
-source-git-commit: f120c189228892e57e38e4d0e106eb3190326ff1
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ För varje funktionsversion kan tidslinjen från RTP till GA variera. Målet är
 
 ## Funktionsflaggor
 
-Funktionsflaggor används för att styra synligheten för nya funktioner under lanseringen. Adobe rekommenderar att du lägger till app.launchdarkly.com i din brandväggs [tillåtelselista](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html) för att få en optimal upplevelse under lanseringen. Kort efter att GA har nåtts tas flaggan bort.
+Funktionsflaggor används för att styra synligheten för nya funktioner under lanseringen. Adobe rekommenderar att du lägger till `app.launchdarkly.com` i din brandväggs [tillåtelselista](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html) för att få en optimal upplevelse under lanseringen. Kort efter att GA har nåtts tas flaggan bort.
 
 Du kan när som helst visa de aktiva funktionsflaggorna under **Hjälp > Om arbetsyta > Aktiva funktionsflaggor**.
 
