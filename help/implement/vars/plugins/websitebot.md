@@ -2,9 +2,9 @@
 title: websiteBot
 description: Identifiera botar dynamiskt med musrörelser.
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
-source-git-commit: e76cf660bb14b8a69e44d300afcc4e712147de5b
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ Denna plug-in utför två kontroller:
 
 Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan plugin-programmet
 
-* Antingen gör du ett [!UICONTROL Direct Call]-regelanrop (för Adobe Experience Platform Launch), eller
-* gör ett `s.tl`-anrop för att ange att besökaren inte är en robot.
+* ringa ett direktanrop med hjälp av taggar i Adobe Experience Platform, eller
+* Anropa länkspårning för att ange att besökaren inte är en robot.
 
 ## Förutsättningar
 
@@ -34,12 +34,12 @@ Adobe rekommenderar följande innan denna plugin används:
 * **Konfigurera inställningar för** eVar: Ställ in en eVar under  [Konverteringsvariabler ](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallotiden till **Aldrig** eller **Besök** och allokering till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när antingen regeln [!UICONTROL Direct Call] eller anropet `s.tl` utlöses.
 * **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ställ in en eVar på `navigator.UserAgent` för varje träff för att samla in dessa data.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 1. Lägg till en ny `websiteBot`-regel.
 1. Lägg till en **Mouse Move Listener**-händelse till `websiteBot`-regeln med den här anpassade koden:
 
-   ```
+   ```js
    trigger(document.addEventListener('mousemove', function detectMouseMove() {   
     document.removeEventListener('mousemove', detectMouseMove, false);   
     if (!
@@ -115,5 +115,5 @@ s.eVar1 = websiteBot ? "Bot detected" : "Not a bot";
 ### 0.11 (3 juni 2021)
 
 * Uppdaterad kod för plugin-programmet AppMeasurement
-* Uppdaterat startavsnitt med utökade instruktioner.
+* Anpassad kodredigeringssektion med utökade instruktioner har uppdaterats.
 * Uppdaterat avsnittet &quot;Använda plugin-programmet&quot;.
