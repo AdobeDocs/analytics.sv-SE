@@ -1,14 +1,13 @@
 ---
 title: Översikt över plugin-program
 description: Klistra in kod på webbplatsen för att få nya funktioner.
-translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+exl-id: faae7963-078d-40ad-ba09-71efa0b90df1
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 1%
+source-wordcount: '408'
+ht-degree: 0%
 
 ---
-
 
 # Översikt över plugin-program
 
@@ -20,25 +19,25 @@ Plugin-program är kodfragment som utför flera avancerade funktioner som hjälp
 
 Adobe erbjuder flera sätt att installera ett visst plugin-program:
 
-1. Använd tillägget&quot;Common Analytics Plugins&quot; med Adobe Experience Platform Launch
-2. Klistra in plugin-kod med den anpassade kodredigeraren för Launch
-3. Klistra in plugin-programkoden i `AppMeasurement.js` filen
+1. Använd tillägget&quot;Common Analytics Plugins&quot; med taggar i Adobe Experience Platform
+2. Klistra in plugin-kod med den anpassade kodredigeraren
+3. Klistra in plugin-programkoden i din `AppMeasurement.js`-fil
 
 Varje organisation har olika implementeringsbehov, så du kan bestämma hur du vill inkludera dem i implementeringen. Se till att du uppfyller följande kriterier när du inkluderar koden på din plats:
 
 1. Instansiera Analytics-spårningsobjektet (med [`s_gi`](../functions/s-gi.md)) först.
-   * Launch instansierar automatiskt spårningsobjektet när Adobe Analytics läses in.
-   * Implementeringar som använder `AppMeasurement.js` initierar vanligtvis spårningsobjektet längst upp i JavaScript-filen.
+   * Den tagghanterade webbplatsen instansierar automatiskt spårningsobjektet när Adobe Analytics läses in.
+   * Implementeringar som använder `AppMeasurement.js` initierar vanligtvis spårningsobjektet högst upp i JavaScript-filen.
 2. Inkludera plugin-kod sekund.
    * Tillägget Common Analytics Plugins har en åtgärdskonfiguration där du kan initiera plugin-program.
    * Om du inte vill använda tillägget kan du klistra in plugin-kod i den anpassade kodredigeraren när du konfigurerar Analytics-tillägget.
-   * Om implementeringen inte använder Launch kan du klistra in plugin-kod i `AppMeasurement.js` var som helst när du har initierat spårningsobjektet.
+   * Om implementeringen inte använder taggar i Adobe Experience Platform kan du klistra in plugin-kod i `AppMeasurement.js` var som helst efter att du har initierat spårningsobjektet.
 3. Ring plugin-programmet tredje.
-   * Alla implementeringar, både i och utanför Launch, använder JavaScript för att anropa plugin-program. Anropa plugin-programmet med det format som finns på sidan för plugin-programmet.
+   * Alla implementeringar, både innanför och utanför en tagghanterad webbplats, använder JavaScript för att anropa plugin-program. Anropa plugin-programmet med det format som finns på sidan för plugin-programmet.
 4. Validera implementeringen och publiceringen.
 
-Många organisationer anropar plugin-program med [`doPlugins`](../functions/doplugins.md) funktionen. Även om den här funktionen inte är nödvändig anser Adobe att det är en god vana att använda den. AppMeasurement anropar den här funktionen precis innan en bildförfrågan kompileras och skickas, vilket är idealiskt eftersom flera plugin-program är beroende av andra Analytics-variabler.
+Många organisationer anropar plugin-program med funktionen [`doPlugins`](../functions/doplugins.md). Även om den här funktionen inte är nödvändig anser Adobe att det är en god vana att använda den. AppMeasurement anropar den här funktionen precis innan en bildförfrågan kompileras och skickas, vilket är idealiskt eftersom flera plugin-program är beroende av andra Analytics-variabler.
 
 ## Använda plugin-program med icke-standardiserade spårningsobjekt
 
-Insticksprogram fungerar inte som standard med andra spårningsobjekt än `s`. Du kan dock ändra plugin-programkoden så att den passar det anpassade spårningsobjektet. Ersätt alla referenser till i ett visst plugin-program `s` med det önskade spårningsobjektet.
+Plugin-program fungerar inte som standard med andra spårningsobjekt än `s`. Du kan dock ändra plugin-programkoden så att den passar det anpassade spårningsobjektet. Ersätt alla referenser till `s` med det önskade spårningsobjektet i ett visst plugin-program.
