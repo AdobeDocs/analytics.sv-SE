@@ -1,14 +1,13 @@
 ---
 title: getGeoCoordinates
 description: Spåra en besökares geoLocation.
-translation-type: tm+mt
-source-git-commit: d0947b075923956a4a48e09f8eeffc38e7fc0672
+exl-id: 8620d083-7fa6-432b-891c-e24907e7c466
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: getGeoCoordinates
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Med `getGeoCoordinates`-pluginen kan du fånga latitud och longitud för besökarnas enheter. Adobe rekommenderar att du använder det här plugin-programmet om du vill hämta geoplatsdata i Analytics-variabler.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getGeoCoordinates
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -82,7 +81,7 @@ s.eVar1 = s.getGeoCoordinates();
 
 ...anger att eVar1 är lika med ett av de ovanstående returvärdena beroende på besökarens enhetsstatus
 
-### Exempel 3
+### Exempel 2
 
 Följande kod extraherar latitud och longitud till sina egna variabler, som kallas finalLatitude och finalLongitude, för användning i annan kod/andra program
 
