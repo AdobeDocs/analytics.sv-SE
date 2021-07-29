@@ -2,11 +2,10 @@
 title: Händelseserialisering
 description: Hjälper dig att deduplicera mätvärden på din webbplats.
 exl-id: 54de0fd7-9056-44af-bd59-b8eb55fc816e
-translation-type: tm+mt
-source-git-commit: 71581f49eb7ef13577a05c05daee737eeb9e6218
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 1%
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
@@ -32,11 +31,11 @@ När du använder händelse-ID:n utförs borttagning av dubbletter på följande
 >
 >Om du vill avduplicera händelsen [`purchase`](event-purchase.md) ska du använda variabeln [`purchaseID`](../purchaseid.md) i stället.
 
-## Använd händelse-ID:n i Adobe Experience Platform Launch
+## Använd händelse-ID:n med taggar i Adobe Experience Platform
 
 Du kan ange fältet för händelse-ID när du konfigurerar Analytics-tillägget (globala variabler) eller som en åtgärd i en regel.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
 3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
 4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
@@ -45,7 +44,7 @@ Du kan ange fältet för händelse-ID när du konfigurerar Analytics-tillägget 
 
 Giltiga värden är alfanumeriska tecken som är upp till 20 byte långa. Om du anger ett värde som är längre än 20 byte trunkeras det till de första 20 byten.
 
-## Använd händelse-ID:n i AppMeasurement och starta en anpassad kodredigerare
+## Använd händelse-ID:n i AppMeasurement och anpassad kodredigerare
 
 Händelseserialisering är en del av variabeln `s.events`. Tilldela ett ID till varje händelse med ett kolon i strängen.
 
