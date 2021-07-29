@@ -2,10 +2,10 @@
 title: trackingServerSecure
 description: Bestäm var bildbegäranden ska skickas på HTTPS-sidor.
 exl-id: d5b112f9-f3f6-43ac-8ee5-d9ad8062e380
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 2%
+source-wordcount: '280'
+ht-degree: 1%
 
 ---
 
@@ -17,18 +17,18 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 >
 >Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 
-## SSL-spårningsserver i Adobe Experience Platform Launch
+## SSL-spårningsserver som använder taggar i Adobe Experience Platform
 
 [!UICONTROL SSL Tracking Server] är ett fält under  [!UICONTROL General] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
 3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
 4. Expandera dragspelet [!UICONTROL General], som visar fältet [!UICONTROL SSL Tracking Server].
 
 Om fältet lämnas tomt blir standardvärdet i variabeln [`trackingServer`](trackingserver.md).
 
-## s.trackingServerSecure in AppMeasurement and Launch custom code editor
+## s.trackingServerSecure i AppMeasurement och anpassad kodredigerare
 
 Variabeln `s.trackingServerSecure` är en sträng som innehåller platsen där bildbegäranden ska skickas. Det är nästan alltid en underdomän till din webbplats. Modern sekretesspraxis i webbläsare gör oftast cookies från tredje part otillförlitliga. Om variabeln är tom används värdet i variabeln `s.trackingServer`.
 
