@@ -2,9 +2,9 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2439'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Kohort:** En grupp personer som delar gemensamma egenskaper under en viss tidsperiod. Se [Vad är kohortanalys?](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) i användarhandboken för Analysera.
 * **Samlingsserver:** Se Datainsamlingsserver.
 * **Sammanhangsdatavariabler:** Tillfälliga variabler används endast i bearbetningsregler. Variabelvärden för kontextdata förloras permanent om en bearbetningsregel inte kopierar dem till en konverterings- eller trafikvariabel. Se [Sammanhangsdatavariabler](../implement/vars/page-vars/contextdata.md) i Användarhandboken för implementering.
-* **Konverteringsvariabel:** Kallas även eVars. Sparar ett anpassat värde och bevarar variabelvärdet tills det förfaller. Se dimensionen [eVar](/help/components/dimensions/evar.md) i användarhandboken för komponenter.
+* **Konverteringsvariabel:** Kallas även eVars. Sparar ett anpassat värde och bevarar variabelvärdet tills det upphör att gälla. Se dimensionen [eVar](/help/components/dimensions/evar.md) i användarhandboken för komponenter.
 * **korrelation:** Används inte längre som term; ersätts med dimensionsfördelningar. I tidigare versioner av Adobe Analytics gav korrelations möjlighet att bryta ned trafikvariabler. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
 * **Aktuella data:** Ett alternativ i vissa rapporter som tillåter att nyligen insamlade data som ännu inte har bearbetats inkluderas. Se [Aktuella data](/help/analyze/reports-analytics/current-data.md) i användarhandboken för Analysera.
 * **Egen länk:** En typ av träff som innehåller data som inte är sidvy. Se funktionen [s.tl()](../implement/vars/functions/tl-method.md) i Användarhandboken för Implementering. Se även Träff.
@@ -65,7 +65,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
    * Custom Insight, ett historiskt namn för en anpassad trafikvariabel.
 * **KPI:** Förkortning för nyckelutförandeindikator. Mätvärden som hjälper ett företag att förstå hur webbplatsen fungerar. Varje organisation har olika nyckeltal som mäter olika aspekter av sin verksamhet. Se [Skapa ett lösningsdesigndokument](/help/implement/prepare/solution-design.md) i Användarhandboken Implementera.
 * **Latens:** Fördröjningen mellan när data samlas in och när de är tillgängliga i rapporter. Vanlig fördröjning i en rapportserie är 30-90 minuter. Se [Latens](/help/technotes/latency.md) i TechNotes-användarhandboken.
-* **Launch:** Short for Adobe Experience Platform Launch, Adobe current implementation solution. Se [Översikt](https://experienceleague.adobe.com/docs/launch/using/overview.html) i användarhandboken för Adobe Experience Platform Launch.
+* **Launch:** Används inte längre som term. Det förkortade tidigare namnet på taggar i Adobe Experience Platform, Adobe aktuella implementeringslösning. Se [Översikt över taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) i användarhandboken för Adobe Experience Platform.
 * **Listtecken:** En inställning som konverterar en typisk trafikvariabel som stöder flera värden i samma träff. Alla anpassade trafikvariabler kan bli en listprop om inställningen är aktiverad. Se [prop](../implement/vars/page-vars/prop.md) i Användarhandboken för implementering.
 * **List var:** En distinkt variabel som är skild från konverteringsvariabler. Listvariabler har stöd för flera värden i samma träff, och variabelvärden bevaras vid ett besök, på liknande sätt som konverteringsvariabler. Endast tre listvariabler är tillgängliga för en organisation. Se [lista](/help/implement/vars/page-vars/list.md) i Användarhandboken för implementering.
 * **Inloggningsföretag:** En samling rapportsviter som används av din organisation. Vissa organisationer har flera inloggningsföretag som gäller för olika delar av organisationen.
