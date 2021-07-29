@@ -1,18 +1,17 @@
 ---
 title: t
 description: Skicka ett spårningsanrop för sidvy till Adobe.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+exl-id: c4f5b9e2-57a3-4d89-8378-39b7a4737afc
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 1%
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
-
 # t()
 
-Metoden är en viktig `t()` komponent i Adobe Analytics. Den tar alla Analytics-variabler som definierats på sidan, kompilerar dem till en bildförfrågan och skickar dessa data till Adobes datainsamlingsservrar.
+Metoden `t()` är en viktig komponent för Adobe Analytics. Den tar alla analysvariabler som definieras på sidan, kompilerar dem till en bildbegäran och skickar data till datainsamlingsservrarna i Adobe.
 
 Titta på följande JavaScript-kod:
 
@@ -28,34 +27,34 @@ s.eVar1 = "Example dimension item";
 s.t();
 ```
 
-När du kör metoden används alla definierade Analytics-variabler och en URL som baseras på dessa variabler skapas. `t()` Vissa Analytics-variabler bestämmer URL:en för bilden, medan andra variabler bestämmer parametervärden för frågesträngar.
+När du kör metoden `t()` används alla definierade Analytics-variabler och en URL-adress som baseras på dessa variabler skapas. Vissa analysvariabler bestämmer URL:en för bilden, medan andra variabler bestämmer parametervärden för frågesträngar.
 
 ```text
 https://data.example.com/b/ss/examplersid/1/?v1=Example%20dimension%20value
 ```
 
-Adobe tar emot bildbegäran och tolkar sedan parametrarna request header, URL och query string. Datainsamlingsservrar returnerar sedan en genomskinlig 1x1-pixelbild som visas osynligt på din webbplats.
+Adobe tar emot bildbegäran och tolkar sedan parametrarna för begärandehuvudet, URL:en och frågesträngen. Datainsamlingsservrar returnerar sedan en genomskinlig 1x1-pixelbild som visas osynligt på din webbplats.
 
-## Anrop till spårning av sidvy i Adobe Experience Platform Launch
+## Anrop till spårning av sidvy med hjälp av taggar i Adobe Experience Platform
 
-Launch har en dedikerad plats där ett spårningsanrop för sidvy har angetts.
+Användargränssnittet för datainsamling har en dedikerad plats som anger ett spårningsanrop för sidvyn.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Rules] fliken och klicka sedan på önskad regel (eller skapa en regel).
-4. Klicka på ikonen + [!UICONTROL Actions]under
-5. Ställ in listrutan [!UICONTROL Extension] till Adobe Analytics och välj [!UICONTROL Action Type] Skicka beacon.
-6. Click the `s.t()` radio button.
+3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
+4. Klicka på plustecknet under [!UICONTROL Actions]
+5. Ställ in listrutan [!UICONTROL Extension] på Adobe Analytics och listrutan [!UICONTROL Action Type] på Skicka Beacon.
+6. Klicka på alternativknappen `s.t()`.
 
-## s.t()-metoden i AppMeasurement och den anpassade kodredigeraren Launch
+## s.t(), metod i AppMeasurement och anpassad kodredigerare
 
-Anropa `s.t()` metoden när du vill skicka ett spårningsanrop till Adobe.
+Anropa metoden `s.t()` när du vill skicka ett spårningsanrop till Adobe.
 
 ```js
 s.t();
 ```
 
-Du kan också använda ett objekt som argument för att åsidosätta variabelvärden. Mer information finns i [Variabelåsidosättningar](../../js/overrides.md) .
+Du kan också använda ett objekt som argument för att åsidosätta variabelvärden. Mer information finns i [variabelåsidosättningar](../../js/overrides.md).
 
 ```js
 var y = new Object();
@@ -65,4 +64,4 @@ s.t(y);
 
 >[!NOTE]
 >
->I tidigare versioner av AppMeasurement användes flera kodrader för att anropa den här funktionen. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Nu `s.t()` behövs bara metodanropet.
+>I tidigare versioner av AppMeasurement användes flera kodrader för att anropa den här funktionen. Den extra koden rymmer temporärt tillfälliga lösningar för olika webbläsare. Det här kodblocket behövs inte längre för standardisering och bästa praxis i moderna webbläsare. Nu behövs bara metodanropet `s.t()`.
