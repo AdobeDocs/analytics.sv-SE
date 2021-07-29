@@ -1,15 +1,14 @@
 ---
 title: trackInlineStats
 description: Aktivera eller inaktivera aktivitetskartan i implementeringen.
-keywords: disable activity map
-translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+keywords: inaktivera aktivitetskarta
+exl-id: a52adc1d-1be7-4002-b393-7ce66332b483
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
-
 
 # trackInlineStats
 
@@ -17,20 +16,20 @@ Aktivitetskartan är en funktion i Adobe Analytics som samlar in data om var bes
 
 När det här alternativet är aktiverat samlar AppMeasurement in information om länken och skickar dessa data i nästa bildförfrågan. Information från varje klick lagras i en cookie med etiketten `s_sq`.
 
-## Aktivera klickkarta i Adobe Experience Platform Launch
+## Aktivera Clickmap med hjälp av taggar i Adobe Experience Platform
 
-[!UICONTROL Enable Clickmap] är en kryssruta under [!UICONTROL Link Tracking] dragspelet när du konfigurerar Adobe Analytics-tillägget.
+[!UICONTROL Enable Clickmap] är en kryssruta under  [!UICONTROL Link Tracking] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
-4. Expandera dragspelsfliken så att [!UICONTROL Link Tracking] kryssrutan visas [!UICONTROL Enable Clickmap] .
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
+4. Expandera dragspelet [!UICONTROL Link Tracking], som visar kryssrutan [!UICONTROL Enable Clickmap].
 
 Klicka i kryssrutan för att aktivera spårning av aktivitetskarta.
 
-## s.trackInlineStats i AppMeasurement and Launch custom code editor
+## s.trackInlineStats i AppMeasurement och anpassad kodredigerare
 
-Detta `s.trackInlineStats` är ett booleskt värde som aktiverar eller inaktiverar spårning av aktivitetskarta. Dess standardvärde är `false`. Ange det här värdet `true` om du vill aktivera datainsamling för aktivitetskarta.
+`s.trackInlineStats` är ett booleskt värde som aktiverar eller inaktiverar spårning av aktivitetskarta. Dess standardvärde är `false`. Ange det här värdet till `true` om du vill aktivera datainsamling för aktivitetskarta.
 
 ```js
 s.trackInlineStats = true;
