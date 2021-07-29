@@ -2,10 +2,10 @@
 title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
 exl-id: bcc23286-4dd5-45ac-ac6f-7b60e95cb798
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
@@ -17,18 +17,18 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 >
 >Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 
-## Spårningsserver i Adobe Experience Platform Launch
+## Spåra server med hjälp av taggar i Adobe Experience Platform
 
 Spårningsservern är ett fält under dragspelet [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
 3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
 4. Expandera dragspelet [!UICONTROL General], som visar fältet [!UICONTROL Tracking Server].
 
 Om fältet lämnas tomt är det som standard `[rsid].data.adobedc.net`.
 
-## s.trackingServer i AppMeasurement och Launch, anpassad kodredigerare
+## s.trackingServer i AppMeasurement och anpassad kodredigerare
 
 Variabeln `s.trackingServer` är en sträng som innehåller platsen där data ska skickas.
 
