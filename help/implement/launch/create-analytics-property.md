@@ -2,7 +2,7 @@
 title: Skapa en Analytics-egenskap i taggar
 description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av taggar.
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
-source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 1%
@@ -24,9 +24,7 @@ Taggar i Adobe Experience Platform gör att du kan integrera Experience Cloud-l�
 
 Egenskaper är överliggande behållare som du använder för att hantera taggar. Med tillägg kan du installera produktspecifika taggar och konfigurera dem.
 
-1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
-1. Välj **[!UICONTROL Launch / Data Collection]**.
-1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på **[!UICONTROL New Property]**.
 1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på **[!UICONTROL Save]**.
 1. Klicka på den nyligen skapade taggegenskapen för att ange dess inställningar.
@@ -39,9 +37,7 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 
 Dataelement är referenser till specifika delar av webbplatsen för att samla in variabelvärden.
 
-1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
-1. Välj **[!UICONTROL Launch / Data Collection]**.
-1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 1. Klicka på fliken **[!UICONTROL Data Elements]** och sedan på **[!UICONTROL Create New Data Element]**.
 1. Ge dataelementet följande inställningar:
@@ -62,9 +58,7 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
 
 Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa värden skickas till Adobe-servrar.
 
-1. Gå till [experience.adobe.com](https://experience.adobe.com) och logga in när du uppmanas till det.
-1. Välj **[!UICONTROL Launch / Data Collection]**.
-1. Klicka på **[!UICONTROL Go to Launch / Data Collection]** och välj sedan **[!UICONTROL Tags]**.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 1. Klicka på **[!UICONTROL Create New Rule]** och ge den namnet `Global Rule`.
 1. Klicka på **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
