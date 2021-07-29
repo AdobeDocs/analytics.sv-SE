@@ -2,9 +2,9 @@
 title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
-source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Behörighetsobjekt för analysverktyg | Beskrivning |
 |----|----|
 | [!UICONTROL Server Call Usage] | Ger åtkomst till Admin > Serversamtalsanvändning. |
-| [!UICONTROL Code Manager] | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall bör du använda de bibliotek som ingår i Adobe Experience Platform Data Collection i stället. |
+| [!UICONTROL Code Manager] | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall använder du i stället biblioteken som ingår i användargränssnittet för datainsamling. |
 | [!UICONTROL Code Manager - Web Services] | Ger åtkomst till Code Manager via 1.4-API:t. |
 | [!UICONTROL Logs] | Ger åtkomst till Admin > Alla administratörer > Loggar. |
 | [!UICONTROL Logs - Web Services] | Ger åtkomst till pull-loggar via 1.4-API:t. |
