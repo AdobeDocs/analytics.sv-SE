@@ -2,10 +2,10 @@
 title: Tekniska handböcker för Adobe Analytics
 description: Användarhandböcker och resurser för Analytics
 exl-id: f7a06f92-2144-4178-9080-7cb2f3e0e8e1
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 82%
+source-wordcount: '425'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +17,7 @@ Välkommen till startsidan för Adobe Analytics-produkten och den tekniska dokum
 
 [![Administration](assets/admin_50px.png)](/help/admin/home.md) [Administrationshandbok](/help/admin/home.md) – Läs mer om hur du hanterar användare och produkter i Experience Cloud Admin Console, konfigurerar rapportsviter, företagsinställningar, datastyrning, använder serveranrop, hanterar trafik med mera.
 
-[![Implementering](assets/implement_50px.png)](/help/implement/home.md) [Implementeringshandbok](/help/implement/home.md) – Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. Täcker innehåll i [!UICONTROL Adobe Experience Platform Launch] och JavaScript-implementeringar.
+[![Implementering](assets/implement_50px.png)](/help/implement/home.md) [Implementeringshandbok](/help/implement/home.md) – Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. Innehåller användning av taggar i Adobe Experience Platform- och JavaScript-implementeringar.
 
 [![Komponenter](assets/components_50px.png)](/help/components/home.md) [Komponenthandbok](/help/components/home.md) – Förstå funktionerna som hjälper dig att organisera dina data. Komponenter omfattar segment, beräknade värden, virtuella rapportsviter, varningar med mera. Handboken har även ett referensavsnitt med alla variabler som förklarar alla tillgängliga dimensioner och mätvärden.
 
