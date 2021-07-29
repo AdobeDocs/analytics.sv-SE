@@ -1,35 +1,34 @@
 ---
 title: linkTrackVars
 description: Ange vilka variabler som ska ingå i förfrågningar om länkspårningsbilder.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: b884f6e9-45d9-49f0-ac74-ea6f4f01020a
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '275'
 ht-degree: 2%
 
 ---
 
-
 # linkTrackVars
 
-Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden för länkspårning. Använd variablerna `linkTrackVars` och [`linkTrackEvents`](linktrackevents.md) för att selektivt inkludera mått och mätvärden i [`tl()`](../functions/tl-method.md) anrop.
+Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden för länkspårning. Använd variablerna `linkTrackVars` och [`linkTrackEvents`](linktrackevents.md) för att selektivt inkludera mått och mått i [`tl()`](../functions/tl-method.md)-anrop.
 
 Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-method.md) metod).
 
-## Variabler i länkspårningsanrop med Adobe Experience Platform Launch
+## Variabler i länkspårningsanrop med hjälp av taggar i Adobe Experience Platform
 
-Launch fyller automatiskt i den här variabeln på serverdelen baserat på variabler som angetts i gränssnittet, så den ställs alltid in i implementeringar med Launch.
+Adobe Experience Platform fyller automatiskt i den här variabeln på serverdelen baserat på variabler som anges i gränssnittet, så den ställs alltid in i implementeringar med hjälp av taggar i Adobe Experience Platform.
 
 >[!IMPORTANT]
 >
->Om du anger variabler i Launch med den anpassade kodredigeraren måste du ta med variabeln även i `linkTrackVars` med anpassad kod.
+>Om du anger variabler med den anpassade kodredigeraren måste du även inkludera variabeln i `linkTrackVars` med anpassad kod.
 
-## s.linkTrackVars i AppMeasurement and Launch custom code editor
+## s.linkTrackVars i AppMeasurement och anpassad kodredigerare
 
-Variabeln är en sträng som innehåller en kommaavgränsad lista med variabler som du vill ta med i bildbegäran för länkspårning ( `s.linkTrackVars``tl()` metod). Båda följande villkor måste vara uppfyllda för att du ska kunna ta med dimensioner i länkspårningsträffar:
+Variabeln `s.linkTrackVars` är en sträng som innehåller en kommaavgränsad lista med variabler som du vill ta med i bildbegäranden för länkspårning (`tl()` metod). Båda följande villkor måste vara uppfyllda för att du ska kunna ta med dimensioner i länkspårningsträffar:
 
 * Ange önskat variabelvärde. Exempel, `s.eVar1 = "Example value";`.
-* Ange önskad variabel i `linkTrackVars` variabeln. Exempel, `s.linkTrackVars = "eVar1";`.
+* Ange önskad variabel i variabeln `linkTrackVars`. Exempel, `s.linkTrackVars = "eVar1";`.
 
 ```js
 s.linkTrackVars = "eVar1,eVar2,events,channel,products";
@@ -37,16 +36,16 @@ s.linkTrackVars = "eVar1,eVar2,events,channel,products";
 
 Standardvärdet för den här variabeln är en tom sträng. Adobe tillhandahöll emellertid AppMeasurement-kod i kodhanteraren där variabeln är inställd på `"None"`. Giltiga värden är alla sidnivåvariabler som fyller i en dimension.
 
-* Om variabeln inte är definierad eller inställd på en tom sträng inkluderas *alla* variabler i förfrågningar om länkspårningsbilder.
-* Om variabeln är inställd på `"None"`inkluderas *inga* variabler i förfrågningar om länkspårningsbilder.
+* Om den här variabeln inte är definierad eller inställd på en tom sträng inkluderas *alla*-variabler i förfrågningar om länkspårningsbilder.
+* Om variabeln är inställd på `"None"` inkluderas *inga*-variabler i förfrågningar om länkspårningsbilder.
 
 >[!TIP]
 >
->Undvik att använda Analytics objektidentifierare (`s.`) när du anger variabler i den här variabeln. Till exempel `s.linkTrackVars = "eVar1";` är korrekt medan `s.linkTrackVars = "s.eVar1";` är felaktig.
+>Undvik att använda objektidentifieraren för Analytics (`s.`) när du anger variabler i den här variabeln. Till exempel är `s.linkTrackVars = "eVar1";` korrekt medan `s.linkTrackVars = "s.eVar1";` är felaktigt.
 
 ## Exempel
 
-Följande funktion för länkspårning innehåller bara `eVar1` (inte `eVar2`) i bildbegäran som skickas till Adobe:
+Följande funktion för länkspårning innehåller endast `eVar1` (inte `eVar2`) i bildbegäran som skickas till Adobe:
 
 ```js
 s.eVar1 = "Example value 1";
