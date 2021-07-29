@@ -1,41 +1,40 @@
 ---
 title: visitorNameSpace
 description: En indragen variabel som fastställde cookie-domän.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 4fea35c0-9998-4438-a2ca-af65a35a449e
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 1%
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
-
 
 # visitorNamespace
 
 >[!IMPORTANT]
 >
->Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) istället.
+>Den här variabeln har tagits bort. Använd [`trackingServer`](trackingserver.md) i stället.
 
-I tidigare versioner av Adobe Analytics använde AppMeasurement variabeln för att avgöra vilken underdomän `visitorNameSpace` `2o7.net` besökarens cookies lagras i. Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. I och med introduktionen av variablerna `trackingServer` och [`trackingServerSecure`](trackingserversecure.md) behövs `visitorNameSpace` inte längre.
+I tidigare versioner av Adobe Analytics använde AppMeasurement variabeln `visitorNameSpace` för att avgöra underdomänen `2o7.net` där besökares cookies lagras. Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. I och med introduktionen av variablerna `trackingServer` och [`trackingServerSecure`](trackingserversecure.md) behövs inte längre `visitorNameSpace`.
 
 >[!TIP]
 >
 >Adobe rekommenderar att du använder cookies från första part på din webbplats. Den här variabeln används inte för cookies från första part.
 
-## Namnutrymme för besökare i Adobe Experience Platform Launch
+## Namnutrymme för besökare med hjälp av taggar i Adobe Experience Platform
 
-[!UICONTROL Visitor Namespace] är ett fält under [!UICONTROL Cookies] dragspelet när du konfigurerar Adobe Analytics-tillägget.
+[!UICONTROL Visitor Namespace] är ett fält under  [!UICONTROL Cookies] dragspelet när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
-4. Expandera dragspelsfliken, som visar [!UICONTROL Cookies] [!UICONTROL Visitor Namespace] fältet.
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
+4. Expandera dragspelet [!UICONTROL Cookies], som visar fältet [!UICONTROL Visitor Namespace].
 
-Adobe rekommenderar att du inte använder det här fältet. Använd `trackingServer` och `trackingServerSecure` istället.
+Adobe avråder från att använda det här fältet. Använd `trackingServer` och `trackingServerSecure` i stället.
 
-## s.visitorNamespace i AppMeasurement and Launch custom code editor
+## s.visitorNamespace i AppMeasurement och anpassad kodredigerare
 
-Variabeln `s.visitorNamespace` är en sträng som innehåller ett unikt värde per organisation. Gamla AppMeasurement-bibliotek tillför automatiskt detta unika värde vid nedladdning från tidigare versioner av Adobe Analytics. Aktuella AppMeasurement-bibliotek använder inte den här variabeln om `trackingServer` och `trackingServerSecure` inte har angetts.
+Variabeln `s.visitorNamespace` är en sträng som innehåller ett unikt värde per organisation. Gamla AppMeasurement-bibliotek har automatiskt inkluderat detta unika värde när de laddas ned från tidigare versioner av Adobe Analytics. Aktuella AppMeasurement-bibliotek använder inte den här variabeln såvida inte `trackingServer` och `trackingServerSecure` inte har angetts.
 
 Om din organisation fortfarande behöver den här variabeln väljer du ett värde som representerar din organisation. Du kan lagra det här värdet i ett [lösningsdesigndokument](../../prepare/solution-design.md).
 
