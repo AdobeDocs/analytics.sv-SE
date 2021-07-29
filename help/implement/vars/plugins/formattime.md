@@ -1,14 +1,13 @@
 ---
 title: formatTime
 description: Konvertera ett antal sekunder till motsvarande antal minuter, timmar osv.
-translation-type: tm+mt
-source-git-commit: 56b21b6acb948c478d7b2a29c3e8375a8fe77ce2
+exl-id: 4b98e7fe-f05b-4346-b284-697268adc1a2
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: formatTime
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Med plugin-programmet `formatTime` kan du ta valfritt antal sekunder och presentera dem i ett paketerat format, avrundat till önskat referensvärde. Adobe rekommenderar att du använder det här plugin-programmet om du vill hämta ett tidsvärde i sekunder och konvertera det till ett bucket-format (till exempel minuter, dagar eller veckor). Detta plugin-program behövs inte om du inte vill bucket med sekundbaserade värden i ett tidslinjeformat.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera formatTime
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -100,7 +99,7 @@ s.eVar1 = s.formatTime(38250);
 ...ställs in s.eVar1 till &quot;10,75 timmar&quot;
 Argumentet som skickades - 38 250 sekunder - är lika med 10 timmar, 37 minuter och 30 sekunder.  Genom att avrunda antalet sekunder som skickas in till det närmaste kvart-timmars-riktvärdet i detta fall kommer det slutliga värdet att anges till 10,75 timmar
 
-### Exempel 3
+### Exempel 2
 
 Följande kod...
 
