@@ -1,32 +1,34 @@
 ---
 title: trackExternalLinks
 description: Aktivera eller inaktivera automatisk länkspårning för att avsluta länkar.
-translation-type: tm+mt
-source-git-commit: 94218548dc4e3efd57df95c992003e94640e4330
+exl-id: a34d4ffa-ff82-460e-af7d-1a4be85fc631
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 1%
 
 ---
 
-
 # trackExternalLinks
 
-Adobe ger möjlighet att spåra utgående länkar utan att manuellt ange [`tl()`](../functions/tl-method.md) metod för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för slutlänkar.
+Med Adobe kan du spåra utgående länkar utan att manuellt ange [`tl()`](../functions/tl-method.md)-metoden för varje avslutningslänk. Aktivera den här variabeln om du vill använda automatisk länkspårning för slutlänkar.
 
 När det är aktiverat jämför AppMeasurement alla klickade länk-URL:er med värden i [`linkInternalFilters`](linkinternalfilters.md) och [`linkExternalFilters`](linkexternalfilters.md). Om det finns en matchning utlöses ett avslutningslänkspårningsanrop automatiskt.
 
-## Spåra utgående länkar i Adobe Experience Platform Launch
+## Spåra utgående länkar med hjälp av taggar i Adobe Experience Platform
 
-Spåra utgående länkar är en kryssruta i dragspelet [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
+Spåra utgående länkar är en kryssruta under dragspelet [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
-4. Expandera dragspelsfliken så att [!UICONTROL Link Tracking] kryssrutan visas [!UICONTROL Track outbound links] .
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
+4. Expandera dragspelet [!UICONTROL Link Tracking], som visar kryssrutan [!UICONTROL Track outbound links].
 
 Klicka i kryssrutan om du vill aktivera automatisk spårning av avslutningslänk.
 
-## s.trackExternalLinks in AppMeasurement and Launch custom code editor
+## s.trackExternalLinks in AppMeasurement och anpassad kodredigerare
 
-Det här `s.trackExternalLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk spårning av avslutningslänk. Om du inte vill spåra utgående länkar, eller vill anropa metoden manuellt för att spåra avslutslänkar, anger du den här variabeln som `tl()` `false`.
+`s.trackExternalLinks` är ett booleskt värde som aktiverar eller inaktiverar automatisk spårning av avslutningslänk. Om du inte vill spåra utgående länkar, eller föredrar att anropa metoden `tl()` manuellt för att spåra avslutslänkar, anger du den här variabeln till `false`.
 
 ```js
 s.trackExternalLinks = true;
