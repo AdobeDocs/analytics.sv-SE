@@ -1,14 +1,13 @@
 ---
 title: p_fo (endast sida först)
 description: Se till att vissa rutiner bara aktiveras en gång per sida.
-translation-type: tm+mt
-source-git-commit: 3c9e656d2f5bb9393826f31803d7b6f11a26ce0e
+exl-id: e82d77f9-2ea9-4b1b-b645-b12879c344ec
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: p_fo (endast sida först)
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Plugin-programmet `p_fo` är ett verktyg som kontrollerar om det finns ett specifikt JavaScript-objekt. Om objektet inte finns skapar plugin-programmet objektet och returnerar `true`. Om JavaScript-objektet redan finns på sidan returneras `false`. Denna plugin är användbar för att köra kod exakt en gång på en sida. Flera andra plugin-program använder den här koden för att fungera. Denna plugin behövs inte om du inte är orolig för hur många gånger koden körs på en sida eller om du inte använder några beroende plugin-program.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera p_fo
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
