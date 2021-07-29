@@ -1,14 +1,13 @@
 ---
 title: getTimeToComplete
 description: Mät hur lång tid det tar att slutföra en uppgift.
-translation-type: tm+mt
-source-git-commit: 37a3a44053260d9cdb2a3797e07f6d34592abc1f
+exl-id: 90a93480-3812-49d4-96f0-8eaf5a70ce3c
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: getTimeToComplete
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Plugin-programmet `getTimeToComplete` håller reda på hur lång tid det tar för en användare att slutföra en process på en webbplats. &quot;Klockan&quot; börjar när åtgärden `start` anropas och slutar när åtgärden `stop` anropas. Adobe rekommenderar att du använder denna plugin om det finns ett arbetsflöde på webbplatsen som tar lite tid att slutföra och du vill veta hur lång tid besökarna tar att slutföra det. Denna plugin behövs inte om arbetsflödet på webbplatsen tar kort tid (mindre än 3 sekunder) eftersom granulariteten bara är nere till en hel sekund.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getTimeToComplete
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
