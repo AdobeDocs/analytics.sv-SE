@@ -1,42 +1,41 @@
 ---
 title: registerPreTrackCallback
 description: Skapa callback-funktioner innan du skickar en träff till Adobe.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 11c960d7-ded4-441a-822f-463d3a137d2d
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-
 # registerPreTrackCallback
 
-Variabeln gör att din organisation kan koppla en JavaScript-funktion efter att en URL för bildbegäran har kompilerats, men innan den skickas. `registerPreTrackCallback` Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur.
+Variabeln `registerPreTrackCallback` gör att din organisation kan koppla en JavaScript-funktion efter att en URL för bildbegäran har kompilerats, men innan den skickas. Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur.
 
 >[!IMPORTANT]
 >
->Anropa inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti [`registerPostTrackCallback`](registerposttrackcallback.md) variabeln. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
+>Anropa inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti variabeln [`registerPostTrackCallback`](registerposttrackcallback.md). Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
 
-Varje gång du anropar `registerPreTrackCallback` variabeln kopplar du den funktionen till körning varje gång en URL för bildbegäran kompileras. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
+Varje gång du anropar variabeln `registerPreTrackCallback` kopplar du den funktionen till körning varje gång en URL för bildbegäran kompileras. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
 
 >[!NOTE]
 >
->Tidpunkten och ordningen för funktioner som utlöses mellan `registerPreTrackCallback` och `registerPostTrackCallback` är inte säkerställda. Undvik beroenden mellan dessa två funktioner.
+>Tidsangivelsen och ordningen för funktioner som utlösts mellan `registerPreTrackCallback` och `registerPostTrackCallback` är inte garanterad. Undvik beroenden mellan dessa två funktioner.
 
-## Registrera återanrop före spår i Adobe Experience Platform Launch
+## Registrera Pre Track-återanrop med taggar i Adobe Experience Platform
 
-Det finns inget dedikerat fält i Launch som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
-## s.registerPreTrackCallback i AppMeasurement and Launch custom code editor
+## s.registerPreTrackCallback i AppMeasurement och anpassad kodredigerare
 
-Funktionen `s.registerPreTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs precis innan en bildbegäran skickas.
+`s.registerPreTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs precis innan en bildbegäran skickas.
 
 ```js
 s.registerPreTrackCallback(function(){/* Desired code */});
 ```
 
-Om du vill använda URL:en för bildbegäran i koden refererar du till strängargumentet i den kapslade funktionen `requestUrl` . Du kan tolka variabeln för den användning du vill använda; `requestUrl` om du justerar den här variabeln påverkas inte datainsamlingen.
+Om du vill använda URL:en för bildbegäran i koden refererar du till strängargumentet `requestUrl` i den kapslade funktionen. Du kan analysera variabeln `requestUrl` för att kunna använda den. om du justerar den här variabeln påverkas inte datainsamlingen.
 
 ```js
 s.registerPreTrackCallback(function(requestUrl){
@@ -44,7 +43,7 @@ s.registerPreTrackCallback(function(requestUrl){
 });
 ```
 
-Du kan inkludera ytterligare argument i `s.registerPreTrackCallback` funktionen, som kan användas i den kapslade funktionen:
+Du kan inkludera ytterligare argument i funktionen `s.registerPreTrackCallback`, som kan användas i den kapslade funktionen:
 
 ```js
 s.registerPreTrackCallback(function(requestUrl,a,b,c) {
@@ -57,4 +56,4 @@ s.registerPreTrackCallback(function(requestUrl,a,b,c) {
 
 >[!NOTE]
 >
->Om du anger sidvariabler eller ändrar `requestUrl` strängen i den här funktionen påverkas **inte** bildbegäran som skickas kort efter det här funktionsanropet. Använd [`doPlugins()`](doplugins.md) variabeln i stället.
+>Om du anger sidvariabler eller ändrar strängen `requestUrl` i den här funktionen påverkar det inte **bildbegäran som skickas kort efter det här funktionsanropet.** Använd variabeln [`doPlugins()`](doplugins.md) i stället.
