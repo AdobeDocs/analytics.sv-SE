@@ -1,23 +1,25 @@
 ---
 title: Util.cookieWrite
 description: Skriver ett värde för en cookie.
-translation-type: tm+mt
-source-git-commit: 468f97ee61f5d573d07475836df8d2c313b29fb3
+exl-id: 079dbe50-5568-467b-a67c-f44481a4a20b
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 2%
 
 ---
 
-
 # Util.cookieWrite
 
-Cookies kan lagra och hämta information över sidor på samma domän. Använd `Util.cookieWrite()` metoden för att ange ett värde för en cookie. Du kan använda metoden [`Util.cookieRead()`](util-cookieread.md) för att hämta värden som angetts med `Util.cookieWrite()`.
+Cookies kan lagra och hämta information över sidor på samma domän. Använd metoden `Util.cookieWrite()` för att ange ett värde för en cookie. Du kan använda metoden [`Util.cookieRead()`](util-cookieread.md) för att hämta värden som angetts med `Util.cookieWrite()`.
 
-## Ange cookies i Adobe Experience Platform Launch
+## Ange cookies med hjälp av taggar i Adobe Experience Platform
 
-Launch ger inte möjlighet att ange cookies i gränssnittet. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Gränssnittet för datainsamling ger inte möjlighet att ange cookies i gränssnittet. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
-## s.Util.cookieWrite() i AppMeasurement och Launch, anpassad kodredigerare
+## s.Util.cookieWrite() i AppMeasurement och anpassad kodredigerare
 
-Anropa `s.Util.cookieWrite()` metoden för att ange ett önskat värde för en cookie.
+Anropa metoden `s.Util.cookieWrite()` om du vill ange ett värde för en cookie.
 
 ```js
 s.Util.cookieWrite("example_cookie","Example cookie value")
