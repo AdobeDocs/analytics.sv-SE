@@ -2,9 +2,9 @@
 title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
 exl-id: 7a842cf0-f8cb-45a9-910e-5793849bcfb8
-source-git-commit: 77192bdec509fed0b2a7c49112b7b430ff677a3c
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 Plugin-programmet `getPercentPageViewed` mäter en besökares rullningsaktivitet för att se hur mycket av en sida de visar innan de går vidare till en annan sida. Denna plugin behövs inte om sidorna är små i höjdled eller inte vill mäta rullningsaktiviteten.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -33,9 +33,9 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera getPercentPageViewed
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
