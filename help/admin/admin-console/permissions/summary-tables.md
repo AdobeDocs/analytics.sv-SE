@@ -2,9 +2,9 @@
 title: Adobe Analytics Permissions - summary tables
 description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Admin Console.
 exl-id: f1abbdb7-0f76-4d9b-a3ca-b12fa3cecb50
-source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
+source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1271'
 ht-degree: 4%
 
 ---
@@ -73,7 +73,7 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 
 | Analysverktyg | Administrering | Åtkomstkontroller | Funktioner endast för rapporter | Föråldrat | Beskrivning |
 | --- | --- | --- | --- | --- | --- |
-| Kodhanteraren | x |  |  |  | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall bör du använda de bibliotek som ingår i Adobe Experience Platform Data Collection i stället. |
+| Kodhanteraren | x |  |  |  | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall använder du i stället biblioteken som ingår i användargränssnittet för datainsamling. |
 | Kodhanteraren - webbtjänster | x |  |  |  | Ger åtkomst till Code Manager via 1.4-API:t. |
 | Dölj rapportsviter | x |  |  |  | Ger åtkomst till Admin > All admin > Company settings > Hide Report Suites. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
 | Integreringar (skapa) | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren skapa dataanslutningar. |
