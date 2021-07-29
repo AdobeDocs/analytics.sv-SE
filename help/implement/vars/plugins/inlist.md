@@ -1,14 +1,13 @@
 ---
 title: inList
 description: Kontrollera om ett värde finns i ett annat teckenavgränsat värde.
-translation-type: tm+mt
-source-git-commit: 27d151abe9bdf52c6eabdc3e9c785a99d08f971e
+exl-id: 7eedfd01-2b9a-4fae-a35b-433ca6900f27
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
-
 
 # Adobe plug-in: inList
 
@@ -18,11 +17,11 @@ ht-degree: 0%
 
 Med plugin-programmet `inList` kan du kontrollera om ett värde redan finns i en avgränsad sträng eller i ett JavaScript-arrayobjekt. Flera andra plugin-program är beroende av att plugin-programmet `inList` fungerar. Denna plugin ger en tydlig fördel jämfört med JavaScript-metoden `indexOf()` där den inte matchar partiella strängar. Om du till exempel använde det här plugin-programmet för att kontrollera `"event2"` matchar det inte en sträng som innehåller `"event25"`. Denna plugin behövs inte om du inte behöver kontrollera värden i avgränsade strängar eller arrayer, eller om du vill använda din egen `indexOf()`-logik.
 
-## Installera plugin-programmet med Adobe Experience Platform Launch-tillägget
+## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
 1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
@@ -34,11 +33,11 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
    * Åtgärdstyp: Initiera inList
 1. Spara och publicera ändringarna i regeln.
 
-## Installera plugin-programmet med den anpassade kodredigeraren för Launch
+## Installera plugin-programmet med en anpassad kodredigerare
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 1. Klicka på önskad egenskap.
 1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
@@ -101,7 +100,7 @@ if(s.inList(s.events,"event2"))
 
 ...villkorssatsen if är false eftersom anropet inList inte gav någon exakt matchning mellan event2 och något av de avgränsade värdena i s.events
 
-### Exempel 3
+### Exempel 2
 
 Om..
 
@@ -170,5 +169,3 @@ if(s.inList(s.linkTrackVars,"eVar1","|"))
 ### v1.0 (2009)
 
 * Ursprunglig version.
-
-
