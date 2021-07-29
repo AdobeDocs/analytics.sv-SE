@@ -1,40 +1,39 @@
 ---
 title: cookieDomainPeriods
 description: Hjälp AppMeasurement att förstå vilken domän cookies ska lagras i om din domän har en punkt i suffixet.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: e994a188-1dab-4bf0-912b-cd2f6a1032e0
+source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 1%
+source-wordcount: '259'
+ht-degree: 0%
 
 ---
 
-
 # fpCookieDomainPeriods
 
-Variabeln hjälper AppMeasurement att avgöra var Analytics cookies är angivna genom att anropa att domänsuffixet har en extra period. `fpCookieDomainPeriods` Den här variabeln tillåter AppMeasurement att anpassa den extra perioden i domänsuffixet och ange cookies på rätt plats. Den ärver värdet av [`cookieDomainPeriods`](cookiedomainperiods.md), men är ändå en bra metod att ange om du använder en cookie-implementering från en annan leverantör.
+Variabeln `fpCookieDomainPeriods` hjälper AppMeasurement att avgöra var Analytics-cookies anges genom att anropa att domänsuffixet har en extra period. Den här variabeln tillåter AppMeasurement att anpassa den extra perioden i domänsuffixet och ange cookies på rätt plats. Den ärver värdet [`cookieDomainPeriods`](cookiedomainperiods.md), men är ändå en bra metod att ange om du använder en cookie-implementering från en annan leverantör.
 
-* För domäner som `example.com` eller `www.example.com`behöver variabeln inte anges. Om det behövs kan du ange variabeln till `"2"`.
-* För domäner som `example.co.uk` eller `www.example.co.jp`anger du den här variabeln som `"3"`.
+* För domäner som `example.com` eller `www.example.com` behöver den här variabeln inte anges. Om det behövs kan du ställa in den här variabeln på `"2"`.
+* För domäner som `example.co.uk` eller `www.example.co.jp` anger du den här variabeln till `"3"`.
 
 >[!IMPORTANT]
 >
->Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `fpCookieDomainPeriods` på exempel-URL `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
+>Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `fpCookieDomainPeriods` för exempel-URL:en `store.toys.example.com`. AppMeasurement identifierar som standard att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
 
-## Första parts domänperioder i Adobe Experience Platform Launch
+## Första parts domänperioder som använder taggar i Adobe Experience Platform
 
-Första parts domänperioder är ett fält under [!UICONTROL Cookies] dragspelet när Adobe Analytics-tillägget konfigureras.
+Första parts domänperioder är ett fält under dragspelet [!UICONTROL Cookies] när tillägget Adobe Analytics konfigureras.
 
-1. Logga in på [launch.adobe.com](https://launch.adobe.com) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] fliken och klicka sedan på [!UICONTROL Configure] knappen under Adobe Analytics.
-4. Expandera dragspelsfliken, som visar [!UICONTROL Cookies] [!UICONTROL First-party Domain Periods] fältet.
+3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
+4. Expandera dragspelet [!UICONTROL Cookies], som visar fältet [!UICONTROL First-party Domain Periods].
 
 Ange det här fältet som `3` endast för domäner som innehåller en punkt i suffixet. Annars kan fältet lämnas tomt.
 
-## s.fpCookieDomainPeriods i AppMeasurement och Launch, anpassad kodredigerare
+## s.fpCookieDomainPeriods i AppMeasurement och anpassad kodredigerare
 
-Variabeln `fpCookieDomainPeriods` är en sträng som vanligtvis är inställd på `"3"`endast i domäner som innehåller en punkt i suffixet. Dess standardvärde är `"2"`, vilket ger plats för de flesta domäner.
+Variabeln `fpCookieDomainPeriods` är en sträng som vanligtvis är inställd på `"3"`, endast i domäner som innehåller en punkt i suffixet. Dess standardvärde är `"2"`, som rymmer de flesta domäner.
 
 ```js
 // Manually set fpCookieDomainPeriods for domains with a period in its suffix, such as www.example.co.uk
