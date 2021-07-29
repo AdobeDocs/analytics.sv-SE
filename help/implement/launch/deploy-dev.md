@@ -2,10 +2,10 @@
 title: Distribuera Adobe Analytics till en dev-miljö
 description: Lär dig hur du använder taggar för att distribuera Adobe Analytics till din utvecklingsmiljö.
 exl-id: 324943db-cb0b-40b1-8884-56bb3f608278
-source-git-commit: 9b9a338e3652c85ae0f8ce79b98a2babf427ab4c
+source-git-commit: ea6812c8e596773abb8a05bbdb37bc641967c9b8
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 1%
+source-wordcount: '594'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ När du har skapat och konfigurerat en taggegenskap är biblioteken klara att di
 
 Taggar kan hantera många organisatoriska arbetsflöden när kod distribueras. Följ de här stegen för att skapa de komponenter som krävs för en Analytics-implementering. Som tagghanterare kan du arbeta inom organisationen för att skapa rätt arbetsflöde för att distribuera Adobe-lösningar.
 
-1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 3. Klicka på fliken Adaptrar och sedan på Lägg till adapter.
 4. Ge den namnet&quot;Akamai&quot; och välj Akamai i listrutan. Klicka på Spara.
@@ -37,7 +37,7 @@ Taggar kan hantera många organisatoriska arbetsflöden när kod distribueras. F
 
 Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publicerats. Om du skapar ett bibliotek som är ungefär översatt som en samling ändringar kan du publicera kod på webbplatsen.
 
-1. Gå till [Adobe Experience Platform Launch](https://launch.adobe.com) och logga in om du uppmanas till det.
+1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
 2. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 3. Klicka på fliken Publicering och sedan på Lägg till nytt bibliotek.
 4. Ge biblioteket namnet &#39;Inledande ändringar&#39; och välj en utvecklingsmiljö.
