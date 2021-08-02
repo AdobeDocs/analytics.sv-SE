@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
-source-git-commit: 746c2cfd3236df7ec7498749015ddf75c1e558f5
+source-git-commit: 120b0ff4ed2ebd3870e56ca9fabd3364b7745a7c
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 90%
@@ -56,7 +56,7 @@ ht-degree: 90%
    + [Publiceringswidget](admin/publishing-widgets-admin.md)
    + [Inställningshanteraren](admin/preferences-manager.md)
    + [Sekretessinställningar](admin/privacy-settings.md)
-   + [Sekretessinställningar](admin/privacy-reporting.md)
+   + [Sekretessrapportering](admin/privacy-reporting.md)
    + Behandlingsregler {#processing-rules}
       + [Översikt över behandlingsregler](admin/c-processing-rules/processing-rules.md)
       + Konfiguration av behandlingsregler {#processing-rules-configuration}
