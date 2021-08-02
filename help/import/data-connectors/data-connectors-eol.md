@@ -2,9 +2,9 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 exl-id: b407675a-9fcf-4f24-bc88-69ccdb5b3658
-source-git-commit: 5238ea3393deb6bc1089460b44b46a8e5cd7ffd0
+source-git-commit: 711020fc00aaaf546b2daf343c28634f7a693b50
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '667'
 ht-degree: 8%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 I över ett decennium har Adobe Analytics siktat på att tillhandahålla den bästa lösningen för webb- och marknadsföringsanalys som uppfyller kundernas behov. I takt med att teknologi- och affärsbehoven utvecklas strävar vi efter att kontinuerligt leverera och uppfylla de högsta standarderna.  Tyvärr uppfyller de API:er som stöder den här integreringen inte längre dessa standarder och kan inte användas i den moderna Adobe Analytics-teknikinfrastrukturen.
 
-**Från och med den 1 augusti 2021** har Adobe för avsikt att upphöra med integreringar av dataanslutningar. Slutet av livscykeln är en del av en teknikprodukts livscykel och Adobe vill göra övergången så smidig som möjligt för våra kunder och partners. Många av dessa integreringar är tillgängliga via Adobe Exchange och kan fortsätta att användas.
+**Från och med 1 augusti 2021** har Adobe upphört med integreringen av dataanslutningar. Slutet av livscykeln är en del av en teknikprodukts livscykel och Adobe vill göra övergången så smidig som möjligt för våra kunder och partners. Många av dessa integreringar är tillgängliga via Adobe Exchange och kan fortsätta att användas.
 
 ## Varför upphör den här funktionen?
 
@@ -30,6 +30,8 @@ Alla företag som erbjuder en integrering fick möjlighet att migrera sin integr
 Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 
 ## Status för Data Connector-partner
+
+*Senaste uppdatering: 2 augusti 2021 (Hootsuite)*
 
 | Partner | Status |
 | --- | --- |
@@ -74,7 +76,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Fiksu | Undertryckt |
 | Foresee (v2.0), Foresee Feedback, Foresee Results | Undertryckt |
 | Gigya | Undertryckt |
-| Hootsuite | Undertryckt |
+| Hootsuite | Migrerar till Exchange |
 | hybris | Undertryckt |
 | Kampyle (nu Medallia) Feedback Analytics (1.1) | Undertryckt |
 | Listrak | Migrerar till Exchange |
