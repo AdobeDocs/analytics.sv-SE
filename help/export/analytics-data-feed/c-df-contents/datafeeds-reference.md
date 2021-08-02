@@ -6,10 +6,9 @@ title: Referens för datakolumner
 feature: Rapporter och analysgrunder
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: f7cdf0f407c5299072784336c252f6c466e3099b
 workflow-type: tm+mt
-source-wordcount: '3405'
+source-wordcount: '3409'
 ht-degree: 0%
 
 ---
@@ -275,7 +274,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `visit_referrer` | Den första referenten till besöket. | varchar(255) |
 | `visit_search_engine` | Numeriskt ID för besökets första sökmotor. Använder `search_engines.tsv`-sökning. | smallint unsigned |
 | `visit_start_page_url` | Besökets första URL. | varchar(255) |
-| `visit_start_pagename` | Besökets första sidnamn. | varchar(100) |
+| `visit_start_pagename` | Värdet för Sidnamn i den första träffen av besöket. | varchar(100) |
 | `visit_start_time_gmt` | Tidsstämpel (i Unix-tid) för besökets första träff. | int |
 | `weekly_visitor` | Flagga som avgör om träffen är en ny besökare varje vecka. | tinyint unsigned |
 | `yearly_visitor` | Flagga som avgör om träffen är en ny årlig besökare. | tinyint unsigned |
