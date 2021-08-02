@@ -2,9 +2,9 @@
 title: getNewRepeat
 description: Spåra aktiviteter för nya eller återkommande besökare.
 exl-id: 8f64e176-1926-4cb1-bfae-09d7e2c015ae
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: 13060d08c8ffff01d8dae379e090c53e61fa6476
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -69,42 +69,42 @@ Detta plugin-program använder en cookie med namnet `"s_nr[LENGTH]"` där `[LENG
 
 ### Exempel 1
 
-Följande kod ställer in s.eVar1 som lika med värdet &quot;Nytt&quot; för nya besökare och fortsätter att ställa in s.eVar1 som värdet &quot;Nytt&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
+Följande kod ställer in `eVar1` på värdet `"New"` för nya besökare och fortsätter att ställa in `eVar1` på värdet `"New"` (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
 ```js
-s.eVar1=s.getNewRepeat();
+s.eVar1 = getNewRepeat();
+```
+
+### Exempel 3
+
+Om besökaren kommer tillbaka till webbplatsen när som helst från 31 minuter till 30 dagar sedan den senaste gången `getNewRepeat()` anropades, sätter följande kod `eVar1` till värdet `"Repeat"` och fortsätter att ställa in `eVar1` till värdet `"Repeat"` (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
+
+```js
+s.eVar1 = getNewRepeat();
 ```
 
 ### Exempel 2
 
-Om besökaren kommer tillbaka till webbplatsen när som helst mellan 31 minuter och 30 dagar sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att ange värdet s.eVar1 som lika med värdet &quot;Repeat&quot; och kommer att fortsätta att ange s.eVar1 som lika med värdet &quot;Repeat&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
+Om besökaren inte har varit på webbplatsen på minst 30 dagar sedan den senaste gången `getNewRepeat()` anropades, sätter följande kod `eVar1` till värdet `"New"` och fortsätter att ställa in `eVar1` till värdet `"New"` (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
 ```js
-s.eVar1=s.getNewRepeat();
-```
-
-### Exempel 2
-
-Om besökaren inte har varit på webbplatsen på minst 30 dagar sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att ange värdet s.eVar1 som &quot;Nytt&quot; och fortsätta att ange s.eVar1 som lika med värdet &quot;Nytt&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
-
-```js
-s.eVar1=s.getNewRepeat();
+s.eVar1 = getNewRepeat();
 ```
 
 ### Exempel 4
 
-Om besökaren kommer tillbaka till webbplatsen när som helst 31 minuter till 365 dagar (dvs. 1 år) sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att anges som 1.eVar1 lika med värdet för &quot;Repeat&quot; och kommer att fortsätta att anges som s.eVar1 lika med värdet för &quot;Repeat&quot; (med varje nytt anrop) under resten av besökarens besöka webbplatsen.
+Om besökaren kommer tillbaka till webbplatsen 31 minuter till 365 dagar (dvs. 1 år) sedan den senaste gången `getNewRepeat()` anropades, sätter följande kod `eVar1` till värdet `"Repeat"` och fortsätter att ställa in `eVar1` till värdet `"Repeat"` (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
 ```js
-s.eVar1=s.getNewRepeat(365);
+s.eVar1 = getNewRepeat(365);
 ```
 
 ### Exempel 5
 
-Om besökaren inte har varit på webbplatsen på minst 365 dagar (dvs. 1 år) sedan den senaste gången s.getNewRepeat() anropades, kommer följande kod att anges som .eVar1 lika med värdet &quot;Nytt&quot; och kommer att fortsätta att anges som s.eVar1 lika med värdet &quot;Nytt&quot; (för varje nytt anrop) under resten av besökarens besök på webbplatsen .
+Om besökaren inte har varit på webbplatsen på minst 365 dagar (dvs. 1 år) sedan den senaste gången `getNewRepeat()` anropades, sätter följande kod `eVar1` till värdet `"New"` och fortsätter att ställa in `eVar1` till värdet `"New"` (för varje nytt anrop) under resten av besökarens besök på webbplatsen.
 
 ```js
-s.eVar1=s.getNewRepeat(365);
+s.eVar1 = getNewRepeat(365);
 ```
 
 ## Versionshistorik
