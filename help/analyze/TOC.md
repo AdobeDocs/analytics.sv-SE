@@ -4,10 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-translation-type: tm+mt
-source-git-commit: 20e57f1bef787329d7b871edd9e337b57feeb4e9
+source-git-commit: 064674c3fa19f485850c4af6298c134d640d17bd
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1013'
 ht-degree: 87%
 
 ---
@@ -89,7 +88,7 @@ ht-degree: 87%
          + [Översikt över segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
          + [Användningsexempel på segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-compare-use-cases.md)
          + [Statistiska tester som används vid segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/statistical-test.md)
-   + Samla in eller dela projekt {#curate-share}
+   + Kuratera, dela och schemalägg projekt {#curate-share}
       + [Dela-menyn](analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](analysis-workspace/curate-share/curate.md)
       + [Dela projekt](analysis-workspace/curate-share/share-projects.md)
@@ -122,14 +121,14 @@ ht-degree: 87%
          + [Intelligenta aviseringar – användningsexempel](analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [Användarinställningar](analysis-workspace/user-preferences.md)
    + Vanliga frågor om Workspace {#workspace-faq}
-      + [Vanliga frågor](analysis-workspace/workspace-faq/faq.md)
+      + [Frågor och svar](analysis-workspace/workspace-faq/faq.md)
       + [Optimera prestanda för Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Felmeddelanden](analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar i Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet i Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
 + Report Builder {#report-builder}
-   + [Adobe Report Builder – hjälp](report-builder/home.md)
+   + [Adobe Report Builder - hjälp](report-builder/home.md)
    + Konfigurera Report Builder {#report-builder-setup}
       + [Systemkrav](report-builder/setup/system-requirements.md)
       + [Installera Report Builder](report-builder/setup/t-install-arb.md)
@@ -161,7 +160,7 @@ ht-degree: 87%
          + [Definitioner i frågeguiden – fasta datum](report-builder/data-requests/configuring-report-dates/r-arb-fixed-dates.md)
          + [Rullande datum](report-builder/data-requests/configuring-report-dates/t-rolling-dates.md)
          + [Definitioner i frågeguiden – rullande datum](report-builder/data-requests/configuring-report-dates/r-arb-rolling-dates.md)
-         + [Rapporter i realtid](report-builder/data-requests/configuring-report-dates/real-time.md)
+         + [Realtidsrapporter](report-builder/data-requests/configuring-report-dates/real-time.md)
          + [Konfigurera en realtidsförfrågan](report-builder/data-requests/configuring-report-dates/t-real-time.md)
          + Anpassade datumuttryck {#customized-date-expressions}
             + [Anpassade datumuttryck – översikt](report-builder/data-requests/configuring-report-dates/c-customized-date-expressions/t-customized-date-expressions.md)
@@ -170,7 +169,7 @@ ht-degree: 87%
             + [Exempel på datumintervall med anpassade uttryck](report-builder/data-requests/configuring-report-dates/c-customized-date-expressions/examples-of-date-ranges-using-customized-expressions.md)
             + [Överväganden](report-builder/data-requests/configuring-report-dates/c-customized-date-expressions/considerations.md)
          + [Datum från en cell](report-builder/data-requests/configuring-report-dates/t-dates-from-a-cell.md)
-         + [Granularitet](report-builder/data-requests/configuring-report-dates/granularity.md)
+         + [Kornighet](report-builder/data-requests/configuring-report-dates/granularity.md)
          + [Anpassad kalender](report-builder/data-requests/configuring-report-dates/custom-calendar.md)
       + [Interaktiva kontroller](report-builder/data-requests/interactive-controls.md)
    + Layout – frågeguide steg 2 {#layout}
@@ -301,7 +300,7 @@ ht-degree: 87%
    + [Dataextrahering](reports-analytics/data-extract.md)
    + [Trattrapporter](reports-analytics/funnels.md)
    + [Mätvärden](reports-analytics/metrics.md)
-   + [Mål](reports-analytics/targets.md)
+   + [Målgrupper](reports-analytics/targets.md)
    + [Larm](reports-analytics/alerts.md)
    + [Kalenderhändelser](reports-analytics/t-calendar-event.md)
    + [Vanliga frågor](reports-analytics/frequently-asked-questions.md)
