@@ -2,9 +2,9 @@
 title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: f8f81f034cf29151a705a0238d0055c72e7bc7b8
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Variabeln `products` spårar produkter och egenskaper som är kopplade till dem.
 
 >[!NOTE]
 >
->Om den här variabeln anges i en träff utan en kundvagnshändelse i variabeln [`events`](events/events-overview.md), ökar måtten för [produktvyer](/help/components/metrics/product-views.md) med 1. Se till att du ställer in rätt kundvagnshändelse för varje träff med variabeln `products`.
+>Om den här variabeln anges i en träff utan variabeln [`events`](events/events-overview.md) ökas måttet för [produktvyer](/help/components/metrics/product-views.md) med 1. Se till att du anger lämpliga händelser för varje träff med variabeln `products`.
 
 ## Produkter som använder taggar i Adobe Experience Platform
 
