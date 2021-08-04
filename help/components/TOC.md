@@ -4,10 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
-translation-type: tm+mt
-source-git-commit: 3fab253cb7c9aad0f0b1e82fee48a69822305099
+source-git-commit: 98463103e6e2ba19d11629d40dacc0c02f5b33c9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '642'
 ht-degree: 54%
 
 ---
@@ -69,7 +68,7 @@ ht-degree: 54%
    + [Operativsystemstyper](dimensions/operating-system-types.md)
    + [Operativsystem](dimensions/operating-systems.md)
    + [Ursprunglig hänvisande domän](dimensions/original-referring-domain.md)
-   + [Sidadress](dimensions/page-url.md)
+   + [Sidans URL](dimensions/page-url.md)
    + [Sida](dimensions/page.md)
    + [Sidorna hittades inte](dimensions/pages-not-found.md)
    + [Betalsökning](dimensions/paid-search.md)
@@ -103,6 +102,7 @@ ht-degree: 54%
    + [Postnummer](dimensions/zip-code.md)
 + Mätvärden {#metrics}
    + [Översikt över mätvärden](metrics/overview.md)
+   + [Antal upprepande instanser](metrics/count-repeat-instances.md)
    + [Genomsnittligt siddjup](metrics/average-page-depth.md)
    + [Genomsnittlig sidvisning per besök](metrics/average-page-views-per-visit.md)
    + [Genomsnittlig sessionslängd](metrics/average-session-length.md)
@@ -166,7 +166,7 @@ ht-degree: 54%
       + [Segmentkompatibilitet för Data Warehouse](segmentation/seg-reference/seg-compatibility.md)
       + [Segmentbehörigheter efter roll](segmentation/seg-reference/seg-rights.md)
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
-   + [Vanliga frågor](segmentation/seg-transition.md)
+   + [Frågor och svar](segmentation/seg-transition.md)
    + [God praxis](segmentation/best-practices.md)
 + Beräknade mätvärden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) värden](c-calcmetrics/cm-overview.md)
