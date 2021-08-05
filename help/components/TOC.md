@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
-source-git-commit: 98463103e6e2ba19d11629d40dacc0c02f5b33c9
+source-git-commit: 17973777196ef101320f3d91e5b8e416a69721a6
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '644'
 ht-degree: 54%
 
 ---
@@ -231,6 +231,7 @@ ht-degree: 54%
       + [Klassificeringsmall](classifications/importer/c-download-saint-data.md)
       + [Import via webbläsare och FTP](classifications/importer/import-file.md)
       + [Import via webbläsare](classifications/importer/browser-import.md)
+      + [Webbläsarexport](classifications/importer/browser-export.md)
       + [FTP-import](classifications/importer/c-uploading-saint-data-files-via-ftp.md)
       + [Bearbetningstid](classifications/importer/processing-time.md)
       + [Felsökning](classifications/importer/troubleshooting.md)
