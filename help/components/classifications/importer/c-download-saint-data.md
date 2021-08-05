@@ -2,20 +2,19 @@
 description: (Valfritt) Innan du importerar klassificeringar till marknadsföringsrapporter kan du hämta en mall som hjälper dig att skapa en klassificeringsdatafil. I datafilen används de klassificeringar du vill använda som kolumnrubriker, och sedan ordnas rapportdatauppsättningen under rätt klassificeringsrubriker.
 subtopic: Classifications
 title: Klassificeringsmall
-feature: Admin Tools
+feature: Administratörsverktyg
 uuid: 4edd411b-164c-4b4d-a872-b57a3163ca72
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: eb256b6d8308792747710284d2bfbaa4b5044b2a
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 4%
+source-wordcount: '344'
+ht-degree: 3%
 
 ---
 
 
 # Klassificeringsmall
 
-(Valfritt) Innan du importerar klassificeringar till marknadsföringsrapporter kan du hämta en mall som hjälper dig att skapa en klassificeringsdatafil. I datafilen används de klassificeringar du vill använda som kolumnrubriker, och sedan ordnas rapportdatauppsättningen under rätt klassificeringsrubriker.
+(Valfritt) Innan du importerar klassificeringar till rapporter och projekt kan du hämta en mall som hjälper dig att skapa en klassificeringsdatafil. I datafilen används de klassificeringar du vill använda som kolumnrubriker, och sedan ordnas rapportdatauppsättningen under rätt klassificeringsrubriker.
 
 ## Klassificeringsmall {#concept_0F06847AD8D042F5BA818AE3C37E2417}
 
@@ -24,10 +23,11 @@ ht-degree: 4%
 **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 
 | Element | Beskrivning |
-|---|---|
+| --- | ---|
 | Välj Report Suite | Välj den rapportsvit som ska användas i mallen. Rapportsviten och datauppsättningen måste matcha. |
 | Datauppsättning som ska klassificeras | Välj datatyp för datafilen. Menyn innehåller alla rapporter i rapportsviterna som är konfigurerade för klassificeringar. |
-| Kodning | Välj teckenkodning för datafilen. Standardkodningsformatet är UTF-8. |
+| Exportera numeriskt 2 | **Viktigt**: Det här alternativet är inte tillgängligt för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen. |
+| Kodning | Välj teckenkodning för datafilen. Standardkodningsformatet är UTF-8.<br>**Viktigt**: Det här alternativet är inte tillgängligt för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen. |
 | Hämta | Hämtar mallfilen. |
 
 Mallen innehåller de för närvarande definierade klassificeringarna (kolumnrubriker) för en viss datauppsättning utan att inkludera de data som är kopplade till varje klassificering.
