@@ -4,9 +4,9 @@ subtopic: Classifications
 title: Datafiler för klassificering
 feature: Administratörsverktyg
 uuid: f27bb812-56e0-472a-9993-d869f0fea700
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: eb256b6d8308792747710284d2bfbaa4b5044b2a
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1736'
 ht-degree: 0%
 
 ---
@@ -178,6 +178,9 @@ Mer information finns i [Konverteringsklassificeringar](https://experienceleague
 * Det berörda datumintervallet måste innehålla ett startdatum och (eventuellt) ett slutdatum.
 
 Så här klassificerar du kampanjer baserat på datumintervall:
+
+>[!IMPORTANT]
+>Det här alternativet är inte tillgängligt för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen.
 
 1. Logga in på [!DNL Analytics] och gå till Admin > Klassificeringar.
 1. Klicka på fliken **[!UICONTROL Browser Export]**, kontrollera att inställningarna för den datumaktiverade klassificeringen är korrekta och klicka sedan på Exportera fil.
