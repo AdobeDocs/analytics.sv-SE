@@ -3,10 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 22f82125b5a0bb14c4446cb89b43889a3e4d8b5a
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 84%
+source-wordcount: '741'
+ht-degree: 50%
 
 ---
 
@@ -19,12 +19,30 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 * Mer information om nya funktioner finns i [Nya funktioner i Analysis Workspace](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) i användarhandboken för verktyg.
 * Mer information om Adobe Analytics för ljud och video finns i [Mäta ljud och video i Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-## Information om större uppdateringar
+## Information om större dokumentationsuppdateringar
 
 | Datum | Beskrivning |
 |---|---|
+| 5 augusti 2021 | Nytt ämne i [Antal upprepande instanser](https://experienceleague.adobe.com/docs/analytics/components/metrics/count-repeat-instances.html) |
+| 23 juli 2021 | Detaljerad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en) |
+| 15 juli 2021 | Lagt till ny dokumentation på [Adobe Analytics startsida](https://experienceleague.adobe.com/docs/analytics/landing/an-landing.html) |
+| 15 juni 2021 | Uppdaterat [Bästa praxis för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html) |
+| 3 juni 2021 | Dokumentationen har uppdaterats för att ge en bättre förklaring till [implementering av dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html?lang=en) och [här](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#BucketOwnerFullControl). |
+| 25 maj 2021 | Dokumentationen om [skiftlägeskänslighet för eVar i rapportering](https://experienceleague.adobe.com/docs/analytics/components/dimensions/evar.html) har uppdaterats. |
+| 13 maj 2021 | Uppdateringar av [Data warehouse API-begäranden](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/reporting-api/data_warehouse.md). De har nu stöd för&quot;Timmar&quot;. |
+| Mars, april 2021 | Uppdateringar av Adobe Analytics dashboards [Executive guide](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/executive.html) and [Curator guide](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) |
+| 25 mars 2021 | [API-](https://github.com/AdobeDocs/analytics-2.0-apis/blob/master/data-repair.md) uppdateringar för datareparation (filtrering för URL:er, frågesträngar, vid tecken med mera) |
+| 25 mars 2021 | Ny [API-dokumentation för användningslogg](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/usage-logs.md) |
+| 14 januari 2021 | Tillagda språkvalsalternativ för kontrollpaneler i Analytics. |
 | November 2020 | Nya granskningsdokument för implementering: <ul><li>[Fullständig utvärdering](https://experienceleague.adobe.com/docs/analytics/implementation/review/full-review.html)</li><li>[Fokuserad implementeringsgranskning](https://experienceleague.adobe.com/docs/analytics/implementation/review/focused-review.html)</li></ul> |
+| 23 oktober 2020 | Förbättringar har lagts till i dokumentationen för Adobe Analytics kontrollpaneler. I det mobila styrkortet i Workspace matchar nu styrkortets format appen. |
+| 17 september 2020 | Ny dokumentation om [Media Concurrent Viewer-panelen i Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html) |
+| 31 augusti 2020 | Förbättringar har lagts till i [fältbaserad sammanslagningsdokumentation](https://experienceleague.adobe.com/docs/analytics/components/cda/field-based-stitching.html) i Enhetsövergripande analys. |
 | 21 juli 2020 | Stora uppdateringar och revideringar av [Enhetsövergripande analys](/help/components/cda/overview.md). Lade till [Fältbaserad sammanfogning](/help/components/cda/field-based-stitching.md). |
+| 18 juni 2021 | Ny dokumentation om [Attribution IQ: Algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
+| 18 juni 2021 | Ny dokumentation om [Attribution IQ: Anpassade fönster för uppslag](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html?lang=en#lookback-windows) |
+| 31 maj 2020 | Ny dokumentation om [API för datainmatning i grupp](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) |
+| 21 maj 2020 | Ny dokumentation för [Adobe Analytics-kontrollpaneler](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html) |
 | 28 april 2020 | Dokumentation för mätvärdet [Content Velocity](/help/components/metrics/content-velocity.md) har lagts till. |
 | 12 mars 2020 | [Publicera segment i Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-publish.md) har uppdaterats. |
 | 12 mars 2020 | Uppdateringar av svarstider för CDA-sammanfogning. |
