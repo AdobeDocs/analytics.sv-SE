@@ -1,13 +1,13 @@
 ---
-description: Steg som beskriver hur du överför datafiler via FTP.
+description: Så här överför du datafiler via FTP.
 subtopic: Classifications
 title: FTP-import
 feature: Administratörsverktyg
 uuid: a914970d-ba02-4111-9dcf-06448f71b9f3
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: 17973777196ef101320f3d91e5b8e416a69721a6
+source-git-commit: 32196fc76b2743679516a00f86c4912fac0bb3cf
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '695'
 ht-degree: 2%
 
 ---
