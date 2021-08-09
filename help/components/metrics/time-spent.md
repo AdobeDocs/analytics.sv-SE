@@ -1,14 +1,13 @@
 ---
 title: Hur tidsåtgången beräknas i Adobe Analytics
 description: En sammanställd sida med tid för mått och mått.
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: 71e9b856-8a0a-47be-a73f-4dc7d639a5de
+source-git-commit: 085fd95da383671a51ce1e5888bea3db92c038bd
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1453'
 ht-degree: 6%
 
 ---
-
 
 # Tidsåtgång - översikt
 
@@ -22,6 +21,7 @@ Olika [!UICONTROL 'time spent'] mått och mått erbjuds för alla Adobe Analytic
 | [!UICONTROL Time spent per visit] (sekunder) | *Totalt antal sekunder per besök / (besöksgräns)*<br> Representerar den genomsnittliga tiden besökare interagerar med en viss dimensionspost under varje besök. | Analysis Workspace, rapporter och analyser |
 | [!UICONTROL Time spent per visitor] (sekunder) | *Totalt antal sekunder som tillbringats/unik*<br> besökareRepresenterar den genomsnittliga tiden som besökarna interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). | Analysis Workspace, rapporter och analyser |
 | [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Obs**: Detta mätvärde skiljer sig sannolikt från&quot;Time Spent per Visit&quot; på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Rapporter och analyser (visas på några minuter), Report Builder (visas på några minuter) |
+| [!UICONTROL Average time on site] | Detta är samma mått som *Genomsnittlig tid på plats (sekunder)*, utom formaterad som Tid (hh:mm:ss) | Analysis Workspace |
 | [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> Vi rekommenderar i stället att du använder&quot;Genomsnittlig tid på plats&quot; om en dimensionspost behöver genomsnittstid. | Report Builder (när det finns en dimension i begäran) |
 | [!UICONTROL Total session length], alias.  [!UICONTROL Previous session length] | Endast Mobile App SDK. <br>Fastställd nästa gång appen startas för föregående session. Det här måttet beräknas i sekunder och räknas inte när programmet körs i bakgrunden. Detta är ett mått på sessionsnivå.<br>Exempel: Vi installerar appen ABC och startar och använder den i 2 minuter och stänger sedan appen. Inga data skickas om den här sessionstiden. Nästa gång vi startar programmet skickas [!UICONTROL Previous Session Length] med värdet 120. | Analysis Workspace, rapporter och analyser, Report Builder, användargränssnitt för mobiltjänster |
 | [!UICONTROL Average session length] (mobil) | *Total sessionslängd / (startar - första starten)Endast*<br> Mobile App SDK. Detta är ett mått på sessionsnivå. | Report Builder, användargränssnitt för mobiltjänster |
@@ -108,7 +108,7 @@ Därför kan dessa mätvärden ge liknande resultat på besöksnivå, men de kom
 
 Anta att följande uppsättning serversamtal är för en enskild besökare vid ett enda besök:
 
-| Besök träffnummer | 1 | 2 | 1 | 4 | 5 | 6 | 7 |
+| Besök träffnummer | 3 | 2 | 1 | 4 | 5 | 6 | 7 |
 |---|---|---|---|---|---|---|---|
 | **Besök förfluten tid (i sek)** | 0 | 30 | 80 | 180 | 190 | 230 | 290 |
 | **Sekunder som använts** | 30 | 50 | 100 | 10 | 40 | 60 | - |
@@ -126,14 +126,14 @@ Baserat på tabellen ovan beräknas tidsåtgången enligt följande:
 | prop1 | Totalt antal sekunder som använts | Tid per besök | Tid per besökare | Antal sekvenser | Genomsnittlig tid på webbplatsen |
 |---|---|---|---|---|---|
 | A | 30+50+60=140 | 140/1=140 | 140/1=140 | 2 | 140/2=70 |
-| B | 10+40=50 | 50/1=50 | 50/1=50 | 1 | 50/1=50 |
+| B | 10+40=50 | 50/1=50 | 50/1=50 | 3 | 50/1=50 |
 | C | 0 | 0 | 0 | 0 | 0 |
 | Otilldelad tid | 100 | - | - | - | - |
 
 | eVar1 | Totalt antal sekunder som använts | Tid per besök | Tid per besökare | Antal sekvenser | Genomsnittlig tid på webbplatsen |
 |---|---|---|---|---|---|
-| Röd | 30+50=80 | 80/1=80 | 80/1=80 | 1 | 80/1=80 |
-| Blå | 10+40+60=110 | 110/1=110 | 110/1=110 | 1 | 110/1=110 |
+| Röd | 30+50=80 | 80/1=80 | 80/1=80 | 3 | 80/1=80 |
+| Blå | 10+40+60=110 | 110/1=110 | 110/1=110 | 3 | 110/1=110 |
 | Otilldelad tid | 100 | - | - | - | - |
 
 Tid per besök (i detalj): 290
