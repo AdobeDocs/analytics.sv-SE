@@ -4,7 +4,7 @@ subtopic: Marketing channels
 title: Hantera marknadsföringskanaler
 feature: Rapporter och analysgrunder
 exl-id: a768a4c2-f922-4d96-a9fb-78a1dfac04d8
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 2a63ff1072964df823edd09d844630e99c0afd8b
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 1%
@@ -62,7 +62,7 @@ Lägg till marknadsföringskanaler i Marketing Channel Manager.
 
    Se [Skapa regler för bearbetning av marknadsföringskanal](/help/components/c-marketing-channels/c-rules.md).
 
-## Använd kanalinställningar {#mktg-channel-mgr}
+## Använda kanalinställningar {#mktg-channel-mgr}
 
 Det finns olika inställningar som kan användas för varje kanal på sidan [!UICONTROL Marketing Channel Manager].
 
