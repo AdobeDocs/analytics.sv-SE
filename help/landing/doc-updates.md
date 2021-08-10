@@ -3,7 +3,7 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 22f82125b5a0bb14c4446cb89b43889a3e4d8b5a
+source-git-commit: 185ea7f120d918db52233a321dfa629c6bc1c8ee
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 50%
@@ -22,7 +22,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 ## Information om större dokumentationsuppdateringar
 
 | Datum | Beskrivning |
-|---|---|
+| --- | --- |
 | 5 augusti 2021 | Nytt ämne i [Antal upprepande instanser](https://experienceleague.adobe.com/docs/analytics/components/metrics/count-repeat-instances.html) |
 | 23 juli 2021 | Detaljerad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en) |
 | 15 juli 2021 | Lagt till ny dokumentation på [Adobe Analytics startsida](https://experienceleague.adobe.com/docs/analytics/landing/an-landing.html) |
