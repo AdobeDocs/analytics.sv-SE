@@ -5,14 +5,17 @@ title: Nyheter i Analysis Workspace
 feature: Grundläggande om arbetsytan
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 27b04baf5fff026261468678f4b1c49756b4636c
 workflow-type: tm+mt
-source-wordcount: '8164'
+source-wordcount: '8178'
 ht-degree: 88%
 
 ---
 
 # Nyheter i Analysis Workspace
+
+>[!IMPORTANT]
+>Ytterligare Analysis Workspace-uppdateringar har lagts in på sidan [Adobe Analytics Documentation Updates](/help/landing/doc-updates.md).
 
 Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud som helhet går du [hit](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
 
