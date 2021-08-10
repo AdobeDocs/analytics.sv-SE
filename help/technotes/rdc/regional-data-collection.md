@@ -1,14 +1,13 @@
 ---
 title: Regional datainsamling
 description: Information om regional datainsamling
-translation-type: tm+mt
-source-git-commit: 731209e28dab9f17e06948614149a4c99938fdae
+exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
+source-git-commit: f3622023c6c86dd340dc5ce81f81f628da9fbe38
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '451'
 ht-degree: 1%
 
 ---
-
 
 # Regional datainsamling
 
@@ -26,7 +25,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 |---------------------|-------------------|
 | Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney, Kina* |
 
-Obs! Om din Analytics-bildförfrågan skickas till `adobedc`slutpunkterna `2o7.net` eller `omtrdc.net` slutpunkterna har du en datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
+Obs! Om din Analytics-bildbegäran skickas till slutpunkterna `adobedc`, `2o7.net` eller `omtrdc.net` har du en datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
 
 *China RDC kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan.
 
@@ -49,7 +48,6 @@ Obs! Experience Edge Global ger bästa prestanda för dina slutanvändare.  Om d
 | Fördelar | Beskrivning |
 | --- | --- |
 | Prestanda | Med RDC kan besökarna ansluta till närmaste DCC. Detta ger den snabbaste svarstiden, vilket ger mer exakt spårning och snabbare laddningstider. |
-| Redundans | Om kommunikationen med en DCC avbryts dirigeras datainsamlingen automatiskt till nästa närmaste DCC, vilket säkerställer tjänstens kontinuitet. |
 | Redundans | Om kommunikationen mellan DCC och din DPC avbryts, sparar Adobe RDC-infrastruktur data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs. |
 
 ## Så här fungerar RDC
