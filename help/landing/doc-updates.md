@@ -3,10 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 185ea7f120d918db52233a321dfa629c6bc1c8ee
+source-git-commit: f3622023c6c86dd340dc5ce81f81f628da9fbe38
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 50%
+source-wordcount: '1003'
+ht-degree: 53%
 
 ---
 
@@ -23,9 +23,14 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Datum | Beskrivning |
 | --- | --- |
+| **Augusti 2021** |  |
 | 5 augusti 2021 | Nytt ämne i [Antal upprepande instanser](https://experienceleague.adobe.com/docs/analytics/components/metrics/count-repeat-instances.html) |
+| 5 augusti 2021 | Uppdaterad klassificeringsdokumentation för [mallar](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-download-saint-data.html?lang=en), [webbläsarimport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-import.html?lang=en) och [webbläsarexport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-export.html?lang=en) för att visa alternativ som inte är tillgängliga för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen. |
+| 2 augusti 2021 | Flera sidor har uppdaterats för att återspegla omprofileringen av [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en) |
+| **Juli 2021** |  |
 | 23 juli 2021 | Detaljerad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en) |
 | 15 juli 2021 | Lagt till ny dokumentation på [Adobe Analytics startsida](https://experienceleague.adobe.com/docs/analytics/landing/an-landing.html) |
+| **Juni 2021** |  |
 | 15 juni 2021 | Uppdaterat [Bästa praxis för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html) |
 | 3 juni 2021 | Dokumentationen har uppdaterats för att ge en bättre förklaring till [implementering av dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html?lang=en) och [här](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#BucketOwnerFullControl). |
 | 25 maj 2021 | Dokumentationen om [skiftlägeskänslighet för eVar i rapportering](https://experienceleague.adobe.com/docs/analytics/components/dimensions/evar.html) har uppdaterats. |
@@ -34,6 +39,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 25 mars 2021 | [API-](https://github.com/AdobeDocs/analytics-2.0-apis/blob/master/data-repair.md) uppdateringar för datareparation (filtrering för URL:er, frågesträngar, vid tecken med mera) |
 | 25 mars 2021 | Ny [API-dokumentation för användningslogg](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/usage-logs.md) |
 | 14 januari 2021 | Tillagda språkvalsalternativ för kontrollpaneler i Analytics. |
+| **2020** |  |
 | November 2020 | Nya granskningsdokument för implementering: <ul><li>[Fullständig utvärdering](https://experienceleague.adobe.com/docs/analytics/implementation/review/full-review.html)</li><li>[Fokuserad implementeringsgranskning](https://experienceleague.adobe.com/docs/analytics/implementation/review/focused-review.html)</li></ul> |
 | 23 oktober 2020 | Förbättringar har lagts till i dokumentationen för Adobe Analytics kontrollpaneler. I det mobila styrkortet i Workspace matchar nu styrkortets format appen. |
 | 17 september 2020 | Ny dokumentation om [Media Concurrent Viewer-panelen i Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html) |
@@ -54,6 +60,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 4 februari 2020 | Fullständig omarbetning av [användarhandboken för implementering](/help/implement/home.md). |
 | 22 januari 2020 | Sidan om frihandstabeller har uppdaterats med information om nya [Freeform Table Builder](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md). |
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](/help/technotes/cookies/cookies.md) har lagts till. |
+| **2019** |  |
 | 29 november 2019 | Dokumentationen för [dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) har setts över. |
 | 25 november 2019 | Nytt avsnitt om [Slutet av livscykeln för Tvinga begränsningar för IP-inloggning](/help/admin/company/login-restrictions-eol.md). |
 | 21 november 2019 | Ny dokumentation för [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html). |
@@ -68,9 +75,12 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 18 juli 2019 | Uppdaterade [inställningar för kohorttabeller](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md). |
 | 4 juni 2019 | Ny handbok har skrivits med namnet [Migrera från en analysplattform från tredje part till Adobe Analytics](/help/technotes/ga-to-aa/home.md). |
 | 30 maj 2019 | [Referensen för datafeed-kolumner](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) har setts över. |
+| 09 maj 2019 | En ny inställning har lagts till i inställningarna för flödesvisualisering: Inkludera upprepade förekomster. Se [Flödesinställningar](/help/analyze/analysis-workspace/visualizations/c-flow/flow-settings.md) |
+| 11 apr 2019 | Förbättringar av de bästa sätten att optimera arbetsytan: [Optimera prestanda](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) |
 | 11 apr 2019 | Uppdateringar av [Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md). |
 | 14 mars 2019 | Större uppdatering av [Regional datainsamling](/help/technotes/rdc/regional-data-collection.md). |
 | 7 februari 2019 | Mindre uppdatering av inställningarna Ersätt den sista oktetten i IP-adresser med 0 och Dölj IP i [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md). |
 | 1 februari 2019 | Större uppdatering av implementeringsplugin-programmet [getPercentPageViewed](../implement/vars/plugins/getpercentpageviewed.md). |
-| 17 januari 2019 | Ny projektinställning i Analysis Workspace, [View Density](/help/analyze/analysis-workspace/build-workspace-project/view-density.md). |
-| 17 januari 2019 | Större uppdatering av [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md). |
+| 17 januari 2019 | [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)  - Större förbättringar av kohortanalys gör att du kan:<ul><li>Använda segmentinkludering och returnera mätvärden separat. </li><li>Visa bortfall i stället för lojalitet.</li><li>Visa latenstabeller (förfluten tid före och efter en inkluderingshändelse).</li><li>Anpassa kohortmått (för att gruppera besökare baserat på en evariabel, inte bara tid).</li><li>Utföra en rullande kohortberäkning: beräkna lojalitet/bortfall baserat på tidigare tidsperiod, inte ursprunglig kohort. </li><li>Lägga till flera mätvärden i inkluderings- och returfält samt använda segment. (Beräknade värden stöds inte.)</li></ul> |
+| 17 januari 2019 | [Visa densitet](/help/analyze/analysis-workspace/build-workspace-project/view-density.md). Med den här nya inställningen kan du visa mer data på en enda skärm genom att minska den lodräta utfyllnaden i den vänstra listen, friformstabeller och kohorttabeller. Tillgängligt via Projekt > Projektinformation och inställningar. |
+| 17 januari 2019 | [Stöd för flervärdesvariabler i Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md). Vissa mått i Analytics kan innehålla flera värden för en enda träff, till exempel listvariabler, produktvariabler, listegenskaper eller evariabler för försäljning. Med Analysis Workspace kan du använda Attribution IQ på alla dessa variabler på träffnivå. |
