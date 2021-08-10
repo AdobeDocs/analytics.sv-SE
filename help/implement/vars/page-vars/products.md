@@ -2,9 +2,9 @@
 title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: f8f81f034cf29151a705a0238d0055c72e7bc7b8
+source-git-commit: e7d8c716547cdedabf095bb8d6712d0f8b5ad647
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,10 @@ Du kan använda något av dessa tillägg eller så kan du använda den anpassade
 
 ## s.products in AppMeasurement and custom code editor
 
-Variabeln `s.products` är en sträng som innehåller flera avgränsade fält per produkt. Varje enskild produkt kan innehålla upp till 100 byte i alla fält. Avgränsa varje fält med ett semikolon (`;`) i strängen.
+Variabeln `s.products` är en sträng som innehåller flera avgränsade fält per produkt. Avgränsa varje fält med ett semikolon (`;`) i strängen.
 
-* **Kategori**  (valfritt): Den övergripande produktkategorin. Din organisation bestämmer hur produkter ska grupperas i kategorier.
-* **Produktnamn**  (obligatoriskt): Produktens namn.
+* **Kategori**  (valfritt): Den övergripande produktkategorin. Din organisation bestämmer hur produkter ska grupperas i kategorier. Den maximala längden för det här fältet är 100 byte.
+* **Produktnamn**  (obligatoriskt): Produktens namn. Den maximala längden för det här fältet är 100 byte.
 * **Kvantitet**  (valfritt): Hur många av dessa produkter finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
 * **Pris**  (valfritt): Produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar variabeln [`currencyCode`](../config-vars/currencycode.md). Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
 * **Händelser**  (valfritt): Händelser som är kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). Mer information finns i [events](events/events-overview.md).
@@ -44,11 +44,11 @@ Variabeln `s.products` är en sträng som innehåller flera avgränsade fält pe
 s.products = "Example category;Example product;1;3.50;event1=4.99|event2=5.99;eVar1=Example merchandising value 1|eVar2=Example merchandising value 2";
 ```
 
-Den här variabeln har stöd för flera produkter i samma träff. Det är värdefullt för kundvagn och inköp som innehåller flera produkter. Även om det finns en gräns på 100 byte per produkt är den totala längden för variabeln `products` 64 kB. Avgränsa varje produkt med ett komma (`,`) i strängen.
+Den här variabeln har stöd för flera produkter i samma träff. Det är värdefullt för kundvagn och inköp som innehåller flera produkter. Den maximala längden för hela `products`-strängen är 64 kB. Avgränsa varje produkt med ett komma (`,`) i strängen.
 
 ```js
 // Set multiple products - useful for when a visitor views their shopping cart
-s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Example product 2,1,5.99";
+s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Example product 2;1;5.99";
 ```
 
 >[!IMPORTANT]
@@ -99,11 +99,11 @@ s.products = "Example category 1;Example product 1;3;12.60;event1=1.4|event2=9;e
 Om du använder `digitalData` [datalagret](../../prepare/data-layer.md) kan du iterera genom `digitalData.product`-objektarrayen:
 
 ```js
-for(var i=0; i<digitalData.product.length; i++) {
+for(var i = 0; i < digitalData.product.length; i++) {
     // Add individual product info to the product string
     s.products += digitalData.product[i].category.primaryCategory + ";" + digitalData.product[i].productInfo.productName;
     // If there are more products, add a comma
-    if(i != digitalData.product.length-1) {
+    if(i != digitalData.product.length - 1) {
         s.products += ",";
     }
 }
