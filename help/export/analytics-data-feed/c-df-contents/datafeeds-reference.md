@@ -6,9 +6,9 @@ title: Referens för datakolumner
 feature: Rapporter och analysgrunder
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: f7cdf0f407c5299072784336c252f6c466e3099b
+source-git-commit: b895b082d624aa3a680284ce7a760629e9fafb3e
 workflow-type: tm+mt
-source-wordcount: '3409'
+source-wordcount: '3407'
 ht-degree: 0%
 
 ---
@@ -85,8 +85,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `hier1 - hier5` | Används av hierarkivariabler. Innehåller en avgränsad lista med värden. Avgränsaren väljs under rapportsvitens inställningar. | varchar(255) |
 | `hit_source` | Anger vilken källa träffen kom ifrån. Träffkällor 1, 2 och 6 faktureras. <br>1: Standardbildbegäran utan tidsstämpel  <br>2: Standardbildbegäran med tidsstämpel  <br>3: Ladda upp datakällor live med tidsstämplar  <br>4: Används inte  <br>5: Allmän överföring av datakälla  <br>6: Uppladdning av datakälla med fullständig bearbetning  <br>7: Överföring av datakälla för TransactionID  <br>8: Används inte längre. Tidigare versioner av Adobe Advertising Cloud datakällor  <br>9: Används inte längre. Adobe Social summary metrics  <br>10: Vidarebefordran på serversidan i Audience Manager används | tinyint unsigned |
 | `hit_time_gmt` | Tidsstämpeln för Adobe-datainsamlingsservrarna tog emot träffen, baserat på Unix-tid. | int |
-| `hitid_high` | Används i kombination med `hitid_low` för att unikt identifiera en träff. | bigint unsigned |
-| `hitid_low` | Används i kombination med `hitid_high` för att unikt identifiera en träff. | bigint unsigned |
+| `hitid_high` | Används i kombination med `hitid_low` för att identifiera en träff. | bigint unsigned |
+| `hitid_low` | Används i kombination med `hitid_high` för att identifiera en träff. | bigint unsigned |
 | `homepage` | Används inte längre. Anger om den aktuella URL:en är webbläsarens hemsida. | char(1) |
 | `hourly_visitor` | Flagga för att avgöra om träffen är en ny timbesökare. | tinyint unsigned |
 | `ip` | IP-adress, baserat på HTTP-huvudet i bildbegäran. | char(20) |
