@@ -1,8 +1,7 @@
 ---
 title: Vanliga frågor om marknadsföringskanaler
 description: Vanliga frågor och svar om marknadsföringskanaler.
-translation-type: tm+mt
-source-git-commit: 7202a49dda7c3ef4f4b535476d3cf637b9e9f7f6
+source-git-commit: 925435a475be13103c5b26255bb7910d259ff7e7
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 0%
@@ -25,21 +24,21 @@ Vanliga frågor och svar om marknadsföringskanaler.
 
 ## Referensdomäner innehåller mer data än jag förväntade mig.
 
-* Referensdomäner kan vara för höga i listan över bearbetningsregler. Det ska vara en av de sista (eller sista) regeluppsättningarna, eftersom bearbetningsordningen är viktig.
+Referensdomäner kan vara för höga i listan över bearbetningsregler. Det ska vara en av de sista (eller sista) regeluppsättningarna, eftersom bearbetningsordningen är viktig.
 
 ## Jag har skapat en regel som matchar en frågesträngsparameter och som inte fungerar.
 
-* Kontrollera att parameternamnet har angetts i frågesträngsparameterfälten (vanligtvis ett alfanumeriskt värde). Kontrollera också att parametervärdet anges efter operatorn, vilket visas i följande exempel på en e-postregel.
+Kontrollera att parameternamnet har angetts i frågesträngsparameterfälten (vanligtvis ett alfanumeriskt värde). Kontrollera också att parametervärdet anges efter operatorn, vilket visas i följande exempel på en e-postregel.
 
-   ![](assets/example_email.png)
+![](assets/example_email.png)
 
 ## Varför tillskrivs all min trafik med sista handen en intern domän?
 
-* Du har en regel som matchar intern trafik. Kom ihåg att dessa regler gäller för varje träff som besökaren gör på er webbplats, inte bara för det första besöket. Om du har en regel som *`Page URL exists`* utan andra villkor matchas den kanalen för varje efterföljande träff på webbplatsen, eftersom det alltid finns en sidadress.
+Du har en regel som matchar intern trafik. Kom ihåg att dessa regler gäller för varje träff som besökaren gör på er webbplats, inte bara för det första besöket. Om du har en regel som *`Page URL exists`* utan andra villkor matchas den kanalen för varje efterföljande träff på webbplatsen, eftersom det alltid finns en sidadress.
 
 ## Hur felsöker jag trafik som visas i Ingen kanal identifierad i rapporten?
 
-* Regelprocessen är i ordning. Om inga specifika kriterier har matchats faller träffarna in i en av tre kategorier:
+Regelprocessen är i ordning. Om inga specifika kriterier har matchats faller träffarna in i en av tre kategorier:
 
 1. Ingen hänvisare (direktbesök).
 
@@ -77,7 +76,7 @@ Den här typen av regel fungerar som en&quot;catch-all&quot;-regel för att säk
 >
 >Det kan fortfarande finnas kanaltrafik som kan ingå i kategorin Ingen kanal identifierad. Till exempel: En besökare kommer till webbplatsen och bokmärker en sida, och på samma besök kommer sidan tillbaka via bokmärket. Eftersom detta inte är den första sidan av besöket kommer det inte att gå vare sig i direktkanalen eller i den andra kanalen eftersom det inte finns någon referensdomän.
 
-## Orsaker till intern (sessionsuppdatering) {#internal}
+## Orsaker till internt (sessionsuppdatering) {#internal}
 
 Senaste beröring internt (sessionsuppdatering) kan bara inträffa om det också var den första beröringen - se Relation mellan första och sista beröringen ovan. Scenarierna nedan förklarar hur Sessionsuppdatering kan vara en kanal med första klicket.
 
