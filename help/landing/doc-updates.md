@@ -3,10 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 784a2ab3bf825473c9ced7a1d79f2cc7bfc8f8e7
+source-git-commit: 5d10cf7728d63f7d772061b2e917ba6332bacf3c
 workflow-type: tm+mt
-source-wordcount: '2801'
-ht-degree: 49%
+source-wordcount: '2787'
+ht-degree: 48%
 
 ---
 
@@ -16,7 +16,6 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 * Mer information om [!UICONTROL Customer Journey Analytics] finns [här](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html).
 * En omfattande lista över nya Adobe Analytics-funktioner, administratörsmeddelanden och felkorrigeringar finns i den senaste [versionsinformationen för Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
-* Mer information om nya funktioner finns i [Nya funktioner i Analysis Workspace](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) i användarhandboken för verktyg.
 * Mer information om Adobe Analytics för ljud och video finns i [Mäta ljud och video i Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 ## Information om större dokumentationsuppdateringar
@@ -101,7 +100,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 20 februari 2020 | Arbetsytefelsökaren lades till på Hjälp-menyn, vilket ger ett smidigare sätt att aktivera den för felsökning av arbetsytebegäranden. [Läs mer …](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md) |
 | 18 februari 2020 | [`writeSecureCookies`](/help/implement/vars/config-vars/writesecurecookies.md)-variabel har lagts till. |
 | 12 februari 2020 | Uppdateringar och omorganisering av dokumentationen för [marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
-| 12 februari 2020 | Nya snabbtangenter har lagts till på [den här arbetsytesidan](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) |
+| 12 februari 2020 | Nya snabbtangenter har lagts till på [den här arbetsytesidan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=en) |
 | 7 februari 2020 | Uppdateringar av [Konfigurera Analytics över enheter](/help/components/cda/setup.md) och [Vanliga frågor och svar](/help/components/cda/faq.md). |
 | 4 februari 2020 | Fullständig omarbetning av [användarhandboken för implementering](/help/implement/home.md). |
 | 22 januari 2020 | Sidan om frihandstabeller har uppdaterats med information om nya [Freeform Table Builder](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md). |
@@ -109,7 +108,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 24 januari 2020 | Uppdaterar till sidan [Radinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/table-settings.html#cja-workspace?lang=en) i Workspace. |
 | 16 januari 2020 | Ny dokumentation på [Frihandstabellbyggaren](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html). Med tabellverktyget aktiverat kan du dra och släppa i många mått, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa affärsfrågor. Data uppdateras inte omedelbart. I stället uppdateras de när du klickar på **[!UICONTROL Build]**, vilket sparar tid när du väl vet vilken tabell du vill skapa. Dessutom har den här funktionen följande:<ul><li>**Förhandsgranskning**: Du kan förhandsgranska tabellformatet innan du lägger tid på att återge verkliga data.</li><li>**Inställningar för flexibla rader och uppdelning**: Du kan ange rad- och uppdelningsnivåer för alla måttrader. Tidigare användes standardvärden som inte gick att ändra förrän data returnerades.</li><li>**Uppdelning efter position**: Du kan ange att måttrader alltid ska _delas upp efter position_ i stället för _efter ett visst objekt_ (standard).</li><li>**Ordna statiska rader manuellt**: Du kan ordna statiska rader manuellt så att tabellraderna visas exakt som du vill ha dem. Tidigare kunde statiska rader bara sorteras efter en mätvärdeskolumn eller i bokstavsordning.</li></ul> |
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](/help/technotes/cookies/cookies.md) har lagts till. |
-| 13 januari 2020 | Ändrade [vilket verktyg jag skulle använda](https://docs.adobe.com/content/help/en/analytics/admin/admin-overview/which-analytics-tool.html)-sidan. |
+| 13 januari 2020 | Ändrade [vilket Adobe Analytics-verktyg jag skulle använda](https://experienceleague.adobe.com/docs/analytics/admin/admin-overview/which-analytics-tool.html?lang=en)-sidan. |
 | **2019** |  |
 | 29 november 2019 | Dokumentationen för [dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) har setts över. |
 | 25 november 2019 | Nytt avsnitt om [Slutet av livscykeln för Tvinga begränsningar för IP-inloggning](/help/admin/company/login-restrictions-eol.md). |
