@@ -3,10 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 5d10cf7728d63f7d772061b2e917ba6332bacf3c
+source-git-commit: 925435a475be13103c5b26255bb7910d259ff7e7
 workflow-type: tm+mt
-source-wordcount: '2787'
-ht-degree: 48%
+source-wordcount: '2872'
+ht-degree: 46%
 
 ---
 
@@ -41,10 +41,10 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 25 mars 2021 | [API-](https://github.com/AdobeDocs/analytics-2.0-apis/blob/master/data-repair.md) uppdateringar för datareparation (filtrering för URL:er, frågesträngar, vid tecken med mera) |
 | 25 mars 2021 | Ny [API-dokumentation för användningslogg](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/usage-logs.md) |
 | **Februari 2021** |  |
-| 4 februari 2021 | Val av komponent: Den nedrullningsbara eller släppzon-komponent som finns i [!UICONTROL Quick Insights] kommer att läggas till i alla släppzoner i [!UICONTROL Workspace]. Den här förbättringen gör att du kan välja från en nedrullningsbar lista med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
+| 4 februari 2021 | Val av komponent: Den nedrullningsbara zonkomponenten som hittades i [!UICONTROL Quick Insights] lades till i alla släppzoner i [!UICONTROL Workspace]. Den här förbättringen gör att du kan välja från en listruta med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
 | **Januari 2021** |  |
-| 14 januari 2021 | Tillagda språkvalsalternativ för kontrollpaneler i Analytics. |
-| 14 januari 2021 | Dokumentation om hur du kan lägga till bilder i Workspace-projekt genom att referera till en offentlig bild-URL. |
+| 14 januari 2021 | Språkval har lagts till i dokumentationen för kontrollpanelerna i Analytics. |
+| 14 januari 2021 | Lagt till dokumentation om hur du kan lägga till bilder i Workspace-projekt genom att referera till en offentlig bild-URL. |
 | 14 januari 2021 | Kombinerad käll- och inställningshanterare för arbetsytevisualiseringar: Hanteraren för [!UICONTROL Data Source] (punkt) och inställningar (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
 | **December 2020** |  |
 | 7 december 2020 | Ändrade alla relevanta sidor så att slutpunkten &quot;adobedc.net&quot; skulle inkluderas eller ersättas. |
@@ -106,18 +106,24 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 22 januari 2020 | Sidan om frihandstabeller har uppdaterats med information om nya [Freeform Table Builder](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md). |
 | **Januari 2020** |  |
 | 24 januari 2020 | Uppdaterar till sidan [Radinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/table-settings.html#cja-workspace?lang=en) i Workspace. |
-| 16 januari 2020 | Ny dokumentation på [Frihandstabellbyggaren](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html). Med tabellverktyget aktiverat kan du dra och släppa i många mått, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa affärsfrågor. Data uppdateras inte omedelbart. I stället uppdateras de när du klickar på **[!UICONTROL Build]**, vilket sparar tid när du väl vet vilken tabell du vill skapa. Dessutom har den här funktionen följande:<ul><li>**Förhandsgranskning**: Du kan förhandsgranska tabellformatet innan du lägger tid på att återge verkliga data.</li><li>**Inställningar för flexibla rader och uppdelning**: Du kan ange rad- och uppdelningsnivåer för alla måttrader. Tidigare användes standardvärden som inte gick att ändra förrän data returnerades.</li><li>**Uppdelning efter position**: Du kan ange att måttrader alltid ska _delas upp efter position_ i stället för _efter ett visst objekt_ (standard).</li><li>**Ordna statiska rader manuellt**: Du kan ordna statiska rader manuellt så att tabellraderna visas exakt som du vill ha dem. Tidigare kunde statiska rader bara sorteras efter en mätvärdeskolumn eller i bokstavsordning.</li></ul> |
+| 16 januari 2020 | Ny dokumentation om [Frihandsverktyget för tabellbyggaren](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html). Med tabellverktyget aktiverat kan du dra och släppa i många mått, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa affärsfrågor. Data uppdateras inte omedelbart. I stället uppdateras de när du klickar på **[!UICONTROL Build]**, vilket sparar tid när du väl vet vilken tabell du vill skapa. Dessutom har den här funktionen följande:<ul><li>**Förhandsgranskning**: Du kan förhandsgranska tabellformatet innan du lägger tid på att återge verkliga data.</li><li>**Inställningar för flexibla rader och uppdelning**: Du kan ange rad- och uppdelningsnivåer för alla måttrader. Tidigare användes standardvärden som inte gick att ändra förrän data returnerades.</li><li>**Uppdelning efter position**: Du kan ange att måttrader alltid ska _delas upp efter position_ i stället för _efter ett visst objekt_ (standard).</li><li>**Ordna statiska rader manuellt**: Du kan ordna statiska rader manuellt så att tabellraderna visas exakt som du vill ha dem. Tidigare kunde statiska rader bara sorteras efter en mätvärdeskolumn eller i bokstavsordning.</li></ul> |
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](/help/technotes/cookies/cookies.md) har lagts till. |
 | 13 januari 2020 | Ändrade [vilket Adobe Analytics-verktyg jag skulle använda](https://experienceleague.adobe.com/docs/analytics/admin/admin-overview/which-analytics-tool.html?lang=en)-sidan. |
 | **2019** |  |
+| 19 december 2020 | Ändrade standardlagringsgränsen för [FTP-data](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/ftp-limits.html?lang=en) till 10 GB. |
 | 29 november 2019 | Dokumentationen för [dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) har setts över. |
 | 25 november 2019 | Nytt avsnitt om [Slutet av livscykeln för Tvinga begränsningar för IP-inloggning](/help/admin/company/login-restrictions-eol.md). |
 | 21 november 2019 | Ny dokumentation för [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html). |
+| 21 november 2019 | [Vanliga frågor om arbetsflöde i Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=en) har uppdaterats för att indikera tillgänglighet i LiveStream. |
+| 25 oktober 2019 | Uppdaterad [Adobe Analytics Key Concepts](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=en)-sida. |
 | 10 oktober 2019 | Uppdatera till Frihand-tabellsummor: innehåller nu två summor, en **[!UICONTROL Table total]** och en **[!UICONTROL Grand total]**. Raden med tabellsumman avser de [rapportfilter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) som används. Tidigare påverkades summorna bara av segmentering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)<br/>Dessutom har alternativen **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]** lagts till i **[!UICONTROL Column Settings]**.<br/>Med den här förändringen av totalsummor för friformstabeller uppdateras beroende visualiseringar (som länkade **[!UICONTROL Summary Number]**-visualiseringar) samt exporterade CSV- och PDF-data. |
-| Oktober 10,2019 | I Workspace har möjligheten att enkelt ta bort&quot;ospecificerad (ingen)&quot; lagts till som ett alternativ för att rapportera filter. |
-| Oktober 10,2019 | I Workspace har de lila granularitetskomponenterna (Minute, Hour, Day, Week, Month, Quarter, Year) tagits bort. De lila tidskomponenterna har alltid fungerat på exakt samma sätt som deras motsvarande oranga mått, och den här förändringen förenklar det hela. Du **behöver inte göra något** om du tidigare har använt någon av de lila tidskomponenterna.<br/>Den här ändringen innebär även att det lila avsnittet **[!UICONTROL Time]** har bytt namn till **[!UICONTROL Date Ranges]**. |
+| Oktober 10,2019 | I Workspace lades möjligheten att enkelt ta bort&quot;Ospecificerad (ingen)&quot; till som ett alternativ för att rapportera filter. |
+| Oktober 10,2019 | I Workspace har de lila granularitetskomponenterna (Minute, Hour, Day, Week, Month, Quarter, Year) tagits bort. Du **behöver inte göra något** om du tidigare har använt någon av de lila tidskomponenterna.<br/>Den här ändringen innebär även att det lila avsnittet **[!UICONTROL Time]** har bytt namn till **[!UICONTROL Date Ranges]**. |
+| 1 oktober 2019 | Ny artikel om [Summor för arbetsyta](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/workspace-totals.html#cja-workspace?lang=en). |
 | 28 september 2019 | Nya artiklar om [konfigurationsvariabler för JavaScript-implementering](/help/implement/vars/config-vars/configuration-variables.md). |
+| 19 september 2019 | Reviderad segmenteringsdokumentation som förklarar [behållare för logikgrupp](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html?lang=en#logic-group-containers). |
 | 12 september 2019 | Ny dokumentation för [Journey IQ: Enhetsövergripande analyser](/help/components/cda/overview.md). |
+| 12 september 2019 | Uppdatera [Beräknade mätsummor](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=en) dokument. |
 | 28 augusti 2019 | Ny artikel om [progressiva webbappar (PWA) för Analytics](/help/analyze/pwa/pwa.md). |
 | 8 augusti 2019 | Ny artikel om [summor för beräknade mätvärden](/help/components/c-calcmetrics/cm-totals.md). |
 | 8 augusti 2019 | Förtydligande av [sessionsdata med aktiverade tidsstämplar](/help/admin/admin/timestamp-optional.md). | 8 augusti 2019 | I Workspace har Adobe ökat gränsen för objekt som kan placeras i ett nedrullningsbart filter från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |
