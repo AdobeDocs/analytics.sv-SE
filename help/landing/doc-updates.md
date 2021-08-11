@@ -1,12 +1,12 @@
 ---
 title: Uppdateringar av teknisk dokumentation för Adobe Analytics
-description: Viktiga uppdateringar av dokumentationsdatabasen för Adobe Analytics.
+description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättning.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 925435a475be13103c5b26255bb7910d259ff7e7
+source-git-commit: 75f83491c448df2e2f6b2083fcb533d86c1f215d
 workflow-type: tm+mt
-source-wordcount: '2872'
-ht-degree: 46%
+source-wordcount: '2828'
+ht-degree: 45%
 
 ---
 
@@ -27,7 +27,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 5 augusti 2021 | Uppdaterad klassificeringsdokumentation för [mallar](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-download-saint-data.html?lang=en), [webbläsarimport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-import.html?lang=en) och [webbläsarexport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-export.html?lang=en) för att visa alternativ som inte är tillgängliga för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen. |
 | 2 augusti 2021 | Flera sidor har uppdaterats för att återspegla omprofileringen av [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en) |
 | **Juli 2021** |  |
-| 23 juli 2021 | Detaljerad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en) |
+| 23 juli 2021 | Ny fördjupad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en) |
 | 15 juli 2021 | Lagt till ny dokumentation på den nya [Adobe Analytics-landningssidan](https://experienceleague.adobe.com/docs/analytics/landing/an-landing.html) |
 | **Juni 2021** |  |
 | 15 juni 2021 | Uppdaterat [Bästa praxis för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html) |
@@ -70,19 +70,18 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 21 juli 2020 | Stora uppdateringar och revideringar av [Enhetsövergripande analys](/help/components/cda/overview.md). Lade till [Fältbaserad sammanfogning](/help/components/cda/field-based-stitching.md). |
 | 16 juli 2020 | Nya förinställningar för datumintervall i Arbetsyta. Fyra nya datumintervall har lagts till: ([!UICONTROL This week/month/quarter/year (excluding today)]). På så sätt kan du välja från datumintervall som inte innehåller data för delar av dagen från och med idag. |
 | **Juni 2020** |  |
-| 25 juni 2020 | Panelen Quick Insights i Workspace ger vägledning för icke-analytiker och nya användare av Analysis Workspace som snabbt och enkelt kan besvara affärsfrågor. [Läs mer …](/help/analyze/analysis-workspace/c-panels/quickinsight.md) |
-| 25 juni 2020 | Med Analytics for Target-panelen i Workspace kan ni analysera era Adobe Target-aktiviteter och -upplevelser, med lyft och förtroende. [Läs mer …](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) |
+| 25 juni 2020 | Ny dokumentation för [panelen Snabbinformation](/help/analyze/analysis-workspace/c-panels/quickinsight.md) i Workspace. Där finns vägledning för icke-analytiker och nya användare av Analysis Workspace som snabbt och enkelt kan besvara affärsfrågor. |
+| 25 juni 2020 | Ny dokumentation för [Analytics for Target panel](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) i Workspace. Med den kan ni analysera Adobe Target aktiviteter och upplevelser, med lyft och självförtroende. |
 | 18 juni 2020 | Ny dokumentation om [Attribution IQ: Algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
 | 18 juni 2020 | Ny dokumentation om [Attribution IQ: Anpassade fönster för uppslag](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html?lang=en#lookback-windows) |
-| 18 juni 2020 | Projektroller för delade Workspace-projekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
-| 18 juni 2020 | Dokumentation om hur Workspace-projekt kan delas med användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html) |
-| 18 juni 2020 | Ny dokumentation om projektroller för delade Workspace-projekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
-| 18 juni 2020 | Visa endast arbetsyteprojekt: Arbetsyteprojekt kan bara delas till användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html) |
-| 18 juni 2020 | Möjlighet att samredigera Workspace-projekt. Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
+| 18 juni 2020 | Ny dokumentation för [projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade Workspace-projekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
+| 18 juni 2020 | Ny dokumentation om [&quot;Visa endast&quot; arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html). Projekt kan delas med användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. |
+| 18 juni 2020 | Ny dokumentation om [projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade Workspace-projekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
+| 18 juni 2020 | Ny dokumentation om [Samredigering av arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html). Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. |
 | **Maj 2020** |  |
 | 31 maj 2020 | Ny dokumentation om [API för datainmatning i grupp](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) |
 | 21 maj 2020 | Ny dokumentation för [Adobe Analytics-kontrollpaneler](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html) |
-| 21 maj 2020 | Dokumentation om tillgänglighetsförbättringar för Analysis Workspace, inklusive förbättrad tangentbordsnavigering, färgkontrast och stöd för skärmläsare. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/aw-accessibility.html) |
+| 21 maj 2020 | Ny dokumentation om [tillgänglighetsförbättringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/aw-accessibility.html) för Analysis Workspace, inklusive förbättrad tangentbordsnavigering, färgkontrast och stöd för skärmläsare. |
 | **April 2020** |  |
 | 28 april 2020 | Dokumentation för mätvärdet [Content Velocity](/help/components/metrics/content-velocity.md) har lagts till. |
 | 16 april 2020 | Dokumentation om hur du automatiskt skapar [!UICONTROL Freeform Tables] från ett tomt tillstånd. Tidigare gick det inte att släppa komponenter direkt i ett tomt projekt eller på en tom panel, utan du var tvungen att lägga till en friformstabell först. Nu kan du släppa komponenter direkt i ett tomt projekt eller på en tom panel, så skapas en friformstabell automatiskt i det format som rekommenderas. Dessutom har vi förbättrat hur blandade komponenttyper (som mått och mätvärden) hanteras när de släpps tillsammans i en tom [!UICONTROL Freeform Table]. |
