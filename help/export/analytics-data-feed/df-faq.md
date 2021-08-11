@@ -3,9 +3,9 @@ description: Vanliga frågor och svar om dataflöden
 keywords: Datautmatning;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-source-git-commit: 46ba345247c6a2553cd30b446d87eeb7b15ee94b
+source-git-commit: b895b082d624aa3a680284ce7a760629e9fafb3e
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,10 @@ Dataflöden inkluderar inte botar som filtrerats av [administratörskonsolens ro
 Vissa kalkylbladsredigerare, särskilt Microsoft Excel, rundar automatiskt av stora tal. Kolumnen `event_list` innehåller många kommaavgränsade tal, vilket ibland kan göra att Excel hanterar den som ett stort antal. Det avrundar de sista siffrorna till `000`.
 
 Adobe rekommenderar att du inte öppnar `hit_data.tsv`-filer automatiskt i Microsoft Excel. Använd i stället Excel-dialogrutan Importera data och se till att alla fält behandlas som text.
+
+## Finns det garantier för att kolumner som `hitid_high`, `hitid_low`, `visid_high` och `visid_low` är unika för träffen eller besöket?
+
+I nästan alla fall kan en träff identifieras unikt när `hitid_high` och `hitid_low` slås samman. Samma koncept gäller för sammanfogning av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som inte är flexibla och som kräver att varje träff är unik.
 
 ## Varför saknas information i domänkolumnen för vissa bärare? {#section_B7508D65370442C7A314EAED711A2C75}
 
