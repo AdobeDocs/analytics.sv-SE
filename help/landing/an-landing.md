@@ -2,7 +2,7 @@
 description: Beskriver hur den nya landningssidan sammanför både Analysis Workspace och Rapporter och analyser i ett enda gränssnitt och en enda åtkomstpunkt under arbetsytans paraply.
 title: Ny startsida för Adobe Analytics
 role: User, Admin
-source-git-commit: eda2a34d2431d01d4301d47e547b4aa9955f12a5
+source-git-commit: ebf11e981da25ab154968acda49456862f38874f
 workflow-type: tm+mt
 source-wordcount: '2988'
 ht-degree: 0%
@@ -18,6 +18,8 @@ Den nya sidan förbättrar upptäckten och guidar användare av rapporter och an
 >[!IMPORTANT]
 >
 >Den här landningssidan kommer att vara i Open Beta från och med 21 juli 2021. Det är en valfri startpunkt. Om du vill kan du använda din befintliga landningssida, oavsett om det är Workspace eller Reports. Om du vill delta i betaprogrammet öppnar du sidan och klickar på **[!UICONTROL Provide feedback]** överst på skärmen för att logga din feedback och eventuella buggar. Du kan när som helst avanmäla dig från och gå tillbaka till betaprogrammet. Allt arbete som görs i betaanvändargränssnittet överförs till den befintliga/aktuella arbetsytan.
+
+>[!VIDEO](https://video.tv.adobe.com/v/334278/?quality=12)
 
 ## Öppna den nya landningssidan {#access-landing}
 
