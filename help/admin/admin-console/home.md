@@ -2,11 +2,10 @@
 title: Analyser i Adobe Admin Console
 description: Lär dig använda Adobe Admin Console för att hantera Analytics-produkter och -användare.
 exl-id: 6e2c5ad4-2761-4ccb-8c76-ea9e1df9437a
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: b73ba63f4f308a50a9e0933d1ff0d56a45b94797
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 9%
+source-wordcount: '106'
+ht-degree: 7%
 
 ---
 
@@ -21,3 +20,9 @@ I det här kapitlet beskrivs koncept som du behöver förstå om Analytics-speci
    * [Produktprofiler för Adobe Analytics](/help/admin/admin-console/permissions/product-profile.md)
    * [Produktprofilbehörigheter för Report Suite-verktyg](/help/admin/admin-console/permissions/report-suite-tools.md)
    * [Produktprofilbehörigheter för analysverktyg](/help/admin/admin-console/permissions/analytics-tools.md)
+
+## Lägga till en administratör i Adobe Analytics
+
+Här är en kort video om processen:
+
+https://video.tv.adobe.com/v/37648/?quality=12
