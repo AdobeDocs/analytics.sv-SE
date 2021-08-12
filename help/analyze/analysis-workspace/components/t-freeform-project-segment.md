@@ -5,9 +5,9 @@ uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 feature: Grundläggande om arbetsytan
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: b73ba63f4f308a50a9e0933d1ff0d56a45b94797
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
@@ -57,3 +57,9 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 | Komponenter > Nytt segment | Visar segmentbyggaren. Mer information om segmentering finns i [Segmentbyggare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html). |
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Curate and Share](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) kan du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
 | Använd segment som Dimensioner | Video: [Använda segment som Dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=en) |
+
+## Ad hoc-segment (tillfälliga) i Analysis Workspace
+
+Här är en video om ad hoc-segment:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
