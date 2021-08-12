@@ -3,9 +3,9 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: b73ba63f4f308a50a9e0933d1ff0d56a45b94797
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2167'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,12 @@ Kumulativ versionsinformation för [!DNL AppMeasurement] för JavaScript.
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
 Du kan hämta den senaste versionen av AppMeasurement i [Code Manager](/help/admin/admin/code-manager-admin.md).
+
+## Version 2.22.1
+
+Releasedatum: **12 augusti 2021**
+
+* Kunder som avanmäler sig kan ha sett att avanmälningsparametrarna på serversidan inte respekteras vid spårning av länkar. Korrigeringarna i den här versionen gör att avanmälningsflaggorna skickas om de finns när länkar spåras.
 
 ## Version 2.22.0
 
