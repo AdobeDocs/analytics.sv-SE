@@ -5,10 +5,10 @@ uuid: 45d2d9f3-3fb3-460f-bc87-7d6e3cc44494
 feature: Visualiseringar
 role: User, Admin
 exl-id: c78ea74b-a57f-411b-a44e-5c9902e159a6
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 5c235ecbf348af86e8f195f99f8e721dd97946b8
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 10%
+source-wordcount: '96'
+ht-degree: 9%
 
 ---
 
@@ -31,3 +31,7 @@ Den här visualiseringen är som ett stapeldiagram, men med seriestaplarna stapl
 En ny visualiseringsinställning för staplade visualiseringar gör diagrammet till en&quot;100 % staplad&quot; visualisering:
 
 ![](assets/stacked_100_percent.png)
+
+Här är en video om&quot;100 % staplade visualiseringar&quot;:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23131/?quality=12)
