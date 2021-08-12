@@ -5,10 +5,10 @@ uuid: 7232b875-6907-4b53-b466-5e9157a22ef0
 feature: Activity Map
 role: User, Admin
 exl-id: 30a800f7-e2c8-443e-b5d4-36834ef0ba20
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 5c235ecbf348af86e8f195f99f8e721dd97946b8
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 28%
+source-wordcount: '292'
+ht-degree: 27%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 28%
 Activity Map är ett Adobe Analytics-program som är utformat för att rangordna länkaktivitet med visuella överlägg och tillhandahålla en instrumentpanel med realtidsanalyser för att övervaka målgruppens engagemang på era webbsidor.
 
 Med Activity Map kan ni skapa olika vyer för att visuellt identifiera kundaktivitetens acceleration, kvantifiera marknadsföringssatsningar och agera utifrån målgruppens behov och beteenden.
+
+Här är en videoöversikt av Activity Map:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25451/?quality=12)
 
 **Komma igång med administratörer**
 
