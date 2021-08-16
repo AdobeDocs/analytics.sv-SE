@@ -2,7 +2,7 @@
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: f93ad7ec87c045956a3764c9a558bc193fa999d7
+source-git-commit: d941e4308352d6228e73bc7f7443a36ffd374b0c
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Adobe Analytics använder följande värdar för att förbättra prestanda och p
 | Adobe Analytics äldre domän | `omniture.com` |
 | Amazon AWS | `aaui-879784980514.s3.us-east-2.amazonaws.com` |
 | Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
-| Gainsight | `esp.aptrinsic.com` |
+| Gainsight | `esp.aptrinsic.com`, `esp-m.aptrinsic.com` |
 | LaunchMörkt | `app.launchdarkly.com` |
 | Microsoft Azure Blob Storage | `awaascicdprodva7.blob.core.windows.net` |
 | Microsoft Azure CDN | `aauicdnva7.azureedge.net` |
