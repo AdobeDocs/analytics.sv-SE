@@ -2,16 +2,20 @@
 description: Spårning avgör hur sökmotordata spåras av din Adobe Analytics-implementering. Detta är ett nödvändigt steg för att utöka Adobe Analytics data med sökmotordata.
 title: Spåra manuellt läge och automatiskt läge
 exl-id: 3e2ed26f-dfb2-43ea-8eb6-e332cd10fb29
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 734eb409e7a433147c3536cebc571b38f87ce716
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 1%
+source-wordcount: '606'
+ht-degree: 0%
 
 ---
 
 # Spårning: Manuellt läge och autoläge
 
 Spårning avgör hur sökmotordata spåras av din Adobe Analytics-implementering. Detta är ett nödvändigt steg för att utöka Adobe Analytics data med sökmotordata.
+
+Här följer en videoöversikt om hur du implementerar spårningsmallen för Advertising Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23120/?quality=12)
 
 Två spårningslägen stöds: Automatiskt läge och Manuellt läge.
 
