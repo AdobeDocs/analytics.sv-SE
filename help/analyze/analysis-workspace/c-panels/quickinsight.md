@@ -4,9 +4,9 @@ title: Panelen Snabbinsikter
 feature: Paneler
 role: User, Admin
 exl-id: 29b26ec9-d410-43d6-a317-ca7587f5dd31
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 804cf43f2e5f1270e04644affd629c06583816ec
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -27,6 +27,10 @@ När du börjar använda denna [!UICONTROL Analysis Workspace] kanske du undrar 
 * Lär dig terminologi och vokabulär för grundläggande komponenter och delar i [!UICONTROL Analysis Workspace].
 * Gör enkla uppdelningar av dimensioner, lägg till flera mätvärden eller jämför segment enkelt i en [!UICONTROL Freeform table].
 * Ändra eller prova olika visualiseringstyper för att snabbt och intuitivt hitta sökverktyget för din analys.
+
+Här är en videoöversikt av panelen [!UICONTROL Quick Insights]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/37248/?quality=12)
 
 ## Grundläggande nyckelterminologi
 
