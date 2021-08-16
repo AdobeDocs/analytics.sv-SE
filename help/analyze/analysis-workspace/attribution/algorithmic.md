@@ -4,7 +4,7 @@ description: Information om algoritmisk attribueringsmodell.
 feature: Attribuering
 role: User, Admin
 exl-id: dd2b2a5b-9c36-4534-999f-f96604f29eab
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 734eb409e7a433147c3536cebc571b38f87ce716
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Algoritmisk attribuering
 
 Algoritmisk [attribueringsmodell](models.md) i Analysis Workspace skiljer sig från andra modeller på så sätt att den använder statistiska tekniker för att allokera kredit över dimensionsobjekten i din rapport eller frihandstabell. Precis som alla andra attribueringsmodeller i Analysis Workspace kan den användas på alla dimensioner eller mätvärden och har stöd för obegränsad segmentering och uppdelningar och distribuerar 100 % av konverteringarna till de dimensioner som anges i tabellen (kallas även&quot;fraktionerad&quot; attribuering).
+
+>[!VIDEO](https://video.tv.adobe.com/v/36205/?quality=12)
 
 Den algoritm som används för attribuering bygger på Harsanyi Dividend från kooperativ spelteori. Harsanyi-utdelningen är en generalisering av Shapley-värdelösningen (som uppges efter Lloyd Shapley, en Nobel Laureate-ekonom) för att distribuera krediter bland spelarna i ett spel med olika bidrag till resultatet.
 
