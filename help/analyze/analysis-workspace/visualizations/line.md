@@ -5,20 +5,20 @@ uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 feature: Visualiseringar
 role: User, Admin
 exl-id: d177b39f-add7-4011-977a-1bdf3a9368cb
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 804cf43f2e5f1270e04644affd629c06583816ec
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # Linjediagram
 
-Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension.
+Visualiseringen [!UICONTROL Line] representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett [!UICONTROL Line]-diagram kan bara användas när tid används som dimension.
 
 ![Radvisualisering](assets/line-viz.png)
 
-Klicka på kugghjulsikonen i det övre högra hörnet av linjevisualiseringen för att komma åt [**Visualiseringsinställningarna**](freeform-analysis-visualizations.md) tillgängliga. Inställningarna är indelade i:
+Klicka på kugghjulsikonen i det övre högra hörnet av visualiseringen [!UICONTROL Line] för att komma åt [**Visualiseringsinställningarna**](freeform-analysis-visualizations.md) som är tillgängliga. Inställningarna är indelade i:
 
 * **Allmänt**: Inställningar som är gemensamma för olika visualiseringstyper
 * **Axel**: Inställningar som påverkar x- eller y-axeln i linjens visualisering
@@ -39,6 +39,10 @@ Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!
 ## Visa trendlinjeövertäckning
 
 Under **[!UICONTROL Visualization Settings]** > **[!UICONTROL Overlays]** > **[!UICONTROL Show trendline]** kan du välja att lägga till en regression eller en glidande medeltrendlinje i radserien. Trendlinjer hjälper till att beskriva ett tydligare mönster i data.
+
+Här är en video om hur du lägger till trendlinjer i linjevisualiseringar:
+
+>[!VIDEO](https://video.tv.adobe.com/v/330176/?quality=12)
 
 >[!TIP]
 >
