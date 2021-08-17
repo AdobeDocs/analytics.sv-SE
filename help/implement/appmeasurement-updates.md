@@ -3,7 +3,7 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: b73ba63f4f308a50a9e0933d1ff0d56a45b94797
+source-git-commit: 376b577211f927be5a896c2a20c8a2fc55437b85
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Du kan hämta den senaste versionen av AppMeasurement i [Code Manager](/help/adm
 
 ## Version 2.22.1
 
-Releasedatum: **12 augusti 2021**
+Releasedatum: **17 augusti 2021**
 
 * Kunder som avanmäler sig kan ha sett att avanmälningsparametrarna på serversidan inte respekteras vid spårning av länkar. Korrigeringarna i den här versionen gör att avanmälningsflaggorna skickas om de finns när länkar spåras.
 
