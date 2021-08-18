@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
-source-git-commit: 32196fc76b2743679516a00f86c4912fac0bb3cf
+source-git-commit: 6a47ebc58cb36079940cfc4e5cdc80cf99c18a50
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 53%
+source-wordcount: '649'
+ht-degree: 52%
 
 ---
 
@@ -195,10 +195,11 @@ ht-degree: 53%
       + [Summor för beräknade mätvärden](c-calcmetrics/cm-totals.md)
 + Virtual Report Suites {#virtual-report-suites}
    + [Översikt över Virtual Report Suites](vrs/vrs-about.md)
-   + [Komponentval för Virtual Report Suites](vrs/vrs-components.md)
+   + [Virtuell rapportsvit - komponentkurva](vrs/vrs-components.md)
    + [Stöd för VRS i Mobile Services](vrs/vrs-mobile-services.md)
    + [Sammanhangsmedvetna sessioner](vrs/vrs-mobile-visit-processing.md)
    + [Bearbetning av rapporttid](vrs/vrs-report-time-processing.md)
+   + [A4T-överväganden](vrs/vrs-a4t.md)
    + [Vanliga frågor om VRS](vrs/vrs-faq.md)
    + [VRS och global/multisvitstaggning](vrs/vrs-considerations.md)
    + VRS-arbetsflöde {#vrs-workflow}
