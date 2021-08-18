@@ -3,7 +3,7 @@ description: Virtuella rapportsviter segmenterar era Adobe Analytics-data så at
 title: Översikt över Virtual Report Suites
 uuid: 51c63c56-dd58-4c23-a997-ea6942480d22
 exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
-source-git-commit: fb5de8ad4eee3e9017ab547823a7fa9132fa2457
+source-git-commit: 6a47ebc58cb36079940cfc4e5cdc80cf99c18a50
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment.
 
-Många kunder har data som flödar in i ett globalt rapporteringsprogram, men har också data som flödar in i mindre rapporteringsprogram. De ställer in en variabel på flera rapportsviter och skickar data till mer än en rapportserie. Detta kallas *multisuite-taggning* eller *bas-/överordnad rapportsviter*.
+Många kunder har data som flödar in i ett globalt rapporteringsprogram, men har också data som flödar in i mindre rapporteringsprogram. De ställer in en variabel på flera rapportsviter och skickar data till mer än en rapportserie. Detta kallas *multi-suite tagging*, eller *base/parent report suites*.
 
 Alla data kan till exempel samlas in i en rapportsserie, men sedan kan du skapa en sekundär rapportserie så att andra personer i företaget har tillgång till en del av informationen, men inte hela. Data kan delas upp efter region. Du kan ha olika webbplatser för olika länder. Andra exempel kan vara specifika varumärken som tillhör ett större företag, men som har sina egna marknadsföringsteam.
 
