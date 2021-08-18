@@ -3,9 +3,9 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättning.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 75f83491c448df2e2f6b2083fcb533d86c1f215d
+source-git-commit: 3da800f4f1a2f30032cd7b1554c082526f8cf9e0
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2845'
 ht-degree: 45%
 
 ---
@@ -23,6 +23,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Datum | Beskrivning |
 | --- | --- |
 | **Augusti 2021** |  |
+| 18 augusti 2021 | Nytt avsnitt om [A4T och virtuella rapportsviter](/help/components/vrs/vrs-a4t.md) |
+| 18 augusti 2021 | Nytt avsnitt om [Bästa praxis för attribuering](/help/analyze/analysis-workspace/attribution/best-practices.md) |
 | 5 augusti 2021 | Nytt ämne i [Antal upprepande instanser](https://experienceleague.adobe.com/docs/analytics/components/metrics/count-repeat-instances.html) |
 | 5 augusti 2021 | Uppdaterad klassificeringsdokumentation för [mallar](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-download-saint-data.html?lang=en), [webbläsarimport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-import.html?lang=en) och [webbläsarexport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-export.html?lang=en) för att visa alternativ som inte är tillgängliga för rapportsviter som har aktiverats för den nya klassificeringsarkitekturen. |
 | 2 augusti 2021 | Flera sidor har uppdaterats för att återspegla omprofileringen av [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en) |
