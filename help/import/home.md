@@ -1,14 +1,13 @@
 ---
 title: Importguide för Analytics
 description: Den här guiden förklarar hur du hämtar data till Analytics med hjälp av datakällor, API för datainfogning och Data Connectors.
-translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+exl-id: 65a62639-bbc4-4114-932f-8c68d87eea8b
+source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 85%
+source-wordcount: '132'
+ht-degree: 83%
 
 ---
-
 
 # Importguide för Analytics
 
@@ -22,7 +21,7 @@ Den här guiden förklarar hur du överför data till Analytics. Den innehåller
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](/help/landing/home.md)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Viktiga Analytics-resurser
 
