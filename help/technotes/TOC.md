@@ -4,11 +4,10 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: En kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
-translation-type: tm+mt
-source-git-commit: 6588896cd47e15127b1b1d0a2d229e0ed2dbaaaa
+source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 68%
+source-wordcount: '200'
+ht-degree: 69%
 
 ---
 
@@ -16,6 +15,7 @@ ht-degree: 68%
 # Analytics Tech Notes {#technotes}
 
 + [Tekniska anteckningar för Analytics](home.md)
++ [Dokumentationsuppdateringar](doc-updates.md)
 + Adobe Analytics för Google Analytics-användare {#ga-to-aa}
    + [Adobe Analytics för Google Analytics-användare - hjälp](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)
@@ -44,12 +44,14 @@ ht-degree: 68%
    + [Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookies/cookieless.md)
 + [Datalagring](data-retention.md)
 + [Uteslut data](exclude-data.md)
++ [Funktioner](releases.md)
 + [IP-adresser och domäner som används av Adobe Analytics](ip-addresses.md)
 + [Latens](latency.md)
 + [Lågtrafikvärde](low-traffic.md)
 + [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)
 + [Stöd för flera valutor](multicurrency.md)
 + [Sekretessöversikt](privacy-overview.md)
++ [Progressive Web Apps](pwa.md)
 + [Omdirigering och alias](redirects.md)
 + Regional datainsamling {#rdc}
    + [Regional datainsamling - hjälp](rdc/regional-data-collection.md)
