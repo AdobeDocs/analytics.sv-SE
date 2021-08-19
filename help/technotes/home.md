@@ -1,14 +1,13 @@
 ---
 title: Analytics Tech Notes
 description: Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
-translation-type: tm+mt
-source-git-commit: d0a5094865ae6f21d710eb57689201828b89cc03
+exl-id: 4cb084f8-5cec-4c46-a584-614217d42431
+source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 93%
+source-wordcount: '96'
+ht-degree: 89%
 
 ---
-
 
 # Analytics Tech Notes
 
@@ -21,7 +20,7 @@ Den här handboken innehåller användbar information om ämnen som inte tillhö
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](/help/landing/home.md)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Andra Analytics-resurser
 
