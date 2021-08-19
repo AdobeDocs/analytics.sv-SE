@@ -3,7 +3,7 @@ title: Intelligent datautjämning
 description: Lär dig hur intelligent datautjämning analyserar historiska trender för att förutsäga värdet av mätvärden inom en påverkad tidsperiod.
 feature: AI-verktyg
 role: User, Admin
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 I enstaka fall kan vissa faktorer påverka datakvaliteten. Punkttrafik, implementeringsändringar eller driftavbrott kan påverka integriteten hos insamlade data. De komplicerar också analysen av hur händelsen kan ha påverkat informationens fullständighet.
 
-Intelligent Data Smoothing är en prototyp i [Analytics Labs](/help/analyze/tech-previews/overview.md) som kan hjälpa till att slutföra den här vyn genom att analysera historiska trender för att förutsäga värdet av mätvärden inom den berörda tidsperioden. Prototypen använder avancerade maskininlärningsalgoritmer för att kartlägga de förväntade värdena för mätvärden under den tidsperiod som analyseras.
+Intelligent Data Smoothing är en prototyp i [Analytics Labs](/help/analyze/labs.md) som kan hjälpa till att slutföra den här vyn genom att analysera historiska trender för att förutsäga värdet av mätvärden inom den berörda tidsperioden. Prototypen använder avancerade maskininlärningsalgoritmer för att kartlägga de förväntade värdena för mätvärden under den tidsperiod som analyseras.
 
 ## Kör intelligent datautjämning
 
