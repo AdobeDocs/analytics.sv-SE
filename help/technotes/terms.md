@@ -2,10 +2,10 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
+source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
 workflow-type: tm+mt
-source-wordcount: '2439'
-ht-degree: 0%
+source-wordcount: '2554'
+ht-degree: 1%
 
 ---
 
@@ -18,6 +18,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
    * Äldre administrationsverktyg, där rapportsvitens inställningar i Adobe Analytics hanteras. I tidigare versioner av Adobe Analytics hanterades även användarbehörigheter här. Se [Administratörsverktyg](/help/admin/admin/c-admin-tools.md) i användarhandboken för Admin.
    * Admin Console i Adobe, där produktåtkomst tillhandahålls och användarbehörigheter hanteras. Se [Admin Console](/help/admin/admin-console/home.md) i handboken Admin.
 * **Allokering:** Om en konverteringsvariabel påträffar mer än ett värde under ett besök avgör variabelns allokeringsinställning vilket värde som behålls. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i användarhandboken för Admin.
+* **Analysis Workspace:** Webbläsarlösning för att skapa stabila, anpassade analysprojekt och demokratisera insikter. Ger större rapportflexibilitet än Reports and Analytics.
 * **Analys:** Identifierades med statistisk modellering för att automatiskt hitta oväntade trender i data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. Se [Analysidentifiering](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) i användarhandboken för Analysera.
 * **AppMeasurement:** Kodbiblioteket som används för att samla in data och skicka dem till Adobe. Se [Startsidan](/help/implement/home.md) i användarhandboken för Implementera.
 * **ASI-kortplats:finns** inte längre. I tidigare versioner av Adobe Analytics tillhandahöll ASI-kortplatser en temporär rapportsvitsbehållare för att visa segmenterade data. I den aktuella versionen av Adobe Analytics kan segment tillämpas direkt på alla rapporter.
@@ -44,10 +45,11 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Kundattribut:** En Experience Cloud-funktion som tillåter överföring av attributdata. Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) i användarhandboken för bastjänsterna.
 * **Kundsupportrepresentant:** En utsedd användare som är behörig att interagera direkt med Adobe kundtjänst. Se [Kundsupportrepresentanter](https://helpx.adobe.com/experience-cloud/supported-users.html) i Experience Cloud Knowledgebase.
 * **Datainsamlingsserver:** Adobe-ägda servrar som tar emot och bearbetar data. Bildbegäranden skickas till Adobe datainsamlingsservrar för användning vid rapportering.
-* **Dataanslutningar:** En komplett utvecklingslösning som gör det möjligt för tredje part att automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. De flesta dataanslutningar använder ett liknande arbetsflöde som används i datakällor. Se Dataanslutningar i användarhandboken för Import.
+* **Dataanslutningar:** En komplett utvecklingslösning som gör det möjligt för tredje part att automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. De flesta dataanslutningar använder ett liknande arbetsflöde som används i datakällor. Se [Dataanslutningar](/help/import/data-connectors/data-connectors-eol.md) i Användarhandboken Importera.
 * **Datafeed:** En export av rådata som visar alla träffar som en rad och variabler som separata kolumner. De vanligaste är att exportera Adobe Analytics-data till en tredjepartsdatabas. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Export.
 * **Datakällor:** Används för att överföra data från en fil till Adobe Analytics. Filen hämtas vanligtvis från en FTP-plats. Se [Datakällor](/help/import/c-data-sources/datasrc-home.md) i Användarhandboken Importera.
 * **data warehouse:** En funktion i Adobe Analytics som gör att du kan begära större rapporter. Se [Data warehouse](/help/export/data-warehouse/data-warehouse.md) i användarhandboken för Export.
+* **Data Workbench:** kallades tidigare Insight. Utformat för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner både online och offline över flera kanaler.
 * **Dimension:** En komponenttyp som innehåller variabelvärden, som text. Exempel är sidnamn, spårningskod eller referensdomän. Ett mätvärde är vanligtvis dess motsvarighet.
 * **Händelseserialisering:** Processen med att implementera åtgärder för att förhindra insamling av dubbletthändelser. Se [Händelseserialisering](../implement/vars/page-vars/events/event-serialization.md) i Användarhandbok för implementering.
 * **eVar:** Se Konverteringsvariabel.
@@ -71,6 +73,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Inloggningsföretag:** En samling rapportsviter som används av din organisation. Vissa organisationer har flera inloggningsföretag som gäller för olika delar av organisationen.
 * **Marknadsföringskanal:** En funktion i Adobe Analytics som kategoriserar träffar efter hur de kom fram till er webbplats. Den logik som används för att kategorisera träffar kan anpassas med regler för bearbetning av marknadsföringskanaler. Se [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) i användarhandboken för komponenter.
 * **Mått:** En komponenttyp som innehåller kvantitativa data. Mätvärden innehåller vanligtvis siffror, t.ex. sidvyer, besök och Intäkter. En dimension är vanligtvis dess motsvarighet.
+* **Mobiltjänster:** Sammanför funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud så att ni kan förstå och förbättra användarengagemanget med era program. Se [Översikt över mobiltjänster](https://experienceleague.adobe.com/docs/mobile-services/using/home.html).
 * **Märk flera programsviter:** Att skicka samma träff till flera rapportsviter. I och med introduktionen till virtuella rapportsviter är detta i stort sett inte längre nödvändigt. De flesta satsningar på taggning av flera programsviter bidrar till att ge plats åt en global rapportserie.
 * **Normalisering:** Ett sätt att ordna en visualisering som tar alla mätvärden och tvingar dem till samma proportioner, vilket gör det enklare att jämföra trender.
 * **Förekomster:** En typ av mått som visar hur många träffar en dimensionspost har angetts eller befunnits. Se måttet [Förekomster](/help/components/metrics/occurrences.md) i användarhandboken för komponenter.
@@ -85,7 +88,9 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Prop:** Se Traffic-variabel.
 * **Rankad rapport:** Ett rapportformat som vanligtvis följer en dimension med ett mätvärde. Med den här typen av rapporter kan du se de översta objekten, till exempel de sidor som visas mest på din webbplats. Se även Trended-rapport.
 * **Realtid:** Visar konfigurerade variabler så snart de samlats in med liten eller ingen fördröjning. Se [Realtidsrapporter](/help/admin/admin/realtime/realtime.md) i användarhandboken för Admin.
+* **Report Builder:** Ett Microsoft Excel-tillägg som gör att du kan skapa anpassade förfrågningar från Adobe Analytics-data.
 * **Rapportsvit:** En överliggande behållare som du skickar data till. Alla rapporter i Adobe Analytics refererar till en rapportserie.
+* **Rapporter och analyser:** kallades tidigare SiteCatalyst. Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet.
 * **Rullande datumintervall:** En typ av relativt datumintervall som ändras allt eftersom tiden går. En rapport som visar de senaste 7 dagarna kan till exempel betraktas som ett löpande datumintervall. Se även statiskt datumintervall.
 * **RSID:** Förkortning för rapportsvitens ID. En rapportsvit har både ett eget namn och ett rapportsvit-ID.
 * **s.t():** Namnet på funktionen i ett AppMeasurement-bibliotek som skickar en begäran om sidvisningsbild. Vissa AppMeasurement-bibliotek använder i stället `s.track()`. Se [t](../implement/vars/functions/t-method.md) i Användarhandboken för implementering.
@@ -98,7 +103,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Serialisering:** Se Händelseserialisering.
 * **Serveranrop:** Alternativt namn för en bildbegäran eller träff, används mest i samband med fakturering.
 * **Enkel åtkomst:** Ett besök där en dimension bara hade ett unikt värde. Besöken kan få flera träffar, förutsatt att det inte finns flera unika värden. Se måttet [Enkel åtkomst](/help/components/metrics/single-access.md) i användarhandboken för komponenter. Se även Studsa.
-* **SiteCatalyst:** Används inte längre som term. Det tidigare produktnamnet för Adobe Analytics.
+* **SiteCatalyst:** Används inte längre som term. Ett tidigare produktnamn för Adobe Analytics.
 * **Lösningsdesigndokument:** Kallas även för lösningsdesignreferens eller SDR. Ett internt dokument som hanteras av en organisation och som beskriver hur anpassade variabler används och den logik som används för att fylla i dem. Se [Skapa ett lösningsdesigndokument](/help/implement/prepare/solution-design.md) i Användarhandboken Implementera.
 * **Underrelation:** Används inte längre som term; ersätts med dimensionsfördelningar. I tidigare versioner av Adobe Analytics gav delrelationer möjlighet att bryta ned konverteringsvariabler. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
 * **Success event:** En spårad åtgärd som en användare vidtagit. Organisationen avgör vilka händelser som ska spåras och vilka variabler för lyckade händelser som du använder för att spåra dem. Se [Anpassade händelser](/help/components/metrics/custom-events.md) i användarhandboken för komponenter.
