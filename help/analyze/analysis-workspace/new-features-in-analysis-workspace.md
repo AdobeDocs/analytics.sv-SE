@@ -5,9 +5,9 @@ title: Nyheter i Analysis Workspace
 feature: Grundläggande om arbetsytan
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 27b04baf5fff026261468678f4b1c49756b4636c
+source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
 workflow-type: tm+mt
-source-wordcount: '8178'
+source-wordcount: '8176'
 ht-degree: 88%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 88%
 # Nyheter i Analysis Workspace
 
 >[!IMPORTANT]
->Ytterligare Analysis Workspace-uppdateringar har lagts in på sidan [Adobe Analytics Documentation Updates](/help/landing/doc-updates.md).
+>Ytterligare Analysis Workspace-uppdateringar har lagts in på sidan [Adobe Analytics Documentation Updates](/help/technotes/doc-updates.md).
 
-Om du vill få tillgång till versionsinformationen för Adobe Experience Cloud som helhet går du [hit](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html).
+Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html) för uppdateringar av den övergripande produkten.
 
 ## Mars 2021
 
