@@ -6,9 +6,9 @@ title: Anpassa behörigheter för Analytics-verktyg
 feature: Administratörsverktyg
 uuid: 8e86bc17-46d3-4c5e-ac25-9f3bfc29b8fa
 exl-id: fe3a9f65-f121-438f-91d0-45cfaea94416
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '609'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Inställningarna på den här sidan gäller för de rapportsviter som har valts 
 | Webbtjänståtkomst | Ger åtkomst till webbtjänster för icke-administratörer. Skapar autentiseringsuppgifter för webbtjänsten. |
 | [Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/report-builder-setup/t-install-arb.html) | Ger medlemmar i den här gruppen åtkomst till [!UICONTROL Report Builder] licenser. |
 | [Analysis ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) WorkspaceAccess | Ger användare åtkomst till Analysis Workspace, det rekommenderade rapporteringsgränssnittet för [!DNL Adobe Analytics]. |
-| [Rapporter och analyser](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html) | Ger användare åtkomst till rapporter och analyser. |
+| [Rapporter och analyser](/help/analyze/reports-analytics/getting-started.md) | Ger användare åtkomst till rapporter och analyser. |
 | [Skapande av beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html) | Ger användare behörighet att skapa beräknade värden. |
 | [Skapa segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) | Ger användare behörighet att skapa segment. |
 | **Data Connectors** |  |
