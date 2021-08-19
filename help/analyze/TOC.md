@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: fcecd58f75425f31d7807f38cf9cbf0f3f276f5e
+source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 87%
+source-wordcount: '985'
+ht-degree: 86%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 87%
 # Handbok om Analytics-verktyg {#analyze}
 
 + [Handbok om Analytics-verktyg](home.md)
++ [Landningssida](landing.md)
 + Analysis Workspace {#analysis-workspace}
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + [Nyheter i Analysis Workspace](analysis-workspace/new-features-in-analysis-workspace.md)
@@ -273,10 +274,8 @@ ht-degree: 87%
    + [Activity Map-rapportering i Analytics](activity-map/activitymap-reporting-analytics.md)
    + [Felsöka webbläsartillägg](activity-map/troubleshooting-browser-extensions.md)
    + [Felsöka datainsamling](activity-map/troubleshoot-data-collection.md)
-   + [Kunskapsresurser](activity-map/activitymap-info-resources.md)
 + Reports and Analytics {#reports-analytics}
    + [Komma igång med Reports and Analytics](reports-analytics/getting-started.md)
-   + [Adobe Analytics – viktiga begrepp](reports-analytics/key-concepts.md)
    + Översikt över rapporteringsgränssnitt {#reporting-interface}
       + [Om Data Collection](reports-analytics/overview/overview-data-collection.md)
       + [Rapportmeny](reports-analytics/overview/reports-menu.md)
@@ -310,11 +309,5 @@ ht-degree: 87%
    + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Insamlingshandsbok](mobile-app/curator.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
-+ Progressive Web Apps {#pwa}
-   + [Progressive Web Apps](pwa/pwa.md)
-+ API för Analytics-rapportering {#analytics-reporting-api}
-   + [API för Analytics-rapportering – översikt](c-reporting-api/c-reporting-api.md)
-   + [API för Analytics-rapportering – jämförelse](c-reporting-api/api-comparison.md)
-   + [https://github.com/AdobeDocs/analytics-2.0-apis](https://github.com/AdobeDocs/analytics-2.0-apis)
-+ Labs {#tech-previews}
-   + [Labs – översikt](tech-previews/overview.md)
++ [Rapporterings-API](reporting-api.md)
++ [Labs](labs.md)
