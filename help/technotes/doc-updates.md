@@ -3,10 +3,10 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättning.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 0de07d1822b28c7ad3b784a4d53dff098aeb55c6
+source-git-commit: 9bbbba053946d2d4c2a0e45dc4c70fe398e3fa3b
 workflow-type: tm+mt
-source-wordcount: '2832'
-ht-degree: 45%
+source-wordcount: '2847'
+ht-degree: 44%
 
 ---
 
@@ -23,6 +23,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Datum | Beskrivning |
 | --- | --- |
 | **Augusti 2021** |  |
+| 18 augusti 2021 | Reviderad struktur på översta nivån och konsoliderad till en enda [landningssida](https://experienceleague.adobe.com/docs/analytics.html) |
 | 18 augusti 2021 | Nytt avsnitt om [A4T och virtuella rapportsviter](/help/components/vrs/vrs-a4t.md) |
 | 18 augusti 2021 | Nytt avsnitt om [Bästa praxis för attribuering](/help/analyze/analysis-workspace/attribution/best-practices.md) |
 | 5 augusti 2021 | Nytt ämne i [Antal upprepande instanser](https://experienceleague.adobe.com/docs/analytics/components/metrics/count-repeat-instances.html) |
