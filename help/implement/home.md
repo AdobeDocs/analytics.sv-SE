@@ -2,9 +2,9 @@
 title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
+source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '363'
 ht-degree: 77%
 
 ---
@@ -41,7 +41,7 @@ Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat p
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](/help/landing/home.md)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Viktiga Analytics-resurser
 
