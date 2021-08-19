@@ -1,14 +1,13 @@
 ---
 title: Komponenthandbok för Analytics
 description: Läs om de olika komponenterna som Adobe Analytics erbjuder.
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+exl-id: 172f816a-b90e-4a5a-8c92-f92f2b1663f3
+source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 80%
+source-wordcount: '214'
+ht-degree: 79%
 
 ---
-
 
 # Komponenthandbok för Analytics
 
@@ -29,12 +28,12 @@ Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen.
 
 ## Viktiga artiklar om Analytics-komponenter
 
-* [Dimensioner](dimensions/overview.md)
+* [Mått](dimensions/overview.md)
 * [Mätvärden](metrics/overview.md)
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](/help/landing/home.md)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Viktiga Analytics-resurser
 
