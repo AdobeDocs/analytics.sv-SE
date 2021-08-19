@@ -4,10 +4,10 @@ description: Produktdokumentation och självhjälp för Analysis Workspace, Adob
 feature: Grundläggande om arbetsytan
 role: User, Admin
 exl-id: 8ed81356-626e-4334-9e20-b481e6ba654a
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 75%
+source-wordcount: '222'
+ht-degree: 76%
 
 ---
 
@@ -28,14 +28,13 @@ Den här guiden innehåller produktdokumentation och självhjälp för följande
 
 * [Adobe Analytics Dashboards - Översikt](/help/analyze/mobile-app/home.md)
 * [Analysis Workspace – komma igång](analysis-workspace/home.md)
-* [Progressiva webbappar för Adobe Analytics](/help/analyze/pwa/pwa.md)
 * [Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/c-analytics-product-comparison/which-analytics-tool.md)
 * [Report Builder – komma igång](report-builder/home.md)
 * [Activity Map – komma igång](activity-map/activity-map.md)
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](/help/landing/home.md)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Viktiga Analytics-resurser
 
