@@ -1,14 +1,13 @@
 ---
 title: Analytics-integrering
 description: Lär dig hur du kan integrera data från andra platser i Adobe Analytics.
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+exl-id: 89debfb1-347b-4f0a-9f3a-4a82df51c8de
+source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 92%
+source-wordcount: '167'
+ht-degree: 90%
 
 ---
-
 
 # Analytics-integrering
 
@@ -31,7 +30,7 @@ Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, till exem
 
 ## Fler användarhandböcker för Analytics
 
-[Användarhandböcker för Analytics](/help/landing/home.md)
+[Användarhandböcker för Analytics](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Viktiga Analytics-resurser
 
