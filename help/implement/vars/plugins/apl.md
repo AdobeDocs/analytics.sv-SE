@@ -2,9 +2,9 @@
 title: apl (appendToList)
 description: Lägg till värden i variabler som har stöd för flera värden.
 exl-id: 08ca43f4-f2cc-43fb-a8eb-7c9dd237dfba
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ function apl(lv,va,d1,d2,cc){var b=lv,d=va,e=d1,c=d2,g=cc;if("-v"===b)return{plu
 
 ## Använda plugin-programmet
 
-Metoden `apl` använder följande argument:
+Funktionen `apl` använder följande argument:
 
 * **`lv`** (required, string): Variabeln som innehåller en avgränsad lista med objekt som ett nytt värde ska läggas till i
 * **`vta`** (required, string): En kommaavgränsad lista över nya värden som ska läggas till i  `lv` argumentets värde.
@@ -71,231 +71,59 @@ Metoden `apl` använder följande argument:
 * **`d2`** (valfri, sträng): Utdataavgränsaren. Standardvärdet är samma som `d1` om det inte anges.
 * **`cc`** (valfritt, boolesk): En flagga som anger om en skiftlägeskänslig kontroll används. Om `true` är dupliceringskontrollen skiftlägeskänslig. Om `false` eller inte anges är dubblettkontrollen inte skiftlägeskänslig. Standardvärdet är `false`.
 
-Metoden `apl` returnerar värdet för argumentet `lv` plus alla icke-dubblettvärden i argumentet `vta`.
+Funktionen `apl` returnerar värdet för argumentet `lv` plus alla icke-dubblettvärden i argumentet `vta`.
 
-## Exempelanrop
-
-### Exempel 1
-
-Om..
+## Exempel
 
 ```js
+// Set the events variable to "event22,event24,event23".
 s.events = "event22,event24";
-```
+s.events = apl(s.events,"event23");
 
-...och följande kod körs...
-
-```js
-s.events = s.apl(s.events, "event23");
-```
-
-... det slutliga värdet för s.events blir:
-
-```js
-s.events = "event22,event24,event23";
-```
-
-### Exempel 2
-
-Om..
-
-```js
+// The events variable remains unchanged because the apl function does not add duplicate values
 s.events = "event22,event23";
-```
+s.events = apl(s.events,"event23");
 
-...och följande kod körs...
+// Set the events variable to "event23" if the events variable is blank
+s.events = "";
+s.events = apl(s.events,"event23");
 
-```js
-s.events = s.apl(s.events, "event23");
-```
-
-... det slutliga värdet för s.events kommer fortfarande att vara:
-
-```js
-s.events = "event22,event23";
-```
-
-I det här exemplet har anropet apl inte gjort några ändringar i s.events eftersom s.events redan innehöll &quot;event23&quot;
-
-### Exempel 2
-
-Om..
-
-```js
-s.events = ""; //blank value
-```
-
-...och följande kod körs...
-
-```js
-s.events = s.apl(s.events, "event23");
-```
-
-... det slutliga värdet för s.events blir..
-
-```js
-s.events = "event23";
-```
-
-### Exempel 4
-
-Om..
-
-```js
+// Append a value to eVar5. The value of prop4 remains unchanged.
+// The value of eVar5 is "hello|people|today".
 s.prop4 = "hello|people";
-```
+s.eVar5 = apl(s.prop4, "today", "|");
 
-...och följande kod körs...
-
-```js
-s.eVar5 = s.apl(s.prop4, "today", "|");
-```
-
-... det slutliga värdet för s.prop4 kommer fortfarande att vara ...
-
-```js
+// Sets prop4 to "hello|people,today". Be mindful of correct delimiters!
 s.prop4 = "hello|people";
-```
+s.prop4 = apl(s.prop4, "today");
 
-...men slutvärdet för s.eVar5 kommer att vara
-
-```js
-s.eVar5 = "hello|people|today";
-```
-
-Tänk på att plugin-programmet bara returnerar ett värde. det behöver inte nödvändigtvis &quot;återställa&quot; variabeln som skickas via lv-argumentet.
-
-### Exempel 5
-
-Om..
-
-```js
-s.prop4 = "hello|people";
-```
-
-...och följande kod körs...
-
-```js
-s.prop4 = s.apl(s.prop4, "today");
-```
-
-... det slutliga värdet för s.prop4 blir..
-
-```js
-s.prop4 = "hello|people,today";
-```
-
-Se till att avgränsaren är konsekvent mellan vad som finns i lv-argumentets värde och vad som finns i d1/d2-argumenten
-
-### Exempel 6
-
-Om..
-
-```js
+// Sets the events variable to "event22,event23,EVentT23". Be mindful of capitalization when using the cc argument!
 s.events = "event22,event23";
-```
+s.events = apl(s.events,"EVenT23", ",", ",", true);
 
-...och följande kod körs...
-
-```js
-s.events = s.apl(s.events,"EVenT23", ",", ",", true);
-```
-
-... det slutliga värdet för s.events blir:
-
-```js
-s.events = "event22,event23,EVentT23";
-```
-
-Det här exemplet är inte praktiskt, men det visar att du måste använda försiktighet när du använder den skiftlägeskänsliga flaggan.
-
-### Exempel 7
-
-Om..
-
-```js
+// Sets the events variable to "event22,event23,event24,event25".
 s.events = "event22,event23";
-```
+s.events = apl(s.events, "event23,event24,event25");
 
-...och följande kod körs...
-
-```js
-s.events = s.apl(s.events, "event23,event24,event25");
-```
-
-... det slutliga värdet för s.events blir:
-
-```js
-s.events = "event22,event23,event24,event25");
-```
-
-Plugin-programmet lägger inte till &quot;event23&quot; till s.events eftersom det redan finns i s.events.  Men den lägger till både event24 och event25 till s.events eftersom ingen av dem fanns tidigare i s.events.
-
-### Exempel 8
-
-Om..
-
-```js
+// Sets linkTrackVars to "events,eVar1,campaign".
+// The last three arguments at the end of this apl call are not necessary because they match the default argument values.
 s.linkTrackVars = "events,eVar1";
-```
+s.linkTrackVars = apl(s.linkTrackVars, "campaign", ",", ",", false);
 
-...och följande kod körs...
-
-```js
-s.linkTrackVars = s.apl(s.linkTrackVars, "campaign", ",", ",", false);
-```
-
-... det slutliga värdet för s.linkTrackVars blir:
-
-```js
-s.linkTrackVars = "events,eVar1,campaign";
-```
-
-De tre sista argumenten (dvs. &quot;,&quot;, &quot;,&quot;, false) i slutet av det här anropet är inte nödvändiga, men skadar inte något genom att anges eftersom de matchar standardargumentvärdena.
-
-### Exempel 9
-
-Om..
-
-```js
+// This apl call does not do anything because the code does not assign the returned value to a variable.
 s.events = "event22,event24";
+apl(s.events, "event23");
+
+// Sets the list2 variable to "apple-APPLE-Apple".
+// Since the two delimiter arguments are different, the value passed in is delimited by "|", then joined together by "-".
+s.list2 = "apple|APPLE";
+s.list2 = apl(s.list2, "Apple", "|", "-", true);
+
+// Sets the list3 variable to "value1,value1,value1" (unchanged).
+// Only new values are deduplicated. Existing duplicate values remain.
+s.list3 = "value1,value1,value1";
+s.list3 = apl(s.list3,"value1");
 ```
-
-...och följande kod körs...
-
-```js
-s.apl(s.events, "event23");
-```
-
-... det slutliga värdet för s.events kommer fortfarande att vara:
-
-```js
-s.events = "event22,event24";
-```
-
-Om du kör plugin-programmet separat (utan att tilldela returvärdet till en variabel) &quot;återställs&quot; inte variabeln som skickas via lv-argumentet.
-
-### Exempel 10
-
-Om..
-
-```js
-s.list2 = "casesensitivevalue|casesensitiveValue"
-```
-
-...och följande kod körs...
-
-```js
-s.list2 = s.apl(s.list2, "CasESensiTiveValuE", "|", "-", true);
-```
-
-... det slutliga värdet för s.list2 blir:
-
-```js
-s.list2 = "casesensitivevalue-casesensitiveValue-CasESensiTiveValuE"
-```
-
-Eftersom de två avgränsarargumenten är olika avgränsas det värde som skickas av det första avgränsarargumentet (&quot;|&quot;) och sedan sammanfogas med det andra avgränsarargumentet (&quot;-&quot;)
 
 ## Versionshistorik
 
@@ -323,7 +151,7 @@ Eftersom de två avgränsarargumenten är olika avgränsas det värde som skicka
 
 ### 2.5 (18 februari 2016)
 
-* Använder nu metoden `inList` för jämförelsebearbetning
+* Använder nu funktionen `inList` för jämförelsebearbetning
 
 ### 2.0 (26 januari 2016)
 
