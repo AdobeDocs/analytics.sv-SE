@@ -2,9 +2,9 @@
 title: addProductEvent
 description: Lägger till anpassade händelser i variabeln products and events.
 exl-id: 74f4cb93-714a-4d2b-88f3-408d032f6811
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
@@ -57,84 +57,51 @@ function addProductEvent(en,ev,ap){var f=en,g=ev,c=ap;if("-v"===f)return{plugin:
 
 ## Använda plugin-programmet
 
-Metoden `addProductEvent` använder följande argument:
+Funktionen `addProductEvent` använder följande argument:
 
 * **`en`** (required, string): Händelsen som ska läggas till i den sista posten i  `products` variabeln. Om variabeln `products` är tom skapas en tom produktpost med händelsen (och dess värde) bifogad.
-* **`ev`** (required, string): Värdet som tilldelas till den numeriska händelsen eller valutakurshändelsen i  `en` argumentet.  Standardvärdet är `1` om det inte anges.
+* **`ev`** (required, string): Värdet som tilldelas till den numeriska händelsen eller valutakurshändelsen i  `en` argumentet.  Standardvärdet är `1` om det inte anges. Tal som inte är inkapslade i strängcitattecken är också giltiga.
 * **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost lägger värdet  `true` (eller  `1`) till händelsen i alla produktposter.  Standardvärdet är `false` om det inte anges.
 
 `addProductEvent` returnerar ingenting. I stället läggs händelsen och dess värde till i variabeln `products`. Plugin-programmet lägger automatiskt till händelsen i variabeln [`events`](../page-vars/events/events-overview.md) eftersom den också krävs där.
 
 ## Cookies
 
-Plugin-programmet addProductEvent skapar eller använder inga cookies
+Funktionen `addProductEvent` skapar inte eller använder några cookies.
 
-## Exempelanrop
-
-### Exempel 1
-
-Följande kod ställer in variabeln `s.products` till `";product1;3;300,;product2;2;122,;product3;1;25;event35=25"`.
+## Exempel
 
 ```js
-s.products=";product1;3;300,;product2;2;122,;product3;1;25"
-s.events="purchase";
-s.addProductEvent("event35", "25");
-```
+// Sets the products variable to ";product1;3;300,;product2;2;122,;product3;1;25;event35=25".
+// Also sets the events variable to "purchase,event35".
+s.products = ";product1;3;300,;product2;2;122,;product3;1;25";
+s.events = "purchase";
+addProductEvent("event35", "25");
 
-Ovanstående kod ställer också in variabeln `s.events` på `"purchase,event35"`
+// Sets the products variable to ";product1;3;300;event35=25,;product2;2;122;event35=25,;product3;1;25;event35=25".
+s.products = ";product1;3;300,;product2;2;122,;product3;1;25";
+addProductEvent("event35", 25, true);
 
-### Exempel 3
-
-Följande kod ställer in variabeln `s.products` till `";product1;3;300;event35=25,;product2;2;122;event35=25,;product3;1;25;event35=25"`
-
-```js
-s.products=";product1;3;300,;product2;2;122,;product3;1;25";
-s.addProductEvent("event35", 25, 1);
-```
-
-När det tredje argumentet i anropet `addProductEvent` är `true` (eller `1`), har varje produktpost den händelse som anges i anropet lagts till i värdet.
-
-### Exempel 2
-
-Följande kod ställer in variabeln `s.products` till `";product1;3;300;event2=10;eVar33=large|eVar34=men|eVar35=blue,;product2;2;122,;product3;1;25;event33= 12|event34=10|event35=15"`
-
-```js
+// Sets the products variable to ";product1;3;300;event2=10;eVar33=large|eVar34=men|eVar35=blue,;product2;2;122,;product3;1;25;event33= 12|event34=10|event35=15"
+// Also sets the s.events variable to "purchase,event2,event33,event34,event35".
 s.products=";product1;3;300;event2=10;eVar33=large|eVar34=men|eVar35=blue,;product2;2;122,;product3;1;25";
 s.events="purchase,event2";
-s.addProductEvent("event33", "12");
-s.addProductEvent("event34", "10");
-s.addProductEvent("event35", "15");
-```
+addProductEvent("event33", "12");
+addProductEvent("event34", "10");
+addProductEvent("event35", "15");
 
-Ovanstående kod ställer också in variabeln `s.events` på `"purchase,event2,event33,event34,event35"`
-
-### Exempel 4
-
-Följande kod ställer in variabeln `s.products` till `";product1;3;300;event2=10|event33=12|event34=10|event35=15;eVar33=large|eVar34=men|eVar35=blue, ;product2;2;122;event33=12|event34=10|event35=15,;product3;1;25;event33=12|event34=10|event35=15"`
-
-```js
+// Sets the products variable to ";product1;3;300;event2=10|event33=12|event34=10|event35=15;eVar33=large|eVar34=men|eVar35=blue,;product2;2;122;event33=12|event34=10|event35=15,;product3;1;25;event33=12|event34=10|event35=15".
+// Also sets the events variable to "purchase,event2,event33,event34,event35".
 s.products=";product1;3;300;event2=10;eVar33=large|eVar34=men|eVar35=blue,;product2;2;122,;product3;1;25"
 s.events="purchase,event2"
-s.addProductEvent("event33", "12", 1);
-s.addProductEvent("event34", 10, 1);
-s.addProductEvent("event35", "15", 1);
+addProductEvent("event33", "12", 1);
+addProductEvent("event34", 10, 1);
+addProductEvent("event35", "15", 1);
+
+// If the products variable isn't already set, sets it to ";;;;event35=25".
+// Also appends event35 to the events variable.
+addProductEvent("event35", "25");
 ```
-
-Ovanstående kod ställer också in variabeln `s.events` på `"purchase,event2,event33,event34,event35"`.
-
->[!NOTE]
->
->Det andra argumentet i anropet kan antingen vara ett heltal **eller** en sträng som representerar ett heltal/tal
-
-### Exempel 5
-
-Om `s.products` inte redan är inställt anges det till `";;;;event35=25"` i följande kod
-
-```js
-s.addProductEvent("event35", "25");
-```
-
-Ovanstående kod lägger även till `"event35"` i slutet av `s.events` **eller**, om `s.events` inte redan är inställt, anger koden ovan `s.events` till `"event35"`
 
 ## Versionshistorik
 
