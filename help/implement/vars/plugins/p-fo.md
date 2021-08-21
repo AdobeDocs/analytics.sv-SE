@@ -2,9 +2,9 @@
 title: p_fo (endast sida först)
 description: Se till att vissa rutiner bara aktiveras en gång per sida.
 exl-id: e82d77f9-2ea9-4b1b-b645-b12879c344ec
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ function p_fo(c){if("-v"===c)return{plugin:"p_fo",version:"3.0"};a:{if("undefine
 
 ## Använda plugin-programmet
 
-Metoden `p_fo` använder följande argument:
+Funktionen `p_fo` använder följande argument:
 
 * **on** (required, string): Namnet på det JavaScript-objekt som skapas av plugin-programmet om objektet inte finns på sidan än.
 
-Om objektet inte finns än returnerar metoden `true` och skapar objektet. Om objektet redan finns returnerar metoden `false`.
+Om objektet inte finns än returnerar funktionen `true` och skapar objektet. Om objektet redan finns returnerar funktionen `false`.
 
 ## Exempelanrop
 
@@ -71,8 +71,8 @@ Följande kod kontrollerar om det finns ett &quot;myobject&quot;-objekt på sida
 
 Å andra sidan, om objektet &quot;myobject&quot; redan finns när anropet p_fo inträffar, returnerar funktionen p_fo värdet false och villkorssatsen betraktas därför som false.  I det här fallet kommer koden i villkorssatsen inte att köras.
 
-```javascript
-if(s.p_fo("myobject"))
+```js
+if(p_fo("myobject"))
 {
   console.log("hello");
 }
