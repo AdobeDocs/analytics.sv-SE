@@ -2,9 +2,9 @@
 title: getVisitNum
 description: Spåra besökarens aktuella besöksnummer.
 exl-id: 05b3f57c-7268-4585-a01e-583f462ff8df
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ function getVisitNum(rp,erp){var a=rp,l=erp;function m(c){return isNaN(c)?!1:(pa
 
 ## Använda plugin-programmet
 
-Metoden `getVisitNum` använder följande argument:
+Funktionen `getVisitNum` använder följande argument:
 
 * **`rp`** (valfritt, heltal ELLER sträng): Antalet dagar innan besöksnummerräknaren återställs.  Standardvärdet är `365` om det inte anges.
    * När det här argumentet är `"w"` återställs räknaren i slutet av veckan (lördag klockan 11:59)
@@ -65,89 +65,31 @@ Metoden `getVisitNum` använder följande argument:
    * När det här argumentet är `"y"` återställs räknaren vid årets slut (31 december)
 * **`erp`** (valfritt, boolesk): När  `rp` argumentet är ett tal avgör det här argumentet om giltigheten för besöksnumret ska förlängas. Om `true` anges återställs besöksnummerräknaren vid efterföljande träffar på webbplatsen. Om `false` anges utökas inte efterföljande träffar på din webbplats när besöksräknaren återställs. Standardvärdet är `true`. Det här argumentet är inte giltigt när argumentet `rp` är en sträng.
 
-Besöksnummerökningen när besökaren återvänder till er webbplats efter 30 minuters inaktivitet. Om den här metoden anropas returneras ett heltal som representerar besökarens aktuella besöksnummer.
+Besöksnummerökningen när besökaren återvänder till er webbplats efter 30 minuters inaktivitet. Om den här funktionen anropas returneras ett heltal som representerar besökarens aktuella besöksnummer.
 
 Detta plugin-program ställer in en cookie från första part med namnet `"s_vnc[LENGTH]"` där `[LENGTH]` är värdet som skickas till argumentet `rp`. Exempel: `"s_vncw"`, `"s_vncm"` eller `"s_vnc365"`. Värdet för cookien är en kombination av en Unix-tidsstämpel som representerar när besöksräknaren återställs, till exempel slutet av veckan, slutet av månaden eller efter 365 dagars inaktivitet. Den innehåller även det aktuella besöksnumret. Detta plugin-program ställer in en annan cookie med namnet `"s_ivc"` som är inställd på `true` och upphör att gälla efter 30 minuters inaktivitet.
 
-## Exempelanrop
-
-### Exempel 1
-
-För en besökare som inte har besökt webbplatsen inom de senaste 365 dagarna kommer följande kod att ställa in s.prop1 som lika med värdet 1:
+## Exempel
 
 ```js
-s.prop1=s.getVisitNum();
+// Sets prop4 to the visit number, storing the value in a cookie that expires in 365 days
+// The cookie value is reset only if there are 365+ days of inactivity or the visitor clears their cookies.
+s.prop4 = getVisitNum();
+
+// Sets eVar4 to the visit number, storing the value in a cookie that expires in 200 days
+// The cookie value is reset only if there are 200+ days of inactivity or the visitor clears their cookies.
+s.eVar4 = getVisitNum(200);
+
+// Sets eVar16 to the visit number, storing the value in a cookie that expires in 90 days.
+// The cookie value is reset after 90 days, regardless of how many visits that happen in those 90 days.
+s.eVar16 = getVisitNum(90,false);
+
+// Track the visit number unique to the week, month, and year, all in separate variables
+// The plug-in automatically creates three separate cookies to track these values
+s.prop1 = getVisitNum("w");
+s.prop2 = getVisitNum("m");
+s.prop3 = getVisitNum("y");
 ```
-
-### Exempel 2
-
-För en besökare som återvänder till webbplatsen inom 364 dagar efter sitt första besök kommer följande kod att ange s.prop1 till 2:
-
-```js
-s.prop1=s.getVisitNum(365);
-```
-
-Om besökaren återvänder till webbplatsen inom 364 dagar efter sitt andra besök, kommer följande kod att ange s.prop1 till 3:
-
-```js
-s.prop1=s.getVisitNum(365);
-```
-
-### Exempel 2
-
-För en besökare som återvänder till webbplatsen inom 179 dagar efter sitt första besök kommer följande kod att ange s.prop1 till 2:
-
-```js
-s.prop1=s.getVisitNum(180,false);
-```
-
-Om besökaren återvänder till webbplatsen en eller flera dagar efter sitt andra besök, kommer följande kod att ställa in s.prop1 på 1:
-
-```js
-s.prop1=s.getVisitNum(180,false);
-```
-
-När det andra argumentet i anropet är lika med false kommer den rutin som bestämmer när besöksnumret ska vara &quot;återställt&quot; till 1 att göra &quot;x&quot; antal dagar - i det här exemplet 365 dagar - efter besökarens första besök på webbplatsen.
-
-När det andra argumentet är lika med true (eller inte inställt alls) återställs besöksnumret till 1 först efter &quot;x&quot;-antalet dagar - i det här exemplet 365 dagar - besökarens inaktivitet.
-
-### Exempel 4
-
-För alla besökare som kommer till webbplatsen för första gången under den aktuella veckan, med början på söndagen, anges följande kod som s.prop1 till 1:
-
-```js
-s.prop1=s.getVisitNum("w");
-```
-
-### Exempel 5
-
-För alla besökare som kommer till webbplatsen för första gången under den aktuella månaden, med början den första dagen i varje månad, anges s.prop1 till 1:
-
-```js
-s.prop1=s.getVisitNum("m");
-```
-
-Kom ihåg att plugin-programmet getVisitNum inte tar hänsyn till butiksbaserade kalendrar (t.ex. 4-5-4, 4-4-5 osv.)
-
-### Exempel 6
-
-För alla besökare som kommer till webbplatsen för första gången under det aktuella året - med början den 1 januari - anges s.prop1 till 1:
-
-```js
-s.prop1=s.getVisitNum("y");
-```
-
-### Exempel 7
-
-Om du vill spåra besökarens besöksnummer för veckan, besökarens besöksnummer för månaden och besökarens besöksnummer för året - allt inom olika analysvariabler - bör du använda kod som liknar följande:
-
-```js
-s.prop1=s.getVisitNum("w");
-s.prop2=s.getVisitNum("m");
-s.prop3=s.getVisitNum("y");
-```
-
-I det här fallet kommer plugin-programmet att skapa tre olika cookies - en för var och en av de olika tidsperioderna - för att hålla reda på besöksnumret per tidsperiod.
 
 ## Versionshistorik
 
