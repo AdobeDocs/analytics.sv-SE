@@ -2,7 +2,7 @@
 title: manageVars
 description: Ändra värdena för mer än en Analytics-variabel åt gången.
 exl-id: b80d1c43-7e79-443e-84fb-1f1edffca461
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
@@ -57,7 +57,7 @@ function manageVars(cb,l,il){var g=cb,c=l,d=il;if("-v"===g)return{plugin:"manage
 
 ## Använda plugin-programmet
 
-Metoden `manageVars` använder följande argument:
+Funktionen `manageVars` använder följande argument:
 
 * **`cb`** (required, string): Namnet på en callback-funktion som plugin-programmet använder för att ändra Analytics-variablerna. Du kan använda en Adobe-funktion som `cleanStr` eller en egen anpassad funktion.
 * **`l`** (valfri, sträng): En kommaavgränsad lista med Analytics-variabler som du vill ändra. Standardvärdet är ALLA Adobe Analytics-variabler när de inte anges, vilket inkluderar:
@@ -79,7 +79,7 @@ Metoden `manageVars` använder följande argument:
    * Alla kontextdatavariabler
 * **`Il`** (valfritt, boolesk): Ange till  `false` om du vill  ** exkludera listan med variabler som deklarerats i  `l` argumentet i stället för att ta med dem. Standardvärdet är `true`.
 
-Om du anropar den här metoden returneras ingenting. I stället ändras värdena för Analytics-variabler baserat på den önskade callback-funktionen.
+Anrop till den här funktionen returnerar ingenting. I stället ändras värdena för Analytics-variabler baserat på den önskade callback-funktionen.
 
 ## Exempelanrop
 
@@ -88,7 +88,7 @@ Om du anropar den här metoden returneras ingenting. I stället ändras värdena
 Följande kod...
 
 ```js
-s.manageVars("lowerCaseVars");
+manageVars("lowerCaseVars");
 ```
 
 ...ändrar värdena för alla variablerna som beskrivs ovan till nedsänkta versioner.  Det enda undantaget till detta är händelsvariabeln, som vissa av händelserna (t.ex. scAdd, scCheckout, osv.) är skiftlägeskänsliga och bör inte sänkas
@@ -98,17 +98,17 @@ s.manageVars("lowerCaseVars");
 Följande kod...
 
 ```js
-s.manageVars("lowerCaseVars", "events", false);
+manageVars("lowerCaseVars", "events", false);
 ```
 
 ...ger i stort sett exakt samma resultat som det första exemplet eftersom händelsvariabeln inte sänks som standard.
 
-### Exempel 2
+### Exempel 3
 
 Följande kod...
 
 ```js
-s.manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2");
+manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2");
 ```
 
 ...ändrar (t.ex. gemener) endast värdena för eVar1, eVar2, eVar3 och list2
@@ -118,7 +118,7 @@ s.manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2");
 Följande kod...
 
 ```js
-s.manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2", false);
+manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2", false);
 ```
 
 ...kommer att ändra (t.ex. gemener) värdena för alla variabler som beskrivs ovan, EXCEPT för eVar1, eVar2, eVar3 och list2
@@ -128,7 +128,7 @@ s.manageVars("lowerCaseVars", "eVar1,eVar2,eVar3,list2", false);
 Följande kod...
 
 ```js
-s.manageVars("cleanStr");
+manageVars("cleanStr");
 ```
 
 ...ändrar värdena för alla de variabler som beskrivs ovan, inklusive händelsvariablerna.  Callback-funktionen clearStr gör följande med varje variabels värde:
