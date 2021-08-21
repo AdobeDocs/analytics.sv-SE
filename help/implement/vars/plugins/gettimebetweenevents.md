@@ -2,9 +2,9 @@
 title: getTimeBetweenEvents
 description: Mät tiden mellan två händelser.
 exl-id: 15887796-4fe4-4b3a-9a65-a4672c5ecb34
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ function getTimeBetweenEvents(ste,rt,stp,res,cn,etd,fmt,bml,rte){var v=ste,B=rt,
 
 ## Använda plugin-programmet
 
-Metoden `getTimeBetweenEvents` använder följande argument:
+Funktionen `getTimeBetweenEvents` använder följande argument:
 
 * **`ste`** (required, string): Starta timerhändelser. En kommaavgränsad sträng med Analytics-händelser för att&quot;starta timern&quot;.
 * **`rt`** (obligatoriskt, booleskt): Starta om tidsinställningen. Ange `true` om du vill starta om timern varje gång variabeln `events` innehåller en starttimerhändelse. Ange `false` om du inte vill att timern ska starta om när en starttimerhändelse visas.
@@ -81,54 +81,28 @@ Metoden `getTimeBetweenEvents` använder följande argument:
 * **`bml`** (valfritt, antal): Längden på avrundningsriktmärket enligt  `fmt` argumentets format. Om argumentet `fmt` till exempel är `"s"` och det här argumentet är `2`, avrundas returvärdet till närmaste 2-sekundersreferens. Om `fmt`-argumentet är `"m"` och det här argumentet är `0.5`, avrundas returvärdet till närmaste halveringstips.
 * **`rte`** (valfri, sträng): Kommaavgränsad sträng med Analytics-händelser som tar bort eller tar bort timern. Standardvärdet är ingenting.
 
-Om du anropar den här metoden returneras ett heltal som representerar tiden mellan starthändelsen och stopphändelsen timer i det önskade formatet.
+När den här funktionen anropas returneras ett heltal som representerar tiden mellan starthändelsen och stopphändelsen timer i det önskade formatet.
 
 ## Exempelanrop
 
-### Exempel 1
-
-Följande kod...
-
 ```js
+// The timer starts or restarts when the events variable contains event1
+// The timer stops and resets when the events variable contains event2
+// The timer resets when the events variable contains event3 or the visitor closes their browser
+// Sets eVar1 to the number of seconds between event1 and event2, rounded to the nearest 2-second benchmark
 s.eVar1 = getTimeBetweenEvents("event1", true, "event2", true, "", 0, "s", 2, "event3");
+
+// The timer starts when the events variable contains event1. It does NOT restart with subsequent hits that also contain event1
+// The timer records a "lap" when the events variable contains event2. It does not stop the timer.
+// The timer resets when the events variable contains event3 or if more than 20 days pass since the timer started
+// The timer is stored in a cookie labeled "s_20"
+// Sets eVar4 to the number of hours between event1 and event2, rounded to the nearest 90-minute benchmark
+s.eVar4 = getTimeBetweenEvents("event1", false, "event2", false, "s_20", 20, "h", 1.5, "event3");
+
+// Similar to the above timer in eVar4, except the return value is returned in seconds/minutes/hours/days depending on the timer length.
+// The timer expires after 1 day.
+s.eVar4 = getTimeBetweenEvents("event1", true, "event2", true);
 ```
-
-...är konfigurerad att bete sig på följande sätt:
-
-* Timern startar när s.events innehåller event1.
-* Timern startas om varje gång s.events innehåller event1
-* Timern stoppas när s.events innehåller event2
-* Timern återställs (dvs. gå till 0 sekunder) varje gång s.events innehåller event2
-* Timern återställs också när s.events innehåller event3 ELLER om besökaren stänger sin webbläsare
-* När en faktisk tid mellan event1 och event2 spelas in, ställer plugin-programmet in eVar1 som lika med antalet sekunder mellan de två händelser som ställs in, avrundat till närmaste 2-sekunders test (t.ex. 0 sekunder, 2 sekunder, 4 sekunder, 10 sekunder, 184 sekunder osv.)
-* Om s.events innehåller event2 innan en timer har startats, ställs inte eVar1 in alls.
-
-### Exempel 2
-
-Följande kod...
-
-```js
-s.eVar1 = getTimeBetweenEvents("event1", false, "event2", false, "s_20", 20, "h", 1.5, "event3");
-```
-
-...är konfigurerad att bete sig på följande sätt:
-
-* Timern startar när s.events innehåller event1.
-* Timern startar INTE om varje gång som s.events innehåller event1, utan den ursprungliga timern fortsätter ändå att köras
-* Timern stoppas INTE när s.events innehåller event2, men plugin-programmet spelar in tiden sedan den ursprungliga inställningen för event1 spelades in
-* Timern lagras i en cookie med namnet&quot;s_20&quot;
-* Timern återställs endast när s.events innehåller event3 ELLER om 20 dagar har gått sedan timern startades
-* När en tid mellan (ursprunglig) händelse1 och händelse2 registreras, kommer plugin-programmet att ställa in eVar1 som lika med antalet timmar mellan de två händelser som ställs in, avrundat till närmaste 1/2-timmars riktmärke (t.ex. 0 timmar, 1,5 timmar, 3 timmar, 7,5 timmar, 478,5 timmar osv.)
-
-### Exempel 2
-
-Följande kod...
-
-```js
-s.eVar1 = getTimeBetweenEvents("event1", true, "event2", true);
-```
-
-...kommer att ge liknande resultat som i det första exemplet ovan, värdet för eVar1 returneras i sekunder, minuter, timmar eller dagar, beroende på timerns slutliga längd.  Timern förfaller 1 dag efter att den först ställdes in i stället för när besökaren stänger sin webbläsare.
 
 ## Versionshistorik
 
