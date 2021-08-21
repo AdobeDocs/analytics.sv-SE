@@ -2,9 +2,9 @@
 title: getTimeSinceLastVisit
 description: Mät hur lång tid det tar mellan två besök.
 exl-id: c5cef219-8a8a-4e57-a372-f2e063325a67
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '494'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ function getTimeSinceLastVisit(){if(arguments&&"-v"===arguments[0])return{plugin
 
 ## Använda plugin-programmet
 
-Metoden `getTimeSinceLastVisit` använder inga argument. Den returnerar den tid som gått sedan besökaren senast kom till webbplatsen och som är paketerad i följande format:
+Funktionen `getTimeSinceLastVisit` använder inga argument. Den returnerar den tid som gått sedan besökaren senast kom till webbplatsen och som är paketerad i följande format:
 
 * Tid mellan 30 minuter och en timme sedan det senaste besöket är inställt på närmaste halvminuters test. Exempel, `"30.5 minutes"`, `"53 minutes"`
 * Tiden mellan en timme och en dag avrundas till närmaste kvartalstimme. Exempel, `"2.25 hours"`, `"7.5 hours"`
@@ -70,22 +70,21 @@ Metoden `getTimeSinceLastVisit` använder inga argument. Den returnerar den tid 
 
 Denna plugin skapar en cookie från första part med namnet `"s_tslv"` som är inställd på en Unix-tidsstämpel för den aktuella tiden. Kakan går ut efter två års inaktivitet.
 
-## Exempelanrop
+## Exempel
 
-### Exempel 1
+```js
+// Given a visitor's first visit to the site
+// Sets prop1 to "New Visitor"
+s.prop1 = getTimeSinceLastVisit();
 
-Om en helt ny besökare kommer till webbplatsen och följande kod körs på första sidan av besöket ...
+// 35 minutes later, the same visitor returns
+// Sets prop1 to "35 minutes"
+s.prop1 = getTimeSinceLastVisit();
 
-```javascript
-s.prop1 = s.getTimeSinceLastVisit();
-s.linkTrackVars = s.apl(s.linkTrackVars, "prop1") //ensures that prop1 will be included on the first hit of the visit
+// 4 days later, the same visitor returns
+// Sets prop1 to "4 days"
+s.prop1 = getTimeSinceLastVisit();
 ```
-
-...värdet för s.prop1 anges som &quot;Ny besökare&quot;.
-
-Om samma kod körs på samma domän efter 35 minuters inaktivitet, kommer värdet för s.prop1 att anges till &quot;35 minuter&quot;.
-
-Om samma kod körs på samma domän efter 4 dagars ytterligare inaktivitet ställs värdet för s.prop1 in på &quot;4 dagar&quot;.
 
 ## Versionshistorik
 
