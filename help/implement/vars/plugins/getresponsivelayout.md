@@ -2,9 +2,9 @@
 title: getResponsiveLayout
 description: Bestäm vilken layout för en webbplats som visas just nu.
 exl-id: 5b192d02-fc3c-4b82-acb4-42902202ab5f
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,13 @@ var getResponsiveLayout=function(ppw,plw,tw){var c=ppw,b=plw,e=tw;if("-v"===c)re
 
 ## Använda plugin-programmet
 
-Metoden `getResponsiveLayout` använder följande argument:
+Funktionen `getResponsiveLayout` använder följande argument:
 
 * **`ppw`** (obligatoriskt, heltal): Den maximala pixelbredden som ett webbläsarfönster kan ha innan sidan växlar från en stående telefonlayout till en liggande telefonlayout
 * **`plw`** (obligatoriskt, heltal): Den maximala pixelbredden som ett webbläsarfönster kan ha innan sidan växlar från en liggande telefonlayout till en surfplattebaserad layout
-* **`tw`** (obligatoriskt, booleskt): Den maximala pixelbredden som ett webbläsarfönster kan ha innan sidan växlar från en surfplattelayout till en skrivbordsbaserad layout
+* **`tw`** (obligatoriskt, heltal): Den maximala pixelbredden som ett webbläsarfönster kan ha innan sidan växlar från en surfplattelayout till en skrivbordsbaserad layout
 
-Om den här metoden anropas returneras en sträng som innehåller två delar. I den första delen används av följande värden, beroende på webbläsarens bredd och ovanstående argument:
+När den här funktionen anropas returneras en sträng som innehåller två delar avgränsade med kolon (`:`). Den första delen av strängen innehåller ett av följande värden, beroende på webbläsarens bredd och argumenten ovan:
 
 * `"phone portrait layout"`
 * `"phone landscape layout"`
@@ -73,34 +73,22 @@ Om den här metoden anropas returneras en sträng som innehåller två delar. I 
 
 Den andra delen av den returnerade strängen är webbläsarens bredd- och höjdmått. Exempel, `"desktop layout:1243x700"`.
 
-## Exempelanrop
-
-### Exempel 1
-
-Om..
-
-* Webbplatsen växlar från stående telefonläge till liggande telefonläge när webbläsarbredden är större än 500 pixlar
-* Webbplatsen växlar från liggande telefonläge till surfplatteläge när webbläsarbredden är större än 700 pixlar
-* Webbplatsen växlar från surfplatteläge till skrivbordsläge när webbläsarbredden är större än 1 000 pixlar
-
-...följande kod ställer in eVar10 lika med den aktuella responsiva designlayouten som besökaren upplever, liksom webbläsarens bredd och mått
+## Exempel
 
 ```js
+// A visitor accesses your site on their laptop. The browser window is maximized.
+// * Your site switches from phone portrait mode to phone landscape mode when the browser width is greater than 500 pixels
+// * Your site switches from phone landscape mode to tablet mode when the browser width is greater than 700 pixels
+// * Your site switches from tablet mode to desktop mode when the browser width is greater than 1000 pixels
+// Sets eVar10 to "desktop layout:1920x937".
 s.eVar10 = getResponsiveLayout(500, 700, 1000);
-```
 
-### Exempel 2
-
-Om..
-
-* Webbplatsen har endast telefonläge, surfplatteläge och skrivbordsläge
-* Webbplatsen växlar från telefonläge till surfplatteläge när webbläsarbredden är större än 500 pixlar
-* Webbplatsen växlar från surfplatteläge till skrivbordsläge när webbläsarbredden är större än 1 100 pixlar
-
-...följande kod ställer in eVar10 lika med den aktuella responsiva designlayouten som besökaren upplever, liksom webbläsarens bredd och mått
-
-```js
-s.eVar10 = getResponsiveLayout(500, 500, 1100);
+// A visitor accesses your site on their phone.
+// * Your site has only a phone mode, a tablet mode, and a desktop mode
+// * Your site switches from phone mode to tablet mode when the browser width is greater than 800 pixels
+// * Your site switches from tablet mode to desktop mode when the browser width is greater than 1,100 pixels
+// Sets eVar10 to "phone portrait layout:720x1280"
+s.eVar10 = getResponsiveLayout(800, 800, 1100);
 ```
 
 ## Versionshistorik
