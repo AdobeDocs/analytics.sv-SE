@@ -2,9 +2,9 @@
 title: getGeoCoordinates
 description: Spåra en besökares geoLocation.
 exl-id: 8620d083-7fa6-432b-891c-e24907e7c466
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ function getGeoCoordinates(){if(arguments&&"-v"===arguments[0])return{plugin:"ge
 
 ## Använda plugin-programmet
 
-Metoden `getGeoCoordinates` använder inga argument. Det returnerar ett av följande värden:
+Funktionen `getGeoCoordinates` använder inga argument. Det returnerar ett av följande värden:
 
 * `"geo coordinates not available"`: För enheter som inte har geoplatsdata tillgängliga när plugin-programmet körs. Det här värdet är vanligt vid den första besöksträffen, särskilt när besökarna först måste ge sitt samtycke till att spåra sin plats.
 * `"error retrieving geo coordinates"`: När plugin-programmet påträffar fel vid försök att hämta enhetens plats
@@ -69,38 +69,29 @@ Metoden `getGeoCoordinates` använder inga argument. Det returnerar ett av följ
 
 Detta plugin-program använder en cookie med namnet `"s_ggc"` för att lagra koordinater mellan träffar om det behövs.
 
-## Exempelanrop
-
-### Exempel 1
-
-Följande kod...
+## Exempel
 
 ```js
-s.eVar1 = s.getGeoCoordinates();
-```
+// Sets eVar1 to one of the above return values depending on the visitor's device status.
+s.eVar1 = getGeoCoordinates();
 
-...anger att eVar1 är lika med ett av de ovanstående returvärdena beroende på besökarens enhetsstatus
-
-### Exempel 2
-
-Följande kod extraherar latitud och longitud till sina egna variabler, som kallas finalLatitude och finalLongitude, för användning i annan kod/andra program
-
-```js
-var coordinates = s.getGeoCoordinates();
+// Extracts latitude and longitude into their own variables called finalLatitude and finalLongitude for use in other code/applications.
+var coordinates = getGeoCoordinates();
 if(coordinates.indexOf("latitude") > -1)
 {
   var finalLatitude = Number(coordinates.split("|")[0].trim().split("=")[1]),
   finalLongitude = Number(coordinates.split("|")[1].trim().split("=")[1]);
 }
-```
 
-Därifrån kan man se om en besökare är på Frihetsgudinnan:
-
-```js
-if(finalLatitude >= 40.6891 && finalLatitude <= 40.6893 && finalLongtude >= -74.0446 && finalLongitude <= -74.0444)
+// From there, you can determine whether a visitor is at, for example, the Statue of Liberty:
+if(finalLatitude >= 40.6891 && finalLatitude <= 40.6893 && finalLongitude >= -74.0446 && finalLongitude <= -74.0444)
+{
   var visitorAtStatueOfLiberty = true;
+}
 else
+{
   var visitorAtStatueOfLiberty = false;
+}
 ```
 
 ## Versionshistorik
