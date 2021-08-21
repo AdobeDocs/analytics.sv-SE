@@ -2,9 +2,9 @@
 title: inList
 description: Kontrollera om ett värde finns i ett annat teckenavgränsat värde.
 exl-id: 7eedfd01-2b9a-4fae-a35b-433ca6900f27
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -57,96 +57,48 @@ function inList(lv,vtc,d,cc){var b=lv,e=vtc,c=d,f=cc;if("-v"===b)return{plugin:"
 
 ## Använda plugin-programmet
 
-Metoden `inList` använder följande argument:
+Funktionen `inList` returnerar ett booleskt värde beroende på dess indata. Följande argument används:
 
 * **`lv`** (required, string or array): En avgränsad lista med värden eller ett JavaScript-arrayobjekt som ska sökas igenom
 * **`vtc`** (required, string): Värdet som ska sökas efter
 * **`d`** (valfri, sträng): Avgränsaren som används för att separera enskilda värden i  `lv` argumentet. Standardvärdet är ett kommatecken (`,`) när inget anges.
-* **`cc`** (valfritt, boolesk): Om det är inställt på  `true`görs en skiftlägeskänslig kontroll. Om `false` anges eller utelämnas görs en skiftlägesokänslig kontroll. Standardvärdet är `false`.
+* **`cc`** (valfritt, boolesk): Om det är inställt på  `true` eller  `1`så görs en skiftlägeskänslig kontroll. Om `false` anges eller utelämnas görs en skiftlägesokänslig kontroll. Standardvärdet är `false`.
 
-Om den här metoden anropas returneras `true` om en matchning hittas och `false` om det inte finns någon matchning.
+Om funktionen anropas returneras `true` om en matchning hittas och `false` om det inte finns någon matchning.
 
-## Exempelanrop
-
-### Exempel 1
-
-Om..
+## Exempel
 
 ```js
-s.events="event22,event24";
-```
+// Returns true
+s.events = "event22,event24";
+if(inList(s.events,"event22")) {
+    // Code will execute
+}
 
-...och följande kod körs...
+// Returns false because event2 is not an exact match in the string
+s.events = "event22,event24";
+if(inList(s.events,"event2")) {
+    // Code will not execute
+}
 
-```js
-if(s.inList(s.events,"event22"))
-```
+// Returns true because of the NOT operator
+s.events = "event22,event24";
+if(!inList(s.events,"event23")) {
+    // Code will execute
+}
 
-...villkorssatsen if är true
-
-### Exempel 2
-
-Om..
-
-```js
-s.events="event22,event24";
-```
-
-...och följande kod körs...
-
-```js
-if(s.inList(s.events,"event2"))
-```
-
-...villkorssatsen if är false eftersom anropet inList inte gav någon exakt matchning mellan event2 och något av de avgränsade värdena i s.events
-
-### Exempel 2
-
-Om..
-
-```js
-s.events="event22,event24";
-```
-
-...och följande kod körs...
-
-```js
-if(!s.inList(s.events,"event23"))
-```
-
-...villkorssatsen if är true eftersom anropet inList inte gav någon exakt matchning mellan event23 och något av de avgränsade värdena i s.events (observera operatorn NOT i början av variabelanropet inList).
-
-### Exempel 4
-
-Om..
-
-```js
+// Returns false because of the case-sensitive check
 s.events = "event22,event23";
-```
+if(inList(s.events,"EVenT23","",true)) {
+    // Code will not execute
+}
 
-...och följande kod körs...
-
-```js
-if(s.inList(s.events,"EVenT23","",1))
-```
-
-...villkorlig if-programsats är false.  Det här exemplet är inte praktiskt, men det visar att du måste använda försiktighet när du använder den skiftlägeskänsliga flaggan.
-
-### Exempel 5
-
-Om..
-
-```js
+// Returns false because of a mismatched delimiter, treating "events,eVar1" as a single value
 s.linkTrackVars = "events,eVar1";
+if(inList(s.linkTrackVars,"eVar1","|")) {
+    // Code will not execute
+}
 ```
-
-...och följande kod körs...
-
-```js
-if(s.inList(s.linkTrackVars,"eVar1","|"))
-```
-
-...villkorlig if-programsats är false.  Värdet på argumentet d som skickades till anropet (dvs. &quot;|&quot;) förutsätter att de enskilda värdena i s.linkTrackVars avgränsas av ett lodstreck, medan värdena i själva verket avgränsas med kommatecken.  I det här fallet försöker plugin-programmet matcha hela värdet för s.linkTrackVars (d.v.s. &quot;events,eVar1&quot;) och det värde som ska sökas efter (dvs. &quot;eVar1&quot;).
 
 ## Versionshistorik
 
