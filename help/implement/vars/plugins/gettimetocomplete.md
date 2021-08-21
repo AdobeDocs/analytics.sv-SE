@@ -2,9 +2,9 @@
 title: getTimeToComplete
 description: Mät hur lång tid det tar att slutföra en uppgift.
 exl-id: 90a93480-3812-49d4-96f0-8eaf5a70ce3c
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -57,51 +57,31 @@ function getTimeToComplete(sos,cn,exp,tp){var f=sos,m=cn,l=exp,e=tp;if("-v"===f)
 
 ## Använda plugin-programmet
 
-Metoden `getTimeToComplete` använder följande argument:
+Funktionen `getTimeToComplete` använder följande argument:
 
 * **`sos`** (valfri, sträng): Ange  `"start"` när du vill starta timern. Ange `"stop"` när du vill stoppa timern. Standardvärdet är `"start"`.
 * **`cn`** (valfri, sträng): Namnet på den cookie som ska lagra starttiden. Standardvärdet är `"s_gttc"`.
 * **`exp`** (valfritt, heltal): Antalet dagar som cookien (och timern) förfaller. Standardvärdet är `0`, som representerar slutet av webbläsarsessionen.
 
-När den här metoden anropas returneras en sträng som innehåller det antal dagar, timmar, minuter och/eller sekunder som det tog mellan åtgärden `"start"` och `"stop"`.
+När den här funktionen anropas returneras en sträng som innehåller det antal dagar, timmar, minuter och/eller sekunder som det tog mellan åtgärden `"start"` och `"stop"`.
 
-## Exempelanrop
-
-### Exempel 1
-
-Använd de här samtalen för att bestämma tiden mellan när en besökare påbörjar utcheckningsprocessen och när de gör ett köp.
-
-Starta timern när besökaren startar utcheckningen:
+## Exempel
 
 ```js
-if(s.events.indexOf("scCheckout") > -1) s.getTimeToComplete("start");
+// Start the timer when the visitor starts the checkout
+if(s.events.indexOf("scCheckout") > -1) getTimeToComplete("start");
+
+// Stop the timer when the visitor makes the purchase and set prop1 to the time difference between stop and start
+// Sets prop1 to the amount of time it took to complete the purchase process
+if(s.events.indexOf("purchase") > -1) s.prop1 = getTimeToComplete("stop");
+
+// Simultaneously track the time it takes to complete a purchase and to fill out a registration form
+// Stores each timer in their own respective cookies so they run independently
+if(inList(s.events, "scCheckout")) getTimeToComplete("start", "gttcpurchase");
+if(inList(s.events, "purchase")) s.prop1 = getTimeToComplete("start", "gttcpurchase");
+if(inList(s.events, "event1")) getTimeToComplete("start", "gttcregister", 7);
+if(inList(s.events, "event2")) s.prop2 = getTimeToComplete("stop", "gttcregister", 7);
 ```
-
-Stoppa timern när besökaren gör köpet och ställ in prop1 på tidsskillnaden mellan stopp och start:
-
-```js
-if(s.events.indexOf("purchase") > -1) s.prop1 = s.getTimeToComplete("stop");
-```
-
-s.prop1 fångar den tid som krävs för att slutföra inköpsprocessen
-
-### Exempel 2
-
-Om du vill att flera tidtagare ska köras samtidigt (för att mäta olika processer) måste du ange cookie-argumentet för cn manuellt.  Om du till exempel vill mäta hur lång tid som krävs för att slutföra ett köp ställer du in följande kod..
-
-```javascript
-if(s.inList(s.events, "scCheckout")) s.getTimeToComplete("start", "gttcpurchase");
-if(s.inList(s.events, "purchase")) s.prop1 = s.getTimeToComplete("start", "gttcpurchase");
-```
-
-...men om du vill mäta (samtidigt) hur lång tid det tar att fylla i ett registreringsformulär, kör du även följande kod:
-
-```js
-if(s.inList(s.events, "event1")) s.getTimeToComplete("start", "gttcregister", 7);
-if(s.inList(s.events, "event2")) s.prop2 = s.getTimeToComplete("stop", "gttcregister", 7);
-```
-
-I det andra exemplet är event1 tänkt att fånga upp början av en registreringsprocess som kan ta upp till 7 dagar att slutföra, oavsett orsak, och event2 är avsedd att fånga upp slutförandet av registreringen.  s.prop2 fångar den tid som krävs för att slutföra registreringsprocessen
 
 ## Versionshistorik
 
