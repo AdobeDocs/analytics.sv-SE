@@ -2,9 +2,9 @@
 title: rfl
 description: Ta bort ett specifikt värde från en teckenavgränsad sträng.
 exl-id: d66b757e-b39f-4b6e-9999-6fbde87505af
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ function rfl(lv,vr,d1,d2,df){var b=lv,f=vr,e=d1,h=d2,g=df;if("-v"===b)return{plu
 
 ## Använda plugin-programmet
 
-Metoden `rfl` använder följande argument:
+Funktionen `rfl` använder följande argument:
 
 * **`lv`** (required, string): En variabel (eller sträng) som innehåller en lista med avgränsade värden
 * **`vr`** (required, string): Värdet som du vill ta bort från  `lv` argumentet. Adobe rekommenderar att du inte tar bort flera värden under ett enda `rfl`-anrop.
@@ -70,7 +70,7 @@ Metoden `rfl` använder följande argument:
 * **`d2`** (valfri, sträng): Avgränsaren som du vill att retursträngen ska använda. Standardvärdet är samma värde som `d1`-argumentet.
 * **`df`** (valfritt, boolesk): Om  `true`det här alternativet används för att endast duplicera instanser av  `vr` argumentet från  `lv` argumentet i stället för alla instanser. Standardvärdet är `false` om det inte anges.
 
-Om du anropar den här metoden returneras en modifierad sträng som innehåller argumentet `lv`, men utan instanser (eller dubblettinstanser) av värdet som anges i argumentet `vr`.
+När den här funktionen anropas returneras en modifierad sträng som innehåller argumentet `lv`, men utan instanser (eller dubblettinstanser) av värdet som anges i argumentet `vr`.
 
 ## Exempelanrop
 
@@ -85,7 +85,7 @@ s.events = "event22,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event24");
+s.events = rfl(s.events,"event24");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -105,7 +105,7 @@ s.events = "event22,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event26");
+s.events = rfl(s.events,"event26");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -127,7 +127,7 @@ s.events = "event22,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events);
+s.events = rfl(s.events);
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -136,7 +136,7 @@ s.events = s.rfl(s.events);
 s.events = "";
 ```
 
-Om argumentet lv eller vr är tomt i ett s.rfl-anrop returnerar plugin-programmet ingenting
+Om argumentet `lv` eller `vr` är tomt i ett `rfl`-anrop returnerar plugin-programmet ingenting.
 
 ### Exempel 4
 
@@ -149,7 +149,7 @@ s.prop4 = "hello|people|today";
 ...och följande kod körs...
 
 ```js
-s.eVar5 = s.rfl(s.prop4,"people","|");
+s.eVar5 = rfl(s.prop4,"people","|");
 ```
 
 ...det slutliga värdet för s.prop4 kommer fortfarande att vara ...
@@ -164,7 +164,7 @@ s.prop4 = "hello|people|today";
 s.eVar5 = "hello|today";
 ```
 
-Tänk på att plugin-programmet bara returnerar ett värde. den&quot;återställer&quot; inte variabeln som skickas via lv-argumentet.
+Tänk på att plugin-programmet bara returnerar ett värde. det &quot;återställer&quot; inte variabeln som skickas via argumentet `lv`.
 
 ### Exempel 5
 
@@ -177,7 +177,7 @@ s.prop4 = "hello|people|today";
 ...och följande kod körs...
 
 ```js
-s.prop4 = s.rfl(s.prop4,"people");
+s.prop4 = rfl(s.prop4,"people");
 ```
 
 ...det slutliga värdet för s.prop4 kommer fortfarande att vara ...
@@ -186,7 +186,7 @@ s.prop4 = s.rfl(s.prop4,"people");
 s.prop4 = "hello|people|today";
 ```
 
-Var noga med att ange argumentet d1 om värdet för lv-argumentet innehåller en annan avgränsare än standardvärdet (t.ex. komma).
+Var noga med att ange argumentet `d1` om argumentvärdet `lv` innehåller en annan avgränsare än standardvärdet (t.ex. komma).
 
 ### Exempel 6
 
@@ -199,7 +199,7 @@ s.events = "event22,event23,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"EVenT23");
+s.events = rfl(s.events,"EVenT23");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -221,7 +221,7 @@ s.events = "event22,event23:12345,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event23");
+s.events = rfl(s.events,"event23");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -241,7 +241,7 @@ s.events = "event22,event23:12345,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event23:12345");
+s.events = rfl(s.events,"event23:12345");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -250,7 +250,7 @@ s.events = s.rfl(s.events,"event23:12345");
 s.events = "event22,event23:12345,event25";
 ```
 
-När du behöver ta bort en händelse som använder serialisering och/eller numerisk/valutasyntax, ska du bara ange själva händelsen (dvs. utan serialisering/numeriska/valutavärden) i s.rfl-anropet.
+När du behöver ta bort en händelse som använder serialisering och/eller numerisk/valutasyntax, ska du bara ange själva händelsen (dvs. utan serialisering/numeriska/valutavärden) i anropet `rfl`.
 
 ### Exempel 9
 
@@ -263,7 +263,7 @@ s.events = "event22,event23,event23,event23,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event23");
+s.events = rfl(s.events,"event23");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -283,7 +283,7 @@ s.events = "event22,event23,event23,event23,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event23", "", "",true);
+s.events = rfl(s.events,"event23", "", "",true);
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -303,7 +303,7 @@ s.events = "event22,event23,event23,event23,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event23", "", "|",true);
+s.events = rfl(s.events,"event23", "", "|",true);
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -323,7 +323,7 @@ s.events = "event22,event23,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event23,event24");
+s.events = rfl(s.events,"event23,event24");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -332,7 +332,7 @@ s.events = s.rfl(s.events,"event23,event24");
 s.events = "event22,event23,event24,event25";
 ```
 
-Det går inte att ange flera värden i vr-argumentet. Rfl-logiken i exemplet ovan skulle först dela upp värdena i lv-argumentet (dvs. s.events) och sedan försöka matcha varje avgränsat värde med det fullständiga VR-argumentvärdet (dvs. &quot;event23,event24&quot;).
+Det går inte att ange flera värden i `vr`-argumentet. Logiken `rfl` i ovanstående exempel skulle först dela upp värdena i argumentet `lv` (d.v.s. s.events) och sedan försöka matcha varje avgränsat värde med det fullständiga argumentvärdet för `vr` (d.v.s. `"event23,event24"`).
 
 ### Exempel 13
 
@@ -345,8 +345,8 @@ s.events = "event22,event23,event24,event25";
 ...och följande kod körs...
 
 ```js
-s.events = s.rfl(s.events,"event23");
-s.events = s.rfl(s.events,"event24");
+s.events = rfl(s.events,"event23");
+s.events = rfl(s.events,"event24");
 ```
 
 ...det slutliga värdet för s.events blir:
@@ -355,7 +355,7 @@ s.events = s.rfl(s.events,"event24");
 s.events = "event22,event25");
 ```
 
-Varje värde som ska tas bort från listan ska finnas i sitt eget s.rfl-anrop.
+Varje värde som ska tas bort från listan ska finnas i ett eget `rfl`-anrop.
 
 ### Exempel 14
 
@@ -368,7 +368,7 @@ s.linkTrackVars = "events,eVar1,eVar2,eVar3";
 ...och följande kod körs...
 
 ```js
-s.linkTrackVars = s.rfl(s.linkTrackVars,"eVar2", ",", ",", false);
+s.linkTrackVars = rfl(s.linkTrackVars,"eVar2", ",", ",", false);
 ```
 
 ...det slutliga värdet för s.linkTrackVars blir:
@@ -377,7 +377,7 @@ s.linkTrackVars = s.rfl(s.linkTrackVars,"eVar2", ",", ",", false);
 s.linkTrackVars = "events,eVar1,eVar3";
 ```
 
-De tre sista argumenten (dvs. &quot;,&quot;,&quot;,&quot;,false) i slutet av det här s.rfl-anropet är inte nödvändigt, men gör inte heller något illa eftersom de finns där eftersom de matchar standardinställningarna.
+De tre sista argumenten (dvs. &quot;,&quot;,&quot;,&quot;,false) i slutet av det här `rfl`-anropet är inte nödvändigt, men gör inte heller något illa eftersom de finns där eftersom de matchar standardinställningarna.
 
 ### Exempel 15
 
@@ -390,7 +390,7 @@ s.events = "event22,event23,event24";
 ...och följande kod körs...
 
 ```js
-s.rfl(s.events,"event23");
+rfl(s.events,"event23");
 ```
 
 ...det slutliga värdet för s.events kommer fortfarande att vara:
@@ -399,7 +399,7 @@ s.rfl(s.events,"event23");
 s.events = "event22,event23,event24";
 ```
 
-Kom ihåg att plugin-programmet bara returnerar ett värde. den&quot;återställer&quot; inte variabeln som skickas via lv-argumentet.
+Kom ihåg att plugin-programmet bara returnerar ett värde. det &quot;återställer&quot; inte variabeln som skickas via argumentet `lv`.
 
 ## Versionshistorik
 
