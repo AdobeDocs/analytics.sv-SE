@@ -2,7 +2,7 @@
 title: pt
 description: Kör en funktion i en lista med variabler.
 exl-id: 2ab24a8e-ced3-43ea-bdb5-7c39810e4102
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin-programmet `pt` kör en funktion eller metod i en lista med Analytics-variabler. Du kan till exempel selektivt köra metoden [`clearVars`](../functions/clearvars.md) på flera variabler utan att anropa metoden manuellt varje gång. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
+Plugin-programmet `pt` kör en funktion eller metod i en lista med Analytics-variabler. Du kan till exempel selektivt köra funktionen [`clearVars`](../functions/clearvars.md) på flera variabler utan att manuellt anropa funktionen varje gång. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
@@ -57,14 +57,14 @@ function pt(l,de,cf,fa){var b=l,d=de,f=cf,g=fa;if("-v"===b)return{plugin:"pt",ve
 
 ## Använda plugin-programmet
 
-Metoden `pt` använder följande argument:
+Funktionen `pt` använder följande argument:
 
 * **`l`** (required, string): En lista med variabler som funktionen i  `cf` argumentet kan köras mot.
 * **`de`** (valfri, sträng): Avgränsaren som avgränsar variabellistan i  `l` argumentet. Standardvärdet är ett komma (`,`).
 * **`cf`** (required, string): Namnet på callback-funktionen i AppMeasurement-objektet som ska anropas mot alla variabler som finns i  `l` argumentet.
 * **`fa`** (valfri, sträng): Om funktionen i  `cf` argumentet anropar ytterligare argument när det körs, tar du med dem här. Standardvärdet är `undefined`.
 
-Om den här metoden anropas returneras ett värde om callback-funktionen (i `cf`-argumentet) returnerar ett värde.
+Om den här funktionen anropas returneras ett värde om återanropsfunktionen (i `cf`-argumentet) returnerar ett värde.
 
 ## Exempelanrop
 
@@ -72,7 +72,7 @@ Om den här metoden anropas returneras ett värde om callback-funktionen (i `cf`
 
 Följande kod ingår i plugin-programmet getQueryParam.  Den kör hjälpfunktionen getParameterValue mot vart och ett av de nyckel/värde-par som finns i URL:ens frågesträng (fullQueryString).  För att extrahera varje nyckelvärdepar måste fullQueryString avgränsas och delas upp med ett et-tecken (&amp;). ParameternKey refererar till frågesträngsparametern som plugin-programmet specifikt försöker extrahera från frågesträngen
 
-```javascript
+```js
 returnValue = pt(fullQueryString, "&", "getParameterValue", parameterKey)
 ```
 
@@ -84,7 +84,7 @@ var returnValue = "",
   parametersLength = parameters.length;
 for(var i = 0; i < parametersLength; i++)
 {
-  returnValue = s.getParameterValue(parameters[i], parameterKey);
+  returnValue = getParameterValue(parameters[i], parameterKey);
   if(returnValue !== "") break;
 }
 ```
