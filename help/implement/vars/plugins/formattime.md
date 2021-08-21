@@ -2,9 +2,9 @@
 title: formatTime
 description: Konvertera ett antal sekunder till motsvarande antal minuter, timmar osv.
 exl-id: 4b98e7fe-f05b-4346-b284-697268adc1a2
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ function formatTime(ns,tf,bml){var f=ns,d=tf,e=bml;function h(b,d,c,e){if("strin
 
 ## Använda plugin-programmet
 
-Metoden `formatTime` använder följande argument:
+Funktionen `formatTime` använder följande argument:
 
 * **`ns`** (obligatoriskt, heltal): Antal sekunder att konvertera eller formatera
 * **`tf`** (valfri, sträng): Den typ av format som ska returnera sekunder in; standard är sekunder
@@ -67,7 +67,7 @@ Metoden `formatTime` använder följande argument:
    * Ange `"s"` om du vill ha tiden i sekunder (avrundat till närmaste 5 sekunder som standard)
 * **`bml`** (valfritt, antal): Längden på avrundningsriktmärkena. Standardvärdet är de referensvärden som anges i `tf`-argumentet
 
-Metoden returnerar antalet sekunder som formaterats med den enhet som du anger i `tf`-argumentet. Om `tf`-argumentet inte har angetts:
+Funktionen returnerar antalet sekunder som formaterats med den enhet som du anger i argumentet `tf`. Om `tf`-argumentet inte har angetts:
 
 * Allt som är mindre än en minut avrundas till närmaste 5-sekunders test
 * Allt mellan en minut och en timme avrundas till närmaste 1/2-minuters test
@@ -76,82 +76,31 @@ Metoden returnerar antalet sekunder som formaterats med den enhet som du anger i
 
 ## Exempel
 
-### Exempel 1
-
-Följande kod...
-
 ```js
-s.eVar1 = s.formatTime(38242);
+// Sets eVar1 to "10.5 hours".
+// 38242 seconds equals 10 hours, 37 minutes, and 22 seconds. Since the tf argument is not set, the value returned is the number of seconds converted to the nearest quarter-hour benchmark.
+s.eVar1 = formatTime(38242);
+
+// Sets eVar4 to "10.75 hours".
+// 38250 seconds equals 10 hours, 37 minutes, and 30 seconds. This value rounds up to the nearest quarter hour.
+s.eVar4 = formatTime(38250);
+
+// Sets eVar9 to "637.5 minutes".
+s.eVar9 = formatTime(38242, "m");
+
+// Sets eVar14 to "640 minutes".
+// The tf argument forces the returned value to minutes, while the bml argument forces the value to the nearest 20-minute increment.
+s.eVar14 = formatTime(38242, "m", 20);
+
+// Sets eVar2 to "126 seconds", the closest 2-second benchmark to 125 seconds.
+s.eVar2 = formatTime(125, "s", 2);
+
+// Sets eVar7 to "3 minutes", the closest 3-minute benchmark to 125 seconds.
+s.eVar7 = formatTime(125, "m", 3);
+
+// Sets eVar55 to "2.4 minutes, the closest 2/5-minute benchmark to 145 seconds.
+s.eVar55 = formatTime(145, "m", .4);
 ```
-
-...ställs in s.eVar1 till &quot;10,5 timmar&quot;
-
-Argumentet som skickades - 38 242 sekunder - är lika med 10 timmar, 37 minuter och 22 sekunder.  Eftersom tf-argumentet inte anges i det här anropet och antalet sekunder som skickas är mellan en timme och en dag, kommer plugin-programmet att returnera antalet sekunder som konverterats till närmaste kvarts-test.
-
-### Exempel 2
-
-Följande kod...
-
-```js
-s.eVar1 = s.formatTime(38250);
-```
-
-...ställs in s.eVar1 till &quot;10,75 timmar&quot;
-Argumentet som skickades - 38 250 sekunder - är lika med 10 timmar, 37 minuter och 30 sekunder.  Genom att avrunda antalet sekunder som skickas in till det närmaste kvart-timmars-riktvärdet i detta fall kommer det slutliga värdet att anges till 10,75 timmar
-
-### Exempel 2
-
-Följande kod...
-
-```js
-s.eVar1 = s.formatTime(38242, "m");
-```
-
-...ställs in s.eVar1 till &quot;637.5 minuter&quot;
-
-I det här fallet tvingar argumentet &quot;m&quot; plugin-programmet att konvertera sekunder till närmaste halvminuters test
-
-### Exempel 4
-
-Följande kod...
-
-```js
-s.eVar1 = s.formatTime(38242, "m", 20);
-```
-
-...anges s.eVar1 till &quot;640 minuter&quot;
-
-Värdet för tf-argumentet (&quot;m&quot;) tvingar plugin-programmet att konvertera sekunder till minuter, men värdet för bml-argumentet (20) tvingar också plugin-programmet att avrunda minutkonverteringen till närmaste 20-minutersprenumeration.
-
-### Exempel 5
-
-Följande kod...
-
-```js
-s.eVar1 = s.formatTime(125, "s", 2);
-```
-
-...ställs in s.eVar1 till &quot;126 sekunder&quot;, vilket är det närmsta 2-sekundersvärdet till 125 sekunder
-
-### Exempel 6
-
-Följande kod...
-
-```js
-s.eVar1 = s.formatTime(125, "m", 3);
-```
-
-...ställs in s.eVar1 till &quot;3 minuter&quot;, vilket är det närmaste 3-minuterstestet till 125 sekunder
-
-### Exempel 7
-
-Följande kod...
-
-```js
-s.eVar1 = s.formatTime(145, "m", .4);
-```
-
-...är lika med &quot;2,4 minuter&quot;, vilket är det närmsta 2/5 minuter långa riktvärdet (t.ex. .4 = 2/5) till 145 sekunder
 
 ## Versionshistorik
 
