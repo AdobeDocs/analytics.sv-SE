@@ -2,9 +2,9 @@
 title: getPageName
 description: Skapa ett lättläst pageName från den aktuella webbplatssökvägen.
 exl-id: a3aaeb5d-65cd-45c1-88bb-f3c0efaff110
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -57,145 +57,43 @@ var getPageName=function(si,qv,hv,de){var a=si,b=qv,f=hv,e=de;if("-v"===a)return
 
 ## Använda plugin-programmet
 
-Metoden `getPageName` använder följande argument:
+Funktionen `getPageName` använder följande argument:
 
 * **`si`** (valfri, sträng): Ett ID infogat i början av strängen som representerar platsens ID. Värdet kan antingen vara ett numeriskt ID eller ett eget namn. Om den inte anges används den aktuella domänen som standard.
 * **`qv`** (valfri, sträng): En kommaavgränsad lista med frågesträngsparametrar som, om de finns i URL:en, läggs till i strängen
 * **`hv`** (valfri, sträng): En kommaavgränsad lista med parametrar i URL-hash som, om de hittas i URL:en, läggs till i strängen
 * **`de`** (valfri, sträng): Avgränsaren för att dela upp enskilda delar av strängen. Standardvärdet är en pipe (`|`).
 
-Metoden returnerar en sträng som innehåller en användarvänlig version av URL:en. Den här strängen tilldelas vanligtvis till variabeln `pageName`, men kan även användas i andra variabler.
+Funktionen returnerar en sträng som innehåller en användarvänlig version av URL:en. Den här strängen tilldelas vanligtvis till variabeln `pageName`, men kan även användas i andra variabler.
 
-## Exempelanrop
-
-### Exempel 1
-
-Om den aktuella URL:en var..
+## Exempel
 
 ```js
-https://mail.google.com/mail/u/0/#inbox
-```
+// Given the URL https://mail.example.com/mail/u/0/#inbox, sets the page variable to "mail.example.com|mail|u|0".
+s.pageName = getPageName();
 
-...och följande kod körs...
+// Given the URL https://mail.example.com/mail/u/0/#inbox, sets the page variable to "example|mail|u|0".
+s.pageName = getPageName("example");
 
-```js
-s.pageName = getPageName()
-```
+// Given the URL https://www.example.com/, sets the page variable to "www.example.com|home".
+// When the code runs on a URL that does not contain a path, it always adds the value of "home" to the end of the return value.
+s.pageName = getPageName();
 
-...det slutliga värdet för s.pageName blir:
+// Given the URL https://www.example.com/, sets the page variable to "example|home".
+s.pageName = getPageName("example","","","|");
 
-```js
-s.pageName = "mail.google.com|mail|u|0";
-```
+// Given the URL https://www.example.com/en/booking/room-booking.html?cid=1235#/step2&arrive=05-26&depart=05-27&numGuests=2
+// Sets the page variable to "www.example.com|en|booking|room-booking.html".
+s.pageName = getPageName();
 
-### Exempel 3
-
-Om den aktuella URL:en var..
-
-```js
-https://mail.google.com/mail/u/0/#inbox
-```
-
-...och följande kod körs...
-
-```js
-s.pageName = getPageName("gmail")
-```
-
-...det slutliga värdet för s.pageName blir:
-
-```js
-s.pageName = "gmail|mail|u|0";
-```
-
-### Exempel 2
-
-Om den aktuella URL:en var..
-
-```js
-https://www.google.com/
-```
-
-...och följande kod körs...
-
-```js
-s.pageName = getPageName()
-```
-
-...det slutliga värdet för s.pageName blir:
-
-```js
-s.pageName = "www.google.com|home"
-```
-
-**Obs**: När koden körs på en URL som inte innehåller någon sökväg läggs värdet&quot;home&quot; alltid till i slutet av returvärdet
-
-### Exempel 4
-
-Om den aktuella URL:en var..
-
-```js
-https://www.google.com/
-```
-
-...och följande kod körs...
-
-```js
-s.pageName = getPageName("google","","","|")
-```
-
-...det slutliga värdet för s.pageName blir:
-
-```js
-s.pageName = "google|home"
-```
-
-### Exempel 5
-
-Om den aktuella URL:en var..
-
-```js
-https://www.hotelrooms.com/en/booking/room-booking.html?cid=1235#/step2&arrive=2018-05-26&depart=2018-05-27&numGuests=2
-```
-
-...och följande kod körs...
-
-```js
-s.pageName = getPageName()
-```
-
-...det slutliga värdet för s.pageName blir:
-
-```js
-s.pageName = "www.hotelrooms.com|en|booking|room-booking.html"
-```
-
-Om följande kod körs i stället..
-
-```js
-s.pageName = getPageName("hotelrooms","cid","arrive,numGuests",": ")
-```
-
-...det slutliga värdet för s.pageName blir:
-
-```js
-s.pageName = "hotelrooms: en: booking: room-booking.html: cid=1235: arrive=2018-05-26: numGuests=2"
+// Given the URL https://www.example.com/en/booking/room-booking.html?cid=1235#/step2&arrive=05-26&depart=05-27&numGuests=2
+// Sets the page variable to "example: en: booking: room-booking.html: cid=1235: arrive=05-26: numGuests=2"
+s.pageName = getPageName("example","cid","arrive,numGuests",": ");
 ```
 
 ## Uppgradera från tidigare versioner
 
-Version 4.0+ av plugin-programmet getPageName är inte beroende av om det finns ett AppMeasurement-objekt i Adobe Analytics (dvs.&quot;s&quot;-objektet) som ska köras.  Om du väljer att uppgradera till den här versionen måste du ändra koden som anropar plugin-programmet genom att ta bort alla instanser av s-objektet från anropet.
-Ändra till exempel följande:
-
-```js
-s.pageName = s.getPageName();
-```
-
-...till detta:
-
-```js
-s.pageName = getPageName();
-```
+Version 4.0+ av plugin-programmet `getPageName` är inte beroende av om Adobe Analytics AppMeasurement-objekt finns (d.v.s. `s`-objektet). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av `s`-objektet från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
 
 ## Versionshistorik
 
