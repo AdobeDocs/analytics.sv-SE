@@ -2,10 +2,10 @@
 title: Översikt över plugin-program
 description: Klistra in kod på webbplatsen för att få nya funktioner.
 exl-id: faae7963-078d-40ad-ba09-71efa0b90df1
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
+source-wordcount: '366'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,3 @@ Varje organisation har olika implementeringsbehov, så du kan bestämma hur du v
 4. Validera implementeringen och publiceringen.
 
 Många organisationer anropar plugin-program med funktionen [`doPlugins`](../functions/doplugins.md). Även om den här funktionen inte är nödvändig anser Adobe att det är en god vana att använda den. AppMeasurement anropar den här funktionen precis innan en bildförfrågan kompileras och skickas, vilket är idealiskt eftersom flera plugin-program är beroende av andra Analytics-variabler.
-
-## Använda plugin-program med icke-standardiserade spårningsobjekt
-
-Plugin-program fungerar inte som standard med andra spårningsobjekt än `s`. Du kan dock ändra plugin-programkoden så att den passar det anpassade spårningsobjektet. Ersätt alla referenser till `s` med det önskade spårningsobjektet i ett visst plugin-program.
