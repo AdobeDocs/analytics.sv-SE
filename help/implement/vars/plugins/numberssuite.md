@@ -2,7 +2,7 @@
 title: Numbers Suite
 description: Producera och ändra tal för användning i andra JavaScript-variabler.
 exl-id: 7af88dce-baf3-4581-b5b6-0d6e41922266
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -67,24 +67,24 @@ function twoDecimals(v){return"undefined"===typeof v||void 0===v||isNaN(v)?0:Num
 
 ## Använda plugin-programmen
 
-Metoden `zeroPad` använder följande argument:
+Funktionen `zeroPad` använder följande argument:
 
-* **num** (required, integer): Numret som ska fyllas ut. Metoden avrundar värdet för det här argumentet om det innehåller decimaler.
+* **num** (required, integer): Numret som ska fyllas ut. Funktionen avrundar värdet för det här argumentet om det innehåller decimaler.
 * **nod**  (obligatoriskt, heltal): Antalet siffror i det slutliga returvärdet. Om talet som ska fyllas ut har färre siffror än antalet siffror att fylla i, läggs nollor till i början av `num`-argumentet.
 
-Metoden `randomNumber` använder följande argument:
+Funktionen `randomNumber` använder följande argument:
 
 * **nod**  (valfritt, heltal): Antalet siffror i det slumpmässiga tal som du vill generera. Maxvärdet är 17 siffror. Standardvärdet är 10 siffror.
 
-Metoden `twoDecimals` använder följande argument:
+Funktionen `twoDecimals` använder följande argument:
 
 * **val** (required, number): Ett tal (som representeras av antingen en sträng eller ett nummerobjekt) som du vill avrunda till närmaste hundradel.
 
 ## Returnerar
 
-* Metoden **zeroPad** returnerar en sträng som är lika med argumentet `num`, men med ett visst antal nollor som läggs till i början av värdet, vilket garanterar att returvärdet har rätt antal siffror.
-* Metoden **randomNumber** returnerar en sträng som är lika med ett slumpmässigt tal med önskat antal siffror.
-* Metoden **twoDecimals** returnerar ett talobjekt avrundat till närmaste hundradel.
+* Funktionen **zeroPad** returnerar en sträng som är lika med argumentet `num`, men med ett visst antal nollor som läggs till i början av värdet, vilket garanterar att returvärdet har rätt antal siffror.
+* Funktionen **randomNumber** returnerar en sträng som är lika med ett slumpmässigt tal med önskat antal siffror.
+* Funktionen **twoDecimals** returnerar ett talobjekt avrundat till närmaste hundradel.
 
 ## Exempelanrop
 
