@@ -2,9 +2,9 @@
 title: getQueryParam
 description: Extrahera värdet för en URL:s frågesträngsparameter.
 exl-id: d2d542d1-3a18-43d9-a50d-c06d8bd473b8
-source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -55,132 +55,58 @@ function getQueryParam(a,d,f){function n(g,c){c=c.split("?").join("&");c=c.split
 
 ## Använda plugin-programmet
 
-Metoden `getQueryParam` använder följande argument:
+Funktionen `getQueryParam` använder följande argument:
 
 * **`qsp`** (obligatoriskt): En kommaavgränsad lista med frågesträngsparametrar att söka efter i URL:en. Den är inte skiftlägeskänslig.
 * **`de`** (valfritt): Den avgränsare som ska användas om flera frågesträngsparametrar matchar. Standardvärdet är en tom sträng.
 * **`url`** (valfritt): En anpassad URL, sträng eller variabel som frågesträngens parametervärden ska extraheras från. Standardvärdet är `window.location`.
 
-Om du anropar den här metoden returneras ett värde beroende på argumenten ovan och URL:en:
+Om den här funktionen anropas returneras ett värde beroende på argumenten ovan och URL:en:
 
-* Om ingen matchande frågesträngsparameter hittas returnerar metoden en tom sträng.
-* Om en matchande frågesträngsparameter påträffas returnerar metoden frågesträngsparameterns värde.
-* Om en matchande frågesträngsparameter påträffas men värdet är tomt returnerar metoden `true`.
-* Om flera matchande frågesträngsparametrar hittas returnerar metoden en sträng med varje parametervärde avgränsat med strängen i `de`-argumentet.
+* Om ingen matchande frågesträngsparameter hittas returnerar funktionen en tom sträng.
+* Om en matchande frågesträngsparameter hittas returnerar funktionen frågesträngsparameterns värde.
+* Om en matchande frågesträngsparameter påträffas men värdet är tomt returnerar funktionen `true`.
+* Om flera matchande frågesträngsparametrar hittas returnerar funktionen en sträng med varje parametervärde avgränsat med strängen i `de`-argumentet.
 
-## Exempelanrop
-
-### Exempel 1
-
-Om den aktuella URL:en är följande:
+## Exempel
 
 ```js
-http://www.abc123.com/?cid=trackingcode1
+// Given the URL https://example.com/?cid=trackingcode
+// Sets the campaign variable to "trackingcode"
+s.campaign = getQueryParam('cid');
+
+// Given the URL https://example.com/?cid=trackingcode&ecid=123
+// Sets the campaign variable to "trackingcode:123"
+s.campaign = getQueryParam('cid,ecid',':');
+
+// Given the URL https://example.com/?cid=trackingcode&ecid=123
+// Sets the campaign variable to "trackingcode123"
+s.campaign = getQueryParam('cid,ecid');
+
+// Given the URL https://example.com/?cid=trackingcode&ecid=123#location
+// Sets the campaign variable to "123"
+s.campaign = getQueryParam('ecid');
+
+// Given the URL https://example.com/#location&cid=trackingcode&ecid=123
+// Sets the campaign variable to "123"
+// The plug-in replaces the URL's hash character with a question mark if a question mark doesn't exist.
+s.campaign = getQueryParam('ecid');
+
+// Given the URL https://example.com
+// Does not set the campaign variable to a value.
+s.pageURL = "https://example.com/?cid=trackingcode";
+s.campaign = getQueryParam('cid');
+
+// Given the URL https://example.com
+// Sets the campaign variable to "trackingcode"
+s.pageURL = "https://example.com/?cid=trackingcode";
+s.campaign = getQueryParam('cid','',s.pageURL);
+
+// Given the URL https://example.com
+// Sets eVar2 to "123|trackingcode|true|300"
+s.eVar1 = "https://example.com/?cid=trackingcode&ecid=123#location&pos=300";
+s.eVar2 = getQueryParam('ecid,cid,location,pos','|',s.eVar1);
 ```
-
-Följande kod ställer in s.campaign som lika med &quot;trackingcode1&quot;:
-
-```js
-s.campaign=s.getQueryParam('cid');
-```
-
-### Exempel 2
-
-Om den aktuella URL:en är följande:
-
-```js
-http://www.abc123.com/?cid=trackingcode1&ecid=123456
-```
-
-Följande kod ställer in s.campaign som lika med &quot;trackingcode1:123456&quot;:
-
-```js
-s.campaign=s.getQueryParam('cid,ecid',':');
-```
-
-### Exempel 2
-
-Om den aktuella URL:en är följande:
-
-```js
-http://www.abc123.com/?cid=trackingcode1&ecid=123456
-```
-
-Följande kod ställer in s.campaign som lika med &quot;trackingcode1123456&quot;:
-
-```js
-s.campaign=s.getQueryParam('cid,ecid');
-```
-
-### Exempel 4
-
-Om den aktuella URL:en är följande:
-
-```js
-http://www.abc123.com/?cid=trackingcode1&ecid=123456#location
-```
-
-Följande kod ställer in s.campaign till &quot;123456&quot;:
-
-```js
-s.campaign=s.getQueryParam('ecid');
-```
-
-### Exempel 5
-
-Om den aktuella URL:en är följande:
-
-```js
-http://www.abc123.com/#location&cid=trackingcode1&ecid=123456
-```
-
-Följande kod ställer in s.campaign till &quot;123456&quot;
-
-```js
-s.campaign=s.getQueryParam('ecid');
-```
-
-**Obs!** Plugin-programmet ersätter URL:en med hash-tecknet med ett frågetecken om det inte finns något frågetecken.  Om URL:en innehåller ett frågetecken som kommer före hash-tecknet, kommer plugin-programmet att ersätta URL:en till Kontrollera hash-tecknet med ett et-tecken.
-
-### Exempel 6
-
-Om den aktuella URL:en är följande..
-
-```js
-http://www.abc123.com/
-```
-
-...och om variabeln s.testURL är inställd enligt följande:
-
-```js
-s.testURL="http://www.abc123.com/?cid=trackingcode1&ecid=123456#location&pos=300";
-```
-
-Följande kod kommer inte att ställa in s.campaign alls:
-
-```js
-s.campaign=s.getQueryParam('cid');
-```
-
-Följande kod ställer in s.campaign som &quot;trackingcode1&quot;:
-
-```js
-s.campaign=s.getQueryParam('cid','',s.testURL);
-```
-
-**Obs!** Den tredje parametern kan vara vilken sträng/variabel som helst som koden använder för att hitta frågesträngsparametrarna i
-
-Följande kod ställer in s.eVar2 till &quot;123456|trackingcode1|true|300&quot;:
-
-```js
-s.eVar2=s.getQueryParam('ecid,cid,location,pos','|',s.testURL);
-```
-
-* Värdet 123456 kommer från parametern ecid i variabeln s.testURL
-* Värdet för trackingcode1 kommer från parametern cid i variabeln s.testURL
-* Värdet true kommer från förekomsten (men inte värdet) av parametern location efter hash-tecknet i variabeln s.testURL
-
-Värdet 300 kommer från värdet på parametern pos i variabeln s.testURL
 
 ## Versionshistorik
 
