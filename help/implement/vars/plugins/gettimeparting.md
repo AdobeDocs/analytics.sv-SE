@@ -2,9 +2,9 @@
 title: getTimeParting
 description: Mät tiden då en viss åtgärd utförs.
 exl-id: 3fab36c8-a006-405a-9ef1-2547c2b36b0d
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ function getTimeParting(t){var c=t;if("-v"===t)return{plugin:"getTimeParting",ve
 
 ## Använda plugin-programmet
 
-Metoden `getTimeParting` använder följande argument:
+Funktionen `getTimeParting` använder följande argument:
 
 **`t`** (Valfritt men rekommenderas, sträng): Namnet på den tidszon som besökarens lokala tid ska konverteras till.  Standardvärdet är UTC/GMT-tid. En fullständig lista över giltiga värden finns i [Lista över tidszoner för TZ-databaser](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) på Wikipedia.
 
@@ -74,7 +74,7 @@ Vanliga giltiga värden är:
 * `"America/Denver"` för Mountain Time
 * `"America/Los_Angeles"` för Pacific Time
 
-Anrop till den här metoden returnerar en sträng som innehåller följande avgränsade med en pipe (`|`):
+Anrop till den här funktionen returnerar en sträng som innehåller följande avgränsade med en pipe (`|`):
 
 * Det aktuella året
 * Den aktuella månaden
@@ -82,55 +82,35 @@ Anrop till den här metoden returnerar en sträng som innehåller följande avgr
 * Veckodagen
 * Aktuell tid (AM/PM)
 
-## Exempelanrop
-
-### Exempel på specifika tidszoner
-
-Använd följande exempelkod om klienten är i Paris, Frankrike:
+## Exempel
 
 ```js
-s.eVarX = getTimeParting("Europe/Paris");
-```
+// Use the following code if the visitor resides in Paris, France
+s.eVar8 = getTimeParting("Europe/Paris");
 
-Om kunden är i San Jose i Kalifornien:
+// Use the following code if the visitor resides in San Jose, California
+s.eVar17 = getTimeParting("America/Los_Angeles");
 
-```js
-s.eVarX = getTimeParting("America/Los_Angeles");
-```
+// Use the following code if the visitor resides in Ghana.
+// Note that Ghana is in GMT time, the default time zone that the plug-in uses with no argument
+s.eVar22 = getTimeParting();
 
-Om kunden befinner sig i det afrikanska landet Ghana:
-
-```js
-s.eVarX = getTimeParting();
-```
-
-Ghana ligger inom tidzonen UTC/GMT. I det här exemplet visas att inget plug-in-argument krävs för UTC/GMT.
-
-### Redovisning för Internet Explorer-webbläsare
-
-Använd följande exempel om du vill exkludera tidsåtgången för att dela data från Internet Explorer-besökare. Värdet som returneras från IE-webbläsare finns bara i besökarens lokala tid.
-
-```js
-if(!document.documentMode) s.eVarX = getTimeParting("America/New_York");
+// Internet Explorer only returns the visitor's local time. Use this conditional statement to accommodate IE visitors
+if(!document.documentMode) s.eVar39 = getTimeParting("America/New_York");
 else s.eVarX = "Internet Explorer Visitors";
-```
 
-### Resultat från samtal
-
-Tänk dig ett scenario där en besökare från Denver Colorado besöker en webbplats den 31 augusti 2020 kl. 9.15.
-
-```js
-s.eVar10 = getTimeParting("Europe/Athens");
+// Given a visitor from Denver Colorado visits a site on August 31, 2020 at 9:15 AM
 // Returns the string value "year=2020 | month=August | date=31 | day=Friday | time=6:15 PM"
+s.eVar10 = getTimeParting("Europe/Athens");
 
-s.eVar11 = getTimeParting("America/Nome");
 // Returns the string value "year=2020 | month=August | date=31 | day=Friday | time=6:15 AM"
+s.eVar11 = getTimeParting("America/Nome");
 
-s.eVar12 = getTimeParting("Asia/Calcutta");
 // Returns the string value "year=2020 | month=August | date=31 | day=Friday | time=8:45 PM"
+s.eVar12 = getTimeParting("Asia/Calcutta");
 
-s.eVar13 = getTimeParting("Australia/Sydney");
 // Returns the string value "year=2020 | month=September | date=1 | day=Saturday | time=1:15 AM"
+s.eVar13 = getTimeParting("Australia/Sydney");
 ```
 
 ## Versionshistorik
