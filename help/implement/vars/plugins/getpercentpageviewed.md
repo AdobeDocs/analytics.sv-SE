@@ -2,9 +2,9 @@
 title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
 exl-id: 7a842cf0-f8cb-45a9-910e-5793849bcfb8
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -55,59 +55,46 @@ function getPercentPageViewed(pid,ch){var n=pid,r=ch;function p(){if(window.ppvI
 
 ## Använda plugin-programmet
 
-Metoden `getPercentPageViewed` använder följande argument:
+Funktionen `getPercentPageViewed` använder följande argument:
 
 * **`pid`** (valfri, sträng): En sidbaserad identifierare som du kan korrelera med procentsatserna som anges i plugin-programmets mått.  Standardvärdet är variabeln `pageName`.
 * **`ch`** (valfritt, boolesk): Ange det här till  `false` (eller  `0`) om du inte vill att plugin-programmet ska ta hänsyn till ändringar som görs i sidstorleken efter den första inläsningen. Om det utelämnas blir det här argumentet som standard `true`. Adobe rekommenderar att detta argument utelämnas i de flesta fall.
 
-Om metoden anropas returneras ingenting; i stället anges följande variabler:
+När funktionen anropas returneras ingenting; i stället anges följande variabler:
 
 * `s._ppvPreviousPage`: Namnet på föregående sida som visades. Slutliga rullningsmått för den aktuella sidan är inte tillgängliga förrän en ny sida har lästs in.
-* `s._ppvHighestPercentViewed`: Den högsta procentandel av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida.
-* `s._ppvInitialPercentViewed`: Den procentandel av föregående sida som var synlig när föregående sida först lästes in.
+* `s._ppvHighestPercentViewed`: Den högsta procentandel av föregående sida som besökaren visade (höjdvis). Den längst punkten som besökaren rullade ned till på föregående sida. Om hela sidan är synlig när den läses in första gången är det här värdet `100`.
+* `s._ppvInitialPercentViewed`: Den procentandel av föregående sida som var synlig när föregående sida först lästes in. Om hela sidan är synlig när den läses in första gången är det här värdet `100`.
 * `s._ppvHighestPixelsSeen`: Det högsta antalet pixlar som visas (höjdvis) när besökaren rullade nedåt på föregående sida.
-* `s._ppvFoldsSeen`: Det högsta antalet sidvikningar som nås när besökaren rullade nedåt på föregående sida. Den här variabeln innehåller &quot;top-of-page&quot;-vikningen.
-* `s._ppvFoldsAvailable`: Det totala antalet&quot;sidvikningar&quot; som är tillgängliga för rullning nedåt på föregående sida.
+* `s._ppvFoldsSeen`: Det högsta antalet sidvikningar som nås när besökaren rullade nedåt på föregående sida. Den här variabeln innehåller &quot;top-of-page&quot;-vikningen. Om hela sidan är synlig när den läses in första gången är det här värdet `1`.
+* `s._ppvFoldsAvailable`: Det totala antalet&quot;sidvikningar&quot; som är tillgängliga för rullning nedåt på föregående sida. Om hela sidan är synlig när den läses in första gången är det här värdet `1`.
 
 Tilldela en eller flera av dessa variabler till eVars för att visa dimensionsdata i rapporter.
 
 Detta plugin-program skapar en cookie från första part med namnet `s_ppv` som innehåller ovanstående värden. Den förfaller i slutet av webbläsarsessionen.
 
-## Exempelanrop
-
-### Exempel 1
-
-Följande kod...
+## Exempel
 
 ```js
-if(s.pageName) s.getPercentPageViewed();
-if(s._ppvPreviousPage)
+// 1. Runs the getPercentPageViewed function if the page variable is set
+// 2. Sets prop1 to the previous value of the page variable
+// 3. Sets prop2 to the highest percent viewed, the intial percent, the number of folds viewed, and total number of folds of the previous page
+if(s.pageName) getPercentPageViewed();
+if(_ppvPreviousPage)
 {
-  s.prop1 = s._ppvPreviousPage;
-  s.prop2 = "highestPercentViewed=" + s._ppvHighestPercentViewed + " | initialPercentViewed=" + s._ppvInitialPercentViewed + " | foldsSeen=" + s._ppvFoldsSeen + " | foldsAvailable=" + s._ppvFoldsAvailable;
+  s.prop1 = _ppvPreviousPage;
+  s.prop2 = "highestPercentViewed=" + _ppvHighestPercentViewed + " | initialPercentViewed=" + _ppvInitialPercentViewed + " | foldsSeen=" + _ppvFoldsSeen + " | foldsAvailable=" + _ppvFoldsAvailable;
 }
-```
 
-* Avgör om s.pageName anges och i så fall körs funktionen getPercentPageViewed i koden
-* När funktionen getPercentPageViewed körs skapas de variabler som beskrivs i avsnittet &quot;Returnerar&quot; ovan
-* Om variablerna &quot;Returns&quot; har angetts:
-   * Koden ställer in s.prop1 lika med värdet för s._ppvPreviousPage (dvs. det föregående värdet för s.pageName eller föregående sida)
-   * Koden ställer också in s.prop2 som lika med den högsta procentandelen som visades på föregående sida och den inledande procentandelen som visades på föregående sida, tillsammans med antalet vikningar som besökaren har nått och antalet vikningar som var tillgängliga
-
-**Obs**: Om en hel sida är synlig när den först läses in, blir både de högsta procentvärdena som visas och de inledande procentvärdena som visas lika med 100, och både folderna som visas och Tillgängliga blir lika med 1.   När en hel sida INTE är synlig när den först läses in, men besökaren aldrig rullar nedåt på sidan innan han/hon går till nästa sida, blir både de högsta procentvärdena visade och de inledande procentvärdena visade lika med samma värde.
-
-### Exempel 2
-
-Anta att s.prop5 har reserverats för att fånga en ifylld&quot;sidtyp&quot; i stället för hela sidnamnet.
-
-Följande kod avgör om s.prop5 har ställts in och, i så fall, lagrar dess värde som &quot;föregående sida&quot; för att korrelera med dimensionerna Högsta procent visat och Inledande procent visat.  Värdet kommer fortfarande att lagras i variabeln s._ppvPreviousPage, men kan behandlas som om det vore föregående sidtyp i stället för föregående sidnamn.
-
-```js
-if(s.prop5) s.getPercentPageViewed(s.prop5);
-if(s._ppvPreviousPage)
+// Given prop5 operates as a page type variable:
+// 1. Runs the getPercentPageViewed function if prop5 has a value
+// 2. Sets prop1 to the previous value of the page variable
+// 3. Sets prop2 to the highest percent viewed and the initial percent viewed.
+if(s.prop5) getPercentPageViewed(s.prop5);
+if(_ppvPreviousPage)
 {
-  s.prop1 = s._ppvPreviousPage;
-  s.prop2 = "highestPercentViewed = " + s._ppvHighestPercentViewed + " | initialPercentViewed=" + s._ppvInitialPercentViewed;
+  s.prop1 = _ppvPreviousPage;
+  s.prop2 = "highestPercentViewed = " + _ppvHighestPercentViewed + " | initialPercentViewed=" + _ppvInitialPercentViewed;
 }
 ```
 
