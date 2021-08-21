@@ -2,9 +2,9 @@
 title: getVisitDuration
 description: Spåra hur mycket tid en besökare har varit på webbplatsen hittills.
 exl-id: 5299caa8-1e47-40b0-a8f4-422590f33ee4
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ function getVisitDuration(){if(arguments&&"-v"===arguments[0])return{plugin:"get
 
 ## Använda plugin-programmet
 
-Metoden `getVisitDuration` använder inga argument. Det returnerar ett av följande värden:
+Funktionen `getVisitDuration` använder inga argument. Det returnerar ett av följande värden:
 
 * `"first hit of visit"`
 * `"less than a minute"`
@@ -66,37 +66,16 @@ Metoden `getVisitDuration` använder inga argument. Det returnerar ett av följa
 
 Denna plugin skapar en cookie för första part som heter `"s_dur"`, vilket är antalet millisekunder som har gått sedan besökaren landade på webbplatsen. Kakan går ut efter 30 minuters inaktivitet.
 
-## Exempelanrop
-
-### Exempel 1
-
-Följande kod...
+## Exempel
 
 ```js
-s.eVar10 = s.getVisitDuration();
+// Always sets eVar10 to the number of minutes passed since the visitor first landed on the site
+s.eVar10 = getVisitDuration();
+
+// Checks if the events variable contains the purchase event.
+// If it does, sets eVar56 to the number of minutes between the start of the visit and the time of purchase
+if(inList(s.events, "purchase")) s.eVar56 = getVisitDuration();
 ```
-
-...ställer alltid in eVar10 som lika med antalet minuter som gått sedan besökaren landade på platsen
-
-### Exempel 2
-
-Följande kod...
-
-```js
-if(s.inList(s.events, "purchase")) s.eVar10 = s.getVisitDuration();
-```
-
-...I används plugin-programmet inList för att kontrollera om händelsvariabeln innehåller inköpshändelsen.  I så fall kommer eVar10 att ställas in som lika med antalet minuter mellan besökarens början av besöket och tidpunkten för köpet.
-
-### Exempel 3
-
-Följande kod...
-
-```js
-s.prop10 = s.getVisitDuration();
-```
-
-...anger alltid prop10 som det antal minuter som gått sedan besökaren landade på platsen.  Detta är användbart om prop10 har målning aktiverad.  Om du lägger till mätvärdet för utgångar i prop10-rapporten visas en detaljerad rapport om hur lång tid det tog innan en besökare lämnade webbplatsen.
 
 ## Versionshistorik
 
