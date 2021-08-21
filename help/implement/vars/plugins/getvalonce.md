@@ -2,9 +2,9 @@
 title: getValOnce
 description: Förhindra att en Analytics-variabel ställs in på samma värde två gånger i rad.
 exl-id: 23bc5750-43a2-4693-8fe4-d6b31bc34154
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -59,36 +59,27 @@ typeof b)b=encodeURIComponent(b);else return"";var a=" "+document.cookie,d=a.ind
 
 ## Använda plugin-programmet
 
-Metoden `getValOnce` använder följande argument:
+Funktionen `getValOnce` använder följande argument:
 
 * **`vtc`** (required, string): Variabeln som ska kontrolleras och se om den precis har ställts in på ett identiskt värde
 * **`cn`** (valfri, sträng): Namnet på den cookie som innehåller värdet som ska kontrolleras. Standardvärdet är `"s_gvo"`
 * **`et`** (valfritt, heltal): Cookie-filens förfallodatum i dagar (eller minuter, beroende på  `ep` argumentet). Standardvärdet är `0`, som upphör i slutet av webbläsarsessionen
 * **`ep`** (valfri, sträng): Ange bara det här argumentet om  `et` argumentet också anges. Ange det här argumentet som `"m"` om du vill att `et`-argumentet ska upphöra att gälla om några minuter i stället för dagar. Standardvärdet är `"d"`, vilket anger argumentet `et` i dagar.
 
-Om argumentet `vtc` och cookie-värdet matchar returnerar metoden en tom sträng. Om argumentet `vtc` och cookie-värdet inte matchar returnerar metoden argumentet `vtc` som en sträng.
+Om argumentet `vtc` och cookie-värdet matchar returnerar den här funktionen en tom sträng. Om argumentet `vtc` och cookie-värdet inte matchar returnerar funktionen argumentet `vtc` som en sträng.
 
-## Exempelanrop
-
-### Exempel 1
-
-Använd det här anropet för att förhindra att samma värde skickas till s.campaign mer än en gång i rad under de kommande 30 dagarna:
+## Exempel
 
 ```js
-s.campaign=s.getValOnce(s.campaign,"s_campaign",30);
+// Prevent the same value from being passed in to the campaign variable more than once in a row for next 30 days
+s.campaign = getValOnce(s.campaign,"s_campaign",30);
+
+// Prevent the same value from being passed in to eVar2 more than once in a row for the browser session
+s.eVar2 = getValOnce(s.eVar2,"s_ev2");
+
+// Prevent the same value from being passed in to eVar8 more than once in a row for 10 minutes
+s.eVar8 = getValOnce(s.eVar8,"s_ev8",10,"m");
 ```
-
-I anropet ovan kommer plugin-programmet först att jämföra värdet som redan finns i s_campaign-cookien med värdet som kommer från den aktuella s.campaign-variabeln.   Om ingen matchning görs kommer plugin-programmet att ställa in s_campaign-cookien som lika med det nya värdet som kommer från s.campaign och sedan returnera det nya värdet.   Jämförelsen kommer att göras de kommande trettio dagarna
-
-### Exempel 3
-
-Använd det här anropet för att förhindra att samma värde anges under hela sessionen:
-
-```js
-s.eVar2=s.getValOnce(s.eVar2,"s_ev2",0,"m");
-```
-
-Den här koden förhindrar att samma värde skickas till s.eVar2 mer än en gång i rad under en användarsession.  m-värdet i stycket (i slutet av anropet) ignoreras eftersom förfallotiden är lika med 0.   I koden lagras också jämförelsevärdet i s_ev2-cookien.
 
 ## Versionshistorik
 
