@@ -2,9 +2,9 @@
 title: cleanStr
 description: Ta bort eller ersätt alla onödiga tecken från en sträng.
 exl-id: d699dcd4-5e0a-40d3-b345-e5b1a077d393
-source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -57,51 +57,24 @@ function cleanStr(str){var a=str;if("-v"===a)return{plugin:"cleanStr",version:"2
 
 ## Använda plugin-programmet
 
-Metoden `cleanStr` använder följande argument:
+Funktionen `cleanStr` använder följande argument:
 
 * **`str`** (required, string): Värdet som du vill rensa HTML-kodning, extra blanksteg, tabbar eller andra onödiga tecken.
 
-Metoden returnerar värdet för argumentet `str` med alla onödiga tecken borttagna.
+Funktionen returnerar värdet för argumentet `str` med alla onödiga tecken borttagna.
 
 ## Exempel
 
-### Exempel 1
-
-Anta följande (där punkterna representerar mellanslag och pilarna representerar tabbtecken)
-
 ```js
-s.eVar1 = "»∙∙this∙∙is∙a∙∙»∙messy»string∙∙∙∙"
-```
-
-När du kör följande kod..
-
-```js
+// Returns the value "this is a messystring". Note that both tabs and extra spaces are present in the original string.
+// Multiple spaces are reduced to one, while tabs are omitted entirely.
+s.eVar1 = "  this  is a      messy  string    ";
 s.eVar1 = cleanStr(s.eVar1)
+
+// This function call does not do anything because the code does not assign the returned value to a variable.
+s.eVar1 = "  this  is a      messy  string    ";
+cleanStr(s.eVar1);
 ```
-
-...eVar1 anges som lika med &quot;this is a messystring&quot; (alla extra blanksteg och alla tabbtecken tas bort)
-
-### Exempel 3
-
-Om..
-
-```js
-s.eVar1 = "»∙∙this∙∙is∙a∙∙»∙messy»string∙∙∙∙"
-```
-
-...och följande kod körs...
-
-```js
-cleanStr(s.eVar1)
-```
-
-...Slutvärdet för s.eVar1 kommer fortfarande att vara:
-
-```js
-"»∙∙this∙∙is∙a∙∙»∙messy»string∙∙∙∙"
-```
-
-Om du kör plugin-programmet för sig själv (utan att tilldela returvärdet till en variabel) &quot;återställs&quot; inte variabeln som skickas via str-argumentet.
 
 ## Versionshistorik
 
