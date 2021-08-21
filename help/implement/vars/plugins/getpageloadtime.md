@@ -2,9 +2,9 @@
 title: getPageLoadTime
 description: Spåra hur lång tid det tar att läsa in en sida.
 exl-id: 9bf0e26b-f1af-48a6-900a-712f7e588d37
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ function getPageLoadTime(){function l(){var a=performance.timing;if(0<a.loadEven
 
 ## Använda plugin-programmet
 
-Metoden `getPageLoadTime` använder inga argument. När den här metoden anropas returneras ingenting. I stället anges följande variabler:
+Funktionen `getPageLoadTime` använder inga argument. När den här funktionen anropas returneras ingenting. I stället anges följande variabler:
 
 * `s._pltPreviousPage`: Föregående sida så att du kan koppla inläsningstiden till föregående sida
 * `s._pltLoadTime`: Tiden i sekunder som föregående sida lästes in
@@ -67,29 +67,22 @@ Med plugin-programmet getPageLoadTime skapas två cookies från första part:
 * `s_plt`: Tiden, i sekunder, som det tog att läsa in föregående sida. Upphör att gälla i slutet av webbläsarsessionen.
 * `s_pltp` Värdet på  `s.pageName` variabeln enligt den tidigare Adobe Analytics-bildbegäran. Upphör att gälla i slutet av webbläsarsessionen.
 
-## Exempelanrop
-
-### Exempel 1
-
-Kör följande kod..
+## Exempel
 
 ```js
+// 1. Run the getPageLoadTime function if the pageName variable is set
+// 2. Set prop10 to the load time of the previous page
+// 3. Set eVar10 to the name of the previous page
+// 4. Set event100 to the load time (in seconds) of the previous page. A numeric event is required to capture this value.
+// You can then use event100 in calculated metrics to obtain the average page load time per page.
 if(s.pageName) s.getPageLoadTime();
 if(s._pltPreviousPage)
 {
   s.prop10 = s._pltLoadTime;
-  s.prop11 = s._pltPreviousPage
-  s.eVar10 = prop11;
+  s.eVar10 = s._pltPreviousPage
   s.events = "event100=" + s._pltLoadTime;
 }
 ```
-
-...kommer att göra följande:
-
-* Kör plugin-programmet getPageLoadTime när s.pageName är inställt
-* Ange s.prop10 som lika med inläsningstiden för föregående sida
-* Ange s.prop11 och s.eVar10 som lika med namnet på föregående sida (som det spelas in i s.pageName)
-* Ange event100, som skulle vara en anpassad numerisk händelse, som motsvarar inläsningstiden för föregående sida.   Om du använder en anpassad händelse i det här fallet kan du få den totala tiden för alla sidinläsningar från föregående sida (från alla besökare/besök) och därför använda ett beräknat mått för att få den genomsnittliga sidinläsningstiden för varje sida
 
 ## Versionshistorik
 
