@@ -6,9 +6,9 @@ title: Referens för datakolumner
 feature: Rapporter och analysgrunder
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: b895b082d624aa3a680284ce7a760629e9fafb3e
+source-git-commit: b50982f17d226c8efaec6ff4ae4e6ff9140d8299
 workflow-type: tm+mt
-source-wordcount: '3407'
+source-wordcount: '3422'
 ht-degree: 0%
 
 ---
@@ -199,8 +199,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `state` | State-variabel. | varchar(50) |
 | `stats_server` | Inte till användning. Adobe intern server som bearbetade träffen. | char(30) |
 | `t_time_info` | Lokal tid för besökaren. Formatet är: `M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)` | varchar(100) |
-| `tnt` | Används i Adobe Target integreringar. | text |
-| `tnt_action` | Används i Adobe Target integreringar. | text |
+| `tnt` | Används i Adobe Target integreringar. Representerar alla tester som är kvalificerade för tillfället. Formatet är: `TargetCampaignID:TargetRecipeID:TargetType|Event/Action`. | text |
+| `tnt_action` | Används i Adobe Target integreringar. Representerar alla tester som träffen är kvalificerad för. | text |
 | `tnt_post_vista` | Används inte längre. Använd `post_tnt` i stället. | text |
 | `transactionid` | En unik identifierare där olika datapunkter kan överföras senare via datakällor. Samlas in med variabeln [`transactionID`](/help/implement/vars/page-vars/transactionid.md). | text |
 | `truncated_hit` | En flagga som anger att bildbegäran har trunkerats. Anger att en partiell träff togs emot. <br>Y: Träet trunkerades. partiell träff mottagen  <br>N: Träet trunkerades inte. fullständig träff mottagen | char(1) |
