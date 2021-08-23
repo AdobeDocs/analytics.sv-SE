@@ -2,9 +2,9 @@
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: d941e4308352d6228e73bc7f7443a36ffd374b0c
+source-git-commit: 881d78ef8f6ca5422e286f8cc472ea03a52b1068
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Följande tabell omfattar alla standardservrar för datainsamling och regionala 
 
 ## Datainsamling och IP-adressblock för FTP
 
-Om din organisation föredrar att tillåta specifika IP-adressintervall kan du använda följande tabell. Alla intervall i det här avsnittet ingår i tabellen ovan.
+Om din organisation föredrar att tillåta specifika IP-adressintervall kan du använda följande tabell. Alla intervall i det här avsnittet ingår i tabellen ovan. FTP-anslutningar för Data warehouse och datafeeds kommer endast från platserna London, Oregon och Singapore.
 
 | Plats | IP-intervall (CIDR-notering) |
 | --- | --- |
