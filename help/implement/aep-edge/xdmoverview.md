@@ -2,9 +2,9 @@
 title: Använda XDM-data med Analytics
 description: Översikt över hur du använder XDM-data från Experience Platform i Adobe Analytics
 exl-id: 6f1282fb-8d4a-4d88-9be0-1c939c22cb92
-source-git-commit: 501b64c7704c234b21a5ccb428883bc6fcaf166a
+source-git-commit: 3def20b348713b580429e342ad3319963cae6549
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '270'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Analytics samlar in XDM-data på två sätt:
 
 ## Automatisk mappning
 
-Automatisk mappning är beroende av ett [standardschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) i XDM som automatiskt fyller i JSON-objekt som ingår i vanlig Analytics-datainsamling. Analysvariablerna som automatiskt mappas från XDM till dina konfigurerade rapportsviter kräver inte något utvecklarstöd för att införlivas.
+Automatisk mappning är beroende av ett [standardschema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) i XDM som automatiskt fyller i JSON-objekt som ingår i vanlig Analytics-datainsamling. Analysvariablerna som automatiskt mappas från XDM till dina konfigurerade rapportsviter kräver inte något utvecklarstöd för att införlivas. Se [Variabler mappas automatiskt i Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html) i användarhandboken för Platform Web SDK.
 
 ## Manuell mappning
 
