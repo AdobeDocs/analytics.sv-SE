@@ -2,9 +2,9 @@
 description: Vad du behöver veta om migreringen av användar-ID:n för Analytics till Admin Console i Adobe Experience Cloud.
 title: Migrering av Analytics-användare till Admin Console
 uuid: 7d020713-693b-4945-aa52-3669a631aacb
-source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '3116'
+source-wordcount: '3113'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Fördelarna med att använda Admin Console är bland annat:
   </tr> 
   <tr> 
    <td colname="col1"> <p>Hantera användaridentitet och behörigheter </p> </td> 
-   <td colname="col2"> <p>Analysadministratörer kan hantera användare och behörigheter exklusivt i Admin Console<a href="http://adminconsole.adobe.com/enterprise/"> (http://adminconsole.adobe.com/enterprise/).</a> </p> </td> 
+   <td colname="col2"> <p>Analysadministratörer kan hantera användare och behörigheter exklusivt i <a href="https://adminconsole.adobe.com/enterprise/"> Admin Console</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Hantera produkter och bastjänster </p> </td> 
@@ -53,7 +53,7 @@ Fördelarna med att använda Admin Console är bland annat:
  </tbody> 
 </table>
 
-## Vad du ska känna till (och göra) innan du migrerar användar-ID (FAQ) {#section-b0fc7f0bbd4b488e95b0c8e77ff077a9}
+## Vad du ska veta (och göra) innan du migrerar användar-ID:n (FAQ) {#section-b0fc7f0bbd4b488e95b0c8e77ff077a9}
 
 Svar på frågor som du kan ha innan migreringen.
 
@@ -142,7 +142,7 @@ Svar på frågor som du kan ha innan migreringen.
  </tbody> 
 </table>
 
-## Vad du ska känna till under migreringen (Vanliga frågor och svar) {#section-d394524aa6d046d79025bbd7499792bc}
+## Vad du ska veta under migreringen (frågor och svar) {#section-d394524aa6d046d79025bbd7499792bc}
 
 Viktig information om migreringsprocessen och hur den påverkar den aktuella användarhanteringen.
 
@@ -231,7 +231,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
  </tbody> 
 </table>
 
-## Vad du ska veta efter migreringen (FAQ) {#section-9681baa01b8c41cdb9659b73b70b50ff}
+## Vad du ska veta efter migreringen (frågor och svar) {#section-9681baa01b8c41cdb9659b73b70b50ff}
 
 <table id="table_F48CC9DFE3424AC9AD76A16882701C8F"> 
  <thead> 
@@ -252,7 +252,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
  </tbody> 
 </table>
 
-## Analysfunktioner som inte stöds i Admin Console {#section-928ffba27a0446e0af575b720434ef56}
+## Analysfunktionerna i Admin Console stöds inte {#section-928ffba27a0446e0af575b720434ef56}
 
 >[!IMPORTANT]
 >
@@ -315,7 +315,7 @@ Om du vill skicka e-post till alla användare går du till **[!UICONTROL Analyti
 
 **Body:** Hello Adobe Analytics-användare!
 
-Vårt företag börjar migrera alla Adobe Analytics-konton från [!DNL https://my.omniture.com/login/] till Adobe Experience Cloud ([Experience Cloud.adobe.com](http://experiencecloud.adobe.com/)). Med den här migreringen kommer ditt Adobe Analytics-konto att uppgraderas för att ge åtkomst till Analytics via Adobe Experience Cloud. Metoden för åtkomst till Analytics ändras, men alla dina befintliga behörigheter till rapportsviterna och verktygen bevaras.
+Vårt företag börjar migrera alla Adobe Analytics-konton från [!DNL https://my.omniture.com/login/] till Adobe Experience Cloud ([Experience Cloud.adobe.com](https://experiencecloud.adobe.com/)). Med den här migreringen kommer ditt Adobe Analytics-konto att uppgraderas för att ge åtkomst till Analytics via Adobe Experience Cloud. Metoden för åtkomst till Analytics ändras, men alla dina befintliga behörigheter till rapportsviterna och verktygen bevaras.
 
 **Nästa steg:** Vi börjar migrera användare med början på  **INSERT DATE**. Håll utkik efter ett välkomstmeddelande med din nya inloggning adresserad till e-post-ID:t som listas under ditt analyskonto. Om du inte har konfigurerat en [Adobe ID](https://helpx.adobe.com/x-productkb/global/adobe-id-account-change.html) som är länkad till din e-postadress blir du ombedd att skapa ett konto.
 

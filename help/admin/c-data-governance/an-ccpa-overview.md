@@ -3,10 +3,10 @@ description: Det här dokumentet beskriver vad du måste göra i Adobe Analytics
 title: Adobe Analytics och CCPA
 uuid: 16fd5af8-9148-4e09-ad54-9e3cdd2b3c6d
 exl-id: 1f37e72b-99e4-4833-a506-98c8ec415757
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 97%
+source-wordcount: '610'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,6 @@ Mer information om hur du ställer in etiketterna finns i [Data i etikettrapport
 
 * Bekanta dig med [GDPR-terminologi.](/help/admin/c-data-governance/gdpr-terminology.md)
 * Koppla ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* Mappa alla Adobe Analytics-rapportsviter som du vill konfigurera för datastyrning till [din Experience Cloud-organisation.](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html)
 * Ange en policy för datalagring för varje rapportsvit så att CCPA-begäranden om borttagning och åtkomst kan hanteras.
 
    Adobe Analytics kan inte hjälpa dig med att behandla begäranden till API:t för sekretesstjänster, d.v.s. att behandla de begäranden om åtkomst och borttagning som du får från dina slutanvändare, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta din Customer Success Manager för att ange din datalagringsperiod.

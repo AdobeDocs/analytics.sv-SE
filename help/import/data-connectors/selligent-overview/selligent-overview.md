@@ -2,14 +2,13 @@
 description: Använd Selligent-dataanslutningen med Adobe Analytics.
 title: Selligent Data Connector för Adobe Analytics
 uuid: e16c3ca6-b131-44b1-a36c-e39697677a96
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+exl-id: baeabd9c-10bc-4733-8779-abfa81807c54
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%
 
 ---
-
 
 # Selligent Data Connector för Adobe Analytics{#selligent-data-connector-for-adobe-analytics}
 
@@ -127,11 +126,11 @@ För att kunna använda den här integreringen av Data Connectors måste du ha e
 
 Du behöver följande information om ditt Selligent-konto under den här integrationsinställningen:
 
-* **URL** för Adobe-tjänst:
+* **Adobe-tjänst-URL**:
 
    URL:en kan härledas från den URL som används för att logga in på Selligent Marketing-lösningen. Ersätt&quot;/simweb/login.aspx&quot; del av URL:en med&quot;/automation/omniture.asmx&quot;
 
-   Exempel: `http://<client-specific install url>/automation/omniture.asmx`
+   Exempel: `https://<client-specific install url>/automation/omniture.asmx`
 
 * **Frågesträngsparametrar:** Dessa läggs till i startsidans URL för meddelande-ID och mottagar-ID (Visitor-ID). Dessa är alltid MID och RID för meddelande-ID respektive mottagar-ID.
 

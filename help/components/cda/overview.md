@@ -2,8 +2,7 @@
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
-translation-type: tm+mt
-source-git-commit: 99fea634dafc5d0992898f8f9f89471b51191fc6
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -29,7 +28,7 @@ När enheter sammanfogas överförs variabel beständighet mellan olika enheter.
 
 Av en anda av partnerskap och transparens vill vi att våra kunder ska vara medvetna om vår användning av Microsoft Azure tillsammans med Cross-Device Analytics. Adobe använder Azure för att lagra enhetsdiagramdata och för att utföra sammanfogning mellan enheter. Därför skickas Adobe Analytics-data fram och tillbaka mellan Adobe databehandlingscenter och Adobe&#39;s provisionerade instanser av Microsoft Azure.
 
-Se [Resa-IQ: Paragrafsidan för analys av olika enheter](http://adobe.ly/aacda) om du vill veta mer om funktionerna och funktionerna i analyser av olika enheter.
+Se [Resa-IQ: Paragrafsidan för analys av olika enheter](https://adobe.ly/aacda) om du vill veta mer om funktionerna och funktionerna i analyser av olika enheter.
 
 ## Förutsättningar
 

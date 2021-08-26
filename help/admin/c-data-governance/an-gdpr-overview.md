@@ -3,10 +3,10 @@ description: Det här dokumentet beskriver vad du måste göra i Adobe Analytics
 title: Adobe Analytics och GDPR
 uuid: 16fd5af8-9148-4e09-ad54-9e3cdd2b3c6d
 exl-id: 4cb19f63-119f-4853-84bf-5c1e8f9af9f0
-source-git-commit: 734eb409e7a433147c3536cebc571b38f87ce716
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 95%
+source-wordcount: '613'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,6 @@ Mer information om hur du ställer in etiketterna finns i [Data i etikettrapport
 
 * Bekanta dig med [GDPR-terminologi.](/help/admin/c-data-governance/gdpr-terminology.md)
 * Koppla ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* Mappa alla Adobe Analytics-rapportsviter som du vill konfigurera för datastyrning till [din Experience Cloud-organisation.](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html)
 * Ange en policy för datalagring för varje rapportsvit så att GDPR-begäranden om borttagning och åtkomst kan hanteras.
 
    >[!NOTE]

@@ -1,12 +1,12 @@
 ---
 description: Gör att du kan använda segmentet för marknadsföringsaktivitet i målgruppsbiblioteket, målbiblioteket och Audience Manager.
 title: Publicera segment till Experience Cloud
-feature: Segmentering
+feature: Segmentation
 uuid: e5ce20c0-ce43-423b-a29f-ba66e9e24d27
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-source-git-commit: 190c05f7c0bf8c8ae0524a5635ff468a053abedd
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -25,10 +25,8 @@ Vi har också ökat det maximala antalet publicerbara Adobe Analytics-segment ti
 ## Förutsättningar
 
 * Se till att rapportsviten som du sparar det här segmentet i är [aktiverad för Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/audiences/t-publish-audience-segment.html). Annars kan du inte publicera den på Experience Cloud.
-* Se till att du arbetar i en rapportserie som är [mappad till din Experience Cloud-organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
 * Se till att din organisation använder Experience Cloud ID:n.
 * Innan du kan publicera segment måste din administratör tilldela [!UICONTROL Segment Publishing]-behörigheten till en produktprofil i [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) och lägga till dig i produktprofilen.
-
 
 ## Överväganden
 

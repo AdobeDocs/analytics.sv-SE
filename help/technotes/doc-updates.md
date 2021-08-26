@@ -3,9 +3,9 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättning.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 9bbbba053946d2d4c2a0e45dc4c70fe398e3fa3b
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2841'
 ht-degree: 44%
 
 ---
@@ -31,7 +31,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 2 augusti 2021 | Flera sidor har uppdaterats för att återspegla omprofileringen av [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en) |
 | **Juli 2021** |  |
 | 23 juli 2021 | Ny fördjupad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en) |
-| 15 juli 2021 | Lagt till ny dokumentation på den nya [Adobe Analytics-landningssidan](https://experienceleague.adobe.com/docs/analytics/landing/an-landing.html) |
+| 15 juli 2021 | Lagt till ny dokumentation på den nya [Adobe Analytics-landningssidan](/help/analyze/landing.md) |
 | **Juni 2021** |  |
 | 15 juni 2021 | Uppdaterat [Bästa praxis för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html) |
 | 3 juni 2021 | Dokumentationen har uppdaterats för att ge en bättre förklaring till [implementering av dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html?lang=en) och [här](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#BucketOwnerFullControl). |
@@ -114,7 +114,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | **2019** |  |
 | 19 december 2020 | Ändrade standardlagringsgränsen för [FTP-data](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/ftp-limits.html?lang=en) till 10 GB. |
 | 29 november 2019 | Dokumentationen för [dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) har setts över. |
-| 25 november 2019 | Nytt avsnitt om [Slutet av livscykeln för Tvinga begränsningar för IP-inloggning](/help/admin/company/login-restrictions-eol.md). |
+| 25 november 2019 | Nytt avsnitt om Slutet av livscykeln för Tvinga begränsningar för IP-inloggning. |
 | 21 november 2019 | Ny dokumentation för [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html). |
 | 21 november 2019 | [Vanliga frågor om arbetsflöde i Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=en) har uppdaterats för att indikera tillgänglighet i LiveStream. |
 | 25 oktober 2019 | Uppdaterad [Adobe Analytics Key Concepts](/help/technotes/terms.md)-sida. |

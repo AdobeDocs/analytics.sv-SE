@@ -4,9 +4,9 @@ solution: Audience Manager
 title: Översikt över vidarebefordran på serversidan
 uuid: 22ddbde5-6805-4eba-8f82-62772644dcaa
 exl-id: e3cd72d2-9588-4770-a7c2-64b13a1e9519
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Vidarebefordran på rapportsvitnivå på serversidan rekommenderas framför den 
 
 Gå till **Analytics** > **Admin** > **Rapportsviter** > (välj **rapportsviter**) > **Redigera inställningar** > **Allmänt** > **Server de Forwarding**. Om kryssrutan är:
 
-* **Inaktiv**  (Du kan inte göra en markering eller så finns inte menyn): du inte har de valda rapportsviterna mappade till din IMS-organisation. Se till att dina tillämpliga rapportsviter mappas till rätt Experience Cloud-organisation med hjälp av  [rapportsvitens mappningsgränssnitt](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
+* **Inaktiv**  (Du kan inte göra en markering eller så finns inte menyn): du inte har de valda rapportsviterna mappade till en IMS-organisation. Kontakta kundtjänst för att kontrollera att rapportsviten är korrekt mappad.
 * **Inaktiverad**: Vidarebefordran på serversidan är inte aktiverad. Läs innehållet på sidan och fortsätt sedan med att aktivera funktionen.
 * **Aktiverad**: Du har etablerats för vidarebefordran på serversidan. Du kan också konfigurera den här integreringen med Audience Analytics.
 

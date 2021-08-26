@@ -1,15 +1,14 @@
 ---
 title: Paketanalysatorer
 description: Med paketanalyserare kan du visa data som skickas av implementeringen till datainsamlingsservrar i Adobe.
-keywords: packet sniffer, http status, 200, 302, charles
-translation-type: tm+mt
-source-git-commit: b359582fe8ab6ee04bb478825d9989d850390f96
+keywords: paketsniffer, http-status, 200, 302, charles
+exl-id: db077293-f72c-4933-8a30-f1e1963f332e
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
-
 
 # Paketanalysatorer
 
@@ -22,7 +21,7 @@ På samma sätt som Adobe Experience Cloud felsökare visar en paketskärm vilka
 
 Om du vill visa Analytics-begäranden filtrerar du utgående begäranden med&quot;b/ss&quot;.
 
-I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen begäran skickar den till Adobe [!DNL Analytics] bearbetningsservrar. Att använda en paketbildskärm är ett bra sätt att vara helt säker på att en viss bildbegäran kan utlösas.
+I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen begäran gör den till bearbetningsservrar för Adobe [!DNL Analytics]. Att använda en paketbildskärm är ett bra sätt att vara helt säker på att en viss bildbegäran kan utlösas.
 
 Även om Adobe inte har någon officiell paketövervakare finns det många sådana på internet. Här följer några exempel på paketskärmar som andra tycker är användbara.
 
@@ -32,9 +31,9 @@ I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen beg�
 
 | Firefox | Internet Explorer | Krom | Fristående program |
 |---|---|---|---|
-| [Observera punkt](https://www.observepoint.com/product#plugin) (taggvisningsprogram) | [HttpWatch](https://www.httpwatch.com/) | [Observera punkt](https://www.observepoint.com/product#plugin) (taggvisningsprogram) | [Charles](https://www.charlesproxy.com/) |
+| [Observera punkt](https://www.observepoint.com/product#plugin)  (taggvisningsprogram) | [HttpWatch](https://www.httpwatch.com/) | [Observera punkt](https://www.observepoint.com/product#plugin)  (taggvisningsprogram) | [Charles](https://www.charlesproxy.com/) |
 | [HttpFox](https://addons.thunderbird.net/en-us/firefox/addon/httpfox/) |  | [Verktyg för Chrome Developer](https://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.fiddler2.com/fiddler2/) |
-| [Manipuleringsdata](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/) |  | [Firebug Lite](https://chrome.google.com/webstore/detail/bmagokdooijbeehmkpknfglimnifench) | [Wireshark](https://www.wireshark.org/) |
+| [Manipuleringsdata](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/) |  | [Firebug Lite](https://chrome.google.com/webstore/detail/firebug-lite-for-google-c/ehemiojjcpldeipjhjkepfdaohajpbdo) | [Wireshark](https://www.wireshark.org/) |
 | [HttpWatch](https://www.httpwatch.com/) |  |  |  |
 | [Firebug](https://getfirebug.com/) |  |  |  |
 
@@ -56,7 +55,7 @@ När AppMeasurement skickar data till datainsamlingsservrar i Adobe svarar servr
 
 Det här meddelandet visas eftersom bildbegäran för länkspårning är utformad för att webbläsaren ska kunna fortsätta till nästa sida innan den väntar på ett svar från Adobe datainsamlingsservrar.
 
-Adobe-svar på bildbegäran är helt enkelt en tom 1x1-genomskinlig bild som inte är relevant för sidans innehåll. Om du ser ett linjeobjekt i paketmonitorn från Adobe, antingen med ett **[!UICONTROL 200 OK]** svar eller ett **[!UICONTROL NS_BINDING_ABORTED]** svar, har data nått Adobe-servrar. Sidan behöver inte vänta längre.
+Adobe-svar på bildbegäran är helt enkelt en tom 1x1-genomskinlig bild som inte är relevant för sidans innehåll. Om du ser ett radobjekt i paketövervakaren från Adobe, antingen med ett **[!UICONTROL 200 OK]**-svar eller ett **[!UICONTROL NS_BINDING_ABORTED]**-svar, har data nått Adobe-servrar. Sidan behöver inte vänta längre.
 
 Packet Monitor som är integrerade som plugin-program ser sällan det fullständiga svaret. De brukar se begäran som avbruten eftersom det fullständiga svaret inte togs emot. Dessa övervakare skiljer dessutom sällan åt mellan om det var begäran eller svaret som avbröts. En fristående paketövervakare har vanligtvis mer detaljerade meddelanden och rapporterar statusen mer korrekt. En användare kan till exempel få ett meddelande i *Charles* som säger&quot;Klienten stängde anslutningen innan hela svaret tas emot&quot;. Detta innebär att data nådde våra servrar, bara webbläsaren gick vidare till nästa sida innan pixeln 1x1 togs emot.
 

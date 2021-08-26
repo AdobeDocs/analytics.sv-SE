@@ -5,9 +5,9 @@ title: DFA-integrering
 feature: Data Connectors
 uuid: 972a9d62-24fd-4463-a34c-5ec0b926e81e
 exl-id: 27eb7789-30a5-4f4a-8b23-06e3625996ec
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2590'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Konfigurationssidorna ger en översikt över integreringen, tillsammans med prak
    <td colname="col3"> Det integrationsnamn som Genesis visas i rapportsvitens lista över aktiv integrering. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 1 </td> 
+   <td colname="col1"> 3 </td> 
    <td colname="col2"> E-postadress för integrering </td> 
    <td colname="col3"> E-postadressen som tar emot alla meddelanden som rör den här integreringen. </td> 
   </tr> 
@@ -176,7 +176,7 @@ var dfaConfig = {
    tEvar:             "eVar17", 
    errorEvar:         "eVar59", 
    timeoutEvent:      "event76", 
-   requestURL:         "http://fls.doubleclick.net/ 
+   requestURL:         "https://fls.doubleclick.net/ 
 json?spot=[SPOTID]&src=[CSID]&var=[VAR]&host=integrate.112.2o7.net%2 
 Fdfa_echo%3Fvar%3D[VAR]%26AQE%3D1%26A2S%3D1&ord=[RAND]", 
  

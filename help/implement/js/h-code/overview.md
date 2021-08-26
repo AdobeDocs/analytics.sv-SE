@@ -2,7 +2,7 @@
 title: H Code JavaScript implementation overview
 description: Lär dig arbetsflödet för att implementera H-kod på din webbplats.
 exl-id: cf83d8fe-a3b1-4e65-a86a-7eeaf555651b
-source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -39,4 +39,4 @@ JavaScript-filen cachelagras i besökarens webbläsare efter att den först läs
 
 ## H-kodkomprimering
 
-Om du är orolig för nedladdningsstorleken för `s_code.js`-filen rekommenderar Adobe att du komprimerar `s_code.js`-filen med GZIP. GZIP stöds av alla större webbläsare och ger bättre prestanda än JavaScript-komprimering. Se [Apache Module mod_deflate](http://httpd.apache.org/docs/current/mod/mod_deflate.html) i dokumentationen för Apache.
+Om du är orolig för nedladdningsstorleken för `s_code.js`-filen rekommenderar Adobe att du komprimerar `s_code.js`-filen med GZIP. GZIP stöds av alla större webbläsare och ger bättre prestanda än JavaScript-komprimering. Se [Apache Module mod_deflate](https://httpd.apache.org/docs/current/mod/mod_deflate.html) i dokumentationen för Apache.

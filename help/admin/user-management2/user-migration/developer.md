@@ -3,9 +3,9 @@ description: Visar API:er som påverkas av användarmigreringen
 title: API:er som påverkas av användarmigreringen
 uuid: 9a5d43be-e146-476b-961e-49ea0a30b500
 exl-id: 82d0a1cd-1e25-4157-9bb9-bba1049fdc48
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Följande API-metoder i v1.3 och v1.4 i Admin API stöds inte längre när du b�
 * Permissions.SaveLogin
 * Permissions.GetLoginSegment
 
-## Åtgärder du kan ta {#section-8b0b89a862614f729ebdbe092ce99027}
+## Funktioner {#section-8b0b89a862614f729ebdbe092ce99027}
 
 Om ditt företag för närvarande använder dessa metoder bör du leta efter ett meddelande före migrering från och med den 31 mars 2018. Meddelandet skickas minst 30 dagar innan ditt företag påbörjar migreringen till autentiseringen Experience Cloud, och då upphör stödet för dessa metoder.
 
@@ -43,5 +43,5 @@ Ytterligare information:
 
 * [Allmän information om användarhantering](https://helpx.adobe.com/enterprise/help/users.html)
 * [API:er för användarhantering via adobe.io](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/gettingstarted.html)
-* [API-forum för användarhantering](https://forums.adobe.com/community/umapi/overview)
+* [API-forum för användarhantering](https://community.adobe.com/t5/enterprise-teams/bd-p/enterprise-and-teams)
 * [Migrering av användaråtkomst och hantering för Analytics till Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html)

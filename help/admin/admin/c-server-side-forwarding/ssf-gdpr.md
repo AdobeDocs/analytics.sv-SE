@@ -3,7 +3,7 @@ description: Beskriver förbättringar av vidarebefordran på serversidan som ha
 title: GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan
 uuid: 1b90c567-3321-4dbd-a699-38c04e809fa4
 exl-id: 54e43a16-8f15-4ee8-9aa2-579af30be2c9
-source-git-commit: a77fba68de543b51eda8cf4f9a16a0a15271b496
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan
 
-I det här avsnittet förklaras de förbättringar av vidarebefordran på serversidan som gjordes av [EU:s regler för cookie-kompatibilitet](https://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm), som trädde i kraft den 30 september 2017.
+I det här avsnittet förklaras de förbättringar av vidarebefordran på serversidan som gjordes av [EU:s regler för cookie-kompatibilitet](https://wikis.ec.europa.eu/display/WEBGUIDE/04.+Cookies+and+similar+technologies), som trädde i kraft den 30 september 2017.
 
 Vidarebefordran på serversidan används för att dela data från Adobe Analytics till andra [!DNL Experience Cloud Solutions], t.ex. Audience Manager, i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar skicka data till Analytics under datainsamlingsprocessen.
 

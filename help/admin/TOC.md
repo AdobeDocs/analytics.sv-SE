@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
-source-git-commit: 120b0ff4ed2ebd3870e56ca9fabd3364b7745a7c
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '723'
 ht-degree: 90%
 
 ---
@@ -125,7 +125,6 @@ ht-degree: 90%
    + [Samprofilering](company/co-branding-admin.md)
    + [Dölj rapportsviter](company/c-hide-report-suites.md)
    + [Säkerhetshanteraren](company/security-manager.md)
-   + [Slutet av livscykeln för ”Verkställ begränsningar för IP-inloggning”](company/login-restrictions-eol.md)
 + Hantera rapportsviter {#manage-report-suites}
    + [Hanterare för rapportsvit](c-manage-report-suites/report-suites-admin.md)
    + [Sammanslagning och globala rapportsviter](c-manage-report-suites/rollup-report-suite.md)

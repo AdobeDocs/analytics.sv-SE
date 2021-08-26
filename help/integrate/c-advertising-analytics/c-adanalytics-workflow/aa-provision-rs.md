@@ -3,10 +3,10 @@ description: Konfigurera en rapportsvit som mappats till Experience Cloud för a
 title: Aktivera rapportsvit för Advertising Analytics
 uuid: 934f0e02-b5d7-4eca-93d8-92f95bd7014a
 exl-id: 3a467e41-2755-46c1-b077-b42946562e6b
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 6%
+source-wordcount: '251'
+ht-degree: 7%
 
 ---
 
@@ -14,7 +14,6 @@ ht-degree: 6%
 
 Om du vill kunna se Advertising Analytics sökdata i Analytics måste du konfigurera varje rapportsvit som mappas av Experience Cloud för Advertising Analytics-rapportering.
 
-1. [Kartlägg din rapportsvit för en organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
 1. Navigera till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
 1. Välj den rapportsvit som är mappad till din Experience Cloud-organisation.

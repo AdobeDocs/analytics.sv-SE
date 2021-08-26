@@ -3,10 +3,10 @@ description: Dialogrutan Datastyrning i Administratörsverktyg ger en översikt 
 title: Visa/hantera inställningar för datastyrning i rapportsviten
 uuid: f3b83e8e-00af-4a60-a5de-29b5c43f6788
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 98%
+source-wordcount: '482'
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,7 @@ Dialogrutan Datastyrning i Administratörsverktyg ger en översikt över vilka r
    <td colname="col1"> <p>Organisationsmappning </p> </td> 
    <td colname="col2"> 
     <ul id="ul_EF8F613B0C5E42D19DB60BD0C89C114B"> 
-     <li id="li_B35EE88555F547EFBF55ADE9D0C9EC3B"><b>Mappad</b>: Den här rapportsviten har redan mappats till samma Experience Cloud-organisation som det Analytics-inloggningsföretag du är inloggad på. Endast rapportsviter som har den här inställningen kan etiketteras. </li> 
-     <li id="li_4E800BF80CFF477BAA091EF272D9071C"><b>Mappa rapportsvit</b>: Om du klickar på den här länken kan du <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html"> mappa en rapportsvit </a> till en Experience Cloud-organisation. <p>Det innebär att du omdirigeras till sidan Experience Cloud-organisation – Administratör för mappning av rapportsvit där du måste hitta rapportsviten och tilldela den till rätt organisation. Sedan går du tillbaka till det här användargränssnittet för datastyrning. </p> </li> 
+     <li id="li_B35EE88555F547EFBF55ADE9D0C9EC3B"><b>Mappad</b>: Den här rapportsviten har redan mappats till samma Experience Cloud-organisation som det Analytics-inloggningsföretag du är inloggad på. Endast rapportsviter som har den här inställningen kan etiketteras. </li>
      <li id="li_FF825A65D089487BBF5FCB0D74D41CD7"><b>Mappad till en annan organisation</b>: En annan Experience Cloud-organisation har redan mappat den här rapportsviten till sin organisation. </li> 
     </ul> </td> 
   </tr> 

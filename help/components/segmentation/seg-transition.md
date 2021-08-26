@@ -1,12 +1,12 @@
 ---
 description: Frågor och svar om segmentering.
 title: Vanliga frågor
-feature: Segmentering
+feature: Segmentation
 uuid: f49dc829-1d53-4183-9add-1aeaa5219d89
 exl-id: 316e2a2e-55d3-4c23-9985-9a6d90390e86
-source-git-commit: 286e42feca0d87ef08b9c1d6be6a6987db9de4d0
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2074'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Svar på vanliga frågor om segmenteringsfunktioner, åtkomst, behörigheter, b�
 * Du kan skapa [sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
 * Sidvisningsbehållaren har bytt namn till Träff-behållaren för att ange att den här behållaren segmenterar alla typer av data och inte bara sidvyer. Till exempel tas alla anrop för länkspårning och trackAction-anrop från de mobila SDK:erna med eller utan av träffbehållaren. Observera att det inte fanns någon förändring av hur behållaren fungerar - den döptes bara om.
 
-Mer information finns i [Förbättra segmentering i Adobe Analytics](https://blogs.adobe.com/digitalmarketing/analytics/improving-segmentation-adobe-analytics/)-inlägget i bloggen för digital marknadsföring.
+Mer information finns i [Förbättra segmentering i Adobe Analytics](https://blog.adobe.com/en/publish/2014/05/20/improving-segmentation-adobe-analytics.html)-inlägget i Adobe-bloggen.
 
 ## Åtkomst till segmenteringsverktygen {#section_088AD0E4E21943DFA8CF7206AEC485DD}
 
@@ -39,9 +39,9 @@ Mer information finns i [Förbättra segmentering i Adobe Analytics](https://blo
 
 Du kommer åt segmentbyggaren genom att:
 
-* Visa en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen. Klicka på **[!UICONTROL Add]** eller
+* Visar en befintlig rapport och klickar på segmentikonen ![Segment-ikonen](assets/segment_icon.png) i den vänstra navigeringen. Klicka på **[!UICONTROL Add]** eller
 
-* Klicka på **[!UICONTROL + Add]** längst upp i segmenthanteraren.  ![](assets/add_button.png)
+* Klicka på **[!UICONTROL + Add]** längst upp i segmenthanteraren.  ![Knappen Lägg till](assets/add_button.png)
 
    eller
 
@@ -53,13 +53,13 @@ Du kommer åt segmentbyggaren genom att:
 
 * Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den översta navigeringen. Klicka sedan på **[!UICONTROL Segments]** eller
 
-* Visa en befintlig rapport och klicka på segmentikonen ![](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]** eller
+* Visar en befintlig rapport och klickar på segmentikonen ![Segment-ikonen](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]** eller
 
 * Tryck på snedstreckstangenten &#39;/&#39; var som helst i gränssnittet och sök efter segmenthanteraren.
 
 **Vart gick listrutan för det äldre segmentet?**
 
-Segmentlistrutan i Rapporter och analyser har ersatts av ett mycket mer funktionsrikt [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md)-gränssnitt som gör att du kan skapa&quot;universella&quot; segment som kan användas i alla rapportsviter och i alla Adobe Analytics-lösningar. Om du vill visa en lista över befintliga segment klickar du på segmentikonen ![](assets/segment_icon.png)
+Segmentlistrutan i Rapporter och analyser har ersatts av ett mycket mer funktionsrikt [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md)-gränssnitt som gör att du kan skapa&quot;universella&quot; segment som kan användas i alla rapportsviter och i alla Adobe Analytics-lösningar. Om du vill visa en lista över befintliga segment klickar du på segmentikonen ![Segmentikon](assets/segment_icon.png)
 
 till vänster navigering och segmentets skena.
 
@@ -67,7 +67,7 @@ till vänster navigering och segmentets skena.
 
 Listrutan för rapportsviten har flyttats bredvid datumväljaren i det övre högra hörnet i varje rapport eller kontrollpanel.
 
-![](assets/report_suite_selector.png)
+![Rapportsvitväljare](assets/report_suite_selector.png)
 
 ## Behörigheter {#section_648DFA3A882146C485A84ED014EEC707}
 

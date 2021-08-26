@@ -2,7 +2,7 @@
 title: Slutet av livscykeln för fullständiga datakällor
 description: Orsaker till slutet av livscykeln och jämförelser mellan API:t för inmatning av gruppdata och fullständiga datakällor för databearbetning.
 exl-id: 24a44b7a-64fd-4a99-975f-4887f4638812
-source-git-commit: f120c189228892e57e38e4d0e106eb3190326ff1
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 I flera år har du kunnat skicka in data på träffnivå till Adobe Analytics med fullständig databehandling. Dessa data bearbetades på samma sätt som data som samlats in via våra JavaScript-bibliotek och SDK för mobilappar. 2020 släppte Adobe [API:t för datainmatning i grupp](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md), som utför samma funktioner som fullständiga datakällor, men med ytterligare funktioner. Det här avsnittet innehåller information om ytterligare funktioner som tillhandahålls av API:t för inmatning av gruppdata och visar skillnader i filformat.
 
-Från och med 25 mars 2021 kommer Adobe att förhindra att nya anslutningar för fullständiga datakällor skapas. Befintliga anslutningar stöds tills tjänsten är helt inaktuell den 31 juli 2021. Utöver vår standarddokumentation tillhandahåller vi en genomgång av de [steg som behövs för att skicka data via API:t för gruppdatainfogning](http://adobe.ly/aabdia).
+Från och med 25 mars 2021 kommer Adobe att förhindra att nya anslutningar för fullständiga datakällor skapas. Befintliga anslutningar stöds tills tjänsten är helt inaktuell den 31 juli 2021. Utöver vår standarddokumentation tillhandahåller vi en genomgång av de [steg som behövs för att skicka data via API:t för gruppdatainfogning](https://adobe.ly/aabdia).
 
 ## Varför upphör den här funktionen?
 

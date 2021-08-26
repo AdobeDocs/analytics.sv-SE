@@ -2,10 +2,10 @@
 title: Så här konfigurerar du ett annonskonto i Advertising Analytics
 description: Gör att du kan skapa nya annonskonton och mappa flera konton till flera rapportsviter.
 exl-id: f593c714-e85f-4000-85b2-6294cad81e25
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 98c04c6553f6f18bb69a29ac2af0f622928b0b31
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 3%
+source-wordcount: '805'
+ht-degree: 4%
 
 ---
 
@@ -64,24 +64,24 @@ Fyll i **[!UICONTROL Tracking Settings]** enligt följande riktlinjer:
 
    >[!IMPORTANT]
    >
-   >Endast rapportsviter som har [mappats till en Experience Cloud-organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html) kan väljas. Om du inte ser din rapportsserie läser du [Felsök Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md).
+   >Endast rapportsviter som är mappade till en Experience Cloud-organisation kan väljas. Om du inte ser din rapportsserie läser du [Felsök Advertising Analytics](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md).
 
    För **[!UICONTROL Mapping Settings]** följande riktlinjer:
 
    <table id="table_AF876DC40F97403882C0AA528BD204FF"> 
-    <thead> 
-      <tr> 
-      <th colname="col1" class="entry"> Inställning </th> 
-      <th colname="col2" class="entry"> Beskrivning </th> 
-      </tr>
-    </thead>
-    <tbody> 
-      <tr> 
-      <td colname="col1"> <p>Rapportsvitsmappning </p> </td> 
-      <td colname="col2"> <p>Rapportsvitens mappning avgör vilket rapportpaket som länkas till det här sökmotorkontot. Med andra ord avgör den i vilken rapportssvit/vilka rapportsviter sökmotordata skickas. </p> <p>Om du inte kan se din rapportserie i listan kan du <a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html"  > mappa din rapportsvit till en Experience Cloud-organisation</a> med det här verktyget. </p> </td> 
-      </tr> 
-    </tbody> 
-    </table>
+   <thead> 
+   <tr> 
+   <th colname="col1" class="entry"> Inställning </th> 
+   <th colname="col2" class="entry"> Beskrivning </th> 
+   </tr>
+   </thead>
+   <tbody> 
+   <tr> 
+   <td colname="col1"> <p>Rapportsvitsmappning </p> </td> 
+   <td colname="col2"> <p>Rapportsvitens mappning avgör vilket rapportpaket som länkas till det här sökmotorkontot. Med andra ord avgör den i vilken rapportssvit/vilka rapportsviter sökmotordata skickas. </p> </td>
+   </tr> 
+   </tbody> 
+   </table>
 
 1. Klicka på **[!UICONTROL Save]**.
 1. När du har sparat en ansvarsfriskrivning visas en lista med undantag. Du ombeds bekräfta att du har läst och att du förstår det här avtalet. Klicka i kryssrutan och klicka sedan på **[!UICONTROL OK]**.

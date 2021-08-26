@@ -4,9 +4,9 @@ solution: Experience Cloud
 title: Audience Analytics - översikt
 uuid: 86ef9391-dd6a-495f-a10e-e98bc069dde4
 exl-id: 1665a554-8a6f-4b20-99b7-bb3c2c4bf8cc
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '453'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Kontrollera att följande krav är uppfyllda:
 * Du är kund i både Audience Manager och Adobe Analytics.
 * Du är Audience Manager-administratör.
 * Du använder identitetstjänsten v1.5 eller senare.
-* AAM och Adobe Analytics rapporteringsprogram är [mappade till samma Experience Cloud-organisation](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/report-suite-mapping.html).
+* AAM och Adobe Analytics rapportsviter mappas till samma Experience Cloud-organisation.
 * Du använder [vidarebefordran på serversidan](/help/admin/admin/c-server-side-forwarding/ssf.md) och har implementerat modulen [Audience Management](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) (ingen DIL-kod) - AppMeasurement 1.5 eller senare.
 
 Dessa krav beskrivs i [arbetsflödet för Audience Analytics](/help/integrate/c-audience-analytics/c-workflow/audiences-workflow.md).
