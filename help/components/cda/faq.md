@@ -2,10 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
-translation-type: tm+mt
-source-git-commit: 50ffeac17a07478e98e8d83bd3a87db0d9a1145d
+source-git-commit: 966e013cb6119696cbd058368c90f2bbef0bc9ae
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1776'
 ht-degree: 0%
 
 ---
@@ -115,3 +114,11 @@ Fördelarna med att använda 1-dagars uppspelningsfönster är 1) uppspelningsom
 ## Vad händer med sammanfogade data i mina virtuella CDA-rapporteringsprogram om mitt företag bestämmer sig för att nedgradera från Analytics Ultimate?
 
 Om kunden uppgraderar från Ultimate har de inte längre tillgång till sammansatta data. Alla data som tidigare sammanfogats tas bort. Detta innebär att den virtuella CDA-rapportsviten nu inte kommer att återspegla enhetssammanfogning. Data kommer att se ut ungefär som den ursprungliga osökta rapportsviten.
+
+## Varför skiljer det totala antalet träffar mellan min källrapportsserie och den virtuella CDA-rapportsviten?
+
+CDA använder en komplex parallell bearbetningsprocess, med flera beroende komponenter. Ett datamatchningsfel på ungefär 1 % för det totala antalet träffar mellan den ursprungliga rapportsviten och den virtuella CDA-rapportsviten förväntas. Det har minimal inverkan på funktionerna för olika enheter.
+
+## Varför inflateras mätvärdet&quot;Identified People&quot;?
+
+Om antalet är något högre än förväntat kan ett eVar tillhöra mer än en identifierad person på grund av [hash-kollisioner](/help/implement/validate/hash-collisions.md). Om antalet är mycket högre än förväntat kan du kontakta kundtjänst för ytterligare felsökningsåtgärder.

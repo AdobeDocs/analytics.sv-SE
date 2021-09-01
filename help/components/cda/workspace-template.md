@@ -1,23 +1,22 @@
 ---
 title: CDA Workspace-mall
 description: Beskriver varje fält i CDA-mallen i Analysis Workspace.
-translation-type: tm+mt
-source-git-commit: be842d1ca4080171dbec7fd8b5966d8861f79487
+exl-id: 293001ff-bf7b-4de8-b175-7c2c17d1794d
+source-git-commit: 48c026d3d5314b20b52edb9b3f04497dc180df37
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
-
 
 # CDA Workspace-mall
 
 Adobe erbjuder en mall för att se viktiga prestandadata för olika enheter.
 
-1. Navigera till [experienceCloud.adobe.com](https://experiencecloud.adobe.com) och logga in med inloggningsuppgifterna för ditt AdobeID.
+1. Navigera till [experienceCloud.adobe.com](https://experiencecloud.adobe.com) och logga in med dina inloggningsuppgifter för AdobeID.
 1. Klicka på ikonen med nio rutnät längst upp och klicka sedan på Analytics (Analyser).
-1. Klicka [!UICONTROL Workspace] överst och sedan på [!UICONTROL Create New Project].
-1. Gå till&quot;Journey IQ: Mallen för enhetsanalys&quot; och klicka sedan på [!UICONTROL Create].
+1. Klicka på [!UICONTROL Workspace] överst och sedan på [!UICONTROL Create New Project].
+1. Leta reda på mallen för enhetsövergripande analys och klicka sedan på [!UICONTROL Create].
 1. Ändra rapportsviten till en som stöder CDA om du uppmanas till detta.
 
 Ett Analysis Workspace-projekt som innehåller flera paneler skapas. Överst visas en innehållsförteckning och en introduktion som gör det möjligt att komma åt rapporten och navigera till enskilda rapporter. Klicka på en länk i innehållsförteckningen eller expandera en panels dragspelspanel för att visa dessa rapporter.

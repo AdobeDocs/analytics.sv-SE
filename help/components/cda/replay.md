@@ -1,14 +1,13 @@
 ---
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i enhetsövergripande analys
-translation-type: tm+mt
-source-git-commit: f3f5f82a236d376eda07d4d39e7effa60e929499
+exl-id: 0b7252ff-3986-4fcf-810a-438d9a51e01f
+source-git-commit: d4a70859027508cdd64affbb506fc64a3c4806cb
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
-
 
 # Så här spelar du upp
 
@@ -48,6 +47,10 @@ Både oautentiserade och autentiserade träffar på nya enheter räknas som sepa
 * **Om du använder fältbaserad sammanfogning kommer** oautentiserade träffar på identifierade enheter att sammanfogas från den punkten och framåt.
 
    Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla träffar utom träffar 1 och 3 sammansydda (de använder alla identifieraren `Bob`). Attribution works on hits 1 and 3 after replay stitching.
+
+>[!NOTE]
+>
+>Tidsstämplade träffar som är äldre än 12 timmar sammanfogas inte i liveflödet. Dessa träffar inkluderas dock i Repetition stitching, så länge de inte visas i uppspelningsfönstret.
 
 ### Spela upp sammanfogning
 

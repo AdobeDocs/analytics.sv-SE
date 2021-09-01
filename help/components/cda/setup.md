@@ -2,10 +2,9 @@
 title: Konfigurera enhetsövergripande analys
 description: Konfigurera en virtuell rapportsvit för att aktivera CDA.
 exl-id: e6d4e0c2-6b85-4f89-b51f-c0eed7a4e3da
-translation-type: tm+mt
-source-git-commit: 005cb590f4f7d31d3de801437a0ba6fa25b2ea64
+source-git-commit: 040805039c04f4ae8d9d13b764f9f72355eb36e7
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -27,6 +26,7 @@ CDA tillhandahålls av Adobe Engineering på ditt enhetsövergripande rapportpak
 * Vilken metod för CDA du vill använda (fältbaserad sammanfogning, privat Adobe-diagram eller Adobe-foto-diagram)
 * Om du tänker använda fältbaserad sammanfogning är det utkast eller den eVar som innehåller användar-ID:t
 * Din inställning för repetitionsfrekvens och uppslagslängd. Du kan välja att spela upp en gång i veckan med ett 7-dagars uppslagsfönster eller att spela upp varje dag med ett 1-dagars uppslagsfönster.
+Standardinställningen är veckovis uppspelning med 7-dagars uppslagsfönster. I så fall kan data under den sista veckan ändras (eftersom de successivt sammanfogas och uppdateras).
 
 När du har försett kundtjänst med den här informationen arbetar de tillsammans med Adobe Engineering för att aktivera den rapportserie du valt för CDA-bearbetning.
 
@@ -51,7 +51,7 @@ Administratörer med behörighet att skapa virtuella rapportsviter kan skapa vir
 När Enhetsövergripande analys är aktiverat på en virtuell rapportserie bör du tänka på följande ändringar:
 
 * En ny ikon för olika enheter visas bredvid namnet på den virtuella rapportsviten. Den här ikonen är exklusiv för virtuella rapportsviter på olika enheter.
-* En ny dimension med namnet [Identifierat tillstånd](../dimensions/identified-state.md) är tillgänglig. Det här måttet avgör om Experience Cloud-ID:t för träffen vid den tidpunkten är känt av enhetsdiagrammet.
-* Nya mätvärden med etiketten [Personer](../metrics/people.md) och [Unika enheter](../metrics/unique-devices.md) är tillgängliga.
+* En ny dimension med namnet [Identifierat tillstånd](../dimensions/identified-state.md) är tillgänglig.
+* Det finns nya mätvärden med etiketten [Personer](../metrics/people.md), [Unika enheter](../metrics/unique-devices.md), Identifierade personer, Oidentifierade personer och Personer med Experience Cloud ID.
 * Måttet [Unika besökare](../metrics/unique-visitors.md) är inte tillgängligt eftersom det ersätts med Personer och Unika enheter.
 * När du skapar segment ersätts segmentbehållaren &quot;Visitor&quot; med en &quot;Person&quot;-behållare.
