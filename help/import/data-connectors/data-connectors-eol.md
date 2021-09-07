@@ -2,10 +2,10 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 exl-id: b407675a-9fcf-4f24-bc88-69ccdb5b3658
-source-git-commit: 831d86317633466b5b6ceb9bfc49e36caaf62855
+source-git-commit: f034baca23980ae70d83bc6488e13fc610a43ab1
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 8%
+source-wordcount: '685'
+ht-degree: 4%
 
 ---
 
@@ -13,17 +13,17 @@ ht-degree: 8%
 
 I över ett decennium har Adobe Analytics siktat på att tillhandahålla den bästa lösningen för webb- och marknadsföringsanalys som uppfyller kundernas behov. I takt med att teknologi- och affärsbehoven utvecklas strävar vi efter att kontinuerligt leverera och uppfylla de högsta standarderna.  Tyvärr uppfyller de API:er som stöder den här integreringen inte längre dessa standarder och kan inte användas i den moderna Adobe Analytics-teknikinfrastrukturen.
 
-**Från och med den 19 augusti 2021** upphör dataanslutningsintegreringar för Adobe. Slutet av livscykeln är en del av en teknikprodukts livscykel och Adobe vill göra övergången så smidig som möjligt för våra kunder och partners. Många av dessa integreringar är tillgängliga via Adobe Exchange och kan fortsätta att användas.
+**Från och med 19 augusti 2021** har Adobe upphört med integreringen av dataanslutningar. Slutet av livscykeln är en del av en teknikprodukts livscykel och Adobe vill göra övergången så smidig som möjligt för våra kunder och partners. Många av dessa integreringar är tillgängliga via Adobe Exchange och kan fortsätta att användas.
 
 ## Varför upphör den här funktionen?
 
-Den här funktionen drivs av äldre teknik som inte längre är användbar eller stöds. Vi har en ny standard i [Adobe Exchange Partner Program](https://partners.adobe.com/exchangeprogram/experiencecloud), som bör implementeras för alla integreringar som ska användas och stödjas framöver.
+Den här funktionen drivs av äldre teknik som inte längre är användbar eller stöds. [Adobe Exchange Marketplace](https://partners.adobe.com/exchangeprogram/experiencecloud) är nu den plats där du kan hitta aktuella integreringar för Adobe-lösningar.
 
 ## Hur påverkar borttagningen av den här funktionen dig?
 
 Om du är Adobe-partner hittar du [information här](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360003867071-Adobe-Analytics-Integration-Tools) i vår dokumentation om hur du migrerar din integrering till vårt nya Adobe Exchange-program.
 
-Om du är en Data Connector-kund och vill begära att den integrering du använder ska migreras, ska du *dirigera alla begäranden direkt till integreringspartnern*. Att skicka en begäran till Adobe via kundtjänst ger inte samma resultat.
+Om du är en Data Connector-kund och vill begära att den integrering du använder ska migreras, ska du *dirigera alla begäranden direkt till integreringspartnern*. Partnern måste åta sig att gå över till de nya API:erna. Tyvärr kan inte Adobe kundtjänst tvinga partners att gå över till de nya API:erna.
 
 Alla företag som erbjuder en integrering fick möjlighet att migrera sin integrering till Adobe Exchange eller avbryta integreringen. Nedan följer en sammanfattning av varje aktuell integration och deras tillhörande beslut.
 
@@ -37,18 +37,18 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | --- | --- |
 | Acxiom | Undertryckt |
 | Anpassa | Undertryckt |
-| Justera | Migrerar till Adobe Exchange |
-| Adobe Campaign | Migrera till Adobe Exchange (se anm. nedan) |
-| Använder | Migrerar till Adobe Exchange |
+| Justera | Migrera till de senaste API:erna |
+| Adobe Campaign | Migrera till de senaste API:erna (se anm. nedan) |
+| Använder | Migrera till de senaste API:erna |
 | Appen | Undertryckt |
-| AppsFlyer | Migrerar till Adobe Exchange |
+| AppsFlyer | Migrera till de senaste API:erna |
 | aprimo Enterprise Marketing Engagement | Undertryckt |
 | Apteligent | Undertryckt |
 | BlueHornet eMarketing Suite | Undertryckt |
-| Gren | Migrerar till Exchange |
+| Gren | Migrera till de senaste API:erna |
 | BrightEdge 2.0, BrightEdge, BrightEdge Express | Undertryckt |
 | Bronto Software | Undertryckt |
-| CheetahMail av Experian | Migrerar till Exchange |
+| CheetahMail av Experian | Migrera till de senaste API:erna |
 | ClickTale | Undertryckt |
 | Klickbar certifikatutfärdare | Undertryckt |
 | Konduktor 2.0, konduktor, konduktor, organisk statistik | Undertryckt |
@@ -61,31 +61,31 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Delivra | Undertryckt |
 | Demandbase CA | Undertryckt |
 | Demandbase v3 | Undertryckt |
-| DialogTech | Finns på Adobe Exchange |
+| DialogTech | Migrera till de senaste API:erna |
 | [DoubleClick for Advertisers (DFA)](/help/import/data-connectors/dfa-data-connector-analytics/dfa-eol.md) | Undertryckt |
 | DREAM | Undertryckt |
 | DREAMmail 1.0, DREAMmail 2.0 | Undertryckt |
-| Dynamisk signal (Nital Vora) | Migrerar till Exchange |
+| Dynamisk signal (Nital Vora) | Migrera till de senaste API:erna |
 | eDialog Precision Central | Undertryckt |
 | eC-messenger | Undertryckt |
 | Emailvision Campaign Commander | Undertryckt |
 | emarsys xpress | Undertryckt |
-| Epsilon Harmony | Migrerar till Exchange |
+| Epsilon Harmony | Migrera till de senaste API:erna |
 | AllaSociala för Adobe Analytics | Undertryckt |
 | ExactTarget, ExactTarget 2.0 | Undertryckt |
 | Fiksu | Undertryckt |
 | Foresee (v2.0), Foresee Feedback, Foresee Results | Undertryckt |
 | Gigya | Undertryckt |
-| Hootsuite | Migrerar till Exchange |
+| Hootsuite | Migrera till de senaste API:erna |
 | hybris | Undertryckt |
 | Kampyle (nu Medallia) Feedback Analytics (1.1) | Undertryckt |
-| Listrak | Migrerar till Exchange |
+| Listrak | Migrera till de senaste API:erna |
 | Lyris HQ | Undertryckt |
 | MaritzCX (V 2.0) | Undertryckt |
 | Merkle | Undertryckt |
-| Oraclets officiella Eloqua-integrering | Migrerar till Exchange |
+| Oraclets officiella Eloqua-integrering | Migrera till de senaste API:erna |
 | optivo broadmail (Episerver) | Undertryckt |
-| Qualtrics v2 | Migrerar till Exchange |
+| Qualtrics v2 | Migrera till de senaste API:erna |
 | Responsys 1.0, Responsys 2.0 | Undertryckt |
 | Salesforce.com | Undertryckt |
 | Selligent | Undertryckt |
