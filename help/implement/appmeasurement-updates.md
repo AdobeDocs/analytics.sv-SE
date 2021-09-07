@@ -3,9 +3,9 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 376b577211f927be5a896c2a20c8a2fc55437b85
+source-git-commit: 6624105e45f02a803fd39fcbd63d5560c9a12968
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2197'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,12 @@ Kumulativ versionsinformation för [!DNL AppMeasurement] för JavaScript.
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
 Du kan hämta den senaste versionen av AppMeasurement i [Code Manager](/help/admin/admin/code-manager-admin.md).
+
+## Version 2.22.2
+
+Releasedatum: **7 september 2021**
+
+* Den här uppdateringen gör att `opt.dmp` och `opt.sell` alltid inkluderas när länkar spåras. Här är en [fullständig lista över medgivandevariabler](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/consent-variables.html).
 
 ## Version 2.22.1
 
