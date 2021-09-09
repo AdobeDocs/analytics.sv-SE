@@ -3,12 +3,12 @@ description: Tabelldata som beskriver kolumnerna i dataflödet.
 keywords: Datafeed;kolumner
 subtopic: data feeds
 title: Referens för datakolumner
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: b50982f17d226c8efaec6ff4ae4e6ff9140d8299
+source-git-commit: 220d92f8826b8d25e2da975db728e30a1051c4b5
 workflow-type: tm+mt
-source-wordcount: '3422'
+source-wordcount: '3420'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `page_event_var2` | Används endast vid förfrågningar om länkspårningsbilder. Länkens anpassade namn (om det anges). | varchar(100) |
 | `page_event_var3` | Används inte längre. Behållna data från undersökningen och mediemodulen. Fyllda gamla videorapporter i tidigare versioner av Adobe Analytics. | text |
 | `page_type` | Används för att fylla i [Sidorna hittades inte](/help/components/dimensions/pages-not-found.md)-dimensionen. Används endast för 404 sidor. Variabeln ska antingen vara tom eller innehålla värdet `ErrorPage`. | char(20) |
-| `page_url` | URL:en för träffen. I post-varianten (post_page_url) rensas värdet för begäran om länkspårning av bilder. | varchar(255) |
+| `page_url` | URL:en för träffen. Observera att `post_page_url` tas bort för förfrågningar om länkspårningsbilder och att datatypen varchar(255) används. | text |
 | `pagename` | Används för att fylla i dimensionen [Sida](/help/components/dimensions/page.md). Om variabeln [`pagename`](/help/implement/vars/page-vars/pagename.md) är tom använder Analytics `page_url` i stället. | varchar(100) |
 | `paid_search` | Flagga som anges om träffen matchar betald sökningsidentifiering. | tinyint unsigned |
 | `partner_plugins` | Används inte. En del av en skrapad funktion. | varchar(255) |
