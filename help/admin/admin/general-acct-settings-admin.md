@@ -4,10 +4,9 @@ title: Allmänna kontoinställningar
 feature: Admin Tools
 uuid: c1ab5c34-2c41-4d12-a706-0e760dff8a95
 exl-id: f49babb2-8e26-4cc6-b264-b4d7be93f130
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: d509de3ff49d996f821803f0a93c3184db4af1d3
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -30,3 +29,8 @@ De här inställningarna innehåller redigeringsalternativ för grundläggande r
 | IP-förvanskning | Ändrar IP-adresser till oidentifierbara strängar, vilket i huvudsak tar bort dem från datalagret i Adobe. När IP-förfalskning är aktiverat går de ursprungliga IP-adresserna förlorade permanent. <br> **Obs**: IP-adresserna är dolda överallt i Analytics, inklusive Data warehouse. IP-inställningen i Target styrs dock separat, så den här inställningen påverkar inte Target.<br> Om IP-förfalskning är aktiverat utförs all nödvändig bearbetning, inklusive IP-filtrering/uteslutning, robotregler och geosegmenteringssökningar innan IP-adressen döljs. Du behöver inte ändra någonting när du aktiverar IP-förfalskning.<ul><li>Om du kontrollerar **Inaktiverad** lämnas IP-adressen i data.</li><li>Om du markerar **Obfuscera IP-adressen** ändras IP-adressen till två kolon följt av ett hash-värde (t.ex. `::1932023538`).</li><li>Om du markerar **Ta bort IP-adress** ersätts IP-adressen med `::X.X.X.X` i data, efter geosökning.</li></ul>**Obs**: Den här inställningen kan kräva ändringar av anpassade  [robotregler ](/help/admin/admin/bot-removal/bot-rules.md) eller  [IP-undantag](/help/admin/admin/exclude-ip.md). |
 | Lagring av transaktions-ID | Gör att du kan använda datakällor för [transaktions-ID](/help/import/c-data-sources/c-datasrc-types/datasrc-transactionid.md). |
 | Aktivera Data warehouse | Aktiverar användargränssnittet för Data warehouse under Analytics > Tools > Data warehouse. |
+| Postalternativ | Gör att du kan ange postnumret i stället för att använda det som genereras av vår geo-IP-sökning. |
+| Stöd för flerbytetecken | Stöd för flerbytetecken lagrar tecken i rapportsviten med UTF-8. Vid mottagande konverterar systemet data från webbsidans teckenuppsättning till teckenuppsättningen UTF-8, så att du kan använda vilket språk som helst i dina marknadsföringsrapporter. Kontakta din kontoansvarige eller kundtjänst om du vill ändra stödet för flerbytetecken för en befintlig rapportsvit. |
+| Aktiverad | Anger om den här rapportsviten är aktiverad eller inte. |
+| Basvaluta | Här kan du ange bas [valuta](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/currencycode.html?lang=en) för den här rapportsviten. |
+| Organisations-ID | Det ID som är associerat med ditt provisionerade Experience Cloud-företag. Detta ID är en alfanumerisk sträng med 24 tecken, följt av (och måste innehålla) @AdobeOrg. |
