@@ -2,13 +2,13 @@
 description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
 title: Översikt över avvikelseidentifiering
 uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
-feature: AI-verktyg
+feature: AI Tools
 role: User, Admin
 exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 76072b45114a15d9b366657ea81872035965e5b6
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 8%
+source-wordcount: '258'
+ht-degree: 9%
 
 ---
 
@@ -16,9 +16,7 @@ ht-degree: 8%
 
 Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace.
 
-[Videosjälvstudiekurs](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html)  om avvikelseidentifiering (4:53)
-
-[Självstudievideo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/contribution-analysis-workspace.html)  om bidragsanalys (3:20)
+>[!VIDEO](https://video.tv.adobe.com/v/25444/?quality=12)
 
 >[!IMPORTANT]
 >

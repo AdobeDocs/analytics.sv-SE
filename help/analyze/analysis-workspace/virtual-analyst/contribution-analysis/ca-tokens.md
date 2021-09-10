@@ -2,12 +2,12 @@
 description: Använd bidragsanalys för att identifiera statistiska avvikelser och korrelationer i data.
 title: Översikt över bidragsanalys
 uuid: 2bd295b0-c5ce-4443-86af-024efd20c021
-feature: AI-verktyg
+feature: AI Tools
 role: User, Admin
 exl-id: 86fc8696-90a8-4626-b1c7-6413d3f8a648
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 76072b45114a15d9b366657ea81872035965e5b6
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1147'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # Översikt över bidragsanalys
 
 Contribute Analysis avslöjar dolda mönster i era data för att förklara statistiska avvikelser och identifiera korrelationer bakom oväntade kundaktiviteter, obundna värden och plötsliga toppar eller dalar för valda mätvärden över konvergerande målgruppssegment.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25443/?quality=12)
 
 Något hände. Varför? Din rapport om avvikelseidentifiering visar en ovanlig topp i beställningarna och du vill veta varför. Vad hände med det vanliga? Vem svarar på vilken kampanj eller hänskjutning? Var det något som blev viralt? Vilka faktorer har bidragit till avvikelsen? Och kanske viktigast: Hur kan jag samla in viktig information om min kund och upprepa den här prestandan? (Om en nedgång i ett mätvärde eller ökning av ett negativt mätvärde inträffar, hur kan jag undvika det i framtiden?)
 

@@ -1,10 +1,10 @@
 ---
 description: En panel är en samling tabeller och visualiseringar
 title: Översikt över paneler
-feature: Paneler
+feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 76072b45114a15d9b366657ea81872035965e5b6
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Dra och släpp ett segment från den vänstra listen i panelens släppzon för a
 
 ### Ad hoc-segmentfilter
 
-Komponenter som inte tillhör segment kan också dras direkt till dropzone för att skapa ad hoc-segment, vilket sparar tid och kraft åt att gå till Segment Builder. Segment som skapas på det här sättet definieras automatiskt som träffnivåsegment. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
+Komponenter som inte är segmentkomponenter kan också dras direkt till släppzonen för att skapa ad hoc-segment, vilket sparar tid och arbete med att gå till segmentbyggaren. Segment som skapas på det här sättet definieras automatiskt som träffnivåsegment. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
 
 Ad-hoc-segment är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
 

@@ -3,9 +3,9 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 uuid: 1179e49d-3cfc-4abd-a8eb-35c5ae380c16
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 76072b45114a15d9b366657ea81872035965e5b6
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1163'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 2%
 Den här hjälpsidan innehåller rekommenderade användningsexempel för varje Adobe Analytics-verktyg. Verktyg bör beaktas i den ordning de anges. Om ett visst verktyg inte uppfyller behovet går du vidare till nästa verktyg för övervägande.
 
 Mer information om Adobe Analytics produktjämförelser finns [här](/help/admin/c-analytics-product-comparison/analytics-product-comparison.md).
+
+Här är en video som jämför olika Adobe Analytics-verktyg:
+
+>[!VIDEO](https://video.tv.adobe.com/v/27220/?quality=12)
 
 ## Adobe Analytics Reporting-användargränssnitt {#user-interfaces}
 

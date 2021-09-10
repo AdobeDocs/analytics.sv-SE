@@ -2,12 +2,12 @@
 description: Använd segment i Analysis Workspace.
 title: Segment
 uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
-feature: Grundläggande om arbetsytan
+feature: Workspace Basics
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: b73ba63f4f308a50a9e0933d1ff0d56a45b94797
+source-git-commit: 76072b45114a15d9b366657ea81872035965e5b6
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,8 @@ Du kan välja att göra dessa segment offentliga (globala) genom att följa dess
    ![](assets/segment-info.png)
 
 ## Andra metoder för att använda segment {#section_10FF2E309BA84618990EA5B473015894}
+
+>[!VIDEO](https://video.tv.adobe.com/v/30994/?quality=12)
 
 Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 
