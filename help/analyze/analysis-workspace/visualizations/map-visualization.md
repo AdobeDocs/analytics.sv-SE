@@ -2,13 +2,13 @@
 description: Använd kartvisualisering i ett Workspace-projekt.
 title: Mappa
 uuid: 6038f336-62a3-4efa-8316-4d7792468db3
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: a60544b4-27b6-413a-96ce-ab9487594422
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 09124e3a176dab1e61ae54738abfd33e5be7082c
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 3%
+source-wordcount: '633'
+ht-degree: 2%
 
 ---
 
@@ -89,3 +89,9 @@ Om du klickar på **kugghjulsikonen** visas dessa visualiseringsinställningar:
 | Format: Kartstil | Du kan välja mellan Basic, Streets, Bright, Light, Dark och Satellite. |
 | Klusterradie | Grupperar datapunkter som ligger inom det angivna antalet pixlar. Standardvärdet är 50. |
 | Anpassat maxvärde | Gör att du kan ändra tröskelvärdet för det högsta värdet för kartan. Om du justerar det här värdet justeras skalan för värdena för bubblor/heatmap (färg och storlek) i förhållande till det anpassade maxvärdet. |
+
+## Skapa en heatmap med tidsdelning
+
+Här är en video om ämnet:
+
+>[!VIDEO](https://video.tv.adobe.com/v/26991/?quality=12)

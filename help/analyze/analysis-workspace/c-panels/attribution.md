@@ -1,19 +1,21 @@
 ---
 title: Panelen Attribution
 description: Använda och tolka attribueringspanelen i Analysis Workspace.
-feature: Attribuering
+feature: Attribution
 role: User, Admin
 exl-id: 96ce3cb9-7753-4ec0-b551-e70a1508e3b7
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 09124e3a176dab1e61ae54738abfd33e5be7082c
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 1%
+source-wordcount: '439'
+ht-degree: 0%
 
 ---
 
 # Panelen Attribution
 
 Panelen [!UICONTROL Attribution] är ett enkelt sätt att skapa en analys som jämför olika attribueringsmodeller. Det är en funktion i [Attribution IQ](../attribution/overview.md) som ger dig en dedikerad arbetsyta för att använda och jämföra attribueringsmodeller.
+
+>[!VIDEO](https://video.tv.adobe.com/v/23139/?quality=12)
 
 ## Skapa en attribueringspanel
 
