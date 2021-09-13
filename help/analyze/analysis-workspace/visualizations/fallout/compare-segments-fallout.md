@@ -3,12 +3,12 @@ description: Du kan skapa segment från en kontaktyta, lägga till segment som k
 keywords: utfall och segmentering;segment i utfallsanalys;jämför segment i utfall
 title: Använda segment i utfallsanalys
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: 2177cd09-5a27-4295-8414-580cf53062cb
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: f52623f4885063d080c95ef275808a3d051895e5
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -50,6 +50,10 @@ Du kan också skapa en OCH-kontaktyta genom att dra användarsegmentet i USA til
 ## Jämför segment i utfall {#section_E0B761A69B1545908B52E05379277B56}
 
 Du kan jämföra ett obegränsat antal segment i utfallsvisualiseringen.
+
+Här är en video om hur du jämför segment i utfallet:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24046/?quality=12)
 
 1. Markera de segment som du vill jämföra från [!UICONTROL Segments]-listen till vänster. I vårt exempel har vi valt två segment: Användare i USA och användare utanför USA.
 1. Dra dem till segmentsläppzonen längst upp.

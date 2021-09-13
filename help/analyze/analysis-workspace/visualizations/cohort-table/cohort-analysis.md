@@ -4,9 +4,9 @@ description: Gräv djupare in i informationen om er målgrupp och dela in i rela
 feature: Visualizations
 role: User, Admin
 exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
-source-git-commit: 244f839235f55b7f8873864ced3d5adc2394b631
+source-git-commit: f52623f4885063d080c95ef275808a3d051895e5
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ Här är en video om hur du beräknar kvarhållande av rullande text:
 En [!UICONTROL Churn]-kohort är omvänd till en kvarhållningstabell och visar de besökare som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
 
 ![](assets/churn-report.png)
+
+Här är en video om bortfallsanalys:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25966/?quality=12)
 
 ### [!UICONTROL Rolling Calculation]
 

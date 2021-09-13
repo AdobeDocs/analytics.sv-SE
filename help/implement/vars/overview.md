@@ -3,9 +3,9 @@ title: Variabler, funktioner, metoder och plugin-program - översikt
 description: Lär dig vilka variabler du kan ta med i data som du skickar till Adobe för att förbättra rapporteringen.
 keywords: appmeasurement,variabler,var,konfiguration,sida,implementering
 exl-id: 7ffcd943-f9ac-4daf-bbdf-248d75925b04
-source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
+source-git-commit: f52623f4885063d080c95ef275808a3d051895e5
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Analytics ger ett antal variabler för att samla in analysdata. Variablerna i de
 ## Variabler och implementeringsmetoder
 
 Adobe erbjuder flera sätt att implementera Adobe Analytics. På varje sida finns ett avsnitt om hur du implementerar variabeln med hjälp av taggar i Adobe Experience Platform och AppMeasurement for JavaScript.
+
+Här är en video om hur du konfigurerar variabler i Adobe Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/28755/?quality=12)
 
 ## Operationsordning
 

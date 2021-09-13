@@ -3,16 +3,20 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentval för Virtual Report Suites
 uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
 exl-id: 19163829-328a-4064-b1be-8c09d1d94a0d
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: f52623f4885063d080c95ef275808a3d051895e5
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 10%
+source-wordcount: '392'
+ht-degree: 9%
 
 ---
 
 # Komponentval för Virtual Report Suites
 
 Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
+
+Här är en video om komponenturval:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23544/?quality=12)
 
 >[!NOTE]
 >
