@@ -1,12 +1,12 @@
 ---
 title: Vad är Cohort Analysis och hur fungerar den?
 description: Gräv djupare in i informationen om er målgrupp och dela in i relaterade grupper med Cohort Analysis. Läs om kohortanalyser i Analysis Workspace.
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 244f839235f55b7f8873864ced3d5adc2394b631
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ Följande funktioner gör att du kan finjustera kontrollen över de kohorter du 
 En [!UICONTROL Retention]-kohortrapport returnerar besökare: varje datacell visar det obearbetade antalet och den procentuella andelen besökare i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
 
 ![](assets/retention-report.png)
+
+Här är en video om hur du beräknar kvarhållande av rullande text:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25962/?quality=12)
 
 ### [!UICONTROL Churn] Tabell
 

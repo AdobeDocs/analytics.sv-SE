@@ -5,9 +5,9 @@ title: Översikt över visualiseringar
 feature: Visualizations
 role: User, Admin
 exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: 244f839235f55b7f8873864ced3d5adc2394b631
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1073'
 ht-degree: 4%
 
 ---
@@ -100,3 +100,9 @@ Ytterligare funktioner för en visualisering är tillgängliga genom att högerk
 Om du inte är säker på vilken visualisering du ska välja klickar du på ikonen **[!UICONTROL Create Visual]** i en tabellrad (tillgänglig vid hovring). Det här är det snabbaste sättet att lägga till en visualisering. När du klickar på den uppmanas Analysis Workspace att göra en kvalificerad gissning där visualiseringen bäst passar dina data. Om du till exempel har markerat 1 rad skapas ett linjediagram. Om du har markerat 3 segmentrader skapas ett Venndiagram.
 
 ![](assets/quick-viz.png)
+
+## Ändra skalningsaxeln vid visualiseringar
+
+Här är en videoöversikt:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24708/?quality=12)
