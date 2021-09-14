@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
-source-git-commit: 6a47ebc58cb36079940cfc4e5cdc80cf99c18a50
+source-git-commit: ff6937ebb3bdd37d7acf22a954deb1e656267061
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 52%
 
 ---
@@ -118,6 +118,7 @@ ht-degree: 52%
    + [Anpassade händelser](metrics/custom-events.md)
    + [Första besökssida](metrics/entries.md)
    + [Sista besökssida](metrics/exits.md)
+   + [Identifierade personer](metrics/identified-people.md)
    + [Instanser](metrics/instances.md)
    + [Mobilvyer](metrics/mobile-views.md)
    + [Nya åtaganden](metrics/new-engagements.md)
@@ -127,6 +128,7 @@ ht-degree: 52%
    + [Sidhändelser](metrics/page-events.md)
    + [Sidvyer](metrics/page-views.md)
    + [Sidorna hittades inte](metrics/pages-not-found.md)
+   + [Personer med Experience Cloud ID](metrics/people-with-exp-cloud-id.md)
    + [Personer](metrics/people.md)
    + [Produktvyer](metrics/product-views.md)
    + [Siduppdateringar](metrics/reloads.md)
@@ -138,6 +140,7 @@ ht-degree: 52%
    + [Tid per besökare](metrics/time-spent-per-visitor.md)
    + [Tidsåtgång - översikt](metrics/time-spent.md)
    + [Totalt antal sekunder som använts](metrics/total-seconds-spent.md)
+   + [Oidentifierade personer](metrics/unidentified-people.md)
    + [Unika enheter](metrics/unique-devices.md)
    + [Unika besökare](metrics/unique-visitors.md)
    + [Enheter](metrics/units.md)

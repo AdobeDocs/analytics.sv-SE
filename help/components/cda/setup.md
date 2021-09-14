@@ -2,7 +2,7 @@
 title: Konfigurera enhetsövergripande analys
 description: Konfigurera en virtuell rapportsvit för att aktivera CDA.
 exl-id: e6d4e0c2-6b85-4f89-b51f-c0eed7a4e3da
-source-git-commit: 040805039c04f4ae8d9d13b764f9f72355eb36e7
+source-git-commit: ff6937ebb3bdd37d7acf22a954deb1e656267061
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -52,6 +52,6 @@ När Enhetsövergripande analys är aktiverat på en virtuell rapportserie bör 
 
 * En ny ikon för olika enheter visas bredvid namnet på den virtuella rapportsviten. Den här ikonen är exklusiv för virtuella rapportsviter på olika enheter.
 * En ny dimension med namnet [Identifierat tillstånd](../dimensions/identified-state.md) är tillgänglig.
-* Det finns nya mätvärden med etiketten [Personer](../metrics/people.md), [Unika enheter](../metrics/unique-devices.md), Identifierade personer, Oidentifierade personer och Personer med Experience Cloud ID.
+* Nya mätvärden med etiketten [Personer](../metrics/people.md), [Unika enheter](../metrics/unique-devices.md), [Identifierade personer](../metrics/identified-people.md), [Oidentifierade personer](../metrics/unidentified-people.md) och [Personer med Experience Cloud ID](../metrics/people-with-exp-cloud-id.md) är tillgängliga.
 * Måttet [Unika besökare](../metrics/unique-visitors.md) är inte tillgängligt eftersom det ersätts med Personer och Unika enheter.
 * När du skapar segment ersätts segmentbehållaren &quot;Visitor&quot; med en &quot;Person&quot;-behållare.
