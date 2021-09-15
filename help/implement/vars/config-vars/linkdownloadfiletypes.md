@@ -2,7 +2,7 @@
 title: linkDownloadFileTypes
 description: Fastställ filtillägg som automatiskt spåras som nedladdningslänkar.
 exl-id: 5089571a-d387-4ac7-838f-8bc95b2856fb
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: 49bf0a459a096e011ff60724aa5bee4fb7721a21
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -19,14 +19,13 @@ Använd `linkDownloadFileTypes` för att anpassa vilka filtillägg du vill räkn
 >
 >Endast faktiska klick spåras automatiskt. Följande typer av länkar spåras inte automatiskt:
 >
-> * Filnedladdningar som startar automatiskt när en sida läses in
-> * Hämtar utlösaren efter en omdirigering
-> * Högerklicka och välj &#39;Spara mål som..&#39;
-> * Länkar som använder JavaScript, till exempel `javascript:openLink()`
+>* Filnedladdningar som startar automatiskt när en sida läses in
+>* Hämtar utlösaren efter en omdirigering
+>* Högerklicka och välj &#39;Spara mål som..&#39;
+>* Länkar som använder JavaScript, till exempel `javascript:openLink()`
 
 >
-> 
-För dessa hämtningstyper kan du anropa metoden [`tl()`](../functions/tl-method.md) manuellt.
+>För dessa hämtningstyper kan du anropa metoden [`tl()`](../functions/tl-method.md) manuellt.
 
 Om en klickad länk matchar både villkoren för avslutningslänk och nedladdningslänk får nedladdningslänkstypen prioritet.
 
