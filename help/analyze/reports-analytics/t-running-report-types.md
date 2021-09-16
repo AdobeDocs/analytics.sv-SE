@@ -2,12 +2,12 @@
 description: Steg för att köra de olika rapporttyperna.
 title: Köra olika rapporttyper
 uuid: f59ab2a1-e916-46e8-bb5b-e6361ba00dda
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 2e8cac1b-d133-4095-b5db-886ce0566b82
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: d6430845f30a5b14c29c3c4111bf9c60a69eeea4
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1237'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Beskriver hur du visar och tolkar realtidsrapporter.
 
 Realtidsrapportering innehåller två huvudrapporter - en översiktsrapport och en detaljrapport. De består av ett antal rapporter.
 
-Information om hur du konfigurerar realtidsrapporter finns i [referenshandboken för analyser](https://experienceleague.adobe.com/docs/analytics/landing/home.html#RealTime_Reports_Configuration).
+Mer information finns i [Översikt över realtidsrapportering](/help/components/c-real-time-reporting/realtime.md).
 
 1. Ta en titt på **[!UICONTROL Overview]**-rapporten och dess komponenter:  ![](assets/rtr_overview_report.png)
 
@@ -145,7 +145,7 @@ Information om hur du konfigurerar realtidsrapporter finns i [referenshandboken 
    </tr> 
    </table>
 
-1. Klicka på ett listobjekt i den primära rapporten för att starta vyn **[!UICONTROL Details]** för det listobjektet:  ![](assets/rtr_detail_report.png)
+2. Klicka på ett listobjekt i den primära rapporten för att starta vyn **[!UICONTROL Details]** för det listobjektet:  ![](assets/rtr_detail_report.png)
 
    | **Artikeltrendrapport** | Visar trendlinjen för objektet som markerades i översiktsrapporten under de senaste N minuterna. N kan konfigureras via tidsintervallväljaren. |
    |---|---|
