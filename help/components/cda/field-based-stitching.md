@@ -2,16 +2,16 @@
 title: Fältbaserad stygn
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med fältbaserad sammanfogning.
 exl-id: 81f2768c-53c2-40b4-8d3b-8d3b94cd7318
-source-git-commit: 71148b13e3fb72dfe09f5f25f11d5e12f30e0bc0
+source-git-commit: 5cd38f698370d31aaf954e24cdee4cea3ecd171c
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 # Fältbaserad stygn
 
-Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data. Den här metoden är beroende av en Analytics-variabel, till exempel en [prop](/help/implement/vars/page-vars/prop.md) eller [eVar](/help/implement/vars/page-vars/evar.md), som innehåller en personidentifierare. Den använder den variabeln som bas för att länka samman enheter.
+Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data. Den här metoden är beroende av en Analytics-variabel, till exempel en [prop](/help/implement/vars/page-vars/prop.md) eller [eVar](/help/implement/vars/page-vars/evar.md), som innehåller en personidentifierare. Den använder den variabeln som bas för att länka samman enheter. Adobe rekommenderar detta sammanfogningsalternativ för större genomskinlighet och mer förutsägbarhet när det gäller besökarspårning.
 
 ## Förutsättningar som är specifika för fältbaserad sammanfogning
 

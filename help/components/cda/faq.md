@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
-source-git-commit: 966e013cb6119696cbd058368c90f2bbef0bc9ae
+source-git-commit: 080c5e35e7ffd253ac07e1158fb7c4bede238199
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Du kan använda en [!UICONTROL Flow]-visualisering med dimensionen Mobilenhetsty
 3. Klicka på fliken Komponenter till vänster och dra dimensionen &quot;Mobilenhetstyp&quot; till mittplatsen med etiketten &quot;Dimension eller Artikel&quot;.
 4. Denna flödesrapport är interaktiv. Klicka på något av värdena för att utöka flödena till efterföljande eller föregående sidor. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
 
-## Kan jag se hur människor rör sig mellan olika användarupplevelser (t.ex. datorwebbläsare jämfört med mobilwebbläsare jämfört med mobilapp)?
+## Kan jag se hur människor rör sig mellan olika användarupplevelser (till exempel webbläsare på stationära datorer jämfört med mobilwebbläsare jämfört med mobilapp)?
 
-Om du använder mobilenhetstyp enligt bilden ovan kan du se hur människor rör sig mellan olika typer av mobila enheter och typer av stationära enheter. Du kanske vill skilja datorwebbläsare från mobilwebbläsare. Ett sätt att göra detta är att skapa en eVar som registrerar om upplevelsen inträffade i en datorwebbläsare, mobilwebbläsare eller mobilapp. Skapa sedan ett flödesdiagram enligt beskrivningen ovan med eVar &quot;experience&quot; i stället för dimensionen Mobile Device Type. Detta ger en något annorlunda vy över beteendet mellan olika enheter.
+I exemplet med mobilenhetstyp ovan kan du se hur människor rör sig mellan olika typer av mobila enheter och typer av stationära enheter. Du kan dock inte skilja datorwebbläsare från mobilwebbläsare. Om du vill ha den här informationen kan du skapa en anpassad variabel (till exempel ett utkast eller en eVar) som registrerar om upplevelsen inträffar i en datorwebbläsare, mobilwebbläsare eller mobilapp. Du kan sedan skapa ett flödesdiagram enligt beskrivningen ovan med den anpassade variabeln i stället för mobilenhetstypen. Den här metoden ger en något annorlunda vy över beteendet mellan olika enheter.
 
 ## Hur långt bak stygger CDA besökare?
 
@@ -53,7 +53,7 @@ Kunder som redan använder ett anpassat besökar-ID kan uppgradera till CDA utan
 I vissa situationer är det möjligt att flera personer loggar in från samma enhet. Exempel är en delad enhet hemma, delade datorer i ett bibliotek eller en kioskdator i ett butiksuttag.
 
 * **Om du använder ett enhetsdiagram** är möjligheten att hantera delade enheter begränsad. Enhetsdiagrammet använder en algoritm för att fastställa ägarskap för ett kluster och kan ändras varje gång klustret publiceras. Användare av den delade enheten är beroende av vilket kluster de tillhör.
-* **Om du använder fältbaserad sammanfogning** åsidosätter det utkast eller den eVar du väljer för att hjälpa till att identifiera inloggade användare andra identifierare. Delade enheter betraktas som separata personer, även om de kommer från samma enhet.
+* **Om du använder fältbaserad sammanfogning** åsidosätter det utkast eller den eVar som du väljer för att hjälpa till att identifiera inloggade användare andra identifierare. Delade enheter betraktas som separata personer, även om de kommer från samma enhet.
 
 ## Hur hanterar CDA situationer där en person har MÅNGA enheter/ECID:n?
 
@@ -64,11 +64,16 @@ I vissa fall kan en enskild användare associera med ett stort antal ECID. Detta
 
 ## Vad är skillnaden mellan personmåttet i CDA och det unika besökarmåttet utanför CDA?
 
-Måttet [Personer](/help/components/metrics/people.md) liknar måttet [Unika besökare](/help/components/metrics/unique-visitors.md) eftersom det rapporterar om antalet unika personer. Men när ni använder enhetsövergripande analys kombineras unika besökare när de annars registreras som två separata unika besökare utanför CDA. Måttet Personer ersätter måttet Unika besökare när Enhetsanalys är aktiverat. Det finns ett nytt mätvärde, [Unika enheter](/help/components/metrics/unique-devices.md), som är ungefär lika med Unika besökare utanför Enhetsanalys.
+Både [Personer](/help/components/metrics/people.md) och [Unika besökare](/help/components/metrics/unique-visitors.md)-mätvärden syftar till att räkna olika besökare (individer). Tänk dock på möjligheten att två olika enheter kan tillhöra samma person. CDA mappar de två enheterna till samma person, medan de två enheterna registreras som två separata &#39;Unika besökare&#39; utanför CDA.
 
 ## Vad är skillnaden mellan måttet &#39;Unika enheter&#39; i CDA och mätvärdet &#39;Unika besökare&#39; utanför CDA?
 
-Dessa två mätvärden är ungefär likvärdiga.
+Dessa två mätvärden är ungefär likvärdiga. Skillnader mellan de två måtten uppstår när:
+
+* En delad enhet mappar till flera personer. I det här scenariot räknas en unik besökare, medan flera unika enheter räknas.
+* En enhet har både icke-sammansatt och sammansatt trafik från samma besökare. En webbläsare genererade till exempel identifierad sammanfogad trafik + historik anonym trafik som inte sammanfogats. I det här fallet räknas 1 unik besökare, medan 2 unika enheter räknas.
+
+Se [Unika enheter](/help/components/metrics/unique-devices.md) för fler exempel och mer information om hur det fungerar.
 
 ## Kan jag inkludera CDA-värden med API:t 2.0?
 
@@ -93,9 +98,9 @@ Båda dessa identifierare beräknas av Adobe när rapporten körs, och kallas ä
 
 Du kan behöva byta från enhetsdiagram till fältbaserad sammanfogning eller vice versa via kundtjänst. Det kan dock ta några veckor eller mer att slutföra en sådan växling och *historiska sammanfogade data från den föregående metoden går förlorade.*
 
-## Hur hanterar Adobe unika gränser för en eVar som används vid fältbaserad sammanfogning?
+## Hur hanterar Adobe unika gränser för ett propp eller en eVar som används vid fältbaserad sammanfogning?
 
-CDA hämtar dimensionsobjekt för eVar innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot försökte använda det proffset/eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(Låg trafik)](/help/technotes/low-traffic.md).
+CDA hämtar identifierarvariabeldimensionsobjekten innan de optimeras för rapportering. Ni behöver inte bekymra er om unika gränser för CDA. Om du däremot försökte använda det utkastet eller den eVar i ett Workspace-projekt kan du fortfarande se dimensionsobjektet [(Låg trafik)](/help/technotes/low-traffic.md).
 
 ## Hur många av mitt företags rapportsviter kan aktiveras för CDA?
 
@@ -119,6 +124,12 @@ Om kunden uppgraderar från Ultimate har de inte längre tillgång till sammansa
 
 CDA använder en komplex parallell bearbetningsprocess, med flera beroende komponenter. Ett datamatchningsfel på ungefär 1 % för det totala antalet träffar mellan den ursprungliga rapportsviten och den virtuella CDA-rapportsviten förväntas. Det har minimal inverkan på funktionerna för olika enheter.
 
-## Varför inflateras mätvärdet&quot;Identified People&quot;?
+## Varför inflateras mätvärdet &#39;Identified People&#39;?
 
-Om antalet är något högre än förväntat kan ett eVar tillhöra mer än en identifierad person på grund av [hash-kollisioner](/help/implement/validate/hash-collisions.md). Om antalet är mycket högre än förväntat kan du kontakta kundtjänst för ytterligare felsökningsåtgärder.
+Antalet identifierade personer kan vara något högre om ID-värdet för prop/eVar körs i en [hash-kollision](/help/implement/validate/hash-collisions.md).
+
+Antalet identifierade personer kan vara betydligt högre om identifierarprop/eVar är skiftlägeskänsligt. Till exempel ska `bob` och `Bob` vara samma person, men skiftlägeskänslighet tvingar dessa två värden att vara olika.
+
+## Varför ser jag värden när jag visar identifieraren prop/eVar med mätvärdet &#39;Unidentified People&#39;?
+
+Detta inträffar vanligtvis när en besökare genererar både autentiserade och oautentiserade träffar i rapporteringsfönstret och [Replay](replay.md) inte har körts än. Innan den spelas upp tillhör besökaren både Oidentifierad och Identifierad i dimensionen [Identifierad status](/help/components/dimensions/identified-state.md), vilket gör att vissa besökare attribuerar oidentifierade träffar till en identifierare. Besökarna är kvar i det här läget tills repriseringen körs (varje dag eller varje vecka, beroende på hur din organisation konfigurerar CDA). Om du bara kör rapporter på data som har spelats upp efter uppspelning minimeras detta.

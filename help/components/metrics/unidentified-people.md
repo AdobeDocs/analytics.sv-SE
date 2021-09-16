@@ -1,17 +1,17 @@
 ---
 title: Oidentifierade personer
-description: Antalet personer som inte kunde identifieras med enhetsövergripande analys.
-source-git-commit: a3a30a4b7b7f9b4fa21af0b6f59f9648dd27cd0b
+description: Antalet besökare som inte kunde identifieras med enhetsövergripande analys.
+source-git-commit: 0e3ebcb7a28623c12876391e2204afa43e341d9c
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
 
 # Oidentifierade personer
 
-Måttet Oidentifierade personer är ett [korsenhetsanalys](../cda/overview.md)-mått som räknar antalet personer som CDA inte kunde identifiera.
+Måttet &#39;Ej identifierade personer&#39; är en [korsenhetsanalys](../cda/overview.md) som räknar antalet besökare som CDA inte kunde identifiera.
 
 ## Hur det här måttet beräknas
 
-Innehåll kommer snart!
+Om en besökare fortfarande är okänd för sammanfogningstjänsten (det kommer träffar från en enhet som inte kan tillskrivas en viss person) ökar mätvärdena.

@@ -2,7 +2,7 @@
 title: Besökare med Experience Cloud ID
 description: Antalet unika besökare som använder Adobe Experience Cloud ID-tjänsten.
 exl-id: 16c170d0-3546-4e0a-8f3c-c141b8a0e4fe
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: d16128491569b93f4c470e21b84742cda13b3d2f
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # Besökare med Experience Cloud ID
 
-Mätvärdet &quot;Besökare med Experience Cloud ID&quot; visar antalet unika besökare som identifieras av Adobe med hjälp av [Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Den här dimensionen är användbar vid jämförelse med [unika besökare](unique-visitors.md)-måttet för att säkerställa att de flesta besökare på webbplatsen använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
+Mätvärdet &quot;Besökare med Experience Cloud ID&quot; visar antalet unika besökare som identifieras av Adobe med hjälp av [Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html). Det här måttet är användbart för att jämföra med [Unika besökare](unique-visitors.md)-måttet för att säkerställa att de flesta besökare på webbplatsen använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
 
 >[!NOTE]
 >

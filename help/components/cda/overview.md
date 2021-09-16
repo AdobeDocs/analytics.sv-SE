@@ -2,9 +2,9 @@
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
-source-git-commit: 844df9d632f9e9cceb6c882f81360a83891e2143
+source-git-commit: 13428ba0d149482a099fbdaa74890b59dd0891eb
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,8 @@ ht-degree: 0%
 
 Enhetsövergripande analys är en funktion som omvandlar analyser från enhetscentrerad vy till personcentrerad vy. Därför kan analytiker förstå användarbeteende som fungerar på olika webbläsare, enheter och appar. Adobe stöder två övergripande arbetsflöden för att länka samman enhetsdata:
 
-* [**Fältbaserad stygn**](field-based-stitching.md): Gör att du kan välja en Analytics-variabel som bas för sammanfogning mellan enheter i en virtuell rapportserie. Använder deterministisk matchning för att länka samman enheter. Adobe rekommenderar att du använder fältbaserad utjämning för de flesta deterministiska matchningsfall.
+* [**Fältbaserad stygn**](field-based-stitching.md): Rekommenderas för sammanfogning eftersom endast deterministisk matchning används för att länka samman enheter.
+Gör att du kan välja en Analytics-variabel som bas för sammanfogning mellan enheter i en virtuell rapportserie.
 * [**Enhetsdiagram**](device-graph.md): CDA kommunicerar med ett enhetsdiagram för att knyta ihop enheter. I co-op-diagrammet används både deterministisk och sannolik matchning.
 
 >[!NOTE]
@@ -56,3 +57,5 @@ Enhetsövergripande analys är en banbrytande och robust funktion, men har begr�
 * CDA är för närvarande inte kompatibelt med Adobe Analytics [API för datareparation](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/data-repair.md)
 * Historiska data i den virtuella rapportsviten ändras baserat på hur Adobe identifierar och syr ihop enheter. Data i källrapportsviten ändras inte.
 * Stitchade data har en fördröjning på 8 till 12 timmar.
+* Mappningshistorikdata för en viss enhet lagras i upp till ett år.
+* Om en enhet når ett mycket stort antal mappningshistorikposter inom ett år trunkeras mappningshistoriken. Den exakta gränsen beror på vilket sömnalternativ som används.
