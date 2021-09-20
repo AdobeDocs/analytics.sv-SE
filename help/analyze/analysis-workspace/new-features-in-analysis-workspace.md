@@ -2,12 +2,12 @@
 description: Nya funktioner i Analysis Workspace.
 keywords: Analysis Workspace
 title: Nyheter i Analysis Workspace
-feature: Grundläggande om arbetsytan
+feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
+source-git-commit: 174e81cc94fb67f391cbf6bff4c1b071527b5ce2
 workflow-type: tm+mt
-source-wordcount: '8176'
+source-wordcount: '8174'
 ht-degree: 88%
 
 ---
@@ -359,7 +359,7 @@ Nya funktioner och förbättringar som släpptes 10 maj 2018.
    <td colname="col2"> <p>Vi visar dagens tips (tillsammans med en kort videofilm) längst ned till höger i gränssnittet. De här tipsen bekantar dig med en mängd olika funktioner i Analysis Workspace. Du kan när som helst stänga de här tipsen eller öppna dem via <span class="uicontrol">Hjälp</span> &gt; <span class="uicontrol">Tips</span>. </p> <p><img  src="assets/tip_of_day.png" width="300px" id="image_44A2AA712E4242EC92A180380E66AD7D" /> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segmentmallar</a> och <a href="/help/analyze/analysis-workspace/components/apply-create-metrics.md"  >mallar för beräknade värden</a></b> </p> </td> 
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md"  > Segmentmallar</a> och <a href="/help/analyze/analysis-workspace/components/apply-create-metrics.md"  >mallar för beräknade värden</a></b> </p> </td> 
    <td colname="col2"> <p>I den vänstra listen visas nu segmentmallar och mallar för beräknade värden. </p> </td> 
   </tr> 
   <tr> 
@@ -605,7 +605,7 @@ Nya funktioner som släpptes 26 oktober 2017.
    <td colname="col2"> <p>Nu kan du enkelt växla mellan olika tidsnivåer när måttet i datakällan är ett tidsmått. Du växlar via en listruta i visualiseringsinställningarna. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Fullständiga mått och händelser i släppzoner för segment </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md"  > Fullständiga mått och händelser i släppzoner för segment </a> </p> </td> 
    <td colname="col2"> <p>Tidigare kunde du bara släppa måttobjekt, datumintervall och segment i släppzoner för segment. Nu kan du släppa ett komplett mått eller en komplett händelse i en släppzon för segment. I båda fallen skapas träffsegmentet ”finns” av Analysis Workspace. </p> <p>Exempel: ”Träff där evariabel1 finns” eller ”Träff där händelse1 finns”. </p> <p>Obs! Du kan inte släppa beräknade värden i en segmentzon. Endast de mått/mätvärden som du kan bygga segment med kan användas med segmentzoner. </p> </td> 
   </tr> 
   <tr> 
@@ -935,7 +935,7 @@ Ny funktion som släpptes 19 januari 2017:
    <td colname="col2"> <p>Stöd för bortfallsvisualisering i CSV-format har lagts till. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Datumintervall i segment </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md"  > Datumintervall i segment </a> </p> </td> 
    <td colname="col2"> <p>Du kan släppa datumintervall i släppzoner för segment (till exempel släppzoner för panelsegment, släppzoner för bortfallsvisualisering för segment och så vidare). Datumintervallen konverteras automatiskt till segment. Datumintervallen kan vara anpassade och icke-anpassade, men inte detaljerade med timme/dag/vecka/månad/kvartal/år. </p> </td> 
   </tr> 
   <tr> 
@@ -1058,7 +1058,7 @@ Nya funktioner som släpptes 16 juni 2016:
 * [Trendmarkering](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A) (linjediagram) för en rankad tabell är nu länkat.
 * [Ikonen Skapa visualisering](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md): Om du klickar på den här ikonen får du en smart gissning vid nästa åtgärd (till exempel stapel- eller venndiagram).
 * Utökade funktioner för [manuella rader](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-* Släppzon för [Lägg till segment](/help/analyze/analysis-workspace/components/t-freeform-project-segment.md)
+* Släppzon för [Lägg till segment](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md)
 * Mindre uppdateringar:
 
    * Möjlighet att ta bort alla visualiseringar på en panel och alla paneler i ett projekt. (Tidigare var du tvungen att behålla minst en visualisering eller panel.)
