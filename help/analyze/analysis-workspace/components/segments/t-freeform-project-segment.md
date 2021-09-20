@@ -5,24 +5,42 @@ uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 feature: Workspace Basics
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 8cd5d5ec1525e29779a13330dfeaeae120dfdd56
+source-git-commit: 0aee84be83b2e5916ecf6ffdd4171ed4ef612b5b
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 1%
+source-wordcount: '498'
+ht-degree: 2%
 
 ---
 
 # Segment {#topic_DC2917A2E8FD4B62816572F3F6EDA58A}
 
-Du kan skapa
+Du kan skapa olika typer av segment, beroende på hur komplexa de behöver vara, om de bara ska gälla för det här projektet osv. Här följer en sammanfattning av segmenttyper:
 
-## Segmentspår {#section_3B07D458C43E42FDAF242BB3ACAF3E90}
+| Segmenttyp | Var skapades? | Tillämpligt var? | Flera behållare? | Användargränssnittsfärg |
+| --- | --- | --- | --- |
+| Komponentlistsegment | [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | För alla projekt, från vänster järnväg | Ja | Blå |
+| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projektnivå | Nej | Grå? |
+| Ad hoc-segment: | Se nedan | Endast projektnivå | Nej | ? |
+| - Ad hoc Workspace-projektsegment | Dra och släpp i segmentet - i ett nytt projekt |  |  |  |
+| - Beräknat metrisk baserat segment | Bygg beräknade mätvärden |  |  |  |
+| - VRS-baserat segment | Virtuell Report Suite Builder |  |  |  |
+| - Segmentbyggaren &quot;apply&quot; &quot; | Segmentbyggare |  |  |  |
+
+Mer information om segmentering i Adobe Analytics finns [här](/help/components/segmentation/seg-overview.md).
+
+## Segment i komponentlistan i den vänstra listen {#section_3B07D458C43E42FDAF242BB3ACAF3E90}
 
 Segmentspåret under menyn Komponenter visar både segment och segmentmallar, enligt följande ikoner:
 
 ![](assets/segment_icons.png)
 
 [Använda segment i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-in-analysis-workspace.html) (6:46)
+
+## Ad hoc-segment (tillfälliga) i Analysis Workspace
+
+Här är en video om ad hoc-segment:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 ## Skapa segment {#section_693CFADA668B4542B982446C2B4CF0F5}
 
@@ -62,8 +80,4 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Curate and Share](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6) kan du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
 | Använd segment som Dimensioner | Video: [Använda segment som Dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=en) |
 
-## Ad hoc-segment (tillfälliga) i Analysis Workspace
 
-Här är en video om ad hoc-segment:
-
->[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
