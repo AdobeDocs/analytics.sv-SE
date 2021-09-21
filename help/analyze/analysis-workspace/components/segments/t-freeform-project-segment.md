@@ -5,9 +5,9 @@ uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 feature: Workspace Basics
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 0aee84be83b2e5916ecf6ffdd4171ed4ef612b5b
+source-git-commit: 713b6b892e420dbae4ce4c41fd6400e199ed0633
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '494'
 ht-degree: 2%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 2%
 
 Du kan skapa olika typer av segment, beroende på hur komplexa de behöver vara, om de bara ska gälla för det här projektet osv. Här följer en sammanfattning av segmenttyper:
 
-| Segmenttyp | Var skapades? | Tillämpligt var? | Flera behållare? | Användargränssnittsfärg |
-| --- | --- | --- | --- |
-| Komponentlistsegment | [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | För alla projekt, från vänster järnväg | Ja | Blå |
-| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projektnivå | Nej | Grå? |
-| Ad hoc-segment: | Se nedan | Endast projektnivå | Nej | ? |
-| - Ad hoc Workspace-projektsegment | Dra och släpp i segmentet - i ett nytt projekt |  |  |  |
-| - Beräknat metrisk baserat segment | Bygg beräknade mätvärden |  |  |  |
-| - VRS-baserat segment | Virtuell Report Suite Builder |  |  |  |
-| - Segmentbyggaren &quot;apply&quot; &quot; | Segmentbyggare |  |  |  |
+| Segmenttyp | Skapad var? | Tillämpligt var? | Flera behållare? |
+| --- | --- | --- | 
+| Komponentlistsegment | [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla projekt, i den vänstra listen | Ja | Blå |
+| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projektnivå | Nej |
+| Ad hoc-segment: | Se nedan | Endast projektnivå | Nej |
+| - Ad hoc Workspace-projektsegment | Dra och släpp i segmentet - i ett nytt projekt |  |  |
+| - Beräknat metrisk baserat segment | Bygg beräknade mätvärden |  |  |
+| - VRS-baserat segment | Virtuell Report Suite Builder |  |  |
+| - Segmentbyggaren &quot;apply&quot; &quot; | Segmentbyggare |  |  |
 
 Mer information om segmentering i Adobe Analytics finns [här](/help/components/segmentation/seg-overview.md).
 

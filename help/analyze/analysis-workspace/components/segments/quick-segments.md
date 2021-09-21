@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8cd5d5ec1525e29779a13330dfeaeae120dfdd56
+source-git-commit: 713b6b892e420dbae4ce4c41fd6400e199ed0633
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -39,3 +39,11 @@ Du kan skapa snabbsegment i ett projekt för att kringgå komplexiteten i den fu
 
    Här är ett exempel på ett segment som kombinerar mått och mätvärden:
 
+   ![](assets/quick-seg2.png)
+
+1. Klicka på **[!UICONTROL Apply]** om du vill använda det här segmentet på panelen.
+Segmentet visas överst. Observera dess grå stapel, i motsats till det blå stapeln för segment på komponentnivå till vänster.
+
+   ![](assets/quick-seg3.png)
+
+1. I snabbsegmentet
