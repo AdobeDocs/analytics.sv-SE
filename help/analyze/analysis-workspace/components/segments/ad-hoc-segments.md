@@ -3,10 +3,10 @@ description: Använd ad hoc-segment i Analysis Workspace.
 title: Ad hoc-segment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 9622131ebd4a856cb7756e6844d7d7979029e70e
+source-git-commit: 27c9a3f8f8faeda934827eac6797dd39ba7dd2ca
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,8 @@ Här följer ett exempel på hur du skapar ett segment för den hänvisande dom�
 
    Panelen tillämpar automatiskt det här segmentet och du ser resultatet direkt.
 
-1. Till
+1. Lägg till upp till tre ad hoc-segment på en panel.
+1. Om du bestämmer dig för att du vill spara det här segmentet läser du avsnittet&quot;Gör ad hoc-segment offentliga&quot;.
 
 Tänk på följande:
 
@@ -46,3 +47,4 @@ Du kan välja att göra dessa segment offentliga (globala) genom att följa dess
 1. Klicka på **[!UICONTROL Make public]** på informationspanelen som visas.
 
    ![](assets/segment-info.png)
+
