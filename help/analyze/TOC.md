@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 28e8ad7a71cbd8f034fa5fc8ec39a6db537da6f3
+source-git-commit: 366e595d38124a767e2c0d0e4ce4bd8cf9683707
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '991'
 ht-degree: 85%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 85%
       + Segment {#segments}
          + [Skapa segment](analysis-workspace/components/segments/t-freeform-project-segment.md)
          + [Snabbsegment](analysis-workspace/components/segments/quick-segments.md)
+         + [Ad hoc-segment](analysis-workspace/components/segments/ad-hoc-segments.md)
       + Kalender och datumintervall {#calendar-date-ranges}
          + [Översikt över kalender- och datumintervall](analysis-workspace/components/calendar-date-ranges/calendar.md)
          + [Skapa anpassade datumintervall](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)

@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 713b6b892e420dbae4ce4c41fd6400e199ed0633
+source-git-commit: 9622131ebd4a856cb7756e6844d7d7979029e70e
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,22 @@ Du kan skapa snabbsegment i ett projekt för att kringgå komplexiteten i den fu
    ![](assets/quick-seg2.png)
 
 1. Klicka på **[!UICONTROL Apply]** om du vill använda det här segmentet på panelen.
-Segmentet visas överst. Observera dess grå stapel, i motsats till det blå stapeln för segment på komponentnivå till vänster.
+Segmentet visas överst. Lägg märke till dess grå sidospalt, till skillnad från det blå fältet för segment på komponentnivå till vänster.
 
    ![](assets/quick-seg3.png)
 
-1. I snabbsegmentet
+## Göra snabba segment offentliga
+
+Du kan välja att göra dessa segment offentliga (globala) genom att följa dessa steg:
+
+1. Håll pekaren över snabbsegmentet och klicka på ikonen&quot;i&quot;.
+1. Klicka på **[!UICONTROL Open builder]**.
+Då öppnas segmentet i segmentbyggaren.
+   >[!NOTE]
+   >När du har tillämpat eller sparat segmentet i segmentbyggaren kan du inte längre redigera det i snabbsegmentbyggaren.
+1. Klicka på **[!UICONTROL OK]**.
+1. Klicka på **[!UICONTROL Apply]** i Segment Builder.
+1. Gå tillbaka till Workspace och se hur segmentet nu har en blå sidospalt som signalerar att det är en del av komponentbiblioteket.
+
+   ![](assets/quick-seg4.png)
+
