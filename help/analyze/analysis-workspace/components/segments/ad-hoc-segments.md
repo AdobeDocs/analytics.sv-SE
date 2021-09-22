@@ -3,10 +3,10 @@ description: Använd ad hoc-segment i Analysis Workspace.
 title: Ad hoc-segment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 27c9a3f8f8faeda934827eac6797dd39ba7dd2ca
+source-git-commit: 31507092e659fa08a50e00f91bd36411e354cb21
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,9 @@ Här är en video om hur du skapar ad hoc-segment:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
-Du kan skapa ad hoc-segment om du snabbt vill utforska hur ett segment kan påverka projektet, utan att gå till segmentbyggaren. Tänk på dessa segment som tillfälliga segment på projektnivå. De är vanligtvis inte en del av ditt segment som&quot;bibliotek&quot;, som komponentsegment i den vänstra listen. Du kan dock göra dem offentliga, så som visas nedan.
+Du kan skapa ad hoc-segment om du snabbt vill utforska hur ett segment kan påverka projektet, utan att gå till segmentbyggaren. Tänk på dessa segment som tillfälliga segment på projektnivå. De är vanligtvis inte en del av ditt segment som&quot;bibliotek&quot;, som komponentsegment i den vänstra listen. Du kan dock spara dem enligt nedan.
+
+En jämförelse av vad ad hoc-segment kan göra jämfört med helformaterade segment på komponentnivå finns [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
 
 1. Släpp en komponenttyp (dimension, dimensionsobjekt, händelse, mått, segment, segmentmall, datumintervall) i segmentsläppzonen längst upp på panelen. Komponenttyper konverteras automatiskt till segment.
 Här följer ett exempel på hur du skapar ett segment för den hänvisande domänen för Twitter:
@@ -26,8 +28,8 @@ Här följer ett exempel på hur du skapar ett segment för den hänvisande dom�
 
    Panelen tillämpar automatiskt det här segmentet och du ser resultatet direkt.
 
-1. Lägg till upp till tre ad hoc-segment på en panel.
-1. Om du bestämmer dig för att du vill spara det här segmentet läser du avsnittet&quot;Gör ad hoc-segment offentliga&quot;.
+1. Du kan lägga till ett obegränsat antal komponenter på en panel.
+1. Om du bestämmer dig för att du vill spara det här segmentet, se avsnittet nedan.
 
 Tänk på följande:
 
@@ -39,12 +41,12 @@ Tänk på följande:
 >
 >Segment som skapas på det här sättet är interna för projektet.
 
-## Göra ad hoc-segment offentliga {#ad-hoc-public}
+## Spara ad hoc-segment {#ad-hoc-save}
 
-Du kan välja att göra dessa segment offentliga (globala) genom att följa dessa steg:
+Du kan välja att spara dessa segment genom att följa dessa steg:
 
 1. Håll pekaren över segmentet i släppzonen och klicka på ikonen i.
-1. Klicka på **[!UICONTROL Make public]** på informationspanelen som visas.
+1. Klicka på **[!UICONTROL Save]** på informationspanelen som visas.
 
    ![](assets/segment-info.png)
 

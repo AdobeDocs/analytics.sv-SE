@@ -5,12 +5,13 @@ uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 feature: Workspace Basics
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 65c955e25714591b8c4b2359969717d13626b322
+source-git-commit: 31507092e659fa08a50e00f91bd36411e354cb21
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
+
 
 # Segment {#topic_DC2917A2E8FD4B62816572F3F6EDA58A}
 
@@ -18,14 +19,16 @@ Du kan skapa olika typer av segment i Workspace, beroende på hur komplexa de be
 
 | Segmenttyp | Skapad var? | Tillämpligt var? | När ska användas |
 | --- | --- | --- | --- |
-| Komponentlistsegment | [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Global/offentlig | För komplexa segment, sekventiella segment |
-| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Projektnivå, men kan göra offentlig | Flexibilitet och kontroll för att lägga till/redigera regler, namn och flera regler |
+| Komponentlistsegment | Klicka på +, vilket tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla arbetsyteprojekt | För mer komplexa segment, sekventiella segment |
+| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Projektnivå, men du kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
 | Ad hoc-segment: |  |  |  |
-| - Ad hoc Workspace-projektsegment | [Dra och släpp i segmentsläppzonen i ett projekt](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md) | Projektnivå, men kan göra offentlig | Enkelradiga segment som standard |
+| - Ad hoc Workspace-projektsegment | [Dra och släpp i segmentsläppzonen i ett projekt](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md) | Projektnivå, men du kan spara och lägga till i segmentlistan. | Enkelradssegment (ingen gräns) som standard |
 | - Beräknat metrisk baserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
 | - VRS-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i VRS-definitionen |
 
-Mer information om segmentering i Adobe Analytics finns [här](/help/components/segmentation/seg-overview.md).
+Här är en video om hur du använder segment i Analysis Workspace:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23977/?quality=12)
 
 ## Skapa segment {#section_693CFADA668B4542B982446C2B4CF0F5}
 
@@ -37,11 +40,22 @@ Du kan skapa olika typer av segment i Analysis Workspace:
 
 ### Skapa komponentlistsegment {#section_3B07D458C43E42FDAF242BB3ACAF3E90}
 
-Segmentspåret under menyn Komponenter visar både segment och segmentmallar, enligt följande ikoner:
+Segmentspåret under komponentmenyn visas
+* Segment som du eller ditt företag har skapat
+* Segmentmallar, enligt Adobe-ikonen:
 
 ![](assets/segment_icons.png)
 
-[Använda segment i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-in-analysis-workspace.html) (6:46)
+Om du vill skapa ett segment av den här typen har du två alternativ. Båda tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) i Adobe Analytics.
+
+* Klicka på plustecknet (+) bredvid [!UICONTROL Segments] i den vänstra listen:
+
+![](assets/create-seg.png)
+
+eller
+
+* Gå till [!UICONTROL Components] > [!UICONTROL Segments] och klicka sedan på [!UICONTROL + Add].
+
 
 ### Andra metoder för att använda segment {#section_10FF2E309BA84618990EA5B473015894}
 
@@ -58,7 +72,11 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 
 ## Segment IQ
 
-Segmentanalys omfattar följande funktioner:
+Segmentanalys (även kallad segmentjämförelse) omfattar följande funktioner:
 
 * [Segmentjämförelsepanel:](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md) Kärnfunktionen i segmentanalys. Dra två segment till panelen och visa en omfattande rapport som visar statistiskt signifikanta skillnader och överlappning mellan de två målgrupperna.
 * [Jämföra segment i utfall:](/help/analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) Se hur olika målgrupper skiljer sig från varandra i samband med en utfallsvisualisering.
+
+## Mer info
+
+Mer information om segmentering i Adobe Analytics finns [här](/help/components/segmentation/seg-overview.md).
