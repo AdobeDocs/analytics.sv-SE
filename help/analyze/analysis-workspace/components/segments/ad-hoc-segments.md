@@ -3,23 +3,23 @@ description: Använd ad hoc-segment i Analysis Workspace.
 title: Ad hoc-segment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 31507092e659fa08a50e00f91bd36411e354cb21
+source-git-commit: f3185f1ee341348fb7bdbaab8b68d421e7c79076
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 1%
+source-wordcount: '368'
+ht-degree: 0%
 
 ---
 
 
-# Ad hoc-segment
+# Ad hoc-projektsegment
 
-Här är en video om hur du skapar ad hoc-segment:
+Här är en video om hur du skapar ad hoc-projektsegment:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
-Du kan skapa ad hoc-segment om du snabbt vill utforska hur ett segment kan påverka projektet, utan att gå till segmentbyggaren. Tänk på dessa segment som tillfälliga segment på projektnivå. De är vanligtvis inte en del av ditt segment som&quot;bibliotek&quot;, som komponentsegment i den vänstra listen. Du kan dock spara dem enligt nedan.
+Du kan skapa ad hoc-projektsegment om du snabbt vill utforska hur ett segment kan påverka projektet, utan att gå till segmentbyggaren. Tänk på dessa segment som tillfälliga segment på projektnivå. De är vanligtvis inte en del av ditt segment som&quot;bibliotek&quot;, som komponentsegment i den vänstra listen. Du kan dock spara dem enligt nedan.
 
-En jämförelse av vad ad hoc-segment kan göra jämfört med helformaterade segment på komponentnivå finns [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
+En jämförelse av vad ad hoc-projektsegment kan göra jämfört med helformaterade segment på komponentnivå finns [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
 
 1. Släpp en komponenttyp (dimension, dimensionsobjekt, händelse, mått, segment, segmentmall, datumintervall) i segmentsläppzonen längst upp på panelen. Komponenttyper konverteras automatiskt till segment.
 Här följer ett exempel på hur du skapar ett segment för den hänvisande domänen för Twitter:
@@ -41,7 +41,7 @@ Tänk på följande:
 >
 >Segment som skapas på det här sättet är interna för projektet.
 
-## Spara ad hoc-segment {#ad-hoc-save}
+## Spara tillfälliga projektsegment {#ad-hoc-save}
 
 Du kan välja att spara dessa segment genom att följa dessa steg:
 
@@ -50,3 +50,6 @@ Du kan välja att spara dessa segment genom att följa dessa steg:
 
    ![](assets/segment-info.png)
 
+## Vad är segment med endast projekt?
+
+Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i segmentbyggaren visas rutan för endast projekt. Om de använder ett snabbsegment i byggaren men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i QS-byggaren. Om de markerar kryssrutan och SPARA är den nu ett komponentlistsegment.

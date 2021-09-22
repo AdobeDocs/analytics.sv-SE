@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 31507092e659fa08a50e00f91bd36411e354cb21
+source-git-commit: f3185f1ee341348fb7bdbaab8b68d421e7c79076
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Snabbsegment
 
-Du kan skapa snabbsegment i ett projekt för att kringgå komplexiteten i den fullständiga [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md). En jämförelse av vad snabbsegment kan göra jämfört med helformaterade segment på komponentnivå finns [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
+Du kan skapa snabbsegment i ett projekt för att kringgå komplexiteten i den fullständiga [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md). Om du vill jämföra vad snabbsegment kan göra med fullständiga komponentlistesegment går du [hit](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
 
 >[!IMPORTANT]
 > Snabbsegment är för närvarande i begränsad testning och är inte allmänt tillgängliga än.
@@ -56,7 +56,7 @@ Segmentet visas överst. Lägg märke till dess grå sidospalt, till skillnad fr
 Du kan välja att spara snabbsegment genom att följa dessa steg.
 
 >[!IMPORTANT]
->När du har sparat segmentet kan du inte längre redigera det i snabbsegmentbyggaren, utan bara i den vanliga segmentbyggaren.
+>När du har sparat eller använt segmentet kan du inte längre redigera det i snabbsegmentsverktyget, utan bara i den vanliga segmentbyggaren.
 
 1. Håll pekaren över snabbsegmentet och välj ikonen för info (&quot;i&quot;).
 1. Välj **[!UICONTROL Save segment]**
@@ -65,13 +65,11 @@ Du kan välja att spara snabbsegment genom att följa dessa steg.
 
 1. Låt namnet vara som det är eller byt namn på segmentet.
 
-1. Gå tillbaka till Workspace och se hur segmentet nu har en blå sidospalt som signalerar att det är en del av komponentbiblioteket.
+   Gå tillbaka till arbetsytan och se hur segmentet nu har en blå sidospalt. Det innebär att den inte längre kan redigeras/öppnas i snabbsegmentsverktyget. Och genom att spara det blir det en del av komponentlistan.
 
    ![](assets/quick-seg4.png)
 
-## Gör segment tillgängliga för alla projekt
-
-När du har sparat segmentet kan du välja att lägga till det i segmentkomponentlistan och göra det tillgängligt för alla projekt.
+När du har tillämpat segmentet kan du välja att lägga till det i segmentkomponentlistan och göra det tillgängligt för alla projekt.
 
 1. Håll pekaren över det sparade segmentet och välj pennikonen.
 
@@ -82,12 +80,8 @@ När du har sparat segmentet kan du välja att lägga till det i segmentkomponen
 1. Markera kryssrutan bredvid **[!UICONTROL Make this segment available to all your projects and add it to your component list.]**
 1. Klicka på **[!UICONTROL Save]**.
 1. Segmentet visas nu i segmentkomponentlistan för alla dina projekt.
-1. Du kan även [dela segmentet](/help/components/segmentation/segmentation-workflow/t-seg-share.md).
+1. Du kan även [dela segmentet](/help/components/segmentation/segmentation-workflow/t-seg-share.md) med andra personer i organisationen.
 
-## Förvandla ett snabbt segment till ett ad hoc-segment
+## Vad är segment med endast projekt?
 
-1. Håll pekaren över det sparade segmentet och välj pennikonen.
-
-1. Klicka **[!UICONTROL Apply]** högst upp i segmentbyggaren.
-
-Mer information om ad hoc-segment finns [här](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md)
+Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i segmentbyggaren visas rutan för endast projekt. Om de använder ett snabbsegment i byggaren men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i QS-byggaren. Om de markerar kryssrutan och SPARA är den nu ett komponentlistsegment.

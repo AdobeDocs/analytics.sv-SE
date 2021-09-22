@@ -5,9 +5,9 @@ uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 feature: Workspace Basics
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 31507092e659fa08a50e00f91bd36411e354cb21
+source-git-commit: f3185f1ee341348fb7bdbaab8b68d421e7c79076
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
@@ -19,10 +19,10 @@ Du kan skapa olika typer av segment i Workspace, beroende på hur komplexa de be
 
 | Segmenttyp | Skapad var? | Tillämpligt var? | När ska användas |
 | --- | --- | --- | --- |
-| Komponentlistsegment | Klicka på +, vilket tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla arbetsyteprojekt | För mer komplexa segment, sekventiella segment |
-| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Projektnivå, men du kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
+| Segment i komponentlista | Klicka på +, vilket tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla arbetsyteprojekt | För mer komplexa segment, sekventiella segment |
+| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
 | Ad hoc-segment: |  |  |  |
-| - Ad hoc Workspace-projektsegment | [Dra och släpp i segmentsläppzonen i ett projekt](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md) | Projektnivå, men du kan spara och lägga till i segmentlistan. | Enkelradssegment (ingen gräns) som standard |
+| - Ad hoc Workspace-projektsegment | [Dra och släpp i segmentsläppzonen i ett projekt](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Enkelradssegment (ingen gräns) som standard |
 | - Beräknat metrisk baserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
 | - VRS-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i VRS-definitionen |
 
@@ -38,7 +38,7 @@ Du kan skapa olika typer av segment i Analysis Workspace:
 * [Ad hoc-segment](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md)
 * Vanliga segment i komponentlistan som slutar i segmentbiblioteket (se nedan)
 
-### Skapa komponentlistsegment {#section_3B07D458C43E42FDAF242BB3ACAF3E90}
+### Skapa segment för komponentlistor {#section_3B07D458C43E42FDAF242BB3ACAF3E90}
 
 Segmentspåret under komponentmenyn visas
 * Segment som du eller ditt företag har skapat
