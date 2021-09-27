@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 5ac3b11c559b03df2c08efc5a1a64c76ee1cf28e
+source-git-commit: 1cfdb29dcc49c57b23189bf07f55b85e4166fb8d
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '886'
 ht-degree: 1%
 
 ---
@@ -107,4 +107,4 @@ När du har tillämpat segmentet kan du välja att lägga till det i segmentkomp
 
 ## Vad är segment med endast projekt?
 
-Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i Segment Builder visas rutan för endast projekt. Om du använder ett snabbsegment i verktyget men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i snabbsegmentsverktyget. Om du markerar kryssrutan och sparar är det nu ett komponentlistsegment.
+Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i [!UICONTROL Segment Builder] visas rutan för endast projekt. Om du använder ett snabbsegment i byggaren men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i [!UICONTROL Quick Segment Builder]. Om du markerar rutan och klickar på **[!UICONTROL SAVE]** är det nu ett komponentlistsegment.
