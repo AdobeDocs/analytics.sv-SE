@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1cfdb29dcc49c57b23189bf07f55b85e4166fb8d
+source-git-commit: 313b4288774163b681f37da44fe2f3cc99abe28d
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '881'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Segmentet visas överst. Lägg märke till dess blå, randiga sidospalt, till sk
 
 ## Spara snabbsegment
 
-Du kan välja att spara snabbsegment antingen i snabbsegmentsverktyget eller i segmentbyggaren.
+Du kan välja att spara snabbsegment antingen i [!UICONTROL Quick Segment Builder] eller i [!UICONTROL Segment Builder].
 
 >[!IMPORTANT]
 >När du har sparat eller använt segmentet kan du inte längre redigera det i snabbsegmentsverktyget, utan bara i den vanliga segmentbyggaren.
