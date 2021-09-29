@@ -2,9 +2,9 @@
 title: Personer
 description: Antalet unika individer, vanligtvis med flera enheter.
 exl-id: 0136b843-2a1e-44d5-b5a6-e0fb03b7b995
-source-git-commit: 7f9442d6be7930b9e040539dc683c62953aba342
+source-git-commit: 639897682c9a28df7dc642dd7c68ad992fde40a9
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '161'
 ht-degree: 1%
 
 ---
@@ -17,4 +17,4 @@ För medlemmar i [Device Co-op](https://experienceleague.adobe.com/docs/device-c
 
 I en [enhetsanalys](../cda/overview.md) virtuell rapportsvit är personmåttet inte en statistisk härledning. I stället är det summan av individer som identifieras i rapporten plus antalet enheter som inte identifieras som tillhörande en person.
 
-Om en besökare identifieras mitt på besöket kan besökaren räknas som 2 personer tills [Replay](/help/components/cda/replay.md) körs (1 oidentifierad person och 1 identifierad person). Mer information finns i [Unika enheter](unique-devices.md).
+Om en besökare identifieras mitt på besöket kan besökaren räknas som 2 personer (1 oidentifierad person och 1 identifierad person). [Med ](/help/components/cda/replay.md) Uppspelning minskas dubbelräkningen beroende på rapporteringsfönstret, återgivningsfrekvensen och frekvensen för lyckade resultat. Mer information finns i [Unika enheter](unique-devices.md).

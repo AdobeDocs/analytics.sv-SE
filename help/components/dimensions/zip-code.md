@@ -1,14 +1,13 @@
 ---
 title: Postnummer
 description: Besökarens postnummer.
-translation-type: tm+mt
-source-git-commit: 6e7464f07fd95dd1840a2d8baa8337b0d1867d73
+exl-id: 597619f8-a581-4491-beb2-c14b1f7b7bec
+source-git-commit: b8ef31f3fbc51746c8f6b2ee35742a493c3df2b5
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Postnummer
 
@@ -18,10 +17,10 @@ Postnumret anger besökarens postnummer. Du kan använda den här dimensionen om
 
 Denna dimension är unik eftersom den innehåller flera sätt att fylla den med data. Du kan använda ett av dem eller en kombination av båda.
 
-* Ange postnumret direkt med hjälp av `zip` variabeln. eller
+* Ange postnumret direkt med variabeln `zip`; eller
 * Konfigurera den för att dra nytta av data för geosegmentering.
 
-Under [!UICONTROL Zip option] Allmänna kontoinställningar [](/help/admin/admin/general-acct-settings-admin.md) styr du hur du vill fylla i den här dimensionen.
+[!UICONTROL Zip option] under [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) styr hur du vill fylla i den här dimensionen.
 
 >[!IMPORTANT]
 >
@@ -31,7 +30,7 @@ Under [!UICONTROL Zip option] Allmänna kontoinställningar [](/help/admin/admin
 
 Dimensionen innehåller besökarens postnummer.
 
-## Vilka länders postnummer kan du rapportera om i Adobe Analytics?
+## Postnummerländer som stöds
 
 * Öarna
 * Albanien

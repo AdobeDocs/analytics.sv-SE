@@ -2,9 +2,9 @@
 title: Unika enheter
 description: Antalet unika enheter.
 exl-id: fa5c860f-bea7-4d03-9632-fa6e025647bf
-source-git-commit: 407111f6016fe8595f1d5c3464e36dfd4d314630
+source-git-commit: db88bd439c036e97cca641f31f4fc3101a368636
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -29,8 +29,7 @@ Observera att det här måttet inte är lika med [Unika besökare](unique-visito
 
 ![Antal unika enheter](/help/components/metrics/assets/Unique_Devices_Count.png)
 
-Om du visar dessa data i en virtuell CDA-rapportsserie innan [Replay](/help/components/cda/replay.md) skulle visa:
+Om du visar dessa data i en virtuell CDA-rapportsserie före [Replay](/help/components/cda/replay.md) sammanfogar oautentiserade träffar kan följande visas:
 
 * **5 unika enheter**: 1 för oautentiserad Bob + 2 för Bob + 1 för Alice + 1 för Charles
 * **4  [Personer](people.md)**: 1  [Identifierade personer](unidentified-people.md) + 3  [Identifierade personer](identified-people.md).
-

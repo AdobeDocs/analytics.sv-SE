@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
-source-git-commit: 080c5e35e7ffd253ac07e1158fb7c4bede238199
+source-git-commit: 639897682c9a28df7dc642dd7c68ad992fde40a9
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -128,8 +128,8 @@ CDA använder en komplex parallell bearbetningsprocess, med flera beroende kompo
 
 Antalet identifierade personer kan vara något högre om ID-värdet för prop/eVar körs i en [hash-kollision](/help/implement/validate/hash-collisions.md).
 
-Antalet identifierade personer kan vara betydligt högre om identifierarprop/eVar är skiftlägeskänsligt. Till exempel ska `bob` och `Bob` vara samma person, men skiftlägeskänslighet tvingar dessa två värden att vara olika.
+För fältbaserad sammanfogning är den anpassade variabeln för identifierare skiftlägeskänslig. Antalet identifierade personer kan vara betydligt högre om identifieringsvärdena inte matchar gemener/VERSALER. Om till exempel `bob` och `Bob` skickas och förväntas vara samma person tolkar CDA dessa två värden som distinkta.
 
-## Varför ser jag värden när jag visar identifieraren prop/eVar med mätvärdet &#39;Unidentified People&#39;?
+## Varför visas icke-nollvärden för måttet &#39;Ej identifierade personer&#39; när jag visar identifierarproppen/eVar?
 
-Detta inträffar vanligtvis när en besökare genererar både autentiserade och oautentiserade träffar i rapporteringsfönstret och [Replay](replay.md) inte har körts än. Innan den spelas upp tillhör besökaren både Oidentifierad och Identifierad i dimensionen [Identifierad status](/help/components/dimensions/identified-state.md), vilket gör att vissa besökare attribuerar oidentifierade träffar till en identifierare. Besökarna är kvar i det här läget tills repriseringen körs (varje dag eller varje vecka, beroende på hur din organisation konfigurerar CDA). Om du bara kör rapporter på data som har spelats upp efter uppspelning minimeras detta.
+Detta inträffar vanligtvis när en besökare genererar både autentiserade och oautentiserade träffar i rapportfönstret. Besökaren tillhör både &#39;Oidentifierad&#39; och &#39;Identifierad&#39; i dimensionen [Identifierad status](/help/components/dimensions/identified-state.md), vilket ger en attribuering av oidentifierade träffar till en identifierare. Det här scenariot kan ändras efter [Replay](replay.md)-körningar, beroende på återspelningsfrekvens och slutförandefrekvens.
