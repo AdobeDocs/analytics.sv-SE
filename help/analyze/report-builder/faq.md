@@ -4,9 +4,9 @@ description: Frågor och svar om Report Builder.
 feature: Report Builder
 role: User, Admin
 exl-id: 86604d39-2965-45a5-98ab-3ee4adcb7f97
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 51cac193cd2c88898139e079816a084c211a64f4
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,6 @@ Som ett alternativ till att använda dessa Excel-funktioner rekommenderar Adobe 
 
 Report Builder stöder arbetsböcker upp till följande begränsningar:
 
-* **1000 förfrågningar**: En arbetsbok kan innehålla upp till 1 000 dataförfrågningar i en enda arbetsbok. Om du har rapporter eller projekt som kräver mer än 1 000 förfrågningar rekommenderar Adobe att du delar upp dem i flera arbetsböcker.
+* **1000 förfrågningar**: En enskild arbetsbok kan innehålla upp till 1 000 dataförfrågningar. Om du har rapporter eller projekt som kräver mer än 1 000 förfrågningar rekommenderar Adobe att du delar upp dem i flera arbetsböcker.
 * **20 000 förfrågningar per timme per företag**: Report Builder använder API:t för analysrapportering för att hämta data. Varje enskild begäran använder ett API-anrop när den skapas eller uppdateras. Om din organisation samlar in fler än 20 000 API-anrop inom en given timme måste du vänta tills nästa timme för att hämta data igen.
-* **Bearbetningstid** på 4 timmar: Schemalagda rapporter tar slut efter bearbetning de senaste 4 timmarna. Om arbetsboken innehåller många komplexa begäranden som använder stora datauppsättningar kan den schemalagda rapporten misslyckas.
+* **Bearbetningstid** på 4 timmar: Schemalagda rapporter tar längre tid än 4 timmar efter bearbetning. Om arbetsboken innehåller många komplexa begäranden som använder stora datauppsättningar kan den schemalagda rapporten misslyckas.

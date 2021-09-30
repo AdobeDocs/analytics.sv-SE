@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 7e95e1a51dac7771e32ab378209935d2806d752e
+source-git-commit: 51cac193cd2c88898139e079816a084c211a64f4
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Om du vill jämföra vad snabbsegment kan göra med fullständiga komponentliste
 
 ## Förutsättningar
 
-Användarna behöver behörigheten [!UICONTROL Segment Creation] i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) för att kunna skapa snabbsegment.
+Alla kan skapa en [!UICONTROL Quick Segment]. Du behöver emellertid behörigheten[!UICONTROL Segment Creation] i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) för att kunna spara ett snabbsegment eller öppna det i [!UICONTROL Segment Builder].
 
 ## Skapa snabbsegment
 
@@ -56,7 +56,7 @@ Här är ett exempel på ett segment som kombinerar mått och mätvärden:
 
 Segmentet visas överst. Lägg märke till dess blå, randiga sidospalt, till skillnad från den blå sidolisten för segment på komponentnivå i segmentbiblioteket till vänster.
 
-![](assets/quick-seg3.png)
+![](assets/quick-seg5.png)
 
 ## Redigera snabbsegment
 
@@ -73,24 +73,15 @@ Du kan välja att spara snabbsegment antingen i [!UICONTROL Quick Segment Builde
 ### Spara i snabbsegmentsverktyget
 
 1. När du har använt snabbsegmentet håller du pekaren över det och väljer ikonen för info (&quot;i&quot;).
+
+   ![](assets/quick-seg6.png)
+
 1. Klicka på **[!UICONTROL Make available to all projects and add to your component list]**.
 1. (Valfritt) Byt namn på segmentet.
 1. Klicka på **[!UICONTROL Save]**.
 
 Lägg märke till hur segmentets sidlist ändras från randig blå till blå. Den visas nu i komponentlistan i den vänstra listen.
 
-### Spara i Segment Builder
-
-1. Håll pekaren över snabbsegmentet och välj ikonen för info (&quot;i&quot;).
-1. Välj **[!UICONTROL Save segment]**
-
-   ![](assets/save-quick-seg.png)
-
-1. Låt namnet vara som det är eller byt namn på segmentet.
-
-   Gå tillbaka till arbetsytan och se hur segmentet nu har en blå sidospalt. Det innebär att den inte längre kan redigeras/öppnas i snabbsegmentsverktyget. Och genom att spara det blir det en del av komponentlistan.
-
-   ![](assets/quick-seg4.png)
 
 När du har tillämpat segmentet kan du välja att lägga till det i segmentkomponentlistan och göra det tillgängligt för alla projekt.
 
