@@ -3,9 +3,9 @@ description: Skapa ett styrkort för kontrollpaneler i Analytics
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 012bbfa54d97ffcaf4cd0de380c196df06a03bfe
+source-git-commit: 38bb36db0e7f2fc032f0531fa40cfec29b7e926e
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,20 @@ ht-degree: 0%
 
 I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt och använda appen. I det här avsnittet finns information som du kan använda för att få hjälp.
 
-## Systemkrav för verkställande användare
+## Se till att appanvändare har tillgång till Adobe Analytics
+
+1. Konfigurera nya användare i [Experience Cloud Admin Console](/help/admin/admin-console/permissions/product-profile.md).
+
+1. För att kunna dela styrkort måste du ge appanvändare behörighet att komma åt styrkortskomponenter som Analysis Workspace, de rapportsviter som styrkort baseras på samt segment, mått och mått.
+
+## Systemkrav för appanvändare
 
 För att se till att chefsanvändare har tillgång till dina styrkort i appen ska du se till att:
 
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
-* De har en giltig inloggning på Adobe Analytics
-* Du har skapat mobila styrkort för dem och delat dessa styrkort med dem
-* De har tillgång till Analysis Workspace och rapportsviten som styrkortet bygger på
-* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort till **[!UICONTROL Share embedded components]**.
+* De har en giltig inloggning på Adobe Analytics.
+* Du har skapat mobila styrkort för dem och delat dem med dem.
+* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar dina styrkort till **[!UICONTROL Share embedded components]**.
 
 ## Hjälp chefer att hämta och installera program
 
