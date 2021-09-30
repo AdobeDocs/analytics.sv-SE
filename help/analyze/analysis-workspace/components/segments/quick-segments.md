@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 51cac193cd2c88898139e079816a084c211a64f4
+source-git-commit: 34824daca188119bfe366fea101053f2547a2f6d
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '741'
 ht-degree: 1%
 
 ---
@@ -61,16 +61,13 @@ Segmentet visas överst. Lägg märke till dess blå, randiga sidospalt, till sk
 ## Redigera snabbsegment
 
 1. Håll pekaren över snabbsegmentet och välj pennikonen.
-1. Redigera segmentdefinitionen eller segmentnamnet.
+1. Redigera segmentdefinitionen och/eller segmentnamnet.
+1. Klicka på [!UICONTROL Apply].
 
 ## Spara snabbsegment
 
-Du kan välja att spara snabbsegment antingen i [!UICONTROL Quick Segment Builder] eller i [!UICONTROL Segment Builder].
-
 >[!IMPORTANT]
 >När du har sparat eller använt segmentet kan du inte längre redigera det i snabbsegmentsverktyget, utan bara i den vanliga segmentbyggaren.
-
-### Spara i snabbsegmentsverktyget
 
 1. När du har använt snabbsegmentet håller du pekaren över det och väljer ikonen för info (&quot;i&quot;).
 
@@ -81,20 +78,6 @@ Du kan välja att spara snabbsegment antingen i [!UICONTROL Quick Segment Builde
 1. Klicka på **[!UICONTROL Save]**.
 
 Lägg märke till hur segmentets sidlist ändras från randig blå till blå. Den visas nu i komponentlistan i den vänstra listen.
-
-
-När du har tillämpat segmentet kan du välja att lägga till det i segmentkomponentlistan och göra det tillgängligt för alla projekt.
-
-1. Håll pekaren över det sparade segmentet och välj pennikonen.
-
-1. Lägg märke till den här dialogrutan längst upp i Segment Builder:
-
-   ![](assets/project-only.png)
-
-1. Markera kryssrutan bredvid **[!UICONTROL Make this segment available to all your projects and add it to your component list.]**
-1. Klicka på **[!UICONTROL Save]**.
-1. Segmentet visas nu i segmentkomponentlistan för alla dina projekt.
-1. Du kan även [dela segmentet](/help/components/segmentation/segmentation-workflow/t-seg-share.md) med andra personer i organisationen.
 
 ## Vad är segment med endast projekt?
 
