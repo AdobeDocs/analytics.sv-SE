@@ -3,7 +3,7 @@ description: Skapa ett styrkort för kontrollpaneler i Analytics
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 38bb36db0e7f2fc032f0531fa40cfec29b7e926e
+source-git-commit: 5c9502536c96bc43288adfa259f1b60e6fd078c0
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 0%
@@ -48,7 +48,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
 
 ![App - välkomstskärm](assets/welcome.png)
 
-## Hjälp chefer att komma åt styrkortet
+## Hjälp cheferna att komma åt styrkortet
 
 1. Låt chefsanvändare logga in i appen.
 
