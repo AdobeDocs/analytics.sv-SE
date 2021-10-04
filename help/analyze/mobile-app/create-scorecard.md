@@ -3,9 +3,9 @@ description: Skapa ett Adobe Analytics-styrkort
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 5c9502536c96bc43288adfa259f1b60e6fd078c0
+source-git-commit: 3964f7e1595ccad7ee066018c2e76604e0f6d4c7
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,10 @@ Du kan komma åt mallen [!UICONTROL Blank Mobile Scorecard] antingen genom att s
 
 ![Styrkortsmall](assets/new_template.png)
 
-### Verktygsmall
+### Verktyg-menyn
 
 1. Välj **[!UICONTROL Analytics dashboards (Mobile App)]** på menyn **[!UICONTROL Tools]**.
-1. Klicka på knappen **[!UICONTROL Create new scorecard]** på nästa skärm.
+1. Klicka på **[!UICONTROL Create new scorecard]** på den följande skärmen.
 
 ## Konfigurera styrkortet med data och spara det
 
@@ -60,29 +60,15 @@ Så här implementerar du styrkortsmallen:
    ![Lägg till rutor](assets/build_list.png)
 
 
-   *Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.*
+1. Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.
 
 ### Lägg till mått eller mätvärden
 
-Så här lägger du till en relaterad dimension till ett mått:
+Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta.
 
-Dra en dimension från den vänstra panelen och släpp den på en platta.
-
-Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL DMA Region]**, i det här exemplet) till **[!UICONTROL Unique Visitors]**-måttet genom att dra och släppa det på plattan; Dimensionerna som du lägger till visas under detaljavsnittet för den rutspecifikt **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
+Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Channel]**, i det här exemplet) till **[!UICONTROL Unique Visitors]**-måttet genom att dra och släppa det på plattan. Uppdelningar av Dimensioner visas under [!UICONTROL Drill Ins]-avsnittet (uppdelning) i den rutespecifika **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
 
 ![Lägg till dimensioner](assets/layer_dimensions.png)
-
-### Visa och konfigurera egenskaper för paneler
-
-När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. I den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och alternativt konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
-
-![Egenskapspanelen](assets/properties_tile.png)
-
-Om du klickar på plattor visas även ett dynamiskt popup-fönster hur fördelningsvyn ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
-
-![Brytningsvy](assets/break_view.png)
-
-Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
 
 ### Använd segment
 
@@ -92,13 +78,7 @@ Om du vill använda segmentet på alla plattor i styrkortet, släpper du rutan o
 
 ![Skapa segment för filter](assets/segment_ui.png)
 
-### Ta bort komponenter
-
-Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, så som visas nedan för segmentet **First Time Visits**:
-
-![Remove_components](assets/new_remove.png)
-
-### Datumintervall
+### Lägg till datumintervall
 
 Lägg till och ta bort datumintervallkombinationer som kan väljas i styrkortet genom att markera listrutan för datumintervall.
 
@@ -122,13 +102,57 @@ Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett n
 
 Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent.
 
+### Använd visualiseringar
+
+Analysdashboards erbjuder nu fyra visualiseringar som ger god insikt i dimensionsobjekt. Använd en annan visualisering genom att ändra [!UICONTROL chart type] för en rutas egenskaper:
+
+![Egenskaper för rutor](assets/properties.png)
+
+**[!UICONTROL Donut]visualisering**
+
+På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd ett mundiagram när du jämför procentandelar av en summa. Låt oss till exempel säga att du vill se vilken annonsplattform som har bidragit till det totala antalet unika besökare:
+
+![Visualisering av ring](assets/donut-viz.png)
+
+**[!UICONTROL Line]visualisering**
+
+Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension.
+
+**[!UICONTROL Horizontal Bar]visualisering**
+
+Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden.
+
+### Visa och konfigurera egenskaper för paneler
+
+När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. I den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och alternativt konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
+
+![Egenskapspanelen](assets/properties_tile.png)
+
+När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
+
+Uppdelningar förfinar analysen genom att bokstavligen dela upp mätvärden och dimensioner med andra mått och mått, som i det här exemplet:
+
+* Unika besökarvärden uppdelade efter annonsplattform (AMO-ID)
+* Besök uppdelade efter produktkategori (detaljhandel)
+* Total intäkt uppdelad efter produktnamn
+
+![Brytningsvy](assets/break_view.png)
+
+Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
+
+### Ta bort komponenter
+
+Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, så som visas nedan för segmentet **First Time Visits**:
+
+![Remove_components](assets/new_remove.png)
+
 ## Namnge ett styrkort
 
 Om du vill namnge styrkortet klickar du på namnutrymmet längst upp till vänster på skärmen och skriver det nya namnet.
 
 ![Naming_Scorecards](assets/new_name.png)
 
-## Dela styrkortet
+## Dela ett styrkort
 
 Så här delar du styrkortet med en verkställande användare:
 
@@ -147,4 +171,4 @@ Så här delar du styrkortet med en verkställande användare:
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 
-Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **[!UICONTROL Share embedded components]**) för att se till att dina chefsanvändare har tillgång till dessa ändringar.
+Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och markera alternativet **[!UICONTROL Share embedded components]**) för att se till att chefsanvändarna har tillgång till dessa ändringar.

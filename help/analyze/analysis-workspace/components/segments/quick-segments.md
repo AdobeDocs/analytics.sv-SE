@@ -3,9 +3,9 @@ description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 34824daca188119bfe366fea101053f2547a2f6d
+source-git-commit: 3964f7e1595ccad7ee066018c2e76604e0f6d4c7
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '742'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Du kan skapa snabbsegment i ett projekt för att kringgå komplexiteten i den fu
 Om du vill jämföra vad snabbsegment kan göra med fullständiga komponentlistesegment går du [hit](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
 
 >[!IMPORTANT]
-> Snabbsegment är för närvarande i begränsad testning och är inte allmänt tillgängliga än.
+> Snabbsegment är för närvarande i begränsade tester och kommer att vara allmänt tillgängliga den 21 oktober 2021.
 
 ## Förutsättningar
 
