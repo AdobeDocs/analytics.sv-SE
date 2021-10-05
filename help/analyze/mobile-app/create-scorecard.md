@@ -3,9 +3,9 @@ description: Skapa ett Adobe Analytics-styrkort
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 3964f7e1595ccad7ee066018c2e76604e0f6d4c7
+source-git-commit: e6109809afc73aa1f9a8e645e3777ef6aca9bbf9
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny da
 
 ### Använd visualiseringar
 
-Analysdashboards erbjuder nu fyra visualiseringar som ger god insikt i dimensionsobjekt. Använd en annan visualisering genom att ändra [!UICONTROL chart type] för en rutas egenskaper:
+Kontrollpanelerna för analyser erbjuder fyra visualiseringar som ger er insikt i dimensionsobjekt och mätvärden. Ändra till en annan visualisering genom att ändra [!UICONTROL chart type] för en rutas egenskaper:
 
 ![Egenskaper för rutor](assets/properties.png)
 
@@ -117,6 +117,8 @@ På samma sätt som ett cirkeldiagram visar den här visualiseringen data som de
 **[!UICONTROL Line]visualisering**
 
 Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram kan bara användas när tid används som dimension.
+
+
 
 **[!UICONTROL Horizontal Bar]visualisering**
 
