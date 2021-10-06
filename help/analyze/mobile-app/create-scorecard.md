@@ -3,9 +3,9 @@ description: Skapa ett Adobe Analytics-styrkort
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 122daace52691b983db1f6978532ba37b42f5f7f
+source-git-commit: 7136b601c3e912ef66209c79adfb04fd11297b50
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -112,32 +112,32 @@ Du kan också klicka på ikonen [!UICONTROL Visualizations] i den vänstra liste
 
 ![Visualiseringar](assets/vizs.png)
 
-**[!UICONTROL Summary Number]**
+### [!UICONTROL Summary Number]
 
 Använd visualisering av sammanfattningsnummer för att markera ett stort tal som är viktigt i ett projekt.
 
-![Sammanfattningsnummer](assets/sparkline.png)
+![Sammanfattningsnummer](assets/summary-number.png)
 
-**[!UICONTROL Donut]visualisering**
+### [!UICONTROL Donut]
 
 På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd ett mundiagram när du jämför procentandelar av en summa. Låt oss till exempel säga att du vill se vilken annonsplattform som har bidragit till det totala antalet unika besökare:
 
 ![Visualisering av ring](assets/donut-viz.png)
 
-**[!UICONTROL Line]visualisering**
+### [!UICONTROL Line]
 
 Radvisualiseringen representerar mätvärden som använder en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram visar måtten över tiden men fungerar med alla visualiseringar. Du visualiserar produktkategoridimensionen i det här exemplet.
 
 ![Radvisualisering](assets/line.png)
 
 
-**[!UICONTROL Horizontal Bar]visualisering**
+### [!UICONTROL Horizontal Bar]
 
 Den här visualiseringen visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. Du kan till exempel enkelt se vilka produkter du gillar bäst genom att använda [!UICONTROL Horizontal Bar] som visualisering.
 
 ![vågrätt streck](assets/horizontal.png)
 
-**Ta bort  [!UICONTROL Unspecified] dimensionsobjekt**
+### Ta bort [!UICONTROL Unspecified]-dimensionsobjekt
 
 Om du vill ta bort [!UICONTROL Unspecified]-dimensionsobjekt från dina data gör du följande:
 
