@@ -3,9 +3,9 @@ description: Skapa ett styrkort för kontrollpaneler i Analytics
 title: Skapa ett styrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 5c9502536c96bc43288adfa259f1b60e6fd078c0
+source-git-commit: 63f4f69cd22531ced7c65d1b38fdc982da97887b
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ För att se till att chefsanvändare har tillgång till dina styrkort i appen sk
 
 ## Hjälp chefer att hämta och installera program
 
-**För företagsledare på iOS:**
+**För chefsanvändare på iOS:**
 
 Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
 
@@ -111,28 +111,6 @@ Om den verkställande användaren loggar in och ser ett meddelande om att inget 
 * Styrkortet kanske inte har delats med den verkställande användaren.
 
 Kontrollera att chefsanvändaren kan logga in på rätt Adobe Analytics-instans och att styrkortet har delats.
-
-### Rapportera ett fel
-
-Tryck på alternativet och välj en underkategori för felet. I formuläret för att rapportera ett fel anger du din e-postadress i det övre fältet och en beskrivning av felet i fältet nedanför. En skärmbild av din kontoinformation bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka rapporten trycker du på pappersplansikonen i formulärets övre högra hörn.
-
-![Rapportera fel](assets/newbug.png)
-
-### Lämna feedback
-
-1. Tryck på inställningsikonen i appskärmens övre högra hörn.
-1. Tryck på alternativet **[!UICONTROL Feedback]** på skärmen **[!UICONTROL Settings]**.
-1. Tryck för att visa alternativen för att lämna feedback.
-
-   ![Inställningsskärm](assets/settings.png)
-
-### Föreslå en förbättring
-
-Tryck på alternativet och välj en underkategori för förslaget. I förslagsformuläret anger du din e-postadress i det övre fältet och din beskrivning av felet i fältet nedanför. En skärmbild av din kontoinformation bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka förslaget trycker du på pappersplansikonen i formulärets övre högra hörn.
-
-### Ställ en fråga
-
-Tryck på alternativet och ange din e-postadress i det övre fältet och din fråga i fältet nedanför. En skärmdump bifogas automatiskt till meddelandet, men du kan ta bort den om du vill genom att trycka på **X** i den bifogade bilden. Du kan också göra en skärminspelning, lägga till fler skärmbilder eller bifoga filer. Om du vill skicka frågan trycker du på pappersplansikonen i formulärets övre högra hörn.
 
 >[!IMPORTANT]
 >
