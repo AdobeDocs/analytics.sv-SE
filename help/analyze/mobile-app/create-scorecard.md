@@ -1,19 +1,19 @@
 ---
 description: Skapa ett Adobe Analytics-styrkort
-title: Skapa ett styrkort
+title: Skapa ett mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 7136b601c3e912ef66209c79adfb04fd11297b50
+source-git-commit: fca73532a83756062583d750b1727b5f2558718f
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
 
 
-# Skapa ett styrkort
+# Skapa ett mobilstyrkort
 
-Följande information beskriver för chefer av Adobe Analytics-data hur man konfigurerar och presenterar kontrollpaneler för chefsanvändare. Börja med att titta på videon Adobe Analytics dashboards Scorecard Builder:
+Följande information instruerar de som arbetar med Adobe Analytics data om hur man konfigurerar och presenterar mobila styrkort för företagsanvändare. Börja med att titta på videon Adobe Analytics dashboards Scorecard Builder:
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
@@ -44,7 +44,7 @@ Du kan komma åt mallen [!UICONTROL Blank Mobile Scorecard] antingen genom att s
 
 ### Verktyg-menyn
 
-1. Välj **[!UICONTROL Analytics dashboards (Mobile App)]** på menyn **[!UICONTROL Tools]**.
+1. From the **[!UICONTROL Tools]** menu, select **[!UICONTROL Analytics dashboards (Mobile App)]**.
 1. Klicka på **[!UICONTROL Create new scorecard]** på den följande skärmen.
 
 ## Konfigurera styrkortet med data och spara det
@@ -53,9 +53,9 @@ Så här implementerar du styrkortsmallen:
 
 1. Under **[!UICONTROL Properties]** (i den högra listen) anger du **[!UICONTROL Project report suite]** från vilken du vill använda data.
 
-   ![Val av rapportsvit](assets/properties_save.png)
+   ![Report suite selection](assets/properties_save.png)
 
-1. Om du vill lägga till en ny platta i styrkortet drar du ett mått från den vänstra panelen och släpper det i **[!UICONTROL Drag and Drop Metrics Here]**-zonen. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
+1. To add a new tile to your Scorecard, drag a metric from the left panel and drop it into the **[!UICONTROL Drag and Drop Metrics Here]** zone. You can also insert a metric between two tiles using a similar workflow.
 
    ![Lägg till rutor](assets/build_list.png)
 
@@ -103,6 +103,10 @@ Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett n
 Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent.
 
 ## Använd visualiseringar
+
+Se en video om visualiseringar för mobilstyrkort:
+
+>[!VIDEO](https://video.tv.adobe.com/v/337570/?quality=12&learn=on)
 
 Kontrollpanelerna för analyser erbjuder fyra visualiseringar som ger er insikt i dimensionsobjekt och mätvärden. Ändra till en annan visualisering genom att ändra [!UICONTROL chart type] för en rutas [!UICONTROL Properties]. Markera bara den högra rutan och ändra sedan diagramtypen.
 
@@ -154,9 +158,9 @@ När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskap
 
 ![Egenskapspanelen](assets/properties_tile.png)
 
-När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan är fördelningsdimensionen **timme** eller **dagar**, beroende på standarddatumintervallet.
+When you click on tiles, a dynamic pop up displays how the Drill ins (Breakdown) view appears to the executive user in the app. If no dimension has been applied to the tile, the breakdown dimension will be **hour** or **days**, depending on the default date range.
 
-Uppdelningar förfinar analysen genom att bokstavligen dela upp mätvärden och dimensioner med andra mått och mått, som i det här exemplet:
+Breakdowns refine your analysis by literally breaking down metrics and dimensions by other metrics and dimensions, such as in this retail example:
 
 * Unika besökarvärden uppdelade efter annonsplattform (AMO-ID)
 * Besök uppdelade efter produktkategori (detaljhandel)
@@ -187,13 +191,13 @@ Så här delar du styrkortet med en verkställande användare:
 1. Fyll i fälten i **[!UICONTROL Share mobile scorecard]**-formuläret genom att:
 
    * Ange namnet på styrkortet
-   * Ange en beskrivning av styrkortet
+   * Providing a description of the scorecard
    * Lägga till relevanta taggar
    * Ange mottagare för styrkortet
 
 1. Klicka på **[!UICONTROL Share]**.
 
-![Dela_styrkort](assets/new_share.png)
+![Share_Scorecards](assets/new_share.png)
 
 När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
 

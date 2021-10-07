@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 5c9502536c96bc43288adfa259f1b60e6fd078c0
+source-git-commit: fca73532a83756062583d750b1727b5f2558718f
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1006'
 ht-degree: 84%
 
 ---
@@ -312,8 +312,8 @@ ht-degree: 84%
 + Adobe Analytics-instrumentpaneler {#mobapp}
    + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Inledande kurator](mobile-app/curator.md)
-   + [Skapa ett styrkort](mobile-app/create-scorecard.md)
-   + [Konfigurera chefer att använda styrkort](mobile-app/set-up-execs.md)
+   + [Skapa ett mobilstyrkort](mobile-app/create-scorecard.md)
+   + [Konfigurera chefer för att använda kontrollpaneler](mobile-app/set-up-execs.md)
    + [Snabbguide för chefsanvändare](mobile-app/executive.md)
 + [Rapporterings-API](reporting-api.md)
 + [Labs](labs.md)

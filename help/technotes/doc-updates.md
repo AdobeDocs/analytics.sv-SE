@@ -3,9 +3,9 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättning.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: fca73532a83756062583d750b1727b5f2558718f
 workflow-type: tm+mt
-source-wordcount: '2841'
+source-wordcount: '2860'
 ht-degree: 44%
 
 ---
@@ -22,6 +22,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Datum | Beskrivning |
 | --- | --- |
+| **Oktober 2021** |  |
+| 7 oktober 2021 | Ny dokumentation om [visualiseringar för mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#apply-visualizations) |
 | **Augusti 2021** |  |
 | 18 augusti 2021 | Reviderad struktur på översta nivån och konsoliderad till en enda [landningssida](https://experienceleague.adobe.com/docs/analytics.html) |
 | 18 augusti 2021 | Nytt avsnitt om [A4T och virtuella rapportsviter](/help/components/vrs/vrs-a4t.md) |
