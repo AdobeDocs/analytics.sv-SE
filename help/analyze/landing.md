@@ -2,9 +2,10 @@
 description: Beskriver hur landningssidan sammanför både Analysis Workspace och Rapporter och analyser i ett enda gränssnitt och en enda åtkomstpunkt under arbetsytans paraply.
 title: Adobe Analytics landningssida
 role: User, Admin
-source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
+exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
+source-git-commit: 59b4099efaf477e9cdffeeebc0068b33f9de62c7
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '3173'
 ht-degree: 0%
 
 ---
@@ -90,6 +91,8 @@ Fliken [!UICONTROL Reports] konsoliderar tre uppsättningar rapporter:
 
 Som tidigare nämnts finns endast de mest använda rapporterna som tidigare grupperats i Rapporter och analyser här. En handfull sällan använda eller inte längre relevanta rapporter migrerades inte över. Se Frågor och svar nedan för mer information.
 
+### Menyer och undermenyer
+
 Här är menyerna och deras undermenyer. Om du inte kan hitta en viss rapport kan du söka efter den genom att välja Sök på sida.
 
 | Menyalternativ | Rapporter under det här menyobjektet |
@@ -99,7 +102,34 @@ Här är menyerna och deras undermenyer. Om du inte kan hitta en viss rapport ka
 | **[!UICONTROL Conversion]** | <ul><li>Produkter > Produkter (Vilka produkter påverkar min nyckelstatistik?)</li><li>Produkter > Produktprestanda (Vilka produkter fungerar bäst?)</li><li>Produkter > Kategorier (Vilka är mina mest framgångsrika produktkategorier?</li><li>Kundvagn > Korgar (hur många användare har lagt till en produkt i kundvagnen?</li><li>Kundvagn > Vyer av kundvagn (hur många gånger såg mina besökare sina kundvagnar?)</li><li>Kundvagn > Tillägg av kundvagn (Hur ofta lägger användare till en produkt i kundvagnen?)</li><li>Kundvagn > Ta bort kundvagn (Hur ofta tar användarna bort en produkt från kundvagnen?)</li><li>Inköp > Inkomster (hur fungerar mina intäkter?)</li><li>Inköp > Beställningar (hur fungerar mina order?)</li><li>Inköp > Enheter (hur många enheter säljer jag?)</li><li>[Magento: marknadsföring och handel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#commerce)</li></ul> |
 | **[!UICONTROL Audience]** | <ul><li>Personmätvärden (hur många interagerar med mitt varumärke?)</li><li>Besökarprofil > Platsöversikt (vilka platser som används mest av användarna)</li><li>Besökarprofil > Geosegmentering > Geo Counties, Geo US States, Geo Regions, Geo Cities, Geo US DMA (Vilka platser besöker mina användare?)</li><li>Besökarprofil > Språk (vilket språk föredrar mina användare?)</li><li>Besökarprofil > Tidszoner (vilka tidszoner besöker mina användare?)</li><li>Besökarprofil > Domäner (Vilka internetleverantörer använder mina besökare för att komma åt min webbplats?)</li><li>Besökarprofil > Domäner på översta nivån (Vilka domäner kör trafik till min webbplats?)</li><li>Besöksprofil > Teknik > Teknik - översikt (Vilka tekniker använder människor för att komma åt min webbplats?)</li><li>Besökarprofil > Teknik > Webbläsare, webbläsartyp, webbläsarbredd, webbläsarhöjd (vilket företags webbläsare, webbläsarversion och dess bredd och höjd använder någon för att komma åt min webbplats?)</li><li>Besökarprofil > Teknik > Operativsystem, operativsystemtyper (vilket operativsystem och vilken version använder mina besökare?)</li><li>Besöksprofil > Teknik > Mobiloperatör (Vilka mobiloperatörer använder mina besökare för att besöka min webbplats?)</li><li>Bevarande av besökare > Returfrekvens (hur lång tid går det mellan min användares aktuella besök och tidigare besök?)</li><li>Bevarande av besökare > Returbesök (hur många av mina besök returnerar användare?)</li><li>Bevarande av besökare > Besök nummer (som besöks av sifferhaken styr de flesta av mina nyckeltal)</li><li>Besökarlojalitet > Försäljningscykel > Kundlojalitet (vilket lojalitetssegment tillhör mina användare?)</li><li>Bevarande av besökare > Försäljningscykel > Dagar före första köp (hur många dagar gick det mellan mitt användares första besök och deras första inköp?)</li><li>Bevarande av besökare > Försäljningscykel > Dagar sedan senaste köp (hur många dagar har gått mellan mitt användarbesök och det senaste köpet? )</li><li>Bevarande av besökare > Mobil > Enheter och enhetstyper (vilka enheter och enhetstyper använder mina besökare?)</li><li>Bevarande av besökare > Mobil > Tillverkare (Vilken mobilenhetstillverkare använder mina besökare?)</li><li>Bevarande av besökare > Mobil > Skärmstorlek, Skärmhöjd, Skärmbredd (Vilken mobilskärmstorlek/-höjd/bredd har mina besökare?)</li><li>Bevarande av besökare > Mobil > [Användning av mobilapp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#mobile)</li><li>Bevarande av besökare > Mobil > [Mobilappsresor](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#mobile)</li><li>Behålla besökare > Mobil > [Mätvärden för mobilappar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#mobile)</li><li>Behålla besökare > Mobil > [Meddelanden om mobilappar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#mobile)</li><li>Behålla besökare > Mobil > [Mobilappsprestanda](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#mobile)</li><li>Bevarande av besökare > Mobil > [Bevarande av mobilapp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#mobile)</li></ul> |
 | **[!UICONTROL Acquisition]** | <ul><li>Marknadskanaler > Första beröringskanalen, Första beröringskanalen (Vilken första beröringskanal och vilken specifik första beröringskanal fungerar bäst?)</li><li>Marknadsföringskanaler > Första sista kanalen, Första sista kanalinformationen (Vilken sista beröringskanal och vilken specifik sista beröringskanal fungerar bäst?)</li><li>Campaigns > Campaigns (Vilka kampanjer driver min nyckelstatistik?)</li><li>Kampanjer > Kampanjresultat (Vilka kampanjer genererar störst intäkter?)</li><li>Kampanjer > Spårningskod (Vilka kampanjspårningskoder fungerar bäst?)</li><li>[Webbförvärv](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#web)</li><li>[Mobilförvärv](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#mobile)</li><li>[Advertising Analytics: betalsökningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#advertising)</li><li>Söknyckelord - alla, betalda, naturliga (vilka söknyckelord och betalda/naturliga söknyckelord ger bäst nyckeltal?)</li><li>Sökmotorer - alla, betalda, naturliga (vilka sökmotorer och betalsökmotorer/naturliga sökmotorer ger mina nyckeltal bäst resultat?)</li><li>All rankning av söksidor (Vilken söksida besöker mina användare?)</li><li>Referensdomäner (Vilka domäner driver trafik till min plats?)</li><li>Ursprungliga refererande domäner (Vad var de första domänanvändarna var på innan de besökte min webbplats?)</li><li>Referenter (Vilka URL:er var mina användare på innan de klickade igenom till min webbplats?)</li><li>Refererartyper (vilken kategori tillhör mina refererande URL:er?)</li></ul> |
-| **[!UICONTROL Company reports]** | Rapporterar att ditt företag har skapat för din användning. |
+| **[!UICONTROL Company reports]** | Rapporterar att ditt företag har skapat för din användning. Se&quot;Skapa en företagsrapport&quot; nedan. |
+
+### Plats för mallar (kallas nu rapporter)
+
+| Namn på rapport (mall) | Rapportplats |
+| --- | --- |
+| Utbildning - självstudiekurs | Populäraste > Utbildning |
+| Webbinnehållskonsumtion | Engagemang > Webbinnehållsförbrukning |
+| Förbrukning av mediainnehåll | Engagement > Media Content Consumer |
+| Enhetsövergripande analys | Engagement > Cross-Device Analysis |
+| Webblagring | Engagemang > Web Retention |
+| Medieljudförbrukning | Engagemang > Medieljudförbrukning |
+| Medieåtergivning, frekvens, lojalitet | Engagement > Media Recency, Frequency, Loyalty |
+| ITP-effekt | Engagemang > ITP Impact |
+| Produktprestanda | Conversion > Products > Product Performance |
+| Magento: Marknadsföring och handel | Konvertering > Magento: Marknadsföring och handel |
+| Personmått | Audience > People Metric |
+| Platsöversikt | Målgrupp > Besöksprofil > Platsöversikt |
+| Tekniköversikt | Målgrupp > Besöksprofil > Teknik > Tekniköversikt |
+| Användning av mobilappar | Målgrupp > Mobil > Användning av mobilappar |
+| Mobila appresor | Målgrupp > Mobil > Mobila appresor |
+| Mobilappsmått | Audience > Mobile > Mobile App Messaging |
+| Mobilappsprestanda | Målgrupp > Mobiler > Mobilappsprestanda |
+| Behåll mobilappar | Målgrupp > Mobil > Behåll mobilappar |
+| Kampanjprestanda | Anskaffning > Kampanjer > Kampanjresultat |
+| Mobilförvärv | Förvärv > Mobilvärvning |
+| Webbförvärv | Anskaffning > Webbförvärv |
+| Advertising Analytics: Betalsökning | Anskaffning > Advertising Analytics: Betalsökning |
 
 ### Använda fliken Rapporter
 
@@ -118,6 +148,21 @@ Här är en kort beskrivning av hur du använder rapporter och analyser som du �
    * Du kan dra ett eller flera segment till segmentsläppzonen längst upp. Dra till exempel segmentet [!UICONTROL Mobile Customers] och se resultatet ändras.
    * Du kan ändra datumintervallet genom att gå till kalendern längst upp till höger.
    * Du kan lägga till dimensionsuppdelningar, dra in andra mätvärden och vanligtvis anpassa rapporten som du vill.
+
+### Skapa en (anpassad) företagsrapport
+
+Anpassade rapporter kallas företagsrapporter och finns på menyn Företagsrapporter (se nedan). Alla tidigare skapade och nya listor visas här.
+
+Om du vill skapa en ny företagsrapport
+
+1. Bygg arbetsytan till önskat läge.
+1. Öppna menyn [!UICONTROL Project] och klicka på **[!UICONTROL Save as company report…]**.
+
+   ![Företagsrapport](assets/company-report.png)
+
+1. Lägg till alla önskade fält i modal-filen och spara den.
+
+   Rapporten läggs till i listan Företagsrapporter och är tillgänglig för dem i ditt företag.
 
 Fler utbildningsalternativ:
 
