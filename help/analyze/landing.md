@@ -3,9 +3,9 @@ description: Beskriver hur landningssidan sammanför både Analysis Workspace oc
 title: Adobe Analytics landningssida
 role: User, Admin
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: 59b4099efaf477e9cdffeeebc0068b33f9de62c7
+source-git-commit: 99e8c0ca05a319a5dd196293a6538b7cba4a5896
 workflow-type: tm+mt
-source-wordcount: '3173'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,7 @@ Om du vill skapa en ny företagsrapport
 
 1. Lägg till alla önskade fält i modal-filen och spara den.
 
-   Rapporten läggs till i listan Företagsrapporter och är tillgänglig för dem i ditt företag.
+   Rapporten läggs till i listan Företagsrapporter och är tillgänglig för dem i ditt inloggningsföretag.
 
 Fler utbildningsalternativ:
 
