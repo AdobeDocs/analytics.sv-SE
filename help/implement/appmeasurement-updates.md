@@ -3,9 +3,9 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 6624105e45f02a803fd39fcbd63d5560c9a12968
+source-git-commit: 7f27e92b1fc378516423bc971b05e34880897ec9
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2214'
 ht-degree: 3%
 
 ---
@@ -17,6 +17,12 @@ Kumulativ versionsinformation för [!DNL AppMeasurement] för JavaScript.
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
 Du kan hämta den senaste versionen av AppMeasurement i [Code Manager](/help/admin/admin/code-manager-admin.md).
+
+## Version 2.22.3
+
+Releasedatum: **11 oktober 2021**
+
+* Uppdaterade filer som refererar till hjälpdokumentationen för att peka på de aktuella hjälpplatserna.
 
 ## Version 2.22.2
 
@@ -320,7 +326,7 @@ Releasedatum: **18 juni 2015**
 
 Releasedatum: **21 maj 2015**
 
-* Med början i iOS SDK version 4.5 kan du med ett nytt iOS-tillägg samla in användningsdata från Apple Watch-appar, Idag-widgetar, Photo Editing-widgetar och alla andra iOS-tilläggsappar. Se [iOS-tilläggsimplementering](https://experienceleague.adobe.com/docs/mobile-services/ios/ios-ext/ios-ext.html) i användarhandboken för mobiltjänster.
+* Med början i iOS SDK version 4.5 kan du med ett nytt iOS-tillägg samla in användningsdata från dina Apple Watch-appar, Today-widgetar, fotoredigeringswidgetar och alla andra iOS-tilläggsappar. Se [Implementering av iOS-tillägg](https://experienceleague.adobe.com/docs/mobile-services/ios/ios-ext/ios-ext.html) i användarhandboken för mobiltjänster.
 * Från och med Android SDK version 4.5 kan du med ett nytt Android-tillägg samla in data från Android-appen. Se [Android-kroppsburna filer](https://experienceleague.adobe.com/docs/mobile-services/android/wearables-android/android-wearable.html) i användarhandboken för mobila tjänster.
 * Inkludering av Visitor API 1.4.
 * AudienceManagement-modulen har uppdaterats för att använda DIL version 6.0.
