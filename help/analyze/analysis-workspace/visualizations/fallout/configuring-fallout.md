@@ -2,13 +2,13 @@
 description: Ange kontaktytorna för att skapa en flerdimensionell utfallssekvens.
 title: Konfigurera en utfallsvisualisering
 uuid: fc117745-baf3-46fb-873d-9307092cc337
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: 9d2a0163-a5cb-4a1c-97e9-e78a8f99aaee
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: b170e8df18e3f6223e5390dfd61423ef419146a6
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 2%
+source-wordcount: '695'
+ht-degree: 1%
 
 ---
 
@@ -20,11 +20,11 @@ Du kan till och med lägga till segment inom en kontaktyta. Du kanske vill jämf
 
 Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
 
-Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra saker på eVars, inklusive att sälja eVars och [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variabler som kan ha flera värden per träff, t.ex. products, listVars, merchandising eVars och list props). Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
-1. Dra en [!UICONTROL Fallout]-visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
+1. Dra en [!UICONTROL Fallout] visualisering från listrutan Visualiseringar till en [!UICONTROL Freeform Table].
 
-1. Dra siddimensionen till friformstabellen och dra sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]**-fältet som första kontaktyta.
+1. Dra siddimensionen till frihandstabellen och sedan en sida (i det här fallet Home - JEsquire) till **[!UICONTROL Add TouchPoint]** som första kontaktyta.
 
    ![](assets/fallout1.png)
 
@@ -36,7 +36,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
 
 1. Fortsätt lägga till kontaktytor tills sekvensen är klar.
 
-   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare kontaktytor till en kontaktyta.
+   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare till en kontaktyta.
 
    >[!NOTE]
    >
@@ -52,11 +52,11 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Evental sökväg </p> <p>(Standard) </p> </td> 
-   <td colname="col2"> <p>Besökare räknas som"så småningom" kommer att landa på nästa sida i banan i den sessionen, men inte nödvändigtvis på nästa träff. </p> </td> 
+   <td colname="col2"> <p>Besökare (eller besök) räknas när de till slut landar på nästa kontaktyta i banan. Omgångar tillåts mellan kontaktytor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Nästa träff </p> </td> 
-   <td colname="col2"> <p>Besökare räknas som kommer att landa på nästa sida i banan vid nästa träff. </p> </td> 
+   <td colname="col2"> <p>Besökare (eller besök) räknas när de omedelbart landar på nästa kontaktyta i banan. Nästa träff inkluderar alla träfftyper (sidvyer eller länkar). Omständigheter tillåts inte mellan kontaktytor. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -67,7 +67,7 @@ Du kan göra saker på eVars, t.ex. genom att sälja eVars och [listVars](https:
 |--- |--- |
 | Utfallsbehållare <ul><li>Gå in på</li><li>Besökare</li></ul> | Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Standardvärdet är Visitor.  Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
 
-När du **högerklickar på en kontaktyta** visas följande alternativ:
+När du **högerklicka på en kontaktyta** visas följande alternativ:
 
 | Alternativ | Beskrivning |
 |--- |--- |
