@@ -2,10 +2,10 @@
 title: Analytics-integrering
 description: Lär dig hur du kan integrera data från andra platser i Adobe Analytics.
 exl-id: 89debfb1-347b-4f0a-9f3a-4a82df51c8de
-source-git-commit: 877bb63cd96cd2d91094f7c2b39b3046c2255b81
+source-git-commit: 4324a4911337db6299563f31cc50dc4da220ee45
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 80%
+source-wordcount: '188'
+ht-degree: 75%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 80%
 
 ![Banderoll](../../assets/doc_banner_integrate.png)
 
-Den här handboken är inriktad på att integrera flera Experience Cloud-lösningar. Om du söker efter dataanslutningar för Analytics går du till sidan för [dataanslutningar](/help/import/data-connectors/getting-started-data-connectors.md) i användarhandboken för import.
+Den här guiden fokuserar på att integrera flera Adobe Experience Cloud-lösningar. Om du söker efter dataanslutningar för Analytics går du till sidan för [dataanslutningar](/help/import/data-connectors/getting-started-data-connectors.md) i användarhandboken för import.
 
 Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, till exempel Audience Manager, Advertising Cloud och Target. Den innehåller följande uppgifter:
 
