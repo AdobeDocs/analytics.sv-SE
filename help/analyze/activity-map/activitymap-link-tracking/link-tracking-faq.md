@@ -5,9 +5,9 @@ uuid: 10172073-b98b-4950-8397-67a18b37b3b4
 feature: Activity Map
 role: User, Admin
 exl-id: b6ccdf91-98ce-413f-842d-c5423598ed49
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 2a20ce50f773c82856da59154bb212f1fca2b7ea
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '516'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Frågor och svar om länkspårning i Activity Map.
 
 >[!CAUTION]
 >
->Genom att aktivera spårning av Activity Map kan **du samla in data om personligt identifierbar information (PII).** Dessa data kan användas fristående eller tillsammans med annan information för att identifiera, kontakta eller hitta en person, eller för att identifiera en individ i sitt sammanhang.
+>Genom att aktivera spårning av Activity Map, **du kan samla in uppgifter om personligt identifierbar information.** Dessa data kan användas fristående eller tillsammans med annan information för att identifiera, kontakta eller hitta en person, eller för att identifiera en individ i sitt sammanhang.
 
 Här är några kända fall där PII-data kan samlas in med Activity Map Tracking:
 
@@ -35,11 +35,11 @@ Länk- och regionsidentifiering i Activity Map inträffar när användare klicka
 
 Om en klickningshändelse inträffar för ett element måste elementet genomgå vissa kontroller för att avgöra om AppMeasurement kommer att behandla det som en länk. Detta är kontrollerna:
 
-* Är detta en `A`- eller `AREA`-tagg med en `href`-egenskap?
-* Finns det ett `onclick`-attribut som anger en `s_objectID`-variabel?
-* Är det här en `INPUT`-tagg eller `SUBMIT`-knapp med ett värde eller en underordnad text?
-* Är detta en `INPUT`-tagg med typen `IMAGE` och en `src`-egenskap?
-* Är detta en `BUTTON`?
+* Är det här en `A` eller `AREA` tagg med `href` egenskap?
+* Finns det en `onclick` ett attribut som anger `s_objectID` variabel?
+* Är det här en `INPUT` eller `SUBMIT` en knapp med ett värde eller underordnad text?
+* Är det här en `INPUT` tagg med text `IMAGE` och `src` egenskap?
+* Är det här en `BUTTON`?
 
 Om svaret är Ja på någon av frågorna ovan behandlas elementet som en länk och spåras.
 
@@ -53,22 +53,22 @@ Om svaret är Ja på någon av frågorna ovan behandlas elementet som en länk o
 
 ## Hur spårar Activity Map andra visuella HTML-element?
 
-a. Via funktionen `s.tl()`.
+a. Via `s.tl()` funktion.
 
-Om klickhändelsen inträffade via ett `s.tl()`-anrop får Activity Map även klickhändelsen och avgör om en `linkName`-strängvariabel hittades. Under `s.tl()`-körningen anges detta linkName som Activity Map Link-ID. Det element som klickades på och som härstammar från `s.tl()`-anropet används för att avgöra regionen. Exempel:
+Om klickningen inträffade via en `s.tl()` anrop, får Activity Map också klickhändelsen och avgör om ett `linkName` strängvariabel hittades. Under `s.tl()` kommer linkName att anges som Activity Map Link ID. Det element som användaren klickade på och som gav upphov till `s.tl()` används för att avgöra regionen. Exempel:
 
 ```
 <img onclick="s.tl(true,'o','abc')" src="someimageurl.png"/>
 ```
 
-b. Via variabeln `s_objectID`. Exempel:
+b. Via `s_objectID` variabel. Exempel:
 
-    &quot;
+    &quot; 
     
-    &lt;a>&lt;img>&lt;/a>
-    
-    &lt;a>Länka text här&lt;/a>
-    
+    &lt;img onclick=&quot;s_objectID=&amp;#39;abc&amp;#39;;&quot; src=&quot;someimageurl.png&quot; />
+    &lt;a href=&quot;some-url.html&quot; onclick=&quot;s_objectID=&amp;#39;abc&amp;#39;;&quot;>
+    Länka text hit
+    &lt;/a>
     
     &quot;
 
@@ -119,7 +119,7 @@ b. Via variabeln `s_objectID`. Exempel:
 1. Orsak: Ankartaggen har ingen giltig `href`:
    `<a name="innerAnchor">Section header</a>`
 
-1. Orsak: Varken `s_ObjectID` eller `s.tl()` finns:
+1. Orsak: Ingendera `s_ObjectID` eller `s.tl()` närvarande:
 
    ```
    <p onclick="showPanel('market rates')">
@@ -128,7 +128,7 @@ b. Via variabeln `s_objectID`. Exempel:
    </p>
    ```
 
-1. Orsak: Varken `s_ObjectID` eller `s.tl()` finns:
+1. Orsak: Ingendera `s_ObjectID` eller `s.tl()` närvarande:
 
    ``` 
    <input type="radio" onclick="changeState(this)" name="group1" value="A"/>
@@ -140,3 +140,4 @@ b. Via variabeln `s_objectID`. Exempel:
 1. Orsak: Egenskapen &quot;src&quot; saknar ett formulärelement:
 
    `<input type="image"/>`
+

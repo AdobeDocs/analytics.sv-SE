@@ -5,9 +5,9 @@ uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
 feature: Activity Map
 role: User, Admin
 exl-id: 6b2767cb-6c2c-4bf3-b9a9-a23418624650
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 7b093860dfd0c355780269a3d155ade2d153edfe
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '678'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ Organisationer som har ett kontrakt för Adobe Analytics Standard, Premium och U
 
 Med några sekunders mellanrum skannar Activity Map webbsidan och letar efter ändringar på sidan. ActivityMap hittar nytt innehåll på sidan utan att en ny sidinläsning krävs, men det nya innehållet tilldelas alltid till den första pageName som hittades när sidan lästes in.
 
-* Activity Map kontrollerar om synligheten för länkar som de känner till har ändrats. Om en synlighetsändring hittas uppdateras kolumnen Present (Länkar på sida) för den länken med [!UICONTROL Displayed] eller [!UICONTROL Hidden].
+* Activity Map kontrollerar om synligheten för länkar som de känner till har ändrats. Om synligheten ändras uppdateras kolumnen Present (Länkar på sida) för den länken med [!UICONTROL Displayed] eller [!UICONTROL Hidden].
 
-* När användarinteraktion skapar nytt innehåll läggs alla nya element som AppMeasurement finner vara en länk till i tabellen [!UICONTROL Links On Page]. Activity Map skickar en ny databegäran som innehåller de nya länkarna. De nya länkarna ska visas i tabellen [!UICONTROL Links On Page] när databegäran hanteras av användargränssnittet.
+* När användarinteraktion skapar nytt innehåll läggs alla nya element som AppMeasurement finner vara en länk till i [!UICONTROL Links On Page] tabell. Activity Map skickar en ny databegäran som innehåller de nya länkarna. De nya länkarna ska visas i [!UICONTROL Links On Page] tabellen när databegäran hanteras av användargränssnittet.
 
 
 ## Tillhandahåller Activity Map data om&quot;vyer&quot;?
@@ -41,18 +41,18 @@ Activity Map har stöd för den senaste versionen av de flesta moderna webbläsa
 
 Activity Map skickar inte serversamtal själv. I stället inkluderas datavariabler för kontext i Activity Map i sidvisningsanropen för Analytics på efterföljande sida.
 
-## Varför saknas vissa rankade objektövertäckningar?**
+## Varför saknas vissa rankade objektövertäckningar?
 
 Vissa rankade länkar, t.ex. undermenylänkar, är dolda på sidan. Därför visas inte deras motsvarande länkövertäckningar. Rankningen beräknas för alla länkar på sidan, inklusive dolda länkar.
 
 ## Hur bestäms länkrankningen i rapporten Alla länkar?**
 
-* **I läget** Övertoning och Bubbel: Rankningen bestäms av måttkolumnen. För länkar med samma måttvärde baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
-* **I läget** Ingenjör och Lägre: Rankningen bestäms primärt av kolumnen % vinst. För länkar med samma ökning baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
+* **I läget Övertoning och Bubbel**: Rankningen bestäms av måttkolumnen. För länkar med samma måttvärde baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
+* **I grönt och glesare läge**: Rankningen bestäms primärt av kolumnen % vinst. För länkar med samma ökning baseras rangordningen ytterligare på länk-ID i alfabetisk ordning.
 
 ## Hur fungerar Activity Map med sidor som använder flera rapportsviter?
 
-Som standard använder Activity Map den rapportserie som är associerad med den första taggen som skickas av sidan. Du kan välja en annan taggad rapportserie via fliken **[!UICONTROL Activity Map Settings]** > **[!UICONTROL Others]**.
+Som standard använder Activity Map den rapportserie som är associerad med den första taggen som skickas av sidan. Du kan välja en annan taggad rapportserie via **[!UICONTROL Activity Map Settings]** > **[!UICONTROL Others]** -fliken.
 
 ## Hur länge söker Activity Map efter Adobe Analytics på sidan?
 
@@ -83,3 +83,16 @@ Nej, segment fungerar inte i Live-läge. Funktionen motsvarar den i realtidsrapp
 ## Är Activity Map kompatibelt med virtuella rapportsviter?
 
 Ja. På grund av begränsningar i den virtuella rapportsviten är Activity Map Live Mode inte kompatibelt med virtuella rapportsviter.
+
+## Hur inaktiverar jag Activity Map?
+
+Du har tre alternativ:
+
+* Ta bort `AppMeasurement_Module_ActivityMap` funktion från JS-filen
+* Lägg till egen kod som skriver om funktionen ovan med en tom brödtext, till exempel:
+
+   ```
+   function AppMeasurement_Module_ActivityMap() {}
+   ```
+
+* Konfigurera AppMeasurement med inställning `s.trackClickMap` och `s.trackInlineStats` till `false`
