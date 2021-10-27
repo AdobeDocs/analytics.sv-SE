@@ -3,10 +3,10 @@ description: Visar exempel på hur du kan etikettera data för träffdata, åtko
 title: Exempel på etiketter
 uuid: a9a5b937-dbde-4f0f-a171-005ef4c79df9
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: fe277bea867dc67e8693673a547adecccf169332
+source-git-commit: 91864a15bda5022dbbd9b9b312bc6c042078b6a5
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 67%
+source-wordcount: '814'
+ht-degree: 63%
 
 ---
 
@@ -39,7 +39,7 @@ Om jag skickar en åtkomstbegäran innehåller den sammanfattande filen de värd
 <table>
   <tr>
     <th colspan="2" style="text-align:center">API-värden</th>
-    <th rowspan="2">Returnerad<br>filtyp</th>
+    <th rowspan="2">Returnerad<br>Filtyp</th>
     <th colspan="5" style="text-align:center">Data i sammanfattningsåtkomstfil</th>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Om jag skickar en åtkomstbegäran innehåller den sammanfattande filen de värd
     <td>U, W</td>
   </tr>
   <tr>
-    <td rowspan="2">user=Mary<br>AID=66</td>
+    <td rowspan="2">user=Mary<br>AAID=66</td>
     <td rowspan="2">sant</td>
     <td>person</td>
     <td>Mary</td>
@@ -147,7 +147,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 <table>
   <tr>
-    <th colspan="5" style="text-align:center">AAID=77 <br>(expandIDs-värdet spelar ingen roll)</th>
+    <th colspan="5" style="text-align:center">AAID=77 <br>(värdet expandIDs spelar ingen roll)</th>
   </tr>
   <tr>
     <th>MyProp1</th>
@@ -362,8 +362,9 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 Observera följande:
 
-* Celler på rader som innehåller `user=Mary` och en `DEL-DEVICE`- eller `DEL-PERSON`-etikett påverkas, och celler med en `DEL-DEVICE`-etikett på rader som innehåller ett Visitor ID (AID) som finns på en rad som innehåller `user=Mary`.
-* Inställningen expandIDs utökas inte till anropet för att inkludera värden som finns i MyEvar3, som har en ID-DEVICE-etikett, när `user=Mary`. Expanderings-ID:n utökas endast så att de inkluderar besökar-ID:n (AAID:n i det här exemplet, men även ECID:n) på rader där `user=Mary`.
-* `MyEvar2` i den fjärde och femte raden uppdateras eftersom de här raderna innehåller samma besökar-ID-värden som på den första och andra raden. Detta innebär att ID-expansion inkluderar dem för borttagning på enhetsnivå.
-* Värdena för `MyEvar2` i rader två och fem matchar både före och efter borttagningen. Efter borttagningen matchar de emellertid inte längre värdet N som finns på den sista raden, eftersom raden inte uppdaterades som en del av borttagningsbegäran.
-* `MyEvar3` beter sig på ett helt annorlunda än vad det gjorde utan ID-expansion, eftersom ingen `ID-DEVICES` matchade utan ID-expansion. Nu matchar `AAID` de första fem raderna.
+* Celler på rader som innehåller `user=Mary` och `DEL-PERSON` etiketten påverkas.
+* På grund av ID-expansion finns celler på rader som innehåller `AAID=77`, `AAID=88` eller `AAID=99` (som är AAID-värden på rader som innehåller `user=Mary`) och `DEL-DEVICE` etiketten påverkas. Detta inkluderar celler med `DEL-DEVICE` etikett på rader där `user=Mary`. Detta orsakar celler i raderna 4 och 5 (samt raderna 1-3) med `DEL-DEVICE` etiketter (AAID, MyEvar2 och MyEvar3) som ska döljas.
+* Inställningen expandID utökas inte till anropet för att inkludera värden som finns i MyEvar3 (`X`, `Y` och `Z`), som har en ID-DEVICE-etikett, när `user=Mary`. Expanderings-ID:n utökas endast så att de inkluderar besökar-ID:n (AAID:n i det här exemplet, men även ECID:n) på rader där `user=Mary`. De två sista raderna som innehåller MyEvar3-värden för `X` och `Z` påverkas inte.
+* `MyEvar2` i den fjärde och femte raden uppdateras eftersom dessa rader innehåller samma ID-värden för besökare (`77` och `88`) som på den första och andra raden. Detta innebär att ID-expansion inkluderar dem för borttagning på enhetsnivå.
+* Värdena för `MyEvar2` i rader två och fem matchar både före och efter borttagningen. Efter borttagningen matchar de dock inte längre värdet `N` som inträffar i den sista raden, eftersom raden inte uppdaterades som en del av borttagningsbegäran.
+* `MyEvar3` beter sig på ett helt annorlunda än vad det gjorde utan ID-expansion, eftersom ingen `ID-DEVICES` matchade utan ID-expansion. Nu `AAID` matchar de första fem raderna.
