@@ -4,7 +4,7 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: 50aa39ec6566e615b2a7c30bae0ffe7940120e9a
+source-git-commit: 324ee0f5839442ba1575b65a1159a23bed7129b4
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 1%
