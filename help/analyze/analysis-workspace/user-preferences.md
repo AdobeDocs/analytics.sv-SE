@@ -1,19 +1,19 @@
 ---
 title: Ange användarinställningar i Analysis Workspace
-description: Du kan ange allmänna inställningar och projektinställningar för användare.
-feature: Grundläggande om arbetsytan
+description: Du kan ange allmänna inställningar och projektinställningar för användare samt en mörk temainställning.
+feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 50aa39ec6566e615b2a7c30bae0ffe7940120e9a
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '255'
 ht-degree: 1%
 
 ---
 
 # Användarinställningar
 
-På sidan [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera inställningar för Analysis Workspace och dess relaterade komponenter på användarnivå. Användarinställningarna gäller för alla *nya* projekt eller paneler.
+The [!UICONTROL Components] > [!UICONTROL User preferences] På -sidan kan du hantera inställningar för Analysis Workspace och dess relaterade komponenter på användarnivå. Användarinställningarna gäller för alla *new* projekt eller paneler.
 
 ![Användarinställningar](assets/user-preferences.png)
 
@@ -28,7 +28,7 @@ Allmänna inställningar gäller för din Adobe Analytics-upplevelse i webbläsa
 
 ## Projektinställningar
 
-Projektinställningar gäller för nya projekt och nya paneler som skapas i Analysis Workspace. Vissa inställningar kan också hanteras per projekt under [!UICONTROL Workspace] > [!UICONTROL Project] > [!UICONTROL Project info & settings].
+Projektinställningar gäller för nya projekt och nya paneler som skapas i Analysis Workspace. Vissa inställningar kan också hanteras per projekt enligt [!UICONTROL Workspace] > [!UICONTROL Project] > [!UICONTROL Project info & settings].
 
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
@@ -41,3 +41,13 @@ Projektinställningar gäller för nya projekt och nya paneler som skapas i Anal
 |  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
 |  | Nummerformat | <ul><li>1 000,00 (standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-avgränsningstecken | <ul><li>Komma (standard)</li><li>Semikolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Blanksteg</li><li>Tabb</li></ul> |
+
+## [!UICONTROL Dark theme]
+
+Om du föredrar en mörk bakgrund för användargränssnittet i Adobe Analytics kan du växla till [!UICONTROL Dark theme].
+
+1. Klicka på användarikonen Experience Cloud längst upp till höger.
+
+   ![mörkt tema](assets/dark-theme.png)
+
+1. Flytta **[!UICONTROL Dark theme]** till höger.
