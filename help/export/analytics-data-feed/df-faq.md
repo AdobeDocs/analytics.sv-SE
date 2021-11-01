@@ -3,9 +3,9 @@ description: Vanliga frågor och svar om dataflöden
 keywords: Datautmatning;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-source-git-commit: b895b082d624aa3a680284ce7a760629e9fafb3e
+source-git-commit: b81ffba2f1e021888dd1c4b016c9b451448f47bb
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1439'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Om du får det här felet bör du tänka på följande tillfälliga lösningar:
 
 ## När behandlas data? {#section_6346328F8D8848A7B81474229481D404}
 
-Innan timdata eller dagliga data bearbetas väntar dataflödena tills alla träffar som matades in inom tidsramen (dag eller timme) har skrivits ut till data warehouse. När detta inträffar samlar dataflödena in data med tidsstämplar som ligger inom tidsramen, komprimerar dem och skickar dem via FTP. För timmatningar skrivs filer vanligtvis ut till data warehouse inom 15-30 minuter efter timmen, men det finns ingen fast tidsperiod. Om det inte fanns några data med tidsstämplar som ligger inom tidsramen försöker processen igen nästa tidsram. Den aktuella dataflödesprocessen använder fältet `date_time` för att avgöra vilka träffar som tillhör timmen. Det här fältet baseras på rapportsvitens tidszon.
+Innan timdata eller dagliga data bearbetas väntar dataflödena tills alla träffar som matades in inom tidsramen (dag eller timme) har skrivits ut till data warehouse. När detta inträffar samlar dataflödena in data med tidsstämplar som ligger inom tidsramen, komprimerar dem och skickar dem via FTP. För timmatningar skrivs filer vanligtvis ut till data warehouse inom 15-30 minuter efter timmen, men det finns ingen fast tidsperiod. Om det inte fanns några data med tidsstämplar som ligger inom tidsramen försöker processen igen nästa tidsram. Den aktuella dataflödesprocessen använder `date_time` för att avgöra vilka träffar som hör till timmen. Det här fältet baseras på rapportsvitens tidszon.
 
-## Vad är skillnaden mellan kolumner med ett `post_`-prefix och kolumner utan ett `post_`-prefix?
+## Vad är skillnaden mellan kolumner med en `post_` prefix och kolumner utan `post_` prefix?
 
-Kolumner utan `post_`-prefixet innehåller data exakt som de skickades till datainsamlingen. Kolumner med ett `post_`-prefix innehåller värdet efter bearbetning. Exempel som kan ändra ett värde är variabelbeständighet, bearbetningsregler, VISTA-regler, valutakonvertering eller annan logik på serversidan som gäller Adobe. Adobe rekommenderar att du använder `post_`-versionen av en kolumn där det är möjligt.
+Kolumner utan `post_` -prefixet innehåller data exakt som de skickades till datainsamlingen. Kolumner med en `post_` -prefixet innehåller värdet efter bearbetning. Exempel som kan ändra ett värde är variabelbeständighet, bearbetningsregler, VISTA-regler, valutakonvertering eller annan logik på serversidan som gäller Adobe. Adobe rekommenderar att du använder `post_` version av en kolumn där det är möjligt.
 
-Om en kolumn inte innehåller en `post_`-version (till exempel `visit_num`) kan kolumnen betraktas som en postkolumn.
+Om en kolumn inte innehåller en `post_` version (till exempel `visit_num`) kan kolumnen betraktas som en postkolumn.
 
 ## Hur hanterar dataflöden skiftlägeskänslighet?
 
@@ -44,17 +44,17 @@ Om du ser olika skiftlägesvariationer av samma värde mellan icke-post- och pos
 
 ## Filtreras robotar av administratörskonsolens robotregler i dataflöden?
 
-Dataflöden inkluderar inte botar som filtrerats av [administratörskonsolens robotregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html).
+Dataflöden inkluderar inte robotar som filtreras av [Administratörskonsolens startregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html).
 
-## Varför ser jag flera `000`-värden i `event_list`- eller `post_event_list`-dataflödeskolumnen?
+## Varför ser jag flera `000` värden i `event_list` eller `post_event_list` dataflödeskolumn?
 
-Vissa kalkylbladsredigerare, särskilt Microsoft Excel, rundar automatiskt av stora tal. Kolumnen `event_list` innehåller många kommaavgränsade tal, vilket ibland kan göra att Excel hanterar den som ett stort antal. Det avrundar de sista siffrorna till `000`.
+Vissa kalkylbladsredigerare, särskilt Microsoft Excel, rundar automatiskt av stora tal. The `event_list` -kolumnen innehåller många kommaavgränsade tal, vilket ibland kan göra att Excel hanterar den som ett stort antal. Det avrundar de sista siffrorna till `000`.
 
-Adobe rekommenderar att du inte öppnar `hit_data.tsv`-filer automatiskt i Microsoft Excel. Använd i stället Excel-dialogrutan Importera data och se till att alla fält behandlas som text.
+Adobe rekommenderar att du inte öppnar automatiskt `hit_data.tsv` filer i Microsoft Excel. Använd i stället Excel-dialogrutan Importera data och se till att alla fält behandlas som text.
 
-## Finns det garantier för att kolumner som `hitid_high`, `hitid_low`, `visid_high` och `visid_low` är unika för träffen eller besöket?
+## Är kolumner som `hitid_high`, `hitid_low`, `visid_high`och `visid_low` Garanterat unik för träffen eller besöket?
 
-I nästan alla fall kan en träff identifieras unikt när `hitid_high` och `hitid_low` slås samman. Samma koncept gäller för sammanfogning av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som inte är flexibla och som kräver att varje träff är unik.
+I nästan alla fall har `hitid_high` och `hitid_low` unikt identifiera en träff. Samma koncept gäller för sammanfogningen av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som inte är flexibla och som kräver att varje träff är unik.
 
 ## Varför saknas information i domänkolumnen för vissa bärare? {#section_B7508D65370442C7A314EAED711A2C75}
 
@@ -80,7 +80,7 @@ Om en FTP-överföring misslyckas (på grund av nekad inloggning, förlorad ansl
 
 Om överföringen misslyckas kan du köra ett jobb igen tills det lyckas.
 
-Om du har problem med att få en datafeed att visas på FTP-platsen kan du läsa [Felsöka jobb](jobs-troubleshooting.md).
+Om du har problem med att få en datafeed att visas på FTP-platsen, se [Felsöka dataflöden](troubleshooting.md).
 
 ## Hur skickar jag om ett jobb? {#section_BFD4447B0B5946CAAEE4F0F03D42EDFD}
 
@@ -88,19 +88,14 @@ När du har verifierat/korrigerat leveransproblemet kör du jobbet igen för att
 
 ## Vad är inställningen BucketOwnerFullControl för Amazon S3-dataflöden? {#BucketOwnerFullControl}
 
-**** BucketOwnerFullControlger korskontobehörighet för att skapa objekt i andra grupper.
+**BucketOwnerFullControl** ger behörighet att skapa objekt i andra grupper.
 
-Ett vanligt användningsexempel för Amazon S3 är att kontoägaren för Amazon Web Services (AWS) skapar en bucket, sedan skapar en användare som har behörighet att skapa objekt i den bucket och sedan anger inloggningsuppgifter för den användaren. I det här fallet tillhör en användares objekt samma konto och kontoägaren har implicit fullständig kontroll över objektet (läs, ta bort och så vidare). Den här processen liknar hur FTP-leverans fungerar.
+Det vanliga användningsområdet för Amazon S3 är att kontoägaren för Amazon Web Services (AWS) skapar en bucket, sedan skapar en användare som har behörighet att skapa objekt i den bucket och sedan anger inloggningsuppgifter för den användaren. I det här fallet tillhör en användares objekt samma konto och kontoägaren har implicit fullständig kontroll över objektet (läs, ta bort och så vidare). Den här processen liknar hur FTP-leverans fungerar.
 
-AWS gör det även möjligt för en användare att skapa objekt i en bucket som tillhör ett annat användarkonto. Exempel: två AWS-användare, userA och userB, tillhör inte samma AWS-konto men vill skapa objekt i andra bucket. Om userA skapar en bucket som kallas&quot;bucketA&quot; kan de skapa en bucket-princip som uttryckligen tillåter userB att skapa objekt i bucketA även om användaren inte äger bucket. Den här principen kan vara fördelaktig eftersom den inte kräver userA och userB för utbyte av autentiseringsuppgifter. I stället förser userB userA med sitt kontonummer och userA skapar en bucket-princip som i huvudsak säger&quot;let userB create objects in bucketA&quot;.
+AWS gör det även möjligt för en användare att skapa objekt i en bucket som tillhör ett annat användarkonto. Exempel: två AWS-användare, userA och userB, tillhör inte samma AWS-konto men vill skapa objekt i andra bucklar. Om userA skapar en bucket som kallas&quot;bucketA&quot; kan de skapa en bucket-princip som uttryckligen tillåter userB att skapa objekt i bucketA även om användaren inte äger bucket. Den här principen kan vara fördelaktig eftersom den inte kräver userA och userB för utbyte av autentiseringsuppgifter. I stället förser userB userA med sitt kontonummer och userA skapar en bucket-princip som i huvudsak säger&quot;let userB create objects in bucketA&quot;.
 
 Objekt ärver dock inte behörigheter från den överordnade bucket. Om userB överför ett objekt till userA:s bucket&quot;äger&quot; därför userB fortfarande det objektet, och som standard beviljas inte userA några behörigheter till det objektet trots att userA äger bucket. UserB måste uttryckligen tilldela userA-behörigheter eftersom userB fortfarande är objektets ägare. För att ge denna behörighet måste userB överföra objektet med en BucketOwnerFullControl ACL, som anger att bucket-ägaren (userA) har fullständig behörighet till objektet (läsa, skriva, ta bort och så vidare), även om objektet är&quot;ägt&quot; av userB.
 
 >[!NOTE]
 >
->[!DNL Analytics] avgör inte om bucket har en princip som kräver att bucket-ägaren får fullständig kontroll över nya objekt, eller även om bucket-ägaren finns på ett annat konto än användaren som skriver data. I stället lägger [!DNL Analytics] automatiskt till bucket-ägaren i BucketOwnerFullControl-åtkomstkontrollistan med varje feed-överföring.
-
->[!MORELIKETHIS]
->
->* [Felsöka jobb](jobs-troubleshooting.md)
-
+>[!DNL Analytics] avgör inte om bucket har en princip som kräver att bucket-ägaren får fullständig kontroll över nya objekt, eller även om bucket-ägaren finns på ett annat konto än användaren som skriver data. Istället [!DNL Analytics] lägger automatiskt till bucketägaren till BucketOwnerFullControl ACL med varje feed-överföring.

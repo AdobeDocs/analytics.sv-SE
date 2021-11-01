@@ -2,9 +2,9 @@
 title: Implementera med hårdkodade bildbegäranden
 description: Implementera Adobe Analytics med en HTML-bildtagg (hårdkodad bildbegäran)
 exl-id: 84247daf-c94b-456c-9824-6d4a0b3e6065
-source-git-commit: de0424db27f9d1a3ce07632df8fd5e76b4d7bb4c
+source-git-commit: a97043caa9b6d2dc24f52c599fd0caa9241af62f
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,19 @@ Den här implementeringsmetoden kan användas på alla plattformar som visar bil
 
 ## Syntax för bildbegäran
 
-Följande är ett exempel på hårdkodad bildbegäran med HTML:
+Följande är ett exempel på maskinkodad bildbegäran med HTML:
 
 ```html
-<img src="https://example.data.adobedc.net/b/ss/examplersid/1?AQB=1&g=http%3A%2F%2Fexample.com&pageName=Example%20hardcoded%20hit&v1=Example%20value&AQE=1"/>
+<img src="https://example.data.adobedc.net/b/ss/examplersid/1/s234234238479?AQB=1&g=http%3A%2F%2Fexample.com&pageName=Example%20hardcoded%20hit&v1=Example%20value&AQE=1"/>
 ```
 
 * `https://` anger protokollet. Matcha det protokoll som används i bildbegäran med det protokoll som används av resten av din plats.
-* `example.data.adobedc.net` är värdet i  [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) variabeln.
+* `example.data.adobedc.net` är värdet i [`trackingServer`](/help/implement/vars/config-vars/trackingserver.md) variabel.
 * `/b/ss/` ingår i alla bildbegäranden. Den ingår i filstrukturen för bilder som lagras på datainsamlingsservrar i Adobe.
-* `examplersid` är det rapportsvit-ID som du vill skicka data till. Separera ID:n med kommatecken och inga mellanslag (till exempel `examplersid1,examplersid2`) för flera rapportsviter.
-* `/1/` är träffkällan. Se `hit_source` under [Datakolumnreferens](../../export/analytics-data-feed/c-df-contents/datafeeds-reference.md) i användarhandboken för Export. Styr i vilken ordning cookies och andra metoder används för att identifiera besökare.
-* Allt efter frågesträngsavgränsaren (`?`) är data som du vill ta med i rapporter. Se [Frågeparametrar för datainsamling](../validate/query-parameters.md) för en fullständig lista över parametrar som du kan ta med i en bildbegäran.
+* `examplersid` är det rapportsvit-ID som du vill skicka data till. Separera ID:n med kommatecken och inga mellanslag (t.ex. `examplersid1,examplersid2` och så vidare).
+* `/1/` är träffkällan. Se `hit_source` under [Referens för datakolumn](../../export/analytics-data-feed/c-df-contents/datafeeds-reference.md) i Exportera användarhandbok. Styr i vilken ordning cookies och andra metoder används för att identifiera besökare.
+* `/s234234238479` (`"s"` + ett slumpmässigt tal) hindrar webbläsaren från att cachelagra bildbegäran.
+* Allt efter frågesträngsavgränsaren (`?`) är data som du vill inkludera i rapporter. Se [Frågeparametrar för datainsamling](../validate/query-parameters.md) om du vill ha en fullständig lista över parametrar som du kan inkludera i en bildbegäran.
 
 ## Maskinkodade bildbegäranden i Microsoft Outlook
 
@@ -43,14 +44,14 @@ Eftersom de flesta e-postmeddelanden är HTML-baserade går det att spåra e-pos
 
 Så här skapar du ett Outlook-e-postmeddelande som innehåller en bildbegäran:
 
-1. Öppna en HTML-redigerare. Om en HTML-redigerare inte är tillgänglig fungerar även en vanlig textredigerare.
-2. I en ny HTML-fil infogar du en hårdkodad bildbegäran `<img>`-tagg i en `<body>`-tagg.
-3. Spara HTML-filen.
+1. Öppna en HTML-redigerare. Om det inte finns någon HTML-redigerare fungerar även en vanlig textredigerare.
+2. Infoga en hårdkodad bildbegäran i en ny HTML-fil `<img>` tagg omsluten av `<body>` -tagg.
+3. Spara filen HTML.
 4. Öppna Microsoft Outlook och skapa ett e-postmeddelande.
-5. Gå till fliken Infoga och klicka på **Bifoga fil**. Välj en HTML-fil för bildbegäran.
-6. Klicka på snabbmenyn bredvid Infoga och välj **Infoga som text**. Om du klickar på knappen Infoga utan snabbmenyn, blir HTML-filen en bifogad fil som inte fungerar.
+5. Gå till fliken Infoga och klicka på **Bifoga fil**. Markera HTML-filen för bildförfrågan.
+6. Klicka på snabbmenyn bredvid Infoga och välj **Infoga som text**. Om du klickar på knappen Infoga utan snabbmenyn blir HTML-filen en bifogad fil som inte fungerar.
 
-E-postmeddelandet verkar inte ändras eftersom bildbegäran är en 1x1-genomskinlig pixel. Om du vill se bildbegäran för testning ändrar du HTML-filen så att den innehåller en kantlinje, ytterligare text eller annat innehåll.
+E-postmeddelandet verkar inte ändras eftersom bildbegäran är en 1x1-genomskinlig pixel. Om du vill visa bildbegäran för testning ändrar du filen HTML så att den innehåller en kantlinje, ytterligare text eller annat innehåll.
 
 ## Vanliga frågor
 
@@ -58,13 +59,13 @@ Lär dig mer om vanliga frågor med hjälp av hårdkodade bildbegäranden.
 
 ### Är frågesträngsparametrar skiftlägeskänsliga?
 
-Ja. Kontrollera att frågesträngsparametrarna matchar varandra exakt, annars registreras de inte. Till exempel är `pagename` inte en giltig frågesträngsparameter, medan `pageName` är det.
+Ja. Kontrollera att frågesträngsparametrarna matchar varandra exakt, annars registreras de inte. Till exempel: `pagename` är inte en giltig frågesträngsparameter, medan `pageName` är.
 
 ### Kan jag inkludera blanksteg i frågesträngen?
 
 Värdena för var och en av frågesträngsparametrarna är URL-kodade. URL-kodning konverterar tecken som normalt är ogiltiga i URL-adresser till giltiga tecken. Ett blankstegstecken konverteras till exempel till `%20`. Kontrollera att alla tecken som inte är alfanumeriska är URL-kodade. Adobe URL-avkodar automatiskt värden när bildbegäranden når datainsamlingsservrar.
 
-Mer information om hur URL-kodning fungerar finns i [HTML URL-kodningsreferens](https://www.w3schools.com/tags/ref_urlencode.asp) på W3Schools.
+Se [HTML URL-kodningsreferens](https://www.w3schools.com/tags/ref_urlencode.asp) på W3Schools för mer information om hur URL-kodning fungerar.
 
 ### Vilket är det högsta antalet tecken ett enskilt värde kan ha?
 

@@ -1,11 +1,13 @@
 ---
 title: Hantera datafeedjobb
 description: Lär dig hur du hanterar enskilda jobb i dataflöden.
-translation-type: tm+mt
-source-git-commit: 7db88bce7b3d0f90fa5b50664d7c0c23904348c0
+exl-id: b17e333e-290f-42e4-b304-1e34282237a7
+source-git-commit: 963e66b05cc401956211c28b9ffeb9aad6bed604
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 2%
 
 ---
-
 
 # Hantera datafeedjobb
 
@@ -13,16 +15,16 @@ Jobb är enskilda uppgifter som returnerar en komprimerad fil. De skapas och sty
 
 Få åtkomst till jobbhantering för datafeed genom att följa dessa steg:
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com).
+1. Logga in på [experience.loud.adobe.com](https://experiencecloud.adobe.com).
 2. Klicka på menyn med nio rutnät i det övre högra hörnet och klicka sedan på [!UICONTROL Analytics].
-3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds]i den övre menyn.
+3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds].
 4. Klicka på fliken Jobb uppe.
 
 ![Meny för datafeed](assets/AdminMenu.png)
 
 ## Navigera i gränssnittet
 
-Ett datafeedjobb är en enda instans där Adobe bearbetar och skickar en komprimerad fil för ett visst rapportfönster. Jobbhanteraren ger en förfinad vy för att se status för enskilda jobb.
+Ett datafeedjobb är en enda instans där Adobe bearbetar och returnerar en komprimerad fil för ett visst rapportfönster. Jobbhanteraren ger en förfinad vy för att se status för enskilda jobb.
 
 ![Jobb](assets/jobs.jpg)
 
@@ -58,7 +60,7 @@ Varje jobb visar flera kolumner med information om det. Klicka på en kolumnrubr
    * Väntar på data: Jobbet är i drift och data för rapportfönstret samlas in.
    * Bearbetar: Jobbet skapar datafilerna och förbereder att skicka dem.
    * Slutförd: Jobbet slutfördes utan problem.
-   * Misslyckades: Jobbet slutfördes inte. Se [Felsöka jobb](jobs-troubleshooting.md) för att fastställa orsaken till felet.
+   * Misslyckades: Jobbet slutfördes inte. Se [Felsöka dataflöden](troubleshooting.md) för att fastställa orsaken till felet.
    * Väntar på export: Data för rapportfönstret har ännu inte bearbetats fullständigt.
    * Inga data: Det finns inga data i rapportsviten för det begärda rapportfönstret.
 * **Slutförandetid**: Tiden då jobbet slutfördes. Datum och tid visas i rapportsvitens tidszon med GMT-förskjutning.
