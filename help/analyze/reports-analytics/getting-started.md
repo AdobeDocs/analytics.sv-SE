@@ -1,17 +1,20 @@
 ---
 description: Innan du använder Reports and Analytics bör du känna till dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 title: Komma igång med Reports and Analytics
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 7bd8f28c-2b7a-4220-bd82-1e43edc2c0cd
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: baceae144480bc93634c35ce1bdea5d2ceec56e8
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 1%
+source-wordcount: '703'
+ht-degree: 0%
 
 ---
 
 # Kom igång med rapporter och analyser
+
+>[!NOTE]
+>Produkten är godkänd för försäljning i Nordamerika och andra regioner där produkten faktiskt säljs och kanske inte uppfyller kraven för försäljning i andra länder eller regioner.
 
 Innan du använder Rapporter och analyser bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 
@@ -31,15 +34,10 @@ Rapportering ger insikter om era traditionella webbaserade kanaler och om de kan
 
 Webbläsare och systemkrav för att logga in i gränssnittet Rapporter och analyser.
 
-* Webbläsare:
+>[!NOTE]
+>Adobe slutade stödja Internet Explorer 11 i Adobe Analytics den 13 november 2018. Byt så snart som möjligt till Microsoft Edge eller någon annan webbläsare som stöds.
 
-   * Önskat: De senaste versionerna av Firefox, Chrome, Safari eller Edge.
-   * Senaste versionen av Microsoft Internet Explorer 11
-
-      >[!NOTE]
-      >
-      >Adobe slutade stödja Internet Explorer 11 i Adobe Analytics den 13 november 2018. Växla så snart som möjligt till Microsoft Edge eller någon annan webbläsare som stöds.
-
+* Standardwebbläsare: De senaste versionerna av Firefox, Chrome, Safari eller Edge.
 * Cookies och JavaScript måste vara aktiverade.
 * Bildskärmsupplösning på 1 024 x 768 med 16-bitars färgdjup (eller högre).
 
@@ -53,7 +51,7 @@ Steg som beskriver hur du loggar in via Adobe Experience Cloud.
 
 1. Starta en webbläsare på en dator med åtkomst till Internet.
 1. Gå till [!DNL https://login.experiencecloud.adobe.com/].
-1. Klicka på **[!UICONTROL Single Sign-On]** på sidan [!UICONTROL Sign In].
+1. På [!UICONTROL Sign In] sida, klicka **[!UICONTROL Single Sign-On]**.
 1. Fyll i följande information och klicka sedan på **[!UICONTROL Sign In]**.
 
    **[!UICONTROL Company]**: Ange företags-ID.
@@ -61,7 +59,7 @@ Steg som beskriver hur du loggar in via Adobe Experience Cloud.
    **[!UICONTROL Username]**: Ange ditt konto-ID.
 
    **[!UICONTROL Password]**: Ange ditt kontolösenord.
-1. Gå till **Analys > Rapporter** från startsidan för Experience Cloud.
+1. Från Experience Cloud hemsida går du till **Analytics > Reports**.
 
    Experience Cloud loggar automatiskt ut dig efter 30 minuters inaktivitet.
 
@@ -71,9 +69,9 @@ Steg som beskriver hur en rapport genereras.
 
 1. Logga in på [!UICONTROL Reports & Analytics].
 
-   Rapporter-menyn visas eller en [instrumentpanel](/help/analyze/reports-analytics/dashboard.md) visas om du har konfigurerat en sådan.
+   Menyn Rapporter visas, eller en [kontrollpanel](/help/analyze/reports-analytics/dashboard.md) visas om du har ställt in en.
 
-1. Klicka på **[!UICONTROL Site Content]** > **[!UICONTROL Pages]** (till exempel).
+1. Klicka **[!UICONTROL Site Content]** > **[!UICONTROL Pages]** (till exempel).
 
    ![](assets/pages_report.png)
 
@@ -85,9 +83,9 @@ Information om hur du redigerar användarkonton, återställer användarlösenor
 
 Du kan visa och redigera kontaktinformation, ange ett lösenord, visa webbtjänstinformation och utesluta den här datorn från datainsamlingen.
 
-Klicka på kontoikonen ![](assets/account.png)överst till höger och klicka sedan på ikonen **[!UICONTROL Account Settings]** (hjul) bredvid ditt inloggningsnamn.
+Klicka på kontoikonen ![](assets/account.png)överst till höger klickar du på **[!UICONTROL Account Settings]** (hjul) bredvid ditt inloggningsnamn.
 
-Alla användare har tillgång till sidan [!UICONTROL Account Information]. Följande information är tillgänglig för visning och redigering:
+Alla användare har åtkomst till [!UICONTROL Account Information] sida. Följande information är tillgänglig för visning och redigering:
 
 | Typ av information | Definition |
 | --- | --- |
@@ -100,7 +98,7 @@ Alla användare har tillgång till sidan [!UICONTROL Account Information]. Följ
 
 Steg som beskriver hur gränssnittsspråket ändras. Du kan visa Reports and Analytics-gränssnittet på det språk du vill.
 
-1. Logga in på Analytics och välj fliken **[!UICONTROL Reports]**.
-1. Klicka på det aktiva språket på menyn **[!UICONTROL Language]** i sidfoten och välj sedan det språk du vill använda.
+1. Logga in på Analytics och välj **[!UICONTROL Reports]** -fliken.
+1. Klicka på det aktiva språket i sidfoten **[!UICONTROL Language]** väljer du sedan det språk du vill använda.
 
 Du kommer åt dokumentationen och hemsidan från Adobe Experience Cloud. ( **[!UICONTROL Help]** > **[!UICONTROL Help Home]**.)
