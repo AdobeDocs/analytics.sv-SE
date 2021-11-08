@@ -1,26 +1,32 @@
 ---
-description: Sammanhangsberoende sessioner i virtuella rapportsviter ändrar hur Adobe Analytics beräknar mobilbesök. I den här artikeln beskrivs konsekvenserna av bakgrundstötar och appstarthändelser (som båda anges av SDK för mobiler) för hur mobilbesök definieras.
-title: Sammanhangsberoende sessioner
+description: Sammanhangsberoende sessioner i virtuella rapportsviter förändrar hur Adobe Analytics beräknar mobilbesök. I den här artikeln beskrivs konsekvenserna av bakgrundstötar och appstarthändelser (som båda anges av SDK för mobiler) för hur mobilbesök definieras.
+title: Sammanhangsmedvetna sessioner
 uuid: d354864a-9163-4970-a3a0-f2e9729bdbe3
-translation-type: tm+mt
-source-git-commit: 3997889ae72920d719203edbb159b55b983158e7
+exl-id: 5e969256-3389-434e-a989-ebfb126858ef
+source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
+workflow-type: tm+mt
+source-wordcount: '1563'
+ht-degree: 0%
 
 ---
 
-
-# Sammanhangsberoende sessioner
+# Sammanhangsmedvetna sessioner
 
 Sammanhangsberoende sessioner i virtuella rapportsviter ändrar hur Adobe Analytics beräknar besök från alla enheter. I den här artikeln beskrivs också hur bakgrundstödsträffar och appstarthändelser (som båda anges av SDK för mobiler) påverkar hur mobilbesök definieras.
 
 Ni kan definiera ett besök som ni vill utan att ändra underliggande data, så att det matchar hur besökarna interagerar med era digitala upplevelser.
 
+Här är en video om kontextmedvetna sessioner:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23545/?quality=12)
+
 ## URL-parameter för kundperspektiv
 
-Med datainsamlingsprocessen i Adobe Analytics kan du ställa in en frågesträngsparameter som anger kundperspektivet (anges som frågesträngsparametern&quot;cp&quot;). I det här fältet anges tillståndet för slutanvändarens digitala program. Detta hjälper dig att veta om en träff genererades när en mobilapp befann sig i bakgrundsläge.
+Med Adobe Analytics datainsamlingsprocess kan du ange en frågesträngsparameter som anger kundperspektivet (anges som frågesträngsparametern&quot;cp&quot;). I det här fältet anges tillståndet för slutanvändarens digitala program. Detta hjälper dig att veta om en träff genererades när en mobilapp befann sig i bakgrundsläge.
 
 ## Bearbetning av bakgrundsträff
 
-En bakgrundträff är en typ av träff som skickas till Analytics från Adobe Mobile SDK version 4.13.6 och senare när appen gör en spårningsbegäran i bakgrundsläge. Typiska exempel på detta är:
+En bakgrundsträff är en typ av träff som skickas till Analytics från Adobe Mobile SDK version 4.13.6 och senare när appen gör en spårningsbegäran i bakgrundsläge. Typiska exempel på detta är:
 
 * Data som skickas under en geofästning
 * En push-meddelandeinteraktion
@@ -45,11 +51,11 @@ Exempel 1: En bakgrundsträff inträffar en viss tidsperiod (t) före en serie f
 
 ![](assets/nogoodexample1.jpg)
 
-I det här exemplet, om *t* är större än den virtuella rapportsvitens konfigurerade tidsgräns för besök, utesluts bakgrundskompensationen från besöket som utgörs av förgrundsträffarna. Om tidsgränsen för besöket i den virtuella rapportsviten var inställd på 15 minuter och *den* var 20 minuter, skulle besöket som utgörs av den här serien träffar (visas med den gröna konturen) utesluta bakgrundssessionen. Det innebär att alla eVars-variabler som har en &quot;besök&quot;-förfallotid på bakgrundsträffen **inte** kvarstår vid följande besök, och en besökssegmentbehållare skulle bara innehålla förgrundsträffarna inuti den gröna konturen.
+I det här exemplet *t* är större än den konfigurerade tidsgränsen för besöket i den virtuella rapportsviten, så utesluts bakgrundträffen från besöket som utgörs av förgrundsträffarna. Om tidsgränsen för besöket för den virtuella rapportsviten var inställd på 15 minuter, och *t* 20 minuter var besöket som gjordes av den här serien träffar (visas med den gröna konturen) som skulle utesluta bakgrundstöten. Det innebär att alla eVars-variabler som har en &quot;besök&quot;-förfallotid i bakgrundssatsen skulle **not** finns kvar i följande besök, och en besökssegmentbehållare skulle bara innehålla förgrundsträden inuti den gröna konturen.
 
 ![](assets/nogoodexample1-2.jpg)
 
-Omvänt gäller att om *t* är mindre än tidsgränsen för det virtuella rapportsvitens konfigurerade besök, inkluderas bakgrundsträffen som en del av besöket som om det var en förgrundsträff (visas med den gröna konturen):
+Omvänt, om *t* är mindre än den konfigurerade tidsgränsen för besöket i den virtuella rapportsviten, inkluderas bakgrundträffen som en del av besöket som om det var en förgrundsträff (visas med den gröna konturen):
 
 ![](assets/nogoodexample1-3.jpg)
 
@@ -68,7 +74,7 @@ Om bakgrundsträffen inträffar efter att den virtuella rapportsvitens konfigure
 
 ![](assets/nogoodexample2-1.jpg)
 
-Om tidsperioden *t* var kortare än den konfigurerade tidsgränsen för den virtuella rapportsviten, inkluderas även bakgrundsträffen i det besök som skapades av de föregående förgrundsträffarna:
+På samma sätt om tidsperioden *t* var mindre än den konfigurerade tidsgränsen för den virtuella rapportsviten, inkluderas bakgrundstoppet i det besök som skapades av föregående förgrundsträffar:
 
 ![](assets/nogoodexample2-2.jpg)
 
@@ -83,19 +89,19 @@ Exempel 3: I vissa fall kan en bakgrundstöt göra att två separata besök komb
 
 ![](assets/nogoodexample3.jpg)
 
-Om både *t1* och *t2* i det här exemplet är mindre än tidsgränsen för konfigurerade besök i den virtuella rapportsviten, kombineras alla dessa träffar till ett enda besök, även om *t1* och *t2* tillsammans är större än tidsgränsen för besök:
+If, i det här exemplet, *t1* och *t2* båda är mindre än den konfigurerade tidsgränsen för besök i den virtuella rapportsviten, skulle alla träffar kombineras till ett enda besök, även om *t1* och *t2* tillsammans är längre än tidsgränsen för besök:
 
 ![](assets/nogoodexample3-1.jpg)
 
-Om *t1* och *t2* är större än den konfigurerade tidsgränsen för den virtuella rapportsviten skulle dessa träffar delas upp i två skilda besök:
+Om *t1* och *t2* är större än den konfigurerade tidsgränsen för den virtuella rapportsviten, skulle dessa träffar delas upp i två skilda besök:
 
 ![](assets/nogoodexample3-2.jpg)
 
-Om *t1* är mindre än tidsgränsen och *t2* är mindre än tidsgränsen (som i våra tidigare exempel) inkluderas även bakgrundsträffen i det första besöket:
+På samma sätt (som i föregående exempel), if *t1* är mindre än timeout och *t2* är mindre än den timeout som bakgrundsträffen skulle ha inkluderats i det första besöket:
 
 ![](assets/nogoodexample3-3.jpg)
 
-Om *t1* är större än tidsgränsen och *t2* är mindre än tidsgränsen, inkluderas bakgrundsträffen i det andra besöket:
+If *t1* är större än tidsgränsen och *t2* är mindre än tidsgränsen, då skulle bakgrundstöten inkluderas i det andra besöket:
 
 ![](assets/nogoodexample3-4.jpg)
 
@@ -105,7 +111,7 @@ Exempel 4: I scenarier där en serie bakgrundsträffar inträffar inom tidsgrän
 
 Även om detta inte betraktas som ett besök kvarstår värdena för de eVars-uppsättningar som har en förfallotid för besök i bakgrunden i det här bakgrundsbesöket.
 
-Exempel 5: För scenarier där flera bakgrundsträffar inträffar i följd efter en serie förgrundsträffar är det möjligt (beroende på timeoutinställningen) att bakgrundstötarna håller ett besök levande längre än tidsgränsen för besöket. Om *t1* och *t2* tillsammans till exempel var större än tidsgränsen för besöket i den virtuella rapportsviten men var och en mindre än tidsgränsen, skulle besöket ändå omfatta båda bakgrundstötarna:
+Exempel 5: För scenarier där flera bakgrundsträffar inträffar i följd efter en serie förgrundsträffar är det möjligt (beroende på timeoutinställningen) att bakgrundstötarna håller ett besök levande längre än tidsgränsen för besöket. Om *t1* och *t2* tillsammans var större än tidsgränsen för besök i den virtuella rapportsviten, men individuellt mindre än tidsgränsen, skulle besöket ändå omfatta båda bakgrundstötarna:
 
 ![](assets/nogoodexample5.jpg)
 
@@ -125,7 +131,7 @@ Tidsåtgången beräknas fortfarande på ett liknande sätt som den är utan bak
 
 ## Bearbetningsinställningar för bakgrundsträff
 
-Eftersom träffbearbetning i bakgrunden endast är tillgänglig för virtuella rapportsviter som använder Report Time Processing, har Adobe Analytics stöd för två sätt att bearbeta bakgrundsträffar för att bevara antalet besök i basrapportsviten som inte använder Report Time Processing. Om du vill få tillgång till den här inställningen går du till Adobe Analytics Admin Console, till inställningarna för den tillämpliga basrapportsviten, går till menyn&quot;Hantering av mobilappar&quot; och sedan till undermenyn&quot;Rapportering av mobilprogram&quot;.
+Eftersom träffbearbetning i bakgrunden endast är tillgänglig för virtuella rapportsviter som använder Report Time Processing, stöder Adobe Analytics två sätt att bearbeta bakgrundsträffar för att bevara antalet besök i basrapportsviten som inte använder Report Time Processing. Om du vill komma åt den här inställningen går du till Adobe Analytics Admin Console och väljer basrapportsviten. Gå sedan till menyn &quot;Hantering av mobilappar&quot; och till undermenyn &quot;Rapportering av mobilprogram&quot;.
 
 1. &quot;Äldre bearbetning på&quot;: Det här är standardinställningen för alla rapportsviter. Att lämna äldre bearbetning på processens bakgrundsträffar som vanliga träffar i vår bearbetningsprocess när det gäller rapportsviten som inte är Report Time Attribution base. Det innebär att eventuella bakgrundstötningar som visas i basrapportsvitens stegvisa ökningar blir en normal träff. Om du inte vill att bakgrundsträffar ska visas i din basrapportsserie ändrar du den här inställningen till Av.
 1. &quot;Äldre bearbetning av&quot;: När äldre bearbetning för bakgrundstötlar är inaktiverat ignoreras alla bakgrundstötningar som skickas till basrapportsviten av den grundläggande rapportsviten och är bara tillgängliga när en virtuell rapportsvit som skapats med den här basrapportsviten har konfigurerats för att använda Report Time Processing. Det innebär att alla data som har hämtats av bakgrundsträffar som skickas till den här basrapportsviten bara visas i en virtuell rapportserie som har aktiverats för Report Time Processing.

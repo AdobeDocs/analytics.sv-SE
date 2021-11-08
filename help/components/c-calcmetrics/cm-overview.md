@@ -3,20 +3,19 @@ description: Beräknade och avancerade beräknade (eller härledda) mått är an
 keywords: Beräknade mått;Härledda värden;Avancerade beräknade värden
 title: Beräknade och avancerade beräknade (härledda) värden
 uuid: 2553c115-b15a-4109-8de2-733dbc1eeb9e
-translation-type: tm+mt
-source-git-commit: d0fe97b9368cbc4c9e79f9e56adf9786b58dce1a
+exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
+source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '579'
 ht-degree: 6%
 
 ---
-
 
 # Beräknade och avancerade beräknade (härledda) värden
 
 Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.
 
-Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan du som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra din [!DNL Analytics]-implementering. De anpassade mätvärden som finns i varje [!DNL Analytics]-paket är:
+Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra er [!DNL Analytics] implementering. Anpassade mätvärden som finns i [!DNL Analytics] paketet är:
 
 * Adobe [!DNL Analytics] Foundation: Beräknat
 * [Adobe Analytics Select](https://www.adobe.com/se/data-analytics-cloud/analytics/select.html): Beräknat + Avancerat beräknat
@@ -39,28 +38,34 @@ Här följer en jämförelse av funktionerna för beräknade värden och avancer
 
 Ni kan
 
-* Skapa mätvärden för [!UICONTROL Analysis Workspace], [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder], [!UICONTROL Anomaly Detection] och [!UICONTROL Contribution Analysis].
-* Skapa segmenterade mätvärden som härleds vid rapportkörningen, [utan att behöva ändra implementeringen](https://youtu.be/CuQTm9RaUpY). Dessa kan ses historiskt eftersom de baseras på segment.
+* Skapa mätvärden för [!UICONTROL Analysis Workspace], [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder], [!UICONTROL Anomaly Detection]och [!UICONTROL Contribution Analysis].
+* Skapa segmenterade mätvärden som genereras vid rapportkörning, utan att behöva ändra implementeringen. Dessa kan ses historiskt eftersom de baseras på segment. Här är en video om implementeringsfria mätvärden:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+
 * Dela mätvärden mellan olika rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
-* (Endast avancerade beräknade värden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot; med antalet personer som det här är den första sessionen för.
+* (Endast avancerade beräknade värden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot; med antalet personer som det här är den första sessionen för. Här är ett videoklipp om detta ämne:
+
+   >[!VIDEO](https://video.tv.adobe.com/v/25409/?quality=12)
+
 * (Endast avancerade beräknade värden) Inkludera statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
 
 ## Begränsningar {#section_CB878B02451541D68A68B508D4DBD19A}
 
-Vissa [!DNL Analytics]-funktioner gör att du kan använda händelser men inte beräknade värden:
+Några [!DNL Analytics] funktioner som gör att du kan använda händelser men inte beräknade värden:
 
-* [!UICONTROL Funnels] in  [!UICONTROL Reports & Analytics]
-* [!UICONTROL Fallout] in  [!UICONTROL Analysis Workspace]
+* [!UICONTROL Funnels] in [!UICONTROL Reports & Analytics]
+* [!UICONTROL Fallout] in [!UICONTROL Analysis Workspace]
 * [!UICONTROL Cohort Analysis] i Analysis Workspace
 * [!UICONTROL Data Warehouse]
 * [!UICONTROL Segments]
 * [!UICONTROL Real-Time] rapporter
 * [!UICONTROL Current Data] rapporter
-* [!DNL Analytics] for  [!DNL Target]
+* [!DNL Analytics] for [!DNL Target]
 
-## Verktyg {#section_D65E9C067E9C45E1A50DD30F50561BB2}
+## verktyg {#section_D65E9C067E9C45E1A50DD30F50561BB2}
 
-Här är en kort översikt över [!UICONTROL Calculated Metrics]-verktygen:
+Här är en kort översikt över [!UICONTROL Calculated Metrics] verktyg:
 
 <table id="table_520AFE97DB514958ABE23FD3C9CE0ABD"> 
  <thead> 
@@ -98,7 +103,7 @@ Här är en kort översikt över [!UICONTROL Calculated Metrics]-verktygen:
   </tr> 
   <tr> 
    <td colname="col1"> Mätväljarskenor </td> 
-   <td colname="col2"> <p>Ersätter popup-fönstret <span class="uicontrol"> Visa mått</span> i <span class="uicontrol"> Rapporter och analyser</span>. </p> <p>Du kan söka efter och lägga till/använda mätvärden i rapporten. Du kan också ändra sorteringsordningen <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-finding.md"  > (alternativen är: alfabetisk, rekommenderad, ofta använd, nyligen använd.) </a> Dessutom kan du filtrera rapportsviterna så att endast mätvärden som har skapats i en viss rapportserie visas. </p> <p>Om du vill komma åt den här mätväljaren klickar du på mätningsikonen <img placement="inline"  src="assets/metrics_icon.png" width="30px" id="image_2C6F20B4E634486B95BACD4CA47EF991" /> till vänster om en rapport. Så här ser mätväljaren ut: </p> <p><img src="assets/metrics_rail.png" width="200px" id="image_379523E9AFEC4CF08D20C42C740AA358" /> </p> </td> 
+   <td colname="col2"> <p>Ersätter <span class="uicontrol"> Visa mått</span> popup-fönster <span class="uicontrol"> Rapporter och analyser</span>. </p> <p>Du kan söka efter och lägga till/använda mätvärden i rapporten. Du kan också ändra <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-finding.md"  > sortera</a> ordning (alternativen är: alfabetisk, rekommenderad, ofta använd, nyligen använd.) Dessutom kan du filtrera rapportsviterna så att endast mätvärden som har skapats i en viss rapportserie visas. </p> <p>Om du vill komma åt den här mätväljaren klickar du på mätningsikonen <img placement="inline"  src="assets/metrics_icon.png" width="30px" id="image_2C6F20B4E634486B95BACD4CA47EF991" /> till vänster om en rapport. Så här ser mätväljaren ut: </p> <p><img src="assets/metrics_rail.png" width="200px" id="image_379523E9AFEC4CF08D20C42C740AA358" /> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/README.md"  > API för beräknade värden</a> </td> 
@@ -106,4 +111,3 @@ Här är en kort översikt över [!UICONTROL Calculated Metrics]-verktygen:
   </tr> 
  </tbody> 
 </table>
-

@@ -2,12 +2,12 @@
 description: Med kurering kan du begränsa komponenter innan du delar ett projekt.
 keywords: Analysis Workspace kurser
 title: Kuratprojekt
-feature: Kuratera och dela
+feature: Curate and Share
 role: User, Admin
 exl-id: 5e23be83-586a-4543-9be9-65c631b8b0b7
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,19 @@ Med kurering kan du begränsa komponenterna (mått, mått, segment, datuminterva
 >[!NOTE]
 > Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via Adobe Experience Cloud Admin Console. Curation är ett sekundärt filter.
 
+Här är en video om projektplanering och -delning:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24711/?quality=12)
+
 ## Använd projektstrukturering
 
 1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Curate Project Data]**.
 De komponenter som används i projektet läggs automatiskt till.
-   **Obs**: Om ett projekt har flera rapportsviter visas ett kuratefält för varje rapportserie i projektet.
-1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till fältet [!UICONTROL Curate Components].
+   **Anteckning**: Om ett projekt har flera rapportsviter visas ett kuratefält för varje rapportserie i projektet.
+1. (Valfritt) Om du vill lägga till fler komponenter drar du de komponenter du vill dela från den vänstra listen till [!UICONTROL Curate Components] fält.
 1. Klicka på **[!UICONTROL Done]**.
 
-Du kan också använda kurering från menyn [!UICONTROL Share] genom att klicka på **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
+Du kan också använda Kurva från [!UICONTROL Share] genom att klicka **[!UICONTROL Curate and Share]**. Med det här alternativet kurformas projektet automatiskt till de komponenter som används i projektet. Du kan lägga till ytterligare komponenter enligt stegen ovan.
 
 ![](assets/curation-field.png)
 
@@ -47,14 +51,14 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 
 ## VRS-kuration (Virtual Report Suite)
 
-Om du vill använda kurering på rapportsvitnivå, så att den gäller för många projekt samtidigt, kan du [strukturera komponenter i en VRS (Virtual Report Suite)](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html).
+Om du vill använda kurser på rapportsvitnivå så att de gäller för många projekt samtidigt kan du [kuratera komponenter i en VRS (Virtual Report Suite)](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html).
 
 >[!NOTE]
 > VRS-kurering används alltid före projektkurering. Detta innebär att även om ditt kuraterade projekt innehåller vissa komponenter, kommer de att filtreras bort om det aktuella VRS inte innehåller dem.
 
 ## Visa alla komponenter, alternativ
 
-I ett välstrukturerat projekt (VRS) kan mottagaren välja **[!UICONTROL Show All]**-komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
+I ett välstrukturerat projekt eller VRS kan mottagaren välja att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
 
 * Användarens behörighetsnivå (admin eller icke-admin)
 * Projektroll (ägare/redigerare eller inte)
@@ -67,4 +71,4 @@ Obs! Roller som inte är administratörsvy har inte åtkomst till den vänstra l
 |---|---|---|---|
 | Kuraterad VRS | Alla VRS-komponenter som inte är kuraterade | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem |
 | Kuraterat projekt | Alla projektkomponenter som inte är kuraterade | Alla projektkomponenter som inte är kuraterade | Ej förvaltade projektkomponenter som den här rollen äger eller som har delats med dem |
-| Kuraterat projekt i ett kuraterat VRS | Alla komponenter som inte är förvaltade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated VRS Components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltat VRS och projektkomponenter som den här rollen äger eller har delats med dem |
+| Kuraterat projekt i ett kuraterat VRS | Alla komponenter som inte är kuraterade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated VRS Components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltat VRS och projektkomponenter som den här rollen äger eller har delats med dem |

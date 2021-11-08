@@ -2,13 +2,12 @@
 description: Exempel på hur du använder datatabeller och segment samt förslag på användningsområden för Analysis Workspace.
 keywords: Analysis Workspace
 title: Användningsområden för Analysis Workspace
-feature: Rapporter och analysgrunder
+feature: Analysis Workspace basics
 uuid: 09e20b76-8c31-4d20-920b-bebc877b3b70
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 99%
+source-wordcount: '530'
+ht-degree: 97%
 
 ---
 
@@ -62,3 +61,8 @@ Anta att du är marknadsföringsanalytiker hos en återförsäljare av friluftsu
 
    Nu kan du [dela](/help/analyze/analysis-workspace/curate-share/curate.md) rapporten med säljteamen.
 
+## Korsförsäljningsanalys i Analysis Workspace
+
+Här är ett videoklipp om detta ämne:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25864/?quality=12)
