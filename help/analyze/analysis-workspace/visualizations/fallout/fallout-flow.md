@@ -2,12 +2,12 @@
 description: Använd utfallsvisualisering i ett Workspace-projekt.
 title: Översikt över utfall
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: 85d0c88e-d159-4870-aaf6-51899d87ff77
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '496'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 2%
 # Översikt över utfall
 
 Utfallsvisualiseringar ger fler alternativ för att skapa utfallsrapporter. Utfallsrapporter visar var besökarna lämnade (föll ned) och fortsatte igenom (föll igenom) en fördefinierad sidsekvens.
+
+Här är en video om Fallout-visualisering:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24042/?quality=12)
 
 Med hjälp av bortfallsvisualiseringar kan du
 
@@ -34,8 +38,6 @@ En bortfallsvisualisering är användbar vid analys av:
 * Allmänna, bredare trafikflöden: Av de personer som såg hemsidan visar det här flödet hur många som har gjort en sökning och sedan hur många som till slut gick vidare för att titta på ett visst objekt.
 * Korrelationer mellan händelser på din webbplats. Korrelationer visar hur många procent av dem som tittade på din integritetspolicy fortsatte att köpa en produkt.
 
-[Videosjälvstudievideo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html)  för bortfallsvisualisering (4:15)
-
 ## Segmentering som grund för flöde och utfall {#section_654F37A398C24DDDB1552A543EE29AA9}
 
 Segment som tillämpas på arbetsytepaneler fungerar något annorlunda än segment som tillämpas på bortfalls- och flödesrapporter i rapporter och analyser. Oftast ger de exakt samma resultat. Den största skillnaden är att Rapporter och analyser använder segmentet vid varje steg i sekvensen. Detta kan ge något annorlunda resultat.
@@ -54,7 +56,7 @@ När Rapporter och analyser däremot beräknar segmentet kombineras segmentet p�
 
 Rapporter och analyser kombinerar segmentet med varje steg. När behållarna är på samma nivå som utfallet (t.ex. besök eller besöksnivå) kommer detta att resultera i matchning av antalet besök eller besökare.
 
-Om segmentet som används på panelen är mindre än utfallsnivån (t.ex. träffnivå) visas dock olika resultat på grund av hur det kombineras av rapporten. I de flesta fall matchar siffrorna i Analysis Workspace siffrorna i Rapporter och analyser. De **matchar inte** bara om alla fall nedan är sanna:
+Om segmentet som används på panelen är mindre än utfallsnivån (t.ex. träffnivå) visas dock olika resultat på grund av hur det kombineras av rapporten. I de flesta fall matchar siffrorna i Analysis Workspace siffrorna i Rapporter och analyser. De kommer att **not** matchar bara om alla fall nedan är sanna:
 
 * Segmentet är inte på samma nivå som utfallet.
 * Segmentet har en variabel där besökaren/besöket kan ha flera värden under ett besök/en besökare.

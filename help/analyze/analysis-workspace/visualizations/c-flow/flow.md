@@ -2,13 +2,13 @@
 description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Översikt över flöden
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: 3a7d1552-7fae-41ae-8ca5-89800d05d3d4
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '210'
+ht-degree: 1%
 
 ---
 
@@ -24,16 +24,20 @@ Här kan du:
 
 >[!NOTE]
 >
->Information om hur resultaten av att tillämpa segment på Flow kan skilja sig åt mellan Analysis Workspace och Rapporter och analyser finns i [Segmentering som en grund för Flow &amp; Fallout](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
+>Information om hur resultaten av att tillämpa segment på Flow kan skilja sig åt mellan Analysis Workspace och Rapporter och analyser finns i [Segmentering som grund för flöde och utfall](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
-[Videosjälvstudiekurs](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) om flödesvisualisering (4:56)
+[Videosjälvstudiekurs om flödesvisualisering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
 
 ## Mellandimensionella flöden {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
-Du kan visa [flödet mellan dimensioner](/help/analyze/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
+Du kan visa [flöde mellan dimensioner](/help/analyze/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till Men-sidan och sedan till Shoes-avdelningen.
 
 Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en släppzon för att lägga till den dimensionen i diagrammet.
 
 ## Exportera flödesdiagram som en del av Project .CSV-filer {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 
 Flödesdiagram är en del av ett projekts .CSV-fil som du kan skapa genom att gå till **[!UICONTROL Project]** > **[!UICONTROL Download CSV]**. På så sätt kan du analysera flödesresultat i Microsoft Excel (visualiserat som en tabell) eller någon annanstans.
+
+## Expandera vid Flödesvisualisering
+
+>[!VIDEO](https://video.tv.adobe.com/v/24044/?quality=12)

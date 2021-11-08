@@ -5,9 +5,9 @@ title: Användning av tidsstämplar som tillval
 topic-fix: Developer and implementation
 uuid: 956aaa16-6ffa-4b63-b022-a659f5143e00
 exl-id: c6a232d1-d7ce-4f21-9e8a-45703992bc6e
-source-git-commit: 3ff221b8715ecde6923310b6818904c697a2b003
+source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Användning av tidsstämplar som tillval
 
 Läs mer om fördelarna och begränsningarna med att använda inställningen Tidsstämplar (valfritt).
+
+Här är en video om ämnet:
+
+>[!VIDEO](https://video.tv.adobe.com/v/335740/?quality=12)
 
 Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 
@@ -26,7 +30,7 @@ Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter.
 >
 >Tidsstämplar Valfria är standardinställningen för alla nya rapportsviter som genereras från en mall. Nya rapportsviter som kopierats från en befintlig rapportserie ärver inställningar från originalet.
 
-Mer installationsinformation finns i [Tidsstämplar Valfria](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html).
+Se [Tidsstämplar (valfritt)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html) om du vill ha ytterligare installationsinformation.
 
 ## Valfria tidsstämplar: Integrera tidsstämplade och icke tidsstämplade data {#section_BF17CB593044462B993FD0D28EA56518}
 
@@ -34,7 +38,6 @@ Med funktionen Tidsstämplar (valfritt) kan du kombinera icke-tidsstämplade dat
 
 * **Tidsstämpeldata**. Tidsstämpeldata på klientsidan hämtas och skickas direkt med enhetsdata med hjälp av tidsstämpelvariabler på klientsidan: Javascript på en webbsida eller via ett Mobile SDK-anrop ( [!DNL offlineEnabled=true]) i en mobilapp.
 * **Ej tidsstämpeldata**. Adobe ställer in en tidsstämpel för icke tidsstämplade data i en rapportsvit när data träffar samlingsservrarna.
-
 
 En rapportsvit kan ha någon av följande tidsstämpelinställningar:
 
@@ -50,7 +53,7 @@ Tidsstämplar Valfritt gör att du kan integrera och rapportera i flera rapports
 |--- |--- |
 | Det gick inte att skicka tidsstämplade data till en global rapportserie som inte är tidsstämplad. Följaktligen släpptes träffdata som skickades från offlineenheter när de lades till i en rapportserie som inte är tidsstämplad. <br/><br/>Följaktligen togs träffdata som skickades från offlinedata bort när de lades till i en rapportserie som inte är tidsstämplad. | När du uppdaterar en app för att samla in och använda tidsstämplar måste du använda en ny rapportserie. <br/>Du kunde inte spara till den befintliga rapportsviten eller integrera befintliga data när du uppdaterar appen för att använda tidsstämplar. |
 
-**Med tidsstämplar som valfria** kan du integrera icke-tidsstämplade data från en livewebbplats med offlinedata från mobila enheter, eller uppdatera en tidsstämplad app till en tidsstämplad app.
+**Med tidsstämplar som tillval** kan ni integrera icke-tidsstämplade data från en livewebbplats med offlinedata från mobila enheter, eller uppdatera en tidsstämplad app till en tidsstämplad app.
 
 ## Kombinera data i en global rapportsserie {#section_5BE3BDF56007402BB1F5C3144D5FE1E0}
 
@@ -68,7 +71,7 @@ Nedan följer god praxis och några krav och begränsningar som du bör känna t
 
    Data som inte är i ordning kan omfatta sena data från datainsamling offline och sena träffar, eller osynkroniserade klockor på offline-mobilenheter. Obeställda data kan påverka tidsberäkningar negativt (t.ex. tidsåtgång), attribuering (beständighet mot eVar), antal besök/besök samt rapporter om kundvägar.
 
-* Du bör inte använda tidsstämplar när du anger [s.visitorID](/help/implement/vars/config-vars/visitorid.md). Det kan leda till oordnade data.
+* Använda tidsstämplar vid inställning av [s.visitorID](/help/implement/vars/config-vars/visitorid.md) rekommenderas inte. Det kan leda till oordnade data.
 
 * Hybridappar som består av en app (tidsstämplade, offlinedata) som öppnar en webbläsare (utan tidsstämpel, livedata) bör inte använda tidsstämplar. Det resulterar i felaktig rapportering av sessionen.
 

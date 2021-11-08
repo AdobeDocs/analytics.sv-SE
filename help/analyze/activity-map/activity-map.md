@@ -5,9 +5,9 @@ uuid: 7232b875-6907-4b53-b466-5e9157a22ef0
 feature: Activity Map
 role: User, Admin
 exl-id: 30a800f7-e2c8-443e-b5d4-36834ef0ba20
-source-git-commit: 0de07d1822b28c7ad3b784a4d53dff098aeb55c6
+source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '292'
 ht-degree: 26%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 26%
 # Översikt över Activity Map
 
 >[!NOTE]
->Läs om hur Activity Map stöder enkelsidiga program (SPA) på vår [sida med vanliga frågor och svar](/help/analyze/activity-map/activitymap-faq.md).
+>Läs om hur Activity Map stöder Single-Page Applications (SPA) på [Vanliga frågor](/help/analyze/activity-map/activitymap-faq.md) sida.
 
 >[!IMPORTANT]
 >Den 16 januari 2020 började Adobe Analytics flytta till en ny domän - https://experience.adobe.com/analytics. Ändringen kan få Activity Map att sluta fungera för vissa kunder i vissa fall. Som du vet injiceras Activity Map på kundsidan i en iframe (en iframe för verktygsfältet Activity Map och en iframe för panelen i Activity Map). Du kan ha angett ett direktiv om skyddsprofiler för innehåll på webbsidan för &quot;frame-src&quot; som inte innehåller &quot;.adobe.com&quot;. I så fall kommer Activity Map att sluta arbeta med en sådan webbsida.
@@ -24,21 +24,17 @@ Activity Map är ett Adobe Analytics-program som är utformat för att rangordna
 
 Med Activity Map kan ni skapa olika vyer för att visuellt identifiera kundaktivitetens acceleration, kvantifiera marknadsföringssatsningar och agera utifrån målgruppens behov och beteenden.
 
-Här är en videoöversikt av Activity Map:
-
->[!VIDEO](https://video.tv.adobe.com/v/25451/?quality=12)
-
-**Komma igång med administratörer**
+## Komma igång med administratörer
 
 * [Aktivera Activity Map](activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md)
 * [Exempel på implementeringskod](activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md)
 
-**Komma igång för användare**
+## Komma igång för användare
 
 * [Installera webbläsarplugin-program för Activity Map](activitymap-getting-started/activitymap-getting-started-users/activitymap-install.md)
 * [Starta Activity Map](activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md)
 
-**Activity Map-funktioner**
+## Activity Map-funktioner
 
 * [Robust länkspårning](lnk-tracking-overview.md)
 * [Standardläge jämfört med live-läge](activitymap-standard-live.md)
@@ -57,3 +53,13 @@ Här är en videoöversikt av Activity Map:
 * [Användargränssnitt för Activity Map](activitymap-user-interface.md)
 * [Activity Map-rapportering i Analytics](activitymap-reporting-analytics.md)
 * [Felsöka webbläsartillägg](troubleshooting-browser-extensions.md)
+
+## Videor
+
+Videoöversikt över Activity Map:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25451/?quality=12)
+
+Aktivera, inaktivera och anpassa Activity Map:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25878/?quality=12)

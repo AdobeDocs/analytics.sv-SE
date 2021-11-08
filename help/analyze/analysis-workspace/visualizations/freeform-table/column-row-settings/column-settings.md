@@ -2,12 +2,12 @@
 description: Med kolumninställningar kan du konfigurera kolumnformatering, som vissa kan vara villkorliga.
 title: Kolumninställningar
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
-feature: Frihandstabeller
+feature: Freeform Tables
 role: User, Admin
 exl-id: 82034838-b015-4ca2-adb6-736f20a478d8
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '717'
 ht-degree: 20%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 20%
 
 ## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
 
-Om du vill komma åt [!UICONTROL Column Settings] drar du en frihandstabell till projektet och klickar sedan på kugghjulsikonen i kolumnrubriken.
+För åtkomst [!UICONTROL Column Settings]drar du en friformstabell till projektet och klickar sedan på kugghjulsikonen i kolumnrubriken.
 
 ![](assets/column_settings.png)
 
@@ -27,11 +27,11 @@ Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara f
 | Element | Beskrivning |
 | --- | --- |
 | **Totalt antal celler** |  |
-| Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i friformstabellen, inklusive alternativet [!UICONTROL Include None], visas. |
+| Visa summor | Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand Total]. Alla tabellfilter som används i frihandstabellen, inklusive [!UICONTROL Include None] alternativ. |
 | Visa totalsumma | Denna summa representerar alla träffar som har samlats in, ibland kallade&quot;rapportsvitsummor&quot;. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla träffar som matchar segmentvillkoren visas. Summan stöds inte för tabeller eller uppdelningar med [statiska rader](/help/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.md). |
 | **Tabellceller** |  |
 | Nummer | Avgör om en cell visar/döljer det numeriska värdet för måttet. Om måttet till exempel är Sidvyer är det numeriska värdet antalet sidvyer för radobjektet. |
-| Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs!  Vi kan visa procenttal större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna kan växa i för stora bredder. |
+| Procent | Avgör om en cell visar/döljer procentvärdet för måttet. Om måttet till exempel är Sidvyer är procentvärdet antalet sidvyer för radobjektet delat med de totala sidvyerna för kolumnen.  Obs! Vi kan visa procenttal större än 100 % för att vara mer korrekta. Vi flyttar också det övre gränsvärdet till 1 000 % för att säkerställa att kolumnerna kan växa i för stora bredder. |
 | Anomalier | Avgör om avvikelseidentifiering körs på värdena i den här kolumnen. |
 | Radbryt rubriktext | Gör att du kan radbryta rubriktexten i frihandstabeller så att rubrikerna blir mer läsbara och tabellerna mer delbara. Detta är användbart för .pdf-återgivning och för mått med långa namn. Aktiverat som standard. |
 | Tolka noll som inget värde | För celler med värdet 0 anger om en 0-cell eller en tom cell ska visas. Det här är användbart när du tittar på data för varje dag i en månad, och vissa dagar har inte inträffat än.  I stället för att visa 0 för framtida datum kan tomma celler visas i stället. Diagram följer även den här inställningen (d.v.s. de visar inte en linje eller en stapel med 0 värden när den här inställningen är markerad). |
@@ -61,7 +61,7 @@ Analysis Workspace stöder [attribuering](/help/analyze/analysis-workspace/attri
 
    ![Kryssrutan Attribut](assets/attribution-checkbox.png)
 
-1. Markera **[!UICONTROL Use non-default attribution model]** under **[!UICONTROL Data Settings]**. Mer information om olika attribueringsmodeller finns i [Attribution models](/help/analyze/analysis-workspace/attribution/models.md).
+1. Under **[!UICONTROL Data Settings]**, kontrollera **[!UICONTROL Use non-default attribution model]**. Mer information om olika attribueringsmodeller finns i [Attributionsmodeller](/help/analyze/analysis-workspace/attribution/models.md).
 
    ![Välj attribueringsmodell](assets/attribution-select.png)
 
@@ -69,3 +69,9 @@ Analysis Workspace stöder [attribuering](/help/analyze/analysis-workspace/attri
 >
 >* [Hantera datakällor](/help/analyze/analysis-workspace/visualizations/t-sync-visualization.md)
 
+
+## Dynamiska kolumner
+
+Här är en video om hur du använder dynamiska kolumner i Analysis Workspace:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23138/?quality=12)

@@ -1,21 +1,27 @@
 ---
 title: Användargränssnitt för datafeed
 description: Lär dig navigera i dataflödesgränssnittet.
-translation-type: tm+mt
-source-git-commit: c9b3471b138c2e056a5abadb4ace6bb4eccd1d72
+exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
+source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 1%
 
 ---
 
-
-# Hantera dataflöden
+# Hantera datafeeds
 
 Med dataflödeshanteraren kan du skapa, redigera och ta bort dataflöden för din organisation. Om du har behörighet att komma åt dataflödeshanteraren kan du hantera dataflöden för alla rapportsviter som är synliga för dig.
 
+Här är en video om gränssnittet för hantering av dataflöden:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25452/?quality=12)
+
 Få åtkomst till dataflödeshantering genom att följa dessa steg:
 
-1. Logga in på [experienceCloud.adobe.com](https://experiencecloud.adobe.com).
+1. Logga in på [experience.loud.adobe.com](https://experiencecloud.adobe.com).
 2. Klicka på menyn med nio rutnät i det övre högra hörnet och klicka sedan på [!UICONTROL Analytics].
-3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds]i den övre menyn.
+3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds].
 
 ![Meny för datafeed](assets/AdminMenu.png)
 
@@ -25,7 +31,7 @@ Gränssnittet ser ut ungefär så här när du kommer till sidan för dataflöde
 
 ![Dataflöden](assets/feeds.png)
 
-Om inga feeds har konfigurerats visas en [!UICONTROL Create New Data Feed] knapp på sidan.
+Om inga feeds har konfigurerats visas en [!UICONTROL Create New Data Feed] -knappen.
 
 ### Filter och sökning
 
@@ -41,11 +47,11 @@ Använd sökning för att hitta en feed efter namn.
 
 ### Feeds och jobb
 
-Klicka på fliken Jobb för att visa enskilda jobb som var och en av dina feeds skapar. Se [Hantera dataflödesjobb](df-manage-jobs.md).
+Klicka på fliken Jobb för att visa enskilda jobb som var och en av dina feeds skapar. Se [Hantera datafeedjobb](df-manage-jobs.md).
 
 ### Lägg till
 
-I närheten av flikarna för feeds och jobb klickar du på +- [!UICONTROL Add] knappen för att skapa en ny feed. Mer information finns i [Lägga till en feed](create-feed.md) .
+I närheten av flikarna för feeds och jobb klickar du på + [!UICONTROL Add] för att skapa en ny feed. Se [Lägga till en feed](create-feed.md) för mer information.
 
 ### Kolumner
 
@@ -77,8 +83,8 @@ Varje feed som skapas visar flera kolumner med information om den. Klicka på en
 
 Klicka i kryssrutan bredvid en datafeed för att visa tillgängliga åtgärder.
 
-* **Jobbhistorik**: Visa alla jobb som är kopplade till dessa dataflöden. Tar dig automatiskt till gränssnittet [](df-manage-jobs.md)Hantera jobb.
-* **Ta bort**: Tar bort datafeeden och anger dess status till [!UICONTROL Deleted].
-* **Copy**: Tar dig till att [skapa en ny feed](create-feed.md) med alla inställningar för den aktuella feeden. Du kan inte kopiera en datafeed om mer än en har valts.
-* **Pausa**: Stoppar bearbetningen för feeden och anger status till [!UICONTROL Inactive].
+* **Jobbhistorik**: Visa alla jobb som är kopplade till dessa dataflöden. Tar dig automatiskt till [gränssnitt för hantering av jobb](df-manage-jobs.md).
+* **Ta bort**: Tar bort dataflödet och anger dess status som [!UICONTROL Deleted].
+* **Kopiera**: Tar dig till [skapa en ny feed](create-feed.md) med alla inställningar för den aktuella feeden. Du kan inte kopiera en datafeed om mer än en har valts.
+* **Pausa**: Stoppar bearbetningen av feeden och anger dess status som [!UICONTROL Inactive].
 * **Aktivera**: Endast tillgängligt för inaktiva feeds. Hämtar databearbetning där den slutade, fyller i eventuella datum om det behövs.
