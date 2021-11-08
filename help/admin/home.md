@@ -2,10 +2,10 @@
 title: Administratörshandbok för Analytics
 description: Administrationshjälp för Adobe Analytics-administratörer, inklusive användar- och produkthantering i Admin Console, där du kan skapa rapportsviter, variabler, klassificeringar och datainsamling.
 exl-id: d1491139-592b-44ec-aa45-dfdd00f416af
-source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
+source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 94%
+source-wordcount: '327'
+ht-degree: 92%
 
 ---
 
@@ -15,10 +15,14 @@ ht-degree: 94%
 
 Den här hjälpen är avsedd för administratörer av Adobe Analytics. Den hjälper dig med användar- och produkthantering i Admin Console, där du kan skapa rapportsviter, variabler, klassificeringar och datainsamling.
 
+Här är en videoöversikt över Adobe Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
+
 Adobe Analytics har för närvarande två områden för administratörer:
 
 * Adobe Admin Console: Använd det här området för att etablera Experience Cloud-verktyg och hantera användarbehörigheter. Den finns på [adminconsole.adobe.com](https://adminconsole.adobe.com).
-* Analytics Admin Console: Använd det här området för rapportsviten och variabelhantering. Du kommer åt den genom att klicka på [!UICONTROL Admin] i Adobe Analytics översta huvud.
+* Analytics Admin Console: Använd det här området för rapportsviten och variabelhantering. Du kommer åt den genom att klicka [!UICONTROL Admin] i Adobe Analytics översta sidhuvud.
 
 Den här guiden täcker:
 

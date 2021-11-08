@@ -2,10 +2,10 @@
 title: Komponenthandbok för Analytics
 description: Läs om de olika komponenterna som Adobe Analytics erbjuder.
 exl-id: 172f816a-b90e-4a5a-8c92-f92f2b1663f3
-source-git-commit: 70368b8b6302c1cfc1fe6503f777de13d884477a
+source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 79%
+source-wordcount: '222'
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 79%
 
 Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen. Komponenter är bland annat:
 
-* **Dimensioner:** referens för dimensioner som kan användas i Adobe Analytics.
+* **Dimensioner:** Referens för dimensioner som kan användas i Adobe Analytics.
 * **Mätvärden:** Referens för mätvärden som kan användas i Adobe Analytics.
 * **Segmentering:** Fokusera på en delmängd av data.
 * **Beräknade mätvärden:** Använd enkla formler för att kombinera mätvärden eller avancerade funktioner för statistiska analyser.
@@ -25,6 +25,10 @@ Analytics-komponenterna hjälper er att finjustera och förbättra dataanalysen.
 * **Klassificeringar:** Ordna om och gruppera dimensioner för fler insikter.
 * **Realtidsrapportering:** Få rapporter och trender så fort de blir tillgängliga.
 * **Marknadsföringskanaler:** Förstå hur besökarna kommer till er webbplats och avgör vilka kanaler som är mest framgångsrika.
+
+Här är en videoöversikt över Adobe Analytics:
+
+>[!VIDEO](https://video.tv.adobe.com/v/27429/?quality=12)
 
 ## Viktiga artiklar om Analytics-komponenter
 
