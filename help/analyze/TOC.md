@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: fca73532a83756062583d750b1727b5f2558718f
+source-git-commit: 76af5908fd65cae26106ca9c1a71978624a77320
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 84%
       + Utfall {#fallout}
          + [Översikt över utfall](analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurera en utfallsvisualisering](analysis-workspace/visualizations/fallout/configuring-fallout.md)
-         + [Intradimensionella utfall](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
+         + [Flerdimensionellt utfall](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Använda segment i utfallsanalys](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Flöde {#flow}
          + [Översikt över flöden](analysis-workspace/visualizations/c-flow/flow.md)
@@ -309,7 +309,7 @@ ht-degree: 84%
    + [Kalenderhändelser](reports-analytics/t-calendar-event.md)
    + [Vanliga frågor](reports-analytics/frequently-asked-questions.md)
    + [Felsökning](reports-analytics/report-troubleshooting.md)
-+ Adobe Analytics-instrumentpaneler {#mobapp}
++ Adobe Analytics dashboards {#mobapp}
    + [Adobe Analytics Dashboards - Översikt](mobile-app/home.md)
    + [Inledande kurator](mobile-app/curator.md)
    + [Skapa ett mobilstyrkort](mobile-app/create-scorecard.md)

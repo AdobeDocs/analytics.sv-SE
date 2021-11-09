@@ -1,20 +1,24 @@
 ---
 description: Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
-title: Intradimensionella utfall
+title: Flerdimensionellt utfall
 uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: 12de8e52-02c1-4e11-b530-48294f201fe0
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 76af5908fd65cae26106ca9c1a71978624a77320
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 3%
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
-# Intradimensionella utfall
+# Flerdimensionellt utfall
 
 Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
+
+Här är en video om ämnet:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24043/?quality=12)
 
 **Exempel**: Förutom siddimensionen kan du lägga till åtgärdsbaserade dimensionsobjekt i en utfallsvisualisering. På så sätt kan ni visualisera hur sidor och vissa åtgärder interagerar på kundens vägar.
 
