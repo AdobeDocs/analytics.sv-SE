@@ -2,19 +2,23 @@
 title: Översikt över panelen Segmentjämförelse
 description: Lär dig hur du använder segmentjämförelsepanelen som en del av segmentanalysen i Analysis Workspace.
 keywords: Analysis Workspace;Segmentanalys
-feature: Paneler
+feature: Panels
 role: User, Admin
 exl-id: 1f5df6fb-1e9f-4b8f-885c-bf9e68d88c89
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 86766c4452a571a7c7b36ad6693a1a1e0bc2deea
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1137'
 ht-degree: 4%
 
 ---
 
 # Översikt över panelen Segmentjämförelse
 
-Panelen Segmentjämförelse är ett verktyg i [Segment-IQ](../../segment-iq.md) som identifierar de mest statistiskt signifikanta skillnaderna mellan ett obegränsat antal segment. Funktionen itererar genom en automatisk analys av alla dimensioner och mätvärden som du har tillgång till. Den identifierar automatiskt de viktigaste egenskaperna hos de målgruppssegment som driver företagets nyckeltal och låter er se hur mycket som överlappar alla segment.
+Panelen Segmentjämförelse är en verktygsdel av [Segmentanalys](../../segment-iq.md) som upptäcker de mest statistiskt signifikanta skillnaderna mellan ett obegränsat antal segment. Funktionen itererar genom en automatisk analys av alla dimensioner och mätvärden som du har tillgång till. Den identifierar automatiskt de viktigaste egenskaperna hos de målgruppssegment som driver företagets nyckeltal och låter er se hur mycket som överlappar alla segment.
+
+Här är en videofilm om segmentjämförelse:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23976/?quality=12)
 
 ## Skapa en segmentjämförelsepanel
 
@@ -31,11 +35,11 @@ Panelen Segmentjämförelse är ett verktyg i [Segment-IQ](../../segment-iq.md) 
 
    ![Jämför målgrupper](assets/compare-audiences.png)
 
-   När du har dragit ett segment till panelen skapar Analytics automatiskt ett [!UICONTROL 'Everyone Else']-segment som innehåller alla NOT i det segment du valde. Det är ett segment som används ofta på jämförelsepanelen, men du kan ta bort det och jämföra ett annat urvalssegment.
+   När du har dragit ett segment till panelen skapas en [!UICONTROL 'Everyone Else'] som innehåller alla NOT i det segment du valde. Det är ett segment som används ofta på jämförelsepanelen, men du kan ta bort det och jämföra ett annat urvalssegment.
 
    ![Alla andra](assets/everyone-else.png)
 
-1. När du har bestämt vilka två segment som ska jämföras klickar du på [!UICONTROL Build].
+1. När du har bestämt vilka två segment du vill jämföra klickar du på [!UICONTROL Build].
 
    Den här åtgärden startar en backend-process som letar efter statistiska skillnader mellan de två valda segmenten och alla dimensioner, mått och andra segment. En förloppsindikator högst upp på panelen anger återstående tid tills alla mått och mått analyseras. De mest använda mätvärdena, dimensionerna och segmenten prioriteras så att de mest relevanta resultaten returneras i tid.
 
@@ -43,12 +47,12 @@ Panelen Segmentjämförelse är ett verktyg i [Segment-IQ](../../segment-iq.md) 
 
 Ibland är det önskvärt att utesluta vissa dimensioner, mätvärden eller segment från segmentjämförelser. Du kan till exempel jämföra segmentet&quot;Användare av mobiltelefoner i USA&quot; med&quot;Användare av mobiltelefoner i Tyskland&quot;. Att inkludera geografiskt orienteringsrelaterade dimensioner skulle inte vara rimligt eftersom dessa segment redan antyder dessa skillnader.
 
-1. Klicka på [!UICONTROL 'Show Advanced Options'] när de önskade två segmenten finns på panelen.
-1. Dra och släpp komponenter som du vill utesluta till panelen [!UICONTROL Excluded Components].
+1. Klicka på [!UICONTROL 'Show Advanced Options'].
+1. Dra och släpp komponenter som du vill utesluta i [!UICONTROL Excluded Components] -panelen.
 
    ![Exkluderade komponenter](assets/excluded-components.png)
 
-Klicka på [!UICONTROL 'Set as default'] om du automatiskt vill utesluta de aktuella komponenterna i alla framtida segmentjämförelser. Om du vill redigera uteslutna komponenter klickar du på en komponenttyp och sedan på X bredvid en komponent för att ta med den i analysen. Klicka på Rensa alla om du vill ta med alla komponenter i segmentjämförelsen.
+Klicka [!UICONTROL 'Set as default'] för att automatiskt utesluta de aktuella komponenterna i alla framtida segmentjämförelser. Om du vill redigera uteslutna komponenter klickar du på en komponenttyp och sedan på X bredvid en komponent för att ta med den i analysen. Klicka på Rensa alla om du vill ta med alla komponenter i segmentjämförelsen.
 
 ![Exkluderade dimensioner](assets/excluded-dimensions.png)
 
@@ -92,7 +96,7 @@ Till höger om måtttabellen finns en länkad visualisering. Du kan klicka på e
 
 ### Övre dimensioner
 
-Visar de mest statistiskt signifikanta dimensionsobjekten i alla dimensioner. Varje rad visar procentandelen för varje segment som har denna dimensionspost. Den här tabellen kan till exempel visa att 100 % av besökarna i segment A hade dimensionsobjektet Browser Type: Google, medan endast 19,6 % av Segment B hade denna dimensionspost. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
+Visar de mest statistiskt signifikanta dimensionsobjekten i alla dimensioner. Varje rad visar procentandelen för varje segment som har denna dimensionspost. Den här tabellen kan till exempel visa att 100 % av besökarna i segment A hade dimensionsobjektet Browser Type: Google&quot;, medan endast 19,6 % av Segment B hade denna dimensionspost. Skillnaden på 1 betyder att den är statistiskt signifikant, medan differensvärdet 0 betyder att det inte finns någon statistisk signifikans.
 
 Den här visualiseringen liknar frihandstabeller i Analysis Workspace. Om du vill göra en djupgående analys av ett visst dimensionsobjekt håller du pekaren över ett radobjekt och klickar på Skapa visuellt. En ny tabell skapas för att analysera den specifika dimensionsobjektet. Om en dimensionspost inte är relevant för din analys håller du pekaren över radobjektet och klickar på X för att ta bort den.
 

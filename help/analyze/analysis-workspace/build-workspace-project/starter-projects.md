@@ -5,9 +5,9 @@ uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 feature: Workspace Basics
 role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
+source-git-commit: f448377e070e9ed8ce492c22eca5fd7eb9fc5713
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Du kan använda de här förifyllda mallarna som de är eller anpassa dem efter 
 
 Här är en videosjälvstudiekurs om [Standardmallar i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/standard-templates-in-analysis-workspace.html) (2:46)
 
-Här finns mallar och de frågor som varje mall kan besvara.
+Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
@@ -123,6 +123,10 @@ Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din
 >[!NOTE]
 >
 >Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/data/people.html).
+
+Videoöversikt över personmallen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24037/?quality=12)
 
 Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
 

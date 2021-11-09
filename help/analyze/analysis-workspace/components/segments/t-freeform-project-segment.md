@@ -5,9 +5,9 @@ uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
 feature: Workspace Basics
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
+source-git-commit: 86766c4452a571a7c7b36ad6693a1a1e0bc2deea
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ Använda segment i Analysis Workspace:
 Hitta och skapa segment:
 
 >[!VIDEO](https://video.tv.adobe.com/v/334092/?quality=12)
+
+Rullande datumintervall i segment:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
 ## Skapa segment {#section_693CFADA668B4542B982446C2B4CF0F5}
 

@@ -4,9 +4,9 @@ description: Analysis Workspace är det främsta analysverktyget för Adobe Anal
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: f448377e070e9ed8ce492c22eca5fd7eb9fc5713
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -21,47 +21,53 @@ Om du bara har några minuter kan du titta på den här korta översikten för a
 
 ## Logga in på Adobe Analytics {#login}
 
-Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics på [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
+Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics genom att gå till [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
 
 ![](assets/login-analytics.png)
 
 ## Använda självstudiekursen Utbildning {#training-tutorial}
 
-När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Starta självstudiekursen genom att klicka på **[!UICONTROL Create New Project]** och sedan välja **Utbildningskurs** inom det nya projektets modala.
+När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Klicka på **[!UICONTROL Create New Project]** och sedan markera **Utbildning - självstudiekurs** inom det nya projektet modalt.
 
 ![](assets/training-tutorial.png)
 
 ## Skapa ett nytt projekt {#new-project}
 
-När självstudiekursen är klar kan du börja skapa ditt första projekt. **Det nya projektet modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [ett tomt mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela analysen från webbläsaren eller mobilappen Adobe Analytics dashboards.
+När självstudiekursen är klar kan du börja skapa ditt första projekt. The **nytt projekt modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [tomt mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela din analys via webbläsaren eller mobilappen Adobe Analytics dashboards.
 
 ![](assets/create-new-project.png)
 
-Du kan också börja analysera från färdiga **mallar**, antingen standardmallar som tillhandahålls av Adobe eller egna mallar som skapats av din organisation. Det finns flera olika mallar tillgängliga, beroende på vilken analys eller vilket användningsfall du har tänkt dig. [Läs ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) mer om de olika mallalternativen.
+Du kan också börja analysera från färdiga **mallar**, antingen standardmallar som tillhandahålls av Adobe eller egna mallar som har skapats av din organisation. Det finns flera olika mallar tillgängliga, beroende på vilken analys eller vilket användningsfall du har tänkt dig. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) om de olika mallalternativen.
 
 ## Bygg en analys {#analysis}
 
-I ditt Workspace-projekt är **paneler, tabeller, visualiseringar och komponenter** tillgängliga från den vänstra listen. Detta är era projektbyggstenar.
+I ditt Workspace-projekt **paneler, tabeller, visualiseringar och komponenter** är åtkomliga från den vänstra listen. Detta är era projektbyggstenar.
 
 ### Komponenter
 
-**** Komponenter är dimensioner, mått, segment eller datumintervall, som alla kan kombineras i ett  **[!UICONTROL Freeform table]** formulär för att du ska kunna besvara din affärsfråga. Kom ihåg att bekanta dig med varje [komponenttyp](/help/analyze/analysis-workspace/components/analysis-workspace-components.md) innan du går in i analysen. När du har mastered component terminology kan du börja dra och släppa till [skapa en analys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) i en **[!UICONTROL Freeform table]**.
+**Komponenter** är dimensioner, mått, segment eller datumintervall, som alla kan kombineras i en **[!UICONTROL Freeform table]** för att börja besvara din affärsfråga. Var noga med att bekanta dig med varje [komponenttyp](/help/analyze/analysis-workspace/components/analysis-workspace-components.md) innan du går in i analysen. När du har mastered component terminology kan du börja dra och släppa till [bygga en analys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/t-freeform-project.html) i en **[!UICONTROL Freeform table]**.
 
 ![](assets/build-components.png)
 
 ### Visualiseringar
 
-**Visualiseringar**, som stapel- eller linjediagram, läggs sedan till ovanpå data för att visuellt förverkliga dem. På den vänstra listen väljer du den mittersta **[!UICONTROL Visualizations]**-ikonen för att visa den fullständiga listan med [visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) tillgängliga.
+**Visualiseringar**, t.ex. en stapel eller ett linjediagram, läggs sedan till ovanpå data för att visuellt ge dem liv. Markera mitten längst till vänster **[!UICONTROL Visualizations]** om du vill se hela listan med [visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) tillgängliga.
 
 ![](assets/build-visualizations.png)
 
 ### Paneler
 
-**Paneler** används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. På den vänstra listen väljer du den översta **[!UICONTROL Panels]**-ikonen för att visa en fullständig lista över [paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) som är tillgängliga.
+**Paneler** används för att organisera analysen i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. Markera den översta **[!UICONTROL Panels]** om du vill se en fullständig lista över [paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) tillgängliga.
 
 ![](assets/build-panels.png)
 
+### Projektledning i Analysis Workspace
+
+Här är en videoöversikt av projekthantering:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24035/?quality=12)
+
 ## Ytterligare resurser {#resources}
 
-* Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
+* Adobe erbjuder hundratals [Videokurser om analys](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
 * Se [Nyheter i Analysis Workspace](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) för uppdateringar om nya funktioner.
