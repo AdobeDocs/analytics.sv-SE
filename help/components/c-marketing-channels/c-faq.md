@@ -1,9 +1,9 @@
 ---
 title: Vanliga frågor om marknadsföringskanaler
 description: Vanliga frågor och svar om marknadsföringskanaler.
-source-git-commit: 925435a475be13103c5b26255bb7910d259ff7e7
+source-git-commit: 9d4470dd297227333c6043572820053d7eb5e899
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 Vanliga frågor och svar om marknadsföringskanaler.
 
 ## Mina spårningskoder följer inget mönster och jag har tusentals som måste anges för min Filials-kanal.
 
 * Använd elimineringsprocessen. Om kanalerna E-post och Filialer använder samma frågesträngsparameter, men du bara har ett fåtal e-postspårningskoder, kan du ange e-postspårningskoderna i en regeluppsättning som definierar e-post. Sedan klassificerar du alla andra spårningskoder med *`affiliates.`*
-* I e-postsystemet lägger du till en frågesträngsparameter i alla URL-adresser för landningssidor, till exempel *`&ch=eml`*. Skapa en regeluppsättning som identifierar om ch-frågeparametern är lika med *`eml`*. Om det inte innehåller *`eml`* är det ett närstående bolag.
+* I e-postsystemet lägger du till en frågesträngsparameter i alla URL-adresser för landningssidor, t.ex. *`&ch=eml`*. Skapa en regeluppsättning som identifierar om frågeparametern ch är lika med *`eml`*. Om den inte innehåller *`eml`*, då är det ett närstående bolag.
 
 ## Referensdomäner innehåller mer data än jag förväntade mig.
 
@@ -34,7 +34,7 @@ Kontrollera att parameternamnet har angetts i frågesträngsparameterfälten (va
 
 ## Varför tillskrivs all min trafik med sista handen en intern domän?
 
-Du har en regel som matchar intern trafik. Kom ihåg att dessa regler gäller för varje träff som besökaren gör på er webbplats, inte bara för det första besöket. Om du har en regel som *`Page URL exists`* utan andra villkor matchas den kanalen för varje efterföljande träff på webbplatsen, eftersom det alltid finns en sidadress.
+Du har en regel som matchar intern trafik. Kom ihåg att dessa regler gäller för varje träff som besökaren gör på er webbplats, inte bara för det första besöket. Om du har en regel som *`Page URL exists`* utan andra kriterier matchas den kanalen för varje efterföljande träff på din webbplats, eftersom det alltid finns en sidadress.
 
 ## Hur felsöker jag trafik som visas i Ingen kanal identifierad i rapporten?
 
@@ -48,13 +48,13 @@ Regelprocessen är i ordning. Om inga specifika kriterier har matchats faller tr
 
 Se till att du har en kanal för de här tre möjligheterna. Skapa till exempel regler som säger:
 
-1. **[!UICONTROL Referrer]** och  **[!UICONTROL Does Not Exist]** och  **[!UICONTROL Is First Page of Visit]**. (Se [Direkt.](/help/components/c-marketing-channels/c-faq.md))
+1. **[!UICONTROL Referrer]** och **[!UICONTROL Does Not Exist]** och **[!UICONTROL Is First Page of Visit]**. (Se [Direkt.](/help/components/c-marketing-channels/c-faq.md))
 
-2. **[!UICONTROL Referrer Matches Internal URL Filters]** och  **[!UICONTROL Is First page of Visit]**. (Se [Intern](/help/components/c-marketing-channels/c-faq.md).)
+2. **[!UICONTROL Referrer Matches Internal URL Filters]** och **[!UICONTROL Is First page of Visit]**. (Se [Intern](/help/components/c-marketing-channels/c-faq.md).)
 
-3. **[!UICONTROL Referrer]** och  **[!UICONTROL Exists]** och  **[!UICONTROL Referrer Does Not Match Internal URL Filters]**.
+3. **[!UICONTROL Referrer]** och **[!UICONTROL Exists]** och **[!UICONTROL Referrer Does Not Match Internal URL Filters]**.
 
-Skapa till sist en *annan*-kanal som hämtar återstående träffar, enligt beskrivningen i [Ingen kanal identifierad](/help/components/c-marketing-channels/c-faq.md#no-channel-identified).
+Skapa slutligen en *Övriga* kanal som hämtar återstående träffar, enligt beskrivningen i [Ingen kanal identifierad](/help/components/c-marketing-channels/c-faq.md#no-channel-identified).
 
 ## Relation mellan första och sista beröringen
 
@@ -66,11 +66,11 @@ Skärningen där den första motsvarar den sista beröringen är tabellens diago
 
 ## Orsaker till att ingen kanal har identifierats {#no-channel-identified}
 
-Om reglerna inte samlar in data, eller om reglerna inte är korrekt konfigurerade, visas data i [!UICONTROL No Channel Identified]-raden i rapporten. Du kan skapa en regeluppsättning med namnet *Annat*, till exempel i slutet av bearbetningsordningen, som även identifierar intern trafik.
+När reglerna inte samlar in data, eller om reglerna inte är korrekt konfigurerade, visar rapporten data i [!UICONTROL No Channel Identified] på rapportraden. Du kan skapa en regeluppsättning med namnet *Övriga* i slutet av bearbetningsordern, som också identifierar intern trafik.
 
 ![](assets/example_other.png)
 
-Den här typen av regel fungerar som en&quot;catch-all&quot;-regel för att säkerställa att kanaltrafiken alltid matchar extern trafik, och hamnar vanligtvis inte i **[!UICONTROL No Channel Identified]**. Var försiktig så att du inte skapar en regel som även identifierar intern trafik. Att ange kanalens värde till **[!UICONTROL Referring Domain]** eller till **[!UICONTROL Page URL]** är det vanligaste och mest användbara sättet att skapa en effektiv Andra regel.
+Den här typen av regel fungerar som en&quot;catch-all&quot;-regel för att säkerställa att kanaltrafiken alltid matchar den externa trafiken, och oftast inte slutar med **[!UICONTROL No Channel Identified]**. Var försiktig så att du inte skapar en regel som även identifierar intern trafik. Ange kanalens värde till **[!UICONTROL Referring Domain]** eller till **[!UICONTROL Page URL]** är de vanligaste och mest användbara sätten att skapa en effektiv Andra regel.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Den här typen av regel fungerar som en&quot;catch-all&quot;-regel för att säk
 
 Senaste beröring internt (sessionsuppdatering) kan bara inträffa om det också var den första beröringen - se Relation mellan första och sista beröringen ovan. Scenarierna nedan förklarar hur Sessionsuppdatering kan vara en kanal med första klicket.
 
-* **Tidsgräns** för session: En besökare kommer till webbplatsen och lämnar sedan fliken öppen i sin webbläsare för användning vid ett senare tillfälle. Besökarens engagemangsperiod går ut (eller så tar de frivilligt bort sina cookies) och de använder den öppna fliken för att besöka webbplatsen igen. Eftersom den refererande URL:en är en intern domän kommer besöket att klassificeras som Sessionsuppdatering.
+* **Tidsgräns för session**: En besökare kommer till webbplatsen och lämnar sedan fliken öppen i sin webbläsare för användning vid ett senare tillfälle. Besökarens engagemangsperiod går ut (eller så tar de frivilligt bort sina cookies) och de använder den öppna fliken för att besöka webbplatsen igen. Eftersom den refererande URL:en är en intern domän kommer besöket att klassificeras som Sessionsuppdatering.
 
 * **Alla webbplatssidor är inte taggade**: En besökare kommer till sida A som inte är taggad och går sedan till sida B som är taggad. Sidan A betraktas som den interna referenten och besöket klassificeras som Sessionsuppdatering.
 
@@ -88,11 +88,11 @@ Senaste beröring internt (sessionsuppdatering) kan bara inträffa om det också
 
 * **Domänövergripande trafik**: En besökare flyttar från en domän som utlöses till Suite A till en andra domän som utlöses till Suite B. Om de interna URL-filtren i Suite B innehåller den första domänen kommer besöket i Suite B att registreras som Internal, eftersom Marketing Channels ser det som ett nytt besök i den andra sviten. Besöken klassificeras som Sessionsuppdatering.
 
-* **Långa starttidpunkter**: En besökare hamnar på sidan A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildbegäran från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin begäran om Adobe Analytics-bilder. Eftersom Page A:s bildförfrågan aldrig har lästs in visas den andra sidan som den första träffen vid besöket i Adobe Analytics, där Page A är hänvisare. Besöken klassificeras som Sessionsuppdatering.
+* **Långa inläsningstider**: En besökare hamnar på sidan A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildbegäran från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin begäran om Adobe Analytics-bilder. Eftersom Page A:s bildförfrågan aldrig har lästs in visas den andra sidan som den första träffen vid besöket i Adobe Analytics, där Page A är hänvisare. Besöken klassificeras som Sessionsuppdatering.
 
-* **Rensar cookies på** mitt-plats: En besökare kommer till webbplatsen och mitt-session rensar deras cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
+* **Rensar cookies mitt på webbplatsen**: En besökare kommer till webbplatsen och mitt-session rensar deras cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
 
-Nedan visas ett exempel på intern (sessionsuppdatering) som ställs in både som den första och sista beröringskanalen:
+Nedan visas ett exempel på intern (sessionsuppdatering) som ställs in både som den första beröringskanalen och den sista beröringskanalen:
 
 * Dag 1: Användaren kommer till webbplatsen på skärmen. Första och sista-beröringskanalen ställs in på Visning.
 * Dag 2: Användaren kommer till webbplatsen för naturlig sökning. Första beröringen är fortfarande Visning och Sista beröringen är inställd på Naturlig sökning.
@@ -103,7 +103,7 @@ Nedan visas ett exempel på intern (sessionsuppdatering) som ställs in både so
 Ibland konfigureras regler för bearbetning av marknadsföringskanal felaktigt, vilket gör det nödvändigt att ändra bearbetningsreglerna. När du har tillämpat ändringarna kan du se vissa mätvärden fortfarande attributera data till en felaktig kanal. Det finns flera saker att tänka på:
 
 * **Data för marknadsföringskanalen samlas in i realtid**: Marknadsföringskanaldata bearbetas vid datainsamling och är 100 % permanenta. Om du ändrar bearbetningsregler påverkas inte data retroaktivt.
-* **Om du ändrar bearbetningsreglerna påverkas inte direkt First Touch-data**: Till exempel:
+* **Ändring av bearbetningsregler påverkar inte direkt First Touch-data**: Till exempel:
    1. En användare kommer in via din e-postkanal eftersom den har konfigurerats felaktigt och sedan lämnar platsen.
    2. Nästa dag ändrar du din bearbetningsregel för e-post för att korrigera den.
    3. Användaren kommer tillbaka flera dagar senare genom naturlig sökning och gör ett inköp.
@@ -113,10 +113,10 @@ Ibland konfigureras regler för bearbetning av marknadsföringskanal felaktigt, 
 
 Det bästa sättet att åtgärda dessa skillnader är att göra något eller båda av följande:
 
-* **Förfaller alla besökares interaktionsperioder** manuellt: Den här inställningen upphör omedelbart att gälla alla första och sista beröringskanaler för alla besökare:
+* **Förfaller alla besökares anställningsperioder manuellt**: Den här inställningen upphör omedelbart att gälla alla första och sista beröringskanaler för alla besökare:
    1. Gå till Administratörsverktyg > Rapportsviter.
    2. Hovra över Inställningar för bildredigering > Marknadsföringskanaler > Förfallotid för besökarengagemang
    3. Klicka på Förfalla alla.
    4. Klicka på OK i popup-fönstret för varningar och bekräfta att du är införstådd med vad det kommer att göra.
 
-* **Visa endast Senaste beröringsstatistik från den tidpunkt du korrigerade reglerna framåt**: Senaste beröringsmått följer alltid den aktuella linjaluppsättningen. Om du visar tiden från när du ändrade bearbetningsregler framåt korrekt, visas de senaste bearbetningsreglerna.
+* **Visa endast Senaste beröringsmått från den tidpunkt du korrigerade reglerna framåt**: Senaste beröringsmått följer alltid den aktuella linjaluppsättningen. Om du visar tiden från när du ändrade bearbetningsregler framåt korrekt, visas de senaste bearbetningsreglerna.
