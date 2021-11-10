@@ -2,12 +2,12 @@
 description: Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
 title: Intradimensionella flöden
 uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: f84917a4-2c07-48fb-9af3-d96c537da65c
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: b0baf1fbc8cf4cafe1d5292774e47556c9b0151b
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '314'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 # Intradimensionella flöden
 
 Med ett interdimensionellt flöde kan du undersöka användarsökvägar i olika dimensioner.
+
+Här är en video om figursättning och flerdimensionellt flöde i Analysis Workspace:
+
+>[!VIDEO](https://video.tv.adobe.com/v/24041/?quality=12)
 
 En dimensionsetikett högst upp i varje Flow-kolumn gör det mer intuitivt att använda flera dimensioner i en flödesvisualisering:
 
@@ -24,17 +28,17 @@ Vi ska titta på två användningsfall: ett exempel på appanvändning och ett e
 
 ## Använd fall ett: app {#section_3D31D37B9C9F4134AE46C96291E41294}
 
-Dimensionen [!UICONTROL Action Name] lades till i flödet, där det översta returnerade objektet var [!UICONTROL ItemAdded]:
+The [!UICONTROL Action Name] dimension lades till i flödet, med den översta returnerade artikeln [!UICONTROL ItemAdded]:
 
 ![](assets/multi-dimensional-flow.png)
 
 Om du vill utforska interaktionen mellan skärmar/sidor och åtgärder i den här appen kan du dra siddimensionen till flera platser, beroende på vad du vill utforska:
 
-* Dra den till valfri ände av släppzonen (inuti den svarta trimmade rektangulära zonen som visas) för att **ersätta** det övre resultatet i ändarna:
+* Dra den till valfri ände av släppzonen (inuti den svarta trimmade rektangulära zonen som visas) för att **ersätt** de främsta resultaten i slutet:
 
    ![](assets/multi-dimensional-flow2.png) ![](assets/multi-dimensional-flow3.png)
 
-* Dra den till det tomma utrymmet på slutet (lägg märke till den svarta parentesen) för att **lägga till i** visualiseringen:
+* Dra den till det tomma utrymmet på slutet (lägg märke till den svarta parentesen) för att **lägg till i** visualisering:
 
    ![](assets/multi-dimensional-flow4.png)
 
