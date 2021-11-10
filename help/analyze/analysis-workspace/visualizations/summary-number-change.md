@@ -2,39 +2,43 @@
 description: Använd visualiseringarna Sammanfattningsnummer och Ändra för att visa viktiga datapunkter i ett projekt.
 title: Sammanfattning av antal och förändring
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: d6a08201-ca3a-48ff-983a-3ec6b989deda
-source-git-commit: 5027c17f1b0efc2fe22915e39aca901ee2beb34a
+source-git-commit: c4f6a7a3d81160a1c86ebfa70d1e376882ccfee2
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 3%
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
-# Sammanfattning av antal och förändring
+# [!UICONTROL Summary Number] och [!UICONTROL Summary Change]
 
-## Visualisering av sammanfattningsnummer {#summary-number}
+Här är en video om dessa två visualiseringar:
 
-Använd visualisering av sammanfattningsnummer för att markera ett stort tal som är viktigt i ett projekt. Den här visualiseringen fungerar på följande sätt:
+>[!VIDEO](https://video.tv.adobe.com/v/335564/?quality=12)
+
+## [!UICONTROL Summary Number] visualisering {#summary-number}
+
+Använd [!UICONTROL Summary Number] visualisering för att framhäva ett stort antal som är viktiga i ett projekt. Den här visualiseringen fungerar på följande sätt:
 
 * Markerar kolumnsumman om ingen cell är markerad.
 * Om en enskild cell är markerad visas sammanfattningen för den cellen.
 * Om flera celler är markerade visas den första cellen som är markerad.
 * Om kolumnen är markerad väljs det första cellvärdet i kolumnen.
 
-Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
+Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsnummer:
 
 | Inställning | Definition |
 |--- |--- |
-| Procenttal | Visa procenttal i stället för råa tal. |
-| Förklaring synlig | Visa information om måttet som visas. |
-| Förkortningsvärde | Välj om du vill förkorta värden och visa upp till tre decimaler. |
-| Summera värdet efter | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
+| [!UICONTROL Percentages] | Visa procenttal i stället för råa tal. |
+| [!UICONTROL Legend visible] | Visa information om måttet som visas. |
+| [!UICONTROL Abbreviate value] | Välj om du vill förkorta värden och visa upp till tre decimaler. |
+| [!UICONTROL Summarize value by] | Välj om du vill visa max, min, medelvärde, median eller summan för ett dataurval. |
 
-## Visualisering av sammanfattningsändring {#summary-change}
+## [!UICONTROL Summary Change] visualisering {#summary-change}
 
-Använd visualisering av sammanfattningsändring för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i Sammanfattningsändring kan styras med [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) eller [alternativet Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) för ett beräknat mått.
+Använd [!UICONTROL Summary Change] visualisering för att visa delta (ändring) mellan två tal. Den gröna och röda färgen i [!UICONTROL Summary Change] kan styras genom [anpassad händelsepolaritet](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) eller ett beräknat mått [Visa uppåttrend som](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) alternativ.
 
 Den här visualiseringen fungerar på följande sätt:
 
@@ -49,11 +53,11 @@ Den här visualiseringen fungerar på följande sätt:
 ![](assets/summary-change.png)
 
 
-Klicka på **Visualiseringsinställningarna** i det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
+Klicka på **Visualiseringsinställningar** växla till det övre högra hörnet för att konfigurera inställningarna för Sammanfattningsändring:
 
 | Inställning | Definition |
-|--- |--- |
-| Procenttal | Visa procenttal i stället för råa tal. |
-| Förklaring synlig | Visa information om måttet som visas. |
-| Visa procentuell ändring | Visar procentändringen mellan de två talen. |
-| Visa råskillnad | Visar den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |
+| --- | --- |
+| [!UICONTROL Percentages] | Visa procenttal i stället för råa tal. |
+| [!UICONTROL Legend visible] | Visa information om måttet som visas. |
+| [!UICONTROL Show Percent Change] | Visar procentändringen mellan de två talen. |
+| [!UICONTROL Show Raw Difference] | Visar den obearbetade skillnaden mellan de två talen. Med det här alternativet kan du även förkorta värden och visa upp till tre decimaler. |

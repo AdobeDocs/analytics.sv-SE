@@ -1,21 +1,21 @@
 ---
-description: Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov, och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
+description: Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
 title: Om segment och behållare
-feature: Segmentering
+feature: Segmentation
 uuid: e8b1edd1-5d6c-4213-994b-fed789ad30a4
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: c4f6a7a3d81160a1c86ebfa70d1e376882ccfee2
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
 
 # Om segment och behållare
 
-Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov, och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
+Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
 
-Segmenten baseras på en nivåhierarki av typen [!UICONTROL Visitor], [!UICONTROL Visit] och [!UICONTROL Hit] med hjälp av en kapslad behållarmodell. Med de kapslade behållarna kan du definiera besökarattribut och åtgärder baserat på regler mellan och inom behållarna. Analyssegment kan byggas, godkännas, delas, sparas och köras över flera produkter och funktioner i [!DNL Adobe Experience Cloud]. Segment kan genereras från en rapport, byggas in i en kontrollpanelrapport eller bokmärkas för snabb åtkomst.
+Segmenten baseras på en [!UICONTROL Visitor], [!UICONTROL Visit] och [!UICONTROL Hit] nivåhierarki med en kapslad behållarmodell. Med de kapslade behållarna kan du definiera besökarattribut och åtgärder baserat på regler mellan och inom behållarna. Analyssegment kan byggas, godkännas, delas, sparas och köras på flera produkter och funktioner i [!DNL Adobe Experience Cloud]. Segment kan genereras från en rapport, byggas in i en kontrollpanelrapport eller bokmärkas för snabb åtkomst.
 
 Du kan skapa och spara segment i segmentbyggaren eller generera segment från en utfallsrapport (i  Analysis Workspace). Du kan också använda och utöka fördefinierade segment baserat på specifika regler mellan kapslade behållare, så att du kan filtrera resultaten och tillämpa dem på rapporter. Dessutom kan segment användas tillsammans som [staplade segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
 
@@ -32,15 +32,15 @@ Segment kan baseras på följande värden:
 * Besökare baserade på utgångar och tävlingsbidrag: besökare från Facebook, en definierad landningssida, hänvisande domän.
 * Besökare baserade på anpassade variabler: formulärfält, definierade kategorier, kund-ID.
 
-När du skapar målgruppssegment i segmentbyggaren definierar du villkor med hjälp av operatorerna [!UICONTROL AND] och [!UICONTROL OR] mellan behållare.
+När du skapar målgruppssegment i Segment Builder definierar du villkor med hjälp av [!UICONTROL AND] och [!UICONTROL OR] operatorer mellan behållare.
 
 ![](assets/standard_segment_containers.png)
 
-Den här typen av segment filtrerar datauppsättningar baserat på egenskaper som förenas med operatorerna [!UICONTROL AND] och [!UICONTROL OR].
+Den här typen av segment filtrerar datauppsättningar baserat på egenskaper som förenats med [!UICONTROL AND] och [!UICONTROL OR] operatorer.
 
 ## Sekventiella segment {#section_EE5B14287FC44E0B96E77679A2438948}
 
-Med hjälp av sekventiella segment kan du identifiera besökare baserat på navigering och sidvisning på webbplatsen, vilket ger ett segment med definierade åtgärder och interaktioner. Sekventiella segment hjälper er att identifiera vad en besökare gillar och vad en besökare undviker. När du skapar sekventiella segment används operatorn [!UICONTROL THEN] för att definiera och beställa besöksnavigering.
+Med hjälp av sekventiella segment kan du identifiera besökare baserat på navigering och sidvisning på webbplatsen, vilket ger ett segment med definierade åtgärder och interaktioner. Sekventiella segment hjälper er att identifiera vad en besökare gillar och vad en besökare undviker. När du skapar sekventiella segment [!UICONTROL THEN] -operatorn används för att definiera och beställa besöksnavigering.
 
 ![](assets/sequential_seg.png)
 
@@ -55,7 +55,7 @@ Sekventiella segment kan baseras på följande träffvärden:
 
 ![](assets/sequential_segmentation_containers_view.png)
 
-Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtgärder med operatorn [!UICONTROL THEN].
+Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtgärder med [!UICONTROL THEN] -operator.
 
 ## Videoinstruktion {#section_89D6184890AF4086A8056BFBB0B68C29}
 
@@ -65,9 +65,13 @@ Den här videon ger en kort översikt över vilka segmentbehållare som är och 
 
 Ett segment anger villkor för att filtrera en besökare baserat på hans eller hennes attribut eller interaktioner med din webbplats. Om du vill ange villkor i ett segment anger du regler för att filtrera besökare baserat på besökarens egenskaper och/eller navigeringsegenskaper. Om du vill dela upp besöksdata ytterligare kan du filtrera baserat på specifika besök och/eller sidvisningsträffar för varje besökare. I Segment Builder finns en enkel arkitektur som du kan använda för att skapa dessa delmängder och tillämpa regler som kapslade, hierarkiska besökar-, besöks- eller träbehållare.
 
-Den behållararkitektur som används i segmentbyggaren definierar **[!UICONTROL Visitor]** som den yttersta behållaren, med överliggande data som är specifika för besökaren vid besök och sidvyer. Med en kapslad **[!UICONTROL Visit]**-behållare kan du ange regler för att dela upp besökarens data baserat på besök, och med en kapslad **[!UICONTROL Hit]**-behållare kan du dela upp besökarinformation baserat på enskilda sidvyer. Med varje behållare kan du rapportera över en besökares historik, interaktioner uppdelade efter besök eller dela upp individuella träffar.
+Behållararkitekturen som används i segmentbyggaren definierar **[!UICONTROL Visitor]** som den yttersta behållaren, som innehåller övergripande data som är specifika för besökaren vid besök och sidvisningar. En kapslad **[!UICONTROL Visit]** kan du ange regler för att dela upp besökarens data baserat på besök och en kapslad **[!UICONTROL Hit]** kan du dela upp besökarinformation baserat på enskilda sidvyer. Med varje behållare kan du rapportera över en besökares historik, interaktioner uppdelade efter besök eller dela upp individuella träffar.
 
 ![](assets/sequential_segmentation_container_hierarchy.png)
+
+Här är en videoöversikt över segmentbehållare:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25401/?quality=12)
 
 **Besökarbehållare**
 
@@ -108,13 +112,13 @@ Träffbehållare innehåller värden som är baserade på en sidindelning:
 
 **Behållare för logikgrupp**
 
-Med Logic Group-behållaren kan du tillhandahålla en separat behållare inom segmentreglerna för att filtrera enheter som inte är baserade på hierarkin. Du kanske vill skapa en behållare som är kapslad i segmentet och som filtreras baserat på Visitor. Den här typen av logik kräver att du bryter hierarkin (eftersom du redan har en besöksbehållare på den översta nivån) för att bara filtrera efter valda besökare. Detta kan göras med hjälp av logikgruppsbehållaren. Mer information finns i [Exempel på logikgrupper](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+Med Logic Group-behållaren kan du tillhandahålla en separat behållare inom segmentreglerna för att filtrera enheter som inte är baserade på hierarkin. Du kanske vill skapa en behållare som är kapslad i segmentet och som filtreras baserat på Visitor. Den här typen av logik kräver att du bryter hierarkin (eftersom du redan har en besöksbehållare på den översta nivån) för att bara filtrera efter valda besökare. Detta kan göras med hjälp av logikgruppsbehållaren. Se [Exempel på logikgrupper](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md) för ytterligare information.
 
 ## Kapslade behållare {#section_7FDF47B3C6A94C38AE40D3559AFFAF70}
 
 När du skapar segmentbehållare i andra behållare skapar du i princip ett segment i ett segment. Följande logik används med kapslade behållare:
 
-1. Bestäm vilka data som ska inkluderas med den yttersta behållaren. Alla data som inte matchar den här yttre regeln tas bort i den segmenterade rapporten.
+1. Avgör vilka data som ska inkluderas med den yttersta behållaren. Alla data som inte matchar den här yttre regeln tas bort i den segmenterade rapporten.
 1. Använd den kapslade regeln på återstående data. Den kapslade regeln gäller INTE för träffar som den första regeln genererar.
 1. Upprepa tills alla kapslade behållarregler har beräknats. Resterande data inkluderas sedan i den resulterande rapporten.
 
@@ -145,17 +149,17 @@ skapar ett segment som fungerar i den här ordningen:
 
 ## Behållare för sekventiella segment {#section_324AF503F51A4A62806151FE440F3B2E}
 
-Sekventiell segmentering använder samma grundläggande behållare, inklusive [!UICONTROL Visitors], [!UICONTROL Visits] och [!UICONTROL Hits] (inklusive sidvyer eller andra dimensioner) kapslade hierarkiskt.
+Sekventiell segmentering använder samma grundläggande behållare, inklusive [!UICONTROL Visitors], [!UICONTROL Visits]och [!UICONTROL Hits] (inklusive sidvyer och andra dimensioner) kapslade hierarkiskt.
 
 ![](assets/nesting_container.png)
 
-[!UICONTROL Visitors] utgör den högsta behållaren i sekventiell segmentering,  [!UICONTROL Visits] innesluten i  [!UICONTROL Visitors] behållaren och  [!UICONTROL Hits] innesluten i  [!UICONTROL Visitors] eller  [!UICONTROL Visits] behållarna. Denna [behållarhierarki](/help/components/segmentation/seg-overview.md#section_7FDF47B3C6A94C38AE40D3559AFFAF70) måste upprätthållas för att kunna skapa välordnade sekventiella segment.
+[!UICONTROL Visitors] utgöra den högsta orderbehållaren i sekventiell segmentering, med [!UICONTROL Visits] som finns i [!UICONTROL Visitors] behållare, och [!UICONTROL Hits] som finns i [!UICONTROL Visitors] eller [!UICONTROL Visits] behållare. Detta [behållarhierarki](/help/components/segmentation/seg-overview.md#section_7FDF47B3C6A94C38AE40D3559AFFAF70) måste upprätthållas för att bygga välordnade sekventiella segment.
 
-**För att skapa sekventiella segment** kapslas behållare och sekventiell logik förenas med  [!UICONTROL THEN] operatorn som kräver att varje behållare är true baserat på besökarens sekvens.
+**Skapa sekventiella segment**, kapslas behållare och sekventiell logik förenas med [!UICONTROL THEN] -operator som kräver att varje behållare är true baserat på besökarens sekvens.
 
 ![](assets/sequential_segmentation_nesting_3.png)
 
-Det enda undantaget till den här behållarhierarkin är när du använder [logikgruppsbehållaren](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md). Med [!UICONTROL Logic Group]-behållaren kan du kapsla in en träff i en behållare utan ordning för att fånga händelser och dimensioner, men utanför en sekventiell ordning.
+Det enda undantaget till den här behållarhierarkin är när [Behållare för logikgrupp](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md). The [!UICONTROL Logic Group] Med -behållare kan du kapsla in en träff i en behållare utan ordning för att fånga händelser och dimensioner, men utanför en sekventiell ordning.
 
 ![](assets/logic_group_hierarchy.png)
 
@@ -169,7 +173,7 @@ Data som samlas in på varje nivå i hierarkin Besök > Träff-behållare påver
 
 Besökaren som visas nedan besökte till exempel en plats på det första besöket, landade på hemsidan och besökte sedan ytterligare tre sidor och bytte besök till en försäljning. Vid ett separat besök landade besökaren den här gången via produktsidan, sedan till hemsidan, tillbaka till produktsidan och stängde sedan sessionen efter att ha tittat på Winter Hats. Baserat på de data som har hämtats för varje behållare för segmentet visas olika värden i rapporten.
 
-Segmentet *Sidor är lika med vinterkatt* nedan används i **sidrapporten**.
+The *Sidor är lika med vinter-katt* segmentet nedan används på **Sidrapport**.
 
 ![](assets/page_winter_coat.png)
 
@@ -179,7 +183,7 @@ Baserat på vald behållare visar rapporten olika resultat.
 
 **Rapportering från träff-behållaren**
 
-När det här villkoret finns i en Träff-behållare listas endast sidor där *Sida = Vinter-kattor* är sant. Eftersom bara en sida matchar det här villkoret i en behållare för endast en sida, visas endast sidan Vinter-slag.
+När det här villkoret finns i en Träff-behållare listas endast de sidor där *Sida = Vinter* är sant. Eftersom bara en sida matchar det här villkoret i en behållare för endast en sida, visas endast sidan Vinter-slag.
 
 ![](assets/container_overview_PV.png)
 
@@ -193,7 +197,7 @@ Om du rapporterar från träff-behållaren kan du se hur rapportering från olik
 
 **Rapportering från besöksbehållaren**
 
-Om samma villkor gäller för en besöksbehållare listas alla sidor i besöket där *Sida är lika med Vinter Coats* är sant. Den filtrerar sidan Vinter Coats, men hämtar även alla andra sidor vid besöket där villkoret är sant. Eftersom besökaren även besökte webbplatserna Hem, Produkt och Inköp vid besöket där villkoret var uppfyllt, listas dessa ytterligare sidor i rapporten när de rapporteras med data från Visitor-behållaren.
+Om samma villkor gäller för en besöksbehållare listas alla sidor i besöket där *Sida är lika med vinterkatt* är sant. Den filtrerar sidan Vinter Coats, men hämtar även alla andra sidor vid besöket där villkoret är sant. Eftersom besökaren även besökte webbplatserna Hem, Produkt och Inköp vid besöket där villkoret var uppfyllt, listas dessa ytterligare sidor i rapporten när de rapporteras med data från Visitor-behållaren.
 
 ![](assets/container_overview_visit.png)
 
@@ -203,7 +207,7 @@ Genom att visa segmentvärden från besöksbehållaren ser du att antalet sidvis
 
 **Rapportering från besökarbehållaren**
 
-Om samma villkor gäller för en besökarbehållare listas alla sidor som visas av en besökare där *Sida är lika med Vinter Coats* är true. Det innebär att om en besökare visar sidan Vinter Coats kommer alla sidor i besökarbehållaren att listas - inklusive sidvyer i andra besök. Därför kommer sidor som inte matchar villkoret att listas i rapporten eftersom besökaren visade dem vid en tidigare tidpunkt. Alla sidor i besökarbehållaren listas i rapporten, även om de förekommer tidigare och inte specifikt uppfyller villkoren.
+Om samma villkor finns i en besökarbehållare listas alla sidor som visas av en besökare där *Sida är lika med vinterkatt* är sant. Det innebär att om en besökare visar sidan Vinter Coats kommer alla sidor i besökarbehållaren att listas - inklusive sidvyer i andra besök. Därför kommer sidor som inte matchar villkoret att listas i rapporten eftersom besökaren visade dem vid en tidigare tidpunkt. Alla sidor i besökarbehållaren listas i rapporten, även om de förekommer tidigare och inte specifikt uppfyller villkoren.
 
 ![](assets/container_overview_visitors.png)
 
@@ -215,23 +219,23 @@ Sammanfattningsvis är en förståelse för hur segmentering fungerar på olika 
 
 ## Rapportering baserad på behållaren {#section_D0604748F2794327B8C668617A31EC18}
 
-Varje uppdelning av segmentdata har ett omfång som de tillämpas på. De flesta uppdelningar baseras på *sidvyer*, men många värdefulla segment baseras på *Besök*-behållaren och i mindre utsträckning på *Besökaren*-behållaren. Det är viktigt att förstå hur du rapporterar baserat på omfattningen av din behållare.
+Varje uppdelning av segmentdata har ett omfång som de tillämpas på. De flesta uppdelningar baseras på *Sidvyer* Men många värdefulla segment baseras på *Besök* och i mindre utsträckning *Besökare* behållare. Det är viktigt att förstå hur du rapporterar baserat på omfattningen av din behållare.
 
-Baserat på segmentexemplet *Page = Winter Coats* som användes tidigare definierar problemen nedan andra aspekter av segmentet baserat på hur behållardata används och hur omfattningen av data ska matcha segmenttypen.
+Baserat på *Sida = Vinter* I segmentexemplet ovan definierar problemen nedan andra aspekter av segmentet baserat på hur behållardata används och hur omfattningen av data ska matcha segmenttypen.
 
 **Segmentbehållare baserad på matchande segmentregel**
 
 Om segmentbehållaren används mot ett naturligt dataområde, förväntas resultatet när radobjekten matchar segmentregeln.
 
-* **Träffbehållare där sidan är lika med &quot;Vinter Coat&quot;**: Om du visar en  ** sidport med det här segmentet returneras bara de värden som är lika med &quot;Vinter Coat&quot;. Alla andra sidor undantas från rapporteringen.
-* **Besökscontainer där anmälningssidan är lika med &quot;Winter Apparel&quot;**: Om du visar en  *Entry* PageReport med det här segmentet returneras endast det andra besöket eftersom startsidan matchar segmentregeln.
+* **Träff-behållare där sidan är lika med &quot;Winter Coat&quot;**: Visa en *Sida* om rapporten med det här segmentet bara returnerar värden som är lika med &quot;Winter Coat&quot;. Alla andra sidor undantas från rapporteringen.
+* **Besökscontainer där ingångssidan är lika med &quot;Winter Apparel&quot;**: Visa en *Startsida* rapporten med det här segmentet returnerar bara det andra besöket eftersom startsidan matchar segmentregeln.
 * **Besök container där besöksnumret är lika med 1**: Om du visar en besökssida Alla sidvyer från det första besöket inkluderas rapporten eftersom den matchar segmentregeln.
 
 **Sidvyer på behållarnivå för besök**
 
 Många segmentregler identifierar sidvisningar per besök. När detta inträffar tillämpas hela besökarbehållaren om endast en träff matchar regeln. Den här segmentrapporten är särskilt värdefull eftersom sidvisningar baserade på besök ger insikter baserade på sidvisningar per besök.
 
-* **Besök behållare där sidan är lika med sidan** &quot;Winter Coat&quot;: I en sidrapport på besökarbehållarnivå visas alla sidvisningar av besök som innehåller en vy av sidan &quot;Vinter-kläder&quot;. Om en sida matchar segmentregeln inkluderas alla sidvyer som är kopplade till det besöket i rapporten.
+* **Besök behållare där sidan är lika med sidan &quot;Winter Coat&quot;**: I en sidrapport på besökarbehållarnivå visas alla sidvisningar av besök som innehåller en vy av sidan &quot;Vinter-kläder&quot;. Om en sida matchar segmentregeln inkluderas alla sidvyer som är kopplade till det besöket i rapporten.
 * **Besök behållare där sidan är lika med startsidan**: I en sidrapport med det här segmentet visas endast data från det första besöket. Detta beror på att besökaren inte såg hemsidan vid det andra besöket.
 * **Besökarbehållare där sidan är lika med &quot;Vinter-kläder&quot;**: I en sidrapport hämtar det här segmentet alla data från båda besöken eftersom besökaren visade sidan &quot;Vinter-kläder&quot; i båda besöken.
 
@@ -242,19 +246,19 @@ Om du använder segment med en mindre behållare än nedbrytningsområdet return
 * **Träffbehållare där startsidan är lika med produktsidan**: Alla sidor är kopplade till besökets startsida, vilket gör det till en besöksbaserad uppdelning. När du använder det här segmentet hämtas inte bara produktsidan på startsidan, utan även alla träffar på besöket.
 * **Träffbehållare där List Var 1 innehåller ValueA**: Om flera värden har definierats i samma träff som listans var, inkluderas alla variabelvärden i segmentet. Det finns inget sätt att separera värden som förekommer i samma sidvy eftersom Träff-behållaren är den minsta segmentbehållaren för att bryta ned träffar.
 * **Träffbehållare där sidan är lika med&quot;Inköp&quot;**: Om du använder sidvyer som mått visas bara sidan Inköp (som förväntat). Om du använder en Intäktsdeltagarrapport får alla sidor i det första besöket 100 dollar, eftersom deltagarstatistik är besöksbaserad.
-* **Träffbehållare där sidan är lika med &quot;Vinter-katt&quot;**: Om du använder sidvyer som mått visas bara sidan Vinter-katt (som förväntat). Om du använder en Intäktsdeltagarrapport får inga sidor krediter eftersom denna dimension kräver en beständig dimension. Sidvyn som faktiskt gjorde köpet (sidan Inköp) inkluderas inte i Träff-behållaren, så ingen intäktsandel ges till någon artikel. Om du kör en rapport från besöksbehållaren skulle dock alla sidvisningar ingå i besöket och vinsten skulle fördelas ($100) över alla sidor som visas i sessionen.
+* **Träffbehållare där sidan är lika med &quot;vinterkatt&quot;**: Om du använder sidvyer som mått visas bara sidan Vinter-katt (som förväntat). Om du använder en Intäktsdeltagarrapport får inga sidor krediter eftersom denna dimension kräver en beständig dimension. Sidvyn som faktiskt gjorde köpet (sidan Inköp) inkluderas inte i Träff-behållaren, så ingen intäktsandel ges till någon artikel. Om du kör en rapport från besöksbehållaren skulle dock alla sidvisningar ingå i besöket och vinsten skulle fördelas ($100) över alla sidor som visas i sessionen.
 
 ## Beständighet över behållare {#concept_E579D72B1C644AE9A4C4EAF6B47A4DCB}
 
 Filtrering efter dimensioner som finns kvar på ett sidintervall, t.ex. en Campaign-eVar eller en referensdimension, påverkar de data som samlas in på behållarnivå och måste förstås för att rapporteringen ska vara korrekt.
 
-Segmentdata kan variera beroende på hur beständig en dimension eller en variabel som används på de valda sidorna är. Vissa dimensioner, till exempel siddimensionen, ger unika värden på sidnivå och filtreras baserat på data från Träff-behållaren. (Se exemplet [Rapporter baserade på behållardata](/help/components/segmentation/seg-overview.md).) Andra dimensioner, till exempel dimensionen Refererande domän, finns kvar på flera sidor för ett besök. Vissa dimensioner eller tillämpade variabler, som Besök Varaktighet, spänner över en besökares hela historik.
+Segmentdata kan variera beroende på hur beständig en dimension eller en variabel som används på de valda sidorna är. Vissa dimensioner, till exempel siddimensionen, ger unika värden på sidnivå och filtreras baserat på data från Träff-behållaren. (Se [Rapporter baserade på behållardata](/help/components/segmentation/seg-overview.md) exempel). Andra dimensioner, till exempel dimensionen Refererande domän, finns kvar på flera sidor för ett besök. Vissa dimensioner eller tillämpade variabler, som Besök Varaktighet, spänner över en besökares hela historik.
 
 ![](assets/RefDomain_aol.png)
 
 I motsats till siddimensionen är referensdomänvärdet kopplat till varje sida i besöket. Besökaren nedan kommer till exempel till hemsidan från en refererad webbplats. Följaktligen tilldelas alla sidor i besöket samma referensdomänvärde.
 
-*Den refererande domänen är lika med aol.com* segment nedan och används i **sidrapporten**.
+The *Refererande domän är lika med aol.com* segmentet nedan används på **Sidrapport**.
 
 ![](assets/container_overview_persist.png)
 
@@ -262,7 +266,7 @@ Vid ett nytt besök hänvisas besökaren till från en annan plats. Följaktlige
 
 **Rapportering från träff-behållaren**
 
-Eftersom alla sidvyer inom samma besök tilldelas samma referensdomänvärde, returnerar rapporter på träff-behållarnivå där *Referensdomän = &quot;aol.com&quot;* alla sidor i tabellen nedan.
+Eftersom alla sidvyer inom samma besök tilldelas samma referensdomänvärde, rapporteras på träff-behållarnivå där *Refererande domän = &quot;aol.com&quot;* returnerar alla sidor i tabellen nedan.
 
 ![](assets/container_overview_persist_Visit.png)
 
@@ -272,7 +276,7 @@ Med data från Träff-behållaren visades drygt 92 000 sidvisningar i över 33 0
 
 **Rapportering från besöksbehållaren**
 
-Om samma villkor filtreras i besöksbehållaren för en sidrapport är alla sidor i besöket där *Referensdomän = &quot;aol.com&quot;* är true. Eftersom värdet för den refererande domänen anges på besöksnivå är rapporterna på sidvynivå och besöksnivå desamma.
+Om samma villkor filtreras i besöksbehållaren för en sidrapport, ska alla sidor i besöket där *Refererande domän = &quot;aol.com&quot;* är sant. Eftersom värdet för den refererande domänen anges på besöksnivå är rapporterna på sidvynivå och besöksnivå desamma.
 
 ![](assets/container_overview_persist_Visit.png)
 
@@ -282,9 +286,9 @@ I det här exemplet, eftersom alla sidor har samma referensdomänvärde baserat 
 
 **Rapportering från besökarbehållaren**
 
-Från besökarbehållaren visar sidrapporten alla sidor som visas av en besökare där *Referensdomänen är lika med &quot;aol.com&quot;* är true. Om en besökare har *&quot;aol.com&quot;* som hänvisande domän när som helst i historiken (inom den definierade tidsperioden) listas därför alla sidor i besökarbehållaren - inklusive sidvyer i andra besök -. Även sidor som inte matchar det primära villkoret visas i rapporten eftersom de här sidorna inkluderas i besökarbehållaren. Alla sidor i besökarbehållaren listas i rapporten, även om de förekommer tidigare och inte specifikt uppfyller villkoren.
+Från besökarbehållaren visar sidrapporten alla sidor som visas av en besökare där *Refererande domän är lika med &quot;aol.com&quot;* är sant. Om en besökare hade *&quot;aol.com&quot;* som hänvisande domän när som helst i historiken (inom den definierade tidsperioden), kommer alla sidor i besöksbehållaren att listas - inklusive sidvisningar i andra besök. Även sidor som inte matchar det primära villkoret visas i rapporten eftersom de här sidorna inkluderas i besökarbehållaren. Alla sidor i besökarbehållaren listas i rapporten, även om de förekommer tidigare och inte specifikt uppfyller villkoren.
 
-I en referensdomänrapport är *Referensdomän = &quot;aol.com&quot;* true i fyra sidvyer, men *Referensdomän = &quot;wall.com&quot;* är true i andra sidor som besökaren träffar på. Från besökarbehållaren får du en lista över besökare där &quot;aol.com&quot; är true, men den ger dig också sidor där den refererande domänen är &quot;wall.com&quot;, inte det värde som matchade din ursprungliga begäran i segmentet.
+I en referensdomänrapport *Refererande domän = &quot;aol.com&quot;* är sant i fyra sidvyer, men *Refererande domän = &quot;west.com&quot;* är true på de andra sidorna besökaren träffar. Från besökarbehållaren får du en lista över besökare där &quot;aol.com&quot; är true, men den ger dig också sidor där den refererande domänen är &quot;wall.com&quot;, inte det värde som matchade din ursprungliga begäran i segmentet.
 
 ![](assets/container_overview_persist_Visitor.png)
 
