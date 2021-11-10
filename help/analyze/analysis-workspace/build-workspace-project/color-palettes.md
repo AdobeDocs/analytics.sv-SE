@@ -1,19 +1,19 @@
 ---
 description: Använda färgpaletten för visualisering i Analysis Workspace
 title: Vad är visualiseringsfärgpaletter och hur fungerar de?
-feature: Grundläggande om arbetsytan
+feature: Workspace Basics
 role: User, Admin
 exl-id: 7e426423-5475-44cc-9e78-74c0da5b93f8
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '213'
 ht-degree: 2%
 
 ---
 
 # Visualiseringsfärgpaletter
 
-Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men den påverkar **inte** Sammanfattningsändring, villkorsstyrd formatering i frihandstabeller och Kartvymulering.
+Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men det gör den **not** påverkar Sammanfattningsändring, villkorsstyrd formatering i frihandstabeller och Kartvyn.
 
 >[!NOTE]
 >
@@ -28,8 +28,12 @@ Tänk på följande:
 
 ## Ändra din färgpalett:
 
+Här är en video om hur du använder anpassade färgpaletter:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23876/?quality=12)
+
 1. Navigera till **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project Info & Settings]**.
-1. I listrutan **[!UICONTROL Project Color Palette]** kan du välja ett av fem förinställda färgscheman.
+1. Från **[!UICONTROL Project Color Palette]** kan du välja ett av fem förinställda färgscheman.
 
    ![](assets/custom_palette.png)
 

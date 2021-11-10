@@ -2,12 +2,12 @@
 description: Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år för år, kvartal för kvartal, månad för månad.
 title: Datumjämförelse
 uuid: ef18f9d9-b6ad-4859-b7c9-9750ca0df519
-feature: Grundläggande om arbetsytan
+feature: Workspace Basics
 role: User, Admin
 exl-id: ea7a42ef-89de-4f70-b468-8a5cf69fea05
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '587'
 ht-degree: 6%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 6%
 # Datumjämförelse
 
 Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel: år-över-år, kvartal-över-kvartal, månad-över-månad osv.
+
+Här är en video om ämnet:
+
+>[!VIDEO](https://video.tv.adobe.com/v/30753/?quality=12)
 
 ## Jämför tidsperioder {#section_C4E36BFE0F5C4378A74E705747C9DEE4}
 
@@ -54,7 +58,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
    ![](assets/compare-time-barchart.png)
 
-   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages]-inställningen markerad i [!UICONTROL Visualization Settings].
+   Observera att om du vill visa den procentuella ändringen i stapeldiagrammet måste du ha [!UICONTROL Percentages] inställningen är markerad i [!UICONTROL Visualization Settings].
 
 ## Lägg till en tidsperiodkolumn för jämförelse {#section_93CC2B4F48504125BEC104046A32EB93}
 
@@ -92,7 +96,7 @@ Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from 
 
 >[!IMPORTANT]
 >
->Den här inställningen är **inaktiverad** (omarkerad) för alla befintliga projekt och **aktiverad** (markerad) för alla nya projekt.
+>Den här inställningen är **inaktiverad** (ej markerat) för alla befintliga projekt och **aktiverad** (markerat) för alla nya projekt.
 
 Exempel: Om du väljer att justera datumen och gör en månadsvis jämförelse mellan oktober och september 2016 börjar den vänstra kolumnen med 1 oktober och den högra kolumnen börjar med 1 september:
 

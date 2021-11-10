@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Användningsområden för Analysis Workspace
 feature: Analysis Workspace basics
 uuid: 09e20b76-8c31-4d20-920b-bebc877b3b70
-source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
+source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 97%
+source-wordcount: '592'
+ht-degree: 87%
 
 ---
 
@@ -66,3 +66,15 @@ Anta att du är marknadsföringsanalytiker hos en återförsäljare av friluftsu
 Här är ett videoklipp om detta ämne:
 
 >[!VIDEO](https://video.tv.adobe.com/v/25864/?quality=12)
+
+## Använd tabbanalys för grundläggande marknadsattribuering
+
+Det finns många sätt att utveckla din attribueringsmetod med Adobe Analytics. I den här videon visar vi hur ni kan få djupare insikter från rapporten om marknadsföringskanaler med hjälp av flikanalys i Workspace.
+
+>[!VIDEO](https://video.tv.adobe.com/v/39237/?quality=12)
+
+## Använda deltagarstatistik i Analysis Workspace
+
+I den här videon visas hur du hämtar deltagandestatistik med hjälp av beräknade värden:
+
+>[!VIDEO](https://video.tv.adobe.com/v/41266/?quality=12)

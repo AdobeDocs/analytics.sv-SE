@@ -6,9 +6,9 @@ uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 feature: Workspace Basics
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
+source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1409'
 ht-degree: 2%
 
 ---
@@ -89,6 +89,12 @@ Komponenter (Dimensioner, Metrisk, Segment, Datumintervall) i det vänstra fält
 
 ![](assets/left-rail.png)
 
+## Högerklicka på menyn
+
+Här är en video om hur du använder högerklicksmenyn i Analysis Workspace:
+
+>[!VIDEO](https://video.tv.adobe.com/v/23981/?quality=12)
+
 ## Projektarbetsyta {#canvas}
 
 Projektarbetsytan är där du sammanför paneler, tabeller, visualiseringar och komponenter för att bygga din analys. Ett projekt kan innehålla många paneler, och varje panel kan innehålla många tabeller och visualiseringar.
@@ -101,7 +107,9 @@ Beroende på vilken startpunkt du väljer för dina projekt har du antingen en [
 
 ## Projektledare {#manager}
 
-Analysis Workspace-projekt kan hanteras under **Analytics > Components > Projects**. Projekthanteraren visar de objekt som en viss användare har skapat. Projektägarskap kan överföras till en ny användare under Admin > Analytics Users &amp; Assets > Transfer Assets.
+Analysis Workspace-projekt kan hanteras under **[!UICONTROL Analytics]> [!UICONTROL Components] >[!UICONTROL Projects]**. Projekthanteraren visar de objekt som en viss användare har skapat.
+
+Projektägarskap kan överföras till en ny användare under [!UICONTROL Admin] > [!UICONTROL Analytics Users & Assets] > [!UICONTROL Transfer Assets].
 
 I Projects Manager kan du lägga till, tagga, dela, duplicera/kopiera och mycket mer. Sök efter ett projekt i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter tagg, ägare, projekttyp med mera.
 

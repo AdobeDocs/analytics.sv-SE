@@ -1,18 +1,22 @@
 ---
 description: Använd donutvisualisering i ett Workspace-projekt.
 title: Ringdiagram
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: d82db8a5-9502-4ed1-9326-fd3392670bd3
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 6%
+source-wordcount: '49'
+ht-degree: 2%
 
 ---
 
-# Ringdiagram
+# [!UICONTROL Donut]
 
-På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd ett munpunktsdiagram när du jämför procentandelar av en summa, vanligtvis med ett litet antal objekt.
+På samma sätt som ett cirkeldiagram visar den här visualiseringen data som delar eller segment av en helhet. Använd en [!UICONTROL Donut] när du jämför procenttal av en summa, vanligtvis med ett litet antal objekt.
 
 ![](assets/donut.png)
+
+Här är en video om hur du använder [!UICONTROL Donut] visualisering:
+
+>[!VIDEO](https://video.tv.adobe.com/v/334309/?quality=12)

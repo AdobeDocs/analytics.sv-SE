@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: c4f6a7a3d81160a1c86ebfa70d1e376882ccfee2
+source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna
 | Kan redigera | Mottagarna kan **[!UICONTROL Save]** ändringar i ett projekt och fungerar som medägare. Den här rollen är användbar om du vill samhantera ett projekt med andra kollegor. detta inkluderar redigering, borttagning och ändring av mottagarlistor för ett delat projekt. <br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen. |
 | Kan dupliceras | Mottagarna kan **[!UICONTROL Save as]** och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt projekt ska ändras. |
 | Kan visa | Mottagarna kan inte spara som och har inte åtkomst till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö.<br>Läs mer om [Kan visa projekterfarenhet](/help/analyze/analysis-workspace/curate-share/view-only-projects.md). |
+
+Här är en video om projekt som bara är för visning i Analysis Workspace:
+
+>[!VIDEO](https://video.tv.adobe.com/v/36206/?quality=12)
 
 >[!IMPORTANT]
 > Projektmottagare som lagts till före den 18 juni 2020 har migrerats till en projektroll. Administratörsanvändare migrerade till **[!UICONTROL Can edit]** rollanvändare och icke-adminanvändare migrerade till **[!UICONTROL Can duplicate]** roll. Dessa roller ger samma projekterfarenhet som tidigare. Dessutom migrerades alla grupper (inklusive&quot;Alla&quot;) till **[!UICONTROL Can duplicate]** roll.
