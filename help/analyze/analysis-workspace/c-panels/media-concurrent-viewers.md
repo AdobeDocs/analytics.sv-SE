@@ -1,12 +1,12 @@
 ---
 title: Panelen för samtidiga medieanvändare
 description: Så här använder och tolkar du panelen Media Concurrent Viewer i Analysis Workspace.
-feature: Paneler
+feature: Panels
 role: User, Admin
 exl-id: 29575b51-e319-4156-9834-aa0b671afb31
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 0515636dfae6c42d76211e1cbbc7faf424054271
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '1012'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,10 @@ Media Analytics-kunder kan analysera samtidiga tittare för att förstå var max
 I Analysis Workspace är Concurrent Viewers antalet unika besökare som visar medieströmmarna vid en viss tidpunkt, oavsett antalet sessioner.
 
 Med Media Concurrent Viewers-panelen kan man analysera samtidiga visningsprogram över tiden, med detaljer om maximal samtidighet och möjlighet att dela upp och jämföra.  Om du vill få åtkomst till panelen Medievisningsprogram för samtidiga media går du till en rapportsvit med Media Analytics-komponenter aktiverade. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
+
+Här är en videoöversikt av den här panelen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12)
 
 ## Panelindata {#Input}
 

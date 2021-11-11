@@ -2,21 +2,25 @@
 description: projekt med endast visning i arbetsytan
 keywords: Visa endast  projekt
 title: Visa endast  projekt
-feature: Kuratera och dela
+feature: Curate and Share
 role: User, Admin
 exl-id: 53372247-6902-4c7f-9132-38a1d453186c
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 0515636dfae6c42d76211e1cbbc7faf424054271
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '254'
 ht-degree: 3%
 
 ---
 
 # Visa endast  projekt
 
-Du kan dela projekt som&quot;endast visning&quot; till mottagare via arbetsflödet [Projektdelning](/help/analyze/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
+Du kan dela projekt som&quot;skrivskyddade&quot; till mottagare via [Arbetsflöde för projektdelning](/help/analyze/analysis-workspace/curate-share/share-projects.md). Mottagare som placerats i rollen Kan visa får en mer begränsad projekterfarenhet. Detta kan vara önskvärt om du delar ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet, men ändå vill att de ska använda data och insikter i en säker miljö.
 
 ![](assets/view-only-project.png)
+
+Här är en videoöversikt över projekt som bara är för visning:
+
+>[!VIDEO](https://video.tv.adobe.com/v/36206/?quality=12)
 
 ## Inaktiverade interaktioner
 
@@ -24,7 +28,7 @@ Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dolt vänster spår
 * Rapportsvit
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till ett [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till en [nedrullningsbart filter med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandsfiltrering
 * Frihand # av synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering

@@ -4,9 +4,9 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: 324ee0f5839442ba1575b65a1159a23bed7129b4
+source-git-commit: 0515636dfae6c42d76211e1cbbc7faf424054271
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 1%
 The [!UICONTROL Components] > [!UICONTROL User preferences] På -sidan kan du hantera inställningar för Analysis Workspace och dess relaterade komponenter på användarnivå. Användarinställningarna gäller för alla *new* projekt eller paneler.
 
 ![Användarinställningar](assets/user-preferences.png)
+
+Här är en kort video om användarinställningar:
+
+>[!VIDEO](https://video.tv.adobe.com/v/332600/?quality=12)
 
 ## Allmänna inställningar
 
