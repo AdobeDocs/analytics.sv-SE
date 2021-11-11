@@ -5,10 +5,10 @@ uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 feature: Workspace Basics
 role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
+source-git-commit: 76235e80ad5e2104d0ad3a262b8f805f34fa99a3
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 1%
+source-wordcount: '1395'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ Du kan välja om du vill skapa ett projekt från:
 
 ![](assets/start_modal.png)
 
-## Skapa en egen mall {#create-custom-template}
+## Skapa egna mallar {#create-custom-template}
 
 Användare med administratörsbehörighet kan omvandla projekt de skapar till en egen mall. Så här:
 
@@ -41,9 +41,7 @@ Här är en video om hur du skapar och hanterar egna mallar:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23231/?quality=12)
 
-### Åtgärder som du kan utföra på anpassade mallar
-
-![](assets/custom_templates.png)
+### Hantera anpassade mallar {#manage-custom-template}
 
 | Åtgärd | Beskrivning |
 |--- |--- |
@@ -66,11 +64,7 @@ Här finns tillgängliga mallar och de frågor som varje mall kan besvara.
 
 ### Utbildning
 
-Dessa standardmallar leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. De är tillgängliga som standardmallar i det nya projektet och ersätter det exempelprojekt som finns idag för nya användare som inte har andra projekt i listan.
-
-* **Självstudiekurs - intern sökanalys**: Självstudiekursen för intern sökning hjälper dig att förstå vad besökarna letar efter på webbplatsen eller i appen, men inte att hitta. Genom att analysera den här typen av data kan ni identifiera möjligheter till innehållsoptimering.
-
-* **Självstudiekurs - marknadsanalys**: Den här självstudiekursen visar hur ni sammanställer en marknadsföringsanalys för era chefer, inklusive vilka anpassade dimensioner och mätvärden som är viktiga.
+Den här standardmallen visar vanliga termer och steg för hur du skapar din första analys i Workspace. Den finns som en standardmall i det modala fönstret Nytt projekt och ersätter det exempelprojekt som finns idag för nya användare, som inte har andra projekt i sin lista.
 
 Här är en video på [!UICONTROL Training Tutorial] mall:
 
@@ -80,38 +74,40 @@ Här är en video på [!UICONTROL Training Tutorial] mall:
 
 >[!IMPORTANT]
 >
->Annonsmallar är bara tillgängliga om rapportsviten är aktiverad för Advertising Cloud.
+>Annonsmallar är bara tillgängliga om rapportsviten är aktiverad för [Advertising Analytics](https://experienceleague.adobe.com/docs/analytics/integration/advertising-analytics/overview.html).
 
 * **Betalsökmotorer**: Den här mallen bryter ned reklamtrender, annonsplattformar, nyckelord, konton, kampanjer med mera.
 
 ### Handel
 
-* **Magento: Marknadsföring och handel**: Den här mallen bryter ned e-handelskonverteringen genom kanalattribuering, och ger insikt genom sökord, landningssida, geografisk plats med mera. En videoöversikt finns i:
+* **Magento: Marknadsföring och handel**: Den här mallen bryter ned e-handelskonverteringen genom kanalattribuering, och ger insikt genom sökord, landningssida, geografisk plats med mera. Här är en videosjälvstudiekurs om [Magento: Mall för marknadsföring och handel](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/integrations/magento/magento-analysis-workspace-template.html).
 
->[!VIDEO](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/integrations/magento/magento-analysis-workspace-template.html)
+### Datainsamling
+
+* **ITP-effekt**: Lär dig hur Apple ITP påverkar era data och hur ni justerar rapporteringen därefter.
 
 ### Media
 
-* **Ljudförbrukning**: Vilket innehåll konsumeras mest och engagerar användarna? Här är en video om mallen Ljudförbrukning:
+* **Innehållskonsumtion**: Vilka är mina lojala läsare?
+* **Nyhet - frekvens - lojalitet**: Vilket innehåll konsumeras mest och engagerar användarna?
+* **Direktuppspelad medieförbrukning**: Tillhandahåller trender och toppvärden för mediekonsumtion på alla digitala enheter. Här är en video om hur du använder media för direktuppspelning:
 
    >[!VIDEO](https://video.tv.adobe.com/v/23901/?quality=12)
-
-* **Nyhet - frekvens - lojalitet**: Vilka är mina lojala läsare?
 
 ### Mobil
 
 >[!IMPORTANT]
 >
->Mobilmallar är bara tillgängliga om rapportsviten är aktiverad för Mobile.
+>Mobilmallar är bara tillgängliga om rapportsviten är aktiverad för mobilappsanalys.
 
-* **Meddelanden:** Fokuserar på prestanda i appen och push-meddelanden.
-* **Plats:** Innehåller en karta som visar platsdata.
-* **Nyckeltal:** Håll koll på nyckelmätningarna i appen.
-* **Appanvändning:** Hur många appanvändare, starter och första starter hade appen och hur lång var den genomsnittliga sessionslängden?
 * **Förvärv:** Se hur länkar till mobilförvärv fungerar.
+* **Appanvändning:** Hur många appanvändare, starter och första starter hade appen och hur lång var den genomsnittliga sessionslängden?
+* **Resor:** Vilka är de framträdande användningsmönstren för min app?
+* **Nyckeltal:** Håll koll på nyckelmätningarna i appen.
+* **Plats:** Innehåller en karta som visar platsdata.
+* **Meddelanden:** Fokuserar på prestanda i appen och push-meddelanden.
 * **Prestanda:** Hur fungerar appen och var har användarna problem?
 * **Kvarhållning:** Vilka är mina lojala användare och vad gör de?
-* **Resor:** Vilka är de framträdande användningsmönstren för min app?
 
 ### Detaljhandel
 
@@ -121,6 +117,7 @@ Här är en video på [!UICONTROL Training Tutorial] mall:
 ### Webb
 
 * **Förvärv:** Vilka är de viktigaste trafikdrivande faktorerna på min webbplats?
+* **Översikt över prestanda för AEM:** Hur fungerar min Adobe Experience Manager webbplats?
 * **Innehållskonsumtion:** Vilka är de främsta platserna på min webbplats?
 * **Kvarhållning:** Vilka typer av användare är sannolikt lojala användare på min webbplats?
 * **Teknik:** Vilken teknik använder folk för att komma åt min webbplats?
@@ -130,10 +127,6 @@ Här är en video på [!UICONTROL Training Tutorial] mall:
 >[!NOTE]
 >
 >Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/data/people.html).
-
-Videoöversikt över personmallen:
-
->[!VIDEO](https://video.tv.adobe.com/v/24037/?quality=12)
 
 Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
 
@@ -145,7 +138,7 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 * Upptäck hur du använder segmentstackning med personmåttet.
 * Upptäck hur Experience Cloud-ID:t i din miljö förbättrar effektiviteten i personmätningen.
 
-### Resa-IQ: Mall för enhetsövergripande analys
+### Resa-IQ: Mallen för enhetsövergripande analys
 
 <!--This content is mirrored in the CDA doc.-->
 
