@@ -3,10 +3,10 @@ description: En omfattande lista med beskrivningar av konfigurationsvariabler, H
 title: Vidarebefordra data och kodreferenser på serversidan
 uuid: 3eb3ea0f-a530-448d-bba5-6408b2490dc8
 exl-id: 6ab7bbb6-0709-427b-b9fa-a179dbe55fc9
-source-git-commit: 4f29245a80e54f3fbc5a830075d066b31d23c628
+source-git-commit: 27af710f1ce9d85b1177fa4c5fd4d3f6e2875a48
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '520'
+ht-degree: 3%
 
 ---
 
@@ -36,6 +36,7 @@ Dessa rubriker är fält som innehåller information som förfrågningar om data
 | Acceptera språk | Ange till  `Accept-Language`  har skickats till Analytics. | `h_accept-language` |
 | Referent | Ange som sidans URL som skickas till Analytics (Analyser) eller som samlats in från `Referer` har skickats till Analytics. | `h_referer` |
 | Referent | Ange som sidans URL som skickas till Analytics (Analyser) eller som samlats in från `Referrer` har skickats till Analytics. | `h_referrer` |
+| Datum | Ange till `Date` har skickats till Analytics. | `h_date` |
 
 Dessutom har `h_ip` signalen genereras från IP-adressen för värddatorn som skickar begäran till DCS.
 
