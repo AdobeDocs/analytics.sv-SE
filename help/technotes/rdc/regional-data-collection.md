@@ -2,9 +2,9 @@
 title: Regional datainsamling
 description: Information om regional datainsamling
 exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
-source-git-commit: f3622023c6c86dd340dc5ce81f81f628da9fbe38
+source-git-commit: e020e768b7a3a5495fcc86cb3fd1fbc5a421d224
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ Adobe Experience Cloud använder Regional Data Collection (RDC) så att interakt
 
 >[!IMPORTANT]
 >
->Det kinesiska paketet för prestandaoptimering (Kina Performance Optimization) är ett tilläggsprogram som kan debiteras Adobe Analytics. Adobe prestandaoptimering på det kinesiska fastlandet gör det möjligt för kunder i Kina att skicka data direkt till den kinesiska kantnoden i stället för till andra platser globalt. Detta förbättrar sidinläsningstiden och datakvaliteten jämfört med att skicka data till noder utanför Kina. Kontakta din säljare på Adobe för mer information.
+>Det kinesiska paketet för prestandaoptimering (Kina Performance Optimization) är ett tilläggsprogram som kan debiteras Adobe Analytics. Adobe prestandaoptimering på det kinesiska fastlandet gör det möjligt för kunder med användare i Kina att få dessa data skickade direkt till den kinesiska kantnoden i stället för till andra platser globalt. Detta förbättrar sidinläsningstiden och datakvaliteten jämfört med att skicka data till noder utanför Kina. Kontakta din säljare på Adobe för mer information.
 
 Följande platser (kan ändras) ingår för närvarande i RDC:
 
@@ -25,23 +25,25 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 |---------------------|-------------------|
 | Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney, Kina* |
 
-Obs! Om din Analytics-bildbegäran skickas till slutpunkterna `adobedc`, `2o7.net` eller `omtrdc.net` har du en datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
+Obs! Om din Analytics-bildförfrågan skickas till `adobedc`, `2o7.net` eller `omtrdc.net` slutpunkter, och sedan har du datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
 
-*China RDC kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan.
+*China RDC kräver China Add-On-paketet. Se&quot;Viktigt&quot;-texten ovan.
 
 ## Insamling av HTTPS-data från första part
 
 | Typ av domänkontrollant | Datainsamlingscentral |
 |---------------------|-------------------|
 | Global (standard) | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney |
+| Global + Kina* | Kina*, Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney |
 | Endast Amerika | Oregon, Virginia |
 | Endast Europa | Irland, Paris |
 | Endast Asien och Stillahavsområdet | Mumbai, Singapore, Tokyo, Sydney |
 | Endast Kina* | Beijing |
 
-*China RDC kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan.
+*Endast Kina och Global + China RDC-typer kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan. Global + Kina kommer att dirigera data med ursprung i Kina till vår kinesiska lokala domänkontrollant medan data med ursprung utanför Kina slussas vidare till närmaste lokala domänkontrollant utanför Kina.
 
-Obs! Experience Edge Global ger bästa prestanda för dina slutanvändare.  Om du vill använda en alternativ RDC-typ kontaktar du Adobe kundtjänst för att få hjälp.
+>[!NOTE]
+>Experience Edge Global och Global + China ger bästa prestanda för era slutanvändare. Om du vill använda en alternativ RDC-typ kontaktar du Adobe kundtjänst för att få hjälp.
 
 ## Fördelar med RDC
 
