@@ -2,9 +2,9 @@
 title: Regional datainsamling
 description: Information om regional datainsamling
 exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
-source-git-commit: e020e768b7a3a5495fcc86cb3fd1fbc5a421d224
+source-git-commit: e2fd69043e198d855dddd316b04215fde9f52cad
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '494'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,11 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 |---------------------|-------------------|
 | Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney, Kina* |
 
-Obs! Om din Analytics-bildförfrågan skickas till `adobedc`, `2o7.net` eller `omtrdc.net` slutpunkter, och sedan har du datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
-
 *China RDC kräver China Add-On-paketet. Se&quot;Viktigt&quot;-texten ovan.
+
+>[!NOTE]
+>
+>Om din Analytics-bildförfrågan skickas till `adobedc`, `2o7.net` eller `omtrdc.net` slutpunkter, och sedan har du datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
 
 ## Insamling av HTTPS-data från första part
 
@@ -43,7 +45,8 @@ Obs! Om din Analytics-bildförfrågan skickas till `adobedc`, `2o7.net` eller `o
 *Endast Kina och Global + China RDC-typer kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan. Global + Kina kommer att dirigera data med ursprung i Kina till vår kinesiska lokala domänkontrollant medan data med ursprung utanför Kina slussas vidare till närmaste lokala domänkontrollant utanför Kina.
 
 >[!NOTE]
->Experience Edge Global och Global + China ger bästa prestanda för era slutanvändare. Om du vill använda en alternativ RDC-typ kontaktar du Adobe kundtjänst för att få hjälp.
+>
+>Experience Edge Global ger bästa prestanda för dina slutanvändare.  Om du vill använda en alternativ RDC-typ kontaktar du Adobe kundtjänst för att få hjälp.
 
 ## Fördelar med RDC
 
