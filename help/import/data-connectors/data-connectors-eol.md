@@ -2,7 +2,7 @@
 description: Läs om när och varför Analytics-dataanslutningar upphör.
 title: Förannonsering i slutet av livscykeln för Analytics-dataanslutningar
 exl-id: b407675a-9fcf-4f24-bc88-69ccdb5b3658
-source-git-commit: 82e1c1d75db53f97b2f1858e26f6b369d157f834
+source-git-commit: 451b359ae969b542116d4a564febf7fb8d044eab
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 3%
@@ -11,9 +11,9 @@ ht-degree: 3%
 
 # Slutet av livscykeln för Adobe-dataanslutningar
 
-I över ett decennium har Adobe Analytics siktat på att tillhandahålla den bästa lösningen för webb- och marknadsföringsanalys som uppfyller kundernas behov. I takt med att teknologi- och affärsbehoven utvecklas strävar vi efter att kontinuerligt leverera och uppfylla de högsta standarderna.  Tyvärr uppfyller de API:er som stöder den här integreringen inte längre dessa standarder och kan inte användas i den moderna Adobe Analytics-teknikinfrastrukturen.
-
 **19 augusti 2021**, har Adobe upphört med integreringar av dataanslutningar. Slutet av livscykeln är en del av en teknikprodukts livscykel och Adobe vill göra övergången så smidig som möjligt för våra kunder och partners. Många av dessa integreringar är tillgängliga via Adobe Exchange och kan fortsätta att användas.
+
+I över ett decennium har Adobe Analytics siktat på att tillhandahålla den bästa lösningen för webb- och marknadsföringsanalys som uppfyller kundernas behov. I takt med att teknologi- och affärsbehoven utvecklas strävar vi efter att kontinuerligt leverera och uppfylla de högsta standarderna.  Tyvärr uppfyller de API:er som stöder den här integreringen inte längre dessa standarder och kan inte användas i den moderna Adobe Analytics-teknikinfrastrukturen.
 
 ## Varför upphör den här funktionen?
 
@@ -62,7 +62,7 @@ Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
 | Demandbase CA | Undertryckt |
 | Demandbase v3 | Undertryckt |
 | DialogTech | Migrera till de senaste API:erna |
-| [DoubleClick for Advertisers (DFA)](/help/import/data-connectors/dfa-data-connector-analytics/dfa-eol.md) | Undertryckt |
+| [DoubleClick for Advertisers (DFA)] | Undertryckt |
 | DREAM | Undertryckt |
 | DREAMmail 1.0, DREAMmail 2.0 | Undertryckt |
 | Dynamisk signal (Nital Vora) | Migrera till de senaste API:erna |
