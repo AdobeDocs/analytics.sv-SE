@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 76af5908fd65cae26106ca9c1a71978624a77320
+source-git-commit: 3266dd5547c1967e424534a13a3f8dc29aa1189e
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1011'
 ht-degree: 83%
 
 ---
@@ -87,7 +87,10 @@ ht-degree: 83%
       + [Tom panel](analysis-workspace/c-panels/blank-panel.md)
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
       + [Panelen för samtidiga medieanvändare](analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + [Medieuppspelningstid spenderad panel](analysis-workspace/c-panels/media-playback-time-spent.md)
+      + Medieuppspelningstid tillagd {#media-playback-timespent}
+         + [Översikt](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
+         + [Indata- och utdatainställningar](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
+         + [Vanliga frågor](analysis-workspace/c-panels/media-playback-timespent/faqs.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
       + Panelen Segmentjämförelse {#segment-comparison}
          + [Översikt över segmentjämförelse](analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
