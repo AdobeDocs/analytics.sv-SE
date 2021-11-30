@@ -3,9 +3,9 @@ title: Uppdateringar av teknisk dokumentation för Adobe Analytics
 description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättning.
 short-title: Analytics documentation updates
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 7a8a4d6c7a7addc1e5432d0f8d092caa64feb1eb
+source-git-commit: 579279798d67536fde182386ec0cf8db36785cc2
 workflow-type: tm+mt
-source-wordcount: '2899'
+source-wordcount: '2900'
 ht-degree: 43%
 
 ---
@@ -24,7 +24,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **Oktober 2021** |  |
 | 21 oktober 2021 | Ny dokumentation om [Snabbsegment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html) i Analysis Workspace |
-| 21 oktober 2021 | Ny dokumentation på [Medieuppspelningstid tillagd](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html) i Analysis Workspace. |
+| 21 oktober 2021 | Ny dokumentation på [Medieuppspelningstid tillagd](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html) i Analysis Workspace. |
 | 7 oktober 2021 | Ny dokumentation om [visualiseringar för mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#apply-visualizations) |
 | **Augusti 2021** |  |
 | 18 augusti 2021 | Reviderad toppnivåstruktur och konsoliderad till en enda [Landningssida](https://experienceleague.adobe.com/docs/analytics.html) |
