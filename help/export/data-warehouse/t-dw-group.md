@@ -1,42 +1,18 @@
 ---
-description: Steg som beskriver hur administratörer kan aktivera rapportåtkomst i Data warehouse för en grupp användare.
-title: Lägga till användargrupp i Data Warehouse
+description: Steg som beskriver hur administratörer kan aktivera Data warehouse-rapportåtkomst för användare.
+title: Hantera behörigheter i Data warehouse
 feature: Data Warehouse
+solution: Analytics
 uuid: d89294db-caa3-4044-b70d-65b512b0dc1c
 exl-id: 8737ab60-2ad1-4795-808b-d0200078a333
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 6fe67311c73fc766e8051e57a047224b8fb17747
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 10%
+source-wordcount: '43'
+ht-degree: 0%
 
 ---
 
-# Lägga till användargrupp i Data Warehouse
+# Hantera behörigheter i Data warehouse
 
-Steg som beskriver hur administratörer kan aktivera rapportåtkomst i Data warehouse för en grupp användare.
-
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]**.
-1. Klicka på **[!UICONTROL Edit Groups]**.
-1. Klicka på **[!UICONTROL Add New User Group]**.
-1. I avsnittet **[!UICONTROL Define User Group]** skriver du ett namn i fältet Gruppnamn. tillhandahålla följande gruppinformation:
-
-   Exempel, `Data Warehouse Access`.
-1. Skriv en beskrivning i fältet **[!UICONTROL Group Description]**.
-1. I avsnittet **[!UICONTROL Report Suite Access]** markerar du de rapportsviter som du vill att gruppmedlemmar ska kunna komma åt.
-1. Aktivera **[!UICONTROL All Tools]** under [!UICONTROL Tools].
-
-   Du kan också klicka på **[!UICONTROL Customize]** och sedan aktivera **[!UICONTROL Custom Data Warehouse Report]**.
-
-1. Lägg till önskade användarinloggningar under [!UICONTROL Assign User Logins].
-1. Klicka på **[!UICONTROL Save Group]**.
-
-   Nästa gång användare som läggs till i den här gruppen loggar in visas alternativet Data warehouse som lagts till på menyn [!UICONTROL Reports & Analytics].
-
-   >[!NOTE]
-   >
-   >Om behörigheter som är i konflikt med varandra (till exempel en användare som har tilldelats två grupper, av vilka den ena nekar åtkomst till en funktion och den andra beviljar samma åtkomst), begränsar systemet behörigheten. Användare som tillhör grupper som inte tillåter åtkomst till data warehouse kan behöva tas bort från dessa grupper.
-
->[!MORELIKETHIS]
->
->* [Grupper](/help/admin/user-management2/c-user-groups/groups.md)
+Se [Adobe Admin Console](/help/admin/admin-console/home.md) dokumentation om hur du konfigurerar behörigheter för Data warehouse-användare. Behörigheten visas [här](/help/admin/admin-console/permissions/report-suite-tools.md).
 

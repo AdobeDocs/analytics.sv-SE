@@ -1,13 +1,13 @@
 ---
 description: Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter och andra Suite-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via Analytics-gränssnittet.
 title: Webbtjänster
-feature: Administratörsverktyg
+feature: Admin Tools
 uuid: ccae04cf-f58c-490e-baaa-ee04c534b28d
 exl-id: d003d40e-b0b6-44f3-b9ef-ce6af61f5eb5
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 6fe67311c73fc766e8051e57a047224b8fb17747
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 2%
 
 Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter och andra Suite-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via Analytics-gränssnittet.
 
-**[!UICONTROL Analytics]** >  **[!UICONTROL Admin]** >  **[!UICONTROL All admin]** >  **[!UICONTROL Company settings]** >  **[!UICONTROL Web Services]**
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Web Services]**
 
 ## Hantera webbtjänster
 
-I Användarhantering > [Grupper](/help/admin/user-management2/c-user-groups/groups.md) kan du uppdatera webbtjänståtkomstgruppen så att den omfattar de användare som behöver åtkomst till webbtjänstens API:er.
+I [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) Du kan uppdatera behörigheterna så att de omfattar de användare som behöver åtkomst till webbtjänstens API:er.
 
 ## WSDL: Ladda ned Web Services API WSDL för webbtjänstutvecklare.
 
-Besök [Adobe I/O](https://www.adobe.io/apis/experiencecloud/analytics.html), som innehåller dokumentation, exempelkod och forum för webbtjänstens API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
+Besök [Adobe I/O](https://www.adobe.io/apis/experiencecloud/analytics.html), som innehåller dokumentation, exempelkod och forum för webbtjänsternas API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
 
 ## Filtreringsalternativ
 

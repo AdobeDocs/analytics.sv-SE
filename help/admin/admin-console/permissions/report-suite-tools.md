@@ -1,17 +1,17 @@
 ---
-title: Produktprofilbehörigheter för Report Suite-verktyg
+title: Produktprofilbehörigheter för Report Suite-verktyg i Adobe Admin Console
 description: Förstå varje behörighetsobjekt under Report Suite Tools.
 exl-id: ca38d02f-2e88-49a3-a08c-515f21ee0099
-source-git-commit: 8d409f27024a8c58bc875555ad5aa980815d1fc9
+source-git-commit: 6fe67311c73fc766e8051e57a047224b8fb17747
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
 
 # Produktprofilbehörigheter för Report Suite-verktyg
 
-Använd den här sidan om du vill förstå alla behörighetsobjekt under Report Suite-verktyg.
+På den här sidan kan du förstå alla behörighetsobjekt under Report Suite-verktyg i Adobe Admin Console.
 
 | Behörighetsobjekt för Report Suite-verktyg | Beskrivning |
 |------|------|
@@ -45,12 +45,12 @@ Använd den här sidan om du vill förstå alla behörighetsobjekt under Report 
 | Data Sources Manager | Ger åtkomst till Admin > Alla administratörer > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Management&#39;. |
 | Exkludera efter IP-adress | Ger åtkomst till Admin > Exkludera med IP i den övre navigeringen i Analytics. |
 | Återbesök | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
-| Klassificeringar | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager. Detta behörighetsobjekt innehåller: <br>Trafik > Trafikklassificeringar<br>Konvertering > Konverteringsklassificeringar<br>Konvertering > Klassificeringshierarkier<br>Marknadskanaler > Marknadskanalklassificeringar<br>Programhantering > Programklassificeringar<br>Mediehantering > Medieklassificeringar<br>AEM > AEM Assets-klassificeringar<br>Adobe Campaign > Adobe-klassificeringar |
+| Klassificeringar | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager. Detta behörighetsobjekt innehåller: <br>Trafik > Traffic Classifications<br>Konvertering > Konverteringsklassificeringar<br>Konvertering > Klassificeringshierarkier<br>Marknadsföringskanaler > Marketing Channel Classifications<br>Apphantering > Appklassificeringar<br>Mediehantering > Medieklassificeringar<br>AEM > AEM Assets Classics<br>Adobe Campaign > Adobe Classics |
 | Mina rekommenderade rapporter | Ger åtkomst till Site Metrics > My Recommended Reports in Reports &amp; Analytics. |
 | Rapporter och analyser Kontrollpanelens bildrapport | Ger åtkomst till kontrollpanelsrapporter. |
 | Rapporter och analysrapporter för instrumentpanelens måttmätarportlet | Ger åtkomst till kontrollpanelsrapporter. |
-| Rapporter &amp; Analytics Dashboard Report Suite Summary Report | Ger åtkomst till kontrollpanelsrapporter. |
+| Rapporter och analyser Kontrollpanelen Rapportera sammanfattningsrapport för Suite | Ger åtkomst till kontrollpanelsrapporter. |
 | Rapporter och analyser KontrollpanelTextrapport | Ger åtkomst till kontrollpanelsrapporter. |
-| Rapporter &amp; Analytics Dashboard Report Suite Summary Report | Ger åtkomst till kontrollpanelsrapporter. |
+| Rapporter och analyser Kontrollpanelen Rapportera sammanfattningsrapport för Suite | Ger åtkomst till kontrollpanelsrapporter. |
 | Extern rapport och analysrapport för instrumentpanelen | Ger åtkomst till kontrollpanelsrapporter. |
 | API för datareparation | Ger åtkomst till API:t för datareparation |

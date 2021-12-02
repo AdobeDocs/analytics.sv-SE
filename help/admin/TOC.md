@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig hur du hanterar användare och produkter i Experience Cloud, konfigurerar rapportsviter med mera.
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: 22bf5b376f1f5a5c1b6efea419cae9bd0c77991d
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 90%
+source-wordcount: '659'
+ht-degree: 89%
 
 ---
 
@@ -149,29 +149,12 @@ ht-degree: 90%
    + [Skapa en rapportsvitgrupp](c-manage-report-suites/t-create-rs-group.md)
 + Användar- och produkthantering (äldre) {#user-product-management}
    + [Hantering av användare och produkter](user-management2/user-management.md)
-   + [Tilldela användargrupper till en rapportsvit](user-management2/t-group-access-report-suite.md)
-   + Användarhantering {#user-management}
-      + [Översikt över användarhantering](user-management2/c-user-management/users.md)
-      + [Lägg till ett användarkonto](user-management2/c-user-management/t-add-user-account.md)
-      + [Behörighetsändringar för användare och grupper](user-management2/c-user-management/permissions-changes.md)
-      + [Överför objekt på användarkonto](user-management2/c-user-management/t-transfer-user-accout-privileges.md)
-      + [Lägga till en användare i en grupp](user-management2/c-user-management/t-add-user-to-group.md)
-      + Use: Migrera användare till Adobe Admin Console {#migrate-users}
-         + [Migrering av Analytics-användare till Admin Console](user-management2/user-migration/c-migration-tool.md)
-         + [Migrera Analytics-användarkonton för Adobe ID:n](user-management2/user-migration/t-migrate-users.md)
-         + [Migrera Analytics-användarkonton för Enterprise och Federated ID](user-management2/user-migration/migrate-enterprise.md)
-         + [Inaktivera äldre inloggningar](user-management2/user-migration/t-disable-legacy-login.md)
-         + [API:er som påverkas av migreringen](user-management2/user-migration/developer.md)
-   + Användargrupper {#user-groups}
-      + [Lägg till en användargrupp](user-management2/c-user-groups/t-user-group.md)
-      + [Inställningar för användargrupp](user-management2/c-user-groups/groups.md)
-   + Anpassa rapportåtkomst {#customize-report-access}
-      + [Anpassa rapportåtkomst – översikt](user-management2/c-customize-report-access/groups-customize-report-access.md)
-      + [Anpassa behörigheter för Analytics-verktyg](user-management2/c-customize-report-access/groups-analytics-tools.md)
-      + [Anpassa behörigheter för verktyg i rapportsviten](user-management2/c-customize-report-access/groups-report-suite-tools.md)
-      + [Anpassa behörigheter för metrik](user-management2/c-customize-report-access/groups-metrics.md)
-      + [Anpassa dimensionsbehörigheter](user-management2/c-customize-report-access/groups-dimensions.md)
-   + [E-postanvändare](user-management2/t-email-users.md)
+   + Use: Migrera användare till Adobe Admin Console {#migrate-users}
+      + [Migrering av Analytics-användare till Admin Console](user-management2/user-migration/c-migration-tool.md)
+      + [Migrera Analytics-användarkonton för Adobe ID:n](user-management2/user-migration/t-migrate-users.md)
+      + [Migrera Analytics-användarkonton för Enterprise och Federated ID](user-management2/user-migration/migrate-enterprise.md)
+      + [Inaktivera äldre inloggningar](user-management2/user-migration/t-disable-legacy-login.md)
+      + [API:er som påverkas av migreringen](user-management2/user-migration/developer.md)
 + Datastyrning {#data-governance}
    + [Adobe Analytics och GDPR](c-data-governance/an-gdpr-overview.md)
    + [Adobe Analytics och CCPA](c-data-governance/an-ccpa-overview.md)
