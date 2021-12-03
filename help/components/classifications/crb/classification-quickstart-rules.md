@@ -4,7 +4,7 @@ subtopic: Classifications
 title: Klassificeringsregler
 feature: Admin Tools
 uuid: 08685919-216d-448b-b886-3adf5ff5405e
-source-git-commit: c04e749f7db6971572701e839de0829777b8c58e
+source-git-commit: 010712cce4de0bfa65c961052a6131fa20055bd2
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 1%
@@ -257,7 +257,7 @@ Detta resulterar i `a:b:1313` anger inte någon matchning.
 | `\W` | Valfritt icke-ordtecken |
 | `\b` | Valfri ordgräns |
 | `(...)` | Fånga allt inneslutet |
-| `(a|b)` | a eller b |
+| `(a\b)` | a eller b |
 | `a?` | Noll eller en av |
 | `a*` | Noll eller mer av en |
 | `a+` | en eller flera av |
