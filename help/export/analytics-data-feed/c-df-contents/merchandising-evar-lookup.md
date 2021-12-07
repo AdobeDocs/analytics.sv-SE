@@ -1,8 +1,7 @@
 ---
 title: Marknadsföring - sökning av instanser av eVar i post_product_list
 description: Sök efter instansen Merchandising-eVar för varje uppslagsvärde i kolumnen post_product_list i en datafeed.
-exl-id: null
-source-git-commit: dd2ac690e4c5ed4337ab29302500079f72bed448
+source-git-commit: 70af5bf2ef36e7968043120658d35dc948e9630e
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 86%
@@ -11,7 +10,7 @@ ht-degree: 86%
 
 # Marknadsföring - sökning av instanser av eVar i post_product_list
 
-I Datafeeds kan kolumnen [post_product_list](datafeeds-reference.md) innehålla instanser av eVar för försäljning. Varje eVar representeras av en siffra.
+I dataflöden är [post_product_list](datafeeds-reference.md) -kolumnen kan innehålla instanser av eVar för försäljning. Varje eVar representeras av en siffra.
 
 Markeringen av instanssökningen efter post_product_list för Merchandising-eVar skiljer sig från sökkolumnen event_list i Datautflödet.
 
@@ -49,7 +48,7 @@ Markeringen av instanssökningen efter post_product_list för Merchandising-eVar
 | 130 | eVar30 |
 | 131 | eVar31 |
 | 132 | eVar32 |
-| 133 | eVar13 |
+| 133 | eVar33 |
 | 134 | eVar34 |
 | 135 | eVar35 |
 | 136 | eVar36 |
