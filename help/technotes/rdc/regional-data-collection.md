@@ -2,9 +2,9 @@
 title: Regional datainsamling
 description: Information om regional datainsamling
 exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
-source-git-commit: e2fd69043e198d855dddd316b04215fde9f52cad
+source-git-commit: 1cf95a2bf57aacd6b0b5bdb1c3bf31d1b31339e0
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Adobe Experience Cloud använder Regional Data Collection (RDC) så att interakt
 
 Följande platser (kan ändras) ingår för närvarande i RDC:
 
-## Insamling av data från tredje part och HTTP
+## Datainsamling från tredje part
 
 | Typ av domänkontrollant | Datainsamlingscentral |
 |---------------------|-------------------|
@@ -31,7 +31,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 >
 >Om din Analytics-bildförfrågan skickas till `adobedc`, `2o7.net` eller `omtrdc.net` slutpunkter, och sedan har du datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
 
-## Insamling av HTTPS-data från första part
+## Insamling av data från första part
 
 | Typ av domänkontrollant | Datainsamlingscentral |
 |---------------------|-------------------|
