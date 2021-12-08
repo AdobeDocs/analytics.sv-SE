@@ -2,10 +2,10 @@
 title: Importguide för Analytics
 description: Den här guiden förklarar hur du hämtar data till Analytics med hjälp av datakällor, API för datainfogning och Data Connectors.
 exl-id: 65a62639-bbc4-4114-932f-8c68d87eea8b
-source-git-commit: 451b359ae969b542116d4a564febf7fb8d044eab
+source-git-commit: aca7a89449cb8d1dfb8420f4ac9c0f331940690f
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 60%
+source-wordcount: '138'
+ht-degree: 65%
 
 ---
 
@@ -17,7 +17,7 @@ Den här guiden förklarar hur du överför data till Analytics. Den innehåller
 
 * **[Datakällor](c-data-sources/datasrc-home.md)**: Överför en fil till en angiven Adobe FTP-plats. Adobe hämtar filen och inkluderar informationen i er rapportsvit.
 * **[API för datainfogning](c-data-insertion-api/c-data-insertion-api.md)**: Skicka data direkt till Adobes datainsamling via API.
-* **Dataanslutningar**: Från och med 19 augusti 2021 har Adobe upphört med integreringen av dataanslutningar. Många av dessa integreringar är tillgängliga via [Adobe Exchange](https://exchange.adobe.com/experiencecloud.analytics.html#product) och kan fortsätta att användas.
+* **[Adobe Exchange Marketplace](https://exchange.adobe.com/experiencecloud.analytics.html#product)**: Här hittar du de integreringar du kan använda för att berika din Adobe Analytics-serie.
 
 Här är en videoöversikt över Adobe Analytics:
 
