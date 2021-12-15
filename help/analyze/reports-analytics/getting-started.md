@@ -4,17 +4,14 @@ title: Komma igång med Reports and Analytics
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 7bd8f28c-2b7a-4220-bd82-1e43edc2c0cd
-source-git-commit: baceae144480bc93634c35ce1bdea5d2ceec56e8
+source-git-commit: 1d5cb1c2b9ab2414d42d18f6395b1857786c8da0
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
 
 # Kom igång med rapporter och analyser
-
->[!NOTE]
->Produkten är godkänd för försäljning i Nordamerika och andra regioner där produkten faktiskt säljs och kanske inte uppfyller kraven för försäljning i andra länder eller regioner.
 
 Innan du använder Rapporter och analyser bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 
@@ -102,3 +99,6 @@ Steg som beskriver hur gränssnittsspråket ändras. Du kan visa Reports and Ana
 1. Klicka på det aktiva språket i sidfoten **[!UICONTROL Language]** väljer du sedan det språk du vill använda.
 
 Du kommer åt dokumentationen och hemsidan från Adobe Experience Cloud. ( **[!UICONTROL Help]** > **[!UICONTROL Help Home]**.)
+
+>[!NOTE]
+>Produkten är godkänd för försäljning i Nordamerika och andra regioner där produkten faktiskt säljs. Den uppfyller eventuellt inte de lokala kraven för försäljning i andra länder eller regioner.
