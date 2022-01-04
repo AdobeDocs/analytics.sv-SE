@@ -2,12 +2,12 @@
 description: En introduktion till funktionerna i en rapport, inklusive verktygsfältet, kalendern och detaljtabellen.
 title: Rapportfunktioner
 uuid: 32f72961-cb94-4e50-ae18-03326e02bc8b
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: f872b9fb-d857-4170-9c9d-7d2c14e0fd45
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 0733884351c64935d9e39c24320d200cc46e6a61
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '403'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,10 @@ ht-degree: 1%
 
 En introduktion till funktionerna i en rapport, inklusive verktygsfältet, kalendern och detaljtabellen.
 
-I det här exemplet visas en [!UICONTROL Pages Report]. Konfigurationsalternativen kan variera beroende på vilken rapport du kör. I stället för att välja Trended eller Ranked i en [!UICONTROL Site Content]-rapport kan du ange granularitet och sidnamn för en [!UICONTROL Site Metrics]-rapport.
+I det här exemplet visas en [!UICONTROL Pages Report]. Konfigurationsalternativen kan variera beroende på vilken rapport du kör. I stället för att välja Trended eller Ranked i en [!UICONTROL Site Content] kan du ange granularitet och sidnamn för en [!UICONTROL Site Metrics] rapport.
+
+>[!IMPORTANT]
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som ligger till grund för rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
 
 ## Exempelsidrapport {#section_288CC85536684C2DB184141358481EF0}
 
@@ -38,7 +41,7 @@ Visar rapportinställningar och låter dig konfigurera rapporttypen, välja mät
 
 ![](assets/settings_header.png){width=&quot;672px&quot;}
 
-Mer information finns i [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md).
+Se [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md) för mer information.
 
 ## Kalender {#section_8C6C4AD84D9043E8ABD53FF8F645AAB1}
 
@@ -54,7 +57,7 @@ Markera den typ av diagram som du vill se:
 
 ![](assets/graph_type.png)
 
-Se [Ändra rapportdiagram.](/help/analyze/reports-analytics/reports-customize/t-reports-graphs.md)
+Se [Ändrar rapportdiagram.](/help/analyze/reports-analytics/reports-customize/t-reports-graphs.md)
 
 ## Diagramvisning {#section_4C78ADC82C234CC6841AC92C803636F4}
 

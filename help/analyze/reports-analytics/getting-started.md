@@ -4,9 +4,9 @@ title: Komma igång med Reports and Analytics
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 7bd8f28c-2b7a-4220-bd82-1e43edc2c0cd
-source-git-commit: 1d5cb1c2b9ab2414d42d18f6395b1857786c8da0
+source-git-commit: 0733884351c64935d9e39c24320d200cc46e6a61
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 0%
 # Kom igång med rapporter och analyser
 
 Innan du använder Rapporter och analyser bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
+
+>[!IMPORTANT]
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som ligger till grund för rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
 
 Rapportering ger insikter om era traditionella webbaserade kanaler och om de kanaler som utvecklas, som mobiler, video och sociala nätverk. Några exempel på rapporter är:
 
@@ -30,9 +33,6 @@ Rapportering ger insikter om era traditionella webbaserade kanaler och om de kan
 ## Webbläsare och systemkrav
 
 Webbläsare och systemkrav för att logga in i gränssnittet Rapporter och analyser.
-
->[!NOTE]
->Adobe slutade stödja Internet Explorer 11 i Adobe Analytics den 13 november 2018. Byt så snart som möjligt till Microsoft Edge eller någon annan webbläsare som stöds.
 
 * Standardwebbläsare: De senaste versionerna av Firefox, Chrome, Safari eller Edge.
 * Cookies och JavaScript måste vara aktiverade.

@@ -5,20 +5,23 @@ title: Vanliga frågor
 uuid: 285b0ea4-aa07-4d39-a74f-37b1d02d19f1
 role: User, Admin
 exl-id: 99702728-971f-484a-91f5-f3210b89485c
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 0733884351c64935d9e39c24320d200cc46e6a61
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
 
 # Vanliga frågor
 
-Tillhandahåller svar och felsökningsförslag på några av de vanligaste Analytics-frågorna för rapporter och analyser. Vanliga frågor om implementering finns i [Vanliga frågor och svar](/help/implement/faq.md) i Användarhandboken för implementering.
+Tillhandahåller svar och felsökningsförslag på några av de vanligaste Analytics-frågorna för rapporter och analyser. Vanliga frågor om implementering finns i [Vanliga frågor](/help/implement/faq.md) i Implementeringshandboken.
+
+>[!IMPORTANT]
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som ligger till grund för rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
 
 **Mitt konto har låsts; Hur låser jag upp den?**
 
-Om du vill återaktivera ett konto kontaktar du en administratör inom organisationen. Se även [Felsöka inloggningsproblem med Adobe Analytics](/help/technotes/troubleshoot-login.md) i TechNotes-användarhandboken.
+Om du vill återaktivera ett konto kontaktar du en administratör inom organisationen. Se även [Felsöka inloggningsproblem med Adobe Analytics](/help/technotes/troubleshoot-login.md) i Technotes-handboken.
 
 **Varför ser jag en tom rapport trots att jag vet att data samlas in?**
 
@@ -38,28 +41,28 @@ Nästan alla variabler i Adobe Analytics har en teckengräns. Sidnamnet har en b
 
 **Varför ser jag en stor fördröjning i rapporteringen?**
 
-Med realtidsrapportering kan vissa trafikdata vara tillgängliga inom några minuter, medan konvertering och andra bearbetningsintensiva data vanligtvis är tillgängliga inom 30-90 minuter. Även om Experience Cloud-plattformen är robust finns det vissa situationer som kan leda till förseningar i rapporteringen. Den här fördröjningen kallas fördröjning. Mer information finns i [Latens](/help/technotes/latency.md) i Tech Notes-användarhandboken.
+Med realtidsrapportering kan vissa trafikdata vara tillgängliga inom några minuter, medan konvertering och andra bearbetningsintensiva data vanligtvis är tillgängliga inom 30-90 minuter. Även om Experience Cloud-plattformen är robust finns det vissa situationer som kan leda till förseningar i rapporteringen. Den här fördröjningen kallas fördröjning. Se [Latens](/help/technotes/latency.md) i TechNotes-användarhandboken för mer information.
 
 **Varför kan jag inte se enhetsversionen på iPhone?**
 
-Apple-enheter rapporterar sin firmware-version i användaragentsträngen, inte i enhetsversionen. Det är svårt att fastställa iPhone-enhetens version med hjälp av information som är tillgänglig för Adobe Analytics. Mer information finns i [Jämföra iPhone-enhetsversioner](https://helpx.adobe.com/analytics/kb/comparing-iphone-device-versions.html) i Analytics KB.
+Apple-enheter rapporterar sin firmware-version i användaragentsträngen, inte i enhetsversionen. Det är svårt att avgöra vilken version av iPhone som är tillgänglig för Adobe Analytics. Se [Jämföra iPhone enhetsversioner](https://helpx.adobe.com/analytics/kb/comparing-iphone-device-versions.html) i KB:n för analyser för mer information.
 
 **Varför matchar inte summorna längst ned i min rapport när jag summerar värdena?**
 
-Dimensioner kan ofta användas på flera ställen, Besök som till exempel omfattar midnatt eller flera produkter som tillhör en och samma order. Dimensionsobjektet rapporteras för alla tillämpliga radartiklar, men dedupliceras i rapportens totala belopp. Mer information finns i [Jämför summan av radobjekt för att rapportera totalvärdet](https://helpx.adobe.com/analytics/kb/sum-line-items-different-from-total.html) i KB för analyser.
+Dimensioner kan ofta användas på flera ställen, Besök som till exempel omfattar midnatt eller flera produkter som tillhör en och samma order. Dimensionsobjektet rapporteras för alla tillämpliga radartiklar, men dedupliceras i rapportens totala belopp. Se [Jämför summan av radobjekt för att rapportera totalt](https://helpx.adobe.com/analytics/kb/sum-line-items-different-from-total.html) i KB:n för analyser för mer information.
 
 **Hur utesluter jag data från en viss IP-adress i min rapportserie?**
 
-Ni kan ta bort data från interna webbplatsaktiviteter, till exempel platstestning och personalanvändning, från era rapporter. Med den här funktionen kan du och dina kollegor besöka webbplatsen utan att behöva skeva dina trafikdata. Mer information finns i [Uteslut via IP-adress](/help/admin/admin/exclude-ip.md) i användarhandboken för Admin.
+Ni kan ta bort data från interna webbplatsaktiviteter, till exempel platstestning och personalanvändning, från era rapporter. Med den här funktionen kan du och dina kollegor besöka webbplatsen utan att behöva skeva dina trafikdata. Se [Exkludera efter IP-adress](/help/admin/admin/exclude-ip.md) i användarhandboken för Admin om du vill ha mer information.
 
 **Kan jag ta bort en rapportserie?**
 
-Det går inte att ta bort en rapportserie. En rapportsvit kan dock döljas för alla vyer i Adobe Analytics. Observera att serveranrop som skickas till en dold rapportsvit fortfarande räknas in i din månadsgräns. Mer information finns i [Dölj rapportsviter](/help/admin/company/c-hide-report-suites.md) i användarhandboken för Admin.
+Det går inte att ta bort en rapportserie. En rapportsvit kan dock döljas för alla vyer i Adobe Analytics. Observera att serveranrop som skickas till en dold rapportsvit fortfarande räknas in i din månadsgräns. Se [Dölj rapportsviter](/help/admin/company/c-hide-report-suites.md) i användarhandboken för Admin om du vill ha mer information.
 
-**Vilken behållare ska jag använda när jag använder segmentering? Sidvy, besök eller besökare?**
+**Vilken behållare ska jag använda när jag använder segmentering? Sidvisning, besök eller besökare?**
 
-Segmentbehållaren som du använder beror på hur bred du vill samla in data. Sidvisningsbehållare innehåller bara träffar som matchar segmentkriterierna, vilket är praktiskt när du vill filtrera bort irrelevanta delar av besöken. Besöksbehållare ger dig tillgång till alla träffar på ett besök där ett eller flera träffar de matchande segmentkriterierna, vilket är användbart när du vill titta på sessioner i allmänhet. Besöksbehållare innehåller alla besök där ett träffat villkor för segment är användbart för att titta på människor. Det är ditt val som analytiker för att avgöra vilken segmentbehållare som är bäst att använda. Mer information finns i [Segmenteringsöversikt](/help/components/segmentation/seg-overview.md) i användarhandboken för komponenter.
+Segmentbehållaren som du använder beror på hur bred du vill samla in data. Sidvisningsbehållare innehåller bara träffar som matchar segmentkriterierna, vilket är praktiskt när du vill filtrera bort irrelevanta delar av besöken. Besöksbehållare ger dig tillgång till alla träffar på ett besök där ett eller flera träffar de matchande segmentkriterierna, vilket är användbart när du vill titta på sessioner i allmänhet. Besöksbehållare innehåller alla besök där ett träffat villkor för segment är användbart för att titta på människor. Det är ditt val som analytiker för att avgöra vilken segmentbehållare som är bäst att använda. Se [Översikt över segmentering](/help/components/segmentation/seg-overview.md) i användarhandboken för Komponenter om du vill ha mer information.
 
 **Varför visas inte mitt segment i Data warehouse?**
 
-På grund av Data warehouse unika bearbetningsarkitektur är plattformen inte optimerad för att hantera vissa typer av data, som till exempel pathing. Mer information finns i [Kompatibilitet för Data warehouse-segment](/help/components/segmentation/seg-reference/seg-compatibility.md) i användarhandboken för komponenter.
+På grund av Data warehouse unika bearbetningsarkitektur är plattformen inte optimerad för att hantera vissa typer av data, som till exempel pathing. Se [data warehouse segmentkompatibilitet](/help/components/segmentation/seg-reference/seg-compatibility.md) i användarhandboken för Komponenter om du vill ha mer information.

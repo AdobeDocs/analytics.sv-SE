@@ -4,9 +4,9 @@ title: Visningsinställningar och navigering för rapporter
 uuid: e7e571ce-a1cf-4714-b400-9571805ceeac
 role: User, Admin
 exl-id: 2c2d4d59-b189-42e0-887e-77dc7a48721a
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 0733884351c64935d9e39c24320d200cc46e6a61
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1551'
 ht-degree: 7%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 7%
 # Visningsinställningar och navigering för rapporter
 
 Inställningar som definierar hur alla rapporter visas och information som mappar standardmenyalternativen till deras plats på den förenklade menyn.
+
+>[!IMPORTANT]
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som ligger till grund för rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
 
 ## Visningsinställningar och navigering för rapporter {#concept_09832A2CA0FF4982B1AA37C1B635220B}
 
