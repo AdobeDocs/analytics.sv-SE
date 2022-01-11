@@ -6,9 +6,9 @@ title: Referens för datakolumner
 feature: Reports & Analytics Basics
 uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 20a4ee51d0eace9cdcb5e0aeff5704b9a757a1eb
+source-git-commit: 0884c5a13fba7a22589e2962a4d79f4a6525dd8a
 workflow-type: tm+mt
-source-wordcount: '3432'
+source-wordcount: '3445'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `latlon1` | Placering (ned till 10 km) | varchar(255) |
 | `latlon23` | Plats (ned till 100 m) | varchar(255) |
 | `latlon45` | Plats (ned till 1 m) | varchar(255) |
-| `mc_audiences` | Lista med Audience Manager segment-ID som besökaren tillhör. | text |
+| `mc_audiences` | Lista med Audience Manager segment-ID som besökaren tillhör. The `post_mc_audiences` kolumnen ändrar avgränsaren till `--**--`. | text |
 | `mcvisid` | Experience Cloud Visitor-ID. 128-bitars nummer som består av två sammanfogade 64-bitars tal som fyllts med 19 siffror. | varchar(255) |
 | `mobile_id` | Om användaren använder en mobil enhet anger du enhetens numeriska ID. | int |
 | `mobileaction` | Mobilåtgärd. Samlas in automatiskt när `trackAction` anropas i Mobiltjänster. Tillåter automatisk åtgärdspunkt i appen. | varchar(100) |
@@ -146,7 +146,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `mobilerelaunchcampaigntrackingcode` | Samlas in från kontextdatavariabeln `a.launch.campaign.trackingcode`. Används i anskaffning som spårningskod för lanseringskampanj. | varchar(255) |
 | `mobileresolution` | Upplösning för den mobila enheten. `[Width] x [Height]` i pixlar. | varchar(255) |
 | `monthly_visitor` | Flagga som anger att besökaren är unik för den aktuella månaden. | tinyint unsigned |
-| `mvvar1` - `mvvar3` | Lista variabelvärden. Innehåller en avgränsad lista med anpassade värden beroende på implementering. | text |
+| `mvvar1` - `mvvar3` | Lista variabelvärden. Innehåller en avgränsad lista med anpassade värden beroende på implementering. The `post_mvvar1` - `post_mvvar3` kolumner ersätter den ursprungliga avgränsaren med `--**--`. | text |
 | `namespace` | Används inte. En del av en skrapad funktion. | varchar(50) |
 | `new_visit` | Flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobe-servrar efter 30 minuters besöksinaktivitet. | tinyint unsigned |
 | `os` | Numeriskt ID som representerar besökarens operativsystem. Baserat på `user_agent` kolumn. Användningsområden `os` sökning. | int unsigned |
