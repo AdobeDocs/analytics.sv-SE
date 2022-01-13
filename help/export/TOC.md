@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Exporthandbok
 user-guide-description: Använd dataflöden för att få en timbaserad eller daglig export av rådata. Använd Data warehouse för att hämta data från kalkylblad.
-source-git-commit: fd0641778fb46b7775ee02517a1f8e267ca37f3b
+source-git-commit: d50ec88ec7d2271d009ae8049481e20d0c90162b
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 76%
+source-wordcount: '279'
+ht-degree: 75%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 76%
    + [Använda passivt FTP-läge](ftp-and-sftp/ftp-passive.md)
    + [FTP-bearbetningstider](ftp-and-sftp/ftp-processing.md)
    + Secure File Transfer Protocol {#secure-file-transfer-protocol}
+      + [Uppgradering av SFTP-tjänster - frågor och svar](ftp-and-sftp/c-sftp/sftp-upgrade.md)
       + [Secure File Transfer Protocol – översikt](ftp-and-sftp/c-sftp/ftp-sftp.md)
       + [Ansluta till ett Adobe FTP-konto med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-connect.md)
       + [Skicka Adobe-data till ett externt FTP-konto med SFTP](ftp-and-sftp/c-sftp/ftp-sftp-transfer.md)
