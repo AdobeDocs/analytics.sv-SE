@@ -3,9 +3,9 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 subtopic: Release notes
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: f06f067d3273883cea4f5d6b4e2b0da303a0d5d2
+source-git-commit: d9999d45476a70cee49f83d009ce95b9b4931529
 workflow-type: tm+mt
-source-wordcount: '2231'
+source-wordcount: '2263'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Du kan hämta den senaste versionen av AppMeasurement i [Kodhanteraren](/help/ad
 
 Releasedatum: **11 januari 2022**
 
-* Korrigerad s.tl() för att på ett smidigt sätt ignorera objekt med href-objekt i stället för href-strängar.
+* Länkspårningsanrop `s.tl()` verifierar nu att objektet som skickas till det innehåller en `href` type-attribut `string`. Om det inte är en `string`så ignoreras de `href` i stället för att misslyckas. Detta kan inträffa om det skickas `svg` till länkspårningsanropet.
 
 ## Version 2.22.3
 
