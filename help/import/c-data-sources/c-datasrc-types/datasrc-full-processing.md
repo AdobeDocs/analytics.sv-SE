@@ -3,9 +3,9 @@ description: Datakällor har stöd för följande variabler när data bearbetas 
 title: Fullständig bearbetning
 topic-fix: Developer and implementation
 exl-id: 9eb8c754-f4de-4483-934e-3f79134516ca
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 0b31585f5a928d68083764b80f3a08927b407387
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '718'
 ht-degree: 7%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->Adobe rekommenderar att man använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Adobe planerar att ta bort datakällor med fullständig bearbetning den 31 juli 2021. [Läs mer](/help/import/c-data-sources/c-datasrc-types/datasrc-fullproc-eol.md)
+>Adobe rekommenderar att du använder [BDIA (Bulk Data Insertion API)](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) i stället för att använda fullständiga datakällor. Adobe ersatte datakällor för fullständig bearbetning den 31 januari 2022. [Läs mer](/help/import/c-data-sources/c-datasrc-types/datasrc-fullproc-eol.md)
 
 Datakällor har stöd för följande variabler när data bearbetas som ett standardserveranrop (Allmänt > Fullständig bearbetning).
 
@@ -27,7 +27,7 @@ Data från datakällor bearbetas som om de togs emot av Adobe-servrar vid den an
 
 Data från datakällor bearbetas i sin helhet med hjälp av separata besökarprofiler, så även om besökar-ID:t i överförda data matchar data som samlats in med JavaScript eller något annat AppMeasurement-bibliotek kopplas inte besökarprofilerna från ett eVar-allokeringsperspektiv.
 
-En användare med besökar-ID `"user@example.com"` besöker till exempel din webbplats från en marknadsföringskampanj som heter &quot;Spring Sale&quot;, som lagras i kampanjvariabeln. Om du senare överför en transaktion med samma besökar-ID får kampanjen &quot;Spring Sale&quot; ingen kredit för några intäkt- eller lyckade händelser som överförts med hjälp av fullständiga bearbetningsdatakällor.
+En användare med besökar-ID:t `"user@example.com"` besöker er webbplats från en marknadsföringskampanj som heter &quot;Spring Sale&quot;, som lagras i kampanjvariabeln. Om du senare överför en transaktion med samma besökar-ID får kampanjen &quot;Spring Sale&quot; ingen kredit för några intäkt- eller lyckade händelser som överförts med hjälp av fullständiga bearbetningsdatakällor.
 
 ## Kolumnreferens {#section_92BAE76639E3404E97276B1BE0581078}
 
@@ -52,31 +52,31 @@ En användare med besökar-ID `"user@example.com"` besöker till exempel din web
   </tr> 
   <tr> 
    <td colname="col1"> <p>currencyCode </p> </td> 
-   <td colname="col2"> <p>currencyCode </p> <p>Obs!  Den här variabeln stöds även av standarddatakällor som <code> currency code </code>. </p> </td> 
+   <td colname="col2"> <p>currencyCode </p> <p>Obs! Den här variabeln stöds även av standarddatakällor som <code> currency code </code>. </p> </td> 
    <td colname="col3"> <p>Valutakod för intäkt (till exempel USD). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>tidsstämpel </p> </td> 
    <td colname="col2"> <p>datum </p> </td> 
-   <td colname="col3"> <p>Använd ISO 8601-datumformatet <code> YYYY-MM-DDThh:mm:ss±UTC_offset </code> (till exempel <code> 2013-09-01T12:00:00-07:00 </code>) eller Unix Time-format (antalet sekunder som gått sedan 1 januari 1970). </p> </td> 
+   <td colname="col3"> <p>Använd datumformatet ISO 8601 för <code> YYYY-MM-DDThh:mm:ss±UTC_offset </code> (t.ex. <code> 2013-09-01T12:00:00-07:00 </code>) eller Unix Time Format (antalet sekunder som gått sedan 1 januari 1970). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>eVar<i>N</i> </p> </td> 
-   <td colname="col2"> <p>eVar<i>N</i>, dvs. &lt;eVar2&gt;..&lt;/eVar2&gt; </p> </td> 
+   <td colname="col2"> <p>eVar<i>N</i>, dvs. &lt;evar2&gt;...&lt;/evar2&gt; </p> </td> 
    <td colname="col3"> <p>Konverteringsnamn för eVar. Du kan ha upp till 75 eVars ( <span class="varname"> eVar1 </span> - <span class="varname"> eVar75 </span>). </p> <p>Du kan ange eVar namn (eVar12) eller ett eget namn (annonskampanj 3). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>händelser </p> </td> 
    <td colname="col2"> <p>händelser </p> </td> 
-   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som variabeln <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events </a>. </p> <p>Exempel: </p> 
+   <td colname="col3"> <p>Händelsesträng, formaterad med samma syntax som <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html"  > s.events </a> variabel. </p> <p>Exempel: </p> 
     <code>
       scAdd,event1,event7 
     </code> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>högre<i>N</i> </p> </td> 
-   <td colname="col2"> <p>hier<i>N</i>, dvs. &lt;hier2&gt;..&lt;/hier2&gt; </p> </td> 
-   <td colname="col3"> <p>Hierarkinamn. Du kan ha upp till 5 hierarkier ( <span class="varname"> hier1 </span> - <span class="varname"> hier5 </span>). </p> <p>Du kan ange standardnamn för hierarkin ( <span class="varname"> hier2 </span>) eller ett eget namn ( <span class="term"> Yankees </span>). </p> </td> 
+   <td colname="col1"> <p>hövding<i>N</i> </p> </td> 
+   <td colname="col2"> <p>hövding<i>N</i>, dvs. &lt;hier2&gt;...&lt;/hier2&gt; </p> </td> 
+   <td colname="col3"> <p>Hierarkinamn. Du kan ha upp till fem hierarkier ( <span class="varname"> hier1 </span> - <span class="varname"> hier5 </span>). </p> <p>Du kan ange standardnamn för hierarkin ( <span class="varname"> hier2 </span>) eller ett eget namn ( <span class="term"> Yankees </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>linkName </p> </td> 
@@ -111,7 +111,7 @@ En användare med besökar-ID `"user@example.com"` besöker till exempel din web
   <tr> 
    <td colname="col1"> <p>pageURL </p> </td> 
    <td colname="col2"> <p>pageURL </p> </td> 
-   <td colname="col3"> <p>Sidans URL (t.ex. <code>https://www.example.com/index.html)</code>). </p> </td> 
+   <td colname="col3"> <p>Sid-URL (t.ex. <code>https://www.example.com/index.html)</code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>produkter </p> </td> 
@@ -120,8 +120,8 @@ En användare med besökar-ID `"user@example.com"` besöker till exempel din web
   </tr> 
   <tr> 
    <td colname="col1"> <p>prop1 - prop75 </p> </td> 
-   <td colname="col2"> <p>prop<i>N</i>, dvs. &lt;prop2&gt;..&lt;/prop2&gt; </p> </td> 
-   <td colname="col3"> <p>Egenskapssträng (t.ex. <span class="term"> Sport Section </span>). </p> </td> 
+   <td colname="col2"> <p>prop<i>N</i>, dvs. &lt;prop2&gt;...&lt;/prop2&gt; </p> </td> 
+   <td colname="col3"> <p>Property#-sträng (till exempel <span class="term"> Idrott </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>purchaseID </p> </td> 
@@ -171,7 +171,7 @@ Följande tabell innehåller trafikvariabler som fylls i automatiskt när JavaSc
   </tr> 
   <tr> 
    <td colname="col1"> <p>charSet </p> </td> 
-   <td colname="col2"> <p>Den teckenuppsättning som stöds för din webbplats. Exempel: UTF-8, ISO-8859-1 osv. </p> <p>En fullständig lista finns i <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/configuration-variables.html#concept_E65B9A8F75C3482C87D0D455805F89BD"  > Multi-Byte Character Sets </a> (Internationalization). </p> </td> 
+   <td colname="col2"> <p>Den teckenuppsättning som stöds för din webbplats. Exempel: UTF-8, ISO-8859-1 osv. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/configuration-variables.html#concept_E65B9A8F75C3482C87D0D455805F89BD"  > Teckenuppsättningar med flera byte </a> (Internationalisering) Ett whitepaper om en komplett lista. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>clickAction </p> </td> 
