@@ -6,10 +6,10 @@ uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 feature: Workspace Basics
 role: User, Admin
 exl-id: 0d26c920-d0d9-4650-9cf0-b67dbc4629e1
-source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
+source-git-commit: 9f0f17936de2597611728498c5ed82d36fd01d1c
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 16%
+source-wordcount: '334'
+ht-degree: 10%
 
 ---
 
@@ -35,6 +35,14 @@ Analysera data på obegränsade sätt efter just era behov och bygg frågor med 
 Alla uppdelningar i en tabell kan också ha en attribueringsmodell. Den här attribueringsmodellen kan vara densamma eller en annan än den överordnade kolumnen. Du kan till exempel analysera linjära beställningar i dimensionen marknadsföringskanaler, men använda U-formade beställningar på specifika spårningskoder i en kanal. Om du vill redigera attribueringsmodellen som används för en uppdelning håller du muspekaren över nedbrytningsmodellen och klickar **[!UICONTROL Edit]**:
 
 ![Brytningsinställningar](assets/breakdown_settings.png)
+
+Detta är det förväntade beteendet när du tillämpar attribueringsmodeller på uppdelningar eller redigerar dem:
+
+* Om du tillämpar en attribuering när det inte finns några andra attribut gäller attribueringen för hela kolumnträdet.
+
+* Om du lägger till en uppdelning efter att en attribuering har tillämpats, används standardvärdet för den angivna uppdelning som lades till, om den dimensionen har ett standardvärde. I annat fall används den uppdelning som görs från den överordnade kolumnen. Vissa dimensioner har en standardallokering.  Till exempel: [!UICONTROL Time] mått och [!UICONTROL Referrer] use [!UICONTROL Same Touch]. The [!UICONTROL Product] dimensionsanvändning [!UICONTROL Last Touch]. Andra dimensioner saknar standardvärde och använder den överordnade kolumntilldelningen.
+
+* Om det redan finns attribut i kolumnträdet påverkas bara den du redigerar om du ändrar attributet.
 
 ## Videor
 
