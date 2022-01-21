@@ -1,14 +1,13 @@
 ---
 title: Datalagringspolicy
 description: En datalagringspolicy avgör hur länge Adobe lagrar dina data.
-translation-type: tm+mt
-source-git-commit: a4542164031fc9f181dfdc471a1d54b5056b1223
+exl-id: f3bb02d2-380d-4eb7-8449-e0318fc8c0a6
+source-git-commit: 879a51fd03c97316591639889d3fff4d22a9eb4c
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
-
 
 # Datalagringspolicy
 
@@ -23,7 +22,7 @@ Data som lagras baseras på aktuellt datum och datum/tid för historiska data. D
 Om du vill minska eller förlänga standardperioden för datalagring kontaktar du din organisations kontoansvarige.
 
 * Det kostar inget att minska standardperioden för datalagring.
-* Om man vill utöka datalagringen till mer än 25 månader efter standardperioden för lagring av uppgifter måste man köpa utökningar, som kan fås i steg om ett år. Upp till åtta förlängningar kan köpas, under totalt 10 år i månaden (två år i månaden för fallissemang plus åtta år).
+* Om man vill utöka datalagringen till mer än 25 månader måste man köpa utökningar, som kan fås i steg om ett år. Upp till åtta förlängningar kan köpas, under totalt 10 år i månaden (två år i månaden för fallissemang plus åtta år).
 
 ## Datalagring och dataintegritet
 
@@ -32,6 +31,10 @@ Adobe måste i sin roll som personuppgiftsbiträde vidta lämpliga åtgärder f�
 ## Radering av data
 
 När data överskrider din datalagringspolicy behåller Adobe rätten att ta bort dem utan alternativ för återställning. Ni måste se till att alla data som ni vill behålla ligger inom er organisations datalagringspolicy.
+
+## Visa/hantera aktuell datalagringspolicy
+
+Dialogrutan Datastyrning i [!UICONTROL Admin] Verktyg ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning. Här anges också om de har mappats till en Experience Cloud-organisation och om det finns en datalagringspolicy för den här rapportsviten. [Mer info](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=en)
 
 ## Frågor och svar
 
@@ -45,7 +48,7 @@ Datalagringspolicyn definierar ett rullande datalagringsfönster där fullständ
 
 **Kan jag begära en kopia av mina data innan de tas bort?**
 
-Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffnivå. Mer information finns i [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Export. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du din organisations kontoansvarige. Särskilda inkvarteringar kan göras. kostnaderna kan variera.
+Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffnivå. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera om du vill ha mer information. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du din organisations kontoansvarige. Särskilda inkvarteringar kan göras. kostnaderna kan variera.
 
 **När tar Adobe bort data?**
 
