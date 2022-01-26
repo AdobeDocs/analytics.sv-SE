@@ -1,35 +1,38 @@
 ---
-title: Annotations overview
-description: How to use annotations in Workspace.
+title: Översikt över anteckningar
+description: Så här använder du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: 6c1727ddc57de5767409462cdf1293f8ff2d94df
+source-git-commit: f8f2b5eed5124724b7889c9f1656e4a524dc37c7
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
-# Annotations overview
+# Översikt över anteckningar
 
-Annotations enable you to effectively communicate data nuances and insights about your data to your organization. [!UICONTROL Calendar events][!DNL Reports & Analytics]
+>[!NOTE]
+>
+>Den här funktionen är för närvarande i begränsad testning.
 
-## Visibility
+Med anteckningar kan ni effektivt kommunicera kontextuella datanunkter och insikter till organisationen. Anteckningar gör att du kan koppla kalenderhändelser till specifika mått/mätvärden. Du kan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden. Tidigare kallad [!UICONTROL Calendar events] in [!DNL Reports & Analytics]kan du anteckna ett datum för dataproblem, allmänna helgdagar, lanseringar av kampanjer osv.
 
-Annotations are visible in a variety of ways:
+## Synlighet
 
-* Insert line viz image>
+Anteckningar visas på flera olika sätt:
 
-* Insert freeform table
+* Infoga radobjekt>
 
-* Insert PDF
+* Infoga frihandsritabell
 
+* Infoga PDF
 
-## Turn annotations on or off
+## Aktivera eller inaktivera anteckningar
 
-Annotations can be turned on or off in a few places:
+Anteckningar kan aktiveras och avaktiveras på några platser:
 
-* Visualization level: Visualization settings > Show annotations
+* Visualiseringsnivå: Visualiseringsinställningar > Visa anteckningar
 
-* Project level: Project info &amp; settings > Show annotations
+* Projektnivå: Projektinformation och inställningar > Visa anteckningar
 
-* User level: Components > User preferences > Data > Show annotations
+* Användarnivå: Komponenter > Användarinställningar > Data > Visa anteckningar

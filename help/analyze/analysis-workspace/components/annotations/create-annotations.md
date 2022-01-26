@@ -1,30 +1,38 @@
 ---
-title: Create annotations
-description: How to create annotations in Workspace.
+title: Skapa anteckningar
+description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: 6c1727ddc57de5767409462cdf1293f8ff2d94df
+source-git-commit: f8f2b5eed5124724b7889c9f1656e4a524dc37c7
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 2%
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
 
-# Create annotations
+# Skapa anteckningar
 
-To add an annotation to a project
+>[!NOTE]
+>
+>Den här funktionen är för närvarande i begränsad testning.
 
-1. Right-click a point on a table or graph. The annotation builder opens.
+1. Om du vill skapa anteckningar har du två alternativ:
 
-1. Fill in the builder elements.
+   * Gå till [!UICONTROL Components] > [!UICONTROL Annotation]. Sidan Annotations Manager öppnas. Klicka [!UICONTROL Create New Annotation] och Annotations Builder öppnas, eller
+
+   * Högerklicka på en punkt i en tabell eller ett diagram. Annotations Builder öppnas.
+
+1. Fyll i Builder-elementen.
 
    | Element | Beskrivning |
    | --- | --- |
-   | Title | Name the annotation, e.g. &quot;Memorial Day&quot; |
-   | Beskrivning | (Optional) Provide a description for the annotation, e.g. &quot;Public holiday observed in the US&quot;. |
-   | Taggar | (Optional) Organize annotations by creating or applying a tag. |
-   | Applied date range | Select the date range that needs to be present for the annotation to be visible. |
-   | Color | Apply a color to the annotation. The annotation appears in the project with the selected color. Color can be used to categorize annotations, e.g. public holidays, external events, tracking issues, etc. |
-   | Scope | Choose the metrics, dimensions, or segments that the annotation will be visible with. Choose the report suites, projects, and users where the annotation will be visible.<ul><li>****</li><li>****</li><li>**** To show the annotation to users across all of their projects, first apply it to all of your projects, then share it via the Annotations component manager.</li></ul> |
+   | [!UICONTROL Title] | Namnge anteckningen, t.ex. &quot;Memorial Day&quot; |
+   | [!UICONTROL Description] | (Valfritt) Ange en beskrivning för anteckningen, t.ex. &quot;Offentlig semester i USA&quot;. |
+   | [!UICONTROL Tags] | (Valfritt) Ordna anteckningar genom att skapa eller använda en tagg. |
+   | [!UICONTROL Applied date] | Välj det datum eller datumintervall som måste finnas för att anteckningen ska kunna visas. |
+   | [!UICONTROL Color] | Använd en färg på anteckningen. Anteckningen visas i projektet med den valda färgen. Färg kan användas för att kategorisera anteckningar, t.ex. allmänna helgdagar, externa händelser, spårningsproblem. |
+   | [!UICONTROL Scope] | (Valfritt) Dra och släpp mätvärdena som utlöser anteckningen. Dra och släpp sedan de dimensioner eller segment som fungerar som filter (d.v.s. som anteckningen ska vara synlig med). Om du inte anger ett omfång kommer anteckningen att gälla för alla dina data. Användningsexempel: En eVar har slutat samla in data för ett visst datumintervall. Dra eVar till **Någon av dessa mätvärden som utlöser** -dialogrutan. Eller **Besök** inga data rapporteras. Följ samma process. |
+   | [!UICONTROL Apply to all report suites] | Som standard gäller anteckningen för den ursprungliga rapportsviten. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla rapportsviter i företaget. |
+   | [!UICONTROL Apply to all projects] | Som standard gäller anteckningen det aktuella projektet. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla projekt som du äger. |
 
 1. Klicka på [!UICONTROL Save].

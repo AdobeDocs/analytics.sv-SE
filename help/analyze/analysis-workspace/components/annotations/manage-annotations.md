@@ -1,26 +1,37 @@
 ---
-title: Manage annotations
-description: How to manage annotations in Workspace.
+title: Hantera anteckningar
+description: Hantera anteckningar i Workspace.
 role: User, Admin
-source-git-commit: 6c1727ddc57de5767409462cdf1293f8ff2d94df
+source-git-commit: f8f2b5eed5124724b7889c9f1656e4a524dc37c7
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 0%
+source-wordcount: '95'
+ht-degree: 1%
 
 ---
 
 
-# Manage annotations
-
-[!UICONTROL Components][!UICONTROL Annotations]
-
-[!UICONTROL Annotations]
+# Hantera anteckningar
 
 >[!NOTE]
 >
->[!UICONTROL Annotations]
+>Den här funktionen är för närvarande i begränsad testning.
 
-## Annotations Manager user interface
+The [!UICONTROL Components] > [!UICONTROL Annotations] kan hantera anteckningar på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
-insert image
+The [!UICONTROL Annotations] -hanteraren visar alla anteckningar du äger som har omfattats av alla dina projekt och som har delats med dig.
+
+>[!NOTE]
+>
+>[!UICONTROL Annotations] som du har skapat endast för ett visst projekt visas inte i hanteraren.
+
+## Annotations Manager-användargränssnitt
+
+| Gränssnittselement | Beskrivning |
+| --- | --- | 
+| Titel och beskrivning |  |
+| Report Suite |  |
+| Ägare |  |
+| Tillämpat datumintervall |  |
+| Delas med |  |
+| Ändringsdatum |  |
 
