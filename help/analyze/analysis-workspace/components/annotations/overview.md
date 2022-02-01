@@ -2,9 +2,10 @@
 title: Översikt över anteckningar
 description: Så här använder du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: f8f2b5eed5124724b7889c9f1656e4a524dc37c7
+solution: Analytics
+source-git-commit: ba7a3193ef01f5865300554ed0ebb610146ebc5a
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Med anteckningar kan ni effektivt kommunicera kontextuella datanunkter och insik
 
 ## Synlighet
 
-Anteckningar visas på flera olika sätt:
+Du kan visa anteckningar på flera olika sätt:
 
 * Infoga radobjekt>
 
