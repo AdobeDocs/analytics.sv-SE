@@ -2,9 +2,9 @@
 title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
-source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
+source-git-commit: f8a928782b4c4916f5ff2042cb72941d76f57d7d
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,6 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | [!UICONTROL Segment Creation] | Ger möjlighet att skapa och dela segment över alla Analytics-funktioner. |
 | [!UICONTROL Advertising Analytics Management] | Används inte. |
 | [!UICONTROL Segment Publishing] | Ger möjlighet att göra ett segment till en Experience Cloud-målgrupp när du skapar eller redigerar ett segment. |
-| [!UICONTROL Integrations (Create)] | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren skapa dataanslutningar. |
-| [!UICONTROL Integrations (Update)] | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren ändra befintliga kopplingskonfigurationer. |
-| [!UICONTROL Integrations (Delete)] | Ger åtkomst till Admin > Alla administratörer > Datakopplingar och låter användaren ta bort dataanslutningar. |
+| [!UICONTROL Integrations (Create)] | Används inte. Dataanslutningar har avslutats. |
+| [!UICONTROL Integrations (Update)] | Används inte. |
+| [!UICONTROL Integrations (Delete)] | Används inte. |

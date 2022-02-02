@@ -2,12 +2,12 @@
 description: Interaktioner med tangentbord, kortkommandon och beteenden för peka och klicka som är tillgängliga i Analysis Workspace.
 keywords: Analysis Workspace
 title: Snabbtangenter (kortkommandon)
-feature: Grundläggande om arbetsytan
+feature: Workspace Basics
 role: User, Admin
 exl-id: 742e7d69-2acf-48a9-aaf3-1cb3a73944af
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: f8a928782b4c4916f5ff2042cb72941d76f57d7d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '290'
 ht-degree: 5%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 5%
 Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering, analys, tillägg av paneler och visualiseringar samt demokratisering (delning).
 
 Obs!
-* `Ctrl` = Windows och  `Command` = Mac
-* `Alt` = Windows och  `Option` = Mac
+* `Ctrl` = Windows och `Command` = Mac
+* `Alt` = Windows och `Option` = Mac
 
 ## Navigeringsåtgärder
 
@@ -40,6 +40,7 @@ Obs!
 | --- | --- |
 | Sök i vänster list | ctrl + / |
 | Skapa en avisering | Ctrl + Skift + a |
+| Skapa en anteckning | Ctrl + Skift + O |
 | Skapa beräknat mått | Ctrl + Skift + C |
 | Skapa ett datumintervall | Ctrl + Skift + D |
 | Skapa ett segment | Ctrl + Skift + e |

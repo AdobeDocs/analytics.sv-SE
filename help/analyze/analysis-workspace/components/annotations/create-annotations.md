@@ -2,10 +2,10 @@
 title: Skapa anteckningar
 description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: f8f2b5eed5124724b7889c9f1656e4a524dc37c7
+source-git-commit: f8a928782b4c4916f5ff2042cb72941d76f57d7d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 1%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +16,21 @@ ht-degree: 1%
 >
 >Den här funktionen är för närvarande i begränsad testning.
 
-1. Om du vill skapa anteckningar har du två alternativ:
+1. Du kan skapa anteckningar på fyra sätt:
 
-   * Gå till [!UICONTROL Components] > [!UICONTROL Annotation]. Sidan Annotations Manager öppnas. Klicka [!UICONTROL Create New Annotation] och Annotations Builder öppnas, eller
+   * Gå till [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Annotation]. Sidan Annotations Manager öppnas. Klicka [!UICONTROL Create New Annotation] och Annotation Builder öppnas, eller
 
-   * Högerklicka på en punkt i en tabell eller ett diagram. Annotations Builder öppnas.
+   * Högerklicka på en punkt i en tabell eller ett linjediagram. Anteckningsverktyget öppnas, eller
+
+   * Gå till [!UICONTROL Components] > [!UICONTROL Create annotation].
+
+   * Använd den här snabbtangenten för att öppna Anteckningsverktyget:
+      * (PC) `ctrl` `shift` + o
+      * (Mac) `shift` + `command` + o
 
 1. Fyll i Builder-elementen.
+
+   ![](assets/ann-builder.png)
 
    | Element | Beskrivning |
    | --- | --- |
@@ -31,7 +39,7 @@ ht-degree: 1%
    | [!UICONTROL Tags] | (Valfritt) Ordna anteckningar genom att skapa eller använda en tagg. |
    | [!UICONTROL Applied date] | Välj det datum eller datumintervall som måste finnas för att anteckningen ska kunna visas. |
    | [!UICONTROL Color] | Använd en färg på anteckningen. Anteckningen visas i projektet med den valda färgen. Färg kan användas för att kategorisera anteckningar, t.ex. allmänna helgdagar, externa händelser, spårningsproblem. |
-   | [!UICONTROL Scope] | (Valfritt) Dra och släpp mätvärdena som utlöser anteckningen. Dra och släpp sedan de dimensioner eller segment som fungerar som filter (d.v.s. som anteckningen ska vara synlig med). Om du inte anger ett omfång kommer anteckningen att gälla för alla dina data. Användningsexempel: En eVar har slutat samla in data för ett visst datumintervall. Dra eVar till **Någon av dessa mätvärden som utlöser** -dialogrutan. Eller **Besök** inga data rapporteras. Följ samma process. |
+   | [!UICONTROL Scope] | (Valfritt) Dra och släpp mätvärdena som utlöser anteckningen. Dra och släpp sedan de dimensioner eller segment som fungerar som filter (d.v.s. som anteckningen ska vara synlig med). Om du inte anger ett omfång kommer anteckningen att gälla för alla dina data.<ul><li>**[!UICONTROL Any of these metrics are present]**: Dra och släpp upp till 10 mätvärden som utlöser den anteckning som ska visas.</li><li>**[!UICONTROL With all of these filters]**: Dra och släpp upp till 10 dimensioner eller segment som ska filtreras när anteckningen visas.</li></ul><p>Användningsexempel: En eVar har slutat samla in data för ett visst datumintervall. Dra eVar till **[!UICONTROL Any of these metrics are present]** -dialogrutan. Eller [!UICONTROL Visits] inga data rapporteras. Följ samma process. |
    | [!UICONTROL Apply to all report suites] | Som standard gäller anteckningen för den ursprungliga rapportsviten. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla rapportsviter i företaget. |
    | [!UICONTROL Apply to all projects] | Som standard gäller anteckningen det aktuella projektet. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla projekt som du äger. |
 
