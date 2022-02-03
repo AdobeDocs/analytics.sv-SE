@@ -3,9 +3,9 @@ title: Översikt över anteckningar
 description: Så här använder du anteckningar i Workspace.
 role: User, Admin
 solution: Analytics
-source-git-commit: 89cbecf109a8fa9a9fac1f1ed8ad198ffdd398d3
+source-git-commit: 6b5fd4e25056d7efbf3119a4d55d2e0a7897965f
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -36,26 +36,6 @@ Som standard kan bara administratörer skapa anteckningar. Användare har rätt 
 
 Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analysverktyg) till användare via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=en).
 
-## Visa anteckningar
-
-Du kan visa anteckningar på flera olika sätt: i en [!UICONTROL Line] visualisering (eftersom det är trenddata), i en [!UICONTROL Freeform] tabell, a [!UICONTROL Bar] eller i en exporterad PDF-fil.
-
-### Radvisualisering
-
-följer
-
-### Frihandstabell
-
-följer
-
-### Stapeldiagram
-
-följer
-
-### PDF-fil
-
-följer
-
 ## Aktivera eller inaktivera anteckningar
 
 Anteckningar kan aktiveras och avaktiveras på flera nivåer:
@@ -66,3 +46,6 @@ Anteckningar kan aktiveras och avaktiveras på flera nivåer:
 
 * På användarnivå: [!UICONTROL Components] > [!UICONTROL User preferences] > [!UICONTROL Data] > [!UICONTROL Show annotations]
 
+![](assets/show-ann.png)
+
+![](assets/show-ann2.png)
