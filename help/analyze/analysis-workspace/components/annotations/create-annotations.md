@@ -2,9 +2,9 @@
 title: Skapa anteckningar
 description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: f8a928782b4c4916f5ff2042cb72941d76f57d7d
+source-git-commit: 89cbecf109a8fa9a9fac1f1ed8ad198ffdd398d3
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 1. Du kan skapa anteckningar på fyra sätt:
 
-   * Gå till [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Annotation]. Sidan Annotations Manager öppnas. Klicka [!UICONTROL Create New Annotation] och Annotation Builder öppnas, eller
+   * Gå till [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Annotation]. Sidan Annotations Manager öppnas. Klicka [!UICONTROL Create New Annotation] och Annotation Builder öppnas.
 
-   * Högerklicka på en punkt i en tabell eller ett linjediagram. Anteckningsverktyget öppnas, eller
+   * Högerklicka på en punkt i en tabell eller ett linjediagram. Anteckningsverktyget öppnas.
 
-   * Gå till [!UICONTROL Components] > [!UICONTROL Create annotation].
+   * Gå till [!UICONTROL Components] > [!UICONTROL Create annotation]. Anteckningsverktyget öppnas.
 
    * Använd den här snabbtangenten för att öppna Anteckningsverktyget:
       * (PC) `ctrl` `shift` + o
@@ -41,6 +41,6 @@ ht-degree: 0%
    | [!UICONTROL Color] | Använd en färg på anteckningen. Anteckningen visas i projektet med den valda färgen. Färg kan användas för att kategorisera anteckningar, t.ex. allmänna helgdagar, externa händelser, spårningsproblem. |
    | [!UICONTROL Scope] | (Valfritt) Dra och släpp mätvärdena som utlöser anteckningen. Dra och släpp sedan de dimensioner eller segment som fungerar som filter (d.v.s. som anteckningen ska vara synlig med). Om du inte anger ett omfång kommer anteckningen att gälla för alla dina data.<ul><li>**[!UICONTROL Any of these metrics are present]**: Dra och släpp upp till 10 mätvärden som utlöser den anteckning som ska visas.</li><li>**[!UICONTROL With all of these filters]**: Dra och släpp upp till 10 dimensioner eller segment som ska filtreras när anteckningen visas.</li></ul><p>Användningsexempel: En eVar har slutat samla in data för ett visst datumintervall. Dra eVar till **[!UICONTROL Any of these metrics are present]** -dialogrutan. Eller [!UICONTROL Visits] inga data rapporteras. Följ samma process. |
    | [!UICONTROL Apply to all report suites] | Som standard gäller anteckningen för den ursprungliga rapportsviten. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla rapportsviter i företaget. |
-   | [!UICONTROL Apply to all projects] | Som standard gäller anteckningen det aktuella projektet. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla projekt som du äger. |
+   | [!UICONTROL Apply to all projects] | Som standard gäller anteckningen det aktuella projektet. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla projekt som du äger. Observera att den här kryssrutan bara visas när du startar Anteckningsverktyget från Anteckningshanteraren. |
 
 1. Klicka på [!UICONTROL Save].

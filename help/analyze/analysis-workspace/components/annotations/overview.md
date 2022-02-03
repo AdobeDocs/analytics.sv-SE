@@ -3,9 +3,9 @@ title: Översikt över anteckningar
 description: Så här använder du anteckningar i Workspace.
 role: User, Admin
 solution: Analytics
-source-git-commit: 0516696ee9d51ac843c659390ae99d8337812cbb
+source-git-commit: 89cbecf109a8fa9a9fac1f1ed8ad198ffdd398d3
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Den här funktionen är för närvarande i begränsad testning.
 
-Med anteckningar kan ni effektivt kommunicera kontextuella datanunkter och insikter till organisationen. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden. Du kan anteckna ett datum eller datumintervall för dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden.
+Med anteckningar kan ni effektivt kommunicera kontextuella datanunkter och insikter till organisationen. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden. Du kan anteckna ett datum eller datumintervall med kända dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden.
 
 Anta att du delar projekt som du har skapat med din organisation. Du märker en dip eller en topp i trafik eller andra data, och du kopplar en anteckning till de mått, dimensioner eller segment som påverkas. Dessa kommentarer visas sedan i en tabell eller en radvisualisering och ger datakontext för dig och konsumenterna i dina Workspace-projekt.
 
@@ -38,7 +38,7 @@ Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analy
 
 ## Visa anteckningar
 
-Du kan visa anteckningar på flera olika sätt: som [!UICONTROL Line] visualisering (eftersom det är trenddata), som en [!UICONTROL Freeform] tabell, a [!UICONTROL Bar] eller i en exporterad PDF-fil.
+Du kan visa anteckningar på flera olika sätt: i en [!UICONTROL Line] visualisering (eftersom det är trenddata), i en [!UICONTROL Freeform] tabell, a [!UICONTROL Bar] eller i en exporterad PDF-fil.
 
 ### Radvisualisering
 
