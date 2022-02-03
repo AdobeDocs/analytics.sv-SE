@@ -2,15 +2,19 @@
 title: Visa anteckningar
 description: Så här visar du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: 6b5fd4e25056d7efbf3119a4d55d2e0a7897965f
+source-git-commit: 0985a31596103a0325509a66a6bde7688e24e9bd
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Visa anteckningar
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande i begränsad testning.
 
 Anteckningarna visas något annorlunda beroende på om de sträcker sig över en enstaka dag eller ett datumintervall.
 
