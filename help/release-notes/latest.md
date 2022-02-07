@@ -1,15 +1,19 @@
 ---
 title: Visa den aktuella versionsinformationen för Adobe Analytics
 description: Versionsinformation om den senaste analysen
-source-git-commit: f8c2d98e49ead838781b175aa9f22712d6802a9d
+source-git-commit: e19299820a03783215d8425b937a0935311d9e7b
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '861'
 ht-degree: 5%
 
 ---
 
 
 # Senaste versionsinformation för Adobe Analytics
+
+**Januari 2022**
+
+Läs om de senaste versionsuppdateringarna för [Adobe Experience Cloud-produkter](https://business.adobe.com/products/adobe-experience-cloud-products.html). Få den senaste självhjälpsdokumentationen, självstudiekurserna och kurserna om Experience League.
 
 ## Nya funktioner i Adobe Analytics {#aa-features}
 
