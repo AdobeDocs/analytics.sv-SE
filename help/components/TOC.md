@@ -4,17 +4,18 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Organisera dina data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter och varningar.
-source-git-commit: ff6937ebb3bdd37d7acf22a954deb1e656267061
+source-git-commit: c68ab53242328702fb5a0ad9f1e28aafc6fb119b
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 52%
+source-wordcount: '667'
+ht-degree: 51%
 
 ---
 
 
-# [!DNL Analytics] Komponenthandbok {#components}
+# [!DNL Adobe Analytics] Komponenthandbok {#components}
 
 + [Komponenthandbok för Analytics](home.md)
++ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Dimensioner {#dimensions}
    + [Översikt över Dimensioner](dimensions/overview.md)
    + [Kompatibilitet med Dimensioner](dimensions/compatibility.md)

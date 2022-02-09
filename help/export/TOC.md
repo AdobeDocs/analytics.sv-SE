@@ -4,17 +4,18 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Exporthandbok
 user-guide-description: Använd dataflöden för att få en timbaserad eller daglig export av rådata. Använd Data warehouse för att hämta data från kalkylblad.
-source-git-commit: d50ec88ec7d2271d009ae8049481e20d0c90162b
+source-git-commit: c68ab53242328702fb5a0ad9f1e28aafc6fb119b
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 75%
+source-wordcount: '289'
+ht-degree: 71%
 
 ---
 
 
-# Exporthandbok för Analytics {#export}
+# Adobe Analytics Export Guide {#export}
 
 + [Exporthandbok för Analytics](home.md)
++ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Analytics-datafeed {#analytics-data-feed}
    + [Översikt över datafeeds](analytics-data-feed/data-feed-overview.md)
    + [Skapa eller redigera en datafeed](analytics-data-feed/create-feed.md)

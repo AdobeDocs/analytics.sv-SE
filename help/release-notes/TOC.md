@@ -4,18 +4,18 @@ audience: all
 user-guide-title: Versionsinformation om Analytics
 breadcrumb-title: Versionsinformation
 user-guide-description: En lista med beskrivningar av nya funktioner och felkorrigeringar.
-source-git-commit: 1d96018fefe605dda9e9123f6f12bdc996c0e12c
+source-git-commit: 4ccda7057df7543125be8c69e92aed6c45aed80f
 workflow-type: tm+mt
-source-wordcount: '31'
-ht-degree: 6%
+source-wordcount: '34'
+ht-degree: 5%
 
 ---
 
 
-# Versionsinformation om Analytics {#release-notes}
+# Versionsinformation för Adobe Analytics {#release-notes}
 
-+ [Aktuella versionsinformation](latest.md)
-+ Tidigare versionsinformation {#previous}
++ [Versionsinformation om aktuell analys](latest.md)
++ Versionsinformation för föregående analys {#previous}
    + [Versionsinformation 2022](2022.md)
    + [Versionsinformation 2021](2021.md)
    + [Versionsinformation 2020](2020.md)

@@ -4,17 +4,18 @@ audience: end-user
 user-guide-title: Importguide för Analytics
 breadcrumb-title: Importera guide
 user-guide-description: 'Hämta in data i analyser från externa källor, antingen i bulk eller i realtid. '
-source-git-commit: a9d0cc251e8902f3c9c3cd9c31cbc71ae6ee20e9
+source-git-commit: c68ab53242328702fb5a0ad9f1e28aafc6fb119b
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 72%
+source-wordcount: '136'
+ht-degree: 64%
 
 ---
 
 
-# Importguide för Analytics {#import}
+# Adobe Analytics Import Guide {#import}
 
 + [Importguide för Analytics](home.md)
++ [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Data Sources {#data-sources}
    + [Översikt över Data Sources](c-data-sources/datasrc-home.md)
    + [Så fungerar Data Sources](c-data-sources/datasrc-how-data-sources-works.md)
