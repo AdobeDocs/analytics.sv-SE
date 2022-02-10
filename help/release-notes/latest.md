@@ -2,28 +2,28 @@
 title: Visa den aktuella versionsinformationen för Adobe Analytics
 description: Versionsinformation om den senaste analysen
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 16e74d5374fd761af973ca7af9dd1c4022010911
+source-git-commit: 44bbcabf0bdc74b560a650ce1892a52b4d98052c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 7%
+source-wordcount: '646'
+ht-degree: 5%
 
 ---
 
-# Senaste versionsinformation för Adobe Analytics
+# Aktuell versionsinformation för Adobe Analytics (februari 2022)
 
 >[!IMPORTANT]
 >
 >Versionsinformationen innehåller information om förhandsversioner som kan ändras.
 
-**16 februari 2022**
+**Senaste uppdatering**: 10 februari 2022
 
 Läs om de senaste versionsuppdateringarna för [Adobe Experience Cloud-produkter](https://business.adobe.com/products/adobe-experience-cloud-products.html). Få den senaste självhjälpsdokumentationen, självstudiekurserna och kurserna om Experience League.
 
 ## Nya funktioner i Adobe Analytics {#aa-features}
 
-| Funktion | Beskrivning | Måldatum |
+| Funktion | Beskrivning | [Måldatum](https://experienceleague.adobe.com/docs/analytics/technotes/releases.html?lang=en) |
 | ----------- | ---------- | ------- |
-| Inga nya funktioner den här månaden | Ej tillämpligt | Se [Allmän tillgänglighet](https://experienceleague.adobe.com/docs/analytics/technotes/releases.html?lang=en) |
+| Förhandsgranskningsläge för mobilstyrda projekt | Starta en förhandsgranskning av hur ditt mobilstyrkort kommer att se ut i kontrollpanelsappen för Analytics, direkt från styrkortsverktyget. I förhandsgranskningsläget kan användarna interagera med filter och diagram på samma sätt som i appen, vilket gör att de kan förhandsgranska upplevelsen innan de sparar och delar styrkortet. Användare kan också använda enhetsväljaren i förhandsgranskningsläge för att se hur styrkortet kommer att se ut på olika enheter. | 16 februari 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
