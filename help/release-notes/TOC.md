@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Versionsinformation om Analytics
 breadcrumb-title: Versionsinformation
 user-guide-description: En lista med beskrivningar av nya funktioner och felkorrigeringar.
-source-git-commit: 4ccda7057df7543125be8c69e92aed6c45aed80f
+source-git-commit: a6f2e241617d118479b79d00305f7ed4dc3dfd67
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 5%
+source-wordcount: '39'
+ht-degree: 10%
 
 ---
 
@@ -20,3 +20,5 @@ ht-degree: 5%
    + [Versionsinformation 2021](2021.md)
    + [Versionsinformation 2020](2020.md)
    + [Versionsinformation 2019](2019-earlier.md)
++ [Dokumentationsuppdateringar](doc-updates.md)
++ [Funktionsreleaser för analyser](releases.md)

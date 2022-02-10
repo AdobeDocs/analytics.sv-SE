@@ -5,7 +5,7 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 174e81cc94fb67f391cbf6bff4c1b071527b5ce2
+source-git-commit: cd93db4c83e93863f1e2fe6f6d258a1073bd0823
 workflow-type: tm+mt
 source-wordcount: '8174'
 ht-degree: 88%
@@ -15,7 +15,7 @@ ht-degree: 88%
 # Nyheter i Analysis Workspace
 
 >[!IMPORTANT]
->Ytterligare Analysis Workspace-uppdateringar har lagts in på sidan [Adobe Analytics Documentation Updates](/help/technotes/doc-updates.md).
+>Ytterligare Analysis Workspace-uppdateringar har lagts in i [Adobe Analytics Documentation Updates](/help/release-notes/doc-updates.md) sida.
 
 Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html) för uppdateringar av den övergripande produkten.
 
@@ -23,27 +23,27 @@ Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.ad
 
 | Funktion | Måldatum | Beskrivning |
 | --- | --- | --- |
-| [!UICONTROL Components] > [!UICONTROL User preferences] | 25 mars 2021 | På sidan [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera [!UICONTROL Analysis Workspace]-inställningar och relaterade komponenter för din användare. [!UICONTROL User preferences] gäller för alla nya projekt och paneler. <br>**Obs!** Följande inställningar har flyttats till  [!UICONTROL User preferences] sidan:<ul><li>Rapportinställningar: Tusentalsavgränsare (kallas nu _Nummerformat_)</li><li>Rapportinställningar: CSV-avgränsare</li><li>Arbetsyteprojekt: Hjälp > Aktivera tips</li><li>Arbetsyteprojekt: Panelen Tom _Starta nya projekt med det här panelalternativet_</li></ul> |
+| [!UICONTROL Components] > [!UICONTROL User preferences] | 25 mars 2021 | The [!UICONTROL Components] > [!UICONTROL User preferences] kan du hantera [!UICONTROL Analysis Workspace] inställningar och relaterade komponenter för användaren. [!UICONTROL User preferences] gäller för alla nya projekt och paneler. <br>**Obs!** följande inställningar har flyttats till [!UICONTROL User preferences] sida:<ul><li>Rapportinställningar: Tusentalsavgränsare (kallas nu _Nummerformat_)</li><li>Rapportinställningar: CSV-avgränsare</li><li>Arbetsyteprojekt: Hjälp > Aktivera tips</li><li>Arbetsyteprojekt: Tom panel _Starta nya projekt med den här panelen_ option</li></ul> |
 | [!UICONTROL Histogram Smart Bucket Prediction] | 25 mars 2021 | [!UICONTROL Histogram Smart Bucket Prediction] hjälper till med histogram med höga kardinalitetsmått genom att automatiskt identifiera rätt bredd och antal buckar för ert datauppslag. För lågkardinalitetsmått fungerar visualiseringen på samma sätt som tidigare. |
 
 ## Februari 2021
 
 | Funktion | Måldatum | Beskrivning |
 | --- | --- | --- |
-| Komponentval | 4 februari 2021 | Den nedrullningsbara eller släppzon-komponent som finns i [!UICONTROL Quick Insights] kommer att läggas till i alla släppzoner i [!UICONTROL Workspace]. Den här förbättringen gör att du kan välja från en nedrullningsbar lista med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
+| Komponentval | 4 februari 2021 | Komponenten för rullgardinsmeny/släppzon finns i [!UICONTROL Quick Insights] läggs till i alla släppzoner i [!UICONTROL Workspace]. Den här förbättringen gör att du kan välja från en nedrullningsbar lista med kompatibla komponenter eller fortsätta att använda utrymmet som en släppzon. |
 
 ## Januari 2021
 
 | Funktion | Måldatum | Beskrivning |
 | --- | --- | --- |
 | Bild-URL:er | 14 januari 2021 | Du kan lägga till bilder i arbetsyteprojekt genom att referera till en offentlig bild-URL. |
-| Kombinerad käll- och inställningshanterare för visualiseringar | 14 januari 2021 | Hanteraren för [!UICONTROL Data Source] (punkt) och inställningar (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
+| Kombinerad käll- och inställningshanterare för visualiseringar | 14 januari 2021 | The [!UICONTROL Data Source] hanteraren (punkt) och inställningshanteraren (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
 
 ## Oktober 2020
 
 | Funktion | Beskrivning |
 | --- | --- |
-| Linjevisualisering: [Alternativ för glidande medeltrendlinje](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/line.html) | **[!UICONTROL Moving average]** har lagts till i  [!UICONTROL Line] visualiseringens trendlinjeinställningar. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av en **[!UICONTROL Periods]**-markering), jämför dem och använder medelvärdet som en punkt på raden. |
+| Linjevisualisering: [Alternativ för glidande medeltrendlinje](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/line.html) | **[!UICONTROL Moving average]** har lagts till i [!UICONTROL Line] trendlinjeinställningar för visualisering. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av en **[!UICONTROL Periods]** ), beräknar ett medelvärde för dem och använder medelvärdet som en punkt på raden. |
 | [Hjälpsida för prestanda](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html) | På hjälpsidan för Analysis Workspace prestanda visas olika faktorer som påverkar projektets prestanda och länkar till tips för optimering. |
 
 ## September 2020
@@ -51,7 +51,7 @@ Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.ad
 | Funktion | Beskrivning |
 | --- | --- |
 | [Ladda ned 50 000 artiklar för en enda dimension](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html#download-items) | Nu kan du ladda ned 50 000 objekt för en enda dimension i en friformstabell med segment och filter. Det ger dig åtkomst till mer än de 400 dataraderna utanför Analysis Workspace. |
-| [Förbättringar av linjevisualisering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla [!UICONTROL Line]-visualiseringar. Detta kan vara praktiskt när dina [!UICONTROL Line]-visualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen är [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential], [!UICONTROL Power] och [!UICONTROL Quadratic].</li></ul> |
+| [Förbättringar av linjevisualisering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla [!UICONTROL Line] visualisering. Detta kan vara praktiskt när du [!UICONTROL Line] visualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen inkluderar [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential], [!UICONTROL Power] och [!UICONTROL Quadratic].</li></ul> |
 | Nya datumintervall | Vi har lagt till fem nya datumintervall så att du kan välja mellan datumintervall som inte innehåller data för delar av dagen från idag: De senaste 7 fullständiga dagarna, de senaste 14 fullständiga dagarna, de senaste 30 fullständiga dagarna, de senaste 60 fullständiga dagarna, de senaste 90 fullständiga dagarna |
 
 ## Augusti 2020
@@ -114,7 +114,7 @@ Nya funktioner som släpptes 20 februari 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| Ny Workspace-mall för organisationer som använder analys över olika enheter | Den här mallen visar hur effektivt funktionen för analys över olika enheter sammanfogar besök och utbildar dig om mått och mätvärden som är specifika för just den här analysen. En rapportsvit som har analys över olika enheter krävs. Mer information finns i [Konfigurera enhetsanalys](/help/components/cda/setup.md). |
+| Ny Workspace-mall för organisationer som använder analys över olika enheter | Den här mallen visar hur effektivt funktionen för analys över olika enheter sammanfogar besök och utbildar dig om mått och mätvärden som är specifika för just den här analysen. En rapportsvit som har analys över olika enheter krävs. Se [Konfigurera enhetsövergripande analys](/help/components/cda/setup.md) för mer information. |
 | Nya kortkommandon i Workspace | <ul><li>Visa/dölj alla paneler: `alt + m`</li><li>Visa/dölj aktiv panel: `alt + ctrl + m`</li><li>Sök i vänster list: `ctrl + /`</li><li>Gå till nästa panel: `alt + Right Key`</li><li>Gå till föregående panel: `alt + Left Key`</li></ul>[Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) |
 | Andra förbättringar av Workspace | <ul><li>När en panel eller visualisering släpps i Workspace växlar den vänstra listen nu automatiskt till komponenter för ett smidigare arbetsflöde.</li><li>Mallkomponenter kan nu användas direkt (till exempel taggas, anges som favoriter eller godkännas).</li><li>Filtrerade mätvärdes- och segmentlistor har en plusknapp för att lägga till en ny komponent om du inte hittar det du behöver.</li></ul> |
 | Felsökare för Workspace | Felsökaren för Workspace har lagts till på menyn Hjälp för att göra det lättare att aktivera den för felsökning av begäranden. [Läs mer …](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md) |
@@ -438,7 +438,7 @@ Nya funktioner och förbättringar som släpptes 8 mars 2018.
    <td colname="col2"> <p>För de senast släppta anpassade mallarna har vi gjort följande: </p> 
     <ul id="ul_787F48253F454163B99F6DD50F199FE2"> 
      <li id="li_828DD547DDB54A81B9FFB9FE92790F6C">Lagt till en mallikon längst upp i projektet (nära titeln) för att göra det lättare att skilja mellan läget för mallredigering och när du använder en mall som startpunkt för ett projekt. </li> 
-     <li id="li_EEAA4D115CB74A57BABD524B2561E0CC">Gett icke-administratörer möjlighet att skapa (spara som) och redigera mallar för Workspace-projekt, förutsatt att de har beviljats behörighet att skapa/strukturera projekt i Analysis Workspace. ( <span class="ignoretag"> <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Alla administratörer </span> &gt; <span class="uicontrol"> Användarhantering </span> &gt; <span class="uicontrol"> Grupper </span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> Anpassa analysverktyg </span> &gt; a13/&gt; Skapa/Kuratera projekt i Analysis Workspace </span> </span>).<span class="uicontrol"> </span></li> 
+     <li id="li_EEAA4D115CB74A57BABD524B2561E0CC">Gett icke-administratörer möjlighet att skapa (spara som) och redigera mallar för Workspace-projekt, förutsatt att de har beviljats behörighet att skapa/strukturera projekt i Analysis Workspace. ( <span class="ignoretag"> <span class="uicontrol"> Administratör </span>  &gt; <span class="uicontrol"> Alla administratörer </span>  &gt; <span class="uicontrol"> Användarhantering </span>  &gt; <span class="uicontrol"> Grupper </span>  &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span>  &gt; <span class="uicontrol"> Anpassa analysverktyg </span>  &gt; <span class="uicontrol"> Skapa/kuratera projekt i Analysis Workspace </span> </span>). </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -548,7 +548,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bidragsanalys: <a href="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html"  >Tokenavisering</a> </p> </td> 
-   <td colname="col2"> <p>Om företaget har ett begränsat antal tokens för bidragsanalys visas nu en avisering i gränssnittet för Analysis Workspace när du konsumerar en token. Du får då veta hur många tokens ni har kvar.  </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa tokens genom att redigera gruppbehörigheten. Behörigheten kallas Anomaly Detection and Contribution Analysis under <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> All admin </span> &gt; <span class="uicontrol"> User management </span> <span class="uicontrol"> Edit Groups </span> &gt; <span class="uicontrol"> Edit All Report Access &lt;a1 1/&gt; &gt; <span class="uicontrol"> Anpassa Report Suite-verktygen </span> &gt; <span class="uicontrol"> Verktyg och rapporter </span>. ) </span> </p> </td> 
+   <td colname="col2"> <p>Om företaget har ett begränsat antal tokens för bidragsanalys visas nu en avisering i gränssnittet för Analysis Workspace när du konsumerar en token. Du får då veta hur många tokens ni har kvar.  </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa tokens genom att redigera gruppbehörigheten. Tillståndet kallas"Anomaly Detection and Contribution Analysis" under <span class="uicontrol"> Analyser </span> &gt; <span class="uicontrol"> Administratör </span> &gt; <span class="uicontrol"> Alla administratörer </span>  &gt; <span class="uicontrol"> Användarhantering </span>&gt; <span class="uicontrol"> Redigera grupper </span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> Anpassa Report Suite-verktyg </span> &gt; <span class="uicontrol"> verktyg och rapporter </span>. )  </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CSV-filer med multibyte-tecken </p> </td> 
@@ -1180,7 +1180,7 @@ Det nya segmentet visas i gruppen [!UICONTROL Segments] på panelen [!UICONTROL 
 
 ## Lägg till nytt segment
 
-Släppzonen **[!UICONTROL Drop a Segment here]** har lagts till så att du kan dra och släppa segment i ett projekt.
+The **[!UICONTROL Drop a Segment here]** släppzonen har lagts till så att du kan dra och släppa segment i ett projekt.
 
 ![](assets/add-new-segment.png)
 

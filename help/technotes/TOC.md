@@ -4,9 +4,9 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: En kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
-source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
+source-git-commit: fac5627cec2a398aaca8272fefe8497fbb8fb315
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 69%
 
 ---
@@ -15,7 +15,6 @@ ht-degree: 69%
 # Analytics Tech Notes {#technotes}
 
 + [Tekniska anteckningar för Analytics](home.md)
-+ [Dokumentationsuppdateringar](doc-updates.md)
 + Adobe Analytics för Google Analytics-användare {#ga-to-aa}
    + [Adobe Analytics för Google Analytics-användare - hjälp](ga-to-aa/home.md)
    + [Konton och rapportsviter](ga-to-aa/accounts.md)
@@ -44,7 +43,6 @@ ht-degree: 69%
    + [Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookies/cookieless.md)
 + [Datalagring](data-retention.md)
 + [Uteslut data](exclude-data.md)
-+ [Funktioner](releases.md)
 + [IP-adresser och domäner som används av Adobe Analytics](ip-addresses.md)
 + [Latens](latency.md)
 + [Lågtrafikvärde](low-traffic.md)
