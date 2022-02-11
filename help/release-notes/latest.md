@@ -2,9 +2,9 @@
 title: Visa den aktuella versionsinformationen för Adobe Analytics
 description: Versionsinformation om den senaste analysen
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: a6f2e241617d118479b79d00305f7ed4dc3dfd67
+source-git-commit: 581c7888153b7fefdcadeb240d01582b3b2bd47a
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '650'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Läs om de senaste versionsuppdateringarna för [Adobe Experience Cloud-produkte
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
-| Förhandsgranskningsläge för mobilstyrda projekt | Starta en förhandsgranskning av hur ditt mobilstyrkort kommer att se ut i kontrollpanelsappen för Analytics, direkt från styrkortsverktyget. I förhandsgranskningsläget kan användarna interagera med filter och diagram på samma sätt som i appen, vilket gör att de kan förhandsgranska upplevelsen innan de sparar och delar styrkortet. Användare kan också använda enhetsväljaren i förhandsgranskningsläge för att se hur styrkortet kommer att se ut på olika enheter. | 16 februari 2022 |
+| Förhandsgranskningsläge för mobilstyrda projekt | Starta en förhandsgranskning av hur ditt mobilstyrkort kommer att se ut i kontrollpanelsappen för Analytics, direkt från styrkortsverktyget. I förhandsgranskningsläget kan användarna interagera med filter och diagram på samma sätt som i appen, vilket gör att de kan förhandsgranska upplevelsen innan de sparar och delar styrkortet. Användare kan också använda enhetsväljaren i förhandsgranskningsläge för att se hur styrkortet kommer att se ut på olika enheter. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#preview) | 16 februari 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
