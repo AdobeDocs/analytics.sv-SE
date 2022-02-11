@@ -1,21 +1,19 @@
 ---
 description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
-uuid: a37a1278-7a0d-4e14-ae35-43bc460e7d12
-translation-type: tm+mt
-source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
+source-git-commit: de059ecc9f7ec2fe7ce544ee9cd48d81ad952887
 workflow-type: tm+mt
-source-wordcount: '3642'
-ht-degree: 99%
+source-wordcount: '3906'
+ht-degree: 96%
 
 ---
 
-
 # Datasekretessetiketter för analysvariabler
 
-## Varför sätta etiketter på dina data? {#section_A075CDF3AD0744BD8CEB41CE3FB7BFB3}
+## Varför sätta etiketter på dina data? {#why-label}
 
-Många av Adobes kunder har jurister som har granskat lagarna om datasekretess (GDPR, CCPA, o.s.v.) och som har dragit sina egna slutsatser om hur data ska hanteras för att följa lagstiftningen om datasekretess. De juridiska tolkningarna kan skilja sig åt mellan olika företag och de önskade inställningarna för datahantering kan också skilja sig åt mellan olika kunder. Eftersom kunderna har olika preferenser för behandling av datasekretess och olika datauppsättningar, låter Adobe sina kunder, som personuppgiftsansvariga, att anpassa sina inställningar för databehandling i samband med datasekretess för sina unika data. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
+Många av Adobes kunder har jurister som har granskat lagarna om datasekretess (GDPR, CCPA, o.s.v.). Dessa grupper kan ha dragit egna slutsatser om hur data ska hanteras för att följa dataintegritetslagstiftningen. De juridiska tolkningarna kan skilja sig åt mellan olika företag och de önskade inställningarna för datahantering kan också skilja sig åt mellan olika kunder. Eftersom kunderna har olika preferenser för behandling av datasekretess och olika datauppsättningar, låter Adobe sina kunder, som personuppgiftsansvariga, att anpassa sina inställningar för databehandling i samband med datasekretess för sina unika data. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
 
 Adobe Analytics har verktyg som används för att etikettera data utifrån känslighet och avtalsbegränsningar. Etiketter är viktiga och användbara när det gäller att (1) identifiera registrerade, (2) fastställa vilka uppgifter som ska returneras som en del av en begäran om åtkomst och (3) identifiera datafält som måste tas bort som en del av en begäran om radering.
 
@@ -23,7 +21,7 @@ Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/f
 
 Implementering av datasekretess i Adobe Analytics stöder följande etiketter för identitetsdata, känsliga data och datastyrning.
 
-## DULE-etiketter {#section_B2E78130957647338495EF37DE21D6BC}
+## DULE-etiketter {#dule-labels}
 
 >[!NOTE]
 >
@@ -90,7 +88,7 @@ Känsliga ”S”-etiketter används för att kategorisera känsliga data som ge
 
 Etiketter för datastyrning ger användarna möjlighet att klassificera data som avspeglar sekretessrelaterade överväganden och avtalsvillkor så att de överensstämmer med regler och företagspolicyer.
 
-**Etiketter för datasekretess**
+### Etiketter för datasekretess
 
 <table id="table_663EFF43A454498386F7F3E60875E0F8"> 
  <thead> 
@@ -121,7 +119,7 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
 
 Även om få variabler mottar någon av de andra etiketterna, förväntas åtkomstetiketter tillämpas för många av dina variabler. Men det är upp till dig, i samråd med din juridiska avdelning, att avgöra vilka uppgifter du har samlat in som ska delas med de registrerade.
 
-**Borttagningsetiketter för datasekretess**
+### Borttagningsetiketter för datasekretess
 
 <table id="table_59DFCE4D90214CB5972BDDE5B7391B4D"> 
  <thead> 
@@ -164,7 +162,7 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
  </tbody> 
 </table>
 
-**Identitetsetiketter för datasekretess**
+### Identitetsetiketter för datasekretess
 
 <table id="table_F6BBC868457443A19A7B693BD6C55B4B"> 
  <thead> 
@@ -178,7 +176,7 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
   <tr> 
    <td colname="col1"> <p>Ingen </p> </td> 
    <td colname="col2"> <p>Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. </p> </td> 
-   <td colname="col3"> <p>Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du ska använda när du skickar in begäran om åtkomst eller borttagning via API:t för datasekretess eller användargränssnittet. </p> </td> 
+   <td colname="col3"> <p>Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du använder när du skickar in åtkomst- eller borttagningsbegäranden via [Privacy Service API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) eller användargränssnittet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID-DEVICE </p> </td> 
@@ -205,11 +203,17 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
  </tbody> 
 </table>
 
+| Etikett | Definition | Andra krav |
+| --- | --- | --- |
+| Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av de andra etiketterna om det här fältet innehåller ett ID som du använder när du skickar begäran om åtkomst eller borttagning via [Privacy Services-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) eller användargränssnittet. |
+| ID-ENHET | Det här fältet innehåller ett ID som kan användas för att identifiera en enhet för en begäran om datasekretess, men det kan inte skilja mellan olika användare av en delad enhet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du skickar begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
+| ID-PERSON | Det här fältet innehåller ett ID som kan användas för att identifiera en autentiserad användare (en viss person) för en begäran om datasekretess.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du ska skicka begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
+
 ## Ange ett namnutrymme när du anger en variabel som ID-DEVICE eller ID-PERSON {#section_F0A47AF8DA384A26BD56032D0ABFD2D7}
 
 När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att ange ett namnutrymme. Du kan antingen använda ett tidigare definierat namnutrymme eller definiera ett nytt.
 
-**Använd ett tidigare definierat namnutrymme**
+### Använd ett tidigare definierat namnutrymme
 
 Du kan välja ett av de befintliga namnutrymmena om du tidigare har tilldelat en ID-etikett till andra variabler i någon av rapportsviterna i ditt inloggningsföretag. Återanvänd namnutrymmet om den här variabeln innehåller samma typ av ID:n som andra variabler som redan är etiketterade med det här namnutrymmet och du vill söka igenom dem alla när du skickar en begäran.
 
@@ -218,7 +222,7 @@ Du kan välja ett av de befintliga namnutrymmena om du tidigare har tilldelat en
 
 ![](assets/namespace.png)
 
-**Definiera ett nytt namnutrymme**
+### Definiera ett nytt namnutrymme
 
 Du kan också definiera ett nytt namnutrymme. Strängar för namnutrymme bör även begränsas till alfanumeriska tecken, samt understreck, bindestreck och blanksteg. De konverteras till små bokstäver.
 
@@ -483,4 +487,4 @@ Det finns fem standardvariabler som innehåller tidsstämplar:
 
 Koden för att generera de filer som returneras för åtkomstbegäranden om datasekretess kräver att minst en av de tre första tidsstämpelvariablerna inkluderas i åtkomstbegäran (har en ACC-etikett som gäller för typen av begäran). Om ingen av dessa inkluderas behandlas anpassad tid för träff i UTC som om den har en ACC-ALL-etikett.
 
-Den CSV-fil på träffnivå som returneras för åtkomstbegäranden om datasekretess konverterar värdena i dessa fält från unika tidsstämplar till datum-/tidsfält i formatet ÅÅÅÅ-MM-DD TT:MM:SS (t.ex. 2018-05-01 13.49.22). I den sammanfattande HTML-filen trunkeras dessa tidsstämpelvärden så att endast datumet ÅÅÅÅ-MM-DD inkluderas, vilket minskar antalet unika värden som finns för dessa fält.
+Den CSV-fil på träffnivå som returneras för datasekretessåtkomstbegäranden konverterar värdena i dessa fält från unika tidsstämplar till datum-/tidsfält i formatet ÅÅÅ-MM-DD HH:MM:SS (t.ex. 2018-05-01 13:49:22). I den sammanfattande HTML-filen trunkeras dessa tidsstämpelvärden så att endast datumet ÅÅÅÅ-MM-DD inkluderas, vilket minskar antalet unika värden som finns för dessa fält.

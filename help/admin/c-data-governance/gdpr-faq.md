@@ -3,10 +3,10 @@ description: Vanliga frågor om datahantering i Adobe Analytics
 title: Frågor och svar
 uuid: 1cd41253-d74f-4b92-92e6-56f9afa3df85
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: de059ecc9f7ec2fe7ce544ee9cd48d81ad952887
 workflow-type: tm+mt
 source-wordcount: '1804'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 99%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Hur stöder Adobe Analytics åtkomst- och borttagningsbegäranden för slutanvändare (registrerade) som validerats av kunder (personuppgiftsansvariga)?</b> </p> </td> 
-   <td colname="col2"> <p>När olika regler för datasekretess (GDPR, CCPA) börjar gälla kommer Adobe Analytics att stödja behandling av verifierade begäranden som skickas av personuppgiftsansvariga till API:t för Experience Cloud-datasekretess för att möjliggöra en mer automatiserad process. Adobes API för datasekretess är utformat för att underlätta behandling av enskilda begäranden om rättigheter (t.ex. begäranden om åtkomst och borttagning) för våra kunders data som lagras i Adobe Experience Cloud-lösningar. Det är flexibelt och skalbart efter antalet begäranden om åtkomst till och radering av data från registrerade. Med API:t för datasekretess kan kunden även kontrollera status för hur begäranden för åtkomst till och borttagning av data uppfylls. </p> <p>Mer information finns i dokumentationen <a href="https://www.adobe.io/apis/cloudplatform/gdpr.html"> API för datasekretess. </a> </p> </td> 
+   <td colname="col2"> <p>När olika regler för datasekretess (GDPR, CCPA) börjar gälla kommer Adobe Analytics att stödja behandling av verifierade begäranden som skickas av personuppgiftsansvariga till API:t för Experience Cloud-datasekretess för att möjliggöra en mer automatiserad process. Adobes API för datasekretess är utformat för att underlätta behandling av enskilda begäranden om rättigheter (t.ex. begäranden om åtkomst och borttagning) för våra kunders data som lagras i Adobe Experience Cloud-lösningar. Det är flexibelt och skalbart efter antalet begäranden om åtkomst till och radering av data från registrerade. Med Privacy Services-API:t kan kunden också kontrollera status för hur förfrågningar om dataåtkomst och borttagning uppfylls. </p> <p>Mer information finns i <a href="https://developer.adobe.com/experience-platform-apis/references/privacy-service/"> Privacy Services-API-dokumentation. </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Vem ansvarar för att ta emot, godkänna och uppfylla begäranden om datasekretess från slutanvändare?</b> </p> </td> 
