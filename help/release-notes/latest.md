@@ -1,10 +1,10 @@
 ---
-title: Visa den aktuella versionsinformationen för Adobe Analytics
-description: Versionsinformation om den senaste analysen
+title: Versionsinformation om den senaste analysen
+description: Se versionsinformationen för Adobe Analytics.
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 581c7888153b7fefdcadeb240d01582b3b2bd47a
+source-git-commit: 511e3f4c621137d76b40fcc04ea849a0bba9e3fa
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '673'
 ht-degree: 5%
 
 ---
@@ -24,6 +24,7 @@ Läs om de senaste versionsuppdateringarna för [Adobe Experience Cloud-produkte
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
 | Förhandsgranskningsläge för mobilstyrda projekt | Starta en förhandsgranskning av hur ditt mobilstyrkort kommer att se ut i kontrollpanelsappen för Analytics, direkt från styrkortsverktyget. I förhandsgranskningsläget kan användarna interagera med filter och diagram på samma sätt som i appen, vilket gör att de kan förhandsgranska upplevelsen innan de sparar och delar styrkortet. Användare kan också använda enhetsväljaren i förhandsgranskningsläge för att se hur styrkortet kommer att se ut på olika enheter. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#preview) | 16 februari 2022 |
+| API-projektslutpunkt | Lägg till, redigera eller ta bort Analysis Workspace-projekt med API:t. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/projects/) | 1 feb 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -35,11 +36,9 @@ Läs om de senaste versionsuppdateringarna för [Adobe Experience Cloud-produkte
 * Ett problem med långsamma rapporteringstider har korrigerats. (AN-280055)
 * Problem med klassificeringar som inte klassificerar alla dimensionsobjekt har korrigerats. (AN-280031)
 
-
 ### Ytterligare korrigeringar i Adobe Analytics
 
 AN-268093, AN-273820, AN-274435, AN-274904, AN-275356, AN-275947, AN-276160, AN-0 276258, AN-276705, AN-277051, AN-277957, AN-278693, AN-278882, AN-279000, AN-2 79046, AN-279362, AN-279460, AN-279488, AN-279554, AN-279572, AN-279663, AN-27 9755, AN-279825, AN-280002, AN-280013, AN-280019, AN-280033, AN-280086, AN-280 232, AN-280264, AN-280288, AN-280342, AN-280347, AN-280360, AN-280370, AN-2807 24, AN-280830, AN-280941, AN-281353, AN-281424, AN-281533
-
 
 ## Viktiga meddelanden för [!DNL Analytics]-administratörer
 
@@ -55,4 +54,3 @@ De senaste uppdateringarna av AppMeasurement-versioner (version 2.2.4) finns i [
 
 >[!MORELIKETHIS]
 >[[!DNL Customer Journey Analytics] versionsinformation](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=en)
-
