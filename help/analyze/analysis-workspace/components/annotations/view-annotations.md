@@ -2,13 +2,13 @@
 title: Visa anteckningar
 description: Så här visar du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: 0985a31596103a0325509a66a6bde7688e24e9bd
+exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
+source-git-commit: 37de8752b5467cd30969fee35efa78de2941f963
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
-
 
 # Visa anteckningar
 
@@ -34,3 +34,9 @@ Anteckningarna visas något annorlunda beroende på om de sträcker sig över en
 Eftersom du inte kan hovra över ikoner i en PDF-fil innehåller den här filen (efter exporten) förklaringar längst ned på panelen. Här är ett exempel:
 
 ![](assets/ann-pdf.png)
+
+## Visa anteckningar som inte är baserade på datum
+
+Ibland är anteckningen inte knuten till ett datum, utan kopplad till en viss dimension. I så fall visas de bara i en sammanfattningsanteckning i det nedre högra hörnet. Här är ett exempel:
+
+![](assets/non-date.png)
