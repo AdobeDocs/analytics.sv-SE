@@ -3,7 +3,8 @@ title: Översikt över anteckningar
 description: Så här använder du anteckningar i Workspace.
 role: User, Admin
 solution: Analytics
-source-git-commit: 6b5fd4e25056d7efbf3119a4d55d2e0a7897965f
+exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
+source-git-commit: 38170806d0fbf6ae373ae089872f8d25306f416e
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -18,7 +19,9 @@ ht-degree: 0%
 
 Med anteckningar kan ni effektivt kommunicera kontextuella datanunkter och insikter till organisationen. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden. Du kan anteckna ett datum eller datumintervall med kända dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden.
 
-Anta att du delar projekt som du har skapat med din organisation. Du märker en dip eller en topp i trafik eller andra data, och du kopplar en anteckning till de mått, dimensioner eller segment som påverkas. Dessa kommentarer visas sedan i en tabell eller en radvisualisering och ger datakontext för dig och konsumenterna i dina Workspace-projekt.
+Anta att du delar projekt med din organisation. Om trafiken har ökat avsevärt på grund av ett försäljningsevenemang kan du skapa en kommentar om startdatum för kampanj och ange den som omfattning för hela rapportsviten. När användarna visar datauppsättningar som innehöll det datumet, skulle de se anteckningen i sina projekt, tillsammans med sina data.
+
+![](assets/multi-day.png)
 
 Tänk på detta:
 

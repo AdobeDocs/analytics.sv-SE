@@ -2,13 +2,13 @@
 title: Skapa anteckningar
 description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
-source-git-commit: 6b5fd4e25056d7efbf3119a4d55d2e0a7897965f
+exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
+source-git-commit: 0bdf0a111f2b30dda7afe283709f073e549c5f17
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
-
 
 # Skapa anteckningar
 
@@ -16,19 +16,17 @@ ht-degree: 0%
 >
 >Den här funktionen är för närvarande i begränsad testning.
 
-1. Du kan skapa anteckningar på fyra sätt:
+1. Du kan komma igång på flera sätt för att skapa anteckningar:
 
-   * Gå till [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Annotation]. Sidan Annotations Manager öppnas. Klicka [!UICONTROL Create New Annotation] och Annotation Builder öppnas.
+| Skapandemetod | Detaljer |
+| --- | --- |
+| **Gå till [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Annotation].** | Sidan Annotations Manager öppnas. Klicka [!UICONTROL Create New Annotation] och [!UICONTROL Annotation builder] öppnas. |
+| **Högerklicka på en punkt i en tabell.** | [!UICONTROL The Annotation builder] öppnas. Observera att som standard visas anteckningar som skapats på det här sättet bara i det projekt där de skapades. Men du kan göra dem tillgängliga för alla projekt. Lägg även märke till att datum och mätvärden redan har fyllts i.<p>![](assets/annotate-table.png) |
+| **Högerklicka på en punkt i en [!UICONTROL Line] diagram.** | The [!UICONTROL Annotation builder] öppnas. Observera att som standard visas anteckningar som skapats på det här sättet bara i det projekt där de skapades. Men du kan göra dem tillgängliga för alla projekt. Lägg även märke till att datum och mätvärden redan har fyllts i.<p>![](assets/annotate-line.png) |
+| **Gå till [!UICONTROL Components] > [!UICONTROL Create annotation].** | The [!UICONTROL Annotation builder] öppnas. |
+| **Använd den här snabbtangenten** för att öppna Annotation Builder: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Observera, att när du använder snabbtangenten för att skapa en anteckning, skapar du en endagarsanteckning för det aktuella datumet, utan något förvalt omfång (mått eller mått). |
 
-   * Högerklicka på en punkt i en tabell eller ett linjediagram. Anteckningsverktyget öppnas. Observera att som standard visas anteckningar som skapats på det här sättet bara i det projekt där de skapades. Men du kan göra dem tillgängliga för alla projekt.
-
-   * Gå till [!UICONTROL Components] > [!UICONTROL Create annotation]. Anteckningsverktyget öppnas.
-
-   * Använd den här snabbtangenten för att öppna Anteckningsverktyget:
-      * (PC) `ctrl` `shift` + o
-      * (Mac) `shift` + `command` + o
-
-1. Fyll i elementen i Anteckningsverktyget.
+1. Fyll i [!UICONTROL Annotation builder] -element.
 
    ![](assets/ann-builder.png)
 
@@ -39,33 +37,8 @@ ht-degree: 0%
    | [!UICONTROL Tags] | (Valfritt) Ordna anteckningar genom att skapa eller använda en tagg. |
    | [!UICONTROL Applied date] | Välj det datum eller datumintervall som måste finnas för att anteckningen ska kunna visas. |
    | [!UICONTROL Color] | Använd en färg på anteckningen. Anteckningen visas i projektet med den valda färgen. Färg kan användas för att kategorisera anteckningar, t.ex. allmänna helgdagar, externa händelser, spårningsproblem. |
-   | [!UICONTROL Scope] | (Valfritt) Dra och släpp mätvärdena som utlöser anteckningen. Dra och släpp sedan de dimensioner eller segment som fungerar som filter (d.v.s. som anteckningen ska vara synlig med). Om du inte anger ett omfång kommer anteckningen att gälla för alla dina data.<ul><li>**[!UICONTROL Any of these metrics are present]**: Dra och släpp upp till 10 mätvärden som utlöser den anteckning som ska visas.</li><li>**[!UICONTROL With all of these filters]**: Dra och släpp upp till 10 dimensioner eller segment som ska filtreras när anteckningen visas.</li></ul><p>Användningsexempel: En eVar har slutat samla in data för ett visst datumintervall. Dra eVar till **[!UICONTROL Any of these metrics are present]** -dialogrutan. Eller [!UICONTROL Visits] inga data rapporteras. Följ samma process. |
+   | [!UICONTROL Scope] | (Valfritt) Dra och släpp mätvärdena som utlöser anteckningen. Dra och släpp sedan de dimensioner eller segment som fungerar som filter (d.v.s. som anteckningen ska vara synlig med). Om du inte anger ett omfång kommer anteckningen att gälla för alla dina data.<ul><li>**[!UICONTROL Any of these metrics are present]**: Dra och släpp upp till 10 mätvärden som utlöser den anteckning som ska visas.</li><li>**[!UICONTROL With all of these filters]**: Dra och släpp upp till 10 dimensioner eller segment som ska filtreras när anteckningen visas.</li></ul><p>Användningsexempel: En eVar har slutat samla in data för ett visst datumintervall. Dra eVar till **[!UICONTROL Any of these metrics are present]** -dialogrutan. Eller [!UICONTROL Visits] inga data rapporteras. Följ samma process.<p>**Obs!** Alla anteckningar som tillämpas på en komponent som sedan används som en del av ett beräknat mått eller en segmentdefinition ärver INTE automatiskt anteckningen. Det önskade beräknade måttet måste också läggas till i omfångsavsnittet för att anteckningen ska kunna visas. En ny anteckning bör dock skapas för alla segment som du vill kommentera med samma information. Exempel: Du kan använda en anteckning på [!UICONTROL Orders] på en viss dag. Sedan använder du [!UICONTROL Orders] i ett beräknat mått för samma datumintervall. Det nya beräknade måttet visar inte automatiskt anteckningen för order - en ny anteckning för det beräknade måttet måste skapas. |
    | [!UICONTROL Apply to all report suites] | Som standard gäller anteckningen för den ursprungliga rapportsviten. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla rapportsviter i företaget. |
    | [!UICONTROL Apply to all projects] | Som standard gäller anteckningen det aktuella projektet. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla projekt som du äger. Observera att den här kryssrutan bara visas när du startar Anteckningsverktyget från Anteckningsverktyget? |
 
-1. Klicka på [!UICONTROL Save].
-
-## Skapa anteckningar från en [!UICONTROL Line] diagram
-
-1. Från en [!UICONTROL Line] välj en dip eller en spik i [!UICONTROL Line] och högerklicka på det. En popup som anropas **[!UICONTROL Annotate selection]** visas.
-
-   ![](assets/annotate-line.png)
-
-1. Klicka på **[!UICONTROL Annotate selection]**. Anteckningsverktyget öppnas.
-
->[!NOTE]
->
->Observera anteckningen som endast gäller för projektet. Markera kryssrutan om du vill att anteckningen ska vara tillgänglig för alla dina projekt.
-
-1. Fyll i uppgifterna enligt ovan. Observera att datumet/datumen och eventuella mätvärden osv. redan har fyllts i.
-
-## Skapa en anteckning inifrån en frihandsritabell
-
-1. Fortsätt som för ett linjediagram, men högerklicka på en rad i tabellen som behöver kommenteras.
-
-1. Välj **[!UICONTROL Create annotation from selection]**.
-
-   ![](assets/annotate-table.png)
-
-1. Fyll i uppgifterna enligt ovan. Observera att datumet/datumen och eventuella mätvärden osv. redan har fyllts i.
-
+1. Klicka på **[!UICONTROL Save]**.
