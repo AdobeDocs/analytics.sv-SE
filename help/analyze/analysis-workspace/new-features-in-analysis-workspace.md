@@ -5,10 +5,10 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: cd93db4c83e93863f1e2fe6f6d258a1073bd0823
+source-git-commit: c818db35524d6c0d416ee2560943526f19842c5e
 workflow-type: tm+mt
-source-wordcount: '8174'
-ht-degree: 88%
+source-wordcount: '8164'
+ht-degree: 87%
 
 ---
 
@@ -548,7 +548,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bidragsanalys: <a href="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html"  >Tokenavisering</a> </p> </td> 
-   <td colname="col2"> <p>Om företaget har ett begränsat antal tokens för bidragsanalys visas nu en avisering i gränssnittet för Analysis Workspace när du konsumerar en token. Du får då veta hur många tokens ni har kvar.  </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa tokens genom att redigera gruppbehörigheten. Tillståndet kallas"Anomaly Detection and Contribution Analysis" under <span class="uicontrol"> Analyser </span> &gt; <span class="uicontrol"> Administratör </span> &gt; <span class="uicontrol"> Alla administratörer </span>  &gt; <span class="uicontrol"> Användarhantering </span>&gt; <span class="uicontrol"> Redigera grupper </span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> Anpassa Report Suite-verktyg </span> &gt; <span class="uicontrol"> verktyg och rapporter </span>. )  </p> </td> 
+   <td colname="col2"> <p>Om företaget har ett begränsat antal tokens för bidragsanalys visas nu en avisering i gränssnittet för Analysis Workspace när du konsumerar en token. Du får då veta hur många tokens ni har kvar. </p> <p>(Administratörsanvändare: Du kan begränsa vem som kan använda dessa tokens genom att redigera gruppbehörigheten. Tillståndet kallas"Anomaly Detection and Contribution Analysis" under <span class="uicontrol"> Analyser </span> &gt; <span class="uicontrol"> Administratör </span> &gt; <span class="uicontrol"> Alla administratörer </span>  &gt; <span class="uicontrol"> Användarhantering </span>&gt; <span class="uicontrol"> Redigera grupper </span> &gt; <span class="uicontrol"> Redigera all rapportåtkomst </span> &gt; <span class="uicontrol"> Anpassa Report Suite-verktyg </span> &gt; <span class="uicontrol"> verktyg och rapporter </span>. ) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CSV-filer med multibyte-tecken </p> </td> 
@@ -598,7 +598,7 @@ Nya funktioner som släpptes 26 oktober 2017.
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/map-visualization.md"  > Kartvisualisering </a> </p> </td> 
-   <td colname="col2"> <p>Med den nya kartvisualiseringen kan du enkelt visa kundinteraktioner i deras rätta sammanhang. Från en makrovy (global) till en mikrovy (stad) kan du enkelt zooma in och ut ur olika hierarkinivåer i visualiseringen för att se användargrupper i olika regioner. </p> <p>Du kan visualisera platsdata via IP-adresser (för icke-mobila datauppsättningar) eller åskådliggöra latitud- och longituddata (för kunder som använder SDK:et för mobiler) i Analysis Workspace.  </p> </td> 
+   <td colname="col2"> <p>Med den nya kartvisualiseringen kan ni enkelt se kundinteraktionen i det sammanhang där de befinner sig. Från en makrovy (global) till en mikrovy (stad) kan du enkelt zooma in och ut ur olika hierarkinivåer i visualiseringen för att se användargrupper i olika regioner. </p> <p>Du kan visualisera platsdata via IP-adressen (för icke-mobila datauppsättningar) eller så kan du ge latitud- och longituddata (för kunder som använder Mobile SDK) liv i Analysis Workspace. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/line.md"  > Nivåväljare för trendvisualiseringar </a> </p> </td> 
