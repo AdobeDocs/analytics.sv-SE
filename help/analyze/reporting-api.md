@@ -5,16 +5,16 @@ uuid: 68ec3490-6e47-4606-860d-dd5e89c574a1
 feature: API
 role: Developer
 exl-id: 003a8b83-6ef0-4313-903a-b76078558d55
-source-git-commit: a9d892ab8caaeb797fbbd9b5aa136c5dab76f8bd
+source-git-commit: 44b869a269fdf3a52d8ef132787a66a8284cf6c3
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 13%
+source-wordcount: '133'
+ht-degree: 12%
 
 ---
 
 # API för Analytics-rapportering
 
-Dokumentation för Adobe Analytics API:er finns på [Adobe I/O](https://adobe.io/analytics-apis/docs).
+Dokumentationen för Adobe Analytics API:er är aktiverad [Adobe I/O](https://developer.adobe.com/analytics-apis/docs/2.0/).
 
 ## Jämförelse av API:er i Analytics
 
