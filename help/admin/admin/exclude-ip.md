@@ -2,7 +2,8 @@
 title: Exkludera efter IP-adress
 description: Förhindra att data som genereras av vissa IP-adresser visas i rapporter.
 exl-id: 315a3000-f043-434b-a677-d111aeed7971
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+feature: Admin Tools
+source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -19,11 +20,11 @@ Du kan undanta data från specifika IP-adresser, som interna webbplatsaktivitete
 >
 >Träffar som exkluderats av IP-adressen faktureras som [serveranrop](https://experienceleague.adobe.com/docs/analytics/technotes/terms.html).
 
-Du kan använda jokertecken (*) för att exkludera ett adressintervall. `[!DNL 0.0.*.0]` skulle till exempel exkludera alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
+Du kan använda jokertecken (*) för att exkludera ett adressintervall. Till exempel: `[!DNL 0.0.*.0]` utelämnar alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
 
 >[!TIP]
 >
->Privata IP-adresser behöver inte uteslutas. Endast externa IP-adresser når datainsamlingsservrar i Adobe. Privata adresser är `10.*.*.*`, `192.168.*.*`, `172.[16-31].*.*` och `169.254.*.*`.
+>Privata IP-adresser behöver inte uteslutas. Endast externa IP-adresser når datainsamlingsservrar i Adobe. Privata adresser innehåller `10.*.*.*`, `192.168.*.*`, `172.[16-31].*.*`och `169.254.*.*`.
 
 ## Inverkan av IP-missbruk {#section_51B7529FFF16449CA016FDC51D87E2CA}
 

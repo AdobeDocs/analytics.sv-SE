@@ -2,13 +2,11 @@
 description: Det här avsnittet innehåller riktlinjer för testning av bearbetningsregler och en lista över vanliga misstag som ska undvikas.
 subtopic: Processing rules
 title: Tips och tricks för regler
-feature: Admin Tools
-uuid: e3a9ff8a-b81a-41c9-9f61-e40cb4bf7d99
+feature: Processing Rules
 exl-id: e663d98b-dcfd-4420-84ac-07ddfe55a3f2
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 71b3b1937e7fa272f0497008e8e510204bbb4418
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 2%
 
 ---
@@ -27,7 +25,7 @@ Om du vill se villkor som baseras på en sökning, t.ex. om prop1 innehåller &q
 
 **Testregler som läser variabler**
 
-Skapa en tom HTML-sida på skrivbordet, ta med s_code från webbplatsen och ställ in variabeln `s.account` på en dev-rapportserie. Om dina regler baseras på en referent, refererande domän och så vidare, kan du ta några exempel-URL:er från direktreferensrapporten, ange variabeln `s.referrer` med ett av dessa värden och läsa in sidan. På samma sätt kan du ange `s.pageURL` om regeln baseras på sidans URL-värde. Samma process kan användas för alla variabler.
+Skapa en tom HTML-sida på skrivbordet, inkludera s_code från webbplatsen och ange `s.account` variabel till en dev-rapportsserie. Om dina regler baseras på en referent, refererande domän och så vidare, kan du ta några exempel på URL:er från rapporten med live-referenter och ange `s.referrer` variabel med ett av dessa värden och läser in sidan. Om regeln baseras på sidans URL-värde kan du också ange `s.pageURL`. Samma process kan användas för alla variabler.
 
 **Använda en Dev Report Suite**
 
@@ -51,7 +49,7 @@ Den här regeln bör konfigureras om så att varje kontextdatavariabel testas ef
 
 ![](assets/tips-search-keyword.png)
 
-## Koda söktermer till UTF-8 eller Unicode {#section_3BBBE1FB8FEA48589362452DE51DB575}
+## Koda sökvillkor till UTF-8 eller Unicode {#section_3BBBE1FB8FEA48589362452DE51DB575}
 
 Söktermer som hämtas från en frågesträng måste kodas korrekt, annars matchas de inte av bearbetningsregler.
 

@@ -1,14 +1,13 @@
 ---
 description: Konfigurerar flera vanliga variabler och framgångshändelser för en vanlig webbplats.
 title: Standardmall
-feature: Admin Tools
+feature: Report Suite Settings
 uuid: edcf1b97-4ff2-4e98-b84c-199af2181d68
 exl-id: 36aaded4-5c46-41af-a5c6-216bd2fcadb2
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 22%
+source-wordcount: '202'
+ht-degree: 21%
 
 ---
 

@@ -3,9 +3,8 @@ description: Custom Insight Conversion Variable (eller eVar) placeras i Adobe-ko
 keywords: eVar
 title: Konverteringsvariabler (eVar)
 feature: Admin Tools
-uuid: 1eed0cb1-0735-4142-be21-43f264216b50
 exl-id: 822ecaff-a06c-42e1-aee8-ef4a43df4230
-source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
 source-wordcount: '1525'
 ht-degree: 0%
@@ -58,7 +57,7 @@ Det finns två sätt att förfalla en eVar:
 * Du kan ange att eVar ska förfalla efter en angiven tidsperiod eller händelse.
 * Du kan använda Framtvinga förfallodatum för en eVar genom att återställa den, vilket är användbart när du återanvänder en variabel.
 
-Om du t.ex. ändrar förfallotiden för en eVar från 30 till 90 dagar, kommer de insamlade eVar att finnas kvar så länge den nya förfallotiden varar (i det här fallet 90 dagar). Systemet tittar bara på den aktuella förfalloinställningen och den sista angivna tidsstämpeln för det insamlade eVar för att avgöra förfallodatum. Endast **[!UICONTROL Reset]** förfaller värden och gör det omedelbart.
+Om du t.ex. ändrar förfallotiden för en eVar från 30 till 90 dagar, kommer de insamlade eVar att finnas kvar så länge som den nya förfallotiden gäller (i det här fallet 90 dagar). Systemet tittar bara på den aktuella förfalloinställningen och den sista angivna tidsstämpeln för det insamlade eVar för att avgöra förfallodatum. Endast **[!UICONTROL Reset]** förfaller värden och gör det omedelbart.
 
 Ett annat exempel: Om en eVar används i maj för att återspegla interna kampanjer och upphör efter 21 dagar, och i juni används den för att fånga in interna söknyckelord, bör du den 1 juni tvinga fram en förfallotid för, eller återställning av, variabeln. Om du gör det kommer det att bidra till att bevara de interna kampanjvärdena från juni-rapporterna.
 

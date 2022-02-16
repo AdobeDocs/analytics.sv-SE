@@ -1,13 +1,12 @@
 ---
 description: På sidan Traffic Management kan du ange förväntade ändringar av trafikvolymen. Med de här inställningarna kan Adobe tilldela lämpliga resurser för att säkerställa att trafiken kan spåras och behandlas i tid.
 title: Hantera trafik
-feature: Administratörsverktyg
-uuid: c1be90d3-f8f8-40a5-a93f-9af312a34828
+feature: Traffic Management
 exl-id: 7a7a36f2-3241-47f5-9c0f-0d62e51104e1
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 8%
+source-wordcount: '79'
+ht-degree: 6%
 
 ---
 
@@ -15,8 +14,8 @@ ht-degree: 8%
 
 På sidan Traffic Management kan du ange förväntade ändringar av trafikvolymen. Med de här inställningarna kan Adobe tilldela lämpliga resurser för att säkerställa att trafiken kan spåras och behandlas i tid.
 
-Så här kommer du åt [!UICONTROL Traffic Management]:
+För åtkomst [!UICONTROL Traffic Management]:
 
-1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]** och välj sedan en rapportserie.
+1. Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]** väljer du sedan en rapportserie.
 
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic Management]** > *`<selection>`*.

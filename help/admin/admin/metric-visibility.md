@@ -1,19 +1,21 @@
 ---
 description: Du kan dölja standardvärden (inbyggda), anpassade händelser och inbyggda händelser i Menu, Metric Selectors, Calculated Metric Builder och Segment Builder.
 title: Måttsynlighet
-uuid: fa2d6cba-8e03-422d-9f7d-4f35021fa9b4
-translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+feature: Admin Tools
+exl-id: 8ff06677-a9fc-4a12-bf8d-8a7ce05db922
+source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 9%
 
 ---
-
 
 # Måttsynlighet
 
 Du kan dölja standardvärden (inbyggda), anpassade händelser och inbyggda händelser i Menu, Metric Selectors, Calculated Metric Builder och Segment Builder.
 
-1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Success Events]**. [Mer ...](/help/admin/admin/c-success-events/t-success-events.md)
-1. Ställ in synlighetskolumnen på antingen **[!UICONTROL Visible Everywhere]**, **[!UICONTROL Builders]** eller **[!UICONTROL Hidden Everywhere]**.
+1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Success Events]**. [Mer...](/help/admin/admin/c-success-events/t-success-events.md)
+1. Ställ in synlighetskolumnen på antingen **[!UICONTROL Visible Everywhere]**, **[!UICONTROL Builders]**, eller **[!UICONTROL Hidden Everywhere]**.
 
 Denna inställning påverkar inte datainsamlingen för detta mätresultat. påverkar bara synligheten i användargränssnittet. Så här påverkar inställningarna synligheten för måtten i användargränssnittet:
 
@@ -63,4 +65,3 @@ Denna inställning påverkar inte datainsamlingen för detta mätresultat. påve
   </tr> 
  </tbody> 
 </table>
-

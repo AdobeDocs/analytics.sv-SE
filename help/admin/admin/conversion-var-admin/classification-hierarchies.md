@@ -3,13 +3,11 @@ description: På sidan Klassificeringshierarkier kan du definiera klassificering
 subtopic: Classifications
 title: Klassificeringshierarkier
 feature: Admin Tools
-uuid: 1b2b73af-84ea-4b90-b4a5-ba75235547fb
 exl-id: 19907e24-9624-4d30-a6c2-b5f8c9e9eb24
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 5%
+source-wordcount: '276'
+ht-degree: 4%
 
 ---
 
@@ -19,9 +17,9 @@ På sidan Klassificeringshierarkier kan du definiera klassificeringshierarkier s
 
 ## Klassificeringshierarkier {#concept_10A956342D7D4C3E9114CCFCE1364741}
 
-På sidan [!UICONTROL Classification Hierarchies] kan du definiera klassificeringshierarkier som du kan använda för att skapa [!UICONTROL Hierarchy]-rapporter med samma namn.
+The [!UICONTROL Classification Hierarchies] kan du definiera klassificeringshierarkier som du kan använda för att skapa [!UICONTROL Hierarchy] rapporter med samma namn.
 
-Med en [!UICONTROL Hierarchy]-rapport kan du fördjupa dig i allt mer förfinade datauppsättningar, baserat på klassificeringshierarkin, så att du enklare kan visa datarelationer.
+A [!UICONTROL Hierarchy] kan du fördjupa dig i allt mer förfinade datauppsättningar, baserat på klassificeringshierarkin, så att du enklare kan visa datarelationer.
 
 Du kan skapa klassificeringshierarkier för webbsidor, kampanjer, produkter eller andra rapportvariabler. Hierarkirapporten visar enheter, order och intäkter för var och en av de variabla klassificeringarna i hierarkin.
 
@@ -34,10 +32,10 @@ Skapa klassificeringarna innan du lägger till dem i en hierarki.
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välja en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Classification Hierarchies]**.
-1. I listrutan **[!UICONTROL Build Hierarchy For]** väljer du variabeln där du vill skapa en klassificeringshierarki.
+1. Från **[!UICONTROL Build Hierarchy For]** väljer du variabeln där du vill skapa en klassificeringshierarki.
 
    Klassificeringslistan visar automatiskt de klassificeringar som är tillgängliga för den valda variabeln.
-1. Dra en klassificering till fältet **[!UICONTROL Drag new hierarchy root here]** för att inkludera den i klassificeringshierarkin.
+1. Dra en klassificering till **[!UICONTROL Drag new hierarchy root here]** -fält som ska inkluderas i klassificeringshierarkin.
 
    Dra klassificeringarna till hierarkin i den ordning som du vill att de ska visas i hierarkin. Den första klassificeringen är hierarkiroten, den andra klassificeringen är den första underklassificeringen och så vidare.
 1. Klicka på **[!UICONTROL Save]**.

@@ -1,9 +1,9 @@
 ---
 description: Fliken Report Suite-användning innehåller serveranvändningsdata för varje rapportsvit i alla inloggningsföretag som är kopplade till ditt faktureringsföretag, för den aktuella användningsperioden.
 title: Visa användning av rapportsvit
-uuid: c609ed99-9acc-4023-905a-81a40dd07a79
+feature: Server Call Usage
 exl-id: bedd4ed8-1c8b-45fd-a059-fed88e9fbe73
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Kontrollpanelen för användning av Report Suite
 * Visar procentandel av den totala användningen per kategori för serversamtal.
 * Uppdateras dagligen.
 * Kan laddas ned.
-* Gör att du kan komma åt användargränssnittet för **[!UICONTROL Manage Alerts]**.
+* Ger åtkomst till **[!UICONTROL Manage Alerts]** Gränssnitt.
 
 ![](assets/report-suite-usage.png)
 
@@ -53,8 +53,8 @@ Med det här alternativet kan du hämta aktuella användningsdata och data från
 |--- |--- |
 | Filnamn | Hårdkodat namn: Användningsrapport `day and time of report creation.csv` |
 | Inkluderade rapportsviter | Alla rapportsviter som du har valt på sidan Report Server-användning ingår i den här listan. |
-| Inkluderade samtalstyper | Ange en kombination av dessa:  Alla samtal (standard), primära, sekundära, primära, primära, sekundära, mobila. |
-| Tidsintervall | Du kan välja den aktuella användningsperioden eller ange ett anpassat intervall.  Ange intervallstart och intervallslut för ett anpassat intervall. <br>**Obs!** Du kan inte hämta användningsdata före januari 2015  </br>. |
+| Inkluderade samtalstyper | Ange en kombination av dessa: Alla samtal (standard), primära, sekundära, primära, primära, sekundära, mobila. |
+| Tidsintervall | Du kan välja den aktuella användningsperioden eller ange ett anpassat intervall.  Ange intervallstart och intervallslut för ett anpassat intervall. <br>**Obs!** Du kan inte hämta användningsdata före januari 2015 </br>. |
 
 1. Klicka på **[!UICONTROL Download]**.
 

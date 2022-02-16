@@ -1,9 +1,9 @@
 ---
 description: Visar API:er som påverkas av användarmigreringen
 title: API:er som påverkas av användarmigreringen
-uuid: 9a5d43be-e146-476b-961e-49ea0a30b500
+feature: Admin Tools
 exl-id: 82d0a1cd-1e25-4157-9bb9-bba1049fdc48
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: 0143496648e59e95c360388735def726e63ee71b
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # API:er som påverkas av användarmigreringen{#apis-affected-by-the-migration}
 
-Adobe migrerar alla inloggningsföretag för Analytics från [!DNL my.omniture.com] och till autentisering via Adobe Experience Cloud. När ett företag väl har påbörjat migreringen stöds inte längre programmatiska användargenereringar och hantering via de Analytics-specifika behörigheterna och `GetLoginKey`-metoder som är tillgängliga via v1.3 och v1.4 i API:t för Analytics Admin. Sådana åtgärder kommer nu att aktiveras över hela Experience Cloud via [!DNL adobe.io].
+Adobe migrerar alla inloggningsföretag för Analytics på ett sätt från [!DNL my.omniture.com] och på autentisering via Adobe Experience Cloud. När ett företag väl har påbörjat migreringen skapar och hanterar man programmatiska användare med de analysspecifika behörigheterna och `GetLoginKey` metoder som är tillgängliga via v1.3 och v1.4 i API:t för Analytics Admin stöds inte längre. Sådana åtgärder kommer nu att aktiveras i hela Experience Cloud via [!DNL adobe.io].
 
 ## API-metoder som påverkas {#section-d19051ac26cc49aeb124f767c4760254}
 

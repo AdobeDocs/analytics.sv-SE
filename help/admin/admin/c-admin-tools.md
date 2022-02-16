@@ -1,15 +1,14 @@
 ---
 description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
-uuid: 6961e956-14ea-4367-bdbd-eb0bcc456aae
-translation-type: tm+mt
-source-git-commit: 78f67c6a58395fb9520384094c13514ef29669d2
+feature: Admin Tools
+exl-id: 1f31749f-10ce-4cff-81fb-141b37824c5f
+source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 34%
 
 ---
-
 
 # Administratörsverktyg
 

@@ -1,13 +1,12 @@
 ---
 description: Med avsnitten Permanent trafik kan du ändra förväntade trafiknivåer så att Adobe kan omfördela resurser för att hantera den nya trafiknivån.
 title: Ange permanent trafikökning
-feature: Administratörsverktyg
-uuid: 53acbe97-7f63-4608-b2f3-bd885eae7e6d
+feature: Traffic Management
 exl-id: a1e2bc5c-4443-4c88-8b6c-cc320c689c99
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 9%
+source-wordcount: '152'
+ht-degree: 8%
 
 ---
 
@@ -15,15 +14,15 @@ ht-degree: 9%
 
 Med avsnitten Permanent trafik kan du ändra förväntade trafiknivåer så att Adobe kan omfördela resurser för att hantera den nya trafiknivån.
 
-Läs informationen om [Begärd ledtid för trafikökningar](/help/admin/c-traffic-management/traffic-lead-time.md) innan du anger en permanent trafikökning.
+Läs informationen om [Ledtid som krävs för trafikökningar](/help/admin/c-traffic-management/traffic-lead-time.md) innan du anger en permanent trafikökning.
 
 1. Öppna Report Suite Manager genom att klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]**.
 1. Välja en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic Management]** > **[!UICONTROL Permanent Traffic]**.
-1. I fältet **[!UICONTROL New Expected Daily Page Views]** anger du den totala förväntade dagliga sidvisningen för den nya trafiknivån.
+1. I **[!UICONTROL New Expected Daily Page Views]** anger du den totala förväntade dagliga sidvisningen för den nya trafiknivån.
 
    Se till att du anger det totala antalet förväntade sidvyer, inte bara ytterligare sidvyer.
-1. I fältet **[!UICONTROL Effective Date]** anger du det datum då du förväntar att den nya trafiknivån ska starta och klickar sedan på **[!UICONTROL Submit]**.
+1. I **[!UICONTROL Effective Date]** anger du det datum då du förväntar dig att den nya trafiknivån ska starta och klickar sedan på **[!UICONTROL Submit]**.
 
    >[!NOTE]
    >

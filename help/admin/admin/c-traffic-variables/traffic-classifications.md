@@ -3,13 +3,11 @@ description: Trafikklassificeringar gör att du kan klassificera trafikvariabler
 subtopic: Classifications
 title: Trafikklassificeringar
 feature: Admin Tools
-uuid: 091bec9b-98ff-4d67-b789-e51c2712839f
 exl-id: 320d7dcb-7fb7-4360-96dd-d2d5bd0bfdd5
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 8%
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +21,7 @@ Trafikklassificeringar gör att du kan klassificera trafikvariabler (props). Tra
 
 På sidan Trafikklassificeringar kan du skapa klassificeringar för de valda rapportsviterna. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med de associerade attributen.
 
-När du har aktiverat klassificeringar använder du [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) för att tilldela specifika värden till rätt klassificering.
+När du har aktiverat klassificeringar kan du använda [Klassificeringsimporteraren](/help/components/classifications/importer/c-working-with-saint.md) att tilldela specifika värden till lämplig klassificering.
 
 ## Lägg till en trafikklassificering {#task_4DB49CCB1D764483907BC33A5CEB7315}
 
@@ -35,15 +33,15 @@ t_classification_add_traffic.xml
 
 Steg som beskriver hur du lägger till eller redigerar klassificeringar för de valda rapportsviterna.
 
-1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** i Suite-huvudet.
+1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** i rubriken Suite.
 1. Välja en rapportsvit.
-1. I fältet **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
+1. I **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic Classifications]**.
 
    ![Steginformation](../assets/traffic-classification.png)
 
-1. För musen över ikonen **[!UICONTROL Edit Classification]** och välj sedan **[!UICONTROL Add Classification]** eller **[!UICONTROL Edit Classification]**.
-1. Konfigurera klassificeringen enligt dina önskemål i dialogrutan **[!UICONTROL Text Classification]**:
+1. För musen över **[!UICONTROL Edit Classification]** ikon och sedan välja **[!UICONTROL Add Classification]** eller **[!UICONTROL Edit Classification]**.
+1. I **[!UICONTROL Text Classification]** konfigurerar du klassificeringen efter behov:
 
    **[!UICONTROL Name:]** Ange klassificeringsnamnet.
 

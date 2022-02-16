@@ -2,13 +2,11 @@
 description: Med Custom Insight Traffic Variables (eller props) kan du korrelera anpassade data med specifika trafikrelaterade händelser. Propvariablerna är inbäddade i implementeringskoden på varje sida på webbplatsen.
 title: Översikt över trafikvariabeln (prop)
 feature: Admin Tools
-uuid: 5d62b19e-9fea-4489-8a80-1ebb317f5a78
 exl-id: b05dbd33-b298-41a0-9474-e015ba5bc23c
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 9%
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 
@@ -16,6 +14,6 @@ ht-degree: 9%
 
 Med Custom Insight Traffic Variables (eller props) kan du korrelera anpassade data med specifika trafikrelaterade händelser. Propvariablerna är inbäddade i implementeringskoden på varje sida på webbplatsen.
 
-Använd sidan [!UICONTROL Traffic Variables] för att aktivera, inaktivera eller byta namn på trafikvariabelrapporter. När den är inaktiverad visas inte rapporten för en trafikvariabel i användargränssnittet.
+Använd [!UICONTROL Traffic Variables] sida för att aktivera, inaktivera eller byta namn på trafikvariabelrapporter. När den är inaktiverad visas inte rapporten för en trafikvariabel i användargränssnittet.
 
-Se även [prop](../../../implement/vars/page-vars/prop.md) i Användarhandboken för implementering.
+Se även [prop](../../../implement/vars/page-vars/prop.md) i Implementeringshandboken.

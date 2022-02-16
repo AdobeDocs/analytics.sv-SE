@@ -2,12 +2,10 @@
 description: Valutakoder som används i Experience Cloud.
 title: Valutakoder
 feature: Admin Tools
-uuid: 73c7476b-f09c-4459-8e72-da6fa85ff533
 exl-id: 8c9a2216-3259-4fdb-b09f-c724fa4c70b7
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -137,7 +135,7 @@ Valutakoder som används i Experience Cloud.
 | PKR | Pakistan Rupes |
 | PLN | Polen Zlotych |
 | PYG | Paraguay Warri |
-| SAR | Qatar Riyals |
+| QAR | Qatar Riyals |
 | ROL | Rumänien Lei |
 | RUR | Ryssland |
 | RWF | Rwandfranc |
@@ -181,9 +179,9 @@ Valutakoder som används i Experience Cloud.
 | XAU | Guld |
 | XCD | Östkaribiska dollar |
 | XDR | Internationella valutafondens särskilda teckningsrättigheter |
-| XOF | Communaut順 inanci貥 africaine Francs BCEAO |
+| XOF | Kommunaut順inanci貥 Africaine Francs BCEAO |
 | XPD | Palladium Ounces |
-| XPF | Comptoirs Fran硩 s du Pacific Francs |
+| XPF | Comptoirs Fran硩s du Pacific Francs |
 | XPT | Platinum Ounes |
 | YER | Jemen-rialer |
 | ZAR | Sydafrika, Rand |

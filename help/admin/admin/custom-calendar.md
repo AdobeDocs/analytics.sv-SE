@@ -1,12 +1,11 @@
 ---
 description: Kalenderalternativ i andra format än den gregorianska modellen. Alternativen är kalendermodellerna 4-4-5, 4-5-4 och 5-4-4, som alla används som standard för detaljhandeln. Dessutom erbjuder rapportering ett alternativ för en helt anpassningsbar kalender som du kan konfigurera själv.
 title: Anpassa kalender
-feature: Administratörsverktyg
-uuid: 4e5e538b-54c9-4c2f-8b6c-9f91b6c7bcc7
+feature: Admin Tools
 exl-id: 2196c7b7-7183-43a8-bb91-5a1e479819d4
-source-git-commit: 16d762e9d327153737ab25a4a56cf4830c777479
+source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 Kalenderalternativ i andra format än den gregorianska modellen. Alternativen är kalendermodellerna 4-4-5, 4-5-4 och 5-4-4, som alla används som standard för detaljhandeln. Dessutom erbjuder rapportering ett alternativ för en helt anpassningsbar kalender som du kan konfigurera själv.
 
-**[!UICONTROL Admin]** >  **[!UICONTROL Report Suites]** > Välj rapportserie >  **[!UICONTROL Edit Settings]** >  **[!UICONTROL General]** >  **[!UICONTROL Customize Calendar]**
+**[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > Välj rapportserie > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Customize Calendar]**
 
 >[!CAUTION]
 >

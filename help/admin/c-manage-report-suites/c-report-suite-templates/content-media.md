@@ -1,13 +1,11 @@
 ---
 description: Definierar vanliga inställningar för en webbplats som utvecklar ursprungligt innehåll och visar artiklar och videoklipp.
 title: Innehåll och media
-feature: Admin Tools
-uuid: 281b0bf8-59dc-46dc-b5d5-5e42827b785d
+feature: Report Suite Settings
 exl-id: 9983ff86-9341-4b01-b4f3-41042874a9fb
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '212'
 ht-degree: 21%
 
 ---

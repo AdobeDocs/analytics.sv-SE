@@ -1,14 +1,14 @@
 ---
 title: Vanliga robotsignaturer
 description: Identifiera vanliga identifierare för botar.
-translation-type: tm+mt
-source-git-commit: 2f4c54ec57eeddc03f0b0d12a0a7f391e36ab0fc
+feature: Admin Tools
+exl-id: 57622af6-c1d3-4ef1-b3e6-10c14f04a55c
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # Vanliga robotsignaturer
 
@@ -32,7 +32,7 @@ Vi vill inte misskreditera det fantastiska Linux-operativsystemet med öppen kä
 
 ## Sidvyer = besök = unika besökare
 
-Detta gäller särskilt användaragentrapporten. Som du ser i skärmbilden nedan har den&quot;okända versionen&quot; av dessa webbläsare nästan samma antal besökare som unika besökare (och nästan samma antal sidvisningar). Detta kan isoleras vid segmentering genom att en [!UICONTROL Include] behållare skapas för `Single Page Visits equals Enabled` eller `Hit Depth is less than 2`.
+Detta gäller särskilt användaragentrapporten. Som du ser i skärmbilden nedan har den&quot;okända versionen&quot; av dessa webbläsare nästan samma antal besökare som unika besökare (och nästan samma antal sidvisningar). Detta kan isoleras i segmenteringen genom att man bygger upp en [!UICONTROL Include] behållare för `Single Page Visits equals Enabled` eller `Hit Depth is less than 2`.
 
 ![](assets/bots-browsers-unknown.png)
 
@@ -64,7 +64,7 @@ Användaren loggar inte in på något ställe under sitt besök och användaride
 
 ## Inga nyckeltal finns på besök
 
-Bok lägger vanligtvis inte till produkter i en kundvagn eller checkar ut. Oftast skickar de inte formulär eller andra framgångshändelser, men en del botar skickar enkla HTML-formulär. &#x200B;
+Bok lägger vanligtvis inte till produkter i en kundvagn eller checkar ut. Oftast skickar de inte in blanketter för leads eller andra framgångshändelser, men vissa av dem skickar enkla HTML-blanketter. &#x200B;
 
 ## Specifik frågesträng finns
 
@@ -72,6 +72,5 @@ Ibland försöker bots att bust cache-lagra eller på annat sätt bryta webbplat
 
 ## IP-adresser som härstammar från distribuerade datorplattformar
 
-Webbhotell som Amazon Web Services eller Google Cloud kan missbrukas som båda serverparker. De här IP-adresserna löper stor risk att bli botar:
-&#x200B;
+Webbhotell som Amazon Web Services eller Google Cloud kan missbrukas som båda gårdar. De här IP-adresserna löper stor risk att bli botar: &#x200B;
 * [Google Cloud](https://cloud.google.com/compute/): IP-adressen börjar med `&#x200B;35.199` eller `35.194&#x200B;`

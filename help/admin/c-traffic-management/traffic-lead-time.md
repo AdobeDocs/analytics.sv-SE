@@ -1,14 +1,12 @@
 ---
 description: Adobe kräver förhandsmeddelande om nya kontoinställningar, trafiktoppar och trafikökningar. Maskinvara måste tilldelas i förväg för att minimera latens och eventuella negativa konsekvenser för det övergripande systemet.
 title: Ledtid som krävs för trafikökningar
-feature: Admin Tools
-uuid: aa3fb882-51b0-458f-917b-7c54d5659623
+feature: Traffic Management
 exl-id: fb428f8d-9dff-43a6-a1e8-1a892cbed7ac
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 5%
+source-wordcount: '332'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +18,7 @@ Allokering av maskinvara styrs av varningar som skickas via användargränssnitt
 
 >[!IMPORTANT]
 >
->Adobe kan inte hantera platshållartrafikändringsbegäranden. Om inget annat anges, följ den föreslagna ledtiden så nära som möjligt, inklusive att inte skicka en varning för tidigt. Se [Schemalägg en trafikspik](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) eller [Ange permanent trafikökning](/help/admin/c-traffic-management/t-traffic-permanent.md).
+>Adobe kan inte hantera platshållartrafikändringsbegäranden. Om inget annat anges, följ den föreslagna ledtiden så nära som möjligt, inklusive att inte skicka en varning för tidigt. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) eller [Ange permanent trafikökning](/help/admin/c-traffic-management/t-traffic-permanent.md).
 
 Använd följande riktlinjer för att avgöra hur långt i förväg du måste skicka in en trafikvarning:
 

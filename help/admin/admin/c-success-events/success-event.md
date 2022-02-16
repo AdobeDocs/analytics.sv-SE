@@ -3,9 +3,8 @@ description: Success-händelser är åtgärder som kan spåras. Du avgör vilken
 keywords: event
 title: Översikt över slutförda händelser
 feature: Admin Tools
-uuid: 410eee44-8960-462c-a9c3-07b44d0b1df0
 exl-id: d52a691a-8124-4601-932f-d6d2d0a7842b
-source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 2%

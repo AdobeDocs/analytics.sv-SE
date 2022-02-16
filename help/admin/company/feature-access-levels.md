@@ -1,9 +1,9 @@
 ---
 description: Så här visar du den åtkomstnivå till Adobe Analytics-paket och -funktioner som ditt företag har rätt till.
 title: Åtkomstnivåer
-uuid: bd8e457e-ac81-4ae6-b4b1-ae582a025024
+feature: Company Settings
 exl-id: 9aca4a61-d9a6-4ba1-863c-2686b73f381e
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 15%

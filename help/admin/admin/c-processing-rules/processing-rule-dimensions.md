@@ -2,13 +2,11 @@
 description: De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetningsregler.
 subtopic: Processing rules
 title: Tillgängliga dimensioner för behandlingsregler
-feature: Admin Tools
-uuid: ba73ab59-a8cf-491c-8757-5fb03d6b0745
+feature: Processing Rules
 exl-id: ffd7a1d6-2c9d-41e7-9c75-9e47b6f9c283
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 71b3b1937e7fa272f0497008e8e510204bbb4418
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '742'
 ht-degree: 3%
 
 ---
@@ -41,7 +39,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kontextdatavariabler </p> </td> 
-   <td colname="col2"> <p>Namngivna variabler som skickas med en träff. </p> <p>Obs!  Alla data i en kontextdatavariabel måste kopieras till en rapportvariabel för att visas i en rapport. Kontextdatavariabler kan inte visas i något rapporteringsgränssnitt, inklusive ClickStream-dataflöden. </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md"> Kopiera en kontextdatavariabel till en eVar  </a> </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md"> Ange en händelse med hjälp av en kontextdatavariabel  </a> </p> <p> <a href="/help/implement/vars/page-vars/contextdata.md"> Kontextdatavariabler</a> </p> </td> 
+   <td colname="col2"> <p>Namngivna variabler som skickas med en träff. </p> <p>Obs! Alla data i en kontextdatavariabel måste kopieras till en rapportvariabel för att visas i en rapport. Kontextdatavariabler kan inte visas i något rapporteringsgränssnitt, inklusive ClickStream-dataflöden. </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md"> Kopiera en kontextdatavariabel till en eVar </a> </p> <p> <a href="/help/admin/admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md"> Ange en händelse med hjälp av en kontextdatavariabel </a> </p> <p> <a href="/help/implement/vars/page-vars/contextdata.md"> Kontextdatavariabler</a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -91,19 +89,19 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sidnamn </p> </td> 
-   <td colname="col2"> <p> <code> s.pageName</code> </p> <p>Obs!  Länkspårningsanrop tar bort variabeln <code>pageName</code> innan de når bearbetningsregler. Om du infogar ett sidnamnsvärde igen med bearbetningsregler betraktas träffen som en sidvy i stället för som ett länkspårningsanrop. Adobe rekommenderar att du kontrollerar att sidnamnet redan har angetts innan du ändrar det. </p> </td> 
+   <td colname="col2"> <p> <code> s.pageName</code> </p> <p>Obs! Länkspårningsanrop tar bort <code>pageName</code> variabel innan de når bearbetningsregler. Om du infogar ett sidnamnsvärde igen med bearbetningsregler betraktas träffen som en sidvy i stället för som ett länkspårningsanrop. Adobe rekommenderar att du kontrollerar att sidnamnet redan har angetts innan du ändrar det. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sidans URL </p> </td> 
-   <td colname="col2"> <code> s.pageURL</code> eller den aktuella sidans URL om  <code> s.pageURL</code> inte anges. <p>Obs!  Länkspårningsanrop tar bort variabeln <code>pageURL</code> innan de når bearbetningsregler. Om du infogar ett URL-värde för en sida på nytt med bearbetningsregler, betraktas träffen som en sidvy i stället för som ett länkspårningsanrop. Adobe rekommenderar att du kontrollerar att sidans URL är inställd innan du ändrar den. </p></td> 
+   <td colname="col2"> <code> s.pageURL</code> eller den aktuella sidans URL om <code> s.pageURL</code> har inte angetts. <p>Obs! Länkspårningsanrop tar bort <code>pageURL</code> variabel innan de når bearbetningsregler. Om du infogar ett URL-värde för en sida på nytt med bearbetningsregler, betraktas träffen som en sidvy i stället för som ett länkspårningsanrop. Adobe rekommenderar att du kontrollerar att sidans URL är inställd innan du ändrar den. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Frågesträngsparameter </p> </td> 
-   <td colname="col2"> <p>Värdet för en angiven frågesträngsparameter i den aktuella URL:en, eller null om det inte finns någon parameter. För URL:en <b>https://www.example.com/a.html?cid=ad1&amp;node=4</b> är värdet för Query String Parameter <span class="syntax codeph"> cid</span> <b>ad1</b> och värdet för Query String Parameter <span class="syntax codeph"> node</span> är <b>4</b>. </p> <p>Om du kör JavaScript AppMeasurement H.25.2 eller tidigare kan sidans URL trunkeras efter 255 tecken. JavaScript AppMeasurement H.25.3 (släppt i januari 2013) och senare innehåller den fullständiga URL:en till bearbetningsregler. </p> </td> 
+   <td colname="col2"> <p>Värdet för en angiven frågesträngsparameter i den aktuella URL:en, eller null om det inte finns någon parameter. För URL <b>https://www.example.com/a.html?cid=ad1&amp;node=4</b>, värdet för frågesträngsparameter <span class="syntax codeph"> cid</span> är <b>ad1</b>och värdet för frågesträngsparametern <span class="syntax codeph"> nod</span> är <b>4</b>. </p> <p>Om du kör JavaScript AppMeasurement H.25.2 eller tidigare kan sidans URL trunkeras efter 255 tecken. JavaScript AppMeasurement H.25.3 (släppt i januari 2013) och senare innehåller den fullständiga URL:en till bearbetningsregler. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sidsökväg </p> </td> 
-   <td colname="col2"> <p>Sökvägen till sidans URL. URL:en <b>https://www.example.com/news/a.html?cid=ad1</b> är <span class="syntax codeph"> news/a.html</span>. </p> </td> 
+   <td colname="col2"> <p>Sökvägen till sidans URL. URL-adressens sökväg <b>https://www.example.com/news/a.html?cid=ad1</b> är <span class="syntax codeph"> news/a.html</span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Siddomän </p> </td> 
@@ -123,7 +121,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
   </tr> 
   <tr> 
    <td colname="col1"> <p>Refererar frågesträngsparameter (skrivskyddad) </p> </td> 
-   <td colname="col2"> <p>Värdet för en angiven frågesträngsparameter i den refererande URL:en, eller null om det inte finns någon parameter. För URL:en <b>https://www.example.com/a.html?cid=ad1&amp;node=4</b> är värdet för Query String Parameter <span class="syntax codeph"> cid</span> <b>ad1</b> och värdet för Query String Parameter <span class="syntax codeph"> node</span> är <b>4</b>. </p> <p>Om du kör JavaScript AppMeasurement H.25.2 eller tidigare kan sidans URL trunkeras efter 255 tecken. JavaScript AppMeasurement H.25.3 (släppt i januari 2013) och senare innehåller den fullständiga URL:en till bearbetningsregler. </p> </td> 
+   <td colname="col2"> <p>Värdet för en angiven frågesträngsparameter i den refererande URL:en, eller null om det inte finns någon parameter. För URL <b>https://www.example.com/a.html?cid=ad1&amp;node=4</b>, värdet för frågesträngsparameter <span class="syntax codeph"> cid</span> är <b>ad1</b>och värdet för frågesträngsparametern <span class="syntax codeph"> nod</span> är <b>4</b>. </p> <p>Om du kör JavaScript AppMeasurement H.25.2 eller tidigare kan sidans URL trunkeras efter 255 tecken. JavaScript AppMeasurement H.25.3 (släppt i januari 2013) och senare innehåller den fullständiga URL:en till bearbetningsregler. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Refererande domän (skrivskyddad) </p> </td> 
@@ -147,7 +145,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
   </tr> 
   <tr> 
    <td colname="col1"> <p>AppMeasurement Code-version (skrivskyddad) </p> </td> 
-   <td colname="col2"> <p>Den version av AppMeasurement-biblioteket som användes för att göra begäran. När du använder bildfyrar kan du fylla i detta med ett anpassat värde som läses med bearbetningsregler. Det här värdet visas på följande plats i URL:en: </p> <p>https://server.net/b/ss/report-suite-ID/1/<span class="syntax codeph"> CODEVERSION</span>/... </p> </td> 
+   <td colname="col2"> <p>Den version av AppMeasurement-biblioteket som användes för att göra begäran. När du använder bildfyrar kan du fylla i detta med ett anpassat värde som läses med bearbetningsregler. Det här värdet visas på följande plats i URL:en: </p> <p>https://server.net/b/ss/report-suite-ID/1/<span class="syntax codeph"> KODEVERTERING</span>/... </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -176,7 +174,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
   </tr> 
   <tr> 
    <td colname="col1"> <p>Listvariabler1-3 </p> </td> 
-   <td colname="col2"> <p> <code> s.list1</code> -  <code> s.list3</code> </p> </td> 
+   <td colname="col2"> <p> <code> s.list1</code> - <code> s.list3</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Inköps-ID </p> </td> 
@@ -197,7 +195,7 @@ De dimensioner som du kan läsa och skriva (om inget annat anges) med bearbetnin
  </tbody> 
 </table>
 
-## Slutförda händelser {#section_C1946FEB64FC4F579671EC5E0D06AE8A}
+## Success Events {#section_C1946FEB64FC4F579671EC5E0D06AE8A}
 
 Bearbetningsregler kan ange händelser men kan inte läsa dem som villkor.
 
@@ -211,7 +209,7 @@ Bearbetningsregler kan ange händelser men kan inte läsa dem som villkor.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Händelse 1-1000 </p> <p>(För SiteCatalyst 15-kunder, Event 1-100.) </p> </td> 
-   <td colname="col2"> <p> <code> event1</code> -  <code> event1000</code> </p> </td> 
+   <td colname="col2"> <p> <code> event1</code> - <code> event1000</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>purchase, scView, scAdd, and other cart events </p> </td> 

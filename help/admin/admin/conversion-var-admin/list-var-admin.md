@@ -1,14 +1,14 @@
 ---
 title: Listvariabler
 description: Skapa och konfigurera listvariabler för rapportering.
-translation-type: tm+mt
-source-git-commit: 763c1b7405c1a1b3d6dbd685ce796911dd4ce78b
+feature: Admin Tools
+exl-id: 6d9a52d4-e7f3-4bbc-bad4-55c79f30b9f7
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 1%
 
 ---
-
 
 # Listvariabler
 
@@ -16,7 +16,7 @@ Skapa och konfigurera listvariabler för rapportering. Ange värden för avgrän
 
 Du kommer åt konfigurationen i Admin Console:
 
-1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**
+1. Gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**
 2. Välj rapportsviten.
 3. Klicka på  **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL List Variables]** .
 
@@ -27,9 +27,9 @@ Du kommer åt konfigurationen i Admin Console:
    >
    >Flerbytetecken stöds inte som avgränsare i List Vars. Avgränsaren måste vara en byte.
 
-* **Förfallodatum**: På samma sätt som när eVar förfaller avgör detta hur lång tid det kan ta mellan List Var och konverteringshändelsen för dem att vara relaterade.
-   * **På en sidvy eller en besöksnivå**: Framgångshändelser utanför sidvyn eller besöket länkar inte tillbaka till några värden i List Var.
-   * **Baserat på en tidsperiod, t.ex** dag, vecka, månad: Slutförda händelser efter den angivna tidsperioden länkar inte tillbaka till några värden i List Var. Ett anpassat antal dagar kan också definieras.
+* **Förfaller**: På samma sätt som när eVar förfaller avgör detta hur lång tid det kan ta mellan List Var och konverteringshändelsen för dem att vara relaterade.
+   * **På sidvy eller besöksnivå**: Framgångshändelser utanför sidvyn eller besöket länkar inte tillbaka till några värden i List Var.
+   * **Baserat på en tidsperiod, t.ex. dag, vecka, månad**: Slutförda händelser efter den angivna tidsperioden länkar inte tillbaka till några värden i List Var. Ett anpassat antal dagar kan också definieras.
    * **Specifika konverteringshändelser**: Andra lyckade händelser som utlöses efter den angivna händelsen länkas inte tillbaka till några värden i List Var.
    * **Aldrig**: Hur lång tid som helst kan gå mellan händelsen List Var och success.
 

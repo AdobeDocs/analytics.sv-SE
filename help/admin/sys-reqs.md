@@ -1,8 +1,9 @@
 ---
 title: Systemkrav
 description: Systemkraven för Adobe Analytics.
+feature: System Requirements
 exl-id: e3575b1c-e088-48a9-90d4-ad1c7169e022
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 0143496648e59e95c360388735def726e63ee71b
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 5%
@@ -24,7 +25,7 @@ De flesta Adobe Analytics-lösningar, inklusive Analysis Workspace, är webbläs
 
 >[!NOTE]
 >
->Adobe slutade stödja Microsoft Internet Explorer 11 i Adobe Analytics den 13 november 2018.
+>Adobe upphörde med stödet för Microsoft Internet Explorer 11 i Adobe Analytics den 13 november 2018.
 
 ## Systemkrav för lösningar som inte är webbläsare
 

@@ -1,8 +1,9 @@
 ---
 title: Merchandising eVars and Product Finding Methods
 description: En djupdykning i begreppen bakom försäljning av eVars och hur de bearbetar och allokerar data.
+feature: Admin Tools
 exl-id: 9e1a39aa-451f-49bb-8e39-797b6bbd5499
-source-git-commit: b78604e675a371894b1839d1751d44a1e8b2c5c1
+source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
 workflow-type: tm+mt
 source-wordcount: '5289'
 ht-degree: 0%
@@ -177,7 +178,7 @@ Exempel:
 s.products=";12345;;;;eVar1=internal campaign";
 ```
 
-Den här variabelinställningen ändrar bindningen för produkt-ID 12345 från eVar1-värdet för&quot;intern nyckelordssökning&quot; till eVar1-värdet för&quot;intern kampanj&quot;. Den här ombindningsändringen äger också rum när eVar har konfigurerats att använda produktsyntax och inställningen Allocation (binding) för&quot;Most Recent (Last)&quot;. Om inställningen Allocation (binding) i stället anges till &quot;Original Value (First)&quot;, kommer det inte att binda om produkt-ID 12345 till eVar1-värdet för &quot;internal campaign&quot; om eVar1 är lika med &quot;internal campaign&quot; tillsammans med produkt-ID 12345. Bindningen behåller i stället det ursprungliga värdet -&quot;intern nyckelordssökning&quot;.
+Den här variabelinställningen ändrar bindningen för produkt-ID 12345 från eVar1-värdet för&quot;intern nyckelordssökning&quot; till eVar1-värdet för&quot;intern kampanj&quot;. Den här ombindningsändringen äger också rum när eVar har konfigurerats att använda produktsyntax och inställningen Allocation (binding) för&quot;Most Recent (Last)&quot;. Om inställningen Allocation (binding) i stället var inställd på &quot;Original Value (First)&quot;, kommer inte inställning av eVar1 som &quot;internal campaign&quot; tillsammans med produkt-ID 12345 att binda om produkt-ID 12345 till eVar1-värdet för &quot;internal campaign&quot;. Bindningen behåller i stället det ursprungliga värdet -&quot;intern nyckelordssökning&quot;.
 
 
 ### Problem med att använda produktsyntax
@@ -261,7 +262,7 @@ s.events="prodView";
 s.products=";sandal123;;;;eVar4=womens > shoes > sandals|eVar1=browse|eVar3=non-internal campaign|eVar2=non-search|eVar5=non-cross-sell";
 ```
 
-Med inställningen Allocation (binding) på&quot;Most Recent (Last)&quot; binds produkten &quot;sandal123&quot; till helt andra eVar än vad den ursprungligen var bunden till. Om besökaren sedan slutför köpet av&quot;sandal123&quot; ges dessutom alla inköpskrediter till dessa nybundna eVar i stället för de värden som ursprungligen var bundna.
+Med inställningen Allocation (binding) på&quot;Most Recent (Last)&quot; binds produkten &quot;sandal123&quot; till helt andra eVar än vad den ursprungligen var bunden till. Om besökaren sedan slutför köpet av&quot;sandal123&quot;, ges alla inköpskrediter till dessa nybundna eVar i stället för de värden som ursprungligen var bundna.
 
 Frågan här är: Vilka eVar ska få krediter för köpet?&quot; Kom ihåg att besökaren ursprungligen hittade &quot;sandal123&quot;-produkten via en intern nyckelordssökning. Sedan lade de till den i kundvagnen direkt från sökresultatsidan. Därför bör eVar1-värdet för&quot;intern nyckelordssökning&quot; (och eVar2-värdet för&quot;sandaler&quot;) krediteras köpet. Allokeringsinställningarna (bindning) ställdes in på&quot;Senaste (senaste)&quot;. eVar1-värdet för&quot;browse&quot; (och eVar4-värdet för&quot;kvinna > skor > sandaler&quot;) ger inköpskrediten i stället. Orsaken är att de var de sista värdena som var bundna till&quot;sandal123&quot; innan besökaren slutförde köpet.
 

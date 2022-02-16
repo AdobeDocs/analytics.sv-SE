@@ -2,13 +2,11 @@
 description: Bearbetningsregler förenklar datainsamling och hantering av innehåll när det skickas till rapportering.
 subtopic: Processing rules
 title: Översikt över behandlingsregler
-feature: Admin Tools
-uuid: 6b4ee7c9-2b86-47a6-b64c-c8d644fff67d
+feature: Processing Rules
 exl-id: 0244aba2-4345-463a-8528-d4dcd2f872ff
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 71b3b1937e7fa272f0497008e8e510204bbb4418
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -38,7 +36,7 @@ Administratörer har behörighet att använda bearbetningsregler **som standard*
 
 ## Använd kontextdata för att förenkla datainsamling {#section_09EEA03612D24C15839631AA9E9668D8}
 
-Sammanhangsdatavariabler är en typ av variabler som bara är tillgängliga för bearbetning av regler. Om du vill använda kontextdatavariabler skickas nyckeldatapar/värdepar in av din implementering, och bearbetningsregler används för att hämta dessa värden i vanliga Analytics-variabler. Detta frigör programmerare från att förstå exakt vilka prop och/eller eVar som ska innehålla vilket värde.
+Sammanhangsdatavariabler är en typ av variabler som bara är tillgängliga för bearbetning av regler. Om du vill använda kontextdatavariabler skickas nyckeldatapar/värdepar in av implementeringen, och bearbetningsregler används för att hämta dessa värden i vanliga Analytics-variabler. Detta frigör programmerare från att förstå exakt vilka prop och/eller eVar som ska innehålla vilket värde.
 
 ```js
 s.contextData['author'] = "Robert Munch";
@@ -48,18 +46,18 @@ s.contextData['genre'] = "Youth";
 
 När du har angett värden i koden kan du ange bearbetningsregler för att tilldela värden till variabler. Exempel:
 
-1. Mappa `author` till `eVar2`
-2. Mappa `section` till `prop1` och `eVar3`
-3. Om `author` och `section` finns anger du `event5`
+1. Karta `author` till `eVar2`
+2. Karta `section` till `prop1` och `eVar3`
+3. If `author` och `section` exists, set `event5`
 
-Mer information finns i [contextData](/help/implement/vars/page-vars/contextdata.md) i Användarhandboken för implementering.
+Se [contextData](/help/implement/vars/page-vars/contextdata.md) i Implementera användarhandboken för mer information.
 
 ## Använd bearbetningsregler för att omforma träff- och utlösarhändelser {#section_8284E72E999244E091CD7FB1A22342B6}
 
 Bearbetningsregler kan övervaka inkommande värden för att omforma vanliga typer och ange händelser baserat på rapporterade data. Props kan kopieras till eVars. Värden kan sammanfogas för rapporter och händelser kan anges.
 
-## Använda kontextdatavariabler i rapportering {#section_BD098BC503024A0B8703596628071134}
+## Använda kontextdatavariabler i rapporter {#section_BD098BC503024A0B8703596628071134}
 
 När kontextdatavariabler definieras i implementeringen måste de kopieras till variabler som eVars för att användas vid rapportering.
 
-Mer information finns i [Kopiera en kontextdatavariabel till en eVar](processing-rules-examples/processing-rules-copy-context-data.md) och [Ange en händelse med hjälp av en kontextdatavariabel](processing-rules-examples/processing-rules-copy-context-data-event.md).
+Se [Kopiera en kontextdatavariabel till en eVar](processing-rules-examples/processing-rules-copy-context-data.md) och [Ange en händelse med hjälp av en kontextdatavariabel](processing-rules-examples/processing-rules-copy-context-data-event.md) för mer information.

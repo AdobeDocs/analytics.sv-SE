@@ -1,14 +1,14 @@
 ---
 description: Lägg till eller hantera alla användningsvarningar för servern. När du skapar en avisering gäller den alla rapportsviter i alla inloggningsföretag för ett faktureringsföretag.
 title: Varningar om användning av serversamtal
-uuid: 701fd542-5b24-42df-97a0-08e10929fa48
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+feature: Server Call Usage
+exl-id: 35926566-c570-4ed2-9bbc-0906518bcf64
+source-git-commit: 72bd67179e003b70233d863d34153fec77548256
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 2%
 
 ---
-
 
 # Varningar om användning av serversamtal
 
@@ -16,7 +16,7 @@ När du skapar en avisering gäller den alla rapportsviter i alla inloggningsfö
 
 ## Översikt
 
-En ny aviseringskategori med namnet **[!UICONTROL Server Calls Usage Alert]** är en del av det befintliga [varningsgränssnittet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html).
+En ny aviseringskategori som heter **[!UICONTROL Server Calls Usage Alert]** är en del av den befintliga [Varningshantering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html) användargränssnitt.
 
 Den är förifylld med **1 standardvarning** som visas i ett inloggningsföretag som har åtkomst till funktionen Serversamtalsanvändning. Den här varningen utlöser ett meddelande adresserat till alla inloggningsföretagets administratörer om något av följande villkor uppfylls:
 
@@ -28,7 +28,7 @@ Den är förifylld med **1 standardvarning** som visas i ett inloggningsföretag
 
 Du kan få åtkomst till varningar om användning av serversamtal på två sätt:
 
-* Klicka på **[!UICONTROL Manage Alerts]** i det övre högra hörnet på fliken Aktuell användning eller på fliken Report Suite-användning, eller
+* Klicka **[!UICONTROL Manage Alerts]** i det övre högra hörnet på fliken Aktuell användning eller fliken Användning i Report Suite, eller
 * Navigera till **[!UICONTROL Components]** > **[!UICONTROL Alerts]** i Adobe Analytics.
 
 ## Skapa användningsaviseringar för serversamtal {#section_2A2882C6D48D47C1944D52FB7C766BEC}
@@ -49,12 +49,10 @@ Om du vill skapa ytterligare aviseringar
    * **Förfallodatum**: Som standard är förfallodatumet ett år från det datum då varningen skapades.
    * **Skicka en varning när**:
 
-      * Någon av dessa mått-utlösare
-Lägg till typen av serveranrop som ett mått och ange aviseringströskeln genom att välja modifieraren och tröskelvärdet:
+      * Alla dessa mått för utlösare Lägg till typen av serveranrop som ett mått och ange aviseringströskeln genom att välja modifierare och tröskelvärde:
          * är över eller lika med
          * är under eller lika med
-      * Med
-Ange tröskelvärde och villkor (ligger över eller är lika med eller under) för den använda användningsperioden.
+      * Med Ange tröskelvärde och villkor (ligger över eller är lika med eller under) för den använda användningsperioden.
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -69,12 +67,11 @@ Så här hanterar du aviseringar:
 
    | Åtgärd | Definition |
    |--- |--- |
-   | + Lägg till | Du kommer åt [Varningsverktyget](/help/admin/c-server-call-usage/scu-alerts.md) genom att klicka på [!UICONTROL + Add]. |
+   | + Lägg till | Öppna [Varningsverktyg](/help/admin/c-server-call-usage/scu-alerts.md) genom att klicka  [!UICONTROL + Add]. |
    | Tagg | Märk varningar för att ordna dem så att de blir lätta att använda. |
    | Ta bort | Du kan ta bort alla aviseringar förutom standardaviseringar. |
    | Byt namn | Du kan byta namn på alla aviseringar förutom standardaviseringar. |
    | Godkänn | Godkänn aviseringar för att göra dem&quot;officiella&quot;. |
    | Aktivera/inaktivera | Du kan aktivera eller inaktivera alla aviseringar, även standardaviseringar. |
-   | Förnya | När en eller flera aviseringar har valts kan de förnyas. Detta utökar deras förfallodatum till 1 år från den dag då användaren klickade på [!UICONTROL Renew], oavsett deras ursprungliga förfallodatum. |
+   | Förnya | När en eller flera aviseringar har valts kan de förnyas. Detta förlänger deras förfallodatum till 1 år från dagen [!UICONTROL Renew] har klickats, oavsett ursprungligt förfallodatum. |
    | Exportera till CSV | Se [Hämta användningsrapport](/help/admin/c-server-call-usage/report-suite-usage.md) |
-

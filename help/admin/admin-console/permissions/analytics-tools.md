@@ -2,7 +2,8 @@
 title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
-source-git-commit: f8a928782b4c4916f5ff2042cb72941d76f57d7d
+feature: Admin Tools
+source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

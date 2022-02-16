@@ -2,7 +2,8 @@
 description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och analyser, Report Builder, Data warehouse och Data Workbench
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+feature: Analytics Basics
+source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 38%
@@ -13,7 +14,7 @@ ht-degree: 38%
 
 Den här sidan innehåller en jämförelse av olika Adobe Analytics-produkter: Analysis Workspace, Reports &amp; Analytics, Report Builder, Data warehouse, Data Workbench, Data Feeds och Analytics API 2.0.
 
-Information om vilken Adobe Analytics-produkt som ska användas finns [här](/help/admin/c-analytics-product-comparison/which-analytics-tool.md).
+Information om vilken Adobe Analytics-produkt du ska använda finns på [här](/help/admin/c-analytics-product-comparison/which-analytics-tool.md).
 
 | Produkt- och hjälplänk | [Analysis Workspace](/help/analyze/analysis-workspace/home.md) | [Rapporter och analyser](/help/analyze/reports-analytics/getting-started.md) | [Report Builder](/help/analyze/report-builder/home.md) | [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) | [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) | [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) | [Analytics API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
 |---|---|---|---|---|---|---|---|
