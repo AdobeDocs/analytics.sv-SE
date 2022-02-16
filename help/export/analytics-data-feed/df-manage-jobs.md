@@ -1,8 +1,9 @@
 ---
 title: Hantera datafeedjobb
 description: Lär dig hur du hanterar enskilda jobb i dataflöden.
+feature: Data Feeds
 exl-id: b17e333e-290f-42e4-b304-1e34282237a7
-source-git-commit: 963e66b05cc401956211c28b9ffeb9aad6bed604
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 2%

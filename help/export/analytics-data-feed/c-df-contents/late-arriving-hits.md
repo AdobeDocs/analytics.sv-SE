@@ -1,15 +1,18 @@
 ---
 title: Sena träffar
 description: Lär dig hur dataflöden behandlar sena träffar.
-translation-type: tm+mt
-source-git-commit: 7db88bce7b3d0f90fa5b50664d7c0c23904348c0
+feature: Data Feeds
+exl-id: c99a702b-2aaa-47a6-958a-1e5ab66961ba
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 1%
 
 ---
 
-
 # Sena träffar
 
-Historiska data kan komma när ett datafeedjobb har avslutat bearbetningen för en viss timme eller dag, till exempel genom tidsstämplade träffar eller datakällor. Senaste träffar är en anpassning av backend-funktionen som Adobe tillhandahåller för att inkludera dessa data i dataflöden.
+Historiska data kan komma när ett datafeedjobb har avslutat bearbetningen för en viss timme eller dag, till exempel genom tidsstämplade träffar eller datakällor. Sena träffar är en anpassning av backend-funktionen som tillhandahålls av Adobe för att hjälpa till att inkludera dessa data i dataflöden.
 
 ## Hur sent det är att komma in på jobbet
 
@@ -19,10 +22,10 @@ När sena träffar har aktiverats ändras bearbetningsmetoden så att den inklud
 
 ## Aktivera sena träffar
 
-Senare träffar kan aktiveras manuellt av Adobe på enskilda dataflöden. Innan du gör det bör du tänka på följande:
+Sena träffar kan aktiveras manuellt av Adobe på enskilda dataflöden. Innan du gör det bör du tänka på följande:
 
 * Data för olika dagar visas ofta i dataflöden när sena träffar har aktiverats. Se till att den plattform du använder för att importera dataflöden kan innehålla data från olika dagar inom samma fil.
-* Sena träffar ökar bearbetningstiden. Vanligtvis är fördröjningen mindre än en timme, men den kan vara flera timmar eller mer om rapportsviten tar emot ett stort antal sena träffar. Adobe rekommenderar att du inte aktiverar den här inställningen om det är absolut nödvändigt att få fram data i rätt tid för organisationens arbetsflöde.
+* Sena träffar ökar bearbetningstiden. Vanligtvis är fördröjningen mindre än en timme, men den kan vara flera timmar eller mer om rapportsviten tar emot ett stort antal sena träffar. Adobe rekommenderar att du inte aktiverar den här inställningen om det är av största vikt att dataflödena kommer i rätt tid.
 * Om en dataflödesfil bearbetas på nytt inkluderas inte de träffar som togs med i originalfilen i den bearbetade filen.
 
 Om du vill aktivera sena träffar för ett befintligt återkommande dataflöde ska du be en användare som stöds att kontakta Kundtjänst och inkludera följande:

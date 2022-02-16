@@ -1,7 +1,9 @@
 ---
 title: Marknadsföring - sökning av instanser av eVar i post_product_list
 description: Sök efter instansen Merchandising-eVar för varje uppslagsvärde i kolumnen post_product_list i en datafeed.
-source-git-commit: 70af5bf2ef36e7968043120658d35dc948e9630e
+feature: Data Feeds
+exl-id: d4b7d53b-21da-42d1-b54a-4602920bb6d4
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 86%

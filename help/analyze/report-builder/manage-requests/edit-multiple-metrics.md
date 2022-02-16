@@ -1,10 +1,10 @@
 ---
 description: Med funktionen Redigera mått över flera begäranden kan du enkelt lägga till, ta bort eller ersätta mått i en befintlig begäran eller i en hel grupp med förfrågningar.
 title: Redigera mätvärden för flera förfrågningar
-uuid: 50fba4e7-ca7d-4a5c-98a9-c9725b436e4a
+feature: Report Builder
 role: User, Admin
 exl-id: e537b67a-aa07-4acd-a476-7497426e2f7d
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 4%
@@ -20,13 +20,13 @@ Med funktionen Redigera mått över flera begäranden kan du enkelt lägga till,
 Kom ihåg
 
 * Det går bara att lägga till mått i begäranden om pivotlayout. Om några av de valda förfrågningarna är anpassade layouter går det inte att lägga till mått. Anledningen är att Report Builder inte vet var i kalkylbladet det nya måttet ska placeras, eftersom layouten anpassas.
-* Om du bara har valt anpassade layoutbegäranden är **[!UICONTROL Add Metric/s]**-alternativet inte tillgängligt.
+* Om du bara har valt begäranden om anpassad layout **[!UICONTROL Add Metric/s]** är inte tillgängligt.
 * Om du lägger till mätvärden kommer storleken på en begäran att öka och det kan leda till att den överlappar en annan begäran. Se till att din begäran har tillräckligt med utrymme för att lägga till mätvärden.
 * Om det tillagda måttet redan finns i en av de valda förfrågningarna läggs det inte till i den förfrågan.
 
 Så här lägger du till ett eller flera mått:
 
-1. Markera en eller flera begäranden i Excel och högerklicka för att välja **[!UICONTROL Edit Metrics]**. (Du kan också klicka på **[!UICONTROL Manage]** > **[!UICONTROL Edit Multiple]** > `<choose metric>` > **[!UICONTROL Edit Group]** för att markera gruppen med begäranden som ska ändras.)
+1. Markera en eller flera begäranden i Excel och högerklicka för att välja **[!UICONTROL Edit Metrics]**. (Eller klicka på **[!UICONTROL Manage]** > **[!UICONTROL Edit Multiple]** > `<choose metric>` > **[!UICONTROL Edit Group]** för att markera gruppen med begäranden som ska ändras.)
 1. Välj **[!UICONTROL Add Metric(s)]**och välj de mätvärden som ska läggas till.
 
    ![](assets/add_metric.png)
@@ -48,7 +48,7 @@ Kom ihåg
 
 Ersätta ett mått
 
-1. Markera en eller flera begäranden i Excel och högerklicka för att välja **[!UICONTROL Edit Metrics]**. (Du kan också klicka på **[!UICONTROL Manage]** > **[!UICONTROL Edit Multiple]** > **`<choose metric>`** > **[!UICONTROL Edit Group]** för att markera gruppen med begäranden som ska ändras.)
+1. Markera en eller flera begäranden i Excel och högerklicka för att välja **[!UICONTROL Edit Metrics]**. (Eller klicka på **[!UICONTROL Manage]** > **[!UICONTROL Edit Multiple]** > **`<choose metric>`** > **[!UICONTROL Edit Group]** för att markera gruppen med begäranden som ska ändras.)
 
 1. Välj **[!UICONTROL Replace Metric]**.
 
@@ -68,7 +68,7 @@ Kom ihåg
 
 Så här tar du bort mått:
 
-1. Markera en eller flera begäranden i Excel och högerklicka för att välja **[!UICONTROL Edit Metrics]**. (Du kan också klicka på **[!UICONTROL Manage]** > **[!UICONTROL Edit Multiple]** > **`<choose metric>`** > **[!UICONTROL Edit Group]** för att markera gruppen med begäranden som ska ändras.)
+1. Markera en eller flera begäranden i Excel och högerklicka för att välja **[!UICONTROL Edit Metrics]**. (Eller klicka på **[!UICONTROL Manage]** > **[!UICONTROL Edit Multiple]** > **`<choose metric>`** > **[!UICONTROL Edit Group]** för att markera gruppen med begäranden som ska ändras.)
 
 1. Välj **[!UICONTROL Remove Metric(s)]**.
 

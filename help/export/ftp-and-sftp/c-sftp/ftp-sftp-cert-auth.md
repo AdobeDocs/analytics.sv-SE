@@ -1,21 +1,23 @@
 ---
 description: Det går bara att ansluta utan lösenord till FTP-konton med både en SFTP-anslutning och en alternativ autentiseringsmetod. Detta inbegriper en uppsättning med två filer (en som finns på FTP-kontot och den andra som finns på datorn) som kallas för en kombination av offentlig och privat nyckel.
 keywords: ftp;sftp
-title: Anslut till Adobe via SFTP utan lösenord
-uuid: 88728309-50d2-450b-b0e6-7dcdf61b5dbc
-translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+title: Ansluta till Adobe via SFTP utan lösenord
+feature: FTP Export
+exl-id: 7ff9511c-50a2-466f-b5af-6bbd59941ce5
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+workflow-type: tm+mt
+source-wordcount: '603'
+ht-degree: 2%
 
 ---
 
-
-# Anslut till Adobe via SFTP utan lösenord
+# Ansluta till Adobe via SFTP utan lösenord
 
 Det går bara att ansluta utan lösenord till FTP-konton med både en SFTP-anslutning och en alternativ autentiseringsmetod. Detta inbegriper en uppsättning med två filer (en som finns på FTP-kontot och den andra som finns på datorn) som kallas för en kombination av offentlig och privat nyckel.
 
 Detta är inte mindre säkert än lösenordsautentisering. Det är en annan form av autentisering som inte kräver att användaren skriver in ett lösenord varje gång. När de används på rätt sätt kan den aktuella datorn logga in utan att behöva ange ett lösenord. Detta måste göras dator för dator. Alla andra anslutningar som inte använder dessa nyckelfiler måste ange ett lösenord.
 
-En del klienter kräver en SFTP (Secure File Transfer Protocol) för överföring av känsliga data. En SFTP-anslutning är säkrare än en vanlig FTP-anslutning eftersom den tillåter krypterad datakommunikation. Som standard är alla Adobe FTP-konton SFTP-klara. En SFTP-anslutning kan öppnas med ett giltigt användarnamn och lösenord med hjälp av en SFTP-klient som ansluter till port 22 (vanliga FTP-anslutningar som inte är säkra använder port 21).
+En del klienter kräver en SFTP (Secure File Transfer Protocol) för överföring av känsliga data. En SFTP-anslutning är säkrare än en vanlig FTP-anslutning eftersom den tillåter krypterad datakommunikation. Som standard är alla FTP-konton i Adobe redo för SFTP. En SFTP-anslutning kan öppnas med ett giltigt användarnamn och lösenord med hjälp av en SFTP-klient som ansluter till port 22 (vanliga FTP-anslutningar som inte är säkra använder port 21).
 
 När du använder SFTP är det möjligt att, under särskilda förhållanden, använda privata nycklar för att ansluta till kontot utan lösenord. Med den här metoden kan datorn använda nyckelfiler för autentisering i stället för vanlig lösenordsautentisering. Det innebär att det endast är den dator som har den privata nyckeln som kan ansluta utan ett lösenord. Alla andra datorer/användare måste fortfarande använda lösenordsautentisering (såvida inte privata nycklar har ställts in på dessa andra datorer också).
 
@@ -23,10 +25,10 @@ När du använder SFTP är det möjligt att, under särskilda förhållanden, an
 
 1. Ett FTP-konto har skapats (Adobe).
 
-   En Adobe-representant kan skapa ett FTP-konto om det inte redan finns ett. Kontakta er kontoansvarige på Adobe eller Adobes kundtjänst för att skapa ett konto.
+   En Adobe-representant kan skapa ett FTP-konto om det inte redan finns ett. Kontakta din kontoansvarige på Adobe eller Adobe kundtjänst om du vill skapa ett konto.
 1. Skapa offentlig/privat nyckel (kund).
 
-   Skapa en kombination av offentlig och privat nyckel. Den privata nyckeln är en fil som är privat för datorn/servern och som finns där. Den offentliga nyckelfilen måste överföras till Adobe-kontot. När det används på det här sättet kan du ansluta utan lösenordsautentisering. Den offentliga nyckelfilen på Adobe matchar den privata nyckelfilen på din dator/server och autentiserar på det sättet.
+   Skapa en kombination av offentlig och privat nyckel. Den privata nyckeln är en fil som är privat för datorn/servern och som finns där. Den offentliga nyckelfilen måste överföras till Adobe-kontot. När det används på det här sättet kan du ansluta utan lösenordsautentisering. Den offentliga nyckelfilen i Adobe matchar den privata nyckelfilen på datorn/servern och autentiseras på det sättet.
 
    Om du vill skapa de här filerna måste du engagera din interna nätverkssupportgrupp och skapa en nyckeluppsättning som passar just din miljö. Det finns många verktyg och program som kan användas för att skapa dessa två filer.
 
@@ -62,7 +64,7 @@ När du använder SFTP är det möjligt att, under särskilda förhållanden, an
 
 1. Överför offentlig nyckel till FTP-konto (kund).
 
-   Överför och testa den offentliga nyckeln. Anslut till Adobe FTP-kontot och skapa en [!DNL .ssh] katalog om den inte redan finns. Överför [!DNL authorized_keys] filen till den här [!DNL .ssh] katalogen. Detta kan göras på många olika sätt (kommandorad, grafisk FTP-klient och så vidare). Allt som krävs är möjligheten att skapa en katalog och överföra en fil.
+   Överför och testa den offentliga nyckeln. Anslut till FTP-kontot i Adobe och skapa en [!DNL .ssh] om den inte redan finns. Överför [!DNL authorized_keys] till denna [!DNL .ssh] katalog. Detta kan göras på många olika sätt (kommandorad, grafisk FTP-klient och så vidare). Allt som krävs är möjligheten att skapa en katalog och överföra en fil.
 
    Här är ett exempel på hur man gör detta med ett UNIX-skal.
 
@@ -95,4 +97,3 @@ När du använder SFTP är det möjligt att, under särskilda förhållanden, an
    
    sftp>
    ```
-

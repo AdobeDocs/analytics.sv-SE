@@ -1,14 +1,14 @@
 ---
 title: Vanliga frågor om data warehouse
 description: Frågor och svar om Data warehouse.
-translation-type: tm+mt
-source-git-commit: dbcdabdfd53b9d65d72e6269fcd25ac7118586e7
+feature: Data Warehouse
+exl-id: 51c3ba17-a8b2-4030-9521-355ebbbfcd0d
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 6%
 
 ---
-
 
 # Vanliga frågor om data warehouse
 
@@ -32,4 +32,4 @@ När du använder granularitet i en Data warehouse-begäran läggs kolumnen Datu
 När du använder ett segment som en dimension i Data warehouse returneras en kolumn som innehåller `"0"` eller `"1"`:
 
 * **`"0"`**: Dimensionsobjektet uppfyllde inte segmentets villkor.
-* **`"1"`**: Dimensionsobjektet uppfyllde segmentets villkor.
+* **`"1"`**: Dimensionsobjektet uppfyller segmentets villkor.

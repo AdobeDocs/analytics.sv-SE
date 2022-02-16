@@ -2,13 +2,11 @@
 description: Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 keywords: Datafeed;jobb;mått;förkolumn;efterkolumn;bots;datumfiltrering;händelsesträng;vanliga;formler
 title: Beräkna mätvärden
-feature: Rapporter och analysgrunder
-uuid: a45ea5bb-7c83-468f-b94a-63add78931d7
+feature: Data Feeds
 exl-id: f9b0d637-7a6e-416a-adff-3c7e533bfac7
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -23,20 +21,20 @@ Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 
 ## Sidvyer
 
-1. Räkna antalet rader där ett värde är i `post_pagename` eller `post_page_url`.
+1. Räkna antalet rader där ett värde finns `post_pagename` eller `post_page_url`.
 
 ## Besök
 
-1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num` och `visit_start_time_gmt`.
+1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num`och `visit_start_time_gmt`.
 1. Räkna det unika antalet värden.
 
 >[!NOTE]
 >
->Internet-oegentligheter, systemoegentligheter eller användning av anpassade besökar-ID:n kan sällan använda samma `visit_num`-värden för olika besök. Använd `visit_start_time_gmt` vid inventering av besök för att se till att dessa besök räknas.
+>Internet-oegentligheter, systemoegentligheter eller användning av anpassade besökar-ID:n kan sällan använda samma `visit_num` värden för olika besök. Använd `visit_start_time_gmt` vid inventering av besök för att säkerställa att dessa besök räknas.
 
 ## Besökare
 
-Alla metoder som Adobe använder för att identifiera unika besökare (anpassat besökar-ID, Experience Cloud ID-tjänst osv.) beräknas som ett värde i `post_visid_high` och `post_visid_low`. Sammanfogningen av dessa två kolumner kan användas som standard för att identifiera unika besökare oavsett hur de identifierades som en unik besökare. Om du vill veta vilken metod Adobe som används för att identifiera en unik besökare använder du kolumnen `post_visid_type`.
+Alla metoder som Adobe använder för att identifiera unika besökare (anpassat besökar-ID, Experience Cloud ID-tjänst osv.) beräknas som ett värde i `post_visid_high` och `post_visid_low`. Sammanfogningen av dessa två kolumner kan användas som standard för att identifiera unika besökare oavsett hur de identifierades som en unik besökare. Om du vill veta vilken metod Adobe använde för att identifiera en unik besökare använder du kolumnen `post_visid_type`.
 
 1. Sammanfoga `post_visid_high` och `post_visid_low`.
 2. Räkna det unika antalet värden.
@@ -50,7 +48,7 @@ Alla metoder som Adobe använder för att identifiera unika besökare (anpassat 
 
 ## Anpassade händelser
 
-Alla mått räknas som kommaavgränsade heltal i kolumnen `post_event_list`. Använd `event.tsv` för att matcha numeriska värden med önskad händelse. `post_event_list = 1,200` indikerar till exempel att träffen innehöll en köphändelse och en anpassad händelse, 1.
+Alla mått räknas i `post_event_list` kolumn som kommaavgränsade heltal. Använd `event.tsv` om du vill matcha numeriska värden med den önskade händelsen. Till exempel: `post_event_list = 1,200` anger att träffen innehöll en köphändelse och en anpassad händelse 1.
 
 1. Antal gånger som värdet för händelsesökning visas i `post_event_list`.
 
@@ -58,19 +56,19 @@ Alla mått räknas som kommaavgränsade heltal i kolumnen `post_event_list`. Anv
 
 Träffarna måste först grupperas efter besök och sedan sorteras efter träffnumret på besöket.
 
-1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num` och `visit_start_time_gmt`.
-2. Sortera efter det här sammanfogade värdet och tillämpa sedan en andra sortering med `visit_page_num`.
-3. Om en träff inte är den sista vid ett besök kan du subtrahera `post_cust_hit_time`-värdet från den efterföljande träffens `post_cust_hit_time`-värde.
+1. Sammanfoga `post_visid_high`, `post_visid_low`, `visit_num`och `visit_start_time_gmt`.
+2. Sortera efter det här sammanfogade värdet och tillämpa sedan en andra sortering efter `visit_page_num`.
+3. Om en träff inte är den sista vid ett besök subtraherar du `post_cust_hit_time` värde från efterföljande träff `post_cust_hit_time` värde.
 4. Detta är den tid (i sekunder) som träffen tar. Filter kan användas för att fokusera på dimensionsobjekt eller händelser.
 
 ## Beställningar, enheter och intäkter
 
-Om ett träffvärde `currency` inte matchar en rapportsvits valuta, konverteras det med den dagens konverteringsgrad. Kolumnen `post_product_list` använder det konverterade valutavärdet, så alla träffar använder samma valuta i den här kolumnen.
+Om en träff `currency` värdet matchar inte rapportsvitens valuta, det konverteras med den dagens konverteringsgrad. Kolumnen `post_product_list` använder det konverterade valutavärdet, så alla träffar använder samma valuta i den här kolumnen.
 
 1. Uteslut alla rader där `duplicate_purchase = 1`.
-2. Inkludera endast rader där `event_list` innehåller inköpshändelsen.
-3. Tolka `post_product_list`-kolumnen för att extrahera alla prisdata. Kolumnen `post_product_list` är formaterad på samma sätt som variabeln `s.products`.
+2. Inkludera endast rader där `event_list` innehåller köphändelsen.
+3. Tolka `post_product_list` kolumn för att extrahera alla prisdata. The `post_product_list` kolumnen är formaterad på samma sätt som `s.products` variabel.
 4. Beräkna det önskade måttet:
    * Räkna antalet rader för att beräkna order
-   * Summera antalet `quantity` i produktsträngen för beräkning av enheter
-   * Summa antalet `price` i produktsträngen för att beräkna intäkt
+   * Summa antalet `quantity` i produktsträngen för att beräkna enheter
+   * Summa antalet `price` i produktsträngen för att beräkna intäkter

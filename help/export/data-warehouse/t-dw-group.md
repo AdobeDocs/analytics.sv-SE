@@ -3,9 +3,8 @@ description: Steg som beskriver hur administratörer kan aktivera Data warehouse
 title: Hantera behörigheter i Data warehouse
 feature: Data Warehouse
 solution: Analytics
-uuid: d89294db-caa3-4044-b70d-65b512b0dc1c
 exl-id: 8737ab60-2ad1-4795-808b-d0200078a333
-source-git-commit: 6fe67311c73fc766e8051e57a047224b8fb17747
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 0%

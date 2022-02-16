@@ -3,12 +3,11 @@ description: I det här avsnittet beskrivs de filer som hittas vid leverans av e
 keywords: Datafeed;jobb;innehåll;manifest;fil;sökning;träffdata;leveransinnehåll
 subtopic: data feeds
 title: Innehåll i datafeed - översikt
-feature: Rapporter och analysgrunder
-uuid: 82a86314-4841-4133-a0dc-4e7c6cd14fc1
+feature: Data Feeds
 exl-id: 7456ed99-c2f3-4b19-a63e-6b4e457e7d55
-source-git-commit: 7312b61b8d73f45afa3eb9aac73cc4d5fd39bc82
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 0%
 
 I det här avsnittet beskrivs de filer som hittas vid leverans av en datafeed.
 
-## Manifestfil {#feed-manifest}
+## Manifest-fil {#feed-manifest}
 
 Manifestfilen innehåller följande information om varje fil som ingår i den överförda datauppsättningen:
 
@@ -28,7 +27,7 @@ Manifestfilen innehåller följande information om varje fil som ingår i den ö
 
 Manifestfilen har samma format som Java JAR-manifestfilen.
 
-Manifestfilen levereras alltid sist som en separat `.txt`-fil, så att dess existens indikerar att hela datauppsättningen för den perioden redan har levererats. Manifestfilerna namnges enligt följande:
+Manifestfilen levereras alltid sist som en separat `.txt` så att det visar att hela datauppsättningen för den perioden redan har levererats. Manifestfilerna namnges enligt följande:
 
 ```text
 [rsid]_[YYYY-mm-dd].txt
@@ -54,13 +53,13 @@ Datafeed-Manifest-Version: 1.0
 
 Varje manifestfil innehåller en rubrik som anger det totala antalet sökfiler, datafiler och det totala antalet poster i alla datafiler. Rubriken följs av flera avsnitt som innehåller information för varje fil som ingår i leveransen av dataflödet.
 
-Vissa feeds är konfigurerade att ta emot en `.fin`-fil i stället för ett `.txt`-manifest. `.fin` anger att överföringen är slutförd, men den innehåller inga metadata om överföringen.
+Vissa feeds har konfigurerats för att ta emot en `.fin` i stället för en `.txt` manifest. The `.fin` anger att överföringen är slutförd, men den innehåller inga metadata om överföringen.
 
 ## Sök efter filer
 
-Vissa dataflödeskolumner ger ett tal som motsvarar det faktiska värdet. Uppslagsfiler används för att matcha ett tal från en dataflödeskolumn och matcha det med ett faktiskt värde. Om du till exempel anger värdet &quot;497&quot; i `browser`-träffdatakolumnen kommer träffen från &quot;Microsoft Internet Explorer 8&quot; om du tittar i `browser.tsv`.
+Vissa dataflödeskolumner ger ett tal som motsvarar det faktiska värdet. Uppslagsfiler används för att matcha ett tal från en dataflödeskolumn och matcha det med ett faktiskt värde. Värdet&quot;497&quot; i `browser` träffdatakolumnen anger att träffen kom från &quot;Microsoft Internet Explorer 8&quot; om du tittar i `browser.tsv`.
 
-Observera att `column_headers.tsv` och `event_list.tsv` är specifika för datafeeden och rapportsviten. Andra filer, till exempel `browser.tsv`, är generiska.
+Observera att `column_headers.tsv` och `event_list.tsv` är specifika för dataflödet och rapporteringssviten. Andra filer, till exempel `browser.tsv`, är generiska.
 
 Uppslagsfilerna levereras tillsammans i en komprimerad zip-fil med följande namn:
 
@@ -85,7 +84,7 @@ Uppslagsfilerna levereras tillsammans i en komprimerad zip-fil med följande nam
 
 ## Träffa datafiler
 
-Träffdata anges i en [!DNL hit_data.tsv]-fil. Mängden data i den här filen avgörs av leveransformatet (varje timme eller dag samt en eller flera filer). Den här filen innehåller bara träffdata. Kolumnrubrikerna levereras separat tillsammans med sökfilerna. Varje rad i den här filen innehåller ett enda serveranrop.
+Träffdata finns i [!DNL hit_data.tsv] -fil. Mängden data i den här filen avgörs av leveransformatet (varje timme eller dag samt en eller flera filer). Den här filen innehåller bara träffdata. Kolumnrubrikerna levereras separat tillsammans med sökfilerna. Varje rad i den här filen innehåller ett enda serveranrop.
 
 Filer som levereras med Adobe varierar beroende på vilken typ av datafeed du har konfigurerat. Alla filer är kodade med ISO-8859-1.
 
@@ -93,7 +92,7 @@ Filer som levereras med Adobe varierar beroende på vilken typ av datafeed du ha
 * `[index]` används endast i flera filflöden och refererar till rätt ordning för sidnumrerade filer.
 * `[YYYY-mm-dd]` avser den första dag som dataflödet är avsett för.
 * `[HHMMSS]` används endast i timmatningar och avser den starttid som datamatningen är avsedd för.
-* `[compression_suffix]` avser den komprimeringstyp som används. Vanligtvis komprimeras dataflöden till `tar.gz`- eller `zip`-filer.
+* `[compression_suffix]` avser den komprimeringstyp som används. Vanligtvis komprimeras dataflöden till `tar.gz` eller `zip` filer.
 
 ### En fil varje dag
 
@@ -101,7 +100,7 @@ När data har samlats in för en dag får du en enda komprimerad datafil och en 
 
 `[rsid]_[YYYY-mm-dd].[compression_suffix]`
 
-När datafilen extraheras innehåller den en enda `hit_data.tsv`-fil med alla data för den dagen samt sökfiler efter eventuella nödvändiga kolumner.
+När filen extraheras innehåller den en `hit_data.tsv` med alla data för den dagen, samt söka efter filer efter eventuella kolumner.
 
 ### Flera filer dagligen
 
@@ -109,7 +108,7 @@ När data har samlats in för en dag får du en eller flera komprimerade datafil
 
 `[index]-[rsid]_[YYYY-mm-dd].[compression_suffix]`
 
-När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehåller ungefär 2 GB okomprimerade data samt sökfiler efter eventuella nödvändiga kolumner.
+När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehåller ungefär 2 GB okomprimerade data, samt filer för eventuella nödvändiga kolumner.
 
 ### En fil varje timme
 
@@ -117,7 +116,7 @@ När data har samlats in under en timme får du en enda komprimerad datafil och 
 
 `[rsid]_[YYYYmmdd]-[HHMMSS].[compression_suffix]`
 
-När datafilen extraheras innehåller den en enda `hit_data.tsv`-fil med alla data för den timmen, samt sökfiler efter eventuella nödvändiga kolumner.
+När filen extraheras innehåller den en `hit_data.tsv` med alla data för den timmen, samt söka efter filer efter eventuella kolumner.
 
 ### Varje timme, flera filer
 
@@ -125,8 +124,8 @@ När data har samlats in under en timme får du en eller flera komprimerade data
 
 `[index]-[rsid]_[YYYYmmdd]-[HHMMSS].[compression_suffix]`
 
-När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehåller ungefär 2 GB okomprimerade data samt sökfiler efter eventuella nödvändiga kolumner.
+När de extraheras innehåller varje datafil en enda `hit_data.tsv` som innehåller ungefär 2 GB okomprimerade data, samt filer för eventuella nödvändiga kolumner.
 
 ## Datafilens storlek
 
-Storleken på träffdatafilen varierar kraftigt beroende på antalet variabler som används och mängden trafik som skickas till rapportsviten. I genomsnitt är emellertid en datarad ungefär 500 B (komprimerad) eller 2 kB (okomprimerad). Genom att multiplicera detta med antalet serveranrop kan du få en ungefärlig uppskattning av hur stor dataflödesfilen är. När din organisation får dataflödesfiler kan du hitta ett mer korrekt nummer genom att dividera antalet rader i `hit_data.tsv` med den totala filstorleken.
+Storleken på träffdatafilen varierar kraftigt beroende på antalet variabler som används och mängden trafik som skickas till rapportsviten. I genomsnitt är emellertid en datarad ungefär 500 B (komprimerad) eller 2 kB (okomprimerad). Genom att multiplicera detta med antalet serveranrop kan du få en ungefärlig uppskattning av hur stor dataflödesfilen är. När din organisation får dataflödesfiler kan du hitta ett mer korrekt nummer genom att dividera antalet rader i `hit_data.tsv` efter den totala filstorleken.

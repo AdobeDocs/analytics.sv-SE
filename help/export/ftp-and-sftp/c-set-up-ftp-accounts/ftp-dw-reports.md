@@ -1,18 +1,20 @@
 ---
-description: Med datalagret kan du begära rapporter som visar avancerade datarelationer från rådata baserat på dina unika frågor.
+description: Med Data warehouse kan du begära rapporter som visar avancerade datarelationer från rådata baserat på dina unika frågor.
 keywords: ftp;sftp
-title: Rapporter om levererade datalager
-uuid: 7a26e6f7-51a1-45fb-b53e-8c49c4f84aa6
-translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+title: Levererade Data Warehouse-rapporter
+feature: FTP Export
+exl-id: d49217a4-33ab-49f8-9207-c5d31e8f798d
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 6%
 
 ---
 
+# Levererade Data Warehouse-rapporter
 
-# Rapporter om levererade datalager
+Med Data warehouse kan du begära rapporter som visar avancerade datarelationer från rådata baserat på dina unika frågor.
 
-Med datalagret kan du begära rapporter som visar avancerade datarelationer från rådata baserat på dina unika frågor.
+FTP-leverans är i detta fall tillgänglig som en del av [!UICONTROL Advanced Delivery Options] konfiguration. Om du använder FTP behöver du ett befintligt internt FTP-konto eller ett Adobe FTP-konto. Adobe konfigurerar inte automatiskt FTP-kontot åt dig via gränssnittet data warehouse. FTP-leveransen ska ske omedelbart, beroende på filstorleken och antalet rapporter som behandlas.
 
-FTP-leverans är i det här fallet tillgängligt som en del av [!UICONTROL Advanced Delivery Options] konfigurationen. Om du använder FTP behöver du ett befintligt internt FTP-konto eller ett Adobe FTP-konto. Adobe konfigurerar inte automatiskt FTP-kontot åt dig via datalagergränssnittet. FTP-leveransen ska ske omedelbart, beroende på filstorleken och antalet rapporter som behandlas.
-
-Mer information om FTP-begränsningar och datalagring finns i [FTP-gränser och datalagring](/help/export/ftp-and-sftp/ftp-limits.md).
+Mer information om FTP-begränsningar och datalagring finns i [FTP-begränsningar och datalagring](/help/export/ftp-and-sftp/ftp-limits.md).

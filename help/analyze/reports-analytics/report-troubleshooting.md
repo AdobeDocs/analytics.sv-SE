@@ -2,9 +2,10 @@
 title: Rapportera bästa praxis och felsökning
 description: Bästa tillvägagångssätt och felsökningstips när du skapar rapporter.
 keywords: bästa praxis;fel;timeout;felsökning;långsam
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 1c09f514-42ab-4698-bdee-d1b509da3f11
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Rapportera bästa praxis och felsökning
 
-*Den här hjälpsidan hänvisar till bästa praxis för rapporter och analyser. För Analysis Workspace, se [Optimera Analysis Workspace-prestanda](../analysis-workspace/workspace-faq/optimizing-performance.md). Mer information om Data warehouse finns i [Bästa praxis för Data warehouse](/help/export/data-warehouse/data-warehouse-bp.md).*
+*Den här hjälpsidan hänvisar till bästa praxis för rapporter och analyser. För Analysis Workspace, se [Optimera Analysis Workspace prestanda](../analysis-workspace/workspace-faq/optimizing-performance.md). För Data warehouse, se [data warehouse bästa praxis](/help/export/data-warehouse/data-warehouse-bp.md).*
 
 Adobe Analytics har ett flexibelt rapporteringsgränssnitt med vilket man kan generera olika komplexa rapporter. De flesta rapporter genereras mycket snabbt, men du kan stöta på rapporter som timeout eller misslyckas med att generera. På den här sidan förklaras faktorer som påverkar rapportgenereringshastigheten. Genom att förstå den här informationen kan du strukturera rapporter så att de lättare kan genereras.
 
@@ -26,7 +27,7 @@ Adobe Analytics har ett flexibelt rapporteringsgränssnitt med vilket man kan ge
 
 Följande faktorer bidrar till längre rapportgenereringstider. Om du ökar en av dessa faktorer påverkar det vanligtvis inte prestandan, men det kan fördröja andra rapporter i rapportsvitkön och orsaka att en efterföljande rapport blir timeout.
 
-* **Tidsintervall för** rapportering: Den största faktorn som påverkar rapportgenereringstiden är antalet månader som efterfrågas. Att minska antalet månader från tre till ett minskar genereringstiden avsevärt, men att minska tidsintervallet från en månad till en vecka har inte någon stor inverkan på rapportgenereringstiden.
+* **Tidsintervall för rapportering**: Den största faktorn som påverkar rapportgenereringstiden är antalet månader som efterfrågas. Att minska antalet månader från tre till ett minskar genereringstiden avsevärt, men att minska tidsintervallet från en månad till en vecka har inte någon stor inverkan på rapportgenereringstiden.
 * **Antal mätvärden**: När antalet mätvärden ökar ökar, ökar rapportens körtid. När du tar bort mätvärden tar det ofta längre tid att generera rapporter.
 * **Antal uppdelningar**: I en rapport representerar varje uppdelning en separat begäran. Även om enskilda förfrågningar kan slutföras snabbt, kan tusentals uppdelningar i en enda rapport göra rapportgenereringstiden avsevärt långsammare och påverka rapportsvitens kö.
 * **Segmentkomplexitet**: Segment som beaktar många dimensioner eller har många (24+) regler ökar bearbetningens påverkan och ökar tiden för rapportgenerering.

@@ -1,15 +1,14 @@
 ---
 description: Schemalägg begäranden i Data warehouse som ska köras upprepade gånger.
 title: Schemalägga en återkommande förfrågan
-uuid: 8ebeb78c-23a0-4b39-a63e-51835e0677a8
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+feature: Data Warehouse
+exl-id: 8c532d14-d2bc-48e9-80a6-7741805b5aca
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 26%
 
 ---
-
 
 # Schemalägga en återkommande förfrågan
 
@@ -19,12 +18,11 @@ Om du vill schemalägga Data warehouse-begäranden för varje dag/månad/år kon
 
 1. Under [!UICONTROL Reporting Date] väljer du **[!UICONTROL Preset]**.
 
-1. Klicka på **[!UICONTROL Advanced Delivery Options]** under [!UICONTROL Schedule Delivery].
+1. Under [!UICONTROL Schedule Delivery], klicka **[!UICONTROL Advanced Delivery Options]**.
 
 1. Gå till fliken Schemaläggningsalternativ och välj **[!UICONTROL Schedule for later]**.
-1. Välj önskade inställningar för [!UICONTROL Delivery Frequency] och [!UICONTROL End Delivery Options].
+1. Välj inställningar för [!UICONTROL Delivery Frequency] och [!UICONTROL End Delivery Options].
 
    ![](assets/dw_schedule.png)
 
 1. Klicka på **[!UICONTROL Schedule]**.
-

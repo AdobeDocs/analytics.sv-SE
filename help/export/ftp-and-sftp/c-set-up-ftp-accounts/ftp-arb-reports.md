@@ -2,9 +2,9 @@
 description: Använd Adobe Report Builder-tillägget för Microsoft Excel för att skapa anpassade förfrågningar från webbanalysdata, som du kan infoga i dina Excel-kalkylblad.
 keywords: ftp;sftp
 title: Levererade Report Builder-rapporter
-uuid: 94070700-4073-499a-afe2-10a30eeab79f
+feature: FTP Export
 exl-id: 0026b6dc-023f-4896-ba0d-0eec16a9d469
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 6%
@@ -15,6 +15,6 @@ ht-degree: 6%
 
 Använd Adobe Report Builder-tillägget för Microsoft Excel för att skapa anpassade förfrågningar från webbanalysdata, som du kan infoga i dina Excel-kalkylblad.
 
-Förfrågningar kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur data presenteras. För FTP måste du se till att värden är tillgänglig externt. Mer information om [!UICONTROL report builder]-levererade rapporter finns i [Hjälp för Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html).
+Förfrågningar kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur data presenteras. För FTP måste du se till att värden är tillgänglig externt. Mer information om [!UICONTROL report builder] levererade rapporter, se [Hjälp om Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html).
 
 Mer information om FTP-begränsningar och datalagring finns i [FTP-begränsningar och datalagring](/help/export/ftp-and-sftp/ftp-limits.md).

@@ -1,24 +1,24 @@
 ---
 title: Mobilattributsökning
 description: Sök efter mobilattribut i filen.
-translation-type: tm+mt
-source-git-commit: 33fd282e6aefa3408574f43ccccbc8a1bb141c37
+feature: Data Feeds
+exl-id: d5130716-2bf2-42ce-811e-26a5081efc18
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
 
 ---
 
-
 # Mobilattributsökning
 
 Mobilattribut visar egenskaper för den mobila enheten i träffen. Den här filen visas när:
 
 * Dynamiska sökningar är aktiverade. En supportrepresentant i din organisation kan kontakta kundtjänst med det feed-ID som du vill använda för att aktivera dynamiska sökningar.
-* Kolumnen `mobile_id` inkluderas.
-* Kolumnen är exkluderad `user_agent` . Detta undantag krävs på grund av licensavtal med DeviceAtlas.
+* The `mobile_id` -kolumnen inkluderas.
+* The `user_agent` kolumnen är exkluderad. Detta undantag krävs på grund av licensavtal med DeviceAtlas.
 
-Hämta [`mobile_attributes_headers.tsv`](assets/mobile_attributes.tsv)eller referera till listan här:
+Hämta [`mobile_attributes_headers.tsv`](assets/mobile_attributes.tsv)eller hänvisa till listan här:
 
 * `mobile_id`
 * `Manufacturer`

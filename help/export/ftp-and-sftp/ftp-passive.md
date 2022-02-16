@@ -1,15 +1,17 @@
 ---
 description: Aktiv FTP kontra passiv FTP styr hur portanslutningarna är upprättade och valet har vissa konsekvenser för brandväggen.
 keywords: ftp;sftp
-title: Använd passivt FTP-läge
-uuid: e56e937e-ec42-45ec-ae8e-8a8ea1b76f3f
-translation-type: tm+mt
-source-git-commit: 99ee24efaa517e8da700c67818c111c4aa90dc02
+title: Använda passivt FTP-läge
+feature: FTP Export
+exl-id: 92f39569-ee41-4c1d-b7de-7a0fff42896c
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 7%
 
 ---
 
-
-# Använd passivt FTP-läge
+# Använda passivt FTP-läge
 
 Aktiv FTP kontra passiv FTP styr hur portanslutningarna är upprättade och valet har vissa konsekvenser för brandväggen.
 

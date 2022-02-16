@@ -2,8 +2,9 @@
 title: Felsöka datafeeds
 description: Lär dig hur du kan identifiera och lösa problem med dataflöden.
 keywords: jobb;felsökning;fel;ftp;chdir;connect;login;put
+feature: Data Feeds
 exl-id: c082bc95-cdae-448b-86b5-695660fb2352
-source-git-commit: b81ffba2f1e021888dd1c4b016c9b451448f47bb
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -20,10 +21,10 @@ Om du har en datafeed som fungerar timvis eller dagligen men som nyligen har mis
 
 * Använd [Statusverktyget i Adobe](https://status.adobe.com/en/experience_cloud) för att avgöra om det finns schemalagda underhållsperioder eller tillgänglighetsproblem. Om det finns ett känt fel bearbetar Adobe automatiskt schemalagda dataflöden när tjänsten har återställts.
 * Kontrollera att det finns tillräckligt med ledigt utrymme på FTP-platsen. Om diskutrymmet tar slut för FTP-platsen tar du bort några filer från servern för att frigöra utrymme för nya filer.
-* Om det inte finns några kända problem och FTP-platsen har tillräckligt med diskutrymme kan du skicka om datafeeden.
+* Om det inte finns några kända problem och FTP-platsen har tillräckligt med diskutrymme kan du skicka om dataflödet.
 
    1. Logga in på Adobe Analytics och navigera till **[!UICONTROL Admin]** > **[!UICONTROL Data feeds]**.
-   2. Leta reda på dataflödena och klicka sedan i kryssrutan bredvid varje datafeed som du vill köra igen.
+   2. Leta reda på dataflödena och klicka sedan i kryssrutan bredvid varje dataflöde som du vill köra igen.
    3. Klicka på **[!UICONTROL Rerun]**.
 
    ![Kör igen](assets/rerun.png)

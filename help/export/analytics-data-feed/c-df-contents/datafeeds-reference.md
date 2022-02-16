@@ -3,10 +3,9 @@ description: Tabelldata som beskriver kolumnerna i dataflödet.
 keywords: Datafeed;kolumner
 subtopic: data feeds
 title: Referens för datakolumner
-feature: Reports & Analytics Basics
-uuid: 9042a274-7124-4323-8cd6-5c84ab3eef6d
+feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 0884c5a13fba7a22589e2962a4d79f4a6525dd8a
+source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
 workflow-type: tm+mt
 source-wordcount: '3445'
 ht-degree: 0%
