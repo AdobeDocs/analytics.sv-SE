@@ -1,13 +1,12 @@
 ---
 description: Använd fall för intelligenta aviseringar.
 title: Intelligenta aviseringar – användningsexempel
-uuid: e848f004-c044-4c7e-a0ac-9f3ea2df9a05
-feature: AI-verktyg
+feature: Alerts
 role: User, Admin
 exl-id: a03312ff-47df-451c-9dfa-0597b3a183cb
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '85'
 ht-degree: 9%
 
 ---

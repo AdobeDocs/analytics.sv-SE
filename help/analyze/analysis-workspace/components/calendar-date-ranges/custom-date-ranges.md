@@ -2,13 +2,12 @@
 description: Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskomponenter.
 keywords: Analysis Workspace
 title: Skapa anpassade datumintervall
-uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
-feature: Grundläggande om arbetsytan
+feature: Calendar
 role: User, Admin
 exl-id: 586bb120-3f20-452c-9867-0b93d2e794bc
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '242'
 ht-degree: 4%
 
 ---
@@ -19,7 +18,7 @@ Skapa anpassade datumintervall i Analysis Workspace och spara dem som tidskompon
 
 **[!UICONTROL Components]** > **[!UICONTROL New Date Range]**
 
-Ett datumintervall används på panelnivå. Om du vill lägga till ett datumintervall i projektet klickar du på **Paneler** > *`<select panel>`* och anger ett nytt datumintervall.
+Ett datumintervall används på panelnivå. Om du vill lägga till ett datumintervall i projektet klickar du på **Paneler** > *`<select panel>`* och ange ett nytt datumintervall.
 
 ## Datumintervall för&quot;två månader sedan&quot; {#section_C4109C57CB444BB2A79CC8082BD67294}
 
@@ -27,7 +26,7 @@ I följande anpassade datumintervall visas ett datumintervall för&quot;två må
 
 ![](assets/date-range-two-months-ago.png)
 
-Det anpassade datumintervallet visas högst upp på [!UICONTROL Date Range]-komponentpanelen i ditt projekt:
+Det anpassade datumintervallet visas högst upp i [!UICONTROL Date Range] komponentpanelen i ditt projekt:
 
 ![](assets/date-range-panel-two-months-ago.png)
 
@@ -37,7 +36,7 @@ Du kan dra det här anpassade datumintervallet till en kolumn tillsammans med et
 
 ## Använd ett 7-dagars rullande datumintervall {#section_7EF63B2E9FF54D2E9144C4F76956A8DD}
 
-Ett datumintervall gäller för panelnivån. Om du vill lägga till ett datumintervall i projektet klickar du på **Åtgärder** > **Lägg till panel** och anger ett nytt datumintervall.
+Ett datumintervall gäller för panelnivån. Om du vill lägga till ett datumintervall i projektet klickar du på **Åtgärder** > **Lägg till panel** och ange ett nytt datumintervall.
 
 I Date Range Builder kan du skapa ett anpassat datumintervall som visas med andra datumintervall på panelen Komponenter.
 
@@ -47,8 +46,8 @@ Du kan till exempel skapa ett datumintervall som anger ett 7-dagars rullande fö
 
 Använd *`rolling daily`*.
 
-* Startinställningarna är *`current day minus 14 days`*.
+* Startinställningarna blir *`current day minus 14 days`*.
 
-* Slutinställningarna är *`current day minus 7 days`*.
+* Slutinställningarna blir *`current day minus 7 days`*.
 
 Datumintervallet kan vara en komponent som du drar till en frihandstabell.

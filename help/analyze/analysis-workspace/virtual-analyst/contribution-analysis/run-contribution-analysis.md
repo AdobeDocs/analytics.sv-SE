@@ -1,13 +1,12 @@
 ---
 description: Kör en bidragsanalysrapport i ett Workspace-projekt.
 title: Köra bidragsanalys
-uuid: 5282a5f9-0771-4974-93cb-335204bde114
-feature: AI-verktyg
+feature: AI Tools
 role: User, Admin
 exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '571'
 ht-degree: 3%
 
 ---
@@ -28,20 +27,20 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
    ![](assets/run_ca.png)
 
-* Håll pekaren över en avvikande datapunkt i ett linjediagram. Klicka på länken **[!UICONTROL Analyze]** som visas.
+* Håll pekaren över en avvikande datapunkt i ett linjediagram. Klicka på **[!UICONTROL Analyze]** länk som visas.
 
    ![](assets/contribution-analysis.png)
 
-1. (Valfritt) När du har klickat på **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen med [exklusive dimensioner](#section_F6932F4BF74544B5872164E7B1E0C6FC).
+1. (Valfritt) När du har klickat **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen med [exklusive dimensioner](#section_F6932F4BF74544B5872164E7B1E0C6FC).
 
 1. Vänta medan din bidragsanalys läses in. Detta kan ta lång tid, beroende på rapportsvitens storlek och antalet dimensioner. Bidragsanalys utför analyser på de 50 000 främsta objekten per dimension.
 1. Analysis Workspace läser sedan in en ny bidragsanalyspanel direkt i projektet. Du kommer att märka en mängd välbekanta paneler om du har använt bidragsanalys i rapporter och analyser tidigare:
 
-   * En visualisering som visar antalet **besök** den dagen.
-   * En månatlig **Besök trendlinje** för kontext.
-   * **De viktigaste** objekten som bidrog till avvikelsen, sorterade efter  [bidragspoängen](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html), plus måttet i fråga och ett unikt besökarmått som sätter måttet i rätt kontext ur ett storleksändringsperspektiv.
+   * En visualisering som visar antalet **Besök** den dagen.
+   * En gång i månaden **Besök Trend line** för kontext.
+   * **De vanligaste objekten** som bidrog till avvikelsen, sorterade efter [täckningsgrad](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html), plus det aktuella måttet och ett unikt besökarmått som sätter måttet i sitt sammanhang utifrån ett storleksperspektiv.
 
-   * Tabellen [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters) identifierar associationer av de översta objekten baserat på bidragsresultat, avvikelser och total procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
+   * The [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters)-tabellen identifierar associationer av de vanligaste objekten baserat på bidragsresultat, avvikelser och den totala procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
 
       ![](assets/auto_segment.png)
 
@@ -61,9 +60,9 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
 Det kan finnas tillfällen då du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
 
-1. När du har klickat på **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) visas panelen **[!UICONTROL Excluded Dimensions]**.
+1. Efter att du klickat **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) **[!UICONTROL Excluded Dimensions]** visas.
 
-1. Dra bara oönskade mått till panelen **[!UICONTROL Excluded Dimensions]** och spara sedan listan genom att klicka på **[!UICONTROL Set as Default]**. Du kan också klicka på **[!UICONTROL Clear All]** för att börja om med att välja dimensioner som ska uteslutas.
+1. Bara dra oönskade dimensioner till **[!UICONTROL Excluded Dimensions]** och sedan spara listan genom att klicka på **[!UICONTROL Set as Default]**. Eller klicka **[!UICONTROL Clear All]** för att börja om med att välja dimensioner som ska uteslutas.
 
    ![](assets/exclude_dimensions.png)
 

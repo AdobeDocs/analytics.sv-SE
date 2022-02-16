@@ -1,33 +1,33 @@
 ---
 description: Använd snabbsegment i Analysis Workspace.
 title: Snabbsegment
-feature: Workspace Basics
+feature: Segmentation
 role: User, Admin
-source-git-commit: 533c58f3bcc3974dafab1d6b7dd3e239ad80831b
+exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 1%
 
 ---
 
-
 # Snabbsegment
 
-Du kan skapa snabbsegment i ett projekt för att kringgå komplexiteten i den fullständiga [segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-build.md). Snabbsegment
+Du kan skapa snabbsegment i ett projekt för att slippa komplexiteten i den fullständiga [segmentbyggare](/help/components/segmentation/segmentation-workflow/seg-build.md). Snabbsegment
 
 * Gäller endast projekt i vilka de har skapats (du kan ändra detta).
 * Tillåt upp till tre regler.
 * Innesluta inte kapslade behållare eller sekventiella regler.
 * Arbeta i projekt med flera rapportsviter.
 
-Om du vill jämföra vad snabbsegment kan göra med fullständiga komponentlistesegment går du [hit](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
+Om du vill jämföra vad snabbsegment kan göra jämfört med fullständiga komponentlistsegment går du till [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
 
 >[!IMPORTANT]
 > Snabbsegment är för närvarande i begränsade tester och kommer att vara allmänt tillgängliga den 21 oktober 2021.
 
 ## Förutsättningar
 
-Alla kan skapa en [!UICONTROL Quick Segment]. Du måste dock ha behörigheten [!UICONTROL Segment Creation] i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) för att kunna spara ett snabbsegment eller öppna det i [!UICONTROL Segment Builder].
+Vem som helst kan skapa en [!UICONTROL Quick Segment]. Du behöver dock [!UICONTROL Segment Creation] behörighet i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) för att kunna spara ett snabbsegment eller öppna det i [!UICONTROL Segment Builder].
 
 ## Skapa snabbsegment
 
@@ -43,9 +43,9 @@ Konfigurera snabbsegmentet från den här tomma plattan:
 | --- | --- |
 | Namn | Standardnamnet för ett segment är en kombination av regelnamnen i segmentet. Du kan byta namn på segmentet. |
 | Inkludera/exkludera | Du kan antingen inkludera eller exkludera komponenter i segmentdefinitionen, men inte båda. |
-| Behållare för träff/besök/besök | Snabbsegment innehåller bara en [segmentbehållare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en#section_AF2A28BE92474DB386AE85743C71B2D6) som gör att du kan inkludera ett mått-/mätvärde-/datumintervall i (eller exkludera det från) segmentet. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren vid besök och sidvisningar. Med en [!UICONTROL Visit]-behållare kan du ange regler för att dela upp besökarens data baserat på besök, och med en [!UICONTROL Hit]-behållare kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
-| Komponenter (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (mått och/eller mått och/eller datumintervall) och deras värden. Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva så hittar verktyget [!UICONTROL Quick Segment] automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
-| Operator | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count]-operatorer. [Läs mer](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html?lang=en) |
+| Behållare för träff/besök/besök | Snabbsegment innehåller ett [segmentbehållare](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en#section_AF2A28BE92474DB386AE85743C71B2D6) bara så att du kan inkludera ett mått/mått/datumintervall i (eller exkludera det från) segmentet. [!UICONTROL Visitor] innehåller översiktsdata som är specifika för besökaren vid besök och sidvisningar. A [!UICONTROL Visit] kan du ange regler för att dela upp besökarens data baserat på besök och en [!UICONTROL Hit] kan du dela upp besökarinformation baserat på enskilda sidvyer. Standardbehållaren är [!UICONTROL Hit]. |
+| Komponenter (Dimension/mått/datumintervall) | Definiera upp till tre regler genom att lägga till komponenter (mått och/eller mått och/eller datumintervall) och deras värden. Det finns tre sätt att hitta rätt komponent:<ul><li>Börja skriva och [!UICONTROL Quick Segment] builder hittar automatiskt rätt komponent.</li><li>Använd listrutan för att hitta komponenten.</li><li>Dra och släpp komponenter från den vänstra listen.</li></ul> |
+| Operator | Använd listrutan för att hitta standardoperatorer och [!UICONTROL Distinct Count] operatorer. [Läs mer](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html?lang=en) |
 | Plustecken (+) | Lägg till en annan regel |
 | OCH/ELLER-kvalificerare | Du kan lägga till&quot;AND&quot;- eller&quot;OR&quot;-kvalificerare i reglerna, men du kan inte blanda&quot;AND&quot; och&quot;OR&quot; i en enskild segmentdefinition. |
 | Använd | Använd det här segmentet på panelen. Om segmentet inte innehåller några data tillfrågas du om du vill fortsätta. |
@@ -85,10 +85,10 @@ Lägg märke till hur segmentets sidlist ändras från randig blå till blå. De
 
 ## Vad är segment med endast projekt?
 
-Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i [!UICONTROL Segment Builder] visas rutan för endast projekt. Om du använder ett snabbsegment i byggaren men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i [!UICONTROL Quick Segment Builder].
+Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i [!UICONTROL Segment Builder]visas den projektspecifika rutan. Om du använder ett snabbsegment i verktyget men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i [!UICONTROL Quick Segment Builder].
 
 ![Endast projektet är omarkerat](assets/project-only-unchecked.png)
 
-Om du markerar rutan och klickar på **[!UICONTROL SAVE]** är det nu ett komponentlistsegment.
+Om du markerar rutan och klickar på **[!UICONTROL SAVE]**&#x200B;är det nu ett komponentlistsegment.
 
 ![Endast projektet är markerat](assets/project-only-checked.png)

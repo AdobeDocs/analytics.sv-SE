@@ -1,13 +1,12 @@
 ---
 description: Vanliga problem vid användning av Report Builder med Power BI.
 title: Felsöka Power BI-integrering
-uuid: c1e7e164-4bc6-4513-9332-92c53be021cc
 feature: Report Builder
 role: User, Admin
 exl-id: adb13a0e-99fb-48f5-add2-204d155e467f
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
@@ -21,7 +20,7 @@ Utforska och åtgärda vanliga problem när du använder Report Builder med Powe
 Schemalagda arbetsböcker som kräver Power BI-publicering är beroende av att Power BI-tjänster är igång. Två huvudorsaker till att publiceringen inte lyckas är:
 
 * Power BI-tjänsterna kan vara nere.
-* Användaren som har schemalagt arbetsboken har inte längre giltiga autentiseringsuppgifter för Microsoft-kontot.
+* Användaren som har schemalagt arbetsboken har inte längre giltiga Microsoft-kontouppgifter.
 
 Varje schemalagd Report Builder-aktivitet får tre försök per schemalagd körning:
 
@@ -38,8 +37,8 @@ Här är de viktigaste skälen till varför du kan få brutna visualiseringar ef
 
 ## Report Builder måste ha behörighet att komma åt organisationens resurser. Den här åtkomsten kan bara beviljas av en administratör. Be en administratör att ge dig tillstånd.
 
-Låt en Microsoft Admin granska inställningen &quot;Användare kan registrera program&quot; som finns under: **[!UICONTROL Microsoft Azure]** > **[!UICONTROL Azure Active Directory]** > **[!UICONTROL User Settings allows options]**. Om det här alternativet är inställt på Nej kan administratören registrera dessa typer av program.
+Be en Microsoft-administratör granska inställningen&quot;Användare kan registrera program&quot; som finns under: **[!UICONTROL Microsoft Azure]** > **[!UICONTROL Azure Active Directory]** > **[!UICONTROL User Settings allows options]**. Om det här alternativet är inställt på Nej kan administratören registrera dessa typer av program.
 
-Användare kan bevilja åtkomst via följande [länk](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=logint&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
+Användare kan bevilja åtkomst genom att använda följande [link](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=logint&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
 
-Administratörer beviljade åtkomst för var och en genom att använda följande [länk](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=admin_consent&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
+Administratörer beviljade åtkomst för var och en genom att använda följande [link](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=admin_consent&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).

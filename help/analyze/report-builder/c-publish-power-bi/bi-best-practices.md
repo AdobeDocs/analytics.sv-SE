@@ -1,14 +1,13 @@
 ---
 description: Power BI best practices.
 title: God praxis
-uuid: 6d55a9aa-030e-4e4d-963c-ec9cc38e1731
 feature: Report Builder
 role: User, Admin
 exl-id: 2d9447f4-77ac-465b-af93-206dc3ea80f7
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 4%
+source-wordcount: '138'
+ht-degree: 2%
 
 ---
 

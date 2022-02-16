@@ -1,15 +1,15 @@
 ---
-description: Skapa ett styrkort för kontrollpaneler i Analytics
-title: Skapa ett styrkort
+description: Chefsanvändare kan behöva lite extra hjälp för att komma åt och använda appen. I det här avsnittet finns information som du kan använda för att få hjälp.
+title: Konfigurera företagsledare med appen
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 63f4f69cd22531ced7c65d1b38fdc982da97887b
+exl-id: 0e858407-2852-4a5f-a0df-3ba290fcca8f
+source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera företagsledare med appen
 
@@ -23,24 +23,24 @@ I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt oc
 
 ## Systemkrav för appanvändare
 
-För att se till att chefsanvändare har tillgång till dina styrkort i appen ska du se till att:
+För att se till att företagsinterna användare har tillgång till dina styrkort i appen ska du se till att:
 
 * De lägsta kraven för mobiloperativsystem på enheterna är iOS version 10 eller senare, eller Android version 4.4 (KitKat) eller senare
 * De har en giltig inloggning på Adobe Analytics.
 * Du har skapat mobila styrkort för dem och delat dem med dem.
-* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar dina styrkort till **[!UICONTROL Share embedded components]**.
+* De har tillgång till de komponenter som styrkortet innehåller. Observera att du kan välja ett alternativ när du delar styrkort till **[!UICONTROL Share embedded components]**.
 
 ## Hjälp chefer att hämta och installera program
 
 **För chefsanvändare på iOS:**
 
-Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **För chefsanvändare på Android:**
 
-Klicka på följande länk (den är även tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna appen:
+Klicka på följande länk (den är också tillgänglig i Analytics under **[!UICONTROL Tools]** > **[!UICONTROL Analytics dashboards (Mobile App)]**) och följ anvisningarna för att hämta, installera och öppna programmet:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
@@ -52,7 +52,7 @@ När de har hämtats och installerats kan företagsanvändare logga in i appen m
 
 1. Låt chefsanvändare logga in i appen.
 
-   Skärmen **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör.
+   The **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som den verkställande användaren tillhör.
 
 1. Låt dem trycka på namnet på inloggningsföretaget eller Experience Cloud-organisationen som gäller för styrkortet som du delade.
 
@@ -97,7 +97,7 @@ Ytterligare information om plattor:
 
 ## Ändra appinställningar
 
-Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]**-alternativet som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
+Om du vill ändra inställningarna trycker du på **[!UICONTROL Preferences]** som visas ovan. I inställningarna kan du aktivera biometrisk inloggning eller ställa in programmet för mörkt läge enligt nedan:
 
 ![Mörkt läge](assets/darkmode.png)
 
@@ -114,4 +114,4 @@ Kontrollera att chefsanvändaren kan logga in på rätt Adobe Analytics-instans 
 
 >[!IMPORTANT]
 >
->Från och med oktober 2020 kommer Adobe gradvis att lansera en rad förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta din CSM om du vill avanmäla dig från dessa prestandaförbättringsfunktioner.
+>Från och med oktober 2020 kommer Adobe gradvis att lansera en serie förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta din CSM om du vill avanmäla dig från dessa prestandaförbättringsfunktioner.

@@ -2,11 +2,10 @@
 description: Lär dig grunderna i hur du arbetar i ett Workspace-projekt.
 keywords: Analysis Workspace
 title: Översikt över projekt
-uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 feature: Workspace Basics
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 2%

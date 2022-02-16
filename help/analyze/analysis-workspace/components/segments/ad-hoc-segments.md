@@ -1,15 +1,15 @@
 ---
 description: Använd ad hoc-segment i Analysis Workspace.
 title: Ad hoc-segment
-feature: Workspace Basics
+feature: Segmentation
 role: User, Admin
-source-git-commit: f3185f1ee341348fb7bdbaab8b68d421e7c79076
+exl-id: 1c189abc-ab9f-413c-9be6-0d2fc457230e
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # Ad hoc-projektsegment
 
@@ -19,7 +19,7 @@ Här är en video om hur du skapar ad hoc-projektsegment:
 
 Du kan skapa ad hoc-projektsegment om du snabbt vill utforska hur ett segment kan påverka projektet, utan att gå till segmentbyggaren. Tänk på dessa segment som tillfälliga segment på projektnivå. De är vanligtvis inte en del av ditt segment som&quot;bibliotek&quot;, som komponentsegment i den vänstra listen. Du kan dock spara dem enligt nedan.
 
-En jämförelse av vad ad hoc-projektsegment kan göra jämfört med helformaterade segment på komponentnivå finns [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
+Om du vill jämföra vad ad hoc-projektsegment kan göra jämfört med fullständiga segment på komponentnivå går du till [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
 
 1. Släpp en komponenttyp (dimension, dimensionsobjekt, händelse, mått, segment, segmentmall, datumintervall) i segmentsläppzonen längst upp på panelen. Komponenttyper konverteras automatiskt till segment.
 Här följer ett exempel på hur du skapar ett segment för den hänvisande domänen för Twitter:
@@ -33,7 +33,7 @@ Här följer ett exempel på hur du skapar ett segment för den hänvisande dom�
 
 Tänk på följande:
 
-* Du **kan inte** släppa följande komponenttyper i segmentzonen: beräknade mått och mått/mätvärden som du inte kan bygga segment utifrån.
+* Du **inte** släpp följande komponenttyper i segmentzonen: beräknade mått och mått/mätvärden som du inte kan bygga segment utifrån.
 * För alla dimensioner och händelser skapar Analysis Workspace&quot;finns&quot;-träffsegment. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
 * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i segmentets släppzon konverteras det automatiskt till segmentet &quot;does not exist&quot; så att det behandlas korrekt i segmentering.
 
@@ -46,7 +46,7 @@ Tänk på följande:
 Du kan välja att spara dessa segment genom att följa dessa steg:
 
 1. Håll pekaren över segmentet i släppzonen och klicka på ikonen i.
-1. Klicka på **[!UICONTROL Save]** på informationspanelen som visas.
+1. Klicka på **[!UICONTROL Save]**.
 
    ![](assets/segment-info.png)
 

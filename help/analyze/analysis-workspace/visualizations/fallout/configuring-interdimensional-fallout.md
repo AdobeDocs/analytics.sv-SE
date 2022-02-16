@@ -1,11 +1,10 @@
 ---
 description: Med Fallout i Analysis Workspace kan du blanda och matcha mått och mätvärden som kontaktytor i flöden och arbetsflöden. Detta ger större flexibilitet när det gäller att definiera de användarsteg som du vill undersöka.
 title: Flerdimensionellt utfall
-uuid: 17520727-2d06-4dc2-a66d-66e3350bdda3
 feature: Visualizations
 role: User, Admin
 exl-id: 12de8e52-02c1-4e11-b530-48294f201fe0
-source-git-commit: 76af5908fd65cae26106ca9c1a71978624a77320
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%

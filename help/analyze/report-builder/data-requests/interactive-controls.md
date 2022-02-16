@@ -1,13 +1,12 @@
 ---
 description: Med interaktiva kontroller kan du redigera segment och datumintervall för en eller flera begäranden direkt från kalkylbladet. Detta ger större flexibilitet vid uppdatering av förfrågningar från Report builder.
 title: Interaktiva kontroller
-uuid: 5f324b61-e032-455e-9947-5037f013e0fa
 feature: Report Builder
 role: User, Admin
 exl-id: 2340ff31-1478-4a54-a4c3-c51e73c39109
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -26,9 +25,7 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 >Du måste ha Report Builder v5.0 installerat för att de interaktiva kontrollerna ska fungera. >
 >* Om du kör Microsoft Excel i Windows men kör en äldre version av Report Builder, eller om du inte har Report Builder installerat: Du kan ändra värdet i den interaktiva kontrollen, men det kommer inte att uppdatera den associerade begäran eller uppdatera de associerade parametrarna för begäran.
 >* Om du kör Excel på Mac och ändrar värdet i kontrollen visas följande meddelande: &quot;Det går inte att hitta makrot &quot;Adobe.ReportBuilder.Bridge.FormControlClick.Event&quot;.&quot;
-
 >
-
 
 
 >[!IMPORTANT]
@@ -37,8 +34,8 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 
 ## Implementera interaktiv kontroll för datumintervall {#section_39B228F2D2C44985863D31424C953280}
 
-1. I steg 1 i begärandeguiden väljer du till exempel rapporten **[!UICONTROL Page]**.
-1. Klicka på ikonen **[!UICONTROL Control Settings]** bredvid listrutan **[!UICONTROL Commonly Used Dates]**:
+1. I steg 1 i begärandeguiden väljer du till exempel **[!UICONTROL Page]** rapport.
+1. Intill **[!UICONTROL Commonly Used Dates]** nedrullningsbar meny, klicka på **[!UICONTROL Control Settings]** ikon:
 
    ![](assets/date_range_control.png)
 
@@ -64,13 +61,13 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 
       >[!NOTE]
       >
-      >Du kan använda den inbyggda Microsoft Excel-kontrollfunktionen Klipp ut, Kopiera och Klistra in. Report builder känner automatiskt igen de nya kontrollerna.
+      >Du kan använda den inbyggda funktionen Klipp ut/Kopiera/Klistra in i Microsoft Excel. Report builder känner automatiskt igen de nya kontrollerna.
 
 ## Implementera interaktiv segmentkontroll {#section_5003D3F724644280BF1BCD6E1B0CB784}
 
 Att implementera den interaktiva segmentkontrollen liknar att implementera datumintervallkontrollen.
 
-1. I steg 1 i begärandeguiden, bredvid listrutan **[!UICONTROL Segment]**, väljer du ikonen Inställningar för segmentkontroll:
+1. I steg 1 i begärandeguiden, bredvid **[!UICONTROL Segment]** väljer du ikonen Inställningar för segmentkontroll:
 
    ![](assets/segment_interactive_1.png)
 

@@ -1,13 +1,12 @@
 ---
 description: Begränsningar när du använder Report Builder och Microsoft Power BI.
 title: Begränsningar och specifikationer
-uuid: 6717b6ea-7e01-49b8-8f6e-fb733a03b687
 feature: Report Builder
 role: User, Admin
 exl-id: 4bbeec5b-64bc-4285-9f13-33b223b88834
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -70,5 +69,5 @@ Som standard fylls namnet i från arbetsbokens filnamn (utan filtillägget .xlsx
 Kom ihåg
 
 * Etiketten kan inte vara en kombination av bokstäver och siffror som kan vara felaktiga för en rad- och kolumnadress. A100 kan till exempel inte vara en etikett eftersom det är adressen till en cell i ett kalkylblad.
-* Följande tecken är inte giltiga etikettecken: `'#', '@', '!', '$', '^', '&', '&#42;', '` och `'~', ' '`. De ersätts med ett understreck.
-* När du anger ett ogiltigt namn visas ett varningsmeddelande som föreslår ett automatiskt genererat namn. Om du klickar på **[!UICONTROL Yes]** används det här namnet. Om du klickar på **[!UICONTROL No]** kan du ange det nya namnet med hjälp av gränssnittet för den avancerade guiden.
+* Följande tecken är inte giltiga etikettecken: `'#', '@', '!', '$', '^', '&', '&#42;', '`och `'~', ' '` . De ersätts med ett understreck.
+* När du anger ett ogiltigt namn visas ett varningsmeddelande som föreslår ett automatiskt genererat namn. Om du klickar **[!UICONTROL Yes]** används det här namnet. Om du klickar **[!UICONTROL No]** kan du ange det nya namnet i gränssnittet för den avancerade guiden.

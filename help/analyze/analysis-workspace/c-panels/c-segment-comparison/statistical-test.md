@@ -2,13 +2,12 @@
 description: Var och en av de översta jämförelsetabellerna visar ett differensresultat som beräknas genom flera statistiska tester beroende på vilken jämförelse som görs. Oberoende av vilket test som används visas dock differenspoängen som ett värde mellan 0 och 1.
 keywords: Analysis Workspace;Segmentanalys
 title: Statistiska tester som används vid segmentjämförelse
-feature: Rapporter och analysgrunder
-uuid: c3f52470-5bfc-4e6b-8638-1c142b08d013
+feature: Segmentation
 role: User, Admin
 exl-id: b1c235ca-2eab-48d2-bf11-e8a8c4067d03
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '467'
 ht-degree: 2%
 
 ---

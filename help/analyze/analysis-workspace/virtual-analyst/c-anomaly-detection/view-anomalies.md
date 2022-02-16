@@ -1,13 +1,12 @@
 ---
 description: Du kan visa avvikelser i en tabell eller i ett linjediagram.
 title: Visa avvikelser i Analysis Workspace
-uuid: 270a7ea9-6485-4c83-8220-5a2200bd7200
-feature: AI-verktyg
+feature: Anomaly Detection
 role: User, Admin
 exl-id: 32edc7f4-c9b9-472a-b328-246ea5b54d07
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 4%
 
 ---
@@ -33,7 +32,7 @@ Om du klickar på en vit punkt blir den grön och den visar dig:
 * Datumet då avvikelsen inträffade
 * avvikelsens råvärde
 * Procentvärdet över eller under det förväntade värdet, som representeras av den helgröna linjen.
-* Länken Analysera startar [bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md).
+* Länken Analysera som ska startas [Bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md).
 
 ![](assets/anomaly_linechart.png)
 

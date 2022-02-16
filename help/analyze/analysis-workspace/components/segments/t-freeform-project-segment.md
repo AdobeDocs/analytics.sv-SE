@@ -1,11 +1,10 @@
 ---
 description: Använd segment i Analysis Workspace.
 title: Segment
-uuid: 677f6030-5b3e-4dfa-bb79-9f27f3382fb1
-feature: Workspace Basics
+feature: Segmentation
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 86766c4452a571a7c7b36ad6693a1a1e0bc2deea
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%

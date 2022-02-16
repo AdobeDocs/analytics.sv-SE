@@ -1,11 +1,10 @@
 ---
 description: Ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
 title: Översikt över avvikelseidentifiering
-uuid: 991fde08-198c-4410-9606-d5a4f3dd8339
-feature: AI Tools
+feature: Anomaly Detection
 role: User, Admin
 exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
-source-git-commit: 76072b45114a15d9b366657ea81872035965e5b6
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 9%
@@ -20,7 +19,7 @@ Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspa
 
 >[!IMPORTANT]
 >
->Analysidentifiering har tagits bort från funktionerna Rapporter och analys och är nu endast tillgängligt via Analysis Workspace. Tänk på att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till avvikelseidentifiering på dagsnivå i Workspace. Mer information finns i [Anomaldetektering och bidragsanalysberättiganden](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md#section_9278D58F21A840AA9B1ED1BD07A1EF0A).
+>Analysidentifiering har tagits bort från funktionerna Rapporter och analys och är nu endast tillgängligt via Analysis Workspace. Tänk på att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till avvikelseidentifiering på dagsnivå i Workspace. Mer information finns i [Behörigheter för avvikelseidentifiering och bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md#section_9278D58F21A840AA9B1ED1BD07A1EF0A).
 
 Analysidentifiering är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data.
 
@@ -35,7 +34,7 @@ Exempel på avvikelser du kan undersöka är:
 * Inslag i videobufferthändelser
 * Taggar i låga videobithastigheter
 
-Både avvikelseidentifiering och [bidragsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot eventuella avvikelser per dag och bädda in resultatet i ditt Analysis Workspace-projekt.
+Både avvikelseidentifiering och [Bidragsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html) är centrala arbetsflöden i Analysis Workspace. Du kan köra Contribute Analysis mot eventuella avvikelser per dag och bädda in resultatet i ditt Analysis Workspace-projekt.
 
 Analysis Workspace avvikelseidentifieringsalgoritm innehåller
 

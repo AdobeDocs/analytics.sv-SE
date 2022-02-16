@@ -4,16 +4,16 @@ title: Vad är visualiseringsfärgpaletter och hur fungerar de?
 feature: Workspace Basics
 role: User, Admin
 exl-id: 7e426423-5475-44cc-9e78-74c0da5b93f8
-source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '205'
 ht-degree: 2%
 
 ---
 
 # Visualiseringsfärgpaletter
 
-Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men det gör den **not** påverkar Sammanfattningsändring, villkorsstyrd formatering i frihandstabeller och Kartvyn.
+Du kan ändra den visualiseringsfärgpalett som används i Workspace genom att välja en annan färgpalett eller genom att ange en egen palett som kan matcha företagets grafiska profil. Den här funktionen påverkar de flesta visualiseringar i Workspace, men det gör den **not** påverka [!UICONTROL Summary Change], villkorsstyrd formatering i [!UICONTROL Freeform] tabeller och [!UICONTROL Map] visualisering.
 
 >[!NOTE]
 >
@@ -26,9 +26,9 @@ Tänk på följande:
 * Det finns fem förinställda färgpaletter att välja mellan. Standardpaletten och den nedan har optimerats för optimal kontrast och är båda mer tillgängliga för dem som är färgblinda.
 * Den tredje till femte färgpaletten under de två översta har optimerats för färgharmonier.
 
-## Ändra din färgpalett:
+## Ändra dina [!UICONTROL color palette]:
 
-Här är en video om hur du använder anpassade färgpaletter:
+Här är en video om hur du använder anpassade [!UICONTROL color palettes]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23876/?quality=12)
 

@@ -1,11 +1,10 @@
 ---
 description: Använd utfallsvisualisering i ett Workspace-projekt.
 title: Översikt över utfall
-uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
 feature: Visualizations
 role: User, Admin
 exl-id: 85d0c88e-d159-4870-aaf6-51899d87ff77
-source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
+source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 2%
@@ -61,4 +60,4 @@ Om segmentet som används på panelen är mindre än utfallsnivån (t.ex. träff
 * Segmentet är inte på samma nivå som utfallet.
 * Segmentet har en variabel där besökaren/besöket kan ha flera värden under ett besök/en besökare.
 
-I de sällsynta fall där du behöver ha Analysis Workspace som matchar metoden Rapporter och analyser för att tillämpa segment på bortfall/flöde, släpper du bara segmentet i varje utfallssteg i Workspace och ger samma antal.
+I de sällsynta fall där du behöver ha Analysis Workspace som matchar metoden Rapporter och analyser för att tillämpa segment på utfall/flöde, släpper du bara segmentet i varje utfallssteg i Workspace så får du samma antal.
