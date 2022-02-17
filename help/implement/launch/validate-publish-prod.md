@@ -1,8 +1,9 @@
 ---
 title: Validera en utvecklingsimplementering och publicera till produktion
 description: Lär dig hur du använder Adobe Experience Platform-taggar för att distribuera Adobe Analytics till din produktionsmiljö.
+feature: Launch Implementation
 exl-id: 2f5bcfee-d75e-4dac-bea9-91c6cc545173
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 När taggbiblioteket är i produktion kan ni börja använda Adobe Analytics för att hämta in grundläggande rapporter.
 
 >[!NOTE]
->Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad referens till terminologiska ändringar.
+>Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad hänvisning till terminologiska förändringar.
 
 ## Förutsättningar
 
@@ -35,15 +36,15 @@ Felsökaren Experience Cloud är en Chrome-plugin som visar alla Experience Clou
 
 När du har validerat dina data kan du överföra implementeringen till den publicerade versionen av webbplatsen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-1. Klicka på fliken **[!UICONTROL Publishing]** och leta upp ditt bibliotek i utvecklingskolumnen.
-1. Klicka på listrutan i biblioteket och välj **[!UICONTROL Submit for Approval]**. Klicka på **[!UICONTROL Submit]** i det modala fönstret.
+1. Klicka på **[!UICONTROL Publishing]** och leta upp ditt bibliotek i utvecklingskolumnen.
+1. Klicka på listrutan i biblioteket och välj **[!UICONTROL Submit for Approval]**. Klicka **[!UICONTROL Submit]** i modalfönstret.
 1. Klicka på bibliotekets listruta igen (nu i kolumnen Skickat) och välj **[!UICONTROL Build for Staging]**.
 1. Efter en stund blir det gula färgade ljuset i biblioteket grönt, vilket indikerar att bygget lyckades.
 1. Klicka på bibliotekets listruta igen och välj **[!UICONTROL Approve for Publishing]**.
-1. Klicka på bibliotekets listruta igen (nu i kolumnen [!UICONTROL Approved]) och välj **[!UICONTROL Build and Publish to Production]**.
-1. Gå till fliken Miljöer och klicka på **[!UICONTROL Production Environment]**.
+1. Klicka på bibliotekets listruta igen (nu i [!UICONTROL Approved] kolumn) och markera **[!UICONTROL Build and Publish to Production]**.
+1. Gå till fliken Miljö och klicka **[!UICONTROL Production Environment]**.
 1. Kopiera produktionshuvudet + sidfotskoden och ge den till webbplatsägarna. Begär att de implementerar den här koden i din webbplats produktionsmiljö.
 
 ## Validera din produktionsimplementering
@@ -60,7 +61,7 @@ Bekräfta att du ser data i den publicerade versionen av din webbplats och börj
 Öppna webbläsarens utvecklarkonsol (vanligtvis F12) när du är på din plats. Titta på sidans källkod och kontrollera att följande uppfylls:
 
 * Det finns inga JavaScript-fel i konsolen. Samarbeta med webbplatsägarna i organisationen för att säkerställa att alla JS-fel åtgärdas.
-* Huvudkoden är korrekt implementerad: Kontrollera att rubrikkoden finns inuti taggen `<head>` och att filen finns.
+* Huvudkoden är korrekt implementerad: Kontrollera att rubriktexten finns inuti `<head>` och att filen finns.
 * AppMeasurement-biblioteket finns: Navigera direkt till JS-källan för att kontrollera att JS-filen innehåller kod. Om så inte är fallet kontrollerar du att alla miljöer har skapats och att biblioteket har publicerats i respektive miljö.
 * Interfering plug-ins: Vissa Chrome-plugin-program kan förhindra att bildbegäranden utlöses. Inaktivera plugin-program som kan förhindra att data skickas till Adobe-servrar.
 
@@ -68,5 +69,5 @@ Bekräfta att du ser data i den publicerade versionen av din webbplats och börj
 
 Nu när en grundläggande implementering är klar kan din roll i organisationen påverka vilken väg du vill lära dig mer om:
 
-* [Skapa ett designdokument](../prepare/solution-design.md): Planera hur du vill använda anpassade variabler och inkludera dem sedan i implementeringen
+* [Skapa ett dokument för lösningsdesign](../prepare/solution-design.md): Planera hur du vill använda anpassade variabler och inkludera dem sedan i implementeringen
 * [Kom igång med Analysis Workspace](/help/analyze/analysis-workspace/home.md): Gör en djupdykning i Adobe Analytics med verktygets flaggskeppsfunktion.

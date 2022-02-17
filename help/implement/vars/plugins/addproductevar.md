@@ -1,8 +1,9 @@
 ---
 title: addProductEvar
 description: Lägger till eVars för försäljning i variabeln products.
+feature: Variables
 exl-id: 6be94a15-78c9-4cbc-8b33-4a16f1b73b96
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med plugin-programmet `addProductEvar` kan du enkelt lägga till en Adobe Analytics-eVar som använder produktsyntax i variabeln products utan att behöva bekymra dig om det redan befintliga innehållet i variabeln products ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntaxer för varuexponering av eVars i variabeln [`products`](../page-vars/products.md). Du behöver inte använda plugin-programmet `addProductEvar` om du inte använder eVars för försäljning med produktsyntax.
+The `addProductEvar` Med plugin-programmet kan du enkelt lägga till en Adobe Analytics-eVar som använder produktsyntax i variabeln products utan att behöva bekymra dig om det redan befintliga innehållet i variabeln products ska ändras/flyttas/tas bort. Adobe rekommenderar att du använder denna plugin om du enkelt vill lägga till produktsyntax för varuexponering för eVars i [`products`](../page-vars/products.md) variabel. Du behöver inte använda `addProductEvar` plugin-program om du inte använder varuexponering för eVars med produktsyntax.
 
 >[!NOTE]
 >
@@ -25,10 +26,10 @@ Med plugin-programmet `addProductEvar` kan du enkelt lägga till en Adobe Analyt
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -41,10 +42,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -61,13 +62,13 @@ function addProductEvar(en,ev,ap){var e=en,f=ev,d=ap;if("-v"===e)return{plugin:"
 
 ## Använda plugin-programmet
 
-Plugin-programmet `addProductEvar` använder följande argument:
+The `addProductEvar` I plugin-programmet används följande argument:
 
 * **`en`** (required, string): eVar som ska läggas till i den sista posten som finns i variabeln products. Om variabeln products är tom skapar plugin-programmet en tom produktpost med det eVar som är bifogat till slutet av posten.
 * **`ev`** (required, string): Värdet som tilldelats eVar.
-* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost läggs värdet true (eller 1) till i  **** alla produktposter.  Standardvärdet är false (eller 0), vilket innebär att eVar läggs till endast i den **sista**-posten som finns i produktvariabeln.
+* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost läggs eVar till med värdet true (eller 1) **alla** produktposterna.  Standardvärdet är false (eller 0), vilket innebär att eVar läggs till endast i **sista** som ingår i variabeln products.
 
-Plugin-programmet `addProductEvar` returnerar ingenting. I stället läggs eVar (och eVar) som anges i argumentet `en` och `ev` till i variabeln `products`.
+The `addProductEvar` plugin-programmet returnerar ingenting. I stället läggs eVar (och eVar) som anges i `en` och `ev` argument till `products` variabel.
 
 ## Exempel
 

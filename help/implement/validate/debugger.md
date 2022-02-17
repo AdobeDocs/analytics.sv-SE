@@ -1,8 +1,9 @@
 ---
 title: Äldre Adobe Experience Cloud Debugger
 description: Installera den gamla Adobe Experience Cloud Debugger. Den här felsökaren undersöker taggar för taggarna Analytics, Target, Advertising Cloud, Identity Service och Data Collection.
+feature: Validation
 exl-id: 8fd07285-f702-4770-81bd-5f856561f4a9
-source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 0%
@@ -13,9 +14,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar i stället att du använder [Adobe Experience Cloud Debugger Chrome Extension](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+>Det här felsökningsverktyget finns inte längre kvar. Adobe rekommenderar att du i stället använder [Adobe Experience Cloud Debugger Chrome Extension](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
-[!UICONTROL Legacy Debugger] undersöker taggar för de flesta Adobe Experience Cloud-tjänster. Med hjälp av felsökaren kan du se vilka data som skickas till Adobe på en viss sida på webbplatsen. Du kan använda den här informationen för att felsöka eller validera implementeringen av din organisation.
+The [!UICONTROL Legacy Debugger] undersöker taggar för de flesta Adobe Experience Cloud-tjänster. Med hjälp av felsökaren kan du se vilka data som skickas till Adobe på en viss sida på webbplatsen. Du kan använda den här informationen för att felsöka eller validera implementeringen av din organisation.
 
 ## Installera den gamla felsökaren
 
@@ -35,16 +36,16 @@ Varje webbläsare har olika sätt att hantera bokmärken, men konceptet är dets
 
 #### Krom
 
-Om du insisterar på att inte använda [chrome-tillägget](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) kan det gamla felsökningsbokmärket användas i stället.
+Om du inte vill använda [färgtillägg](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html)kan det gamla felsökningsbokmärket användas i stället.
 
-1. Klicka på de tre punkterna i det övre högra hörnet och gå sedan till Bokmärken > Bokmärkeshanteraren. Du kan också trycka på `Ctrl` + `Shift` + `O` (Windows) eller `Cmd` + `Shift` + `O` (Mac).
+1. Klicka på de tre punkterna i det övre högra hörnet och gå sedan till Bokmärken > Bokmärkeshanteraren. Du kan också trycka `Ctrl` + `Shift` + `O` (Windows) eller `Cmd` + `Shift` + `O` (Mac).
 2. Klicka på de tre punkterna i det övre högra hörnet av bokmärkeshanteraren och klicka sedan på Lägg till nytt bokmärke.
 3. I fältet Namn ger du det etiketten&quot;Adobe Experience Cloud Debugger&quot; och klistrar in kodfragmentet i URL-fältet.
 4. Använd bokmärkeshanteraren för att placera det nya bokmärket på önskad plats.
 
 #### Firefox
 
-1. Klicka på de tre raderna i det övre högra hörnet och gå sedan till Bibliotek > Bokmärken > Visa alla bokmärken. Du kan också trycka på `Ctrl` + `Shift` + `B` (Windows) eller `Cmd` + `Shift` + `B` (Mac).
+1. Klicka på de tre raderna i det övre högra hörnet och gå sedan till Bibliotek > Bokmärken > Visa alla bokmärken. Du kan också trycka `Ctrl` + `Shift` + `B` (Windows) eller `Cmd` + `Shift` + `B` (Mac).
 2. Klicka på Ordna > Nytt bokmärke.
 3. I fältet Namn ger du det etiketten&quot;Adobe Experience Cloud Debugger&quot; och klistrar in kodfragmentet i fältet Location. Fälten Taggar och Nyckelord är inte obligatoriska.
 4. Använd biblioteksfönstret för att placera det nya bokmärket på önskad plats.
@@ -79,8 +80,8 @@ Navigera till önskad sida på webbplatsen och klicka sedan på bokmärket. Ett 
 Felsökaren har flera tillgängliga alternativ, som alla anpassar hur data visas. Inget av dessa alternativ påverkar datainsamlingen.
 
 * **Visade Experience Cloud-produkter:** Visar eller döljer bildbegäranden för varje Experience Cloud-produkt.
-* **URL-avkodning:** URL avkodar bildbegäran så att den matchar vad som visas i rapporten. Adobe rekommenderar att du låter rutan vara markerad.
+* **URL-avkodning:** URL avkodar bildbegäran så att den matchar det som visas i rapporten. Adobe rekommenderar att du låter rutan vara markerad.
 * **Uppdatera automatiskt:** Uppdaterar automatiskt popup-fönstret med några sekunders mellanrum för att kontrollera om det finns fler bildbegäranden på sidan. Om du behöver kopiera/klistra in innehåll i felsökaren inaktiverar du automatisk uppdatering så att markeringen inte ändras.
-* **Eget format:** Växlar visningsformat mellan användbara etiketter och råfrågesträngar i en bildbegäran. Mer information finns i [Frågeparametrar för datainsamling](query-parameters.md).
+* **Eget format:** Växlar visningsformatet mellan användbara etiketter och råfrågesträngar i en bildbegäran. Se [Frågeparametrar för datainsamling](query-parameters.md) för mer information.
 
 Om du vill spara standardvisningsalternativen för felsökaren högerklickar du på länken Adobe-felsökning i det övre högra hörnet och kopierar sedan länkadressen. Redigera ditt aktuella felsökningsbokmärke och klistra in det uppdaterade kodfragmentet i URL-fältet.

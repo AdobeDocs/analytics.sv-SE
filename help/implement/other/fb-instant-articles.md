@@ -1,8 +1,9 @@
 ---
 title: Implementera med Facebook Instant Articles
 description: Implementera Adobe Analytics på Facebook Instant Article-sidor.
+feature: Implementation Basics
 exl-id: 2189f70d-32f0-4137-9d53-7acab0f15e6c
-source-git-commit: de0424db27f9d1a3ce07632df8fd5e76b4d7bb4c
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -19,14 +20,14 @@ Du kan bädda in Adobe Analytics i Facebook Instant Articles för att spåra bes
 
 Det övergripande arbetsflödet för att implementera Adobe Analytics är följande:
 
-1. Skapa en `stats.html`-sida. Kod den här sidan för att hämta frågesträngsparametrar från URL:en och tilldela varje parameter till en Analytics-variabel
-1. Lägg `stats.html`-sidan som värd på webbservern
-1. Implementera analyser på Facebook Instant Article genom att referera till filen `stats.html` i en iframe
-1. Inkludera frågesträngsparametrar i iframe-attributet `src`
+1. Skapa en `stats.html` sida. Kod den här sidan för att hämta frågesträngsparametrar från URL:en och tilldela varje parameter till en Analytics-variabel
+1. Värd för `stats.html` sida på webbservern
+1. Implementera analyser på Facebook Instant Article genom att referera till `stats.html` fil i en iframe
+1. Inkludera frågeparametrar i iframe `src` attribute
 
-### Steg 1: Skapa en `stats.html`-sida
+### Steg 1: Skapa en `stats.html` page
 
-HTML-exempelkoden nedan kan användas för att hämta statistik från snabbartiklarna. Den här filen finns vanligtvis på en av företagets webbservrar. Varje gång en snabbartikel läses in, läses filen in i en iframe, vilket utlöser att data skickas till Adobe.
+Exemplet HTML nedan kan användas för att hämta statistik från snabbartiklarna. Den här filen finns vanligtvis på en av företagets webbservrar. Varje gång en snabbartikel läses in, läses filen in i en iframe, vilket utlöser att data skickas till Adobe.
 
 ```html
 <html>
@@ -60,9 +61,9 @@ HTML-exempelkoden nedan kan användas för att hämta statistik från snabbartik
 </html>
 ```
 
-### Steg 2: Lägg `stats.html`-sidan som värd på webbservern
+### Steg 2: Värd för `stats.html` sida på webbservern
 
-Adobe rekommenderar att du använder din `stats.html`-sida som värd tillsammans med den senaste versionen av `AppMeasurement.js` och `VisitorAPI.js`. Arbeta med rätt tekniker i organisationen för att hantera filen på rätt plats.
+Adobe rekommenderar att du är värd för `stats.html` sida vid sida med den senaste versionen av `AppMeasurement.js` och `VisitorAPI.js`. Arbeta med rätt tekniker i organisationen för att hantera filen på rätt plats.
 
 ### Steg 3: Referens `stats.html` på varje Facebook Instant Article-sida
 
@@ -74,12 +75,12 @@ När du skapar Facebook Instant Article-innehåll bäddar du in HTML-innehåll f
 
 ### Steg 4: Ange anpassad variabel och händelsespårning
 
-Anpassade variabler och händelser kan spåras i HTML-koden för analyser på två olika sätt:
+Anpassade variabler och händelser kan spåras i HTML med hjälp av två olika metoder:
 
-* Inkludera variabelvärden och händelser direkt på `stats.html`-sidan. Variabler som definieras här är bäst för värden som vanligtvis är desamma för alla Facebook Instant Articles.
+* Inkludera variabelvärden och händelser direkt i `stats.html` sida. Variabler som definieras här är bäst för värden som vanligtvis är desamma för alla Facebook Instant Articles.
 * Inkludera variabelvärden som en del av en frågesträng som refererar till iframe. Med den här metoden kan du skicka variabelvärden från Facebook Instant Article till koden för iframe-värdanalys.
 
-I följande exempel visas flera anpassade variabler som ingår i en frågesträng. JavaScript i `stats.html` skulle sedan kontrollera frågesträngen med `s.Util.getQueryParam()`.
+I följande exempel visas flera anpassade variabler som ingår i en frågesträng. Det JavaScript som finns i `stats.html` skulle sedan kontrollera frågesträngen med `s.Util.getQueryParam()`.
 
 ```html
 <iframe class="no-margin" src="https://example.com/stats.html?eVar2=Dynamic%20article%20title&pageName=Example%20article%20name&cmpId=exampleID123" height="0"></iframe>

@@ -1,17 +1,20 @@
 ---
 title: Hash-kollisioner
 description: Beskriver vad en hash-kollision är och hur den kan visa sig.
-translation-type: tm+mt
-source-git-commit: 819f719c4ce131c04916f3b668bcbda1a1b03651
+feature: Validation
+exl-id: 693d5c03-4afa-4890-be4f-7dc58a1df553
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 2%
 
 ---
-
 
 # Hash-kollisioner
 
 Adobe behandlar prop- och eVar-värden som strängar, även om värdet är ett tal. Ibland är strängarna hundratals tecken långa, andra gånger korta. Strängarna används inte direkt i bearbetningen för att spara utrymme, förbättra prestanda och göra allting jämnt. I stället beräknas en 32- eller 64-bitars hash för varje värde. Alla rapporter körs på dessa hashvärden, där varje hash ersätts med den ursprungliga texten. Hash-kodning ökar prestandan för Analytics-rapporter drastiskt.
 
-För de flesta fält konverteras strängen först till enbart små bokstäver (vilket minskar antalet unika värden). Värden hashas månadsvis (första gången de visas varje månad). Från månad till månad finns det en liten möjlighet att två unika variabelvärden hash-kodas till samma värde. Konceptet kallas en *hash-kollision*.
+För de flesta fält konverteras strängen först till enbart små bokstäver (vilket minskar antalet unika värden). Värden hashas månadsvis (första gången de visas varje månad). Från månad till månad finns det en liten möjlighet att två unika variabelvärden hash-kodas till samma värde. Detta koncept kallas *hash-kollision*.
 
 Hash-kollisioner kan visa sig i rapporter på följande sätt:
 
@@ -20,7 +23,7 @@ Hash-kollisioner kan visa sig i rapporter på följande sätt:
 
 ## Exempel på hash-kollision
 
-Sannolikheten för hash-kollisioner ökar med antalet unika värden i en dimension. Ett av värdena som kommer in sent i månaden kan till exempel få samma hash-värde som ett värde tidigare i månaden. Följande exempel kan förklara hur detta kan få segmentresultaten att ändras. Anta att eVar62 får &quot;värde 100&quot; den 18 februari. Analyserna kommer att ha en tabell som kan se ut så här:
+Sannolikheten för hash-kollisioner ökar med antalet unika värden i en dimension. Ett av värdena som kommer in sent i månaden kan till exempel få samma hash-värde som ett värde tidigare i månaden. Följande exempel kan förklara hur detta kan få segmentresultaten att ändras. Anta att eVar62 får värdet 100 den 18 februari. Analyserna kommer att ha en tabell som kan se ut så här:
 
 <table id="table_6A49D1D5932E485DB2083154897E5074"> 
  <thead> 
@@ -45,7 +48,7 @@ Sannolikheten för hash-kollisioner ökar med antalet unika värden i en dimensi
  </tbody> 
 </table>
 
-Om du skapar ett segment som letar efter besök där eVar62=&quot;value 500&quot; används Analytics för att avgöra om&quot;value 500&quot; innehåller en hash. Eftersom värdet 500 inte finns returnerar Analytics noll besök. Den 23 februari får eVar62&quot;value 500&quot; och hash for det är också 123. Tabellen ser ut så här:
+Om du skapar ett segment som letar efter besök där eVar62=&quot;value 500&quot; används avgör Analytics om &quot;value 500&quot; innehåller en hash. Eftersom värdet 500 inte finns returnerar Analytics noll besök. Den 23 februari får eVar62&quot;value 500&quot; och hash for det är också 123. Tabellen ser ut så här:
 
 <table id="table_5FCF0BCDA5E740CCA266A822D9084C49"> 
  <thead> 

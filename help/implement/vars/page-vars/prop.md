@@ -1,8 +1,9 @@
 ---
 title: egenskap
 description: Anpassade variabler som du kan använda i implementeringen.
+feature: Variables
 exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%
@@ -19,18 +20,18 @@ Props är anpassade variabler som du kan använda hur du vill. De finns inte kva
 >
 >Adobe rekommenderar att du använder [eVars](evar.md) i de flesta fall. I tidigare versioner av Adobe Analytics hade props och eVars fördelar och nackdelar för varandra. Adobe har dock förbättrat eVars så att de fyller i nästan alla användningsområden för proppar.
 
-Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Antalet tillgängliga props beror på ditt kontrakt med Adobe. Upp till 75 props finns om ditt avtal med Adobe stöder det.
+Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)kan du tilldela dessa anpassade dimensioner till värden som är specifika för din organisation. Antalet tillgängliga props beror på ditt kontrakt med Adobe. Upp till 75 props finns om ditt avtal med Adobe stöder det.
 
 ## Props med taggar i Adobe Experience Platform
 
 Du kan ange props antingen när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
-3. Gå till fliken [!UICONTROL Rules] och klicka sedan på önskad regel (eller skapa en regel).
-4. Klicka på en befintlig [!UICONTROL Adobe Analytics - Set Variables]-åtgärd under [!UICONTROL Actions] eller klicka på +-ikonen.
-5. Ange listrutan [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Gå till avsnittet [!UICONTROL Props].
+3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
+4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
+5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta reda på [!UICONTROL Props] -avsnitt.
 
 Du kan ställa in ett uttryck på ett värde eller ett dataelement. Du kan också kopiera värdet från en annan Analytics-variabel.
 
@@ -52,7 +53,7 @@ Aktivera listtips i inställningarna för rapportsviten. Se [Trafikvariabler](/h
 
 >[!TIP]
 >
->Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`) eller rör (`|`). Du kan använda valfri avgränsare som passar din implementering bäst.
+>Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`), eller rör (`|`). Du kan använda valfri avgränsare som passar din implementering bäst.
 
 ### Ange listans förtecken
 

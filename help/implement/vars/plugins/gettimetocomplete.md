@@ -1,8 +1,9 @@
 ---
 title: getTimeToComplete
 description: Mät hur lång tid det tar att slutföra en uppgift.
+feature: Variables
 exl-id: 90a93480-3812-49d4-96f0-8eaf5a70ce3c
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin-programmet `getTimeToComplete` håller reda på hur lång tid det tar för en användare att slutföra en process på en webbplats. &quot;Klockan&quot; börjar när åtgärden `start` anropas och slutar när åtgärden `stop` anropas. Adobe rekommenderar att du använder denna plugin om det finns ett arbetsflöde på webbplatsen som tar lite tid att slutföra och du vill veta hur lång tid besökarna tar att slutföra det. Denna plugin behövs inte om arbetsflödet på webbplatsen tar kort tid (mindre än 3 sekunder) eftersom granulariteten bara är nere till en hel sekund.
+The `getTimeToComplete` plugin-programmet spårar den tid det tar för användaren att slutföra en process på en webbplats. &quot;Klockan&quot; börjar när `start` -åtgärden anropas och avslutas när `stop` åtgärden anropas. Adobe rekommenderar att du använder denna plugin om det finns ett arbetsflöde på webbplatsen som tar lite tid att slutföra och du vill veta hur lång tid besökarna tar att slutföra det. Denna plugin behövs inte om arbetsflödet på webbplatsen tar kort tid (mindre än 3 sekunder) eftersom granulariteten bara är nere till en hel sekund.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,13 +58,13 @@ function getTimeToComplete(sos,cn,exp,tp){var f=sos,m=cn,l=exp,e=tp;if("-v"===f)
 
 ## Använda plugin-programmet
 
-Funktionen `getTimeToComplete` använder följande argument:
+The `getTimeToComplete` funktionen använder följande argument:
 
-* **`sos`** (valfri, sträng): Ange  `"start"` när du vill starta timern. Ange `"stop"` när du vill stoppa timern. Standardvärdet är `"start"`.
+* **`sos`** (valfri, sträng): Ange till `"start"` när du vill starta timern. Ange till `"stop"` när du vill stoppa timern. Standardvärdet är `"start"`.
 * **`cn`** (valfri, sträng): Namnet på den cookie som ska lagra starttiden. Standardvärdet är `"s_gttc"`.
 * **`exp`** (valfritt, heltal): Antalet dagar som cookien (och timern) förfaller. Standardvärdet är `0`, som representerar slutet av webbläsarsessionen.
 
-När den här funktionen anropas returneras en sträng som innehåller det antal dagar, timmar, minuter och/eller sekunder som det tog mellan åtgärden `"start"` och `"stop"`.
+När den här funktionen anropas returneras en sträng som innehåller det antal dagar, timmar, minuter och/eller sekunder som det tog mellan `"start"` och `"stop"` åtgärd.
 
 ## Exempel
 
@@ -92,11 +93,11 @@ if(inList(s.events, "event2")) s.prop2 = getTimeToComplete("stop", "gttcregister
 ### 3.1 (30 september 2019)
 
 * Lagt till logik som kräver värdet start eller stop i det första argumentet.  Alla andra värden som skickas hindrar plugin-programmet från att köras.
-* Uppdaterat `inList 2.0` plugin-program till `inList 2.1`.
+* Uppdaterat `inList 2.0` plugin till `inList 2.1`.
 
 ### 3.0 (23 augusti 2018)
 
-* Plugin-programmet `formatTime v1.0` har uppdaterats till `formatTime v1.1`.
+* Uppdaterade `formatTime v1.0` plugin till `formatTime v1.1`.
 
 ### 3.0 (17 april 2018)
 
@@ -105,6 +106,6 @@ if(inList(s.events, "event2")) s.prop2 = getTimeToComplete("stop", "gttcregister
 
 ### 2.0 juni 21, 2016)
 
-* Eliminerade beroendet av plugin-programmet `p_fo`.
+* Eliminerade beroendet av `p_fo` plugin-program.
 * Kompatibilitet med H-kod och AppMeasurement har lagts till.
 * Konsolloggning har lagts till.

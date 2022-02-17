@@ -1,8 +1,9 @@
 ---
 title: getPageName
 description: Skapa ett lättläst pageName från den aktuella webbplatssökvägen.
+feature: Variables
 exl-id: a3aaeb5d-65cd-45c1-88bb-f3c0efaff110
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin-programmet `getPageName` skapar en lättläst, användarvänlig formaterad version av den aktuella URL:en. Adobe rekommenderar att du använder det här plugin-programmet om du vill ha ett [`pageName`](../page-vars/pagename.md)-värde som är enkelt att ställa in och förstå vid rapportering. Denna plugin behövs inte om du redan har en namnstruktur för variabeln `pageName`, till exempel via ett datalager. Den används bäst när du inte har någon annan lösning för att ställa in variabeln `pageName`.
+The `getPageName` plugin-programmet skapar en lättläst, användarvänlig formaterad version av den aktuella URL-adressen. Adobe rekommenderar att du använder denna plugin om du vill ha en [`pageName`](../page-vars/pagename.md) värde som är lätt att ställa in och förstå vid rapportering. Denna plugin behövs inte om du redan har en namnstruktur för `pageName` variabel, till exempel via ett datalager. Den används bäst när du inte har någon annan lösning för att ställa in `pageName` variabel.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,14 +58,14 @@ var getPageName=function(si,qv,hv,de){var a=si,b=qv,f=hv,e=de;if("-v"===a)return
 
 ## Använda plugin-programmet
 
-Funktionen `getPageName` använder följande argument:
+The `getPageName` funktionen använder följande argument:
 
 * **`si`** (valfri, sträng): Ett ID infogat i början av strängen som representerar platsens ID. Värdet kan antingen vara ett numeriskt ID eller ett eget namn. Om den inte anges används den aktuella domänen som standard.
 * **`qv`** (valfri, sträng): En kommaavgränsad lista med frågesträngsparametrar som, om de finns i URL:en, läggs till i strängen
 * **`hv`** (valfri, sträng): En kommaavgränsad lista med parametrar i URL-hash som, om de hittas i URL:en, läggs till i strängen
-* **`de`** (valfri, sträng): Avgränsaren för att dela upp enskilda delar av strängen. Standardvärdet är en pipe (`|`).
+* **`de`** (valfri, sträng): Avgränsaren för att dela upp enskilda delar av strängen. Standardvärdet är ett rör (`|`).
 
-Funktionen returnerar en sträng som innehåller en användarvänlig version av URL:en. Den här strängen tilldelas vanligtvis till variabeln `pageName`, men kan även användas i andra variabler.
+Funktionen returnerar en sträng som innehåller en användarvänlig version av URL:en. Strängen tilldelas vanligtvis till `pageName` men kan även användas i andra variabler.
 
 ## Exempel
 
@@ -93,7 +94,7 @@ s.pageName = getPageName("example","cid","arrive,numGuests",": ");
 
 ## Uppgradera från tidigare versioner
 
-Version 4.0+ av plugin-programmet `getPageName` är inte beroende av om Adobe Analytics AppMeasurement-objekt finns (d.v.s. `s`-objektet). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av `s`-objektet från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
+Version 4.0+ av `getPageName` plug-in-programmet är inte beroende av att det finns ett AppMeasurement-objekt i Adobe Analytics (dvs. `s` -objekt). Om du uppgraderar till den här versionen ändrar du koden som anropar plugin-programmet genom att ta bort alla instanser av `s` objekt från anropet. Ändra till exempel `s.getPageName();` till `getPageName();`.
 
 ## Versionshistorik
 

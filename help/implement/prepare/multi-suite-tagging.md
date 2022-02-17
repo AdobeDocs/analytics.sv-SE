@@ -1,13 +1,14 @@
 ---
 description: Lär dig hur du implementerar märkning för flera programsviter för att skicka bildförfrågningar till flera rapportsviter.
 title: Implementera märkning för flera programsviter
-source-git-commit: 70af5bf2ef36e7968043120658d35dc948e9630e
+feature: Implementation Basics
+exl-id: c7fb0478-97e1-4367-8742-e7539f6f82e7
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
 
 ---
-
 
 # Implementera märkning för flera programsviter
 

@@ -2,8 +2,9 @@
 title: Paketanalysatorer
 description: Med paketanalyserare kan du visa data som skickas av implementeringen till datainsamlingsservrar i Adobe.
 keywords: paketsniffer, http-status, 200, 302, charles
+feature: Validation
 exl-id: db077293-f72c-4933-8a30-f1e1963f332e
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -21,7 +22,7 @@ På samma sätt som Adobe Experience Cloud felsökare visar en paketskärm vilka
 
 Om du vill visa Analytics-begäranden filtrerar du utgående begäranden med&quot;b/ss&quot;.
 
-I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen begäran gör den till bearbetningsservrar för Adobe [!DNL Analytics]. Att använda en paketbildskärm är ett bra sätt att vara helt säker på att en viss bildbegäran kan utlösas.
+I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen begäran gör den till Adobe [!DNL Analytics] bearbetningsservrar. Att använda en paketbildskärm är ett bra sätt att vara helt säker på att en viss bildbegäran kan utlösas.
 
 Även om Adobe inte har någon officiell paketövervakare finns det många sådana på internet. Här följer några exempel på paketskärmar som andra tycker är användbara.
 
@@ -31,7 +32,7 @@ I mycket sällsynta fall rapporterar felsökaren en bildbegäran, men ingen beg�
 
 | Firefox | Internet Explorer | Krom | Fristående program |
 |---|---|---|---|
-| [Observera punkt](https://www.observepoint.com/product#plugin)  (taggvisningsprogram) | [HttpWatch](https://www.httpwatch.com/) | [Observera punkt](https://www.observepoint.com/product#plugin)  (taggvisningsprogram) | [Charles](https://www.charlesproxy.com/) |
+| [Observera punkt](https://www.observepoint.com/product#plugin) (taggläsare) | [HttpWatch](https://www.httpwatch.com/) | [Observera punkt](https://www.observepoint.com/product#plugin) (taggläsare) | [Charles](https://www.charlesproxy.com/) |
 | [HttpFox](https://addons.thunderbird.net/en-us/firefox/addon/httpfox/) |  | [Verktyg för Chrome Developer](https://code.google.com/chrome/devtools/docs/overview.html) | [Fiddler](https://www.fiddler2.com/fiddler2/) |
 | [Manipuleringsdata](https://addons.mozilla.org/en-US/firefox/addon/tamper-data-for-ff-quantum/) |  | [Firebug Lite](https://chrome.google.com/webstore/detail/firebug-lite-for-google-c/ehemiojjcpldeipjhjkepfdaohajpbdo) | [Wireshark](https://www.wireshark.org/) |
 | [HttpWatch](https://www.httpwatch.com/) |  |  |  |
@@ -49,14 +50,14 @@ När AppMeasurement skickar data till datainsamlingsservrar i Adobe svarar servr
 * **302 HITTADES**: Det finns några möjliga skäl till att få detta svar:
    * Den första bildförfrågan från en besökare: En omdirigering sker om en användare besöker webbplatsen för första gången. Den här omdirigeringen är att få en besöks-cookie. Det påverkar inte datainsamlingen.
    * Integrering mellan Comscore och Adobe: Om din organisation använder en Comscore/Analytics-integrering resulterar varje bildförfrågan alltid i ett 302-svar.
-* **404 HITTADES** INTE: Det här svaret innebär att bildbegäran inte hittades och att data inte skickas till datainsamlingsservrar i Adobe. Det här svaret är också möjligt när hårdkodade bildbegäranden inte är korrekt formaterade. Samarbeta med den person eller det team som implementerade Analytics för att lösa problemet.
+* **404 HITTADES INTE**: Det här svaret innebär att bildbegäran inte hittades och att data inte skickas till datainsamlingsservrar i Adobe. Det här svaret är också möjligt när hårdkodade bildbegäranden inte är korrekt formaterade. Samarbeta med den person eller det team som implementerade Analytics för att lösa problemet.
 
 ## NS_BINDING_ABORTED i svarskoder
 
 Det här meddelandet visas eftersom bildbegäran för länkspårning är utformad för att webbläsaren ska kunna fortsätta till nästa sida innan den väntar på ett svar från Adobe datainsamlingsservrar.
 
-Adobe-svar på bildbegäran är helt enkelt en tom 1x1-genomskinlig bild som inte är relevant för sidans innehåll. Om du ser ett radobjekt i paketövervakaren från Adobe, antingen med ett **[!UICONTROL 200 OK]**-svar eller ett **[!UICONTROL NS_BINDING_ABORTED]**-svar, har data nått Adobe-servrar. Sidan behöver inte vänta längre.
+Adobe-svar på bildbegäran är helt enkelt en tom 1x1-genomskinlig bild som inte är relevant för sidans innehåll. Om du ser ett linjeobjekt på paketskärmen från Adobe, antingen med en **[!UICONTROL 200 OK]** eller en **[!UICONTROL NS_BINDING_ABORTED]** har data nått Adobe servrar. Sidan behöver inte vänta längre.
 
-Packet Monitor som är integrerade som plugin-program ser sällan det fullständiga svaret. De brukar se begäran som avbruten eftersom det fullständiga svaret inte togs emot. Dessa övervakare skiljer dessutom sällan åt mellan om det var begäran eller svaret som avbröts. En fristående paketövervakare har vanligtvis mer detaljerade meddelanden och rapporterar statusen mer korrekt. En användare kan till exempel få ett meddelande i *Charles* som säger&quot;Klienten stängde anslutningen innan hela svaret tas emot&quot;. Detta innebär att data nådde våra servrar, bara webbläsaren gick vidare till nästa sida innan pixeln 1x1 togs emot.
+Packet Monitor som är integrerade som plugin-program ser sällan det fullständiga svaret. De brukar se begäran som avbruten eftersom det fullständiga svaret inte togs emot. Dessa övervakare skiljer dessutom sällan åt mellan om det var begäran eller svaret som avbröts. En fristående paketövervakare har vanligtvis mer detaljerade meddelanden och rapporterar statusen mer korrekt. En användare kan till exempel få ett meddelande i *Charles* som säger&quot;Klienten stängde anslutningen innan hela svaret togs emot.&quot; Detta innebär att data nådde våra servrar, bara webbläsaren gick vidare till nästa sida innan pixeln 1x1 togs emot.
 
-Om en extern paketövervakare rapporterar att datainsamlingsbegäran har avbrutits, i stället för att svara, är detta en orsak till oro. Adobe [!DNL Customer Care] kan hjälpa till vid felsökning.
+Om en extern paketövervakare rapporterar att datainsamlingsbegäran har avbrutits, i stället för att svara, är detta en orsak till oro. Adobe [!DNL Customer Care] kan ge hjälp vid felsökning.

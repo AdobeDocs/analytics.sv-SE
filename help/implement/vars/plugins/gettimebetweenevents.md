@@ -1,8 +1,9 @@
 ---
 title: getTimeBetweenEvents
 description: Mät tiden mellan två händelser.
+feature: Variables
 exl-id: 15887796-4fe4-4b3a-9a65-a4672c5ecb34
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med plugin-programmet `getTimeBetweenEvents` kan du hålla reda på hur lång tid som helst mellan två Analytics-händelser, inklusive kundvagn och anpassade händelser. Det är användbart för att spåra hur lång tid det tar för en utcheckningsprocess att slutföra eller för andra processer som du vill mäta tid. Denna plugin behövs inte om du inte har några konverteringsprocesser som du vill mäta hur lång tid de tar.
+The `getTimeBetweenEvents` Med plugin-programmet kan du hålla reda på hur lång tid det tar mellan två olika Analytics-händelser, inklusive kundvagn och anpassade händelser. Det är användbart för att spåra hur lång tid det tar för en utcheckningsprocess att slutföra eller för andra processer som du vill mäta tid. Denna plugin behövs inte om du inte har några konverteringsprocesser som du vill mäta hur lång tid de tar.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -56,18 +57,18 @@ function getTimeBetweenEvents(ste,rt,stp,res,cn,etd,fmt,bml,rte){var v=ste,B=rt,
 
 ## Använda plugin-programmet
 
-Funktionen `getTimeBetweenEvents` använder följande argument:
+The `getTimeBetweenEvents` funktionen använder följande argument:
 
 * **`ste`** (required, string): Starta timerhändelser. En kommaavgränsad sträng med Analytics-händelser för att&quot;starta timern&quot;.
-* **`rt`** (obligatoriskt, booleskt): Starta om tidsinställningen. Ange `true` om du vill starta om timern varje gång variabeln `events` innehåller en starttimerhändelse. Ange `false` om du inte vill att timern ska starta om när en starttimerhändelse visas.
+* **`rt`** (obligatoriskt, booleskt): Starta om tidsinställningen. Ange till `true` om du vill starta om timern varje gång `events` variabeln innehåller en start-timer-händelse. Ange till `false` om du inte vill att timern ska startas om när en starttidsinställningshändelse visas.
 * **`stp`** (required, string): Stoppa timerhändelser. En kommaavgränsad sträng med Analytics-händelser som&quot;stoppar timern&quot;.
-* **`res`** (obligatoriskt, booleskt): Återställ alternativet Timer. Ange `true` om du vill registrera tiden sedan timern startades OCH återställa timern efter att den stoppats. Ange `false` om du vill spela in tiden men inte stoppa timern. Om den anges till `false` fortsätter timern att köras efter det att händelsvariabeln har registrerat en stop-händelse.
+* **`res`** (obligatoriskt, booleskt): Återställ alternativet Timer. Ange till `true` om du vill registrera tiden sedan timern startades OCH återställa timern när den stoppats. Ange till `false` om du vill spela in tiden men inte stoppa timern. Om inställt på `false`fortsätter tidtagaren att köras efter att händelsemabeln har registrerat en stop-händelse.
 
    >[!TIP]
    >
-   >Om du anger det här argumentet som `false` bör du ange argumentet `rte` nedan.
+   >Om du ställer in det här argumentet på `false`, ange `rte` rekommenderas.
 * **`cn`** (valfri, sträng): Det cookie-namn där tidpunkten för den första händelsen lagras. Standardvärdet är `"s_tbe"`.
-* **`etd`** (valfritt, heltal): Förfallotid för cookien i dagar. Ange `0` som förfaller i slutet av webbläsarsessionen. Standardvärdet är 1 dag om den inte anges.
+* **`etd`** (valfritt, heltal): Förfallotid för cookien i dagar. Ange till `0` förfaller när webbläsarsessionen är slut. Standardvärdet är 1 dag om den inte anges.
 * **`fmt`** (valfri, sträng): Formatet på den tid som antalet sekunder returneras i (standardvärdet är ingenting)
    * `"s"` i sekunder
    * `"m"` i minuter
@@ -78,7 +79,7 @@ Funktionen `getTimeBetweenEvents` använder följande argument:
       * Allt som är mellan en minut och en timme avrundas till närmaste 1/2-minuters test. Exempel: 30,5 minuter, 31 minuter
       * Allt som är mellan en timme och en dag avrundas till närmaste kvartalstimmar. Exempel: 2,25 timmar, 3,5 timmar
       * Allt som är större än en dag avrundas till närmaste dag. Exempel: 1 dag, 3 dagar, 9 dagar
-* **`bml`** (valfritt, antal): Längden på avrundningsriktmärket enligt  `fmt` argumentets format. Om argumentet `fmt` till exempel är `"s"` och det här argumentet är `2`, avrundas returvärdet till närmaste 2-sekundersreferens. Om `fmt`-argumentet är `"m"` och det här argumentet är `0.5`, avrundas returvärdet till närmaste halveringstips.
+* **`bml`** (valfritt, antal): Längden på avrundningsriktmärket enligt formatet för `fmt` argument. Om `fmt` argument `"s"` och det här argumentet `2`, avrundas returvärdet till närmaste 2-sekunders riktmärke. If `fmt` argument `"m"` och det här argumentet `0.5`, avrundas returvärdet till närmaste halveringstips.
 * **`rte`** (valfri, sträng): Kommaavgränsad sträng med Analytics-händelser som tar bort eller tar bort timern. Standardvärdet är ingenting.
 
 När den här funktionen anropas returneras ett heltal som representerar tiden mellan starthändelsen och stopphändelsen timer i det önskade formatet.
@@ -112,7 +113,7 @@ s.eVar4 = getTimeBetweenEvents("event1", true, "event2", true);
 
 ### 2.1 (26 maj 2018)
 
-* Anpassar ändringar som gjorts i den nya versionen av plugin-programmet `formatTime`.
+* Anpassar ändringar som gjorts i den nya versionen av `formatTime` plugin-program.
 
 ### 2.0 (6 april 2018)
 

@@ -1,8 +1,9 @@
 ---
 title: getGeoCoordinates
 description: Spåra en besökares geoLocation.
+feature: Variables
 exl-id: 8620d083-7fa6-432b-891c-e24907e7c466
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med `getGeoCoordinates`-pluginen kan du fånga latitud och longitud för besökarnas enheter. Adobe rekommenderar att du använder det här plugin-programmet om du vill hämta geoplatsdata i Analytics-variabler.
+The `getGeoCoordinates` Med plugin-programmet kan du fånga latituden och longituden för besökarnas enheter. Adobe rekommenderar att du använder det här plugin-programmet om du vill hämta geoplatsdata i Analytics-variabler.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,17 +58,17 @@ function getGeoCoordinates(){if(arguments&&"-v"===arguments[0])return{plugin:"ge
 
 ## Använda plugin-programmet
 
-Funktionen `getGeoCoordinates` använder inga argument. Det returnerar ett av följande värden:
+The `getGeoCoordinates` funktionen använder inte några argument. Det returnerar ett av följande värden:
 
 * `"geo coordinates not available"`: För enheter som inte har geoplatsdata tillgängliga när plugin-programmet körs. Det här värdet är vanligt vid den första besöksträffen, särskilt när besökarna först måste ge sitt samtycke till att spåra sin plats.
 * `"error retrieving geo coordinates"`: När plugin-programmet påträffar fel vid försök att hämta enhetens plats
-* `"latitude=[LATITUDE] | longtitude=[LONGITUDE]"`: Där  [LATITUDE]/[] LONGITUDE är latitud och longitud
+* `"latitude=[LATITUDE] | longtitude=[LONGITUDE]"`: Plats [LATITUDE]/[LONGITUD] är latitud och longitud,
 
 >[!NOTE]
 >
->Koordinatvärden avrundas till närmaste fjärde decimal. Värdet `"40.438635333"` avrundas till `"40.4386"` för att begränsa antalet unika värden som ska hämtas. Värdena är tillräckligt nära för att identifiera enhetens exakta position inom ca 20 fot.
+>Koordinatvärden avrundas till närmaste fjärde decimal. Värdet för `"40.438635333"` avrundas till `"40.4386"` för att begränsa antalet unika värden som ska hämtas. Värdena är tillräckligt nära för att identifiera enhetens exakta position inom ca 20 fot.
 
-Detta plugin-program använder en cookie med namnet `"s_ggc"` för att lagra koordinater mellan träffar om det behövs.
+Denna plugin använder en cookie med namnet `"s_ggc"` att lagra koordinater mellan träffar om det behövs.
 
 ## Exempel
 

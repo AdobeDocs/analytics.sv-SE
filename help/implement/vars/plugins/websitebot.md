@@ -1,8 +1,9 @@
 ---
 title: websiteBot
 description: Identifiera botar dynamiskt med musrörelser.
+feature: Variables
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -15,12 +16,12 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med plugin-programmet `websiteBot` kan du dynamiskt identifiera om besökarna är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
+The `websiteBot` Med plugin-programmet kan du dynamiskt identifiera om besökarna på stationära datorer är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
 
 Denna plug-in utför två kontroller:
 
 * För det första, när det gäller en stationär enhet, lägger den till en händelseavlyssnare för musrörelser.
-* Sedan avgör den om enheten är en stationär eller mobil enhet som använder variabeln `navigator.UserAgent`. Mobila enheter ignoreras.
+* Sedan avgör den om enheten är en stationär eller mobil enhet som använder `navigator.UserAgent` variabel. Mobila enheter ignoreras.
 
 Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan plugin-programmet
 
@@ -31,13 +32,13 @@ Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan
 
 Adobe rekommenderar följande innan denna plugin används:
 
-* **Konfigurera inställningar för** eVar: Ställ in en eVar under  [Konverteringsvariabler ](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallotiden till **Aldrig** eller **Besök** och allokering till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när antingen regeln [!UICONTROL Direct Call] eller anropet `s.tl` utlöses.
-* **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ställ in en eVar på `navigator.UserAgent` för varje träff för att samla in dessa data.
+* **Konfigurera eVar**: Konfigurera en eVar under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatum till **Aldrig** eller **Besök** och allokera till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när [!UICONTROL Direct Call] regel eller `s.tl` samtalet avfyras.
+* **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ange en eVar till `navigator.UserAgent` på varje träff för att samla in dessa data.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
 
-1. Lägg till en ny `websiteBot`-regel.
-1. Lägg till en **Mouse Move Listener**-händelse till `websiteBot`-regeln med den här anpassade koden:
+1. Lägg till en ny `websiteBot` regel.
+1. Lägg till en **Avlyssnare för musrörelse** till `websiteBot` rule, med den här anpassade koden:
 
    ```js
    trigger(document.addEventListener('mousemove', function detectMouseMove() {   
@@ -72,11 +73,11 @@ Adobe rekommenderar följande innan denna plugin används:
       }))
    ```
 
-1. Lägg till en [!UICONTROL Direct Call]-regel som utlöser en analysfyr med `websiteBot` som identifierare. I det här exemplet används ett `s.tl`-anrop:
+1. Lägg till en [!UICONTROL Direct Call] regel som aktiverar en analysfyr som använder `websiteBot` som identifierare. I det här exemplet används en `s.tl` ring:
 
    ![websiteBot-identifierare](assets/websitebot.png)
 
-1. Starta Adobe Analytics - Ställ in variabler och Adobe Analytics - skicka Beacon-åtgärder i [!UICONTROL Direct Call]-regeln.  Ett sätt att göra detta visas i följande exempel:
+1. Starta Adobe Analytics - Ställ in variabler &amp; Adobe Analytics - Skicka Beacon-åtgärder i [!UICONTROL Direct Call] regel.  Ett sätt att göra detta visas i följande exempel:
 
    ![Skicka Beacon-åtgärder](assets/websitebot2.png)
 
@@ -94,7 +95,7 @@ Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när A
 
 ## Använda plugin-programmet
 
-Plugin-programmet `websiteBot` utlöser ett `s.tl`-anrop om icke-robottrafik upptäcks.
+The `websiteBot` plugin utlöser en `s.tl` anrop om icke-robottrafik upptäcks.
 
 ## Exempel
 
@@ -116,4 +117,4 @@ s.eVar1 = websiteBot ? "Bot detected" : "Not a bot";
 
 * Uppdaterad kod för plugin-programmet AppMeasurement
 * Anpassad kodredigeringssektion med utökade instruktioner har uppdaterats.
-* Uppdaterat avsnittet &quot;Använda plugin-programmet&quot;.
+* Uppdaterat avsnittet Använda plugin-programmet.

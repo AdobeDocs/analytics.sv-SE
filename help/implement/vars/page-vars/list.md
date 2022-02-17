@@ -1,8 +1,9 @@
 ---
 title: lista
 description: Anpassade variabler som innehåller flera värden i samma träff.
+feature: Variables
 exl-id: 612f6f10-6b68-402d-abb8-beb6f44ca6ff
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 Listvariabler är anpassade variabler som du kan använda hur du vill. De fungerar på liknande sätt som eVars, förutom att de kan innehålla flera värden i samma träff. Listvariabler har ingen teckengräns.
 
-Se till att du spelar in hur du använder varje listvariabel och deras logik i [lösningsdesigndokumentet](../../prepare/solution-design.md).
+Se till att du spelar in hur du använder varje listvariabel och deras logik i [konstruktionsdokument](../../prepare/solution-design.md).
 
 >[!NOTE]
 >
@@ -21,7 +22,7 @@ Se till att du spelar in hur du använder varje listvariabel och deras logik i [
 
 ## Ställ in listvariabler i rapportsvitens inställningar
 
-Se till att du konfigurerar varje listvariabel i inställningarna för rapportsviten innan du använder dem i implementeringen. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/list-var-admin.md) i Admin Guide.
+Se till att du konfigurerar varje listvariabel i inställningarna för rapportsviten innan du använder dem i implementeringen. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/list-var-admin.md) i administrationshandboken.
 
 ## Visa variabler med hjälp av taggar i Adobe Experience Platform
 
@@ -38,7 +39,7 @@ s.list1 = "Example value 1,Example value 2,Example value 3";
 
 >[!TIP]
 >
->Om du anger dubblettvärden i samma träff dupliceras alla instanser av dessa värden med Adobe. Om du till exempel anger `s.list1 = "Example,Example";` räknas en instans i rapporter.
+>Om du anger dubblettvärden i samma träff dupliceras alla instanser av dessa värden med Adobe. Om du till exempel anger `s.list1 = "Example,Example";`, en instans räknas i rapporter.
 
 ## Jämför listekurser med listvariabler
 
@@ -46,4 +47,4 @@ Listutkast och listvariabler kan båda innehålla flera värden i samma träff. 
 
 * Alla propp kan bli en listpropp. Du kan ha upp till 75 proppar i listan om varje propp är en listprop. Det finns bara tre listvar tillgängliga.
 * Listutkast har en gräns på 100 byte för hela variabeln. Listvariabler har en gräns på 255 byte per värde och ingen total bytegräns.
-* Listproppar finns inte kvar efter den träff de ställs in. Listvariabler har en förfalloinställning som du vill ha. Med [rapporttidsbearbetning](/help/components/vrs/vrs-report-time-processing.md) kan du dock använda anpassad attribuering på både listutkast och listvariabler.
+* Listproppar finns inte kvar efter den träff de ställs in. Listvariabler har en förfalloinställning som du vill ha. Med [bearbeta rapporttid](/help/components/vrs/vrs-report-time-processing.md)kan du använda anpassad attribuering för både listutkast och listvariabler.

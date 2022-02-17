@@ -1,8 +1,9 @@
 ---
 title: Vanliga frågor om implementering
 description: Vanliga frågor om implementering och länkar till mer information.
+feature: Implementation Basics
 exl-id: 4bab6d51-0077-42ce-8091-f75207d4c4db
-source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 42%
@@ -33,8 +34,8 @@ AppMeasurement skapar ett bildobjekt på HTML-sidan och webbläsaren begär seda
 
 Ibland vill en organisation ta bort en implementering på grund av kontraktets förfallodatum eller minska antalet serversamtal.
 
-* **Implementeringar med taggar i Adobe Experience Platform**: Inaktivera eller avinstallera Adobe Analytics-tillägget på  [!UICONTROL Extensions] fliken och publicera sedan.
-* **Äldre AppMeasurement-implementeringar**: Ersätt hela innehållet i  `s_code.js` filen med följande kodrad:
+* **Implementeringar med taggar i Adobe Experience Platform**: Inaktivera eller avinstallera Adobe Analytics-tillägget i dialogrutan [!UICONTROL Extensions] och sedan publicera.
+* **Äldre AppMeasurement-implementeringar**: Ersätta hela innehållet i `s_code.js` -fil med följande kodrad:
 
 ```js
 var s = new Object();
@@ -45,16 +46,16 @@ var s = new Object();
 >Gör inte:
 >
 >* Ändra rapportsviten till ett ogiltigt värde, eftersom den skapar onödig belastning på Adobe-servrar.
->* Ta bort `s_code.js`-filen helt, såvida du inte också tar bort alla referenser till filen på varje sida.
->* Ändra variabeln `trackingServer` så att den pekar bort från Adobe. AppMeasurement skickar fortfarande bildbegäranden som returnerar 404 fel.
+>* Ta bort `s_code.js` om du inte också tar bort alla referenser till filen på varje sida.
+>* Ändra `trackingServer` variabel för att peka bort från Adobe. AppMeasurement skickar fortfarande bildbegäranden som returnerar 404 fel.
 
 
-## Jag körde AppMeasurement via en kodanalys och flaggade användningen av `Math.random()` som en potentiell säkerhetsrisk. Används `Math.random()` med känsliga data?
+## Jag körde AppMeasurement via en kodanalys och flaggade användningen av `Math.random()` som en potentiell säkerhetsrisk. Är `Math.random()` används med känsliga data?
 
 Nej. Siffrorna som använder `Math.random()` används inte för att maskera, skicka eller ta emot känsliga data. Data som skickas till datainsamlingsservrar för Adobe är beroende av säkerheten för den underliggande HTTPS-anslutningen. <!-- AN-173590 -->
 
-AppMeasurement använder `Math.random()` i tre huvudområden:
+AppMeasurement använder `Math.random()` tre huvudområden:
 
-* **Prov**: Beroende på hur implementeringen fungerar kan viss information samlas in för endast en liten andel av besökarna på webbplatsen. `Math.random()` används för att avgöra om en viss besökare ska skicka data. I de flesta implementeringar används inte samplingar.
+* **Provtagning**: Beroende på hur implementeringen fungerar kan viss information samlas in för endast en liten andel av besökarna på webbplatsen. `Math.random()` används för att avgöra om en viss besökare ska skicka data. I de flesta implementeringar används inte samplingar.
 * **ID för reservbesökare**: Om besökar-ID:t inte kan hämtas från cookies genereras ett slumpmässigt besökar-ID. Den här delen av AppMeasurement använder två anrop till `Math.random()`.
-* **Cachepublicering**: Ett slumpmässigt tal läggs till i slutet av URL:er för bildbegäran för att förhindra webbläsarcachelagring.
+* **Cachebuskning**: Ett slumpmässigt tal läggs till i slutet av URL:er för bildbegäran för att förhindra webbläsarcachelagring.

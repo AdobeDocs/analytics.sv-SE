@@ -1,8 +1,9 @@
 ---
 title: dynamicAccountList
 description: Upprätta logik för hur implementeringen avgör dess rapportserie.
+feature: Implementation Basics
 exl-id: ccff24a1-4b9a-4f62-adb5-09ab60e9b93e
-source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 >
 >Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller i användargränssnittet för datainsamling.
 
-Variabeln `s.dynamicAccountList` bestämmer värdet på `s_account` dynamiskt. Om `dynamicAccountSelection` är `true` jämförs variabeln `dynamicAccountMatch` med `dynamicAccountList`. Om en matchning hittas används det matchande rapportsvitens ID.
+The `s.dynamicAccountList` variabeln bestämmer dynamiskt värdet för `s_account`. If `dynamicAccountSelection` är inställd på `true`, `dynamicAccountMatch` variabeln jämförs med `dynamicAccountList`. Om en matchning hittas används det matchande rapportsvitens ID.
 
 ## Syntax
 
@@ -35,7 +36,7 @@ Endast ASCII-standardtecken ska användas i strängen. Använd inte blanksteg.
 
 ## Exempel
 
-I alla följande exempel är sidans URL `https://example.com/path2/?prod_id=12345`, variabeln `dynamicAccountSelection` inställd på `true` och variabeln `s_account` inställd på `examplersid`.
+För alla följande exempel är sidans URL `https://example.com/path2/?prod_id=12345`, `dynamicAccountSelection` variabeln är inställd på `true`och `s_account` variabeln är inställd på `examplersid`.
 
 ```js
 // In this example, the report suite that receives data is examplersid1.
@@ -53,8 +54,8 @@ s.dynamicAccountList = "examplersid4=path4;examplersid5=path5";
 
 ## Pitfalls, frågor och tips
 
-* Reglerna som anges i den här variabeln används i ordningen vänster till höger. Om variabeln `dynamicAccountMatch` matchar mer än en regel används regeln längst till vänster för att avgöra rapportsviten. Därför placerar du mer allmänna regler till höger om listan.
-* Om inga regler matchar används standardrapportsviten i `s_account`.
-* Om din sida sparas på någons hårddisk eller översätts via en webbaserad översättningsmotor (som Googles översatta sidor) kommer det dynamiska kontovalet troligtvis inte att fungera.
-* Reglerna `dynamicAccountSelection` gäller bara för den del av URL:en som anges i `dynamicAccountMatch`.
+* Reglerna som anges i den här variabeln används i ordningen vänster till höger. Om `dynamicAccountMatch` variabeln matchar mer än en regel, används regeln längst till vänster för att bestämma rapportsviten. Därför placerar du mer allmänna regler till höger om listan.
+* Om inga regler matchar, är standardrapportsviten i `s_account` används.
+* Om sidan sparas på någons hårddisk eller översätts via en webbaserad översättningsmotor (som Google översatta sidor), kommer det dynamiska kontovalet troligtvis inte att fungera.
+* The `dynamicAccountSelection` gäller endast för den del av URL:en som anges i `dynamicAccountMatch`.
 * Använd [!DNL Adobe Experience Cloud Debugger] för att testa målrapportsviten.

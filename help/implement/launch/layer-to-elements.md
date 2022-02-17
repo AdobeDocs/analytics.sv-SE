@@ -1,8 +1,9 @@
 ---
 title: Mappa datalagerobjekt till dataelement
 description: Konfigurera taggar som ska läsas från datalagret.
+feature: Launch Implementation
 exl-id: b7594084-cb5f-408e-8a76-0a0815cc7553
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 5%
@@ -14,7 +15,7 @@ ht-degree: 5%
 När organisationen har etablerat och implementerat ett datalager på webbplatsen kan du mappa datalagerobjekt till dataelement inom taggar.
 
 >[!NOTE]
->Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad referens till terminologiska ändringar.
+>Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad hänvisning till terminologiska förändringar.
 
 ## Förutsättningar
 
@@ -22,18 +23,18 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
 
 ## Använd taggar för att skapa dataelement
 
-[Dataelement är ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en) komponenter i användargränssnittet för datainsamling som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
+[Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en) är komponenter i användargränssnittet för datainsamling som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Klicka på fliken **[!UICONTROL Data Elements]** och sedan på **[!UICONTROL Add Data Element]**.
+1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och sedan klicka **[!UICONTROL Add Data Element]**.
 
    ![skapa dataelement](assets/createelement.png)
 
 1. Ange ett namn för dataelementet. Det kan vara en enkel etikett som motsvarar en JavaScript-variabel i datalagret som du vill spåra.
-1. Välj **[!UICONTROL Core]** i listrutan **[!UICONTROL Extension]**.
-1. Välj **[!UICONTROL JavaScript Variable]** i listrutan **[!UICONTROL Data Element Type]**. Ett textfält visas till höger där du kan ange JavaScript-variabeln som ska mappas till det här dataelementet.
-1. Ange önskad JavaScript-variabel, vanligtvis i datalagret. Om organisationens datalager till exempel överensstämmer med den praxis som rekommenderas av Adobe kan värdet vara `digitalData.page.pageInfo.pageName`. Du kan använda webbläsarens konsol för att validera JavaScript-variabelsyntax och -värden.
+1. Under **[!UICONTROL Extension]** listruta, välja **[!UICONTROL Core]**.
+1. Under **[!UICONTROL Data Element Type]** listruta, välja **[!UICONTROL JavaScript Variable]**. Ett textfält visas till höger där du kan ange JavaScript-variabeln som ska mappas till det här dataelementet.
+1. Ange önskad JavaScript-variabel, vanligtvis i datalagret. Om t.ex. din organisations datalager överensstämmer med den praxis som rekommenderas av Adobe kan ett värde vara `digitalData.page.pageInfo.pageName`. Du kan använda webbläsarens konsol för att validera JavaScript-variabelsyntax och -värden.
 1. Klicka på **[!UICONTROL Save]**.
 
 ## Nästa steg

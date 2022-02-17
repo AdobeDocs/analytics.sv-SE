@@ -1,8 +1,9 @@
 ---
 title: getVisitDuration
 description: Spåra hur mycket tid en besökare har varit på webbplatsen hittills.
+feature: Variables
 exl-id: 5299caa8-1e47-40b0-a8f4-422590f33ee4
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin-programmet `getVisitDuration` håller reda på hur lång tid i minuter som besökaren har varit på webbplatsen fram till den punkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Denna plugin spårar inte tiden mellan händelser. Om du vill använda den här funktionen använder du plugin-programmet [`getTimeBetweenEvents`](gettimebetweenevents.md).
+The `getVisitDuration` plugin-programmet spårar hur lång tid i minuter besökaren har besökt webbplatsen fram till den tidpunkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Denna plugin spårar inte tiden mellan händelser. om du vill ha den här funktionen använder du [`getTimeBetweenEvents`](gettimebetweenevents.md) plugin-program.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,14 +58,14 @@ function getVisitDuration(){if(arguments&&"-v"===arguments[0])return{plugin:"get
 
 ## Använda plugin-programmet
 
-Funktionen `getVisitDuration` använder inga argument. Det returnerar ett av följande värden:
+The `getVisitDuration` funktionen använder inte några argument. Det returnerar ett av följande värden:
 
 * `"first hit of visit"`
 * `"less than a minute"`
 * `"1 minute"`
-* `"[x] minutes"` (där  `[x]` är antalet minuter som gått sedan besökaren landade på platsen)
+* `"[x] minutes"` (där `[x]` är antalet minuter som gått sedan besökaren landade på platsen)
 
-Denna plugin skapar en cookie för första part som heter `"s_dur"`, vilket är antalet millisekunder som har gått sedan besökaren landade på webbplatsen. Kakan går ut efter 30 minuters inaktivitet.
+Denna plugin skapar en cookie från första part som kallas `"s_dur"`, vilket är antalet millisekunder som har gått sedan besökaren landade på platsen. Kakan går ut efter 30 minuters inaktivitet.
 
 ## Exempel
 

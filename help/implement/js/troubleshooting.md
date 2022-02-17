@@ -1,8 +1,9 @@
 ---
 title: Felsöka JavaScript-implementering
 description: Lär dig mer om vanliga problem och de bästa sätten att felsöka JavaScript-implementeringen.
+feature: Implementation Basics
 exl-id: e7181e78-65bf-446d-8d5c-b47323dbec1d
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
@@ -21,36 +22,36 @@ De flesta variabler som skickas till Adobe är strängar. I JavaScript kan du an
 
 Det är en god vana att se till att du är konsekvent med de citattyper som du använder. Om ett enkelt citattecken anger början på en sträng måste ett enkelt citattecken användas för att stänga den.
 
-Både `s.eVar1 = 'Value'` och `s.eVar1 = "Value"` är till exempel giltiga. `s.eVar1 = 'Value"` är inte giltigt.
+Till exempel, båda `s.eVar1 = 'Value'` och `s.eVar1 = "Value"` är båda giltiga. `s.eVar1 = 'Value"` är inte giltigt.
 
 ### Inkludera enkla eller dubbla citattecken i en sträng
 
 Ibland är det önskvärt att ta med ett enkelt eller dubbelt citattecken i en sträng. Du vill till exempel inkludera värdet `Alex's sale` eller `John the "Hunter"` i rapporter. Det finns två metoder för att inkludera dessa värden:
 
-* **Använd den andra citattypen**: Till exempel  `s.eVar1 = "Alex's sale"` och  `s.eVar1 = 'John the "Hunter"'` är båda giltiga.
-* **Escape-citattecken**: Använd ett omvänt snedstreck för att undvika citattecken. Till exempel är både `s.eVar1 = 'Alex\'s sale'` och `s.eVar1 = "John the \"Hunter\""` giltiga.
+* **Använd den andra citattypen**: Till exempel: `s.eVar1 = "Alex's sale"` och `s.eVar1 = 'John the "Hunter"'` är båda giltiga.
+* **Escape-citattecken**: Använd ett omvänt snedstreck för att undvika citattecken. Till exempel: `s.eVar1 = 'Alex\'s sale'` och `s.eVar1 = "John the \"Hunter\""` är båda giltiga.
 
 ### Undvik typografiska citattecken
 
-I vissa program konverteras automatiskt neutrala citattecken (`"..."` och `'...'`) till typografiska citattecken (`“...”` och `‘...’`). Undvik att använda dokumentredigerare (t.ex. Microsoft Word) eller skicka kodfragment via e-post. Kurmatecken kan inte användas i JavaScript.
+Vissa program konverterar automatiskt neutrala citattecken (`"..."` och `'...'`) till typografiska citattecken (`“...”` och `‘...’`). Undvik att använda dokumentredigerare (t.ex. Microsoft Word) eller skicka kodfragment via e-post. Kurmatecken kan inte användas i JavaScript.
 
 ## Referera till Analytics-objektet
 
-Alla variabler som skickas till Adobe använder objektet Analytics. De flesta implementeringar använder objektet `s`. Se till att Analytics-objektet ingår i referensen när du refererar till variabler.
+Alla variabler som skickas till Adobe använder objektet Analytics. De flesta implementeringar använder `s` -objekt. Se till att Analytics-objektet ingår i referensen när du refererar till variabler.
 
-Till exempel är `s.eVar1 = 'Value'` giltigt, medan `eVar1 = 'Value'` inte är det.
+Till exempel: `s.eVar1 = 'Value'` är giltig, while `eVar1 = 'Value'` inte.
 
 ## Definiera varje variabel en gång
 
-När en spårfunktion (`s.t()`) körs, tar AppMeasurement alla definierade variabler och kompilerar dem till en bildbegäran. Om du definierar en variabel mer än en gång i implementeringen används bara det senaste värdet. Kontrollera att alla variabelvärden innehåller rätt värde när spårningsfunktionen körs.
+När en spårfunktion (`s.t()`) kör, AppMeasurement tar alla definierade variabler och kompilerar dem till en bildbegäran. Om du definierar en variabel mer än en gång i implementeringen används bara det senaste värdet. Kontrollera att alla variabelvärden innehåller rätt värde när spårningsfunktionen körs.
 
 ## Korrigera variabelns skiftläge
 
-Vissa variabler använder versaler. JavaScript-variabler är skiftlägeskänsliga. Se till att du använder rätt skiftläge när du definierar variabler. Till exempel är `s.eVar1 = 'Value'` giltigt, medan `s.evar1 = 'Value'` inte är det.
+Vissa variabler använder versaler. JavaScript-variabler är skiftlägeskänsliga. Se till att du använder rätt skiftläge när du definierar variabler. Till exempel: `s.eVar1 = 'Value'` är giltig, while `s.evar1 = 'Value'` inte.
 
 ## Plugin-program
 
-Vissa organisationer använder plugins för att förbättra sin implementering av Adobe Analytics. När du uppgraderar AppMeasurement-versioner ska du inte glömma att ta med installerade plugin-program igen. Koden som skapas i [!UICONTROL Code Manager] har ingen plugin-kod med sig. Gör en kopia av din befintliga kod om du behöver återställa en tidigare version av AppMeasurement.
+Vissa organisationer använder plugins för att förbättra sin implementering av Adobe Analytics. När du uppgraderar AppMeasurement-versioner ska du inte glömma att ta med installerade plugin-program igen. Koden som skapas i [!UICONTROL Code Manager] saknar plugin-programkod. Gör en kopia av din befintliga kod om du behöver återställa en tidigare version av AppMeasurement.
 
 ## Tomt utrymme i variabelvärden
 
@@ -69,7 +70,7 @@ I HTML finns det flera tecken som skapar tomt utrymme. Det kan vara ett mellansl
 </body>
 ```
 
-I det här fallet fyller `document.title` i `s.pageName`, som får värdet &quot;Home Page&quot;. Vissa webbläsare kan dock tolka tomt utrymme på ett annat sätt. Resultatet kan vara något av följande två exempel:
+I detta fall `document.title` populates `s.pageName`, som får värdet &quot;Home Page&quot;. Vissa webbläsare kan dock tolka tomt utrymme på ett annat sätt. Resultatet kan vara något av följande två exempel:
 
 ```js
 s.pageName = "Home Page";
@@ -85,8 +86,8 @@ Dessa två variabelvärden betraktas som separata i Adobe Analytics. Det tomma u
 
 Implementeringar som fyller i många variabler med långa värden kan ibland leda till trunkerade bildförfrågningar. Vissa äldre webbläsare, t.ex. Internet Explorer, har en begränsning på 2 083 tecken för bildförfrågnings-URL:er. Om din organisation har mycket långa bildbegäranden kan du pröva följande:
 
-* **Använd tjänsten** Experience Cloud ID: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP-POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Mer information finns i [Adobe Experience Cloud ID-tjänsten](https://experienceleague.adobe.com/docs/id-service/using/home.html).
-* **Använd bearbetningsregler**:  [Med ](/help/admin/admin/c-processing-rules/processing-rules.md) regler kan du kopiera värden från en variabel till en annan. Med den här metoden kan du inte ange samma värde i flera variabler. Exempel:
+* **Använda Experience Cloud ID-tjänsten**: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP-POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Se [Adobe Experience Cloud ID-tjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) för mer information.
+* **Använd bearbetningsregler**: [Bearbetar regler](/help/admin/admin/c-processing-rules/processing-rules.md) kan kopiera värden från en variabel till en annan. Med den här metoden kan du inte ange samma värde i flera variabler. Exempel:
 
    Kör alltid:<br>
 Skriv över värdet för prop1 med eVar1<br>
@@ -99,7 +100,7 @@ Skriv över värdet för prop2 med eVar1<br>
    s.eVar1 = "The quick brown fox jumps over the lazy dog";
    ```
 
-* **Använd dynamiska variabler**: Om implementeringen fyller i många variabler med samma värde kan du använda  [dynamiska ](/help/implement/vars/page-vars/dynamic-variables.md) variabler för att korta URL:en för begäran:
+* **Använd dynamiska variabler**: Om implementeringen fyller många variabler med samma värde kan du använda [dynamiska variabler](/help/implement/vars/page-vars/dynamic-variables.md) för att förkorta begärande-URL:
 
    ```js
    s.eVar1 = "The quick brown fox jumps over the lazy dog";
@@ -108,4 +109,4 @@ Skriv över värdet för prop2 med eVar1<br>
    s.prop2 = "D=v1";
    ```
 
-* **Använd klassificeringar**: Om produkt- eller sidnamnen är ovanligt långa kan du använda ett identifierande värde eller en identifierande kod och sedan använda  [](/help/components/classifications/c-classifications.md) klassificeringar för att visa ett mer användarvänligt namn.
+* **Använd klassificeringar**: Om produkt- eller sidnamnen är ovanligt långa kan du använda ett identifierande värde eller en identifierande kod och sedan använda [klassificeringar](/help/components/classifications/c-classifications.md) för att visa ett mer användarvänligt namn.

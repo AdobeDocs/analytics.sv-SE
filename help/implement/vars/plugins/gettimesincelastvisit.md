@@ -1,8 +1,9 @@
 ---
 title: getTimeSinceLastVisit
 description: Mät hur lång tid det tar mellan två besök.
+feature: Variables
 exl-id: c5cef219-8a8a-4e57-a372-f2e063325a67
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 1%
@@ -15,16 +16,16 @@ ht-degree: 1%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med plugin-programmet `getTimeSinceLastVisit` kan du spåra hur lång tid det har tagit för en besökare att återvända till din webbplats efter det senaste besöket.
+The `getTimeSinceLastVisit` Med plugin-programmet kan du spåra hur lång tid det tar för en besökare att återvända till din webbplats efter det senaste besöket.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,7 +58,7 @@ function getTimeSinceLastVisit(){if(arguments&&"-v"===arguments[0])return{plugin
 
 ## Använda plugin-programmet
 
-Funktionen `getTimeSinceLastVisit` använder inga argument. Den returnerar den tid som gått sedan besökaren senast kom till webbplatsen och som är paketerad i följande format:
+The `getTimeSinceLastVisit` funktionen använder inte några argument. Den returnerar den tid som gått sedan besökaren senast kom till webbplatsen och som är paketerad i följande format:
 
 * Tid mellan 30 minuter och en timme sedan det senaste besöket är inställt på närmaste halvminuters test. Exempel, `"30.5 minutes"`, `"53 minutes"`
 * Tiden mellan en timme och en dag avrundas till närmaste kvartalstimme. Exempel, `"2.25 hours"`, `"7.5 hours"`
@@ -68,7 +69,7 @@ Funktionen `getTimeSinceLastVisit` använder inga argument. Den returnerar den t
 >
 >Denna plugin returnerar bara ett värde vid första besöket.
 
-Denna plugin skapar en cookie från första part med namnet `"s_tslv"` som är inställd på en Unix-tidsstämpel för den aktuella tiden. Kakan går ut efter två års inaktivitet.
+Denna plugin skapar en cookie från första part som kallas `"s_tslv"` anges till en Unix-tidsstämpel för den aktuella tiden. Kakan går ut efter två års inaktivitet.
 
 ## Exempel
 
@@ -95,5 +96,5 @@ s.prop1 = getTimeSinceLastVisit();
 ### 1.0 (16 april 2018)
 
 * Punktrelease (omkompilerad kod och mindre storlek).
-* Kod som härletts från plugin-programmet `getDaysSinceLastVisit` (nu borttaget och ändrat namn).
-* Använder nu `formatTime` och `inList` plugin-program för returvärdet.
+* Kod härledd från `getDaysSinceLastVisit` plugin-program (nu borttaget och namnändrat).
+* Nu används `formatTime` och `inList` plugin-program för returvärdet.

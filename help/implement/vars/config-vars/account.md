@@ -1,8 +1,9 @@
 ---
 title: konto
 description: Använd kontovariabeln för att bestämma till vilken rapportsserie data ska skickas.
+feature: Variables
 exl-id: 075d20be-6109-4024-84c4-1d048678d2bd
-source-git-commit: 3986084eaab81842b6ea0dbabc7bdb78e39f887a
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 1%
@@ -13,9 +14,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Den här variabeln har tagits bort. Använd funktionen [`s.sa()`](../functions/sa-method.md) om implementeringen kräver att du ändrar rapportsvitens mål.
+>Den här variabeln har tagits bort. Använd [`s.sa()`](../functions/sa-method.md) om implementeringen kräver att du ändrar rapportsvitens mål.
 
-I tidigare versioner av Adobe Analytics bestämde variabeln `account` den rapportserie som du vill skicka data till. Du måste ange ett rapportsprogram-ID för att kunna skicka data till Adobe Analytics.
+I tidigare versioner av Adobe Analytics `account` variabeln bestämmer vilken rapportserie du vill skicka data till. Du måste ange ett rapportsprogram-ID för att kunna skicka data till Adobe Analytics.
 
-* Om du använder taggar i Adobe Experience Platform finns rapportsviter under dragspelet [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget.
-* Om du använder funktionen [`s_gi()`](../functions/s-gi.md) för att instansiera ett Analytics-spårningsobjekt finns rapportsvitens ID redan som ett obligatoriskt argument i funktionen.
+* Om du använder taggar i Adobe Experience Platform finns rapportsviterna under [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget.
+* Om du använder [`s_gi()`](../functions/s-gi.md) för att instansiera ett Analytics-spårningsobjekt finns rapportsvitens ID:n redan som ett obligatoriskt argument i funktionen.

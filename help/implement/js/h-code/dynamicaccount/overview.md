@@ -1,8 +1,9 @@
 ---
 title: Översikt över dynamiska konton
 description: Lär dig arbetsflödet om hur du dynamiskt väljer en rapportserie med H-kod.
+feature: Implementation Basics
 exl-id: 6f35dd71-29ad-4923-b1f7-9c7d6ca45bd8
-source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 4%
@@ -19,19 +20,19 @@ Dynamiska konton är en implementeringsfunktion som gör att du kan avgöra vilk
 
 >[!TIP]
 >
->Adobe rekommenderar att du skickar data till en enda rapportserie och sedan använder virtuella rapportsviter för att separera data om det behövs. Mer information finns i [Överväganden för global rapportsvit](../../../prepare/global-rs.md).
+>Adobe rekommenderar att du skickar data till en enda rapportserie och sedan använder virtuella rapportsviter för att separera data om det behövs. Se [Överväganden för globala rapportsviter](../../../prepare/global-rs.md) för mer information.
 
 Tre variabler används för att dynamiskt välja en rapportserie.
 
 * [`dynamicAccountSelection`](dynamicaccountselection.md): Aktivera eller inaktivera dynamiskt kontoval.
 * [`dynamicAccountMatch`](dynamicaccountmatch.md): Avgör vilket värde som ska observeras. Till exempel URL:en eller en frågesträng.
-* [`dynamicAccountList`](dynamicaccountlist.md): Jämför värdena med  `dynamicAccountMatch`och om en matchning hittas fylls  `account` variabeln i.
+* [`dynamicAccountList`](dynamicaccountlist.md): Jämför värdena med `dynamicAccountMatch`, och om en matchning hittas, fyller i `account` variabel.
 
-Om `dynamicAccountSelection = true` jämförs värdet inom `dynamicAccountMatch` med `dynamicAccountList`. Om värdena i `dynamicAccountList` matchar varandra inkluderas rapportsvitens ID i variabeln `account`.
+If `dynamicAccountSelection = true`, värdet inom `dynamicAccountMatch` jämförs med `dynamicAccountList`. Om värdena i `dynamicAccountList` matchar, så ingår rapportsvitens ID i `account` variabel.
 
 ## Standardrapportsserie
 
-Variabeln `account` kan anges först och fungerar som ett standardvärde om ingen av de angivna strängarna hittas. Exempel:
+The `account` variabeln kan anges först och fungerar som ett standardvärde om ingen av de angivna strängarna hittas. Exempel:
 
 ```javascript
 s_account = "examplersiddefault";
@@ -40,7 +41,7 @@ s.dynamicAccountMatch = location.hostname;
 s.dynamicAccountList="examplersiddev=dev.example.com;examplersidprod=example.com";
 ```
 
-Om `location.hostname` varken var `dev.example.com` eller `example.com` skulle träffen skickas till `examplersiddefault`.
+If `location.hostname` var ingetdera `dev.example.com` eller `example.com`, träffen skickas till `examplersiddefault`.
 
 ## Taggar för flera programsviter
 
@@ -52,4 +53,4 @@ s.dynamicAccountMatch = location.hostname;
 s.dynamicAccountList="examplersid1,examplersid2=example.com";
 ```
 
-Om `location.hostname` innehåller `example.com` skickas träffen till både `examplersid1` och `examplersid2`.
+If `location.hostname` innehåller `example.com`, skickas träffen till båda `examplersid1` och `examplersid2`.

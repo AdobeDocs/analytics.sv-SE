@@ -1,8 +1,9 @@
 ---
 title: Skapa en Analytics-egenskap i taggar
 description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av taggar.
+feature: Launch Implementation
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 1%
@@ -14,7 +15,7 @@ ht-degree: 1%
 Taggar i Adobe Experience Platform gör att du kan integrera Experience Cloud-lösningar på din webbplats (inklusive Analytics). På den här sidan beskrivs särskilt hur en tagghanterare kan få en grundläggande Adobe Analytics-implementering korrekt konfigurerad.
 
 >[!NOTE]
->Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad referens till terminologiska ändringar.
+>Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad hänvisning till terminologiska förändringar.
 
 ## Förutsättningar
 
@@ -24,11 +25,11 @@ Taggar i Adobe Experience Platform gör att du kan integrera Experience Cloud-l�
 
 Egenskaper är överliggande behållare som du använder för att hantera taggar. Med tillägg kan du installera produktspecifika taggar och konfigurera dem.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på **[!UICONTROL New Property]**.
 1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på **[!UICONTROL Save]**.
 1. Klicka på den nyligen skapade taggegenskapen för att ange dess inställningar.
-1. Klicka på fliken **[!UICONTROL Extensions]** och sedan på **[!UICONTROL Catalog]**.
+1. Klicka på **[!UICONTROL Extensions]** tabbtangenten och sedan klicka **[!UICONTROL Catalog]**.
 1. Leta reda på identitetstjänsten och klicka sedan på **[!UICONTROL Install]**.
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
 1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
@@ -37,9 +38,9 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 
 Dataelement är referenser till specifika delar av webbplatsen för att samla in variabelvärden.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-1. Klicka på fliken **[!UICONTROL Data Elements]** och sedan på **[!UICONTROL Create New Data Element]**.
+1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och sedan klicka **[!UICONTROL Create New Data Element]**.
 1. Ge dataelementet följande inställningar:
 
    * Namn: Sidnamn
@@ -58,19 +59,19 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
 
 Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa värden skickas till Adobe-servrar.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-1. Klicka på **[!UICONTROL Create New Rule]** och ge den namnet `Global Rule`.
-1. Klicka på **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
+1. Klicka **[!UICONTROL Create New Rule]** och namnge `Global Rule`.
+1. Klicka **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
    * Tillägg: Core
    * Händelsetyp: Bibliotek inläst (sidan ovanpå)
    * Namn: Kärna - Bibliotek inläst (sidan ovanpå)
    * Ordning: 50
 1. Klicka på **[!UICONTROL Keep Changes]**.
-1. Klicka på **[!UICONTROL Add]** under **[!UICONTROL Actions]** och ange följande inställningar:
+1. Under **[!UICONTROL Actions]**, klicka **[!UICONTROL Add]** och ange följande inställningar:
    * Tillägg: Adobe Analytics
    * Åtgärdstyp: Ange variabler
-   * Sidnamn: klicka på behållarikonen och välj dataelementet `Page Name`.
+   * Sidnamn: klicka på behållarikonen och välj `Page Name` dataelement.
    * Campaign: Frågeparameter med värdet `cid`
 1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Klicka på plustecknet bredvid åtgärder för att lägga till en annan åtgärd och ange följande inställningar:
@@ -79,13 +80,13 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
    * Namn: Adobe Analytics - skicka Beacon
    * Spårning: s.t()
 1. Klicka på **[!UICONTROL Keep Changes]**.
-1. Kontrollera att du har angett händelsen och två åtgärder och klicka sedan på **[!UICONTROL Save]**.
+1. Kontrollera att du har en händelse och två åtgärder angivna och klicka sedan på **[!UICONTROL Save]**.
 
 ## Dokumentation och ytterligare resurser
 
-* [Adobe Analytics-tilläggsdokumentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en): Fullständig dokumentation som är specifik för tillägget Adobe Analytics i taggar.
+* [Dokumentation för Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en): Fullständig dokumentation som är specifik för tillägget Adobe Analytics i taggar.
 * [Komma igång med taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=en): Fullständig dokumentation för taggar, inklusive en mer ingående guide för hur du kommer igång
-* [Adobe Experience Platform Launch-kanal](https://experienceleague.adobe.com/?tag=Launch#recommended/solutions/experience-platform): Lär dig använda taggar via videor
+* [Adobe Experience Platform Launch](https://experienceleague.adobe.com/?tag=Launch#recommended/solutions/experience-platform): Lär dig använda taggar via videor
 
 ## Nästa steg
 

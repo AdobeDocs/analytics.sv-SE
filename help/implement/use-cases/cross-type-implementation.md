@@ -1,13 +1,16 @@
 ---
-title: Spåra olika implementeringstyper
+title: Spåra på olika implementeringstyper
 description: Använd olika implementeringstyper och spåra besökare smidigt mellan dem.
-translation-type: tm+mt
-source-git-commit: 819f719c4ce131c04916f3b668bcbda1a1b03651
+feature: Implementation Basics
+exl-id: 18aa5595-d2a7-4df2-a4ef-a5040c097483
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 9%
 
 ---
 
-
-# Spåra olika implementeringstyper
+# Spåra på olika implementeringstyper
 
 Den här informationen är avsedd för avancerade användare som är väl insatta i både rapportering och implementering. Försök inte redigera implementeringen utan att förstå konsekvenserna. Kontakta er kontoansvarige om ni behöver ändra implementeringen.
 

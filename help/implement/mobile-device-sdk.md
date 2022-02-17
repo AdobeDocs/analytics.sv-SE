@@ -1,8 +1,9 @@
 ---
 title: Implementera Analytics för mobila enheter
 description: Bestämma vilket AppMeasurement-bibliotek för mobila enheter som ska användas.
+feature: Implementation Basics
 exl-id: 8a1dc0c1-493f-41da-a0ed-08df0367e5d8
-source-git-commit: 5368e808a862a3e320f5d079433db96ab79b45c8
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 69%

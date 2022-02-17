@@ -1,8 +1,9 @@
 ---
 title: contextData
 description: Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa.
+feature: Variables
 exl-id: f2c747a9-1a03-4f9f-8025-9f4745403a81
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -11,9 +12,9 @@ ht-degree: 0%
 
 # contextData
 
-Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa. I stället för att explicit tilldela värden till Analytics-variabler i koden kan du skicka data i kontextdatavariabler. Bearbetningsregler tar sedan hänsyn till variabelvärden för kontextdata och skickar dem till respektive Analytics-variabler. Se [Bearbetningsregler](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md) i användarhandboken för Admin.
+Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa. I stället för att explicit tilldela värden till Analytics-variabler i koden kan du skicka data i kontextdatavariabler. Bearbetningsregler tar sedan hänsyn till variabelvärden för kontextdata och skickar dem till respektive Analytics-variabler. Se [Bearbetar regler](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md) i användarhandboken för Admin.
 
-Kontextdatavariabler är användbara för utvecklingsteam som samlar in data i namngivna element i stället för i numrerade variabler. I stället för att begära att utvecklarna ska tilldela sidans författare till `eVar10` kan du begära att de tilldelar den till `s.contextData["author"]` i stället. En Analysadministratör i organisationen kan sedan skapa bearbetningsregler för att mappa kontextdatavariabler till analysvariabler för rapportering. Utvecklingsteamen skulle i slutänden bara bekymra sig om kontextdatavariabler i stället för de många sidvariablerna som Adobe erbjuder.
+Kontextdatavariabler är användbara för utvecklingsteam som samlar in data i namngivna element i stället för i numrerade variabler. I stället för att begära utvecklarteam tilldelar du till exempel sidans författare `eVar10`kan du begära att de tilldelar den till `s.contextData["author"]` i stället. En Analysadministratör i organisationen kan sedan skapa bearbetningsregler för att mappa kontextdatavariabler till analysvariabler för rapportering. Utvecklingsteamen skulle i slutänden bara bekymra sig om kontextdatavariabler i stället för de många sidvariablerna som Adobe erbjuder.
 
 ## Sammanhangsdatavariabler som använder taggar i Adobe Experience Platform
 
@@ -21,7 +22,7 @@ Användargränssnittet för datainsamling har ingen dedikerad plats för att ang
 
 ## s.contextData i AppMeasurement och anpassad kodredigerare
 
-Variabeln `s.contextData` får inget värde direkt. Ange i stället variabelns egenskaper som en sträng.
+The `s.contextData` variabeln får inte ett värde direkt. Ange i stället variabelns egenskaper som en sträng.
 
 ```js
 // Assign the example_variable property a value
@@ -48,7 +49,7 @@ Bearbetningsreglerna börjar gälla omedelbart när de har sparats. De gäller i
 
 ## Skicka kontextdata i ett länkspårningsanrop
 
-Inkludera kontextdatavariabeln som en egenskap för `contextData` i [`s.linkTrackVars`](../config-vars/linktrackvars.md):
+Inkludera kontextdatavariabeln som en egenskap för `contextData` in [`s.linkTrackVars`](../config-vars/linktrackvars.md):
 
 ```js
 s.contextData["example_variable"] = "Example value";

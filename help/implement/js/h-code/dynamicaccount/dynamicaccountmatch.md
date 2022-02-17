@@ -1,8 +1,9 @@
 ---
 title: dynamicAccountMatch
 description: Variabeln dynamicAccountMatch bestämmer vilket värde som ska användas i dynamiska konton.
+feature: Implementation Basics
 exl-id: 3b68f2e6-1bd9-4b16-9d03-a87c9217e1b7
-source-git-commit: 562ed0e190954b7687fa79efaf5c5c54eb202af8
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 2%
@@ -15,9 +16,9 @@ ht-degree: 2%
 >
 >Dynamiska konton stöds bara med äldre JavaScript-implementeringar (H-kod). Dessa variabler stöds inte i aktuella AppMeasurement-bibliotek eller -taggar i Adobe Experience Platform.
 
-Variabeln `dynamicAccountMatch` är det värde som `dynamicAccountList` tittar på och jämför dess värden. Om `dynamicAccountSelection` inte är inställt på `true` ignoreras variabeln.
+The `dynamicAccountMatch` variabeln är värdet som `dynamicAccountList` tittar på och jämför dess värden. If `dynamicAccountSelection` är inte inställd på `true`, ignoreras den här variabeln.
 
-Om variabeln inte definieras är standardvärdet `window.location.host`.
+Om variabeln inte är definierad är standardvärdet `window.location.host`.
 
 ## Syntax
 
@@ -43,5 +44,5 @@ s.dynamicAccountMatch =  location.hostname + location.pathname + location.search
 
 ## Ytterligare information
 
-* Sidor som sparas på en hårddisk har inte flera definierade `location`-variabler (till exempel är `location.host` tomt). Se till att `s_account` innehåller en standardrapportserie.
-* När en sida översätts via en webbaserad översättningsmotor, som Google, fungerar inte det dynamiska kontovalet som avsett. Fyll i den variabla serversidan för `s_account` om du vill ha mer exakt spårning.
+* Sidor som sparats på en hårddisk har inte flera `location` variabler definierade (till exempel `location.host` är tomt). Se till att `s_account` innehåller en standardrapportsserie.
+* När en sida översätts via en webbaserad översättningsmotor, som Google, fungerar inte det dynamiska kontovalet som avsett. Om du vill ha mer exakt spårning fyller du i `s_account` variabel på serversidan.

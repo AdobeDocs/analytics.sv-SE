@@ -1,8 +1,9 @@
 ---
 title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
+feature: Variables
 exl-id: bcc23286-4dd5-45ac-ac6f-7b60e95cb798
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # trackingServer
 
-Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som genererats av besökaren. Variabeln `trackingServer` avgör var en bildbegäran skickas. Om den här variabeln inte är korrekt definierad kan din implementering uppleva dataförlust.
+Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som genererats av besökaren. The `trackingServer` variabeln bestämmer var en bildbegäran skickas. Om den här variabeln inte är korrekt definierad kan din implementering uppleva dataförlust.
 
 >[!IMPORTANT]
 >
@@ -19,18 +20,18 @@ Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som g
 
 ## Spåra server med hjälp av taggar i Adobe Experience Platform
 
-Spårningsservern är ett fält under dragspelet [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget.
+Spårningsservern är ett fält under [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
-3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
-4. Expandera dragspelet [!UICONTROL General], som visar fältet [!UICONTROL Tracking Server].
+3. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics.
+4. Expandera [!UICONTROL General] dragspelspanel, som visar [!UICONTROL Tracking Server] fält.
 
-Om fältet lämnas tomt är det som standard `[rsid].data.adobedc.net`.
+Om fältet lämnas tomt blir standardvärdet `[rsid].data.adobedc.net`.
 
 ## s.trackingServer i AppMeasurement och anpassad kodredigerare
 
-Variabeln `s.trackingServer` är en sträng som innehåller platsen där data ska skickas.
+The `s.trackingServer` variabeln är en sträng som innehåller platsen där data ska skickas.
 
 ## Bestämma värdet för trackingServer
 
@@ -38,7 +39,7 @@ Värdet för den här variabeln beror på om du använder cookies från första 
 
 ### cookies från första part
 
-Om du använder en cookie-implementering från en annan tillverkare är det troligt att någon i din organisation redan har slutfört cookie-processen från första part. Se [cookies från första part i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html) i användarhandboken för bastjänsterna för mer information om cookie-processen från första part.
+Om du använder en cookie-implementering från en annan tillverkare är det troligt att någon i din organisation redan har slutfört cookie-processen från första part. Se [Första parts-cookies i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html) i användarhandboken för bastjänsterna för mer information om cookie-processen från första part.
 
 Den person som initialt konfigurerar cookie-implementeringen från första part definierar också den domän och underdomän som används. Exempel:
 
@@ -52,16 +53,16 @@ s.trackingServer = "data.example.com";
 >
 >Ökad sekretesspraxis i moderna webbläsare gör cookies från tredje part mindre tillförlitliga. Adobe rekommenderar att du följer arbetsflödet för cookies från första part.
 
-Om du använder en cookie-implementering från tredje part är värdet för `trackingServer` en underdomän till `data.adobedc.net`. Exempel:
+Om du använder en cookie-implementering från en annan leverantör, är värdet för `trackingServer` är en underdomän till `data.adobedc.net`. Exempel:
 
 ```js
 s.trackingServer = "example.data.adobedc.net";
 ```
 
-Välj en underdomän som är unik för din organisation och som sannolikt inte plockas av någon annan organisation som använder Adobe Analytics.  Vi rekommenderar att besökarens namnutrymme tilldelas din organisation.  Se till att alla implementeringar i organisationen använder samma spårningsserver. Det kan vara praktiskt att behålla denna information i ett [lösningsdesigndokument](../../prepare/solution-design.md).
+Välj en underdomän som är unik för din organisation och som sannolikt inte plockas av någon annan organisation som använder Adobe Analytics.  Vi rekommenderar att besökarens namnutrymme tilldelas din organisation.  Se till att alla implementeringar i organisationen använder samma spårningsserver. Det kan vara praktiskt att behålla informationen i en [konstruktionsdokument](../../prepare/solution-design.md).
 
-Din organisation kanske redan använder en spårningsserver från tredje part i domänerna `sc.omtrdc.net` eller `2o7.net`.  Dessa användes huvudsakligen i tidigare versioner av Adobe Analytics och är fortfarande giltiga.
+Din organisation kanske redan använder en spårningsserver från tredje part i `sc.omtrdc.net` eller `2o7.net` domäner.  Dessa användes huvudsakligen i tidigare versioner av Adobe Analytics och är fortfarande giltiga.
 
 >[!NOTE]
 >
->Använd inga underdomäner djupare än `example.data.adobedc.net`. `custom.example.data.adobedc.net` är till exempel inte en giltig spårningsserver.
+>Använd inte underdomäner djupare än `example.data.adobedc.net`. Till exempel: `custom.example.data.adobedc.net` är inte en giltig spårningsserver.

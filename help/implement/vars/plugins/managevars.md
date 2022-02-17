@@ -1,8 +1,9 @@
 ---
 title: manageVars
 description: Ändra värdena för mer än en Analytics-variabel åt gången.
+feature: Variables
 exl-id: b80d1c43-7e79-443e-84fb-1f1edffca461
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med plugin-programmet `manageVars` kan du ändra värdena för flera Analytics-variabler samtidigt. Du kan också ange värden som gemener eller ta bort onödiga tecken från flera variabelvärden samtidigt. Adobe rekommenderar att du använder denna plugin om du vill rensa upp värdet för flera variabler samtidigt.
+The `manageVars` Med plugin-programmet kan du ändra värdena för flera Analytics-variabler samtidigt. Du kan också ange värden som gemener eller ta bort onödiga tecken från flera variabelvärden samtidigt. Adobe rekommenderar att du använder denna plugin om du vill rensa upp värdet för flera variabler samtidigt.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,9 +58,9 @@ function manageVars(cb,l,il){var g=cb,c=l,d=il;if("-v"===g)return{plugin:"manage
 
 ## Använda plugin-programmet
 
-Funktionen `manageVars` använder följande argument:
+The `manageVars` funktionen använder följande argument:
 
-* **`cb`** (required, string): Namnet på en callback-funktion som plugin-programmet använder för att ändra Analytics-variablerna. Du kan använda en Adobe-funktion som `cleanStr` eller en egen anpassad funktion.
+* **`cb`** (required, string): Namnet på en callback-funktion som plugin-programmet använder för att ändra Analytics-variablerna. Du kan använda en Adobe-funktion som `cleanStr` eller en egen funktion.
 * **`l`** (valfri, sträng): En kommaavgränsad lista med Analytics-variabler som du vill ändra. Standardvärdet är ALLA Adobe Analytics-variabler när de inte anges, vilket inkluderar:
    * `pageName`
    * `purchaseID`
@@ -77,7 +78,7 @@ Funktionen `manageVars` använder följande argument:
    * Alla hierarkivariabler
    * Alla listvariabler
    * Alla kontextdatavariabler
-* **`Il`** (valfritt, boolesk): Ange till  `false` om du vill  ** exkludera listan med variabler som deklarerats i  `l` argumentet i stället för att ta med dem. Standardvärdet är `true`.
+* **`Il`** (valfritt, boolesk): Ange till `false` om du vill *exclude* förteckningen över variabler som deklarerats i `l` i stället för att ta med dem. Standardvärdet är `true`.
 
 Anrop till den här funktionen returnerar ingenting. I stället ändras värdena för Analytics-variabler baserat på den önskade callback-funktionen.
 
@@ -133,7 +134,7 @@ manageVars("cleanStr");
 
 ...ändrar värdena för alla de variabler som beskrivs ovan, inklusive händelsvariablerna.  Callback-funktionen clearStr gör följande med varje variabels värde:
 
-* Tar bort HTML-kodning
+* Tar bort kodningen HTML
 * Tar bort blanksteg som hittats i början och slutet av värdet
 * Ersätter inledande och avslutande citattecken (t.ex. &quot;) med ett rakt enkelt citattecken (&#39;)
 * Ersätter tabbtecken, radmatningstecken och radmatningstecken med blanksteg
@@ -148,9 +149,9 @@ manageVars("cleanStr");
 ### 2.1 (14 januari 2019)
 
 * Felkorrigering för Internet Explorer 11-webbläsare.
-* Ändringar för `s.cleanStr`, som nu använder den vanliga funktionen `cleanStr`.
+* Ändringar för `s.cleanStr`, som nu använder `cleanStr` funktion.
 
 ### 2.0 (7 maj 2018)
 
 * Point release (inklusive fullständig omanalys/omskrivning av plugin-program)
-* En `cleanStr`-återanropsfunktion har lagts till
+* Tillagd `cleanStr` callback-funktion

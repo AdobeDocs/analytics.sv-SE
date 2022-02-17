@@ -1,8 +1,9 @@
 ---
 title: getVisitNum
 description: Spåra besökarens aktuella besöksnummer.
+feature: Variables
 exl-id: 05b3f57c-7268-4585-a01e-583f462ff8df
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin-programmet `getVisitNum` returnerar besöksnumret för alla besökare som kommer till webbplatsen inom det önskade antalet dagar. Analysis Workspace erbjuder en dimension av typen Besök nummer som ger liknande funktionalitet. Adobe rekommenderar att du använder denna plugin om du vill ha mer kontroll över hur besöksnumret ökas. Denna plugin behövs inte om den inbyggda dimensionen &#39;Besök nummer&#39; i Analysis Workspace är tillräcklig för dina rapporteringsbehov.
+The `getVisitNum` plugin-programmet returnerar besöksnumret för alla besökare som kommer till webbplatsen inom det önskade antalet dagar. Analysis Workspace erbjuder en dimension av typen Besök nummer som ger liknande funktionalitet. Adobe rekommenderar att du använder denna plugin om du vill ha mer kontroll över hur besöksnumret ökas. Denna plugin behövs inte om den inbyggda dimensionen &#39;Besök nummer&#39; i Analysis Workspace är tillräcklig för dina rapporteringsbehov.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,17 +58,17 @@ function getVisitNum(rp,erp){var a=rp,l=erp;function m(c){return isNaN(c)?!1:(pa
 
 ## Använda plugin-programmet
 
-Funktionen `getVisitNum` använder följande argument:
+The `getVisitNum` funktionen använder följande argument:
 
-* **`rp`** (valfritt, heltal ELLER sträng): Antalet dagar innan besöksnummerräknaren återställs.  Standardvärdet är `365` om det inte anges.
-   * När det här argumentet är `"w"` återställs räknaren i slutet av veckan (lördag klockan 11:59)
-   * När det här argumentet är `"m"` återställs räknaren i slutet av månaden (den sista dagen i den här månaden)
-   * När det här argumentet är `"y"` återställs räknaren vid årets slut (31 december)
-* **`erp`** (valfritt, boolesk): När  `rp` argumentet är ett tal avgör det här argumentet om giltigheten för besöksnumret ska förlängas. Om `true` anges återställs besöksnummerräknaren vid efterföljande träffar på webbplatsen. Om `false` anges utökas inte efterföljande träffar på din webbplats när besöksräknaren återställs. Standardvärdet är `true`. Det här argumentet är inte giltigt när argumentet `rp` är en sträng.
+* **`rp`** (valfritt, heltal ELLER sträng): Antalet dagar innan besöksnummerräknaren återställs.  Standardvärdet är `365` när den inte är inställd.
+   * När det här argumentet är `"w"`, återställs räknaren i slutet av veckan (lördagen klockan 11:59)
+   * När det här argumentet är `"m"`, återställs räknaren i slutet av månaden (den sista dagen i den här månaden)
+   * När det här argumentet är `"y"`, vid årets slut (31 december)
+* **`erp`** (valfritt, boolesk): När `rp` argument är ett tal, det här argumentet avgör om giltigheten för besöksnumret ska förlängas. Om inställt på `true`återställer efterföljande träffar på webbplatsen besöksnummerräknaren. Om inställt på `false`fortsätter inte efterföljande träffar på din webbplats när besöksräknaren återställs. Standardvärdet är `true`. Detta argument är inte giltigt om `rp` argument är en sträng.
 
 Besöksnummerökningen när besökaren återvänder till er webbplats efter 30 minuters inaktivitet. Om den här funktionen anropas returneras ett heltal som representerar besökarens aktuella besöksnummer.
 
-Detta plugin-program ställer in en cookie från första part med namnet `"s_vnc[LENGTH]"` där `[LENGTH]` är värdet som skickas till argumentet `rp`. Exempel: `"s_vncw"`, `"s_vncm"` eller `"s_vnc365"`. Värdet för cookien är en kombination av en Unix-tidsstämpel som representerar när besöksräknaren återställs, till exempel slutet av veckan, slutet av månaden eller efter 365 dagars inaktivitet. Den innehåller även det aktuella besöksnumret. Detta plugin-program ställer in en annan cookie med namnet `"s_ivc"` som är inställd på `true` och upphör att gälla efter 30 minuters inaktivitet.
+Detta plugin-program ställer in en cookie från första part som kallas `"s_vnc[LENGTH]"` där `[LENGTH]` är värdet som skickas till `rp` argument. Till exempel: `"s_vncw"`, `"s_vncm"`, eller `"s_vnc365"`. Värdet för cookien är en kombination av en Unix-tidsstämpel som representerar när besöksräknaren återställs, till exempel slutet av veckan, slutet av månaden eller efter 365 dagars inaktivitet. Den innehåller även det aktuella besöksnumret. Detta plugin-program ställer in en annan cookie med namnet `"s_ivc"` som är inställd på `true` och upphör efter 30 minuters inaktivitet.
 
 ## Exempel
 
@@ -99,18 +100,18 @@ s.prop3 = getVisitNum("y");
 
 ### 4.11 (30 september 2019)
 
-* Ett problem har korrigerats där argumentet `erp` uttryckligen angavs till `false`.
+* Ett problem där `erp` argumentet angavs explicit till `false`.
 
 ### 4.1 (21 maj 2018)
 
-* Uppdaterade plugin-programmet `endOfDatePeriod` till v1.1.
+* Uppdaterade `endOfDatePeriod` plugin till v1.1.
 
 ### 4.0 (17 april 2018)
 
 * Punktrelease (omkompilerad, mindre kodstorlek).
-* Tar bort cookie-argument eftersom plugin-programmet nu dynamiskt genererar cookies baserat på `rp`-argumentet)
+* Tog bort cookie-argument eftersom plugin-programmet nu dynamiskt genererar cookies baserat på `rp` argument)
 
 ### 3.0 (5 juni 2016)
 
 * fullständig översyn
-* Kombinera alla tidigare lösningar som finns i olika versioner av `getVisitNum`-plugin-programmet.
+* Kombinera alla tidigare lösningar som finns i olika versioner av `getVisitNum` plugin-program.

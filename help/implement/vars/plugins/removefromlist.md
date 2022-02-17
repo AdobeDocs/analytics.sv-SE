@@ -1,8 +1,9 @@
 ---
 title: rfl
 description: Ta bort ett specifikt värde från en teckenavgränsad sträng.
+feature: Variables
 exl-id: d66b757e-b39f-4b6e-9999-6fbde87505af
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Med `rfl`-plugin-programmet kan du ta bort värden från avgränsade strängar, till exempel [`events`](../page-vars/events/events-overview.md), [`products`](../page-vars/products.md), [`list`](../page-vars/list.md) och andra. Denna plugin är användbar om du vill ta bort specifika värden från en avgränsad sträng utan att behöva oroa dig för avgränsare. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
+The `rfl` Med plugin-programmet kan du&quot;säkert&quot; ta bort värden från avgränsade strängar, till exempel [`events`](../page-vars/events/events-overview.md), [`products`](../page-vars/products.md), [`list`](../page-vars/list.md)och andra. Denna plugin är användbar om du vill ta bort specifika värden från en avgränsad sträng utan att behöva oroa dig för avgränsare. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
 
 Plugin-programmet använder följande logik:
 
@@ -26,10 +27,10 @@ Plugin-programmet använder följande logik:
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -42,10 +43,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -62,15 +63,15 @@ function rfl(lv,vr,d1,d2,df){var b=lv,f=vr,e=d1,h=d2,g=df;if("-v"===b)return{plu
 
 ## Använda plugin-programmet
 
-Funktionen `rfl` använder följande argument:
+The `rfl` funktionen använder följande argument:
 
 * **`lv`** (required, string): En variabel (eller sträng) som innehåller en lista med avgränsade värden
-* **`vr`** (required, string): Värdet som du vill ta bort från  `lv` argumentet. Adobe rekommenderar att du inte tar bort flera värden under ett enda `rfl`-anrop.
-* **`d1`** (valfri, sträng): Avgränsaren som  `lv` argumentet använder. Standardvärdet är ett komma (`,`).
-* **`d2`** (valfri, sträng): Avgränsaren som du vill att retursträngen ska använda. Standardvärdet är samma värde som `d1`-argumentet.
-* **`df`** (valfritt, boolesk): Om  `true`det här alternativet används för att endast duplicera instanser av  `vr` argumentet från  `lv` argumentet i stället för alla instanser. Standardvärdet är `false` om det inte anges.
+* **`vr`** (required, string): Värdet som du vill ta bort från `lv` argument. Adobe rekommenderar att du inte tar bort flera värden under en enda `rfl` ring.
+* **`d1`** (valfri, sträng): Avgränsaren som `lv` -argument används. Standardvärdet är ett komma (`,`).
+* **`d2`** (valfri, sträng): Avgränsaren som du vill att retursträngen ska använda. Standardvärdet är samma som `d1` argument.
+* **`df`** (valfritt, boolesk): If `true`, framtvingar endast dubblettinstanser av `vr` argument från `lv` i stället för alla instanser. Standardvärdet är `false` när den inte är inställd.
 
-När den här funktionen anropas returneras en modifierad sträng som innehåller argumentet `lv`, men utan instanser (eller dubblettinstanser) av värdet som anges i argumentet `vr`.
+Anrop till den här funktionen returnerar en modifierad sträng som innehåller `lv` -argument, men utan instanser (eller dubblettinstanser) av det värde som anges i `vr` argument.
 
 ## Exempelanrop
 
@@ -136,7 +137,7 @@ s.events = rfl(s.events);
 s.events = "";
 ```
 
-Om argumentet `lv` eller `vr` är tomt i ett `rfl`-anrop returnerar plugin-programmet ingenting.
+Om någon av `lv` argument `vr` argumentet är tomt i en `rfl` anrop, returnerar plugin-programmet ingenting.
 
 ### Exempel 4
 
@@ -164,7 +165,7 @@ s.prop4 = "hello|people|today";
 s.eVar5 = "hello|today";
 ```
 
-Tänk på att plugin-programmet bara returnerar ett värde. det &quot;återställer&quot; inte variabeln som skickas via argumentet `lv`.
+Tänk på att plugin-programmet bara returnerar ett värde. det inte &quot;återställer&quot; variabeln som skickas via `lv` argument.
 
 ### Exempel 5
 
@@ -186,7 +187,7 @@ s.prop4 = rfl(s.prop4,"people");
 s.prop4 = "hello|people|today";
 ```
 
-Var noga med att ange argumentet `d1` om argumentvärdet `lv` innehåller en annan avgränsare än standardvärdet (t.ex. komma).
+Var noga med att ange `d1` argument i de fall där `lv` argumentvärdet innehåller en annan avgränsare än standardvärdet (t.ex. komma).
 
 ### Exempel 6
 
@@ -250,7 +251,7 @@ s.events = rfl(s.events,"event23:12345");
 s.events = "event22,event23:12345,event25";
 ```
 
-När du behöver ta bort en händelse som använder serialisering och/eller numerisk/valutasyntax, ska du bara ange själva händelsen (dvs. utan serialisering/numeriska/valutavärden) i anropet `rfl`.
+När du behöver ta bort en händelse som använder serialisering och/eller numerisk syntax/valutasyntax, bör du bara ange själva händelsen (dvs. utan serialisering/numeriska/valutavärden) i `rfl` ring.
 
 ### Exempel 9
 
@@ -332,7 +333,7 @@ s.events = rfl(s.events,"event23,event24");
 s.events = "event22,event23,event24,event25";
 ```
 
-Det går inte att ange flera värden i `vr`-argumentet. Logiken `rfl` i ovanstående exempel skulle först dela upp värdena i argumentet `lv` (d.v.s. s.events) och sedan försöka matcha varje avgränsat värde med det fullständiga argumentvärdet för `vr` (d.v.s. `"event23,event24"`).
+Ställa in flera värden i `vr` argument stöds inte. The `rfl` logiken i ovanstående exempel skulle först dela upp värdena i `lv` argument (d.v.s. s.events) försöker sedan matcha varje avgränsat värde mot det fullständiga `vr` argumentvärde (dvs. `"event23,event24"`).
 
 ### Exempel 13
 
@@ -355,7 +356,7 @@ s.events = rfl(s.events,"event24");
 s.events = "event22,event25");
 ```
 
-Varje värde som ska tas bort från listan ska finnas i ett eget `rfl`-anrop.
+Varje värde som ska tas bort från listan bör finnas inom ett eget värde `rfl` ring.
 
 ### Exempel 14
 
@@ -377,7 +378,7 @@ s.linkTrackVars = rfl(s.linkTrackVars,"eVar2", ",", ",", false);
 s.linkTrackVars = "events,eVar1,eVar3";
 ```
 
-De tre sista argumenten (dvs. &quot;,&quot;,&quot;,&quot;,false) i slutet av det här `rfl`-anropet är inte nödvändigt, men gör inte heller något illa eftersom de finns där eftersom de matchar standardinställningarna.
+De tre sista argumenten (dvs. &quot;,&quot;,&quot;,&quot;,false) i slutet av detta `rfl` -anropet är inte nödvändigt, men gör inte heller något ont eftersom de finns där eftersom de matchar standardinställningarna.
 
 ### Exempel 15
 
@@ -399,7 +400,7 @@ rfl(s.events,"event23");
 s.events = "event22,event23,event24";
 ```
 
-Kom ihåg att plugin-programmet bara returnerar ett värde. det &quot;återställer&quot; inte variabeln som skickas via argumentet `lv`.
+Kom ihåg att plugin-programmet bara returnerar ett värde. det inte &quot;återställer&quot; variabeln som skickas via `lv` argument.
 
 ## Versionshistorik
 
@@ -414,7 +415,7 @@ Kom ihåg att plugin-programmet bara returnerar ett värde. det &quot;återstäl
 ### 2.0 (16 april 2018)
 
 * Punktrelease (omkompilerad, mindre kodstorlek).
-* Behovet av plugin-programmet `join` har tagits bort.
+* Behovet av `join` plugin-program.
 
 ### 1.0 (18 juli 2016)
 

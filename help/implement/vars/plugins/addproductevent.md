@@ -1,8 +1,9 @@
 ---
 title: addProductEvent
 description: Lägger till anpassade händelser i variabeln products and events.
+feature: Variables
 exl-id: 74f4cb93-714a-4d2b-88f3-408d032f6811
-source-git-commit: ab078c5da7e0e38ab9f0f941b407cad0b42dd4d1
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%
@@ -15,16 +16,16 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-Plugin-programmet `addProductEvent` lägger till en numerisk händelse eller valutakändelse i variabeln [`products`](../page-vars/products.md). Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakändelse i variabeln `products` utan att behöva bekymra dig om produktsträngformatet. Detta plugin-program är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i variabeln `products`.
+The `addProductEvent` plugin-programmet lägger till en numerisk händelse eller valutakändelse i [`products`](../page-vars/products.md) variabel. Adobe rekommenderar att du använder det här plugin-programmet om du vill lägga till en numerisk händelse eller valutakurs i `products` utan att oroa dig för produktsträngsformatet. Detta plugin-program är inte nödvändigt om du inte använder numeriska händelser eller valutakändelser i `products` variabel.
 
 ## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Catalog]
-1. Installera och publicera tillägget [!UICONTROL Common Analytics Plugins]
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
    * Villkor: Ingen
    * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
@@ -37,10 +38,10 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics-tillägget.
-1. Expandera dragspelet [!UICONTROL Configure tracking using custom code], som visar knappen [!UICONTROL Open Editor].
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
@@ -57,17 +58,17 @@ function addProductEvent(en,ev,ap){var f=en,g=ev,c=ap;if("-v"===f)return{plugin:
 
 ## Använda plugin-programmet
 
-Funktionen `addProductEvent` använder följande argument:
+The `addProductEvent` funktionen använder följande argument:
 
-* **`en`** (required, string): Händelsen som ska läggas till i den sista posten i  `products` variabeln. Om variabeln `products` är tom skapas en tom produktpost med händelsen (och dess värde) bifogad.
-* **`ev`** (required, string): Värdet som tilldelas till den numeriska händelsen eller valutakurshändelsen i  `en` argumentet.  Standardvärdet är `1` om det inte anges. Tal som inte är inkapslade i strängcitattecken är också giltiga.
-* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost lägger värdet  `true` (eller  `1`) till händelsen i alla produktposter.  Standardvärdet är `false` om det inte anges.
+* **`en`** (required, string): Händelsen som ska läggas till i den sista posten i `products` variabel. Om `products` variabeln är tom, sedan skapas en&quot;tom&quot; produktpost med händelsen (och dess värde) bifogad.
+* **`ev`** (required, string): Värdet som tilldelats den numeriska händelsen eller valutakurshändelsen i `en` argument.  Standardvärdet är `1` när den inte är inställd. Tal som inte är inkapslade i strängcitattecken är också giltiga.
+* **`ap`** (valfritt, boolesk): Om variabeln products för närvarande innehåller mer än en produktpost, är värdet `true` (eller `1`) lägger till händelsen i alla produktposter.  Standardvärdet är `false` när den inte är inställd.
 
-`addProductEvent` returnerar ingenting. I stället läggs händelsen och dess värde till i variabeln `products`. Plugin-programmet lägger automatiskt till händelsen i variabeln [`events`](../page-vars/events/events-overview.md) eftersom den också krävs där.
+The `addProductEvent` returnerar ingenting. I stället läggs händelsen och dess värde till i `products` variabel. Plugin-programmet lägger automatiskt till händelsen i [`events`](../page-vars/events/events-overview.md) variabel, eftersom den också krävs där.
 
 ## Cookies
 
-Funktionen `addProductEvent` skapar inte eller använder några cookies.
+The `addProductEvent` funktionen skapar inte eller använder några cookies.
 
 ## Exempel
 

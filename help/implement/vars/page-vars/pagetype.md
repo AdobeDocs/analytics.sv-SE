@@ -1,8 +1,9 @@
 ---
 title: pageType
 description: Kontrollera om den aktuella sidan är ett 404-fel.
+feature: Variables
 exl-id: e61ef82d-b583-4230-b904-5ea3584910be
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # pageType
 
-Variabeln `pageType` är en flagga som används för att ange felsidor på platsen, till exempel 404 fel. Om variabeln innehåller strängen `errorPage` fylls dimensionen &quot;Sidor hittades inte&quot; i.
+The `pageType` variabeln är en flagga som används för att ange felsidor på din plats, till exempel 404 fel. Om variabeln innehåller strängen `errorPage`fyller den i dimensionen &quot;Sidor hittades inte&quot;.
 
 >[!IMPORTANT]
 >
@@ -23,7 +24,7 @@ Det finns inget dedikerat fält i användargränssnittet för datainsamling som 
 
 ## s.pageType i AppMeasurement och anpassad kodredigerare
 
-Variabeln `s.pageType` är en sträng där värdet `errorPage` är dess enda giltiga värde. Ange den här variabeln till det här värdet på alla felsidor på webbplatsen, till exempel på 404 sidor.
+The `s.pageType` variabeln är en sträng där värdet `errorPage` är dess enda giltiga värde. Ange den här variabeln till det här värdet på alla felsidor på webbplatsen, till exempel på 404 sidor.
 
 ```js
 s.pageType = "errorPage";

@@ -1,8 +1,9 @@
 ---
 title: registerPostTrackCallback
 description: Skapa callback-funktioner när du har skickat en träff till Adobe.
+feature: Variables
 exl-id: b2124b89-2bab-4cca-878c-18d62377a8f3
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -11,17 +12,17 @@ ht-degree: 0%
 
 # registerPostTrackCallback
 
-Variabeln `registerPostTrackCallback` gör att din organisation kan koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
+The `registerPostTrackCallback` kan din organisation koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
 
 >[!IMPORTANT]
 >
->Anropa inga spårningsanrop som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti variabeln `registerPostTrackCallback`. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
+>Anropa inga spårningssamtal som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti `registerPostTrackCallback` variabel. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
 
-Varje gång du anropar variabeln `registerPostTrackCallback` kopplar du den funktionen till körning omedelbart efter att en bildbegäran har skickats. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
+Varje gång du ringer `registerPostTrackCallback` kan du koppla funktionen till den så att den körs direkt när en bildbegäran har skickats. Undvik att registrera samma funktion flera gånger i samma sidinläsning.
 
 >[!NOTE]
 >
->Tidsangivelsen och ordningen för funktioner som utlösts mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` är inte garanterad. Undvik beroenden mellan dessa två funktioner.
+>Tidpunkt och ordning för de funktioner som utlöses mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` är inte garanterade. Undvik beroenden mellan dessa två funktioner.
 
 ## Registrera återanrop efter spår med hjälp av taggar i Adobe Experience Platform
 
@@ -29,13 +30,13 @@ Det finns inget dedikerat fält i användargränssnittet för datainsamling som 
 
 ## s.registerPostTrackCallback i AppMeasurement och anpassad kodredigerare
 
-`s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs omedelbart när en bildbegäran har skickats.
+The `s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs omedelbart när en bildbegäran har skickats.
 
 ```js
 s.registerPostTrackCallback(function(){/* Desired code */});
 ```
 
-Om du vill använda URL:en för bildbegäran i koden refererar du till strängargumentet `requestUrl` i den kapslade funktionen. Du kan analysera variabeln `requestUrl` för att kunna använda den. om du justerar den här variabeln påverkas inte datainsamlingen.
+Om du vill använda URL:en för bildbegäran i koden ska du referera till `requestUrl` strängargument i den kapslade funktionen. Du kan analysera `requestUrl` variabel för det du vill använda, om du justerar den här variabeln påverkas inte datainsamlingen.
 
 ```js
 s.registerPostTrackCallback(function(requestUrl){
@@ -43,7 +44,7 @@ s.registerPostTrackCallback(function(requestUrl){
 });
 ```
 
-Ytterligare argument kan inkluderas i funktionen `s.registerPostTrackCallback`, som kan användas i den kapslade funktionen:
+Ytterligare argument kan inkluderas i `s.registerPostTrackCallback` som kan användas i den kapslade funktionen:
 
 ```js
 s.registerPostTrackCallback(function(requestUrl,a,b,c) {
@@ -56,7 +57,7 @@ s.registerPostTrackCallback(function(requestUrl,a,b,c) {
 
 ## Exempel på användningsfall
 
-Det kan vara bra att registrera funktionen [`clearVars()`](clearvars.md) i återanropet efter spåret för enkelsidiga program. Varje gång du skickar en träff till Adobe körs funktionen `clearVars()`. Implementeringen kan sedan definiera variabler igen utan att oroa dig för felaktigt bestående värden.
+Registrerar [`clearVars()`](clearvars.md) funktionen i återanropet efter spåret kan vara bra för enkelsidiga program. Varje gång du skickar en träff till Adobe `clearVars()` funktionen körs. Implementeringen kan sedan definiera variabler igen utan att oroa dig för felaktigt bestående värden.
 
 ```js
 s.registerPostTrackCallback(function(){s.clearVars();});

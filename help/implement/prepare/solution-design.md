@@ -1,19 +1,22 @@
 ---
 title: Skapa ett dokument för lösningsdesign
 description: Lär dig vad ett designdokument är och hur du kan använda det i din organisation.
-translation-type: tm+mt
-source-git-commit: 283fcd5832abe4c09caa332c2ebc3a22029e6707
+feature: Implementation Basics
+exl-id: 0b5c5ddd-5f53-4790-a649-1381135dacda
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 1%
 
 ---
 
-
 # Skapa ett dokument för lösningsdesign
 
-Ett dokument för lösningsdesign (även kallat ett dokument för lösningsdesignreferens eller affärskrav) är i själva verket planen för er analysimplementering. Det definierar kriterier som identifieras av intressenter i hela organisationen och översätter dem till variabler i Adobe Analytics. Utan en har organisationer svårt att samordna rapporteringsbehoven och tenderar att missa insamlingen av viktiga data.
+Ett dokument för lösningsdesign (även kallat ett dokument för lösningsdesignreferens eller affärskrav) är i själva verket planen för er analysimplementering. Det definierar kriterier som identifieras av intressenter i hela organisationen och översätter dem till variabler inom Adobe Analytics. Utan en har organisationer svårt att samordna rapporteringsbehoven och tenderar att missa insamlingen av viktiga data.
 
 ## Förutsättningar
 
-[Validera er Analytics-implementering och publicera i produktion](../launch/validate-publish-prod.md) - Även om det inte krävs direkt rekommenderar Adobe att ni har en grundläggande implementering så att kritiska data samlas in medan ytterligare affärskrav är fastställda och implementerade.
+[Validera er Analytics-implementering och publicera till produktion](../launch/validate-publish-prod.md) - Även om det inte krävs direkt rekommenderar Adobe att man har en grundläggande implementering så att viktiga data samlas in samtidigt som ytterligare affärskrav fastställs och implementeras.
 
 ## Designdokumentets ägarskap och plats
 
@@ -38,9 +41,9 @@ När man avgör vilka data som ska samlas in är det enkelt att säga&quot;allt&
 
 ## Ytterligare resurser
 
-Att definiera ett designdokument är ett ganska komplext projekt, särskilt för organisationer som inte har skapat ett tidigare. Om man behöver ytterligare hjälp kan Adobe erbjuda specialkonsulter för att hjälpa er organisation att komma igång med Adobe Analytics. Kontakta din kontoansvarige om du vill registrera dig för Adobes professionella tjänster. Ett [tekniskt förimplementeringsfrågeformulär](assets/technical-pre-implementation-questionnaire.pdf) kan fyllas i så att Adobe vet exakt hur man kan hjälpa till baserat på organisationens behov.
+Att definiera ett designdokument är ett ganska komplext projekt, särskilt för organisationer som inte har skapat ett tidigare. Om du behöver ytterligare hjälp kan Adobe ge dig specialkonsultationer som hjälper dig att komma igång med Adobe Analytics. Kontakta din kontoansvarige om du vill registrera Adobe professionella tjänster. A [Teknisk förimplementeringsenkät](assets/technical-pre-implementation-questionnaire.pdf) kan fyllas i så att Adobe vet exakt hur man kan hjälpa efter organisationens behov.
 
-Det finns också ett flertal Adobe-partners som är specialiserade på att hjälpa till att skapa ett designdokument för lösningar, samt implementera Adobe Analytics på er webbplats.
+Det finns också ett flertal partners på Adobe som specialiserar sig på att skapa ett designdokument och implementera Adobe Analytics på er webbplats.
 
 ## Nästa steg
 

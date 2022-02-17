@@ -1,8 +1,9 @@
 ---
 title: Implementera med hårdkodade bildbegäranden
 description: Implementera Adobe Analytics med en HTML-bildtagg (hårdkodad bildbegäran)
+feature: Implementation Basics
 exl-id: 84247daf-c94b-456c-9824-6d4a0b3e6065
-source-git-commit: a97043caa9b6d2dc24f52c599fd0caa9241af62f
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: usePlugins
 description: Aktivera eller inaktivera funktionen doPlugins().
+feature: Variables
 exl-id: e8499acf-d8b9-490c-9f67-ad9a8f6ca7df
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 2%
@@ -11,7 +12,7 @@ ht-degree: 2%
 
 # usePlugins
 
-Om `usePlugins` är aktiverat körs funktionen [`doPlugins()`](../functions/doplugins.md) precis innan AppMeasurement kompileras och skickar en träff till Adobe. Aktivera den här variabeln om du använder funktionen `doPlugins()`.
+If `usePlugins` är aktiverat, [`doPlugins()`](../functions/doplugins.md) funktionen körs precis innan AppMeasurement kompileras och skickar en träff till Adobe. Aktivera den här variabeln om du använder `doPlugins()` funktion.
 
 ## Använda plugin-program med hjälp av taggar i Adobe Experience Platform
 
@@ -19,7 +20,7 @@ Det finns inget dedikerat fält i användargränssnittet för datainsamling som 
 
 ## s.usePlugins i AppMeasurement och anpassad kodredigerare
 
-Variabeln `s.usePlugins` är en boolesk variabel som avgör om AppMeasurement anropar funktionen `doPlugins()`. Dess standardvärde är `false`. Ange den här variabeln till `true` om du använder funktionen `doPlugins()` i implementeringen.
+The `s.usePlugins` variabeln är ett booleskt värde som avgör om AppMeasurement anropar `doPlugins()` funktion. Standardvärdet är `false`. Ange variabeln till `true` om du använder `doPlugins()` i implementeringen.
 
 ```js
 s.usePlugins = true;

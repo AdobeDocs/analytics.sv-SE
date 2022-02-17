@@ -2,8 +2,9 @@
 title: trackInlineStats
 description: Aktivera eller inaktivera aktivitetskartan i implementeringen.
 keywords: inaktivera aktivitetskarta
+feature: Variables
 exl-id: a52adc1d-1be7-4002-b393-7ce66332b483
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 1%
@@ -18,18 +19,18 @@ När det här alternativet är aktiverat samlar AppMeasurement in information om
 
 ## Aktivera Clickmap med hjälp av taggar i Adobe Experience Platform
 
-[!UICONTROL Enable Clickmap] är en kryssruta under  [!UICONTROL Link Tracking] dragspelet när du konfigurerar Adobe Analytics-tillägget.
+[!UICONTROL Enable Clickmap] är en kryssruta under [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [användargränssnittet för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt Adobe-ID.
+1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på önskad egenskap.
-3. Gå till fliken [!UICONTROL Extensions] och klicka sedan på knappen [!UICONTROL Configure] under Adobe Analytics.
-4. Expandera dragspelet [!UICONTROL Link Tracking], som visar kryssrutan [!UICONTROL Enable Clickmap].
+3. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics.
+4. Expandera [!UICONTROL Link Tracking] dragspelspanel, som visar [!UICONTROL Enable Clickmap] kryssrutan.
 
 Klicka i kryssrutan för att aktivera spårning av aktivitetskarta.
 
 ## s.trackInlineStats i AppMeasurement och anpassad kodredigerare
 
-`s.trackInlineStats` är ett booleskt värde som aktiverar eller inaktiverar spårning av aktivitetskarta. Dess standardvärde är `false`. Ange det här värdet till `true` om du vill aktivera datainsamling för aktivitetskarta.
+The `s.trackInlineStats` är ett booleskt värde som aktiverar eller inaktiverar spårning av aktivitetskarta. Standardvärdet är `false`. Ange det här värdet till `true` om du vill aktivera datainsamling för aktivitetskarta.
 
 ```js
 s.trackInlineStats = true;
