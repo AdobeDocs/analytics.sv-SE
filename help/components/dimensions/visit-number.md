@@ -1,14 +1,14 @@
 ---
 title: Besöksnummer
 description: Besökarens n:e besök.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: daef34b3-c270-476d-a45c-a20be6138c6b
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
 
 ---
-
 
 # Besöksnummer
 
@@ -18,6 +18,6 @@ Dimensionerna &#39;Besöksnummer&#39; som besöker besökaren just nu är aktive
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten inkluderar strängen `"Visit number"` följt av den numeriska representationen av besökarens besök. Om besökaren till exempel aldrig har besökt din webbplats tidigare tillhör deras första besök dimensionsposten `"Visit number 1"`. Om detta är besökarens trettonde besök på er webbplats tillhör de dimensionsposten `"Visit number 13"`.
+Dimensionen innehåller strängen `"Visit number"` följt av den numeriska representationen av besökarens besök. Om besökaren till exempel aldrig har besökt din webbplats tidigare tillhör deras första besök dimensionsposten `"Visit number 1"`. Om detta är besökarens trettonde besök på er webbplats tillhör de dimensionsposten `"Visit number 13"`.

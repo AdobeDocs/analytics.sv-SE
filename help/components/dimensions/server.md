@@ -1,25 +1,25 @@
 ---
 title: Server
 description: Serverns namn.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: c2454c0d-497e-46f8-8569-7d0517097cab
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
-
 # Server
 
 Dimensionen Server anger vanligtvis webbplatsens värdnamn. För rapportsviter som kombinerar flera domäner eller underdomäner är den här dimensionen värdefull för att se vilka domäner eller underdomäner som fungerar bäst.
 
-Dimensionen är relaterad till dimensionerna för [sid](page.md) - och [webbplatsavsnittet](site-section.md) . Sidan är mest granulerad, servern är minst granulerad och Site-avsnittet är mellan de två.
+Den här dimensionen är relaterad till [Sida](page.md) och [Site section](site-section.md) dimensioner. Sidan är mest granulerad, servern är minst granulerad och Site-avsnittet är mellan de två.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`server` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med hjälp av [`server`](/help/implement/vars/page-vars/server.md) variabeln.
+Den här dimensionen hämtar data från [`server` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med [`server`](/help/implement/vars/page-vars/server.md) variabel.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten inkluderar servrar på din plats. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Vissa organisationer använder `window.location.hostname`medan andra formulerar egna värden. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+Bland Dimensionerna finns servrar på din plats. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Vissa organisationer använder `window.location.hostname`medan andra formulerar egna värden. Oavsett vilken metod du använder måste du se till att den är konsekvent och att du spelar in den i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).

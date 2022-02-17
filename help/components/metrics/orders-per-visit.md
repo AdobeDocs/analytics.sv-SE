@@ -1,14 +1,14 @@
 ---
 title: Beställningar per besök
 description: Förhållandet mellan beställningar och besök.
-translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+feature: Metrics
+exl-id: 4197e24f-6c97-45be-ab06-08bc64ff5713
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
 
 ---
-
 
 # Beställningar per besök
 

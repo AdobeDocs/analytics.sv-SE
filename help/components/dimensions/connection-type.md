@@ -1,8 +1,9 @@
 ---
 title: Anslutningstyp
 description: Hur besökaren ansluter till internet.
+feature: Dimensions
 exl-id: 149b2353-6128-4e0c-a73a-bc5a37c66b52
-source-git-commit: 82d6137bc9229bbaa997c6856690bf76c20b755c
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -15,17 +16,17 @@ Dimensionen Anslutningstyp visar hur besökaren är ansluten till Internet. Den 
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen använder en kombination av [`ct`-frågesträngen](/help/implement/validate/query-parameters.md) och serverlogiken i Adobe. Adobe använder följande regler för att fastställa sitt värde:
+Den här dimensionen använder en kombination av [`ct` frågesträng](/help/implement/validate/query-parameters.md) och serverlogik på Adobe. Adobe använder följande regler för att fastställa sitt värde:
 
-1. Om `ct`-frågesträngen är lika med `"modem"` anger du `"Modem"` för dimensionsobjektet. AppMeasurement samlar bara in dessa data i Internet Explorer-webbläsare som inte stöds, vilket gör detta dimensionsobjekt ovanligt.
-1. Kontrollera träffens IP-adress och referera den till en uppslagstabell som är intern för Adobe. Om IP-adressen kommer från en mobiloperatör ställer du in dimensionsobjektet på `"Mobile Carrier"`.
-1. Om `ct`-frågesträngen är lika med `"lan"` anger du `"LAN/Wifi"` för dimensionsobjektet.
-1. Om träffen kommer från en [datakälla](/help/import/c-data-sources/datasrc-home.md) eller på annat sätt betraktas som en speciell typ av träff, ställer du in dimensionsobjektet på `"Not specified"`.
-1. Om ingen av ovanstående regler uppfylls används standardvärdet `"LAN/Wifi"`.
+1. Om `ct` frågesträng är lika med `"modem"`, ange dimensionsobjektet till `"Modem"`. AppMeasurement samlar bara in dessa data i Internet Explorer-webbläsare som inte stöds, vilket gör detta dimensionsobjekt ovanligt.
+1. Kontrollera träffens IP-adress och referera den till en uppslagstabell som är intern för Adobe. Om IP-adressen kommer från en mobiloperatör anger du dimensionsposten till `"Mobile Carrier"`.
+1. Om `ct` frågesträng är lika med `"lan"`, ange dimensionsobjektet till `"LAN/Wifi"`.
+1. Om träffen kommer från en [Datakälla](/help/import/c-data-sources/datasrc-home.md) eller på annat sätt betraktas som en särskild typ av träff, ställ in dimensionsobjektet på `"Not specified"`.
+1. Om ingen av ovanstående regler uppfylls används standardvärdet för `"LAN/Wifi"`.
 
 ## Dimensioner
 
-Bland Dimensionerna finns `LAN/Wifi`, `Mobile Carrier`, `Modem` och `Not Specified`.
+Dimensionerna innehåller `LAN/Wifi`, `Mobile Carrier`, `Modem`och `Not Specified`.
 
 * **`LAN/Wifi`**: Besökaren är ansluten till internet via en fast linje eller Wi-Fi hotspot.
 * **`Mobile Carrier`**: Besökaren är ansluten till Internet via ett mobiloperatör.

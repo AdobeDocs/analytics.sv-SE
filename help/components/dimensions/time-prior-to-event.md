@@ -1,8 +1,9 @@
 ---
 title: Tid före händelse
 description: Hur lång tid det tar mellan mätvärdet och besökets första träff.
+feature: Dimensions
 exl-id: 2586673f-d908-4b69-901a-5fafe635d0d5
-source-git-commit: 2c363dce63768101356a6f43ea1e45ae8dd7b139
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -19,4 +20,4 @@ Dimensionen&quot;Tid före händelse&quot; visar hur lång tid det tog mellan be
 
 ## Dimensioner
 
-Bland Dimensionerna finns tidsbaserade bucket som sträcker sig från `"Less than 1 minute"` till `"More than 15 hours"`. Om det till exempel tog en besökare 23 minuter från den första träffen till ett köp, skulle den tillhöra dimensionsposten `"10 to 30 minutes"`. Det går inte att anpassa bucklarna för det här måttet.
+Dimensioner kan vara tidsbaserade buketter från `"Less than 1 minute"` till `"More than 15 hours"`. Om det t.ex. tog en besökare 23 minuter från den första träffen till ett köp, hör den till `"10 to 30 minutes"` dimensionsobjekt. Det går inte att anpassa bucklarna för det här måttet.

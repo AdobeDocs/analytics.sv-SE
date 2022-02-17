@@ -1,14 +1,14 @@
 ---
 title: Egen länk
 description: Namnet på den anpassade länken.
-translation-type: tm+mt
-source-git-commit: 423e9b753a3b7b1e0a8e8b9748f9694d718abd18
+feature: Dimensions
+exl-id: c153f710-f03f-4be6-8e18-5ebf2ed80f01
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
 
 ---
-
 
 # Egen länk
 
@@ -16,9 +16,9 @@ Dimensionen Anpassad länk rapporterar namnen på anpassade länkar som implemen
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`pev2`-frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har `pe`-frågesträngen med värdet `lnk_o`. Om frågesträngen `pe` har ett annat värde i träffen, samlar dimensionen inte in data.
+Den här dimensionen samlar in data från [`pev2` frågesträng](/help/implement/validate/query-parameters.md) i bildförfrågningar för träffar som också har `pe` frågesträng med värdet för `lnk_o`. Om `pe` frågesträngen har ett annat värde i träffen, den här dimensionen samlar inte in data.
 
-Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md)-bildbegäran med ett länktypsargument på `"o"`. Fyll i länknamnsargumentet med det önskade värdet.
+Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md) bildbegäran med ett länktypargument av `"o"`. Fyll i länknamnsargumentet med det önskade värdet.
 
 ## Dimensioner
 

@@ -1,14 +1,14 @@
 ---
 title: Dag
 description: Den dag som mätvärdet inträffade.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: 2f93ae8b-422c-4e1e-81d3-43cc0aa442c4
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
 
 ---
-
 
 # Dag
 
@@ -18,6 +18,6 @@ Dimensionen Dag anger dagen då ett visst mått inträffade. Den första dimensi
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekt inkluderar datumet för en viss dag. Den inkluderar månad, dag och år som en del av dimensionsposten.
+Dimensionen innehåller datum för en viss dag. Den inkluderar månad, dag och år som en del av dimensionsposten.

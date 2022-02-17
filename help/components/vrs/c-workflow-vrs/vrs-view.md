@@ -2,14 +2,12 @@
 description: Klicka på ikonen i (Info) bredvid rapportsvitens namn för att få information om det.
 keywords: Virtual Report Suite
 title: Visa information om virtuella rapportsviter
-feature: Rapporter och analysgrunder
-uuid: 7aa9da77-604e-473d-a914-6c0bc558548a
+feature: VRS
 exl-id: 92e89d40-db94-4b0c-881e-e57ca4bb6999
-translation-type: tm+mt
-source-git-commit: cddf2a76ca36914f133379959b7cbb5246bdd695
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 9%
+source-wordcount: '98'
+ht-degree: 10%
 
 ---
 
@@ -17,7 +15,7 @@ ht-degree: 9%
 
 Klicka på ikonen i (Info) bredvid rapportsvitens namn för att få information om det.
 
-## I Report Suite-väljaren {#section_74E43B60C1CA4180B5ACA57574C1FA0F}
+## I rapportsvitväljaren {#section_74E43B60C1CA4180B5ACA57574C1FA0F}
 
 Om du klickar på Info-ikonen bredvid den virtuella rapportsviten i Report Suite-väljaren visas följande information:
 

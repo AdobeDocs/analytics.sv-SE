@@ -1,19 +1,21 @@
 ---
 description: Beskriver hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar. Detta kan anpassas till alla dimensioner eller framgångsrika händelser av intresse.
-title: Mätvärde för orderassistenter
-uuid: 7c82227a-7fcc-486f-bef8-164ea84af77c
-translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+title: Mätvärde för Order Assists
+feature: Calculated Metrics
+exl-id: 33cb441d-d003-408d-ba67-1bcdd0e821ff
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 3%
 
 ---
 
-
-# Mätvärde för orderassistenter
+# Mätvärde för Order Assists
 
 Beskriver hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar. Detta kan anpassas till alla dimensioner eller framgångsrika händelser av intresse.
 
 1. Ange måttet&quot;Assisted Orders&quot; i beräkningsverktyget.
-1. Dra i ett ordningstal på arbetsytan Definition. Justera sedan attribueringsmodellen med inställningsverktyget genom att markera **[!UICONTROL Use non-default attribution models]** kryssrutan.
+1. Dra i ett ordningstal på arbetsytan Definition. Justera sedan attribueringsmodellen med inställningsverktyget genom att kontrollera **[!UICONTROL Use non-default attribution models]** kryssrutan.
 
    ![](assets/attr-model.png)
 

@@ -1,16 +1,14 @@
 ---
 description: (Valfritt) Innan du importerar klassificeringar till marknadsföringsrapporter kan du hämta en mall som hjälper dig att skapa en klassificeringsdatafil. I datafilen används de klassificeringar du vill använda som kolumnrubriker, och sedan ordnas rapportdatauppsättningen under rätt klassificeringsrubriker.
-subtopic: Classifications
 title: Klassificeringsmall
-feature: Administratörsverktyg
-uuid: 4edd411b-164c-4b4d-a872-b57a3163ca72
-source-git-commit: eb256b6d8308792747710284d2bfbaa4b5044b2a
+feature: Classifications
+exl-id: e299509a-0c4f-4ba8-9e91-96356c386054
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 3%
 
 ---
-
 
 # Klassificeringsmall
 
@@ -47,9 +45,8 @@ Mallen innehåller det filformat som du måste följa för klassificeringar.
 >Mallmetoden begränsar datainläsningen till en enda rapportserie.
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
-1. På fliken **[!UICONTROL Download Template]** anger du [datamallskonfigurationen](/help/components/classifications/importer/c-download-saint-data.md).
+1. På **[!UICONTROL Download Template]** -fliken, ange [konfiguration av datamall](/help/components/classifications/importer/c-download-saint-data.md).
 1. Klicka på **[!UICONTROL Download]**.
 1. Spara mallfilen på ditt lokala system.
 
-   Mallfilen är en tabbavgränsad datafil ( [!DNL .tab] filnamnstillägg) som stöds i de flesta kalkylbladsprogram.
-
+   Mallfilen är en tabbavgränsad datafil ( [!DNL .tab] filnamnstillägg) som stöds av de flesta kalkylbladsprogram.

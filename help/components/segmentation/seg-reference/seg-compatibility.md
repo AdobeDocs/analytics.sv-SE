@@ -2,12 +2,10 @@
 description: Alla segment som skapas i segmentbyggaren är inte kompatibla med Data warehouse. I den här tabellen visas de funktioner som stöds.
 title: Segmentkompatibilitet för Data Warehouse
 feature: Segmentation
-uuid: 370258c5-8614-4434-871c-41753ed77f5c
 exl-id: 66b86226-ef4c-4a1a-abe1-3c3accf419e5
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '342'
 ht-degree: 6%
 
 ---
@@ -47,20 +45,20 @@ Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data War
   </tr> 
   <tr> 
    <td> <b>Dimensioner</b> </td> 
-   <td>Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> Definitions</span>-fält för att ta reda på om den är kompatibel med produkten. De här måtten stöds till exempel bara i Analysis Workspace, Rapporter och analyser: 
+   <td>Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> Definitioner</span> för att ta reda på om produkten är kompatibel. De här måtten stöds till exempel bara i Analysis Workspace, Rapporter och analyser: 
     <ul> 
      <li>Startserver </li> 
      <li>Postkategori </li> 
      <li>Anmälningsdatum </li> 
      <li>Alla söksidrankning </li> 
     </ul> </td> 
-   <td> Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> Definitions</span>-fält för att ta reda på om den är kompatibel med produkten. De här måtten stöds till exempel bara i Data warehouse: 
+   <td> Dra och släpp en dimension i segmentbyggarens <span class="uicontrol"> Definitioner</span> för att ta reda på om produkten är kompatibel. De här måtten stöds till exempel bara i Data warehouse: 
     <ul> 
      <li>IP-adress </li> 
      <li>Sidans URL </li> 
      <li>Besökar-ID </li> 
      <li>Experience Cloud Visitor-ID </li> 
-    </ul> <p>Följande dimensioner <b>kan inte </b>användas i Data warehouse-segment: </p> 
+    </ul> <p>Följande dimensioner <b>inte </b>användas i Data warehouse segment: </p> 
     <ul> 
      <li>Alla söksidrankning </li> 
      <li>AM/PM </li> 
@@ -101,4 +99,4 @@ Alla segment som skapas i segmentbyggaren är inte kompatibla med [!DNL Data War
  </tbody> 
 </table>
 
-*Obs! data warehouse stöder inte alla fall där en  `exclusion` eller  `without` en behållare används när  `AND/OR`. När du använder en sådan kombination stöds endast de segment som kan skrivas om som `A AND NOT B` (eller **ta med den här egenskapen**och **exkludera den här egenskapen**) i Data warehouse.*
+*Obs! data warehouse stöder inte alla fall där en `exclusion` eller `without` behållare när `AND/OR`. När du använder en sådan kombination är det bara de segment som kan skrivas om som `A AND NOT B`, (eller **ta med den här egenskapen**och **utelämna den här egenskapen**) stöds i Data warehouse.*

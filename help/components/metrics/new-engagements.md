@@ -1,14 +1,14 @@
 ---
 title: Nya åtaganden
 description: Antalet gånger som en första beröringskanal ställs in.
-translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+feature: Metrics
+exl-id: a419d048-9715-4d7b-9c24-d34129755371
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
 
 ---
-
 
 # Nya åtaganden
 
@@ -16,6 +16,6 @@ Måttet&quot;Nytt engagemang&quot; visar hur många gånger en besökare matchar
 
 ## Hur det här måttet beräknas
 
-Under databearbetningen körs varje träff genom regler [för bearbetning av](../c-marketing-channels/c-rules.md)marknadsföringskanaler. Om en träff matchar någon regel för hantering av marknadsföringskanaler och besökaren inte redan har en första beröringskanal är träffen ett nytt engagemang. Om en träff inte matchar några regler för bearbetning av marknadsföringskanaler eller om besökaren redan har en första beröringskanal är träffen inte något nytt engagemang.
+Under databearbetningen körs varje träff [Bearbetningsregler för marknadsföringskanaler](../c-marketing-channels/c-rules.md). Om en träff matchar någon regel för hantering av marknadsföringskanaler och besökaren inte redan har en första beröringskanal är träffen ett nytt engagemang. Om en träff inte matchar några regler för bearbetning av marknadsföringskanaler eller om besökaren redan har en första beröringskanal är träffen inte något nytt engagemang.
 
 Besökarna kan ha mer än ett nytt engagemang om de låter besökarnas engagemang löpa ut.

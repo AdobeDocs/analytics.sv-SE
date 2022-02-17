@@ -1,8 +1,9 @@
 ---
 title: Översikt över mätvärden
 description: Visa kvantiteter för dimensionsobjekt eller data över tid.
+feature: Metrics
 exl-id: 8dda3bc4-ffac-4407-896f-6064727d099c
-source-git-commit: 482817636e82a40c274d549c4190d0b11d27c183
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 2%
@@ -21,9 +22,9 @@ Om du t.ex. kombinerat siddimensionen med Visits-måttet får du en rankad rappo
 | `Product page` | `500` |
 | `Purchase page` | `100` |
 
-Om du inte kan hitta en given hjälpsida för mått är det troligtvis antingen en [anpassad händelse](custom-events.md) eller ett [beräknat mått](../c-calcmetrics/cm-overview.md).
+Om du inte kan hitta en viss hjälpsida för mätvärden är det troligtvis en [anpassad händelse](custom-events.md) eller en [beräknat mått](../c-calcmetrics/cm-overview.md).
 
-* Om mätvärdet är en anpassad händelse bör du rådfråga en Analytics-administratör i organisationen eller rapportsvitens [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+* Om mätvärdena är en anpassad händelse ska du kontakta en Analytics-administratör inom organisationen eller rapportsvitens [konstruktionsdokument](/help/implement/prepare/solution-design.md).
 * Om måttet är ett beräknat mått klickar du på informationsikonen för att bestämma dess formel.
 
 ## Lägg till måttbeskrivningar

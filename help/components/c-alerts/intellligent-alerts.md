@@ -1,9 +1,9 @@
 ---
 description: Det intelligenta larmsystemet ger mer exakt kontroll över varningar och integrerar avvikelseidentifiering med varningssystemet.
 title: Intelligenta aviseringar
-uuid: ac8c9710-d245-46e9-b906-32d3bb0013c0
+feature: Alerts
 exl-id: 1b23211e-7632-4b33-a27d-c58b3bbbbab1
-source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 6%
@@ -35,7 +35,7 @@ Varningssystemets komponenter är: Varningsbyggaren, Varningshanteraren, Förhan
 
 Det finns fyra sätt att komma åt Varningsverktyget:
 
-* Genom att använda följande genväg i Analysis Workspace:
+* Genom att använda följande kortkommando i Analysis Workspace:
 
    `ctrl (or cmd) + shift + a`
 * Genom att gå direkt till Varningsverktyget:  **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]** .

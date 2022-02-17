@@ -1,32 +1,31 @@
 ---
 description: Använd varningar i Analysis Workspace.
 title: Alert Builder
-uuid: 86d00a33-dc99-4dc3-a732-0b895ba487bc
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+feature: Alerts
+exl-id: 82e51357-4a32-4db1-bc56-95a72dbaa1be
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
-
 # Varningsverktyg
 
 >[!IMPORTANT]
 >
->Intelligenta aviseringar är endast tillgängliga för Adobe [!DNL Analytics] Prime- och Adobe [!DNL Analytics] Ultimate-kunder.
+>Intelligenta aviseringar är tillgängliga för Adobe [!DNL Analytics] Prime och Adobe [!DNL Analytics] Endast de ultimata kunderna.
 
 Få åtkomst till varningsverktyget på ett av fyra sätt:
 
-* Genom att använda följande genväg i Analysis Workspace:
+* Genom att använda följande kortkommando i Analysis Workspace:
 
    `ctrl (or cmd) + shift + a`
 * Genom att gå till **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]**.
-* Genom att markera ett eller flera frihandsritabellobjekt högerklickar du och väljer **[!UICONTROL Create Alert from Selection]**.
-* Från en [!UICONTROL Reports & Analytics]-rapport genom att gå till **[!UICONTROL More]** > **[!UICONTROL Add Alert]**.
+* Genom att markera ett eller flera objekt på en frihandsritabell högerklickar och väljer du **[!UICONTROL Create Alert from Selection]**.
+* Från en [!UICONTROL Reports & Analytics] rapport, genom att gå till **[!UICONTROL More]** > **[!UICONTROL Add Alert]**.
 
-Gränssnittet i Alert Builder är känt för dem som har skapat segment eller beräknade värden i [!DNL Analytics]:
+Gränssnittet i Alert Builder är bekant för dem som har skapat segment eller beräknade värden i [!DNL Analytics]:
 
 ![](assets/alert_builder.png)
 
@@ -44,11 +43,11 @@ Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje ve
 
 **Mottagare**
 
-Ange var aviseringen kan skickas. En avisering kan skickas till en [!DNL Analytics]-användare, en [!DNL Analytics]-grupp, en rå e-postadress eller till ett telefonnummer.
+Ange var aviseringen kan skickas. En varning kan skickas till en [!DNL Analytics] användare, en [!DNL Analytics] grupp, en obearbetad e-postadress eller ett telefonnummer.
 
 >[!IMPORTANT]
 >
->Telefonnumret måste föregås av en + och en [landskod](https://countrycode.org/).
+>Telefonnumret måste föregås av ett plustecken (+) och ett [landskod](https://countrycode.org/).
 
 **Förfallodatum**
 
@@ -60,7 +59,7 @@ Ange aviseringens förfallodatum.
 
 * Dra och släpp mätvärden på arbetsytan som lägger till utlösare.
 
-   Observera att ett **&quot;inkompatibla komponenter&quot;**-meddelande visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
+   Observera att **&quot;inkompatibla komponenter&quot;** meddelandet visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
 
 * Ange tröskelvärdet som måttet måste överskrida innan en avisering anges. Du kan ange ett tröskelvärde och sedan något av följande villkor:
 
@@ -92,6 +91,6 @@ I förhandsgranskningen av den interaktiva aviseringen visas hur ofta, ungefär,
 
 Om du t.ex. anger tidsterminalariteten till daglig, kan förhandsgranskningen tala om för dig att varningen skulle ha utlösts för ett visst mått x gånger under de senaste 30 eller 31 dagarna.
 
-Om du upptäcker att för många aviseringar skulle ha utlösts kan du justera tröskelvärdet i [Varningshanteraren](/help/components/c-alerts/alert-manager.md).
+Om du upptäcker att för många aviseringar skulle ha utlösts kan du justera tröskelvärdet i [Aviseringshanteraren](/help/components/c-alerts/alert-manager.md).
 
 ![](assets/alert_preview.png)

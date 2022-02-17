@@ -1,14 +1,14 @@
 ---
 title: Studsar
 description: Antalet besök med exakt en träff.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+feature: Metrics
+exl-id: fb83957c-9955-4b32-bc0f-53de92e2ba2c
+source-git-commit: 7966c7d9add0011831c97fbe0dfcca2acd8afb58
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 1%
 
 ---
-
 
 # Studsar
 
@@ -20,4 +20,4 @@ Om ett besök består av exakt en träff räknas träffen som ett studs.
 
 >[!NOTE]
 >
->Om en besökare anropar både en sidvy och en länkspårning betraktas besöket inte som ett studs. Överväg att använda [besök](single-page-visits.md) på en sida istället.
+>Om en besökare anropar både en sidvy och en länkspårning betraktas besöket inte som ett studs. Överväg att använda [Besök enstaka sidor](single-page-visits.md) i stället.

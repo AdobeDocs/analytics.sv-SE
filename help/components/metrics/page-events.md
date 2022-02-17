@@ -1,14 +1,14 @@
 ---
 title: Sidhändelser
 description: Antalet utlösta länkspårningsåtgärder.
-translation-type: tm+mt
-source-git-commit: 54aeaa35fea8f725c87030936fa24f415064e333
+feature: Metrics
+exl-id: 1afe86e3-65b3-4e4e-b436-ed7cb5da9641
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
 
 ---
-
 
 # Sidhändelser
 
@@ -16,8 +16,8 @@ Mätvärdet för Sidhändelser visar hur många gånger ett länkspårningsanrop
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar alla länkspårningsanrop ([`tl()`](/help/implement/vars/functions/tl-method.md)) i en rapportserie. Alla länktyper ingår (anpassade länkar, hämtningslänkar och avslutningslänkar). Det omfattar inte spårningsanrop för sidvy ([`t()`](/help/implement/vars/functions/t-method.md)).
+Det här måttet räknar alla länkspårningsanrop ([`tl()`](/help/implement/vars/functions/tl-method.md)) i en rapportsvit. Alla länktyper ingår (anpassade länkar, hämtningslänkar och avslutningslänkar). Den innehåller inga anrop till spårning av sidvy ([`t()`](/help/implement/vars/functions/t-method.md)).
 
 ## Jämför med liknande mätvärden
 
-* **Sidhändelser jämfört med[sidvyer](page-views.md)**: Sidhändelser räknar antalet anrop för spårning av länkar (`tl()`) och utesluter anrop för spårning av sidvy (`t()`). Sidvisningar är motsatsen. antalet spårningsanrop för sidvy räknas och länkar utesluts.
+* **Sidhändelser jämfört med [Sidvyer](page-views.md)**: Sidhändelser räknar antalet anrop för spårning av länkar (`tl()`) och utesluter anrop till spårning av sidvy (`t()`). Sidvisningar är motsatsen. antalet spårningsanrop för sidvy räknas och länkar utesluts.

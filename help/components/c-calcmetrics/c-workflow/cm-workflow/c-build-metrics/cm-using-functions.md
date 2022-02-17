@@ -1,15 +1,14 @@
 ---
 description: Med funktioner kan du filtrera/sortera data och göra statistiska analyser.
 title: Använda funktioner
-uuid: f9ea8c76-714e-429c-baa0-9c96cbf7ebb1
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+feature: Calculated Metrics
+exl-id: 9d5d7589-a955-42f7-96af-0d12beddd623
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 5%
 
 ---
-
 
 # Använda funktioner
 
@@ -19,6 +18,6 @@ En lista över alla funktioner finns i [Grundfunktioner](/help/components/c-calc
 
 >[!NOTE]
 >
->När du inkluderar funktioner i en beräknad metrisk formel ska du alltid använda funktionen innan du drar i mått eller segment.
+>När du inkluderar funktioner i en beräknad måttformel ska du alltid använda funktionen innan du drar i mått eller segment.
 
-Titta på den här [videon](https://youtu.be/SSyWvomnewI) för att förstå hur funktioner används.
+Titta på detta [video](https://youtu.be/SSyWvomnewI) för att förstå hur funktioner används.

@@ -2,9 +2,8 @@
 description: Frågor och svar om segmentering.
 title: Vanliga frågor
 feature: Segmentation
-uuid: f49dc829-1d53-4183-9add-1aeaa5219d89
 exl-id: 316e2a2e-55d3-4c23-9985-9a6d90390e86
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 1%
@@ -25,13 +24,13 @@ Svar på vanliga frågor om segmenteringsfunktioner, åtkomst, behörigheter, b�
 
 * Du kan [använda flera segment i en rapport eller ett projekt](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
 * Segmenten är universella för alla rapportsviter.
-* [Segmentbyggaren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) förenklar skapandet av segment.
-* Med [segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) kan du ställa in [arbetsflöden](/help/components/segmentation/segmentation-workflow/seg-workflow.md) med segmentdelning, taggning, verifiering och godkännandefunktioner.
-* Du kan [tagga segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md) och ordna och söka senare i stället för att använda mappar.
-* Du kan skapa [sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+* The [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md) gör det enklare att skapa segment.
+* The [Segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) låter dig konfigurera [arbetsflöden](/help/components/segmentation/segmentation-workflow/seg-workflow.md) med segmentdelning, taggning, verifiering och godkännandefunktioner.
+* Du kan [taggsegment](/help/components/segmentation/segmentation-workflow/seg-workflow.md) om du vill ordna och söka senare i stället för att använda mappar.
+* Du kan skapa [Sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
 * Sidvisningsbehållaren har bytt namn till Träff-behållaren för att ange att den här behållaren segmenterar alla typer av data och inte bara sidvyer. Till exempel tas alla anrop för länkspårning och trackAction-anrop från de mobila SDK:erna med eller utan av träffbehållaren. Observera att det inte fanns någon förändring av hur behållaren fungerar - den döptes bara om.
 
-Mer information finns i [Förbättra segmentering i Adobe Analytics](https://blog.adobe.com/en/publish/2014/05/20/improving-segmentation-adobe-analytics.html)-inlägget i Adobe-bloggen.
+Se [Förbättra segmentering i Adobe Analytics](https://blog.adobe.com/en/publish/2014/05/20/improving-segmentation-adobe-analytics.html) lägg in mer information i Adobe-bloggen.
 
 ## Åtkomst till segmenteringsverktygen {#section_088AD0E4E21943DFA8CF7206AEC485DD}
 
@@ -39,9 +38,9 @@ Mer information finns i [Förbättra segmentering i Adobe Analytics](https://blo
 
 Du kommer åt segmentbyggaren genom att:
 
-* Visar en befintlig rapport och klickar på segmentikonen ![Segment-ikonen](assets/segment_icon.png) i den vänstra navigeringen. Klicka på **[!UICONTROL Add]** eller
+* Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](assets/segment_icon.png) i den vänstra navigeringen. Klicka på i segmentlisten som visas **[!UICONTROL Add]**, eller
 
-* Klicka på **[!UICONTROL + Add]** längst upp i segmenthanteraren.  ![Knappen Lägg till](assets/add_button.png)
+* Överst i segmenthanteraren klickar du på **[!UICONTROL + Add]**.  ![Knappen Lägg till](assets/add_button.png)
 
    eller
 
@@ -51,15 +50,15 @@ Du kommer åt segmentbyggaren genom att:
 
 Öppna segmenthanteraren genom att:
 
-* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den översta navigeringen. Klicka sedan på **[!UICONTROL Segments]** eller
+* Går till  **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den övre navigeringen. Klicka sedan på **[!UICONTROL Segments]**, eller
 
-* Visar en befintlig rapport och klickar på segmentikonen ![Segment-ikonen](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]** eller
+* Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**, eller
 
 * Tryck på snedstreckstangenten &#39;/&#39; var som helst i gränssnittet och sök efter segmenthanteraren.
 
 **Vart gick listrutan för det äldre segmentet?**
 
-Segmentlistrutan i Rapporter och analyser har ersatts av ett mycket mer funktionsrikt [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md)-gränssnitt som gör att du kan skapa&quot;universella&quot; segment som kan användas i alla rapportsviter och i alla Adobe Analytics-lösningar. Om du vill visa en lista över befintliga segment klickar du på segmentikonen ![Segmentikon](assets/segment_icon.png)
+Segmentlistrutan i Rapporter och analyser har ersatts av en mycket mer avancerad funktion [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md) som gör att ni kan skapa universella segment som kan användas i alla rapporteringsprogram och i alla Adobe Analytics-lösningar. Om du vill visa en lista över befintliga segment klickar du på segmentikonen  ![Segmentikon](assets/segment_icon.png)
 
 till vänster navigering och segmentets skena.
 
@@ -73,13 +72,13 @@ Listrutan för rapportsviten har flyttats bredvid datumväljaren i det övre hö
 
 **Vilka rättigheter och behörigheter behöver jag för att använda, skapa och hantera segment?**
 
-Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vem som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
+Som standard kan alla användare skapa och redigera personliga segment. Administratörer kan dock bestämma vilka som ska ha [behörighet att skapa segment](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) och kan tilldela dem till specifika grupper. Dessa segment kan delas direkt med andra Analytics-användare.
 
 Administratörer kan redigera alla segment och dela segment med grupper och med alla i organisationen. [Mer...](/help/components/segmentation/seg-reference/seg-rights.md)
 
 **Kan jag se alla segment i mitt företag?**
 
-Ja, administratörer kan se alla segment i användargränssnitten [!DNL Analysis Workspace] och [!DNL Reports & Analytics].
+Ja, administratörer kan se alla segment i [!DNL Analysis Workspace] och [!DNL Reports & Analytics] användargränssnitt.
 
 Ad hoc-analyser och Report Builder visar segment som du äger och segment som delas med dig.
 
@@ -87,13 +86,13 @@ Ad hoc-analyser och Report Builder visar segment som du äger och segment som de
 
 Ja, alla segment kan hanteras i segmenthanteraren. Segmenthanteraren visar segment som är synliga för ägaren (den användare som skapade segmentet), delade användare och adminanvändare. Segmentväljaren visar segment som ägs av och delas med användaren.
 
-Administratörer kan se alla segment i Analysis Workspace och [!DNL Reports & Analytics] användargränssnitt.
+Administratörer kan se alla segment inom Analysis Workspace och [!DNL Reports & Analytics] användargränssnitt.
 
 I Report Builder visas endast segment som du har skapat eller segment som har delats specifikt med dig.
 
 **Varför kan jag inte ta bort det här segmentet?**
 
-Om segmentet [publicerades på Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-workflow.md) kan du inte ta bort eller redigera det. Du kan dock kopiera den och redigera den kopierade versionen.
+Om segmentet var [publicerade i Experience Cloud](/help/components/segmentation/segmentation-workflow/seg-workflow.md)kan du inte ta bort eller redigera den. Du kan dock kopiera den och redigera den kopierade versionen.
 
 ## Bästa praxis {#section_E2C3A1B4B4274D1B86CAA9C0359D049C}
 
@@ -109,7 +108,7 @@ Nu när segment fungerar i flera rapportsviter kan det finnas flera segment med 
 * Granska de segment du har.
 * Lägg till dem i segmentbiblioteket där det är tillämpligt.
 * Godkänn kanoniska segment.
-* Tagga segment enligt [god praxis](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
+* Tagga segment enligt [bästa praxis](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
 
 ## Hantera äldre segment {#section_76CF47142D1A4FB6A0718AD9073049FE}
 
@@ -167,7 +166,7 @@ Befintliga rapporter som använder dessa segment fortsätter att fungera korrekt
 
 **Vad händer med administratörssegment (kallas även&quot;globala&quot; segment)?**
 
-**Administrativa** segment migreras till det nya segmentgränssnittet och visas som segment som delas med alla.
+**Administratör** segmenten kommer att migreras till det nya segmentgränssnittet och visas som segment som delas med alla.
 
 Ägaren till dessa segment anges till den administratör som har det äldsta kontot i inloggningsföretagets lista över adminanvändare, men alla administratörer kan ta bort, redigera och dela dessa segment.
 

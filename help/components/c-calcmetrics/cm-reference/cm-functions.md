@@ -1,15 +1,14 @@
 ---
 description: Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
 title: Referensfunktioner
-uuid: 5c2b4a0e-613c-4b27-95b8-01d480aeab78
-translation-type: tm+mt
-source-git-commit: f602d5599206b2615e8c31508731548ffb73814d
+feature: Calculated Metrics
+exl-id: 1a49435c-96d1-4617-bd1a-a5d3b74e3ebd
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
 
 ---
-
 
 # Referens: grundläggande funktioner
 
@@ -19,9 +18,9 @@ Här är en lista i alfabetisk ordning över funktionerna och deras definitioner
 
 >[!NOTE]
 >
->Där [!DNL metric] identifieras som ett argument i en funktion tillåts även andra uttryck för mätvärden. [!DNL MAXV(metrics)] tillåter till exempel även för [!DNL MAXV(PageViews + Visits)].
+>Plats [!DNL metric] identifieras som ett argument i en funktion, tillåts även andra uttryck för mätvärden. Till exempel: [!DNL MAXV(metrics)] kan även [!DNL MAXV(PageViews + Visits)].
 
-## Tabellfunktioner jämfört med radfunktioner {#section_8977BE40A47E4ED79EB543A9703A4905}
+## Tabellfunktioner kontra radfunktioner {#section_8977BE40A47E4ED79EB543A9703A4905}
 
 En tabellfunktion är en funktion där utdata är desamma för alla rader i tabellen. En radfunktion är en funktion där utdata är olika för alla rader i tabellen.
 
@@ -37,7 +36,7 @@ ABS(metric)
 |---|---|
 | *mått* | Det mått som du vill ha det absoluta värdet för. |
 
-## Kolumnmaximum {#concept_B25518D717D24F82B65CDE49A153D3A3}
+## Högsta kolumn {#concept_B25518D717D24F82B65CDE49A153D3A3}
 
 Returnerar det största värdet i en uppsättning dimensionselement för en måttkolumn. MAXV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement.
 
@@ -49,7 +48,7 @@ MAXV(metric)
 |---|---|
 | *mått* | Ett mått som du skulle vilja ha utvärderat. |
 
-## Kolumnminimum {#concept_5B1033F8ACE9485F9AD3CDC0D146391B}
+## Minsta kolumn {#concept_5B1033F8ACE9485F9AD3CDC0D146391B}
 
 Returnerar det minsta värdet i en uppsättning dimensionselement för en måttkolumn. MINV utvärderas lodrätt i en enda kolumn (mått) över dimensionselement.
 
@@ -87,7 +86,7 @@ COUNT(metric)
 
 ## Exponent (rad) {#concept_17554F9D234449FB8DDEE895816B3FF1}
 
-Returnerar *e* upphöjt till ett angivet tal. Konstanten *e* är lika med 2.71828182845904, basen för den naturliga logaritmen. EXP är den inverterade LN, den naturliga logaritmen av ett tal.
+Returnerar *e* upphöjt till ett visst tal. Konstanten *e* är lika med 2,71828182845904, den naturliga logaritmens bas. EXP är den inverterade LN, den naturliga logaritmen av ett tal.
 
 ```
 EXP(metric)
@@ -166,7 +165,7 @@ PERCENTILE(metric,k)
 | *mått* | Den måttkolumn som definierar relativ position. |
 | *k* | Procentvärdet i intervallet 0 till 100. |
 
-## Quartile (Table) {#concept_BFD37F0F23A24AD181407142233FA151}
+## Quartile (tabell) {#concept_BFD37F0F23A24AD181407142233FA151}
 
 Returnerar kvartilen med värden för ett mått. Du kan till exempel använda kvartilarna för att hitta de 25 % av de bästa produkterna som genererar störst intäkter. MINV, MEDIAN och MAXV returnerar samma värde som QUARTILE när quart är lika med 0 (noll), 2 respektive 4.
 
@@ -179,11 +178,11 @@ QUARTILE(metric,quart)
 | *mått* | Måttet som du vill ha kvartilsvärdet för. |
 | *quart* | Anger vilket *värde som ska returneras. |
 
-*Om *quart* = 0 returnerar QUARTILE minimivärdet. Om *quart* = 1 returnerar QUARTILE den första kvartilen (25 percentiler). Om *quart* = 2 returnerar QUARTILE den första kvartilen (50 percentil). Om *quart* = 3 returnerar QUARTILE den första kvartilen (75 percentiler). Om *quart* = 4 returnerar QUARTILE det maximala värdet.
+*Om *quart* = 0, QUARTILE returnerar det minsta värdet. If *quart* = 1, KVARTIL returnerar den första kvartilen (25 percentiler). If *quart* = 2, KVARTIL returnerar den första kvartilen (50 percentiler). If *quart* = 3, KVARTIL returnerar den första kvartilen (75 percentiler). If *quart* = 4, QUARTILE returnerar maxvärdet.
 
-## Rund {#concept_2F12F2A6ACD445A0A8FF648AE4D4CB9E}
+## Ansökningstillfälle {#concept_2F12F2A6ACD445A0A8FF648AE4D4CB9E}
 
-Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln Round( *Intäkter*) för att avrunda intäkten till närmaste dollar, eller 569 USD. En produkt som rapporterar 569,51 USD avrundas till närmaste dollar, eller 570 USD.
+Returnerar närmaste heltal för ett givet värde. Om du till exempel vill undvika att rapportera valutadecimaler för intäkter och en produkt har 569,34 USD använder du formeln Round() *Intäkter*) för att avrunda intäkterna till närmaste dollar, eller 569 dollar. En produkt som rapporterar 569,51 USD avrundas till närmaste dollar, eller 570 USD.
 
 ```
 ROUND(metric)
@@ -202,15 +201,15 @@ round( 314.15, -1) = 310
 round( 314.15, -2) = 300
 ```
 
-## Radantal {#concept_0DBF5995881C47CF95F793125F3A0E2B}
+## Antal rader {#concept_0DBF5995881C47CF95F793125F3A0E2B}
 
 Returnerar antalet rader för en given kolumn (antalet unika element som rapporteras inom en dimension). &quot;Uniques beyond&quot; räknas som 1.
 
-## Rad max {#concept_984D045D7EDD4A1ABED454CDF2EC23C5}
+## Max rad {#concept_984D045D7EDD4A1ABED454CDF2EC23C5}
 
 Det maximala antalet kolumner i varje rad.
 
-## Rad min {#concept_A6FB9E72C70A43D0B31565E70B8122BD}
+## Min rad {#concept_A6FB9E72C70A43D0B31565E70B8122BD}
 
 Minimivärdet för kolumnerna i varje rad.
 
@@ -238,7 +237,7 @@ Ekvationen för STDEV är:
 
 ![](assets/std_dev.png)
 
-där *x* är värdet för varje prov (*mått*), *x̄* är populationsmedelvärdet och *n* är populationsstorleken.
+Plats *x* är värdet för varje prov (*mått*), *x̄* är populationen medelstor och *n* är populationsstorleken.
 
 ```
 STDEV(metric)
@@ -256,7 +255,7 @@ Ekvationen för VARIANS är:
 
 ![](assets/variance_eq.png)
 
-där *x* är värdet för varje prov (*mått*), *x̄* är populationsmedelvärdet och *n* är populationsstorleken.
+Plats *x* är värdet för varje prov (*mått*), *x̄* är populationen medelstor och *n* är populationsstorleken.
 
 ```
 VARIANCE(metric)
@@ -276,7 +275,7 @@ När du har itererat över hela kolumnen får du en totalsumma. Sedan dividerar 
 
 Anta att du har en kolumn med tre objekt:
 
-3
+1
 
 2
 

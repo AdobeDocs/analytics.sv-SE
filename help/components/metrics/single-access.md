@@ -1,14 +1,14 @@
 ---
 title: Enkel åtkomst
 description: Antalet gånger som en dimensionspost inte ändrades vid ett besök.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Metrics
+exl-id: 973ce835-9d6f-4ead-90c9-0b80aac82cc0
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # Enkel åtkomst
 
@@ -20,12 +20,12 @@ Det här måttet räknar antalet besök där dimensionsobjektet innehöll ett en
 
 ## Skillnad mellan Single Access och Single page visit
 
-När det gäller dimensionen [Sida](../dimensions/page.md) är&quot;Enkel åtkomst&quot; och&quot;Besök enstaka sida&quot; exakt identiska. Skillnaderna uppstår när du använder andra dimensioner.
+Med tanke på [Sida](../dimensions/page.md) dimension, Single access och Single page visit är exakt identiska. Skillnaderna uppstår när du använder andra dimensioner.
 
 * **Enkel åtkomst**: Visar antalet besök där den angivna dimensionsposten inte ändrades för hela besöket. Det är kontextuellt med den dimension som du använder i ditt projekt.
-* **Besök** en sida: Visar antalet besök där siddimensionen inte ändrades för hela besöket. Även om du använder en annan dimension i rapporten räknas besök som innehåller ett enda unikt sidodimensionsobjekt.
+* **Besök en sida**: Visar antalet besök där siddimensionen inte ändrades för hela besöket. Även om du använder en annan dimension i rapporten räknas besök som innehåller ett enda unikt sidodimensionsobjekt.
 
-Ta till exempel följande exempel på två träffbesök. Dimensionen i din rapport är [Site-avsnittet](../dimensions/site-section.md).
+Ta till exempel följande exempel på två träffbesök. Dimensionen i din rapport är [Site section](../dimensions/site-section.md).
 
 * En besökare träffar två sidor, men de finns båda i samma webbplatsavsnitt. Eftersom webbplatsavsnittet förblev detsamma vid besöket räknas det som en enda åtkomst. Det räknas inte som ett besök på en sida eftersom besöket innehåller mer än ett unikt sidobjekt.
 * En besökare träffar två sidor i olika delar av webbplatsen, men båda sidorna råkar ha samma namn. Besöken räknas inte som en enskild åtkomst eftersom det fanns två unika avsnittsvärden. Det räknas som ett besök på en sida eftersom det fanns ett enda unikt sidobjekt.

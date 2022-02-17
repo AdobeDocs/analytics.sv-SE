@@ -1,14 +1,14 @@
 ---
 title: Kundtillägg
 description: Antalet träffar där en besökare lade till en produkt i kundvagnen.
-translation-type: tm+mt
-source-git-commit: 554ced510600a4d5866e89806b058b5d2d9a3edf
+feature: Metrics
+exl-id: 0617b4c4-6425-4425-b6f7-efadbd6f58b2
+source-git-commit: 7966c7d9add0011831c97fbe0dfcca2acd8afb58
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
 
 ---
-
 
 # Kundtillägg
 
@@ -16,4 +16,4 @@ Mätvärdet för kundvagnstillägg visar hur många gånger en besökare har lag
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet träffar som `scAdd` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabeln.
+Det här måttet räknar antalet träffar där `scAdd` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.

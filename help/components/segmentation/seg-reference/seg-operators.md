@@ -2,9 +2,8 @@
 description: Med segmentbyggaren kan du jämföra och begränsa värden med valda operatorer.
 title: Jämförelseoperatorer för segment
 feature: Segmentation
-uuid: 02ad814c-2c7c-4833-9bb2-4113dcf9475d
 exl-id: 1ec1ff05-03a9-4151-8fcb-a72ebbce87dd
-source-git-commit: c4f6a7a3d81160a1c86ebfa70d1e376882ccfee2
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%

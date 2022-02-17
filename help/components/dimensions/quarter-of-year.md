@@ -1,14 +1,14 @@
 ---
 title: Kvartal på året
 description: Det numeriska kvartalet av året, oavsett vilket år.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: 0de5f916-9cc1-4594-9dfc-68ef831dcc0a
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
-
 
 # Kvartal på året
 
@@ -18,6 +18,6 @@ Dimensionen &#39;Kvartal på året&#39; rapporterar kvartal på ett givet år so
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekt omfattar numeriska fjärdedelar av året (`1` till `4`), vilket motsvarar det kvartal av året då träffen inträffade.
+Dimensionen omfattar numeriska fjärdedelar av året (`1` till `4`), som representerar den fjärdedel av året då träffen inträffade.

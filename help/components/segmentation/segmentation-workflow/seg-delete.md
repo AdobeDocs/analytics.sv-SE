@@ -2,13 +2,11 @@
 description: Visar en lista över några saker du bör tänka på innan du tar bort segment.
 title: Ta bort segment
 feature: Segmentation
-uuid: cb6db6ad-f400-4633-900a-8a02dcfccf2c
 exl-id: 434b6fec-1dfa-4375-a9de-d47fad2c64bc
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 2%
+source-wordcount: '203'
+ht-degree: 1%
 
 ---
 

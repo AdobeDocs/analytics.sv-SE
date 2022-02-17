@@ -1,8 +1,9 @@
 ---
 title: Analysera marknadsföringskanaler
 description: Lär dig hur du använder dimensionerna för marknadsföringskanaler i arbetsytan.
+feature: Marketing Channels
 exl-id: 7030e41a-4e92-45c7-9725-66a3ef019313
-source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -13,9 +14,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
-Ni vill antagligen veta vilka av era marknadsföringskanaler som är mest effektiva och med vilka ni kan inrikta er bättre och få bättre avkastning på era marknadsföringsinvesteringar. I Adobe Analytics är dimensionerna och måtten för marknadsföringskanalerna i Workspace ett av verktygen som kan hjälpa er att spåra olika kanalers påverkan på order, intäkter osv. och ge er användbara kanalinsikter. Här är de mått och mätvärden du kan använda för marknadsföringskanaler:
+Ni vill antagligen veta vilka av era marknadsföringskanaler som är mest effektiva och med vilka ni kan inrikta er bättre och få bättre avkastning på era marknadsföringsinvesteringar. I Adobe Analytics är dimensionerna och måtten för marknadsföringskanalerna i Workspace ett av verktygen som kan hjälpa er att spåra olika kanalers påverkan på era order, intäkter osv. och ge er användbara kanalinsikter. Här är de mått och mätvärden du kan använda för marknadsföringskanaler:
 
 ![](assets/mc-dims.png)
 
@@ -49,7 +50,7 @@ Marknadsföringskanaler Detaljerna rör sig djupare in i varje kanal för att vi
 
 ## Använd attribueringsmodeller
 
-Du kan använda [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) för att tillämpa olika attribueringsmodeller direkt:
+Du kan använda [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) tillämpa olika attribueringsmodeller direkt:
 
 ![](assets/mc-viz5.png)
 
@@ -61,4 +62,4 @@ Med den äldre First Touch Channel och Last Touch Channel kan du få en användb
 
 ![](assets/mc-viz6.png)
 
-Läs mer om flerfliksanalys i den här videon: [Utforska grundläggande marknadsattribuering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html) med hjälp av flikanalys.
+Läs mer om flerfliksanalys i den här videon: [Använda flikövergripande analys för att utforska grundläggande marknadsattribuering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html).

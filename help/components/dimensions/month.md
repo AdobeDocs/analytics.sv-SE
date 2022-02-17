@@ -1,14 +1,14 @@
 ---
 title: Månad
 description: Den månad som måttet inträffade.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: 77f7aa91-ea2e-482f-9a29-35912efb967a
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
 
 ---
-
 
 # Månad
 
@@ -18,6 +18,6 @@ Dimensionen &#39;Månad&#39; rapporterar månaden som ett visst mått inträffad
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten är månad och år för ett visst datum.
+Dimensionen omfattar månad och år för ett visst datum.

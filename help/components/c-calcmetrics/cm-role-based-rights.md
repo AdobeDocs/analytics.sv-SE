@@ -1,11 +1,11 @@
 ---
 description: Rättigheter för beräknade värden skiljer sig mellan användare på administratörsnivå och icke-administratörer.
 title: Rollbaserade rättigheter för beräknade mätvärden
-uuid: 7c14d32d-370c-4afa-8f80-5bbd8fc12ec7
+feature: Calculated Metrics
 exl-id: 018d9ef5-5a6f-4ebc-a241-c1291ba6b561
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '251'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,9 @@ Rättigheter för beräknade värden skiljer sig mellan användare på administr
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Användare på administratörsnivå</b> </td> 
-   <td colname="col02"> Administratörer kan skapa beräknade värden och skapa <a href="https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html"  > grupper </a> för att begränsa användarnas behörighet att skapa beräknade värden. </td> 
+   <td colname="col02"> Administratörer kan skapa beräknade mätvärden samt skapa produktprofiler i Admin Console för att begränsa användarnas behörighet att skapa beräknade mätvärden. </td> 
    <td colname="col2"> Kan delas med hela företaget, med användargrupper och med enskilda användare. </td> 
-   <td colname="col3"> <span class="keyword"> Rapporter och analyser</span>: Kan visa/redigera/ta bort/etc. egna och andra användares beräknade värden. <p> <span class="keyword"> Report Builder  </span>: Kan visa/redigera/ta bort/etc. sina egna beräknade värden och de som delas med dem. </p> </td> 
+   <td colname="col3"> <span class="keyword"> Rapporter och analyser</span>: Kan visa/redigera/ta bort/etc. egna och andra användares beräknade värden. <p> <span class="keyword"> Report Builder </span>: Kan visa/redigera/ta bort/etc. sina egna beräknade värden och de som delas med dem. </p> </td> 
    <td colname="col4"> Kan godkänna beräknade värden som kanoniska. </td> 
    <td colname="col5"> Kan använda alla beräknade värden i hela organisationen. </td> 
   </tr> 

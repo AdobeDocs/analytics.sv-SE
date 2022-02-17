@@ -1,14 +1,14 @@
 ---
 title: Första beröringskanaldetalj
 description: Information om den första marknadsföringskanalen inom besökarens förfallotid för engagemang.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: a155182d-7bc0-4c7d-9de7-680bfe2d6432
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # Första beröringskanaldetalj
 
@@ -16,19 +16,19 @@ Dimensionen&quot;Första beröringskanalen&quot; rapporterar detaljer runt den f
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [regel](/help/admin/admin/marketing-channels-admin.md)för bearbetning av marknadsföringskanaler. När en träff matchar en regel för hantering av marknadsföringskanal ställs dimensionen för den [sista beröringskanalen](last-touch-channel.md) in på kanalnamnet, och den här dimensionen ställs in på kanalvärdet som anges i regeln.
+Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [Bearbetningsregel för marknadsföringskanal](/help/admin/admin/marketing-channels-admin.md). När en träff matchar en regel för hantering av marknadsföringskanaler [Senaste pekkanal](last-touch-channel.md) dimensionen är inställd på kanalnamnet och den här dimensionen är inställd på kanalvärdet som är angivet i regeln.
 
 Om du vill ställa in dimensionen på ett specifikt värde måste du utföra följande steg:
 
 * Kontrollera att önskat dimensionsobjekt finns i ett träffattribut eller en anpassad variabel.
 * Ange en bearbetningsregel för marknadsföringskanal som innehåller de önskade villkoren för träffen.
-* Välj önskat listrutevärde under [!UICONTROL Set the channel's value] bearbetningsregeln för marknadsföringskanal.
-* Besökarens träff på er webbplats måste matcha de villkor som anges i regeln för bearbetning av marknadsföringskanaler _och_ måste vara det första värdet i marknadsföringskanalen för att göra det under besökarens engagemangsperiod.
+* Välj önskat listrutevärde under [!UICONTROL Set the channel's value] inom marknadsföringskanalens bearbetningsregel.
+* Besökarens träff på webbplatsen måste matcha de villkor som anges i regeln för bearbetning av marknadsföringskanal _och_ måste vara det första värdet i marknadsföringskanalen för att kunna göra det under besökarens engagemangsperiod.
 
 Om en efterföljande träff matchar kriterier under en annan marknadsföringskanal skrivs denna dimension inte över med den nya marknadsföringskanalen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekt beror på kanalvärdets listruta. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsobjekten sidadresser på din webbplats. Om du anger kanalens värde till Referensdomän inkluderar dimensionsobjekten domäner som besökare klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsobjekt, oavsett vilken kanal de finns i.
+Dimensionen beror på kanalvärdets listruta. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsobjekten sidadresser på din webbplats. Om du anger kanalens värde till Referensdomän inkluderar dimensionsobjekten domäner som besökare klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsobjekt, oavsett vilken kanal de finns i.
 
-Adobe rekommenderar att du ställer in kanalvärden för marknadsföringskanalen för att få information om kanaldetaljer.
+Adobe rekommenderar att kanalvärden för marknadsföringskanalen ställs in för att få kunskap om kanaldetaljer.

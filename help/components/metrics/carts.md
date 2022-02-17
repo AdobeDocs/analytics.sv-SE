@@ -1,8 +1,9 @@
 ---
 title: Korgar
 description: Antalet träffar där en besökare lade till sin första produkt i en kundvagn.
+feature: Metrics
 exl-id: 890bbaba-0140-4995-bbd2-c69aedc801e5
-source-git-commit: e804907aa6655b4cfac146a34fb6a3774631818e
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Mätvärdet &quot;Carts&quot; visar antalet träffar där en besökare lade till
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet träffar där `scOpen` finns i variabeln [`events`](/help/implement/vars/page-vars/events/events-overview.md).
+Det här måttet räknar antalet träffar där `scOpen` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.
 
 ## Skillnaden mellan kundvagnsvyer och kundvagnsvyer
 

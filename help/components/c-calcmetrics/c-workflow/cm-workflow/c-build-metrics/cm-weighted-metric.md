@@ -1,12 +1,14 @@
 ---
 description: Visar exempel på filtrerade och viktade mätvärden.
 title: Filtrerade och viktade mätvärden
-uuid: 8c4ed912-68a3-4896-91c8-aa7daffae6a9
-translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+feature: Calculated Metrics
+exl-id: bea46e03-7d05-44c8-b654-c61b1e32becc
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 5%
 
 ---
-
 
 # Filtrerade och viktade mätvärden
 
@@ -31,4 +33,3 @@ Det här filtret visar studs-frekvensen för de 30 högsta procenten av sidorna,
 Anta att du vill sortera efter studsfrekvens i allmänhet, men sidor med högre besök bör vara högre i listan. Du kan skapa en viktad studsfrekvens som ser ut så här:
 
 ![](assets/cm_wbr.png)
-

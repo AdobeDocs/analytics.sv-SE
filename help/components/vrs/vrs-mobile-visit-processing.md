@@ -1,9 +1,9 @@
 ---
 description: Sammanhangsberoende sessioner i virtuella rapportsviter förändrar hur Adobe Analytics beräknar mobilbesök. I den här artikeln beskrivs konsekvenserna av bakgrundstötar och appstarthändelser (som båda anges av SDK för mobiler) för hur mobilbesök definieras.
 title: Sammanhangsmedvetna sessioner
-uuid: d354864a-9163-4970-a3a0-f2e9729bdbe3
+feature: VRS
 exl-id: 5e969256-3389-434e-a989-ebfb126858ef
-source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Omvänt, om *t* är mindre än den konfigurerade tidsgränsen för besöket i de
 Detta innebär att
 
 * Alla eVars-variabler som har &quot;besök&quot; som förfallodatum i bakgrunden fortsätter att visa sina värden på de andra träffarna i det här besöket.
-* Alla värden som anges i bakgrundsträffen inkluderas i logikutvärderingen för besöksnivåsegmentets behållare.
+* Alla värden som ställs in i bakgrundsträffen inkluderas i logikutvärderingen för besöksnivåsegmentets behållare.
 
 I båda fallen blir det totala antalet besök 1.
 
@@ -81,7 +81,7 @@ På samma sätt om tidsperioden *t* var mindre än den konfigurerade tidsgränse
 Detta innebär att
 
 * Alla eVars-variabler med förfallodatum för besök på föregående förgrundsträffar behåller sina värden på bakgrundsträffen i det här besöket.
-* Alla värden som anges i bakgrundsträffen inkluderas i logikutvärderingen för besöksnivåsegmentets behållare.
+* Alla värden som ställs in i bakgrundsträffen inkluderas i logikutvärderingen för besöksnivåsegmentets behållare.
 
 Som tidigare är det totala antalet besök i båda fallen 1.
 

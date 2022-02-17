@@ -1,26 +1,25 @@
 ---
 description: Felsök och åtgärda problem som rör segment.
 title: Felsökning av segmentering
-uuid: 8476d617-4b44-4ff2-9b3a-02685f666afc
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+feature: Segmentation
+exl-id: ca51110e-1ba7-4182-b5b2-baf9b0c017af
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
 
 ---
 
-
 # Felsökning av segmentering
 
-## Fel: &quot;Inkompatibla element i det här segmentet&quot; {#section_B167EE10A0844E649DD7E14D0BAEDA17}
+## Fel: &quot;Inkompatibla element i det här segmentet&quot; {#incompatible}
 
 Det här felet inträffar när du försöker spara ett segment i Data warehouse-mappen där segmentet innehåller element som inte är kompatibla med Data warehouse. Gör något av två för att lösa det här felet:
 
 * Spara segmentet i en annan mapp
 * Ta bort eller ändra inkompatibla delar av segmentet.
 
-## Varför returnerar mitt segment inga data alls? {#section_999749CBBE984142AEA49A6E68E6730A}
+## Varför returnerar mitt segment inga data alls? {#no-data}
 
 Möjliga orsaker:
 
@@ -28,7 +27,7 @@ Möjliga orsaker:
 * Rapporten stöder inte segmentering.
 * Det finns inga data som matchar segmenteringskriterierna.
 
-## Varför kan jag inte se segmentet jag skapade i segmenthanteraren? {#section_BE0A0930A2694A23BB32DA71696D52CE}
+## Varför kan jag inte se segmentet jag skapade i segmenthanteraren? {#invisible}
 
 Möjliga orsaker:
 
@@ -40,11 +39,10 @@ Möjliga orsaker:
 * Segmentet har inte sparats.
 * IP-adressen kan blockeras vid användarens slut.
 
-## Varför verkar de siddata som visas när du har använt ett segment felaktigt? {#section_B226AF69FE06463A8BC5337FDA8D4949}
+## Varför verkar de siddata som visas när du har använt ett segment felaktigt? {#page-data}
 
 Möjliga orsaker:
 
 * Regler/operatorer är felaktiga för det obligatoriska resultatet.
 * Felaktig användning av behållare i segmentet.
 * Trafikvariablerna som används för segmentering är inte korrekt inställda eller har gått ut.
-

@@ -1,14 +1,14 @@
 ---
 title: Vecka
 description: Veckan som måttet inträffade på.
-translation-type: tm+mt
-source-git-commit: a94b8e090b9a3c75a57fd396cac8486bba2e5d79
+feature: Dimensions
+exl-id: 944ec843-998c-473f-b8e6-16cf126745b4
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
 
 ---
-
 
 # Vecka
 

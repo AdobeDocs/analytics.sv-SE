@@ -1,14 +1,14 @@
 ---
 title: Dagar före första köpet
 description: Antalet dagar mellan besökarens första besök och deras första inköp.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: 651f9d55-49b9-402a-b7c7-ba4fba62c695
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Dagar före första köpet
 
@@ -18,8 +18,8 @@ När en besökare gör sitt första köp tillhör de samma dimensionsobjekt unde
 
 ## Fyll den här dimensionen med data
 
-Adobe fyller automatiskt i den här dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md) händelsen i implementeringen. Om du implementerar `purchase` händelsen på din webbplats fungerar alltid den här dimensionen.
+Adobe fyller automatiskt i dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md) i implementeringen. Om du implementerar `purchase` den här dimensionen fungerar alltid på din webbplats.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten är antalet dagar mellan besökarens första besök på webbplatsen och deras första inköp. Varje antal dagar är en separat dimensionspost, där&quot;samma dag&quot; inträffar där en besökares första besök och deras första inköp sker samma dag.
+Dimensionen omfattar antalet dagar mellan besökarens första besök på webbplatsen och deras första inköp. Varje antal dagar är en separat dimensionspost, där&quot;samma dag&quot; inträffar där en besökares första besök och deras första inköp sker samma dag.

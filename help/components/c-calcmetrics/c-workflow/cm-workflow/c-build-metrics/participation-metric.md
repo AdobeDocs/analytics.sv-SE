@@ -1,15 +1,14 @@
 ---
 description: Med verktyget Beräknade mätvärden kan vem som helst skapa ett deltagandemått.
 title: Mätvärden för deltagande
-uuid: 7cb191be-bc4e-46ef-8a20-ccba5355e253
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+feature: Calculated Metrics
+exl-id: bef185d6-72c0-4068-80f8-57261369573f
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 2%
 
 ---
-
 
 # Mätvärden för deltagande
 
@@ -19,11 +18,11 @@ Här följer ett enkelt exempel: Du är innehållsägare och vill se vilka sidor
 >
 >Tidigare var du tvungen att göra detta via Admin Tools. Du kan fortfarande aktivera deltagandemått i Admin Tools, men bara för anpassade händelser 1-100.
 
-Här följer några enkla exempel: Du är innehållsägare och vill se vilka sidor som har bidragit till (deltagit i) besök som innehöll en e-postregistrering. Så här:
+Här följer några exempel: Du är innehållsägare och vill se vilka sidor som har bidragit till (deltagit i) besök som innehöll en e-postregistrering. Så här:
 
 1. Skapa ett nytt mått i verktyget Beräknade mätvärden.
 1. Dra success-händelsen &quot;Orders&quot; till arbetsytan Definition.
-1. Ändra [attribueringsmodellen](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) för den händelsen till **[!UICONTROL Participation]** under **[!UICONTROL Settings]** kugghjulet. Välj **[!UICONTROL Visit]** uppslag. Definitionen bör se ut ungefär så här:
+1. Ändra [attribueringsmodell](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) för händelsen till **[!UICONTROL Participation]** under **[!UICONTROL Settings]** utrustning. Välj **[!UICONTROL Visit]** uppslag. Definitionen bör se ut ungefär så här:
 
    ![](assets/participation.png)
 
@@ -33,4 +32,3 @@ Här följer några enkla exempel: Du är innehållsägare och vill se vilka sid
    ![](assets/participation-pages.png)
 
 1. (Valfritt) Dela mätvärdena med andra användare i organisationen.
-

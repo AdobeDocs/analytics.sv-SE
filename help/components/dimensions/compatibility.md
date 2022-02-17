@@ -1,16 +1,16 @@
 ---
-title: Analytics Dimensions-kompatibilitet
-description: Referens för Analytics dimensioner och rapporter.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+title: Analytics-Dimensioners kompatibilitet
+description: Referens för analysdimensioner och rapporter.
+feature: Dimensions
+exl-id: 1884bc20-b04d-4f9a-b057-2b2fbe53190d
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 8%
 
 ---
 
-
-# Analytics Dimensions-kompatibilitet
+# Analytics-Dimensioners kompatibilitet
 
 På den här sidan visas de dimensioner som stöds i deras respektive Analytics-funktioner.
 
@@ -20,13 +20,13 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 
 >[!NOTE]
 >
->Det finns vissa överlappningar där Analytics-verktyg använder olika termer för liknande dimensioner. Rapporter och Analytics använder till exempel `browserwidth` medan Analysis Workspace använder `browserwidthbucketed`.
+>Det finns vissa överlappningar där analysverktygen använder olika termer för liknande dimensioner. Rapporter och analyser använder till exempel `browserwidth` när Analysis Workspace använder `browserwidthbucketed`.
 
 ## Dimensioner som stöds i både Reports &amp; Analytics och Analysis Workspace
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |---|---|
-| Analytics för Target | `targetraw` |
+| Analyser för Target | `targetraw` |
 | Målgrupps-ID | `mcaudiences` |
 | Webbläsare | `browser` |
 | Typ av webbläsare | `browsertype` |
@@ -37,8 +37,8 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Cookie-stöd | `cookie` |
 | Länder | `geocountry` |
 | Kundlojalitet | `customerloyalty` |
-| Anpassade konverteringsvariabler | `evar1`, `evar2`osv. |
-| Custom Insight Vars | `prop1`, `prop2`osv. |
+| Anpassade konverteringsvariabler | `evar1`, `evar2`, osv. |
+| Custom Insight Vars | `prop1`, `prop2`, osv. |
 | Anpassad länk | `customlink` |
 | Dagar före första köp | `daysbeforefirstpurchase` |
 | Dagar sedan senaste köp | `dayssincelastpurchase` |
@@ -102,9 +102,9 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Besöksnummer | `visitnumber` |
 | Postnummer | `zip` |
 
-## Dimensioner stöds endast i Analysis Workspace
+## Dimensioner som bara stöds i Analysis Workspace
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | AM/PM | `timepartampm` |
 | Webbläsarhöjd - paketerad | `browserheightbucketed` |
@@ -155,7 +155,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 
 ## Innehållsmedvetna dimensioner stöds endast i Analysis Workspace
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Activity Map XY | `clickmapxy` |
 | ID för mediesession | `videosessionid` |
@@ -164,9 +164,9 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Nielsen Channel Asset | `nielsenchannelasset` |
 | Nielsen Content Type | `nielsencontenttype` |
 
-## Dimensioner stöds endast i rapporter och Analytics
+## Dimensioner som bara stöds i rapporter och analyser
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Webbläsarhöjd | `browserheight` |
 | Bredd på webbläsare | `browserwidth` |
@@ -181,11 +181,11 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Unika kunder varje vecka | `weeklyuniquecustomers` |
 | Årliga unika kunder | `yearlyuniquecustomers` |
 
-## Innehållsmedvetna dimensioner stöds av både Reports &amp; Analytics och Analysis Workspace
+## Innehållsmedvetna dimensioner stöds av både Rapporter &amp; Analytics och Analysis Workspace
 
 ### Video (Media Analytics)
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Innehåll | `video` |
 | Innehållssegment | `videosegment` |
@@ -235,7 +235,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 
 ### Adobe Social
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Villkor | `socialterm` |
 | Sociala plattformar/egenskaper | `socialcontentprovider` |
@@ -257,7 +257,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 
 ### Mobile SDK
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Första startdatum | `mobileinstalldate` |
 | Program-ID | `mobileappid` |
@@ -294,14 +294,14 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 
 ### Adobe Advertising Cloud (AMO)
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | AMO EF-ID | `amo_ef_id` |
 | AMO-ID | `amo_cid` |
 
 ### Activity Map
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Activity Map Link per region | `clickmaplinkbyregion` |
 | Activity Map | `clickmapregion` |
@@ -310,9 +310,9 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 
 ### Nielsen Integration
 
-Mer information om hur du implementerar den här integreringen finns i [Nielsen-tillägget](https://exchange.adobe.com/experiencecloud.details.101361.html).
+Mer information om hur du implementerar integreringen finns i [Nielsen Extension](https://exchange.adobe.com/experiencecloud.details.101361.html).
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Nielsen Ad Model | `nielsenadmodel` |
 | Nielsen Segment C | `nielsensegmentc` |
@@ -333,7 +333,7 @@ Mer information om hur du implementerar den här integreringen finns i [Nielsen-
 
 ### Adobe Experience Manager (AEM)
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Tillgångs-ID | `aemassetid` |
 | Resurskälla | `aemassetsource` |
@@ -343,6 +343,6 @@ Mer information om hur du implementerar den här integreringen finns i [Nielsen-
 
 ### Adobe Campaign
 
-| Dimensionsnamn (visas i Analytics UI) | Dimension-ID (används i API-begäranden) |
+| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |
 | Adobe Campaign Executed Delivery ID | `ac_delivery_internal_name` |

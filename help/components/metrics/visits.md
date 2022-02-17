@@ -1,14 +1,14 @@
 ---
 title: Besök
 description: En sekvens med sidvisningar under en session.
-translation-type: tm+mt
-source-git-commit: ee9868b53b93c1ffabdd48e83e38d3cafc9a4c2a
+feature: Metrics
+exl-id: 4f78f2b5-f958-44fe-876a-83f07980beec
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 1%
 
 ---
-
 
 # Besök
 
@@ -34,7 +34,7 @@ Om en besökare utför någon av dessa åtgärder, kommer ett nytt besök att p�
 * Öppnar en annan webbläsare och navigerar till din webbplats på samma dator
 * Samma person som surfar på din webbplats på olika enheter
 
-Om en besökare utför något av dessa åtgärder börjar ett nytt besök **inte** så länge det är mindre än 30 minuter mellan efterföljande träffar:
+Om en besökare utför någon av dessa åtgärder gör ett nytt besök **not** starta så länge som det är mindre än 30 minuter mellan efterföljande träffar:
 
 * Stänger webbläsaren och navigerar sedan till webbplatsen igen
 * Startar om datorn, öppnar samma webbläsare och navigerar till webbplatsen igen
@@ -45,7 +45,7 @@ Om en besökare utför något av dessa åtgärder börjar ett nytt besök **inte
 
 Du kan ändra definitionen för ett besök till en annan tidpunkt än 30 minuter.
 
-* För [virtuella rapportsviter](../vrs/vrs-about.md)kan du ändra tidsgränsen för besök med [!UICONTROL Visit timeout] listrutan. Du kan ändra tidsgränsen för besök till ett rimligt värde.
+* För [Virtuella rapportsviter](../vrs/vrs-about.md)kan du ändra tidsgränsen för besök med [!UICONTROL Visit timeout] listruta. Du kan ändra tidsgränsen för besök till ett rimligt värde.
 * Om du vill ha en standardrapport kontaktar du Kundtjänst för att begära att besökslängden ska förkortas för en viss rapportserie. Du kan bara korta ned längden för standardrapportsviter med 30 minuter.
 
 ## Besök som sträcker sig över en datumgräns
@@ -54,7 +54,7 @@ Ett besök räknas för varje berörd tidsperiod. Om du till exempel har en bes�
 
 ## Besök på en dimension jämfört med totalt antal besök
 
-Besök i samband med en dimension (t.ex. [marknadsföringskanal](../dimensions/marketing-channel.md)) visar antalet besök som innehåller en viss dimensionspost när som helst. Det finns ofta flera dimensionsobjekt i olika träffar på samma besök. Försök att summera besök som rapporterar om dimensionsobjekt är vanligtvis inte rimligt.
+Besök i samband med en dimension (t.ex. [Marknadsföringskanal](../dimensions/marketing-channel.md)) visar antalet besök som vid något tillfälle innehöll en viss dimensionspost. Det finns ofta flera dimensionsobjekt i olika träffar på samma besök. Försök att summera besök som rapporterar om dimensionsobjekt är vanligtvis inte rimligt.
 
 ## Besök alla besökare i Data warehouse
 

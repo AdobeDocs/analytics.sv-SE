@@ -1,14 +1,14 @@
 ---
 title: Kvartal
 description: Kvartalet som mätvärdet inträffade på.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: e7c837d2-f891-4029-b520-4bc6c4387622
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
 
 ---
-
 
 # Kvartal
 
@@ -18,6 +18,6 @@ Dimensionen &#39;Kvartal&#39; rapporterar kvartalet som ett givet mätvärde int
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten omfattar tremånaderskvartal och år för ett visst datum.
+Dimensioner omfattar kvartal på tre månader och år för ett visst datum.

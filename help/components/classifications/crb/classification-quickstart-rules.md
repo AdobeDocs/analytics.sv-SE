@@ -1,16 +1,14 @@
 ---
 description: Klassificeringsreglerna söker regelbundet efter oklassificerade termer. Om en regelmatchning hittas lägger reglerna automatiskt till villkoren i dina klassificeringsdatatabeller. Du kan också använda klassificeringsregler för att skriva över befintliga nycklar.
-subtopic: Classifications
 title: Klassificeringsregler
-feature: Admin Tools
-uuid: 08685919-216d-448b-b886-3adf5ff5405e
-source-git-commit: 010712cce4de0bfa65c961052a6131fa20055bd2
+feature: Classifications
+exl-id: 8fe5d838-fa89-4933-a0c0-498d4e59576d
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 1%
 
 ---
-
 
 # Klassificeringsregler
 

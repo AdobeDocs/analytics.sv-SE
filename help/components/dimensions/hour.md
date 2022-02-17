@@ -1,14 +1,14 @@
 ---
 title: Timme
 description: Den timme som mätvärdet inträffade på.
-translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+feature: Dimensions
+exl-id: 323c46dd-87d0-487a-b954-e5ccbc1b919d
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
 
 ---
-
 
 # Timme
 
@@ -20,7 +20,7 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 ## Dimensioner
 
-Dimensioner omfattar en viss timme inom rapportens datumintervall tillsammans med dess datum. Den är formaterad som `HH:HH YYYY-MM-DD`.
+Dimensioner omfattar en viss timme inom rapportens datumintervall tillsammans med dess datum. Det är formaterat som `HH:HH YYYY-MM-DD`.
 
 ## Besparingstid för dagsljus
 

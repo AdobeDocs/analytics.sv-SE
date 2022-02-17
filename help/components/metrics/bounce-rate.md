@@ -1,14 +1,14 @@
 ---
 title: Studsfrekvens
 description: Andelen besök med exakt ett träffantal.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Metrics
+exl-id: 2d4929df-3843-4ad2-abe6-5c01d3eac557
+source-git-commit: 7966c7d9add0011831c97fbe0dfcca2acd8afb58
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
 
 ---
-
 
 # Studsfrekvens
 

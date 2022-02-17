@@ -2,13 +2,11 @@
 description: Beroende på dina behörigheter kan du dela segment med hela organisationen, grupper eller enskilda användare.
 title: Dela segment
 feature: Segmentation
-uuid: 48736078-85a7-49bd-b8b8-562818798c5e
 exl-id: f51a0d1b-d293-4b41-b1dd-a79da841d94a
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 2%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +20,9 @@ Beroende på dina behörigheter kan du dela segment med hela organisationen, gru
 
 När ska ni dela segment med hela företaget jämfört med bara en grupp användare eller enskilda? Här är några tips du kan följa:
 
-* Som administratör kan du dela ett segment med **[!UICONTROL All]** om det används av hela företaget och alla är bekväma med att använda det. I det här fallet bör du även överväga att göra det till ett [godkänt](/help/components/segmentation/segmentation-workflow/seg-approve.md)-segment.
+* Som administratör delar du ett segment med **[!UICONTROL All]** om det är användbart för hela företaget och alla känner sig bekväma med att använda det. I det här fallet bör du också överväga att göra det till en [godkänd](/help/components/segmentation/segmentation-workflow/seg-approve.md) segment.
 
-* Som administratör kan du dela ett segment med ett specifikt **[!UICONTROL Group]** om segmentet ger ett bra affärsvärde för det teamet. Godkänn inte den här typen av segment officiellt.
+* Som administratör kan du dela ett segment med ett specifikt **[!UICONTROL Group]** om segmentet ger ett bra affärsvärde för teamet. Godkänn inte den här typen av segment officiellt.
 * Som administratör eller enskild användare kan du dela ett segment med andra för att granska och validera ett segment. Om det inte visar sig användbart kan det kasseras. Godkänn inte den här typen av segment officiellt.
 
 1. Markera kryssrutan bredvid segmentet som du vill dela i segmenthanteraren. Verktygsfältet för segmenthantering visas:
@@ -35,7 +33,7 @@ När ska ni dela segment med hela företaget jämfört med bara en grupp använd
 
    ![](assets/sharing_segments.png)
 
-   Om du är administratör kan du välja **[!UICONTROL All]** eller **[!UICONTROL Groups]** och **[!UICONTROL Users]** i din organisation. Som icke-administratör kan du bara se enskilda användare. Använd fältet **[!UICONTROL Search]** för att söka efter grupper eller användare. 1. Klicka på **[!UICONTROL Share]**.
+   Om du är administratör kan du välja **[!UICONTROL All]** eller välj **[!UICONTROL Groups]** och **[!UICONTROL Users]** i er organisation. Som icke-administratör kan du bara se enskilda användare. Använd **[!UICONTROL Search]** fält för att söka efter grupper eller användare. 1. Klicka **[!UICONTROL Share]**.
 
    Ikonen Delad visas bredvid segmentet:  ![](assets/share_icon.png)
 

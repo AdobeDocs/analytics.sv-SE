@@ -1,14 +1,14 @@
 ---
 title: Kundlojalitet
 description: Kategorier baserade på antalet tidigare inköp som en besökare har gjort.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: 48ac1fdf-9a32-4bcc-8b23-bf58358a3470
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
 
 ---
-
 
 # Kundlojalitet
 
@@ -16,15 +16,15 @@ Dimensionen Kundlojalitet visar antalet besökare på er webbplats som har gjort
 
 ## Fyll den här dimensionen med data
 
-Adobe fyller automatiskt i den här dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md) händelsen i implementeringen. Om du implementerar `purchase` händelsen på din webbplats fungerar alltid den här dimensionen.
+Adobe fyller automatiskt i dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md) i implementeringen. Om du implementerar `purchase` den här dimensionen fungerar alltid på din webbplats.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten är följande:
+Dimensionen innehåller följande:
 
 * **Inte en kund**: Vid träffen har besökaren aldrig gjort något inköp förut.
 * **Nya kunder**: Vid träffen gjorde besökaren ett enstaka köp tidigare.
-* **Returkunder**: Vid träffen gjorde besökaren två inköp tidigare.
+* **Returnera kunder**: Vid träffen gjorde besökaren två inköp tidigare.
 * **Lojala kunder**: Vid träffen gjorde besökaren tre eller fler köp tidigare.
 
-När en besökare gör ett köp (utlöser `purchase` händelsen) flyttas träffen och alla efterföljande träffar in i nästa&quot;bucket&quot;. Om en besökare till exempel köper en produkt från er webbplats för första gången går de från&quot;Inte en kund&quot; till&quot;Nya kunder&quot;, där beställningen&quot;Nya kunder&quot; läggs till. Dimensionsartikeln &quot;Inte en kund&quot; kan inte ha order kopplade till sig.
+När en besökare gör ett köp (utlöser `purchase` -händelsen) som inträffar och alla efterföljande träffar flyttas till nästa&quot;bucket&quot;. Om en besökare till exempel köper en produkt från er webbplats för första gången går de från&quot;Inte en kund&quot; till&quot;Nya kunder&quot;, där beställningen&quot;Nya kunder&quot; läggs till. Dimensionsartikeln &quot;Inte en kund&quot; kan inte ha order kopplade till sig.

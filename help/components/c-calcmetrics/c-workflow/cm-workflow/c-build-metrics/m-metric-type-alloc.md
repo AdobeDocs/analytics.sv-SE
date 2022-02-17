@@ -1,9 +1,9 @@
 ---
 description: 'Läs mer om '
 title: Mätvärdestyp och attribuering
-uuid: 64649698-df2a-42c3-bb31-938f766e1d1f
+feature: Calculated Metrics
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 4%
@@ -20,18 +20,18 @@ Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och a
 
 | Mätningstyp | Definition |
 |---|---|
-| Standard | Dessa mått är samma värden som används i [!DNL Analytics]-standardrapporter. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Till exempel tar [Beställningar] / [Besök] order för den specifika radobjektet och dividerar den med antalet besök för den specifika radobjektet. |
-| Totalt | Använd summan för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalt mätvärde visas samma totala antal på varje radartikel. Totala värden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Exempel: [Beställningar] / [Totalt antal besök] visar andelen order mot ALLA besök på platsen, inte bara antalet besök för den specifika radobjektet. |
+| Standard | Dessa mått är samma som de som används i standard [!DNL Analytics] rapportering. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Till exempel: [Beställningar] / [Besök] tar emot order för den specifika radartikeln och dividerar den med antalet besök för den specifika radartikeln. |
+| Totalt | Använd summan för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalt mätvärde visas samma totala antal på varje radartikel. Totala värden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Till exempel: [Beställningar] / [Totalt antal besök] visar hur stor andel av beställningarna som gäller för ALLA besök på er webbplats, inte bara besöken till den specifika radobjektet. |
 
 ## Kolumnattributmodell
 
 >[!IMPORTANT]
 >
->[Attribution ](/help/analyze/analysis-workspace/attribution/overview.md) IQsreviderade sättet på vilket allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
+>[Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) reviderat sätt på vilket allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
 >
->* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attribution models and lookback windows](/help/analyze/analysis-workspace/attribution/models.md).
+>* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attributmodeller och uppslagsfönster](/help/analyze/analysis-workspace/attribution/models.md).
 >* Allokeringsmodellerna&quot;sista beröringen i marknadsföringskanalen&quot; och&quot;Första beröringen i marknadsföringskanalen&quot; migreras till de nya attribueringsmodellerna&quot;Sista beröringen&quot; respektive&quot;Första beröringen&quot; (Obs! &quot;Marknadsföringskanaler&quot; kommer inte att bli inaktuella - bara de två allokeringsmodellerna som visas i beräknade värden kommer att vara det).
->* Dessutom kommer vi att korrigera hur linjär allokering beräknas. För kunder som använder beräknade värden med linjär allokering kan rapporterna ändras något för att återspegla den nya, korrigerade attribueringsmodellen. Den här förändringen av beräknade värden återspeglas i Analysis Workspace, Rapporter och analyser, Rapporterings-API:t och Report Builder. Mer information finns i **How Linear Allocation works (fr.o.m. 19 juli 2018**, nedan.
+>* Dessutom kommer vi att korrigera hur linjär allokering beräknas. För kunder som använder beräknade värden med linjär allokering kan rapporterna ändras något för att återspegla den nya, korrigerade attribueringsmodellen. Den här förändringen av beräknade värden återspeglas i Analysis Workspace, Rapporter och analyser, Rapporterings-API:t och Report Builder. Mer information finns i **How Linear Allocation works (from 19 juli 2018)**, nedan.
 
 
 ## Hur linjär tilldelning fungerar (från och med den 19 juli 2018)
@@ -71,7 +71,7 @@ För den första touch-eVar ovan ges A alla 10 dollar. För propen: A = 10 * (2/
 
 **Sammanfattning av hur linjär allokering fungerar nu**
 
-I stället för att använda de beständiga värden som baseras på senaste beröring eller första beröring använder [!DNL Analytics] nu bara de värden som skickades (den första raden i den övre tabellen). Inställningarna för dimensionsallokering påverkar inte längre det sätt på vilket linjär allokering beräknas (vilket innebär att props och eVars behandlas på samma sätt), och resultaten avspeglar det som ursprungligen skickades i stället för det första eller sista beröringsvärdet som kan ha varit bestående. I alla tre fallen är alltså A = 10 * (2/4) = $5, B = 10 * (1/4) = $2,50 och C = 10 * (1/4) = $2,50.
+Istället för att använda de beständiga värden som baseras på senaste beröring eller första beröring, [!DNL Analytics] använder nu bara de värden som skickades (den första raden i den översta tabellen). Inställningarna för dimensionsallokering påverkar inte längre det sätt på vilket linjär allokering beräknas (vilket innebär att props och eVars behandlas på samma sätt), och resultaten avspeglar det som ursprungligen skickades i stället för det första eller sista beröringsvärdet som kan ha varit bestående. I alla tre fallen är alltså A = 10 * (2/4) = $5, B = 10 * (1/4) = $2,50 och C = 10 * (1/4) = $2,50.
 
 | Värden | Ny eVar för senaste beröring | Ny eVar med första beröring | Nytt utkast |
 |---|---|---|---|

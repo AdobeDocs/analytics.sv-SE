@@ -1,9 +1,9 @@
 ---
 description: 'Genom att segmentera enskilda mätvärden kan ni göra mätjämförelser inom samma rapport. '
 title: Segmenterade mätvärden
-uuid: 88f9829b-76e4-4598-9494-084a91602bc1
+feature: Calculated Metrics
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: 244f839235f55b7f8873864ced3d5adc2394b631
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Låt oss säga att du vill jämföra olika aspekter av ett&quot;tyska besökarse
 
    >[!NOTE]
    >
-   >Du kan också göra detta i [Segmentverktyget](/help/components/segmentation/segmentation-workflow/seg-build.md), men vi har förenklat arbetsflödet genom att göra dimensioner tillgängliga i beräkningsverktyget. &quot;Adhoc&quot; innebär att segmentet inte är synligt i **[!UICONTROL Segments]**-listan i den vänstra listen. Du kan emellertid göra den offentlig genom att hålla markören över ikonen&quot;i&quot; bredvid den och klicka på **[!UICONTROL Make public]**.
+   >Du kan även göra det här i dialogrutan [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md)men vi har förenklat arbetsflödet genom att göra dimensionerna tillgängliga i verktyget för beräkning av mått. &quot;Adhoc&quot; innebär att segmentet inte är synligt i **[!UICONTROL Segments]** listan i den vänstra listen. Du kan emellertid göra den offentlig genom att hålla markören över ikonen&quot;i&quot; bredvid den och klicka på **[!UICONTROL Make public]**.
 
 1. Om du inte har något jämförbart segment skapar du ett segment som kallas&quot;Internationella besökare&quot; där&quot;Länder&quot; inte är lika med&quot;Tyskland&quot;.
 1. Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; genom att dra segmentet Tyskland till arbetsytan Definition och dra det unika besökarmåttet i det:
@@ -38,7 +38,7 @@ Låt oss säga att du vill jämföra olika aspekter av ett&quot;tyska besökarse
    ![](assets/german-visitors.png)
 
 1. Upprepa steg 3 med segmentet Internationell besökare och mätvärdet Unik besökare för att skapa ett internationellt besökarmått.
-1. I Analysis Workspace drar du Dimensionen **[!UICONTROL Page]** till en frihandstabell och drar de två nya beräknade måtten intill varandra längst upp:
+1. I Analysis Workspace drar du **[!UICONTROL Page]** Dimension till en frihandstabell och dra de två nya beräknade måtten intill varandra högst upp:
 
    ![](assets/workspace-pages.png)
 

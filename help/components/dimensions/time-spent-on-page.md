@@ -1,14 +1,14 @@
 ---
 title: Tid som använts på sidan
 description: Den tid en besökare tillbringade på sidan.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: 55af7286-7c37-48d2-925e-8b7ecb390e7f
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
 
 ---
-
 
 # Tid som använts på sidan
 
@@ -24,7 +24,7 @@ Den här dimensionen är värdefull när du vill förstå hur länge besökarna 
 >
 >Tid som använts mäts inte för den senaste besöksträffen eftersom det inte finns någon efterföljande bildbegäran för att mäta förfluten tid. Detta koncept gäller också besök som består av en enda träff (ett studs).
 
-Den här dimensionen är träffbaserad, vilket innebär att värdet är olika för varje träff. Jämför den här dimensionen med [tidsåtgången per besök](time-spent-per-visit.md), vilket är en besöksbaserad dimension. Högre tidsåtgång innebär att en besökare stannar längre på en sida (träff).
+Den här dimensionen är träffbaserad, vilket innebär att värdet är olika för varje träff. Jämför den här dimensionen med [Tid per besök](time-spent-per-visit.md), vilket är en besöksbaserad dimension. Högre tidsåtgång innebär att en besökare stannar längre på en sida (träff).
 
 ![Tid som använts på sidan](../metrics/assets/time-spent2.png)
 
@@ -32,11 +32,11 @@ Den här dimensionen är träffbaserad, vilket innebär att värdet är olika f�
 
 Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapportsvit innehåller data fungerar den här dimensionen.
 
-## Dimensionsobjekt
+## Dimensioner
 
 Det finns flera dimensioner för tidsåtgången på sidan:
 
-* **Tid som använts på sidan - paketerad**: Tidsmängden är spärrad. Dimensionsobjekten varierar från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan sidvyerna räcker vanligtvis inte längre än 30 minuter. tiden mellan sidvyerna kan dock överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
-* **Tid som använts på sidan - granulärt**: Varje antal sekunder är ett unikt dimensionsobjekt.
+* **Tid som använts på sidan - blockerad**: Tidsmängden är spärrad. Objekten i Dimensionen kan variera från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan sidvyerna räcker vanligtvis inte längre än 30 minuter. tiden mellan sidvyerna kan dock överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
+* **Tid som använts på sidan - granulerad**: Varje antal sekunder är ett unikt dimensionsobjekt.
 
-Mer allmän information om hur lång tid du tillbringar finns i [Tidsåtgång - översikt](../metrics/time-spent.md) .
+Se [Tidsåtgång - översikt](../metrics/time-spent.md) om du vill ha mer allmän information om hur länge du har tillbringat.

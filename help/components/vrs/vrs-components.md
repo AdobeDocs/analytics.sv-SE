@@ -1,9 +1,9 @@
 ---
 description: Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
 title: Komponentval för Virtual Report Suites
-uuid: 6c6a4071-22ad-4e8c-b1ed-140b2aa04f76
+feature: VRS
 exl-id: 19163829-328a-4064-b1be-8c09d1d94a0d
-source-git-commit: f52623f4885063d080c95ef275808a3d051895e5
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 9%
@@ -20,12 +20,12 @@ Här är en video om komponenturval:
 
 >[!NOTE]
 >
->Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka på **[!UICONTROL Show all Components]**. [Den uppdaterade kurationsupplevelsen](/help/analyze/analysis-workspace/curate-share/curate.md) ger en mer detaljerad kontroll över vilka komponenter som är synliga.
+>Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [uppdaterad kursupplevelse](/help/analyze/analysis-workspace/curate-share/curate.md) ger mer detaljerad kontroll över vilka komponenter som är synliga.
 
 Om du vill aktivera komponenturval
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual Report Suites]** > **[!UICONTROL Create new virtual report suite]**.
-1. När du har definierat **[!UICONTROL Settings]** klickar du på fliken **[!UICONTROL Components]**.
+1. När du har definierat **[!UICONTROL Settings]** klickar du på **[!UICONTROL Components]** -fliken.
 
 1. Markera kryssrutan **[!UICONTROL Enable Customization of Virtual Report Suite Components]**:
 
@@ -33,7 +33,7 @@ Om du vill aktivera komponenturval
 
    >[!NOTE]
    >
-   >Om komponentanpassning är aktiverat är den virtuella rapportsviten bara tillgänglig i Analysis Workspace **och är inte tillgänglig i följande:**
+   >Om komponentanpassning är aktiverat är den virtuella rapportsviten tillgänglig **endast i Analysis Workspace** och är inte tillgängligt i följande:
    >
    >* [!UICONTROL Reports & Analytics]
    >* [!UICONTROL Data Warehouse]
@@ -51,9 +51,9 @@ Om du vill aktivera komponenturval
 
    >[!NOTE]
    >
-   >Du behöver inte *dela* kuraterade komponenter (segment, beräknade värden, datumintervall). De visas alltid i Analysis Workspace om de har kuraterats för den virtuella rapportsviten, även om de inte delas.
+   >Du behöver inte *dela* förvaltade komponenter (segment, beräknade värden, datumintervall). De visas alltid i Analysis Workspace om de har kuraterats för den virtuella rapportsviten, även om de inte delas.
 
-1. Dessutom kan du filtrera eller söka efter komponenterna och lägga till hela den filtrerade markeringen i den inkluderade kolumnen genom att klicka på **[!UICONTROL Add All]**.
+1. Du kan dessutom filtrera eller söka efter komponenterna och lägga till hela den filtrerade markeringen i den inkluderade kolumnen genom att klicka på **[!UICONTROL Add All]**.
 
    ![](assets/vrs-add-all.png)
 
@@ -75,4 +75,4 @@ Använd komponentgrupper för att göra satsvis komponenttillägg i din virtuell
 
 ## Arbetsytebeteende {#section_6C32F8B642804C0097FCB14E21028D4A}
 
-Mer information om kurering i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
+Mer information om kurser i Analysis Workspace finns i [Kuratera och dela ett projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).

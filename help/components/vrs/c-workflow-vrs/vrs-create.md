@@ -2,10 +2,9 @@
 description: Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
 keywords: Virtual Report Suite
 title: Skapa virtuella rapportsviter
-feature: Reports & Analytics Basics
-uuid: 022a6656-808e-4c92-b7ec-4d2a42e84fa8
+feature: VRS
 exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
-source-git-commit: f52623f4885063d080c95ef275808a3d051895e5
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 3%
@@ -27,7 +26,7 @@ Innan du börjar skapa virtuella rapportsviter bör du tänka på några saker.
 
 ## Definiera inställningar
 
-Definiera de här inställningarna på fliken [!UICONTROL Settings] och klicka sedan på **[!UICONTROL Continue]**.
+På [!UICONTROL Settings] -fliken, definiera dessa inställningar och klicka sedan på **[!UICONTROL Continue]**.
 
 | Element | Beskrivning |
 | --- |--- |
@@ -36,11 +35,11 @@ Definiera de här inställningarna på fliken [!UICONTROL Settings] och klicka s
 | Taggar | Du kan lägga till taggar för att ordna dina rapportsviter. |
 | Källa | Rapportsviten som den här virtuella rapportsviten ärver följande inställningar. De flesta tjänstenivåer och funktioner (till exempel eVar, bearbetningsregler, klassificeringar och så vidare) ärvs. Om du vill ändra de här ärvda inställningarna för ett VRS-system måste du redigera den överordnade rapportsviten (Admin > Rapportsviter). |
 | Tidszon | Det är valfritt att välja en tidszon. Om du väljer en tidszon sparas den tillsammans med VRS. Om du inte väljer någon tidszon används den överordnade rapportsvitens tidszon.  När du redigerar ett VRS-system visas den tidszon som har sparats med VRS i den nedrullningsbara väljaren. Om VRS skapades innan tidszonsstödet lades till visas den överordnade rapportsvitens tidszon i den nedrullningsbara väljaren. |
-| Segment | Du kan bara lägga till ett segment eller stapla segment.   Obs!  När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. |
+| Segment | Du kan bara lägga till ett segment eller stapla segment.   Obs! När du staplar två segment förenas de med en AND-programsats. Detta kan inte ändras till en OR-sats. När du försöker ta bort eller ändra ett segment som för närvarande används i en virtuell rapportserie visas en varning. |
 
 ## Definiera besöksdefinition
 
-Definiera de här inställningarna på fliken [!UICONTROL Visit Definition] och klicka sedan på **[!UICONTROL Continue]**.
+På [!UICONTROL Visit Definition] -fliken, definiera dessa inställningar och klicka sedan på **[!UICONTROL Continue]**.
 
 ![](assets/visit-definition.png)
 
@@ -62,10 +61,10 @@ Här är en video om hur du justerar en besöksdefinition i en virtuell rapports
 
 ![](assets/components.png)
 
-1. På fliken [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
-Mer information om VRS-kurering finns i [Virtuell Report Suite-komponentkuration](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html?lang=en#virtual-report-suites).
+1. På [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
+Mer information om VRS-kurser finns i [Komponenturval för Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html?lang=en#virtual-report-suites).
 
-1. Dra komponenter (mått, mått, segment eller datumintervall) som du vill inkludera i VRS till [!UICONTROL Included Components]-avsnittet.
+1. Dra komponenter (dimensioner, mått, segment eller datumintervall) som du vill inkludera i VRS till [!UICONTROL Included Components] -avsnitt.
 
 1. När du är klar klickar du på **[!UICONTROL Save]**.
 

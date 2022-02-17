@@ -1,7 +1,9 @@
 ---
 title: Identifierade personer
 description: Antalet personer som identifieras av Cross-Device Analytics.
-source-git-commit: c6faacbc4b5365c500237682c3ec2ef71448be80
+feature: Metrics
+exl-id: eb98aa7f-d5e7-403f-b3b7-a9b0f7ccd502
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
@@ -10,7 +12,7 @@ ht-degree: 0%
 
 # Identifierade personer
 
-Mätvärdet Identifierade personer är ett [korsenhetsanalys](../cda/overview.md)-mått som räknar antalet besökare som identifieras av CDA.
+Måttet Identifierade personer är en [Enhetsövergripande analys](../cda/overview.md) mått som räknar antalet besökare som identifieras av CDA.
 
 ## Hur det här måttet beräknas
 

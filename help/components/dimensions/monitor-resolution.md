@@ -1,8 +1,9 @@
 ---
 title: Bildskärmsupplösning
 description: Upplösningen för besökarens bildskärm i pixlar.
+feature: Dimensions
 exl-id: 6bae65eb-4546-4d07-877d-6e257fbe6cfa
-source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -23,8 +24,8 @@ Webbläsardimensionerna är alltid mindre än skärmupplösningen eftersom webbl
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`s`-frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `screen.width` och `screen.height` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med frågesträngsparametern `s` i bildbegäranden.
+Den här dimensionen hämtar data från [`s` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `screen.width` och `screen.height` i webbläsaren. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med `s` frågesträngsparameter i bildbegäranden.
 
 ## Dimensioner
 
-Dimensionen innehåller alla insamlade skärmupplösningar. Exempelvärden är `1920 x 1080`, `1366 x 768` och `1280 x 720`.
+Dimensionen innehåller alla insamlade skärmupplösningar. Exempelvärden innehåller `1920 x 1080`, `1366 x 768`och `1280 x 720`.

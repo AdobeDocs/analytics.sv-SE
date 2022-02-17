@@ -1,25 +1,25 @@
 ---
 title: Enheter
 description: Det totala antalet produkter som köpts i alla order.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Metrics
+exl-id: c7293445-0760-4237-83ae-812224ca6f4b
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 1%
 
 ---
 
-
 # Enheter
 
-Måttet Enheter visar det totala antalet produkter som köpts i alla order. Detta mått är avgörande för e-handelsplatser när det gäller att mäta konvertering. Du kan kombinera det här måttet med valfri dimension för att se vilka dimensionsartiklar som bidrog till hur många produkter som köptes. Du kan till exempel se de bästa kampanjerna (med [spårningskod](../dimensions/tracking-code.md) ) eller de viktigaste interna söktermerna (med en [eVar](../dimensions/evar.md)) som har bidragit till köpta produkter.
+Måttet Enheter visar det totala antalet produkter som köpts i alla order. Detta mått är avgörande för e-handelsplatser när det gäller att mäta konvertering. Du kan kombinera det här måttet med valfri dimension för att se vilka dimensionsartiklar som bidrog till hur många produkter som köptes. Du kan till exempel se de bästa kampanjerna (med [Spårningskod](../dimensions/tracking-code.md) dimension) eller de vanligaste interna söktermerna (med en [eVar](../dimensions/evar.md)) som bidrog till köpta produkter.
 
 ## Hur det här måttet beräknas
 
-För varje träff som `purchase` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabeln, summan av fältet Kvantitet i [`products`](/help/implement/vars/page-vars/products.md) variabeln.
+För varje träff där `purchase` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel, summan av fältet Kvantitet i [`products`](/help/implement/vars/page-vars/products.md) variabel.
 
 ## Jämför order och enheter
 
-Mätvärdet för [beställningar](orders.md) registrerar bara antalet inköpshändelser. Måttet Enheter är vanligtvis högre än Order eftersom kunderna kan köpa mer än en produkt. I dessa fall finns det en enda order med flera enheter.
+The [Beställningar](orders.md) Endast mätvärden registrerar antalet inköpshändelser. Måttet Enheter är vanligtvis högre än Order eftersom kunderna kan köpa mer än en produkt. I dessa fall finns det en enda order med flera enheter.
 
-Om du har beställningar som är högre än antalet enheter bör du kontrollera integriteten i implementeringen. Det är troligt att din `products` variabel inte är korrekt inställd på inköp, vilket vanligtvis är ett oönskat beteende.
+Om du har beställningar som är större än enheter rekommenderar Adobe att du kontrollerar implementeringens integritet. Det är troligt att `products` variabeln är inte korrekt inställd på köp, vilket vanligtvis är oönskat beteende.

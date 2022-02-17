@@ -1,14 +1,14 @@
 ---
 title: Hämta länk
 description: Namnet på nedladdningslänken.
-translation-type: tm+mt
-source-git-commit: 423e9b753a3b7b1e0a8e8b9748f9694d718abd18
+feature: Dimensions
+exl-id: 078014a2-1f09-4177-9575-b44c5da25816
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
-
 
 # Hämta länk
 
@@ -20,9 +20,9 @@ Dimensionen Download link visar namnen på de nedladdningslänkar som har implem
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen samlar in data från [`pev2`-frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden för träffar som också har `pe`-frågesträngen med värdet `lnk_d`. Om frågesträngen `pe` har ett annat värde i träffen, samlar dimensionen inte in data.
+Den här dimensionen samlar in data från [`pev2` frågesträng](/help/implement/validate/query-parameters.md) i bildförfrågningar för träffar som också har `pe` frågesträng med värdet för `lnk_d`. Om `pe` frågesträngen har ett annat värde i träffen, den här dimensionen samlar inte in data.
 
-Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md)-bildbegäran med ett länktypsargument på `"d"`. Fyll i länknamnsargumentet med det önskade värdet.
+Om du vill skicka data till den här dimensionen med AppMeasurement skickar du en [`tl()`](/help/implement/vars/functions/tl-method.md) bildbegäran med ett länktypargument av `"d"`. Fyll i länknamnsargumentet med det önskade värdet.
 
 ## Dimensioner
 

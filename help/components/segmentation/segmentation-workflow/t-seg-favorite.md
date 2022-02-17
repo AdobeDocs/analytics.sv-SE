@@ -2,13 +2,11 @@
 description: Att markera segment som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
 title: Markera segment som favoriter
 feature: Segmentation
-uuid: 0bc1f19c-4ab1-47a2-8dd4-9aa0015846ed
 exl-id: 7586066c-b6bc-4e24-9946-0983bb34dc3f
-translation-type: tm+mt
-source-git-commit: f9b5380cfb2cdfe1827b8ee70f60c65ff5004b48
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 12%
+source-wordcount: '70'
+ht-degree: 11%
 
 ---
 
@@ -20,4 +18,4 @@ Att markera segment som favoriter är ett annat sätt att ordna dem så att de b
 
    ![](assets/favorites.png)
 
-1. Du kan också filtrera på favoriter under **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Favorites]**.
+1. Du kan även filtrera på favoriter under **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Favorites]**.

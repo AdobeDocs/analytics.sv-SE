@@ -1,15 +1,12 @@
 ---
 description: Adobe Analytics har stöd för både klassificeringsmodeller på en och flera nivåer. Med en klassificeringshierarki kan du tillämpa en klassificering på en klassificering.
-subtopic: Classifications
 title: Om underklassificeringar
-feature: Admin Tools
-uuid: 48bd7fc1-54a1-40ef-bc55-395338522f2d
+feature: Classifications
 exl-id: 3d22a8c0-743d-47f3-ba15-aaef1ebd4dff
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 8%
+source-wordcount: '644'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +16,7 @@ Adobe Analytics har stöd för både klassificeringsmodeller på en och flera ni
 
 >[!NOTE]
 >
->Delklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte samma sak som [!UICONTROL Classification Hierarchy] som används för att skapa [!UICONTROL Hierarchy]-rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](/help/admin/admin/conversion-var-admin/classification-hierarchies.md).
+>Delklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte detsamma som [!UICONTROL Classification Hierarchy] används för att skapa [!UICONTROL Hierarchy] rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](/help/admin/admin/conversion-var-admin/classification-hierarchies.md).
 
 Exempel:
 
@@ -40,7 +37,7 @@ Klassificeringar på flera nivåer består av överordnade och underordnade klas
 
 **Överordnade klassificeringar:** En överordnad klassificering är en klassificering som har en associerad underordnad klassificering. En klassificering kan vara både en överordnad och underordnad klassificering. De översta överordnade klassificeringarna motsvarar klassificeringar på en nivå.
 
-**Underordnade klassificeringar:** En underordnad klassificering är en klassificering som har en annan klassificering som överordnad i stället för variabeln. Underordnade klassificeringar innehåller ytterligare information om deras överordnade klassificering. En [!UICONTROL Campaigns]-klassificering kan till exempel ha en underordnad klassificering för Campaign Owner. [!UICONTROL Numeric] klassificeringar fungerar också som mått i klassificeringsrapporter.
+**Underordnade klassificeringar:** En underordnad klassificering är en klassificering som har en annan klassificering som överordnad i stället för variabeln. Underordnade klassificeringar innehåller ytterligare information om deras överordnade klassificering. Till exempel en [!UICONTROL Campaigns] klassificering kan ha en underordnad klassificering för Campaign Owner. [!UICONTROL Numeric] klassificeringar fungerar också som mått i klassificeringsrapporter.
 
 Varje klassificering, antingen överordnad eller underordnad, utgör en datakolumn i datafilen. Kolumnrubriken för en underordnad klassificering med följande namnformat:
 
@@ -59,7 +56,7 @@ Exempel:
 
 >[!NOTE]
 >
->Om kolumnen [!UICONTROL Key] i en datafil är tom genererar Adobe automatiskt unika nycklar för varje datarad. Om du vill undvika att en fil skadas när du överför en datafil med klassificeringsdata på andra nivån eller högre, ska du fylla i varje rad i [!UICONTROL Key]-kolumnen med en asterisk (*).
+>Om [!UICONTROL Key] i en datafil är tom, genererar Adobe automatiskt unika nycklar för varje datarad. Om du vill undvika att en fil skadas när du överför en datafil med klassificeringsdata på andra nivån eller högre, ska du fylla i varje rad i [!UICONTROL Key] kolumn med en asterisk (*).
 
 ## Exempel
 
@@ -71,7 +68,7 @@ Exempel:
 
 När du överför datafiler för den här produktklassificeringen kan du överföra klassificeringsdata som en enda fil eller som flera filer (se nedan). Genom att färgkoden separeras i fil 1 och färgnamnet i fil 2, behöver färgnamnsdata (som bara kan vara ett fåtal rader) bara uppdateras när nya färgkoder skapas. Då tas färgnamnsfältet (CODE^COLOR) bort från den mest uppdaterade filen 1 och filstorleken och komplexiteten minskas när datafilen genereras.
 
-### Produktklassificering - En fil {#section_E8C5E031869C449F9B636F5EB3BFEC17}
+### Produktklassificering - en fil {#section_E8C5E031869C449F9B636F5EB3BFEC17}
 
 | NYCKEL | PRODUKTNAMN | PRODUKTINFORMATION | GENDER | STORLEK | KOD | KOD^FÄRG |
 |---|---|---|---|---|---|---|

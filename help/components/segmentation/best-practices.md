@@ -1,14 +1,14 @@
 ---
 title: Bästa praxis för segmentering
 description: Skapa optimala segment som returnerar data effektivt.
-translation-type: tm+mt
-source-git-commit: e758c070f402113b6d8a9069437b53633974a3e9
+feature: Segmentation
+exl-id: 4115a804-5063-430a-b9d3-2b64b26ca4d8
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
 
 ---
-
 
 # Bästa praxis för segmentering
 
@@ -18,11 +18,11 @@ Komplexa segment behövs ofta för att få fram önskade data. Om komplexa segme
 
 Operatorn&quot;Innehåller&quot; är en av de mest bearbetningsintensiva funktionerna i segmentering, eftersom den måste analysera hela innehållet i varje värde. Använd andra operatorer som &quot;Börjar med&quot; eller &quot;Slutar med&quot; om de önskade värdena finns i början eller slutet av en sträng.
 
-Om en Contains-operator i ett segment returnerar ett stort antal resultat, kommer rapporten oftast att sluta fungera. Om du till exempel har skapat ett segment där `Referrer equals "."`söker segmentet igenom innehållet i alla värden. Du kan använda operatorn &#39;Exists&#39; i stället.
+Om en Contains-operator i ett segment returnerar ett stort antal resultat, kommer rapporten oftast att sluta fungera. Om du till exempel har skapat ett segment där `Referrer equals "."`genomsöks innehållet i alla värden. Du kan använda operatorn &#39;Exists&#39; i stället.
 
 ## Använd klassificeringar för att gruppera dimensionsobjekt
 
-Om du har många segmentvillkor kan de snabbt försämra segmentets prestanda. Upprepas till exempel `Page equals X or Page equals Y or Page equals Z` med hundratals olika värden. I stället för att skriva ut dessa hundratals villkor klassificerar du alla önskade värden i ett segment och använder sedan det klassificerade värdet i ett segment.
+Om du har många segmentvillkor kan de snabbt försämra segmentets prestanda. Till exempel: `Page equals X or Page equals Y or Page equals Z` upprepas med hundratals olika värden. I stället för att skriva ut dessa hundratals villkor klassificerar du alla önskade värden i ett segment och använder sedan det klassificerade värdet i ett segment.
 
 1. Skapa en klassificering för variabeln som du arbetar med.
 2. Hämta klassificeringsmallen och öppna den i det kalkylblad eller den textredigerare du vill använda.

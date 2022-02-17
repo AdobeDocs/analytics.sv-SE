@@ -1,8 +1,9 @@
 ---
 title: Postnummer
 description: Besökarens postnummer.
+feature: Dimensions
 exl-id: 597619f8-a581-4491-beb2-c14b1f7b7bec
-source-git-commit: b8ef31f3fbc51746c8f6b2ee35742a493c3df2b5
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -17,10 +18,10 @@ Postnumret anger besökarens postnummer. Du kan använda den här dimensionen om
 
 Denna dimension är unik eftersom den innehåller flera sätt att fylla den med data. Du kan använda ett av dem eller en kombination av båda.
 
-* Ange postnumret direkt med variabeln `zip`; eller
+* Ange postnumret direkt med `zip` variabel, eller
 * Konfigurera den för att dra nytta av data för geosegmentering.
 
-[!UICONTROL Zip option] under [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) styr hur du vill fylla i den här dimensionen.
+The [!UICONTROL Zip option] under [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) styr hur du vill fylla i den här dimensionen.
 
 >[!IMPORTANT]
 >

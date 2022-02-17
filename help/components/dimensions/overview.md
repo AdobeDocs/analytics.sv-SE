@@ -1,8 +1,9 @@
 ---
 title: Översikt över Dimensioner
 description: Variabler som innehåller strängvärden.
+feature: Dimensions
 exl-id: dc00e06a-fdb5-40e3-82e2-269bad3b3677
-source-git-commit: 482817636e82a40c274d549c4190d0b11d27c183
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Översikt över Dimensioner
 
-Dimensioner är variabler i Adobe Analytics som vanligtvis innehåller strängvärden. Vanliga dimensioner är [Sida](page.md), [Referensdomän](referring-domain.md) eller en [eVar](evar.md). [mått](../metrics/overview.md) innehåller däremot numeriska värden som är kopplade till en dimension. En grundläggande rapport visar rader med strängvärden (dimension) mot en kolumn med numeriska värden (metrisk).
+Dimensioner är variabler i Adobe Analytics som vanligtvis innehåller strängvärden. Vanliga dimensioner är [Sida](page.md), [Refererande domän](referring-domain.md)eller en [eVar](evar.md). I motsats till [mått](../metrics/overview.md) innehåller numeriska värden som är kopplade till en dimension. En grundläggande rapport visar rader med strängvärden (dimension) mot en kolumn med numeriska värden (metrisk).
 
 Om du t.ex. kombinerat siddimensionen med Visits-måttet får du en rankad rapport som visar dina mest besökta sidor:
 

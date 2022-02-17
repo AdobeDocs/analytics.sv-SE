@@ -1,22 +1,22 @@
 ---
 title: Produkt
 description: Produktens namn.
-translation-type: tm+mt
-source-git-commit: 6778dd290424651dc959224daa0eef8ebd8196e5
+feature: Dimensions
+exl-id: 2649c200-4b0a-49a9-8592-9b9af72b91cf
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 1%
 
 ---
 
-
 # Produkt
 
-Dimensionen Produkt rapporterar namnet på produkten i träffen. Det är användbart för implementeringar som använder variabeln och som vill se mätvärden runt produkter, till exempel de främsta säljarna eller de mest visade. `products` Den här dimensionen kan vara tom om du inte har några produkter på din webbplats.
+Dimensionen Produkt rapporterar namnet på produkten i träffen. Det är användbart för implementeringar som använder `products` variabel och vill se mätvärden runt produkter, t.ex. bästsäljare eller de mest visade. Den här dimensionen kan vara tom om du inte har några produkter på din webbplats.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till den andra delen av strängen i [`products`](/help/implement/vars/page-vars/products.md) variabeln. Tecken mellan det första och andra semikolon (`;`) fyller i den här dimensionen.
+Den här dimensionen refererar till den andra delen av strängen i [`products`](/help/implement/vars/page-vars/products.md) variabel. Tecken mellan det första och det andra semikolon (`;`) fyller i den här dimensionen.
 
 ## Dimensioner
 

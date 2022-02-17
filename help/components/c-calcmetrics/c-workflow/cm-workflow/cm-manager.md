@@ -1,20 +1,22 @@
 ---
 description: I Beräknad måtthanterare kan du strukturera mätvärden på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
-title: Beräknad måtthanterare
-uuid: 065c7b79-bab2-426b-a2d9-aac93f728b31
-translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+title: Hanterare för beräknade mätvärden
+feature: Calculated Metrics
+exl-id: 32430e77-2450-4672-9c21-255e76802a4c
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 2%
 
 ---
 
-
-# Beräknad måtthanterare
+# Hanterare för beräknade mätvärden
 
 I Beräknad måtthanterare kan du strukturera mätvärden på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
 I Beräknad metrisk hanterare visas alla segment som du äger och som har delats med dig. Användare på administratörsnivå kan se alla anpassade värden i organisationen. I den här översikten visas användargränssnittet och funktionerna i hanteraren för beräknade mått. Öppna den via
 
-* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Calculated Metrics]**.
+* Går till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Calculated Metrics]**.
 
 ![](assets/calcmet_mgr_ui.png)
 

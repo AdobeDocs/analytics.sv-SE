@@ -2,9 +2,9 @@
 description: Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.
 keywords: Beräknade mått;Härledda värden;Avancerade beräknade värden
 title: Beräknade och avancerade beräknade (härledda) värden
-uuid: 2553c115-b15a-4109-8de2-733dbc1eeb9e
+feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 6%
@@ -44,7 +44,7 @@ Ni kan
    >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
 
 * Dela mätvärden mellan olika rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
-* (Endast avancerade beräknade värden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot; med antalet personer som det här är den första sessionen för. Här är ett videoklipp om detta ämne:
+* (Endast avancerade beräknade värden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot;, med antalet personer som detta är den första sessionen för. Här är ett videoklipp om detta ämne:
 
    >[!VIDEO](https://video.tv.adobe.com/v/25409/?quality=12)
 
@@ -83,7 +83,7 @@ Här är en kort översikt över [!UICONTROL Calculated Metrics] verktyg:
      <li id="li_C8C97BA4E227463E98077ABA5818FFC6">Lägg till segment textbundet i mätformler. </li> 
      <li id="li_8503D9E06A3C46569B5CDB4B90F72446">Jämför segment i samma rapport. Exempel: jämför lokala besökare med internationella besökare. </li> 
      <li id="li_4B528FDE1F96400DBA0D3276408FF919">Använd statistiska funktioner. </li> 
-     <li id="li_C1162B1EA6784B8189A8A87E2B0DA79A">Tillhandahåll detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas). </li> 
+     <li id="li_C1162B1EA6784B8189A8A87E2B0DA79A">Ange detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas). </li> 
      <li id="li_DEA13F5E8BF94AF1B311C467FE6E2A74">Kopiera definitioner till nya mätvärden. </li> 
      <li id="li_8C21F55015D44910904202D2BF74221C">Ange en intern metrisk förhandsgranskning. </li> 
      <li id="li_3704F66C321C477F9D4F52E068C231BD">Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar. </li> 

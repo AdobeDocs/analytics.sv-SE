@@ -1,12 +1,14 @@
 ---
 description: Beskriver de två viktigaste sätten att hitta metrisk sortering och filtrering.
 title: Hitta mätvärden
-uuid: 60c8e02c-736d-4d20-8799-69f6ca250033
-translation-type: tm+mt
-source-git-commit: 16ba0b12e0f70112f4c10804d0a13c278388ecc2
+feature: Calculated Metrics
+exl-id: 532e9ebb-91c7-4b29-afc5-afb99e00219b
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 2%
 
 ---
-
 
 # Hitta mätvärden
 
@@ -14,7 +16,7 @@ Beskriver de två viktigaste sätten att hitta mätvärden: sortering och filtre
 
 ## Sortering {#section_89F9C4D515084F5796F2A54D468BF6C8}
 
-När du öppnar en rapport och klickar på Metrics-ikonen ![](assets/metrics_icon.png) till vänster om en rapport för att visa måttspåret, visas fyra sorteringsalternativ i **[!UICONTROL Sort By]** listrutan Metrics Selector:
+När du öppnar en rapport och klickar på Metrisk-ikonen  ![](assets/metrics_icon.png) till vänster om en rapport för att ta upp Metrics-järnvägen, **[!UICONTROL Sort By]** i den nedrullningsbara listan i Metrics Selector visas fyra sorteringsalternativ:
 
 ![](assets/cm_sort.png)
 
@@ -45,7 +47,7 @@ När du öppnar en rapport och klickar på Metrisk-ikonen klickar du sedan på *
   </tr> 
   <tr> 
    <td colname="col1"> Visa bara de mått du har </td> 
-   <td colname="col2"><span class="uicontrol"> Andra filter</span> &gt; <span class="uicontrol"> Linje</span> </td> 
+   <td colname="col2"><span class="uicontrol"> Andra filter</span> &gt; <span class="uicontrol"> Min</span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Visa mått som delas med mig från någon annan </td> 
@@ -57,8 +59,7 @@ När du öppnar en rapport och klickar på Metrisk-ikonen klickar du sedan på *
   </tr> 
   <tr> 
    <td colname="col1"> Filtrera mätvärden för ett projekt som du arbetar med. </td> 
-   <td colname="col2">En av <span class="uicontrol"> taggarna</span>. </td> 
+   <td colname="col2">En av <span class="uicontrol"> Taggar</span>. </td> 
   </tr> 
  </tbody> 
 </table>
-

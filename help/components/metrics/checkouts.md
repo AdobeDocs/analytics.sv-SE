@@ -1,14 +1,14 @@
 ---
 title: Utcheckningar
 description: Antal träffar där en besökare påbörjade utcheckningsprocessen.
-translation-type: tm+mt
-source-git-commit: 554ced510600a4d5866e89806b058b5d2d9a3edf
+feature: Metrics
+exl-id: 747f2244-efc6-473f-bc0c-a5898cc8a717
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # Utcheckningar
 
@@ -16,4 +16,4 @@ Mätvärdet för utcheckning visar hur många gånger en besökare har påbörja
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar antalet träffar som `scCheckout` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabeln.
+Det här måttet räknar antalet träffar där `scCheckout` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.

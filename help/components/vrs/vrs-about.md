@@ -1,9 +1,9 @@
 ---
 description: Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment.
 title: Översikt över Virtual Report Suites
-uuid: 51c63c56-dd58-4c23-a997-ea6942480d22
+feature: VRS
 exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
-source-git-commit: 6a47ebc58cb36079940cfc4e5cdc80cf99c18a50
+source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 2%
@@ -14,11 +14,11 @@ ht-degree: 2%
 
 Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment.
 
-Många kunder har data som flödar in i ett globalt rapporteringsprogram, men har också data som flödar in i mindre rapporteringsprogram. De ställer in en variabel på flera rapportsviter och skickar data till mer än en rapportserie. Detta kallas *multi-suite tagging*, eller *base/parent report suites*.
+Många kunder har data som flödar in i ett globalt rapporteringsprogram, men har också data som flödar in i mindre rapporteringsprogram. De ställer in en variabel på flera rapportsviter och skickar data till mer än en rapportserie. Detta kallas *taggning för flera programsviter*, eller *bas-/överordnad rapportsviter*.
 
 Alla data kan till exempel samlas in i en rapportsserie, men sedan kan du skapa en sekundär rapportserie så att andra personer i företaget har tillgång till en del av informationen, men inte hela. Data kan delas upp efter region. Du kan ha olika webbplatser för olika länder. Andra exempel kan vara specifika varumärken som tillhör ett större företag, men som har sina egna marknadsföringsteam.
 
-Med ett *virtuellt rapportpaket* (VRS) kan du återskapa det här förgreningskonceptet med hjälp av segment i stället för flera rapportsviter. Data skickas till en rapportserie och delas sedan upp efter segment. Med hjälp av exemplet med flera varumärken kan du ange ett värde för varumärket som ett objekt tillhör. Med hjälp av segment kan du rapportera objekten som tilldelats varje säljprojekt. Var och en av dessa segment får en egen bild och skapar effektivt en ny rapportserie. Du skickar inte data specifikt till det segmentet, bara till den globala rapportsviten, men den fungerar i dina rapporter som om det vore en annan rapportserie.
+A *virtuell rapportsvit* (VRS) kan ni återskapa detta förgreningskoncept med hjälp av segment i stället för flera rapportsviter. Data skickas till en rapportserie och delas sedan upp efter segment. Med hjälp av exemplet med flera varumärken kan du ange ett värde för varumärket som ett objekt tillhör. Med hjälp av segment kan du rapportera objekten som tilldelats varje säljprojekt. Var och en av dessa segment får en egen bild och skapar effektivt en ny rapportserie. Du skickar inte data specifikt till det segmentet, bara till den globala rapportsviten, men den fungerar i dina rapporter som om det vore en annan rapportserie.
 
 En virtuell rapportsvit ärver de flesta tjänstenivåerna i basrapportsviten, som eVar, bearbetningsregler, klassificeringar osv. Följande inställningar ärvs INTE:
 
@@ -55,7 +55,7 @@ Virtuella rapportsviter har följande begränsningar:
 | Funktion | Virtual Report Suite | Taggar för flera programsviter |
 |--- |--- |--- |
 | Ger realtidsrapportering eller&quot;aktuella data&quot;-rapportering | Nej | Ja |
-| Fungerar i alla analysverktyg (Analysis Workspace, Report Builder, etc.) | Ja. **Obs!** Du kan redigera och identifiera dem som virtuella rapportsviter endast i Rapporter och analyser. Du kan dock välja dem i listrutorna för rapportsviten i de andra verktygen. | Ja |
+| Fungerar i alla analysverktyg (Analysis Workspace, Report Builder, etc.) | Ja. **Obs!** Du kan bara redigera och identifiera dem som virtuella rapportsviter i Rapporter och analyser. Du kan dock välja dem i listrutorna för rapportsviten i de andra verktygen. | Ja |
 | Kan överföra data till den (via klassificeringar, dataflöden osv.) | Nej | Ja |
 | Stöder skapande av DL-rapporter, bokmärken, instrumentpaneler, mål, aviseringar, segment, beräknade mätvärden... | Ja | Ja |
 | Kan läggas till individuellt i behörighetsgrupper | Ja | Ja |

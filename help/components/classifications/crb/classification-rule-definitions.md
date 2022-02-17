@@ -1,14 +1,12 @@
 ---
 description: Definitioner av gränssnittselement på sidorna i Klassificeringsregelbyggaren.
-subtopic: Classifications
 title: Klassificeringsregler – definitioner
-feature: Administratörsverktyg
-uuid: 77af8669-6e11-435c-9cc3-b03eb627c855
+feature: Classifications
 exl-id: 514501d1-7e1b-45da-b8fe-c68331e59dab
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 2%
+source-wordcount: '871'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +32,7 @@ På den här sidan visas reglerna i en regeluppsättning.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Välj Rapportsviter och variabler </p> </td> 
-   <td colname="col2"> <p><b>Report Suite</b> </p> <p>Rapportsviterna som regeluppsättningen gäller för. </p> <p><b>Variabel</b> </p> <p>Du kan bara använda en variabel när du skapar en klassificeringsregeluppsättning. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter. </p> <p>Obs! Du kan bara använda de variabler du har tillgång till i dina rapportsviter. Variabler visas endast i panelen <span class="wintitle"> Ny regeluppsättning</span> efter att minst en klassificering har definierats för den variabeln. </p> <p> Du kan skapa klassificeringar för en variabel i <span class="uicontrol"> Admin</span> &gt; <span class="uicontrol"> Rapportsviter</span> &gt; <span class="uicontrol"> Trafik</span> &gt; <span class="uicontrol"> Trafikklassificeringar</span> (eller <span class="uicontrol"> Konvertering</span> &gt; <span class="uicontrol"> Konverteringsklassificeringar</span> ). Markera sedan variabeln och klicka sedan på <span class="uicontrol"> Lägg till klassificering</span>. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/traffic-variables/traffic-classifications.html"  > Trafikklassificeringar</a> och <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html"  > Konverteringsklassificeringar</a> i Admin-hjälpen. </p> </td> 
+   <td colname="col2"> <p><b>Report Suite</b> </p> <p>Rapportsviterna som regeluppsättningen gäller för. </p> <p><b>Variabel</b> </p> <p>Du kan bara använda en variabel när du skapar en klassificeringsregeluppsättning. Om du vill skapa flera regeluppsättningar för en variabel måste du tillämpa varje regeluppsättning på flera rapportsviter. </p> <p>Obs! Du kan bara använda de variabler du har tillgång till i dina rapportsviter. Variabler visas i <span class="wintitle"> Ny regeluppsättning</span> bara efter att minst en klassificering har definierats för den variabeln. </p> <p> Du kan skapa klassificeringar för en variabel i <span class="uicontrol"> Administratör</span> &gt; <span class="uicontrol"> Rapportsviter</span> &gt; <span class="uicontrol"> Trafik</span> &gt; <span class="uicontrol"> Trafikklassificeringar</span> (eller <span class="uicontrol"> Konvertering</span> &gt; <span class="uicontrol"> Konverteringsklassificeringar</span>). Markera sedan variabeln och klicka sedan på <span class="uicontrol"> Lägg till klassificering</span>. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/traffic-variables/traffic-classifications.html"  > Trafikklassificeringar</a> och <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-classifications.html"  > Konverteringsklassificeringar</a> i administrationshjälpen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> Aktivera</span> </p> </td> 
@@ -46,7 +44,7 @@ På den här sidan visas reglerna i en regeluppsättning.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konfigurera rapportsviter och variabler </p> </td> 
-   <td colname="col2"> <p>Visar sidan <span class="wintitle"> Tillgängliga rapportsviter</span>, där du kan välja en eller flera tillgängliga rapportsviter att använda för alla regeluppsättningar. (Den här sidan visas också när du kör <span class="wintitle"> Klassificeringsregelverktyget</span>.) </p> <p>Den här funktionen är avsedd att minska belastningstiden för rapportsviten om du har hundratals tillgängliga rapportsviter. </p> <p>Rapportsviterna som du väljer här är tillgängliga på regelnivå när du klickar på <span class="uicontrol"> Lägg till sviter</span> när du skapar en regel. </p> <p>Obs! En rapportsvit blir bara tillgänglig <span class="term"> </span> när minst en klassificering har definierats för variabeln i <span class="wintitle"> Admin Tools</span> för rapportsviten. <p>(Se <span class="term"> Variabel</span> i <a href="/help/components/classifications/crb/classification-rule-set.md"  > Klassificeringsregeluppsättningar</a> för en förklaring av den här förutsättningen.) </p> </p> </td> 
+   <td colname="col2"> <p>Visar <span class="wintitle"> Tillgängliga rapportsviter</span> där du kan välja en eller flera tillgängliga rapportsviter att använda för alla regeluppsättningar. (Den här sidan visas också när du kör <span class="wintitle"> Klassificeringsregelverktyget</span>.) </p> <p>Den här funktionen är avsedd att minska belastningstiden för rapportsviten om du har hundratals tillgängliga rapportsviter. </p> <p>Rapportsviterna som du väljer här är tillgängliga på regelnivå när du klickar på <span class="uicontrol"> Lägg till programsviter</span> när du skapar en regel. </p> <p>Obs! En rapportsvit blir tillgänglig <span class="term"> endast</span> när rapportsviterna har minst en klassificering definierad för variabeln i <span class="wintitle"> Administratörsverktyg</span>. <p>(Se <span class="term"> Variabel</span> in <a href="/help/components/classifications/crb/classification-rule-set.md"  > Klassificeringsregeluppsättningar</a> om du vill ha en förklaring till den här förutsättningen.) </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Regler skriver över befintliga värden </p> </td> 
@@ -58,11 +56,11 @@ På den här sidan visas reglerna i en regeluppsättning.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Fönstret Lookback </p> </td> 
-   <td colname="col2"> <p>När du aktiverar och validerar regler kan du ange om reglerna ska skriva över befintliga klassificeringar för berörda nycklar. (Endast klassificerade nycklar som tidigare har skickats till <span class="keyword"> Adobe Analytics</span> inom den tidsperiod du anger påverkas.) </p> <p>Om du inte anger ett <span class="term">-fönster</span> ser reglerna tillbaka ungefär en månad (beroende på den aktuella dagen i månaden). Befintliga klassificeringar skrivs aldrig över om du inte aktiverar det här alternativet. </p> <p><b>Dev Center</b>: Partners kan skapa klassificeringsregler i  <span class="wintitle"> Dev Center</span>. Dessa regler distribueras när kunden aktiverar en integrering. I <span class="wintitle"> Dev Center</span> kan partnern med alternativet <span class="uicontrol"> Overwrite Since</span> ange om kunden kan fastställa överskrivningsvärdet när en integrering aktiveras eller redigeras. </p> <p>Mer information om regelbearbetning finns i <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Hur regler bearbetas</a>. </p> </td> 
+   <td colname="col2"> <p>När du aktiverar och validerar regler kan du ange om reglerna ska skriva över befintliga klassificeringar för berörda nycklar. (Endast klassificerade nycklar som tidigare skickats till <span class="keyword"> Adobe Analytics</span> inom den tidsperiod du anger påverkas.) </p> <p>Om du inte anger en <span class="term"> uppslagsfönster</span>, ser reglerna bakåt ungefär en månad (beroende på den aktuella dagen i månaden). Befintliga klassificeringar skrivs aldrig över om du inte aktiverar det här alternativet. </p> <p><b>Dev Center</b>: Partners kan skapa klassificeringsregler i <span class="wintitle"> Dev Center</span>. Dessa regler distribueras när kunden aktiverar en integrering. I <span class="wintitle"> Dev Center</span>, <span class="uicontrol"> Skriv över sedan</span> gör att partnern kan ange om kunden kan fastställa överskrivningsvärdet när en integrering aktiveras eller redigeras. </p> <p>Se <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Hur regler bearbetas</a> för mer information om regelbearbetning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Lägg till regel  </a> </td> 
-   <td colname="col2"> <p>Gör att du kan lägga till regler i regeluppsättningen. </p> <p>Obs!  Om ett värde matchas två gånger eller flera i en uppsättning regler, används den sista regeln för att klassificera värdet. </p> </td> 
+   <td colname="col1"> <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Lägg till regel </a> </td> 
+   <td colname="col2"> <p>Gör att du kan lägga till regler i regeluppsättningen. </p> <p>Obs! Om ett värde matchas två gånger eller flera i en uppsättning regler, används den sista regeln för att klassificera värdet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Utkast</span> </td> 
@@ -73,7 +71,7 @@ På den här sidan visas reglerna i en regeluppsättning.
    <td colname="col2"> Duplicerar (kopierar) en regeluppsättning så att du kan tillämpa regeluppsättningen på en annan variabel eller på samma variabel i en annan rapportserie. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Testregeluppsättning  </a> </p> </td> 
+   <td colname="col1"> <p> <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Testregeluppsättning </a> </p> </td> 
    <td colname="col2"> <p>Gör att du kan testa giltigheten för en regeluppsättning. </p> </td> 
   </tr> 
   <tr> 
@@ -86,7 +84,7 @@ På den här sidan visas reglerna i en regeluppsättning.
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> #</span> </td> 
-   <td colname="col2"> <p>Regelnumret. </p> <p>Mer information finns i <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Hur regler bearbetas</a>. </p> </td> 
+   <td colname="col2"> <p>Regelnumret. </p> <p>Se <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Hur regler bearbetas</a> för mer information. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Välj regeltyp</span> </td> 
@@ -95,7 +93,7 @@ På den här sidan visas reglerna i en regeluppsättning.
      <li id="li_5C702D4F460841D38A59621A5161A3BC">Börjar med </li> 
      <li id="li_8052A741D9F34A2FBC136C181600193E">Slutar med </li> 
      <li id="li_D0FA6EA4F09644FFBC9E6BC568BE80AC">Innehåller </li> 
-     <li id="li_48675FE5253942ED887C6A72D1DCEF54"> <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Reguljärt uttryck  </a> </li> 
+     <li id="li_48675FE5253942ED887C6A72D1DCEF54"> <a href="/help/components/classifications/crb/classification-quickstart-rules.md"  > Reguljärt uttryck </a> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -119,7 +117,7 @@ På den här sidan visas reglerna i en regeluppsättning.
 
 ## Sidan med reguljära uttryck {#section_C932A5469E774841B2229965A154163C}
 
-Du kan redigera reguljära uttryck på [!UICONTROL Regular Expression]-sidan.
+Du kan redigera reguljära uttryck på [!UICONTROL Regular Expression] sida.
 
 ![](assets/regex_tracking_code.png)
 
@@ -142,4 +140,4 @@ På den här sidan kan du testa regler i en uppsättning.
 | Element | Beskrivning |
 |---|---|
 | Kör test | När du testar regeluppsättningen kan du använda nycklar från rapporten för att se hur de kommer att påverkas av regeluppsättningen. |
-| Filter | Filtrerar värdena i panelen [!UICONTROL Results]. |
+| Filter | Filtrerar värdena i [!UICONTROL Results] -panelen. |

@@ -1,14 +1,14 @@
 ---
 title: Mobilvyer
 description: Avvecklade mätvärden. används inte längre.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+feature: Metrics
+exl-id: 091ea02c-d67e-484c-a7cc-7f9b1358a2f7
+source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
 
 ---
-
 
 # Mobilvyer
 

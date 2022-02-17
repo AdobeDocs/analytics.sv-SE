@@ -1,17 +1,18 @@
 ---
 title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketing Channels
 description: Uppdaterad bästa praxis för användning av marknadsföringskanaler med Attribution IQ och Customer Journey Analytics
-source-git-commit: 35bdd513bee7b01fae1916a0dc1496749752ce62
+feature: Marketing Channels
+exl-id: a0ab818d-7165-4f34-bc43-1ed8d6215800
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
-
 # Attribution IQ med marknadsföringskanaler - bästa praxis
 
-[Marketing ](/help/components/c-marketing-channels/c-getting-started-mchannel.md) Channel är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanal formulerades vid en tidpunkt när varken [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en#analysis-workspace) eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases) fanns.
+[Marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) är en värdefull och kraftfull funktion i Adobe Analytics. Den aktuella vägledningen för implementering av marknadsföringskanaler har formulerats vid en tidpunkt när varken [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en#analysis-workspace)  eller [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases) existerade.
 
 För att framtidssäkra implementeringen av era marknadsföringskanaler och säkerställa att det finns en konsekvens i rapporteringen med Attribution IQ och Customer Journey Analytics, håller vi på att ta fram en uppsättning uppdaterade metodtips. Om du redan använder marknadsföringskanaler kan du välja de bästa alternativen bland dessa nya riktlinjer. Om ni inte har använt Marketing Channels tidigare rekommenderar vi att ni följer alla nya bästa metoder.
 
@@ -21,19 +22,19 @@ Eftersom dimensionerna för marknadsföringskanalen är beroende av en tradition
 
 ## Bästa praxis nr 1: Utnyttja Attribution IQ för kontrollerad analys
 
-Vi rekommenderar att du använder [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en#analysis-workspace) i stället för den befintliga attribueringen av marknadsföringskanalen för att finjustera analysen av marknadsföringskanalen. Följ andra metodtips för att försäkra dig om att analysen är konsekvent och att den har effektiva kontroller över Attribution IQ.
+Vi rekommenderar att du använder [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en#analysis-workspace) i stället för den befintliga marknadsföringskanalattribueringen för att finjustera er analys av marknadsföringskanalen. Följ andra metodtips för att försäkra dig om att analysen är konsekvent och att den har effektiva kontroller över Attribution IQ.
 
 ![](assets/attribution.png)
 
 * Konfigurationen av dimensionerna Marketing Channel och Marketing Channel Detail fastställer kontaktytor som ska utvärderas, som motsvarar varje instans av marknadsföringskanalen.
 * Vid mätanalys bör organisationen anpassa sig till en eller flera attribueringsmodeller. Spara anpassade mätvärden med den här modellen för enkel återanvändning.
-* Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Med Attribution IQ-metriska modeller får du bättre kontroll över uppslagsfönstren och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html?lang=en#analysis-workspace).
+* Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Attribution IQ metriska modeller ger större kontroll över uppslagets fönster och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html?lang=en#analysis-workspace).
 
 ## Best Practice #2: Inga kanaldefinitioner för direkt- och sessionsuppdatering
 
 Direkta och interna uppdateringskanaler/sessioner rekommenderas inte för användning med anpassade attribueringsmodeller (Attribution IQ).
 
-Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du [skapar en klassificering](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/classifictions-mchannel.html?lang=en) för First Touch/Last Touch och låter kanalerna Direct- och Session Refresh vara oklassificerade. Den klassificerade dimensionen ger samma Attribution IQ som om kanalerna aldrig hade konfigurerats.
+Vad händer om din organisation redan har Direct- och Session Refresh konfigurerat? I det här fallet rekommenderar vi att du [skapa en klassificering](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/classifictions-mchannel.html?lang=en) för första beröring/sista beröring och lämna kanalerna för direkt och sessionsuppdatering oklassificerade. Den klassificerade dimensionen ger samma Attribution IQ som om kanalerna aldrig hade konfigurerats.
 
 ![](assets/direct-session-refresh.png)
 

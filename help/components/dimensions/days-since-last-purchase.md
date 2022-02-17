@@ -1,14 +1,14 @@
 ---
 title: Dagar sedan senaste köp
 description: Antalet dagar mellan den aktuella träffen och det senaste köpet de gjorde.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+feature: Dimensions
+exl-id: 6f0d9d79-cf40-4de3-9d9f-9b1bc57f97b6
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Dagar sedan senaste köp
 
@@ -18,8 +18,8 @@ Besökare som aldrig köpt något ingår inte i denna dimension. Dessutom kommer
 
 ## Fyll den här dimensionen med data
 
-Adobe fyller automatiskt i den här dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md) händelsen i implementeringen. Om du implementerar `purchase` händelsen på din webbplats fungerar alltid den här dimensionen.
+Adobe fyller automatiskt i dimensionen baserat på [`purchase`](/help/implement/vars/page-vars/events/event-purchase.md) i implementeringen. Om du implementerar `purchase` den här dimensionen fungerar alltid på din webbplats.
 
-## Dimensionsobjekt
+## Dimensioner
 
-Dimensionsobjekten omfattar antalet dagar mellan besökarens senaste köp och den aktuella träffen. Varje antal dagar är en separat dimensionspost där&quot;samma dag&quot; inträffar där besökarens senaste köp och den aktuella träffen inträffar samma dag.
+Dimensioner omfattar antalet dagar mellan besökarens senaste köp och den aktuella träffen. Varje antal dagar är en separat dimensionspost där&quot;samma dag&quot; inträffar där besökarens senaste köp och den aktuella träffen inträffar samma dag.

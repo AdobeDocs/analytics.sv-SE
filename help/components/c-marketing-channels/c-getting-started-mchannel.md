@@ -1,20 +1,20 @@
 ---
 title: Kom igång med marknadsföringskanaler
 description: Lär dig mer om arbetsflödet för marknadsföringskanaler, den automatiska konfigurationen och hur du tillämpar mallrapportsvitsinställningar på flera rapportsviter.
-translation-type: tm+mt
-source-git-commit: 7202a49dda7c3ef4f4b535476d3cf637b9e9f7f6
+feature: Marketing Channels
+exl-id: 35938bf9-89ab-434f-9dc2-7a65251412ef
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 2%
 
 ---
 
-
 # Kom igång med marknadsföringskanaler
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 Marknadsföringskanaler används ofta för att ge insikter om hur besökarna kommer in på er webbplats. Ni kan anpassa era regler för kanalbearbetning för marknadsföring baserat på vilka kanaler ni vill spåra och hur ni vill spåra dem.
 
@@ -35,23 +35,23 @@ Att definiera de kanaler du använder är en av de viktigaste komponenterna i ma
 
 En lista över rekommenderade kanaler finns i [Vanliga frågor och exempel](/help/components/c-marketing-channels/c-faq.md). Skapa en lista med kanaler som du vill använda, så att det blir enklare att aktivera och definiera dem när du skapar kanaler.
 
-![](assets/step2_icon.png) Lägg till marknadsföringskanaler på  [!UICONTROL Marketing Channel Manager] sidan.
+![](assets/step2_icon.png) Lägg till marknadsföringskanaler på [!UICONTROL Marketing Channel Manager] sida.
 
 När du har definierat vilka kanaler som ska spåras aktiverar du dem i **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
 Se [Kanaler och regler](/help/components/c-marketing-channels/c-channels.md) för viktig information om förutsättningar och begrepp.
 
-Se [Lägg till marknadsföringskanaler](/help/components/c-marketing-channels/c-channels.md) för proceduren.
+Se [Lägg till marknadsföringskanaler](/help/components/c-marketing-channels/c-channels.md) för förfarandet.
 
 >[!NOTE]
 >
->Om marknadsföringskanaler inte har konfigurerats tidigare visas [den automatiska konfigurationen](/help/components/c-marketing-channels/c-getting-started-mchannel.md). Den här konfigurationen innehåller flera förkonfigurerade kanaler som du kan anpassa. Adobe rekommenderar att du använder dessa regler som en mall. Om du redan har helkanalsdefinitioner kan du hoppa över den automatiska inställningen.
+>Om marknadsföringskanaler inte har konfigurerats tidigare kan [automatisk inställning](/help/components/c-marketing-channels/c-getting-started-mchannel.md) visas. Den här konfigurationen innehåller flera förkonfigurerade kanaler som du kan anpassa. Adobe rekommenderar att du använder dessa regler som en mall. Om du redan har helkanalsdefinitioner kan du hoppa över den automatiska inställningen.
 
-![](assets/step3_icon.png) Konfigurera eller förfina varje kanals regler på  [!UICONTROL Marketing Channel Processing Rules] sidan.
+![](assets/step3_icon.png) Konfigurera eller förfina varje kanals regler på [!UICONTROL Marketing Channel Processing Rules] sida.
 
-När du har skapat kanaler på sidan [!UICONTROL Marketing Channel Manager] konfigurerar du reglerna så att kanalerna kan hämta och rapportera data.
+När du har skapat kanaler på [!UICONTROL Marketing Channel Manager] konfigurerar du reglerna så att kanalerna kan hämta och rapportera data.
 
-Se [Bearbetningsregler för marknadsföringskanaler](/help/components/c-marketing-channels/c-rules.md).
+Se [Bearbetningsregler för marknadsföringskanal](/help/components/c-marketing-channels/c-rules.md).
 
 Om kanaler skapades i den automatiska konfigurationen definieras reglerna i dessa kanaler. Du kan ändra dem så att de passar dina behov.
 
@@ -62,18 +62,18 @@ Marketing Channel-rapporten innehåller en konfigurationssida som hjälper dig a
 Så här kör du den automatiska konfigurationen av marknadsföringskanalerna.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. Välj en rapportsvit på [!UICONTROL Report Suite Manager].
+1. På [!UICONTROL Report Suite Manager]väljer du en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Manager]**.
 
    ![Stegresultat](assets/wizard.png)
 
    >[!NOTE]
    >
-   >Sidan [!UICONTROL Marketing Channels: Auto Setup] visas automatiskt när du öppnar kanalkonfigurationsprogram i Admin Tools. (Se [Marketing Channel Manager](/help/components/c-marketing-channels/c-channels.md).) Den här sidan visas inte om rapportsviten innehåller en eller flera marknadsföringskanaler. Du kan inte komma åt den här sidan igen om du inte väljer en annan rapportsvit som inte innehåller marknadsföringskanaler.
+   >The [!UICONTROL Marketing Channels: Auto Setup] visas automatiskt när du öppnar kanalkonfigurationsprogram i Admin Tools. (Se [Marknadsföringskanalhanterare](/help/components/c-marketing-channels/c-channels.md).) Den här sidan visas inte om rapportsviten innehåller en eller flera marknadsföringskanaler. Du kan inte komma åt den här sidan igen om du inte väljer en annan rapportsvit som inte innehåller marknadsföringskanaler.
 
 1. Kontrollera att de kanaler som du vill skapa är markerade.
 
-   När du väljer det här alternativet är **[!UICONTROL Email]**, **[!UICONTROL Display]** och **[!UICONTROL Affiliate]** obligatoriska fält.
+   När du har valt **[!UICONTROL Email]**, **[!UICONTROL Display]** och **[!UICONTROL Affiliate]** är obligatoriska fält.
 
 1. Klicka på **[!UICONTROL Save]**.
 
@@ -87,13 +87,12 @@ Så här använder du en överordnad rapportsvit som mall för att testa konfigu
 
 1. Kontrollera att Marketing Channel-rapporten är aktiverad för valda rapportsviter. Kontohanteraren utför det här steget.
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. På sidan **[!UICONTROL Report Suite Manager]** väljer du mallrapportsviten samt en eller flera målrapportsviter.
+1. På **[!UICONTROL Report Suite Manager]** väljer du mallrapportsviten samt en eller flera målrapportsviter.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Manager]**.
-1. Välj en mallrapportsserie på **[!UICONTROL Select Master Report Suites]**-sidan.
+1. På **[!UICONTROL Select Master Report Suites]** väljer du en mallrapportsserie.
 1. Klicka på **[!UICONTROL Save All]**.
 1. Tillämpa regler från en mall på flera rapportsviter:
-   1. Gå tillbaka till sidan [!UICONTROL Report Suite Manager].
+   1. Återgå till [!UICONTROL Report Suite Manager] sida.
    1. Välj mallrapportsviten samt en eller flera målrapportsviter.
    1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Processing Rules]**.
    1. Klicka på **[!UICONTROL Save]**. Om knappen Spara är inaktiverad i det här steget kan du aktivera den genom att utöka en av reglerna.
-

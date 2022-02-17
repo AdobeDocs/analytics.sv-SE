@@ -1,14 +1,14 @@
 ---
 title: Spårningskod
 description: Namnet på spårningskoden eller kampanjen.
-translation-type: tm+mt
-source-git-commit: 178e372e63c436268a1f7028d986504983430b2f
+feature: Dimensions
+exl-id: e4f70552-6946-4974-a9e2-928faf563ecd
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 1%
 
 ---
-
 
 # Spårningskod
 
@@ -16,7 +16,7 @@ Dimensionen Spårningskod visar namnen på spårningskoderna på din webbplats. 
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`v0` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med hjälp av [`campaign`](/help/implement/vars/page-vars/campaign.md) variabeln.
+Den här dimensionen hämtar data från [`v0` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med [`campaign`](/help/implement/vars/page-vars/campaign.md) variabel.
 
 ## Dimensioner
 
@@ -38,7 +38,7 @@ Vissa användare som konfigurerar regler för bearbetning av marknadsföringskan
    3. Nästa dag skriver de in din URL i adressfältet och gör sedan ett köp.
 
    Marknadsföringskanalen för spårningskoder skulle inte få sista beröringskrediten för det köpet. Istället skulle det gå till marknadsföringskanalen&quot;Direct&quot;.
-* **Förfalloskillnader**: Marknadsföringskanalerna har en rullande 30-dagars förfallotid för besökarengagemang, oavsett om en kanal berördes eller inte. Spårningskoder har en förfallotid baserat på när variabeln angavs. Exempel:
+* **Förfallodifferenser**: Marknadsföringskanalerna har en rullande 30-dagars förfallotid för besökarengagemang, oavsett om en kanal berördes eller inte. Spårningskoder har en förfallotid baserat på när variabeln angavs. Exempel:
    1. Du har 30 dagars förfallotid för besökarengagemang och har även konfigurerat spårningskoddimensionen så att den upphör att gälla efter 30 dagar.
    2. En användare kommer till din webbplats via en spårningskod. De surfar på webbplatsen och går sedan iväg.
    3. Tre veckor senare kommer de tillbaka utan en spårningskod eller marknadsföringskanal och lämnar dem sedan igen.

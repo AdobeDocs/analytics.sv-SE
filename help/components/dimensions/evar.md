@@ -1,19 +1,20 @@
 ---
 title: eVar
 description: En anpassad dimension som du kan använda vid rapportering.
+feature: Dimensions
 exl-id: ce7cc999-281d-4c52-b64d-d44cc320ab2d
-source-git-commit: f811651dd86786a081bef25942dbb4bece54befa
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
 
 # eVar
 
-*Den här hjälpsidan beskriver hur eVars fungerar som en dimension. Mer information om hur du implementerar eVars finns i [eVars](/help/implement/vars/page-vars/evar.md) i Implementeringsanvändarhandboken.*
+*Den här hjälpsidan beskriver hur eVars fungerar som en dimension. Mer information om hur du implementerar eVars finns i [eVars](/help/implement/vars/page-vars/evar.md) i Implementeringshandboken.*
 
-Variabler är anpassade variabler som du kan använda hur du vill. Om du har ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md) blir de flesta dimensioner som är specifika för din organisation eVars. Som standard kvarstår eVars utanför den träff de är inställda på. Du kan anpassa deras förfallodatum och allokering under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i inställningarna för rapportsviten.
+Variabler är anpassade variabler som du kan använda hur du vill. Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)blir de flesta dimensioner som är specifika för din organisation [!UICONTROL eVars]. Som standard kvarstår eVars utanför den träff de är inställda på. Du kan anpassa deras förfallodatum och tilldelning under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) in [!UICONTROL Report suite settings].
 
 Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 250 eVars är tillgängligt om ditt avtal med Adobe stöder det.
 
@@ -21,13 +22,13 @@ Det (övre eller nedre) fall som används vid rapportering baseras på det förs
 
 ## Fyll i eVars med data
 
-Varje eVar samlar in data från [`v1` - `v250` frågesträngen](/help/implement/validate/query-parameters.md) i bildbegäranden. Frågesträngsparametern `v1` samlar till exempel in data för eVar1, medan frågesträngsparametern `v222` samlar in data för eVar22.
+Varje eVar samlar in data från [`v1` - `v250` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. Till exempel `v1` frågesträngsparametern samlar in data för eVar1, medan `v222` frågesträngsparametern samlar in data för eVar222.
 
 AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `eVar1` - `eVar250`. Se [eVar](/help/implement/vars/page-vars/evar.md) i Implementeringsanvändarhandboken för implementeringsriktlinjer.
 
 ## Dimensioner
 
-Eftersom eVars innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekten är för varje eVar. Se till att du registrerar syftet med varje eVar och typiska dimensionsobjekt i ett [lösningsdesigndokument](/help/implement/prepare/solution-design.md).
+Eftersom eVars innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekten är för varje eVar. Se till att du spelar in syftet med varje eVar och typiska dimensionsobjekt i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).
 
 ## Hur eVars fungerar
 
@@ -36,11 +37,11 @@ När du skickar data till Adobe Analytics översätter datainsamlingsservrar tr�
 * En standardkolumn innehåller data som skickas till Adobe från bildbegäran.
 * En post-kolumn innehåller beständiga data, vilket beror på eVar förfallodatum och allokering.
 
-Under nästan alla omständigheter används kolumnen `post_evar` i rapporter.
+Under nästan alla omständigheter `post_evar` -kolumnen används i rapporter.
 
 ### Hur eVars knyter till mätvärden
 
-Framgångshändelser och eVars definieras ofta i olika bildbegäranden. Kolumnen `post_evar` gör att eVar kan koppla sig till händelser och visa data i rapporter. Ta till exempel följande besök:
+Framgångshändelser och eVars definieras ofta i olika bildbegäranden. The `post_evar` -kolumnen tillåter att eVar binder sig till händelser och visar data i rapporter. Ta till exempel följande besök:
 
 1. En besökare kommer till din webbplats på din hemsida.
 2. De söker efter &quot;katter&quot; med hjälp av webbplatsens interna sökning. Implementeringen använder eVar1 för intern sökning.
@@ -57,11 +58,11 @@ En förenklad version av rådata skulle se ut ungefär så här:
 | `examplevisitor_987` | `Checkout` |  | `cats` | `scCheckout` |
 | `examplevisitor_987` | `Purchase confirmation` |  | `cats` | `purchase` |
 
-* Kolumnen `visitor_id` är knuten till samma besökare. I faktiska rådata avgör de sammanfogade värdena `visid_high` och `visid_low` besökar-ID.
-* Kolumnen `pagename` fyller siddimensionen.
-* Kolumnen `evar` avgör antalet träffar när eVar1 angavs explicit.
-* `post_evar1` har det föregående värdet, beroende på variabelns allokering och förfallodatum som anges under rapportsvitens inställningar.
-* Kolumnen `event_list` innehåller alla måttdata. I det här exemplet är `event1` &#39;Sökningar&#39; och de andra händelserna är standardvärden för kundvagn. I faktiska rådata innehåller `event_list` en kommaavgränsad siduppsättning med en uppslagstabell som kopplar dessa siffror till ett mätvärde.
+* The `visitor_id` länkar träffar på samma besökare. I faktiska rådata är de sammanfogade värdena för `visid_high` och `visid_low` fastställa besökar-ID.
+* The `pagename` kolumnen fyller i siddimensionen.
+* The `evar` -kolumnen avgör träffar när eVar1 angavs explicit.
+* The `post_evar1` har det föregående värdet, beroende på variabelns allokering och förfallodatum som anges i rapportsvitens inställningar.
+* The `event_list` -kolumnen innehåller alla måttdata. I det här exemplet `event1` är &quot;Sökningar&quot;, och de andra händelserna är standardvärden för kundvagn. I faktiska rådata `event_list` innehåller en kommaavgränsad siduppsättning med en uppslagstabell som kopplar dessa siffror till ett mätvärde.
 
 ### Översätta datainsamling till rapportering
 
@@ -73,24 +74,24 @@ Verktyg i Adobe Analytics, t.ex. Analysis Workspace, arbetar med dessa insamlade
 
 Analysis Workspace hämtar denna rapport med hjälp av följande logik:
 
-* Titta igenom alla `event_list`-värden och välj ut alla träffar med `purchase` i dem.
-* Visa `post_evar1`-värdet av dessa träffar.
+* Se igenom alla `event_list` och plocka ut alla träffar med `purchase` i dem.
+* Visa `post_evar1` värde.
 
 ### Betydelsen av tilldelning och förfallodatum
 
 Eftersom allokering och förfallodatum avgör vilka värden som kvarstår är de avgörande för att få ut så mycket som möjligt av en analysimplementering. Adobe rekommenderar starkt att du diskuterar inom organisationen hur flera värden för varje eVar hanteras (allokering) och när eVars stoppar beständiga data (förfallodatum).
 
 * Som standard använder en eVar den senaste tilldelningen. Nya värden skriver över beständiga värden.
-* Som standard används en besöksförfallotid i en eVar. När ett besök avslutas slutar värdena att kopieras från rad till rad i `post_evar`-kolumnen.
+* Som standard används en besöksförfallotid i en eVar. När besöket är slut slutar värdena att kopieras från rad till rad i dialogrutan `post_evar` kolumn.
 
-Du kan ändra eVar allokering och förfallodatum under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i inställningarna för rapportsviten.
+Du kan ändra eVar allokering och förfallodatum under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar.
 
 ## Värdet av eVars över props
 
 Adobe rekommenderar att eVars används i de flesta fall, vilket stöds av följande:
 
 * eVars har en gräns på 255 byte i rapporter. Props har en gräns på 100 byte.
-* Som standard kvarstår inte uttryck efter den träff de ställs in. eVars har en anpassad förfallotid, vilket gör att du kan avgöra när en eVar inte längre får kredit för en efterföljande händelse. Om du använder [rapporttidsbearbetning](/help/components/vrs/vrs-report-time-processing.md) kan både props och eVars använda en anpassad attribueringsmodell.
+* Som standard kvarstår inte uttryck efter den träff de ställs in. eVars har en anpassad förfallotid, vilket gör att du kan avgöra när en eVar inte längre får kredit för en efterföljande händelse. Om du använder [bearbeta rapporttid](/help/components/vrs/vrs-report-time-processing.md)kan både props och eVars använda en anpassad attribueringsmodell.
 * Adobe stöder upp till 250 eVars och endast 75 props.
 
 Se [prop](prop.md) för fler jämförelser mellan utkast och eVars.

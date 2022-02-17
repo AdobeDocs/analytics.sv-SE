@@ -2,13 +2,11 @@
 description: Lär dig hur du anger förfallodatum för besökarengagemang i marknadsföringskanaler.
 subtopic: Marketing channels
 title: Utgångsdatum för marknadsföringskanal
-feature: Rapporter och analysgrunder
-uuid: 47f1ccaf-3ce7-494d-b456-956a3a3c6c9a
+feature: Marketing Channels
 exl-id: a9df659b-3b6a-4bdb-bd77-f4490d2b7c79
-translation-type: tm+mt
-source-git-commit: 7202a49dda7c3ef4f4b535476d3cf637b9e9f7f6
+source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 Lär dig hur du anger förfallotiden, eller besökarengagemangsperioden, för marknadsföringskanaler.
 
@@ -46,7 +44,7 @@ Förfallotid:
 Ange besökarens anställningsperiod.
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-2. I [!UICONTROL Report Suite Manager] klickar du på **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
+2. I [!UICONTROL Report Suite Manager], klicka **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
 
    ![](assets/mchannel_expiration.png)
 
