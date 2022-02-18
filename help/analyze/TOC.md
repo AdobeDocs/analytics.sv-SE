@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Innehåller instruktioner för Analysis Workspace, det främsta analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: c68ab53242328702fb5a0ad9f1e28aafc6fb119b
+source-git-commit: 3cb991e7f440a72247b7261ad5959e15619e8a76
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1035'
 ht-degree: 81%
 
 ---
@@ -92,6 +92,7 @@ ht-degree: 81%
       + [Panelen Attribution](analysis-workspace/c-panels/attribution.md)
       + [Tom panel](analysis-workspace/c-panels/blank-panel.md)
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
+      + [Panelen Mediegenomsnitt för miniatyrmålgrupp](analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Panelen för samtidiga medieanvändare](analysis-workspace/c-panels/media-concurrent-viewers.md)
       + Medieuppspelningstid tillagd {#media-playback-timespent}
          + [Översikt](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)

@@ -4,9 +4,9 @@ title: Översikt över paneler
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: 324ee0f5839442ba1575b65a1159a23bed7129b4
+source-git-commit: ca1ca90c5b40ef89db14741bca826d7a57be44c6
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1071'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,9 @@ Följande paneltyper är tillgängliga i Analysis Workspace:
 | [Analyser för målpanelen](a4t-panel.md) | Analysera Target-aktiviteter och -upplevelser i Analysis Workspace. |
 | [Panelen Attribution](attribution.md) | Jämför och visualisera snabbt valfritt antal attribueringsmodeller med alla mått och konverteringsvärden. |
 | [Frihandspanel](freeform-panel.md) | Utför obegränsade jämförelser och uppdelningar och lägg sedan till visualiseringar för att berätta en utförlig databerättelse. |
+| [Panelen Mediegenomsnitt för miniatyrmålgrupp](average-minute-audience-panel.md) | Analysera den genomsnittliga minuten-publiken över tiden, med information om toppvyer och möjlighet att dela upp och jämföra. |
 | [Panelen för samtidiga medieanvändare](media-concurrent-viewers.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
+| [Panelen Medieuppspelning - tidsfördröjning](media-playback-timespent/media-playback-time-spent.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
 | [Segmentjämförelsepanel](c-segment-comparison/segment-comparison.md) | Jämför snabbt två segment över alla datapunkter för att automatiskt hitta relevanta skillnader. |
 
 ![](assets/panel-overview.png)
@@ -68,7 +70,7 @@ Dra och släpp ett segment från den vänstra listen i panelens släppzon för a
 
 Komponenter som inte är segmentkomponenter kan också dras direkt till släppzonen för att skapa ad hoc-segment, vilket sparar tid och arbete med att gå till segmentbyggaren. Segment som skapas på det här sättet definieras automatiskt som träffnivåsegment. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
 
-Ad-hoc-segment är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
+Ad hoc-segment är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
 
 ![](assets/adhoc-segment-filter.png)
 
