@@ -2,11 +2,11 @@
 description: Svar på frågor du kan ha när du implementerar Audience Analytics.
 solution: Experience Cloud
 title: Vanliga frågor
-uuid: 9dfc8f19-f9b2-4c2e-bff9-3d91cfe01bca
+feature: Audience Analytics
 exl-id: 86e7967c-030c-44d6-8294-e7e6d41f6fc3
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
    <td colname="col2"> 
     <ul id="ul_71E0ECD5981D4B65BCDA065BE07A43AA"> 
      <li id="li_F8FF61A4D7B54BA39DAA6F28DB51D749">Om du har e-post/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. </li> 
-     <li id="li_57A8B4C7BB784FFCBC1DC363B35D9FF7">Om ditt land anser att IP-adressen är PII, <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html"  >, aktiverar du IP-obehörig </a>. </li> 
+     <li id="li_57A8B4C7BB784FFCBC1DC363B35D9FF7">Om ditt land anser att IP-adressen är PII, <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html"  > aktivera IP-förvrängning </a>. </li> 
      <li id="li_C7AA02B831AE47A59E783623126A7789">Tala med er Analytics Admin för att se vad ni samlar in. </li> 
      <li id="li_F6AAE868141E486AB8CAB291BD8EDB71">Tala med er juridiska avdelning för att se vad de anser vara PII. </li> 
     </ul> </td> 
@@ -54,8 +54,8 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
    <td colname="col2"> <p>Det kan ta flera timmar att fylla i rapportsviterna med nya data. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Jag har skapat ett nytt Analytics-mål, men det visas inte i avsnittet Destination Mappings i mina tillgängliga segment. Vart gick den destinationen eller hur hittar jag den?</b> </p> </td> 
-   <td colname="col2"> <p>Ett Analytics-mål tas bort från segmentets målmappningsavsnitt när du väljer alternativet <span class="uicontrol"> Mappa automatiskt alla aktuella och framtida segment </span> i <span class="uicontrol"> segmentmappningar </span>. </p> <p><img placement="break" align="left"  src="assets/auto-mapping.png" id="image_670ED5A306784FCBA8A0B336AC1F0FC6" width="300px" /> </p> <p>Om du vill förhindra detta väljer du <span class="uicontrol"> Mappa segment manuellt </span> i stället för det automatiska alternativet. </p> </td> 
+   <td colname="col1"> <p><b>F: Jag har skapat ett nytt Analytics-mål, men det visas inte i avsnittet Destination Mappings i mina tillgängliga segment. Vart tog den vägen eller hur hittar jag den?</b> </p> </td> 
+   <td colname="col2"> <p>Ett Analytics-mål tas bort från ett segments målmappningsavsnitt när du väljer <span class="uicontrol"> Mappa automatiskt alla aktuella och framtida segment </span> alternativ i <span class="uicontrol"> Segmentmappningar </span>. </p> <p><img placement="break" align="left"  src="assets/auto-mapping.png" id="image_670ED5A306784FCBA8A0B336AC1F0FC6" width="300px" /> </p> <p>Om du vill förhindra detta väljer du <span class="uicontrol"> Mappa segment manuellt </span> i stället för det automatiska alternativet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>F: Får jag all information från AAM i Analytics?</b> </p> </td> 
@@ -101,8 +101,8 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Varför ser jag"Målgruppsgräns nådd" i min Analytics-rapport? (Obs! this representeras också som Audience ID = -1 och "::max_audiences_Over:::" i Data warehouse)</b> </p> </td> 
-   <td colname="col2"> <p>Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för AAM. Om en besökare tillhör mer än 150 AAM segment i en enda träff skickas <b>150 senast kvalificerade segment</b> till Analytics, medan den återstående listan trunkeras. </p> <p>En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som"Målgräns nådd" i dimensionen Målgruppsnamn och"-1" i dimensionen Målgrupps-ID. </p> <p>Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever"Målgruppsgräns nådd" i din rapportering har du två alternativ: </p> 
+   <td colname="col1"> <p><b>F: Varför ser jag"Målgruppsgräns nådd" i min Analytics-rapport? (Obs! this kommer också att representeras som Audience ID = -1 och "::max_audiences_exceeded::" i Data warehouse)</b> </p> </td> 
+   <td colname="col2"> <p>Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för AAM. Om en besökare tillhör mer än 150 AAM segment i en enda träff visas <b>150 senast kvalificerade segment</b> skickas till Analytics, medan den återstående listan trunkeras. </p> <p>En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som"Målgräns nådd" i dimensionen Målgruppsnamn och"-1" i dimensionen Målgrupps-ID. </p> <p>Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever"Målgruppsgräns nådd" i din rapportering har du två alternativ: </p> 
     <ul id="ul_8E290B2E32DC49738F6FD00CB0CE2BBB"> 
      <li id="li_12F498981EA949B5BCBD40ECC954C339"><b>Alternativ 1</b>: Fortsätt att låta integreringen fungera i det färdiga läget och skicka de 150 senast kvalificerade segmenten för en viss besökare. </li> 
      <li id="li_CA4D5747AA4A4452929097807B604959"><b>Alternativ 2</b>: I AAM väljer du de 150 segment som är viktigast för ditt företag för integreringen. AAM kontrollerar sedan besökarna mot endast dessa 150 segment. Nackdelen med detta är att ni bara får dessa 150 segment över alla besökare. Å andra sidan kan alternativ 1-metoden leverera ett obegränsat antal segment på grund av integreringens per-träfftyp. </li> 
@@ -130,7 +130,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
  </tbody> 
 </table>
 
-Fler vanliga frågor om det här avsnittet finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/admin/c-server-side-forwarding/ssf-faq.md).
+Mer information om vanliga frågor om detta avsnitt finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/admin/c-server-side-forwarding/ssf-faq.md).
 
 ## Allmänna frågor och svar {#section_E55410BBFB624AAFB87ADCF7F036DDA3}
 

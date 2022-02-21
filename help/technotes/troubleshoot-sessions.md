@@ -1,8 +1,9 @@
 ---
 title: Felsöka sessioner i Adobe Analytics
 description: Lär dig hur du löser problem med utloggning från Adobe Analytics.
+feature: Analytics Basics
 exl-id: 191250ef-8313-47be-9717-046cce870998
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Felsöka sessioner i Adobe Analytics
 
-Den här sidan handlar om felsökningssessioner, vilket innebär att du kan logga in utan att behöva logga in. Om du har problem med att logga in på Adobe Analytics kan du läsa [Felsöka inloggning på Adobe Analytics](troubleshoot-login.md).
+Den här sidan handlar om felsökningssessioner, vilket innebär att du kan logga in utan att behöva logga in. Om du har problem med att logga in på Adobe Analytics finns mer information i [Felsöka inloggning på Adobe Analytics](troubleshoot-login.md).
 
 Nästan alla sessionsbaserade problem kommer från en organisations anpassade företagsnätverk. Om du kan logga in på Adobe Analytics men inte kan vara inloggad kan du använda den här artikeln för att fastställa orsaken.
 

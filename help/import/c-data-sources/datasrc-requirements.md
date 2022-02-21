@@ -3,9 +3,9 @@ description: Information om kraven för rapportsviten innan du använder datakä
 subtopic: Data sources
 title: Krav och överföringsgränser
 topic-fix: Developer and implementation
-uuid: d79fca77-fa0e-4171-b978-cdee5c67d9df
+feature: Data Sources
 exl-id: 97a7cc65-f99a-4227-94f2-6f428ebdfad3
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 1%
@@ -34,9 +34,9 @@ I följande avsnitt visas begränsningar som gäller för datakällor och data s
 * Endast data med aktuella eller tidigare datum kan importeras. Försök inte använda framtida datum i dina datakällsdata.
 * Alla rader måste ha ett angivet datum för att rapportdiagramfunktioner ska kunna aktiveras. Om en rad inte innehåller något datum genererar datakällor ett fel och avvisar filen. Datum-/tidsformatet varierar beroende på datakälltyp:
 
-   * **Datakällor** med fullständig bearbetning: Använd ISO 8601-datumformatet för  `YYYY-MM-DDThh:mm:ss±UTC_offset` (till exempel  `2013-09-01T12:00:00-07:00`) eller Unix-tidsformat (antalet sekunder som gått sedan 1 januari 1970).
+   * **Datakällor med fullständig bearbetning**: Använd datumformatet ISO 8601 för `YYYY-MM-DDThh:mm:ss±UTC_offset` (t.ex. `2013-09-01T12:00:00-07:00`) eller Unix Time Format (antalet sekunder som gått sedan 1 januari 1970).
 
-   * **Standarddatakällor och integreringsdatakällor**: Använd följande datumformat:  `MM/DD/YYYY/HH/mm/SS` (till exempel  `01/01/2013/06/00/00`)
+   * **Standarddatakällor och integreringsdatakällor**: Använd följande datumformat: `MM/DD/YYYY/HH/mm/SS` (t.ex. `01/01/2013/06/00/00`)
 
 ## Allmänt {#section_1CD337F660484ABDB7D8CAE96FF46ACF}
 
@@ -59,7 +59,7 @@ Datakällor har stöd för multibyte-kodning. Datakällor försöker identifiera
  <tbody> 
   <tr> 
    <td colname="col1"> UTF-8 </td> 
-   <td colname="col2"> <p>Stöds. Rapportsviten som används med datakällor måste ha stöd för flera byte-tecken aktiverat. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html"  > New Report Suite</a> i hjälpen </p> </td> 
+   <td colname="col2"> <p>Stöds. Rapportsviten som används med datakällor måste ha stöd för flera byte-tecken aktiverat. </p> <p>Se <a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html"  > Ny rapportsvit</a> i hjälpen </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> UTF-8 med byteordningsmärke (EF BB BF) </td> 
@@ -86,7 +86,7 @@ Datakällor har stöd för multibyte-kodning. Datakällor försöker identifiera
 
 Om du skickar en UTF-8- eller ISO-8859-1-fil och rapportsviten inte har konfigurerats för att stödja den händer något av följande:
 
-* Felet upptäcktes under konverteringen. I så fall visas ett meddelande som &quot;Hittade ett felaktigt tecken i filen vid position 18 när du konverterade från UTF-8 till ISO-8859-1&quot;.
+* Felet upptäcktes under konverteringen. I så fall visas ett meddelande som &quot;Hittade ett felaktigt tecken i filen vid position 18 när UTF-8 konverterades till ISO-8859-1&quot;.
 * Filen bearbetas utan fel, men du ser förvrängda data i rapporten.
 
 ## Överför webbloggfiler {#section_DD736FC971FE45C89AB310BEDC1FE707}

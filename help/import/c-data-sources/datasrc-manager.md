@@ -3,9 +3,9 @@ description: Skapa, hantera och visa användningen av datakällor i en rapportse
 subtopic: Data sources
 title: Data Sources Manager
 topic-fix: Developer and implementation
-uuid: ccfa4a1c-7c56-421b-8ee6-a42b334659b1
+feature: Data Sources
 exl-id: a63137b8-deeb-4865-9be9-322416b00186
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Skapa, hantera och visa användningen av datakällor i en rapportserie.
 
 ## Skapa flik {#section_74603FDA3D8842E49F1A51624A06DE20}
 
-På fliken [!UICONTROL Create] kan du konfigurera en ny datakälla för den aktuella rapportsviten. När du aktiverar en datakälla vägleder [!UICONTROL Data Sources Wizard] dig genom processen att skapa en mall för datakällor och skapar en FTP-plats för överföring av data.
+The [!UICONTROL Create] Med -fliken kan du konfigurera en ny datakälla för den valda rapportsviten. När du aktiverar en datakälla [!UICONTROL Data Sources Wizard] hjälper dig genom processen att skapa en mall för datakällor och skapar en FTP-plats för överföring av data.
 
 Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas. Se [Generera en importfilsmall](/help/import/c-data-sources/datasrc-template/t-datasrc-creating-data-sources-file.md).
 
@@ -36,11 +36,11 @@ Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Starta om bearbetningen </p> </td> 
-   <td colname="col2"> <p>Startar om bearbetning av datakälla som tidigare avbröts på grund av fel eller varningar. Bearbetningen fortsätter tills nästa fel påträffas. Datakällor avbryter endast bearbetning av en datakällfil när du väljer <span class="uicontrol"> Avbryt bearbetning vid fel</span>. </p> </td> 
+   <td colname="col2"> <p>Startar om bearbetning av datakälla som tidigare avbröts på grund av fel eller varningar. Bearbetningen fortsätter tills nästa fel påträffas. Datakällor avbryter bearbetningen av en datakällfil endast när du väljer <span class="uicontrol"> Avbryt bearbetning vid fel</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Slutför bearbetning </p> </td> 
-   <td colname="col2"> <p>Instruerar datakällor att stänga alla öppna besök i filen och slutföra bearbetningen av datakällfilen som om den är slutförd. Detta är användbart när du har besök som spänner över flera datakällfiler. Detta gäller endast för <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning</a>. </p> </td> 
+   <td colname="col2"> <p>Instruerar datakällor att stänga alla öppna besök i filen och slutföra bearbetningen av datakällfilen som om den är slutförd. Detta är användbart när du har besök som spänner över flera datakällfiler. Detta gäller endast <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Inaktivera </p> </td> 
@@ -48,7 +48,7 @@ Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas
   </tr> 
   <tr> 
    <td colname="col1"> <p>Stoppa bearbetning av fel/varningar </p> </td> 
-   <td colname="col2"> <p> Instruerar bearbetningsmotorn för datakällor att avbryta bearbetningen när ett fel påträffas. Datakällan återupptar inte bearbetningen förrän du väljer Starta om bearbetning. Alternativet Stoppa bearbetning på varningar gäller endast för <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning</a>. </p> <p>När datakällor påträffar ett filfel får du ett meddelande om felet. Systemet flyttar datakällfilen med felet till en mapp med namnet <span class="filepath"> files_with_errors</span> på FTP-servern. När du har löst problemet skickar du datakällfilen igen för bearbetning. </p> </td> 
+   <td colname="col2"> <p> Instruerar bearbetningsmotorn för datakällor att avbryta bearbetningen när ett fel påträffas. Datakällan återupptar inte bearbetningen förrän du väljer Starta om bearbetning. Alternativet Stoppa bearbetning vid varningar gäller endast för <a href="/help/import/c-data-sources/c-datasrc-types/datasrc-full-processing.md"   > Fullständig bearbetning</a>. </p> <p>När datakällor påträffar ett filfel får du ett meddelande om felet. Systemet flyttar datakällfilen med felet till en mapp med namnet <span class="filepath"> files_with_errors</span> på FTP-servern. När du har löst problemet skickar du datakällfilen igen för bearbetning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konfigurera </p> </td> 
@@ -66,7 +66,7 @@ Det du väljer på fliken Skapa avgör vilka inledande fält i mallen som skapas
    <td colname="col1"> <p>Status </p> </td> 
    <td colname="col2"> <p> Filens aktuella status. Möjliga statusvärden är: </p> 
     <ul id="ul_56A0BF8C1BE249F6BB39B0D11DA3997F"> 
-     <li id="li_BAB359E08EDE4E0298C0362258789603">I kö (steg 1 av 3): Filen finns, men bearbetningen har inte påbörjats. Om filen inte visas inom 30 minuter kontrollerar du att den associerade <span class="filepath"> .fin</span>-filen finns </li> 
+     <li id="li_BAB359E08EDE4E0298C0362258789603">I kö (steg 1 av 3): Filen finns, men bearbetningen har inte påbörjats. Om filen inte visas inom 30 minuter kontrollerar du att den associerade <span class="filepath"> .fin</span> filen finns </li> 
      <li id="li_A09A14F42CB74F01B694799740B3DA17">Förberedelse (steg 2 av 3): Filen genomsöks efter fel eller varningar </li> 
      <li id="li_793FDCDB64CF434D82CAF5B6E9BDE557">Bearbetning (steg 3 av 3): Filen bearbetas </li> 
      <li id="li_1D8C4B241FF0453EAF7DDFD8354C5573">Misslyckades: Filen bearbetades inte på grund av fel </li> 

@@ -1,15 +1,14 @@
 ---
 description: Hantera konton i Advertising Analytics.
 title: Hantera annonskonton
-uuid: 0b205046-2eb5-4cd6-be62-cdf716fe934e
-translation-type: tm+mt
-source-git-commit: 5d8032a9806836e7d0ecbd7fa3652ed1fd137e89
+feature: Advertising Analytics
+exl-id: fe75cd3d-aa84-414a-a9d1-c2ab25def575
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 7%
 
 ---
-
 
 # Hantera annonskonton
 
@@ -27,11 +26,11 @@ Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** 
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>Åtgärder</b> </p> </td> 
-   <td colname="col2"> <p><b>Obs! Åtgärder visas bara om du har valt minst ett annonskonto.  </b> </p> </td> 
+   <td colname="col2"> <p><b>Obs! Åtgärder visas bara om du har valt minst ett annonskonto. </b> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>+ Lägg till </p> </td> 
-   <td colname="col2"> <p>Tar dig till gränssnittet <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md"  > Set Up Advertising Account</a>. </p> </td> 
+   <td colname="col2"> <p>Tar dig till <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md"  > Konfigurera annonskonto</a> Gränssnitt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Byt namn </p> </td> 
@@ -63,7 +62,7 @@ Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Konto </p> </td> 
-   <td colname="col2"> <p>Visar en av de två kontotyper som stöds: Google Adwords eller Bing Ads. </p> </td> 
+   <td colname="col2"> <p>Visar en av de två kontotyper som stöds: Google Adwords or Bing Ads. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Status </p> </td> 
@@ -79,4 +78,3 @@ Du kommer åt hanteringsgränssnittet genom att gå till **[!UICONTROL Admin]** 
   </tr> 
  </tbody> 
 </table>
-

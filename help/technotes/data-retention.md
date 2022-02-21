@@ -1,8 +1,9 @@
 ---
 title: Datalagringspolicy
 description: En datalagringspolicy avgör hur länge Adobe lagrar dina data.
+feature: Privacy
 exl-id: f3bb02d2-380d-4eb7-8449-e0318fc8c0a6
-source-git-commit: 879a51fd03c97316591639889d3fff4d22a9eb4c
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%

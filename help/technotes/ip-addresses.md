@@ -1,8 +1,9 @@
 ---
 title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
+feature: Data Configuration and Collection
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: 881d78ef8f6ca5422e286f8cc472ea03a52b1068
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
@@ -108,11 +109,11 @@ Om din organisation föredrar att tillåta specifika IP-adressintervall kan du a
 | Virginia | `130.248.144.0/22` |
 | Virginia | `172.82.204.0/22` |
 | Virginia | `172.82.212.0/22` |
-| Virginia | Se AWS-värdar |
+| Virginia | Se AWS Hosts |
 
 ## AWS-värdar
 
-Adobe Analytics använder Amazon Web Services som en del av datainsamlingsprocessen. Följande tabell innehåller AWS-värdar som är reserverade för Adobe. Dessa värdar **ingår inte** i det aggregerade blockintervallet ovan.
+Adobe Analytics använder Amazon Web Services som en del av sin datainsamlingsprocess. Följande tabell innehåller AWS-värdar som är reserverade för Adobe. Värdarna är **not** ingår i det aggregerade blockområdet ovan.
 
 | Plats | Värd |
 | --- | --- |

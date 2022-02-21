@@ -3,9 +3,9 @@ description: Datakällor erbjuder två ytterligare sätt att integrera händelse
 subtopic: Data sources
 title: Transaktions- och kundintegrering
 topic-fix: Developer and implementation
-uuid: 71f73a47-3436-4314-a182-36de4bd935ba
+feature: Data Sources
 exl-id: d4e4388b-6449-4fef-a94d-01b3a52c2190
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 2%
@@ -26,7 +26,7 @@ Dessa integreringar kopplar offlinedata till en specifik onlinetransaktion eller
 
 Transaktions-ID kan aktiveras/inaktiveras från användargränssnittet utan att ClientCare behöver aktiveras:
 
-Gå till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > Välj rapportsvit > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL General Account Settings]**.
+Gå till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > Välj rapportserie > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL General Account Settings]**.
 
 <!-- 
 
@@ -42,13 +42,13 @@ Om du vill se om registrering av transaktions-ID är aktiverat går du till **[!
 
 ![](assets/transaction-ID-recording-active.png)
 
-Fliken [!UICONTROL Manage] visar status för registrering av transaktions-ID.
+The [!UICONTROL Manage] fliken visar status för registrering av transaktions-ID.
 
 ## Kundintegrering {#section_9F4AAD710D2543BDA834090A98115FBF}
 
 Kund-ID:n används för att ange en kunds offlineaktivitet och koppla den till onlineaktiviteten. Dessa bör användas när:
 
-* Ett kund-ID fylls i i variabeln *`visitorID`*.
+* Ett kund-ID fylls i i *`visitorID`* variabel.
 * Det finns ingen plats där kundaktiviteten flyttas offline, som att skicka eller köpa leads.
 
 Information om hur du konfigurerar den här typen av datakälla finns i [Besökar-ID](/help/import/c-data-sources/c-datasrc-types/datasrc-visitorid.md)

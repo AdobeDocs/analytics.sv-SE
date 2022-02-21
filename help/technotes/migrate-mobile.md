@@ -1,14 +1,14 @@
 ---
 description: Lär dig hur du migrerar bearbetningsregler för mobila tjänster till Adobe Analytics
 title: Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
-translation-type: tm+mt
-source-git-commit: d6601640d06f65dd1ddd09cb9bde0267df20eec3
+feature: Processing Rules
+exl-id: ea183c1a-a85e-4f4e-a7f6-f947b939e9d9
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 0%
 
 ---
-
 
 # Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
 
@@ -24,9 +24,9 @@ Om ni använder mobiltjänster för kostnadsfria funktioner som bearbetningsregl
 
 Men om du skapar ytterligare bearbetningsregler i gränssnittet för mobila tjänster (utöver Lifecycle Metrics) bör du migrera dem så att du kan redigera/ta bort dem i Analytics när du har förlorat åtkomsten till Mobile Services.
 
-1. Logga in på `experience.adobe.com` och gå till Mobiltjänster.
+1. Logga in på `experience.adobe.com` och går till Mobiltjänster.
 1. Klicka på kugghjulsikonen för en mobilapp vars kontextvariabelmappningar du vill migrera till Adobe Analytics.
-1. Klicka på **[!UICONTROL Manage Variables and Metrics]** menyalternativet och sedan på **[!UICONTROL Custom Variables]** fliken. Här ser du vilka kontextvariabelmappningar (kontextdata) som har lagts till i konfigurationen. Anteckna dessa konfigurationer (eller ta en skärmbild). Exempel:
+1. Klicka på **[!UICONTROL Manage Variables and Metrics]** menyalternativet och klicka sedan på **[!UICONTROL Custom Variables]** -fliken. Här ser du vilka kontextvariabelmappningar (kontextdata) som har lagts till i konfigurationen. Anteckna dessa konfigurationer (eller ta en skärmbild). Exempel:
 
    ![Kontextvariabel](assets/context-var.png)
 
@@ -58,9 +58,9 @@ Här är ett utdrag från mallen Mobile App Usage:
 
 Så här kommer du åt mallarna:
 
-1. Logga in på `experience.adobe.com` och välj Analytics.
+1. Logga in på `experience.adobe.com` och väljer Analytics.
 1. Se till att du har en rapportsserie som är aktiverad för mobiltjänster.
-1. Klicka på **[!UICONTROL Workspace]** fliken.
+1. Klicka på **[!UICONTROL Workspace]** -fliken.
 1. Klicka på **[!UICONTROL Create New Project]**.
 1. Välj någon av mobilmallarna och klicka på **[!UICONTROL Create]**.
 
@@ -77,4 +77,4 @@ Om du använder mobiltjänster för betalfunktionalitet har du inte någon genom
 
 * För värvningslänkar kan vi hänvisa dig till Adobe Partners för att tillgodose dina behov.
 * Push Messaging och In-app Messaging är tillgängliga i Adobe Campaign Standard och Adobe Campaign Classic (endast push). Den underliggande datauppsättning som används för målinriktning är dock annorlunda. Vi föreslår att du samarbetar med ditt Adobe-kontoteam för att fastställa migreringsalternativ för meddelandedata.
-* För platsfunktioner rekommenderar vi att du använder den nya [Adobe Experience Platform Location Service](https://www.adobe.com/experience-platform/location-service.html), som är kostnadsfri för alla AEP-kunder.
+* För platsfunktioner rekommenderar vi att du använder den nya [Adobe Experience Platform Location Service](https://www.adobe.com/experience-platform/location-service.html), vilket är kostnadsfritt för alla AEP-kunder.

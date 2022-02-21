@@ -1,8 +1,9 @@
 ---
 description: Information om referensarkitekturen, ​ riktlinjer, konfigurationssteg och tester som implementeringsspecialister måste följa när de integrerar Adobe Analytics med Adobe Campaign.
 title: Integrera Analytics med Adobe Campaign
+feature: Campaign Integration
 exl-id: 7079bbaf-5110-4068-bf66-c4a5a625c9ee
-source-git-commit: 58bb3ab5787de893917c95946266088ccd1f00d4
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%

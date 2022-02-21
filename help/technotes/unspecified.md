@@ -1,14 +1,14 @@
 ---
 description: Olika rapporter i Adobe Analytics kan visa Ospecificerad, Ingen, Annan eller Okänd, beroende på vilken rapport som visas. I allmänhet innebär det här radobjektet att variabeln inte var definierad eller på annat sätt otillgänglig.
 title: Ospecificerad, Ingen, Annan och Okänd vid rapportering
-translation-type: tm+mt
-source-git-commit: fc54cb27f365015b6c7716d68bfc4cbe80b40b8b
+feature: Analytics Basics
+exl-id: 35451239-91f3-400a-981e-8c3fbc0e4185
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
 
 ---
-
 
 # &quot;Ospecificerad&quot;, &quot;Ingen&quot;, &quot;Annan&quot; och &quot;Okänd&quot; vid rapportering
 
@@ -41,4 +41,4 @@ Olika rapporter i Adobe Analytics kan visa &quot;Ospecificerad&quot;, &quot;Anna
 
 I de flesta fall är det säkert att ignorera dessa radobjekt. Du kan använda sökfiltret för att ta bort dem om du vill.
 
-Vissa backend-datavariabler använder värdet `::unspecified::` vid rapportering, men det visas inte i gränssnittet. Om ett sökfilter inte kan exkludera data kan du prova att använda det här värdet (inklusive kolonerna).
+Vissa datavariabler använder värdet `::unspecified::` i rapporter, även om de inte visas i gränssnittet. Om ett sökfilter inte kan exkludera data kan du prova att använda det här värdet (inklusive kolonerna).

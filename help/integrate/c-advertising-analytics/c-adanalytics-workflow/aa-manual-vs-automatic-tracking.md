@@ -1,8 +1,9 @@
 ---
 description: Spårning avgör hur sökmotordata spåras av din Adobe Analytics-implementering. Detta är ett nödvändigt steg för att utöka Adobe Analytics data med sökmotordata.
 title: Spåra manuellt läge och automatiskt läge
+feature: Advertising Analytics
 exl-id: 3e2ed26f-dfb2-43ea-8eb6-e332cd10fb29
-source-git-commit: 734eb409e7a433147c3536cebc571b38f87ce716
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -27,12 +28,12 @@ Därför måste du markera kryssrutan Bekräftelse när du väljer Auto-läge in
 
 Observera att du ansvarar för följande åtgärder när du konfigurerar ett sökmotorkonto i Automatiskt läge:
 
-* Parametern `s_kwcid` och värdet läggs till i kontospårningsmallarna eller URL:erna för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Ytterligare åtgärder kan krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. **Det är ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan.**
-* Dessutom kan nyckelord infogas i landnings-URL:en som en del av `s_kwcid`-värdet. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Exempel: Ett vanligt specialtecken är&quot;+&quot;, som används i nyckelorden&quot;Bred Match Modified&quot;.
+* The `s_kwcid` parameter och värde läggs till i kontospårningsmallarna eller URL:er för landningssidan i det konto som läggs till. Den infogas i slutet av URL:en. Ytterligare åtgärder kan krävas från din sida om webbservern kräver ett visst nyckel=värde-par i slutet av URL:en ELLER en uppdatering som stöder ett nytt nyckel=värde-par i URL:en. **Det är ditt ansvar att se till att de URL-parametrar som läggs till behålls korrekt på den slutliga landningssidan.**
+* Dessutom kan nyckelord infogas i landnings-URL:en som en del av `s_kwcid` värde. Om de innehåller specialtecken eller symboler måste du bekräfta att webbservern kan hantera dessa tecken. Exempel: Ett vanligt specialtecken är&quot;+&quot;, som används i nyckelorden&quot;Bred Match Modified&quot;.
 
 >[!IMPORTANT]
 >
->Läs mer om huruvida du bör lägga till parametern `s_kwcid` i din [skyddsprofil för innehåll](https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html).
+>Läs mer om huruvida du ska lägga till `s_kwcid` parametern till [Skyddsprofil för innehåll](https://experienceleague.adobe.com/docs/id-service/using/reference/csp.html).
 
 ## Manuell lägesspårning {#concept_87B28BA9E7F84BA5972F69E6F3482A33}
 
@@ -44,7 +45,7 @@ Strängen som behöver läggas till i ditt Google-konto visas nedan. Du måste l
 
 >[!IMPORTANT]
 >
->`<Advertising Analytics ID>`-värdet (i **bold** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
+>The `<Advertising Analytics ID>` värde (in **fet** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 
@@ -89,7 +90,7 @@ Strängen som behöver läggas till i ditt Bing-konto visas nedan. Du måste lä
 
 >[!IMPORTANT]
 >
->`<Advertising Analytics ID>`-värdet (i **bold** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
+>The `<Advertising Analytics ID>` värde (in **fet** nedan) är generiskt och **måste ersättas med din specifika konto-ID-sträng**. Du kan hämta din specifika konto-ID-sträng från inställningsskärmen för kontot under avsnittet Spårning.
 
 **Spårningssträng för kampanjer:**
 

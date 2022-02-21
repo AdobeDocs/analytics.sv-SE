@@ -1,9 +1,9 @@
 ---
 description: Beskriver hur du definierar målvalutakoder för stöd för flera valutor som ska fungera.
 title: Stöd för flera valutor
-uuid: null
+feature: Analytics Basics
 exl-id: b67f459c-0636-4eac-af52-51846bb583b5
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 0%
@@ -18,19 +18,19 @@ Målvalutakoder definieras på tre nivåer:
 
 ## Sidnivå
 
-Du kan ange en JavaScript-variabel för målvalutan på sidnivå. Webbplatsägaren ställer in den här variabeln med lämplig ISO 4217-valutakod med tre bokstäver (som anges nedan i det här dokumentet). Om variabeln [currencyCode](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/currencycode.html) inte är inställd på den här nivån är standardvalutan densamma som den som anges i rapportsviten. Om variabeln på sidnivå står i konflikt med variabeln som anges i rapportsviten, prioriteras variabeln i rapportsviten.
+Du kan ange en JavaScript-variabel för målvalutan på sidnivå. Webbplatsägaren ställer in den här variabeln med lämplig ISO 4217-valutakod med tre bokstäver (som anges nedan i det här dokumentet). Om [currencyCode](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/currencycode.html) -variabeln är inte inställd på den här nivån, standardvalutan är densamma som den som anges i rapportsviten. Om variabeln på sidnivå står i konflikt med variabeln som anges i rapportsviten, prioriteras variabeln i rapportsviten.
 
 
 ## Rapportsvitens nivå
 
-**basvalutan** anges när [rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html) skapas. Det här är standardinställningen för valuta och har företräde framför valutakoder som har angetts på sidnivå. Om en rapportsvit har order som godkänner amerikanska dollar, euro och brittiska pund och rapportsviten har standardvalutakoden inställd på US Dollars, översätts alla transaktioner till US Dollars av den rapporterande databasen.
+The **basvaluta** anges när [skapa rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html). Det här är standardinställningen för valuta och har företräde framför valutakoder som har angetts på sidnivå. Om en rapportsvit har order som godkänner amerikanska dollar, euro och brittiska pund och rapportsviten har standardvalutakoden inställd på US Dollars, översätts alla transaktioner till US Dollars av den rapporterande databasen.
 
 Marknadsföringsrapporter använder valutakursen vid den tidpunkt då bildbegäran görs för att översätta sidnivåvalutavärden till standardvalutavärdena för rapportsviten. Rapporteringssviter använder&quot;US Dollars&quot; som standardvaluta.
 
 
 ## Rapportnivå
 
-Användare kan ange den standardrapporterade valutan för användarinloggningssession. Du kommer åt detta via länken **Visningsalternativ** i valfri konverteringsrapport. Marknadsföringsrapporter använder växelkursen vid den tidpunkt då rapporten körs för att omvandla valutavärden för rapportsviten till rapportspecificerade valutavärden.
+Användare kan ange den standardrapporterade valutan för användarinloggningssession. Du kommer åt detta via **Visningsalternativ**  i en konverteringsrapport. Marknadsföringsrapporter använder växelkursen vid den tidpunkt då rapporten körs för att omvandla valutavärden för rapportsviten till rapportspecificerade valutavärden.
 
 ## Valutakoder som stöds (ISO 4217)
 
@@ -414,7 +414,7 @@ ZWD Zimbabwes dollar (ZWD)
 
 ## AppMeasurement.js-exempel
 
-Variabeln `currencyCode` kan definieras globalt i filen AppMeasurement.js. Genom att definiera variabeln currencyCode i den här filen säkerställs att en enhetlig valutakod används för alla valutatransaktioner. I exemplet nedan anges euro som variabeln `currencyCode` i `CONFIG SECTION` för filen AppMeasurement.js. Alla inköpshändelser tolkas genom att de rapporteras som eurotransaktioner.
+The `currencyCode` kan definieras globalt i filen AppMeasurement.js. Genom att definiera variabeln currencyCode i den här filen säkerställs att en enhetlig valutakod används för alla valutatransaktioner. I exemplet nedan anges euro som `currencyCode` variabeln i `CONFIG SECTION` för filen AppMeasurement.js. Alla inköpshändelser tolkas genom att de rapporteras som eurotransaktioner.
 
 ```
 /************************** CONFIG SECTION **************************/ 
@@ -433,6 +433,6 @@ s.linkTrackEvents="None"
 
 * Tänk på att även om valutakoder kan ändras mellan sidor måste samma valuta användas för alla konverteringsradartiklar som definieras på en viss sidförfrågan (du kan t.ex. inte ha Euro, British Pounds och US Dollars definierade på samma sidvy). Om du inte vill göra någon valutakonvertering bör du lämna värdet currencyCode tomt. Detta gör att skickade värden skickas direkt till rapporter utan konvertering.
 
-* Om du anger en ogiltig currencyCode (ett värde som inte finns i listan över valutakoder som stöds) utesluts hela träffen och data samlas inte in för transaktionen. Innan du ställer in `currencyCode` i produktion ska du använda en testrapportssvit för att kontrollera att data samlas in och att valutakonverteringen är korrekt.
+* Om du anger en ogiltig currencyCode (ett värde som inte finns i listan över valutakoder som stöds) utesluts hela träffen och data samlas inte in för transaktionen. Före inställning `currencyCode` i produktion, använd en testrapportssvit för att kontrollera att data samlas in och att valutakonverteringen är korrekt.
 
 * Valutor som inte använder en punkt (.) eftersom avgränsaren måste ändras så att den använder punkten i stället för den vanliga avgränsaren. Svensk krona, som använder kommatecken (,), måste ändras till att använda en punkt i stället för kommatecken. I Analytics används kommatecken för att avgränsa värden, och data skickas inte korrekt. Perioden skickar värdet korrekt till rapporter.

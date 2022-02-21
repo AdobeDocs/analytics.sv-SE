@@ -3,10 +3,9 @@ description: Datakällor har stöd för följande konverteringsdatamått och -m�
 subtopic: Data sources
 title: Konvertering
 topic-fix: Developer and implementation
-uuid: 5e7907b1-6c9c-4073-876b-410f3a29767d
+feature: Data Sources
 exl-id: 00450ad4-7148-4cf1-bdba-5d1732dd0fd3
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 5%
@@ -17,7 +16,7 @@ ht-degree: 5%
 
 Datakällor har stöd för följande konverteringsdatamått och -mått för datatyper som bearbetas som konvertering.
 
-## Konvertera Dimensioner och mått {#section_FA1731B232B246DABEDF5A5D84159084}
+## Dimensioner och mått för konvertering {#section_FA1731B232B246DABEDF5A5D84159084}
 
 Om du anger en View-händelse måste du även ange motsvarande datamåda (eVar). Om du till exempel inkluderar eVar2-vyer måste du ange ett värde för eVar2. Antalet anpassade händelser och eVar som stöds av en rapportserie är kontraktsberoende och varierar mellan företag.
 
@@ -26,7 +25,7 @@ Om du anger en View-händelse måste du även ange motsvarande datamåda (eVar).
 | Kolumnnamn | Beskrivning |
 |--- |--- |
 | Spårningskod | Namn på spårningskod. |
-| Datum | Använd följande datumformat:  MM/DD/YYY/HH/mm/SS (t.ex. 01/01/2015/06/00/00) |
+| Datum | Använd följande datumformat: MM/DD/YYY/HH/mm/SS (t.ex. 01/01/2015/06/00/00) |
 | Kategori | Kategorinamn.  Om du anger en kategori måste du också välja en produkt. |
 | Kanal | Kanalnamn. |
 | eVarn | Varnnamn. Giltiga värden för n är heltal 1-250. |

@@ -1,9 +1,9 @@
 ---
 description: Både analyser och Audience Manager använder segment. Ett Analytics-segment är dock inte exakt detsamma som ett Audience Manager-segment. Dessa skillnader bidrar delvis till de skillnader som ni kommer att se i era analyser och Audience Manager-rapporter. Därför är det viktigt och användbart att försöka förstå dessa skillnader när du börjar arbeta med segment i båda dessa lösningar.
 title: Förstå segment i Analytics och Audience Manager
-uuid: 13f7d1d7-6a3f-42f1-822e-8d3523999efa
+feature: Audience Analytics
 exl-id: 2bc662e7-7552-41e1-9d4a-bc7aa81b8c1d
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Audience Manager är smidigt som medlem. Användare kan ange eller ta bort från
 
 Ett Audience Manager-segment betecknas som en målgrupp i Analytics.
 
-Mer information finns i [Fyllningsdata för trait och segment i Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html) och [Signaler, Traits och Segments](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html).
+Mer information finns i [Trait and Segment Population Data in Segment Builder](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/segments/segment-builder-data.html) och [Signaler, egenskaper och segment](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/signal-trait-segment.html).
 
 ## Analyssegment {#section_62EC584BB7134E10923BCBA7F9BD89A8}
 
@@ -44,4 +44,4 @@ Ett Analytics-segment är en filtreringsmekanism för data i era rapporter. Filt
 
    Omvänt kommer besökare i Analytics att inkluderas eller exkluderas från ett segment baserat på rapporteringsdatumintervallet. En enskild besökare gjorde till exempel ett köp förra månaden. I AAM skulle besökaren ingå i ett&quot;köpsegment&quot;, oavsett datumintervall. I Analytics skulle en rapport som baseras på den här månaden inte inkludera besökaren i segmentet. En rapport baserad på den här månaden och förra månaden skulle dock inkludera besökaren i segmentet.
 
-Mer information finns i [Analytics Segmentation Guide](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
+Se [Segmenteringshandbok för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) för mer information.

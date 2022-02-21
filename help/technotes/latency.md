@@ -1,13 +1,10 @@
 ---
 description: Följande information kan hjälpa till att felsöka problem med rapportsvitens latens i Analytics-data.
 keywords: data saknas;långsam
-subtopic: Current data
 title: Datatillgänglighet och fördröjning
-topic-fix: Reports
-uuid: 1f0e67e3-6cea-4af8-8b18-7ae9223df7c8
+feature: Data Configuration and Collection
 exl-id: fedef3ea-dde6-460f-90e3-1e661ed29b78
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -30,9 +27,9 @@ Latens är en fördröjning som är längre än de vanliga två timmarna det tar
 
 Latens orsakas av en av följande allmänna kategorier:
 
-* **Oväntad trafiktoppning:** Den här typen av fördröjning inträffar när fler data skickas till en rapportsvit än vad som har bekräftats eller förväntas enligt avtal. Det är den vanligaste orsaken till latens.
-* **Normala maskinvaruproblem:** Adobe har förstklassiga strategier för hantering och övervakning av datacenter, redundans av data och maskinvarutillförlitlighet. Maskinvaran uppdateras regelbundet och i samband med publicerade underhållsfönster. Nödunderhåll av felaktig maskinvara kan kräva ett nödvändigt och tillfälligt avbrott i databearbetningen (inte i datainsamlingen) eftersom ersättningsmaskinvara ansluts. Detta tillfälliga stopp i bearbetningen kan leda till märkbar fördröjning.
-* **Onormala data:** Onaturliga datamönster, som ovanligt långa besök orsakade av en robot eller crawler, kan tillfälligt öka vissa bearbetningsbelastningar som resulterar i fördröjning.
+* **Oväntad trafiktoppning:** Den här typen av fördröjning inträffar när fler data skickas till en rapportsvit än vad som har bekräftats eller förväntades enligt avtal. Det är den vanligaste orsaken till latens.
+* **Vanliga maskinvaruproblem:** Adobe har förstklassiga strategier för hantering och övervakning av datacenter, dataredundans och maskinvarans tillförlitlighet. Maskinvaran uppdateras regelbundet och i samband med publicerade underhållsfönster. Nödunderhåll av felaktig maskinvara kan kräva ett nödvändigt och tillfälligt avbrott i databearbetningen (inte i datainsamlingen) eftersom ersättningsmaskinvara ansluts. Detta tillfälliga stopp i bearbetningen kan leda till märkbar fördröjning.
+* **Onormala data:** Onaturliga datamönster, till exempel ovanligt långa besök som orsakas av en robot eller crawler, kan tillfälligt öka vissa bearbetningsbelastningar som resulterar i fördröjning.
 
 ## Funktioner som är beroende av latens
 
@@ -45,7 +42,7 @@ Vissa funktioner i Adobe Experience Cloud har en kort latenstid utöver den vanl
 
 Det finns flera strategier för att förhindra fördröjning eller minska återställningstiden när den inträffar:
 
-* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiksprång på er webbplats, kan det finnas fall där ni förväntar er en betydande trafikökning. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe ge er organisation möjlighet att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafikspik](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin om du vill veta hur du ska meddela Adobe om ökad trafik.
+* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiksprång på er webbplats, kan det finnas fall där ni förväntar er en betydande ökning av trafiken. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe ge er organisation möjlighet att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin om du vill veta hur du kan meddela Adobe om ökad trafik.
 * **Överväg att läsa in när du aktiverar nya funktioner:** Vissa funktioner är mer bearbetningsintensiva än andra. Ju fler funktioner som är aktiverade i en rapportserie, desto svårare är det att återställa efter fördröjning. När du aktiverar funktioner i en rapportserie bör du tänka på följande funktioner som ökar mängden data som ska bearbetas:
 
    * Implementera mer än 20 händelser på samma sida
@@ -53,7 +50,7 @@ Det finns flera strategier för att förhindra fördröjning eller minska åters
    * Mer än 20 värden i variabeln products
    * Händelseserialisering
 
-* Aktivera IAB-punktsfiltrering: [Punktfiltrering](/help/admin/admin/bot-removal/bot-removal.md) kan avsevärt minska fördröjningen om rapportsviten ofta används av robotar eller crawler. Vi rekommenderar att du använder IAB-robotlistan eftersom den uppdateras och underhålls av [Interactive Advertising Bureau](https://www.iab.net/about_the_iab). En användare kan anpassa sina egna robotregler för att komplettera dem från IAB.
+* Aktivera IAB-punktsfiltrering: [Punktfiltrering](/help/admin/admin/bot-removal/bot-removal.md) kan minska fördröjningen avsevärt om rapportsviten ofta används av botar eller crawler. Vi rekommenderar att du använder IAB-robotlistan eftersom den uppdateras och underhålls av [Interactive Advertising Bureau](https://www.iab.net/about_the_iab). En användare kan anpassa sina egna robotregler för att komplettera dem från IAB.
 
 ## Vad du ska göra med svarstid
 

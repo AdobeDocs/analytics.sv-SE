@@ -3,9 +3,9 @@ description: Migrering av besökare är en process där besökar-ID-cookie migre
 keywords: Implementering av analyser
 title: Migrering av besökare
 topic-fix: Developer and implementation
-uuid: af31928c-85d7-407f-a583-0c8f2852ceb3
+feature: Analytics Basics
 exl-id: d44628c8-902f-4e60-b819-41d5537407d8
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
@@ -20,9 +20,9 @@ Med migrering av besökare kan du bevara cookies för identifiering av besökare
 
 * Flyttar från `2o7.net` till `adobedc.net`.
 
-* Du implementerar tjänsten [Experience Cloud Visitor ID](https://experienceleague.adobe.com/docs/id-service/using/home.html) och går från en CNAME/första parts datainsamlingsdomän till `adobedc.net`, `2o7.net` eller `omtrdc.net`
+* Du implementerar [Experience Cloud Visitor ID-tjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) och går från en CNAME/förstapartsdomän för datainsamling till `adobedc.net`, `2o7.net` eller `omtrdc.net`
 
-* Flyttar till en namnsamling/datainsamling från första part ( [cookies från första part)](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html).
+* Flyttar till en namngiven datainsamling/datainsamling från första part ( [Cookies från första part)](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html).
 
 * Flyttar från en CNAME till en annan (föränderliga domäner).
 
@@ -41,20 +41,20 @@ I följande tabell visas de uppgifter som krävs för migrering av besökare:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>Så här kommer du igång: </b> <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html"  > Kontakta kundtjänst  </a> med de domäner du vill migrera och den migreringsperiod du vill aktivera (30, 60 eller 90 dagar). Se till att du inkluderar de osäkra och säkra domänerna. </p> </td> 
-   <td colname="col3"> <p>Skapa en lista med <i>exakt</i>-syntax för de domäner du vill migrera till och migrera från. </p> 
+   <td colname="col1"> <p> <b>Så här kommer du igång:</b> <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html"  > Kontakta kundtjänst </a> med de domäner du vill migrera och den migreringsperiod du vill aktivera (30, 60 eller 90 dagar). Se till att du inkluderar de osäkra och säkra domänerna. </p> </td> 
+   <td colname="col3"> <p>Skapa en lista med <i>exakt</i> syntax för de domäner du vill migrera till och migrera från. </p> 
     <ul id="ul_067EC5C7619141A6BDFBC209C9FD47E2"> 
      <li id="li_0723D948465A49C1871B81207AEDC4DC">example.112.2o7.net &gt; metrics.example.com </li> 
      <li id="li_B0CA15A593BD4AB9802E33A3FF037C7A">example.102.112.2o7.net &gt; smetrics.example.com </li> 
     </ul> <p>Migreringsvärdnamnen har konfigurerats på Adobe datainsamlingsserver. Kundtjänst meddelar när ändringen är klar så att du kan planera för nästa steg. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>6+ timmar efter konfigurationsändring</b>: Uppdatera  <code> s.trackingServer</code> och  <code> s.trackingServerSecure</code> variabler i JavaScript-koden för Analytics så att de använder de nya datainsamlingsservrarna. </p> </td> 
-   <td colname="col3"> <p>När du har gjort den här ändringen använder du felsökaren <a href="https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=en"> Experience Cloud</a> för att verifiera att Analytics-bildbegäran kommer till den uppdaterade datainsamlingsservern. </p> </td> 
+   <td colname="col1"> <p> <b>6+ timmar efter konfigurationsändring</b>: Uppdatera <code> s.trackingServer</code> och <code> s.trackingServerSecure</code> variabler i din Analytics JavaScript-kod för att använda de nya datainsamlingsservrarna. </p> </td> 
+   <td colname="col3"> <p>När du har gjort den här ändringen använder du <a href="https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=en"> Experience Cloud-felsökning</a> för att verifiera att Analytics-bildbegäran går till den uppdaterade datainsamlingsservern. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>Omedelbart efter uppdatering av Analytics-koden</b>: Testa webbplatsen för att verifiera att omdirigeringen till den tidigare datainsamlingsdomänen sker. </p> </td> 
-   <td colname="col3"> <p>Använd en <a href="../implement/validate/packet-monitor.md">-paketövervakare</a> för att verifiera att när du ansluter till platsen för första gången, eller efter att du har rensat cookies, visas två 302 (omdirigerings) HTTP-statuskoder före HTTP-statuskoden 200 (OK). Om någon av dessa omdirigeringar misslyckas kontaktar du kundtjänst omedelbart för att säkerställa att migreringen är korrekt konfigurerad. </p> </td> 
+   <td colname="col1"> <p> <b>Omedelbart efter uppdatering av analyskoden</b>: Testa webbplatsen för att verifiera att omdirigeringen till den tidigare datainsamlingsdomänen sker. </p> </td> 
+   <td colname="col3"> <p>Använd en <a href="../implement/validate/packet-monitor.md"> paketskärm</a> för att verifiera att när du ansluter till platsen för första gången, eller efter att du har rensat cookies, visas två 302 (omdirigering) HTTP-statuskoder före HTTP-statuskoden 200 (OK). Om någon av dessa omdirigeringar misslyckas kontaktar du kundtjänst omedelbart för att säkerställa att migreringen är korrekt konfigurerad. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>För hela migreringsperioden</b>: Låt DNS-posten för det föregående värdnamnet vara aktiv. </p> </td> 

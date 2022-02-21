@@ -3,10 +3,9 @@ description: Information om mallen för datakälla .txt.
 subtopic: Data sources
 title: Importera filreferens
 topic-fix: Developer and implementation
-uuid: cc58f8d8-cb6e-4908-846f-0a41c6da805d
+feature: Data Sources
 exl-id: 7966b156-04bf-4d39-a720-ab47a665d1e2
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 2%
@@ -26,7 +25,7 @@ Använd guiden Datakällor för att generera en importmall. Importfilen för dat
 
 Kolumnrubriker används för att identifiera data i varje kolumn i datakällfilen. Det finns tre typer av kolumnrubriker:
 
-**Datum**: (Obligatoriskt) En tidsstämpel för varje datarad i filen, i formatet  `m/d/yyyy`.
+**Datum**: (Obligatoriskt) En tidsstämpel för varje datarad i filen, i formatet `m/d/yyyy`.
 
 **Variabler**: Namnen på rapportvariablerna mappade till datakällans datamått.
 
@@ -63,6 +62,6 @@ Använd mallen Datakälla för att skapa en datakällfil som innehåller data so
 
 **.FIN-fil**
 
-När du har fyllt i datakällfilen kan du FTP-lägga den i Analytics. Det krävs dock ytterligare en fil för att dina data ska kunna behandlas. Du måste överföra en tom textfil med samma namn som datafilen, men med filnamnstillägget [!DNL .fin].
+När du har fyllt i datakällfilen kan du FTP-lägga den i Analytics. Det krävs dock ytterligare en fil för att dina data ska kunna behandlas. Du måste överföra en tom textfil med samma namn som datafilen, men med en [!DNL .fin] tillägg.
 
-Om du till exempel överför en (tabbavgränsad) datafil med namnet [!DNL myproductdata.txt], måste du även överföra en tom textfil med namnet [!DNL myproductdata.fin]. Utan [!DNL .fin]-filen skulle data aldrig bearbetas.
+Om du till exempel överför en (tabbavgränsad) datafil med namnet [!DNL myproductdata.txt]måste du också ladda upp en tom textfil med namnet [!DNL myproductdata.fin]. Utan [!DNL .fin] skulle data aldrig bearbetas.

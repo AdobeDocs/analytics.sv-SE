@@ -3,10 +3,10 @@ title: Så här konfigurerar du ett annonskonto i Advertising Analytics
 description: Gör att du kan skapa nya annonskonton och mappa flera konton till flera rapportsviter.
 feature: Advertising Analytics
 exl-id: f593c714-e85f-4000-85b2-6294cad81e25
-source-git-commit: 58bb3ab5787de893917c95946266088ccd1f00d4
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '795'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ Administratörer kan även [ge icke-administratörer åtkomst](/help/integrate/c
    | --- | --- |
    | Typ | Du har två alternativ: Google AdWords och Microsoft Bing Ads.  Obs! Yahoo Gemini absorberades av Microsoft Bing den 31 mars 2019. Detta innebär att annonskontoalternativet Yahoo Gemini inte längre är tillgängligt. |
    | Kontonamn | Du kan ange det här kontonamnet till vilket namn som helst som passar dig. Det här är det egna namnet på kontot som ska visas i användargränssnittet. |
-   | OAuth-token | **Obs!**  OAuth är en öppen standard för åtkomstdelegering som ofta används som ett sätt att ge webbplatser eller program åtkomst till deras information på andra webbplatser, men utan att ge dem något lösenord. Du kommer att märka att du dirigeras till en URL-adress från tredje part (efrontier.com). Adobe använder efrontier för att driva OAuth-autentiseringsprocessen för alla tre sökmotorer. Om du använder Internet Explorer 11 (eller tidigare) kan du inte hämta Oauth-token för någon av de tre sökmotorerna. Använd i stället andra webbläsare.<p>Klicka **[!UICONTROL Retrieve Token]** startar OAuth2-autentiseringsprocessen. Det innebär att du blir ombedd att logga in på ditt Google/Bing-sökkonto med dina inloggningsuppgifter. Beroende på vilken sökmotor du väljer är processen något annorlunda: <ul><li>Google Adwords: Ange Google konto-ID</li><li>Microsoft Bing: Ange Bing-konto-ID och Bing-kund-ID.</li></ul>Se [Hitta ditt konto-ID](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-locate-account-id.md) för information om dessa ID:n. När du har loggat in kan du **[!UICONTROL OAuth Token]** fält visas **[!UICONTROL Retrieved]**. |
+   | OAuth-token | **Obs!**  OAuth är en öppen standard för åtkomstdelegering som ofta används som ett sätt att ge webbplatser eller program åtkomst till deras information på andra webbplatser, men utan att ge dem något lösenord. Du kommer att märka att du dirigeras till en URL-adress från tredje part (efrontier.com). Adobe använder efrontier för att driva OAuth-autentiseringsprocessen för alla tre sökmotorer. Om du använder Internet Explorer 11 (eller tidigare) kan du inte hämta Oauth-token för någon av de tre sökmotorerna. Använd i stället andra webbläsare.<p>Klicka **[!UICONTROL Retrieve Token]** startar OAuth2-autentiseringsprocessen. Du ombeds logga in på ditt Google/Bing-sökkonto med dina inloggningsuppgifter. Beroende på vilken sökmotor du väljer är processen något annorlunda: <ul><li>Google Adwords: Ange Google konto-ID</li><li>Microsoft Bing: Ange Bing-konto-ID och Bing-kund-ID.</li></ul>Se [Hitta ditt konto-ID](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-locate-account-id.md) för information om dessa ID:n. När du har loggat in kan du **[!UICONTROL OAuth Token]** fält visas **[!UICONTROL Retrieved]**. |
 
 1. I **[!UICONTROL Tracking]** anger du information om hur sökmotordata spåras av din Adobe Analytics-implementering. Detta är ett nödvändigt steg för att utöka Adobe Analytics data med sökmotordata.
 Fyll i **[!UICONTROL Tracking Settings]** följande riktlinjer:

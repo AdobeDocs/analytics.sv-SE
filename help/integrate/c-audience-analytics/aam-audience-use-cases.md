@@ -1,9 +1,9 @@
 ---
 description: Användningsexempel kring Advertising Analytics.
 title: Användningsexempel för Audience Analytics
-uuid: 51c0576c-ce8a-4a87-9c8f-be193e50279d
+feature: Audience Analytics
 exl-id: 5e03e78f-225b-4634-8a4c-f89d17603182
-source-git-commit: 286e42feca0d87ef08b9c1d6be6a6987db9de4d0
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 3%
@@ -22,12 +22,12 @@ Som reseföretag kan du snabbt täcka över destinationsinställningarna med ink
 
 ## Utseendeliknande modellering {#section_E2E2DD1495BC4FE9A3E26541962BFF3F}
 
-Som Multi-Media Publisher kan du jämföra externa målgrupper med [Segment IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) för att förstå viktiga särskiljande egenskaper. Detta hjälper er att bygga värdefulla förstapartssegment som sedan kan användas för målinriktning.
+Som multimediepublicerare kan du jämföra externa målgrupper med [Segmentanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/segment-comparison/segment-comparison.html) att förstå viktiga särskiljande egenskaper. Detta hjälper er att bygga värdefulla förstapartssegment som sedan kan användas för målinriktning.
 
 ## Prospekt - analys {#section_7DB1D045DD3F417CBA48C68E9E81E6C0}
 
-Som B2B-återförsäljare kan du nu analysera beteendet hos den potentiella kundens målgrupp innan de köper med hjälp av [sekventiell segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html), vilket hjälper dig förstå vilka åtgärder som driver konverteringen.
+Som B2B-återförsäljare kan ni nu analysera hur er potentiella målgrupp beter sig innan de köper med [sekventiell segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html), vilket hjälper dig att förstå vilka åtgärder som driver konverteringen.
 
 ## Demografisk målgruppsanpassning {#section_F034DB721A06419283DBD29D4A1B444B}
 
-Som målresurs kan du använda [histogram i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/histogram.html) för att se inköp fördelade på ålder. Detta hjälper er att hitta rätt målgrupp att rikta in er på var och en av era resortegenskaper.
+Som målresurs kan du använda [Histogram i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/histogram.html) för att se inköp fördelade på ålder. Detta hjälper er att hitta rätt målgrupp att rikta in er på var och en av era resortegenskaper.

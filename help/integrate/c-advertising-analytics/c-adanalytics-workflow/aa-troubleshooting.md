@@ -1,9 +1,9 @@
 ---
 description: Felsöka och åtgärda problem som rör Advertising Analytics.
 title: Felsöka Advertising Analytics
-uuid: d0abe7cc-ed13-4d3d-87a6-f0d649c7ad2d
+feature: Advertising Analytics
 exl-id: 29e39a15-504a-4155-8794-aceb47046a54
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 4%
@@ -13,11 +13,11 @@ ht-degree: 4%
 # Felsöka Advertising Analytics
 
 * [Jag ser inte min rapportsvit i mappningsavsnittet](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_9CAACDE6445C492DBAE542BA74DE6316)
-* [Jag får ett fel vid autentisering till Google Adwords-konto..](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_C99EA9A1946E4908B36778A331142B84)
+* [Jag får ett fel när jag autentiserar till Google Adwords Account...](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-troubleshooting.md#section_C99EA9A1946E4908B36778A331142B84)
 
 ## Jag ser inte min rapportsvit i mappningsavsnittet {#section_9CAACDE6445C492DBAE542BA74DE6316}
 
-Du försöker [konfigurera ett nytt Advertising Account](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) och du ser inte din rapportsvit som visas i listrutan **[!UICONTROL Select Report Suite]**. Det finns två möjliga orsaker till detta:
+Du försöker [konfigurera ett nytt Advertising-konto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) och du ser inte din rapportserie i **[!UICONTROL Select Report Suite]** nedrullningsbar lista. Det finns två möjliga orsaker till detta:
 
 <table id="table_271D7E817B4C44818717A47C3223E592"> 
  <thead> 
@@ -33,7 +33,7 @@ Du försöker [konfigurera ett nytt Advertising Account](/help/integrate/c-adver
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Report Suite har inte etablerats för Advertising Analytics-rapportering. </p> </td> 
-   <td colname="col2"> <p>Mer information finns i <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md"  > Provisionera Report Suite</a>. </p> </td> 
+   <td colname="col2"> <p>Se <a href="/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-provision-rs.md"  > Provisioneringsrapportsvit</a> för instruktioner. </p> </td> 
   </tr> 
  </tbody> 
 </table>

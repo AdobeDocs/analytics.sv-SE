@@ -1,40 +1,41 @@
 ---
 title: Adobe Analytics och webbläsarcookies
 description: Läs om hur spårningsförebyggande åtgärder påverkar cookies från tredje part och från första part som anges av Adobe Analytics.
-source-git-commit: 2a0cc52664bbeaae66d6160d74fad4840bf692b8
+feature: Data Configuration and Collection
+exl-id: c4a4751e-49fc-40c3-aa39-f0f0b20bda1b
+source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
 workflow-type: tm+mt
 source-wordcount: '1985'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Analytics och webbläsarcookies
 
-I det här dokumentet förklaras hur de viktigaste åtgärderna för att spåra webbläsare påverkar cookies som angetts av Adobe Analytics från tredje part och från första part. Det innehåller information om Apples ITP-program (Intelligent Tracking Prevention) samt Chrome:s begränsningar för cookies från tredje part via attributet SameSite.
+I det här dokumentet förklaras hur de viktigaste åtgärderna för att spåra webbläsare påverkar cookies som angetts av Adobe Analytics från tredje part och från första part. Det innehåller information om Apple ITP-program (Intelligent Tracking Prevention) samt Chrome:s begränsningar för cookies från tredje part via attributet SameSite.
 
 ## Hur har webbläsarna begränsat användningen av cookies?
 
 >[!NOTE]
->[Enhetsövergripande analyser](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#comparing-cja-to-traditional-adobe-analytics) kan sammanfoga cookies med ett person-ID, t.ex. ett hashas-inloggnings-ID, om ett sådant finns.
+>[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#comparing-cja-to-traditional-adobe-analytics) kan sammanfogas mellan cookies med ett person-ID, t.ex. ett hashade inloggnings-ID, om ett sådant finns.
 
 ### Begränsningar för cookies från tredje part
 
 Cookies som används i en tredjepartskontext är ofta föråldrade. Firefox och Safari började som standard blockera cookies från tredje part från och med 2019 respektive 2020. Chrome har meddelat att man under 2023 kommer att upphöra med stödet för cookies från tredje part. När de gör det blir cookies från tredje part oanvändbara.
 
-Dessutom tillåter Chrome för närvarande endast att cookies fungerar i en tredjepartskontext om de har attributet &quot;SameSite&quot; inställt på Ingen och de är märkta som säkra, vilket innebär att de bara kan användas via HTTPS. Mer information finns i avsnittet &quot;[Vad är cookie-attributet SameSite och hur påverkar det Analytics?](#samesite-effect)&quot;
+Dessutom tillåter Chrome för närvarande endast att cookies fungerar i en tredjepartskontext om de har attributet &quot;SameSite&quot; inställt på Ingen och de är märkta som säkra, vilket innebär att de bara kan användas via HTTPS. Mer information finns i avsnittet[Vad är cookie-attributet SameSite och hur påverkar det Analytics?](#samesite-effect)&quot;
 
 #### Vilka cookies från tredje part berörs av Adobe?
 
-Besökar-ID-tjänsten använder cookien [demdex.net](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html) för att tillhandahålla en beständig identifierare för besökare i olika kunddomäner. Den äldre tjänsten för analys-ID, s_vi-cookie, anges som en cookie från tredje part för implementeringar som inte använder en anpassad CNAME-samlingsdomän.
+Tjänsten för besökar-ID använder &quot;[demdex.net](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html)&quot; cookie för att ge en beständig identifierare för besökare i olika kunddomäner. Den äldre tjänsten för analys-ID, s_vi-cookie, anges som en cookie från tredje part för implementeringar som inte använder en anpassad CNAME-samlingsdomän.
 
 I webbläsare där cookies från tredje part är blockerade är spårning över domäner inte tillgängligt.
 
 ### Begränsningar för cookie-filer från första part {#limitations-first-party-cookies}
 
-Cookies från första part tillåts i alla större webbläsare. Apple begränsar dock livslängden för cookies från första part som anges av Adobe via deras ITP (Intelligent Tracking Program). Detta påverkar både Safari och alla webbläsare på iOS och iPadOS.
+Cookies från första part tillåts i alla större webbläsare. Apple begränsar dock livslängden för cookies från första part som Adobe ställer in via sitt Intelligent Tracking Program (ITP). Detta påverkar både Safari och alla webbläsare på iOS och iPadOS.
 
-Adobe-cookies från första part är begränsade till 7-dagars upphörande eller, för klickningar som Apple bestämmer kommer från spårare, ett 24-timmars upphörande. Om en användare besöker webbplatsen och återkommer inom sju dagar med 7 dagars utgång, förlängs cookie-filens förfallodatum med ytterligare sju dagar. Men om en användare besöker er webbplats och återvänder på åtta dagar behandlas de som en ny användare vid det andra besöket.
+Adobe-cookies från första part är begränsade till ett 7-dagars upphörande eller, för klickningar som Apple bestämmer kommer från spårare, ett 24-timmars upphörande. Om en användare besöker webbplatsen och återkommer inom sju dagar med 7 dagars utgång, förlängs cookie-filens förfallodatum med ytterligare sju dagar. Men om en användare besöker er webbplats och återvänder på åtta dagar behandlas de som en ny användare vid det andra besöket.
 
 För närvarande gäller ITP-principer för alla cookies från första part som anges av Adobe, oavsett om du använder tjänsten för besöks-ID eller det äldre analys-ID:t (&quot;s_vi&quot; cookie). I en punkt tillämpas dessa principer endast på cookies som ställs in på klientsidan och inte på cookies som ställs in på serversidan via en CNAME-implementering. I november 2020 uppdaterades dock ITP för att även gälla för CNAME-implementeringar.
 
@@ -42,17 +43,17 @@ För närvarande gäller ITP-principer för alla cookies från första part som 
 
 * Februari 2019 med [ITP 2.1](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/): Kakor på klientsidan var begränsade till sju dagars upphörande
 * April 2019 med [ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/): Klientsidans cookies var begränsade till 24 timmar för annonsklickningar när den refererande domänen var a) involverad i spårning av webbplatser och b) den slutliga URL:en innehöll en frågesträng och/eller en fragment-ID.
-* November 2020 med [CNAME Cloaking and Bounce Tracking Defense](https://webkit.org/blog/11338/cname-cloaking-and-bounce-tracking-defense/): ITP-begränsningarna utökades till CNAME-implementeringar.
+* November 2020 med [CNAME Dolda och studsspårningsförsvar](https://webkit.org/blog/11338/cname-cloaking-and-bounce-tracking-defense/): ITP-begränsningarna utökades till CNAME-implementeringar.
 
-ITP-reglerna utvecklas ofta. Information om de senaste profilerna finns i Apples [Tracking Prevention i Webkit](https://webkit.org/tracking-prevention).
+ITP-reglerna utvecklas ofta. Information om de senaste policyerna finns i Apple [Spårningsskydd i Webkit](https://webkit.org/tracking-prevention).
 
 #### Vilka cookies från första part i Adobe påverkas?
 
 Alla cookies från första part som anges av Adobe, och de relaterade JavaScript-biblioteken, påverkas av ITP-principer:
 
-* [&quot;AMCV&quot;-](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html) cookieset av tjänstbiblioteket för Adobe Experience Cloud Visitor ID (ECID)
-* Analysen har en äldre [&quot;s_vi&quot;-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) när den är konfigurerad med datainsamling från första part med en CNAME
-* Analytics-cookien [&quot;s_fid&quot;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html), som är den reservcookie som används när&quot;s_vi&quot; inte kan anges
+* [&quot;AMCV&quot;-cookies](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html) anges av tjänstbiblioteket för Adobe Experience Cloud Visitor ID (ECID)
+* Analytics-bakgrunden [&quot;s_vi&quot;-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) när den är konfigurerad med datainsamling från första part med en CNAME
+* Analytics-bakgrunden [&quot;s_fid&quot;-cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html), vilket är den reservcookie som används när &quot;s_vi&quot; inte kan anges
 
 #### Vilken inverkan har ITP på Safari för analys?
 
@@ -73,9 +74,9 @@ Om dessa begränsningar påverkar dina data kommer du att se:
 
 Tredjepartscookies skapas inte av de webbplatser som användarna besöker.
 
-Även om webbläsare för närvarande behandlar alla cookies från tredje part på samma sätt och lagrar dem så kan cookies från tredje part bete sig på olika sätt. Med en kunds Analytics-implementering av cookies från tredje part lagrar webbläsarna Adobe-ID:t [demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) som en cookie från tredje part, men klienten gör bara anrop till Adobe och inte för okända eller misstänkta tredjepartsdomäner. Denna cookie ger beständiga identifierare över domäner och möjliggör säkert (HTTPS) innehåll. Mer information finns i [Cookies och Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html).
+Även om webbläsare för närvarande behandlar alla cookies från tredje part på samma sätt och lagrar dem så kan cookies från tredje part bete sig på olika sätt. Med en kunds implementering av cookies från tredje part i Analytics kan webbläsarna lagra Adobe [demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) ID som en cookie från tredje part, men klienten gör bara anrop till Adobe och inte för okända eller misstänkta tredjepartsdomäner. Denna cookie ger beständiga identifierare över domäner och möjliggör säkert (HTTPS) innehåll. Mer information finns i [Cookies och Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html).
 
-I Analytics-implementeringar används cookies från tredje part för domänövergripande spårning och för annonseringsanvändning, inklusive återannonsering. Med cookies från tredje part kan du identifiera besökare när de besöker olika domäner som du äger eller som annonser visas på webbplatser som du inte äger.<!--  Without these cookies, you cannot identify visitors as they visit different domains that you own or as they are shown ads on sites that you do not own unless your implementation can stitch other types of cookies and   -->
+I Analytics-implementeringar används cookies från tredje part för domänövergripande spårning och för annonseringsanvändning, inklusive återannonsering. Med cookies från tredje part kan du identifiera besökare när de besöker olika domäner som du äger eller som de visas på annonser på webbplatser som du inte äger.<!--  Without these cookies, you cannot identify visitors as they visit different domains that you own or as they are shown ads on sites that you do not own unless your implementation can stitch other types of cookies and   -->
 
 ### cookies från första part
 
@@ -89,27 +90,27 @@ Mer information finns i [Om cookies från första part](https://experienceleague
 
 ## Vad är cookie-attributet SameSite och hur påverkar det Analytics-cookies? {#samesite-effect}
 
-I och med att webbläsaren Chrome 80 släpptes i februari 2020 - och i efterföljande versioner av Firefox- och Edge-webbläsare - tillämpar attributet SameSite cookie specifikationen för tre olika värden som styr om cookies kan användas i ett tredjepartssammanhang:
+I och med att webbläsaren Chrome 80 släpptes i februari 2020 - och i efterföljande versioner av Firefox- och Edge-webbläsare - tillämpar attributet SameSite cookie specifikationen för tre olika värden som styr om cookies kan användas i en tredjepartsmiljö:
 
-* `None`: Med den här inställningen aktiveras åtkomst över flera webbplatser och cookies kan skickas i en tredjepartssituation. Om du vill ange det här attributet måste du även ange `Secure` och alla webbläsarbegäranden måste följa HTTPS. När du till exempel anger cookie-filen parar du värdena för attributet enligt följande: `Set-Cookie: example_session=test12; SameSite=None; Secure`. Om de inte är korrekt märkta kan cookies inte användas i de nyare webbläsarna och de avvisas.
+* `None`: Med den här inställningen aktiveras åtkomst över flera webbplatser och cookies kan skickas i en tredjepartssituation. Om du vill ange det här attributet måste du också ange `Secure` och alla webbläsarbegäranden måste följa HTTPS. När du till exempel anger cookie-filen parar du värdena för attributet enligt följande: `Set-Cookie: example_session=test12; SameSite=None; Secure`. Om de inte är korrekt märkta kan cookies inte användas i de nyare webbläsarna och de avvisas.
 
-* `Lax`: Tillåter att begäranden mellan webbplatser skickas med cookies för samma plats endast för navigering på den översta nivån med  *säkra*  (skrivskyddade, t.ex.  `GET`) HTTP-metoder.
+* `Lax`: Tillåter att begäranden mellan webbplatser skickas med cookies för samma webbplats endast för navigering på den översta nivån med *säker* (skrivskyddad, till exempel `GET`) HTTP-metoder.
 
 * `Strict`: Samma webbplats-cookie skickas inte för någon begäran från tredje part. Cookien skickas bara om webbplatsen för cookien matchar webbplatsen i URL-fältet.
 
-Standardbeteendet i de här webbläsarversionerna är att behandla cookies som inte har något angivet `SameSite`-attribut som är samma som `SameSite=Lax`.
+Standardbeteendet i de här webbläsarversionerna är att hantera cookies som inte har någon angiven `SameSite` samma attribut som `SameSite=Lax`.
 
 ### Hur hanterar Analytics samma webbplatsens cookie-attribut?
 
-För kunder som använder besökar-ID-tjänsten har cookies egenskaperna `SameSite=None` och `secure` inställda som standard, vilket gör att dessa cookies stöder användningsfall från tredje part.
+För kunder som använder Visitor ID-tjänsten har cookies egenskaperna `SameSite=None` och `secure` anges som standard, vilket gör att dessa cookies kan användas med stöd för tredjepartsanvändning.
 
-För kunder som använder äldre Analytics-identifierare (&quot;s_vi&quot; och&quot;s_fid&quot;-cookies) ställs cookies in så att även tredjepartsanvändningsfall med standardsamlingsdomäner kan aktiveras: adobedc.net, 2o7.net och omtrdc.net. För kunder som använder en CNAME-implementering anges `SameSite=Lax` i Analytics.
+För kunder som använder äldre Analytics-identifierare (&quot;s_vi&quot; och&quot;s_fid&quot;-cookies) ställs cookies in så att även tredjepartsanvändningsfall med standardsamlingsdomäner kan aktiveras: adobedc.net, 2o7.net och omtrdc.net. För kunder som använder en CNAME-implementering anges i Analytics `SameSite=Lax`.
 
 >[!NOTE]
 >
->Om du äger flera domäner och använder samma CNAME för datainsamling i alla dina domäner behandlas cookien som en cookie från tredje part i dessa andra domäner. Om du använder de äldre analysidentifierarna kanske du vill uppdatera inställningen till `SameSite=None` så att dessa cookies kan delas på alla dina webbplatser. Mer information finns i &quot;[Ändra värdet för SameSite när du använder en CNAME för flera domäner](#samesite-one-cname)&quot; i nästa avsnitt.
+>Om du äger flera domäner och använder samma CNAME för datainsamling i alla dina domäner behandlas cookien som en cookie från tredje part i dessa andra domäner. Om du använder de äldre analysidentifierarna kanske du vill uppdatera inställningen till `SameSite=None` så att dessa cookies kan delas på alla dina webbplatser. Se &quot;[Ändra värdet för SameSite när du använder en CNAME för flera domäner](#samesite-one-cname)&quot; i nästa avsnitt om du vill ha mer information.
 
-För webbläsare som Google har identifierat som cookies som inte kan hanteras när `SameSite` är inställt på `None`, är `SameSite` i stället okonfigurerat.
+För webbläsare som Google har identifierat som cookies som inte hanterar när `SameSite` är inställd på `None`, `SameSite` i stället lämnas orörd.
 
 I följande tabell sammanfattas samma webbplatsattribut för analyscookies:
 
@@ -119,7 +120,7 @@ I följande tabell sammanfattas samma webbplatsattribut för analyscookies:
 
 #### Hantera alla webbplatssidor med HTTPS
 
-Bekräfta att din JavaScript-konfiguration använder HTTPS för alla anrop till Adobe-tjänster.
+Kontrollera att din JavaScript-konfiguration använder HTTPS för alla anrop till Adobe-tjänster.
 
 Om webbplatsen använder Experience Cloud Visitor ID-tjänsten dirigerar tjänsten om HTTP-anrop från tredje part till HTTPS-slutpunkten, vilket kan öka fördröjningen men innebär att du inte behöver ändra konfigurationen.
 
@@ -131,7 +132,7 @@ Om webbplatsen använder Experience Cloud Visitor ID-tjänsten dirigerar tjänst
 
 Om du har en CNAME-implementering som är inställd i samma domän som din webbplats, skapas cookien i en förstahandskontext och du behöver inte göra några ändringar.
 
-Om du däremot äger flera domäner och använder samma CNAME för datainsamling i alla dina domäner behandlas cookien som en cookie från tredje part i dessa andra domäner. Med Chrome 80 och senare är den inte längre synlig i dessa andra domäner. För att beteendet ska bli mer likartat i alla webbläsare har Analytics uttryckligen angett `SameSite`-värdet för denna cookie till `Lax`. Om du använder den här cookien i en användarvänlig tredjepartskontext måste du ha cookien inställd med `SameSite=None`-värdet, vilket även innebär att du alltid måste använda HTTPS. Om du inte redan har gjort det kontaktar du kundtjänst på Adobe för att ändra värdet för SameSite för dina säkra CNAME.
+Om du däremot äger flera domäner och använder samma CNAME för datainsamling i alla dina domäner behandlas cookien som en cookie från tredje part i dessa andra domäner. Med Chrome 80 och senare är den inte längre synlig i dessa andra domäner. För att beteendet ska bli mer likartat i alla webbläsare har Analytics uttryckligen angett `SameSite` värdet för denna cookie till `Lax`. Om du använder den här cookien i en användarvänlig tredjepartskontext måste du ha cookien inställd med `SameSite=None` , vilket innebär att du alltid måste använda HTTPS. Om du inte redan har gjort det kontaktar du kundtjänst på Adobe för att ändra värdet för SameSite för dina säkra CNAME.
 
 ## Hur kan jag avgöra om Safari påverkar min verksamhet? {#measure-itp-effect}
 
@@ -143,7 +144,7 @@ Adobe rekommenderar att kunderna mäter effekten i sitt eget företag innan de �
 
       >[!NOTE]
       >
-      >Vilka webbläsare som påverkas av ITP beror på om du använder en CNAME-implementering. Mer information finns i &quot;[Tidslinjen för större ändringar av ITP-principen](#ITP-timeline)&quot;.
+      >Vilka webbläsare som påverkas av ITP beror på om du använder en CNAME-implementering. Se &quot;[Tidslinje för större ändringar av ITP-policyn](#ITP-timeline)&quot; för mer information.
 
       ![Segment för ITP-besökare](/help/technotes/assets/itp-visitor-segment.png)
 
@@ -176,4 +177,4 @@ Om ditt företag påverkas av förhindrande av ITP-spårning kan du vidta följa
 >[!MORELIKETHIS]
 >
 >[Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookieless.md)
->[The Impact of Apple&#39;s New App Tracking Transparency Framework on Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/the-impact-of-apple-s-new-app-tracking-transparency-framework-on/td-p/401833)
+>[Effekten av Apple nya App Tracking Transparency Framework på Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/the-impact-of-apple-s-new-app-tracking-transparency-framework-on/td-p/401833)

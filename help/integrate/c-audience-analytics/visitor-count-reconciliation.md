@@ -1,9 +1,9 @@
 ---
 description: Det finns besökarstatistik i Adobe Analytics och Adobe Audience Manager som har liknande definitioner, men som av olika skäl inte är helt anpassade.
 title: Skillnader i antal besökare
-uuid: c3bbb887-bd02-4c1c-9a2b-64811c0ef56a
+feature: Audience Analytics
 exl-id: be5a935a-c3a2-4ab4-8cd7-ed54a37932c8
-source-git-commit: f669af03a502d8a24cea3047b96ec7cba7c59e6f
+source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 3%
@@ -72,4 +72,4 @@ AAM för segmentpopulering i realtid och analytiska besökare med Experience Clo
  </tbody> 
 </table>
 
-Se [Förstå segment i analyser och Audience Manager](/help/integrate/c-audience-analytics/aam-analytics-segments.md) för ytterligare förklaringar av skillnaderna mellan data och segmentering i analyser och Audience Manager.
+Se [Förstå segment i Analytics och Audience Manager](/help/integrate/c-audience-analytics/aam-analytics-segments.md) för ytterligare förklaringar av nyanserna mellan Analytics och Audience Manager data och segmentering.
