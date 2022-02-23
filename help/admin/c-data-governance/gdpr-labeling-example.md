@@ -1,9 +1,9 @@
 ---
 description: Visar exempel på hur du kan etikettera data för träffdata, åtkomstbegäranden och borttagningsbegäranden
 title: Exempel på etiketter
-uuid: a9a5b937-dbde-4f0f-a171-005ef4c79df9
+feature: Data Governance
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: 91864a15bda5022dbbd9b9b312bc6c042078b6a5
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 63%

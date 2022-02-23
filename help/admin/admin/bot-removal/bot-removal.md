@@ -1,9 +1,9 @@
 ---
 title: Borttagning av bot i Adobe Analytics
 description: Så här tar du bort objekt i Adobe Analytics
-feature: Admin Tools
+feature: Bot Removal
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%

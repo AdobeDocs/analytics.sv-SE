@@ -1,11 +1,11 @@
 ---
 description: Variabler för sekretessrapportering inom datasekretess.
 title: Variabler för sekretessrapportering
-feature: Administratörsverktyg
+feature: Privacy
 exl-id: 3f7980a4-d826-4554-a9a0-673fd5b79653
-source-git-commit: 73161e10a2f70cd0e874d2c1de6d4f418b25aefb
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '414'
 ht-degree: 97%
 
 ---

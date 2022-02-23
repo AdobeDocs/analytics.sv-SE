@@ -1,15 +1,14 @@
 ---
 description: Med hjälp av data i etikettrapportsviten kan du tilldela etiketter för identiteter, känslighet och datastyrning till varje variabel i en viss rapportsvit. Se till att du först bekantar dig med etiketterna och deras definitioner.
 title: Data i etikettrapportsvit
-uuid: a694851c-8933-496e-9118-113cc38cba8a
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+feature: Data Governance
+exl-id: d1bd833c-3fd4-4572-a5dc-d7bab8a79cb8
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 100%
 
 ---
-
 
 # Data i etikettrapportsvit
 
@@ -93,4 +92,3 @@ Gör följande om du vill använda samma inställningar för DULE/datasekretess 
    >Kontrollera alltid målrapportsviterna för att säkerställa att etiketterna som kopieras över är korrekta. Detta är särskilt viktigt för variabler som har ID- eller DEL-etiketter.
 
 1. Klicka på **[!UICONTROL Apply]**.
-

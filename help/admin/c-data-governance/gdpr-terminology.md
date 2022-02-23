@@ -1,15 +1,14 @@
 ---
 description: Datastyrningsordlista för Adobe Analytics
 title: GDPR-terminologi
-uuid: a3e44f08-6f9c-4b23-874c-51c6e4be9af9
-translation-type: tm+mt
-source-git-commit: b3ea538d0d6e6ebbbbd17871aacaed7527cf3976
+feature: Data Governance
+exl-id: d6e6d363-ac5e-467e-af88-f6feda9cb980
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 99%
 
 ---
-
 
 # GDPR-terminologi
 

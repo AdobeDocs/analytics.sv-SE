@@ -1,10 +1,9 @@
 ---
 description: Skicka in förfrågningar om dataåtkomst och radering i Adobe Analytics.
 title: Skicka in begäran om åtkomst och borttagning
-uuid: d006cd5c-e3cd-4385-8683-acaf73cb681b
+feature: Data Governance
 exl-id: bb94cedf-ac9b-4d38-9136-bd3da2acf018
-translation-type: tm+mt
-source-git-commit: f3eb3c024a80d0b65729929960173f8b3a4267b0
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 96%
@@ -19,7 +18,7 @@ Du kanske också vill se till att dina mobilappar och webbplatser har relevanta 
 
 ## Hantera konsumentsamtycke {#section_3012015E7E8942519FB9279CF7057EAB}
 
-Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (eventuellt inklusive Adobe Analytics-data) och för att implementera en [avanmälningsmekanism](https://www.adobe.com/privacy/opt-out.html#customeruse) på din webbplats. På så vis kan era registrerade personer avanmäla sig från framtida datainsamling i Adobe Experience Cloud.
+Som registeransvarig ansvarar du för att få uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (eventuellt inklusive Adobe Analytics-uppgifter) och för att implementera en [avanmälningsmekanism](https://www.adobe.com/privacy/opt-out.html#customeruse) på din webbplats. På så vis kan era registrerade personer avanmäla sig från framtida datainsamling i Adobe Experience Cloud.
 
 ## Validera användare och deras data {#section_AFB2CC225AA94AF6A3CE9F24EF788358}
 

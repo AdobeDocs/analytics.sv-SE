@@ -1,9 +1,9 @@
 ---
 description: Dialogrutan Datastyrning i Administratörsverktyg ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning, om de har mappats till en Experience Cloud-organisation och om det finns en policy om datalagring för den här rapportsviten.
 title: Visa/hantera inställningar för datastyrning i rapportsviten
-uuid: f3b83e8e-00af-4a60-a5de-29b5c43f6788
+feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: 7cb2489c2deaf8e75c71589895314067a010caf8
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 100%

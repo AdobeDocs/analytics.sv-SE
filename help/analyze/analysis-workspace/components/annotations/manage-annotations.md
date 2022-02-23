@@ -2,13 +2,14 @@
 title: Hantera anteckningar
 description: Hantera anteckningar i Workspace.
 role: User, Admin
-source-git-commit: 89cbecf109a8fa9a9fac1f1ed8ad198ffdd398d3
+feature: Annotations
+exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 1%
 
 ---
-
 
 # Hantera anteckningar
 

@@ -1,15 +1,14 @@
 ---
 description: Varje ID som du vill kunna söka efter tilldelas ett namnutrymme, som är en anpassad sträng som identifierar det ID:t i variabeln där det används i alla rapportsviter.
 title: Namnutrymmen
-uuid: cab61844-3209-4980-b14c-6859de777606
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+feature: Data Governance
+exl-id: 421572c2-2789-48bc-b530-d48216799724
+source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 100%
 
 ---
-
 
 # Namnutrymmen
 
