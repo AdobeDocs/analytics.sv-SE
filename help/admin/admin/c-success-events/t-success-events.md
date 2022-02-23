@@ -1,9 +1,9 @@
 ---
 description: Steg som beskriver hur du konfigurerar lyckade händelser.
 title: Konfigurera slutförda händelser
-feature: Admin Tools
+feature: Event
 exl-id: 0e9a6d8f-2ce7-4551-885d-bd77ff131da0
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: d8603ddd6cee2ccc930281003d9ff1befa15c95c
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 8%

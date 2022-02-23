@@ -1,9 +1,9 @@
 ---
 description: Beskriver konsekvenserna av att ändra en händelsetyp efter att data har samlats in.
 title: Om att ändra händelsetypen
-feature: Admin Tools
+feature: Event
 exl-id: 6972431a-bb42-4b7f-b02b-ceef0ff56271
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: d8603ddd6cee2ccc930281003d9ff1befa15c95c
 workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 23%
