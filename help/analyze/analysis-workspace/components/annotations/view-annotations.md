@@ -4,7 +4,7 @@ description: Så här visar du anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: 863b47ee84c1446ed20beb9661bf5435c264b12e
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Anteckningarna visas något annorlunda beroende på om de sträcker sig över en
 | Datum | Utseende |
 | --- | --- |
 | **En dag** | ![](assets/single-day.png) |
-| **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![](assets/multi-day.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png)<p>Observera följande: på dagar som har fler än en anteckning kopplad till sig, kommer ikonen att vara en grå färg. |
+| **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![](assets/multi-day.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png)<p>Observera följande: på dagar som har fler än en anteckning kopplad till sig visas ikonen i grå färg. |
 
 ## Visa anteckningar i ett sammanfattningsdiagram
 
