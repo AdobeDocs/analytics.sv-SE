@@ -3,9 +3,9 @@ title: Skapa en Analytics-egenskap i taggar
 description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av taggar.
 feature: Launch Implementation
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 0763f2624d46eb282b7b4c94f7d103d8e9ad8095
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '582'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på **[!UICONTROL Save]**.
 1. Klicka på den nyligen skapade taggegenskapen för att ange dess inställningar.
 1. Klicka på **[!UICONTROL Extensions]** tabbtangenten och sedan klicka **[!UICONTROL Catalog]**.
-1. Leta reda på identitetstjänsten och klicka sedan på **[!UICONTROL Install]**.
+1. Sök efter tjänsten Experience Cloud ID och klicka sedan på **[!UICONTROL Install]**.
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
 1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
 
