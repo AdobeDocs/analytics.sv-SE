@@ -3,10 +3,10 @@ description: Varje ID som du vill kunna söka efter tilldelas ett namnutrymme, s
 title: Namnutrymmen
 feature: Data Governance
 exl-id: 421572c2-2789-48bc-b530-d48216799724
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Namnutrymmessträngen används för att identifiera de fält som du vill söka i
 * Ett typfält som för de flesta Adobe Analytics-begäranden innehåller värdet ”analytics”.
 * Ett värdefält som innehåller det ID som Analytics ska söka efter i de associerade namnutrymmesvariablerna från var och en av rapportsviterna.
 
-Mer information finns i dokumentationen [API för Experience Cloud-datasekretess](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/technical_overview/privacy_service_overview/privacy_service_overview.md).
+Mer information finns i dokumentationen [API för Experience Cloud-datasekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en).
 
 ## Cookie-ID
 
@@ -74,7 +74,7 @@ Det går också att använda `"namespaceId": 4` istället för, eller som tillä
 
 Om formatet för värdedelen av något av dessa cookie-ID:n inte överensstämmer med formatet som beskrivs för det ID:t, kommer begäran om datasekretess att misslyckas, och visa felmeddelandet ”Värdet är ej korrekt formaterat”.
 
-Du samlar oftast in dessa cookie-ID:n med det nya [JavaScript för sekretess](https://www.adobe.io/apis/cloudplatform/gdpr/services/allservices.htm), och förser automatiskt alla relevanta nyckel-/värdepar för dessa JSON-ID:n.
+Du samlar oftast in dessa cookie-ID:n med det nya [JavaScript för sekretess](https://developer.adobe.com/experience-platform-apis/references/privacy-service/), och förser automatiskt alla relevanta nyckel-/värdepar för dessa JSON-ID:n.
 
 JavaScript-koden fyller i JSON med andra nyckel-/värdepar utöver de som anges ovan (namnutrymme, typ, värde), men fälten som listas ovan är de viktigaste för behandling av datasekretess i Analytics och de enda som du behöver ange om du samlar in ID:n på något annat sätt.
 

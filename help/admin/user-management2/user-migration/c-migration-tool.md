@@ -3,9 +3,9 @@ description: Vad du behöver veta om migreringen av användar-ID:n för Analytic
 title: Migrering av Analytics-användare till Admin Console
 feature: Admin Tools
 exl-id: f4bc0e92-af53-40db-8138-44d29e4b25fe
-source-git-commit: 0143496648e59e95c360388735def726e63ee71b
+source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
 workflow-type: tm+mt
-source-wordcount: '3113'
+source-wordcount: '3109'
 ht-degree: 0%
 
 ---
@@ -280,7 +280,7 @@ Viktig information om migreringsprocessen och hur den påverkar den aktuella anv
   </tr> 
   <tr> 
    <td colname="col1"> <p>API:er för användarhantering <a href="https://helpx.adobe.com/enterprise/help/identity.html"> Identitetstyper som stöds av Adobe</a> </p> </td> 
-   <td colname="col2"> <p> Administratörer som migrerar till Admin Console bör konfigurera<a href="https://www.adobe.io/apis/cloudplatform/usermanagement/docs/gettingstarted.html"> API:er för användarhantering</a> som erbjuds på Adobe I/O för programmatisk åtkomst till användarkonton i Admin Console. </p> <p>API:erna för Analytics-behörighet kommer att stängas av när du har aktiverat för migreringen. </p> </td> 
+   <td colname="col2"> <p> Administratörer som migrerar till Admin Console bör konfigurera<a href="https://developer.adobe.com/UMAPI/"> API:er för användarhantering</a> som erbjuds på Adobe I/O för programmatisk åtkomst till användarkonton i Admin Console. </p> <p>API:erna för Analytics-behörighet kommer att stängas av när du har aktiverat för migreringen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Autentiseringsuppgifter för webbtjänst </p> </td> 

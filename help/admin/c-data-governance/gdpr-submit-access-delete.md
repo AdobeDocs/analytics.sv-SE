@@ -3,10 +3,10 @@ description: Skicka in förfrågningar om dataåtkomst och radering i Adobe Anal
 title: Skicka in begäran om åtkomst och borttagning
 feature: Data Governance
 exl-id: bb94cedf-ac9b-4d38-9136-bd3da2acf018
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 96%
+source-wordcount: '1301'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ Varje fil kombinerar data från alla rapportsviter och tar automatiskt bort extr
 
 ## Skicka begäranden {#submit-requests}
 
-Du kan skicka in begäranden om datasekretess och ta bort dem via vår [användargränssnittsportal för datasekretess](https://docs.adobe.com/content/help/sv-SE/experience-platform/privacy/home.html#!api-specification/markdown/narrative/tutorials/privacy_service_tutorial/privacy_service_ui_tutorial.md) eller via vårt [API för dataskydd.](https://www.adobe.io/apis/experienceplatform/gdpr.html)
+Du kan skicka in förfrågningar om dataintegritet och radera dem via vår [Privacy Servicens användargränssnitt](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=en) eller via vår [Privacy Services-API.](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en)
 
 >[!NOTE]
 >

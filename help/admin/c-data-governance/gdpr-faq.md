@@ -3,9 +3,9 @@ description: Vanliga frågor om datahantering i Adobe Analytics
 title: Frågor och svar
 feature: Data Governance
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1802'
 ht-degree: 97%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 97%
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>Hur får Adobe-kunder (personuppgiftsansvariga) reda på vilka begäranden om datasekretess som mappas till vilka ID:n i Adobe Analytics för datasekretess?</b> </p> </td> 
-   <td colname="col2"> <p>De personuppgiftsansvariga avgör hur de ska lösa identiteten på begäranden från de registrerade. Överväg att distribuera <a href="https://www.adobe.io/apis/cloudplatform/gdpr/services/allservices.htm"> Adobes hämtningstagg för datasekretess-ID. </a> Utvecklingsteamen sparar tid genom att använda vår hämtningstagg för datasekretess-ID för att hämta användar-ID:n (cookie-ID:n) och sedan använda vår API för datasekretess för att skicka dessa användar-ID:n till relevanta lösningar i Adobe Experience Cloud för behandling av begäran om datasekretess. </p> <p>API:t för datasekretess stöder ett brett urval av kund-ID:n för flera Adobe-lösningar. Om en registrerad person skickar en begäran tillsammans med en identifierare (anpassad variabel – prop eller eVar), kommer Adobe Analytics att söka igenom hela den lagrade historiken för de data som samlats in för den angivna identifieraren. Mer information om hur du konfigurerar anpassade ID:n som lagras i Analytics-utkast eller eVars finns i Analytics-dokumentationen om <a href="/help/admin/c-data-governance/gdpr-namespaces.md"> namnutrymmen.</a>
+   <td colname="col2"> <p>De personuppgiftsansvariga avgör hur de ska lösa identiteten på begäranden från de registrerade. Överväg att distribuera <a href="https://developer.adobe.com/experience-platform-apis/references/privacy-service/"> Adobes hämtningstagg för datasekretess-ID. </a> Utvecklingsteamen sparar tid genom att använda vår hämtningstagg för datasekretess-ID för att hämta användar-ID:n (cookie-ID:n) och sedan använda vår API för datasekretess för att skicka dessa användar-ID:n till relevanta lösningar i Adobe Experience Cloud för behandling av begäran om datasekretess. </p> <p>API:t för datasekretess stöder ett brett urval av kund-ID:n för flera Adobe-lösningar. Om en registrerad person skickar en begäran tillsammans med en identifierare (anpassad variabel – prop eller eVar), kommer Adobe Analytics att söka igenom hela den lagrade historiken för de data som samlats in för den angivna identifieraren. Mer information om hur du konfigurerar anpassade ID:n som lagras i Analytics-utkast eller eVars finns i Analytics-dokumentationen om <a href="/help/admin/c-data-governance/gdpr-namespaces.md"> namnutrymmen.</a>
     </p> </td> 
   </tr> 
   <tr> 

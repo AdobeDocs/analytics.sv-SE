@@ -3,9 +3,9 @@ description: Bearbetning av rapporttid är en virtuell rapportsvitsinställning 
 title: Bearbetning av rapporttid
 feature: VRS
 exl-id: 3742b9d1-f1fb-4690-bd44-b4719ff9d9bc
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---
@@ -30,14 +30,14 @@ Under databearbetningen i Analytics flödar data genom datainsamlingsflödet och
 
 Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan t.ex. ändra besökets tidsgräns till hur länge du vill på ett icke-förstörande sätt och dessa ändringar återspeglas i eVar beständighet och segmentbehållare retroaktivt som om du hade använt dessa inställningar innan data samlades in. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
 
-[!UICONTROL Report Time Processing] gör det även möjligt för Analytics att förhindra bakgrundstötar från att starta nya besök och [mobil SDK](https://www.adobe.io/apis/cloudplatform/mobile.html) för att ange att rapportering ska starta ett nytt besök när en appstartshändelse utlöses.
+[!UICONTROL Report Time Processing] gör det även möjligt för Analytics att förhindra bakgrundstötar från att starta nya besök och [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) för att ange att rapportering ska starta ett nytt besök när en appstartshändelse utlöses.
 
 ## Konfigurationsalternativ
 
 Följande konfigurationsalternativ är tillgängliga för virtuella rapportsviter med rapporttidsbearbetning aktiverat:
 
 * **[!UICONTROL Visit Timeout]:** Inställningen för tidsgräns för besök anger hur mycket inaktivitet en unik besökare måste ha innan ett nytt besök startas automatiskt. Standardvärdet är 30 minuter. Om du till exempel anger tidsgränsen för besök till 15 minuter skapas en ny besöksgruppering för varje sekvens av träffar som samlats in, åtskilda med 15 minuters inaktivitet. Den här inställningen påverkar inte bara antalet besök, utan även hur besökssegmentens behållare utvärderas och besökets förfallologik för eVars som förfaller vid besök. Om du minskar tidsgränsen för besöket ökar troligen det totala antalet besök i din rapportering, medan tidsgränsen för besöket minskar det totala antalet besök i din rapportering.
-* **[!UICONTROL Mobile App Visit Settings]:** För rapportsviter som innehåller data som genererats av mobilappar via [Adobe Mobile SDKs](https://www.adobe.io/apis/cloudplatform/mobile.html)finns ytterligare inställningar för besök. De här inställningarna är icke-förstörande och påverkar bara träffar som samlats in via Mobile SDK:er. De här inställningarna påverkar inte data som samlats in utanför Mobile SDK.
+* **[!UICONTROL Mobile App Visit Settings]:** För rapportsviter som innehåller data som genererats av mobilappar via [Adobe Mobile SDKs](https://experienceleague.adobe.com/docs/mobile.html)finns ytterligare inställningar för besök. De här inställningarna är icke-förstörande och påverkar bara träffar som samlats in via Mobile SDK:er. De här inställningarna påverkar inte data som samlats in utanför Mobile SDK.
 * **[!UICONTROL Prevent Background Hits from starting a new Visit]:** Bakgrundsträffar samlas in av Mobile SDK:er när appen är i bakgrundsläge.
 * **[!UICONTROL Start a New Visit upon each App Launch]:** Förutom tidsgränsen för besök kan du tvinga ett besök att börja när en Appstart-händelse har spelats in från Mobile SDK:er oavsett inaktivitetsfönstret. Den här inställningen påverkar besöksmåtten och besökssegmentbehållaren, liksom logiken för besökets förfallodatum på eVars.
 * **[!UICONTROL Start New Visit with Event]:** En ny session startar när en händelse utlöses, oavsett om en session har uppnått tidsgränsen eller inte. Den nyligen skapade sessionen innehåller händelsen som startade den. Dessutom kan du använda flera händelser för att starta en session och en ny session utlöses om någon av dessa händelser observeras i data. Den här inställningen påverkar antalet besök, besökssegmenteringsbehållaren och besökets förfallologik på eVars.
