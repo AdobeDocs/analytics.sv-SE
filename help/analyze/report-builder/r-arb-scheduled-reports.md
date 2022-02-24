@@ -4,9 +4,9 @@ title: Schemalagd aktivitetshanterare
 feature: Report Builder
 role: User, Admin
 exl-id: 8bacd7e4-ab50-4b36-842c-a8b6130a58d9
-source-git-commit: 68a8eb3452d3f86bb59140ab5842667094198dee
+source-git-commit: 91d94ba33328f0ac5fba09cdafb26f58733b4d58
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '622'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Syftet med den här pausen är att effektivt hantera och underhålla vår databa
 | [!UICONTROL Publishing Options] | Den här kolumnen listar Power BI om något av [Publiceringsalternativ för Power BI](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/publish-powerbi/power-bi.html) är markerat. |
 | [!UICONTROL Schedule] | Typen av schemalagd leverans. |
 | [!UICONTROL File Format] | Rapportens leveransformat, t.ex. Excel, PDF, HTML och så vidare. |
-| [!UICONTROL Reactivate] | När en schemalagd arbetsbok inte kan köras försöker Report Builder att köra arbetsboken ytterligare två gånger var femtonde minut. Efter tre misslyckade försök inaktiverar Report Builder schemat och visar knappen Återaktivera. När du återaktiverar en arbetsbok startar den schemalagda leveransen om från den tidpunkt den inaktiverades.  Om en schemalagd arbetsbok till exempel inaktiverades för 14 dagar sedan och du återaktiverar den i dag, körs den för varje dag som saknas och levereras 14 gånger. Om du inte vill att arbetsboken ska levereras för de dagar som saknas kan du ta bort den schemalagda arbetsboken och sedan skapa en ny schemalagd arbetsbok med samma schemaläggningsparametrar.   Obs! Du bör inte återaktivera en arbetsbok om du inte vet varför den har inaktiverats. En felsökningslösning är att ladda ned en inaktiverad arbetsbok och uppdatera den på klientsidan. Om du inte ser några fel bör du kunna återaktivera det. |
+| [!UICONTROL Reactivate] | När en schemalagd arbetsbok inte kan köras försöker Report Builder att köra arbetsboken ytterligare två gånger var femtonde minut. Efter tre misslyckade försök inaktiverar Report Builder schemat och visar knappen Återaktivera. När du återaktiverar en arbetsbok startar den schemalagda leveransen om från den tidpunkt den inaktiverades.<p>Om en schemalagd arbetsbok till exempel inaktiverades för 14 dagar sedan och du återaktiverar den i dag, körs den för varje dag som saknas och levereras 14 gånger. Om du inte vill att arbetsboken ska levereras för de dagar som saknas kan du ta bort den schemalagda arbetsboken och sedan skapa en ny schemalagd arbetsbok med samma schemaläggningsparametrar.<p>**Obs!** Återaktivera inte en arbetsbok om du inte vet varför den har inaktiverats. Om du vill felsöka hämtar du en inaktiverad arbetsbok och uppdaterar den på klientsidan. Om du inte ser några fel bör du kunna återaktivera det. |
 | [!UICONTROL Last sent] | Datum och tid då rapporten senast skickades. |
 | **Fliken Mottagare** |  |
 | [!UICONTROL Recipient email] | Rapportens e-postmottagare. |
