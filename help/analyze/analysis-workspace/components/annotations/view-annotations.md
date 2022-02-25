@@ -4,9 +4,9 @@ description: Så här visar du anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 863b47ee84c1446ed20beb9661bf5435c264b12e
+source-git-commit: 8e15d386379d98066973112b0e81b507d67c694d
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,9 @@ Anteckningarna visas något annorlunda beroende på om de sträcker sig över en
 
 | Datum | Utseende |
 | --- | --- |
-| **En dag** | ![](assets/single-day.png) |
-| **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![](assets/multi-day.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png)<p>Observera följande: på dagar som har fler än en anteckning kopplad till sig visas ikonen i grå färg. |
+| **En dag** | ![](assets/single-day.png)<p>När du hovrar över anteckningen kan du se dess detaljer, redigera den genom att markera pennikonen eller ta bort den:<p> ![](assets/hover.png) |
+| **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![](assets/multi-day.png)<p>När du markerar den i linjediagrammet visas anteckningens metadata och du kan redigera eller ta bort den:![](assets/multi-hover.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png) |
+| **Överlappande anteckningar** | På dagar som har fler än en anteckning kopplad till sig visas ikonen i grå färg.<p>![](assets/grey.png)<p>När du hovrar över den grå ikonen visas alla överlappande anteckningar:<p>![](assets/overlap.png) |
 
 ## Visa anteckningar i ett sammanfattningsdiagram
 
