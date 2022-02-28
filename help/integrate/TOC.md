@@ -3,10 +3,10 @@ product: analytics
 audience: end-user
 user-guide-title: Integreringshandbok för Analytics
 breadcrumb-title: Integreringshandbok
-user-guide-description: Konfigurera integreringar med andra Adobe Experience Cloud-lösningar som Audience Manager, Advertising Cloud och Target.
-source-git-commit: c68ab53242328702fb5a0ad9f1e28aafc6fb119b
+user-guide-description: Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, som Audience Manager och Advertising Cloud.
+source-git-commit: 70a1d61a6e9af27c449876ac4cf4d7504659be3a
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '184'
 ht-degree: 55%
 
 ---
