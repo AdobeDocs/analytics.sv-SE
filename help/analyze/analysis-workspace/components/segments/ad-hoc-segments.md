@@ -4,31 +4,29 @@ title: Ad hoc-segment
 feature: Segmentation
 role: User, Admin
 exl-id: 1c189abc-ab9f-413c-9be6-0d2fc457230e
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: f50e3d9a1d3c1705c55a14af0e42a0da3ac00955
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 0%
+source-wordcount: '311'
+ht-degree: 1%
 
 ---
 
 # Ad hoc-projektsegment
 
+Med ad hoc-projektsegment kan du dra och släppa alla komponenter direkt i panelens släppzon för att skapa ett segment. Segmentet blir ett [projektnivåsegment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html?#what-are-project-only-segments%3F) lokalt till det aktuella projektet.
+
 Här är en video om hur du skapar ad hoc-projektsegment:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
-Du kan skapa ad hoc-projektsegment om du snabbt vill utforska hur ett segment kan påverka projektet, utan att gå till segmentbyggaren. Tänk på dessa segment som tillfälliga segment på projektnivå. De är vanligtvis inte en del av ditt segment som&quot;bibliotek&quot;, som komponentsegment i den vänstra listen. Du kan dock spara dem enligt nedan.
-
-Om du vill jämföra vad ad hoc-projektsegment kan göra jämfört med fullständiga segment på komponentnivå går du till [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
-
-1. Släpp en komponenttyp (dimension, dimensionsobjekt, händelse, mått, segment, segmentmall, datumintervall) i segmentsläppzonen längst upp på panelen. Komponenttyper konverteras automatiskt till segment.
+1. Släpp en komponenttyp (dimension, dimensionsobjekt, händelse, mått, segment, segmentmall, datumintervall) i segmentsläppzonen längst upp på panelen. Komponenttyper konverteras automatiskt till ad hoc-segment eller [Snabbsegment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html) om det är kompatibelt.
 Här följer ett exempel på hur du skapar ett segment för den hänvisande domänen för Twitter:
 
    ![](assets/ad-hoc1.png)
 
    Panelen tillämpar automatiskt det här segmentet och du ser resultatet direkt.
 
-1. Du kan lägga till ett obegränsat antal komponenter på en panel.
+1. Du kan lägga till ett obegränsat antal segment på en panel.
 1. Om du bestämmer dig för att du vill spara det här segmentet, se avsnittet nedan.
 
 Tänk på följande:
@@ -37,19 +35,15 @@ Tänk på följande:
 * För alla dimensioner och händelser skapar Analysis Workspace&quot;finns&quot;-träffsegment. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
 * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i segmentets släppzon konverteras det automatiskt till segmentet &quot;does not exist&quot; så att det behandlas korrekt i segmentering.
 
->[!NOTE]
->
->Segment som skapas på det här sättet är interna för projektet.
+Om du vill jämföra de olika segment du kan skapa och använda i ett projekt går du till [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
 
-## Spara tillfälliga projektsegment {#ad-hoc-save}
+## Spara ad hoc-segment {#ad-hoc-save}
 
-Du kan välja att spara dessa segment genom att följa dessa steg:
+Ad hoc-segment kan göras tillgängliga för andra projekt genom att spara dem.
 
 1. Håll pekaren över segmentet i släppzonen och klicka på ikonen i.
-1. Klicka på **[!UICONTROL Save]**.
+1. Klicka på redigeringspennan för att gå till segmentbyggaren.
+1. Kontrollera **[!UICONTROL Make available to all projects and add to your component list]**.
+1. Klicka på **[!UICONTROL SAVE]**.
 
-   ![](assets/segment-info.png)
-
-## Vad är segment med endast projekt?
-
-Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i segmentbyggaren visas rutan för endast projekt. Om de använder ett snabbsegment i byggaren men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i QS-byggaren. Om de markerar kryssrutan och SPARA är den nu ett komponentlistsegment.
+När segmentet har sparats är det tillgängligt i den vänstra listan över komponenter för spår och kan delas med andra användare från segmenthanteraren.
