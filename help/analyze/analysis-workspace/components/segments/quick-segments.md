@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 417f57f6987f58b1acd0feb087fbdc854a0d03fa
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 1%
 
 Du kan skapa snabbsegment i ett projekt för att slippa komplexiteten i den fullständiga [segmentbyggare](/help/components/segmentation/segmentation-workflow/seg-build.md). Snabbsegment
 
-* Gäller endast projekt i vilka de har skapats (du kan ändra detta).
+* Använd som [endast projektsegment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html?lang=en#what-are-project-only-segments%3F).
 * Tillåt upp till tre regler.
 * Innesluta inte kapslade behållare eller sekventiella regler.
-* Arbeta i projekt med flera rapportsviter.
 
 Om du vill jämföra vad snabbsegment kan göra jämfört med fullständiga komponentlistsegment går du till [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
-
->[!IMPORTANT]
-> Snabbsegment är för närvarande i begränsade tester och kommer att vara allmänt tillgängliga den 21 oktober 2021.
 
 ## Förutsättningar
 
@@ -81,14 +77,16 @@ Segmentet visas överst. Lägg märke till dess blå, randiga sidospalt, till sk
 1. (Valfritt) Byt namn på segmentet.
 1. Klicka på **[!UICONTROL Save]**.
 
-Lägg märke till hur segmentets sidlist ändras från randig blå till blå. Den visas nu i komponentlistan i den vänstra listen.
+Lägg märke till hur segmentets sidlist ändras från randig blå till blå. Den visas nu även i den vänstra listan över komponenter för rälsen.
 
 ## Vad är segment med endast projekt?
 
-Endast projektsegment är antingen snabbsegment eller tillfälliga projektsegment för arbetsytan. När du redigerar/öppnar dem i [!UICONTROL Segment Builder]visas den projektspecifika rutan. Om du använder ett snabbsegment i verktyget men inte markerar kryssrutan Gör tillgänglig är det fortfarande ett segment som bara är till för projektet, men det kan inte längre öppnas i [!UICONTROL Quick Segment Builder].
+Endast projektsegment är segment som bara gäller för det aktuella projektet som de skapades i. De är inte tillgängliga i andra projekt och kan inte delas med andra användare. De är avsedda för att snabbt kunna utforska dina data utan att du behöver skapa och spara ett segment i den vänstra listen. Du kan skapa segment som bara innehåller projekt i panelens släppzon med snabbsegment eller [tillfälliga segment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/ad-hoc-segments.html?lang=en).
+
+Om ett segment som bara är för projekt öppnas i [!UICONTROL Segment Builder]visas ett meddelande om att projektet bara är öppet. Om du inte markerar&quot;Gör det här segmentet tillgängligt..&quot; och klicka **[!UICONTROL APPLY]** förblir segmentet bara ett projektsegment. Obs! om du använder ett snabbsegment från segmentbyggaren kan det inte längre öppnas i [!UICONTROL Quick Segment Builder].
 
 ![Endast projektet är omarkerat](assets/project-only-unchecked.png)
 
-Om du markerar rutan och klickar på **[!UICONTROL SAVE]**&#x200B;är det nu ett komponentlistsegment.
+Om du markerar&quot;Gör det här segmentet tillgängligt..&quot; och klicka **[!UICONTROL SAVE]** blir segmentet tillgängligt i den vänstra listan över järnvägskomponenter för användning i andra projekt. Den kan även delas med andra användare från segmenthanteraren.
 
 ![Endast projektet är markerat](assets/project-only-checked.png)
