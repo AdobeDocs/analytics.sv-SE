@@ -3,9 +3,9 @@ title: Validera en utvecklingsimplementering och publicera till produktion
 description: Lär dig hur du använder Adobe Experience Platform-taggar för att distribuera Adobe Analytics till din produktionsmiljö.
 feature: Launch Implementation
 exl-id: 2f5bcfee-d75e-4dac-bea9-91c6cc545173
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 7cae63a63b7047c1907ebe4c4f25f38b6b4237d4
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -14,27 +14,22 @@ ht-degree: 0%
 
 När taggbiblioteket är i produktion kan ni börja använda Adobe Analytics för att hämta in grundläggande rapporter.
 
->[!NOTE]
->Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad hänvisning till terminologiska förändringar.
-
 ## Förutsättningar
 
 [Distribuera er Analytics-implementering i er utvecklingsmiljö](deploy-dev.md): En Analytics-implementering måste publiceras i utvecklingsmiljön för att den här sidan ska kunna följas.
 
 ## Validera din dev-implementering med felsökningsfunktionen i Experience Cloud
 
-Felsökaren Experience Cloud är en Chrome-plugin som visar alla Experience Cloud-taggar som finns på en sida.
+Felsökaren Experience Cloud är ett tillägg som visar alla Experience Cloud-taggar som finns på en sida.
 
-1. Öppna [Chrome Web Browser](https://www.google.com/chrome/) och gå till [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) på Chrome Web Store för att installera tillägget.
+1. Installera tillägget för antingen [Krom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) eller [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/).
 2. Navigera till den utvecklingswebbplats där du har implementerat taggar.
-3. Klicka på felsökningsikonen för Adobe Experience Cloud i det övre högra hörnet av Chrome
-4. Om allt är korrekt implementerat bör du se innehåll i Adobe Analytics, taggar och tjänsten Adobe Experience Cloud Visitor ID:
-
-![debugger][assets/debugger.png]
+3. Klicka på Adobe Experience Cloud felsökningsikon i webbläsaren.
+4. Om allt är korrekt implementerat bör du se innehåll i Adobe Analytics, taggar och tjänsten Adobe Experience Cloud Visitor ID.
 
 ## Distribuera din dev-implementering till staging/prod
 
-När du har validerat dina data kan du överföra implementeringen till den publicerade versionen av webbplatsen.
+När du har verifierat att du ser data kan du överföra implementeringen till den publicerade versionen av webbplatsen.
 
 1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
@@ -45,7 +40,7 @@ När du har validerat dina data kan du överföra implementeringen till den publ
 1. Klicka på bibliotekets listruta igen och välj **[!UICONTROL Approve for Publishing]**.
 1. Klicka på bibliotekets listruta igen (nu i [!UICONTROL Approved] kolumn) och markera **[!UICONTROL Build and Publish to Production]**.
 1. Gå till fliken Miljö och klicka **[!UICONTROL Production Environment]**.
-1. Kopiera produktionshuvudet + sidfotskoden och ge den till webbplatsägarna. Begär att de implementerar den här koden i din webbplats produktionsmiljö.
+1. Kopiera produktionsinstallationskoden och skicka den till webbplatsägarna. Begär att de implementerar den här koden i din webbplats produktionsmiljö.
 
 ## Validera din produktionsimplementering
 
@@ -63,7 +58,7 @@ Bekräfta att du ser data i den publicerade versionen av din webbplats och börj
 * Det finns inga JavaScript-fel i konsolen. Samarbeta med webbplatsägarna i organisationen för att säkerställa att alla JS-fel åtgärdas.
 * Huvudkoden är korrekt implementerad: Kontrollera att rubriktexten finns inuti `<head>` och att filen finns.
 * AppMeasurement-biblioteket finns: Navigera direkt till JS-källan för att kontrollera att JS-filen innehåller kod. Om så inte är fallet kontrollerar du att alla miljöer har skapats och att biblioteket har publicerats i respektive miljö.
-* Interfering plug-ins: Vissa Chrome-plugin-program kan förhindra att bildbegäranden utlöses. Inaktivera plugin-program som kan förhindra att data skickas till Adobe-servrar.
+* Interfering extensions: Vissa tillägg, till exempel annonsblockerare, kan förhindra att bildbegäranden utlöses. Inaktivera tillägg som kan stoppa data från att skickas till Adobe.
 
 ## Nästa steg
 

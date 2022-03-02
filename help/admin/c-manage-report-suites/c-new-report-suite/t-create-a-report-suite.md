@@ -3,10 +3,10 @@ description: Skapa en grundläggande behållare för datainsamling i Adobe Analy
 title: Skapa en rapportsvit
 feature: Report Suite Settings
 exl-id: 255ae051-d993-41a5-8cf3-819a54c17e34
-source-git-commit: 72bd67179e003b70233d863d34153fec77548256
+source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 5%
+source-wordcount: '307'
+ht-degree: 6%
 
 ---
 
@@ -24,13 +24,13 @@ Den här artikeln är avsedd för systemnivåadministratörer eller Adobe Analyt
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Klicka på **[!UICONTROL Create New]** > **[!UICONTROL Report Suite]**.
-1. Om du vill kopiera inställningarna för en rapportserie väljer du i malllistan antingen en fördefinierad mall eller en befintlig rapportserie att använda som [mall.](/help/admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
+1. Välj antingen en fördefinierad mall eller en befintlig rapportserie att använda som [mall](../c-report-suite-templates/report-suite-templates.md).
 
    >[!NOTE]
    >
    >Endast inställningar kan kopieras, inte data. Om kundtjänst kopierar inställningarna måste du lämna en skriftlig bekräftelse till den ansvarsfriskrivning som tillhandahålls av kundtjänst om riskerna. Se [Inställningar som inte kopierats från en källrapportsserie](/help/admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md) för mer information.
 
-1. Fyll i fälten som beskrivs i [Ny Report Suite.](/help/admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
+1. Fyll i fälten som beskrivs i [Ny Report Suite.](../c-new-report-suite/new-report-suite.md)
 1. Klicka på **[!UICONTROL Create Report Suite]**.
 
 Ett rapportsvit-ID får innehålla högst 40 byte. Ett eget namn för en rapportsserie har en maxlängd på 255 byte.
@@ -41,10 +41,6 @@ Ett rapportsvit-ID får innehålla högst 40 byte. Ett eget namn för en rapport
 
 Det innebär att ditt konto inte har tilldelats rätt behörigheter till Analytics. Arbeta med en systemnivåadministratör i organisationen för att säkerställa att du tillhör en profil med tillräcklig behörighet för åtkomst till Adobe Analytics.
 
-**När du har loggat in på Adobe Analytics saknas popup-menyn Välkommen till Adobe Analytics.**
-
-Se till att du har loggat in via [Experience Cloud](https://experience.adobe.com)och inte via my.omniture.com. Användare som loggar in via my.omniture.com har inte tillgång till installationsguiden för rapportsviten.
-
 ## Nästa steg
 
-[Skapa en Adobe Analytics-taggegenskap ](/help/implement/launch/create-analytics-property.md): Skapa ett område för att hantera er Analytics-implementering
+[Skapa en Adobe Analytics-taggegenskap](/help/implement/launch/create-analytics-property.md): Skapa ett område för att hantera er Analytics-implementering.

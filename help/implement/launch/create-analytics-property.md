@@ -3,19 +3,16 @@ title: Skapa en Analytics-egenskap i taggar
 description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av taggar.
 feature: Launch Implementation
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
-source-git-commit: 0763f2624d46eb282b7b4c94f7d103d8e9ad8095
+source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 1%
+source-wordcount: '486'
+ht-degree: 2%
 
 ---
 
 # Skapa en Adobe Analytics-taggegenskap
 
 Taggar i Adobe Experience Platform gör att du kan integrera Experience Cloud-lösningar på din webbplats (inklusive Analytics). På den här sidan beskrivs särskilt hur en tagghanterare kan få en grundläggande Adobe Analytics-implementering korrekt konfigurerad.
-
->[!NOTE]
->Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad hänvisning till terminologiska förändringar.
 
 ## Förutsättningar
 
@@ -34,25 +31,27 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
 1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
 
+Se den fullständiga dokumentationen för [Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en) för mer detaljerad information.
+
 ## Skapa dataelement för Adobe Analytics
 
 Dataelement är referenser till specifika delar av webbplatsen för att samla in variabelvärden.
 
 1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och sedan klicka **[!UICONTROL Create New Data Element]**.
+1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och sedan klicka **[!UICONTROL Add Data Element]**.
 1. Ge dataelementet följande inställningar:
 
    * Namn: Sidnamn
    * Tillägg: Core
    * Dataelementtyp: JavaScript-variabel
-   * Sökväg till variabel: `window.document.title`
+   * JavaScript-variabelnamn: `window.document.title`
 
       >[!NOTE]
       >
-      >Detta är ett exempelvärde som hjälper dig att komma igång. Om din organisation definierar ett bättre värde för sidnamn, till exempel ett datalagervärde, kan du ange det här.
+      >Det här värdet är ett exempel som hjälper dig att komma igång. Om din organisation definierar ett bättre värde för sidnamn, till exempel ett datalagervärde, kan du ange det här.
    * Rensa text
-   * Varaktighet: Sidvy
+   * Lagringstid: Ingen
 1. Klicka på **[!UICONTROL Save]**.
 
 ## Skapa regler för Adobe Analytics
@@ -61,12 +60,11 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
 
 1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-1. Klicka **[!UICONTROL Create New Rule]** och namnge `Global Rule`.
+1. Klicka på **[!UICONTROL Rules]** tabbtangenten och sedan klicka **[!UICONTROL Add Rule]**. Ge den ett namn `Global Rule`.
 1. Klicka **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
    * Tillägg: Core
    * Händelsetyp: Bibliotek inläst (sidan ovanpå)
    * Namn: Kärna - Bibliotek inläst (sidan ovanpå)
-   * Ordning: 50
 1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Under **[!UICONTROL Actions]**, klicka **[!UICONTROL Add]** och ange följande inställningar:
    * Tillägg: Adobe Analytics
@@ -81,12 +79,6 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
    * Spårning: s.t()
 1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Kontrollera att du har en händelse och två åtgärder angivna och klicka sedan på **[!UICONTROL Save]**.
-
-## Dokumentation och ytterligare resurser
-
-* [Dokumentation för Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en): Fullständig dokumentation som är specifik för tillägget Adobe Analytics i taggar.
-* [Komma igång med taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=en): Fullständig dokumentation för taggar, inklusive en mer ingående guide för hur du kommer igång
-* [Adobe Experience Platform Launch](https://experienceleague.adobe.com/?tag=Launch#recommended/solutions/experience-platform): Lär dig använda taggar via videor
 
 ## Nästa steg
 

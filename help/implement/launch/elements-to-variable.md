@@ -3,19 +3,17 @@ title: Mappa taggdataelement till analysvariabler
 description: Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
 feature: Launch Implementation
 exl-id: 996c1204-3f8a-453e-8104-5e8e1279517c
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
+
 # Mappa taggdataelement till analysvariabler
 
 När du har en databas med taggdataelement kan du tilldela dem till Analytics-dimensioner.
-
->[!NOTE]
->Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad hänvisning till terminologiska förändringar.
 
 ## Förutsättningar
 

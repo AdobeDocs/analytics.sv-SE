@@ -3,17 +3,14 @@ title: Implementera med taggar i Adobe Experience Platform
 description: Lär dig implementera Adobe Analytics med hjälp av taggar
 feature: Launch Implementation
 exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
 # Implementera med taggar i Adobe Experience Platform
-
->[!NOTE]
->Adobe Experience Platform Launch har omklassificerats som en serie datainsamlingstekniker i Experience Platform. Som ett resultat av detta har flera terminologiska förändringar införts i produktdokumentationen. Se följande [dokument](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en) för en konsoliderad hänvisning till terminologiska förändringar.
 
 Under Adobe Analytics livstid har Adobe erbjudit flera olika metoder för att implementera kod på er webbplats för datainsamling. Adobe nuvarande rekommenderade metod är via taggar i Adobe Experience Platform.
 
