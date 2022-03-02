@@ -4,9 +4,9 @@ title: Segment
 feature: Segmentation
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 5e9894e3b7ea3e6c36e45b3683c08a1c767df8f0
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Du kan skapa olika typer av segment i Workspace, beroende på hur komplexa de be
 | Segmenttyp | Skapad var? | Tillämpligt var? | När ska användas |
 | --- | --- | --- | --- |
 | Segment i komponentlista | Klicka på +, vilket tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla arbetsyteprojekt | För mer komplexa segment, sekventiella segment |
-| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
+| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | [Endast projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html?#what-are-project-only-segments%3F), men kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
 | Ad hoc-segment: |  |  |  |
-| - Ad hoc Workspace-projektsegment | [Dra och släpp i segmentsläppzonen i ett projekt](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | För segment med en regel |
+| - Ad hoc Workspace-projektsegment | [Dra och släpp i segmentsläppzonen i ett projekt](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md) | [Endast projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html?#what-are-project-only-segments%3F), men kan spara och lägga till i segmentlistan. | För segment med en regel |
 | - Beräknat metrisk baserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
 | - VRS-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i VRS-definitionen |
 
