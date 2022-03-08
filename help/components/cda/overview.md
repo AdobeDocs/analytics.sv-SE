@@ -2,9 +2,9 @@
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
-source-git-commit: 13428ba0d149482a099fbdaa74890b59dd0891eb
+source-git-commit: b5fe55f69d30d87cc394d731d2ae696152faa535
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Gör att du kan välja en Analytics-variabel som bas för sammanfogning mellan e
 
 >[!NOTE]
 >
->Läs mer om [Device Co-op end-of-life](https://experienceleague.adobe.com/docs/device-co-op/using/about/device-co-op-eol.html).
+>Läs mer om [Device Co-op - slut på livscykeln](https://experienceleague.adobe.com/docs/device-co-op/using/about/device-co-op-eol.html).
 
 Med CDA kan du besvara frågor som:
 
@@ -33,29 +33,30 @@ När enheter sammanfogas överförs variabel beständighet mellan olika enheter.
 
 Av en anda av partnerskap och transparens vill vi att våra kunder ska vara medvetna om vår användning av Microsoft Azure tillsammans med Cross-Device Analytics. Adobe använder Azure för att lagra enhetsdiagramdata och för att utföra sammanfogning mellan enheter. Därför skickas Adobe Analytics-data fram och tillbaka mellan Adobe databehandlingscenter och Adobe&#39;s provisionerade instanser av Microsoft Azure.
 
-Se [Resa-IQ: Paragrafsidan för analys av olika enheter](https://adobe.ly/aacda) om du vill veta mer om funktionerna och funktionerna i analyser av olika enheter.
+Se [Resa-IQ: Spark-sida för analys av flera enheter](https://adobe.ly/aacda) om du vill veta mer om funktionerna i Enhetsövergripande analys.
 
 ## Förutsättningar
 
-Användning av CDA kräver allt av följande: [Fältbaserade ](field-based-stitching.md) sammanfogningsmetoder och  [Device ](device-graph.md) Graphics-metoder har också sina egna specifika förutsättningar.
+Användning av CDA kräver allt av följande: [Fältbaserad stygn](field-based-stitching.md) och [Enhetsdiagram](device-graph.md) -metoder har också sina egna specifika förutsättningar.
 
 * Ett kontrakt måste undertecknas med Adobe som innehåller Adobe Analytics Ultimate.
 * Enhetsövergripande analys aktiveras per rapport. Adobe rekommenderar att du skapar en rapportserie som innehåller data för olika enheter, vilket innebär data från flera olika typer av enheter (webb, app, osv.). Vissa organisationer hänvisar till detta koncept som en&quot;global&quot; rapportserie, även om CDA inte strikt måste vara global ur ett geografiskt perspektiv.
 
 ## Begränsningar
 
-Enhetsövergripande analys är en banbrytande och robust funktion, men har begränsningar i hur den kan användas. [Fältbaserade ](field-based-stitching.md) sammanfogningsmetoder och  [Device ](device-graph.md) Graphics-metoder har också egna specifika begränsningar.
+Enhetsövergripande analys är en banbrytande och robust funktion, men har begränsningar i hur den kan användas. [Fältbaserad stygn](field-based-stitching.md) och [Enhetsdiagram](device-graph.md) -metoder har också egna specifika begränsningar.
 
 * CDA är endast tillgängligt via Analysis Workspace.
 * Enhetsövergripande analyser fungerar inte i alla rapportsviter och inte heller kombineras data från flera rapportsviter.
 * Adobe Analytics rapporteringsprogram kan inte mappa till mer än en IMS-organisation. Eftersom CDA sammanfogar enheter inom en viss rapportserie kan CDA inte användas för att sammanfoga data över flera IMS-organ.
-* Privat diagram använder samma ID-synk som de som används av funktionen [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html#customer-attributes) i Experience Cloud och Adobe Analytics. Men de virtuella CDA-rapporteringssviterna (oavsett om de baseras på ett privat diagram eller fältbaserad sammanfogning) är inte kompatibla med resten av funktionen för kundattribut. Det innebär att kundattributbaserade dimensioner inte är tillgängliga för användning inom den virtuella CDA-rapportsviten.
+* CDA använder en komplex bearbetningsprocess, med flera beroende komponenter. Detta körs parallellt med arbetsflödet för grundläggande analysrapporter. Därför förväntas en datamatchningsavvikelse på ungefär 1 % för det totala antalet träffar mellan den ursprungliga rapportsviten och den virtuella CDA-rapportsviten.
+* Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar, som inget nuvarande stöd för marknadskanalvariabler. Se [Virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en) och [Bearbetning av rapporttid](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en#report-time-processing-limitations) för mer information om dessa begränsningar.
+* Privat diagram använder samma ID-synk som de som används av [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html#customer-attributes) i Experience Cloud och Adobe Analytics. Men de virtuella CDA-rapporteringssviterna (oavsett om de baseras på ett privat diagram eller fältbaserad sammanfogning) är inte kompatibla med resten av funktionen för kundattribut. Det innebär att kundattributbaserade dimensioner inte är tillgängliga för användning inom den virtuella CDA-rapportsviten.
 * CDA är för närvarande inte kompatibelt med A4T.
-* Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar. Mer information om de här begränsningarna finns i [Virtuella rapportsviter](../vrs/vrs-about.md) och [Rapporttidsbearbetning](../vrs/vrs-report-time-processing.md).
 * 1.4-API:t stöds inte. Power BI-anslutningar och Report Builder är båda beroende av 1.4-API:t och är därför inte kompatibla med CDA.
 * Den aktiva övervakningen av CDA-sammanslagningsprocessen av Adobe är begränsad till enbart produktionsrapportsviter.
 * CDA är för närvarande inte kompatibelt med Adobe Analytics [API för datareparation](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/data-repair.md)
 * Historiska data i den virtuella rapportsviten ändras baserat på hur Adobe identifierar och syr ihop enheter. Data i källrapportsviten ändras inte.
 * Stitchade data har en fördröjning på 8 till 12 timmar.
-* Mappningshistorikdata för en viss enhet lagras i upp till ett år.
+* Mapping history data for a given device is stored for up to 1 year.
 * Om en enhet når ett mycket stort antal mappningshistorikposter inom ett år trunkeras mappningshistoriken. Den exakta gränsen beror på vilket sömnalternativ som används.

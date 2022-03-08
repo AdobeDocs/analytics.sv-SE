@@ -2,7 +2,7 @@
 title: Fältbaserad stygn
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med fältbaserad sammanfogning.
 exl-id: 81f2768c-53c2-40b4-8d3b-8d3b94cd7318
-source-git-commit: 5cd38f698370d31aaf954e24cdee4cea3ecd171c
+source-git-commit: 88c6874a043c3aa1a9ff1ec9d4b196ba37179387
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Fältbaserad stygn
 
-Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data. Den här metoden är beroende av en Analytics-variabel, till exempel en [prop](/help/implement/vars/page-vars/prop.md) eller [eVar](/help/implement/vars/page-vars/evar.md), som innehåller en personidentifierare. Den använder den variabeln som bas för att länka samman enheter. Adobe rekommenderar detta sammanfogningsalternativ för större genomskinlighet och mer förutsägbarhet när det gäller besökarspårning.
+Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data. Den här metoden är beroende av en Analytics-variabel, till exempel en [prop](/help/implement/vars/page-vars/prop.md) eller [eVar](/help/implement/vars/page-vars/evar.md), som innehåller en personidentifierare. Den använder den variabeln som bas för att länka samman enheter. Adobe rekommenderar detta sammanfogningsalternativ för större genomskinlighet och mer förutsägbarhet i besöksspårning.
 
 ## Förutsättningar som är specifika för fältbaserad sammanfogning
 
@@ -21,7 +21,7 @@ Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfog
 >
 >Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när data sammanfogas.
 
-* Alla krav som anges på översiktssidan [](overview.md).
+* Alla krav som anges på [översiktssida](overview.md).
 * Implementeringen måste ange ett utkast eller en eVar som unikt identifierar en individ när det är möjligt, till exempel när en användare loggar in eller öppnar ett e-postmeddelande. Detta krav gäller alla plattformar, inklusive mobilappar om de används. Undvik att tilldela ett standardvärde till propen eller eVar.
 * Informera kontohanteraren om den önskade identifieringsvariabeln när den tillhandahålls för fältbaserad sammanfogning.
 
@@ -38,4 +38,4 @@ Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfog
 
 ## Nästa steg
 
-När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [konfigurera enhetsövergripande analyser](setup.md).
+När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [Konfigurera enhetsövergripande analys](setup.md).

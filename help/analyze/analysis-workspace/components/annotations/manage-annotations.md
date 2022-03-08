@@ -4,10 +4,10 @@ description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: 0d20c6debdb71b86aefa43e78900453f15d83e8f
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 1%
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,21 @@ Att redigera en anteckning innebär att du kan justera datumintervall, färger, 
 
 * I [!UICONTROL Annotations Manager]klickar du på anteckningens titel.
 
-Båda dessa alternativ ger dig tillbaka i Annotations Builder. Där kan du göra nödvändiga justeringar och spara den nya versionen.
+Båda dessa alternativ ger dig tillbaka i [!UICONTROL Annotations Builder]. Där kan du göra nödvändiga justeringar och spara den nya versionen.
+
+## Dela anteckningar
+
+När du delar anteckningar eller arbetar med anteckningar som delats med dig bör du tänka på följande:
+
+* Anta att du skapar ett projekt med enbart projektkommentarer och sedan delar projektet med en annan användare. De här anteckningarna visas, men de kan inte redigeras eller tas bort av någon som delar projektet med.
+
+* Om du sparar en anteckning och delar den direkt med en användare, kan han/hon bara redigera/ta bort anteckningen om han/hon har administratörsbehörighet.
+
+* Om projektet delas med dig visas det bara i det projektet. Om anteckningen delas direkt med dig visas den i alla projekt där anteckningen kan visas.
+
+## Anteckningar och tidszoner
+
+Alla anteckningar skapas med en tidsstämpel, men inga timmar- eller tidszonsinformation. Vid rapporttillfället används alltid tidszonen för panelens rapportserie. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du har för rapportsviten. Ett annat exempel är nyårsdagen. Varje timme sätter olika tidszoner igång för fyrverkerier när det nya året börjar. På 10.00 amerikanska Mountain Time startar USA:s östkust brandarbeten eftersom det redan är 12.00 Eastern Time.
 
 ## Andra anteckningsuppgifter
 
@@ -56,10 +70,10 @@ Välj bara en eller flera av anteckningarna så visas Aktivitetsfältet.
 
 | Uppgift | Beskrivning |
 | --- | --- |
-| Lägg till | Gå till Anteckningsverktyget där du kan skapa nya anteckningar. |
-| Tagg | Alla användare kan skapa taggar för anteckningar och använda en eller flera taggar för en anteckning. Men du kan bara se taggar för de segment som du äger. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>Taggar baserade på teamnamn, som social marknadsföring, mobilmarknadsföring</li><li>Projekttaggar (analystaggar), t.ex. analys på ingångssidan</li><li>Kategoritaggar: Män geografi</li><li>Arbetsflödestaggar: Kuraterad för (en specifik affärsenhet). Godkänd</li></ul> |
-| Ta bort | Om du tar bort en anteckning tas den bort från alla projekt i organisationen. |
-| Byt namn | Om du ändrar namn på en anteckning ändras namnet i alla projekt som den används i. |
-| Kopiera | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |
-| Exportera till CSV | Exportera anteckningsdefinitionen till en CSV-fil. |
-| Filter (vänster remsa) | Filtrera efter taggar, rapportsvit, ägare och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
+| [!UICONTROL Add] | Gå till Anteckningsverktyget där du kan skapa nya anteckningar. |
+| [!UICONTROL Tag] | Alla användare kan skapa taggar för anteckningar och använda en eller flera taggar för en anteckning. Men du kan bara se taggar för de kommentarer som du äger. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:<ul><li>Taggar baserade på teamnamn, som social marknadsföring, mobilmarknadsföring</li><li>Projekttaggar (analystaggar), t.ex. analys på ingångssidan</li><li>Kategoritaggar: Män geografi</li><li>Arbetsflödestaggar: Kuraterad för (en specifik affärsenhet). Godkänd</li></ul> |
+| [!UICONTROL Delete] | Om du tar bort en anteckning tas den bort från alla projekt i organisationen. |
+| [!UICONTROL Rename] | Om du ändrar namn på en anteckning ändras namnet i alla projekt som den används i. |
+| [!UICONTROL Copy] | Skapar en distinkt kopia med sitt eget antecknings-ID, men med samma namn och definition. |
+| [!UICONTROL Export to CSV] | Exportera anteckningsdefinitionen till en CSV-fil. |
+| [!UICONTROL Filter] (vänster räl) | Filtrera efter taggar, rapportsvit, ägare och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
