@@ -3,9 +3,9 @@ description: Lär dig mer om riktlinjerna och rekommendationerna för användare
 title: Vilka är CNIL-riktlinjerna för användarens samtycke och cookies?
 feature: Data Governance
 exl-id: 04179e58-dbba-45e2-ba57-7fe5fdedc483
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: 99bbc9d6cc4d50c39b7f689a9bd84ee95a008691
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ Riktlinjerna ger ett begränsat undantag från kravet på samtycke (&quot;medgiv
 
 Följande ytterligare överväganden gäller:
 
+* Adobe Analytics har datacentraler i USA, Storbritannien och Singapore för att ge alla kunder flexibilitet att samla in, bearbeta och lagra sina uppgifter regionalt. När man konfigurerar den första konfigurationen av Adobe Analytics väljer man önskad plats på datacentret. Kundernas data lagras slutligen i den region där de har valts för den centrala Analytics-produkten.
 * Överväg att samla in anmälningsstatusen i en Analytics-variabel för att separera indata från indata som avvalts för segmentering, virtuella rapportsviter eller för att dirigera till separata slutpunkter.
 * Ingen mätning utanför webbplatsen eller appen utan förhandsgodkännande, till exempel inga kampanjer utanför webbplatsen, e-postkampanjer eller iFrames.
 * Insamling av personuppgifter i variabler är inte tillåtet utan samtycke. [Åtgärder för kontroll av Experience Cloud baserat på användares samtycke](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.html?lang=en%22%20\l%20%22implementation#implementation)
