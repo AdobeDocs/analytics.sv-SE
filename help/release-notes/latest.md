@@ -3,10 +3,10 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 75cf6b9898e4afd1f10d7ee2f08f148219965343
+source-git-commit: 1349dd63fcf1cc94e848f3c3af55af5f39b11f43
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 5%
+source-wordcount: '908'
+ht-degree: 4%
 
 ---
 
@@ -43,7 +43,8 @@ AN-268093, AN-273820, AN-274435, AN-274904, AN-275356, AN-275947, AN-276160, AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| 2022 ISO-regionuppdateringar | 11 mars 2021 | Adobe kommer att genomföra 2022 ISO-regionsuppdateringar den 10 juni 2022. Efter den här versionen förväntas mindre uppdateringar visas. |
+| Äldre schemalagda rapporter har pausats | 11 mars 2022 | Effektivt **15 april 2022** kommer Adobe att pausa alla schemalagda rapporter som har ett skapandedatum som är större än två år (skapat före den 31 januari 2020). Inga rapporter eller data kommer att tas bort. Endast rapporter som identifieras som äldre än två år kommer att pausas och inga ytterligare schemalagda rapporter kommer att skickas. [Läs mer](/help/analyze/reports-analytics/scheduled-reports-eol.md) |
+| 2022 ISO-regionuppdateringar | 11 mars 2021 | Adobe kommer att utföra 2022 ISO-regionsuppdateringar på **10 juni 2022**. Efter den här versionen förväntas mindre uppdateringar visas. |
 | Ändra hur Analytics hanterar A4T-data som samlats in via Experience Edge | 25 februari 2022 | På **7 mars 2022** kommer vi att ändra hur vi hanterar vissa Target-relaterade data som skickas till Adobe Analytics via Experience Edge. När Adobe Experience Platform Web SDK användes med Analytics och Target räknades vissa personaliseringshändelser in [!DNL Adobe Analytics] as [!UICONTROL Page Views]. Detta ledde till ökat antal sidor och ytterligare serveranrop. I och med förändringen kommer personaliseringsanrop utan Analytics-innehåll att ignoreras. Personaliseringsanrop med A4T-data registrerar A4T-data, men registreras inte som fakturerbara serveranrop och påverkar inte heller sidvisningar eller länkhändelsemått. |
 | Pausa tidigare schemalagda Report Builder-aktiviteter | 24 februari 2022 | **Gäller från 15 april 2022** kommer Adobe att göra uppehåll i alla schemalagda uppdrag i Report Builder som skapades för mer än två år sedan. Den här pausen gäller i synnerhet alla uppgifter som skapats före den 31 januari 2020. Inga uppgifter, arbetsböcker eller data tas bort. Uppgifter som identifieras som äldre än två år kommer dock att pausas och inga ytterligare schemalagda aktiviteter kommer att skickas. [Läs mer](/help/analyze/report-builder/r-arb-scheduled-reports.md) |
 | Tillåtelselista EOL-tillägget för OAuth/JWT-integreringar med äldre Analytics upphör att gälla | 14 januari 2022 | På **25 maj 2022**, [Analytics 1.3 API, 1.4 SOAP API och Legacy Analytics OAuth/JWT EOL](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md) Tillägget tillåtelselista upphör att gälla. Den har erbjudits kunder som använder äldre [!DNL Adobe Analytics] OAuth/JWT-autentiseringsuppgifter ger ytterligare tid att migrera sina klientintegreringar till [Adobe IMS-autentiseringsuppgifter](https://developer.adobe.com/console). Detta påverkar (men är inte begränsat till) [!DNL Adobe Analytics Livestream] och [!DNL Adobe Campaign] kunder som inte har slutfört sina nödvändiga IMS-migreringar. Kunder som för närvarande använder äldre [!DNL Analytics] OAuth/JWT-autentiseringsuppgifter via tillägget tillåtelselista och som inte slutfört migreringen till IMS-autentiseringsuppgifter senast den 25 maj 2022 förlorar åtkomsten till Adobes tjänster. Privatpersoner kan referera till dessa [instruktioner](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/live-stream-api/getting_started.md) när deras klientprogram migreras till IMS-autentiseringsuppgifter. [!DNL Campaign] kan man kontakta Adobe för att uppgradera till den senaste versionen av [!DNL Campaign]. |

@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Instruktioner för Analysis Workspace, det ledande analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 70a1d61a6e9af27c449876ac4cf4d7504659be3a
+source-git-commit: 1349dd63fcf1cc94e848f3c3af55af5f39b11f43
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1039'
 ht-degree: 81%
 
 ---
@@ -298,6 +298,7 @@ ht-degree: 81%
       + [Adobe Analytics för iOS](reports-analytics/overview/app-ios.md)
    + [Visningsinställningar och navigering för rapporter](reports-analytics/report-settings.md)
    + [Rapportschema och distribution](reports-analytics/scheduling.md)
+   + [Meddelande om att giltighetstiden har löpt ut för schemalagda rapporter](reports-analytics/scheduled-reports-eol.md)
    + [Rapporttyper](reports-analytics/reports.md)
    + [Köra olika rapporttyper](reports-analytics/t-running-report-types.md)
    + Anpassa rapporter {#customize-reports}
