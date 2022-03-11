@@ -4,7 +4,7 @@ description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 0d20c6debdb71b86aefa43e78900453f15d83e8f
+source-git-commit: 75cf6b9898e4afd1f10d7ee2f08f148219965343
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 0%
@@ -60,7 +60,9 @@ När du delar anteckningar eller arbetar med anteckningar som delats med dig bö
 
 ## Anteckningar och tidszoner
 
-Alla anteckningar skapas med en tidsstämpel, men inga timmar- eller tidszonsinformation. Vid rapporttillfället används alltid tidszonen för panelens rapportserie. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du har för rapportsviten. Ett annat exempel är nyårsdagen. Varje timme sätter olika tidszoner igång för fyrverkerier när det nya året börjar. På 10.00 amerikanska Mountain Time startar USA:s östkust brandarbeten eftersom det redan är 12.00 Eastern Time.
+Alla anteckningar skapas med en tidsstämpel, men inga timmar- eller tidszonsinformation. Vid rapporttillfället används alltid tidszonen för panelens rapportserie. Så en anteckning som skapats för juldagen inträffar den 25 december - oavsett vilken tidszon du har för rapportsviten.
+
+Ett annat exempel är nyårsdagen. Varje timme sätter olika tidszoner igång för fyrverkerier när det nya året börjar. På 10.00 amerikanska Mountain Time startar USA:s östkust brandarbeten eftersom det redan är 12.00 Eastern Time.
 
 ## Andra anteckningsuppgifter
 
