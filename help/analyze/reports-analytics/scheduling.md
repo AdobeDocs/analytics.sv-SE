@@ -6,9 +6,9 @@ uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: ec59d365-f294-41da-ae36-3b4ebe64ab23
-source-git-commit: 1349dd63fcf1cc94e848f3c3af55af5f39b11f43
+source-git-commit: 000d9aedbe8d3ac109be472d9e29f7798f86baa7
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -30,16 +30,16 @@ På grund av skillnader i bearbetningsmekanismer och plattformar har de olika ty
 
 Dessa begränsningar gäller för enskilda schemalagda och nedladdade rapporter. Kontrollpaneler begränsas till det tillgängliga utrymmet i en rapportmodul.
 
->[!NOTE]
->
->&quot;Leveranstid&quot;/&quot;Dag&quot; som anges av användaren anger den tid som rapporten ska börja bearbetas, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som rapporten levereras baseras främst på hur lång tid det tar att behandla (komplexa och stora rapporter tar längre tid än enklare rapporter). Om en rapport t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
->Dessutom finns det ett antal andra faktorer som ytterligare kan öka fördröjningen innan rapporten faktiskt levereras:
->
-> * **Köra många olika scheman av samma typ samtidigt** (t.ex. många instrumentpaneler osv.) kan överlagra systemet. Schemaläggningssystemet tillåter endast ett fåtal (5-10) rapporter av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra rapporter är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags rapporter vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
-> * Förutom den specifika rapporttypen (Dashboards, etc.) väntar rapporter också i rad om företaget har **mer än 15-20 av varje typ av rapport som schemaläggs samtidigt (för alla olika rapporttyper)**. Detta kan minskas genom att tidsintervallen ökas i stället för att många körs exakt samtidigt.
-> * **Problem inom tjänster längre fram i kedjan** som Schemaläggaren förlitar sig på kan också påverka rapportleveransen. Om du t.ex. använder API:erna separat för att köra rapporter och fylla i API-begärandekön kan dina schemalagda rapporter leverera långsamt medan du konkurrerar om den resursen.
-> * **Sändningsfördröjning för rapport** (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda rapporter.
+## Leveranstid jämfört med bearbetningstid
 
+&quot;Leveranstid&quot; eller &quot;Dag&quot; som anges av användaren anger den tid som rapporten ska börja bearbetas, inte den tid som den faktiskt kommer att levereras. När rapporten ska levereras baseras främst på hur lång tid det tar att bearbeta den. Komplexa och stora rapporter tar längre tid att behandla än enklare rapporter. Om en rapport t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna&quot;Leveranstid&quot; eller&quot;Tidpunkt för dag&quot;.
+
+Dessutom finns det ett antal andra faktorer som ytterligare kan öka fördröjningen innan rapporten faktiskt levereras:
+
+* **Köra många olika scheman av samma typ samtidigt** (t.ex. många instrumentpaneler osv.) kan överlagra systemet. Schemaläggningssystemet tillåter endast ett fåtal (5-10) rapporter av någon typ att köras samtidigt. När fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra rapporter är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags rapporter vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
+* Förutom den specifika rapporttypen (Dashboards, etc.) väntar rapporter också i rad om företaget har **mer än 15-20 av varje typ av rapport som schemaläggs samtidigt (för alla olika rapporttyper)**. Detta kan minskas genom att tidsintervallen ökas i stället för att många körs exakt samtidigt.
+* **Problem inom tjänster längre fram i kedjan** som Schemaläggaren förlitar sig på kan också påverka rapportleveransen. Om du t.ex. använder API:erna separat för att köra rapporter och fylla i API-begärandekön kan dina schemalagda rapporter leverera långsamt medan du konkurrerar om den resursen.
+* **Sändningsfördröjning för rapport** (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda rapporter.
 
 
 ## Skicka en rapport {#task_27642CD33D484FD0BF59EBD159EEF52C}
@@ -59,7 +59,7 @@ Steg som beskriver hur du laddar ned och skickar rapporter via e-post i en mäng
 1. Klicka **[!UICONTROL Advanced Delivery Options]** för att ange ett leveransschema.
 
 | Alternativ | Beskrivning |
-|--- |--- |
+| --- |--- |
 | Rapportfilnamn | Anger rapportens namn. Standardformatet är `<report name> for <suite> - <report date range>`. Om du vill ange ett eget namn väljer du [!UICONTROL Custom]. |
 | Rapportformat | Här kan du ange PDF, CSV, Excel, HTML, Word eller Mobile för leverans. Om du väljer CSV kan du även ange kodning för CSV:<ul><li>Skift-JIS: Japansk teckenkodning.</li><li>EUC-JP: Utökad Unix-kod, främst för japanska, koreanska och förenklad kinesiska.</li></ul> |
 | Rapportinnehåll | <ul><li>Antal rader i tabellen: Anger det antal rader som du vill ska vara synliga i tabellen i rapporten som du skickar.</li><li>Språk för sidhuvud och sidfot: Anger språket för sidhuvudet och sidfoten.</li><li>Kommentarer: Anger texten som visas i början av rapporten.</li></ul> |
@@ -119,7 +119,7 @@ Steg som beskriver hur du delar en rapport genom att generera en rapportlänk (U
 
 När mottagaren klickar på länken begär systemet inloggningsuppgifter (företagsnamn, användarnamn och lösenord). När du har loggat in visas den rapport som genererats av den ursprungliga användaren. Standardbehörighetsbegränsningar gäller.
 
-**Dela en rapportlänk**
+Om du vill dela en rapportlänk
 
 1. Kör en rapport.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Link to This Report]**.
