@@ -1,14 +1,14 @@
 ---
 description: Mätvärden är grunden för rapporter och hjälper er att visa och förstå dataförhållanden och möjliggör jämförelser sida vid sida av olika datauppsättningar om er webbplats. Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare.
-title: Mätvärden
+title: Förstå mått
 uuid: ae2021eb-8b26-4a98-b7a0-ce36bca46753
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: ea7a59f3-5a5e-48b2-ae0c-ebc5ec34cd63
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 1%
+source-wordcount: '359'
+ht-degree: 0%
 
 ---
 
@@ -22,9 +22,9 @@ Mätvärden är grunden för rapporter och hjälper er att visa och förstå dat
 
 Mätvärden och associerade data visas i rapportkolumnerna. Trafikstatistik visar data om besökarnas volym. Konverteringsstatistik visar data om framgångsrika händelser, som inköp, nedladdningar eller andra åtgärder som du vill att användarna ska vidta på webbplatsen.
 
-[Beräknade ](/help/components/c-calcmetrics/cm-overview.md) mätvärden skapas genom en kombination av mätvärden.
+[Beräknade mått](/help/components/c-calcmetrics/cm-overview.md) skapas genom en kombination av mätvärden.
 
-En fullständig lista över mätvärden finns i [Metrisk översikt](/help/components/metrics/overview.md) i användarhandboken för komponenter.
+En fullständig lista över mätvärden finns på [Översikt över mätvärden](/help/components/metrics/overview.md) i användarhandboken för komponenter.
 
 ## Välj standardrapportmått
 
@@ -38,11 +38,11 @@ t_metrics_set_default.xml
 
 1. Kör en rapport.
 1. Lägg till de mått som du vill spara som standardmått.
-1. Klicka på listrutan **[!UICONTROL Add Metrics]** och välj **[!UICONTROL Set as Default]**.
+1. Klicka på **[!UICONTROL Add Metrics]** nedrullningsbar lista och välj **[!UICONTROL Set as Default]**.
 
    De valda måtten sparas som standardvärden för den här rapporten. Följande information gäller standardvärden:
 
 * Standardvärden gäller för alla användarkonton, men är per rapport och rapportserie. Alla användare som till exempel visar en viss rapport i samma rapportserie visar de mätvärden som angetts med föregående procedur.
-* Om du växlar mellan rapporter behålls de mätvärden som visades i den senast visade rapporten. Om du vill visa standardmått i den nya rapporten klickar du på listrutan [!UICONTROL Add Metrics] och sedan på [!UICONTROL Show Defaults].
+* Om du växlar mellan rapporter behålls de mätvärden som visades i den senast visade rapporten. Om du vill visa standardvärden i den nya rapporten klickar du på [!UICONTROL Add Metrics] nedrullningsbar lista och klicka sedan på [!UICONTROL Show Defaults].
 
-* Om du klickar på [!UICONTROL Clear Defaults] tas standardmåtten för den rapporten bort och återställs till de ursprungliga standardmåtten för rapporten ( [!UICONTROL Page Views] för utkast och det du har angett i Administratörsverktyg för eVars).
+* Klicka [!UICONTROL Clear Defaults] tar bort standardmåtten för den rapporten och återställer dem till de ursprungliga standardmåtten för den rapporten ( [!UICONTROL Page Views] för utkast och vad du än har angett i Administratörsverktyg för eVars).

@@ -1,12 +1,12 @@
 ---
 description: Vanliga frågor om datahantering i Adobe Analytics
-title: Frågor och svar
+title: Frågor och svar om datahantering
 feature: Data Governance
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
+source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 97%
+source-wordcount: '1805'
+ht-degree: 96%
 
 ---
 

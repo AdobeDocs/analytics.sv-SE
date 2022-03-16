@@ -1,16 +1,16 @@
 ---
 description: Hantera aviseringar.
-title: Alert Manager
+title: Aviseringshanteraren - översikt
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 1%
 
 ---
 
-# Aviseringshanteraren
+# Alert Manager
 
 ![](assets/alert-manager.png)
 

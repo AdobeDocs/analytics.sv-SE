@@ -1,11 +1,11 @@
 ---
-title: Sidorna hittades inte
+title: Det gick inte att hitta sidor (dimensioner)
 description: URL:er som returnerade ett fel på din plats.
 feature: Dimensions
 exl-id: 28c22565-7fcf-49f1-8876-0db88f12a182
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---

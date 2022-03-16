@@ -1,17 +1,17 @@
 ---
 description: Skapa, redigera eller ta bort aviseringar.
-title: Alert Manager
+title: Varningshanteraren (Analysis Workspace)
 feature: Alerts
 role: User, Admin
 exl-id: c33a9a30-f53f-443c-96b7-6a87d03573c7
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 2%
+source-wordcount: '153'
+ht-degree: 1%
 
 ---
 
-# Aviseringshanteraren
+# Alert Manager
 
 ![](assets/alert-manager.png)
 

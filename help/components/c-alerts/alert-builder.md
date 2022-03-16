@@ -1,16 +1,16 @@
 ---
 description: Använd varningar i Analysis Workspace.
-title: Alert Builder
+title: Översikt över Alert Builder
 feature: Alerts
 exl-id: 82e51357-4a32-4db1-bc56-95a72dbaa1be
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
-# Varningsverktyg
+# Alert Builder
 
 >[!IMPORTANT]
 >
