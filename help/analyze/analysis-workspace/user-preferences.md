@@ -4,10 +4,10 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: 0515636dfae6c42d76211e1cbbc7faf424054271
+source-git-commit: 941b2b472301c3e99f268ab98976de348573ae1b
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '271'
+ht-degree: 2%
 
 ---
 
@@ -45,6 +45,7 @@ Projektinställningar gäller för nya projekt och nya paneler som skapas i Anal
 |  | [Paneltyp](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) | <ul><li>Frihandsfigur (standard)</li><li>Tom</li><li>Snabba insikter</li></ul> |
 |  | Nummerformat | <ul><li>1 000,00 (standard)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV-avgränsningstecken | <ul><li>Komma (standard)</li><li>Semikolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Blanksteg</li><li>Tabb</li></ul> |
+|  | Frihandstabell | <ul><li>Visa avvikelser </li><li>Visa miniatyrbilder</li><li>Visa anteckningar</li></ul> |
 
 ## [!UICONTROL Dark theme]
 
