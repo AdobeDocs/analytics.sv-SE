@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: 417f57f6987f58b1acd0feb087fbdc854a0d03fa
+source-git-commit: a79fe36f009984a8b343e98a915f867b56a519fb
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Segmentet visas överst. Lägg märke till dess blå, randiga sidospalt, till sk
 1. (Valfritt) Byt namn på segmentet.
 1. Klicka på **[!UICONTROL Save]**.
 
-Lägg märke till hur segmentets sidlist ändras från randig blå till blå. Den visas nu även i den vänstra listan över komponenter för rälsen.
+Lägg märke till hur segmentets sidlist ändras från randig blå till ljusblå. Den visas nu även i den vänstra listan över komponenter för rälsen.
 
 ## Vad är segment med endast projekt?
 
