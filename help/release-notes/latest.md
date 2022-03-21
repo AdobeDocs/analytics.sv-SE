@@ -3,14 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: d9892291d5386c3faaec0da06084a1ce7695a78a
+source-git-commit: 99572e3ed2b519b5479a31680a48c17e2aed4fd9
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '886'
 ht-degree: 4%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (mars 2022)
+
+**Senast uppdaterad: 21 mars 2022**
 
 >[!IMPORTANT]
 >
@@ -24,7 +26,7 @@ ht-degree: 4%
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
 | Anteckningar i arbetsytan | Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. [Läs mer](/help/analyze/analysis-workspace/components/annotations/overview.md) | 23 mars 2022 |
-| Uppdateringar av Adobe Analytics landningssida | Uppdateringar till landningssidan för arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. [Läs mer](/help/analyze/landing.md) | TBD |
+| Uppdateringar av Adobe Analytics landningssida | Uppdateringar till landningssidan för arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. [Läs mer](/help/analyze/landing.md) | 1 april 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
