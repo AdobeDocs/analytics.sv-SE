@@ -3,12 +3,12 @@ description: Bokmärken ger dig tillgång till de rapporter du använder mest. B
 subtopic: Bookmarks
 title: Bokmärkeshanterare
 uuid: 7a1287da-8a39-4dad-90b0-f311b5e83722
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 8b923484-0988-4271-8186-317bb33f2210
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 029c6b168756448d01d73dd5e92cbe9df70e3f57
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '318'
 ht-degree: 2%
 
 ---
@@ -29,12 +29,12 @@ t_bookmarks_creating.xml
 
 1. Kör en rapport och klicka sedan på **[!UICONTROL Bookmark.]**.
 
-       |Namn|Ett användarvänligt namn för det här bokmärket.|
-       |—|—|
-       |Lägg till i|Anger i vilken mapp du vill placera bokmärket.|
-       |Gör offentlig| Gör det här bokmärket tillgängligt för användare med åtkomst till rapportsviten.|
-       |Visa rapport vid inloggning| Visar rapporten när du loggar in.|
-   
+   | Namn | Ett användarvänligt namn för det här bokmärket. |
+   |---|---|
+   | Lägg till i | Anger i vilken mapp du vill placera bokmärket. |
+   | Gör offentlig | Gör det här bokmärket tillgängligt för användare som har tillgång till rapportsviten. |
+   | Visa rapport vid inloggning | Visar rapporten när du loggar in. |
+
 ## Hantera bokmärken {#task_1EE793CB52EA467787817BBD98DEF150}
 
 När du har skapat rapportbokmärken kan du hantera dem i [!UICONTROL Bookmark Manager]. Du kan redigera, ta bort och ordna bokmärken och mappar centralt.
@@ -71,7 +71,7 @@ t_bookmarks_managing.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p><img placement="inline"  src="assets/icon_edit_VideoSharing.png" id="image_5B8C0321ED5848ECBE3AF65514AD9A44"> </img> </p> </td> 
-   <td colname="col2"> <p> Här kan du redigera ett bokmärke. Du kan byta namn på bokmärket och ange i vilken bokmärkesmapp du vill att rapporten ska visas. Du kan också ange om du vill att bokmärket ska visas vid inloggning. </p> </td> 
+   <td colname="col2"> <p> Här kan du redigera ett bokmärke. Du kan byta namn på bokmärket och ange i vilken bokmärkesmapp du vill att rapporten ska visas. Du kan också ange om du vill att bokmärket ska visas vid inloggningen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><img placement="inline"  src="assets/icon_delete_VideoSharing.png" id="image_945A859920C44BC08825CC062C10543A"> </img> </p> </td> 
@@ -79,7 +79,7 @@ t_bookmarks_managing.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p><img placement="inline"  src="assets/bookmark_schedule.png" id="image_B7B23C1C67F04DF096149DCDF8C0FE5F"> </img> </p> </td> 
-   <td colname="col2"> <p> Här kan du se att det här bokmärket är schemalagt för leverans. Klicka på det här alternativet om du vill konfigurera schemat med <span class="wintitle"> avancerade leveransalternativ</span>. </p> </td> 
+   <td colname="col2"> <p> Här kan du se att det här bokmärket är schemalagt för leverans. Klicka på det här alternativet om du vill konfigurera schemat med <span class="wintitle"> Avancerade leveransalternativ</span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -96,11 +96,11 @@ t_bookmarks_managing.xml
  <tbody> 
   <tr> 
    <td colname="col1"> Gör offentlig </td> 
-   <td colname="col2"> <p>Anger att bokmärket är offentligt. Dessa bokmärken visas som ett delat bokmärke i <span class="wintitle"> allmänna bokmärken</span>. </p> </td> 
+   <td colname="col2"> <p>Anger att bokmärket är offentligt. Dessa bokmärken visas som ett delat bokmärke i <span class="wintitle"> Offentliga bokmärken</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Copy Me </td> 
-   <td colname="col2"> <p>Skapar en kopia av bokmärkena och placerar dem i en standardmapp i kolumnen <span class="uicontrol"> Bokmärken</span>. </p> </td> 
+   <td colname="col2"> <p>Skapar en kopia av bokmärkena och placerar dem i en standardmapp i <span class="uicontrol"> Bokmärken</span> kolumn. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> På menyn </td> 
