@@ -5,7 +5,7 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 591c7af7fe721b94b4da0c1f09f63f88603f9af9
 workflow-type: tm+mt
 source-wordcount: '3445'
 ht-degree: 0%
@@ -103,15 +103,15 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `mc_audiences` | Lista med Audience Manager segment-ID som besökaren tillhör. The `post_mc_audiences` kolumnen ändrar avgränsaren till `--**--`. | text |
 | `mcvisid` | Experience Cloud Visitor-ID. 128-bitars nummer som består av två sammanfogade 64-bitars tal som fyllts med 19 siffror. | varchar(255) |
 | `mobile_id` | Om användaren använder en mobil enhet anger du enhetens numeriska ID. | int |
-| `mobileaction` | Mobilåtgärd. Samlas in automatiskt när `trackAction` anropas i Mobiltjänster. Tillåter automatisk åtgärdspunkt i appen. | varchar(100) |
-| `mobileappid` | ID för mobilapp. Lagrar programnamnet och versionen i följande format: `[AppName] [BundleVersion]` | varchar(255) |
+| `mobileaction` | Mobile action. Samlas in automatiskt när `trackAction` anropas i Mobiltjänster. Tillåter automatisk åtgärdspunkt i appen. | varchar(100) |
+| `mobileappid` | Mobile program-ID. Lagrar programnamnet och versionen i följande format: `[AppName] [BundleVersion]` | varchar(255) |
 | `mobileappperformanceappid` | Används i Apteligent-dataanslutningen. Program-ID som används i Apteligent. | varchar(255) |
 | `mobileappperformancecrashid` | Används i Apteligent-dataanslutningen. Det krasch-ID som används i Apteligent. | varchar(255) |
 | `mobileappstoreobjectid` | Används i Appfigurations dataanslutning. Objekt-ID för App Store. | varchar(255) |
-| `mobilebeaconmajor` | Mobiltjänster är viktiga | varchar(100) |
-| `mobilebeaconminor` | Mobiltjänster är mindre | varchar(100) |
-| `mobilebeaconproximity` | Avstånd för mobiltjänster | varchar(255) |
-| `mobilebeaconuuid` | Beacon UUID för mobiltjänster | varchar(100) |
+| `mobilebeaconmajor` | Mobile Services - huvudämne | varchar(100) |
+| `mobilebeaconminor` | Mobile Services, minderårig | varchar(100) |
+| `mobilebeaconproximity` | Avstånd från Mobile Services | varchar(255) |
+| `mobilebeaconuuid` | Beacon UUID för Mobile Services | varchar(100) |
 | `mobilecampaigncontent` | Namnet eller ID för innehållet som visade länken. Fylls i av Anskaffning av mobilapp. | varchar(255) |
 | `mobilecampaignmedium` | Marknadsföringsmedium, som banner eller e-post. Fylls i av Anskaffning av mobilapp. | varchar(255) |
 | `mobilecampaignname` | Namnet på kampanjen, som också lagras i kampanjvariabeln. Fylls i av Anskaffning av mobilapp. | varchar(255) |
@@ -122,9 +122,9 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `mobiledayssincelastupgrade` | Samlas in från kontextdatavariabeln a.DaysSinceLastUpgrade. Antalet dagar som har gått sedan föregående session. | varchar(255) |
 | `mobiledayssincelastuse` | Antal dagar sedan appen senast kördes. | varchar(255) |
 | `mobiledeeplinkid` | Samlas in från kontextdatavariabeln `a.deeplink.id`. Används i förvärvsrapporter som en identifierare för länken för mobilförvärv. | varchar(255) |
-| `mobiledevice` | Namn på mobil enhet. I iOS lagras den som en kommaavgränsad tvåsiffrig sträng. Det första numret representerar enhetsgenereringen och det andra representerar enhetsfamiljen. | varchar(255) |
+| `mobiledevice` | Mobile enhetsnamn. I iOS lagras den som en kommaavgränsad tvåsiffrig sträng. Det första numret representerar enhetsgenereringen och det andra representerar enhetsfamiljen. | varchar(255) |
 | `mobilehourofday` | Definierar timmen på dagen då appen startades. Använder ett numeriskt format på 24 timmar. | varchar(255) |
-| `mobileinstalldate` | Datum för mobilinstallation. Anger datumet för första gången en användare öppnar mobilappen. | varchar(255) |
+| `mobileinstalldate` | Mobile installationsdatum. Anger datumet för första gången en användare öppnar mobilappen. | varchar(255) |
 | `mobilelaunchessincelastupgrade` | Samlas in från kontextdatavariabeln a.LaunchesSinceUpgrade. Rapporterar antalet starter sedan den senaste uppgraderingen. | varchar(255) |
 | `mobilelaunchnumber` | Ökningar med ett varje gång mobilappen startas. | varchar(255) |
 | `mobileltv` | Används inte längre. Fylls i av trackLifetimeValue-metoder. | varchar(255) |
@@ -134,7 +134,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `mobilemessagepushoptin` | Samlas in från kontextdatavariabeln `a.push.optin`. Ange som&quot;true&quot; när användaren väljer att skicka meddelanden; i annat fall är värdet &quot;false&quot;. | varchar(255) |
 | `mobilemessagepushpayloadid` | Samlas in från kontextdatavariabeln `a.push.payloadid`. Används i push-meddelanden som nyttolast-ID. | varchar(255) |
 | `mobileosenvironment` | Samlas in från kontextdatavariabeln `a.OSEnvironment`. Lägesmiljö, t.ex. Android eller iOS. | varchar(255) |
-| `mobileosversion` | Mobiltjänstens operativsystemversion | varchar(255) |
+| `mobileosversion` | Mobile Services - operativsystemversion | varchar(255) |
 | `mobileplaceaccuracy` | Samlas in från kontextdatavariabeln `a.loc.acc`. Anger GPS-noggrannheten i meter vid insamlingen. | varchar(255) |
 | `mobileplacecategory` | Samlas in från kontextdatavariabeln `a.loc.category`. Beskriver kategorin för en viss plats. | varchar(255) |
 | `mobileplaceid` | Samlas in från kontextdatavariabeln `a.loc.id`. Identifierare för en viss intressepunkt. | varchar(255) |
@@ -360,7 +360,6 @@ Följande kolumnlista används inte och innehåller inga data:
 * `socialtermslist`
 * `socialtermslist (deprecated)`
 * `socialtotalsentiment`
-* `sourceid`
 * `videoauthorized`
 * `videoaverageminuteaudience`
 * `videochaptercomplete`
