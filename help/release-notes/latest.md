@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 8d133c7a3a0532138e18920c635ed1a5889e77f4
+source-git-commit: f3b62096b481bda29946ccb091771157dce41d9d
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '993'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
-| Anteckningar i arbetsytan | Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. [Läs mer](/help/analyze/analysis-workspace/components/annotations/overview.md) | 23 mars 2022 |
+| Anteckningar i arbetsytan | Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. [Läs mer](/help/analyze/analysis-workspace/components/annotations/overview.md) | gradvis utrullning börjar 23 mars 2022 |
 | Uppdateringar av Adobe Analytics landningssida | Uppdateringar till landningssidan för arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. [Läs mer](/help/analyze/landing.md) | 1 april 2022 |
 | [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | The [!UICONTROL Next or Previous item] kan du utforska objekt som följer efter eller föregår ett önskat dimensionsobjekt. Använd den om du till exempel vill se nästa eller föregående sidor till en viss produktsida, marknadsföringskanal eller till och med enhetstyp. Den här panelen går längre än äldre rapportering nästa/föregående eftersom den gör att du kan titta på alla dimensioner och inte kräver någon ny implementering för att få insikter. | 1 april 2022 |
 | [!UICONTROL Page Summary] Panelen Arbetsyta | The [!UICONTROL Page Summary] ger en djupgående analys av en sida du väljer. Det innehåller samma information som tidigare rapporter och analyser [!UICONTROL Page Summary] och mycket annat. | 1 april 2022 |
