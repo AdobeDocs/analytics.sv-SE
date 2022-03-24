@@ -4,18 +4,15 @@ description: Så här använder och tolkar du panelen Media Average Minute Audie
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 86f546da8a5eaded5abb4ee2ce8d4a536818574a
+source-git-commit: 31228b1a2e19a6b83dd7b5cbbde0f5692b0b8fc5
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
 
-# Panelen Mediegenomsnitt för miniatyrmålgrupp
 
->[!NOTE]
->
->Den här funktionen är för närvarande i begränsad testning.
+# Panelen Mediegenomsnitt för miniatyrmålgrupp
 
 Media Analytics-kunder kan använda den genomsnittliga minuten-målgruppspanelen för att bättre förstå den genomsnittliga förbrukningen av deras innehåll. Den genomsnittliga minuten-målgruppen möjliggör jämförelser av programmering oavsett längd eller genre. Dessutom kan kunderna jämföra eller lägga till den digitala genomsnittliga minuten-publiken med den linjära minuten-mätningen för tv. Panelen ger större flexibilitet för att mäta den genomsnittliga publiken för anpassade tidsperioder samt när tidsklassificeringen har uppdaterats efter detta. Det aktuella genomsnittliga minutvärdet för målgruppssiffran fungerar bara om varaktigheten är tillgänglig vid bearbetningstiden.
 
