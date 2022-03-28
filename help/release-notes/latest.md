@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: c6d211c4d163dd1458a8c298721243c4531d083a
+source-git-commit: 533c323b8be651eca14a88641aa4a82705305297
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1086'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 3%
 * Problem med A4T Workspace-panelen har korrigerats. (AN-281594) AN-282418)
 * Ett problem har korrigerats där vissa användare inte kunde få åtkomst till Adobe Analytics. (AN-282776)
 * Korrigerade problem med vissa nyligen skapade rapportsviter som inte samlar in data. (AN-283114, AN-283311)
-* Korrigerade problem med att inte kunna identifiera Win11 med operativsystemsdimensionen. (AN-275569, AN-275727) AN-280335)
 * Korrigerade problem med felaktigt skickade e-postmeddelanden om datafeeds. (AN-280255; AN-282051)
 
 

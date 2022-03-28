@@ -4,10 +4,10 @@ description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättni
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: c6d211c4d163dd1458a8c298721243c4531d083a
+source-git-commit: 533c323b8be651eca14a88641aa4a82705305297
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 42%
+source-wordcount: '3105'
+ht-degree: 41%
 
 ---
 
@@ -24,13 +24,16 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Datum | Beskrivning |
 | --- | --- |
 | **Mars 2022** |  |
+| Nytt avsnitt om vilka HTTPS-krypteringsalgoritmer som stöds | [HTTPS-krypteringsalgoritmer som stöds](/help/technotes/rdc/encryption-algos.md) för kunder med chiffersäkerhetsnivån inställd på&quot;Hög&quot;. |
 | Ny dokumentation om anteckningar i arbetsytan | [Anteckningar i arbetsytan](/help/analyze/analysis-workspace/components/annotations/overview.md) kan ni effektivt kommunicera kontextuella datanunkter och insikter till er organisation. |
 | Uppdateringar av Adobe Analytics landningssida | [Uppdateringar](/help/analyze/landing.md) till landningssidan för gemensam arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. |
 | [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | På den här panelen kan du utforska objekt som följer eller föregår ett av de önskade dimensionsobjekten. |
 | [!UICONTROL Page Summary] Panelen Arbetsyta | Panelen innehåller en djupgående analys av en sida som du väljer. |
-| **Februari 2022** |  |
+| Nytt avsnitt om att pausa äldre schemalagda rapporter | Effektivt **15 april 2022**, Adobe tänker [pausa alla schemalagda rapporter som har ett skapandedatum som är senare än två år](/help/analyze/reports-analytics/scheduled-reports-eol.md). |
+| **Februari 2022** |
 | Förhandsgranskningsläge för mobilstyrda projekt | The [förhandsgranskningsläge](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#preview) I kan du förhandsgranska upplevelsen innan du sparar och delar ett styrkort. |
 | API-projektslutpunkt | Lägg till, redigera eller ta bort Analysis Workspace-projekt med API:t. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/projects/) |
+| Uppdaterat ämne om att pausa äldre schemalagda Report Builder-aktiviteter | **Gäller från 15 april 2022**, Adobe tänker [pausa alla schemalagda aktiviteter i Report Builder som skapades för mer än två år sedan](/help/analyze/report-builder/r-arb-scheduled-reports.md). |
 | **Oktober 2021** |  |
 | 21 oktober 2021 | Ny dokumentation om [Snabbsegment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html) i Analysis Workspace |
 | 21 oktober 2021 | Ny dokumentation på [Medieuppspelningstid tillagd](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html) i Analysis Workspace. |
