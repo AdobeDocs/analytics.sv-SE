@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: a79fe36f009984a8b343e98a915f867b56a519fb
+source-git-commit: 7434a941f3e5a47a3f5d5a28320a3fc396dd3740
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ Du kan skapa snabbsegment i ett projekt för att slippa komplexiteten i den full
 * Innesluta inte kapslade behållare eller sekventiella regler.
 
 Om du vill jämföra vad snabbsegment kan göra jämfört med fullständiga komponentlistsegment går du till [här](/help/analyze/analysis-workspace/components/segments/t-freeform-project-segment.md).
+
+Här är en videoöversikt över snabbsegment:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
 
 ## Förutsättningar
 
