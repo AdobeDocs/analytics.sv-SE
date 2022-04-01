@@ -1,18 +1,17 @@
 ---
 title: Exkludera specifika datum i analysen
 description: Tips för att exkludera datum eller datumintervall om du inte vill inkludera det i rapporter.
-translation-type: tm+mt
-source-git-commit: c4833525816d81175a3446215eb92310ee4021dd
+exl-id: 744666c0-17f3-443b-9760-9c8568bec600
+source-git-commit: 84f00a330334d6f4272f35140da0fecbf43622c9
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '561'
 ht-degree: 2%
 
 ---
 
-
 # Exkludera specifika datum i analysen
 
-Om du har data som [påverkas av en händelse](overview.md)kan du använda ett segment för att utesluta datumintervall som du inte vill inkludera i dina rapporter. Genom att segmentera händelsestyrda datum kan ni förhindra att organisationen fattar beslut om delar av data.
+Om du har data [påverkas av en händelse](overview.md)kan du använda ett segment för att exkludera datumintervall som du inte vill inkludera i dina rapporter. Genom att segmentera händelsestyrda datum kan ni förhindra att organisationen fattar beslut om delar av data.
 
 ## Isolera påverkade dagar
 
@@ -24,6 +23,10 @@ Skapa ett segment som isolerar den dag eller det datumintervall som påverkas. D
 
 ![Dagssegment som påverkas](assets/affected_days.jpg)
 
+>[!TIP]
+>
+>Om du vill ändra programsatsen OR till en AND-programsats klickar du på nedpilen bredvid ELLER och väljer AND.
+
 Adobe rekommenderar att du använder de orange dimensionskomponenterna och inte de lila datumintervallkomponenterna. Om du använder lila datumintervallkomponenter åsidosätter de projektets kalenderintervall:
 
 ![Uteslut segmentdagstyp](assets/exclude_segment_day_type.jpg)
@@ -33,7 +36,7 @@ Adobe rekommenderar att du använder de orange dimensionskomponenterna och inte 
 Skapa ett segment som utesluter den dag eller det datumintervall som påverkas. Det här segmentet är användbart om du vill exkludera de dagar som fick problem för att minimera påverkan på den övergripande rapporteringen.
 
 1. Öppna segmentverktyget genom att gå till **[!UICONTROL Components]** > **[!UICONTROL Segments]** och sedan klicka **[!UICONTROL Add]**.
-2. Klicka på **[!UICONTROL Options]** > **[!UICONTROL Exclude]** i det övre högra hörnet av segmentdefinitionsytan.
+2. Klicka på i det övre högra hörnet av segmentdefinitionsytan **[!UICONTROL Options]** > **[!UICONTROL Exclude]**.
 3. Dra dimensionen &#39;Dag&#39; till definitionsytan och ställ in den som motsvarar den dag du vill ta bort.
 4. Upprepa ovanstående steg för varje dag som du vill ta bort i rapporten.
 
@@ -49,17 +52,17 @@ Du kan använda både segmentet&quot;Påverkade dagar&quot; och&quot;Uteslut på
 
 ![Båda segmenten](assets/affected_and_exclude.png)
 
-Om du inte vill visa nollor i tabellen eller visualiseringar (som orsakar dips) aktiverar du **[!UICONTROL Interpret zero as no value]** under kolumninställningar.
+Om du inte vill visa nollor i tabellen eller visualiseringar (orsakar dips) aktiverar du **[!UICONTROL Interpret zero as no value]** under kolumninställningar.
 
 ![Tolka noll](assets/interpret_zero.png)
 
-Om du inte vill visa nollor i tabellen eller visualiseringar (som orsakar dips) aktiverar du **[!UICONTROL Interpret zero as no value]** under kolumninställningar.
+Om du inte vill visa nollor i tabellen eller visualiseringar (orsakar dips) aktiverar du **[!UICONTROL Interpret zero as no value]** under kolumninställningar.
 
 ![Tolka noll](assets/interpret_zero.png)
 
 ### Använd exkluderingssegmentet på ett projekt
 
-Du kan använda segmentet Uteslut påverkade dagar i ett Workspace-projekt. Dra det uteslutna segmentet till arbetsytan med namnet *Släpp ett segment här*.
+Du kan använda segmentet Uteslut påverkade dagar i ett Workspace-projekt. Dra det uteslutna segmentet till arbetsytan med etiketten *Släpp ett segment här*.
 
 >[!TIP]
 >
@@ -69,12 +72,12 @@ Du kan använda segmentet Uteslut påverkade dagar i ett Workspace-projekt. Dra 
 
 ### Använd exkluderingssegmentet i en virtuell rapportserie
 
-Du kan använda segmentet i en [virtuell rapportsserie](/help/components/vrs/vrs-about.md) för att enklare utesluta data. Det här alternativet är idealiskt eftersom du inte behöver komma ihåg att använda segmentet för varje rapport som innehåller det datumintervall som påverkas. Om du redan använder virtuella rapportsviter som primär datakälla kan du lägga till segmentet i ett befintligt VRS.
+Du kan använda segmentet i en [Virtuell rapportsvit](/help/components/vrs/vrs-about.md) så att data enkelt kan uteslutas. Det här alternativet är idealiskt eftersom du inte behöver komma ihåg att använda segmentet för varje rapport som innehåller det datumintervall som påverkas. Om du redan använder virtuella rapportsviter som primär datakälla kan du lägga till segmentet i ett befintligt VRS.
 
 1. Navigera till **[!UICONTROL Components]** > **[!UICONTROL Virtual report suites]**.
 2. Klicka på **[!UICONTROL Add]**.
 3. Ange önskat namn och beskrivning för den virtuella rapportsviten.
 4. Dra det uteslutna segmentet till området med etiketten **[!UICONTROL Add segment]**.
-5. Klicka **[!UICONTROL Continue]** i det övre högra hörnet och sedan på **[!UICONTROL Save]**.
+5. Klicka **[!UICONTROL Continue]** i det övre högra hörnet och klicka sedan på **[!UICONTROL Save]**.
 
 ![Segment tillämpat på VRS](assets/exclude_segment_vrs.png)
