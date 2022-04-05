@@ -3,9 +3,9 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 5edf3e6684b3572616f76db3f7c3bf0cf58ed408
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,8 @@ Mer information om hur du skapar ett FTP-konto finns i [Skapa ett FTP-konto](/he
    FIN-filen är en tom fil som har samma namn som datafilen, med en [!DNL .fin] filnamnstillägg. Om datafilen till exempel är [!DNL classdata1.tab], FIN-filnamnet är [!DNL classdata1.fin].
 
 Med jämna mellanrum hämtar Adobe överförda datafiler som har en associerad FIN-fil. Adobe importerar dem till de rapportsviter och datauppsättningar som anges i FTP-kontokonfigurationen.
+
+När Adobe Analytics har läst och bearbetat filer som överförts till FTP-mappen tas filerna bort automatiskt.
 
 ## Skapa ett FTP-konto {#task_C019268E6C934C7C95F4326F42A22CCF}
 
