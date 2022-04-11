@@ -4,9 +4,9 @@ description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 6a63c480220fa963cf1dc00acdd5e482dc2bab38
+source-git-commit: 587de061b1a395892be55a1898dde9f3204f285c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 0%
 | **Högerklicka på en punkt i en [!UICONTROL Line] diagram.** | The [!UICONTROL Annotation builder] öppnas. Observera att som standard visas anteckningar som skapats på det här sättet bara i det projekt där de skapades. Men du kan göra dem tillgängliga för alla projekt. Lägg även märke till att datum och mätvärden redan har fyllts i.<p>![](assets/annotate-line.png) |
 | **Gå till [!UICONTROL Components] > [!UICONTROL Create annotation].** | The [!UICONTROL Annotation builder] öppnas. |
 | **Använd den här snabbtangenten** för att öppna Annotation Builder: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Observera, att när du använder snabbtangenten för att skapa en anteckning, skapar du en endagarsanteckning för det aktuella datumet, utan något förvalt omfång (mått eller mått). |
-| **Använd [2.0 Antecknings-API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/annotations/)** | Med API:erna för anteckningar i Analytics 2.0 kan du skapa, uppdatera och hämta anteckningar via Adobe I/O. Dessa API:er använder samma data och metoder som Adobe använder i produktgränssnittet. |
 
 1. Fyll i [!UICONTROL Annotation builder] -element.
 
