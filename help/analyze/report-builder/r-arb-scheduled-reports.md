@@ -4,7 +4,7 @@ title: Schemalagd aktivitetshanterare
 feature: Report Builder
 role: User, Admin
 exl-id: 8bacd7e4-ab50-4b36-842c-a8b6130a58d9
-source-git-commit: 91d94ba33328f0ac5fba09cdafb26f58733b4d58
+source-git-commit: 64b239d0807f68ee7e60c94a81a08c46a55fecf8
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 1%
@@ -17,7 +17,7 @@ The [!UICONTROL Scheduled Task Manager] I kan du visa en lista över befintliga 
 
 ## Pausa äldre schemalagda aktiviteter
 
-**Gäller från 15 april 2022** kommer Adobe att göra uppehåll i alla schemalagda uppdrag i Report Builder som skapades för mer än två år sedan. Den här pausen gäller särskilt för **uppgifter som skapats före den 31 januari 2020**. Inga uppgifter, arbetsböcker eller data tas bort. Aktiviteter som är äldre än två år pausas och inga ytterligare schemalagda aktiviteter skickas.
+**Träder i kraft 21 april 2022** kommer Adobe att göra uppehåll i alla schemalagda uppdrag i Report Builder som skapades för mer än två år sedan. Den här pausen gäller särskilt för **uppgifter som skapats före den 31 januari 2020**. Inga uppgifter, arbetsböcker eller data tas bort. Aktiviteter som är äldre än två år pausas och inga ytterligare schemalagda aktiviteter skickas.
 
 Alla uppgifter som du vill återuppta skickandet kan återaktiveras. Logga in på Report Builder och starta [!UICONTROL Scheduled Task Manager]. Klicka **[!UICONTROL Reactivate]** för den schemalagda aktiviteten vill du fortsätta skicka. Alla uppgifter som återaktiveras har standardvärdet 18 månader - såvida inte ett kortare förfallodatum har valts.
 
