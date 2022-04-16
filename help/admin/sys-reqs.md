@@ -1,16 +1,16 @@
 ---
-title: Systemkrav
+title: Systemkrav för Adobe Analytics
 description: Systemkraven för Adobe Analytics.
 feature: System Requirements
 exl-id: e3575b1c-e088-48a9-90d4-ad1c7169e022
-source-git-commit: 0143496648e59e95c360388735def726e63ee71b
+source-git-commit: 7dc97ad5225baf56c829efc8c21b07154bdd8ff9
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 5%
+source-wordcount: '110'
+ht-degree: 1%
 
 ---
 
-# Systemkrav
+# Systemkrav för Adobe Analytics
 
 Visar systemkraven för olika produktlösningar i Adobe Analytics.
 

@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
-source-git-commit: a99ef87e9b131beba3fceb8dbb98da503a9d528d
+source-git-commit: 7dc97ad5225baf56c829efc8c21b07154bdd8ff9
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1933'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ CDA hämtar identifierarvariabeldimensionsobjekten innan de optimeras för rappo
 
 ## Hur många av mitt företags rapportsviter kan aktiveras för CDA?
 
-Flera rapportsviter kan vara aktiverade, men varje ytterligare rapportserie ökar den totala provisioneringstiden om flera rapportsviter begärs samtidigt. CDA sammanfogar inte rapportsviter. Varje rapportsvit som har aktiverats för CDA måste vara enhetsövergripande (innehålla data från flera ytor, t.ex. datorwebben, mobilwebben, mobilappar)
+Från och med den 1 maj 2022 kommer all ny implementering av CDA att begränsas till högst tre RSID:er (Report Suite ID) per kund. CDA sammanfogar inte rapportsviter. Varje rapportsvit som har aktiverats för CDA måste vara enhetsövergripande (innehålla data från flera ytor, t.ex. datorwebben, mobilwebben, mobilappar).
 
 ## Om min Experience Cloud organisation (även kallad IMS org) har flera företag i olika regioner, kan jag då aktivera CDA för samtliga?
 
