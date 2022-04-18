@@ -5,9 +5,9 @@ role: Admin
 solution: Analytics
 feature: VRS
 exl-id: 3742b9d1-f1fb-4690-bd44-b4719ff9d9bc
-source-git-commit: 00577a87f1f6ec69619dd17f18597dabe4c59bd2
+source-git-commit: 0bab340afcffdf337d0ff6bacb0351d744c1d9a5
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1469'
 ht-degree: 0%
 
 ---
@@ -88,4 +88,4 @@ Nedan visas en lista över mått och mått som påverkas beroende på vilka inst
 * **Icke-marknadsförande eVars/reserverade eVars:** Värden som angetts i en eVar behålls bara om värdet angavs inom rapportdatumintervallet på grund av fönstret för rapporttidsbearbetning. Dessutom kan tidsbaserade förfallodatum förfalla en timme tidigt eller en timme sent om beständigheten sträcker sig över en sommartid.
 * **Merchandising eVars/reserved eVars:** Se ovan. För konverteringssyntax, där bindningen är inställd på &quot;any event&quot;, används &quot;any hit&quot; i stället.
 * **Träfftyp:** Den här dimensionen anger om en träff är för- eller bakgrundsbild.
-* **Dimensioner med (lågtrafik) eller &quot;Uniques Exceeded&quot;:** Radobjektet (Lågtrafik) bestäms något annorlunda när du använder Rapporttidsbearbetning och är inte garanterat matchande vad som observeras vid rapportering på basrapportsviten. Dessutom kan man inte heller garantera att dimensioneringsradartiklar som inte ingår i lågtrafik motsvarar 100 % av data för det radobjektet, till skillnad från en basrapportsserie. Skillnaderna blir mer uttalade ju högre antal unika värden som finns i en dimension.
+* **Dimensioner med (lågtrafik) eller &quot;Uniques Exceeded&quot;:** Radobjektet (Lågtrafik) bestäms något annorlunda när du använder Rapporttidsbearbetning och är inte garanterat matchande vad som observeras vid rapportering på basrapportsviten. Det är inte säkert att radobjekt som inte ingår i lågtrafik motsvarar 100 % av Dimensionen för det radobjektet. Dessa skillnader kan bli mer uttalade ju högre antal unika värden som finns i en dimension.
