@@ -3,9 +3,9 @@ description: En panel som visar nästa eller föregående dimensionsobjekt för 
 title: Panelen Nästa eller Föregående objekt
 feature: Panels
 role: User, Admin
-source-git-commit: d4106324f6716139731cc6bd948ef06b35303620
+source-git-commit: 73fa048164c67c6c381ce5e223bb178f9ab1833f
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '430'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Panelen Nästa eller Föregående objekt
 
-The [!UICONTROL Next or previous item] som startats som en rapport i Rapporter och analyser, under [!UICONTROL Reports] > [!UICONTROL Most popular] > [!UICONTROL Next page/Previous page]. Panelen Arbetsyta innehåller ett antal tabeller och visualiseringar som gör det enkelt att identifiera nästa eller föregående dimensionsobjekt för en viss dimension. Exempel,
+The [!UICONTROL Next or previous item] som startats som en rapport i Rapporter och analyser, under [!UICONTROL Reports] > [!UICONTROL Most popular] > [!UICONTROL Next page/Previous page]. Panelen Arbetsyta innehåller ett antal tabeller och visualiseringar som gör det enkelt att identifiera nästa eller föregående dimensionsobjekt för en viss dimension. Du kanske till exempel vill utforska vilka sidor kunderna besöker oftast efter att de besökt hemsidan.
 
 ## Öppna panelen
 
