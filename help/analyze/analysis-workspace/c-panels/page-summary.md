@@ -3,13 +3,13 @@ description: På sidsammanfattningspanelen visas sammanfattningsinformation för
 title: Panelen Sidsammanfattning
 feature: Panels
 role: User, Admin
-source-git-commit: 4bb950350d258b8d608f6d95d37d7d860e23ed2c
+exl-id: f0b7cd92-17b2-452d-9aab-f78629360ab8
+source-git-commit: 8e319511362ecdef9bbd7d0ee0b2a6607fe68605
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # Panelen Sidsammanfattning
 
@@ -26,12 +26,12 @@ Du kommer åt panelen inifrån [!UICONTROL Reports] eller inom [!UICONTROL Works
 
 ## Panelindata {#Input}
 
-Du kan konfigurera [!UICONTROL Next or previous item] Panelen med dessa indatainställningar:
+Du kan konfigurera [!UICONTROL Page summary] med dessa indatainställningar:
 
 | Inställning | Beskrivning |
 | --- | --- |
 | Släppzon för segment (eller annan komponent) | Du kan dra och släppa segment eller andra komponenter för att ytterligare filtrera panelresultaten. |
-| Siddimensionsobjekt | I listrutan väljer du dimensionsobjektet vars nyckelstatistik du vill utforska. |
+| Siddimensionsobjekt | I listrutan väljer du det sidodimensionsobjekt vars nyckelstatistik du vill utforska. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -56,3 +56,7 @@ The [!UICONTROL Page summary] panelen returnerar en mängd mätdata och visualis
 | [!UICONTROL Flow] | Ett flödesdiagram med den valda sidan som fokalpunkt. Du kan fördjupa dig i data precis som i [Flödesdiagram](/help/analyze/analysis-workspace/visualizations/c-flow/creating-flow-report.md). |
 
 {style=&quot;table-layout:auto&quot;}
+
+![Panelen Sidsammanfattning](assets/page-sum1.png)
+
+![Mätvärden och flöde](assets/page-sum2.png)
