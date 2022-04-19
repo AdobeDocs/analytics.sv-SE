@@ -4,10 +4,10 @@ description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättni
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 533c323b8be651eca14a88641aa4a82705305297
+source-git-commit: 716b57203cd15ec646792ce1cf5ca47340c23421
 workflow-type: tm+mt
-source-wordcount: '3105'
-ht-degree: 41%
+source-wordcount: '3143'
+ht-degree: 40%
 
 ---
 
@@ -23,6 +23,10 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Datum | Beskrivning |
 | --- | --- |
+| **April 2022** |  |
+| Uppdateringar av Adobe Analytics landningssida | Uppdateringar av leden [Startsida för arbetsyta/rapporter och analyser](/help/analyze/landing.md) som förbättrar användbarheten och underlättar navigeringen. |
+| Nytt ämne [!UICONTROL Page Summary] panel | [Panelen Sidsammanfattning](/help/analyze/analysis-workspace/c-panels/page-summary.md) |
+| Nytt ämne [!UICONTROL Next/Previous item] panel | [Panelen Nästa/föregående dimensionsobjekt](/help/analyze/analysis-workspace/c-panels/next-previous.md) |
 | **Mars 2022** |  |
 | Nytt avsnitt om vilka HTTPS-krypteringsalgoritmer som stöds | [HTTPS-krypteringsalgoritmer som stöds](/help/technotes/rdc/encryption-algos.md) för kunder med chiffersäkerhetsnivån inställd på&quot;Hög&quot;. |
 | Ny dokumentation om anteckningar i arbetsytan | [Anteckningar i arbetsytan](/help/analyze/analysis-workspace/components/annotations/overview.md) kan ni effektivt kommunicera kontextuella datanunkter och insikter till er organisation. |

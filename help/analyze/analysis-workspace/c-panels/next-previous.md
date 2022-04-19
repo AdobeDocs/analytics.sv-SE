@@ -3,9 +3,9 @@ description: En panel som visar nästa eller föregående dimensionsobjekt för 
 title: Panelen Nästa eller Föregående objekt
 feature: Panels
 role: User, Admin
-source-git-commit: 2a16410a1a9ece301844ef0f242d09e3a16318c0
+source-git-commit: d4106324f6716139731cc6bd948ef06b35303620
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,9 @@ Du kommer åt panelen inifrån [!UICONTROL Reports] eller inom [!UICONTROL Works
 | Åtkomstpunkt | Beskrivning |
 | --- | --- |
 | [!UICONTROL Reports] | <ul><li>Panelen har redan släppts i ett projekt.</li><li>Den vänstra listen är komprimerad.</li><li>Om du valde [!UICONTROL Next page]har standardinställningar redan tillämpats, till exempel [!UICONTROL Page] for [!UICONTROL Dimension]och den översta sidan som [!UICONTROL Dimension Item], [!UICONTROL Next] for [!UICONTROL Direction] och [!UICONTROL Visit] for [!UICONTROL Container]. Du kan ändra alla dessa inställningar.</li></ul>![Panelen Nästa/Föregående](assets/next-previous.png) |
-| Arbetsyta | Skapa ett nytt projekt och välj panelikonen i den vänstra listen. Dra sedan [!UICONTROL Next or previous item] ovanför friformstabellen. Observera att [!UICONTROL Dimension] och [!UICONTROL Dimension Item] fält lämnas tomma. Välj en dimension i listrutan. [!UICONTROL Dimension items] fylls i baserat på [!UICONTROL dimension] du valde. Den översta dimensionsobjektet läggs till, men du kan välja en annan artikel.<p>![Panelen Nästa/Föregående](assets/next-previous2.png) |
+| Arbetsyta | Skapa ett nytt projekt och välj panelikonen i den vänstra listen. Dra sedan [!UICONTROL Next or previous item] ovanför friformstabellen. Observera att [!UICONTROL Dimension] och [!UICONTROL Dimension Item] fält lämnas tomma. Välj en dimension i listrutan. [!UICONTROL Dimension items] fylls i baserat på [!UICONTROL dimension] du valde. Den översta dimensionsobjektet läggs till, men du kan välja en annan artikel. Standardvärdena är Nästa och Besökare. Även här kan du ändra dem.<p>![Panelen Nästa/Föregående](assets/next-previous2.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Panelindata {#Input}
 
@@ -32,9 +34,11 @@ Du kan konfigurera [!UICONTROL Next or previous item] Panelen med dessa indatain
 | --- | --- |
 | Släppzon för segment (eller annan komponent) | Du kan dra och släppa segment eller andra komponenter för att ytterligare filtrera panelresultaten. |
 | Dimension | Dimensionen som du vill utforska nästa eller föregående objekt för. |
-| Dimension | Objektet |
+| Dimension | Det specifika objektet i mitten av nästa/föregående fråga. |
 | Riktning | Ange om du letar efter [!UICONTROL Next] eller [!UICONTROL Previous] dimensionsobjekt. |
 | Behållare | [!UICONTROL Visit] eller [!UICONTROL Visitor] (standard) avgör omfattningen av din förfrågan. |
+
+{style=&quot;table-layout:auto&quot;}
 
 Klicka **[!UICONTROL Build]** för att skapa panelen.
 
@@ -46,3 +50,10 @@ The [!UICONTROL Next or previous item] panelen returnerar en mängd data och vis
 
 ![Nästa/Föregående panelutdata](assets/next-previous-output2.png)
 
+| Visualisering | Beskrivning |
+| --- | --- |
+| Vågrätt fält | Visar nästa (eller föregående) objekt baserat på den dimensionspost du valde. Om du placerar pekaren över ett enskilt fält markeras motsvarande objekt i tabellen Frihand. |
+| Sammanfattningsnummer | Sammanfattningsnummer på hög nivå för alla förekomster av nästa eller föregående dimensionsobjekt för den aktuella månaden (hittills). |
+| Frihandstabell | Visar nästa (eller föregående) objekt baserat på den dimensionspost som du har valt i ett tabellformat. Det var till exempel de mest populära sidorna (av händelser) som folk gick till efter (eller före) hemsidan eller arbetsytesidan. |
+
+{style=&quot;table-layout:auto&quot;}
