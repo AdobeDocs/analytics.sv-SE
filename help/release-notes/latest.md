@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: b93b27fac0a9e3364512bb8a27ad64c7eb379dd1
+source-git-commit: 80e7241fd35e5c745c2341182983613f537ce224
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1008'
 ht-degree: 3%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (april 2022)
 
-**Senaste uppdatering**: 19 april 2022
+**Senaste uppdatering**: 20 april 2022
 
 * Versionsinformation om mars 2022 finns på [här](/help/release-notes/2022.md).
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 | Uppdateringar av Adobe Analytics landningssida | Uppdateringar till landningssidan för arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. [Läs mer](/help/analyze/landing.md) | 20 april 2022 |
 | [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | The [!UICONTROL Next or Previous item] kan du utforska objekt som följer efter eller föregår ett önskat dimensionsobjekt. Använd den om du till exempel vill se nästa eller föregående sidor till en viss produktsida, marknadsföringskanal eller till och med enhetstyp. Den här panelen går längre än äldre rapportering nästa/föregående eftersom den gör att du kan titta på alla dimensioner och inte kräver någon ny implementering för att få insikter. [Läs mer](/help/analyze/analysis-workspace/c-panels/next-previous.md) | 20 april 2022 |
 | [!UICONTROL Page Summary] Panelen Arbetsyta | The [!UICONTROL Page Summary] ger en djupgående analys av en sida du väljer. Det innehåller samma information som tidigare rapporter och analyser [!UICONTROL Page Summary] och mycket annat. [Läs mer](/help/analyze/analysis-workspace/c-panels/page-summary.md) | 20 april 2022 |
-| Borttaget krav på `x-proxy-global-company-id` header för 2.0 API-anrop | API:erna för Adobe Analytics 2.0 kräver inte längre `x-proxy-global-company-id` eftersom den här informationen är en del av slutpunkts-URL:en. Du kan fortfarande inkludera det här huvudet, men ett fel genereras inte längre om det saknas. | 20 april 2022 |
+| Borttaget krav på `x-proxy-global-company-id` header för 2.0 API-anrop | API:erna för Adobe Analytics 2.0 kräver inte längre `x-proxy-global-company-id` eftersom den här informationen är en del av slutpunkts-URL:en. Du kan fortfarande inkludera det här huvudet, men du får inte längre ett fel om det saknas. | 20 april 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
