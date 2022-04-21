@@ -3,10 +3,10 @@ description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+source-git-commit: 8f25dfefbc6fba1fb525d2e9e0fce654e21ef362
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 38%
+source-wordcount: '422'
+ht-degree: 36%
 
 ---
 
@@ -18,7 +18,7 @@ Information om vilken Adobe Analytics-produkt du ska använda finns på [här](/
 
 | Produkt- och hjälplänk | [Analysis Workspace](/help/analyze/analysis-workspace/home.md) | [Rapporter och analyser](/help/analyze/reports-analytics/getting-started.md) | [Report Builder](/help/analyze/report-builder/home.md) | [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) | [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html) | [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) | [Analytics API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
 |---|---|---|---|---|---|---|---|
-| **Åtkomstmetod** | [Webbläsare](/help/admin/sys-reqs.md) | [Webbläsare](/help/admin/sys-reqs.md) | [MS Excel för Windows](/help/analyze/report-builder/setup/system-requirements.md) | Konfigurera via webbläsaren. [Läs mer](/help/admin/sys-reqs.md) | [Windows 64 bitar](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html) | Konfigurera via webbläsaren. [Läs mer](/help/export/analytics-data-feed/data-feed-overview.md) | RESTful API tools. Logga in med inloggningsuppgifter för Adobe I/O. [Läs mer](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
+| **Åtkomstmetod** | [Webbläsare](/help/admin/sys-reqs.md) | [Webbläsare](/help/admin/sys-reqs.md) | [MS Excel för Windows](/help/analyze/report-builder/setup/system-requirements.md) | Konfigurera via webbläsaren. [Läs mer](/help/admin/sys-reqs.md) | [Windows 64 bitar](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html) | Konfigurera via webbläsaren. [Läs mer](/help/export/analytics-data-feed/data-feed-overview.md) | RESTful API tools. Logga in med Adobe Developer inloggningsuppgifter. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/) |
 | **Datagranularitet** | Sammanställd | Sammanställd | Sammanställd | Sammanställd | Träff | Träff | Sammanställd |
 | **Experience Cloud-ID (ECID) tillgängligt** | Nej | Nej | Nej | Ja | Ja | Ja | Nej |
 | **Tidsstämpel tillgänglig** | Nej | Nej | Nej | Nej | Ja | Ja | Nej |

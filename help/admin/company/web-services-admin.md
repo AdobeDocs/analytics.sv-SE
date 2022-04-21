@@ -3,9 +3,9 @@ description: Webbtjänstens API:er ger programmatisk åtkomst till marknadsföri
 title: Webbtjänster
 feature: Company Settings
 exl-id: d003d40e-b0b6-44f3-b9ef-ce6af61f5eb5
-source-git-commit: 72bd67179e003b70233d863d34153fec77548256
+source-git-commit: 8f25dfefbc6fba1fb525d2e9e0fce654e21ef362
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
@@ -20,9 +20,9 @@ Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter 
 
 I [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) Du kan uppdatera behörigheterna så att de omfattar de användare som behöver åtkomst till webbtjänstens API:er.
 
-## WSDL: Ladda ned Web Services API WSDL för webbtjänstutvecklare.
+## WSDL: Ladda ned Web Services API WSDL för webbtjänstutvecklare
 
-Besök [Adobe I/O](https://www.adobe.io/apis/experiencecloud/analytics.html), som innehåller dokumentation, exempelkod och forum för webbtjänsternas API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
+Besök [Adobe Developer](https://developer.adobe.com/analytics-apis/docs/2.0/), som innehåller dokumentation, exempelkod och forum för webbtjänsternas API:er. Klicka på Webbtjänstens API:er - översikt för mer information.
 
 ## Filtreringsalternativ
 
