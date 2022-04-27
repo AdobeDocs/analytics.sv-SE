@@ -5,18 +5,14 @@ role: User, Admin
 solution: Analytics
 feature: Annotations
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: 285bb11eb34ad02bf57227341f9a0931860c5c88
+source-git-commit: c2d799b9663c29c2d2bcc9c6ca643404cfc18bf5
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Översikt över anteckningar
-
->[!NOTE]
->
->Den stegvisa lanseringen av den här funktionen börjar 23 mars 2022. Allmän tillgänglighet: 11 april 2022.
 
 Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden. Du kan anteckna ett datum eller datumintervall med kända dataproblem, allmänna helgdagar, kampanjstarter osv. Du kan sedan visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden.
 
