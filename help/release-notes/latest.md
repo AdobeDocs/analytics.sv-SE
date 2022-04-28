@@ -3,24 +3,25 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 80e7241fd35e5c745c2341182983613f537ce224
+source-git-commit: c29515da8c74ad3332aa9797db9de505af7fe3aa
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1056'
 ht-degree: 3%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (april 2022)
 
-**Senaste uppdatering**: 20 april 2022
+**Senaste uppdatering**: 28 april 2022
 
-* Versionsinformation om mars 2022 finns på [här](/help/release-notes/2022.md).
+## Relaterade resurser
 
-* För versionsinformation om Customer Journey Analytics går du till [här](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=en).
+* [Information om föregående version för 2022](/help/release-notes/2022.md)
+* [Versionsinformation för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html)
+* [Versionsinformation om Media Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
+* Den senaste releaseuppdateringen för [Adobe Experience Cloud-produkter](https://business.adobe.com/products/adobe-experience-cloud-products.html)
 
-* Versionsinformation om Media Analytics finns på [här](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=en).
-
-* Läs om de senaste versionsuppdateringarna för [Adobe Experience Cloud-produkter](https://business.adobe.com/products/adobe-experience-cloud-products.html). Få den senaste självhjälpsdokumentationen, självstudiekurserna och kurserna om Experience League.
+## Nya funktioner i Adobe Analytics
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
@@ -34,12 +35,12 @@ ht-degree: 3%
 ## Korrigeringar i Adobe Analytics
 
 * Korrigerade ett fel i datafeeds, där start- och slutdatum ändrades automatiskt efter att datafeeden sparades när användargränssnittet för dataflöden skapades. Datumen uppdaterades automatiskt en dag. (AN-281262)
-
 * Korrigerade ett problem som förhindrade förnyelse av schemalagda projekt via e-postlänk. (AN-283622)
+* Korrigerade ett problem som gjorde att de senaste versionerna av Apple Safari och Microsoft Edge inte identifierades korrekt i söktabellen för webbläsartyp i Adobe. Liknar när [webbläsarversioner uppdateras](/help/components/dimensions/browser.md), uppdaterar sökningstabeller för webbläsartyper och korrigerar bara data som flyttas framåt. Uppslagstabellerna för webbläsarversionen uppdaterades den 20 april och uppslagstabellerna för webbläsartypen uppdaterades den 28 april. (AN-284872) AN-285753; AN-286257)
 
 ### Ytterligare korrigeringar i Adobe Analytics
 
-AN-274486; AN-279258; AN-279995; AN-280918; AN-281423; AN-282084; AN-282435; AN-283508; AN-283517; AN-283706; AN-283762; AN-283921; AN-284195; AN-284663; AN-284573; AN-284721; AN-284790; AN-284867; AN-284870; AN-284872; AN-284884; AN-284914; AN-284930; AN-284933; AN-284967; AN-284970; AN-285187; AN-285328; AN-285337; AN-285375; AN-285447; AN-285724; AN-285753; AN-285761;
+AN-274486; AN-279258; AN-279995; AN-280918; AN-281423; AN-282084; AN-282435; AN-283508; AN-283517; AN-283706; AN-283762; AN-283921; AN-284195; AN-284663; AN-284573; AN-284721; AN-284790; AN-284867; AN-284870; AN-284872; AN-284884; AN-284914; AN-284930; AN-284933; AN-284967; AN-284970; AN-285187; AN-285328; AN-285337; AN-285375; AN-285447; AN-285724; AN-285753; AN-285761
 
 ## Viktiga meddelanden för Adobe Analytics-administratörer
 
