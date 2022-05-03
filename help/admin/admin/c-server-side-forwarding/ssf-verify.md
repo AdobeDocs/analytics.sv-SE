@@ -4,7 +4,7 @@ solution: Analytics
 title: Så här verifierar du implementeringen av vidarebefordring på serversidan
 feature: Server-Side Forwarding
 exl-id: 21db4572-da3c-43aa-a774-86a089656695
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: aa4550d7012f76571f7623428d3d4ee08f728f64
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 5%
@@ -25,7 +25,7 @@ Så här kontrollerar du status för vidarebefordran på serversidan:
 
 >[!CAUTION]
 >
->Om svaret innehåller nyckelvärdepar `"status":"SUCCESS"` eller en 2 x 2-image är vidarebefordran på serversidan * inte* korrekt konfigurerat. Kontrollera att identitetstjänsten är korrekt distribuerad, att du har distribuerat modulen App Measurement, att rätt rapportsvit har mappats till rätt IMS-organisation och att vidarebefordran på serversidan har aktiverats i administratörskonsolen för Analytics.
+>Om svaret innehåller nyckelvärdepar `"status":"SUCCESS"` eller en 2 x 2-image är vidarebefordran på serversidan * inte* korrekt konfigurerat. Kontrollera att identitetstjänsten är korrekt distribuerad, att du har distribuerat modulen App Measurement, att den tillämpliga rapportsviten har mappats till rätt organisations-ID och att vidarebefordran på serversidan har aktiverats i administrationskonsolen för Analytics.
 
 >[!MORELIKETHIS]
 >

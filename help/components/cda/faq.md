@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
-source-git-commit: 7dc97ad5225baf56c829efc8c21b07154bdd8ff9
+source-git-commit: aa4550d7012f76571f7623428d3d4ee08f728f64
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1930'
 ht-degree: 0%
 
 ---
@@ -106,9 +106,9 @@ CDA hämtar identifierarvariabeldimensionsobjekten innan de optimeras för rappo
 
 Från och med den 1 maj 2022 kommer all ny implementering av CDA att begränsas till högst tre RSID:er (Report Suite ID) per kund. CDA sammanfogar inte rapportsviter. Varje rapportsvit som har aktiverats för CDA måste vara enhetsövergripande (innehålla data från flera ytor, t.ex. datorwebben, mobilwebben, mobilappar).
 
-## Om min Experience Cloud organisation (även kallad IMS org) har flera företag i olika regioner, kan jag då aktivera CDA för samtliga?
+## Om mitt organisations-ID har flera företag i olika regioner, kan jag aktivera CDA för alla dessa?
 
-Nej. För samma organisation kan bara en region ha CDA aktiverat.
+Nej. För samma organisations-ID kan bara en region ha CDA aktiverat.
 
 ## Vilka är fördelarna och nackdelarna med en 7-dagars repriser jämfört med en 1-dagars repriser?
 

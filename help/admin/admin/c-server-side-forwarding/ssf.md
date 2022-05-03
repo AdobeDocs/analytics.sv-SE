@@ -4,7 +4,7 @@ solution: Analytics
 title: Översikt över vidarebefordran på serversidan
 feature: Server-Side Forwarding
 exl-id: e3cd72d2-9588-4770-a7c2-64b13a1e9519
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: aa4550d7012f76571f7623428d3d4ee08f728f64
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Vidarebefordran på rapportsvitnivå på serversidan rekommenderas framför den 
 
 Gå till **Analyser** > **Administratör** > **Rapportsviter** > (välj **rapportsviter**) > **Redigera inställningar** > **Allmänt** > **Vidarebefordran på serversidan**. Om kryssrutan är:
 
-* **Inaktiv** (Du kan inte göra en markering eller så finns inte menyn): du inte har de valda rapportsviterna mappade till en IMS-organisation. Kontakta kundtjänst för att kontrollera att rapportsviten är korrekt mappad.
+* **Inaktiv** (Du kan inte göra en markering eller så finns inte menyn): du inte har de valda rapportsviterna mappade till ett organisations-ID. Kontakta kundtjänst för att kontrollera att rapportsviten är korrekt mappad.
 * **Handikappade**: Vidarebefordran på serversidan är inte aktiverad. Läs innehållet på sidan och fortsätt sedan med att aktivera funktionen.
 * **Aktiverad**: Du har etablerats för vidarebefordran på serversidan. Du kan också konfigurera den här integreringen med Audience Analytics.
 

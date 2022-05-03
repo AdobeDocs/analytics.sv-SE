@@ -3,7 +3,7 @@ description: Felsöka och åtgärda problem som rör Advertising Analytics.
 title: Felsöka Advertising Analytics
 feature: Advertising Analytics
 exl-id: 29e39a15-504a-4155-8794-aceb47046a54
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: aa4550d7012f76571f7623428d3d4ee08f728f64
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Du försöker [konfigurera ett nytt Advertising-konto](/help/integrate/c-adverti
  <tbody> 
   <tr> 
    <td colname="col1"> <p>1. Rapportsviten är inte mappad till inloggningsanvändarens Experience Cloud-Org-ID. </p> </td> 
-   <td colname="col2"> <p>Kontakta kundtjänst om du vill mappa rapportsviten till en IMS-organisation.</p> </td> 
+   <td colname="col2"> <p>Kontakta kundtjänst om du vill mappa rapportsviten till ett företags-ID.</p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2. Report Suite har inte etablerats för Advertising Analytics-rapportering. </p> </td> 
