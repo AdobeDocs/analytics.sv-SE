@@ -4,9 +4,9 @@ description: Adobe har för avsikt att pausa alla schemalagda rapporter som har 
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 6e5039cd-0f40-44f7-b97d-eb17d9db25a4
-source-git-commit: 64b239d0807f68ee7e60c94a81a08c46a55fecf8
+source-git-commit: d3309815de29264c743f30a236c99a55fc731413
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ Den schemalagda rapporten pausas när den upphör att gälla. Rapporten kan dock
 
 Syftet med denna åtgärd är att effektivt hantera och underhålla våra schemalagda rapporter medan vi förbereder för det tidigare utgivna slutet av livscykeln för rapporter och analyser. Detta kommer att fungera i takt med att vår nya styrningspolitik utvecklas:
 
+* Inga nya schemalagda rapporter kan skapas efter 15 april 2022.
 * Efter den 15 april 2022 får alla schemalagda rapporter ett maximalt förfallodatum på 9 månader.
 * Efter nio månader kommer uppgifter som har gått ut att pausas och kan återaktiveras, om det fortfarande behövs, till och med den 31 december 2023.
 * Den 31 december 2023 kommer rapporter och analyser att bli inaktuella.
