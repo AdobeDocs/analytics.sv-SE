@@ -1,35 +1,36 @@
 ---
-title: Meddelande om att giltighetstiden har löpt ut för schemalagda rapporter
-description: Adobe har för avsikt att pausa alla schemalagda rapporter som har ett skapandedatum som är längre än två år.
+title: End-of-life notice for scheduled reports
+description: Adobe intends to pause all scheduled reports that have a creation date greater than two years.
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 6e5039cd-0f40-44f7-b97d-eb17d9db25a4
-source-git-commit: d3309815de29264c743f30a236c99a55fc731413
+source-git-commit: 35e5f056f962066a068ca1f0247c5b550efc2edc
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# Meddelande om att giltighetstiden har löpt ut för schemalagda rapporter
+# End-of-life notice for scheduled reports
 
-Från och med den 21 april 2022 har Adobe för avsikt att pausa alla schemalagda rapporter som har ett skapandedatum som överstiger två år (alla uppgifter som skapats före den 31 januari 2020). Inga rapporter eller data kommer att tas bort. Endast rapporter som identifieras som äldre än två år kommer att pausas och inga ytterligare schemalagda rapporter kommer att skickas.
+**** No reports or data were deleted. Only reports identified as older than two years were paused, and no additional scheduled reports can be sent.
 
-Alla schemalagda rapporter som fortfarande ska skickas kan återaktiveras genom att logga in i Analytics och öppna [!UICONTROL Scheduled Reports] chef. Klicka på [!UICONTROL Edit] och ange en ny schemalagd tid och förfallotid. Alla rapporter som återaktiveras har en standardförfallotid på 9 månader, såvida inte ett kortare förfallodatum väljs.
+[!UICONTROL Scheduled Reports] [!UICONTROL Edit] Any report that gets reactivated will have a default expiration of 9 months, unless a shorter expiration date is chosen.
 
-För rapporter med ett skapandedatum som är mindre än två år utan förfallodatum (eller med ett förfallodatum som är längre än två år) används ett standardförfallodatum på nio månader. Det nya förfallodatumet är 15 december 2022. Du kan redigera det här förfallodatumet så att det är mindre än 9 månader, men inte större.
+Any report with a creation date less than two years with no expiration date (or with an expiration date longer than two years) will have a default 9-month expiration date applied. The new expiration date will be December 15, 2022. You can edit this expiration date to be less than 9 months, but not greater.
 
-Alla ändringar i en befintlig schemalagd rapport utan förfallodatum kräver ett förfallodatum på 9 månader eller mindre. I annat fall kan du inte spara några redigeringar eller ändringar i rapporten.
+Finally, any edits to an existing scheduled report with no expiration date require an expiration date of 9 months or less. Otherwise, you cannot save any edits or changes to the report.
 
-Den schemalagda rapporten pausas när den upphör att gälla. Rapporten kan dock återaktiveras med ett nytt 9-månaders förfallodatum. Inga rapporter eller data kommer att tas bort.
+At the time of expiration, the scheduled report will be paused. However, the report can be reactivated with a new 9-month expiration date. No reports or data will be deleted.
 
-## Ny styrningspolicy
+## New governance policy
 
-Syftet med denna åtgärd är att effektivt hantera och underhålla våra schemalagda rapporter medan vi förbereder för det tidigare utgivna slutet av livscykeln för rapporter och analyser. Detta kommer att fungera i takt med att vår nya styrningspolitik utvecklas:
+The purpose of this action is to effectively manage and maintain our scheduled reports as we prepare for the previously announced end-of-life for Reports &amp; Analytics. This will serve as our new governance policy moving forward:
 
-* Inga nya schemalagda rapporter kan skapas efter 15 april 2022.
-* Efter den 15 april 2022 får alla schemalagda rapporter ett maximalt förfallodatum på 9 månader.
-* Efter nio månader kommer uppgifter som har gått ut att pausas och kan återaktiveras, om det fortfarande behövs, till och med den 31 december 2023.
-* Den 31 december 2023 kommer rapporter och analyser att bli inaktuella.
+* No new scheduled reports can be created after April 21, 2022.
+* After April 21, 2022, all scheduled reports have a maximum expiration date of 9 months.
+* After 9 months, expired tasks are paused and can be reactivated, if still needed, until December 31, 2023.
+* On December 31, 2023, Reports &amp; Analytics will be deprecated.
+* You can no longer set up new Data Extracts. Existing ones will continue to run, but no new ones can be scheduled.
 
-Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst.
+For additional questions or support, please reach out to Adobe Customer Care.
