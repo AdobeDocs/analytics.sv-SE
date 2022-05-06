@@ -1,12 +1,12 @@
 ---
 description: Mätvärden är grunden för rapporter och hjälper er att visa och förstå dataförhållanden och möjliggör jämförelser sida vid sida av olika datauppsättningar om er webbplats. Mätvärden är kvantitativ information om besökaraktivitet, t.ex. visningar, klickningar, omladdningar, genomsnittlig tid, enheter, order, intäkter och så vidare.
-title: Översikt över mätvärden
+title: Översikt över rapporter och analysstatistik
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: ea7a59f3-5a5e-48b2-ae0c-ebc5ec34cd63
-source-git-commit: f0d2508b64b835a030258c7437c10b7c8654b5ed
+source-git-commit: 87d1fb0c856fa28e14861b01980f6f4c1080eacb
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
