@@ -5,34 +5,30 @@ role: Admin
 solution: Analytics
 feature: VRS
 exl-id: 3742b9d1-f1fb-4690-bd44-b4719ff9d9bc
-source-git-commit: 0bab340afcffdf337d0ff6bacb0351d744c1d9a5
+source-git-commit: ec4edb257490d326ab8f8de51a4ab9412a2b4a28
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 0%
+source-wordcount: '1262'
+ht-degree: 1%
 
 ---
 
 # Bearbetning av rapporttid
 
-[!UICONTROL Report time processing] är en inställning för en virtuell rapportserie som tillåter att data bearbetas på ett icke-förstörande, retroaktivt sätt.
-
->[!NOTE]
->
->[!UICONTROL Report Time Processing] finns endast för Analysis Workspace.
+[!UICONTROL Report time processing] är en inställning för ett virtuellt rapportpaket som tillåter att data i Analysis Workspace behandlas på ett icke-förstörande, retroaktivt sätt.
 
 [!UICONTROL Report Time Processing] påverkar bara data i den virtuella rapportsviten och påverkar inte data eller datainsamling i basrapportsviten. Skillnaden mellan [!UICONTROL Report Time Processing] och traditionell Analytics-bearbetning förstås bäst med följande diagram:
 
-![Google1](assets/google1.jpg)
+![Traditionell bearbetningsprocess](assets/google1.jpg)
 
 Under databearbetningen i Analytics flödar data genom datainsamlingsflödet och in i ett förbearbetningssteg, som förbereder data för rapportering. I det här förbearbetningssteget används bl.a. logik för förfallodatum och beständighetslogik för eVar på data som samlas in. Den främsta nackdelen med den här förbehandlingsmodellen är att den kräver att all konfiguration görs i förväg innan data samlas in. Det innebär att ändringar i förbehandlingsinställningarna bara gäller för nya data från den tidpunkten och framåt. Det här är problematiskt om data kommer i fel ordning eller om inställningarna är felkonfigurerade.
 
 [!UICONTROL Report Time Processing] är ett helt annat sätt att behandla Analytics-data för rapportering. I stället för att förbestämma bearbetningslogiken innan data samlas in, ignorerar Analytics datauppsättningen under förbearbetningssteget och använder den här logiken varje gång en rapport körs:
 
-![Google2](assets/google2.jpg)
+![Rörledning för bearbetning av rapporttid](assets/google2.jpg)
 
-Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan t.ex. ändra besökets tidsgräns till hur länge du vill på ett icke-förstörande sätt och dessa ändringar återspeglas i eVar beständighet och segmentbehållare retroaktivt som om du hade använt dessa inställningar innan data samlades in. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
+Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan t.ex. ändra besökets tidsgräns till hur länge du vill på ett icke-förstörande sätt och dessa ändringar återspeglas i eVar beständighets- och segmentbehållare under hela rapporteringsperioden. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
 
-[!UICONTROL Report Time Processing] gör det även möjligt för Analytics att förhindra bakgrundstötar från att starta nya besök och [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) för att ange att rapportering ska starta ett nytt besök när en appstartshändelse utlöses.
+[!UICONTROL Report Time Processing] gör det även möjligt för Analytics att förhindra bakgrundstötar från att starta nya besök och [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) om du vill starta ett nytt besök när en appstartshändelse utlöses.
 
 ## Konfigurationsalternativ
 
@@ -54,23 +50,23 @@ Rapporttidsbearbetningen stöder inte alla mått och mått som är tillgängliga
 
 Dessutom bearbetas endast data som kommer från rapportens datumintervall (kallas datumfönster nedan). Detta innebär att eVar som är inställda på&quot;aldrig förfaller&quot; för en besökare före rapportdatumintervallet inte finns kvar i rapporteringsfönstren och inte visas i rapporter. Detta innebär också att kundlojalitetsmätningarna enbart baseras på data som finns i rapporteringsdatumintervallet och inte på hela historiken före rapportens datumintervall.
 
-Nedan finns en lista med mått och mått som för närvarande inte stöds vid bearbetning av rapporttid:
+Följande dimensioner och mått stöds inte för bearbetning av rapporttid:
 
-* **Analyser för Target:** Stöds inte för närvarande. Framtida stöd planeras.
-* **Analyser för Advertising Cloud reserverade mått:** Stöds inte för närvarande. Framtida stöd planeras.
-* **Mått för enkel åtkomst:** Stöds inte permanent.
-* **Listvariabler:** Stöds inte för närvarande. Framtida stöd planeras.
-* **Counter eVars:** Stöds inte permanent.
-* **Variabler för marknadsföringskanaler:** Stöds inte för närvarande. Framtida stöd planeras.
-* **Dagar sedan Dimensionen för senaste köp:** Den här dimensionen stöds inte på grund av karaktären hos fönstret för rapporttidsbearbetning.
-* **Dagar före första inköp-Dimension:** Den här dimensionen stöds inte på grund av karaktären hos fönstret för rapporttidsbearbetning.
-* **Dimension för returfrekvens:** Den här dimensionen stöds inte på grund av karaktären hos fönstret för rapporttidsbearbetning. Ett alternativt sätt att använda ett besöksräkningsmått i ett segment är möjligt, eller att använda besöksmåttet i en histogramrapport.
-* **Dagar sedan senaste besök-Dimensionen:** Den här dimensionen stöds inte på grund av karaktären hos fönstret för rapporttidsbearbetning.
-* **Ursprunglig Dimension för startsida:** Den här dimensionen stöds inte på grund av karaktären hos fönstret för rapporttidsbearbetning.
-* **Linjär allokeringsvariabler:** Stöds inte för närvarande. Framtida stöd planeras.
-* **Ursprunglig Dimension för referensdomän:** Stöds inte för närvarande. Framtida stöd planeras.
-* **Besök nummer:** Detta mått stöds inte på grund av karaktären hos fönstret för rapporttidsbearbetning. Som ett alternativ i mobilappar kan du använda ett beräknat mått, inklusive besökare/besök med mätvärdet för appinstallation, för att identifiera nya besökare eller besök.
-* **Datakällor för transaktions-ID:** Stöds inte för närvarande. Framtida stöd planeras.
+* **Analyser för Target**
+* **Analyser för Advertising Cloud mått/mätvärden**
+* **Counter eVars**
+* **Dagar före första köp**
+* **Dagar sedan senaste köp**
+* **Dagar sedan senaste besök**
+* **Inmatningssidans originalformat**
+* **Linjär allokeringsvariabler**
+* **Listvariabler**
+* **Dimensioner för marknadsföringskanaler**
+* **Ursprunglig referensdomän**
+* **Återbesöksfrekvens**
+* **Enkelt besök**
+* **Datakällor för transaktions-ID**
+* **Besöksnummer**
 
 ## Påverkade mått och mätvärden
 
