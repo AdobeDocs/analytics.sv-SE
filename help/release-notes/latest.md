@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: c29515da8c74ad3332aa9797db9de505af7fe3aa
+source-git-commit: 43869c683ca30c94157c6822b53f02a917f6e3ff
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1156'
 ht-degree: 3%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (april 2022)
 
-**Senaste uppdatering**: 28 april 2022
+**Senaste uppdatering**: 9 maj 2022
 
 ## Relaterade resurser
 
@@ -46,6 +46,7 @@ AN-274486; AN-279258; AN-279995; AN-280918; AN-281423; AN-282084; AN-282435; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **SFTP-uppgradering** | 9 maj 2022 | Tidigare hade vi meddelat att Adobe skulle uppgradera sina tjänster för SFTP (Secure File Transfer Protocol) i maj 2022 för att ge bättre säkerhet vid filöverföring. Vi har skjutit upp uppgraderingen till sommaren 2022. När den här ändringen görs stöds inte längre vissa SFTP-klientkonfigurationer. Detta påverkar endast data som skickas till eller hämtas från Adobe Analytics med SFTP. FTP-protokollet påverkas inte. För att undvika avbrott i tjänsten bör du se till att dina SFTP-klienter (kod, verktyg, tjänster) följer de detaljerade ändringarna [här](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/secure-file-transfer-protocol/sftp-upgrade.html). |
 | **CDA-berättigande (Cross-Device Analytics)** | 13 april 2022 | Effektivt **1 maj 2022**, ny implementering av [CDA](/help/components/cda/overview.md) begränsas till högst tre RSID:er (Report Suite ID) per kund. |
 | **Ändra till hur Adobe Analytics hanterar A4T-data som samlats in via Experience Edge** | 31 mars 2022 | Den 7 mars 2022 ändrade Analytics hur det hanterar vissa anrop från Experience Edge som innehåller Target-innehåll som är avsett för A4T-rapportering (Analytics for Target). Från och med den 7 mars ändras alla träffar med A4T-rapportinnehåll så att de inte behandlas som sidvy eller länkhändelser. Startar **31 mars 2022**, är logiken mer selektiv så att standardhändelserna för sidvisning och klickning inte ändras. Framöver är de enda händelser som ändras endast personliga anrop som bara har A4T-innehåll. |
 | **Uppdatering till webbläsarkrypteringsmetoder som stöds av vissa kunder** | 28 mars 2022 | Adobe erbjuder två krypteringsnivåer för att uppfylla olika kundbehov när det gäller säkerhet vid datainsamling från första part. På **23 juni 2022** support tas bort för vissa HTTPS-krypteringsalgoritmer, så kallade ciphers, för kunder med säkerhetsnivån inställd på Hög. Den här åtgärden innebär att vissa äldre operativsystem inte längre kan skicka data till Analytics eftersom de inte har stöd för moderna krypteringsmetoder. Kunder som använder standardsäkerhetsinställningarna för chiffrering påverkas inte. Alla kunder som för närvarande använder inställningen &quot;Hög&quot; har redan kontaktats direkt. Här finns en detaljerad lista över de cifer som påverkas av denna ändring. |
