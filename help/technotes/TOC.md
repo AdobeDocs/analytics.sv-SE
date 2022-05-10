@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: En kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
-source-git-commit: ce607610516a94e4d0fbbc53a1f8f53f5977a777
+source-git-commit: 1539649c758814d64a6f5c6dddff262df831d691
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 68%
+source-wordcount: '197'
+ht-degree: 69%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 68%
    + [Jämföra datum med tidigare intervall](event/compare-dates.md)
    + [Härleda data som påverkats av händelser](event/calcmetrics.md)
    + [Kommunicera händelser till användare](event/communicate.md)
-   + [Intelligent datautjämning](event/intelligent-data-smoothing.md)
 + Cookies {#cookies}
    + [Webbläsarcookies](cookies/cookies.md)
    + [Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookies/cookieless.md)
@@ -46,7 +45,7 @@ ht-degree: 68%
 + [IP-adresser och domäner som används av Adobe Analytics](ip-addresses.md)
 + [Latens](latency.md)
 + [Lågtrafikvärde](low-traffic.md)
-+ [Migrera bearbetningsregler för Mobile Services till Adobe Analytics](migrate-mobile.md)
++ [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)
 + [Stöd för flera valutor](multicurrency.md)
 + [Sekretessöversikt](privacy-overview.md)
 + [Progressive Web Apps](pwa.md)
