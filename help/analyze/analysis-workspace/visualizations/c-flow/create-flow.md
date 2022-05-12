@@ -3,13 +3,13 @@ description: Använd flödesvisualisering i ett Workspace-projekt.
 title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
-source-git-commit: 141daf54e845970254f478e8c3e95be2239013c5
+exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
+source-git-commit: 6ceea6bcb2fc0cb9120c42f6dbf857ce172664c7
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 2%
+source-wordcount: '729'
+ht-degree: 1%
 
 ---
-
 
 # Konfigurera en flödesvisualisering
 
@@ -17,13 +17,13 @@ ht-degree: 2%
 >
 >Den nya versionen av [!UICONTROL Flow] visualisering finns för närvarande i en privat betaversion. Se [den här sidan](/help/analyze/analysis-workspace/visualizations/c-flow/creating-flow-report.md) för de aktuella funktionerna.
 
-Med Flow kan ni spåra exakt vilka resor kunderna tar via er webbplats eller er app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden. Varje flöde har en startpunkt och en slutpunkt, och ett mått eller en dimension (eller artikel) som du håller på att spåra.
+Med den uppdaterade Flow-visualiseringen kan ni förstå den resa som härrör från eller leder fram till en specifik konverteringshändelse på er webbplats eller i er app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden. Med Flow kan du konfigurera början eller slutet av sökvägen som du är intresserad av, eller analysera alla sökvägar som flödar genom en dimension eller dimensionspost.
 
 Den nya [!UICONTROL flow] arbetsflödet har förbättrats på flera sätt:
 
-* Det gör det möjligt att spåra mätvärden, förutom mått och dimensionsobjekt.
+* Nu kan du välja att starta eller avsluta din bana med en kombination av mått och en målningsdimension.
 * Innehåller [!UICONTROL Advanced Settings] så att du kan anpassa [!UICONTROL flow].
-* Här kan du konfigurera [!UICONTROL flow] innan du bygger den.
+* Den nya knappen &quot;Bygg&quot; sparar tid genom att du kan konfigurera hela resan samtidigt, ställa frågor och sedan automatiskt bygga ut flera kolumner och noder samtidigt &#x200B;.
 
 ![nytt flödesgränssnitt](assets/new-flow.png)
 
@@ -53,7 +53,7 @@ Den nya [!UICONTROL flow] arbetsflödet har förbättrats på flera sätt:
    | --- | --- |
    | **[!UICONTROL Include repeat instances]** | Flödesvisualiseringar baseras på instanser av en dimension. Den här inställningen ger dig möjlighet att inkludera eller exkludera upprepade instanser, t.ex. sidomladdning. Det går dock inte att ta bort upprepningar från Flow-visualiseringar som innehåller flervärdesdimensioner, som listVars, listProps, s.product, merchandising eVars osv. Standard = avmarkerat. |
    | **[!UICONTROL Wrap labels]** | Etiketterna på Flow-elementen trunkeras normalt för att spara skärmutrymme, men du kan göra hela etiketten synlig genom att markera den här rutan.  Standard = avmarkerat. |
-   | **[!UICONTROL Limit to Entries/Exits]** | Resultaten begränsas till banor när den första/sista kontaktytan är och inträde/utträde. |
+   | **[!UICONTROL Limit to first/last occurrence]** | Begränsa banor till dem som börjar/slutar med den första/sista förekomsten av en dimension/artikel/mått. |
    | **[!UICONTROL Number of Columns]** | Anger hur många kolumner du vill ha i flödesdiagrammet. |
    | **[!UICONTROL Items expanded per Column]** | Hur många objekt du vill ha i varje kolumn. |
    | **[!UICONTROL Flow Container]** | <ul><li>Gå in på</li><li>Besökare</li></ul> Gör att du kan växla mellan Besök och Besök för att analysera besökarbanan. Dessa inställningar hjälper er att förstå besökarnas engagemang på besökarnivå (mellan besök) eller begränsa analysen till ett enda besök. |
