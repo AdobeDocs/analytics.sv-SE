@@ -3,9 +3,9 @@ title: Frågeparametrar för datainsamling
 description: Visar alla frågesträngsparametrar som används i bildbegäranden.
 feature: Validation
 exl-id: 2eb2ade7-a3db-4b00-8a70-2632d1c0aaaf
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 799c7d2636dc2ba5db90d2dc400462a412aea9f1
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '710'
 ht-degree: 5%
 
 ---
@@ -55,7 +55,7 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `p` | Ingen | Används inte längre. Lista över plugin-program som används i webbläsaren. |
 | `pageName` | [`pageName`](../vars/page-vars/pagename.md) | Används i [Sida](/help/components/dimensions/page.md) dimension. |
 | `pageType` | [`pageType`](../vars/page-vars/pagetype.md) | Används i [Sidorna hittades inte](/help/components/dimensions/pages-not-found.md) dimension. |
-| `pccr` | Ingen | Endast för nya besökare och alltid inställt på `true`. Förhindra oändliga omdirigeringar. |
+| `pccr` | Ingen | Endast för nya besökare och alltid inställt på `true`. Förhindra oändliga omdirigeringar om en besökare avvisar cookies. |
 | `pe` | [`tl()`](../vars/functions/tl-method.md) | Anger typen av anpassad länk. Krävs för [Egna länkar](/help/components/dimensions/custom-link.md), [Hämta länkar](/help/components/dimensions/download-link.md)och [Avsluta länkar](/help/components/dimensions/exit-link.md). |
 | `pev1` | Ingen | Den URL som den anpassade länken inträffade på. |
 | `pev2` | [`tl()`](../vars/functions/tl-method.md) | Eget länknamn. |
@@ -77,7 +77,8 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `v0` | [`campaign`](../vars/page-vars/campaign.md) | [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. |
 | `v1` - `v250` | [`evar1` - `eVar250`](../vars/page-vars/evar.md) | [eVars](/help/components/dimensions/evar.md)eller anpassade konverteringsdimensioner. |
 | `vid` | [`visitorID`](../vars/config-vars/visitorid.md) | Variabel för besökar-ID. |
-| `vmk` | `vmk` | Används inte längre. Nyckel för migrering av besökare, som hjälper till att migrera implementeringar från tredjepartscookies till cookies från första part. |
+| `vidn` | Ingen | Ange som AppMeasurement för nya besökare. Innehåller ID-värdet som lagras i besökarens cookie. |
+| `vmk` | `vmk` | Används inte längre. Nyckel för migrering av besökare, som hjälper till att migrera implementeringar från tredje part till cookies från första part. |
 | `vvp` | `variableProvider` | Används i dataanslutningar. |
 | `xact` | [`transactionID`](../vars/page-vars/transactionid.md) | Används tillsammans med datakällor för att knyta samman online- och offlinedata. |
 | `zip` | [`zip`](../vars/page-vars/zip.md) | Används i [Postnummer](/help/components/dimensions/zip-code.md) dimension. |
