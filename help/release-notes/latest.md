@@ -3,16 +3,20 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 43869c683ca30c94157c6822b53f02a917f6e3ff
+source-git-commit: aa4dc06dc1719f398c29aeca40051d88f339ce42
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 3%
+source-wordcount: '872'
+ht-degree: 6%
 
 ---
 
-# Aktuell versionsinformation för Adobe Analytics (april 2022)
+# Aktuell versionsinformation för Adobe Analytics (maj 2022)
 
-**Senaste uppdatering**: 9 maj 2022
+**Senaste uppdatering**: 11 maj 2022
+
+>[!NOTE]
+>
+>Den här sidan innehåller information om förhandsversioner och kan komma att ändras.
 
 ## Relaterade resurser
 
@@ -25,24 +29,23 @@ ht-degree: 3%
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
-| Uppdateringar av Adobe Analytics landningssida | Uppdateringar till landningssidan för arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. [Läs mer](/help/analyze/landing.md) | 20 april 2022 |
-| [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | The [!UICONTROL Next or Previous item] kan du utforska objekt som följer efter eller föregår ett önskat dimensionsobjekt. Använd den om du till exempel vill se nästa eller föregående sidor till en viss produktsida, marknadsföringskanal eller till och med enhetstyp. Den här panelen går längre än äldre rapportering nästa/föregående eftersom den gör att du kan titta på alla dimensioner och inte kräver någon ny implementering för att få insikter. [Läs mer](/help/analyze/analysis-workspace/c-panels/next-previous.md) | 20 april 2022 |
-| [!UICONTROL Page Summary] Panelen Arbetsyta | The [!UICONTROL Page Summary] ger en djupgående analys av en sida du väljer. Det innehåller samma information som tidigare rapporter och analyser [!UICONTROL Page Summary] och mycket annat. [Läs mer](/help/analyze/analysis-workspace/c-panels/page-summary.md) | 20 april 2022 |
-| Borttaget krav på `x-proxy-global-company-id` header för 2.0 API-anrop | API:erna för Adobe Analytics 2.0 kräver inte längre `x-proxy-global-company-id` eftersom den här informationen är en del av slutpunkts-URL:en. Du kan fortfarande inkludera det här huvudet, men du får inte längre ett fel om det saknas. | 20 april 2022 |
+| Inga nya funktioner den här månaden | Ej tillämpligt | Ej tillämpligt |
 
 {style=&quot;table-layout:auto&quot;}
 
-## Korrigeringar i Adobe Analytics
+### Korrigeringar i Adobe Analytics
 
-* Korrigerade ett fel i datafeeds, där start- och slutdatum ändrades automatiskt efter att datafeeden sparades när användargränssnittet för dataflöden skapades. Datumen uppdaterades automatiskt en dag. (AN-281262)
-* Korrigerade ett problem som förhindrade förnyelse av schemalagda projekt via e-postlänk. (AN-283622)
-* Korrigerade ett problem som gjorde att de senaste versionerna av Apple Safari och Microsoft Edge inte identifierades korrekt i söktabellen för webbläsartyp i Adobe. Liknar när [webbläsarversioner uppdateras](/help/components/dimensions/browser.md), uppdaterar sökningstabeller för webbläsartyper och korrigerar bara data som flyttas framåt. Uppslagstabellerna för webbläsarversionen uppdaterades den 20 april och uppslagstabellerna för webbläsartypen uppdaterades den 28 april. (AN-284872) AN-285753; AN-286257)
+(Korrigeringar för flera kunder)
+
+Ej tillämpligt
 
 ### Ytterligare korrigeringar i Adobe Analytics
 
-AN-274486; AN-279258; AN-279995; AN-280918; AN-281423; AN-282084; AN-282435; AN-283508; AN-283517; AN-283706; AN-283762; AN-283921; AN-284195; AN-284663; AN-284573; AN-284721; AN-284790; AN-284867; AN-284870; AN-284872; AN-284884; AN-284914; AN-284930; AN-284933; AN-284967; AN-284970; AN-285187; AN-285328; AN-285337; AN-285375; AN-285447; AN-285724; AN-285753; AN-285761
+(Korrigeringar för enskilda kunder)
 
-## Viktiga meddelanden för Adobe Analytics-administratörer
+AN-274429; AN-280918; AN-280945; AN-282884; AN-283565; AN-284785; AN-284814; AN-284854; AN-285253; AN-285432; AN-285535; AN-286255; AN-286340; AN-286434; AN-286454; AN-286630; AN-286716; AN-286854; AN-286911
+
+### Viktiga meddelanden för Adobe Analytics-administratörer
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
@@ -58,9 +61,7 @@ AN-274486; AN-279258; AN-279995; AN-280918; AN-281423; AN-282084; AN-282435; AN-
 
 {style=&quot;table-layout:auto&quot;}
 
-## AppMeasurement {#appm}
+### AppMeasurement
 
 De senaste uppdateringarna av AppMeasurement-versioner (version 2.2.4) finns i [Versionsinformation om AppMeasurement for JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html?lang=en).
 
->[!MORELIKETHIS]
->[[!DNL Customer Journey Analytics] versionsinformation](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=en)
