@@ -4,10 +4,10 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 6ceea6bcb2fc0cb9120c42f6dbf857ce172664c7
+source-git-commit: e9cebe28f71b3d6f44744e78447e31cf597e7054
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -44,6 +44,10 @@ Den nya [!UICONTROL flow] arbetsflödet har förbättrats på flera sätt:
 1. Om du väljer ett mätvärde måste du även ange [!UICONTROL Pathing Dimension], som visas här, som du använder för att skapa sökvägen. Standardvärdet är [!UICONTROL Page].
 
    ![målningsdimension](assets/pathing-dim.png)
+
+   >[!IMPORTANT]
+   >
+   >Beräknade mått kan inte tas med i  **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** släppzoner.
 
 1. (Valfritt) Klicka på **[!UICONTROL Show Advanced Settings]** för att konfigurera avancerade inställningar:
 
