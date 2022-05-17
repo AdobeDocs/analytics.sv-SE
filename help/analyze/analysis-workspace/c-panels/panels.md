@@ -4,10 +4,10 @@ title: Översikt över paneler
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: ca1ca90c5b40ef89db14741bca826d7a57be44c6
+source-git-commit: bcfcba4093f051e2d4132fb2c45ab66d76ba192d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
