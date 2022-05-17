@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: aa4dc06dc1719f398c29aeca40051d88f339ce42
+source-git-commit: 31387d369428727a486a19b986bf9d891a36e714
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 6%
+source-wordcount: '877'
+ht-degree: 4%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (maj 2022)
 
-**Senaste uppdatering**: 11 maj 2022
+**Senaste uppdatering**: 17 maj 2022
 
 >[!NOTE]
 >
@@ -43,14 +43,14 @@ Ej tillämpligt
 
 (Korrigeringar för enskilda kunder)
 
-AN-274429; AN-280918; AN-280945; AN-282884; AN-283565; AN-284785; AN-284814; AN-284854; AN-285253; AN-285432; AN-285535; AN-286255; AN-286340; AN-286434; AN-286454; AN-286630; AN-286716; AN-286854; AN-286911
+AN-274429; AN-279640; AN-280918; AN-280945; AN-282884; AN-283565; AN-284785; AN-284814; AN-284854; AN-284989; AN-285244; AN-285253; AN-285432; AN-285528; AN-285535; AN-285710; AN-286255; AN-286340; AN-286434; AN-286454; AN-286630; AN-286716; AN-286854; AN-286911
 
 ### Viktiga meddelanden för Adobe Analytics-administratörer
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
 | **SFTP-uppgradering** | 9 maj 2022 | Tidigare hade vi meddelat att Adobe skulle uppgradera sina tjänster för SFTP (Secure File Transfer Protocol) i maj 2022 för att ge bättre säkerhet vid filöverföring. Vi har skjutit upp uppgraderingen till sommaren 2022. När den här ändringen görs stöds inte längre vissa SFTP-klientkonfigurationer. Detta påverkar endast data som skickas till eller hämtas från Adobe Analytics med SFTP. FTP-protokollet påverkas inte. För att undvika avbrott i tjänsten bör du se till att dina SFTP-klienter (kod, verktyg, tjänster) följer de detaljerade ändringarna [här](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/secure-file-transfer-protocol/sftp-upgrade.html). |
-| **CDA-berättigande (Cross-Device Analytics)** | 13 april 2022 | Effektivt **1 maj 2022**, ny implementering av [CDA](/help/components/cda/overview.md) begränsas till högst tre RSID:er (Report Suite ID) per kund. |
+| **CDA-berättigande (Cross-Device Analytics)** | 13 april 2022 | Effektivt **1 maj 2022**, nya implementeringar av [CDA](/help/components/cda/overview.md) begränsas till högst tre RSID:er (Report Suite ID) per kund. |
 | **Ändra till hur Adobe Analytics hanterar A4T-data som samlats in via Experience Edge** | 31 mars 2022 | Den 7 mars 2022 ändrade Analytics hur det hanterar vissa anrop från Experience Edge som innehåller Target-innehåll som är avsett för A4T-rapportering (Analytics for Target). Från och med den 7 mars ändras alla träffar med A4T-rapportinnehåll så att de inte behandlas som sidvy eller länkhändelser. Startar **31 mars 2022**, är logiken mer selektiv så att standardhändelserna för sidvisning och klickning inte ändras. Framöver är de enda händelser som ändras endast personliga anrop som bara har A4T-innehåll. |
 | **Uppdatering till webbläsarkrypteringsmetoder som stöds av vissa kunder** | 28 mars 2022 | Adobe erbjuder två krypteringsnivåer för att uppfylla olika kundbehov när det gäller säkerhet vid datainsamling från första part. På **23 juni 2022** support tas bort för vissa HTTPS-krypteringsalgoritmer, så kallade ciphers, för kunder med säkerhetsnivån inställd på Hög. Den här åtgärden innebär att vissa äldre operativsystem inte längre kan skicka data till Analytics eftersom de inte har stöd för moderna krypteringsmetoder. Kunder som använder standardsäkerhetsinställningarna för chiffrering påverkas inte. Alla kunder som för närvarande använder inställningen &quot;Hög&quot; har redan kontaktats direkt. Här finns en detaljerad lista över de cifer som påverkas av denna ändring. |
 | **Pausa äldre schemalagda rapporter** | 12 april 2022 | Effektivt **20 april 2022** kommer Adobe att pausa alla schemalagda rapporter som har ett skapandedatum som är större än två år (skapat före den 31 januari 2020). Inga rapporter eller data tas bort. Endast rapporter som identifieras som äldre än två år pausas och inga ytterligare schemalagda rapporter skickas. Läs mer |
