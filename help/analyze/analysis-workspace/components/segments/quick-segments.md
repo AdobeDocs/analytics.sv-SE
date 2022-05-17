@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: 7434a941f3e5a47a3f5d5a28320a3fc396dd3740
+source-git-commit: 931e9b0bd71abd852c515cd2e7d99dc9ae423a63
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ Lägg märke till hur segmentets sidlist ändras från randig blå till ljusblå
 
 ## Vad är segment med endast projekt?
 
-Endast projektsegment är segment som bara gäller för det aktuella projektet som de skapades i. De är inte tillgängliga i andra projekt och kan inte delas med andra användare. De är avsedda för att snabbt kunna utforska dina data utan att du behöver skapa och spara ett segment i den vänstra listen. Du kan skapa segment som bara innehåller projekt i panelens släppzon med snabbsegment eller [tillfälliga segment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/ad-hoc-segments.html?lang=en).
+Endast projektsegment är segment som bara gäller för det aktuella projektet som de skapades i. De är inte tillgängliga i andra projekt och kan inte delas med andra användare. De är avsedda för att snabbt kunna utforska dina data utan att du behöver skapa och spara ett segment i den vänstra listen. Du kan skapa segment som bara innehåller projekt i panelens släppzon med snabbsegment eller [ad hoc-segment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/ad-hoc-segments.html?lang=en).
 
 Om ett segment som bara är för projekt öppnas i [!UICONTROL Segment Builder]visas ett meddelande om att projektet bara är öppet. Om du inte markerar&quot;Gör det här segmentet tillgängligt..&quot; och klicka **[!UICONTROL APPLY]** förblir segmentet bara ett projektsegment. Obs! om du använder ett snabbsegment från segmentbyggaren kan det inte längre öppnas i [!UICONTROL Quick Segment Builder].
 
