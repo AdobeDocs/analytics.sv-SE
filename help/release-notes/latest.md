@@ -3,10 +3,10 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: b300ec0f40eacc43463e9e42e7ff8f7cfedc15cb
+source-git-commit: 3243780b2bb1f7507dc5815f71c448a8be7f62cd
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 4%
+source-wordcount: '897'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
-| Inga nya funktioner den här månaden | Ej tillämpligt | Ej tillämpligt |
+| Fylla i livscykeldimensioner och mätvärden med Experience Edge | Många livscykelhändelser mappas nu automatiskt till XDM-fält. Händelser som inte automatiskt mappas kan skickas till Adobe via nyckel/värde-par i friform. [Läs mer - kommer snart] | 27 maj 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
