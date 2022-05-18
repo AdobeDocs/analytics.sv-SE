@@ -4,18 +4,14 @@ description: Så här visar du anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 285bb11eb34ad02bf57227341f9a0931860c5c88
+source-git-commit: 645baf99161d93b5e9d2436978d35c1fb5ee35e7
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
 
 # Visa anteckningar
-
->[!NOTE]
->
->Den stegvisa lanseringen av den här funktionen börjar 23 mars 2022. Allmän tillgänglighet: 11 april 2022.
 
 Anteckningarna visas något annorlunda beroende på om de sträcker sig över en enstaka dag eller ett datumintervall.
 

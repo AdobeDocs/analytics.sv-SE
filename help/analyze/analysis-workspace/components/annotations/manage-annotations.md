@@ -4,18 +4,14 @@ description: Hantera anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 285bb11eb34ad02bf57227341f9a0931860c5c88
+source-git-commit: 645baf99161d93b5e9d2436978d35c1fb5ee35e7
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
 
 # Hantera anteckningar
-
->[!NOTE]
->
->Den stegvisa lanseringen av den här funktionen börjar 23 mars 2022. Allmän tillgänglighet: 11 april 2022.
 
 The [!UICONTROL Components] > [!UICONTROL Annotations] kan hantera anteckningar på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
