@@ -4,9 +4,9 @@ description: Så här visar du anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 52b179fd-d9a4-4119-a3c6-f6a36f24f8ea
-source-git-commit: 645baf99161d93b5e9d2436978d35c1fb5ee35e7
+source-git-commit: 20ab0e9728969c4cc11227a1255e41e3d1a1540f
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '243'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,8 @@ Anteckningarna visas något annorlunda beroende på om de sträcker sig över en
 | **En dag** | ![](assets/single-day.png)<p>När du hovrar över anteckningen kan du se dess detaljer, redigera den genom att markera pennikonen eller ta bort den:<p> ![](assets/hover.png) |
 | **Datumintervall** | Ikonen ändras och när du håller markören över den visas datumintervallet.<p>![](assets/multi-day.png)<p>När du markerar den i linjediagrammet visas anteckningens metadata och du kan redigera eller ta bort den:![](assets/multi-hover.png)<p>I en tabell visas en ikon för varje datum i datumintervallet.<p>![](assets/multi-day-table.png) |
 | **Överlappande anteckningar** | På dagar som har fler än en anteckning kopplad till sig visas ikonen i grå färg.<p>![](assets/grey.png)<p>När du hovrar över den grå ikonen visas alla överlappande anteckningar:<p>![](assets/overlap.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Visa anteckningar i en PDF-fil
 
