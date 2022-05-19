@@ -3,10 +3,10 @@ title: Administratörshandbok för Analytics
 description: Administrationshjälp för Adobe Analytics-administratörer, inklusive användar- och produkthantering i Admin Console, där du kan skapa rapportsviter, variabler, klassificeringar och datainsamling.
 feature: Admin Tools
 exl-id: d1491139-592b-44ec-aa45-dfdd00f416af
-source-git-commit: 0143496648e59e95c360388735def726e63ee71b
+source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 92%
+source-wordcount: '328'
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,7 @@ Den här guiden täcker inte många av de allmänna funktioner som finns i Adobe
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics#support)
 * [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)

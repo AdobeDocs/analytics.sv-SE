@@ -2,10 +2,10 @@
 title: Komponenthandbok för Analytics
 description: Läs om de olika komponenterna som Adobe Analytics erbjuder.
 exl-id: 172f816a-b90e-4a5a-8c92-f92f2b1663f3
-source-git-commit: 38fb7ec39495b2b8cde4955bd1b3c1d3487632c3
+source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 76%
+source-wordcount: '223'
+ht-degree: 74%
 
 ---
 
@@ -41,7 +41,7 @@ Här är en videoöversikt över Adobe Analytics:
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics#support)
 * [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)

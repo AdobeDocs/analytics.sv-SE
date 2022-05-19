@@ -2,10 +2,10 @@
 title: Exporthandbok för Analytics
 description: I den här guiden beskrivs olika sätt att hämta data från Adobe Analytics med dataflöden och Data warehouse.
 exl-id: 0e4014a7-3354-4111-ab74-64d9fa37b9cc
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 76%
+source-wordcount: '174'
+ht-degree: 73%
 
 ---
 
@@ -35,7 +35,7 @@ Här är en videoöversikt över Adobe Analytics:
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics#support)
 * [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)

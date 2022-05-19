@@ -2,10 +2,10 @@
 title: Importguide för Analytics
 description: Den här guiden förklarar hur du hämtar data till Analytics med hjälp av datakällor, API för datainfogning och Data Connectors.
 exl-id: 65a62639-bbc4-4114-932f-8c68d87eea8b
-source-git-commit: d8603ddd6cee2ccc930281003d9ff1befa15c95c
+source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 56%
+source-wordcount: '161'
+ht-degree: 53%
 
 ---
 
@@ -30,7 +30,7 @@ Här är en videoöversikt över Adobe Analytics:
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://helpx.adobe.com/se/contact/enterprise-support.ec.html)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics#support)
 * [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
