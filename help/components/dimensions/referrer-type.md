@@ -3,9 +3,9 @@ title: Referenstyp
 description: Vilken typ av referent det är, beroende på varifrån besökaren kom.
 feature: Dimensions
 exl-id: a6cfcbf4-cd08-4e7f-8e86-47488ceb0ea3
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 14f0ca66fdbd0468ef6b6eef41fcc020b43cddc9
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -165,6 +165,7 @@ Följande lista refererar till uppslagstabellen&quot;Sociala nätverk&quot; som 
 * `tagged.com`
 * `taringa.net`
 * `thefancy.com`
+* `tiktok.com`
 * `toutiao.com`
 * `tripit.com`
 * `trombi.com`
