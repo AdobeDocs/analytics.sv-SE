@@ -3,7 +3,7 @@ title: forceOnline
 description: Ange onlinetillståndet för AppMeasurement manuellt.
 feature: Variables
 exl-id: 318408bf-bec6-49aa-a762-9d2eebab233e
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 The `forceOnline()` kan du åsidosätta det automatiskt identifierade läget för AppMeasurement.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Använd bara den här metoden när [`trackOffline`](../config-vars/trackoffline.md) är aktiverat. Om den här funktionen används utanför spårning offline kan data gå förlorade.
 

@@ -3,7 +3,7 @@ title: trackOffline
 description: Aktivera eller inaktivera spårning offline, vilket ändrar hur AppMeasurement samlar in data.
 feature: Variables
 exl-id: 23a17ddc-01e6-42b6-81b0-c60f15a07231
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Spårning offline är ett valfritt sätt att samla in data i Adobe Analytics. Om
 
 The `trackOffline` variabeln avgör om du vill använda offline-spårning i implementeringen.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Du måste konfigurera rapportsviten så att den godkänner tidsstämplade träffar innan du aktiverar variabeln. Om en rapportsvit inte accepterar tidsstämplade träffar och variabeln är aktiverad går dessa data förlorade och kan inte återställas.
 

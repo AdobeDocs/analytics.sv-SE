@@ -3,9 +3,9 @@ title: Merchandising eVars and Product Finding Methods
 description: En djupdykning i begreppen bakom försäljning av eVars och hur de bearbetar och allokerar data.
 feature: Admin Tools
 exl-id: 9e1a39aa-451f-49bb-8e39-797b6bbd5499
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: 3d9b64bd28210732c7506dbf667c5d4d50e7fb07
 workflow-type: tm+mt
-source-wordcount: '5289'
+source-wordcount: '5260'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ När en användare t.ex. söker efter produkter med nyckelordet&quot;sandals&quo
 
 Här är de olika inställningarna som du kan använda med dina eVars-produkter för varuexponering. Följande skärmbild kommer från Report Suite Manager. Gå till den genom att [!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > [!UICONTROL Edit Settings] > [!UICONTROL Conversion] > [!UICONTROL Conversion Variables] > [!UICONTROL Add new] > [!UICONTROL Enable Merchandising].
 
-![](assets/merch-evars1.png)
+![Merch eVars](assets/merch-evars1.png)
 
 Mer information om de här inställningarna finns i avsnitten nedanför tabellen.
 
@@ -86,9 +86,9 @@ Det här alternativet är inte tillgängligt för standard-eVars. The [!UICONTRO
 
 Med **[!UICONTROL Product Syntax]** eVar anges dock bara i variabeln Adobe Analytics. Variabeln Analytics-produkter är uppdelad i sex olika delar per produkt:
 
-`s.products="[category];[productID];[quantity];[revenue];[events];[eVars]"`
+`s.products="[category];[name];[quantity];[revenue];[events];[eVars]"`
 
-* [!UICONTROL Category] rekommenderas inte längre som ett möjligt alternativ för att hålla reda på produktkategoriernas prestanda.  Dess existens visar varför i de flesta implementeringar av variabeln products kommer ett semikolon före delen productID i variabelvärdet.
+* [!UICONTROL Category] och [!UICONTROL Name] identifiera den angivna produkten.
 * [!UICONTROL Quantity] och [!UICONTROL Revenue] är användbara när ett produktköp spåras.
 * [!UICONTROL Events] är användbart för att registrera anpassade stegvisa värden eller valutakäntehändelser som inte ska räknas som intäkter (t.ex. frakt, rabatter)
 
@@ -104,7 +104,7 @@ Termen Allocation för att marknadsföra eVars är vilseledande, särskilt för 
 
 Att förstå vad den här inställningen gör innebär att förstå skillnaden mellan eVar- och försäljningsbindning för eVar. För försäljning av eVars är&quot;Merchandising eVar Binding&quot; ett mer passande namn för den här inställningen för&quot;Allocation&quot;.
 
-**Standardinställning för allokering av eVar**
+#### Standardinställning för allokering av eVar
 
 När en eVar med standardsyntax samlas in från en bildbegäran infogar Adobe Analytics bearbetningsservrar data i en annan databaskolumn, som kallas `post_evar` kolumn. Eftersom eVars är avsedda att vara beständiga - de upphör att gälla vid något tillfälle efter den aktuella träffen i de flesta fall - anger servrarna detta `post_evar` -kolumn vid varje efterföljande bildbegäran. Den är lika med det sista värdet som skickas till motsvarande eVar. När en lyckad händelse inträffar för standard-eVars använder Adobe Analytics `post_evar` i stället för i kolumnen med vanliga eVar för att bestämma vilket eVar som ska tilldelas kredit för händelsen.
 
@@ -112,7 +112,7 @@ För standard-eVars avgör inställningen Allocation om det första eller sista 
 
 Om en standardinställning för allokering är lika med &quot;Senaste (senaste)&quot; fylls det senaste eVar som samlats in från besökaren i `post_evar` -kolumn för alla efterföljande bildbegäranden. Allokeringen &quot;Senaste (sista)&quot; innebär att `post_evar` värdet ändras varje gång dess motsvarande eVar ställs in på ett nytt värde i en bildbegäran. &quot;Originalvärde (första)&quot;-allokeringen innebär att `post_evar` -kolumnen ändras inte över flera träffar även om motsvarande eVar kan anges till ett annat värde i en framtida bildbegäran.
 
-**Inställningar för allokering av eVar (bindning) för marknadsföring**
+#### Inställningar för allokering av eVar (bindning) för marknadsföring
 
 Som vi nämnt tidigare har alla eVars-handlare med konverteringsvariabelsyntax bara allokeringen&quot;Senaste (senaste)&quot;. Därför bestämmer allokeringsinställningen för att marknadsföra eVars inte vilka värden som infogas i kolumnen post_evar när en besökare fortsätter att använda webbplatsen. I stället avgör den här inställningen vilket eVar som binds till en produkt och hur sådana produkter allokerar sina success-händelser tillbaka till de eVar de är bundna till.
 
@@ -174,12 +174,11 @@ Alla framgångshändelser (kundvagn lägger till, köp) som hämtas samtidigt so
 
 Exempel:
 
-```
+```js
 s.products=";12345;;;;eVar1=internal campaign";
 ```
 
 Den här variabelinställningen ändrar bindningen för produkt-ID 12345 från eVar1-värdet för&quot;intern nyckelordssökning&quot; till eVar1-värdet för&quot;intern kampanj&quot;. Den här ombindningsändringen äger också rum när eVar har konfigurerats att använda produktsyntax och inställningen Allocation (binding) för&quot;Most Recent (Last)&quot;. Om inställningen Allocation (binding) i stället var inställd på &quot;Original Value (First)&quot;, kommer inte inställning av eVar1 som &quot;internal campaign&quot; tillsammans med produkt-ID 12345 att binda om produkt-ID 12345 till eVar1-värdet för &quot;internal campaign&quot;. Bindningen behåller i stället det ursprungliga värdet -&quot;intern nyckelordssökning&quot;.
-
 
 ### Problem med att använda produktsyntax
 
@@ -191,7 +190,7 @@ Om vi använder vårt ursprungliga&quot;sandaler&quot;-exempel och anpassar det 
 
 Syntaxen för variabeln products är lång i det här exemplet, men den binder alla eVar som visas till produkt-ID:t för &quot;sandal123&quot;. Från och med då krediteras alla framgångshändelser (t.ex. kundvagn, inköp) som har hämtats samtidigt som&quot;sandal123&quot;-produkten till de eVar som senast var bundna till produkten.  Detta kodexempel visar om ett köp av 1 enhet av&quot;sandal123&quot;-produkten (för 79,95 USD) äger rum efter det att eVars ovan var bunden till&quot;sandal123&quot;-produkten:
 
-```
+```js
 s.products=";sandal123;1;79.95";
 s.events="purchase";
 ```
@@ -210,7 +209,7 @@ I de flesta fall med produktsyntax måste eVars för produktsökningsmetod anges
 
 När besökarna visar en sökmetodsida kan de dessutom antingen klicka på en länk som leder dem till en enskild produktinformationssida eller lägga till en enskild produkt i kundvagnen direkt från sökmetodsidan. Om en besökare lägger till produkten&quot;sandal123&quot; i kundvagnen direkt från en sökresultatsida med sökord, använder du nyckelordsexemplet&quot;sandal123&quot;, koden för att hämta kundvagnen (via händelsen onClick för knappen Lägg till i kundvagnen, etc) måste antingen genereras dynamiskt när kundvagnen läggs till eller kodas direkt via sidkoden eller ett tagghanteringssystem.  Oavsett vilken kod som ska utlösas i sådana fall skulle koden se ut ungefär så här:
 
-```
+```js
 s.linkTrackVars="products,events";
 s.linkTrackEvents=s.events="scAdd";
 s.products=";sandal123;;;;eVar2=sandals|eVar1=internal keyword search|eVar3=non-internal campaign|eVar4=non-browse|eVar5=non-cross-sell";
@@ -236,9 +235,9 @@ Produktsyntax är fortfarande användbar när
 
 Många klädprodukter har till exempel &quot;Underordnade SKU:er&quot;, som anger storlek, färg, stil och andra attribut. Dessa attribut skiljer en underordnad produkt från andra produkter som tillhör samma överordnade produkt. Säg att du bestämmer dig för att köpa en medelblå t-shirt plus en stor röd t-shirt. Anta att båda skjortorna har det överordnade produkt-ID:t &quot;tshirts123&quot; och `eVar10` har konfigurerats för att hämta underordnade SKU:er. Variablerna som anges på bekräftelsesidan för inköp ställs in enligt följande:
 
-```
-s.events='purchase';
-s.products=';tshirt123;1;20;;eVar10=tshirt123-m-blue,;tshirt123;1;20;;eVar10=tshirt123-l-red"
+```js
+s.events="purchase";
+s.products=";tshirt123;1;20;;eVar10=tshirt123-m-blue,;tshirt123;1;20;;eVar10=tshirt123-l-red";
 ```
 
 I det här fallet gäller båda `eVar10` (childSKU)-värden för&quot;tshirt123-m-blue&quot; och&quot;tshirt123-l-red&quot; krediteras vid köp av respektive förekomst av produkt-ID&quot;tshirt123&quot;.
@@ -247,17 +246,17 @@ I det här fallet gäller båda `eVar10` (childSKU)-värden för&quot;tshirt123-
 
 Du kan stöta på ytterligare problem genom att använda inställningen Allokering (bindning) för&quot;Senaste (senaste)&quot;. I många webbläsar-upplevelser&quot;hittar&quot; besökarna en produkt som de redan har tittat på och/eller lagt till i kundvagnen. Detta sker vanligtvis via ett senare besök eller precis innan de bestämmer sig för att slutföra ett köp. Anta att en besökare hittar produkten&quot;sandal123&quot; via nyckelordssökningen i&quot;sandaler&quot; under ett besök på webbplatsen. De lägger omedelbart till den i kundvagnen från sökresultatsidan för nyckelord. Koden som används för att hämta kundvagnen ställs in enligt följande:
 
-```
+```js
 s.linkTrackVars="products,events";
 s.linkTrackEvents=s.events="scAdd";
-s.products=";sandal123;;;;eVar2=sandals|eVar1=internal keyword search|eVar3=non-internal campaign|eVar4=non-browse|eVar5=non-cross
+s.products=";sandal123;;;;eVar2=sandals|eVar1=internal keyword search|eVar3=non-internal campaign|eVar4=non-browse|eVar5=non-cross";
 ```
 
 Därför är alla eVar som visas i den här bildbegäran bundna till produkten&quot;sandal123&quot;.
 
 Föreställ dig nu att besökaren inte köper produkten under besöket, men kommer tillbaka till webbplatsen tre dagar senare med&quot;sandals123&quot;-produkten fortfarande i kundvagnen. Besökaren vill veta mer om produkten innan han genomför köpet. I stället för att söka efter produkten med hjälp av en nyckelordssökning bläddrar besökaren igenom webbplatsen. De slutar med att de handlar i &quot;kvinna > skor > sandaler&quot; och handlar i webbläsaren precis innan de hittar produkten på nytt. När de&quot;hittar om&quot; produktinformationssidan för&quot;sandal123&quot;-produkten ställs variablerna in enligt följande (vid sidinläsning):
 
-```
+```js
 s.events="prodView";
 s.products=";sandal123;;;;eVar4=womens > shoes > sandals|eVar1=browse|eVar3=non-internal campaign|eVar2=non-search|eVar5=non-cross-sell";
 ```
@@ -279,14 +278,14 @@ Låt oss till exempel titta på den rekommenderade lösningen för att spåra in
 Ytterligare logik som finns i AppMeasurement/AEP Web SDK-filen kan fylla i resten av variablerna (eVars/dimensions) som måste anges samtidigt.\
 Om en ny besökare till exempel skulle göra en nyckelordssökning efter&quot;sandaler&quot;, som returnerade 25 resultat på sökresultatsidan, skulle koden som ska aktiveras (via sidkoden ELLER datalagrets hämtning) se ut så här:
 
-```
+```js
 s.prop4="sandals";
 s.prop5="25";
 ```
 
 Logiken i AppMeasurement/Analytics SDK-filen kan sedan automatiskt omvandla kodfragmentet till följande:
 
-```
+```js
 s.prop4="sandals";
 s.prop5="25";
 s.eVar2="sandals";
@@ -324,7 +323,7 @@ Här följer de bästa metoderna. De implementerar enkelt metoden för produkts�
 
 När en bindningshändelse finns i samma serveranrop som produktvariabeln binds värdena för eVar Merchandising (med konverteringsvariabelsyntax) i sin post-kolumn till produktvariabeln. Utifrån det tidigare exemplet antar vi att ett serveranrop innehåller följande värden för Merchandising-eVar:
 
-```
+```js
 s.eVar2="sandals";
 s.eVar1="internal keyword search";
 s.eVar3="non-internal campaign";
@@ -334,7 +333,7 @@ s.eVar5="non-cross sell";
 
 Som förklarats tidigare kvarstår de ovanstående eVars-variablerna utanför den aktuella träffen via deras respektive post_evar-kolumn. Adobe servrar omvandlar därför eVars ovan till följande:
 
-```
+```js
 post_eVar2="sandals";
 post_eVar1="internal keyword search";
 post_eVar3="non-internal campaign";
@@ -348,15 +347,15 @@ Bindningen som äger rum är endast mellan dessa post_evar-värden och innehåll
 
 Anta att följande variabler ställs in för en framtida träff:
 
-```
+```js
 s.products=";sandals123"
 s.events="prodView";
 ```
 
 I kolumnerna post_evar ser Adobe-bearbetningsservrarna den här träffen på följande sätt:
 
-```
-s.products=";sandals123"
+```js
+s.products=";sandals123";
 s.events="prodView";
 post_eVar2="sandals";
 post_eVar1="internal keyword search";
@@ -369,12 +368,12 @@ Anta att eVar1, eVar2, eVar3, eVar4 och eVar5 har konfigurerats för användning
 
 Bindning ger mycket intressanta resultat, som visas i kolumnen post_products. Bindningen omformar ovanstående kod och ställer in några fler postkolumner enligt följande:
 
-```
-post_events="prodView"
-post_products=";sandals123;;;;eVar2=sandals|eVar1=internal keyword search|eVar3=non-internal campaign|eVar4=non-browse|eVar5=non-cross-sell"
+```js
+post_events="prodView";
+post_products=";sandals123;;;;eVar2=sandals|eVar1=internal keyword search|eVar3=non-internal campaign|eVar4=non-browse|eVar5=non-cross-sell";
 ```
 
-Värdet i kolumnen post_products kanske är välbekant för dig. Bläddra uppåt i det här dokumentet och jämför värdet post_products och värdet s.products enligt .  Observera att kolumnen post_products är inställd med produktvariabelsyntax!
+Värdet i kolumnen post_products kanske är välbekant för dig. Bläddra uppåt i det här dokumentet och jämför värdet post_products och värdet s.products enligt nedan. Observera att kolumnen post_products är inställd med produktvariabelsyntax!
 
 Det innebär att Bindning&quot;kopierar&quot; eVar för konverteringsvariabelsyntax till produktvariabeln via produktsyntax. Den här kopieringsåtgärden utförs endast när produktvariabeln och en bindningshändelse (som anges via eVar) finns i samma begäran. Då är värdena i kolumnen efter_eVar bundna till produkten. Den här bindningen representeras via produktsyntax som lagras i kolumnen post_products.
 
@@ -390,6 +389,6 @@ Ange till exempel `s.eVar1="Internal Keyword Search"` i sig inte tillskriver eVa
 
 Utan ytterligare konfigurationer är alltså det färdiga instansmåttet för en eVar som handlar mindre användbart. Som tur är har Adobe släppts [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en). Det gör att du kan använda flera attribueringsmodeller för alla anpassade mätvärden som Adobe Analytics samlar in. Mätvärden som tillämpar dessa attribueringsmodeller använder inte värdena i kolumnerna post_evar eller värdena som är bundna till en viss produkt. I stället används endast de värden som skickas via själva bildbegäran (eller värden som hämtas via Adobe Analytics bearbetningsregler). Du kan använda funktionerna i Attribution IQ för att få ett korrekt angivet instansmått för alla eVars-produkter som handlar med konverteringsvariabelsyntax.
 
-![](assets/attribution-select.png)
+![Val av attribut](assets/attribution-select.png)
 
 När du lägger till ett instansmått för en försäljningsmodell i en eVar blir rätt Attribution IQ-modell&quot;Last Touch&quot;-modellen. Inställningen för fönstret Sök efter för modellen spelar ingen roll i det här fallet. Orsaken är att en&quot;tvingad&quot; Last Touch-attribueringsmodell alltid ger instanskrediter till varje enskilt värde som skickas via en begäran. Detta är oavsett om eVar faktiska attribuerings-/bindningsinställningar är lika med &quot;Senaste (sista)&quot; till &quot;Originalvärde (första)&quot;.

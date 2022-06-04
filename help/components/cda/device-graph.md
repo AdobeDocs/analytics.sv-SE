@@ -2,7 +2,7 @@
 title: Enhetsdiagram
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med hjälp av enhetsdiagrammet.
 exl-id: b8408a7d-6aff-4fff-b535-f10d422bcf0d
-source-git-commit: e6f3beadfba340cea07f5fd2694105ad31de9751
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -24,14 +24,14 @@ Adobe erbjuder två typer av enhetsdiagram som en del av ID-tjänsten:
 
 Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs följande. Samarbeta med team inom organisationen och kontohanteraren för Adobe för att säkerställa att ni uppfyller alla följande:
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när data sammanfogas.
 
-* Alla krav som anges på översiktssidan [](overview.md).
-* Din organisation måste använda Adobe Experience Platform Identity Service Co-op Graph eller Private Graph. Se [hemsidan](https://experienceleague.adobe.com/docs/device-co-op/using/home.html) i användarhandboken för Device Co-op.
-* Implementeringen måste använda den senaste versionen av Experience Cloud ID-tjänsten. Se [startsidan](https://experienceleague.adobe.com/docs/id-service/using/home.html) i användarhandboken för Experience Cloud Identity Service. De flesta implementeringar som använder taggar i Adobe Experience Platform har troligen redan ECID.
-* Implementeringen måste anropa funktionen `setCustomerIDs` (eller motsvarande SDK) när en individ kan identifieras, till exempel när en användare loggar in eller öppnar ett e-postmeddelande. Detta krav gäller alla plattformar, inklusive mobilappar om de används. Se [`setCustomerIDs`](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html) i användarhandboken för Experience Cloud Identity Service.
+* Alla krav som anges på [översiktssida](overview.md).
+* Din organisation måste använda Adobe Experience Platform Identity Service Co-op Graph eller Private Graph. Se [Hemsida](https://experienceleague.adobe.com/docs/device-co-op/using/home.html) i användarhandboken för Device Co-op.
+* Implementeringen måste använda den senaste versionen av Experience Cloud ID-tjänsten. Se [Hemsida](https://experienceleague.adobe.com/docs/id-service/using/home.html) i användarhandboken för Experience Cloud Identity Service. De flesta implementeringar som använder taggar i Adobe Experience Platform har troligen redan ECID.
+* Implementeringen måste anropa `setCustomerIDs` -funktion (eller SDK-motsvarighet) när en individ kan identifieras, till exempel när en användare loggar in eller öppnar ett e-postmeddelande. Detta krav gäller alla plattformar, inklusive mobilappar om de används. Se [`setCustomerIDs`](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/setcustomerids.html) i användarhandboken för Experience Cloud Identity Service.
 
 ## Begränsningar som är specifika för enhetsdiagrammet
 
@@ -42,4 +42,4 @@ Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs fö
 
 ## Nästa steg
 
-När din organisation uppfyller alla krav och förstår begränsningarna kan du börja med [Konfigurera Cross-Device Analytics](setup.md).
+När organisationen uppfyller alla krav och förstår begränsningarna kan du börja [Konfigurera enhetsövergripande analys](setup.md).

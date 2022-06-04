@@ -4,10 +4,10 @@ subtopic: Processing rules
 title: Översikt över behandlingsregler
 feature: Processing Rules
 exl-id: 0244aba2-4345-463a-8528-d4dcd2f872ff
-source-git-commit: 71b3b1937e7fa272f0497008e8e510204bbb4418
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '329'
+ht-degree: 3%
 
 ---
 
@@ -28,11 +28,7 @@ Bearbetningsregler förenklar datainsamling och hantering av innehåll när det 
 
 Administratörer har behörighet att använda bearbetningsregler **som standard**. Administratörer kan även ge dessa rättigheter till icke-administratörer via gränssnittet Administratörsverktyg. Instruktioner finns i []
 
-![](assets/processing-rules.png)
-
->[!IMPORTANT]
->
->Eftersom bearbetningsregler permanent påverkar Analytics-data rekommenderar Adobe att regeladministratörer får certifieringsutbildning i Adobe Analytics och känner till alla datakällor för rapportsviterna (standardwebbplatser, mobilwebbplatser, mobilappar, API för datainfogning och så vidare). Kunskap om kontextdatavariabler och standardvariabler som är ifyllda på olika plattformar hjälper till att förhindra oavsiktlig radering eller ändring av data.
+![Behandlingsregler](assets/processing-rules.png)
 
 ## Använd kontextdata för att förenkla datainsamling {#section_09EEA03612D24C15839631AA9E9668D8}
 

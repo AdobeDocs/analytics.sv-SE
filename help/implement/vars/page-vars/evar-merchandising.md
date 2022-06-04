@@ -3,7 +3,7 @@ title: eVar-variabler
 description: Egna variabler som knyts till enskilda produkter.
 feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Mer information om hur du marknadsför eVars finns i [Merchandising eVars and pr
 
 Innan du använder eVars i implementeringen måste du konfigurera eVar till önskad syntax i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Om det inte går att konfigurera eVars för försäljning korrekt resulterar det i oväntade värden eller dataförlust för variabeln. Kontrollera att den är korrekt konfigurerad för din implementering.
 

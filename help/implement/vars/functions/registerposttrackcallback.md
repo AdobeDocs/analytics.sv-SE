@@ -3,7 +3,7 @@ title: registerPostTrackCallback
 description: Skapa callback-funktioner när du har skickat en träff till Adobe.
 feature: Variables
 exl-id: b2124b89-2bab-4cca-878c-18d62377a8f3
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 The `registerPostTrackCallback` kan din organisation koppla en JavaScript-funktion omedelbart efter att en träff har skickats till Adobe. Om ett spårningsanrop misslyckas körs inte den här funktionen. Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur, eller för att rensa upp variabelvärden i enkelsidiga program.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Anropa inga spårningssamtal som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti `registerPostTrackCallback` variabel. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
 

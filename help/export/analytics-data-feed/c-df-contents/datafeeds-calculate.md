@@ -4,7 +4,7 @@ keywords: Datafeed;jobb;mått;förkolumn;efterkolumn;bots;datumfiltrering;hände
 title: Beräkna mätvärden
 feature: Data Feeds
 exl-id: f9b0d637-7a6e-416a-adff-3c7e533bfac7
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Beskriver hur man beräknar vanliga mätvärden med hjälp av dataflöden.
 
->[!IMPORTANT]
+>[!NOTE]
 >
 >Träffar som normalt inte ingår i Adobe Analytics ingår i dataflöden. Använd `exclude_hit > 0` för att ta bort uteslutna träffar från frågor om rådata. Data som samlats in ingår också i dataflöden. Om du vill utesluta datakällor ska du exkludera alla rader med `hit_source = 5,7,8,9`.
 

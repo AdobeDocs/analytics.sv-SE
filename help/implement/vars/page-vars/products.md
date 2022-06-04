@@ -3,9 +3,9 @@ title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,7 @@ Du kan använda något av dessa tillägg eller så kan du använda den anpassade
 
 The `s.products` variabeln är en sträng som innehåller flera avgränsade fält per produkt. Avgränsa varje fält med ett semikolon (`;`) i strängen.
 
->[!IMPORTANT]
->**[!UICONTROL Category]**rekommenderas inte längre som ett möjligt alternativ för att hålla reda på produktkategoriernas prestanda. Därför bör alla produktsträngar börja med semikolon, vilket anger det tomma första fältet.
-
+* **Kategori** (valfritt): Produktkategorin. Den maximala längden för det här fältet är 100 byte.
 * **Produktnamn** (obligatoriskt): Produktens namn. Den maximala längden för det här fältet är 100 byte.
 * **Kvantitet** (valfritt): Hur många av dessa produkter finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
 * **Pris** (valfritt): Produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar [`currencyCode`](../config-vars/currencycode.md) variabel. Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
@@ -44,17 +42,17 @@ The `s.products` variabeln är en sträng som innehåller flera avgränsade fäl
 
 ```js
 // Set a single product using all available fields
-s.products = ";Example product;1;3.50;event1=4.99|event2=5.99;eVar1=Example merchandising value 1|eVar2=Example merchandising value 2";
+s.products = "Example category;Example product;1;3.50;event1=4.99|event2=5.99;eVar1=Example merchandising value 1|eVar2=Example merchandising value 2";
 ```
 
 Den här variabeln har stöd för flera produkter i samma träff. Det är värdefullt för kundvagn och inköp som innehåller flera produkter. Maximal längd för hela `products` strängen är 64 kB. Avgränsa varje produkt med kommatecken (`,`) i strängen.
 
 ```js
 // Set multiple products - useful for when a visitor views their shopping cart
-s.products = ";Example product 1;1;3.50,;Example product 2;1;5.99";
+s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Example product 2;1;5.99";
 ```
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Ta bort alla semikolon, kommatecken och rör från produktnamn, kategorier och försäljningsvärden för eVar. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
 
@@ -64,13 +62,13 @@ The `products` variabeln är flexibel när du utelämnar fält och inkluderar fl
 
 ```js
 // Include only product and category. Common on individual product pages
-s.products = ";Example product";
+s.products = "Example category;Example product";
 
 // Include only product name
 s.products = ";Example product";
 
 // One product has a category, the other does not. Note the comma and adjacent semicolon to omit category
-s.products = ";Example product 1,;Example product 2";
+s.products = "Example category;Example product 1,;Example product 2";
 
 // A visitor purchases a single product; record quantity and price
 s.events = "purchase";
@@ -96,7 +94,7 @@ s.products = ";Example product;;;;eVar1=Merchandising value";
 
 // Multiple products using multiple different events and multiple different merchandising eVars
 s.events = "event1,event2,event3,event4,purchase";
-s.products = ";Example product 1;3;12.60;event1=1.4|event2=9;eVar1=Merchandising value|eVar2=Another merchandising value,Example category 2;Example product 2;1;59.99;event3=6.99|event4=1;eVar3=Merchandising value 3|eVar4=Example value four";
+s.products = "Example category 1;Example product 1;3;12.60;event1=1.4|event2=9;eVar1=Merchandising value|eVar2=Another merchandising value,Example category 2;Example product 2;1;59.99;event3=6.99|event4=1;eVar3=Merchandising value 3|eVar4=Example value four";
 ```
 
 Om du använder `digitalData` [datalager](../../prepare/data-layer.md)kan du iterera genom `digitalData.product` objektarray:

@@ -3,7 +3,7 @@ title: Prop
 description: En anpassad dimension som du kan använda vid rapportering.
 feature: Dimensions
 exl-id: cf8ad65b-bc54-473e-bcfc-9c981d23e782
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Props är som standard inte skiftlägeskänsliga. Om du skickar samma värde i o
 
 Du kan göra vilket som helst skiftlägeskänsligt. Du kan även inaktivera skiftlägeskänslighet för alla uttryck när det är aktiverat. Kontakta Adobe kundtjänst med rapportsvitens-ID och de variabler du vill använda för att växla skiftlägeskänslighet.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Växla skiftlägeskänslighet kan klippa ut dimensionsobjekt, skapa oväntade resultat med segment och orsaka problem med filter. Adobe rekommenderar starkt att du växlar den här inställningen mellan två större tidsperioder, till exempel början av en månad eller ett år.
 

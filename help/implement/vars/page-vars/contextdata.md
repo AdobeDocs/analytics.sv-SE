@@ -3,7 +3,7 @@ title: contextData
 description: Med kontextdatavariabler kan du definiera anpassade variabler på varje sida som bearbetningsregler kan läsa.
 feature: Variables
 exl-id: f2c747a9-1a03-4f9f-8025-9f4745403a81
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -35,7 +35,7 @@ s.contextData["example_variable"] = "Example value";
 
 ## Använd bearbetningsregler för att fylla i analysvariabler
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Sammanhangsdatavariabler tas bort efter att regler har bearbetats. Om du inte har aktiva bearbetningsregler som placerar värden i variabler, kommer dessa data att gå förlorade permanent!
 

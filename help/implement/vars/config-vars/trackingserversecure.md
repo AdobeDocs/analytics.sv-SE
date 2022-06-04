@@ -3,7 +3,7 @@ title: trackingServerSecure
 description: Bestäm var bildbegäranden ska skickas på HTTPS-sidor.
 feature: Variables
 exl-id: d5b112f9-f3f6-43ac-8ee5-d9ad8062e380
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som genererats av besökaren. The `trackingServerSecure` variabeln bestämmer var en bildbegäran skickas via HTTPS. Det avgör också var besökarnas cookies lagras. Om den här variabeln inte är korrekt definierad kan din implementering uppleva dataförlust.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 

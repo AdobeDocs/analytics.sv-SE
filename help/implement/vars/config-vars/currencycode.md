@@ -3,7 +3,7 @@ title: Vad är variabeln currencyCode och hur använder jag den?
 description: För e-handelswebbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -20,7 +20,7 @@ If `currencyCode` är definierad och matchar rapportsvitens valuta, ingen valuta
 
 If `currencyCode` är definierad och skiljer sig från rapportsvitens valuta, använder Adobe en valutakonvertering som baseras på den aktuella dagens växelkurs. Adobe samarbetar med [XE](https://xe.com) för att konvertera valuta varje dag. Alla värden som lagras på datainsamlingsservrar lagras slutligen i rapportsvitens valuta.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >If `currencyCode` innehåller ett ogiltigt värde. Hela träffen tas bort, vilket orsakar dataförlust. Kontrollera att variabeln är korrekt definierad om du använder den i implementeringen.
 

@@ -3,7 +3,7 @@ description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 feature: Admin Tools
 exl-id: 1f31749f-10ce-4cff-81fb-141b37824c5f
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 34%
@@ -14,7 +14,7 @@ ht-degree: 34%
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]**
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Öppna inte flera administratörsflikar i samma webbläsare. Detta kan leda till att du oavsiktligt sparar inställningar i fel rapportsvit. Om du t.ex. behöver jämföra regeluppsättningar och kopiera dem till en ny rapportserie föreslår vi att du öppnar en ny webbläsare eller tar en skärmdump för att jämföra regeluppsättningar.
 

@@ -3,7 +3,7 @@ title: trackingServer
 description: Ange vilken plats bildbegäranden ska skickas till.
 feature: Variables
 exl-id: bcc23286-4dd5-45ac-ac6f-7b60e95cb798
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Adobe samlar in data på er webbplats genom att ta emot en bildförfrågan som genererats av besökaren. The `trackingServer` variabeln bestämmer var en bildbegäran skickas. Om den här variabeln inte är korrekt definierad kan din implementering uppleva dataförlust.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Om du ändrar det här värdet får AppMeasurement att söka efter cookies på en annan plats. Unikt besökarantal kan tillfälligt öka i rapporteringen när besökarcookies anges på den nya platsen.
 

@@ -4,7 +4,7 @@ description: Lär dig hur och varför du skapar projekt i Workspace med flera ra
 feature: Workspace Basics
 role: User, Admin
 exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
-source-git-commit: 76af5908fd65cae26106ca9c1a71978624a77320
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Du kan använda en rapportserie för alla paneler samtidigt genom att högerklic
 
 Vi introducerar begreppet&quot;aktiv panel&quot; jämfört med&quot;inaktiv panel&quot; med den här funktionen. Den aktiva panelen känns igen av den ljusblå kanten runt den. Om du klickar inuti en panel blir panelen den aktiva panelen.
 
->[!IMPORTANT]
+>[!TIP]
 >Du kan dra och släppa till valfri panel som finns i samma rapportserie som den aktiva panelen. Genom att dra till en inaktiv panel i samma rapportserie aktiveras panelen.
 
 | Uppgift | Aktiv panel | Inaktiv panel |

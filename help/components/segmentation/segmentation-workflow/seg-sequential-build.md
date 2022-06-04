@@ -3,7 +3,7 @@ description: Sekventiella segment skapas med operatorn THEN i stället för AND 
 title: Skapa sekventiella segment
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 1%
@@ -399,7 +399,7 @@ Om en träff på sida A inträffar den 1 juni 2019, kl. 00:01, kommer följande 
 * [!UICONTROL Within] Med kan du spåra efter år, månad, dag, timme och minut för att matcha besöken.
 * [!UICONTROL Within] kan bara användas på en [!UICONTROL Hit] eftersom det är den enda nivån för vilken en sådan fin granularitet har definierats.
 
->[!IMPORTANT]
+>[!TIP]
 >
 >I en&quot;inom&quot;-sats mellan THEN-programsatser kan du lägga till, till exempel,&quot;inom 1 nyckelordsinstans för sökning&quot;,&quot;inom 1 instans av eVar 47&quot;. Detta begränsar segmentet till en instans av en dimension.
 

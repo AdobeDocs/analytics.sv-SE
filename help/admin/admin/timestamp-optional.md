@@ -4,10 +4,9 @@ title: Tidsstämplar (valfritt)
 feature: Admin Tools
 uuid: 0fa63658-1cc2-4adc-8d51-a0662d0aa941
 exl-id: 4d64225a-5eb8-4b7b-ba13-3cdc12dd6651
-translation-type: tm+mt
-source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '319'
 ht-degree: 1%
 
 ---
@@ -22,9 +21,9 @@ Tidsstämplar Valfritt gör att du kan:
 * Skicka tidsstämplade data från en mobilapp till en global rapportserie.
 * Uppgradera program så att de kan använda offline-spårning utan att behöva skapa en ny rapportserie.
 
->[!IMPORTANT]
+>[!WARNING]
 >
->Om du använder Tidsstämplar som valfria ska du inte ställa in [s.visitorID](/help/implement/vars/config-vars/visitorid.md) på data som redan är tidsstämplade. Detta kan leda till inaktuella data och negativt påverka tidsberäkningar (t.ex. tidsåtgång), attribuering (beständighet av eVar), antal besök/besök samt kundvägsrapporter.
+>Om du använder Tidsstämplar (valfritt) ska du inte ange [s.visitorID](/help/implement/vars/config-vars/visitorid.md) på data som redan är tidsstämplade. Detta kan leda till inaktuella data och negativt påverka tidsberäkningar (t.ex. tidsåtgång), attribuering (beständighet av eVar), antal besök/besök samt kundvägsrapporter.
 
 >[!NOTE]
 >
@@ -34,20 +33,20 @@ Tidsstämplar Valfritt gör att du kan:
 
 * Om det skapas från en mall används som standard tidsstämplar som valfria i en ny rapportserie.
 
-   (Du kan skapa en ny rapportserie från en mall på **Admin > Rapportsviter > Skapa nytt > Rapportsviten**.)
+   (Du kan skapa en ny rapportserie från en mall på **Admin > Report Suite > Create New > Report Suite**.)
 * Om du kopierar från en befintlig rapportserie ärver den nya rapportsviten tidsstämpelinställningen från originalet, inklusive:
 
-   * **Tidsstämplar tillåts**  inte (inställning för s.visitorID stöds)
-   * **Tidsstämplar krävs**  (inställningen s.visitorID stöds inte)
-   * **Tidsstämplar är valfria**  (inställningen s.visitorID stöds men inte för tidsstämplade träffar)
+   * **Tidsstämplar tillåts inte** (inställning för s.visitorID stöds)
+   * **Tidsstämplar krävs** (inställning för s.visitorID stöds inte)
+   * **Tidsstämplar (valfritt)** (inställning för s.visitorID stöds men inte för tidsstämplade träffar)
 
-## Ändra befintliga rapportsviter till tidsstämplar Valfritt {#section_40BCD3B4639241DEA716F7640ED33E72}
+## Ändra befintliga rapportsviter till tidsstämplar (valfritt) {#section_40BCD3B4639241DEA716F7640ED33E72}
 
-1. Gå till **Admin > Rapportsviter > Redigera inställningar > Allmänt > Tidsstämpelkonfiguration**.
-1. Markera rutan **Konvertera markerade rapportsviter till tidsstämplar (valfritt)**.
+1. Gå till **Admin > Report Suites > Edit Settings > General > Timestamp Configuration**.
+1. Välj **Konvertera valda rapportsviter till tidsstämplar (valfritt)** box.
 
    Detta ändrar rapportsviten till Tidsstämplar (valfritt).
 
 >[!NOTE]
 >
->Om en rapportsvit var inställd på **Tidsstämplar som valfria** kan du ändra detta till en annan inställning genom att kontakta Adobe kundtjänst.
+>Om en rapportsvit var inställd på **Tidsstämplar (valfritt)** Om du vill ändra detta till något annat kontaktar du Adobe Client Care.

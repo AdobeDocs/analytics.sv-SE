@@ -2,7 +2,7 @@
 title: Fältbaserad stygn
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med fältbaserad sammanfogning.
 exl-id: 81f2768c-53c2-40b4-8d3b-8d3b94cd7318
-source-git-commit: 88c6874a043c3aa1a9ff1ec9d4b196ba37179387
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data.
 
 Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfogning krävs följande. Samarbeta med team inom organisationen och kontohanteraren för Adobe för att säkerställa att ni uppfyller alla följande:
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Om du inte uppfyller alla krav kan det leda till att det inte går att aktivera enhetsövergripande analys eller dåliga resultat när data sammanfogas.
 

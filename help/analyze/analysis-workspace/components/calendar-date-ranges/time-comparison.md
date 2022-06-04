@@ -4,7 +4,7 @@ title: Datumjämförelse
 feature: Calendar
 role: User, Admin
 exl-id: ea7a42ef-89de-4f70-b468-8a5cf69fea05
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 6%
@@ -31,7 +31,7 @@ Analysen kräver ett sammanhang, och ofta tillhandahålls detta sammanhang av en
 
    ![](assets/compare-time.png)
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
    >Det här högerklicksalternativet är inaktiverat för måttrader, datumintervallrader och tidsdimensionsrader.
 
@@ -93,7 +93,7 @@ Med en ny inställning för alla tabeller kan du **[!UICONTROL Align Dates from 
 
 ![](assets/date-comparison-setting.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
 >Den här inställningen är **inaktiverad** (ej markerat) för alla befintliga projekt och **aktiverad** (markerat) för alla nya projekt.
 

@@ -3,7 +3,7 @@ title: registerPreTrackCallback
 description: Skapa callback-funktioner innan du skickar en träff till Adobe.
 feature: Variables
 exl-id: 11c960d7-ded4-441a-822f-463d3a137d2d
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 The `registerPreTrackCallback` kan din organisation koppla en JavaScript-funktion efter att en URL för bildbegäran har kompilerats, men innan den skickas. Du kan använda den här variabeln för att skicka data som samlats in med AppMeasurement till en partner eller intern infrastruktur.
 
->[!IMPORTANT]
+>[!WARNING]
 >
 >Anropa inga spårningssamtal som [`t()`](t-method.md) eller [`tl()`](tl-method.md) inuti [`registerPostTrackCallback`](registerposttrackcallback.md) variabel. Spårningsfunktionerna i den här variabeln orsakar en oändlig slinga med bildbegäranden!
 
