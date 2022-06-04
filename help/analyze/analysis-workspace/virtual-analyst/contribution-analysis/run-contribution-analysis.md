@@ -1,13 +1,12 @@
 ---
 description: Kör en bidragsanalysrapport i ett Workspace-projekt.
 title: Köra bidragsanalys
-feature: AI Tools
 role: User, Admin
 exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 9b50e77b3998753d45a25799dbed6094b048c118
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -1,10 +1,9 @@
 ---
 description: Använd bidragsanalys för att identifiera statistiska avvikelser och korrelationer i data.
 title: Översikt över bidragsanalys
-feature: AI Tools
 role: User, Admin
 exl-id: 86fc8696-90a8-4626-b1c7-6413d3f8a648
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 9b50e77b3998753d45a25799dbed6094b048c118
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 3%

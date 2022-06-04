@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
-source-git-commit: c68ab53242328702fb5a0ad9f1e28aafc6fb119b
+source-git-commit: 82c24cb7fd9051c5b0f848bb7fdd071f4137b697
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 73%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -131,6 +131,22 @@ ht-degree: 73%
    + [Implementeringsmodal](prepare/implementation-modal.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
    + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
++ Implementera analyser med Experience Platform Edge {#aep-edge}
+   + [Översikt över Experience Edge](aep-edge/overview.md)
+   + [Variabelmappning](aep-edge/variable-mapping.md)
+   + Web SDK {#web-sdk}
+      + [Web SDK - översikt](aep-edge/web-sdk/overview.md)
+   + Mobile SDK {#mobile-sdk}
+      + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
+   + Edge API {#edge-api}
+      + [Översikt över Edge API](aep-edge/edge-api/overview.md)
++ Implementera analyser med hjälp av taggar i Adobe Experience Platform {#launch}
+   + [Översikt över taggar](launch/overview.md)
+   + [Skapa en Adobe Analytics-taggegenskap](launch/create-analytics-property.md)
+   + [Distribuera till en utvecklingsmiljö](launch/deploy-dev.md)
+   + [Validera och publicera i produktion](launch/validate-publish-prod.md)
+   + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
+   + [Mappa taggdataelement till analysvariabler](launch/elements-to-variable.md)
 + Implementera Analytics med JavaScript {#js}
    + [Översikt över JavaScript](js/overview.md)
    + [Implementera länkar för avanmälan](js/opt-out.md)
@@ -150,13 +166,6 @@ ht-degree: 73%
       + [Besök exempel](js/xdevice-visid/visit-example.md)
       + [Vanliga frågor om olika äldre enheter](js/xdevice-visid/xdevice-faq.md)
    + [Felsök AppMeasurement](js/troubleshooting.md)
-+ Implementera analyser med hjälp av taggar i Adobe Experience Platform {#launch}
-   + [Översikt över taggar](launch/overview.md)
-   + [Skapa en Adobe Analytics-taggegenskap](launch/create-analytics-property.md)
-   + [Distribuera till en utvecklingsmiljö](launch/deploy-dev.md)
-   + [Validera och publicera i produktion](launch/validate-publish-prod.md)
-   + [Mappa datalagerobjekt till dataelement](launch/layer-to-elements.md)
-   + [Mappa taggdataelement till analysvariabler](launch/elements-to-variable.md)
 + Implementera Analytics på andra plattformar {#other}
    + [Implementera Analytics med hårdkodade bildbegäranden](other/hardcoded.md)
    + [Implementera Analytics med DTM](other/dtm-implementation-overview.md)
@@ -179,6 +188,3 @@ ht-degree: 73%
    + [Fokuserad granskning (efter varje webbplatsrelease)](review/focused-review.md)
    + [Fullständig granskning (var sjätte månad)](review/full-review.md)
    + [Definiera de fem viktigaste KPI:erna](review/define-kpis.md)
-+ Använd XDM-data med Analytics {#aep-edge}
-   + [Använd SDK för AEP Web](aep-edge/xdmoverview.md)
-   + [Mappa XDM-data till Analytics manuellt](aep-edge/xdm-manual.md)

@@ -1,12 +1,11 @@
 ---
 title: Virtual Analyst
 description: Lär dig vilka funktioner i Adobe Analytics som bidrar till den virtuella analytikern.
-feature: AI-verktyg
 role: User, Admin
 exl-id: ae4c79a4-d2eb-4383-92d3-fa5591135c73
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 9b50e77b3998753d45a25799dbed6094b048c118
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '115'
 ht-degree: 4%
 
 ---
@@ -19,6 +18,6 @@ Virtual Analyst, en uppsättning funktioner som ingår i Adobe Analytics, använ
 
 Virtual Analyst innehåller följande funktioner:
 
-* [Analysidentifiering:](c-anomaly-detection/anomaly-detection.md) Tillhandahåller en statistisk metod för att bestämma hur ett givet mätresultat har ändrats i förhållande till tidigare data.
-* [Bidragsanalys:](contribution-analysis/run-contribution-analysis.md) Hjälp till att fastställa de mest bidragande faktorerna till avvikelser i dina data.
-* [Intelligenta varningar: ](../c-intelligent-alerts/intellligent-alerts.md) Proaktivt identifierar och meddelar dig om dataavvikelser, vilket leder till snabbare insikter.
+* [Analysidentifiering:](c-anomaly-detection/anomaly-detection.md) Tillhandahåller en statistisk metod för att fastställa hur ett givet mätvärde har ändrats i förhållande till tidigare data.
+* [Bidragsanalys:](contribution-analysis/run-contribution-analysis.md) Identifiera de mest bidragande faktorerna till avvikelser i era data.
+* [Intelligenta aviseringar:](../c-intelligent-alerts/intellligent-alerts.md) Identifierar och meddelar dig aktivt om dataavvikelser, vilket leder till snabbare insikter.
