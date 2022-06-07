@@ -2,14 +2,13 @@
 cloud: Experience Cloud
 product: analytics
 solution: Analytics
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics.sv-SE
+git-repo: https://github.com/AdobeDocs/analytics.sv-SE
 type: Documentation
 index: true
 feature-set: Analytics
-translation-type: tm+mt
 source-git-commit: 7df2f1d5f5f7135557924cac53d2a145f22b600a
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
