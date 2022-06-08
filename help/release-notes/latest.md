@@ -3,10 +3,10 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 9a16f3942505028624e5c07568342a9acac898d7
+source-git-commit: 8666c32ffe907ad486778fa382404807459be03c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '826'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
-| Fylla i livscykeldimensioner och mätvärden med Experience Edge | Mobila livscykeldata som skickas via Experience Edge visas nu i analysrapporter. I dokumentationen finns mer information om vilka livscykeldata som samlas in via Experience Edge och hur de motsvarar befintliga livscykelrapporter. [Läs mer - kommer snart] | 27 maj 2022 |
+| Fylla i livscykeldimensioner och mätvärden med Experience Edge | Mobila livscykeldata som skickas via Experience Edge visas nu i analysrapporter. I dokumentationen finns mer information om vilka livscykeldata som samlas in via Experience Edge och hur de motsvarar befintliga livscykelrapporter. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) | 27 maj 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
