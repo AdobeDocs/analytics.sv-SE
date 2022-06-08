@@ -4,10 +4,10 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: e9cebe28f71b3d6f44744e78447e31cf597e7054
+source-git-commit: 2ce17ecd45810e1c567e99423271dbc2d5288485
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '739'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den nya versionen av [!UICONTROL Flow] visualisering finns för närvarande i en privat betaversion. Se [den här sidan](/help/analyze/analysis-workspace/visualizations/c-flow/creating-flow-report.md) för de aktuella funktionerna.
+>Den nya versionen av [!UICONTROL Flow] visualisering är för närvarande i begränsad testning. Se [den här sidan](/help/analyze/analysis-workspace/visualizations/c-flow/creating-flow-report.md) för de aktuella funktionerna.
 
 Med den uppdaterade Flow-visualiseringen kan ni förstå den resa som härrör från eller leder fram till en specifik konverteringshändelse på er webbplats eller i er app. Den spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden. Med Flow kan du konfigurera början eller slutet av sökvägen som du är intresserad av, eller analysera alla sökvägar som flödar genom en dimension eller dimensionspost.
 
