@@ -4,10 +4,10 @@ title: Schemalagd aktivitetshanterare
 feature: Report Builder
 role: User, Admin
 exl-id: 8bacd7e4-ab50-4b36-842c-a8b6130a58d9
-source-git-commit: 64b239d0807f68ee7e60c94a81a08c46a55fecf8
+source-git-commit: 9a16f3942505028624e5c07568342a9acac898d7
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +17,20 @@ The [!UICONTROL Scheduled Task Manager] I kan du visa en lista över befintliga 
 
 ## Pausa äldre schemalagda aktiviteter
 
-**Träder i kraft 21 april 2022** kommer Adobe att göra uppehåll i alla schemalagda uppdrag i Report Builder som skapades för mer än två år sedan. Den här pausen gäller särskilt för **uppgifter som skapats före den 31 januari 2020**. Inga uppgifter, arbetsböcker eller data tas bort. Aktiviteter som är äldre än två år pausas och inga ytterligare schemalagda aktiviteter skickas.
+Den 21 april 2022 introducerade vi förändringar av schemalagda arbetsuppgifter i Report Builder som en del av våra insatser för optimering av prestanda och leverans. Dessa ändringar inkluderar borttagning av möjligheten att ha schemalagda leveranser som &quot;upphör efter x förekomster&quot;. Som svar på flera kundförfrågningar som kräver mer tid att utforska och implementera alternativ har vi beslutat att återställa detta alternativ i begränsad omfattning tills **31 jan 2023**.
+
+Du kommer även fortsättningsvis att kunna schemalägga aktiviteter per Report Builder och låta dem sluta efter högst 99 tillfällen. Observera att återställningen endast gäller timuppgifter. &quot;end after x instances&quot; förblir otillgängligt för alla andra leveransintervall (dag, vecka, månad och år).
+
+Observera att detta alternativ kommer att vara inaktuellt den 31 januari 2023.
+Om du har frågor eller support kan du kontakta Adobe kundtjänst.
+
+Den här pausen gäller särskilt för **uppgifter som skapats före den 31 januari 2020**. Inga uppgifter, arbetsböcker eller data tas bort. Aktiviteter som är äldre än två år pausas och inga ytterligare schemalagda aktiviteter skickas.
 
 Alla uppgifter som du vill återuppta skickandet kan återaktiveras. Logga in på Report Builder och starta [!UICONTROL Scheduled Task Manager]. Klicka **[!UICONTROL Reactivate]** för den schemalagda aktiviteten vill du fortsätta skicka. Alla uppgifter som återaktiveras har standardvärdet 18 månader - såvida inte ett kortare förfallodatum har valts.
 
 Dessutom kommer alla uppgifter med ett skapandedatum som är kortare än två år och som inte har något aktuellt förfallodatum (eller med ett förfallodatum som är längre än två år) att ha ett standardförfallodatum på 18 månader. Det nya förfallodatumet är 15 oktober 2023. Du kan redigera det här förfallodatumet så att det är mindre än 18 månader, men inte större. Aktiviteten pausas när den upphör att gälla. Du kan dock återaktivera uppgiften med ett nytt 18-månaders förfallodatum. Inga uppgifter, arbetsböcker eller data tas bort.
 
-Syftet med den här pausen är att effektivt hantera och underhålla vår databas för schemalagda aktiviteter för att säkerställa optimal prestanda och leverans för nödvändiga uppgifter och arbetsböcker. Detta kommer att fungera i takt med att vår nya styrningspolitik utvecklas. Efter 15 april 2022 får alla uppgifter ett maximalt förfallodatum på 18 månader. Efter 18 månader kommer förfallna uppgifter att pausas och kan återaktiveras efter behov.
+Syftet med den här pausen är att effektivt hantera och underhålla vår databas för schemalagda aktiviteter för att säkerställa optimal prestanda och leverans för nödvändiga uppgifter och arbetsböcker. Detta kommer att fungera i takt med att vår nya styrningspolitik utvecklas. Efter 31 januari 2023 får alla uppgifter ett maximalt förfallodatum på 18 månader. Efter 18 månader kommer förfallna uppgifter att pausas och kan återaktiveras efter behov.
 
 ## Konfigurera schemalagda aktiviteter
 
