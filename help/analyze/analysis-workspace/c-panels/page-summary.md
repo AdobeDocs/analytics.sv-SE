@@ -4,7 +4,7 @@ title: Panelen Sidsammanfattning
 feature: Panels
 role: User, Admin
 exl-id: f0b7cd92-17b2-452d-9aab-f78629360ab8
-source-git-commit: 8e319511362ecdef9bbd7d0ee0b2a6607fe68605
+source-git-commit: bef175d9675134f4932407a0b9e4a3c67b1d27a5
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -53,7 +53,7 @@ The [!UICONTROL Page summary] panelen returnerar en mängd mätdata och visualis
 | [!UICONTROL Reloads] | The [!UICONTROL Reloads] mått visar antalet gånger en dimensionsobjekt fanns under en omladdning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning. |
 | [!UICONTROL Entries] | The [!UICONTROL Entries] mått visar hur många gånger en viss dimensionspost hämtas som det första värdet i ett besök. |
 | [!UICONTROL Exits] | The [!UICONTROL Exits] mått visar hur många gånger en given dimensionspost hämtas som det sista värdet i ett besök. |
-| [!UICONTROL Flow] | Ett flödesdiagram med den valda sidan som fokalpunkt. Du kan fördjupa dig i data precis som i [Flödesdiagram](/help/analyze/analysis-workspace/visualizations/c-flow/creating-flow-report.md). |
+| [!UICONTROL Flow] | Ett flödesdiagram med den valda sidan som fokalpunkt. Du kan fördjupa dig i data precis som i [Flödesdiagram](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md). |
 
 {style=&quot;table-layout:auto&quot;}
 
