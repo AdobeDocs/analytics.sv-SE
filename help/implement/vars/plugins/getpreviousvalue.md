@@ -3,9 +3,9 @@ title: getPreviousValue
 description: Hämta det sista värdet som skickades till en variabel.
 feature: Variables
 exl-id: 235c504b-ba97-4399-a07b-b0bfc764f1ba
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 The `getPreviousValue` Med plugin-programmet kan du ställa in en variabel på ett värde som ställts in för en tidigare träff. Detta plugin-program behövs inte om implementeringen innehåller alla önskade värden i den aktuella träffen.
 
-## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
+## Installera plugin-programmet med Web SDK eller Adobe Analytics-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
@@ -38,9 +38,9 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
 1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.

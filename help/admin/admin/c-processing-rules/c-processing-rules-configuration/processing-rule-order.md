@@ -4,10 +4,10 @@ subtopic: Processing rules
 title: Bearbetningsordning
 feature: Processing Rules
 exl-id: c7143527-017c-4550-b55e-09ea437d7c85
-source-git-commit: 790c3a02fbdf896cba0933dcd7a2b2efd5a19f15
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 2%
+source-wordcount: '503'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ I följande tabeller visas de data som vanligtvis är tillgängliga före och ef
 |--- |--- |
 | [Dynamiska variabler](/help/implement/vars/page-vars/dynamic-variables.md) | Variabler som fylls i dynamiskt genom att hämta information från HTTP-huvuden eller andra variabler. |
 | [AppMeasurement](/help/implement/home.md) | Funktioner och plugin-program som används i AppMeasurement-bibliotek körs i webbläsaren eller klientprogrammet. |
-| [Taggimplementering](/help/implement/launch/overview.md) | Regler definierade i användargränssnittet för datainsamling. |
+| [Taggimplementering](/help/implement/launch/overview.md) | Regler som definieras i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. |
 | [Webb-SDK för Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/analytics-overview.html) | Data som samlas in via Web SDK skickas till Adobe Experience Edge och vidarebefordras till önskat rapportpaket. |
 | [Punktregler](/help/admin/admin/bot-removal/bot-rules.md) | Gör att du kan ta bort trafik som genereras av kända spindlar och botar. |
 

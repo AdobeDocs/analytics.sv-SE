@@ -3,9 +3,9 @@ title: fpcookieDomainPeriods
 description: Hjälp AppMeasurement att förstå vilken domän cookies ska lagras i om din domän har en punkt i suffixet.
 feature: Variables
 exl-id: e994a188-1dab-4bf0-912b-cd2f6a1032e0
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,22 @@ The `fpCookieDomainPeriods` variabeln hjälper AppMeasurement att avgöra var An
 >
 >Ta inte underdomäner med i beräkningen för den här variabeln. Ange till exempel inte `fpCookieDomainPeriods` på exempelwebbadressen `store.toys.example.com`. AppMeasurement känner som standard igen att cookies ska lagras på `example.com`, även på URL:er med många underdomäner.
 
-## Första parts domänperioder som använder taggar i Adobe Experience Platform
+## Första parts domänperioder med Web SDK
+
+Web SDK kan identifiera rätt cookie-lagringsdomän utan den här variabeln.
+
+## Första parts domänperioder som använder Adobe Analytics-tillägget
 
 Första parts domänperioder är ett fält under [!UICONTROL Cookies] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
+3. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
 4. Expandera [!UICONTROL Cookies] dragspelspanel, som visar [!UICONTROL First-party Domain Periods] fält.
 
 Ange att det här fältet ska `3` endast på domäner som innehåller en punkt i suffixet. Annars kan fältet lämnas tomt.
 
-## s.fpCookieDomainPeriods i AppMeasurement och anpassad kodredigerare
+## s.fpCookieDomainPeriods i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 The `fpCookieDomainPeriods` variabeln är en sträng som vanligtvis är inställd på `"3"`, endast i domäner som innehåller en punkt i suffixet. Standardvärdet är `"2"`, som rymmer de flesta domäner.
 

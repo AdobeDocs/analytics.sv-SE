@@ -3,10 +3,10 @@ title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 feature: Implementation Basics
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 74%
+source-wordcount: '428'
+ht-degree: 64%
 
 ---
 
@@ -33,7 +33,8 @@ JavaScript-koden skickar en bildbegäran till Adobes datainsamlingsservrar. Sidd
 
 Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat program för att kunna skicka data till datainsamlingsservrar. Det finns flera metoder för att implementera den här koden, beroende på plattform och organisationens behov.
 
-* **Taggar Adobe Experience Platform**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics. Placera en loader-tagg på varje sida och använd användargränssnittet för datainsamling för att avgöra hur varje variabel definieras.
+* **Web SDK**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics. Installera Web SDK-tillägget i Adobe Experience Platform Data Collection, använd en loader-tagg på varje sida och skicka data till Adobe Experience Platform Edge i ett format som passar din organisation. Experience Edge vidarebefordrar inkommande data till Adobe Analytics i rätt format.
+* **Adobe Analytics-tillägg**: Installera Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Placera en loader-tagg på varje sida och använd Analytics-tillägget för att bestämma hur varje variabel definieras.
 * **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Skapar konturer av variabler och inställningar som används i en implementering, vilket kan vara användbart för tadimplementeringar med regler med anpassad kod.
 * **SDK för mobila enheter:** Dedikerade bibliotek för att enkelt skicka data till Adobe från mobilappen.
 

@@ -3,9 +3,9 @@ title: linkLeaveQueryString
 description: Tillåter lagring av frågesträngar i länkspårningsdimensioner.
 feature: Variables
 exl-id: 266f7d9c-803d-4dbe-95a1-282230012878
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,22 @@ Aktivering `linkLeaveQueryString` används för alla dimensioner av länkspårni
 >
 >Den här variabeln påverkar inte dimensioner utanför länkspårning. Det påverkar bara anpassade länkar, stängningslänkar och hämtningslänkar.
 
-## Behåll URL-parametrar med taggar i Adobe Experience Platform
+## Hantera länkfrågesträngar med Web SDK
+
+Frågesträngar tas inte bort från XDM-fältet `web.webInteraction.URL`. Om du vill ta bort frågesträngar från det här XDM-fältet kan du redigera det med `onBeforeEventSend`.
+
+## Behåll URL-parametrar med Adobe Analytics-tillägget
 
 [!UICONTROL Keep URL Parameters] är en kryssruta under [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
+3. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
 4. Expandera [!UICONTROL Link Tracking] dragspelspanel, som visar [!UICONTROL Keep URL Parameters] kryssrutan.
 
 Markera den här rutan om du vill inkludera frågesträngar i dimensioner för länkspårning.
 
-## s.linkLeaveQueryString i AppMeasurement och anpassad kodredigerare
+## s.linkLeaveQueryString i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.linkLeaveQueryString` är en boolesk variabel. Standardvärdet är `false`.
 

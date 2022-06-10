@@ -3,9 +3,9 @@ title: Mappa datalagerobjekt till dataelement
 description: Konfigurera taggar som ska läsas från datalagret.
 feature: Launch Implementation
 exl-id: b7594084-cb5f-408e-8a76-0a0815cc7553
-source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '294'
 ht-degree: 6%
 
 ---
@@ -20,9 +20,9 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
 
 ## Använd taggar för att skapa dataelement
 
-[Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en) är komponenter i användargränssnittet för datainsamling som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
+[Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en) är komponenter i Adobe Experience Platform Data Collection som du kan använda i hela verktyget. Du kan tilldela variabelvärden i Adobe Analytics-tillägget med dataelement.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
 1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och sedan klicka **[!UICONTROL Add Data Element]**.
 

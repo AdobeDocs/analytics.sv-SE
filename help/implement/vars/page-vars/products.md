@@ -3,9 +3,9 @@ title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -18,18 +18,29 @@ The `products` variabelspårar produkter och egenskaper som är knutna till dem.
 >
 >Om variabeln anges i en träff utan [`events`](events/events-overview.md) variabel, [Produktvyer](/help/components/metrics/product-views.md) måttsteg med 1. Se till att du anger lämpliga händelser för varje träff med `products` variabel.
 
-## Produkter som använder taggar i Adobe Experience Platform
+## Produkter som använder Web SDK
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan ange den här variabeln. Det finns dock flera tillägg från tredje part som kan vara till hjälp.
+Produkterna är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under flera XDM-fält:
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+* Kategorin är mappad till `productListItems[].name`.
+* Produkten är mappad till `productListItems[]._id`.
+* Kvantitet har mappats till `productListItems[].quantity`.
+* Priset är mappat till `productListItems[].priceTotal`.
+* Merchandising eVars mappas till `productListItems._experience.analytics.customDimensions.eVars.eVar1` till `productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
+* Marknadsföringshändelser mappas till `productListItems[]._experience.analytics.event1to100.event1.value` till `productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt.
+
+## Produkter som använder Adobe Analytics-tillägget
+
+Det finns inget dedikerat fält i Adobe Experience Platform Data Collection för att ställa in den här variabeln. Det finns dock flera tillägg från tredje part som kan vara till hjälp.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Extensions] tabbtangenten och sedan klicka [!UICONTROL Catalog] om du vill se alla tillgängliga tillägg.
 4. Sök efter termen &quot;product&quot;, som visar flera tillgängliga tillägg som kan hjälpa dig att ange variabeln.
 
 Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren efter AppMeasurement-syntaxen nedan.
 
-## s.products in AppMeasurement and custom code editor
+## s.products in AppMeasurement and the Analytics extension custom code editor
 
 The `s.products` variabeln är en sträng som innehåller flera avgränsade fält per produkt. Avgränsa varje fält med ett semikolon (`;`) i strängen.
 

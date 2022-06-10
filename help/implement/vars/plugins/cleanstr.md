@@ -3,9 +3,9 @@ title: cleanStr
 description: Ta bort eller ersätt alla onödiga tecken från en sträng.
 feature: Variables
 exl-id: d699dcd4-5e0a-40d3-b345-e5b1a077d393
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 0%
 >
 >Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
-The `cleanStr` plugin-programmet tar bort eller ersätter alla onödiga tecken från en sträng, inklusive taggar för HTML, extra blanksteg, tabbar och radmatningar. Ersätter även inledande och avslutande citattecken (`‘` och `’`) med raka enkla citattecken (`'`). Adobe rekommenderar att du använder det här plugin-programmet om du vill ta bort onödiga tecken från variabelvärden, och funktionen &quot;Rensa text&quot; i Adobe Experience Platform uppfyller inte dina implementeringsbehov. Detta plugin-program är inte nödvändigt om insamlade data inte innehåller onödiga tecken, eller om funktionen för&quot;ren text&quot; i användargränssnittet för datainsamling är tillräcklig.
+The `cleanStr` plugin-programmet tar bort eller ersätter alla onödiga tecken från en sträng, inklusive taggar för HTML, extra blanksteg, tabbar och radmatningar. Ersätter även inledande och avslutande citattecken (`‘` och `’`) med raka enkla citattecken (`'`). Adobe rekommenderar att du använder det här plugin-programmet om du vill ta bort onödiga tecken från variabelvärden, och funktionen&quot;Clean text&quot; i Adobe Experience Platform Data Collection uppfyller inte dina implementeringsbehov. Detta plugin-program är inte nödvändigt om insamlade data inte innehåller onödiga tecken, eller om funktionen &quot;Rengör text&quot; i Adobe Experience Platform Data Collection är tillräcklig.
 
-## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
+## Installera plugin-programmet med Web SDK eller Adobe Analytics-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
@@ -38,9 +38,9 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
 1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.

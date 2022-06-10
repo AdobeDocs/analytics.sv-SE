@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
-source-git-commit: 82c24cb7fd9051c5b0f848bb7fdd071f4137b697
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '401'
+ht-degree: 69%
 
 ---
 
@@ -140,7 +140,7 @@ ht-degree: 0%
       + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
    + Edge API {#edge-api}
       + [Översikt över Edge API](aep-edge/edge-api/overview.md)
-+ Implementera analyser med hjälp av taggar i Adobe Experience Platform {#launch}
++ Implementera analyser med Adobe Analytics-tillägget {#launch}
    + [Översikt över taggar](launch/overview.md)
    + [Skapa en Adobe Analytics-taggegenskap](launch/create-analytics-property.md)
    + [Distribuera till en utvecklingsmiljö](launch/deploy-dev.md)

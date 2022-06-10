@@ -3,10 +3,10 @@ title: linkTrackEvents
 description: Bestäm vilka händelser som ska ingå i förfrågningar om länkspårningsbilder.
 feature: Variables
 exl-id: 53c9e122-425c-4ec3-8a32-96e4d112f348
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 3%
+source-wordcount: '320'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,19 @@ Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden
 
 Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-method.md) metod).
 
-## Händelser i länkspårningsanrop med hjälp av taggar i Adobe Experience Platform
+## Avgöra vilka analyshändelser som ska ingå i en XDM-händelse med Web SDK
+
+Web SDK utesluter inte vissa fält för länkspårningsanrop. Du kan dock använda `onBeforeEventSend` återanrop för att rensa eller ange önskade fält innan data skickas till Adobe. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen om du vill ha mer information.
+
+## Händelser i länkspårningsanrop med Adobe Analytics-tillägget
 
 Adobe Experience Platform inkluderar automatiskt definierade händelser i länkspårningstips om du inte använder anpassad kod.
 
 >[!IMPORTANT]
 >
->Om du anger händelser i användargränssnittet för datainsamling med den anpassade kodredigeraren måste du inkludera händelsen i `linkTrackEvents` även med egen kod.
+>Om du anger händelser i den anpassade kodredigeraren för Analytics-tillägget måste du inkludera händelsen i `linkTrackEvents` även med egen kod.
 
-## s.linkTrackEvents i AppMeasurement och anpassad kodredigerare
+## s.linkTrackEvents i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.linkTrackEvents` variabeln är en sträng som innehåller en kommaavgränsad lista med händelser som du vill ta med i bildbegäran för länkspårning (`tl()` metod). Följande tre villkor måste vara uppfyllda för att du ska kunna inkludera mått i länkspårningsträffar:
 

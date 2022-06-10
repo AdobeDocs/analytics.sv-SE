@@ -3,9 +3,9 @@ title: registerPostTrackCallback
 description: Skapa callback-funktioner när du har skickat en träff till Adobe.
 feature: Variables
 exl-id: b2124b89-2bab-4cca-878c-18d62377a8f3
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,29 @@ Varje gång du ringer `registerPostTrackCallback` kan du koppla funktionen till 
 >
 >Tidpunkt och ordning för de funktioner som utlöses mellan [`registerPreTrackCallback`](registerpretrackcallback.md) och `registerPostTrackCallback` är inte garanterade. Undvik beroenden mellan dessa två funktioner.
 
-## Registrera återanrop efter spår med hjälp av taggar i Adobe Experience Platform
+## Återanrop efter spår med tillägget Web SDK
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Kommer snart!
 
-## s.registerPostTrackCallback i AppMeasurement och anpassad kodredigerare
+## Efterspårets återanrop implementerar Web SDK manuellt
+
+Du kan använda ett JavaScript-uttryck när du skickar en händelse för att registrera en funktion efter att data har skickats till Adobe.
+
+```js
+alloy("sendEvent",{
+  "xdm": {}
+}).then(function(result) {
+  Console.Log("Data was successfully sent.");
+});
+```
+
+Se [Hantera svar från händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#handling-responses-from-events) i Web SDK-dokumentationen om du vill ha mer information.
+
+## Registrera återanrop efter spår med Adobe Analytics-tillägget
+
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+
+## s.registerPostTrackCallback i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.registerPostTrackCallback` är en funktion som tar en funktion som enda argument. Den kapslade funktionen körs omedelbart när en bildbegäran har skickats.
 

@@ -3,9 +3,9 @@ title: trackOffline
 description: Aktivera eller inaktivera spårning offline, vilket ändrar hur AppMeasurement samlar in data.
 feature: Variables
 exl-id: 23a17ddc-01e6-42b6-81b0-c60f15a07231
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,15 @@ När det är aktiverat använder AppMeasurement följande process för att skick
    * Om det inte går att nå datainsamlingsservrar från Adobe läggs träffen till i kön på enheten.
    * Om den kan nå datainsamlingsservrar i Adobe skickas träffen och kön för träffar när enheten var offline.
 
-## Spåra offline med taggar i Adobe Experience Platform
+## Spårning offline med Web SDK
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Web SDK stöder inte offlinespårning.
 
-## s.trackOffline i AppMeasurement och anpassad kodredigerare
+## Spårning offline med Adobe Analytics-tillägget
+
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+
+## s.trackOffline i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.trackOffline` är en boolesk variabel som aktiverar eller inaktiverar spårning offline. Standardvärdet är `false`. Ange det här värdet till `true` om du vill aktivera spårning offline.
 

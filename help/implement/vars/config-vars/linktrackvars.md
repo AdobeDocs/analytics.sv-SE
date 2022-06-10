@@ -3,10 +3,10 @@ title: linkTrackVars
 description: Ange vilka variabler som ska ingå i förfrågningar om länkspårningsbilder.
 feature: Variables
 exl-id: b884f6e9-45d9-49f0-ac74-ea6f4f01020a
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 2%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
@@ -16,15 +16,19 @@ Vissa implementeringar vill inte inkludera alla variabler i alla bildbegäranden
 
 Den här variabeln används inte för sidvisningsanrop ([`t()`](../functions/t-method.md) metod).
 
-## Variabler i länkspårningsanrop med hjälp av taggar i Adobe Experience Platform
+## Avgöra vilka variabler som ska ingå i en XDM-händelse med Web SDK
 
-Adobe Experience Platform fyller automatiskt i den här variabeln på serverdelen baserat på variabler som anges i gränssnittet, så den ställs alltid in i implementeringar med hjälp av taggar i Adobe Experience Platform.
+Web SDK utesluter inte vissa fält för länkspårningsanrop. Du kan dock använda `onBeforeEventSend` återanrop för att rensa eller ange önskade fält innan data skickas till Adobe. Se [Ändra händelser globalt](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#modifying-events-globally) i Web SDK-dokumentationen om du vill ha mer information.
+
+## Variabler i länkspårningsanrop med Adobe Analytics-tillägget
+
+Den här variabeln fylls i automatiskt på baksidan baserat på variabler som anges i gränssnittet, så den ställs alltid in i implementeringar med Adobe Analytics-tillägget.
 
 >[!IMPORTANT]
 >
->Om du anger variabler med den anpassade kodredigeraren måste du ta med variabeln i `linkTrackVars` även med egen kod.
+>Om du anger variabler med den anpassade kodredigeraren måste du ta med variablerna i `linkTrackVars` även med egen kod.
 
-## s.linkTrackVars i AppMeasurement och anpassad kodredigerare
+## s.linkTrackVars i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.linkTrackVars` variabeln är en sträng som innehåller en kommaavgränsad lista med variabler som du vill ta med i bildbegäran för länkspårning (`tl()` metod). Båda följande villkor måste vara uppfyllda för att du ska kunna ta med dimensioner i länkspårningsträffar:
 

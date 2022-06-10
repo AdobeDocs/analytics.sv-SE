@@ -3,9 +3,9 @@ title: purchaseID
 description: Deduplicera träffar baserat på en unik inköpsidentifierare.
 feature: Variables
 exl-id: 7a4d7f08-65ae-4541-a94e-cc6c445c01db
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,15 @@ När Adobe identifierar en träff som ett dubblettköp visas inga konverteringsd
 
 Inköp-ID gäller för alla besökare och upphör inte att gälla. Om en besökare ställer in ett visst köp-ID, kommer en annan besökare att ställa in samma köp-ID ett år senare, det andra köpet tas bort.
 
-## Inköps-ID med hjälp av taggar i Adobe Experience Platform
+## Inköps-ID med Web SDK
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Inköps-ID är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `commerce.order.purchaseID`.
 
-## s.purchaseID i AppMeasurement och anpassad kodredigerare
+## Inköps-ID med Adobe Analytics-tillägget
+
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+
+## s.purchaseID i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.purchaseID` variabeln är en sträng som innehåller en unik identifierare för ett köp. Den ställs in på samma träff som en köphändelse. Använd bara alfanumeriska tecken för att fylla i variabeln.
 

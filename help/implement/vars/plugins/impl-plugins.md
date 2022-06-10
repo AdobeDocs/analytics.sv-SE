@@ -3,9 +3,9 @@ title: Översikt över plugin-program
 description: Klistra in kod på webbplatsen för att få nya funktioner.
 feature: Variables
 exl-id: faae7963-078d-40ad-ba09-71efa0b90df1
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '369'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Plugin-program är kodfragment som utför flera avancerade funktioner som hjälp
 
 Adobe erbjuder flera sätt att installera ett visst plugin-program:
 
-1. Använd tillägget&quot;Common Analytics Plugins&quot; med taggar i Adobe Experience Platform
+1. Använd tillägget&quot;Common Analytics Plugins&quot; med Web SDK eller Adobe Analytics
 2. Klistra in plugin-kod med den anpassade kodredigeraren
 3. Klistra in plugin-programkoden i `AppMeasurement.js` fil
 

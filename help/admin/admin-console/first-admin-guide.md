@@ -3,9 +3,9 @@ title: Handbok för nya Adobe Analytics-administratörer
 description: Lär dig hur du kommer igång med Adobe Analytics, allmänna rolltyper och loggar in i användargränssnittet.
 exl-id: fbbbd335-0d22-473e-adef-f92f8eab7bf0
 feature: Admin Tools
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ En första administratör är utgångspunkten när det gäller att göra det mö
 Om din organisation har köpt Adobe Analytics finns det flera viktiga roller att tänka på:
 
 * **Adobe Analytics-administratörer:** Dessa användare har fullständig åtkomst till allt i Adobe Analytics, inklusive rapportsvitsinställningar och användarbehörigheter. Beroende på hur organisationen är strukturerad kan olika personer eller team ansvara för olika aspekter av Analytics-administration. En person ansvarar till exempel för att identifiera vilka variabler som ska användas i en implementering. En annan person kan ansvara för att användarna kan dra in rapporter på rätt sätt genom att se till att alla har rätt behörigheter. Identifiera minst en användare som kan vara ansvarig för inställningarna för Analytics-rapportsviten och användarbehörigheter, och de kan bjuda in andra Analytics-administratörer därifrån.
-* **Administratörer för datainsamling:** Dessa användare har fullständig åtkomst till allt i användargränssnittet för datainsamling (tidigare användargränssnittet i Experience Platform Launch), inklusive publiceringsbehörigheter, skapande av behållare och användarbehörigheter. Dessa användare behöver inte nödvändigtvis vara programmerare, men det är bra att åtminstone ha en nybörjare som känner till HTML, CSS och JavaScript. De ansvarar för att samarbeta med webbplatsägarna i din organisation för att implementera Experience Platform-taggarna på din webbplats. Identifiera minst en användare som är ansvarig för implementeringen av din organisation, och de kan bjuda in andra administratörer för datainsamling därifrån.
+* **Administratörer för datainsamling:** Dessa användare har fullständig åtkomst till allt i Adobe Experience Platform Data Collection, inklusive publiceringsbehörigheter, behållare och användarbehörigheter. Dessa användare behöver inte nödvändigtvis vara programmerare, men det är bra att åtminstone ha en nybörjare som känner till HTML, CSS och JavaScript. De ansvarar för att samarbeta med webbplatsägarna i din organisation för att få tag på era webbplatser. Identifiera minst en användare som är ansvarig för implementeringen av din organisation, och de kan bjuda in andra administratörer för datainsamling därifrån.
 * **Supportrepresentanter**: De kallas även användare som stöds och har inga ytterligare behörigheter i Analytics-gränssnittet. I stället får de ytterligare behörigheter när de kommunicerar med Adobe kundtjänst. De här användarna är nästan alltid Analytics-administratörer också, eftersom det hjälper kundtjänst att felsöka problem med dem. Identifiera minst en Analytics-administratör som ansvarar för att underlätta interaktionen mellan slutanvändare och Adobe kundtjänst.
 * **Webbplatsägare:** Dessa personer eller team ansvarar för kodningen och utvecklingen av er webbplats. De behöver inga konton, men de vill arbeta med datainsamlingsadministratörer för att hämta taggkoden och implementera den på din webbplats.
 * **Slutanvändare:** de här användarna tittar vanligtvis på rapporter och söker svar på affärsfrågor. Analysadministratörer ger dessa användare behörighet att arbeta i produkten.

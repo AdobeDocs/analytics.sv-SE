@@ -3,9 +3,9 @@ title: getQueryParam
 description: Extrahera värdet för en URL:s frågesträngsparameter.
 feature: Variables
 exl-id: d2d542d1-3a18-43d9-a50d-c06d8bd473b8
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,14 @@ ht-degree: 0%
 
 The `getQueryParam` Med plugin-programmet kan du extrahera värdet för alla frågesträngsparametrar som finns i en URL. Det är användbart för att extrahera kampanjkoder, både interna och externa, från URL:er för landningssidor. Det är också värdefullt när du extraherar söktermer eller andra frågesträngsparametrar.
 
-Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna med hjälp av taggar i Adobe Experience Platform eller [`Util.getQueryParam()`](../functions/util-getqueryparam.md) som ingår i AppMeasurement.
+Detta plugin-program innehåller robusta funktioner för att analysera komplexa URL:er, inklusive hashvärden och URL:er som innehåller flera frågesträngsparametrar. Om du bara behöver ha en enkel frågesträngsparameter rekommenderar Adobe att du använder URL-parameterfunktionerna med hjälp av Web SDK eller Adobe Analytics-tillägget eller [`Util.getQueryParam()`](../functions/util-getqueryparam.md) som ingår i AppMeasurement.
 
-## Installera plugin-programmet med hjälp av taggar i Adobe Experience Platform
+## Installera plugin-programmet med Web SDK eller Adobe Analytics-tillägget
 
 Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
 1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
 1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
@@ -40,9 +40,9 @@ Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-program
 
 Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics-tillägget.
+1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
 1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.

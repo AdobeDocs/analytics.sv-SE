@@ -3,9 +3,9 @@ title: websiteBot
 description: Identifiera botar dynamiskt med musrörelser.
 feature: Variables
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Denna plug-in utför två kontroller:
 
 Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan plugin-programmet
 
-* ringa ett direktanrop med hjälp av taggar i Adobe Experience Platform, eller
+* ringa ett samtal direkt med hjälp av Web SDK eller Adobe Analytics-tillägget, eller
 * Anropa länkspårning för att ange att besökaren inte är en robot.
 
 ## Förutsättningar

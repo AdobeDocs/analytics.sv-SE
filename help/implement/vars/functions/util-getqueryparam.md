@@ -3,9 +3,9 @@ title: Util.getQueryParam
 description: Returnerar värdet för en frågesträngsparameter.
 feature: Variables
 exl-id: d29d6cd9-f85f-475b-a7a8-73785aa4ae7b
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 Frågesträngsparametrar i en webbläsarURL innehåller ofta viktiga data för Analytics. Använd `Util.getQueryParam()` metod för att hämta data från frågesträngen.
 
-## Hämta frågesträngsparameterdata med hjälp av taggar i Adobe Experience Platform
+## Hämta frågesträngsparameterdata med Adobe Analytics-tillägget och Web SDK-tillägget
 
 Du kan hämta parameterdata för frågesträngar genom att ange värden i dataelement.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Data Elements] och sedan klicka på det önskade dataelementet (eller skapa ett dataelement).
-4. Ange [!UICONTROL Extension] listruta till [!UICONTROL Core]och [!UICONTROL Data Element Type] till [!UICONTROL Query String Parameter].
+4. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Core]** och [!UICONTROL Data Element Type] till **[!UICONTROL Query String Parameter]**.
 5. Ange frågesträngsparametern i textfältet.
 
-Frågesträngens parametervärde lagras i dataelementet. Du kan sedan referera till dataelementet i regler för att tilldela Analytics-variabler.
+Frågesträngens parametervärde lagras i dataelementet. Du kan sedan referera till dataelementet i regler för att tilldela de önskade variablerna.
 
-## s.Util.getQueryParam() i AppMeasurement och anpassad kodredigerare
+## s.Util.getQueryParam() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s.Util.getQueryParam()` metod för att hämta ett frågesträngsvärde från webbläsarens URL. Strängargumentet som innehåller en frågesträngsparameter krävs. Den här metoden returnerar en sträng som du kan tilldela Analytics-variabler:
 

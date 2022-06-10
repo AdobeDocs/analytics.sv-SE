@@ -3,9 +3,9 @@ title: t
 description: Skicka ett spårningsanrop för sidvy till Adobe.
 feature: Variables
 exl-id: c4f5b9e2-57a3-4d89-8378-39b7a4737afc
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -36,18 +36,40 @@ https://data.example.com/b/ss/examplersid/1/?v1=Example%20dimension%20value
 
 Adobe tar emot bildbegäran och tolkar sedan parametrarna för begärandehuvudet, URL:en och frågesträngen. Datainsamlingsservrar returnerar sedan en genomskinlig 1x1-pixelbild som visas osynligt på din webbplats.
 
-## Anrop till spårning av sidvy med hjälp av taggar i Adobe Experience Platform
+## Skicka händelse med Web SDK-tillägget
 
-Användargränssnittet för datainsamling har en dedikerad plats som anger ett spårningsanrop för sidvyn.
+Använd en åtgärd för att konfigurera sändning av XDM-händelsedata till Adobe. Datastream tar emot dessa data, tillämpar konfigurerade mappningar och vidarebefordrar dessa data till Adobe Analytics om det är en tillagd tjänst till det dataflödet.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
-4. Under [!UICONTROL Actions]klickar du på plustecknet (+)
-5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] för att skicka Beacon.
-6. Klicka på `s.t()` alternativknapp.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
+1. Under [!UICONTROL Actions]klickar du på funktionsmakrot eller klickar på **&#39;+&#39;** om du vill lägga till ett funktionsmakro.
+1. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Adobe Experience Platform Web SDK]** och [!UICONTROL Action Type] till **[!UICONTROL Send event]**.
 
-## s.t(), metod i AppMeasurement och anpassad kodredigerare
+## Skicka händelse manuellt som implementerar Web SDK
+
+Använd `sendEvent` för att skicka data till Adobe. Datastream tar emot dessa data, tillämpar konfigurerade mappningar och vidarebefordrar dessa data till Adobe Analytics om det är en tillagd tjänst till det dataflödet.
+
+```js
+alloy("sendEvent", {
+  "xdm": {}
+});
+```
+
+Se [Spåra händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html) i Web SDK-dokumentationen om du vill ha mer information.
+
+## Anrop om spårning av sidvy med Adobe Analytics-tillägget
+
+Adobe Analytics-tillägget i Adobe Experience Platform Data Collection har en dedikerad plats som anger ett spårningsanrop för sidvyn.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
+1. Under [!UICONTROL Actions]klickar du på önskad åtgärd eller klickar på **&#39;+&#39;** om du vill lägga till ett funktionsmakro.
+1. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] till **[!UICONTROL Send Beacon]**.
+1. Klicka på `s.t()` alternativknapp.
+
+## s.t()-metoden i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s.t()` när du vill skicka ett spårningsanrop till Adobe.
 

@@ -3,9 +3,9 @@ title: eVar-variabler
 description: Anpassade variabler som du kan använda i implementeringen.
 feature: Variables
 exl-id: f89457b2-4186-4276-8637-9992070e3a73
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -22,12 +22,16 @@ Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 2
 
 Innan du använder eVars i implementeringen måste du konfigurera varje eVar i rapportsvitens inställningar. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i administrationshandboken.
 
-## eVars using tags in Adobe Experience Platform
+## eVars med Web SDK
+
+eVars are [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.eVars.eVar1` till `_experience.analytics.customDimensions.eVars.eVar250`.
+
+## eVars med Adobe Analytics-tillägget
 
 Du kan ange eVars antingen när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
@@ -35,7 +39,7 @@ Du kan ange eVars antingen när du konfigurerar Analytics-tillägget (globala va
 
 Du kan ange ett värde eller ett dataelement som eVar. Du kan också kopiera värdet från en annan Analytics-variabel.
 
-## s.eVar1 - s.eVar250 i AppMeasurement och en anpassad kodredigerare
+## s.eVar1 - s.eVar250 i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Varje eVar är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras största längd är 255 byte. värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 

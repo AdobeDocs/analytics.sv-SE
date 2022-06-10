@@ -3,9 +3,9 @@ title: Skapa ett datalager
 description: Lär dig vad ett datalager är i Analytics-implementeringen och hur det kan användas för att mappa variabler i Adobe Analytics.
 feature: Implementation Basics
 exl-id: 271dd8fa-3ba1-4a7f-b16a-c48a736a5bb5
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '489'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,7 @@ Implementering av Adobe Analytics med ett datalager följer vanligtvis dessa ste
    >
    >Följande Adobe rekommenderade datalagerspecifikationer är valfria. Om du redan har ett datalager, eller på annat sätt väljer att inte följa Adobe specifikationer, måste du se till att din organisation anpassar sig efter vilken specifikation som ska följas.
 1. **Validera datalagret med en webbläsarkonsol**: När ett datalager har skapats kan du validera att det fungerar med hjälp av en webbläsares utvecklarkonsol. Du kan öppna utvecklarkonsolen i de flesta webbläsare med `F12` nyckel. Ett exempel på variabelvärde skulle vara `digitalData.page.pageInfo.pageID`.
-1. **Använd Adobe Experience Platform-taggar för att mappa datalager-objekt till dataelement**: Skapa dataelement i användargränssnittet för datainsamling i Adobe Experience Platform och mappa dem till de JavaScript-attribut som beskrivs i datalagret.
+1. **Använd Adobe Experience Platform Data Collection för att mappa datalager-objekt till dataelement**: Skapa dataelement i Adobe Experience Platform Data Collection och mappa dem till de JavaScript-attribut som beskrivs i datalagret.
 1. **Använd taggtillägget Adobe Analytics för att mappa dataelement till analysvariabler**: Tilldela varje dataelement till rätt Analytics-variabel efter lösningsdesigndokumentet.
 
 ## Specifikationer

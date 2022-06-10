@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: 1ed07727530ef5e3c9afbb291772f668fdee5d45
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
@@ -60,6 +60,13 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `environment.operatingSystem` | Den mobila dimensionen [Operativsystem](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
 | `environment.operatingSystemVersion` | Den mobila dimensionen [Operativsystemsversion](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
 | `environment.type` | Anger om händelsen kom från en [bärbar](https://experienceleague.adobe.com/docs/mobile-services/android/wearables-android/c-android-wearables--additional-notes.html) enhet. Giltiga värden är `Application` (händelsen kom från appen), `Extension` (händelsen kom från den bärbara appen), eller `Widget` (händelsen kom från en mobilwidget). |
+| `_experience.analytics.customDimensions.eVars.eVar1` -<br/>`_experience.analytics.customDimensions.eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
+| `_experience.analytics.customDimensions.listProps.prop1.delimiter` -<br/>`_experience.analytics.customDimensions.listProps.prop75.delimiter` | Avgränsaren som används för en viss [List Prop](../vars/page-vars/prop.md#list-props). |
+| `_experience.analytics.customDimensions.listProps.prop1.values` -<br/>`_experience.analytics.customDimensions.listProps.prop75.values` | En strängarray som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props) värden. |
+| `_experience.analytics.customDimensions.lists.list1.list` -<br/>`_experience.analytics.customDimensions.lists.list3.list` | Anger respektive [Listvariabel](../vars/page-vars/list.md). |
+| `_experience.analytics.customDimensions.props.prop1` -<br/>`_experience.analytics.customDimensions.props.prop75` | Anger respektive [Prop](../../components/dimensions/prop.md) dimension. |
+| `_experience.analytics.event1to100.event1.id` -<br/>`_experience.analytics.event901to1000.event1000.value` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till respektive [Anpassade händelser](../../components/metrics/custom-events.md) mätvärden. |
+| `_experience.analytics.event1to100.event1.value` -<br/>`_experience.analytics.event901to1000.event1000.value` | Ökar respektive [Anpassade händelser](../../components/metrics/custom-events.md) mått med önskad mängd. |
 | `identityMap.ECID[0].id` | The [Adobe Experience Cloud ID för identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | `marketing.trackingCode` | Anger [Spårningskod](../../components/dimensions/tracking-code.md) dimension. |
 | `media.mediaTimed.completes.value` | Måtten för Media Analytics [Innehållet har slutförts](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-complete). |
@@ -101,10 +108,10 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `placeContext.geo.longitude` | Den mobila dimensionens longitud. |
 | `placeContext.geo.postalCode` | The [Postnummer](../../components/dimensions/zip-code.md) dimension. |
 | `placeContext.geo.stateProvince` | The [USA](../../components/dimensions/us-states.md) dimension. |
-| `productListItems[N].lineItemId` | The [Kategori](../../components/dimensions/category.md) dimension. |
-| `productlistitems[N].name` | The [Produkt](../../components/dimensions/product.md) dimension. |
-| `productlistitems[N].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. |
-| `productlistitems[N].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. |
+| `productListItems[].lineItemId` | The [Kategori](../../components/dimensions/category.md) dimension. |
+| `productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. |
+| `productListItems[].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. |
+| `productListItems[].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. |
 | `web.webInteraction.URL` | The [linkURL](../vars/config-vars/linkurl.md) implementeringsvariabel. |
 | `web.webInteraction.name` | The [Egen länk](../../components/dimensions/custom-link.md), [Hämta länk](../../components/dimensions/download-link.md), eller [Avsluta länk](../../components/dimensions/exit-link.md) dimension, beroende på värdet i `web.webInteraction.type` |
 | `web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `lnk_o` (Anpassade länkar), `lnk_d` (Hämta länkar) och `lnk_e` (Avsluta länkar). |

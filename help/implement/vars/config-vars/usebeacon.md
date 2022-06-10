@@ -3,9 +3,9 @@ title: useBeacon
 description: Med useBeacon kan du tvinga AppMeasurement att använda webbläsarnas sendBeacon-API
 feature: Variables
 exl-id: a3c4174a-711d-4a35-9f36-9b1049c7db54
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,37 @@ If `useBeacon` är aktiverat, nästa träff som skickas till Adobe använder web
 
 The `useBeacon` variabeln ignoreras när besökaren använder en webbläsare som inte stöder `navigator.sendBeacon()`. Användning av den här variabeln kräver AppMeasurement 2.16.0 eller senare.
 
-## Använd Beacon med taggar i Adobe Experience Platform
+## Använda API:t sendBeacon med Web SDK-tillägget
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+The **[!UICONTROL Document will unload]** kryssrutan i en åtgärdskonfiguration avgör om data som skickas till Adobe använder API:t sendBeacon.
 
-## s.useBeacon i AppMeasurement och anpassad kodredigerare
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel.
+1. Under [!UICONTROL Actions]klickar du på funktionsmakrot eller klickar på **&#39;+&#39;** om du vill lägga till ett nytt funktionsmakro.
+1. Ställ in listrutan Tillägg på **[!UICONTROL Adobe Experience Platform Web SDK]** och [!UICONTROL Action Type] till **[!UICONTROL Send event]**
+1. Klicka i kryssrutan **[!UICONTROL Document will unload]** till höger.
+
+Om den här rutan är markerad skickas data till Adobe med API:t sendBeacon. Den är avmarkerad som standard.
+
+## Använda API:t sendBeacon för att implementera Web SDK manuellt
+
+Ange `documentUnloading` till `true` när en händelse skickas. Om den inte anges är standardvärdet `false`.
+
+```json
+alloy("sendEvent", {
+  "documentUnloading": true,
+  "xdm": {}
+});
+```
+
+Se [Använda API:t sendBeacon](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html#using-the-sendbeacon-api) i Web SDK-dokumentationen om du vill ha mer information.
+
+## Använd Beacon med Adobe Analytics-tillägget
+
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+
+## s.useBeacon i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.useBeacon` är en boolesk variabel som avgör om AppMeasurement använder webbläsarens `navigator.sendBeacon()` -metod. Standardvärdet är `false`. Ange variabeln till `true` innan du anropar en spårningsfunktion om du vill använda den asynkrona typen av `navigator.sendBeacon()`.
 

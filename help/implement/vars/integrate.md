@@ -3,9 +3,9 @@ title: Integrera modul
 description: Med Integrate Module kan Adobe partners integrera sina datainsamlingsaktiviteter med din organisation.
 feature: Variables
 exl-id: 378ba77b-be81-49af-8f36-81c65bd01a53
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -41,9 +41,9 @@ För att få tillgång till modulkod krävs en användare med produktadministrat
 
 ### Placera integreringsmodulen i implementeringen
 
-För att kunna implementera integreringsmodulen på din webbplats måste du ha tillgång till användargränssnittet för datainsamling i Adobe Experience Platform. Om du använder en äldre JavaScript-implementering måste du ha tillgång till organisationens källkod för webbplatsen.
+Du måste ha tillgång till Adobe Experience Platform Data Collection för att kunna implementera integreringsmodulen på din webbplats. Om du använder en äldre JavaScript-implementering måste du ha tillgång till organisationens källkod för webbplatsen.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på taggegenskapen som du vill redigera.
 1. Klicka på fliken Tillägg och sedan på Konfigurera under Adobe Analytics.
 1. Öppna dragspelet Konfigurera spåraren med egen kod och klicka sedan på &lt;/> Öppna redigerare.

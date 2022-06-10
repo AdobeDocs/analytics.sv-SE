@@ -3,9 +3,9 @@ title: transactionID
 description: Använd den här variabeln för att länka samman online- och offlinedata.
 feature: Variables
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -22,12 +22,12 @@ När du anger `transactionID` Vid en träff tar Adobe en ögonblicksbild av alla
 
 Som standard kommer Adobe ihåg alla transaktions-ID-värden (länkade och olänkade) i upp till 90 dagar. Om din interaktionsprocess är längre än 90 dagar kontaktar du kundtjänst för att förlänga den här gränsen.
 
-## Transaktions-ID med hjälp av taggar i Adobe Experience Platform
+## Transaktions-ID med Adobe Analytics-tillägg
 
 Du kan ange transaktions-ID när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
@@ -35,7 +35,7 @@ Du kan ange transaktions-ID när du konfigurerar Analytics-tillägget (globala v
 
 Du kan ange transaktions-ID till vilket strängvärde som helst, inklusive dataelement.
 
-## s.transactionID i AppMeasurement och anpassad kodredigerare
+## s.transactionID i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.transactionID` variabeln är en sträng som innehåller en unik identifierare för en transaktion. Giltiga värden är alfanumeriska tecken som är upp till 100 byte långa. Dess standardvärde är en tom sträng.
 

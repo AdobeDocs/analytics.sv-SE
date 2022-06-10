@@ -3,9 +3,9 @@ title: referent
 description: Åsidosätt den automatiskt insamlade referenten för en träff.
 feature: Variables
 exl-id: 09a76de9-0689-424a-aead-3fdff1709fd9
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,16 @@ ht-degree: 0%
 
 The `referrer` variabeln åsidosätter den automatiskt insamlade referenten i rapporter. Den här variabeln är användbar i situationer där referenten kan förloras, till exempel vid omdirigeringar eller när besökaren tillfälligt vidarebefordras till en betalningsbehandlare. Den här variabeln används för att fylla i dimensionerna Referer och Refererande domän.
 
-## Referera med taggar i Adobe Experience Platform
+## Referent med Web SDK
+
+Referenten är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webReferrer.URL`.
+
+## Referent som använder Adobe Analytics-tillägget
 
 Du kan ange referent antingen när Analytics-tillägget (globala variabler) konfigureras eller under regler.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
@@ -27,7 +31,7 @@ Du kan ange referent antingen när Analytics-tillägget (globala variabler) konf
 
 Du kan ställa in referenten på valfritt strängvärde, inklusive dataelement.
 
-## s.referrer i AppMeasurement och anpassad kodredigerare
+## s.referrer i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.referrer` variabeln är en sträng som innehåller URL:en för föregående sida. Denna variabel kan lagra högst 255 byte. värden som är större än 255 byte trunkeras. AppMeasurement anger automatiskt variabeln till `document.referrer`; du behöver inte ange den här variabeln om du inte vill åsidosätta det automatiskt insamlade värdet.
 

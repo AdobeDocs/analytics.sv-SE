@@ -3,9 +3,9 @@ title: tl
 description: Skicka ett länkspårningsanrop till Adobe.
 feature: Variables
 exl-id: 470662b2-ce07-4432-b2d5-a670fbb77771
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -16,20 +16,38 @@ The `tl()` är en viktig komponent i Adobe Analytics. Den tar alla analysvariabl
 
 If [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExternalLinks`](../config-vars/trackexternallinks.md) är aktiverade, AppMeasurement anropar automatiskt `tl()` metod för att skicka hämtningslänk och avsluta länkspårningsdata. Om din organisation föredrar att ha större kontroll över länkarna och deras beteende kan du anropa `tl()` -metoden manuellt. Anpassade länkar kan bara spåras manuellt.
 
-## Länkspårningsanrop med taggar i Adobe Experience Platform
+## Länkspårning med Web SDK
 
-Användargränssnittet för datainsamling har en dedikerad plats som anger ett länkspårningsanrop.
+Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. båda använder `sendEvent` -kommando. Om du vill att Adobe Analytics ska räkna en viss händelse som ett länkspårningsanrop måste du se till att dina XDM-data innehåller `web.webInteraction.name`, `web.webInteraction.URL`och `web.webInteraction.type`.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på önskad egenskap.
+```js
+alloy("sendEvent", {
+  "xdm": {
+    "web": {
+      "webInteraction": {
+        "name": "My Custom Link",
+        "URL": "https://example.com",
+        "type": "other"
+      }
+    }
+  }
+});
+```
+
+## Länkspårning med Adobe Analytics-tillägget
+
+Adobe Analytics-tillägget har en dedikerad plats där ett länkspårningsanrop kan ställas in.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
-1. Under [!UICONTROL Actions]klickar du på plustecknet (+)
-1. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] för att skicka Beacon.
+1. Under [!UICONTROL Actions]klickar du på önskad åtgärd eller klickar på **&#39;+&#39;** om du vill lägga till ett funktionsmakro.
+1. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] till **[!UICONTROL Send Beacon]**.
 1. Klicka på `s.tl()` alternativknapp.
 
-Du kan inte ange några valfria argument i användargränssnittet för datainsamling.
+Du kan inte ange några valfria argument i Analytics-tillägget.
 
-## s.tl(), metod i AppMeasurement och anpassad kodredigerare
+## s.tl()-metoden i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 Ring `s.tl()` när du vill skicka ett spårningsanrop till Adobe.
 

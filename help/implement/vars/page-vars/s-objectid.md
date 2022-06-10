@@ -3,9 +3,9 @@ title: s_objectID
 description: Hjälp Activity Map att identifiera unika länkar på din webbplats.
 feature: Variables
 exl-id: 7c0cb750-2bfe-41ca-ab27-30dda4b3a7fa
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ The `s_objectID` variabeln ger en unik identifierare för en länk. Det används
 
 Om Activity Map är viktigt för er organisation rekommenderar Adobe att man inkluderar `s_objectID` variabeln i `onClick` händelse för länkar på din webbplats. Se [Användningsexempel för spårning av länkar i Activity Map](/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-use-case.md) i användarhandboken Analyze om du vill ha mer information.
 
-## Objekt-ID som använder taggar i Adobe Experience Platform
+## Objekt-ID med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
-## s_objectID i AppMeasurement och anpassad kodredigerare
+## s_objectID i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s_objectID` är en global variabel, vilket innebär att den fungerar oberoende av objektet Analytics tracking (`s` som standard). Giltiga värden för den här variabeln kan vara valfri sträng som är upp till 100 byte lång. Om variabeln inte är definierad använder Activity Map länkens URL som identifierare för länken.
 

@@ -3,9 +3,9 @@ title: Vad är variabeln currencyCode och hur använder jag den?
 description: För e-handelswebbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,17 @@ If `currencyCode` är definierad och skiljer sig från rapportsvitens valuta, an
 
 Den här variabeln finns inte mellan träffar. Kontrollera att variabeln är definierad på varje sida som innehåller intäkt- eller valutakurser.
 
-## Valutakod som använder taggar i Adobe Experience Platform
+## Valutakod med Web SDK
+
+Valutakoden är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `commerce.order.currencyCode`.
+
+## Valutakod som använder Adobe Analytics-tillägget
 
 Valutakod är ett fält under [!UICONTROL General] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
 1. Expandera [!UICONTROL General] dragspelspanel, som visar [!UICONTROL Currency Code] fält.
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
@@ -47,7 +51,7 @@ Valutakoden skickas till Adobe Experience Platform Mobile SDK:er via kontextdata
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.
 
-## s.currencyCode i AppMeasurement och anpassad kodredigerare
+## s.currencyCode i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.currencyCode` variabeln är en sträng som innehåller en 3-bokstavskod som representerar valutan på sidan.
 

@@ -3,9 +3,9 @@ title: Distribuera Adobe Analytics till en dev-miljö
 description: Lär dig hur du använder taggar för att distribuera Adobe Analytics till din utvecklingsmiljö.
 feature: Launch Implementation
 exl-id: 324943db-cb0b-40b1-8884-56bb3f608278
-source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ När du har skapat och konfigurerat en taggegenskap är biblioteken klara att di
 
 Taggar kan hantera många organisatoriska arbetsflöden när kod distribueras. Följ de här stegen för att skapa de komponenter som krävs för en Analytics-implementering. Som tagghanterare kan du arbeta inom organisationen för att skapa rätt arbetsflöde för att distribuera Adobe-lösningar.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 3. Klicka **[!UICONTROL Hosts]** och sedan klicka **[!UICONTROL Add Host]**.
 4. Ge den ett namn `"Adobe managed"`och markera **[!UICONTROL Managed by Adobe]** i typlistrutan. Klicka på Spara.
@@ -36,7 +36,7 @@ Taggar kan hantera många organisatoriska arbetsflöden när kod distribueras. F
 
 Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publicerats. Om du skapar ett bibliotek som är ungefär översatt som en samling ändringar kan du publicera kod på webbplatsen.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 3. Klicka på **[!UICONTROL Publishing Flow]** tabbtangenten och sedan klicka **[!UICONTROL Add Library]**. Se [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) i taggdokumentationen om du vill ha mer information om den här sidan.
 4. Namnge biblioteket `'Initial changes'`och väljer utvecklingsmiljö.

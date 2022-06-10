@@ -3,10 +3,10 @@ title: Dynamiska variabler
 description: Kopiera variabler utan att öka längden på bildbegäran.
 feature: Variables
 exl-id: 41aab44d-01fd-45fe-892d-637d69488d98
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 1%
+source-wordcount: '423'
+ht-degree: 0%
 
 ---
 
@@ -24,12 +24,22 @@ När Adobe känner igen ett dynamiskt variabelprefix kopieras automatiskt fråge
 >
 >Tänk på maxgränserna för tecken när du kopierar variabler. Om du till exempel kopierar `eVar1` till `prop1`, `prop1` kan ha ett trunkerat värde eftersom det har en gräns på 100 byte (medan `eVar1` har en gräns på 255 byte).
 
-## Dynamiska variabler med hjälp av taggar i Adobe Experience Platform
+## Dynamiska variabler med Web SDK
+
+Använd datastream-mappning för att skicka data till flera Analytics-variabler från ett enda XDM-fält.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka **[!UICONTROL Datastreams]** till vänster.
+1. Klicka på önskat datastream.
+1. Klicka **[!UICONTROL Edit Mapping]** till höger.
+1. Kartlägg önskat [!UICONTROL Source Field] till önskat [!UICONTROL Target Field]. Ett enda källfält kan mappas till valfritt antal målfält.
+
+## Dynamiska variabler med Adobe Analytics-tillägget
 
 Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en sträng. Objekt i Dimensionen anges vanligtvis när Analytics-tillägget (globala variabler) eller enligt regler konfigureras.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
@@ -37,7 +47,7 @@ Du kan använda dynamiska variabler i alla dimensionsfält som accepterar en str
 
 Placera det dynamiska variabelprefixet i textfältet följt av frågesträngsparametern eller HTTP-huvudet som du vill referera till. Som standard är prefixet för den dynamiska variabeln `D=`.
 
-## Dynamiska variabler i AppMeasurement och anpassad kodredigerare
+## Dynamiska variabler i den anpassade kodredigeraren för AppMeasurement och Analytics-tillägget
 
 Dynamiska variabler är textsträngar som tilldelas andra variabler. Standardprefixet för dynamiska variabler är `D=`. Dynamiska variabler är skiftlägeskänsliga.
 

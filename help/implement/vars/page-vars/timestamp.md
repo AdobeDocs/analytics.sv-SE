@@ -3,9 +3,9 @@ title: tidsstämpel
 description: Ange tidsstämpeln för träffen manuellt.
 feature: Variables
 exl-id: 9d5ce5ef-2d84-4f65-b2e3-7aa3e219bc34
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ The `timestamp` variabeln ställer in tidsstämpeln för träffen för tidsstäm
 >
 >Använd inte den här variabeln om rapportsviten inte uttryckligen har konfigurerats för att acceptera tidsstämplade träffar. AppMeasurement ställer automatiskt in tiden för en träff för rapportsviter som inte stöder tidsstämplade träffar. Om du skickar en träff med den här variabeln till en rapportserie som inte stöder tidsstämplar, kommer dessa data att gå förlorade permanent.
 
-## Tidsstämpla med taggar i Adobe Experience Platform
+## Tidsstämpla med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
 
-## s.timestamp i AppMeasurement och anpassad kodredigerare
+## s.timestamp i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.timestamp` variabeln är en sträng som innehåller datum och tid för träffen. Giltiga tidsstämpelformat är [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) och [Unix-tid](https://en.wikipedia.org/wiki/Unix_time).
 

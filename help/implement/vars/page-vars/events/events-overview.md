@@ -3,9 +3,9 @@ title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,29 @@ Dimensioner och mätvärden är viktiga komponenter i rapporter. The `events` va
 
 Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) i Rapportsvitens inställningar. Om du tänker använda anpassade händelser i länkspårningstips måste du se till att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) är korrekt inställda.
 
-## Händelser som använder taggar i Adobe Experience Platform
+## Händelser som använder Web SDK
+
+Anpassade händelser är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under följande XDM-fält:
+
+* Anpassade händelser 1-100 mappas till `_experience.analytics.event1to100.event1` - `_experience.analytics.event1to100.event100`.
+* Anpassade händelser 101-200 mappas till `_experience.analytics.event101to200.event100` - `_experience.analytics.event101to200.event200`.
+* Det här mönstret upprepas var 100:e händelse till `_experience.analytics.event901to1000.event901` - `_experience.analytics.event901to1000.event1000`.
+* Order mappas till `commerce.purchases.value`.
+* Enheter mappas till summan av alla `productListItems[].quantity` fält.
+* Intäkterna är mappade till summan av alla `productListItems[].priceTotal` fält.
+* Produktvyer mappas till `commerce.productListViews.value`.
+* Korten mappas till `commerce.productListOpens.value`.
+* Kundtillägg mappas till `commerce.productListAdds.value`.
+* Cart Removals är mappade till `commerce.productListRemovals.value`.
+* Vyer för kundvagn mappas till `commerce.productListViews.value`.
+* Utcheckningar är mappade till `commerce.checkouts.value`.
+
+## Händelser som använder Adobe Analytics-tillägget
 
 Du kan ange händelser antingen när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
@@ -34,7 +51,7 @@ Flera funktioner är tillgängliga:
 * Ett valfritt textfält för ett händelsevärde. Du kan inkludera valuta för valutakurshändelser eller ett heltal för händelser som inte är valutaväxlar om du vill öka den flera gånger. Välj till exempel `event1` i listrutan och som `10` i detta fält stegvis `event1` efter 10 i rapporteringen.
 * En knapp för att lägga till en annan händelse. Det finns ingen rimlig gräns för hur många händelser du kan inkludera i en träff.
 
-## s.events i AppMeasurement och anpassad kodredigerare
+## s.events i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.events` variabeln är en sträng som innehåller en kommaavgränsad lista med händelser som ska ingå i träffen. Det finns ingen bytegräns för den här variabeln, så den trunkeras inte. Giltiga värden är:
 

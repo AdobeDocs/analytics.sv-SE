@@ -3,10 +3,10 @@ title: s_gi()
 description: Skapa och spåra instanser av AppMeasurement.
 feature: Variables
 exl-id: f87eff07-7e60-480b-8334-3db538c1030e
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '480'
+ht-degree: 0%
 
 ---
 
@@ -14,18 +14,43 @@ ht-degree: 1%
 
 The `s_gi()` funktionen instansierar eller hittar en instans av AppMeasurement med rapportsvitens-ID. AppMeasurement håller reda på alla instanser som skapas och `s_gi()` returnerar den befintliga instansen för en rapportserie om en sådan finns. Om en instans inte finns skapas en ny instans.
 
-## s_gi() med taggar i Adobe Experience Platform
+## Instansiera ett spårningsobjekt med hjälp av Web SDK-tillägget
+
+Tillägget Web SDK instansierar och hanterar spårningsobjektet åt dig. Du kan dock anpassa spårningsobjektets namn i tilläggsinställningarna:
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Experience Platform Web SDK.
+1. Ändra [!UICONTROL Name] till det önskade värdet. Standardvärdet är `alloy`.
+
+## Instansiera ett spårningsobjekt manuellt när Web SDK implementeras
+
+Följande kod läser in Web SDK och instansierar ett spårningsobjekt. Du kan anpassa spårningsobjektets namn genom att ändra strängen `"alloy"` i slutet av det infogade skriptet till det önskade värdet.
+
+```js
+<script>
+  !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+  []).push(o),n[o]=function(){var u=arguments;return new Promise(
+  function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+  (window,["alloy"]);
+</script>
+<script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+```
+
+Se [Installera SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) i Web SDK-dokumentationen om du vill ha mer information.
+
+## Instansiera ett spårningsobjekt med Adobe Analytics-tillägget
 
 Tillägget Analytics instansierar och hanterar spårningsobjektet åt dig. Du kan också ange ett globalt spårningsobjekt i dialogrutan [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
-3. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Configure] under Adobe Analytics.
-4. Expandera [!UICONTROL Library Management] dragspelspanel och välj en annan alternativknapp än [!UICONTROL Manage the library for me].
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
+1. Expandera [!UICONTROL Library Management] dragspelspanel och välj en annan alternativknapp än [!UICONTROL Manage the library for me].
 
 I det globala textfältet för variabeln kan du ange ett anpassat spårningsobjekt. Standardvärdet är `s`.
 
-## s_gi() i AppMeasurement och anpassad kodredigerare
+## s_gi() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s_gi()` för att instansiera ett spårningsobjekt. Dess enda argument innehåller en kommaavgränsad sträng med ID:n för rapportsviten. Argumentet för rapportsvitens ID krävs.
 

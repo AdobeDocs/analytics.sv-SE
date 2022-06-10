@@ -3,9 +3,9 @@ title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
 feature: Admin Tools
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Behörighetsobjekt för analysverktyg | Beskrivning |
 |----|----|
 | [!UICONTROL Server Call Usage] | Ger åtkomst till Admin > Serversamtalsanvändning. |
-| [!UICONTROL Code Manager] | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall använder du i stället biblioteken som ingår i användargränssnittet för datainsamling. |
+| [!UICONTROL Code Manager] | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall bör du i stället använda de bibliotek som ingår i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. |
 | [!UICONTROL Code Manager - Web Services] | Ger åtkomst till Code Manager via 1.4-API:t. |
 | [!UICONTROL Logs] | Ger åtkomst till Admin > Alla administratörer > Loggar. |
 | [!UICONTROL Logs - Web Services] | Ger åtkomst till pull-loggar via 1.4-API:t. |
@@ -42,6 +42,6 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | [!UICONTROL Segment Creation] | Ger möjlighet att skapa och dela segment över alla Analytics-funktioner. |
 | [!UICONTROL Advertising Analytics Management] | Används inte. |
 | [!UICONTROL Segment Publishing] | Ger möjlighet att göra ett segment till en Experience Cloud-målgrupp när du skapar eller redigerar ett segment. |
-| [!UICONTROL Integrations (Create)] | Används inte. Dataanslutningar har avslutats. |
+| [!UICONTROL Integrations (Create)] | Används inte. Data Connectors har blivit uppsagd. |
 | [!UICONTROL Integrations (Update)] | Används inte. |
 | [!UICONTROL Integrations (Delete)] | Används inte. |

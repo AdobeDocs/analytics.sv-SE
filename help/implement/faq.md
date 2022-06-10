@@ -3,10 +3,10 @@ title: Vanliga frågor om implementering
 description: Vanliga frågor om implementering och länkar till mer information.
 feature: Implementation Basics
 exl-id: 4bab6d51-0077-42ce-8091-f75207d4c4db
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 42%
+source-wordcount: '507'
+ht-degree: 41%
 
 ---
 
@@ -34,7 +34,7 @@ AppMeasurement skapar ett bildobjekt på HTML-sidan och webbläsaren begär seda
 
 Ibland vill en organisation ta bort en implementering på grund av kontraktets förfallodatum eller minska antalet serversamtal.
 
-* **Implementeringar med taggar i Adobe Experience Platform**: Inaktivera eller avinstallera Adobe Analytics-tillägget i dialogrutan [!UICONTROL Extensions] och sedan publicera.
+* **Implementeringar med Adobe Experience Platform Data Collection**: Inaktivera eller avinstallera tillämpliga Adobe Analytics-, Web SDK- eller Mobile SDK-tillägg i [!UICONTROL Extensions] och sedan publicera.
 * **Äldre AppMeasurement-implementeringar**: Ersätta hela innehållet i `s_code.js` -fil med följande kodrad:
 
 ```js

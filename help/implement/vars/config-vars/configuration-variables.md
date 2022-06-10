@@ -3,9 +3,9 @@ title: Konfigurationsvariabler
 description: Använd konfigurationsvariabler för att avgöra hur data samlas in.
 feature: Variables
 exl-id: 3f017a94-b71d-47da-8ab4-daf32475ed34
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '122'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,13 @@ Konfigurationsvariabler styr hur data hämtas och bearbetas vid rapportering. De
 
 ## Ställa in konfigurationsvariabler
 
+I implementeringar som använder Web SDK-tillägget eller Analytics-tillägget finns vanligtvis konfigurationsvariabler i tilläggets inställningar:
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Klicka på [!UICONTROL Extensions] -flik och sedan klicka [!UICONTROL Configure] under förlängningen.
+
 I JavaScript-implementeringar med `AppMeasurement.js`, ställs konfigurationsvariabler vanligtvis in överst i JS-filen.
-
-I implementeringar som använder Adobe Experience Platform-taggar hittas vanligtvis konfigurationsvariabler genom att Adobe Analytics-tillägget konfigureras:
-
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på den egenskap som du vill redigera.
-1. Klicka på [!UICONTROL Extensions] -flik och sedan klicka [!UICONTROL Configure] under Adobe Analytics.
 
 >[!IMPORTANT]
 >

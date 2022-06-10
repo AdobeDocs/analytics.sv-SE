@@ -3,9 +3,9 @@ title: useLinkTrackSessionStorage
 description: Lagra länkspårningsdata i sessionslagring i stället för en cookie.
 feature: Variables
 exl-id: 3295195d-bfd6-4af9-9487-dc1ea6c3da23
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,15 @@ En webbläsares sessionslagring för länkspårning har flera begränsningar:
 
 AppMeasurement tar bort spårningsdata för sessionslagringslänkar efter att en träff har skickats till Adobe. Den förfaller automatiskt när webbläsarfliken stängs.
 
-## Använda länkspårssessionslagring med taggar i Adobe Experience Platform
+## Använd länkspårssessionslagring med Web SDK
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Web SDK stöder inte den här funktionen.
 
-## s.useLinkTrackSessionStorage i AppMeasurement och anpassad kodredigerare
+## Använd sessionsarkiv för länkspår med Adobe Analytics-tillägget
+
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+
+## s.useLinkTrackSessionStorage i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.useLinkTrackSessionStorage` variabeln är en boolesk variabel som avgör om AppMeasurement använder sessionslagring för länkspårningsdata i stället för `s_sq` cookie. Standardvärdet är `false`. Ange variabeln till `true` om du vill att AppMeasurement ska använda sessionslagring i stället för `s_sq` cookie för länkspårning och Activity Map.
 

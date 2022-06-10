@@ -3,10 +3,10 @@ title: sa
 description: Ändra rapportsviten när som helst i implementeringen.
 feature: Variables
 exl-id: 524857a7-c820-4985-86c7-fcf21a0809bd
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 1%
+source-wordcount: '416'
+ht-degree: 0%
 
 ---
 
@@ -14,11 +14,44 @@ ht-degree: 1%
 
 The `sa()` kan du när som helst på sidan dynamiskt ändra en rapportserie. Om du vill skicka data till olika rapportsviter utan att behöva läsa in en sida igen kan du använda den här metoden.
 
-## Använd metoden sa med taggar i Adobe Experience Platform
+## Hantera rapportsviter med Web SDK
+
+Web SDK fungerar genom att data skickas till en specifik datastream som vidarebefordrar data till önskad analysrapportsvit(er). En enda datastream kan vidarebefordra data till flera rapportsviter. Det här avsnittet gäller både för Web SDK-tillägget och för att manuellt implementera Web SDK.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka **[!UICONTROL Datastreams]** till vänster.
+1. Klicka på det önskade dataflödet eller klicka på **[!UICONTROL New Datastream]**.
+1. Klicka **[!UICONTROL Add Service]** väljer **[!UICONTROL Adobe Analytics]**.
+1. Ange önskat Report Suite-ID. Om du vill skicka samma data till flera rapportsviter klickar du på **[!UICONTROL Add Report Suite]**.
+1. När du har angett alla rapporteringsprogram klickar du på **[!UICONTROL Save]**.
+
+## Ange önskat dataström med hjälp av Web SDK-tillägget
+
+Tillägget Web SDK innehåller en listruta för Datastream för varje miljö. Du kan också ange ett dataström-ID manuellt.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** knapp under [!UICONTROL Adobe Experience Platform Web SDK].
+1. Under [!UICONTROL Datastreams]väljer du önskad dataström i listrutan för varje miljö.
+1. Klicka på **[!UICONTROL Save]**.
+
+## Ange önskad dataström som ska implementera Web SDK manuellt
+
+Ange `edgeConfigId` konfigurationsvariabel till dataström-ID. DataStream-ID:t finns till höger när du visar ett datastream i Adobe Experience Platform Data Collection.
+
+```js
+alloy("configure", {
+  "edgeConfigId": "example-a01f-4458-8cec-ef61de241c93",
+});
+```
+
+Se [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) i Web SDK-dokumentationen om du vill ha mer information.
+
+## Ändra rapportsvit med Adobe Analytics-tillägget
 
 Det finns inget flexibelt sätt att ändra rapportsviten i gränssnittet. Du kan ange rapportsviten under [!UICONTROL Library Management] när du konfigurerar Adobe Analytics-tillägget. Du kan dock inte ändra eller uppdatera rapportsviten med hjälp av regler. Om du vill uppdatera rapportsvitens värden när de har angetts använder du den anpassade kodredigeraren efter AppMeasurement-syntaxen.
 
-## s.sa() i AppMeasurement och anpassad kodredigerare
+## s.sa() i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 Ring `s.sa()` metod för att ändra målrapportsviten. Det enda argumentet är en sträng som innehåller ett rapportsuite-ID, eller flera rapportsuite-ID:n avgränsade med kommatecken. Argumentet för rapportsvitens ID krävs. Använd inte blanksteg i strängargumentet.
 
@@ -26,9 +59,7 @@ Ring `s.sa()` metod för att ändra målrapportsviten. Det enda argumentet är e
 s.sa("examplersid");
 ```
 
-## Exempel
-
-Du kan ändra rapportsviten om användaren utför en viss åtgärd på webbplatsen.
+Du kan till exempel ändra rapportsviten om användaren utför en viss åtgärd på webbplatsen.
 
 ```js
 // Instantiate the tracking object

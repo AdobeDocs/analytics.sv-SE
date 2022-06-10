@@ -3,9 +3,9 @@ title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
 feature: Implementation Basics
 exl-id: 08b8c7cc-28c6-45e3-ab44-77471eea8ef1
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ När en besökare når en avanmälnings-URL uppmanas de att installera en avanm�
 
 Avanmälningssidan för din organisation beror på [`trackingServer`](../vars/config-vars/trackingserver.md) variabelvärde i implementeringen.
 
-* I användargränssnittet för datainsamling:
-   1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-   1. Klicka på önskad egenskap.
+* I Analytics-tillägget:
+   1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+   1. Klicka på den önskade taggegenskapen.
    1. Klicka på [!UICONTROL Extensions] tabbtangenten och sedan klicka [!UICONTROL Configure] under Adobe Analytics.
    1. Klicka på [!UICONTROL General] dragspelspanelen och lägg märke till [!UICONTROL Tracking Server] värde.
 

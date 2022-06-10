@@ -3,9 +3,9 @@ title: server
 description: Fyll i dimensionen Servrar.
 feature: Variables
 exl-id: 7904c3c2-9a91-497e-89d0-9eed9ae7a902
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '177'
 ht-degree: 1%
 
 ---
@@ -14,12 +14,16 @@ ht-degree: 1%
 
 The `server` variabeln lagrar vanligtvis webbplatsens värdnamn. Det används ofta i rapportsviter som innehåller data från flera domäner. Den är funktionellt identisk med en prop.
 
-## Server som använder taggar i Adobe Experience Platform
+## Server som använder Web SDK
+
+Servern är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `web.webPageDetails.server`.
+
+## Server som använder Adobe Analytics-tillägget
 
 Du kan ange server antingen när Analytics-tillägget (globala variabler) konfigureras eller enligt regler.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
@@ -27,7 +31,7 @@ Du kan ange server antingen när Analytics-tillägget (globala variabler) konfig
 
 Du kan ställa in servern på valfritt strängvärde eller dataelement.
 
-## s.server i AppMeasurement och anpassad kodredigerare
+## s.server i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 The `s.server` variabeln är en sträng som vanligtvis innehåller värdnamnet för platsen. Den har ett maxvärde på 100 byte. längre värden trunkeras.
 

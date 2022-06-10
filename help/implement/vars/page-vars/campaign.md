@@ -3,10 +3,10 @@ title: kampanj
 description: Fyll i dimensionen 'Spårningskod'.
 feature: Variables
 exl-id: 2278d2b8-8d60-4634-a176-f027a237bc12
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 1%
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
@@ -16,12 +16,16 @@ The `campaign` variabeln används för att samla in spårningskoder på din webb
 
 Den här variabeln fyller i dimensionen &#39;Tracking Code&#39;.
 
-## Campaign using tags in Adobe Experience Platform
+## Campaign med Web SDK
+
+Campaign är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `marketing.trackingCode`.
+
+## Campaign med Adobe Analytics-tillägget
 
 Du kan ange kampanj antingen när Analytics-tillägget (globala variabler) konfigureras eller under regler.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-2. Klicka på önskad egenskap.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
 5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
@@ -29,7 +33,7 @@ Du kan ange kampanj antingen när Analytics-tillägget (globala variabler) konfi
 
 Du kan ställa in kampanjen på ett värde eller en frågesträngsparameter.
 
-## s.campaign i AppMeasurement och anpassad kodredigerare
+## s.campaign i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.campaign` variabeln är en sträng som vanligtvis innehåller en spårningskod som används i marknadsföringsaktiviteter. Dess största längd är 255 byte. värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 

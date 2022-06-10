@@ -3,9 +3,9 @@ title: Mappa taggdataelement till analysvariabler
 description: Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
 feature: Launch Implementation
 exl-id: 996c1204-3f8a-453e-8104-5e8e1279517c
-source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Om du publicerar ett taggbibliotek efter att du har utfört de här stegen kan d
 
 Globala variabler är idealiska om du vill ange variabelvärden på alla sidor där dataelementet finns.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
 1. Klicka på [!UICONTROL Extensions tab]och sedan klicka [!UICONTROL Configure] under Adobe Analytics-tillägget.
 1. Klicka på [!UICONTROL Global variables] , som visar gränssnittet för att tilldela globala variabler.
@@ -38,7 +38,7 @@ Globala variabler är idealiska om du vill ange variabelvärden på alla sidor d
 
 Variabler som anges i regler är idealiska om du inte vill ha variabler som anges på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) i dokumentationen för Adobe Experience Platform-taggar.
 
-1. Logga in på [Användargränssnitt för datainsamling](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
 1. Klicka på [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en).
 1. Klicka på [!UICONTROL Add] knapp under [!UICONTROL Actions].

@@ -3,9 +3,9 @@ title: lista
 description: Anpassade variabler som innehåller flera värden i samma träff.
 feature: Variables
 exl-id: 612f6f10-6b68-402d-abb8-beb6f44ca6ff
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,15 @@ Se till att du spelar in hur du använder varje listvariabel och deras logik i [
 
 Se till att du konfigurerar varje listvariabel i inställningarna för rapportsviten innan du använder dem i implementeringen. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/list-var-admin.md) i administrationshandboken.
 
-## Visa variabler med hjälp av taggar i Adobe Experience Platform
+## Visa variabler med Web SDK
 
-Det finns inget dedikerat fält i användargränssnittet för datainsamling som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.lists.list1` till `_experience.analytics.customDimensions.lists.list3`.
 
-## s.list1 - s.list3 i AppMeasurement och anpassad kodredigerare
+## Visa variabler med Adobe Analytics-tillägget
+
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+
+## s.list1 - s.list3 i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
 Varje listvariabel är en sträng som innehåller anpassade värden som är specifika för din organisation. De har inte ett högsta antal byte. Varje värde får dock innehålla högst 255 byte. Avgränsaren som du använder bestäms när du ställer in variabeln i inställningarna för rapportsviten. Använd inte blanksteg när du avgränsar flera objekt.
 
