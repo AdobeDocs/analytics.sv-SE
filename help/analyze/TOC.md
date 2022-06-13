@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Instruktioner för Analysis Workspace, det ledande analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: bef175d9675134f4932407a0b9e4a3c67b1d27a5
+source-git-commit: c728df537c543eb171ba74e72b158f4200f1e828
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1046'
 ht-degree: 80%
 
 ---
@@ -71,7 +71,6 @@ ht-degree: 80%
       + Flöde {#flow}
          + [Översikt över flöden](analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera en flödesvisualisering](analysis-workspace/visualizations/c-flow/create-flow.md)
-         + [Flödesinställningar](analysis-workspace/visualizations/c-flow/flow-settings.md)
          + [Intradimensionella flöden](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Histogram](analysis-workspace/visualizations/histogram.md)
       + [Mappa](analysis-workspace/visualizations/map-visualization.md)

@@ -5,7 +5,7 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 3cb991e7f440a72247b7261ad5959e15619e8a76
+source-git-commit: c728df537c543eb171ba74e72b158f4200f1e828
 workflow-type: tm+mt
 source-wordcount: '8164'
 ht-degree: 87%
@@ -169,7 +169,7 @@ Förbättring som släpptes 9 maj 2019.
 
 | Förbättring | Beskrivning |
 |--- |--- |
-| En ny inställning har lagts till i inställningarna för flödesvisualisering: Inkludera upprepade förekomster. | [Flödesinställningar](/help/analyze/analysis-workspace/visualizations/c-flow/flow-settings.md) |
+| En ny inställning har lagts till i inställningarna för flödesvisualisering: Inkludera upprepade förekomster. | [Flödesinställningar](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md) |
 
 ## April 2019
 
@@ -811,7 +811,7 @@ Nya funktioner som släpptes 8 juni 2017.
     </ul> </td>
   </tr>
   <tr>
-   <td colname="col1"> Förbättringar av <a href="/help/analyze/analysis-workspace/visualizations/c-flow/flow-settings.md"  ><b>flöden</b> </a> </td>
+   <td colname="col1"> Förbättringar av <a href="/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md"  ><b>flöden</b> </a> </td>
    <td colname="col2">
     <ul id="ul_54675DB3F59E4B24AF0C8F6E6AB2F3C1">
      <li id="li_DEF7D9BF03CD4A2D86A4BDD89FB3731A">En ny visualiseringsinställning med namnet <span class="wintitle">Inaktivera etikettförkortning</span> (standard = avmarkerad) har lagts till. </li>

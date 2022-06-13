@@ -4,7 +4,7 @@ description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättni
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 716b57203cd15ec646792ce1cf5ca47340c23421
+source-git-commit: c728df537c543eb171ba74e72b158f4200f1e828
 workflow-type: tm+mt
 source-wordcount: '3143'
 ht-degree: 40%
@@ -157,7 +157,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 13 juni 2019 | Nya färdiga filter har lagts till i den vänstra fältsökningen i Workspace. Utöver det som redan finns (mått, mätvärden, godkända med mera) har vi lagt till nya filter, som beräknade värden, kundattribut, evariabler, egenskaper och video, för att det ska vara enklare att hitta de komponenter du behöver. |
 | 4 juni 2019 | Ny handbok har skrivits med namnet [Migrera från en analysplattform från tredje part till Adobe Analytics](/help/technotes/ga-to-aa/home.md). |
 | 30 maj 2019 | [Referensen för datafeed-kolumner](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) har setts över. |
-| 09 maj 2019 | En ny inställning har lagts till i inställningarna för flödesvisualisering: Inkludera upprepade förekomster. Se [Flödesinställningar](/help/analyze/analysis-workspace/visualizations/c-flow/flow-settings.md) |
+| 09 maj 2019 | En ny inställning har lagts till i inställningarna för flödesvisualisering: Inkludera upprepade förekomster. Se [Flödesinställningar](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md) |
 | 11 apr 2019 | Förbättringar av de bästa sätten att optimera arbetsytan: [Optimera prestanda](/help/analyze/analysis-workspace/new-features-in-analysis-workspace.md) |
 | 11 apr 2019 | Uppdateringar av [Optimera Workspace-prestanda](/help/analyze/analysis-workspace/workspace-faq/optimizing-performance.md). |
 | 14 mars 2019 | Större uppdatering av [Regional datainsamling](/help/technotes/rdc/regional-data-collection.md). |
