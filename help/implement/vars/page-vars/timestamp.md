@@ -3,9 +3,9 @@ title: tidsstämpel
 description: Ange tidsstämpeln för träffen manuellt.
 feature: Variables
 exl-id: 9d5ce5ef-2d84-4f65-b2e3-7aa3e219bc34
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 8ff414efff302adfee42f192e781a8dec5c42902
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ The `timestamp` variabeln ställer in tidsstämpeln för träffen för tidsstäm
 >[!WARNING]
 >
 >Använd inte den här variabeln om rapportsviten inte uttryckligen har konfigurerats för att acceptera tidsstämplade träffar. AppMeasurement ställer automatiskt in tiden för en träff för rapportsviter som inte stöder tidsstämplade träffar. Om du skickar en träff med den här variabeln till en rapportserie som inte stöder tidsstämplar, kommer dessa data att gå förlorade permanent.
+
+## Tidsstämpla med Web SDK
+
+Tidsstämpeln är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `_experience.analytics.session.timestamp`. Det här fältet har bara stöd för Unix-tid.
 
 ## Tidsstämpla med Adobe Analytics-tillägget
 

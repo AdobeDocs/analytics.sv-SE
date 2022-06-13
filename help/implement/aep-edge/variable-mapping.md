@@ -2,7 +2,7 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 8ff414efff302adfee42f192e781a8dec5c42902
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 0%
@@ -114,7 +114,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `productListItems[].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. |
 | `web.webInteraction.URL` | The [linkURL](../vars/config-vars/linkurl.md) implementeringsvariabel. |
 | `web.webInteraction.name` | The [Egen länk](../../components/dimensions/custom-link.md), [Hämta länk](../../components/dimensions/download-link.md), eller [Avsluta länk](../../components/dimensions/exit-link.md) dimension, beroende på värdet i `web.webInteraction.type` |
-| `web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `lnk_o` (Anpassade länkar), `lnk_d` (Hämta länkar) och `lnk_e` (Avsluta länkar). |
+| `web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar). |
 | `web.webPageDetails.URL` | The [Sidans URL](../../components/dimensions/page-url.md) dimension. |
 | `web.webPageDetails.errorPage` | Flagga som hjälper till att fastställa &quot;Sidor som inte hittas&quot; [dimension](../../components/dimensions/pages-not-found.md) och [mått](../../components/metrics/pages-not-found.md). |
 | `web.webPageDetails.name` | The [Sida](../../components/dimensions/page.md) dimension. |

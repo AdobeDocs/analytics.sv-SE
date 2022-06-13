@@ -3,9 +3,9 @@ title: tl
 description: Skicka ett länkspårningsanrop till Adobe.
 feature: Variables
 exl-id: 470662b2-ce07-4432-b2d5-a670fbb77771
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 8ff414efff302adfee42f192e781a8dec5c42902
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,11 @@ If [`trackDownloadLinks`](../config-vars/trackdownloadlinks.md) eller [`trackExt
 
 ## Länkspårning med Web SDK
 
-Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. båda använder `sendEvent` -kommando. Om du vill att Adobe Analytics ska räkna en viss händelse som ett länkspårningsanrop måste du se till att dina XDM-data innehåller `web.webInteraction.name`, `web.webInteraction.URL`och `web.webInteraction.type`.
+Web SDK skiljer inte mellan sidvisningsanrop och länkspårningsanrop. båda använder `sendEvent` -kommando. Om du vill att Adobe Analytics ska räkna en viss XDM-händelse som ett länkspårningsanrop, kontrollerar du att dina XDM-data innehåller eller är mappade till `web.webInteraction.name`, `web.webInteraction.URL`och `web.webInteraction.type`.
+
+* Länka namn mappar till `web.webInteraction.name`.
+* Länka URL-mappar till `web.webInteraction.URL`.
+* Länka typmappningar till `web.webInteraction.type`. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar).
 
 ```js
 alloy("sendEvent", {
