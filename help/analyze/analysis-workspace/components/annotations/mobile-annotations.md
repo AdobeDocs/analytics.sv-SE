@@ -2,11 +2,11 @@
 title: 'Mobil styrkortsanteckning    '
 description: Lär dig hur du visar kommentarer i mobila styrkort.
 role: User, Admin
-solution: Customer Journey Analytics
+solution: Adobe Analytics
 feature: Components
-source-git-commit: 6f0d92a85003537447821687bf5385b1690dc33f
+source-git-commit: 36314f34c74eb2d8e30a7f06f785a3acd53ddd02
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
