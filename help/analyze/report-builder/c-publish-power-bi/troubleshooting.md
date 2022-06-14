@@ -4,10 +4,10 @@ title: Felsöka Power BI-integrering
 feature: Report Builder
 role: User, Admin
 exl-id: adb13a0e-99fb-48f5-add2-204d155e467f
-source-git-commit: b98fbf52ab9fefef9c19e82f440ca9f5a81f933f
+source-git-commit: a30564e9d8969457aaa8709c3aa3c17ba6d0a2d3
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,23 +45,4 @@ Administratörer beviljade åtkomst för var och en genom att använda följande
 
 ## API-gränsen nås
 
-Rapportering i Power BI fungerar med API:t för analysrapportering, så API-tröskelvärden gäller. För API:erna i Analytics 2.0 är begränsningen satt till 120 anrop per minut och användare, oavsett rapporteringsprogram eller företag. När begränsningen överskrids returnerar servern en HTTP 429-status till användaren med följande meddelandeinnehåll:
-
-```
-too many requests
-{"error_code":"429050","message":"Too many requests"}
-```
-
-Adobe rekommenderar att du *anpassa till* följande riktlinjer:
-
-* Gör flera mindre förfrågningar istället för en stor, enda förfrågan.
-* Begär data en gång och cachelagra dem.
-* Fråga inte efter nya data snabbare än med 30 minuters intervall.
-* Hämta historiska data och öka dem regelbundet i stället för att begära hela datauppsättningen.
-
-Adobe rekommenderar att du *undvik* följande:
-
-* Begär så mycket data som möjligt i en enda begäran
-* Begär ett års data i daglig kornighet varje dag för att få ett rullande 12-månaders fönster. Adobe rekommenderar att du istället begär den nya dagens data och sammanfogar dem med befintliga data från tidigare dagar.
-* Skapa en webbsida med en webbplatsens prestandawidget genom att göra en API-begäran varje gång webbsidan läses in
-* Migrera från 1.4
+Rapportering i Power BI fungerar med API:t för analysrapportering, så API-tröskelvärden gäller. Mer information finns i [Vad är hastighetsbegränsningen för API-anrop?](https://developer.adobe.com/analytics-apis/docs/2.0/guides/faq/#what-is-the-rate-limit-for-api-calls).
