@@ -4,10 +4,10 @@ description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättni
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: c728df537c543eb171ba74e72b158f4200f1e828
+source-git-commit: 94e9f0688de4dd5b3d2a36d8eb68b0963bc67071
 workflow-type: tm+mt
-source-wordcount: '3143'
-ht-degree: 40%
+source-wordcount: '3303'
+ht-degree: 38%
 
 ---
 
@@ -23,6 +23,12 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Datum | Beskrivning |
 | --- | --- |
+| **Juni 2022** |  |
+| Uppdaterad dokumentation om visualisering av flöde | Baserat på [nytt användargränssnitt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/flow/create-flow.html?lang=en) |
+| Dokumentation om att dela anteckningar i mobilstyrkort | Du kan visa [anteckningar som har skapats i Workspace - i Mobile Scorecards](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/mobile-annotations.html). |
+| Dokumentation om produktsyntaxversion av Merchandising Variables med Edge Collection | Nu kan du ställa in variabler för försäljning med hjälp av motsvarande produktsyntax genom att ställa in relevanta XDM-fält. Läs mer om produktsyntax för variabler [här](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en). Se mappningarna för produktsyntax [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en#aep-edge). |
+| **Maj 2022** |  |
+| Fylla i livscykeldimensioner och mätvärden med Experience Edge | Mobila livscykeldata som skickas via Experience Edge visas nu i analysrapporter. I dokumentationen finns mer information om vilka XDM-fält som mappar till befintlig mobil Lifecycle-rapportering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) |
 | **April 2022** |  |
 | Uppdateringar av Adobe Analytics landningssida | Uppdateringar av leden [Startsida för arbetsyta/rapporter och analyser](/help/analyze/landing.md) som förbättrar användbarheten och underlättar navigeringen. |
 | Nytt ämne [!UICONTROL Page Summary] panel | [Panelen Sidsammanfattning](/help/analyze/analysis-workspace/c-panels/page-summary.md) |
