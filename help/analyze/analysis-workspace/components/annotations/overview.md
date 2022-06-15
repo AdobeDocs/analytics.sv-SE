@@ -5,7 +5,7 @@ role: User, Admin
 solution: Analytics
 feature: Annotations
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: 7fef9d7e31d5611b981b6edba6cd49d66f916725
+source-git-commit: 383a38e90cacf31ae92122b9e96845e5cd2950b6
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Som standard kan bara administratörer skapa anteckningar. Användare har rätt 
 
 Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analysverktyg) till användare via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=en).
 
-## Aktivera eller inaktivera anteckningar {#on-off}
+## Aktivera eller inaktivera anteckningar {#annotations-on-off}
 
 Anteckningar kan aktiveras och avaktiveras på flera nivåer:
 
