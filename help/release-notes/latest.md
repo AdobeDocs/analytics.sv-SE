@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: d6456064e6fb0f78f1b3c1beda5ff288c33f6d71
+source-git-commit: 29f152bf1724c566da69598f35929ee3b502b7f9
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1077'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 | **Dela anteckningar i Mobile Scorecards** | Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/mobile-annotations.html?lang=en) | 15 juni 2022 |
 | **Stöd för produktsyntaxversion av Merchandising Variables med Edge Collection** | Nu kan du ställa in variabler för försäljning med hjälp av motsvarande produktsyntax genom att ställa in relevanta XDM-fält. Läs mer om produktsyntax för variabler [här](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en). Se mappningarna för produktsyntax [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en#aep-edge). | 15 juni 2022 |
 | **Fylla i livscykeldimensioner och mätvärden med Experience Edge** | Mobila livscykeldata som skickas via Experience Edge visas nu i analysrapporter. I dokumentationen finns mer information om vilka XDM-fält som mappar till befintlig mobil Lifecycle-rapportering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) | 27 maj 2022 |
-| **Bearbetningsregler för mobiltjänster som är tillgängliga i analysbearbetningsregler** | Adobe Mobile Services upphör den 31 december 2022. Befintliga bearbetningsregler som skapats eller genererats av Adobe Mobile Services migreras automatiskt till Adobe Analytics bearbetningsregler. De kan hanteras, men kan inte längre redigeras i Mobiltjänster förrän produkten har solnedgång. Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst. [Läs mer](https://experienceleague.adobe.com/docs/mobile-services/using/eol.html?lang=en) | 15 juni 2022 |
+| **Bearbetningsregler för mobiltjänster som är tillgängliga i analysbearbetningsregler** | Adobe Mobile Services upphör den 31 december 2022. Befintliga bearbetningsregler som skapats eller genererats av Adobe Mobile Services migreras automatiskt till Adobe Analytics bearbetningsregler, där du kan redigera och hantera dem. De kan hanteras, men kan inte längre redigeras i Mobiltjänster förrän produkten har solnedgång. Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst. [Läs mer](https://experienceleague.adobe.com/docs/mobile-services/using/eol.html?lang=en) | 15 juni 2022 |
 | **Ny klassificeringsupplevelse - fas 1** | Den här stegvisa releasen av en ny användarupplevelse för klassificeringsuppsättningar ökar synligheten i kundägda klassificeringsdata avsevärt. [Allmän tillgänglighet](/help/release-notes/releases.md) beräknas vara tidigt 2023. | Begränsad testning börjar 15 juni 2022 |
 
 {style=&quot;table-layout:auto&quot;}
