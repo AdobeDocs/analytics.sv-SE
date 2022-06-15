@@ -1,22 +1,19 @@
 ---
-title: 'Mobil styrkortsanteckning    '
+title: Mobil styrkortsanteckning
 description: Lär dig hur du visar kommentarer i mobila styrkort.
 role: User, Admin
 solution: Analytics
 feature: Components
-source-git-commit: bb6b14e2b44c0e83e6f1f0bbc5914eb86c09adc1
+exl-id: d8212ab1-d639-41b5-b28e-da580a3628b0
+source-git-commit: 0e7a9aa92c8c5b61fffae96d42bd1b258920e99d
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
 
 # Dela anteckningar i mobila styrkort
-
->[!NOTE]
->
->Den här funktionen är för närvarande [begränsad testning](/help/release-notes/releases.md).
 
 Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics.
 
@@ -32,17 +29,17 @@ Mer information om hur du skapar anteckningar finns i [Skapa anteckningar](creat
 
 1. Välj **Visa anteckningar** för att visa anteckningen i mobila styrkort.
 
-![](assets/show-annotations.png)
+<img src="assets/show-annotations.png"  width="75%">
 
 1. Bekräfta att visa anteckningar är markerat, gå till **Projekt** > **Projektinformation och inställningar**.
 
-![](assets/project-info-settings.png)
+<img src="assets/project-info-settings.png" width="40%">
 
 ## Visa anteckningar i mobila styrkort
 
 När anteckningar är aktiverade visas anteckningsikoner i styrkortsverktyget. Anteckningar visas bara i diagram och tabeller i den detaljerade vyn. Anteckningar visas inte i styrkortets huvudsida.
 
-![](assets/view-annotations.png)
+<img src="assets/view-annotations.png"  width="75%">
 
 När anteckningsikoner visas kan du inte helt visa eller interagera med anteckningar på arbetsytan i verktyget. Använd förhandsgranskningsläget för att visa och interagera med anteckningar så som de visas i programmet. ![](assets/preview-icon.png)
 
@@ -52,6 +49,6 @@ Anteckningsfärger markeras när anteckningen skapas i arbetsytan. Grå anteckni
 
 | Datum | Utseende |
 | --- | --- |
-| **En dag** | ![](assets/single-day-mobile-annotations.png)<br></br> |
-| **Datumintervall** | ![](assets/date-range.png) |
-| **Överlappande anteckningar** | ![](assets/overlapping-annotations.png)<br></br>Om du vill visa anteckningsinformation i kontrollpanelsappen för Analytics trycker du på en anteckningsikon. <br></br>När du visar en anteckning i ett diagram kan du svepa åt vänster och höger för att navigera bland alla anteckningar som finns i diagrammet. När du visar en anteckning i tabellen sveper du åt vänster och höger för att navigera i alla anteckningar som är kopplade till det radobjektet i tabellen. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>I diagram som inte har tidsbaserade *x-axel*, t.ex. munnen eller vågräta stapeldiagram, kan anteckningar som gäller diagrammet visas genom att man trycker på ikonen längst ned till höger.<br></br> ![](assets/charts-without-timebase.png) |
+| **En dag** | <img src="assets/single-day-mobile-annotations.png"  width="30%"><br></br> |
+| **Datumintervall** | <img src="assets/date-range.png"  width="30%"> |
+| **Överlappande anteckningar** | <img src="assets/overlapping-annotations.png"  width="30%"><br></br>Om du vill visa anteckningsinformation i kontrollpanelsappen för Analytics trycker du på en anteckningsikon. <br></br>När du visar en anteckning i ett diagram kan du svepa åt vänster och höger för att navigera bland alla anteckningar som finns i diagrammet. När du visar en anteckning i tabellen sveper du åt vänster och höger för att navigera i alla anteckningar som är kopplade till det radobjektet i tabellen. <br></br><img src="assets/swipe-multiple-annotations.png"  width="30%"> <br></br>I diagram som inte har tidsbaserade *x-axel*, t.ex. munnen eller vågräta stapeldiagram, kan anteckningar som gäller diagrammet visas genom att man trycker på ikonen längst ned till höger.<br></br> <img src="assets/charts-without-timebase.png"  width="30%"> |
