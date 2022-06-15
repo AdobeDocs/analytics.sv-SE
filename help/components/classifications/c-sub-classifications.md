@@ -1,16 +1,16 @@
 ---
 description: Adobe Analytics har stöd för både klassificeringsmodeller på en och flera nivåer. Med en klassificeringshierarki kan du tillämpa en klassificering på en klassificering.
-title: Om underklassificeringar
+title: Underklassificeringar
 feature: Classifications
 exl-id: 3d22a8c0-743d-47f3-ba15-aaef1ebd4dff
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 611f20718c0af133f2daf3fe44e8a5b9ea97336b
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '642'
 ht-degree: 7%
 
 ---
 
-# Om underklassificeringar
+# Underklassificeringar
 
 Adobe Analytics har stöd för både klassificeringsmodeller på en och flera nivåer. Med en klassificeringshierarki kan du tillämpa en klassificering på en klassificering.
 
@@ -88,6 +88,6 @@ När du överför datafiler för den här produktklassificeringen kan du överf�
 
 | NYCKEL | KOD | KOD^FÄRG |
 |---|---|---|
-| * | 01 | Sten |
-| * | 03 | Sidhuvud |
-| * | 23 | Turkos |
+| &#42; | 01 | Sten |
+| &#42; | 03 | Sidhuvud |
+| &#42; | 23 | Turkos |

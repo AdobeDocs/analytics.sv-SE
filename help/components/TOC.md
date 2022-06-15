@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera era data med komponenter som segment, beräknade mätvärden, virtuella rapportsviter, varningar, marknadsföringskanaler, klassificeringar och lär dig mer om enhetsövergripande analyser.
-source-git-commit: 70a1d61a6e9af27c449876ac4cf4d7504659be3a
+source-git-commit: 2ef658933af7902d67dc14e52f7e610e02e18044
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 50%
+source-wordcount: '693'
+ht-degree: 49%
 
 ---
 
@@ -227,6 +227,18 @@ ht-degree: 50%
    + [Intelligenta aviseringar – användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
    + [Översikt över klassificeringar](classifications/c-classifications.md)
+   + Klassificeringsuppsättningar {#sets}
+      + [Översikt över klassificeringsuppsättningar](classifications/sets/overview.md)
+      + [Klassificeringsuppsättningshanteraren](classifications/sets/set-manager.md)
+      + [Jobbhanterare för klassificeringsuppsättning](classifications/sets/job-manager.md)
+      + [Skapa en klassificeringsuppsättning](classifications/sets/create.md)
+      + [Inställningar för klassificeringsuppsättning](classifications/sets/settings.md)
+   + Classification Rule Builder {#classifications-rulebuilder}
+      + [Arbetsflöde för Classification Rule Builder](classifications/crb/classification-rule-builder.md)
+      + [Uppsättningar med klassificeringsregler](classifications/crb/classification-rule-set.md)
+      + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
+      + [Klassificeringsregler – definitioner](classifications/crb/classification-rule-definitions.md)
+      + [Underklassificeringar och Rule Builder](classifications/crb/sub-classification-rule-builder.md)
    + Klassificeringsimportör {#classifications-importer}
       + [Importera klassificeringar – översikt](classifications/importer/c-working-with-saint.md)
       + [Datafiler för klassificering](classifications/importer/c-saint-data-files.md)
@@ -241,12 +253,6 @@ ht-degree: 50%
       + [FTP-export](classifications/importer/ftp-export.md)
       + [Bearbetningstid](classifications/importer/processing-time.md)
       + [Felsökning](classifications/importer/troubleshooting.md)
-   + Classification Rule Builder {#classifications-rulebuilder}
-      + [Arbetsflöde för Classification Rule Builder](classifications/crb/classification-rule-builder.md)
-      + [Uppsättningar med klassificeringsregler](classifications/crb/classification-rule-set.md)
-      + [Klassificeringsregler](classifications/crb/classification-quickstart-rules.md)
-      + [Klassificeringsregler – definitioner](classifications/crb/classification-rule-definitions.md)
-      + [Underklassificeringar och Rule Builder](classifications/crb/sub-classification-rule-builder.md)
    + [Underklassificeringar](classifications/c-sub-classifications.md)
    + [Vanliga frågor om klassificeringar](classifications/faq.md)
 + [Kalenderhändelser](t-calendar-event.md)
