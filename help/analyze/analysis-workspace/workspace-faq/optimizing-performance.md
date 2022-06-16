@@ -4,9 +4,9 @@ title: Analysis Workspace prestandafaktorer och optimering
 feature: Workspace Basics
 role: User, Admin
 exl-id: 7a675f53-2774-4c7b-af1b-79e52e7d5cfb
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: 568000a7da84301f8a7c5a48a68a146e4af5f105
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '1943'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,6 @@ Ytterligare faktorer som inte finns med i Hjälp > Prestanda är:
 | Visualiseringskomplexitet (segment, mätvärden, filter) | Den typ av visualisering (t.ex. bortfall jämfört med frihandstabell) som läggs till i ett projekt påverkar inte projektets prestanda särskilt mycket. Det är komplexiteten i den visualisering som kommer att öka bearbetningstiden. | Faktorer som gör en visualisering mer komplicerad:<ul><li>Intervall med begärda data</li><li>Antal segment som används. till exempel segment som används som rader i en frihandstabell</li><li>Användning av komplexa segment</li><li>[Statiskt objekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.html) rader eller kolumner i frihandstabeller</li><li>Filter som används på rader i frihandstabeller</li><li>Antal mätvärden som ingår, särskilt beräknade mätvärden som använder segment</li></ul> | Om du märker att dina projekt inte läses in så snabbt du vill kan du ersätta vissa segment med eVars och Filter där det är möjligt.<br><br>Om ni kontinuerligt använder segment och beräknade värden för datapunkter som är viktiga för ert företag bör ni förbättra er implementering för att hämta in dessa datapunkter mer direkt. Om du använder taggar i Adobe Experience Platform- och Adobe-bearbetningsregler kan implementeringsändringarna göras snabbt och enkelt. |
 | Rapportsvitens storlek | Mängden data som samlas in i rapportsviten. | - | Kontakta ditt implementeringsteam eller en Adobe-expert för att ta reda på om det finns implementeringsförbättringar som kan göras för att förbättra den övergripande upplevelsen i Adobe Analytics. |
 | Samtidiga frågor | Antalet frågor som din organisation begär till Adobe samtidigt. Varje organisation har rätt till minst fem samtidiga frågor. | Om en rapport tar lång tid beror det oftast på att den är i kö tillsammans med andra rapporter. Det innebär att din organisation försöker köra många samtidiga begäranden mot en viss rapportserie. Frågor kan komma från API-begäranden, rapportgränssnitt (Analysis Workspace, Rapporter och analyser, Report Builder, osv.), schemalagda projekt, schemalagda rapporter, schemalagda aviseringar och samtidiga användare som gör rapportförfrågningar. | Sprid era förfrågningar och scheman för rapportsviten jämnare under hela dagen. Du kan även ändra dina förfrågningar till lågbelastningstider när det är möjligt. Månadsmorgar, tisdagsmorgon och den första varje månad är de bästa rapporteringstiderna. |
-| Datacenterkapacitet | Den rapporteringskapacitet som ni och andra kunder delar inom ett datacenter i Adobe. | Detta påverkas av antalet samtidiga frågor som har ställts av din organisation och andra organisationer i ditt datacenter. | Din organisation har rätt till en fast kapacitet, och om systemet är belastat med ljus kommer Adobe att lägga mer kapacitet till dig, över och efter din rätt till ersättning. |
 
 ## Tips för att öka produktiviteten i Analysis Workspace
 
