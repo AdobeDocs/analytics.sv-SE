@@ -3,20 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 95f05bbf620c140f3e17a070d95b21b62db58bcc
+source-git-commit: 4df57547229c9dd0f70066dd1e9ca64947eabf13
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1073'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (juni 2022)
 
->[!NOTE]
->
->Den här sidan innehåller information om förhandsversioner och kan komma att ändras.
-
-**Senaste uppdatering**: 15 juni 2022
+**Senaste uppdatering**: 16 juni 2022
 
 ## Relaterade resurser
 
@@ -29,7 +25,7 @@ ht-degree: 2%
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
-| **Nytt gränssnitt för visualisering av flöde** | Ger ytterligare funktionalitet i vår Flow-visualisering så att den blir kraftfullare och mer funktionell. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/flow/create-flow.html?lang=en) | 15 juni 2022 |
+| **Nytt gränssnitt för visualisering av flöde** | Ger ytterligare funktionalitet i vår Flow-visualisering så att den blir kraftfullare och mer funktionell. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/flow/create-flow.html?lang=en) | utrullningen börjar 15 juni 2022, GA senast 27 eller 28 juni 2022 |
 | **Dela anteckningar i Mobile Scorecards** | Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/mobile-annotations.html?lang=en) | 15 juni 2022 |
 | **Stöd för produktsyntaxversion av Merchandising Variables med Edge Collection** | Nu kan du ställa in variabler för försäljning med hjälp av motsvarande produktsyntax genom att ställa in relevanta XDM-fält. Läs mer om produktsyntax för variabler [här](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en). Se mappningarna för produktsyntax [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en#aep-edge). | 15 juni 2022 |
 | **Fylla i livscykeldimensioner och mätvärden med Experience Edge** | Mobila livscykeldata som skickas via Experience Edge visas nu i analysrapporter. I dokumentationen finns mer information om vilka XDM-fält som mappar till befintlig mobil Lifecycle-rapportering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) | 27 maj 2022 |
