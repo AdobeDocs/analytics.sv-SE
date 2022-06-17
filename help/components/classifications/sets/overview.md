@@ -1,13 +1,13 @@
 ---
 title: Översikt över klassificeringsuppsättningar
 description: Använd Klassificeringsuppsättningar för att hantera klassificeringsdata.
-source-git-commit: 2ef658933af7902d67dc14e52f7e610e02e18044
+exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
+source-git-commit: a1f199525c567bc9d7bb614ee03980f582cbbc7a
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
-
 
 # Översikt över klassificeringsuppsättningar
 

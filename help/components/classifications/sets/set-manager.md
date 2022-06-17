@@ -1,13 +1,13 @@
 ---
 title: Klassificeringsuppsättningshanteraren
 description: Hantera klassificeringsuppsättningar i Adobe Analytics.
-source-git-commit: fae00c7ba48d9595628f68e63fd16e37a6a4c84a
+exl-id: b1a6721b-8e5d-4ee6-af6b-cda31c9f8b00
+source-git-commit: a1f199525c567bc9d7bb614ee03980f582cbbc7a
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # Klassificeringsuppsättningshanteraren
 
@@ -41,7 +41,7 @@ Följande knappar är tillgängliga i Klassificeringsuppsättningshanteraren:
 
 * **[!UICONTROL Add]**: [Skapa](create.md) en klassificeringsuppsättning.
 * **[!UICONTROL Search by title]**: Sök efter klassificeringsuppsättningar efter namn.
-* **[!UICONTROL Load more]**: Klassificeringsuppsättningshanteraren visar ursprungligen upp till 1 000 klassificeringsuppsättningar. Klicka på den här knappen om du vill läsa in ytterligare 1 000 klassificeringsuppsättningar.
+* **[!UICONTROL Load more]**: Klassificeringsuppsättningshanteraren visar först upp till 1 000 klassificeringsuppsättningar. Klicka på den här knappen om du vill läsa in ytterligare 1 000 klassificeringsuppsättningar.
 * **Visa/dölj kolumner**: Växla synlighet för alla kolumner förutom [!UICONTROL Classification Set].
 
 Markera en eller flera klassificeringsuppsättningar genom att klicka i kryssrutan bredvid önskad klassificeringsuppsättning. Om du väljer en klassificeringsuppsättning visas följande alternativ:
