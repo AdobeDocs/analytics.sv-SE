@@ -4,10 +4,10 @@ title: Felsöka Power BI-integrering
 feature: Report Builder
 role: User, Admin
 exl-id: adb13a0e-99fb-48f5-add2-204d155e467f
-source-git-commit: a30564e9d8969457aaa8709c3aa3c17ba6d0a2d3
+source-git-commit: f6f65f34c4d8caf04eb3ea47108e36e5b9adf24f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '405'
+ht-degree: 1%
 
 ---
 
@@ -45,4 +45,4 @@ Administratörer beviljade åtkomst för var och en genom att använda följande
 
 ## API-gränsen nås
 
-Rapportering i Power BI fungerar med API:t för analysrapportering, så API-tröskelvärden gäller. Mer information finns i [Vad är hastighetsbegränsningen för API-anrop?](https://developer.adobe.com/analytics-apis/docs/2.0/guides/faq/#what-is-the-rate-limit-for-api-calls).
+Rapportering i Power BI fungerar med API:t för analysrapportering, så API-tröskelvärden gäller. Mer information finns i [Felkoder för webbtjänster](https://github.com/AdobeDocs/analytics-1.4-apis/blob/3dda746890743c2098256719d6595109b7748262/docs/getting-started/c_Web_Services_Error_Codes.md).
