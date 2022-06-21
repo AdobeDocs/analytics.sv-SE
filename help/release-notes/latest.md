@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 4df57547229c9dd0f70066dd1e9ca64947eabf13
+source-git-commit: c083c9d62d71dfd2d8a6360f24d8cc40f18f427d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1065'
 ht-degree: 2%
 
 ---
@@ -27,10 +27,10 @@ ht-degree: 2%
 | ----------- | ---------- | ------- |
 | **Nytt gränssnitt för visualisering av flöde** | Ger ytterligare funktionalitet i vår Flow-visualisering så att den blir kraftfullare och mer funktionell. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/flow/create-flow.html?lang=en) | utrullningen börjar 15 juni 2022, GA senast 27 eller 28 juni 2022 |
 | **Dela anteckningar i Mobile Scorecards** | Du kan visa anteckningar som har skapats i Workspace - i Mobile Scorecards. På så sätt kan ni dela kontextuella datanunkter och insikter om organisationen och kampanjer direkt i Mobile Scorecard-projekt, som kan visas i mobilappen för kontrollpaneler i Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/mobile-annotations.html?lang=en) | 15 juni 2022 |
-| **Stöd för produktsyntaxversion av Merchandising Variables med Edge Collection** | Nu kan du ställa in variabler för försäljning med hjälp av motsvarande produktsyntax genom att ställa in relevanta XDM-fält. Läs mer om produktsyntax för variabler [här](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en). Se mappningarna för produktsyntax [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en#aep-edge). | 15 juni 2022 |
+| **Stöd för produktsyntaxversion av Merchandising Variables med Edge Collection** | Nu kan du ställa in variabler för försäljning med hjälp av motsvarande produktsyntax genom att ställa in relevanta XDM-fält. Se [variabeln products](../implement/vars/page-vars/products.md) för mer information om Web SDK-syntaxen med `products` variabel, och [Variabelmappning i analyser i Adobe Experience Edge](../implement/aep-edge/variable-mapping.md) för en fullständig lista över tillgängliga variabler. | 15 juni 2022 |
 | **Fylla i livscykeldimensioner och mätvärden med Experience Edge** | Mobila livscykeldata som skickas via Experience Edge visas nu i analysrapporter. I dokumentationen finns mer information om vilka XDM-fält som mappar till befintlig mobil Lifecycle-rapportering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) | 27 maj 2022 |
 | **Bearbetningsregler för mobiltjänster som är tillgängliga i analysbearbetningsregler** | Adobe Mobile Services upphör den 31 december 2022. Befintliga bearbetningsregler som skapats eller genererats av Adobe Mobile Services migreras automatiskt till Adobe Analytics bearbetningsregler, där du kan redigera och hantera dem. De kan visas, men kan inte längre redigeras i Mobile Services förrän produkten har solnedgång. Om du har ytterligare frågor eller support kan du kontakta Adobe kundtjänst. [Läs mer](https://experienceleague.adobe.com/docs/mobile-services/using/eol.html?lang=en) | 15 juni 2022 |
-| **Ny klassificeringsupplevelse - fas 1** | Den här stegvisa releasen av en ny användarupplevelse för klassificeringsuppsättningar ökar synligheten i kundägda klassificeringsdata avsevärt. [Allmän tillgänglighet](/help/release-notes/releases.md) beräknas vara tidigt 2023. | Begränsad testning börjar 15 juni 2022 |
+| **Klassificeringsuppsättningar - fas 1** | Den här stegvisa releasen av en ny användarupplevelse för klassificeringar ökar synligheten i kundägda klassificeringsdata avsevärt. Se [Klassificeringsuppsättningar](../components/classifications/sets/overview.md) för mer information. | Begränsad testning börjar 15 juni 2022, den allmänna tillgängligheten beräknas vara tidig 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 

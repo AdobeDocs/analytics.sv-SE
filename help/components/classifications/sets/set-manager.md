@@ -2,9 +2,9 @@
 title: Klassificeringsuppsättningshanteraren
 description: Hantera klassificeringsuppsättningar i Adobe Analytics.
 exl-id: b1a6721b-8e5d-4ee6-af6b-cda31c9f8b00
-source-git-commit: a1f199525c567bc9d7bb614ee03980f582cbbc7a
+source-git-commit: 17bde9f5f00d1ddb54a2f9273b55f7e947fe4fef
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,7 @@ Följande kolumner är tillgängliga i Klassificeringsuppsättningshanteraren:
 * **[!UICONTROL Subscriptions]**: Antalet prenumerationer eller antalet rapportsviter som den här klassificeringsuppsättningen gäller för.
 * **[!UICONTROL Owner]**: Ägaren till klassificeringsuppsättningen.
 * **[!UICONTROL Classifications]**: Antalet klassificeringsdimensioner som klassificeringsuppsättningen innehåller.
-* **[!UICONTROL Automated]**: Anger om klassificeringsuppsättningen är konfigurerad att hämta data automatiskt från en FTP-plats.
 * **[!UICONTROL Last Modified]**: Det datum och den tidpunkt då klassificeringsuppsättningen senast ändrades.
-* **[!UICONTROL FTP Host + Path]**: Om det är automatiserat hämtar FTP-platsen som Klassificeringsuppsättningen hämtar data från.
 
 ## Skapa eller redigera alternativ
 
