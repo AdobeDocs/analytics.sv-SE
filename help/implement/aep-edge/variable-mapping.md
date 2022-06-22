@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: f92ad30f2a27f70b8478d55ab71f223cd1c82b24
+source-git-commit: 66724724788c406fff3abf30c711090accd2d632
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -17,35 +17,27 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | --- | --- |
 | `application.id` | Den mobila dimensionen [Program-ID](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
 | `application.isClose` | Hjälper till att definiera mobilmåtten [Krascher](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
-| `application.closeType` | Avgör om en close-händelse är en krasch eller inte. Giltiga värden är `close` (En livscykelsession avslutas och en pause-händelse togs emot för föregående session) och `unknown` (En livscykelsession avslutas utan en pause-händelse). |
+| `application.closeType` | Avgör om en close-händelse är en krasch eller inte. Giltiga värden är `close` (En livscykelsession avslutas och en pause-händelse togs emot för föregående session) och `unknown` (En livscykelsession avslutas utan en pause-händelse). Hjälper dig att ange [Krascher](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics) mätvärden. |
 | `application.isInstall` | Det mobila måttet [Installationer](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
 | `application.isLaunch` | Det mobila måttet [Startar](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
 | `application.name` | Hjälper till att ange mobildimensionen [Program-ID](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
-| `application.launches.value` | Det mobila måttet [Startar](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
 | `application.isUpgrade` | Det mobila måttet [Uppgraderingar](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
 | `application.version` | Hjälper till att ange mobildimensionen [Program-ID](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
-| `application.sessionLength` | Det mobila måttet [Total sessionslängd](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
+| `application.sessionLength` | Det mobila måttet [Längd på föregående session](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
 | `commerce.checkouts.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Utcheckningar](../../components/metrics/checkouts.md) mätvärden. |
 | `commerce.checkouts.value` | Ökar [Utcheckningar](../../components/metrics/checkouts.md) mått med önskad mängd. |
 | `commerce.order.currencyCode` | Anger [currencyCode](../vars/config-vars/currencycode.md) konfigurationsvariabel. |
 | `commerce.order.purchaseID` | Anger [purchaseID](../vars/page-vars/purchaseid.md) sidvariabel. |
-| `commerce.productListAdds.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Cart Additions](../../components/metrics/cart-additions.md) mätvärden. |
-| `commerce.productListAdds.value` | Ökar [Cart Additions](../../components/metrics/cart-additions.md) mått med önskad mängd. |
-| `commerce.productListOpens.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Korgar](../../components/metrics/carts.md) mätvärden. |
-| `commerce.productListOpens.value` | Ökar [Korgar](../../components/metrics/carts.md) mått med önskad mängd. |
-| `commerce.productListRemovals.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Cart Removals](../../components/metrics/cart-removals.md) mätvärden. |
-| `commerce.productListRemovals.value` | Ökar [Cart Removals](../../components/metrics/cart-removals.md) mått med önskad mängd. |
-| `commerce.productListViews.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Vyer](../../components/metrics/cart-views.md) mätvärden. |
-| `commerce.productListViews.value` | Ökar [Vyer](../../components/metrics/cart-views.md) mått med önskad mängd. |
-| `commerce.productViews.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Produktvyer](../../components/metrics/product-views.md) mätvärden. |
-| `commerce.productViews.value` | Ökar [Produktvyer](../../components/metrics/product-views.md) mått med önskad mängd. |
-| `commerce.purchases.value` | Ökar [Beställningar](../../components/metrics/orders.md) mått med önskad mängd. |
-| `device.manufacturer` | Mobilenhetstillverkaren. |
+| `commerce.productListAdds.value` | Ökar [Cart Additions](../../components/metrics/cart-additions.md) mätvärden. |
+| `commerce.productListOpens.value` | Ökar [Korgar](../../components/metrics/carts.md) mätvärden. |
+| `commerce.productListRemovals.value` | Ökar [Cart Removals](../../components/metrics/cart-removals.md) mätvärden. |
+| `commerce.productListViews.value` | Ökar [Vyer](../../components/metrics/cart-views.md) mätvärden. |
+| `commerce.productViews.value` | Ökar [Produktvyer](../../components/metrics/product-views.md) mätvärden. |
+| `commerce.purchases.value` | Ökar [Beställningar](../../components/metrics/orders.md) mätvärden. |
 | `device.model` | Den mobila dimensionen [Enhetsnamn](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
-| `device.modelNumber` | Modellnumret för den mobila enheten. |
 | `device.colorDepth` | Hjälper dig att ange [Färgdjup](../../components/dimensions/color-depth.md) dimension. |
-| `device.screenHeight` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. Se till att du även anger XDM-fältet `device.screenWidth`. |
-| `device.screenWidth` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. Se till att du även anger XDM-fältet `device.screenHeight`. |
+| `device.screenHeight` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. |
+| `device.screenWidth` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. |
 | `device.type` | Typ av mobil enhet. |
 | `environment.browserDetails.acceptLanguage` | Hjälper dig att ange [Språk](../../components/dimensions/language.md) dimension. |
 | `environment.browserDetails.cookiesEnabled` | Anger [Cookie-stöd](../../components/dimensions/cookie-support.md) dimension. Giltiga värden är `Y` (webbläsaren accepterar cookies) och `N` (webbläsaren avvisar cookies). |
@@ -57,9 +49,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `environment.connectionType` | Hjälper dig att ange [Anslutningstyp](../../components/dimensions/connection-type.md) dimension. |
 | `environment.ipV4` | Används som reserv [unik besökare](../../components/metrics/unique-visitors.md) identifieringsmetod. Används vanligtvis med `X-Forwarded-For` HTTP-huvud. |
 | `environment.language` | Mobildimensionen Locale. |
-| `environment.operatingSystem` | Den mobila dimensionen [Operativsystem](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
 | `environment.operatingSystemVersion` | Den mobila dimensionen [Operativsystemsversion](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
-| `environment.type` | Anger om händelsen kom från en [bärbar](https://experienceleague.adobe.com/docs/mobile-services/android/wearables-android/c-android-wearables--additional-notes.html) enhet. Giltiga värden är `Application` (händelsen kom från appen), `Extension` (händelsen kom från den bärbara appen), eller `Widget` (händelsen kom från en mobilwidget). |
 | `_experience.analytics.customDimensions.`<br/>`eVars.eVar1` -<br/>`_experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
 | `_experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Avgränsaren som används för en viss [List Prop](../vars/page-vars/prop.md#list-props). |
 | `_experience.analytics.customDimensions.`<br/>`listProps.prop1.values` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.values` | En strängarray som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props) värden. |
@@ -110,10 +100,10 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `placeContext.geo.stateProvince` | The [USA](../../components/dimensions/us-states.md) dimension. |
 | `productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1` -<br/>`productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till eVars. |
 | `productListItems[]._experience.analytics.`<br/>`event1to100.event1.value` -<br/>`productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till event. |
-| `productListItems[].lineItemId` | The [Kategori](../../components/dimensions/category.md) dimension. |
-| `productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. |
-| `productListItems[].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. |
-| `productListItems[].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. |
+| `productListItems[].lineItemId` | The [Kategori](../../components/dimensions/category.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
+| `productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
+| `productListItems[].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
+| `productListItems[].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
 | `web.webInteraction.URL` | The [linkURL](../vars/config-vars/linkurl.md) implementeringsvariabel. |
 | `web.webInteraction.name` | The [Egen länk](../../components/dimensions/custom-link.md), [Hämta länk](../../components/dimensions/download-link.md), eller [Avsluta länk](../../components/dimensions/exit-link.md) dimension, beroende på värdet i `web.webInteraction.type` |
 | `web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar). |
@@ -127,6 +117,12 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 {style=&quot;table-layout:auto&quot;}
 
 <!-- `environment.browserDetails.javaScriptVersion` and `web.webPageDetails.homePage` were included in the original table, but they no longer exist in Analytics. | -->
+<!--| `commerce.productListAdds.id` | Applies [event serialization](../vars/page-vars/events/event-serialization.md) to the [Cart Additions](../../components/metrics/cart-additions.md) metric. |-->
+<!--| `commerce.productListOpens.id` | Applies [event serialization](../vars/page-vars/events/event-serialization.md) to the [Carts](../../components/metrics/carts.md) metric. |-->
+<!--| `commerce.productListRemovals.id` | Applies [event serialization](../vars/page-vars/events/event-serialization.md) to the [Cart Removals](../../components/metrics/cart-removals.md) metric. |-->
+<!--| `commerce.productListViews.id` | Applies [event serialization](../vars/page-vars/events/event-serialization.md) to the [Cart Views](../../components/metrics/cart-views.md) metric. |-->
+<!--| `commerce.productViews.id` | Applies [event serialization](../vars/page-vars/events/event-serialization.md) to the [Product Views](../../components/metrics/product-views.md) metric. |-->
+<!--| `environment.operatingSystem` | The mobile dimension [Operating System](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |-->
 
 ## Mappa andra XDM-fält till analysvariabler
 
