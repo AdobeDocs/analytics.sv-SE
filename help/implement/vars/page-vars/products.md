@@ -3,7 +3,7 @@ title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 3edb7208f4b11a2fa58a2f7c696444ab998a6bfe
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -22,8 +22,8 @@ The `products` variabelspårar produkter och egenskaper som är knutna till dem.
 
 Produkterna är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under flera XDM-fält:
 
-* Kategorin är mappad till `productListItems[].name`.
-* Produkten är mappad till `productListItems[]._id`.
+* Kategorin är mappad till `productListItems[].lineItemId`.
+* Produkten är mappad till `productListItems[].name`.
 * Kvantitet har mappats till `productListItems[].quantity`.
 * Priset är mappat till `productListItems[].priceTotal`.
 * Merchandising eVars mappas till `productListItems._experience.analytics.customDimensions.eVars.eVar1` till `productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
