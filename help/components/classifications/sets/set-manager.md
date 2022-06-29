@@ -2,9 +2,9 @@
 title: Klassificeringsuppsättningshanteraren
 description: Hantera klassificeringsuppsättningar i Adobe Analytics.
 exl-id: b1a6721b-8e5d-4ee6-af6b-cda31c9f8b00
-source-git-commit: 17bde9f5f00d1ddb54a2f9273b55f7e947fe4fef
+source-git-commit: 3b0e2bbe531692f26ed118b1d2adc0b5ed28a9bf
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Klassificeringsuppsättningshanteraren
 
 Med Klassificeringsuppsättningshanteraren kan du skapa, redigera eller ta bort klassificeringsuppsättningar.
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande i begränsad version. Om du vill ha tillgång till den här funktionen kontaktar du kundtjänst på Adobe eller kontohanteraren som kan vidarebefordra din begäran till klassificeringsgruppen för etablering.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]**
 

@@ -2,9 +2,9 @@
 title: Jobbhanteraren för klassificeringsuppsättning
 description: Visa aktuella och slutförda klassificeringsjobb som genererats från Klassificeringsuppsättningar.
 exl-id: 0470e131-79c6-4906-85f0-530d360ac227
-source-git-commit: a1f199525c567bc9d7bb614ee03980f582cbbc7a
+source-git-commit: 3b0e2bbe531692f26ed118b1d2adc0b5ed28a9bf
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Jobbhanterare för klassificeringsuppsättning
 
 Med jobbhanteraren för klassificeringsuppsättning kan du visa aktuella och slutförda klassificeringsjobb som genererats från klassificeringsuppsättningar. Du kan också använda det här gränssnittet för att hämta klassificeringsdata eller mallar för ett visst jobb, eller överföra ytterligare data till ett jobb.
+
+>[!NOTE]
+>
+>Den här funktionen är för närvarande i begränsad version. Om du vill ha tillgång till den här funktionen kontaktar du kundtjänst på Adobe eller kontohanteraren som kan vidarebefordra din begäran till klassificeringsgruppen för etablering.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Jobs]**
 
