@@ -4,36 +4,42 @@ title: Mätvärden i Analysis Workspace
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 56fd6dd8450df3ffea78154fafa1e858d5a653a7
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 5%
+source-wordcount: '396'
+ht-degree: 1%
 
 ---
 
 # Mätvärden
 
-Det finns två sätt att använda mätvärden i Analysis Workspace.
+Med hjälp av mätvärden kan du kvantifiera datapunkter i Analysis Workspace. De används oftast som kolumner i en visualisering och är knutna till dimensioner.
 
-* Du kan antingen dra en standardmall för mått, beräknade värden eller beräknade värden från [!UICONTROL Components] till tabellen:
+Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace:
 
-   ![](assets/metrics_icons.png)
+* **Standardmått**: De flesta mätvärden som används i projekt är standardvärden. Exempel [Sidvyer](/help/components/metrics/page-views.md), [Intäkter](/help/components/metrics/revenue.md), eller [Anpassade händelser](/help/components/metrics/custom-events.md). Se [Översikt över mätvärden](/help/components/metrics/overview.md) i användarhandboken för Komponenter om du vill ha mer information.
 
-   >[!NOTE]
-   >
-   >Även om detta ser enkelt ut är användningen av mätvärden ganska kraftfull. Du kan lägga till mätvärden i en rapport genom att dra lämpliga mätvärden till måttavsnittet i en tabell. Du kan också dela upp mått efter mått och på så sätt få detaljkontroll över tabellvyn. Dessutom kan du infoga ett mått som en dimension och en dimension som ett mått för att skapa en övertidsrapport. Lek med de olika komponenterna och se vad du kan göra. Möjligheterna är oändliga.
+   ![Standardmått](assets/standard-metric.png)
 
-* Du kan också klicka **[!UICONTROL Components]** > **[!UICONTROL New Metric]**. Det här tar dig till [Beräknad metrisk Builder](/help/components/c-calcmetrics/cm-overview.md), där ni kan bygga anpassade mätvärden utifrån befintliga mätvärden.
+* **Beräknade mått**: Användardefinierade mätvärden som bygger på standardvärden, statiska tal eller algoritmiska funktioner. Användardefinierade beräknade värden visar en räkneikon i listan över tillgängliga komponenter. Se [Översikt över beräknade värden](/help/components/c-calcmetrics/cm-overview.md) i användarhandboken för Komponenter om du vill ha mer information.
 
-Här är en video om hur du arbetar med mätvärden i en Freeform-tabell:
+   ![Beräknat mätvärde](assets/calculated-metric.png)
+
+* **Mallar för beräknade mätvärden**: Adobe-definierade mått som beter sig på liknande sätt som beräknade värden. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa dess logik. Mallar för beräknade mätvärden visar en Adobe-ikon i listan över tillgängliga komponenter.
+
+   ![Mallen Beräknade mätvärden](assets/calculated-metric-template.png)
+
+Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod. Du kan också dra ett mått när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt. Om du drar ett mätresultat över ett befintligt måtthuvud ersätts det och om du drar ett mätvärde bredvid ett huvud kan du se båda mätvärdena sida vid sida.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40817/?quality=12)
 
 ## Beräknade värden
 
-För att göra det enklare att snabbt skapa beräknade mätvärden **[!UICONTROL Create metric from selection]** har lagts till på högerklicksmenyn i frihandstabeller i kolumnen. Det här alternativet visas när en eller flera rubrikkolumnceller är markerade.
+Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner. Det finns flera sätt att skapa beräknade mått:
 
-![](assets/calc_metrics.png)
+* Klicka på plusikonen bredvid måtthuvudet under komponentlistan till vänster.
+* Navigera till **[!UICONTROL Componets]** > **[!UICONTROL Calculated Metrics]** > **[!UICONTROL Add]**.
+* Högerklicka på en kolumnrubrik > **[!UICONTROL Create metric from selection]** när en eller flera rubrikkolumnceller är markerade. Med det här alternativet skapas automatiskt ett beräknat mått utan att du behöver använda verktyget för att skapa beräkningsmetrisk regel.
 
 [Beräknade mått: Implementeringsfria mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
