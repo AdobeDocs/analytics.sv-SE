@@ -3,14 +3,16 @@ title: Anledning till avanmälan av spårning
 description: Förhandsgranskar vilka data som skulle uteslutas om du aktiverade sekretessinställningar.
 feature: Dimensions
 exl-id: f0521f4f-b11e-4ce3-b0fe-60788be6b120
-source-git-commit: 4c896fe930b52e440f8b91725fa6451faaa76fc8
+source-git-commit: b7209b914695423099266f5c507eaa34c2b98bc5
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 # Anledning till avanmälan av spårning
+
+*Den här sidan hänvisar till den dimension som gör att du kan se möjliga dataeffekter av att aktivera vissa inställningar för Report Suite. Den är inte relaterad till [Adobe Experience Cloud ID-anmälningstjänst](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html).*
 
 Dimensionen Anledning till avanmälan av spårning fungerar som en förhandsgranskning av data som skulle uteslutas om du aktiverade sekretessinställningar. Den här dimensionen används främst för att avgöra om implementeringen skulle påverkas negativt om du aktiverade den [Sekretessinställningar](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/browser-cookie-settings.html) under Report Suite-inställningar.
 
