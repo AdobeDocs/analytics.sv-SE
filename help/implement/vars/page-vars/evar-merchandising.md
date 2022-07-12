@@ -3,9 +3,10 @@ title: eVar-variabler
 description: Egna variabler som knyts till enskilda produkter.
 feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+mini-toc-levels: 3
+source-git-commit: 2624a18896f99aadcfe0a04538ece21c370a28b9
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -41,6 +42,47 @@ s.products = "Birds;Scarlet Macaw;1;4200;;eVar1=talking bird,Birds;Turtle dove;2
 
 Värdet för `eVar1` har tilldelats produkten. Alla efterföljande lyckade händelser som berör den här produkten krediteras eVar.
 
+### Använda XDM för Edge Collection
+
+Varje fält i variabeln&quot;products&quot; fylls i med ett motsvarande XDM-fält. Du kan se en lista över alla mappningar från XDM till analysparametrar [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en). Nedan visas ett exempel som visar hur XDM-fälten productListItems kombineras för att skapa en produktvariabel.
+
+XDM-struktur:
+
+```js
+              "productListItems": [
+                    {
+                        "name": "Bahama Shirt",
+                        "priceTotal": "12.99",
+                        "quantity": 3,
+                        "_experience": {
+                            "analytics": {
+                                "customDimensions" : {
+                                    "eVars" : {
+                                        "eVar10" : "green",
+                                        "eVar33" : "large"
+                                    }
+                                },
+                                "event1to100" : {
+                                    "event4" : {
+                                        "value" : 1
+                                    },
+                                    "event10" : {
+                                        "value" : 2,
+                                        "id" : "abcd"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+```
+
+Resultatparametern &quot;products&quot; skickades till Analytics:
+
+```js
+pl = ;Bahama Shirt;3;12.99;event4|event10=2:abcd;eVar10=green|eVar33=large
+```
+
 ## Implementera med konverteringsvariabelsyntax
 
 Konverteringsvariabelsyntaxen används när eVar inte är tillgängligt för att anges i `products` variabel. Det här scenariot innebär vanligtvis att sidan inte har något sammanhang för försäljningskanalen eller sökmetoden. I dessa fall ställer du in variabeln för försäljning innan du kommer till produktsidan, och värdet kvarstår tills bindningshändelsen inträffar.
@@ -53,10 +95,36 @@ s.eVar1 = "Aviary";
 
 // Place on the page where the binding event occurs:
 s.events = "prodView";
-s.products = "Birds;Canary";
+s.products = ";Canary";
 ```
 
 Värdet `"Aviary"` for `eVar1` har tilldelats produkten `"Canary"`. Alla efterföljande lyckade händelser som berör den här produkten krediteras `"Canary"`. Dessutom är det aktuella värdet av variabeln merchandising knutet till alla efterföljande produkter tills något av följande villkor uppfylls:
 
 * eVar förfaller (baserat på inställningen &quot;Förfaller efter&quot;)
 * eVar för försäljning skrivs över med ett nytt värde.
+
+### Använda XDM för Edge Collection
+
+Du kan ange samma information med hjälp av XDM-fält som mappas till Analytics-fält. Du kan se en lista över alla mappningar från XDM till analysparametrar [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en). XDM-speglingen av exemplet ovan skulle se ut så här:
+
+```js
+                  "_experience": {
+                      "analytics": {
+                          "customDimensions": {
+                              "eVars": {
+                                  "eVar1" : "Aviary"
+                              }
+                          }
+                      }
+                  },
+                  "commerce": {
+                      "productViews" : {
+                          "value" : 1
+                      }
+                  },
+                  "productListItems": [
+                      {
+                          "name": "Canary"
+                      }
+                  ]
+```
