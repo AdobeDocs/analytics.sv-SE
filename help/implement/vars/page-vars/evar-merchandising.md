@@ -4,9 +4,9 @@ description: Egna variabler som knyts till enskilda produkter.
 feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
 mini-toc-levels: 3
-source-git-commit: 2624a18896f99aadcfe0a04538ece21c370a28b9
+source-git-commit: 9a94e910d4e837bb9808b5662beebe6214ed4174
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ XDM-struktur:
 Resultatparametern &quot;products&quot; skickades till Analytics:
 
 ```js
-pl = ;Bahama Shirt;3;12.99;event4|event10=2:abcd;eVar10=green|eVar33=large
+pl = ”;Bahama Shirt;3;12.99;event4|event10=2:abcd;eVar10=green|eVar33=large”
 ```
 
 ## Implementera med konverteringsvariabelsyntax
@@ -107,6 +107,8 @@ Värdet `"Aviary"` for `eVar1` har tilldelats produkten `"Canary"`. Alla efterf�
 
 Du kan ange samma information med hjälp av XDM-fält som mappas till Analytics-fält. Du kan se en lista över alla mappningar från XDM till analysparametrar [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en). XDM-speglingen av exemplet ovan skulle se ut så här:
 
+Ange eVar för samma eller föregående händelseanrop:
+
 ```js
                   "_experience": {
                       "analytics": {
@@ -116,7 +118,12 @@ Du kan ange samma information med hjälp av XDM-fält som mappas till Analytics-
                               }
                           }
                       }
-                  },
+                  }
+```
+
+Ange bindningshändelse och värden för produktsträngen:
+
+```js
                   "commerce": {
                       "productViews" : {
                           "value" : 1
