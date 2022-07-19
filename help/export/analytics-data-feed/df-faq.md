@@ -4,9 +4,9 @@ keywords: Datafeed;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 feature: Data Feeds
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: ef228e7d7ba41e934fe7a74db15ce112be2c13d8
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1434'
 ht-degree: 0%
 
 ---
@@ -15,59 +15,57 @@ ht-degree: 0%
 
 Vanliga frågor och svar om dataflöden.
 
-## Måste feed-namnen vara unika?{#section_EF38BB51A7E240D69DAD4C07A34D9AD5}
+## Måste feed-namnen vara unika?{#unique}
 
 Namnen på datafeedsfilerna består av rapportsvitens ID och datumet. Alla två flöden som är konfigurerade för samma RSID och datum har samma filnamn. Om dessa flöden levereras till samma plats, skriver en fil över den andra. Om du vill förhindra att en fil skrivs över kan du inte skapa en feed som kan skriva över en befintlig feed på samma plats.
 
-Om du försöker skapa en feed när det finns en annan med samma filnamn visas följande meddelande:
-
-Om du får det här felet bör du tänka på följande tillfälliga lösningar:
+Om du försöker skapa en feed när det finns en annan med samma filnamn visas ett felmeddelande. Tänk på följande tillfälliga lösningar:
 
 * Ändra leveransväg
 * Ändra datumen om möjligt
 * Ändra rapportsviten om det är möjligt
 
-## När behandlas data? {#section_6346328F8D8848A7B81474229481D404}
+## När behandlas data? {#processed}
 
 Innan timdata eller dagliga data bearbetas väntar dataflödena tills alla träffar som matades in inom tidsramen (dag eller timme) har skrivits ut till data warehouse. När detta inträffar samlar dataflödena in data med tidsstämplar som ligger inom tidsramen, komprimerar dem och skickar dem via FTP. För timmatningar skrivs filer vanligtvis ut till data warehouse inom 15-30 minuter efter timmen, men det finns ingen fast tidsperiod. Om det inte fanns några data med tidsstämplar som ligger inom tidsramen försöker processen igen nästa tidsram. Den aktuella dataflödesprocessen använder `date_time` för att avgöra vilka träffar som hör till timmen. Det här fältet baseras på rapportsvitens tidszon.
 
-## Vad är skillnaden mellan kolumner med en `post_` prefix och kolumner utan `post_` prefix?
+## Vad är skillnaden mellan kolumner med en `post_` prefix och kolumner utan `post_` prefix? {#post}
 
 Kolumner utan `post_` -prefixet innehåller data exakt som de skickades till datainsamlingen. Kolumner med en `post_` -prefixet innehåller värdet efter bearbetning. Exempel som kan ändra ett värde är variabelbeständighet, bearbetningsregler, VISTA-regler, valutakonvertering eller annan logik på serversidan som gäller Adobe. Adobe rekommenderar att du använder `post_` version av en kolumn där det är möjligt.
 
 Om en kolumn inte innehåller en `post_` version (till exempel `visit_num`) kan kolumnen betraktas som en postkolumn.
 
-## Hur hanterar dataflöden skiftlägeskänslighet?
+## Hur hanterar dataflöden skiftlägeskänslighet? {#case}
 
 I Adobe Analytics betraktas de flesta variabler som skiftlägeskänsliga i rapporteringssyfte. Till exempel betraktas alla&quot;snö&quot;,&quot;snö&quot;,&quot;snö&quot; och&quot;sNow&quot; som samma värde. Skiftlägeskänsligheten bevaras i dataflöden.
 
 Om du ser olika skiftlägesvariationer av samma värde mellan icke-post- och postkolumner (till exempel &quot;snö&quot; i pre-kolumnen och &quot;Snö&quot; i post-kolumnen), använder implementeringen både versaler och gemener på webbplatsen. Skiftlägesvariationen i postkolumnen överfördes tidigare och lagras i den virtuella cookien, eller bearbetades samtidigt för rapportsviten.
 
-## Filtreras robotar av administratörskonsolens robotregler i dataflöden?
+## Filtreras robotar av administratörskonsolens robotregler i dataflöden? {#bots}
 
 Dataflöden inkluderar inte robotar som filtreras av [Administratörskonsolens startregler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/bot-removal/bot-removal.html).
 
-## Varför ser jag flera `000` värden i `event_list` eller `post_event_list` dataflödeskolumn?
+## Varför ser jag flera `000` värden i `event_list` eller `post_event_list` dataflödeskolumn? {#values}
 
 Vissa kalkylbladsredigerare, särskilt Microsoft Excel, rundar automatiskt av stora tal. The `event_list` -kolumnen innehåller många kommaavgränsade tal, vilket ibland kan göra att Excel hanterar den som ett stort antal. Det avrundar de sista siffrorna till `000`.
 
 Adobe rekommenderar att du inte öppnar automatiskt `hit_data.tsv` filer i Microsoft Excel. Använd i stället Excel-dialogrutan Importera data och se till att alla fält behandlas som text.
 
-## Är kolumner som `hitid_high`, `hitid_low`, `visid_high`och `visid_low` Garanterat unik för träffen eller besöket?
+## Är kolumner som `hitid_high`, `hitid_low`, `visid_high`och `visid_low` Garanterat unik för träffen eller besöket? {#hitid}
 
 I nästan alla fall har `hitid_high` och `hitid_low` unikt identifiera en träff. Samma koncept gäller för sammanfogningen av `visid_high` och `visid_low` för besök. Bearbetningsavvikelser kan dock i sällsynta fall leda till att två träffar delar samma träff-ID. Adobe rekommenderar att man inte skapar dataflöden som inte är flexibla och som kräver att varje träff är unik.
 
-## Varför saknas information i domänkolumnen för vissa bärare? {#section_B7508D65370442C7A314EAED711A2C75}
+## Varför saknas information i domänkolumnen för vissa bärare? {#domain}
 
 Vissa mobiloperatörer (som T-Mobile och O1) tillhandahåller inte längre domäninformation för omvända DNS-sökningar. Därför är dessa data inte tillgängliga för domänrapportering.
 
-## Varför kan jag inte extrahera&quot;timvisa&quot; filer från data som är mer än 7 dagar gamla?
+## Varför kan jag inte extrahera&quot;timvisa&quot; filer från data som är mer än 7 dagar gamla? {#hourly}
 
 För data som är äldre än 7 dagar kombineras en dags&quot;timvisa&quot;-filer till en enda&quot;daglig&quot; fil.
 
 Exempel: En ny datafeed skapas den 9 mars 2021 och informationen från 1 januari 2021 till 9 mars levereras som &quot;Varje timme&quot;. Filerna&quot;Varje timme&quot; före 2 mars 2021 kombineras dock till en enda&quot;daglig&quot; fil. Du kan bara extrahera&quot;timvisa&quot; filer från data som är mindre än 7 dagar gamla från det datum då de skapades. I detta fall från den 2 mars till den 9 mars.
 
-## Vilken inverkan har Daylight Savings på timdataflöden? {#section_70E867D942054DD09048E027A9474FFD}
+## Vilken inverkan har Daylight Savings på timdataflöden? {#dst}
 
 För vissa tidszoner ändras tiden två gånger per år på grund av DST-definitioner (sommartid). Datafeeds följer den tidszon som rapportsviten har konfigurerats för. Om tidszonen för rapportsviten är en som inte använder DST, fortsätter filleveransen normalt som någon annan dag. Om tidszonen för rapportsviten är en som använder DST, ändras filleveransen för den timme då tidsändringen inträffar (vanligen 02:00).
 
@@ -75,7 +73,7 @@ När man gör STD -> DST-övergångar (&quot;Spring Forward&quot;) får man bara
 
 När man gör DST -> STD-övergångar (&quot;Fall Back&quot;) får man 24 filer. Övergångstimmen innehåller emellertid faktiskt två timmars data. Om övergången till exempel sker klockan 2:00 fördröjs filen för 1:00 med en timme, men den innehåller data i två timmar. Den innehåller data från 1:00 DST till 2:00 STD (som skulle ha varit 3:00 DST). Nästa fil börjar klockan 2:00 STD.
 
-## Hur hanterar Analytics FTP-överföringsfel? {#section_4BD44E9167F0494FB2B379D2BA132AD8}
+## Hur hanterar Analytics FTP-överföringsfel? {#ftp-failure}
 
 Om en FTP-överföring misslyckas (på grund av nekad inloggning, förlorad anslutning, fel utanför kvoten eller något annat problem) försöker Adobe automatiskt ansluta och skicka data upp till tre gånger. Om felet kvarstår markeras feeden som misslyckad och ett e-postmeddelande skickas.
 
@@ -83,7 +81,7 @@ Om överföringen misslyckas kan du köra ett jobb igen tills det lyckas.
 
 Om du har problem med att få en datafeed att visas på FTP-platsen, se [Felsöka dataflöden](troubleshooting.md).
 
-## Hur skickar jag om ett jobb? {#section_BFD4447B0B5946CAAEE4F0F03D42EDFD}
+## Hur skickar jag om ett jobb? {#resend}
 
 När du har verifierat/korrigerat leveransproblemet kör du jobbet igen för att hämta filerna.
 
