@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: bedda6ba1f3022562976ada7e73a9514947b5071
+source-git-commit: a71db2fac9333b70a55da91fe9a94b0cc8434b42
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1087'
 ht-degree: 2%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 2%
 # Aktuell versionsinformation för Adobe Analytics (juli 2022)
 
 **Senaste uppdatering**: 13 juli 2022
-
->[!NOTE]
->
->Den här sidan innehåller information om förhandsversioner och kan komma att ändras.
 
 ## Relaterade resurser
 

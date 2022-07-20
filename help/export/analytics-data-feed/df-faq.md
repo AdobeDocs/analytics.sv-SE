@@ -4,9 +4,9 @@ keywords: Datafeed;jobb;förkolumn;efterkolumn;skiftlägeskänslighet
 title: Vanliga frågor om dataflöden
 feature: Data Feeds
 exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
-source-git-commit: ef228e7d7ba41e934fe7a74db15ce112be2c13d8
+source-git-commit: a71db2fac9333b70a55da91fe9a94b0cc8434b42
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -97,4 +97,5 @@ Objekt ärver dock inte behörigheter från den överordnade bucket. Om userB ö
 
 >[!NOTE]
 >
->[!DNL Analytics] avgör inte om bucket har en princip som kräver att bucket-ägaren får fullständig kontroll över nya objekt, eller även om bucket-ägaren finns på ett annat konto än användaren som skriver data. Istället [!DNL Analytics] lägger automatiskt till bucketägaren till BucketOwnerFullControl ACL med varje feed-överföring.
+>Adobe Analytics avgör inte om bucket har en princip som kräver att bucket-ägaren får fullständig kontroll över nya objekt, eller även om bucket-ägaren har ett annat konto än användaren som skriver data. I stället läggs markeringsägaren automatiskt till i `BucketOwnerFullControl` ACL med varje feed-överföring.
+
