@@ -4,10 +4,10 @@ description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättni
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 1c56c03a46d5a037faac109dcda536516fbd3532
+source-git-commit: 7738b3c899f9d51f9f5847c3d4bef00408f94669
 workflow-type: tm+mt
-source-wordcount: '3351'
-ht-degree: 38%
+source-wordcount: '3379'
+ht-degree: 37%
 
 ---
 
@@ -24,6 +24,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Datum | Beskrivning |
 | --- | --- |
 | **Juni 2022** |  |
+| Marknadsföringsvariabler i XDM för Edge Collection | Dokumentation på [stöd för Merchandising-variabler i XDM för Edge Collection](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar-merchandising.html?lang=en) |
 | Experience Platform Edge-dokumentation | Nya artiklar om Adobe Analytics-implementering via [Web SDK](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/web-sdk/overview.html?lang=en), [Mobile SDK](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/mobile-sdk/overview.html?lang=en)och [Edge API](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/edge-api/overview.html?lang=en). |
 | Uppdaterad dokumentation om visualisering av flöde | Baserat på [nytt användargränssnitt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/flow/create-flow.html?lang=en) |
 | Dokumentation om att dela anteckningar i mobilstyrkort | Du kan visa [anteckningar som har skapats i Workspace - i Mobile Scorecards](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/mobile-annotations.html). |
