@@ -3,7 +3,7 @@ title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
-source-git-commit: e4428d6a875e37bc4cbeee7c940545418ae82f94
+source-git-commit: 5e71564e3aade426d84a039a6864d441d165345a
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
@@ -22,9 +22,7 @@ Anpassade händelser är [mappas för Adobe Analytics](https://experienceleague.
 
 * Anpassade händelser 1-100 mappas till `_experience.analytics.event1to100.event1` - `_experience.analytics.event1to100.event100`.
 * Anpassade händelser 101-200 mappas till `_experience.analytics.event101to200.event100` - `_experience.analytics.event101to200.event200`.
-* Det här mönstret upprepas var 100:e händelse till `_experience.analytics.event901to1000.event901` - `_experience.analytics.event901to1000.event1000`.
-* `eventx.value` används för att ange värdet.
-* `eventx.id` används för att ange ID för serialisering.
+* Det här mönstret upprepas var 100:e händelse till `_experience.analytics.event901to1000.event901` - `_experience.analytics.event901to1000.event1000`. `eventx.value` används för att ange värdet. `eventx.id` används för att ange ID för serialisering.
 * Order mappas till `commerce.purchases.value`.
 * Enheter mappas till summan av alla `productListItems[].quantity` fält.
 * Intäkterna är mappade till summan av alla `productListItems[].priceTotal` fält.
