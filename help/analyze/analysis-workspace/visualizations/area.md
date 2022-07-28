@@ -1,14 +1,14 @@
 ---
-description: Den här arbetsytevisualiseringen är som ett linjediagram, men med ett färgat område under linjen.
+description: Områdesvisualiseringen är som ett linjediagram, men med ett färgat område under linjen.
 title: Områdesdiagram och staplat områdesdiagram
 uuid: 27f1bfd0-bf64-4424-8827-f7127d239762
-feature: Visualiseringar
+feature: Visualizations
 role: User, Admin
 exl-id: edbcd290-843d-453a-a02d-b3ad06f092e1
-source-git-commit: 5c235ecbf348af86e8f195f99f8e721dd97946b8
+source-git-commit: 82ba19e600f141f967148399cc1697f0bba189db
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 8%
+source-wordcount: '106'
+ht-degree: 7%
 
 ---
 
