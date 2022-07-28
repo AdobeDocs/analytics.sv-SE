@@ -3,9 +3,9 @@ description: Använd den centrala metriska sammanfattningen för att jämföra m
 title: Sammanfattning av nyckelmått
 feature: Visualizations
 role: User, Admin
-source-git-commit: a126f51c82cf7b23f4e03134c2d870d216dadc47
+source-git-commit: 73de5dca8584d8d04b57a0d50dffcb57cfeefb08
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
-Med hjälp av nyckelmätningssammanfattningen kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
+The [!UICONTROL Key metric summary] Med visualisering kan du se hur ett viktigt mätresultat trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. Det ger fördelarna med flera visualiseringar i kombination med en visualisering:
 
 * **[!UICONTROL Line]** visualiseringar som visar hur måttet trendar för det primära datumintervallet och jämförelsedatumintervallet
 
@@ -62,7 +62,7 @@ Observera:
 
 * The **[!UICONTROL Previous period]** linjediagram (alltid grått) motsvarar **[!UICONTROL Comparison date range]** i konfigurationssteget.
 
-* Om ett datumintervall för jämförelse inte väljs under konfigurationen eller döljs i visualiseringsinställningarna (mer i inställningarna nedan) visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen döljs.
+* Om ett jämförelsedatumintervall inte anges under konfigurationen eller döljs i visualiseringsinställningarna, visas bara linjediagrammet för det primära datumintervallet. Sammanfattningsändringen döljs.
 
 * Härifrån kan du hovra över linjediagrammen för att se statistik för enskilda dagar:
 
@@ -76,16 +76,16 @@ Sammanfattningen av nyckeltal erbjuder flera flexibla inställningar för bättr
 
 | Inställning | Beskrivning |
 | --- | --- |
-| Betonar procentuell ändring | Visa sammanfattningsändring i framträdande fetstil i mitten av visualiseringen |
-| Betonar talvärde | Visa sammanfattningsnummer i framträdande fetstil i mitten av visualiseringen |
-| Förklaring synlig | Visa eller dölj teckenförklaringen längst ned i visualiseringen |
-| Visa anteckningar | Visa eller dölj anteckningar som lagts till av en administratör |
-| Visa miniatyrbilder | Visa eller dölj linjediagram längst ned i diagrammet. När teckenförklaringen är dold ändras den inte längre till att referera till raderna visuellt |
-| Visa min och max i miniatyrdiagram | Visa eller dölj lägsta och högsta värden i primära och jämförande raddiagram |
-| Visa jämförelse | Visa eller dölj jämförelsedata. När det är dolt döljs både jämförelsetabellen och de sammanfattande ändringsobjekten. |
-| Visa totalt nummer | Visa eller dölj sammanfattningsnummer |
-| Visa rådifferens | Visa eller dölj den obearbetade skillnaden mellan det totala värdet för måttet i det primära datumintervallet och det sekundära datumintervallet |
-| Förkortningsvärde | Förkorta talvärdena för att förenkla kommunikationen (t.ex. 20 000 -> 20 kB) |
+| **[!UICONTROL Emphasize percent change]** | Visa sammanfattningsändring i framträdande fetstil i mitten av visualiseringen |
+| **[!UICONTROL Emphasize number value]** | Visa sammanfattningsnummer i framträdande fetstil i mitten av visualiseringen |
+| **[!UICONTROL Legend visible]** | Visa eller dölj teckenförklaringen längst ned i visualiseringen |
+| **[!UICONTROL Show annotations]** | Visa eller dölj anteckningar som lagts till av en administratör |
+| **[!UICONTROL Show sparklines]** | Visa eller dölj linjediagram längst ned i diagrammet. När teckenförklaringen är dold ändras den inte längre till att referera till raderna visuellt |
+| **[!UICONTROL Show min and max on sparklines]** | Visa eller dölj lägsta och högsta värden i primära och jämförande raddiagram |
+| **[!UICONTROL Show comparison]** | Visa eller dölj jämförelsedata. När det är dolt döljs både jämförelsetabellen och de sammanfattande ändringsobjekten. |
+| **[!UICONTROL Show total number]** | Visa eller dölj sammanfattningsnummer |
+| **[!UICONTROL Show raw difference]** | Visa eller dölj den obearbetade skillnaden mellan det totala värdet för måttet i det primära datumintervallet och det sekundära datumintervallet |
+| **[!UICONTROL Abbreviate value]** | Förkorta talvärdena för att förenkla kommunikationen (t.ex. 20 000 -> 20 kB) |
 
 ## Redigera visualisering
 
