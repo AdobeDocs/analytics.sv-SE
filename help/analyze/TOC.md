@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Instruktioner för Analysis Workspace, det ledande analys- och visualiseringsverktyget för Analytics, samt verktyg som Adobe Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: eb45e267835fcf91010dd87deb13707082dbf736
+source-git-commit: 04a314e93a77ecf5687e771e143bf68ba911b32b
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 80%
+source-wordcount: '1053'
+ht-degree: 79%
 
 ---
 
@@ -73,20 +73,21 @@ ht-degree: 80%
          + [Översikt över flöden](analysis-workspace/visualizations/c-flow/flow.md)
          + [Konfigurera en flödesvisualisering](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Intradimensionella flöden](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + [Histogram](analysis-workspace/visualizations/histogram.md)
-      + [Sammanfattning av nyckelmått](analysis-workspace/visualizations/key-metric.md)
-      + [Mappa](analysis-workspace/visualizations/map-visualization.md)
-      + [Venn](analysis-workspace/visualizations/venn.md)
       + [Områdesdiagram och staplat områdesdiagram](analysis-workspace/visualizations/area.md)
       + [Stapeldiagram och staplat stapeldiagram](analysis-workspace/visualizations/bar.md)
       + [Punktdiagram](analysis-workspace/visualizations/bullet-graph.md)
+      + [Kombinationsdiagram](analysis-workspace/visualizations/combo-charts.md)
       + [Ringdiagram](analysis-workspace/visualizations/donut.md)
+      + [Histogram](analysis-workspace/visualizations/histogram.md)
       + [Liggande stapeldiagram och staplat liggande stapeldiagram](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Sammanfattning av nyckelmått](analysis-workspace/visualizations/key-metric.md)
       + [Linjediagram](analysis-workspace/visualizations/line.md)
+      + [Mappa](analysis-workspace/visualizations/map-visualization.md)
       + [Spridningsdiagram](analysis-workspace/visualizations/scatterplot.md)
       + [Sammanfattning av antal och förändring](analysis-workspace/visualizations/summary-number-change.md)
       + [Text](analysis-workspace/visualizations/text.md)
       + [Trädkarta](analysis-workspace/visualizations/treemap.md)
+      + [Venn](analysis-workspace/visualizations/venn.md)
    + Paneler {#panels}
       + [Översikt över paneler](analysis-workspace/c-panels/panels.md)
       + [Analyser för målpanelen (A4T)](analysis-workspace/c-panels/a4t-panel.md)
