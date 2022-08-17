@@ -3,9 +3,9 @@ title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: f0e69d68dd6a5413a050e00f5dca1c820ecee389
+source-git-commit: e8a6400895110a14306e2dc9465e5de03d1b5d73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -31,8 +31,7 @@ Produkterna är [mappas för Adobe Analytics](https://experienceleague.adobe.com
 
 >[!NOTE]
 >
->`lineItemId` måste läggas till som ett anpassat fält eftersom det inte ingår i standardschemat för analyshändelser. Vi kommer att lägga till ett dedikerat kategorifält i framtiden.
-
+>`lineItemId` måste läggas till som ett anpassat fält eftersom det ännu inte ingår i standardschemat för analyshändelser. Adobe planerar att lägga till ett dedikerat kategorifält i framtiden.
 
 ## Produkter som använder Adobe Analytics-tillägget
 

@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: a71db2fac9333b70a55da91fe9a94b0cc8434b42
+source-git-commit: e8a6400895110a14306e2dc9465e5de03d1b5d73
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `_experience.analytics.customDimensions.`<br/>`eVars.eVar1` -<br/>`_experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
 | `_experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Avgränsaren som används för en viss [List Prop](../vars/page-vars/prop.md#list-props). |
 | `_experience.analytics.customDimensions.`<br/>`listProps.prop1.values` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.values` | En strängarray som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props) värden. |
-| `_experience.analytics.customDimensions.`<br/>`lists.list1.list` -<br/>`_experience.analytics.customDimensions.`<br/>`lists.list3.list` | Anger respektive [Listvariabel](../vars/page-vars/list.md). |
+| `_experience.analytics.customDimensions.`<br/>`lists.list1.list[].value` -<br/>`_experience.analytics.customDimensions.`<br/>`lists.list3.list[].value` | Sammanfogar alla `value` strängar i respektive `list[]` array till respektive [Listvariabel](../vars/page-vars/list.md). |
 | `_experience.analytics.customDimensions.`<br/>`props.prop1` -<br/>`_experience.analytics.customDimensions.`<br/>`props.prop75` | Anger respektive [Prop](../../components/dimensions/prop.md) dimension. |
 | `_experience.analytics.event1to100.`<br/>`event1.id` -<br/>`_experience.analytics.event901to1000.`<br/>`event1000.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till respektive [Anpassade händelser](../../components/metrics/custom-events.md) mätvärden. |
 | `_experience.analytics.event1to100.`<br/>`event1.value` -<br/>`_experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [Anpassade händelser](../../components/metrics/custom-events.md) mått med önskad mängd. |

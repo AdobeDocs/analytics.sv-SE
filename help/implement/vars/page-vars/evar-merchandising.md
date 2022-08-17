@@ -4,9 +4,9 @@ description: Egna variabler som knyts till enskilda produkter.
 feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
 mini-toc-levels: 3
-source-git-commit: 9a94e910d4e837bb9808b5662beebe6214ed4174
+source-git-commit: e8a6400895110a14306e2dc9465e5de03d1b5d73
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -42,46 +42,45 @@ s.products = "Birds;Scarlet Macaw;1;4200;;eVar1=talking bird,Birds;Turtle dove;2
 
 Värdet för `eVar1` har tilldelats produkten. Alla efterföljande lyckade händelser som berör den här produkten krediteras eVar.
 
-### Använda XDM för Edge Collection
+### Produktsyntax med Web SDK
 
-Varje fält i variabeln&quot;products&quot; fylls i med ett motsvarande XDM-fält. Du kan se en lista över alla mappningar från XDM till analysparametrar [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en). Nedan visas ett exempel som visar hur XDM-fälten productListItems kombineras för att skapa en produktvariabel.
+Variabler för produktsyntax: [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under flera olika XDM-fält.
 
-XDM-struktur:
+* Produktsyntaxmarknadsföring eVars mappas under `productListItems[]._experience.analytics.customDimensions.eVars.eVar1` till `productListItems[]._experience.analytics.customDimensions.eVars.eVar250`.
+* Försäljningshändelser för produktsyntax mappas under `productListItems[]._experience.analytics.event1to100.event1.value` till `productListItems[]._experience.analytics.event901to1000.event1000.value`. [Händelseserialisering](events/event-serialization.md) XDM-fält mappas under `productListItems[]._experience.analytics.event1to100.event1.id` till `productListItems[]._experience.analytics.event901to1000.event1000.id`.
+
+I följande exempel visas en [produkt](products.md) använda flera eVars och events:
 
 ```js
-              "productListItems": [
-                    {
-                        "name": "Bahama Shirt",
-                        "priceTotal": "12.99",
-                        "quantity": 3,
-                        "_experience": {
-                            "analytics": {
-                                "customDimensions" : {
-                                    "eVars" : {
-                                        "eVar10" : "green",
-                                        "eVar33" : "large"
-                                    }
-                                },
-                                "event1to100" : {
-                                    "event4" : {
-                                        "value" : 1
-                                    },
-                                    "event10" : {
-                                        "value" : 2,
-                                        "id" : "abcd"
-                                    }
-                                }
-                            }
-                        }
+"productListItems": [
+    {
+        "name": "Bahama Shirt",
+        "priceTotal": "12.99",
+        "quantity": 3,
+        "_experience": {
+            "analytics": {
+                "customDimensions" : {
+                    "eVars" : {
+                        "eVar10" : "green",
+                        "eVar33" : "large"
                     }
-                ]
+                },
+                "event1to100" : {
+                    "event4" : {
+                        "value" : 1
+                    },
+                    "event10" : {
+                        "value" : 2,
+                        "id" : "abcd"
+                    }
+                }
+            }
+        }
+    }
+]
 ```
 
-Resultatparametern &quot;products&quot; skickades till Analytics:
-
-```js
-pl = ”;Bahama Shirt;3;12.99;event4|event10=2:abcd;eVar10=green|eVar33=large”
-```
+Ovanstående exempelobjekt skickas till Adobe Analytics som `";Bahama Shirt;3;12.99;event4|event10=2:abcd;eVar10=green|eVar33=large"`.
 
 ## Implementera med konverteringsvariabelsyntax
 
@@ -103,35 +102,35 @@ Värdet `"Aviary"` for `eVar1` har tilldelats produkten `"Canary"`. Alla efterf�
 * eVar förfaller (baserat på inställningen &quot;Förfaller efter&quot;)
 * eVar för försäljning skrivs över med ett nytt värde.
 
-### Använda XDM för Edge Collection
+### Konvertera variabelsyntax med Web SDK
 
-Du kan ange samma information med hjälp av XDM-fält som mappas till Analytics-fält. Du kan se en lista över alla mappningar från XDM till analysparametrar [här](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en). XDM-speglingen av exemplet ovan skulle se ut så här:
+Konvertering av variabelsyntax med Web SDK fungerar på samma sätt som implementering av andra [eVars](evar.md) och [händelser](events/events-overview.md). XDM-speglingen av exemplet ovan skulle se ut så här:
 
 Ange eVar för samma eller föregående händelseanrop:
 
 ```js
-                  "_experience": {
-                      "analytics": {
-                          "customDimensions": {
-                              "eVars": {
-                                  "eVar1" : "Aviary"
-                              }
-                          }
-                      }
-                  }
+"_experience": {
+    "analytics": {
+        "customDimensions": {
+            "eVars": {
+                "eVar1" : "Aviary"
+            }
+        }
+    }
+}
 ```
 
 Ange bindningshändelse och värden för produktsträngen:
 
 ```js
-                  "commerce": {
-                      "productViews" : {
-                          "value" : 1
-                      }
-                  },
-                  "productListItems": [
-                      {
-                          "name": "Canary"
-                      }
-                  ]
+"commerce": {
+    "productViews" : {
+        "value" : 1
+    }
+},
+"productListItems": [
+    {
+        "name": "Canary"
+    }
+]
 ```
