@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 903139cdc11770f035ca36911c0d5dbf778c62be
+source-git-commit: 21b8e21a0f5488e4e8702d5e7538360add1cd621
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 2%
+source-wordcount: '1264'
+ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (augusti 2022)
 
-**Senaste uppdatering**: 12 augusti 2022
+**Senaste uppdatering**: 19 augusti 2022
 
 ## Relaterade resurser
 
@@ -25,7 +25,8 @@ ht-degree: 2%
 
 | Funktion | Beskrivning | [Måldatum](releases.md) |
 | ----------- | ---------- | ------- |
-| Inga nya funktioner den här månaden |  |  |
+| Stöd för listvariabler i XDM för Edge Collection | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda XDM för att ange innehållet i List Variable. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en#list-variables-using-the-web-sdk) | 18 augusti 2022 |
+| Användning av SKU-fält i XDM för Edge Collection när produktsträngsvariabler anges | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda SKU-värdet för att ställa in produktfältet i variabeln products. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en#products-using-the-web-sdk) | 18 augusti 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -41,6 +42,7 @@ AN-274281; AN-280956; AN-285670; AN-288176; AN-289221; AN-289665; AN-289768; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **Uppdatera till enhetssökningar på grund av Google klienttips** | 19 augusti 2022 | Från och med oktober 2022 kommer Adobe att börja använda klienttips förutom användaragenten när de hämtar viss enhetsinformation för träffar från Chromium-webbläsare, som Google Chrome och Microsoft Edge. Detta är som svar på Google planer på att gradvis minska informationen som presenteras från användaragentsträngen i stället för data som skickas via klienttips. Läs mer om kundtips [här](https://web.dev/user-agent-client-hints/).<p> I oktober kommer både AppMeasurement- och Web SDK-samlingsbiblioteken att ha stöd för insamling av klienttips och konfigurering av huruvida höga entropiklienttips ska samlas in. Som en del av den här ändringen använder Adobe enhetskartan för alla enhetssökningar som är relaterade till användaragenten. Device Atlas används för närvarande bara för mobilträffar. Uppdateringarna kan resultera i små ändringar av enhetsinformation som historiskt härleds från användaragenten - särskilt webbläsare, webbläsartyp, operativsystem, operativsystemtyp och mobil enhet. |
 | **SFTP-uppgradering** | 12 augusti 2022 | Tidigare hade vi meddelat att Adobe skulle uppgradera sina tjänster för SFTP (Secure File Transfer Protocol) i maj 2022 för att ge bättre säkerhet vid filöverföring. Vi har skjutit upp uppgraderingen till **7 september 2022**. När den här ändringen görs stöds inte längre vissa SFTP-klientkonfigurationer. Detta påverkar endast data som skickas till eller hämtas från Adobe Analytics med SFTP. FTP-protokollet påverkas inte. För att undvika avbrott i tjänsten bör du se till att dina SFTP-klienter (kod, verktyg, tjänster) följer de detaljerade ändringarna [här](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/secure-file-transfer-protocol/sftp-upgrade.html). |
 | **Uppdatera till ny NetAcuity-databas** | 11 juli 2022 | **Från och med oktober 2022**, företagsrelaterad information lagrad i `carrier` i Adobe Analytics Data warehouse och Analytics Data Feeds kommer att ändras. Historiskt sett har dataformatet i den kolumnen `<domain>:<ISP>`. Adobe har en intern uppslagstabell för att mappa dessa `<domain>:<ISP>` värden i företagsnamn för rapportering i Adobe Analytics rapporteringsverktyg (Analysis Workspace, Rapporter och analyser, API för rapportering, data warehouse, LiveStream osv.). Uppslagsfilen (`carrier.tsv`) ingår också i datafeeds så att du kan använda samma mappningar.<p>Den här uppdateringen förbättrar våra datamappningar med hjälp av en mer korrekt transportföretagsdatabas från NetAcuity. Formatet på data i transportföretagskolumnen i Datafeeds ändras under utvecklingen. I stället för `<domain>:<ISP>`, kommer det att innehålla ett transportföretagsnamn. Adobe kommer att fortsätta att använda uppslagstabellen för att upprätthålla så mycket kontinuitet som möjligt med tidigare rapportering. Rapporteringsverktyg där sökningarna tillämpas av Adobe (Analysis Workspace, Rapporter och analyser, rapporterings-API, data warehouse, LiveStream osv.) kan dra nytta av mer exakta mappningar. Vissa mappningar - särskilt för internationella domäner och Internet-leverantörer - kommer att förändras mer än andra när vi antar den nya databasen. Dataflödets sökningsfil för bärare (`carrier.tsv`) behåller de gamla mappningarna och lägger till de nya mappningarna.<p>Analyskällans koppling för analys mappar för närvarande inte transportföretagsfältet, så transportörrapportering är för närvarande inte tillgänglig i AEP, CJA osv. Användning av den nya bärardatabasen kommer därför inte att påverka något i AEP som baseras på data från Analytics Source Connector. |
 | **Förbättrad mappning av IP-till-geopositionering** | 11 juli 2022 | Vår leverantör av IP-sökningar, Digital Element, uppgraderar till en ny förbättrad datamängd (NetAcuity Pulse) för IP-till-geopositioneringsmappning. Adobe Analytics kommer att anta den nya datauppsättningen i **Oktober 2022** tidsram. Den nya databasen kommer att vara mer exakt än tidigare versioner. Vissa IP-till-geo-mappningar kommer att ändras/förbättras när den nya databasen antas.<p>Alla Adobe Analytics-verktyg (Analysis Workspace, Rapporter och analyser, API för rapportering, data warehouse, LiveStream, dataflöden osv.) utnyttjar automatiskt de nya förbättrade mappningarna. Dataflödenas format ändras inte. CJA-data som tillhandahålls via Analytics Source Connector drar automatiskt nytta av de nya mappningarna. |
