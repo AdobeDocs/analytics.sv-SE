@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: e8a6400895110a14306e2dc9465e5de03d1b5d73
+source-git-commit: 4fedc1d27a03d4376103e4648e1e66cbd62346af
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1381'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `_experience.analytics.customDimensions.`<br/>`eVars.eVar1` -<br/>`_experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
 | `_experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Avgränsaren som används för en viss [List Prop](../vars/page-vars/prop.md#list-props). |
 | `_experience.analytics.customDimensions.`<br/>`listProps.prop1.values` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.values` | En strängarray som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props) värden. |
-| `_experience.analytics.customDimensions.`<br/>`lists.list1.list[].value` -<br/>`_experience.analytics.customDimensions.`<br/>`lists.list3.list[].value` | Sammanfogar alla `value` strängar i respektive `list[]` array till respektive [Listvariabel](../vars/page-vars/list.md). |
+| `_experience.analytics.customDimensions.`<br/>`lists.list1.list[].value` -<br/>`_experience.analytics.customDimensions.`<br/>`lists.list3.list[].value` | Sammanfogar alla `value` strängar i respektive `list[]` array till respektive [Listvariabel](../vars/page-vars/list.md) med kommaavgränsare. |
 | `_experience.analytics.customDimensions.`<br/>`props.prop1` -<br/>`_experience.analytics.customDimensions.`<br/>`props.prop75` | Anger respektive [Prop](../../components/dimensions/prop.md) dimension. |
 | `_experience.analytics.event1to100.`<br/>`event1.id` -<br/>`_experience.analytics.event901to1000.`<br/>`event1000.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till respektive [Anpassade händelser](../../components/metrics/custom-events.md) mätvärden. |
 | `_experience.analytics.event1to100.`<br/>`event1.value` -<br/>`_experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [Anpassade händelser](../../components/metrics/custom-events.md) mått med önskad mängd. |
@@ -108,9 +108,10 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1` -<br/>`productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till eVars. |
 | `productListItems[]._experience.analytics.`<br/>`event1to100.event1.value` -<br/>`productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till event. |
 | `productListItems[].lineItemId` | The [Kategori](../../components/dimensions/category.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
-| `productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
+| `productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. If `productListItems[].SKU` och `productListItems[].name` båda innehåller data, värdet i `productListItems[].SKU` används. |
 | `productListItems[].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
 | `productListItems[].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
+| `productListItems[].SKU` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. If `productListItems[].SKU` och `productListItems[].name` båda innehåller data, värdet i `productListItems[].SKU` används. |
 | `web.webInteraction.URL` | The [linkURL](../vars/config-vars/linkurl.md) implementeringsvariabel. |
 | `web.webInteraction.name` | The [Egen länk](../../components/dimensions/custom-link.md), [Hämta länk](../../components/dimensions/download-link.md), eller [Avsluta länk](../../components/dimensions/exit-link.md) dimension, beroende på värdet i `web.webInteraction.type` |
 | `web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar). |

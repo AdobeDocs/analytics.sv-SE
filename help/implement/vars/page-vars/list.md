@@ -3,9 +3,9 @@ title: lista
 description: Anpassade variabler som innehåller flera värden i samma träff.
 feature: Variables
 exl-id: 612f6f10-6b68-402d-abb8-beb6f44ca6ff
-source-git-commit: e8a6400895110a14306e2dc9465e5de03d1b5d73
+source-git-commit: 4fedc1d27a03d4376103e4648e1e66cbd62346af
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.c
     }
 }
 ```
+
+>[!NOTE]
+>
+>Adobe XDM-schemat innehåller `key` förutom `value` objekt i varje `list[]` array. Adobe använder inte dessa `key` objekt när data skickas till Adobe Analytics.
 
 Om din organisation kräver en annan avgränsare än ett komma (&#39;`,`&#39;) kan du skicka hela liststrängen, inklusive de önskade avgränsarna, till ett anpassat XDM-fält. Kontrollera att listvariabeln är konfigurerad att acceptera den önskade avgränsaren i [Rapportsvitsinställningar](/help/admin/admin/conversion-var-admin/list-var-admin.md).
 
