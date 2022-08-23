@@ -3,9 +3,9 @@ title: Skapa ett datalager
 description: Lär dig vad ett datalager är i Analytics-implementeringen och hur det kan användas för att mappa variabler i Adobe Analytics.
 feature: Implementation Basics
 exl-id: 271dd8fa-3ba1-4a7f-b16a-c48a736a5bb5
-source-git-commit: 76c36a136359290e341febc554773a71b1cc7c66
+source-git-commit: 6a43a24cfe6a2a7f92a9613898660df41daf2c89
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '468'
 ht-degree: 2%
 
 ---
@@ -36,11 +36,7 @@ Implementering av Adobe Analytics med ett datalager följer vanligtvis dessa ste
 
 Adobe rekommenderar att du använder [Adobe-klientdatalager](https://github.com/adobe/adobe-client-data-layer/wiki) för nya eller omstrukturerade implementeringar.
 
-Din organisation kan använda andra datalagerspecifikationer, som [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf)eller ett annat anpassat datalager helt och hållet. Det viktigaste är att anpassa sig till ett konsekvent datalager som uppfyller organisationens behov.
-
-
-
-Använd [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf) för information om varje objekt och underobjekt. Alla platser använder inte alla objekt. Om du till exempel har en nyhetswebbplats som värd är det osannolikt att du har användning för `digitalData.product` objektarray.
+Din organisation kan använda andra datalagerspecifikationer, som [Customer Experience Digital Data Layer](https://www.w3.org/2013/12/ceddl-201312.pdf)eller en annan anpassad specifikation helt och hållet. Det viktigaste är att anpassa sig till ett konsekvent datalager som uppfyller organisationens behov.
 
 Datalager är utökningsbara. om du har särskilda krav för organisationen, kan du inkludera objekt i datalagret för att tillgodose dessa behov.
 
