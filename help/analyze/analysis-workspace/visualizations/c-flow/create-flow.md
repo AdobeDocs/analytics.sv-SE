@@ -4,9 +4,9 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: bef175d9675134f4932407a0b9e4a3c67b1d27a5
+source-git-commit: c0e590dab9e45768cf8f8bd20f17d7f5306f41bd
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1257'
 ht-degree: 1%
 
 ---
@@ -135,10 +135,10 @@ Hem > Produkter > Lägg till i kundvagn > Produkter > Lägg till i kundvagn > Fa
 * [!UICONTROL Page] målningsdimension
 * [!UICONTROL Visit] container
 
-Om Begränsa till första/sista förekomsten är inaktiverat räknas den här enskilda serien träffar som 2 förekomster av Lägg till i kundvagnen.
+If **[!UICONTROL Limit to first/last occurrence]** är *inaktiverad*, kommer den här serien träffar att räkna till två förekomster av&quot;Lägg i kundvagnen&quot;.
 Förväntat flöde: &quot;Lägg i kundvagnen&quot; (2) —> &quot;Produkter&quot; (1) -> &quot;Fakturering&quot; (1)
 
-Om alternativet Begränsa till första/sista förekomsten är aktiverat inkluderas endast den första förekomsten av Lägg till i kundvagnen i analysen.
+Om **[!UICONTROL Limit to first/last occurrence]** är *aktiverad*ingår endast den första förekomsten av&quot;Lägg i varukorgen&quot; i analysen.
 Förväntat flöde: &quot;Lägg i kundvagnen&quot; (1) —> &quot;Produkter&quot; (1)
 
 ### Tänk på samma serie träffar men med följande inställningar:
