@@ -3,10 +3,10 @@ description: Dialogrutan Datastyrning i Administratörsverktyg ger en översikt 
 title: Visa/hantera inställningar för datastyrning i rapportsviten
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: 538d5bcea449ecb868ff9ebcce4ca742f91b4a87
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 75%
 
 ---
 
@@ -17,49 +17,19 @@ Dialogrutan Datastyrning i Administratörsverktyg ger en översikt över vilka r
 1. Logga in på Adobe Experience Cloud.
 1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Data Governance]**.
 
-   Du ser alla rapportsviter som ingår i ditt inloggningsföretag:
+>[!NOTE]
+>
+>Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörigheter för den här funktionen.
+
+1. Visa alla rapportsviter som ingår i ditt inloggningsföretag:
 
    ![](assets/privacy_setup_an.png)
 
-<table id="table_448292730FF0475E9DCB731882F9A29B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Inställning </th> 
-   <th colname="col2" class="entry"> Beskrivning </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Rapportsviter </p> </td> 
-   <td colname="col2"> <p>På den första raden visas rapportsvitens egna namn. Den andra raden innehåller rapportsvitens interna namn. Om du kan ange etiketter för en rapportsvit blir den första raden en klickbar länk som tar dig till etikettsidan. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Organisationsmappning </p> </td> 
-   <td colname="col2"> 
-    <ul id="ul_EF8F613B0C5E42D19DB60BD0C89C114B"> 
-     <li id="li_B35EE88555F547EFBF55ADE9D0C9EC3B"><b>Mappad</b>: Den här rapportsviten har redan mappats till samma Experience Cloud-organisation som det Analytics-inloggningsföretag du är inloggad på. Endast rapportsviter som har den här inställningen kan etiketteras. </li>
-     <li id="li_FF825A65D089487BBF5FCB0D74D41CD7"><b>Mappad till en annan organisation</b>: En annan Experience Cloud-organisation har redan mappat den här rapportsviten till sin organisation. </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Policy för datalagring </p> </td> 
-   <td colname="col2"> <p>Implementeringen av datasekretess i Analytics kräver att du har en policy för datalagring. </p> <p>Den här inställningen visar om: </p> 
-    <ul> 
-     <li>det finns en policy för datalagring för den här rapportsviten, och </li> 
-     <li>Hur länge Adobe lagrar data innan de raderas. Standardperioden för datalagring är 25 månader. </li> 
-    </ul> <p>Obs! Adobe Analytics kan inte hjälpa dig med att behandla begäranden till API:n för datasekretess, d.v.s. behandla de begäranden om åtkomst eller borttagning som du mottar från dina slutanvändare, om datalagringsperioden inte har ställts in. Kontakta din Customer Success Manager för att ange din datalagringsperiod. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Grupper </p> </td> 
-   <td colname="col2"> <p>Grupperingsfunktionen är för närvarande inte implementerad. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Vänster sidofält </p> </td> 
-   <td colname="col2"> <p>Klicka på kanalikonen för att öppna eller stänga sidorutan. </p> <p>I avsnittet Organisationsmappning visas antalet rapportsviter som tillhör de beskrivna kategorierna. </p> <p>Avsnittet för Policy för datalagring visar varje unik policy för datalagring som finns för din organisation och antalet rapportsviter som har tilldelats den lagringspolicyn. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Exportera till CSV </p> </td> 
-   <td colname="col2"> <p>Om du markerar kryssrutan bredvid en eller flera rapportsviter visas alternativet <span class="uicontrol"> Exportera till CSV </span>. Med det här alternativet kan du hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för alla variabler för alla valda rapportsviter. </p> <p>Vi rekommenderar att ditt juridiska team granskar dina etikettval och det här alternativet underlättar den här granskningen. I stället för att behöva utföra granskningen när du är inloggad i användargränssnittet för datastyrning kan du dela .CSV-filen med dem. </p> <p><img placement="break"  src="assets/export_csv.png" width="300px" id="image_5FE821B2D07B402D8E0F6FE53D6FC52E" /> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Inställning | Beskrivning |
+| --- | --- |
+| **[!UICONTROL Report Suites]** | På den första raden visas rapportsvitens egna namn. Den andra raden innehåller rapportsvitens interna namn. Om du kan ange etiketter för en rapportsvit blir den första raden en klickbar länk som tar dig till etikettsidan. |
+| **[!UICONTROL Organization Mapping]** | <ul><li>Mappad: Den här rapportsviten har redan mappats till samma Experience Cloud-organisation som det Analytics-inloggningsföretag du är inloggad på. Endast rapportsviter som har den här inställningen kan etiketteras.</li><li>Mappad till en annan organisation: En annan Experience Cloud-organisation har redan mappat den här rapportsviten till sin organisation.</li></ul> |
+| **[!UICONTROL Data Retention Policy]** | Implementeringen av datasekretess i Analytics kräver att du har en policy för datalagring. Den här inställningen visar om:<ul><li>det finns en policy för datalagring för den här rapportsviten, och</li><li>Hur länge Adobe lagrar data innan de raderas. Standardperioden för datalagring är 25 månader.</li></ul>**Anteckning**: Adobe Analytics kan inte hjälpa dig med att bearbeta förfrågningar till API:t för datasekretess, d.v.s. att bearbeta de förfrågningar om åtkomst eller borttagning som du får från slutanvändarna, om datalagringsperioden inte har ställts in. Kontakta din Customer Success Manager för att ange din datalagringsperiod. |
+| **[!UICONTROL Groups]** | Grupperingsfunktionen är för närvarande inte implementerad. |
+| Vänster sidofält | Klicka på kanalikonen för att öppna eller stänga sidorutan. The [!UICONTROL Organization Mapping] I visas antalet rapportsviter som hör till de beskrivna kategorierna. The [!UICONTROL Data Retention Policy] -avsnittet visar varje unik datalagringspolicy som finns för din organisation och antalet rapportsviter som har tilldelats den lagringspolicyn. |
+| **[!UICONTROL Export to CSV]** | Om du markerar kryssrutan bredvid en eller flera rapportsviter visas alternativet  Exportera till CSV . Med det här alternativet kan du hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för alla variabler för alla valda rapportsviter. Vi rekommenderar att ditt juridiska team granskar dina etikettval och det här alternativet underlättar den här granskningen. I stället för att behöva utföra granskningen när du är inloggad i användargränssnittet för datastyrning kan du dela .CSV-filen med dem. |
