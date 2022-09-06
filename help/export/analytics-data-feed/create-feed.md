@@ -3,10 +3,10 @@ title: Skapa eller redigera en datafeed
 description: Lär dig hur du skapar eller redigerar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 60335be9a60b467969f5e1796ce465a7d453951f
+source-git-commit: ed1a627dafdf10f8a0a65e94b20ab6a3204a5d15
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 0%
+source-wordcount: '944'
+ht-degree: 1%
 
 ---
 
@@ -30,65 +30,23 @@ Grundläggande kunskap om dataflöden rekommenderas innan du läser den här sid
 
 Vilka fält som är tillgängliga under målfält beror på måltypen.
 
-### Google Cloud Platform
+### FTP
 
-Få åtkomst till GCP-lagringsfack som en säker destination
+Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kund. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas; feeds genererar ett fel om den angivna sökvägen inte finns.
 
-**Fält**
-* *Typ:* Måltyp för Google Cloud-plattformen
-* *Projekt-ID:* GCP-projekt-ID där lagringspytsen finns
-* *Lagringspytsens namn:* Buckennamn utan punkter får innehålla högst 3-63 tecken. Namn som innehåller punkter kan innehålla upp till 222 tecken, men varje punktavgränsad komponent kan inte vara längre än 63 tecken.
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
+![FTP-information](assets/dest-ftp.jpg)
 
-![GCP-information](assets/dest-gcp.png)
+### SFTP
 
-**Processen för att skapa tjänstkonto**
+SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
 
-Användaren måste skapa ett tjänstkonto för det Google Cloud Platform-mål som har valts.
+![SFTP-information](assets/dest-sftp.jpg)
 
-Endast ett GCP-tjänstkonto tillåts per analysorganisation. När tjänstkontot har skapats för datafeeden fylls alla ytterligare dataflöden i organisationen i förväg med tjänstkontot.
+### S3
 
-![Information om GCP-tjänstkonto](assets/service-account.png)
+Du kan skicka feeds direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Se [Krav för Amazon S3-bucket-namngivning](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
 
-
-### Amazon S3
-
-Amazon S3-bucket-lagring som nås via IAM-roll i en betrodd enhet.
-
-**Fält**
-
-* *Typ:* Måltyp för Amazon S3
-* *Bucket:* S3-bucketnamn
-* *Betrodd entitet-ARN:* AWS IAM Entity ARN `arn:aws:iam::<12 digit account number>:user/<username>`
-* *Roll-ARN:* AWS IAM Role ARN `arn:aws:iam::<12 digit account number>:role/<role name>`
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
-* *Ange region (valfritt):* Listruta över alla tillgängliga AWS-regioner, inklusive KN-regioner
-
-![Information om Amazon S3](assets/dest-s3-secure.png)
-
-
-**Skapa och markera betrodd enhet**
-
-Användaren kan välja en betrodd enhet bland de alternativ som listas i listrutan eller skapa och hämta en ny genom att klicka på `Create Entity` -knappen.
-
-När du klickat på `Create Entity` kommer användaren att omdirigeras till en autentiseringsprocess. När användaren autentiserar skapas den betrodda enheten och läggs till i alternativen i listrutan.
-
-Listrutan innehåller alla betrodda enheter som har skapats i organisationen av den här användaren.
-
-![Entitetsinformation](assets/entity-creation.png)
-
-Du kan skicka feeds direkt till Amazon S3-bucket via den äldre metoden. Se [Krav för Amazon S3-bucket-namngivning](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
-
-**Fält - inaktuella**
-
-* *Typ:* Måltyp för ersatt S3-metod
-* *Bucket:* Amazon S3 Bucket-namn
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
-* *Åtkomstnyckel:* Åtkomstnyckel-ID för AWS-användare
-* *Hemlig nyckel:* Hemlig nyckel för AWS-användare
-* *Bekräfta hemlig nyckel:* Ange hemlig nyckel för AWS-användare igen
-
-![S3-info](assets/dest-s3-dpr.png)
+![S3-info](assets/dest-s3.jpg)
 
 Användaren som du anger för överföring av datafeeds måste ha följande [behörigheter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html):
 
@@ -96,9 +54,12 @@ Användaren som du anger för överföring av datafeeds måste ha följande [beh
 * s3:PutObject
 * s3:PutObjectAcl
 
-För varje överföring till en Amazon S3-bucket [!DNL Analytics] lägger till bucket-ägaren till BucketOwnerFullControl ACL, oavsett om bucket har en princip som kräver det eller inte. Mer information finns i &quot;[Vad är inställningen BucketOwnerFullControl för Amazon S3-dataflöden?](df-faq.md#BucketOwnerFullControl)&quot;
+   >[!NOTE]
+   >
+   >För varje överföring till en Amazon S3-bucket [!DNL Analytics] lägger till bucket-ägaren till BucketOwnerFullControl ACL, oavsett om bucket har en princip som kräver det eller inte. Mer information finns i &quot;[Vad är inställningen BucketOwnerFullControl för Amazon S3-dataflöden?](df-faq.md#BucketOwnerFullControl)&quot;
 
-**AWS-regioner som stöds**:
+Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det behövs):
+
 * us-east-2
 * us-east-1
 * us-west-1
@@ -115,78 +76,20 @@ För varje överföring till en Amazon S3-bucket [!DNL Analytics] lägger till b
 * eu-west-3
 * eu-nord-1
 * sa-east-1
-* cn-nord-1
-* cn-northwest-1
 
+>[!NOTE]
+>
+>Regionen cn-North-1 stöds inte.
 
 ### Azure Blob
 
-Säker Azure Blob-destination med rollbaserad åtkomstkontroll (RBAC) eller SAS (Shared Access Signature). När du väljer åtkomstkontrollen uppdateras innehållet på panelen så att motsvarande fält visas.
+Datamatningar stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten för mer information.
 
-**Fält - RBAC**
-* *Typ:* Måltyp för Azure-blob
-* *Åtkomstkontroll:* Möjlighet att använda RBAC eller SAS
-* *Klient-ID för Active Directory:* Organisations-ID för Azure-konto
-* *Program-ID:* Program-ID från Active Directory Adapter
-* *Klienthemlighet:* Azure Client Secret
-* *Lagringskontonamn:* Namn på konto som innehåller dataobjekt
-* *Behållarnamn:* Behållare som tillhör ett visst lagringskonto.
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
-
-![Azure RBAC-information](assets/dest-azure-rbac.png)
-
-**Fält - SAS**
-* *Typ:* Måltyp för Azure-blob
-* *Åtkomstkontroll:* Möjlighet att använda RBAC eller SAS
-* *Klient-ID för Active Directory:* ID för Azure Active Directory-instans
-* *Program-ID:* Program-ID från Active Directory Adapter
-* *Klienthemlighet:* Azure Client Secret
-* *Key Vault URI:* Plats för Azure Key Vault
-* *Nyckelvalvets hemliga namn:* Hemligt namn för åtkomst till säkert nyckelvalv
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
-
-![Azure SAS-information](assets/dest-azure-sas.png)
-
-**Fält - inaktuella**
-* *Typ:* Måltyp för Azure-blob
-* *Behållare:* Azure-behållarens namn
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
-* *Konto:* Azure-kontohemlighet
-* *Key Vault URI:* Plats för Azure Key Vault
-* *Nyckelvalvets hemliga namn:* Hemligt namn för åtkomst till säkert nyckelvalv
-
-Du måste implementera en egen process för att hantera diskutrymme på matningsmålet. Adobe tar inte bort några data från servern.
-Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten för mer information.
-
-![Azure-inaktuell information](assets/dest-azure-dpr.png)
+![Azure-information](assets/azure.png)
 
 >[!NOTE]
 >
 >Du måste implementera en egen process för att hantera diskutrymme på matningsmålet. Adobe tar inte bort några data från servern.
-
-### FTP - inaktuellt
-
-**Fält**
-* *Typ:* FTP-måltyp
-* *Värd:* Slutpunkt för åtkomst till värd
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
-* *Användarnamn:* Användarnamn för värd
-* *Lösenord:* Lösenord för värd
-* *Bekräfta lösenord:* Ange och verifiera lösenordet för värden igen
-
-![FTP-information](assets/dest-ftp-dpr.png)
-
-### SFTP - inaktuellt
-
-SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar flödet.
-
-**Fält**
-* *Typ:* SFTP-måltyp
-* *Värd:* Slutpunkt för åtkomst till värd
-* *Sökväg (valfritt):* &amp; *Lägg till Report Suite-ID till sökväg:* Plats för resurser som ska hämtas eller lagras
-* *Offentlig RSA-nyckel:* eller *Offentlig DSA-nyckel:* Offentlig nyckel för att få åtkomst till värden
-
-![SFTP-information](assets/dest-sftp-dpr.png)
 
 ## Datakolumdefinitioner
 
