@@ -4,7 +4,7 @@ title: Mätvärden i Analysis Workspace
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: 56fd6dd8450df3ffea78154fafa1e858d5a653a7
+source-git-commit: e0a10540bdfbd9fa3694ff3c7a8585eeb87eaad8
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätv
 Beräknade mätvärden gör att du enkelt kan se hur mätvärden relaterar till varandra med enkla operatorer eller statistiska funktioner. Det finns flera sätt att skapa beräknade mått:
 
 * Klicka på plusikonen bredvid måtthuvudet under komponentlistan till vänster.
-* Navigera till **[!UICONTROL Componets]** > **[!UICONTROL Calculated Metrics]** > **[!UICONTROL Add]**.
+* Navigera till **[!UICONTROL Components]** > **[!UICONTROL Calculated Metrics]** > **[!UICONTROL Add]**.
 * Högerklicka på en kolumnrubrik > **[!UICONTROL Create metric from selection]** när en eller flera rubrikkolumnceller är markerade. Med det här alternativet skapas automatiskt ett beräknat mått utan att du behöver använda verktyget för att skapa beräkningsmetrisk regel.
 
 [Beräknade mått: Implementeringsfria mätvärden](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
