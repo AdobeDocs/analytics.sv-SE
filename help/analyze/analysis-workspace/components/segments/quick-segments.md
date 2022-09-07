@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: 931e9b0bd71abd852c515cd2e7d99dc9ae423a63
+source-git-commit: 40fbff764c7d61f9653f39b49679ea4b5782e96c
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ Segmentet visas överst. Lägg märke till dess blå, randiga sidospalt, till sk
 ## Spara snabbsegment
 
 >[!IMPORTANT]
->När du har sparat eller använt segmentet kan du inte längre redigera det i snabbsegmentsverktyget, utan bara i den vanliga segmentbyggaren.
+>När du har sparat eller använt segmentet kan du inte längre redigera det i snabbsegmentsverktyget, utan bara i den vanliga segmentbyggaren. Det är bara Adobe Analytics produktadministratörer och den som skapat snabbsegmentet som kan spara ändringar i ett befintligt snabbsegment.
 
 1. När du har använt snabbsegmentet håller du pekaren över det och väljer ikonen för info (&quot;i&quot;).
 
