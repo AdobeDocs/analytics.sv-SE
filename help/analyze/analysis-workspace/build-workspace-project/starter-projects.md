@@ -4,9 +4,9 @@ title: Mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1298'
 ht-degree: 4%
 
 ---
@@ -123,19 +123,15 @@ Här är en video på [!UICONTROL Training Tutorial] mall:
 
 ### Personer
 
->[!NOTE]
->
->Mallen Personer och tillhörande personmått är bara tillgängliga för användning som en del av [Adobe Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/data/people.html).
+Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen kan du:
 
-Den här mallen baseras på personmåttet, som är en deduplicerad version av det unika besökarmåttet. Mätvärdet Personer är ett mått på hur ofta konsumenter som använder flera enheter interagerar med ert varumärke. Med mallen
-
-* Segmentera era data för USA/Kanada jämfört med resten av världen. Device Co-op finns för närvarande endast i Nordamerika.
-* Jämför mätvärden för personer och unika besökare sida vid sida.
-* Se&quot;komprimeringsgraden&quot;, ett beräknat mått som beräknar hur mycket mindre personmätningen är som en procentandel av Unika besökare.
+* Segmentera era data för USA/Kanada jämfört med resten av världen
+* Jämför personernas och de unika besökarnas mätvärden sida vid sida
+* Se&quot;komprimeringsgraden&quot;, ett beräknat mått som beräknar hur mycket mindre personmåttet är som en procentandel av Unika besökare
 * Jämför de enhetstyper kunderna använder
-* Se hur många enheter per person som används i genomsnitt.
-* Upptäck hur du använder segmentstackning med personmåttet.
-* Upptäck hur Experience Cloud-ID:t i din miljö förbättrar effektiviteten i personmätningen.
+* Se hur många enheter per person som används i genomsnitt
+* Upptäck hur du använder segmentstackning med personmåttet
+* Upptäck hur Experience Cloud-ID:t i din miljö förbättrar effektiviteten i personmätningen
 
 ### Resa-IQ: Mallen för enhetsövergripande analys
 
@@ -143,10 +139,8 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 
 Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) (CDA).
 
-* **Specialanteckning för medlemmar i Co-op Graph**: Visar vilken del av rapportsviten som innehåller besökare i regioner där koordinatdiagrammet stöds och regioner där det inte stöds.
 * **Identifiering av användare**: Visar hur ofta besökare på er webbplats identifieras med hjälp av metoder som baseras på enhetsövergripande analys.
 * **Mäta målgruppens storlek**: Visar en jämförelse mellan Unika enheter och Personer. Andelen av dessa två tal kallas för komprimering mellan enheter, ett beräknat mått som visas på den här panelen. Detta komprimeringsmått är beroende av ett stort antal faktorer:
-   * **Använda Co-op-diagrammet eller det privata diagrammet**: I allmänhet tenderar organisationer som använder enhetskoordinaterna att se bättre komprimeringsgrader än organisationer som använder det privata diagrammet.
    * **Inloggningshastighet**: Ju fler användare som loggar in på er webbplats, desto mer kan Adobe identifiera och sätta ihop besökare på olika enheter. Platser med låg inloggningshastighet har också låg komprimeringshastighet.
    * **Experience Cloud ID-täckning**: Endast besökare med ett ECID kan sammanfogas. En lägre andel besökare på er webbplats som använder ett ECID-kort motsvarar lägre komprimeringsgrader.
    * **Användning av flera enheter**: Om besökarna på webbplatsen inte använder flera enheter kan du se lägre komprimeringsgrader.

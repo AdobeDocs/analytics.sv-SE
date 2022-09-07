@@ -2,9 +2,9 @@
 title: Vanliga frågor om enhetsövergripande analys
 description: Frågor och svar om enhetsövergripande analys
 exl-id: 7f5529f6-eee7-4bb9-9894-b47ca6c4e9be
-source-git-commit: aa4550d7012f76571f7623428d3d4ee08f728f64
+source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1923'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ CDA:s sammanfogning mellan enheter sker i två samtidiga processer.
 
 * Den andra processen kallas &quot;replay&quot;. Under uppspelning går CDA bakåt i tiden och återställer historiska data, där det är möjligt, inom ett angivet uppslagsfönster. Detta fönster är antingen 1 dag eller 7 dagar, beroende på hur du har begärt att CDA ska konfigureras. Under repriser försöker CDA att skicka tillbaka träffar där personen tidigare var okänd.
 
-* **Om du använder ett enhetsdiagram** behåller Adobe enhetsmappningar i Co-op Graph och Private Graph i ungefär 6 månader. Ett ECID som inte har någon aktivitet på mer än sex månader tas bort från diagrammet. Data som redan sammanfogats i CDA påverkas inte, men efterföljande träffar för detta ECID behandlas som en ny person.
+* **Om du använder ett enhetsdiagram**, behåller Adobe Device Graph-mappningar i cirka 6 månader. Ett ECID som inte har någon aktivitet på mer än sex månader tas bort från diagrammet. Data som redan sammanfogats i CDA påverkas inte. efterföljande träffar för detta ECID behandlas som en ny person.
 
 ## Hur hanterar CDA tidstämplade träffar?
 

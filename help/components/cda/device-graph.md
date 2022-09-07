@@ -2,23 +2,16 @@
 title: Enhetsdiagram
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med hjälp av enhetsdiagrammet.
 exl-id: b8408a7d-6aff-4fff-b535-f10d422bcf0d
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
 # Enhetsdiagram
 
-Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data. Den här metoden använder Adobe Experience Platform Identity Service Co-op Graph eller Private Graph för att knyta ihop data. CDA kommunicerar regelbundet med enhetsdiagrammet för att länka samman enheter.
-
-## Skillnader mellan foto-diagram och privat diagram
-
-Adobe erbjuder två typer av enhetsdiagram som en del av ID-tjänsten:
-
-* **Samredigeringsdiagram**: En databas med hash-kodade enhets-ID:n som alla kunder kan bidra till och referera till. Eftersom den här typen av enhetsdiagram fungerar tillsammans matchar det vanligtvis fler enheter än ett privat diagram.
-* **Privat diagram**: En databas med hashas-enhets-ID:n som bara din organisation refererar till.
+Enhetsövergripande analyser kan använda det privata diagrammet för att sammanfoga data. Det privata diagrammet är en databas med hash-kodade enhets-ID:n som är specifika för din organisation. CDA kommunicerar regelbundet med enhetsdiagrammet för att länka samman enheter.
 
 ## Förutsättningar som är specifika för enhetsdiagrammet
 

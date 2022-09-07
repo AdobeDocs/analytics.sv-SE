@@ -3,9 +3,9 @@ description: Virtuella rapportsviter segmenterar era Adobe Analytics-data så at
 title: Översikt över Virtual Report Suites
 feature: VRS
 exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,6 @@ Virtuella rapportsviter - hjälp:
 * Förenkla implementeringen genom att använda ett enda RSID (Report Suite ID) för alla webbplatser/domäner. Genom att ha alla data i ett enda rapportpaket kan vi ta fram kundanalyser när vi går mot nästa generation av Adobe Analytics.
 * Affärsanvändare i organisationen ser alltid bara de datasegment som är relevanta för dem.
 * Förbättra säkerheten genom att ge administratörsanvändare möjlighet att styra dataåtkomsten enklare och exaktare efter implementeringen.
-* Möjlighet att delta i Device Co-op
 * Personmått
 * En enkundsvy över data (i framtiden)
 * Möjlighet att skapa ett obegränsat antal virtuella rapportsviter för att segmentera data

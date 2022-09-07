@@ -2,9 +2,9 @@
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
-source-git-commit: aa4550d7012f76571f7623428d3d4ee08f728f64
+source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,7 @@ Enhetsövergripande analys är en funktion som omvandlar analyser från enhetsce
 
 * [**Fältbaserad stygn**](field-based-stitching.md): Rekommenderas för sammanfogning eftersom endast deterministisk matchning används för att länka samman enheter.
 Gör att du kan välja en Analytics-variabel som bas för sammanfogning mellan enheter i en virtuell rapportserie.
-* [**Enhetsdiagram**](device-graph.md): CDA kommunicerar med ett enhetsdiagram för att knyta ihop enheter. I co-op-diagrammet används både deterministisk och sannolik matchning.
-
->[!NOTE]
->
->Läs mer om [Device Co-op - slut på livscykeln](https://experienceleague.adobe.com/docs/device-co-op/using/about/device-co-op-eol.html).
+* [**Enhetsdiagram**](device-graph.md): CDA kommunicerar med ett enhetsdiagram för att knyta ihop enheter.
 
 Med CDA kan du besvara frågor som:
 
