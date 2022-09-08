@@ -2,7 +2,7 @@
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
-source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
+source-git-commit: 9c9322647145832503e4a5875789e9cf7e9a2397
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
@@ -11,11 +11,12 @@ ht-degree: 0%
 
 # Enhetsövergripande analys
 
-Enhetsövergripande analys är en funktion som omvandlar analyser från enhetscentrerad vy till personcentrerad vy. Därför kan analytiker förstå användarbeteende som fungerar på olika webbläsare, enheter och appar. Adobe stöder två övergripande arbetsflöden för att länka samman enhetsdata:
+CDA (Cross-Device Analytics) är en funktion som omvandlar analyser från en enhetscentrerad vy till en personcentrerad vy. Därför kan analytiker förstå användarbeteende som fungerar på olika webbläsare, enheter och appar. Adobe stöder två övergripande arbetsflöden för att länka samman enhetsdata:
 
 * [**Fältbaserad stygn**](field-based-stitching.md): Rekommenderas för sammanfogning eftersom endast deterministisk matchning används för att länka samman enheter.
 Gör att du kan välja en Analytics-variabel som bas för sammanfogning mellan enheter i en virtuell rapportserie.
-* [**Enhetsdiagram**](device-graph.md): CDA kommunicerar med ett enhetsdiagram för att knyta ihop enheter.
+
+* [**Enhetsdiagram**](device-graph.md): CDA kommunicerar med ett privat diagram för att knyta ihop enheter.
 
 Med CDA kan du besvara frågor som:
 
@@ -36,7 +37,7 @@ Se [Resa-IQ: Spark-sida för analys av flera enheter](https://adobe.ly/aacda) om
 Användning av CDA kräver allt av följande: [Fältbaserad stygn](field-based-stitching.md) och [Enhetsdiagram](device-graph.md) -metoder har också sina egna specifika förutsättningar.
 
 * Ett kontrakt måste undertecknas med Adobe som innehåller Adobe Analytics Ultimate.
-* Enhetsövergripande analys aktiveras per rapport. Adobe rekommenderar att du skapar en rapportserie som innehåller data för olika enheter, vilket innebär data från flera olika typer av enheter (webb, app, osv.). Vissa organisationer hänvisar till detta koncept som en&quot;global&quot; rapportserie, även om CDA inte strikt måste vara global ur ett geografiskt perspektiv.
+* Din organisation väljer vilka rapporteringsprogram som ska aktiveras för CDA. Adobe rekommenderar rapportsviter som innehåller data mellan olika enheter, vilket innebär data från flera olika typer av enheter/webbläsare/appar. Vissa organisationer hänvisar till detta koncept som en&quot;global&quot; rapportserie, även om CDA inte strikt måste vara global ur ett geografiskt perspektiv.
 
 ## Begränsningar
 
