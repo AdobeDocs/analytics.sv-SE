@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: 4fedc1d27a03d4376103e4648e1e66cbd62346af
+source-git-commit: e42c125da0c48ff01267e3a18aaec8374652809e
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1386'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `commerce.checkouts.value` | Ökar [Utcheckningar](../../components/metrics/checkouts.md) mått med önskad mängd. |
 | `commerce.order.currencyCode` | Anger [currencyCode](../vars/config-vars/currencycode.md) konfigurationsvariabel. |
 | `commerce.order.purchaseID` | Anger [purchaseID](../vars/page-vars/purchaseid.md) sidvariabel. |
+| `commerce.order.transactionID` | Anger [transactionID](../vars/page-vars/transactionid.md) sidvariabel. |
 | `commerce.productListAdds.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Cart Additions](../../components/metrics/cart-additions.md) mätvärden. |
 | `commerce.productListAdds.value` | Ökar [Cart Additions](../../components/metrics/cart-additions.md) mätvärden. |
 | `commerce.productListOpens.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Korgar](../../components/metrics/carts.md) mätvärden. |
