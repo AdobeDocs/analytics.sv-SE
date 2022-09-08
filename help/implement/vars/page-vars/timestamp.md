@@ -3,7 +3,7 @@ title: tidsstämpel
 description: Ange tidsstämpeln för träffen manuellt.
 feature: Variables
 exl-id: 9d5ce5ef-2d84-4f65-b2e3-7aa3e219bc34
-source-git-commit: 8ff414efff302adfee42f192e781a8dec5c42902
+source-git-commit: a41fed835b6dcd3979111a7b13eaf33b63a3b2ec
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -20,7 +20,7 @@ The `timestamp` variabeln ställer in tidsstämpeln för träffen för tidsstäm
 
 ## Tidsstämpla med Web SDK
 
-Tidsstämpeln är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `_experience.analytics.session.timestamp`. Det här fältet har bara stöd för Unix-tid.
+Tidsstämpeln är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `xdm.timestamp`. Det här fältet har bara stöd för Unix-tid.
 
 ## Tidsstämpla med Adobe Analytics-tillägget
 
