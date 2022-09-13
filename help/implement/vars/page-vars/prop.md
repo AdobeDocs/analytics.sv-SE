@@ -3,9 +3,9 @@ title: egenskap
 description: Anpassade variabler som du kan använda i implementeringen.
 feature: Variables
 exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 5df83f1614d9d17146873a5b5214636691ec87ab
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)
 
 ## Proppar med Web SDK
 
-Profiler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.props.prop1` till `_experience.analytics.customDimensions.props.prop75`.
+Profiler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.props.prop1` till `_experience.analytics.customDimensions.props.prop75`. Listutkast anges i en separat uppsättning fält.
 
 ## Proppar som använder Adobe Analytics-tillägget
 
@@ -53,13 +53,17 @@ Listtecken är en inställning som används för att tillåta variabeln att inne
 
 ### Konfigurera listproffs
 
-Aktivera listtips i inställningarna för rapportsviten. Se [Trafikvariabler](/help/admin/admin/c-traffic-variables/traffic-var.md) i användarhandboken för Admin. Kontrollera att den önskade avgränsaren är korrekt konfigurerad. Adobe har ingen standardavgränsare.
+Aktivera inledande lista [Trafikvariabler](/help/admin/admin/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Kontrollera att den önskade avgränsaren är korrekt konfigurerad. Adobe har ingen standardavgränsare.
 
 >[!TIP]
 >
->Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`), eller rör (`|`). Du kan använda valfri avgränsare som passar din implementering bäst.
+>Vanliga avgränsare som används i implementeringar är kommatecken (`,`), kolon (`:`), semikolon (`;`), eller rör (`|`). Du kan använda valfri icke-utökad ASCII-avgränsare som passar din implementering bäst.
 
-### Ange listans förtecken
+### Ange listproffs med Web SDK
+
+När du har konfigurerat proppar i rapportsvitens inställningar med den önskade avgränsaren mappas listproppar för Adobe Analytics under `_experience.analytics.customDimensions.listProps.prop1.values[]` till `_experience.analytics.customDimensions.listProps.prop75.values[]`. Web SDK använder automatiskt rätt avgränsare som anges under inställningarna för rapportsviten. Om du anger avgränsaren i XDM-fältet (till exempel `_experience.analytics.customDimensions.props.prop1.delimiter`), som åsidosätter avgränsaren som hämtas automatiskt från inställningarna för rapportsviten och kan leda till felaktig tolkning av listpropsträngen.
+
+### Ange listförsprång med Adobe Analytics-tillägget och AppMeasurement
 
 När du har konfigurerat liststeg i rapportsvitens inställningar med den önskade avgränsaren finns det inga andra implementeringsskillnader än att använda avgränsaren.
 
