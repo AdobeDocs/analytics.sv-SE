@@ -3,9 +3,9 @@ title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
-source-git-commit: 5e71564e3aade426d84a039a6864d441d165345a
+source-git-commit: 48f840f3f15702761a453763e7c416a67bcb687b
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Anpassade händelser är [mappas för Adobe Analytics](https://experienceleague.
 
 * Anpassade händelser 1-100 mappas till `_experience.analytics.event1to100.event1` - `_experience.analytics.event1to100.event100`.
 * Anpassade händelser 101-200 mappas till `_experience.analytics.event101to200.event100` - `_experience.analytics.event101to200.event200`.
-* Det här mönstret upprepas var 100:e händelse till `_experience.analytics.event901to1000.event901` - `_experience.analytics.event901to1000.event1000`. `eventx.value` används för att ange värdet. `eventx.id` används för att ange ID för serialisering.
+* Det här mönstret upprepas var 100:e händelse till `_experience.analytics.event901to1000.event901` - `_experience.analytics.event901to1000.event1000`. `eventx.value` används för att ange mängden som ska ökas. `eventx.id` används för [serialisering](event-serialization.md).
 * Order mappas till `commerce.purchases.value`.
 * Enheter mappas till summan av alla `productListItems[].quantity` fält.
 * Intäkterna är mappade till summan av alla `productListItems[].priceTotal` fält.
@@ -32,6 +32,10 @@ Anpassade händelser är [mappas för Adobe Analytics](https://experienceleague.
 * Cart Removals är mappade till `commerce.productListRemovals.value`.
 * Vyer för kundvagn mappas till `commerce.productListViews.value`.
 * Utcheckningar är mappade till `commerce.checkouts.value`.
+
+>[!NOTE]
+>
+>Om en händelse anges under `productListItems` (t.ex. `productListItems._experience.analytics.event1.value`) och den händelsen ännu inte finns i det här fältet läggs händelsen automatiskt till i det här fältet.
 
 ## Händelser som använder Adobe Analytics-tillägget
 
@@ -49,7 +53,7 @@ Flera funktioner är tillgängliga:
 * I en listruta kan du välja vilken händelse som ska inkluderas
 * Ett valfritt textfält för serialisering. Se [händelseserialisering](event-serialization.md) för mer information.
 * Ett valfritt textfält för ett händelsevärde. Du kan inkludera valuta för valutakurshändelser eller ett heltal för händelser som inte är valutaväxlar om du vill öka den flera gånger. Välj till exempel `event1` i listrutan och som `10` i detta fält stegvis `event1` efter 10 i rapporteringen.
-* En knapp för att lägga till en annan händelse. Det finns ingen rimlig gräns för hur många händelser du kan inkludera i en träff.
+* En knapp för att lägga till en annan händelse. Du kan lägga till så många händelser som du vill för en enskild regel av olika skäl.
 
 ## s.events i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
