@@ -4,9 +4,9 @@ description: Egna variabler som knyts till enskilda produkter.
 feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
 mini-toc-levels: 3
-source-git-commit: e8a6400895110a14306e2dc9465e5de03d1b5d73
+source-git-commit: 43703a5e90bcc2afbe45091d72f2c09a50f3db24
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,10 @@ Variabler för produktsyntax: [mappas för Adobe Analytics](https://experiencele
 
 * Produktsyntaxmarknadsföring eVars mappas under `productListItems[]._experience.analytics.customDimensions.eVars.eVar1` till `productListItems[]._experience.analytics.customDimensions.eVars.eVar250`.
 * Försäljningshändelser för produktsyntax mappas under `productListItems[]._experience.analytics.event1to100.event1.value` till `productListItems[]._experience.analytics.event901to1000.event1000.value`. [Händelseserialisering](events/event-serialization.md) XDM-fält mappas under `productListItems[]._experience.analytics.event1to100.event1.id` till `productListItems[]._experience.analytics.event901to1000.event1000.id`.
+
+>[!NOTE]
+>
+>När du anger händelser under `productListItems`behöver du inte ange dem i händelsesträngen. Om de anges på båda platserna har värdet i händelsesträngen företräde.
 
 I följande exempel visas en [produkt](products.md) använda flera eVars och events:
 
