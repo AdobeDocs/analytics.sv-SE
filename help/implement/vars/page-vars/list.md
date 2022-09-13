@@ -3,9 +3,9 @@ title: lista
 description: Anpassade variabler som innehåller flera värden i samma träff.
 feature: Variables
 exl-id: 612f6f10-6b68-402d-abb8-beb6f44ca6ff
-source-git-commit: 4fedc1d27a03d4376103e4648e1e66cbd62346af
+source-git-commit: 50e57e30a50d9c010e8b25b5a7d0afc8926525f5
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,9 @@ Se till att du spelar in hur du använder varje listvariabel och deras logik i [
 
 Se till att du konfigurerar varje listvariabel i inställningarna för rapportsviten innan du använder dem i implementeringen. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/list-var-admin.md) i administrationshandboken. Det här steget gäller alla implementeringsmetoder.
 
->[!NOTE]
->
->Listvariabler som implementeras med hjälp av mappade fält i Web SDK använder standardavgränsaren för ett komma (&#39;`,`&#39;).
-
 ## Visa variabler med Web SDK
 
-Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.lists.list1.list[]` till `_experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller en `"value"` -objekt som innehåller varje sträng. Följande XDM-objekt fyller till exempel i `list1` variabel med `"Example value 1,Example value 2,Example value 3"`.
+Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.lists.list1.list[]` till `_experience.analytics.customDimensions.lists.list3.list[]`. Varje arrayelement innehåller en `"value"` -objekt som innehåller varje sträng. Ingen avgränsare behövs; det inkluderas automatiskt med det värde som anges i [Rapportsvitsinställningar](/help/admin/admin/conversion-var-admin/list-var-admin.md). Om ett komma (&#39;`,`&#39;) är konfigurerad som avgränsare för listvariabel 1, fylls följande XDM-objekt i `list1` variabel med `"Example value 1,Example value 2,Example value 3"`.
 
 ```json
 "xdm": {
@@ -61,23 +57,6 @@ Listvariabler är [mappas för Adobe Analytics](https://experienceleague.adobe.c
 >[!NOTE]
 >
 >Adobe XDM-schemat innehåller `key` förutom `value` objekt i varje `list[]` array. Adobe använder inte dessa `key` objekt när data skickas till Adobe Analytics.
-
-Om din organisation kräver en annan avgränsare än ett komma (&#39;`,`&#39;) kan du skicka hela liststrängen, inklusive de önskade avgränsarna, till ett anpassat XDM-fält. Kontrollera att listvariabeln är konfigurerad att acceptera den önskade avgränsaren i [Rapportsvitsinställningar](/help/admin/admin/conversion-var-admin/list-var-admin.md).
-
-```json
-"xdm": {
-    "custom_object": {
-        "custom_path": {
-            "custom_listvar": "Example value 1|Example value 2|Example value 3"
-        }
-    }
-}
-```
-
-Sedan kan du antingen:
-
-* Mappa det anpassade XDM-fältet till önskad listvariabel i Adobe Experience Edge, eller
-* Skapa en bearbetningsregel som skriver över den önskade listan var med kontextdatavariabeln. Se [Mappa andra XDM-fält till analysvariabler](../../aep-edge/variable-mapping.md#mapping-other-xdm-fields-to-analytics-variables).
 
 ## Visa variabler med Adobe Analytics-tillägget
 
