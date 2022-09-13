@@ -3,9 +3,9 @@ title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: 4fedc1d27a03d4376103e4648e1e66cbd62346af
+source-git-commit: 5b426c0cc6f0a30c167f35d96fa1498ac0961c3e
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Produkterna är [mappas för Adobe Analytics](https://experienceleague.adobe.com
 * Kvantitet har mappats till `productListItems[].quantity`.
 * Priset är mappat till `productListItems[].priceTotal`.
 * Merchandising eVars mappas till `productListItems._experience.analytics.customDimensions.eVars.eVar1` till `productListItems._experience.analytics.customDimensions.eVars.eVar250`, beroende på vilken eVar du vill binda till en produkt.
-* Marknadsföringshändelser mappas till `productListItems[]._experience.analytics.event1to100.event1.value` till `productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt.
+* Marknadsföringshändelser mappas till `productListItems[]._experience.analytics.event1to100.event1.value` till `productListItems._experience.analytics.event901to1000.event1000.value`, beroende på vilken händelse du vill binda till en produkt. Om du anger en händelse i något av dessa fält inkluderas den automatiskt i [event](events/events-overview.md) sträng skickad till Adobe Analytics.
 
 >[!NOTE]
 >
