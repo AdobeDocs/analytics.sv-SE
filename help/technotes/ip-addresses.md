@@ -3,9 +3,9 @@ title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 feature: Data Configuration and Collection
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: 6788b904295fd92642d27ade65a31d61897069a3
+source-git-commit: be8e4c3a25dccaf7bd591f487e1131288ba26f2a
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -43,12 +43,6 @@ Följande tabell omfattar alla standardservrar för datainsamling och regionala 
 | `66.117.16.0/20` |
 | `66.235.128.0/19` |
 | `130.248.0.0/16` |
-| `172.82.192.0/18` |
-| `185.34.188.0/22` |
-| `192.243.224.0/19` |
-| `205.219.231.0/24` |
-| `208.67.40.0/22` |
-| `208.77.136.0/22` |
 
 ## Datainsamling och IP-adressblock för FTP
 
@@ -56,68 +50,34 @@ Om din organisation föredrar att tillåta specifika IP-adressintervall kan du a
 
 | Plats | IP-intervall (CIDR-notering) |
 | --- | --- |
-| Amsterdam | `66.117.28.0/23` |
-| Dallas | `205.219.231.0/24` |
-| Dallas | `66.235.152.0/22` |
-| Dallas | `66.235.140.0/22` |
-| Dallas | `63.140.32.0/21` |
-| Dallas | `172.82.208.0/22` |
-| Hongkong SAR of China | `66.117.24.0/22` |
+| Australien | `63.140.55.0/24` |
+| Australien | `63.140.56.0/23` |
+| Kalifornien | `63.140.32.0/23` |
+| Kalifornien | `63.140.34.0/24` |
+| Indien | `66.117.20.0/24` |
+| Indien | `66.117.22.0/23` |
+| Japan | `130.248.130.0/23` |
+| Japan | `130.248.169.0/23` |
+| Japan | `63.140.50.0/23` |
+| Japan | `66.117.31.0/24` |
 | London | `66.235.156.0/24` |
-| London | `66.235.148.0/23` |
-| London | `63.140.40.0/22` |
-| London | `208.67.41.0/24` |
-| London | `192.243.254.0/23` |
-| London | `192.243.244.0/22` |
-| London | `185.34.188.0/23` |
-| London | `130.248.152.0/21` |
-| London | `172.82.224.0/21` |
-| London | `172.82.232.0/21` |
-| Oregon | `192.243.240.0/22` |
-| Oregon | `192.243.232.0/21` |
-| Oregon | `192.243.224.0/21` |
-| Oregon | `130.248.160.0/21` |
-| Oregon | `130.248.148.0/22` |
-| Oregon | `172.82.192.0/21` |
-| Oregon | `172.82.216.0/21` |
-| Paris | `208.67.40.0/24` |
-| Singapore | `66.235.150.0/24` |
-| Singapore | `66.235.130.0/23` |
+| Oregon | `66.235.132.0/22` |
+| Singapore | `130.248.170.0/23` |
+| Singapore | `130.248.240.0/24` |
 | Singapore | `63.140.44.0/22` |
-| Singapore | `208.67.43.0/24` |
-| Singapore | `172.82.240.0/22` |
-| Singapore | `172.82.246.0/23` |
-| Singapore | `172.82.248.0/21` |
-| San Jose | `66.117.20.0/24` |
-| San Jose | `66.235.132.0/22` |
-| San Jose | `130.248.128.0/22` |
-| San Jose | `192.243.248.0/23` |
-| San Jose | `172.82.200.0/22` |
-| San Jose | `66.235.136.0/22` |
-| San Jose | `208.91.175.0/24` |
-| San Jose | `208.91.174.0/24` |
-| San Jose | `208.91.169.0/24` |
-| Sydney | `216.104.216.0/23` |
-| Tokyo | `66.235.159.0/24` |
-| Tokyo | `66.117.21.0/24` |
-| Tokyo | `63.140.52.0/24` |
-| Tokyo | `63.140.50.0/23` |
-| Virginia | `66.235.144.0/22` |
-| Virginia | `208.77.138.0/23` |
-| Virginia | `208.77.136.0/23` |
-| Virginia | `192.243.250.0/23` |
-| Virginia | `130.248.144.0/22` |
-| Virginia | `172.82.204.0/22` |
-| Virginia | `172.82.212.0/22` |
+| Singapore | `63.140.48.0/23` |
+| Singapore | `66.117.30.0/24` |
+| Virginia | `63.140.38.0/23` |
+| Virginia | `63.140.54.0/24` |
 
 ## AWS-värdar
 
-Adobe Analytics använder Amazon Web Services som en del av sin datainsamlingsprocess. Följande tabell innehåller AWS-värdar som är reserverade för Adobe. Värdarna är **not** ingår i det aggregerade blockområdet ovan.
+Adobe Analytics använder Amazon Web Services som en del av sin datainsamlingsprocess. Följande tabell innehåller AWS IPv4-värdadresser som är reserverade för Adobe. Värdarna är **not** ingår i det aggregerade blockområdet ovan.
 
 | Plats | Värd |
 | --- | --- |
-| Kina | `140.179.89.228` |
-| Kina | `140.179.125.98` |
+| Kina | `52.80.83.220` |
+| Kina | `71.132.16.253` |
 | Frankrike | `13.36.218.177` |
 | Frankrike | `15.188.95.229` |
 | Frankrike | `15.236.176.210` |
@@ -130,3 +90,21 @@ Adobe Analytics använder Amazon Web Services som en del av sin datainsamlingspr
 | Virginia | `3.216.131.23` |
 | Virginia | `34.204.237.47` |
 | Virginia | `54.163.234.74` |
+
+Följande tabell innehåller AWS IPv6-adressblock som används av Adobe. Värdarna är **not** ingår i det aggregerade blockområdet ovan.
+
+| Plats | Värd |
+| --- | --- |
+| Australien | `2406:da1c:406:1a00::/56` |
+| Australien | `2406:da1c:ce5:b400::/56` |
+| Kalifornien | `2600:1f1c:366:d900::/56` |
+| Indien | `2406:da1a:f34:6a00::/56` |
+| Irland | `2a05:d018:309:600::/56` |
+| Japan | `2406:da14:b07:ab00::/56` |
+| Oregon | `2600:1f14:1eb:7d00::/56` |
+| Oregon | `2600:1f14:9d3:2b00::/56` |
+| Singapore | `2406:da18:6e8:1e00::/56` |
+| Virginia | `2600:1f18:1a20:e800::/56` |
+| Virginia | `2600:1f18:4fd:6000::/56` |
+| Virginia | `2600:1f18:b00:e100::/56` |
+| Virginia | `2600:1f18:d1f:bd00::/56` |
