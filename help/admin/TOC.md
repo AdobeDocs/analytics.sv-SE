@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 70a1d61a6e9af27c449876ac4cf4d7504659be3a
+source-git-commit: 65ee7ae6d838f34149eb60547d976856e4da3b17
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '671'
 ht-degree: 87%
 
 ---
@@ -62,7 +62,6 @@ ht-degree: 87%
       + [Översikt över behandlingsregler](admin/c-processing-rules/processing-rules.md)
       + Konfiguration av behandlingsregler {#processing-rules-configuration}
          + [Så fungerar behandlingsregler](admin/c-processing-rules/c-processing-rules-configuration/processing-rules-about.md)
-         + [Behandlingsorder](admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md)
          + [Skapa behandlingsregler](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md)
          + [Visa aktiva behandlingsregler](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules-view.md)
          + [Visa historik för behandlingsregel](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rule-view-history.md)

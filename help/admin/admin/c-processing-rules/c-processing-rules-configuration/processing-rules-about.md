@@ -4,7 +4,7 @@ subtopic: Processing rules
 title: Så fungerar behandlingsregler
 feature: Processing Rules
 exl-id: 9d2d9f2d-1e16-486f-9191-2c43776374da
-source-git-commit: 71b3b1937e7fa272f0497008e8e510204bbb4418
+source-git-commit: 65b3a9001aa062429a870d374af20618c532de35
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Följande tabell innehåller viktiga begrepp som du måste förstå när du anv�
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsregler tillämpas före VISTA-regler och regler för marknadsföringskanal. </p> </td> 
-   <td colname="col2"> <p> <a href="/help/admin/admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md"> Bearbetningsordning </a> </p> </td> 
+   <td colname="col2"> <p> <a href="/help/technotes/processing-order.md"> Bearbetningsordning </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Det går inte att utesluta träffar. </p> </td> 

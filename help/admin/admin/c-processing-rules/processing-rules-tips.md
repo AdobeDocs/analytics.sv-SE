@@ -4,10 +4,10 @@ subtopic: Processing rules
 title: Tips och tricks för regler
 feature: Processing Rules
 exl-id: e663d98b-dcfd-4420-84ac-07ddfe55a3f2
-source-git-commit: 71b3b1937e7fa272f0497008e8e510204bbb4418
+source-git-commit: 65ee7ae6d838f34149eb60547d976856e4da3b17
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
@@ -60,3 +60,9 @@ Söktermer som hämtas från en frågesträng måste kodas korrekt, annars match
 Välj rätt matchande villkor för att hitta det mest restriktiva villkoret som matchar korrekt. Du kan söka efter värden i en rapport innan du skapar en regel för att se till att det inte finns några oönskade matchningar. Du bör till exempel söka i Prop2-rapporten efter alla platser där villkoret matchar innan du aktiverar den här regeln.
 
 ![](assets/tips-startswith.png)
+
+## Hur bearbetningsregler tillämpas vid kopiering av träffar med VISTA
+
+Om du har en VISTA-regel konfigurerad att kopiera träffar till en annan rapportsvit, skickas dessa träffar via eventuella bearbetningsregler som definieras i den andra rapportsviten.
+
+Om du har definierat bearbetningsregler för den ursprungliga rapportsviten kan dessa regler tillämpas eller inte baserat på hur VISTA-regeln konfigurerades av Engineering Services. Om du vill veta mer kan du fråga din implementeringsspecialist om VISTA-regeln kopierar värdena för&quot;före&quot; eller&quot;efter&quot; till den extra rapportsviten. Om värdet &quot;pre&quot; kopieras, tillämpas inte bearbetningsregler som definierats i den ursprungliga rapportsviten. Om värdet &quot;post&quot; kopieras tillämpas bearbetningsreglerna innan träffen kopieras.

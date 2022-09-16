@@ -4,9 +4,9 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: En kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
-source-git-commit: 1539649c758814d64a6f5c6dddff262df831d691
+source-git-commit: 65ee7ae6d838f34149eb60547d976856e4da3b17
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 69%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 69%
 + [Migrera bearbetningsregler för mobila tjänster till Adobe Analytics](migrate-mobile.md)
 + [Stöd för flera valutor](multicurrency.md)
 + [Sekretessöversikt](privacy-overview.md)
++ [Behandlingsorder](processing-order.md)
 + [Progressive Web Apps](pwa.md)
 + [Omdirigering och alias](redirects.md)
 + Regional datainsamling {#rdc}

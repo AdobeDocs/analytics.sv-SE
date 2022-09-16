@@ -3,9 +3,9 @@ description: Med Bot Rules kan du ta bort trafik som genereras av kända spindla
 title: Bot Rules - översikt
 feature: Bot Removal
 exl-id: 1c0009f6-2746-4ef1-8dcb-e2693617e91e
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: 65b3a9001aa062429a870d374af20618c532de35
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1327'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ The **[!UICONTROL contains]** får innehålla högst 100 tecken. Listan innehål
 
 ### IP-adress (inklusive matchningar med jokertecken)
 
-Matchar en IP-adress eller flera adresser i samma block med jokertecken (*). Ange de numeriska värdena för den IP-adress som du vill matcha. Ersätt * för alla värden som du vill matcha med ett jokertecken. Följande lista innehåller exempel på IP-adressmatchningssträng:
+Matchar en IP-adress eller flera adresser i samma block med jokertecken (&#42;). Ange de numeriska värdena för den IP-adress som du vill matcha. Ersätt &#42; för alla värden som du vill matcha med hjälp av ett jokertecken. Följande lista innehåller exempel på IP-adressmatchningssträng:
 
 ```
 10.10.10.1
@@ -74,7 +74,7 @@ Matchar en IP-adress eller flera adresser i samma block med jokertecken (*). Ang
 
 ### IP-adressintervall
 
-Ange de start- och slutintervall för IP-adresserna som ska matcha. Ersätt * för alla värden som du vill matcha med ett jokertecken.
+Ange de start- och slutintervall för IP-adresserna som ska matcha. Ersätt &#42; för alla värden som du vill matcha med hjälp av ett jokertecken.
 
 ### Definiera en anpassad robotregel
 
@@ -118,12 +118,11 @@ Välj **[!UICONTROL Overwrite existing rules]** om du vill ta bort alla befintli
 
 The **[!UICONTROL Export Uploaded Bot File]** -knappen exporterar alla regler som definieras i användargränssnittet i ett CSV-format.
 
-
 ## Robotreglernas inverkan på datainsamling {#section_F01A3130E7A04A9993371CF26F6586F2}
 
 Punktregler tillämpas på alla analysdata. Data som tas bort av punktregler visas bara i rapporter för start- och punktsidor.
 
-VISTA-regler används efter punktregler (se [Bearbetningsordning).](/help/admin/admin/c-processing-rules/c-processing-rules-configuration/processing-rule-order.md)
+VISTA-regler tillämpas efter PUNKTREGLER. Se [Bearbetningsorder](/help/technotes/processing-order.md) i Technotes-handboken.
 
 **Bearbetning av högfrekvent besök:** Om fler än 100 träffar inträffar under ett besök avgör rapporten om besökets tid i sekunder är mindre än eller lika med antalet träffar under besöket. I denna situation, på grund av kostnaderna för att behandla långa, intensiva besök, börjar rapporteringen om med ett nytt besök. Besök med många träffar orsakas normalt av robotattacker och betraktas inte som normala besökare.
 
@@ -137,4 +136,4 @@ IAB-robotlistan baseras enbart på användaragent, så filtrering som baseras p�
 
 Om IP-förfalskning är aktiverat inträffar IP-uteslutning innan IP-adressen döljs, så kunderna behöver inte ändra någonting när de aktiverar IP-förfalskning.
 
-Om den sista oktetten tas bort, görs det före IP-filtrering. Den sista oktetten ersätts med 0, och reglerna för IP-undantag måste uppdateras för att matcha IP-adresser med en nolla på slutet. Matchande * ska matcha 0.
+Om den sista oktetten tas bort, görs det före IP-filtrering. Den sista oktetten ersätts med 0, och reglerna för IP-undantag måste uppdateras för att matcha IP-adresser med en nolla på slutet. Matchande &#42; ska matcha 0.
