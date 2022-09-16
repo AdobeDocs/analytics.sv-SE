@@ -1,9 +1,9 @@
 ---
 title: Bearbetningsordning för data i Adobe Analytics
 description: Lär dig ordningen på komponenter och tjänster som bearbetar data i Adobe Analytics.
-source-git-commit: 65ee7ae6d838f34149eb60547d976856e4da3b17
+source-git-commit: 64693627459b85031edbe61865077c44f93f72bf
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 Adobe erbjuder många sätt att ändra eller ändra data innan de visas i rapporter. På den här sidan visas i vilken ordning olika Adobe Analytics-funktioner bearbetar data. Du kan använda den här listan för att felsöka inkonsekvenser i data eller för att fastställa den bästa funktionen som ska användas när datajusteringar är nödvändiga.
 
+![Behandlingsorder](assets/processing-order.png)
+
 ## Data innan de skickas till Adobe
 
 Innan data skickas till Adobe kompileras den vanligtvis på klientsidan på något av följande sätt:
 
 * **AppMeasurement**: En JavaScript-fil som finns på din webbplats och som refereras till på varje sida. Data skickas direkt till Adobe Analytics.
 * **Adobe Experience Platform Web SDK**: En JavaScript-fil som finns på din webbplats och som refereras till på varje sida. Data skickas till Adobe Experience Edge.
-* **Taggar i Adobe Experience Cloud Data Collection**: En JavaScript-referens på varje sida som innehåller regler som skapats i användargränssnittet för datainsamling. Adobe Analytics-tillägget erbjuder ett enklare sätt att implementera AppMeasurement. Web SDK-tillägget är ett enklare sätt att implementera Web SDK.
+* **Taggar i Adobe Experience Cloud Data Collection**: En JavaScript-fil som refereras till på varje sida och som innehåller regler som skapats i användargränssnittet för datainsamling. Adobe Analytics-tillägget erbjuder ett enklare sätt att implementera AppMeasurement. Web SDK-tillägget är ett enklare sätt att implementera Web SDK.
 
 Om du skickar data till Adobe Experience Edge kan du konfigurera det för att vidarebefordra data till Adobe Analytics (och många andra Adobe Experience Cloud-lösningar). Oavsett implementeringsmetod skickas i slutändan en bildbegäran med önskade variabler till datainsamlingsservrarna i Adobe.
 
