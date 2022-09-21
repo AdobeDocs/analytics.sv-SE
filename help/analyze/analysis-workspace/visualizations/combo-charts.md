@@ -4,18 +4,14 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 46a3fc5170f4b445cf3cafd2c4cc01a40d522bd3
+source-git-commit: acacd0a61dfaf2ab7ba20bcaa1c6bcc4f6f67765
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
 
 # Kombinationsdiagram
-
->[!NOTE]
->
->Den här funktionen finns för närvarande i [begränsad testning](/help/release-notes/releases.md).
 
 The [!UICONTROL Combo chart] visualisering gör det enkelt att snabbt skapa en jämförelsevisualisering utan att först behöva skapa en tabell. Du kan enkelt visa trender i dina data i en kombination av rad och rad.
 
