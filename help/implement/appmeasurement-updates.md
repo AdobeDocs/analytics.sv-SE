@@ -3,10 +3,10 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: b99852f4b8e0a3034ea8965e5646b1ab2f1a8c4c
 workflow-type: tm+mt
-source-wordcount: '2263'
-ht-degree: 3%
+source-wordcount: '2321'
+ht-degree: 2%
 
 ---
 
@@ -17,6 +17,13 @@ Ackumulerade versionsinformation för [!DNL AppMeasurement] för JavaScript.
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
 Du kan hämta den senaste versionen av AppMeasurement i [Kodhanteraren](/help/admin/admin/code-manager-admin.md).
+
+## Version 2.23.0
+
+Releasedatum: **TBD**
+
+* AppMeasurement har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda flaggan &quot;collectHighEntropyUserAgentHints&quot;. Samling med hög entropi-tips är som standard inaktiverad. Läs mer om klienttips för användaragenter här [länk att följa].
+
 
 ## Version 2.22.4
 
