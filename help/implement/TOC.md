@@ -3,10 +3,10 @@ product: analytics
 audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
-user-guide-description: 'Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics. '
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+user-guide-description: Anpassa vilka data som samlas in för att få ut mer av Adobe Analytics.
+source-git-commit: 72ef2d5e34220f1703714fac40a9dae4e76c1ab1
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '402'
 ht-degree: 69%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 69%
       + [avbryt](vars/config-vars/abort.md)
       + [konto](vars/config-vars/account.md)
       + [charSet](vars/config-vars/charset.md)
+      + [collectHighEntropyUserAgentHints](vars/config-vars/collecthighentropyuseragenthints.md)
       + [cookieDomain](vars/config-vars/cookiedomain.md)
       + [cookieDomainPeriods](vars/config-vars/cookiedomainperiods.md)
       + [cookieLifetime](vars/config-vars/cookielifetime.md)
