@@ -1,9 +1,9 @@
 ---
 title: Klienttips
-description: Läs mer om
-source-git-commit: b99852f4b8e0a3034ea8965e5646b1ab2f1a8c4c
+description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
+source-git-commit: 788ab49fec9117e0ef2a736f609a627b913b9f8c
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '904'
 ht-degree: 2%
 
 ---
@@ -29,13 +29,19 @@ Google delar upp klienttips för användaragenten i två kategorier: Tips för l
 
 Tips om låg entropi tillhandahålls automatiskt av webbläsaren och ingår i Adobe-processen för att få enhetsinformation. Nyare versioner av AppMeasurement (som startar TBD) och Web SDK (som startar TBD) kan konfigureras för att samla in tips för hög entropi. För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**. Här finns mer information om hur du implementerar detta.
 
++++
+
 +++**Kan jag välja vilka högentropiska tips jag samlar in?**
 
 Inte just nu. Du kan välja att samla in alla högentropiska tips eller inga.
 
++++
+
 +++**Kommer enhetsrapporteringen att ändras i Analytics?**
 
 De enhetsfält som är tillgängliga för rapportering ändras inte. De data som hämtas för dessa fält kan ändras beroende på vilket fält och hur du har konfigurerat samlingen för klienttips.
+
++++
 
 +++**Vilka analysrapporteringsfält kommer från användaragenten?**
 
@@ -47,35 +53,51 @@ De enhetsfält som är tillgängliga för rapportering ändras inte. De data som
 * Dataflöden (Observera att användarna måste uppdatera för att kunna hämta dessa fält. Dessutom finns det ett beroende där vi inte kan visa mobilt ID tillsammans med enhetsinformation.)
 * Källanslutning för analys (inte klar)
 
++++
+
 +++**Vilka analysrapporteringsfält härleds från värden som lagras i höga entropitups?**
 
 Från om med september 2022 indikerar Google publicerade tidslinje för att frysa användaragenttips att operativsystemets version kommer att sluta uppdateras från och med oktober 2022. Utan höga entropintips kommer exaktheten i operativsystemsversionen, som ingår i analysdimensionen &quot;Operativsystem&quot;, att gradvis försämras.
 
 Se [tidslinje som publicerats av Google](https://blog.chromium.org/2021/09/user-agent-reduction-origin-trial-and-dates.html) för att se tidpunkten för frysning av användaragenten.
 
++++
+
 +++**Vilka webbläsare påverkas av klienttipsen?**
 
 Klienttips gäller endast för Chromium-webbläsare som Google Chrome och Microsoft Edge. Data från andra webbläsare eller mobilappar ändras inte.
+
++++
 
 +++**Hur använder Adobe klienttips för att hämta enhetsinformation?**
 
 Adobe använder en enhetskarta från en annan leverantör, Device Atlas, som kommer att använda både klienttips och användaragent för att hämta enhetsinformation.
 
++++
+
 +++**Finns det klienttips i dataflöden?**
 
 Ja. Se dokumentationen (som du följer).
+
++++
 
 +++**Kommer klienttips att vara tillgängliga i data som skickas till AEP och CJA via Adobe Source Connector?**
 
 Vi planerar att inkludera kundtips i data via Adobe Source Connector under första halvåret 2023.
 
++++
+
 +++**Hur visas klienttips i XDM?**
 
 Se [schemadokumentation](https://github.com/adobe/xdm/blob/master/components/datatypes/browserdetails.schema.json#L121) i Adobe Experience Platform.
 
++++
+
 +++**Var kan jag läsa mer om kundtips?**
 
 Detta [Google blogginlägg](https://web.dev/user-agent-client-hints/) är en bra referens och utgångspunkt.
+
++++
 
 +++**Vilka är de olika tipsfälten? Vilka påverkar enhetsrapporteringen?**
 
@@ -93,6 +115,8 @@ Tabellen nedan beskriver klienttipsen från september 2022.
 | Sec-CH-UA-Model | Enhetsmodell | Hög | &quot;Pixel 3&quot; | Ingen? |
 | Sec-CH-UA-platform-version | Operativsystem/plattformsversion | Hög | &quot;10&quot; | [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en) |
 
++++
+
 +++**Hur fångar jag antydan?**
 
 Högentropytips kan konfigureras
@@ -100,6 +124,8 @@ Högentropytips kan konfigureras
 * För AppMeasurement direkt [länk till flaggposten i implementeringshandboken]
 * I tagganalystillägget
 * I Web SDK.
+
++++
 
 +++**Vilka data tas bort från användaragenten och när?**
 
