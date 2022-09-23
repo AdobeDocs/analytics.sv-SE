@@ -1,9 +1,9 @@
 ---
 title: Bearbetningsordning för data i Adobe Analytics
 description: Lär dig ordningen på komponenter och tjänster som bearbetar data i Adobe Analytics.
-source-git-commit: 64693627459b85031edbe61865077c44f93f72bf
+source-git-commit: 0881efeb2ce4f7af96f42bc925e43ce5ba1f64a2
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Innan data skickas till Adobe kompileras den vanligtvis på klientsidan på någ
 
 * **AppMeasurement**: En JavaScript-fil som finns på din webbplats och som refereras till på varje sida. Data skickas direkt till Adobe Analytics.
 * **Adobe Experience Platform Web SDK**: En JavaScript-fil som finns på din webbplats och som refereras till på varje sida. Data skickas till Adobe Experience Edge.
-* **Taggar i Adobe Experience Cloud Data Collection**: En JavaScript-fil som refereras till på varje sida och som innehåller regler som skapats i användargränssnittet för datainsamling. Adobe Analytics-tillägget erbjuder ett enklare sätt att implementera AppMeasurement. Web SDK-tillägget är ett enklare sätt att implementera Web SDK.
+* **Taggar i Adobe Experience Cloud Data Collection**: En JavaScript-fil som refereras till på varje sida och som innehåller regler som skapats i användargränssnittet för datainsamling. Adobe Analytics-tillägget är ett enklare sätt att implementera AppMeasurement. Web SDK-tillägget är ett enklare sätt att implementera Web SDK.
 
 Om du skickar data till Adobe Experience Edge kan du konfigurera det för att vidarebefordra data till Adobe Analytics (och många andra Adobe Experience Cloud-lösningar). Oavsett implementeringsmetod skickas i slutändan en bildbegäran med önskade variabler till datainsamlingsservrarna i Adobe.
 

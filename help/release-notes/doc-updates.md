@@ -4,10 +4,10 @@ description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättni
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 64693627459b85031edbe61865077c44f93f72bf
+source-git-commit: 0a23ad56a661a420dd44e2875c22927f9734dedf
 workflow-type: tm+mt
-source-wordcount: '3262'
-ht-degree: 39%
+source-wordcount: '3398'
+ht-degree: 37%
 
 ---
 
@@ -24,7 +24,14 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Datum | Beskrivning |
 | --- | --- |
 | **September 2022** |  |
+| Kombinationsdiagram | Nytt ämne på [kombinationsdiagram](/help/analyze/analysis-workspace/visualizations/combo-charts.md) visualisering. |
+| Uppdaterat plugin-program | Uppdaterad version av [getvalonce](/help/implement/vars/plugins/getvalonce.md) implementeringsplugin. |
+| Ny konfigurationsvariabel | Dokumentation på [collectHighEntropyUserAgentHints](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md) |
+| Kundtips med hög entropi | Nytt avsnitt om hur Adobe använder [klienttips](/help/technotes/client-hints.md) utöver User-Agent för att fastställa enhetsinformation. |
 | Behandlingsorder | Olika hjälpsidor har sammanställts för att ge ett enda hjälpavsnitt om [Bearbetningsorder](/help/technotes/processing-order.md). |
+| **Augusti 2022** |  |
+| Stöd för listvariabler i XDM för Edge Collection | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda XDM för att ange innehållet i List Variable. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en#list-variables-using-the-web-sdk) | 18 augusti 2022 |
+| Användning av SKU-fält i XDM för Edge Collection när produktsträngsvariabler anges | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda SKU-värdet för att ställa in produktfältet i variabeln products. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en#products-using-the-web-sdk) |
 | **Juni 2022** |  |
 | Marknadsföringsvariabler i XDM för Edge Collection | Dokumentation på [stöd för Merchandising-variabler i XDM för Edge Collection](/help/components/dimensions/evar-merchandising.md) |
 | Experience Platform Edge-dokumentation | Nya artiklar om Adobe Analytics-implementering via [Web SDK](/help/implement/aep-edge/web-sdk/overview.md), [Mobile SDK](/help/implement/aep-edge/mobile-sdk/overview.md)och [Edge API](/help/implement/aep-edge/edge-api/overview.md). |
@@ -109,7 +116,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 18 juni 2020 | Ny dokumentation för [Projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade arbetsyteprojekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
 | 18 juni 2020 | Ny dokumentation om [Visa endast arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html). Projekt kan delas med användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. |
 | 18 juni 2020 | Ny dokumentation om [Projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade arbetsyteprojekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
-| 18 juni 2020 | Ny dokumentation om [Samredigera projekt på arbetsytan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html). Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. |
+| 18 juni 2020 | Ny dokumentation om [Samredigera projekt på arbetsytan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html). Mottagare som läggs till i rollen Kan redigera kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. |
 | **Maj 2020** |  |
 | 31 maj 2020 | Ny dokumentation om [API för massdatainmatning](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) |
 | 21 maj 2020 | Ny dokumentation för [Adobe Analytics dashboards](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html) |
@@ -148,7 +155,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 21 november 2019 | Uppdaterat [Vanliga frågor om arbetsflödet i Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=en) för att ange tillgänglighet i LiveStream. |
 | 25 oktober 2019 | Uppdaterat [Adobe Analytics Key Concepts](/help/technotes/terms.md) sida. |
 | 10 oktober 2019 | Uppdatera till Frihand-tabellsummor: innehåller nu två summor, **[!UICONTROL Table total]** och **[!UICONTROL Grand total]**. Raden med tabellsumman avser de [rapportfilter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) som används. Tidigare påverkades summorna bara av segmentering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)<br/>Dessutom har alternativen **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]** lagts till i **[!UICONTROL Column Settings]**.<br/>Med den här förändringen av totalsummor för friformstabeller uppdateras beroende visualiseringar (som länkade **[!UICONTROL Summary Number]**-visualiseringar) samt exporterade CSV- och PDF-data. |
-| Oktober 10,2019 | I Workspace lades möjligheten att enkelt ta bort&quot;Ospecificerad (ingen)&quot; till som ett alternativ för att rapportera filter. |
+| Oktober 10,2019 | I arbetsytan lades möjligheten att enkelt ta bort &#39;Ospecificerad (ingen)&#39; till som ett alternativ för att rapportera filter. |
 | Oktober 10,2019 | I Workspace har de lila granularitetskomponenterna (Minute, Hour, Day, Week, Month, Quarter, Year) tagits bort. Du **behöver inte göra något** om du tidigare har använt någon av de lila tidskomponenterna.<br/>Den här ändringen innebär även att det lila avsnittet **[!UICONTROL Time]** har bytt namn till **[!UICONTROL Date Ranges]**. |
 | 1 oktober 2019 | Ny artikel på [Summor för arbetsyta](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/workspace-totals.html#cja-workspace?lang=en). |
 | 28 september 2019 | Nya artiklar om [konfigurationsvariabler för JavaScript-implementering](/help/implement/vars/config-vars/configuration-variables.md). |
