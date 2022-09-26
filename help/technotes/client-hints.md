@@ -1,9 +1,9 @@
 ---
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
-source-git-commit: 72ef2d5e34220f1703714fac40a9dae4e76c1ab1
+source-git-commit: f2f1e64a62796b58c24e6ff652db93b21f750669
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -86,9 +86,15 @@ Klienttips gäller endast för Chromium-webbläsare som Google Chrome och Micros
 
 +++
 
+++**Stöds klienttips över osäkra anslutningar?
+
+Nej. Klienttips kan bara samlas in via en säker HTTP-anslutning, till exempel HTTPS.
+
++++
+
 +++**Kommer klienttips att vara tillgängliga i data som skickas till AEP och CJA via Adobe Source Connector?**
 
-Vi planerar att inkludera kundtips i data via Adobe Source Connector under första halvåret 2023.
+Adobe planerar att inkludera klienttips i data via Adobe Source Connector under första halvåret 2023.
 
 +++
 
