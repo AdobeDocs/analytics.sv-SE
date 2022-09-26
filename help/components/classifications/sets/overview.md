@@ -2,9 +2,9 @@
 title: Översikt över klassificeringsuppsättningar
 description: Använd Klassificeringsuppsättningar för att hantera klassificeringsdata.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
-source-git-commit: a1f199525c567bc9d7bb614ee03980f582cbbc7a
+source-git-commit: faa1c730e051000032b4c442b43f17bd9c4d76d1
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassifi
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Om du vill ha tillgång till den här funktionen kontaktar du kundtjänst på Adobe eller kontohanteraren som kan vidarebefordra din begäran till klassificeringsgruppen för etablering.
+>Klassificeringsuppsättningar är tillgängliga för alla kunder som har sina rapportsviter migrerade till den nya klassificeringsarkitekturen. Kontakta Adobe kundtjänst eller din kontoansvarige om du vill ha mer information.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]**
 
