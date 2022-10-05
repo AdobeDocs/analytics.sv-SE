@@ -4,9 +4,9 @@ title: Skapa ett mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: 7f630839ae7d75730f93588877a172f3590d5a5e
+source-git-commit: 40f335c18849551bce23f386c647f2aec32c7988
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Så här implementerar du styrkortsmallen:
 
 Om du vill lägga till en relaterad dimension till ett mått drar du det från den vänstra panelen och släpper det på en platta.
 
-Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Channel]**, i det här exemplet) till **[!UICONTROL Unique Visitors]** genom att dra och släppa det på plattan. Dimensioner visas under [!UICONTROL Drill Ins] (uppdelning) i den rutspecifika delen **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
+Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Channel]**, i det här exemplet) till **[!UICONTROL Unique Visitors]** genom att dra och släppa det på plattan. Dimensioner visas under [!UICONTROL Drill Ins] del av detaljbilden **[!UICONTROL Properties]**. Du kan lägga till flera dimensioner till varje platta.
 
 ![Lägg till dimensioner](assets/layer_dimensions.png)
 
@@ -154,13 +154,15 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan i den högra listen. På den här listen kan du ange en ny **[!UICONTROL Title]** för plattan och konfigurera plattan genom att ange komponenter i stället för att dra och släppa dem från den vänstra listen.
+När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att tillämpa segment.
 
 ![Egenskapspanelen](assets/properties_tile.png)
 
-När du klickar på paneler visas ett dynamiskt popup-fönster med information om hur vyn Drill in (uppdelning) ser ut för den verkställande användaren i appen. Om ingen dimension har tillämpats på plattan kommer detaljdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
+## Visa detaljbilder {#view-detail-slides}
 
-Uppdelningar förfinar analysen genom att bokstavligen dela upp mätvärden och dimensioner med andra mått och mått, som i det här exemplet:
+När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om ingen dimension har tillämpats, kommer uppdelningsdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
+
+Uppdelningar förfinar analysen genom att bokstavligen dela upp mätvärden efter dimensionsobjekt.
 
 * Unika besökarvärden uppdelade efter annonsplattform (AMO-ID)
 * Besök uppdelade efter produktkategori (detaljhandel)
@@ -168,7 +170,31 @@ Uppdelningar förfinar analysen genom att bokstavligen dela upp mätvärden och 
 
 ![Brytningsvy](assets/break_view.png)
 
-Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
+Varje dimension som läggs till i detaljbilden visas i en nedrullningsbar lista i vyn för detaljbilden i appen. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
+
+## Anpassa detaljbilder {#customize-detail-slide}
+
+Med skräddarsydda detaljbilder kan ni målinrikta er ännu mer om vilken information ni delar med er målgrupp. Du kan ändra layouten för varje detaljbild och lägga till text som bättre förklarar vad slutanvändaren kan se i informationen. Du kan också ändra diagramtyp med hjälp av den nedrullningsbara menyn.
+
+![Anpassad detaljbild](assets/custom-detail-slide.png)
+
+### Ändra bildrutelayout
+
+Ändra bildrutelayouten så att den fokuserar på den viktigaste informationen. Du kan till exempel ändra layouten så att bara ett diagram eller en tabell visas. Om du vill ändra bildrutelayouten väljer du ett av de fördesignade formaten.
+
+![Bildlayout](assets/layout.png)
+
+Du kan också ändra bildrutelayouten genom att dra och släppa visualiseringskomponenter från den vänstra listen på arbetsytan. Varje detaljbild kan endast innehålla två visualiseringar åt gången.
+
+![Ändra bildlayout](assets/slide-layout-change.png)
+
+### Lägga till beskrivande text i en bildruta
+
+Du kan lägga till text för att ge meningsfull information om vad som finns i diagrammen eller nyanserna om data.
+
+Om du vill lägga till text i en detaljbildruta väljer du en layout som visar `T` eller dra och släpp textvisualiseringskomponenten från den vänstra listen. Textredigeraren öppnas automatiskt när du lägger till en ny textvisualisering eller väljer en bildlayout med text. I textredigeraren finns alla standardalternativ för formatering av texten. Du kan använda textformat som stycke, rubriker och underrubriker och använda fet och kursiv stil. Du kan justera text, lägga till punktlistor och numrerade listor samt lägga till länkar. När du är klar med redigeringen klickar du på minimeringsknappen i det övre högra hörnet av textredigeraren för att stänga den. Om du vill redigera text som du redan har lagt till väljer du pennikonen och öppnar textredigeraren igen.
+
+![Ändra bildlayout](assets/add-descriptive-text.png)
 
 ## Ta bort komponenter {#remove}
 
