@@ -4,10 +4,10 @@ description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättni
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
-source-git-commit: 0a23ad56a661a420dd44e2875c22927f9734dedf
+source-git-commit: d5c30102374e650f404ef31e105106dd22dd9c01
 workflow-type: tm+mt
-source-wordcount: '3398'
-ht-degree: 37%
+source-wordcount: '3476'
+ht-degree: 36%
 
 ---
 
@@ -21,8 +21,13 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 ## Information om större dokumentationsuppdateringar
 
-| Datum | Beskrivning |
+| Funktion | Beskrivning |
 | --- | --- |
+| **Oktober 2022** |  |
+| Sammanfattning av nyckelmått | Nytt ämne på [Sammanfattning av nyckelmått](/help/analyze/analysis-workspace/visualizations/key-metric.md) visualisering. |
+| Klassificeringsuppsättningar | Den nya användaren [Klassificeringsuppsättningar](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html?lang=en) upplevelsen ger ett enda gränssnitt för att hantera klassificeringar och regler och ger en bättre överblick över kundägda klassificeringsdata. |
+| Mobilapp: Anpassade detaljvyer | Nytt ämne [anpassade detaljvyer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en). |
+| Data Workbench | Data Workbench [Vanliga frågor och svar om upphörande av livscykel](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html). |
 | **September 2022** |  |
 | Kombinationsdiagram | Nytt ämne på [kombinationsdiagram](/help/analyze/analysis-workspace/visualizations/combo-charts.md) visualisering. |
 | Uppdaterat plugin-program | Uppdaterad version av [getvalonce](/help/implement/vars/plugins/getvalonce.md) implementeringsplugin. |
