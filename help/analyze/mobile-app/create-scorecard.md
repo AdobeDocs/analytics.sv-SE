@@ -4,9 +4,9 @@ title: Skapa ett mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: 40f335c18849551bce23f386c647f2aec32c7988
+source-git-commit: e2af78cec37488b3c5f7681fa5d3f3555f8012c2
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1681'
 ht-degree: 0%
 
 ---
@@ -156,13 +156,13 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att tillämpa segment.
 
-![Egenskapspanelen](assets/properties_tile.png)
+![Egenskapspanelen](assets/properties-tile-new.png)
 
 ## Visa detaljbilder {#view-detail-slides}
 
-När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om ingen dimension har tillämpats, kommer uppdelningsdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
+När du klickar på paneler visas i ett dynamiskt popup-fönster hur detaljbilden visas för den verkställande användaren i appen. Du kan lägga till dimensioner för att dela upp dina data efter dina specifika behov. Om en dimension inte har tillämpats, kommer uppdelningsdimensionen att **timme** eller **dagar**, beroende på standarddatumintervallet.
 
-Uppdelningar förfinar analysen genom att bokstavligen dela upp mätvärden efter dimensionsobjekt.
+Uppdelningar förfinar analysen genom att dela upp mätvärden efter dimensionsobjekt som exempelvis följande:
 
 * Unika besökarvärden uppdelade efter annonsplattform (AMO-ID)
 * Besök uppdelade efter produktkategori (detaljhandel)
