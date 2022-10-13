@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 2dc8dc9f7dd9671cfa25095e075474d2b5463dc0
+source-git-commit: 6014be392d700fae0df1f178d1f989eb29d03477
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1553'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (oktober 2022)
 
-**Senaste uppdatering**: 5 oktober 2022
+**Senaste uppdatering**: 13 oktober 2022
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -30,6 +30,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | **[!UICONTROL Key metric summary]** visualisering | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) | Avfasad utrullning från 5 oktober 2022 |
 | Nytt **[!UICONTROL Classification sets]** användarupplevelse | Den nya användarupplevelsen ger ett enda gränssnitt för att hantera klassificeringar och regler och ger en bättre överblick över kundägda klassificeringsdata. [Läs mer](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html?lang=en) | 5 oktober 2022 |
 | Mobilapp: **Anpassade detaljvyer** | Med anpassade detaljvyer kan ni målinrikta er ännu mer om vilken information ni delar med er målgrupp genom att låta dem fokusera på det som är viktigast. Du kan ändra layouten för den detaljvy som är kopplad till varje styrkortsplatta och du kan lägga till text för att bättre förklara vad slutanvändaren kan se i data. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en) | 5 oktober 2022 |
+| **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1` - `mvvar3` i dataflöden inte längre automatiskt sänks. I stället kommer dataflöden (och data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA) att återspegla det ursprungliga fallet som skickades från sidan. | 24 oktober 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
