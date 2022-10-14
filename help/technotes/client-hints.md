@@ -1,10 +1,10 @@
 ---
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
-source-git-commit: 55747b79851696fd1bff8fb7cb4849dc8c813fc0
+source-git-commit: 1bd34bd2bdbe5ad8abb75be81554837e53c112fb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '948'
+ht-degree: 1%
 
 ---
 
@@ -99,7 +99,7 @@ Se [tidslinje som publicerats av Google](https://blog.chromium.org/2021/09/user-
 
 +++**Hur använder Adobe klienttips för att hämta enhetsinformation?**
 
-Adobe använder en enhetskarta från en annan leverantör, Device Atlas, som kommer att använda både klienttips och användaragent för att hämta enhetsinformation.
+Adobe använder en tredje part, Device Atlas, som kommer att använda både klienttips och User-Agent för att hämta enhetsinformation.
 
 +++
 
