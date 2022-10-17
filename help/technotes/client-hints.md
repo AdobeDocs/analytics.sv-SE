@@ -1,9 +1,9 @@
 ---
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
-source-git-commit: 1bd34bd2bdbe5ad8abb75be81554837e53c112fb
+source-git-commit: 9dfeb0f5cc3bb488fa28fb0d21c6969dfdfc9ef6
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1073'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,11 @@ Google delar upp klienttips för User-Agent i två kategorier: Tips för låg en
 
 * **Tips för låg entropi** innehåller mer allmän information om enheter. Dessa tips tillhandahålls automatiskt av Chromium-webbläsare.
 
-* **Hög entropi** Tipsen innehåller mer detaljerad information. Tipsen är bara tillgängliga på begäran. Både AppMeasurement och Web SDK [kan konfigureras](/help/implement/vars/config-vars/collecthighentropyuseragenthints.md) för att begära tips för entropi. Som standard gör båda biblioteken **not** begär tips för entropi.
+* **Hög entropi** Tipsen innehåller mer detaljerad information. Tipsen är bara tillgängliga på begäran. Både AppMeasurement och Web SDK kan konfigureras för att begära tips för hög entropi. Som standard gör båda biblioteken **not** begär tips för entropi.
+
+>[!NOTE]
+>
+>Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från mitten av januari 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av januari. Detta för att undvika eventuella avbrott i rapporteringen under den kritiska perioden vid årets slut. Som anges nedan kommer operativsystemsversionen att frysas från och med oktober, men på grund av en gradvis utrullning och det faktum att de flesta användaragenter fryser till rätt OS-version, uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
 
 >[!NOTE]
 >
@@ -37,13 +41,9 @@ Detta [Google blogginlägg](https://web.dev/user-agent-client-hints/) är en bra
 
 +++**Hur aktiverar jag samlingen med klienttips?**
 
-Tips om låg entropi tillhandahålls automatiskt av webbläsaren och ingår i Adobe-processen för att hämta information om enheter och webbläsare. Nyare versioner av AppMeasurement (från och med 2.23.0) och Web SDK (från och med 2.12.0) kan konfigureras för att samla in tips för hög entropi. För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
+Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se vägbeskrivningar för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en#enabling-high-entropy-client-hints) och [AppMeasurement](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/collecthighentropyuseragenthints.html?lang=en).
 
-+++
-
-+++**Hur fångar jag antydan?**
-
-Högentropiska tips kan konfigureras med Web SDK- och AppMeasurement-biblioteken via respektive taggtillägg eller direkt med flaggan collectHighEntropyUserAgentHints.
+För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
 
 +++
 
@@ -89,6 +89,12 @@ Dessa fält härleds direkt från användaragenten, men användaragenten kan anv
 
 +++
 
++++**Vilka delar av användaragenten &quot;fryses&quot; och när?**
+
+Se [tidslinje som publicerats av Google](https://blog.chromium.org/2021/09/user-agent-reduction-origin-trial-and-dates.html). Detta kan komma att ändras.
+
++++
+
 +++**Vilka analysrapporteringsfält härleds från värden som lagras i höga entropitups?**
 
 Detta ändras med tiden eftersom Google fryser fler delar av användaragenten. Det första fältet som ska påverkas direkt är&quot;operativsystem&quot;, som innehåller operativsystemversionen Enligt Google publicerade tidslinje för&quot;frysning&quot; av användaragenttips, kommer operativsystemsversionen att frysas från slutet av oktober 2022 med Chromium version 107. Då blir operativsystemversionen i användaragenten i vissa fall felaktig.
@@ -115,6 +121,12 @@ Nej. Klienttips kan bara samlas in via en säker HTTP-anslutning, till exempel H
 
 +++
 
++++**Hur tar jag med data för klienttips när jag skickar API?**
+
+Se dokumentationen för att inkludera dessa via [API för massdatainmatning](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/file-format/).
+
++++
+
 +++**Kommer klienttips att vara tillgängliga i data som skickas till AEP och CJA via Adobe Source Connector?**
 
 Adobe planerar att inkludera klienttips i data via Adobe Source Connector under första halvåret 2023.
@@ -124,12 +136,6 @@ Adobe planerar att inkludera klienttips i data via Adobe Source Connector under 
 +++**Hur visas klienttips i XDM?**
 
 Se [schemadokumentation](https://github.com/adobe/xdm/blob/master/components/datatypes/browserdetails.schema.json#L121) i Adobe Experience Platform.
-
-+++
-
-+++**Vilka delar av användaragenten &quot;fryses&quot; och när?**
-
-Se [tidslinje som publicerats av Google](https://blog.chromium.org/2021/09/user-agent-reduction-origin-trial-and-dates.html). Detta kan komma att ändras.
 
 +++
 
