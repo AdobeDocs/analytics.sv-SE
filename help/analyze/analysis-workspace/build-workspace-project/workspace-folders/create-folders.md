@@ -3,9 +3,9 @@ description: Lär dig hur du skapar mappar och undermappar i arbetsytan
 keywords: Analysis Workspace
 title: Skapa mappar
 feature: Workspace Basics
-source-git-commit: 81158bb8893e0826c5bcabac2bed6eac735164d8
+source-git-commit: c10cda76962d66a710b1fad74f6c6fdc987e0aca
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Du kan lägga till en ny mapp eller en undermapp i listan över projekt och mapp
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Vissa skärmar kan ändras.
+>Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 ## Skapa en ny mapp
 

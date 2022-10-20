@@ -3,9 +3,9 @@ description: Lär dig hur du lägger till mappar i arbetsytan
 keywords: Analysis Workspace
 title: Lägg till mappar i arbetsytan
 feature: Workspace Basics
-source-git-commit: 81158bb8893e0826c5bcabac2bed6eac735164d8
+source-git-commit: c10cda76962d66a710b1fad74f6c6fdc987e0aca
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Du kan lägga till projekt i en mapp i tabellvyn eller från en mapp.
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Vissa skärmar kan ändras.
+>Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 ## Från tabellvyn
 

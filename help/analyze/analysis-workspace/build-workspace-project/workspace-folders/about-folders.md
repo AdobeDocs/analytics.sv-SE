@@ -3,9 +3,9 @@ description: Läs mer om mappar i arbetsytan
 keywords: Analysis Workspace
 title: Översikt över mappar
 feature: Workspace Basics
-source-git-commit: 81158bb8893e0826c5bcabac2bed6eac735164d8
+source-git-commit: c10cda76962d66a710b1fad74f6c6fdc987e0aca
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Mappar i Workspace Projects är ett mapphanteringssystem som finns på startsida
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Vissa skärmar kan ändras.
+>Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 Mappar i Workspace Projects hjälper användarna att ordna och kategorisera sina projekt så att de blir bättre på att hämta och komma åt dem. Med en delad företagsmapp kan administratörer dessutom enkelt skapa och dela innehåll med alla Workspace-användare. 
 

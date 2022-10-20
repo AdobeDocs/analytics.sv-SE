@@ -3,9 +3,9 @@ description: Lär dig hur du tar bort projekt från mappar
 keywords: Analysis Workspace
 title: Ta bort projekt från mappar
 feature: Workspace Basics
-source-git-commit: 81158bb8893e0826c5bcabac2bed6eac735164d8
+source-git-commit: c10cda76962d66a710b1fad74f6c6fdc987e0aca
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '174'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Om du vill ta bort ett projekt från en mapp kan du flytta projektet till en ann
 
 >[!NOTE]
 >
->Den här funktionen är för närvarande i begränsad version. Vissa skärmar kan ändras.
+>Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 >[!NOTE]
 >
