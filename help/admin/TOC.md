@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 65ee7ae6d838f34149eb60547d976856e4da3b17
+source-git-commit: 10a325b5479b6852fc98ed780f59ee525ec6f51b
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 87%
+source-wordcount: '674'
+ht-degree: 86%
 
 ---
 
@@ -84,6 +84,7 @@ ht-degree: 87%
       + [Översikt över realtidsrapporter](admin/realtime/realtime.md)
       + [Konfiguration av rapporter i realtid](admin/realtime/t-realtime-admin.md)
       + [Mätvärden och dimensioner som stöds i realtid](admin/realtime/realtime-metrics.md)
+   + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
    + [Schemalagd rapportkö](admin/scheduled-reports-admin.md)
    + Vidarebefordran på serversidan {#server-side-forwarding}
       + [Översikt över vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf.md)
