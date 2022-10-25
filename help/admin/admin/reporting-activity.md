@@ -4,9 +4,9 @@ title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 hide: true
 hidefromtoc: true
-source-git-commit: 70cfad1a04d17e1007178f32af73988be503fe90
+source-git-commit: 6ab2f39bdfc3a50c2b91f020c98b0e81da8b2b8e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -28,23 +28,21 @@ Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för va
 
 I Adobe Analytics går administratörer till **[!UICONTROL Admin]** > **[!UICONTROL Reporting Activity Manager]**.
 
-## Hantera rapportkön
+## Visa rapportkön
 
-När du öppnar Rapporteringsaktivitetshanteraren visas en lista med basrapportsviter. Virtuella rapportsviter ingår inte i den här vyn.
+När du öppnar översiktssidan för Reporting Activity Manager visas en lista över dina aktiverade basrapportsviter.
 
 ![rapportkö](assets/reporting-activity1.png)
 
-Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten. Om du har 10 förfrågningar från 5 VRS:er är det 50 förfrågningar från basnivåsviten. På så sätt kan du snabbt nå ut till din kapacitet.
-
-Här är en översikt över ett VRS vars rapporteringskapacitet visas i realtid:
-
-![virtuella rapportsviter](assets/reporting-activity-vrs.png)
+| Gränssnittselement | Beskrivning |
+| --- | --- |
+| **[!UICONTROL Report Suite]** | Basrapportsviten |
+| **[!UICONTROL Virtual Report Suite]** | Alla virtuella rapportsviter som matas in i den här basrapportsviten. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten.<p>Om du har 10 förfrågningar från 5 VRS:er är det 50 förfrågningar på basnivån för rapportsviten. På så sätt kan du snabbt nå ut till din kapacitet. |
+| **[!UICONTROL Usage Capacity]** | Procentandel av rapportsvitens rapporteringskapacitet används i realtid. |
+| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd - vid kapacitet**: Rapportsviten är maximerad när det gäller rapporteringskapacitet.</li><li>**Gul - Kapacitet för närhet**: Denna rapportserie riskerar att nå sin maximala kapacitet.</li><li>**Grön - tillgänglig**: Det finns gott om kapacitet för rapportering.</li><li>**Grå - ej tillgänglig**: Rapportsviten är inte konfigurerad för rapporteringskapacitet.</li></ul> |
 
 Uppdatera sidan om du vill ändra resultatet.
 
-## Konsekvenser för arbetsyterapportering
+## Filtrera rapportsviter
 
-
-
-
-
+Du kan filtrera rapportsviterna efter
