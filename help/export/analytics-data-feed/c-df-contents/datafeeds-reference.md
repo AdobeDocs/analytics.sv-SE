@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 477c9be498fcec91febeb7b7f7cefb22820d2032
+source-git-commit: 56c11dd4f35f7b2de0e124b1bcb005afb356ece6
 workflow-type: tm+mt
-source-wordcount: '3445'
+source-wordcount: '3537'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,13 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `c_color` | Färgpalettens bitdjup. Används som en del av beräkningen av [Färgdjup](/help/components/dimensions/color-depth.md) dimension. AppMeasurement använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
 | `campaign` | Variabel som används i [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. | varchar(255) |
 | `carrier` | Adobe Advertising Cloud integrationsvariabel. Anger mobiloperatör. Refererar till `carrier` uppslagstabell. | varchar(100) |
+| `ch_hdr` | Klienttips som samlats in via HTTP-begärandehuvudet. | text |
+| `ch_js` | Klienttips som samlats in via JavaScript-API:t för användaragentklienten. | text |
 | `channel` | Variabel som används i [Platsavsnitt](/help/components/dimensions/site-section.md) dimension. | varchar(100) |
 | `click_action` | Används inte längre. Adress för länkad som klickats i det äldre klickningsverktyget. | varchar(100) |
 | `click_action_type` | Används inte längre. Länktyp för det äldre klickmappsverktyget.<br>0: HREF-URL<br>1: Anpassat ID<br>2: JavaScript-händelsen onClick<br>3: Formulärelement | tinyint unsigned |
 | `click_context` | Används inte längre. Sidnamn där länkklickningen inträffade. En del av det gamla klickmappsverktyget. | varchar(255) |
-| `click_context_type` | Används inte längre. Anger om click_context har ett sidnamn eller har en sidadress som standard.<br>0: Sidans URL<br>1: Sidnamn | tinyint unsigned |
+| `click_context_type` | Används inte längre. Anger om `click_context` har ett sidnamn eller har en sidadress som standard.<br>0: Sidans URL<br>1: Sidnamn | tinyint unsigned |
 | `click_sourceid` | Används inte längre. Numeriskt ID för platsen på den sida där länken klickades. En del av det gamla klickmappsverktyget. | int unsigned |
 | `click_tag` | Används inte längre. Typ av HTML-element som du klickade på. | char(10) |
 | `clickmaplink` | Activity Map link | varchar(255) |
@@ -64,7 +66,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `date_time` | Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon. | datetime |
 | `domain` | Variabel som används i [Domän](/help/components/dimensions/domain.md) dimension. Baserat på besökarens internetanslutning. | varchar(100) |
 | `duplicate_events` | Listar varje händelse som räknats som en dubblett. | varchar(255) |
-| `duplicate_purchase` | Flagga som anger att köphändelsen för den här träffen ska ignoreras eftersom den är en dubblett. | tinyint unsigned |
+| `duplicate_purchase` | Flagga som anger att köphändelsen för den här träffen ignoreras eftersom den är en dubblett. | tinyint unsigned |
 | `duplicated_from` | Används endast i rapportsviter som innehåller VISTA-regler för träffkopior. Anger vilken rapportsvit som träffen kopierades från. | varchar(40) |
 | `ef_id` | The `ef_id` används i Adobe Advertising Cloud-integreringar. | varchar(255) |
 | `evar1 - evar250` | Egna variabler 1-250. Används i [eVar](/help/components/dimensions/evar.md) dimensioner. Varje organisation använder eVars på olika sätt. Det bästa stället att få mer information om hur er organisation fyller i respektive eVars är ett dokument som är specifikt för er organisation. | varchar(255) |
@@ -88,8 +90,9 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `hitid_low` | Används i kombination med `hitid_high` för att identifiera en träff. | bigint unsigned |
 | `homepage` | Används inte längre. Anger om den aktuella URL:en är webbläsarens hemsida. | char(1) |
 | `hourly_visitor` | Flagga för att avgöra om träffen är en ny timbesökare. | tinyint unsigned |
-| `ip` | IP-adress, baserat på HTTP-huvudet i bildbegäran. | char(20) |
+| `ip` | IPv4-adressen, baserad på HTTP-huvudet i bildbegäran. Endast `ipv6`; om den här kolumnen innehåller en icke-konfidentiell IP-adress, `ipv6` är tom. | char(20) |
 | `ip2` | Används inte. Referensvariabel för serverdel för rapportsviter som innehåller VISTA-regler baserade på IP-adressen. | char(20) |
+| `ipv6` | Den komprimerade IPv6-adressen, om den är tillgänglig. Om en IP-adress är något liknande `2001:cDBa:0000:0000:0000:0000:3257:0052`innehåller dataflödet `2001:cdba::3257:52`. Endast `ip`; om den här kolumnen innehåller en icke-konfidentiell IP-adress, `ip` är tom. | varchar(40) |
 | `j_jscript` | Den version av JavaScript som stöds av webbläsaren. | char(5) |
 | `java_enabled` | Flagga som anger om Java är aktiverat. <br>Y: Aktiverad <br>N: Handikappade <br>U: Okänd | char(1) |
 | `javascript` | Uppslags-ID för JavaScript-version, baserat på `j_jscript`. Använder uppslagstabell. | tinyint unsigned |
@@ -103,8 +106,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `mc_audiences` | Lista med Audience Manager segment-ID som besökaren tillhör. The `post_mc_audiences` kolumnen ändrar avgränsaren till `--**--`. | text |
 | `mcvisid` | Experience Cloud Visitor-ID. 128-bitars nummer som består av två sammanfogade 64-bitars tal som fyllts med 19 siffror. | varchar(255) |
 | `mobile_id` | Om användaren använder en mobil enhet anger du enhetens numeriska ID. | int |
-| `mobileaction` | Mobile action. Samlas in automatiskt när `trackAction` anropas i Mobiltjänster. Tillåter automatisk åtgärdspunkt i appen. | varchar(100) |
-| `mobileappid` | Mobile program-ID. Lagrar programnamnet och versionen i följande format: `[AppName] [BundleVersion]` | varchar(255) |
+| `mobileaction` | Mobilåtgärd. Samlas in automatiskt när `trackAction` anropas i Mobiltjänster. Tillåter automatisk åtgärdspunkt i appen. | varchar(100) |
+| `mobileappid` | ID för mobilapp. Lagrar programnamnet och versionen i följande format: `[AppName] [BundleVersion]` | varchar(255) |
 | `mobileappperformanceappid` | Används i Apteligent-dataanslutningen. Program-ID som används i Apteligent. | varchar(255) |
 | `mobileappperformancecrashid` | Används i Apteligent-dataanslutningen. Det krasch-ID som används i Apteligent. | varchar(255) |
 | `mobileappstoreobjectid` | Används i Appfigurations dataanslutning. Objekt-ID för App Store. | varchar(255) |
@@ -145,7 +148,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | `mobilerelaunchcampaigntrackingcode` | Samlas in från kontextdatavariabeln `a.launch.campaign.trackingcode`. Används i anskaffning som spårningskod för lanseringskampanj. | varchar(255) |
 | `mobileresolution` | Upplösning för den mobila enheten. `[Width] x [Height]` i pixlar. | varchar(255) |
 | `monthly_visitor` | Flagga som anger att besökaren är unik för den aktuella månaden. | tinyint unsigned |
-| `mvvar1` - `mvvar3` | Lista variabelvärden. Innehåller en avgränsad lista med anpassade värden beroende på implementering. The `post_mvvar1` - `post_mvvar3` kolumner ersätter den ursprungliga avgränsaren med `--**--`. | text |
+| `mvvar1` - `mvvar3` | Visa variabelvärden som angetts för den aktuella träffen eller beständig från tidigare träffar. Innehåller en avgränsad lista med anpassade värden beroende på implementering. The `post_mvvar1` - `post_mvvar3` kolumner ersätter den ursprungliga avgränsaren med `--**--`. | text |
+| `mvvar1_instances` - `mvvar3_instances` | Listvariabelvärdena som angavs för den aktuella träffen. The `post_mvvar1_instances` - `post_mvvar3_instances` kolumner ersätter den ursprungliga avgränsaren med `--**--`. | text |
 | `namespace` | Används inte. En del av en skrapad funktion. | varchar(50) |
 | `new_visit` | Flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobe-servrar efter 30 minuters besöksinaktivitet. | tinyint unsigned |
 | `os` | Numeriskt ID som representerar besökarens operativsystem. Baserat på `user_agent` kolumn. Användningsområden `os` sökning. | int unsigned |
