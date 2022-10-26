@@ -2,11 +2,12 @@
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
+mini-toc-levels: 3
 hide: true
 hidefromtoc: true
-source-git-commit: 6ab2f39bdfc3a50c2b91f020c98b0e81da8b2b8e
+source-git-commit: 77b3e8a1f8ebb1459eeac83f098cab92f671efe6
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -36,13 +37,20 @@ När du öppnar översiktssidan för Reporting Activity Manager visas en lista �
 
 | Gränssnittselement | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Report Suite]** | Basrapportsviten |
-| **[!UICONTROL Virtual Report Suite]** | Alla virtuella rapportsviter som matas in i den här basrapportsviten. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten.<p>Om du har 10 förfrågningar från 5 VRS:er är det 50 förfrågningar på basnivån för rapportsviten. På så sätt kan du snabbt nå ut till din kapacitet. |
+| **[!UICONTROL Report Suite]** | Basrapportsviten vars rapporteringsaktivitet du övervakar. |
+| **[!UICONTROL Virtual Report Suite]** | Visar alla virtuella rapportsviter som matas in i den här basrapportsviten. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten.<p>Om du till exempel har 10 begäranden från 5 VRS är det 50 förfrågningar från rapportsviten på basnivå. På så sätt kan du snabbt nå ut till din kapacitet. |
 | **[!UICONTROL Usage Capacity]** | Procentandel av rapportsvitens rapporteringskapacitet används i realtid. |
-| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd - vid kapacitet**: Rapportsviten är maximerad när det gäller rapporteringskapacitet.</li><li>**Gul - Kapacitet för närhet**: Denna rapportserie riskerar att nå sin maximala kapacitet.</li><li>**Grön - tillgänglig**: Det finns gott om kapacitet för rapportering.</li><li>**Grå - ej tillgänglig**: Rapportsviten är inte konfigurerad för rapporteringskapacitet.</li></ul> |
+| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd - vid kapacitet**: Rapportsviten är maximerad när det gäller rapporteringskapacitet.</li><li>**Gul - Kapacitet för närhet**: Denna rapportserie riskerar att nå sin maximala kapacitet.</li><li>**Grön - allt bra**: Det finns gott om kapacitet för rapportering.</li><li>**[!UICONTROL Status pending]**: ?</li><li>**Grå - ej tillgänglig**: Rapportsviten är inte konfigurerad för rapporteringskapacitet.</li></ul> |
 
-Uppdatera sidan om du vill ändra resultatet.
+### Rapporteringsaktiviteter
 
-## Filtrera rapportsviter
+* Klicka **[!UICONTROL Refresh]** längst upp till höger för att uppdatera resultaten.
+* Klicka på stjärnan till vänster om rapportsvitens namn för att favoriten i den här rapportsviten.
+* Kontrollera **[!UICONTROL Favorites]** längst upp till vänster för att visa dina favoriter.
+* Sök efter rapportsviter efter namn eller efter ID i sökfältet.
+* Filtrera rapportsviter efter deras status.
 
-Du kan filtrera rapportsviterna efter
+## Visa rapporteringsaktivitet för enskilda rapportsviter
+
+
+
