@@ -5,10 +5,10 @@ feature: Admin Tools
 mini-toc-levels: 3
 hide: true
 hidefromtoc: true
-source-git-commit: 77b3e8a1f8ebb1459eeac83f098cab92f671efe6
+source-git-commit: 123a2131be1a3cb23246e2ba591be645c7025b26
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 1%
 
 ---
 
@@ -40,9 +40,9 @@ När du öppnar översiktssidan för Reporting Activity Manager visas en lista �
 | **[!UICONTROL Report Suite]** | Basrapportsviten vars rapporteringsaktivitet du övervakar. |
 | **[!UICONTROL Virtual Report Suite]** | Visar alla virtuella rapportsviter som matas in i den här basrapportsviten. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten.<p>Om du till exempel har 10 begäranden från 5 VRS är det 50 förfrågningar från rapportsviten på basnivå. På så sätt kan du snabbt nå ut till din kapacitet. |
 | **[!UICONTROL Usage Capacity]** | Procentandel av rapportsvitens rapporteringskapacitet används i realtid. |
-| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd - vid kapacitet**: Rapportsviten är maximerad när det gäller rapporteringskapacitet.</li><li>**Gul - Kapacitet för närhet**: Denna rapportserie riskerar att nå sin maximala kapacitet.</li><li>**Grön - allt bra**: Det finns gott om kapacitet för rapportering.</li><li>**[!UICONTROL Status pending]**: ?</li><li>**Grå - ej tillgänglig**: Rapportsviten är inte konfigurerad för rapporteringskapacitet.</li></ul> |
+| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd -[!UICONTROL At Capacity]**: Rapportsviten är maximerad när det gäller rapporteringskapacitet.</li><li>**Gul -[!UICONTROL Nearing capacity]**: Denna rapportserie riskerar att nå sin maximala kapacitet.</li><li>**Grön -[!UICONTROL All good]**: Det finns gott om kapacitet för rapportering.</li><li>**[!UICONTROL Status pending]**: ?</li><li>**Grå - ej tillgänglig**: Rapportsviten är inte konfigurerad för rapporteringskapacitet.</li></ul> |
 
-### Rapporteringsaktiviteter
+### Andra åtgärder för rapporteringsaktivitet
 
 * Klicka **[!UICONTROL Refresh]** längst upp till höger för att uppdatera resultaten.
 * Klicka på stjärnan till vänster om rapportsvitens namn för att favoriten i den här rapportsviten.
@@ -52,5 +52,60 @@ När du öppnar översiktssidan för Reporting Activity Manager visas en lista �
 
 ## Visa rapporteringsaktivitet för enskilda rapportsviter
 
+Klicka på titellänken för en rapportserie som du vill visa information om.
+
+![rapportsvit](assets/indiv-report-ste.png)
+
+### Linjediagram
+
+Raddiagrammet visar rapporteringsaktiviteten för den valda rapportsviten under de senaste två timmarna.
+
+* X-axeln visar rapporteringskapaciteten under de senaste två timmarna.
+* Y-axeln visar den genomsnittliga väntetiden för en fråga i sekunder.
+* Du kan hovra över linjediagrammet för att visa punkter i tid och genomsnittlig väntetid för det tillfället.
+
+   ![detalj](assets/detail.png)
+
+### Filter
+
+Du kan filtrera tabellen efter program (se listan i tabellen nedan), efter användare och efter projekt.
+
+![filter](assets/filter.png)
+
+### Sammanfattningsnummer
+
+![filter](assets/summary_numbers.png)
+
+Följande information visas i sammanfattningsnumren:
+
+| Sammanfattningsnummer | Beskrivning |
+| --- | --- |
+| Användare | Hur många användare som för närvarande skickar rapportbegäranden till den här rapportsviten. |
+| Projekt |  |
+| Frågor |  |
+| Genomsnittlig väntetid |  |
+| Förbrukningskapacitet | Den aktuella användningskapaciteten för den här rapportsviten. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Tabell
+
+Tabellen nedan visar
+
+| Kolumn | Beskrivning |
+| --- | --- |
+| Fråge-ID |  |
+| Körningstid |  |
+| Väntetid |  |
+| Starttid |  |
+| Program | Följande program stöds av Rapporteringsaktivitetshanteraren: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för Builder: Segment, beräknade värden, anteckningar, målgrupper osv.</li></ul> |
+| Användare |  |
+| Projekt |  |
+| Månadsgränser |
+| Kolumner |  |
+| Segment |  |
+| Status |  |
+
+{style=&quot;table-layout:auto&quot;}
 
 
