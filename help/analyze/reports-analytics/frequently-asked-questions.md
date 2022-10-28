@@ -5,7 +5,7 @@ title: Vanliga frågor om rapporter och analyser
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 99702728-971f-484a-91f5-f3210b89485c
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 ---
 
 # Vanliga frågor
+
+{{ra-eol}}
 
 Tillhandahåller svar och felsökningsförslag på några av de vanligaste Analytics-frågorna för rapporter och analyser. Vanliga frågor om implementering finns i [Vanliga frågor](/help/implement/faq.md) i Implementeringshandboken.
 

@@ -2,17 +2,19 @@
 description: Fullständiga underrelationer är aktiverade för alla konverteringsrapporter, så du kan dela upp alla eVar med en annan eVar. Menyn Uppdelning efter i rapporttabellen matchar rapportmenyn i standardanalysrapporten, vilket ger enhetliga val
 title: Underordnade relationer
 uuid: ca6df50f-5d4c-4f91-bf27-86ccd01391a2
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 615ed00e-91cd-45de-ae1f-e0d09ff01d26
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Underordnade relationer
+
+{{ra-eol}}
 
 Fullständiga underrelationer är aktiverade för alla konverteringsrapporter, så du kan dela upp alla eVar med en annan eVar. Menyn Uppdelning efter i rapporttabellen matchar rapportmenyn i standardanalysrapporten, vilket ger enhetliga val
 

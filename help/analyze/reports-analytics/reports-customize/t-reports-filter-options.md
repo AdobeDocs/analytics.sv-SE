@@ -2,17 +2,19 @@
 description: Med filter kan du begränsa rapporten så att den omfattar eller exkluderar radobjekt som matchar ett filter.
 title: Filtrera rapportdata
 uuid: b6dcaaf7-61f0-4793-870d-e1d156575d5a
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 232c6f69-40bf-487a-8621-d1d7d633681f
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '644'
 ht-degree: 2%
 
 ---
 
 # Filtrera rapportdata {#concept_09DC5B986A644738B12204DAC76A90E1}
+
+{{ra-eol}}
 
 Med filter kan du begränsa rapporten så att den omfattar eller exkluderar radobjekt som matchar ett filter.
 
@@ -20,7 +22,7 @@ Med filter kan du begränsa rapporten så att den omfattar eller exkluderar rado
 
 ![](assets/filter.png)
 
-Det enkla filtret visas i de flesta rapporter så att du snabbt kan hitta specifika radposter. I enkla filter används inga specialtecken, så `-, ", ', +` och andra specialtecken matchar det litterala värdet i rapporten. Du kan söka efter radobjekt som innehåller flera termer med hjälp av ett blanksteg.
+Det enkla filtret visas i de flesta rapporter så att du snabbt kan hitta specifika radposter. I enkla filter används inga specialtecken, så `-, ", ', +` och andra specialtecken matchar det literala värdet i rapporten. Du kan söka efter radobjekt som innehåller flera termer med hjälp av ett blanksteg.
 
 Exempel:
 
@@ -54,7 +56,7 @@ Matchar om termen hittas någonstans i radobjektet. Detta fungerar på samma sä
 
 **Innehåller inte**
 
-Matchar om termen inte hittas någonstans i radobjektet. Du kan filtrera &quot;unspecified&quot;, &quot;none&quot;, &quot;keyword unavailable&quot; och andra [specialvärden](https://experienceleague.adobe.com/docs/analytics/technotes/unspecified.html) från rapporter med &quot;does not contain&quot;.
+Matchar om termen inte hittas någonstans i radobjektet. Du kan filtrera &quot;unspecified&quot;, &quot;none&quot;, &quot;keyword unavailable&quot; och andra [specialvärden](https://experienceleague.adobe.com/docs/analytics/technotes/unspecified.html) från rapporter med&quot;innehåller inte&quot;.
 
 Innehåller inte: `none`
 
@@ -131,11 +133,11 @@ Med Avancerat kan du utföra jokertecken och andra komplexa sökningar.
 | Avancerat (specialtecken) | Beskrivning |
 |--- |--- |
 | `" "` | Matcha exakt fras. |
-| `*` | Vildkort, girig matchning. <br>Matchar t.ex.  `r*p`  Registrering. |
+| `*` | Vildkort, girig matchning. <br>Till exempel: `r*p`  matchar&quot;Registreringsregistrering&quot;. |
 | `^` | Börjar med. <br>Använd inte blanksteg mellan specialtecknet och sökfrasen. |
 | `$` | Slutar med. <br>Använd inte blanksteg mellan specialtecknet och sökfrasen. |
 | `-` | Nej. <br>Använd inte blanksteg mellan specialtecknet och sökfrasen. |
-| `|` | Eller<br>Obs!  Du måste inkludera ett blanksteg på varje sida om vertikalstrecket, `" | "`. |
+| `|` | eller<br>Obs! Du måste ha ett blanksteg på varje sida av lodstreck, `" | "`. |
 
 ## Skapa rapportspecifika filter {#task_DEBB0632411D4CA8AA0B3BA267A5B35F}
 
@@ -147,16 +149,16 @@ t_reports_filter_specific.xml
 
  -->
 
-Vissa rapporter innehåller ett filter som är specifikt för den rapporten. Med [!UICONTROL Purchase Conversion Funnel Report] kan du till exempel filtrera efter webbsidor. Med [!UICONTROL Geosegmentation Report] kan du filtrera efter geografisk region. Ytterligare rapporter har andra filter som är specifika för dessa rapporter.
+Vissa rapporter innehåller ett filter som är specifikt för den rapporten. Till exempel en [!UICONTROL Purchase Conversion Funnel Report] använder du för att filtrera efter webbsidor. A [!UICONTROL Geosegmentation Report] I kan du filtrera efter geografisk region. Ytterligare rapporter har andra filter som är specifika för dessa rapporter.
 
 När du använder dessa filter kan du visa rapportvärden för de objekt som anges i listan.
 
 **Skapa rapportspecifika filter**
 
 1. Generera en rapport, till exempel en [!UICONTROL Purchase Report] ( **[!UICONTROL Site Metrics]** > **[!UICONTROL Purchases]** > **[!UICONTROL Purchase Conversion Funnel]**).
-1. Klicka på länken **[!UICONTROL Filter]** i rapportrubriken.
-1. Klicka på **[!UICONTROL Apply a Filter]** på sidan [!UICONTROL Filter Selector] och välj sedan en filtertyp.
-1. Om du vill söka efter ett objekt skriver du en teckensträng i fältet **[!UICONTROL Search]**.
+1. Klicka på **[!UICONTROL Filter]** länk.
+1. På [!UICONTROL Filter Selector] sida, klicka **[!UICONTROL Apply a Filter]** väljer du sedan en filtertyp.
+1. Om du vill söka efter ett objekt skriver du en teckensträng i **[!UICONTROL Search]** fält.
 1. Klicka på **[!UICONTROL OK]**.
 
 ## Lägg till ett korrelationsfilter {#task_065042E384DA4BF3864C58AF2B88D6E2}
@@ -169,13 +171,13 @@ t_reports_correlation_filter.xml
 
  -->
 
-I vissa rapporter kan du lägga till anpassade korrelationsfilter. Om du till exempel visar [!UICONTROL Pages Report] för en rapportserie som har platsavsnitt som är kopplade till en kvinnosida, kan du skapa en filterregel som genererar en rapport som visar de populäraste sidorna när Webbplatsavsnitt = Kvinnor.
+I vissa rapporter kan du lägga till anpassade korrelationsfilter. Om du till exempel visar [!UICONTROL Pages Report] för en rapportserie som har platsavsnitt som är korrelerade med en kvinnosida kan du skapa en filterregel som genererar en rapport som visar de populäraste sidorna när Webbplatsavsnitt = Kvinnor.
 
 Du kan filtrera data som visas i en korrelationsrapport med hjälp av valfri tillgänglig korrelation. Exemplet här visar hur du lägger till ett korrelationsfilter för sökmotor.
 
 **Lägga till ett korrelationsfilter**
 
-1. Kör en rapport som stöder korrelationer. (Se [Köra en detaljrapport](/help/analyze/reports-analytics/reports-customize/breakdowns.md#task_F685624830E64C829C8BE6435A107F69).)
-1. Klicka på länken **[!UICONTROL Correlation Filter]** i rapportrubriken.
-1. Välj en kategori som ska korreleras med ett objekt under [!UICONTROL Filter Rule Creator].
+1. Kör en rapport som stöder korrelationer. (Se [Köra en fördelningsrapport](/help/analyze/reports-analytics/reports-customize/breakdowns.md#task_F685624830E64C829C8BE6435A107F69).)
+1. Klicka på **[!UICONTROL Correlation Filter]** länk.
+1. Under [!UICONTROL Filter Rule Creator]väljer du en kategori att korrelera med en artikel.
 1. Klicka på **[!UICONTROL OK.]**

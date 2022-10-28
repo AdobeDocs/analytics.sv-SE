@@ -2,17 +2,19 @@
 description: Konverteringsförhållanden mäter vanligtvis konverteringen mellan start-, slut- och milstolpehändelser eller punkter i en konverteringsprocess. När du har kodat framgångshändelserna på din webbplats skapar rapporten proportionerna mellan de olika framgångshändelserna och visar dem i en konverteringsrapport.
 title: Konverteringstratt
 uuid: a67ce302-fae1-434a-b662-91672e85cab3
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 8c1c1bc1-0e45-43d7-9581-bd070e2b687e
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '308'
 ht-degree: 2%
 
 ---
 
 # Konverteringstratt
+
+{{ra-eol}}
 
 Konverteringsförhållanden mäter vanligtvis konverteringen mellan start-, slut- och milstolpehändelser eller punkter i en konverteringsprocess. När du har kodat framgångshändelserna på din webbplats skapar rapporten proportionerna mellan de olika framgångshändelserna och visar dem i en konverteringsrapport.
 

@@ -3,17 +3,19 @@ description: Använd varningar i Rapporter och analyser.
 subtopic: Alerts
 title: Larm
 uuid: e1333a9b-eba0-45b7-b7e6-46e06190db64
-feature: Larm
+feature: Alerts
 role: User, Admin
 exl-id: f0a23afb-6c21-41e6-9033-9d3421bb1f4b
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '827'
 ht-degree: 6%
 
 ---
 
 # Larm
+
+{{ra-eol}}
 
 ## Larm {#concept_8AB25AF6FB52478DB98C1BA4577A2E16}
 
@@ -24,9 +26,9 @@ Som det nya varningssystemet för alla Adobe Analytics kan du med intelligenta a
 * Skicka aviseringar via e-post eller SMS med länkar till automatiskt genererade Analysis Workspace-projekt.
 * Skapa ”staplade” aviseringar som omfattar flera mätvärden i en enda avisering.
 
-Du kan komma åt det nya larmsystemet från **[!UICONTROL More]** > **[!UICONTROL Alerts]** i alla rapporter i Rapporter och analyser.
+Du kommer åt det nya larmsystemet från **[!UICONTROL More]** > **[!UICONTROL Alerts]** i rapporter och analyser.
 
-Mer information finns i Analysis Workspace-dokumentationen [Intelligent Alerts](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html).
+Mer information finns i Analysis Workspace-dokumentationen på [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/intellligent-alerts.html).
 
 ## Lägg till en avisering {#task_51187E8BF19544DDA9EF2057E6F11D35}
 
@@ -38,17 +40,17 @@ t_add_an_alert.xml
 
  -->
 
-Navigera till den nya Varningsverktyget på menyn **[!UICONTROL Analytics]** > **[!UICONTROL Components]**. Du kan dock fortfarande komma åt den inifrån rapporter och analyser:
+Navigera till den nya varningsfunktionen i dialogrutan **[!UICONTROL Analytics]** > **[!UICONTROL Components]** -menyn. Du kan dock fortfarande komma åt den inifrån rapporter och analyser:
 
 1. Öppna rapporten i Rapporter och analyser där du vill ange en avisering.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Add Alert]**.
-1. Du kommer nu till [nya Alert Builder](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/alert-builder.html).
+1. Det här tar dig till [new Alert Builder](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/alert-builder.html).
 
 ## Visa eller redigera befintliga aviseringar {#task_2ADF2A05EB784B8BBAFE293AC8243C46}
 
 Aktivitetskontext
 
-1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. Du kommer nu till den nya [Varningshanteraren](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/alert-manager.html).
+1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. Det här tar dig till nya [Aviseringshanteraren](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/alert-manager.html).
 
 ## Migrering av äldre aviseringar {#concept_7E8179F5EF6E4913B0CE5CF4FF186911}
 
@@ -108,7 +110,7 @@ deprecated_alerts.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p>Månadsaviseringar för anpassade kalenderrapportsviter </p> </td> 
-   <td colname="col2"> <p>Detta påverkar bara kunder med aviseringar som har ställts in för rapportsviter som har <a href="https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/date-ranges/custom-calendar.html"  > anpassade månadsstartdatum </a> (National Retail Federation/NRF och Custom Calendar types). </p> <p>Det påverkar inte aviseringar om gregorianska eller ändrade gregorianska kalenderrapportsviter. Tidigare skickades dessa varningar den första dagen i den gregorianska månaden (t.ex. 1 januari, 1 februari osv.). Detta fungerar inte med den nya funktionen för avvikelseidentifiering som tar hänsyn till data från föregående månader när avvikelser upptäcks. I framtiden kommer vi att lägga till stöd i vårt schemaläggningssystem för anpassade kalendrar så att både aviseringar och schemalagda projekt kan schemaläggas att skickas den första dagen i den anpassade kalendermånaden i stället för bara den första dagen i den gregorianska månaden. </p> <p> </p> </td> 
+   <td colname="col2"> <p>Detta påverkar bara kunder med aviseringar som har konfigurerats för rapportsviter som har <a href="https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/date-ranges/custom-calendar.html"  > startdatum för anpassad månad </a> (National Retail Federation/NRF och Custom Calendar types). </p> <p>Det påverkar inte aviseringar om gregorianska eller ändrade gregorianska kalenderrapportsviter. Tidigare skickades dessa varningar den första dagen i den gregorianska månaden (t.ex. 1 januari, 1 februari osv.). Detta fungerar inte med den nya funktionen för avvikelseidentifiering som tar hänsyn till data från föregående månader när avvikelser upptäcks. I framtiden kommer vi att lägga till stöd i vårt schemaläggningssystem för anpassade kalendrar så att både aviseringar och schemalagda projekt kan schemaläggas att skickas den första dagen i den anpassade kalendermånaden i stället för bara den första dagen i den gregorianska månaden. </p> <p> </p> </td> 
    <td colname="col3"> <p>Inte tillgängligt ännu i den nya aviseringshanteraren. </p> </td> 
   </tr> 
   <tr> 

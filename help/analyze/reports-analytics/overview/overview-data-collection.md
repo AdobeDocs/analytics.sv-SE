@@ -3,17 +3,19 @@ description: Läs om hur data samlas in för Adobe Analytics.
 subtopic: Get started
 title: Om Data Collection
 uuid: 4dd9a23d-ad49-4841-8f4c-32c3993851f2
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 34a7be55-519a-4e04-95a3-99b0f6e04b3e
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 3%
 
 ---
 
 # Om Data Collection
+
+{{ra-eol}}
 
 Läs om hur data samlas in för Adobe Analytics.
 
@@ -27,6 +29,6 @@ På en hög nivå flödar datainsamlingsprocessen enligt följande:
 1. När sidan läses in skickar datainsamlingskoden en bildbegäran (kallas webbfyr) till Adobe datainsamlingsservrar. Bildbegäran innehåller de data som du vill samla in om besökarens interaktion med webbplatsen.
 1. Adobe lagrar data i rapportsviter. Du kan logga in för att komma åt rapportsvitens data och generera rapporter om besökaraktiviteten på din webbplats.
 
-Datainsamlingen går mycket snabbt och påverkar inte sidinläsningstiden nämnvärt. Samlade data innehåller sidvyer som är ett resultat av att användaren klickar på knapparna **Läs in** eller **Tillbaka**. JavaScript-koden körs även när sidan hämtas från cache.
+Datainsamlingen går mycket snabbt och påverkar inte sidinläsningstiden nämnvärt. Samlade data innehåller sidvyer som är ett resultat av att användaren klickar i webbläsaren **Läs in igen** eller **Bakåt** knappar. JavaScript-koden körs även när sidan hämtas från cache.
 
-Se [Datainsamling i Analytics.](/help/import/home.md)
+Se [Datainsamling i analyser.](/help/import/home.md)

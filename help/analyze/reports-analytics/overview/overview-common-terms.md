@@ -2,17 +2,19 @@
 description: En introduktion till vanliga termer inom marknadsföringsanalys som används i rapporter och analyser.
 title: Vanliga termer
 uuid: 0560dc7d-9f92-46d4-848b-3cf297073382
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 78ad3e11-2bfa-49bd-b17a-c586701b56ad
-source-git-commit: a589e2dffd52749ec3e243815451fe3ed2396509
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '722'
 ht-degree: 3%
 
 ---
 
 # Vanliga termer
+
+{{ra-eol}}
 
 En introduktion till vanliga Adobe Analytics-termer.
 
@@ -30,7 +32,7 @@ En introduktion till vanliga Adobe Analytics-termer.
   </tr> 
   <tr> 
    <td> <p>Mått </p> </td> 
-   <td> <p>Kvantitativ information om aktivitet på webbplatsen, t.ex. Vyer, klickningar, Läs in igen, Genomsnittlig tid, Datum, Enheter och så vidare. </p> <p>Mer information finns i <a href="/help/analyze/reports-analytics/metrics.md">Metrisk</a>. </p> </td> 
+   <td> <p>Kvantitativ information om aktivitet på webbplatsen, t.ex. Vyer, klickningar, Läs in igen, Genomsnittlig tid, Datum, Enheter och så vidare. </p> <p>Mer information finns i <a href="/help/analyze/reports-analytics/metrics.md">Mått</a>. </p> </td> 
   </tr> 
   <tr> 
    <td> <p> Dimension </p> </td> 
@@ -42,11 +44,11 @@ En introduktion till vanliga Adobe Analytics-termer.
   </tr> 
   <tr> 
    <td> <p> Sidvisning </p> </td> 
-   <td> <p>En enda webbsida som läses in i besökarens webbläsare. En sidvy är en körning av JavaScript-koden för den sidan. Systemet räknar exakt hur många gånger en sida läses in, även om besökaren uppdaterar sidan ofta eller använder webbläsarknapparna <span class="uicontrol"> Tillbaka</span> och <span class="uicontrol"> Läs in</span> igen. En sidvy räknar hela sidan, inte enskilda element eller träffar. </p> </td> 
+   <td> <p>En enda webbsida som läses in i besökarens webbläsare. En sidvy är en körning av JavaScript-koden för den sidan. Systemet räknar exakt hur många gånger en sida läses in, även om besökaren uppdaterar sidan ofta eller använder <span class="uicontrol"> Bakåt</span> och <span class="uicontrol"> Läs in igen</span> webbläsarknappar. En sidvy räknar hela sidan, inte enskilda element eller träffar. </p> </td> 
   </tr> 
   <tr> 
    <td> <p>Gå in på </p> </td> 
-   <td> <p>En sekvens med sidvisningar under en session. Besöken upphör först efter 30 minuters inaktivitet eller efter 12 timmars kontinuerlig aktivitet. (Den här gången är mätningen branschstandarden inom marknadsföringsanalys.) Besök spåras av cookies. Ett besök börjar när en läsare öppnar en sida. Ett besök kallas ibland för en <span class="term">-session</span>, men det är inte en webbläsarsession. Om du går till en annan webbplats, stänger webbläsaren eller till och med startar om datorn avslutas inte besöket. </p> <p> Om tidsgränsen för inaktivitet inträffar när en besökare läser en sida, stängs besöket och behandlas. Ett nytt besök börjar när besökaren klickar till en annan sida. </p> <p>Om datumet ändras under ett besök, t.ex. vid besök på en webbplats vid midnatt, beror besöket på den dag då besöket inleddes. </p> </td> 
+   <td> <p>En sekvens med sidvisningar under en session. Besöken upphör först efter 30 minuters inaktivitet eller efter 12 timmars kontinuerlig aktivitet. (Den här gången är mätningen branschstandarden inom marknadsföringsanalys.) Besök spåras av cookies. Ett besök börjar när en läsare öppnar en sida. Ett besök kallas ibland för <span class="term"> session</span>, men det är inte en webbläsarsession. Om du går till en annan webbplats, stänger webbläsaren eller till och med startar om datorn avslutas inte besöket. </p> <p> Om tidsgränsen för inaktivitet inträffar när en besökare läser en sida, stängs besöket och behandlas. Ett nytt besök börjar när besökaren klickar till en annan sida. </p> <p>Om datumet ändras under ett besök, t.ex. vid besök på en webbplats vid midnatt, beror besöket på den dag då besöket inleddes. </p> </td> 
   </tr> 
   <tr> 
    <td> <p> Unik besökare </p> </td> 
@@ -58,7 +60,7 @@ En introduktion till vanliga Adobe Analytics-termer.
      <li id="li_09263F6B1E114A8DB477793B560A0417">Månadsvis </li> 
      <li id="li_A0B2CA3D44564045B02B55AF6E392F76">Kvartalsvis </li> 
      <li id="li_296BC5B02921460690F35128B1192800">Årlig </li> 
-    </ul> <p>En person kan besöka webbplatsen flera gånger och visa flera sidor under en viss period, men i rapporten Unika besökare registreras den personen som en unik besökare. </p> <p> <b>Avduplicering</b> av besökare: Datainsamlingen tar bort dubbletter av besökare baserat på rapportrubriken, oberoende av kalendervalet. En besökare som till exempel besöker fyra separata dagar i en rapportvecka räknas som en i <span class="wintitle"> Veckounik besökarrapport</span>. I en <span class="wintitle"> daglig unik besökarrapport</span> som sträcker sig över den veckan räknas samma besökare fyra gånger. </p> </td> 
+    </ul> <p>En person kan besöka webbplatsen flera gånger och visa flera sidor under en viss period, men i rapporten Unika besökare registreras den personen som en unik besökare. </p> <p> <b>Avduplicering av besökare</b>: Datainsamlingen tar bort dubbletter av besökare baserat på rapportrubriken, oberoende av kalendervalet. En besökare som besöker fyra separata dagar i en rapportvecka räknas till exempel som en i <span class="wintitle"> Veckovis unik besökarrapport</span>. I en <span class="wintitle"> Daglig rapport över unika besökare</span> Under den veckan räknas samma besökare fyra gånger. </p> </td> 
   </tr> 
   <tr> 
    <td> <p>Konverteringshändelser (slutförda) </p> </td> 

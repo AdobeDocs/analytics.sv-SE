@@ -2,17 +2,19 @@
 description: Steg som beskriver hur du anpassar diagrammet så att det är mest användbart för den avsedda målgruppen.
 title: Ändra rapportdiagram
 uuid: c2e81c6c-bfe9-4457-8b5d-512255ca9711
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 5a098b38-0939-4dd2-9a05-1b6b678f2d50
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '565'
 ht-degree: 1%
 
 ---
 
 # Ändra rapportdiagram
+
+{{ra-eol}}
 
 Steg som beskriver hur du anpassar diagrammet så att det är mest användbart för den avsedda målgruppen.
 
@@ -28,7 +30,7 @@ Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du k
 
    ![](assets/graph_trend_line.png)
 
-   **[!UICONTROL Smooth Line]**: Du använder den här diagramtypen tillsammans med  [!UICONTROL Video Detail Report]. Den visar antalet eller procentandelen vyer för specifika segment i en video. En ökning av vyerna för ett visst segment i videon anger att tittarna har rullat tillbaka och visat det avsnittet flera gånger. Om du använder procentvärden är procentandelen som visas i diagrammet en procentandel av alla segment som visas, inte en procentandel av de tittare som såg segmentet. I diagrammet är summan av alla rapportsegment till exempel 39. Antalet vyer för segmentet 0 till 10 sekunder är 10. Procentandelen vyer för det här segmentet är därför ungefär 26 procent.
+   **[!UICONTROL Smooth Line]**: Du använder den här diagramtypen med [!UICONTROL Video Detail Report]. Den visar antalet eller procentandelen vyer för specifika segment i en video. En ökning av vyerna för ett visst segment i videon anger att tittarna har rullat tillbaka och visat det avsnittet flera gånger. Om du använder procentvärden är procentandelen som visas i diagrammet en procentandel av alla segment som visas, inte en procentandel av de tittare som såg segmentet. I diagrammet är summan av alla rapportsegment till exempel 39. Antalet vyer för segmentet 0 till 10 sekunder är 10. Procentandelen vyer för det här segmentet är därför ungefär 26 procent.
 
    ![](assets/graph_smooth_line.png)
 
@@ -44,7 +46,7 @@ Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du k
 
    ![](assets/graph_vertical_bars.png)
 
-   **[!UICONTROL Stacked Vertical Bar]**: Genom att stapla liknande objekt kan du snabbt få en bild av hur mycket ett objekt påverkar. I en [!UICONTROL Campaign Report] kan ni till exempel stapla liknande framgångsmått och se vilken kampanj som genererar störst framgång. Stapling gör det enklare att hitta kampanjer som inte är de främsta i ett mätresultat, men som är de bästa resultaten i en kombination av mätvärden.
+   **[!UICONTROL Stacked Vertical Bar]**: Genom att stapla liknande objekt kan du snabbt få en bild av hur mycket ett objekt påverkar. I en [!UICONTROL Campaign Report]kan ni stapla liknande framgångsvärden och se vilken kampanj som genererar störst framgång. Stapling gör det enklare att hitta kampanjer som inte är de främsta i ett mätresultat, men som är de bästa resultaten i en kombination av mätvärden.
 
    ![](assets/graph_stacked_vertical.png)
 

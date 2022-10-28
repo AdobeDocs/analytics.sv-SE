@@ -5,7 +5,7 @@ title: Kontrollpaneler och minirapporter
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 399765a3-0f90-46b9-b62e-9f41d98eaa9a
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 1%
@@ -13,6 +13,8 @@ ht-degree: 1%
 ---
 
 # Kontrollpaneler och minirapporter
+
+{{ra-eol}}
 
 En kontrollpanel är en samling miniatyrrapporter som kallas rapportlets. En kontrollpanel är mest användbar när den innehåller relaterade rapporter som ger dig fullständiga översikter över vissa aspekter av din webbplats, t.ex. sökmetoder, besökarprofiler osv.
 

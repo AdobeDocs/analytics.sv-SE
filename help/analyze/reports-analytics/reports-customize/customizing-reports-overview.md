@@ -2,17 +2,19 @@
 description: När du har kört en rapport kan du anpassa rapporten för att visa och analysera data efter dina behov. Du kan filtrera rapportdata, ändra hur data presenteras grafiskt, ändra granularitet för datum och så vidare.
 title: Anpassa rapporter – översikt
 uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
-feature: Rapporter och analysgrunder
+feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 5a042fac-926e-4560-83bf-11f66ddb8273
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '865'
 ht-degree: 3%
 
 ---
 
 # Anpassa rapporter – översikt
+
+{{ra-eol}}
 
 När du har kört en rapport kan du anpassa rapporten för att visa och analysera data efter dina behov. Du kan filtrera rapportdata, ändra hur data presenteras grafiskt, ändra granularitet för datum och så vidare.
 
@@ -67,7 +69,7 @@ När du öppnar en kontrollpanel med rapporter som har olika datumintervall kan 
    * Dra markören över datum för att markera ett intervall.
    * Ange datum manuellt.
    * Klicka på ett månadsnamn för att välja en månad.
-   * Klicka på **[!UICONTROL Select Preset]** för att välja ett förinställt datum.
+   * Klicka **[!UICONTROL Select Preset]** för att välja ett förinställt datum.
    * Jämför datum.
 
 1. Klicka på **[!UICONTROL Run Report]**.
@@ -86,7 +88,7 @@ Du kan inte jämföra datum mellan trendrapporter.
 
 >[!NOTE]
 >
->Om du vill utföra en datumjämförelse på nyckelvärden i en kontrollpanel kan du hämta data till [Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html) med två separata förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
+>Om du vill göra en datumjämförelse av nyckeltal i en kontrollpanel kan du hämta data till [Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html) med två olika förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
 
 Så här jämför du datum mellan rankade rapporter i Rapporter och analyser:
 
@@ -108,7 +110,7 @@ t_reports_graph_percent.xml
 
 Den här visualiseringen är även tillgänglig i rapportlets på kontrollpanelen.
 
-1. Kör en rapport som har stöd för procentsatser, t.ex. en [!UICONTROL Pages Report].
+1. Kör en rapport som stöder procentsatser, till exempel en [!UICONTROL Pages Report].
 1. Klicka på **[!UICONTROL Percent Shown As: Graph]**.
 
 ## Normalisera rapportdata {#task_8005B55E59BD479DA67BC618FF8BC94A}
@@ -126,7 +128,7 @@ När du har kört en rapport med jämförda datum, eller för A/B-jämförelser,
 **Så här normaliserar du rapportdata**
 
 1. Kör en rapport som stöder datumjämförelser.
-1. Klicka på **[!UICONTROL Compare Dates]** och ange sedan din datumjämförelse.
+1. Klicka **[!UICONTROL Compare Dates]** anger du sedan din datumjämförelse.
 1. Klicka på **[!UICONTROL Run Report]**.
 1. Klicka på **[!UICONTROL Normalize Data: Yes]**.
 
@@ -141,8 +143,8 @@ t_reports_select_page.xml
  -->
 
 1. Generera en rapport, till exempel en [!UICONTROL Page Views Report] ( **[!UICONTROL Reports]** > **[!UICONTROL Site Metrics]** > **[!UICONTROL Page Views]**).
-1. Klicka på länken **[!UICONTROL Selected Page]**.
-1. Markera de sidor som du vill visa på [!UICONTROL Choose Page].
+1. Klicka på **[!UICONTROL Selected Page]** länk.
+1. På [!UICONTROL Choose Page]markerar du de sidor som du vill visa.
 1. Leta reda på sidan.
 1. Klicka på **[!UICONTROL OK.]**
 
@@ -173,7 +175,7 @@ Förutom den grafiska visningen ger tabellen i rapporten en procentuell jämför
 **Jämför rapportsviter**
 
 1. Generera en rapport som gör att du kan jämföra rapporter.
-1. Klicka på länken **[!UICONTROL Compare to Site]**.
+1. Klicka på **[!UICONTROL Compare to Site]** länk.
 1. Leta reda på rapportsviten.
 1. Klicka på **[!UICONTROL OK.]**
 
@@ -187,12 +189,12 @@ t_reports_granularity.xml
 
  -->
 
-Rapportens tidsperiod avgör vilka granularitetsalternativ som är tillgängliga. Du kan till exempel bara välja **[!UICONTROL Hourly]** om du har en eller två dagars tidsram markerad. Du kan bara välja granularitet **[!UICONTROL Yearly]** om du har valt mer än ett år.
+Rapportens tidsperiod avgör vilka granularitetsalternativ som är tillgängliga. Du kan till exempel bara markera **[!UICONTROL Hourly]** om du har en eller två dagars tidsram markerad. Du kan bara välja **[!UICONTROL Yearly]** granularitet om du har valt mer än ett år.
 
 **Ange rapportgranularitet**
 
 1. Generera en trendrapport, till exempel **[!UICONTROL Site Content]** > **[!UICONTROL Pages.]**
-1. Klicka på länken **[!UICONTROL View by]** och klicka sedan på en granularitet.
+1. Klicka på **[!UICONTROL View by]** klicka på en granularitet.
 
 ## Kör en veckodagsrapport {#task_67CC818ACC3749839B69BDB2ED9AE6B8}
 
@@ -207,11 +209,11 @@ t_reports_day_of_week.xml
 Den här funktionen gäller endast för trendrapporter som filtrerats med datumintervallet Vecka eller Dag.
 
 1. Kör en trendrapport över ett angivet datumintervall.
-1. Klicka på länken **[!UICONTROL Day of Week]** och klicka sedan på en dag.
+1. Klicka på **[!UICONTROL Day of Week]** och klicka sedan på en dag.
 
 ## Knappen Prova i arbetsyta {#concept_DA41E22460B94BD9ADF63B1CEE2714A7}
 
-Om du klickar på **[!UICONTROL Try In Workspace]** längst upp i en rapport läses samma rapport in i Analysis Workspace.
+Klicka på **[!UICONTROL Try In Workspace]** överst i en rapport läses samma rapport in i Analysis Workspace.
 
 <!-- 
 
@@ -223,4 +225,4 @@ De flesta rapporter i Rapporter och analyser innehåller nu knappen Testa i arbe
 
 För närvarande är knappen bara tillgänglig om ditt användarnamn har fullständig behörighet till Analysis Workspace.
 
-Mer information om alla sätt att anpassa rapporten finns i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)-guiden.
+Mer information om alla sätt att anpassa rapporten finns i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) guide.

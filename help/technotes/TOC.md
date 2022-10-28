@@ -4,9 +4,9 @@ audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
 user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
-source-git-commit: 1e666e66af8fe5d8fdefbd84a4073556993a5a3e
+source-git-commit: 1e2284fd4a62816b27b33a91f3bee2575a852107
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '204'
 ht-degree: 68%
 
 ---
@@ -63,3 +63,4 @@ ht-degree: 68%
 + [Felsök utloggning](troubleshoot-sessions.md)
 + [Ospecificerad, annan och okänd](unspecified.md)
 + [Migrering av besökare](visitor-migration.md)
++ [VISTA-regler](vista.md)

@@ -5,7 +5,7 @@ keywords: bästa praxis;fel;timeout;felsökning;långsam
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 1c09f514-42ab-4698-bdee-d1b509da3f11
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -14,11 +14,13 @@ ht-degree: 0%
 
 # Rapportera bästa praxis och felsökning
 
+{{ra-eol}}
+
 *Den här hjälpsidan hänvisar till bästa praxis för rapporter och analyser. För Analysis Workspace, se [Optimera Analysis Workspace prestanda](../analysis-workspace/workspace-faq/optimizing-performance.md). För Data warehouse, se [data warehouse bästa praxis](/help/export/data-warehouse/data-warehouse-bp.md).*
 
 Adobe Analytics har ett flexibelt rapporteringsgränssnitt med vilket man kan generera olika komplexa rapporter. De flesta rapporter genereras mycket snabbt, men du kan stöta på rapporter som timeout eller misslyckas med att generera. På den här sidan förklaras faktorer som påverkar rapportgenereringshastigheten. Genom att förstå den här informationen kan du strukturera rapporter så att de lättare kan genereras.
 
-## Rapporttimeout och begärandekö
+## Timeout för rapporter och begärandekö
 
 * **Timeout**: En enda rapport delas upp i flera begäranden (en per uppdelning) och varje begäran omfattas av en enskild tidsgräns. Schemalagda rapporter tilldelas längre tidsgränser och är mer framgångsrika än rapporter som genereras direkt i ett användargränssnitt.
 * **Report Suite-kö**: Varje rapportsvit har en separat kö med förfrågningar. Om många rapporter begärs samtidigt, även från olika användare, genereras ett litet antal rapporter samtidigt. När rapporterna är klara genereras återstående rapporter i den ordning som de togs emot. Om det redan finns ett stort antal komplexa rapporter i rapportsvitkön kan det leda till att en rapport som genereras snabbt tar slut.
