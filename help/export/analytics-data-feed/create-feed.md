@@ -3,9 +3,9 @@ title: Skapa eller redigera en datafeed
 description: Lär dig hur du skapar eller redigerar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: ed1a627dafdf10f8a0a65e94b20ab6a3204a5d15
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '945'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Genom att skapa en datafeed kan Adobe veta var rådatafiler ska skickas och vad du vill inkludera i varje fil. På den här sidan visas enskilda inställningar som du kan anpassa när du skapar en datafeed.
 
-Grundläggande kunskap om dataflöden rekommenderas innan du läser den här sidan. Se [Översikt över dataflöden](data-feed-overview.md) för att säkerställa att du uppfyller kraven för att skapa en datafeed.
+Grundläggande kunskap om dataflöden rekommenderas innan du läser den här sidan. Se [Översikt över dataflöden](data-feed-overview.md) för att se till att du uppfyller kraven för att skapa en datafeed.
 
 ## Fält för matningsinformation
 

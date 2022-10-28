@@ -1,12 +1,12 @@
 ---
-description: 'De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran '
+description: De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran
 title: ID-expansion
 feature: Data Governance
 exl-id: 312a249f-e0e7-44da-bb3d-b19f1bb4c706
-source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 97%
+source-wordcount: '1359'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Se [Exempel på JSON-begäran](/help/admin/c-data-governance/gdpr-submit-access-
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Cookie-ID-expansion </p> </td> 
-   <td colname="col2"> <p>Många Analytics-kunder använde ursprungligen (den äldre) <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html"> Analytics-cookien </a>, men använder nu <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html"> Identity Service (ECID) </a>, som tidigare kallades Marketing Cloud ID Service (MCID). För webbplatsbesökare som först besökte efter övergången finns endast ECID. Men de som besökte för första gången när endast den gamla cookien fanns tillgänglig och sedan dess har besökt igen: vissa av deras data kommer att ha båda cookies, men de äldre data kommer endast att ha Analytics-cookien, och i sällsynta fall har de senaste data bara en ECID. </p> <p>Du måste se till att du hittar alla data för en besökare som identifieras via en Analytics-cookie (besökar-ID) eller en ECID. Om du för närvarande använder ECID och tidigare använde Analytics-cookien. ska du inkludera båda ID:n i begäran eller ange alternativet expandIds när du skickar en begäran med någon typ av ID. När du anger expandIds söker Adobe efter andra ECID:n eller Analytics-cookies som motsvarar de cookie-ID:n du anger. Begäran utökas automatiskt så att den innehåller dessa nyligen identifierade cookie-ID:n. </p> </td> 
+   <td colname="col2"> <p>Många Analytics-kunder använde ursprungligen (den äldre) <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html"> Analytics-cookien </a>, men använder nu <a href="https://experienceleague.adobe.com/docs/id-service/using/home.html"> Identity Service (ECID) </a>, som tidigare kallades Marketing Cloud ID Service (MCID). För webbplatsbesökare som först besökte efter övergången finns endast ECID. Men de som besökte för första gången när endast den gamla cookien fanns tillgänglig och sedan dess har besökt igen: vissa av deras data kommer att ha båda cookies, men de äldre data kommer endast att ha Analytics-cookien, och i sällsynta fall har de senaste data bara en ECID. </p> <p>Du måste se till att du hittar alla data för en besökare som identifieras via en cookie eller ett ECID för Analytics (Visitor ID). Om du för närvarande använder ECID och tidigare använde Analytics-cookien. ska du inkludera båda ID:n i begäran eller ange alternativet expandIds när du skickar en begäran med någon typ av ID. När du anger expandIds söker Adobe efter andra ECID:n eller Analytics-cookies som motsvarar de cookie-ID:n du anger. Begäran utökas automatiskt så att den innehåller dessa nyligen identifierade cookie-ID:n. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Anpassat ID till cookie-ID-expansion </p> </td> 

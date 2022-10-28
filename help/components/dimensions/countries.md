@@ -3,16 +3,16 @@ title: Länder
 description: Det land som träffen kom från.
 feature: Dimensions
 exl-id: 47704b08-215d-4d2d-bcd4-1789e308c1c6
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
 # Länder
 
-I dimensionen &#39;Länder&#39; rapporteras landet där träffen härstammar. Den här dimensionen är användbar för att avgöra vilka länder besökarna mest besöker när de besöker er webbplats. Ni kan använda dessa data för att fokusera på marknadsföringen i dessa länder eller se till att er webbplatsupplevelse är optimal i länder som har olika primära språk.
+I dimensionen &#39;Länder&#39; rapporteras landet där träffen härstammar. Den här dimensionen är användbar för att avgöra vilka länder besökarna mest besöker när de besöker er webbplats. Ni kan använda dessa data för att fokusera på marknadsföringen i dessa länder eller se till att webbplatsupplevelsen är optimal i länder som har olika primära språk.
 
 ## Fyll den här dimensionen med data
 

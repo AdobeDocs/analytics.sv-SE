@@ -1,11 +1,11 @@
 ---
 title: Definiera de fem viktigaste KPI:erna
-description: Se till att era nyckeltal och tillhörande mätvärden och dimensioner är anpassade efter era affärsbehov.
+description: Se till att era nyckeltal för prestandaindikatorer och tillhörande mätvärden och dimensioner är anpassade efter era affärsbehov.
 feature: Implementation Basics
 exl-id: ca2af0ec-2719-4ee2-aa00-b48a54ee9e14
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '306'
 ht-degree: 1%
 
 ---

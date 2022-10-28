@@ -3,41 +3,50 @@ title: hierarki
 description: Implementera hierarkivariabler i Adobe Analytics.
 feature: Variables
 exl-id: 72bdab8f-a001-4ada-b5e2-453a8e3f24a6
-source-git-commit: a71db2fac9333b70a55da91fe9a94b0cc8434b42
+source-git-commit: f435453f655caef89460de42ebecf489b021dc47
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '340'
+ht-degree: 0%
 
 ---
 
 # hierarki
 
-Hierarkivariabler är anpassade variabler som du kan använda för att visa en webbplats struktur.
-
->[!TIP]
->
->Den här variabeln var vanligare i tidigare versioner av Adobe Analytics. Adobe rekommenderar att du använder [eVars](evar.md) och klassificeringar istället.
-
 >[!IMPORTANT]
 >
->Hierarki stöds inte vid datainsamling med XDM för Experience Edge.
+>Den här variabeln har tagits bort och är inte en tillgänglig dimension i Analysis Workspace. Adobe rekommenderar att du använder [eVars](evar.md) och klassificeringar istället.
+
+Hierarkivariabler är anpassade variabler som du kan använda för att visa en webbplats struktur. Adobe stöder upp till 5 hierarkivariabler i implementeringen.
 
 Den här variabeln är användbar för platser som har mer än tre nivåer i platsstrukturen. En mediewebbplats kan till exempel ha fyra nivåer till avsnittet Sport: `Sports`, `Local Sports`, `Baseball`och `Team name`. Om någon besöker Baseball-sidan, Sport, Local Sports och Baseball återspeglar alla nivåer detta besök.
 
-Adobe stöder upp till 5 hierarkivariabler i implementeringen. När hierarkin är aktiverad bestämmer du vilken avgränsare som ska användas för variabeln och det högsta antalet nivåer för hierarkin. Om avgränsaren till exempel är ett komma ser hierarkin ut ungefär så här:
+Innan du använder hierarkier i implementeringen måste du konfigurera varje hierarki i inställningarna för rapportsviten.
 
-```js
-s.hier1 = "Sports,Local Sports,Baseball";
-```
+## Hierarkier med Web SDK
+
+Hierarkier är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fälten `_experience.analytics.customDimensions.hierarchies.hier1` till `_experience.analytics.customDimensions.hierarchies.hier5`.
+
+## Hierarkier med Adobe Analytics-tillägget
+
+Du kan ange hierarkier antingen när du konfigurerar Analytics-tillägget (globala variabler) eller under regler.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+2. Klicka på den önskade taggegenskapen.
+3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
+4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
+5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta reda på [!UICONTROL Hierarchy] -avsnitt.
+
+Du kan ställa in ett hierarkivärde på en statisk sträng eller referera till ett dataelement. Du kan också ange önskad avgränsare. Kontrollera att avgränsaren som du anger här matchar avgränsaren som anges i inställningarna för rapportsviten.
+
+## s.hier1 - s.hier5 i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+
+Varje hierarki är en sträng som innehåller anpassade värden som är specifika för din organisation. Deras största längd är 255 byte. värden som är längre än 255 byte trunkeras automatiskt när de skickas till Adobe.
 
 Kontrollera att inga av avsnittsnamnen har avgränsaren. Om till exempel ett av avsnitten anropas `Coach Griffin, Jim`väljer du en annan avgränsare än ett komma. Den totala variabelgränsen är 255 byte. Avgränsare kan bestå av flera tecken, t.ex. `||` eller `/|\`, vilket är mindre troligt att de visas i variabelvärden.
 
-## Exempel
-
 ```js
-s.hier1="Toys|Boys 6+|Legos|Super Block Tub";
-```
+s.hier1 = "Toys|Boys 6+|Legos|Super Block Tub";
 
-```js
-s.hier4="Sports/Local Sports/Baseball";
+s.hier3 = "Sports/Local Sports/Baseball";
 ```

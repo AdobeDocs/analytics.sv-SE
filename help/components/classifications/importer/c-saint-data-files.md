@@ -3,9 +3,9 @@ description: Importören låter dig ladda upp klassificeringsdata gruppvis för 
 title: Datafiler för klassificering
 feature: Classifications
 exl-id: aa919a03-d461-4d12-adc1-6441fb467e63
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1735'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ En datafil måste följa följande strukturregler:
 * Överförda filer ska använda UTF-8 utan BOM-teckenkodning.
 * Specialtecken som tabbar, radmatningar och citattecken kan bäddas in i en cell förutsatt att filformatet v2.1 anges och cellen är korrekt [escape](/help/components/classifications/importer/t-classifications-escape-data.md). Specialtecken är:
 
-   ```
+   ```text
    \t     tab character 
    \r     form feed character 
    \n    newline character 
@@ -155,7 +155,7 @@ Dessa tecken har en speciell betydelse i en datafil. Undvik om möjligt att anv�
 
 **Exempel:** Om Campaign A kostar 10 000 dollar är [!UICONTROL Campaigns^~Cost] -kolumnen innehåller värdet 10000 och [!UICONTROL Campaigns^~Kostnad~per] kolumnen innehåller [!UICONTROL FIXED]. När du visar kostnaden för kampanj A i rapporterna ser du 10 000 USD som fast kostnad för kampanj A för datumintervallet.
 
-**Exempel:** Om Campaign B kostar ungefär $2 per klick, [!UICONTROL Campaigns^~Cost] kolumnen innehåller 2 och **[!UICONTROL Campaigns^~Kostnad~per]** kolumnen innehåller [!UICONTROL CLICK]. När kostnaden för Campaign B visas i rapporterna beräknas Adobe (2 * [antal klick]) direkt för rapportens datumintervall. Detta ger en total kostnadsberäkning baserad på antalet klick som har utförts med Campaign B.
+**Exempel:** Om Campaign B kostar ungefär $2 per klick, [!UICONTROL Campaigns^~Cost] kolumnen innehåller 2 och **[!UICONTROL Campaigns^~Kostnad~per]** kolumnen innehåller [!UICONTROL CLICK]. När kostnaden för Campaign B visas i rapporterna beräknas Adobe (2) &#42; [antal klick]) direkt för rapportens datumintervall. Detta ger en total kostnadsberäkning baserad på antalet klick som har utförts med Campaign B.
 
 ### Datum
 

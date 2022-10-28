@@ -3,9 +3,9 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 297e236a6f573354c9d391d43b20db54ad653cd2
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2315'
 ht-degree: 2%
 
 ---
@@ -275,7 +275,7 @@ Uppdaterades: **4 augusti 2016**
 
 >[!IMPORTANT]
 >
->Version 1.6.0 av [!DNL Experience Cloud] ID-tjänst *kräver* [!DNL AppMeasurement] for [!DNL JavaScript] version 1.6.3 eller senare. Om du vill uppgradera till version 1.6.0 av Experience Cloud ID-tjänsten måste du se till att du använder [!DNL AppMeasurement] kodversion 1.6.3 eller senare.
+>Version 1.6.0 av [!DNL Experience Cloud] ID-tjänst *kräver* [!DNL AppMeasurement] for [!DNL JavaScript] version 1.6.3 eller senare. Om du vill uppgradera till version 1.6.0 av Experience Cloud ID-tjänsten måste du använda AppMeasurement 1.6.3 eller senare.
 
 ## Version 1.6.2
 

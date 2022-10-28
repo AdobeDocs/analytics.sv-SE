@@ -3,9 +3,9 @@ description: Lär dig hur du migrerar bearbetningsregler för mobila tjänster t
 title: Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
 feature: Processing Rules
 exl-id: ea183c1a-a85e-4f4e-a7f6-f947b939e9d9
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Men om du skapar ytterligare bearbetningsregler i gränssnittet för mobila tjä
 
    ![Kontextvariabel](assets/context-var.png)
 
-1. Gå till Experience Cloud, byt till Adobe Analytics och se till att du är med i samma mobila rapportsserie som du tittade på i Mobiltjänster.
+1. Gå till Experience Cloud, byt till Adobe Analytics och se till att du är med i samma paket för mobilrapporter som du tittade på i Mobiltjänster.
 1. Gå till **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL General]** > **[!UICONTROL Processing Rules]**.
 1. Klicka på **[!UICONTROL Add Rule]**.
 1. Ignorera villkoren och fortsätt att lägga till samma sammanhangsvariabler som finns i Mobiltjänster.

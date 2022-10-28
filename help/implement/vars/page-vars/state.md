@@ -1,9 +1,9 @@
 ---
-title: Läge
+title: tillstånd
 description: Fyll i 'Visitor State Report' i Reports and Analytics.
 feature: Variables
 exl-id: a6e3f30b-b5d1-48f8-8961-8e9c6d4d29da
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%

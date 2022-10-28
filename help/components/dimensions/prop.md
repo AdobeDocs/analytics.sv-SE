@@ -3,9 +3,9 @@ title: Prop
 description: En anpassad dimension som du kan använda vid rapportering.
 feature: Dimensions
 exl-id: cf8ad65b-bc54-473e-bcfc-9c981d23e782
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för da
 
 ## Dimensioner
 
-Eftersom utkast innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekt som finns för varje steg. Se till att du spelar in syftet med varje utkast och typiska måttobjekt i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).
+Eftersom utkast innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekt som finns för varje steg. Se till att du registrerar syftet med varje utkast och typiska måttobjekt i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).
 
 ## Skiftlägeskänslighet
 

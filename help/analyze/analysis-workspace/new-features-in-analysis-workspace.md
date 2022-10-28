@@ -5,9 +5,9 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: c728df537c543eb171ba74e72b158f4200f1e828
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '8164'
+source-wordcount: '8165'
 ht-degree: 87%
 
 ---
@@ -1051,7 +1051,7 @@ Nya funktioner som släpptes 20 oktober 2016:
 Nya funktioner som släpptes 16 juni 2016:
 
 * [Ny gruppbehörighet](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) som administratörer kan använda för att ge eller neka användare åtkomst till fliken **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**. Från och med den 16 juni 2016 har alla användare behörighet att komma åt den här fliken. Om du vill neka åtkomst tar du bara bort användare från gruppen Åtkomst till Analysis Workspace.
-* Panelen för [segmentjämförelse](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md) visar de statistiskt mest signifikanta skillnaderna mellan två valfria segment via en automatiserad analys av alla mätvärden och mått som du har tillgång till.
+* The [Segmentjämförelsepanel](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)Identifierar de mest statistiskt signifikanta skillnaderna mellan två segment genom en automatiserad analys av varje enskilt mätvärde och dimension som du har tillgång till.
 * [Ny struktur för menyn Projekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md) som ordnar om den övre menyn och gör den mer utbyggbar. Om du till exempel skapar en **ny kohortpanel** måste du nu skapa en tom panel och dra in en kohorttabellvisualisering.
 * [Ny vänsterlist](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md): paneler, visualiseringar, komponenter
 * En ny [typ av vennvisualisering](/help/analyze/analysis-workspace/visualizations/venn.md) med vilken du kan dra in upp till tre segment och ett mätvärde och skapa ett venndiagram.

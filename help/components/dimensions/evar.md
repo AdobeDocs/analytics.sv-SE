@@ -1,11 +1,11 @@
 ---
-title: eVar för Dimensioner
+title: eVar (dimension)
 description: En anpassad dimension som du kan använda vid rapportering.
 feature: Dimensions
 exl-id: ce7cc999-281d-4c52-b64d-d44cc320ab2d
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för da
 
 ## Dimensioner
 
-Eftersom eVars innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekten är för varje eVar. Se till att du spelar in syftet med varje eVar och typiska dimensionsobjekt i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).
+Eftersom eVars innehåller anpassade strängar i implementeringen avgör organisationen vilka dimensionsobjekten är för varje eVar. Se till att du registrerar syftet med varje eVar och typiska dimensionsobjekt i en [konstruktionsdokument](/help/implement/prepare/solution-design.md).
 
 ## Hur eVars fungerar
 

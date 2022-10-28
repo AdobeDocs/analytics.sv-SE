@@ -3,9 +3,9 @@ title: Implementera analyser för digitala assistenter
 description: Implementera Adobe Analytics på Digital Assistants, som Amazon Alexa eller Google Home.
 feature: Implementation Basics
 exl-id: ebe29bc7-db34-4526-a3a5-43ed8704cfe9
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---

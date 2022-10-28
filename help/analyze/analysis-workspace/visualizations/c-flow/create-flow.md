@@ -4,10 +4,10 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: acacd0a61dfaf2ab7ba20bcaa1c6bcc4f6f67765
+source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1247'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Den nya [!UICONTROL flow] arbetsflödet har förbättrats på flera sätt:
 
    * Använd listrutan för att välja mått eller mått.
    * Dra objekt från måttlistan eller mätningslistan.
-   * Använd sökfunktionen för att hitta de mätvärden eller dimensioner du letar efter.
+   * Använd sökfunktionen för att hitta den dimension eller det mått du söker.
 
    Låt oss anta att du vill spåra allt som leder till en utcheckningshändelse. Du drar en utcheckningsrelaterad dimension eller mätvärden (som [!UICONTROL Order exists]) till **[!UICONTROL Ends with]** släppzon.
 
