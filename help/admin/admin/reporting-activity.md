@@ -3,9 +3,9 @@ description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren 
 title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
-source-git-commit: 7c66414129e262954e5521a28b878424099ac6ad
+source-git-commit: 0ace6f453e08557be4fe61e35c542abaee8374f2
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '904'
 ht-degree: 2%
 
 ---
@@ -45,6 +45,8 @@ När du öppnar översiktssidan för Reporting Activity Manager visas en lista �
 | **[!UICONTROL Virtual Report Suite]** | Visar alla virtuella rapportsviter som matas in i den här basrapportsviten. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten.<p>Om du till exempel har 10 begäranden från 5 VRS är det 50 förfrågningar från rapportsviten på basnivå. På så sätt kan du snabbt nå ut till din kapacitet. |
 | **[!UICONTROL Usage Capacity]** | Procentandel av rapportsvitens rapporteringskapacitet används i realtid. |
 | **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd -[!UICONTROL At Capacity]**: Rapportsviten är maximerad när det gäller rapporteringskapacitet. (95 % - 100 %) </li><li>**Gul -[!UICONTROL Nearing capacity]**: Denna rapportserie riskerar att nå sin maximala kapacitet. (90-94 %)</li><li>**Grön -[!UICONTROL All good]**: Det finns gott om kapacitet för rapportering. (0 % - 90 %)</li><li>**Grå -[!UICONTROL Status pending]**: ?</li></ul> |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### Andra åtgärder för rapporteringsaktivitet
 
