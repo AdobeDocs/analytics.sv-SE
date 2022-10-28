@@ -3,9 +3,9 @@ description: Sekventiella segment skapas med operatorn THEN i stället för AND 
 title: Skapa sekventiella segment
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 55c5e6fb790cf9fa49304e8a766f982bccf346b6
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3658'
 ht-degree: 1%
 
 ---
@@ -210,14 +210,7 @@ Skapa ett segment på samma sätt som för ett enkelt, blandat eller kapslat sek
 
 Om kontrollpunkten för uteslutning är i början av ett sekventiellt segment ser den till att en utesluten sidvy inte inträffade före den första icke-uteslutna träffen.
 
-**Exempel**: Besökaren besökte sida A och inte sida B.
-
-**Användningsexempel**
-
-Här följer några exempel på hur den här typen av segment kan användas:
-
-* Besökare som besökt sida A och inte besökt sida B.
-* En restaurang vill att användarna ska hitta rätt och slippa landningssidan och gå direkt till sidan Beställ ute.
+En restaurang vill t.ex. se invettera användare som undviker huvudlandningssidan och gå direkt till sidan Beställ ut. Det här exemplet kan förenklas för en besökare som vill undvika att besöka sida A och gå direkt till sida B.
 
 **Skapa det här segmentet**
 
@@ -229,14 +222,7 @@ Skapa två separata träff-behållare i en besöksbehållare på den översta ni
 
 Om den utelämnade kontrollpunkten finns i slutet av en sekvens ser det till att kontrollpunkten inte inträffade mellan den sista icke-utelämnade kontrollpunkten och slutet av besökarsekvensen.
 
-**Exempel**: Besökarna besöker sida A och besöker sedan inte sida B vid de aktuella eller efterföljande besöken.
-
-**Användningsexempel**
-
-Här följer några exempel på hur den här typen av segment kan användas:
-
-* Besökare som besökt sida A och inte besökt sida B.
-* En restaurang vill att användarna ska hitta rätt och slippa landningssidan och gå direkt till sidan Beställ ute.
+En klädbutik vill till exempel se alla besökare som tittade på en produktsida men aldrig besökt sin kundvagn efteråt. Det här exemplet kan förenklas för en besökare som går till sida A och sedan aldrig kommer till sida B vid aktuella eller efterföljande besök.
 
 **Skapa det här segmentet**
 
