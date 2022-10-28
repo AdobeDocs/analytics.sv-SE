@@ -3,10 +3,10 @@ description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren 
 title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
-source-git-commit: eb9400e20fe6f5e4a3cecfde85e8dc1428db9d1b
+source-git-commit: 7c66414129e262954e5521a28b878424099ac6ad
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '901'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,9 @@ ht-degree: 0%
 >
 >Den här funktionen är för närvarande under betatestning.
 
-Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen. Som administratör får ni detaljerad insyn i rapporteringen av förbrukning och hjälper er att enkelt diagnostisera och åtgärda kapacitetsproblem under högkvalitativa rapporteringstider. När organisationen når upp till sin rapporteringskapacitet och upplever en försämring av rapportens prestanda, kan ni nu själva diagnostisera rapporteringsproblem utan att behöva kontakta Adobe kundtjänst eller tekniker. Du kan enkelt hantera rapporteringsköer i ett enda gränssnitt och omedelbart agera &#x200B; &#x200B; för att förbättra användarnas upplevelse. Det här verktyget:
+Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen. Som administratör får ni detaljerad insyn i rapporteringen av förbrukning och hjälper er att enkelt diagnostisera och åtgärda kapacitetsproblem under högkvalitativa rapporteringstider.
+
+När organisationen når upp till sin rapporteringskapacitet och upplever en försämring av rapportens prestanda, kan ni nu själva diagnostisera rapporteringsproblem utan att behöva kontakta Adobe kundtjänst eller tekniker. Du kan enkelt hantera rapporteringsköer i ett enda gränssnitt och omedelbart agera &#x200B; &#x200B; för att förbättra användarnas upplevelse. Det här verktyget:
 
 * Informerar dig i realtid om din nuvarande rapportkapacitet i alla rapportsviter.
 * Innehåller detaljerad rapportfrågeinformation om aktuella rapporteringsbegäranden, oavsett om de står i kö eller pågår.

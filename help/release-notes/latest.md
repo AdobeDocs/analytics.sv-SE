@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 96488440c73acfdc015560012de5481368baed8a
+source-git-commit: 7c66414129e262954e5521a28b878424099ac6ad
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1412'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (oktober/november 2022)
 
-**Senaste uppdatering**: 25 oktober 2022
+**Senaste uppdatering**: 28 oktober 2022
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -21,7 +21,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **[!UICONTROL Key metric summary]** visualisering | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) | 5 oktober 2022 | 19 oktober 2023 |
-| **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1` - `mvvar3` i dataflöden inte längre automatiskt sänks. I stället kommer dataflöden (och data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA) att återspegla det ursprungliga fallet som skickades från sidan. | Ej tillämpligt | 24 oktober 2022 |
+| **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1 - mvvar3` och `post_mvvar1 - post_mvvar3` i Dataflöden kommer inte längre att sänkas automatiskt. I stället kommer dataflöden (och data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA) att återspegla det ursprungliga fallet som skickades från sidan. | Ej tillämpligt | 24 oktober 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
