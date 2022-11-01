@@ -3,9 +3,9 @@ description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren 
 title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
-source-git-commit: 0ace6f453e08557be4fe61e35c542abaee8374f2
+source-git-commit: fa76e9cce0161e0efd2e95e87da5cddb6a612d8b
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '863'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ När du öppnar översiktssidan för Reporting Activity Manager visas en lista �
 | **[!UICONTROL Report Suite]** | Basrapportsviten vars rapporteringsaktivitet du övervakar. |
 | **[!UICONTROL Virtual Report Suite]** | Visar alla virtuella rapportsviter som matas in i den här basrapportsviten. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten.<p>Om du till exempel har 10 begäranden från 5 VRS är det 50 förfrågningar från rapportsviten på basnivå. På så sätt kan du snabbt nå ut till din kapacitet. |
 | **[!UICONTROL Usage Capacity]** | Procentandel av rapportsvitens rapporteringskapacitet används i realtid. |
-| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd -[!UICONTROL At Capacity]**: Rapportsviten är maximerad när det gäller rapporteringskapacitet. (95 % - 100 %) </li><li>**Gul -[!UICONTROL Nearing capacity]**: Denna rapportserie riskerar att nå sin maximala kapacitet. (90-94 %)</li><li>**Grön -[!UICONTROL All good]**: Det finns gott om kapacitet för rapportering. (0 % - 90 %)</li><li>**Grå -[!UICONTROL Status pending]**: ?</li></ul> |
+| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd -[!UICONTROL At Capacity]**: Rapportsviten är maximerad när det gäller rapporteringskapacitet. (100 %) </li><li>**Gul -[!UICONTROL Nearing capacity]**: Denna rapportserie riskerar att nå sin maximala kapacitet. (90-99 %)</li><li>**Grön -[!UICONTROL All good]**: Det finns gott om kapacitet för rapportering. (0 % - 89 %)</li><li>**Grå -[!UICONTROL Status pending/Not enabled]**: Rapportkapaciteten är inte tillgänglig.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -86,11 +86,11 @@ Följande information visas i sammanfattningsnumren:
 
 | Sammanfattningsnummer | Beskrivning |
 | --- | --- |
-| Användare | Hur många användare som för närvarande skickar rapportbegäranden till den här rapportsviten. |
-| Projekt | Arbetsyteprojekt, arbetsböcker från Report Builder osv. |
-| Frågor | Antalet frågor som körs. |
-| Genomsnittlig väntetid | Genomsnittlig väntetid för alla frågor som körs. |
-| Förbrukningskapacitet | Den aktuella användningskapaciteten för den här rapportsviten. |
+| [!UICONTROL Users] | Hur många användare som för närvarande skickar rapportbegäranden till den här rapportsviten. |
+| [!UICONTROL Projects] | Arbetsyteprojekt, arbetsböcker från Report Builder osv. |
+| [!UICONTROL Queries] | Antalet frågor som körs. |
+| [!UICONTROL Average Wait Time] | Genomsnittlig väntetid för alla frågor som körs. |
+| [!UICONTROL Usage Capacity] | Den aktuella användningskapaciteten för den här rapportsviten. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -100,17 +100,17 @@ I tabellen nedan finns information om rapportsviten.
 
 | Kolumn | Beskrivning |
 | --- | --- |
-| Fråge-ID | Kan användas i felsökningssyfte. |
-| Körningstid | Hur länge frågan har körts. |
-| Väntetid | Hur länge frågan har stått och väntat innan den bearbetades. I allmänhet vid &quot;0&quot; när det finns tillräckligt med kapacitet. |
-| Starttid | När frågan började bearbetas (administratörens lokala tid). |
-| Program | Följande program stöds av Rapporteringsaktivitetshanteraren: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för Builder: Segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 1.4 eller 2.0 API (5 samtidiga begäranden)</li><li>Intelligenta aviseringar</li></ul> |
-| Användare | Användaren som initierade frågan. |
-| Projekt | Arbetsyteprojekt, arbetsböcker från Report Builder osv. |
-| Månadsgränser | Hur många månatliga gränser en begäran överskrider. Detta ökar komplexiteten i begäran. |
-| Kolumner | Antalet mått och uppdelningar i Workspace för att mäta hur komplicerad begäran är. |
-| Segment | Hur många segment som används i den här begäran. Detta ökar komplexiteten i begäran. |
-| Status | Fyra möjliga statusindikatorer: <ul><li>**Röd -[!UICONTROL At Capacity]**: Rapportsviten är maximerad när det gäller rapporteringskapacitet. (95 % och uppåt)</li><li>**Gul -[!UICONTROL Nearing capacity]**: Denna rapportserie riskerar att nå sin maximala kapacitet (90-95 %).</li><li>**Grön -[!UICONTROL All good]**: Det finns gott om kapacitet för rapportering.</li><li>**[!UICONTROL Status pending]**: Status är inte tillgänglig.</li></ul> |
+| [!UICONTROL Query ID] | Kan användas i felsökningssyfte. |
+| [!UICONTROL Running Time] | Hur länge frågan har körts. |
+| [!UICONTROL Wait Time] | Hur länge frågan har stått och väntat innan den bearbetades. I allmänhet vid &quot;0&quot; när det finns tillräckligt med kapacitet. |
+| [!UICONTROL Start Time] | När frågan började bearbetas (administratörens lokala tid). |
+| [!UICONTROL Application] | Följande program stöds av Rapporteringsaktivitetshanteraren: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för Builder: Segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 1.4 eller 2.0 API</li><li>Intelligenta aviseringar</li></ul> |
+| [!UICONTROL User] | Användaren som initierade frågan. |
+| [!UICONTROL Project] | Sparade projektnamn för arbetsytan, API-rapport-ID:n osv. (Metadata kan variera mellan olika program.) |
+| [!UICONTROL Month Boundaries] | Hur många månatliga gränser en begäran överskrider. Detta ökar komplexiteten i begäran. |
+| [!UICONTROL Columns] | Antalet mått och uppdelningar i Workspace för att mäta hur komplicerad begäran är. |
+| [!UICONTROL Segments] | Hur många segment som används i den här begäran. Detta ökar komplexiteten i begäran. |
+| [!UICONTROL Status] | Statusindikatorer: <ul><li>**Körs**: Begäran bearbetas.</li><li>**Väntande**: Begäran väntar på att bearbetas.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -134,6 +134,5 @@ Programanvändare i Workspace ser till exempel följande meddelande i sina proje
 | Fråga | Svar |
 | --- | --- |
 | Kan jag köpa ytterligare rapporteringskapacitet? | Den här funktionen kommer att vara tillgänglig inom den närmaste framtiden. |
-| Andra frågor? |  |
 
 {style=&quot;table-layout:auto&quot;}
