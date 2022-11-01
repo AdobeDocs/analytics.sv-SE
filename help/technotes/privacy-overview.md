@@ -4,10 +4,10 @@ keywords: sekretess
 title: Sekretessöversikt
 feature: Privacy
 exl-id: 71c83106-a047-47d7-9a70-4a24595e3d0a
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: d4eda940f59a9b4e81d87be5aa29949a590f7b6b
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe Analytics samlar in följande data:
 | Operativsystem | Ja |
 | ISP/anslutningshastighet | Ja |
 | Visningsinställningar (till exempel skärmstorlek och upplösning) | Ja |
-| IP-adress (används för att beräkna plats) | Ja* |
+| IP-adress (används för att beräkna plats) | Ja&#42; |
 | Information som konsumenter tillhandahåller i formulär på kundwebbplatsen | Ja |
 | Information som konsumenter tillhandahåller i formulär på sociala webbplatser | **Nej** |
 | Om konsumenten klickat på annonsen | Ja |
@@ -49,7 +49,7 @@ Adobe Analytics samlar in följande data:
 | Framgångssiffror för annonskampanjer | Ja |
 | Produktinformation, t.ex. färger, priser, format, foton | Ja |
 
-*Om inte Adobe-kunden väljer att ta bort IP-adressen.
+&#42;Om inte Adobe-kunden väljer att ta bort IP-adressen.
 
 ## Andra sekretessfrågor {#section_60AF6AD6FBD046EEAF9F083A9726EF8A}
 
@@ -103,7 +103,7 @@ Adobe Analytics samlar in följande data:
   </tr> 
   <tr> 
    <td colname="col1"> Tyskland </td> 
-   <td colname="col2"> <p>Om kunderna inte redan har ett databehandlingsavtal för Adobe Analytics hos Adobe kontaktar de Adobe Account Manager eller Customer Success Manager, som kommer att arbeta tillsammans med Adobes juridiska avdelning för att få avtalet på plats. </p> <p>Adobe har förberett ett databehandlingsavtal (Vertrag under Auftragsdatenverarbeitung - ADV) för analyser som har granskats och godkänts av Bavarian Data Protection Authority (Bayerisches Landesamt für Datenschutzaufsicht - BayLDA). ADV finns på tyska och engelska. </p> </td> 
+   <td colname="col2"> <p>Om du inte redan har ett databehandlingsavtal för Adobe Analytics med Adobe bör du kontakta din kontoansvarige på Adobe eller kundframgångsansvarige, som kommer att arbeta tillsammans med Adobe juridiska avdelning för att få avtalet på plats. </p> </td> 
   </tr> 
  </tbody> 
 </table>

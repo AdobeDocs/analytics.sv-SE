@@ -3,9 +3,9 @@ description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren 
 title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
-source-git-commit: 1f42ca083346f673f6685ca43f361b19c644975d
+source-git-commit: d4eda940f59a9b4e81d87be5aa29949a590f7b6b
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '861'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ I Adobe Analytics går administratörer till **[!UICONTROL Admin]** > **[!UICONT
 
 ## Behörigheter
 
-Du behöver behörighet som systemadministratör för Analytics för att hantera rapporteringsaktivitet. Produktadministratörsåtkomst är inte tillräckligt.
+Du behöver administratörsbehörighet för Analytics-produkter för att hantera rapporteringsaktiviteter.
 
 ## Visa rapportkön
 
@@ -118,7 +118,7 @@ I tabellen nedan finns information om rapportsviten.
 
 Så här avbryter du en begäran
 
-1. Markera rutan till vänster om en eller flera **[!UICONTROL Query ID]** i tabellen och klicka på **[!UICONTROL Cancel requests]** längst ned.
+1. Markera rutan till vänster om en eller flera **[!UICONTROL Query ID]** i tabellen och klicka på **[!UICONTROL Cancel requests]** längst ned. (Du kan även avbryta flera begäranden samtidigt genom att visa information via [!UICONTROL User], [!UICONTROL Project], eller [!UICONTROL Application].)
 1. I **[!UICONTROL Cancel x query]** -fönstret som visas kan du ändra avbrottsmeddelandet om det behövs.
 1. Klicka på **[!UICONTROL Continue]**.
 
@@ -127,7 +127,6 @@ Så här avbryter du en begäran
 Programanvändare i Workspace ser till exempel följande meddelande i sina projekt:
 
 ![cancel-user-notice](assets/cancel-user-facing.png)
-
 
 ## Frågor och svar
 
