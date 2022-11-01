@@ -3,9 +3,9 @@ description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren 
 title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
-source-git-commit: fa76e9cce0161e0efd2e95e87da5cddb6a612d8b
+source-git-commit: 1f42ca083346f673f6685ca43f361b19c644975d
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '855'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 >
 >Den här funktionen är för närvarande under betatestning.
 
-Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen. Som administratör får ni detaljerad insyn i rapporteringen av förbrukning och hjälper er att enkelt diagnostisera och åtgärda kapacitetsproblem under högkvalitativa rapporteringstider.
+The [!UICONTROL Reporting Activity Manager] gör att du kan se rapporteringskapaciteten för varje rapportserie i din organisation. Som administratör får ni detaljerad insyn i rapporteringen av förbrukning och hjälper er att enkelt diagnostisera och åtgärda kapacitetsproblem under högkvalitativa rapporteringstider.
 
 När organisationen når upp till sin rapporteringskapacitet och upplever en försämring av rapportens prestanda, kan ni nu själva diagnostisera rapporteringsproblem utan att behöva kontakta Adobe kundtjänst eller tekniker. Du kan enkelt hantera rapporteringsköer i ett enda gränssnitt och omedelbart agera &#x200B; &#x200B; för att förbättra användarnas upplevelse. Det här verktyget:
 
@@ -35,7 +35,7 @@ Du behöver behörighet som systemadministratör för Analytics för att hantera
 
 ## Visa rapportkön
 
-När du öppnar översiktssidan för Reporting Activity Manager visas en lista över dina aktiverade basrapportsviter.
+När du öppnar [!UICONTROL Reporting Activity] På sidan Översikt över chefen visas en lista med dina aktiverade basrapportsviter.
 
 ![rapportkö](assets/reporting-activity1.png)
 
@@ -104,7 +104,7 @@ I tabellen nedan finns information om rapportsviten.
 | [!UICONTROL Running Time] | Hur länge frågan har körts. |
 | [!UICONTROL Wait Time] | Hur länge frågan har stått och väntat innan den bearbetades. I allmänhet vid &quot;0&quot; när det finns tillräckligt med kapacitet. |
 | [!UICONTROL Start Time] | När frågan började bearbetas (administratörens lokala tid). |
-| [!UICONTROL Application] | Följande program stöds av Rapporteringsaktivitetshanteraren: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för Builder: Segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 1.4 eller 2.0 API</li><li>Intelligenta aviseringar</li></ul> |
+| [!UICONTROL Application] | De program som stöds av [!UICONTROL Reporting Activity Manager] är: <ul><li>Analysis Workspace UI</li><li>Schemalagda projekt för arbetsyta</li><li>Report Builder</li><li>Användargränssnitt för Builder: Segment, beräknade värden, anteckningar, målgrupper osv.</li><li>API-anrop från 1.4 eller 2.0 API</li><li>Intelligenta aviseringar</li></ul> |
 | [!UICONTROL User] | Användaren som initierade frågan. |
 | [!UICONTROL Project] | Sparade projektnamn för arbetsytan, API-rapport-ID:n osv. (Metadata kan variera mellan olika program.) |
 | [!UICONTROL Month Boundaries] | Hur många månatliga gränser en begäran överskrider. Detta ökar komplexiteten i begäran. |
