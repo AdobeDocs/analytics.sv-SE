@@ -3,28 +3,31 @@ title: Vad är variabeln currencyCode och hur använder jag den?
 description: För e-handelswebbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: f659d1bde361550928528c7f2a70531e3ac88047
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
 
 # currencyCode
 
-För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som spänner över flera länder, använder olika valutor. Använd `currencyCode` variabel för att säkerställa intäktsattribut för rätt valuta.
+För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som spänner över flera länder, använder olika valutor. Använd `currencyCode` variabel för att säkerställa att intäktsattributen är rätt valuta.
 
-If `currencyCode` är inte definierat, monetära värden har definierats för [`products`](../page-vars/products.md) variabel- och valutahändelser behandlas som om de är samma som rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) i användarhandboken för Admin om du vill se rapportsvitens valuta.
+Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges i [`products`](../page-vars/products.md) variabel och alla händelser listade som Currency i [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) under Rapportsvitens inställningar.
 
-If `currencyCode` är definierad och matchar rapportsvitens valuta, ingen valutakonvertering används.
+* If `currencyCode` är inte definierat, antar Adobe att alla valutavärden är rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) i Rapportsvitens inställningar för att se rapportsvitens valuta.
+* If `currencyCode` är definierad och matchar rapportsvitens valuta, ingen valutakonvertering används.
+* If `currencyCode` är definierad och skiljer sig från rapportsvitens valuta, använder Adobe en valutakonvertering som baseras på den aktuella dagens växelkurs. Adobe samarbetar med [XE](https://xe.com) för att konvertera valuta varje dag. Alla värden som lagras i rapportsviten finns i rapportsvitens valuta.
+* If `currencyCode` är inställt på ett ogiltigt värde, **hela träffen tas bort, vilket orsakar dataförlust.** Kontrollera att variabeln är korrekt definierad när den används.
 
-If `currencyCode` är definierad och skiljer sig från rapportsvitens valuta, använder Adobe en valutakonvertering som baseras på den aktuella dagens växelkurs. Adobe samarbetar med [XE](https://xe.com) för att konvertera valuta varje dag. Alla värden som lagras på datainsamlingsservrar lagras slutligen i rapportsvitens valuta.
+Den här variabeln finns inte kvar över träffar. Kontrollera att den här variabeln är definierad på varje sida som innehåller intäkt- eller valutahändelser som inte matchar rapportsvitens standardvaluta.
 
->[!WARNING]
+>[!NOTE]
 >
->If `currencyCode` innehåller ett ogiltigt värde. Hela träffen tas bort, vilket orsakar dataförlust. Kontrollera att variabeln är korrekt definierad om du använder den i implementeringen.
+>Även om valutakoder kan ändras mellan sidor måste alla valutamått för en enda träff använda samma valuta.
 
-Den här variabeln finns inte mellan träffar. Kontrollera att variabeln är definierad på varje sida som innehåller intäkt- eller valutakurser.
+En period **måste** användas som valutaavgränsare för alla valutor när variabeln implementeras. Svensk krona, som vanligtvis visar en kommaavgränsare, måste ändras för att använda en punkt i `products` variabel och alla valutakurshändelser. Adobe visar rätt valutavaldare vid rapportering.
 
 ## Valutakod med Web SDK
 
@@ -53,7 +56,7 @@ Du kan antingen använda en förinställd valutakod eller en anpassad valutakod.
 
 ## s.currencyCode i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 
-The `s.currencyCode` variabeln är en sträng som innehåller en 3-bokstavskod som representerar valutan på sidan.
+The `s.currencyCode` variabeln är en sträng som innehåller en 3-bokstavskod som representerar valutan på sidan. Värdena är skiftlägeskänsliga.
 
 ```js
 s.currencyCode = "USD";
@@ -61,7 +64,7 @@ s.currencyCode = "USD";
 
 Följande valutakoder är giltiga:
 
-| Valutakod | Valutabeskrivning |
+| Valutakod | Etikett |
 | --- | --- |
 | `AED` | Förenade Arabemiraten Dirhams |
 | `AFA` | Afghanistan, Afghanistan |
