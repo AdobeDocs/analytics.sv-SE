@@ -3,9 +3,9 @@ description: Virtuella rapportsviter segmenterar era Adobe Analytics-data så at
 title: Översikt över Virtual Report Suites
 feature: VRS
 exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
-source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
+source-git-commit: 41811cb8c9b67452556364959f24d75cfc7ddc9e
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '799'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Virtuella rapportsviter har följande begränsningar:
 | Funktion | Virtual Report Suite | Taggar för flera programsviter |
 |--- |--- |--- |
 | Ger realtidsrapportering eller&quot;aktuella data&quot;-rapportering | Nej | Ja |
-| Fungerar i alla analysverktyg (Analysis Workspace, Report Builder, etc.) | Ja. **Obs!** Du kan bara redigera och identifiera dem som virtuella rapportsviter i Rapporter och analyser. Du kan dock välja dem i listrutorna för rapportsviten i de andra verktygen. | Ja |
+| Fungerar i alla analysverktyg (Analysis Workspace, Report Builder, etc.) | Ja. **Obs!** Du kan bara redigera och identifiera dem som virtuella rapportsviter i [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Virtual Report Suites]. Du kan dock välja dem i listrutorna för rapportsviten i de andra verktygen.<p>**Viktigt**: Virtuella rapportsviter med bearbetning av rapporttid och variabelanpassning stöds för närvarande inte i Adobe Report Builder. | Ja |
 | Kan överföra data till den (via klassificeringar, dataflöden osv.) | Nej | Ja |
 | Stöder skapande av DL-rapporter, bokmärken, instrumentpaneler, mål, aviseringar, segment, beräknade mätvärden... | Ja | Ja |
 | Kan läggas till individuellt i behörighetsgrupper | Ja | Ja |
