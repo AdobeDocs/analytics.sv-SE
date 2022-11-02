@@ -3,10 +3,10 @@ description: Virtuella rapportsviter segmenterar era Adobe Analytics-data så at
 title: Översikt över Virtual Report Suites
 feature: VRS
 exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
-source-git-commit: 41811cb8c9b67452556364959f24d75cfc7ddc9e
+source-git-commit: f48c7c404312562ad4f443af8e7c7643e5d3f17b
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -59,6 +59,8 @@ Virtuella rapportsviter har följande begränsningar:
 | Stöder skapande av DL-rapporter, bokmärken, instrumentpaneler, mål, aviseringar, segment, beräknade mätvärden... | Ja | Ja |
 | Kan läggas till individuellt i behörighetsgrupper | Ja | Ja |
 | Kan använda administratörsfunktioner för att ändra enskilda inställningar för den här rapportsviten (Admin > Rapportsviter) | Nej (inställningarna ärvs från överordnad) | Ja |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Kombinera virtuella rapportsviter och taggar för flera programsviter {#section_026FA3FCD7314DD18220E73EC5702AFF}
 
