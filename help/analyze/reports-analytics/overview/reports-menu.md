@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: c2adbe93-6a52-45a0-8a81-2799bf63f70f
 source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '847'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Mina favoriter, ofta visade och rapporthistorik är alla rapportsvitsspecifika. 
 
 Rapporterna navigeras i en hierarkisk kolumnvy. Klicka **[!UICONTROL View All Reports]** eller tryck på snedstreck (/) och tryck sedan på nedåtpilen (?) för att snabbt visa och navigera menyn med piltangenterna. Tryck på Esc för att stänga menyn utan att ändra den aktuella rapporten, eller tryck på Retur för att läsa in den markerade rapporten.
 
-![](assets/reports-landing.png){width=&quot;672px&quot;}
+![](assets/reports-landing.png){width="672px"}
 
 Mer information om enskilda rapporter finns i [Dimensioner](/help/components/dimensions/overview.md).
 

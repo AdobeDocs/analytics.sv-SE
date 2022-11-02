@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: f872b9fb-d857-4170-9c9d-7d2c14e0fd45
 source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -27,13 +27,13 @@ I det här exemplet visas en [!UICONTROL Pages Report]. Konfigurationsalternativ
 
 Ett exempel på en sidrapport ( **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages Reports]** > **[!UICONTROL Pages]**).
 
-![](assets/pages_report.png){width=&quot;672px&quot;}
+![](assets/pages_report.png){width="672px"}
 
 ## Verktygsfältet Rapport {#section_0D674177AE6C4A71B07234DB25910ECD}
 
 Dela rapportdata med beslutsfattarna som kan ändra er webbplats- eller marknadsföringsstrategi baserat på data.
 
-![](assets/toolbar.png){width=&quot;672px&quot;}
+![](assets/toolbar.png){width="672px"}
 
 Se även [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md).
 
@@ -41,7 +41,7 @@ Se även [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/
 
 Visar rapportinställningar och låter dig konfigurera rapporttypen, välja mätvärden och mycket annat. Vilka alternativ som är tillgängliga i den här gruppen ändras beroende på vilken rapport du kör.
 
-![](assets/settings_header.png){width=&quot;672px&quot;}
+![](assets/settings_header.png){width="672px"}
 
 Se [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md) för mer information.
 
@@ -49,7 +49,7 @@ Se [Anpassa en rapport](/help/analyze/reports-analytics/reports-customize/custom
 
 Ange datumet genom att klicka på kalenderknappen och välja ett datumintervall. Du kan också välja två tidsintervall för att jämföra prestanda.
 
-![](assets/calendar_large.png){width=&quot;672px&quot;}
+![](assets/calendar_large.png){width="672px"}
 
 Se [Markera ett datum- eller datumintervall](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md) och [Jämför datum](/help/analyze/reports-analytics/reports-customize/customizing-reports-overview.md).
 
