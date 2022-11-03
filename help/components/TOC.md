@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Enhetsövergripande analys.
-source-git-commit: f435453f655caef89460de42ebecf489b021dc47
+source-git-commit: bc8f87c42ca481382b603413088faa9a71ab01f1
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '696'
 ht-degree: 49%
 
 ---
@@ -30,6 +30,8 @@ ht-degree: 49%
    + [Städer](dimensions/cities.md)
    + [Färgdjup](dimensions/color-depth.md)
    + [Anslutningstyp](dimensions/connection-type.md)
+   + [Anmäl dig till hantering av samtycke](dimensions/cm-opt-in.md)
+   + [Avanmäl dig till hantering av samtycke](dimensions/cm-opt-out.md)
    + [Cookie-stöd](dimensions/cookie-support.md)
    + [Länder](dimensions/countries.md)
    + [Egen länk](dimensions/custom-link.md)

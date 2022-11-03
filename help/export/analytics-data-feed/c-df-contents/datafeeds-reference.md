@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 5c178ebb86ffc932ecd90f427bd0a5e90fada1cb
+source-git-commit: bc8f87c42ca481382b603413088faa9a71ab01f1
 workflow-type: tm+mt
-source-wordcount: '3526'
+source-wordcount: '3599'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`cust_hit_time_gmt`** | Endast tidsstämpelaktiverade rapportsviter. Tidsstämpeln som skickades med träffen, baserat på Unix-tid. | int |
 | **`cust_visid`** | Om ett anpassat besökar-ID anges fylls det i i den här kolumnen. | varchar(255) |
 | **`daily_visitor`** | Flagga som avgör om träffen är en ny daglig besökare. | tinyint unsigned |
+| **`dataprivacyconsentoptin`** | Variabel som används i [Anmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-in.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`|`). Giltiga värden är `DMP` och `SELL`. | varchar(100) |
+| **`dataprivacyconsentoptout`** | Variabel som används i [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`|`). Giltiga värden är `SSF`, `DMP`och `SELL`. | varchar(100) |
 | **`date_time`** | Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon. | datetime |
 | **`domain`** | Variabel som används i [Domän](/help/components/dimensions/domain.md) dimension. Baserat på besökarens internetanslutning. | varchar(100) |
 | **`duplicate_events`** | Listar varje händelse som räknats som en dubblett. | varchar(255) |
@@ -201,9 +203,12 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`socialownedpropertypropertyvsapp`** | Används inte längre. Egendom i sociala medier kontra app | varchar(255) |
 | **`state`** | State-variabel. | varchar(50) |
 | **`stats_server`** | Inte till användning. Adobe intern server som bearbetade träffen. | char(30) |
+| **`survey`** | Används inte längre. Adobe Survey-variabel. | text |
+| **`survey_instances`** | Används inte längre. Variabel för Adobe Survey-instanser. | text |
 | **`t_time_info`** | Lokal tid för besökaren. Formatet är: `M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)` | varchar(100) |
 | **`tnt`** | Används i Adobe Target integreringar. Representerar alla tester som är kvalificerade för tillfället. Formatet är: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`. | text |
 | **`tnt_action`** | Används i Adobe Target integreringar. Representerar alla tester som träffen är kvalificerad för. | text |
+| **`tnt_instances`** | Används i Adobe Target integreringar. Målförekomstvariabel. | text |
 | **`tnt_post_vista`** | Används inte längre. Använd `post_tnt` i stället. | text |
 | **`transactionid`** | En unik identifierare där olika datapunkter kan överföras senare via datakällor. Samlas med [`transactionID`](/help/implement/vars/page-vars/transactionid.md) variabel. | text |
 | **`truncated_hit`** | En flagga som anger att bildbegäran har trunkerats. Anger att en partiell träff togs emot. <br>Y: Träet trunkerades. partiell träff mottagen <br>N: Träet trunkerades inte. fullständig träff mottagen | char(1) |
@@ -268,7 +273,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`visid_low`** | Används i kombination med `visid_high` för att unikt identifiera en besökare. | bigint unsigned |
 | **`visid_new`** | Flagga som identifierar om träffen innehåller ett nyligen genererat besökar-ID. | char(1) |
 | **`visid_timestamp`** | Om besökar-ID nyligen genererades, anger tidsstämpeln (i Unix-tid) för när besökar-ID genererades. | int |
-| **`visid_type`** | Ej för extern användning. som används internt av Adobe för att bearbeta optimeringar. Numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>0: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>1: Återställning av IP och användaragent <br>2: HTTP Mobile Subscriber Header <br>3: Äldre cookie-värde (`s_vi`) <br>4: Reservcookie-värde (`s_fid`) <br>5: Identitetstjänst | tinyint unsigned |
+| **`visid_type`** | Ej för extern användning. som används internt av Adobe för att bearbeta optimeringar. Numeriskt ID som representerar den metod som används för att identifiera besökaren.<br>`0`: Anpassat besökar-ID eller Okänt/ej tillämpligt<br>`1`: Återställning av IP och användaragent <br>`2`: HTTP Mobile Subscriber Header <br>`3`: Äldre cookie-värde (`s_vi`) <br>`4`: Reservcookie-värde (`s_fid`) <br>`5`: Identitetstjänst | tinyint unsigned |
 | **`visit_keywords`** | Variabel som används i [Söknyckelord](/help/components/dimensions/search-keyword.md) dimension. I den här kolumnen används en icke-standard teckengräns på varchar(244) för att rymma den serverlogik som används av Adobe. | varchar(244) |
 | **`visit_num`** | Variabel som används i [Besöksnummer](/help/components/dimensions/visit-number.md) dimension. Börjar vid 1 och ökar stegvis varje gång ett nytt besök påbörjas per besökare. | int unsigned |
 | **`visit_page_num`** | Variabel som används i [Träffdjup](/help/components/dimensions/hit-depth.md) dimension. Ökar med 1 för varje träff som användaren skapar. Återställer varje besök. | int unsigned |
