@@ -1,9 +1,9 @@
 ---
 title: Avanmälan från samtyckeshantering
 description: Se vilka sekretessinställningar en besökare valde ut.
-source-git-commit: 49b2c144fea5786564ccb6dc70adead3bc669596
+source-git-commit: c305f74d5047db57509de8ff9ee03b8144009f5a
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '254'
 ht-degree: 2%
 
 ---
@@ -26,6 +26,6 @@ Organisationen bestämmer logiken för att implementera dessa kontextdatavariabl
 
 Dimensionen innehåller följande tre värden:
 
-* **`SSF`**: Besökaren valde bort från [Vidarebefordran på serversidan](/help/admin/admin/c-server-side-forwarding/ssf.md). Dimensionsobjektet finns när kontextdatavariabeln `cm.ssf` är lika med `1`. Se [Översikt över datasekretess](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/data-privacy.html) i användarhandboken för Audience Manager om du vill ha mer information.
-* **`DMP`**: Besökaren valde bort från delning till datahanteringsplattformar. Dimensionsobjektet finns när kontextdatavariabeln `opt.dmp` är lika med `N`. Träffen vidarebefordras inte till Adobe Audience Manager.
+* **`SSF`**: Besökaren valde bort från [Vidarebefordran på serversidan](/help/admin/admin/c-server-side-forwarding/ssf.md). Dimensionsobjektet finns när kontextdatavariabeln `cm.ssf` är lika med `1`. Se [Översikt över datasekretess](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/data-privacy.html) i användarhandboken för Audience Manager om du vill ha mer information. Träffen vidarebefordras inte till Adobe Audience Manager.
+* **`DMP`**: Besökaren valde bort från delning till datahanteringsplattformar. Dimensionsobjektet finns när kontextdatavariabeln `opt.dmp` är lika med `N`. Liknar `SSF`, skickas träffen inte vidare till Adobe Audience Manager.
 * **`SELL`**: Besökaren valde att inte dela eller sälja uppgifterna till tredje part. Den här dimensionen visas när kontextdatavariabeln `opt.sell` är lika med `N`.
