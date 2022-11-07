@@ -1,9 +1,9 @@
 ---
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
-source-git-commit: 9dfeb0f5cc3bb488fa28fb0d21c6969dfdfc9ef6
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Detta [Google blogginlägg](https://web.dev/user-agent-client-hints/) är en bra
 
 +++**Hur aktiverar jag samlingen med klienttips?**
 
-Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se vägbeskrivningar för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html?lang=en#enabling-high-entropy-client-hints) och [AppMeasurement](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/collecthighentropyuseragenthints.html?lang=en).
+Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se vägbeskrivningar för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html#enabling-high-entropy-client-hints) och [AppMeasurement](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/collecthighentropyuseragenthints.html).
 
 För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
 
@@ -81,11 +81,11 @@ De enhetsfält som är tillgängliga för rapportering ändras inte. De data som
 
 Dessa fält härleds direkt från användaragenten, men användaragenten kan användas för att härleda värden för andra enhetsrelaterade fält, beroende på enhetsinformationen.
 
-* [Webbläsare](https://experienceleague.adobe.com/docs/analytics/components/dimensions/browser.html?lang=en)
-* [Typ av webbläsare](https://experienceleague.adobe.com/docs/analytics/components/dimensions/browser-type.html?lang=en)
-* [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en)
-* [Operativsystemstyper](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-system-types.html?lang=en)
-* [Mobil enhet och mobilenhetstyp](https://experienceleague.adobe.com/docs/analytics/components/dimensions/mobile-dimensions.html?lang=en)
+* [Webbläsare](https://experienceleague.adobe.com/docs/analytics/components/dimensions/browser.html)
+* [Typ av webbläsare](https://experienceleague.adobe.com/docs/analytics/components/dimensions/browser-type.html)
+* [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html)
+* [Operativsystemstyper](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-system-types.html)
+* [Mobil enhet och mobilenhetstyp](https://experienceleague.adobe.com/docs/analytics/components/dimensions/mobile-dimensions.html)
 
 +++
 

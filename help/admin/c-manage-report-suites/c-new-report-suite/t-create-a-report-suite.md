@@ -3,16 +3,16 @@ description: Skapa en grundläggande behållare för datainsamling i Adobe Analy
 title: Skapa en rapportsvit
 feature: Report Suite Settings
 exl-id: 255ae051-d993-41a5-8cf3-819a54c17e34
-source-git-commit: f4b495b11bcbd55bc8448f2c9c09268547fb9750
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '305'
 ht-degree: 6%
 
 ---
 
 # Skapa en rapportsvit
 
-En rapportsvit är en silo data som Adobe Analytics använder för att ta fram rapporter. En organisation kan ha många rapportsviter, som alla innehåller olika datauppsättningar. Även om separata rapportsviter var viktiga tidigare har det blivit mer fördelaktigt att ha en enda rapportserie. Införandet av [virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en#virtual-report-suites) och tidsbearbetning av rapporter gör det möjligt för administratörer att skapa egna underuppsättningar av data, vilket ger flexibilitet att hämta både globala och platsspecifika data.
+En rapportsvit är en silo data som Adobe Analytics använder för att ta fram rapporter. En organisation kan ha många rapportsviter, som alla innehåller olika datauppsättningar. Även om separata rapportsviter var viktiga tidigare har det blivit mer fördelaktigt att ha en enda rapportserie. Införandet av [virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html#virtual-report-suites) och tidsbearbetning av rapporter gör det möjligt för administratörer att skapa egna underuppsättningar av data, vilket ger flexibilitet att hämta både globala och platsspecifika data.
 
 Den här artikeln är avsedd för systemnivåadministratörer eller Adobe Analytics-administratörer som ska förbereda datainsamlingen.
 

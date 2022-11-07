@@ -2,9 +2,9 @@
 title: Importera mått för betald sökning
 description: Steg för att konfigurera Adobe Analytics att spåra dina betalda sökvärden (t.ex. Google AdWords, MSN, Yahoo osv.) med datakällor.
 exl-id: b25a2a26-d277-4a51-9194-973acb425095
-source-git-commit: 7c5bfadabe2ea851bb881d067d48b4f4700a53c7
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1104'
 ht-degree: 2%
 
 ---
@@ -115,7 +115,7 @@ Gå tillbaka till guiden Datakälla för instruktioner och överför filen via F
 
 Det kan vara praktiskt att lägga till beräknade värden när du ska fatta beslut per klick.
 
-Du kan till exempel lägga till dessa [beräknade värden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=en#calculated-metrics):
+Du kan till exempel lägga till dessa [beräknade värden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html#calculated-metrics):
 
 | Namn | Formel | Mätningstyp | Beskrivning |
 | --- | --- | --- | --- |

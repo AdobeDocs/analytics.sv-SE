@@ -3,9 +3,9 @@ description: Varje ID som du vill kunna söka efter tilldelas ett namnutrymme, s
 title: Namnutrymmen
 feature: Data Governance
 exl-id: 421572c2-2789-48bc-b530-d48216799724
-source-git-commit: df16d37de742d96f66fd74d7a7b47729f0454fd5
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '890'
 ht-degree: 98%
 
 ---
@@ -20,7 +20,7 @@ Namnutrymmessträngen används för att identifiera de fält som du vill söka i
 * Ett typfält som för de flesta Adobe Analytics-begäranden innehåller värdet ”analytics”.
 * Ett värdefält som innehåller det ID som Analytics ska söka efter i de associerade namnutrymmesvariablerna från var och en av rapportsviterna.
 
-Mer information finns i dokumentationen [API för Experience Cloud-datasekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en).
+Mer information finns i dokumentationen [API för Experience Cloud-datasekretess](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html).
 
 ## Cookie-ID
 

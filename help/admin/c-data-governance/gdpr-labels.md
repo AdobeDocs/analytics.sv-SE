@@ -3,9 +3,9 @@ description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3902'
 ht-degree: 96%
 
 ---
@@ -177,7 +177,7 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
   <tr> 
    <td colname="col1"> <p>Ingen </p> </td> 
    <td colname="col2"> <p>Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. </p> </td> 
-   <td colname="col3"> <p>Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du använder när du skickar in åtkomst- eller borttagningsbegäranden via [Privacy Service API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) eller användargränssnittet. </p> </td> 
+   <td colname="col3"> <p>Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du använder när du skickar in åtkomst- eller borttagningsbegäranden via [Privacy Service API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID-DEVICE </p> </td> 
@@ -206,7 +206,7 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
-| Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av de andra etiketterna om det här fältet innehåller ett ID som du använder när du skickar begäran om åtkomst eller borttagning via [Privacy Services-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) eller användargränssnittet. |
+| Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av de andra etiketterna om det här fältet innehåller ett ID som du använder när du skickar begäran om åtkomst eller borttagning via [Privacy Services-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. |
 | ID-ENHET | Det här fältet innehåller ett ID som kan användas för att identifiera en enhet för en begäran om datasekretess, men det kan inte skilja mellan olika användare av en delad enhet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du skickar begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
 | ID-PERSON | Det här fältet innehåller ett ID som kan användas för att identifiera en autentiserad användare (en viss person) för en begäran om datasekretess.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du ska skicka begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
 

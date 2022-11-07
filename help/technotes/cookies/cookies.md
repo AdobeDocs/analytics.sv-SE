@@ -3,9 +3,9 @@ title: Adobe Analytics och webbläsarcookies
 description: Läs om hur spårningsförebyggande åtgärder påverkar cookies från tredje part och från första part som anges av Adobe Analytics.
 feature: Data Configuration and Collection
 exl-id: c4a4751e-49fc-40c3-aa39-f0f0b20bda1b
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '1981'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ I det här dokumentet förklaras hur de viktigaste åtgärderna för att spåra 
 ## Hur har webbläsarna begränsat användningen av cookies?
 
 >[!NOTE]
->[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#comparing-cja-to-traditional-adobe-analytics) kan sammanfogas mellan cookies med ett person-ID, t.ex. ett hashade inloggnings-ID, om ett sådant finns.
+>[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html#cda) och [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html#comparing-cja-to-traditional-adobe-analytics) kan sammanfogas mellan cookies med ett person-ID, t.ex. ett hashade inloggnings-ID, om ett sådant finns.
 
 ### Begränsningar för cookies från tredje part
 

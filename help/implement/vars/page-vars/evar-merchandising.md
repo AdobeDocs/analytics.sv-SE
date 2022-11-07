@@ -4,9 +4,9 @@ description: Egna variabler som knyts till enskilda produkter.
 feature: Variables
 exl-id: 26e0c4cd-3831-4572-afe2-6cda46704ff3
 mini-toc-levels: 3
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 *Den här hjälpsidan beskriver hur du implementerar eVars för varuexponering. Mer information om hur eVars marknadsförs fungerar som en dimension finns i [eVars (marknadsföringsdimension)](/help/components/dimensions/evar-merchandising.md) i användarhandboken för komponenter.*
 
-Mer information om hur du marknadsför eVars finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en).
+Mer information om hur du marknadsför eVars finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html).
 
 ## Konfigurera eVars i inställningarna för rapportsviten
 

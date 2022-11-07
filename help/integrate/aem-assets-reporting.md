@@ -3,9 +3,9 @@ description: Administrativa steg för att aktivera AEM Assets-rapportering i Ana
 title: Rapportera om AEM Assets i Adobe Analytics
 feature: AEM Assets Reporting
 exl-id: 48beac22-60af-4030-ac40-4c5d12f25d5e
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '103'
 ht-degree: 2%
 
 ---
@@ -22,4 +22,4 @@ Gör det möjligt för Analytics att samla in intryck och klickningar på [!UICO
 * Lägger till nya dimensioner till tillgångsvariabler i Analysis Workspace: Resurs-ID, Resurskälla och Klickat resurs-ID
 * Lägger till nya dimensioner i tillgångshändelser: Resursklickningar och tillgångsinställningar
 
-Information som ska fyllas i finns i [Dokumentation för AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/assets-insights.html?lang=en) för fullständiga implementeringsinstruktioner.
+Information som ska fyllas i finns i [Dokumentation för AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/assets-insights.html) för fullständiga implementeringsinstruktioner.

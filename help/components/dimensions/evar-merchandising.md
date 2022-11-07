@@ -3,9 +3,9 @@ title: eVar (marknadsföringsdimension)
 description: Egna variabler som är kopplade till produktdimensionen.
 feature: Dimensions
 exl-id: a7e224c4-e8ae-4b53-8051-8b5dd43ff380
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '445'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 *Den här hjälpsidan beskriver hur e-handel fungerar som en dimension. Mer information om hur du implementerar eVars för marknadsföring finns i [eVar (variabel för försäljning)](/help/implement/vars/page-vars/evar-merchandising.md) i användarhandboken för implementering.*
 
-Mer information om hur du marknadsför eVars finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en).
+Mer information om hur du marknadsför eVars finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html).
 
 När ni mäter framgångarna med externa kampanjer eller externa söktermer vill ni vanligtvis ha ett enda värde för att ta emot poäng för alla framgångshändelser som inträffar. Om en kund t.ex. klickar på en länk i en e-postkampanj för att besöka webbplatsen, bör alla inköp som görs som ett resultat tillskrivas kampanjen.
 

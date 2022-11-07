@@ -2,9 +2,9 @@
 title: Enhetsövergripande analys
 description: Ändra era data från enhetsfokuserade till personfokuserade genom att sammanfoga enhetsdata.
 exl-id: e1c0d1e5-399d-45c2-864c-50ef93a77449
-source-git-commit: 9c9322647145832503e4a5875789e9cf7e9a2397
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Enhetsövergripande analys är en banbrytande och robust funktion, men har begr�
 * Enhetsövergripande analyser fungerar inte i alla rapportsviter och inte heller kombineras data från flera rapportsviter.
 * Adobe Analytics rapporteringsprogram kan inte mappa till mer än ett organisations-ID. Eftersom CDA sammanfogar enheter inom en viss rapportserie kan CDA inte användas för att sammanfoga data över flera organisations-ID:n.
 * CDA använder en komplex bearbetningsprocess, med flera beroende komponenter. Detta körs parallellt med rapportarbetsflödet i den grundläggande analysen. Därför förväntas en datamatchningsavvikelse på ungefär 1 % för det totala antalet träffar mellan den ursprungliga rapportsviten och den virtuella CDA-rapportsviten.
-* Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar. De stöder till exempel för närvarande inte variabler för marknadsföringskanaler. Se [Virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en) och [Bearbetning av rapporttid](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=en#report-time-processing-limitations) för mer information om dessa begränsningar.
+* Enhetsövergripande analys använder ett virtuellt rapportpaket och rapporttidsbearbetning, som har egna begränsningar. De stöder till exempel för närvarande inte variabler för marknadsföringskanaler. Se [Virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html) och [Bearbetning av rapporttid](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html#report-time-processing-limitations) för mer information om dessa begränsningar.
 * Privat diagram använder samma ID-synk som de som används av [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html#customer-attributes) i Experience Cloud och Adobe Analytics. Men de virtuella CDA-rapporteringssviterna (oavsett om de baseras på ett privat diagram eller fältbaserad sammanfogning) är inte kompatibla med resten av funktionen för kundattribut. Med andra ord är kundattributbaserade dimensioner inte tillgängliga för användning med virtuella CDA-rapportsviter.
 * CDA är för närvarande inte kompatibelt med A4T.
 * 1.4-API:t stöds inte. Power BI-anslutningar och Report Builder är båda beroende av 1.4-API:t och är därför inte kompatibla med CDA.

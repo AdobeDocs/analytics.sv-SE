@@ -3,9 +3,9 @@ title: Slutet av livscykeln för fullständiga datakällor
 description: Orsaker till slutet av livscykeln och jämförelser mellan API:t för inmatning av gruppdata och fullständiga datakällor för databearbetning.
 feature: Data Sources
 exl-id: 24a44b7a-64fd-4a99-975f-4887f4638812
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1217'
 ht-degree: 5%
 
 ---
@@ -55,7 +55,7 @@ Mer information finns i följande jämförelse av fältvärden som är tillgäng
 | customerID.[customerIDType].id | Stöds inte | Kund-ID som ska användas. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
 | customerID.[customerIDType].isMCSeed | Stöds inte | Anger om detta är startvärdet för Marketing Cloud Visitor-ID:t. Värden som stöds är: 0, 1, TRUE, FALSE, &#39;&#39; (skiftlägesokänslig). Om du använder 0, FALSE eller två på varandra följande enkla citattecken (&#39;&#39;) utelämnas värdet från frågesträngen. customerIDType kan vara vilken alfanumerisk sträng som helst, men ska betraktas som skiftlägeskänslig. |
 | eVarN | eVarN, dvs. `<eVar2>`...`<eVar>` | Konverteringsnamn för eVar. Du kan ha upp till 75 eVars ( eVar1 - eVar75 ) Du kan ange eVar namn (eVar12) eller ett eget namn (Ad Campaign 3). |
-| händelser | händelser | [Händelsesträng](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html?lang=en#vars), formaterad med samma syntax som variabeln s.events. Till exempel: scAdd,event1,event7 |
+| händelser | händelser | [Händelsesträng](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/events/event-serialization.html#vars), formaterad med samma syntax som variabeln s.events. Till exempel: scAdd,event1,event7 |
 | hierN | hierN, dvs. `<hier2>`...`</hier2>` | Hierarkinamn. Du kan ha upp till 5 hierarkier ( hier1 - hier5 ). Du kan ange standardnamn för hierarkin `hier2` eller ett eget namn (Yankees). |
 | homePage | homePage | Y eller N - är den aktuella sidan för besökarens hemsida. |
 | ipaddress | Stöds inte | Besökarens IP-adress. |
@@ -66,7 +66,7 @@ Mer information finns i följande jämförelse av fältvärden som är tillgäng
 | linkType | linkType | Typ av länk. Värden som stöds är: `d: Download link`, `e: Exit link`, `o: Custom link`. |
 | linkURL | linkURL | HREF of link. |
 | list Exempelvis list2. | Stöds inte | En avgränsad lista med värden som skickas till en variabel och sedan rapporteras som enskilda radposter för rapportering |
-| marketingCloudVisitorID | Stöds inte | Marketing Cloud ID. Se [Identifiering av besökare](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en#id-service-api) och Marketing Cloud Visitor ID-tjänsten |
+| marketingCloudVisitorID | Stöds inte | Marketing Cloud ID. Se [Identifiering av besökare](https://experienceleague.adobe.com/docs/id-service/using/home.html#id-service-api) och Marketing Cloud Visitor ID-tjänsten |
 | Stöds inte | charSet | Den teckenuppsättning som stöds för din webbplats. Exempel: UTF-8, ISO-8859-1 osv. |
 | Stöds inte | clickAction | Objektidentifierare för besökarens klickkarta (oid) |
 | Stöds inte | clickActionType | Objektidentifierartyp för klickkarta för besökare (oidt) |
@@ -91,7 +91,7 @@ Mer information finns i följande jämförelse av fältvärden som är tillgäng
 | tillstånd | tillstånd | Conversion state string. |
 | tidsstämpel | datum | Använd datumformatet ISO 8601 för YYYY-MM-DDThh:mm:ss±UTC_offset (t.ex. 2021-09-01T12:00:00-07:00), eller Unix-tidsformat (antalet sekunder som gått sedan 1 januari 1970). |
 | trackingServer | Stöds inte | Kan endast anges via kolumnrubrik. |
-| transactionID | Stöds inte | Gemensamt värde som används för att knyta samman flerkanalsanvändaraktiviteter för rapportering. Mer information finns i [Användarhandbok för datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html?lang=en#data-sources). |
+| transactionID | Stöds inte | Gemensamt värde som används för att knyta samman flerkanalsanvändaraktiviteter för rapportering. Mer information finns i [Användarhandbok för datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html#data-sources). |
 | userAgent | Stöds inte | Användaragentsträng |
-| visitorID | visitorID | Besökarens analys-ID. Se [Identifiering av besökare](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en). |
+| visitorID | visitorID | Besökarens analys-ID. Se [Identifiering av besökare](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | zip | zip | Postnummer för konvertering. |

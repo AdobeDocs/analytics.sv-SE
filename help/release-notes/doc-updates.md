@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 87e32cfdda69303939045b90a7984efafdf05b27
+source-git-commit: 8e6f8ecb153d5af183adee76acef0a12901bb1be
 workflow-type: tm+mt
-source-wordcount: '3481'
-ht-degree: 35%
+source-wordcount: '3448'
+ht-degree: 36%
 
 ---
 
@@ -25,13 +25,16 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **November 2022** |  |
+| Variabler för hantering av samtycke | Dedikerade sidor för [Anmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-in.md) och [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md). |
+| Uppdatera i flera valutor | Sidor runt [Stöd för flera valutor](/help/technotes/multicurrency.md) uppdateras. |
 | **Oktober 2022** |  |
-| Data Workbench | [Meddelande om att produkten är slut](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html?lang=en) |
-| Klienttips | Nytt [översikt och frågor och svar](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html?lang=en). |
+| Data Workbench | [Meddelande om att produkten är slut](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html) |
+| Klienttips | Nytt [översikt och frågor och svar](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html). |
 | Sammanfattning av nyckelmått | Nytt ämne på [Sammanfattning av nyckelmått](/help/analyze/analysis-workspace/visualizations/key-metric.md) visualisering. |
-| Klassificeringsuppsättningar | Den nya användaren [Klassificeringsuppsättningar](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html?lang=en) upplevelsen ger ett enda gränssnitt för att hantera klassificeringar och regler och ger en bättre överblick över kundägda klassificeringsdata. |
-| Mobilapp: Anpassade detaljvyer | Nytt ämne [anpassade detaljvyer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en). |
-| Data Workbench | Data Workbench [Vanliga frågor och svar om upphörande av livscykel](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html). |
+| Klassificeringsuppsättningar | Den nya användaren [Klassificeringsuppsättningar](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html) upplevelsen ger ett enda gränssnitt för att hantera klassificeringar och regler och ger en bättre överblick över kundägda klassificeringsdata. |
+| Mobilapp: Anpassade detaljvyer | Nytt ämne [anpassade detaljvyer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html). |
+| VISTA | Ny sida som förklarar grunderna i [VISTA-regler](/help/technotes/vista.md). |
 | **September 2022** |  |
 | Kombinationsdiagram | Nytt ämne på [kombinationsdiagram](/help/analyze/analysis-workspace/visualizations/combo-charts.md) visualisering. |
 | Uppdaterat plugin-program | Uppdaterad version av [getvalonce](/help/implement/vars/plugins/getvalonce.md) implementeringsplugin. |
@@ -39,8 +42,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Kundtips med hög entropi | Nytt avsnitt om hur Adobe använder [klienttips](/help/technotes/client-hints.md) utöver User-Agent för att fastställa enhetsinformation. |
 | Behandlingsorder | Olika hjälpsidor har sammanställts för att ge ett enda hjälpavsnitt om [Bearbetningsorder](/help/technotes/processing-order.md). |
 | **Augusti 2022** |  |
-| Stöd för listvariabler i XDM för Edge Collection | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda XDM för att ange innehållet i List Variable. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html?lang=en#list-variables-using-the-web-sdk) | 18 augusti 2022 |
-| Användning av SKU-fält i XDM för Edge Collection när produktsträngsvariabler anges | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda SKU-värdet för att ställa in produktfältet i variabeln products. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en#products-using-the-web-sdk) |
+| Stöd för listvariabler i XDM för Edge Collection | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda XDM för att ange innehållet i List Variable. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/list.html#list-variables-using-the-web-sdk) | 18 augusti 2022 |
+| Användning av SKU-fält i XDM för Edge Collection när produktsträngsvariabler anges | Gör det möjligt för kunder att samla in data via Experience Edge/Web SDK att använda SKU-värdet för att ställa in produktfältet i variabeln products. [Läs mer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html#products-using-the-web-sdk) |
 | **Juni 2022** |  |
 | Marknadsföringsvariabler i XDM för Edge Collection | Dokumentation på [stöd för Merchandising-variabler i XDM för Edge Collection](/help/components/dimensions/evar-merchandising.md) |
 | Experience Platform Edge-dokumentation | Nya artiklar om Adobe Analytics-implementering via [Web SDK](/help/implement/aep-edge/web-sdk/overview.md), [Mobile SDK](/help/implement/aep-edge/mobile-sdk/overview.md)och [Edge API](/help/implement/aep-edge/edge-api/overview.md). |
@@ -60,7 +63,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | [!UICONTROL Page Summary] Panelen Arbetsyta | Panelen innehåller en djupgående analys av en sida som du väljer. |
 | Nytt avsnitt om att pausa äldre schemalagda rapporter | Effektivt **15 april 2022**, Adobe tänker [pausa alla schemalagda rapporter som har ett skapandedatum som är senare än två år](/help/analyze/reports-analytics/scheduled-reports-eol.md). |
 | **Februari 2022** |
-| Förhandsgranskningsläge för mobilstyrda projekt | The [förhandsgranskningsläge](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#preview) I kan du förhandsgranska upplevelsen innan du sparar och delar ett styrkort. |
+| Förhandsgranskningsläge för mobilstyrda projekt | The [förhandsgranskningsläge](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#preview) I kan du förhandsgranska upplevelsen innan du sparar och delar ett styrkort. |
 | API-projektslutpunkt | Lägg till, redigera eller ta bort Analysis Workspace-projekt med API:t. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/projects/) |
 | Uppdaterat ämne om att pausa äldre schemalagda Report Builder-aktiviteter | **Gäller från 15 april 2022**, Adobe tänker [pausa alla schemalagda aktiviteter i Report Builder som skapades för mer än två år sedan](/help/analyze/report-builder/r-arb-scheduled-reports.md). |
 
@@ -71,20 +74,20 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | **Oktober 2021** |  |
 | 21 oktober 2021 | Ny dokumentation om [Snabbsegment](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html) i Analysis Workspace |
 | 21 oktober 2021 | Ny dokumentation på [Medieuppspelningstid tillagd](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html) i Analysis Workspace. |
-| 7 oktober 2021 | Ny dokumentation om [visualiseringar för mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#apply-visualizations) |
+| 7 oktober 2021 | Ny dokumentation om [visualiseringar för mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#apply-visualizations) |
 | **Augusti 2021** |  |
 | 18 augusti 2021 | Reviderad toppnivåstruktur och konsoliderad till en enda [Landningssida](https://experienceleague.adobe.com/docs/analytics.html) |
 | 18 augusti 2021 | Nytt ämne [A4T och virtuella rapportsviter](/help/components/vrs/vrs-a4t.md) |
 | 18 augusti 2021 | Nytt ämne [Bästa praxis för attribuering](/help/analyze/analysis-workspace/attribution/best-practices.md) |
 | 5 augusti 2021 | Nytt ämne [Antal upprepande instanser](https://experienceleague.adobe.com/docs/analytics/components/metrics/count-repeat-instances.html) |
-| 5 augusti 2021 | Uppdaterad klassificeringsdokumentation om [mallar](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-download-saint-data.html?lang=en), [webbläsarimport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-import.html?lang=en)och [webbläsarexport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-export.html?lang=en) för att ange alternativ som inte är tillgängliga för rapportsviter som är aktiverade för den nya klassificeringsarkitekturen. |
-| 2 augusti 2021 | Flera sidor har uppdaterats för att återspegla omprofileringen av [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=en) |
+| 5 augusti 2021 | Uppdaterad klassificeringsdokumentation om [mallar](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/c-download-saint-data.html), [webbläsarimport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-import.html)och [webbläsarexport](https://experienceleague.adobe.com/docs/analytics/components/classifications/classifications-importer/browser-export.html) för att ange alternativ som inte är tillgängliga för rapportsviter som är aktiverade för den nya klassificeringsarkitekturen. |
+| 2 augusti 2021 | Flera sidor har uppdaterats för att återspegla omprofileringen av [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html) |
 | **Juli 2021** |  |
-| 23 juli 2021 | Ny fördjupad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html?lang=en) |
+| 23 juli 2021 | Ny fördjupad diskussion om [Merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html) |
 | 15 juli 2021 | Lagt till ny dokumentation om den nya [Adobe Analytics landningssida](/help/analyze/landing.md) |
 | **Juni 2021** |  |
 | 15 juni 2021 | Uppdaterat [Bästa praxis för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html) |
-| 3 juni 2021 | Dokumentationen har uppdaterats för att ge en bättre förklaring [Implementering av datafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html?lang=en) och [här](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#BucketOwnerFullControl). |
+| 3 juni 2021 | Dokumentationen har uppdaterats för att ge en bättre förklaring [Implementering av datafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html) och [här](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html#BucketOwnerFullControl). |
 | 25 maj 2021 | Dokumentationen uppdaterades den [eVar skiftlägeskänslighet vid rapportering](https://experienceleague.adobe.com/docs/analytics/components/dimensions/evar.html). |
 | 13 maj 2021 | Uppdateringar till [data warehouse API-begäranden](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/reporting-api/data_warehouse.md). De har nu stöd för&quot;Timmar&quot;. |
 | **Mars 2021** |  |
@@ -111,8 +114,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 24 november 2020 | Uppdateringar till [Panelöversikt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) i Workspace. |
 | 24 november 2020 | Nya granskningsdokument för implementering: <ul><li>[Fullständig utvärdering](https://experienceleague.adobe.com/docs/analytics/implementation/review/full-review.html)</li><li>[Fokuserad implementeringsgranskning](https://experienceleague.adobe.com/docs/analytics/implementation/review/focused-review.html)</li></ul> |
 | 24 november 2020 | Uppdaterad Analysis Workspace [Översikt över visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) sida. |
-| 12 november 2020 | Ny sida på [Ärvd Adobe Analytics-implementering](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/existing-implementation.html?lang=en). |
-| 2 november 2020 | Uppdaterat dokument den [FTP för klassificeringar](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-saint.html?lang=en). |
+| 12 november 2020 | Ny sida på [Ärvd Adobe Analytics-implementering](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/existing-implementation.html). |
+| 2 november 2020 | Uppdaterat dokument den [FTP för klassificeringar](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-saint.html). |
 | **Oktober 2020** |  |
 | 23 oktober 2020 | Arbetsytans radvisualisering: [Alternativ för glidande medeltrendlinje](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/line.html): Den här inställningen har lagts till i [!UICONTROL Line] trendlinjeinställningar för visualisering. Ett glidande medelvärde kallas även för ett rullande medelvärde och använder ett visst antal datapunkter (som bestäms av en **[!UICONTROL Periods]** ), beräknar ett medelvärde för dem och använder medelvärdet som en punkt på raden. |
 | 23 oktober 2020 | Arbetsytan [Hjälpsida för prestanda](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html) visar de olika faktorer som påverkar projektets prestanda och länkar till tips för optimering. |
@@ -131,7 +134,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 25 juni 2020 | Ny dokumentation för [Panelen Snabbinsikter](/help/analyze/analysis-workspace/c-panels/quickinsight.md) i Workspace. Där finns vägledning för icke-analytiker och nya användare av Analysis Workspace som snabbt och enkelt kan besvara affärsfrågor. |
 | 25 juni 2020 | Ny dokumentation för [Analyser för målpanelen](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) i Workspace. Med den kan ni analysera Adobe Target aktiviteter och upplevelser, med lyft och självförtroende. |
 | 18 juni 2020 | Ny dokumentation om [Attribution IQ: Algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
-| 18 juni 2020 | Ny dokumentation om [Attribution IQ: Anpassade fönster](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html?lang=en#lookback-windows) |
+| 18 juni 2020 | Ny dokumentation om [Attribution IQ: Anpassade fönster](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
 | 18 juni 2020 | Ny dokumentation för [Projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade arbetsyteprojekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
 | 18 juni 2020 | Ny dokumentation om [Visa endast arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html). Projekt kan delas med användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. |
 | 18 juni 2020 | Ny dokumentation om [Projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade arbetsyteprojekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
@@ -157,34 +160,34 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 20 februari 2020 | Arbetsytefelsökaren lades till på Hjälp-menyn, vilket ger ett smidigare sätt att aktivera den för felsökning av arbetsytebegäranden. [Läs mer …](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md) |
 | 18 februari 2020 | [`writeSecureCookies`](/help/implement/vars/config-vars/writesecurecookies.md)-variabel har lagts till. |
 | 12 februari 2020 | Uppdateringar och omorganisering av dokumentationen för [marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
-| 12 februari 2020 | Nya snabbtangenter har lagts till i [den här arbetsytesidan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=en) |
+| 12 februari 2020 | Nya snabbtangenter har lagts till i [den här arbetsytesidan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) |
 | 7 februari 2020 | Uppdateringar av [Konfigurera Analytics över enheter](/help/components/cda/setup.md) och [Vanliga frågor och svar](/help/components/cda/faq.md). |
 | 4 februari 2020 | Fullständig omarbetning av [användarhandboken för implementering](/help/implement/home.md). |
 | 22 januari 2020 | Sidan om frihandstabeller har uppdaterats med information om nya [Freeform Table Builder](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md). |
 | **Januari 2020** |  |
-| 24 januari 2020 | Uppdateringar av [Radinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/table-settings.html#cja-workspace?lang=en) i Workspace. |
+| 24 januari 2020 | Uppdateringar av [Radinställningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/table-settings.html#cja-workspace) i Workspace. |
 | 16 januari 2020 | Ny dokumentation om [Frihandsformstabellverktyget](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html). Med tabellverktyget aktiverat kan du dra och släppa i många mått, uppdelningar, mätvärden och segment för att skapa tabeller som besvarar mer komplexa affärsfrågor. Data uppdateras inte omedelbart. I stället uppdateras de när du klickar på **[!UICONTROL Build]**, vilket sparar tid när du väl vet vilken tabell du vill skapa. Dessutom har den här funktionen följande:<ul><li>**Förhandsgranskning**: Du kan förhandsgranska tabellformatet innan du lägger tid på att återge verkliga data.</li><li>**Inställningar för flexibla rader och uppdelning**: Du kan ange rad- och uppdelningsnivåer för alla måttrader. Tidigare användes standardvärden som inte gick att ändra förrän data returnerades.</li><li>**Uppdelning efter position**: Du kan ange att måttrader alltid ska _delas upp efter position_ i stället för _efter ett visst objekt_ (standard).</li><li>**Ordna statiska rader manuellt**: Du kan ordna statiska rader manuellt så att tabellraderna visas exakt som du vill ha dem. Tidigare kunde statiska rader bara sorteras efter en mätvärdeskolumn eller i bokstavsordning.</li></ul> |
 | 13 januari 2020 | [Adobe Analytics och webbläsarcookies](/help/technotes/cookies/cookies.md) har lagts till. |
-| 13 januari 2020 | Ändrad [Vilket Adobe Analytics-verktyg ska jag använda](https://experienceleague.adobe.com/docs/analytics/admin/admin-overview/which-analytics-tool.html?lang=en) sida. |
+| 13 januari 2020 | Ändrad [Vilket Adobe Analytics-verktyg ska jag använda](https://experienceleague.adobe.com/docs/analytics/admin/admin-overview/which-analytics-tool.html) sida. |
 
 ### 2019 {#19}
 
 | Funktion | Beskrivning |
 | --- | --- |
-| 19 december 2020 | Ändrad som standard [Lagringsgräns för FTP-data](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/ftp-limits.html?lang=en) till 10 GB. |
+| 19 december 2020 | Ändrad som standard [Lagringsgräns för FTP-data](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/ftp-limits.html) till 10 GB. |
 | 29 november 2019 | Dokumentationen för [dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) har setts över. |
 | 25 november 2019 | Nytt avsnitt om Slutet av livscykeln för Tvinga begränsningar för IP-inloggning. |
 | 21 november 2019 | Ny dokumentation för [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html). |
-| 21 november 2019 | Uppdaterat [Vanliga frågor om arbetsflödet i Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html?lang=en) för att ange tillgänglighet i LiveStream. |
+| 21 november 2019 | Uppdaterat [Vanliga frågor om arbetsflödet i Audience Analytics](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/audience-analytics-workflow/mc-audiences-faqs.html) för att ange tillgänglighet i LiveStream. |
 | 25 oktober 2019 | Uppdaterat [Adobe Analytics Key Concepts](/help/technotes/terms.md) sida. |
 | 10 oktober 2019 | Uppdatera till Frihand-tabellsummor: innehåller nu två summor, **[!UICONTROL Table total]** och **[!UICONTROL Grand total]**. Raden med tabellsumman avser de [rapportfilter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) som används. Tidigare påverkades summorna bara av segmentering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)<br/>Dessutom har alternativen **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]** lagts till i **[!UICONTROL Column Settings]**.<br/>Med den här förändringen av totalsummor för friformstabeller uppdateras beroende visualiseringar (som länkade **[!UICONTROL Summary Number]**-visualiseringar) samt exporterade CSV- och PDF-data. |
 | Oktober 10,2019 | I arbetsytan lades möjligheten att enkelt ta bort &#39;Ospecificerad (ingen)&#39; till som ett alternativ för att rapportera filter. |
 | Oktober 10,2019 | I Workspace har de lila granularitetskomponenterna (Minute, Hour, Day, Week, Month, Quarter, Year) tagits bort. Du **behöver inte göra något** om du tidigare har använt någon av de lila tidskomponenterna.<br/>Den här ändringen innebär även att det lila avsnittet **[!UICONTROL Time]** har bytt namn till **[!UICONTROL Date Ranges]**. |
-| 1 oktober 2019 | Ny artikel på [Summor för arbetsyta](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/workspace-totals.html#cja-workspace?lang=en). |
+| 1 oktober 2019 | Ny artikel på [Summor för arbetsyta](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/workspace-totals.html#cja-workspace). |
 | 28 september 2019 | Nya artiklar om [konfigurationsvariabler för JavaScript-implementering](/help/implement/vars/config-vars/configuration-variables.md). |
-| 19 september 2019 | Reviderad segmenteringsdokumentation som förklarar [Behållare för logikgrupp](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html?lang=en#logic-group-containers). |
+| 19 september 2019 | Reviderad segmenteringsdokumentation som förklarar [Behållare för logikgrupp](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-sequential-build.html#logic-group-containers). |
 | 12 september 2019 | Ny dokumentation för [Journey IQ: Enhetsövergripande analyser](/help/components/cda/overview.md). |
-| 12 september 2019 | Uppdatera [Beräknade mätsummor](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=en) -dokument. |
+| 12 september 2019 | Uppdatera [Beräknade mätsummor](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html) -dokument. |
 | 28 augusti 2019 | Ny artikel om [progressiva webbappar (PWA) för Analytics](/help/technotes/pwa.md). |
 | 8 augusti 2019 | Ny artikel om [summor för beräknade mätvärden](/help/components/c-calcmetrics/cm-totals.md). |
 | 8 augusti 2019 | Förtydligande av [sessionsdata med aktiverade tidsstämplar](/help/admin/admin/timestamp-optional.md). | 8 augusti 2019 | I Workspace har Adobe ökat gränsen för objekt som kan placeras i ett nedrullningsbart filter från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |

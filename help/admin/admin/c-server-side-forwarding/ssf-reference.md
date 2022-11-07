@@ -3,9 +3,9 @@ description: En omfattande lista med beskrivningar av konfigurationsvariabler, H
 title: Vidarebefordra data och kodreferenser på serversidan
 feature: Server-Side Forwarding
 exl-id: 6ab7bbb6-0709-427b-b9fa-a179dbe55fc9
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '518'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ Dessa rubriker är fält som innehåller information som förfrågningar om data
 
 | HTTP-huvud | Beskrivning | h_key accepterad av Audience Manager |
 | --- | --- | --- |
-| Värd | Detta ställs in på klientens specifika värdnamn för datainsamling som anges i konfigurationsfilen för analysvärden. Det ser ut som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en). | `h_host` |
+| Värd | Detta ställs in på klientens specifika värdnamn för datainsamling som anges i konfigurationsfilen för analysvärden. Det ser ut som `host name .demdex.net`. Se [Förstå anrop till Demdex-domänen](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html). | `h_host` |
 | Användaragent | Ange användaragenthuvudet som skickas till Analytics. | `h_user-agent` |
 | Acceptera språk | Ange till  `Accept-Language`  har skickats till Analytics. | `h_accept-language` |
 | Referent | Ange som sidans URL som skickas till Analytics (Analyser) eller som samlats in från `Referer` har skickats till Analytics. | `h_referer` |

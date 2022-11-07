@@ -4,9 +4,9 @@ title: Publiceringslistor
 feature: Admin Tools
 uuid: 07dad661-c302-4981-80d1-3169ad1fe90e
 exl-id: 5c9a0ae7-742b-4247-bcbc-2e979af6160c
-source-git-commit: 2f14b9059601fd0b8d1603cb7dfc4a0b4a3ff55e
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ För att minska eventuella störningar i de arbetsflöden för rapportdistributi
 
 * Om du använder Publiceringslistor för att distribuera samma version av rapporten till flera användare (utan att tillämpa åsidosättningar av rapportsviter):
 
-   När du återskapar dina rapporter i Analysis Workspace som projekt kan du använda en kombination av en kontaktgrupp eller distributionslista som skapats för din e-postklient och funktionen Schemalagda projekt på arbetsytan för att skicka eller schemalägga den återkommande leveransen av projektet. Precis som publiceringslistor skickas sedan en PDF/CSV-version av projektet till alla e-post-ID som ingår i gruppen/listan. Du kan lära dig mer om [Schemalagda projekt här](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html?lang=en#:~:text=Scheduled%20Analysis%20Workspace%20projects%20can,options%20in%20the%20left%20rail.).
+   När du återskapar dina rapporter i Analysis Workspace som projekt kan du använda en kombination av en kontaktgrupp eller distributionslista som skapats för din e-postklient och funktionen Schemalagda projekt på arbetsytan för att skicka eller schemalägga den återkommande leveransen av projektet. Precis som publiceringslistor skickas sedan en PDF/CSV-version av projektet till alla e-post-ID som ingår i gruppen/listan. Du kan lära dig mer om [Schemalagda projekt här](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/t-schedule-report.html#:~:text=Scheduled%20Analysis%20Workspace%20projects%20can,options%20in%20the%20left%20rail.).
 
 * Om du använder publiceringslistor för att distribuera flera versioner av rapporten eller kontrollpanelen till flera användare (via rapportsvitens åsidosättningsfunktion):
 

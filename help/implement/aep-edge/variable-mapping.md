@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: f435453f655caef89460de42ebecf489b021dc47
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 
 ## Mappa andra XDM-fält till analysvariabler
 
-Om det finns mått eller mätvärden som du vill lägga till i Adobe Analytics kan du göra det genom [Kontextdatavariabler](../vars/page-vars/contextdata.md). Alla XDM-fältelement som inte mappas automatiskt skickas till Adobe Analytics som kontextdata med prefixet a.x. Du kan sedan mappa den här kontextvariabeln till den önskade Analytics-variabeln med [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html?lang=en). Om du till exempel skickar följande händelse:
+Om det finns mått eller mätvärden som du vill lägga till i Adobe Analytics kan du göra det genom [Kontextdatavariabler](../vars/page-vars/contextdata.md). Alla XDM-fältelement som inte mappas automatiskt skickas till Adobe Analytics som kontextdata med prefixet a.x. Du kan sedan mappa den här kontextvariabeln till den önskade Analytics-variabeln med [Bearbetar regler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules.html). Om du till exempel skickar följande händelse:
 
 ```js
 alloy("event",{

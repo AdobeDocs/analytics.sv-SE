@@ -3,9 +3,9 @@ title: Borttagning av bot i Adobe Analytics
 description: Så här tar du bort objekt i Adobe Analytics
 feature: Bot Removal
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
-source-git-commit: f6199620033af9c8e304bd0f537d4e0b052ed64d
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Eftersom botar dessutom morfar snabbt erbjuder Adobe flera andra kraftfulla funk
 
 ### Steg 1: Överför besökarnas Experience Cloud-ID till ett nytt deklarerat ID
 
-Börja med att skapa ett nytt deklarerat ID i [Bastjänst för människor](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html). Skicka besökarens Experience Cloud-ID till detta nya deklarerade ID, som kan göras snabbt och enkelt med [taggar i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=en). Låt oss använda namnet &quot;ECID&quot; för det deklarerade ID:t.
+Börja med att skapa ett nytt deklarerat ID i [Bastjänst för människor](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html). Skicka besökarens Experience Cloud-ID till detta nya deklarerade ID, som kan göras snabbt och enkelt med [taggar i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html). Låt oss använda namnet &quot;ECID&quot; för det deklarerade ID:t.
 
 ![](assets/bot-cust-attr-setup.png)
 
@@ -50,7 +50,7 @@ Så här kan detta ID hämtas via dataelement. Fyll i ditt Experience Cloud OrgI
 
 ```return Visitor.getInstance("REPLACE_WITH_YOUR_ECORG_ID@AdobeOrg").getExperienceCloudVisitorID();```
 
-När dataelementet är konfigurerat följer du [dessa instruktioner](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=en) för att skicka deklarerade ID:n till ECID-verktyget med hjälp av taggar i Adobe Experience Platform.
+När dataelementet är konfigurerat följer du [dessa instruktioner](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) för att skicka deklarerade ID:n till ECID-verktyget med hjälp av taggar i Adobe Experience Platform.
 
 ### Steg 2: Använd segmentering för att identifiera bottnar
 

@@ -5,9 +5,9 @@ title: Översikt över projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1407'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Sidan med projektlistan för arbetsytan innehåller följande information:
 
 | Element | Beskrivning |
 |---|---|
-| [Skapa nytt projekt](/help/analyze/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden eller från ett [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=en#analysis-workspace) som har skapats åt dig. |
+| [Skapa nytt projekt](/help/analyze/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden eller från ett [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace) som har skapats åt dig. |
 | Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt i en lista och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
 | Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
 | [Visa Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html) | Här finns Analysis Workspace videokurser. |

@@ -4,9 +4,9 @@ title: Mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1296'
 ht-degree: 4%
 
 ---
@@ -137,7 +137,7 @@ Den här mallen baseras på personmåttet, som är en deduplicerad version av de
 
 <!--This content is mirrored in the CDA doc.-->
 
-Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=en) (CDA).
+Med den här mallen kan du se viktiga prestandadata för olika enheter. Det är bara tillgängligt för kunder som har tillgång till [Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) (CDA).
 
 * **Identifiering av användare**: Visar hur ofta besökare på er webbplats identifieras med hjälp av metoder som baseras på enhetsövergripande analys.
 * **Mäta målgruppens storlek**: Visar en jämförelse mellan Unika enheter och Personer. Andelen av dessa två tal kallas för komprimering mellan enheter, ett beräknat mått som visas på den här panelen. Detta komprimeringsmått är beroende av ett stort antal faktorer:

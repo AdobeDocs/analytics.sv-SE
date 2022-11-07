@@ -3,9 +3,9 @@ title: Uppgradering av SFTP-tjänster - frågor och svar
 description: Frågor och svar om den planerade uppgraderingen av SFTP-tjänster.
 feature: FTP Export
 exl-id: e271b545-0769-4a69-9d7f-dc46bc654737
-source-git-commit: 70ede981a0f6f7aebbbdf4dbcbf9e5187a3df495
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Följande funktioner erbjuder ett alternativ för att överföra data till Adobe
 
 * [Klassificeringar](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-saint.html)
 
-* [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/attributes.html?lang=en)
+* [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/services/customer-attributes/attributes.html)
 
 * [Datafeeds](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/set-up-ftp-accounts/ftp-datafeeds.html)
 

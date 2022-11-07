@@ -3,9 +3,9 @@ title: Bästa praxis för attribuering
 description: Vilka är de bästa sätten att fatta beslut om en attribueringsmodell?
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Hur ni väljer rätt attribueringsmodell för er organisation beror på ett anta
 >[!NOTE]
 >Denna analys måste ske innan du väljer en attribueringsmodell.
 
-Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en) (för rådata) eller Analysis Workspace underlättar för dig att förstå
+Den här fasen består till att börja med av att förstå kundbeteende och definiera konverteringsmått. Baserat på konverteringsstatistik kan verktyg som [Dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) (för rådata) eller Analysis Workspace underlättar för dig att förstå
 
 * Hur många kunder tar sig an olika marknadsföringskanaler innan de konverterar?
 * Andelen/fördelningen av dessa beteenden.
@@ -45,7 +45,7 @@ Låt oss säga att din hypotes är &quot;Min första-beröringskanal har större
 
 **Exempel 2**
 
-Din hypotes kan vara: &quot;I vår bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör mycket efterforskningar innan de köper en produkt. Du skulle då ändra din [uppslagsfönster](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html?lang=en#lookback-windows) till 90 dagar.
+Din hypotes kan vara: &quot;I vår bransch (t.ex. resebranschen) är attribueringsfönstret 60 eller 90 dagar, inte 30 dagar, eftersom kunderna gör mycket efterforskningar innan de köper en produkt. Du skulle då ändra din [uppslagsfönster](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) till 90 dagar.
 
 ## Steg 3: Använd algoritmisk attribuering
 
@@ -55,4 +55,4 @@ Eftersom det är mycket svårt att validera ett stort antal möjliga hypoteser o
 
 * Du kan behöva använda en datavetare istället för att förlita dig på Analysis Workspace.
 * Du kan förlita dig på rådata, som i dataflöden från Adobe.
-* Överväg att använda [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en)om du till exempel vill ta hänsyn till dina Impressions-data.
+* Överväg att använda [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html)om du till exempel vill ta hänsyn till dina Impressions-data.

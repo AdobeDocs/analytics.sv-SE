@@ -4,9 +4,9 @@ keywords: Virtual Report Suite
 title: Skapa virtuella rapportsviter
 feature: VRS
 exl-id: 5ff6ff1a-5b99-41cc-a3a7-928197ec9ef9
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '660'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ Här är en video om hur du justerar en besöksdefinition i en virtuell rapports
 ![](assets/components.png)
 
 1. På [!UICONTROL Components] markerar du kryssrutan för att tillämpa urval för att inkludera, exkludera och byta namn på komponenter för den här virtuella rapportsviten i Analysis Workspace.
-Mer information om VRS-kurser finns i [Komponenturval för Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html?lang=en#virtual-report-suites).
+Mer information om VRS-kurser finns i [Komponenturval för Virtual Report Suite](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html#virtual-report-suites).
 
 1. Dra komponenter (dimensioner, mått, segment eller datumintervall) som du vill inkludera i VRS till [!UICONTROL Included Components] -avsnitt.
 

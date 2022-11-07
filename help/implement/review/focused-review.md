@@ -3,9 +3,9 @@ title: Fokuserad granskning (efter varje webbplatsrelease)
 description: Följ de här stegen för att se till att implementeringen inte är felfri och att den överensstämmer med dina nyckeltal.
 feature: Implementation Basics
 exl-id: e38f92b6-bd6e-4835-a8e5-0f29ac962066
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Se till att den senaste webbplatsversionen inte har någon negativ inverkan på 
 
 Om du nyligen har lagt till eller ändrat några mätvärden eller variabler måste du uppdatera ditt Business Requirement Document (BRD) och Solution Design Reference (SDR).
 
-Om du inte har någon dokumentation om implementeringen exporterar du en lista med variabler och skapar din BRD eller SDR med [den här mallen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html?lang=en#implementation).
+Om du inte har någon dokumentation om implementeringen exporterar du en lista med variabler och skapar din BRD eller SDR med [den här mallen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html#implementation).
 
 ## 5. Åtgärda omedelbart eventuella luckor i datakvaliteten
 

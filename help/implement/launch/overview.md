@@ -3,9 +3,9 @@ title: Implementera Adobe Analytics med taggar i Adobe Experience Platform
 description: Lär dig implementera Adobe Analytics med hjälp av taggar
 feature: Launch Implementation
 exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
-source-git-commit: 99fc7814eaa12d0d9e8e478629a4c2134a577aaa
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ Se [Skapa en Analytics-taggegenskap](create-analytics-property.md) för att komm
 
 Taggar kan anpassas mycket. Läs mer om hur du får ut mesta möjliga av Adobe Analytics genom att inkludera rätt data i implementeringen.
 
-* [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en#): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
-* [Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en): Använd Analytics-tillägget för att skicka data till Adobe Analytics.
+* [Dokumentation för taggar](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html#): Lär dig hur gränssnittet fungerar och vilka tillägg som är tillgängliga.
+* [Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html): Använd Analytics-tillägget för att skicka data till Adobe Analytics.
 * [Implementeringsvariabler](../vars/overview.md): Avgör vilka variabler du vill skicka till datainsamlingsservrar.

@@ -4,9 +4,9 @@ title: Segment
 feature: Segmentation
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: 931e9b0bd71abd852c515cd2e7d99dc9ae423a63
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 | Skapa segment från markering | Skapa ett textbundet segment. Det här segmentet gäller bara det öppna projektet och sparas inte som ett Analytics-segment. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka *Skapa segment från markering*. |
 | Komponenter > Nytt segment | Visar segmentbyggaren. Se [Segment Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) för mer information om segmentering. |
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), får du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
-| Använd segment som Dimensioner | Video: [Använda segment som Dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=en) |
+| Använd segment som Dimensioner | Video: [Använda segment som Dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html) |
 
 ## Segment IQ
 

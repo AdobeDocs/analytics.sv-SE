@@ -5,9 +5,9 @@ title: Migrering av besökare
 topic-fix: Developer and implementation
 feature: Analytics Basics
 exl-id: d44628c8-902f-4e60-b819-41d5537407d8
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ I följande tabell visas de uppgifter som krävs för migrering av besökare:
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>6+ timmar efter konfigurationsändring</b>: Uppdatera <code> s.trackingServer</code> och <code> s.trackingServerSecure</code> variabler i din Analytics JavaScript-kod för att använda de nya datainsamlingsservrarna. </p> </td> 
-   <td colname="col3"> <p>När du har gjort den här ändringen använder du <a href="https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=en"> Experience Cloud-felsökning</a> för att verifiera att Analytics-bildbegäran går till den uppdaterade datainsamlingsservern. </p> </td> 
+   <td colname="col3"> <p>När du har gjort den här ändringen använder du <a href="https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html"> Experience Cloud-felsökning</a> för att verifiera att Analytics-bildbegäran går till den uppdaterade datainsamlingsservern. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>Omedelbart efter uppdatering av analyskoden</b>: Testa webbplatsen för att verifiera att omdirigeringen till den tidigare datainsamlingsdomänen sker. </p> </td> 

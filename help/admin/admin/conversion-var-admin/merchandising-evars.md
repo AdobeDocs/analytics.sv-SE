@@ -3,9 +3,9 @@ title: Merchandising eVars and Product Finding Methods
 description: En djupdykning i begreppen bakom försäljning av eVars och hur de bearbetar och allokerar data.
 feature: Admin Tools
 exl-id: 9e1a39aa-451f-49bb-8e39-797b6bbd5499
-source-git-commit: 3d9b64bd28210732c7506dbf667c5d4d50e7fb07
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '5260'
+source-wordcount: '5258'
 ht-degree: 0%
 
 ---
@@ -387,7 +387,7 @@ Instanser för en eVar som ger attribuering till de värden som eVar samlar in. 
 
 Ange till exempel `s.eVar1="Internal Keyword Search"` i sig inte tillskriver eVar1-värdet för&quot;Intern nyckelordssökning&quot; något förekomstmått. En instans registreras vid den punkten. Om inte en produkt är bunden till värdet för intern nyckelordssökning samtidigt `eVar1` är inställt, tilldelas instansen till den ospecificerade bucket. Med andra ord `eVar1` värdet för &quot;Internal Keyword Search&quot; kan hämta en instans. Men detta händer bara när en produkt som är bunden till värdet för &quot;Intern nyckelordssökning&quot; visas i produktvariabeln i samma bildbegäran.
 
-Utan ytterligare konfigurationer är alltså det färdiga instansmåttet för en eVar som handlar mindre användbart. Som tur är har Adobe släppts [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=en). Det gör att du kan använda flera attribueringsmodeller för alla anpassade mätvärden som Adobe Analytics samlar in. Mätvärden som tillämpar dessa attribueringsmodeller använder inte värdena i kolumnerna post_evar eller värdena som är bundna till en viss produkt. I stället används endast de värden som skickas via själva bildbegäran (eller värden som hämtas via Adobe Analytics bearbetningsregler). Du kan använda funktionerna i Attribution IQ för att få ett korrekt angivet instansmått för alla eVars-produkter som handlar med konverteringsvariabelsyntax.
+Utan ytterligare konfigurationer är alltså det färdiga instansmåttet för en eVar som handlar mindre användbart. Som tur är har Adobe släppts [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html). Det gör att du kan använda flera attribueringsmodeller för alla anpassade mätvärden som Adobe Analytics samlar in. Mätvärden som tillämpar dessa attribueringsmodeller använder inte värdena i kolumnerna post_evar eller värdena som är bundna till en viss produkt. I stället används endast de värden som skickas via själva bildbegäran (eller värden som hämtas via Adobe Analytics bearbetningsregler). Du kan använda funktionerna i Attribution IQ för att få ett korrekt angivet instansmått för alla eVars-produkter som handlar med konverteringsvariabelsyntax.
 
 ![Val av attribut](assets/attribution-select.png)
 

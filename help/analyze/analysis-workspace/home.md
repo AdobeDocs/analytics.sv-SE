@@ -4,9 +4,9 @@ description: Analysis Workspace är det främsta analysverktyget för Adobe Anal
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: 405403523e7b862005839cb4eb07adf804c6bc9c
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -70,4 +70,4 @@ Här är en videoöversikt av projekthantering:
 ## Ytterligare resurser {#resources}
 
 * Adobe erbjuder hundratals [Videokurser om analys](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html).
-* Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en#analytics) för uppdateringar om nya funktioner.
+* Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#analytics) för uppdateringar om nya funktioner.

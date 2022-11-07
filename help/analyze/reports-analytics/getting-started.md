@@ -4,9 +4,9 @@ title: Komma igång med Reports and Analytics
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 7bd8f28c-2b7a-4220-bd82-1e43edc2c0cd
-source-git-commit: 0733884351c64935d9e39c24320d200cc46e6a61
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Alla användare har åtkomst till [!UICONTROL Account Information] sida. Följan
 | Typ av information | Definition |
 | --- | --- |
 | Kontakt | Ange följande personliga information för ditt konto:<ul><li>Förnamn (obligatoriskt)</li><li>Efternamn (obligatoriskt)</li><li>Titel</li><li>E-postadress (obligatoriskt)</li><li>Telefonnummer</li></ul> |
-| Inloggning | Visar kontots användarnamn och låter dig ändra kontolösenordet. Se även: [Så här återställer du lösenordet för kontot Rapporter och analys](https://experienceleague.adobe.com/docs/analytics/technotes/troubleshoot-login.html?lang=en). |
+| Inloggning | Visar kontots användarnamn och låter dig ändra kontolösenordet. Se även: [Så här återställer du lösenordet för kontot Rapporter och analys](https://experienceleague.adobe.com/docs/analytics/technotes/troubleshoot-login.html). |
 | Webbtjänst | Visar webbtjänstens användarnamn och delade hemligheter som är associerade med det här kontot. Använd dessa autentiseringsuppgifter när du använder Experience Cloud via webbtjänstens API:er. Mer information finns i Developer Connection. **Obs!** Den här informationen visas endast om kontot är auktoriserat som webbtjänstanvändare. |
 | Uteslut den här datorn | Tillämpar en cookie på den aktuella datorn för att utesluta den från datainsamlingen. Det här är användbart om du inte vill att dina onlineaktiviteter ska påverka sidvyn och antalet besökare i domänen. **Obs!** Om du vill använda den här funktionen måste cookies vara aktiverade i webbläsaren. Om du tar bort cookies på datorn måste du återställa den exkluderande cookien. |
 

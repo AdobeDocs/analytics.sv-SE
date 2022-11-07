@@ -3,9 +3,9 @@ title: Frågor och svar om migrering till Adobe Analytics
 description: Få svar på vanliga frågor när du går från en tredjepartsplattform till Adobe.
 feature: Third-party Integration
 exl-id: 1201909e-b20c-48c5-b287-393da8e22d78
-source-git-commit: 1192a6a1e14e43aa2b434ac0b2675c73d249214a
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '389'
 ht-degree: 56%
 
 ---
@@ -18,7 +18,7 @@ Alla Analytics-plattformar har olika sätt att samla in, hantera och lagra data.
 
 Om din organisation är mån om att få historisk information överförd till Adobe kontaktar du er organisations Account Manager. En implementeringskonsult kan samarbeta med organisationen för att översätta en Google Analytics-dataexport till en datakälla som kan importeras av Adobes datainsamlingsservrar.
 
-Vi rekommenderar att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en) som kan ta med sig alla datakällor i flera kanaler.
+Vi rekommenderar att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) som kan ta med sig alla datakällor i flera kanaler.
 
 **Jag är van vid en segmenteringslistruta i många av mina rapporter. Hur återskapar jag det i [!UICONTROL Analysis Workspace]?**
 

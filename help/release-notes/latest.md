@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 7c66414129e262954e5521a28b878424099ac6ad
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1408'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **[!UICONTROL Key metric summary]** visualisering | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) | 5 oktober 2022 | 19 oktober 2023 |
+| **[!UICONTROL Key metric summary]** visualisering | The [!UICONTROL Key metric summary] visualisering gör att du kan se hur viktiga mätvärden trendar inom en enda tidsram. Du kan också jämföra mätprestanda över två tidsramar. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html) | 5 oktober 2022 | 19 oktober 2023 |
 | **Skiftlägesokänsliga multivärdesvariabler** | För skiftlägesokänsliga multivärdesvariabler lagras värdena i `mvvar1 - mvvar3` och `post_mvvar1 - post_mvvar3` i Dataflöden kommer inte längre att sänkas automatiskt. I stället kommer dataflöden (och data som skickas via Analytics Source Connector till Adobe Experience Platform och CJA) att återspegla det ursprungliga fallet som skickades från sidan. | Ej tillämpligt | 24 oktober 2022 |
 
 {style=&quot;table-layout:auto&quot;}
@@ -61,7 +61,7 @@ AN-295574; AN-296354; AN-297143; AN-299501; AN-301755; AN-302054; AN-302304; AN-
 
 ## AppMeasurement
 
-De senaste uppdateringarna av AppMeasurement-versioner (version 2.23.0) finns i [Versionsinformation om AppMeasurement for JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html?lang=en).
+De senaste uppdateringarna av AppMeasurement-versioner (version 2.23.0) finns i [Versionsinformation om AppMeasurement for JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/appmeasurement-updates.html).
 
 ## Relaterade resurser
 

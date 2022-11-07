@@ -3,9 +3,9 @@ description: De ID:n du skickar in omfattar inte alltid alla data för träffar 
 title: ID-expansion
 feature: Data Governance
 exl-id: 312a249f-e0e7-44da-bb3d-b19f1bb4c706
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1355'
 ht-degree: 96%
 
 ---
@@ -18,7 +18,7 @@ De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics
 "expandIds": true
 ```
 
-Se [Exempel på JSON-begäran](/help/admin/c-data-governance/gdpr-submit-access-delete.md#sample-json-request) för ett exempel på hur du tar med det här alternativet i begäran. Mer information finns i [API-dokumentationen för sekretesstjänsten](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en).
+Se [Exempel på JSON-begäran](/help/admin/c-data-governance/gdpr-submit-access-delete.md#sample-json-request) för ett exempel på hur du tar med det här alternativet i begäran. Mer information finns i [API-dokumentationen för sekretesstjänsten](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html).
 
 <table id="table_A10CA8DC8C1643CF84A4DF30A6740D51"> 
  <thead> 
@@ -60,7 +60,7 @@ Utöver standardvärdet stöder prioritetsfältet även värdet ”låg”. Du b
 
 >[!NOTE]
 >
->[API:t för sekretesstjänsten](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=en) har tillhandahållits för att hjälpa dig att uppfylla begäranden om datasekretess, vilka är tidskänsliga. Adobe stöder inte att detta API används för andra syften och det kan påverka Adobes förmåga att tillhandahålla användarinitierade begäranden om datasekretess i god tid för andra Adobe-kunder. Vi ber dig att inte använda API:t för sekretesstjänsten för andra syften, som att rensa data som av misstag har skickats in till stora grupper av besökare.
+>[API:t för sekretesstjänsten](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) har tillhandahållits för att hjälpa dig att uppfylla begäranden om datasekretess, vilka är tidskänsliga. Adobe stöder inte att detta API används för andra syften och det kan påverka Adobes förmåga att tillhandahålla användarinitierade begäranden om datasekretess i god tid för andra Adobe-kunder. Vi ber dig att inte använda API:t för sekretesstjänsten för andra syften, som att rensa data som av misstag har skickats in till stora grupper av besökare.
 
 Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för sekretesstjänsten inte är lämpligt för detta ändamål.
 
