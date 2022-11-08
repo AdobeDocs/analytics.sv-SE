@@ -3,10 +3,10 @@ title: Regional datainsamling
 description: Information om regional datainsamling
 feature: Regional Data Collection
 exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
-source-git-commit: 1016e802f80855aebe0046f48556733652379d33
+source-git-commit: 60c2422ef32a4fadbb975006c111d12878a98f53
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +54,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 | Fördelar | Beskrivning |
 | --- | --- |
 | Prestanda | Med RDC kan besökarna ansluta till närmaste DCC. Detta ger den snabbaste svarstiden, vilket ger mer exakt spårning och snabbare laddningstider. |
-| Redundans | Om kommunikationen mellan DCC och din DPC avbryts, sparar Adobe RDC-infrastruktur data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs. |
+| Redundans | Om kommunikationen mellan DCC och din DPC avbryts, sparar Adobe RDC-infrastrukturen data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs. |
 
 ## Så här fungerar RDC
 
