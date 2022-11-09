@@ -3,10 +3,10 @@ title: Hur tidsåtgången beräknas i Adobe Analytics
 description: En sammanställd sida med tid för mått och mått.
 feature: Metrics
 exl-id: 71e9b856-8a0a-47be-a73f-4dc7d639a5de
-source-git-commit: de08ad32d36219ccd7da5470e5821de565bed18b
+source-git-commit: 283b8e23c95b46d091b41ed97ca9bc683e7a33ee
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 6%
+source-wordcount: '1541'
+ht-degree: 5%
 
 ---
 
@@ -21,6 +21,7 @@ Olika [!UICONTROL 'time spent'] mätvärden och dimensioner erbjuds för alla Ad
 | [!UICONTROL Total seconds spent] | Representerar den totala tiden som besökare interagerar med en viss dimensionspost. Inkluderar förekomsten av ett värde och beständighet i alla efterföljande träffar. När det gäller proppar räknas även den tid som tillbringats över efterföljande länkhändelser. | Analysis Workspace, Reports &amp; Analytics, Report Builder (kallas&quot;total tidsåtgång&quot;), Data warehouse |
 | [!UICONTROL Time spent per visit] (sekunder) | Ungefär *Antal sekunder per besök*<br> Representerar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök. **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace, rapporter och analyser |
 | [!UICONTROL Time spent per visitor] (sekunder) | Ungefär *Totalt antal sekunder som använts/unik besökare*<br> Representerar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace, rapporter och analyser |
+| [!UICONTROL Time Spent/User (State)] | Ungefär *Totalt antal mobilappssekunder som använts/unika mobilappsbesökare*<br> Representerar den genomsnittliga tiden mobilappsbesökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
 | [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Anteckning**: Detta mätvärde skiljer sig sannolikt från&quot;Time Spent per Visit&quot; på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Rapporter och analyser (visas på några minuter), Report Builder (visas på några minuter) |
 | [!UICONTROL Average time on site] | Detta är samma mätvärde som *Genomsnittlig tid på plats (sekunder)*, förutom formaterad som Tid (hh):mm:ss) | Analysis Workspace |
 | [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> Vi rekommenderar i stället att du använder&quot;Genomsnittlig tid på plats&quot; om en dimensionspost behöver genomsnittstid. | Report Builder (när det finns en dimension i begäran) |
@@ -42,7 +43,7 @@ Adobe Analytics använder explicita värden (inklusive länkhändelser och video
 
 >[!NOTE]
 >
->Utan länkar som [!UICONTROL Video Views] eller [!UICONTROL Exit Links]går det inte att känna till hur lång tid som har tillbringats på ett besök senast. Av liknande skäl [!UICONTROL Bounce Visits] (d.v.s. besök med en enda träff) har inte heller någon associerad&quot;tid&quot;.
+>Utan länkar som [!UICONTROL Video Views] eller [!UICONTROL Exit Links]går det inte att känna till hur lång tid som har ägnats åt det senaste besöket. Av liknande skäl [!UICONTROL Bounce Visits] (d.v.s. besök med en enda träff) har inte heller någon associerad&quot;tid&quot;.
 
 The **täljare** i beräkning av total tid är antalet sekunder som har använts.
 
