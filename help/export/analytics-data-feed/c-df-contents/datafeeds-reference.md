@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: bc8f87c42ca481382b603413088faa9a71ab01f1
+source-git-commit: 8be5cc920e601e7ebd57e0e3df645f3fa817924f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3621'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`cust_hit_time_gmt`** | Endast tidsstämpelaktiverade rapportsviter. Tidsstämpeln som skickades med träffen, baserat på Unix-tid. | int |
 | **`cust_visid`** | Om ett anpassat besökar-ID anges fylls det i i den här kolumnen. | varchar(255) |
 | **`daily_visitor`** | Flagga som avgör om träffen är en ny daglig besökare. | tinyint unsigned |
-| **`dataprivacyconsentoptin`** | Variabel som används i [Anmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-in.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`|`). Giltiga värden är `DMP` och `SELL`. | varchar(100) |
-| **`dataprivacyconsentoptout`** | Variabel som används i [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`|`). Giltiga värden är `SSF`, `DMP`och `SELL`. | varchar(100) |
+| **`dataprivacyconsentoptin`** | Variabel som används i [Anmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-in.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`\|`). Giltiga värden är `DMP` och `SELL`. | varchar(100) |
+| **`dataprivacyconsentoptout`** | Variabel som används i [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md) dimension. Flera värden kan förekomma per träff, avgränsade med ett rör (`\|`). Giltiga värden är `SSF`, `DMP`och `SELL`. | varchar(100) |
 | **`date_time`** | Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon. | datetime |
 | **`domain`** | Variabel som används i [Domän](/help/components/dimensions/domain.md) dimension. Baserat på besökarens internetanslutning. | varchar(100) |
 | **`duplicate_events`** | Listar varje händelse som räknats som en dubblett. | varchar(255) |
@@ -163,6 +163,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`page_type`** | Används för att fylla i [Sidorna hittades inte](/help/components/dimensions/pages-not-found.md) dimension. Används endast för 404 sidor. Variabeln ska antingen vara tom eller innehålla värdet `ErrorPage`. | char(20) |
 | **`page_url`** | URL:en för träffen. Observera att `post_page_url` tas bort för förfrågningar om länkspårningsbilder och använder datatypen varchar(255). | text |
 | **`pagename`** | Används för att fylla i [Sida](/help/components/dimensions/page.md) dimension. Om [`pagename`](/help/implement/vars/page-vars/pagename.md) variabeln är tom, Analytics använder `page_url` i stället. | varchar(100) |
+| **`pagename_no_url`** | Liknar `pagename`, förutom att den inte går tillbaka till `page_url`. Endast `post` -kolumnen är tillgänglig. | varchar(100) |
 | **`paid_search`** | Flagga som anges om träffen matchar betald sökningsidentifiering. | tinyint unsigned |
 | **`partner_plugins`** | Används inte. En del av en skrapad funktion. | varchar(255) |
 | **`persistent_cookie`** | Används i [Stöd för permanenta cookies](/help/components/dimensions/persistent-cookie-support.md) dimension. Anger om besökaren stöder cookies som inte tas bort efter varje träff. | char(1) |
@@ -201,9 +202,10 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`socialownedpropertyid`** | Används inte längre. ID för socialt ägd egendom | varchar(255) |
 | **`socialownedpropertyname`** | Används inte längre. Namn på egendom som ägs av sociala medier | varchar(255) |
 | **`socialownedpropertypropertyvsapp`** | Används inte längre. Egendom i sociala medier kontra app | varchar(255) |
+| **`sourceid`** | . | int unsigned |
 | **`state`** | State-variabel. | varchar(50) |
 | **`stats_server`** | Inte till användning. Adobe intern server som bearbetade träffen. | char(30) |
-| **`survey`** | Används inte längre. Adobe Survey-variabel. | text |
+| **`survey`** | Används inte längre. Adobe Survey-variabel. Endast `post` -kolumnen är tillgänglig. | text |
 | **`survey_instances`** | Används inte längre. Variabel för Adobe Survey-instanser. | text |
 | **`t_time_info`** | Lokal tid för besökaren. Formatet är: `M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)` | varchar(100) |
 | **`tnt`** | Används i Adobe Target integreringar. Representerar alla tester som är kvalificerade för tillfället. Formatet är: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`. | text |
