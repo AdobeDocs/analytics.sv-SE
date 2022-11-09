@@ -3,10 +3,10 @@ title: Hur tidsåtgången beräknas i Adobe Analytics
 description: En sammanställd sida med tid för mått och mått.
 feature: Metrics
 exl-id: 71e9b856-8a0a-47be-a73f-4dc7d639a5de
-source-git-commit: 283b8e23c95b46d091b41ed97ca9bc683e7a33ee
+source-git-commit: e2128ef18a62832a9740a4cb610685f351c7db19
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 5%
+source-wordcount: '1531'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ Olika [!UICONTROL 'time spent'] mätvärden och dimensioner erbjuds för alla Ad
 | [!UICONTROL Time Spent/User (State)] | Ungefär *Totalt antal mobilappssekunder som använts/unika mobilappsbesökare*<br> Representerar den genomsnittliga tiden mobilappsbesökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
 | [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Anteckning**: Detta mätvärde skiljer sig sannolikt från&quot;Time Spent per Visit&quot; på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Rapporter och analyser (visas på några minuter), Report Builder (visas på några minuter) |
 | [!UICONTROL Average time on site] | Detta är samma mätvärde som *Genomsnittlig tid på plats (sekunder)*, förutom formaterad som Tid (hh):mm:ss) | Analysis Workspace |
-| [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> Vi rekommenderar i stället att du använder&quot;Genomsnittlig tid på plats&quot; om en dimensionspost behöver genomsnittstid. | Report Builder (när det finns en dimension i begäran) |
+| [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> I stället rekommenderar vi att du använder&quot;Genomsnittlig tid på plats&quot; om en dimensionspost behöver genomsnittstid. | Report Builder (när det finns en dimension i begäran) |
 | [!UICONTROL Total session length], alias. [!UICONTROL Previous session length] | Endast Mobile App SDK. <br>Fastställd nästa gång appen startas för föregående session. Det här måttet beräknas i sekunder och räknas inte när programmet körs i bakgrunden. Detta är ett mått på sessionsnivå.<br>Exempel: Vi installerar appen ABC och startar och använder den i 2 minuter och stänger sedan appen. Inga data skickas om den här sessionstiden. Nästa gång vi startar programmet, [!UICONTROL Previous Session Length] skickas med värdet 120. | Analysis Workspace, rapporter och analyser, Report Builder, användargränssnitt för mobiltjänster |
 | [!UICONTROL Average session length] (mobil) | *Total sessionslängd / (startar - första starten)*<br> Endast Mobile App SDK. Detta är ett mått på sessionsnivå. | Report Builder, användargränssnitt för mobiltjänster |
 
@@ -55,9 +55,9 @@ The **nämnare** finns inte som separat mått i Adobe Analytics. Nämnaren är s
 
 ## Vanliga frågor
 
-**Fråga 1: Kan all tidsåtgång användas för mått?**
++++Kan alla mått för hur lång tid som spenderas användas på alla dimensioner?
 
-S: De tidsmått som kan användas för alla dimensioner är:
+De tidsmått som kan användas för alla dimensioner är:
 
 * [!UICONTROL Total seconds spent]
 
@@ -67,22 +67,28 @@ S: De tidsmått som kan användas för alla dimensioner är:
 
 * [!UICONTROL Average time spent on site] (sekunder)
 
-**Fråga 2: Vilken tidsrymd används bäst för uppdelningar med andra dimensioner?**
++++
 
-S: The [!UICONTROL Time Spent on Page – granular] dimension är en träffnivådimension. Om du delar upp det här med en annan dimension kommer du att se i vilka sekunder en träff varade där även nedbrytningsdimensionen fanns.
++++Vilken tid används bäst för indelning med andra dimensioner?
+
+The [!UICONTROL Time Spent on Page – granular] dimension är en träffnivådimension. Om du delar upp det här med en annan dimension kommer du att se i vilka sekunder en träff varade där även nedbrytningsdimensionen fanns.
 I exemplet nedan associeras söktermen&quot;klassificeringar&quot; med träfftider på 54 sekunder, 59 sekunder osv., vilket kanske anger att besökarna spenderar tid på att läsa innehåll som returnerats för den perioden.
 
 ![](assets/time-spent1.png)
 
-**Fråga 3: Vilka mått är lämpliga i förhållande till måttet för [!UICONTROL Time Spent on Page – granular]?**
++++
 
-S: Alla mätvärden. Dimensionen visar hur lång tid som har ägnats åt den exakta träffen där händelsen inträffade. Högre tidsåtgång innebär att en besökare stannar längre på en sida (träff) där händelsen inträffade.
++++Vad är lämpligt för måttet [!UICONTROL Time Spent on Page – granular]?
+
+Alla mätvärden. Dimensionen visar hur lång tid som har ägnats åt den exakta träffen där händelsen inträffade. Högre tidsåtgång innebär att en besökare stannar längre på en sida (träff) där händelsen inträffade.
 
 ![](assets/time-spent2.png)
 
-**Fråga 4: Hur [!UICONTROL Average Time Spent on Site] skiljer sig från [!UICONTROL Time Spent per Visit]?**
++++
 
-S: Skillnaden är nämnaren i måttet:
++++Hur [!UICONTROL Average Time Spent on Site] skiljer sig från [!UICONTROL Time Spent per Visit]?
+
+Skillnaden är nämnaren i måttet:
 
 * [!UICONTROL Average time spent on site] använder de sekvenser som innehåller en dimensionsartikel.
 
@@ -90,9 +96,11 @@ S: Skillnaden är nämnaren i måttet:
 
 Därför kan dessa mätvärden ge liknande resultat på besöksnivå, men de kommer att vara annorlunda på träffnivå.
 
-**Fråga 5: Varför delas upp summor med [!UICONTROL Average Time Spent on Site] matchar inte det överordnade radobjektet?**
++++
 
-S: För [!UICONTROL Average Time Spent on Site] är beroende av obrutna sekvenser av en dimension, och den inre rapporten är inte beroende av den yttre rapporten när de här körningarna beräknas.
++++Varför ska man göra totalsummor med [!UICONTROL Average Time Spent on Site] matchar inte det överordnade radobjektet?
+
+För [!UICONTROL Average Time Spent on Site] är beroende av obrutna sekvenser av en dimension, och den inre rapporten är inte beroende av den yttre rapporten när de här körningarna beräknas.
 
 Ta till exempel följande besök.
 
@@ -105,6 +113,8 @@ Ta till exempel följande besök.
 Vid beräkning av den tid som tillbringats för hemsidan skulle det vara (30+10)/2=20, men om du delar upp den per dag skulle det ge (30+10)/1=40 eftersom dagen har en enda obruten serie som börjar den 1 januari.
 
 Därför kan dessa mätvärden ge liknande resultat på besöksnivå, men de kommer att vara annorlunda på träffnivå.
+
++++
 
 ## Exempel på [!UICONTROL Time Spent] beräkning
 
