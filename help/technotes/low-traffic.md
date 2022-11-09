@@ -1,9 +1,9 @@
 ---
 description: När en rapport har många unika värden använder Adobe måttobjektet Lågtrafik för att förbättra rapportens prestanda.
 title: Lågtrafikvärde i Adobe Analytics
-feature: Data Configuration and Collection
+feature: Metrics, Data Configuration and Collection
 exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
-source-git-commit: ddd1473ccfe27dbcb28c0c51992628c9bf03cb5c
+source-git-commit: 81c7dcea2d42ee8e31140523cd43cdfd001baf28
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
