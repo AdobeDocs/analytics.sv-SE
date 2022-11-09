@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 8be5cc920e601e7ebd57e0e3df645f3fa817924f
+source-git-commit: 031b5922e490419eecdb2c953ff9b2c798314ab5
 workflow-type: tm+mt
-source-wordcount: '3621'
+source-wordcount: '3638'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |
 | **`accept_language`** | Visar alla godkända språk enligt HTTP-huvudet Accept-Language i en bildbegäran. | char(20) |
+| **`adload`** | Inläsningar av mediaannonser | varchar(255) |
 | **`aemassetid`** | En variabel med flera värden som motsvarar tillgångar-ID:n (GUID:n) för en uppsättning Adobe Experience Manager Assets. Ökar imponeringshändelser. | text |
 | **`aemassetsource`** | Identifierar resurshändelsens källa. Används i Adobe Experience Manager. | varchar(255) |
 | **`aemclickedassetid`** | Tillgångs-ID för en Adobe Experience Manager-resurs. Ökningar Klicka på händelser. | varchar(255) |
@@ -143,6 +144,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`mobileplaceaccuracy`** | Samlas in från kontextdatavariabeln `a.loc.acc`. Anger GPS-noggrannheten i meter vid insamlingen. | varchar(255) |
 | **`mobileplacecategory`** | Samlas in från kontextdatavariabeln `a.loc.category`. Beskriver kategorin för en viss plats. | varchar(255) |
 | **`mobileplaceid`** | Samlas in från kontextdatavariabeln `a.loc.id`. Identifierare för en viss intressepunkt. | varchar(255) |
+| **`mobilepushoptin`** | Push-deltagande för mobiltjänster | varchar(255) |
+| **`mobilepushpayloadid`** | Push-betalnings-ID för mobiltjänster | varchar(255) |
 | **`mobilerelaunchcampaigncontent`** | Startinnehåll för mobiltjänster | varchar(255) |
 | **`mobilerelaunchcampaignmedium`** | Startmedium för mobiltjänster | varchar(255) |
 | **`mobilerelaunchcampaignsource`** | Startkälla för Mobile Services | varchar(255) |
@@ -202,7 +205,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`socialownedpropertyid`** | Används inte längre. ID för socialt ägd egendom | varchar(255) |
 | **`socialownedpropertyname`** | Används inte längre. Namn på egendom som ägs av sociala medier | varchar(255) |
 | **`socialownedpropertypropertyvsapp`** | Används inte längre. Egendom i sociala medier kontra app | varchar(255) |
-| **`sourceid`** | . | int unsigned |
+| **`sourceid`** | Käll-ID | int unsigned |
 | **`state`** | State-variabel. | varchar(50) |
 | **`stats_server`** | Inte till användning. Adobe intern server som bearbetade träffen. | char(30) |
 | **`survey`** | Används inte längre. Adobe Survey-variabel. Endast `post` -kolumnen är tillgänglig. | text |
@@ -294,6 +297,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 
 Följande kolumnlista används inte och innehåller inga data:
 
+* `adclassificationcreative`
 * `mobileacquisitionclicks`
 * `mobileactioninapptime`
 * `mobileactiontotaltime`
