@@ -4,9 +4,9 @@ title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
 exl-id: f638c6a9-1c2c-4936-a787-281269f95afc
-source-git-commit: 7421b2eb2b8b00824de2910e37882c83d2d6f3e9
+source-git-commit: 21270e1a4f05208525261969c2e6858df8647aa1
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '895'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ Följande information visas i sammanfattningsnumren:
 
 | Sammanfattningsnummer | Beskrivning |
 | --- | --- |
-| [!UICONTROL Users] | Hur många användare som för närvarande skickar rapportbegäranden till den här rapportsviten. |
+| [!UICONTROL Users] | Antalet användare som för närvarande skickar rapportbegäranden till den här rapportsviten. |
 | [!UICONTROL Projects] | Arbetsyteprojekt, arbetsböcker från Report Builder osv. |
 | [!UICONTROL Queries] | Antalet frågor som körs. |
 | [!UICONTROL Average Wait Time] | Genomsnittlig väntetid för alla frågor som körs. |
@@ -120,7 +120,10 @@ I tabellen nedan finns information om rapportsviten.
 
 Så här avbryter du en begäran
 
-1. Markera rutan till vänster om en eller flera **[!UICONTROL Query ID]** i tabellen och klicka på **[!UICONTROL Cancel requests]** längst ned. (Du kan även avbryta flera begäranden samtidigt genom att visa information via [!UICONTROL User], [!UICONTROL Project], eller [!UICONTROL Application].)
+1. Markera rutan till vänster om en eller flera **[!UICONTROL Query ID]** i tabellen och klicka på **[!UICONTROL Cancel requests]** längst ned.
+
+   Du kan även avbryta flera begäranden samtidigt genom att visa information via [!UICONTROL User], [!UICONTROL Project], eller [!UICONTROL Application]. Efterföljande begäranden för ett projekt, en användare eller ett program som inte var i kö eller som kördes när åtgärden avbröts kan fortfarande visas när aktiviteten uppdateras.
+
 1. I **[!UICONTROL Cancel x query]** -fönstret som visas kan du ändra avbrottsmeddelandet om det behövs.
 1. Klicka på **[!UICONTROL Continue]**.
 
