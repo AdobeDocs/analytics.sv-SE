@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 3c010207764de51ed053b7bf9ee777e68097e411
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1447'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (oktober/november 2022)
 
-**Senaste uppdatering**: 28 oktober 2022
+**Senaste uppdatering**: 18 november 2022
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -39,6 +39,7 @@ AN-295574; AN-296354; AN-297143; AN-299501; AN-301755; AN-302054; AN-302304; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **Uppdaterade riktlinjer för trafikspikes-meddelanden** | 18 november 2022 | Tidigare riktlinjer baserades strikt på träffvolymer. The [nya riktlinjer](https://experienceleague.adobe.com/docs/analytics/admin/traffic-management/traffic-lead-time.html?lang=en) baseras på en kombination av rapportsvitens storlek och procentuell ökning. |
 | **Uppdatera till enhetssökningar på grund av Google klienttips** | 14 oktober 2022 | Användningen av klienttips i enhetssökning, som ursprungligen planerades till 26 oktober 2022, har skjutits upp till **Januari 2023**. <p> <p>Från och med oktober 2022 är det möjligt att samla in klienttips med antingen Web SDK- eller AppMeasurement JavaScript-biblioteken. Men klienttips kommer inte att införlivas i enhetssökning förrän i januari 2023. Vid det datumet kommer Adobe att börja använda klienttips förutom användaragenten när vissa enhetsuppgifter hämtas för träffar från Chromium-webbläsare, som Google Chrome och Microsoft Edge. Detta är ett svar på Google plan att gradvis minska informationen som presenteras från användaragentsträngen i stället för data som skickas via klienttips. <p> <p>Som en del av den här ändringen använder Adobe enhetskartan för alla enhetssökningar som är relaterade till användaragenten. [Läs mer](/help/technotes/client-hints.md) |
 | **Standardstartsida** | 29 september 2022 | The [ny landningssida](/help/analyze/landing.md) som introducerades tidigare i år kommer att bli standardupplevelsen för alla användare i **Januari 2023**. Den aktuella sidan kommer att bli inaktuell och alla kommer att behöva använda den nya upplevelsen. |
 | **[!UICONTROL Anomaly detection]autokörningsförhållanden** | 29 september 2022 | Idag [!UICONTROL Anomaly detection] körs automatiskt på alla kolumner i friformstabeller i tidsserier. För att säkerställa att data är tillgängliga för analys och att projekt läses in snabbare kommer Adobe att ändra hur automatisk detektering av avvikelser körs. Startar **26 oktober 2022**, [!UICONTROL Anomaly detection] körs bara automatiskt på den första måttkolumnen i en tabell. Du kan konfigurera kolumninställningar så att avvikelseidentifiering körs på andra kolumner, om det behövs. |
