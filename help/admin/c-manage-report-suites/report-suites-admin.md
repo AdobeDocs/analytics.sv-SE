@@ -3,18 +3,30 @@ description: En rapportsvit definierar den fullständiga, oberoende rapportering
 title: Hanterare för rapportsvit
 feature: Report Suite Settings
 exl-id: c36e5378-c8a7-4f18-b143-8ce862638c76
-source-git-commit: 72bd67179e003b70233d863d34153fec77548256
+source-git-commit: 45c6f0e08870cd9e01e8e6bfb7900ca54d356d02
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Hanterare för rapportsvit
 
-En rapportsvit definierar den fullständiga, oberoende rapporteringen på en vald webbplats, en uppsättning webbplatser eller en delmängd av webbsidor. Vanligtvis är en rapportserie en webbplats, men den kan vara ett globalt segment där du har kombinerat flera webbplatsers nummer för att få summor. När du loggar in på en Adobe Analytics-lösning väljer du en rapportsvit att använda (förutom när du använder sammanslagningar som kombinerar rapportsviter). En rapportsvit kan dessutom vara mindre än en webbplats om du vill köra rapporter för en del av webbplatsen. Analyslösningar sammanställer och rapporterar om dessa datalager. Med Admin Report Suite Manager kan du definiera regler som styr hur data behandlas i en rapportserie.
+En rapportsvit definierar den fullständiga, oberoende rapporteringen för följande datalager:
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**
+* En webbplats (oftast)
+
+* En del eller delmängd av en webbplats
+
+* Ett globalt segment som består av flera webbplatsers tal för att få summor
+
+Analyslösningar sammanställer och rapporterar om dessa datalager. Med Admin Report Suite Manager kan du definiera regler som styr hur data behandlas i en rapportserie.
+
+När du loggar in på en Adobe Analytics-lösning väljer du en rapportsvit att använda (förutom när du använder sammanslagningar som kombinerar rapportsviter).
+
+Så här kommer du åt en rapportserie:
+
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]**
 
 >[!NOTE]
 >

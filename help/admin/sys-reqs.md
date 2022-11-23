@@ -3,16 +3,16 @@ title: Systemkrav för Adobe Analytics
 description: Systemkraven för Adobe Analytics.
 feature: System Requirements
 exl-id: e3575b1c-e088-48a9-90d4-ad1c7169e022
-source-git-commit: 7dc97ad5225baf56c829efc8c21b07154bdd8ff9
+source-git-commit: 45c6f0e08870cd9e01e8e6bfb7900ca54d356d02
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '118'
 ht-degree: 1%
 
 ---
 
 # Systemkrav för Adobe Analytics
 
-Visar systemkraven för olika produktlösningar i Adobe Analytics.
+De flesta Adobe Analytics-lösningar fungerar i webbläsaren. Följande avsnitt innehåller systemkrav för både webbläsare och klientlösningar:
 
 ## Systemkrav för webbläsarbaserade lösningar
 
