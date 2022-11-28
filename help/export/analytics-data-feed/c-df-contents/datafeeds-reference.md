@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 031b5922e490419eecdb2c953ff9b2c798314ab5
+source-git-commit: d65eb9ce1904e66bfb5fdaa801696ba050f99ae7
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3641'
 ht-degree: 0%
 
 ---
@@ -125,13 +125,13 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`mobilecampaignterm`** | Betalnyckelord eller andra termer som du vill spåra med förvärvet. Fylls i av Anskaffning av mobilapp. | varchar(255) |
 | **`mobiledayofweek`** | Nummer på den veckodag då appen startades. | varchar(255) |
 | **`mobiledayssincefirstuse`** | Antal dagar sedan appen kördes för första gången. | varchar(255) |
-| **`mobiledayssincelastupgrade`** | Samlas in från kontextdatavariabeln a.DaysSinceLastUpgrade. Antalet dagar som har gått sedan föregående session. | varchar(255) |
+| **`mobiledayssincelastupgrade`** | RETIRED - Samlades in från kontextdatavariabeln a.DaysSinceLastUpgrade. Antalet dagar som har gått sedan föregående session. | varchar(255) |
 | **`mobiledayssincelastuse`** | Antal dagar sedan appen senast kördes. | varchar(255) |
 | **`mobiledeeplinkid`** | Samlas in från kontextdatavariabeln `a.deeplink.id`. Används i förvärvsrapporter som en identifierare för länken för mobilförvärv. | varchar(255) |
 | **`mobiledevice`** | Namn på mobil enhet. I iOS lagras den som en kommaavgränsad tvåsiffrig sträng. Det första numret representerar enhetsgenereringen och det andra representerar enhetsfamiljen. | varchar(255) |
 | **`mobilehourofday`** | Definierar timmen på dagen då appen startades. Använder ett numeriskt format på 24 timmar. | varchar(255) |
 | **`mobileinstalldate`** | Datum för mobilinstallation. Anger datumet för första gången en användare öppnar mobilappen. | varchar(255) |
-| **`mobilelaunchessincelastupgrade`** | Samlas in från kontextdatavariabeln a.LaunchesSinceUpgrade. Rapporterar antalet starter sedan den senaste uppgraderingen. | varchar(255) |
+| **`mobilelaunchessincelastupgrade`** | RETIRED - Samlades in från kontextdatavariabeln a.LaunchesSinceUpgrade. Rapporterar antalet starter sedan den senaste uppgraderingen. | varchar(255) |
 | **`mobilelaunchnumber`** | Ökningar med ett varje gång mobilappen startas. | varchar(255) |
 | **`mobileltv`** | Används inte längre. Fylls i av trackLifetimeValue-metoder. | varchar(255) |
 | **`mobilemessagebuttonname`** | Samlas in från kontextdatavariabeln `a.message.button.id`. Används för meddelanden i appen för att identifiera knappen som stängde meddelandet. | varchar(100) |
@@ -139,7 +139,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`mobilemessageonline`** | Meddelande i appen online | varchar(255) |
 | **`mobilemessagepushoptin`** | Samlas in från kontextdatavariabeln `a.push.optin`. Ange som&quot;true&quot; när användaren väljer att skicka meddelanden; i annat fall är värdet &quot;false&quot;. | varchar(255) |
 | **`mobilemessagepushpayloadid`** | Samlas in från kontextdatavariabeln `a.push.payloadid`. Används i push-meddelanden som nyttolast-ID. | varchar(255) |
-| **`mobileosenvironment`** | Samlas in från kontextdatavariabeln `a.OSEnvironment`. Lägesmiljö, t.ex. Android eller iOS. | varchar(255) |
+| **`mobileosenvironment`** | RETIRED - Samlad från kontextdatavariabeln `a.OSEnvironment`. Lägesmiljö, t.ex. Android eller iOS. | varchar(255) |
 | **`mobileosversion`** | Mobiltjänstens operativsystemversion | varchar(255) |
 | **`mobileplaceaccuracy`** | Samlas in från kontextdatavariabeln `a.loc.acc`. Anger GPS-noggrannheten i meter vid insamlingen. | varchar(255) |
 | **`mobileplacecategory`** | Samlas in från kontextdatavariabeln `a.loc.category`. Beskriver kategorin för en viss plats. | varchar(255) |
