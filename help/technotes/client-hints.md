@@ -1,13 +1,13 @@
 ---
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
+source-git-commit: f80430a4537b17991a0c2cf104df47a053c3792d
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1134'
 ht-degree: 1%
 
 ---
-
 
 # Översikt över kundtips och vanliga frågor
 
@@ -95,6 +95,14 @@ Se [tidslinje som publicerats av Google](https://blog.chromium.org/2021/09/user-
 
 +++
 
++++**På vilka sätt är Analytics beroende av användaragenten?**
+
+Enhetsinformation i rapporter hämtas från användaragenten. Vi har uppdaterat våra processer så att vi kan använda både användaragenten och klienttips där det finns tillgängliga.
+
+Återställnings-ID ([s_fd](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html?lang=en)) härleds från användaragenten och IP-adressen. Detta ID används endast om en cookie inte kan anges så används inte i någon större utsträckning
+
++++
+
 +++**Vilka analysrapporteringsfält härleds från värden som lagras i höga entropitups?**
 
 Detta ändras med tiden eftersom Google fryser fler delar av användaragenten. Det första fältet som ska påverkas direkt är&quot;operativsystem&quot;, som innehåller operativsystemversionen Enligt Google publicerade tidslinje för&quot;frysning&quot; av användaragenttips, kommer operativsystemsversionen att frysas från slutet av oktober 2022 med Chromium version 107. Då blir operativsystemversionen i användaragenten i vissa fall felaktig.
@@ -144,4 +152,3 @@ Se [schemadokumentation](https://github.com/adobe/xdm/blob/master/components/dat
 Ja. Klienttips inkluderas i de data som skickas till AAM. Observera att AAM kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till AAM](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med tips för entropi.
 
 +++
-
