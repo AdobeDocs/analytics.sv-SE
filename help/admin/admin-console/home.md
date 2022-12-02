@@ -3,10 +3,10 @@ title: Analyser i Adobe Admin Console
 description: Lär dig använda Adobe Admin Console för att hantera Analytics-produkter och -användare.
 exl-id: 6e2c5ad4-2761-4ccb-8c76-ea9e1df9437a
 feature: Admin Tools
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+source-git-commit: 087eb1efbd7f34492033e61685082f5830c004ce
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 7%
+source-wordcount: '117'
+ht-degree: 6%
 
 ---
 
@@ -24,6 +24,6 @@ I det här kapitlet beskrivs koncept som du behöver förstå om Analytics-speci
 
 ## Lägga till en administratör i Adobe Analytics
 
-Här är en kort video om processen:
+I följande videodemonstration får du lära dig hur du lägger till en administratör i Adobe Analytics:
 
-https://video.tv.adobe.com/v/37648/?quality=12
+[Lägga till en administratör i Adobe Analytics](https://video.tv.adobe.com/v/37648/?quality=12){target=_blank}

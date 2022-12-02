@@ -3,20 +3,20 @@ title: Systemkrav för Adobe Analytics
 description: Systemkraven för Adobe Analytics.
 feature: System Requirements
 exl-id: e3575b1c-e088-48a9-90d4-ad1c7169e022
-source-git-commit: 45c6f0e08870cd9e01e8e6bfb7900ca54d356d02
+source-git-commit: 1ff50284015588888f9118f7640b4057232457d2
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 1%
+source-wordcount: '125'
+ht-degree: 0%
 
 ---
 
 # Systemkrav för Adobe Analytics
 
-De flesta Adobe Analytics-lösningar fungerar i webbläsaren. Följande avsnitt innehåller systemkrav för både webbläsare och klientlösningar:
+De flesta Adobe Analytics-lösningar fungerar i webbläsaren. Informationen i den här artikeln innehåller systemkrav för både webbläsare och klientlösningar.
 
 ## Systemkrav för webbläsarbaserade lösningar
 
-De flesta Adobe Analytics-lösningar, inklusive Analysis Workspace, är webbläsarbaserade. Därför är det viktigaste kravet att använda Adobe Analytics en modern webbläsare. Adobe stöder den senaste stabila versionen av dessa webbläsare:
+De flesta Adobe Analytics-lösningar, inklusive Analysis Workspace, är webbläsarbaserade. Därför är det viktigaste kravet att använda Adobe Analytics en modern webbläsare. Adobe har stöd för den senaste stabila versionen av följande webbläsare:
 
 * Microsoft Edge
 * Google Chrome
@@ -31,5 +31,5 @@ De flesta Adobe Analytics-lösningar, inklusive Analysis Workspace, är webbläs
 
 På den länkade lösningssidan hittar du systemkraven för den lösningen.
 
-* [Report Builder](/help/analyze/report-builder/setup/system-requirements.md)
-* [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html)
+* [Systemkrav för Report Builder](/help/analyze/report-builder/setup/system-requirements.md)
+* [Systemkrav för Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html)
