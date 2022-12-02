@@ -2,13 +2,13 @@
 title: HTTPS-krypteringsalgoritmer som stöds
 description: Den 23 juni 2022 tar vi bort stöd för TLS 1.2-ciphers som använder SHA1 eller CBC för kunder med chiffreringssäkerhetsnivån "Hög".
 feature: Regional Data Collection
-source-git-commit: ce607610516a94e4d0fbbc53a1f8f53f5977a777
+exl-id: f1cbb0cb-fd65-4f22-8594-0d97b6906698
+source-git-commit: 84a8dc9c6052d34e9dea370e444c83e84bf17852
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # HTTPS-krypteringsalgoritmer som stöds
 
@@ -24,6 +24,8 @@ Följande TLS 1.2-skrivare stöds inte längre:
 * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
 * TLS_RSA_WITH_AES_128_CBC_SHA
 * TLS_RSA_WITH_AES_256_CBC_SHA
+* TLS_RSA_WITH_AES_128_GCM_SHA256
+* TLS_RSA_WITH_AES_256_GCM_SHA384
 
 Följande klienter påverkas av den här ändringen eftersom de saknar stöd för aktuella krypteringsstandarder:
 
@@ -35,4 +37,3 @@ Följande klienter påverkas av den här ändringen eftersom de saknar stöd fö
 Android-enheter påverkas inte av den här ändringen.
 
 Kunder som har chiffersäkerhetsnivån inställd på Standard påverkas inte av den här ändringen.
-
