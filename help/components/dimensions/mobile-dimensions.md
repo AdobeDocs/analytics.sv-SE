@@ -3,9 +3,9 @@ title: Mobila dimensioner
 description: Dimensioner baserade på enhetens IP-adress.
 feature: Dimensions
 exl-id: fa460888-513d-4d14-93b1-33d308e0758a
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 9e7ad96710d536baac6923850e29df49dfaec98f
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Ex
 * **Mobiloperatör**: Värdena för den här dimensionen fylls i genom att tredjepartsdata (Digital Elements) söks igenom baserat på de IP-adresser som analysdata har hämtat. Exempelvärden innehåller `"Reliance Jio"`, `"Airtel"`, `"Vodafone"`och `"Verizon"`.
 * **Mobil färgdjup**: Färgdjupet för den mobila enheten, i bitar.
 * **Stöd för Mobile cookie**: Avgör om den mobila enheten stöder cookies. Den här rapporten anger inte om webbläsaren accepterar cookies. Dimensionerna innehåller `"Supported"`, `"Not supported"`och `"Unknown"`.
-* **Mobil enhet**: Den mobila enhet som besökaren använder.
+* **Mobil enhet**: Den mobila enhet som besökaren använder. **Anteckning**: Digital Elements publicerar regelbundet uppdateringar för att identifiera nya/uppdaterade enheter.
 * **Mobilenhetsnummer**: Avgör om den mobila enheten skickar numret. Dimensionerna innehåller `"Supported"`, `"Not supported"`och `"Unknown"`.
 * **Typ av mobil enhet**: Typ av mobil enhet. Exempelvärden innehåller `"Mobile phone"`, `"Tablet"`, `"Media player"`och `"Gaming console"`.
 * **Mobil DRM**: Den typ av DRM som den mobila enheten stöder. Exempelvärden innehåller `"DRM OMA forward"`, `"DRM OMA combined delivery"`och `"DRM OMA separate delivery"`.
