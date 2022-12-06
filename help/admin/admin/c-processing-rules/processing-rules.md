@@ -4,10 +4,10 @@ subtopic: Processing rules
 title: Översikt över behandlingsregler
 feature: Processing Rules
 exl-id: 0244aba2-4345-463a-8528-d4dcd2f872ff
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 3d22d27a259b100cbbe8306b4d610afacb59d265
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '373'
+ht-degree: 2%
 
 ---
 
@@ -57,3 +57,7 @@ Bearbetningsregler kan övervaka inkommande värden för att omforma vanliga typ
 När kontextdatavariabler definieras i implementeringen måste de kopieras till variabler som eVars för att användas vid rapportering.
 
 Se [Kopiera en kontextdatavariabel till en eVar](processing-rules-examples/processing-rules-copy-context-data.md) och [Ange en händelse med hjälp av en kontextdatavariabel](processing-rules-examples/processing-rules-copy-context-data-event.md) för mer information.
+
+## Kända begränsningar
+
+**Användning av varukorgar (^) i bearbetningsregler.** Om du vill använda karatter i bearbetningsregler som avgränsare eller för andra ändamål, måste varje karat representeras av två karatter. Du kan till exempel representera en enskild vagn som ^^, en dubbel vagn som ^^^^,
