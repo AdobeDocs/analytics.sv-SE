@@ -3,9 +3,9 @@ title: Produktprofiler för Adobe Analytics
 description: Lär dig hur produktprofiler kan användas som behörighetsförinställningar som produktadministratörer kan tilldela användare inom en organisation.
 exl-id: 834e4cf1-20b0-4c9d-939a-19e00494c8dd
 feature: Admin Tools
-source-git-commit: 88ed2f874d680f9ed1aea9bfb60e303f123cbc37
+source-git-commit: 7cde90a15dc97468a70f8120bec46915eab7c1bb
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Produktprofiler är behörighetsförinställningar som produktadministratörer kan tilldela användare inom en organisation. Om du skapar en produktprofil och tilldelar en Experience Cloud-användare till produktprofilen ärver de behörighetsobjekten som finns i produktprofilen.
 
-Se [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise om du vill ha allmän information om produktprofiler.
+Allmän information om produktprofiler, inklusive hur du skapar produktprofiler och tilldelar användare, finns i [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
 
 ## Produktprofiladministratörer
 
@@ -24,6 +24,8 @@ Produktprofiladministratörer är en valfri grupp som kan lägga till eller ta b
 * Produktprofiladministratörer kan justera behörighetsobjekt i sina produktprofiler.
 * Produktprofiladministratörer kan tilldela eller ta bort produktprofiler till användargrupper.
 * Administratörer av produktprofiler är idealiska för gruppledare eller chefer som behöver ge och hantera åtkomst till Adobe Analytics för sitt team. Enskilda personer behöver inte störa systemadministratörer eller produktadministratörer för att bevilja åtkomst till Adobe Analytics.
+
+Mer information om hur du tilldelar produktprofiladministratörer finns i avsnittet Hantera produktprofiladministratörer i artikeln [Hantera produktprofiler för företagsanvändare](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) i användarhandboken för Enterprise.
 
 ## Adobe Analytics behörighetsobjekt
 
