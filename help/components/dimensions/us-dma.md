@@ -3,9 +3,9 @@ title: US DMA
 description: Marknadsområdet för träffen.
 feature: Dimensions
 exl-id: 156d5755-2e93-4240-bde3-1d537422b7bf
-source-git-commit: 89e8c9ac085d020db954790331103846c9dbc7a1
+source-git-commit: 146d622f370fd7469a8e5f0f2fe68cb31fa91844
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,4 @@ Eftersom den här dimensionen baseras på IP-adress kan vissa scenarier visa en 
 * **IP-adresser för mobiler**: IP-målanpassning för mobiler fungerar på olika nivåer beroende på plats och nätverk. Ett antal transportföretag backar tillbaka IP-trafik genom centraliserade eller regionala närvaroplatser.
 * **Användare av satelliter**: Det är svårt att identifiera den specifika platsen för dessa användare eftersom de vanligtvis verkar komma från platsen för överordnad länk.
 * **Militär- och myndighetsutövare**: Representerar personal som reser runt i världen och tar sig in genom sin hemort, i stället för den bas eller det kontor där de för närvarande är stationerade.
+* **Proxies som skymmer IP-adresser av sekretesskäl**: Tjänster som Apple Private Relay döljer den sanna IP-adressen genom att skicka data slumpmässigt via en mellanhand eller proxy. Den här proxyn ersätter sedan en annan IP-adress innan den vidarebefordras till Adobe.

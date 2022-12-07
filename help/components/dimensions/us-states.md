@@ -3,9 +3,9 @@ title: USA
 description: Besökarens tillstånd i USA.
 feature: Dimensions
 exl-id: d4506e59-c1ff-4348-912d-c1ad73278f56
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 146d622f370fd7469a8e5f0f2fe68cb31fa91844
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,4 @@ Eftersom den här dimensionen baseras på IP-adress kan vissa scenarier visa en 
 * **IP-adresser för mobiler**: IP-målanpassning för mobiler fungerar på olika nivåer beroende på plats och nätverk. Ett antal transportföretag backar tillbaka IP-trafik genom centraliserade eller regionala närvaroplatser.
 * **Användare av satelliter**: Det är svårt att identifiera den specifika platsen för dessa användare eftersom de vanligtvis verkar komma från platsen för överordnad länk.
 * **Militär- och myndighetsutövare**: Representerar personal som reser runt i världen och tar sig in genom sin hemort, i stället för den bas eller det kontor där de för närvarande är stationerade.
+* **Proxies som skymmer IP-adresser av sekretesskäl**: Tjänster som Apple Private Relay döljer den sanna IP-adressen genom att skicka data slumpmässigt via en mellanhand eller proxy. Den här proxyn ersätter sedan en annan IP-adress innan den vidarebefordras till Adobe.
