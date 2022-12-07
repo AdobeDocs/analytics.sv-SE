@@ -5,7 +5,7 @@ title: Vanliga frågor om rapporter och analyser
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 99702728-971f-484a-91f5-f3210b89485c
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: 88df864b58cecef71aadc0314d1d2d81c5b9b72f
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Ni kan ta bort data från interna webbplatsaktiviteter, till exempel platstestni
 +++
 
 +++Kan jag ta bort en rapportserie?
-Det går inte att ta bort en rapportserie. En rapportsvit kan dock döljas för alla vyer i Adobe Analytics. Observera att serveranrop som skickas till en dold rapportsvit fortfarande räknas in i din månadsgräns. Se [Dölj rapportsviter](/help/admin/company/c-hide-report-suites.md) i användarhandboken för Admin om du vill ha mer information.
+Det går inte att ta bort en rapportserie. En rapportsvit kan dock döljas för alla vyer i Adobe Analytics. Observera att serveranrop som skickas till en dold rapportsvit fortfarande räknas in i din månadsgräns. Se [Dölj rapportsviter](/help/admin/admin/get-started/company/c-hide-report-suites.md) i användarhandboken för Admin om du vill ha mer information.
 +++
 
 +++Vilken behållare ska jag använda när jag använder segmentering? Sidvisning, besök eller besökare?

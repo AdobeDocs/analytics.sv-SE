@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: ff6184949d0d8c3093dd3fa1d9ac67e6645c6fb8
+source-git-commit: 9407c284313653f95456bb0f2d11f509c6937377
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 84%
@@ -20,6 +20,16 @@ ht-degree: 84%
    + [Vilket Adobe Analytics-verktyg ska jag använda?](admin/get-started/which-analytics-tool.md)
    + [Produktjämförelse och krav för analyser](admin/get-started/analytics-product-comparison.md)
    + [Systemkrav](admin/get-started/sys-reqs.md)
+   + Företagsinställningar {#company-settings}
+      + [Översikt över företagsinställningar](admin/get-started/company/c-company-settings.md)
+      + [Åtkomstnivåer](admin/get-started/company/feature-access-levels.md)
+      + [Webbtjänster](admin/get-started/company/web-services-admin.md)
+      + [Report Builder-rapporter](admin/get-started/company/report-builder-reports-admin.md)
+      + [Enkel inloggning](admin/get-started/company/single-signon-admin.md)
+      + [Väntande åtgärder](admin/get-started/company/pending-actions-admin.md)
+      + [Samprofilering](admin/get-started/company/co-branding-admin.md)
+      + [Dölj rapportsviter](admin/get-started/company/c-hide-report-suites.md)
+      + [Säkerhetshanteraren](admin/get-started/company/security-manager.md)
 + Administratörsverktyg {#admin-tools}
    + [Administratörsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
@@ -117,16 +127,6 @@ ht-degree: 84%
       + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
    + [Administratörsroller i Adobe Analytics](admin-console/admin-roles-in-analytics.md)
-+ Företagsinställningar {#company-settings}
-   + [Översikt över företagsinställningar](company/c-company-settings.md)
-   + [Åtkomstnivåer](company/feature-access-levels.md)
-   + [Webbtjänster](company/web-services-admin.md)
-   + [Report Builder-rapporter](company/report-builder-reports-admin.md)
-   + [Enkel inloggning](company/single-signon-admin.md)
-   + [Väntande åtgärder](company/pending-actions-admin.md)
-   + [Samprofilering](company/co-branding-admin.md)
-   + [Dölj rapportsviter](company/c-hide-report-suites.md)
-   + [Säkerhetshanteraren](company/security-manager.md)
 + Hantera rapportsviter {#manage-report-suites}
    + [Hanterare för rapportsvit](c-manage-report-suites/report-suites-admin.md)
    + [Sammanslagning och globala rapportsviter](c-manage-report-suites/rollup-report-suite.md)
