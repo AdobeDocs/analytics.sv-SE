@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 9407c284313653f95456bb0f2d11f509c6937377
+source-git-commit: b274cb4b51a1bdc54413a27f244a1522da903542
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 84%
 
 ---
@@ -30,6 +30,15 @@ ht-degree: 84%
       + [Samprofilering](admin/get-started/company/co-branding-admin.md)
       + [Dölj rapportsviter](admin/get-started/company/c-hide-report-suites.md)
       + [Säkerhetshanteraren](admin/get-started/company/security-manager.md)
++ Användarbehörigheter i Admin Console i Adobe {#admin-console}
+   + [Analyser i Adobe Admin Console](admin-console/home.md)
+   + Behörigheter {#permissions}
+      + [Analysbehörigheter i Admin Console](admin-console/permissions/summary-tables.md)
+      + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
+      + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
+      + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
+   + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
+   + [Administratörsroller i Adobe Analytics](admin-console/admin-roles-in-analytics.md)
 + Administratörsverktyg {#admin-tools}
    + [Administratörsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
@@ -118,15 +127,6 @@ ht-degree: 84%
       + [Ange variabeln Unik besökare](admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
       + [Användningsfall – extrahera besökar-ID:n](admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
    + [Videohantering](admin/video-management.md)
-+ Analyser i Adobe Admin Console {#admin-console}
-   + [Analyser i Adobe Admin Console](admin-console/home.md)
-   + Behörigheter {#permissions}
-      + [Analysbehörigheter i Admin Console](admin-console/permissions/summary-tables.md)
-      + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
-      + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
-      + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
-   + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
-   + [Administratörsroller i Adobe Analytics](admin-console/admin-roles-in-analytics.md)
 + Hantera rapportsviter {#manage-report-suites}
    + [Hanterare för rapportsvit](c-manage-report-suites/report-suites-admin.md)
    + [Sammanslagning och globala rapportsviter](c-manage-report-suites/rollup-report-suite.md)
