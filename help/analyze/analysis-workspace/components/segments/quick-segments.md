@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 86fc28375d62d9f1d71d0b239ea0e2038fae47e4
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
@@ -94,3 +94,10 @@ Om ett segment som bara är för projekt öppnas i [!UICONTROL Segment Builder]v
 Om du markerar&quot;Gör det här segmentet tillgängligt..&quot; och klicka **[!UICONTROL SAVE]** blir segmentet tillgängligt i den vänstra listan över järnvägskomponenter för användning i andra projekt. Den kan även delas med andra användare från segmenthanteraren.
 
 ![Endast projektet är markerat](assets/project-only-checked.png)
+
+## Känt fel
+
+1. Skapa ett snabbsegment med 2 poster och **[!UICONTROL Save]** det som Test1.
+1. Klicka **[!UICONTROL Save as]** och spara det här snabbsegmentet som Test2.
+1. Redigera snabbsegmentet Test2 och spara det igen som Test2.
+Observera att snabbsegmentet Test1 ändras av Test2.
