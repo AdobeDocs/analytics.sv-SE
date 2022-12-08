@@ -3,7 +3,7 @@ title: zip
 description: Fyll i dimensionen 'Postnummer' manuellt om inställningarna för rapportsviten tillåter det.
 feature: Variables
 exl-id: 1acf4bf7-3788-46bd-bcdb-9885c7b93b59
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
@@ -16,7 +16,7 @@ The `zip` kan du fylla i postnummer manuellt om [!UICONTROL Zip Option] i rappor
 
 >[!IMPORTANT]
 >
->Se till att [!UICONTROL Zip Option] i rapportsvitens inställningar är inställda på önskat värde. Du kan inte använda den här variabeln om [!UICONTROL geo zip] används alltid. Se [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
+>Se till att [!UICONTROL Zip Option] i rapportsvitens inställningar är inställda på önskat värde. Du kan inte använda den här variabeln om [!UICONTROL geo zip] används alltid. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
 
 ## Zippa med Adobe Analytics-tillägget
 

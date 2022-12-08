@@ -3,7 +3,7 @@ title: Alla söksidor rankade
 description: Bestäm vilken sida i en sökmotor en besökare klickade igenom till din webbplats.
 feature: Dimensions
 exl-id: 58ce54c3-cc45-4e84-a14d-5fec0b70f50f
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 35e7c8bccb8524fa5e87cae223f0854956c7528a
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Dimensionen&quot;Alla söksidor rankas&quot; ger dig insikt i vilken sida av sö
 
 ## Fyll den här dimensionen med data
 
-För att få den här dimensionen att fungera måste rapportsviten ha [Interna URL-filter](/help/admin/admin/internal-url-filter-admin.md) korrekt konfigurerad. AppMeasurement fyller automatiskt i den här dimensionen utan att några implementeringskodändringar görs.
+För att få den här dimensionen att fungera måste rapportsviten ha [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) korrekt konfigurerad. AppMeasurement fyller automatiskt i den här dimensionen utan att några implementeringskodändringar görs.
 
 ## Dimensioner
 

@@ -3,7 +3,7 @@ title: Felsöka JavaScript-implementering
 description: Lär dig mer om vanliga problem och de bästa sätten att felsöka JavaScript-implementeringen.
 feature: Implementation Basics
 exl-id: e7181e78-65bf-446d-8d5c-b47323dbec1d
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Ibland är det önskvärt att ta med ett enkelt eller dubbelt citattecken i en s
 
 ### Undvik typografiska citattecken
 
-Vissa program konverterar automatiskt neutrala citattecken (`"..."` och `'...'`) till typografiska citattecken (`“...”` och `‘...’`). Undvik att använda dokumentredigerare (t.ex. Microsoft Word) eller skicka kodfragment via e-post. Kurmatecken kan inte användas i JavaScript.
+Vissa program konverterar automatiskt neutrala citattecken (`"..."` och `'...'`) till typografiska citattecken (`"..."` och `'...'`). Undvik att använda dokumentredigerare (t.ex. Microsoft Word) eller skicka kodfragment via e-post. Kurmatecken kan inte användas i JavaScript.
 
 ## Referera till Analytics-objektet
 
@@ -87,7 +87,7 @@ Dessa två variabelvärden betraktas som separata i Adobe Analytics. Det tomma u
 Implementeringar som fyller i många variabler med långa värden kan ibland leda till trunkerade bildförfrågningar. Vissa äldre webbläsare, t.ex. Internet Explorer, har en begränsning på 2 083 tecken för bildförfrågnings-URL:er. Om din organisation har mycket långa bildbegäranden kan du pröva följande:
 
 * **Använda Experience Cloud ID-tjänsten**: AppMeasurement Libraries 1.4.1 och senare skickar automatiskt bildbegäranden med HTTP-POST om de är för långa. Data som skickas med den här metoden trunkeras inte oavsett längd. Se [Adobe Experience Cloud ID-tjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html) för mer information.
-* **Använd bearbetningsregler**: [Bearbetar regler](/help/admin/admin/c-processing-rules/processing-rules.md) kan kopiera värden från en variabel till en annan. Med den här metoden kan du inte ange samma värde i flera variabler. Exempel:
+* **Använd bearbetningsregler**: [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) kan kopiera värden från en variabel till en annan. Med den här metoden kan du inte ange samma värde i flera variabler. Exempel:
 
    Kör alltid:<br>
 Skriv över värdet för prop1 med eVar1<br>

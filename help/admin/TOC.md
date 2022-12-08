@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+source-git-commit: 89d5c1e59e0cf5167eb7858caa0f9090d527a9c4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 83%
+source-wordcount: '680'
+ht-degree: 82%
 
 ---
 
@@ -42,28 +42,6 @@ ht-degree: 83%
 + Administratör för analyser {#admin-tools}
    + [Administratörsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
-   + Report Suite-hanterare {#manage-report-suites}
-      + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
-      + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
-      + [Skapa en sammanslagen rapportsvit](admin/c-manage-report-suites/t-rollups.md)
-      + [Skapa en rapportsvitgrupp](admin/c-manage-report-suites/t-create-rs-group.md)
-      + [Spara en sökning i en rapportsvit](admin/c-manage-report-suites/t-report-suite-saved-search.md)
-      + [Inställningar för enskild rapportsvit](admin/c-manage-report-suites/individual-rs-settings.md)
-      + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
-      + Ny rapportsvit {#new-report-suite}
-         + [Skapa en rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
-         + [Ny rapportsvit – inställningar](admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
-         + [Inställningar som inte kopierats från en källrapportssvit](admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
-      + Rapportsvitmallar {#report-suite-templates}
-         + [Översikt över rapportsvitmallar](admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
-         + [Aggregatorportal](admin/c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
-         + [Handel](admin/c-manage-report-suites/c-report-suite-templates/commerce-admin.md)
-         + [Innehåll och media](admin/c-manage-report-suites/c-report-suite-templates/content-media.md)
-         + [Standardmall](admin/c-manage-report-suites/c-report-suite-templates/default-rs-template.md)
-         + [Finansiella tjänster](admin/c-manage-report-suites/c-report-suite-templates/financial-services.md)
-         + [Jobbportal](admin/c-manage-report-suites/c-report-suite-templates/job-portal.md)
-         + [Generering av leads](admin/c-manage-report-suites/c-report-suite-templates/lead-generation.md)
-         + [Supportmedia](admin/c-manage-report-suites/c-report-suite-templates/support-media.md)
    + Borttagning av bot {#bot-removal}
       + [Borttagning av bot](admin/bot-removal/bot-removal.md)
       + [Översikt över botregler](admin/bot-removal/bot-rules.md)
@@ -79,52 +57,76 @@ ht-degree: 83%
       + [Marknadsförande eVars](admin/conversion-var-admin/merchandising-evars.md)
    + [Valutakoder](admin/currency.md)
    + [Anpassade rapportbeskrivningar](admin/custom-desc-admin.md)
-   + [Anpassa kalender](admin/custom-calendar.md)
    + [Datakällor](admin/data-sources.md)
    + [Standardmått](admin/default-metrics.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Hitta metoder](admin/finding-methods.md)
-   + [Allmänna kontoinställningar](admin/general-acct-settings-admin.md)
-   + [Interna URL-filter](admin/internal-url-filter-admin.md)
    + [Loggar](admin/logs.md)
    + [Marknadsföringskanaler](admin/marketing-channels-admin.md)
-   + [Anpassa menyer](admin/customize-menus.md)
    + [Måttsynlighet](admin/metric-visibility.md)
    + [Apphantering](admin/mobile-management.md)
-   + Betald sökdetektering {#paid-search-detection}
-      + [Översikt över betald sökdetektering](admin/paid-search-detection/paid-search-detection.md)
-      + [Konfigurera betald sökdetektering](admin/paid-search-detection/t-paid-search-detection.md)
    + [Inställningshanteraren](admin/preferences-manager.md)
    + [Sekretessinställningar](admin/privacy-settings.md)
    + [Sekretessrapportering](admin/privacy-reporting.md)
-   + Behandlingsregler {#processing-rules}
-      + [Översikt över behandlingsregler](admin/c-processing-rules/processing-rules.md)
-      + Konfiguration av behandlingsregler {#processing-rules-configuration}
-         + [Så fungerar behandlingsregler](admin/c-processing-rules/c-processing-rules-configuration/processing-rules-about.md)
-         + [Skapa behandlingsregler](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md)
-         + [Visa aktiva behandlingsregler](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules-view.md)
-         + [Visa historik för behandlingsregel](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rule-view-history.md)
-         + [Återställa behandlingsregler](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules-restore.md)
-         + [Kopiera behandlingsregler till en annan rapportsvit](admin/c-processing-rules/c-processing-rules-configuration/t-processing-rules-copy-to-rs.md)
-      + [Tillgängliga dimensioner för behandlingsregler](admin/c-processing-rules/processing-rule-dimensions.md)
-      + Exempel på behandlingsregler {#processing-rules-examples}
-         + [Exempel på behandlingsregler](admin/c-processing-rules/processing-rules-examples/processing-rules-examples.md)
-         + [Fylla i ett kampanj-ID från en frågesträngsparameter](admin/c-processing-rules/processing-rules-examples/processing-rules-populate-campaign-id.md)
-         + [Ange produktvyhändelsen från sidan för produktöversikt](admin/c-processing-rules/processing-rules-examples/setting-the-product-view-event.md)
-         + [Lägg till en underkategori genom att sammanfoga kategorin och sidnamnet](admin/c-processing-rules/processing-rules-examples/subcategory-concatenating.md)
-         + [Bestäm en sökväg genom att kopiera ett eVar-värde till ett projekt](admin/c-processing-rules/processing-rules-examples/processing-rules-determining-path.md)
-         + [Rensa värden i en rapport](admin/c-processing-rules/processing-rules-examples/clean-up-values-in-a-report.md)
-         + [Fylla i interna söktermer med en frågesträngsparameter](admin/c-processing-rules/processing-rules-examples/processing-rules-populating-internal-search.md)
-         + [Kopiera en kontextdatavariabel till en eVar](admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md)
-         + [Ange en händelse med hjälp av en kontextdatavariabel](admin/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md)
-         + [Ta bort en händelse från en träff](admin/c-processing-rules/processing-rules-examples/processing-rules-remove-event.md)
-      + [Tips och tricks för regler](admin/c-processing-rules/processing-rules-tips.md)
    + Realtidsrapporter {#real-time-reports}
       + [Översikt över realtidsrapporter](admin/realtime/realtime.md)
       + [Konfiguration av rapporter i realtid](admin/realtime/t-realtime-admin.md)
       + [Mätvärden och dimensioner som stöds i realtid](admin/realtime/realtime-metrics.md)
    + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
    + [Schemalagd rapportkö](admin/scheduled-reports-admin.md)
+   + Report Suite-hanterare {#manage-report-suites}
+      + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
+      + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
+      + [Spara en sökning i en rapportsvit](admin/c-manage-report-suites/t-report-suite-saved-search.md)
+      + [Inställningar för enskild rapportsvit](admin/c-manage-report-suites/individual-rs-settings.md)
+      + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
+      + Ny rapportsvit {#c-new-report-suite}
+         + [Skapa en rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
+         + [Skapa en sammanslagen rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-rollups.md)
+         + [Skapa en rapportsvitgrupp](admin/c-manage-report-suites/c-new-report-suite/t-create-rs-group.md)
+         + [Ny rapportsvit – inställningar](admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
+         + [Inställningar som inte kopierats från en källrapportssvit](admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
+      + Rapportsvitmallar {#report-suite-templates}
+         + [Översikt över rapportsvitmallar](admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
+         + [Aggregatorportal](admin/c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
+         + [Handel](admin/c-manage-report-suites/c-report-suite-templates/commerce-admin.md)
+         + [Innehåll och media](admin/c-manage-report-suites/c-report-suite-templates/content-media.md)
+         + [Standardmall](admin/c-manage-report-suites/c-report-suite-templates/default-rs-template.md)
+         + [Finansiella tjänster](admin/c-manage-report-suites/c-report-suite-templates/financial-services.md)
+         + [Jobbportal](admin/c-manage-report-suites/c-report-suite-templates/job-portal.md)
+         + [Generering av leads](admin/c-manage-report-suites/c-report-suite-templates/lead-generation.md)
+         + [Supportmedia](admin/c-manage-report-suites/c-report-suite-templates/support-media.md)
+      + Redigera inställningar för en rapportserie {#edit-report-suite}
+         + Allmänt {#report-suite-general}
+            + [Allmänna kontoinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
+            + [Interna URL-filter](admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md)
+            + Betald sökdetektering {#paid-search-detection}
+               + [Översikt över betald sökdetektering](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md)
+               + [Konfigurera betald sökdetektering](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/t-paid-search-detection.md)
+            + [Anpassa menyer](admin/c-manage-report-suites/c-edit-report-suites/general/customize-menus.md)
+            + [Anpassa kalender](admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md)
+            + Behandlingsregler {#c-processing-rules}
+               + [Översikt över behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md)
+               + Konfiguration av behandlingsregler {#c-processing-rules-configuration}
+                  + [Så fungerar behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/processing-rules-about.md)
+                  + [Skapa behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules.md)
+                  + [Visa aktiva behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-view.md)
+                  + [Visa historik för behandlingsregel](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rule-view-history.md)
+                  + [Återställa behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-restore.md)
+                  + [Kopiera behandlingsregler till en annan rapportsvit](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-copy-to-rs.md)
+                  + [Tillgängliga dimensioner för behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rule-dimensions.md)
+               + Exempel på behandlingsregler {#processing-rules-examples}
+                  + [Exempel på behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-examples.md)
+                  + [Fylla i ett kampanj-ID från en frågesträngsparameter](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-populate-campaign-id.md)
+                  + [Ange produktvyhändelsen från sidan för produktöversikt](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/setting-the-product-view-event.md)
+                  + [Lägg till en underkategori genom att sammanfoga kategorin och sidnamnet](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/subcategory-concatenating.md)
+                  + [Bestäm en sökväg genom att kopiera ett eVar-värde till ett projekt](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-determining-path.md)
+                  + [Rensa värden i en rapport](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/clean-up-values-in-a-report.md)
+                  + [Fylla i interna söktermer med en frågesträngsparameter](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-populating-internal-search.md)
+                  + [Kopiera en kontextdatavariabel till en eVar](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data.md)
+                  + [Ange en händelse med hjälp av en kontextdatavariabel](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md)
+                  + [Ta bort en händelse från en träff](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-remove-event.md)
+               + [Tips och tricks för regler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-tips.md)
    + Vidarebefordran på serversidan {#server-side-forwarding}
       + [Översikt över vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf.md)
       + [GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-gdpr.md)

@@ -3,7 +3,7 @@ title: transactionID
 description: Använd den här variabeln för att länka samman online- och offlinedata.
 feature: Variables
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
-source-git-commit: e42c125da0c48ff01267e3a18aaec8374652809e
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -16,7 +16,7 @@ The `transactionID` identifierar en transaktion unikt så att träffen kan koppl
 
 >[!NOTE]
 >
->Se till att [!UICONTROL Transaction ID Storage] aktiveras i en rapportsvit innan variabeln används. Se [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
+>Se till att [!UICONTROL Transaction ID Storage] aktiveras i en rapportsvit innan variabeln används. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin om du vill ha mer information.
 
 När du anger `transactionID` Vid en träff tar Adobe en ögonblicksbild av alla analysvariabler som angetts eller sparats vid den tidpunkten. Data som överförs via datakällor med ett matchande transaktions-ID är permanent knutna till dessa variabelvärden.
 

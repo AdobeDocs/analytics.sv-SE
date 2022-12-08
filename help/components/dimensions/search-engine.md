@@ -3,7 +3,7 @@ title: Sökmotor
 description: Sökmotorn som besökaren använde för att nå din webbplats.
 feature: Dimensions
 exl-id: 2815f1fa-d938-4d2b-b864-c4ed834f3ed3
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Dimensionen Sökmotor rapporterar sökmotorer som besökarna använder för att 
 * Den refererande domänen känns igen av Adobe som en giltig sökmotor.
 * Det finns en nyckelordsfrågesträngsparameter i den refererande URL:en. Frågesträngsparametern kan vara tom (vilket är fallet med flera sökmotorer på grund av sekretesspraxis).
 
-Om du vill skilja på betald och naturlig sökning [Påvisande av betald sökning](/help/admin/admin/paid-search-detection/paid-search-detection.md) krävs. Det finns flera dimensioner för sökmotorer:
+Om du vill skilja på betald och naturlig sökning [Påvisande av betald sökning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md) krävs. Det finns flera dimensioner för sökmotorer:
 
 * **Sökmotor**: Sökmotorn som används för att nå din webbplats, oavsett om den är betald eller naturlig.
 * **Sökmotor - betald**: Sökmotorn som användes för att nå din webbplats, vilket matchade betald sökningsidentifiering.
@@ -25,7 +25,7 @@ Om du vill skilja på betald och naturlig sökning [Påvisande av betald söknin
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till flera uppslagstabeller som är interna för Adobe. Varje värde baseras på [hänvisare](referrer.md) av träffen, som är beroende av [Interna URL-filter](/help/admin/admin/internal-url-filter-admin.md). Kontrollera att referensdimensionen och interna URL-filter är korrekt konfigurerade.
+Den här dimensionen refererar till flera uppslagstabeller som är interna för Adobe. Varje värde baseras på [hänvisare](referrer.md) av träffen, som är beroende av [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). Kontrollera att referensdimensionen och interna URL-filter är korrekt konfigurerade.
 
 ## Dimensioner
 

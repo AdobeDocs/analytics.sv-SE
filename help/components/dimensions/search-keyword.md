@@ -3,7 +3,7 @@ title: Söknyckelord
 description: Det söknyckelord som besökaren använde för att nå din webbplats.
 feature: Dimensions
 exl-id: 5a1236a6-f94b-4679-906a-b539afe36887
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -23,7 +23,7 @@ En referent måste uppfylla båda följande för att kunna klassificeras som ett
 * Den refererande domänen känns igen av Adobe som en giltig [Sökmotor](search-engine.md);
 * Det finns en nyckelordsfrågesträngsparameter i den refererande URL:en. Om nyckelordsfrågesträngen finns men inte innehåller något värde grupperas den under dimensionsobjektet `"Keyword unavailable"`.
 
-Om du vill skilja på betald och naturlig sökning [Påvisande av betald sökning](/help/admin/admin/paid-search-detection/paid-search-detection.md) krävs. Det finns flera dimensioner för söknyckelord:
+Om du vill skilja på betald och naturlig sökning [Påvisande av betald sökning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md) krävs. Det finns flera dimensioner för söknyckelord:
 
 * **Söknyckelord**: Söknyckelordet som används för att nå din webbplats, oavsett om det är betalt eller naturligt.
 * **Söknyckelord - betalt**: Det söknyckelord som användes för att nå din webbplats, vilket matchade betald sökningsidentifiering.
@@ -31,7 +31,7 @@ Om du vill skilja på betald och naturlig sökning [Påvisande av betald söknin
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till flera uppslagstabeller som är interna för Adobe. Varje värde baseras på [hänvisare](referrer.md) av träffen, som är beroende av [Interna URL-filter](/help/admin/admin/internal-url-filter-admin.md). Kontrollera att referensdimensionen och interna URL-filter är korrekt konfigurerade.
+Den här dimensionen refererar till flera uppslagstabeller som är interna för Adobe. Varje värde baseras på [hänvisare](referrer.md) av träffen, som är beroende av [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). Kontrollera att referensdimensionen och interna URL-filter är korrekt konfigurerade.
 
 ## Dimensioner
 

@@ -4,10 +4,10 @@ keywords: sekretess
 title: Sekretessöversikt
 feature: Privacy
 exl-id: 71c83106-a047-47d7-9a70-4a24595e3d0a
-source-git-commit: d4eda940f59a9b4e81d87be5aa29949a590f7b6b
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '791'
+ht-degree: 92%
 
 ---
 
@@ -91,7 +91,7 @@ Adobe Analytics samlar in följande data:
   </tr> 
   <tr> 
    <td colname="col1"> Europa </td> 
-   <td colname="col2"> Adobe har aktiverat inställningen IP-Obfuscation: Aktiverad - IP Borttagen (x.x.x.x) som standard för alla kunder med en rapportsvit som angetts i EMEA. Med den här inställningen ersätts IP-adressen helt med värdet (x.x.x.x) efter geosökning och är inte längre tillgänglig som en datapunkt. <p>Den här grundläggande ersättningsmetoden kan inte bakåtkompileras till en unik, specifik IP-adress. Varken kunden eller Adobe kan komma åt IP-adressen. den är irreversibelt anonymiserad. Mer information om andra inställningar för IP-döljning finns i </p> <p> <a href="/help/admin/admin/general-acct-settings-admin.md">Allmänna kontoinställningar</a> i användarhandboken för Admin.</p> </td>
+   <td colname="col2"> Adobe har aktiverat inställningen IP-Obfuscation: Aktiverad - IP Borttagen (x.x.x.x) som standard för alla kunder med en rapportsvit som angetts i EMEA. Med den här inställningen ersätts IP-adressen helt med värdet (x.x.x.x) efter geosökning och är inte längre tillgänglig som en datapunkt. <p>Den här grundläggande ersättningsmetoden kan inte bakåtkompileras till en unik, specifik IP-adress. Varken kunden eller Adobe kan komma åt IP-adressen. den är irreversibelt anonymiserad. Mer information om andra inställningar för IP-döljning finns i </p> <p> <a href="/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md">Allmänna kontoinställningar</a> i användarhandboken för Admin.</p> </td>
   </tr> 
   <tr> 
    <td colname="col1"> Globalt </td> 

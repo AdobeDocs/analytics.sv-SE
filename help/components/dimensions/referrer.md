@@ -3,7 +3,7 @@ title: Referent
 description: Den URL som besökaren var på innan han klickade igenom till din webbplats.
 feature: Dimensions
 exl-id: 146f0327-c73c-40f5-8cc1-584e31d163a2
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Dimensionen Referent visar vilka URL:er besökarna var på när de klickade igen
 
 >[!IMPORTANT]
 >
->Du måste konfigurera rapportsvitens [Interna URL-filter](/help/admin/admin/internal-url-filter-admin.md) om du vill använda den här dimensionen. Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
+>Du måste konfigurera rapportsvitens [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) om du vill använda den här dimensionen. Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
 
 Samma rapport kan visa olika resultat mellan Analysis Workspace och Data warehouse. Analysis Workspace rapporterar referenten för varje enskild sida, exklusive värden som matchar interna URL-filter. data warehouse rapporterar bara den första referenten av besöket och ignorerar interna URL-filter.
 
@@ -25,7 +25,7 @@ Samma rapport kan visa olika resultat mellan Analysis Workspace och Data warehou
 Den här dimensionen kräver konfiguration i analysgränssnittet och data i bildbegäranden.
 
 * I implementeringen hämtar den här dimensionen data från [`r` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med JavaScript-variabeln `document.referrer` i webbläsaren. Du kan använda [`referrer`](/help/implement/vars/page-vars/referrer.md) variabelåsidosättning för att manuellt ange den. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt. Om du använder en datainsamlingsmetod utanför AppMeasurement (till exempel via API:t) måste du ta med `r` frågesträngsparameter i bildbegäranden.
-* I Analytics-gränssnittet måste du konfigurera rapportsvitens [Interna URL-filter](/help/admin/admin/internal-url-filter-admin.md). Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
+* I Analytics-gränssnittet måste du konfigurera rapportsvitens [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). Om du inte konfigurerar interna URL-filter kan det antingen innehålla interna URL:er eller förhindra att externa URL:er visas.
 
 ## Dimensioner
 

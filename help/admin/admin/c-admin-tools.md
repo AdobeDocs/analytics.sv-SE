@@ -3,7 +3,7 @@ description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 feature: Admin Tools
 exl-id: 1f31749f-10ce-4cff-81fb-141b37824c5f
-source-git-commit: 72c35538b0e5d0ffaa103b3159b4e9835a6c1602
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 34%
@@ -24,22 +24,22 @@ ht-degree: 34%
 + [Konverteringsvariabler (eVar)](conversion-var-admin/conversion-var-admin.md)
 + [Valutakoder](currency.md)
 + [Anpassade rapportbeskrivningar](custom-desc-admin.md)
-+ [Anpassa kalender](custom-calendar.md)
++ [Anpassa kalender](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md)
 + [Datakällor](data-sources.md)
 + [Standardmått](default-metrics.md)
 + [Exkludera efter IP-adress](exclude-ip.md)
 + [Sökmetoder](finding-methods.md)
-+ [Allmänna kontoinställningar](general-acct-settings-admin.md)
-+ [Interna URL-filter](internal-url-filter-admin.md)
++ [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
++ [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md)
 + [Loggar](logs.md)
 + [Marknadsföringskanaler](marketing-channels-admin.md)
-+ [Menyanpassning](customize-menus.md)
++ [Menyanpassning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/customize-menus.md)
 + [Måttsynlighet](metric-visibility.md)
 + [Mobilhantering](mobile-management.md)
-+ [Översikt över betald sökdetektering](paid-search-detection/paid-search-detection.md)
++ [Översikt över betald sökdetektering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md)
 + [Inställningshanteraren](preferences-manager.md)
 + [Sekretessinställningar](privacy-settings.md)
-+ [Översikt över behandlingsregler](c-processing-rules/processing-rules.md)
++ [Översikt över behandlingsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md)
 + [Översikt över realtidsrapporter](realtime/realtime.md)
 + [Schemalagd rapportkö](scheduled-reports-admin.md)
 + [Översikt över vidarebefordran på serversidan](c-server-side-forwarding/ssf.md)

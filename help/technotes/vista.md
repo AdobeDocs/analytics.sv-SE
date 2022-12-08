@@ -1,13 +1,13 @@
 ---
 title: VISTA-regler i Adobe Analytics
 description: Läs mer om VISTA-regler och deras funktioner.
-source-git-commit: 1e2284fd4a62816b27b33a91f3bee2575a852107
+exl-id: fab2acc3-b037-48f9-bb20-625ccb75b4cc
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
 
 ---
-
 
 # VISTA-regler i Adobe Analytics
 
@@ -21,7 +21,7 @@ Några vanliga användningsområden för VISTA-reglerna är:
 * Duplicera variabelvärden till andra variabler
 * Överför filer till en FTP-plats i Adobe som kan påverka variabelvärden
 
-Många användningsområden för VISTA-regler finns redan i [Bearbetar regler](/help/admin/admin/c-processing-rules/processing-rules.md), [Punktregler](/help/admin/admin/bot-removal/bot-rules.md), [Virtuella rapportsviter](/help/components/vrs/vrs-about.md)eller bara uppdatera er Adobe Analytics-implementering. Adobe rekommenderar endast VISTA-regler som en sista utväg.
+Många användningsområden för VISTA-regler finns redan i [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md), [Punktregler](/help/admin/admin/bot-removal/bot-rules.md), [Virtuella rapportsviter](/help/components/vrs/vrs-about.md)eller bara uppdatera er Adobe Analytics-implementering. Adobe rekommenderar endast VISTA-regler som en sista utväg.
 
 >[!IMPORTANT]
 >

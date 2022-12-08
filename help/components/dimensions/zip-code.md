@@ -3,7 +3,7 @@ title: Postnummer
 description: Besökarens postnummer.
 feature: Dimensions
 exl-id: 597619f8-a581-4491-beb2-c14b1f7b7bec
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Denna dimension är unik eftersom den innehåller flera sätt att fylla den med 
 * Ange postnumret direkt med `zip` variabel, eller
 * Konfigurera den för att dra nytta av data för geosegmentering.
 
-The [!UICONTROL Zip option] under [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) styr hur du vill fylla i den här dimensionen.
+The [!UICONTROL Zip option] under [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) styr hur du vill fylla i den här dimensionen.
 
 >[!IMPORTANT]
 >

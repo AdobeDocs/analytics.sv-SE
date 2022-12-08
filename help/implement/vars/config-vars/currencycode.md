@@ -3,7 +3,7 @@ title: Vad är variabeln currencyCode och hur använder jag den?
 description: För e-handelswebbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
-source-git-commit: f659d1bde361550928528c7f2a70531e3ac88047
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -16,7 +16,7 @@ För webbplatser som använder e-handel är intäkter och valuta en viktig del a
 
 Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges i [`products`](../page-vars/products.md) variabel och alla händelser listade som Currency i [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) under Rapportsvitens inställningar.
 
-* If `currencyCode` är inte definierat, antar Adobe att alla valutavärden är rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/general-acct-settings-admin.md) i Rapportsvitens inställningar för att se rapportsvitens valuta.
+* If `currencyCode` är inte definierat, antar Adobe att alla valutavärden är rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i Rapportsvitens inställningar för att se rapportsvitens valuta.
 * If `currencyCode` är definierad och matchar rapportsvitens valuta, ingen valutakonvertering används.
 * If `currencyCode` är definierad och skiljer sig från rapportsvitens valuta, använder Adobe en valutakonvertering som baseras på den aktuella dagens växelkurs. Adobe samarbetar med [XE](https://xe.com) för att konvertera valuta varje dag. Alla värden som lagras i rapportsviten finns i rapportsvitens valuta.
 * If `currencyCode` är inställt på ett ogiltigt värde, **hela träffen tas bort, vilket orsakar dataförlust.** Kontrollera att variabeln är korrekt definierad när den används.

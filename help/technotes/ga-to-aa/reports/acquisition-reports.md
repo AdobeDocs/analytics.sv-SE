@@ -3,7 +3,7 @@ title: Anskaffningsrapporter i Adobe Analytics
 description: Lär dig hur du skapar kundvärvningsbaserade rapporter med Analysis Workspace.
 feature: Third-party Integration
 exl-id: 2929d34b-8eb0-4105-a49c-02d536929fe0
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 0%
@@ -127,7 +127,7 @@ Det går att samla in UTM-parametrar i Adobe Analytics med hjälp av anpassade v
 
 ## Kampanjer - Betalda nyckelord
 
-Rapporten med betalda nyckelord visar hur varje nyckelord fungerar när en besökare klickar på en betalsöklänk från en sökmotor. The **Söknyckelord - Betald** finns i Analysis Workspace, men kräver en engångsinstallation av betald sökidentifiering för att samla in data. Se [Betalsökningsidentifiering](/help/admin/admin/paid-search-detection/paid-search-detection.md) i användarhandboken för Admin om du vill ha mer information om installationen.
+Rapporten med betalda nyckelord visar hur varje nyckelord fungerar när en besökare klickar på en betalsöklänk från en sökmotor. The **Söknyckelord - Betald** finns i Analysis Workspace, men kräver en engångsinstallation av betald sökidentifiering för att samla in data. Se [Betalsökningsidentifiering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md) i användarhandboken för Admin om du vill ha mer information om installationen.
 
 1. På menyn Komponenter letar du reda på **Söknyckelord - Betald** och dra den till det stora frihandsritbordet med etiketten &#39;Släpp en Dimension här&#39;.
 2. Dra önskade mätvärden till arbetsytan bredvid de automatiskt skapade **Förekomster** mätvärden. Se [Guide för översättning av mått](common-metrics.md) om du vill ha mer information om hur du får fram respektive mätvärden.

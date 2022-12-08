@@ -3,7 +3,7 @@ description: Beskrivningar av rapporttyper och jämförelse av globala rapportsv
 title: Rapportera metoder för programsvit
 feature: Report Suite Settings
 exl-id: 97bdc9bd-2212-436b-b3b4-ec518624f9e6
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+source-git-commit: e8cbf24f6e0c829dadb2a6e7db502d0e8ba1f07f
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Att använda virtuella rapportsviter i stället för taggning i flera sviter är
 >
 >[!DNL Reports & Analytics] är det enda verktyget som stöder sammanslagningsrapporter, och Adobe rekommenderar inte längre att du använder sammanslagningar. Överväg i stället att använda en global rapportserie med taggar för flera programsviter eller virtuella rapportsviter.
 
-En sammanslagningsrapport är en enkel sammanställning av data från flera rapportsviter, utan borttagning av dubbletter eller någon segmentering eller datauppdelning. För sammanslagningar krävs ingen kodimplementering. Om du vill använda sammanslagningsrapporter [implementera underordnade rapportsviter](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) och sedan [kombinera dem i en sammanställningsrapport](/help/admin/admin/c-manage-report-suites/t-rollups.md) använda [!UICONTROL Admin Tools].
+En sammanslagningsrapport är en enkel sammanställning av data från flera rapportsviter, utan borttagning av dubbletter eller någon segmentering eller datauppdelning. För sammanslagningar krävs ingen kodimplementering. Om du vill använda sammanslagningsrapporter [implementera underordnade rapportsviter](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) och sedan [kombinera dem i en sammanställningsrapport](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-rollups.md) använda [!UICONTROL Admin Tools].
 
 Sammanslagningsrapporter är kostnadsfria: den underordnade rapportsviten har egna serveranrop, men sammanslagningen medför inga ytterligare anrop. Sammanslagning är en äldre funktion och har många begränsningar.
 

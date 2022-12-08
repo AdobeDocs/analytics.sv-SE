@@ -4,7 +4,7 @@ description: Dimensionerna och måtten som Rapporter och analyser använder för
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: e3c23d17-fc4b-479e-9c48-6f27ef0de4e3
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: 35e7c8bccb8524fa5e87cae223f0854956c7528a
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -19,10 +19,10 @@ Varje rapport i Rapporter och analyser använder en dedikerad dimension och stan
 
 >[!NOTE]
 >
->Din rapportmeny kan se annorlunda ut beroende på vilka anpassningar en administratör i organisationen har gjort. Se [Anpassa menyer](/help/admin/admin/customize-menus.md) i användarhandboken för Admin.
+>Din rapportmeny kan se annorlunda ut beroende på vilka anpassningar en administratör i organisationen har gjort. Se [Anpassa menyer](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/customize-menus.md) i användarhandboken för Admin.
 
 >[!IMPORTANT]
->Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som ligger till grund för rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
 
 ## Mätvärden för webbplats
 
@@ -119,7 +119,7 @@ Innehåller rapporter som gör att du kan se sökdata för besökare.
 
 ## Trafikkällor
 
-Innehåller en rapport som ger en inblick i var besökarna kom från innan de kom till er webbplats. Rapporterna fungerar inte korrekt om du inte anger rätt [Interna URL-filter](../../admin/admin/internal-url-filter-admin.md) under rapportsvitens inställningar.
+Innehåller en rapport som ger en inblick i var besökarna kom från innan de kom till er webbplats. Rapporterna fungerar inte korrekt om du inte anger rätt [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) under rapportsvitens inställningar.
 
 * Sök nyckelord - alla: Använder [Söknyckelord](/help/components/dimensions/search-keyword.md) dimension.
 * Söknyckelord - betalt: Använder [Söknyckelord - betalt](/help/components/dimensions/search-keyword.md) dimension.
@@ -230,4 +230,4 @@ Innehåller mål som du har skapat. Se [Målgrupper](targets.md) för mer inform
 
 >[!NOTE]
 >
->Om du inte hittar rapporten på den här hjälpsidan kan det bero på att administratören har ändrat namn på eller ändrat mappar. Se [Anpassa menyer](/help/admin/admin/customize-menus.md) i användarhandboken för Admin.
+>Om du inte hittar rapporten på den här hjälpsidan kan det bero på att administratören har ändrat namn på eller ändrat mappar. Se [Anpassa menyer](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/customize-menus.md) i användarhandboken för Admin.

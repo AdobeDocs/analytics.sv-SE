@@ -3,7 +3,7 @@ title: linkInternalFilters
 description: Använd variabeln linkInternalFilters om du vill ha hjälp med automatisk spårning av avslutningslänk.
 feature: Variables
 exl-id: eaa6e64a-ebd5-4e6b-913f-1a6c315579c8
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Aktivitetskartan använder den här variabeln för att avgöra vilka länkar som
 
 >[!NOTE]
 >
->`linkInternalFilters` och [Interna URL-filter](/help/admin/admin/internal-url-filter-admin.md) är separata funktioner som fyller olika syften. The `linkInternalFilters` variabeln fungerar specifikt för att avsluta länkspårning. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
+>`linkInternalFilters` och [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md) är separata funktioner som fyller olika syften. The `linkInternalFilters` variabeln fungerar specifikt för att avsluta länkspårning. Interna URL-filter är en administratörsinställning som hjälper dig med trafikkällans dimensioner, som Referensdomän.
 
 ## Avsluta länkar i Web SDK
 
