@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: b274cb4b51a1bdc54413a27f244a1522da903542
+source-git-commit: cd680e8e2e8a30e100a713e0943978f8d798143a
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 84%
@@ -17,19 +17,19 @@ ht-degree: 84%
 + [Administratörshandbok för Analytics](home.md)
 + [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Analytics-administration {#admin-overview}
-   + [Vilket Adobe Analytics-verktyg ska jag använda?](admin/get-started/which-analytics-tool.md)
-   + [Produktjämförelse och krav för analyser](admin/get-started/analytics-product-comparison.md)
-   + [Systemkrav](admin/get-started/sys-reqs.md)
+   + [Vilket Adobe Analytics-verktyg ska jag använda?](get-started/which-analytics-tool.md)
+   + [Produktjämförelse och krav för analyser](get-started/analytics-product-comparison.md)
+   + [Systemkrav](get-started/sys-reqs.md)
    + Företagsinställningar {#company-settings}
-      + [Översikt över företagsinställningar](admin/get-started/company/c-company-settings.md)
-      + [Åtkomstnivåer](admin/get-started/company/feature-access-levels.md)
-      + [Webbtjänster](admin/get-started/company/web-services-admin.md)
-      + [Report Builder-rapporter](admin/get-started/company/report-builder-reports-admin.md)
-      + [Enkel inloggning](admin/get-started/company/single-signon-admin.md)
-      + [Väntande åtgärder](admin/get-started/company/pending-actions-admin.md)
-      + [Samprofilering](admin/get-started/company/co-branding-admin.md)
-      + [Dölj rapportsviter](admin/get-started/company/c-hide-report-suites.md)
-      + [Säkerhetshanteraren](admin/get-started/company/security-manager.md)
+      + [Översikt över företagsinställningar](get-started/company/c-company-settings.md)
+      + [Åtkomstnivåer](get-started/company/feature-access-levels.md)
+      + [Webbtjänster](get-started/company/web-services-admin.md)
+      + [Report Builder-rapporter](get-started/company/report-builder-reports-admin.md)
+      + [Enkel inloggning](get-started/company/single-signon-admin.md)
+      + [Väntande åtgärder](get-started/company/pending-actions-admin.md)
+      + [Samprofilering](get-started/company/co-branding-admin.md)
+      + [Dölj rapportsviter](get-started/company/c-hide-report-suites.md)
+      + [Säkerhetshanteraren](get-started/company/security-manager.md)
 + Användarbehörigheter i Admin Console i Adobe {#admin-console}
    + [Analyser i Adobe Admin Console](admin-console/home.md)
    + Behörigheter {#permissions}
