@@ -3,7 +3,7 @@ title: Globala rapportsviter i Adobe Analytics
 description: Förstå fördelarna och kraven med att använda ett globalt rapporteringsprogram.
 feature: Implementation Basics
 exl-id: fa949b1e-80bd-41cf-a294-c840503b568f
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe rekommenderar att man i de flesta fall genomför en global rapportserie.
 * **Sammanställda data:** Med globala rapportsviter kan du se KPI:er och framgångshändelser på egna webbplatser. Segmentering och virtuella rapportsviter kan användas för att visa platsspecifika data.
 * **Stöd för enhetsövergripande analys:** CDA kräver en rapportserie som samlar in data från flera platser, till exempel din webbplats och mobilapp. Separata enheter kan sammanfoga data om de implementeras på rätt sätt. Se [Enhetsövergripande analys](../../components/cda/overview.md) i användarhandboken för Komponenter om du vill ha mer information.
 * **Du behöver inte mer än en rapportserie:** Alla data kan samlas in i en enda rapportserie, så det är mindre troligt att en utvecklare av misstag skickar data till fel rapportserie.
-* **Inga sammanslagningar:** Sammanslagningar är en funktion som är ganska daterad och som sammanställer data från enskilda rapporteringsprogram dagligen. Upplysta listor tar inte bort besöks- eller besöksdata, vilket kan leda till ett högt antal. Se [Samlingar](../../admin/c-manage-report-suites/rollup-report-suite.md) i användarhandboken för Admin om du vill ha mer information.
+* **Inga sammanslagningar:** Sammanslagningar är en funktion som är ganska daterad och som sammanställer data från enskilda rapporteringsprogram dagligen. Upplysta listor tar inte bort besöks- eller besöksdata, vilket kan leda till ett högt antal. Se [Samlingar](../../admin/admin/c-manage-report-suites/rollup-report-suite.md) i användarhandboken för Admin om du vill ha mer information.
 * **Spara tid:** Arbetsyteprojekt, klassificeringar, segment och beräknade värden är kopplade till samma globala rapportserie. Administratörer lägger mindre tid på att hantera dessa komponenter och datastyrning.
 * **Exaktare varumärkesattribuering:** Om ett besök börjar på en webbplats och sedan klickar på en annan av dina ägda webbplatser innan en lyckad händelse utlöses, samlas attribueringen in korrekt. En besökare klickar till exempel på en betald söklänk och hamnar på plats A. De klickar sedan på en länk till webbplats B och gör sedan ett köp. En global rapportsvit har korrekta attribut som återgår till betalsökningar.
 * **Förenklad implementering:** Eftersom alla varumärken/webbplatser skickar data till samma rapporteringsprogram justeras implementeringarna för varje webbplats. Denna tvingande styrning säkerställer att en viss dimension eller mätvärden sparas i samma eVar eller händelse. Administratörer, testare, tagghanteringsägare och analytiker drar nytta av denna förenkling.
@@ -34,7 +34,7 @@ Adobe rekommenderar att man i de flesta fall genomför en global rapportserie.
 
 Använd följande allmänna riktlinjer för att förstå hur man implementerar en global rapportserie.
 
-1. Skapa den globala rapportsviten i Adobe Analytics. Se [Skapa en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) i användarhandboken för Admin om du vill ha mer information.
+1. Skapa den globala rapportsviten i Adobe Analytics. Se [Skapa en rapportsvit](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) i användarhandboken för Admin om du vill ha mer information.
 1. Arbeta med team i organisationen som ansvarar för varje domän. Många team har rapporteringskrav som är specifika för deras verksamhetsområde.
 1. Registrera och samla alla dessa krav i en [Lösningsdesigndokument](solution-design.md). Om team har liknande krav för en dimension kan de använda samma anpassade variabel. Om till exempel plats A och plats B båda kräver en omfattande dimension, kan implementeringar för båda platserna skicka dessa data via eVar1.
 
@@ -57,4 +57,4 @@ Processen med att flytta en befintlig implementering över flera webbplatser til
 ## Relaterade sidor
 
 [Gå från taggning av flera programsviter till en global rapportserie och virtuella rapportsviter](../../components/vrs/vrs-considerations.md)
-[Jämföra sammanslagningar och globala rapportsviter](../../admin/c-manage-report-suites/rollup-report-suite.md)
+[Jämföra sammanslagningar och globala rapportsviter](../../admin/admin/c-manage-report-suites/rollup-report-suite.md)

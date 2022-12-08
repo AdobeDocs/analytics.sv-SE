@@ -2,7 +2,8 @@
 title: Administratörsroller i Adobe Analytics
 description: Lär dig hur du kommer igång med Adobe Analytics, allmänna rolltyper och loggar in i användargränssnittet.
 feature: Admin Tools
-source-git-commit: 7cde90a15dc97468a70f8120bec46915eab7c1bb
+exl-id: 9d10716f-5b66-42dc-b288-af34da203c35
+source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 0%
@@ -69,7 +70,7 @@ Mer information om hur du tilldelar användare som administratör för produktpr
 
 ## Nästa steg
 
-[Skapa en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Låt din Analytics-administratör logga in på verktyget och skapa en rapportserie för datainsamling
+[Skapa en rapportsvit](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Låt din Analytics-administratör logga in på verktyget och skapa en rapportserie för datainsamling
 
 [Skapa en Analytics-taggegenskap](/help/implement/launch/create-analytics-property.md): Låt din Data Collection-administratör logga in på verktyget och skapa en egenskap som ska implementeras på webbplatsen
 

@@ -3,7 +3,7 @@ title: Administratörshandbok för Analytics
 description: Administrationshjälp för Adobe Analytics-administratörer, inklusive användar- och produkthantering i Admin Console, där du kan skapa rapportsviter, variabler, klassificeringar och datainsamling.
 feature: Admin Tools
 exl-id: d1491139-592b-44ec-aa45-dfdd00f416af
-source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
+source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 90%
@@ -35,7 +35,7 @@ Den här guiden täcker inte många av de allmänna funktioner som finns i Adobe
 ## Viktiga artiklar
 
 * [Analytics starthandbok för nya administratörer](admin-console/first-admin-guide.md): Om din organisation inte har använt Adobe Analytics tidigare följer du den här guiden för att optimera din användning av Adobe Analytics.
-* [Hanterare för rapportsvit](c-manage-report-suites/report-suites-admin.md): Det vanligaste administrationsverktyget i Analytics. Hanteraren för rapportsvit innehåller inställningar för hantering av klassificeringar av variabler, tidszoner med mera.
+* [Hanterare för rapportsvit](admin/c-manage-report-suites/report-suites-admin.md): Det vanligaste administrationsverktyget i Analytics. Hanteraren för rapportsvit innehåller inställningar för hantering av klassificeringar av variabler, tidszoner med mera.
 
 ## Fler Analytics-användarhandböcker
 

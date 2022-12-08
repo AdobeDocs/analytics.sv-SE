@@ -3,7 +3,7 @@ title: Skapa en Analytics-egenskap i taggar
 description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av taggar.
 feature: Launch Implementation
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 2%
@@ -16,7 +16,7 @@ Taggar i Adobe Experience Platform gör att du kan integrera Experience Cloud-l�
 
 ## Förutsättningar
 
-[Skapa en rapportsvit](/help/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Skapa en silo för att samla in analysdata.
+[Skapa en rapportsvit](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md): Skapa en silo för att samla in analysdata.
 
 ## Skapa en taggegenskap och installera viktiga tillägg
 

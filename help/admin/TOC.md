@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 72c35538b0e5d0ffaa103b3159b4e9835a6c1602
+source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -39,9 +39,31 @@ ht-degree: 84%
       + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
       + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
       + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
-+ Administratörsverktyg {#admin-tools}
++ Administratör för analyser {#admin-tools}
    + [Administratörsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
+   + Report Suite-hanterare {#manage-report-suites}
+      + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
+      + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
+      + [Skapa en sammanslagen rapportsvit](admin/c-manage-report-suites/t-rollups.md)
+      + [Skapa en rapportsvitgrupp](admin/c-manage-report-suites/t-create-rs-group.md)
+      + [Spara en sökning i en rapportsvit](admin/c-manage-report-suites/t-report-suite-saved-search.md)
+      + [Inställningar för enskild rapportsvit](admin/c-manage-report-suites/individual-rs-settings.md)
+      + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
+      + Ny rapportsvit {#new-report-suite}
+         + [Skapa en rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
+         + [Ny rapportsvit – inställningar](admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
+         + [Inställningar som inte kopierats från en källrapportssvit](admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
+      + Rapportsvitmallar {#report-suite-templates}
+         + [Översikt över rapportsvitmallar](admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
+         + [Aggregatorportal](admin/c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
+         + [Handel](admin/c-manage-report-suites/c-report-suite-templates/commerce-admin.md)
+         + [Innehåll och media](admin/c-manage-report-suites/c-report-suite-templates/content-media.md)
+         + [Standardmall](admin/c-manage-report-suites/c-report-suite-templates/default-rs-template.md)
+         + [Finansiella tjänster](admin/c-manage-report-suites/c-report-suite-templates/financial-services.md)
+         + [Jobbportal](admin/c-manage-report-suites/c-report-suite-templates/job-portal.md)
+         + [Generering av leads](admin/c-manage-report-suites/c-report-suite-templates/lead-generation.md)
+         + [Supportmedia](admin/c-manage-report-suites/c-report-suite-templates/support-media.md)
    + Borttagning av bot {#bot-removal}
       + [Borttagning av bot](admin/bot-removal/bot-removal.md)
       + [Översikt över botregler](admin/bot-removal/bot-rules.md)
@@ -124,28 +146,6 @@ ht-degree: 84%
       + [Ange variabeln Unik besökare](admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
       + [Användningsfall – extrahera besökar-ID:n](admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
    + [Videohantering](admin/video-management.md)
-+ Hantera rapportsviter {#manage-report-suites}
-   + [Hanterare för rapportsvit](c-manage-report-suites/report-suites-admin.md)
-   + [Sammanslagning och globala rapportsviter](c-manage-report-suites/rollup-report-suite.md)
-   + [Skapa en sammanslagen rapportsvit](c-manage-report-suites/t-rollups.md)
-   + Rapportsvitmallar {#report-suite-templates}
-      + [Översikt över rapportsvitmallar](c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
-      + [Aggregatorportal](c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
-      + [Handel](c-manage-report-suites/c-report-suite-templates/commerce-admin.md)
-      + [Innehåll och media](c-manage-report-suites/c-report-suite-templates/content-media.md)
-      + [Standardmall](c-manage-report-suites/c-report-suite-templates/default-rs-template.md)
-      + [Finansiella tjänster](c-manage-report-suites/c-report-suite-templates/financial-services.md)
-      + [Jobbportal](c-manage-report-suites/c-report-suite-templates/job-portal.md)
-      + [Generering av leads](c-manage-report-suites/c-report-suite-templates/lead-generation.md)
-      + [Supportmedia](c-manage-report-suites/c-report-suite-templates/support-media.md)
-   + [Spara en sökning i en rapportsvit](c-manage-report-suites/t-report-suite-saved-search.md)
-   + [Inställningar för enskild rapportsvit](c-manage-report-suites/individual-rs-settings.md)
-   + [Hämta inställningar för rapportsviten](c-manage-report-suites/t-download-rs-settings.md)
-   + Ny rapportsvit {#new-report-suite}
-      + [Skapa en rapportsvit](c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
-      + [Ny rapportsvit – inställningar](c-manage-report-suites/c-new-report-suite/new-report-suite.md)
-      + [Inställningar som inte kopierats från en källrapportssvit](c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
-   + [Skapa en rapportsvitgrupp](c-manage-report-suites/t-create-rs-group.md)
 + Användar- och produkthantering (äldre) {#user-product-management}
    + [Hantering av användare och produkter](user-management2/user-management.md)
    + Use: Migrera användare till Adobe Admin Console {#migrate-users}

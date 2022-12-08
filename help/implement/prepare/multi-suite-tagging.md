@@ -3,7 +3,7 @@ description: Lär dig hur du implementerar märkning för flera programsviter f�
 title: Implementera märkning för flera programsviter
 feature: Implementation Basics
 exl-id: c7fb0478-97e1-4367-8742-e7539f6f82e7
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Implementera märkning för flera programsviter
 
-[Taggar för flera programsviter](/help/admin/c-manage-report-suites/rollup-report-suite.md) Med kan du skicka bildbegäranden inte bara till en global rapportserie utan även till enskilda underordnade rapportsviter så att du kan tillhandahålla delmängder av företagets globala rapportserie till olika slutanvändare.
+[Taggar för flera programsviter](/help/admin/admin/c-manage-report-suites/rollup-report-suite.md) Med kan du skicka bildbegäranden inte bara till en global rapportserie utan även till enskilda underordnade rapportsviter så att du kan tillhandahålla delmängder av företagets globala rapportserie till olika slutanvändare.
 
 Om du vill implementera taggning för flera programsviter måste du inkludera Report Suite-ID (RSID) för den globala rapportsviten och även RSID:n för de underordnade rapportsviterna i spårningskoden för dina webbsidor och appar.
 
