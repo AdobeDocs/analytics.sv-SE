@@ -3,9 +3,9 @@ description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 feature: Admin Tools
 exl-id: 1f31749f-10ce-4cff-81fb-141b37824c5f
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 72c35538b0e5d0ffaa103b3159b4e9835a6c1602
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '149'
 ht-degree: 34%
 
 ---
@@ -37,8 +37,6 @@ ht-degree: 34%
 + [Måttsynlighet](metric-visibility.md)
 + [Mobilhantering](mobile-management.md)
 + [Översikt över betald sökdetektering](paid-search-detection/paid-search-detection.md)
-+ [Publiceringslistor](publishing-list.md)
-+ [Publiceringswidget](publishing-widgets-admin.md)
 + [Inställningshanteraren](preferences-manager.md)
 + [Sekretessinställningar](privacy-settings.md)
 + [Översikt över behandlingsregler](c-processing-rules/processing-rules.md)
@@ -46,7 +44,6 @@ ht-degree: 34%
 + [Schemalagd rapportkö](scheduled-reports-admin.md)
 + [Översikt över vidarebefordran på serversidan](c-server-side-forwarding/ssf.md)
 + [Enklare rapportmeny](t-simplified-menu.md)
-+ [Social förvaltning](social-management.md)
 + [Översikt över slutförda händelser](c-success-events/success-event.md)
 + [Tidsstämplar (valfritt)](timestamp-optional.md)
 + [Översikt över trafikvariabeln (prop)](c-traffic-variables/traffic-var.md)

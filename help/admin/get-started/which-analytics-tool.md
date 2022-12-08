@@ -3,9 +3,9 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: 0017a6657e4de6206cf97dc6cf6f2b132b50b50f
+source-git-commit: d5d4d1c9274bba8c3a40ee8fe86da311c1d1220b
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1159'
 ht-degree: 2%
 
 ---
@@ -32,7 +32,6 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 * Så här ställer du in mål.
 * Så här visar du Bot-rapportering.
 * Få tillgång till unika videovisualiseringar av Video Daypart och Viewer Drop-off.
-* För att utnyttja publiceringslistor i schemalagda rapporter.
 
 **[Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html)** ska användas:
 

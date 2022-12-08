@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: cd680e8e2e8a30e100a713e0943978f8d798143a
+source-git-commit: 72c35538b0e5d0ffaa103b3159b4e9835a6c1602
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '673'
 ht-degree: 84%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 84%
       + [Säkerhetshanteraren](get-started/company/security-manager.md)
 + Användarbehörigheter i Admin Console i Adobe {#admin-console}
    + [Analyser i Adobe Admin Console](admin-console/home.md)
+   + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
+   + [Administratörsroller i Adobe Analytics](admin-console/admin-roles-in-analytics.md)
    + Behörigheter {#permissions}
       + [Analysbehörigheter i Admin Console](admin-console/permissions/summary-tables.md)
       + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
       + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
       + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
-   + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
-   + [Administratörsroller i Adobe Analytics](admin-console/admin-roles-in-analytics.md)
 + Administratörsverktyg {#admin-tools}
    + [Administratörsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
@@ -72,8 +72,6 @@ ht-degree: 84%
    + Betald sökdetektering {#paid-search-detection}
       + [Översikt över betald sökdetektering](admin/paid-search-detection/paid-search-detection.md)
       + [Konfigurera betald sökdetektering](admin/paid-search-detection/t-paid-search-detection.md)
-   + [Publiceringslistor](admin/publishing-list.md)
-   + [Publiceringswidget](admin/publishing-widgets-admin.md)
    + [Inställningshanteraren](admin/preferences-manager.md)
    + [Sekretessinställningar](admin/privacy-settings.md)
    + [Sekretessrapportering](admin/privacy-reporting.md)
@@ -113,7 +111,6 @@ ht-degree: 84%
       + [Så här verifierar du implementeringen av vidarebefordring på serversidan](admin/c-server-side-forwarding/ssf-verify.md)
       + [Vanliga frågor om vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-faq.md)
    + [Enklare rapportmeny](admin/t-simplified-menu.md)
-   + [Social hantering](admin/social-management.md)
    + Slutförda händelser {#success-events}
       + [Översikt över slutförda händelser](admin/c-success-events/success-event.md)
       + [Konfigurera slutförda händelser](admin/c-success-events/t-success-events.md)

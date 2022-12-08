@@ -4,10 +4,10 @@ title: Dataförfrågningar – frågeguiden steg 1
 feature: Report Builder
 role: User, Admin
 exl-id: 698662a8-8b6b-4338-a315-b41cf6a9424e
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: d5d4d1c9274bba8c3a40ee8fe86da311c1d1220b
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 3%
 
 ---
 
@@ -24,8 +24,6 @@ I Request Wizard: Steg 1-formulär väljer du rapportsviten, rapporttyp, segment
 1. **Segment**: Segment är anpassade datadeluppsättningar eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Se [Segmenteringshandbok för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) för mer information om segment.
 
    Du kan till exempel köra en [!UICONTROL Pages Report]och sedan tillämpa ett segment för förstagångsbesök.
-
-1. **Tillåt åsidosättning av publiceringslista**: När du schemalägger en rapport kan du välja en publiceringslista som ska användas för distribution. Publiceringslistor är konfigurerade i **[!UICONTROL Analytics]** > **[!UICONTROL Admin tools]**. Rapportsviten för den här begäran ersätts av det rapportsvits-ID som tilldelats varje mottagare i publiceringslistan. Se [Tillåt åsidosättning av publiceringslista](/help/analyze/report-builder/data-requests/allow-publishing-list-overrides.md).
 
 1. **Typ av rapportering**: Anger den basrapport som du vill köra i din databegäran. Du kör en rapport per begäran och den rapporten kan ha en-till-många-dimensioner och en-till-många-mått. Mätvärden och dimensioner för en rapporttyp visas på [!UICONTROL Request Wizard; Step 2] gränssnitt. Se [Välj rapporttyper](/help/analyze/report-builder/data-requests/c-report-types/select-report-types.md).
 
