@@ -3,7 +3,7 @@ title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
 feature: Implementation Basics
 exl-id: 08b8c7cc-28c6-45e3-ab44-77471eea8ef1
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -22,7 +22,7 @@ När en besökare når en avanmälnings-URL uppmanas de att installera en avanm�
 
 >[!TIP]
 >
->Adobe erbjuder även sekretessinställningar per rapport. Se [Sekretessinställningar](../../admin/admin/privacy-settings.md) i användarhandboken för Admin.
+>Adobe erbjuder även sekretessinställningar per rapport. Se [Sekretessinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/privacy-settings.md) i användarhandboken för Admin.
 
 ## URL för avanmälan
 

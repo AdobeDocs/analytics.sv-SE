@@ -2,7 +2,7 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 1%
@@ -87,7 +87,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
    * Bearbetningsregler för marknadsföringskanaler, en uppsättning regler som avgör vilken marknadsföringskanal en träff tillhör. Se [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md) i användarhandboken för Admin.
 * **Prop:** Se Trafikvariabel.
 * **Rankad rapport:** Ett rapportformat som vanligtvis följer en dimension med ett mätvärde. Med den här typen av rapporter kan du se de översta objekten, till exempel de sidor som visas mest på din webbplats. Se även Trended-rapport.
-* **Realtid:** Visar konfigurerade variabler så snart de samlats in med liten eller ingen fördröjning. Se [Realtidsrapporter](/help/admin/admin/realtime/realtime.md) i användarhandboken för Admin.
+* **Realtid:** Visar konfigurerade variabler så snart de samlats in med liten eller ingen fördröjning. Se [Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) i användarhandboken för Admin.
 * **Report Builder:** Ett Microsoft Excel-tillägg som gör att du kan skapa anpassade förfrågningar från Adobe Analytics-data.
 * **Rapportsvit:** En överliggande behållare som du skickar data till. Alla rapporter i Adobe Analytics refererar till en rapportserie.
 * **Rapporter och analyser:** Tidigare SiteCatalyst. Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet.

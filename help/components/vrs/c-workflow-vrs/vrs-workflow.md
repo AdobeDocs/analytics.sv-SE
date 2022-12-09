@@ -4,7 +4,7 @@ keywords: Virtual Report Suite
 title: Arbetsflöde för Virtual Report Suites
 feature: VRS
 exl-id: 6f68b5a2-04d6-4521-86d0-85c9f323d03c
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 En översikt över de steg som krävs för att planera och implementera virtuella rapportsviter.
 
-![](assets/step1_icon.png) Planera er strategi för en virtuell rapportsvit.
+![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step1_icon.png) Planera er strategi för en virtuell rapportsvit.
 
 Bekanta dig med [Att tänka på vid global/multiSuite-taggning](/help/components/vrs/vrs-considerations.md) och vanliga frågor och svar när ni bestämmer er för strategi.
 
-![](assets/step2_icon.png) [Skapa en virtuell rapportsvit](/help/components/vrs/c-workflow-vrs/vrs-create.md) genom att tillämpa ett eller flera segment i ett överordnat rapportpaket.
+![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step2_icon.png) [Skapa en virtuell rapportsvit](/help/components/vrs/c-workflow-vrs/vrs-create.md) genom att tillämpa ett eller flera segment i ett överordnat rapportpaket.
 
 Virtuella rapportsviter skapas i Virtual Report Suite Manager (Komponenter > Virtuella rapportsviter).
 
@@ -27,7 +27,7 @@ När en virtuell rapportsvit har skapats behandlas den på samma sätt som en ba
 
 Klicka på ikonen Info bredvid rapportsvitens namn för att [visa information om det](/help/components/vrs/c-workflow-vrs/vrs-view.md).
 
-![](assets/step3_icon.png) Öppna ett projekt eller en rapport och välj en virtuell rapportserie för att få en segmenterad vy av data.
+![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step3_icon.png) Öppna ett projekt eller en rapport och välj en virtuell rapportserie för att få en segmenterad vy av data.
 
 ![](assets/step4_icon.png) [Hantera](/help/components/vrs/c-workflow-vrs/vrs-manage.md) den virtuella rapportsviten.
 

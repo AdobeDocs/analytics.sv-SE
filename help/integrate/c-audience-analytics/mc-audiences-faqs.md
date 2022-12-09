@@ -4,7 +4,7 @@ solution: Experience Cloud
 title: Frågor och svar för Audience Analytics
 feature: Audience Analytics
 exl-id: 86e7967c-030c-44d6-8294-e7e6d41f6fc3
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
  </tbody> 
 </table>
 
-Mer information om vanliga frågor om detta avsnitt finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/admin/c-server-side-forwarding/ssf-faq.md).
+Mer information om vanliga frågor om detta avsnitt finns i [Vanliga frågor om vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-faq.md).
 
 ## Allmänna frågor och svar {#section_E55410BBFB624AAFB87ADCF7F036DDA3}
 

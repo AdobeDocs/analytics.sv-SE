@@ -1,23 +1,26 @@
 ---
 description: Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
-title: Översikt över rapporter i realtid
-topic-fix: Reports
+title: Realtidsrapporter
 feature: Real-time
-exl-id: 056235bc-42ea-4118-aa54-bc7666044fe3
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+exl-id: 267246ba-617f-4284-aaad-d0ace0f6a8cf
+source-git-commit: dc9cd6bb45af0c992c37ffe20ea22eab67789ec5
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 1%
+source-wordcount: '566'
+ht-degree: 0%
 
 ---
 
-# Översikt över rapporter i realtid
+# Realtidsrapporter
 
-Realtidsrapportering visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
+Visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
 
 >[!NOTE]
 >
 >Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i [Konfiguration av realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md).
+
+Här är en videoöversikt:
+
+>[!VIDEO](https://video.tv.adobe.com/v/25454/?quality=12)
 
 **[!UICONTROL Site Metrics]** > **[!UICONTROL Real-Time]**
 
@@ -43,13 +46,13 @@ Som administratör kan du
 
 * Jämför till exempel förra veckans värden med förra årets värden (liksom med dagens totala värde).
 
-Tänk på att eVars (konverteringsmått) inte stöds eftersom det inte finns något koncept för beständighet. Du kan välja konverteringsmått, men de fungerar bara om de är inställda på samma sida som dimensionerna. Mer information finns i varningsmeddelandet i [Konfigurera realtidsrapporter](/help/components/c-real-time-reporting/t-realtime-admin.md).
+Tänk på att eVars (konverteringsmått) inte stöds eftersom det inte finns något koncept för beständighet. Du kan välja konverteringsmått, men de fungerar bara om de är inställda på samma sida som dimensionerna. Mer information finns i varningsmeddelandet i [Konfigurera realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md).
 
 Det är endast administratörer eller användare i behörighetsgrupperna All Report Access och Advanced Reporting som kan konfigurera och visa realtidsrapporter. Real-Time respekterar dock behörigheter. Om du till exempel inte har rätt att se intäkter kan du inte visa en realtidsrapport som innehåller intäktsdata.
 
 ## Datasvarstid som ett resultat av A4T-konfiguration {#section_806CE36354FC4C539A0DED9266A5C704}
 
-När A4T-integreringen har aktiverats i Adobe [!DNL Target]får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här latensökningen tillåter data från analyser och [!DNL Target] som ska lagras på samma träff, vilket gör att du kan dela upp testerna per sida och webbplatsavsnitt.
+När A4T-integreringen har aktiverats i Adobe Target får du ytterligare 5-10 minuters fördröjning i Adobe Analytics. Den här fördröjningsökningen gör att data från Analytics och Target kan lagras på samma träff, vilket gör att ni kan bryta ned tester per sida och webbplatsavsnitt.
 
 Ökningen återspeglas i alla Adobe Analytics tjänster och verktyg, inklusive liveströmmen och realtidsrapporter, och gäller i följande scenarier:
 

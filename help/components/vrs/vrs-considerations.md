@@ -4,7 +4,7 @@ keywords: Virtual Report Suite, VRS
 title: Virtuella rapportsviter och taggar för flera programsviter
 feature: VRS
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Med virtuella rapporteringsprogram (VRS) kan du visa data från en rapportsvit som samlar in data från era digitala resurser, men med ett segment som används permanent.
 
-I många fall kan du använda virtuella rapportsviter för att ersätta taggning för flera programsviter. Genom att gå över till virtuella rapportsviter kan du effektivt ta bort behovet av [sekundära serveranrop](/help/admin/c-server-call-usage/overage-overview.md). Din organisation har t.ex. sex olika webbplatser, där alla skickar data till sina egna rapporteringsprogram samt en kombinerad global rapportserie. Varje plats har ett sekundärt serveranrop. en till det enskilda varumärkesrapporteringsprogrammet och en andra till det globala rapportpaketet. I stället kan ni skicka data från alla webbplatser enbart till den globala rapportsviten och sedan använda flera virtuella rapportsviter för att separera varje varumärke.
+I många fall kan du använda virtuella rapportsviter för att ersätta taggning för flera programsviter. Genom att gå över till virtuella rapportsviter kan du effektivt ta bort behovet av [sekundära serveranrop](/help/admin/admin/c-server-call-usage/overage-overview.md). Din organisation har t.ex. sex olika webbplatser, där alla skickar data till sina egna rapporteringsprogram samt en kombinerad global rapportserie. Varje plats har ett sekundärt serveranrop. en till det enskilda varumärkesrapporteringsprogrammet och en andra till det globala rapportpaketet. I stället kan ni skicka data från alla webbplatser enbart till den globala rapportsviten och sedan använda flera virtuella rapportsviter för att separera varje varumärke.
 
 Genom att ersätta taggning för flera programsviter med en global rapportserie och VRS kan ni förenkla er Adobe Analytics-implementering och minska förbrukningen av serversamtal. Detta är en god praxis som vi rekommenderar. Det finns dock vissa viktiga begränsningar av det frivilliga systemet för förtidspension att beakta. Följande riktlinjer kan hjälpa dig att avgöra om implementering av virtuella rapportsviter som bygger på en global rapportserie är rätt strategi för dig.
 
@@ -35,7 +35,7 @@ Segment kan ännu inte publiceras till Adobe Experience Cloud från en virtuell 
 
 Realtidsrapporter stöds inte i virtuella rapportsviter eftersom data segmenteras. Aktuella data stöds inte heller i virtuella rapportsviter eftersom de inte stöder segmentering. Båda dessa funktioner är specifika för Rapporter och analyser.
 
-[Realtidsrapporter](/help/admin/admin/realtime/t-realtime-admin.md) och [Aktuella data](/help/technotes/latency.md) är inte tillgängliga i virtuella rapportsviter. Detta påverkar användare som reagerar på trender som visas i rapporter och analyser inom några sekunder eller några minuter efter datainsamlingen. Det kan till exempel inkludera redaktörer i ett nyhetsrum som justerar rubriker baserat på innehållskonsumtion i realtid. Överväg att använda flera svit-taggning om du har betydande datatillgångar i realtid som är specifika för enskilda rapportsviter. Realtid och aktuella data kan fortfarande användas i den globala rapportsviten.
+[Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md) och [Aktuella data](/help/technotes/latency.md) är inte tillgängliga i virtuella rapportsviter. Detta påverkar användare som reagerar på trender som visas i rapporter och analyser inom några sekunder eller några minuter efter datainsamlingen. Det kan till exempel inkludera redaktörer i ett nyhetsrum som justerar rubriker baserat på innehållskonsumtion i realtid. Överväg att använda flera svit-taggning om du har betydande datatillgångar i realtid som är specifika för enskilda rapportsviter. Realtid och aktuella data kan fortfarande användas i den globala rapportsviten.
 
 ### Unika gränser
 

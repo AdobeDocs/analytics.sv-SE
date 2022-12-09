@@ -4,7 +4,7 @@ title: Vad är Activity Map?
 feature: Activity Map
 role: User, Admin
 exl-id: 30a800f7-e2c8-443e-b5d4-36834ef0ba20
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 24%
@@ -40,7 +40,7 @@ Med Activity Map kan ni skapa olika vyer för att visuellt identifiera kundaktiv
 * [Länkrapport](activitymap-links-report.md)
 * [Sidinformation](activitymap-page-flow.md)
 * [Fullständig uppsättning mätvärden](activitymap-complete-metrics.md)
-* [Sidanalys i realtid (live)](activitymap-realtime.md)
+* [Sidanalys i realtid (live)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
 * [Kundsegmentering](activitymap-multiple-segments.md)
 * [Anpassningsbara överlagringar](activitymap-gainerslosers.md)
 * [Överlagringsinformation](activitymap-overlay-details.md)

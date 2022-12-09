@@ -2,7 +2,7 @@
 title: Bearbetningsordning för data i Adobe Analytics
 description: Lär dig ordningen på komponenter och tjänster som bearbetar data i Adobe Analytics.
 exl-id: a8dc9c12-07d3-4dc8-b2df-136f7a7a1e77
-source-git-commit: 35e7c8bccb8524fa5e87cae223f0854956c7528a
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -31,7 +31,7 @@ När data kommer till Adobe Analytics kan du justera data efter behov med följa
 
 1. **Sök tabeller**: Dimensioner som förlitar sig på Adobe-interna söktabeller (t.ex. [Webbläsare](/help/components/dimensions/browser.md) dimension) matchas med motsvarande värde.
 2. [**Dynamiska variabler**](/help/implement/vars/page-vars/dynamic-variables.md): Om en dynamisk variabel visas i någon del av en bildbegäran kopieras värdet över och behandlas som ett oberoende värde som flyttas framåt.
-3. [**Punktregler**](/help/admin/admin/bot-removal/bot-rules.md): Använd standardfiltrering eller anpassad robotfiltrering för att exkludera data från rapportering.
+3. [**Punktregler**](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md): Använd standardfiltrering eller anpassad robotfiltrering för att exkludera data från rapportering.
 4. [**Bearbetar regler**](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md): Anpassade regler som din organisation tillämpar på dina data. Inkluderar mappning av [Sammanhangsdatavariabler](/help/implement/vars/page-vars/contextdata.md) till respektive variabel.
 5. **VISTA-regler**: Anpassade flexibla regler som tillämpas på data av en Adobe-konsult. VISTA-regler kan köras före eller efter att regler bearbetas, beroende på organisationens behov. De flesta VISTA-regler körs vanligtvis efter bearbetningsregler, men varje organisation har konfigurerats på olika sätt. Kontakta kontohanteraren för Adobe om du vill ha mer information om befintliga VISTA-regler.
 6. [**Bearbetningsregler för marknadsföringskanaler**](/help/components/c-marketing-channels/c-rules.md): Du kan använda [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) för att förbereda data för användning i regler för bearbetning av marknadsföringskanaler.

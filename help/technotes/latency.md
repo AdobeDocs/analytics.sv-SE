@@ -4,7 +4,7 @@ keywords: data saknas;långsam
 title: Datatillgänglighet och fördröjning
 feature: Data Configuration and Collection
 exl-id: fedef3ea-dde6-460f-90e3-1e661ed29b78
-source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Det finns flera strategier för att förhindra fördröjning eller minska åters
    * Mer än 20 värden i variabeln products
    * Händelseserialisering
 
-* Aktivera IAB-punktsfiltrering: [Punktfiltrering](/help/admin/admin/bot-removal/bot-removal.md) kan minska fördröjningen avsevärt om rapportsviten ofta används av botar eller crawler. Vi rekommenderar att du använder IAB-robotlistan eftersom den uppdateras och underhålls av [Interactive Advertising Bureau](https://www.iab.net/about_the_iab). En användare kan anpassa sina egna robotregler för att komplettera dem från IAB.
+* Aktivera IAB-punktsfiltrering: [Punktfiltrering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md) kan minska fördröjningen avsevärt om rapportsviten ofta används av botar eller crawler. Vi rekommenderar att du använder IAB-robotlistan eftersom den uppdateras och underhålls av [Interactive Advertising Bureau](https://www.iab.net/about_the_iab). En användare kan anpassa sina egna robotregler för att komplettera dem från IAB.
 
 ## Vad du ska göra med svarstid
 

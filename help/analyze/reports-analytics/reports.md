@@ -4,7 +4,7 @@ description: Dimensionerna och måtten som Rapporter och analyser använder för
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: e3c23d17-fc4b-479e-9c48-6f27ef0de4e3
-source-git-commit: 17b5185e5358d661157c20a2504cacdbd4a2cc3d
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -56,9 +56,9 @@ Innehåller rapporter som vanligtvis trendar med ett datumintervall. Innehåller
    * Utcheckningar: Trends the metric [Utcheckningar](/help/components/metrics/checkouts.md) över tid.
 * Anpassade händelser: Innehåller alla rapporter runt anpassade rapporter [Händelser](/help/components/metrics/custom-events.md) specifikt för er implementering.
 * Börjor: Visar robotrelaterade rapporter.
-   * Börjor: Visar de botar som oftast finns på webbplatsen. Se [Punktregler](../../admin/admin/bot-removal/bot-rules.md) i användarhandboken för Admin.
+   * Börjor: Visar de botar som oftast finns på webbplatsen. Se [Punktregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md) i användarhandboken för Admin.
    * Punktsidor: Visar de sidor som träffar mest.
-* Realtid: Visar vissa mått och mätvärden inom några sekunder efter datainsamlingen. Se [Realtidsrapporter](/help/components/c-real-time-reporting/realtime.md) för mer information.
+* Realtid: Visar vissa mått och mätvärden inom några sekunder efter datainsamlingen. Se [Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) för mer information.
 
 ## Webbplatsinnehåll
 

@@ -4,7 +4,7 @@ subtopic: Processing rules
 title: Så fungerar behandlingsregler
 feature: Processing Rules
 exl-id: 9d2d9f2d-1e16-486f-9191-2c43776374da
-source-git-commit: 35e7c8bccb8524fa5e87cae223f0854956c7528a
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 2%
@@ -39,7 +39,7 @@ Följande tabell innehåller viktiga begrepp som du måste förstå när du anv�
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsreglerna tillämpas omedelbart på rapportsviten när de har sparats. </p> </td> 
-   <td colname="col2"> <p>Ändringar i bearbetningsreglerna ska visas i rapportsviten inom några minuter efter att de har sparats. När vi testar bearbetningsregler rekommenderar vi att du konfigurerar <a href="/help/admin/admin/realtime/t-realtime-admin.md"> realtidsrapporter</a> i testrapportsviten så att du snabbt kan se resultatet av en bearbetningsregel. </p> </td> 
+   <td colname="col2"> <p>Ändringar i bearbetningsreglerna ska visas i rapportsviten inom några minuter efter att de har sparats. När vi testar bearbetningsregler rekommenderar vi att du konfigurerar <a href="/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md"> realtidsrapporter</a> i testrapportsviten så att du snabbt kan se resultatet av en bearbetningsregel. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsregler är det enda sättet att få åtkomst till kontextdatavariabler. </p> </td> 

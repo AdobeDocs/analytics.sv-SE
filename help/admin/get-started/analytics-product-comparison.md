@@ -3,7 +3,7 @@ description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 0017a6657e4de6206cf97dc6cf6f2b132b50b50f
+source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 36%
@@ -22,8 +22,8 @@ Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Ad
 | **Datagranularitet** | Sammanställd | Sammanställd | Sammanställd | Sammanställd | Träff | Träff | Sammanställd |
 | **Experience Cloud-ID (ECID) tillgängligt** | Nej | Nej | Nej | Ja | Ja | Ja | Nej |
 | **Tidsstämpel tillgänglig** | Nej | Nej | Nej | Nej | Ja | Ja | Nej |
-| **Bearbetningsnivå** | Fullt bearbetad | Fullständigt bearbetad, med separat [realtidsrapport](/help/components/c-real-time-reporting/realtime.md) | Fullständigt bearbetad, med separat [realtidsrapport](/help/components/c-real-time-reporting/realtime.md) | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad |
-| **Administratörsrobotfilterdata ingår** <br> [Läs mer](/help/admin/admin/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Ja - separat robotrapport | Nej | Nej | Nej | Nej |
+| **Bearbetningsnivå** | Fullt bearbetad | Fullständigt bearbetad, med separat [realtidsrapport](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) | Fullständigt bearbetad, med separat [realtidsrapport](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad | Fullt bearbetad |
+| **Administratörsrobotfilterdata ingår** <br> [Läs mer](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md) | Nej | Ja - separat robotrapport | Ja - separat robotrapport | Nej | Nej | Nej | Nej |
 | **Låg trafik (Uniques-gränsen överskrids) visas** <br> [Läs mer](/help/technotes/low-traffic.md) | Ja | Ja | Ja | Nej | Nej | Nej | Ja |
 | **Synlig radgräns (före sidnumrering)** | 400 | 200 | 50000 | Obegränsad | Obegränsad | Obegränsad | 50000 |
 | **Flera rapportsviter** | [Ja](/help/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.md) | Ja, med begränsningar | Ja | Nej | Ja | Nej | Ja |

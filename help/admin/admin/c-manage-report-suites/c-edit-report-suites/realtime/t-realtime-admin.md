@@ -1,20 +1,20 @@
 ---
 description: Administrativa steg för att skapa realtidsrapporter.
-title: Konfigurera realtidsrapporter
+title: Konfiguration av rapporter i realtid
 feature: Real-time
-exl-id: 9e7fc67c-71d5-465a-9553-5bb7e02a9bfd
+exl-id: e039ed67-3694-40fc-a4d9-3cb576e0535c
 source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '272'
 ht-degree: 2%
 
 ---
 
-# Konfigurera realtidsrapporter
+# Konfiguration av rapporter i realtid
 
 Administrativa steg för att skapa realtidsrapporter.
 
-Konfigurera realtidsrapporter inom [!UICONTROL Reports & Analytics] består av att välja rapportsviten och konfigurera upp till tre rapporter för den.
+Att konfigurera realtidsrapporter i rapporter och analyser består av att välja rapportsviten och konfigurera upp till tre rapporter för den.
 
 1. Välj den rapportsvit som du vill aktivera realtidsrapporter för.
 
@@ -33,13 +33,13 @@ Konfigurera realtidsrapporter inom [!UICONTROL Reports & Analytics] består av a
 1. Aktivera **[!UICONTROL Enable Real-Time]** inställning.
 1. Ställ in datainsamling i realtid för upp till tre rapporter, med ett mått och tre dimensioner eller klassificeringar per rapport.
 
-   ![](assets/real_time_admin.png)
+   ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/real_time_admin.png)
 
    Information om vilka realtidsvärden och -dimensioner som stöds finns i [Mätvärden och Dimensioner som stöds](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md).
 
    Om du har skapat klassificeringar visas de med indrag under den dimension som de definierats för:
 
-   ![](assets/classifications.png)
+   ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/classifications.png)
 
    >[!NOTE]
    >

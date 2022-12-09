@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
+source-git-commit: 914ebfa7f9cdd55e5d03297c429d652a76430db1
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 82%
@@ -39,14 +39,17 @@ ht-degree: 82%
       + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
       + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
       + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
+   + Användar- och produkthantering (äldre) {#user-product-management}
+      + [Hantering av användare och produkter](admin-console/user-management2/user-management.md)
+      + Use: Migrera användare till Adobe Admin Console {#migrate-users}
+         + [Migrering av Analytics-användare till Admin Console](admin-console/user-management2/user-migration/c-migration-tool.md)
+         + [Migrera Analytics-användarkonton för Adobe ID:n](admin-console/user-management2/user-migration/t-migrate-users.md)
+         + [Migrera Analytics-användarkonton för Enterprise och Federated ID](admin-console/user-management2/user-migration/migrate-enterprise.md)
+         + [Inaktivera äldre inloggningar](admin-console/user-management2/user-migration/t-disable-legacy-login.md)
+         + [API:er som påverkas av migreringen](admin-console/user-management2/user-migration/developer.md)
 + Administratör för analyser {#admin-tools}
    + [Administratörsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
-   + Borttagning av bot {#bot-removal}
-      + [Borttagning av bot](admin/bot-removal/bot-removal.md)
-      + [Översikt över botregler](admin/bot-removal/bot-rules.md)
-      + [Vanliga robotsignaturer](admin/bot-removal/bot-signatures.md)
-      + [Punktexkluderingsmetoder](admin/bot-removal/bot-exclusion-methods.md)
    + [Kodhanteraren](admin/code-manager-admin.md)
    + [Valutakoder](admin/currency.md)
    + [Datakällor](admin/data-sources.md)
@@ -54,21 +57,14 @@ ht-degree: 82%
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Loggar](admin/logs.md)
    + [Måttsynlighet](admin/metric-visibility.md)
-   + [Apphantering](admin/mobile-management.md)
    + [Inställningshanteraren](admin/preferences-manager.md)
-   + [Sekretessinställningar](admin/privacy-settings.md)
    + [Sekretessrapportering](admin/privacy-reporting.md)
-   + Realtidsrapporter {#real-time-reports}
-      + [Översikt över realtidsrapporter](admin/realtime/realtime.md)
-      + [Konfiguration av rapporter i realtid](admin/realtime/t-realtime-admin.md)
-      + [Mätvärden och dimensioner som stöds i realtid](admin/realtime/realtime-metrics.md)
    + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
    + [Schemalagd rapportkö](admin/scheduled-reports-admin.md)
    + Report Suite-hanterare {#manage-report-suites}
       + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
       + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
       + [Spara en sökning i en rapportsvit](admin/c-manage-report-suites/t-report-suite-saved-search.md)
-      + [Inställningar för enskild rapportsvit](admin/c-manage-report-suites/individual-rs-settings.md)
       + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
       + Ny rapportsvit {#c-new-report-suite}
          + [Skapa en rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
@@ -117,6 +113,20 @@ ht-degree: 82%
                   + [Ange en händelse med hjälp av en kontextdatavariabel](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md)
                   + [Ta bort en händelse från en träff](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-remove-event.md)
                + [Tips och tricks för regler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-tips.md)
+            + Borttagning av bot {#bot-removal}
+               + [Borttagning av bot](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md)
+               + [Översikt över botregler](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md)
+               + [Vanliga robotsignaturer](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-signatures.md)
+               + [Punktexkluderingsmetoder](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-exclusion-methods.md)
+            + [Sekretessinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/privacy-settings.md)
+            + [Tidsstämplar (valfritt)](admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md)
+            + Vidarebefordran på serversidan {#server-side-forwarding}
+               + [Översikt över vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md)
+               + [GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-gdpr.md)
+               + [Krav för vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-requirements.md)
+               + [Vidarebefordra data och kodreferenser på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-reference.md)
+               + [Så här verifierar du implementeringen av vidarebefordring på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-verify.md)
+               + [Vanliga frågor om vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-faq.md)
          + Trafikvariabler {#traffic-variables}
             + [Översikt över trafikvariabeln (prop)](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md)
             + [Aktivera rapporter för trafikvariabel](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/t-traffic-variable.md)
@@ -144,24 +154,20 @@ ht-degree: 82%
             + [Uppskatta tidigare serveranrop och schemalägg en trafiktopp](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-spike-estimate-past-server-calls.md)
             + [Ange permanent trafikökning](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
             + [Ledtid som krävs för trafikökningar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-lead-time.md)
-   + Vidarebefordran på serversidan {#server-side-forwarding}
-      + [Översikt över vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf.md)
-      + [GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-gdpr.md)
-      + [Krav för vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-requirements.md)
-      + [Vidarebefordra data och kodreferenser på serversidan](admin/c-server-side-forwarding/ssf-reference.md)
-      + [Så här verifierar du implementeringen av vidarebefordring på serversidan](admin/c-server-side-forwarding/ssf-verify.md)
-      + [Vanliga frågor om vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-faq.md)
+         + [Inställningar för enskild rapportsvit](admin/c-manage-report-suites/c-edit-report-suites/individual-rs-settings.md)
+         + [Apphantering](admin/c-manage-report-suites/c-edit-report-suites/mobile-management.md)
+         + Realtidsrapporter {#real-time-reports}
+            + [Översikt över realtidsrapporter](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
+            + [Konfiguration av rapporter i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md)
+            + [Mätvärden och dimensioner som stöds i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md)
    + [Enklare rapportmeny](admin/t-simplified-menu.md)
-   + [Tidsstämplar (valfritt)](admin/timestamp-optional.md)
    + [Videohantering](admin/video-management.md)
-+ Användar- och produkthantering (äldre) {#user-product-management}
-   + [Hantering av användare och produkter](user-management2/user-management.md)
-   + Use: Migrera användare till Adobe Admin Console {#migrate-users}
-      + [Migrering av Analytics-användare till Admin Console](user-management2/user-migration/c-migration-tool.md)
-      + [Migrera Analytics-användarkonton för Adobe ID:n](user-management2/user-migration/t-migrate-users.md)
-      + [Migrera Analytics-användarkonton för Enterprise och Federated ID](user-management2/user-migration/migrate-enterprise.md)
-      + [Inaktivera äldre inloggningar](user-management2/user-migration/t-disable-legacy-login.md)
-      + [API:er som påverkas av migreringen](user-management2/user-migration/developer.md)
+   + Användning av serversamtal {#server-call-usage}
+      + [Översikt över användningen av serversamtal](admin/c-server-call-usage/overage-overview.md)
+      + [Visa aktuell användning av serversamtal](admin/c-server-call-usage/server-call-usage-dashboard.md)
+      + [Visa användning av rapportsvit](admin/c-server-call-usage/report-suite-usage.md)
+      + [Användningsvarningar för serversamtal](admin/c-server-call-usage/scu-alerts.md)
+      + [Vanliga frågor om användning av serversamtal](admin/c-server-call-usage/overage-faq.md)
 + Datastyrning {#data-governance}
    + [Adobe Analytics och GDPR](c-data-governance/an-gdpr-overview.md)
    + [Adobe Analytics och CCPA](c-data-governance/an-ccpa-overview.md)
@@ -178,10 +184,4 @@ ht-degree: 82%
    + [Exempel på etiketter](c-data-governance/gdpr-labeling-example.md)
    + [Datasekretess och Data Connectors (Genesis)](c-data-governance/data-connectors-gdpr.md)
    + [Terminologi för datasekretess](c-data-governance/gdpr-terminology.md)
-+ Användning av serversamtal {#server-call-usage}
-   + [Översikt över användningen av serversamtal](c-server-call-usage/overage-overview.md)
-   + [Visa aktuell användning av serversamtal](c-server-call-usage/server-call-usage-dashboard.md)
-   + [Visa användning av rapportsvit](c-server-call-usage/report-suite-usage.md)
-   + [Användningsvarningar för serversamtal](c-server-call-usage/scu-alerts.md)
-   + [Vanliga frågor om användning av serversamtal](c-server-call-usage/overage-faq.md)
 + [Admin-API](c-admin-api/c-admin-api.md)
