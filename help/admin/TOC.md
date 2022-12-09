@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 82%
@@ -53,7 +53,6 @@ ht-degree: 82%
    + [Standardmått](admin/default-metrics.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Loggar](admin/logs.md)
-   + [Marknadsföringskanaler](admin/marketing-channels-admin.md)
    + [Måttsynlighet](admin/metric-visibility.md)
    + [Apphantering](admin/mobile-management.md)
    + [Inställningshanteraren](admin/preferences-manager.md)
@@ -138,6 +137,13 @@ ht-degree: 82%
                + [Översikt över slutförda händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md)
                + [Konfigurera slutförda händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/t-success-events.md)
                + [Om att ändra händelsetypen](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/event-type.md)
+         + [Marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md)
+         + Trafikhantering {#traffic-management}
+            + [Hantera trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-management.md)
+            + [Schemalägg en trafiktopp](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)
+            + [Uppskatta tidigare serveranrop och schemalägg en trafiktopp](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-spike-estimate-past-server-calls.md)
+            + [Ange permanent trafikökning](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
+            + [Ledtid som krävs för trafikökningar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-lead-time.md)
    + Vidarebefordran på serversidan {#server-side-forwarding}
       + [Översikt över vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf.md)
       + [GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-gdpr.md)
@@ -178,10 +184,4 @@ ht-degree: 82%
    + [Visa användning av rapportsvit](c-server-call-usage/report-suite-usage.md)
    + [Användningsvarningar för serversamtal](c-server-call-usage/scu-alerts.md)
    + [Vanliga frågor om användning av serversamtal](c-server-call-usage/overage-faq.md)
-+ Trafikhantering {#traffic-management}
-   + [Hantera trafik](c-traffic-management/traffic-management.md)
-   + [Schemalägg en trafiktopp](c-traffic-management/t-traffic-schedule-spike.md)
-   + [Uppskatta tidigare serveranrop och schemalägg en trafiktopp](c-traffic-management/traffic-spike-estimate-past-server-calls.md)
-   + [Ange permanent trafikökning](c-traffic-management/t-traffic-permanent.md)
-   + [Ledtid som krävs för trafikökningar](c-traffic-management/traffic-lead-time.md)
 + [Admin-API](c-admin-api/c-admin-api.md)

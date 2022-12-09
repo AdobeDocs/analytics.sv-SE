@@ -4,7 +4,7 @@ keywords: data saknas;långsam
 title: Datatillgänglighet och fördröjning
 feature: Data Configuration and Collection
 exl-id: fedef3ea-dde6-460f-90e3-1e661ed29b78
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Vissa funktioner i Adobe Experience Cloud har en kort latenstid utöver den vanl
 
 Det finns flera strategier för att förhindra fördröjning eller minska återställningstiden när den inträffar:
 
-* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiksprång på er webbplats, kan det finnas fall där ni förväntar er en betydande ökning av trafiken. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe ge er organisation möjlighet att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin om du vill veta hur du kan meddela Adobe om ökad trafik.
+* **Meddela Adobe om förväntade trafiktoppar:** Även om det är omöjligt att förutse varje trafiksprång på er webbplats, kan det finnas fall där ni förväntar er en betydande ökning av trafiken. Exempel är en särskilt framgångsrik semesterperiod, eller kort efter en stor kampanjkampanj. I dessa fall kan Adobe ge er organisation möjlighet att informera oss om förväntade trafikökningar så att vi kan tilldela ytterligare bearbetningsresurser till ert rapporteringsprogram. Se [Schemalägg en trafiktoppning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin om du vill veta hur du kan meddela Adobe om ökad trafik.
 * **Överväg att läsa in när du aktiverar nya funktioner:** Vissa funktioner är mer bearbetningsintensiva än andra. Ju fler funktioner som är aktiverade i en rapportserie, desto svårare är det att återställa efter fördröjning. När du aktiverar funktioner i en rapportserie bör du tänka på följande funktioner som ökar mängden data som ska bearbetas:
 
    * Implementera mer än 20 händelser på samma sida

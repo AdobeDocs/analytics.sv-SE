@@ -3,7 +3,7 @@ title: Första beröringskanalen
 description: Den första marknadsföringskanalen inom besökarens förfallodatum för engagemang.
 feature: Dimensions
 exl-id: cca9794c-1305-4e54-aa13-809b9ebc6230
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: ee27311cac5b61dea4d8e850e67126e5fe1d649d
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Dimensionen Första beröringskanal rapporterar den första marknadsföringskana
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar direkt till kanalnamn som du har definierat i [Marknadskanalchef](/help/admin/admin/marketing-channels-admin.md).
+Den här dimensionen refererar direkt till kanalnamn som du har definierat i [Marknadskanalchef](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md).
 
 Varje träff som skickas till datainsamlingsservrar i Adobe går igenom rapportsvitens regler för bearbetning av marknadsföringskanaler. Den itererar igenom varje regel i numerisk ordning tills den hittar en matchning där marknadsföringskanalen knyts till träffen. Den första beröringskanalen stannar kvar hos besökaren tills de inte besöker webbplatsen längre än besökarengagemangsperioden (30 dagar som standard).
 

@@ -4,7 +4,7 @@ keywords: Datafeed;bästa praxis;trafikspik;timvis;ftp
 title: God praxis och allmän information
 feature: Data Feeds
 exl-id: 5f6fbc13-b176-4f69-8f2d-7accc6e6ac2d
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Nedan följer några tips om hur du bäst hanterar och levererar dataflöden.
 
-* Försäkra dig om att du i förväg informerar om förväntade trafiktoppar. Latens påverkar bearbetningstiden direkt för dataflöden. Se [Schemalägg en trafiktoppning](/help/admin/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin.
+* Försäkra dig om att du i förväg informerar om förväntade trafiktoppar. Latens påverkar bearbetningstiden direkt för dataflöden. Se [Schemalägg en trafiktoppning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md) i användarhandboken för Admin.
 
 * Dataflöden innehåller inte något servicenivåavtal såvida det inte uttryckligen anges i ditt avtal med Adobe. Feeds levereras vanligtvis inom flera timmar efter att rapportfönstret har passerat, men kan ibland ta upp till 12 timmar eller mer.
 

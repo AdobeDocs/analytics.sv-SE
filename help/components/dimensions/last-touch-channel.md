@@ -3,7 +3,7 @@ title: Senaste pekkanal
 description: Den senaste marknadsföringskanalen inom besökarens förfallodatum för engagemang.
 feature: Dimensions
 exl-id: 62a47de5-ee1a-4394-aa63-75cdda92ba6a
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Dimensionen&quot;Sista beröringskanalen&quot; rapporterar den senaste marknadsf
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar direkt till kanalnamn som du har definierat i [Marknadskanalchef](/help/admin/admin/marketing-channels-admin.md).
+Den här dimensionen refererar direkt till kanalnamn som du har definierat i [Marknadskanalchef](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md).
 
 Varje träff som skickas till datainsamlingsservrar i Adobe går igenom rapportsvitens regler för bearbetning av marknadsföringskanaler. Den itererar igenom varje regel i numerisk ordning tills den hittar en matchning där marknadsföringskanalen knyts till träffen. Den sista beröringskanalen behålls med besökaren tills de inte besöker webbplatsen längre än besökarengagemangsperioden (30 dagar som standard).
 
