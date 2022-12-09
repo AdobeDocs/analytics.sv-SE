@@ -4,7 +4,7 @@ title: Beräknade mätvärden
 feature: Report Builder
 role: User, Admin
 exl-id: 462086eb-675f-443c-b3a6-b4fa390254da
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 13%
@@ -25,7 +25,7 @@ I steg 2 i begärandeguiden kan du filtrera och använda beräknade värden.
 
 ## Filtrera beräknade värden {#section_376E986D3E684999A7CDB08E53854159}
 
-**Filter** beräknade mätvärden genom att klicka på filterikonen:  ![](assets/segment_filter.png)
+**Filter** beräknade mätvärden genom att klicka på filterikonen:  ![](/help/admin/admin/assets/filter.png)
 
 . Dialogrutan Avancerade filter innehåller både standardvärden och beräknade värden.
 

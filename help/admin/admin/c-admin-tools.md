@@ -3,7 +3,7 @@ description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 feature: Admin Tools
 exl-id: 1f31749f-10ce-4cff-81fb-141b37824c5f
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: 17b5185e5358d661157c20a2504cacdbd4a2cc3d
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 34%
@@ -23,7 +23,7 @@ ht-degree: 34%
 + [Kodhanteraren](code-manager-admin.md)
 + [Konverteringsvariabler (eVar)](conversion-var-admin/conversion-var-admin.md)
 + [Valutakoder](currency.md)
-+ [Anpassade rapportbeskrivningar](custom-desc-admin.md)
++ [Anpassade rapportbeskrivningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/custom-desc-admin.md)
 + [Anpassa kalender](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md)
 + [Datakällor](data-sources.md)
 + [Standardmått](default-metrics.md)
@@ -46,6 +46,6 @@ ht-degree: 34%
 + [Enklare rapportmeny](t-simplified-menu.md)
 + [Översikt över slutförda händelser](c-success-events/success-event.md)
 + [Tidsstämplar (valfritt)](timestamp-optional.md)
-+ [Översikt över trafikvariabeln (prop)](c-traffic-variables/traffic-var.md)
++ [Översikt över trafikvariabeln (prop)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md)
 + [Ange variabeln Unik besökare](unique-visitor-variable-admin/t-unique-visitor-variable.md)
 + [Videohantering](video-management.md)

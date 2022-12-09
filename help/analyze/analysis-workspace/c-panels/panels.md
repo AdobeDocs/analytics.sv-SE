@@ -4,10 +4,10 @@ title: Översikt över paneler
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: bcfcba4093f051e2d4132fb2c45ab66d76ba192d
+source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1074'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +64,7 @@ Med panelens listzon kan du tillämpa segment- och listrutefilter på alla tabel
 
 Dra och släpp ett segment från den vänstra listen i panelens släppzon för att börja filtrera panelen.
 
-![](assets/segment-filter.png)
+![](/help/admin/admin/assets/filter.png)
 
 ### Ad hoc-segmentfilter
 
@@ -72,7 +72,7 @@ Komponenter som inte är segmentkomponenter kan också dras direkt till släppzo
 
 Ad hoc-segment är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
 
-![](assets/adhoc-segment-filter.png)
+![](/help/admin/admin/assets/filter.png)
 
 ### Nedrullningsbara filter {#dropdown-filter}
 

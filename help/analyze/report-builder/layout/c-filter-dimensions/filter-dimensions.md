@@ -5,9 +5,9 @@ uuid: c54d5add-f278-476d-8f14-73f1c2e37671
 feature: Report Builder
 role: User, Admin
 exl-id: eded07d5-3c06-419b-92fd-1a48856ac293
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 9%
 
 ---
@@ -20,9 +20,9 @@ Det valda filterformuläret fylls i baserat på det element och mått som valts 
 
 ## Definiera filter - värden och specialtecken {#section_15840216A4044C40974945FAA435AD93}
 
-Information om filter i panelen **[!UICONTROL Most Popular Filter]** > **[!UICONTROL Define Filter]**.
+Information om filter i **[!UICONTROL Most Popular Filter]** > **[!UICONTROL Define Filter]** -panelen.
 
-![](assets/define_filter.png)
+![](/help/admin/admin/assets/filter.png)
 
 Följande tabeller innehåller exempel och information om filter:
 
@@ -40,7 +40,7 @@ Följande tabeller innehåller exempel och information om filter:
    <td colname="col1"> <p>Innehåller alla termer </p> </td> 
    <td colname="col02"> <p>Innehåller alla blankstegsavgränsade värden i valfri ordning. </p> </td> 
    <td colname="col2"> <p>a b c </p> </td> 
-   <td colname="col3"> <p>Matchar <span class="term"> a b c</span>och <span class="term"> b a c</span> o.s.v. </p> </td> 
+   <td colname="col3"> <p>Matchar <span class="term"> a b c</span>och <span class="term"> b a c</span>och så vidare. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Innehåller valfri term </p> </td> 
@@ -64,13 +64,13 @@ Följande tabeller innehåller exempel och information om filter:
    <td colname="col1"> <p>Innehåller inte frasen </p> </td> 
    <td colname="col02"> <p>Returnerar allt som inte innehåller din fras. </p> </td> 
    <td colname="col2"> <p>abc </p> </td> 
-   <td colname="col3"> <p>Utesluter <span class="term"> abc</span>, <span class="term"> abc def</span> och matchar <span class="term"> def</span> </p> </td> 
+   <td colname="col3"> <p>Exkluderar <span class="term"> abc</span>, <span class="term"> abc def</span> och matchningar <span class="term"> def</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Är lika med </p> </td> 
    <td colname="col02"> <p>Returnerar en exakt matchning. </p> </td> 
    <td colname="col2"> <p>abc </p> </td> 
-   <td colname="col3"> <p> <span class="term"> abcis </span> returnerades, och inget annat. </p> </td> 
+   <td colname="col3"> <p> <span class="term"> abc</span> returneras, och inget annat. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Är inte lika med </p> </td> 
@@ -94,7 +94,7 @@ Följande tabeller innehåller exempel och information om filter:
    <td colname="col1"> <p>Avancerat (specialtecken) </p> </td> 
    <td colname="col02"> <p>Här kan du skriva regextecken: </p> <p> <code> "", ^, -, *, $, | </code> </p> </td> 
    <td colname="col2"> <p>"^Home*Page$" | sport </p> </td> 
-   <td colname="col3"> <p> Detta definierar ett filter som börjar med <span class="term"> Home</span>, letar efter noll eller flera tecken och slutar sedan med <span class="term"> Page</span>. </p> <p>Alla sidor med <span class="term"> sport</span> i den. </p> <p>Några exempel matchar: </p> 
+   <td colname="col3"> <p> Detta definierar ett filter som börjar med <span class="term"> Startsida</span>och söker sedan efter noll eller flera tecken och slutar sedan med <span class="term"> Sida</span>. </p> <p>Alla sidor med <span class="term"> sport</span> i den. </p> <p>Några exempel matchar: </p> 
     <ul id="ul_72D76C5AFEAF405E8A0E4E3C604D10AE"> 
      <li id="li_4D490059B667450DA8A0103167C7B391">HomePage </li> 
      <li id="li_1351619156274092AEB2771D882AD357">Home and (other characters) Page </li> 
@@ -119,7 +119,7 @@ Följande tabeller innehåller exempel och information om filter:
   <tr> 
    <td colname="col1"> " " </td> 
    <td colname="col2"> Är lika med </td> 
-   <td colname="col3"> <p>Inte escape-konverterad om den inte paras med ett annat citattecken. Exempelvis är <span class="term"> 17" Display</span> inte en fras. </p> </td> 
+   <td colname="col3"> <p>Inte escape-konverterad om den inte paras med ett annat citattecken. Till exempel: <span class="term"> 17-tums bildskärm</span> är inte en fras. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> * </td> 
@@ -144,7 +144,7 @@ Följande tabeller innehåller exempel och information om filter:
   <tr> 
    <td colname="col1"> | </td> 
    <td colname="col2"> eller </td> 
-   <td colname="col3"> <p>Stöds endast i <span class="term">-filtret Avancerat (specialtecken)</span>. </p> </td> 
+   <td colname="col3"> <p>Stöds endast i <span class="term"> Avancerat (specialtecken)</span> filter. </p> </td> 
   </tr> 
  </tbody> 
 </table>

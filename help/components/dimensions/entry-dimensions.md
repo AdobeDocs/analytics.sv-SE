@@ -4,7 +4,7 @@ description: Visar postdimensioner och deras användning.
 keywords: startsida, startwebbplatsavsnitt, startserver, anpassad information
 feature: Dimensions
 exl-id: 424e2a9a-05ac-4397-921b-c8d7567348ed
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 1e8f2bdb7a20f21f6ff1a4d78d4db20963af6b45
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 *Den här hjälpsidan beskriver hur poster fungerar som en dimension. Mer information om hur poster fungerar som mått finns i [Poster](../metrics/entries.md) mätvärden.*
 
-Ingångsdimensioner är besöksbaserade. De registrerar den första dimensionsposten och behåller den under hela besökets längd. Postdimensioner är tillgängliga för alla variabler med panorering aktiverad under [Trafikvariabler](/help/admin/admin/c-traffic-variables/traffic-var.md) i Rapportsvitens inställningar.
+Ingångsdimensioner är besöksbaserade. De registrerar den första dimensionsposten och behåller den under hela besökets längd. Postdimensioner är tillgängliga för alla variabler med panorering aktiverad under [Trafikvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) i Rapportsvitens inställningar.
 
 ## Fyll i postdimensioner med data
 

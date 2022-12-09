@@ -3,7 +3,7 @@ description: Beskriver förbättringar av vidarebefordran på serversidan som ha
 title: GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan
 feature: Server-Side Forwarding
 exl-id: 54e43a16-8f15-4ee8-9aa2-579af30be2c9
-source-git-commit: ee56267979979f8e03b1c6a0d849ccf994599024
+source-git-commit: 1e8f2bdb7a20f21f6ff1a4d78d4db20963af6b45
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 3%
@@ -38,7 +38,7 @@ Du kan använda Adobe Analytics för att rapportera hur mycket av er trafik som 
 Om du vill konfigurera den här typen av rapportering mappar du den nya kontextvariabeln till en anpassad trafikvariabel (prop) via bearbetningsregler. Gör så här
 
 1. Implementera variabeln &quot;cm.ssf&quot; (som visas ovan).
-1. [Aktivera säljaren.](/help/admin/admin/c-traffic-variables/traffic-var.md)
+1. [Aktivera säljaren.](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md)
 1. Använd bearbetningsregler för att mappa kontextvariabeln till säljaren.
 
    1. Gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** väljer du sedan en rapportserie.

@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 89d5c1e59e0cf5167eb7858caa0f9090d527a9c4
+source-git-commit: 17b5185e5358d661157c20a2504cacdbd4a2cc3d
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 82%
@@ -56,7 +56,6 @@ ht-degree: 82%
       + [Listvariabler](admin/conversion-var-admin/list-var-admin.md)
       + [Marknadsförande eVars](admin/conversion-var-admin/merchandising-evars.md)
    + [Valutakoder](admin/currency.md)
-   + [Anpassade rapportbeskrivningar](admin/custom-desc-admin.md)
    + [Datakällor](admin/data-sources.md)
    + [Standardmått](admin/default-metrics.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
@@ -127,6 +126,11 @@ ht-degree: 82%
                   + [Ange en händelse med hjälp av en kontextdatavariabel](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md)
                   + [Ta bort en händelse från en träff](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-remove-event.md)
                + [Tips och tricks för regler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-tips.md)
+         + Trafikvariabler {#traffic-variables}
+            + [Översikt över trafikvariabeln (prop)](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md)
+            + [Aktivera rapporter för trafikvariabel](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/t-traffic-variable.md)
+            + [Trafikklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-classifications.md)
+            + [Anpassade rapportbeskrivningar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/custom-desc-admin.md)
    + Vidarebefordran på serversidan {#server-side-forwarding}
       + [Översikt över vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf.md)
       + [GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-gdpr.md)
@@ -140,10 +144,6 @@ ht-degree: 82%
       + [Konfigurera slutförda händelser](admin/c-success-events/t-success-events.md)
       + [Om att ändra händelsetypen](admin/c-success-events/event-type.md)
    + [Tidsstämplar (valfritt)](admin/timestamp-optional.md)
-   + Trafikvariabler {#traffic-variables}
-      + [Översikt över trafikvariabeln (prop)](admin/c-traffic-variables/traffic-var.md)
-      + [Aktivera rapporter för trafikvariabel](admin/c-traffic-variables/t-traffic-variable.md)
-      + [Trafikklassificeringar](admin/c-traffic-variables/traffic-classifications.md)
    + Unik besökarvariabel {#unique-visitor-variable}
       + [Ange variabeln Unik besökare](admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
       + [Användningsfall – extrahera besökar-ID:n](admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)

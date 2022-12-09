@@ -4,7 +4,7 @@ description: Dimensionerna och måtten som Rapporter och analyser använder för
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: e3c23d17-fc4b-479e-9c48-6f27ef0de4e3
-source-git-commit: 35e7c8bccb8524fa5e87cae223f0854956c7528a
+source-git-commit: 17b5185e5358d661157c20a2504cacdbd4a2cc3d
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 0%
@@ -115,7 +115,7 @@ Innehåller rapporter som gör att du kan se sökdata för besökare.
 
 >[!NOTE]
 >
->Andra rapporter kan visas i den här mappen. De är andra dimensioner, till exempel proppar, där du har [målning aktiverad](../../admin/admin/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar.
+>Andra rapporter kan visas i den här mappen. De är andra dimensioner, till exempel proppar, där du har [målning aktiverad](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar.
 
 ## Trafikkällor
 

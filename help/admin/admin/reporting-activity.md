@@ -4,7 +4,7 @@ title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
 exl-id: f638c6a9-1c2c-4936-a787-281269f95afc
-source-git-commit: 21270e1a4f05208525261969c2e6858df8647aa1
+source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 2%
@@ -33,13 +33,13 @@ I Adobe Analytics går administratörer till **[!UICONTROL Admin]** > **[!UICONT
 
 Du behöver behörigheten Produktadministratör för Analytics (i Adobe Admin Console) för att hantera rapporteringsaktivitet.
 
-![behörighet](assets/rep-mgr-permission.png)
+![behörighet](/help/admin/admin/assets/rep-mgr-permission.png)
 
 ## Visa rapportkön
 
 När du öppnar [!UICONTROL Reporting Activity] På sidan Översikt över chefen visas en lista med dina aktiverade basrapportsviter.
 
-![rapportkö](assets/reporting-activity1.png)
+![rapportkö](/help/admin/admin/assets/reporting-activity1.png)
 
 | Gränssnittselement | Beskrivning |
 | --- | --- |
@@ -62,7 +62,7 @@ När du öppnar [!UICONTROL Reporting Activity] På sidan Översikt över chefen
 
 Klicka på titellänken för en rapportserie som du vill visa information om.
 
-![rapportsvit](assets/indiv-report-ste.png)
+![rapportsvit](/help/admin/admin/assets/indiv-report-ste.png)
 
 ### Linjediagram
 
@@ -72,17 +72,17 @@ Raddiagrammet visar rapporteringsaktiviteten för den valda rapportsviten under 
 * Y-axeln visar den genomsnittliga väntetiden för en fråga i sekunder.
 * Du kan hovra över linjediagrammet för att visa punkter i tid och genomsnittlig väntetid för det tillfället.
 
-   ![detalj](assets/detail.png)
+   ![detalj](/help/admin/admin/assets/detail.png)
 
 ### Filter
 
 Du kan filtrera tabellen efter program (se listan i tabellen nedan), efter användare och efter projekt.
 
-![filter](assets/filter.png)
+![filter](/help/admin/admin/assets/filter.png)
 
 ### Sammanfattningsnummer
 
-![filter](assets/summary_numbers.png)
+![filter](/help/admin/admin/assets/summary_numbers.png)
 
 Följande information visas i sammanfattningsnumren:
 
@@ -127,11 +127,11 @@ Så här avbryter du en begäran
 1. I **[!UICONTROL Cancel x query]** -fönstret som visas kan du ändra avbrottsmeddelandet om det behövs.
 1. Klicka på **[!UICONTROL Continue]**.
 
-   ![cancel-query](assets/cancel-query.png)
+   ![cancel-query](/help/admin/admin/assets/cancel-query.png)
 
 Programanvändare i Workspace ser till exempel följande meddelande i sina projekt:
 
-![cancel-user-notice](assets/cancel-user-facing.png)
+![cancel-user-notice](/help/admin/admin/assets/cancel-user-facing.png)
 
 ## Frågor och svar
 

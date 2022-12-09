@@ -3,9 +3,9 @@ title: egenskap
 description: Anpassade variabler som du kan använda i implementeringen.
 feature: Variables
 exl-id: 0d0ff8cd-1d8c-4263-866d-e51ad66148b0
-source-git-commit: 5df83f1614d9d17146873a5b5214636691ec87ab
+source-git-commit: 17b5185e5358d661157c20a2504cacdbd4a2cc3d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Listtecken är en inställning som används för att tillåta variabeln att inne
 
 ### Konfigurera listproffs
 
-Aktivera inledande lista [Trafikvariabler](/help/admin/admin/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Kontrollera att den önskade avgränsaren är korrekt konfigurerad. Adobe har ingen standardavgränsare.
+Aktivera inledande lista [Trafikvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Kontrollera att den önskade avgränsaren är korrekt konfigurerad. Adobe har ingen standardavgränsare.
 
 >[!TIP]
 >

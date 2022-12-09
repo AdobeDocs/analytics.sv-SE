@@ -3,7 +3,7 @@ description: Du kan inte kombinera klassificeringsregelverktyget med underklassi
 title: Underklassificeringar och Rule Builder
 feature: Classifications
 exl-id: 745d6149-bcb1-48ad-abbe-63a9d009fa27
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 2%
@@ -44,7 +44,7 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    Exempel:
 
-   ![Steginformation](assets/sub_class_create.png)
+   ![Steginformation](/help/admin/admin/assets/sub_class_create.png)
 
 1. I [Klassificeringsregelverktyget](/help/components/classifications/crb/classification-rule-builder.md), klassificera underklassificeringsnyckeln från den ursprungliga spårningskoden.
 
@@ -67,8 +67,8 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    | Nyckel | Kanal | Kampanjkod | Kod&amp;hatt för stor kampanj;Kampanjtyp | Kod&amp;hatt för stor kampanj;Campaign Director | ... |
    |---|---|---|---|---|---|
-   | * |  | 111 | Varumärke | Suzanne |  |
-   | * |  | 222 | Varumärke | Frank |  |
+   | &#42; |  | 111 | Varumärke | Suzanne |  |
+   | &#42; |  | 222 | Varumärke | Frank |  |
 
 1. Om du vill underhålla uppslagstabellerna överför du en liten fil (som visas ovan).
 

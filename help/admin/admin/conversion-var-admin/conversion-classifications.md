@@ -3,7 +3,7 @@ description: Klassificeringar används för att kategorisera värden i grupper o
 title: Konverteringsklassificeringar
 feature: Classifications
 exl-id: b4855000-adf3-4e3b-af36-f4803383126d
-source-git-commit: 0ec9d6fd44f1f6eb565f8602cc5a2d449556d0ee
+source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 3%
@@ -40,7 +40,7 @@ Steg som beskriver hur du lägger till konverteringsklassificeringar i Admin.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**.
 1. Från **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
 
-   ![Steginformation](../assets/sub_class_create.png)
+   ![Steginformation](/help/admin/admin/assets/sub_class_create.png)
 
 1. För musen över **[!UICONTROL Edit Classification]** ikon och sedan välja **[!UICONTROL Add Classification]**.
 1. I **[!UICONTROL Select Type]** väljer du den typ av klassificering som du vill lägga till i variabeln.
