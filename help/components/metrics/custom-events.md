@@ -3,7 +3,7 @@ title: Anpassade händelser
 description: Antalet träffar där en anpassad händelse finns.
 feature: Metrics
 exl-id: 9ae3ff53-8634-466a-a9f6-786c1e62c2fa
-source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Anpassade händelsemått visar antalet träffar där en viss anpassad händelse 
 
 ## Hur det här måttet beräknas
 
-Anpassade händelser beräknas på olika sätt beroende på typ. Du kan kontrollera en händelsetyp under [Slutförda händelser](../../admin/admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
+Anpassade händelser beräknas på olika sätt beroende på typ. Du kan kontrollera en händelsetyp under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
 
 * **Räknarhändelser**: Standardinställningen för händelse. De flesta händelser är räknehändelser. Räknar antalet träffar där den matchande anpassade händelsen `event1` - `event1000` finns i [`events`](/help/implement/vars/page-vars/events/events-overview.md) variabel.
 * **Numeriska händelser**: Summerar det numeriska värde som tilldelats händelsen i `events` variabel.

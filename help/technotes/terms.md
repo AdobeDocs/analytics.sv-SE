@@ -2,7 +2,7 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Admin Console:** Kan referera till:
    * Äldre administrationsverktyg, där rapportsvitens inställningar i Adobe Analytics hanteras. I tidigare versioner av Adobe Analytics hanterades även användarbehörigheter här. Se [Administratörsverktyg](/help/admin/admin/c-admin-tools.md) i användarhandboken för Admin.
    * Admin Console i Adobe, där produktåtkomst tillhandahålls och användarbehörigheter hanteras. Se [Admin Console](/help/admin/admin-console/home.md) i användarhandboken för Admin.
-* **Allokering:** Om en konverteringsvariabel påträffar mer än ett värde under ett besök avgör variabelns allokeringsinställning vilket värde som behålls. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i användarhandboken för Admin.
+* **Allokering:** Om en konverteringsvariabel påträffar mer än ett värde under ett besök avgör variabelns allokeringsinställning vilket värde som behålls. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i användarhandboken för Admin.
 * **Analysis Workspace:** Webbläsarlösning för att skapa stabila, anpassade analysprojekt och demokratisera insikter. Ger större rapportflexibilitet än Reports and Analytics.
 * **Anomaly:** Identifierades med statistisk modellering för att automatiskt hitta oväntade trender i data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. Se [Analysidentifiering](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) i användarhandboken för Analysera.
 * **AppMeasurement:** Kodbiblioteket som används för att samla in data och skicka dem till Adobe. Se [Hemsida](/help/implement/home.md) i Implementera användarhandboken.
@@ -55,7 +55,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **eVar:** Se Konverteringsvariabel.
 * **Händelse:** Se Success event.
 * **ExcelClient:** Används inte längre som term. Namnet på föregångaren till Report Builder.
-* **Förfallodatum:** I kontexten för en konverteringsvariabel, hur länge värdet finns kvar på serverdelen. Denna beständighet gör att händelser kan associeras med variabelvärden före händelsens träff. Se [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i användarhandboken för Admin.
+* **Förfallodatum:** I kontexten för en konverteringsvariabel, hur länge värdet finns kvar på serverdelen. Denna beständighet gör att händelser kan associeras med variabelvärden före händelsens träff. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i användarhandboken för Admin.
 * **Flöde:** En typ av visualisering i Analysis Workspace som visar vilka sökvägar användare har på din webbplats. Se [Flödesvisualisering](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) i användarhandboken för Analysera.
 * **Genesis:** Används inte längre som term. Det tidigare namnet på Data Connectors.
 * **Global rapportsvit:** En informell term som tilldelats en rapportserie som samlar in träffar från flera webbplatser.
@@ -74,7 +74,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Marknadsföringskanal:** En funktion i Adobe Analytics som kategoriserar träffar efter hur de kom till din webbplats. Den logik som används för att kategorisera träffar kan anpassas med regler för bearbetning av marknadsföringskanaler. Se [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) i användarhandboken för komponenter.
 * **Mått:** En komponenttyp som innehåller kvantitativa data. Mätvärden innehåller vanligtvis siffror, t.ex. sidvyer, besök och Intäkter. En dimension är vanligtvis dess motsvarighet.
 * **Mobiltjänster:** Sammanför funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud så att ni kan förstå och förbättra användarengagemanget med era program. Se [Mobiltjänster - översikt](https://experienceleague.adobe.com/docs/mobile-services/using/home.html).
-* **Märk flera programsviter:** Att skicka samma träff till flera rapportsviter. I och med introduktionen till virtuella rapportsviter är detta i stort sett inte längre nödvändigt. De flesta satsningar på taggning av flera programsviter bidrar till att ge plats åt en global rapportserie.
+* **Märk flera programsviter:** Att skicka samma träff till flera rapportsviter. I och med introduktionen till virtuella rapportsviter är denna praxis i stort sett inte längre nödvändig. De flesta satsningar på taggning av flera programsviter bidrar till att ge plats åt en global rapportserie.
 * **Normalisering:** Ett sätt att organisera en visualisering som tar alla mätvärden och tvingar dem till samma proportioner, vilket gör det enklare att jämföra trender.
 * **Förekomster:** En typ av mätvärde som visar hur många träffar en dimensionsuppgift har angetts eller beständig. Se [Förekomster](/help/components/metrics/occurrences.md) i användarhandboken för komponenter.
 * **Omniture:** Används inte längre som term. Organisationen som ägde Adobe Analytics innan Adobe förvärvades 2009.

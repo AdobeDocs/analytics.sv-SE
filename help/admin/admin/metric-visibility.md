@@ -3,7 +3,7 @@ description: Du kan dölja standardvärden (inbyggda), anpassade händelser och 
 title: Måttsynlighet
 feature: Admin Tools
 exl-id: 8ff06677-a9fc-4a12-bf8d-8a7ce05db922
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 Du kan dölja standardvärden (inbyggda), anpassade händelser och inbyggda händelser i Menu, Metric Selectors, Calculated Metric Builder och Segment Builder.
 
-1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Success Events]**. [Mer...](/help/admin/admin/c-success-events/t-success-events.md)
+1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Success Events]**. [Mer...](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/t-success-events.md)
 1. Ställ in synlighetskolumnen på antingen **[!UICONTROL Visible Everywhere]**, **[!UICONTROL Builders]**, eller **[!UICONTROL Hidden Everywhere]**.
 
 Denna inställning påverkar inte datainsamlingen för detta mätresultat. påverkar bara synligheten i användargränssnittet. Så här påverkar inställningarna synligheten för måtten i användargränssnittet:

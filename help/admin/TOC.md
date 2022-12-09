@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 17b5185e5358d661157c20a2504cacdbd4a2cc3d
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 82%
@@ -48,18 +48,10 @@ ht-degree: 82%
       + [Vanliga robotsignaturer](admin/bot-removal/bot-signatures.md)
       + [Punktexkluderingsmetoder](admin/bot-removal/bot-exclusion-methods.md)
    + [Kodhanteraren](admin/code-manager-admin.md)
-   + Konverteringsvariabler {#conversion-variables}
-      + [Konverteringsvariabler (eVars)](admin/conversion-var-admin/conversion-var-admin.md)
-      + [Redigera konverteringsvariabler](admin/conversion-var-admin/t-conversion-variables-admin.md)
-      + [Konverteringsklassificeringar](admin/conversion-var-admin/conversion-classifications.md)
-      + [Klassificeringshierarkier](admin/conversion-var-admin/classification-hierarchies.md)
-      + [Listvariabler](admin/conversion-var-admin/list-var-admin.md)
-      + [Marknadsförande eVars](admin/conversion-var-admin/merchandising-evars.md)
    + [Valutakoder](admin/currency.md)
    + [Datakällor](admin/data-sources.md)
    + [Standardmått](admin/default-metrics.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
-   + [Hitta metoder](admin/finding-methods.md)
    + [Loggar](admin/logs.md)
    + [Marknadsföringskanaler](admin/marketing-channels-admin.md)
    + [Måttsynlighet](admin/metric-visibility.md)
@@ -131,6 +123,21 @@ ht-degree: 82%
             + [Aktivera rapporter för trafikvariabel](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/t-traffic-variable.md)
             + [Trafikklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-classifications.md)
             + [Anpassade rapportbeskrivningar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/custom-desc-admin.md)
+         + Konverteringsvariabler {#conversion-variables}
+            + [Konverteringsvariabler (eVars)](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md)
+            + [Redigera konverteringsvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/t-conversion-variables-admin.md)
+            + [Konverteringsklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md)
+            + [Klassificeringshierarkier](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/classification-hierarchies.md)
+            + [Listvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md)
+            + [Marknadsförande eVars](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/merchandising-evars.md)
+            + [Hitta metoder](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/finding-methods.md)
+            + Unik besökarvariabel {#unique-visitor-variable}
+               + [Ange variabeln Unik besökare](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
+               + [Användningsfall – extrahera besökar-ID:n](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
+            + Slutförda händelser {#success-events}
+               + [Översikt över slutförda händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md)
+               + [Konfigurera slutförda händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/t-success-events.md)
+               + [Om att ändra händelsetypen](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/event-type.md)
    + Vidarebefordran på serversidan {#server-side-forwarding}
       + [Översikt över vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf.md)
       + [GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-gdpr.md)
@@ -139,14 +146,7 @@ ht-degree: 82%
       + [Så här verifierar du implementeringen av vidarebefordring på serversidan](admin/c-server-side-forwarding/ssf-verify.md)
       + [Vanliga frågor om vidarebefordran på serversidan](admin/c-server-side-forwarding/ssf-faq.md)
    + [Enklare rapportmeny](admin/t-simplified-menu.md)
-   + Slutförda händelser {#success-events}
-      + [Översikt över slutförda händelser](admin/c-success-events/success-event.md)
-      + [Konfigurera slutförda händelser](admin/c-success-events/t-success-events.md)
-      + [Om att ändra händelsetypen](admin/c-success-events/event-type.md)
    + [Tidsstämplar (valfritt)](admin/timestamp-optional.md)
-   + Unik besökarvariabel {#unique-visitor-variable}
-      + [Ange variabeln Unik besökare](admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
-      + [Användningsfall – extrahera besökar-ID:n](admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
    + [Videohantering](admin/video-management.md)
 + Användar- och produkthantering (äldre) {#user-product-management}
    + [Hantering av användare och produkter](user-management2/user-management.md)

@@ -2,7 +2,7 @@
 title: Importera mått för betald sökning
 description: Steg för att konfigurera Adobe Analytics att spåra dina betalda sökvärden (t.ex. Google AdWords, MSN, Yahoo osv.) med datakällor.
 exl-id: b25a2a26-d277-4a51-9194-973acb425095
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -65,7 +65,7 @@ The [!UICONTROL Data Source Activation Wizard] visar:
 1. Klicka **[!UICONTROL Next]** och namnge datakällan. Det här namnet visas i Data Source Manager.
 1. Godkänn serviceavtalet och klicka på **[!UICONTROL Next]**.
 1. Välj tre standardmått: [!UICONTROL Impressions], [!UICONTROL Clicks] och [!UICONTROL Total Cost] och klicka **[!UICONTROL Next]**.
-1. Mappa nu den här nya datakällan till anpassade händelser som vi skapade i [Konfigurera lyckade händelser](/help/admin/admin/c-success-events/t-success-events.md).
+1. Mappa nu den här nya datakällan till anpassade händelser som vi skapade i [Konfigurera lyckade händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/t-success-events.md).
 
    ![Mappning](assets/data-source-mapping.png)
 

@@ -3,7 +3,7 @@ title: eVar (dimension)
 description: En anpassad dimension som du kan använda vid rapportering.
 feature: Dimensions
 exl-id: ce7cc999-281d-4c52-b64d-d44cc320ab2d
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 *Den här hjälpsidan beskriver hur eVars fungerar som en dimension. Mer information om hur du implementerar eVars finns i [eVars](/help/implement/vars/page-vars/evar.md) i Implementeringshandboken.*
 
-Variabler är anpassade variabler som du kan använda hur du vill. Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)blir de flesta dimensioner som är specifika för din organisation [!UICONTROL eVars]. Som standard kvarstår eVars utanför den träff de är inställda på. Du kan anpassa deras förfallodatum och tilldelning under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) in [!UICONTROL Report suite settings].
+Variabler är anpassade variabler som du kan använda hur du vill. Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)blir de flesta dimensioner som är specifika för din organisation [!UICONTROL eVars]. Som standard kvarstår eVars utanför den träff de är inställda på. Du kan anpassa deras förfallodatum och tilldelning under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) in [!UICONTROL Report suite settings].
 
 Antalet tillgängliga eVars-variabler beror på ditt avtal med Adobe. Upp till 250 eVars är tillgängligt om ditt avtal med Adobe stöder det.
 
@@ -84,7 +84,7 @@ Eftersom allokering och förfallodatum avgör vilka värden som kvarstår är de
 * Som standard använder en eVar den senaste tilldelningen. Nya värden skriver över beständiga värden.
 * Som standard används en besöksförfallotid i en eVar. När besöket är slut slutar värdena att kopieras från rad till rad i dialogrutan `post_evar` kolumn.
 
-Du kan ändra eVar allokering och förfallodatum under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar.
+Du kan ändra eVar allokering och förfallodatum under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar.
 
 ## Värdet av eVars över props
 

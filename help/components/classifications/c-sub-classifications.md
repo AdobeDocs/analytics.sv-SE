@@ -3,7 +3,7 @@ description: Adobe Analytics har stöd för både klassificeringsmodeller på en
 title: Underklassificeringar
 feature: Classifications
 exl-id: 3d22a8c0-743d-47f3-ba15-aaef1ebd4dff
-source-git-commit: 611f20718c0af133f2daf3fe44e8a5b9ea97336b
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 7%
@@ -16,7 +16,7 @@ Adobe Analytics har stöd för både klassificeringsmodeller på en och flera ni
 
 >[!NOTE]
 >
->Delklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte detsamma som [!UICONTROL Classification Hierarchy] används för att skapa [!UICONTROL Hierarchy] rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](/help/admin/admin/conversion-var-admin/classification-hierarchies.md).
+>Delklassificering avser möjligheten att skapa klassificeringar av klassificeringar. Detta är dock inte detsamma som [!UICONTROL Classification Hierarchy] används för att skapa [!UICONTROL Hierarchy] rapporter. Mer information om klassificeringshierarkier finns i [Klassificeringshierarkier](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/classification-hierarchies.md).
 
 Exempel:
 

@@ -3,7 +3,7 @@ title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
-source-git-commit: 48f840f3f15702761a453763e7c416a67bcb687b
+source-git-commit: 62f793491d2f95266a71bc217260353f8c040525
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Dimensioner och mätvärden är viktiga komponenter i rapporter. The `events` variabeln ansvarar för datainsamling av många mätvärden på din webbplats. Händelser som vanligen ökar [mått](/help/components/metrics/overview.md) i rapporter.
 
-Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) i Rapportsvitens inställningar. Om du tänker använda anpassade händelser i länkspårningstips måste du se till att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) är korrekt inställda.
+Innan du implementerar händelser måste du skapa och konfigurera dem under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar. Om du tänker använda anpassade händelser i länkspårningstips måste du se till att [`linkTrackVars`](../../config-vars/linktrackvars.md) och [`linkTrackEvents`](../../config-vars/linktrackevents.md) är korrekt inställda.
 
 ## Händelser som använder Web SDK
 
@@ -100,7 +100,7 @@ s.events = "event1=2,event2";
 
 Du kan ändra en anpassad händelse så att den använder valuta i stället för heltal. Valutahändelser konverteras automatiskt till rapportsvitens valuta om rapportsvitens valuta och `currencyCode` variabeln matchar inte. De är användbara för att beräkna fraktkostnader, rabatter eller återbetalningar. Du kan ställa in valutakurshändelser i `products` om du vill att händelsen bara ska tilldelas den produkten.
 
-Innan du implementerar valutakurser måste du ställa in den önskade händelsen till &quot;Valuta&quot; under [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
+Innan du implementerar valutakurser måste du ställa in den önskade händelsen till &quot;Valuta&quot; under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
 
 ```js
 // Send $9.99 USD in event1 using the events variable. Make sure the event type for event1 is Currency in Report suite settings
@@ -121,7 +121,7 @@ s.products = "Example category;Example product;1;0;event1=9.99";
 
 Du kan ändra en anpassad händelse och acceptera decimalvärden i stället för heltal. Numeriska händelser fungerar på ungefär samma sätt som valutakändelser, förutom att de inte använder valutakonvertering. Du kan ange numeriska händelser i dialogrutan `products` om du vill att händelsen bara ska tilldelas den produkten.
 
-Innan du implementerar numeriska händelser måste du ställa in den önskade händelsen på &quot;Numeric&quot; under [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
+Innan du implementerar numeriska händelser måste du ställa in den önskade händelsen på &quot;Numeric&quot; under [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) i Rapportsvitens inställningar.
 
 ```js
 // Send 4.5 in event1 using the events variable. Make sure the event type for event1 is Numeric in Report suite settings

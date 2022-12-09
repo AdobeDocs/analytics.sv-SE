@@ -3,7 +3,7 @@ title: Vad är variabeln currencyCode och hur använder jag den?
 description: För e-handelswebbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: 84a4d38a65769f028bac4aa5817cb4002c4b1f97
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 För webbplatser som använder e-handel är intäkter och valuta en viktig del av Analytics. Många webbplatser, särskilt de som spänner över flera länder, använder olika valutor. Använd `currencyCode` variabel för att säkerställa att intäktsattributen är rätt valuta.
 
-Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges i [`products`](../page-vars/products.md) variabel och alla händelser listade som Currency i [Slutförda händelser](/help/admin/admin/c-success-events/success-event.md) under Rapportsvitens inställningar.
+Vid valutakonvertering används följande logik för varje träff. De här stegen gäller för intäktsvärden som anges i [`products`](../page-vars/products.md) variabel och alla händelser listade som Currency i [Slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) under Rapportsvitens inställningar.
 
 * If `currencyCode` är inte definierat, antar Adobe att alla valutavärden är rapportsvitens valuta. Se [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i Rapportsvitens inställningar för att se rapportsvitens valuta.
 * If `currencyCode` är definierad och matchar rapportsvitens valuta, ingen valutakonvertering används.

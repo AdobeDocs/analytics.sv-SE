@@ -3,7 +3,7 @@ title: websiteBot
 description: Identifiera botar dynamiskt med musrörelser.
 feature: Variables
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Om användaragenten finns på skrivbordet och ingen musrörelse identifieras kan
 
 Adobe rekommenderar följande innan denna plugin används:
 
-* **Konfigurera eVar**: Konfigurera en eVar under [Konverteringsvariabler](/help/admin/admin/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatum till **Aldrig** eller **Besök** och allokera till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när [!UICONTROL Direct Call] regel eller `s.tl` samtalet avfyras.
+* **Konfigurera eVar**: Konfigurera en eVar under [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i Rapportsvitens inställningar. Ange förfallodatum till **Aldrig** eller **Besök** och allokera till **&quot;Originalvärde (första)&quot;**. Denna eVar bör fastställas under båda dessa omständigheter: när [!UICONTROL Direct Call] regel eller `s.tl` samtalet avfyras.
 * **Samla in användaragent i en separat variabel**: Samla in användaragentsträngen i en separat variabel för att övervaka effekten av plugin-programmet. Ange en eVar till `navigator.UserAgent` på varje träff för att samla in dessa data.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
