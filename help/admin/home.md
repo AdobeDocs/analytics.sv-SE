@@ -3,10 +3,10 @@ title: Administratörshandbok för Analytics
 description: Administrationshjälp för Adobe Analytics-administratörer, inklusive användar- och produkthantering i Admin Console, där du kan skapa rapportsviter, variabler, klassificeringar och datainsamling.
 feature: Admin Tools
 exl-id: d1491139-592b-44ec-aa45-dfdd00f416af
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 90%
+source-wordcount: '327'
+ht-degree: 84%
 
 ---
 
@@ -23,11 +23,11 @@ Här är en videoöversikt över Adobe Analytics:
 Adobe Analytics har för närvarande två områden för administratörer:
 
 * Adobe Admin Console: Använd det här området för att etablera Experience Cloud-verktyg och hantera användarbehörigheter. Den finns på [adminconsole.adobe.com](https://adminconsole.adobe.com).
-* Analytics Admin Console: Använd det här området för rapportsviten och variabelhantering. Du kommer åt den genom att klicka [!UICONTROL Admin] i Adobe Analytics översta sidhuvud.
+* Administratörsverktyg för analyser: Använd det här området för rapportsviten och variabelhantering. Du kommer åt den genom att klicka [!UICONTROL Admin] i Adobe Analytics översta sidhuvud.
 
 Den här guiden täcker:
 
-* Alla åtgärder som utförs i Analytics Admin Console. Det här området innefattar att skapa rapportsviter, variabler, klassificeringar eller datastyrning. Se [Administratörsverktyg](admin/c-admin-tools.md) för en lista över tillgängliga rapportsviter och företagsinställningar.
+* Alla åtgärder som utförs i administrationsverktygen för Analytics. Det här området innefattar att skapa rapportsviter, variabler, klassificeringar eller datastyrning. Se [Administratörsverktyg](admin/c-admin-tools.md) för en lista över tillgängliga rapportsviter och företagsinställningar.
 * Alla analysspecifika uppgifter som utförs i Adobe Admin Console. I det här området ingår produktetablering och hantering av användarbehörigheter. Se [Adobe Analytics i Adobe Admin Console](admin-console/home.md) för en lista över åtgärder som kan utföras i Adobe Admin Console.
 
 Den här guiden täcker inte många av de allmänna funktioner som finns i Adobe Admin Console. Se i stället [Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) i användarhandboken för företag.

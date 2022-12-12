@@ -3,9 +3,9 @@ title: Vad är variabeln currencyCode och hur använder jag den?
 description: För e-handelswebbplatser anger den valuta som sidan handlar i.
 feature: Variables
 exl-id: 3332c366-c472-4778-96c8-ef0aa756cca8
-source-git-commit: 84a4d38a65769f028bac4aa5817cb4002c4b1f97
+source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Du kan antingen använda en förinställd valutakod eller en anpassad valutakod.
 Valutakoden skickas till Adobe Experience Platform Mobile SDK:er via kontextdatavariabler i tillägget Adobe Analytics.
 
 1. Ange valutakoden i en kontextdatavariabel under någon av `trackState` eller `trackAction`.
-1. Skapa en bearbetningsregel i Adobe Analytics Admin Console för rapportsviten. Ställ in regeln så att variabeln Valutakod skrivs över.
+1. Skapa en bearbetningsregel i Adobe Analytics Admin Tools för rapportsviten. Ställ in regeln så att variabeln Valutakod skrivs över.
 1. Skicka valutakoden till `products` variabel i ditt anrop till `trackState` eller `trackAction`.
 
 Du kan antingen använda en förinställd valutakod eller en anpassad valutakod. Kontrollera att koden är giltig om du använder en anpassad valutakod.

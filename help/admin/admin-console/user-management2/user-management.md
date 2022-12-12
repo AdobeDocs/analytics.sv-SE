@@ -1,30 +1,30 @@
 ---
-description: Hantera Analytics-användare, -grupper och -produkter i Admin Console.
+description: Hantera Analytics-användare, -grupper och -produkter i Adobe Admin Console.
 subtopic: Users and groups
 title: Hantering av användare och produkter
 feature: Admin Tools
 exl-id: c0fbbb3a-0011-49d2-89a2-70fce11e0fb2
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '272'
 ht-degree: 5%
 
 ---
 
 # Hantering av användare och produkter
 
-Hantera Analytics-användare, -grupper och -produkter i Admin Console.
+Hantera Analytics-användare, -grupper och -produkter i Adobe Admin Console.
 
 >[!IMPORTANT]
 >
 >Hanteringen av användare och produkter har flyttats till [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Adobe meddelar dig när det är dags att migrera användare.
 
-## Hjälpresurser för Admin Console-administratörer {#section_C13BBB89E4F248F193358BB3A59DD502}
+## Hjälpresurser för Adobe Admin Console-administratörer {#section_C13BBB89E4F248F193358BB3A59DD502}
 
 | Aktivitet eller resurs | Beskrivning |
 | --- | --- |
-| Migrera användar-ID:n för Analytics till Adobe Admin Console | Adobe hjälper Analytics-administratörer att migrera användar-ID:n till Adobe Admin Console. Den här insatsen sker i vågor. När det är din tur att migrera dina användare kommer Adobe att meddela Analytics-administratörer via e-post med instruktioner. Ett migreringsverktyg finns i [Användarhantering för analys](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html) för att förenkla detta.<p>**Viktigt**: När dina användare migreras kopieras dina tidigare behörighetsgrupper automatiskt till Admin Console. Du kan inte längre bjuda in nya användare eller skapa nya grupper i administrationsverktygen för Analytics. Läs Frågor och svar och hjälp om användarmigrering till Adobe Admin Console för att få information om hur du förbereder dig för migreringen och om administrativa funktioner som påverkas. |
-| Starta Adobe Admin Console | När dina användarkonton har migrerats kan du hantera användare och produkter över alla lösningar i Admin Console. Navigera till: `https://adminconsole.adobe.com/enterprise/`. Se även [Hantera användare och produkter i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html). |
+| Migrera användar-ID:n för Analytics till Adobe Admin Console | Adobe hjälper Analytics-administratörer att migrera användar-ID:n till Adobe Admin Console. Den här insatsen sker i vågor. När det är din tur att migrera dina användare kommer Adobe att meddela Analytics-administratörer via e-post med instruktioner. Ett migreringsverktyg finns i [Användarhantering för analys](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-management/migrate-users/c-migration-tool.html) för att förenkla detta.<p>**Viktigt**: När dina användare migreras kopieras dina tidigare behörighetsgrupper automatiskt till Adobe Admin Console. Du kan inte längre bjuda in nya användare eller skapa nya grupper i administrationsverktygen för Analytics. Läs Frågor och svar och hjälp om användarmigrering till Adobe Admin Console för att få information om hur du förbereder dig för migreringen och om administrativa funktioner som påverkas. |
+| Starta Adobe Admin Console | När dina användarkonton har migrerats kan du hantera användare och produkter över alla lösningar i Adobe Admin Console. Navigera till: `https://adminconsole.adobe.com/enterprise/`. Se även [Hantera användare och produkter i Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html). |
 | Hantera Adobe Analytics produktprofiler, användare och behörigheter | Se [Analyser i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html). |
 
 <!---

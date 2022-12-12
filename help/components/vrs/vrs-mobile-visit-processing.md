@@ -3,9 +3,9 @@ description: Sammanhangsberoende sessioner i virtuella rapportsviter förändrar
 title: Sammanhangsmedvetna sessioner
 feature: VRS
 exl-id: 5e969256-3389-434e-a989-ebfb126858ef
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Tidsåtgången beräknas fortfarande på ett liknande sätt som den är utan bak
 
 ## Bearbetningsinställningar för bakgrundsträff
 
-Eftersom träffbearbetning i bakgrunden endast är tillgänglig för virtuella rapportsviter som använder Report Time Processing, stöder Adobe Analytics två sätt att bearbeta bakgrundsträffar för att bevara antalet besök i basrapportsviten som inte använder Report Time Processing. Om du vill komma åt den här inställningen går du till Adobe Analytics Admin Console och väljer basrapportsviten. Gå sedan till menyn &quot;Hantering av mobilappar&quot; och till undermenyn &quot;Rapportering av mobilprogram&quot;.
+Eftersom träffbearbetning i bakgrunden endast är tillgänglig för virtuella rapportsviter som använder Report Time Processing, stöder Adobe Analytics två sätt att bearbeta bakgrundsträffar för att bevara antalet besök i basrapportsviten som inte använder Report Time Processing. Om du vill komma åt den här inställningen går du till Adobe Analytics Admin Tools och väljer basrapportsviten, går till menyn Mobile Management och sedan till undermenyn Mobile Application Reporting.
 
 1. &quot;Äldre bearbetning på&quot;: Det här är standardinställningen för alla rapportsviter. Att lämna äldre bearbetning på processens bakgrundsträffar som vanliga träffar i vår bearbetningsprocess när det gäller rapportsviten som inte är Report Time Attribution base. Det innebär att eventuella bakgrundstötningar som visas i basrapportsvitens stegvisa ökningar blir en normal träff. Om du inte vill att bakgrundsträffar ska visas i din basrapportsserie ändrar du den här inställningen till Av.
 1. &quot;Äldre bearbetning av&quot;: När äldre bearbetning för bakgrundstötlar är inaktiverat ignoreras alla bakgrundstötningar som skickas till basrapportsviten av den grundläggande rapportsviten och är bara tillgängliga när en virtuell rapportsvit som skapats med den här basrapportsviten har konfigurerats för att använda Report Time Processing. Det innebär att alla data som har hämtats av bakgrundsträffar som skickas till den här basrapportsviten bara visas i en virtuell rapportserie som har aktiverats för Report Time Processing.

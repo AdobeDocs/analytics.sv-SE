@@ -3,9 +3,9 @@ description: Migrera användare från det äldre användarhanteringssystemet Ana
 title: Migrera Analytics-användarkonton för Adobe ID:n
 feature: Admin Tools
 exl-id: 198367a1-8156-4cc3-af8a-d92c61699eda
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '418'
 ht-degree: 6%
 
 ---
@@ -69,7 +69,7 @@ Migrera användare från det äldre användarhanteringssystemet Analytics till A
    </tr> 
    <tr> 
       <td colname="col1"> <p>Domänen har tagits i anspråk </p> </td> 
-      <td colname="col2"> <p>Om du vill migrera användare som Enterprise ID eller Federated ID måste du vara systemadministratör och göra anspråk på en tillgänglig domän via Admin Console innan du migrerar användare. Läs mer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> <p>Om du inte vill göra anspråk på domäner för Enterprise ID eller Federated ID hoppar du över det här steget och migrerar användare som Adobe ID. Läs mer om ID-typer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> </td> 
+      <td colname="col2"> <p>Om du vill migrera användare som Enterprise ID eller Federated ID måste du vara systemadministratör och göra anspråk på en tillgänglig domän via Adobe Admin Console innan du migrerar användare. Läs mer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> <p>Om du inte vill göra anspråk på domäner för Enterprise ID eller Federated ID hoppar du över det här steget och migrerar användare som Adobe ID. Läs mer om ID-typer <a href="https://helpx.adobe.com/enterprise/help/identity.html"> här</a>. </p> </td> 
    </tr> 
    </tbody> 
    </table>

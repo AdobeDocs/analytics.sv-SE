@@ -1,18 +1,18 @@
 ---
 title: Adobe Analytics Permissions - summary tables
-description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Admin Console.
+description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Adobe Admin Console.
 exl-id: f1abbdb7-0f76-4d9b-a3ca-b12fa3cecb50
 feature: Admin Tools
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: beef45403f3c3eb7ac423ca8e0b6db0143ff1b9b
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1279'
 ht-degree: 4%
 
 ---
 
 # Adobe Analytics Permissions - summary tables
 
-Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-behörigheter i Admin Console, efter logiska grupperingar.
+Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-behörigheter i Adobe Admin Console, efter logiska grupperingar.
 
 ## Report Suite-verktyg
 
