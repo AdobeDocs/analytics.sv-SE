@@ -3,10 +3,10 @@ description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: 196e7672026a284591c0dba2336cb11fc3661c72
+source-git-commit: 3a48eadd47b4d748708abebd2875fdac8979a115
 workflow-type: tm+mt
-source-wordcount: '3663'
-ht-degree: 95%
+source-wordcount: '3673'
+ht-degree: 93%
 
 ---
 
@@ -144,7 +144,9 @@ Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariable
 | <ul><li>Trafikvariabler (props)</li><li>Handelsvariabler (icke-marknadsförande eVars)</li></ul> | Alla etiketter | - |
 | De flesta andra variablerna  (*Se tabellen nedan för undantag*) | ACC-ALL, ACC-PERSON | <ul><li>I1/I2, S1/S2</li><li>ID-ENHET, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON)</li></ul> |
 
-## Variabler som andra etiketter än ACC-ALL/ACC-PERSON kan tilldelas/ändras till {#section_4FA003003D1B4E2EBCFCDB1A7CD4A824}
+{style=&quot;table-layout:auto&quot;}
+
+## Variabler till vilka andra etiketter än ACC-ALL/ACC-PERSON kan tilldelas/ändras {#section_4FA003003D1B4E2EBCFCDB1A7CD4A824}
 
 <table id="table_0972910DB2D7473588F23EA47988381D"> 
  <thead> 
@@ -213,122 +215,47 @@ Adobe Analytics-stöd för begäranden om borttagning av datasekretess är utfor
 
 Följande tabell beskriver hur olika variabler tas bort. Det här är inte en fullständig lista.
 
-<table id="table_A329C2E2645F4685BC208826D070A5F6"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Variabler </th> 
-   <th colname="col2" class="entry"> Borttagningsmetod </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>* Trafikvariabler (props) </p> <p>* eVars (handelsvariabler) </p> </td> 
-   <td colname="col2"> <p>Befintligt värde ersätts med ett nytt värde i formatet ”Datasekretess-356396D55C4F9C7AB3FBB2F2FA223482”, där det 32-siffriga hexadecimala värdet efter prefixet ”Datasekretess-” är ett kryptografiskt starkt 128-bitars pseudoslumpmässigt nummer. Eftersom det i princip ersätts av en slumpmässig sträng går det inte att fastställa det ursprungliga värdet utifrån det nya värdet och inget sätt att härleda det nya värdet med information om det ursprungliga värdet. </p> <p>Om det identiska värdet som ersätts för en viss variabel förekommer i andra träffar som också tas bort som en del av samma begäran om datasekretess, kommer alla instanser av det värdet att ersättas med samma nya värde. </p> <p>Om vissa förekomster av ett värde ersätts med en borttagningsbegäran och en senare begäran tar bort andra (nya) förekomster av det ursprungliga värdet, kommer det nya ersättningsvärdet att vara ett annat värde än det ursprungliga ersättningsvärdet. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Inköps-ID </p> </td> 
-   <td colname="col2"> <p>Befintligt värde ersätts med ett nytt värde i formatet ”G-7588FCD8642718EC50”, där de 18 hexadecimala siffrorna efter ”G-”-prefixet är de första 18 siffrorna i ett kryptografiskt starkt 128-bitars pseudoslumpmässigt nummer. Alla kommentarer som gäller borttagning av trafikvariabler och handelsvariabler gäller också här. </p> <p>Inköps-ID är ett transaktions-ID vars främsta syfte är att se till att ett inköp inte krediteras två gånger, till exempel när någon uppdaterar sin sida för inköpsbekräftelse. Själva ID:t kan knyta köpet till en rad i din egen databas där köpet registreras. Det är oftast inte nödvändigt att ta bort detta ID, så det tas inte bort som standard. Om du fortfarande kan knyta köpet till en användare efter att ha tagit bort din egen begäran om datasekretess, kan du behöva ta bort det här fältet, så att analysdata för den här besökaren inte kan knytas tillbaka till köparen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Besökar-ID </p> </td> 
-   <td colname="col2"> <p>Värdet är ett 128-bitars heltal och ersätts med ett kryptografiskt starkt 128-bitars pseudoslumpmässigt värde. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>* MCID </p> <p>* Anpassat besökar-ID </p> <p>* IP-adress </p> <p>* IP-adress 2 </p> </td> 
-   <td colname="col2"> <p>Värdet rensas (anges till antingen den tomma strängen eller 0 beroende på variabeltypen). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>* ClickMap-åtgärd (äldre) </p> <p>* ClickMap Context (äldre) </p> <p>* Sida </p> <p>* Sidans URL </p> <p>* URL för ursprunglig startsida </p> <p>* Referent </p> <p>* Besök URL till startsidan </p> </td> 
-   <td colname="col2"> <p>URL-parametrar rensas/tas bort. Om värdet inte ser ut som en URL rensas värdet (anges till den tomma strängen). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>* Latitud </p> <p>* Longitud </p> </td> 
-   <td colname="col2"> <p>Precisionen minskas till högst 1 km. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Variabler | Borttagningsmetod |
+| --- | --- |
+| <ul><li>Trafikvariabler (props)</li><li>eVars (handelsvariabler)</li></ul> | Befintligt värde ersätts med ett nytt värde i formatet ”Datasekretess-356396D55C4F9C7AB3FBB2F2FA223482”, där det 32-siffriga hexadecimala värdet efter prefixet ”Datasekretess-” är ett kryptografiskt starkt 128-bitars pseudoslumpmässigt nummer.<p>Eftersom det i princip ersätts av en slumpmässig sträng går det inte att fastställa det ursprungliga värdet utifrån det nya värdet och inget sätt att härleda det nya värdet med information om det ursprungliga värdet.  Om det identiska värdet som ersätts för en viss variabel förekommer i andra träffar som också tas bort som en del av samma begäran om datasekretess, kommer alla instanser av det värdet att ersättas med samma nya värde.<p>Om vissa förekomster av ett värde ersätts med en borttagningsbegäran och en senare begäran tar bort andra (nya) förekomster av det ursprungliga värdet, kommer det nya ersättningsvärdet att vara ett annat värde än det ursprungliga ersättningsvärdet. |
+| Inköps-ID | Befintligt värde ersätts med ett nytt värde i formatet ”G-7588FCD8642718EC50”, där de 18 hexadecimala siffrorna efter ”G-”-prefixet är de första 18 siffrorna i ett kryptografiskt starkt 128-bitars pseudoslumpmässigt nummer. Alla kommentarer som gäller borttagning av trafikvariabler och handelsvariabler gäller också här.<p>Inköps-ID är ett transaktions-ID vars främsta syfte är att se till att ett inköp inte krediteras två gånger, till exempel när någon uppdaterar sin sida för inköpsbekräftelse. Själva ID:t kan knyta köpet till en rad i din egen databas där köpet registreras. Det är oftast inte nödvändigt att ta bort detta ID, så det tas inte bort som standard.<p>Om du fortfarande kan knyta köpet till en användare efter att ha tagit bort din egen begäran om datasekretess, kan du behöva ta bort det här fältet, så att analysdata för den här besökaren inte kan knytas tillbaka till köparen. |
+| Besökar-ID | Värdet är ett 128-bitars heltal och ersätts med ett kryptografiskt starkt 128-bitars pseudoslumpmässigt värde. |
+| <ul><li>MCID</li><li>Anpassat besökar-ID</li><li>IP-adress</li><li>IP-adress 2 | Värdet rensas (anges till antingen den tomma strängen eller 0 beroende på variabeltypen). |
+| <ul><li>ClickMap-åtgärd (äldre)</li><li>ClickMap Context (äldre)</li><li>Sida</li><li>Sidans URL</li><li>URL för ursprunglig startsida</li><li>Referent</li><li>Besök URL till startsidan</li></ul> | URL-parametrar rensas/tas bort. Om värdet inte ser ut som en URL rensas värdet (anges till den tomma strängen). |
+| <ul><li>Latitud</li><li>Longitud</li></ul> | Precisionen minskas till högst 1 km. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Variabler som inte stöder de förväntade Delete-etiketterna {#section_956B766EFFEC427E87E6CFF3A4217E86}
 
 Det här avsnittet syftar till att förtydliga information om Analytics-variabler som inte stöder borttagning. Ibland tas dessa variabler bort av icke-Analytics-användare (t.ex. det juridiska teamet) som inte förstår vilken typ av data som finns i variabeln och gör felaktiga antaganden baserat på variabelns namn. Här är en lista över några av dessa variabler och varför de inte behöver tas bort, eller varför de inte behöver en viss borttagningsetikett.
 
-<table id="table_6FECF3D654514862912D371E6BE4143B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Variabel </th> 
-   <th colname="col2" class="entry"> Kommentarer </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Nytt besökar-ID </p> </td> 
-   <td colname="col2"> <p>Nytt besökar-ID är ett booleskt värde som är Sant första gången vi ser ett visst besökar-ID. Du behöver inte ta bort det när besökar-ID:t har anonymiserats. Efter anonymisering motsvarar det första gången vi ser detta anonyma ID. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Postnummer </p> <p>Geo-postnummer </p> </td> 
-   <td colname="col2"> <p>Postnummer anges endast för träffar med ursprung i USA. De är inte inställda för träffar från EU. Även om de är inställda ger de endast ett brett geografiskt område som gör det svårt att återidentifiera den registrerade. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Geo-latitud </p> <p>Geo-longitud </p> </td> 
-   <td colname="col2"> <p>Dessa tillhandahåller en grov uppskattning av platsen som härleds från IP-adressen. Detta är ungefär lika noggrant som ett postnummer, inom ett par dussin kilometer från den faktiska platsen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Användaragent </p> </td> 
-   <td colname="col2"> <p>Användaragenten identifierar vilken version av webbläsaren som användes. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Användar-ID </p> </td> 
-   <td colname="col2"> <p> Anger Analytics-rapportsviten (som ett tal) som innehåller data. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Rapportsvit-ID </p> </td> 
-   <td colname="col2"> <p> Anger namnet på Analytics-rapportsviten som innehåller data. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Besökar-ID </p> <p>MCID/ECID </p> </td> 
-   <td colname="col2"> <p> De har en DEL-DEVICE-etikett, men det går inte att lägga till etiketten DEL-PERSON. Om du anger <a href="/help/admin/c-data-governance/gdpr-id-expansion.md">ID-expansion</a> för varje begäran tas dessa ID:n automatiskt bort för alla borttagningsbegäranden, även de som använder ett ID-PERSON. </p> <p>Om du inte använder ID-expansion, men vill att dessa cookie-ID:n anonymiseras i träffar som innehåller ett matchande ID i en prop eller eVar, kan du kringgå den här etikettbegränsningen genom att etikettera prop eller eVar med en ID-DEVICE-etikett, även om den verkligen identifierar en person (alla DEL-PERSON-etiketter måste också ändras till DEL-DEVICE-etiketter). Då ändras den historikrapporteringen eftersom endast vissa instanser av besökar-ID eller ECID anonymiseras. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>AMO-ID </p> </td> 
-   <td colname="col2"> <p> Adobe Advertising Cloud ID är en lösningsvariabel som har en oföränderlig DEL-DEVICE-etikett. Den fylls i från en cookie på samma sätt som besökar-ID och MCID. Den ska tas bort från träffar när dessa andra ID:n tas bort. Mer information finns i beskrivningen av dessa variabler. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Variabel | Kommentarer |
+| --- | --- |
+| Nytt besökar-ID | Nytt besökar-ID är ett booleskt värde som är Sant första gången vi ser ett visst besökar-ID. Du behöver inte ta bort det när besökar-ID:t har anonymiserats. Efter anonymisering motsvarar det första gången vi ser detta anonyma ID. |
+| Postnummer<p>Geo-postnummer | Postnummer anges endast för träffar med ursprung i USA. De är inte inställda för träffar från EU. Även om de är inställda ger de endast ett brett geografiskt område som gör det svårt att återidentifiera den registrerade. |
+| Geo-latitud<p>Geo-longitud | Dessa tillhandahåller en grov uppskattning av platsen som härleds från IP-adressen. Detta är ungefär lika noggrant som ett postnummer, inom ett par dussin kilometer från den faktiska platsen. |
+| Användaragent | Användaragenten identifierar vilken version av webbläsaren som användes. |
+| Användar-ID | Anger Analytics-rapportsviten (som ett tal) som innehåller data. |
+| Rapportsvit-ID | Anger namnet på Analytics-rapportsviten som innehåller data. |
+| Besökar-ID<p>MCID/ECID | Dessa ID:n har en DEL-DEVICE-etikett, men det går inte att lägga till etiketten DEL-PERSON. Om du anger [!UICONTROL ID Expansion] för varje begäran kommer dessa ID:n automatiskt att tas bort för alla borttagningsbegäranden, även de som använder ett ID-PERSON.<p>Om du inte använder ID-expansion, men vill att dessa cookie-ID:n anonymiseras i träffar som innehåller ett matchande ID i en prop eller eVar, kan du kringgå den här etikettbegränsningen genom att etikettera prop eller eVar med en ID-DEVICE-etikett, även om den verkligen identifierar en person (alla DEL-PERSON-etiketter måste också ändras till DEL-DEVICE-etiketter). Då ändras den historikrapporteringen eftersom endast vissa instanser av besökar-ID eller ECID anonymiseras. |
+| AMO-ID | Adobe Advertising Cloud ID är en lösningsvariabel som inte kan ändras [!UICONTROL DEL-DEVICE] label. Den fylls i från en cookie på samma sätt som besökar-ID och MCID. Den ska tas bort från träffar när dessa andra ID:n tas bort. Mer information finns i beskrivningen av dessa variabler. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Datumfält för åtkomstbegäranden {#access-requests}
 
 Det finns fem standardvariabler som innehåller tidsstämplar:
 
-<table id="table_49A9255366254F799E1682C30CBD98EB"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Tidsstämpel </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Tid för träff i UTC </p> </td> 
-   <td colname="col2"> <p>Den tidpunkt då Adobe Analytics mottog träffen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Anpassad tid för träff i UTC </p> </td> 
-   <td colname="col2"> <p>Tid då träffen inträffade, vilket för vissa mobilappar och andra implementeringar kan vara tidigare än den tidpunkt då den togs emot. Om till exempel en nätverksanslutning inte var tillgänglig när den inträffade, kan programmet hålla träffen och skicka den när en anslutning blir tillgänglig. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Datum och tid </p> </td> 
-   <td colname="col2"> <p>Samma värde som anpassad tid för träff i UTC, men i tidszonen för rapportsviten i stället för GMT.</p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Tid för första träff i GMT </p> </td> 
-   <td colname="col2"> <p>Värdet för anpassad tid för träff i UTC för den första träffen som tagits emot för besökar-ID-värdet för den här träffen. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Starttid för besök i UTC </p> </td> 
-   <td colname="col2"> <p>Värdet för anpassad tid för träff i UTC för den första träffen som tagits emot för det aktuella besöket för detta besökar-ID.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Tidsstämpel | Definition |
+| --- | --- |
+| Tid för träff i UTC | Den tidpunkt då Adobe Analytics mottog träffen. |
+| Anpassad tid för träff i UTC | Tid då träffen inträffade, vilket för vissa mobilappar och andra implementeringar kan vara tidigare än den tidpunkt då den togs emot. Om till exempel en nätverksanslutning inte var tillgänglig när den inträffade, kan programmet hålla träffen och skicka den när en anslutning blir tillgänglig. |
+| Datum och tid | Samma värde som anpassad tid för träff i UTC, men i tidszonen för rapportsviten i stället för GMT. |
+| Tid för första träff i GMT | Värdet för anpassad tid för träff i UTC för den första träffen som tagits emot för besökar-ID-värdet för den här träffen. |
+| Starttid för besök i UTC | Värdet för anpassad tid för träff i UTC för den första träffen som tagits emot för det aktuella besöket för detta besökar-ID. |
+
+{style=&quot;table-layout:auto&quot;}
 
 Koden för att generera de filer som returneras för åtkomstbegäranden om datasekretess kräver att minst en av de tre första tidsstämpelvariablerna inkluderas i åtkomstbegäran (har en ACC-etikett som gäller för typen av begäran). Om ingen av dessa inkluderas behandlas anpassad tid för träff i UTC som om den har en ACC-ALL-etikett.
 
