@@ -3,10 +3,10 @@ description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 196e7672026a284591c0dba2336cb11fc3661c72
 workflow-type: tm+mt
-source-wordcount: '3902'
-ht-degree: 96%
+source-wordcount: '3663'
+ht-degree: 95%
 
 ---
 
@@ -32,58 +32,23 @@ Implementering av datasekretess i Adobe Analytics stöder följande etiketter f�
 
 Identitetsdata ”I”-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person.
 
-<table id="table_6B5368D714424E52835D5DFE189BD080"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Etikett </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-   <th colname="col3" class="entry"> Andra krav </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>I1 </p> </td> 
-   <td colname="col2"> <p><b>Direkt identifierbar</b>: Data som specifikt kan identifiera eller möjliggöra direktkontakt med en individ, till exempel ett namn eller en e-postadress. </p> </td> 
-   <td colname="col3"> 
-    <ul id="ul_4E2AD59D119E40D28B869D0BB63B9FD9"> 
-     <li id="li_AC3E99B57E3A4AE2A12BE219680AFC58">Kan inte anges för händelser </li> 
-     <li id="li_BB66992863C8402F8D58656293F31E71">Kan inte anges för marknadsförande eVars </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>I2 </p> </td> 
-   <td colname="col2"> <p><b>Indirekt identifierbar</b>: Data som kan användas i kombination med andra data för att identifiera eller möjliggöra direktkontakt med en individ eller enhet. </p> <p>Tillåter inte identifiering av en enskild person, utan kan kombineras med annan information (som du kanske har tillgång till) för att identifiera någon. Exempel är ett kundlojalitetsnummer eller ett ID som används av ett företags CRM-system och som är unikt för varje kund. </p> </td> 
-   <td colname="col3"> 
-    <ul id="ul_A0EF0F3DC5804D4FBE228946D697ABEB"> 
-     <li id="li_A592EA6DA82C4D8C80E03F02ADF4E20E">Kan inte anges för händelser </li> 
-     <li id="li_46CE7B1E84884CDAB356A6DF89397849">Kan inte anges för marknadsförande eVars </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Etikett | Definition | Andra krav |
+| --- | --- | --- |
+| I1 | Direkt identifierbar: Data som specifikt kan identifiera eller möjliggöra direktkontakt med en individ, till exempel ett namn eller en e-postadress. | <ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li></ul> |
+| I2 | Indirekt identifierbar: Data som kan användas i kombination med andra data för att identifiera eller möjliggöra direktkontakt med en individ eller enhet.  Tillåter inte identifiering av en enskild person, utan kan kombineras med annan information (som du kanske har tillgång till) för att identifiera någon. Exempel är ett kundlojalitetsnummer eller ett ID som används av ett företags CRM-system och som är unikt för varje kund. | <ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li></ul> |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Etiketter för känsliga data (DULE) {#sensitive-data-labels}
 
 Känsliga ”S”-etiketter används för att kategorisera känsliga data som geografiska data. Ytterligare etiketter för känsliga data kommer att införas i framtiden för att identifiera andra typer av känslig information.
 
-<table id="table_A778A508620545CCB37830E5CF1C75B7"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Etikett </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>S1 </p> </td> 
-   <td colname="col2"> <p> Exakta geolokaliseringsdata för latitud och longitud som kan användas för att fastställa en enhets exakta placering (högst 100 meter). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>S2 </p> </td> 
-   <td colname="col2"> <p> Geolokaliseringsdata som kan användas för att fastställa ett brett definierat geostaketområde. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Etikett | Definition |
+| --- | --- |
+| S1 | Exakta geolokaliseringsdata för latitud och longitud som kan användas för att fastställa en enhets exakta placering (högst 100 meter). |
+| S2 | Geolokaliseringsdata som kan användas för att fastställa ett brett definierat geostaketområde. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Etiketter för datastyrning (datasekretess) {#data-governance-labels}
 
@@ -91,124 +56,38 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
 
 ### Etiketter för datasekretess
 
-<table id="table_663EFF43A454498386F7F3E60875E0F8"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Etikett </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-   <th colname="col3" class="entry"> Andra krav </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Ingen </p> </td> 
-   <td colname="col2"> <p>Välj det här alternativet om den här variabeln inte innehåller data som måste inkluderas i data som skickas till den registrerade som en del av en begäran om datasekretess. </p> </td> 
-   <td colname="col3"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>ACC-ALL </p> </td> 
-   <td colname="col2"> <p>Värdena i det här fältet ska inkluderas i <u>alla</u> begäranden om datasekretess. </p> <p>Om den här träffen kommer från en enhet som delas av flera personer, kan du i egenskap av personuppgiftsansvarig, genom att tillämpa den här etiketten, indikera att det är acceptabelt att dela data i det här fältet med alla som har åtkomst till den delade enheten. </p> </td> 
-   <td colname="col3"> <p>Fält med den här etiketten returneras för alla begäranden om datasekretess. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>ACC-PERSON </p> </td> 
-   <td colname="col2"> <p> Värdena i det här fältet ska endast inkluderas för åtkomstbegäranden om datasekretess när vi är någorlunda säkra på att träffen kom från den registrerade, vilket fastställts av ett ID för begärande om datasekretess som matchar värdet för ett ID-PERSON-fält. </p> </td> 
-   <td colname="col3"> <p>Du måste också ha en ID-PERSON-etikett angiven för en viss variabel i den här rapportsviten, och skicka begäranden med det ID:t, annars kommer den här etiketten aldrig att gälla. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Etikett | Definition | Andra krav |
+| --- | --- | --- |
+| Ingen | Välj det här alternativet om den här variabeln inte innehåller data som måste inkluderas i data som skickas till den registrerade som en del av en begäran om datasekretess. |  |
+| ACC-ALL | Värdena i det här fältet ska inkluderas i alla begäranden om datasekretess. Om den här träffen kommer från en enhet som delas av flera personer, kan du i egenskap av personuppgiftsansvarig, genom att tillämpa den här etiketten, indikera att det är acceptabelt att dela data i det här fältet med alla som har åtkomst till den delade enheten. | Fält med den här etiketten returneras för alla begäranden om datasekretess. |
+| ACC-PERSON | Värdena i det här fältet ska endast inkluderas för åtkomstbegäranden om datasekretess när vi är någorlunda säkra på att träffen kom från den registrerade, vilket fastställts av ett ID för begärande om datasekretess som matchar värdet för ett ID-PERSON-fält. | Du måste också ha en ID-PERSON-etikett angiven för en viss variabel i den här rapportsviten, och skicka begäranden med det ID:t, annars kommer den här etiketten aldrig att gälla. |
+
+{style=&quot;table-layout:auto&quot;}
 
 Även om få variabler mottar någon av de andra etiketterna, förväntas åtkomstetiketter tillämpas för många av dina variabler. Men det är upp till dig, i samråd med din juridiska avdelning, att avgöra vilka uppgifter du har samlat in som ska delas med de registrerade.
 
 ### Borttagningsetiketter för datasekretess
 
-<table id="table_59DFCE4D90214CB5972BDDE5B7391B4D"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Etikett </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-   <th colname="col3" class="entry"> Andra krav </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> </td> 
-   <td colname="col2"> <p>Till skillnad från de andra etiketterna utesluter inte dessa borttagningsetiketter varandra. Du kan välja antingen båda eller ingen. Det behövs ingen separat Ingen-etikett, eftersom Ingen indikeras om du inte markerar något av Ta bort-alternativen. </p> </td> 
-   <td colname="col3"> <p>En borttagningsetikett krävs endast för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (d.v.s. som skulle göra det möjligt att identifiera den registrerade). </p> <p> Andra personuppgifter (favoriter, webbsurfnings-/inköpshistorik, hälsovillkor, o.s.v.) behöver inte tas bort eftersom associationen med den registrerade kommer att tas bort. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>DEL-DEVICE </p> </td> 
-   <td colname="col2"> <p>För begäran om borttagning av datasekretess ska värdena i det här fältet endast anonymiseras för begäranden där en angiven ID-DEVICE finns i träffen. </p> <p>Om samma värde används för andra träffar, som inte tas bort, ändras inte de andra instanserna. Detta resulterar i att antalet ändras för rapporter som beräknar unika antal i det här fältet. Detta kan ta bort identifierare för andra personer på delade enheter, utöver bara den registrerade. </p> <p>Antalet ändras inte om det här fältet även har en ID-DEVICE-etikett och värdet i det här fältet användes som ID för begäran om datasekretess. </p> </td> 
-   <td colname="col3"> 
-    <ul id="ul_45C3A09E1F05492B97C3F3DEA7C78FBC"> 
-     <li id="li_BAB277F92F284ADE9D7B6839BDD716E2">Kräver även etiketten I1, I2 eller S1 </li> 
-     <li id="li_6DDFC0571457489CBA9D76F547247F20">Kan inte anges för händelser </li> 
-     <li id="li_E79C6DFC6C58478EAA1504E3820D512C">Kan inte anges för marknadsförande eVars </li> 
-     <li id="li_B78E273212E447D49D0707E174B66DEC">Kan inte anges för klassificeringar </li> 
-     <li id="li_F0F52D0DE7454557A6A97063C1FBC372">Du måste skicka begäranden med en ID-DEVICE eller ange expandID till sant, annars kommer den här etiketten aldrig att gälla. </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>DEL-PERSON </p> </td> 
-   <td colname="col2"> <p>För begäran om borttagning av datasekretess ska värdena i det här fältet endast anonymiseras för begäranden där en angiven ID-PERSON finns i träffen. </p> <p>Om samma värde används för andra träffar, som inte tas bort, ändras inte de andra värdena. Detta resulterar i att antalet ändras för rapporter som beräknar unika antal i det här fältet. Antalet ändras inte om det här fältet även har en ID-PERSON-etikett och värdet i det här fältet användes som ID för begäran om datasekretess. </p> </td> 
-   <td colname="col3"> 
-    <ul id="ul_6722E42E036E47B4B5E17DC213636D51"> 
-     <li id="li_6C1A64FF68AF428A827D8C6C33E22970">Kräver även etiketten I1, I2 eller S1 </li> 
-     <li id="li_8053533FFE874EE795C8B6043A4F73B3">Kan inte anges för händelser </li> 
-     <li id="li_D6700CF4D03E44DDA83C4DDBB5B70CC3">Kan inte anges för marknadsförande eVars </li> 
-     <li id="li_B6C2B15484B344889DBF29B62E2EA8FD">Kan inte anges för klassificeringar </li> 
-     <li id="li_3BBD0C27D9644C2B9618457A0BFC15EF">Du måste också ha en ID-PERSON-etikett angiven för en viss variabel i den här rapportsviten, och skicka begäranden med det ID:t, annars kommer den här etiketten aldrig att gälla. </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+Till skillnad från de andra etiketterna utesluter inte dessa borttagningsetiketter varandra. Du kan välja antingen båda eller ingen. En separat [!UICONTROL None] etiketten inte behövs eftersom [!UICONTROL None] markeras genom att du inte markerar något av alternativen för att ta bort.
+
+En borttagningsetikett krävs endast för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (d.v.s. som skulle göra det möjligt att identifiera den registrerade). Andra personuppgifter (favoriter, webbsurfnings-/inköpshistorik, hälsovillkor, o.s.v.) behöver inte tas bort eftersom associationen med den registrerade kommer att tas bort.
+
+| Etikett | Definition | Andra krav |
+| --- | --- | --- |
+| DEL-DEVICE | För begäran om borttagning av datasekretess ska värdena i det här fältet endast anonymiseras för begäranden där en angiven ID-DEVICE finns i träffen.  Om samma värde används för andra träffar, som inte tas bort, ändras inte de andra instanserna. Detta resulterar i att antalet ändras för rapporter som beräknar unika antal i det här fältet. Detta kan ta bort identifierare för andra personer på delade enheter, utöver bara den registrerade.  Antalet ändras inte om det här fältet även har en ID-DEVICE-etikett och värdet i det här fältet användes som ID för begäran om datasekretess. | <ul><li>Kräver även etiketten I1, I2 eller S1</li><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li></li><li>Kan inte anges för klassificeringar</li><li>Du måste skicka begäranden med en ID-DEVICE eller ange expandID till sant, annars kommer den här etiketten aldrig att gälla.</li></ul> |
+| DEL-PERSON | För begäran om borttagning av datasekretess ska värdena i det här fältet endast anonymiseras för begäranden där en angiven ID-PERSON finns i träffen.  Om samma värde används för andra träffar, som inte tas bort, ändras inte de andra värdena. Detta resulterar i att antalet ändras för rapporter som beräknar unika antal i det här fältet. Antalet ändras inte om det här fältet även har en ID-PERSON-etikett och värdet i det här fältet användes som ID för begäran om datasekretess. | <ul><li>Kräver även etiketten I1, I2 eller S1</li><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li></li><li>Kan inte anges för klassificeringar</li><li>Du måste skicka begäranden med en ID-PERSON-etikett som har angetts för en viss variabel i den här rapportsviten och skicka begäranden med det ID:t, annars kommer den här etiketten aldrig att gälla.</li></ul> |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### Identitetsetiketter för datasekretess
-
-<table id="table_F6BBC868457443A19A7B693BD6C55B4B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Etikett </th> 
-   <th colname="col2" class="entry"> Definition </th> 
-   <th colname="col3" class="entry"> Andra krav </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p>Ingen </p> </td> 
-   <td colname="col2"> <p>Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. </p> </td> 
-   <td colname="col3"> <p>Du behöver bara ange en av dessa andra etiketter om det här fältet innehåller ett ID som du använder när du skickar in åtkomst- eller borttagningsbegäranden via [Privacy Service API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>ID-DEVICE </p> </td> 
-   <td colname="col2"> <p>Det här fältet innehåller ett ID som kan användas för att identifiera en enhet för en begäran om datasekretess, men det kan inte skilja mellan olika användare av en delad enhet. </p> <p>Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du skickar begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. </p> </td> 
-   <td colname="col3"> 
-    <ul id="ul_618019CB8FCA4A5C94C47636240197B2"> 
-     <li id="li_0E5ADED36FF24A348FDD434E2CC8C8EE">Kräver även etiketten I1 eller I2 </li> 
-     <li id="li_20BCFF07B2BF468C8E0D477C10B2EF9F">Kan inte anges för händelser </li> 
-     <li id="li_0BD73EEF4184475D8E97878CF8DBEB90">Kan inte anges för marknadsförande eVars </li> 
-     <li id="li_129851035C4A4BF0922296B4C3BEE39B">Kan inte anges för klassificeringar </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>ID-PERSON </p> </td> 
-   <td colname="col2"> <p>Det här fältet innehåller ett ID som kan användas för att identifiera en autentiserad användare (en viss person) för en begäran om datasekretess. </p> <p>Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du ska skicka begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. </p> </td> 
-   <td colname="col3"> 
-    <ul id="ul_0C7EEC8FCB5C4BCDA5D48F3C98770A67"> 
-     <li id="li_2E781AE8D7A046A7996C7300CA854B86">Kräver även etiketten I1 eller I2 </li> 
-     <li id="li_EB4C6430C218405DAAE81DEE010DCAA2">Kan inte anges för händelser </li> 
-     <li id="li_05AA67B45974474F9DA520E8B877BA11">Kan inte anges för marknadsförande eVars </li> 
-     <li id="li_8A6BF4B40ED249289EAD46FE1C755FB0">Kan inte anges för klassificeringar </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
 | Ingen | Den här variabeln innehåller inte något ID som ska användas för begäranden om datasekretess. | Du behöver bara ange en av de andra etiketterna om det här fältet innehåller ett ID som du använder när du skickar begäran om åtkomst eller borttagning via [Privacy Services-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) eller användargränssnittet. |
-| ID-ENHET | Det här fältet innehåller ett ID som kan användas för att identifiera en enhet för en begäran om datasekretess, men det kan inte skilja mellan olika användare av en delad enhet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du skickar begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
-| ID-PERSON | Det här fältet innehåller ett ID som kan användas för att identifiera en autentiserad användare (en viss person) för en begäran om datasekretess.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du ska skicka begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
+| ID-DEVICE | Det här fältet innehåller ett ID som kan användas för att identifiera en enhet för en begäran om datasekretess, men det kan inte skilja mellan olika användare av en delad enhet.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du skickar begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | Kräver även etiketten I1 eller I2.<ul><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
+| ID-PERSON | Det här fältet innehåller ett ID som kan användas för att identifiera en autentiserad användare (en viss person) för en begäran om datasekretess.  Du behöver inte ange den här etiketten för alla variabler som innehåller ID:n (det vill säga I1/I2-etiketterna). Använd den här etiketten om du ska skicka begäranden om datasekretess med ID:n som lagras i den här variabeln och vill söka efter det angivna ID:t i variabeln. | <ul><li>Kräver även etiketten I1 eller I2.</li><li>Kan inte anges för händelser</li><li>Kan inte anges för marknadsförande eVars</li><li>Kan inte anges för klassificeringar</li></ul> |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Ange ett namnutrymme när du anger en variabel som ID-DEVICE eller ID-PERSON {#section_F0A47AF8DA384A26BD56032D0ABFD2D7}
 
@@ -254,51 +133,16 @@ Ett annat exempel är att du kan ha ett CRM-ID som ibland skickas in via eVar1 o
 >
 >Namnutrymmena ”visitorId” och ”customVisitorId” är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
-## Variabeltyperna och etiketterna för datasekretess/DULE som de stöder {#section_CE7C3EDE1344466A98BC45E394B40762}
+## Variabeltyperna och etiketterna för datasekretess/DULE som de stöder {#variable-types}
 
 Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariabler. Alla variabler har inte stöd för alla etiketter. Tabellen visar vilka variabler som stöder eller inte stöder olika etiketter.
 
-<table id="table_95D4416B3A8A40C28B2610D0003456E6"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Variabeltyp </th> 
-   <th colname="col2" class="entry"> Etiketter som stöds </th> 
-   <th colname="col3" class="entry"> Etiketter som inte stöds </th> 
-  </tr>
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> 
-    <ul id="ul_0615B545A5AD43F2A6F25698A47AAD3E"> 
-     <li id="li_A4B3E8E241B149C99F2A71B21227AD72">Anpassade slutförda händelser </li> 
-     <li id="li_8AEF688AE9B8426C82D199E4B195330D">Marknadsförande eVars </li> 
-     <li id="li_DFFCA65DCC6146AEB6D47476B4D4CC3B">Multivärdesvariabler (mvVars) </li> 
-     <li id="li_3192D08B12C249D1AAA8AAEEDE2FD7D7">Hierarkivariabler </li> 
-    </ul> </td> 
-   <td colname="col2"> <p>S1/S2 </p> <p>ACC-ALL, ACC-PERSON </p> </td> 
-   <td colname="col3"> <p>I1/I2 </p> <p>ID-DEVICE, ID-PERSON </p> <p>DEL-DEVICE, DEL-PERSON </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>Klassificeringar </p> </td> 
-   <td colname="col2"> <p>I1/I2, S1/S2 </p> <p>ACC-ALL, ACC-PERSON, </p> </td> 
-   <td colname="col3"> <p>ID-ENHET, ID-PERSON </p> <p>DEL-DEVICE, DEL-PERSON </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> 
-    <ul id="ul_1C2FD4D606664965A88F10818E1C11A9"> 
-     <li id="li_590975F5C7304317B22C80B20718E914">Trafikvariabler (props) </li> 
-     <li id="li_6E614B7036994434BFDA71A4424529A0">Handelsvariabler (icke-marknadsförande eVars) </li> 
-    </ul> </td> 
-   <td colname="col2"> <p>Alla etiketter </p> </td> 
-   <td colname="col3"> - </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p>De flesta andra variablerna </p> <p><i>(Se tabellen nedan för undantag)</i> </p> </td> 
-   <td colname="col2"> <p>ACC-ALL, ACC-PERSON </p> </td> 
-   <td colname="col3"> <p>I1/I2, S1/S2 </p> <p>ID-ENHET, ID-PERSON </p> <p>DEL-DEVICE, DEL-PERSON </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Variabeltyp | Etiketter som stöds | Etiketter som inte stöds |
+|--- |--- |--- |
+| <ul><li>Anpassade slutförda händelser</li><li>Marknadsförande eVars</li><li>Multivärdesvariabler (mvVars)</li><li>Hierarkivariabler</li></ul> | <ul><li>S1/S2</li><li>ACC-ALL, ACC-PERSON</li></ul> | <ul><li>I1/I2</li>  <li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON</li></ul> |
+| Klassificeringar | <ul><li>I1/I2, S1/S2</li><li>ACC-ALL, ACC-PERSON</li></ul> | <ul><li>ID-ENHET, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON</li></ul> |
+| <ul><li>Trafikvariabler (props)</li><li>Handelsvariabler (icke-marknadsförande eVars)</li></ul> | Alla etiketter | - |
+| De flesta andra variablerna  (*Se tabellen nedan för undantag*) | ACC-ALL, ACC-PERSON | <ul><li>I1/I2, S1/S2</li><li>ID-ENHET, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON)</li></ul> |
 
 ## Variabler som andra etiketter än ACC-ALL/ACC-PERSON kan tilldelas/ändras till {#section_4FA003003D1B4E2EBCFCDB1A7CD4A824}
 
@@ -378,7 +222,7 @@ Följande tabell beskriver hur olika variabler tas bort. Det här är inte en fu
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>• Trafikvariabler (props) </p> <p>• eVars (handelsvariabler) </p> </td> 
+   <td colname="col1"> <p>* Trafikvariabler (props) </p> <p>* eVars (handelsvariabler) </p> </td> 
    <td colname="col2"> <p>Befintligt värde ersätts med ett nytt värde i formatet ”Datasekretess-356396D55C4F9C7AB3FBB2F2FA223482”, där det 32-siffriga hexadecimala värdet efter prefixet ”Datasekretess-” är ett kryptografiskt starkt 128-bitars pseudoslumpmässigt nummer. Eftersom det i princip ersätts av en slumpmässig sträng går det inte att fastställa det ursprungliga värdet utifrån det nya värdet och inget sätt att härleda det nya värdet med information om det ursprungliga värdet. </p> <p>Om det identiska värdet som ersätts för en viss variabel förekommer i andra träffar som också tas bort som en del av samma begäran om datasekretess, kommer alla instanser av det värdet att ersättas med samma nya värde. </p> <p>Om vissa förekomster av ett värde ersätts med en borttagningsbegäran och en senare begäran tar bort andra (nya) förekomster av det ursprungliga värdet, kommer det nya ersättningsvärdet att vara ett annat värde än det ursprungliga ersättningsvärdet. </p> </td> 
   </tr> 
   <tr> 
@@ -390,21 +234,21 @@ Följande tabell beskriver hur olika variabler tas bort. Det här är inte en fu
    <td colname="col2"> <p>Värdet är ett 128-bitars heltal och ersätts med ett kryptografiskt starkt 128-bitars pseudoslumpmässigt värde. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>• MCID </p> <p>• Anpassat besökar-ID </p> <p>• IP-adress </p> <p>• IP-adress 2 </p> </td> 
+   <td colname="col1"> <p>* MCID </p> <p>* Anpassat besökar-ID </p> <p>* IP-adress </p> <p>* IP-adress 2 </p> </td> 
    <td colname="col2"> <p>Värdet rensas (anges till antingen den tomma strängen eller 0 beroende på variabeltypen). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>• ClickMap-åtgärd (äldre) </p> <p>• ClickMap Context (äldre) </p> <p>• Sida </p> <p>• Sidadress </p> <p>• URL för ursprunglig startsida </p> <p>• Referent </p> <p>• Besök URL till startsidan </p> </td> 
+   <td colname="col1"> <p>* ClickMap-åtgärd (äldre) </p> <p>* ClickMap Context (äldre) </p> <p>* Sida </p> <p>* Sidans URL </p> <p>* URL för ursprunglig startsida </p> <p>* Referent </p> <p>* Besök URL till startsidan </p> </td> 
    <td colname="col2"> <p>URL-parametrar rensas/tas bort. Om värdet inte ser ut som en URL rensas värdet (anges till den tomma strängen). </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>• Latitud </p> <p>• Longitud </p> </td> 
+   <td colname="col1"> <p>* Latitud </p> <p>* Longitud </p> </td> 
    <td colname="col2"> <p>Precisionen minskas till högst 1 km. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Variabler som inte stöder de förväntade borttagningsetiketterna {#section_956B766EFFEC427E87E6CFF3A4217E86}
+## Variabler som inte stöder de förväntade Delete-etiketterna {#section_956B766EFFEC427E87E6CFF3A4217E86}
 
 Det här avsnittet syftar till att förtydliga information om Analytics-variabler som inte stöder borttagning. Ibland tas dessa variabler bort av icke-Analytics-användare (t.ex. det juridiska teamet) som inte förstår vilken typ av data som finns i variabeln och gör felaktiga antaganden baserat på variabelns namn. Här är en lista över några av dessa variabler och varför de inte behöver tas bort, eller varför de inte behöver en viss borttagningsetikett.
 
@@ -451,7 +295,7 @@ Det här avsnittet syftar till att förtydliga information om Analytics-variable
  </tbody> 
 </table>
 
-## Datumfält för åtkomstbegäranden {#section_6678FB4FF42B481C9B78E64F61782397}
+## Datumfält för åtkomstbegäranden {#access-requests}
 
 Det finns fem standardvariabler som innehåller tidsstämplar:
 

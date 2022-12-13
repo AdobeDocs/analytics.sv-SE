@@ -3,10 +3,10 @@ description: Dialogrutan Datastyrning i Administratörsverktyg ger en översikt 
 title: Visa/hantera inställningar för datastyrning i rapportsviten
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: 538d5bcea449ecb868ff9ebcce4ca742f91b4a87
+source-git-commit: 196e7672026a284591c0dba2336cb11fc3661c72
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 75%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,3 +33,5 @@ Dialogrutan Datastyrning i Administratörsverktyg ger en översikt över vilka r
 | **[!UICONTROL Groups]** | Grupperingsfunktionen är för närvarande inte implementerad. |
 | Vänster sidofält | Klicka på kanalikonen för att öppna eller stänga sidorutan. The [!UICONTROL Organization Mapping] I visas antalet rapportsviter som hör till de beskrivna kategorierna. The [!UICONTROL Data Retention Policy] -avsnittet visar varje unik datalagringspolicy som finns för din organisation och antalet rapportsviter som har tilldelats den lagringspolicyn. |
 | **[!UICONTROL Export to CSV]** | Om du markerar kryssrutan bredvid en eller flera rapportsviter visas alternativet  Exportera till CSV . Med det här alternativet kan du hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för alla variabler för alla valda rapportsviter. Vi rekommenderar att ditt juridiska team granskar dina etikettval och det här alternativet underlättar den här granskningen. I stället för att behöva utföra granskningen när du är inloggad i användargränssnittet för datastyrning kan du dela .CSV-filen med dem. |
+
+{style=&quot;table-layout:auto&quot;}
