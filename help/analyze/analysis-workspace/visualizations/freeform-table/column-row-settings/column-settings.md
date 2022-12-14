@@ -5,10 +5,10 @@ uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 feature: Freeform Tables
 role: User, Admin
 exl-id: 82034838-b015-4ca2-adb6-736f20a478d8
-source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
+source-git-commit: 289c611419dd131c5ad529b15df3200ab6b14c12
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 20%
+source-wordcount: '758'
+ht-degree: 15%
 
 ---
 
@@ -18,11 +18,23 @@ ht-degree: 20%
 
 ## Redigera [!UICONTROL Column Settings] {#edit-column-settings}
 
-För åtkomst [!UICONTROL Column Settings]drar du en friformstabell till projektet och klickar sedan på kugghjulsikonen i kolumnrubriken.
+Du kan redigera kolumninställningar för en enskild kolumn eller för flera kolumner samtidigt.
 
-![](assets/column_settings.png)
+1. Dra en frihandstabell till ditt projekt i Analysis Workspace.
 
-Du kan redigera inställningar **för flera kolumner samtidigt**. Markera bara flera kolumner och klicka på inställningsikonen för någon av dessa kolumner. Alla ändringar du gör gäller för alla kolumner där celler är markerade.
+1. (Villkorligt) Om du vill redigera flera kolumner samtidigt markerar du de kolumner som du vill redigera samtidigt som du håller ned Skift.
+
+1. Håll pekaren över den kolumn som du vill redigera och välj sedan kugghjulsikonen.
+
+   Om du har markerat flera kolumner klickar du på kugghjulsikonen för någon av de markerade kolumnerna. Alla ändringar du gör gäller för alla markerade kolumner.
+
+   ![](assets/column_settings.png)
+
+1. Fortsätt med [Kolumninställningar](#column-settings).
+
+## Kolumninställningar
+
+Följande kolumninställningar är tillgängliga när du redigerar kolumner i Analysis Workspace:
 
 | Element | Beskrivning |
 | --- | --- |
