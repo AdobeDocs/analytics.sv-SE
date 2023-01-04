@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: f80430a4537b17991a0c2cf104df47a053c3792d
+source-git-commit: 69b37e23636848770693a999318d818d3b7443ee
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1133'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Google delar upp klienttips för User-Agent i två kategorier: Tips för låg en
 
 >[!NOTE]
 >
->Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från mitten av januari 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av januari. Detta för att undvika eventuella avbrott i rapporteringen under den kritiska perioden vid årets slut. Som anges nedan kommer operativsystemsversionen att frysas från och med oktober, men på grund av en gradvis utrullning och det faktum att de flesta användaragenter fryser till rätt OS-version, uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
+>Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från och med 25 januari 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av januari. Detta för att undvika eventuella avbrott i rapporteringen under den kritiska perioden vid årets slut. Som anges nedan kommer operativsystemsversionen att frysas från och med oktober, men på grund av en gradvis utrullning och det faktum att de flesta användaragenter fryser till rätt OS-version, uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
 
 >[!NOTE]
 >
