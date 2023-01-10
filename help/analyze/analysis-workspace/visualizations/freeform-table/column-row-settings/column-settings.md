@@ -5,10 +5,10 @@ uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 feature: Freeform Tables
 role: User, Admin
 exl-id: 82034838-b015-4ca2-adb6-736f20a478d8
-source-git-commit: 289c611419dd131c5ad529b15df3200ab6b14c12
+source-git-commit: 1ce29a131302e32a6bafd8cfdb21abb65619b359
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 15%
+source-wordcount: '789'
+ht-degree: 14%
 
 ---
 
@@ -34,7 +34,9 @@ Du kan redigera kolumninställningar för en enskild kolumn eller för flera kol
 
 ## Kolumninställningar
 
-Följande kolumninställningar är tillgängliga när du redigerar kolumner i Analysis Workspace:
+Du kan uppdatera följande kolumninställningar för enskilda tabeller i Analysis Workspace enligt beskrivningen i [Redigera kolumninställningar](#edit-uicontrol-column-settings).
+
+Vissa av dessa inställningar kan även hanteras för alla nya projekt som du skapar i Analysis Workspace, vilket beskrivs i [Användarinställningar](/help/analyze/analysis-workspace/user-preferences.md)
 
 | Element | Beskrivning |
 | --- | --- |
