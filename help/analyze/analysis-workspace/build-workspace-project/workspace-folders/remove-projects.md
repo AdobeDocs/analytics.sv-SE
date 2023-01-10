@@ -3,15 +3,13 @@ description: Lär dig hur du tar bort projekt från mappar
 keywords: Analysis Workspace
 title: Ta bort projekt från mappar
 feature: Workspace Basics
-hide: true
-hidefromtoc: true
-source-git-commit: d05ffcfb3a30204f2a35dd80f25dc5be585579b5
+exl-id: d2e77111-569d-4eec-8e54-863a38b9ac20
+source-git-commit: 29f8e18b5723228340c7e55af5159145d28e7cce
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '177'
 ht-degree: 1%
 
 ---
-
 
 # Ta bort ett projekt från en mapp
 
@@ -19,13 +17,11 @@ Om du vill ta bort ett projekt från en mapp kan du flytta projektet till en ann
 
 >[!NOTE]
 >
->Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
-
->[!NOTE]
->
 >När en administratör flyttar ett projekt till företagsmappen delas mappen med alla, även om de ursprungliga delade behörigheterna var begränsade. När en administratör flyttar ett projekt från företagsmappen gäller de ursprungliga eller tidigare delningsbehörigheterna.
 
-## Flytta ett projekt
+## Flytta ett projekt {#move-project-in-folder}
+
+Du kan flytta projekt från en mapp till en annan mapp som du har skapat.
 
 1. I en projektmapp väljer du **...** ellips bredvid projektnamnet.
 
@@ -43,7 +39,7 @@ Om du vill ta bort ett projekt från en mapp kan du flytta projektet till en ann
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
-## Ta bort ett projekt från en projektmapp
+## Ta bort ett projekt från en projektmapp {#delete-project-in-folder}
 
 När du tar bort ett projekt från en mapp tas hela projektet bort.
 

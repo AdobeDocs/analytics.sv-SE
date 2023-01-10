@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Lär dig hur du använder analysverktyg som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 9960b79ee6dcd98ed9f64af7c0e668c081542bb2
+source-git-commit: 8e976be3e6b8fa954fc9902651c6e4601b25c727
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1057'
 ht-degree: 78%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 78%
       + Mappar på arbetsytan {#workspace-folders}
          + [Om mappar i arbetsytan](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Skapa mappar och undermappar](analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Ta bort mappar](analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Lägg till projekt](analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Ta bort ett projekt](analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Spara ett nytt projekt](analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)

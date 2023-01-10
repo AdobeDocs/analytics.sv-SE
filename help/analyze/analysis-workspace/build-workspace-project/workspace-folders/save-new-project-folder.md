@@ -3,23 +3,17 @@ description: Läs om hur du sparar projekt i mappar på arbetsytan
 keywords: Analysis Workspace
 title: Spara projekt i mappar
 feature: Workspace Basics
-hide: true
-hidefromtoc: true
-source-git-commit: d05ffcfb3a30204f2a35dd80f25dc5be585579b5
+exl-id: 9719c4f7-85f1-4f12-9ee4-26565a40f0d7
+source-git-commit: 8e976be3e6b8fa954fc9902651c6e4601b25c727
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '70'
 ht-degree: 2%
 
 ---
 
-
 # Spara ett nytt projekt i en mapp
 
 Om du vill spara ett nytt projekt i en viss mapp väljer du mappnamnet i dialogrutan Spara projekt.
-
->[!NOTE]
->
->Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
 
 1. Skapa ett nytt projekt i Workspace.
 

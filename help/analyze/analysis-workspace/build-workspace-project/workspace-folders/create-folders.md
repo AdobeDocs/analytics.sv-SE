@@ -3,25 +3,19 @@ description: Lär dig hur du skapar mappar och undermappar i arbetsytan
 keywords: Analysis Workspace
 title: Skapa mappar
 feature: Workspace Basics
-hide: true
-hidefromtoc: true
-source-git-commit: d05ffcfb3a30204f2a35dd80f25dc5be585579b5
+exl-id: d546b87f-627d-4467-b1b8-36e65134fdcb
+source-git-commit: 29f8e18b5723228340c7e55af5159145d28e7cce
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '146'
 ht-degree: 1%
 
 ---
-
 
 # Skapa mappar
 
 Du kan lägga till en ny mapp eller en undermapp i listan över projekt och mappar på startsidan för arbetsytan.
 
->[!NOTE]
->
->Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
-
-## Skapa en ny mapp
+## Skapa en ny mapp {#create-new-folder}
 
 Om du vill skapa en ny mapp
 
@@ -29,7 +23,7 @@ Om du vill skapa en ny mapp
 
 1. Ange ett namn för den nya mappen.
 
-1. Välj taggar i listrutan.
+1. Välj taggar i listrutan eller lägg till nya taggar.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
@@ -41,7 +35,7 @@ Om du vill skapa en ny mapp
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
-## Skapa en undermapp
+## Skapa en undermapp {#create-subfolder}
 
 Med undermappar kan du ange ytterligare nivåer för projekthantering och -organisation.
 

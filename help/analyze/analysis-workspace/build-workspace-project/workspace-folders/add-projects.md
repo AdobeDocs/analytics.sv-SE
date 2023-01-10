@@ -3,25 +3,19 @@ description: Lär dig hur du lägger till mappar i arbetsytan
 keywords: Analysis Workspace
 title: Lägg till mappar i arbetsytan
 feature: Workspace Basics
-hide: true
-hidefromtoc: true
-source-git-commit: d05ffcfb3a30204f2a35dd80f25dc5be585579b5
+exl-id: 90968aec-0f08-4017-9c87-69f92b9747d2
+source-git-commit: 8e976be3e6b8fa954fc9902651c6e4601b25c727
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
-
 
 # Lägg till projekt i mappar
 
 Du kan lägga till projekt i en mapp i tabellvyn eller från en mapp.
 
->[!NOTE]
->
->Den här funktionen finns för närvarande i Beta. Vissa skärmar kan ändras.
-
-## Från tabellvyn
+## Från tabellvyn {#table-view}
 
 Lägg till projekt i en mapp från tabellvyn på startsidan.
 
@@ -47,7 +41,7 @@ Lägg till projekt i en mapp från tabellvyn på startsidan.
 
    ![](/help/analyze/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## Från en mapp
+## Från en mapp {#inside-folder}
 
 Du kan också lägga till projekt inifrån en mapp med hjälp av ellipslänken.
 
