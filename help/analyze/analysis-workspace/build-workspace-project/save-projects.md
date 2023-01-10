@@ -1,60 +1,92 @@
 ---
 description: Lär dig mer om de olika alternativen för att spara automatiskt, spara som, spara som mall och öppna tidigare versioner.
 title: Spara projekt
-feature: Grundläggande om arbetsytan
+feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 598271d12257df2f78128e44ea04f04db8fde811
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
 
 # Spara projekt
 
-Om du vill spara ändringarna i ett projekt går du till menyn Arbetsyta **[!UICONTROL Project]**. Arbetsytan sparar även projekt automatiskt i vissa fall.
+Projekt i Analysis Workspace sparas automatiskt varannan minut.
 
-## Spara projektalternativ {#Save}
+Du kan också spara projekt manuellt. Det finns andra alternativ, till exempel att lägga till taggar eller anteckningar, tillgängliga när du sparar ett projekt manuellt.
 
-Det finns olika åtgärder att spara som du kan utföra under menyn **[!UICONTROL Project]**, beroende på hur du vill komma åt analysen i framtiden.
+## Spara projekt manuellt {#Save}
 
-| Åtgärd | Beskrivning |
-|---|---| 
-| **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en beskrivning (valfritt) och lägga till (valfria) taggar. |
-| **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningar lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
-| **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
-| **[!UICONTROL Save as template]** | Spara projektet som en [anpassad mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgänglig för din organisation under **[!UICONTROL Project > New]** |
+Det finns olika alternativ när du sparar ett projekt manuellt i Analysis Workspace.
 
-![](assets/save-project.png)
+Så här sparar du ett projekt manuellt:
+
+1. Med projektet öppet i Analysis Workspace väljer du **[!UICONTROL Project]** väljer du sedan något av följande alternativ:
+
+   | Åtgärd | Beskrivning |
+   |---|---| 
+   | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en beskrivning (valfritt) och lägga till (valfria) taggar. |
+   | **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningarna lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
+   | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
+   | **[!UICONTROL Save as template]** | Spara projektet som en [egen mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
+
+   ![](assets/save-project.png)
 
 ## Spara automatiskt {#Autosave}
 
-Befintliga projekt, dvs. projekt som har sparats minst en gång tidigare, sparas automatiskt varannan minut på den lokala datorn. Nya projekt som aldrig har sparats sparas för närvarande inte automatiskt.
+Alla projekt i Analysis Workspace sparas automatiskt varannan minut på din dator. Detta inkluderar nyskapade projekt som ännu inte sparats manuellt.
 
-Det finns några scenarier som kan leda dig bort från osparade ändringar i ett projekt, vilket resulterar i olika tillgängliga åtgärder.
+* **Nya projekt:** Även om nya projekt sparas automatiskt måste du spara varje nytt projekt manuellt första gången. Analysis Workspace uppmanar dig att spara nya projekt manuellt när du växlar till ett annat projekt, stänger webbläsarfliken och så vidare.
 
-### Öppna ett annat arbetsyteprojekt
+   Om du av någon anledning oväntat förlorar åtkomsten till ett nyskapat projekt innan du sparar det manuellt, sparas en återställningsversion av ditt projekt på Analysis Workspace startsida i en mapp som kallas `Recovered Projects (Last 7 Days)`. Du måste återställa det återställda projektet och spara det manuellt på önskad plats.
 
-I Adobe kan du spara innan du lämnar sidan. När du har lämnat ett befintligt projekt tas den automatiskt sparade lokala kopian bort.
+   Så här återställer du ett återskapat projekt:
+
+   1. Gå till [!UICONTROL **Återskapade projekt**] på Analysis Workspace landningssida.
+
+      ![](assets/recovered-folder.png)
+
+   1. Öppna projektet och spara det där du vill.
+
+* **Befintliga projekt:** Om du av någon anledning lämnar ett projekt med ändringar som ännu inte har sparats automatiskt uppmanas du att spara ändringarna eller ett varningsmeddelande visas.
+
+   Här följer några vanliga scenarier:
+
+### Öppna ett annat projekt
+
+Om du öppnar ytterligare ett projekt medan du arbetar med ett projekt som innehåller ändringar som ännu inte har sparats automatiskt, uppmanas du att spara det aktuella projektet innan du går.
+
+Följande alternativ är tillgängliga:
+
+* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av ditt projekt med dina senaste ändringar.
+* **Spara som:** Sparar de senaste ändringarna som ett nytt projekt. Det ursprungliga projektet sparas endast med de senaste automatiskt sparade ändringarna.
+* **Ignorera ändringar:** Ignorera de senaste ändringarna. De senaste automatiskt sparade ändringarna sparas i projektet.
 
 ![](assets/existing-save.png)
 
 ### Navigera bort eller stänga en flik
 
-Webbläsaren varnar för att ändringar som inte sparats går förlorade. Du kan välja att avbryta eller avbryta.
+Om du navigerar bort från sidan eller stänger webbläsarfliken när du visar ett projekt med ändringar som ännu inte har sparats automatiskt, visas en varning i webbläsaren om att ändringar som inte har sparats går förlorade. Du kan välja att avbryta eller avbryta.
 
 ![](assets/browser-image.png)
 
 ### Webbläsaren kraschar eller sessionstider ut
 
-När du återgår till arbetsytan för **befintliga**-projekt visas en modal **projektåterställning**. Om du väljer Ja återställs projektet från den automatiskt sparade lokala kopian. &quot;Nej&quot; tar bort den automatiskt sparade lokala kopian och öppnar den senast sparade versionen av projektet.
+Om webbläsaren kraschar eller om sessionen avbryts uppmanas du att återställa ändringar i projektet som ännu inte har sparats automatiskt nästa gång du öppnar Analysis Workspace.
+
+Här följer dialogrutan Projektåterställning som visas första gången du öppnar Analysis Workspace efter en krasch eller en timeout.
+
+Välj **Ja** om du vill återställa projektet från den senaste automatiskt sparade kopian.
+
+Välj **Nej** om du vill ta bort den automatiskt sparade kopian och öppna den senast sparade versionen av projektet.
 
 ![](assets/project-recovery.png)
 
-För **nya**-projekt som aldrig har sparats går det inte att återställa ändringar som inte har sparats.
+För **new** projekt som aldrig har sparats går inte att återställa ändringar som inte har sparats.
 
-## Öppna föregående version {#previous-version}
+## Öppna en tidigare version {#previous-version}
 
 >[!NOTE]
 >
@@ -67,6 +99,6 @@ Så här öppnar du en tidigare version av ett projekt:
    ![](assets/previous-versions.png)
 
 1. Granska listan över tidigare versioner.
-   [!UICONTROL Timestamp] och  [!UICONTROL Editor] visas förutom  [!UICONTROL Notes] om de lades till när de  [!UICONTROL Editor] sparades. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
+   [!UICONTROL Timestamp] och [!UICONTROL Editor] visas utöver [!UICONTROL Notes] om de lades till när [!UICONTROL Editor] sparad. Versioner utan anteckningar lagras i 90 dagar. versioner med anteckningar lagras i ett år.
 1. Välj en tidigare version och klicka på **[!UICONTROL Load]**.
 Den föregående versionen läses sedan in med ett meddelande. Den tidigare versionen blir inte den aktuella sparade versionen av projektet förrän du klickar på **[!UICONTROL Save]**. Om du navigerar bort från den inlästa versionen visas den senast sparade versionen av projektet när du kommer tillbaka.
