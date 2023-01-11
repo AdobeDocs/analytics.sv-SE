@@ -4,9 +4,9 @@ title: Visa avvikelser i Analysis Workspace
 feature: Anomaly Detection
 role: User, Admin
 exl-id: 32edc7f4-c9b9-472a-b328-246ea5b54d07
-source-git-commit: 8be2b622250b1da3ec765592253df2607de67a96
+source-git-commit: 3dcdafa04b2a636ae147b9726aff6a770a4f1a6a
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '464'
 ht-degree: 2%
 
 ---
@@ -21,9 +21,11 @@ Du kan visa avvikelser i en friformstabell i en tidsserie.
 
 1. Markera ikonen för kolumninställningar i kolumnrubriken och kontrollera sedan att [!UICONTROL **Anomalier**] är markerat i listan med alternativ. Mer information finns i [Kolumninställningar](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
 
-1. Anomalier visas i tabellen enligt följande:
+1. Klicka utanför inställningsmenyn för att visa den uppdaterade tabellen.
 
    ![](assets/anomaly_detected.png)
+
+1. Anomalier visas i tabellen enligt följande:
 
    A **mörkgrå triangel** visas i det övre högra hörnet av varje rad där en dataavvikelse upptäcks.
 
