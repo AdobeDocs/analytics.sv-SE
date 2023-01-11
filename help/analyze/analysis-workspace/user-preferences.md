@@ -4,7 +4,7 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: 23d2297440e25ab519751d690552c61f6e32133c
+source-git-commit: 5c37c7173550a080ec64a958344f949cd217b72c
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Du kan anpassa allmänna inställningar för alla nya projekt som du skapar i An
 | --- | --- |
 | Landningssida | Välj vilken sida som ska visas som standardsida när du öppnar Adobe Analytics: <ul><li>Projektlista (standard)</li><li>Tomt projekt</li><li>Specifikt projekt valt från en lista</li></ul> |
 | Visa tips | Visar tips i en blå ruta i det nedre högra hörnet av Analysis Workspace. <p>Det här alternativet är aktiverat som standard.</p> |
-| <span class="preview">Komponenter som visas i grupper med vänster skena</span> | Välj hur många av varje komponent som ska visas på komponentmenyn i den vänstra listen. <p>Om du väljer 0 är komponenten inte längre tillgänglig från den vänstra listen på arbetsytorna.</p><p>Som standard visas fem komponenter för vart och ett av följande:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md).</p> |
+| Komponenter som visas i grupper med vänster skena | Välj hur många av varje komponent som ska visas på komponentmenyn i den vänstra listen. <p>Om du väljer 0 är komponenten inte längre tillgänglig från den vänstra listen på arbetsytorna.</p><p>Som standard visas fem komponenter för vart och ett av följande:</p> <ul><li>Mått</li><li>Mätvärden</li><li>Filter</li><li>Datumintervall</li></ul> <p>Mer information om komponenter i Analysis Workspace finns i [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md).</p> |
 
 ## Projektinställningar
 
@@ -57,7 +57,7 @@ Klicka på de länkade inställningsrubrikerna för mer information och kontext 
 | --- | --- | --- |
 | **Visa** |  |  |
 |  | [Visa densitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Välj hur mycket innehåll som ska visas på skärmen genom att minska den lodräta utfyllnaden av den vänstra listen, frihandstabeller och kohorttabeller. <ul><li>Kompakt</li><li>Bekväm</li><li>Utökad (standard)</li></ul> |
-|  | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj den visualiseringsfärgpalett som används i Analysis Workspace. <ul><li>Paletter som tillhandahålls av Adobe (standard)</li><li><span class="preview">Paletten Villkorsstyrd formatering </span></li><li><span class="preview">Paletten Upp/ned (avvikande)</span><li>Egna paletter</li></ul> |
+|  | [Färgpaletten](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Välj den visualiseringsfärgpalett som används i Analysis Workspace. <ul><li>Paletter som tillhandahålls av Adobe (standard)</li><li>Paletten Villkorsstyrd formatering </li><li>Paletten Upp/ned (avvikande)<li>Egna paletter</li></ul> |
 | **Data** |  |  |
 |  | [Rapportsvit](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Välj var tabeller och visualiseringar ska hämta sina data. <ul><li>Senaste (standard)</li><li>Specifik rapportsvit som valts i en lista</li></ul> |
 |  | [Kalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Välj i en lista över: <ul><li>Intervall som tillhandahålls av Adobe (standard är denna månad)</li><li>Anpassade intervall</li></ul> |
