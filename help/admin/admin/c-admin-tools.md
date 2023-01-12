@@ -3,49 +3,39 @@ description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 feature: Admin Tools
 exl-id: 1f31749f-10ce-4cff-81fb-141b37824c5f
-source-git-commit: dc9cd6bb45af0c992c37ffe20ea22eab67789ec5
+source-git-commit: 6eadb0b23628b0db59d9cbc6f632bf9cfb3f388c
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 34%
+source-wordcount: '254'
+ht-degree: 1%
 
 ---
 
 # Administratörsverktyg
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]**
+## Förstå administrationsverktyg
+
+Området med administrationsverktyg för Analytics är huvudområdet för att hantera din Adobe Analytics-instans. det är här de flesta administrativa uppgifter kan göras. Det andra området för Analytics-administration, administratörskonsolen för Adobe, är för att tilldela användare och ange behörigheter.
+
+Nedan följer en beskrivning av dessa två områden:
+
+* **Administratörsverktyg för analyser**
+
+   Använd administratörsverktygsområdet för Analytics för alla Adobe Analytics-administrationsåtgärder (förutom användaretablering och behörighetshantering). Exempel på vanliga administrativa uppgifter är: skapa och hantera rapportsviter, import av externa datakällor, exklusive data från specifika IP-adresser, och så vidare.
+
+   Se innehållshierarkin till vänster på sidan för att gå direkt till alla administrativa uppgifter som är tillgängliga i Adobe Analytics.
+
+* **Admin Console för Adobe**
+
+   Använd det här verktyget för att tilldela användare och ändra åtkomstbehörigheter.
+
+   För alla organisationer som migreras till Adobe IMS utförs dessa uppgifter i administrationskonsolen i Adobe. Mer information finns i [Adobe Analytics första administrationshandbok](/help/admin/admin-console/first-admin-guide.md). Om din organisation ännu inte har migrerat till Adobe IMS går du till [Migrering av Analytics-användare till Adobe Admin Console](/help/admin/admin-console/user-management2/user-migration/c-migration-tool.md).
+
+## Åtkomst till administrationsverktyg
 
 >[!WARNING]
 >
 >Öppna inte flera administratörsflikar i samma webbläsare. Detta kan leda till att du oavsiktligt sparar inställningar i fel rapportsvit. Om du t.ex. behöver jämföra regeluppsättningar och kopiera dem till en ny rapportserie föreslår vi att du öppnar en ny webbläsare eller tar en skärmdump för att jämföra regeluppsättningar.
 
-+ [Fakturering](billing-admin.md)
-+ [Bot Rules - översikt](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md)
-+ [Kodhanteraren](code-manager-admin.md)
-+ [Konverteringsvariabler (eVar)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md)
-+ [Valutakoder](currency.md)
-+ [Anpassade rapportbeskrivningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/custom-desc-admin.md)
-+ [Anpassa kalender](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md)
-+ [Datakällor](data-sources.md)
-+ [Standardmått](default-metrics.md)
-+ [Exkludera efter IP-adress](exclude-ip.md)
-+ [Sökmetoder](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/finding-methods.md)
-+ [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
-+ [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md)
-+ [Loggar](logs.md)
-+ [Marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md)
-+ [Menyanpassning](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/customize-menus.md)
-+ [Måttsynlighet](metric-visibility.md)
-+ [Mobilhantering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/mobile-management.md)
-+ [Översikt över betald sökdetektering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md)
-+ [Inställningshanteraren](preferences-manager.md)
-+ [Sekretessinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/privacy-settings.md)
-+ [Översikt över behandlingsregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md)
-+ [Översikt över realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
-+ [Schemalagd rapportkö](scheduled-reports-admin.md)
-+ [Översikt över vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md)
-+ [Enklare rapportmeny](t-simplified-menu.md)
-+ [Översikt över slutförda händelser](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md)
-+ [Tidsstämplar (valfritt)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md)
-+ [Översikt över trafikvariabeln (prop)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md)
-+ [Ange variabeln Unik besökare](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
-+ [Videohantering](video-management.md)
+Så här kommer du åt administratörsverktygen:
+
+1. **[!UICONTROL Analytics]** > **[!UICONTROL Admin]**
