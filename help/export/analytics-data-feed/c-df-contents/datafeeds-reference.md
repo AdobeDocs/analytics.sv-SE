@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: d65eb9ce1904e66bfb5fdaa801696ba050f99ae7
+source-git-commit: 49291658626ac3dc79c16c6f1d7137f0feaa0a95
 workflow-type: tm+mt
-source-wordcount: '3641'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
@@ -234,7 +234,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`video`** | Videoinnehåll | varchar(255) |
 | **`videoad`** | Namn på videoannons | varchar(255) |
 | **`videoadinpod`** | Videoannons i podposition | varchar(255) |
-| **`videoadlength`** | Videoannons | varchar(255) |
+| **`videoadlength`** | Videoannons | heltal |
 | **`videoadload`** | Videoannonser | varchar(255) |
 | **`videoadname`** | Namn på videoannons | varchar(255) |
 | **`videoadplayername`** | Namn på video- och videospelare | varchar(255) |
@@ -254,12 +254,13 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`videoepisode`** | Videoavsnitt | varchar(255) |
 | **`videofeedtype`** | Typ av videofeed | varchar(255) |
 | **`videogenre`** | Videogenre | text |
-| **`videolength`** | Videolängd | varchar(255) |
+| **`videolength`** | Videolängd | heltal |
 | **`videomvpd`** | Video MVPD | varchar(255) |
 | **`videoname`** | Videonamn | varchar(255) |
 | **`videonetwork`** | Videonätverk | varchar(255) |
 | **`videopath`** | Videosökväg | varchar(100) |
 | **`videoplayername`** | Videospelarens namn | varchar(255) |
+| **`videotime`** | Videotid | heltal |
 | **`videoqoebitrateaverageevar`** | Genomsnittlig bithastighet för videokvalitet | varchar(255) |
 | **`videoqoebitratechangecountevar`** | Antal ändringar av videokvalitet | varchar(255) |
 | **`videoqoebuffercountevar`** | Buffertantal för videokvalitet | varchar(255) |
