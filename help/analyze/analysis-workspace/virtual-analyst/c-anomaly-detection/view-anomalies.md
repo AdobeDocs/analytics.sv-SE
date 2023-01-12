@@ -4,9 +4,9 @@ title: Visa avvikelser i Analysis Workspace
 feature: Anomaly Detection
 role: User, Admin
 exl-id: 32edc7f4-c9b9-472a-b328-246ea5b54d07
-source-git-commit: 3dcdafa04b2a636ae147b9726aff6a770a4f1a6a
+source-git-commit: bc56f3567d2285d063ef35f316e22699bdcf151d
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '462'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ Så här visar du avvikelser i ett linjediagram:
 
    The **prickad linje** är det exakta förväntade värdet.
 
-1. Klicka på en vit punkt för att visa följande information om avvikelsen:
+1. Klicka på en avvikelse (vit punkt) om du vill visa följande information:
 
    * Datumet då avvikelsen inträffade
 
