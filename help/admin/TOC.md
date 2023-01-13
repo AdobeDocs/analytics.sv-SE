@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 4ed166bb05d8dfb32706008ad23c13f61908d1e9
+source-git-commit: f84ba51558dbbe59af496f83d37ed5f2789baf1d
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '683'
 ht-degree: 82%
 
 ---
@@ -47,8 +47,8 @@ ht-degree: 82%
          + [Migrera Analytics-användarkonton för Enterprise och Federated ID](admin-console/user-management2/user-migration/migrate-enterprise.md)
          + [Inaktivera äldre inloggningar](admin-console/user-management2/user-migration/t-disable-legacy-login.md)
          + [API:er som påverkas av migreringen](admin-console/user-management2/user-migration/developer.md)
-+ Administratör för analyser {#admin-tools}
-   + [Administratörsverktyg](admin/c-admin-tools.md)
++ Administratörsverktyg för analyser {#admin-tools}
+   + [Översikt över administrationsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
    + [Kodhanteraren](admin/code-manager-admin.md)
    + [Valutakoder](admin/currency.md)

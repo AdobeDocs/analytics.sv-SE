@@ -3,14 +3,14 @@ description: Index för administrationsverktyg i Adobe Analytics.
 title: Administratörsverktyg
 feature: Admin Tools
 exl-id: 1f31749f-10ce-4cff-81fb-141b37824c5f
-source-git-commit: 6eadb0b23628b0db59d9cbc6f632bf9cfb3f388c
+source-git-commit: 42dba33eb77ac875fea801e8f62fa74ed564671f
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 1%
+source-wordcount: '255'
+ht-degree: 0%
 
 ---
 
-# Administratörsverktyg
+# Översikt över administrationsverktyg
 
 ## Förstå administrationsverktyg
 
