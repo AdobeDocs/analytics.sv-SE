@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: e4468aa0a34654395fe78e70092df77d8f7011f6
+source-git-commit: b6c22fdeab68c55f145ed72002532ed87c06a258
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1461'
 ht-degree: 2%
 
 ---
 
 # Versionsinformation för Adobe Analytics
 
-**Senaste uppdatering**: 6 januari 2023
+**Senaste uppdatering**: 12 januari 2023
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -22,6 +22,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | ----------- | ---------- | ------- | ---- |
 | **Mappar på arbetsytan** | Med mappar kan du ordna och kategorisera dina projekt så att de blir lättare att hämta och komma åt. Dessutom har en delad **[!UICONTROL Company]** kan administratörer enkelt skapa och dela innehåll med alla Workspace-användare. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html) | Ej tillämpligt | 11 januari 2023 |
 | **Standardstartsida** | The [ny landningssida](/help/analyze/landing.md) som introducerades tidigare 2022 kommer att bli standardupplevelsen för alla användare på **11 januari 2023**. Den gamla landningssidan kommer att bli inaktuell och alla kommer att behöva använda den nya upplevelsen. | Ej tillämpligt | 11 januari 2023 |
+| **Project Manager-sidan är inaktuell** | I och med lanseringen av den nya landningssidan har vi ersatt **[!UICONTROL Project Manager]** enligt **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Components]**. Den nya landningssidan har alla funktioner som finns på den gamla Project Manager-sidan och mycket mer. Läs mer | Ej tillämpligt | 11 januari 2023 |
 | **Spara nya projekt automatiskt** | Analysis Workspace sparar nu automatiskt nya projekt. Om du av någon anledning oväntat förlorar åtkomsten till ett nyligen skapat projekt innan du sparar det manuellt, är en återställningsversion av ditt projekt nu tillgänglig. Tidigare sparades projekt bara automatiskt efter att de först sparats manuellt. [Läs mer](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md) | Ej tillämpligt | 11 januari 2023 |
 | **Förbättrade användarinställningar** | Nu kan du konfigurera ytterligare inställningar på användarnivå (i [!UICONTROL Components] > [!UICONTROL Preferences]). När du anger användarinställningar spänner markeringarna över flera projekt, tabeller och visualiseringar. Sidan Inställningar innehåller nu följande nya flikar som alla innehåller många nya konfigurationsalternativ:<ul><li>Frihandstabell</li><li>Visualiseringar</li></ul>Fler inställningar finns nu på **[!UICONTROL General]** och **[!UICONTROL Project]** -tabbar.<p>Tidigare var många av dessa inställningar endast konfigurerbara för enskilda projekt, tabeller och visualiseringar. [Läs mer](/help/analyze/analysis-workspace/user-preferences.md) | Ej tillämpligt | 11 januari 2023 |
 
