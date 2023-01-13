@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: f84ba51558dbbe59af496f83d37ed5f2789baf1d
+source-git-commit: 1c42cbec42d97ce3aa33bd5446b0fe59eaaa3caf
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 82%
+source-wordcount: '682'
+ht-degree: 80%
 
 ---
 
@@ -174,14 +174,14 @@ ht-degree: 82%
    + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
    + [Frågor och svar](c-data-governance/gdpr-faq.md)
    + [Arbetsflöde för datasekretess i Adobe Analytics](c-data-governance/an-gdpr-workflow.md)
-   + [Visa/hantera rapportsvitens inställningar för datastyrning](c-data-governance/gdpr-view-settings.md)
+   + [Dataintegritetsetiketter för analyskomponenter](c-data-governance/gdpr-labels.md)
    + [Data i etikettrapportsvit](c-data-governance/gdpr-setup-reportsuite.md)
-   + [Skicka begäran om åtkomst och borttagning](c-data-governance/gdpr-submit-access-delete.md)
-   + [Datasekretessetiketter för analysvariabler](c-data-governance/gdpr-labels.md)
-   + [Namnutrymmen](c-data-governance/gdpr-namespaces.md)
-   + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
+   + [Visa/hantera integritetsetiketter för rapportsviten](c-data-governance/gdpr-view-settings.md)
    + [Bästa praxis för etikettering](c-data-governance/gdpr-analytics-ids.md)
    + [Exempel på etiketter](c-data-governance/gdpr-labeling-example.md)
+   + [Skicka begäran om åtkomst och borttagning](c-data-governance/gdpr-submit-access-delete.md)
+   + [Namnutrymmen](c-data-governance/gdpr-namespaces.md)
+   + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
    + [Datasekretess och Data Connectors (Genesis)](c-data-governance/data-connectors-gdpr.md)
    + [Terminologi för datasekretess](c-data-governance/gdpr-terminology.md)
 + [Admin-API](c-admin-api/c-admin-api.md)

@@ -3,16 +3,16 @@ description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: 3a48eadd47b4d748708abebd2875fdac8979a115
+source-git-commit: 4f7282f22cba344a86efca992ea273af0707cdcf
 workflow-type: tm+mt
 source-wordcount: '3673'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
 # Datasekretessetiketter för analysvariabler
 
-## Varför sätta etiketter på dina data? {#why-label}
+## Varför märka dina data? {#why-label}
 
 Många av Adobes kunder har jurister som har granskat lagarna om datasekretess (GDPR, CCPA, o.s.v.). Dessa grupper kan ha dragit egna slutsatser om hur data ska hanteras för att följa dataintegritetslagstiftningen. De juridiska tolkningarna kan skilja sig åt mellan olika företag och de önskade inställningarna för datahantering kan också skilja sig åt mellan olika kunder. Eftersom kunderna har olika preferenser för behandling av datasekretess och olika datauppsättningar, låter Adobe sina kunder, som personuppgiftsansvariga, att anpassa sina inställningar för databehandling i samband med datasekretess för sina unika data. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
 
@@ -28,7 +28,7 @@ Implementering av datasekretess i Adobe Analytics stöder följande etiketter f�
 >
 >DULE-ramverket (Data Usage Labeling &amp; Enforcement) är utformat för att tillhandahålla ett enhetligt sätt att i alla Adobe-lösningar/-tjänster/-plattformar samla in, kommunicera och använda metadata om data i hela Adobe Experience Cloud. Metadata hjälper personuppgiftsansvariga att indikera vilka data som är personuppgifter, vilka data som är känsliga och vilka avtalsbegränsningar som är kopplade till data. I den här initiala versionen visar Analytics bara de DULE-etiketter som är relevanta för datasekretess. I takt med att andra Adobe-produkter implementerar stöd för DULE-etiketter, kommer framtida versioner att innehålla ytterligare känsliga dataetiketter, liksom avtalsetiketter, som säkerställer att data som delas mellan produkterna endast används på ett juridiskt tillåtet sätt.
 
-## Etiketter för identitetsdata (DULE) {#identity-data-labels}
+## Identitetsdataetiketter (DULE) {#identity-data-labels}
 
 Identitetsdata ”I”-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person.
 
@@ -39,7 +39,7 @@ Identitetsdata ”I”-etiketter används för att kategorisera data som kan ide
 
 {style=&quot;table-layout:auto&quot;}
 
-## Etiketter för känsliga data (DULE) {#sensitive-data-labels}
+## Känsliga dataetiketter (DULE) {#sensitive-data-labels}
 
 Känsliga ”S”-etiketter används för att kategorisera känsliga data som geografiska data. Ytterligare etiketter för känsliga data kommer att införas i framtiden för att identifiera andra typer av känslig information.
 
@@ -50,7 +50,7 @@ Känsliga ”S”-etiketter används för att kategorisera känsliga data som ge
 
 {style=&quot;table-layout:auto&quot;}
 
-## Etiketter för datastyrning (datasekretess) {#data-governance-labels}
+## Dataförvaltningsrubriker (dataintegritet) {#data-governance-labels}
 
 Etiketter för datastyrning ger användarna möjlighet att klassificera data som avspeglar sekretessrelaterade överväganden och avtalsvillkor så att de överensstämmer med regler och företagspolicyer.
 
@@ -89,11 +89,11 @@ En borttagningsetikett krävs endast för fält som innehåller ett värde som s
 
 {style=&quot;table-layout:auto&quot;}
 
-## Ange ett namnutrymme när du anger en variabel som ID-DEVICE eller ID-PERSON {#section_F0A47AF8DA384A26BD56032D0ABFD2D7}
+## Ange ett namnutrymme när en variabel taggas som ID-DEVICE eller ID-PERSON {#provide-namespace}
 
 När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att ange ett namnutrymme. Du kan antingen använda ett tidigare definierat namnutrymme eller definiera ett nytt.
 
-### Använd ett tidigare definierat namnutrymme
+### Använda ett tidigare definierat namnutrymme
 
 Du kan välja ett av de befintliga namnutrymmena om du tidigare har tilldelat en ID-etikett till andra variabler i någon av rapportsviterna i ditt inloggningsföretag. Återanvänd namnutrymmet om den här variabeln innehåller samma typ av ID:n som andra variabler som redan är etiketterade med det här namnutrymmet och du vill söka igenom dem alla när du skickar en begäran.
 
@@ -140,13 +140,13 @@ Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariable
 | Variabeltyp | Etiketter som stöds | Etiketter som inte stöds |
 |--- |--- |--- |
 | <ul><li>Anpassade slutförda händelser</li><li>Marknadsförande eVars</li><li>Multivärdesvariabler (mvVars)</li><li>Hierarkivariabler</li></ul> | <ul><li>S1/S2</li><li>ACC-ALL, ACC-PERSON</li></ul> | <ul><li>I1/I2</li>  <li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON</li></ul> |
-| Klassificeringar | <ul><li>I1/I2, S1/S2</li><li>ACC-ALL, ACC-PERSON</li></ul> | <ul><li>ID-ENHET, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON</li></ul> |
+| Klassificeringar | <ul><li>I1/I2, S1/S2</li><li>ACC-ALL, ACC-PERSON</li></ul> | <ul><li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON</li></ul> |
 | <ul><li>Trafikvariabler (props)</li><li>Handelsvariabler (icke-marknadsförande eVars)</li></ul> | Alla etiketter | - |
-| De flesta andra variablerna  (*Se tabellen nedan för undantag*) | ACC-ALL, ACC-PERSON | <ul><li>I1/I2, S1/S2</li><li>ID-ENHET, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON)</li></ul> |
+| De flesta andra variablerna  (*Se tabellen nedan för undantag*) | ACC-ALL, ACC-PERSON | <ul><li>I1/I2, S1/S2</li><li>ID-DEVICE, ID-PERSON</li><li>DEL-DEVICE, DEL-PERSON)</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
-## Variabler till vilka andra etiketter än ACC-ALL/ACC-PERSON kan tilldelas/ändras {#section_4FA003003D1B4E2EBCFCDB1A7CD4A824}
+## Variabler till vilka andra etiketter än ACC-ALL/ACC-PERSON kan tilldelas/ändras {#variables}
 
 <table id="table_0972910DB2D7473588F23EA47988381D"> 
  <thead> 
@@ -209,7 +209,7 @@ Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariable
  </tbody> 
 </table>
 
-## Hantering av borttagning {#section_F3DEE591671A4B16A8E043F91C137ECB}
+## Hantering av borttagning {#deletion}
 
 Adobe Analytics-stöd för begäranden om borttagning av datasekretess är utformat för att minimera påverkan på rapporter. I de flesta fall ska den metrik som visas i rapporter inte ändras. En historikrapport som kördes före borttagning av datasekretess kommer att matcha samma rapportkörning efter att borttagning har utförts. Detta uppnås genom att de borttagna uppgifterna helt kopplas bort från den registrerade, samtidigt som icke-identifierbara data lämnas kvar så att de rapporterade värdena förblir konsekventa.
 
@@ -226,7 +226,7 @@ Följande tabell beskriver hur olika variabler tas bort. Det här är inte en fu
 
 {style=&quot;table-layout:auto&quot;}
 
-## Variabler som inte stöder de förväntade Delete-etiketterna {#section_956B766EFFEC427E87E6CFF3A4217E86}
+## Variabler som inte stöder de förväntade Delete-etiketterna {#no-delete-support}
 
 Det här avsnittet syftar till att förtydliga information om Analytics-variabler som inte stöder borttagning. Ibland tas dessa variabler bort av icke-Analytics-användare (t.ex. det juridiska teamet) som inte förstår vilken typ av data som finns i variabeln och gör felaktiga antaganden baserat på variabelns namn. Här är en lista över några av dessa variabler och varför de inte behöver tas bort, eller varför de inte behöver en viss borttagningsetikett.
 

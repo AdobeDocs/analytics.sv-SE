@@ -1,37 +1,90 @@
 ---
-description: Dialogrutan Datastyrning i Administratörsverktyg ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning, om de har mappats till en Experience Cloud-organisation och om det finns en policy om datalagring för den här rapportsviten.
-title: Visa/hantera inställningar för datastyrning i rapportsviten
+description: Dialogrutan Sekretessetikett för datastyrning ger en översikt över en rapportrites sekretessetiketter och namnutrymmen. Du kan också exportera inställningarna till en CSV-fil härifrån.
+title: Visa/hantera integritetsetiketter för datastyrning
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: 196e7672026a284591c0dba2336cb11fc3661c72
+source-git-commit: f719691800e4560aeb822825170a15ead5044e7b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '875'
+ht-degree: 41%
 
 ---
 
-# Visa/hantera inställningar för datastyrning i rapportsviten
-
-Dialogrutan Datastyrning i Administratörsverktyg ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning, om de har mappats till en Experience Cloud-organisation och om det finns en policy om datalagring för den här rapportsviten.
-
-1. Logga in på Adobe Experience Cloud.
-1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Data Governance]**.
+# Visa/hantera integritetsetiketter för datastyrning
 
 >[!NOTE]
 >
->Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörigheter för den här funktionen.
+>Det uppdaterade användargränssnittet är för närvarande i begränsad testning.
 
-1. Visa alla rapportsviter som ingår i ditt inloggningsföretag:
+The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt över en rapports sekretessetiketter och namnutrymmen. Du kan också exportera inställningarna till en CSV-fil härifrån.
 
-   ![](assets/privacy_setup_an.png)
+## Visa sekretessetiketter {#view-privacy}
+
+1. Logga in på Adobe Experience Cloud.
+1. Navigera till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data configuration & collection]** > **[!UICONTROL Data Governance]**.
+
+   >[!NOTE]
+   >
+   >Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörigheter för den här funktionen.
+
+1. Överst till höger väljer du en rapportserie vars sekretessetiketter du vill visa eller hantera.
+
+   ![](assets/privacy_labeling.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Report Suites]** | På den första raden visas rapportsvitens egna namn. Den andra raden innehåller rapportsvitens interna namn. Om du kan ange etiketter för en rapportsvit blir den första raden en klickbar länk som tar dig till etikettsidan. |
-| **[!UICONTROL Organization Mapping]** | <ul><li>Mappad: Den här rapportsviten har redan mappats till samma Experience Cloud-organisation som det Analytics-inloggningsföretag du är inloggad på. Endast rapportsviter som har den här inställningen kan etiketteras.</li><li>Mappad till en annan organisation: En annan Experience Cloud-organisation har redan mappat den här rapportsviten till sin organisation.</li></ul> |
-| **[!UICONTROL Data Retention Policy]** | Implementeringen av datasekretess i Analytics kräver att du har en policy för datalagring. Den här inställningen visar om:<ul><li>det finns en policy för datalagring för den här rapportsviten, och</li><li>Hur länge Adobe lagrar data innan de raderas. Standardperioden för datalagring är 25 månader.</li></ul>**Anteckning**: Adobe Analytics kan inte hjälpa dig med att bearbeta förfrågningar till API:t för datasekretess, d.v.s. att bearbeta de förfrågningar om åtkomst eller borttagning som du får från slutanvändarna, om datalagringsperioden inte har ställts in. Kontakta din Customer Success Manager för att ange din datalagringsperiod. |
-| **[!UICONTROL Groups]** | Grupperingsfunktionen är för närvarande inte implementerad. |
-| Vänster sidofält | Klicka på kanalikonen för att öppna eller stänga sidorutan. The [!UICONTROL Organization Mapping] I visas antalet rapportsviter som hör till de beskrivna kategorierna. The [!UICONTROL Data Retention Policy] -avsnittet visar varje unik datalagringspolicy som finns för din organisation och antalet rapportsviter som har tilldelats den lagringspolicyn. |
-| **[!UICONTROL Export to CSV]** | Om du markerar kryssrutan bredvid en eller flera rapportsviter visas alternativet  Exportera till CSV . Med det här alternativet kan du hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för alla variabler för alla valda rapportsviter. Vi rekommenderar att ditt juridiska team granskar dina etikettval och det här alternativet underlättar den här granskningen. I stället för att behöva utföra granskningen när du är inloggad i användargränssnittet för datastyrning kan du dela .CSV-filen med dem. |
+| **[!UICONTROL Component Name]** | I den här kolumnen visas alla komponenter (dimensioner, mått) som ingår i den här rapportsviten. |
+| **[!UICONTROL Identity]** | Identitetsdata ”I”-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#identity-data-labels) |
+| **[!UICONTROL Sensitivity]** | Känsliga ”S”-etiketter används för att kategorisera känsliga data som geografiska data. Ytterligare etiketter för känsliga data kommer att införas i framtiden för att identifiera andra typer av känslig information. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#sensitive-data-labels) |
+| **[!UICONTROL GDPR Access]** | Etiketter för datastyrning ger användarna möjlighet att klassificera data som avspeglar sekretessrelaterade överväganden och avtalsvillkor så att de överensstämmer med regler och företagspolicyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#data-privacy-access-labels) |
+| **[!UICONTROL GDPR Delete]** | En borttagningsetikett krävs endast för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (d.v.s. som skulle göra det möjligt att identifiera den registrerade). Andra personuppgifter (favoriter, webbsurfnings-/inköpshistorik, hälsovillkor, o.s.v.) behöver inte tas bort eftersom associationen med den registrerade kommer att tas bort. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#data-privacy-delete-labels) |
+| **[!UICONTROL Namespace]** | När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att ange ett namnutrymme. Du kan antingen använda ett tidigare definierat namnutrymme eller definiera ett nytt. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#section_F0A47AF8DA384A26BD56032D0ABFD2D7) |
+| **[!UICONTROL Category]** | Refererar typ av komponent, t.ex. standardkomponent, konverteringsvariabel. |
 
 {style=&quot;table-layout:auto&quot;}
+
+## Kopiera sekretessetiketter till en rapportserie  {#copy-to-rs}
+
+Om du vill använda samma sekretessinställningar för DULE/Data för flera rapportsviter gör du så här:
+
+1. Markera variabeln som du vill kopiera. Observera att du bara kan kopiera etiketterna för en variabel åt gången.
+1. Klicka **[!UICONTROL Copy to Report Suite(s)]** längst ned i dialogrutan Datastyrning.
+
+   ![Copy to report suite](assets/copy_to_reportsuite.png)
+
+1. På den slutliga skärmen visas variabelnamnet, den eller de etiketter som du försöker kopiera över, rapportsviterna och deras ID:n samt om inställningarna i målrapportsviterna matchar.
+
+   ![Kopierar etikett till rapportserie](assets/copy_to_rs.png)
+
+   >[!IMPORTANT]
+   >
+   >Kom ihåg att alla rapporteringsprogram du markerar måste mappas till din Experience Cloud-organisation.
+
+   När du kopierar etiketterna för en variabel eller variabeluppsättning till en annan rapportsvit, flyttas kopian till variabeln på motsvarande plats i målrapportsviten. För standardkomponenter, listvariabler och lyckade händelser kopieras etiketterna till variabeln med **samma namn** i målrapportsviten.
+
+   För Conversion Variables (eVars) och Traffic Dimensions (props) kommer texten att skickas till variabeln med **samma nummer** i målrapportsviten. eVar12 kopieras till exempel till eVar12 i alla målrapportsviter. Namnen på dessa variabler ignoreras när kopians mål fastställs. Om motsvarande variabel inte är aktiverad i målrapportsviten misslyckas kopieringen för den variabeln.
+
+   När du kopierar etiketterna för klassificeringar som definierats för en variabel kopieras etiketterna till en klassificering för motsvarande variabel i målrapportsviten (till exempel eVar7 till eVar7) som har ett namn som är identiskt med den klassificering som kopieras. Annars misslyckas kopian för den klassificeringens etiketter.
+
+1. Markera rutan bredvid en eller flera rapportsviter där inställningarna matchar.
+1. Klicka på **[!UICONTROL Apply]**.
+
+   Ett statusmeddelande visas när etiketter har använts. Statusmeddelandet innehåller namnen på de målvariabler eller klassificeringar och deras rapportsviter för vilka kopieringen misslyckades.
+
+   >[!IMPORTANT]
+   >
+   >Kontrollera alltid målrapportsviterna för att säkerställa att etiketterna som kopieras över är korrekta. Detta är särskilt viktigt för variabler som har ID- eller DEL-etiketter.
+
+## Exportera till en CSV-fil
+
+Du kan hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för alla variabler för de valda rapportsviterna. Vi rekommenderar att ditt juridiska team granskar dina etikettval och det här alternativet underlättar den här granskningen. I stället för att behöva utföra granskningen när du är inloggad i användargränssnittet för datastyrning kan du dela .CSV-filen med dem.
+
+1. Klicka **[!UICONTROL Export CSV]** längst upp till höger och den här dialogrutan visas:
+
+   ![](assets/export_csv.png)
+
+1. Välj en eller flera rapportsviter som du vill exportera alla datastyrningsinställningar för.
+
+## Redigera sekretessetiketter
+
+Se [Tilldela eller redigera sekretessetiketter för rapportsviten](/help/admin/c-data-governance/gdpr-setup-reportsuite.md).
