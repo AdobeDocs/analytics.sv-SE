@@ -3,10 +3,10 @@ description: Bidragsanalys är en intensiv maskininlärningsprocess som utformat
 title: Statistiska tekniker som används vid bidragsanalys
 role: User, Admin
 exl-id: 1e19b154-c6d2-48fe-9baf-db4e47789321
-source-git-commit: 9b50e77b3998753d45a25799dbed6094b048c118
+source-git-commit: 865b19f5e541691eabaa81d4533a64c79501fd19
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Detta uppnås med bidragsanalys genom att en tvådelad algoritm utförs för var
 
    ![](assets/cramers-v.png)
 
-1. För varje dimensionspost används personens restvärde (PR) för att mäta kopplingen mellan det avvikande mätvärdet och varje dimensionspost. PR följer en standardnormalfördelning, som gör det möjligt för algoritmen att jämföra PR för två slumpmässiga variabler även om avvikelserna inte är jämförbara. I praktiken är felet okänt och uppskattas med hjälp av en begränsad provkorrigering.
+1. För varje dimensionspost används Pearsons residual (PR) för att mäta kopplingen mellan det avvikande mätvärdet och varje dimensionspost. PR följer en standardnormalfördelning, som gör det möjligt för algoritmen att jämföra PR för två slumpmässiga variabler även om avvikelserna inte är jämförbara. I praktiken är felet okänt och uppskattas med hjälp av en begränsad provkorrigering.
 
    I det föregående exemplet, tabell 1, ges PR, med en begränsad provkorrigering för land i och tidsperiod 2, av
 
