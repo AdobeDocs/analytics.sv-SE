@@ -1,20 +1,23 @@
 ---
-description: Lär dig hur du aktiverar Adobe Campaign-rapportering i Adobe Analytics
-title: Hur integrerar jag Adobe Campaign Reporting i Adobe Analytics?
+description: Lär dig hur du aktiverar Adobe Campaign Standard-rapportering i Adobe Analytics
+title: Hur integrerar jag Adobe Campaign Standard Reporting i Adobe Analytics?
 feature: Campaign Integration
 exl-id: 63bae5ee-f94d-43fa-87ce-6380236745d6
-source-git-commit: a7537a80719ff149b4d60da500c93d3e451499c9
+source-git-commit: 0a039668af52a0e5433f9b0c4e643db566b95702
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 94%
+source-wordcount: '471'
+ht-degree: 68%
 
 ---
 
-# Adobe Campaign-rapportering
+# Adobe Campaign Standard
 
 Mer information om hur du konfigurerar den här integreringen finns i [dokumentationen för Adobe Campaign](https://helpx.adobe.com/se/campaign/standard/integrating/using/about-campaign-analytics-integration.html).
 
-Integrationen mellan Adobe Analytics och Adobe Campaign
+>[!IMPORTANT]
+>Den här artikeln gäller Adobe Campaign **Standard** enbart rapportering. Se [här](https://experienceleague.adobe.com/docs/analytics/integration/analytics-to-campaign-classic.html?lang=en) för att lägga till Adobe Campaign **Klassisk** rapportering.
+
+Integrationen mellan Adobe Analytics och Adobe Campaign Standard:
 
 * Här kan du dela dina KPI-data (Key Performance Indicator) från Adobe Campaign Standard till Adobe Analytics.
 * Förbättrar spårningsformler med Adobe Analytics-parametrar.
@@ -22,11 +25,11 @@ Integrationen mellan Adobe Analytics och Adobe Campaign
 * Lägger till fem nya Adobe Campaign-klassificeringar.
 * Lägger till nio nya Adobe Campaign-mått.
 * Lägger till sex nya Adobe Campaign-dimensioner.
-* Synkroniserar data med Analytics var 15:e minut.
+* Synkroniserar data till Analytics var 15:e minut via en automatiskt konfigurerad datakälla.
 
-## Steg 1. Aktivera Adobe Campaign-rapportering {#section_C685EF10505045708A6536BB13F6CD58}
+## Steg 1. Aktivera Adobe Campaign Standard-rapportering {#section_C685EF10505045708A6536BB13F6CD58}
 
-För att kunna visa Campaign-data i Analytics måste du först aktivera Campaign-rapportering.
+För att kunna visa data om Campaign Standarder i Analytics måste ni först aktivera kampanjrapportering i Report Suite Manager.
 
 1. Navigera till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **`<select report suite>`** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Adobe Campaign]** > **[!UICONTROL Adobe Campaign Reporting]**.
 1. Klicka på **[!UICONTROL Enable Campaign Reporting]**.
@@ -37,9 +40,7 @@ För att kunna visa Campaign-data i Analytics måste du först aktivera Campaign
 
 Integrationen mellan Adobe Campaign Standard och Adobe Analytics ger följande rapport under **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**
 
-| Rapport | Definition |
-|--- |--- |
-| Adobe Campaign Executed Delivery ID | Visar data som importerats från Adobe Campaign om e-postmeddelanden som skickats från Adobe Campaign. |
+* **[!UICONTROL Adobe Campaign Executed Delivery ID]**: Visar data som importerats från Adobe Campaign om e-postmeddelanden som skickats från Adobe Campaign. |
 
 ## Steg 3. Använd Adobe Campaign-klassificeringar {#section_74A28AF3F4CA4091943789DE4D8B2B63}
 
@@ -47,13 +48,15 @@ Integrationen mellan Adobe Campaign Standard och Adobe Analytics ger följande r
 
 När rapportsviten har aktiverats för Adobe Campaign finns följande klassificeringar:
 
-* Leverans-ID (internt leveransnamn som visas i Campaign)
-* Leveransetikett (Leverans i kampanj - Individuell leverans/Återkommande leverans/Transaktionsleverans)
-* Kampanj-ID (internt kampanjnamn som du ser i Campaign)
-* Kampanjetikett (Campaign i Adobe Campaign)
-* Etikett för utförd leverans (lista över enskilda utförda leveranser)
+| Klassificering | Beskrivning |
+| --- | --- |
+| [!UICONTROL Delivery ID] | Namn på intern leverans som visas i Campaign |
+| [!UICONTROL Delivery Label] | Leverans i kampanj - enskild leverans/återkommande leverans/transaktionsleverans |
+| [!UICONTROL Campaign ID] | Internt kampanjnamn som visas i Campaign |
+| [!UICONTROL Campaign Label] | Campaign i Adobe Campaign |
+| [!UICONTROL Executed Delivery Label] | Lista över enskilda utförda leveranser |
 
-## Adobe Campaign-dimensioner och mätvärden som är tillgängliga i Adobe Analytics {#section_F33385C9660644AF84172EC39601469B}
+## Adobe Campaign Standard mått och mätvärden finns i Adobe Analytics {#section_F33385C9660644AF84172EC39601469B}
 
 Följande **mätvärden** är tillgängliga från Campaign i Adobe Analytics-rapportsviter:
 
@@ -70,7 +73,7 @@ Följande **mätvärden** är tillgängliga från Campaign i Adobe Analytics-rap
 Följande **dimensioner** är tillgängliga från Campaign i rapportsviterna för Adobe Analytics:
 
 | Dimensionsnamn | Definition |
-|--- |--- |
+| --- | --- |
 | Kampanj-ID | ID för alla kampanjer för vilka KPI har skickats under varaktigheten. |
 | Kampanjetikett | Etiketter för kampanj-ID:n |
 | Leverans-ID | ID för alla leveranser för vilka KPI har skickats under varaktigheten. Innehåller även ID:n för huvudleveranser av återkommande leveranser och transaktionsleveranser. Exempel: En DM1 med återkommande leverans schemalades och DM2, DM3, DM4 och DM5 var underordnade leveranser för den återkommande leveransen.  Leverans-ID:t visar resultat för alla leveranser, DM1 till DM5. |
