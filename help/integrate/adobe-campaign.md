@@ -3,10 +3,10 @@ description: Lär dig hur du aktiverar Adobe Campaign-rapportering i Adobe Analy
 title: Hur integrerar jag Adobe Campaign Reporting i Adobe Analytics?
 feature: Campaign Integration
 exl-id: 63bae5ee-f94d-43fa-87ce-6380236745d6
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: a7537a80719ff149b4d60da500c93d3e451499c9
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 95%
+source-wordcount: '444'
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ Integrationen mellan Adobe Analytics och Adobe Campaign
 * Förbättrar spårningsformler med Adobe Analytics-parametrar.
 * Lägger till en ny rapport under **[!UICONTROL Analytics]** > **[!UICONTROL Reports]** > **[!UICONTROL Adobe Campaign.]**
 * Lägger till fem nya Adobe Campaign-klassificeringar.
-* Lägger till tio nya Adobe Campaign-mätvärden.
+* Lägger till nio nya Adobe Campaign-mått.
 * Lägger till sex nya Adobe Campaign-dimensioner.
 * Synkroniserar data med Analytics var 15:e minut.
 
@@ -60,7 +60,6 @@ Följande **mätvärden** är tillgängliga från Campaign i Adobe Analytics-rap
 * Adobe Campaign - skickat
 * Adobe Campaign - öppnat
 * Adobe Campaign - klickat
-* Adobe Campaign - bearbetat
 * Adobe Campaign - levererat
 * Adobe Campaign - unikt öppnat
 * Adobe Campaign - unikt klickat
