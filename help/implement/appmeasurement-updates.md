@@ -3,7 +3,7 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: d2c291f7db465034ffadc4a2c1caf9639caf2a1d
 workflow-type: tm+mt
 source-wordcount: '2315'
 ht-degree: 2%
@@ -23,7 +23,6 @@ Du kan hämta den senaste versionen av AppMeasurement i [Kodhanteraren](/help/ad
 Releasedatum: **23 september 2022**
 
 * AppMeasurement har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda flaggan &quot;collectHighEntropyUserAgentHints&quot;. Samling med hög entropi-tips är som standard inaktiverad. Läs mer om User-Agent [klienttips](/help/technotes/client-hints.md).
-
 
 ## Version 2.22.4
 

@@ -3,10 +3,10 @@ title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 feature: Implementation Basics
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-source-git-commit: be00ae15cfcd1afb1ecf225c9dff82e969bb5127
+source-git-commit: d2c291f7db465034ffadc4a2c1caf9639caf2a1d
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 58%
+source-wordcount: '409'
+ht-degree: 44%
 
 ---
 
@@ -23,18 +23,16 @@ Adobe kräver kod på din webbplats eller i din app för att kunna skicka data t
 1. När en besökare kommer till din webbplats, skickas en begäran till din webbserver.
 2. Webbplatsens webbserver skickar sidkodsinformationen och sidan visas i webbläsaren.
 3. Sidan läses in och Analytics JavaScript-kod körs.
-JavaScript-koden skickar en bildbegäran till Adobes datainsamlingsservrar. Siddata som du har definierat under implementeringen skickas som en del av en frågesträng i den här bildbegäran.
+4. JavaScript-koden skickar en 1x1-pixelbildbegäran till datainsamlingsservrar för Adobe. Siddata som du har definierat under implementeringen skickas som en del av en frågesträng i den här bildbegäran.
+5. Adobe datainsamlingsservrar returnerar den begärda bilden.
+6. Adobe-servrar tolkar och lagrar insamlade data i en rapportserie.
+7. Rapportsvitens data fyller i de rapporter som du kan få åtkomst till i en webbläsare.
 
-4. Adobe returnerar en transparent pixelbild.
-5. Adobe-servrar lagrar insamlade data i en eller flera *rapportsviter*.
-6. Rapportsvitens data fyller i de rapporter som du kan få åtkomst till i en webbläsare.
 
-   JavaScript-koden körs snabbt och påverkar inte sidinläsningstiden märkbart. På så sätt kan du räkna de sidor som visas när en besökare klickar på **[!UICONTROL Reload]** eller **[!UICONTROL Back]** för att komma till en sida, eftersom JavaScript-skriptet körs även när sidan hämtas från cache.
+Adobe erbjuder flera metoder för att implementera koden, beroende på plattform och organisationens behov.
 
-Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat program för att kunna skicka data till datainsamlingsservrar. Det finns flera metoder för att implementera den här koden, beroende på plattform och organisationens behov.
-
-* **Web SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics. Installera Web SDK-tillägget i Adobe Experience Platform Data Collection, använd en loader-tagg på varje sida och skicka data till Adobe Experience Platform Edge i ett format som passar din organisation. Experience Edge vidarebefordrar inkommande data till Adobe Analytics i rätt format.
-* **Web SDK**: Du kan läsa in Web SDK-bibliotek manuellt på webbplatsen om du inte vill använda Adobe Experience Platform Data Collection. Referera till Web SDK-biblioteket på varje sida och skicka önskade spårningsanrop till Adobe Experience Edge.
+* **Web SDK-tillägg**: Den aktuella, standardiserade och rekommenderade metoden för att implementera Adobe Analytics. Installera Web SDK-tillägget i Adobe Experience Platform Data Collection, använd en loader-tagg på varje sida och skicka data till Adobe Experience Platform Edge i ett format som passar din organisation. Experience Edge vidarebefordrar inkommande data till Adobe Analytics i rätt format.
+* **Web SDK**: Du kan läsa in Web SDK-bibliotek manuellt på webbplatsen om du inte vill använda taggar. Referera till Web SDK-biblioteket på varje sida och skicka önskade spårningsanrop till Adobe Experience Edge.
 * **Adobe Analytics-tillägg**: Installera Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Placera en loader-tagg på varje sida och använd Analytics-tillägget för att bestämma hur varje variabel definieras.
 * **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Skapar konturer av variabler och inställningar som används i en implementering, vilket kan vara användbart för implementeringar med regler med anpassad kod.
 * **SDK för mobila enheter:** Dedikerade bibliotek för att enkelt skicka data till Adobe från mobilappen.
