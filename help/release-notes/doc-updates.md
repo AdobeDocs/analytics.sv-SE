@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: ae44be2166334f2a2f785f877f6919cf295dc663
+source-git-commit: 5e6341663eecaa7ebc99155a9eec085a8b7acf1c
 workflow-type: tm+mt
-source-wordcount: '3458'
-ht-degree: 36%
+source-wordcount: '3481'
+ht-degree: 35%
 
 ---
 
@@ -26,7 +26,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Januari 2023** |  |
-| Mappar | Dedikerade sidor för [Mapphantering](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) |
+| Mappar | Dedikerade sidor för [Mapphantering](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Användarinställningar | Många andra användarinställningar finns nu tillgängliga i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). |
+| Spara automatiskt för projekt | Uppdaterat innehåll som inkluderar autosparfunktion i [Spara projekt](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md). |
 
 ### 2022 {#22}
 
