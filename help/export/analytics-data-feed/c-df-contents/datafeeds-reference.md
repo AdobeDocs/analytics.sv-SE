@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 49291658626ac3dc79c16c6f1d7137f0feaa0a95
+source-git-commit: 2156cc113db2049cd6a0feb5bcbfb85b8ecb16d2
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3641'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`browser_width`** | Bredd i pixlar i webbläsarfönstret. | smallint unsigned |
 | **`c_color`** | Färgpalettens bitdjup. Används som en del av beräkningen av [Färgdjup](/help/components/dimensions/color-depth.md) dimension. AppMeasurement använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
 | **`campaign`** | Variabel som används i [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. | varchar(255) |
-| **`carrier`** | Adobe Advertising Cloud integrationsvariabel. Anger mobiloperatör. Refererar till `carrier` uppslagstabell. | varchar(100) |
+| **`carrier`** | Integrationsvariabel för Adobe Advertising. Anger mobiloperatör. Refererar till `carrier` uppslagstabell. | varchar(100) |
 | **`ch_hdr`** | Klienttips som samlats in via HTTP-begärandehuvudet. | text |
 | **`ch_js`** | Klienttips som samlats in via JavaScript-API:t för användaragentklienten. | text |
 | **`channel`** | Variabel som används i [Platsavsnitt](/help/components/dimensions/site-section.md) dimension. | varchar(100) |
@@ -71,7 +71,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`duplicate_events`** | Listar varje händelse som räknats som en dubblett. | varchar(255) |
 | **`duplicate_purchase`** | Flagga som anger att köphändelsen för den här träffen ignoreras eftersom den är en dubblett. | tinyint unsigned |
 | **`duplicated_from`** | Används endast i rapportsviter som innehåller VISTA-regler för träffkopior. Anger vilken rapportsvit som träffen kopierades från. | varchar(40) |
-| **`ef_id`** | The `ef_id` används i Adobe Advertising Cloud-integreringar. | varchar(255) |
+| **`ef_id`** | The `ef_id` används i integreringar med Adobe Advertising. | varchar(255) |
 | **`evar1 - evar250`** | Egna variabler 1-250. Används i [eVar](/help/components/dimensions/evar.md) dimensioner. Varje organisation använder eVars på olika sätt. Det bästa stället att få mer information om hur er organisation fyller i respektive eVars är ett dokument som är specifikt för er organisation. | varchar(255) |
 | **`event_list`** | Kommaavgränsad lista med numeriska ID:n som representerar händelser som utlöses vid träffen. Innehåller både standardhändelser och anpassade händelser 1-1000. Användningsområden `event.tsv` sökning. | text |
 | **`exclude_hit`** | Flagga som anger att träffen är exkluderad från rapportering. The `visit_num` kolumnen ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag för användaragent<br>4: Uteslutning baserad på IP-adress<br>5: Information om viktig träff saknas, t.ex. `page_url`, `pagename`, `page_event`, eller `event_list`<br>6: JavaScript bearbetade inte träffen korrekt<br>7: Kontospecifikt undantag, t.ex. i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träffen saknade en tidsstämpel i en rapportsserie som bara innehåller tidsstämplar, eller en träff innehöll en tidsstämpel i en rapportsvit som inte är en tidsstämpel<br>12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Målträff som inte matchar en Analytics-träff<br>15: Används inte för närvarande.<br>16: Advertising Cloud-träff som inte matchar en Analytics-träff | tinyint unsigned |
@@ -184,7 +184,7 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 | **`ref_type`** | Ett numeriskt ID som representerar typen av referens för träffen. Används i [Referenstyp](/help/components/dimensions/referrer-type.md) dimension. <br>1: Inuti din webbplats<br>2: Andra webbplatser <br>3: Sökmotorer <br>4: Hårddisk <br>5: USENET <br>6: Typed/Bookmarked (ingen referent) <br>7: E-post <br>8: Inget JavaScript <br>9: Sociala nätverk | tinyint unsigned |
 | **`referrer`** | Föregående sidas URL. Används i [Referent](/help/components/dimensions/referrer.md) dimension. Observera att `referrer` använder datatypen varchar(255), `post_referrer` använder datatypen varchar(244). | varchar(255) |
 | **`resolution`** | Numeriskt ID som representerar bildskärmens upplösning. Används i [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md) dimension. Användningsområden `resolution.tsv` uppslagstabell. | smallint unsigned |
-| **`s_kwcid`** | Nyckelord-ID som används i Adobe Advertising Cloud-integreringar. | varchar(255) |
+| **`s_kwcid`** | Nyckelords-ID som används i integreringar med Adobe Advertising. | varchar(255) |
 | **`s_resolution`** | Upplösningsvärde för råformat. Samlas in med JavaScript-funktionen `screen.width x screen.height`. | char(20) |
 | **`search_engine`** | Numeriskt ID som representerar sökmotorn som refererade besökaren till webbplatsen. Användningsområden `search_engines.tsv` sökning. | smallint unsigned |
 | **`search_page_num`** | Används av [Alla söksidrankning](/help/components/dimensions/all-search-page-rank.md) dimension. Anger vilken sida av sökresultat din webbplats hade innan användaren klickade igenom till din webbplats. | smallint unsigned |
