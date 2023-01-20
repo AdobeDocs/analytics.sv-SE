@@ -4,9 +4,9 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: 3be2db90220c7e54abf96e47a9ac8658bbd066cc
+source-git-commit: 4d49e0c3d622ffdd34b26a82282b3a03fd8e53d0
 workflow-type: tm+mt
-source-wordcount: '3580'
+source-wordcount: '3800'
 ht-degree: 0%
 
 ---
@@ -87,13 +87,17 @@ Adobe Analytics landningssida sammanför båda [!DNL Analysis Workspace] och [!D
 
 I och med lanseringen av den nya landningssidan har vi ersatt Project Manager som listats under Components Manager. Den nya landningssidan hanterar alla funktioner på den gamla Project Manager-sidan med mera.
 
-Ett vanligt användningsexempel för Project Manager-sidan var att visa alla dina projekt. Om du vill visa alla dina projekt på den nya landningssidan med filterspåret väljer du **ANDRA FILTER** och sedan markera **Visa alla**.
+Ett vanligt användningsexempel för Project Manager-sidan var att visa alla dina projekt.
 
-![Andra filter](assets/other-filters.png)
+Om du vill visa alla dina projekt på den nya landningssidan med filterspåret väljer du **ANDRA FILTER** och sedan markera **Visa alla**.
+
+![Visa alla projekt](assets/show-all-fIlter.png)
 
 Om du arbetar i vyn &quot;Mappar och projekt&quot; visas ett modalt popup-fönster där du får frågan om du vill växla till vyn &quot;Alla projekt&quot;, vilket gör det enklare att visa alla dina projekt utanför de mappar där de är organiserade.   Välj **Växla till vyn&quot;Alla projekt&quot;** för att bättre visa alla projekt du har tillgång till.
 
 ![Växla till alla projekt](assets/switch-all-projects-view.png)
+
+Ett annat användningssätt för administratörer är att hantera företagsrapporter för att ta bort, byta namn på, tagga eller godkänna rapporter. Information om hur du hanterar rapporter finns i [Hantera företagsrapporter](#manage-company-reports).
 
 ## Navigera i [!UICONTROL Reports] tab {#navigate-reports}
 
@@ -188,6 +192,36 @@ Fler utbildningsalternativ:
 * För nya användare rekommenderar vi [Utbildning - självstudiekurs](https://www.youtube.com/watch?v=lCH1Kl1q9Wk) video som leder dig genom att bygga ett nytt projekt.
 * Här är en länk till [fullständig Analysis Workspace-dokumentation](/help/analyze/analysis-workspace/home.md).
 * Här är det fullständiga [YouTube spellista för Analysis Workspace](https://www.youtube.com/playlist?list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS).
+
+### Hantera företagsrapporter {#manage-company-reports}
+
+Administratörer kan filtrera projektlistan för att visa och hantera företagsrapporter. Fastnålade objekt förblir fästa följt av listan med företagsrapporter som identifieras av ![rapportikon](assets/report-icon.png) rapportikon. I den här vyn kan du ta bort, byta namn på, tagga eller godkänna en eller flera rapporter.
+
+Visa och hantera företagsrapporter
+
+1. Välj **ANDRA FILTER** och sedan markera **Företagsrapporter**.
+En lista över företagsrapporter visas. Alla vanliga projekt visas inte, såvida de inte är fästa.
+
+   ![Visa företagsrapportfilter](assets/company-reports-filter.png)
+
+   När företagsrapporter visas kan administratörer ta bort, byta namn på, lägga till en tagg eller godkänna rapporten.
+
+1. Välj en rapport eller flera rapporter i rapportlistan.
+
+1. Klicka på **...** elikonen bredvid en rapport om du vill visa de tillgängliga alternativen (Ta bort, Byt namn, Tagga och Godkänn).
+
+   ![Åtgärder för företagsrapport](assets/company-reports-actions.png)
+
+1. Välj ett alternativ (Ta bort, Byt namn, Tagga och Godkänn).
+
+1. Om du vill återgå till den vanliga vyn när du är klar avmarkerar du alternativet Företagsrapporter igen i filterfältet.
+
+### Ta bort en företagsrapport
+
+Administratörer kan ta bort en rapport med alternativet Företagsrapportlista (beskrivs ovan) eller ta bort en rapport från alternativet Skapa projekt.
+
+![Andra filter](assets/delete-fr-create-project-modal.png)
+
 
 ## Navigera på fliken Utbildning {#navigate-learning}
 
