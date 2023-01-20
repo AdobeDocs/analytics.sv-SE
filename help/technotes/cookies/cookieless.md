@@ -3,10 +3,10 @@ title: Alternativ för att minska effekten av webbläsar-cookie-begränsningar
 description: Lär dig hur du minskar effekten av webbläsar-cookie-begränsningar för att förbättra datainsamlingen för Adobe Analytics.
 feature: Data Configuration and Collection
 exl-id: 81cf3f0c-4871-435d-bcc9-bcff5c682f05
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: 19fc62470c51bca091342006ff3715ba357e075c
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 2%
+source-wordcount: '573'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 I det här dokumentet diskuteras olika alternativ för att bevara beständig besöksidentifiering i olika egenskaper och lösningar, eftersom de flesta webbläsare implementerar spårningsförebyggande åtgärder för cookies.
 
-Adobe Analytics förlitar sig på cookies från första part för att registrera en besökares aktivitet på plats. Analyserna bygger också på cookies från tredje part för att förstå en besökares aktivitet utanför webbplatsen, till exempel aktivitet på andra domäner du äger. Cookies från tredje part blockeras i många webbläsare och är i stort sett inte tillgängliga i och med att Chrome kommer att ta bort stödet (som planeras till 2022). cookies från första part tillåts i alla webbläsare men har en begränsad giltighetstid för Safari och andra webbläsare under Apple [Förebyggande av ITP-spårning](https://webkit.org/tracking-prevention) åtgärder. Mer information om aktuella begränsningar för webbläsarcookies finns i [Adobe Analytics och webbläsarcookies](cookies.md).
+Adobe Analytics förlitar sig på cookies från första part för att registrera en besökares aktivitet på plats. Analyserna bygger också på cookies från tredje part för att förstå en besökares aktivitet utanför webbplatsen, till exempel aktivitet på andra domäner du äger. Cookies från tredje part blockeras i många webbläsare och är i stort sett inte tillgängliga i och med att Chrome kommer att ta bort stödet (vilket nu planeras till slutet av 2024). cookies från första part tillåts i alla webbläsare men har en begränsad giltighetstid för Safari och andra webbläsare under Apple [Förebyggande av ITP-spårning](https://webkit.org/tracking-prevention) åtgärder. Mer information om aktuella begränsningar för webbläsarcookies finns i [Adobe Analytics och webbläsarcookies](cookies.md).
 
 Dessa begränsningar i webbläsaren innebär en bredare övergång från anonym tredje parts spårning till explicit informationsutbyte mellan användare och varumärken som de litar på. För att stödja detta har Adobe möjlighet att komplettera traditionella cookies genom att inkludera varaktiga identifierare som samlats in via sina egna relationer.
 
@@ -31,6 +31,10 @@ Dessa begränsningar i webbläsaren innebär en bredare övergång från anonym 
 Samling på serversidan ger flexibilitet att tillhandahålla en egen identifierare i stället för att förlita sig på webbläsarmekanismer för att ställa in cookies.
 
 Du kan skicka data till Analytics-servern med hjälp av [API för datainfogning](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) eller [API för massdatainmatning](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md). API för datainfogning i grupp rekommenderas för nya implementeringar på serversidan. En jämförelse av de två API:erna finns i[Vilket Adobe Analytics-verktyg ska jag använda](https://experienceleague.adobe.com/docs/analytics/admin/admin-overview/which-analytics-tool.html).&quot;
+
+## FPID (First Party Device ID) med Web SDK
+
+Med Adobe Experience Platform Web SDK kan du välja att ställa in och hantera egna enhetsidentifierare i stället för Adobe-genererade Experience Cloud-ID:n (ECID). Dessa kallas för FPID (First-party device ID). Läs mer [här](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en).
 
 ## Mer information
 
