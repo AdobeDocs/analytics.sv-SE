@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: d42b7ef770a51f0379e358367a5b64202970fd60
 workflow-type: tm+mt
-source-wordcount: '19'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
@@ -12,3 +12,15 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Läs mer om rapporter och analyser [Meddelande om att produkten är slut](https://express.adobe.com/page/6WnF8JK6IRDhf/).
+
+## Begränsad testning av versionsfas {#release-limited-testing}
+
+>[!AVAILABILITY]
+>
+>Funktionerna som beskrivs i den här artikeln är i den begränsade testfasen av versionen. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
+
+## Frisläppningsfas, begränsad testsektion {#release-limited-testing-section}
+
+>[!AVAILABILITY]
+>
+>Funktionerna som beskrivs i det här avsnittet är i den begränsade testfasen av releasen. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
