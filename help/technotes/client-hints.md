@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: e7260f745f40dd89bd0aeb476b70b2d77813af96
+source-git-commit: cb15ba22fc9817583c6ded8fe12af5a115c1ea43
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1230'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ Google delar upp klienttips för User-Agent i två kategorier: Tips för låg en
 
 >[!NOTE]
 >
->Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från och med 25 januari 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av januari. Detta för att undvika eventuella avbrott i rapporteringen under den kritiska perioden vid årets slut. Som anges nedan kommer operativsystemsversionen att frysas från och med oktober, men på grund av en gradvis utrullning och det faktum att de flesta användaragenter fryser till rätt OS-version, uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
+>Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från och med den 15 februari 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men kommer inte att användas i enhetssökning förrän i mitten av februari. Så som anges nedan var operativsystemsversionen fryst från och med oktober men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en)) uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
 
 >[!NOTE]
 >
->Från och med oktober 2022 kommer nya versioner av Chromium-webbläsare att starta frysningen av operativsystemversionen som representeras i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
+>Från och med oktober 2022 började nya versioner av Chromium-webbläsare&quot;frysa&quot; operativsystemversionen som representerades i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
 
 >[!NOTE]
 >
@@ -48,6 +48,8 @@ Detta [Google blogginlägg](https://web.dev/user-agent-client-hints/) är en bra
 Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se vägbeskrivningar för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html#enabling-high-entropy-client-hints) och [AppMeasurement](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/collecthighentropyuseragenthints.html).
 
 För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
+
+För data som skickas via API, till exempel via [API för datainfogning](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) eller [API för massdatainmatning](https://experienceleague.adobe.com/docs/analytics/import/bulk-data-insert.html?lang=en), måste tips uttryckligen inkluderas i nyttolasten. Mer information finns i respektive dokumentation.
 
 +++
 
@@ -72,6 +74,8 @@ Tabellen nedan beskriver klienttipsen från oktober 2022.
 | Sec-CH-UA-full-version-list | Lista över varumärken med deras version | Hög | &quot;Inte A;Varumärke&quot;;v=&quot;99&quot;, &quot;Krom&quot;;v=&quot;98&quot;, &quot;Google Chrome&quot;;v=&quot;98&quot; |
 | Sec-CH-UA-Model | Enhetsmodell | Hög | &quot;Pixel 3&quot; |
 | Sec-CH-UA-platform-version | Operativsystem/plattformsversion | Hög | &quot;10&quot; |
+
+Höga entropittips samlas in via JavaScript-anrop och skickas via frågeparametrar
 
 +++
 
