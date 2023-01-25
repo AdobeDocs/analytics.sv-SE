@@ -3,9 +3,9 @@ title: Operativsystem
 description: Operativsystemet för besökaren.
 feature: Dimensions
 exl-id: e3911ae0-d242-4da2-a4bc-b2f4877f9dd2
-source-git-commit: 26de81f090cebb45473a04a2edbe281f1c8591a4
+source-git-commit: 17c441f8855b8ca0604076763817de8d4d3b8efb
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,16 @@ Nedan finns en lista över specifika problem med hur operativsystemet har beskri
 
 ### Byt till namnkonvention för Apple operativsystem:
 
-Från och med version 11 använder vi OS X i stället för Mac OS för att hänvisa till Apple operativsystem.
+Från och med version 11 använder vi MacOS i stället för OS X för att hänvisa till Apple operativsystem.
 
 Exempel:
 
-* macOS version 10.15.7 (se anm. nedan om version 10.15.7 över representation i UA-strängar).
-* OS X version 11.0.0
+* &quot;OS X 10.15&quot; (se anmärkning nedan om version 10.15.7 över representation i UA-strängar).
+* &quot;MacOS 11.0.0
 
 ### Mac OS-versionen är felaktig i användaragenten efter version 10.15.7 
 
-Från och med januari 2023 visar användaragenten i alla webbläsare Mac OS-versionen som 10.15.7, även för nyare versioner. Det här gjordes eftersom version 11 i användargränssnittet uppenbarligen orsakade problem med vissa webbplatser. Apple noterar också att om du inkluderar en felaktig OS-version i användargränssnittet får du vissa sekretessfördelar.
+Användaragenten på Apple-datorer visar OS-versionen som 10.15.7 även om det är en nyare version. Det här gjordes eftersom version 11 i användargränssnittet uppenbarligen orsakade problem med vissa webbplatser. Detta gäller *alla webbläsare* och är inte relaterat till Google frysning av användaragenten i Chromium-webbläsare.
 
 Observera att klienttipsen innehåller rätt version i plattformsversionstipset (&quot;Sec-CH-UA-Platform-Version&quot;). Detta är ett högt entropi-tips, så det samlas inte in automatiskt av Adobe. Se [Vanliga frågor om Adobe Analytics-tips](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html?lang=en) om du vill ha mer information om hur du samlar in entropytips.
 
