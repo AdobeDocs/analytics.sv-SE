@@ -4,9 +4,9 @@ title: Spara projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 5c37c7173550a080ec64a958344f949cd217b72c
+source-git-commit: 563564c756fdedd4d5bfcf7f3be3904b7e9b4a0c
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Om du öppnar ytterligare ett projekt medan du arbetar med ett projekt som inneh
 
 Följande alternativ är tillgängliga:
 
-* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av ditt projekt med dina senaste ändringar.
+* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av projektet med dina senaste ändringar.
 * **Spara som:** Sparar de senaste ändringarna som ett nytt projekt. Det ursprungliga projektet sparas endast med de senaste automatiskt sparade ändringarna.
 * **Ignorera ändringar:** Ignorera de senaste ändringarna. De senaste automatiskt sparade ändringarna sparas i projektet.
 
@@ -85,10 +85,6 @@ Välj **Nej** om du vill ta bort den automatiskt sparade kopian och öppna den s
 För **new** projekt som aldrig har sparats går inte att återställa ändringar som inte har sparats.
 
 ## Öppna en tidigare version {#previous-version}
-
->[!NOTE]
->
->Tidigare projektversioner är för närvarande i begränsad version.
 
 Så här öppnar du en tidigare version av ett projekt:
 
