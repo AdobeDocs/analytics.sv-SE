@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 1c42cbec42d97ce3aa33bd5446b0fe59eaaa3caf
+source-git-commit: b837acae8d918b2b7c6367c7b0d9826f811854b1
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 80%
@@ -20,16 +20,6 @@ ht-degree: 80%
    + [Vilket Adobe Analytics-verktyg ska jag använda?](get-started/which-analytics-tool.md)
    + [Produktjämförelse och krav för analyser](get-started/analytics-product-comparison.md)
    + [Systemkrav](get-started/sys-reqs.md)
-   + Företagsinställningar {#company-settings}
-      + [Översikt över företagsinställningar](get-started/company/c-company-settings.md)
-      + [Åtkomstnivåer](get-started/company/feature-access-levels.md)
-      + [Webbtjänster](get-started/company/web-services-admin.md)
-      + [Report Builder-rapporter](get-started/company/report-builder-reports-admin.md)
-      + [Enkel inloggning](get-started/company/single-signon-admin.md)
-      + [Väntande åtgärder](get-started/company/pending-actions-admin.md)
-      + [Samprofilering](get-started/company/co-branding-admin.md)
-      + [Dölj rapportsviter](get-started/company/c-hide-report-suites.md)
-      + [Säkerhetshanteraren](get-started/company/security-manager.md)
 + Användarbehörigheter i Admin Console i Adobe {#admin-console}
    + [Analyser i Adobe Admin Console](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
@@ -160,6 +150,16 @@ ht-degree: 80%
             + [Översikt över realtidsrapporter](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
             + [Konfiguration av rapporter i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md)
             + [Mätvärden och dimensioner som stöds i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md)
+   + Företagsinställningar {#company-settings}
+      + [Översikt över företagsinställningar](admin/company/c-company-settings.md)
+      + [Åtkomstnivåer](admin/company/feature-access-levels.md)
+      + [Webbtjänster](admin/company/web-services-admin.md)
+      + [Report Builder-rapporter](admin/company/report-builder-reports-admin.md)
+      + [Enkel inloggning](admin/company/single-signon-admin.md)
+      + [Väntande åtgärder](admin/company/pending-actions-admin.md)
+      + [Samprofilering](admin/company/co-branding-admin.md)
+      + [Dölj rapportsviter](admin/company/c-hide-report-suites.md)
+      + [Säkerhetshanteraren](admin/company/security-manager.md)
    + [Enklare rapportmeny](admin/t-simplified-menu.md)
    + [Videohantering](admin/video-management.md)
    + Användning av serversamtal {#server-call-usage}
