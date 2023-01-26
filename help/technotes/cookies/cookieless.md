@@ -3,9 +3,9 @@ title: Alternativ för att minska effekten av webbläsar-cookie-begränsningar
 description: Lär dig hur du minskar effekten av webbläsar-cookie-begränsningar för att förbättra datainsamlingen för Adobe Analytics.
 feature: Data Configuration and Collection
 exl-id: 81cf3f0c-4871-435d-bcc9-bcff5c682f05
-source-git-commit: 19fc62470c51bca091342006ff3715ba357e075c
+source-git-commit: 860621a058826ba8bf602d87a702f835c7c00a37
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Dessa begränsningar i webbläsaren innebär en bredare övergång från anonym 
 
 Samling på serversidan ger flexibilitet att tillhandahålla en egen identifierare i stället för att förlita sig på webbläsarmekanismer för att ställa in cookies.
 
-Du kan skicka data till Analytics-servern med hjälp av [API för datainfogning](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) eller [API för massdatainmatning](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md). API för datainfogning i grupp rekommenderas för nya implementeringar på serversidan. En jämförelse av de två API:erna finns i[Vilket Adobe Analytics-verktyg ska jag använda](https://experienceleague.adobe.com/docs/analytics/admin/admin-overview/which-analytics-tool.html).&quot;
+Du kan skicka data till Analytics-servern med hjälp av [API för datainfogning](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md) eller [API för massdatainmatning](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md). API för datainfogning i grupp rekommenderas för nya implementeringar på serversidan. En jämförelse av de två API:erna finns i[Vilket Adobe Analytics-verktyg ska jag använda](/help/analyze/get-started/which-analytics-tool.md).&quot;
 
 ## FPID (First Party Device ID) med Web SDK
 

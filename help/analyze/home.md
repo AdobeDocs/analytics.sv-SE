@@ -4,7 +4,7 @@ description: Produktdokumentation och självhjälp för Analysis Workspace, Adob
 feature: Workspace Basics
 role: User, Admin
 exl-id: 8ed81356-626e-4334-9e20-b481e6ba654a
-source-git-commit: 0017a6657e4de6206cf97dc6cf6f2b132b50b50f
+source-git-commit: 860621a058826ba8bf602d87a702f835c7c00a37
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 72%
@@ -32,7 +32,7 @@ Här är en videoöversikt över Adobe Analytics:
 
 * [Adobe Analytics Dashboards - Översikt](/help/analyze/mobile-app/home.md)
 * [Analysis Workspace – komma igång](analysis-workspace/home.md)
-* [Vilket Adobe Analytics-verktyg ska jag använda?](/help/admin/get-started/which-analytics-tool.md)
+* [Vilket Adobe Analytics-verktyg ska jag använda?](/help/analyze/get-started/which-analytics-tool.md)
 * [Report Builder – komma igång](report-builder/home.md)
 * [Activity Map – komma igång](activity-map/activity-map.md)
 
