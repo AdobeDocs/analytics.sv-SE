@@ -6,8 +6,8 @@ breadcrumb-title: Verktygshandbok
 user-guide-description: Lär dig hur du använder analysverktyg som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
 source-git-commit: 860621a058826ba8bf602d87a702f835c7c00a37
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
