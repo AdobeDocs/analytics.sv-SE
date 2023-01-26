@@ -3,7 +3,7 @@ description: Skicka in förfrågningar om dataåtkomst och radering i Adobe Anal
 title: Skicka in begäran om åtkomst och borttagning
 feature: Data Governance
 exl-id: bb94cedf-ac9b-4d38-9136-bd3da2acf018
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: aa794220b464b7665e89345a116a263189dcc3fa
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 93%
@@ -107,7 +107,7 @@ Observera att det finns tre block i användarens avsnitt, som representerar tre 
 Kom ihåg
 
 * Värdet ”5D7236525AA6D9580A495C6C@AdobeOrg” i avsnittet ”companyContexts” måste uppdateras med värdet för din egen Experience Cloud-organisation.
-* Fälten ”typ” och ”namnutrymme” beskrivs mer ingående i avsnittet [Namnutrymmen](/help/admin/c-data-governance/gdpr-namespaces.md).
+* Fälten ”typ” och ”namnutrymme” beskrivs mer ingående i avsnittet [Namnutrymmen](/help/admin/c-data-governance/data-labeling/gdpr-namespaces.md).
 * Beskrivningsfälten ignoreras.
 * Nyckelfälten kan innehålla vilket värde som helst. Om du har ett internt ID som du använder för att spåra begäranden om datasekretess kan du ange det värdet här, för att enklare matcha begäranden i Adobes system mot de i dina egna system.
 

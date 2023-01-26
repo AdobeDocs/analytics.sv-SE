@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: b837acae8d918b2b7c6367c7b0d9826f811854b1
+source-git-commit: db87f32341e064343f1f233701ed04011f802d94
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 80%
+source-wordcount: '667'
+ht-degree: 79%
 
 ---
 
@@ -169,19 +169,16 @@ ht-degree: 80%
       + [Användningsvarningar för serversamtal](admin/c-server-call-usage/scu-alerts.md)
       + [Vanliga frågor om användning av serversamtal](admin/c-server-call-usage/overage-faq.md)
 + Datastyrning {#data-governance}
-   + [Adobe Analytics och GDPR](c-data-governance/an-gdpr-overview.md)
-   + [Adobe Analytics och CCPA](c-data-governance/an-ccpa-overview.md)
-   + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
-   + [Frågor och svar](c-data-governance/gdpr-faq.md)
    + [Arbetsflöde för datasekretess i Adobe Analytics](c-data-governance/an-gdpr-workflow.md)
-   + [Dataintegritetsetiketter för analyskomponenter](c-data-governance/gdpr-labels.md)
-   + [Data i etikettrapportsvit](c-data-governance/gdpr-setup-reportsuite.md)
-   + [Visa/hantera integritetsetiketter för rapportsviten](c-data-governance/gdpr-view-settings.md)
-   + [Bästa praxis för etikettering](c-data-governance/gdpr-analytics-ids.md)
-   + [Exempel på etiketter](c-data-governance/gdpr-labeling-example.md)
+   + [Frågor och svar](c-data-governance/gdpr-faq.md)
+   + Dataetiketter {#data-labels}
+      + [Dataintegritetsetiketter för analyskomponenter](c-data-governance/data-labeling/gdpr-labels.md)
+      + [Data i etikettrapportsvit](c-data-governance/data-labeling/gdpr-setup-reportsuite.md)
+      + [Visa/hantera integritetsetiketter för rapportsviten](c-data-governance/data-labeling/gdpr-view-settings.md)
+      + [Bästa praxis för etikettering](c-data-governance/data-labeling/gdpr-analytics-ids.md)
+      + [Exempel på etiketter](c-data-governance/data-labeling/gdpr-labeling-example.md)
+      + [Namnutrymmen](c-data-governance/data-labeling/gdpr-namespaces.md)
    + [Skicka begäran om åtkomst och borttagning](c-data-governance/gdpr-submit-access-delete.md)
-   + [Namnutrymmen](c-data-governance/gdpr-namespaces.md)
    + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
-   + [Datasekretess och Data Connectors (Genesis)](c-data-governance/data-connectors-gdpr.md)
-   + [Terminologi för datasekretess](c-data-governance/gdpr-terminology.md)
+   + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
 + [Admin-API](c-admin-api/c-admin-api.md)
