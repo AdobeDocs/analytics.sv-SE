@@ -1,7 +1,7 @@
 ---
-source-git-commit: d42b7ef770a51f0379e358367a5b64202970fd60
+source-git-commit: 9d8471189788dbf7b86374ea3976e0e8b4b0d00b
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Funktionerna som beskrivs i den här artikeln är i den begränsade testfasen av versionen. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
+>Funktionerna som beskrivs i den här artikeln är i den begränsade testfasen av releasen och är kanske inte tillgängliga än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 ## Frisläppningsfas, begränsad testsektion {#release-limited-testing-section}
 
 >[!AVAILABILITY]
 >
->Funktionerna som beskrivs i det här avsnittet är i den begränsade testfasen av releasen. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
+>Funktionerna som beskrivs i det här avsnittet är i den begränsade testfasen av releasen och är kanske inte tillgängliga än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
