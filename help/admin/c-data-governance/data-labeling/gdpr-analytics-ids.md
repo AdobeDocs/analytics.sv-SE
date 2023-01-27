@@ -3,10 +3,10 @@ description: Förstå vilka ID:n som registreras i era analysdata och bestäm vi
 title: Bästa praxis för etikettering
 feature: Data Governance
 exl-id: 00da58b0-d613-4caa-b9c1-421b1b541f47
-source-git-commit: aa794220b464b7665e89345a116a263189dcc3fa
+source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 >
 >Kom ihåg att etikettering måste granskas varje gång en ny rapportsvit skapas eller när en ny variabel aktiveras i en befintlig rapportsvit. Du kan också behöva granska etiketteringen när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En återimplementering av dina mobilappar eller webbplatser kan ändra hur befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketter.
 
-## Direkt kontra indirekt identifierbara ID:n {#section_030799AA1397433FBA61A2BC60A7A750}
+## Direkt eller indirekt identifierbara ID:n {#direct-vs-indirect}
 
 Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/fält måste du först förstå vilka ID:n som du hämtar i dina Analytics-data, och du måste bestämma vilka som ska användas för begäranden om datasekretess. Datasekretess utökar omfattningen av vad som kan anses vara ett ID. ID:n kan delas in i två huvudklasser: direkt identifierbar (identitetsetikett: I1) och indirekt identifierbar (identitetsetikett: I2).
 
@@ -32,7 +32,7 @@ Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/f
 * Vissa ID:n kan motsvara flera personer och du vill inte riskera att returnera information om en person till någon annan med samma ID. Även om du till exempel kan verifiera att någon har namnet Anders Svensson kanske du inte vill returnera alla data om alla Anders Svensson i ditt system.
 * Ett annat exempel är ett enhets-ID, till exempel cookie-ID för analys. Om ID:t finns i en mobilapp kan du bestämma att alla interaktioner som använder det ID:t ska vara tillgängliga för mobiltelefonens ägare. Om det däremot inträffar på en delad enhet, till exempel en dator i hemmet eller en dator i ett bibliotek eller ett Internetkafé, kan du bestämma att du inte kan skilja mellan användare av den enheten och risken för att returnera data för en annan användare är för stor för att den här typen av ID ska kunna användas.
 
-## Bästa praxis för ID:n som stöds av Analytics {#section_B6481505FF1949498D4B4B35B780D050}
+## Bästa praxis för ID:n som stöds av Analytics {#best-practices-an}
 
 Använd den här tabellen för att fastställa vilka typer av ID som du kommer att använda när du skickar begäranden om datasekretess till Analytics. När du känner till den här informationen är det enklare att avgöra vilka andra etiketter du ska använda för variablerna.
 
@@ -68,7 +68,7 @@ Använd den här tabellen för att fastställa vilka typer av ID som du kommer a
  </tbody> 
 </table>
 
-## Bästa praxis för att ange borttagningsetiketter {#section_08166C99B48E49218392FAC18922C10E}
+## Metodtips för att ange borttagningsetiketter {#best-practices-delete}
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Borttagningsetiketterna DEL-DEVICE och DEL-PERSON ska användas sparsamt. När d
 
    Om du till exempel har tre träffar som innehåller värdet ”foo” i eVar7, men bara ett av dem innehåller ett ID i en annan variabel som matchas för en borttagning, ändras ”foo” i den träffen till ett värde som ”Datasekretess-123456789”, medan det förblir oförändrat i de andra två träffarna. En rapport som visar antalet unika värden för eVar7 visar nu ett mer unikt värde än det gjorde tidigare. En rapport som visar de högsta värdena för eVars kan innehålla ”foo” med endast två instanser (i stället för 3 tidigare), och det nya värdet visas också med en enda instans.
 
-## Bästa praxis för att ange åtkomstetiketter {#section_AC7E216F81C141FCA6A62F8836E06EE7}
+## Metodtips för att ange åtkomstetiketter {#best-practices-access}
 
 Även om väldigt få fält kommer att ha någon av de andra etiketterna, så är det vanligt att ett stort antal fält har ACC-etiketter. Vilka åtkomstetiketter som är lämpliga beror på vilka ID:n du använder för begäranden om datasekretess.
 

@@ -3,16 +3,16 @@ description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: aa794220b464b7665e89345a116a263189dcc3fa
+source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
 workflow-type: tm+mt
-source-wordcount: '3673'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Datasekretessetiketter för analysvariabler
 
-## Varför märka dina data? {#why-label}
+## Varför märka upp era data? {#why-label}
 
 Många av Adobes kunder har jurister som har granskat lagarna om datasekretess (GDPR, CCPA, o.s.v.). Dessa grupper kan ha dragit egna slutsatser om hur data ska hanteras för att följa dataintegritetslagstiftningen. De juridiska tolkningarna kan skilja sig åt mellan olika företag och de önskade inställningarna för datahantering kan också skilja sig åt mellan olika kunder. Eftersom kunderna har olika preferenser för behandling av datasekretess och olika datauppsättningar, låter Adobe sina kunder, som personuppgiftsansvariga, att anpassa sina inställningar för databehandling i samband med datasekretess för sina unika data. På så sätt kan varje unik kund behandla begäranden om datasekretess på det sätt som bäst passar deras varumärke och deras unika datauppsättning.
 
@@ -54,7 +54,7 @@ Känsliga ”S”-etiketter används för att kategorisera känsliga data som ge
 
 Etiketter för datastyrning ger användarna möjlighet att klassificera data som avspeglar sekretessrelaterade överväganden och avtalsvillkor så att de överensstämmer med regler och företagspolicyer.
 
-### Etiketter för datasekretess
+### Etiketter för dataintegritet
 
 | Etikett | Definition | Andra krav |
 | --- | --- | --- |
@@ -66,7 +66,7 @@ Etiketter för datastyrning ger användarna möjlighet att klassificera data som
 
 Även om få variabler mottar någon av de andra etiketterna, förväntas åtkomstetiketter tillämpas för många av dina variabler. Men det är upp till dig, i samråd med din juridiska avdelning, att avgöra vilka uppgifter du har samlat in som ska delas med de registrerade.
 
-### Borttagningsetiketter för datasekretess
+### Ta bort etiketter för datasekretess
 
 Till skillnad från de andra etiketterna utesluter inte dessa borttagningsetiketter varandra. Du kan välja antingen båda eller ingen. En separat [!UICONTROL None] etiketten inte behövs eftersom [!UICONTROL None] markeras genom att du inte markerar något av alternativen för att ta bort.
 
@@ -133,7 +133,7 @@ Ett annat exempel är att du kan ha ett CRM-ID som ibland skickas in via eVar1 o
 >
 >Namnutrymmena ”visitorId” och ”customVisitorId” är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
-## Variabeltyperna och etiketterna för datasekretess/DULE som de stöder {#variable-types}
+## Variabeltyper och de dataintegritets-/DULE-etiketter de stöder {#variable-types}
 
 Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariabler. Alla variabler har inte stöd för alla etiketter. Tabellen visar vilka variabler som stöder eller inte stöder olika etiketter.
 
@@ -209,7 +209,7 @@ Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariable
  </tbody> 
 </table>
 
-## Hantering av borttagning {#deletion}
+## Borttagningshantering {#deletion}
 
 Adobe Analytics-stöd för begäranden om borttagning av datasekretess är utformat för att minimera påverkan på rapporter. I de flesta fall ska den metrik som visas i rapporter inte ändras. En historikrapport som kördes före borttagning av datasekretess kommer att matcha samma rapportkörning efter att borttagning har utförts. Detta uppnås genom att de borttagna uppgifterna helt kopplas bort från den registrerade, samtidigt som icke-identifierbara data lämnas kvar så att de rapporterade värdena förblir konsekventa.
 

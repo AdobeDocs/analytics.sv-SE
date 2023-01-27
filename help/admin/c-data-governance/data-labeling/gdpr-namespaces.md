@@ -3,10 +3,10 @@ description: Varje ID som du vill kunna söka efter tilldelas ett namnutrymme, s
 title: Namnutrymmen
 feature: Data Governance
 exl-id: 421572c2-2789-48bc-b530-d48216799724
-source-git-commit: aa794220b464b7665e89345a116a263189dcc3fa
+source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Värdet måste anges som två hexadecimala tal som avgränsas med ett bindestrec
 
 Det går också att använda `"namespaceId": 10` istället för, eller som tillägg till, `"namespace": "AAID"` och vissa andra Adobe-produkter använder det formuläret.
 
-## Cookie för spårning av äldre analyser: Inaktuellt formulär
+## Cookie för spårning av äldre analyser: Föråldrat formulär
 
 ```
 {
@@ -52,7 +52,7 @@ Inaktuellt formulär:
 
 Värdet ska anges som två 16-siffriga hexadecimala tal eller som två 19-siffriga decimaltal. Siffrorna ska separeras med ett bindestreck, understreck eller kolon. Nollor med inledande nolla ska läggas till om någon av dem inte har tillräckligt många siffror.
 
-## Cookie för identitetstjänsten
+## Identitetstjänstens cookie
 
 ```
 {

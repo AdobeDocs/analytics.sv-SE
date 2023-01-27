@@ -3,7 +3,7 @@ description: Dialogrutan Sekretessetikett för datastyrning ger en översikt öv
 title: Visa/hantera integritetsetiketter för datastyrning
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: aa794220b464b7665e89345a116a263189dcc3fa
+source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 41%
@@ -75,7 +75,7 @@ Om du vill använda samma sekretessinställningar för DULE/Data för flera rapp
    >
    >Kontrollera alltid målrapportsviterna för att säkerställa att etiketterna som kopieras över är korrekta. Detta är särskilt viktigt för variabler som har ID- eller DEL-etiketter.
 
-## Exportera till en CSV-fil
+## Exportera till en CSV-fil {#export-csv}
 
 Du kan hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för alla variabler för de valda rapportsviterna. Vi rekommenderar att ditt juridiska team granskar dina etikettval och det här alternativet underlättar den här granskningen. I stället för att behöva utföra granskningen när du är inloggad i användargränssnittet för datastyrning kan du dela .CSV-filen med dem.
 
@@ -85,6 +85,6 @@ Du kan hämta en CSV-fil som innehåller alla aktuella etikettdefinitioner för 
 
 1. Välj en eller flera rapportsviter som du vill exportera alla datastyrningsinställningar för.
 
-## Redigera sekretessetiketter
+## Redigera sekretessetiketter {#edit}
 
 Se [Tilldela eller redigera sekretessetiketter för rapportsviten](/help/admin/c-data-governance/data-labeling/gdpr-setup-reportsuite.md).

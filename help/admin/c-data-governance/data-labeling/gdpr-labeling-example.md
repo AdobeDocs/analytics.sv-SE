@@ -3,16 +3,16 @@ description: Visar exempel på hur du kan etikettera data för träffdata, åtko
 title: Exempel på etiketter
 feature: Data Governance
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: b0716d9a4ea51dc0e1e6fc024f3de6b01a9ccfd8
+source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 63%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Exempel på etiketter
 
-## Exempel på träffdata
+## Exempel på träffdata {#hit}
 
 Anta att du har följande träffdata:
 
@@ -32,7 +32,7 @@ Anta att du har följande träffdata:
 |  | John | 55 | G | R | X |
 |  | Alice | 66 | A | N | Z |
 
-## Exempel på åtkomstbegäran
+## Exempel på åtkomstbegäran {#access}
 
 Om jag skickar en åtkomstbegäran innehåller den sammanfattande filen de värden som anges i tabellen nedan. En begäran kan bara returnera en enhetsfil, endast en personfil eller en av varje fil. Två sammanfattningsfiler returneras bara om ett person-ID används och expandIds är Sant.
 
@@ -141,7 +141,7 @@ Om jag skickar en åtkomstbegäran innehåller den sammanfattande filen de värd
 
 Observera att inställningen för expandID:n inte spelar någon roll för utdata när ett cookie-ID används.
 
-## Ta bort exempelbegäranden
+## Ta bort exempelbegäranden {#delete}
 
 Om en borttagningsbegäran använder API-värdena i den första raden i tabellen uppdateras träfftabellen så att den ser ut ungefär så här:
 
