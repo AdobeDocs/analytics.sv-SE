@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Lär dig hur du använder analysverktyg som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 860621a058826ba8bf602d87a702f835c7c00a37
+source-git-commit: 2ee9007bdb3e359c9d5babe81c6f64bd7d7b6e8e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1076'
+ht-degree: 78%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 + [Handbok om Analytics-verktyg](home.md)
 + [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
-+ Kom igång med Analytics-administration {#admin-overview}
++ Kom igång med Adobe Analytics {#admin-overview}
    + [Vilket Adobe Analytics-verktyg ska jag använda?](get-started/which-analytics-tool.md)
    + [Produktjämförelse och krav för analyser](get-started/analytics-product-comparison.md)
    + [Systemkrav](get-started/sys-reqs.md)
