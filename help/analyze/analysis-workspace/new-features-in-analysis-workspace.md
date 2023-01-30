@@ -5,7 +5,7 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: f83ab75e9a3cce2dd3dc13d88be97cf97df3dc65
 workflow-type: tm+mt
 source-wordcount: '8165'
 ht-degree: 87%
@@ -75,8 +75,8 @@ Nya funktioner som släpptes 18 juni 2020.
 | Attribution IQ: Algoritmisk attribuering | I modellen för algoritmisk attribuering i Analysis Workspace används statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. Tillgängligt för kunder som har Adobe Analytics Ultimate. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
 | Attribution IQ: Anpassade uppslagsfönster | Nu kan du konfigurera alla attribueringsmodeller i Attribution IQ så att de omfattar kontaktytor från upp till 90 dagar före rapporteringsperioden. Detta ökar vanligen attribueringens exakthet för händelser som inträffar tidigt under rapporteringsperioden genom att redovisa interaktioner som inträffat under föregående månad(er). Tillgängligt för kunder som har Adobe Analytics Foundation, Select, Prime, Premium, Premium Attribution, Premium Complete och Ultimate. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
 | Projektroller för delade Workspace-projekt | När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
-| Skrivskyddade Workspace-projekt | Skrivskyddade Workspace-projekt kan delas med användare som Can view. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html) |
-| Möjlighet att samredigera Workspace-projekt | Mottagare som läggs till i rollen Can edit kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
+| Skrivskyddade Workspace-projekt | Arbetsyteprojekt kan bara delas till användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html) |
+| Möjlighet att samredigera Workspace-projekt | Mottagare som läggs till i rollen Kan redigera kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
 | Uppdaterad tom panel | Den tomma panelen innehåller nu paneler och visualiseringar, vilket gör det enklare att välja det analysarbetsflöde som fungerar bäst för dig. |
 | Panelen Snabbinformation (25 juni 2020) | Quick Insights ger vägledning till icke-analytiker och nya användare av Analysis Workspace så att de snabbt och enkelt kan lära sig att svara på affärsfrågor. [Läs mer...](/help/analyze/analysis-workspace/c-panels/quickinsight.md) |
 | Panelen Analytics for Target i Workspace (25 juni 2020) | Med panelen Analytics for Target (A4T) kan du analysera dina Adobe Target aktiviteter och upplevelser i Analysis Workspace. [Läs mer …](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) |
@@ -133,8 +133,8 @@ Förbättringar som släpptes 10 oktober 2019.
 
 | Förbättring | Beskrivning |
 |--- |--- |
-| Uppdatering av totalsummor för friformstabeller | Friformstabeller innehåller nu två totalsummor, en **[!UICONTROL Table total]** och en **[!UICONTROL Grand total]**. Raden med tabellsumman avser de [rapportfilter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) som används. Tidigare påverkades summorna bara av segmentering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)<br/>Dessutom har alternativen **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]** lagts till i **[!UICONTROL Column Settings]**.<br/>Med den här förändringen av totalsummor för friformstabeller uppdateras beroende visualiseringar (som länkade **[!UICONTROL Summary Number]**-visualiseringar) samt exporterade CSV- och PDF-data. |
-| Alternativ för att ta bort ospecificerad/ingen | Möjligheten att enkelt ta bort ospecificerad/ingen har lagts till som ett alternativ i rapportfiltren. |
+| Uppdatering av totalsummor för friformstabeller | Friformstabeller innehåller nu två totalsummor, en **[!UICONTROL Table total]** och en **[!UICONTROL Grand total]**. Raden med tabellsumman avser de [rapportfilter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html) som används. Tidigare påverkades summorna bara av segmentering. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)<br/>Dessutom har alternativen **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]** lagts till i **[!UICONTROL Column Settings]**.<br/>Med den här förändringen av totalsummor för friformstabeller uppdateras beroende visualiseringar (som länkade **[!UICONTROL Summary Number]**-visualiseringar) samt exporterade CSV- och PDF-data. |
+| Alternativ för att ta bort ospecificerad/ingen | Möjligheten att enkelt ta bort &#39;Ospecificerad (ingen)&#39; har lagts till som ett alternativ för att rapportera filter. |
 | Borttagning av lila komponenter för tidsperioder | Lila komponenter för tidsperioder (minut, timme, dag, vecka, månad, kvartal, år) har tagits bort. De lila tidskomponenterna har alltid fungerat på exakt samma sätt som deras motsvarande oranga mått, och den här förändringen förenklar det hela. Du **behöver inte göra något** om du tidigare har använt någon av de lila tidskomponenterna.<br/>Den här ändringen innebär även att det lila avsnittet **[!UICONTROL Time]** har bytt namn till **[!UICONTROL Date Ranges]**. |
 
 ## Augusti 2019
@@ -504,7 +504,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <p>Fler <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md"  >filtreringsalternativ</a> för måttobjekt i friformstabeller </p> </td>
+   <td colname="col1"> <p>Fler <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.md"  >filtreringsalternativ</a> för måttobjekt i friformstabeller </p> </td>
    <td colname="col2"> <p>Dessa (avancerade) filtreringsalternativ för måttobjekt har lagts till (utöver de befintliga alternativen för ”innehåller” och ”innehåller inte”): </p>
     <ul id="ul_869B3E943E304C0282D56AD96BB79E18">
      <li id="li_81A49BA0CA3041C7AB892FAD2D129E5A">Innehåller alla termer </li>

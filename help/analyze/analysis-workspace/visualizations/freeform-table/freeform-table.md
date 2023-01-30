@@ -4,7 +4,7 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Freeform Tables
 role: User, Admin
 exl-id: 7a0432f9-2cab-47be-bbd6-ede96cb840a3
-source-git-commit: 505995973beb2dab1ac2aa4521210b650e3a6988
+source-git-commit: 08dd9724efa105d0d9efd25223f72b2ae8e9a487
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Frihandstabell
 
-I Analysis Workspace är Freeform Table grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) i rader och kolumner för att skapa en anpassad tabell för din analys. När varje komponent släpps uppdateras tabellen omedelbart så att du snabbt kan analysera och fördjupa.
+I Analysis Workspace är Freeform Table grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) till rader och kolumner för att skapa en anpassad tabell för din analys. När varje komponent släpps uppdateras tabellen omedelbart så att du snabbt kan analysera och fördjupa.
 
 ![](assets/opening-section.png)
 
@@ -37,7 +37,7 @@ Du kan interagera med och anpassa en frihandstabell på flera olika sätt:
    * Du kan anpassa fler rader till en enda skärm genom att justera projektets [visningsdensitet](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html).
    * Varje dimensionsrad kan visa upp till 400 rader, innan sidnumreringen görs. Klicka på siffran intill &quot;Rader&quot; för att visa fler rader på en sida. Navigera till en annan sida med sidpilen i sidhuvudet.
    * Rader kan delas upp efter ytterligare komponenter. Om du vill dela upp flera rader samtidigt markerar du bara flera rader och drar sedan nästa komponent över de markerade raderna. Läs mer om [uppdelningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html).
-   * Rader kan [filtrerad](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) för att visa en reducerad uppsättning objekt. Ytterligare inställningar finns under [Radinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html).
+   * Rader kan [filtrerad](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html) för att visa en reducerad uppsättning objekt. Ytterligare inställningar finns under [Radinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html).
 
 * **Kolumner**
    * Komponenter kan staplas i kolumner för att skapa segmenterade mätvärden, tabbanalyser med mera.
