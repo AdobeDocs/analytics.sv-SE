@@ -3,9 +3,9 @@ description: Dialogrutan Sekretessetikett för datastyrning ger en översikt öv
 title: Visa/hantera integritetsetiketter för datastyrning
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
+source-git-commit: 4bbed2efde0574bc9f5f6a78a022a22490e75549
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '874'
 ht-degree: 41%
 
 ---
@@ -45,7 +45,7 @@ The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt �
 
 ## Kopiera sekretessetiketter till en rapportserie  {#copy-to-rs}
 
-Om du vill använda samma sekretessinställningar för DULE/Data för flera rapportsviter gör du så här:
+Om du vill använda samma inställningar för datasekretess på mer än en rapportserie gör du så här:
 
 1. Markera variabeln som du vill kopiera. Observera att du bara kan kopiera etiketterna för en variabel åt gången.
 1. Klicka **[!UICONTROL Copy to Report Suite(s)]** längst ned i dialogrutan Datastyrning.
