@@ -3,9 +3,9 @@ description: De ID:n du skickar in omfattar inte alltid alla data för träffar 
 title: ID-expansion
 feature: Data Governance
 exl-id: 312a249f-e0e7-44da-bb3d-b19f1bb4c706
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 4bbed2efde0574bc9f5f6a78a022a22490e75549
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1338'
 ht-degree: 96%
 
 ---
@@ -18,7 +18,7 @@ De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics
 "expandIds": true
 ```
 
-Se [Exempel på JSON-begäran](/help/admin/c-data-governance/gdpr-submit-access-delete.md#sample-json-request) för ett exempel på hur du tar med det här alternativet i begäran. Mer information finns i [API-dokumentationen för sekretesstjänsten](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html).
+Mer information finns i [API-dokumentationen för sekretesstjänsten](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html).
 
 <table id="table_A10CA8DC8C1643CF84A4DF30A6740D51"> 
  <thead> 
