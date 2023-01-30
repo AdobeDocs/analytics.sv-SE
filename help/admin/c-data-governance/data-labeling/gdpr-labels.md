@@ -3,9 +3,9 @@ description: Exempel på dataintegritetsetiketter för Adobe Analytics-variabler
 title: Datasekretessetiketter för analysvariabler
 feature: Data Governance
 exl-id: b8c2143a-6e8e-465a-979b-aa8176e8d4e8
-source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
+source-git-commit: 4bbed2efde0574bc9f5f6a78a022a22490e75549
 workflow-type: tm+mt
-source-wordcount: '3673'
+source-wordcount: '3555'
 ht-degree: 91%
 
 ---
@@ -22,13 +22,7 @@ Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/f
 
 Implementering av datasekretess i Adobe Analytics stöder följande etiketter för identitetsdata, känsliga data och datastyrning.
 
-## DULE-etiketter {#dule-labels}
-
->[!NOTE]
->
->DULE-ramverket (Data Usage Labeling &amp; Enforcement) är utformat för att tillhandahålla ett enhetligt sätt att i alla Adobe-lösningar/-tjänster/-plattformar samla in, kommunicera och använda metadata om data i hela Adobe Experience Cloud. Metadata hjälper personuppgiftsansvariga att indikera vilka data som är personuppgifter, vilka data som är känsliga och vilka avtalsbegränsningar som är kopplade till data. I den här initiala versionen visar Analytics bara de DULE-etiketter som är relevanta för datasekretess. I takt med att andra Adobe-produkter implementerar stöd för DULE-etiketter, kommer framtida versioner att innehålla ytterligare känsliga dataetiketter, liksom avtalsetiketter, som säkerställer att data som delas mellan produkterna endast används på ett juridiskt tillåtet sätt.
-
-## Identitetsdataetiketter (DULE) {#identity-data-labels}
+## Identitetsdataetiketter {#identity-data-labels}
 
 Identitetsdata ”I”-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person.
 
@@ -39,7 +33,7 @@ Identitetsdata ”I”-etiketter används för att kategorisera data som kan ide
 
 {style=&quot;table-layout:auto&quot;}
 
-## Känsliga dataetiketter (DULE) {#sensitive-data-labels}
+## Känsliga dataetiketter {#sensitive-data-labels}
 
 Känsliga ”S”-etiketter används för att kategorisera känsliga data som geografiska data. Ytterligare etiketter för känsliga data kommer att införas i framtiden för att identifiera andra typer av känslig information.
 
@@ -133,9 +127,9 @@ Ett annat exempel är att du kan ha ett CRM-ID som ibland skickas in via eVar1 o
 >
 >Namnutrymmena ”visitorId” och ”customVisitorId” är reserverade för att identifiera den äldre Analytics-spårningscookien och Analytics-kundens besökar-ID. Använd inte dessa namnutrymmen för anpassade trafikvariabler och konverteringsvariabler.
 
-## Variabeltyper och de dataintegritets-/DULE-etiketter de stöder {#variable-types}
+## Variabeltyper och de dataintegritetsetiketter de stöder {#variable-types}
 
-Etiketter för datasekretess/DULE påverkar fyra breda klasser av analysvariabler. Alla variabler har inte stöd för alla etiketter. Tabellen visar vilka variabler som stöder eller inte stöder olika etiketter.
+Märkning av datasekretess påverkar fyra breda klasser av analysvariabler. Alla variabler har inte stöd för alla etiketter. Tabellen visar vilka variabler som stöder eller inte stöder olika etiketter.
 
 | Variabeltyp | Etiketter som stöds | Etiketter som inte stöds |
 |--- |--- |--- |
