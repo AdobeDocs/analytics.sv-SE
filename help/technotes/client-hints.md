@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: 96f4383126f8e88eb1a8c8d60b4a6f2ce7e17f0b
+source-git-commit: 2d309f7c246dea59f731764450974f12cdcdeffd
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1248'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Inte just nu. Du kan välja att samla in alla högentropiska tips eller inga.
 
 Tabellen nedan beskriver klienttipsen från oktober 2022.
 
-| Tips | Beskrivning | Hög eller låg Entropi | Exempel |
+| Tips* | Beskrivning | Hög eller låg Entropi | Exempel |
 | --- | --- | --- | --- | 
 | Sec-CH-UA | Webbläsare och signifikant version | Låg | &quot;Google Chrome 84&quot; |
 | Sec-CH-UA-Mobile | Mobil enhet (true eller false) | Låg | TRUE |
@@ -75,7 +75,11 @@ Tabellen nedan beskriver klienttipsen från oktober 2022.
 | Sec-CH-UA-Model | Enhetsmodell | Hög | &quot;Pixel 3&quot; |
 | Sec-CH-UA-platform-version | Operativsystem/plattformsversion | Hög | &quot;10&quot; |
 
-Höga entropittips samlas in via JavaScript-anrop och skickas via frågeparameter
+
+* Tips om låg entropi samlas in via rubrik. Höga entropytips samlas in via JavaScript och skickas i frågesträngsparametrar.
+
+* Tips för hög entropi samlas in via JavaScript-anrop och skickas via frågeparameter
+
 
 +++
 
