@@ -3,9 +3,9 @@ description: Beskriver den kontinuerliga funktionsreleasestrategin för Adobe An
 title: Adobe Analytics funktionsreleaser
 feature: Release Notes
 exl-id: 1e403bef-4aab-4a9a-a358-62449ce801ff
-source-git-commit: 5a5a1e48e348f614cb0f0356404903c16c55ceb8
+source-git-commit: 7a6a7438ae6dcfd514c8de66626331f3a0e8210d
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ Adobe Analytics-releaser bygger på en kontinuerlig leveransmodell som ger en me
 
 [!UICONTROL Analysis Workspace] använder funktionsflaggor (kallas även&quot;växlar&quot;) för att styra synligheten för nya funktioner, vilket möjliggör kontrollerad skaltestning före den fullständiga versionen. Den här versionsstrategin innehåller följande faser:
 
-* **Frigör till produktion (RTP)**: Koden släpps i produktionen och synligheten för funktioner inaktiveras i Analysis Workspace. Funktionen är ibland tillgänglig i 2.0 Analytics API.
+* **Begränsad testning**: En stegvis release börjar med testning av användare i Adobe. Den görs sedan tillgänglig för en liten grupp kundkonton för att säkerställa att funktionen uppfyller kundernas behov och förväntningar.
 
-* **Begränsad testning**: En stegvis release börjar med testning av användare i Adobe. Versionen skalas sedan från 0 % till 100 % av tillgängligheten under ett par månader. Utfasad utrullning sker på organisationsnivå, så att alla berättigade användare i en organisation får samma upplevelse.
+* **Början av utrullning**: Utrullning av en fasversion börjar med den begränsade testfasen. Versionen skalas sedan från 0 % till 100 % för kunder under ett par månader. Utfasad utrullning sker på organisationsnivå, så att alla berättigade användare i en organisation får samma upplevelse.
 
 * **Allmän tillgänglighet (GA)**: Funktionen är tillgänglig för 100 % av berättigade Experience Cloud-organisationer och har släppts fullständigt.
 
