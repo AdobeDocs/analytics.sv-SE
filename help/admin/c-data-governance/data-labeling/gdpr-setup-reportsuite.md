@@ -3,10 +3,10 @@ description: Med hjälp av data i etikettrapportsviten kan du tilldela etiketter
 title: Data i etikettrapportsvit
 feature: Data Governance
 exl-id: d1bd833c-3fd4-4572-a5dc-d7bab8a79cb8
-source-git-commit: aa794220b464b7665e89345a116a263189dcc3fa
+source-git-commit: 4bbed2efde0574bc9f5f6a78a022a22490e75549
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 37%
+source-wordcount: '524'
+ht-degree: 32%
 
 ---
 
@@ -24,7 +24,7 @@ Med hjälp av data i etikettrapportsviten kan du tilldela etiketter för identit
 
 ## Tilldela eller redigera sekretessetiketter för rapportsviten {#assign-edit}
 
-**Exempel**: Som personuppgiftsansvarig planerar du att samla in e-postadresser och cookie-ID:n från registrerade för att behandla deras begäranden om datasekretess. Dessa cookie-ID:n lagras i en rapportsvit i Adobe Analytics. Om du vill skapa en etikett för e-postadresser och cookie-ID:n måste du använda Adobe Experience Cloud Platforms ramverk för etikettering och tvång av dataanvändning (DULE) i Analytics.
+**Exempel**: Som personuppgiftsansvarig planerar du att samla in e-postadresser och cookie-ID:n från registrerade för att behandla deras begäranden om datasekretess. Dessa cookie-ID:n lagras i en rapportsvit i Adobe Analytics.
 
 1. I Adobe Analytics navigerar du till **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data configuration and collection]** > **[!UICONTROL Data governance]**.
 
@@ -48,10 +48,6 @@ Med hjälp av data i etikettrapportsviten kan du tilldela etiketter för identit
    På den här skärmen visas de etiketter som används och du kan använda ytterligare etiketter. Du kanske inte kan använda eller ändra alla etiketter, beroende på vilken komponent det är.
 
    ![Använda etiketter](assets/edit-labels2.png)
-
-   >[!NOTE]
-   >
-   >DULE-ramverket (Data Usage Labeling &amp; Enforcement) är utformat för att tillhandahålla ett enhetligt sätt att i alla lösningar/tjänster/plattformar samla in, kommunicera och använda metadata om data i hela Adobe Experience Cloud. Metadata hjälper personuppgiftsansvariga att indikera vilka data som är personuppgifter, vilka data som är känsliga och vilka avtalsbegränsningar som är kopplade till data.
 
 1. Klicka på **[!UICONTROL Apply]** när du är klar med alla etiketter.
 
