@@ -1,13 +1,13 @@
 ---
-description: Video om paginering, filtrering och sortering.
-title: Sidnumrering, filtrering och sortering av tabeller
+description: Dokumentation som beskriver hur du filtrerar och sorterar tabeller i Analysis Workspace.
+title: Filtrera och sortera tabeller
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: 08dd9724efa105d0d9efd25223f72b2ae8e9a487
+source-git-commit: af0c56a8911c5ea2fb49fb9625c68331a8517d81
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 1%
+source-wordcount: '653'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Så här filtrerar du data i frihandstabeller:
 
    ![Filterikon i en tabell](assets/table-filter-icon.png)
 
-1. I [!UICONTROL **Sök efter ord eller fras**] anger du ett ord eller en fras som du vill filtrera efter. Endast rader som innehåller ordet eller den exakta frasen som anges visas.
+1. I [!UICONTROL **Sök efter ord eller fras**] anger du ett ord eller en fras som du vill filtrera efter. Endast rader som innehåller det angivna ordet eller den exakta frasen visas.
 
 1. (Valfritt) Om du vill filtrera efter olika villkor eller efter flera villkor väljer du [!UICONTROL **Visa avancerat**].
 
@@ -46,7 +46,7 @@ Så här filtrerar du data i frihandstabeller:
 
 ## Sortera tabeller
 
-Du kan sortera data i en frihandstabell efter någon av de tillgängliga kolumnerna i Analysis Workspace.
+Du kan sortera data i en frihandstabell efter en valfri kolumn i Analysis Workspace som är ett mått.
 
 En nedåtpil ![Ikonen nedpil, sorterad tabellkolumn](assets/table-sort-arrow-icon.png) är synlig i kolumnrubriken som data sorteras efter.
 

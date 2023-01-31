@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: 2d309f7c246dea59f731764450974f12cdcdeffd
+source-git-commit: 5318079d6ad972e66494cd7b7f3bd64359b11012
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1232'
 ht-degree: 1%
 
 ---
@@ -63,23 +63,20 @@ Inte just nu. Du kan välja att samla in alla högentropiska tips eller inga.
 
 Tabellen nedan beskriver klienttipsen från oktober 2022.
 
-| Tips* | Beskrivning | Hög eller låg Entropi | Exempel |
+| Tips | Beskrivning | Hög eller låg Entropi | Exempel |
 | --- | --- | --- | --- | 
-| Sec-CH-UA | Webbläsare och signifikant version | Låg | &quot;Google Chrome 84&quot; |
-| Sec-CH-UA-Mobile | Mobil enhet (true eller false) | Låg | TRUE |
-| Sec-CH-UA-Platform | Operativsystem/plattform | Låg | &quot;Android&quot; |
-| Sec-CH-UA-Arch | Arkitektur för webbplatsen | Hög | &quot;arm&quot; |
-| Avsn-CH-UA-bitness | Arkitekturbitars | Hög | &quot;64&quot; |
-| Sec-CH-UA-Full-Version | Fullständig version av webbläsaren | Hög | &quot;84.0.4143.2&quot; |
-| Sec-CH-UA-full-version-list | Lista över varumärken med deras version | Hög | &quot;Inte A;Varumärke&quot;;v=&quot;99&quot;, &quot;Krom&quot;;v=&quot;98&quot;, &quot;Google Chrome&quot;;v=&quot;98&quot; |
-| Sec-CH-UA-Model | Enhetsmodell | Hög | &quot;Pixel 3&quot; |
-| Sec-CH-UA-platform-version | Operativsystem/plattformsversion | Hög | &quot;10&quot; |
+| Sec-CH-UA | Webbläsare och signifikant version | Låg | `"Google Chrome 84"` |
+| Sec-CH-UA-Mobile | Mobil enhet (true eller false) | Låg | `true` |
+| Sec-CH-UA-Platform | Operativsystem/plattform | Låg | `"Android"` |
+| Sec-CH-UA-Arch | Arkitektur för webbplatsen | Hög | `"arm"` |
+| Avsn-CH-UA-bitness | Arkitekturbitars | Hög | `"64"` |
+| Sec-CH-UA-Full-Version | Fullständig version av webbläsaren | Hög | `"84.0.4143.2"` |
+| Sec-CH-UA-full-version-list | Lista över varumärken med deras version | Hög | `"Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"` |
+| Sec-CH-UA-Model | Enhetsmodell | Hög | `"Pixel 3"` |
+| Sec-CH-UA-platform-version | Operativsystem/plattformsversion | Hög | `"10"` |
 
-
-* Tips om låg entropi samlas in via rubrik. Höga entropytips samlas in via JavaScript och skickas i frågesträngsparametrar.
-
-* Tips för hög entropi samlas in via JavaScript-anrop och skickas via frågeparameter
-
+* Tips om låg entropi samlas in via begärandehuvudet.
+* High-entropy-tips samlas in via JavaScript och skickas via frågesträngsparametervärden. Frågesträngsparametrarna använder `h.` som ett prefix i bildbegäran.
 
 +++
 

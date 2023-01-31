@@ -3,9 +3,9 @@ title: Frågeparametrar för datainsamling
 description: Visar alla frågesträngsparametrar som används i bildbegäranden.
 feature: Validation
 exl-id: 2eb2ade7-a3db-4b00-8a70-2632d1c0aaaf
-source-git-commit: 799c7d2636dc2ba5db90d2dc400462a412aea9f1
+source-git-commit: 74920ff0e518d18697df9aaac8de92e831bb7c03
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '718'
 ht-degree: 5%
 
 ---
@@ -41,6 +41,7 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `-g` | [`pageURL`](../../components/dimensions/page-url.md) | URL-adresser som är längre än 255 byte delas. De första 255 byten visas i `g` och alla återstående byte visas i `-g` parameter. |
 | `gn` | [`pageName`](../vars/page-vars/pagename.md) | Shorthand for the `pageName` frågesträng. |
 | `gt` | [`pageType`](../vars/page-vars/pagetype.md) | Shorthand for the `pageType` frågesträng. |
+| `h.` | [`collectHighEntropyUserAgentHints`](../vars/config-vars/collecthighentropyuseragenthints.md) | Prefix för flera variabler som representerar [Klienttips](/help/technotes/client-hints.md). |
 | `h1` - `h5` | [`hier1` - `hier5`](../vars/page-vars/hier.md) | Hierarkidimensioner. |
 | `hp` | Ingen | Används inte längre. I tidigare versioner av Adobe Analytics fastställde du om den aktuella URL:en var webbläsarens hemsida. |
 | `j` | Ingen | JavaScript-versionen som är installerad i webbläsaren. |
@@ -79,6 +80,6 @@ I följande tabell visas alla frågesträngsparametrar som Adobe använder i bil
 | `vid` | [`visitorID`](../vars/config-vars/visitorid.md) | Variabel för besökar-ID. |
 | `vidn` | Ingen | Ange som AppMeasurement för nya besökare. Innehåller ID-värdet som lagras i besökarens cookie. |
 | `vmk` | `vmk` | Används inte längre. Nyckel för migrering av besökare, som hjälper till att migrera implementeringar från tredje part till cookies från första part. |
-| `vvp` | `variableProvider` | Används i dataanslutningar. |
+| `vvp` | `variableProvider` | Används i Data Connectors. |
 | `xact` | [`transactionID`](../vars/page-vars/transactionid.md) | Används tillsammans med datakällor för att knyta samman online- och offlinedata. |
 | `zip` | [`zip`](../vars/page-vars/zip.md) | Används i [Postnummer](/help/components/dimensions/zip-code.md) dimension. |
