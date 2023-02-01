@@ -1,10 +1,10 @@
 ---
 title: Implementera Adobe Analytics med Adobe Experience Platform Mobile SDK
 description: Använd SDK-tillägget för mobiler i Adobe Experience Platform Data Collection för att skicka data till Adobe Analytics.
-source-git-commit: e6b40881a543b43c03b612c7e7b0d9bd09f44c0d
+source-git-commit: 97bff355a5d9bb737d510221b63ba1321aaf5812
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 0%
+source-wordcount: '632'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,65 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 ![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../../assets/mobilesdk-annotated.png)
 
-|<div style="width:20px"></div>| Aktivitet | Mer information | |-| —|—| | 1 | Kontrollera att du har **har definierat en rapportserie**. | [Report Suite Manager](../../../admin/admin/c-manage-report-suites/report-suites-admin.md) | | 2 | **Konfigurera scheman och datauppsättningar**. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM). | [Konfigurera scheman och datauppsättningar](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) | | 3 | **Konfigurera ett datastream**. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras. | [Konfigurera ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en) | | 4 | **Lägg till en Adobe Analytics-tjänst** till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics. | [Lägg till Adobe Analytics-tjänst i ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics) | | 5 | **Skapa en mobil egenskap**. En egenskap är en behållare som du fyller med tillägg, regler, dataelement och bibliotek. | [Konfigurera en mobil egenskap](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/) | | 6 | **Installera Adobe Experience Platform Edge Network-tillägget** i egenskapen mobile tag och konfigurera datastream i tillägget. | [Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/edge-network/) | | 7 | **Använd kod i din app** om du vill registrera nödvändiga tillägg och läsa in din taggkonfiguration. | [Konfigurera konfigurationen](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration) | | 8 | **Implementera och testa funktioner** med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspect, validera och felsök datainsamling och upplevelser för er mobilapplikation. | [Använda exempelprogrammet](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application) | | 9 | **Utöka och validera er mobilappsimplementering** innan det går till produktion. | |
+<table style="width:100%">
+
+<tr>
+<th style="width:5%"></th><th style="width:60%"><b>Uppgift</b></th><th style="width:35%"><b>Mer information</b></th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><b>Konfigurera ett datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Konfigurera ett datastream<a></td> 
+</tr>
+
+<td>4</td>
+<td><b>Lägg till en Adobe Analytics-tjänst</b> till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><b>Skapa en mobil egenskap</b>. En egenskap är en behållare som du fyller med tillägg, regler, dataelement och bibliotek.</td>
+<td><a href="https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/">Konfigurera en mobil egenskap</a></tr>
+
+<tr>
+<td>6</td>
+<td><b>Installera Adobe Experience Platform Edge Network-tillägget</b> i egenskapen mobile tag och konfigurera datastream i tillägget.</td>
+<td><a href="https://developer.adobe.com/client-sdks/documentation/edge-network/">Adobe Experience Platform Edge Network</a>
+</tr>
+
+<tr>
+<td>7</td>
+<td><b>Använd kod i din app</b> om du vill registrera nödvändiga tillägg och läsa in din taggkonfiguration.</td>
+<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration">Konfigurera konfigurationen</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><b>Implementera och testa funktioner</b> med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspect, validera och felsök datainsamling och upplevelser för er mobilapplikation.</td>
+<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Använda exempelprogrammet</a>
+</tr>
+
+<tr>
+<td>9</td>
+<td><b>Utöka och validera er mobilappsimplementering</b> innan det går till produktion.</td>
+<td></td> 
+</tr>
+
+</table>
 
 
 ## Adobe Analytics-tillägg.
@@ -30,7 +88,49 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 ![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../../assets/mobilesdk-analytics-annotated.png)
 
-|<div style="width:20px"></div> | Aktivitet | Mer information | |-| —|—| | 1 | Kontrollera att du har **har definierat en rapportserie**. | [Report Suite Manager](../../../admin/admin/c-manage-report-suites/report-suites-admin.md) | | 2 | **Skapa en mobil egenskap**. En egenskap är en behållare som du fyller med tillägg, regler, dataelement och bibliotek. | [Konfigurera en mobil egenskap](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/) | | 3 | **Installera Adobe Analytics-tillägget** i egenskapen mobile tag och konfigurera tillägget så att det pekar på rapportsviten. | [Adobe Analytics-tillägg för mobil egendom](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) | | 4 | **Använd kod i din app** om du vill registrera nödvändiga tillägg och läsa in din taggkonfiguration. | [Konfigurera konfigurationen](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration) | | 5 | **Implementera och testa funktioner** med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspect, validera och felsök datainsamling och upplevelser för er mobilapplikation. | [Använda exempelprogrammet](https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application) | | 6 | **Utöka och validera er mobilappsimplementering** innan det går till produktion. | |
+<table style="width:100%">
+
+<tr>
+<th style="width:5%"></th><th style="width:60%"><b>Uppgift</b></th><th style="width:35%"><b>Mer information</b></th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><b>Installera Adobe Analytics-tillägget</b> i egenskapen mobile tag och konfigurera tillägget så att det pekar på rapportsviten.</td>
+<td><a href="https://developer.adobe.com/client-sdks/documentation/adobe-analytics/">Adobe Analytics-tillägg för mobil egendom</a>
+</tr>
+
+<tr>
+<td>4</td>
+<td><b>Använd kod i din app</b> om du vill registrera nödvändiga tillägg och läsa in din taggkonfiguration.</td>
+<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#set-up-the-configuration">Konfigurera konfigurationen</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><b>Implementera och testa funktioner</b> med en kombination av taggens dataelement, regler, ytterligare tillägg och SDK API-anrop i din app. Inspect, validera och felsök datainsamling och upplevelser för er mobilapplikation.</td>
+<td><a href="https://developer.adobe.com/client-sdks/documentation/user-guides/getting-started-with-platform/overview/#use-the-sample-application">Använda exempelprogrammet</a>
+</tr>
+
+<tr>
+<td>6</td>
+<td><b>Utöka och validera er mobilappsimplementering</b> innan det går till produktion.</td>
+<td></td> 
+</tr>
+
+</table>
 
 ## Ytterligare resurser
 

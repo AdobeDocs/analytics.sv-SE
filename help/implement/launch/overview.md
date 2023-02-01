@@ -2,10 +2,10 @@
 title: Implementera Adobe Analytics med Analytics-tillägget
 description: Lär dig implementera Adobe Analytics med hjälp av taggar och Analytics-tillägg
 feature: Launch Implementation
-source-git-commit: e6b40881a543b43c03b612c7e7b0d9bd09f44c0d
+source-git-commit: aef1d613437688b7eed704b227c41e4fbe4677dd
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
+source-wordcount: '364'
+ht-degree: 4%
 
 ---
 
@@ -19,9 +19,54 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 Översikt över implementeringsuppgifterna:
 
+
+
 ![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../assets/analytics-extension-annotated.png)
 
-|<div style="width:20px"></div>| Aktivitet | Mer information | |-| —|—| | 1 | Kontrollera att du har **har definierat en rapportserie**. | [Report Suite Manager](../../admin/admin/c-manage-report-suites/report-suites-admin.md) | | 2 | **Skapa ett datalager** för att hantera spårning av data på din webbplats. | [Skapa ett datalager](../prepare/data-layer.md) | | 3 | **Skapa en taggegenskap**. Egenskaper är överliggande behållare som används för att referera till tagghanteringsdata.| [Skapa en Adobe Analytics-taggegenskap](../launch/create-analytics-property.md) | | 4 | **Installera Analytics-tillägget** i taggegenskapen. Konfigurera Analytics-tillägget för att skicka data till Adobe Analytics. | [Översikt över Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=en) | | 5 | **Distribuera till en utvecklingsmiljö**. Ha en miljö där du kan iterera om taggutveckling. | [Distribuera en analysimplementering till en utvecklingsmiljö](./deploy-dev.md) | | 6 | **Validera och publicera i produktion**. Lägg till taggegenskapen på din webbplats. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.| [Validera en utvecklingsimplementering och publicera till produktion](./validate-publish-prod.md) |
+<table style="width:100%">
+
+<tr>
+<th style="width:5%"></th><th style="width:60%"><b>Uppgift</b></th><th style="width:35%"><b>Mer information</b></th>
+</tr>
+
+<tr>
+<td> 1</td>
+<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><b>Skapa ett datalager</b>för att hantera spårning av data på din webbplats.</td>
+<td>
+<a href="../prepare/data-layer.md">Skapa ett datalager</a>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><b><b>Skapa en taggegenskap</b>. Egenskaper är överliggande behållare som används för att referera till tagghanteringsdata.</td>
+<td><a ref="../launch/create-analytics-property.md">Skapa en Adobe Analytics-taggegenskap</a></td>
+</tr>
+
+<tr>
+<td>4</td><td><b>Installera Analytics-tillägget</b> i taggegenskapen. Konfigurera Analytics-tillägget för att skicka data till Adobe Analytics.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=en">Översikt över Adobe Analytics-tillägg</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><b>Distribuera till en utvecklingsmiljö</b>. Ha en miljö där du kan iterera om taggutveckling.</td>
+<td><a href="./deploy-dev.md">Distribuera en analysimplementering till en utvecklingsmiljö</td>
+</tr>
+
+<tr>
+<td>6</td> 
+<td><b>Validera och publicera i produktion</b>. Lägg till taggegenskapen på din webbplats. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
+<td><a href="./validate-publish-prod.md">Validera en utvecklingsimplementering och publicera till produktion</a></td>
+</tr>
+
+</table>
 
 ## Ytterligare resurser
 

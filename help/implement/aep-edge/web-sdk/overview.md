@@ -1,10 +1,10 @@
 ---
 title: Implementera Adobe Analytics med Adobe Experience Platform Web SDK
 description: Använd Web SDK-tillägget i Adobe Experience Platform Data Collection för att skicka data till Adobe Analytics.
-source-git-commit: e6b40881a543b43c03b612c7e7b0d9bd09f44c0d
+source-git-commit: 97bff355a5d9bb737d510221b63ba1321aaf5812
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 1%
+source-wordcount: '799'
+ht-degree: 4%
 
 ---
 
@@ -20,8 +20,64 @@ Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-til
 
 ![Implementera Adobe Analytics med Web SDK-arbetsflöde](../../assets/websdk-annotated.png)
 
-|<div style="width:20px"></div>| Aktivitet | Mer information | |-| —|—| | 1 | Kontrollera att du har **har definierat en rapportserie**. | [Report Suite Manager](../../../admin/admin/c-manage-report-suites/report-suites-admin.md) | | 2 | **Konfigurera scheman och datauppsättningar**. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM). | [Översikt över schemaanvändargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) och [Översikt över användargränssnittet för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en) | | 3 | **Skapa ett datalager** för att hantera spårning av data på din webbplats. | [Skapa ett datalager](../../prepare/data-layer.md) | | 4 | **Installera den fördefinierade fristående versionen**. Du kan referera till biblioteket (`alloy.js`) på CDN direkt på din sida eller ladda ned och lagra den i din egen infrastruktur. Du kan också använda NPM-paketet. | [Installera den fördefinierade fristående versionen](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-2%3A-installing-the-prebuilt-standalone-version) och [Använda NPM-paketet](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-3%3A-using-the-npm-package)| | 5 | **Konfigurera ett datastream**. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras. | [Konfigurera ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en) | | 6 | **Lägg till en Adobe Analytics-tjänst** till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics. | [Lägg till Adobe Analytics-tjänst i ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics) | | 7 | **Konfigurera Web SDK**. Se till att biblioteket som du installerade i steg 4 är korrekt konfigurerat med dataStream ID (kallades tidigare edge configuration id (`edgeConfigId`)), organisations-ID (`orgId`) och andra tillgängliga alternativ. | [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=en) | | 8 | **Kör kommandon** och/eller **spåra händelser**. När baskoden har implementerats på webbsidan kan du börja köra kommandon och spåra händelser med SDK. | [Kör kommandon](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/executing-commands.html?lang=en) och [Spåra händelser](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en) | | 9 | **Utöka och validera implementeringen** innan det går till produktion. | |
+<table style="width:100%">
 
+<tr>
+<th style="width:5%"></th><th style="width:60%"><b>Uppgift</b></th><th style="width:35%"><b>Mer information</b></th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><b>Skapa ett datalager</b> för att hantera spårning av data på din webbplats.</td>
+<td><a href="../../prepare/data-layer.md">Skapa ett datalager</a></td>
+</tr>
+
+<tr>
+<td> 4</td>
+<td><b>Installera den fördefinierade fristående versionen</b>. Du kan referera till biblioteket (<code>alloy.js</code>) på CDN direkt på din sida eller ladda ned och lagra den i din egen infrastruktur. Du kan också använda NPM-paketet.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-2%3A-installing-the-prebuilt-standalone-version">Installera den fördefinierade fristående versionen</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-3%3A-using-the-npm-package">Använda NPM-paketet</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><b>Konfigurera ett datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Konfigurera ett datastream<a></td> 
+</tr>
+
+<td>6</td>
+<td><b>Lägg till en Adobe Analytics-tjänst</b> till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><b>Konfigurera Web SDK</b>. Se till att biblioteket som du installerade i steg 4 är korrekt konfigurerat med dataStream ID (kallades tidigare edge configuration id (<code>edgeConfigId</code>)), organisations-ID (<code>orgId</code>) och andra tillgängliga alternativ.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=en">Konfigurera Web SDK</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><b>Kör kommandon</b> och/eller <b>spåra händelser</b>. När baskoden har implementerats på webbsidan kan du börja köra kommandon och spåra händelser med SDK.
+</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/executing-commands.html?lang=en">Kör kommandon</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en">Spåra händelser</a></td>
+</tr>
+
+<tr>
+<td>9</td><td><b>Utöka och validera implementeringen</b> innan det går till produktion.</td><td></td> 
+</tr>
+</table>
 
 
 ## Web SDK-tillägg
@@ -30,8 +86,61 @@ Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-til
 
 ![Implementera Adobe Analytics med hjälp av arbetsflödet för Web SDK-tillägg](../../assets/websdk-extension-annotated.png)
 
-|<div style="width:20px"></div> | Aktivitet | Mer information | |-| —|—| | 1 | Kontrollera att du har **har definierat en rapportserie**. | [Report Suite Manager](../../../admin/admin/c-manage-report-suites/report-suites-admin.md) | | 2 | **Konfigurera scheman och datauppsättningar**. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM). | [Översikt över schemaanvändargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) och [Översikt över användargränssnittet för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en) | | 3 | **Skapa ett datalager** för att hantera spårning av data på din webbplats. | [Skapa ett datalager](../../prepare/data-layer.md) | | 4 | **Konfigurera ett datastream**. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras. | [Konfigurera ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en) | | 5 | **Lägg till en Adobe Analytics-tjänst** till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics. | [Lägg till Adobe Analytics-tjänst i ett datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics) | | 6 | **Skapa en taggegenskap**. Egenskaper är överliggande behållare som används för att referera till tagghanteringsdata.| [Skapa eller konfigurera en taggegenskap för webben](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#for-web) | | 7 | **Installera och konfigurera Web SDK-tillägget** i taggegenskapen. Konfigurera Web SDK-tillägget för att skicka data till den dataström som konfigurerats i steg 4. | [Adobe Experience Platform Web SDK-tillägg - översikt](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html?lang=en) | | 8 | **Upprepa, validera och publicera** till produktion. Lägg till taggegenskapen på din webbplats. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen. | [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=en) |
+<table style="width:100%">
 
+<tr>
+<th style="width:5%"></th><th style="width:60%"><b>Uppgift</b></th><th style="width:35%"><b>Mer information</b></th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><b>Skapa ett datalager</b> för att hantera spårning av data på din webbplats.</td>
+<td><a href="../../prepare/data-layer.md">Skapa ett datalager</a></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><b>Konfigurera ett datastream</b>. En datastream representerar konfigurationen på serversidan när Adobe Experience Platform Web SDK implementeras.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en">Konfigurera ett datastream<a></td> 
+</tr>
+
+<tr>
+<td>5</td> 
+<td><b>Lägg till en Adobe Analytics-tjänst</b> till din datastream. Tjänsten styr om och hur data skickas till Adobe Analytics.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#analytics">Lägg till Adobe Analytics-tjänst i ett datastream</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><b>Skapa en taggegenskap</b>. Egenskaper är överliggande behållare som används för att referera till tagghanteringsdata.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#for-web">Skapa eller konfigurera en taggegenskap för webben</a></td>
+</tr>
+
+<tr>
+<td>7</td> 
+<td><b>Installera och konfigurera Web SDK-tillägget</b> i taggegenskapen. Konfigurera Web SDK-tillägget för att skicka data till den dataström som konfigurerats i steg 4.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/sdk/overview.html?lang=en">Adobe Experience Platform Web SDK-tillägg - översikt</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><b>Upprepa, validera och publicera</b> till produktion. Lägg till taggegenskapen på din webbplats. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=en">Översikt över publicering</a></td>
+</tr>
+
+</table>
 
 
 ## Ytterligare resurser
