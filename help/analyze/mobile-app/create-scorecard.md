@@ -4,9 +4,9 @@ title: Skapa ett mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: c10cda76962d66a710b1fad74f6c6fdc987e0aca
+source-git-commit: a50451010a4c972d4acdc11a5229406f47bdf292
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1720'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,16 @@ Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett n
 ![Nytt poängkort5](assets/new_score_card5.png)
 
 Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent.
+
+### Visa datumintervall för jämförelse {#showo-comparison-dates}
+
+Om du vill inkludera datumintervall för jämförelse växlar du **Inkludera jämförelsedatum** inställning.
+
+![Inkludera jämförelsedatum](assets/include-comparison-dates.png)
+
+Inställningen är *på* som standard. Avmarkera alternativet om du inte vill visa jämförelsedatum.
+
+![Inställning för jämförelsedatum](assets/no-comparison-dates.png)
 
 ## Använd visualiseringar {#viz}
 

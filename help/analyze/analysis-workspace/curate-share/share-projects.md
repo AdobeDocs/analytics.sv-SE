@@ -5,77 +5,149 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
+source-git-commit: 4b11a7057177bec9d2e9d7c435ad0d5476a46602
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
 
 # Dela projekt
 
-Delning gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. Alla [kuration](curate.md) som du har använt återspeglas när mottagarna öppnar projektet.
+Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
+
+* Användare och grupper i organisationen som har tillgång till Adobe Analytics
+
+* Användare och grupper i organisationen som inte har tillgång till Adobe Analytics
+
+* Personer utanför din organisation
+
+Alla [kuration](curate.md) används innan delningen visas när mottagarna öppnar projektet.
 
 Här är en videoöversikt över projektdelning:
 
 >[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
 
-## Projektroller {#Roles}
 
-Du kan lägga till mottagare i en av tre projektroller. Projektroller är knutna till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
+## Dela med Adobe Analytics användare och grupper i er organisation {#Add}
 
-| Roll | Projektkontroll |
-| --- | --- |
-| Kan redigera | Mottagarna kan **[!UICONTROL Save]** ändringar i ett projekt och fungerar som medägare. Den här rollen är användbar om du vill samhantera ett projekt med andra kollegor. detta inkluderar redigering, borttagning och ändring av mottagarlistor för ett delat projekt. <br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen. |
-| Kan dupliceras | Mottagarna kan **[!UICONTROL Save as]** och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt projekt ska ändras. |
-| Kan visa | Mottagarna kan inte spara som och har inte åtkomst till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö.<br>Läs mer om [Kan visa projekterfarenhet](/help/analyze/analysis-workspace/curate-share/view-only-projects.md). |
+Du kan dela ett projekt med befintliga Adobe Analytics-användare eller -grupper i din organisation. När du delar ett projekt enligt beskrivningen i det här avsnittet måste de användare du delar med redan ha ett Adobe Analytics-konto.
 
-Här är en video om projekt som bara är för visning i Analysis Workspace:
+Du kan dela en specifik roll med användare eller grupper eller dela en länk.
 
->[!VIDEO](https://video.tv.adobe.com/v/36206/?quality=12)
+* [Dela en specifik projektroll](#share-a-specific-project-role)
 
->[!IMPORTANT]
-> Projektmottagare som lagts till före den 18 juni 2020 har migrerats till en projektroll. Administratörsanvändare migrerade till **[!UICONTROL Can edit]** rollanvändare och icke-adminanvändare migrerade till **[!UICONTROL Can duplicate]** roll. Dessa roller ger samma projekterfarenhet som tidigare. Dessutom migrerades alla grupper (inklusive&quot;Alla&quot;) till **[!UICONTROL Can duplicate]** roll.
+* [Dela en länk till ett projekt](#share-a-link-to-a-project)
 
-### Ingen roll har tilldelats (mottagare av projektlänkar)
+### Dela en specifik projektroll
 
-Om en mottagare inte har tilldelats en roll och får en [link](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**.
+När du delar en specifik projektroll med användare och grupper i organisationen bör du tänka på följande:
 
-### Flera roller har tilldelats
+* Projektroller (**[!UICONTROL Can edit]**, **[!UICONTROL Can duplicate]** och **[!UICONTROL Can view]**) är knutna till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
-Om en mottagare placeras i flera roller får de alltid den högsta upplevelsen. Detta kan inträffa om en mottagare läggs till både som individ och som en del av en grupp. Om en mottagare får **[!UICONTROL Can edit]** som individ och **[!UICONTROL Can view]** som medlem i en grupp får de **[!UICONTROL Can edit]** projekterfarenhet.
+* I Adobe Analytics definieras grupper efter produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Administratörer kan dela till alla grupper, inklusive&quot;Alla&quot;. Icke-administratörer kan dela till alla grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
 
-### Administratörer och roller
+* En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får **[!UICONTROL Can edit]** som individ och **[!UICONTROL Can view]** som medlem i en grupp får de **[!UICONTROL Can edit]** projekterfarenhet.
 
-Administratörer som placerats i en **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan vid behov utöka sin roll till **[!UICONTROL Can edit]** när som helst till **[!UICONTROL Components]>[!UICONTROL Projects]**.
+* Administratörer i **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan vid behov utöka sin roll till **[!UICONTROL Can edit]** när som helst till **[!UICONTROL Components]>[!UICONTROL Projects]**.
 
-## Lägg till mottagare i delat projekt {#Add}
+Så här delar du en specifik projektroll med användare eller grupper i organisationen:
 
-Så här lägger du till mottagare i ditt delade projekt:
-
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share project]**.
+1. Gå till projektet som du vill dela och klicka sedan på **[!UICONTROL Share]** > **[!UICONTROL Share project]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
 Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
-1. Lägg till mottagare eller grupper med mottagare.
-Använd hjälpikonen längst upp för att få beskrivningar av de olika rollerna.
-1. (Valfritt) Dela inbäddade projektkomponenter (segment, beräknade värden och datumintervall) med alla mottagare.
-När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Observera att den här inställningen inte kvarstår - det är en enkel åtgärd vid tidpunkten för delningen.
-1. (Valfritt) Ange den här sidan som landningssida för mottagare.
-Den här inställningen kvarstår inte - det är en enkel åtgärd vid tidpunkten för delningen.
-1. Klicka på Dela.
+
+   ![](assets/share-proj-modal.png)
+
+   Mer information om hur du delar flera projekt samtidigt finns i [Dela projekt i projektledaren](#share-projects-in-the-project-manager).
+
+1. Lägg till mottagare eller grupper av mottagare i något av de tillhandahållna rollfälten:
+
+   **Kan redigera:** Mottagarna kan **[!UICONTROL Save]** ändringar i ett projekt och fungerar som medägare. Den här rollen är användbar om du vill samhantera ett projekt med andra kollegor. detta inkluderar redigering, borttagning och ändring av mottagarlistor för ett delat projekt. <br>Obs! Analysis Workspace stöder för närvarande inte live-samarbete, så vi rekommenderar att endast en användare redigerar ett projekt åt gången. Om projekt sparas samtidigt behålls den senaste versionen.
+
+   **Kan duplicera:** Mottagarna kan **[!UICONTROL Save as]** och ha tillgång till den vänstra listen. Projektinteraktioner är inte begränsade i den här rollen. Den här rollen är användbar om du vill dela ett projekt med användare som förstår organisationens data och hur du använder Analysis Workspace, men inte vill att ditt projekt ska ändras.
+
+   **Kan visa:** Mottagarna kan inte **[!UICONTROL Save]** eller **[!UICONTROL Save as]** och inte har tillgång till den vänstra listen. Projektinteraktionen är också begränsad. Den här rollen är användbar om du vill dela ett projekt med användare som inte är lika bekanta med organisationens datastruktur, Analysis Workspace eller Adobe Analytics i allmänhet. Men ni vill ändå att de ska konsumera data och insikter i en säker miljö. Läs mer om [Kan visa projekterfarenhet](/help/analyze/analysis-workspace/curate-share/view-only-projects.md).
+
+1. Välj om du vill aktivera följande alternativ när du delar projektet:
+
+   * **Dela inbäddade projektkomponenter:** Delar segment, beräknade värden och datumintervall med alla mottagare. När komponenterna har delats visas de i listrutan Komponenter på mottagarens arbetsyta. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
+
+   * **Ange som landningssida för mottagare:** Anger den här sidan som startsida för mottagare. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
+
+1. Klicka på **[!UICONTROL Share]**.
 Du kan också klicka **[!UICONTROL Curate and Share]** för att automatiskt lägga in projekturval. Om ett projekt redan har delats visas följande knappar **[!UICONTROL Update]** och **[!UICONTROL Curate & Update]**. Läs mer om [projekturval](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
 
-![](assets/share-proj-modal.png)
+### Dela en länk till ett projekt
 
-## Dela till grupper med mottagare {#Groups}
+Tänk på följande när du delar en länk enligt beskrivningen i det här avsnittet:
 
-Alla användare kan dela projekt med grupper, som är en samling mottagare. I Adobe Analytics definieras grupper efter produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
+* Mottagare som använder länken måste logga in på Adobe Analytics innan de kan komma åt projektet.
 
-* Administratörer kan dela till alla grupper, inklusive&quot;Alla&quot;.
-* Icke-administratörer kan dela grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
+* Om en mottagare inte har tilldelats en roll och får en [link](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) får de en roll som standard. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**.
 
-## Dela en projektlänk {#Links}
+Så här delar du projektlänken med användare i din organisation:
 
-Du kan hämta en länk till ett projekt under **[!UICONTROL Share]>[!UICONTROL Get project link]**. När man klickar på det här alternativet måste mottagarna logga in innan de landar i projektet. Om mottagaren inte har placerats i en roll får han/hon en standardroll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) om hur du skapar delningsbara länkar till arbetsyteprojekt.
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share project]**. <!-- recommned changing "Share project" to "Share project internally" or something like that -->
+Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
+
+   ![](assets/share-proj-modal.png)
+
+1. Klicka **[!UICONTROL Copy link]** bredvid **[!UICONTROL Share URL field]**.
+
+1. Dela länken med användare i organisationen. Du kan till exempel klistra in den i ett e-postmeddelande, på en intern webbplats och så vidare.
+
+## Dela en offentlig länk med vem som helst (ingen inloggning krävs) {#share-public-link}
+
+{{release-limited-testing-section}}
+
+Du kan dela Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta kan omfatta:
+
+* Personer utanför din organisation
+
+* Personer i din organisation som inte är anställda hos Adobe Analytics
+
+>[!NOTE]
+>
+>Det här alternativet kan inaktiveras av Analytics-administratören enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Om du inte kan dela en offentlig länk enligt beskrivningen i det här avsnittet har Analytics-administratören inaktiverat den här funktionen.
+
+Så här delar du en offentlig länk till ett Analysis Workspace-projekt:
+
+1. Öppna det Analysis Workspace-projekt som du vill dela.
+
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share public link]**.
+
+   Om det finns ändringar som inte har sparats uppmanas du att spara projektet.
+
+   <!-- Add screen shot of new modal -->
+
+1. Aktivera **[!UICONTROL Link active]** om det inte redan är aktiverat.
+
+1. Välj om du vill aktivera följande säkerhetsalternativ (dessa alternativ kan styras av Analytics-administratören):
+
+   * **[!UICONTROL Require single sign-on (SSO) authentication]:**
+
+      Kräv att personer med länken autentiserar via enkel inloggning innan de får åtkomst till det delade projektet. Välj det här alternativet om du vill att projektet bara ska vara tillgängligt för användare i din organisation.
+
+      Analysadministratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
+
+      * Om det här alternativet inte visas är enkel inloggning inte aktiverat för din organisation eller så har analysadministratören inte aktiverat den här funktionen.
+
+      * Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör SSO-autentisering för att kunna komma åt alla offentliga länkar.
+   * **[!UICONTROL Require Password]:** Kräv att personer med länken anger ett lösenord innan de öppnar Analysis Workspace-projektet. Detta ger en extra säkerhetsnivå till ditt projekt.
+
+      Om du väljer det här alternativet anger du ett lösenord. Kom ihåg att dela det här lösenordet tillsammans med projektlänken när du delar det med andra. <!--go through this workflow and see how it works.-->
+
+      Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör att alla offentliga länkar är lösenordsskyddade. Analysadministratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md).
+
+
+1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** om du vill kopiera länken till systemets Urklipp.
+
+1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
+
+   Alla som du delar länken med kan visa Analysis Workspace-projektet. Om du väljer att kräva ett lösenord måste du också dela det med alla som du vill komma åt länken.
+
+1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt. <!-- True? -->
+
 
 ## Dela projekt i projektledaren {#Manager}
 

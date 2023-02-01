@@ -3,18 +3,20 @@ description: Med avsnitten Permanent trafik kan du ändra förväntade trafikniv
 title: Ange permanent trafikökning
 feature: Traffic Management
 exl-id: a1e2bc5c-4443-4c88-8b6c-cc320c689c99
-source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
+source-git-commit: 157b6f53b482d8cc19b99976ed1d927a80fec490
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '149'
 ht-degree: 8%
 
 ---
 
 # Ange permanent trafikökning
 
-Med avsnitten Permanent trafik kan du ändra förväntade trafiknivåer så att Adobe kan omfördela resurser för att hantera den nya trafiknivån.
+Du kan ändra den förväntade trafiknivån så att Adobe kan tilldela om resurser för att hantera den nya trafiknivån. (Du kan också [schemalägga en trafikspik](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md) om du tillfälligt vill tilldela om resurser.)
 
-Läs informationen om [Ledtid som krävs för trafikökningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-lead-time.md) innan du anger en permanent trafikökning.
+{{$include /help/_includes/traffic-lead-time.md}}
+
+## Ange en permanent trafikökning
 
 1. Öppna Report Suite Manager genom att klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]**.
 1. Välja en rapportsvit.

@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Verktygshandbok
 user-guide-description: Lär dig hur du använder analysverktyg som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 08dd9724efa105d0d9efd25223f72b2ae8e9a487
+source-git-commit: 0d7ae5dea6597996039d5af5256be8b5b65b3bd3
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 78%
+source-wordcount: '1101'
+ht-degree: 76%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 78%
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
    + Komponenter {#components}
       + [Komponenter – översikt](analysis-workspace/components/analysis-workspace-components.md)
+      + [Lägga till komponentbeskrivningar](analysis-workspace/components/add-component-descriptions.md)
       + Anteckningar {#annotations}
          + [Översikt över anteckningar](analysis-workspace/components/annotations/overview.md)
          + [Skapa anteckningar](analysis-workspace/components/annotations/create-annotations.md)
@@ -60,6 +61,11 @@ ht-degree: 78%
          + [Översikt över kalender- och datumintervall](analysis-workspace/components/calendar-date-ranges/calendar.md)
          + [Skapa anpassade datumintervall](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)
          + [Datumjämförelse](analysis-workspace/components/calendar-date-ranges/time-comparison.md)
+      + Dataordlista {#data-dictionary}
+         + [Översikt över dataordlistan](analysis-workspace/components/data-dictionary/data-dictionary-overview.md)
+         + [Visa komponentinformation i Data Dictionary](analysis-workspace/components/data-dictionary/view-data-dictionary.md)
+         + [Redigera komponentposter i Data Dictionary](analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)
+         + [Övervaka dataordlistans hälsa](analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md)
    + Visualiseringar {#visualizations}
       + [Översikt över visualiseringar](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)

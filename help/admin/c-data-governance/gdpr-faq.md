@@ -3,10 +3,10 @@ description: Vanliga frågor om datahantering i Adobe Analytics
 title: Frågor och svar om datahantering
 feature: Data Governance
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: 4bbed2efde0574bc9f5f6a78a022a22490e75549
+source-git-commit: f941326a3e2bc510891371f2dad658c1b23bece2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2164'
+ht-degree: 81%
 
 ---
 
@@ -119,7 +119,6 @@ Du ska också vara medveten om att alla besökare som har en träff som har tagi
 Kontakta er Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för att få mer information och för att åtgärda eventuella PII- eller dataproblem.
 
 +++
-
 
 Ytterligare resurser för datasekretess:
 

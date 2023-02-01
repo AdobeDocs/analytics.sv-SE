@@ -3,9 +3,9 @@ title: Översikt över mätvärden
 description: Visa kvantiteter för dimensionsobjekt eller data över tid.
 feature: Metrics
 exl-id: 8dda3bc4-ffac-4407-896f-6064727d099c
-source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
+source-git-commit: 3ed4c075578ef31cec4b1c825039eae989c813dc
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '185'
 ht-degree: 2%
 
 ---
@@ -29,6 +29,4 @@ Om du inte kan hitta en viss hjälpsida för mätvärden är det troligtvis en [
 
 ## Lägg till måttbeskrivningar
 
-Här är en video som beskriver hur du lägger till metriska (och dimensionella) beskrivningar i Adobe Analytics:
-
->[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
+Analysadministratörer kan lägga till beskrivningar för mätvärden och andra komponenter antingen i Report Suite eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar till mätvärden finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).

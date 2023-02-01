@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: 5318079d6ad972e66494cd7b7f3bd64359b11012
+source-git-commit: f941326a3e2bc510891371f2dad658c1b23bece2
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1245'
 ht-degree: 1%
 
 ---
@@ -77,6 +77,8 @@ Tabellen nedan beskriver klienttipsen från oktober 2022.
 
 * Tips om låg entropi samlas in via begärandehuvudet.
 * High-entropy-tips samlas in via JavaScript och skickas via frågesträngsparametervärden. Frågesträngsparametrarna använder `h.` som ett prefix i bildbegäran.
+
+Höga entropittips samlas in via JavaScript-anrop och skickas via frågeparameter
 
 +++
 

@@ -3,9 +3,9 @@ title: Översikt över Dimensioner
 description: Variabler som innehåller strängvärden.
 feature: Dimensions
 exl-id: dc00e06a-fdb5-40e3-82e2-269bad3b3677
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 3ed4c075578ef31cec4b1c825039eae989c813dc
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,8 @@ Om du t.ex. kombinerat siddimensionen med Visits-måttet får du en rankad rappo
 | `Product page` | `500` |
 | `Purchase page` | `100` |
 
-Varje dimension representerar en annan del eller del av din webbplats. Du kan kombinera en av dessa mått med ett eller flera mätvärden för att skapa en önskad rapport.
+Varje dimension representerar en annan del eller del av din webbplats. Du kan kombinera en av dessa mått med en eller flera mätvärden för att skapa en önskad rapport.
 
 ## Lägg till dimensionsbeskrivningar
 
-Här är en video som beskriver hur du lägger till dimensionsbeskrivningar (och metriska beskrivningar) i Adobe Analytics:
-
->[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
+Analysadministratörer kan lägga till beskrivningar för dimensioner och andra komponenter antingen i Report Suite eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar till dimensioner finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).

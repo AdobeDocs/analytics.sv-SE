@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 1defe0b630d9d600402dc23562d7a6af0bfa81de
+source-git-commit: 01c7fbc8c06bf88e32f198ee5e23d00ba3e6128b
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 80%
+source-wordcount: '614'
+ht-degree: 78%
 
 ---
 
@@ -133,11 +133,9 @@ ht-degree: 80%
             + [Marknadsförande eVars](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/merchandising-evars.md)
          + [Marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md)
          + Trafikhantering {#traffic-management}
-            + [Hantera trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-management.md)
-            + [Schemalägg en trafiktopp](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)
-            + [Uppskatta tidigare serveranrop och schemalägg en trafiktopp](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-spike-estimate-past-server-calls.md)
-            + [Ange permanent trafikökning](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
-            + [Ledtid som krävs för trafikökningar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-lead-time.md)
+            + [Översikt](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-management.md)
+            + [Schemalägg spike](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)
+            + [Permanent trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
          + [Inställningar för enskild rapportsvit](admin/c-manage-report-suites/c-edit-report-suites/individual-rs-settings.md)
          + [Apphantering](admin/c-manage-report-suites/c-edit-report-suites/mobile-management.md)
          + Realtidsrapporter {#real-time-reports}
@@ -171,6 +169,7 @@ ht-degree: 80%
       + [Bästa praxis för etikettering](c-data-governance/data-labeling/gdpr-analytics-ids.md)
       + [Exempel på etiketter](c-data-governance/data-labeling/gdpr-labeling-example.md)
       + [Namnutrymmen](c-data-governance/data-labeling/gdpr-namespaces.md)
+   + [Skicka begäran om åtkomst och borttagning](c-data-governance/gdpr-submit-access-delete.md)
    + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
    + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
 + [Admin-API](c-admin-api/c-admin-api.md)

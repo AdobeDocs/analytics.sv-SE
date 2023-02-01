@@ -1,13 +1,13 @@
 ---
-description: 'Komponenterna i Analysis Workspace består av mått, mått, segment och datumintervall som du kan dra och släppa i ett projekt. '
+description: Komponenterna i Analysis Workspace består av mått, mått, segment och datumintervall som du kan dra och släppa i ett projekt.
 title: Komponenter – översikt
 feature: Components
 role: User, Admin
 exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 356df9e96e3b15ccb74e641e04d6a6fc26e6db62
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 5%
+source-wordcount: '688'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +19,7 @@ Klicka på knappen **[!UICONTROL Components]** ikonen i den vänstra listen. Du 
 
 ![](assets/component-overview.png)
 
-Du kan också justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
+Du kan även justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
 
 ## Mått {#dimensions}
 
@@ -53,9 +53,12 @@ Exempel på segment är [!UICONTROL Mobile Device Visitors], [!UICONTROL Visits 
 
 [**Datumintervall**](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/calendar.html) är det datumintervall du utför analysen över. De finns i den vänstra komponentspåret (lila avsnitt) och används vanligtvis i kalendern för varje panel.
 
+Du kan göra datumintervallets komponenter relativa till panelkalendern. Mer information finns i [Om relativa paneldatumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md#relative-panel-dates).
+
 Exempel på datumintervall är juli 2019, [!UICONTROL Last 4 weeks]och [!UICONTROL This month]. Datumintervall tillhandahålls av Adobe, används i [panelkalender](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html)eller som skapats med [Bygg datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html).
 
 ![](assets/date-ranges.png)
+
 
 ## Komponentåtgärder {#actions}
 
