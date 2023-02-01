@@ -3,8 +3,8 @@ title: Implementera Adobe Analytics med Adobe Experience Platform Mobile SDK
 description: Använd SDK-tillägget för mobiler i Adobe Experience Platform Data Collection för att skicka data till Adobe Analytics.
 source-git-commit: 97bff355a5d9bb737d510221b63ba1321aaf5812
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
