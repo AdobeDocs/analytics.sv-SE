@@ -2,7 +2,7 @@
 title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 feature: Implementation Basics
-source-git-commit: ad0099e41315b5e61cd62747e68f578266b47054
+source-git-commit: d9a5d8a15b9e108af795cdfb7ed5481d51311328
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 27%
@@ -65,7 +65,7 @@ Följande beslutsflöde kan hjälpa dig att välja en implementeringsmetod:
 
 >[!TIP]
 >
->Kontakta Adobe för råd och bästa praxis om vilken implementering som ska väljas baserat på din nuvarande situation. >
+>Kontakta Adobe för råd och bästa praxis om vilken implementering som ska väljas baserat på din nuvarande situation.
 
 ## Implementeringsmetoder för mobilappar
 
