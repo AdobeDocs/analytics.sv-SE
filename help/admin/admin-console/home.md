@@ -3,14 +3,14 @@ title: Analyser i Adobe Admin Console
 description: Lär dig använda Adobe Admin Console för att hantera Analytics-produkter och -användare.
 exl-id: 6e2c5ad4-2761-4ccb-8c76-ea9e1df9437a
 feature: Admin Tools
-source-git-commit: 087eb1efbd7f34492033e61685082f5830c004ce
+source-git-commit: 7c29f7a9bb036063de2dc114571f0698f5a2312b
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '116'
 ht-degree: 6%
 
 ---
 
-# Analyser i Adobe Admin Console
+# Analyser i Adobe Admin Console-översikt
 
 Använd [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) för att hantera Analytics-produkter och -användare. Adobe Admin Console finns på [adminconsole.adobe.com](https://adminconsole.adobe.com/).
 

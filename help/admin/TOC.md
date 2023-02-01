@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 4bbed2efde0574bc9f5f6a78a022a22490e75549
+source-git-commit: 7c29f7a9bb036063de2dc114571f0698f5a2312b
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '634'
 ht-degree: 80%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 80%
 + [Administratörshandbok för Analytics](home.md)
 + [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Admin Console för Adobe {#admin-console}
-   + [Analyser i Adobe Admin Console](admin-console/home.md)
+   + [Översikt](admin-console/home.md)
    + [Adobe Analytics första administrationshandbok](admin-console/first-admin-guide.md)
    + [Administratörsroller i Adobe Analytics](admin-console/admin-roles-in-analytics.md)
-   + Behörigheter {#permissions}
+   + Sammanfattning av behörigheter för analysverktyg {#permissions}
       + [Analysbehörigheter i Admin Console](admin-console/permissions/summary-tables.md)
       + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
       + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
@@ -156,7 +156,6 @@ ht-degree: 80%
       + [Samprofilering](admin/company/co-branding-admin.md)
       + [Dölj rapportsviter](admin/company/c-hide-report-suites.md)
       + [Säkerhetshanteraren](admin/company/security-manager.md)
-   + [Enklare rapportmeny](admin/t-simplified-menu.md)
    + [Videohantering](admin/video-management.md)
    + Användning av serversamtal {#server-call-usage}
       + [Översikt över användningen av serversamtal](admin/c-server-call-usage/overage-overview.md)
