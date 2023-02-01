@@ -4,9 +4,9 @@ keywords: eVar
 title: Konverteringsvariabler (eVar)
 feature: Admin Tools
 exl-id: 822ecaff-a06c-42e1-aee8-ef4a43df4230
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 2f219f599b5c9231a29a23e1ebd9412081754c9d
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1600'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,10 @@ ht-degree: 0%
 
 Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på vissa webbsidor på din webbplats. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. En eVar kan vara besöksbaserad och fungera på liknande sätt som cookies. Värden som skickas till eVar följer användaren under en förbestämd tidsperiod.
 
-Här är en videoöversikt:
+
+## Översikt över konverteringsvariabler (eVars)
+
+Här följer en videoöversikt:
 
 >[!VIDEO](https://video.tv.adobe.com/v/28759/?quality=12)
 
@@ -33,9 +36,9 @@ Om trafikmätning eller vägning önskas rekommenderas användning av trafikvari
 >
 >Endast ett värde kan lagras i en eVar i en bildbegäran. Om du vill ha flera värden i ett eVar rekommenderar vi att du implementerar [Listvariabler (listvariabler)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html).
 
-## Konverteringsvariabler - beskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
+### Konverteringsvariabler - beskrivningar {#section_7C317BB0287A4B8EB0A1A4ECC40627BF}
 
-Beskrivningar av fält som används när [redigera konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/t-conversion-variables-admin.md).
+Beskrivningar av fält som används när [redigera konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md).
 
 | Element | Beskrivning |
 | --- | --- |
@@ -68,3 +71,18 @@ Variabler är inte skiftlägeskänsliga. Det övre eller nedre fallet som använ
 ### Räknare
 
 eVars används oftast för att lagra strängvärden, men de kan också konfigureras för att fungera som räknare. eVars är användbart som räknare när du försöker räkna antalet åtgärder som en användare utför före en händelse. Du kan till exempel använda en eVar för att hämta antalet interna sökningar före köpet. Varje gång en besökare söker bör eVar innehålla värdet &#39;+1&#39;. Om en besökare söker fyra gånger före ett köp visas en instans för varje totalantal: 1.00, 2.00, 3.00 och 4.00. Endast 4.00 får dock krediter för köphändelsen (beställningar och intäktsstatistik). Endast positiva tal tillåts som värden för en eVar.
+
+## Lägga till eller redigera konverteringsvariabler
+
+1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
+1. Välja en rapportsvit.
+1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Variables]**.
+1. På [!UICONTROL Conversion Variables] klickar du på **[!UICONTROL Expand]** icon [+] bredvid den konverteringsvariabel som du vill ändra.
+
+   eller
+
+   Klicka **[!UICONTROL Add New]** om du vill lägga till en oanvänd eVar i rapportsviten.
+1. Markera de konverteringsvariabelfält som du vill ändra.
+
+   Se [Konverteringsvariabler - beskrivningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md#section_7C317BB0287A4B8EB0A1A4ECC40627BF). I vissa fält kan du skriva direkt i fältet. Med andra kan du välja i en listruta med värden som stöds.
+1. Klicka på **[!UICONTROL Save]**.

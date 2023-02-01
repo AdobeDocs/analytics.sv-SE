@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 3f5834bb8a6460acacc806839a6d9ae45b2e7afd
+source-git-commit: 1defe0b630d9d600402dc23562d7a6af0bfa81de
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '629'
 ht-degree: 80%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 80%
                   + [Ange en händelse med hjälp av en kontextdatavariabel](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-copy-context-data-event.md)
                   + [Ta bort en händelse från en träff](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-examples/processing-rules-remove-event.md)
                + [Tips och tricks för regler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules-tips.md)
-            + Borttagning av bot {#bot-removal}
+            + Punktregler {#bot-removal}
                + [Borttagning av bot](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-removal.md)
                + [Översikt över botregler](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md)
                + [Vanliga robotsignaturer](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-signatures.md)
@@ -119,12 +119,8 @@ ht-degree: 80%
             + [Anpassade rapportbeskrivningar](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/custom-desc-admin.md)
          + Konverteringsvariabler {#conversion-variables}
             + [Konverteringsvariabler (eVars)](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md)
-            + [Redigera konverteringsvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/t-conversion-variables-admin.md)
-            + [Konverteringsklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md)
-            + [Klassificeringshierarkier](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/classification-hierarchies.md)
-            + [Listvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md)
-            + [Marknadsförande eVars](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/merchandising-evars.md)
             + [Hitta metoder](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/finding-methods.md)
+            + [Konverteringsklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-classifications.md)
             + Unik besökarvariabel {#unique-visitor-variable}
                + [Ange variabeln Unik besökare](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/t-unique-visitor-variable.md)
                + [Användningsfall – extrahera besökar-ID:n](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/unique-visitor-variable-admin/extract-visitorids-usecase.md)
@@ -132,6 +128,9 @@ ht-degree: 80%
                + [Översikt över slutförda händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md)
                + [Konfigurera slutförda händelser](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/t-success-events.md)
                + [Om att ändra händelsetypen](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/event-type.md)
+            + [Klassificeringshierarkier](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/classification-hierarchies.md)
+            + [Listvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md)
+            + [Marknadsförande eVars](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/merchandising-evars.md)
          + [Marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md)
          + Trafikhantering {#traffic-management}
             + [Hantera trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-management.md)
