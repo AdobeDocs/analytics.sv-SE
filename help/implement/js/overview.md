@@ -2,11 +2,10 @@
 title: Implementera Adobe Analytics med AppMeasurement for JavaScript
 description: Lär dig hur du implementerar Adobe Analytics med JavaScript utan ett tagghanteringssystem.
 feature: Implementation Basics
-exl-id: 25b9d768-c641-4f6c-a4ae-0d6c238c4776
-source-git-commit: 99fc7814eaa12d0d9e8e478629a4c2134a577aaa
+source-git-commit: 97e2cefbd8959f088d5f6e9923cad47b5414f38b
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 7%
 
 ---
 
@@ -14,34 +13,79 @@ ht-degree: 0%
 
 AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att implementera Adobe Analytics. Men Tag Management Systems blir allt populärare med [taggar i Adobe Experience Platform](../launch/overview.md) rekommenderas.
 
-## Övergripande arbetsflöde för att skicka data till Adobe med JavaScript
+Översikt över implementeringsuppgifterna:
 
-1. Läs in `AppMeasurement.js` -fil. Den här filen innehåller de bibliotek som krävs för att skicka data till Adobe.
+![Implementera Adobe Analytivs med AppMeasurement - översikt](../assets/appmeasurement-annotated.png)
 
-   ```html
-   <script src="AppMeasurement.js"></script>
-   ```
+<table>
+<tr>
+<td></td><td> <b>Uppgift</b></td><td><b>Mer information</b></td>
+</tr>
 
-2. Definiera konfigurationsvariabler i `AppMeasurement.js`. När Analytics-objektet instansieras ser dessa variabler till att datainsamlingsinställningarna är korrekta. Se [Konfigurationsvariabler](../vars/config-vars/configuration-variables.md) om du vill ha en fullständig lista med variabler som du kan definiera.
+<tr>
+<td>1</td><td>Se till att du har <b>har definierat en rapportserie</b></td><td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+</tr>
 
-   ```js
-   // Instantiate the Analytics tracking object with report suite ID
-   var s_account = "examplersid";
-   var s=s_gi(s_account);
-   // Make sure data is sent to the correct location
-   s.trackingServer = "example.data.adobedc.net";
-   ```
+<tr>
+<td>2</td><td><b>Hämta den JavaScript-kod som krävs för AppMeasurement</b> från Code Manager. Zippa upp filen.</td><td><a href="../../admin/admin/code-manager-admin.md">Kodhanteraren</a></td>
+</tr>
 
-3. Definiera sidnivåvariabler i webbplatsens sidkod. Variablerna avgör vilka mått och mätvärden som skickas till Adobe. Se [Sidvariabler](../vars/page-vars/page-variables.md) om du vill ha en fullständig lista med variabler som du kan definiera.
+<tr>
+<td>3</td><td><b>Lägg till <code>AppMeasurement.js</code> till webbplatsens mallfil</b>. Koden innehåller de bibliotek som krävs för att skicka data till Adobe.
 
-   ```js
-   s.pageName = "Example page";
-   s.eVar1 = "Example eVar";
-   s.events = "event1";
-   ```
+```html
+<head>
+  <script src="AppMeasurement.js"></script>
+  …
+</head>
+```
 
-4. När alla sidnivåvariabler är definierade skickar du data till Adobe med `t()` -metod. Se [t](../vars/functions/t-method.md) för mer information.
+</td><td></td>
+</tr>
 
-   ```js
-   s.t();
-   ```
+<tr>
+<td>4</td><td><b>Definiera konfigurationsvariabler i <code>AppMeasurement.js</code></b>. När Analytics-objektet instansieras ser dessa variabler till att datainsamlingsinställningarna är korrekta.
+
+```JavaScript
+// Instantiate the Analytics tracking object with report suite ID
+var s_account = "examplersid";
+var s=s_gi(s_account);
+ 
+// Make sure data is sent to the correct tracking server
+s.trackingServer = "example.data.adobedc.net";
+```
+
+</td><td><a href="../vars/config-vars/configuration-variables.md">Konfigurationsvariabler</a></td>
+</tr>
+
+<tr>
+<td>5</td><td><b>Definiera sidnivåvariabler i webbplatsens sidkod</b>. Variablerna avgör vilka mått och mätvärden som skickas till Adobe.
+
+```js
+s.pageName = "Example page";
+s.eVar1 = "Example eVar";
+s.events = "event1";
+```
+
+</td><td><a href="../vars/page-vars/page-variables.md">Sidvariabler</a></td>
+</tr>
+
+<tr>
+<td>6</td><td><b>Skicka data till Adobe med <code>t()</code> method</b>, när alla sidvariabler är definierade.
+
+```js
+s.t();
+```
+
+</td><td><a href="../vars/functions/t-method.md">t(), metod</a></td>
+</tr>
+
+<tr>
+<td>7</td><td><b>Utöka och validera implementeringen</b> innan det går till produktion.</b></td><td></td>
+</tr>
+
+</table>
+
+## Ytterligare resurser
+
+- [Variabler, funktioner, metoder och plugin-program - översikt](../vars/overview.md)

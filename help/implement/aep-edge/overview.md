@@ -1,8 +1,7 @@
 ---
 title: Implementera Adobe Analytics med Adobe Experience Platform Edge
 description: Översikt över hur du använder XDM-data från Experience Platform i Adobe Analytics
-exl-id: 7d8de761-86e3-499a-932c-eb27edd5f1a3
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 97e2cefbd8959f088d5f6e9923cad47b5414f38b
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
