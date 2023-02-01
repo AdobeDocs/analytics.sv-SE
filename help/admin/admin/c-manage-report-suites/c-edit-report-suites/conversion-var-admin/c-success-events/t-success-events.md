@@ -3,10 +3,10 @@ description: Steg som beskriver hur du konfigurerar lyckade händelser.
 title: Konfigurera slutförda händelser
 feature: Event
 exl-id: 0e9a6d8f-2ce7-4551-885d-bd77ff131da0
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 3f5834bb8a6460acacc806839a6d9ae45b2e7afd
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 8%
+source-wordcount: '242'
+ht-degree: 10%
 
 ---
 
@@ -32,7 +32,15 @@ Steg som beskriver hur du konfigurerar lyckade händelser.
 1. I **[!UICONTROL Polarity]** anger du om en uppåtgående trend för det här måttet är bra eller dåligt.
 1. I **[!UICONTROL Visibility]** kan du dölja standardvärden (inbyggda), anpassade händelser och inbyggda händelser i Menu, Metric Selectors, Calculated Metrics Builder och Segment Builder.
 
-   Den här inställningen påverkar inte datainsamlingen för det mätvärdet eller händelsen. påverkar bara synligheten i användargränssnittet. [Mer...](/help/admin/admin/metric-visibility.md)
+   Den här inställningen påverkar inte datainsamlingen för det mätvärdet eller händelsen. påverkar bara synligheten i användargränssnittet enligt följande:
+
+
+   | Inställning | Synlig i | Inte synlig i |
+   |---------|----------|---------|
+   | [!UICONTROL **Synlig överallt**] | <ul><li>Rapporter och analyser (meny- och mätväljare)</li><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | Ej tillämpligt |
+   | [!UICONTROL **Builders**] | <ul><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | <ul><li>Rapporter och analyser (meny- och mätväljare)</li><li>Analysis Workspace</li></ul> |
+   | [!UICONTROL **Dold överallt**] | Ej tillämpligt | <ul><li>Rapporter och analyser (meny- och mätväljare)</li><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> |
+
 1. Ange en beskrivning.
 1. Kontrollera om händelsen alltid ska spelas in.
 1. Aktivera eller inaktivera deltagarstatistik.
