@@ -2,7 +2,7 @@
 title: Implementera Adobe Analytics med AppMeasurement for JavaScript
 description: Lär dig hur du implementerar Adobe Analytics med JavaScript utan ett tagghanteringssystem.
 feature: Implementation Basics
-source-git-commit: 97e2cefbd8959f088d5f6e9923cad47b5414f38b
+source-git-commit: 93e16a538d6dc05c9cbf0703664aa5320f45b731
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 7%
@@ -18,8 +18,9 @@ AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att
 ![Implementera Adobe Analytivs med AppMeasurement - översikt](../assets/appmeasurement-annotated.png)
 
 <table>
+
 <tr>
-<td></td><td> <b>Uppgift</b></td><td><b>Mer information</b></td>
+<th style="width:5%"></th><th><b>Uppgift</b></th><th><b>Mer information</b></th>
 </tr>
 
 <tr>
