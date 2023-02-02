@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: f941326a3e2bc510891371f2dad658c1b23bece2
+source-git-commit: 7adcd3698416e0591dba1faa841ac3b4273a5562
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1247'
 ht-degree: 1%
 
 ---
@@ -13,27 +13,23 @@ ht-degree: 1%
 
 Klienttips är individuell information om en användares enhet. De tillhandahålls av Chromium-webbläsare som Google Chrome och Microsoft Edge. För dessa webbläsare kommer klienttipsen gradvis att ersätta användaragenten som källa för enhetsinformation. Adobe Analytics uppdaterar sin enhetssökningsprocess så att den använder klienttips utöver användaragenten för att fastställa enhetsinformation.
 
+## Klienttips för låg entropi och hög entropi
+
 Google delar upp klienttips för User-Agent i två kategorier: Tips för låg entropi och hög entropi.
 
 * **Tips för låg entropi** innehåller mer allmän information om enheter. Dessa tips tillhandahålls automatiskt av Chromium-webbläsare.
 
 * **Hög entropi** Tipsen innehåller mer detaljerad information. Tipsen är bara tillgängliga på begäran. Både AppMeasurement och Web SDK kan konfigureras för att begära tips för hög entropi. Som standard gör båda biblioteken **not** begär tips för entropi.
 
->[!NOTE]
->
->Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från och med 16 februari 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men det kommer inte att användas i enhetssökning förrän i mitten av februari. Så som anges nedan var operativsystemsversionen fryst från och med oktober men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en)) uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
+Från och med oktober 2022 började nya versioner av Chromium-webbläsare&quot;frysa&quot; operativsystemversionen som representerades i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
 
->[!NOTE]
->
->Från och med oktober 2022 började nya versioner av Chromium-webbläsare&quot;frysa&quot; operativsystemversionen som representerades i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
+Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från och med 16 februari 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men det kommer inte att användas i enhetssökning förrän i mitten av februari. Så som anges nedan var operativsystemsversionen fryst från och med oktober men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en)) uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
 
 >[!NOTE]
 >
 > Från och med januari 2023 är vissa versioner av Mac och Windows felaktigt representerade i användaragenten, men korrekt representerade i klienttips med hög entropi. Se [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en) för mer information.
 
->[!NOTE]
->
->AAM kräver att hög entropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till AAM](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med höga entropi-tips.
+AAM kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till AAM](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med tips för entropi.
 
 ## Frågor och svar
 
