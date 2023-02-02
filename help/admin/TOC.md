@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 01c7fbc8c06bf88e32f198ee5e23d00ba3e6128b
+source-git-commit: 709483bd7a4573004100c9508f5bd78f1f3f253e
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '610'
 ht-degree: 78%
 
 ---
@@ -42,7 +42,6 @@ ht-degree: 78%
    + [Standardmått](admin/default-metrics.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Loggar](admin/logs.md)
-   + [Inställningshanteraren](admin/preferences-manager.md)
    + [Sekretessrapportering](admin/privacy-reporting.md)
    + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
    + [Schemalagd rapportkö](admin/scheduled-reports-admin.md)
@@ -136,7 +135,6 @@ ht-degree: 78%
             + [Översikt](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-management.md)
             + [Schemalägg spike](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)
             + [Permanent trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
-         + [Inställningar för enskild rapportsvit](admin/c-manage-report-suites/c-edit-report-suites/individual-rs-settings.md)
          + [Apphantering](admin/c-manage-report-suites/c-edit-report-suites/mobile-management.md)
          + Realtidsrapporter {#real-time-reports}
             + [Översikt över realtidsrapporter](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
@@ -144,14 +142,15 @@ ht-degree: 78%
             + [Mätvärden och dimensioner som stöds i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md)
    + Företagsinställningar {#company-settings}
       + [Översikt över företagsinställningar](admin/company/c-company-settings.md)
-      + [Åtkomstnivåer](admin/company/feature-access-levels.md)
+      + [Säkerhetshanteraren](admin/company/security-manager.md)
       + [Webbtjänster](admin/company/web-services-admin.md)
       + [Report Builder-rapporter](admin/company/report-builder-reports-admin.md)
       + [Enkel inloggning](admin/company/single-signon-admin.md)
-      + [Väntande åtgärder](admin/company/pending-actions-admin.md)
       + [Samprofilering](admin/company/co-branding-admin.md)
       + [Dölj rapportsviter](admin/company/c-hide-report-suites.md)
-      + [Säkerhetshanteraren](admin/company/security-manager.md)
+      + [Inställningshanteraren](admin/company/preferences-manager.md)
+      + [Väntande åtgärder](admin/company/pending-actions-admin.md)
+      + [Åtkomstnivåer](admin/company/feature-access-levels.md)
    + [Videohantering](admin/video-management.md)
    + Användning av serversamtal {#server-call-usage}
       + [Översikt över användningen av serversamtal](admin/c-server-call-usage/overage-overview.md)
