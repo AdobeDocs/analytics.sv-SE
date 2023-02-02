@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Enhetsövergripande analys.
-source-git-commit: bc8f87c42ca481382b603413088faa9a71ab01f1
+source-git-commit: 24ae07993e8f51b8220f817873fbd8dc1df70cda
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '699'
 ht-degree: 49%
 
 ---
@@ -259,6 +259,7 @@ ht-degree: 49%
    + [Underklassificeringar](classifications/c-sub-classifications.md)
    + [Vanliga frågor om klassificeringar](classifications/faq.md)
 + [Kalenderhändelser](t-calendar-event.md)
++ [Schemalagd rapportkö](scheduled-reports-admin.md)
 + Rapporter i realtid {#real-time-reporting}
    + [Översikt över rapporter i realtid](c-real-time-reporting/realtime.md)
    + [Konfigurera realtidsrapporter](c-real-time-reporting/t-realtime-admin.md)

@@ -4,7 +4,7 @@ subtopic: Users and groups
 title: Hantering av användare och produkter
 feature: Admin Tools
 exl-id: c0fbbb3a-0011-49d2-89a2-70fce11e0fb2
-source-git-commit: 4ed166bb05d8dfb32706008ad23c13f61908d1e9
+source-git-commit: 24ae07993e8f51b8220f817873fbd8dc1df70cda
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 6%
@@ -17,7 +17,7 @@ Hantera Analytics-användare, -grupper och -produkter i Adobe Admin Console.
 
 >[!IMPORTANT]
 >
->Hanteringen av användare och produkter har flyttats till [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Information om hur du börjar hantera användarbehörigheter för Adobe Analytics-användare finns i [Analyser i Adobe Admin Console][/help/admin/admin-console/home.md].
+>Hanteringen av användare och produkter har flyttats till [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html). Information om hur du börjar hantera användarbehörigheter för Adobe Analytics-användare finns i [Analyser i Adobe Admin Console](/help/admin/admin-console/home.md).
 
 ## Hjälpresurser för Adobe Admin Console-administratörer {#section_C13BBB89E4F248F193358BB3A59DD502}
 

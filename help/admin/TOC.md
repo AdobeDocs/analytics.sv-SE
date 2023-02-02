@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 709483bd7a4573004100c9508f5bd78f1f3f253e
+source-git-commit: 24ae07993e8f51b8220f817873fbd8dc1df70cda
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '607'
+ht-degree: 78%
 
 ---
 
@@ -42,9 +42,7 @@ ht-degree: 0%
    + [Standardmått](admin/default-metrics.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Loggar](admin/logs.md)
-   + [Sekretessrapportering](admin/privacy-reporting.md)
    + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
-   + [Schemalagd rapportkö](admin/scheduled-reports-admin.md)
    + Report Suite-hanterare {#manage-report-suites}
       + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
       + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
@@ -136,6 +134,7 @@ ht-degree: 0%
             + [Schemalägg spike](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)
             + [Permanent trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
          + [Apphantering](admin/c-manage-report-suites/c-edit-report-suites/mobile-management.md)
+         + [Sekretessrapportering](admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md)
          + Realtidsrapporter {#real-time-reports}
             + [Översikt över realtidsrapporter](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
             + [Konfiguration av rapporter i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md)
