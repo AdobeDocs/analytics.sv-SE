@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Administratörshandbok
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 24ae07993e8f51b8220f817873fbd8dc1df70cda
+source-git-commit: e6cef6e77f5418b026830848b6c0fc3347aa6033
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 78%
@@ -134,6 +134,7 @@ ht-degree: 78%
             + [Schemalägg spike](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)
             + [Permanent trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
          + [Apphantering](admin/c-manage-report-suites/c-edit-report-suites/mobile-management.md)
+         + [Mediehantering](admin/c-manage-report-suites/c-edit-report-suites/media-management.md)
          + [Sekretessrapportering](admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md)
          + Realtidsrapporter {#real-time-reports}
             + [Översikt över realtidsrapporter](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
@@ -150,7 +151,6 @@ ht-degree: 78%
       + [Inställningshanteraren](admin/company/preferences-manager.md)
       + [Väntande åtgärder](admin/company/pending-actions-admin.md)
       + [Åtkomstnivåer](admin/company/feature-access-levels.md)
-   + [Videohantering](admin/video-management.md)
    + Användning av serversamtal {#server-call-usage}
       + [Översikt över användningen av serversamtal](admin/c-server-call-usage/overage-overview.md)
       + [Visa aktuell användning av serversamtal](admin/c-server-call-usage/server-call-usage-dashboard.md)
