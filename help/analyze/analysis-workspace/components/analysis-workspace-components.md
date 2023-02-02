@@ -19,7 +19,7 @@ Klicka på knappen **[!UICONTROL Components]** ikonen i den vänstra listen. Du 
 
 ![](assets/component-overview.png)
 
-Du kan också justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
+Du kan även justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
 
 ## Mått {#dimensions}
 
