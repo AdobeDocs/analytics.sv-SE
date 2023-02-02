@@ -4,9 +4,9 @@ subtopic: Classifications
 title: Trafikklassificeringar
 feature: Admin Tools
 exl-id: 320d7dcb-7fb7-4360-96dd-d2d5bd0bfdd5
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '166'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ t_classification_add_traffic.xml
 
  -->
 
-Steg som beskriver hur du lägger till eller redigerar klassificeringar för de valda rapportsviterna.
+Så här lägger du till eller redigerar klassificeringar för de valda rapportsviterna:
 
 1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** i rubriken Suite.
 1. Välja en rapportsvit.

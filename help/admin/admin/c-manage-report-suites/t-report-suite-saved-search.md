@@ -3,16 +3,16 @@ description: Steg som beskriver hur du definierar en uppsättning villkor som be
 title: Spara en sökning i en rapportsvit
 feature: Report Suite Settings
 exl-id: 67744e7f-7f78-46c6-9faf-4d410f2deec8
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 14%
+source-wordcount: '71'
+ht-degree: 15%
 
 ---
 
 # Spara en sökning i en rapportsvit
 
-Steg som beskriver hur du definierar en uppsättning villkor som bestämmer medlemmarna i en rapportsvitssökning.
+Så här definierar du en uppsättning villkor som bestämmer medlemmarna i en rapportsvitssökning:
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Klicka på **[!UICONTROL Add]** (bredvid [!UICONTROL Saved Searches] rubrik.

@@ -5,9 +5,9 @@ uuid: c2e81c6c-bfe9-4457-8b5d-512255ca9711
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 5a098b38-0939-4dd2-9a05-1b6b678f2d50
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 {{ra-eol}}
 
-Steg som beskriver hur du anpassar diagrammet så att det är mest användbart för den avsedda målgruppen.
+Du kan anpassa diagrammet så att det passar den avsedda målgruppen bäst.
 
 Vilken typ av diagram som är tillgängliga beror på vilken typ av rapport du kör. Trend Line-diagram är till exempel användbara för trendrapporter, men du kan också använda ett vertikalt liggande diagram med trendlinjer som tydligt visar trender över dagar, veckor, månader osv. Du kan också välja ett cirkeldiagram om du vill visa procentvärden för de visade sidorna.
 
-**Ändra ett rapportdiagram**
+Så här ändrar du ett rapportdiagram:
 
 1. Kör en rapport.
 1. Klicka på **[!UICONTROL Configure Graph]**.

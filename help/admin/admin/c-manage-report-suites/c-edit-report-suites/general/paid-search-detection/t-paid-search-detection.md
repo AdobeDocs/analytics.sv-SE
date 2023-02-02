@@ -3,16 +3,16 @@ description: Steg som beskriver hur du konfigurerar identifiering av betald sök
 title: Konfigurera betald sökdetektering
 feature: Admin Tools
 exl-id: a602a84c-f12f-4c98-a477-f59ea993e662
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 25%
+source-wordcount: '52'
+ht-degree: 26%
 
 ---
 
 # Konfigurera betald sökdetektering
 
-Steg som beskriver hur du konfigurerar identifiering av betald sökning.
+Så här konfigurerar du betald sökidentifiering:
 
 1. Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** för att öppna [!UICONTROL Report Suite Manager].
 1. Välja en rapportsvit.

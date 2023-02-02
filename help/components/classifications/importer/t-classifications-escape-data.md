@@ -3,16 +3,16 @@ description: Steg som beskriver hur klassificeringsdata kan undvikas i klassific
 title: Avbryta klassificeringsdata
 feature: Classifications
 exl-id: 0d3a0e91-5537-43ee-bd28-9907ee6eb331
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '92'
 ht-degree: 8%
 
 ---
 
 # Avbryta klassificeringsdata
 
-Steg som beskriver hur klassificeringsdata kan undvikas i klassificeringsfilen.
+Så här undviker du klassificeringsdata i klassificeringsfilen:
 
 <!--Meike, please check this page against orginal. It might be missing information. -->
 

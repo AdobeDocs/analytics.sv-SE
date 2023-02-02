@@ -3,9 +3,9 @@ description: Klassificeringar används för att kategorisera värden i grupper o
 title: Konverteringsklassificeringar
 feature: Classifications
 exl-id: b4855000-adf3-4e3b-af36-f4803383126d
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '514'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ När du har aktiverat klassificeringar använder du [Klassificeringsimportör](/
 
 ## Lägg till konverteringsklassificeringar
 
-Steg som beskriver hur du lägger till konverteringsklassificeringar i Admin.
+Så här lägger du till konverteringsklassificeringar i Admin:
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välja en rapportsvit.

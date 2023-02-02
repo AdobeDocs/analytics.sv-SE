@@ -6,9 +6,9 @@ uuid: 380fd148-2ed9-43bf-9d42-46e373e788e4
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: abd5acf5-f743-4c94-81fb-fc6cc69e8f26
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '661'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONT
 
 ## Hantera delade instrumentpaneler
 
-Steg som beskriver hur du använder alternativen för hantering av delade instrumentpaneler.
+Så här hanterar du delade instrumentpaneler:
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Dashboards]**.
 1. Under [!UICONTROL Shared Dashboards], leta reda på den delade kontrollpanelen (eller den äldre kontrollpanelen) som du vill hantera och välj ett eller flera av följande alternativ:
@@ -92,7 +92,9 @@ När du kopierar den äldre kontrollpanelen öppnas den äldre kontrollpanelen f
 
 ## Dela en kontrollpanel
 
-Steg som beskriver hur en administratör kan dela (eller överföra) en kontrollpanel till flera användare. När du skickar kontrollpaneler till användare blir kontrollpanelerna tillgängliga i användarens [!UICONTROL Shared Dashboards] -menyn.
+Analysadministratörer kan dela (eller pusha) en kontrollpanel med flera användare. När du skickar kontrollpaneler till användare blir kontrollpanelerna tillgängliga i användarens [!UICONTROL Shared Dashboards] -menyn.
+
+Så här delar du en kontrollpanel med flera användare:
 
 1. I [!UICONTROL Dashboard Manager], leta upp kontrollpanelen och aktivera **[!UICONTROL Shared]**.
 1. Klicka på **[!UICONTROL Push To Users]**.  ![](assets/push.png)
@@ -110,18 +112,3 @@ I [!UICONTROL Dashboard Manager]kan du se om en kontrollpanel är schemalagd fö
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Send]**.
 
    Se [Schemaläggning och distribution](/help/analyze/reports-analytics/scheduling.md) för mer information.
-
-## Arkivera en kontrollpanel
-
->[!NOTE]
->
->Den här funktionen kommer inte längre att vara tillgänglig i januari 2020.
-
-Steg som beskriver hur du arkiverar skickade kontrollpaneler som en PDF-fil. Den arkiverade filen lagras i två år, eller tills du når en gräns på 4 GB för arkiverade rapporter, beroende på vilket som inträffar först.
-
-1. Öppna en instrumentpanel.
-1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Send]**.
-1. I [!UICONTROL Email Report] grupp, aktivera **[!UICONTROL Archive]**.
-1. Ange leveransalternativ och klicka sedan på **[!UICONTROL Send]**.
-
-   Du kan visa arkiverade instrumentpaneler i Dashboard Manager. Du kan även öppna en kontrollpanel och klicka på **[!UICONTROL More]** > **[!UICONTROL View Archive]**.

@@ -4,13 +4,13 @@ title: Implementera Activity Map
 feature: Activity Map
 role: User, Admin
 exl-id: d7ca35df-8fbe-4e87-b1e9-e1a77d5f420f
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '40'
 ht-degree: 0%
 
 ---
 
 # Implementera Activity Map
 
-Activity Map kan implementeras med en kryssruta i Adobe Analytics-taggtillägget för, under [Länkspårning](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+Activity Map kan implementeras med en kryssruta i Adobe Analytics-taggtillägget under [Länkspårning](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).

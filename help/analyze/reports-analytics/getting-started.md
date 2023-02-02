@@ -4,9 +4,9 @@ title: Komma igång med Reports and Analytics
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 7bd8f28c-2b7a-4220-bd82-1e43edc2c0cd
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Innan du använder Rapporter och analyser bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 
 >[!IMPORTANT]
->Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som ligger till grund för rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
 
 Rapportering ger insikter om era traditionella webbaserade kanaler och om de kanaler som utvecklas, som mobiler, video och sociala nätverk. Några exempel på rapporter är:
 
@@ -44,7 +44,7 @@ Innan du får åtkomst till gränssnittet bör du samarbeta med din kontoansvari
 
 ## Logga in med Experience Cloud
 
-Steg som beskriver hur du loggar in via Adobe Experience Cloud.
+Så här loggar du in via Adobe Experience Cloud:
 
 1. Starta en webbläsare på en dator med åtkomst till Internet.
 1. Gå till [!DNL https://login.experiencecloud.adobe.com/].
@@ -62,7 +62,7 @@ Steg som beskriver hur du loggar in via Adobe Experience Cloud.
 
 ## Köra en rapport
 
-Steg som beskriver hur en rapport genereras.
+Så här skapar du en rapport:
 
 1. Logga in på [!UICONTROL Reports & Analytics].
 
@@ -93,7 +93,9 @@ Alla användare har åtkomst till [!UICONTROL Account Information] sida. Följan
 
 ## Ändra gränssnittsspråk
 
-Steg som beskriver hur gränssnittsspråket ändras. Du kan visa Reports and Analytics-gränssnittet på det språk du vill.
+Du kan ändra gränssnittsspråket. Du kan visa Reports and Analytics-gränssnittet på det språk du vill.
+
+Så här ändrar du gränssnittsspråk:
 
 1. Logga in på Analytics och välj **[!UICONTROL Reports]** -fliken.
 1. Klicka på det aktiva språket i sidfoten **[!UICONTROL Language]** väljer du sedan det språk du vill använda.

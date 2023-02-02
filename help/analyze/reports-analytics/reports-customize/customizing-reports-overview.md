@@ -5,9 +5,9 @@ uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 5a042fac-926e-4560-83bf-11f66ddb8273
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '846'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ När du har kört en rapport kan du anpassa rapporten för att visa och analyser
 
 ## Skapa en anpassad rapport {#task_BA6EACA3039C40AEA5605E1D8C76E646}
 
-Steg som beskriver hur du sparar en rapports aktuella konfiguration som en ny anpassad rapport som alla användare kan se.
+Du kan spara en rapports aktuella konfiguration som en ny anpassad rapport som alla användare kan se.
 
 <!-- 
 
@@ -30,7 +30,7 @@ t_reports_custom.xml
 
 Endast administratörer kan skapa en anpassad rapport. När du skapar en anpassad rapport läggs den till på huvudrapporteringsmenyn bredvid den rapport som den baseras på.
 
-**Skapa en anpassad rapport**
+Så här skapar du en anpassad rapport:
 
 1. Kör en rapport och konfigurera den efter behov.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Create Custom Report]**.
@@ -45,7 +45,7 @@ Endast administratörer kan skapa en anpassad rapport. När du skapar en anpassa
 
 ## Välj ett datum eller datumintervall {#task_9BEF7D4D839A4748B76E8500D1406C34}
 
-Steg som beskriver hur varmt det är att använda väljer du tidsperioder för rapportdata.
+Du kan välja tidsperioder för rapportdata.
 
 <!-- 
 
@@ -57,7 +57,7 @@ Du kan välja specifika dagar, veckor, månader eller år. Du kan också köra j
 
 När du öppnar en kontrollpanel med rapporter som har olika datumintervall kan du välja ett nytt datumintervall i kalendern. Ändringarna gäller för alla rapporter på kontrollpanelen.
 
-**Välj ett datumintervall**
+Så här väljer du ett datumintervall:
 
 1. Kör en rapport.
 1. Klicka på kalenderikonen högst upp till höger.
@@ -76,7 +76,7 @@ När du öppnar en kontrollpanel med rapporter som har olika datumintervall kan 
 
 ## Jämför datum {#task_95155C3700774B709F5FB81AE96B0824}
 
-Steg som beskriver hur du kan använda kalendern för att köra datumjämförelser mellan rankade rapporter.
+Du kan använda kalendern för att köra datumjämförelser mellan rankade rapporter.
 
 <!-- 
 
@@ -100,7 +100,7 @@ Så här jämför du datum mellan rankade rapporter i Rapporter och analyser:
 
 ## Visa ett procentvärde som ett diagram {#task_BC28CA19A4834AF6BFE68B5B5AEFE75D}
 
-Steg som beskriver hur du anger om procentandelen i en rapporttabell ska visas som ett diagram.
+Du kan ange om procentandelen i en rapporttabell ska visas som ett diagram.
 
 <!-- 
 
@@ -110,12 +110,12 @@ t_reports_graph_percent.xml
 
 Den här visualiseringen är även tillgänglig i rapportlets på kontrollpanelen.
 
+Så här visar du procentandelen som ett diagram i en rapporttabell:
+
 1. Kör en rapport som stöder procentsatser, till exempel en [!UICONTROL Pages Report].
 1. Klicka på **[!UICONTROL Percent Shown As: Graph]**.
 
 ## Normalisera rapportdata {#task_8005B55E59BD479DA67BC618FF8BC94A}
-
-Steg som beskriver hur rapportdata normaliseras.
 
 <!-- 
 
@@ -125,7 +125,7 @@ t_reports_normalize.xml
 
 När du har kört en rapport med jämförda datum, eller för A/B-jämförelser, kan du normalisera data för att visa procentandelen av förändring mellan rapporterna. Den sekundära datauppsättningen justeras för att kompensera för skillnader i antalet valda dagar eller för olika trafikvolymer.
 
-**Så här normaliserar du rapportdata**
+Så här normaliserar du rapportdata:
 
 1. Kör en rapport som stöder datumjämförelser.
 1. Klicka **[!UICONTROL Compare Dates]** anger du sedan din datumjämförelse.
@@ -134,7 +134,7 @@ När du har kört en rapport med jämförda datum, eller för A/B-jämförelser,
 
 ## Välj en sida för en rapport {#task_5CAC3B76BD4C4208B8D53DD972D4771F}
 
-Steg som beskriver hur du väljer en viss sida på sidorna på webbplatsen för en rapport.
+Så här väljer du en viss sida på webbplatsens sidor för en rapport:
 
 <!-- 
 
@@ -150,7 +150,7 @@ t_reports_select_page.xml
 
 ## Jämför rapportsviter {#task_6BEBEB2D4F36497C9DA5B18ADAD35546}
 
-Steg som beskriver hur du visar rapporter från två rapportsviter i samma rapport.
+Du kan visa rapporter från två rapportsviter i samma rapport.
 
 <!-- 
 
@@ -172,7 +172,7 @@ Förutom den grafiska visningen ger tabellen i rapporten en procentuell jämför
 * Målgrupp
 * Undersökning
 
-**Jämför rapportsviter**
+Så här jämför du rapportsviter:
 
 1. Generera en rapport som gör att du kan jämföra rapporter.
 1. Klicka på **[!UICONTROL Compare to Site]** länk.
@@ -181,7 +181,7 @@ Förutom den grafiska visningen ger tabellen i rapporten en procentuell jämför
 
 ## Ange rapportgranularitet {#task_7ED3EEC9E1704A918B25D06ADA3412E0}
 
-Steg som beskriver hur rapportsummorna ska visas per timme, dag, varje vecka, varje månad, varje kvartal eller varje år.
+Du kan visa rapportsummorna varje timme, dag, vecka, månad, kvartal eller år.
 
 <!-- 
 
@@ -191,14 +191,14 @@ t_reports_granularity.xml
 
 Rapportens tidsperiod avgör vilka granularitetsalternativ som är tillgängliga. Du kan till exempel bara markera **[!UICONTROL Hourly]** om du har en eller två dagars tidsram markerad. Du kan bara välja **[!UICONTROL Yearly]** granularitet om du har valt mer än ett år.
 
-**Ange rapportgranularitet**
+Så här anger du rapportgranularitet:
 
 1. Generera en trendrapport, till exempel **[!UICONTROL Site Content]** > **[!UICONTROL Pages.]**
 1. Klicka på **[!UICONTROL View by]** klicka på en granularitet.
 
 ## Kör en veckodagsrapport {#task_67CC818ACC3749839B69BDB2ED9AE6B8}
 
-Steg som beskriver hur rapporter ska köras på en viss veckodag, till exempel för varje måndag i ett visst datumintervall.
+Du kan köra rapporter på en viss veckodag, till exempel för varje måndag i ett visst datumintervall.
 
 <!-- 
 
@@ -207,6 +207,8 @@ t_reports_day_of_week.xml
  -->
 
 Den här funktionen gäller endast för trendrapporter som filtrerats med datumintervallet Vecka eller Dag.
+
+Så här kör du en veckodagsrapport:
 
 1. Kör en trendrapport över ett angivet datumintervall.
 1. Klicka på **[!UICONTROL Day of Week]** och klicka sedan på en dag.

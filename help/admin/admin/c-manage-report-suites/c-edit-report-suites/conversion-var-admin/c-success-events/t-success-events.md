@@ -3,16 +3,16 @@ description: Steg som beskriver hur du konfigurerar lyckade händelser.
 title: Konfigurera slutförda händelser
 feature: Event
 exl-id: 0e9a6d8f-2ce7-4551-885d-bd77ff131da0
-source-git-commit: 3f5834bb8a6460acacc806839a6d9ae45b2e7afd
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '238'
 ht-degree: 10%
 
 ---
 
 # Konfigurera slutförda händelser
 
-Steg som beskriver hur du konfigurerar lyckade händelser.
+Så här konfigurerar du lyckade händelser:
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välja en rapportsvit.

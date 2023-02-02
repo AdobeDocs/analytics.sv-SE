@@ -5,9 +5,9 @@ uuid: b6dcaaf7-61f0-4793-870d-e1d156575d5a
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 232c6f69-40bf-487a-8621-d1d7d633681f
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '632'
 ht-degree: 2%
 
 ---
@@ -141,7 +141,7 @@ Med Avancerat kan du utföra jokertecken och andra komplexa sökningar.
 
 ## Skapa rapportspecifika filter {#task_DEBB0632411D4CA8AA0B3BA267A5B35F}
 
-Steg som beskriver hur du skapar filter för rapporter.
+Du kan skapa filter för rapporter.
 
 <!-- 
 
@@ -153,7 +153,7 @@ Vissa rapporter innehåller ett filter som är specifikt för den rapporten. Til
 
 När du använder dessa filter kan du visa rapportvärden för de objekt som anges i listan.
 
-**Skapa rapportspecifika filter**
+Så här skapar du rapportspecifika filter:
 
 1. Generera en rapport, till exempel en [!UICONTROL Purchase Report] ( **[!UICONTROL Site Metrics]** > **[!UICONTROL Purchases]** > **[!UICONTROL Purchase Conversion Funnel]**).
 1. Klicka på **[!UICONTROL Filter]** länk.
@@ -162,8 +162,6 @@ När du använder dessa filter kan du visa rapportvärden för de objekt som ang
 1. Klicka på **[!UICONTROL OK]**.
 
 ## Lägg till ett korrelationsfilter {#task_065042E384DA4BF3864C58AF2B88D6E2}
-
-Steg som beskriver hur du lägger till ett korrelationsfilter.
 
 <!-- 
 
@@ -175,7 +173,7 @@ I vissa rapporter kan du lägga till anpassade korrelationsfilter. Om du till ex
 
 Du kan filtrera data som visas i en korrelationsrapport med hjälp av valfri tillgänglig korrelation. Exemplet här visar hur du lägger till ett korrelationsfilter för sökmotor.
 
-**Lägga till ett korrelationsfilter**
+Så här lägger du till ett korrelationsfilter:
 
 1. Kör en rapport som stöder korrelationer. (Se [Köra en fördelningsrapport](/help/analyze/reports-analytics/reports-customize/breakdowns.md#task_F685624830E64C829C8BE6435A107F69).)
 1. Klicka på **[!UICONTROL Correlation Filter]** länk.

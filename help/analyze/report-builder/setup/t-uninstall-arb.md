@@ -5,16 +5,16 @@ uuid: 3fade973-e246-4fcb-abc1-0aafddca0536
 feature: Report Builder
 role: User, Admin
 exl-id: 8196d5e2-acf3-4bac-a993-d1b7301214c9
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 9%
+source-wordcount: '111'
+ht-degree: 8%
 
 ---
 
 # Avinstallera Report Builder
 
-Steg som beskriver hur du avinstallerar Adobe Report Builder.
+Så här avinstallerar du Adobe Report Builder.
 
 1. Kontrollera att Microsoft Excel är stängt.
 1. Klicka på **[!UICONTROL Start]** > **[!UICONTROL Control Panel]**.
@@ -24,5 +24,5 @@ Steg som beskriver hur du avinstallerar Adobe Report Builder.
 
    Om du vill ta bort alla filer och mappar helt från katalogen Program Files följer du de här stegen när du har avinstallerat Report Builder:
 1. Klicka på **[!UICONTROL Start]** > **[!UICONTROL Computer]**.
-1. Navigera till [!DNL C:\Program Files\Adobe\]eller, om du använder en 64-bitarsversion av Windows, [!DNL C:\Program Files (x86)\Adobe.]
+1. Navigera till [!DNL C:\Program Files\Adobe\] eller, om du har en 64-bitarsversion av Windows, [!DNL C:\Program Files (x86)\Adobe.]
 1. Ta bort mappen Report Builder i den här katalogen, om den fortfarande finns där.

@@ -6,9 +6,9 @@ uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: ec59d365-f294-41da-ae36-3b4ebe64ab23
-source-git-commit: e589a26627a24da693fd3724e2078148412c71cc
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1718'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Dessutom finns det ett antal andra faktorer som ytterligare kan öka fördröjni
 
 ## Skicka en rapport {#task_27642CD33D484FD0BF59EBD159EEF52C}
 
-Steg som beskriver hur du laddar ned och skickar rapporter via e-post i en mängd olika format och schemalägger en leveransrapport.
+Så här laddar du ned och mejlar rapporter i en mängd olika format och schemalägger en leveransrapport:
 
 1. Kör en rapport och klicka sedan på **[!UICONTROL More]** > **[!UICONTROL Send]**.
 1. Ange leveransalternativ:
@@ -78,7 +78,7 @@ Steg som beskriver hur du laddar ned och skickar rapporter via e-post i en mäng
 
 ## Skriva ut en rapport {#task_0F7CF6D6ED54462CAE4A793E271AF7E5}
 
-Steg som beskriver hur du skriver ut en rapport.
+Så här skriver du ut en rapport:
 
 1. Kör en rapport.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Print]**.  ![](assets/print.png)
@@ -115,11 +115,11 @@ The [!UICONTROL Schedule Report Manager] visar de objekt som en viss användare 
 
 ## Dela en rapportlänk {#task_9711DDE9E140451B8C914EC5513E21EC}
 
-Steg som beskriver hur du delar en rapport genom att generera en rapportlänk (URL) som ska skickas till en annan användare.
+Du kan dela en rapport genom att generera en rapportlänk (URL) som ska skickas till en annan användare.
 
 När mottagaren klickar på länken begär systemet inloggningsuppgifter (företagsnamn, användarnamn och lösenord). När du har loggat in visas den rapport som genererats av den ursprungliga användaren. Standardbehörighetsbegränsningar gäller.
 
-Om du vill dela en rapportlänk
+Så här delar du en rapportlänk:
 
 1. Kör en rapport.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Link to This Report]**.

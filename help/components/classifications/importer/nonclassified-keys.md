@@ -3,9 +3,9 @@ description: Ej klassificerade nycklar grupperas i klassificeringsrapporter som 
 title: Ej klassificerade nycklar
 feature: Classifications
 exl-id: 37288c2d-f6f6-4343-87a1-3c3a7b56fe32
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '241'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ t_rename_classification_none.xml
 
  -->
 
-Steg som beskriver hur du byter namn på en icke-klassificerad nyckel som visas som *`none`* vid rapportering.
+Byta namn på en icke-klassificerad nyckel som visas som *`none`* i rapporter:
 
 1. Exportera klassificeringar till en lokal fil med hjälp av importeraren.
 1. Lägg till en rad i filen och skriv `~none~` i kolumnen Key.

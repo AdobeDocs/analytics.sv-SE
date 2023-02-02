@@ -4,9 +4,9 @@ title: Översikt över rapporter och analysstatistik
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: ea7a59f3-5a5e-48b2-ae0c-ebc5ec34cd63
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ En fullständig lista över mätvärden finns på [Översikt över mätvärden](
 
 ## Välj standardrapportmått
 
-Steg som beskriver hur du väljer standardmått på rapportnivå.
+Så här väljer du standardmått på rapportnivå:
 
 <!-- 
 

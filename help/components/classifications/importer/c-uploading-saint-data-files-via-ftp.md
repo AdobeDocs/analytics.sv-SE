@@ -3,9 +3,9 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: 5edf3e6684b3572616f76db3f7c3bf0cf58ed408
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,9 @@ Steg som beskriver hur du överför datafiler via FTP.
 
 ## FTP-import {#concept_2F965BE873254546A61FB755F25299FD}
 
-Steg som beskriver hur du överför datafiler via FTP.
+Så här överför du datafiler via FTP:
 
-**[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
+1. **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 
 Följande rekommenderade gränsvärden är viktiga:
 
@@ -41,9 +41,11 @@ Skapa ett FTP-konto innan du överför data via FTP. Mer information finns i [Sk
 
 ## Importera klassificeringar via FTP {#task_132C36830B69418B8C929E39838EF01D}
 
-Steg som beskriver hur du använder ett FTP-konto för att importera klassificeringar till Adobe Analytics.
+Du kan använda ett FTP-konto för att importera klassificeringar till Adobe Analytics.
 
 Mer information om hur du skapar ett FTP-konto finns i [Skapa ett FTP-konto](/help/components/classifications/importer/c-uploading-saint-data-files-via-ftp.md#task_C019268E6C934C7C95F4326F42A22CCF).
+
+Så här importerar du klassificeringar via FTP:
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka **[!UICONTROL Import File]** och sedan klicka **[!UICONTROL FTP Import]**.

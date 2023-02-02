@@ -4,9 +4,9 @@ description: Analysis Workspace är det främsta analysverktyget för Adobe Anal
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '561'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ I ditt Workspace-projekt **paneler, tabeller, visualiseringar och komponenter** 
 
 ### Visualiseringar
 
-**Visualiseringar**, t.ex. en stapel eller ett linjediagram, läggs sedan till ovanpå data för att visuellt ge dem liv. Markera mitten längst till vänster **[!UICONTROL Visualizations]** om du vill se hela listan med [visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) tillgängliga.
+**Visualiseringar**, t.ex. en stapel eller ett linjediagram, kan användas för att visuellt ge liv åt data. Markera mitten längst till vänster **[!UICONTROL Visualizations]** om du vill se hela listan med [visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) tillgängliga.
 
 ![](assets/build-visualizations.png)
 

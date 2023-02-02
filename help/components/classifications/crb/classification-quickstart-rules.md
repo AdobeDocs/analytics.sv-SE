@@ -3,9 +3,9 @@ description: Klassificeringsreglerna söker regelbundet efter oklassificerade te
 title: Klassificeringsregler
 feature: Classifications
 exl-id: 8fe5d838-fa89-4933-a0c0-498d4e59576d
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1954'
 ht-degree: 1%
 
 ---
@@ -304,13 +304,13 @@ t_classification_rule.xml
 
  -->
 
-Steg som beskriver hur du lägger till eller redigerar en klassificeringsregel.
-
 Lägg till regler genom att matcha ett villkor med en klassificering och ange åtgärden.
 
 >[!NOTE]
 >
 >I den här proceduren måste du tillämpa reglerna på en eller flera rapportsviter. Rekommenderat antal regler per regeluppsättning är mellan 500 och 1 000, även om det inte finns några begränsningar. Om du har fler än 100 regler kan du förenkla regeluppsättningen genom att använda [underklassificeringar](/help/components/classifications/c-sub-classifications.md).
+
+Så här lägger du till eller redigerar en klassificeringsregel:
 
 1. [Skapa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-rule-set.md) .
 1. Klicka på **[!UICONTROL Add Rule]**.
@@ -363,7 +363,9 @@ t_classifications_test_rule.xml
 
  -->
 
-Steg som beskriver hur du testar en klassificeringsregel eller regeluppsättning. När du kör ett test kontrolleras alla regler i en uppsättning.
+Du kan testa en klassificeringsregel eller regeluppsättning. När du kör ett test kontrolleras alla regler i en uppsättning.
+
+Så här testar du en klassificeringsregeluppsättning:
 
 1. [Skapa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-rule-set.md) .
 1. På [!UICONTROL Classification Rule Builder]klickar du på regeluppsättningens namn.
@@ -395,7 +397,7 @@ t_validate_rules.xml
 
  -->
 
-Steg som beskriver hur klassificeringsregler valideras och aktiveras.
+Så här validerar och aktiverar du klassificeringsregler:
 
 1. [Skapa en klassificeringsregeluppsättning](/help/components/classifications/crb/classification-rule-set.md) sedan [lägg till klassificeringsregler](/help/components/classifications/crb/classification-quickstart-rules.md) till uppsättningen.
 1. I regelredigeraren klickar du på **[!UICONTROL Activate]**.

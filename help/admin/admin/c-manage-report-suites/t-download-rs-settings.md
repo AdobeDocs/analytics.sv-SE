@@ -3,16 +3,16 @@ description: Steg som beskriver hur du genererar ett Excel-kalkylblad som inneh�
 title: Hämta inställningar för rapportsviten
 feature: Report Suite Settings
 exl-id: f3e45bd5-048a-4200-a95d-4284cad72bad
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 15%
+source-wordcount: '61'
+ht-degree: 16%
 
 ---
 
 # Hämta inställningar för rapportsviten
 
-Steg som beskriver hur du genererar ett Excel-kalkylblad som innehåller alla inställningar för den valda rapportsviten.
+Så här genererar du ett Excel-kalkylblad som innehåller alla inställningar för den valda rapportsviten:
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 1. Välj en rapportsvit på [!UICONTROL Report Suite] tabell.

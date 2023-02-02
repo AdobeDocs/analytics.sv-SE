@@ -6,9 +6,9 @@ uuid: e1333a9b-eba0-45b7-b7e6-46e06190db64
 feature: Alerts
 role: User, Admin
 exl-id: f0a23afb-6c21-41e6-9033-9d3421bb1f4b
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '831'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ Mer information finns i Analysis Workspace-dokumentationen på [Intelligenta avi
 
 ## Lägg till en avisering {#task_51187E8BF19544DDA9EF2057E6F11D35}
 
-Steg som beskriver hur du lägger till en avisering i Adobe Analytics.
+Du kan lägga till en avisering i Adobe Analytics antingen från Varningsverktyget eller från en viss rapport.
 
 <!-- 
 
@@ -40,7 +40,11 @@ t_add_an_alert.xml
 
  -->
 
-Navigera till den nya varningsfunktionen i dialogrutan **[!UICONTROL Analytics]** > **[!UICONTROL Components]** -menyn. Du kan dock fortfarande komma åt den inifrån rapporter och analyser:
+### Lägg till en avisering från Varningsverktyget
+
+1. Välj **[!UICONTROL Analytics]** > **[!UICONTROL Components]** för att öppna varningsverktyget.
+
+### Lägga till en avisering från en enskild rapport
 
 1. Öppna rapporten i Rapporter och analyser där du vill ange en avisering.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Add Alert]**.
@@ -48,7 +52,7 @@ Navigera till den nya varningsfunktionen i dialogrutan **[!UICONTROL Analytics]*
 
 ## Visa eller redigera befintliga aviseringar {#task_2ADF2A05EB784B8BBAFE293AC8243C46}
 
-Aktivitetskontext
+<!-- add Task Context-->
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. Det här tar dig till nya [Aviseringshanteraren](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/intelligent-alerts/alert-manager.html).
 

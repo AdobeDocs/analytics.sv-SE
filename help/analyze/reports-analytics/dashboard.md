@@ -5,9 +5,9 @@ title: Kontrollpaneler och minirapporter
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 399765a3-0f90-46b9-b62e-9f41d98eaa9a
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: dbccae5fdfd092da40e0786aa76238f1e6c1ccb9
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,6 @@ Se [Hantera instrumentpaneler](/help/analyze/reports-analytics/dashboard-manage.
 
 ## Skapa en instrumentpanel {#task_54EFBED59BDC4418A919E6EF84AB9CFF}
 
-Steg som beskriver hur du skapar en kontrollpanel.
 
 <!-- 
 
@@ -74,6 +73,8 @@ t_dashboard_add.xml
  -->
 
 Innan du lägger till en rapport (som ett rapportutrymme) på en kontrollpanel, definierar du kontrollpanelens layout.
+
+Så här skapar du en kontrollpanel:
 
 1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Manage Dashboards]**.
 1. Klicka på **[!UICONTROL Add Dashboard]**.
@@ -96,13 +97,15 @@ Innan du lägger till en rapport (som ett rapportutrymme) på en kontrollpanel, 
 
 ## Skapa en rapportlet {#task_EC3AFBBAA51C45CEBAF632F841C305B3}
 
-Steg som beskriver hur du skapar en rapportlet. När du har skapat en rapportlet är den tillgänglig att visas på en kontrollpanel.
+När du har skapat en rapportlet kan du visa den på en kontrollpanel.
 
 <!-- 
 
 t_dashboard_add_report.xml
 
  -->
+
+Så här skapar du en rapportlet:
 
 1. Kör en rapport.
 1. Klicka på **[!UICONTROL Dashboard.]**
@@ -122,13 +125,15 @@ t_dashboard_add_report.xml
 
 ## Lägga till innehåll på en kontrollpanel {#task_90D7FAC1CC3E4DB786B4C87CC33B5459}
 
-Steg som beskriver hur du lägger till innehåll från andra instrumentpaneler och delade instrumentpaneler. Du kan också lägga till innehåll från anpassade och externa källor, som text och bilder.
+Du kan lägga till innehåll från andra instrumentpaneler och delade instrumentpaneler. Du kan också lägga till innehåll från anpassade och externa källor, som text och bilder.
 
 <!-- 
 
 t_dashboard_content.xml
 
  -->
+
+Så här lägger du till innehåll på en kontrollpanel:
 
 1. Öppna en kontrollpanel och klicka sedan på **[!UICONTROL Layout]**.
 1. Klicka **[!UICONTROL Add Content]** drar du sedan objekten till kontrollpanelen.
@@ -209,7 +214,7 @@ t_dashboard_edit.xml
 
 ## Sammärka en kontrollpanel {#task_603BDE7700B945699AF5514C2DEB81F7}
 
-Steg som beskriver hur du överför en bild som ska visas på en kontrollpanel.
+Så här överför du en bild som ska visas på en kontrollpanel:
 
 <!-- 
 
