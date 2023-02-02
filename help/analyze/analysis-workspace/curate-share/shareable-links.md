@@ -5,9 +5,9 @@ title: Skapa delningsbara länkar
 feature: Curate and Share
 role: User, Admin
 exl-id: 39fbe18c-2f75-4026-b277-58ec08c6a645
-source-git-commit: 4b11a7057177bec9d2e9d7c435ad0d5476a46602
+source-git-commit: 58abc4a8410441a3c76c6737ace8e2c5ab5c1374
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,6 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 [Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att locka mottagare till specifika delar av projektet.
 
 ![](assets/get-viz-link.png)
-
-## Hämta offentlig länk
-
-{{release-limited-testing-section}}
-
-Du kan dela Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta kan omfatta personer utanför organisationen eller personer inom organisationen som inte är anställda hos Adobe Analytics.
-
-Mer information finns i [Dela en offentlig länk med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).)
 
 ## Använda länkar i en innehållsförteckning {#TOC}
 
