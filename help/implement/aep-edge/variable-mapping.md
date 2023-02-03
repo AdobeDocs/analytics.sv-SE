@@ -2,7 +2,7 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 8a6c639af7427a9975ccd061d059696d4611dff3
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `web.webInteraction.name` | The [Egen länk](../../components/dimensions/custom-link.md), [Hämta länk](../../components/dimensions/download-link.md), eller [Avsluta länk](../../components/dimensions/exit-link.md) dimension, beroende på värdet i `web.webInteraction.type` |
 | `web.webInteraction.type` | Anger vilken typ av länk som klickas. Giltiga värden är `other` (Anpassade länkar), `download` (Hämta länkar) och `exit` (Avsluta länkar). |
 | `web.webPageDetails.URL` | The [Sidans URL](../../components/dimensions/page-url.md) dimension. |
-| `web.webPageDetails.errorPage` | Flagga som hjälper till att fastställa &quot;Sidor som inte hittas&quot; [dimension](../../components/dimensions/pages-not-found.md) och [mått](../../components/metrics/pages-not-found.md). |
+| `web.webPageDetails.isErrorPage` | Flagga som hjälper till att fastställa &quot;Sidor som inte hittas&quot; [dimension](../../components/dimensions/pages-not-found.md) och [mått](../../components/metrics/pages-not-found.md). |
 | `web.webPageDetails.name` | The [Sida](../../components/dimensions/page.md) dimension. |
 | `web.webPageDetails.server` | The [Server](../../components/dimensions/server.md) dimension. |
 | `web.webPageDetails.siteSection` | The [Platsavsnitt](../../components/dimensions/site-section.md) dimension. |
