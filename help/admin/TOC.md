@@ -2,12 +2,12 @@
 product: analytics
 audience: admin
 user-guide-title: Administratörshandbok för Analytics
-breadcrumb-title: Administrationshandbok
+breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 12fcf4cb07c4cb7497d6f21f3e5f82f7681a9677
+source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 78%
+source-wordcount: '619'
+ht-degree: 82%
 
 ---
 
@@ -127,7 +127,11 @@ ht-degree: 78%
             + [Klassificeringshierarkier](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/classification-hierarchies.md)
             + [Listvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md)
             + [Marknadsförande eVars](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/merchandising-evars.md)
-         + [Marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md)
+         + Marknadsföringskanaler {#marketing-channels}
+            + [Hantera marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md)
+            + [Bearbetningsregler för marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md)
+            + [Klassificeringar i marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/classifications-mchannel.md)
+            + [Förfallotid för besökarengagemang](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/visitor-engagement.md)
          + Trafikhantering {#traffic-management}
             + [Översikt](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-management.md)
             + [Schemalägg spike](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)

@@ -3,14 +3,20 @@ description: Beskriver hur du kör Marketing Channel-rapporten, tilldelar begrä
 title: Behörigheter för marknadsföringskanal
 feature: Marketing Channels
 exl-id: 3b3bcf9b-eee7-4d84-9d4a-e4a24e0cdd4d
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
 
 # Behörigheter för marknadsföringskanal
+
+>[!NOTE]
+>
+>För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>
+>Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
 
 Här är behörigheterna för verktygen i Report Suite som behövs i [Admin Console](https://adminconsole.adobe.com/) för att kunna arbeta med olika aspekter av marknadsföringskanaler.
 

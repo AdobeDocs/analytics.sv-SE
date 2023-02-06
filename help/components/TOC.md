@@ -3,11 +3,11 @@ product: analytics
 audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
-user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Enhetsövergripande analys.
-source-git-commit: 24ae07993e8f51b8220f817873fbd8dc1df70cda
+user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
+source-git-commit: 6b216a9af4b5614203b0f34fa754985b12ff59ea
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 49%
+source-wordcount: '684'
+ht-degree: 51%
 
 ---
 
@@ -267,10 +267,6 @@ ht-degree: 49%
 + Marknadsföringskanaler {#marketing-channels}
    + [Kom igång med marknadsföringskanaler](c-marketing-channels/c-getting-started-mchannel.md)
    + [Attribution IQ med marknadsföringskanaler](c-marketing-channels/mchannel-best-practices.md)
-   + [Hantera marknadsföringskanaler](c-marketing-channels/c-channels.md)
-   + [Bearbetningsregler för marknadsföringskanaler](c-marketing-channels/c-rules.md)
-   + [Klassificeringar i marknadsföringskanaler](c-marketing-channels/classifictions-mchannel.md)
-   + [Förfallotid för besökarengagemang](c-marketing-channels/visitor-engagement.md)
    + [Analysera marknadsföringskanaler](c-marketing-channels/analyze-mc.md)
    + [Behörigheter för marknadsföringskanaler](c-marketing-channels/c-channel-report-access.md)
    + [Vanliga frågor om och exempel på marknadsföringskanaler](c-marketing-channels/c-faq.md)

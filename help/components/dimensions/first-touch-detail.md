@@ -3,7 +3,7 @@ title: Första beröringskanaldetalj
 description: Information om den första marknadsföringskanalen inom besökarens förfallotid för engagemang.
 feature: Dimensions
 exl-id: a155182d-7bc0-4c7d-9de7-680bfe2d6432
-source-git-commit: 6f7f46b0fee46e572a65f639ea511478c0118f4e
+source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Dimensionen&quot;Första beröringskanalen&quot; rapporterar detaljer runt den f
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [Bearbetningsregel för marknadsföringskanal](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md). När en träff matchar en regel för hantering av marknadsföringskanaler [Senaste pekkanal](last-touch-channel.md) dimensionen är inställd på kanalnamnet och den här dimensionen är inställd på kanalvärdet som är angivet i regeln.
+Den här dimensionen kopierar värden från andra variabler. Variabeln som används refererar till kanalvärdet inom varje [Bearbetningsregel för marknadsföringskanal](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md). När en träff matchar en regel för hantering av marknadsföringskanaler [Senaste pekkanal](last-touch-channel.md) dimensionen är inställd på kanalnamnet och den här dimensionen är inställd på kanalvärdet som är angivet i regeln.
 
 Om du vill ställa in dimensionen på ett specifikt värde måste du utföra följande steg:
 

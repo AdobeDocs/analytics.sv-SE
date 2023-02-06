@@ -2,7 +2,7 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 1%
@@ -74,7 +74,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Marknadsföringskanal:** En funktion i Adobe Analytics som kategoriserar träffar efter hur de kom till din webbplats. Den logik som används för att kategorisera träffar kan anpassas med regler för bearbetning av marknadsföringskanaler. Se [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md) i användarhandboken för komponenter.
 * **Mått:** En komponenttyp som innehåller kvantitativa data. Mätvärden innehåller vanligtvis siffror, t.ex. sidvyer, besök och Intäkter. En dimension är vanligtvis dess motsvarighet.
 * **Mobiltjänster:** Sammanför funktioner för mobilmarknadsföring för mobilappar från hela Adobe Experience Cloud så att ni kan förstå och förbättra användarengagemanget med era program. Se [Mobiltjänster - översikt](https://experienceleague.adobe.com/docs/mobile-services/using/home.html).
-* **Märk flera programsviter:** Att skicka samma träff till flera rapportsviter. I och med introduktionen till virtuella rapportsviter är detta i stort sett inte längre nödvändigt. De flesta satsningar på taggning av flera programsviter bidrar till att ge plats åt en global rapportserie.
+* **Märk flera programsviter:** Att skicka samma träff till flera rapportsviter. I och med introduktionen till virtuella rapportsviter är denna praxis i stort sett inte längre nödvändig. De flesta satsningar på taggning av flera programsviter bidrar till att ge plats åt en global rapportserie.
 * **Normalisering:** Ett sätt att organisera en visualisering som tar alla mätvärden och tvingar dem till samma proportioner, vilket gör det enklare att jämföra trender.
 * **Förekomster:** En typ av mätvärde som visar hur många träffar en dimensionsuppgift har angetts eller beständig. Se [Förekomster](/help/components/metrics/occurrences.md) i användarhandboken för komponenter.
 * **Omniture:** Används inte längre som term. Organisationen som ägde Adobe Analytics innan Adobe förvärvades 2009.
@@ -84,7 +84,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Primärt serveranrop:** Alternativt namn för bildbegäran eller träff, används mest i samband med märkning och fakturering av flera sviter. När samma träff skickas till flera rapportsviter är den första rapportsviten ett primärt serveranrop medan resten är sekundära serveranrop. Den här regeln gäller alla träfftyper, inklusive sidvisning och länkspårning. Se även sekundära serveranrop.
 * **Bearbetar regler:** Kan referera till:
    * Bearbetningsregler är ett sätt att ändra datainsamling med hjälp av vissa regler i Admin Console. Se [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) i användarhandboken för Admin.
-   * Bearbetningsregler för marknadsföringskanaler, en uppsättning regler som avgör vilken marknadsföringskanal en träff tillhör. Se [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels-admin.md) i användarhandboken för Admin.
+   * Bearbetningsregler för marknadsföringskanaler, en uppsättning regler som avgör vilken marknadsföringskanal en träff tillhör. Se [Bearbetningsregler för marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md) i användarhandboken för Admin.
 * **Prop:** Se Trafikvariabel.
 * **Rankad rapport:** Ett rapportformat som vanligtvis följer en dimension med ett mätvärde. Med den här typen av rapporter kan du se de översta objekten, till exempel de sidor som visas mest på din webbplats. Se även Trended-rapport.
 * **Realtid:** Visar konfigurerade variabler så snart de samlats in med liten eller ingen fördröjning. Se [Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) i användarhandboken för Admin.

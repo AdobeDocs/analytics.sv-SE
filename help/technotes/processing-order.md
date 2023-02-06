@@ -2,7 +2,7 @@
 title: Bearbetningsordning för data i Adobe Analytics
 description: Lär dig ordningen på komponenter och tjänster som bearbetar data i Adobe Analytics.
 exl-id: a8dc9c12-07d3-4dc8-b2df-136f7a7a1e77
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -34,7 +34,7 @@ När data kommer till Adobe Analytics kan du justera data efter behov med följa
 3. [**Punktregler**](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md): Använd standardfiltrering eller anpassad robotfiltrering för att exkludera data från rapportering.
 4. [**Bearbetar regler**](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md): Anpassade regler som din organisation tillämpar på dina data. Inkluderar mappning av [Sammanhangsdatavariabler](/help/implement/vars/page-vars/contextdata.md) till respektive variabel.
 5. **VISTA-regler**: Anpassade flexibla regler som tillämpas på data av en Adobe-konsult. VISTA-regler kan köras före eller efter att regler bearbetas, beroende på organisationens behov. De flesta VISTA-regler körs vanligtvis efter bearbetningsregler, men varje organisation har konfigurerats på olika sätt. Kontakta kontohanteraren för Adobe om du vill ha mer information om befintliga VISTA-regler.
-6. [**Bearbetningsregler för marknadsföringskanaler**](/help/components/c-marketing-channels/c-rules.md): Du kan använda [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) för att förbereda data för användning i regler för bearbetning av marknadsföringskanaler.
+6. [**Bearbetningsregler för marknadsföringskanaler**](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md): Du kan använda [Bearbetar regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md) för att förbereda data för användning i regler för bearbetning av marknadsföringskanaler.
 7. **Geolokaliseringsdata**: Dimensioner som förlitar sig på IP-adresssökning (till exempel [Länder](/help/components/dimensions/countries.md) dimension) fylls i.
 8. [**IP-förvrängning**](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md): Om din organisation har valt att dölja IP-adresser i rådata, görs det när alla andra bearbetningsfunktioner har slutförts.
 

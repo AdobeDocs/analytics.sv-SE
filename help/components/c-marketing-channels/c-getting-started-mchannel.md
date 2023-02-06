@@ -3,10 +3,10 @@ title: Kom igång med marknadsföringskanaler
 description: Lär dig mer om arbetsflödet för marknadsföringskanaler, den automatiska konfigurationen och hur du tillämpar mallrapportsvitsinställningar på flera rapportsviter.
 feature: Marketing Channels
 exl-id: 35938bf9-89ab-434f-9dc2-7a65251412ef
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: bf0a4d4436da5f6a5ce09fbf7a1f03ef8bcc7094
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 2%
+source-wordcount: '762'
+ht-degree: 1%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 2%
 >[!NOTE]
 >
 >För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>
+>Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
 
 Marknadsföringskanaler används ofta för att ge insikter om hur besökarna kommer in på er webbplats. Ni kan anpassa era regler för kanalbearbetning för marknadsföring baserat på vilka kanaler ni vill spåra och hur ni vill spåra dem.
 
@@ -39,9 +41,9 @@ En lista över rekommenderade kanaler finns i [Vanliga frågor och exempel](/hel
 
 När du har definierat vilka kanaler som ska spåras aktiverar du dem i **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
-Se [Kanaler och regler](/help/components/c-marketing-channels/c-channels.md) för viktig information om förutsättningar och begrepp.
+Se [Kanaler och regler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md) för viktig information om förutsättningar och begrepp.
 
-Se [Lägg till marknadsföringskanaler](/help/components/c-marketing-channels/c-channels.md) för förfarandet.
+Se [Lägg till marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md) för förfarandet.
 
 >[!NOTE]
 >
@@ -51,7 +53,7 @@ Se [Lägg till marknadsföringskanaler](/help/components/c-marketing-channels/c-
 
 När du har skapat kanaler på [!UICONTROL Marketing Channel Manager] konfigurerar du reglerna så att kanalerna kan hämta och rapportera data.
 
-Se [Bearbetningsregler för marknadsföringskanal](/help/components/c-marketing-channels/c-rules.md).
+Se [Bearbetningsregler för marknadsföringskanal](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md).
 
 Om kanaler skapades i den automatiska konfigurationen definieras reglerna i dessa kanaler. Du kan ändra dem så att de passar dina behov.
 
@@ -69,7 +71,7 @@ Så här kör du den automatiska konfigurationen av marknadsföringskanalerna.
 
    >[!NOTE]
    >
-   >The [!UICONTROL Marketing Channels: Auto Setup] visas automatiskt när du öppnar kanalkonfigurationsprogram i Admin Tools. (Se [Marknadsföringskanalhanterare](/help/components/c-marketing-channels/c-channels.md).) Den här sidan visas inte om rapportsviten innehåller en eller flera marknadsföringskanaler. Du kan inte komma åt den här sidan igen om du inte väljer en annan rapportsvit som inte innehåller marknadsföringskanaler.
+   >The [!UICONTROL Marketing Channels: Auto Setup] visas automatiskt när du öppnar kanalkonfigurationsprogram i Admin Tools. (Se [Marknadsföringskanalhanterare](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).) Den här sidan visas inte om rapportsviten innehåller en eller flera marknadsföringskanaler. Du kan inte komma åt den här sidan igen om du inte väljer en annan rapportsvit som inte innehåller marknadsföringskanaler.
 
 1. Kontrollera att de kanaler som du vill skapa är markerade.
 
