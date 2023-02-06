@@ -3,7 +3,7 @@ title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
 feature: Variables
 exl-id: 7a842cf0-f8cb-45a9-910e-5793849bcfb8
-source-git-commit: 2575db561c244a9b52f98355137e73f05b3b7ee4
+source-git-commit: bebd9e9e53c05d697adf52e5a2bdda3ca60796f2
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
@@ -69,8 +69,7 @@ När funktionen anropas returneras ingenting; i stället anges följande variabl
 * `window._ppvFinalPercentViewed`: Den procentandel av föregående sida som var synlig vid den punkt besökaren flyttade till den aktuella sidan. Värdet är lika med eller större än den ursprungliga procentandelen som visas och är lika med eller mindre än den högsta procentsidan som visas.
 * `window._ppvHighestPixelsSeen`: Det högsta antalet pixlar som visas (höjdvis) när besökaren rullade nedåt på föregående sida.
 * `window._ppvFoldsAvailable`: Det totala antalet&quot;sidvikningar&quot; som är tillgängliga för rullning nedåt på föregående sida. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
-* 
-   * `window._ppvFoldsSeen`: Det högsta antalet sidvikningar som nås när besökaren rullade nedåt på föregående sida. Den här variabeln innehåller &quot;top-of-page&quot;-vikningen. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
+* `window._ppvFoldsSeen`: Det högsta antalet sidvikningar som nås när besökaren rullade nedåt på föregående sida. Den här variabeln innehåller &quot;top-of-page&quot;-vikningen. Om hela sidan är synlig när den läses in första gången, är det här värdet `1`.
 
 Tilldela en eller flera av dessa variabler till eVars för att visa dimensionsdata i rapporter.
 
