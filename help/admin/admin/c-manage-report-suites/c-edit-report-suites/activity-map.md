@@ -1,16 +1,16 @@
 ---
-description: Administrativa steg för att aktivera Activity Map-rapportering i Analytics.
-title: Activity Map-rapportering
-feature: Activity Map
-exl-id: e1d3f894-b769-4294-b550-f46869b812be
+description: Du kan visa aktivitetskartdata i Adobe Analytics
+title: Visa data om Activity Map i Adobe Analytics
+feature: Admin Tools
 source-git-commit: cb805ccf97ea6047183f22baa91e5f567af1b7d5
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 7%
+source-wordcount: '150'
+ht-degree: 3%
 
 ---
 
-# Activity Map-rapportering
+
+# Visa data om Activity Map i Adobe Analytics
 
 Administrativa steg för att aktivera Activity Map-rapportering i Analytics.
 
@@ -30,4 +30,4 @@ Gör det möjligt för Analytics att samla in användaraktivitet som hanterats f
 
 Information som ska fyllas i finns i [Activity Map dokumentation](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/activity-map.html) för fullständiga implementeringsinstruktioner.
 
-<!--The content in this article is duplicated with the content in the Admin guide (activity-map.md)-->
+<!--The content in this article is duplicated with the content in the Integration guide (activitmap-reporting.md)-->

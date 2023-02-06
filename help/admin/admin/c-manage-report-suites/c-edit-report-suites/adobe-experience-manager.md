@@ -1,16 +1,16 @@
 ---
-description: Administrativa steg för att aktivera AEM Assets-rapportering i Analytics.
-title: Rapportera om AEM Assets i Adobe Analytics
-feature: AEM Assets Reporting
-exl-id: 48beac22-60af-4030-ac40-4c5d12f25d5e
+description: Du kan visa Adobe Experience Manager-data i Adobe Analytics
+title: Visa Adobe Experience Manager-data i Adobe Analytics
+feature: Admin Tools
 source-git-commit: cb805ccf97ea6047183f22baa91e5f567af1b7d5
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 2%
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 
-# AEM Assets-rapportering
+
+# Visa Adobe Experience Manager-data i Adobe Analytics
 
 Administrativa steg för att aktivera AEM Assets-rapportering i Analytics.
 
@@ -24,4 +24,4 @@ Gör det möjligt för Analytics att samla in intryck och klickningar på [!UICO
 
 Information som ska fyllas i finns i [Dokumentation för AEM Asset Insights](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/assets-insights.html) för fullständiga implementeringsinstruktioner.
 
-<!--The content in this article is duplicated with the content in the Admin guide (adobe-experience-manager.md)-->
+<!--The content in this article is duplicated with the content in the Integration guide (aem-assets-reporting.md)-->
