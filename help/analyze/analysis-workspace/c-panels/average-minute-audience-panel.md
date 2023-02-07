@@ -4,10 +4,10 @@ description: Så här använder och tolkar du panelen Media Average Minute Audie
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 31228b1a2e19a6b83dd7b5cbbde0f5692b0b8fc5
+source-git-commit: b0a3ee6785bdc2f3e9a55e42591b4846984934b6
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ Panelen Mediets genomsnittliga minutmålgrupp ger en genomsnittlig minutvis mål
 Panelen Minut-målgrupp innehåller även analyser under en viss tidsperiod som kan filtreras efter visst innehåll, oavsett om varaktigheten är tillgänglig med hjälp av klassificeringar eller inte. Navigera till en rapportsserie med Media Analytics-komponenter aktiverade för att få tillgång till panelen Mediemådets genomsnittliga målgrupp. Klicka sedan på panelikonen längst till vänster och dra panelen till ditt Analysis Workspace-projekt.
 
 <!-- For more information, see the Media Average Minute Audience introduction video:
-<< replace with AMA video when available >> -->
+<< replace with AMA video when available from Doug >> -->
 
 <!-- >[!VIDEO](https://video.tv.adobe.com/v/330177/?quality=12) -->
 
