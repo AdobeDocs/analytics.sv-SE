@@ -2,11 +2,11 @@
 product: analytics
 audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
-breadcrumb-title: Verktygshandbok
-user-guide-description: Lär dig hur du använder analysverktyg som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 58abc4a8410441a3c76c6737ace8e2c5ab5c1374
+breadcrumb-title: Användarhandbok om verktyg
+user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
+source-git-commit: 7eef1ef0bbe39db25b430d81789743b357778252
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1101'
 ht-degree: 78%
 
 ---
@@ -61,6 +61,11 @@ ht-degree: 78%
          + [Översikt över kalender- och datumintervall](analysis-workspace/components/calendar-date-ranges/calendar.md)
          + [Skapa anpassade datumintervall](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)
          + [Datumjämförelse](analysis-workspace/components/calendar-date-ranges/time-comparison.md)
+      + Dataordlista {#data-dictionary}
+         + [Översikt över dataordlistan](analysis-workspace/components/data-dictionary/data-dictionary-overview.md)
+         + [Visa komponentinformation i Data Dictionary](analysis-workspace/components/data-dictionary/view-data-dictionary.md)
+         + [Redigera komponentposter i Data Dictionary](analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)
+         + [Övervaka dataordlistans hälsa](analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md)
    + Visualiseringar {#visualizations}
       + [Översikt över visualiseringar](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Hantera datakällor](analysis-workspace/visualizations/t-sync-visualization.md)
