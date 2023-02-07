@@ -3,18 +3,14 @@ description: Med hjälp av data i etikettrapportsviten kan du tilldela etiketter
 title: Data i etikettrapportsvit
 feature: Data Governance
 exl-id: d1bd833c-3fd4-4572-a5dc-d7bab8a79cb8
-source-git-commit: 4bbed2efde0574bc9f5f6a78a022a22490e75549
+source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 32%
+source-wordcount: '516'
+ht-degree: 28%
 
 ---
 
 # Data i etikettrapportsvit
-
->[!NOTE]
->
->Det uppdaterade användargränssnittet är för närvarande i begränsad testning.
 
 Med hjälp av data i etikettrapportsviten kan du tilldela etiketter för identiteter, känslighet och datastyrning till varje variabel i en viss rapportsvit. Försäkra dig om att du först bekanta dig med [etiketter och definitioner](/help/admin/c-data-governance/data-labeling/gdpr-labels.md).
 
@@ -24,7 +20,7 @@ Med hjälp av data i etikettrapportsviten kan du tilldela etiketter för identit
 
 ## Tilldela eller redigera sekretessetiketter för rapportsviten {#assign-edit}
 
-**Exempel**: Som personuppgiftsansvarig planerar du att samla in e-postadresser och cookie-ID:n från registrerade för att behandla deras begäranden om datasekretess. Dessa cookie-ID:n lagras i en rapportsvit i Adobe Analytics.
+**Exempel**: Som Data Controller planerar du att samla in e-postadresser och cookie-ID:n från registrerade för att bearbeta deras förfrågningar om dataintegritet. Dessa cookie-ID:n lagras i en rapportsvit i Adobe Analytics.
 
 1. I Adobe Analytics navigerar du till **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data configuration and collection]** > **[!UICONTROL Data governance]**.
 

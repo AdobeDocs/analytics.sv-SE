@@ -3,9 +3,9 @@ description: Lär dig mer om riktlinjerna och rekommendationerna för användare
 title: Vilka är CNIL-riktlinjerna för användarens samtycke och cookies?
 feature: Data Governance
 exl-id: 04179e58-dbba-45e2-ba57-7fe5fdedc483
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Den 1 oktober 2020 offentliggjorde den franska dataskyddsmyndigheten (nedan kall
 
 Riktlinjerna ger ett begränsat undantag från kravet på samtycke (&quot;medgivande&quot;). Godkännandeundantaget gäller cookies som endast har till syfte att mäta målgruppen för webbplatsen eller appen för webbutgivarens räkning. Riktlinjerna föreskriver att följande villkor måste vara uppfyllda för att medgivandeundantaget ska gälla:
 
-* 25 månaders datalagring max.  Du kan granska dina aktuella inställningar för datalagring under Analytics > Admin > Data Governance.  [Datalagring](https://experienceleague.adobe.com/docs/analytics/technotes/data-retention.html)
+* 25 månaders datalagring max.  Du kan granska dina aktuella inställningar för datalagring under [!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Data Governance].  [Datalagring](https://experienceleague.adobe.com/docs/analytics/technotes/data-retention.html)
 * Inaktivera cookies från tredje part i ECID. [disableThirdPartyCall](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disablethirdpartycalls.html#id-service-api), [disableThirdPartyCookies](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disable-cookies.html#id-service-api)och [disableIdSyncs](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/disableidsync.html#id-service-api)
 * 13-månaders cookie-gräns.  Du kan åsidosätta förfallodatumet för din analyscookie med `cookieLifetime` variabel. Experience Cloud cookies, inklusive Analytics och ECID, förlänger utgångsdatumet för cookie vid varje besök.  Om du vill ange en statisk, icke-rullande cookie-förfallotid kan du antingen: (1) skriv egen kod för att ange ett datum då cookien ska tas bort, eller (2) använd din CMP för att styra datumet för cookie-återställningen.   [cookieLifetime](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/cookielifetime.html) och [Experience Cloud Cookies](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html#ec-cookies)
 * Begränsat omfång. Cookie-filen måste begränsas till en enda plats eller tillämpning. [Webbläsarcookies](https://experienceleague.adobe.com/docs/analytics/technotes/cookies.html&quot;\l&quot;cookie-implementations från tredje part)
@@ -31,7 +31,7 @@ Riktlinjerna ger ett begränsat undantag från kravet på samtycke (&quot;medgiv
 
 Följande ytterligare överväganden gäller:
 
-* Adobe Analytics har datacentraler i USA, Storbritannien och Singapore för att ge alla kunder flexibilitet att samla in, bearbeta och lagra sina uppgifter regionalt. När man konfigurerar den första konfigurationen av Adobe Analytics väljer man önskad plats på datacentret. Kundernas data lagras slutligen i den region där de har valts för den centrala Analytics-produkten.
+* Adobe Analytics har datacentraler i USA, Storbritannien och Singapore för att ge alla kunder flexibilitet att samla in, bearbeta och lagra sina uppgifter regionalt. När man konfigurerar den första konfigurationen av Adobe Analytics kan man välja önskad plats för databehandlingscentret. Kundernas data lagras i den region där de har valts för huvudprodukten i Analytics.
 * Överväg att samla in anmälningsstatusen i en Analytics-variabel för att separera indata från indata som avvalts för segmentering, virtuella rapportsviter eller för att dirigera till separata slutpunkter.
 * Ingen mätning utanför webbplatsen eller appen utan förhandsgodkännande, till exempel inga kampanjer utanför webbplatsen, e-postkampanjer eller iFrames.
 * Insamling av personuppgifter i variabler är inte tillåtet utan samtycke. [Åtgärder för kontroll av Experience Cloud baserat på användares samtycke](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.html%22%20\l%20%22implementation#implementation)
@@ -39,5 +39,10 @@ Följande ytterligare överväganden gäller:
 * Data används inte för korsreferensåtgärder.
 * GPS-geopositioneringsdata samlas inte in.
 * När slutanvändarens samtycke har lämnats kan ovanstående inställningar ändras och begränsningarna förenklas.
+
+>[!IMPORTANT]
+>
+>Detta dokument är inte avsett som juridisk eller juridisk rådgivning och utgör inte någon garanti eller något avtalsåtagande från Adobe. Vi uppmuntrar kunderna att söka oberoende juridisk rådgivning om kundens rättsliga och lagstadgade skyldigheter i frågor som rör detta ämne.
+
 
 Mer information finns i [CNIL Cookie-undantag](https://www.cnil.fr/en/sheet-ndeg16-use-analytics-your-websites-and-applications) webbplats.

@@ -3,7 +3,7 @@ description: Visar exempel på hur du kan etikettera data för träffdata, åtko
 title: Exempel på etiketter
 feature: Data Governance
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
+source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 62%

@@ -3,30 +3,30 @@ description: Skicka in förfrågningar om dataåtkomst och radering i Adobe Anal
 title: Skicka in begäran om åtkomst och borttagning
 feature: Data Governance
 exl-id: bb94cedf-ac9b-4d38-9136-bd3da2acf018
-source-git-commit: aa794220b464b7665e89345a116a263189dcc3fa
+source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 93%
+ht-degree: 64%
 
 ---
 
 # Skicka in begäran om åtkomst och borttagning
 
-Om era kunder (konsumenter/registrerade) vill veta vilka data du har om dem eller om de bestämmer sig för att de ska tas bort från era Analytics-egenskaper, ansvarar du som personuppgiftsansvarig för att svara på dessa begäranden. Den personuppgiftsansvarige avgör hur organisationen ska interagera med de registrerade (t.ex. via en användarportal för registrerade) och hanterar interaktioner med den registrerade. Det är också den personuppgiftsansvariges ansvar att sluta kretsloppet med den registrerade när begäran är slutförd. Med andra ord kommer Adobe Experience Cloud, som personuppgiftsbiträde, inte att acceptera begäranden direkt från registrerade eller returnera data direkt till dem. Adobe kommer i stället att ta emot begäranden från och returnera data till enbart dig som personuppgiftsansvarig.
+Om era kunder (konsumenter/registrerade) vill veta vilka data ni har om dem eller bestämmer sig för att de ska tas bort från era Analytics-egenskaper, ansvarar ni som Data Controller för att svara på dessa förfrågningar. Datakontrollanten avgör hur din organisation ska interagera med registrerade personer (t.ex. via en användarportal för registrerade personer) och hanterar interaktioner med den registrerade. Det är också den personuppgiftsansvariges ansvar att stänga slingan med den registrerade när begäran är slutförd. Med andra ord kommer Adobe Experience Cloud, som databehandlare, inte att acceptera förfrågningar direkt från registrerade eller returnera data direkt till dem. Adobe får i stället endast ta emot förfrågningar från och returnera data till dig som Data Controller.
 
-Du kanske också vill se till att dina mobilappar och webbplatser har relevanta snabbmeddelanden och stödmaterial om de registrerade personernas rättigheter vad gäller direkt identifierbara eller indirekt identifierbara data och andra data som ni samlar in.
+Du kan också se till att era mobilappar och webbplatser har relevanta snabbmeddelanden och stödmaterial om de registrerade personernas rättigheter vad gäller direkt identifierbara eller indirekt identifierbara data och andra data som ni samlar in.
 
 ## Hantera konsumentsamtycke {#section_3012015E7E8942519FB9279CF7057EAB}
 
-Som registeransvarig ansvarar du för att få uttryckligt medgivande från de registrerade innan du samlar in uppgifter om dem (eventuellt inklusive Adobe Analytics-uppgifter) och för att implementera en [avanmälningsmekanism](https://www.adobe.com/privacy/opt-out.html#customeruse) på din webbplats. På så vis kan era registrerade personer avanmäla sig från framtida datainsamling i Adobe Experience Cloud.
+Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från dina registrerade innan du samlar in uppgifter om dem (eventuellt inklusive Adobe Analytics-data) och för att implementera en [avanmälningsmekanism](https://www.adobe.com/privacy/opt-out.html#customeruse) på din webbplats. På så sätt kan de registrerade avanmäla sig från framtida datainsamling från Adobe Experience Cloud.
 
 ## Validera användare och deras data {#section_AFB2CC225AA94AF6A3CE9F24EF788358}
 
-Som personuppgiftsansvarig ansvarar du för att verifiera att den registrerade är den person de utger sig för att vara och att de har rätt till de uppgifter de begär. Dessutom är det ditt ansvar att se till att rätt data skickas tillbaka till den registrerade och att de inte oavsiktligt tar emot data om andra registrerade.
+Som personuppgiftsansvarig ansvarar du för att verifiera att den registrerade är den person de säger sig vara och att de har rätt till de uppgifter de begär. Dessutom är det ditt ansvar att se till att rätt data skickas tillbaka till den registrerade och att de inte av misstag tar emot data om andra registrerade.
 
-Detta innebär att du måste granska de data som Adobe Analytics returnerar som en del av en begäran om datasekretess innan de skickas vidare till den registrerade. Särskild försiktighet bör iakttas om du använder person-ID och inte returnerar bara data där ID:t finns, utan även data för andra träffar på en delad enhet där ID:t ibland återfanns. Se [ID-expansion.](/help/admin/c-data-governance/gdpr-id-expansion.md)
+Detta innefattar att granska de uppgifter som Adobe Analytics lämnat in som en del av en begäran om dataintegritet innan de skickas vidare till den registrerade. Särskild försiktighet bör iakttas om du använder person-ID och inte returnerar bara data där ID:t finns, utan även data för andra träffar på en delad enhet där ID:t ibland återfanns. Se [ID-expansion.](/help/admin/c-data-governance/gdpr-id-expansion.md)
 
-Varje fil kombinerar data från alla rapportsviter och tar automatiskt bort extra kopior av replikerade träffar. Du kan bestämma vilken av dessa filer som ska skickas tillbaka till den registrerade. Du kan också extrahera en del av dessa data och kombinera dem med data från andra system innan du skickar tillbaka dem till den registrerade.
+Varje fil kombinerar data från alla rapportsviter och tar automatiskt bort extra kopior av replikerade träffar. Du kan bestämma vilka av dessa filer som ska skickas tillbaka till den registrerade. Du kan också extrahera en del av dessa data och kombinera dem med data från andra system innan du skickar tillbaka dem till den registrerade.
 
 ## Skicka begäranden {#submit-requests}
 
@@ -98,7 +98,7 @@ Detta är den JSON som kan skickas via API:t för datasekretess eller användarg
 } 
 ```
 
-Observera att det finns tre block i användarens avsnitt, som representerar tre separata begäranden, troligtvis för tre separata registrerade personer.
+Observera att det finns tre block i användarens avsnitt, som representerar tre separata förfrågningar, troligtvis för tre separata registrerade personer.
 
 * Den första begäran är en åtkomstbegäran som använder ett traditionellt Adobe Analytics-cookie-ID (AAID).
 * Den andra begäran är också en åtkomstbegäran, men den använder en MCID/ECID-cookie.
@@ -117,7 +117,7 @@ Det här avsnittet innehåller information om åtkomst och borttagning av svar.
 
 **Information om åtkomstsvar**
 
-De data som returneras för en åtkomstbegäran ger dig, den personuppgiftsansvarige, en URL som du kan använda för att hämta en ZIP-fil som innehåller en katalog för varje Adobe-produkt du äger. I mappen Analytics kan det finnas:
+De data som returneras för en åtkomstbegäran ger dig, Data Controller, en URL som du kan använda för att hämta en ZIP-fil som innehåller en katalog för varje Adobe-produkt du äger. I mappen Analytics kan det finnas:
 
 * Personfiler – härledda från träffar som innehåller en matchad ID-PERSON-etikett
 
@@ -131,7 +131,7 @@ De data som returneras för en åtkomstbegäran ger dig, den personuppgiftsansva
 
 Varje fil kombinerar data från alla rapportsviter och tar automatiskt bort extra kopior av replikerade träffar.
 
-Du kan bestämma vilka av dessa som ska returneras till den registrerade. Du kan också extrahera en del av dessa data och kombinera dem med data från andra system innan du skickar tillbaka dem till den registrerade.
+Du kan bestämma vilka av dessa som ska skickas tillbaka till den registrerade. Du kan också extrahera en del av dessa data och kombinera dem med data från andra system innan du skickar tillbaka dem till den registrerade.
 
 **Ta bort svarsinformation**
 

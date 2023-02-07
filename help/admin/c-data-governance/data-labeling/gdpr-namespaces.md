@@ -3,10 +3,10 @@ description: Varje ID som du vill kunna söka efter tilldelas ett namnutrymme, s
 title: Namnutrymmen
 feature: Data Governance
 exl-id: 421572c2-2789-48bc-b530-d48216799724
-source-git-commit: 9e8607691e6b144dd9e7b7a407bb2f02d27fbb1a
+source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 97%
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 Varje ID som du vill kunna söka efter tilldelas ett namnutrymme, som är en anpassad sträng som identifierar det ID:t i variabeln där det används i alla rapportsviter.
 
-Namnutrymmessträngen används för att identifiera de fält som du vill söka i när du anger ett ID som en del av en begäran om datasekretess. När en begäran om datasekretess skickas in, kommer begäran att innehålla ett JSON-avsnitt som anger vilka ID:n för registrerade som ska användas för begäran. Flera ID:n kan inkluderas som en del av en enda begäran för en registrerad. JSON innehåller:
+Namnutrymmessträngen används för att identifiera de fält som du vill söka i när du anger ett ID som en del av en begäran om datasekretess. När en begäran om uppgiftsskydd skickas in, kommer begäran att innehålla ett JSON-avsnitt som anger vilka ID för registrerade som ska användas för begäran. Flera ID:n kan inkluderas som en del av en enda begäran för en registrerade. JSON innehåller:
 
 * Ett namnutrymmesfält som innehåller namnutrymmessträngen.
 * Ett typfält som för de flesta Adobe Analytics-begäranden innehåller värdet ”analytics”.
@@ -38,7 +38,7 @@ Värdet måste anges som två hexadecimala tal som avgränsas med ett bindestrec
 
 Det går också att använda `"namespaceId": 10` istället för, eller som tillägg till, `"namespace": "AAID"` och vissa andra Adobe-produkter använder det formuläret.
 
-## Cookie för spårning av äldre analyser: Föråldrat formulär
+## Cookie för spårning av äldre analyser: inaktuellt formulär
 
 ```
 {

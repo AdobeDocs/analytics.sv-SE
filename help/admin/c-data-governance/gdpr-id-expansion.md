@@ -1,18 +1,18 @@
 ---
-description: De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran
+description: De ID:n du skickar in omfattar inte alltid alla träffdata som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran
 title: ID-expansion
 feature: Data Governance
 exl-id: 312a249f-e0e7-44da-bb3d-b19f1bb4c706
-source-git-commit: e9fffe62d3e53ae075610b1feec9a9071d925433
+source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1351'
+ht-degree: 32%
 
 ---
 
 # ID-expansion
 
-De ID:n du skickar in omfattar inte alltid alla data för träffar som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran:
+De ID:n du skickar in omfattar inte alltid alla träffdata som Analytics kan koppla till den registrerade. Analytics kan skapa en utökad uppsättning ID:n för att inkludera associerade data i begäranden om datasekretess. Du kan begära det här alternativet med en valfri parameter för varje begäran om datasekretess som du skickar, vilken läggs till i JSON-begäran:
 
 ```
 "expandIds": true
@@ -32,7 +32,7 @@ Mer information finns i [API-dokumentationen för sekretesstjänsten](https://ex
 
 Under de första månaderna efter det att dataintegriteten publicerades begärde de allra flesta förfrågningarna om dataintegritet i Analytics inte någon ID-expansion. Det är dock upp till dig att avgöra vilket värde som passar din organisation. Du bör rådfråga ditt juridiska team om huruvida ID-expansion krävs för dina data med de ID som du använder och de data som du samlar in inom Adobe Analytics.
 
-Det viktigaste bör vara att På en delad enhet, från vilken flera användare har besökt din plats, inkluderar ID-expansion data från andra användares träffar på enheten i data som returneras av åtkomstbegäranden (i enhetsfilen). Även om du har följt vedertagna standarder för etikettering (till exempel om inga privata data inkluderas i enhetsfilen, till exempel besökta sidor) innehåller enhetsfilen antalet besökta sidor och tidpunkterna för varje besök. Fråga dig själv: Går det bra att du delar informationen med någon som inte har varit besökare?
+Ett primärt övervägande kan vara: På en delad enhet, från vilken flera användare har besökt din plats, inkluderar ID-expansion data från andra användares träffar på enheten i data som returneras av åtkomstbegäranden (i enhetsfilen). Även om du har följt vedertagna standarder för etikettering (till exempel om inga privata data inkluderas i enhetsfilen, till exempel besökta sidor) innehåller enhetsfilen antalet besökta sidor och tidpunkterna för varje besök. Du kanske vill fråga dig själv: Är det okej om du delar informationen med någon som inte varit besökare?
 
 När ID-expansion *not* används för en borttagningsbegäran: Om du använder ett icke-cookie-ID (något annat ID än ECID- eller Analytics-cookie) för att identifiera träffar som ska tas bort och det ID:t har en ID-DEVICE-etikett, ändras antalet unika besökare i rapporter. Detta beror på att endast vissa instanser av cookie-ID:n kommer att anonymiseras, medan andra kommer att lämnas oförändrade. Om du inte anger ID-expansion rekommenderar vi att du antingen använder ett cookie-ID för begäranden eller använder ID:n med en ID-PERSON-etikett.
 
@@ -49,14 +49,14 @@ Förutom flaggan ”expandIDs” stöder Analytics två andra flaggor som kan sk
 
 I framtiden kommer `analyticsDeleteMethod` kan ha stöd för värdet&quot;purge&quot; utöver standardvärdet för&quot;anonymisze&quot;. Om det stöds tas hela träffen bort, i stället för att värdena för träfffält med DELL-etiketter uppdateras.
 
-Förutom standardvärdet `priority` -fältet har också stöd för värdet &quot;low&quot;. Du bör ange det här värdet för begäranden som inte beror på en begäran från en registrerad person och som därför inte måste slutföras inom 30 dagar enligt lagen.
+Förutom standardvärdet `priority` -fältet har också stöd för värdet &quot;low&quot;. Du bör ange det här värdet för förfrågningar som inte är ett resultat av en begäran från registrerade och därför inte har något rättsligt krav på att slutföras inom en viss tidsram.
 
 ## Användning av Privacy Service-API
 
 >[!IMPORTANT]
 >
->Adobe avråder från att använda [Privacy Services-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) av andra skäl än förfrågningar som initierats av en registrerade. API:t för sekretesstjänsten är inte ett lämpligt verktyg för datarensning eller reparationer och kommer att ha oönskade konsekvenser. Privacy Services-API:t tillhandahölls för att hjälpa er att uppfylla datasekretessbegäranden, som är tidskänsliga. Adobe stöder inte att detta API används för andra syften och det kan påverka Adobes förmåga att tillhandahålla användarinitierade begäranden om datasekretess i god tid för andra Adobe-kunder. Vi ber dig att inte använda API:t för sekretesstjänsten för andra syften, som att rensa data som av misstag har skickats in till stora grupper av besökare.
+>Adobe tillåter inte att [Privacy Services-API](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html) av andra orsaker än giltiga förfrågningar som initierats av en registrerade. Privacy Service-API:t är inte ett lämpligt verktyg för datarensning eller -reparationer. All felaktig användning av Privacy Service-API:t för förfrågningar som inte initierats av registrerade personer får oönskade konsekvenser. Privacy Service-API:t tillhandahålls Adobe-kunder för att hjälpa er att uppfylla dataintegritetsbegäranden, som är tidskänsliga. Adobe stöder inte att detta API används för andra syften och det kan påverka Adobes förmåga att tillhandahålla användarinitierade begäranden om datasekretess i god tid för andra Adobe-kunder. Vi ber dig att inte använda Privacy Service-API:t för andra syften, som datahygien eller radering av data som av misstag har skickats in till stora grupper av besökare.
 
-Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för sekretesstjänsten inte är lämpligt för detta ändamål.
+Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Resultatet är inte önskvärt i situationer där du vill rensa bort datafält, och en orsak till varför Privacy Service-API:t inte är lämpligt för den här användningen markeras.
 
-Kontakta er Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för att få mer information och för att åtgärda eventuella PII- eller dataproblem.
+Kontakta er Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för ytterligare granskning och insatser för att ta bort eventuella PII-fel eller lösa dataproblem.
