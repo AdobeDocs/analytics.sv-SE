@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: cb805ccf97ea6047183f22baa91e5f567af1b7d5
+source-git-commit: 6049266511851decfb2d652001e6f11373a91a1d
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 79%
+source-wordcount: '615'
+ht-degree: 78%
 
 ---
 
@@ -174,7 +174,6 @@ ht-degree: 79%
       + [Bästa praxis för etikettering](c-data-governance/data-labeling/gdpr-analytics-ids.md)
       + [Exempel på etiketter](c-data-governance/data-labeling/gdpr-labeling-example.md)
       + [Namnutrymmen](c-data-governance/data-labeling/gdpr-namespaces.md)
-   + [Skicka begäran om åtkomst och borttagning](c-data-governance/gdpr-submit-access-delete.md)
    + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
    + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
 + [Admin-API](c-admin-api/c-admin-api.md)

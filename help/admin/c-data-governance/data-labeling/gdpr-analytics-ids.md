@@ -3,10 +3,10 @@ description: Förstå vilka ID:n som registreras i era analysdata och bestäm vi
 title: Bästa praxis för etikettering
 feature: Data Governance
 exl-id: 00da58b0-d613-4caa-b9c1-421b1b541f47
-source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
+source-git-commit: a36654fcf10712e0d12917bad832bb46f343d6fd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2695'
+ht-degree: 79%
 
 ---
 
@@ -23,7 +23,7 @@ Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/f
 * **Ett direkt identifierbart ID (I1)**: Namnger personen eller tillhandahåller en direkt metod för att kontakta honom/henne. Exempel kan vara någons namn (t.o.m. ett vanligt namn som Anders Svensson som kan delas av hundratals personer), deras e-postadresser eller telefonnummer, o.s.v. En postadress utan ett namn kan anses vara direkt identifierbart, även om den endast identifierar ett hushåll eller ett företag i stället för en viss person inom det hushållet eller företaget.
 * **Ett indirekt identifierbart ID (I2)**: Tillåter inte identifiering av en enskild person, utan kan kombineras med annan information (som du kanske har tillgång till) för att identifiera någon. Exempel på ett indirekt identifierbart ID är ett kundlojalitetsnummer eller ett ID som används av ett företags CRM-system som är unikt för varje kund. Enligt datasekretess kan anonyma ID:n som lagras i de spårningscookies som används av Analytics anses vara indirekt identifierande, även om de bara kan identifiera en enhet snarare än en individ. På en delad enhet kan dessa cookies inte skilja mellan olika användare i systemet. Även om cookiefilen inte kan användas för att hitta en dator som innehåller cookien, och om någon har åtkomst till datorn och hittar cookien, kan de sedan koppla Analytics-cookiedata tillbaka till datorn.
 
-   En IP-adress anses också vara indirekt identifierbar, eftersom den vid en given tidpunkt bara kan tilldelas en enskild enhet. Internet-leverantörer kan däremot ändra IP-adresserna för de flesta användare regelbundet, så med tiden kan en IP-adress ha använts av någon av deras användare. Det är inte heller ovanligt att många kunder hos en Internet-leverantör eller flera anställda inom ett företag på samma intranät delar samma externa IP-adress. Därför kommer Adobe inte att stöda användning av en IP-adress som ID för en begäran om [datasekretess.](/help/admin/c-data-governance/gdpr-submit-access-delete.md#submit-requests) När ett ID som vi godkänner används som en del av en borttagningsbegäran, rensas även IP-adresserna som inträffade med det ID:t. Du måste bestämma om det finns andra insamlade ID:n som kan ingå i denna kategori, i1 eller I2, men som inte är lämpliga att använda som särskiljande ID för förfrågningar om dataintegritet.
+   En IP-adress anses också vara indirekt identifierbar, eftersom den vid en given tidpunkt bara kan tilldelas en enskild enhet. Internet-leverantörer kan däremot ändra IP-adresserna för de flesta användare regelbundet, så med tiden kan en IP-adress ha använts av någon av deras användare. Det är inte heller ovanligt att många kunder hos en Internet-leverantör eller flera anställda inom ett företag på samma intranät delar samma externa IP-adress. På grund av detta stöder inte Adobe att en IP-adress används som ID för en datasekretessbegäran. När ett ID som vi godkänner används som en del av en borttagningsbegäran, rensas även IP-adresserna som inträffade med det ID:t. Du måste bestämma om det finns andra insamlade ID:n som kan ingå i denna kategori, i1 eller I2, men som inte är lämpliga att använda som särskiljande ID för förfrågningar om dataintegritet.
 
 Även om ditt företag samlar in många olika ID:n i era analysdata, kan du välja att endast använda en delmängd av dessa ID:n för begäranden om datasekretess. Detta kan bero på följande:
 
