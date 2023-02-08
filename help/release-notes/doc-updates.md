@@ -1,11 +1,11 @@
 ---
 title: Uppdateringar av teknisk dokumentation för Adobe Analytics
-description: Observera uppdateringar av Adobe Analytics dokumentationsuppsättning.
+description: Viktiga uppdateringar av dokumentationsuppsättningen för Adobe Analytics.
 short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 526c7b0739ac9a4c1424bbb3cdfb320369725de6
+source-git-commit: 948a2429d7e73de90877ef40096064c0872a82d0
 workflow-type: tm+mt
 source-wordcount: '3523'
 ht-degree: 35%
@@ -40,7 +40,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **November 2022** |  |
 | Variabler för hantering av samtycke | Dedikerade sidor för [Anmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-in.md) och [Avanmäl dig till hantering av samtycke](/help/components/dimensions/cm-opt-out.md). |
-| Uppdatera i flera valutor | Sidor runt [Stöd för flera valutor](/help/technotes/multicurrency.md) uppdateras. |
+| Uppdatera i flera valutor | Sidor runt [Stöd för flera valutor](/help/implement/vars/config-vars/currencycode.md) uppdateras. |
 | **Oktober 2022** |  |
 | Data Workbench | [Meddelande om att produkten är slut](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html) |
 | Klienttips | Nytt [översikt och frågor och svar](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html). |
