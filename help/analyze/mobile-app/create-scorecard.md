@@ -4,7 +4,7 @@ title: Skapa ett mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: a50451010a4c972d4acdc11a5229406f47bdf292
+source-git-commit: b585743c835312b579ae810a04b7849c5e4f4953
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Om det datumintervall du vill använda inte har skapats ännu kan du skapa ett n
 
 Du kommer då till datumintervallsverktyget där du kan skapa och spara en ny datumintervallkomponent.
 
-### Visa datumintervall för jämförelse {#showo-comparison-dates}
+### Visa datumintervall för jämförelse {#show-comparison-dates}
 
 Om du vill inkludera datumintervall för jämförelse växlar du **Inkludera jämförelsedatum** inställning.
 
