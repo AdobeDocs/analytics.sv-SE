@@ -5,9 +5,9 @@ feature: Components
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: b0a3ee6785bdc2f3e9a55e42591b4846984934b6
+source-git-commit: d24c43ce9a192dcffa18b3c592dd8cb2e1416198
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Så här redigerar du en komponent i Data Dictionary:
 
    ![Administratörsvy för datamordlista](assets/data-dictionary-admin.png)
 
-1. Kontrollera att rätt Report Suite är markerat i listrutan.
+1. Kontrollera att rätt Report Suite är markerat i listrutan. Som standard visas den rapportsvit som du redan ingår i.
 
 1. (Valfritt) I sökfältet börjar du skriva namnet på komponenten som du vill redigera.
 

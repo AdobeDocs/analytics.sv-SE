@@ -1,8 +1,8 @@
 ---
-source-git-commit: 85d59d0a2b94953af457527a56d46faefb3ea94c
+source-git-commit: d24c43ce9a192dcffa18b3c592dd8cb2e1416198
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 2%
+source-wordcount: '604'
+ht-degree: 1%
 
 ---
 # Fragment
@@ -38,9 +38,9 @@ ht-degree: 2%
 |---------|----------|
 | [!UICONTROL **Godkänd**] | Anger att komponenten har granskats och godkänts av administratören. Administratörer ser en [!UICONTROL **Godkännande krävs**] för ej godkända komponenter. Om du väljer det här alternativet markeras det som Godkänt. |
 | [!UICONTROL **Beskrivning**] | Beskriver komponentens avsedda funktion. (Den här informationen läggs till av Analytics-administratören, enligt beskrivningen i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).) |
-| [!UICONTROL **Används ofta tillsammans med**] | Visar de 5 komponenter som oftast används med den komponent som du visar för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall. Listan baseras på data från de senaste 90 dagarna. Endast de komponenter som du har åtkomst till visas. |
-| [!UICONTROL **Liknar**] | Visar upp till 5 komponenter med liknande etiketter som den komponent du visar för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall. Endast de komponenter som du har åtkomst till visas. |
-| [!UICONTROL **Taggar**] | Visar alla taggar som har tillämpats på komponenten. |
+| [!UICONTROL **Används ofta tillsammans med**] | Visar de 5 komponenter som oftast används med den komponent som du visar för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall. Listan baseras på data från de senaste 90 dagarna. Endast de komponenter som du har åtkomst till visas. <!--Add info about how users with administrator access can control these after the feature is available. How?--> |
+| [!UICONTROL **Liknar**] | Visar upp till 5 komponenter med liknande etiketter som den komponent du visar för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall. Endast de komponenter som du har åtkomst till visas. <!--Add info about how users with administrator access can control these after the feature is available. How?--> |
+| [!UICONTROL **Taggar**] | Visar alla taggar som har tillämpats på komponenten. Användare med administratörsbehörighet kan lägga till taggar när komponenten redigeras. |
 | [!UICONTROL **Komponenttyp**] | Visar vilken typ av komponent det är, oavsett om det är en Dimension, ett mått, ett segment eller ett datumintervall. |
 | [!UICONTROL **Skapad av**] | Visar namnet på den användare som skapade komponenten. |
 | [!UICONTROL **Förhandsgranska**] | Visar en förhandsgranskning av hur komponenten ser ut i Analysis Workspace. |
