@@ -3,9 +3,9 @@ description: Länka till Adobe Analytics Admin API på github.
 title: Admin-API
 feature: Admin Tools
 exl-id: 51118977-bd7c-4f36-a35f-e2930c732574
-source-git-commit: 948a2429d7e73de90877ef40096064c0872a82d0
+source-git-commit: 41cd5266b2434ada040d21b6095a2417a80c0ef0
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '102'
 ht-degree: 9%
 
 ---
@@ -16,9 +16,9 @@ Följande Adobe Analytics API:er finns på Adobe Developer webbplats:
 
 >[!IMPORTANT]
 >
->Om du skapar en ny integrering rekommenderar Adobe starkt att du använder API:erna för 2.0.
+>Om du skapar en ny integrering rekommenderar Adobe starkt att du använder API:t för 2.0 när det är möjligt.
 
 
-* [**Adobe Analytics 2.0 API:er**](https://developer.adobe.com/analytics-apis/docs/2.0/): Med API:erna för Adobe Analytics 2.0 kan du anropa Adobe direkt för att utföra nästan alla åtgärder som du kan utföra i användargränssnittet.
+* [**Adobe Analytics 2.0 API**](https://developer.adobe.com/analytics-apis/docs/2.0/): Med API:t för Adobe Analytics 2.0 kan du anropa Adobe-servrar direkt för att utföra de vanligaste åtgärderna som du kan utföra i användargränssnittet.
 
-* [**Adobe Analytics 1.4 API:er**](https://developer.adobe.com/analytics-apis/docs/1.4/): API:erna i Adobe Analytics 1.4 är föregångare till API:erna i Analytics 2.0. De gör det möjligt att skapa dataintensiva användargränssnitt som du kan använda för att hantera och integrera data.
+* [**Adobe Analytics 1.4 API**](https://developer.adobe.com/analytics-apis/docs/1.4/): API:t för Adobe Analytics 1.4 är föregångaren till API:t för Analytics 2.0. Den innehåller några slutpunkter som ännu inte är tillgängliga i API:t för version 2.0.
