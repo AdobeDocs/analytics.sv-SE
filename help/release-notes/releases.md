@@ -3,9 +3,9 @@ description: Beskriver den kontinuerliga funktionsreleasestrategin för Adobe An
 title: Adobe Analytics funktionsreleaser
 feature: Release Notes
 exl-id: 1e403bef-4aab-4a9a-a358-62449ce801ff
-source-git-commit: 7a6a7438ae6dcfd514c8de66626331f3a0e8210d
+source-git-commit: cc18ac659400b572967e06cc2946d602e825bc97
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Adobe Analytics-releaser bygger på en kontinuerlig leveransmodell som ger en me
 
 * **Allmän tillgänglighet (GA)**: Funktionen är tillgänglig för 100 % av berättigade Experience Cloud-organisationer och har släppts fullständigt.
 
-För varje funktionsversion kan tidslinjen från RTP till GA variera. Målet är att hålla releaserna korta, så att en funktion blir GA inom två månader från lanseringsstarten (RTP).
+För varje funktionsversion kan tidslinjen från Start of Rollout till GA variera. Målet är att hålla releaserna korta, så att en funktion blir GA inom två månader efter utrullningsstarten.
 
 ## Funktionsflaggor
 
