@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 64a0bb6e04f4b56cd40676ea1c239f1beef8c41a
+source-git-commit: 8c4535a1811381e7a24735d7cbfffd241d5b19b9
 workflow-type: tm+mt
 source-wordcount: '3570'
 ht-degree: 35%
@@ -27,8 +27,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **Februari 2023** |  |
 | Implementering | Uppdaterat innehåll om hur man [implementera Adobe Analytics för webb och mobiler](../implement/home.md). |
-| Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/components/date-ranges/calendar.md). |
-| Mobil styrkort | Nytt dokumentationsavsnitt som beskriver hur du visar och döljer datumintervall för jämförelse. Se [Visa datumintervall för jämförelse](/help/mobile-app/create-scorecard.md) i CJA. |
+| Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md). |
+| Mobil styrkort | Nytt dokumentationsavsnitt som beskriver hur du visar och döljer datumintervall för jämförelse. Se [Visa datumintervall för jämförelse](/help/analyze/mobile-app/create-scorecard.md) i CJA. |
 | **Januari 2023** |  |
 | Filtrera och sortera tabeller | Uppdaterat innehåll (inklusive att lägga till procedurer och förklara tillgängliga alternativ) i [Filtrera och sortera tabeller](/help/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artikel. Artikelns namn ändrades från&quot;Sidnumrering, filtrering och sortering&quot;. |
 | Mappar | Dedikerade sidor för [Mapphantering](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
