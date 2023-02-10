@@ -1,7 +1,7 @@
 ---
-source-git-commit: d24c43ce9a192dcffa18b3c592dd8cb2e1416198
+source-git-commit: 3c57d8984634e626f5c50daf0554d660537281b5
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '650'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
    | [!UICONTROL **Segment**] | Visa endast komponenter som är segment. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) <!--this is Filters in CJA--> |
    | [!UICONTROL **Datumintervall**] | Visa endast komponenter som är datumintervall. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) |
    | [!UICONTROL **Beskrivning saknas**] | Visa endast komponenter som ännu inte har någon beskrivning i fältet Beskrivning. Det här alternativet är endast tillgängligt för administratörer. |
-   | [!UICONTROL **Dubbletter**] | Visa endast komponenter som har samma etikett eller samma beskrivning som en annan komponent i den valda rapportsviten. Det här alternativet är endast tillgängligt för administratörer. |
+   | [!UICONTROL **Dubbletter**] | Visa endast komponenter som har samma etikett eller samma beskrivning som en annan komponent i den valda rapportsviten. Det här alternativet är endast tillgängligt för administratörer. Etiketter eller beskrivningar måste vara exakta matchningar för att kunna visas som dubbletter. |
    | [!UICONTROL **Inga data nyligen**] | Visa endast komponenter som inte har samlat in några data under de senaste 90 dagarna. Det här alternativet är endast tillgängligt för administratörer. |
    | [!UICONTROL **Skapad av Adobe**] | Visa endast komponenter som har skapats av Adobe. Komponenter som har skapats av en administratör eller en annan användare i organisationen visas inte. |
    | [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
@@ -38,8 +38,8 @@ ht-degree: 1%
 |---------|----------|
 | [!UICONTROL **Godkänd**] | Anger att komponenten har granskats och godkänts av administratören. Administratörer ser en [!UICONTROL **Godkännande krävs**] för ej godkända komponenter. Om du väljer det här alternativet markeras det som Godkänt. |
 | [!UICONTROL **Beskrivning**] | Beskriver komponentens avsedda funktion. (Den här informationen läggs till av Analytics-administratören, enligt beskrivningen i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).) |
-| [!UICONTROL **Används ofta tillsammans med**] | Visar de 5 komponenter som oftast används med den komponent som du visar för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall. Listan baseras på data från de senaste 90 dagarna. Endast de komponenter som du har åtkomst till visas. <!--Add info about how users with administrator access can control these after the feature is available. How?--> |
-| [!UICONTROL **Liknar**] | Visar upp till 5 komponenter med liknande etiketter som den komponent du visar för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall. Endast de komponenter som du har åtkomst till visas. <!--Add info about how users with administrator access can control these after the feature is available. How?--> |
+| [!UICONTROL **Används ofta tillsammans med**] | <p>Visar de komponenter som oftast används för den komponent som du visar.</p><p>Upp till 5 komponenter visas för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall.</p><p>Listan baseras på data från de senaste 90 dagarna. Endast de komponenter som du har åtkomst till visas. <!--Add info about how users with administrator access can control these after the feature is available. How?--></p> |
+| [!UICONTROL **Liknar**] | <p>Visar komponenter med liknande etiketter som den komponent du visar.</p><p>Upp till 5 komponenter visas för de 5 primära komponenttyperna: Mått, Beräknade mått, Dimension, Segment och Datumintervall.</p><p>Endast de komponenter som du har åtkomst till visas.</p><p>Alla dubblettkomponenter i rapportsviten visas här. Analysadministratörer bör identifiera och ta bort alla dubblettkomponenter enligt beskrivningen i [Övervaka dataordlistans hälsa](/help/analyze/analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md). <!--Add info about how users with administrator access can control these after the feature is available. How?--></p> |
 | [!UICONTROL **Taggar**] | Visar alla taggar som har tillämpats på komponenten. Användare med administratörsbehörighet kan lägga till taggar när komponenten redigeras. |
 | [!UICONTROL **Komponenttyp**] | Visar vilken typ av komponent det är, oavsett om det är en Dimension, ett mått, ett segment eller ett datumintervall. |
 | [!UICONTROL **Skapad av**] | Visar namnet på den användare som skapade komponenten. |
