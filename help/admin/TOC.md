@@ -4,7 +4,7 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 948a2429d7e73de90877ef40096064c0872a82d0
+source-git-commit: e735997fed397cf8bb3eb3edcf9af9f841afb9d2
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 78%
@@ -25,14 +25,6 @@ ht-degree: 78%
       + [Produktprofiler för Adobe Analytics](admin-console/permissions/product-profile.md)
       + [Produktprofilbehörigheter för Report Suite-verktyg](admin-console/permissions/report-suite-tools.md)
       + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
-   + Användar- och produkthantering (äldre) {#user-product-management}
-      + [Användar- och produkthantering (äldre)](admin-console/user-management2/user-management.md)
-      + Use: Migrera användare till Adobe Admin Console {#migrate-users}
-         + [Migrering av Analytics-användare till Admin Console](admin-console/user-management2/user-migration/c-migration-tool.md)
-         + [Migrera Analytics-användarkonton för Adobe ID:n](admin-console/user-management2/user-migration/t-migrate-users.md)
-         + [Migrera Analytics-användarkonton för Enterprise och Federated ID](admin-console/user-management2/user-migration/migrate-enterprise.md)
-         + [Inaktivera äldre inloggningar](admin-console/user-management2/user-migration/t-disable-legacy-login.md)
-         + [API:er som påverkas av migreringen](admin-console/user-management2/user-migration/developer.md)
 + Administratörsverktyg för analyser {#admin-tools}
    + [Översikt över administrationsverktyg](admin/c-admin-tools.md)
    + [Fakturering](admin/billing-admin.md)
@@ -42,26 +34,6 @@ ht-degree: 78%
    + [Loggar](admin/logs.md)
    + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
    + Report Suite-hanterare {#manage-report-suites}
-      + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
-      + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
-      + [Spara en sökning i en rapportsvit](admin/c-manage-report-suites/t-report-suite-saved-search.md)
-      + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
-      + Ny rapportsvit {#c-new-report-suite}
-         + [Skapa en rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
-         + [Skapa en sammanslagen rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-rollups.md)
-         + [Skapa en rapportsvitgrupp](admin/c-manage-report-suites/c-new-report-suite/t-create-rs-group.md)
-         + [Ny rapportsvit – inställningar](admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
-         + [Inställningar som inte kopierats från en källrapportssvit](admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
-      + Rapportsvitmallar {#report-suite-templates}
-         + [Översikt över rapportsvitmallar](admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
-         + [Aggregatorportal](admin/c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
-         + [Handel](admin/c-manage-report-suites/c-report-suite-templates/commerce-admin.md)
-         + [Innehåll och media](admin/c-manage-report-suites/c-report-suite-templates/content-media.md)
-         + [Standardmall](admin/c-manage-report-suites/c-report-suite-templates/default-rs-template.md)
-         + [Finansiella tjänster](admin/c-manage-report-suites/c-report-suite-templates/financial-services.md)
-         + [Jobbportal](admin/c-manage-report-suites/c-report-suite-templates/job-portal.md)
-         + [Generering av leads](admin/c-manage-report-suites/c-report-suite-templates/lead-generation.md)
-         + [Supportmedia](admin/c-manage-report-suites/c-report-suite-templates/support-media.md)
       + Redigera inställningar för en rapportserie {#edit-report-suite}
          + Allmänt {#report-suite-general}
             + [Allmänna kontoinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
@@ -146,6 +118,26 @@ ht-degree: 78%
             + [Översikt över realtidsrapporter](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md)
             + [Konfiguration av rapporter i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md)
             + [Mätvärden och dimensioner som stöds i realtid](admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime-metrics.md)
+      + [Hantera rapportsviter](admin/c-manage-report-suites/report-suites-admin.md)
+      + [Sammanslagning och globala rapportsviter](admin/c-manage-report-suites/rollup-report-suite.md)
+      + [Spara en sökning i en rapportsvit](admin/c-manage-report-suites/t-report-suite-saved-search.md)
+      + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
+      + Ny rapportsvit {#c-new-report-suite}
+         + [Skapa en rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
+         + [Skapa en sammanslagen rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-rollups.md)
+         + [Skapa en rapportsvitgrupp](admin/c-manage-report-suites/c-new-report-suite/t-create-rs-group.md)
+         + [Ny rapportsvit – inställningar](admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
+         + [Inställningar som inte kopierats från en källrapportssvit](admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
+      + Rapportsvitmallar {#report-suite-templates}
+         + [Översikt över rapportsvitmallar](admin/c-manage-report-suites/c-report-suite-templates/report-suite-templates.md)
+         + [Aggregatorportal](admin/c-manage-report-suites/c-report-suite-templates/aggregator-portal.md)
+         + [Handel](admin/c-manage-report-suites/c-report-suite-templates/commerce-admin.md)
+         + [Innehåll och media](admin/c-manage-report-suites/c-report-suite-templates/content-media.md)
+         + [Standardmall](admin/c-manage-report-suites/c-report-suite-templates/default-rs-template.md)
+         + [Finansiella tjänster](admin/c-manage-report-suites/c-report-suite-templates/financial-services.md)
+         + [Jobbportal](admin/c-manage-report-suites/c-report-suite-templates/job-portal.md)
+         + [Generering av leads](admin/c-manage-report-suites/c-report-suite-templates/lead-generation.md)
+         + [Supportmedia](admin/c-manage-report-suites/c-report-suite-templates/support-media.md)
    + Företagsinställningar {#company-settings}
       + [Översikt över företagsinställningar](admin/company/c-company-settings.md)
       + [Säkerhetshanteraren](admin/company/security-manager.md)
@@ -163,6 +155,14 @@ ht-degree: 78%
       + [Visa användning av rapportsvit](admin/c-server-call-usage/report-suite-usage.md)
       + [Användningsvarningar för serversamtal](admin/c-server-call-usage/scu-alerts.md)
       + [Vanliga frågor om användning av serversamtal](admin/c-server-call-usage/overage-faq.md)
+   + Användar- och produkthantering (äldre) {#user-product-management}
+      + [Användar- och produkthantering (äldre)](admin/user-management2/user-management.md)
+      + Use: Migrera användare till Adobe Admin Console {#migrate-users}
+         + [Migrering av Analytics-användare till Admin Console](admin/user-management2/user-migration/c-migration-tool.md)
+         + [Migrera Analytics-användarkonton för Adobe ID:n](admin/user-management2/user-migration/t-migrate-users.md)
+         + [Migrera Analytics-användarkonton för Enterprise och Federated ID](admin/user-management2/user-migration/migrate-enterprise.md)
+         + [Inaktivera äldre inloggningar](admin/user-management2/user-migration/t-disable-legacy-login.md)
+         + [API:er som påverkas av migreringen](admin/user-management2/user-migration/developer.md)
 + Datastyrning {#data-governance}
    + [Arbetsflöde för datasekretess i Adobe Analytics](c-data-governance/an-gdpr-workflow.md)
    + [Frågor och svar](c-data-governance/gdpr-faq.md)
@@ -176,3 +176,4 @@ ht-degree: 78%
    + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
    + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
 + [Admin-API](c-admin-api/c-admin-api.md)
+
