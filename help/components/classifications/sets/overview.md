@@ -2,9 +2,9 @@
 title: Översikt över klassificeringsuppsättningar
 description: Använd Klassificeringsuppsättningar för att hantera klassificeringsdata.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
-source-git-commit: 4824170ae2465f3fa04ee588d9571e1cc73d11fc
+source-git-commit: 2ba6ffc7f632975ca16fa02ee79d467d4d53f076
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Den serverdelsarkitektur som lanserades med Klassificeringsuppsättningar inneh�
 
 Den serverdelsarkitektur som lanserades med Klassificeringsuppsättningar innehåller också flera tydliga ändringar:
 
-* Vid användning av webbläsarimport, &#39;[!UICONTROL Overwrite on conflict]&#39; är alltid aktiverat.
-* När du använder webbläsarimporten stöds inte längre alternativet att exportera direkt efter importen. Export måste initieras separat.
+* Vid användning av webbläsare eller FTP-import, &#39;[!UICONTROL Overwrite on conflict]&#39; är alltid aktiverat.
+* När du använder en webbläsare eller FTP-import stöds inte längre alternativet att exportera direkt efter importen. Export måste initieras separat.
 * API:t för Analytics 2.0 `GetDimensions` slutpunkten returnerar nu strängidentifierare för klassificeringar i stället för numeriska identifierare. Numeriska identifierare kan fortfarande användas, men Adobe rekommenderar att du använder de nya strängidentifierarna där det är möjligt. Numeriska identifierare kan hämtas med `?expansion=hidden` frågesträngsparameter.
 
 
