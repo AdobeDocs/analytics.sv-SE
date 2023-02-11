@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 8c4535a1811381e7a24735d7cbfffd241d5b19b9
+source-git-commit: 90914569256cf891cb3cf693843e7cf9ede2f4ce
 workflow-type: tm+mt
-source-wordcount: '3570'
-ht-degree: 35%
+source-wordcount: '3610'
+ht-degree: 34%
 
 ---
 
@@ -29,6 +29,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Implementering | Uppdaterat innehåll om hur man [implementera Adobe Analytics för webb och mobiler](../implement/home.md). |
 | Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md). |
 | Mobil styrkort | Nytt dokumentationsavsnitt som beskriver hur du visar och döljer datumintervall för jämförelse. Se [Visa datumintervall för jämförelse](/help/analyze/mobile-app/create-scorecard.md) i CJA. |
+| 1.4 API | The [Adobe Analytics 1.4 API](https://developer.adobe.com/analytics-apis/docs/1.4/) har fått en fullständig omskrivning och har nu publicerats på Adobe Developer. |
+| Spåra olika implementeringstyper | Användningsexemplet har uppdaterats [Spåra olika implementeringstyper](../implement/use-cases/cross-type-implementation.md) för att få plats med Experience Cloud ID-tjänsten. |
 | **Januari 2023** |  |
 | Filtrera och sortera tabeller | Uppdaterat innehåll (inklusive att lägga till procedurer och förklara tillgängliga alternativ) i [Filtrera och sortera tabeller](/help/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artikel. Artikelns namn ändrades från&quot;Sidnumrering, filtrering och sortering&quot;. |
 | Mappar | Dedikerade sidor för [Mapphantering](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |

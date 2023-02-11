@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 1e666e66af8fe5d8fdefbd84a4073556993a5a3e
+source-git-commit: 5015fd9b4ab98e31f30b4156d11ace554668a4b7
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 68%
+source-wordcount: '407'
+ht-degree: 75%
 
 ---
 
@@ -129,15 +129,14 @@ ht-degree: 68%
    + [Skapa ett datalager](prepare/data-layer.md)
    + [Att tänka på för den globala rapportsviten](prepare/global-rs.md)
    + [Implementera märkning för flera programsviter](prepare/multi-suite-tagging.md)
-   + [Implementeringsmodal](prepare/implementation-modal.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
    + [Ta hand om en befintlig Adobe Analytics-implementering](prepare/existing-implementation.md)
 + Implementera analyser med Experience Platform Edge {#aep-edge}
    + [Översikt över Experience Edge](aep-edge/overview.md)
    + [Variabelmappning](aep-edge/variable-mapping.md)
-   + Web SDK {#web-sdk}
-      + [Web SDK - översikt](aep-edge/web-sdk/overview.md)
-   + Mobile SDK {#mobile-sdk}
+   + Webb-SDK {#web-sdk}
+      + [Översikt över webb-SDK](aep-edge/web-sdk/overview.md)
+   + Mobil-SDK {#mobile-sdk}
       + [Mobile SDK - översikt](aep-edge/mobile-sdk/overview.md)
    + Edge API {#edge-api}
       + [Översikt över Edge API](aep-edge/edge-api/overview.md)
