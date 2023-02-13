@@ -5,9 +5,9 @@ feature: Components
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: b0a3ee6785bdc2f3e9a55e42591b4846984934b6
+source-git-commit: d8442f1ec8f35fbcda98b35070936677813ce330
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö.
 
-Systemadministratörer ansvarar för att strukturera informationen om varje komponent i datamappningen och göra den tillgänglig för användarna.
+Analysadministratörer ansvarar för att strukturera information om varje komponent i Data Dictionary så att den blir tillgänglig för användarna.
 
 ## Fördelar för användare
 
@@ -33,6 +33,8 @@ Den information som finns i ordlistan innehåller:
 * Komponenter som liknar de som du visar
 
 * Om en komponent har godkänts av systemadministratören
+
+Mer information om hur du kommer åt datamappen och om vilken information den innehåller finns i [Visa komponentinformation i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md).
 
 ## Fördelar för administratörer
 
@@ -67,7 +69,13 @@ Du kan komma åt datamodlistan på något av följande sätt i Analysis Workspac
 
 * Från menyn: [!UICONTROL **Hjälp**] > [!UICONTROL **Dataordlista**].
 
-   <!--add screenshot-->
+Mer information om de olika alternativen som finns i ordlistan finns i [Visa komponentinformation i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md).
+
+## Uppdatera och strukturera dataordlistan
+
+Analysadministratörer ansvarar för att upprätthålla en felfri datamordlista för sin organisation enligt beskrivningen i [Övervaka hälsotillstånd för dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md).
+
+Som en del av den här processen kan Analytics-administratörer redigera information om varje komponent i dataordlistan enligt beskrivningen i [Redigera komponentposter i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Flytta, minimera eller stänga datamappningslistan
 
