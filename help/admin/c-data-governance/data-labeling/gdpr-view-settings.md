@@ -3,9 +3,9 @@ description: Dialogrutan Sekretessetikett för datastyrning ger en översikt öv
 title: Visa/hantera integritetsetiketter för datastyrning
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: f135138de15f3fc788e637128daeb064d0d453af
+source-git-commit: 9397f12dc95d0dda258beff4dfbb5dd57f01cb40
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '835'
 ht-degree: 38%
 
 ---
@@ -30,11 +30,11 @@ The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt �
 | Inställning | Beskrivning |
 | --- | --- |
 | **[!UICONTROL Component Name]** | I den här kolumnen visas alla komponenter (dimensioner, mått) som ingår i den här rapportsviten. |
-| **[!UICONTROL Identity]** | Identitetsdata ”I”-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#identity-data-labels) |
-| **[!UICONTROL Sensitivity]** | Känsliga ”S”-etiketter används för att kategorisera känsliga data som geografiska data. Ytterligare etiketter för känsliga data kommer att införas i framtiden för att identifiera andra typer av känslig information. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#sensitive-data-labels) |
-| **[!UICONTROL GDPR Access]** | Etiketter för datastyrning ger användarna möjlighet att klassificera data som avspeglar sekretessrelaterade överväganden och avtalsvillkor så att de överensstämmer med regler och företagspolicyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#data-privacy-access-labels) |
-| **[!UICONTROL GDPR Delete]** | En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (dvs. som skulle göra det möjligt att identifiera den registrerade). [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#data-privacy-delete-labels) |
-| **[!UICONTROL Namespace]** | När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att ange ett namnutrymme. Du kan antingen använda ett tidigare definierat namnutrymme eller definiera ett nytt. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-labels.html?lang=en#section_F0A47AF8DA384A26BD56032D0ABFD2D7) |
+| **[!UICONTROL Identity]** | Identitetsdata ”I”-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/data-labels/gdpr-labels.html?lang=en#data-privacy-identity-labels) |
+| **[!UICONTROL Sensitivity]** | Känsliga ”S”-etiketter används för att kategorisera känsliga data som geografiska data. Ytterligare etiketter för känsliga data kommer att införas i framtiden för att identifiera andra typer av känslig information. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/data-labels/gdpr-labels.html?lang=en#sensitive-data-labels) |
+| **[!UICONTROL GDPR Access]** | Etiketter för datastyrning ger användarna möjlighet att klassificera data som avspeglar sekretessrelaterade överväganden och avtalsvillkor så att de överensstämmer med regler och företagspolicyer. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/data-labels/gdpr-labels.html?lang=en#data-privacy-access-labels) |
+| **[!UICONTROL GDPR Delete]** | En Ta bort-etikett krävs bara för fält som innehåller ett värde som skulle göra det möjligt att koppla en träff till den registrerade (dvs. som skulle göra det möjligt att identifiera den registrerade). [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/data-labels/gdpr-labels.html?lang=en#data-privacy-delete-labels) |
+| **[!UICONTROL Namespace]** | När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att ange ett namnutrymme. Du kan antingen använda ett tidigare definierat namnutrymme eller definiera ett nytt. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/data-labels/gdpr-labels.html?lang=en#provide-namespace) |
 | **[!UICONTROL Category]** | Refererar typ av komponent, t.ex. standardkomponent, konverteringsvariabel. |
 
 {style=&quot;table-layout:auto&quot;}

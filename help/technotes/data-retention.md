@@ -3,9 +3,9 @@ title: Datalagringspolicy
 description: En datalagringspolicy avgör hur länge Adobe lagrar dina data.
 feature: Privacy
 exl-id: f3bb02d2-380d-4eb7-8449-e0318fc8c0a6
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 9397f12dc95d0dda258beff4dfbb5dd57f01cb40
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ När data överskrider din datalagringspolicy behåller Adobe rätten att ta bor
 
 ## Visa/hantera aktuell datalagringspolicy
 
-Dialogrutan Datastyrning i [!UICONTROL Admin] Verktyg ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning. Här anges också om de har mappats till en Experience Cloud-organisation och om det finns en datalagringspolicy för den här rapportsviten. [Mer info](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)
+Dialogrutan Datastyrning i [!UICONTROL Admin] Verktyg ger en översikt över vilka rapportsviter som har konfigurerats för datastyrning. Här anges också om de har mappats till en Experience Cloud-organisation och om det finns en datalagringspolicy för den här rapportsviten. [Mer info](/help/admin/c-data-governance/an-gdpr-workflow.md)
 
 ## Frågor och svar
 
