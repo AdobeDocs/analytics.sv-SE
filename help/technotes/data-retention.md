@@ -3,9 +3,9 @@ title: Datalagringspolicy
 description: En datalagringspolicy avgör hur länge Adobe lagrar dina data.
 feature: Privacy
 exl-id: f3bb02d2-380d-4eb7-8449-e0318fc8c0a6
-source-git-commit: 9397f12dc95d0dda258beff4dfbb5dd57f01cb40
+source-git-commit: 7b5a2ef1f96de5dfa59f70c6e017a2caa3920378
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,3 +54,4 @@ Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffni
 **När tar Adobe bort data?**
 
 Kontakta er organisations kontoansvarige för den specifika tid då era data ska tas bort. Data tas vanligtvis bort rullande månadsvis.
+

@@ -3,10 +3,10 @@ description: Dialogrutan Sekretessetikett för datastyrning ger en översikt öv
 title: Visa/hantera integritetsetiketter för datastyrning
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: 9397f12dc95d0dda258beff4dfbb5dd57f01cb40
+source-git-commit: 7b5a2ef1f96de5dfa59f70c6e017a2caa3920378
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 38%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,15 +17,15 @@ The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt �
 ## Visa sekretessetiketter {#view-privacy}
 
 1. Logga in på Adobe Experience Cloud.
-1. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data configuration & collection]** > **[!UICONTROL Data Governance]**.
+2. Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Data configuration & collection]** > **[!UICONTROL Data Governance]**.
 
    >[!NOTE]
    >
    >Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörigheter för den här funktionen.
 
-1. Överst till höger väljer du en rapportserie vars sekretessetiketter du vill visa eller hantera.
+3. Överst till höger väljer du en rapportserie vars sekretessetiketter du vill visa eller hantera.
 
-   ![](assets/privacy_labeling.png)
+![](assets/privacy_labeling.png)
 
 | Inställning | Beskrivning |
 | --- | --- |
