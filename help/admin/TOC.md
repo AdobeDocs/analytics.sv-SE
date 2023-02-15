@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: e735997fed397cf8bb3eb3edcf9af9f841afb9d2
+source-git-commit: 1ca7040156f7f2105a9625f921de3d90b4175056
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 78%
+source-wordcount: '574'
+ht-degree: 80%
 
 ---
 
@@ -163,17 +163,5 @@ ht-degree: 78%
          + [Migrera Analytics-användarkonton för Enterprise och Federated ID](admin/user-management2/user-migration/migrate-enterprise.md)
          + [Inaktivera äldre inloggningar](admin/user-management2/user-migration/t-disable-legacy-login.md)
          + [API:er som påverkas av migreringen](admin/user-management2/user-migration/developer.md)
-+ Datastyrning {#data-governance}
-   + [Arbetsflöde för datasekretess i Adobe Analytics](c-data-governance/an-gdpr-workflow.md)
-   + [Frågor och svar](c-data-governance/gdpr-faq.md)
-   + Dataetiketter {#data-labels}
-      + [Dataintegritetsetiketter för analyskomponenter](c-data-governance/data-labeling/gdpr-labels.md)
-      + [Data i etikettrapportsvit](c-data-governance/data-labeling/gdpr-setup-reportsuite.md)
-      + [Visa/hantera integritetsetiketter för rapportsviten](c-data-governance/data-labeling/gdpr-view-settings.md)
-      + [Bästa praxis för etikettering](c-data-governance/data-labeling/gdpr-analytics-ids.md)
-      + [Exempel på etiketter](c-data-governance/data-labeling/gdpr-labeling-example.md)
-      + [Namnutrymmen](c-data-governance/data-labeling/gdpr-namespaces.md)
-   + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
-   + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
 + [Admin-API](c-admin-api/c-admin-api.md)
 

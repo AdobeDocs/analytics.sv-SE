@@ -3,11 +3,11 @@ product: analytics
 audience: all
 user-guide-title: Tekniska anteckningar för Analytics
 breadcrumb-title: Tekniska anteckningar
-user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst analysverktyg eller en viss komponent.
-source-git-commit: 1e2284fd4a62816b27b33a91f3bee2575a852107
+user-guide-description: Bläddra i en kunskapsbas som innehåller användbara artiklar som inte tillhör ett visst verktyg eller en viss komponent i Analytics.
+source-git-commit: 1ca7040156f7f2105a9625f921de3d90b4175056
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 68%
+source-wordcount: '243'
+ht-degree: 74%
 
 ---
 
@@ -43,6 +43,18 @@ ht-degree: 68%
    + [Alternativ för att minska effekten av webbläsar-cookie-begränsningar](cookies/cookieless.md)
 + [Datalagring](data-retention.md)
 + [Uteslut data](exclude-data.md)
++ Datastyrning {#data-governance}
+   + [Arbetsflöde för datasekretess i Adobe Analytics](c-data-governance/an-gdpr-workflow.md)
+   + [Frågor och svar](c-data-governance/gdpr-faq.md)
+   + Dataetiketter {#data-labels}
+      + [Dataintegritetsetiketter för analyskomponenter](c-data-governance/data-labeling/gdpr-labels.md)
+      + [Data i etikettrapportsvit](c-data-governance/data-labeling/gdpr-setup-reportsuite.md)
+      + [Visa/hantera integritetsetiketter för rapportsviten](c-data-governance/data-labeling/gdpr-view-settings.md)
+      + [Bästa praxis för etikettering](c-data-governance/data-labeling/gdpr-analytics-ids.md)
+      + [Exempel på etiketter](c-data-governance/data-labeling/gdpr-labeling-example.md)
+      + [Namnutrymmen](c-data-governance/data-labeling/gdpr-namespaces.md)
+   + [ID-expansion](c-data-governance/gdpr-id-expansion.md)
+   + [Undantag för CNIL-samtycke](c-data-governance/cnil-consent-exemption.md)
 + [IP-adresser och domäner som används av Adobe Analytics](ip-addresses.md)
 + [Latens](latency.md)
 + [Lågtrafikvärde](low-traffic.md)
