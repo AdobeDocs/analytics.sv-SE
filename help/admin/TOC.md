@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 1ca7040156f7f2105a9625f921de3d90b4175056
+source-git-commit: d712a64111ff5ee9856196a60265de4b395f53b2
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 80%
+source-wordcount: '572'
+ht-degree: 76%
 
 ---
 
@@ -39,11 +39,11 @@ ht-degree: 80%
             + [Allmänna kontoinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md)
             + [Interna URL-filter](admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md)
             + [Anpassa kalender](admin/c-manage-report-suites/c-edit-report-suites/general/custom-calendar.md)
-            + Betald sökdetektering {#paid-search-detection}
+            + Betalsökningsidentifiering {#paid-search-detection}
                + [Översikt över betald sökdetektering](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md)
                + [Konfigurera betald sökdetektering](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/t-paid-search-detection.md)
             + [Anpassa menyer](admin/c-manage-report-suites/c-edit-report-suites/general/customize-menus.md)
-            + Behandlingsregler {#c-processing-rules}
+            + Bearbetningsregler {#c-processing-rules}
                + [Översikt över behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md)
                + Bearbetningsregler {#c-processing-rules-configuration}
                   + [Så fungerar behandlingsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/processing-rules-about.md)
@@ -71,7 +71,7 @@ ht-degree: 80%
                + [Vanliga robotsignaturer](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-signatures.md)
                + [Punktexkluderingsmetoder](admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-exclusion-methods.md)
             + [Sekretessinställningar](admin/c-manage-report-suites/c-edit-report-suites/general/privacy-settings.md)
-            + [Tidsstämplar (valfritt)](admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md)
+            + [Konfiguration av tidsstämplar](admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md)
             + Vidarebefordran på serversidan {#server-side-forwarding}
                + [Översikt över vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md)
                + [GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan](admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-gdpr.md)
@@ -99,9 +99,9 @@ ht-degree: 80%
             + [Listvariabler](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md)
             + [Marknadsförande eVars](admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/merchandising-evars.md)
          + Marknadsföringskanaler {#marketing-channels}
-            + [Hantera marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md)
-            + [Bearbetningsregler för marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md)
-            + [Klassificeringar i marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/classifications-mchannel.md)
+            + [Marknadsföringskanalhanterare](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md)
+            + [Bearbetningsregler för marknadsföringskanal](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md)
+            + [Klassificeringar av marknadsföringskanaler](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/classifications-mchannel.md)
             + [Utgångsdatum för marknadsföringskanal](admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/visitor-engagement.md)
          + Trafikhantering {#traffic-management}
             + [Översikt](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/traffic-management.md)
