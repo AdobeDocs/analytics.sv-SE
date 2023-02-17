@@ -3,9 +3,9 @@ title: Besök
 description: En sekvens med sidvisningar under en session.
 feature: Metrics
 exl-id: 4f78f2b5-f958-44fe-876a-83f07980beec
-source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
+source-git-commit: ceee6f27581abc288ff08134218ae7f6b93e9201
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '656'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Ett besök hör alltid till en tidsperiod, så du vet om du ska räkna med ett n
 * **30 minuters inaktivitet**: Nästan alla sessioner avslutas på det här sättet. Om det tar mer än 30 minuter mellan träffarna börjar ett nytt besök.
 * **12 timmars aktivitet**: Om en användare konsekvent skickar bildförfrågningar utan 30 minuters mellanrum i mer än 12 timmar, startar ett nytt besök automatiskt.
 * **2 500 träffar**: Om en användare skapar ett stort antal träffar utan att starta en ny session räknas ett nytt besök efter 2 500 bildförfrågningar.
-* **100 träffar på 100 sekunder**: Om ett besök består av fler än 100 träffar på mindre än 100 sekunder avslutas besöket automatiskt. Detta beteende indikerar vanligtvis båda aktiviteterna och begränsningen används för att öka rapportens prestanda.
+* **100 träffar på 100 sekunder**: Om ett besök har fler än 100 träffar under de första 100 sekunderna av besöket upphör besöket automatiskt. Detta beteende indikerar vanligtvis båda aktiviteterna och begränsningen används för att öka rapportens prestanda.
 
 Ett besök sammanfaller inte nödvändigtvis med en webbläsarsession på grund av ovanstående kriterier. En av de vanligaste skillnaderna är var en besökare navigerar till webbplatsen, lämnar fliken öppen i mer än 30 minuter och sedan fortsätter surfningen. Även om denna åtgärd tekniskt sett ingår i samma surfsession anser Adobe att denna åtgärd är två separata besök.
 
