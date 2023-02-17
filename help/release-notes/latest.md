@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: fa3faf6158f3ad59ac95fd226a5c8d9116f27a6f
+source-git-commit: 9c716438e4802d7dcdeab3302295e651cb5df30e
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '984'
 ht-degree: 3%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (februari 2023)
 
-**Senaste uppdatering**: 15 februari 2023
+**Senaste uppdatering**: 17 februari 2023
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -35,9 +35,9 @@ AN-302282; AN-303127; AN-303541; AN-303550; AN-305282; AN-306504; AN-307351; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **Uppdatera till enhetssökningar på grund av Google klienttips** | 17 februari 2023 | **Användningen av klienttips, som planerades till den 16 februari 2023, sköts upp för att bättre säkerställa kvaliteten på enhetssökningar med hjälp av tips. Vi kommer att meddela ett nytt distributionsdatum inom kort.** [Läs mer](/help/technotes/client-hints.md) |
 | **Tillgänglighet för Analytics Source Connector** | 15 februari 2023 | Den 28 februari 2023 kommer Analytics Source Connector att vara tillgänglig i Adobe Experience Platform nya datacenter i Kanada. |
 | **Automatisk migrering till arkitekturen för klassificeringsuppsättning** | 8 februari 2023 | Under de kommande månaderna planerar Adobe att migrera alla klassificeringar i alla organisationer till den senaste klassificeringsarkitekturen. De sista kunderna som migrerar beräknas inträffa i maj 2023. Ingen kundåtgärd krävs, och ingen driftstopp förväntas. Den nya arkitekturen har många fördelar, bland annat:<ul><li>Betydande minskning av bearbetningstiden (72 timmar → 24 timmar)</li><li>Möjligheten att använda [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) UI</li><li>Alternativet att använda klassificeringsdata i Adobe Experience Platform i framtiden via [Adobe Analytics källanslutning för klassificeringsdata](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/classifications.html)</li></ul>Observera följande ändringar som kan påverka organisationens arbetsflöde:<ul><li>Vid användning av webbläsare eller FTP-import, &#39;[!UICONTROL Overwrite on conflict]&#39; är alltid aktiverat.</li><li>När du använder en webbläsare eller FTP-import stöds inte längre alternativet att exportera direkt efter importen.</li><li>API:t för Analytics 2.0 `GetDimensions` slutpunkten returnerar nu strängidentifierare för klassificeringar i stället för numeriska identifierare. Numeriska identifierare kan fortfarande användas, men Adobe rekommenderar att du använder de nya strängidentifierarna där det är möjligt. Numeriska identifierare kan hämtas med `?expansion=hidden` frågesträngsparameter.</li></ul>Kontakta Adobe kundtjänst om du vill ha ett mer specifikt migreringsschema för din organisation, eller har frågor om migreringen. [Läs mer](/help/components/classifications/sets/overview.md) |
-| **Uppdatera till enhetssökningar på grund av Google klienttips** | 25 januari 2023 | Användningen av klienttips i enhetssökning börjar på **16 februari 2023**. <p> <p>Från och med oktober 2022 är det möjligt att samla in klienttips med antingen Web SDK- eller AppMeasurement JavaScript-biblioteken. Men klienttips kommer inte att införlivas i enhetssökning förrän i februari 2023. Då kommer Adobe att börja använda klienttips förutom användaragenten när vissa enhetsuppgifter hämtas från Chromium-webbläsare, som Google Chrome och Microsoft Edge. Detta är ett svar på Google plan att gradvis minska informationen som presenteras från användaragentsträngen i stället för data som skickas via klienttips. <p> <p>Som en del av den här ändringen använder Adobe enhetskartan för alla enhetssökningar som är relaterade till användaragenten. [Läs mer](/help/technotes/client-hints.md) |
 
 {style=&quot;table-layout:auto&quot;}
 
