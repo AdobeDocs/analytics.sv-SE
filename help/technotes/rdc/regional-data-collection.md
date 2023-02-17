@@ -3,30 +3,39 @@ title: Regional datainsamling
 description: Information om regional datainsamling
 feature: Regional Data Collection
 exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
-source-git-commit: 60c2422ef32a4fadbb975006c111d12878a98f53
+source-git-commit: 88d6edd99c96d19980464e0f1cfa5cc867baf645
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 # Regional datainsamling
 
-Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan slutanvändarna och Adobe Experience Cloud sker så nära slutanvändarna som möjligt. Detta förbättrar prestanda för er webbplats/app och säkerställer att data samlas in så snabbt som möjligt för att optimera slutanvändarens upplevelse. När data från dina digitala egenskaper samlas in lokalt på ett datainsamlingscenter (DCC) vidarebefordras de via en säker anslutning till ett datacenter där de bearbetas och görs tillgängliga för produkter i Adobe Experience Cloud.
+Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe sker så nära besökarna som möjligt. När data har samlats in regionalt på ett datainsamlingscenter (DCC) vidarebefordras de via en säker anslutning till ett datacenter (DPC). Efter bearbetning är uppgifterna tillgängliga för Adobe Experience Cloud-produkter.
 
->[!IMPORTANT]
->
->Det kinesiska paketet för prestandaoptimering (Kina Performance Optimization) är ett tilläggsprogram som kan debiteras Adobe Analytics. Adobe Performance Optimization på det kinesiska fastlandet gör det möjligt för kunder med användare i Kina att skicka dessa data direkt till Adobe edge collection-servrar i Kina, i stället för till andra platser globalt. Detta förbättrar sidinläsningstiden och datakvaliteten jämfört med att skicka data till noder utanför Kina. Observera att data i slutändan överförs till ett Adobe Data Processing Center (DPC) utanför Kina. Kontakta din säljare på Adobe för mer information.
+I den regionala datainsamlingsprocessen används följande steg:
+
+1. DNS löser automatiskt samlingens värdnamn till IP-adressen för datainsamlingscentret närmast besökaren.
+1. Besökaren skickar data till den platsen.
+1. Uppgifterna vidarebefordras omedelbart via en säker anslutning till Data Processing Center, där de behandlas och görs tillgängliga för Adobe Experience Cloud-produkterna.
+
+Att använda regional datainsamling ger flera fördelar:
+
+* **Prestanda**: Med RDC kan besökarna ansluta till närmaste DCC. Denna optimering ger den snabbaste svarstiden, vilket ger mer exakt spårning och snabbare laddningstider.
+* **Redundans**: Om kommunikationen mellan DCC och din DPC avbryts, sparar Adobe RDC-infrastrukturen data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs.
 
 Följande platser (kan ändras) ingår för närvarande i RDC:
 
 ## Datainsamling från tredje part
 
 | Typ av domänkontrollant | Datainsamlingscentral |
-|---------------------|-------------------|
+| --- | --- |
 | Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney, Kina* |
 
-*China RDC kräver China Add-On-paketet. Se&quot;Viktigt&quot;-texten ovan.
+{style=&quot;table-layout:auto&quot;}
+
+*China RDC kräver China Add-On-paketet. Se [Prestandaoptimering för Kina](#china-performance-optimization) nedan.
 
 >[!NOTE]
 >
@@ -35,7 +44,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 ## Insamling av data från första part
 
 | Typ av domänkontrollant | Datainsamlingscentral |
-|---------------------|-------------------|
+| --- | --- |
 | Global (standard) | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney |
 | Global + Kina* | Kina*, Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney |
 | Endast Amerika | Oregon, Virginia |
@@ -43,23 +52,14 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 | Endast Asien och Stillahavsområdet | Mumbai, Singapore, Tokyo, Sydney |
 | Endast Kina* | Beijing |
 
-*Endast Kina och Global + China RDC-typer kräver paketet China Add-On. Se&quot;Viktigt&quot;-texten ovan. Global + Kina kommer att dirigera data med ursprung i Kina till vår kinesiska lokala domänkontrollant medan data med ursprung utanför Kina slussas vidare till närmaste lokala domänkontrollant utanför Kina.
+{style=&quot;table-layout:auto&quot;}
 
->[!NOTE]
->
->Experience Edge Global ger bästa prestanda för dina slutanvändare.  Om du vill använda en alternativ RDC-typ kontaktar du Adobe kundtjänst för att få hjälp.
+*Endast Kina och Global + China RDC-typer kräver paketet China Add-On. Global + Kina skickar data från Kina till Adobe Kina och skickar data med ursprung utanför Kina till närmaste lokala domänkontrollant utanför Kina. Se [Prestandaoptimering för Kina](#china-performance-optimization) nedan.
 
-## Fördelar med RDC
+## Prestandaoptimering för Kina
 
-| Fördelar | Beskrivning |
-| --- | --- |
-| Prestanda | Med RDC kan besökarna ansluta till närmaste DCC. Detta ger den snabbaste svarstiden, vilket ger mer exakt spårning och snabbare laddningstider. |
-| Redundans | Om kommunikationen mellan DCC och din DPC avbryts, sparar Adobe RDC-infrastrukturen data lokalt och vidarebefordrar den sedan till DPC när kommunikationen återställs. |
+Tilläggspaketet för Kina-prestandaoptimering (RDC) är ett avgiftsbelagt tillägg till Adobe Analytics. Adobe Performance Optimization in Mainland China gör det möjligt för kunder med användare i Kina att skicka dessa data direkt till Adobe datainsamlingsservrar i Kina i stället för till andra platser globalt. Denna optimering förbättrar sidinläsningstiden och datakvaliteten jämfört med att skicka data till platser utanför Kina. Data överförs slutligen till ett av Adobe databearbetningscenter (DPC) utanför Kina. Kontakta din säljare på Adobe för mer information.
 
-## Så här fungerar RDC
+>!![NOTE]
+Det kinesiska RDC-tilläggspaketet stöds inte för [Web SDK](/help/implement/aep-edge/overview.md).
 
-I följande lista beskrivs den datainsamlingsprocess som används av Adobe:
-
-1. DNS löser automatiskt samlingens värdnamn till IP-adressen för datainsamlingscentret som finns närmast besökaren.
-1. Besökaren skickar data till den platsen.
-1. Uppgifterna vidarebefordras omedelbart via en säker anslutning till Data Processing Center, där de behandlas och görs tillgängliga för Adobe Experience Cloud-produkterna.
