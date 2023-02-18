@@ -3,16 +3,18 @@ title: Spårningskod
 description: Namnet på spårningskoden eller kampanjen.
 feature: Dimensions
 exl-id: e4f70552-6946-4974-a9e2-928faf563ecd
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: e46b15eedda78303e6e29faceea6db8483eee277
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
 
 # Spårningskod
 
-Dimensionen Spårningskod visar namnen på spårningskoderna på din webbplats. Den här dimensionen samlas vanligtvis in med frågesträngsparametrar. Du kan placera länkar med olika parametervärden för frågesträngar på olika platser på Internet. Denna dimension rapporterar vilka länkar som var mest framgångsrika när det gäller att köra trafik till din plats.
+Dimensionen Spårningskod visar namnen på spårningskoderna på din webbplats. Du kan placera länkar med olika parametervärden för frågesträngar på olika platser på Internet. Denna dimension hjälper er att förstå vilka länkar som var mest framgångsrika när det gäller att köra trafik till er webbplats.
+
+Det är vanligt att lägga till spårningskodfrågesträngar i e-postmeddelanden, annonser, inlägg i sociala medier och andra marknadsföringsaktiviteter som används i organisationen.
 
 ## Fyll den här dimensionen med data
 
@@ -20,7 +22,7 @@ Den här dimensionen hämtar data från [`v0` frågesträng](/help/implement/val
 
 ## Dimensioner
 
-Bland Dimensionerna finns namnen på spårningskoderna på webbplatsen. Din organisation avgör vilka specifika dimensionsobjekt du vill använda.
+Bland Dimensionerna finns namnen på spårningskoderna på webbplatsen. Din organisation avgör vilka specifika dimensionsobjekt du vill använda. Se [Kampanjspårning](/help/implement/use-cases/campaign-tracking.md) för mer information.
 
 ## Jämför spårningskoddimensionen med marknadsföringskanaler som samlar in spårningskoder
 
