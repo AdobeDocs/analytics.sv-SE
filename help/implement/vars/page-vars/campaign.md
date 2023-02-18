@@ -3,9 +3,9 @@ title: kampanj
 description: Fyll i dimensionen 'Spårningskod'.
 feature: Variables
 exl-id: 2278d2b8-8d60-4634-a176-f027a237bc12
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: e46b15eedda78303e6e29faceea6db8483eee277
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 The `campaign` variabeln används för att samla in spårningskoder på din webbplats. I tidigare versioner av Adobe Analytics hade programmet en speciell behandling där det kunde användas som en uppdelning på de flesta dimensioner. I den aktuella versionen av Adobe Analytics fungerar den likadant som en eVar.
 
-Den här variabeln fyller i dimensionen &#39;Tracking Code&#39;.
+Den här variabeln fyller i [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. Det hämtar vanligtvis sitt värde från en frågesträng med [`getQueryParam`](/help/implement/vars/plugins/getqueryparam.md) utility-metod. Din organisation bestämmer dock exakt hur variabeln ska ställas in.
 
 ## Campaign med Web SDK
 

@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 5015fd9b4ab98e31f30b4156d11ace554668a4b7
+source-git-commit: e46b15eedda78303e6e29faceea6db8483eee277
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -177,7 +177,7 @@ ht-degree: 75%
 + Användningsfall för implementering {#use-cases}
    + [Använd AppMeasurement med iFrames](use-cases/iframe.md)
    + [Spåra på olika implementeringstyper](use-cases/cross-type-implementation.md)
-   + [Extern e-postspårning](use-cases/email-external.md)
+   + [Arbetsflöde för kampanjspårning](use-cases/campaign-tracking.md)
 + Validera din implementering {#validate}
    + [Äldre Adobe Experience Cloud-felsökare](validate/debugger.md)
    + [Frågeparametrar för datainsamling](validate/query-parameters.md)
