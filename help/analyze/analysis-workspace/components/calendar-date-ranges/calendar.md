@@ -4,9 +4,9 @@ title: Översikt över kalender- och datumintervall
 feature: Calendar
 role: User, Admin
 exl-id: fbf4bc18-65ba-4e39-96c1-4c41a8e3baa9
-source-git-commit: bec3ddc1f5ccf7b4baddabb0a376ed5775318df7
+source-git-commit: feb6942a54f61850ce11e08008b5694c53436e6d
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
@@ -78,3 +78,10 @@ När du använder en veckobaserad anpassad kalender och lägger till månader el
 ### Om segment som använder rullande datum och relativa paneldatumintervall {#segments-relative-dates}
 
 Om du skapar ett segment eller använder ett segment med ett rullande datum, t.ex. de senaste 7 dagarna eller de senaste 2 veckorna, och du klickar på segmentförhandsvisningen, startar det rullande datumet från *Idag* i stället för panelens startdatum. Det innebär att förhandsvisningen av segmentet inte matchar när du faktiskt använder segmentet i tabellen. Förhandsgranskningen påverkas, inte själva segmentet.
+
+## Riktlinjer för paneldatumintervall och förhandsvisningar {#guidelines-panel-dates}
+
+* Från och med februari-versionen baseras förhandsgranskningarna av komponenter och data på panelens datumintervall och inte på de senaste 90 dagarna.
+* Alla komponenter i den vänstra listen är tillgängliga baserat på panelens datumintervall.
+* Alla förhandsvisningar av datum i segmentet och beräknade mätvärden baseras på panelens datumintervall (såvida de inte öppnas från komponenthanterarna, som inte har någon associerad panel, kommer de fortfarande att baseras på de senaste 90 dagarna).
+* Förhandsgranskningar av data visar data eller komponenter baserat på panelens datumintervall.
