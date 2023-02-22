@@ -3,9 +3,9 @@ description: Frågor och svar om hur man hanterar äldre segment.
 title: Frågor och svar om äldre segment
 feature: Segmentation
 exl-id: 316e2a2e-55d3-4c23-9985-9a6d90390e86
-source-git-commit: 3901376a9a19e40650cce56c8e7d2941add73790
+source-git-commit: 83542d77b26e5fdf7545e4deced35da84263848b
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1446'
 ht-degree: 1%
 
 ---
@@ -153,8 +153,9 @@ Strängbaserade dimensioner med en känd uppsättning värden ändrades till upp
 
 Följande dimensioner ändrades till uppräknade listor:
 
+| Dimensionens namn | Dimensionens namn | Dimensionens namn |
+| --- | --- | --- |
 | mobiltillverkare | mobil e-postlängd | färgdjup |
-|---|---|---|
 | mobilskärmstorlek | mobilenhetsnummer | bildskärmsupplösning |
 | mobilskärmshöjd | mobilpush för att prata | plugin |
 | stöd för mobilcookies | mobilmejldekoration | operativsystem |
