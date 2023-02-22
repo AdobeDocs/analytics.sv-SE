@@ -1,11 +1,11 @@
 ---
-description: Med Adobe Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter.
+description: Lär dig mer om de olika segmenteringsbehållarna och hur du använder dem
 keywords: segmentering;segment
-title: Analytics-segmentering
+title: Segmentbehållare
 feature: Segmentation
-source-git-commit: d361e9e97e9652acab317014aba53af49115c07c
+source-git-commit: 3569cea351a61eb79e1b8f5dad76905f8054982b
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3105'
 ht-degree: 0%
 
 ---
