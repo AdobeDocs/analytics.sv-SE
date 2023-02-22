@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 6b216a9af4b5614203b0f34fa754985b12ff59ea
+source-git-commit: 74a6f05817cf93eb95dc7b5546b3e5155a08c725
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 51%
+source-wordcount: '687'
+ht-degree: 50%
 
 ---
 
@@ -152,7 +152,8 @@ ht-degree: 51%
    + [Besök](metrics/visits.md)
 + Segmentering {#segmentation}
    + [Analytics-segmentering](segmentation/seg-home.md)
-   + [Om segment och behållare](segmentation/seg-overview.md)
+   + [Om segment](segmentation/seg-overview.md)
+   + [Om segmentbehållare](segmentation/seg-containers.md)
    + [Segmenteringsfunktioner i Analysis Workspace](segmentation/segmentation-in-analysis-workspace.md)
    + Arbetsflöde för segmentering {#segmentation-workflow}
       + [Översikt över segmenteringsarbetsflöde](segmentation/segmentation-workflow/seg-workflow.md)
@@ -173,7 +174,7 @@ ht-degree: 51%
       + [Segmentkompatibilitet för Data Warehouse](segmentation/seg-reference/seg-compatibility.md)
       + [Segmentbehörigheter efter roll](segmentation/seg-reference/seg-rights.md)
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
-   + [Frågor och svar](segmentation/seg-transition.md)
+   + [Frågor och svar om hantering av äldre segment ](segmentation/seg-transition.md)
    + [God praxis](segmentation/best-practices.md)
 + Beräknade mätvärden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) värden](c-calcmetrics/cm-overview.md)
