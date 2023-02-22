@@ -3,9 +3,9 @@ description: Med segment kan du identifiera undergrupper av besökare baserat p�
 title: Om segment
 feature: Segmentation
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: 385c27de382b7bb047b6c62420d0471dd6e1650d
+source-git-commit: 14c5acb9dbd46fac3dc2465c1200b478853270e9
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1153'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Analysis Workspace innehåller följande funktioner:
 
 ## Segment som tillhandahålls av Adobe
 
-Komponentspåret till vänster på skärmen visar segment som har skapats av dig och ditt företag, samt segment i Adobe som ingår i paketet. När du klickar **[!UICONTROL Show all]**, visas dessa segment vanligtvis längst ned i listan och identifieras av Adobe-logotypen till höger:
+Komponentspåret till vänster på skärmen visar segment som har skapats av dig och ditt företag, samt segment i Adobe som ingår i paketet. När du klickar **[!UICONTROL Show all]**, visas dessa segment oftast längst ned i listan och identifieras av Adobe-logotypen till höger. Detta är en del av en lista över segment som tillhandahålls av Adobe:
 
 ![Adobe segment](assets/adobe-segs.png)
 
@@ -76,7 +76,7 @@ Sekventiella segment kan baseras på följande träffvärden:
 
 Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtgärder med [!UICONTROL THEN] -operator.
 
-## Videoinstruktion {#segment-video}
+## Video om hur man segmenterar {#segment-video}
 
 Den här videon ger en kort översikt över vilka segmentbehållare som är och hur de används: [Segmentbehållare i Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-containers.html)
 

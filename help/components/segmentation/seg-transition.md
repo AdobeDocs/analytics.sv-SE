@@ -3,9 +3,9 @@ description: Frågor och svar om hur man hanterar äldre segment.
 title: Frågor och svar om äldre segment
 feature: Segmentation
 exl-id: 316e2a2e-55d3-4c23-9985-9a6d90390e86
-source-git-commit: e1ba6e93bcea4ece6e06941a97227a54116e2c25
+source-git-commit: 3901376a9a19e40650cce56c8e7d2941add73790
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1440'
 ht-degree: 1%
 
 ---
@@ -13,26 +13,6 @@ ht-degree: 1%
 # Frågor och svar om äldre segment
 
 Svar på vanliga frågor om de bästa sätten att hantera äldre segment - segment som skapats före 2014.
-
-## Bästa praxis {#best-practices}
-
-+++ **Vad ska jag göra med duplicerade segment som har samma namn men som kan ha olika definitioner?**
-Nu när segment fungerar i flera rapportsviter kan det finnas flera segment med samma namn. Vi rekommenderar att du antingen
-
-* Byt namn på segment som har samma namn men olika definitioner, eller
-* Ta bort segment som inte längre behövs.
-
-+++
-
-+++ **Vad rekommenderar Adobe när det gäller att rensa upp segment?**
-
-* Tagga alla segment med äldre tagg.
-* Granska de segment du har.
-* Lägg till dem i segmentbiblioteket där det är tillämpligt.
-* Godkänn kanoniska segment.
-* Tagga segment enligt [bästa praxis](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
-
-+++
 
 ## Hantera äldre segment {#legacy}
 
@@ -70,7 +50,7 @@ Du kan skapa eller redigera nya Data warehouse-segment i segmentbyggaren/hantera
 
 +++
 
-**Vad hände med förkonfigurerade segment?**
++++ **Vad hände med förkonfigurerade segment?**
 
 * **Besök på en sida**
 * **Besök från mobila enheter**
@@ -98,7 +78,7 @@ Befintliga rapporter som använder dessa segment fungerar fortfarande korrekt.
 
 +++
 
-+++ **Vad händer med administratörssegment (kallas även&quot;globala&quot; segment)?**
++++ **Vad hände med administratörssegmenten (kallas även&quot;globala&quot; segment)?**
 
 **Administratör** segmenten kommer att migreras till det nya segmentgränssnittet och visas som segment som delas med alla.
 
@@ -110,6 +90,24 @@ Befintliga segment som använder logik som har ändrats enligt beskrivningen i d
 
 +++
 
++++ **Vad ska jag göra med duplicerade segment som har samma namn men som kan ha olika definitioner?**
+Nu när segment fungerar i flera rapportsviter kan det finnas flera segment med samma namn. Vi rekommenderar att du antingen
+
+* Byt namn på segment som har samma namn men olika definitioner, eller
+* Ta bort segment som inte längre behövs.
+
++++
+
++++ **Vad rekommenderar Adobe när det gäller att rensa upp segment?**
+
+* Tagga alla segment med äldre tagg.
+* Granska de segment du har.
+* Lägg till dem i segmentbiblioteket där det är tillämpligt.
+* Godkänn kanoniska segment.
+* Tagga segment enligt [bästa praxis](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
+
++++
+
 ### Migreringstips
 
 Följande tips hjälper dig att migrera gemensamma dimensioner:
@@ -117,10 +115,7 @@ Följande tips hjälper dig att migrera gemensamma dimensioner:
 * Geo-stad/region/land - sök efter och välj specifika städer, regioner eller länder i stället för att använda en partiell matchning.
 * Webbläsare - använd dimensionen Webbläsartyper för att få alla webbläsare i en typ, t.ex. Google Chrome
 * Operativsystem - Använd dimensionerna för OS-typer för att få alla operativsystem i en typ, t.ex. Microsoft Windows.
-
-* [Nya och namnändrade Dimensioner](/help/components/segmentation/seg-transition.md#section_73CF121B64A24DEF8E6499F3167BF742)
-* [Ändringar i Innehåller](/help/components/segmentation/seg-transition.md#section_1A9EDEE5CBC44B5AA6262560052ABE77)
-* [Ändringar av mindre än och större än](/help/components/segmentation/seg-transition.md#section_84A8AAD0344148AD9F9211D3EB271903)
+* Se&quot;Nya och namnändrade Dimensioner&quot; (se nedan)
 
 ## Nya och namnändrade Dimensioner {#renamed}
 
