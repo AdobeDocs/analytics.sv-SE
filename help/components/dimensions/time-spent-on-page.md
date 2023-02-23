@@ -3,9 +3,9 @@ title: Tid som använts på sidan
 description: Den tid en besökare tillbringade på sidan.
 feature: Dimensions
 exl-id: 55af7286-7c37-48d2-925e-8b7ecb390e7f
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 8700abf6db565cf3a85fb64ee0db1a1634616f59
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 Det finns flera dimensioner för tidsåtgången på sidan:
 
-* **Tid som använts på sidan - blockerad**: Tidsmängden är spärrad. Objekten i Dimensionen kan variera från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan sidvyerna räcker vanligtvis inte längre än 30 minuter. tiden mellan sidvyerna kan dock överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
+* **Tid som använts på sidan - blockerad**: Tidsmängden är spärrad. Objekten i Dimensionen kan variera från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan träffarna varar normalt inte längre än 30 minuter. Tiden mellan träffar kan dock överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
 * **Tid som använts på sidan - granulerad**: Varje antal sekunder är ett unikt dimensionsobjekt.
 
 Se [Tidsåtgång - översikt](../metrics/time-spent.md) om du vill ha mer allmän information om hur länge du har tillbringat.
