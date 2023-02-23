@@ -3,18 +3,18 @@ description: Administratörer kan lägga till beskrivningar för komponenter med
 title: Lägga till komponentbeskrivningar
 feature: Components
 role: Admin
-source-git-commit: 85d59d0a2b94953af457527a56d46faefb3ea94c
+source-git-commit: fb9be2d52ebe02603a7255b0ff6d5a7c2efdeed7
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 # Lägga till komponentbeskrivningar
 
-Analysadministratörer kan lägga till beskrivningar för komponenter (Dimensioner, mått, segment och datumintervall)<!-- either within the Report Suite or using the Data Dictionary directly within Analysis Workspace-->.
+Beskrivningar hjälper användarna att förstå hur de bäst använder de olika komponenterna när de skapar projekt i Analysis Workspace eller när de visar rapporter.
 
-Användare i din organisation kan visa beskrivningarna när de skapar projekt i Analysis Workspace eller när de visar rapporter. Beskrivningar hjälper användarna att förstå hur de olika komponenterna fungerar på bästa sätt.
+Analysadministratörer kan lägga till beskrivningar för komponenter (Dimensioner, mått, segment och datumintervall)<!-- either within the Report Suite or using the Data Dictionary directly within Analysis Workspace-->.
 
 ## Lägga till beskrivningar till komponenter i en Report Suite
 

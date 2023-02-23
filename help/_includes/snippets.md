@@ -1,8 +1,8 @@
 ---
-source-git-commit: df0d2c4687117fd00714ced56db6259e44698a20
+source-git-commit: fb9be2d52ebe02603a7255b0ff6d5a7c2efdeed7
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # Fragment
@@ -28,7 +28,7 @@ ht-degree: 1%
    | [!UICONTROL **Visa alla**] | Visa alla komponenter. Det här alternativet är endast tillgängligt för administratörer. |
    | [!UICONTROL **Ej godkänt**] | Visa endast komponenter som ännu inte har markerats som Godkända av en administratör. Som administratör är detta användbart när du identifierar komponenter som kräver granskning och godkännande. Det här alternativet är endast tillgängligt för administratörer. |
    | [!UICONTROL **Beskrivning saknas**] | Visa endast komponenter som ännu inte har någon beskrivning i fältet Beskrivning. Det här alternativet är endast tillgängligt för administratörer. |
-   | [!UICONTROL **Visa dubbletter**] | Visa endast komponenter som har samma etikett eller samma beskrivning som en annan komponent i den valda rapportsviten. Etiketter eller beskrivningar måste vara exakta matchningar för att kunna visas som dubbletter. Det här alternativet är endast tillgängligt för administratörer. |
+   | [!UICONTROL **Visa dubbletter**] | Visa endast komponenter som har samma etikett eller samma beskrivning som en annan komponent i den valda rapportsviten. Detta omfattar både komponenter du skapar och komponenter från Adobe. Etiketter eller beskrivningar måste vara exakta matchningar för att kunna visas som dubbletter. Det här alternativet är endast tillgängligt för administratörer. |
    | [!UICONTROL **Inga senaste data**] | Visa endast komponenter som inte har samlat in några data under de senaste 90 dagarna. Det här alternativet är endast tillgängligt för administratörer. |
    | [!UICONTROL **Skapad av Adobe**] <!-- I don't see this option--> | Visa endast komponenter som har skapats av Adobe. Komponenter som har skapats av en administratör eller en annan användare i organisationen visas inte. |
 
