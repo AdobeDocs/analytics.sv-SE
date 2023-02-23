@@ -3,9 +3,9 @@ title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 feature: Data Configuration and Collection
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: 222ce14fd60ce5dae39a72c1a2bec4315a68b4e4
+source-git-commit: efe78fb17d9a7ea7dde27075d9d890a33138a0d6
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,7 @@ Om din organisation föredrar att tillåta specifika IP-adressintervall kan du a
 | Australien | `63.140.56.0/23` |
 | Kalifornien | `63.140.32.0/23` |
 | Kalifornien | `63.140.34.0/24` |
+| Frankrike | `63.140.62.0/23` |
 | Indien | `66.117.20.0/24` |
 | Indien | `66.117.22.0/23` |
 | Japan | `130.248.130.0/23` |
@@ -81,21 +82,12 @@ Adobe Analytics använder Amazon Web Services som en del av sin datainsamlingspr
 | --- | --- |
 | Kina | `52.80.83.220` |
 | Kina | `71.132.16.253` |
-| Frankrike | `13.36.218.177` |
-| Frankrike | `15.188.95.229` |
-| Frankrike | `15.236.176.210` |
+| Kina | `52.80.7.181` |
+| Kina | `71.131.244.185` |
+| Kina | `140.179.152.255` |
 | Frankrike | `13.37.25.97` |
 | Frankrike | `15.236.117.205` |
 | Frankrike | `15.236.125.10` |
-| Irland | `54.74.170.177` |
-| Irland | `54.195.254.128` |
-| Irland | `54.220.133.225` |
-| Oregon | `52.10.149.115` |
-| Oregon | `52.40.172.46` |
-| Oregon | `54.212.155.93` |
-| Virginia | `3.216.131.23` |
-| Virginia | `34.204.237.47` |
-| Virginia | `54.163.234.74` |
 
 Följande tabell innehåller AWS IPv6-adressblock som används av Adobe. Värdarna är **not** ingår i det aggregerade blockområdet ovan.
 
