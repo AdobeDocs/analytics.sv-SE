@@ -4,9 +4,9 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: e46b15eedda78303e6e29faceea6db8483eee277
+source-git-commit: 9a16cd89b2d650098495902cca5c5229df48b475
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '410'
 ht-degree: 74%
 
 ---
@@ -127,6 +127,7 @@ ht-degree: 74%
    + [Integrera modul](vars/integrate.md)
 + Förberedelser inför att implementera Adobe Analytics {#prepare}
    + [Skapa ett datalager](prepare/data-layer.md)
+   + [Jämför implementeringsmetoder](prepare/comparison.md)
    + [Att tänka på för den globala rapportsviten](prepare/global-rs.md)
    + [Implementera märkning för flera programsviter](prepare/multi-suite-tagging.md)
    + [Skapa ett dokument för lösningsdesign](prepare/solution-design.md)
