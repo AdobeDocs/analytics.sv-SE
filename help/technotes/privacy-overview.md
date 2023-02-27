@@ -4,10 +4,10 @@ keywords: sekretess
 title: Sekretessöversikt
 feature: Privacy
 exl-id: 71c83106-a047-47d7-9a70-4a24595e3d0a
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: 77e50dec593722855f30c517f63141e84f665519
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 92%
+source-wordcount: '763'
+ht-degree: 88%
 
 ---
 
@@ -53,89 +53,24 @@ Adobe Analytics samlar in följande data:
 
 ## Andra sekretessfrågor {#section_60AF6AD6FBD046EEAF9F083A9726EF8A}
 
-<table id="table_247B425E774F403288233824870D070E"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Region/land </th> 
-   <th colname="col2" class="entry"> Villkor </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Globalt </td> 
-   <td colname="col2"> Adobe rekommenderar starkt att man avstår från att skicka personligt identifierbar information (PII) till Adobe, särskilt i situationer där PII inte behövs för Analytics. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Globalt </td> 
-   <td colname="col2"> Användarna måste få meddelanden och valmöjligheter vid profilering. Detta krävs enligt lag i Kanada, Australien, Europeiska unionen (anmälan för vissa länder) och många länder i Latinamerika och Asien-Stillahavsområdet. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Globalt </td> 
-   <td colname="col2"> Om man använder cookies från första part är Analytics-avanmälan unik för en kund; du kan inte lita på en avanmälan på Adobe.com. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Globalt </td> 
-   <td colname="col2"> Förstapartsanalys omfattas inte av det självreglerande programmet för beteendeannonsering online ("AdChoices"). </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Globalt </td> 
-   <td colname="col2"> Enhetsövergripande data får inte sammanfogas om de inte är knutna till en identifierare som kunden har angett (till exempel hash-kodat användarnamn). </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Globalt </td> 
-   <td colname="col2"> Det finns troligtvis begränsningar för kunden när det gäller att kombinera annonsvisningsinformation med PII. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Europa </td> 
-   <td colname="col2"> De flesta länder i EU anser inte att cookies i analyser är absolut nödvändiga. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Europa </td> 
-   <td colname="col2"> Adobe har aktiverat inställningen IP-Obfuscation: Aktiverad - IP Borttagen (x.x.x.x) som standard för alla kunder med en rapportsvit som angetts i EMEA. Med den här inställningen ersätts IP-adressen helt med värdet (x.x.x.x) efter geosökning och är inte längre tillgänglig som en datapunkt. <p>Den här grundläggande ersättningsmetoden kan inte bakåtkompileras till en unik, specifik IP-adress. Varken kunden eller Adobe kan komma åt IP-adressen. den är irreversibelt anonymiserad. Mer information om andra inställningar för IP-döljning finns i </p> <p> <a href="/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md">Allmänna kontoinställningar</a> i användarhandboken för Admin.</p> </td>
-  </tr> 
-  <tr> 
-   <td colname="col1"> Globalt </td> 
-   <td colname="col2"> En kund kan ställa in variabeln för cookie-livstid i JavaScript-mätningskoden på värdet "none", "session" eller något annat angivet värde mätt i sekunder. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Europa </td> 
-   <td colname="col2"> Adobe har utvecklat en ny inställning för "sekretess efter design" som nu kan aktiveras av Adobe ClientCare för Adobe Analytics (tidigare SiteCatalyst) version 14.9 och 15.4. När den här nya inställningen är aktiverad ersätts den sista oktetten (den sista delen) av IP-adressen omedelbart med värdet 0 när IP-adressen har samlats in av Adobe. Denna anonymisering utförs innan någon behandling av IP-adressen utförs, inklusive innan både en valfri geosökning och en ISP-sökning av IP-adressen har gjorts. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Tyskland </td> 
-   <td colname="col2"> <p>Om du inte redan har ett databehandlingsavtal för Adobe Analytics med Adobe bör du kontakta din kontoansvarige på Adobe eller kundframgångsansvarige, som kommer att arbeta tillsammans med Adobe juridiska avdelning för att få avtalet på plats. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+| Region/land | Villkor |
+|--- |--- |
+| Globalt | Adobe rekommenderar starkt att man avstår från att skicka personligt identifierbar information (PII) till Adobe, särskilt i situationer där PII inte behövs för Analytics. |
+| Globalt | Användarna måste få meddelanden och valmöjligheter vid profilering. Detta krävs enligt lag i Kanada, Australien, Europeiska unionen (anmälan för vissa länder) och många länder i Latinamerika och Asien-Stillahavsområdet. |
+| Globalt | Om man använder cookies från första part är Analytics-avanmälan unik för en kund; du kan inte lita på en avanmälan på Adobe.com. |
+| Globalt | Förstapartsanalys omfattas inte av det självreglerande programmet för beteendeannonsering online (&quot;AdChoices&quot;). |
+| Globalt | Enhetsövergripande data får inte sammanfogas om de inte är knutna till en identifierare som kunden har angett (till exempel hash-kodat användarnamn). |
+| Globalt | Det finns troligtvis begränsningar för kunden när det gäller att kombinera annonsvisningsinformation med PII. |
+| Europa | De flesta länder i EU anser inte att cookies i analyser är absolut nödvändiga. |
+| Europa | Adobe har aktiverat inställningen IP-Obfuscation: Aktiverad - IP Borttagen (x.x.x.x) som standard för alla kunder med en rapportsvit som angetts i EMEA. Med den här inställningen ersätts IP-adressen helt med värdet (x.x.x.x) efter geosökning och är inte längre tillgänglig som en datapunkt. Den här grundläggande ersättningsmetoden kan inte bakåtkompileras till en unik, specifik IP-adress. Varken kunden eller Adobe kan komma åt IP-adressen. den är irreversibelt anonymiserad. Mer information om andra inställningar för IP-döljning finns i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin. |
+| Globalt | En kund kan ställa in variabeln för cookie-livstid i JavaScript-mätningskoden på värdet &quot;none&quot;, &quot;session&quot; eller något annat angivet värde mätt i sekunder. |
+| Europa | Adobe har utvecklat en ny inställning för &quot;sekretess efter design&quot; som nu kan aktiveras av Adobe ClientCare för Adobe Analytics (tidigare SiteCatalyst) version 14.9 och 15.4. När den här nya inställningen är aktiverad ersätts den sista oktetten (den sista delen) av IP-adressen omedelbart med värdet 0 när IP-adressen har samlats in av Adobe. Denna anonymisering utförs innan någon behandling av IP-adressen utförs, inklusive innan både en valfri geosökning och en ISP-sökning av IP-adressen har gjorts. |
+| Tyskland | Om du inte redan har ett databehandlingsavtal för Adobe Analytics med Adobe bör du kontakta din kontoansvarige på Adobe eller kundframgångsansvarige, som kommer att arbeta tillsammans med Adobe juridiska avdelning för att få avtalet på plats. |
 
-## Platser för EMEA-datacenter {#section_3DD2329B983849D3B8C24AEF7CD8DFB3}
+## Plats för EMEA-datacenter {#section_3DD2329B983849D3B8C24AEF7CD8DFB3}
 
-Följande EMEA-datacenter är för närvarande värdar för Adobe Analytics-data:
+Följande EMEA-datacenter är för närvarande värd för Adobe Analytics-data:
 
-<table id="table_65794B3790FD4B519EE89CF4F4B88314"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Adobe-namn </th> 
-   <th colname="col2" class="entry"> Adress </th> 
-   <th colname="col3" class="entry"> Resurstyp (operatör) </th> 
-   <th colname="col4" class="entry"> Lösningskomponenter som stöds </th> 
-   <th colname="col5" class="entry"> Certifieringar </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> AMS1 </td> 
-   <td colname="col2"> <p>Luttenbergweg 4 </p> <p>Amsterdam 1101 EC </p> <p>Nederländerna </p> </td> 
-   <td colname="col3"> <p>Samlokaliseringsresurs </p> <p>(Equinix) </p> </td> 
-   <td colname="col4"> <p>Flerkanalsanalys, </p> <p>Digital analys </p> </td> 
-   <td colname="col5"> <p>ISO9001:2008 </p> <p>ISO14001:2004 </p> <p>OHSAS18001:2007 </p> <p>ISO27001:2005 </p> <p>ISO50001:2011 </p> <p>PCI-DSS </p> <p> <a href="https://www.equinix.se/solutions/by-services/colocation/standards-and-compliance/iso-certified-data-centers/#table"  > Equinix </a> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> LON5 </td> 
-   <td colname="col2"> <p>3 Centro </p> <p>Boundary Way </p> <p>Hemel Hempstead HP2 7SU </p> <p>Storbritannien </p> </td> 
-   <td colname="col3"> <p>Samlokaliseringsresurs </p> <p>(Gyron) </p> </td> 
-   <td colname="col4"> <p>Flerkanalsanalys, </p> <p>Digital analys </p> </td> 
-   <td colname="col5"> SSAE 16 </td> 
-  </tr> 
- </tbody> 
-</table>
+| Adobe-namn | Adress | Resurstyp (operatör) | Lösningskomponenter som stöds | Certifieringar |
+|--- |--- |--- |--- |--- |
+| LON5 | 3 Centro  Boundary Way Hemel Hempather HP2 7SU UK | Samlokaliseringsfacilitet (Gyron) | Multichannel Analytics, Digital Analytics | SSAE 16 |
