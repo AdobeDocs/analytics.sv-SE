@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 01aa0959a7ddd8d5a29c838bdbc771435784c9e6
+source-git-commit: c8e3d9bd40a427387da746c084188b5d13f45bcd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '629'
+ht-degree: 73%
 
 ---
 
@@ -153,6 +153,18 @@ ht-degree: 0%
       + [Inställningshanteraren](admin/company/preferences-manager.md)
       + [Väntande åtgärder](admin/company/pending-actions-admin.md)
       + [Åtkomstnivåer](admin/company/feature-access-levels.md)
+   + Etikettering av integritetsskydd för datahantering {#data-governance}
+      + [Arbetsflöde för datasekretess i Adobe Analytics](admin/c-data-governance/an-gdpr-workflow.md)
+      + [Frågor och svar](admin/c-data-governance/gdpr-faq.md)
+      + Dataetiketter {#data-labels}
+         + [Dataintegritetsetiketter för analyskomponenter](admin/c-data-governance/data-labeling/gdpr-labels.md)
+         + [Data i etikettrapportsvit](admin/c-data-governance/data-labeling/gdpr-setup-reportsuite.md)
+         + [Visa/hantera integritetsetiketter för rapportsviten](admin/c-data-governance/data-labeling/gdpr-view-settings.md)
+         + [Bästa praxis för etikettering](admin/c-data-governance/data-labeling/gdpr-analytics-ids.md)
+         + [Exempel på etiketter](admin/c-data-governance/data-labeling/gdpr-labeling-example.md)
+         + [Namnutrymmen](admin/c-data-governance/data-labeling/gdpr-namespaces.md)
+      + [ID-expansion](admin/c-data-governance/gdpr-id-expansion.md)
+      + [Undantag för CNIL-samtycke](admin/c-data-governance/cnil-consent-exemption.md)
    + Användning av serversamtal {#server-call-usage}
       + [Översikt över användningen av serversamtal](admin/c-server-call-usage/overage-overview.md)
       + [Visa aktuell användning av serversamtal](admin/c-server-call-usage/server-call-usage-dashboard.md)

@@ -2,7 +2,7 @@
 title: Bearbetningsordning för data i Adobe Analytics
 description: Lär dig ordningen på komponenter och tjänster som bearbetar data i Adobe Analytics.
 exl-id: a8dc9c12-07d3-4dc8-b2df-136f7a7a1e77
-source-git-commit: 1ca7040156f7f2105a9625f921de3d90b4175056
+source-git-commit: c774d05ca3b1f9f45ec118b0e7b8a839a03b87e3
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -45,6 +45,6 @@ I det här skedet registreras den enskilda träffen i rapportsvitens datatabelle
 Data i Adobe Analytics är mestadels permanenta. Det finns dock vissa funktioner som kan möjliggöra selektiv datainjustering eller -borttagning:
 
 * [**API för datareparation**](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/): Redigera vissa kolumner eller ta bort önskade datarader.
-* [**Datastyrning**](/help/technotes/c-data-governance/an-gdpr-workflow.md): Ta bort data permanent.
+* [**Datastyrning**](/help/admin/admin/c-data-governance/an-gdpr-workflow.md): Ta bort data permanent.
 * [**Klassificeringar**](/help/components/classifications/c-classifications.md): Skapa dimensioner baserat på regler eller överförda data som gör att du kan ordna data på ett annat sätt. Den underliggande rapportsvitens data ändras inte, så du kan fritt redigera eller skriva över klassificeringsdata.
 * [**Virtuella rapportsviter**](/help/components/vrs/vrs-about.md): Skapa en alternativ rapportsvy som kan ändra tidsgränsen för besök eller tillåta [Enhetsövergripande analys](/help/components/cda/overview.md).
