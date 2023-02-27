@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: 66c314d45c4ee4f15cc2e7d05ea248b95ff3c717
+source-git-commit: 58937630e6173013b622deec0433ef67b483c483
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1251'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Google delar upp klienttips för User-Agent i två kategorier: Tips för låg en
 
 Från och med oktober 2022 började nya versioner av Chromium-webbläsare&quot;frysa&quot; operativsystemversionen som representerades i användaragentsträngen. Operativsystemsversionen är ett tips för hög entropi, så för att operativsystemsversionen ska vara korrekt i din rapportering måste du konfigurera ditt samlingsbibliotek så att du kan samla in dessa tips för hög entropi. Med tiden kommer annan enhetsinformation för användaragenten att frysas, vilket kräver att klienttipsen upprätthåller enhetens rapporteringsnoggrannhet.
 
-Klienttips kommer att införlivas i sökprocessen efter enheter i Analytics från mars 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men det kommer inte att användas i enhetssökning förrän i mitten av februari. Så som anges nedan var operativsystemsversionen fryst från och med oktober men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en)) uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
+Klienttips kommer att införlivas i processen för sökning efter enheter i Analytics från och med den 27 februari 2023 och avslutas den 2 mars 2023. Både AppMeasurement och Web SDK stöder för närvarande insamling av tipsdata, men det kommer inte att användas i enhetssökning förrän i mitten av februari. Så som anges nedan var operativsystemsversionen fryst från och med oktober men på grund av en gradvis utrullning och det faktum att många användaragenter redan har en fryst OS-version (se mer [här](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en)) uppskattar vi att detta påverkar &lt;3 % av Chrome-besökarna.
 
 >[!NOTE]
 >
