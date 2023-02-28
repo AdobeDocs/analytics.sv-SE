@@ -2,12 +2,12 @@
 product: analytics
 audience: end-user
 user-guide-title: Importguide för Analytics
-breadcrumb-title: Importera guide
-user-guide-description: 'Hämta in data till Adobe Analytics från externa källor, antingen i bulk eller i realtid. '
+breadcrumb-title: Användarhandbok om import
+user-guide-description: Hämta in data till Adobe Analytics från externa källor, antingen i stora volymer eller i realtid.
 source-git-commit: 70a1d61a6e9af27c449876ac4cf4d7504659be3a
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 65%
+ht-degree: 78%
 
 ---
 

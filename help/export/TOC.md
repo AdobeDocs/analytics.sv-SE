@@ -2,12 +2,12 @@
 product: analytics
 audience: end-user
 user-guide-title: Exporthandbok för Analytics
-breadcrumb-title: Exporthandbok
-user-guide-description: Lär dig hur du använder dataflöden för att exportera rådata och Data warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
+breadcrumb-title: Användarhandbok om export
+user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
 source-git-commit: 1e666e66af8fe5d8fdefbd84a4073556993a5a3e
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 70%
+ht-degree: 82%
 
 ---
 

@@ -6,8 +6,8 @@ breadcrumb-title: Versionsinformation
 user-guide-description: Lär dig mer om nya funktioner och korrigeringar i Adobe Analytics.
 source-git-commit: af1574a72c652a75a851499416cf78703a1be178
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '41'
+ht-degree: 39%
 
 ---
 
