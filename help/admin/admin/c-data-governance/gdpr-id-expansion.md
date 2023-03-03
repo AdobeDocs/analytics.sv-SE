@@ -3,7 +3,7 @@ description: De ID:n du skickar in omfattar inte alltid alla träffdata som Anal
 title: ID-expansion
 feature: Data Governance
 exl-id: 312a249f-e0e7-44da-bb3d-b19f1bb4c706
-source-git-commit: c8e3d9bd40a427387da746c084188b5d13f45bcd
+source-git-commit: 02d0baee99ad2ea5966788f036644d3e3780016e
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 32%
@@ -59,4 +59,4 @@ Förutom standardvärdet `priority` -fältet har också stöd för värdet &quot
 
 Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Resultatet är inte önskvärt i situationer där du vill rensa bort datafält, och en orsak till varför Privacy Service-API:t inte är lämpligt för den här användningen markeras.
 
-Kontakta er Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för ytterligare granskning och insatser för att ta bort eventuella PII-fel eller lösa dataproblem.
+Kontakta ert Adobe-kontoteam för att samordna med vårt konsultteam för ingenjörsarkitekter för att få mer information och möjlighet att vidta åtgärder för att ta bort eventuella PII-fel eller lösa dataproblem.
