@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 6c6682202e8780ddb9bf96a4bdd61ff0558c9f09
+source-git-commit: 2f725239404a1d08b63a12c9e6b4e4fa3c35d410
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1104'
 ht-degree: 3%
 
 ---
@@ -36,8 +36,8 @@ AN-302282; AN-303127; AN-303541; AN-303550; AN-305282; AN-306504; AN-307351; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| **Uppdatera till enhetssökningar på grund av Google klienttips** | 27 februari 2023 | Användningen av klienttips, som planerades till den 16 februari 2023, sköts upp för att bättre säkerställa kvaliteten på enhetssökningar med hjälp av tips. Vi fortsätter med den första fasen av releasen för stöd av kundtips den 27 februari 2023. Om allt går bra fortsätter vi till den andra och sista fasen av releasen torsdagen den 2 mars 2023. [Läs mer](/help/technotes/client-hints.md) |
-| **Tillgänglighet för Analytics Source Connector** | 15 februari 2023 | Den 28 februari 2023 kommer Analytics Source Connector att vara tillgänglig i Adobe Experience Platform nya datacenter i Kanada. |
+| **Uppdatera till enhetssökningar på grund av Google klienttips** | 27 februari 2023 | Användningen av klienttips, som planerades till den 16 februari 2023, sköts upp för att bättre säkerställa kvaliteten på enhetssökningar med hjälp av tips. Vi slutförde den första fasen av releasen för stöd av kundtips den 27 februari 2023 och den andra och sista fasen torsdagen den 2 mars 2023. [Läs mer](/help/technotes/client-hints.md) |
+| **Tillgänglighet för Analytics Source Connector** | 15 februari 2023 | Den 28 februari 2023 blev Analytics Source Connector tillgänglig i det nya datacentret för Adobe Experience Platform i Kanada. |
 | **Automatisk migrering till arkitekturen för klassificeringsuppsättning** | 8 februari 2023 | Under de kommande månaderna planerar Adobe att migrera alla klassificeringar i alla organisationer till den senaste klassificeringsarkitekturen. De sista kunderna som migrerar beräknas inträffa i maj 2023. Ingen kundåtgärd krävs, och ingen driftstopp förväntas. Den nya arkitekturen har många fördelar, bland annat:<ul><li>Betydande minskning av bearbetningstiden (72 timmar → 24 timmar)</li><li>Möjligheten att använda [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) UI</li><li>Alternativet att använda klassificeringsdata i Adobe Experience Platform i framtiden via [Adobe Analytics källanslutning för klassificeringsdata](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/classifications.html)</li></ul>Observera följande ändringar som kan påverka organisationens arbetsflöde:<ul><li>Vid användning av webbläsare eller FTP-import, &#39;[!UICONTROL Overwrite on conflict]&#39; är alltid aktiverat.</li><li>När du använder en webbläsare eller FTP-import stöds inte längre alternativet att exportera direkt efter importen.</li><li>API:t för Analytics 2.0 `GetDimensions` slutpunkten returnerar nu strängidentifierare för klassificeringar i stället för numeriska identifierare. Numeriska identifierare kan fortfarande användas, men Adobe rekommenderar att du använder de nya strängidentifierarna där det är möjligt. Numeriska identifierare kan hämtas med `?expansion=hidden` frågesträngsparameter.</li></ul>Kontakta Adobe kundtjänst om du vill ha ett mer specifikt migreringsschema för din organisation, eller har frågor om migreringen. [Läs mer](/help/components/classifications/sets/overview.md) |
 
 {style=&quot;table-layout:auto&quot;}

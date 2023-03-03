@@ -3,14 +3,18 @@ title: Personer
 description: Antalet unika individer, vanligtvis med flera enheter.
 feature: Metrics
 exl-id: 0136b843-2a1e-44d5-b5a6-e0fb03b7b995
-source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
+source-git-commit: 2f725239404a1d08b63a12c9e6b4e4fa3c35d410
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 2%
+source-wordcount: '106'
+ht-degree: 1%
 
 ---
 
 # Personer
+
+>[!IMPORTANT]
+>
+>Personmätningen kommer att bli inaktuell 2023. Mer information om den exakta tidpunkten finns i versionsinformationen.
 
 Personmåttet är specifikt för [Enhetsövergripande analys](../cda/overview.md) virtuella rapportsviter. Det representerar summan av de personer som identifieras i rapporten plus antalet enheter som inte identifieras som tillhörande en person.
 
