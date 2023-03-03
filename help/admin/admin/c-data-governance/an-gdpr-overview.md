@@ -3,10 +3,10 @@ description: Det här dokumentet beskriver vad du måste göra i Adobe Analytics
 title: Adobe Analytics och GDPR
 feature: Data Governance
 exl-id: 4cb19f63-119f-4853-84bf-5c1e8f9af9f0
-source-git-commit: 0f5a1e7264b194b368731f612a04bb805740a932
+source-git-commit: 297269f2ebf88d722eaf21ce8919ce28bb6abdc7
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Mer information om hur du ställer in etiketterna finns i [Data i etikettrapport
 
    >[!NOTE]
    >
-   >Adobe Analytics kan inte hjälpa dig med att behandla begäranden till API:t för GDPR, d.v.s. att behandla de begäranden om åtkomst och borttagning som du får från dina slutanvändare, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta din Customer Success Manager för att ange din datalagringsperiod.
+   >Adobe Analytics kan inte hjälpa dig med att behandla begäranden till API:t för GDPR, d.v.s. att behandla de begäranden om åtkomst och borttagning som du får från dina slutanvändare, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta kontoteamet på Adobe för att ange din datalagringsperiod.
 
 * Kontrollera dina behörigheter: Om du vill använda gränssnittet för datahantering i Adobe Analytics måste du vara Adobe Analytics-administratör.
 

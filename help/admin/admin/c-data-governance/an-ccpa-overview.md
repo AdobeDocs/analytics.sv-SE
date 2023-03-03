@@ -3,10 +3,10 @@ description: Det här dokumentet beskriver vad du måste göra i Adobe Analytics
 title: Adobe Analytics och CCPA
 feature: Data Governance
 exl-id: 1f37e72b-99e4-4833-a506-98c8ec415757
-source-git-commit: 0f5a1e7264b194b368731f612a04bb805740a932
+source-git-commit: 297269f2ebf88d722eaf21ce8919ce28bb6abdc7
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ Mer information om hur du ställer in etiketterna finns i [Data i etikettrapport
 * Koppla ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * Ange en policy för datalagring för varje rapportsvit så att CCPA-begäranden om borttagning och åtkomst kan hanteras.
 
-   Adobe Analytics kan inte hjälpa dig med att behandla begäranden till API:t för sekretesstjänster, d.v.s. att behandla de begäranden om åtkomst och borttagning som du får från dina slutanvändare, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta din Customer Success Manager för att ange din datalagringsperiod.
+   Adobe Analytics kan inte hjälpa dig med att behandla begäranden till API:t för sekretesstjänster, d.v.s. att behandla de begäranden om åtkomst och borttagning som du får från dina slutanvändare, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta kontoteamet på Adobe för att ange din datalagringsperiod.
 
 * Kontrollera dina behörigheter: Om du vill använda gränssnittet för datahantering i Adobe Analytics måste du vara Adobe Analytics-administratör.
 * Överväg att implementera [variabeln för hantering av samtycke](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md) för att spåra godkännandestatus på en träffnivå.

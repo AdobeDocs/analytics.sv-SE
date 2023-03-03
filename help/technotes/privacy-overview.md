@@ -4,9 +4,9 @@ keywords: sekretess
 title: Sekretessöversikt
 feature: Privacy
 exl-id: 71c83106-a047-47d7-9a70-4a24595e3d0a
-source-git-commit: 77e50dec593722855f30c517f63141e84f665519
+source-git-commit: 297269f2ebf88d722eaf21ce8919ce28bb6abdc7
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '759'
 ht-degree: 88%
 
 ---
@@ -65,7 +65,7 @@ Adobe Analytics samlar in följande data:
 | Europa | Adobe har aktiverat inställningen IP-Obfuscation: Aktiverad - IP Borttagen (x.x.x.x) som standard för alla kunder med en rapportsvit som angetts i EMEA. Med den här inställningen ersätts IP-adressen helt med värdet (x.x.x.x) efter geosökning och är inte längre tillgänglig som en datapunkt. Den här grundläggande ersättningsmetoden kan inte bakåtkompileras till en unik, specifik IP-adress. Varken kunden eller Adobe kan komma åt IP-adressen. den är irreversibelt anonymiserad. Mer information om andra inställningar för IP-döljning finns i [Allmänna kontoinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i användarhandboken för Admin. |
 | Globalt | En kund kan ställa in variabeln för cookie-livstid i JavaScript-mätningskoden på värdet &quot;none&quot;, &quot;session&quot; eller något annat angivet värde mätt i sekunder. |
 | Europa | Adobe har utvecklat en ny inställning för &quot;sekretess efter design&quot; som nu kan aktiveras av Adobe ClientCare för Adobe Analytics (tidigare SiteCatalyst) version 14.9 och 15.4. När den här nya inställningen är aktiverad ersätts den sista oktetten (den sista delen) av IP-adressen omedelbart med värdet 0 när IP-adressen har samlats in av Adobe. Denna anonymisering utförs innan någon behandling av IP-adressen utförs, inklusive innan både en valfri geosökning och en ISP-sökning av IP-adressen har gjorts. |
-| Tyskland | Om du inte redan har ett databehandlingsavtal för Adobe Analytics med Adobe bör du kontakta din kontoansvarige på Adobe eller kundframgångsansvarige, som kommer att arbeta tillsammans med Adobe juridiska avdelning för att få avtalet på plats. |
+| Tyskland | Om du inte redan har ett databehandlingsavtal för Adobe Analytics med Adobe bör du kontakta ditt kontoteam på Adobe, som kommer att arbeta med Adobe juridiska avdelning för att få dataskyddsavtalet på plats. |
 
 ## Plats för EMEA-datacenter {#section_3DD2329B983849D3B8C24AEF7CD8DFB3}
 
