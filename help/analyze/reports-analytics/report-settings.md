@@ -4,9 +4,9 @@ title: Visningsinställningar och navigering för rapporter
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 2c2d4d59-b189-42e0-887e-77dc7a48721a
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1552'
 ht-degree: 7%
 
 ---
@@ -45,7 +45,7 @@ Inställningar som definierar hur alla rapporter visas och information som mappa
 | **Språk/valuta/kodning** |  |
 | Tusentalsavgränsare | Välj en avgränsare för varje tusende (decimal eller komma). I många länder används ett decimaltal för att avgränsa tusentaltalet. (Den här avgränsaren används på alla tal i hela systemet, inte bara i valuta.) |
 | Använd rapportsvitens standardvaluta | Anger om rapportsvitens standardvaluta ska användas. |
-| Valuta | Valutan som du vill konvertera data till. När du väljer ett värde i den här inställningen påverkas inte data som lagras i databasen, utan visas som ett konverterat värde baserat på den aktuella dagens valutakonverteringsgrad. När valutaalternativen inte är konfigurerade (inställda på standardvärden) sker ingen valutakonvertering och alla värden lagras och visas i USD. Om du vill konvertera valutan när data bearbetas (innan de visas) kontaktar du kontohanteraren. |
+| Valuta | Valutan som du vill konvertera data till. När du väljer ett värde i den här inställningen påverkas inte data som lagras i databasen, utan visas som ett konverterat värde baserat på den aktuella dagens valutakonverteringsgrad. När valutaalternativen inte är konfigurerade (inställda på standardvärden) sker ingen valutakonvertering och alla värden lagras och visas i USD. Om du vill konvertera valutan när data bearbetas (innan de visas) kontaktar du kontogruppen på Adobe. |
 | Schemalagd rapportkodning | SHIFT-JIS för japansk teckenkodning. EUC-JP för utökad Unix-kod, främst för japanska, koreanska och förenklad kinesiska. |
 | CSV-avgränsningstecken | Det tecken som du vill använda för att avgränsa CSV-värden. |
 

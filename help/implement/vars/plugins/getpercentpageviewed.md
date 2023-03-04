@@ -3,18 +3,16 @@ title: getPercentPageViewed
 description: Hämta den procentandel av sidan som besökaren visade.
 feature: Variables
 exl-id: 7a842cf0-f8cb-45a9-910e-5793849bcfb8
-source-git-commit: bebd9e9e53c05d697adf52e5a2bdda3ca60796f2
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: getPercentPageViewed
 
->[!IMPORTANT]
->
->Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+{{plug-in}}
 
 The `getPercentPageViewed` plugin-programmet mäter besökarens rullningsaktivitet för att se hur mycket av en sida de visar innan de går vidare till en annan sida. Denna plugin behövs inte om sidorna är små i höjdled eller inte vill mäta rullningsaktiviteten.
 

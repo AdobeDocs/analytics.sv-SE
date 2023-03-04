@@ -4,9 +4,9 @@ title: Komma igång med Reports and Analytics
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 7bd8f28c-2b7a-4220-bd82-1e43edc2c0cd
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Webbläsare och systemkrav för att logga in i gränssnittet Rapporter och analy
 
 ## Logga in på Reports and Analytics
 
-Innan du får åtkomst till gränssnittet bör du samarbeta med din kontoansvarige eller Adobe kundtjänst för att konfigurera ditt företags konto.
+Innan du får åtkomst till gränssnittet måste du samarbeta med ditt Adobe-kontoteam eller Adobe kundtjänst för att konfigurera ditt företags konto.
 
 ## Logga in med Experience Cloud
 

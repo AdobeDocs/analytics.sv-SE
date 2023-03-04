@@ -3,9 +3,9 @@ title: Schemalägg en trafiktopp
 description: Samarbeta med Adobe för att säkerställa att högtrafikhändelser inte får någon fördröjning.
 feature: Traffic Management
 exl-id: a6bbd975-6d31-40f5-8f80-491ec3a5c5f5
-source-git-commit: c13e39e7bfe3d7fef07ea9ccda76255d28dde1c3
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 2%
 
 ---
@@ -62,4 +62,4 @@ Adobe vill säkerställa att era erfarenheter av aktuell rapportering är enhetl
 
 * Schemalägg produktionstid för alla trafiktoppar. **Det är särskilt viktigt att alla trafiktoppar som förutses under november-december planeras till den 15 september**. Om du missar deadline, schemalägg toppen så snart som möjligt. Mindre ledtid är bättre än inget, och Adobe arbetar med de aktuella resurserna för att bäst kunna hantera era rapportsviter.
 * Om Adobe kontaktar dig angående en schemalagd trafiktoppning ska du informera dig om realtidsrapportering eller fullständig bearbetningsrapportering är viktigare. Vissa organisationer förlitar sig mer på realtidsrapportering än andra. Att förstå vilken typ av rapportering du använder kan hjälpa Adobe att prioritera på rätt sätt.
-* De viktigaste rapporterna och när du hämtar dem kan du kommunicera med din kontoansvarige för att hjälpa dem att rekommendera åt dig.
+* De viktigaste rapporterna och när du hämtar dem kan du kommunicera med ditt kontoteam på Adobe för att hjälpa dem att rekommendera åt dig.

@@ -3,18 +3,16 @@ title: getVisitDuration
 description: Spåra hur mycket tid en besökare har varit på webbplatsen hittills.
 feature: Variables
 exl-id: 5299caa8-1e47-40b0-a8f4-422590f33ee4
-source-git-commit: 7c7a7d8add9edb1538df12b440bc0a15f09efe5e
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: getVisitDuration
 
->[!IMPORTANT]
->
->Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+{{plug-in}}
 
 The `getVisitDuration` plugin-programmet spårar hur lång tid i minuter besökaren har besökt webbplatsen fram till den tidpunkten. Adobe rekommenderar att du använder denna plugin om du vill spåra den kumulativa tiden på webbplatsen fram till den tidpunkten eller för att spåra den tid det tar att utföra en aktivitet. Denna plugin spårar inte tiden mellan händelser. om du vill ha den här funktionen använder du [`getTimeBetweenEvents`](gettimebetweenevents.md) plugin-program.
 

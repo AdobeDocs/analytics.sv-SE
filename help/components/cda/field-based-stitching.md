@@ -2,9 +2,9 @@
 title: Fältbaserad stygn
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med fältbaserad sammanfogning.
 exl-id: 81f2768c-53c2-40b4-8d3b-8d3b94cd7318
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Enhetsövergripande analys erbjuder två olika metoder för att sammanfoga data.
 
 ## Förutsättningar som är specifika för fältbaserad sammanfogning
 
-Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfogning krävs följande. Samarbeta med team inom organisationen och kontohanteraren för Adobe för att säkerställa att ni uppfyller alla följande:
+Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfogning krävs följande. Arbeta med team inom organisationen och kontoteamet på Adobe för att säkerställa att ni uppfyller alla följande.
 
 >[!WARNING]
 >
@@ -23,7 +23,7 @@ Om du tänker implementera enhetsövergripande analys med fältbaserad sammanfog
 
 * Alla krav som anges på [översiktssida](overview.md).
 * Implementeringen måste ange ett utkast eller en eVar som unikt identifierar en individ när det är möjligt, till exempel när en användare loggar in eller öppnar ett e-postmeddelande. Detta krav gäller alla plattformar, inklusive mobilappar om de används. Undvik att tilldela ett standardvärde till propen eller eVar.
-* Informera kontohanteraren om den önskade identifieringsvariabeln när den tillhandahålls för fältbaserad sammanfogning.
+* Kommunicera den önskade identifieringsvariabeln till ditt Adobe-kontoteam när den tillhandahålls för fältbaserad sammanslagning.
 
 ## Begränsningar som är specifika för fältbaserad sammanfogning
 

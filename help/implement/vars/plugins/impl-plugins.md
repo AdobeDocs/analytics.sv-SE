@@ -3,9 +3,9 @@ title: Översikt över plugin-program
 description: Klistra in kod på webbplatsen för att få nya funktioner.
 feature: Variables
 exl-id: faae7963-078d-40ad-ba09-71efa0b90df1
-source-git-commit: 7c7a7d8add9edb1538df12b440bc0a15f09efe5e
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,7 @@ ht-degree: 1%
 
 Plugin-program är kodfragment som utför flera avancerade funktioner som hjälper er att implementera Analytics. Dessa plugin-program utökar JavaScript-filens funktioner så att du får fler funktioner som inte är tillgängliga med en grundläggande implementering. Adobe erbjuder ett antal andra plugins som en del i avancerade lösningar.
 
->[!IMPORTANT]
->
->Plugin-program tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger ingen support för dessa plugin-program, inklusive installation och felsökning. Om du behöver hjälp med ett plugin-program kontaktar du din organisations Account Manager. De kan ordna ett möte med en konsult för att få hjälp.
+{{plug-in}}
 
 Adobe erbjuder flera sätt att installera ett visst plugin-program:
 

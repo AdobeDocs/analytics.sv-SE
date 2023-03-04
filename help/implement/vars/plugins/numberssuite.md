@@ -3,18 +3,16 @@ title: Numbers Suite
 description: Producera och ändra tal för användning i andra JavaScript-variabler.
 feature: Variables
 exl-id: 7af88dce-baf3-4581-b5b6-0d6e41922266
-source-git-commit: 7c7a7d8add9edb1538df12b440bc0a15f09efe5e
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: Numbers Suite
 
->[!IMPORTANT]
->
->Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+{{plug-in}}
 
 Numbers Suite är en serie JavaScript-funktioner. Den innehåller följande plugin-program:
 

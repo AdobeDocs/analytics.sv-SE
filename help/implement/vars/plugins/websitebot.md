@@ -3,18 +3,16 @@ title: websiteBot
 description: Identifiera botar dynamiskt med musrörelser.
 feature: Variables
 exl-id: de997254-c604-4ca0-bdda-5920f3a4fa57
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: websiteBot
 
->[!IMPORTANT]
->
->Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+{{plug-in}}
 
 The `websiteBot` Med plugin-programmet kan du dynamiskt identifiera om besökarna på stationära datorer är favoriter. Ni kan använda dessa data för att öka noggrannheten i alla typer av rapporter, vilket ger er ett bättre sätt att mäta legitim webbplatstrafik.
 

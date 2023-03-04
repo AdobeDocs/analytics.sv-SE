@@ -3,10 +3,10 @@ title: Frågor och svar om migrering till Adobe Analytics
 description: Få svar på vanliga frågor när du går från en tredjepartsplattform till Adobe.
 feature: Third-party Integration
 exl-id: 1201909e-b20c-48c5-b287-393da8e22d78
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 56%
+ht-degree: 52%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 56%
 
 Alla Analytics-plattformar har olika sätt att samla in, hantera och lagra data. I stället för att migrera historiska data rekommenderar Adobe att du skapar ett tydligt brytdatum för att börja samla in och använda data i Adobe Analytics. Vanliga brytdatum är början av ett räkenskapsår, början av ett kalenderår eller början av en kalendermånad. Om användarna vill se historiska data kan de logga in på tredjepartsplattformen för att få fram specifika historiska rapporteringsbehov.
 
-Om din organisation är mån om att få historisk information överförd till Adobe kontaktar du er organisations Account Manager. En implementeringskonsult kan samarbeta med organisationen för att översätta en Google Analytics-dataexport till en datakälla som kan importeras av Adobes datainsamlingsservrar.
+Om din organisation är van vid att få historisk information porterad till Adobe ska du kontakta ditt kontoteam på Adobe. En implementeringskonsult kan samarbeta med organisationen för att översätta en Google Analytics-dataexport till en datakälla som kan importeras av Adobes datainsamlingsservrar.
 
 Vi rekommenderar att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) som kan ta med sig alla datakällor i flera kanaler.
 

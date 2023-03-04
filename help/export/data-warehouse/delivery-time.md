@@ -3,7 +3,7 @@ title: Felsöka leveranstider för Data warehouse-begäran
 description: Ta reda på eventuella problem med en Data warehouse-begäran som kan förlänga leveranstiden.
 feature: Data Warehouse
 exl-id: eed4d172-fffd-453f-ab5b-0fc2a79d5bd0
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -37,4 +37,4 @@ Om du behöver dessa typer av rapporter i tid bör du överväga följande alter
 
 * **Analysis Workspace**: Även om det inte finns ett obegränsat antal dimensionsobjekt, innehåller det nästan alla andra användningsfall som Data warehouse tillhandahåller.
 * **Datafeed**: Tar dagligen med alla rådata i en rapportserie och skickar den till en FTP-plats. Du kan sedan importera dessa data till din egen databas och köra frågor för att hämta de data du söker.
-* **Anpassade tekniktjänster**: Adobe Engineering Services kan ge er en anpassad lösning till en extra kostnad. Kontakta din organisations kontoansvarige om du vill ha mer information.
+* **Anpassade tekniktjänster**: Adobe Engineering Services kan ge er en anpassad lösning till en extra kostnad. Kontakta kontoteamet på Adobe för mer information.

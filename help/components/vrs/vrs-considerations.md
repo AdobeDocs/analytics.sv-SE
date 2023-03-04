@@ -4,7 +4,7 @@ keywords: Virtual Report Suite, VRS
 title: Virtuella rapportsviter och taggar för flera programsviter
 feature: VRS
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Genom att ersätta taggning för flera programsviter med en global rapportserie 
 
 ## Riktlinjer
 
-Om du är osäker på om de användningsområden som beskrivs gäller för dig och din organisation, kontaktar du andra Adobe Analytics-administratörer eller din kontoansvarige på Adobe. De kan hjälpa er att bedöma era affärsbehov och ge en rekommendation.
+Om du är osäker på om de användningsområden som beskrivs gäller för dig och din organisation kan du kontakta dina andra Adobe Analytics-administratörer eller ditt kontoteam på Adobe. De kan hjälpa er att bedöma era affärsbehov och ge en rekommendation.
 
 Tänk på följande när du avgör om du ska använda taggar för flera sviter eller virtuella rapportsviter:
 

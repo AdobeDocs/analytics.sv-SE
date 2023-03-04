@@ -3,9 +3,9 @@ description: På sidan Fakturering kan du få tillgång till faktureringsinforma
 title: Fakturering
 feature: Admin Tools
 exl-id: cea802e4-99c4-491e-99c2-8476870001f7
-source-git-commit: 2c0aef13bdb88b0a7aa9f100c72c21f66a14c8dd
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ På sidan Fakturering kan du få tillgång till faktureringsinformation, inklusi
 
 >[!NOTE]
 >
->Kontakta din kontoansvarige om åtkomst till faktureringsfliken är inaktiverad för ditt företag.
+>Om åtkomst till faktureringsfliken är inaktiverad för ditt företag kontaktar du ditt Adobe-kontoteam.
 
 Med trafiköversiktsdata från faktureringssidan kan du korrelera sidvisningsdata i rapporter med fakturerbara serversamtal på fakturan. The [!UICONTROL Billing] kan du göra följande på sidan:
 
@@ -44,7 +44,7 @@ Resultatet [!UICONTROL Monthly Invoice] rapporten innehåller följande informat
 
 >[!NOTE]
 >
->För att få en arbetskopia av [!UICONTROL Monthly Invoice] , kopiera den till Urklipp och sedan klistra in den i ett kalkylprogram som t.ex. Microsoft Excel*.
+>För att få en arbetskopia av [!UICONTROL Monthly Invoice] , kopiera den till Urklipp och sedan klistra in den i ett kalkylprogram som Microsoft Excel&#42;.
 
 ## Rapportdatum kontra bearbetningsdatum {#section_51A48C2F223F4904BE1407C13333C457}
 

@@ -3,7 +3,7 @@ title: Datalagringspolicy
 description: En datalagringspolicy avgör hur länge Adobe lagrar dina data.
 feature: Privacy
 exl-id: f3bb02d2-380d-4eb7-8449-e0318fc8c0a6
-source-git-commit: c774d05ca3b1f9f45ec118b0e7b8a839a03b87e3
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Data som lagras baseras på aktuellt datum och datum/tid för historiska data. D
 
 ## Justera standardperioden för datalagring
 
-Om du vill minska eller förlänga standardperioden för datalagring kontaktar du din organisations kontoansvarige.
+Om du vill minska eller förlänga standardperioden för datalagring kontaktar du kontoteamet på Adobe.
 
 * Det kostar inget att minska standardperioden för datalagring.
 * Om man vill utöka datalagringen till mer än 25 månader måste man köpa utökningar, som kan fås i steg om ett år. Upp till åtta förlängningar kan köpas, under totalt 10 år i månaden (två år i månaden för fallissemang plus åtta år).
@@ -49,9 +49,9 @@ Datalagringspolicyn definierar ett rullande datalagringsfönster där fullständ
 
 **Kan jag begära en kopia av mina data innan de tas bort?**
 
-Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffnivå. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera om du vill ha mer information. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du din organisations kontoansvarige. Särskilda inkvarteringar kan göras. kostnaderna kan variera.
+Ja. Adobe kan tillhandahålla en historisk datapassage av råa data på träffnivå. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i användarhandboken för Exportera om du vill ha mer information. Om du har dataexportkrav som inte omfattas av användargränssnittet kontaktar du kontoteamet på Adobe. Särskilda inkvarteringar kan göras. kostnaderna kan variera.
 
 **När tar Adobe bort data?**
 
-Kontakta er organisations kontoansvarige för den specifika tid då era data ska tas bort. Data tas vanligtvis bort rullande månadsvis.
+Kontakta kontoteamet på Adobe för den specifika tidpunkt då dina data ska tas bort. Data tas vanligtvis bort rullande månadsvis.
 

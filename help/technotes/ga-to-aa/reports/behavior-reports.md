@@ -3,7 +3,7 @@ title: Beteenderapporter i Adobe Analytics
 description: Lär dig hur du skapar beteenderapporter i Adobe Analytics
 feature: Third-party Integration
 exl-id: ea441afa-e595-4ffa-b446-d67e87f8a7c9
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -87,4 +87,4 @@ Eftersom den här funktionen kräver implementeringsändringar rekommenderar Ado
 
 ## Utgivarrapporter
 
-På samma sätt som Google kräver en anslutning till Google Ad Manager erbjuder Adobe en dedikerad produkt som ger insikt i Adobe Advertising Cloud. Om din organisation är intresserad av att använda den här produkten kontaktar du din organisations Account Manager.
+På samma sätt som Google kräver en anslutning till Google Ad Manager erbjuder Adobe en dedikerad produkt som ger insikt i Adobe Advertising Cloud. Om din organisation är intresserad av att använda den här produkten kontaktar du ditt Adobe-kontoteam.

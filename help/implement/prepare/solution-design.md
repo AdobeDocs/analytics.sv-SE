@@ -3,9 +3,9 @@ title: Skapa ett dokument för lösningsdesign
 description: Lär dig vad ett designdokument är och hur du kan använda det i din organisation.
 feature: Implementation Basics
 exl-id: 0b5c5ddd-5f53-4790-a649-1381135dacda
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ När man avgör vilka data som ska samlas in är det enkelt att säga&quot;allt&
 
 ## Ytterligare resurser
 
-Att definiera ett designdokument är ett ganska komplext projekt, särskilt för organisationer som inte har skapat ett tidigare. Om du behöver ytterligare hjälp kan Adobe ge dig specialkonsultationer som hjälper dig att komma igång med Adobe Analytics. Kontakta din kontoansvarige om du vill registrera Adobe professionella tjänster. A [Teknisk förimplementeringsenkät](assets/technical-pre-implementation-questionnaire.pdf) kan fyllas i så att Adobe vet exakt hur man kan hjälpa efter organisationens behov.
+Att definiera ett designdokument är ett ganska komplext projekt, särskilt för organisationer som inte har skapat ett tidigare. Om du behöver ytterligare hjälp kan Adobe ge dig specialkonsultationer som hjälper dig att komma igång med Adobe Analytics. Kontakta Adobe Account Team om du vill anmäla dig till Adobe professionella tjänster. A [Teknisk förimplementeringsenkät](assets/technical-pre-implementation-questionnaire.pdf) kan fyllas i så att Adobe vet exakt hur man kan hjälpa efter organisationens behov.
 
 Det finns också ett flertal partners på Adobe som specialiserar sig på att skapa ett designdokument och implementera Adobe Analytics på er webbplats.
 

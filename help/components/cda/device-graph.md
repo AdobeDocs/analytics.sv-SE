@@ -2,7 +2,7 @@
 title: Enhetsdiagram
 description: Förstå förutsättningarna och begränsningarna med att sammanfoga data med hjälp av enhetsdiagrammet.
 exl-id: b8408a7d-6aff-4fff-b535-f10d422bcf0d
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 2%
@@ -15,7 +15,7 @@ Enhetsövergripande analyser kan använda det privata diagrammet för att samman
 
 ## Förutsättningar som är specifika för enhetsdiagrammet
 
-Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs följande. Samarbeta med team inom organisationen och kontohanteraren för Adobe för att säkerställa att ni uppfyller alla följande:
+Om du tänker implementera korsenhetsanalys med enhetens diagrammetod krävs följande. Arbeta med team inom organisationen och kontoteamet på Adobe för att säkerställa att ni uppfyller alla följande.
 
 >[!WARNING]
 >
