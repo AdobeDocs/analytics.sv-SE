@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: 58937630e6173013b622deec0433ef67b483c483
+source-git-commit: 3b1777d48d4661a558b5be2cb09b822bf349ee76
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1279'
 ht-degree: 1%
 
 ---
@@ -53,6 +53,8 @@ För data som skickas via API, till exempel via [API för datainfogning](https:/
 
 Inte just nu. Du kan välja att samla in alla högentropiska tips eller inga.
 
+Observera att fullVersionList för närvarande inte samlas in eftersom webbläsarhuvudversionen fångas in som ett tips om låg entropi.
+
 +++
 
 +++**Vilka är de olika tipsvärdena för klienten?**
@@ -64,15 +66,14 @@ Tabellen nedan beskriver klienttipsen från oktober 2022.
 | Sec-CH-UA | Webbläsare och signifikant version | Låg | `"Google Chrome 84"` |
 | Sec-CH-UA-Mobile | Mobil enhet (true eller false) | Låg | `true` |
 | Sec-CH-UA-Platform | Operativsystem/plattform | Låg | `"Android"` |
-| Sec-CH-UA-Arch | Arkitektur för webbplatsen | Hög | `"arm"` |
-| Avsn-CH-UA-bitness | Arkitekturbitars | Hög | `"64"` |
-| Sec-CH-UA-Full-Version | Fullständig version av webbläsaren | Hög | `"84.0.4143.2"` |
-| Sec-CH-UA-full-version-list | Lista över varumärken med deras version | Hög | `"Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"` |
-| Sec-CH-UA-Model | Enhetsmodell | Hög | `"Pixel 3"` |
-| Sec-CH-UA-platform-version | Operativsystem/plattformsversion | Hög | `"10"` |
+| arkitektur | Arkitektur för webbplatsen | Hög | `"arm"` |
+| bitterhet | Arkitekturbitenhet | Hög | `"64"` |
+| fullVersionList | Lista över varumärken med deras version | Hög | `"Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"` |
+| modell | Enhetsmodell | Hög | `"Pixel 3"` |
+| platformVersion | Operativsystem/plattformsversion | Hög | `"10"` |
 
 * Tips om låg entropi samlas in via begärandehuvudet.
-* High-entropy-tips samlas in via JavaScript och skickas via frågesträngsparametervärden. Frågesträngsparametrarna använder `h.` som ett prefix i bildbegäran.
+* High-entropy-tips samlas in via JavaScript och skickas via frågesträngsparametervärden. Frågesträngsparametrarna använder `h.` som ett prefix i bildbegäran. Observera att fullVersionList för närvarande inte samlas in eftersom webbläsarhuvudversionen fångas in som ett lågt entropittips.
 
 Höga entropittips samlas in via JavaScript-anrop och skickas via frågeparameter
 
