@@ -4,9 +4,9 @@ description: Analysis Workspace är det främsta analysverktyget för Adobe Anal
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: 8c4c5e2a0149f720f9ae2d5dac95be8d2e8894e8
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -21,23 +21,27 @@ Om du bara har några minuter kan du titta på den här korta översikten för a
 
 ## Logga in på Adobe Analytics {#login}
 
-Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics genom att gå till [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att hamna på startsidan för projektlistan för arbetsytan om du inte tidigare har valt ett specifikt projekt.
+Om du vill börja använda Analysis Workspace loggar du in på Adobe Analytics genom att gå till [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Du kommer att landa på projektsidan om du inte tidigare har valt ett specifikt projekt.
 
-![](assets/login-analytics.png)
+![](assets/create-new-project.png)
 
 ## Använda självstudiekursen Utbildning {#training-tutorial}
 
-När du har loggat in bör du använda Analysis Workspace självstudiekurs, som leder dig igenom vanliga termer och steg för att skapa din första analys i Workspace. Klicka på **[!UICONTROL Create New Project]** och sedan markera **Utbildning - självstudiekurs** inom det nya projektet modalt.
+När du är inloggad kan du använda Analysis Workspace självstudiekursmall för första steget. Här får du hjälp med vanliga termer och steg för att skapa din första analys i Workspace. Börja med självstudiekursen
+
+1. Klicka på **[!UICONTROL Learning]** till vänster.
+1. Klicka på **[!UICONTROL Open Tutorial]**.
 
 ![](assets/training-tutorial.png)
 
 ## Skapa ett nytt projekt {#new-project}
 
-När självstudiekursen är klar kan du börja skapa ditt första projekt. The **nytt projekt modal** innehåller olika alternativ för att starta analysen. Du kan välja att starta från ett tomt projekt eller [tomt mobilstyrkort](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), beroende på om du tänker dela din analys via webbläsaren eller mobilappen Adobe Analytics dashboards.
+När du är klar med självstudiekursen kan du börja skapa ditt första projekt. På [!UICONTROL Projects] kan du välja att börja från
 
-![](assets/create-new-project.png)
+* [!UICONTROL Blank project] om du planerar att dela analysen från webbläsaren, eller
+* [[!UICONTROL Blank mobile scorecard]](/help/analyze/mobile-app/curator.md)om du tänker dela med dig av dina analyser från mobilappen Customer Journey Analytics dashboards.
 
-Du kan också börja analysera från färdiga **mallar**, antingen standardmallar som tillhandahålls av Adobe eller egna mallar som har skapats av din organisation. Det finns flera olika mallar tillgängliga, beroende på vilken analys eller vilket användningsfall du har tänkt dig. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) om de olika mallalternativen.
+Du kan också börja analysera från färdiga **mallar**, antingen standardmallar som tillhandahålls av Adobe eller egna mallar som har skapats av din organisation. Det finns flera olika mallar tillgängliga, beroende på vilken analys eller vilket användningsfall du har tänkt dig. Du kan nu hitta dem under [!UICONTROL Reports] i den vänstra listen.
 
 ## Bygg en analys {#analysis}
 

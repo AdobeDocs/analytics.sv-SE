@@ -5,9 +5,9 @@ title: Schemalägg projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 2d6854f7-8954-4d55-b2be-25981cfb348b
-source-git-commit: bf9f04ce6ff057ca66bcf0d9cf66540cea160444
+source-git-commit: 74d4127ccb9ff2837ab5b17c8237aa4604378485
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '572'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ I Hanteraren för schemalagda projekt kan du redigera och ta bort återkommande 
 | [!UICONTROL Owner] | Personen som skapade och äger projektet. |
 | [!UICONTROL Tags] | (valfritt) Taggning är ett bra sätt att ordna projekt. Alla användare kan skapa taggar och använda en eller flera taggar i ett projekt. Men du kan bara se taggar för de projekt som du äger eller som har delats med dig. |
 | [!UICONTROL Delivered To] | Mottagare av det här schemalagda projektet. |
-| [!UICONTROL Expiration Date] | Standardförfallodatumet beror på schemafrekvensen. Se &quot;Schemalagda förfallodatum för projekt&quot; nedan. |
+| [!UICONTROL Expiration Date] | För alla schemalagda projektfrekvenser kan du ange förfallodatumet för upp till ett år i framtiden. |
 | [!UICONTROL Frequency] | Hur ofta du vill att det här schemaprojektet ska skickas till mottagarna. |
 | [!UICONTROL Execution Time] | Vid vilken tidpunkt på dagen det här schemalagda projektet skickas. |
 | [!UICONTROL Number of Queries] | Antalet frågor mot det här projektet. |
@@ -78,12 +78,3 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt:
 | **[!UICONTROL View schedule ID]** | Navigera till kolumnalternativen längst upp till höger och lägg till kolumnen Schedule-ID i tabellen. Det schemalagda ID:t är ofta användbart vid felsökning. |
 
 I Hanteraren för schemalagda projekt visas de objekt som en viss användare har skapat. Om användarkontot är inaktiverat i programmet stoppas alla schemalagda leveranser. Schemalagd projektägare kan vara **överförd** till en ny användare under **Admin > Analytics Users &amp; Assets > Transfer Assets**.
-
-## Schemalagda förfallodatum för projekt
-
-Utgångsdatum för schemalagda projekt beror på den schemalagda leveransfrekvensen:
-
-* Leveranser per timme går ut om en vecka.
-* Dagliga leveranser går ut om en månad.
-* Leveranser per vecka går ut om 6 månader.
-* Leveranser per månad eller år går ut om ett år.

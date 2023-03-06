@@ -4,7 +4,7 @@ description: Produktdokumentation och självhjälp för Analysis Workspace, Adob
 feature: Workspace Basics
 role: User, Admin
 exl-id: 8ed81356-626e-4334-9e20-b481e6ba654a
-source-git-commit: 860621a058826ba8bf602d87a702f835c7c00a37
+source-git-commit: dff8e6a3f8ffad5ff0033f75cad08b6e53b1d7b8
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 Den här guiden innehåller produktdokumentation och självhjälp för följande rapporterings- och analysverktyg för Adobe Analytics:
 
 * **[!UICONTROL Analysis Workspace]:** Den främsta funktionen i Adobe Analytics. Workspace innehåller en arbetsyta dit du kan dra komponenter för att uppfylla rapporteringsbehov.
-* **[!UICONTROL Adobe Analytics dashboards]:** Den här mobilappen ger användarna mobil åtkomst till intuitiva styrkort med viktiga mätvärden och möjlighet att göra mer detaljerade uppdelningar och trendrapporter.
+* **[!UICONTROL Adobe Analytics dashboards]:** Med den här mobilappen kan användarna få tillgång till intuitiva styrkort med viktiga mätvärden, mer detaljerade uppdelningar och trendrapporter.
 * **[!UICONTROL Activity Map]:** Ett plugin-program för webbläsare med en överlagring på webbplatsen som visar de mest klickade elementen.
 * **[!UICONTROL Report Builder]:** Ett Excel-tillägg som gör att ni kan hämta Analytics-data och placera dem direkt i en arbetsbok.
 * **[!UICONTROL Reporting API]:** Skicka rapportförfrågningar direkt till Adobes servrar och få svar som kan användas i era egna kundrapporteringsverktyg.
-* **[!UICONTROL Reports & Analytics]:** Ett verktyg med massor av färdiga rapporter. Adobe rekommenderar att Analysis Workspace används för de flesta rapporteringsbehov.
+* **[!UICONTROL Reports & Analytics]:** Ett verktyg med massor av färdiga rapporter. Adobe rekommenderar att Analysis Workspace används för de flesta rapporteringsbehov. **Obs!** Rapporter och analyser kommer att [slutprodukt](https://express.adobe.com/page/6WnF8JK6IRDhf/) den 31 december 2023.
 
 Här är en videoöversikt över Adobe Analytics:
 
@@ -42,7 +42,7 @@ Här är en videoöversikt över Adobe Analytics:
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics#support)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
 * [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)
