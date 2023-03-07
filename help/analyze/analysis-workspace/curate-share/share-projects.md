@@ -5,14 +5,37 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 58abc4a8410441a3c76c6737ace8e2c5ab5c1374
+source-git-commit: ec3539389ab3aa9589e15e14f19b6f34d57a15a2
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1585'
 ht-degree: 0%
 
 ---
 
 # Dela projekt
+
+Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
+
+* Användare och grupper i organisationen som har tillgång till Adobe Analytics
+
+   Du kan dela behörigheten Redigera, Duplicera eller Visa
+
+* Användare och grupper i organisationen som inte har tillgång till Adobe Analytics
+
+   Mottagarna har åtkomst endast till vyn
+
+* Personer utanför din organisation
+
+   Mottagarna har åtkomst endast till vyn
+
+Alla [kuration](curate.md) används innan delningen visas när mottagarna öppnar projektet.
+
+Här är en videoöversikt över projektdelning:
+
+>[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+
+
+## Dela med Adobe Analytics användare och grupper i er organisation {#Add}
 
 Du kan dela ett projekt med befintliga Adobe Analytics-användare eller -grupper i din organisation. När du delar ett projekt enligt beskrivningen i det här avsnittet måste de användare du delar med redan ha ett Adobe Analytics-konto.
 
@@ -57,8 +80,11 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    * **Ange som landningssida för mottagare:** Anger den här sidan som startsida för mottagare. Den här inställningen kvarstår inte - det är en engångsåtgärd vid tidpunkten för delningen.
 
-1. Klicka på **[!UICONTROL Share]**.
-Du kan också klicka **[!UICONTROL Curate and Share]** för att automatiskt lägga in projekturval. Om ett projekt redan har delats visas följande knappar **[!UICONTROL Update]** och **[!UICONTROL Curate & Update]**. Läs mer om [projekturval](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
+1. Klicka på **[!UICONTROL Share]**. (Om projektet redan har delats klickar du på [!UICONTROL **Uppdatera**].)
+
+   eller
+
+   Klicka **[!UICONTROL Curate and Share]** för att automatiskt lägga in projekturval. (Om projektet redan har delats klickar du på **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html).
 
 ## Dela en länk till ett projekt
 
@@ -78,6 +104,63 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 1. Klicka **[!UICONTROL Copy link]** bredvid **[!UICONTROL Share URL field]**.
 
 1. Dela länken med användare i organisationen. Du kan till exempel klistra in den i ett e-postmeddelande, på en intern webbplats och så vidare.
+
+## Dela en offentlig länk med vem som helst (ingen inloggning krävs) {#share-public-link}
+
+{{release-limited-testing-section}}
+
+Du kan bevilja [Åtkomst endast för visning](/help/analyze/analysis-workspace/curate-share/view-only-projects.md) till Analysis Workspace-projekt för dem som inte har tillgång till Adobe Analytics. Detta kan omfatta:
+
+* Personer utanför din organisation
+
+* Personer i din organisation som inte är anställda hos Adobe Analytics
+
+>[!NOTE]
+>
+>Tänk på följande när du delar en offentlig länk:
+>
+>* Funktionen för att dela en offentlig åtkomstlänk kan inaktiveras av Analytics-administratören, vilket beskrivs i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Om du inte kan dela en offentlig länk enligt beskrivningen i det här avsnittet har Analytics-administratören inaktiverat den här funktionen.
+>
+>* Projekt med fler än 14 utökade visualiseringar kan inte delas via en offentlig åtkomstlänk.
+
+
+Så här delar du en offentlig länk till ett Analysis Workspace-projekt:
+
+1. Öppna det Analysis Workspace-projekt som du vill dela.
+
+1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share public link]**.
+
+   Om det finns ändringar som inte har sparats uppmanas du att spara projektet.
+
+   <!-- Add screen shot of new modal -->
+
+1. Aktivera **[!UICONTROL Link active]** om det inte redan är aktiverat.
+
+1. Välj om du vill aktivera följande säkerhetsalternativ (dessa alternativ kan styras av Analytics-administratören):
+
+   * **[!UICONTROL Require single sign-on (SSO) authentication]:**
+
+      Kräv att personer med länken autentiserar via enkel inloggning innan de får åtkomst till det delade projektet. Välj det här alternativet om du vill att projektet bara ska vara tillgängligt för användare i din organisation.
+
+      Analysadministratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
+
+      * Om det här alternativet inte visas är enkel inloggning inte aktiverat för din organisation eller så har analysadministratören inte aktiverat den här funktionen.
+
+      * Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör SSO-autentisering för att kunna komma åt alla offentliga länkar.
+   * **[!UICONTROL Require Password]:** Kräv att personer med länken anger ett lösenord innan de öppnar Analysis Workspace-projektet. Detta ger en extra säkerhetsnivå till ditt projekt.
+
+      Om du väljer det här alternativet anger du ett lösenord. Kom ihåg att dela det här lösenordet tillsammans med projektlänken när du delar det med andra. <!--go through this workflow and see how it works.-->
+
+      Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör att alla offentliga länkar är lösenordsskyddade. Analysadministratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md).
+
+
+1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** om du vill kopiera länken till systemets Urklipp.
+
+1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
+
+   Alla som du delar länken med kan visa Analysis Workspace-projektet. Om du väljer att kräva ett lösenord måste du också dela det med alla som du vill komma åt länken.
+
+1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt. <!-- True? -->
 
 ## Dela projekt i projektledaren {#Manager}
 

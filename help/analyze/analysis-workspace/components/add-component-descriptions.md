@@ -1,11 +1,11 @@
 ---
-description: Administratörer kan lägga till beskrivningar för komponenter med antingen rapportsviten eller datamappningslistan.
+description: Administratörer kan lägga till beskrivningar för komponenter med antingen rapportsviten.
 title: Lägga till komponentbeskrivningar
 feature: Components
 role: Admin
-source-git-commit: fb9be2d52ebe02603a7255b0ff6d5a7c2efdeed7
+source-git-commit: a8605f6c3077a625d6936b4ba9e135dc35c99439
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---

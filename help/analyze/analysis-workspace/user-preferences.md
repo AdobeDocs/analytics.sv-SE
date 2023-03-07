@@ -4,9 +4,9 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: 58abc4a8410441a3c76c6737ace8e2c5ab5c1374
+source-git-commit: 73005fa62615b1dce184d03bd9e53fa519ab0be9
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2992'
 ht-degree: 1%
 
 ---
@@ -185,14 +185,21 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 
 ## Företagsinställningar
 
+>[!AVAILABILITY]
+>
+>Funktionen Public Access Links som beskrivs i det här avsnittet är i den begränsade testfasen av versionen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
+
 Du kan uppdatera företagsinställningarna som gäller för alla användare och projekt i organisationen. Mer information om hur du kommer åt dessa inställningar finns i [Uppdatera inställningar](#update-preferences).
 
 | Avsnitt | Inställningar | Alternativ |
 | --- | --- | --- |
 | **Fliken Rapporter** |  |  |
 |  | Dölj fliken Rapporter | Döljer fliken Rapporter för alla användare i organisationen. |
+| **Länkar för offentlig åtkomst** <!-- Double check the names of all these settings for what they are actually called --> |  |  |
+|  | Inaktivera alla offentliga åtkomstlänkar | <p>Inaktiverar alla befintliga offentliga åtkomstlänkar och förhindrar att användare i organisationen skapar nya länkar. Det innebär att användare inte kan dela Analysis Workspace-projekt med personer som inte har något Adobe Analytics-konto. Användare kan bara dela projekt med andra Adobe Analytics-användare inom organisationen.</p> <p>När offentliga länkar är inaktiverade:</p> <ul><li><p>Användarna kan inte skapa offentliga åtkomstlänkar</p><p>Alternativet Dela offentlig länk har tagits bort från Dela-menyn. Det innebär att användare inte längre kan dela projekt med personer som inte har ett Analysis Workspace-konto i organisationen enligt beskrivningen i [Dela en offentlig länk med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>Alla befintliga offentliga länkar är inaktiverade</p></li><p>Om offentliga länkar är inaktiverade och sedan återaktiverade, återaktiveras inte alla tidigare inaktiverade länkar automatiskt. I så fall måste användarna manuellt återaktivera dem för varje projekt från dialogrutan Dela projekt.</p> |
+|  | Kräv autentisering av Experience Cloud | <p>När det här alternativet är aktiverat kan endast mottagare som har ett federerat ID och kan logga in på Adobe Experience Cloud få åtkomst till delade offentliga länkar.</p> <p>När det här alternativet är aktiverat aktiveras alternativet&quot;Kräv autentisering av Experience Cloud&quot; i delningsdialogrutan när en användare skapar en länk till ett Analysis Workspace-projekt och det kan inte inaktiveras av den användare som delar länken. (Information om hur användare kan dela projekt med användare utanför organisationen finns i [Dela en offentlig länk med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).)</p> <p>Tänk på följande när du aktiverar det här alternativet:</p><ul><li><p>När du aktiverar det här alternativet inaktiveras alla aktiva offentliga länkar som inte har Experience Cloud aktiverat.</p></li> <li><p>Om det här alternativet är aktiverat och sedan inaktiverat, återaktiveras inte alla tidigare inaktiverade länkar automatiskt. I det här fallet måste användarna manuellt återaktivera dem från dialogrutan Dela projekt.</p></li> <li><p>Det här alternativet är bara tillgängligt om enkel inloggning har implementerats i din organisation. Mer information om hur systemadministratörer kan aktivera enkel inloggning för din organisation finns i [Konfigurera identitet och enkel inloggning](https://helpx.adobe.com/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Om enkel inloggning har konfigurerats för din organisation kontrollerar du om någon typ av autokontoskapande har implementerats i konsolen. Vanligtvis konfigurerar en systemadministratör detta enligt beskrivningen i [Aktivera automatisk kontogenerering](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>Om organisationen befinner sig i en bransch där det krävs HIPAA-kompatibilitet aktiveras det här alternativet automatiskt och kan inte inaktiveras.</p></li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Återställ standardinställningar
 
