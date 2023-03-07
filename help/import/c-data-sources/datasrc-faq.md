@@ -5,9 +5,9 @@ title: Vanliga frågor om Data Sources
 topic-fix: Developer and implementation
 feature: Data Sources
 exl-id: 2a5d38fe-5c5b-4275-bc44-e9cb02ec2f5d
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: 18c5f88cef907af1bdb17c99df59dfb46cc859bc
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1599'
 ht-degree: 0%
 
 ---
@@ -146,3 +146,9 @@ Om numeriska händelser, valutatecken eller räknarhändelser (fler än 1) kräv
 s.products="Footwear;Running Shoes;1;99.99;event1=4.50";
 s.products="Footwear;Running Shoes;1;99.99;event1=4.50|event4=1.99";
 ```
+
+## Varför plockas inte min ftp-överföring upp?
+
+När .fin-filen har överförts är det viktigt att du loggar ut från FTP-platsen för datakällor. Orsaken är att Analytics använder utloggningshändelser som utlösare för att ange att filerna är klara för bearbetning. Om du överför filerna programmatiskt är det viktigt att den automatiska processen även loggar ut från FTP-platsen efter att filerna har överförts.
+
+Kontrollera att filnamnen har rätt format. Inledande eller avslutande blanksteg i filnamnet gör att filen inte känns igen och inte kan hämtas av Adobe vid ifyllningsprocessen.
