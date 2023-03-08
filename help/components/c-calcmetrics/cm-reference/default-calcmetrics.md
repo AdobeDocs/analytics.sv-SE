@@ -1,11 +1,10 @@
 ---
 description: Adobe tillhandahåller olika beräknade värden som du kan använda. På den här sidan visas dessa mått och deras avsedda användning.
 title: Standardberäknade värden
-feature: calculated metrics
-exl-id: 1a49435c-96d1-4617-bd1a-a5d3b74e3ebd
-source-git-commit: 43bb7102e2caff93c3beea6e8c23500347679327
+feature: Calculated Metrics
+source-git-commit: b383e856374791be7d85b1f25566e8d98a099ec8
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 >Förutom de standardvärden för beräknade värden som beskrivs på den här sidan kan du även lägga till ytterligare beräknade värden i en rapportserie.
 >
 >Ni kan:
-> * Lägg till beräknade standardvärden för direktuppspelningsmedia, enligt beskrivningen i [Beräknade mått](/https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html)
+> * Lägg till beräknade standardvärden för direktuppspelningsmedia, enligt beskrivningen i [Beräknade mått](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/variables/calculated-metrics.html)
 > * Skapa anpassade beräknade mätvärden från befintliga mätvärden, vilket beskrivs i [Beräknade och avancerade beräknade (härledda) mätvärden](/help/components/c-calcmetrics/cm-overview.md).
 
 

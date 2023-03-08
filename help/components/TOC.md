@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 74a6f05817cf93eb95dc7b5546b3e5155a08c725
+source-git-commit: a49affe282e95d451e72ed92a585b861f081f02e
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 50%
+source-wordcount: '690'
+ht-degree: 49%
 
 ---
 
@@ -201,6 +201,7 @@ ht-degree: 50%
       + [Mätvärdeskompatibilitet](c-calcmetrics/cm-compatibility.md)
       + [Beräknade mätvärden: rollbaserade behörigheter](c-calcmetrics/cm-role-based-rights.md)
       + [Summor för beräknade mätvärden](c-calcmetrics/cm-totals.md)
+      + [Standardberäknade värden](c-calcmetrics/cm-reference/default-calcmetrics.md)
 + Virtual Report Suites {#virtual-report-suites}
    + [Översikt över Virtual Report Suites](vrs/vrs-about.md)
    + [Virtuell rapportsvit - komponentkurva](vrs/vrs-components.md)
