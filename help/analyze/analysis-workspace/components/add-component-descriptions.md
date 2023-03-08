@@ -3,9 +3,9 @@ description: Administratörer kan lägga till beskrivningar för komponenter med
 title: Lägga till komponentbeskrivningar
 feature: Components
 role: Admin
-source-git-commit: a8605f6c3077a625d6936b4ba9e135dc35c99439
+source-git-commit: c2bfedde64b4961afcda75880594ee9b1347a831
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Beskrivningar hjälper användarna att förstå hur de bäst använder de olika komponenterna när de skapar projekt i Analysis Workspace eller när de visar rapporter.
 
-Analysadministratörer kan lägga till beskrivningar för komponenter (Dimensioner, mått, segment och datumintervall)<!-- either within the Report Suite or using the Data Dictionary directly within Analysis Workspace-->.
+Analysadministratörer kan lägga till beskrivningar för komponenter (Dimensioner, mått, segment och datumintervall) antingen i rapportsviten eller med datamappningslistan direkt i Analysis Workspace.
 
 ## Lägga till beskrivningar till komponenter i en Report Suite
 
@@ -22,14 +22,12 @@ I följande video beskrivs hur du lägger till dimensioner och måttbeskrivninga
 
 >[!VIDEO](https://video.tv.adobe.com/v/25453/?quality=12)
 
-<!--
-## Add descriptions to components in Analysis Workspace (using the Data Dictionary) {#add-descriptions}
+## Lägga till beskrivningar till komponenter i Analysis Workspace (med hjälp av Data Dictionary) {#add-descriptions}
 
 {{release-limited-testing-section}}
 
-The Data Dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their Analytics environment. This includes the ability for Analytics administrators to add component descriptions directly within Analysis Workspace. 
+Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö. Detta innefattar möjligheten för Analytics-administratörer att lägga till komponentbeskrivningar direkt i Analysis Workspace.
 
-For information about adding a component description in the data dictionary, see [Edit component entries in the Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
+Mer information om hur du lägger till en komponentbeskrivning i dataordlistan finns i [Redigera komponentposter i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
 
-For general information about the Data Dictionary, see [Data Dictionary overview](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md).
--->
+Allmän information om Data Dictionary finns i [Översikt över dataordlistan](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md).

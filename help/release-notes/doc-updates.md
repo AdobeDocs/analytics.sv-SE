@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 90914569256cf891cb3cf693843e7cf9ede2f4ce
+source-git-commit: c2bfedde64b4961afcda75880594ee9b1347a831
 workflow-type: tm+mt
-source-wordcount: '3610'
+source-wordcount: '3624'
 ht-degree: 34%
 
 ---
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Mars 2023** |  |
+| Standardberäknade värden | Innehåll som förklarar [standardberäknade värden från Adobe](/help/components/c-calcmetrics/cm-reference/default-calcmetrics.md). |
 | **Februari 2023** |  |
 | Implementering | Uppdaterat innehåll om hur man [implementera Adobe Analytics för webb och mobiler](../implement/home.md). |
 | Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md). |
