@@ -3,9 +3,7 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Redigera poster i Data Dictionary
 feature: Components
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: d24c43ce9a192dcffa18b3c592dd8cb2e1416198
+source-git-commit: 4e471b5f4376a9cdc3ab014139221b382b3b3c26
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
