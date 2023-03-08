@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: c8e3d9bd40a427387da746c084188b5d13f45bcd
+source-git-commit: 87d4e492afe8d614dfdba24389660829df871dd7
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '628'
 ht-degree: 73%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 73%
       + [Produktprofilbehörigheter för analysverktyg](admin-console/permissions/analytics-tools.md)
 + Administratörsverktyg för analyser {#admin-tools}
    + [Översikt över administrationsverktyg](admin/c-admin-tools.md)
-   + [Fakturering](admin/billing-admin.md)
    + [Kodhanteraren](admin/code-manager-admin.md)
    + [Datakällor](admin/data-sources.md)
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
