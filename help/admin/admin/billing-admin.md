@@ -3,9 +3,9 @@ description: På sidan Fakturering kan du få tillgång till faktureringsinforma
 title: Fakturering
 feature: Admin Tools
 exl-id: cea802e4-99c4-491e-99c2-8476870001f7
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ På sidan Fakturering kan du få tillgång till faktureringsinformation, inklusi
 
 >[!NOTE]
 >
->Om åtkomst till faktureringsfliken är inaktiverad för ditt företag kontaktar du ditt Adobe-kontoteam.
+>Kontakta din kontoansvarige om åtkomst till faktureringsfliken är inaktiverad för ditt företag.
 
 Med trafiköversiktsdata från faktureringssidan kan du korrelera sidvisningsdata i rapporter med fakturerbara serversamtal på fakturan. The [!UICONTROL Billing] kan du göra följande på sidan:
 

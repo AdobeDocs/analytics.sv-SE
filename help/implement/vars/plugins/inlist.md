@@ -3,16 +3,18 @@ title: inList
 description: Kontrollera om ett värde finns i ett annat teckenavgränsat värde.
 feature: Variables
 exl-id: 7eedfd01-2b9a-4fae-a35b-433ca6900f27
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: inList
 
-{{plug-in}}
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 The `inList` Med plugin-programmet kan du kontrollera om ett värde redan finns i en avgränsad sträng eller i ett JavaScript-arrayobjekt. Flera andra plugin-program är beroende av `inList` plugin-program som fungerar. Denna plugin ger en tydlig fördel jämfört med JavaScript-metoden `indexOf()` där det inte matchar partiella strängar. Om du t.ex. använde denna plugin för att kontrollera `"event2"`matchar den inte en sträng som innehåller `"event25"`. Denna plugin behövs inte om du inte behöver kontrollera värden i avgränsade strängar eller arrayer, eller om du vill använda en egen `indexOf()` logik.
 

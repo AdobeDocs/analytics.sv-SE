@@ -3,16 +3,18 @@ title: cleanStr
 description: Ta bort eller ersätt alla onödiga tecken från en sträng.
 feature: Variables
 exl-id: d699dcd4-5e0a-40d3-b345-e5b1a077d393
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: clearStr
 
-{{plug-in}}
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 The `cleanStr` plugin-programmet tar bort eller ersätter alla onödiga tecken från en sträng, inklusive taggar för HTML, extra blanksteg, tabbar och radmatningar. Ersätter även inledande och avslutande citattecken (`‘` och `’`) med raka enkla citattecken (`'`). Adobe rekommenderar att du använder det här plugin-programmet om du vill ta bort onödiga tecken från variabelvärden, och funktionen&quot;Clean text&quot; i Adobe Experience Platform Data Collection uppfyller inte dina implementeringsbehov. Detta plugin-program är inte nödvändigt om insamlade data inte innehåller onödiga tecken, eller om funktionen &quot;Rengör text&quot; i Adobe Experience Platform Data Collection är tillräcklig.
 

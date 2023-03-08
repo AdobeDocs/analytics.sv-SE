@@ -2,9 +2,9 @@
 title: Översikt över klassificeringsuppsättningar
 description: Använd Klassificeringsuppsättningar för att hantera klassificeringsdata.
 exl-id: a139b298-1188-42ce-b52f-c71e0ff7c4e3
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassifi
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig för alla kunder med arkitekturen för klassificeringsuppsättning. Kontakta Adobe kundtjänst eller ditt kontoteam på Adobe för mer information.
+>Klassificeringsuppsättningar är tillgängliga för alla kunder som har sina rapportsviter migrerade till den nya klassificeringsarkitekturen. Kontakta Adobe kundtjänst eller din kontoansvarige om du vill ha mer information.
 
 Den serverdelsarkitektur som lanserades med Klassificeringsuppsättningar innehåller flera viktiga förbättringar:
 

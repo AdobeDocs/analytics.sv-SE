@@ -3,7 +3,7 @@ title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Flera funktioner är tillgängliga:
 
 The `s.events` variabeln är en sträng som innehåller en kommaavgränsad lista med händelser som ska ingå i träffen. Det finns ingen bytegräns för den här variabeln, så den trunkeras inte. Giltiga värden är:
 
-* `event1` - `event1000`: Ange anpassade händelser hur du vill. Registrera hur du använder varje händelse i organisationens [konstruktionsdokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta kontoteamet på Adobe om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
+* `event1` - `event1000`: Ange anpassade händelser hur du vill. Registrera hur du använder varje händelse i organisationens [konstruktionsdokument](../../../prepare/solution-design.md). Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta din organisations kontoansvarige om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
 * `purchase`: Ökar [&#39;Beställningar&#39;](/help/components/metrics/orders.md) metrisk med 1 och tar värden som anges i `products` variabel att beräkna [&#39;Enheter&#39;](/help/components/metrics/units.md) och [Intäkter](/help/components/metrics/revenue.md). Se [köphändelse](event-purchase.md) för mer information.
 * `prodView`: Ökar [&#39;Produktvyer&#39;](/help/components/metrics/product-views.md) mätvärden.
 * `scOpen`: Ökar [&quot;Carts&quot;](/help/components/metrics/carts.md) mätvärden.

@@ -3,9 +3,9 @@ description: De ID:n du skickar in omfattar inte alltid alla träffdata som Anal
 title: ID-expansion
 feature: Data Governance
 exl-id: 312a249f-e0e7-44da-bb3d-b19f1bb4c706
-source-git-commit: 02d0baee99ad2ea5966788f036644d3e3780016e
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1348'
 ht-degree: 32%
 
 ---
@@ -26,7 +26,7 @@ Mer information finns i [API-dokumentationen för sekretesstjänsten](https://ex
 | Cookie-ID-expansion | Många analyskunder använde ursprungligen (äldre) [Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-privacy.html?lang=en), men använder nu [Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=en). För webbplatsbesökare som först besökte efter övergången finns endast ECID. För dem som först besökte när endast den gamla cookien fanns tillgänglig, men sedan besökt den: vissa av deras data har båda cookies. Äldre data har dock bara Analytics Cookie, och i sällsynta fall har de senaste data bara ett ECID.<p>Se till att du hittar alla data för en besökare som identifieras via en cookie eller ett ECID för analyser (Visitor ID). Om du för närvarande använder ECID och tidigare har använt Analytics Cookie bör du, när du skickar en begäran med någon typ av ID, inkludera båda ID:n i begäran eller ange `expandIds` alternativ. När du anger `expandIds`söker Adobe efter andra ECID:n eller Analytics-cookies som motsvarar de cookie-ID:n du anger. Begäran utökas automatiskt så att den innehåller dessa nyligen identifierade cookie-ID:n. |
 | Anpassat ID till cookie-ID-expansion | Det är vanligt att besökare på webbplatser för e-handel söker runt, lägger till saker i kundvagnen och sedan startar utcheckningsprocessen innan de loggar in på webbplatsen. Om det ID som används för att identifiera användare för en datasekretessbegäran lagras i en anpassad variabel endast när användaren är inloggad, är den här förinloggningsaktiviteten inte kopplad till ID:t. Kunderna kan använda Analytics-cookie-ID:t för att associera den surfning som utfördes före inloggningen med köpet efter inloggning, eftersom cookie-ID:t finns kvar vid inloggningen.<p>Låt oss anta att implementeringen lagrar ett användar-ID (CRM-ID, användarnamn, förmånsnummer, e-postadress, o.s.v., eller en hash av något av dessa värden) i en anpassad variabel (prop eller eVar) eller ett anpassat besökar-ID, och sedan använder detta ID för en begäran om datasekretess. Den registrerade kan bli förvånad över att information om all sin surfning inte returneras som en del av en åtkomstbegäran, särskilt om du har befordrat objekt som visats men ännu inte köpts. Behandling av Analytics-datasekretess stöder därför ID-expansion, vilket innebär att Analytics hittar alla cookie-ID:n som finns i samma träff som ett anpassat ID och sedan utökar begäran så att även dessa ID:n inkluderas.<p>När `expandIDs` anges tillsammans med andra namnområden än ett cookie-namnutrymme, utökas begäran så att den innehåller alla cookie-ID:n (ECID eller Analytics Cookie) som finns i träffar som innehåller något av de angivna ID:n. Utökning av cookie-ID, enligt beskrivningen ovan, utförs sedan på alla nyligen hittade cookie-ID:n.<p>När `expandIDs` -alternativet används för en åtkomstbegäran och det angivna ID:t har etiketten ID-PERSON, och två filuppsättningar returneras. Den första uppsättningen (personuppsättningen) innehåller endast data från träffar där det angivna ID:t hittades. Den andra uppsättningen (enhetsuppsättningen) innehåller endast data från träffar från expanderade ID:n, där det angivna ID:t inte fanns. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## När ID-expansion ska användas
 
@@ -59,4 +59,4 @@ Förutom standardvärdet `priority` -fältet har också stöd för värdet &quot
 
 Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Resultatet är inte önskvärt i situationer där du vill rensa bort datafält, och en orsak till varför Privacy Service-API:t inte är lämpligt för den här användningen markeras.
 
-Kontakta ert Adobe-kontoteam för att samordna med vårt konsultteam för ingenjörsarkitekter för att få mer information och möjlighet att vidta åtgärder för att ta bort eventuella PII-fel eller lösa dataproblem.
+Kontakta er Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för ytterligare granskning och insatser för att ta bort eventuella PII-fel eller lösa dataproblem.

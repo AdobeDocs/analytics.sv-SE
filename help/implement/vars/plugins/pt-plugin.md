@@ -3,16 +3,18 @@ title: pt
 description: Kör en funktion i en lista med variabler.
 feature: Variables
 exl-id: 2ab24a8e-ced3-43ea-bdb5-7c39810e4102
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: pt
 
-{{plug-in}}
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 The `pt` plugin-programmet kör en funktion eller metod i en lista med Analytics-variabler. Du kan till exempel selektivt köra [`clearVars`](../functions/clearvars.md) på flera variabler utan att funktionen anropas manuellt varje gång. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
 

@@ -2,16 +2,16 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: 6a1c95a25c89332b0d549e5ce8c5197331e71e3c
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
 
 # Variabelmappning i analyser i Adobe Experience Edge
 
-Följande tabell visar de variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa XDM-fältsökvägar behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics. Dessa fält ingår i **[!UICONTROL Adobe Analytics ExperienceEvent Template]** fältgrupp.
+Följande tabell visar de variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa XDM-fältsökvägar behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics.
 
 | Sökväg till XDM-fält | Analysdimension och beskrivning |
 | --- | --- |
@@ -125,7 +125,7 @@ Följande tabell visar de variabler som Adobe Experience Platform Edge Network a
 | `web.webPageDetails.siteSection` | The [Platsavsnitt](../../components/dimensions/site-section.md) dimension. |
 | `web.webReferrer.URL` | The [Referent](../../components/dimensions/referrer.md) dimension. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <!-- `environment.browserDetails.javaScriptVersion` and `web.webPageDetails.homePage` were included in the original table, but they no longer exist in Analytics. | -->
 

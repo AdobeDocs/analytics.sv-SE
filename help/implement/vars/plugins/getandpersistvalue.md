@@ -3,16 +3,18 @@ title: getAndPersistValue
 description: Lagra ett värde som kan hämtas senare när som helst.
 feature: Variables
 exl-id: b562f9ad-3844-4535-b729-bd3f63f6f0ae
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: getAndPersistValue
 
-{{plug-in}}
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 The `getAndPersistValue` Med plugin-programmet kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som [!UICONTROL Storage duration] i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Adobe rekommenderar att du använder det här plugin-programmet om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Denna plug-in är inte nödvändig om [!UICONTROL Storage duration] funktionen i Analytics-tillägget är tillräcklig. Du behöver inte heller använda denna plugin om du inte behöver ställa in och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom eVars finns kvar på serversidan vid Adobe.
 

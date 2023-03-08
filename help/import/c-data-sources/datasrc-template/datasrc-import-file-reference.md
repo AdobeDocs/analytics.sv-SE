@@ -5,9 +5,9 @@ title: Importera filreferens
 topic-fix: Developer and implementation
 feature: Data Sources
 exl-id: 7966b156-04bf-4d39-a720-ab47a665d1e2
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ Använd mallen Datakälla för att skapa en datakällfil som innehåller data so
 * För att påskynda bearbetningen av din datakällfil rekommenderar Adobe att händelsedata samlas i en rad per datum.
 
    Om din datakällfil till exempel mappar och visningsdata till Event 6, skapar du en enda datarad som innehåller det totala antalet annonsvisningar för varje dag, i stället för att skapa en separat dataradspost för varje annonsintryck som inträffade en viss dag.
-* Om du behöver överföra data från datum som infaller innan rapportsvitens skapandedatum, kontaktar du kontoteamet på Adobe för att ändra det äldsta datum som du kan köra rapporter för.
+* Om du behöver överföra data från datum som infaller innan rapportsvitens skapandedatum, kontaktar du din Account Manager för att ändra det äldsta datum som du kan köra rapporter för.
 
 **.FIN-fil**
 

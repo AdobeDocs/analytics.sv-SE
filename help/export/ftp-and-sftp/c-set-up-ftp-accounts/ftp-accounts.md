@@ -4,7 +4,7 @@ keywords: ftp;sftp
 title: Konfigurera FTP-konton – översikt
 feature: FTP Export
 exl-id: 55f942fe-cb06-43e1-bd3c-57d6786278b7
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 3%
@@ -23,6 +23,6 @@ Adobe-kunder får underhållsmeddelanden via sin standardprocess eftersom underh
 * Användare bör ta bort data som levereras av Adobe till FTP-kontot efter att data har överförts till deras system.
 * Meddela Adobe när FTP-konton inte längre behövs så att de kan inaktiveras.
 
-Adobe FTP-värdnamnet är `ftp.omniture.com` eller `ftp2.omniture.com`.
+Adobe FTP-värdnamnet är [!DNL ftp.omniture.com] eller [!DNL ftp2.omniture.com].
 
-Denna information, tillsammans med användarnamn och lösenord, ska anges antingen i [!UICONTROL Experience Cloud] (för klassificeringar och datakällor), eller av Adobe som ansvarar för att upprätta kontot på din begäran. Om du inte vet vilken FTP-adress du ska använda kontaktar du kontoteamet på Adobe som kan ange rätt adress. För klassificeringar och konton för datakällor har Adobe inte heller någon specifik tid på dagen som FTP-filer bearbetas. I stället använder Adobe ett skript som hela tiden avfrågar FTP-konton för nya filprocesser. Filer som överförs till dessa konton bearbetas så snabbt som möjligt.
+Denna information, tillsammans med användarnamn och lösenord, ska anges antingen i [!UICONTROL Experience Cloud] (för klassificeringar och datakällor), eller av Adobe som ansvarar för att upprätta kontot på din begäran. Om du inte vet vilken FTP-adress du ska använda kontaktar du kontohanteraren på Adobe som kan ange rätt adress. För klassificeringar och konton för datakällor har Adobe inte heller någon specifik tid på dagen som FTP-filer bearbetas. I stället använder Adobe ett skript som hela tiden avfrågar FTP-konton för nya filprocesser. Filer som överförs till dessa konton bearbetas så snabbt som möjligt.

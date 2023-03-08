@@ -3,16 +3,18 @@ title: getTimeToComplete
 description: Mät hur lång tid det tar att slutföra en uppgift.
 feature: Variables
 exl-id: 90a93480-3812-49d4-96f0-8eaf5a70ce3c
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: getTimeToComplete
 
-{{plug-in}}
+>[!IMPORTANT]
+>
+>Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
 
 The `getTimeToComplete` plugin-programmet spårar den tid det tar för användaren att slutföra en process på en webbplats. &quot;Klockan&quot; börjar när `start` -åtgärden anropas och avslutas när `stop` åtgärden anropas. Adobe rekommenderar att du använder denna plugin om det finns ett arbetsflöde på webbplatsen som tar lite tid att slutföra och du vill veta hur lång tid besökarna tar att slutföra det. Denna plugin behövs inte om arbetsflödet på webbplatsen tar kort tid (mindre än 3 sekunder) eftersom granulariteten bara är nere till en hel sekund.
 

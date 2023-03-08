@@ -3,7 +3,7 @@ title: Anskaffningsrapporter i Adobe Analytics
 description: Lär dig hur du skapar kundvärvningsbaserade rapporter med Analysis Workspace.
 feature: Third-party Integration
 exl-id: 2929d34b-8eb0-4105-a49c-02d536929fe0
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 0%
@@ -141,4 +141,4 @@ Rapporten med organiska nyckelord visar hur varje nyckelord fungerar när en bes
 
 ## Kostnadsanalys
 
-Den här rapporten visar besöks-, kostnads- och intäktsresultatdata för era betalda marknadsföringskanaler. Adobe tillhandahåller en dedikerad produkt som ger insikt i namnet Adobe Advertising Cloud. Om din organisation är intresserad av att använda den här produkten kontaktar du ditt Adobe-kontoteam.
+Den här rapporten visar besöks-, kostnads- och intäktsresultatdata för era betalda marknadsföringskanaler. Adobe tillhandahåller en dedikerad produkt som ger insikt i namnet Adobe Advertising Cloud. Om din organisation är intresserad av att använda den här produkten kontaktar du din organisations Account Manager.

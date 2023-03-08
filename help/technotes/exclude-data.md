@@ -2,7 +2,7 @@
 title: Uteslut data i Adobe Analytics
 description: Lär dig olika metoder för att exkludera data både före och efter datainsamling.
 exl-id: dee5bf3b-8bb3-48eb-908d-b4a981f17bfb
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Följande metoder är ett sätt att utesluta data i analysrapporter efter att da
 
 * **Exkludera efter IP**: Adobe Analytics tillhandahåller grundläggande funktioner för att exkludera data för IP-adresser eller intervall i en rapportserie. Se [Exkludera efter IP](/help/admin/admin/exclude-ip.md) i användarhandboken för Admin.
 * **Punktregler**: Punktregler tar trafik från kända båda användaragentsträngar och utesluter dem från analysrapporter. Data som utesluts via båda reglerna placeras i Bots-rapporten. Anpassade robotregler kan skapas för att exkludera ytterligare data. Se [Punktregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md) i användarhandboken för Admin.
-* **VISTA-regler**: Beroende på organisationens behov skickas träffar som matchar dina krav till en annan rapportsvit som är dedikerad till att ta emot exkluderade data. VISTA-regler används ofta mot IP-adresser, men är inte begränsade till dem. Du kan använda vilken dimension som helst för att inkludera eller exkludera data i rapportsviter. VISTA-reglerna är kostnadsbelagda. kontakta kontoteamet på Adobe för mer information.
+* **VISTA-regler**: Beroende på organisationens behov skickas träffar som matchar dina krav till en annan rapportsvit som är dedikerad till att ta emot exkluderade data. VISTA-regler används ofta mot IP-adresser, men är inte begränsade till dem. Du kan använda vilken dimension som helst för att inkludera eller exkludera data i rapportsviter. VISTA-reglerna är kostnadsbelagda. kontakta din organisations kontoansvarige för mer information.
 * **Avanmäl cookies**: Alla besökare på webbplatsen kan frivilligt välja att inte spåra i Adobe Analytics genom att gå till en sida som är specifik för din spårningsserver. Se [Implementera länkar för avanmälan](/help/implement/js/opt-out.md) i Implementeringshandboken.
 
 >[!TIP]

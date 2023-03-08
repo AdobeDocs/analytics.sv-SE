@@ -2,9 +2,9 @@
 title: Inställningar för klassificeringsuppsättning
 description: Skapa eller redigera en klassificeringsuppsättning.
 exl-id: abf00508-5dde-4669-bf94-5eb4754888cc
-source-git-commit: c53f886d5329e2a3b5023f9396c3aa2360a86901
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Konfigurera en klassificeringsuppsättning, överföra data eller hämta data.
 
 >[!NOTE]
 >
->Den här funktionen är tillgänglig för alla kunder med arkitekturen för klassificeringsuppsättning. Kontakta Adobe kundtjänst eller ditt kontoteam på Adobe för mer information.
+>Den här funktionen är tillgänglig för alla kunder som har sina rapportsviter migrerade till den nya klassifikationsarkitekturen. Kontakta Adobe kundtjänst eller din kontoansvarige om du vill ha mer information.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > Klicka på önskat namn på klassificeringsuppsättningen
 

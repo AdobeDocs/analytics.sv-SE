@@ -3,7 +3,7 @@ description: Om du kopierade inställningar från en befintlig rapportserie iden
 title: Inställningar som inte kopierats från en källrapportssvit
 feature: Report Suite Settings
 exl-id: be683f6d-038e-44ba-ac27-862dd86a2954
-source-git-commit: 297269f2ebf88d722eaf21ce8919ce28bb6abdc7
+source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 9%
@@ -64,7 +64,7 @@ Följande inställningar kopieras inte från mallar eller duplicerade rapportsvi
   </tr> 
   <tr> 
    <td colname="col1"> <p>VISTA-regler </p> </td> 
-   <td colname="col2"> <p>Kontakta kontoteamet på Adobe för att få kontakt med ingenjörstjänster. </p> </td> 
+   <td colname="col2"> <p>Kontakta din Customer Success Manager för att få kontakt med Engineering Services. </p> </td> 
   </tr> 
  </tbody> 
 </table>
