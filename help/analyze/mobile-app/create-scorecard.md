@@ -4,7 +4,7 @@ title: Skapa ett mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: 67f74d852f1650f729ce9b5ad725134d9fc9cd60
+source-git-commit: 06fc208465e8eb5be1f1fd766d40dadee84e4f9c
 workflow-type: tm+mt
 source-wordcount: '2284'
 ht-degree: 0%
@@ -233,7 +233,7 @@ Bygg din databerättelse genom att lägga till flera detaljbilder i en ruta.
 1. Börja med ett mobilt styrkortsprojekt.
 1. Välj en platta som du vill skapa en artikel från.
    ![Skapa en dataartikel](assets/data-story1.png)
-   ![Skapa ikoner för databerättelse](assets/create-data-story.png){width="25%"}
+   ![Skapa ikoner för databerättelse](assets/create-data-story.png){width=".50%"}
 1. Lägg till bilder för att skapa din databerättelse. Den första bilden genereras som standard.
 Om du vill lägga till nya bildrutor håller du markören över eller klickar på en bildruta och väljer sedan bland de tillgängliga alternativen:
    * Tryck på plustecknet (+) för att skapa en ny bildruta.
