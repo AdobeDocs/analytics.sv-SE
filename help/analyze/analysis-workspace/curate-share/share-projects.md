@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: ec3539389ab3aa9589e15e14f19b6f34d57a15a2
+source-git-commit: ffe72f02a80496160a5d894456bc9eb96b6cf9b0
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -136,23 +136,17 @@ Så här delar du en offentlig länk till ett Analysis Workspace-projekt:
 
 1. Aktivera **[!UICONTROL Link active]** om det inte redan är aktiverat.
 
-1. Välj om du vill aktivera följande säkerhetsalternativ (dessa alternativ kan styras av Analytics-administratören):
+1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av Analytics-administratören):
 
-   * **[!UICONTROL Require single sign-on (SSO) authentication]:**
+   * **[!UICONTROL Require Experience Cloud authentication]:**
 
-      Kräv att personer med länken autentiserar via enkel inloggning innan de får åtkomst till det delade projektet. Välj det här alternativet om du vill att projektet bara ska vara tillgängligt för användare i din organisation.
+      När det här alternativet är aktiverat kan endast mottagare som har ett federerat ID och kan logga in på Adobe Experience Cloud få åtkomst till delade offentliga länkar.Kräv att personer med länken autentiserar med sin Adobe Experience Cloud-inloggning för att få åtkomst till det delade projektet.
 
       Analysadministratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
-      * Om det här alternativet inte visas är enkel inloggning inte aktiverat för din organisation eller så har analysadministratören inte aktiverat den här funktionen.
+      * Om det här alternativet inte visas har analysadministratören inte aktiverat den här funktionen.
 
-      * Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör SSO-autentisering för att kunna komma åt alla offentliga länkar.
-   * **[!UICONTROL Require Password]:** Kräv att personer med länken anger ett lösenord innan de öppnar Analysis Workspace-projektet. Detta ger en extra säkerhetsnivå till ditt projekt.
-
-      Om du väljer det här alternativet anger du ett lösenord. Kom ihåg att dela det här lösenordet tillsammans med projektlänken när du delar det med andra. <!--go through this workflow and see how it works.-->
-
-      Om det här alternativet är aktiverat och nedtonat kräver din Analytics-administratör att alla offentliga länkar är lösenordsskyddade. Analysadministratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md).
-
+      * Om det här alternativet är aktiverat och nedtonat kräver Analytics-administratören autentisering i Experience Cloud för att få tillgång till alla offentliga länkar.
 
 1. Intill **[!UICONTROL Share with anyone (no login required)]** klickar du på **Kopiera länk** om du vill kopiera länken till systemets Urklipp.
 
