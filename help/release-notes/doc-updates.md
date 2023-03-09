@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: c2bfedde64b4961afcda75880594ee9b1347a831
+source-git-commit: 60af9f7a14e81609a2a51558677031bc778aef3e
 workflow-type: tm+mt
-source-wordcount: '3624'
+source-wordcount: '3704'
 ht-degree: 34%
 
 ---
@@ -27,6 +27,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **Mars 2023** |  |
 | Standardberäknade värden | Innehåll som förklarar [standardberäknade värden från Adobe](/help/components/c-calcmetrics/cm-reference/default-calcmetrics.md). |
+| Dataordlista | <p>Lagt till ny dokumentation för Data Dictionary, inklusive en [Översikt](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md), [Visning](/help/analyze/analysis-workspace/components/data-dictionary/view-data-dictionary.md), [Redigering](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md)och [Övervakning](/help/analyze/analysis-workspace/components/data-dictionary/monitor-data-dictionary-health.md) Data Dictionary.</p><p>Information i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md) har uppdaterats för att ta hänsyn till funktionen för datamordlista.</p> |
+| Länkdelning för projekt (ingen inloggning krävs) | <p>Befintlig dokumentation som förklarar hur man delar en skrivskyddad länk till ett projekt med personer som inte har tillgång till Analysis Workspace har uppdaterats.</p> <p>Uppdaterad användardokumentation innehåller [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md) och [Skapa delningsbara länkar](/help/analyze/analysis-workspace/curate-share/shareable-links.md).</p> <p>Alternativ för administratörer lades till i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md).</p> |
 | **Februari 2023** |  |
 | Implementering | Uppdaterat innehåll om hur man [implementera Adobe Analytics för webb och mobiler](../implement/home.md). |
 | Arbetsytekalendrar och datumintervall | Uppdaterat innehåll som beskriver relativa datumintervall, uppdateringar av formelberäkning och ändringar i kalendergränssnittet. Se [Om relativa paneldatumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md). |
