@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: ffe72f02a80496160a5d894456bc9eb96b6cf9b0
+source-git-commit: 66a02a6d0c6cc88752ea39172bd30b026908846b
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,9 @@ Så här delar du en offentlig länk till ett Analysis Workspace-projekt:
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
-      När det här alternativet är aktiverat kan endast mottagare som har ett federerat ID och kan logga in på Adobe Experience Cloud få åtkomst till delade offentliga länkar.Kräv att personer med länken autentiserar med sin Adobe Experience Cloud-inloggning för att få åtkomst till det delade projektet.
+      När det här alternativet är aktiverat kan bara användare som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades använda den här länken.
 
-      Analysadministratörer kan ange den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
+      Analysadministratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
       * Om det här alternativet inte visas har analysadministratören inte aktiverat den här funktionen.
 
