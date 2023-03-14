@@ -1,32 +1,31 @@
 ---
 title: Analysera data som påverkas av händelser
 description: Förstå hur data som påverkas av en händelse bidrar till den övergripande datakvaliteten.
-translation-type: tm+mt
-source-git-commit: 178e372e63c436268a1f7028d986504983430b2f
+exl-id: 8d81a432-42d6-4f5d-b66a-bb3af7fc4857
+source-git-commit: 549258b0168733c7b0e28cb8b9125e68dffd5df7
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 2%
 
 ---
 
-
 # Analysera data som påverkas av händelser
 
 Ibland kan en händelse påverka datakvaliteten i organisationen. Exempel:
 
 * En robot som skickar data som miljontals dollar i intäkter
-* Din organisation har publicerat en uppdatering till din webbplats som har en negativ inverkan på din Analytics-implementering
+* Din organisation har publicerat en uppdatering till din webbplats som har negativ inverkan på er Analytics-implementering
 * Andra problem som påverkar datakvaliteten eller fullständigheten
 
 Om sajten har något slags problem med datakvaliteten kanske du vill utesluta den från rapporteringen för att förhindra att du fattar affärsbeslut om den. Använd de här avsnitten för att mäta effekten av händelsen på dina data och bestämma hur du vill fortsätta.
 
 ## Identifiera orsaken till en händelse
 
-Om du är osäker på varför du ser ett spike eller en datasläppning kan du läsa [Felsöka spikes/drops i data](spikes-drops.md).
+Om du är osäker på varför du ser en spik eller en nedgång i data kan du läsa [Felsöka tagningar/fall i data](spikes-drops.md).
 
 ## Analysera och exkludera data med hjälp av segmentering
 
-Adobe Analytics erbjuder ett enkelt och robust sätt att fokusera på eller exkludera data med hjälp av segmentering. Du kan använda datumintervalldimensioner inom segment för att filtrera bort eller fokusera på dessa specifika datum. See [Exclude specific dates in analysis](segments.md).
+Adobe Analytics erbjuder ett enkelt och robust sätt att fokusera på eller exkludera data med hjälp av segmentering. Du kan använda datumintervalldimensioner inom segment för att filtrera bort eller fokusera på dessa specifika datum. Se [Exkludera specifika datum i analysen](segments.md).
 
 ## Jämföra en händelse med tidigare datumintervall
 
@@ -34,11 +33,11 @@ Om du vill veta mer om hur stor inverkan en händelse har på dina data över ti
 
 ## härleda data med beräknade värden
 
-När du har skapat segment och använt datumjämförelse kan du kombinera båda dessa begrepp för att korrigera trenddata med hjälp av beräknade värden. Inkludera segmenten i ett beräknat mätvärde och multiplicera sedan de berörda dagarna med den förskjutning som påträffades vid jämförelse av datum. See [Derive data impacted by events](calcmetrics.md).
+När du har skapat segment och använt datumjämförelse kan du kombinera båda dessa begrepp för att korrigera trenddata med hjälp av beräknade värden. Inkludera segmenten i ett beräknat mätvärde och multiplicera sedan de berörda dagarna med den förskjutning som påträffades vid jämförelse av datum. Se [Härleda data som påverkas av händelser](calcmetrics.md).
 
 ## Förmedla genomslag till användare i organisationen
 
-När du har förberetts för hur du tänker hantera en händelse kan du [kommunicera med användare i organisationen](communicate.md). Adobe erbjuder flera ställen i Analytics där du kan montera text som informerar användarna om vad som hänt och vilka komponenter de kan använda.
+När du har förberetts för hur du tänker hantera en händelse kan du [kommunicera med användare i organisationen](communicate.md). Adobe erbjuder flera platser i Analytics där du kan placera text för att informera användarna om vad som hände och vilka komponenter de kan använda.
 
 ## Video
 

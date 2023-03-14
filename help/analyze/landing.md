@@ -6,7 +6,7 @@ feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
 source-git-commit: 54ec253516a6d735f02914887c72ef966ce36862
 workflow-type: tm+mt
-source-wordcount: '3800'
+source-wordcount: '3797'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe Analytics landningssida sammanför båda [!DNL Analysis Workspace] och [!D
 | **[!UICONTROL Create Project]** modal är tillbaka | När du klickar **[!UICONTROL Create Project]** i arbetsytan får du ännu en gång möjlighet att välja mellan [!UICONTROL Blank project] och [!UICONTROL Blank mobile scorecard]. Du kan också välja bland de mallar som företaget har skapat. | ![Skapa nytt](assets/create-new.png) |
 | Finns även i Customer Journey Analytics | Denna landningssida, i ändrad form, är också tillgänglig i CJA. |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Övre menystruktur {#top-menu}
 

@@ -178,7 +178,7 @@ QUARTILE(metric,quart)
 | *mått* | Måttet som du vill ha kvartilsvärdet för. |
 | *quart* | Anger vilket *värde som ska returneras. |
 
-*Om *quart* = 0, QUARTILE returnerar det minsta värdet. If *quart* = 1, KVARTIL returnerar den första kvartilen (25 percentiler). If *quart* = 2, KVARTIL returnerar den första kvartilen (50 percentiler). If *quart* = 3, KVARTIL returnerar den första kvartilen (75 percentiler). If *quart* = 4, QUARTILE returnerar maxvärdet.
+&#42;If *quart* = 0, QUARTILE returnerar det minsta värdet. If *quart* = 1, KVARTIL returnerar den första kvartilen (25 percentiler). If *quart* = 2, KVARTIL returnerar den första kvartilen (50 percentiler). If *quart* = 3, KVARTIL returnerar den första kvartilen (75 percentiler). If *quart* = 4, QUARTILE returnerar maxvärdet.
 
 ## Ansökningstillfälle {#concept_2F12F2A6ACD445A0A8FF648AE4D4CB9E}
 

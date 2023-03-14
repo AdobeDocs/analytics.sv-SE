@@ -6,7 +6,7 @@ exl-id: 2f5bcfee-d75e-4dac-bea9-91c6cc545173
 source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ När taggbiblioteket är i produktion kan ni börja använda Adobe Analytics fö
 
 Felsökaren Experience Cloud är ett tillägg som visar alla Experience Cloud-taggar som finns på en sida.
 
-1. Installera tillägget för antingen [Krom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) eller [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/).
+1. Installera tillägget för antingen [Krom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) eller [Firefox](https://addons.mozilla.org/sv-SE/firefox/addon/adobe-experience-platform-dbg/).
 2. Navigera till den utvecklingswebbplats där du har implementerat taggar.
 3. Klicka på Adobe Experience Cloud felsökningsikon i webbläsaren.
 4. Om allt är korrekt implementerat bör du se innehåll i Adobe Analytics, taggar och tjänsten Adobe Experience Cloud Visitor ID.

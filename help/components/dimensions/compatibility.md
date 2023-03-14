@@ -255,7 +255,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Ägardefinitionsmått | `socialowneddefinitionmetric` |
 | Tillgång | `socialmediaid` |
 
-### Mobile SDK
+### Mobil-SDK
 
 | Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |--- |--- |

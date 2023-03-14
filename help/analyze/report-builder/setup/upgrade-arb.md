@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 4ec876e2-bd8e-443e-8faf-135698d635eb
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 4%
+source-wordcount: '227'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ S: Nej, alla inställningar, inklusive autentiseringsinställningar, fortsätter
 ## Uppgraderingsinstruktioner {#section_73B8110A619549189A30079735E81867}
 
 1. Logga in på din nuvarande version av Report Builder.
-1. Gå till menyn **[!UICONTROL Options]** och uppgradera till den senaste versionen. Det aktuella versionsnumret visas längst ned i dialogrutan Alternativ.
+1. Gå till **[!UICONTROL Options]** för att uppgradera till den senaste versionen. Det aktuella versionsnumret visas längst ned i dialogrutan Alternativ.
 
    ![](assets/upgrade.png)
 
@@ -43,7 +43,7 @@ S: Nej, alla inställningar, inklusive autentiseringsinställningar, fortsätter
    >
    >Om den här knappen är nedtonad finns det ingen ny version av Report Builder.
 
-1. Du kan också markera kryssrutan **[!UICONTROL Update when a new version is available]**. I framtiden kommer detta att starta uppdateringsprocessen automatiskt när en ny version blir tillgänglig.
+1. Välj **[!UICONTROL Update when a new version is available]** kryssrutan. I framtiden kommer detta att starta uppdateringsprocessen automatiskt när en ny version blir tillgänglig.
 1. När installationsskärmen visas klickar du på **[!UICONTROL Next >]**.
 
    ![](assets/setup.png)
@@ -56,5 +56,5 @@ Du kan alltid hämta den senaste versionen av Report Builder från Adobe Analyti
 
 1. Logga in på Adobe Analytics och gå till **[!UICONTROL Tools]**.
 1. Klicka på **[!UICONTROL Report Builder]**.
-1. Välj 32- eller 64-bitarsversionen på skärmen **[!UICONTROL Overview]**.
+1. På **[!UICONTROL Overview]** väljer du 32- eller 64-bitarsversionen.
 1. Klicka på **[!UICONTROL Download Now!]**.

@@ -50,7 +50,7 @@ Här är en videoöversikt:
 
 1. Nu kan du
 
-   * **Zooma** till den här kartan för att förstora vissa områden genom att dubbelklicka på kartan eller använda rullningshjulet. Kartan zoomas enligt var du har placerat markören. Genom zoominteraktion uppdateras den nödvändiga dimensionen (land > stat > stad) automatiskt utifrån zoomnivån.
+   * **Zooma** på kartan för att förstora vissa områden genom att dubbelklicka på kartan eller använda rullningshjulet. Kartan zoomas enligt var du har placerat markören. Genom zoominteraktion uppdateras den nödvändiga dimensionen (land > stat > stad) automatiskt utifrån zoomnivån.
    * **Jämför** två eller flera kartvisualiseringar i samma projekt genom att placera dem sida vid sida.
    * **Visa jämförelser mellan period och period (t.ex. år över år)**:
 

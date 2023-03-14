@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 99476ec5-f1f0-49f5-a2d8-354cec63c6b1
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '286'
 ht-degree: 2%
 
 ---
@@ -24,4 +24,4 @@ Om du klipper ut en begäran tas den bort från sin ursprungliga plats och place
 
 Du är inte begränsad till att kopiera och klistra in i samma blad i arbetsboken. Du kan kopiera en begäran i ett blad och klistra in den på en plats i ett annat blad i samma arbetsbok.
 
-Du är inte begränsad till att kopiera och klistra in en begäran i taget. Du kan markera mer än en begäran i kalkylbladet och klistra in den i ett tomt område i kalkylbladet. Precis som när du kopierar och klistrar in en begäran, måste du se till att det inte finns några celler i det område som klistras in som ska ersättas av inklistringsåtgärden. Om systemet hittar att målområdet för klistra in redan innehåller en eller flera begäranden, visar Report Builder inte menyn [!UICONTROL Paste Requests] för kopierade eller urklippsbegäranden. Du måste markera en annan cell som mål för inklistringsåtgärden så att förfrågningar inte överlappar varandra.
+Du är inte begränsad till att kopiera och klistra in en begäran i taget. Du kan markera mer än en begäran i kalkylbladet och klistra in den i ett tomt område i kalkylbladet. Precis som när du kopierar och klistrar in en begäran, måste du se till att det inte finns några celler i det område som klistras in som ska ersättas av inklistringsåtgärden. Om systemet upptäcker att målområdet för klistra in redan innehåller en eller flera begäranden, visas inte rapportverktyget [!UICONTROL Paste Requests] meny för kopierade eller klippta begäranden. Du måste markera en annan cell som mål för inklistringsåtgärden så att förfrågningar inte överlappar varandra.

@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 1a2363da-603e-4d1d-aefa-14ce71554247
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 4%
+source-wordcount: '338'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ För att kunna göra detta måste du ha minst två arbetsböcker öppna i samma 
 1. Högerklicka på kalkylbladet i källarbetsboken och välj **[!UICONTROL Copy Worksheet w/Requests]**.
 1. Högerklicka på kalkylbladet i målarbetsboken och välj **[!UICONTROL Paste Worksheet w/Requests]**.
 
-   Samma instans av Excel innebär att bara en Excel-process ( [!DNL excel.exe]) körs på datorn i taget. Om du startar två instanser av Excel och försöker kopiera ett kalkylblad från en arbetsbok i den första instansen av Excel till en arbetsbok i den andra instansen av Excel, kan du inte använda rapportverktyget för att klistra in ett kalkylblad på snabbmenyn i den andra instansen av Excel.
+   Samma instans av Excel betyder att bara en Excel-process ( [!DNL excel.exe]) körs på datorn i taget. Om du startar två instanser av Excel och försöker kopiera ett kalkylblad från en arbetsbok i den första instansen av Excel till en arbetsbok i den andra instansen av Excel, kan du inte använda rapportverktyget för att klistra in ett kalkylblad på snabbmenyn i den andra instansen av Excel.
 
    Om du loggar in på käll- och målarbetsböckerna med olika rapportsviter är det enda resultat som du ser av inklistringsåtgärden de som påverkar formateringen i målarbetsboken. Report Builder visar ett meddelande om att informationen för begäranden som härleds från en angiven rapportsvit (i källarbetsboken) inte är tillgänglig i målarbetsboken. Om du vill visa de begäranden som klistras in i målarbetsboken måste du logga in i målarbetsboken med samma rapportserie som källarbetsboken.
 

@@ -1,12 +1,12 @@
 ---
-description: 'Läs mer om '
+description: Läs mer om
 title: Mätvärdestyp och attribuering
 feature: Calculated Metrics
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
 source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,10 +42,10 @@ I följande exempel visas hur beräknade värden med linjär allokering kommer a
 
 |  | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 | Träff 6 | Träff 7 |
 |--- |--- |--- |--- |--- |--- |--- |--- |
-| Data skickade | PROMO A | - | PROMO A | PROMO B | - | PROMO C | 10 dollar |
-| eVar Sista beröring | PROMO A | PROMO A | PROMO A | PROMO B | PROMO B | PROMO C | 10 dollar |
-| Första beröring-eVar | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | 10 dollar |
-| Exempel | PROMO A | - | PROMO A | PROMO B | - | PROMO C | 10 dollar |
+| Data skickade | PROMO A | - | PROMO A | PROMO B | - | PROMO C | $10 |
+| eVar Sista beröring | PROMO A | PROMO A | PROMO A | PROMO B | PROMO B | PROMO C | $10 |
+| Första beröring-eVar | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | $10 |
+| Exempel | PROMO A | - | PROMO A | PROMO B | - | PROMO C | $10 |
 
 I det här exemplet skickades värdena A, B och C till en variabel på träffar 1, 3, 4 och 6 innan ett köp på $10 gjordes på träffnummer 7. På den andra raden kvarstår dessa värden för alla träffar på grund av senaste beröringsbesök. Den tredje raden visar hur obestridliga besöken är. Slutligen visar den sista raden hur data skulle registreras för en prop som inte är beständig.
 
@@ -58,24 +58,24 @@ Det finns vissa skillnader i hur linjär attribuering fungerar mellan dessa två
 
 ## Hur linjär tilldelning fungerade före juli 2018
 
-Före den 19 juli 2018 beräknades linjär attribuering efter att en första beröring eller sista beröringspartiklar redan hade gjorts. Detta innebar att för den sista beröringsdelen ovan skulle eVar $10 fördelas enligt följande: A = 10 * (3/6) = $5, B = 10 * (2/6) = $3,33, C = 10 * (1/6) = $1,67.
+Före den 19 juli 2018 beräknades linjär attribuering efter att en första beröring eller sista beröringspartiklar redan hade gjorts. Detta innebar att för den sista beröringsdelen ovan skulle eVar $10 fördelas enligt följande: A = 10 &#42; (3/6) = $5, B = 10 &#42; (2/6) = $3,33, C = 10 &#42; (1/6) = $1,67.
 
-För den första touch-eVar ovan ges A alla 10 dollar. För propen: A = 10 * (2/4) = $5, B = 10 * (1/4) = $2,50 och C = 10 * (1/4) = $2,50. Så här sammanfattar du linjär allokering som den fungerade tidigare:
+För den första touch-eVar ovan ges A alla 10 dollar. För propen: A = 10 &#42; (2/4) = $5, B = 10 &#42; (1/4) = $2.50 och C = 10 &#42; (1/4) = $2,50. Så här sammanfattar du linjär allokering som den fungerade tidigare:
 
 | Värden | Aktuell eVar för senaste beröring | Aktuell eVar med första beröring | Aktuellt uttryck |
 |---|---|---|---|
-| PROMO A | 5,00 USD | 10.00 USD | 5,00 USD |
-| PROMO B | 3,33 USD | $0 | 2,50 USD |
-| PROMO C | $1,67 | $0 | 2,50 USD |
-| Totalt | 10.00 USD | 10.00 USD | 10.00 USD |
+| PROMO A | $5.00 | $10.00 | $5.00 |
+| PROMO B | $3.33 | $0 | $2.50 |
+| PROMO C | $1.67 | $0 | $2.50 |
+| Totalt | $10.00 | $10.00 | $10.00 |
 
 **Sammanfattning av hur linjär allokering fungerar nu**
 
-Istället för att använda de beständiga värden som baseras på senaste beröring eller första beröring, [!DNL Analytics] använder nu bara de värden som skickades (den första raden i den översta tabellen). Inställningarna för dimensionsallokering påverkar inte längre det sätt på vilket linjär allokering beräknas (vilket innebär att props och eVars behandlas på samma sätt), och resultaten avspeglar det som ursprungligen skickades i stället för det första eller sista beröringsvärdet som kan ha varit bestående. I alla tre fallen är alltså A = 10 * (2/4) = $5, B = 10 * (1/4) = $2,50 och C = 10 * (1/4) = $2,50.
+Istället för att använda de beständiga värden som baseras på senaste beröring eller första beröring, [!DNL Analytics] använder nu bara de värden som skickades (den första raden i den översta tabellen). Inställningarna för dimensionsallokering påverkar inte längre det sätt på vilket linjär allokering beräknas (vilket innebär att props och eVars behandlas på samma sätt), och resultaten avspeglar det som ursprungligen skickades i stället för det första eller sista beröringsvärdet som kan ha varit bestående. I alla tre fallen är alltså A = 10 &#42; (2/4) = $5, B = 10 &#42; (1/4) = $2.50 och C = 10 &#42; (1/4) = $2,50.
 
 | Värden | Ny eVar för senaste beröring | Ny eVar med första beröring | Nytt utkast |
 |---|---|---|---|
-| PROMO A | 5,00 USD | 5,00 USD | 5,00 USD |
-| PROMO B | 2,50 USD | 2,50 USD | 2,50 USD |
-| PROMO C | 2,50 USD | 2,50 USD | 2,50 USD |
-| Totalt | 10.00 USD | 10.00 USD | 10.00 USD |
+| PROMO A | $5.00 | $5.00 | $5.00 |
+| PROMO B | $2.50 | $2.50 | $2.50 |
+| PROMO C | $2.50 | $2.50 | $2.50 |
+| Totalt | $10.00 | $10.00 | $10.00 |

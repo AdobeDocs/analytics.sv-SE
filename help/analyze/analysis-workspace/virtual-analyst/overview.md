@@ -5,12 +5,12 @@ role: User, Admin
 exl-id: ae4c79a4-d2eb-4383-92d3-fa5591135c73
 source-git-commit: 9b50e77b3998753d45a25799dbed6094b048c118
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Virtuell analytiker
+# Virtual Analyst
 
 Virtual Analyst, en uppsättning funktioner som ingår i Adobe Analytics, använder prediktiva algoritmer och maskininlärning för att leverera insikter om avvikelser som påverkar ert företag. Ni kan automatisera de vanligaste och dyra arbetsflödena inom datavetenskap för att identifiera vad som driver ovanliga beteenden i era data.
 

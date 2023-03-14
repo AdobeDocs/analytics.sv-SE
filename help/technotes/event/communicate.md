@@ -4,14 +4,14 @@ description: Lär dig effektiva sätt att förmedla effekten av en händelse i o
 exl-id: 9ba83f3f-2eea-44c2-80b2-a0a9111d51cf
 source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Informera användarna om händelseeffekter
 
-Om du har data [som påverkas av en händelse](overview.md) är det viktigt att kommunicera den händelsen till användare i organisationen.
+Om du har data [påverkas av en händelse](overview.md), är det viktigt att kommunicera händelsen till användarna i organisationen.
 
 * Utveckla en gemensam ansvarsfriskrivning som du kan använda i kommunikationen för att uppnå enhetlighet
 * Kommunicera kontinuerligt till Analytics-användare och viktiga intressenter under och efter evenemanget
@@ -35,7 +35,7 @@ Du kan också förmedla påverkan av en händelse genom dedikerade textvisualise
 
 För all visualisering i Workspace kan du lägga till i en serie som representerar det datumintervall som påverkas.
 
-1. Skapa ett beräknat mätvärde med segmentet&quot;Påverkade dagar&quot; genom att följa [Uteslut specifika datum i analys](segments.md).
+1. Skapa ett beräknat mått med segmentet&quot;Påverkade dagar&quot; genom att följa [Exkludera specifika datum i analysen](segments.md).
 1. Lägg till det önskade måttet på den beräknade mätarbetsytan.
 
    ![Mått](assets/calcmetric_event.png)
@@ -58,7 +58,7 @@ För all visualisering i Workspace kan du lägga till i en serie som representer
 
 ## Använd en kalenderhändelse i Rapporter och analyser
 
-Om du använder Rapporter och analys kan du använda en [kalenderhändelse](/help/components/t-calendar-event.md) för att markera berörda dagar i en trendrapport. Den här metoden gäller inte Analysis Workspace.
+Om du använder Rapporter och analyser kan du använda en [kalenderhändelse](/help/components/t-calendar-event.md) för att markera berörda dagar i trendrapporter. Den här metoden gäller inte Analysis Workspace.
 
 1. Navigera till **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Calendar events]**.
 2. Ange önskad titel, datumintervall och anteckningstext.

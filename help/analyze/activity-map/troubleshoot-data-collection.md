@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 7f9e06ba-4040-483b-b18b-cdfe85bca486
 source-git-commit: 9a70d79a83d8274e17407229bab0273abbe80649
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Kontrollera först att AppMeasurement samlar in Activity Map-data på rätt sät
 
 1. Hämta och installera [Adobe Experience Cloud Debugger Chrome Extension](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 2. Navigera till webbsidan och klicka sedan på en länk.
-3. Öppna felsökaren när den följande sidan läses in. Verifiera att du ser datavariabler för kontext i Activity Map mellan `activitymap.` och `.activitymap`:
+3. Öppna felsökaren när den följande sidan läses in. Validera att du ser datavariabler för kontext i Activity Map mellan `activitymap.` och `.activitymap`:
 
 ![Felsökningsdata](assets/debugger.png)
 
@@ -30,8 +30,8 @@ Kontrollera först att AppMeasurement samlar in Activity Map-data på rätt sät
 Kontrollera följande för att se till att komponenterna i Activity Map finns:
 
 * **AppMeasurement-version**: Activity Map stöds i v1.6 och senare. Många edge-problem åtgärdas när du uppgraderar till den senaste stabila versionen av AppMeasurement.
-* **Activity Map-modul**: Kontrollera om  `AppMeasurement_Module_Activity_Map` modulen finns i  `AppMeasurement.js` filen. Om din implementering använder Adobe Experience Platform för att samla in data ska du kontrollera att **[!UICONTROL Enable ClickMap]** är markerat när du konfigurerar Analytics-tillägget under **[!UICONTROL Link tracking]**.
-* **The  `s_sq` cookie**: Activity Map är beroende av  `s_sq` cookien för datainsamling.
-   * Kontrollera att variabeln `cookieDomainPeriods` är korrekt inställd, särskilt för regionala domäner som `*.co.uk` eller `*.co.jp`.
-   * Kontrollera att variabeln `linkInternalFilters` är inställd på önskade värden. Om en klickad länk inte matchar interna filter ser Activity Map den som en avslutslänk och samlar inte in data.
+* **Modulen Activity Map**: Kontrollera om `AppMeasurement_Module_Activity_Map` finns i din `AppMeasurement.js` -fil. Om implementeringen använder Adobe Experience Platform för att samla in data, se till att **[!UICONTROL Enable ClickMap]** är markerat när Analytics-tillägget konfigureras under **[!UICONTROL Link tracking]**.
+* **The `s_sq` cookie**: Activity Map är beroende av `s_sq` cookie för datainsamling.
+   * Se till att `cookieDomainPeriods` variabeln har angetts korrekt, särskilt för regionala domäner som `*.co.uk` eller `*.co.jp`.
+   * Se till att `linkInternalFilters` variabeln anges till önskade värden. Om en klickad länk inte matchar interna filter ser Activity Map den som en avslutslänk och samlar inte in data.
 * **Activity Map-övertäckning körs**: AppMeasurement spårar inte klickdata för webbsidan när Activity Map-övertäckningen är aktiverad.

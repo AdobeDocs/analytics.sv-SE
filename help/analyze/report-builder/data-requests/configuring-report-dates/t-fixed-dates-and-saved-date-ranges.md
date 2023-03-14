@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: b850197e-b3bd-4318-a827-61faa41b2db3
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 8%
+source-wordcount: '155'
+ht-degree: 7%
 
 ---
 
@@ -20,4 +20,4 @@ När du anger ett fast datum eller datumintervall visas rapportkalendern där du
 1. Klicka på datumlänken.
 1. Välj ett datum och klicka sedan på **OK**.
 1. Om du vill spara ett datumintervall klickar du på **[!UICONTROL Save Date]**.
-1. Konfigurera alternativen på [!UICONTROL Save Date Range]-formuläret:
+1. Konfigurera alternativen på [!UICONTROL Save Date Range] formulär:

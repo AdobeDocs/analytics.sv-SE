@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 8d7be302-bdfc-4370-b8f0-ab1af1e439ca
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 7%
+source-wordcount: '250'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ Beskriver hur du anger behörigheter och vilka dimensioner som är tillgängliga
 
 Innan användare kan rapportera Activity Map-dimensioner måste du som administratör
 
-* [Lägg till användare i Activity Map Access Group](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md).
+* [Lägga till användare i Activity Map Access Group](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md).
 * Lägg till rapportsviter som du vill ha tillgång till i den här gruppen. Navigera till **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL User management]** > **[!UICONTROL Groups]** > **[!UICONTROL Activity Map Access]** > **[!UICONTROL Edit]**.
 * Anpassa användaråtkomst till dimensioner. Se avsnittet nedan.
 
@@ -36,7 +36,7 @@ Du kan [anpassa användaråtkomst till dimensioner](https://experienceleague.ado
 | Activity Map Links &amp; Region | Visar alla samlade länkar med deras region på hela webbplatsen. |
 | Activity Map XY | Oanvänd |
 
-* Dessa dimensioner bör vara tillgängliga i Analysis Workspace, Rapporter och analyser och Report Builder, förutsatt att din Analytics-implementering är [aktiverad för Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md).
-* Navigera till **[!UICONTROL View All Reports]** > **[!UICONTROL Activity Map]** i Rapporter och analyser.
+* Dessa dimensioner bör vara tillgängliga i Analysis Workspace, Rapporter och analyser samt Report Builder, förutsatt att din Analytics-implementering är [aktiverat för Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md).
+* Navigera i Rapporter och analyser till **[!UICONTROL View All Reports]** > **[!UICONTROL Activity Map]**.
 
 * Om du vill se en länk och ett område för en viss sida behöver du bara skapa en uppdelning från den önskade Activity Map-sidan till länkarna och regionen Activity Map.

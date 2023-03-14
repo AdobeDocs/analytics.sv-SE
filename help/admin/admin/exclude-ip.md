@@ -20,7 +20,7 @@ Du kan undanta data från specifika IP-adresser, som interna webbplatsaktivitete
 >
 >Träffar som exkluderats av IP-adressen faktureras som [serveranrop](https://experienceleague.adobe.com/docs/analytics/technotes/terms.html).
 
-Du kan använda jokertecken (*) för att exkludera ett adressintervall. Till exempel: `[!DNL 0.0.*.0]` utelämnar alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
+Du kan använda jokertecken (&#42;) för att exkludera ett adressintervall. Till exempel: `[!DNL 0.0.*.0]` utelämnar alla IP-adresser mellan `[!DNL 0.0.0.0]` och `[!DNL 0.0.255.0]`. Du kan utesluta upp till 50 olika IP-adresser.
 
 >[!TIP]
 >
@@ -30,4 +30,4 @@ Du kan använda jokertecken (*) för att exkludera ett adressintervall. Till exe
 
 Om IP-förfalskning är aktiverat inträffar IP-uteslutning innan IP-adressen döljs, så kunderna behöver inte ändra någonting när de aktiverar IP-förfalskning.
 
-Om den sista oktetten tas bort, görs det före IP-filtrering. Den sista oktetten ersätts med 0, och reglerna för IP-undantag måste uppdateras för att matcha IP-adresser med en nolla på slutet. Matchande * ska matcha 0.
+Om den sista oktetten tas bort, görs det före IP-filtrering. Den sista oktetten ersätts med 0, och reglerna för IP-undantag måste uppdateras för att matcha IP-adresser med en nolla på slutet. Matchande &#42; ska matcha 0.

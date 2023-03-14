@@ -12,7 +12,7 @@ ht-degree: 1%
 
 ---
 
-# Datakällhanteraren
+# Data Sources Manager
 
 Skapa, hantera och visa användningen av datakällor i en rapportserie.
 

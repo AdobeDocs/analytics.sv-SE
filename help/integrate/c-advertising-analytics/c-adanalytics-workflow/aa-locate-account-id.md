@@ -1,5 +1,5 @@
 ---
-description: Här följer instruktioner om hur du kan hitta dina konto-ID:n för Google och Bing.
+description: Här beskrivs hur du kan hjälpa dig att hitta dina konto-ID:n för Google och Bing.
 title: Hitta ditt konto-ID
 feature: Advertising Analytics
 exl-id: 2faccfd1-df7b-4b0c-a2f3-23138c39a838

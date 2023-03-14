@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: d17b1bde-1785-461d-a1d8-66bd9739fc78
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 1%
+source-wordcount: '750'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Länkarna rapporterar om länkarna som finns på den aktuella sidan. Den rapport
 
 I rapporten Länkar på sidan finns länkarna i en tabell. Ibland kanske du vill se länkklick (eller andra mätvärden) rankade i en enda vy. På så sätt kan du bättre jämföra en länk med en annan. Skapa rapporten Länkar på sida med en rankad lista över alla länkar på sidan (per länk-ID), klickinformationen (# och %) och regionen på sidan. Klicka på rapportknappen Länkar i sidan i verktygsfältet Activity Map.
 
-Rapporten **[!UICONTROL Links On Page]** öppnas under webbläsarramen på kontrollpanelen i Activity Map.
+The **[!UICONTROL Links On Page]** -rapporten öppnas under webbläsarramen på kontrollpanelen i Activity Map.
 
 ## Standardläge {#section_C8D2A1C07A2A4E3A8F84AC9240603FA7}
 
@@ -40,7 +40,7 @@ I standardläge visar rapporten Länkar på sidan länkdata från en dag till fl
   </tr> 
   <tr> 
    <td colname="col1"> Länk-ID </td> 
-   <td colname="col2">Länkens primära ID (för mer information om hur primärt ID definieras av <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md">metoden för ny länkspårning</a>) </td> 
+   <td colname="col2">Länkens primära ID (för mer information om hur primärt ID definieras av <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md">Ny metod för länkspårning</a>) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Klickningar </td> 
@@ -55,15 +55,15 @@ I standardläge visar rapporten Länkar på sidan länkdata från en dag till fl
    <td colname="col2">Relaterar till länkens synlighetsstatus. Två värden är möjliga: 
     <ul id="ul_BABCC0F64145407C9D439150A6898E6D">
      <li id="li_9AF0479BDCEB4A44A37292FAABFA83A5"><b>Dold</b>: länken finns på sidan men inte är synlig för slutanvändaren (som en undermeny på en navigeringsmeny som bara visas om användaren hovrar över den överordnade menyn) </li>
-     <li id="li_C6FA4EC27EDD4341AB9821E2B4BC9E60"><b>Visas</b>: länken visas på sidan. Den kan dock visas under förskjutningen: användaren måste rulla sidan för att se den. </li>
-    </ul><p>Obs!  Om en länk är inställd på "Dold" visas inga övertäckningar för den. </p></td> 
+     <li id="li_C6FA4EC27EDD4341AB9821E2B4BC9E60"><b>Visad</b>: länken visas på sidan. Den kan dock visas under förskjutningen: användaren måste rulla sidan för att se den. </li>
+    </ul><p>Obs! Om en länk är inställd på "Dold" visas inga övertäckningar för den. </p></td> 
   </tr> 
  </tbody> 
 </table>
 
 **Filtrera data**
 
-När du vill nollställa en länk kan du söka efter en relaterad term i fältet **[!UICONTROL Filter Data]**. Endast länkarna som matchar sökningen kommer att ha övertäckningar. Utan ett filter visas de övertäckningar som anges i [inställningarna för Activity Map](/help/analyze/activity-map/activitymap-overlay-settings.md).
+När du vill nollställa en länk kan du söka efter en relaterad term i **[!UICONTROL Filter Data]** fält. Endast länkarna som matchar sökningen kommer att ha övertäckningar. Utan ett filter är de övertäckningar som anges i [Inställningar för Activity Map](/help/analyze/activity-map/activitymap-overlay-settings.md) visas.
 
 ## Live-läge {#section_AC1967217B5A4532ACB01D33636F6770}
 
@@ -85,7 +85,7 @@ I Live-läget visar rapporten Länkar på sidan trenddata som sträcker sig öve
   </tr> 
   <tr> 
    <td colname="col1"> Länk-ID </td> 
-   <td colname="col2">Länkens primära ID. Mer information om hur det primära ID:t definieras av den nya <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md"> länkspårningsmetoden</a>. </td>
+   <td colname="col2">Länkens primära ID. Mer information om hur det primära ID:t definieras av Nytt <a href="/help/analyze/activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md"> Länkspårningsmetod</a>. </td>
   </tr> 
   <tr> 
    <td colname="col1"> Länkklickningar </td> 

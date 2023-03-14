@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: a0bed55f-042c-4963-b7e5-7a5369bba48e
 source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 10%
+source-wordcount: '109'
+ht-degree: 9%
 
 ---
 
@@ -20,7 +20,7 @@ Activity Map stöds i följande webbläsare.
 |--- |--- |
 | Internet Explorer | Senaste versionen |
 | Firefox | Senaste versionen |
-| Krom | Senaste versionen. Obs!  Plugin-programmet Activity Map Chrome är för närvarande endast ett plugin-program för utvecklarläge. När du startar det här plugin-programmet får du ett meddelande som uppmanar dig att inaktivera tillägg för utvecklarläge. Det här meddelandet visas varje gång plugin-programmet startas. |
+| Krom | Senaste versionen. Obs! Plugin-programmet Activity Map Chrome är för närvarande endast ett plugin-program för utvecklarläge. När du startar det här plugin-programmet får du ett meddelande som uppmanar dig att inaktivera tillägg för utvecklarläge. Det här meddelandet visas varje gång plugin-programmet startas. |
 
 >[!NOTE]
 >

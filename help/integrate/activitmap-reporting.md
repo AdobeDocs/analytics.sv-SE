@@ -5,8 +5,8 @@ feature: Activity Map
 exl-id: e1d3f894-b769-4294-b550-f46869b812be
 source-git-commit: cb805ccf97ea6047183f22baa91e5f567af1b7d5
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

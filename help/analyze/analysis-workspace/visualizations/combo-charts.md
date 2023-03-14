@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: b3f9d3fdac403cdd1be425c0c631fa93dde5cb13
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Tänk på detta:
    | **[!UICONTROL Function]** | Du kan presentera en funktion som [!UICONTROL Average] i jämförelsen. Se en lista över funktioner som stöds nedan.<p>![](assets/combo-functions.png) |
    | **[!UICONTROL Secondary metric]** | Du kan till exempel jämföra [!UICONTROL Revenue] till ett annat mätvärde.<p>![](assets/combo-2metrics.png) |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Klicka på **[!UICONTROL Build]**.
 
@@ -71,7 +71,7 @@ Om du väljer **[!UICONTROL Function]** som [!UICONTROL Line comparison type], r
 | **[!UICONTROL Mean]** | Returnerar det aritmetiska medelvärdet, eller medelvärdet, för ett mått. |
 | **[!UICONTROL Column Minimum]** | Returnerar det minsta värdet i en uppsättning dimensionselement för en måttkolumn. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Här är ett exempel på det ackumulerade genomsnittet för intäktsmåttet:
 
@@ -103,4 +103,4 @@ Klicka på kugghjulsikonen längst upp till höger i ett kombinationsdiagram om 
 | **[!UICONTROL Show y-axis]** | Visa y-axeln eller dölj den. |
 | **[!UICONTROL Anchor y-axis at zero]** | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

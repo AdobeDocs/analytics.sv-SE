@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: abad0feb-1a9f-47c6-a275-6c40fcd59116
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '245'
 ht-degree: 2%
 
 ---
@@ -37,4 +37,4 @@ Sidflödesrapporten är bara tillgänglig i standardläge.
 | Externa referenter | URL för andra webbplatser som refererar till den aktuella sidan. |
 | Föregående sidor | Namnger den interna sidan i rapportsviten före den aktuella sidan. |
 | Nästa sidor | Sidan som besöks efter att den aktuella sidan har lämnat den. |
-| Platsen avslutas | Nummer som har lämnat webbplatsen helt efter att ha visat sidan. |
+| Platsen avslutas | Nummer som har lämnat webbplatsen helt efter att sidan har visats. |

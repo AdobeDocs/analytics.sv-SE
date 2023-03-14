@@ -4,8 +4,8 @@ description: Tips för att exkludera datum eller datumintervall om du inte vill 
 exl-id: 744666c0-17f3-443b-9760-9c8568bec600
 source-git-commit: d03206b127e16cbb98d1318b0acc6c304f91ca48
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '561'
+ht-degree: 2%
 
 ---
 

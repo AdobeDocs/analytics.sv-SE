@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: b3bdc07e-5c2d-4be3-86c9-b4b7380be0f6
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 4%
+source-wordcount: '222'
+ht-degree: 3%
 
 ---
 
@@ -20,9 +20,9 @@ Vi rekommenderar att du refererar till en kalender när du skapar uttryck för a
 
 **Aktivera anpassade uttryck**
 
-Detta är ett exempel som använder **[!UICONTROL Rolling Dates]**.
+Det här är ett exempel som använder **[!UICONTROL Rolling Dates]**.
 
-1. Välj **[!UICONTROL Rolling Dates]** i stället för att använda **[!UICONTROL Preset Dates]**.[!UICONTROL Request Wizard: Step 1]
+1. På [!UICONTROL Request Wizard: Step 1]i stället för att använda **[!UICONTROL Preset Dates]**, markera **[!UICONTROL Rolling Dates]**.
 
    ![](assets/rolldates1.png)
 

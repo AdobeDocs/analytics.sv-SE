@@ -100,7 +100,7 @@ I följande skärmbilder visas hur du hämtar AAM UUID i webbläsaren och använ
 1. Starta felsökaren när du läser in en sida.
 1. Bläddra till sektionen Audience Manager och hitta AAM UUID som finns på den aktuella webbläsarsidan (`50814298273775797762943354787774730612` i exemplet nedan)
 
-![Felsökning](assets/debugger.jpg)
+![Debugger](assets/debugger.jpg)
 
 ### Metod 2: Använd Chrome Developer Tools (eller andra verktyg för webbläsarutveckling)
 

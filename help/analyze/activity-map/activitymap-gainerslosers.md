@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 1e83d470-36e4-47bb-a262-ac12472b21c3
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -24,11 +24,11 @@ Activity Map har tre typer av övertäckningar:
 * Bubbelövertäckning
 * Övertäckning för matare och förlorare
 
-Du kan också konfigurera [övertäckningsåtergivning för dynamiskt innehåll](/help/analyze/activity-map/activitymap-link-tracking/activitymap-stl-track-custom-elements.md).
+Du kan också konfigurera [överläggsåtergivning för dynamiskt innehåll](/help/analyze/activity-map/activitymap-link-tracking/activitymap-stl-track-custom-elements.md).
 
-Om du vill ändra övertäckningarna öppnar du panelen [Övertäckningsinställningar](/help/analyze/activity-map/activitymap-overlay-settings.md) och redigerar de tillgängliga alternativen.
+Om du vill ändra övertäckningarna öppnar du [Panelen Överläggsinställningar](/help/analyze/activity-map/activitymap-overlay-settings.md) och redigera tillgängliga alternativ.
 
-Om du hovrar över en övertäckning visas dess [information](/help/analyze/activity-map/activitymap-overlay-details.md).
+När du hovrar över en övertäckning visas dess [information](/help/analyze/activity-map/activitymap-overlay-details.md).
 
 ## Övertoningsövertäckning (Heatmap) {#section_06AF13DE05A1454D960176CD0DA921A6}
 
@@ -46,7 +46,7 @@ Dessa mätvärden läggs ovanpå sidans länkar som en slags&quot;värmekarta&qu
 
 Bubbelövertäckningen visar övertäckningsinnehållet (mått, procent eller rankning) i en liten pratbubbla.
 
-Bubbelövertäckningar visas när du markerar den här övertäckningen i verktygsfältet Övertäckningstyp. . Bubbelövertäckningar visas för alla länkar som matchar markeringen i [Activity Map Settings](/help/analyze/activity-map/activitymap-overlay-settings.md) (top 30, top 50, all..). Övertoningsövertäckningar visas om det här alternativet inte är markerat.
+Bubbelövertäckningar visas när du markerar den här övertäckningen i verktygsfältet Övertäckningstyp. . Bubbelövertäckningar visas för alla länkar som matchar markeringen i [Inställningar för Activity Map](/help/analyze/activity-map/activitymap-overlay-settings.md) (övre 30, övre 50, alla...). Övertoningsövertäckningar visas om det här alternativet inte är markerat.
 
 ![](assets/bubble_overlay.png)
 

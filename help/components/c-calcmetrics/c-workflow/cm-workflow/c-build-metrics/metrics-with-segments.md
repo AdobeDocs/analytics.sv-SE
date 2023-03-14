@@ -1,5 +1,5 @@
 ---
-description: 'Genom att segmentera enskilda mätvärden kan ni göra mätjämförelser inom samma rapport. '
+description: Genom att segmentera enskilda mätvärden kan ni göra mätjämförelser inom samma rapport.
 title: Segmenterade mätvärden
 feature: Calculated Metrics
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04

@@ -6,7 +6,7 @@ mini-toc-levels: 3
 exl-id: f638c6a9-1c2c-4936-a787-281269f95afc
 source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -46,9 +46,9 @@ När du öppnar [!UICONTROL Reporting Activity] På sidan Översikt över chefen
 | **[!UICONTROL Report Suite]** | Basrapportsviten vars rapporteringsaktivitet du övervakar. |
 | **[!UICONTROL Virtual Report Suite]** | Visar alla virtuella rapportsviter som matas in i den här basrapportsviten. Virtuella rapporteringsprogram gör det enklare att rapportera förfrågningar på grund av ytterligare nivåer av tillämpad filtrering och segmentering. Alla förfrågningar som kommer från de virtuella rapportsviterna kombineras och kommer ned till basrapportsviten.<p>Om du till exempel har 10 begäranden från 5 VRS är det 50 förfrågningar från rapportsviten på basnivå. På så sätt kan du snabbt nå ut till din kapacitet. |
 | **[!UICONTROL Usage Capacity]** | Procentandel av rapportsvitens rapporteringskapacitet används i realtid. |
-| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd -[!UICONTROL At Capacity]**: Rapportsviten är maximerad när det gäller rapporteringskapacitet. (100 %) </li><li>**Gul -[!UICONTROL Nearing capacity]**: Denna rapportserie riskerar att nå sin maximala kapacitet. (90-99 %)</li><li>**Grön -[!UICONTROL All good]**: Det finns gott om kapacitet för rapportering. (0 % - 89 %)</li><li>**Grå -[!UICONTROL Status pending/Not enabled]**: Rapportkapaciteten är inte tillgänglig.</li></ul> |
+| **[!UICONTROL Status]** | Fyra möjliga statusindikatorer: <ul><li>**Röd -[!UICONTROL At Capacity]**: Rapportsviten är maximerad när det gäller rapporteringskapacitet. (100 %) </li><li>**Gul -[!UICONTROL Nearing capacity]**: Denna rapportserie riskerar att nå sin maximala kapacitet. (90% - 99%)</li><li>**Grön -[!UICONTROL All good]**: Det finns gott om kapacitet för rapportering. (0% - 89%)</li><li>**Grå -[!UICONTROL Status pending/Not enabled]**: Rapportkapaciteten är inte tillgänglig.</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Andra åtgärder för rapporteringsaktivitet
 
@@ -94,7 +94,7 @@ Följande information visas i sammanfattningsnumren:
 | [!UICONTROL Average Wait Time] | Genomsnittlig väntetid för alla frågor som körs. |
 | [!UICONTROL Usage Capacity] | Den aktuella användningskapaciteten för den här rapportsviten. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Tabell
 
@@ -114,7 +114,7 @@ I tabellen nedan finns information om rapportsviten.
 | [!UICONTROL Segments] | Hur många segment som används i den här begäran. Detta ökar komplexiteten i begäran. |
 | [!UICONTROL Status] | Statusindikatorer: <ul><li>**Körs**: Begäran bearbetas.</li><li>**Väntande**: Begäran väntar på att bearbetas.</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Avbryt rapporteringsbegäranden
 
@@ -139,4 +139,4 @@ Programanvändare i Workspace ser till exempel följande meddelande i sina proje
 | --- | --- |
 | Kan jag köpa ytterligare rapporteringskapacitet? | Den här funktionen kommer att vara tillgänglig inom den närmaste framtiden. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

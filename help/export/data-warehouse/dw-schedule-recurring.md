@@ -14,7 +14,7 @@ ht-degree: 26%
 
 ## Schemalägga en återkommande förfrågan {#topic_8C3CE0CE8A584F80946D24B377CB51BE}
 
-Om du vill schemalägga Data warehouse-begäranden för varje dag/månad/år kontrollerar du att *Förinställning *är korrekt valt
+Om du vill schemalägga Data warehouse-begäranden för varje dag/månad/år måste du se till att &#42;Förinställning &#42;är korrekt markerad
 
 1. Under [!UICONTROL Reporting Date] väljer du **[!UICONTROL Preset]**.
 

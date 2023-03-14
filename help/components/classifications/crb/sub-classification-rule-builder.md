@@ -6,7 +6,7 @@ exl-id: 745d6149-bcb1-48ad-abbe-63a9d009fa27
 source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -74,4 +74,4 @@ Exempel på steg som beskriver hur du kan överföra underklassificeringar med r
 
    Du överför den här filen, till exempel när en ny *`Broad Campaign code`* införs. Den här filen gäller för tidigare klassificerade värden. Om du skapar en ny underklassificering (till exempel *`Creative Theme`* som underklassificering av *`Creative code`*) kan du bara överföra underklassificeringsfilen, i stället för hela klassificeringsfilen.
 
-   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.—>
+   För rapportering av dessa underklassificeringar fungerar exakt som klassificeringar på den översta nivån. På så sätt minskar den handläggningsbörda som krävs för att använda dem.-->

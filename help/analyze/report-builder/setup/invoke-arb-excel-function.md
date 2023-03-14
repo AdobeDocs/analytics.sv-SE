@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: b412f2b5-affe-4297-af4b-85e8c6dfd257
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Här följer en tabell med en lista över funktioner som visas:
 | string AsyncRefreshWorksheetAltTextParam(); | Uppdaterar alla Report Builder-begäranden som finns i det specifika kalkylbladsnamnet som skickades via den alternativa texten i MS-formulärkontrollen |
 | string GetLastRunStatus() | Returnerar en sträng som beskriver statusen för den senaste körningen. |
 
-Gå till [!UICONTROL Formulas] > [!UICONTROL Insert Function] om du vill komma åt funktionerna i Report builder. Längst ned i kategorilistan finns Adobe.ReportBuilder.Bridge:
+Gå till [!UICONTROL Formulas] > [!UICONTROL Insert Function]. Längst ned i kategorilistan finns Adobe.ReportBuilder.Bridge:
 
 ![](assets/arb_functions.png)
 
@@ -69,11 +69,11 @@ De två funktionerna som tar en parameter kan användas med Formatkontroll, men 
 
    ![](assets/format_control.png)
 
-1. Klicka på fliken [!UICONTROL Alt Text].
+1. Klicka på [!UICONTROL Alt Text] -fliken.
 
    ![](assets/alt_text.png)
 
-1. Under [!UICONTROL Alternative text] anger du cellområdet som du vill uppdatera.
-1. Öppna listan över parametrar för Report builder under [!UICONTROL Formulas] > [!UICONTROL Insert Function] [!UICONTROL Adobe.ReportBuilder.Bridge].
+1. Under [!UICONTROL Alternative text]anger du cellområdet som du vill uppdatera.
+1. Öppna listan över parametrar för Report builder under [!UICONTROL Formulas] > [!UICONTROL Insert Function]> [!UICONTROL Adobe.ReportBuilder.Bridge].
 
 1. Välj en av de två funktionerna som slutar med AltTextParam och klicka på **[!UICONTROL OK]**.

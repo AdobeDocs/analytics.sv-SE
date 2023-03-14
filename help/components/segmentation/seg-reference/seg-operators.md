@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Med segmentbyggaren kan du jämföra och begränsa värden med hjälp av valda operatorer. Det finns tre kategorier av operatorer: Standard, Data warehouse och Distinct Count.
 
-Det enda jokertecken som stöds är asterisk: *. Om du behöver söka efter * kan du undvika det med ett omvänt snedstreck.
+Det enda jokertecken som stöds är asterisk: &#42;. Om du behöver söka efter &#42;kan du fly med ett omvänt snedstreck.
 
-**Exempel**: Anta att du har ett sidnamn som heter&quot;Min coola produkt&quot;. Segmentregeln &quot;Sidnamnet matchar My*product&quot; kommer att matcha ovanstående sidnamn. Däremot matchar regeln&quot;Sidnamn matchar Min\\*produkt&quot; bara sidnamnet&quot;Min*produkt&quot;.
+**Exempel**: Anta att du har ett sidnamn som heter&quot;Min coola produkt&quot;. Segmentregeln &quot;Sidnamnet matchar mitt&#42;product&quot; kommer att matcha ovanstående sidnamn. Däremot matchar regeln&quot;Sidnamn&quot; Min\\&#42;product&quot; matchar endast sidnamnet &quot;My&#42;Produkt&quot;.
 
 ## Standardoperatorer
 

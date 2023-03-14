@@ -5,8 +5,8 @@ feature: VRS
 exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
 source-git-commit: f48c7c404312562ad4f443af8e7c7643e5d3f17b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 2%
 
 ---
 
@@ -60,7 +60,7 @@ Virtuella rapportsviter har följande begränsningar:
 | Kan läggas till individuellt i behörighetsgrupper | Ja | Ja |
 | Kan använda administratörsfunktioner för att ändra enskilda inställningar för den här rapportsviten (Admin > Rapportsviter) | Nej (inställningarna ärvs från överordnad) | Ja |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kombinera virtuella rapportsviter och taggar för flera programsviter {#section_026FA3FCD7314DD18220E73EC5702AFF}
 

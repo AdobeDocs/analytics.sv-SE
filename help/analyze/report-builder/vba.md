@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: 0d92bce2-22ae-4b0c-af1d-3d12f2041ddf
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe stöder tre Report Builder API-metoder. Kontrollera att den senaste versio
 
 ## `RefreshAllReportBuilderRequests()`
 
-Makrot `RefreshAllReportBuilderRequests()` uppdaterar alla Report Builder-begäranden i den aktiva arbetsboken. Det börjar med att anropa Report Builder COM-tillägget via dess produkt-ID och sedan anropar API-kommandot `RefreshAllRequests()`:
+The `RefreshAllReportBuilderRequests()` alla Report Builder-begäranden i den aktiva arbetsboken uppdateras. Det börjar med att ringa Report Builder COM-tillägget via produkt-ID:t och sedan anropar `RefreshAllRequests()` API-kommando:
 
 ```vba
 Sub RefreshAllReportBuilderRequests()
@@ -40,7 +40,7 @@ End Sub
 
 ## `RefreshAllReportBuilderRequestsInActiveWorksheet()`
 
-Makrot `RefreshAllReportBuilderRequestsInActiveWorksheet()` uppdaterar alla Report Builder-begäranden i det aktiva kalkylbladet. API-anropet `RefreshWorksheetRequests()` tar ett kalkylbladsobjekt som argument. Du kan använda det här anropet för alla kalkylblad som innehåller förfrågningar från Report Builder:
+The `RefreshAllReportBuilderRequestsInActiveWorksheet()` makrot uppdaterar alla Report Builder-begäranden i det aktiva kalkylbladet. The `RefreshWorksheetRequests()` API-anrop tar ett kalkylbladsobjekt som argument. Du kan använda det här anropet för alla kalkylblad som innehåller förfrågningar från Report Builder:
 
 ```vba
 Sub RefreshAllReportBuilderRequestsInActiveWorksheet()
@@ -57,7 +57,7 @@ End Sub
 
 ## `RefreshAllReportBuilderRequestsInCellsRange()`
 
-Makrot `RefreshAllReportBuilderRequestsInCellsRange()` uppdaterar alla Report Builder-begäranden vars cellutdata överlappar det angivna cellintervallet. Cellintervallet som används i det här exemplet pekar på intervallet `B1:B54` för arbetsbladet&quot;Data&quot; i den aktiva arbetsboken. Intervalluttrycket stöder alla Excel-intervalluttryck som stöds:
+The `RefreshAllReportBuilderRequestsInCellsRange()` makrot uppdaterar alla Report Builder-begäranden vars cellutdata korsar det angivna cellintervallet. Cellområdet som används i det här exemplet pekar på området `B1:B54` av arbetsbladet&quot;Data&quot; i den aktiva arbetsboken. Intervalluttrycket stöder alla Excel-intervalluttryck som stöds:
 
 ```vba
 Sub RefreshAllReportBuilderRequestsInCellsRange()

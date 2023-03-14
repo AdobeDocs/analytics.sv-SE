@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 4b26df2e-22c5-435a-815b-fc3d36d5ed02
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 20%
+source-wordcount: '97'
+ht-degree: 18%
 
 ---
 
@@ -18,6 +18,6 @@ Du kan nu kombinera dessa två mätningstyper i en och samma begäran, i ställe
 
 Trafik- och handelsstatistik visas nu i samma metriska kategori i steg 2 i begärandeguiden. Tidigare delades dessa värden upp i en handelskategori och en trafikkategori.
 
-Den nya grupperade kategorin har etiketten **[!UICONTROL Standard]**. .
+Den nya grupperade kategorin har en etikett **[!UICONTROL Standard]**. .
 
 ![](assets/standard_metrics.png)

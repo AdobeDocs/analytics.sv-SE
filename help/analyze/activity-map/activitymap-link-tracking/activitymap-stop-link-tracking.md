@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: cdbec360-bff9-452c-9564-6b481e7175d3
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +43,7 @@ Steg för att stoppa länkspårning i Activity Map eller äldre ClickMap.
   </tr> 
   <tr> 
    <td colname="col1"> ClickMap (tidigare Visitor-ClickMap) </td> 
-   <td colname="col2"> <p>Ställ in variabeln <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/configuration-variables.html"  > trackInlineStats</a> på false (detta är standardvärdet). Syntaxen är följande: 
+   <td colname="col2"> <p>Ange <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/configuration-variables.html"  > trackInlineStats</a> variabel till false (this is the default.) Syntaxen är följande: 
      <code>
        s.trackInlineStats=false
      </code> </p> </td> 

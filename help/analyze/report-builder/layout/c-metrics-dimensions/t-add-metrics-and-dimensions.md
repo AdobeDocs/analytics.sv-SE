@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: d4e36b69-b5aa-43e5-b394-3b6d93143f15
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 2%
+source-wordcount: '483'
+ht-degree: 1%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 2%
 
 Steg för att lägga till mått och mått i en begäran.
 
-1. [Skapa databegäran ](/help/analyze/report-builder/data-requests/data-requests.md) i  [!UICONTROL Request Wizard: Step 1]och klicka sedan på  **[!UICONTROL Next]**.
-1. Dubbelklicka på mätvärdena i [!UICONTROL Request Wizard: Step 2] eller dra dem till önskad plats.
+1. [Skapa databegäran](/help/analyze/report-builder/data-requests/data-requests.md) på [!UICONTROL Request Wizard: Step 1]och sedan klicka **[!UICONTROL Next]**.
+1. På [!UICONTROL Request Wizard: Step 2], dubbelklicka på mätvärden eller dra dem till önskad plats.
 
    ![Steginformation](assets/adding_metrics.png)
 
-   När du lägger till mått tas de inte bort från fliken [!UICONTROL Metrics] eftersom du kan visa mått flera gånger i en begäran. Du kan t.ex. visa delsumman för mått utöver varje värde. Listan med tillgängliga mätvärden ändras dock varje gång du lägger till eller tar bort en dimension.
+   När du lägger till mätvärden tas de inte bort från [!UICONTROL Metrics] eftersom du kan visa mätvärden flera gånger i en begäran. Du kan t.ex. visa delsumman för mått utöver varje värde. Listan med tillgängliga mätvärden ändras dock varje gång du lägger till eller tar bort en dimension.
 
-   Du kan bara lägga till mått i layoutavsnittet [!UICONTROL Metrics]. Mått läggs till i [!UICONTROL Column Label]-layouten som [!UICONTROL Metric Header]. Om du flyttar en [!UICONTROL Metric Header] från [!UICONTROL Column Layout] till [!UICONTROL Row Layout] visas den där och används som ett mått för nedbrytning.
+   Du kan bara lägga till mått i [!UICONTROL Metrics] layoutavsnitt. Mätvärden läggs till i [!UICONTROL Column Label] layout som [!UICONTROL Metric Header]. Om du flyttar en [!UICONTROL Metric Header] från [!UICONTROL Column Layout] till [!UICONTROL Row Layout], visas den där och används som ett mått för en uppdelning.
 
    Observera att ett sökfält visas på fliken Metrisk, precis ovanför listan Metrisk.
 
@@ -53,19 +53,19 @@ Steg för att lägga till mått och mått i en begäran.
 1. (Valfritt) Om du vill sortera en begäran efter mått klickar du bara på måttetiketten.
 1. Lägg till dimensioner på samma sätt som du lägger till mätvärden.
 
-På fliken [!UICONTROL Dimensions] visar systemet dimensioner som bryts ned eller är en klassificering av en basrapport som du väljer i steg 1, och på rapportsvitens konfiguration. När du släpper en dimension i layoutstödrastret tas den bort från trädvyn och räknar om listan med återstående tillgängliga dimensioner.
+På [!UICONTROL Dimensions] visas dimensioner som bryts ned eller är en klassificering av en basrapport som du väljer i steg 1, och på rapportsvitens konfiguration. När du släpper en dimension i layoutstödrastret tas den bort från trädvyn och räknar om listan med återstående tillgängliga dimensioner.
 
-Dimensionen [!UICONTROL Date] läggs till automatiskt. Tillgängliga datumdimensioner ändras beroende på den valda granulariteten från [!UICONTROL Request Wizard: Step 1]. (Giltiga värden är:
+The [!UICONTROL Date] dimension läggs till automatiskt. Tillgängliga datumdimensioner ändras beroende på vald granularitet från [!UICONTROL Request Wizard: Step 1]. (Giltiga värden är:
 
     * Timme
     * Dag
     * Vecka
     * Månad
     * År
-    * Datumintervall (när ingen granularitet anges)
+    * Datumintervall (när ingen granularitet har angetts)
 
 1. Ändra mått och mått genom att konfigurera [formatalternativ](/help/analyze/report-builder/layout/t-format-display-headers.md) och filter.
 1. Klicka på **[!UICONTROL Finish]**.
-I följande exempel relaterar dimensionerna till [!UICONTROL Page]-måttet. Här skapar dimensionen [!UICONTROL Referring Domain] en detaljrapport mellan [!UICONTROL Page] och [!UICONTROL Referring Domain]. Fliken [!UICONTROL Dimension] uppdateras endast med dimensioner som du kan lägga till i en detaljrapport.
+I följande exempel är dimensionerna relaterade till [!UICONTROL Page] mätvärden. Här är [!UICONTROL Referring Domain] dimension skapar en uppdelningsrapport mellan [!UICONTROL Page] och [!UICONTROL Referring Domain]. The [!UICONTROL Dimension] -fliken uppdateras endast med dimensioner som du kan lägga till i en detaljrapport.
 
 ![](assets/page_pageview_02.png)

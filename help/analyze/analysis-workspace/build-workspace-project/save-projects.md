@@ -58,7 +58,7 @@ Om du öppnar ytterligare ett projekt medan du arbetar med ett projekt som inneh
 
 Följande alternativ är tillgängliga:
 
-* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av ditt projekt med dina senaste ändringar.
+* **Spara:** Ersätter den senaste automatiskt sparade lokala kopian av projektet med dina senaste ändringar.
 * **Spara som:** Sparar de senaste ändringarna som ett nytt projekt. Det ursprungliga projektet sparas endast med de senaste automatiskt sparade ändringarna.
 * **Ignorera ändringar:** Ignorera de senaste ändringarna. De senaste automatiskt sparade ändringarna sparas i projektet.
 

@@ -13,12 +13,12 @@ ht-degree: 0%
 
 Enhetsövergripande analys gör att data kan skickas vidare i en virtuell rapportserie:
 
-* **Livestning**: CDA försöker sy ihop varje träff när den kommer in. Nya Net-enheter i rapportsviten som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
+* **Live-syn**: CDA försöker sy ihop varje träff när den kommer in. Nya Net-enheter i rapportsviten som aldrig har loggat in sammanfogas vanligtvis inte på den här nivån. Enheter som redan känns igen sammanfogas omedelbart.
 * **Spela upp**: CDA&quot;spelar upp&quot; data ungefär en gång i veckan baserat på unika identifierare som man har lärt sig. I det här skedet sammanfogas nya enheter i rapportsviten.
 
 ## Exempeltabell
 
-Följande tabeller visar hur både CDA-metoder ([Fältbaserad sammanfogning](field-based-stitching.md) och [Enhetsdiagram](device-graph.md)) beräknar antalet unika personer:
+Följande tabeller visar hur båda CDA-metoderna ([Fältbaserad stygn](field-based-stitching.md) och [Enhetsdiagram](device-graph.md)) beräkna antalet unika personer:
 
 ### Live-syn
 
@@ -39,14 +39,14 @@ Så snart en träff har samlats försöker CDA sy ihop den till kända enheter. 
 
 Både oautentiserade och autentiserade träffar på nya enheter räknas som separata personer (tillfälligt).
 
-* **Om du använder enhetsdiagrammet kommer** oautentiserade träffar på identifierade enheter att sysas i realtid när ett kluster publiceras av enhetsdiagrammet. Klusterpublicering tar allt från tre timmar till två veckor.
+* **Om du använder enhetsdiagrammet** oautentiserade träffar på identifierade enheter sammanfogas i realtid när ett kluster publiceras av enhetsdiagrammet. Klusterpublicering tar allt från tre timmar till två veckor.
 
    En tredje kumulativ person läggs också till när ett kluster publiceras. Den här tredje personen representerar själva klustret, förutom de enskilda enheterna. Den tredje &quot;personen&quot; finns kvar tills data spelas upp.
 
    Attribuering fungerar inte på alla enheter förrän ett kluster har publicerats, och till och med så har det bara sytts live från den punkten framåt. I exemplet ovan sammanfogas inga träffar på enheter ännu. Enhetsövergripande attribuering i befintliga träffar fungerar inte förrän du har repeterat sammanfogningen.
-* **Om du använder fältbaserad sammanfogning kommer** oautentiserade träffar på identifierade enheter att sammanfogas från den punkten och framåt.
+* **Om fältbaserad sammanfogning används,** oautentiserade träffar på identifierade enheter sammanfogas från den punkten och framåt.
 
-   Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla träffar utom träffar 1 och 3 sammansydda (de använder alla identifieraren `Bob`). Attribution works on hits 1 and 3 after replay stitching.
+   Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla träffar utom träffar 1 och 3 sydda i realtid (de använder alla `Bob` identifierare). Attribution works on hits 1 and 3 after replay stitching.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Både oautentiserade och autentiserade träffar på nya enheter räknas som sepa
 
 ### Spela upp sammanfogning
 
-Uppspelningen sker antingen varje dag eller varje vecka, beroende på hur du har begärt att CDA ska konfigureras. Under uppspelning försöker CDA att omfördela historiska data inom ett definierat uppslagsfönster:
+Uppspelningen sker antingen varje dag eller varje vecka, beroende på hur du har begärt att CDA ska konfigureras. Under uppspelning försöker CDA att omfördela historiska data i ett definierat uppslagsfönster:
 
 * Daglig uppspelning använder ett 1-dagars uppslagsfönster
 * Veckovis omspelning använder ett 7-dagars uppslagsfönster.

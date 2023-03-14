@@ -6,7 +6,7 @@ feature: Annotations
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
 source-git-commit: 20ab0e9728969c4cc11227a1255e41e3d1a1540f
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ The [!UICONTROL Annotations] -hanteraren visar alla anteckningar du äger som ha
 | [!UICONTROL Shared with] | Visar hur många personer eller grupper som du har delat anteckningen med. Klicka för mer information. |
 | [!UICONTROL Date Modified] | Visar datum och tid då anteckningen senast ändrades. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Redigera anteckningar
 
@@ -78,4 +78,4 @@ Välj bara en eller flera av anteckningarna så visas Aktivitetsfältet.
 | [!UICONTROL Export to CSV] | Exportera anteckningsdefinitionen till en CSV-fil. |
 | [!UICONTROL Filter] (vänster räl) | Filtrera efter taggar, rapportsvit, ägare och andra filter (Min, Godkänd, Favoriter, Delad med mig och Visa alla). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -84,7 +84,7 @@ s.pageURL=""
 
 ## Omdirigeringar med getQueryParam {#section_EE924E399F7A431C8FC8E8A2BEF84DEC}
 
-Med [!UICONTROL getQueryParam] är ett enkelt sätt att fylla i [!DNL Analytics] variabler med frågesträngsvärden måste implementeras i samband med en temporär variabel så att berättigade referenser inte skrivs över när frågesträngen är tom. Det bästa sättet att använda [!UICONTROL getQueryParam] är kopplad till [!UICONTROL getValue] plugin-program enligt instruktionerna i följande pseudokod.
+Med [!UICONTROL getQueryParam] är ett enkelt sätt att fylla i [!DNL Analytics] variabler med frågesträngvärden måste implementeras i samband med en temporär variabel så att berättigade referenser inte skrivs över när frågesträngen är tom. Det bästa sättet att använda [!UICONTROL getQueryParam] är kopplad till [!UICONTROL getValue] plugin-program enligt instruktionerna i följande pseudokod.
 
 ```js
 // AppMeasurement 1.x 

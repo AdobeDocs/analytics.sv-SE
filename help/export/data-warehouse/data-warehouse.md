@@ -4,10 +4,9 @@ title: Översikt över Data Warehouse
 feature: Data Warehouse
 uuid: 768557dd-1644-4ce6-bfc2-8c46dd6e1cd1
 exl-id: 6a051d53-397b-4a55-9cca-1c83b31c9448
-translation-type: tm+mt
 source-git-commit: 78412c2588b07f47981ac0d953893db6b9e1d3c2
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '720'
 ht-degree: 1%
 
 ---
@@ -30,9 +29,9 @@ data warehouse kan bearbeta ett obegränsat antal rader i en och samma begäran 
 >
 >Vid segmentering på klassificerade värden behandlar Analysis Workspace och Data warehouse &#39;ospecificerade&#39; värden annorlunda. &#39;Ospecificerad&#39; i arbetsytan avser värden som inte är klassificerade, medan &#39;Ospecificerad&#39; i Data warehouse avser värden som du klassificerat som &#39;Ospecificerad&#39;.
 
-## Beskrivningar av Data warehouse-begäranden {#section_F21C78ED36884C389C852E876AF5CDE8}
+## Beskrivningar av förfrågningar från Data warehouse {#section_F21C78ED36884C389C852E876AF5CDE8}
 
-Den här tabellen beskriver fälten och alternativen på fliken [!UICONTROL Data Warehouse Request].
+Tabellen beskriver fälten och alternativen på [!UICONTROL Data Warehouse Request] -fliken.
 
 <table id="table_7325A2466866460E8B0AF7D696152713"> 
  <thead> 
@@ -50,14 +49,14 @@ Den här tabellen beskriver fälten och alternativen på fliken [!UICONTROL Data
    <td colname="col1"> <span class="wintitle"> Rapportdatum</span> </td> 
    <td colname="col2"> <p>Datum och kornighet för begäran. </p> 
     <ul id="ul_C00F4529BD9E4113B517A61751B1DD5C"> 
-     <li id="li_4D7C26812DF94ED7B64F985309541F46"> <span class="wintitle"> Anpassad</span>: Ett datumintervall som du konfigurerar i kalendern. </li> 
+     <li id="li_4D7C26812DF94ED7B64F985309541F46"> <span class="wintitle"> Egen</span>: Ett datumintervall som du konfigurerar i kalendern. </li> 
      <li id="li_2B272087006847148A936350D1B2D523"> <span class="wintitle"> Förinställning</span>: Ett förinställt intervall. Förinställningsintervallet är relativt rapportdatumet. </li> 
      <li id="li_745989965BB94D489FF7046587E13C42"> <span class="wintitle"> Kornighet</span>: Tidsgranulariteten. Giltiga värden är None, Hour, Day, Week, Month, Quarter och Year. </li> 
     </ul> <p>Rapportering från data warehouse i virtuella rapportsviter har stöd för den alternativa tidszon som har konfigurerats i den virtuella rapportsviten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Tillgängliga segment</span> </td> 
-   <td colname="col2"> <p>Gör att du kan markera den del av besökspopulationen som du vill granska och generera komplexa segment. Du kan läsa in förkonfigurerade segment, skapa nya segment och lagra segmentkomponenter i ett bibliotek och använda dem när du skapar ytterligare segment. </p> <p>Nu kan du stapla segment. När du markerar flera segment visas en kommaseparerad lista med namn (t.ex. Segment1, Segment2) i förhandsvisningsområdet, begärandehanteraren och popup-fönstret Frågedetaljer. </p> <p>Mer information finns i <a href="/help/components/segmentation/seg-home.md"> Segmenteringshandboken</a>. </p> <p>Obs!  Du kan inte inkludera både ett segmentfilter och en uppdelning på samma segment i samma Data warehouse-rapport. Om du gör det blir det ett fel. </p> </td> 
+   <td colname="col2"> <p>Gör att du kan markera den del av besökspopulationen som du vill granska och generera komplexa segment. Du kan läsa in förkonfigurerade segment, skapa nya segment och lagra segmentkomponenter i ett bibliotek och använda dem när du skapar ytterligare segment. </p> <p>Nu kan du stapla segment. När du markerar flera segment visas en kommaseparerad lista med namn (t.ex. Segment1, Segment2) i förhandsvisningsområdet, begärandehanteraren och popup-fönstret Frågedetaljer. </p> <p>Se <a href="/help/components/segmentation/seg-home.md"> Segmenteringshandbok</a> för mer information. </p> <p>Obs! Du kan inte inkludera både ett segmentfilter och en uppdelning på samma segment i samma Data warehouse-rapport. Om du gör det blir det ett fel. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Uppdelningar</span> </td> 
@@ -73,7 +72,7 @@ Den här tabellen beskriver fälten och alternativen på fliken [!UICONTROL Data
   </tr> 
   <tr> 
    <td colname="col1"> <span class="wintitle"> Schemalägg leverans</span> </td> 
-   <td colname="col2"> <p>Gör att du kan schemalägga begäranden om automatisk leverans vid valda intervall eller som en engångsrapport. Om du använder standardformatet kommer rapporten i ett e-postmeddelande som en CSV-fil. </p> <p>Lägg till datumintervallet genom att inkludera <span class="filepath"> %R</span> i filnamnet. Det här värdet representerar de datumvärden som begärs i rapporten. Om du till exempel begär data från 1 maj 2013 till 7 maj 2013 visar <span class="filepath"> %R</span> ett filnamn som inkluderar datumintervallet 20130501 - 20130507. </p> </td> 
+   <td colname="col2"> <p>Gör att du kan schemalägga begäranden om automatisk leverans vid valda intervall eller som en engångsrapport. Om du använder standardformatet kommer rapporten i ett e-postmeddelande som en CSV-fil. </p> <p>Lägg till datumintervallet genom att inkludera <span class="filepath"> %R</span> i filnamnet. Det här värdet representerar de datumvärden som begärs i rapporten. Om du till exempel begär data från 1 maj 2013 till 7 maj 2013 är <span class="filepath"> %R</span> visar ett filnamn inklusive datumintervallet 20130501 - 20130507. </p> </td> 
   </tr> 
  </tbody> 
 </table>

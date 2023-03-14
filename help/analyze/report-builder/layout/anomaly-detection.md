@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 6e3881c8-3e1c-4df8-ba38-e8bc84cfc3d4
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +56,7 @@ Analysidentifiering lägger till nya mätvärden för varje mätvärde som du v�
  </tbody> 
 </table>
 
-Report builder använder dessa värden på valda mätvärden. Om du till exempel väljer ett mått för sidvisning och tillämpar avvikelseidentifiering, används ett *`Page Views Lower Bound`*-mått.
+Report builder använder dessa värden på valda mätvärden. Om du t.ex. väljer ett mått för sidvisning och använder avvikelseidentifiering kan du *`Page Views Lower Bound`* mätvärden används.
 
 **Hur avvikelseidentifiering beräknas**
 

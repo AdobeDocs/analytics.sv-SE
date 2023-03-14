@@ -69,7 +69,7 @@ Här är en video på [!UICONTROL Training Tutorial] mall:
 
 >[!VIDEO](https://video.tv.adobe.com/v/33773/?quality=12)
 
-### Reklam
+### Advertising
 
 >[!IMPORTANT]
 >

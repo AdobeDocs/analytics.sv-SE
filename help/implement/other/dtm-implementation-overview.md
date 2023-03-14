@@ -1,5 +1,5 @@
 ---
-description: Implementera Adobe Analytics med dynamisk tagghantering.
+description: Implementera Adobe Analytics med Dynamic Tag Management.
 keywords: Analysimplementering;implementeringsmetod;dynamisk tagghantering;dtm
 title: Översikt över DTM-implementering
 feature: Implementation Basics
@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Översikt över DTM-implementering
 
-Dynamisk tagghantering har upphört att gälla. Använd [taggar i Adobe Experience Platform](/help/implement/launch/overview.md) för att implementera Adobe Analytics.
+Dynamic Tag Management har solnedgång. Använd [taggar i Adobe Experience Platform](/help/implement/launch/overview.md) för att implementera Adobe Analytics.

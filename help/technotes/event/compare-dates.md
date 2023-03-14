@@ -1,18 +1,17 @@
 ---
 title: Jämför datum som påverkas av en händelse med tidigare intervall
 description: Lär dig mer om effekten av en händelse, till exempel ett implementeringsproblem eller ett driftstopp, genom att jämföra den med tidigare trender.
-translation-type: tm+mt
-source-git-commit: d3f92d72207f027d35f81a4ccf70d01569c3557f
+exl-id: 5e4ac1db-2740-4ec1-9d6a-5aa2005fadfd
+source-git-commit: 549258b0168733c7b0e28cb8b9125e68dffd5df7
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
 
 ---
 
-
 # Jämför datum som påverkas av en händelse med tidigare intervall
 
-Om du har data som [påverkas av en händelse](overview.md)kan du titta på historiska trender för att mäta dess effekt. Jämförelsen är värdefull för att förstå hur mycket en händelse påverkar dina data, så att du kan bestämma om du vill exkludera data, lägga till en anteckning till rapporter eller ignorera dem.
+Om du har data [påverkas av en händelse](overview.md)kan ni titta på historiska trender för att mäta effekten. Jämförelsen är värdefull för att förstå hur mycket en händelse påverkar dina data, så att du kan bestämma om du vill exkludera data, lägga till en anteckning till rapporter eller ignorera dem.
 
 ## Skapa ett datumintervall som inkluderar händelsen
 
@@ -44,7 +43,7 @@ Du kan jämföra alla mått mellan datumintervallet för händelsen med liknande
 
 Jämför dimensionsobjekt mellan en händelses datumintervall och liknande tidigare datumintervall med hjälp av en frihandsvisualisering. De här stegen illustrerar ett vecko-över-vecka-exempel som du kan följa.
 
-1. Öppna ett Workspace-projekt och lägg till en **icke-tidsdimension** i frihandstabellen. Du kan till exempel använda dimensionen &quot;Mobilenhetstyp&quot;. Använd det nyligen skapade datumintervallet som är staplat på ett mätvärde, till exempel &#39;Förekomster&#39;:
+1. Öppna ett Workspace-projekt och lägg till en **icke-tidsdimension** till frihandsbordet. Du kan till exempel använda dimensionen &quot;Mobilenhetstyp&quot;. Använd det nyligen skapade datumintervallet som är staplat på ett mätvärde, till exempel &#39;Förekomster&#39;:
 
    ![Typ av mobil enhet efter påverkat datumintervall](assets/mobile_device_type.png)
 
@@ -63,7 +62,7 @@ Jämför dimensionsobjekt mellan en händelses datumintervall och liknande tidig
 Om du vill analysera ändringarna i procent ytterligare kan du konvertera dem till rader.
 
 1. Lägg till en frihandsritbordsvisualisering och aktivera tabellverktyget. Med den här åtgärden kan du placera procentvärdena för ändring i önskad ordning.
-2. Håll ned `Ctrl` (Windows) eller `Cmd` (Mac) och dra 3-procentsvärdena för ändring till tabellraderna, en åt gången.
+2. Håll `Ctrl` (Windows) eller `Cmd` (Mac) och dra 3-procentsvärdena för ändring till tabellraderna, en åt gången.
 
    ![Table builder](assets/table_builder.png)
 

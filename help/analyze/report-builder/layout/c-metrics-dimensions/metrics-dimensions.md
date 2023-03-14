@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 6c56a8e5-07c0-4dc4-b40b-94a07b783514
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 4%
+source-wordcount: '226'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Du kan lägga till mått och mått i begärandeguiden: Steg 2 för att definiera Analytics-layouten för data i din begäran. Listan med mått och mått i Report Builder följer den menylayout som visas i Reports and Analytics.
 
-Mätvärden är numeriska värden. De består av kvantitativ information om aktivitet på din webbplats, till exempel [!UICONTROL Page Views], [!UICONTROL Visitor Profile], [!UICONTROL Click-throughs], [!UICONTROL Reloads], [!UICONTROL Average Time Spent], [!UICONTROL Date], [!UICONTROL Units] och så vidare. Report Builder organiserar mätvärden i flera grupper som följer standardgrupperingen i Analytics:
+Mätvärden är numeriska värden. De består av kvantitativ information om aktiviteter på din webbplats, till exempel [!UICONTROL Page Views], [!UICONTROL Visitor Profile], [!UICONTROL Click-throughs], [!UICONTROL Reloads], [!UICONTROL Average Time Spent], [!UICONTROL Date], [!UICONTROL Units]och så vidare. Report Builder organiserar mätvärden i flera grupper som följer standardgrupperingen i Analytics:
 
 * Standardtrafik: Visar måttet baserat på det angivna radobjektet. I en sidrapport visas till exempel antalet besök på den specifika sidan.
 * Standardhandel: Mätvärden som Intäkter, Beställningar och Utcheckningar.

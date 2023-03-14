@@ -1,18 +1,20 @@
 ---
-title: Säkerhetsresurser för Adobe Analytics
-description: Länkar till Adobes resurser kring säkerhetsrutiner och återhämtningsplaner.
-translation-type: tm+mt
-source-git-commit: 4062baa150aa991bd017a8d639ac2a56cc88dbcd
+title: Adobe Analytics säkerhetsresurser
+description: Länkar till Adobe resurser kring säkerhetsrutinerna och återhämtningsplanerna.
+exl-id: 276285f3-349b-4261-bea1-25bdc0996fbf
+source-git-commit: 549258b0168733c7b0e28cb8b9125e68dffd5df7
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
+# Adobe Analytics säkerhetsresurser
 
-# Säkerhetsresurser för Adobe Analytics
-
-Adobe följer etablerade säkerhetsprocesser och -kontroller för att följa standarder, bestämmelser och certifieringar som accepterats i branschen.
+Adobe följer etablerade säkerhetsprocesser och -kontroller för att följa industrigodkända standarder, föreskrifter och certifieringar.
 
 Information om företagsövergripande säkerhetsrutiner finns på [adobe.com/security](https://adobe.com/security.html).
 
-Information om Adobe Analytics-metoder finns i säkerhetsöversikten [för](https://www.adobe.com/content/dam/acom/en/security/pdfs/ADB-AnalyticsSecurity-WP.pdf)Adobe Analytics. Här beskrivs de processer som följs kring arkitektur, autentisering, datacenter, nätverk och personal.
+Information om Adobe Analytics metoder finns i [Adobe Analytics - säkerhetsöversikt](https://www.adobe.com/content/dam/acom/en/security/pdfs/ADB-AnalyticsSecurity-WP.pdf). Här beskrivs de processer som följs kring arkitektur, autentisering, datacenter, nätverk och personal.
 
-Se [Adobes program](https://hackerone.com/adobe) för att informera om sårbarheter i webbtjänster på HackerOne om du upptäcker en sårbarhet som ska rapporteras.
+Se [Adobe web services vulnerdisclosure program](https://hackerone.com/adobe) på HackerOne om du upptäcker en sårbarhet att rapportera.

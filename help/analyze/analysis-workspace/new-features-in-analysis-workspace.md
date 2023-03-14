@@ -17,7 +17,7 @@ ht-degree: 87%
 >[!IMPORTANT]
 >Ytterligare Analysis Workspace-uppdateringar har lagts in i [Adobe Analytics Documentation Updates](/help/release-notes/doc-updates.md) sida.
 
-Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html) för uppdateringar av den övergripande produkten.
+Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=sv) för uppdateringar av den övergripande produkten.
 
 ## Mars 2021
 

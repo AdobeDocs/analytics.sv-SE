@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Adobe Analytics har ett flexibelt rapporteringsgränssnitt med vilket man kan generera olika komplexa rapporter. De flesta rapporter genereras mycket snabbt, men du kan stöta på rapporter som timeout eller misslyckas med att generera. På den här sidan förklaras faktorer som påverkar rapportgenereringshastigheten. Genom att förstå den här informationen kan du strukturera rapporter så att de lättare kan genereras.
 
-## Timeout för rapporter och begärandekö
+## Rapporttimeout och begärandekö
 
 * **Timeout**: En enda rapport delas upp i flera begäranden (en per uppdelning) och varje begäran omfattas av en enskild tidsgräns. Schemalagda rapporter tilldelas längre tidsgränser och är mer framgångsrika än rapporter som genereras direkt i ett användargränssnitt.
 * **Report Suite-kö**: Varje rapportsvit har en separat kö med förfrågningar. Om många rapporter begärs samtidigt, även från olika användare, genereras ett litet antal rapporter samtidigt. När rapporterna är klara genereras återstående rapporter i den ordning som de togs emot. Om det redan finns ett stort antal komplexa rapporter i rapportsvitkön kan det leda till att en rapport som genereras snabbt tar slut.

@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: 92894877-4fa8-4ea6-b5cd-9d1c50c3e250
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 9%
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 
@@ -16,4 +16,4 @@ ht-degree: 9%
 
 Begärandeguiden: I steg 2 kan du konfigurera rapportlayout, rubrikformatering och dimensionsfiltrering för utdata. Du kan använda en pivotlayout för att konfigurera begäran, vilket liknar hur du skapar en pivottabell i Excel.
 
-Du kan också manuellt markera de celler som du vill visa rapportdata i med hjälp av [Anpassad layout](/help/analyze/report-builder/layout/configure-the-custom-layout.md).
+Du kan också manuellt markera cellerna där du vill visa rapportdata med hjälp av [Anpassad layout](/help/analyze/report-builder/layout/configure-the-custom-layout.md).

@@ -1,11 +1,11 @@
 ---
 description: Logga filer som hjälper dig att se när användare loggar in, deras användning, åtkomst, rapportsviter och administratörsändringar.
 title: Loggar
-feature: Administratörsverktyg
+feature: Admin Tools
 exl-id: 43f79e2a-2cb9-47eb-982a-54714c9cbafc
 source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '582'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Administratörsloggen rapporterar alla ändringar som gjorts av administratörer
 
 ## Logg för användning och åtkomst {#section_6FBAF92D9EA244809C45A78A2F0A7232}
 
-Med [!UICONTROL Usage and Access Log] kan du utvärdera rapportanvändningen på användarkontonivån. Den spårar till exempel åtgärder som är öppna, skapa, uppdatera, dela upp och ta bort i Analysis Workspace. Detta ger bättre synlighet för vem som använder Workspace och hur ofta.
+The [!UICONTROL Usage and Access Log] Med kan du utvärdera rapportanvändning på användarkontonivå. Den spårar till exempel åtgärder som är öppna, skapa, uppdatera, dela upp och ta bort i Analysis Workspace. Detta ger bättre synlighet för vem som använder Workspace och hur ofta.
 
 | Element | Beskrivning |
 |---|---|
@@ -74,7 +74,7 @@ Med [!UICONTROL Usage and Access Log] kan du utvärdera rapportanvändningen på
 
 Ändringsloggen för Report Suite visar ändringar som gjorts i rapportsviterna utanför Admin.
 
-Verktyg som kan ändra en rapportserie utanför [!UICONTROL Admin Tools] är:
+Verktyg som kan ändra en rapportserie utanför [!UICONTROL Admin Tools] inkludera:
 
 * Klassificeringar som överförts i en webbläsare (klassificeringar som överförts via FTP inkluderas inte i ändringsloggen)
 * Ändringar som gjorts i tidigare versioner.

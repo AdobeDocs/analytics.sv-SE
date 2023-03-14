@@ -3,13 +3,13 @@ title: API för insättning av data i bulk
 description: BDIA (Bulk Data Insertion API) är en Adobe Analytics-funktion som gör att du kan överföra serveranropsdata i grupper av filer i stället för att använda klientbibliotek som AppMeasurement. Serveranropen i dessa gruppfiler kan antingen vara aktuella (livedata) eller historiska data. Det är en mer skalbar efterföljare till API:t för datainfogning i tidigare versioner av Adobe Analytics API.
 solution: Analytics
 feature: API
-source-git-commit: d8603ddd6cee2ccc930281003d9ff1befa15c95c
+exl-id: c9d23fae-2800-42bb-8f8d-adf915cadc62
+source-git-commit: b1ebf6e3548ef73217ffff1cbfb66af82e38fb8f
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 8%
 
 ---
-
 
 # API för insättning av data i bulk
 

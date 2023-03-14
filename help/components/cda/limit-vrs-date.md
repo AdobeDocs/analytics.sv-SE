@@ -1,14 +1,13 @@
 ---
 title: Begränsa ett VRS till vissa datum
 description: Lär dig hur du begränsar ett VRS-datumintervall så att det bara fokuserar på sammanslagna data.
-translation-type: tm+mt
-source-git-commit: 954927359420cfdb3d0e908758fc36464e15fee5
+exl-id: 421d101d-8c64-47f7-b5a2-da039889f663
+source-git-commit: 549258b0168733c7b0e28cb8b9125e68dffd5df7
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
 
 ---
-
 
 # Begränsa ett VRS till vissa datum
 

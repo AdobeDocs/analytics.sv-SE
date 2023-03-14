@@ -1,12 +1,12 @@
 ---
 title: Vanliga frågor om attribuering
 description: Få svar på vanliga frågor om attribuering.
-feature: Attribuering
+feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1026'
 ht-degree: 2%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 2%
 
 ## Vad är radobjektet &quot;Inget&quot; när du använder attribuering?
 
-Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som sker utan beröringspunkter i uppslagsfönstret. Om du vill minska antalet konverteringar som tilldelats radobjektet Ingen kan du prova att använda ett anpassat uppslagsfönster med en längre uppslagsperiod.
+Radobjektet Ingen är ett objekt som fångar upp alla konverteringar som har gjorts utan några beröringspunkter i uppslagsfönstret. Om du vill minska antalet konverteringar som tilldelats radobjektet Ingen kan du prova att använda ett anpassat uppslagsfönster med en längre uppslagsperiod.
 
 ## Varför ser jag ibland datum utanför mitt rapporteringsfönster när jag använder attribueringsmodeller?
 
-Vissa besöksbaserade mätvärden, som [Poster](/help/components/metrics/entries.md) eller [Bounce Rate](/help/components/metrics/bounce-rate.md), kan attribuera data till en period före rapportfönstrets startdatumintervall. Den här situationen beror på attribueringsmodeller som använder ett uppslagsfönster, som avgör hur långt bakåtattribueringen ska vara för att ge betyg för mätvärden. Det vanligaste scenariot är när besök sträcker sig över midnatt. Exempel:
+Vissa besöksbaserade mätvärden, som [Poster](/help/components/metrics/entries.md) eller [Studsfrekvens](/help/components/metrics/bounce-rate.md)kan attributera data till en period före rapportfönstrets startdatumintervall. Den här situationen beror på attribueringsmodeller som använder ett uppslagsfönster, som avgör hur långt bakåtattribueringen ska vara för att ge betyg för mätvärden. Det vanligaste scenariot är när besök sträcker sig över midnatt. Exempel:
 
 1. En användare besöker din hemsida kl. 23.55 den 7 september.
 1. De besöker flera sidor, varav det sista inträffade kl. 8.05.
 1. En vecka senare kommer du att köra en rapport med en daglig trendfrekvens mellan 8 och 14 september.
 
-Träffbaserade mätvärden, som [sidvyer](/help/components/metrics/page-views.md), skulle generera förväntade utdata. data trendade varje dag från 8 september till 14 september. Besöksbaserade mätvärden visar dock även ovanstående besök den 7 september. Besöken fick sitt tillskrivna inlägg den 7 september, och som standard är återsökningsfönstret 1 september-31 september.
+Träffbaserade mätvärden, som [Sidvyer](/help/components/metrics/page-views.md), skulle ge förväntat resultat, data trendade varje dag från 8 september till 14 september. Besöksbaserade mätvärden visar dock även ovanstående besök den 7 september. Besöken fick sitt tillskrivna inlägg den 7 september, och som standard är återsökningsfönstret 1 september-31 september.
 
-Studsfrekvensen visar alltid 0 % den 7 september i det här exemplet. Det här måttet definieras som `Bounces divided by Entries`, ett träffbaserat mätresultat delat med ett besöksbaserat mätvärde. Satser består av en enda bildbegäran, så de kan inte sträcka sig över flera dagar. Eventuella studsar den 7 september inträffade utanför rapportfönstret, vilket orsakade den garanterade studsfrekvensen på 0 % för den dagen. Andra träffbaserade mätvärden skulle också visa 0 för den 7 september i den här rapporten, eftersom dessa träffar inte heller ligger inom rapportfönstret.
+Studsfrekvensen visar alltid 0 % den 7 september i det här exemplet. Detta mått definieras som `Bounces divided by Entries`, ett träffbaserat mätvärde delat med ett besöksbaserat mätvärde. Satser består av en enda bildbegäran, så de kan inte sträcka sig över flera dagar. Eventuella studsar den 7 september inträffade utanför rapportfönstret, vilket orsakade den garanterade studsfrekvensen på 0 % för den dagen. Andra träffbaserade mätvärden skulle också visa 0 för den 7 september i den här rapporten, eftersom dessa träffar inte heller ligger inom rapportfönstret.
 
 Se ett annat liknande exempel. Den enda skillnaden mellan följande exempel och ovanstående exempel är datumen:
 
@@ -39,7 +39,7 @@ I det här exemplet visar inte Tävlingsbidrag och Studsfrekvens data från 31 a
 
 ## När ska jag använda besök, besökare eller anpassad attribueringssökning?
 
-Vilken attribueringslookback du väljer beror på ditt användningssätt. Om konverteringen tar längre tid än ett besök rekommenderar vi besökare eller anpassat uppslag. För längre konverteringscykler är anpassade uppslagsfönster bäst eftersom de är den enda typ som kan hämta in data från före rapportfönstret
+Vilken attribueringssökning du väljer beror på ditt användningsfall. Om konverteringen tar längre tid än ett besök rekommenderar vi besökare eller anpassat uppslag. För längre konverteringscykler är anpassade uppslagsfönster bäst eftersom de är den enda typ som kan hämta in data från före rapportfönstret
 
 ## Hur är props och eVars jämfört när man använder attribuering?
 
@@ -47,7 +47,7 @@ Attribution beräknas om vid rapportkörning, så det finns ingen skillnad mella
 
 ## Finns det några attribueringsmodeller i andra analysfunktioner, som dataflöden eller Data warehouse?
 
-Nej. I attribueringsmodeller används rapporttidshantering, som bara är tillgänglig i Analysis Workspace. Mer information finns i [Bearbetning av rapporttid](/help/components/vrs/vrs-report-time-processing.md).
+Nej. I attribueringsmodeller används rapporttidshantering, som bara är tillgänglig i Analysis Workspace. Se [Bearbetning av rapporttid](/help/components/vrs/vrs-report-time-processing.md) för mer information.
 
 ## Är attribueringsmodeller bara tillgängliga om jag använder en virtuell rapportsvit med rapporttidsbearbetning aktiverad?
 

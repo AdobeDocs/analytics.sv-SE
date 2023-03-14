@@ -4,7 +4,7 @@ description: Använd Web SDK-tillägget i Adobe Experience Platform Data Collect
 source-git-commit: 97bff355a5d9bb737d510221b63ba1321aaf5812
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -14,7 +14,7 @@ Du kan använda [Adobe Experience Platform Web SDK](https://experienceleague.ado
 
 Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-tillägget i Taggar.
 
-## Web SDK
+## Webb-SDK
 
 Översikt över implementeringsuppgifterna:
 

@@ -3,7 +3,7 @@ title: Jämför implementeringsmetoder
 description: Se fördelarna med de olika sätten att skicka data till Adobe Analytics.
 source-git-commit: 2e69321404237213c6929f3fb0c330575d8a90db
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '291'
 ht-degree: 1%
 
 ---
@@ -20,4 +20,4 @@ Jämför de olika metoderna för att implementera Adobe Analytics med varandra. 
 | Så här hanteras A4T | A4T-anrop ingår i träffar som skickas till Adobe | A4T-anrop ingår i träffar som skickas till Adobe | A4T-anrop skickas som separata träffar | A4T-anrop skickas som separata träffar |
 | Kontextdata | Använd `s.contextData`. | Använd `s.contextData` i egna kodblock | Alla omappade fält skickas automatiskt som `a.x.*` kontextdatavariabler. | Alla omappade fält skickas automatiskt som `a.x.*` kontextdatavariabler. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

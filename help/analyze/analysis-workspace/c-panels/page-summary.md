@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: f0b7cd92-17b2-452d-9aab-f78629360ab8
 source-git-commit: bef175d9675134f4932407a0b9e4a3c67b1d27a5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Du kan konfigurera [!UICONTROL Page summary] med dessa indatainställningar:
 | Släppzon för segment (eller annan komponent) | Du kan dra och släppa segment eller andra komponenter för att ytterligare filtrera panelresultaten. |
 | Siddimensionsobjekt | I listrutan väljer du det sidodimensionsobjekt vars nyckelstatistik du vill utforska. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Klicka **[!UICONTROL Build]** för att skapa panelen.
 
@@ -55,7 +55,7 @@ The [!UICONTROL Page summary] panelen returnerar en mängd mätdata och visualis
 | [!UICONTROL Exits] | The [!UICONTROL Exits] mått visar hur många gånger en given dimensionspost hämtas som det sista värdet i ett besök. |
 | [!UICONTROL Flow] | Ett flödesdiagram med den valda sidan som fokalpunkt. Du kan fördjupa dig i data precis som i [Flödesdiagram](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ![Panelen Sidsammanfattning](assets/page-sum1.png)
 

@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: afe2326d-3ea9-4977-aa8f-2c5e1a79e4c7
 source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ Gör att du kan använda ett flersegmentsfilter i Activity Map.
 >
 >Segmentkontrollen är endast tillgänglig i standardläge eftersom Adobe Analytics-plattformen inte stöder segmentering av realtidsdata.
 
-Du kan markera ett eller flera av segmenten i listrutan **[!UICONTROL Segments]** som visas nedan. De listade segmenten är identiska med de som du äger eller som har delats med dig via Rapporter och analyser för den rapportserie som valts.
+Du kan markera ett eller flera av segmenten i **[!UICONTROL Segments]** nedrullningsbar meny som visas nedan. De listade segmenten är identiska med de som du äger eller som har delats med dig via Rapporter och analyser för den rapportserie som valts.
 
 ![](assets/segments.png)
 
@@ -30,4 +30,4 @@ När mer än ett segment är markerat visas&quot;Flera&quot; i etiketten för se
 
 ![](assets/two_segments.png)
 
-De valda segmenten används för alla Analytics-rapporter som presenteras i Activity Map, dvs. övertäckningar och **[!UICONTROL Links on Page]**- och **[!UICONTROL Page Details]**-rapporter.
+De valda segmenten används för alla Analytics-rapporter som presenteras i Activity Map, dvs. överlägg och **[!UICONTROL Links on Page]** och **[!UICONTROL Page Details]** rapporter.

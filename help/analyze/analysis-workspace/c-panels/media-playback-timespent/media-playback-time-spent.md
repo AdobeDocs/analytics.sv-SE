@@ -3,13 +3,13 @@ title: Medieuppspelningstid spenderad panel
 description: Så här använder och tolkar du panelen Medieuppspelningstid för spenderad tid i Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 70af5bf2ef36e7968043120658d35dc948e9630e
+exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
+source-git-commit: 9662c61a428923f296ca057156c06fa2bf41325d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Medieuppspelningstid spenderad panel
 

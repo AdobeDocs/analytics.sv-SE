@@ -4,7 +4,7 @@ description: Använd olika implementeringstyper och spåra besökare smidigt mel
 exl-id: 18aa5595-d2a7-4df2-a4ef-a5040c097483
 source-git-commit: 90914569256cf891cb3cf693843e7cf9ede2f4ce
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -23,6 +23,6 @@ Om du använder mer än en typ av implementering (till exempel AppMeasurement oc
 | Spårningsserver | The [`trackingServer`](../vars/config-vars/trackingserver.md) och [`trackingServerSecure`](../vars/config-vars/trackingserversecure.md) variabler | [!UICONTROL Tracking Server] och [!UICONTROL SSL Tracking Server] under [!UICONTROL General] sektion när [Konfigurera tillägget](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) | The `edgeDomain` egenskap när [Konfigurera Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) | The [!UICONTROL Edge Domain] när [Konfigurera tillägget](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) | The `hostname` URL för bildbegäran |
 | Experience Cloud ID-tjänst | Implementering [`VisitorAPI.js`](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html) | Använd [Tjänsttillägg för Adobe Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html) | Använd [Tjänsttillägg för Adobe Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html) | Använd [Tjänsttillägg för Adobe Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html) | Gör en [separat anrop till ID-tjänstservrarna](https://experienceleague.adobe.com/docs/id-service/using/implementation/direct-integration.html) för att erhålla önskat ID |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Om någon av dessa variabler inte är konsekvent för varje implementeringstyp ser Adobe dem som separata besökare. Om besökare inte spåras sömlöst över olika implementeringstyper på din webbplats är den vanligaste orsaken att ID-tjänsten är felaktigt konfigurerad. Se [Implementeringsmetoder](https://experienceleague.adobe.com/docs/id-service/using/implementation/implementation-methods.html) i användarhandboken för ID-tjänsten om du vill ha mer information.

@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: b5a83532-9fa7-4f1f-b744-e5d74781fffb
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '461'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Du kan skydda alla begäranden i en arbetsbok mot att lägga till och redigera b
 
 Om du låser en arbetsbok som analytiker kan du skydda din arbetsbok mot obehörig åtkomst från andra användare i organisationen. Samtidigt kan dessa användare fortfarande uppdatera förfrågningarna i arbetsboken.
 
-Om du vill skydda en arbetsbok mot redigering klickar du på **[!UICONTROL Locked]** i verktygsfältet Report Builder ( ![](assets/locked_icon.png)
+Om du vill skydda en arbetsbok mot redigering klickar du på **[!UICONTROL Locked]** på verktygsfältet Report Builder ( ![](assets/locked_icon.png)
 
 ).
 
@@ -44,7 +44,7 @@ När en arbetsbok är låst för redigering av begäranden,
 * Användarna kan uppdatera begäranden, antingen individuellt eller som en del av en grupp.
 * Om indatavärden från celler (datumintervall, segment, filter) används i begäran, kan användarna ändra dessa värden i cellerna och därmed redigera förfrågningarna indirekt genom att uppdatera dem.
 
-Om du försöker redigera en skyddad arbetsbok (via snabbmenyn, **[!UICONTROL Request Manager]** eller **[!UICONTROL Edit Multiple Requests]**) kan du göra det eller inte:
+Om du försöker redigera en skyddad arbetsbok (via snabbmenyn, eller **[!UICONTROL Request Manager]**, eller **[!UICONTROL Edit Multiple Requests]**) får du göra det eller inte får göra det:
 
 * Om du inte har behörighet att låsa upp begäranden visas följande uppmaning:
 

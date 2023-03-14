@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: e45eef96-0bd2-4c5a-b1d1-cd41390c08d4
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 7%
+source-wordcount: '102'
+ht-degree: 5%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 7%
 
 En beroende begäran är en begäran som är beroende av en befintlig begäran.
 
-För rapporter med korrelationsbrytningar aktiverade i rapporttabellen kan du ta en närmare titt på ett objekt genom att högerklicka i cellen och klicka på **[!UICONTROL Add Dependent Request]** > **[!UICONTROL Breakdown]**.
+För rapporter med korrelationsbrytningar aktiverade i rapporttabellen kan du ta en närmare titt på ett objekt genom att högerklicka i cellen och klicka **[!UICONTROL Add Dependent Request]** > **[!UICONTROL Breakdown]**.
 
 >[!NOTE]
 >
->Du kan också lägga till en detaljerad begäran när du skapar den ursprungliga begäran. Se [Skapa en databegäran](/help/analyze/report-builder/data-requests/t-create-a-data-request.md).
+>Du kan också lägga till en detaljerad begäran när du skapar den ursprungliga begäran. Se [Skapa en dataförfrågan](/help/analyze/report-builder/data-requests/t-create-a-data-request.md).
 
 >[!NOTE]
 >

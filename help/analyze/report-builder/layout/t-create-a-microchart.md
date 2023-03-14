@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: a53f0d22-9edf-4040-a40b-bdd920a670f5
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '137'
+ht-degree: 4%
 
 ---
 
@@ -18,5 +18,5 @@ I den anpassade layouten kan du omvandla en måttkolumn till ett stapeldiagram m
 
 1. Skapa en begäran i Excel med [Anpassad layout](/help/analyze/report-builder/layout/configure-the-custom-layout.md).
 1. Högerklicka i kolumnen för måttvärde.
-1. Välj **[!UICONTROL Change Output Display]** och sedan den typ av mikrodiagram och procentvisning som du vill se.
+1. Välj **[!UICONTROL Change Output Display]**, den typ av mikrodiagram och procentuell visning som du vill se.
 >Systemet ändrar visningen i kolumnen så att den matchar dina val.

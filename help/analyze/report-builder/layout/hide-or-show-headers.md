@@ -7,8 +7,8 @@ role: User, Admin
 exl-id: d643b55d-dfe8-4f34-bb49-044c1166536c
 source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 27%
+source-wordcount: '34'
+ht-degree: 23%
 
 ---
 
@@ -16,6 +16,6 @@ ht-degree: 27%
 
 I den här proceduren beskrivs hur du döljer eller visar rubriker.
 
-Klicka på **[!UICONTROL Hide/Show]** i [!UICONTROL Pivot Layout]- eller [!UICONTROL Custom Layout]-utdata i [!UICONTROL Request Wizard: Step 2]-formuläret.
+Klicka **[!UICONTROL Hide/Show]** i [!UICONTROL Pivot Layout] eller [!UICONTROL Custom Layout] utdata på [!UICONTROL Request Wizard: Step 2] formulär.
 
 ![](assets/hide_show_header.png)

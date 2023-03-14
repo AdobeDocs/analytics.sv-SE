@@ -63,7 +63,7 @@ Några [!DNL Analytics] funktioner som gör att du kan använda händelser men i
 * [!UICONTROL Current Data] rapporter
 * [!DNL Analytics] for [!DNL Target]
 
-## verktyg {#section_D65E9C067E9C45E1A50DD30F50561BB2}
+## Verktyg {#section_D65E9C067E9C45E1A50DD30F50561BB2}
 
 Här är en kort översikt över [!UICONTROL Calculated Metrics] verktyg:
 

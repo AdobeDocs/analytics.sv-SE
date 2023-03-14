@@ -30,7 +30,7 @@ När besökaren är klar med köpet har du en intern sökning efter `"winter coa
 
 | Intern sökterm | Intäkter |
 |---|---|
-| vinterrock | 157 dollar |
+| vinterrock | $157 |
 
 ## Hur variabler för marknadsföring löser det här problemet
 
@@ -40,8 +40,8 @@ Om marknadsföring är aktiverat för eVar i det föregående exemplet, sökterm
 
 | Intern sökterm | Intäkter |
 |---|---|
-| vinterrock | 119 dollar |
-| glasögon | 38 dollar |
+| vinterrock | $119 |
+| glasögon | $38 |
 
 Se [Merchandising eVars](/help/implement/vars/page-vars/evar-merchandising.md) för implementeringsanvisningar.
 

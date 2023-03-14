@@ -5,7 +5,7 @@ exl-id: 172f816a-b90e-4a5a-8c92-f92f2b1663f3
 source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -41,7 +41,7 @@ Här är en videoöversikt över Adobe Analytics:
 
 ## Viktiga Analytics-resurser
 
-* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics#support)
+* [Kontakta kundtjänst](https://experienceleague.adobe.com/?support-solution=Analytics&amp;lang=sv#support)
 * [Analytics-forum](https://forums.adobe.com/community/experience-cloud/analytics-cloud/analytics)
 * [Adobe Analytics-resurser](https://forums.adobe.com/message/10660755)
 * [Experience League](https://landing.adobe.com/experience-league/)

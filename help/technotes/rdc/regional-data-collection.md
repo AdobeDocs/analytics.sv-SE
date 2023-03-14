@@ -5,7 +5,7 @@ feature: Regional Data Collection
 exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
 source-git-commit: 8f02656820ed0b9201f29fc9dca6870e6f7fe8fd
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 | --- | --- |
 | Standard | Oregon, Virginia, Irland, Paris, Mumbai, Singapore, Tokyo, Sydney, Kina* |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 *China RDC kräver China Add-On-paketet. Se [Prestandaoptimering för Kina](#china-performance-optimization) nedan.
 
@@ -52,7 +52,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 | Endast Asien och Stillahavsområdet | Mumbai, Singapore, Tokyo, Sydney |
 | Endast Kina* | Beijing |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 *Endast Kina och Global + China RDC-typer kräver paketet China Add-On. Global + Kina skickar data från Kina till Adobe Kina och skickar data med ursprung utanför Kina till närmaste lokala domänkontrollant utanför Kina. Se [Prestandaoptimering för Kina](#china-performance-optimization) nedan.
 

@@ -5,7 +5,7 @@ feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
 source-git-commit: 0f5a1e7264b194b368731f612a04bb805740a932
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '832'
 ht-degree: 38%
 
 ---
@@ -37,7 +37,7 @@ The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt �
 | **[!UICONTROL Namespace]** | När du etiketterar en variabel som ID-DEVICE eller ID-PERSON uppmanas du att ange ett namnutrymme. Du kan antingen använda ett tidigare definierat namnutrymme eller definiera ett nytt. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/data-labels/gdpr-labels.html?lang=en#provide-namespace) |
 | **[!UICONTROL Category]** | Refererar typ av komponent, t.ex. standardkomponent, konverteringsvariabel. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kopiera sekretessetiketter till en rapportserie  {#copy-to-rs}
 
