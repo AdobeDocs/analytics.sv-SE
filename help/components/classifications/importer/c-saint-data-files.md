@@ -3,9 +3,9 @@ description: Importören låter dig ladda upp klassificeringsdata gruppvis för 
 title: Datafiler för klassificering
 feature: Classifications
 exl-id: aa919a03-d461-4d12-adc1-6441fb467e63
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: caeaef9415be93913bdf078a47c887fc21fd6e60
 workflow-type: tm+mt
-source-wordcount: '1735'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
@@ -109,11 +109,11 @@ Varje värde måste vara unikt i hela systemet. Värdet i det här fältet motsv
 
 ### Klassificeringskolumnrubrik
 
-Rapporter och analyser innehåller till exempel automatiskt två klassificeringar för [!UICONTROL Campaign] variabler: [!UICONTROL Campaigns] och [!UICONTROL Creative Elements]. Lägga till data i [!UICONTROL Campaigns] klassificering, kolumnrubriken i klassificeringsdatafilen blir [!UICONTROL Campaigns].
+Exempel: Implementeringen av rapporter och analyser innehåller automatiskt två klassificeringar för [!UICONTROL Campaign] variabler: [!UICONTROL Campaigns] och [!UICONTROL Creative Elements]. Lägga till data i [!UICONTROL Campaigns] klassificering, kolumnrubriken i klassificeringsdatafilen blir [!UICONTROL Campaigns].
 
 >[!NOTE]
 >
->Värdena i [!UICONTROL Classifications] kolumnrubriken måste exakt matcha klassificeringens namnkonvention, annars misslyckas importen. Om administratören till exempel ändrar [!UICONTROL Campaigns] till [!UICONTROL Internal Campaign Names] i [!UICONTROL Campaign Set-up Manager]måste filkolumnrubriken ändras så att den matchar.
+>Värdena i [!UICONTROL Classifications] kolumnrubriken måste exakt matcha klassificeringens namnkonvention, annars misslyckas importen. Om administratören till exempel ändrar [!UICONTROL Campaigns] till [!UICONTROL Internal Campaign Names] i [!UICONTROL Campaign Set-up Manager]måste filkolumnrubriken ändras så att den matchar. &quot;Key&quot; är ett reserverat klassificeringsvärde (header). Nya klassificeringar med namnet Key stöds inte.
 
 Dessutom stöder datafilen följande ytterligare rubriktexter för att identifiera underklassificeringar och andra specialiserade datakolumner:
 
