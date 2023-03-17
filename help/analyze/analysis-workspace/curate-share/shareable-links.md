@@ -5,9 +5,9 @@ title: Skapa delningsbara länkar
 feature: Curate and Share
 role: User, Admin
 exl-id: 39fbe18c-2f75-4026-b277-58ec08c6a645
-source-git-commit: 8935f71e52e2486fc1fd8562a31dbd18d69fd18d
+source-git-commit: 9190703c073ecb28e629fa53ac916f706d359324
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Vissa länktyper kräver att mottagaren loggar in på Adobe Analytics innan han eller hon kommer åt projektet, medan andra inte gör det.
 
-## Hämta projektlänk {#project-link}
+## Hämta projektlänk som du kan dela med andra arbetsyteanvändare {#project-link}
 
-Om du vill dela en länk till hela projektet går du till **[!UICONTROL Share > Get project link]**. Om länkens mottagare inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html), administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]** upplevelser.
+Om du vill dela en länk till hela projektet går du till [!UICONTROL **Dela**] > [!UICONTROL **Dela med Workspace-användare**] > [!UICONTROL **Dela via länk**]. Om länkens mottagare inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html), administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]** upplevelser.
 
 ![](assets/get-project-link.png)
 
-## Hämta offentlig länk
+## Få en skrivskyddad länk att dela med vem som helst
 
 {{release-limited-testing-section}}
 
 Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics.
 
-Mer information finns i&quot;Dela en offentlig länk med vem som helst (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
+Mer information finns i&quot;Dela ett projekt med vem som helst (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
 
 ## Hämta panel- eller visualiseringslänk {#panel-link}
 
