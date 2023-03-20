@@ -3,7 +3,7 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 5739b9bd20d63c51343127832778c4c3836993b3
+source-git-commit: ca99382a39644dc422baaf7dbd5c4d95942455af
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på, hantera och bättre förstå komponenterna (dimensioner, mätvärden) i sin Analytics-miljö. [Läs mer](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) | 15 mars 2023 | 22 mars 2023 |
+| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på, hantera och bättre förstå komponenterna (dimensioner, mätvärden) i sin Analytics-miljö. [Läs mer](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) | 15 mars 2023 | 29 mars 2023 |
 | **Dataartiklar på mobilkontrollpaneler** | Med hjälp av databerättelser kan du lägga till flera anpassningsbara detaljvyer till paneler i projekt i Mobile Scorecard. Använd databerättelser för att fördjupa dig i viktiga drivrutiner, relaterade mätvärden och olika steg längs kundresan. Du kan enkelt svepa igenom de här vyerna för att förstå hela artikeln bakom nyckelmätningarna. [Läs mer](/help/analyze/mobile-app/create-scorecard.md#create-data-story) | Ej tillämpligt | 8 mars 2023 |
 | **Utgångsdatum för schemalagt projekt** | Du kan ange maximalt förfallodatum för schemalagda projekt till upp till ett år, oavsett schemafrekvens. | Ej tillämpligt | 8 mars 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs)** - Endast privat betaversion | <p>Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Du kan dela projektlänkar med personer utanför organisationen eller personer inom organisationen som inte är tilldelade Adobe Analytics. [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md)</p> <p>Om du vill gå med i den privata betaversionen kontaktar du Adobe Account Team.</p> | 15 mars 2023 (privat beta) | April 2023 |
