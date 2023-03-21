@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: ca99382a39644dc422baaf7dbd5c4d95942455af
+source-git-commit: ff90d4da4b0bbce35716e9a42ae33ea21f650cdf
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (mars 2023)
 
-**Senaste uppdatering**: 10 mars 2023
+**Senaste uppdatering**: 21 mars 2023
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -44,6 +44,7 @@ AN-308177; AN-308727; AN-308846; AN-309591; AN-310614; AN-311544; AN-311570; AN-
 
 | EOL-produkt eller -funktion | Datum tillagt eller uppdaterat | Beskrivning |
 | --- | --- | --- |
+| **EOL för telefonspårningstjänsten för japanska funktioner** | 21 mars 2023 | Endast för våra japanska kunder: I slutet av maj 2023 upphör telefonspårningstjänsten för japanska funktioner (mod_ktrack). Vi ber om ursäkt för besväret, men vi ber dig avinstallera eller inaktivera de moduler som är installerade på Apache-servern. Se sidorna 27 och 28 i [det här dokumentet](/help/release-notes/mod_ktrackforSiteCatalyst_ver1.40.pdf) för referens. |
 | **EOL för[!DNL Reports & Analytics]** | 7 mars 2023 | Effektivt **31 december 2023** kommer Adobe att upphöra med sin verksamhet [!DNL Reports & Analytics] och tillhörande rapporter och funktioner. Rapporterna, visualiseringarna och den underliggande tekniken som ligger till grund för [!DNL Reports & Analytics] inte längre uppfyller Adobe teknikstandarder. Mest [!DNL Reports & Analytics] funktioner finns i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). Sedan Analysis Workspace släpptes 2015 har [!DNL Reports & Analytics] funktionaliteten och funktionerna har flyttats till Analysis Workspace och ett tröskelvärde för arbetsflödets paritet har uppnåtts. [Detta meddelande](https://spark.adobe.com/page/6WnF8JK6IRDhf/) förklarar processen för att avsluta livscykeln.<p>Den 31 december 2023 kommer vi att avsluta många av de tillhörande funktionerna i Rapporter och analyser, bland annat, men inte begränsat till: Schemalagda rapporter, dataextrakt och DL-rapporter. Efter den 31 december 2023 skickas inga schemalagda rapporter längre. I **April 2023**, kommer alla rapporter som skulle ha gått ut efter den 31 december 2023 automatiskt att uppdateras och återställas till att upphöra den 31 december 2023. Dessutom kan du inte längre schemalägga framtida rapporter efter 31 december 2023. |
 | **EOL för [!UICONTROL People] mått** | 9 mars 2023 | Med borttagningen av [[!DNL Device Co-op]](https://experienceleague.adobe.com/docs/discontinued/using/device-co-op.html), är Device Co-op-relaterat personmått inte längre relevant. Den 8 maj 2023 ska vi ta bort [!UICONTROL People] mätvärden. Då kommer vi att omdirigera data till [!UICONTROL Unique Visitor] mätvärden för att förhindra att projekt, segment och beräknade värden bryts.<p>**Anteckning**: The [[!UICONTROL People] mätvärden kopplade till enhetsövergripande analys](/help/components/metrics/people.md) påverkas inte av detta meddelande. |
 | **EOL för [!UICONTROL Publishing Lists] funktion** | 29 september 2022 | Som en del av ledningscentralen för rapporter och analyser [!UICONTROL Publishing Lists] kommer att nå slutet av livscykeln i **December 2023**. Du kommer inte att kunna skapa nya eller komma åt befintliga [!UICONTROL Publishing Lists] att skicka eller schemalägga [!UICONTROL Analysis Workspace] projekt. |
