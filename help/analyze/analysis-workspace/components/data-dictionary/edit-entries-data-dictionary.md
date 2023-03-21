@@ -3,16 +3,14 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Redigera poster i Data Dictionary
 feature: Components
 role: Admin
-source-git-commit: 7e105b4cd22187411dedd663080703e6daec91f5
+source-git-commit: 04f7b3f4b543619cd4a8af418ce583e73ce65b9f
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
 # Redigera komponentposter i Data Dictionary
-
-{{release-limited-testing}}
 
 Analysadministratörer kan redigera komponentposter i Data Dictionary för en given Report Suite. Alla ändringar som görs är synliga för alla användare av Report Suite.
 
@@ -30,16 +28,7 @@ Så här redigerar du en komponent i Data Dictionary:
 
 1. (Valfritt) I sökfältet börjar du skriva namnet på komponenten som du vill redigera.
 
-   Ikoner visas bredvid komponentnamn för att ange komponenttyp:
-
-   | Ikon | Betydelse |
-   |---------|----------|
-   | ![Dimension, ikon](assets/dimension-icon.png) | Anger en **dimension**. Dimensioner tillhandahålls av Adobe. Befintliga dimensioner kan inte ändras och nya dimensioner kan inte skapas. |
-   | ![Mätningsikon](assets/default-metric-icon.png) | Anger en **standardmått** (inte beräknat). Standardvärden tillhandahålls av Adobe och kan inte ändras. |
-   | ![Adobe, ikon](assets/default-calc-metric-icon.png) | Anger en **mall för beräknat mått** eller en **segmentmall**. Dessa komponenter tillhandahålls av Adobe och kan inte ändras. |
-   | ![Beräkningsikon](assets/calculated-metric-icon-created.png) | Anger en **beräknat mått** som har skapats av en Analytics-administratör i din organisation. |
-   | ![Segmentikon](assets/segment-icon.png) | Anger en **segment**. Dessa kan vara segment som tillhandahålls av Adobe eller skapas av en Analytics-administratör i din organisation. |
-   | ![Ikon för datumintervall](assets/date-range-icon.png) | Anger en **datumintervall**. Det kan vara datumintervall som tillhandahålls av Adobe eller skapas av en Analytics-administratör i din organisation. |
+   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](assets/dimension-icon.png) är orange, **Segment** ![Segmentikon](assets/segment-icon.png) är blå, **Datumintervall** ![Ikon för datumintervall](assets/date-range-icon.png) är lila, och **Mått** ![Mätningsikon](assets/default-metric-icon.png) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en segmentmall och räknikonen ![Beräkningsikon](assets/calculated-metric-icon-created.png) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
 
 {{dd-filter-criteria}}
 

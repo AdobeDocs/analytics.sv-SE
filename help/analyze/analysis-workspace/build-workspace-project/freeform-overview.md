@@ -5,9 +5,9 @@ title: Översikt över projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 04f7b3f4b543619cd4a8af418ce583e73ce65b9f
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1630'
 ht-degree: 2%
 
 ---
@@ -26,22 +26,40 @@ När du först besöker **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** 
 
 ![](assets/sample-project.png)
 
-Sidan med projektlistan för arbetsytan innehåller följande information:
+Sidan Projekt innehåller följande information:
+
+>[!NOTE]
+>
+>Vissa kolumner visas inte som standard. Om du vill anpassa kolumnerna som visas klickar du på **Anpassa tabell** icon ![Anpassa tabell](assets/projects-page-customize-columns-icon.png).
+
 
 | Element | Beskrivning |
 |---|---|
-| [Skapa nytt projekt](/help/analyze/analysis-workspace/home.md) | Klicka på den här länken om du vill starta ett nytt projekt från grunden eller från ett [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace) som har skapats åt dig. |
-| Hantera projekt | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt i en lista och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
-| Ange som landningssida | Omvandlar den här sidan till startsidan för arbetsytan. |
-| [Visa Tutorials](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html) | Här finns Analysis Workspace videokurser. |
+| [Redigera inställningar](/help/analyze/analysis-workspace/user-preferences.md) | Hantera inställningar för Analysis Workspace och dess tillhörande komponenter för alla nya projekt eller paneler som du skapar. |
+| [Skapa mapp](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Lägg till en ny mapp eller undermapp i listan över projekt och mappar. |
+| [Skapa projekt](/help/analyze/analysis-workspace/home.md) | Starta ett nytt projekt från grunden eller från en [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace). |
+| Hantera projekt <!--I don't see this option--> | Om du klickar på den här länken kommer du till komponenthanteraren för projekt ( **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Projects]**), som visar alla dina projekt i en lista och där du kan tagga, dela, ta bort, byta namn på, godkänna, kopiera och exportera projekt till CSV. |
+| Ange som landningssida <!--I don't see this option--> | Omvandlar den här sidan till startsidan för arbetsytan. |
+| Visa mer | Visar alternativ för att skapa ett tomt projekt eller ett mobilstyrkort, [visa självstudiekurser](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html), eller [visa versionsinformation](/help/release-notes/latest.md). |
+| Visa mappar och projekt | Välj om du vill visa mappstrukturen för projekt. Mer information finns i [Om mappar i Analytics](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Anpassa tabell (ikon) | Här kan du anpassa informationen som visas för varje projekt på sidan Projekt. |
 | Namn | Namn på Workspace-projektet. |
-| Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
-| Typ | Anger om det här är ett arbetsyteprojekt eller ett [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
-| [Projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Anger din roll för projektet - ägare, redigera, duplicera, visa. |
+| Typ | Anger om det här är ett arbetsyteprojekt, en mapp eller en [Mobile Scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html). |
 | Taggar | Taggar som tillämpades på projektet. |
+| Schemalagd | Anger om projekt har schemalagts att skickas med e-post till mottagare enligt ett schema. Se [Schemalägg projekt](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md). |
+| Delad länk (alla) | Projekt kan delas med vem som helst - även med personer som inte har tillgång till Analysis Workspace. I den här kolumnen visas om projekt har delats på det här sättet. Se [Dela ett projekt med vem som helst (ingen inloggning krävs)](/help/analyze/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md) för mer information. |
+| Rapportsvit | Rapportsviten som projektet är kopplat till. |
+| [Projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Anger din roll för projektet - ägare, redigera, duplicera, visa. |
+| Ägare | Den person som skapade det här projektet (antingen du eller någon som delade projektet med dig). |
+| Delas med | Användare som projektet har delats med. |
 | Senast ändrad | Datum och tid när projektet senast ändrades. |
-| Mina favoritprojekt | Om du vill markera ett projekt som favorit öppnar du projektet och klickar på stjärnan bredvid namnet. Den visas i den här listan nästa gång du öppnar Arbetsyta. |
-| Projekt som visas ofta | Listar alla projekt som du öppnar ofta, så att de blir lätta att komma åt. |
+| Senast öppnad | Datum och tid när projektet senast öppnades. |
+| Projekt-ID | ID för projektet. |
+| Senaste datumintervall | Det längsta datumintervallet för projektet. |
+| Antal frågor | Det totala antalet frågor i projektet. |
+| Plats | Mappen där projektet finns. |
+| Mina favoritprojekt <!--I don't see this option--> | Om du vill markera ett projekt som favorit öppnar du projektet och klickar på stjärnan bredvid namnet. Den visas i den här listan nästa gång du öppnar Arbetsyta. |
+| Projekt som visas ofta <!--I don't see this option--> | Listar alla projekt som du öppnar ofta, så att de blir lätta att komma åt. |
 
 ## Menyrad {#menu-bar}
 
