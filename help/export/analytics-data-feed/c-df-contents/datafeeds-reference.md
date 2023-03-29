@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 2af8c2ee2ad8f445390a0b732630af1e1304d9a5
+source-git-commit: 814c88f3248aec7dde812926ba19f5eee1a815b0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3655'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Använd den här sidan om du vill veta vilka data som finns i varje kolumn. De f
 >[!NOTE]
 >
 >De flesta kolumner innehåller en liknande kolumn med ett prefix på `post_`. Bokför kolumner innehåller värden efter serversidans logik, bearbetningsregler och VISTA-regler. Adobe rekommenderar att du i de flesta fall använder inläggskolumner. Se [Vanliga frågor om dataflöden](../df-faq.md) för mer information.
+
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md).
 
 | Kolumnnamn | Kolumnbeskrivning | Datatyp |
 | --- | --- | --- |

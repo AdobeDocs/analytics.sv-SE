@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 814c88f3248aec7dde812926ba19f5eee1a815b0
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1466'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Variabelmappning i analyser i Adobe Experience Edge
 
 Följande tabell visar de variabler som Adobe Experience Platform Edge Network automatiskt mappar till Adobe Analytics. Om du använder dessa XDM-fältsökvägar behövs ingen ytterligare konfiguration för att skicka data till Adobe Analytics.
+
+Tidigare uppdateringar av den här tabellen finns på den här sidans [implementeringshistorik på GitHub](https://github.com/AdobeDocs/analytics.en/commits/main/help/implement/aep-edge/variable-mapping.md).
 
 | Sökväg till XDM-fält | Analysdimension och beskrivning |
 | --- | --- |
