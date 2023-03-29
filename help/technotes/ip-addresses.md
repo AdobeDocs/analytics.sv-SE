@@ -3,9 +3,9 @@ title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 feature: Data Configuration and Collection
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: 5268016c1055e9387a3394ee6bdfdb2dc508e7d0
+source-git-commit: 07606370e0198901d409ae054f8c8ca6c793bbeb
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,9 @@ Adobe Analytics använder Amazon Web Services som en del av sin datainsamlingspr
 
 | Plats | Värd |
 | --- | --- |
-| Kina | `52.80.169.108` |
-| Kina | `54.223.47.95` |
-| Kina | `140.179.13.49` |
+| Kina | `52.80.44.16` |
+| Kina | `52.80.161.58` |
+| Kina | `140.179.173.142` |
 | Frankrike | `13.36.218.177` |
 | Frankrike | `15.188.95.229` |
 | Frankrike | `15.236.176.210` |
