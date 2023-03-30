@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 9190703c073ecb28e629fa53ac916f706d359324
+source-git-commit: 5f502cb30deb49ce21c72c1bf84db340ac3b426e
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1572'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,10 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-s
 >* Möjligheten att dela ett projekt på det här sättet kan inaktiveras av Analytics-administratören, vilket beskrivs i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har Analytics-administratören inaktiverat den här möjligheten.
 >
 >* Projekt med fler än 14 utökade visualiseringar kan inte delas med personer som inte har tillgång till Adobe Analytics.
+>
+>* Användare som du delar med kan visa alla filter som använts på projektet under [kuration](curate.md).
+> 
+>* Användare som du delar med kan ändra projektets datumintervall. Datumintervallet som du anger för projektet visas som standard.
 
 
 Så här delar du ett Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics:
@@ -153,6 +157,8 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 1. Dela länken med de personer som du vill ska ha tillgång till projektet. Du kan till exempel klistra in länken i ett e-postmeddelande.
 
    Alla som du delar länken med kan visa Analysis Workspace-projektet.
+
+1. (Valfritt) Du kan klicka på **Generera ny länk** icon ![Skapa länkikon](assets/regenerate-link.png) för att ta bort åtkomst från användare som tidigare har fått en länk till projektet. En ny länk skapas som du kan dela med användare som du vill ska få åtkomst till projektet.
 
 1. Välj **[!UICONTROL Close]** för att stänga delningsdialogrutan. Ändringarna sparas automatiskt.
 
