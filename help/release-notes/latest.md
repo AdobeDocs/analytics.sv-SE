@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: ff90d4da4b0bbce35716e9a42ae33ea21f650cdf
+source-git-commit: 670f6044fe29b97a6dcbd77608a9f40c1aacb09a
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1569'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (mars 2023)
 
-**Senaste uppdatering**: 21 mars 2023
+**Senaste uppdatering**: 3 april 2023
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,6 +20,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Delvis stöd för Activity Map med Web SDK** | Från och med Web SDK version 2.15.0 börjar vi fylla i data från Activity Map när länkspårning är aktiverat. Detta gör att Web SDK-användare kan få Activity Map-rapportering om de har länkspårning aktiverat med Web SDK och Activity Map som konfigurerats i Analytics.<p>Observera att när du aktiverar länkspårning med Web SDK skickas länkhändelser när en kund navigerar från en sida till nästa. Därför skickas extra fakturerbara träffar till Adobe. På längre sikt arbetar vi på ett sätt att låta Web SDK samla in Activity Map på ett sätt som speglar vad AppMeasurement gör. I vissa situationer skickar AppMeasurement data separat i efterföljande sidvyer, vilket minskar antalet serveranrop. Se [Spåra länkar](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) för mer information. | Ej tillämpligt | 31 mars 2023 |
 | **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på, hantera och bättre förstå komponenterna (dimensioner, mätvärden) i sin Analytics-miljö. [Läs mer](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) | 15 mars 2023 | 29 mars 2023 |
 | **Dataartiklar på mobilkontrollpaneler** | Med hjälp av databerättelser kan du lägga till flera anpassningsbara detaljvyer till paneler i projekt i Mobile Scorecard. Använd databerättelser för att fördjupa dig i viktiga drivrutiner, relaterade mätvärden och olika steg längs kundresan. Du kan enkelt svepa igenom de här vyerna för att förstå hela artikeln bakom nyckelmätningarna. [Läs mer](/help/analyze/mobile-app/create-scorecard.md#create-data-story) | Ej tillämpligt | 8 mars 2023 |
 | **Utgångsdatum för schemalagt projekt** | Du kan ange maximalt förfallodatum för schemalagda projekt till upp till ett år, oavsett schemafrekvens. | Ej tillämpligt | 8 mars 2023 |
@@ -34,6 +35,7 @@ AN-308177; AN-308727; AN-308846; AN-309591; AN-310614; AN-311544; AN-311570; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **Processer för enhetssökning använder nu en tredje part för alla enhetssökningar** | 3 mars 2023 | Den 2 mars 2023 uppdaterade vi våra enhetssökningsprocesser som en del av supportlanseringen för klienttips så att vi kan använda en tredje part för alla enhetssökningar. Tidigare hade vi bara använt den tredje parten för sökning på mobila enheter. Som en del av den utrullningen hade vissa operativsystem på stationära datorer en felaktig etikett med texten&quot;mobile&quot; (t.ex. &quot;Mobile OS X 10.15.7&quot; i stället för &quot;OS X 10.15.7&quot;).<p>Under Adobe aprilversionen kommer vi att rätta till de här namnen. Analys- och CJA-rapporter uppdateras retroaktivt eftersom deras rapportering söker efter operativsystemets namn baserat på ett ID som registreras som en del av händelsedata. När sökvärdet som motsvarar ett ID uppdateras korrigeras alla rapporter, inklusive historiska data. För datafeeds-kunder är ändringen retroaktiv om du använder en liknande sökprocess vid tidpunkten för rapporteringen. Om du lagrar operativsystemsvärdet i dina händelsedata uppdateras dock bara rapporten i framtiden. Se [Operativsystem](/help/components/dimensions/operating-systems.md) för mer information. |
 | **Uppdatera till enhetssökningar på grund av Google klienttips** | 27 februari 2023 | Användningen av klienttips, som planerades till den 16 februari 2023, sköts upp för att bättre säkerställa kvaliteten på enhetssökningar med hjälp av tips. Vi gick vidare med den första fasen av releasen för stöd för kundtips den 27 februari 2023. Den andra och sista fasen av releasen slutfördes torsdagen den 2 mars 2023. [Läs mer](/help/technotes/client-hints.md) |
 | **Tillgänglighet för Analytics Source Connector** | 15 februari 2023 | Den 28 februari 2023 blev Analytics Source Connector tillgänglig i det nya datacentret för Adobe Experience Platform i Kanada. |
 | **Automatisk migrering till arkitekturen för klassificeringsuppsättning** | 8 februari 2023 | Under de kommande månaderna planerar Adobe att migrera alla klassificeringar i alla organisationer till den senaste klassificeringsarkitekturen. De sista kunderna som migrerar beräknas inträffa i maj 2023. Ingen kundåtgärd krävs, och ingen driftstopp förväntas. Den nya arkitekturen har många fördelar, bland annat:<ul><li>Betydande minskning av bearbetningstiden (72 timmar → 24 timmar)</li><li>Möjligheten att använda [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) UI</li><li>Alternativet att använda klassificeringsdata i Adobe Experience Platform i framtiden via [Adobe Analytics källanslutning för klassificeringsdata](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/classifications.html)</li></ul>Observera följande ändringar som kan påverka organisationens arbetsflöde:<ul><li>Vid användning av webbläsare eller FTP-import, &#39;[!UICONTROL Overwrite on conflict]&#39; är alltid aktiverat.</li><li>När du använder en webbläsare eller FTP-import stöds inte längre alternativet att exportera direkt efter importen.</li><li>API:t för Analytics 2.0 `GetDimensions` slutpunkten returnerar nu strängidentifierare för klassificeringar i stället för numeriska identifierare. Numeriska identifierare kan fortfarande användas, men Adobe rekommenderar att du använder de nya strängidentifierarna där det är möjligt. Numeriska identifierare kan hämtas med `?expansion=hidden` frågesträngsparameter.</li></ul>Kontakta Adobe kundtjänst om du vill ha ett mer specifikt migreringsschema för din organisation, eller har frågor om migreringen. [Läs mer](/help/components/classifications/sets/overview.md) |
