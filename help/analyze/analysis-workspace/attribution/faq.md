@@ -4,10 +4,10 @@ description: Få svar på vanliga frågor om attribuering.
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-source-git-commit: 1c9f2a0f811d42c55205ee9e0431cee2f67187e7
+source-git-commit: 5ed1ff0ecee4843f866b1a911e2cb5f14310c58a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1063'
+ht-degree: 2%
 
 ---
 
@@ -81,7 +81,7 @@ Ja, klassificeringar stöds fullt ut.
 
 Ja, de flesta datakällor stöds. Attribuering är inte möjligt med datakällor på sammanfattningsnivå eftersom de inte är kopplade till en besöksidentifierare för Analytics.
 
-Datakällor för transaktions-ID behandlas på samma sätt som andra träffar. de inte använder den särskilda bearbetning som de normalt använder vid traditionell rapportering.
+Datakällor för transaktions-ID behandlas på samma sätt som andra träffar. de inte använder den särskilda bearbetning som de normalt använder vid traditionell rapportering. Med andra ord, när du använder rapporttidsbearbetning kommer transaktions-ID-träffar att få eVar som har spridits från träffar som inträffar nära tidsstämpeln för Transaktions-ID-träffen. Värdena sprids inte från träffar som inträffade nära tidpunkten för den ursprungliga transaktionen.
 
 ## Fungerar attribuering tillsammans med Advertising Analytics?
 
