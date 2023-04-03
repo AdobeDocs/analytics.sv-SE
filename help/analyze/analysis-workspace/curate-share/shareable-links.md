@@ -5,9 +5,9 @@ title: Skapa delningsbara länkar
 feature: Curate and Share
 role: User, Admin
 exl-id: 39fbe18c-2f75-4026-b277-58ec08c6a645
-source-git-commit: 9190703c073ecb28e629fa53ac916f706d359324
+source-git-commit: 870252bebc55ddc5621e6d1add708cb1d9fda60d
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 Analysis Workspace erbjuder många sätt att dela ett projekt med dina användare, bland annat möjligheten att få en länk till ett projekt eller en viss del av ett projekt. Vissa länktyper kräver att mottagaren loggar in på Adobe Analytics innan han eller hon kommer åt projektet, medan andra inte gör det.
 
-## Hämta projektlänk som du kan dela med andra arbetsyteanvändare {#project-link}
+## Hämta en projektlänk som du kan dela med andra Workspace-användare {#project-link}
 
-Om du vill dela en länk till hela projektet går du till [!UICONTROL **Dela**] > [!UICONTROL **Dela med Workspace-användare**] > [!UICONTROL **Dela via länk**]. Om länkens mottagare inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html), administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]** upplevelser.
+Om du vill dela en länk till ett projekt går du till det projekt du vill dela och väljer sedan Gå till [!UICONTROL **Dela**] > [!UICONTROL **Dela med Workspace-användare**] > [!UICONTROL **Dela via länk**]. Användare som du delar länken med måste logga in.
 
-![](assets/get-project-link.png)
+Om länkens mottagare inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html), administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]** upplevelser.
 
 ## Få en skrivskyddad länk att dela med vem som helst
 
 {{release-limited-testing-section}}
 
-Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics.
+Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Användare som du delar länken med behöver inte logga in.
 
 Mer information finns i&quot;Dela ett projekt med vem som helst (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
 

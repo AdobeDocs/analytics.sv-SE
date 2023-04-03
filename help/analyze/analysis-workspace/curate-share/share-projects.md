@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 5f502cb30deb49ce21c72c1bf84db340ac3b426e
+source-git-commit: 258eac585d536af593e0fa5b2cf75fd53ecd4ef0
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1585'
 ht-degree: 0%
 
 ---
@@ -92,16 +92,15 @@ Tänk på följande när du delar en länk enligt beskrivningen i det här avsni
 
 * Mottagare som använder länken måste logga in på Adobe Analytics innan de kan komma åt projektet.
 
-* Om en mottagare inte har tilldelats en roll och får en [link](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) får de en roll som standard. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**.
+* Om en mottagare inte har tilldelats en roll och får en [link](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) till projektet får de som standard en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**.
 
 Så här delar du projektlänken med användare i din organisation:
 
-1. Klicka på **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]**.
-Om det finns ändringar som inte har sparats uppmanas du att spara projektet först.
+1. Spara projektet. Om det finns ändringar som inte har sparats uppmanas du att spara projektet innan du delar en länk.
+
+1. Välj **[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]** väljer **[!UICONTROL Copy]** bredvid **[!UICONTROL Share by link]** fält.
 
    ![](assets/share-proj-modal.png)
-
-1. Klicka **[!UICONTROL Copy]** bredvid **[!UICONTROL Share by link]** fält.
 
 1. Dela länken med användare i organisationen. Du kan till exempel klistra in den i ett e-postmeddelande, på en intern webbplats och så vidare.
 
@@ -191,4 +190,4 @@ Här är en video om ämnet:
 | Vad händer om två redigerare sparar ett projekt samtidigt? | Ändringarna sammanfogas inte och den senast sparade projektversionen behålls. Analysis Workspace stöder för närvarande inte live-samarbete. |
 | Vilken projekterfarenhet vill jag som administratör se? | Administratörer som placerats i en **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan vid behov utöka sin roll till **[!UICONTROL Can edit]** när som helst till **[!UICONTROL Components]>[!UICONTROL Projects]**. |
 | Vad händer om en mottagare placeras i en roll som enskild person och en annan roll som medlem i en grupp? | Om en mottagare placeras i flera roller får de alltid den högre upplevelsen. Om en mottagare får **[!UICONTROL Can edit]** som individ och **[!UICONTROL Can view]** som medlem i en grupp får de **[!UICONTROL Can edit]** projekterfarenhet. |
-| Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Mottagarna får rollen som du placerade dem i den delade modalen. Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. |
+| Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Mottagarna får rollen som du placerade dem i den delade modalen. Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]** väljer **[!UICONTROL Copy]** bredvid **[!UICONTROL Share by link]** -fält) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. |
