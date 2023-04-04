@@ -2,10 +2,10 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
+source-git-commit: ac3748826d9907cc68076ad39e865f39ea903cf2
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Datainsamlingsserver:** Adobe-ägda servrar som tar emot och bearbetar data. Bildbegäranden skickas till Adobe datainsamlingsservrar för användning vid rapportering.
 * **Dataanslutningar:** En komplett utvecklingslösning som gör det möjligt för en tredje part att automatisera överföringen av data till Adobe Analytics. Kunder från den tredje parten kan använda en dataanslutning för att förbättra sina data i Adobe Analytics. De flesta dataanslutningar använder ett liknande arbetsflöde som används i datakällor. Se [Data Connectors](/help/import/data-connectors/data-connectors-eol.md) i importhandboken.
 * **Dataflöde:** En export av rådata som visar alla träffar som rader och variabler som separata kolumner. De vanligaste är att exportera Adobe Analytics-data till en tredjepartsdatabas. Se [Dataflöden](/help/export/analytics-data-feed/data-feed-overview.md) i Exportera användarhandbok.
-* **Datakällor:** Användare kan överföra data från en fil till Adobe Analytics. Filen hämtas vanligtvis från en FTP-plats. Se [Datakällor](/help/import/c-data-sources/datasrc-home.md) i importhandboken.
+* **Datakällor:** Användare kan överföra data från en fil till Adobe Analytics. Filen hämtas vanligtvis från en FTP-plats. Se [Datakällor](/help/import/data-sources/overview.md) i importhandboken.
 * **data warehouse:** En funktion i Adobe Analytics som gör att du kan begära större rapporter. Se [data warehouse](/help/export/data-warehouse/data-warehouse.md) i Exportera användarhandbok.
 * **Data Workbench:** Tidigare Insight. Utformat för att samla in, bearbeta, analysera och visualisera data från kundinteraktioner både online och offline över flera kanaler.
 * **Dimension:** En komponenttyp som innehåller variabelvärden, som text. Exempel är sidnamn, spårningskod eller referensdomän. Ett mätvärde är vanligtvis dess motsvarighet.

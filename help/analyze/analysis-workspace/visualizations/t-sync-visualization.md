@@ -1,18 +1,18 @@
 ---
 description: Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
 keywords: Analysis Workspace;Synkronisera visualisering med datakälla
-title: Hantera datakällor
+title: Hantera datakällor för visualisering
 feature: Visualizations
 role: User, Admin
 exl-id: 0500b27a-032e-4dc8-98b7-58519ef59368
-source-git-commit: 5454995fb9d6e63fb19e2272f66f3c96bf951ccb
+source-git-commit: 0a253a7e0bd2e66ca30457bb435282ef700cec0f
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Hantera datakällor
+# Hantera datakällor för visualisering
 
 Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
 

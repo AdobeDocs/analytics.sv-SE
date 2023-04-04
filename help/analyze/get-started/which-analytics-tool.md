@@ -3,7 +3,7 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: 860621a058826ba8bf602d87a702f835c7c00a37
+source-git-commit: ac3748826d9907cc68076ad39e865f39ea903cf2
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 2%
@@ -52,7 +52,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
    * Regelverktyget: används när du har förutsägbara formaterade värden som samlas in för en variabel, t.ex. avgränsade värden. Med den här metoden kan ni lägga upp regler en gång och i stort sett&quot;skapa och glömma&quot;.
    * Webbläsarimporterare: används när du inte har några förutsägbara värden eller när du har en begränsad lista med värden som kräver en engångsuppdatering. På så sätt måste du kontinuerligt övervaka klassificeringarna för nya värden.
 
-**[Datakällor](/help/import/c-data-sources/datasrc-home.md)** ska användas:
+**[Datakällor](/help/import/data-sources/overview.md)** ska användas:
 
 * När det finns offlinedata vill du skriva permanent till Adobe Analytics
 * Alternativ:

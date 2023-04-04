@@ -2,9 +2,9 @@
 title: Felsöka tagningar och datasläppningar
 description: Läs om möjliga orsaker till varför du kan se dramatiska ökningar eller minskningar i trendrapporter.
 exl-id: 1a91f95e-818f-423d-9247-e0bb96bd0018
-source-git-commit: dc9cd6bb45af0c992c37ffe20ea22eab67789ec5
+source-git-commit: ac3748826d9907cc68076ad39e865f39ea903cf2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Trafiktoppar indelas i två delar: nästan dubbla data och andra orsaker.
 ### Möjliga orsaker till att ha nästan eller exakt dubbelt så stora data som förväntat
 
 * **Flera bildbegäranden inom en implementering**: Om implementeringen innehåller fler än ett [`t()`](/help/implement/vars/functions/t-method.md) anrop per sida, vilket innebär att alla insamlade data dubbleras. Använd felsökaren på din webbplats och se efter om det finns flera bildbegäranden som kan fånga upp dubbletter.
-* **Duplicerade datakällfiler har överförts**: Om din organisation använder [Datakällor](/help/import/c-data-sources/datasrc-home.md), kan en användare i din organisation överföra samma fil två gånger till Adobe Analytics. Att utföra den här duplicerade överföringen fördubblar effektivt data i rapporteringen, vilket ger upphov till trafiksprång.
+* **Duplicerade datakällfiler har överförts**: Om din organisation använder [Datakällor](/help/import/data-sources/overview.md), kan en användare i din organisation överföra samma fil två gånger till Adobe Analytics. Att utföra den här duplicerade överföringen fördubblar effektivt data i rapporteringen, vilket ger upphov till trafiksprång.
 
 ### Andra potentiella orsaker till ökad trafik
 
