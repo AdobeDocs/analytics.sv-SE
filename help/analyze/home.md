@@ -4,7 +4,7 @@ description: Produktdokumentation och självhjälp för Analysis Workspace, Adob
 feature: Workspace Basics
 role: User, Admin
 exl-id: 8ed81356-626e-4334-9e20-b481e6ba654a
-source-git-commit: dff8e6a3f8ffad5ff0033f75cad08b6e53b1d7b8
+source-git-commit: 82bb289183f04ec6f795ebfa489436a7b0cc021f
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 71%
@@ -22,7 +22,7 @@ Den här guiden innehåller produktdokumentation och självhjälp för följande
 * **[!UICONTROL Activity Map]:** Ett plugin-program för webbläsare med en överlagring på webbplatsen som visar de mest klickade elementen.
 * **[!UICONTROL Report Builder]:** Ett Excel-tillägg som gör att ni kan hämta Analytics-data och placera dem direkt i en arbetsbok.
 * **[!UICONTROL Reporting API]:** Skicka rapportförfrågningar direkt till Adobes servrar och få svar som kan användas i era egna kundrapporteringsverktyg.
-* **[!UICONTROL Reports & Analytics]:** Ett verktyg med massor av färdiga rapporter. Adobe rekommenderar att Analysis Workspace används för de flesta rapporteringsbehov. **Obs!** Rapporter och analyser kommer att [slutprodukt](https://express.adobe.com/page/6WnF8JK6IRDhf/) den 31 december 2023.
+* **[!UICONTROL Reports & Analytics]:** Ett verktyg med massor av färdiga rapporter. Adobe rekommenderar att Analysis Workspace används för de flesta rapporteringsbehov. **Obs!** Rapporter och analyser kommer att [slutprodukt](https://www.adobe.com/go/analytics_rnaeol_en) den 31 december 2023.
 
 Här är en videoöversikt över Adobe Analytics:
 

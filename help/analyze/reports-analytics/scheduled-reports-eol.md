@@ -4,16 +4,16 @@ description: Adobe har för avsikt att pausa alla schemalagda rapporter som har 
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 6e5039cd-0f40-44f7-b97d-eb17d9db25a4
-source-git-commit: 9a16f3942505028624e5c07568342a9acac898d7
+source-git-commit: 82bb289183f04ec6f795ebfa489436a7b0cc021f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # Meddelande om att giltighetstiden har löpt ut för schemalagda rapporter
 
-Den 21 april 2022 meddelade vi att ett antal funktioner som är specifika för schemalagda rapporter skulle tas bort som förberedelse för de tidigare annonserade [slutet på livscykeln för rapporter och analyser](https://express.adobe.com/page/6WnF8JK6IRDhf/). Bland dessa funktioner fanns möjligheten att schemalägga nya rapporter och nya datautdrag. Som svar på kundförfrågningar som söker en förlängning och för att underlätta övergången från rapporter och analyser har vi beslutat att utöka åtkomsten till dessa funktioner tills **31 jan 2023**. Observera att förfallotiden för både rapporter och dataextrakt fortsätter att vara begränsad till nio månader. leverans av rapport och dataextrahering pausas vid periodens slut om inte schemat återaktiveras.
+Den 21 april 2022 meddelade vi att ett antal funktioner som är specifika för schemalagda rapporter skulle tas bort som förberedelse för de tidigare annonserade [slutet på livscykeln för rapporter och analyser](https://www.adobe.com/go/analytics_rnaeol_en). Bland dessa funktioner fanns möjligheten att schemalägga nya rapporter och nya datautdrag. Som svar på kundförfrågningar som söker en förlängning och för att underlätta övergången från rapporter och analyser har vi beslutat att utöka åtkomsten till dessa funktioner tills **31 jan 2023**. Observera att förfallotiden för både rapporter och dataextrakt fortsätter att vara begränsad till nio månader. leverans av rapport och dataextrahering pausas vid periodens slut om inte schemat återaktiveras.
 
 För att upprepa detta kommer dessa funktioner att bli inaktuella den 31 januari 2023, innan du måste migrera din schemalagda rapportering till någon av de andra mekanismer som är tillgängliga i Adobe Analytics.
 
