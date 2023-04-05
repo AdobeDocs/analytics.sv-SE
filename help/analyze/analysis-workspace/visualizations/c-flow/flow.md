@@ -5,10 +5,10 @@ uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 feature: Visualizations
 role: User, Admin
 exl-id: 3a7d1552-7fae-41ae-8ca5-89800d05d3d4
-source-git-commit: 5af6ef23a9cc48909950127552a530bc2395f7e8
+source-git-commit: 9f309319d67adb96cef6b1951c3ce485a57cd8da
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 1%
+source-wordcount: '223'
+ht-degree: 3%
 
 ---
 
@@ -35,6 +35,10 @@ Här är en videosjälvstudiekurs om Flow-visualisering:
 Du kan visa [flöde mellan dimensioner](/help/analyze/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Du kan till exempel kombinera sidor och avdelningar i ett diagram. I det här fallet kan ditt flöde gå från startsidan, till sidan Mens och sedan till avdelningen Shoes.
 
 Varje kolumn kan ha olika dimensioner. Dra en dimension och släpp den i en släppzon för att lägga till den dimensionen i diagrammet.
+
+## Konfigurera en flödesvisualisering
+
+Mer information om hur du konfigurerar en flödesvisualisering finns i [Konfigurera en flödesvisualisering](/help/analyze/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## Exportera flödesdiagram som en del av Project .CSV-filer {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 

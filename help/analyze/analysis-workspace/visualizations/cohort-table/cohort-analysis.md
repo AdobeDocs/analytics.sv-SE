@@ -4,7 +4,7 @@ description: Gräv djupare in i informationen om er målgrupp och dela in i rela
 feature: Cohort Analysis
 role: User, Admin
 exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 9f309319d67adb96cef6b1951c3ce485a57cd8da
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -33,7 +33,9 @@ Video om Cohort-tabeller i Analysis Workspace:
 
 >[!IMPORTANT]
 >
->[!UICONTROL Cohort Analysis] stöder inte icke-segmenterbara mått (inklusive beräknade värden), icke-heltalsvärden (t.ex. Intäkter, >eller Förekomster. Endast mätvärden som kan användas i segment kan användas i [!UICONTROL Cohort Analysis]och de kan bara ökas med >1 åt gången.
+>[!UICONTROL Cohort Analysis] stöder inte icke-segmenterbara mått (inklusive beräknade värden), icke-heltalsvärden (t.ex. Intäkter) eller förekomster.
+>
+>Endast mätvärden som kan användas i segment kan användas i [!UICONTROL Cohort Analysis]och de kan bara ökas med >1 åt gången.
 
 ## Funktioner för kohortanalyser
 
