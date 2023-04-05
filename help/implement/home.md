@@ -2,9 +2,9 @@
 title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 feature: Implementation Basics
-source-git-commit: d9a5d8a15b9e108af795cdfb7ed5481d51311328
+source-git-commit: eae2b75d47a044b36ff9e5bbb311d1a2906faf91
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '898'
 ht-degree: 28%
 
 ---
@@ -49,7 +49,11 @@ Se [Implementera Adobe Analytics med Analytics-tillägget](launch/overview.md) f
    ![Äldre JavaScript](./assets/appmeasurement-implementation.png)
 Den här implementeringsmetoden kan vara användbar för implementeringar med anpassad kod och rekommenderas fortfarande när du (vill) använder:
 
-   * [aktivitetskarta på klicknivå](../analyze/activity-map/activity-map.md),
+   * [data för aktivitetskarta](../analyze/activity-map/activity-map.md),
+
+      >[!INFO]
+      >
+      >Activity Map stöds med den senaste Web SDK:n. Se [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) för mer information.
 
    * [mätning av direktuppspelningsmedia](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en),
 

@@ -5,10 +5,10 @@ uuid: 30433319-d0e6-4977-951a-4492b356e1f2
 feature: Activity Map
 role: User, Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 87c2f559990674ee738e1ad57166cf192d58232c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 3%
 
 ---
 
@@ -16,15 +16,30 @@ ht-degree: 0%
 
 Beskriver de steg som Analytics Admin måste slutföra för att aktivera Activity Map-länksamling och användarhämtning.
 
-## Steg 1. Uppdatera din AppMeasurement-kod (JavaScript) till v1.6 (eller senare) {#section_5D1586289DF2489289B1B6C1C80C300D}
+## Steg 1. Uppdatera implementeringskoden {#section_5D1586289DF2489289B1B6C1C80C300D}
 
-Modulen Activity Map är en del av filen AppMeasurement.js (som finns högst upp i filen). AppMeasurement-biblioteket läser in modulen Activity Map när den instansieras.
+Modulen Activity Map är en del av AppMeasurement.js och Web SDK (version 2.15.0 eller senare).
+AppMeasurement-biblioteket eller Web SDK läser in modulen Activity Map när den instansieras.
 
-Data från Activity Map kan inte samlas in om du inte uppdaterar till den här versionen (eller senare) av AppMeasurement.
+>[!NOTE]
+>
+>Data från Activity Map kan inte samlas in om du inte uppdaterar till **AppMeasurement** **version 1.6** eller högre eller **Web SDK** **version 2.15.0** eller högre
 
-1. Hämta den senaste AppMeasurement-koden (AppMeasurement_Javascript-1.6.zip) genom att gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** och [implementera](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html).
 
-   Vi har tagit med några [exempelkod](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md) för att hjälpa dig att visualisera de ändringar som har gjorts i koden genom att inkludera modulen Activity Map.
+1. Hämta det senaste Javascript-biblioteket beroende på om du använder AppMeasurement eller Web SDK.
+
+   - **AppMeasurement** kod (AppMeasurement_Javascript-1.6.zip) genom att gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** och [implementera](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html).
+
+      Vi har tagit med några [exempelkod](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md) för att hjälpa dig att visualisera de ändringar som har gjorts i koden genom att inkludera modulen Activity Map.
+
+   - **Web SDK** kod (alloy.js). Se [Installera SDK - alternativ 2: Installera den fördefinierade fristående versionen](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-2%3A-installing-the-prebuilt-standalone-version) för mer information. Se till att du använder version 2.15 eller senare.
+
+      Se [Spåra länkar](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) om du vill ha information om hur du implementerar länkspårning och hur du aktiverar aktivitetsmappning genom att hämta `region` för det klickade elementet HTML.
+
+      >[!NOTE]
+      >
+      >Om du aktiverar länkspårning med Web SDK skickas länkhändelser när en kund navigerar från en sida till nästa. Detta skiljer sig från hur AppMeasurement fungerar och kan eventuellt resultera i extra fakturerbara träffar som skickas till Adobe.
+
 
 1. Validera implementeringen:
 

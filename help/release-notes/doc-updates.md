@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: b604895acfb18c566f5d282ed5781400192d3553
+source-git-commit: 025f176777ef8fd4f91d74fb493e45889c66f439
 workflow-type: tm+mt
-source-wordcount: '3784'
+source-wordcount: '3798'
 ht-degree: 33%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Mars 2023** |  |
+| Stöd för Web SDK i Activity Map | Uppdaterat [Implementera Adobe Analytics](/help/implement/home.md) och [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md). |
 | Översikt över trafikvariabler (props) | Lagt till avsnitt och stegvisa procedurer för att förtydliga och förbättra artikelinnehållet. Sammanfogat innehåll från en artikel med rubriken&quot;Aktivera trafikvariabelrapporter&quot; och tog bort artikeln. Se [Översikt över trafikvariabler (props)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md). |
 | Interna URL-filter | Lagt till avsnitt och stegvisa procedurer för att förtydliga och förbättra artikelinnehållet. Se [Interna URL-filter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/internal-url-filter-admin.md). |
 | Skapa dataartiklar i mobilstyrkort | A [dataartikel](/help/analyze/mobile-app/create-scorecard.md#create-data-stories) är en samling datapunkter, företagskontext och relaterade mätvärden som bygger på ett centralt tema eller mätvärden. |
