@@ -3,7 +3,7 @@ description: Steg som beskriver hur du genererar ett Excel-kalkylblad som inneh�
 title: Hämta inställningar för rapportsviten
 feature: Report Suite Settings
 exl-id: f3e45bd5-048a-4200-a95d-4284cad72bad
-source-git-commit: 00d37f1e77bb0f2cc0c7bd728a7f8bebe56d659e
+source-git-commit: b26da8f7e3aee3c3f3e68d24bd8b170e32759bbd
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Så här skapar du en tabbavgränsad fil som innehåller alla inställningar fö
 
 3. Klicka på **[!UICONTROL Download]**.
 
-   En fil med namnet Report Suite Data.tab hämtas till den lokala datorn.
+   En fil med namnet `Report Suite Data.tab` hämtas till din lokala dator.
 
 Du kan öppna filen i valfri textredigerare som kan hantera tabbavgränsade filer.
 
