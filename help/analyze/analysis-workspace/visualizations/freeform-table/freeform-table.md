@@ -4,22 +4,37 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Freeform Tables
 role: User, Admin
 exl-id: 7a0432f9-2cab-47be-bbd6-ede96cb840a3
-source-git-commit: 08dd9724efa105d0d9efd25223f72b2ae8e9a487
+source-git-commit: 8ca676a9e69195ef873981dd390bb0a6d4d465f1
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # Frihandstabell
 
-I Analysis Workspace är Freeform Table grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) till rader och kolumner för att skapa en anpassad tabell för din analys. När varje komponent släpps uppdateras tabellen omedelbart så att du snabbt kan analysera och fördjupa.
+I Analysis Workspace är Freeform Table grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) till rader och kolumner för att skapa en anpassad tabell för din analys. När varje komponent släpps uppdateras tabellen omedelbart, så att du snabbt kan analysera och fördjupa den.
 
-![](assets/opening-section.png)
+För att illustrera börjar du med en tom friformstabell.
+
+![Tom tabell för frihandsfigur](assets/freeform-table-1.png)
+
+Om du släpper **[!UICONTROL ** Besök **]** på **[!UICONTROL ** Släpp ett mätresultat här (eller någon annan komponent)**]**, fylls friformstabellen automatiskt i med besök per dag för den period du har valt.
+
+![Besök friformstabell](assets/freeform-table-2.png)
+
+Om du sedan släpper **[!UICONTROL ** Sida **]** dimension som ska ersätta **[!UICONTROL ** Dag **]** dimensionskolumnen återspeglar friformstabellen automatiskt besöken för varje sida.
+
+![Besök efter sidfriformstabell](assets/freeform-table-3.png)
+
+Sedan kan du bryta ned **[!UICONTROL ** kategori:5 **]** genom att släppa **[!UICONTROL ** Marknadsföringskanal **]** dimension på **[!UICONTROL ** kategori:5 **]** rad.
+
+![Besöksfördelning efter sidfriformstabell](assets/freeform-table-4.png)
+
 
 ## Automatiserade tabeller
 
-Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i ett tomt projekt, en panel eller en frihandstabell. En frihandstabell skapas automatiskt i det format som rekommenderas. [Se självstudiekursen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html).
+Så som visas ovan är det snabbaste sättet att skapa en tabell att släppa komponenter direkt i ett tomt projekt, en tom panel eller en frihandstabell. En frihandstabell skapas automatiskt i det format som rekommenderas. [Se självstudiekursen](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html).
 
 ![](assets/automated-table.png)
 
