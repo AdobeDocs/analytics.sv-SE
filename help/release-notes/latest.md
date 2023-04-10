@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 3bfa7e7eeac52370b32060c264c408de32a56fc1
+source-git-commit: 4e9b96fc29ee8c409019c292d565ea229e7c521f
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1527'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Delvis stöd för Activity Map med Web SDK** | Från och med Web SDK version 2.15.0 började vi fylla i data från Activity Map när länkspårning är aktiverat. Detta gör att Web SDK-användare kan få Activity Map-rapportering om de har länkspårning aktiverat med Web SDK och Activity Map som konfigurerats i Analytics.<p>Om du aktiverar länkspårning med Web SDK skickas länkhändelser när en kund navigerar från en sida till nästa. Detta skiljer sig från hur AppMeasurement fungerar och kan eventuellt resultera i extra fakturerbara träffar som skickas till Adobe. Läs mer [här](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) och [här](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) | Ej tillämpligt | 31 mars 2023 |
-| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på, hantera och bättre förstå komponenterna (dimensioner, mätvärden) i sin Analytics-miljö. [Läs mer](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) | 15 mars 2023 | **Tillfälligt otillgänglig** |
+| **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på, hantera och bättre förstå komponenterna (dimensioner, mätvärden) i sin Analytics-miljö. [Läs mer](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) | 15 mars 2023 | 29 mars 2023 |
 | **Dataartiklar på mobilkontrollpaneler** | Med hjälp av databerättelser kan du lägga till flera anpassningsbara detaljvyer till paneler i projekt i Mobile Scorecard. Använd databerättelser för att fördjupa dig i viktiga drivrutiner, relaterade mätvärden och olika steg längs kundresan. Du kan enkelt svepa igenom de här vyerna för att förstå hela artikeln bakom nyckelmätningarna. [Läs mer](/help/analyze/mobile-app/create-scorecard.md#create-data-story) | Ej tillämpligt | 8 mars 2023 |
 | **Utgångsdatum för schemalagt projekt** | Du kan ange maximalt förfallodatum för schemalagda projekt till upp till ett år, oavsett schemafrekvens. | Ej tillämpligt | 8 mars 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs)** - Endast privat betaversion | <p>Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Du kan dela projektlänkar med personer utanför organisationen eller personer inom organisationen som inte är tilldelade Adobe Analytics. [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md)</p> <p>Om du vill gå med i den privata betaversionen kontaktar du Adobe Account Team.</p> | 26 april 2023 | Juni 2023 |
