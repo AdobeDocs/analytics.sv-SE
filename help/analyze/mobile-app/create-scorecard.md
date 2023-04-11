@@ -4,7 +4,7 @@ title: Skapa ett mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: 06fc208465e8eb5be1f1fd766d40dadee84e4f9c
+source-git-commit: 8707bde9ddda96ab63a916bda9dfb35e8b9b1063
 workflow-type: tm+mt
 source-wordcount: '2284'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Som kurator för det här styrkortet kan du använda styrkortsverktyget för att
 Om du vill skapa styrkortet måste du göra följande:
 
 1. Öppna [!UICONTROL Blank Mobile Scorecard] mall.
-2. Konfigurera styrkortet med data och spara det.
+1. Konfigurera styrkortet med data och spara det.
 
 ## Öppna [!UICONTROL Blank Mobile Scorecard] mall {#template}
 
@@ -232,14 +232,23 @@ Bygg din databerättelse genom att lägga till flera detaljbilder i en ruta.
 
 1. Börja med ett mobilt styrkortsprojekt.
 1. Välj en platta som du vill skapa en artikel från.
+
    ![Skapa en dataartikel](assets/data-story1.png)
+
    ![Skapa ikoner för databerättelse](assets/create-data-story.png){width=".50%"}
+
 1. Lägg till bilder för att skapa din databerättelse. Den första bilden genereras som standard.
-Om du vill lägga till nya bildrutor håller du markören över eller klickar på en bildruta och väljer sedan bland de tillgängliga alternativen:
-   * Tryck på plustecknet (+) för att skapa en ny bildruta.
+
+   Om du vill lägga till nya bildrutor håller du markören över eller klickar på en bildruta och väljer sedan bland de tillgängliga alternativen:
+
+   * Tryck på [!UICONTROL +] för att skapa en ny bild.
+
    * Tryck på ikonen Duplicera om du vill duplicera den befintliga bildrutan.
+
 1. Om du skapar en tom bildruta drar och släpper du komponenter från den vänstra listen, eller väljer en layout som automatiskt fyller bildrutan med data från den.
+
    ![Skapa en dataartikel](assets/data-story2.png)
+
 Tryck på papperskorgen om du vill ta bort en bildruta.
 
 ### Anpassa en dataartikel {#customize-data-story}
@@ -251,9 +260,13 @@ Med hjälp av dataartiklar kan du anpassa allt så att du kan dela information s
 1. Tryck på en platta. Den markerade plattan visas med blå konturer och den högra panelen visar rutans egenskaper.
 1. Ändra alternativ för rubrik, diagramtyp och annan ruta.
 1. Dra en komponent till plattan.
+
    ![Skapa en dataartikel](assets/data-story3.png)
-När du drar och släpper en komponent, t.ex. en visualisering, på en platta används komponenten på alla bilder i en dataartikel.
+
+   När du drar och släpper en komponent, t.ex. en visualisering, på en platta används komponenten på alla bilder i en dataartikel.
+
 1. Om du bara vill ändra titeln håller du ned Skift-tangenten för att tillämpa ändringen.
+
    ![Skapa en dataartikel](assets/data-story4.png)
 
 >[!NOTE]
@@ -272,7 +285,9 @@ När du har skapat en dataartikel använder du **Förhandsgranska** för att vis
 I navigeringsfältet visas ikoner som representerar vad som finns på varje bildruta. Navigeringsfältet gör det enkelt att navigera till en viss bildruta om du har många bildrutor.
 
 Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
+
 ![Skapa en dataartikel](assets/data-story5.png)
+
 ![Skapa en dataartikel](assets/data-story-nav.png){width="25%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
