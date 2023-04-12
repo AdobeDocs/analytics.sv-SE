@@ -5,16 +5,20 @@ title: Migrering av besökare
 topic-fix: Developer and implementation
 feature: Analytics Basics
 exl-id: d44628c8-902f-4e60-b819-41d5537407d8
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 21bbb59cdc630823cf342ff7dd0142b83f89a314
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
 
 # Migrering av besökare
 
-Migrering av besökare är en process där besökar-ID-cookie migreras från en domän till en annan.
+>[!NOTE]
+>
+>Om du redan har implementerat tjänsten Experience Cloud Visitor ID är respitperiod inte tillämplig för dig och bör inte aktiveras.
+
+Migrering av besökare är en process där besökar-ID-cookie(er_vi) migreras från en domän till en annan.
 
 Med migrering av besökare kan du bevara cookies för identifiering av besökare när du ändrar datainsamlingsdomäner. Domäner för datainsamling kan ändras av följande skäl:
 
