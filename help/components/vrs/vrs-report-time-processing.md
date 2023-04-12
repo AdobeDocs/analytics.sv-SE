@@ -5,10 +5,10 @@ role: Admin
 solution: Analytics
 feature: VRS
 exl-id: 3742b9d1-f1fb-4690-bd44-b4719ff9d9bc
-source-git-commit: ec4edb257490d326ab8f8de51a4ab9412a2b4a28
+source-git-commit: 3be3de8c24e48f5ecddd37ff6d3cbcf64bca3209
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,33 +55,34 @@ Följande dimensioner och mått stöds inte för bearbetning av rapporttid:
 * **Analyser för Target**
 * **Analyser för Advertising Cloud mått/mätvärden**
 * **Counter eVars**
-* **Dagar före första köp**
-* **Dagar sedan senaste köp**
-* **Dagar sedan senaste besök**
+* [**Dagar före första köp**](/help/components/dimensions/days-before-first-purchase.md)
+* [**Dagar sedan senaste köp**](/help/components/dimensions/days-since-last-purchase.md)
+* [**Dagar sedan senaste besök**](/help/components/dimensions/days-since-last-visit.md)
 * **Inmatningssidans originalformat**
 * **Linjär allokeringsvariabler**
 * **Listvariabler**
-* **Dimensioner för marknadsföringskanaler**
-* **Ursprunglig referensdomän**
-* **Återbesöksfrekvens**
-* **Enkelt besök**
+* [**Dimensioner för marknadsföringskanaler**](/help/components/dimensions/marketing-channel.md)
+* [**Ursprunglig referensdomän**](/help/components/dimensions/original-referring-domain.md)
+* [**Återbesöksfrekvens**](/help/components/dimensions/return-frequency.md)
+* [**Enkelt besök**](/help/components/metrics/single-access.md)
 * **Datakällor för transaktions-ID**
-* **Besöksnummer**
+* [**Besöksnummer**](/help/components/dimensions/visit-number.md)
 
 ## Påverkade mått och mätvärden
 
 Nedan visas en lista över mått och mått som påverkas beroende på vilka inställningar för Tidsbearbetning för rapport som har valts:
 
 * Om alternativet Förhindra att bakgrundstötningar startar ett nytt besök är aktiverat inträffar följande ändringar. Se [Sammanhangsberoende sessioner](vrs-mobile-visit-processing.md) för mer information.
-   * **Studsfrekvens:** Bakgrundstötningar som inte följs av en förgrundsträff betraktas inte som ett studs och bidrar inte till studsfrekvensen.
-   * **Antal sekunder per besök:** Endast besök som innehåller förgrundsträffar bidrar till detta mätresultat.
+   * [**studsar**](/help/components/metrics/bounces.md) / [**Studsfrekvens:**](/help/components/metrics/bounce-rate.md) Bakgrundstötningar som inte följs av en förgrundsträff betraktas inte som ett studs och bidrar inte till studsfrekvensen.
+   * [**Antal sekunder per besök:**](/help/components/metrics/time-spent-per-visit.md) Endast besök som innehåller förgrundsträffar bidrar till detta mätresultat.
    * **Tid per besök:** Endast besök som innehåller förgrundsträffar bidrar till detta mätresultat.
-   * **Dimensioner och mått för in-/utträde:** Endast inmatningar och utträden från besök med förgrundstreck visas i den här dimensionen.
-   * **Unika besökarmått:** Unika besökare inkluderar inte besökare som bara hade bakgrundsträffar i rapportens datumintervall.
-* **Besök:** Besökarna återspeglar de inställningar som har konfigurerats i den virtuella rapportsviten, som kan skilja sig från basrapportsviten.
+   * [**Inmatningsmått**](/help/components/metrics/entries.md) / [**Avsluta mätvärde:**](/help/components/metrics/exits.md) Endast inmatningar och utträden från besök med förgrundstreck visas i den här dimensionen.
+   * [**Ingångsdimension**](/help/components/dimensions/entry-dimensions.md) / [**Avslutningsdimensioner:**](/help/components/dimensions/exit-dimensions.md) Endast inmatningar och utträden från besök med förgrundstreck visas i den här dimensionen.
+   * [**Unika besökarmått:**](/help/components/metrics/unique-visitors.md) Unika besökare inkluderar inte besökare som bara hade bakgrundsträffar i rapportens datumintervall.
+* [**Besök:**](/help/components/metrics/visits.md) Besökarna återspeglar de inställningar som har konfigurerats i den virtuella rapportsviten, som kan skilja sig från basrapportsviten.
 * **Serialiserade händelser med händelse-ID:** Händelser som använder händelseserialisering med ett händelse-ID dedupliceras bara för händelser som inträffar inom rapportdatumintervallet för en besökare. Dessa händelser dedupliceras inte för alla datum eller besökare globalt på grund av fönstret för rapporttidsbearbetning.
-* **Inköp/Inkomster/Beställningar/Enheter:** När inköps-ID används dedupliceras dessa värden endast för dubbletter av inköps-ID:n som finns inom rapportdatumintervallet för en besökare i stället för för på alla datum eller för besökare globalt på grund av fönstret för rapporttidsbearbetning.
-* **Icke-marknadsförande eVars/reserverade eVars:** Värden som angetts i en eVar behålls bara om värdet angavs inom rapportdatumintervallet på grund av fönstret för rapporttidsbearbetning. Dessutom kan tidsbaserade förfallodatum förfalla en timme tidigt eller en timme sent om beständigheten sträcker sig över en sommartid.
-* **Merchandising eVars/reserved eVars:** Se ovan. För konverteringssyntax, där bindningen är inställd på &quot;any event&quot;, används &quot;any hit&quot; i stället.
-* **Träfftyp:** Den här dimensionen anger om en träff är för- eller bakgrundsbild.
+* **Inköp** / [**Intäkter**](/help/components/metrics/revenue.md) / [**Beställningar**](/help/components/metrics/orders.md) / [**Enheter:**](/help/components/metrics/units.md) När inköps-ID används dedupliceras dessa värden endast för dubbletter av inköps-ID:n som finns inom rapportdatumintervallet för en besökare i stället för för på alla datum eller för besökare globalt på grund av fönstret för rapporttidsbearbetning.
+* [**Varor som inte är avsedda för försäljning**](/help/components/dimensions/evar.md) / **reserverade eVars:** Värden som angetts i en eVar behålls bara om värdet angavs inom rapportdatumintervallet på grund av fönstret för rapporttidsbearbetning. Dessutom kan tidsbaserade förfallodatum förfalla en timme tidigt eller en timme sent om beständigheten sträcker sig över en sommartid.
+* [**Merchandising eVars**](/help/components/dimensions/evar-merchandising.md) / **reserverade eVars:** Se ovan. För konverteringssyntax, där bindningen är inställd på &quot;any event&quot;, används &quot;any hit&quot; i stället.
+* [**Träfftyp:**](/help/components/dimensions/hit-type.md) Den här dimensionen anger om en träff är för- eller bakgrundsbild.
 * **Dimensioner med (lågtrafik) eller &quot;Uniques Exceeded&quot;:** Radobjektet (Lågtrafik) bestäms något annorlunda när du använder Rapporttidsbearbetning och är inte garanterat matchande vad som observeras vid rapportering på basrapportsviten. Det är inte säkert att radobjekt som inte ingår i lågtrafik motsvarar 100 % av Dimensionen för det radobjektet. Dessa skillnader kan bli mer uttalade ju högre antal unika värden som finns i en dimension.
