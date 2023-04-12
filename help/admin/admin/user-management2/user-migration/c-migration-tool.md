@@ -3,7 +3,7 @@ description: Vad du behöver veta om migreringen av användar-ID:n för Analytic
 title: Migrering av Analytics-användare till Admin Console
 feature: Admin Tools
 exl-id: f4bc0e92-af53-40db-8138-44d29e4b25fe
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
 source-wordcount: '3156'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Svar på frågor som du kan ha innan migreringen.
      <li id="li_8CFFF72877E8456DAC3241143AD648AD">Kontrollera att du är produktadministratör för Analytics i Adobe Admin Console. </li> 
      <li id="li_25DAA8D1EEDA45A0B5B59472BD8896C4">Kommunicera till din användarbas om att deras inloggningsupplevelse kommer att ändras när migreringen börjar. </li> 
      <li id="li_5B50F942F6A8483FAFA500AFF428702C">Granska aktuella användare och behörigheter och utför rensningsaktiviteter. </li> 
-    </ul> <p>Kontakta din Customer Success Manager på <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html"> Adobe kundtjänst</a> och skicka en begäran om ett tidigare startdatum. </p> </td> 
+    </ul> <p>Kontakta Adobe Account Team på <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html"> Adobe kundtjänst</a> och skicka en begäran om ett tidigare startdatum. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> Jag är Analytics-administratör utan tillgång till Adobe Admin Console. Vem kan hjälpa mig att få tillgång till Adobe Admin Console? </p> </td> 

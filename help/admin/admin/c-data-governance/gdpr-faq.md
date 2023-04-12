@@ -3,10 +3,10 @@ description: Vanliga frågor om datahantering i Adobe Analytics
 title: Frågor och svar om datahantering
 feature: Data Governance
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2076'
+ht-degree: 47%
 
 ---
 
@@ -108,7 +108,7 @@ The [API för Privacy Service](https://developer.adobe.com/experience-platform-a
 
 Vi ber dig att inte använda API:t för datasekretess för andra syften, som att rensa data som av misstag har skickats in till stora grupper av besökare. Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för datasekretess inte är lämpligt för detta ändamål.
 
-Kontakta din Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för ytterligare granskning och åtgärder för att lösa eventuella PII- eller dataproblem.
+Kontakta ert Adobe-kontoteam för att samordna med vårt konsultteam för ingenjörsarkitekter för att få mer information och möjlighet att åtgärda eventuella PII- eller dataproblem.
 
 +++
 
@@ -118,7 +118,7 @@ The [API för Privacy Service](https://developer.adobe.com/experience-platform-a
 
 Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för datasekretess inte är lämpligt för detta ändamål.
 
-Kontakta er Account Manager (CSM) för att samordna med vårt konsultteam inom Engineering Architect för att få mer information och för att åtgärda eventuella PII- eller dataproblem.
+Kontakta ert Adobe-kontoteam för att samordna med vårt konsultteam för ingenjörsarkitekter för att få mer information och möjlighet att åtgärda eventuella PII- eller dataproblem.
 
 +++
 

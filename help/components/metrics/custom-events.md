@@ -3,9 +3,9 @@ title: Anpassade händelser
 description: Antalet träffar där en anpassad händelse finns.
 feature: Metrics
 exl-id: 9ae3ff53-8634-466a-a9f6-786c1e62c2fa
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,6 @@ Anpassade händelser beräknas på olika sätt beroende på typ. Du kan kontroll
 * **Numeriska händelser**: Summerar det numeriska värde som tilldelats händelsen i `events` variabel.
 * **Valutahändelser**: Använder valutakonvertering mot den dagens valutakurs och summerar sedan det numeriska värdet som tilldelats varje träff i `events` variabel.
 
-Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta din organisations kontoansvarige om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
+Antalet tillgängliga händelser beror på organisationens Analytics-kontrakt. De flesta organisationer som har kontrakt som inte är äldre har 1 000 anpassade händelser tillgängliga. Kontakta kontoteamet på Adobe om du inte är säker på hur många anpassade händelser som är tillgängliga för dig.
 
 Adobe rekommenderar starkt att du registrerar hur du använder varje händelse i din organisations [konstruktionsdokument](/help/implement/prepare/solution-design.md).

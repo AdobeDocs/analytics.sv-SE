@@ -2,9 +2,9 @@
 title: Skapa en klassificeringsuppsättning
 description: Tillgängliga fält och beskrivningar när du skapar en klassificeringsuppsättning.
 exl-id: 6d692d90-8cc7-4306-a780-58d03db45be8
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 0%
 # Skapa en klassificeringsuppsättning
 
 Du kan använda klassificeringsuppsättningshanteraren för att skapa en klassificeringsuppsättning.
-
->[!NOTE]
->
->Den här funktionen är tillgänglig för alla kunder som har sina rapportsviter migrerade till den nya klassifikationsarkitekturen. Kontakta Adobe kundtjänst eller din kontoansvarige om du vill ha mer information.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Sets]** > **[!UICONTROL Add]**
 

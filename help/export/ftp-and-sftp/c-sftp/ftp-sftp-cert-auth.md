@@ -4,10 +4,10 @@ keywords: ftp;sftp
 title: Ansluta till Adobe via SFTP utan lösenord
 feature: FTP Export
 exl-id: 7ff9511c-50a2-466f-b5af-6bbd59941ce5
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '603'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ När du använder SFTP är det möjligt att, under särskilda förhållanden, an
 
 1. Ett FTP-konto har skapats (Adobe).
 
-   En Adobe-representant kan skapa ett FTP-konto om det inte redan finns ett. Kontakta din kontoansvarige på Adobe eller Adobe kundtjänst om du vill skapa ett konto.
+   En Adobe-representant kan skapa ett FTP-konto om det inte redan finns ett. Kontakta kontoteamet på Adobe eller Adobe kundtjänst för att skapa ett konto.
 1. Skapa offentlig/privat nyckel (kund).
 
    Skapa en kombination av offentlig och privat nyckel. Den privata nyckeln är en fil som är privat för datorn/servern och som finns där. Den offentliga nyckelfilen måste överföras till Adobe-kontot. När det används på det här sättet kan du ansluta utan lösenordsautentisering. Den offentliga nyckelfilen i Adobe matchar den privata nyckelfilen på datorn/servern och autentiseras på det sättet.

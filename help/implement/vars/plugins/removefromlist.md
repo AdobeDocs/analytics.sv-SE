@@ -3,18 +3,16 @@ title: rfl
 description: Ta bort ett specifikt värde från en teckenavgränsad sträng.
 feature: Variables
 exl-id: d66b757e-b39f-4b6e-9999-6fbde87505af
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: rfl (Ta bort från lista)
 
->[!IMPORTANT]
->
->Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+{{plug-in}}
 
 The `rfl` Med plugin-programmet kan du&quot;säkert&quot; ta bort värden från avgränsade strängar, till exempel [`events`](../page-vars/events/events-overview.md), [`products`](../page-vars/products.md), [`list`](../page-vars/list.md)och andra. Denna plugin är användbar om du vill ta bort specifika värden från en avgränsad sträng utan att behöva oroa dig för avgränsare. Flera andra plugin-program är beroende av att den här koden körs korrekt. Detta plugin-program är inte nödvändigt om du inte behöver köra en specifik funktion på mer än en Analytics-variabel åt gången, eller om du inte använder några beroende plugin-program.
 
@@ -23,25 +21,29 @@ Plugin-programmet använder följande logik:
 * Om värdet som du vill ta bort finns behåller plugin-programmet allt i variabeln utom värdet som ska tas bort.
 * Om värdet som du vill ta bort inte finns behåller plugin-programmet den ursprungliga strängen som den är.
 
-<!--## Install the plug-in using the Web SDK or the Adobe Analytics extension
+## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
 
-Adobe offers an extension that allows you to use most commonly-used plug-ins.
+Det här plugin-programmet stöds ännu inte för användning i Web SDK.
 
-1. Log in to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) using your AdobeID credentials.
-1. Click the desired tag property.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Install and publish the [!UICONTROL Common Analytics Plugins] extension
-1. If you haven't already, create a rule labeled "Initialize Plug-ins" with the following configuration:
-    * Condition: None
-    * Event: Core – Library Loaded (Page Top)
-1. Add an action to the above rule with the following configuration:
-    * Extension: Common Analytics Plugins
-    * Action Type: Initialize RFP (Remove From List)
-1. Save and publish the changes to the rule.-->
+## Installera plugin-programmet med Adobe Analytics-tillägget
+
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
+   * Villkor: Ingen
+   * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
+1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
+   * Tillägg: Plugin-program för vanlig analys
+   * Åtgärdstyp: Initiera anbudsförfrågan (ta bort från lista)
+1. Spara och publicera ändringarna i regeln.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
 
-Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
+Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.

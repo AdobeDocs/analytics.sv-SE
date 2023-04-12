@@ -4,9 +4,9 @@ title: Konfigurera företagsledare med appen
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 0e858407-2852-4a5f-a0df-3ba290fcca8f
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -114,4 +114,4 @@ Kontrollera att chefsanvändaren kan logga in på rätt Adobe Analytics-instans 
 
 >[!IMPORTANT]
 >
->Från och med oktober 2020 kommer Adobe gradvis att lansera en serie förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta din CSM om du vill avanmäla dig från dessa prestandaförbättringsfunktioner.
+>Från och med oktober 2020 kommer Adobe gradvis att lansera en serie förbättringar för att optimera prestandan för appen&quot;Adobe Analytics dashboards&quot;. Dessa förbättringar handlar om att cachelagra historiska analysdata som används för att fylla i styrkort med datum (exklusive den aktuella dagen). Dessa data cachas i upp till 24 timmar i ett säkert Microsoft Azure-molnlagringskonto. Kontakta kontoteamet på Adobe om du vill avanmäla dig från dessa prestandaförbättringar.

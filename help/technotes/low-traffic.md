@@ -3,7 +3,7 @@ description: När en rapport har många unika värden använder Adobe måttobjek
 title: Lågtrafikvärde i Adobe Analytics
 feature: Metrics, Data Configuration and Collection
 exl-id: 6c3d8258-cf75-4716-85fd-ed8520a2c9d5
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Tack vare den här logiken kan Adobe optimera rapporteringsfunktionerna samtidig
 
 ## Ändra unika gränströsklar
 
-Tröskelvärdena är som standard 500 000 och 1 miljon unika värden. Dessa gränser kan ändras för varje variabel. Kontakta Adobe kundtjänst eller din organisations kontoansvarige för att begära denna ändring. När du begär en ändring, inkludera:
+Tröskelvärdena är som standard 500 000 och 1 miljon unika värden. Dessa gränser kan ändras för varje variabel. Kontakta Adobe kundtjänst eller ditt kontoteam på Adobe för att begära denna ändring. När du begär en ändring, inkludera:
 
 * Rapportsvitens ID
 * Variabeln som du vill öka tröskelvärdet för

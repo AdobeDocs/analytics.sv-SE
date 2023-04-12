@@ -4,9 +4,9 @@ title: Allmänna kontoinställningar
 feature: Admin Tools
 uuid: c1ab5c34-2c41-4d12-a706-0e760dff8a95
 exl-id: f49babb2-8e26-4cc6-b264-b4d7be93f130
-source-git-commit: ac3748826d9907cc68076ad39e865f39ea903cf2
+source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Här är en video om hur du konfigurerar allmänna kontoinställningar:
 | Lagring av transaktions-ID | Gör att du kan använda [Transaktions-ID](/help/import/data-sources/transactionid.md) datakällor. |
 | Aktivera Data warehouse | Aktiverar användargränssnittet för Data warehouse under Analytics > Tools > Data warehouse. |
 | Postalternativ | Gör att du kan ange postnumret i stället för att använda det som genereras av vår geo-IP-sökning. |
-| Stöd för flerbytetecken | Stöd för flerbytetecken lagrar tecken i rapportsviten med UTF-8. Vid mottagande konverterar systemet data från webbsidans teckenuppsättning till teckenuppsättningen UTF-8, så att du kan använda vilket språk som helst i dina marknadsföringsrapporter. Kontakta din kontoansvarige eller kundtjänst om du vill ändra stödet för flerbytetecken för en befintlig rapportsvit. |
+| Stöd för flerbytetecken | Stöd för flerbytetecken lagrar tecken i rapportsviten med UTF-8. Vid mottagande konverterar systemet data från webbsidans teckenuppsättning till teckenuppsättningen UTF-8, så att du kan använda vilket språk som helst i dina marknadsföringsrapporter. Kontakta kontoteamet eller kundtjänst på Adobe för att ändra stödet för flerbytetecken för en befintlig rapportsvit. |
 | Aktiverad | Anger om den här rapportsviten är aktiverad eller inte. |
 | Basvaluta | Här kan du ange basen [valuta](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/currencycode.html) för den här rapportsviten. |
 | Organisations-ID | Det ID som är associerat med ditt provisionerade Experience Cloud-företag. Detta ID är en alfanumerisk sträng med 24 tecken, följt av (och måste innehålla) @AdobeOrg. |

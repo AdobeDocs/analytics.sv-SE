@@ -3,40 +3,57 @@ title: getAndPersistValue
 description: Lagra ett värde som kan hämtas senare när som helst.
 feature: Variables
 exl-id: b562f9ad-3844-4535-b729-bd3f63f6f0ae
-source-git-commit: b8640d1387a475e2a9dd082759f0514bd18c1b6e
+source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: getAndPersistValue
 
->[!IMPORTANT]
->
->Denna plugin tillhandahålls av Adobe Consulting som en tjänst som hjälper dig att få ut mer av Adobe Analytics. Adobe kundtjänst ger inte support för denna plugin, inklusive installation och felsökning. Om du behöver hjälp med det här plugin-programmet kontaktar du kontohanteraren i din organisation. De kan ordna ett möte med en konsult för att få hjälp.
+{{plug-in}}
 
 The `getAndPersistValue` Med plugin-programmet kan du lagra ett värde i en cookie som kan hämtas senare under ett besök. Den har en liknande roll som [!UICONTROL Storage duration] i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. Adobe rekommenderar att du använder det här plugin-programmet om du automatiskt vill behålla en Analytics-variabel på samma värde i efterföljande träffar efter att variabeln har angetts. Denna plug-in är inte nödvändig om [!UICONTROL Storage duration] funktionen i Analytics-tillägget är tillräcklig. Du behöver inte heller använda denna plugin om du inte behöver ställa in och behålla variabler till samma värde i efterföljande träffar. Den inbyggda eVars-beständigheten kräver inte att denna plugin används eftersom eVars finns kvar på serversidan vid Adobe.
 
-<!--## Install the plug-in using the Web SDK or the Adobe Analytics extension
+## Installera plugin-programmet med Web SDK-tillägget
 
-Adobe offers an extension that allows you to use most commonly-used plug-ins.
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Web SDK.
 
-1. Log in to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) using your AdobeID credentials.
-1. Click the desired tag property.
-1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
-1. Install and publish the [!UICONTROL Common Analytics Plugins] extension
-1. If you haven't already, create a rule labeled "Initialize Plug-ins" with the following configuration:
-    * Condition: None
-    * Event: Core – Library Loaded (Page Top)
-1. Add an action to the above rule with the following configuration:
-    * Extension: Common Analytics Plugins
-    * Action Type: Initialize getAndPersistValue
-1. Save and publish the changes to the rule.-->
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka **[!UICONTROL Tags]** till vänster och klicka sedan på den önskade taggegenskapen.
+1. Klicka **[!UICONTROL Extensions]** till vänster och klicka sedan på **[!UICONTROL Catalog]** tab
+1. Leta rätt på och installera **[!UICONTROL Common Web SDK Plugins]** tillägg.
+1. Klicka **[!UICONTROL Data Elements]** till vänster och klicka sedan på det önskade dataelementet.
+1. Ange det önskade dataelementnamnet med följande konfiguration:
+   * Tillägg: Vanliga SDK-plugin-program för webben
+   * Dataelement: `getAndPersistValue`
+1. Ange önskade parametrar till höger.
+1. Spara och publicera ändringarna i dataelementet.
+
+## Installera plugin-programmet manuellt för att implementera Web SDK
+
+Denna plugin stöds ännu inte för användning i en manuell implementering av Web SDK.
+
+## Installera plugin-programmet med Adobe Analytics-tillägget
+
+Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
+
+1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
+1. Klicka på den önskade taggegenskapen.
+1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
+1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
+1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
+   * Villkor: Ingen
+   * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
+1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
+   * Tillägg: Plugin-program för vanlig analys
+   * Åtgärdstyp: Initiera getAndPersistValue
+1. Spara och publicera ändringarna i regeln.
 
 ## Installera plugin-programmet med en anpassad kodredigerare
 
-Om du inte vill använda plugin-programtillägget kan du använda den anpassade kodredigeraren.
+Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på önskad egenskap.
