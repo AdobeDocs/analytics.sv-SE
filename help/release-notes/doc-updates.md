@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 025f176777ef8fd4f91d74fb493e45889c66f439
+source-git-commit: f4cf651e07da27c416fc02b184b80bc07756eb33
 workflow-type: tm+mt
-source-wordcount: '3798'
-ht-degree: 33%
+source-wordcount: '3827'
+ht-degree: 32%
 
 ---
 
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **April 2023** |  |
+| 2 nya slutpunktsguider för Adobe Analytics 2.0 API | <ul><li>[API för Analytics-Dimensioner](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/dimensions/)</li><li>[API för analysmått](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/metrics/)</li></ul> |
 | **Mars 2023** |  |
 | Stöd för Web SDK i Activity Map | Uppdaterat [Implementera Adobe Analytics](/help/implement/home.md) och [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md). |
 | Översikt över trafikvariabler (props) | Lagt till avsnitt och stegvisa procedurer för att förtydliga och förbättra artikelinnehållet. Sammanfogat innehåll från en artikel med rubriken&quot;Aktivera trafikvariabelrapporter&quot; och tog bort artikeln. Se [Översikt över trafikvariabler (props)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md). |

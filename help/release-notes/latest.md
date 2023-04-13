@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 611477ef794464de0b05b45e8445ed8fdd32b154
+source-git-commit: f4cf651e07da27c416fc02b184b80bc07756eb33
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1550'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | **IP-infusation för Experience Edge** | Experience Edge har stöd för IP-tvång för data som skickas direkt till Adobe Experience Platform. Detta gynnar kunder som skickar data direkt till Platform för användning i CJA eller andra plattformslösningar. IP-förfalskning har konfigurerats på dataströmsnivå. Det har stöd för att ta bort den sista oktetten eller hela IP-adressen.<p>**Anteckning**: Invändning gäller INTE data som skickas till Adobe Analytics. Analyserna fortsätter att få hela IP-adressen. IP-bearbetning fortsätter att utföras separat i Analytics. I framtiden planerar vi att tillåta att analysdata döljs vid Edge. | Ej tillämpligt | AEP-version 26 april 2023 |
 | **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på, hantera och bättre förstå komponenterna (dimensioner, mätvärden) i sin Analytics-miljö. [Läs mer](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) | 15 mars 2023 | 29 mars 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs)** - Endast privat betaversion | <p>Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Du kan dela projektlänkar med personer utanför organisationen eller personer inom organisationen som inte är tilldelade Adobe Analytics. [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md)</p> <p>Om du vill gå med i den privata betaversionen kontaktar du Adobe Account Team.</p> | 26 april 2023 | Juni 2023 |
+| 2 nya slutpunktsguider för Adobe Analytics 2.0 API | <ul><li>[API för Analytics-Dimensioner](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/dimensions/)</li><li>[API för analysmått](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/metrics/)</li></ul> | Ej tillämpligt | 10 april 2023 |
 
 {style="table-layout:auto"}
 
