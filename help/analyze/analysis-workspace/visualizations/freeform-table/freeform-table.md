@@ -4,9 +4,9 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Freeform Tables
 role: User, Admin
 exl-id: 7a0432f9-2cab-47be-bbd6-ede96cb840a3
-source-git-commit: 8ca676a9e69195ef873981dd390bb0a6d4d465f1
+source-git-commit: ef2b452a0dcb2659b49fc0507b096952a89ea2f4
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,13 @@ ht-degree: 0%
 
 I Analysis Workspace är Freeform Table grunden för interaktiv dataanalys. Du kan dra och släppa en kombination av [komponenter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) till rader och kolumner för att skapa en anpassad tabell för din analys. När varje komponent släpps uppdateras tabellen omedelbart, så att du snabbt kan analysera och fördjupa den.
 
-För att illustrera börjar du med en tom friformstabell.
+## Bygg en enkel friformstabell
+
+Du börjar med en tom friformstabell.
 
 ![Tom tabell för frihandsfigur](assets/freeform-table-1.png)
 
-Om du släpper **[!UICONTROL ** Besök **]** på **[!UICONTROL ** Släpp ett mätresultat här (eller någon annan komponent)**]**, fylls friformstabellen automatiskt i med besök per dag för den period du har valt.
+Om du släpper **[!UICONTROL ** Besök **]** på **[!UICONTROL ** Släpp ett mätresultat här (eller någon annan komponent)**]**, fylls friformstabellen automatiskt i med besök per dag för den kalenderperiod du har valt.
 
 ![Besök friformstabell](assets/freeform-table-2.png)
 
@@ -27,7 +29,7 @@ Om du sedan släpper **[!UICONTROL ** Sida **]** dimension som ska ersätta **[!
 
 ![Besök efter sidfriformstabell](assets/freeform-table-3.png)
 
-Sedan kan du bryta ned **[!UICONTROL ** kategori:5 **]** genom att släppa **[!UICONTROL ** Marknadsföringskanal **]** dimension på **[!UICONTROL ** kategori:5 **]** rad.
+Du kan sedan dela upp, till exempel **[!UICONTROL ** kategori:5 **]** genom att släppa **[!UICONTROL ** Marknadsföringskanal **]** dimension på **[!UICONTROL ** kategori:5 **]** rad.
 
 ![Besöksfördelning efter sidfriformstabell](assets/freeform-table-4.png)
 
