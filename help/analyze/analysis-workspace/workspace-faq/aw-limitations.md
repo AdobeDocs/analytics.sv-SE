@@ -4,10 +4,10 @@ title: Kända begränsningar i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 520e970b-1387-4f70-985b-bfe397f4a21b
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: f8a4b3442f7e9f631ba8e472c69fbc4d1cc3877e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '368'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 ## Komponenter > Segment
 
 * Vissa mått och mått kan inte segmenteras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], osv.
-* Adhoc-segment skapade i [panelens dropzon](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) visas inte i den vänstra listen i Workspace eller i Segment-komponenthanteraren, såvida de inte är offentliga. Detta kan du göra genom att redigera segmentet och markera **[!UICONTROL Make this segment public]**.
+* Adhoc-segment skapade i [panelens dropzon](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller i Segment-komponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
 
 ## Komponenter > Beräknade mått
 

@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 7eef1ef0bbe39db25b430d81789743b357778252
+source-git-commit: f8a4b3442f7e9f631ba8e472c69fbc4d1cc3877e
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1098'
 ht-degree: 78%
 
 ---
@@ -56,7 +56,6 @@ ht-degree: 78%
       + Segment {#segments}
          + [Skapa segment](analysis-workspace/components/segments/t-freeform-project-segment.md)
          + [Snabbsegment](analysis-workspace/components/segments/quick-segments.md)
-         + [Ad hoc-segment](analysis-workspace/components/segments/ad-hoc-segments.md)
       + Kalender och datumintervall {#calendar-date-ranges}
          + [Översikt över kalender- och datumintervall](analysis-workspace/components/calendar-date-ranges/calendar.md)
          + [Skapa anpassade datumintervall](analysis-workspace/components/calendar-date-ranges/custom-date-ranges.md)

@@ -4,9 +4,9 @@ title: Översikt över paneler
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: f8a4b3442f7e9f631ba8e472c69fbc4d1cc3877e
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -70,9 +70,9 @@ Dra och släpp ett segment från den vänstra listen i panelens släppzon för a
 
 Komponenter som inte är segmentkomponenter kan också dras direkt till släppzonen för att skapa ad hoc-segment, vilket sparar tid och arbete med att gå till segmentbyggaren. Segment som skapas på det här sättet definieras automatiskt som träffnivåsegment. Du kan ändra den här definitionen genom att klicka på informationsikonen (i) bredvid segmentet, sedan den pennformade redigeringsikonen och redigera den i segmentbyggaren.
 
-Ad hoc-segment är lokala för projektet och visas inte i den vänstra listen om du inte gör dem offentliga.
+Ad hoc-segment är en typ av snabbsegment och är lokala för projektet. De visas inte i den vänstra listen om du inte gör dem offentliga.
 
-![](/help/admin/admin/assets/filter.png)
+Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
 
 ### Nedrullningsbara filter {#dropdown-filter}
 

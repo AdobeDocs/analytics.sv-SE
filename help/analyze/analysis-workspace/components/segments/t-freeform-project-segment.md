@@ -4,10 +4,10 @@ title: Segment
 feature: Segmentation
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: f2a22aa71c928be30d365fcea71c8fb42efc3919
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '489'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,9 @@ Du kan skapa olika typer av segment i Workspace, beroende på hur komplexa de be
 | Segmenttyp | Skapad var? | Tillämpligt var? | När ska användas |
 | --- | --- | --- | --- |
 | Segment i komponentlista | Klicka på +, vilket tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla arbetsyteprojekt | För mer komplexa segment, sekventiella segment |
-| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | [Endast projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html?#what-are-project-only-segments%3F), men kan spara och lägga till i segmentlistan. | Flexibilitet att lägga till/redigera en eller flera regler |
-| Ad hoc-segment: |  |  |  |
-| - Ad hoc Workspace-projektsegment | [Dra och släpp i segmentsläppzonen i ett projekt](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md) | [Endast projekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/quick-segments.html?#what-are-project-only-segments%3F), men kan spara och lägga till i segmentlistan. | För segment med en regel |
-| - Beräknat metrisk baserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
-| - VRS-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i VRS-definitionen |
+| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för segment med en regel (med dra-och-släpp) eller för att lägga till/redigera flera regler (genom att klicka på segmentikonen) |
+| Beräknat mätningsbaserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
+| VRS-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i VRS-definitionen |
 
 ## Videor
 
@@ -44,7 +42,6 @@ Rullande datumintervall i segment:
 Du kan skapa olika typer av segment i Analysis Workspace:
 
 * [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md)
-* [Ad hoc-segment](/help/analyze/analysis-workspace/components/segments/ad-hoc-segments.md)
 * Vanliga segment för komponentlistor som du skapar i segmentbyggaren och som hamnar i segmentbiblioteket (se nedan)
 
 ### Skapa segment för komponentlistor {#section_3B07D458C43E42FDAF242BB3ACAF3E90}
