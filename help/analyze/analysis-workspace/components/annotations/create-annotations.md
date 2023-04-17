@@ -4,14 +4,18 @@ description: Så här skapar du anteckningar i Workspace.
 role: User, Admin
 feature: Annotations
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: 20ab0e9728969c4cc11227a1255e41e3d1a1540f
+source-git-commit: 10fb26d425130fddf485b150f26f894b0b967735
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
 # Skapa anteckningar
+
+Som standard kan bara administratörer skapa anteckningar. Användare har rätt att visa anteckningar på samma sätt som andra Analytics-komponenter (som segment, beräknade värden osv.).
+
+Administratörer kan dock ge [!UICONTROL Annotation Creation] behörighet (analysverktyg) till användare via [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
 
 1. Du kan komma igång på flera sätt för att skapa anteckningar:
 
