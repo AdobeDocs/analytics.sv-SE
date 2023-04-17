@@ -4,9 +4,9 @@ description: Gräv djupare in i informationen om er målgrupp och dela in i rela
 feature: Cohort Analysis
 role: User, Admin
 exl-id: 6a46e76f-671e-4b1b-933a-6c2776c72d09
-source-git-commit: 9f309319d67adb96cef6b1951c3ce485a57cd8da
+source-git-commit: fbb9c742ca169e727cffa9b8e5e93ba23ced0ebf
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ Exempel på vad du kan göra med [!UICONTROL Cohort Analysis]:
 * Byt marknadsföringsbudget vid exakt rätt tidpunkt i kundlivscykeln.
 * Identifiera när en testversion eller ett erbjudande ska avslutas för att maximera värdet.
 * Få idéer för A/B-testning inom områden som priser, uppgraderingsalternativ osv.
-* Visa en [!UICONTROL Cohort Analysis] i en rapport för guidad analys.
 
 [!UICONTROL Cohort Analysis] är tillgängligt för alla Adobe Analytics-kunder med åtkomsträttigheter till [!UICONTROL Analysis Workspace].
 
