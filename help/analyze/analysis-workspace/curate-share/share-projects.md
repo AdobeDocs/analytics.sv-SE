@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 258eac585d536af593e0fa5b2cf75fd53ecd4ef0
+source-git-commit: e3447bc278cfcf5553e46ceb298d9f4743f73328
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1655'
 ht-degree: 0%
 
 ---
@@ -138,6 +138,10 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
    <!-- Add screen shot of new modal -->
 
 1. Aktivera **[!UICONTROL Link is active]** om det inte redan är aktiverat.
+
+   Om du väljer det här alternativet skapas en länk till projektet som kan delas med alla. Du kan när som helst inaktivera åtkomsten till projektet genom att inaktivera det här alternativet.
+
+   Ägaren till projektet är också ägare till den här länken. Länkägarskap kan endast överföras till en annan användare när projektägarskap överförs, vilket beskrivs i [Överför användarresurser eller ange förfallodatum för konton](/help/admin/admin/user-management2/users-assets.md) i Analytics Admin Guide.
 
 1. Välj om du vill aktivera följande säkerhetsalternativ (det här alternativet kan styras av Analytics-administratören):
 
