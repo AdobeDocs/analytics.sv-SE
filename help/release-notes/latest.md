@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: bdafc3218c29f72e97c3748967bd49bc7d0c0af8
+source-git-commit: b4ab6862de537d594bfc83abedcd06b10b007f48
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1612'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | **Delvis stöd för Activity Map med Web SDK** | Från och med Web SDK version 2.15.0 började vi fylla i data från Activity Map när länkspårning är aktiverat. Detta gör att Web SDK-användare kan få Activity Map-rapportering om de har länkspårning aktiverat med Web SDK och Activity Map som konfigurerats i Analytics.<p>Om du aktiverar länkspårning med Web SDK skickas länkhändelser när en kund navigerar från en sida till nästa. Detta skiljer sig från hur AppMeasurement fungerar och kan eventuellt resultera i extra fakturerbara träffar som skickas till Adobe. Läs mer [här](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) och [här](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) | Ej tillämpligt | 31 mars 2023 |
 | **IP-infusation för Experience Edge** | Experience Edge har stöd för IP-tvång för data som skickas direkt till Adobe Experience Platform. Detta gynnar kunder som skickar data direkt till Platform för användning i CJA eller andra plattformslösningar. IP-förfalskning har konfigurerats på dataströmsnivå. Det har stöd för att ta bort den sista oktetten eller hela IP-adressen.<p>**Anteckning**: Invändning gäller INTE data som skickas till Adobe Analytics. Analyserna fortsätter att få hela IP-adressen. IP-bearbetning fortsätter att utföras separat i Analytics. I framtiden planerar vi att tillåta att analysdata döljs vid Edge. | Ej tillämpligt | AEP-version 26 april 2023 |
 | **Dataordlista i Analysis Workspace** | Med Data Dictionary kan både användare och administratörer hålla reda på, hantera och bättre förstå komponenterna (dimensioner, mätvärden) i sin Analytics-miljö. [Läs mer](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) | 15 mars 2023 | 29 mars 2023 |
-| **Länkdelning för projekt (ingen inloggning krävs)** - Endast privat betaversion | <p>Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Du kan dela projektlänkar med personer utanför organisationen eller personer inom organisationen som inte är tilldelade Adobe Analytics. [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md)</p> <p>Om du vill gå med i den privata betaversionen kontaktar du Adobe Account Team.</p> | 26 april 2023 | Juni 2023 |
+| **Länkdelning för projekt (ingen inloggning krävs)** | <p>Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=en#share-public-link)</p> <p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=en#company-preferences)</p> | 26 april 2023 (endast privat betaåtkomst) | Juni 2023 |
 | 2 nya slutpunktsguider för Adobe Analytics 2.0 API | <ul><li>[API för Analytics-Dimensioner](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/dimensions/)</li><li>[API för analysmått](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/metrics/)</li></ul> | Ej tillämpligt | 10 april 2023 |
 
 {style="table-layout:auto"}
