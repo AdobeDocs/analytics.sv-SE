@@ -6,8 +6,8 @@ breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
 source-git-commit: 9a16cd89b2d650098495902cca5c5229df48b475
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '410'
+ht-degree: 74%
 
 ---
 
