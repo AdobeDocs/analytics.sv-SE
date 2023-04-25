@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: a49affe282e95d451e72ed92a585b861f081f02e
+source-git-commit: 1cd0ef3d294be79346bb819da583c7d13aedb26d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '697'
 ht-degree: 49%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 49%
    + [Kompatibilitet med Dimensioner](dimensions/compatibility.md)
    + [Alla söksidor rankade](dimensions/all-search-page-rank.md)
    + [AM/PM](dimensions/am-pm.md)
+   + [Punktnamn](dimensions/bot-name.md)
    + [Webbläsarhöjd](dimensions/browser-height.md)
    + [Typ av webbläsare](dimensions/browser-type.md)
    + [Bredd på webbläsare](dimensions/browser-width.md)
@@ -111,6 +112,8 @@ ht-degree: 49%
    + [Genomsnittlig sidvisning per besök](metrics/average-page-views-per-visit.md)
    + [Genomsnittlig sessionslängd](metrics/average-session-length.md)
    + [Genomsnittlig tid på plats](metrics/average-time-on-site.md)
+   + [Punkter](metrics/bot-occurrences.md)
+   + [Bot page views](metrics/bot-page-views.md)
    + [Studsfrekvens](metrics/bounce-rate.md)
    + [Studsar](metrics/bounces.md)
    + [Kundtillägg](metrics/cart-additions.md)

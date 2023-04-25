@@ -2,9 +2,10 @@
 description: Adobe tillhandahåller olika beräknade värden som du kan använda. På den här sidan visas dessa mått och deras avsedda användning.
 title: Standardberäknade värden
 feature: Calculated Metrics
-source-git-commit: b383e856374791be7d85b1f25566e8d98a099ec8
+exl-id: 84468e63-f967-41cd-8084-525b1b90957a
+source-git-commit: 61a0292bf2f8ff22b414c2e91da476c1da69d163
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '735'
 ht-degree: 1%
 
 ---
@@ -26,37 +27,37 @@ Här följer en lista över alla beräknade mätvärden som tillhandahålls av A
 
 
 | Namn på beräknat mätvärde |  -funktion | Formel |
-|---------|----------|---------|
-| Studsfrekvens | Andelen besök som innehöll exakt en träff jämfört med antalet besök på den sidan. Detta kan hjälpa dig att förstå vilka dimensionsobjekt som har den högsta studsfrekvensen eller att se en sammanlagd totalstuds för din webbplats över tiden. | `[Bounces] / [Entries]` |
-| Intäkter/besökare | Det genomsnittliga intäktsbelopp som genereras av varje enskild besökare på webbplatsen. | `[Revenue] / [Unique Visitors]` |
-| Beställningar/besökare | Genomsnittligt antal order eller transaktioner som genererats av varje enskild besökare på platsen | `[Orders] / [Unique Visitors]` |
-| Intäkter/besök | Den genomsnittliga intäkten från ett enda besök på webbplatsen. | `[Revenue] / [Visits]` |
-| Intäkter/order | Det genomsnittliga intäktsbelopp som genereras av varje slutförd transaktion eller order på webbplatsen. | `[Revenue] / [Orders]` |
-| Beställningar/besök | Procentandel besök på platsen som resulterar i en slutförd transaktion. | `[Orders] / [Visits]` |
-| Sidvyer/besök | Genomsnittligt antal sidor som en användare visar under ett enda besök på webbplatsen. | `[Page Views] / [Visits]` |
-| Besök/besökare | Genomsnittligt antal besök som en unik besökare gör på webbplatsen. | `[Visits] / [Unique Visitors]` |
-| Läser in igen/Sidor | Procentandelen sidvyer som resulterade i en omladdning eller uppdatering av sidan. | `[Reloads] / [Page Views]` |
-| Viktad studs-hastighet |  -funktion | `IF([Visits] > PERCENTILE([Visits]), [Bounce Rate], 0)` |
-| Orderassistenter | Antalet gånger en kanal eller källa bidrog till kundens resa mot ett köp, men resulterade inte i det slutliga köpet. | `[Orders (Visit Participation)] - [Orders]` |
-| Utgångshastighet | Andelen besökare som lämnar webbplatsen efter att ha visat en viss sida. | `[Exits] / [Visits]` |
-| Ankomstfrekvens | Andelen besökare som kom in på webbplatsen på en viss sida, jämfört med det totala antalet sessioner på webbplatsen. | `[Entries] / [Visits]` |
-| Genomsnittlig tid på plats | Den genomsnittliga tid en besökare tillbringar på webbplatsen innan han/hon lämnar eller navigerar. | `[Average Time Spent on Site (Seconds)]` |
-| Tid/användare (tillstånd) | Den tid som den genomsnittliga besökaren tillbringar i ett visst läge under tiden som han/hon befinner sig på webbplatsen | `[Mobile App Users] (segment)`<br>`[Time Spent per Visitor (Seconds)] (metric)` |
-| Användare (mobil) | Det totala antalet användare i en mobilapp | `[Mobile App Users] (segment)`<br>`[Unique Visitors] (metric)` |
-| Appanvändare | Det totala antalet användare i en mobilapp | `[Mobile App Users] (segment)`<br>`[Unique Visitors] (metric)` |
-| Lägesvyer | Antalet vyer till olika lägen eller skärmar i appen | `[Mobile App Users] (segment)`<br>`[Page Views] (metric)` |
-| Åtgärder | Det totala antalet åtgärder som har vidtagits i appen | `[Has an Action] (segment)`<br>`[Custom Link Instances] (metric)` |
+| --- | --- | --- |
 | Länkklickningar för förvärv | Antalet gånger som personer klickar på en länk som är avsedd att köra trafik till platsen. | `[Campaign Click-throughs]` |
-| Sidhastighet | Antalet ytterligare sidvyer som genereras av ett innehållsavsnitt. Detta kan hjälpa er att avgöra vilket innehåll som ökar engagemanget. | `[Page Views] / [Visits]` |
-| Konverteringsgrad | Andelen besökare som vidtagit en önskad åtgärd, till exempel gjort ett köp. | `[Orders] / [Visits]` |
+| Åtgärder | Det totala antalet åtgärder som har vidtagits i appen | `[Has an Action] (segment)`<br>`[Custom Link Instances] (metric)` |
+| Appanvändare | Det totala antalet användare i en mobilapp | `[Mobile App Users] (segment)`<br>`[Unique Visitors] (metric)` |
 | Genomsnittlig sessionslängd (mobil) | Genomsnittlig tid som besökare tillbringar på webbplatsen under en enda session. | Tom |
-| Experience Cloud ID-täckning | Andelen besökare som har ett Experience Cloud-ID. | `[Visitors with Experience Cloud ID] / [Unique Visitors]` |
+| Genomsnittlig tid på plats | Genomsnittlig tid som en besökare tillbringar på webbplatsen innan han eller hon lämnar eller navigerar. | `[Average Time Spent on Site (Seconds)]` |
+| Studsfrekvens | Andelen besök som innehöll exakt en träff jämfört med antalet besök på den sidan. Det här måttet kan hjälpa dig att förstå vilka dimensionsobjekt som har den högsta avhoppsfrekvensen eller att se en sammanlagd avhoppsfrekvens för din webbplats över tiden. | `[Bounces] / [Entries]` |
+| Vyproportioner för startsida | Förhållandet mellan båda sidvyerna och det totala antalet sidvyer. | `[Bot Page Views] / [Page Views]` |
 | Innehållshastighet | Hur snabbt nytt innehåll skapas och publiceras på webbplatsen och hur snabbt det genererar användarengagemang. | `[Page Views] / [Visits]` |
-| ITP 2.1 Unika besökare/unika besökare | Andelen unika besökare som använder en webbläsare som påverkas av ITP 2.1-cookie-begränsningar. Kunder som inte använder en CNAME-implementering. (Detta gäller kunder som ställer in cookies via JavaScript på klientsidan.) | `[Unique Visitors metric with ITP Visitors segment] / [Unique Visitors]` |
-| Unika besökare/unika besökare som återvänder efter 7 dagar | Andelen unika besökare som återvänder efter en period på 7 dagar eller mer. | `[Unique Visitors metric with Users returning after 7 days segment] / [Unique Visitors]` |
-| Sidvyer/unik besökare | Genomsnittligt antal sidor som visas för varje unik besökare på webbplatsen. | `[Page Views] / [Unique Visitors]` |
-| Besök/besökare | Genomsnittligt antal besök som en unik besökare gör på webbplatsen. | `[Visits] / [Unique Visitors]` |
+| Konverteringsgrad | Andelen besökare som vidtagit en önskad åtgärd, till exempel gjort ett köp. | `[Orders] / [Visits]` |
+| Ankomstfrekvens | Andelen besökare som kom in på webbplatsen på en viss sida, jämfört med det totala antalet sessioner på webbplatsen. | `[Entries] / [Visits]` |
 | Beräknade unika besökare (ITP 2.1) | För ITP-besökare (användare i Safari-webbläsare), dividera unika besökare med 2 eller mindre. Detta beräknade mått förutsätter att du anger cookies med JavaScript på klientsidan (inte med en CNAME-implementering). Implementeringar som anger cookies med JavaScript på klientsidan påverkades från och med ITP 2.1. Se [Förebyggande av intelligent spårning](https://webkit.org/blog/8613/intelligent-tracking-prevention-2-1/) för mer information. | `[Unique Visitors (metric) with ITP Visitors (ITP 2.1, Non-CNAME implementations) segment] / [Unique Visitors metric + Non-ITP Visitors (ITP 2.1, Non-CNAME implementations) segment]` |
+| Experience Cloud ID-täckning | Andelen besökare som har ett Experience Cloud-ID. | `[Visitors with Experience Cloud ID] / [Unique Visitors]` |
+| Utgångshastighet | Andelen besökare som lämnar webbplatsen efter att ha visat en viss sida. | `[Exits] / [Visits]` |
+| ITP 2.1 Unika besökare/unika besökare | Andelen unika besökare som använder en webbläsare som påverkas av ITP 2.1-cookie-begränsningar. | `[Unique Visitors metric with ITP Visitors segment] / [Unique Visitors]` |
+| Orderassistenter | Antalet gånger en kanal eller källa bidrog till kundens resa mot ett köp, men resulterade inte i det slutliga köpet. | `[Orders (Visit Participation)] - [Orders]` |
+| Beställningar/besök | Procentandel besök på platsen som resulterar i en slutförd transaktion. | `[Orders] / [Visits]` |
+| Beställningar/besökare | Genomsnittligt antal order eller transaktioner som genererats av varje enskild besökare på platsen | `[Orders] / [Unique Visitors]` |
 | Sidvyer/beräknade unika besökare (ITP 2.1) | Genomsnittligt antal sidor som visas för beräknade unika besökare (ITP 2.1). | `[Unique Visitors (metric) with ITP Visitors (ITP 2.1, Non-CNAME implementations) segment] / [Unique Visitors (metric) with Non-ITP Visitors (ITP 2.1, Non-CNAME implementations) segment]` |
+| Sidvyer/unik besökare | Genomsnittligt antal sidor som visas för varje unik besökare på webbplatsen. | `[Page Views] / [Unique Visitors]` |
+| Sidvyer/besök | Genomsnittligt antal sidor som en användare visar under ett enda besök på webbplatsen. | `[Page Views] / [Visits]` |
+| Sidhastighet | Antalet ytterligare sidvyer som genereras av ett innehållsavsnitt. Detta kan hjälpa er att avgöra vilket innehåll som ökar engagemanget. | `[Page Views] / [Visits]` |
+| Läser in igen/Sidor | Procentandelen sidvyer som resulterade i en omladdning eller uppdatering av sidan. | `[Reloads] / [Page Views]` |
+| Intäkter/order | Det genomsnittliga intäktsbelopp som genereras av varje slutförd transaktion eller order på webbplatsen. | `[Revenue] / [Orders]` |
+| Intäkter/besök | Den genomsnittliga intäkten från ett enda besök på webbplatsen. | `[Revenue] / [Visits]` |
+| Intäkter/besökare | Det genomsnittliga intäktsbelopp som genereras av varje enskild besökare på webbplatsen. | `[Revenue] / [Unique Visitors]` |
+| Lägesvyer | Antalet vyer till olika lägen eller skärmar i appen | `[Mobile App Users] (segment)`<br>`[Page Views] (metric)` |
+| Tid/användare (tillstånd) | Den tid som den genomsnittliga besökaren tillbringar i ett visst läge under tiden som han/hon befinner sig på webbplatsen | `[Mobile App Users] (segment)`<br>`[Time Spent per Visitor (Seconds)] (metric)` |
+| Unika besökare/unika besökare som återvänder efter 7 dagar | Andelen unika besökare som återvänder efter en period på 7 dagar eller mer. | `[Unique Visitors metric with Users returning after 7 days segment] / [Unique Visitors]` |
+| Användare (mobil) | Det totala antalet användare i en mobilapp | `[Mobile App Users] (segment)`<br>`[Unique Visitors] (metric)` |
+| Besök/besökare | Genomsnittligt antal besök som en unik besökare gör på webbplatsen. | `[Visits] / [Unique Visitors]` |
+| Viktad studs-hastighet |  -funktion | `IF([Visits] > PERCENTILE([Visits]), [Bounce Rate], 0)` |
 
 {style="table-layout:auto"}
