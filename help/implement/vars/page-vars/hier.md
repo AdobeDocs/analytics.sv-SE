@@ -3,9 +3,9 @@ title: hierarki
 description: Implementera hierarkivariabler i Adobe Analytics.
 feature: Variables
 exl-id: 72bdab8f-a001-4ada-b5e2-453a8e3f24a6
-source-git-commit: f435453f655caef89460de42ebecf489b021dc47
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Du kan ange hierarkier antingen när du konfigurerar Analytics-tillägget (globa
 2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
-5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på [!UICONTROL Hierarchy] -avsnitt.
 
 Du kan ställa in ett hierarkivärde på en statisk sträng eller referera till ett dataelement. Du kan också ange önskad avgränsare. Kontrollera att avgränsaren som du anger här matchar avgränsaren som anges i inställningarna för rapportsviten.

@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: f8a4b3442f7e9f631ba8e472c69fbc4d1cc3877e
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '3860'
+source-wordcount: '3861'
 ht-degree: 32%
 
 ---
@@ -218,7 +218,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 12 september 2019 | Uppdatera [Beräknade mätsummor](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html) -dokument. |
 | 28 augusti 2019 | Ny artikel om [progressiva webbappar (PWA) för Analytics](/help/technotes/pwa.md). |
 | 8 augusti 2019 | Ny artikel om [summor för beräknade mätvärden](/help/components/c-calcmetrics/cm-totals.md). |
-| 8 augusti 2019 | Förtydligande av [sessionsdata med aktiverade tidsstämplar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md). | 8 augusti 2019 | I Workspace har Adobe ökat gränsen för objekt som kan placeras i ett nedrullningsbart filter från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |
+| 8 augusti 2019 | Förtydligande av [sessionsdata med aktiverade tidsstämplar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/timestamp-optional.md). | 8 augusti 2019 | I Workspace har Adobe ökat gränsen för objekt som kan placeras i ett statiskt nedrullningsbart filter från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |
 | 2 augusti 2019 | Större uppdatering av [Analytics-ordlistan](/help/technotes/terms.md). |
 | 22 juli 2019 | Tillägg för Magento: Mall för marknadsföring och handel i [dokumentationen om Analysis Workspace-mallarna](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md). |
 | 18 juli 2019 | Uppdaterade [inställningar för kohorttabeller](/help/analyze/analysis-workspace/visualizations/cohort-table/t-cohort.md). |

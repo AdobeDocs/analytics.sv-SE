@@ -2,9 +2,9 @@
 title: CDA Workspace-mall
 description: Beskriver varje fält i CDA-mallen i Analysis Workspace.
 exl-id: 293001ff-bf7b-4de8-b175-7c2c17d1794d
-source-git-commit: be913fb9bae7954864b180490364c275c7bf7f15
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---

@@ -3,9 +3,9 @@ title: sa
 description: Ändra rapportsviten när som helst i implementeringen.
 feature: Variables
 exl-id: 524857a7-c820-4985-86c7-fcf21a0809bd
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ Web SDK fungerar genom att data skickas till en specifik datastream som vidarebe
 
 ## Ange önskat dataström med hjälp av Web SDK-tillägget
 
-Tillägget Web SDK innehåller en listruta för Datastream för varje miljö. Du kan också ange ett dataström-ID manuellt.
+Tillägget Web SDK innehåller en listruta för datastream för varje miljö. Du kan också ange ett dataström-ID manuellt.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** knapp under [!UICONTROL Adobe Experience Platform Web SDK].
-1. Under [!UICONTROL Datastreams]väljer du önskad dataström i listrutan för varje miljö.
+1. Under [!UICONTROL Datastreams]väljer du önskat datastam i listrutan för varje miljö.
 1. Klicka på **[!UICONTROL Save]**.
 
 ## Ange önskad dataström som ska implementera Web SDK manuellt

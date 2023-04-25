@@ -5,10 +5,10 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: f83ab75e9a3cce2dd3dc13d88be97cf97df3dc65
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '8165'
-ht-degree: 87%
+source-wordcount: '8155'
+ht-degree: 86%
 
 ---
 
@@ -143,7 +143,7 @@ Förbättring som släpptes 8 augusti 2019.
 
 | Förbättring | Beskrivning |
 |--- |--- |
-| Höjd objektgräns för listrutefilter från 50 till 200 | Vi höjde gränsen för det antal objekt som kan placeras i ett listrutefilter från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |
+| Öka objektgränsen för statiska nedrullningsbara filter från 50 till 200 | Gränsen för objekt som kan placeras i ett statiskt nedrullningsbart filter ökas från 50 till 200. Den här förbättringen kommer till nytta i flera olika sammanhang, till exempel kan du nu lägga till alla länder (195) eller alla delstater och provinser i USA (52) i ett filter. |
 
 ## Juli 2019
 
@@ -202,29 +202,10 @@ Nya funktioner och förbättringar som släpptes 1 november 2018.
 
 Nya funktioner och förbättringar som släpptes 11 oktober 2018.
 
-<table id="table_3DDC812B2F66416F868004416D248BF3">
- <thead>
-  <tr>
-   <th colname="col1" class="entry"> Funktion </th>
-   <th colname="col2" class="entry"> Beskrivning </th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td colname="col1"> <p><b>Hantering av panellistrutor</b> </p> </td>
-   <td colname="col2"> <p>Vi har gjort några ändringar i hanteringen av panellistrutor, som introducerades i septemberversionen. När du högerklickar på listrutan kan du nu: </p>
-    <ul id="ul_4BDEC66EEB2243628FE32B43E377E5BD">
-     <li id="li_EF8277BE972540D3B2604D82BC7C0918">Ta bort en listruta (det här alternativet finns alltid). </li>
-     <li id="li_6A991208F2744274817DBE1E9D1B443F">Ta bort en etikett (om en etikett visas). </li>
-     <li id="li_5C1CFC465C2E41D2B35E8841EFDC82AA">Lägga till en etikett (om ingen etikett visas). </li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td colname="col1"> <p><b>Länkar i verktygstips för paneler och visualiseringar</b> </p> </td>
-   <td colname="col2"> <p>Vi har lagt till länkar till relevanta videoklipp och relevant dokumentation i verktygstipsen för paneler och visualiseringar. </p> </td>
-  </tr>
- </tbody>
-</table>
+| Funktion | Beskrivning |
+| --- | --- |
+| Hantering av nedrullningsbara paneler | Några ändringar görs i hanteringen av panellistrutor. När du högerklickar på en nedrullningsbar meny kan du nu ta bort den, ta bort en etikett (om en etikett visas) eller lägga till en etikett (om ingen etikett visas). |
+| Länkar i verktygstips för paneler och visualiseringar | Länkar till relevanta videoklipp och dokumentation till paneler och visualiseringstips läggs till. |
 
 ## September 2018
 
@@ -239,7 +220,7 @@ Nya funktioner och förbättringar som släpptes 13 september 2018.
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <p><b>Panellistrutor</b> </p> </td>
+   <td colname="col1"> <p><b>Listrutor för paneler</b> </p> </td>
    <td colname="col2"> <p>Panelens släppzon har nu funktioner för listrutor. Med hjälp av listrutor kan slutanvändarna interagera med data i ett projekt på ett kontrollerat sätt. Exempel: Anta att du har flera versioner av ett projekt för landsspecifik rapportering. Nu kan du komprimera dessa projekt till ett enda projekt och lägga till en listruta för att välja land. </p> </td>
   </tr>
   <tr>

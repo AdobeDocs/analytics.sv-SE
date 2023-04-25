@@ -3,9 +3,9 @@ description: Klassificeringar används för att kategorisera värden i grupper o
 title: Konverteringsklassificeringar
 feature: Classifications
 exl-id: b4855000-adf3-4e3b-af36-f4803383126d
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ Så här lägger du till konverteringsklassificeringar i Admin:
    Alternativen inkluderar **[!UICONTROL Text]** och **[!UICONTROL Numeric]**. Mer information om klassificeringstyper finns i [Om klassificeringar](/help/components/classifications/c-classifications.md).
 1. I **[!UICONTROL Text Classifications]** konfigurerar du klassificeringen efter behov.
 
-1. I **[!UICONTROL Dropdown List]** kan du lägga till eller ta bort alternativ.
+1. Lägg till eller ta bort alternativ i listrutan.
 
    Med Alternativ för att lägga till skapas en lista med klassificeringsvärden som är tillgängliga för den här klassificeringen. Du kan använda det här alternativet med Campaign-variabler för att ge användarna en lista över värden som stöds för klassificeringen i Campaign Manager. Använd detta för klassificeringsdimensioner där du har ett litet antal tillåtna värden som sällan eller aldrig ändras. Du kan till exempel köra olika kampanjer som har olika kundlojalitetsnivåer: Silver, Gold och Platinum. Du kan sedan använda listrutan för att se till att de enda värden som är godkända är de som matchar dina tre nivåer. Om någon försöker använda ett annat värde, tas det bort.
 

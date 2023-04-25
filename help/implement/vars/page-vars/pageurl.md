@@ -3,9 +3,9 @@ title: pageURL
 description: Åsidosätt den automatiskt insamlade sidans URL på din webbplats.
 feature: Variables
 exl-id: 411f894d-c31f-4d07-9568-b0b02786735d
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Analystillägget i Adobe Experience Platform Data Collection fyller automatiskt 
 2. Klicka på den önskade taggegenskapen.
 3. Gå till **[!UICONTROL Rules]** och sedan klicka på önskad regel (eller skapa en regel).
 4. Under **[!UICONTROL Actions]** klickar du på en befintlig **[!UICONTROL Adobe Analytics - Set Variables]** eller klicka på +-ikonen.
-5. Ange **[!UICONTROL Extension]** till Adobe Analytics och **[!UICONTROL Action Type]** till **[!UICONTROL Set Variables]**.
+5. Ange **[!UICONTROL Extension]** nedrullningsbar lista till Adobe Analytics och **[!UICONTROL Action Type]** till **[!UICONTROL Set Variables]**.
 6. Leta reda på **[!UICONTROL Page URL]** -avsnitt.
 
 Du kan ange sidans URL till valfritt strängvärde.

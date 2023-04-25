@@ -3,9 +3,9 @@ title: Mappa datalagerobjekt till dataelement
 description: Konfigurera taggar som ska läsas från datalagret.
 feature: Launch Implementation
 exl-id: b7594084-cb5f-408e-8a76-0a0815cc7553
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '294'
 ht-degree: 6%
 
 ---
@@ -29,8 +29,8 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
    ![skapa dataelement](assets/createelement.png)
 
 1. Ange ett namn för dataelementet. Det kan vara en enkel etikett som motsvarar en JavaScript-variabel i datalagret som du vill spåra.
-1. Under **[!UICONTROL Extension]** listruta, välja **[!UICONTROL Core]**.
-1. Under **[!UICONTROL Data Element Type]** listruta, välja **[!UICONTROL JavaScript Variable]**. Ett textfält visas till höger där du kan ange JavaScript-variabeln som ska mappas till det här dataelementet.
+1. Under **[!UICONTROL Extension]** nedrullningsbar lista, välja **[!UICONTROL Core]**.
+1. Under **[!UICONTROL Data Element Type]** nedrullningsbar lista, välja **[!UICONTROL JavaScript Variable]**. Ett textfält visas till höger där du kan ange JavaScript-variabeln som ska mappas till det här dataelementet.
 1. Ange önskad JavaScript-variabel, vanligtvis i datalagret. Om t.ex. din organisations datalager överensstämmer med den praxis som rekommenderas av Adobe kan ett värde vara `digitalData.page.pageInfo.pageName`. Du kan använda webbläsarens konsol för att validera JavaScript-variabelsyntax och -värden.
 1. Klicka på **[!UICONTROL Save]**.
 

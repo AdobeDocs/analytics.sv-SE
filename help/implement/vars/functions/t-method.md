@@ -3,9 +3,9 @@ title: t
 description: Skicka ett spårningsanrop för sidvy till Adobe.
 feature: Variables
 exl-id: c4f5b9e2-57a3-4d89-8378-39b7a4737afc
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Använd en åtgärd för att konfigurera sändning av XDM-händelsedata till Ado
 1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 1. Under [!UICONTROL Actions]klickar du på funktionsmakrot eller klickar på **&#39;+&#39;** om du vill lägga till ett funktionsmakro.
-1. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Adobe Experience Platform Web SDK]** och [!UICONTROL Action Type] till **[!UICONTROL Send event]**.
+1. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Adobe Experience Platform Web SDK]** och [!UICONTROL Action Type] till **[!UICONTROL Send event]**.
 
 ## Skicka händelse manuellt som implementerar Web SDK
 
@@ -66,7 +66,7 @@ Adobe Analytics-tillägget i Adobe Experience Platform Data Collection har en de
 1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 1. Under [!UICONTROL Actions]klickar du på önskad åtgärd eller klickar på **&#39;+&#39;** om du vill lägga till ett funktionsmakro.
-1. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] till **[!UICONTROL Send Beacon]**.
+1. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] till **[!UICONTROL Send Beacon]**.
 1. Klicka på `s.t()` alternativknapp.
 
 ## s.t()-metoden i AppMeasurement och den anpassade kodredigeraren för Analytics-tillägget

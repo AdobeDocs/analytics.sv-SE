@@ -3,9 +3,9 @@ title: Util.cookieRead
 description: Hämtar värdet för en cookie.
 feature: Variables
 exl-id: b05b628c-bae6-4dba-bc1d-6a1ab56e3660
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '174'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Du kan läsa cookies genom att ange värden i dataelement.
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Data Elements] och sedan klicka på det önskade dataelementet (eller skapa ett dataelement).
-4. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Core]** och [!UICONTROL Data Element Type] till **[!UICONTROL Cookie]**.
+4. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Core]** och [!UICONTROL Data Element Type] till **[!UICONTROL Cookie]**.
 5. Ange cookie-namnet i textfältet.
 
 Cookie-värdet lagras i dataelementet. Du kan sedan referera till dataelementet i regler för att tilldela de önskade variablerna.

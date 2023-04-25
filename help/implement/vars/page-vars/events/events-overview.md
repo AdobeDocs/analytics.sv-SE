@@ -3,9 +3,9 @@ title: händelser
 description: Ange variabeln events, som styr de flesta mätvärden på din webbplats.
 feature: Variables
 exl-id: 6ef99ee5-40c3-4ff2-a75d-c97f2e8ec1f8
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -45,14 +45,14 @@ Du kan ange händelser antingen när du konfigurerar Analytics-tillägget (globa
 2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
-5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
 6. Leta reda på [!UICONTROL Events] -avsnitt.
 
 Flera funktioner är tillgängliga:
 
-* I en listruta kan du välja vilken händelse som ska inkluderas
+* En nedrullningsbar lista där du kan välja vilken händelse som ska inkluderas
 * Ett valfritt textfält för serialisering. Se [händelseserialisering](event-serialization.md) för mer information.
-* Ett valfritt textfält för ett händelsevärde. Du kan inkludera valuta för valutakurshändelser eller ett heltal för händelser som inte är valutaväxlar om du vill öka den flera gånger. Välj till exempel `event1` i listrutan och som `10` i detta fält stegvis `event1` efter 10 i rapporteringen.
+* Ett valfritt textfält för ett händelsevärde. Du kan inkludera valuta för valutakurshändelser eller ett heltal för händelser som inte är valutaväxlar om du vill öka den flera gånger. Välj till exempel `event1` i den nedrullningsbara listan med `10` i detta fält stegvis `event1` efter 10 i rapporteringen.
 * En knapp för att lägga till en annan händelse. Du kan lägga till så många händelser som du vill för en enskild regel av olika skäl.
 
 ## s.events i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget

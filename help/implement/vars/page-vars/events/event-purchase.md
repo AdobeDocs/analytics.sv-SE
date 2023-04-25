@@ -3,10 +3,10 @@ title: Inköpshändelse
 description: Använd inköpshändelsen för att samla in data för måtten"Beställningar","Enheter" och"Intäkter".
 feature: Variables
 exl-id: 5ad148d6-cf45-4dea-846a-255004300bc2
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 1%
 
 ---
 
@@ -38,8 +38,8 @@ Inköpshändelsen är [mappas för Adobe Analytics](https://experienceleague.ado
 2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 4. Under [!UICONTROL Actions]klickar du på en befintlig [!UICONTROL Adobe Analytics - Set Variables] eller klicka på +-ikonen.
-5. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
-6. Leta reda på [!UICONTROL Events] och ställ in listrutan för händelser på [!UICONTROL purchase].
+5. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] till [!UICONTROL Set Variables].
+6. Leta reda på [!UICONTROL Events] och ange [!UICONTROL Events] nedrullningsbar lista till [!UICONTROL purchase].
 
 Andra beroende variabler som `products` och `purchaseID` har inte dedikerade fält i Analytics-tillägget i Adobe Experience Platform Data Collection. Använd den anpassade kodredigeraren efter AppMeasurement-syntax för dessa variabler.
 
@@ -55,7 +55,7 @@ s.events = "purchase";
 s.events = "purchase,event1,event2";
 ```
 
-## Deduplicering av inköpshändelser
+## Avduplicering av inköpshändelser
 
 När du utlöser en köphändelse kontrollerar Adobe följande:
 

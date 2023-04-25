@@ -3,9 +3,9 @@ title: tl
 description: Skicka ett länkspårningsanrop till Adobe.
 feature: Variables
 exl-id: 470662b2-ce07-4432-b2d5-a670fbb77771
-source-git-commit: 8ff414efff302adfee42f192e781a8dec5c42902
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Analytics-tillägget har en dedikerad plats där ett länkspårningsanrop 
 1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en regel).
 1. Under [!UICONTROL Actions]klickar du på önskad åtgärd eller klickar på **&#39;+&#39;** om du vill lägga till ett funktionsmakro.
-1. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] till **[!UICONTROL Send Beacon]**.
+1. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Adobe Analytics]** och [!UICONTROL Action Type] till **[!UICONTROL Send Beacon]**.
 1. Klicka på `s.tl()` alternativknapp.
 
 Du kan inte ange några valfria argument i Analytics-tillägget.

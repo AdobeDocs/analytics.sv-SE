@@ -3,9 +3,9 @@ title: Distribuera Adobe Analytics till en dev-miljö
 description: Lär dig hur du använder taggar för att distribuera Adobe Analytics till din utvecklingsmiljö.
 feature: Launch Implementation
 exl-id: 324943db-cb0b-40b1-8884-56bb3f608278
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Taggar kan hantera många organisatoriska arbetsflöden när kod distribueras. F
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
 3. Klicka **[!UICONTROL Hosts]** och sedan klicka **[!UICONTROL Add Host]**.
-4. Ge den ett namn `"Adobe managed"`och markera **[!UICONTROL Managed by Adobe]** i typlistrutan. Klicka på Spara.
+4. Ge den ett namn `"Adobe managed"`och markera **[!UICONTROL Managed by Adobe]** i typlistan. Klicka på Spara.
 5. Navigera till **[!UICONTROL Environments]** och sedan klicka **[!UICONTROL Add Environment]**.
 6. Välj **[!UICONTROL Development]**, ge den ett namn `"Dev Environment"`väljer du sedan den Adobe-hanterade värden i listrutan. Klicka på **[!UICONTROL Save]**.
 7. Ett modalt fönster med instruktioner för webbinstallation visas. Vi återgår till det här fönstret vid ett senare tillfälle. klicka **[!UICONTROL Close]** för tillfället.
@@ -42,7 +42,7 @@ Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publ
 4. Namnge biblioteket `'Initial changes'`och väljer utvecklingsmiljö.
 5. Klicka **[!UICONTROL Add All Changed Resources]** som automatiskt listar Adobe Analytics, identitetstjänst och kärna.
 6. Klicka på **[!UICONTROL Save]**.
-7. Gå tillbaka till arbetsflödesfönstret för publicering, klicka på listrutan bredvid det nya biblioteket och klicka på **[!UICONTROL Build for Development]**. Efter några sekunder blir den gula punkten i biblioteket grön, vilket anger att bygget lyckades.
+7. Gå tillbaka till arbetsflödesfönstret, klicka på listrutan bredvid det nya biblioteket och klicka på **[!UICONTROL Build for Development]**. Efter några sekunder blir den gula punkten i biblioteket grön, vilket anger att bygget lyckades.
 8. Navigera till **[!UICONTROL Environments]** klickar du sedan på installationsikonen till höger om utvecklingsmiljön. Den här åtgärden öppnar det modala fönstret för instruktioner för webbinstallation igen.
 9. Kopiera kodblocken och skicka dem till din organisations webbplatsägare.
 

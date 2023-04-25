@@ -5,7 +5,7 @@ title: Visa endast  projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 53372247-6902-4c7f-9132-38a1d453186c
-source-git-commit: 7d79d6a329c5d42ede2d15d8afd67021fde23e1c
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
@@ -44,5 +44,5 @@ Några av de mer välkända interaktionerna i ett projekt med endast visning är
 | --- | --- |
 | Frihandsregister | <ul><li>Sidindelning och sortering</li><li>Hovring</li><li>Cellmarkeringar som uppdaterar länkade visualiseringar</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Högerklicka > Kopiera till Urklipp</li></ul> |
 | Visualiseringar | <ul><li>Klicka för att aktivera/inaktivera förklaring</li><li>Hovring</li><li>Högerklicka > Hämta visualiseringslänk</li><li>Komprimera/expandera</li><li>Flöde - expandera flödesnoder</li><li>Karta - zoom</li></ul> |
-| Paneler | <ul><li>Interaktiva listrutefilter</li><li>Högerklicka > Hämta panellänk</li><li>Komprimera/expandera</li></ul> |
+| Paneler | <ul><li>Interaktiva nedrullningsbara filter</li><li>Högerklicka > Hämta panellänk</li><li>Komprimera/expandera</li></ul> |
 | Projekt | <ul><li>Inspektera alla informationsikoner</li><li>Projektmeny - Nytt, Öppna, Ange som landningssida, Uppdatera, Hämta CSV/PDF, Begränsad projektinformation och inställningar</li><li>Dela-menyn - Hämta projektlänk, Skicka fil nu</li><li>Hjälpmenyn - Alla åtgärder förutom Tips och felsökningsalternativ</li></ul> |

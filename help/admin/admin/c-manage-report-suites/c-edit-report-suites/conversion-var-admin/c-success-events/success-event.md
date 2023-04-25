@@ -4,9 +4,9 @@ keywords: event
 title: Översikt över slutförda händelser
 feature: Event
 exl-id: d52a691a-8124-4601-932f-d6d2d0a7842b
-source-git-commit: 84a4d38a65769f028bac4aa5817cb4002c4b1f97
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '690'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,6 @@ Gå till sidan Success Events i inställningarna för rapportsviten:
 2. Klicka på knappen med nio stödraster längst upp och klicka sedan på [!UICONTROL Analytics].
 3. Navigera till [!UICONTROL Admin] > [!UICONTROL Report Suites]
 4. Välj önskad rapportsvit och navigera sedan till [!UICONTROL Edit Settings] > [!UICONTROL Conversion] > [!UICONTROL Success Events].
-5. Leta reda på den önskade händelsen och ändra [!UICONTROL Unique Event Recording] listruta till [!UICONTROL Record Once Per Visit] eller [!UICONTROL Use Event ID].
 
 Det finns många typer av framgångsrika händelser, beroende på webbplatstypen. Flera exempel:
 

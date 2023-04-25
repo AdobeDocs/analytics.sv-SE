@@ -3,9 +3,9 @@ title: Mappa taggdataelement till analysvariabler
 description: Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
 feature: Launch Implementation
 exl-id: 996c1204-3f8a-453e-8104-5e8e1279517c
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Variabler som anges i regler är idealiska om du inte vill ha variabler som ange
 1. Klicka på den önskade taggegenskapen.
 1. Klicka på [!UICONTROL Rules] och sedan klicka på önskad regel (eller skapa en).
 1. Klicka på [!UICONTROL Add] knapp under [!UICONTROL Actions].
-1. Ange [!UICONTROL Extension] till Adobe Analytics och [!UICONTROL Action Type] för att ange variabler.
+1. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] för att ange variabler.
 1. Klicka på ![Dataelement](assets/data-element.png) till höger om den önskade Analytics-variabeln. Din organisations [konstruktionsdokument](../prepare/solution-design.md) anger vilken Analytics-variabel som ska användas.
 1. Markera det önskade dataelementet i det modala fönstret. Klicka på [!UICONTROL Select].
 1. Dataelementnamnet läggs till i textfältet omgivet av `%` skyltar. Om du t.ex. gav dataelementet namnet&quot;Sidnamn&quot; visas strängen `%Page name%` när du tilldelar ett dataelement till en variabel.

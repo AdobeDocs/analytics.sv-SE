@@ -3,9 +3,9 @@ title: cookieLifetime
 description: Åsidosätt förfallodatumet för cookies som skapas i AppMeasurement.
 feature: Variables
 exl-id: 2cd64301-9f12-4e77-abae-af431e4b499d
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
@@ -24,19 +24,19 @@ Web SDK erbjuder ännu inte någon anpassning av livstiden för cookies som ange
 
 ## Cookie-livstid med Adobe Analytics-tillägget
 
-Cookie-livstid är en listruta under [!UICONTROL Cookies] när du konfigurerar Adobe Analytics-tillägget.
+Cookie-livstid är en nedrullningsbar lista under [!UICONTROL Cookies] när du konfigurerar Adobe Analytics-tillägget.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
-1. Expandera [!UICONTROL Cookies] dragspelspanel, som visar [!UICONTROL Cookie Lifetime] listruta.
+1. Expandera [!UICONTROL Cookies] dragspelspanel, som visar [!UICONTROL Cookie Lifetime] nedrullningsbar lista.
 
 Den här listrutan innehåller följande värden:
 
 * **Standard**: Cookie går ut efter 2 år.
 * **Ingen**: AppMeasurement anger inte cookies.
 * **Session**: Cookie förfaller i slutet av besökarens session.
-* **Sekunder**: Cookie förfaller efter det angivna antalet sekunder. Om du till exempel anger den här listrutan som [!UICONTROL Seconds] och montera `86400` i det anpassade fältet tvingar cookies att upphöra efter exakt 24 timmar.
+* **Sekunder**: Cookie förfaller efter det angivna antalet sekunder. Du kan till exempel ange att den här nedrullningsbara listan ska vara [!UICONTROL Seconds] och montera `86400` i det anpassade fältet tvingar cookies att upphöra efter exakt 24 timmar.
 
 ## s.cookieLifetime i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 

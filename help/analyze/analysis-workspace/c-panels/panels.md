@@ -4,9 +4,9 @@ title: Översikt över paneler
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: f8a4b3442f7e9f631ba8e472c69fbc4d1cc3877e
+source-git-commit: 6057262f95586c7ac63fc98d7c47c9867945f329
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1404'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Med panelens listzon kan du tillämpa segment- och listrutefilter på alla tabel
 
 Dra och släpp ett segment från den vänstra listen i panelens släppzon för att börja filtrera panelen.
 
-![](/help/admin/admin/assets/filter.png)
+![Filter](/help/admin/admin/assets/filter.png)
 
 ### Ad hoc-segmentfilter
 
@@ -74,36 +74,60 @@ Ad hoc-segment är en typ av snabbsegment och är lokala för projektet. De visa
 
 Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
 
-### Nedrullningsbara filter {#dropdown-filter}
+### Statiska nedrullningsbara filter
 
-Förutom segmentfilter kan du med hjälp av nedrullningsbara filter interagera med data på ett kontrollerat sätt. Du kan t.ex. lägga till ett nedrullningsbart filter för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
+Med nedrullningsbara filter kan du interagera med data på ett kontrollerat sätt. Du kan t.ex. lägga till ett nedrullningsbart filter för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
 
 Nedrullningsbara filter kan även användas för att konsolidera flera projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landsfilter.
 
 ![](assets/dropdown-filter-intro.png)
 
-Så här skapar du nedrullningsbara filter:
+Så här skapar du ett statiskt nedrullningsbart filter:
 
-1. Skapa ett nedrullningsbart filter med [!UICONTROL Dimension items], till exempel värden i [!UICONTROL Marketing Channel] klickar du på högerpilsikonen bredvid dimensionen i det vänstra fältet. Då visas alla tillgängliga objekt. Markera ett eller flera komponentobjekt i den vänstra listen och släpp dem i panelens dropzon **medan du håller ned Skift-tangenten**. Komponenterna blir då ett nedrullningsbart filter i stället för ett enda segment.
-1. Om du vill skapa ett nedrullningsbart filter med hjälp av andra komponenter, som mått, segment eller datumintervall, väljer du en komponenttyp i den vänstra listen och släpper i panelens listruta **samtidigt som du håller ned Skift-tangenten**.
-1. Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
+* För nedrullningsbara filter som använder dimensionsobjekt klickar du på högerpilsikonen bredvid önskad dimension i den vänstra listen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Välj flera dimensionsobjekt från den här listan med `[Shift + Click]` eller `[Ctrl + Click]`och sedan släppa dem i panelens dropzone **medan du håller`[Shift]`**.
+* För nedrullningsbara filter som använder andra komponenter som mått, segment eller datumintervall väljer du flera komponenter med `[Shift + Click]` eller `[Ctrl + Click]`. Släpp markeringen i panelens dropzone **medan du håller`[Shift]`**. Alla komponenttyper behandlas som segment i det här sammanhanget.
+* Ett enda nedrullningsbart filter kan bara innehålla en enda komponenttyp. Om du inkluderar flera komponenttyper i markeringen skapas ett separat nedrullningsbart filter per komponenttyp. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara filter. Ett nedrullningsbart filter innehåller dimensionsobjekt och det andra innehåller mått.
+
+Välj ett av alternativen i listrutan om du vill ändra data på panelen. Du kan också välja att inte filtrera paneldata genom att markera **[!UICONTROL No filter]**.
 
 ![](assets/create-dropdown.png)
 
+Om du högerklickar på ett nedrullningsbart filter finns följande alternativ:
+
+* **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart filter i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
+* **[!UICONTROL Delete label]**: Ta bort texten ovanför ett nedrullningsbart filter.
+* **[!UICONTROL Delete drop-down filter]**: Tar bort nedrullningsfiltret från panelen.
+
 [Se videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) om du vill veta mer om hur du lägger till nedrullningsbara filter i ett projekt.
+
+### Dynamiska nedrullningsbara filter
+
+Med dynamiska nedrullningsbara filter kan du bestämma tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara filter. Du kan till exempel skapa två dynamiska listrutor med [Länder](/help/components/dimensions/countries.md) dimension och [Städer](/help/components/dimensions/cities.md) dimension. När du väljer ett land i dialogrutan [!UICONTROL Countries] nedrullningsbar lista, [!UICONTROL Cities] listrutan justeras dynamiskt till att endast visa städer i det landet.
+
+Samma koncept gäller för alla dimensioner. endast dimensionsobjekt som visas inom panelens datumintervall och markerade filter visas. De Dimensioner som markeras i statiska nedrullningsbara filter påverkar tillgängliga värden i dynamiska nedrullningsbara filter. Inversen är dock inte sann; De Dimensioner som markeras i dynamiska nedrullningsbara filter påverkar inte tillgängliga värden i statiska nedrullningsbara filter.
+
+Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart filter så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara filter kan innehålla fler värden. Välj **[!UICONTROL Clear All]** för att ta bort markeringen från alla nedrullningsbara filter för den panelen.
+
+Så här skapar du ett dynamiskt nedrullningsbart filter:
+
+* Dra och släpp en dimension till panelens dropzone **medan du håller`[Shift]`**.
+* Dynamiska nedrullningsbara filter är inte tillgängliga för mått, segment eller datumintervall.
+* Högerklicka på ett nedrullningsbart filter och välj **[!UICONTROL Delete filter]** för att ta bort den.
+
+Om du högerklickar på ett dynamiskt nedrullningsbart filter finns samma alternativ som för statiska nedrullningsbara filter.
 
 ## Högerklicka på menyn {#right-click}
 
 Ytterligare funktioner för en panel är tillgängliga genom att högerklicka på panelhuvudet.
 
-![](assets/right-click-menu.png)
+![Högerklicka på menyn](assets/right-click-menu.png)
 
 Följande inställningar är tillgängliga:
 
 | Inställning | Beskrivning |
 | --- | --- |
-| Infoga kopierad panel/visualisering | Gör att du kan klistra in (&quot;infoga&quot;) en kopierad panel eller visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
-| Kopiera panel | Högerklicka och kopiera en panel så att du kan infoga den på en annan plats i projektet eller i ett helt annat projekt. |
+| Infoga kopierad panel/visualisering | Gör att du kan klistra in (&quot;infoga&quot;) en kopierad panel eller visualisering på en annan plats i projektet, eller i ett annat projekt. |
+| Kopiera panel | Högerklicka och kopiera en panel så att du kan infoga den på en annan plats i projektet eller i ett annat projekt. |
 | Tillämpa Report Suite på alla paneler | Gör att du kan använda den aktiva panelrapportsviten på alla paneler i projektet. |
 | Duplicera panel | Skapar en exakt kopia av den aktuella panelen, som du sedan kan ändra. |
 | Komprimera/expandera alla paneler | Komprimerar och utökar alla projektpaneler. |

@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Media Average Minute Audie
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: b0a3ee6785bdc2f3e9a55e42591b4846984934b6
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Du kan konfigurera panelen Media Average Minute Audience med följande indatains
 |---------|------------|
 | Rapporteringsdimensioner | När du väljer specifikt innehåll kan du välja rapportutdata och använda antingen video- eller innehålls-ID-fälten för att visa innehållet och dess associerade genomsnittliga minutmålgrupp under den valda tidsperioden. |
 | Filtrera innehåll efter (valfritt) | Du kan filtrera innehållet beroende på vilken vy du vill ha eller hur data är strukturerade. |
-| Visa, säsong, avsnitt | Om du väljer &quot;Visa, säsong, avsnitt&quot; visas dina tillgängliga program i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa visningsnamnet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
+| Visa, säsong, avsnitt | Om du väljer &quot;Visa, säsong, avsnitt&quot; visas dina tillgängliga program i listrutan, som du kan filtrera med hjälp av en sökning (eller genom att dra och släppa namnet på bildspelet från den vänstra kolumnen). Du kan avsluta markeringen där för att se alla årstiderna i programmet eller filtrera efter enskilda årstider och sedan efter enskilda avsnitt. Den här inställningen visar data för dessa program, säsonger eller avsnitt för den valda tidsperioden. |
 | Anpassad dimension | Om ditt visningsnamn finns under en anpassad dimension kan du hitta det antingen genom att söka i den nedrullningsbara menyn för dimension (valfritt) eller genom att använda den vänstra kolumnsökningen. Dimensionsobjektet fylls automatiskt baserat på det urvalet och behandlas som ett avsnitt. |
 | Ingen | Du kan välja *Ingen* om du vill visa alla videonamn som har genomsnittliga minutdata för det valda urvalet. |
 

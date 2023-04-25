@@ -3,9 +3,9 @@ title: Util.getQueryParam
 description: Returnerar värdet för en frågesträngsparameter.
 feature: Variables
 exl-id: d29d6cd9-f85f-475b-a7a8-73785aa4ae7b
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Du kan hämta parameterdata för frågesträngar genom att ange värden i datael
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Data Elements] och sedan klicka på det önskade dataelementet (eller skapa ett dataelement).
-4. Ange [!UICONTROL Extension] listruta till **[!UICONTROL Core]** och [!UICONTROL Data Element Type] till **[!UICONTROL Query String Parameter]**.
+4. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Core]** och [!UICONTROL Data Element Type] till **[!UICONTROL Query String Parameter]**.
 5. Ange frågesträngsparametern i textfältet.
 
 Frågesträngens parametervärde lagras i dataelementet. Du kan sedan referera till dataelementet i regler för att tilldela de önskade variablerna.

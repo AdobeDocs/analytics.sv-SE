@@ -3,10 +3,10 @@ title: Frågor och svar om migrering till Adobe Analytics
 description: Få svar på vanliga frågor när du går från en tredjepartsplattform till Adobe.
 feature: Third-party Integration
 exl-id: 1201909e-b20c-48c5-b287-393da8e22d78
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 52%
+source-wordcount: '393'
+ht-degree: 39%
 
 ---
 
@@ -20,14 +20,14 @@ Om din organisation är van vid att få historisk information porterad till Adob
 
 Vi rekommenderar att du använder [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) som kan ta med sig alla datakällor i flera kanaler.
 
-**Jag är van vid en segmenteringslistruta i många av mina rapporter. Hur återskapar jag det i [!UICONTROL Analysis Workspace]?**
+**Jag är van vid en listruta för segmentering i många av mina rapporter. Hur återskapar jag det i [!UICONTROL Analysis Workspace]?**
 
-Listrutefilter är en flexibel och robust funktion i [!UICONTROL Analysis Workspace] som tillåter en listruta för segmentering. I ett arbetsyteprojekt:
+Nedrullningsbara filter är en flexibel och robust funktion i [!UICONTROL Analysis Workspace] som tillåter en listruta för segmentering. I ett arbetsyteprojekt:
 
-1. Ctrl-klicka (Windows) eller Kommando-klicka (Mac) på de komponenter som du vill ta med i listrutan. Du är inte begränsad till bara segment; valfri komponent kan inkluderas i ett listrutefilter.
+1. Ctrl-klicka (Windows) eller Cmd-klicka (Mac) på de komponenter som du vill ta med i listrutan. Du är inte begränsad till bara segment; valfri komponent kan inkluderas i ett nedrullningsbart filter.
 2. Dra gruppen med komponenter till arbetsytan med namnet &#39;Släpp ett segment här&#39;. Håll ned Skift innan du släpper.
 
-Användare som har åtkomst till detta [!UICONTROL Workspace] kan nu använda den här listrutan för att tillämpa segment eller andra komponenter i projektet. Se [Paneler - översikt](/help/analyze/analysis-workspace/c-panels/panels.md) i Adobe Analytics Tools Guide för mer information.
+Användare som har åtkomst till detta [!UICONTROL Workspace] kan nu använda det här nedrullningsbara filtret för att tillämpa segment eller andra komponenter i projektet. Se [Paneler - översikt](/help/analyze/analysis-workspace/c-panels/panels.md) i Adobe Analytics Tools Guide för mer information.
 
 **Jag är van vid att klicka på ett dimensionsobjekt för att se en detaljnivå. Hur kan jag replikera det enkla arbetsflödet i Analysis Workspace?**
 

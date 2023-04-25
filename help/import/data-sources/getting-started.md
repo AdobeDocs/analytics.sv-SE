@@ -1,9 +1,10 @@
 ---
 title: Komma igång med datakällor
 description: Överför exempeldata till en utvecklingsrapportsserie.
-source-git-commit: bb3036380eeec9b7a868f60a4c9076f2b772532b
+exl-id: d9f74f55-abbb-4ceb-b4db-8d3c32aacd4a
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -34,8 +35,8 @@ Du kan följa de här stegen för att enkelt överföra exempeldata till en utve
 
    ```text
    # Generic Data Source (Summary Data Only) template file (user: 123456789 ds_id: 2)
-   #	eVar1	event1
-   Date	Evar 1	Event 1
+   #    eVar1    event1
+   Date    Evar 1    Event 1
    ```
 
 1. Ange data på flera rader, där varje post avgränsas med en tabb. Använd inte blanksteg eller kommatecken för att avgränsa värden.
@@ -45,10 +46,10 @@ Du kan följa de här stegen för att enkelt överföra exempeldata till en utve
 
    ```text
    # Generic Data Source (Summary Data Only) template file (user: 123456789 ds_id: 5)
-   #	eVar1	event1
-   Date	Evar 1	Event 1
-   09/07/YYYY/11/23/00	Data source example value	3
-   09/07/YYYY/15/59/00	Another data source value	18
+   #    eVar1    event1
+   Date    Evar 1    Event 1
+   09/07/YYYY/11/23/00    Data source example value    3
+   09/07/YYYY/15/59/00    Another data source value    18
    ```
 
 1. Spara filen. Om du vill kan du ge den ett annat filnamn. När filen har sparats kan du stänga textredigeraren.

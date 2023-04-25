@@ -3,7 +3,7 @@ title: useBeacon
 description: Med useBeacon kan du tvinga AppMeasurement att använda webbläsarnas sendBeacon-API
 feature: Variables
 exl-id: a3c4174a-711d-4a35-9f36-9b1049c7db54
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -30,7 +30,7 @@ The **[!UICONTROL Document will unload]** kryssrutan i en åtgärdskonfiguration
 1. Klicka på den önskade taggegenskapen.
 1. Gå till [!UICONTROL Rules] och sedan klicka på önskad regel.
 1. Under [!UICONTROL Actions]klickar du på funktionsmakrot eller klickar på **&#39;+&#39;** om du vill lägga till ett nytt funktionsmakro.
-1. Ställ in listrutan Tillägg på **[!UICONTROL Adobe Experience Platform Web SDK]** och [!UICONTROL Action Type] till **[!UICONTROL Send event]**
+1. Ange [!UICONTROL Extension] nedrullningsbar lista till **[!UICONTROL Adobe Experience Platform Web SDK]** och [!UICONTROL Action Type] till **[!UICONTROL Send event]**
 1. Klicka i kryssrutan **[!UICONTROL Document will unload]** till höger.
 
 Om den här rutan är markerad skickas data till Adobe med API:t sendBeacon. Den är avmarkerad som standard.

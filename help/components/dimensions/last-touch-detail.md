@@ -3,9 +3,9 @@ title: Senaste beröringskanaldetalj
 description: Information om den senaste marknadsföringskanalen inom besökarens förfallotid för engagemang.
 feature: Dimensions
 exl-id: def03267-f3e5-4772-a707-5678c45eba6d
-source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
+source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Om du vill ställa in dimensionen på ett specifikt värde måste du utföra fö
 
 * Kontrollera att önskat dimensionsobjekt finns i ett träffattribut eller en anpassad variabel.
 * Ange en bearbetningsregel för marknadsföringskanal som innehåller de önskade villkoren för träffen.
-* Välj önskat listrutevärde under [!UICONTROL Set the channel's value] inom marknadsföringskanalens bearbetningsregel.
+* Välj önskat värde i listrutan under [!UICONTROL Set the channel's value] inom marknadsföringskanalens bearbetningsregel.
 * Besökarens träff på webbplatsen måste matcha de villkor som anges i regeln för bearbetning av marknadsföringskanal.
 
 ## Dimensioner
 
-Dimensionen beror på kanalvärdets listruta. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsobjekten sidadresser på din webbplats. Om du anger kanalens värde till Referensdomän inkluderar dimensionsobjekten domäner som besökare klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsobjekt, oavsett vilken kanal de finns i.
+Dimensioner beror på vilket kanalvärde som anges i listrutan för den tillämpliga regeln för hantering av marknadsföringskanaler. Om du t.ex. anger kanalens värde som &quot;Sidadress&quot;, inkluderar dimensionsobjekten sidadresser på din webbplats. Om du anger kanalens värde till Referensdomän inkluderar dimensionsobjekten domäner som besökare klickade igenom för att komma till din webbplats. Denna dimension samlar alla detaljdimensionsobjekt, oavsett vilken kanal de finns i.
 
 Adobe rekommenderar att kanalvärden för marknadsföringskanalen ställs in för att få kunskap om kanaldetaljer.
