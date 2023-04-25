@@ -3,16 +3,16 @@ title: Regional datainsamling
 description: Information om regional datainsamling
 feature: Regional Data Collection
 exl-id: 295e9736-2a58-48a8-9968-5dfa33b70d95
-source-git-commit: 8f02656820ed0b9201f29fc9dca6870e6f7fe8fd
+source-git-commit: f75d123c93d446776492dd933d03d32c2496fa69
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Regional datainsamling
 
-Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe sker så nära besökarna som möjligt. När data har samlats in regionalt på ett datainsamlingscenter (DCC) vidarebefordras de via en säker anslutning till ett datacenter (DPC). Efter bearbetning är uppgifterna tillgängliga för Adobe Experience Cloud-produkter.
+Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe sker så nära besökarna som möjligt. När data har samlats in regionalt på ett datainsamlingscenter (DCC) vidarebefordras de via en säker anslutning till ett datacenter (DPC). Efter bearbetning är uppgifterna tillgängliga för Adobe Experience Cloud-produkter. Kontakta Adobe kundtjänst om du vill ändra din RDC-typ.
 
 I den regionala datainsamlingsprocessen används följande steg:
 
@@ -39,7 +39,7 @@ Följande platser (kan ändras) ingår för närvarande i RDC:
 
 >[!NOTE]
 >
->Om din Analytics-bildförfrågan skickas till `adobedc`, `2o7.net` eller `omtrdc.net` slutpunkter, och sedan har du datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
+>Om din Analytics-bildförfrågan skickas till `adobedc.net`, `2o7.net` eller `omtrdc.net` slutpunkter, och sedan har du datainsamling från tredje part. Du kan avgöra detta om du ser någon av slutpunkterna i URL:en för dina förfrågningar.
 
 ## Insamling av data från första part
 
