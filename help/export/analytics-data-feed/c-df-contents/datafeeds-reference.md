@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 814c88f3248aec7dde812926ba19f5eee1a815b0
+source-git-commit: 6e59ee3cb3eb59b025053603cd1357c5a2709d00
 workflow-type: tm+mt
-source-wordcount: '3655'
+source-wordcount: '3670'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`browser_width`** | Bredd i pixlar i webbläsarfönstret. | smallint unsigned |
 | **`c_color`** | Färgpalettens bitdjup. Används som en del av beräkningen av [Färgdjup](/help/components/dimensions/color-depth.md) dimension. AppMeasurement använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
 | **`campaign`** | Variabel som används i [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. | varchar(255) |
-| **`carrier`** | Integrationsvariabel för Adobe Advertising. Anger mobiloperatör. Refererar till `carrier` uppslagstabell. | varchar(100) |
+| **`carrier`** | Integrationsvariabel för Adobe Advertising. Anger mobiloperatör. Nyckelvärdet för `carrier.tsv` [Dynamisk sökning](dynamic-lookups.md). | varchar(100) |
 | **`ch_hdr`** | Klienttips som samlats in via HTTP-begärandehuvudet. | text |
 | **`ch_js`** | Klienttips som samlats in via JavaScript-API:t för användaragentklienten. | text |
 | **`channel`** | Variabel som används i [Platsavsnitt](/help/components/dimensions/site-section.md) dimension. | varchar(100) |
@@ -110,7 +110,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`latlon45`** | Plats (ned till 1 m) | varchar(255) |
 | **`mc_audiences`** | Lista med Audience Manager segment-ID som besökaren tillhör. The `post_mc_audiences` kolumnen ändrar avgränsaren till `--**--`. | text |
 | **`mcvisid`** | Experience Cloud Visitor-ID. 128-bitars nummer som består av två sammanfogade 64-bitars tal som fyllts med 19 siffror. | varchar(255) |
-| **`mobile_id`** | Om användaren använder en mobil enhet anger du enhetens numeriska ID. | int |
+| **`mobile_id`** | Om användaren använder en mobil enhet anger du enhetens numeriska ID. Nyckelvärdet för `mobile_attributes.tsv` [Dynamisk sökning](dynamic-lookups.md). | int |
 | **`mobileaction`** | Mobilåtgärd. Samlas in automatiskt när `trackAction` anropas i Mobiltjänster. Tillåter automatisk åtgärdspunkt i appen. | varchar(100) |
 | **`mobileappid`** | ID för mobilapp. Lagrar programnamnet och versionen i följande format: `[AppName] [BundleVersion]` | varchar(255) |
 | **`mobileappperformanceappid`** | Används i Apteligent-dataanslutningen. Program-ID som används i Apteligent. | varchar(255) |
@@ -159,7 +159,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`mvvar1_instances`** - `mvvar3_instances` | Listvariabelvärdena som angavs för den aktuella träffen. Ersätter den ursprungliga avgränsaren med `--**--`. Har inte en `post` kolumn. | text |
 | **`namespace`** | Används inte. En del av en skrapad funktion. | varchar(50) |
 | **`new_visit`** | Flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adobe-servrar efter 30 minuters besöksinaktivitet. | tinyint unsigned |
-| **`os`** | Numeriskt ID som representerar besökarens operativsystem. Baserat på `user_agent` kolumn. Användningsområden `os` sökning. | int unsigned |
+| **`os`** | Numeriskt ID som representerar besökarens operativsystem. Baserat på `user_agent` kolumn. Nyckelvärdet för `operating_system.tsv` standardsökning och `operating_system_type.tsv` [Dynamisk sökning](dynamic-lookups.md). | int unsigned |
 | **`p_plugins`** | Används inte längre. Lista över plugin-program som är tillgängliga för webbläsaren. Använda JavaScript-funktionen `navigator.plugins()`. | text |
 | **`page_event`** | Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). Se [Sökning efter sidhändelse](datafeeds-page-event.md). | tinyint unsigned |
 | **`page_event_var1`** | Används endast vid förfrågningar om länkspårningsbilder. URL-adressen till den nedladdningslänk, den avslutningslänk eller anpassade länk som du klickat på. | text |

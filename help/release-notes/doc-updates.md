@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+source-git-commit: 6e59ee3cb3eb59b025053603cd1357c5a2709d00
 workflow-type: tm+mt
-source-wordcount: '3861'
+source-wordcount: '3884'
 ht-degree: 32%
 
 ---
@@ -28,6 +28,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | **April 2023** |  |
 | 2 nya slutpunktsguider för Adobe Analytics 2.0 API | <ul><li>[API för Analytics-Dimensioner](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/dimensions/)</li><li>[API för analysmått](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/metrics/)</li></ul> |
 | Projektsegment (ad hoc- och snabbsegment) | Effektiv dokumentation om projektsegment och borttagen dubblettinformation. Stegen för att skapa ad hoc-segment kombineras nu med stegen för [skapa snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md). |
+| Dynamiska sökningar | Ytterligare information om [Dynamiska sökningar](/help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md) läggs till. Tidigare fanns bara information för mobilattribut, som är en av flera dynamiska sökningar. |
 | **Mars 2023** |  |
 | Stöd för Web SDK i Activity Map | Uppdaterat [Implementera Adobe Analytics](/help/implement/home.md) och [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md). |
 | Översikt över trafikvariabler (props) | Lagt till avsnitt och stegvisa procedurer för att förtydliga och förbättra artikelinnehållet. Sammanfogat innehåll från en artikel med rubriken&quot;Aktivera trafikvariabelrapporter&quot; och tog bort artikeln. Se [Översikt över trafikvariabler (props)](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md). |

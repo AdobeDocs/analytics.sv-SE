@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Specialtecken i dataflöden
 feature: Data Feeds
 exl-id: b816ebc5-0b23-4420-aa8c-b88953d031e6
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 6e59ee3cb3eb59b025053603cd1357c5a2709d00
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ När dessa reserverade värden föregås av ett omvänt snedstreck skickades de 
 | `\\n` | Värdet &#39;`\n`&#39; skickades under datainsamlingen, escape-konverterad av Adobe. |
 | `\\` | Värdet &#39;`\`&#39; skickades under datainsamlingen, escape-konverterad av Adobe. |
 
-En besökare på webbplatsen använder till exempel intern sökning och söker efter &quot;search\nstring&quot;. Du fyller i eVar1 med &quot;search\nstring&quot; och skickar värdet till Adobe. Adobe tar emot den här träffen och slipper den nya raden som finns i strängen. Det faktiska värdet som placeras i raw-data är &quot;search\\nstring&quot;.
+En besökare på webbplatsen använder till exempel intern sökning och sökningar efter `"search\nstring"`. Du fyller i eVar1 med `"search\nstring"`och skicka värdet till Adobe. Adobe tar emot den här träffen och slipper den nya raden som finns i strängen. Det faktiska värdet som läggs in i rådata är `"search\\nstring"`.
 
 ## Specialtecken i variabler med flera värden (events_list, products_list, mvvars)
 

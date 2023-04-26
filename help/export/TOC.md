@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
 user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
-source-git-commit: 1e666e66af8fe5d8fdefbd84a4073556993a5a3e
+source-git-commit: 6e59ee3cb3eb59b025053603cd1357c5a2709d00
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '295'
 ht-degree: 82%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 82%
       + [Beräkna mätvärden](analytics-data-feed/c-df-contents/datafeeds-calculate.md)
       + [Referens för datakolumner](analytics-data-feed/c-df-contents/datafeeds-reference.md)
       + [Sökning efter sidhändelse](analytics-data-feed/c-df-contents/datafeeds-page-event.md)
-      + [Mobilattributsökning](analytics-data-feed/c-df-contents/mobile-attributes-lookup.md)
+      + [Dynamiska sökningar](analytics-data-feed/c-df-contents/dynamic-lookups.md)
       + [Merchandising eVar lookup](analytics-data-feed/c-df-contents/merchandising-evar-lookup.md)
       + [Specialtecken](analytics-data-feed/c-df-contents/datafeeds-spec-chars.md)
       + [Sena träffar](analytics-data-feed/c-df-contents/late-arriving-hits.md)
