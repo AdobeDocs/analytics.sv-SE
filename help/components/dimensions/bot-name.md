@@ -1,7 +1,10 @@
 ---
 title: Punktnamn
 description: Namnet på roboten som matchade batchregler.
-source-git-commit: d7d9bbf9bf43509eb756408f772be870c3854aa5
+exl-id: 668c1dce-c603-477a-9df7-dacb649bbf63
+hide: true
+hidefromtoc: true
+source-git-commit: 017559d2b909deb4bf87fb5fe41db8250f2ca2ac
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
