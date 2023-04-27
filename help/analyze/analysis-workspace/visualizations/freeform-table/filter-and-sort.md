@@ -4,9 +4,9 @@ title: Filtrera och sortera tabeller
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: af0c56a8911c5ea2fb49fb9625c68331a8517d81
+source-git-commit: c546058b83be79f4ffb94811727a12b30dd14033
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ Frihandstabeller i Analysis Workspace är grunden för interaktiv dataanalys. De
 ## Filtrera tabeller
 
 Med filter i Analysis Workspace hittar du den viktigaste informationen.
+
+>[!NOTE]
+>
+> Endast dynamiska dimensionsobjekt kan filtreras enligt beskrivningen i det här avsnittet. Statiska dimensionsobjekt kan inte filtreras. Mer information finns i [Dynamiska jämfört med statiska dimensionsobjekt i frihandstabeller](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
 Så här filtrerar du data i frihandstabeller:
 
