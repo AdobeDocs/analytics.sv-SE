@@ -5,7 +5,7 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: e3447bc278cfcf5553e46ceb298d9f4743f73328
+source-git-commit: 836b2c91cf401b7133d3569ae64154a24d2923f7
 workflow-type: tm+mt
 source-wordcount: '1655'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-s
 >
 >* Möjligheten att dela ett projekt på det här sättet kan inaktiveras av Analytics-administratören, vilket beskrivs i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Om du inte kan dela ett projekt enligt beskrivningen i det här avsnittet har Analytics-administratören inaktiverat den här möjligheten.
 >
->* Projekt med fler än 14 utökade visualiseringar kan inte delas med personer som inte har tillgång till Adobe Analytics.
+>* Projekt med mer än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till Adobe Analytics.
 >
 >* Användare som du delar med kan visa alla filter som använts på projektet under [kuration](curate.md).
 > 
