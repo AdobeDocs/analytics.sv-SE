@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 1cd0ef3d294be79346bb819da583c7d13aedb26d
+source-git-commit: 41154580c272514e504c5478215bb67795488de3
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 49%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -208,7 +208,6 @@ ht-degree: 49%
 + Virtual Report Suites {#virtual-report-suites}
    + [Översikt över Virtual Report Suites](vrs/vrs-about.md)
    + [Virtuell rapportsvit - komponentkurva](vrs/vrs-components.md)
-   + [Stöd för VRS i Mobile Services](vrs/vrs-mobile-services.md)
    + [Sammanhangsmedvetna sessioner](vrs/vrs-mobile-visit-processing.md)
    + [Bearbetning av rapporttid](vrs/vrs-report-time-processing.md)
    + [A4T-överväganden](vrs/vrs-a4t.md)

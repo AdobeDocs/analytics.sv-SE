@@ -3,9 +3,9 @@ title: usePlugins
 description: Aktivera eller inaktivera funktionen doPlugins().
 feature: Variables
 exl-id: e8499acf-d8b9-490c-9f67-ad9a8f6ca7df
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: 41154580c272514e504c5478215bb67795488de3
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,9 @@ If `usePlugins` är aktiverat, [`doPlugins()`](../functions/doplugins.md) funkti
 
 ## Använda plugin-program med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Adobe har ett tillägg med namnet&quot;Common Analytics Plugins&quot; som gör att du kan ringa de flesta [Plugin-program](../plugins/impl-plugins.md). Installera tillägget och anropa önskat plugin-program i en regel.
+
+Om det plugin-program du vill använda inte ingår i tillägget Adobe använder du den anpassade kodredigeraren efter AppMeasurement-syntaxen.
 
 ## s.usePlugins i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
 

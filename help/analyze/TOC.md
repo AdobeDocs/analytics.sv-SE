@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: f8a4b3442f7e9f631ba8e472c69fbc4d1cc3877e
+source-git-commit: 41154580c272514e504c5478215bb67795488de3
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1096'
 ht-degree: 78%
 
 ---
@@ -330,7 +330,6 @@ ht-degree: 78%
    + [Aktuella data](reports-analytics/current-data.md)
    + [Kontrollpaneler och minirapporter](reports-analytics/dashboard.md)
    + [Kontrollpanelshanterare](reports-analytics/dashboard-manage.md)
-   + [Dataextrahering](reports-analytics/data-extract.md)
    + [Trattrapporter](reports-analytics/funnels.md)
    + [Mätvärden](reports-analytics/metrics.md)
    + [Målgrupper](reports-analytics/targets.md)

@@ -2,9 +2,9 @@
 title: Variabelmappning i analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: 825552f176e9082fcf2a5b6103d2a5c30dd3a583
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -60,14 +60,14 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | `environment.language` | Mobildimensionen Locale. |
 | `environment.operatingSystem` | Den mobila dimensionen [Operativsystem](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
 | `environment.operatingSystemVersion` | Hjälper dig att ange [Operativsystemsversion](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions) dimension. |
-| `_experience.analytics.customDimensions.`<br/>`eVars.eVar1` -<br/>`_experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
-| `_experience.analytics.customDimensions.`<br/>`hierarchies.hier1` -<br/>`_experience.analytics.customDImensions.`<br/>`hierarchies.hier5` | Anger respektive [Hierarki](/help/components/dimensions/hierarchy.md) dimension. |
-| `_experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Åsidosättning av avgränsare för listpropp. Det här fältet rekommenderas inte eftersom avgränsaren hämtas automatiskt från [Trafikvariabeladministratör](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Om du använder det här fältet kan det skapa en felmatchning mellan den avgränsare som används och den avgränsare som förväntas i Analytics. |
-| `_experience.analytics.customDimensions.`<br/>`listProps.prop1.values` -<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.values` | En strängarray som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props) värden. |
-| `_experience.analytics.customDimensions.`<br/>`lists.list1.list[].value` -<br/>`_experience.analytics.customDimensions.`<br/>`lists.list3.list[].value` | Sammanfogar alla `value` strängar i respektive `list[]` array till respektive [Listvariabel](../vars/page-vars/list.md). Avgränsaren väljs automatiskt baserat på det värde som anges i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). |
-| `_experience.analytics.customDimensions.`<br/>`props.prop1` -<br/>`_experience.analytics.customDimensions.`<br/>`props.prop75` | Anger respektive [Prop](../../components/dimensions/prop.md) dimension. |
-| `_experience.analytics.event1to100.`<br/>`event1.id` -<br/>`_experience.analytics.event901to1000.`<br/>`event1000.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till respektive [Anpassade händelser](../../components/metrics/custom-events.md) mätvärden. |
-| `_experience.analytics.event1to100.`<br/>`event1.value` -<br/>`_experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [Anpassade händelser](../../components/metrics/custom-events.md) mått med önskad mängd. |
+| `_experience.analytics.customDimensions.`<br/>`eVars.eVar1`<br/>`[...]`<br/>`_experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
+| `_experience.analytics.customDimensions.`<br/>`hierarchies.hier1`<br/>`[...]`<br/>`_experience.analytics.customDImensions.`<br/>`hierarchies.hier5` | Anger respektive [Hierarki](/help/components/dimensions/hierarchy.md) dimension. |
+| `_experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter`<br/>`[...]`<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Åsidosättning av avgränsare för listpropp. Det här fältet rekommenderas inte eftersom avgränsaren hämtas automatiskt från [Trafikvariabeladministratör](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Om du använder det här fältet kan det skapa en felmatchning mellan den avgränsare som används och den avgränsare som förväntas i Analytics. |
+| `_experience.analytics.customDimensions.`<br/>`listProps.prop1.values`<br/>`[...]`<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.values` | En strängarray som innehåller respektive [List Prop](../vars/page-vars/prop.md#list-props) värden. |
+| `_experience.analytics.customDimensions.`<br/>`lists.list1.list[].value`<br/>`[...]`<br/>`_experience.analytics.customDimensions.`<br/>`lists.list3.list[].value` | Sammanfogar alla `value` strängar i respektive `list[]` array till respektive [Listvariabel](../vars/page-vars/list.md). Avgränsaren väljs automatiskt baserat på det värde som anges i [Rapportsvitsinställningar](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/list-var-admin.md). |
+| `_experience.analytics.customDimensions.`<br/>`props.prop1`<br/>`[...]`<br/>`_experience.analytics.customDimensions.`<br/>`props.prop75` | Anger respektive [Prop](../../components/dimensions/prop.md) dimension. |
+| `_experience.analytics.event1to100.`<br/>`event1.id`<br/>`[...]`<br/>`_experience.analytics.event901to1000.`<br/>`event1000.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till respektive [Anpassade händelser](../../components/metrics/custom-events.md) mätvärden. Varje händelse-ID finns i dess överordnade 100-grupp. Om du till exempel vill använda serialisering på `event678`, använda `_experience.analytics.event601to700.event678.id`. |
+| `_experience.analytics.event1to100.`<br/>`event1.value`<br/>`[...]`<br/>`_experience.analytics.event901to1000.`<br/>`event1000.value` | Ökar respektive [Anpassade händelser](../../components/metrics/custom-events.md) mått med önskad mängd. Varje händelse finns i den överordnade 100-gruppsgruppen. Fältet för `event567` är `_experience.analytics.event501to600.event567.value`. |
 | `identityMap.ECID[0].id` | The [Adobe Experience Cloud ID för identitetstjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | `marketing.trackingCode` | Anger [Spårningskod](../../components/dimensions/tracking-code.md) dimension. |
 | `media.mediaTimed.completes.value` | Måtten för Media Analytics [Innehållet har slutförts](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-complete). |
@@ -110,8 +110,8 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | `placeContext.geo.postalCode` | The [Postnummer](../../components/dimensions/zip-code.md) dimension. |
 | `placeContext.geo.stateProvince` | The [USA](../../components/dimensions/us-states.md) dimension. |
 | `placeContext.localTime` | Hjälper till att fylla i [Tidszoner](/help/analyze/reports-analytics/reports.md) i Rapport och analys. Visas som `t_time_info` in [Dataflöden](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md). |
-| `productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1` -<br/>`productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till eVars. |
-| `productListItems[]._experience.analytics.`<br/>`event1to100.event1.value` -<br/>`productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till event. |
+| `productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1`<br/>`[...]`<br/>`productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till eVars. |
+| `productListItems[]._experience.analytics.`<br/>`event1to100.event1.value`<br/>`[...]`<br/>`productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till event. |
 | `productListItems[].lineItemId` | The [Kategori](../../components/dimensions/category.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
 | `productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. If `productListItems[].SKU` och `productListItems[].name` båda innehåller data, värdet i `productListItems[].SKU` används. |
 | `productListItems[].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
