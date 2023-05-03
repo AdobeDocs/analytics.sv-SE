@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 41154580c272514e504c5478215bb67795488de3
+source-git-commit: a653d60fd423d2853254a8c96252a39f08f9a3b4
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1098'
 ht-degree: 78%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 78%
    + [Nyheter i Analysis Workspace](analysis-workspace/new-features-in-analysis-workspace.md)
    + Projekt {#build-workspace-project}
       + [Översikt över projekt](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + Mappar på arbetsytan {#workspace-folders}
          + [Om mappar i arbetsytan](analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -136,7 +137,7 @@ ht-degree: 78%
       + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)
       + [Algoritmisk attribuering](analysis-workspace/attribution/algorithmic.md)
       + [Bästa praxis för attribuering](analysis-workspace/attribution/best-practices.md)
-      + [Vanliga frågor](analysis-workspace/attribution/faq.md)
+      + [Vanliga frågor och svar](analysis-workspace/attribution/faq.md)
    + [Resa-IQ](analysis-workspace/journey-iq.md)
    + [Segment IQ](analysis-workspace/segment-iq.md)
    + Virtual Analyst {#virtual-analyst}
