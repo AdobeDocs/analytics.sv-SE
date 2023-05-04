@@ -1,39 +1,38 @@
 ---
 title: HTTPS-krypteringsalgoritmer som stöds
-description: Den 23 juni 2022 tar vi bort stöd för TLS 1.2-ciphers som använder SHA1 eller CBC för kunder med chiffreringssäkerhetsnivån "Hög".
+description: Säkerhetsinställningar och certifikattyper för TLS-chiffrering.
 feature: Regional Data Collection
 exl-id: f1cbb0cb-fd65-4f22-8594-0d97b6906698
-source-git-commit: 84a8dc9c6052d34e9dea370e444c83e84bf17852
+source-git-commit: 299de03c05f6a8af4f6c5d98c76bae54eec4c088
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
 
 # HTTPS-krypteringsalgoritmer som stöds
 
-Adobe erbjuder två krypteringsnivåer för att uppfylla olika kundbehov när det gäller säkerhet vid datainsamling från första part. Dessa nivåer avgör vilka krypteringsalgoritmer som stöds för HTTPS-anslutningar med våra servrar. Kunderna använder&quot;Standard&quot; som endast stöder moderna krypteringsalgoritmer. &quot;Hög&quot; stöder en mindre lista med krypteringsalgoritmer för kunder som är mer oroade över dessa anslutningar. För båda säkerhetsnivåerna uppdaterar Adobe regelbundet uppsättningen algoritmer som stöds baserat på nuvarande säkerhetspraxis. Kontakta kundtjänst om du vill ändra säkerhetsinställningarna för chiffrering.
+## Cipher Security Levels
 
-Den 23 juni 2022 tar vi bort stöd för TLS 1.2-ciphers som använder SHA1 eller CBC för kunder med chiffreringssäkerhetsnivån &quot;Hög&quot;.  Den här ändringen påverkar säker datainsamling för slutanvändare i äldre operativsystem.
+Adobe erbjuder två krypteringsnivåer för att uppfylla olika kundbehov när det gäller säkerhet vid datainsamling från första part. Dessa nivåer avgör vilka krypteringsalgoritmer som stöds för HTTPS-anslutningar med våra servrar. Adobe granskar och uppdaterar regelbundet de algoritmer som stöds baserat på nuvarande säkerhetspraxis. Kontakta kundtjänst om du vill ändra säkerhetsinställningarna för chiffrering.
 
-Följande TLS 1.2-skrivare stöds inte längre:
+Standard kräver TLS 1.2 eller senare och minst 128-bitars kryptering. Den är utformad för att ge största möjliga enhetskompatibilitet samtidigt som den upprätthåller säker kryptering.
 
-* TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-* TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-* TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-* TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-* TLS_RSA_WITH_AES_128_CBC_SHA
-* TLS_RSA_WITH_AES_256_CBC_SHA
-* TLS_RSA_WITH_AES_128_GCM_SHA256
-* TLS_RSA_WITH_AES_256_GCM_SHA384
+Hög chiffreringssäkerhetsnivå kräver TLS 1.2 eller senare och tar bort stödet för svagare cifer. Den är utformad för kunder som vill ha den starkaste krypteringen och inte bryr sig om stöd för äldre enheter.
 
-Följande klienter påverkas av den här ändringen eftersom de saknar stöd för aktuella krypteringsstandarder:
+Följande klienter är kända för att inte kunna ansluta med krypteringssäkerhet inställd på Hög.
 
 * Windows 8.1 och tidigare (senast uppdaterat 2018)
 * Windows Phone 8.1 och tidigare (senast uppdaterad 2016)
 * OS X 10.10 och tidigare (senast uppdaterat 2017)
 * iOS 8.4 och tidigare (senast uppdaterad 2015)
 
-Android-enheter påverkas inte av den här ändringen.
+## HTTPS-certifikattyper som stöds
 
-Kunder som har chiffersäkerhetsnivån inställd på Standard påverkas inte av den här ändringen.
+Adobe stöder både RSA- och ECC-certifikattyper för att uppfylla olika kundbehov. RSA-certifikat stöds i större utsträckning för klienter, men ECC-certifikat använder mindre bearbetning både på server- och klientsidan. För certifikat som hanteras av Adobe tillhandahålls både RSA och ECC. För kundhanterade certifikat rekommenderas både RSA och ECC. Moderna klienter stöder både RSA och ECC. Följande klienter har endast stöd för RSA-certifikat:
+
+* Windows Vista och tidigare (senast uppdaterat 2012)
+* Windows Phone 8.0 och tidigare (senast uppdaterad 2014)
+* OS X 10.8 och tidigare (senast uppdaterat 2013)
+* iOS 5.1 och tidigare (senast uppdaterad 2012)
+* Android 4.3 och tidigare (senast uppdaterat 2013)
