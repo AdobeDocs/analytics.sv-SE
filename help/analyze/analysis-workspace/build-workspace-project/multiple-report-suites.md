@@ -4,7 +4,7 @@ description: Lär dig hur och varför du skapar projekt i Workspace med flera ra
 feature: Workspace Basics
 role: User, Admin
 exl-id: 0429ddd9-935f-44ef-ae1e-97bb02e6e2df
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: 33e2ca30ec385861c35c9d06e870d5b38d8f2e34
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Flera rapportsviter
 
-Nu kan du skapa projekt i Analysis Workspace med data från mer än en rapportserie. Rapportsviterna väljs nu på panelnivå så att du kan välja olika rapportsviter för varje panel i samma Workspace-projekt.
+Du kan skapa projekt i Analysis Workspace med data från mer än en rapportserie. Rapportsviterna väljs på panelnivå så att du kan välja olika rapportsviter för varje panel i samma Workspace-projekt.
 
 Den här funktionen är användbar om du t.ex. vill
 
 * Jämför data från två olika regioner och data finns i två olika rapportsviter. Du kan skapa tabeller och visualiseringar för att jämföra data sida vid sida.
 
-* Bygg en kontrollpanel med mätvärden och visualiseringar för att rapportera till andra organisationer. Nu kan ni hämta data från olika rapportsviter till samma projekt.
+* Bygg en kontrollpanel med mätvärden och visualiseringar för att rapportera till andra organisationer. Ni kan hämta data från olika rapportsviter till samma projekt.
 
 Här är en video om ämnet:
 

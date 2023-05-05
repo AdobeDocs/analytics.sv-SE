@@ -3,7 +3,7 @@ description: Lär dig grunderna i att skapa projekt i Analysis Workspace
 title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: dadda9e105526c05ee763f4502f38524f5ddb1f0
+source-git-commit: 33e2ca30ec385861c35c9d06e870d5b38d8f2e34
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Skapa projekt
 
-[Projekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan ni ta fram affärskritiska data som kan delas med intressenter både inom och utanför organisationen.
+[Projekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan ni visa affärskritiska analyser som kan delas med intressenter inom eller utanför organisationen.
 
 Allmän information om hur du kommer igång med Analysis Workspace finns i [Analysis Workspace - översikt](/help/analyze/analysis-workspace/home.md).
 

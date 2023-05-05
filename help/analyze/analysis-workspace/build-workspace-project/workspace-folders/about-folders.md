@@ -4,14 +4,14 @@ keywords: Analysis Workspace
 title: Översikt över mappar
 feature: Workspace Basics
 exl-id: 68281840-d9b7-42e9-9543-4aeb7f0bdef7
-source-git-commit: 00c52c345be15522cd8f2aa30ab214ec05dc6575
+source-git-commit: 33e2ca30ec385861c35c9d06e870d5b38d8f2e34
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Om mappar i Analytics
+# Mappar i Analysis Workspace
 
 Mappar i Analytics är ett mapphanteringssystem som visas på Adobe Analytics startsida och när **Arbetsyta** > **Projekt** är markerat.
 
