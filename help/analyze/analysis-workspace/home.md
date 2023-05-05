@@ -4,9 +4,9 @@ description: Analysis Workspace är det främsta analysverktyget för Adobe Anal
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: f3ba2c1b63b9b7fa0da4c0d3b784036abdd9df1b
+source-git-commit: dadda9e105526c05ee763f4502f38524f5ddb1f0
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '744'
 ht-degree: 2%
 
 ---
@@ -90,11 +90,11 @@ En analys i Analysis Workspace kallas [projekt](/help/analyze/analysis-workspace
 
 Du kan skapa ett projekt i Analysis Workspace enligt beskrivningen i [Skapa projekt](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md).
 
-### Spara och dela projekt
+### Spara och dela ett projekt
 
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md).
 
-När du är klar med projektet och samlar in åtgärdbara insikter är det klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
+När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
 
 ### Projektledning i Analysis Workspace
 
