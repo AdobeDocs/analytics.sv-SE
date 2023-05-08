@@ -3,9 +3,9 @@ title: HTTPS-krypteringsalgoritmer som stöds
 description: Säkerhetsinställningar och certifikattyper för TLS-chiffrering.
 feature: Regional Data Collection
 exl-id: f1cbb0cb-fd65-4f22-8594-0d97b6906698
-source-git-commit: 299de03c05f6a8af4f6c5d98c76bae54eec4c088
+source-git-commit: 1ca7f750387fd9ae034d10ebf3e47190cf33d4b7
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ## Cipher Security Levels
 
-Adobe erbjuder två krypteringsnivåer för att uppfylla olika kundbehov när det gäller säkerhet vid datainsamling från första part. Dessa nivåer avgör vilka krypteringsalgoritmer som stöds för HTTPS-anslutningar med våra servrar. Adobe granskar och uppdaterar regelbundet de algoritmer som stöds baserat på nuvarande säkerhetspraxis. Kontakta kundtjänst om du vill ändra säkerhetsinställningarna för chiffrering.
+Adobe erbjuder två krypteringsnivåer för att uppfylla olika kundbehov när det gäller säkerhet vid datainsamling från första part. Dessa nivåer avgör vilka krypteringsalgoritmer som stöds för HTTPS-anslutningar med Adobe-servrar. Adobe granskar och uppdaterar regelbundet de algoritmer som stöds baserat på nuvarande säkerhetspraxis. Kontakta kundtjänst om du vill ändra säkerhetsinställningarna för chiffrering.
 
-Standard kräver TLS 1.2 eller senare och minst 128-bitars kryptering. Den är utformad för att ge största möjliga enhetskompatibilitet samtidigt som den upprätthåller säker kryptering.
+Standard kräver TLS 1.2 eller senare och minst 128-bitars kryptering. Den är utformad för att ge största möjliga enhetskompatibilitet samtidigt som den bevarar säker kryptering.
 
 Hög chiffreringssäkerhetsnivå kräver TLS 1.2 eller senare och tar bort stödet för svagare cifer. Den är utformad för kunder som vill ha den starkaste krypteringen och inte bryr sig om stöd för äldre enheter.
 
