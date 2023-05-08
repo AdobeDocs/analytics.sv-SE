@@ -4,10 +4,10 @@ description: Analysis Workspace är det främsta analysverktyget för Adobe Anal
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: 33e2ca30ec385861c35c9d06e870d5b38d8f2e34
+source-git-commit: 6a695e3b617a5def52719280cd0d979598b6c4c9
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -97,28 +97,6 @@ Projekt kan ordnas i mappar och undermappar enligt beskrivningen i [Mappar i Ana
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md).
 
 När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
-
-<!--
-
-Maybe add this back in if the video isn't too outdated. Otherwise, delete this section.
-
-### Project management in Analysis Workspace
-
-The following video provides an overview of project management in Analysis Workspace:
-
->[!VIDEO](https://video.tv.adobe.com/v/24035/?quality=12)
-
--->
-
-## Använd Virtual Analyst för att bättre förstå avvikelser
-
-Virtual Analyst är en uppsättning funktioner i Adobe Analytics som använder prediktiva algoritmer och maskininlärning för att ge insikter i avvikelser som påverkar verksamheten. Ni kan automatisera de vanligaste och dyra arbetsflödena inom datavetenskap för att identifiera vad som driver ovanliga beteenden i era data.
-
-Virtual Analyst innehåller följande funktioner:
-
-* [Analysidentifiering:](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) Tillhandahåller en statistisk metod för att fastställa hur ett givet mätvärde har ändrats i förhållande till tidigare data.
-* [Bidragsanalys:](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/run-contribution-analysis.md) Identifiera de mest bidragande faktorerna till avvikelser i era data.
-* [Intelligenta aviseringar:](/help/analyze/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md) Identifierar och meddelar dig aktivt om dataavvikelser, vilket leder till snabbare insikter.
 
 ## Ytterligare resurser {#resources}
 

@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 983ca17062abbaac05b468fda63e82055d787667
+source-git-commit: 6a695e3b617a5def52719280cd0d979598b6c4c9
 workflow-type: tm+mt
-source-wordcount: '3903'
+source-wordcount: '3939'
 ht-degree: 32%
 
 ---
@@ -25,6 +25,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Maj 2023** |  |
+| Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analyze/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
+| Skapa projekt | Skapade en ny artikel som förklarar i detalj hur du [Skapa projekt](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md) i Analysis Workspace. |
 | **April 2023** |  |
 | Överför användarresurser och ange förfallodatum för konton | Lagt till information om hur [överföra användarresurser och ange förfallodatum för konton](/help/admin/admin/user-management2/users-assets.md). |
 | 2 nya slutpunktsguider för Adobe Analytics 2.0 API | <ul><li>[API för Analytics-Dimensioner](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/dimensions/)</li><li>[API för analysmått](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/metrics/)</li></ul> |

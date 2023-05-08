@@ -3,9 +3,9 @@ description: Lär dig grunderna i att skapa projekt i Analysis Workspace
 title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 33e2ca30ec385861c35c9d06e870d5b38d8f2e34
+source-git-commit: 6a695e3b617a5def52719280cd0d979598b6c4c9
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,9 @@ Så här lägger du till en komponent:
 
 1. Sök efter komponenten som du vill lägga till. När den visas i den vänstra listen drar du den till en panel eller visualisering i projektet.
 
-### Spara och dela projektet
+1. (Valfritt) Dela projektet enligt beskrivningen i [Spara och dela projektet](#save-and-share-the-project).
+
+## Spara och dela projektet
 
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md).
 
