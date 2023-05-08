@@ -3,9 +3,9 @@ description: Lär dig grunderna i att skapa projekt i Analysis Workspace
 title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a695e3b617a5def52719280cd0d979598b6c4c9
+source-git-commit: 35f8bea903d15f18642d4b2482fb99f591e3b386
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
    +++Skapa ett tomt projekt
 
-   1. Välj [!UICONTROL **Projekt**] tabbtangenten och sedan [!UICONTROL **Skapa projekt**].
+   1. På [!UICONTROL **Arbetsyta**] väljer du [!UICONTROL **Projekt**] på sidans vänstra sida och sedan väljer [!UICONTROL **Skapa projekt**].
 
    1. Välj om du vill skapa ett tomt projekt eller ett tomt mobilstyrkort
 
@@ -38,7 +38,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
    +++Skapa ett projekt från en mall
 
-   1. Välj [!UICONTROL **Rapporter**] -fliken.
+   1. På [!UICONTROL **Arbetsyta**] väljer du [!UICONTROL **Rapporter**] till vänster på sidan.
 
    1. Sök efter eller navigera till mallen som du vill använda och markera den när den visas.
 
