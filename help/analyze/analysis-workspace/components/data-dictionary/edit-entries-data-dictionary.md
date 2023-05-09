@@ -3,9 +3,10 @@ description: Med Data Dictionary i Analysis Workspace kan användare katalogiser
 title: Redigera poster i Data Dictionary
 feature: Components
 role: Admin
-source-git-commit: 04f7b3f4b543619cd4a8af418ce583e73ce65b9f
+exl-id: 4f15cad2-596e-41c3-89aa-4456d8e94fa0
+source-git-commit: 631f84794203cb0a1154d68149c9d64d7247ecd3
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -31,6 +32,10 @@ Så här redigerar du en komponent i Data Dictionary:
    Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension, ikon](assets/dimension-icon.png) är orange, **Segment** ![Segmentikon](assets/segment-icon.png) är blå, **Datumintervall** ![Ikon för datumintervall](assets/date-range-icon.png) är lila, och **Mått** ![Mätningsikon](assets/default-metric-icon.png) är gröna. Ikonen Adobe ![Adobe, ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mätvärden eller en segmentmall och räknikonen ![Beräkningsikon](assets/calculated-metric-icon-created.png) har angett ett beräknat mått som har skapats av en Analytics-administratör i organisationen.
 
 {{dd-filter-criteria}}
+
+1. (Valfritt) Välj **Sortera** icon ![Ikon för att sortera komponenter](assets/component-sort-icon.png)väljer du sedan något av följande filteralternativ för att sortera komponentlistan:
+
+   {{components-sort-options}}
 
 1. Markera den komponent som du vill redigera i listan med komponenter.
 

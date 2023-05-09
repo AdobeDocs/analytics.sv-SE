@@ -1,7 +1,7 @@
 ---
-source-git-commit: 82bb289183f04ec6f795ebfa489436a7b0cc021f
+source-git-commit: 94765bfa306240fb02d2ea788234cc0043c65d8f
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -48,6 +48,16 @@ ht-degree: 1%
 | [!UICONTROL **Skapad av**] | Visar namnet på den användare som skapade komponenten. |
 | [!UICONTROL **Förhandsgranska**] | Visar en förhandsgranskning av hur komponenten ser ut i Analysis Workspace. |
 | [!UICONTROL **Senast ändrad**] | Visar den dag som komponenten senast ändrades. Det här avsnittet visas när du visar segment, beräknade värden och datumintervall. |
+
+{style="table-layout:auto"}
+
+## Alternativ för komponentsortering {#components-sort-options}
+
+| Alternativ |  -funktion |
+|---------|----------|
+| [!UICONTROL **Rekommenderas**] | Sorterar komponenter med de som rekommenderas högst upp i listan. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i listan. |
+| [!UICONTROL **Alfabetiskt**] | Sorterar komponenterna i bokstavsordning. |
+| [!UICONTROL **Kategorisisk**] | Sorterar komponenter efter komponenttyp (dimension, mått, segment, datumintervall). |
 
 {style="table-layout:auto"}
 
