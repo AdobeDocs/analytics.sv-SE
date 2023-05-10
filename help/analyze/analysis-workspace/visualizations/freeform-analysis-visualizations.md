@@ -5,9 +5,9 @@ title: Översikt över visualiseringar
 feature: Visualizations
 role: User, Admin
 exl-id: b40aa942-4a08-4ff3-9895-e92f9a187b54
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: ce3fa1ae1a4785a6ed2adfe9128f180d3eaa341a
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1273'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 3%
 
 Workspace erbjuder ett antal visualiseringar som gör att du kan generera visuella representationer av dina data, t.ex. stapeldiagram, dondiagram, histogram, linjediagram, kartor, punktdiagram med mera. De flesta visualiseringstyper är välbekanta för dig om du använder Adobe Analytics. Men Analysis Workspace har visualiseringsinställningar och många nya eller unika visualiseringstyper med interaktiva funktioner.
 
-Du kan komma åt visualiseringar från den övre vänstra ikonen i Workspace, en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html)eller genom att högerklicka i arbetsflödet.
-
-![](assets/viz-rail.png)
+## Visualiseringstyper
 
 Följande visualiseringstyper finns i Analysis Workspace:
 
@@ -34,6 +32,7 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Frihandstabell](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md) | En friformstabell är inte bara en datatabell, utan också en interaktiv visualisering. Det är grunden för dataanalys i Workspace. |
 | [Histogram](/help/analyze/analysis-workspace/visualizations/histogram.md) | Ett histogram lurar besökare, besök eller träffar i grupper baserat på en mätvolym. |
 | [Vågrätt fält](/help/analyze/analysis-workspace/visualizations/horizontal-bar.md) | Visar vågräta staplar som representerar olika värden för ett eller flera mätvärden. |
+| [Sammanfattning av nyckelmått](/help/analyze/analysis-workspace/visualizations/key-metric.md) | Visar hur ett mätresultat trendar inom en enskild tidsram, eller låter dig jämföra mätprestanda över två tidsramar. |
 | [Linjediagram](/help/analyze/analysis-workspace/visualizations/line.md) | Representerar mätvärden med hjälp av en rad för att visa hur värden ändras under en tidsperiod. Ett linjediagram använder tid längs x-axeln. |
 | [Mappa](/help/analyze/analysis-workspace/visualizations/map-visualization.md) | Gör att du kan skapa en visuell karta över alla mått (inklusive beräknade värden). |
 | [Spridningsdiagram](/help/analyze/analysis-workspace/visualizations/scatterplot.md) | Visar relationen mellan dimensionsobjekt och upp till tre mätvärden. |
@@ -42,6 +41,26 @@ Följande visualiseringstyper finns i Analysis Workspace:
 | [Text](/help/analyze/analysis-workspace/visualizations/text.md) | Gör att du kan lägga till användardefinierad text på arbetsytan. Användbar för att lägga till ytterligare kontext till analyser och insikter, utöver att utnyttja beskrivningar av paneler/visualisering |
 | [Treemap-diagram](/help/analyze/analysis-workspace/visualizations/treemap.md) | Visar hierarkiska data (i trädstrukturer) som en uppsättning kapslade rektanglar. |
 | [Venn](/help/analyze/analysis-workspace/visualizations/venn.md) | Använder cirklar för att beskriva måttöverlappningen för upp till 3 segment. |
+
+## Lägga till visualiseringar i en panel
+
+1. Öppna det Analysis Workspace-projekt där du vill lägga till en visualisering.
+
+1. Använd någon av följande metoder för att lägga till visualiseringen:
+
+   * I den vänstra listen väljer du **Visualiseringar** icon <!-- add icon -->och sedan dra en visualisering till panelen där du vill lägga till den.
+
+      ![](assets/viz-rail.png)
+
+   * På panelen där du vill lägga till visualiseringen väljer du **Plus** väljer du sedan den ikon som representerar den visualisering som du vill lägga till. Håll pekaren över ikonen för varje visualisering för att se dess namn.
+
+      ![Knapp för att lägga till en visualisering](assets/visualization-add-to-panel.png)
+
+   * Lägg till en [tom panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html)väljer du sedan den visualisering som du vill lägga till.
+
+      ![Tom panel](assets/blank_panel.png)
+
+   * Högerklicka på en befintlig panel i ditt Analysis Workspace-projekt och välj sedan [!UICONTROL **Duplicera visualisering**] eller [!UICONTROL **Kopiera visualisering**].
 
 ## Anpassa visualiseringsinställningar
 
