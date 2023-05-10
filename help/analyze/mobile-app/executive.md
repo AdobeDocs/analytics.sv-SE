@@ -4,9 +4,9 @@ title: Chefshandbok för Adobe Analytics Dashboards
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: daa9e22468430434b23f515d6dd22fee4228d728
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1254'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,15 @@ Så här använder du kontrollpaneler:
 
 1. Välj ett företag. När du har loggat in på instrumentpanelerna visas **[!UICONTROL Choose a company]** visas. På den här skärmen visas de inloggningsföretag som du tillhör. Tryck på det företagsnamn som är associerat med det styrkort som delas med dig.
 
-1. I styrkortslistan visas sedan alla styrkort som har delats med dig. Tryck på det styrkort som du vill visa.
+   I styrkortslistan visas alla styrkort som delas med dig.
 
-   ![Välj ett företag](assets/nextseq.png)
+1. Tryck på styrkortet som du vill visa.
+
+   Om du har tillgång till mer än en organisation under en inloggning är alla styrkort från din organisation tillgängliga i styrkortslistan.
+
+   Du kan sortera styrkortslistan efter styrkortets titel, organisationsnamn eller senast visade. Du kan till och med söka efter ett visst styrkort.
+
+   ![Välj ett företag](assets/mobile-home-screen.png)
 
    Om du loggar in och ser ett meddelande som säger att inget har delats kontrollerar du följande med markören:
 
