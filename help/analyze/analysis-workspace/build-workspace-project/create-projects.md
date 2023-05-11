@@ -3,9 +3,9 @@ description: Lär dig grunderna i att skapa projekt i Analysis Workspace
 title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 35f8bea903d15f18642d4b2482fb99f591e3b386
+source-git-commit: 6d1515ee21044941b4b79d18b4438e0647471c57
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Allmän information om hur du kommer igång med Analysis Workspace finns i [Anal
 
 I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till de viktigaste byggstenarna för ett Analysis Workspace-projekt: paneler, visualiseringar och komponenter.
 
-## Skapa ett projekt från ett tomt projekt eller en mall
+## Skapa ett projekt från ett tomt projekt eller en rapport
 
 1. I Adobe Analytics väljer du [!UICONTROL **Arbetsyta**].
 
-1. Välj om du vill skapa ett tomt projekt eller om du vill skapa ett projekt från en mall:
+1. Välj om du vill skapa ett tomt projekt eller om du vill skapa ett projekt från en rapport:
 
    +++Skapa ett tomt projekt
 
@@ -36,15 +36,15 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
 +++
 
-   +++Skapa ett projekt från en mall
+   +++Skapa ett projekt från en rapport
 
    1. På [!UICONTROL **Arbetsyta**] väljer du [!UICONTROL **Rapporter**] till vänster på sidan.
 
-   1. Sök efter eller navigera till mallen som du vill använda och markera den när den visas.
+   1. Sök efter eller navigera till rapporten som du vill använda och markera den när den visas.
 
-      En uppsättning standardmallar är tillgängliga som standard. Dessutom kan din organisation ha skapat egna mallar som du kan välja bland.
+      En uppsättning standardrapporter är tillgängliga som standard. Dessutom kan din organisation ha skapat anpassade rapporter som du kan välja bland.
 
-      Mer information finns i [Kom igång med rapporter och analyser](/help/analyze/reports-analytics/getting-started.md).
+      Mer information finns i&quot;Navigera på fliken Rapporter&quot; i [Adobe Analytics landningssida](/help/analyze/landing.md).
 +++
 
 1. Därefter måste du lägga till paneler, visualiseringar och komponenter i projektet. Lägg först till paneler i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägga till paneler i projektet](#add-panels-to-the-project). Du kan sedan lägga till visualiseringar i alla paneler. Slutligen kan du lägga till komponenter till valfria paneler eller visualiseringar.
