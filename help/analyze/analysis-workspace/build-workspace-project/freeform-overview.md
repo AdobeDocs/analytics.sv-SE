@@ -5,9 +5,9 @@ title: Översikt över projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: 5b22de34d4c99d68609d39711a970f871c893b74
+source-git-commit: 7b3acbab3f65b02ceaaea154fb6152cfb0bf07f0
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1515'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Sidan Projekt innehåller följande information:
 |---|---|
 | [Redigera inställningar](/help/analyze/analysis-workspace/user-preferences.md) | Hantera inställningar för Analysis Workspace och dess tillhörande komponenter för alla nya projekt eller paneler som du skapar. |
 | [Skapa mapp](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Lägg till en ny mapp eller undermapp i listan över projekt och mappar. |
-| [Skapa projekt](/help/analyze/analysis-workspace/home.md) | Starta ett nytt projekt från grunden eller från en [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html#analysis-workspace). |
+| [Skapa projekt](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md) | Starta ett nytt projekt från grunden eller från en rapport. |
 | Visa mer | Visar alternativ för att skapa ett tomt projekt eller ett mobilstyrkort, [visa självstudiekurser](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html), eller [visa versionsinformation](/help/release-notes/latest.md). |
 | Visa mappar och projekt | Välj om du vill visa mappstrukturen för projekt. Mer information finns i [Om mappar i Analytics](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Anpassa tabell (ikon) | Här kan du anpassa informationen som visas för varje projekt på sidan Projekt. |
@@ -65,7 +65,7 @@ I ett projekt innehåller menyn alternativ för att hantera ditt projekt, lägga
 
 | Menyalternativ | Beskrivning |
 |---|---|
-| Projekt | Innehåller vanliga åtgärder för projekthantering, inklusive Nytt, Öppna, Spara, Spara som och [Spara som mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html). Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Hämta CSV och PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) kan du exportera data från arbetsytan. [Projektinformation och inställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?#info-settings) har många alternativ för att hantera ditt projekt. |
+| Projekt | Innehåller vanliga åtgärder för projekthantering, inklusive Nytt, Öppna, Spara som och [Spara som företagsrapport](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md). Du kan även uppdatera hela projektet för att hämta de senaste data och definitionerna genom att klicka på Uppdatera projekt. [Hämta CSV och PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) kan du exportera data från arbetsytan. [Projektinformation och inställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?#info-settings) har många alternativ för att hantera ditt projekt. |
 | Redigera | Ångra eller gör om den senaste åtgärden. Rensa alla återställer projektet till en tom startpunkt. |
 | Infoga | Infoga nya paneler eller visualiseringar från den här menyn. Du kan även infoga nya paneler och visualiseringar från den vänstra listen. |
 | [Komponenter](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) | Skapa nya segment, beräknade värden, datumintervall eller aviseringskomponenter från projektet. Du kan också skapa nya komponenter från den vänstra listen. Om komponentdefinitionerna nyligen har ändrats hämtas de senaste definitionerna av Uppdatera komponenter. |
@@ -132,7 +132,7 @@ Följande är vanliga åtgärder i Projects Manager och kan utföras på ett ell
 
 | Åtgärd | Beskrivning |
 |---|---|
-| Lägg till | Skapa ett nytt projekt från grunden eller börja från ett [mall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html). |
+| Lägg till | Skapa ett nytt projekt från grunden eller börja från ett [rapport](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md). |
 | Tagga eller godkänn | Välj &quot;Tagga&quot; eller &quot;Godkänn&quot; för att ordna dina projekt och göra dem enklare att söka efter. |
 | [Dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. |
 | Ta bort | Ta bort projektet. |
