@@ -4,18 +4,16 @@ title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
 exl-id: f638c6a9-1c2c-4936-a787-281269f95afc
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: 646eb5aeefb17ded89a7041df6f6ad927b799f3f
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '887'
 ht-degree: 2%
 
 ---
 
 # Rapporteringsaktivitetshanteraren
 
->[!NOTE]
->
->Den här funktionen är för närvarande under betatestning.
+{{release-limited-testing}}
 
 The [!UICONTROL Reporting Activity Manager] gör att du kan se rapporteringskapaciteten för varje rapportserie i din organisation. Som administratör får ni detaljerad insyn i rapporteringen av förbrukning och hjälper er att enkelt diagnostisera och åtgärda kapacitetsproblem under högkvalitativa rapporteringstider.
 
@@ -64,13 +62,13 @@ Klicka på titellänken för en rapportserie som du vill visa information om.
 
 ![rapportsvit](/help/admin/admin/assets/indiv-report-ste.png)
 
-### Linjediagram
+### Linjediagram {#line}
 
 Raddiagrammet visar rapporteringsaktiviteten för den valda rapportsviten under de senaste två timmarna.
 
 * X-axeln visar rapporteringskapaciteten under de senaste två timmarna.
-* Y-axeln visar den genomsnittliga väntetiden för en fråga i sekunder.
-* Du kan hovra över linjediagrammet för att visa punkter i tid och genomsnittlig väntetid för det tillfället.
+* Y-axeln visar rapportanvändningskapaciteten % för den valda rapportsviten, per minut.
+* Du kan hovra över linjediagrammet för att visa tidpunkter där användningskapaciteten % är den högsta procentandelen för den minuten.
 
    ![detalj](/help/admin/admin/assets/detail.png)
 
@@ -80,7 +78,7 @@ Du kan filtrera tabellen efter program (se listan i tabellen nedan), efter anvä
 
 ![filter](/help/admin/admin/assets/filter.png)
 
-### Sammanfattningsnummer
+### Sammanfattningsnummer {#summary}
 
 ![filter](/help/admin/admin/assets/summary_numbers.png)
 
@@ -96,7 +94,7 @@ Följande information visas i sammanfattningsnumren:
 
 {style="table-layout:auto"}
 
-### Tabell
+### Tabell över information om rapportsviten {#details}
 
 I tabellen nedan finns information om rapportsviten.
 
@@ -116,7 +114,7 @@ I tabellen nedan finns information om rapportsviten.
 
 {style="table-layout:auto"}
 
-## Avbryt rapporteringsbegäranden
+## Avbryt rapporteringsbegäranden {#cancel}
 
 Så här avbryter du en begäran
 
@@ -133,7 +131,7 @@ Programanvändare i Workspace ser till exempel följande meddelande i sina proje
 
 ![cancel-user-notice](/help/admin/admin/assets/cancel-user-facing.png)
 
-## Frågor och svar
+## Frågor och svar {#faq}
 
 | Fråga | Svar |
 | --- | --- |
