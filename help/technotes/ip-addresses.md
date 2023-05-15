@@ -3,7 +3,7 @@ title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 feature: Data Configuration and Collection
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: b68d961ae68e5a803c46cee350724cfd5e20fc1e
+source-git-commit: 23de7e6fb9f3b1276c7725ac99154e96e09a8469
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -64,8 +64,8 @@ Om din organisation föredrar att tillåta specifika IP-adressintervall kan du a
 | Japan | `66.117.31.0/24` |
 | London | `66.235.156.0/24` |
 | London | `185.34.188.0/22` |
-| London | `130.248.244.32/29` |
-| London | `130.248.244.40/29` |
+| London | `130.248.152.0/22` |
+| London | `130.248.244.0/23` |
 | Oregon | `66.235.132.0/22` |
 | Oregon | `130.248.150.0/24` |
 | Oregon | `130.248.160.0/21` |
