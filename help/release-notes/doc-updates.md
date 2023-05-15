@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 08185446c031582bfea21cb35cbfa365fa8f4239
+source-git-commit: 50983b3cdc6ee003593eacc5b9a158eae761e4a5
 workflow-type: tm+mt
-source-wordcount: '4052'
-ht-degree: 31%
+source-wordcount: '4094'
+ht-degree: 30%
 
 ---
 
@@ -26,6 +26,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Maj 2023** |  |
+| Förbättrad mappning av IP-till-geopositionering | Skapade ett ämne [Vanliga frågor](https://experienceleague.adobe.com/docs/analytics/technotes/ip-geo-mapping.html?lang=en). |
+| Rapporteringsaktivitetshanteraren | Den här betatestningsdokumentationen har uppdaterats, särskilt avsnittet om [Visa rapporteringsaktivitet för enskilda rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/reporting-activity.html#view-reporting-activity-for-individual-report-suites). |
 | Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analyze/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
 | Skapa projekt | Skapade en ny artikel som förklarar i detalj hur du [Skapa projekt](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md) i Analysis Workspace. |
 | Sortera komponenter i den vänstra listen | Lagt till information om hur du sorterar komponentlistan i den vänstra listen.Se avsnittet Sök, filtrera och sortera komponentlistan i [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md). |
