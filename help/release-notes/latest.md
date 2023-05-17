@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 890742781a59532828003f8ba660043b9f1c73a1
+source-git-commit: 6fe32c13ecd6f15aae9d0d42789c263da6463fce
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1374'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (maj 2023)
 
-**Senaste uppdatering**: 11 maj 2023
+**Senaste uppdatering**: 17 maj 2023
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -26,7 +26,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | **Sortera komponenter i Analysis Workspace** | Ett nytt sorteringsalternativ är nu tillgängligt när du visar komponenter i den vänstra listen eller i datamappningslistan i Analysis Workspace. Du kan sortera komponenter efter Rekommenderat (de som används oftast), Alfabetiskt eller Kategoriserat (text).<p>Tidigare kunde du bara söka efter eller filtrera komponenter. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=en)</p> | Ej tillämpligt | 17 maj 2023 |
 | **Ta bort rader som innehåller dynamiska dimensioner från en frihandstabell** | I en friformstabell i Analysis Workspace kan du nu snabbt ta bort specifika rader som innehåller dynamiska dimensioner med hjälp av x-ikonen. När du gör det tillämpas automatiskt filterregeln &quot;Är inte lika med&quot;.<p>Tidigare var det enda sättet att ta bort rader som innehöll dynamiska dimensioner att manuellt skapa en regel i filterdialogrutan. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html?lang=en)</p> | Ej tillämpligt | 17 maj 2023 |
 | **Ny knapp för att lägga till en visualisering i en panel** | En ny knapp finns nu längst ned på varje panel i Analysis Workspace, så att du snabbt kan lägga till en visualisering. <p>Tidigare var de enda sätten att lägga till en visualisering på en panel att dra en visualisering från den vänstra listen, duplicera eller kopiera en befintlig visualisering eller skapa en tom panel. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=en#add-visualizations-to-a-panel)</p> | Ej tillämpligt | 17 maj 2023 |
-| **Djuplänkning (mobilapp)** | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. | TBD | TBD |
+| **Djuplänkning (mobilapp)** | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. | Ej tillämpligt | 17 maj 2023 |
 
 {style="table-layout:auto"}
 

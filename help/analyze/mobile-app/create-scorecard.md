@@ -1,19 +1,19 @@
 ---
-description: Skapa ett Adobe Analytics-styrkort
-title: Skapa ett mobilstyrkort
+description: Skapa och dela Adobe Analytics instrumentpaneler med styrkort
+title: Skapa och dela mobilstyrkort
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: ebe6d83d-bbae-43de-bf85-35258bf6c1d0
-source-git-commit: 8707bde9ddda96ab63a916bda9dfb35e8b9b1063
+source-git-commit: 455b206ea145a3364d20048041976a1472c8abd7
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2441'
 ht-degree: 0%
 
 ---
 
 # Skapa ett mobilstyrkort
 
-Följande information instruerar de som arbetar med Adobe Analytics data om hur man konfigurerar och presenterar mobila styrkort för företagsanvändare. Börja med att titta på videon Adobe Analytics dashboards Scorecard Builder:
+Följande information instruerar de som arbetar med Adobe Analytics data om hur man konfigurerar och presenterar mobila styrkort för företagsanvändare. Börja med att titta på videon Adobe Analytics dashboards scorecard builder:
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
@@ -21,7 +21,7 @@ Ett Adobe Analytics-styrkort visar viktiga datavisualiseringar för chefsanvänd
 
 ![Exempelstyrkort](assets/intro_scorecard.png)
 
-Som kurator för det här styrkortet kan du använda styrkortsverktyget för att konfigurera vilka rutor som ska visas på styrkortet för den verkställande konsumenten. Du kan också konfigurera hur detaljerade vyer, eller delningarna, kan justeras när användaren trycker på plattorna. Gränssnittet i Scorecard Builder visas nedan:
+Som kurator för det här styrkortet kan du använda styrkortsverktyget för att konfigurera vilka rutor som ska visas på styrkortet för den verkställande konsumenten. Du kan också konfigurera hur detaljerade vyer, eller delningarna, kan justeras när användaren trycker på plattorna. Styrkortbyggargränssnittet visas nedan:
 
 ![Styrkortbyggaren](assets/scorecard_builder.png)
 
@@ -37,7 +37,7 @@ Du kommer åt [!UICONTROL Blank Mobile Scorecard] mall antingen genom att skapa 
 ### Skapa ett nytt projekt {#create}
 
 1. Öppna Adobe Analytics och klicka på **[!UICONTROL Workspace]** -fliken.
-1. Klicka **[!UICONTROL Create project]** och väljer **[!UICONTROL Blank mobile scorecard]** projektmall.
+1. Klicka **[!UICONTROL Create project]** och väljer **[!UICONTROL Blank Mobile Scorecard]** projektmall.
 1. Klicka på **[!UICONTROL Create]**.
 
 ![Styrkortsmall](assets/new_template.png)
@@ -55,7 +55,7 @@ Så här implementerar du styrkortsmallen:
 
    ![Val av rapportsvit](assets/properties_save.png)
 
-1. Om du vill lägga till en ny platta i styrkortet drar du ett mått från den vänstra panelen och släpper det i **[!UICONTROL Drag and Drop Metrics Here]** zon. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
+1. Om du vill lägga till en ny platta i styrkortet drar du en måttenhet från den vänstra panelen och släpper den i **[!UICONTROL Drag and Drop Metrics Here]** zon. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
 
    ![Lägg till rutor](assets/build_list.png)
 
@@ -164,7 +164,7 @@ Om du vill ta bort [!UICONTROL Unspecified] dimensionsobjekt från dina data, g�
 
 ## Visa och konfigurera egenskaper för paneler {#tiles}
 
-När du klickar på en platta i Styrkortbyggaren visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att tillämpa segment.
+När du klickar på en platta i styrkortsverktyget visas egenskaperna och egenskaperna för plattan och dess detaljbild i den högra listen. På den här listen kan du ange en ny **Titel** för plattan och konfigurera plattan genom att tillämpa segment.
 
 ![Egenskapspanelen](assets/properties-tile-new.png)
 
@@ -212,7 +212,7 @@ Om du vill lägga till text i en detaljbildruta väljer du en layout som visar `
 
 ## Ta bort komponenter {#remove}
 
-Om du vill ta bort en komponent som har tillämpats på hela styrkortet klickar du var som helst på styrkortet utanför rutorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **Första gången du besöker** segment:
+Om du vill ta bort en komponent som används på hela styrkortet klickar du var som helst på styrkortet utanför plattorna och tar sedan bort den genom att klicka på **x** som visas när du hovrar över komponenten, som visas nedan för **Första gången du besöker** segment:
 
 ![Remove_components](assets/new_remove.png)
 
@@ -336,6 +336,25 @@ Så här delar du styrkortet med en verkställande användare:
 
 ![Dela_styrkort](assets/new_share.png)
 
-När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör senare ändringar i styrkortet i Styrkortbyggaren uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när styrkortet har uppdaterats i sin app.
+När du har delat ett styrkort kan mottagarna komma åt det på sina kontrollpaneler i Analytics. Om du gör efterföljande ändringar av styrkortet i styrkortsverktyget uppdateras de automatiskt i det delade styrkortet. Chefsanvändare ser sedan ändringarna när de har uppdaterat styrkortet i sin app.
 
 Om du uppdaterar styrkortet genom att lägga till nya komponenter kanske du vill dela styrkortet igen (och kontrollera **[!UICONTROL Share embedded components]** för att se till att dina chefsanvändare har tillgång till dessa ändringar.
+
+### Dela styrkort via en delbar länk
+
+Genom att använda en delbar länk är det enkelt att dela ett styrkort i ett e-postprogram, dokument eller textmeddelandeprogram. Med den delbara länken kan mottagarna öppna styrkortet på sina datorer eller i kontrollpanelernas mobilapp. Enkel, djup länkning gör det ännu enklare att dela projekt och öka engagemanget med era intressenter.
+
+Dela ett styrkort med hjälp av en delbar länk
+
+1. Klicka på **[!UICONTROL Share]** meny och välj **[!UICONTROL Share scorecard]**.
+
+   ![Dela_styrkort](assets/share-scorecard.png)
+
+1. Kopiera länken och klistra in den i ett e-postmeddelande, dokument eller en snabbmeddelandeapp.
+
+   När en mottagare använder ett datorprogram eller en webbläsare för att öppna länken öppnas projektet i Workspace.
+
+   När en mottagare öppnar länken på en mobil enhet öppnas styrkortet direkt i kontrollpanelsappen för Analytics.
+
+   Om en mottagare inte har laddat ned mobilappen dirigeras han/hon till applistan i App Store eller Google Play Store där han/hon kan ladda ned den.
+
