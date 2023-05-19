@@ -4,9 +4,9 @@ title: Filtrera och sortera tabeller
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: 7f5fca4f7c3641d47e5d1d929a196d5e380c1e6b
+source-git-commit: 9899b5e0fbdfd5264be9d414477caad38d4550ae
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Du kan snabbt utesluta vissa rader från tabellen utan att behöva öppna filter
 
 >[!NOTE]
 >
->När du utelämnar rader enligt beskrivningen i det här avsnittet, visas en [!UICONTROL **Är inte lika med**] regeln används automatiskt i [**[!UICONTROL Advanced filtering]**](#apply-a-simple-or-advanced-filter) -dialogrutan.
+>När du utelämnar rader enligt beskrivningen i det här avsnittet, visas en [!UICONTROL **Uteslut alltid objekt**] regeln används automatiskt i den avancerade filterdialogrutan. (Du kan visa den tillämpade regeln genom att markera filterikonen och sedan [**[!UICONTROL Show advanced]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 Så här exkluderar du snabbt vissa rader från en friformstabell:
 
@@ -54,7 +54,7 @@ Så här filtrerar du data i frihandstabeller:
    | [!UICONTROL **Sök efter ord eller fras**] | Ange ett ord eller en fras som du vill filtrera efter. Endast rader som innehåller det angivna ordet eller den exakta frasen visas. |
    | [!UICONTROL **Inkludera ospecificerad (ingen)**] | Välj det här alternativet om du vill visa data i tabellen som inte faller inom någon av tabellens dimensioner. <!--what is this?--> |
 
-1. (Valfritt) Om du vill filtrera efter olika villkor eller efter flera villkor väljer du [!UICONTROL **Avancerad filtrering**].
+1. (Valfritt) Om du vill filtrera efter olika villkor eller efter flera villkor väljer du [!UICONTROL **Visa avancerat**].
 
    Följande avancerade filteralternativ är tillgängliga:
 
