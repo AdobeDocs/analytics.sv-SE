@@ -4,7 +4,7 @@ title: Komponenter – översikt
 feature: Components
 role: User, Admin
 exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
-source-git-commit: 6247f44aca1e6aba6cf02ed34a0e26ef5e182021
+source-git-commit: 8856293e4f0114245e32db16809a964ccac5430f
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Klicka på knappen **[!UICONTROL Components]** ikonen i den vänstra listen. Du 
 
 ![](assets/component-overview.png)
 
-Du kan också justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
+Du kan även justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
 
 ## Mått {#dimensions}
 
@@ -102,6 +102,8 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 1. Markera komponenten när den visas i listrutan.
 
 ### Filtrera komponentlistan
+
+{{release-limited-testing-section}}
 
 1. Välj **Komponenter** icon ![Ikon för komponenter](assets/components-icon.png) till vänster.
 
