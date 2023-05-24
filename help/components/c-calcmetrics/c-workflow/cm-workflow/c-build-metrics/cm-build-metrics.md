@@ -3,9 +3,9 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Skapa mätvärden
 feature: Calculated Metrics
 exl-id: 12bb3734-e25d-4c67-8c62-e1226d9aef94
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
 
 * Klicka **[!UICONTROL + Add]** högst upp på [Beräknad måtthanterare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), eller
 
-* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en rapport och klicka på Metrics-ikonen  ![](assets/metrics_icon.png) för att visa måttspåret och sedan klicka **[!UICONTROL Add]**.
+* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en rapport och klicka på Metrics-ikonen  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) för att visa måttspåret och sedan klicka **[!UICONTROL Add]**.
 
 ![](assets/cm_builder_ui.png)
 
@@ -67,7 +67,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Sammanfattning </span> </td> 
-   <td colname="col3"> <p>The <span class="uicontrol"> Sammanfattning </span> formeln uppdateras varje gång du ändrar måttdefinitionen. Formeln visas också i måttfältet till vänster när du håller muspekaren över ett mätresultat och klickar på <img placement="inline"  src="assets/i_icon.png" id="image_BDA0EAF89C19440CB02AE248BA3F968E" /> ikon. </p> </td> 
+   <td colname="col3"> <p>The <span class="uicontrol"> Sammanfattning </span> formeln uppdateras varje gång du ändrar måttdefinitionen. Formeln visas också i måttfältet till vänster när du håller muspekaren över ett mätresultat och klickar på <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" /> ikon. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Definition </span> </td> 
@@ -79,7 +79,7 @@ Det finns flera sätt att komma åt verktyget för beräkning av mått:
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Operator </span> </td> 
-   <td colname="col3"> <p>dividerat med ( <img placement="inline"  src="assets/divided_icon.png" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) är standardoperatorn och det finns operatorerna +, - och x. </p> </td> 
+   <td colname="col3"> <p>dividerat med ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) är standardoperatorn och det finns operatorerna +, - och x. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <span class="uicontrol"> Förhandsgranska </span> </td> 

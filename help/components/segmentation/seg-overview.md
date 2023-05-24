@@ -3,9 +3,9 @@ description: Med segment kan du identifiera undergrupper av besökare baserat p�
 title: Om segment
 feature: Segmentation
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: 14c5acb9dbd46fac3dc2465c1200b478853270e9
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -86,9 +86,9 @@ Den här videon ger en kort översikt över vilka segmentbehållare som är och 
 
 Du kommer åt segmentbyggaren genom att:
 
-* Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](assets/segment_icon.png) i den vänstra navigeringen. Klicka på i segmentlisten som visas **[!UICONTROL Add]**, eller
+* Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka på i segmentlisten som visas **[!UICONTROL Add]**, eller
 
-* Överst i segmenthanteraren klickar du på **[!UICONTROL + Add]**.  ![Knappen Lägg till](assets/add_button.png)
+* Överst i segmenthanteraren klickar du på **[!UICONTROL + Add]**.  ![Knappen Lägg till](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)
 
    eller
 

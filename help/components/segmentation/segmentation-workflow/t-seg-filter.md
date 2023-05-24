@@ -3,9 +3,9 @@ description: Filtrera efter taggar, ägare och andra filter (Visa alla, Min, Del
 title: Filtrera segment
 feature: Segmentation
 exl-id: 895366ff-0d09-4bed-811c-be4208880cc1
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '161'
 ht-degree: 3%
 
 ---
@@ -16,11 +16,11 @@ Filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, F
 
 Filtrering gör det enklare att söka efter segment i segmentlisten.
 
-1. Klicka på knappen **[!UICONTROL Filters]** ikon:  ![](assets/filter_icon.png)
+1. Klicka på knappen **[!UICONTROL Filters]** ikon:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
    ![](assets/filtering.png)
 
-1. Följande filter är tillgängliga:
+2. Följande filter är tillgängliga:
 
    | Filternamn | Beskrivning |
    |---|---|

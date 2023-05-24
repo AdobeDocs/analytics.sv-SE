@@ -4,9 +4,9 @@ title: Filtrera och sortera tabeller
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: 9899b5e0fbdfd5264be9d414477caad38d4550ae
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -67,19 +67,19 @@ Så här filtrerar du data i frihandstabeller:
 
 1. Välj [!UICONTROL **Använd**] för att filtrera data.
 
-   The **Filter** icon ![Filtrerad tabell med blå filterikon](assets/table-filter-blue-icon.png) blir blå när ett filter används i tabellen.
+   The **Filter** icon ![Filtrerad tabell med blå filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) blir blå när ett filter används i tabellen.
 
 ## Sortera tabeller
 
 Du kan sortera data i en frihandstabell efter en valfri kolumn i Analysis Workspace som är ett mått.
 
-En nedåtpil ![Ikonen nedpil, sorterad tabellkolumn](assets/table-sort-arrow-icon.png) är synlig i kolumnrubriken som data sorteras efter.
+En nedåtpil ![Ikonen nedpil, sorterad tabellkolumn](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) är synlig i kolumnrubriken som data sorteras efter.
 
 Så här sorterar du data i en frihandstabell efter en viss kolumn:
 
 1. Håll pekaren över kolumnrubriken som du vill sortera data efter.
 
-1. Välj nedpilen när den visas.
+2. Välj nedpilen när den visas.
 
    ![Ikonen nedpil, sorterad tabellkolumn](assets/table-sort.png)
 

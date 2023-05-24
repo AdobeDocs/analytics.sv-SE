@@ -5,7 +5,7 @@ uuid: ef5c276c-5f74-4741-b6fa-4c79eda29f62
 feature: Report Builder
 role: User, Admin
 exl-id: b5a83532-9fa7-4f1f-b744-e5d74781fffb
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 1%
@@ -18,13 +18,9 @@ Du kan skydda alla begäranden i en arbetsbok mot att lägga till och redigera b
 
 Om du låser en arbetsbok som analytiker kan du skydda din arbetsbok mot obehörig åtkomst från andra användare i organisationen. Samtidigt kan dessa användare fortfarande uppdatera förfrågningarna i arbetsboken.
 
-Om du vill skydda en arbetsbok mot redigering klickar du på **[!UICONTROL Locked]** på verktygsfältet Report Builder ( ![](assets/locked_icon.png)
+Om du vill skydda en arbetsbok mot redigering klickar du på **[!UICONTROL Locked]** på verktygsfältet Report Builder ( ![](assets/locked_icon.png)).
 
-).
-
-Om du vill ta bort skyddet för en arbetsbok klickar du på **[!UICONTROL Unlocked]** ( ![](assets/unlocked_icon.png)
-
-).
+Om du vill ta bort skyddet för en arbetsbok klickar du på **[!UICONTROL Unlocked]** ( ![](assets/unlocked_icon.png)).
 
 Du kan låsa upp en låst arbetsbok om du har någon av följande behörigheter:
 

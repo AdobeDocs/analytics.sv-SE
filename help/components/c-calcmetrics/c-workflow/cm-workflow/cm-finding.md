@@ -3,9 +3,9 @@ description: Beskriver de två viktigaste sätten att hitta metrisk sortering oc
 title: Hitta mätvärden
 feature: Calculated Metrics
 exl-id: 532e9ebb-91c7-4b29-afc5-afb99e00219b
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '243'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Beskriver de två viktigaste sätten att hitta mätvärden: sortering och filtre
 
 ## Sortering {#section_89F9C4D515084F5796F2A54D468BF6C8}
 
-När du öppnar en rapport och klickar på Metrisk-ikonen  ![](assets/metrics_icon.png) till vänster om en rapport för att ta upp Metrics-järnvägen, **[!UICONTROL Sort By]** i den nedrullningsbara listan i Metrics Selector visas fyra sorteringsalternativ:
+När du öppnar en rapport och klickar på Metrisk-ikonen  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg)) till vänster om en rapport för att ta upp Metrics-järnvägen, **[!UICONTROL Sort By]** i den nedrullningsbara listan i Metrics Selector visas fyra sorteringsalternativ:
 
 ![](assets/cm_sort.png)
 

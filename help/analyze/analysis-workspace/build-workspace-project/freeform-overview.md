@@ -5,9 +5,9 @@ title: Översikt över projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 75c551de-297e-4c45-95e6-77472be6628a
-source-git-commit: 7b3acbab3f65b02ceaaea154fb6152cfb0bf07f0
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1523'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Sidan Projekt innehåller följande information:
 
 >[!NOTE]
 >
->Vissa kolumner visas inte som standard. Om du vill anpassa kolumnerna som visas klickar du på **Anpassa tabell** icon ![Anpassa tabell](assets/projects-page-customize-columns-icon.png).
+>Vissa kolumner visas inte som standard. Om du vill anpassa kolumnerna som visas klickar du på **Anpassa tabell** icon ![Anpassa tabell](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg).
 
 
 | Element | Beskrivning |

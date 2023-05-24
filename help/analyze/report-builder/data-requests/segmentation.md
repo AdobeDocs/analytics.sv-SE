@@ -4,9 +4,9 @@ title: Hantera segment (Report Builder)
 feature: Report Builder
 role: User, Admin
 exl-id: c4ad89e0-91c9-47e1-a226-69d82fdb8918
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -86,18 +86,18 @@ Tillgängliga filter:
 
 Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbok i stället för att behöva gå till Begärandeguiden.
 
-1. Klicka på ikonen Kontroll ( ![](assets/control_icon.png)) bredvid segmentlistrutan.
+1. Klicka på ikonen Kontroll ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) bredvid segmentlistrutan.
 
    ![](assets/seg_control.png)
 
-1. Markera alla segment som du vill ska visas i segmentkontrollen eller markera **[!UICONTROL Select All]**.
-1. Lägg märke till alternativet **[!UICONTROL Automatically refresh linked requests upon item selection]**.
+2. Markera alla segment som du vill ska visas i segmentkontrollen eller markera **[!UICONTROL Select All]**.
+3. Lägg märke till alternativet **[!UICONTROL Automatically refresh linked requests upon item selection]**.
 
    * Om det här alternativet är markerat uppdateras alla begäranden som använder den här kontrollen.
    * Om den inte är markerad uppdateras de associerade parametrarna för begäran, men förfrågningarna uppdateras inte.
 
-1. Ange segmentkontrollens övre vänstra cellplacering.
-1. Klicka **[!UICONTROL OK]** och segmentkontrollen visas på den angivna platsen.
+4. Ange segmentkontrollens övre vänstra cellplacering.
+5. Klicka **[!UICONTROL OK]** och segmentkontrollen visas på den angivna platsen.
 
    ![](assets/seg_control2.png)
 

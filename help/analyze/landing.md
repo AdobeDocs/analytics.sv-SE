@@ -4,9 +4,9 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: 54ec253516a6d735f02914887c72ef966ce36862
+source-git-commit: a4af84fffad816ea94b170de0f5d8cbc7dc61a50
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3805'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Fler utbildningsalternativ:
 
 ### Hantera företagsrapporter {#manage-company-reports}
 
-Administratörer kan filtrera projektlistan för att visa och hantera företagsrapporter. Fastnålade objekt förblir fästa följt av listan med företagsrapporter som identifieras av ![rapportikon](assets/report-icon.png) rapportikon . I den här vyn kan du ta bort, byta namn på, tagga eller godkänna en eller flera rapporter.
+Administratörer kan filtrera projektlistan för att visa och hantera företagsrapporter. Fastnålade objekt förblir fästa följt av listan med företagsrapporter som identifieras av ![rapportikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) rapportikon . I den här vyn kan du ta bort, byta namn på, tagga eller godkänna en eller flera rapporter.
 
 Visa och hantera företagsrapporter
 

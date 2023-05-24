@@ -5,7 +5,7 @@ uuid: b5c07718-e25c-4ba9-885d-3a2a47dd9f60
 feature: Activity Map
 role: User, Admin
 exl-id: ceec1c10-57e7-462f-8f78-9ed86c938563
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: a4af84fffad816ea94b170de0f5d8cbc7dc61a50
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Plugin-program för Activity Map-webbläsare:
 1. Återgå till Chrome-adressfältet och ange `chrome://extensions`.
 1. Markera rutan Utvecklarläge.
 1. Klicka på Läs in opackade tillägg och välj den uppzippade mappen i popup-fönstret.
-1. Om en Adobe Analytics-ikon visas  ![](assets/an_icon.png){width="70px"} nedladdningen har lagts till i verktygsfältet. Nu kan du [starta Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md) från sidan.
+1. Om en Adobe Analytics-ikon läggs till i verktygsfältet har hämtningen slutförts. <br/><img src="./assets/an_icon.png" width="150px"/><br/>Nu kan du [starta Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md) från sidan.
 
 ## Installera plugin-programmet Activity Map i Firefox {#section_1F69D3D22DB34D6992747B1A62C1D2DA}
 
@@ -47,7 +47,7 @@ Plugin-program för Activity Map-webbläsare:
 1. Klicka på **[!UICONTROL Install Now]**.
 1. Klicka på **[!UICONTROL Open Menu]** ikonen längst upp till höger och välj **[!UICONTROL Add-Ons]**. ![](assets/firefox_install3.png){width="250px"}
 1. Activity Map ska vara listad som ett av Firefox-tilläggen.
-1. Om en Adobe Analytics-ikon visas  ![](assets/an_icon.png) nedladdningen har lagts till i verktygsfältet. Nu kan du [starta Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md) från sidan.
+1. Om en Adobe Analytics-ikon läggs till i verktygsfältet har hämtningen slutförts. <br/><img src="./assets/an_icon.png" width="150px"/><br/>Nu kan du [starta Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md) från sidan.
 
 ## Installera plugin-programmet Activity Map i Internet Explorer {#section_1A33705D7F784C4A88C9026ADC860FB8}
 

@@ -5,10 +5,10 @@ uuid: f2920dee-4245-4617-a02e-03726dde2bb5
 feature: Report Builder
 role: User, Admin
 exl-id: d3388990-7919-461d-a96e-4c996b8bdb8b
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '460'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 På panelen Alternativ kan du ange datuminställningar, fördröjningsinställningar (Aktuella data), logginformation och konfigurera uppdateringar.
 
-1. I verktygsfältet Tillägg klickar du på **[!UICONTROL Options]** ![](assets/options_icon.png):
+1. I verktygsfältet Tillägg klickar du på **[!UICONTROL Options]** ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg):
 
 | Element | Beskrivning |
 |--- |--- |

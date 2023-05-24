@@ -5,9 +5,9 @@ role: User, Admin
 solution: Analytics
 feature: Components
 exl-id: d8212ab1-d639-41b5-b28e-da580a3628b0
-source-git-commit: 383a38e90cacf31ae92122b9e96845e5cd2950b6
+source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ När anteckningar är aktiverade visas anteckningsikoner i styrkortsverktyget. A
 
 ![](assets/view-annotations.png)
 
-När anteckningsikoner visas kan du inte helt visa eller interagera med anteckningar på arbetsytan i verktyget. Använd förhandsgranskningsläget för att visa och interagera med anteckningar så som de visas i programmet. ![](assets/preview-icon.png)
+När anteckningsikoner visas kan du inte helt visa eller interagera med anteckningar på arbetsytan i verktyget. Använd förhandsgranskningsläget för att visa och interagera med anteckningar så som de visas i appen ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) **Förhandsgranska**.
 
-Anteckningsfärger markeras när anteckningen skapas i arbetsytan. Grå anteckningar indikerade förekomsten av mer än en anteckning. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
+Anteckningsfärger markeras när anteckningen skapas i arbetsytan. Grå anteckningar indikerade förekomsten av mer än en anteckning.
 
 ## Visa diagramanteckningar
 
