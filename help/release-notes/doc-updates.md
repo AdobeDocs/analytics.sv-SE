@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 50983b3cdc6ee003593eacc5b9a158eae761e4a5
+source-git-commit: 5a555c1e2da1659086c0f244e41894192e592d19
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4122'
 ht-degree: 30%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Maj 2023** |  |
+| Spektrum-ikoner | Ersatt, där så är lämpligt, skärmdumpar av användargränssnittsikoner i dokumentationen med referenser till motsvarande ikoner i [Adobe Spectrum Design System](https://spectrum.adobe.com/page/icons/). |
 | Förbättrad mappning av IP-till-geopositionering | Skapade ett ämne [Vanliga frågor](https://experienceleague.adobe.com/docs/analytics/technotes/ip-geo-mapping.html?lang=en). |
 | Rapporteringsaktivitetshanteraren | Den här betatestningsdokumentationen har uppdaterats, särskilt avsnittet om [Visa rapporteringsaktivitet för enskilda rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/reporting-activity.html#view-reporting-activity-for-individual-report-suites). |
 | Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analyze/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
