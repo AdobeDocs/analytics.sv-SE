@@ -3,24 +3,31 @@ description: I hanteraren för beräknade mätvärden kan du skapa ett arbetsfl�
 title: Godkänna beräknade mätvärden
 feature: Calculated Metrics
 exl-id: ec39937c-27e8-4725-832c-5e1c989d1c9f
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 406ed620c880cd48bea17ccc13d0397c18f082b6
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 5%
+source-wordcount: '175'
+ht-degree: 3%
 
 ---
 
 # Godkänna beräknade mätvärden
 
-I hanteraren för beräknade mätvärden kan du skapa ett arbetsflöde som innefattar godkännande av mätvärden för olika programnivåer och för specifika avdelningar eller grupper.
+I Calculated Metrics Manager kan du skapa ett arbetsflöde som innefattar att godkänna mätvärden för olika programnivåer och för specifika avdelningar eller grupper.
 
-Så här flaggar du ett beräknat mått som godkänt:
+Så här markerar du beräknade värden som godkända:
 
-1. Markera kryssrutan till vänster om måttrubriken i Beräknad måtthanterare.
-1. Klicka **[!UICONTROL Approve]** överst i hanteringsaktiviteten.
-1. Överväg att dela de godkända beräknade mätvärdena med din organisation.
-1. Klicka på **[!UICONTROL OK]**.
-1. Lägg märke till godkännandeikonen bredvid det beräknade måttet i listan:  ![](assets/cm_approve_icon.png)
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**] för att gå till Calculated Metrics Manager.
 
-1. Du kan också klicka **[!UICONTROL Unapprove]** att ta bort detta mätresultat från listan över godkända mätvärden.
-1. Och du kan filtrera på godkända mätvärden genom att klicka på **[!UICONTROL Show Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Approved]**.
+1. Markera kryssrutan till vänster om de mätvärden som du vill markera som godkända i Calculated Metrics Manager.
+
+1. Välj **[!UICONTROL Approve]** i hanteringsaktiviteten högst upp på sidan.
+
+   Om du vill ta bort ett mätvärde från listan över godkända mätvärden väljer du **[!UICONTROL Unapprove]**.
+
+1. (Valfritt) Dela mätvärdena med andra användare i organisationen enligt beskrivningen i [Dela beräknade värden](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md).
+
+1. Välj **[!UICONTROL OK]**.
+
+   Lägg märke till godkännandeikonen bredvid det beräknade måttet i listan:  ![](assets/cm_approve_icon.png)
+
+1. (Valfritt) Välj alternativet **Filter** ikon, expandera **[!UICONTROL Other filters]** väljer **[!UICONTROL Approved]**.

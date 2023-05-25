@@ -1,44 +1,43 @@
 ---
 description: Läs mer om
-title: Mätvärdestyp och attribuering
+title: Mättyp och attribuering
 feature: Calculated Metrics
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '472'
+ht-degree: 1%
 
 ---
 
-# Mätvärdestyp och attribuering
+# Mättyp och attribuering
 
-Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange mättyp och attribueringsmodell.
+När [bygga ett beräknat mätvärde](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)kan du ange måtttyp och attribueringsmodell.
 
 ## Mätningstyp
 
-![](assets/cm_type_alloc.png)
+Så här anger du måtttypen när du skapar ett beräknat mått:
 
-| Mätningstyp | Definition |
-|---|---|
-| Standard | Dessa mått är samma som de som används i standard [!DNL Analytics] rapportering. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Till exempel: [Beställningar] / [Besök] tar emot order för den specifika radartikeln och dividerar den med antalet besök för den specifika radartikeln. |
-| Totalt | Använd summan för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalt mätvärde visas samma totala antal på varje radartikel. Totala värden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Till exempel: [Beställningar] / [Totalt antal besök] visar hur stor andel av beställningarna som gäller för ALLA besök på er webbplats, inte bara besöken till den specifika radobjektet. |
+1. Markera kugghjulsikonen bredvid mätvärdet vars typ du vill markera.
 
-## Kolumnattributmodell
+   ![](assets/cm_type_alloc.png)
 
->[!IMPORTANT]
->
->[Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) reviderat sätt på vilket allokeringsmodeller i beräknade värden utvärderas. Som en del av denna ändring migrerades beräknade värden som använder en icke-standardallokeringsmodell till nya förbättrade attribueringsmodeller:
->
->* En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attributmodeller och uppslagsfönster](/help/analyze/analysis-workspace/attribution/models.md).
->* Allokeringsmodellerna&quot;sista beröringen i marknadsföringskanalen&quot; och&quot;Första beröringen i marknadsföringskanalen&quot; migreras till de nya attribueringsmodellerna&quot;Sista beröringen&quot; respektive&quot;Första beröringen&quot; (Obs! &quot;Marknadsföringskanaler&quot; kommer inte att bli inaktuella - bara de två allokeringsmodellerna som visas i beräknade värden kommer att vara det).
->* Dessutom kommer vi att korrigera hur linjär allokering beräknas. För kunder som använder beräknade värden med linjär allokering kan rapporterna ändras något för att återspegla den nya, korrigerade attribueringsmodellen. Den här förändringen av beräknade värden återspeglas i Analysis Workspace, Rapporter och analyser, Rapporterings-API:t och Report Builder. Mer information finns i **How Linear Allocation works (from 19 juli 2018)**, nedan.
+1. Välj bland följande alternativ:
 
+   | Mätningstyp | Definition |
+   |---|---|
+   | Standard | Dessa mått är samma som de som används i standard [!DNL Analytics] rapportering. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Till exempel: [Beställningar] / [Besök] tar emot order för den specifika radartikeln och dividerar den med antalet besök för den specifika radartikeln. |
+   | Summa | Använd totalsumma för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalmått visas samma totaltal på varje radartikel. Summavärden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Till exempel: [Beställningar] / [Totalt antal besök] visar hur stor andel av beställningarna som gäller för ALLA besök på er webbplats, inte bara besöken till den specifika radobjektet. |
+
+## Kolumnattribueringsmodell
 
 ## Hur linjär tilldelning fungerar (från och med den 19 juli 2018)
 
-I juli 2018 ändrade Adobe hur linjär tilldelning rapporteras för beräknade värden. Den här förändringen påverkar API:erna för Analysis Workspace, rapporter och analyser, Report Builder, Activity Map och rapportering. Ändringen påverkar i första hand eVars och andra dimensioner som är bestående. Observera att dessa ändringar endast gäller för beräknade värden och inte påverkar andra rapporter som använder linjär allokering (till exempel rapporten Sidor i Rapporter och analyser). Andra rapporter där linjär allokering används kommer även fortsättningsvis att använda den befintliga metoden för linjär allokering.
+[Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) är hur allokeringsmodeller i beräknade värden utvärderas.
 
-I följande exempel visas hur beräknade värden med linjär allokering kommer att ändras i rapporteringen:
+En fullständig lista över icke-standardattribueringsmodeller och uppslagsfönster som stöds finns i [Attributmodeller och uppslagsfönster](/help/analyze/analysis-workspace/attribution/models.md).
+
+I följande exempel visas hur beräknade mätvärden med linjära tilldelningar fungerar vid rapportering:
 
 |  | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 | Träff 6 | Träff 7 |
 |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -55,27 +54,3 @@ Det finns vissa skillnader i hur linjär attribuering fungerar mellan dessa två
 
 * I Rapporter och analyser är (bearbetad) linjär attribuering alltid besöksbaserad, medan den i Workspace kan vara besöks- eller besöksbaserad.
 * Om inget värde skickades vid den första besöksträffen i Rapporter och analyser kvarstår (det inledande) värdet från föregående besök. Detta är INTE fallet i Workspace (Attribution IQ). Om inget värde skickas vid den första besöksträffen är &quot;Inget&quot; det ursprungliga värdet.
-
-## Hur linjär tilldelning fungerade före juli 2018
-
-Före den 19 juli 2018 beräknades linjär attribuering efter att en första beröring eller sista beröringspartiklar redan hade gjorts. Detta innebar att för den sista beröringsdelen ovan skulle eVar $10 fördelas enligt följande: A = 10 &#42; (3/6) = $5, B = 10 &#42; (2/6) = $3,33, C = 10 &#42; (1/6) = $1,67.
-
-För den första touch-eVar ovan ges A alla 10 dollar. För propen: A = 10 &#42; (2/4) = $5, B = 10 &#42; (1/4) = $2.50 och C = 10 &#42; (1/4) = $2,50. Så här sammanfattar du linjär allokering som den fungerade tidigare:
-
-| Värden | Aktuell eVar för senaste beröring | Aktuell eVar med första beröring | Aktuellt uttryck |
-|---|---|---|---|
-| PROMO A | $5.00 | $10.00 | $5.00 |
-| PROMO B | $3.33 | $0 | $2.50 |
-| PROMO C | $1.67 | $0 | $2.50 |
-| Totalt | $10.00 | $10.00 | $10.00 |
-
-**Sammanfattning av hur linjär allokering fungerar nu**
-
-Istället för att använda de beständiga värden som baseras på senaste beröring eller första beröring, [!DNL Analytics] använder nu bara de värden som skickades (den första raden i den översta tabellen). Inställningarna för dimensionsallokering påverkar inte längre det sätt på vilket linjär allokering beräknas (vilket innebär att props och eVars behandlas på samma sätt), och resultaten avspeglar det som ursprungligen skickades i stället för det första eller sista beröringsvärdet som kan ha varit bestående. I alla tre fallen är alltså A = 10 &#42; (2/4) = $5, B = 10 &#42; (1/4) = $2.50 och C = 10 &#42; (1/4) = $2,50.
-
-| Värden | Ny eVar för senaste beröring | Ny eVar med första beröring | Nytt utkast |
-|---|---|---|---|
-| PROMO A | $5.00 | $5.00 | $5.00 |
-| PROMO B | $2.50 | $2.50 | $2.50 |
-| PROMO C | $2.50 | $2.50 | $2.50 |
-| Totalt | $10.00 | $10.00 | $10.00 |

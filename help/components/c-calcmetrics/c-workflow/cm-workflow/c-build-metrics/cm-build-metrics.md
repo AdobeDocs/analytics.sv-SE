@@ -1,31 +1,28 @@
 ---
 description: I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
-title: Skapa mätvärden
+title: Bygg mätvärden
 feature: Calculated Metrics
 exl-id: 12bb3734-e25d-4c67-8c62-e1226d9aef94
-source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
+source-git-commit: c64b4199d93443b14e2012459a4d33fdd847eca1
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 1%
+source-wordcount: '955'
+ht-degree: 0%
 
 ---
 
-# Skapa mätvärden
+# Bygg mätvärden
 
-I verktyget Calculated Metrics Builder finns en arbetsyta där du kan dra och släppa Dimensioner, mått, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
+Adobe Analytics har en arbetsyta där du kan dra och släppa dimensioner, mätvärden, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa beräknade mätvärden.
 
-Det finns flera sätt att komma åt verktyget för beräkning av mått:
+Du kan börja skapa ett beräknat mått på något av följande sätt:
 
-* Öppna ett projekt i Analysis Workspace och klicka på  **[!UICONTROL + New]** > **[!UICONTROL Create Metric]** .
-* I [!DNL Analytics], gå till **[!UICONTROL Components]** > **[!UICONTROL Calculated Metrics]**.
-
-* Klicka **[!UICONTROL + Add]** högst upp på [Beräknad måtthanterare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), eller
-
-* Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en rapport och klicka på Metrics-ikonen  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) för att visa måttspåret och sedan klicka **[!UICONTROL Add]**.
+* Öppna ett projekt i Analysis Workspace och välj **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
+* Öppna ett projekt i Analysis Workspace och välj sedan **Plus** -ikonen bredvid [!UICONTROL **Mått**] till vänster.
+* I [!DNL Analytics], gå till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** väljer **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
 
 ![](assets/cm_builder_ui.png)
 
-## UI-komponenter {#section_9382AEEBA4244DD6A9F6C1DD3F6D076B}
+## Tillgängliga fält och områden {#section_9382AEEBA4244DD6A9F6C1DD3F6D076B}
 
 <table id="table_60A82936321047D1A335331BF83B0972"> 
  <thead> 

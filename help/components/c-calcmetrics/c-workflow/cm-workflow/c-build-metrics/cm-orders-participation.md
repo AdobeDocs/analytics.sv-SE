@@ -1,20 +1,23 @@
 ---
 description: Beskriver hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar. Detta kan anpassas till alla dimensioner eller framgångsrika händelser av intresse.
-title: Mätvärde för Order Assists
+title: Mätvärde för orderassistenten
 feature: Calculated Metrics
 exl-id: 33cb441d-d003-408d-ba67-1bcdd0e821ff
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '191'
+ht-degree: 0%
 
 ---
 
-# Mätvärde för Order Assists
+# Bygg upp en orderassistent
 
-Beskriver hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar. Detta kan anpassas till alla dimensioner eller framgångsrika händelser av intresse.
+Följande information förklarar hur du skapar ett mätvärde som visar vilka marknadsföringskanaler som hjälper dig att hantera beställningar. Detta kan anpassas till alla dimensioner eller framgångsrika händelser av intresse.
 
-1. Ange måttet&quot;Assisted Orders&quot; i beräkningsverktyget.
+1. Börja skapa ett beräknat mått enligt beskrivningen i [Bygg mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+
+1. I verktyget Beräknade mått anger du måttet&quot;Assisted Orders&quot;.
+
 1. Dra i ett ordningstal på arbetsytan Definition. Justera sedan attribueringsmodellen med inställningsverktyget genom att kontrollera **[!UICONTROL Use non-default attribution models]** kryssrutan.
 
    ![](assets/attr-model.png)
@@ -23,9 +26,12 @@ Beskriver hur du skapar ett mätvärde som visar vilka marknadsföringskanaler s
 
    ![](assets/custom-attr-model.png)
 
-1. Spara måtten.
-1. Skapa en frihandstabell i Analysis Workspace med mått för marknadsföringskanal, beställningar och nya mätvärden för Assisted Orders.
+1. Välj [!UICONTROL **Använd**] > [!UICONTROL **Spara**].
+
+1. I Analysis Workspace skapar du en frihandstabell med mått för marknadsföringskanal, beställningar och nya måtten för Assisted Orders.
 
    ![](assets/mktg-channel-assists.png)
 
-Det här är ett enkelt sätt att se vilka marknadsföringskanaler som har hjälpt till med körorder. Du kan också högerklicka på ett mätresultat i en frihandstabell och justera attribueringsmodellen direkt i tabellen.
+   Det här är ett enkelt sätt att se vilka marknadsföringskanaler som har hjälpt till med körorder. Du kan också högerklicka på ett mätresultat i en frihandstabell och justera attribueringsmodellen direkt i tabellen.
+
+1. (Valfritt) Dela mätvärdena med andra användare i organisationen enligt beskrivningen i [Dela beräknade värden](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md).

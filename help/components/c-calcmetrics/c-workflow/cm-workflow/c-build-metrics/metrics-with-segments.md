@@ -3,9 +3,9 @@ description: Genom att segmentera enskilda mätvärden kan ni göra mätjämför
 title: Segmenterade mätvärden
 feature: Calculated Metrics
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,32 @@ Låt oss säga att du vill jämföra olika aspekter av ett&quot;tyska besökarse
 * Hur många tyska besökare surfar på vissa sidor jämfört med internationella besökare som en procentandel av det totala antalet besökare?
 * Var är de största skillnaderna när det gäller vilket innehåll som nås av de olika segmenten?
 
-1. Om du inte har något jämförbart segment skapar du ett ad hoc-segment direkt i Calculated Metric Builder som heter&quot;Tyska besökare&quot;, där&quot;Länder&quot; är lika med&quot;Tyskland&quot;. Dra bara dimensionen Länder till arbetsytan Definition och välj Tyskland som värde:
+Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; och ett mätvärde som kallas&quot;internationella besökare&quot;:
+
+1. Skapa ett ad hoc-segment i beräkningsverktyget som kallas&quot;tyska besökare&quot;, där&quot;länder&quot; är lika med&quot;Tyskland&quot;.
+
+   Dra dimensionen Länder till arbetsytan Definition och markera [!UICONTROL **Tyskland**] som värdet:
 
    ![](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >Du kan även göra det här i dialogrutan [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md)men vi har förenklat arbetsflödet genom att göra dimensionerna tillgängliga i verktyget för beräkning av mått. &quot;Adhoc&quot; innebär att segmentet inte är synligt i **[!UICONTROL Segments]** listan i den vänstra listen. Du kan emellertid göra den offentlig genom att hålla markören över ikonen&quot;i&quot; bredvid den och klicka på **[!UICONTROL Make public]**.
+   >Du kan även göra det här i dialogrutan [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md)men vi har förenklat arbetsflödet genom att göra dimensionerna tillgängliga i verktyget för beräkning av mätvärden. &quot;Adhoc&quot; innebär att segmentet inte är synligt i **[!UICONTROL Segments]** listan i den vänstra listen. Du kan emellertid göra den offentlig genom att hålla markören över ikonen&quot;i&quot; bredvid den och klicka på **[!UICONTROL Make public]**.
 
-1. Om du inte har något jämförbart segment skapar du ett segment som kallas&quot;Internationella besökare&quot; där&quot;Länder&quot; inte är lika med&quot;Tyskland&quot;.
-1. Bygg och spara ett mätvärde som kallas&quot;tyska besökare&quot; genom att dra segmentet Tyskland till arbetsytan Definition och dra det unika besökarmåttet i det:
+1. Dra segmentet Tyskland till arbetsytan Definition och dra det unika besökarmåttet i det:
 
    ![](assets/german-visitors.png)
 
-1. Upprepa steg 3 med segmentet Internationell besökare och mätvärdet Unik besökare för att skapa ett internationellt besökarmått.
+1. Välj [!UICONTROL **Spara**] för att spara det beräknade måttet.
+
+1. Skapa ett ad hoc-segment i beräkningsverktyget som kallas&quot;Internationella besökare&quot;, där&quot;länder&quot; inte är lika med&quot;Tyskland&quot;.
+
+   Dra dimensionen Länder till arbetsytan Definition och välj [!UICONTROL **Tyskland**] som värde, välj sedan [!UICONTROL **är inte lika med**] som -operatorn.
+
+1. Dra det unika besökarmåttet i det.
+
+1. Välj [!UICONTROL **Spara**] för att spara det beräknade måttet.
+
 1. I Analysis Workspace drar du **[!UICONTROL Page]** Dimension till en frihandstabell och dra de två nya beräknade måtten intill varandra högst upp:
 
    ![](assets/workspace-pages.png)

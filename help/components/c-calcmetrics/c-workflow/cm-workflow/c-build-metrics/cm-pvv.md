@@ -3,32 +3,34 @@ description: Visar hur du skapar ett enkelt mått för"Sidvyer per besök".
 title: Skapa ett enkelt mätvärde för sidvisningar per besök
 feature: Calculated Metrics
 exl-id: 2d1c4677-b07c-4eca-97b7-e5e4594daee1
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '240'
 ht-degree: 6%
 
 ---
 
 # Skapa ett enkelt mätvärde för sidvisningar per besök
 
-Visar hur du skapar ett enkelt mått för&quot;Sidvyer per besök&quot;.
+I följande information förklaras hur du skapar ett enkelt mått för&quot;Sidvyer per besök&quot;.
 
-En detaljerad beskrivning av UI-komponenterna finns i [Byggmått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+En detaljerad beskrivning av UI-komponenterna finns i [Bygg mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
 
-Så här skapar du ett enkelt mått för&quot;Sidvyer per besök&quot;.
+Så här skapar du ett enkelt mått för&quot;Sidvyer per besök&quot;:
 
-1. Navigera till verktyget för beräkning av mått.
+1. Börja skapa ett mätvärde enligt beskrivningen i [Bygg mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
 1. Ange måttet&quot;Sidvyer per besök&quot; eller något liknande.
 1. Ge den ett användarvänligt **[!UICONTROL Description]** för att visa vad det används för.
-1. Välj höger **[!UICONTROL Format]**, i det här fallet Decimal.
+1. Välj höger **[!UICONTROL Format]**. I det här exemplet väljer du [!UICONTROL **Decimal**].
 1. Bestäm hur många decimaler du vill att rapporten ska visa.
-1. Ange metrisk polaritet. För detta mätresultat skulle en uppåtgående trend vara bra (grön) grej.
+1. I [!UICONTROL **Visa uppåtgående trend som**] nedrullningsbar meny, välja [!UICONTROL **Bra (grönt)**].
 1. Lägg till en **[!UICONTROL Tag]** för att ordna mätvärden.
-1. För detta mått drar du först sidvyer till arbetsytan och drar sedan besök under (vänta tills den blå linjen visas för att släppa den).
+1. För det här måttet drar du först sidvyer till [!UICONTROL **Definition**] på arbetsytan och dra sedan besökarna under den (vänta tills den blå linjen visas innan du släpper den).
 1. Välj operatorn Dela. (Divide är standardoperator.)
 1. Nu kan du se en **[!UICONTROL Preview]** av mätvärdena när du bygger upp dem, längst upp till höger.
 1. Produktkompatibiliteten visar om mätvärdena är kompatibla med [Aktuella data](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html) eller endast med fullständigt bearbetade data.
-1. Klicka på **[!UICONTROL Save]**.
-1. Observera att **[!UICONTROL Summary]** formeln uppdateras varje gång du ändrar måttdefinitionen.
-1. Du dirigeras nu automatiskt till [Beräknad måtthanterare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), som liknar segmenthanteraren. Du kan dela, godkänna, (om-)tagga, byta namn på eller ta bort mätvärden.
+1. Välj **[!UICONTROL Save]**.
+
+   Observera att **[!UICONTROL Summary]** formeln uppdateras varje gång du ändrar måttdefinitionen.
+
+1. (Valfritt) Du kan gå till [Sidan Beräknade mått](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md).

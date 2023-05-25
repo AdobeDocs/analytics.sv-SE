@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 41154580c272514e504c5478215bb67795488de3
+source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '695'
+ht-degree: 46%
 
 ---
 
@@ -185,15 +185,15 @@ ht-degree: 0%
    + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
       + [Hitta mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-finding.md)
-      + [Skapa mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
+      + [Bygg mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md)
+      + [Bygg en sidvy per besök-mätare](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
+      + [Bygg upp en orderassistent](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
+      + [Bygg ett delgivningsmått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
       + [Mätvärdestyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
-      + [Skapa ett enkelt mätvärde för sidvisningar per besök](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
       + [Segmenterade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)
       + [Stapla och ersätta segment](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-stack-seg.md)
       + [Filtrerade och viktade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-weighted-metric.md)
-      + [Mätvärde för Order Assists](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
       + [Använda funktioner](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
-      + [Mätvärden för deltagande](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
       + [Tagga beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-tagging.md)
       + [Godkänna beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-approving.md)
       + [Dela beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)

@@ -3,16 +3,16 @@ description: Visar hur du staplar och ersätter segment i verktyget för beräkn
 title: Stapla och ersätta segment
 feature: Calculated Metrics
 exl-id: a89d66df-a5bc-45fd-8592-967446d8d63b
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '67'
 ht-degree: 11%
 
 ---
 
 # Stapla och ersätta segment
 
-Visar hur du staplar och ersätter segment i verktyget för beräkning av mätvärden.
+Du kan stapla och ersätta segment i verktyget Beräknade mätvärden.
 
 ## Stapla segment {#section_3FC1118FEE2B40B7BB90F29C8521AF53}
 

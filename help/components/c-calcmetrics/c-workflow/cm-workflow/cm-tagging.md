@@ -3,34 +3,53 @@ description: I hanteraren för beräknade mått kan du ordna segment med taggnin
 title: Tagga beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 047adf7d-afeb-4f1d-a416-8521c203ddaf
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: 406ed620c880cd48bea17ccc13d0397c18f082b6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '275'
+ht-degree: 2%
 
 ---
 
 # Tagga beräknade mätvärden
 
-I hanteraren för beräknade mått kan du ordna segment med taggning.
+I hanteraren för beräknade mätvärden kan du ordna segment genom att tagga dem.
 
-Alla användare kan skapa taggar för beräknade värden och använda en eller flera taggar för ett mätresultat. Men du kan bara se taggar för de beräknade värden som du äger eller som har delats med dig. Vilka typer av taggar ska du skapa? Här följer några förslag på användbara taggar:
+Alla användare kan skapa taggar för beräknade värden och använda en eller flera taggar för ett mätresultat. Men du kan bara se taggar för de beräknade värden som du äger eller som har delats med dig.
 
-* Taggar baserade på **gruppnamn**, som social marknadsföring, mobilmarknadsföring.
-* **Projekt** taggar (analystaggar), t.ex. analys på ingångssidan.
-* **Kategori** taggar: Män geografi.
-* **Arbetsflöde** taggar: För godkännande. Kuraterad för (en specifik affärsenhet)
+>[!TIP]
+>
+>De mest användbara taggtyperna är oftast taggar som baseras på följande kriterier:
 
-1. Markera kryssrutan bredvid det mätvärde du vill tagga i Beräknade mätvärden. Hanteringsverktygsfältet visas:
-1. Klicka **[!UICONTROL Tag]** och antingen
+* **Teamnamn**, som social marknadsföring, mobilmarknadsföring.
+* **Projekt** (analystaggar), t.ex. på ingångssidan.
+* **Kategorier**, t.ex. Kvinnor. Geografi.
+* **Arbetsflöden** som ska godkännas, Kuraterad för (en specifik affärsenhet)
 
-   * välj bland befintliga taggar, eller
-   * lägg till ett nytt taggnamn i dialogrutan Lägg till taggar/Sök och tryck på **[!UICONTROL Enter]**.
+## Tillämpa taggar på ett beräknat mått
 
-      ![](assets/cm_add_tags.png)
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**] för att gå till Calculated Metrics Manager.
 
-1. Klicka **[!UICONTROL Tag]** igen för att tagga måttet.
+1. Markera kryssrutan bredvid de mätvärden du vill tagga i Calculated Metrics Manager.
 
-Taggen ska nu visas i kolumnen Taggar. (Klicka på kugghjulsikonen uppe till höger för att hantera kolumnerna.)
+   ![](assets/cm_add_tags.png)
 
-Du kan även filtrera på taggar genom att gå till **[!UICONTROL Show Filters]** > **[!UICONTROL Tags]**.
+1. I **[!UICONTROL Tag Calculated metric]** dialogruta:
+
+   * Lägg till en ny tagg. Skriv namnet i [!UICONTROL **Lägg till taggar**] och tryck sedan på Retur.
+   * Markera en eller flera befintliga taggar som ska användas för de valda måtten.
+
+1. Välj [!UICONTROL **Spara**] om du vill använda taggarna.
+
+## Visa använda taggar
+
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**] för att gå till Calculated Metrics Manager.
+
+1. Taggar visas i [!UICONTROL **Taggar**] kolumn. (Klicka på kugghjulsikonen uppe till höger för att hantera kolumnerna.)
+
+## Filtrera mätvärden efter taggar
+
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**] för att gå till Calculated Metrics Manager.
+
+1. Välj alternativet **Filter** markerar du de taggar som du vill filtrera efter.
+
+   Endast mätvärden som har det filter du väljer visas.

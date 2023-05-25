@@ -4,7 +4,7 @@ title: Komponenter – översikt
 feature: Components
 role: User, Admin
 exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
-source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
+source-git-commit: c64b4199d93443b14e2012459a4d33fdd847eca1
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 3%
@@ -19,7 +19,7 @@ Klicka på knappen **[!UICONTROL Components]** ikonen i den vänstra listen. Du 
 
 ![](assets/component-overview.png)
 
-Du kan också justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
+Du kan även justera [Visa densitetsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) för projektet att se fler värden i den vänstra listen samtidigt genom att gå till **[!UICONTROL Project > Project Info & Settings > View Density]**.
 
 ## Mått {#dimensions}
 
@@ -103,8 +103,6 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 
 ### Filtrera komponentlistan
 
-{{release-limited-testing-section}}
-
 1. Välj **Komponenter** icon ![Ikon för komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) till vänster.
 
 2. Välj **Filter** icon ![Ikon för dataordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg).
@@ -129,6 +127,8 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 4. (Valfritt) Om du vill finjustera listan ytterligare kan du sortera komponentlistan enligt beskrivningen i [Sortera komponentlistan](#sort-the-component-list).
 
 ### Sortera komponentlistan
+
+{{release-limited-testing-section}}
 
 1. (Valfritt) Tillämpa eventuella filter på komponentlistan enligt beskrivningen i [Filtrera komponentlistan](#filter-the-component-list).
 
