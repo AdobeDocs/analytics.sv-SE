@@ -5,7 +5,7 @@ uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: c2adbe93-6a52-45a0-8a81-2799bf63f70f
-source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
+source-git-commit: 99f692c6049708f5feac02d683f14793a57ddb26
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 1%
@@ -61,19 +61,19 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1">Experience Cloud Solutions Menu <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg" width="30px" id="image_B75D0F6991F74389A77068D999C9A910" /> </td> 
+   <td colname="col1">Experience Cloud Solutions Menu <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg" width="15px" id="image_B75D0F6991F74389A77068D999C9A910" /> </td> 
    <td colname="col2"> När du klickar på den här ikonen expanderas menyn Experience Cloud så att du kan komma åt andra Marketing Could-lösningar. </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Växla rapportmeny <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Report_18_N.svg" id="image_32296B71E82C4694821D99867305F5FE" width="30px" /> </td> 
+   <td colname="col1">Växla rapportmeny <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Report_18_N.svg" id="image_32296B71E82C4694821D99867305F5FE" width="15px" /> </td> 
    <td colname="col2"> Om du klickar på den här knappen expanderas eller komprimeras menyn Rapporter så att du kan visa en rapport med hela webbläsarfönstrets bredd. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="uicontrol">Segment <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg" width="30px" id="image_6BF461356C8640EA8E93B74092320E91" /></span> </td> 
+   <td colname="col1"><span class="uicontrol">Segment <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg" width="15px" id="image_6BF461356C8640EA8E93B74092320E91" /></span> </td> 
    <td colname="col2">Flyttar uppåt segmentets rand så att du kan lägga till eller hantera segment. Du kan även komma åt <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > Segment Builder</a> och <a href="https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html"  > Segmenthanteraren</a> gränssnitt från segmentets skena. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><span class="uicontrol">Mätvärden <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg" width="30px" id="image_88620CB8A9CC4BC3BE4CE30BDA727512" /></span> </td> 
+   <td colname="col1"><span class="uicontrol">Mätvärden <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg" width="15px" id="image_88620CB8A9CC4BC3BE4CE30BDA727512" /></span> </td> 
    <td colname="col2"> Hämtar måttspåret som gör att du kan lägga till eller hantera mätvärden och beräknade mätvärden. </td> 
   </tr> 
   <tr> 
@@ -117,11 +117,11 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
    <td colname="col2"> Gör att du kan utföra alla eller några av följande åtgärder: skriva ut, extrahera data, lägga till en varning, skapa en anpassad rapport, kopiera ett diagram, länka till den här rapporten och öppna ett nytt fönster. </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Rapportsvitväljare <img placement="inline"  src="assets/report-suite-selector.png" width="30px" id="image_9F64944D46574B2AA38D81A7C82C4AC4" /> </td> 
+   <td colname="col1">Rapportsvitväljare <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg" width="15px" id="image_9F64944D46574B2AA38D81A7C82C4AC4" /> </td> 
    <td colname="col2">Gör att du kan välja <a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html"  > basrapporteringsprogram</a> eller <a href="https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html"  > virtuella rapportsviter</a>. </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Kalender <img placement="inline"  src="assets/calendar-icon.png" width="30px" id="image_C5E4F87F964C4C3E98496D38A1123502" /> </td> 
+   <td colname="col1">Kalender <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg" width="15px" id="image_C5E4F87F964C4C3E98496D38A1123502" /> </td> 
    <td colname="col2">Öppnar <a href="/help/analyze/reports-analytics/overview/report-overview.md#section_8C6C4AD84D9043E8ABD53FF8F645AAB1"  > kalender</a> så att du kan bestämma rapporteringsperioden. </td> 
   </tr> 
  </tbody> 

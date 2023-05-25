@@ -4,9 +4,9 @@ title: Hantera segment (Report Builder)
 feature: Report Builder
 role: User, Admin
 exl-id: c4ad89e0-91c9-47e1-a226-69d82fdb8918
-source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
+source-git-commit: 99f692c6049708f5feac02d683f14793a57ddb26
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 
 ## Söka efter och använda segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
 
-Alla segment som har skapats i Rapporter och analyser, Report Builder eller Data warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ( ![](assets/refresh_icon.png).
+Alla segment som har skapats i Rapporter och analyser, Report Builder eller Data warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).
 
 Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar sekventiella segment.
 
@@ -60,7 +60,7 @@ Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar 
 
    ![](assets/seg_list.png)
 
-1. Kontrollera vilka segment du vill använda.
+2. Kontrollera vilka segment du vill använda.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbo
 
 ## Uppdatera listan med segment {#section_22E4A86789444B4A998532396B476EFB}
 
-När du vill lägga till ett nytt segment eller redigera ett befintligt bör du klicka på ikonen Uppdatera ( ![](assets/refresh_icon.png) om du vill uppdatera den cachelagrade listan med segment.
+När du vill lägga till ett nytt segment eller redigera ett befintligt bör du klicka på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) om du vill uppdatera den cachelagrade listan med segment.
 
 ## Hantera segment över förfrågningar {#section_C3D63FCBE1A94369A319243313B03C93}
 

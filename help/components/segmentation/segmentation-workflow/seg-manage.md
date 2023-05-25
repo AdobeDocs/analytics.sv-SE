@@ -3,9 +3,9 @@ description: Segmenthanteraren erbjuder många sätt att strukturera segment, so
 title: Hantera segment (segmenthanteraren)
 feature: Segmentation
 exl-id: be182a55-23cb-415f-a7d0-3c1efeead1a1
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 99f692c6049708f5feac02d683f14793a57ddb26
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '431'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ Segmenthanteraren erbjuder många sätt att strukturera segment, som att dela, f
 Segmenthanteraren i Analytics visar alla segment som du äger och som har delats med dig. Administratörsnivåanvändare kan se alla segment i organisationen. I den här översikten presenteras användargränssnittet och funktionerna i segmenthanteraren. Åtkomst till segmenthanteraren via
 
 * Går till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]** i den övre navigeringen.
-* Visa en befintlig rapport och klicka på segmentikonen  ![](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**.
+* Visa en befintlig rapport och klicka på segmentikonen  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**.
 
 ## Videoinstruktion {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
 

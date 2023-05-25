@@ -3,9 +3,9 @@ description: Med segment kan du identifiera undergrupper av besökare baserat p�
 title: Om segment
 feature: Segmentation
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
+source-git-commit: 99f692c6049708f5feac02d683f14793a57ddb26
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Du kommer åt segmentbyggaren genom att:
 
 * Går till  **[!UICONTROL Analytics]** > **[!UICONTROL Components]** i den övre navigeringen. Klicka sedan på **[!UICONTROL Segments]**, eller
 
-* Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](assets/segment_icon.png) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**, eller
+* Visa en befintlig rapport och klicka på segmentikonen  ![Segmentikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**, eller
 
 * Tryck på snedstreckstangenten &#39;/&#39; var som helst i gränssnittet och sök efter segmenthanteraren.
 
