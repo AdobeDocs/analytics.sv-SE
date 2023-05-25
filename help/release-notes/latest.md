@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 8856293e4f0114245e32db16809a964ccac5430f
+source-git-commit: d6c42d359699a574411f461485f6c8818c095b62
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1484'
 ht-degree: 2%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (maj 2023)
 
-**Senaste uppdatering**: 17 maj 2023
+**Senaste uppdatering**: 25 maj 2023
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -38,6 +38,7 @@ AN-312098; AN-318309; AN-316675; AN-318173; AN-310359; AN-317613; AN-318836; AN-
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
+| **37-månaders förfallodatum för inköps-ID och händelse-ID (händelseserialisering)** | Maj 25,2023 | En kommande version av motorn för bearbetning av träff i Analytics, avsedd för lansering i **slutet av juni 2023 eller början av juli 2023**, kommer att börja genomdriva en 37-månaders förfallotid för inköps-ID och händelse-ID (händelseserialisering). För närvarande går köp-ID och händelse-ID aldrig ut i Adobe Analytics. När ett inköps-ID eller händelse-ID visas/används kommer eventuella framtida träffar, oavsett när, att markeras som dubbletter. Med den nya versionen av bearbetningsmotorn<ul><li>Inköps-ID:n och händelse-ID:n går alltid ut efter 37 månader.</li><li>Om det har gått 37 månader sedan inköps-ID:t eller händelse-ID:t sågs, betraktas det inte längre som ett dubblettköp eller -händelse.</li><li> Om du återanvänder inköps-ID:n eller händelse-ID:n för mer än 37 månader sedan betraktas de inte längre som dubbletter.</li></ul> |
 | **Migrering till autentiseringsuppgifter för AdobeIO OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API- och LiveStream-kunder som använder inloggningsuppgifter för AdobeIO JWT måste migrera till inloggningsuppgifter för AdobeIO OAuth Server-till-Server med **1 januari 2025**. Mer information och tidslinjer finns i meddelandet om att produkten upphör att gälla i tabellen nedan. |
 | **Obs! Nya IP-adresser som används av Adobe Analytics Data Feeds och Data warehouse i London Data Center** | 27 april 2023 | För kunder i London Data Center som har dataflödesbegäranden och/eller Data warehouse-rapporter som levereras till en FTP/SFTP-tjänst bör följande IP-adressintervall läggas till i brandväggskonfigurationen för att tillåta åtkomst: <ul><li>130.248.244.32/29</li><li>130.248.244.40/29</li></ul> |
 | **Processer för enhetssökning använder nu en tredje part för alla enhetssökningar** | 3 mars 2023 | Den 2 mars 2023 uppdaterade vi våra enhetssökningsprocesser som en del av supportlanseringen för klienttips så att vi kan använda en tredje part för alla enhetssökningar. Tidigare hade vi bara använt den tredje parten för sökning på mobila enheter. Som en del av den utrullningen hade vissa operativsystem på stationära datorer en felaktig etikett med texten&quot;mobile&quot; (t.ex. &quot;Mobile OS X 10.15.7&quot; i stället för &quot;OS X 10.15.7&quot;).<p>Under Adobe aprilversionen kommer vi att rätta till de här namnen. Analys- och CJA-rapporter uppdateras retroaktivt eftersom deras rapportering söker efter operativsystemets namn baserat på ett ID som registreras som en del av händelsedata. När sökvärdet som motsvarar ett ID uppdateras korrigeras alla rapporter, inklusive historiska data. För [!UICONTROL Data Feeds] är ändringarna retroaktiva om du använder en liknande sökprocess vid tidpunkten för rapporteringen. Om du lagrar operativsystemsvärdet i dina händelsedata uppdateras dock bara rapporten i framtiden. Se [Operativsystem](/help/components/dimensions/operating-systems.md) för mer information. |
