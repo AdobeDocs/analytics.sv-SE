@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 3a9dc661ce9243174bef45e689366baa58cf45b3
+source-git-commit: d3e560df22f487a2dfabd65d07de5609c0665918
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-s
 
 * Personer utanför din organisation
 
-* Personer i din organisation som inte är anställda hos Adobe Analytics
+* Personer i organisationen som inte har tillgång till Adobe Analytics
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-s
 >
 >* Projekt med mer än 50 utökade visualiseringar kan inte delas med personer som inte har tillgång till Adobe Analytics.
 >
->* Användare som du delar med kan visa alla filter som använts på projektet under [kuration](curate.md).
+>* Användare som du delar projektet med kan visa alla filter som använts på projektet under [kuration](curate.md).
 > 
 >* Användare som du delar med kan ändra projektets datumintervall. Datumintervallet som du anger för projektet visas som standard.
 >
