@@ -3,7 +3,7 @@ description: På sidan Beräknade mätvärden kan du strukturera mätvärden på
 title: Beräknat måttansvarig
 feature: Calculated Metrics
 exl-id: 32430e77-2450-4672-9c21-255e76802a4c
-source-git-commit: 406ed620c880cd48bea17ccc13d0397c18f082b6
+source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -15,6 +15,10 @@ ht-degree: 2%
 På sidan Beräknade mätvärden kan du strukturera mätvärden på många olika sätt, t.ex. dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
 På sidan Beräknade mätvärden visas alla segment som du äger och som har delats med dig. Användare på administratörsnivå kan se alla anpassade värden i organisationen.
+
+## Få åtkomst till hanteraren för beräknade värden
+
+1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**].
 
 ## Områden som tillhör hanteraren för beräknade värden
 
@@ -37,7 +41,3 @@ I följande bild och medföljande tabell beskrivs några av huvudområdena och f
 | Visas inte i bilden | **Ändrad:** Anger det datum då det anpassade måttet senast ändrades. |
 
 {style="table-layout:auto"}
-
-## Få åtkomst till hanteraren för beräknade värden
-
-1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**].

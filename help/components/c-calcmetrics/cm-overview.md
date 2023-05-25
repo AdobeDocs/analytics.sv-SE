@@ -4,14 +4,14 @@ keywords: Beräknade mått;Härledda värden;Avancerade beräknade värden
 title: Beräknade och avancerade beräknade (härledda) värden
 feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
+source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 6%
 
 ---
 
-# Beräknade och avancerade beräknade (härledda) värden
+# Beräknade och avancerade beräknade (härledda) mätvärden
 
 Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.
 
@@ -22,9 +22,9 @@ Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, 
 * [Adobe Analytics Prime](https://www.adobe.com/se/data-analytics-cloud/analytics/prime.html): Beräknat + Avancerat beräknat
 * [Adobe Analytics Ultimate](https://www.adobe.com/se/data-analytics-cloud/analytics/ultimate.html): Beräknat + Avancerat beräknat
 
-Här följer en jämförelse av funktionerna för beräknade värden och avancerade beräknade värden:
+Här är en jämförelse av beräkningsstatistik och avancerade beräkningsfunktioner:
 
-| Alternativ för verktyget Builder | Beräknade mätvärden | Avancerade beräknade (härledda) mått |
+| Alternativ för verktyget Builder | Beräknade värden | Avancerade beräknade (härledda) värden |
 |---|---|---|
 | [Formattyper (decimal, time, percent, currency)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md) | Ja | Ja |
 | [Attributionsändringar (standard, linjär, deltagande osv.)](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md) | Ja | Ja |
@@ -44,7 +44,7 @@ Ni kan
    >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
 
 * Dela mätvärden mellan olika rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
-* (Endast avancerade beräknade värden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot;, med antalet personer som detta är den första sessionen för. Här är ett videoklipp om detta ämne:
+* (Endast avancerade beräknade mätvärden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot;, med antalet personer som detta är den första sessionen för. Här är ett videoklipp om detta ämne:
 
    >[!VIDEO](https://video.tv.adobe.com/v/25409/?quality=12)
 
@@ -65,7 +65,7 @@ Några [!DNL Analytics] funktioner som gör att du kan använda händelser men i
 
 ## Verktyg {#section_D65E9C067E9C45E1A50DD30F50561BB2}
 
-Här är en kort översikt över [!UICONTROL Calculated Metrics] verktyg:
+Här är en kort översikt över [!UICONTROL Calculated metrics] verktyg:
 
 <table id="table_520AFE97DB514958ABE23FD3C9CE0ABD"> 
  <thead> 

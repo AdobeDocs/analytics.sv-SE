@@ -3,16 +3,22 @@ description: I segmenthanteraren kan du konfigurera ett arbetsflöde som innefat
 title: Godkänna segment
 feature: Segmentation
 exl-id: dc56adb0-56b3-4dcb-b47b-d76b0a32ec62
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 4%
+source-wordcount: '173'
+ht-degree: 2%
 
 ---
 
 # Godkänna segment
 
-I segmenthanteraren kan du konfigurera ett arbetsflöde som innefattar godkännande av segment för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciperna.
+I segmenthanteraren kan du skapa ett arbetsflöde som innefattar godkännande av segment för olika programnivåer, för specifika avdelningar eller grupper, och som är förenligt med rapporteringsprinciperna.
+
+>[!NOTE]
+>
+>Administratörer kan också godkänna segment (och andra komponenter) från datamappningslistan, enligt beskrivningen i [Redigera komponentposter i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
+>
+>Alla segment som är godkända i datamallen återspeglas i segmenthanteraren. På samma sätt återspeglas mätvärden som har godkänts i segmenthanteraren i datamappningslistan.
 
 Så här flaggar du ett segment som godkänt:
 

@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
+source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
 workflow-type: tm+mt
 source-wordcount: '695'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -180,7 +180,7 @@ ht-degree: 46%
    + [Frågor och svar om hantering av äldre segment ](segmentation/seg-transition.md)
    + [God praxis](segmentation/best-practices.md)
 + Beräknade mätvärden {#calculated-metrics}
-   + [Beräknade och avancerade beräknade (härledda) värden](c-calcmetrics/cm-overview.md)
+   + [Beräknade och avancerade beräknade (härledda) mätvärden](c-calcmetrics/cm-overview.md)
    + [Instruktionsvideor](c-calcmetrics/cm-videos.md)
    + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}
       + [Arbetsflöde för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-workflow.md)
@@ -189,7 +189,7 @@ ht-degree: 46%
       + [Bygg en sidvy per besök-mätare](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-pvv.md)
       + [Bygg upp en orderassistent](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-orders-participation.md)
       + [Bygg ett delgivningsmått](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md)
-      + [Mätvärdestyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
+      + [Mättyp och attribuering](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md)
       + [Segmenterade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/metrics-with-segments.md)
       + [Stapla och ersätta segment](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-stack-seg.md)
       + [Filtrerade och viktade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-weighted-metric.md)
@@ -197,7 +197,7 @@ ht-degree: 46%
       + [Tagga beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-tagging.md)
       + [Godkänna beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-approving.md)
       + [Dela beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
-      + [Hanterare för beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
+      + [Beräknat måttansvarig](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
    + Mätvärdesreferens {#calcmetrics-reference}
       + [Referens: grundläggande funktioner](c-calcmetrics/cm-reference/cm-functions.md)
       + [Referens: avancerade funktioner](c-calcmetrics/cm-reference/cm-adv-functions.md)

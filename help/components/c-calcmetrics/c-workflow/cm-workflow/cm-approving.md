@@ -3,16 +3,22 @@ description: I hanteraren för beräknade mätvärden kan du skapa ett arbetsfl�
 title: Godkänna beräknade mätvärden
 feature: Calculated Metrics
 exl-id: ec39937c-27e8-4725-832c-5e1c989d1c9f
-source-git-commit: 644e2d10eac226a35705351608161fe494efe113
+source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 3%
+source-wordcount: '239'
+ht-degree: 2%
 
 ---
 
 # Godkänna beräknade mätvärden
 
-I Calculated Metrics Manager kan du skapa ett arbetsflöde som innefattar att godkänna mätvärden för olika programnivåer och för specifika avdelningar eller grupper.
+I hanteraren för beräknade värden kan administratörer skapa ett arbetsflöde som innefattar att godkänna mätvärden för olika programnivåer och för särskilda avdelningar eller grupper.
+
+>[!NOTE]
+>
+>Administratörer kan också godkänna beräknade värden (och andra komponenter) från datamappningslistan, enligt beskrivningen i [Redigera komponentposter i Data Dictionary](/help/analyze/analysis-workspace/components/data-dictionary/edit-entries-data-dictionary.md).
+>
+>Alla beräknade mätvärden som har godkänts i datamallen visas i hanteraren för beräknade mätvärden. På samma sätt återspeglas mätvärden som har godkänts i hanteraren för beräknade värden i datamappningen.
 
 Så här markerar du beräknade värden som godkända:
 
