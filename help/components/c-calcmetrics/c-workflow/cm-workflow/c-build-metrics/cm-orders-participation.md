@@ -3,9 +3,9 @@ description: Beskriver hur du skapar ett mätvärde som visar vilka marknadsför
 title: Mätvärde för orderassistenten
 feature: Calculated Metrics
 exl-id: 33cb441d-d003-408d-ba67-1bcdd0e821ff
-source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
+source-git-commit: 7722a2f01ff77dfec8ce110fd04fe977f6c627c6
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Följande information förklarar hur du skapar ett mätvärde som visar vilka ma
 
 1. Börja skapa ett beräknat mått enligt beskrivningen i [Bygg mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
 
-1. I verktyget Beräknade mått anger du måttet&quot;Assisted Orders&quot;.
+1. I verktyget Beräknade mått anger du måttet&quot;Assisted Orders&quot; eller något liknande.
 
 1. Dra i ett ordningstal på arbetsytan Definition. Justera sedan attribueringsmodellen med inställningsverktyget genom att kontrollera **[!UICONTROL Use non-default attribution models]** kryssrutan.
 

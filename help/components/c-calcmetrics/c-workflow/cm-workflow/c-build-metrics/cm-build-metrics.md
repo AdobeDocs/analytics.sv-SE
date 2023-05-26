@@ -3,7 +3,7 @@ description: I verktyget Calculated Metrics Builder finns en arbetsyta där du k
 title: Bygg mätvärden
 feature: Calculated Metrics
 exl-id: 12bb3734-e25d-4c67-8c62-e1226d9aef94
-source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
+source-git-commit: 7722a2f01ff77dfec8ce110fd04fe977f6c627c6
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Du kan börja skapa ett beräknat mått på något av följande sätt:
 
 ## Områden i verktyget för beräknade värden
 
-I följande bild och medföljande tabell beskrivs några av huvudområdena och funktionerna i Calculated Metrics Manager.
+I följande bild och medföljande tabell förklaras några av huvudområdena och funktionerna i verktyget för beräkning av mätvärden.
 
 ![](assets/cm_builder_ui.png)
 
@@ -40,7 +40,7 @@ I följande bild och medföljande tabell beskrivs några av huvudområdena och f
 | 8 | **Definition:** Här drar du i mått/beräknade mått, segment och/eller funktioner för att skapa det beräknade måttet. <ul><li>Om du drar i ett beräknat mått expanderas måttdefinitionen automatiskt. </li> <li>Du kan kapsla definitioner med behållare. Till skillnad från segmentbehållare fungerar dessa behållare som ett matematiskt uttryck och avgör ordningen på åtgärderna. </li> </ul> |
 | 9 | **Operatör:** dividerat med ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) är standardoperatorn och det finns operatorerna +, - och x. |
 | 10 | **Förhandsgranska:** Ger en snabb läsning av eventuella fel. Förhandsvisningen täcker de senaste 90 dagarna. Det här är ett sätt att först mäta om du har valt rätt komponenter för måttet. Ett oväntat resultat skulle innebära att du måste ta en andra titt på måttdefinitionen. |
-| 11 | **Produktkompatibilitet:** <p>Produktkompatibiliteten visar om mätvärdena är kompatibla med <a href="https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html"  > Aktuella data </a>, med fullständigt bearbetade data, eller endast med marknadsföringskanalrapporter (första-touch-allokering). <p>Obs! Aktuella data stöder inte alla mått. Mätvärden som innehåller segment eller funktioner är inte kompatibla med aktuella data. <a href="/help/components/c-calcmetrics/cm-compatibility.md"  > Mer... </a> </p> </p> |
+| 11 | **Produktkompatibilitet:** Produktkompatibiliteten visar om mätvärdena är kompatibla med <a href="https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/current-data.html"  > Aktuella data </a>, med fullständigt bearbetade data, eller endast med marknadsföringskanalrapporter (första-touch-allokering). <p>Obs! Aktuella data stöder inte alla mått. Mätvärden som innehåller segment eller funktioner är inte kompatibla med aktuella data. <a href="/help/components/c-calcmetrics/cm-compatibility.md"  > Mer... </a> </p> </p> |
 | 12 | **Lägg till:** För alla typer av beräknade värden kan du lägga till behållare och statiska tal i definitionen. För avancerade beräknade mätvärden kan du även lägga till segment och funktioner. <ul><li>Behållare fungerar som ett matematiskt uttryck och avgör ordningen på operationerna. Allt i en behållare bearbetas alltså före nästa åtgärd.</li><li>När du drar ett segment till en behållare segmenteras allt i behållaren. (Endast avancerade beräknade värden)</li><li>Du kan stapla flera segment i en behållare.</li></ul> |
 | 13 | **Kugghjulsikon (Måtttyp, Attribution):** Om du väljer kugghjulsikonen bredvid ett mätresultat kan du ange <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/m-metric-type-alloc.md"  > metrisk typ och attribueringsmodeller </a>. |
 | 14 | **Nytt:** Skapa en ny komponent, till exempel ett nytt segment (som tar dig till <a href="/help/components/segmentation/segmentation-workflow/seg-build.md"  > Segment Builder </a>.) |

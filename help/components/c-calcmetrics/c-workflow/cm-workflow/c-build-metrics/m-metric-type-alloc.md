@@ -3,9 +3,9 @@ description: Läs mer om
 title: Mättyp och attribuering
 feature: Calculated Metrics
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
-source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
+source-git-commit: 7722a2f01ff77dfec8ce110fd04fe977f6c627c6
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '466'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,7 @@ Så här anger du måtttypen när du skapar ett beräknat mått:
    | Standard | Dessa mått är samma som de som används i standard [!DNL Analytics] rapportering. Om en formel består av ett enda standardmått visas data som är identiska med den icke-beräknade metriska motsvarigheten. Standardvärden är användbara när du vill skapa beräknade värden som är specifika för varje enskilt radobjekt. Till exempel: [Beställningar] / [Besök] tar emot order för den specifika radartikeln och dividerar den med antalet besök för den specifika radartikeln. |
    | Summa | Använd totalsumma för rapporteringsperioden i varje radartikel. Om en formel består av ett enda totalmått visas samma totaltal på varje radartikel. Summavärden är användbara när du vill skapa beräknade värden som jämför med webbplatsens totala data. Till exempel: [Beställningar] / [Totalt antal besök] visar hur stor andel av beställningarna som gäller för ALLA besök på er webbplats, inte bara besöken till den specifika radobjektet. |
 
-## Kolumnattribueringsmodell
-
-## Hur linjär tilldelning fungerar (från och med den 19 juli 2018)
+## Så här fungerar linjär allokering
 
 [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) är hur allokeringsmodeller i beräknade värden utvärderas.
 

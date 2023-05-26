@@ -3,18 +3,16 @@ description: Visar hur du skapar ett enkelt mått för"Sidvyer per besök".
 title: Skapa ett enkelt mätvärde för sidvisningar per besök
 feature: Calculated Metrics
 exl-id: 2d1c4677-b07c-4eca-97b7-e5e4594daee1
-source-git-commit: 4bf8397ee979614539baf21b36363eb03357567a
+source-git-commit: 7722a2f01ff77dfec8ce110fd04fe977f6c627c6
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 6%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
-# Skapa ett enkelt mätvärde för sidvisningar per besök
+# Bygg en sidvy per besök-mätare
 
 I följande information förklaras hur du skapar ett enkelt mått för&quot;Sidvyer per besök&quot;.
-
-En detaljerad beskrivning av UI-komponenterna finns i [Bygg mätvärden](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
 
 Så här skapar du ett enkelt mått för&quot;Sidvyer per besök&quot;:
 
