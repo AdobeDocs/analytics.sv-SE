@@ -3,9 +3,9 @@ title: Konfigurationsvariabler
 description: Använd konfigurationsvariabler för att avgöra hur data samlas in.
 feature: Variables
 exl-id: 3f017a94-b71d-47da-8ab4-daf32475ed34
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: ef82c34f97a0c8172f097b83b521860a1897c82c
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '123'
 ht-degree: 4%
 
 ---
@@ -26,4 +26,4 @@ I JavaScript-implementeringar med `AppMeasurement.js`, ställs konfigurationsvar
 
 >[!IMPORTANT]
 >
->Kontrollera att alla konfigurationsvariabler har angetts innan du anropar en spårningsmetod ([`t()`](../functions/t-method.md) eller [`tl()`](../functions/tl-method.md)). Undvik att ange konfigurationsvariabler i [`doPlugins()`](../functions/doplugins.md) funktion.
+>Kontrollera att alla konfigurationsvariabler är angivna innan du anropar en spårningsmetod ([`t()`](../functions/t-method.md) eller [`tl()`](../functions/tl-method.md)). Undvik att ange konfigurationsvariabler i [`doPlugins()`](../functions/doplugins.md) funktion.
