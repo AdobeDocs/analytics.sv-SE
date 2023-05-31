@@ -3,9 +3,9 @@ description: I hanteraren för beräknade mått kan du ordna segment med taggnin
 title: Tagga beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 047adf7d-afeb-4f1d-a416-8521c203ddaf
-source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
+source-git-commit: e955e3bfe114717f6e42d06cb92faff30a10284d
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '278'
 ht-degree: 2%
 
 ---
@@ -20,10 +20,10 @@ Alla användare kan skapa taggar för beräknade värden och använda en eller f
 >
 >De mest användbara taggtyperna är oftast taggar som baseras på följande kriterier:
 >
->* **Teamnamn**, som social marknadsföring, mobilmarknadsföring.
+>* **Teamnamn** som social marknadsföring eller mobilmarknadsföring.
 >* **Projekt** (analystaggar), t.ex. på ingångssidan.
->* **Kategorier**, t.ex. Kvinnor. Geografi.
->* **Arbetsflöden** som ska godkännas, Kuraterad för (en specifik affärsenhet)
+>* **Kategorier**, t.ex. Kvinnors eller Geografi.
+>* **Arbetsflöden** som ska godkännas eller kurateras för (en specifik affärsenhet)
 
 
 ## Tillämpa taggar på ett beräknat mått

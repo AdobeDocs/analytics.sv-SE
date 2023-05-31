@@ -3,7 +3,7 @@ description: Beroende på dina behörigheter kan du dela mätvärden med hela or
 title: Dela beräknade mätvärden
 feature: Calculated Metrics
 exl-id: 99817d6f-d0d7-4e1b-88a7-b1465e2f8812
-source-git-commit: e9109ccb726e5e4bf52d8a4734dd0d09820f2ffc
+source-git-commit: e955e3bfe114717f6e42d06cb92faff30a10284d
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 2%
@@ -21,15 +21,15 @@ Beroende på dina behörigheter kan du dela mätvärden med hela organisationen,
 
 Så här delar du ett beräknat mått:
 
-1. Markera kryssrutan till vänster om de mätvärden du vill dela i Beräknade mätvärden.
+1. Markera kryssrutan till vänster om de mätvärden du vill dela i hanteraren för beräknade mätvärden.
 
-1. Klicka på **[!UICONTROL Share]** ikon. ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+1. Välj **[!UICONTROL Share]** ikon. ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
    Dialogrutan Dela beräknade mått visas.
 
    ![](assets/cm_share.png)
 
-1. Klicka på **[!UICONTROL Share]**.
+1. Välj **[!UICONTROL Share]**.
 
 1. Välj vem du vill dela med:
 
@@ -47,7 +47,7 @@ Så här delar du ett beräknat mått:
 
 1. Välj **[!UICONTROL Share]**.
 
-   Ikonen Delad visas bredvid måttet:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg).
+   Ikonen Delad visas bredvid måttet: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg).
 
 1. Du kan filtrera mätvärden som delas med dig genom att gå till **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Shared with Me]**.
 
