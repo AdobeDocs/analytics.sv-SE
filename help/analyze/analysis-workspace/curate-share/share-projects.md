@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: d3e560df22f487a2dfabd65d07de5609c0665918
+source-git-commit: 8aca2f068a455eddca904d0367bc4a282f464e56
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1755'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,10 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-s
 >* Ett projekt kan bli oåtkomligt om många användare försöker få åtkomst till en viss länk samtidigt. Som standard har fler än 190 personer tillgång till en enda länk var femte minut. Om din organisation når den gränsen väntar du i fem minuter och försöker sedan att få åtkomst till länken igen.
 
 
+I följande videodemonstration och medföljande dokumentation beskrivs alternativen för att dela en länk med vem som helst:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 Så här delar du ett Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics:
 
 1. Öppna det Analysis Workspace-projekt som du vill dela.
@@ -149,7 +153,7 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
-      När det här alternativet är aktiverat kan endast användare som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades få åtkomst till projektet.
+      När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de användare som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
 
       Analysadministratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
