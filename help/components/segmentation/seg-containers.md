@@ -4,9 +4,9 @@ keywords: segmentering;segment
 title: Segmentbehållare
 feature: Segmentation
 exl-id: f30d525b-32b7-47d5-b92d-24bf86d8a471
-source-git-commit: d9087fbb2d7aef49dab42692ba6bc189e3c32d55
+source-git-commit: 5a9ba3f9749338c181fbcdc311bd08a92144e698
 workflow-type: tm+mt
-source-wordcount: '3473'
+source-wordcount: '3454'
 ht-degree: 2%
 
 ---
@@ -370,7 +370,7 @@ Sammanfattningsvis är en förståelse för hur segmentering fungerar på olika 
 
 Varje uppdelning av segmentdata har ett omfång som de tillämpas på. De flesta uppdelningar baseras på *Sidvyer* Men många värdefulla segment baseras på *Besök* och i mindre utsträckning *Besökare* behållare. Det är viktigt att förstå hur du rapporterar baserat på omfattningen av din behållare.
 
-Använda *Sida = Vinter* Exempel på segment nedan är exempel på resultatet av det här segmentet baserat på hur behållardata används och hur omfattningen av data matchar segmenttypen.
+Använda `Page equals Winter Coats` Exempel på segment nedan är exempel på resultatet av det här segmentet baserat på hur behållardata används och hur omfattningen av data matchar segmenttypen.
 
 ### Segmentbehållare baserad på matchande segmentregel
 
@@ -407,7 +407,7 @@ Segmentdata kan variera beroende på hur beständig en dimension eller en variab
 
 I motsats till siddimensionen är referensdomänvärdet kopplat till varje sida i besöket. Besökaren nedan kommer till exempel till hemsidan från en refererad webbplats. Därför tilldelas alla sidor i besöket samma referensdomänvärde.
 
-The *Refererande domän är lika med aol.com* segmentet nedan används på **Sidrapport**.
+The `Referring Domain equals aol.com` segmentet nedan används på **Sidrapport**.
 
 <table style="table-layout:fixed; border: 0;">
 
@@ -451,9 +451,9 @@ Vid ett nytt besök hänvisas besökaren till från en annan plats. Därför til
 
 ### Rapportering från träff-behållaren
 
-Eftersom alla sidvyer inom samma besök tilldelas samma referensdomänvärde, rapporteras på träff-behållarnivå där *Refererande domän = &quot;aol.com&quot;* returnerar alla sidor i tabellen nedan.
+Eftersom alla sidvyer inom samma besök tilldelas samma referensdomänvärde, rapporteras på träff-behållarnivå där `Referring Domain equsls 'aol.com'` returnerar alla sidor i tabellen nedan.
 
-| Refererande domän = &#39;aol.com&#39; | Sidvisningar |
+| Refererande domän är lika med &#39;aol.com&#39; | Sidvisningar |
 |----|---:|
 | Start | 1 |
 | Vinterkläder | 1 |
@@ -472,9 +472,9 @@ Med data från Träff-behållaren visades drygt 92 000 sidvisningar i över 33 0
 
 ### Rapportering från besöksbehållaren
 
-Om samma villkor filtreras i besöksbehållaren för en sidrapport, ska alla sidor i besöket där *Refererande domän = &quot;aol.com&quot;* är sant. Eftersom värdet för den refererande domänen anges på besöksnivå är rapporterna på sidvynivå och besöksnivå desamma.
+Om samma villkor filtreras i besöksbehållaren för en sidrapport, ska alla sidor i besöket där `Referring Domain equals 'aol.com'`är sant. Eftersom värdet för den refererande domänen anges på besöksnivå är rapporterna på sidvynivå och besöksnivå desamma.
 
-| Refererande domän = &#39;aol.com&#39; | Sidvisningar |
+| Refererande domän är lika med &#39;aol.com&#39; | Sidvisningar |
 |----|---:|
 | Start | 1 |
 | Vinterkläder | 1 |
@@ -493,11 +493,11 @@ Eftersom alla sidor har samma referensdomänvärde baserat på besöket är rapp
 
 ### Rapportering från besökarbehållaren
 
-Från besökarbehållaren visar sidrapporten alla sidor som visas av en besökare där *Refererande domän är lika med &quot;aol.com&quot;* är sant. Om en besökare hade *&quot;aol.com&quot;* som hänvisande domän när som helst i historiken (inom den definierade tidsperioden) listas alla sidor i besökarbehållaren (inklusive sidvisningar i andra besök). Även sidor som inte matchar det primära villkoret listas i rapporten eftersom de här sidorna inkluderas i besökarbehållaren. Alla sidor i besökarbehållaren listas i rapporten, även om de förekommer tidigare och inte uppfyller villkoren specifikt.
+Från besökarbehållaren visar sidrapporten alla sidor som visas av en besökare där `Referring Domain equals 'aol.com'` är sant. Om en besökare hade *&#39;aol.com&#39;* som hänvisande domän när som helst i historiken (inom den definierade tidsperioden) listas alla sidor i besökarbehållaren (inklusive sidvisningar i andra besök). Även sidor som inte matchar det primära villkoret listas i rapporten eftersom de här sidorna inkluderas i besökarbehållaren. Alla sidor i besökarbehållaren listas i rapporten, även om de förekommer tidigare och inte uppfyller villkoren specifikt.
 
-I en referensdomänrapport *Refererande domän = &quot;aol.com&quot;* är sant i fyra sidvyer, men *Refererande domän = &quot;west.com&quot;* är true på de andra sidorna besökaren träffar. I besökarbehållaren visas en lista med besökare där &quot;aol.com&quot; är true. Men det ger även dig sidor där den refererande domänen är&quot;wall.com&quot;, inte värdet som matchade din ursprungliga begäran i segmentet.
+I en referensdomänrapport `Referring Domain equals 'aol.com'` är sant i fyra sidvyer, men `Referring Domain equals "weather.com"` är true på de andra sidorna besökaren träffar. I besökarbehållaren visas en lista med besökare där aol.com är true. Men det ger även dig sidor där den refererande domänen är&quot;wall.com&quot;, inte värdet som matchade din ursprungliga begäran i segmentet.
 
-| Besök 1<br/>Refererande domän = &#39;aol.com&#39; | <br/>Sidvisningar |
+| Besök 1<br/>Refererande domän är lika med &#39;aol.com&#39; | <br/>Sidvisningar |
 |----|---:|
 | Start | 1 |
 | Vinterkläder | 1 |
@@ -510,15 +510,15 @@ I en referensdomänrapport *Refererande domän = &quot;aol.com&quot;* är sant i
 | Vinter | 1 |
 | Inköp | 1 |
 
-| Besökarbehållare<br/>Refererande domän = &#39;aol.com&#39; | Sidvisningar |
+| Besökarbehållare<br/>Refererande domän är lika med &#39;aol.com&#39; | Sidvisningar |
 |----|---:|
-| Vinterkläder<br/>Refererande domän = &#39;aol.com&#39; | 1 |
-| Vinterkläder<br/>Refererande domän = &#39;west.com&#39; | 1 |
-| Startsida <br/>Refererande domän = &#39;aol.com&#39; | 1 |
-| Vinter <br/>Refererande domän = &#39;aol.com&#39; | 1 |
-| Inköp<br/>Refererande domän = &#39;aol.com&#39; | 1 |
-| Vintern - starter<br/>Refererande domän = &#39;west.com&#39; | 1 |
-| Vinter-hattar<br/>Refererande domän = &#39;west.com&#39; | 1 |
+| Vinterkläder<br/>Refererande domän: &#39;aol.com&#39; | 1 |
+| Vinterkläder<br/>Refererande domän: &#39;west.com&#39; | 1 |
+| Startsida <br/>Refererande domän: &#39;aol.com&#39; | 1 |
+| Vinter <br/>Refererande domän: &#39;aol.com&#39; | 1 |
+| Inköp<br/>Refererande domän: &#39;aol.com&#39; | 1 |
+| Vintern - starter<br/>Refererande domän: &#39;west.com&#39; | 1 |
+| Vinter-hattar<br/>Refererande domän: &#39;west.com&#39; | 1 |
 
 
 <!--![](assets/container_overview_persist_Visitor.png)-->
