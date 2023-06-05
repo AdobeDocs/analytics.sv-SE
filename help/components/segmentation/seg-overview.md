@@ -3,9 +3,9 @@ description: Med segment kan du identifiera undergrupper av besökare baserat p�
 title: Om segment
 feature: Segmentation
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: 2b1b681039fded30578ea9f46477e68bdc5630ca
+source-git-commit: 9ae046e99b25cf8d648d80968124f9688fdd3cd5
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1163'
 ht-degree: 1%
 
 ---
@@ -237,7 +237,9 @@ Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtg�
 
 ## Video om hur man segmenterar {#segment-video}
 
-Den här videon ger en kort översikt över vilka segmentbehållare som är och hur de används: [Segmentbehållare i Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-containers.html)
+Den här videon ger en kort översikt över vilka segmentbehållare som är och hur de används:
+
+![](https://video.tv.adobe.com/v/25401)
 
 
 ## Åtkomst till segmenteringsverktygen {#access}
