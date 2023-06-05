@@ -5,9 +5,9 @@ title: Schemalägg projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 2d6854f7-8954-4d55-b2be-25981cfb348b
-source-git-commit: 258eac585d536af593e0fa5b2cf75fd53ecd4ef0
+source-git-commit: 99f9a1d1fa6238918c1566f64df41418cd13fa0e
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '598'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,10 @@ Från arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-p
 Så här skickar du en fil direkt till mottagarna via e-post:
 
 1. Klicka på **[!UICONTROL Share]>[!UICONTROL Export file]**.
-1. Ange filtypen (CSV eller PDF).
-1. (Valfritt) Lägg till en beskrivning som ska inkluderas i e-postmeddelandet för att förklara filen som tas emot.
+1. Ange filtyp:
+   * [!UICONTROL **CSV**]: Välj det här alternativet om du vill ha oformaterade textdata.
+   * [!UICONTROL **PDF**]: Välj det här alternativet om du vill att den hämtade filen ska innehålla alla tabeller och visualiseringar som visas i projektet.
+1. (Valfritt) Lägg till en beskrivning som ska ingå i e-postmeddelandet för att förklara filen som tas emot.
 1. Lägg till mottagare eller grupper. Du kan även ange e-postadresser.
 1. Klicka på **[!UICONTROL Send Now]**.
 1. (Valfritt) Klicka på **[!UICONTROL Show scheduling options]** för att ange ett leveransschema.
