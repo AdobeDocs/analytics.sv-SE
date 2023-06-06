@@ -3,9 +3,9 @@ title: Ta hand om en befintlig Adobe Analytics-implementering
 description: Instruktioner för administratörer som inte har använt en befintlig Adobe Analytics-implementering tidigare.
 feature: Implementation Basics
 exl-id: 4cf804f2-18a8-4be4-a18c-7ce663b8d145
-source-git-commit: b3c74782ef6183fa63674b98e4c0fc39fc09441b
+source-git-commit: ff719a996260aea108afb80665cacb6a7dbbf923
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Tar du över en Adobe Analytics-implementering från den tidigare tekniska ägar
 
 ![Playbook](assets/inherited-impl-playbook.png)
 
-Ta en titt på de här tipsen från din tekniska ägare Sarah Owen. Sarah är en [Adobe Analytics Champion](https://blog.adobe.com/en/publish/2020/10/27/adobe-analytics-champion-program.html#gs.ldf97p) och hon delar med sig av sina idéer om hur man använder den ärvda implementeringsspelboken för att ta hand om en befintlig implementering:
+Ta en titt på de här tipsen från din tekniska ägare Sarah Owen. Sarah är en Adobe Analytics Champion och hon delar med sig av sina idéer om hur man använder den ärvda Implementeringsspelboken för att ta hand om en befintlig implementering:
 
 >[!VIDEO](https://video.tv.adobe.com/v/327314/?quality=12&learn=on)
 
