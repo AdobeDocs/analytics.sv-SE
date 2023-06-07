@@ -4,9 +4,9 @@ title: Mätvärden i Analysis Workspace
 feature: Metrics
 role: User, Admin
 exl-id: 0a5dc709-c4e8-412a-a6cf-37b85d811f65
-source-git-commit: e0a10540bdfbd9fa3694ff3c7a8585eeb87eaad8
+source-git-commit: c1b679dab7b66754ae4b6fd7503243f40d0f2178
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '403'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Mätvärden
 
 Med hjälp av mätvärden kan du kvantifiera datapunkter i Analysis Workspace. De används oftast som kolumner i en visualisering och är knutna till dimensioner.
+
+## Typer av mätvärden
 
 Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace:
 
@@ -29,7 +31,17 @@ Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace
 
    ![Mallen Beräknade mätvärden](assets/calculated-metric-template.png)
 
-Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod. Du kan också dra ett mått när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt. Om du drar ett mätresultat över ett befintligt måtthuvud ersätts det och om du drar ett mätvärde bredvid ett huvud kan du se båda mätvärdena sida vid sida.
+## Använd mätvärden i Analysis Workspace
+
+Mätvärden kan användas på olika sätt i Analysis Workspace. Ni kan:
+
+* Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod.
+
+* Dra ett mätvärde när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt.
+
+* Dra ett mätresultat över ett befintligt måtthuvud om du vill ersätta det.
+
+* Dra ett mätvärde bredvid ett huvud om du vill visa båda mätvärdena sida vid sida.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40817/?quality=12)
 

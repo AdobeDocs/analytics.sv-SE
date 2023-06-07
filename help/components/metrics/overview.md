@@ -3,10 +3,10 @@ title: Översikt över mätvärden
 description: Visa kvantiteter för dimensionsobjekt eller data över tid.
 feature: Metrics
 exl-id: 8dda3bc4-ffac-4407-896f-6064727d099c
-source-git-commit: 3ed4c075578ef31cec4b1c825039eae989c813dc
+source-git-commit: c1b679dab7b66754ae4b6fd7503243f40d0f2178
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 2%
+source-wordcount: '210'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Om du t.ex. kombinerat siddimensionen med Visits-måttet får du en rankad rappo
 | `Product page` | `500` |
 | `Purchase page` | `100` |
 
-Om du inte kan hitta en viss hjälpsida för mätvärden är det troligtvis en [anpassad händelse](custom-events.md) eller en [beräknat mått](../c-calcmetrics/cm-overview.md).
+Om du inte hittar hjälpsidan för ett givet mätresultat är det troligtvis antingen en [anpassad händelse](custom-events.md) eller en [beräknat mått](../c-calcmetrics/cm-overview.md).
 
 * Om mätvärdena är en anpassad händelse ska du kontakta en Analytics-administratör inom organisationen eller rapportsvitens [konstruktionsdokument](/help/implement/prepare/solution-design.md).
 * Om måttet är ett beräknat mått klickar du på informationsikonen för att bestämma dess formel.
@@ -30,3 +30,7 @@ Om du inte kan hitta en viss hjälpsida för mätvärden är det troligtvis en [
 ## Lägg till måttbeskrivningar
 
 Analysadministratörer kan lägga till beskrivningar för mätvärden och andra komponenter antingen i Report Suite eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar till mätvärden finns i [Lägga till komponentbeskrivningar](/help/analyze/analysis-workspace/components/add-component-descriptions.md).
+
+## Använd mätvärden i Analysis Workspace
+
+Mer information om hur du använder mätvärden i Analysis Workspace finns i&quot;Använd mätvärden i Analysis Workspace&quot; i [Mått](/help/analyze/analysis-workspace/components/apply-create-metrics.md).
