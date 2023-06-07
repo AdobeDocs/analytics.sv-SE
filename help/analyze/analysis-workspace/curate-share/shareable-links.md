@@ -5,7 +5,7 @@ title: Skapa delningsbara länkar
 feature: Curate and Share
 role: User, Admin
 exl-id: 39fbe18c-2f75-4026-b277-58ec08c6a645
-source-git-commit: 870252bebc55ddc5621e6d1add708cb1d9fda60d
+source-git-commit: 8e03817b2e03c50dff730be05849a47d7728dc9a
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -23,8 +23,6 @@ Om du vill dela en länk till ett projekt går du till det projekt du vill dela 
 Om länkens mottagare inte har tilldelats en [projektroll](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html), administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]** upplevelser.
 
 ## Få en skrivskyddad länk att dela med vem som helst
-
-{{release-limited-testing-section}}
 
 Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Användare som du delar länken med behöver inte logga in.
 

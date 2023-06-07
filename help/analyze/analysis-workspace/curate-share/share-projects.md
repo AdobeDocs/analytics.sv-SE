@@ -5,7 +5,7 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 8aca2f068a455eddca904d0367bc4a282f464e56
+source-git-commit: 8e03817b2e03c50dff730be05849a47d7728dc9a
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 0%
@@ -105,8 +105,6 @@ Så här delar du projektlänken med användare i din organisation:
 1. Dela länken med användare i organisationen. Du kan till exempel klistra in den i ett e-postmeddelande, på en intern webbplats och så vidare.
 
 ## Dela ett projekt med vem som helst (ingen inloggning krävs) {#share-public-link}
-
-{{release-limited-testing-section}}
 
 Du kan bevilja [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-share/view-only-projects.md) till Analysis Workspace-projekt för dem som inte har tillgång till Adobe Analytics. Detta kan omfatta:
 
