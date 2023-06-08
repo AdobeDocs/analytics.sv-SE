@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: da106eb1-7f5c-469a-a8aa-8497fc3706dc
-source-git-commit: 8e03817b2e03c50dff730be05849a47d7728dc9a
+source-git-commit: 441484c0547439de2ab1cdc2596fb681592df012
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,15 @@ Du kan dela ett Analysis Workspace-projekt med följande typer av personer:
 
 * Användare och grupper i organisationen som har tillgång till Adobe Analytics
 
-   Du kan dela behörigheten Redigera, Duplicera eller Visa
+  Du kan dela behörigheten Redigera, Duplicera eller Visa
 
 * Användare och grupper i organisationen som inte har tillgång till Adobe Analytics
 
-   Mottagarna har skrivskyddad åtkomst
+  Mottagarna har skrivskyddad åtkomst
 
 * Personer utanför din organisation
 
-   Mottagarna har skrivskyddad åtkomst
+  Mottagarna har skrivskyddad åtkomst
 
 Alla [kuration](curate.md) används innan delningen visas när mottagarna öppnar projektet.
 
@@ -55,7 +55,7 @@ När du delar en specifik projektroll med användare och grupper i organisatione
 
 * En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får **[!UICONTROL Can edit]** som individ och **[!UICONTROL Can view]** som medlem i en grupp får de **[!UICONTROL Can edit]** projekterfarenhet.
 
-* Administratörer i **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan vid behov utöka sin roll till **[!UICONTROL Can edit]** när som helst till **[!UICONTROL Components]>[!UICONTROL Projects]**.
+* Administratörer i **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan ändra sin roll till **[!UICONTROL Can edit]** genom att dela projektet med sig själva och bevilja redigeringsrollen enligt beskrivningen i följande procedur.
 
 Så här delar du en specifik projektroll med användare eller grupper i organisationen:
 
@@ -126,7 +126,6 @@ Du kan bevilja [skrivskyddad åtkomst](/help/analyze/analysis-workspace/curate-s
 >
 >* Ett projekt kan bli oåtkomligt om många användare försöker få åtkomst till en viss länk samtidigt. Som standard har fler än 190 personer tillgång till en enda länk var femte minut. Om din organisation når den gränsen väntar du i fem minuter och försöker sedan att få åtkomst till länken igen.
 
-
 I följande videodemonstration och medföljande dokumentation beskrivs alternativen för att dela en länk med vem som helst:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
@@ -151,9 +150,9 @@ Så här delar du ett Analysis Workspace-projekt med personer som inte har tillg
 
    * **[!UICONTROL Require Experience Cloud authentication]:**
 
-      När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de användare som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
+     När det här alternativet är aktiverat är de enda användare som har åtkomst till projektet de användare som kan logga in på den Adobe Experience Cloud-organisation där det projekt som du delar skapades. De användare du delar med behöver dock inte ha tillgång till Adobe Analytics.
 
-      Analysadministratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
+     Analysadministratörer kan konfigurera den här inställningen för företaget enligt beskrivningen i [Inställningar](/help/analyze/analysis-workspace/user-preferences.md). Följande scenarier kan visas beroende på hur administratören konfigurerade det här alternativet:
 
       * Om det här alternativet inte visas har Analytics-administratören inte aktiverat den här funktionen.
 
@@ -196,6 +195,5 @@ Här är en video om ämnet:
 | Fråga | Svar |
 | --- | --- |
 | Vad händer om två redigerare sparar ett projekt samtidigt? | Ändringarna sammanfogas inte och den senast sparade projektversionen behålls. Analysis Workspace stöder för närvarande inte live-samarbete. |
-| Vilken projekterfarenhet vill jag som administratör se? | Administratörer som placerats i en **[!UICONTROL Can duplicate]** eller **[!UICONTROL Can view]** får de begränsade upplevelserna när de öppnar ett projekt. En administratör kan vid behov utöka sin roll till **[!UICONTROL Can edit]** när som helst till **[!UICONTROL Components]>[!UICONTROL Projects]**. |
 | Vad händer om en mottagare placeras i en roll som enskild person och en annan roll som medlem i en grupp? | Om en mottagare placeras i flera roller får de alltid den högre upplevelsen. Om en mottagare får **[!UICONTROL Can edit]** som individ och **[!UICONTROL Can view]** som medlem i en grupp får de **[!UICONTROL Can edit]** projekterfarenhet. |
 | Vilken upplevelse får en mottagare om de öppnar en projektlänk? | Mottagarna får rollen som du placerade dem i den delade modalen. Om en mottagare inte har tilldelats en roll och får en länk till projektet (**[!UICONTROL Share]** > **[!UICONTROL Share with Workspace users]** väljer **[!UICONTROL Copy]** bredvid **[!UICONTROL Share by link]** -fält) placeras de som standard i en roll. Administratörer får **[!UICONTROL Can edit]** och icke-administratörer får **[!UICONTROL Can duplicate]**. |
