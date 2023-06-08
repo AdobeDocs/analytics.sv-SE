@@ -4,9 +4,9 @@ keywords: Beräknade mått;Härledda värden;Avancerade beräknade värden
 title: Beräknade och avancerade beräknade (härledda) värden
 feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
+source-git-commit: 970c18834c1cc7f866b7b0ceec7dc1642c3482ad
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '565'
 ht-degree: 6%
 
 ---
@@ -39,14 +39,10 @@ Här är en jämförelse av beräkningsstatistik och avancerade beräkningsfunkt
 Ni kan
 
 * Skapa mätvärden för [!UICONTROL Analysis Workspace], [!UICONTROL Reports & Analytics], [!UICONTROL Report Builder], [!UICONTROL Anomaly Detection]och [!UICONTROL Contribution Analysis].
-* Skapa segmenterade mätvärden som genereras vid rapportkörning, utan att behöva ändra implementeringen. Dessa kan ses historiskt eftersom de baseras på segment. Här är en video om implementeringsfria mätvärden:
-
-   >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+* Skapa segmenterade mätvärden som genereras vid rapportkörning, utan att behöva ändra implementeringen. Dessa kan ses historiskt eftersom de baseras på segment.
 
 * Dela mätvärden mellan olika rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
-* (Endast avancerade beräknade mätvärden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot;, med antalet personer som detta är den första sessionen för. Här är ett videoklipp om detta ämne:
-
-   >[!VIDEO](https://video.tv.adobe.com/v/25409/?quality=12)
+* (Endast avancerade beräknade mätvärden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot;, med antalet personer som detta är den första sessionen för.
 
 * (Endast avancerade beräknade värden) Inkludera statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
 
