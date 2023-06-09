@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: a6b7622562ced9d28229e094f027c8d0ee79532b
+source-git-commit: 0d16592cfa1f0da4e868d9d51c1a73269235b653
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 45%
+source-wordcount: '715'
+ht-degree: 44%
 
 ---
 
@@ -177,7 +177,7 @@ ht-degree: 45%
       + [Segmentkompatibilitet för Data Warehouse](segmentation/seg-reference/seg-compatibility.md)
       + [Segmentbehörigheter efter roll](segmentation/seg-reference/seg-rights.md)
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
-   + [Frågor och svar om hantering av äldre segment ](segmentation/seg-transition.md)
+   + [Frågor och svar om hantering av äldre segment](segmentation/seg-transition.md)
    + [God praxis](segmentation/best-practices.md)
 + Beräknade mätvärden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) mätvärden](c-calcmetrics/cm-overview.md)
@@ -236,10 +236,16 @@ ht-degree: 45%
    + [Översikt över klassificeringar](classifications/c-classifications.md)
    + Klassificeringsuppsättningar {#sets}
       + [Översikt över klassificeringsuppsättningar](classifications/sets/overview.md)
-      + [Klassificeringsuppsättningshanteraren](classifications/sets/set-manager.md)
+      + Hantera klassificeringsuppsättningar {#manage}
+         + [Klassificeringsuppsättningshanterare](classifications/sets/manage/set-manager.md)
+         + [Skapa en klassificeringsuppsättning](classifications/sets/manage/create.md)
+         + [Inställningar för klassificeringsuppsättning](classifications/sets/manage/settings.md)
+         + [Schema för klassificeringsuppsättning](classifications/sets/manage/schema.md)
+         + [Klassificeringsuppsättningsregler](classifications/sets/manage/rules.md)
       + [Jobbhanterare för klassificeringsuppsättning](classifications/sets/job-manager.md)
-      + [Skapa en klassificeringsuppsättning](classifications/sets/create.md)
-      + [Inställningar för klassificeringsuppsättning](classifications/sets/settings.md)
+      + Konsolideringar av klassificeringsuppsättningar {#consolidations}
+         + [Konsolideringshanterare för klassificeringsuppsättning](classifications/sets/consolidations/manage.md)
+         + [Konsolideringsprocess för klassificeringsuppsättning](classifications/sets/consolidations/process.md)
    + Classification Rule Builder {#classifications-rulebuilder}
       + [Arbetsflöde för Classification Rule Builder](classifications/crb/classification-rule-builder.md)
       + [Uppsättningar med klassificeringsregler](classifications/crb/classification-rule-set.md)
@@ -260,6 +266,7 @@ ht-degree: 45%
       + [FTP-export](classifications/importer/ftp-export.md)
       + [Bearbetningstid](classifications/importer/processing-time.md)
       + [Felsökning](classifications/importer/troubleshooting.md)
+
    + [Underklassificeringar](classifications/c-sub-classifications.md)
    + [Vanliga frågor om klassificeringar](classifications/faq.md)
 + [Kalenderhändelser](t-calendar-event.md)

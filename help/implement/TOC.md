@@ -4,10 +4,10 @@ audience: all
 user-guide-title: Implementeringshandbok för Analytics
 breadcrumb-title: Implementeringshandbok
 user-guide-description: Lär dig hur du implementerar Adobe Analytics. Anpassa vilka data som samlas in för att få ut så mycket som möjligt av Analytics-data.
-source-git-commit: 9a16cd89b2d650098495902cca5c5229df48b475
+source-git-commit: fb739c9185cdc246540cfe9c78dc8660022512d4
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 74%
+source-wordcount: '411'
+ht-degree: 73%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 74%
       + [cookieDomainPeriods](vars/config-vars/cookiedomainperiods.md)
       + [cookieLifetime](vars/config-vars/cookielifetime.md)
       + [currencyCode](vars/config-vars/currencycode.md)
+      + [doubleEncodeLinkParameters](vars/config-vars/doubleencodelinkparameters.md)
       + [dynamicVariablePrefix](vars/config-vars/dynamicvariableprefix.md)
       + [fpCookieDomainPeriods](vars/config-vars/fpcookiedomainperiods.md)
       + [linkDownloadFileTypes](vars/config-vars/linkdownloadfiletypes.md)
