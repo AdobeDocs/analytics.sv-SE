@@ -3,10 +3,10 @@ title: Användargränssnitt för datafeed
 description: Lär dig navigera i dataflödesgränssnittet.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 0916ef4ddc2ca65f01721f4d79d7af825dcf50e3
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 1%
+source-wordcount: '635'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ Klicka på fliken Jobb för att visa enskilda jobb som var och en av dina feeds 
 
 ### Lägg till
 
-I närheten av flikarna för feeds och jobb klickar du på + [!UICONTROL Add] för att skapa en ny feed. Se [Lägga till en feed](create-feed.md) för mer information.
+I närheten av flikarna för feeds och jobb klickar du på + [!UICONTROL Add] för att skapa en ny feed. Se [Skapa en datafeed](create-feed.md) för mer information.
 
 ### Kolumner
 
@@ -66,8 +66,8 @@ Varje feed som skapas visar flera kolumner med information om den. Klicka på en
 * **Report Suite-ID**: Rapportsvitens unika identifierare.
 * **Datakolumner**: Vilka datakolumner som är aktiva för feeden. I de flesta fall finns det för många kolumner att visa i det här formatet.
 * **Intervall**: Indikerar om matningen är timme eller dag.
-* **Måltyp**: Måltypen för feeden. Exempel: FTP, Amazon S3 eller Azure.
-* **Målvärd**: Platsen där filen placeras. Exempel, `ftp.example.com`.
+* **Måltyp**: Måltypen för feeden. Exempel: Amazon S3, GCP eller Azure.
+* **Målvärd**: Platsen där filen placeras.
 * **Ägare**: Användarkontot som skapade feeden.
 * **Status**: Status för feeden.
    * Aktiv: Matningen är i drift.

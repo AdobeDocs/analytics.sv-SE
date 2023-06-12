@@ -5,16 +5,30 @@ subtopic: data feeds
 title: Innehåll i datafeed - översikt
 feature: Data Feeds
 exl-id: 7456ed99-c2f3-4b19-a63e-6b4e457e7d55
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 6b42fc4a383b05a3630cbba7c5bce6b4561a9419
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
 # Innehåll i datafeed - översikt
 
-I det här avsnittet beskrivs de filer som hittas vid leverans av en datafeed.
+I följande avsnitt beskrivs hur du får åtkomst till och förstår de filer som finns i en leverans av en datafeed.
+
+## Få tillgång till innehåll i datafeed
+
+Så här kommer du åt innehållet i en datafeed:
+
+1. Logga in på målwebbplatsen för datafeed.
+
+   Det här är målwebbplatsen som du konfigurerar när du skapar dataflödet, till exempel en Amazon S3- eller Google Cloud Platform-bucket.
+
+1. Hämta den komprimerade datafeeden till din lokala dator.
+
+1. Zippa upp den komprimerade filen med ett program som stöder `.tar.gz` filtillägg.
+
+1. Öppna `hit_data.tsv` i kalkylbladet eller det databasprogram som du vill använda för att visa rådata för den dagen. —>
 
 ## Manifest-fil {#feed-manifest}
 
