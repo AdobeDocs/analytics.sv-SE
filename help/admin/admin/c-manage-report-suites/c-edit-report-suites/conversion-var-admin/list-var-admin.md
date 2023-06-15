@@ -3,31 +3,27 @@ title: Listvariabler
 description: Skapa och konfigurera listvariabler för rapportering.
 feature: Admin Tools
 exl-id: 6d9a52d4-e7f3-4bbc-bad4-55c79f30b9f7
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 1%
+source-wordcount: '471'
+ht-degree: 0%
 
 ---
 
 # Listvariabler
 
-Skapa och konfigurera listvariabler för rapportering. Ange värden för avgränsare, förfallodatum, allokering och max här.
+Skapa och konfigurera listvariabler för rapportering. Ange värden för avgränsare, förfallodatum, allokering och max.
 
-Du kommer åt konfigurationen i Admin Console:
-
-1. Gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**
-2. Välj rapportsviten.
-3. Klicka på  **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL List Variables]** .
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Finding Methods]**
 
 * **Namn**: Varje avgränsat värde kan innehålla högst 255 tecken (eller mindre om flerbytetecken används). Det här är maxlängden för varje element.
 * **Värdeavgränsare**: Det tecken som används för att avgränsa värden inom List Var. De vanligaste är tecken som kommatecken, kolon, rör eller liknande.
 
-   >[!NOTE]
-   >
-   >Flerbytetecken stöds inte som avgränsare i List Vars. Avgränsaren måste vara en byte.
+  >[!NOTE]
+  >
+  >Flerbytetecken stöds inte som avgränsare i List Vars. Avgränsaren måste vara en byte.
 
-* **Förfaller**: På samma sätt som när eVar förfaller avgör detta hur lång tid det kan ta mellan List Var och konverteringshändelsen för dem att vara relaterade.
+* **Förfaller**: På samma sätt som när eVar förfaller avgör det här fältet hur lång tid det kan ta mellan List Var och konverteringshändelsen för dem att vara relaterade.
    * **På sidvy eller besöksnivå**: Framgångshändelser utanför sidvyn eller besöket länkar inte tillbaka till några värden i List Var.
    * **Baserat på en tidsperiod, t.ex. dag, vecka, månad**: Slutförda händelser efter den angivna tidsperioden länkar inte tillbaka till några värden i List Var. Ett anpassat antal dagar kan också definieras.
    * **Specifika konverteringshändelser**: Andra lyckade händelser som utlöses efter den angivna händelsen länkas inte tillbaka till några värden i List Var.

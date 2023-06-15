@@ -3,7 +3,7 @@ description: Klassificeringar används för att kategorisera värden i grupper o
 title: Konverteringsklassificeringar
 feature: Classifications
 exl-id: b4855000-adf3-4e3b-af36-f4803383126d
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 3%
@@ -13,6 +13,8 @@ ht-degree: 3%
 # Konverteringsklassificeringar
 
 Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan till exempel klassificera alla [!UICONTROL Paid Search] kampanjer i en kategori som *pop term* och rapportera om hur den kategorin fungerar i förhållande till mätvärden som instanser (klickfrekvens) och konvertering till lyckade händelser. Du kan lägga till upp till 255 klassificeringar i en variabel.
+
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**
 
 Med konverteringsklassificeringar kan du klassificera konverteringsvariabler. När de har klassificerats kan alla rapporter som du kan generera med nyckeldata också genereras med hjälp av de associerade dataegenskaperna.
 

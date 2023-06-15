@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Referens för datakolumner
 feature: Data Feeds
 exl-id: e1492147-6e7f-4921-b509-898e7efda596
-source-git-commit: 6e59ee3cb3eb59b025053603cd1357c5a2709d00
+source-git-commit: 43e483f157f1c2527f671eb43a165db86c77a7ce
 workflow-type: tm+mt
-source-wordcount: '3670'
+source-wordcount: '3671'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`browser`** | Numeriskt ID för webbläsaren. Refererar till `browser.tsv` uppslagstabell. | int unsigned |
 | **`browser_height`** | Höjd i pixlar i webbläsarfönstret. | smallint unsigned |
 | **`browser_width`** | Bredd i pixlar i webbläsarfönstret. | smallint unsigned |
-| **`c_color`** | Färgpalettens bitdjup. Används som en del av beräkningen av [Färgdjup](/help/components/dimensions/color-depth.md) dimension. AppMeasurement använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
+| **`c_color`** | Färgpalettens bitdjup. Används som en del av beräkningen av [Färgdjup](/help/components/dimensions/color-depth.md) dimension. AppMeasurementet använder JavaScript-funktionen `screen.colorDepth()`. | char(20) |
 | **`campaign`** | Variabel som används i [Spårningskod](/help/components/dimensions/tracking-code.md) dimension. | varchar(255) |
-| **`carrier`** | Integrationsvariabel för Adobe Advertising. Anger mobiloperatör. Nyckelvärdet för `carrier.tsv` [Dynamisk sökning](dynamic-lookups.md). | varchar(100) |
+| **`carrier`** | Integrationsvariabel Adobe Advertising. Anger mobiloperatör. Nyckelvärdet för `carrier.tsv` [Dynamisk sökning](dynamic-lookups.md). | varchar(100) |
 | **`ch_hdr`** | Klienttips som samlats in via HTTP-begärandehuvudet. | text |
 | **`ch_js`** | Klienttips som samlats in via JavaScript-API:t för användaragentklienten. | text |
 | **`channel`** | Variabel som används i [Platsavsnitt](/help/components/dimensions/site-section.md) dimension. | varchar(100) |
@@ -54,7 +54,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`clickmaplinkbyregion`** | Activity Map länk per region | varchar(255) |
 | **`clickmappage`** | Activity Map page | varchar(255) |
 | **`clickmapregion`** | Activity Map | varchar(255) |
-| **`code_ver`** | AppMeasurement Library-version som används för att kompilera och skicka bildbegäran. | char(16) |
+| **`code_ver`** | AppMeasurementen biblioteksversion som används för att kompilera och skicka bildbegäran. | char(16) |
 | **`color`** | ID för färgdjup baserat på värdet för `c_color` kolumn. Refererar till `color_depth.tsv` uppslagstabell. | smallint unsigned |
 | **`connection_type`** | Numeriskt ID som representerar anslutningstypen. Variabel som används i [Anslutningstyp](/help/components/dimensions/connection-type.md) dimension. Refererar till `connection_type.tsv` uppslagstabell. | tinyint unsigned |
 | **`cookies`** | Variabel som används i [Cookie-stöd](/help/components/dimensions/cookie-support.md) dimension.<br>Y: Aktiverad<br>N: Handikappade<br>U: Okänd | char(1) |
@@ -100,7 +100,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`ipv6`** | Den komprimerade IPv6-adressen, om den är tillgänglig. Endast `ip`; om den här kolumnen innehåller en icke-konfidentiell IP-adress, `ip` är tom. | varchar(40) |
 | **`j_jscript`** | Den version av JavaScript som stöds av webbläsaren. | char(5) |
 | **`java_enabled`** | Flagga som anger om Java är aktiverat. <br>Y: Aktiverad <br>N: Handikappade <br>U: Okänd | char(1) |
-| **`javascript`** | Uppslags-ID för JavaScript-version, baserat på `j_jscript`. Använder uppslagstabell. | tinyint unsigned |
+| **`javascript`** | Uppslags-ID för JavaScript-version, baserat på `j_jscript`. Refererar till `javascript_version` uppslagstabell. | tinyint unsigned |
 | **`language`** | Numeriskt ID för språk. Användningsområden `languages.tsv` uppslagstabell. | smallint unsigned |
 | **`last_hit_time_gmt`** | Tidsstämpel (i UNIX®-tid) för föregående träff. Används för att beräkna [Dagar sedan senaste besök](/help/components/dimensions/days-since-last-visit.md) dimension. | int |
 | **`last_purchase_num`** | Variabel som används i [Kundlojalitet](/help/components/dimensions/customer-loyalty.md) dimension. Antalet tidigare inköp som besökaren har gjort. <br>0: Inga tidigare inköp (inte en kund) <br>1: 1 tidigare inköp (ny kund) <br>2: 2 tidigare inköp (returkund) <br>3: 3 eller fler tidigare inköp (lojal kund) | int unsigned |
@@ -186,7 +186,7 @@ Tidigare uppdateringar av den här tabellen finns på den här sidans [implement
 | **`ref_type`** | Ett numeriskt ID som representerar typen av referens för träffen. Används i [Referenstyp](/help/components/dimensions/referrer-type.md) dimension. <br>1: Inuti din webbplats<br>2: Andra webbplatser <br>3: Sökmotorer <br>4: Hårddisk <br>5: USENET <br>6: Typed/Bookmarked (ingen referent) <br>7: E-post <br>8: Inget JavaScript <br>9: Sociala nätverk | tinyint unsigned |
 | **`referrer`** | Föregående sidas URL. Används i [Referent](/help/components/dimensions/referrer.md) dimension. Observera att `referrer` använder datatypen varchar(255), `post_referrer` använder datatypen varchar(244). | varchar(255) |
 | **`resolution`** | Numeriskt ID som representerar bildskärmens upplösning. Används i [Bildskärmsupplösning](/help/components/dimensions/monitor-resolution.md) dimension. Användningsområden `resolution.tsv` uppslagstabell. | smallint unsigned |
-| **`s_kwcid`** | Nyckelords-ID som används i integreringar med Adobe Advertising. | varchar(255) |
+| **`s_kwcid`** | Nyckelord-ID som används i integreringar med Adobe Advertising. | varchar(255) |
 | **`s_resolution`** | Upplösningsvärde för råformat. Samlas in med JavaScript-funktionen `screen.width x screen.height`. | char(20) |
 | **`search_engine`** | Numeriskt ID som representerar sökmotorn som refererade besökaren till webbplatsen. Användningsområden `search_engines.tsv` sökning. | smallint unsigned |
 | **`search_page_num`** | Används av [Alla söksidrankning](/help/components/dimensions/all-search-page-rank.md) dimension. Anger vilken sida med sökresultat som webbplatsen visade sig på innan användaren klickade igenom till webbplatsen. | smallint unsigned |

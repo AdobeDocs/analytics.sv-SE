@@ -5,9 +5,9 @@ subtopic: data feeds
 title: Innehåll i datafeed - översikt
 feature: Data Feeds
 exl-id: 7456ed99-c2f3-4b19-a63e-6b4e457e7d55
-source-git-commit: 6b42fc4a383b05a3630cbba7c5bce6b4561a9419
+source-git-commit: 43e483f157f1c2527f671eb43a165db86c77a7ce
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -81,24 +81,24 @@ Uppslagsfilerna levereras tillsammans i en komprimerad zip-fil med följande nam
 [rsid]_[YYYY-mm-dd]-lookup_data.[compression_suffix]
 ```
 
-* [!DNL column_headers.tsv] (anpassat för denna datafeed)
-* [!DNL browser.tsv]
-* [!DNL browser_type.tsv]
-* [!DNL color_depth.tsv]
-* [!DNL connection_type.tsv]
-* [!DNL country.tsv]
-* [!DNL javascript_version.tsv]
-* [!DNL languages.tsv]
-* [!DNL operating_systems.tsv]
-* [!DNL plugins.tsv]
-* [!DNL resolution.tsv]
-* [!DNL referrer_type.tsv]
-* [!DNL search_engines.tsv]
-* [!DNL event_lookup.tsv] (anpassat för denna datafeed)
+* **`column_headers.tsv`**: En rad som innehåller kolumnrubriker för `hit_data.tsv`.
+* **`browser.tsv`**: Mappar webbläsar-ID:t ( `browser` feed-kolumn) till webbläsarens egna namn.
+* **`browser_type.tsv`**: Mappar webbläsar-ID:t ( `browser` flödeskolumn) till webbläsartyp.
+* **`color_depth.tsv`**: Mappar färgdjup-ID:t ( `color` flödeskolumn) till färgdjup.
+* **`connection_type.tsv`**: Mappar anslutningstyp-ID:t ( `connection_type` feed-kolumn) till anslutningstypen.
+* **`country.tsv`**: Mappar lands-ID:t ( `country` feed-kolumn) till landsnamnet.
+* **`javascript_version.tsv`**: Mappar JavaScript-versions-ID:t ( `javascript` feed-kolumn) till JavaScript-versionen.
+* **`languages.tsv`**: Mappar språk-ID:t ( `language` flödeskolumn) till språk.
+* **`operating_systems.tsv`**: Mappar operativsystems-ID:t (på `os` feed-kolumn) till operativsystemets namn.
+* **`plugins.tsv`**: Mappar plug-in-ID:n ( `plugin` feed-kolumn) till varje plugin-programnamn.
+* **`resolution.tsv`**: Mappar upplösnings-ID:t ( `resolution` feed-kolumn) till skärmupplösningen.
+* **`referrer_type.tsv`**: Mappar referensens typ-ID ( `ref_type` feed-kolumn) till referenstypen.
+* **`search_engines.tsv`**: Mappar sökmotor-ID:t ( `search_engine` feed-kolumn) till sökmotorns namn.
+* **`event.tsv`**: Mappar varje händelse-ID ( `event_list` feed-kolumn) till dess respektive händelsenamn.
 
 ## Träffa datafiler
 
-Träffdata finns i [!DNL hit_data.tsv] -fil. Mängden data i den här filen avgörs av leveransformatet (varje timme eller dag samt en eller flera filer). Den här filen innehåller bara träffdata. Kolumnrubrikerna levereras separat tillsammans med sökfilerna. Varje rad i den här filen innehåller ett enda serveranrop.
+Träffdata finns i `hit_data.tsv` -fil. Mängden data i den här filen avgörs av leveransformatet (varje timme eller dag samt en eller flera filer). Den här filen innehåller bara träffdata. Kolumnrubrikerna levereras separat tillsammans med sökfilerna. Varje rad i den här filen innehåller ett enda serveranrop.
 
 Filer som levereras med Adobe varierar beroende på vilken typ av datafeed du har konfigurerat. Alla filer är kodade med ISO-8859-1.
 

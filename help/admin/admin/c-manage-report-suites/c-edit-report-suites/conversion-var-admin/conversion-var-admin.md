@@ -4,7 +4,7 @@ keywords: eVar
 title: Konverteringsvariabler (eVar)
 feature: Admin Tools
 exl-id: 822ecaff-a06c-42e1-aee8-ef4a43df4230
-source-git-commit: 2f219f599b5c9231a29a23e1ebd9412081754c9d
+source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 0%
@@ -15,6 +15,7 @@ ht-degree: 0%
 
 Custom Insight Conversion Variable (eller eVar) placeras i Adobe-koden på vissa webbsidor på din webbplats. Dess främsta syfte är att segmentera framgångsstatistik för konverteringar i anpassade marknadsföringsrapporter. En eVar kan vara besöksbaserad och fungera på liknande sätt som cookies. Värden som skickas till eVar följer användaren under en förbestämd tidsperiod.
 
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Variables]**
 
 ## Översikt över konverteringsvariabler (eVars)
 

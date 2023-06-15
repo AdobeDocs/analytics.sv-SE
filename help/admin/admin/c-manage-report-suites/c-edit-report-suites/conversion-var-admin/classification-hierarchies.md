@@ -4,7 +4,7 @@ subtopic: Classifications
 title: Klassificeringshierarkier
 feature: Classifications
 exl-id: 19907e24-9624-4d30-a6c2-b5f8c9e9eb24
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 # Klassificeringshierarkier
 
 På sidan Klassificeringshierarkier kan du definiera klassificeringshierarkier som du kan använda för att skapa hierarkirapporter med samma namn.
+
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Classification Hierarchies]**
 
 ## Klassificeringshierarkier {#concept_10A956342D7D4C3E9114CCFCE1364741}
 
