@@ -3,9 +3,9 @@ title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 feature: Implementation Basics
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-source-git-commit: bdd9473b0ac3bd77ffeff53a095876e21ca2f4d4
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '900'
 ht-degree: 28%
 
 ---
@@ -33,35 +33,36 @@ Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat p
 
 För **webbplats**, finns följande implementeringsmetoder:
 
-* **Web SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics för nya kunder. Installera **AEP Web SDK-tillägg** i Adobe Experience Platform Data Collection **Taggar**, använder en loader-tagg på varje sida och skickar data till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
-   ![Web SDK-tillägg](./assets/websdk-extension-implementation.png)
+* **Web SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics för nya kunder. Installera **Adobe Experience Platform Web SDK-tillägg** i Adobe Experience Platform Data Collection **Taggar**, använder en loader-tagg på varje sida och skickar data till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
+  ![Web SDK-tillägg](./assets/websdk-extension-implementation.png)
 Se [Implementera Adobe Analytics med tillägget Adobe Experience Platform Web SDK](./aep-edge/overview.md) för mer information.
 
 * **Web SDK**: Du kan läsa in Web SDK-bibliotek manuellt på webbplatsen om du inte vill använda Adobe Experience Platform Data Collection. Referera till Web SDK-biblioteket (`alloy.js`) på varje sida och skicka önskade spårningsanrop till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
-   ![Web SDK](./assets/websdk-implementation.png)
+  ![Web SDK](./assets/websdk-implementation.png)
 Se [Implementera Adobe Analytics med Adobe Experience Platform Web SDK](./aep-edge/overview.md) för mer information.
 
 
 * **Analystillägg**: Installera **Adobe Analytics-tillägg** i Adobe Experience Platform Data Collection **Taggar**. Placera en loader-tagg på varje sida och använd Adobe Analytics-tillägget för att bestämma hur varje variabel definieras. Använd den här implementeringsmetoden om du inte vill ha taggarnas bekvämlighet, men inte vill använda Edge Network-infrastrukturen.
-   ![Adobe Analytics-tillägg](./assets/analytics-extension-implementation.png)
+  ![Adobe Analytics-tillägg](./assets/analytics-extension-implementation.png)
 Se [Implementera Adobe Analytics med Analytics-tillägget](launch/overview.md) för mer information.
 
-* **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Referera till AppMeasurement-biblioteket (`AppMeasurement.js`) på varje sida och sedan ange variabler och inställningar som används i en implementering.
-   ![Äldre JavaScript](./assets/appmeasurement-implementation.png)
+* **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Referera till AppMeasurementet (`AppMeasurement.js`) på varje sida och sedan ange variabler och inställningar som används i en implementering.
+  ![Äldre JavaScript](./assets/appmeasurement-implementation.png)
 Den här implementeringsmetoden kan vara användbar för implementeringar med anpassad kod och rekommenderas fortfarande när du (vill) använder:
 
    * [data för aktivitetskarta](../analyze/activity-map/activity-map.md),
 
-      >[!INFO]
-      >
-      >Activity Map stöds med den senaste Web SDK:n. Se [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) för mer information.
+     >[!INFO]
+     >
+     >Activity Map stöds med den senaste Web SDK:n. Se [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) för mer information.
 
    * [mätning av direktuppspelningsmedia](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en),
 
    * [livs-API eller djurutlösare](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/live-stream-api/getting_started.md),
 
    * [Spårning av AMP-sidor](./other/amp.md)
-   Se [Implementera Adobe Analytics med AppMeasurement for JavaScript](js/overview.md) för mer information.
+
+  Se [Implementera Adobe Analytics med AppMeasurement för JavaScript](js/overview.md) för mer information.
 
 Följande beslutsflöde kan hjälpa dig att välja en implementeringsmetod:
 
@@ -77,14 +78,14 @@ Följande beslutsflöde kan hjälpa dig att välja en implementeringsmetod:
 För **mobilapp**, finns följande implementeringsmetoder:
 
 * **Mobile SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics i din mobilapp. Använd dedikerade bibliotek för att enkelt skicka data till Adobe inifrån mobilappen. Installera **Adobe Experience Platform Mobile SDK-tillägg** i Adobe Experience Platform Data Collection **Taggar** och implementera rätt kod i appen för att importera bibliotek, registrera tillägg och läsa in taggkonfigurationen. Detta skickar data till Adobe Experience Platform **Edge Network** i ett format som passar er. Experience Edge vidarebefordrar inkommande data till Adobe Analytics i rätt format.
-   ![Mobile SDK-tillägg](./assets/mobilesdk-extension.png)
+  ![Mobile SDK-tillägg](./assets/mobilesdk-extension.png)
 
-   Se [Implementera Adobe Analytics med Adobe Experience Platform Mobile SDK](../implement/aep-edge/mobile-sdk/overview.md) för mer information.
+  Se [Implementera Adobe Analytics med Adobe Experience Platform Mobile SDK](../implement/aep-edge/mobile-sdk/overview.md) för mer information.
 
 * **Analystillägg**: Installera **Adobe Analytics-tillägg** i Adobe Experience Platform Data Collection **Taggar**och implementera rätt kod i programmet för att importera bibliotek, registrera tillägg och läsa in taggkonfigurationen. Använd Analytics-tillägget för att bestämma hur varje variabel definieras. Använd den här implementeringsmetoden om du vill ha Adobe Experience Platform Data Collection, men inte vill använda Adobe Experience Platform Edge-nätverksinfrastruktur.
-   ![Analystillägg](./assets/mobilesdk-analytics-extension.png)
+  ![Analystillägg](./assets/mobilesdk-analytics-extension.png)
 
-   Se [Implementera Adobe Analytics med Analytics-tillägget](../implement/aep-edge/mobile-sdk/overview.md) för mer information.
+  Se [Implementera Adobe Analytics med Analytics-tillägget](../implement/aep-edge/mobile-sdk/overview.md) för mer information.
 
 
 >[!CAUTION]

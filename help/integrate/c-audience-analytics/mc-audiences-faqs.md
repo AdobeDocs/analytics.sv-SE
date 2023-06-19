@@ -4,9 +4,9 @@ solution: Experience Cloud
 title: Frågor och svar för Audience Analytics
 feature: Audience Analytics
 exl-id: 86e7967c-030c-44d6-8294-e7e6d41f6fc3
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,13 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
  </tbody> 
 </table>
 
-## AAM frågor och svar {#section_6BDF746BA6464359A6A89A64EB025D12}
+## Adobe Audience Manager-specifika frågor {#section_6BDF746BA6464359A6A89A64EB025D12}
 
 <table id="table_15B44592161240BDA79F3B020EA9CC9D"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>F: Hur skapar jag ett Analytics-mål i Audience Manager?</b> </p> </td> 
-   <td colname="col2"> Se <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html"  > Konfigurera ett analysmål i AAM </a>. </td> 
+   <td colname="col2"> Se <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html"  > Konfigurera ett analysmål i Adobe Audience Manager </a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: När du har skapat och sparat ett Analytics-mål, hur lång tid tar det tills data visas i de valda rapportsviterna?</b> </p> </td> 
@@ -58,7 +58,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
    <td colname="col2"> <p>Ett Analytics-mål tas bort från ett segments målmappningsavsnitt när du väljer <span class="uicontrol"> Mappa automatiskt alla aktuella och framtida segment </span> alternativ i <span class="uicontrol"> Segmentmappningar </span>. </p> <p><img placement="break" align="left"  src="assets/auto-mapping.png" id="image_670ED5A306784FCBA8A0B336AC1F0FC6" width="300px" /> </p> <p>Om du vill förhindra detta väljer du <span class="uicontrol"> Mappa segment manuellt </span> i stället för det automatiska alternativet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>F: Får jag all information från AAM i Analytics?</b> </p> </td> 
+   <td colname="col1"> <p> <b>F: Får jag all information från Adobe Audience Manager i Analytics?</b> </p> </td> 
    <td colname="col2"> <p>Nej, endast data som är relaterade till personer som kommer till er webbplats under eller efter det att Audience Manager-målgrupper aktiverats och under/efter det att segmentet kvalificerats. </p> </td> 
   </tr> 
   <tr> 
@@ -90,27 +90,27 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Varför ser jag inte data som kommer in i Analytics?</b> </p> </td> 
-   <td colname="col2"> <p>Du har troligtvis konflikter AAM sekretesskontrollerna mellan datakällor och mål. </p> </td> 
+   <td colname="col2"> <p>Du har troligtvis konflikter mellan Adobe Audience Manager sekretesskontroller mellan datakällor och mål. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Varför saknas några av mina segment i Analytics, trots att jag valde att skicka alla segment?</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_B8938FD08C6F4F2387EDADDEF8089319"> 
-     <li id="li_50A9BDF612304062913370F16BC882EF">Dina AAM för dataexport på målet och i segmentets datakällor kan vara i konflikt, vilket förhindrar att vissa segment skickas. </li> 
+     <li id="li_50A9BDF612304062913370F16BC882EF">Dina dataexportkontroller för Adobe Audience Manager på målet och i segmentets datakällor kan vara i konflikt, vilket förhindrar att vissa segment skickas. </li> 
      <li id="li_AF5D6F883D6F4D3192E0BF23CF12ADEA">Om du använder dataegenskaper från tredje part i dina segment kan dessa segment inte delas med mål (en uppsättning rapportsviter) som innehåller personuppgifter. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Varför ser jag"Målgruppsgräns nådd" i min Analytics-rapport? (Obs! this kommer också att representeras som Audience ID = -1 och "::max_audiences_exceeded::" i Data warehouse)</b> </p> </td> 
-   <td colname="col2"> <p>Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för AAM. Om en besökare tillhör mer än 150 AAM segment i en enda träff visas <b>150 senast kvalificerade segment</b> skickas till Analytics, medan den återstående listan trunkeras. </p> <p>En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som"Målgräns nådd" i dimensionen Målgruppsnamn och"-1" i dimensionen Målgrupps-ID. </p> <p>Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever"Målgruppsgräns nådd" i din rapportering har du två alternativ: </p> 
+   <td colname="col2"> <p>Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för Adobe Audience Manager. Om en besökare tillhör mer än 150 Adobe Audience Manager-segment i en enda träff visas <b>150 senast kvalificerade segment</b> skickas till Analytics, medan den återstående listan trunkeras. </p> <p>En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som"Målgräns nådd" i dimensionen Målgruppsnamn och"-1" i dimensionen Målgrupps-ID. </p> <p>Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever"Målgruppsgräns nådd" i din rapportering har du två alternativ: </p> 
     <ul id="ul_8E290B2E32DC49738F6FD00CB0CE2BBB"> 
      <li id="li_12F498981EA949B5BCBD40ECC954C339"><b>Alternativ 1</b>: Fortsätt att låta integreringen fungera i det färdiga läget och skicka de 150 senast kvalificerade segmenten för en viss besökare. </li> 
-     <li id="li_CA4D5747AA4A4452929097807B604959"><b>Alternativ 2</b>: I AAM väljer du de 150 segment som är viktigast för ditt företag för integreringen. AAM kontrollerar sedan besökarna mot endast dessa 150 segment. Nackdelen med detta är att ni bara får dessa 150 segment över alla besökare. Å andra sidan kan alternativ 1-metoden leverera ett obegränsat antal segment på grund av integreringens per-träfftyp. </li> 
+     <li id="li_CA4D5747AA4A4452929097807B604959"><b>Alternativ 2</b>: I Adobe Audience Manager väljer du de 150 segment som är viktigast för ditt företag för integreringen. Adobe Audience Manager kontrollerar sedan besökarna mot endast dessa 150 segment. Nackdelen med detta är att ni bara får dessa 150 segment över alla besökare. Å andra sidan kan alternativ 1-metoden leverera ett obegränsat antal segment på grund av integreringens per-träfftyp. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Faktureras ytterligare serversamtal till Analytics för den här integreringen?</b> </p> </td> 
-   <td colname="col2"> <p>Nej. AAM Audiences ingår i Analytics på serversidan. Detta medför inte ytterligare serveranrop till Analytics (primär eller sekundär). </p> </td> 
+   <td colname="col2"> <p>Nej. Adobe Audience Manager Audiences ingår i Analytics på serversidan. Detta medför inte ytterligare serveranrop till Analytics (primär eller sekundär). </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -121,7 +121,7 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>F: Om jag har implementerat en äldre SSF-fil, måste jag då också gå till Analytics Admin och aktivera rapportsviten SSF?</b> </p> </td> 
-   <td colname="col2"> <p>Ja. I AAM målinställningar visas endast rapportsviter som har SSF aktiverat. </p> </td> 
+   <td colname="col2"> <p>Ja. I Adobe Audience Manager-målinställningarna visas endast rapportsviter som har SSF aktiverat. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Varför kan jag inte aktivera vissa rapporteringsprogram för SWF i Analytics Admin?</b> </p> </td> 
@@ -141,12 +141,12 @@ Mer information om vanliga frågor om detta avsnitt finns i [Vanliga frågor om 
    <td colname="col2"> <p>Se <a href="/help/integrate/c-audience-analytics/visitor-count-reconciliation.md"  > Skillnader i antal besökare </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Vad är skillnaden mellan"målgrupper" i AAM och"segment" i Analytics?</b> </p> </td> 
-   <td colname="col2"> <p>Se <a href="/help/integrate/c-audience-analytics/aam-analytics-segments.md"  > Förstå segment i Analytics och Audience Manager </a>. </p> <p>AAM målgrupper skickas vidare och delas som"dimensionskomponenter" som ska användas i Analytics. De visas inte som segment i segmentbyggaren, till exempel, utan som dimensioner som du kan skapa segment med. </p> </td> 
+   <td colname="col1"> <p><b>F: Vad är skillnaden mellan"målgrupper" i Adobe Audience Manager och"segment" i Analytics?</b> </p> </td> 
+   <td colname="col2"> <p>Se <a href="/help/integrate/c-audience-analytics/aam-analytics-segments.md"  > Förstå segment i Analytics och Audience Manager </a>. </p> <p>Adobe Audience Manager målgrupper skickas vidare och delas som"dimensionskomponenter" som ska användas i Analytics. De visas inte som segment i segmentbyggaren, till exempel, utan som dimensioner som du kan skapa segment med. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Vad är skillnaden mellan kundattribut och kunddata som är integrerade från AAM?</b> </p> </td> 
-   <td colname="col2"> <p>Kundattribut är inte tidsbaserade; de tillämpar retroaktivt och går framåt. AAM integrerade data är tidsbaserade och kan bara vidareutvecklas. Dessutom är kundattribut ett sökregister för besökar-ID:n i Experience Cloud, medan AAM integrering är data som sammanfogas i varje träff för en besökare. </p> </td> 
+   <td colname="col1"> <p><b>F: Vad är skillnaden mellan kundattribut och kunddata som är integrerade från Adobe Audience Manager?</b> </p> </td> 
+   <td colname="col2"> <p>Kundattribut är inte tidsbaserade; de tillämpar retroaktivt och går framåt. Adobe Audience Manager-integrerade data är tidsbaserade och kan bara vidareutvecklas. Dessutom är kundattribut ett sökregister för besökar-ID:n i Experience Cloud, medan Adobe Audience Manager-integreringen är data som sammanfogas i varje träff för en besökare. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Hur är det med äldre metoder för detta problem, till exempel gamla beta- eller konsultplugin-program för cookie-mål?</b> </p> </td> 

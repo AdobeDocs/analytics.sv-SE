@@ -3,9 +3,9 @@ description: Gör att du kan använda segmentet för marknadsföringsaktivitet i
 title: Publicera segment till Experience Cloud
 feature: Segmentation
 exl-id: 0215f896-d3f8-42cc-ac8d-8a94b009927b
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1267'
 ht-degree: 1%
 
 ---
@@ -87,43 +87,43 @@ Om du vill ta bort ett segment som har publicerats i Experience Cloud måste du 
 
 ## Hämta [!DNL Audience Manager] UUID
 
-Det finns två sätt att hämta det AAM UUID som är kopplat till webbläsaren:
+Det finns två sätt att hämta det Adobe Audience Manager UUID som är kopplat till webbläsaren:
 
 * Adobe Experience Cloud Debugger
 * Internt utvecklarverktyg i webbläsare (t.ex. Chrome Developer Tools)
 
-I följande skärmbilder visas hur du hämtar AAM UUID i webbläsaren och använder det i profilvisningsprogrammet för Audience Manager Visitor för att validera trait &amp; segment-medlemskap.
+I följande skärmbilder visas hur du hämtar Adobe Audience Manager UUID i webbläsaren och använder det i profilvisningsprogrammet för Audience Manager Visitor för att validera trait &amp; segment-medlemskap.
 
 ### Metod 1: Använd Adobe Experience Cloud Debugger
 
 1. Hämta och installera [Adobe Experience Cloud Debugger](/help/implement/validate/debugger.md) i Chrome Web Store.
 1. Starta felsökaren när du läser in en sida.
-1. Bläddra till sektionen Audience Manager och hitta AAM UUID som finns på den aktuella webbläsarsidan (`50814298273775797762943354787774730612` i exemplet nedan)
+1. Bläddra till sektionen Audience Manager och hitta Adobe Audience Manager UUID som finns på den aktuella webbläsarsidan (`50814298273775797762943354787774730612` i exemplet nedan)
 
 ![Debugger](assets/debugger.jpg)
 
 ### Metod 2: Använd Chrome Developer Tools (eller andra verktyg för webbläsarutveckling)
 
 1. Starta Chrome Developer Tools innan du läser in en sida
-1. Läs in sidan och kontrollera Program > Cookies. AAM UUID ska anges i den tredje parts Demdex-cookie ([adobe.demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) i exemplet nedan). Fältdemonstrationen är AAM UUID som angetts i webbläsaren (`50814298273775797762943354787774730612` i exemplet nedan).
+1. Läs in sidan och kontrollera Program > Cookies. Adobe Audience Manager UUID ska anges i Demdex-cookien från tredje part ([adobe.demdex.net](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) i exemplet nedan). Fältdemonstrationen är den Adobe Audience Manager UUID som angetts i webbläsaren (`50814298273775797762943354787774730612` i exemplet nedan).
 
 ![Verktyg för Chrome Developer](assets/ggogle-uuid.png)
 
 ## Använd Audience Manager [!UICONTROL Visitor Profile Viewer]
 
-AAM-UUID i webbläsaren används som standard när [!UICONTROL Visitor Profile Viewer] har lästs in. Om du verifierar traits-implementeringar för andra användare anger du ett UUID i fältet UUID och klickar på [!UICONTROL Refresh]. Se [Visningsprogram för besökarprofiler](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/visitor-profile-viewer.html) för mer information.
+Adobe Audience Manager UUID i webbläsaren används som standard när [!UICONTROL Visitor Profile Viewer] har lästs in. Om du verifierar traits-implementeringar för andra användare anger du ett UUID i fältet UUID och klickar på [!UICONTROL Refresh]. Se [Visningsprogram för besökarprofiler](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/visitor-profile-viewer.html) för mer information.
 
 ![Audience Manager-profilvisningsprogram](assets/aam-vpv.png)
 
 ## Visa segmentegenskaperna i [!DNL Audience Manager]
 
-I AAM utvärderas listan över besökare med ECID för ett visst segment i direktuppspelning när Analytics delar segment med Experience Cloud.
+I Adobe Audience Manager utvärderas listan över besökare med ECID för ett visst segment i direktuppspelning när Analytics delar segment med Experience Cloud.
 
 1. I [!DNL Audience Manager], gå till [!UICONTROL Audience Data > Traits > Analytics Traits]. Du ser en mapp för varje Analytics-rapportssvit som mappas till din Experience Cloud-organisation. Dessa mappar (för Traits, Segments och Data Sources) skapas när huvudtjänsten Profiles and Audiences/People initieras eller etableras.
 1. Välj mapp för den rapportserie i vilken du tidigare skapade segmentet som du vill dela med [!DNL Audience Manager]. Du ser segmentet/målgruppen som du skapade. När du delar ett segment händer två saker i [!DNL Audience Manager]:
    * Ett drag skapas först utan data. Cirka. 8 timmar efter att segmentet publicerats [!DNL Analytics], kommer listan över ECID:n att registreras och delas med [!DNL Audience Manager] och andra Experience Cloud-lösningar.
 
-      ![Målgruppshanterarens egenskaper](assets/aam-traits.png)
+     ![Målgruppshanterarens egenskaper](assets/aam-traits.png)
 
    * Ett entraitetssegment skapas. Den använder den datakälla som är associerad med rapportsviten där du publicerade segmentet.
    * Utgångsdatumet för trait är nu 16 dagar (tidigare två dagar).

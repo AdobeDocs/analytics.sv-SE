@@ -2,19 +2,19 @@
 title: Förbättrad mappning av IP-till-geopositionering - frågor och svar
 description: Svar på frågor om den nya och förbättrade datauppsättningen (NetAcuity Pulse) för mappning från IP till geopositionering.
 feature: Data Configuration and Collection
-source-git-commit: df73dfa25c1664644feb6f744a3bf0923d6a2219
+exl-id: 9327c20c-1310-4451-a6e4-61dc0e46724d
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # Förbättrad mappning av IP-till-geopositionering - frågor och svar
 
 Vår leverantör av IP-sökningar, Digital Element, uppgraderade till en ny förbättrad datamängd (NetAcuity Pulse) för IP-till-geopositioneringsmappning. Ursprungligen planerat för oktober 2022 antog Adobe Analytics denna nya datauppsättning den 11 januari 2023. Den nya databasen är mer exakt än tidigare versioner. Vissa mappningar av IP-till-geo ändrades/förbättrades när den nya databasen antogs.
 
-Alla Adobe Analytics-verktyg (Analysis Workspace, Rapporter och analyser, Rapporterings-API, Data warehouse, LiveStream, Analytics Data Feeds och så vidare) utnyttjar automatiskt de nya förbättrade mappningarna. Dataflödenas format ändrades inte. CJA-data som tillhandahålls via Analytics Source Connector utnyttjar automatiskt de nya mappningarna.
+Alla Adobe Analytics-verktyg (Analysis Workspace, Rapporter och analyser, Rapporterings-API, Data warehouse, LiveStream, Analytics Data Feeds och så vidare) utnyttjar automatiskt de nya förbättrade mappningarna. Dataflödenas format ändrades inte. Data från kundanalys som tillhandahålls via Analytics Source Connector utnyttjar automatiskt de nya mappningarna.
 
 +++**Jag har märkt att mina geografiska data ändrades någon gång i januari.  Varför?**
 Partner-Adobe använder för IP-till-geopositioneringsmappning, Digital Element, för att skapa en ny, mer exakt IP-målinriktad databas som kallas NetAcuity Pulse. Adobe sköt upp antagandet av denna nya databas till januari 2023 för att undvika ändringar under vinterhelgsäsongen.

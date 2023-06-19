@@ -4,7 +4,7 @@ title: Komponenter – översikt
 feature: Components
 role: User, Admin
 exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
-source-git-commit: c64b4199d93443b14e2012459a4d33fdd847eca1
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 3%
@@ -119,7 +119,7 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
    | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md). |
    | [!UICONTROL **Dimensioner**] | Visa endast komponenter som är Dimensioner. |
    | [!UICONTROL **Mätvärden**] | Visa endast komponenter som är mätvärden. |
-   | [!UICONTROL **Segment**] | Visa endast komponenter som är segment. <!--this is Filters in CJA--> |
+   | [!UICONTROL **Segment**] | Visa endast komponenter som är segment. <!--this is Filters in Customer Jourey Analytics--> |
    | [!UICONTROL **Datumintervall**] | Visa endast komponenter som är datumintervall. |
    | [!UICONTROL **Visa alla**] | Visa alla komponenter. Det här alternativet är endast tillgängligt för administratörer. |
    | [!UICONTROL **Ej godkänt**] | Visa endast komponenter som ännu inte har markerats som Godkända av en administratör. Som administratör är detta användbart när du identifierar komponenter som kräver granskning och godkännande. Det här alternativet är endast tillgängligt för administratörer. |

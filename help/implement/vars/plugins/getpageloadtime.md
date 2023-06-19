@@ -3,9 +3,9 @@ title: getPageLoadTime
 description: Spåra hur lång tid det tar att läsa in en sida.
 feature: Variables
 exl-id: 9bf0e26b-f1af-48a6-900a-712f7e588d37
-source-git-commit: bbb138d979968ec2536e53ff07001b43156df095
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Om du inte vill använda tillägget för Common Analytics-plugin-program kan du 
 1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
 1. Spara och publicera ändringarna i Analytics-tillägget.
 
-## Installera plugin-programmet med AppMeasurement
+## Installera plugin-programmet med AppMeasurementet
 
-Kopiera och klistra in följande kod var som helst i AppMeasurement-filen när Analytics-spårningsobjektet har instansierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -96,8 +96,8 @@ if(window._pltPreviousPage)
 
 ### 3.0 (6 december 2022)
 
-* Fullständig omskrivning av plugin-programmet för att göra det lösningens agnostiska.  Detta är till exempel nu kompatibelt med AEP Web SDK
-* Skapar `_pltPreviousPage` och `_pltLoadTime` variabler i fönsterobjektet (i stället för i AppMeasurement-objektet)
+* Fullständig omskrivning av plugin-programmet för att göra det lösningens agnostiska.  Detta är till exempel nu kompatibelt med Adobe Experience Platform Web SDK
+* Skapar `_pltPreviousPage` och `_pltLoadTime` variabler i window-objektet (i stället för i AppMeasurementets objekt)
 * Tar bort behovet av s_pltp-cookie - allt lagras nu bara i s_plt-cookien
 * Innehåller funktionen getVersion som kan användas för felsökning
 

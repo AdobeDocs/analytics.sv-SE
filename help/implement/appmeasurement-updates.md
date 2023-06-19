@@ -3,9 +3,9 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: d2c291f7db465034ffadc4a2c1caf9639caf2a1d
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2319'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,13 @@ Ackumulerade versionsinformation för [!DNL AppMeasurement] för JavaScript.
 
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
-Du kan hämta den senaste versionen av AppMeasurement i [Kodhanteraren](/help/admin/admin/code-manager-admin.md).
+Du kan hämta den senaste versionen av AppMeasurementet i [Kodhanteraren](/help/admin/admin/code-manager-admin.md).
 
 ## Version 2.23.0
 
 Releasedatum: **23 september 2022**
 
-* AppMeasurement har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda flaggan &quot;collectHighEntropyUserAgentHints&quot;. Samling med hög entropi-tips är som standard inaktiverad. Läs mer om User-Agent [klienttips](/help/technotes/client-hints.md).
+* AppMeasurementet har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda flaggan &quot;collectHighEntropyUserAgentHints&quot;. Samling med hög entropi-tips är som standard inaktiverad. Läs mer om User-Agent [klienttips](/help/technotes/client-hints.md).
 
 ## Version 2.22.4
 
@@ -76,7 +76,7 @@ Releasedatum: **21 februari 2020**
 
 Releasedatum: **13 februari 2020**
 
-* AppMeasurement kan nu tvinga cookies att inkludera attributet Secure genom att ställa in [`writeSecureCookies`](vars/config-vars/writesecurecookies.md) variabel. Kravet för den här variabeln är att hela klientwebbplatsen hanteras säkert (HTTPS). (AN-204604)
+* AppMeasurementet kan nu tvinga cookies att inkludera attributet Secure genom att ställa in [`writeSecureCookies`](vars/config-vars/writesecurecookies.md) variabel. Kravet för den här variabeln är att hela klientwebbplatsen hanteras säkert (HTTPS). (AN-204604)
 
 ## Version 2.17.0
 
@@ -93,21 +93,21 @@ Releasedatum: **15 augusti 2019**
 * ECID-/FID-värden cachelagras nu vid den första träffen trots att OptIn-inställningarna ändras. (AN-175142)
 * Audience Management Module har uppdaterats till DIL 9.3. (AN-182704)
 * Exponerad växling in `s.ActivityMap.trackScrollReach` för att aktivera eller inaktivera spårning av rullningsräckvidd. (AN-182754)
-* Uppgraderade AppMeasurement till att använda Visitor ID Service 4.4.0. (AN-182912)
+* Uppgraderat AppMeasurement för användning av Visitor ID Service 4.4.0. (AN-182912)
 
 ## Version 2.15.0
 
 Releasedatum: **15 juli 2019**
 
 * Lagt till spårning av rullningsområde för ActivityMap i tillägget Activity Map (AN-172949)
-* DIL 9.2 har lagts till i AppMeasurement (AN-182472)
+* DIL 9.2 har lagts till i AppMeasurementet (AN-182472)
 
 ## Version 2.14.0
 
 Releasedatum: **21 maj 2019**
 
 * Problem med hanteringen av spårarparametrarnas tillstånd när flera träffar väntar har åtgärdats. (AN-176931, AN-176629, DTM-12758)
-* Uppdaterad AppMeasurement med Visitor.js 4.3.0 (AN-180049)
+* Uppdaterat AppMeasurement som inkluderar Visitor.js 4.3.0 (AN-180049)
 
 ## Version 2.13.0
 
@@ -121,13 +121,13 @@ Releasedatum: **22 februari 2019**
 
 * Uppdaterad målgruppshanteringsmodul till DIL 9.1. (AN-175255)
 * GTM-säkerhetsprincipen tillåter inte Activity Map-modulen. (AN-174679)
-* Förbättrad AppMeasurement för att efterleva avanmälan när identitetstjänsten inte har godkänts i avanmälan. (AN-175259)
+* Förbättrat AppMeasurement för avanmälan när identitetstjänsten inte har godkänts i avanmälan. (AN-175259)
 
 ## Version 2.11.0
 
 Releasedatum: **11 februari 2019**
 
-* Stöd har lagts till för de nya Adobe-funktionerna för anmälningstjänster i AppMeasurement. (AN-163546)
+* Stöd har lagts till för de nya funktionerna för avanmälningstjänster i Adobe i AppMeasurement. (AN-163546)
 * Stöd för lagring av länkspårningsdata i sessionslagring har lagts till. (AN-162272)
 * Stöd för medieströmstyp för ljudanalys har lagts till. (AN-173265)
 
@@ -324,7 +324,7 @@ Releasedatum: **5 november 2015**
 Releasedatum: **17 september 2015**
 
 * Inkludering av besökar-API 1.5.2
-* Uppdaterat [!DNL Audience Manager] för att använda AAM DIL 6.2 - getCustomer ID:n från VisitorAPI.js och skicka dem i /event-anrop till AAM. (AN-104978)
+* Uppdaterat [!DNL Audience Manager] för att använda Adobe Audience Manager DIL 6.2 - getCustomer IDs från VisitorAPI.js och skicka dem i /event-anrop till Adobe Audience Manager. (AN-104978)
 
 ## Version 1.5
 
@@ -376,24 +376,24 @@ Releasedatum: **18 september 2014**
 
 * Lagt till en `tagContainerMarker` variabel som gör att implementeringen kan ange upp till 4 tecken som läggs till i versionssträngen tillsammans med en extra streckteckenavgränsare. Detta används av dynamisk tagghantering.
 
-   ```js
-   // JavaScript
-   s.tagContainerMarker = "D1.0";
-   
-   // Data Collection request
-   //.../b/ss/myrsid/1/JS-1.4.1-D1.0/s43317392037311?...
-   ```
+  ```js
+  // JavaScript
+  s.tagContainerMarker = "D1.0";
+  
+  // Data Collection request
+  //.../b/ss/myrsid/1/JS-1.4.1-D1.0/s43317392037311?...
+  ```
 
-   De fyra tecknen är begränsade till tecken som tillåts i URL-filsökvägar, t.ex. alfanumeriska tecken och punkter.
+  De fyra tecknen är begränsade till tecken som tillåts i URL-filsökvägar, t.ex. alfanumeriska tecken och punkter.
 
 * På sidor som är dubbeltaggade med H-kod har en loop som kan inträffa vid automatisk länkspårning (hämtning och avslut) korrigerats med när fast länkspårning är aktiverat (standard i Webkit-webbläsare). Dessutom lades en allmän skyddsåtgärd till runt automatisk länkspårning för att förhindra liknande slingor. Skyddet begränsar automatisk länkspårning av upprepade klickningar till *samma* till en gång var 10:e sekund. Skyddet gäller endast automatisk länkspårning, så manuella länkspårningsanrop (s.tl) är inte begränsade. Klickningar på olika objekt påverkas inte heller av den här skyddsfunktionen och spåras.
 * Korrigerad hantering av klickade objekt när en fördröjning behövs.
 * Korrigerade ett problem som orsakade ett dubbelsidigt antal sidor när s.t anropades från en länk-onclick-funktion, om Visitor-API:t inte har de värden som behövs ännu.
 * Stöd för HTTP-POST.
 
-   >[!IMPORTANT]
-   >
-   >För [!DNL Analytics] anrop till att använda metoden POST i stället för metoden GET i [!DNL AppMeasurement] (en lösningsmetod [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
+  >[!IMPORTANT]
+  >
+  >För [!DNL Analytics] anrop till att använda metoden POST i stället för metoden GET i [!DNL AppMeasurement] (en lösningsmetod [trunkerade URL:er i IE](https://helpx.adobe.com/analytics/kb/shortening-image-request-urls.html)) måste du använda den senaste implementeringen av Visitor ID-tjänsten för Experience Cloud.
 
 ## Version 1.4
 
@@ -482,11 +482,11 @@ Releasedatum: **18 juli 2013**
 
 * Hash/fragment ignoreras nu av automatisk länkspårning. Tidigare spårades följande URL automatiskt eftersom hela `href` slutar i `.pdf`:
 
-   ```js
-   <a href="index.htm#anchor.pdf">Test Link</a>
-   ```
+  ```js
+  <a href="index.htm#anchor.pdf">Test Link</a>
+  ```
 
-   Nu ignoreras hash/fragment så länken spåras bara när filnamnet slutar i ett tillägg som matchar.
+  Nu ignoreras hash/fragment så länken spåras bara när filnamnet slutar i ett tillägg som matchar.
 
 ## Version 1.0.1
 

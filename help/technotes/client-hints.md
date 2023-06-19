@@ -2,9 +2,9 @@
 title: Klienttips
 description: Lär dig mer om hur klienttips gradvis ersätter användaragenten som källa för enhetsinformation.
 exl-id: e0a74daa-12a2-4999-9920-2636b061dcc8
-source-git-commit: 3b1777d48d4661a558b5be2cb09b822bf349ee76
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1295'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Klienttips kommer att införlivas i processen för sökning efter enheter i Anal
 >
 > Från och med januari 2023 är vissa versioner av Mac och Windows felaktigt representerade i användaragenten, men korrekt representerade i klienttips med hög entropi. Se [Operativsystem](https://experienceleague.adobe.com/docs/analytics/components/dimensions/operating-systems.html?lang=en) för mer information.
 
-AAM kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till AAM](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med tips för entropi.
+Adobe Audience Manager kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med tips för entropi.
 
 ## Frågor och svar
 
@@ -41,7 +41,7 @@ Detta [Google blogginlägg](https://web.dev/user-agent-client-hints/) är en bra
 
 +++**Hur aktiverar jag samlingen med klienttips?**
 
-Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips med hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se vägbeskrivningar för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html#enabling-high-entropy-client-hints) och [AppMeasurement](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/collecthighentropyuseragenthints.html).
+Tips om låg entropi tillhandahålls automatiskt av webbläsaren och hämtas för att ta fram information om enheter och webbläsare. Nyare versioner av Web SDK (från och med 2.12.0) och AppMeasurement (från och med 2.23.0) kan konfigureras för att samla in tips för hög entropi via respektive taggtillägg eller direkt via ett konfigurationsalternativ. Se vägbeskrivningar för [Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/user-agent-client-hints.html#enabling-high-entropy-client-hints) och [AppMeasurement](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/collecthighentropyuseragenthints.html).
 
 För båda biblioteken är samlingen med höga entropytips **inaktiverad som standard**.
 
@@ -143,7 +143,7 @@ Se dokumentationen för att inkludera dessa via [API för massdatainmatning](htt
 
 +++
 
-+++**Kommer klienttips att vara tillgängliga i data som skickas till AEP och CJA via Adobe Source Connector?**
++++**Kommer klienttips att finnas tillgängliga i data som skickas till Adobe Experience Platform och Customer Journey Analytics via Adobe Source Connector?**
 
 Adobe planerar att inkludera klienttips i data via Adobe Source Connector under första halvåret 2023.
 
@@ -155,8 +155,8 @@ Se [schemadokumentation](https://github.com/adobe/xdm/blob/master/components/dat
 
 +++
 
-+++**Kommer AAM att stödja klienttips för vidarebefordran på serversidan?**
++++**Kommer Adobe Audience Manager vidarebefordring på serversidan att ge stöd åt klienttips?**
 
-Ja. Klienttips inkluderas i de data som skickas till AAM. Observera att AAM kräver att högentropi-tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till AAM](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med tips för entropi.
+Ja. Klienttips inkluderas i de data som skickas till Adobe Audience Manager. Observera att Adobe Audience Manager kräver att högentropiska tips samlas in för att bevara alla funktioner. Om du använder [vidarebefordran på serversidan till Adobe Audience Manager](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html) kan du aktivera en samling med tips för entropi.
 
 +++

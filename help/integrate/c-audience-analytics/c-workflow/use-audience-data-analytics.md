@@ -1,23 +1,23 @@
 ---
-description: Ni kan använda AAM Audience-dimensioner i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen"mc_audiences". Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller livream. Några exempel på hur publikens dimensioner kan utnyttjas är
+description: Ni kan använda Adobe Audience Manager Audience-dimensionerna i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen"mc_audiences". Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller livream. Några exempel på hur publikens dimensioner kan utnyttjas är
 solution: Experience Cloud
 title: Använd målgruppsdata i Analytics
 feature: Audience Analytics
 exl-id: c1c0a9de-4051-4073-82c1-5615b0f01fa9
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '602'
 ht-degree: 3%
 
 ---
 
 # Använd målgruppsdata i Analytics
 
-Ni kan använda AAM Audience-dimensioner i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen&quot;mc_audiences&quot;. Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller livream. Några exempel på hur publikens dimensioner kan utnyttjas är:
+Ni kan använda Adobe Audience Manager Audience-dimensionerna i hela Analytics. De integrerade segmenten är nya analysdimensioner som kallas publikens ID och publikens namn, och kan användas precis som andra dimensioner som samlas in med Analytics. I Dataflöden lagras publikens ID:n i kolumnen&quot;mc_audiences&quot;. Dessa dimensioner är för närvarande inte tillgängliga i Data Workbench eller livream. Några exempel på hur publikens dimensioner kan utnyttjas är:
 
 ## Analysis Workspace {#section_C70837499BEA4DED885B3486C9E02C68}
 
-I Analysis Workspace visas AAM som två dimensioner.
+I Analysis Workspace visas Adobe Audience Manager-segmenten som två dimensioner.
 
 1. Gå till **[!UICONTROL Workspace]**.
 1. I listan över **[!UICONTROL Dimensions]** väljer du måtten **[!UICONTROL Audience ID]** eller **[!UICONTROL Audience Name]**. Namnet är en användarvänlig klassificering av ID:t.
@@ -43,7 +43,7 @@ I Analysis Workspace visas AAM som två dimensioner.
 
 ## Kundresa (flöde) i Analysis Workspace {#section_FC30E5795C9D4539838E30FE11FAEA6E}
 
-AAM segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan hamna i ett segment (t.ex. &quot;Kännedom&quot;), kan senare kvalificera sig för ett mer kvalificerat segment (t.ex. &quot;Övervägande&quot;). Du kan använda [Flöde](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
+Adobe Audience Manager segmentdata överförs till Analytics från en träffsäker nivå och representerar målgruppsmedlemskapet för en besökare vid den tidpunkten. Det innebär att en besökare kan hamna i ett segment (t.ex. &quot;Kännedom&quot;), kan senare kvalificera sig för ett mer kvalificerat segment (t.ex. &quot;Övervägande&quot;). Du kan använda [Flöde](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace för att visualisera den resa en besökare tar mellan olika målgrupper.
 
 1. Gå till **[!UICONTROL Workspace]** och väljer **[!UICONTROL Flow]** visualisering från den vänstra listen.
 

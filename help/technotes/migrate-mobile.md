@@ -3,9 +3,9 @@ description: Lär dig hur du migrerar bearbetningsregler för mobila tjänster t
 title: Migrera bearbetningsregler för mobila tjänster till Adobe Analytics
 feature: Processing Rules
 exl-id: ea183c1a-a85e-4f4e-a7f6-f947b939e9d9
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -77,4 +77,4 @@ Om du använder mobiltjänster för betalfunktionalitet har du inte någon genom
 
 * För värvningslänkar kan vi hänvisa dig till Adobe Partners för att tillgodose dina behov.
 * Push Messaging och In-app Messaging är tillgängliga i Adobe Campaign Standard och Adobe Campaign Classic (endast push). Den underliggande datauppsättning som används för målinriktning är dock annorlunda. Vi föreslår att du samarbetar med ditt Adobe-kontoteam för att fastställa migreringsalternativ för meddelandedata.
-* För platsfunktioner rekommenderar vi att du använder den nya [Adobe Experience Platform Location Service](https://www.adobe.com/experience-platform/location-service.html), vilket är kostnadsfritt för alla AEP-kunder.
+* För platsfunktioner rekommenderar vi att du använder den nya [Adobe Experience Platform Location Service](https://www.adobe.com/experience-platform/location-service.html), vilket är kostnadsfritt för alla Adobe Experience Platform-kunder.

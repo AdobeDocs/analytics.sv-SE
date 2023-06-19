@@ -3,9 +3,9 @@ description: Både analyser och Audience Manager använder segment. Ett Analytic
 title: Förstå segment i Analytics och Audience Manager
 feature: Audience Analytics
 exl-id: 2bc662e7-7552-41e1-9d4a-bc7aa81b8c1d
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '739'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ Ett Analytics-segment är en filtreringsmekanism för data i era rapporter. Filt
 
 * Analyssegmenten fungerar på en annan uppsättning data än Audience Manager-segmenten. Under datainsamlingen tillämpar Analytics många olika efterbearbetningssteg på data som inte är tillgängliga för Audience Manager. Efterbearbetningen kan omfatta eVar persistence, bearbetningsregler, uppslag (geolocation, mobile device), VISTA och många andra. Audience Manager får förbearbetade data via vidarebefordran på serversidan (eller DIL).
 
-   Vanliga datameddelanden inträffar när segment jämförs baserat på dimensioner som aldrig förfaller i Analytics, med samma dimension i Audience Manager. Till exempel listVars eller merchandising eVars som aldrig förfaller.
+  Vanliga datameddelanden inträffar när segment jämförs baserat på dimensioner som aldrig förfaller i Analytics, med samma dimension i Audience Manager. Till exempel listVars eller merchandising eVars som aldrig förfaller.
 
-   Om till exempel eVar = blue och ställs in på att aldrig förfalla i Analytics, kommer alla segment i Analytics med villkoret&quot;eVar = blue&quot; alltid att inkludera den här besökaren. I Audience Manager kan den besökaren falla ur ett segment med liknande definition efter en viss tidsperiod.
+  Om till exempel eVar = blue och ställs in på att aldrig förfalla i Analytics, kommer alla segment i Analytics med villkoret&quot;eVar = blue&quot; alltid att inkludera den här besökaren. I Audience Manager kan den besökaren falla ur ett segment med liknande definition efter en viss tidsperiod.
 
-* Analyssegment har fler funktioner än AAM segment. Audience Manager segment utvärderas alltid på besökarnivå. Analyssegment kan definieras på besöks-, besöks- eller träffnivå (eller en kombination av dessa nivåer). Dessutom har Analytics stöd för avancerade segmenteringsfunktioner som Audience Manager inte har, till exempel sekventiell segmentering.
+* Analyssegment har fler funktioner än Adobe Audience Manager-segment. Audience Manager segment utvärderas alltid på besökarnivå. Analyssegment kan definieras på besöks-, besöks- eller träffnivå (eller en kombination av dessa nivåer). Dessutom har Analytics stöd för avancerade segmenteringsfunktioner som Audience Manager inte har, till exempel sekventiell segmentering.
 * Som tidigare nämnts kan besökare i Audience Manager komma in i eller lämna ett segment beroende på om de uppfyller villkoren för segmentet vid den aktuella tidpunkten eller inte.
 
-   Omvänt kommer besökare i Analytics att inkluderas eller exkluderas från ett segment baserat på rapporteringsdatumintervallet. En enskild besökare gjorde till exempel ett köp förra månaden. I AAM skulle besökaren ingå i ett&quot;köpsegment&quot;, oavsett datumintervall. I Analytics skulle en rapport som baseras på den här månaden inte inkludera besökaren i segmentet. En rapport baserad på den här månaden och förra månaden skulle dock inkludera besökaren i segmentet.
+  Omvänt kommer besökare i Analytics att inkluderas eller exkluderas från ett segment baserat på rapporteringsdatumintervallet. En enskild besökare gjorde till exempel ett köp förra månaden. I Adobe Audience Manager inkluderas besökaren i ett&quot;köpsegment&quot;, oavsett datumintervall. I Analytics skulle en rapport som baseras på den här månaden inte inkludera besökaren i segmentet. En rapport baserad på den här månaden och förra månaden skulle dock inkludera besökaren i segmentet.
 
 Se [Segmenteringshandbok för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) för mer information.

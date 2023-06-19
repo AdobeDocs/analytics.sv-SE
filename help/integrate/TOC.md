@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Integreringshandbok för Analytics
 breadcrumb-title: Användarhandbok om integrering
 user-guide-description: Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, som t.ex. Audience Manager och Advertising Cloud.
-source-git-commit: 70a1d61a6e9af27c449876ac4cf4d7504659be3a
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 66%
+source-wordcount: '186'
+ht-degree: 63%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 66%
    + [Audience Analytics - översikt](c-audience-analytics/mc-audiences-aam.md)
    + Arbetsflöde för Audience Analytics{#audience-analytics-workflow}
       + [Översikt över arbetsflödet](c-audience-analytics/c-workflow/audiences-workflow.md)
-      + [Skapa Analytics-mål - AAM-handbok](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html)
+      + [Skapa Analytics-mål - Adobe Audience Manager Guide](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/experience-cloud-destinations/create-analytics-destination.html)
       + [Använd målgruppsdata i Analytics](c-audience-analytics/c-workflow/use-audience-data-analytics.md)
       + [Användningsexempel för Audience Analytics](c-audience-analytics/aam-audience-use-cases.md)
       + [Vanliga frågor](c-audience-analytics/mc-audiences-faqs.md)

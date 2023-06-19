@@ -4,9 +4,9 @@ solution: Analytics
 title: Översikt över vidarebefordran på serversidan
 feature: Server-Side Forwarding
 exl-id: e3cd72d2-9588-4770-a7c2-64b13a1e9519
-source-git-commit: dc9cd6bb45af0c992c37ffe20ea22eab67789ec5
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Vidarebefordran på serversidan förbättrar datainsamlingen eftersom den:
 >Nuvarande Audience Manager-kunder som använder Analytics bör migrera till vidarebefordran på serversidan. Nya kunder i Adobe Analytics och Audience Manager bör implementera vidarebefordran på serversidan (i stället för DIL) som standardmetod för datainsamling och överföring.
 
 >[!IMPORTANT]
->På uppmaning av EU:s regler om cookie-kompatibilitet har datakontroller (analyskunder) nu möjlighet att begränsa förhandsmedgivanden till Adobe Analytics och förhindra att dessa vidarebefordras till Adobe Audience Manager (AAM) på serversidan. Med en ny sammanhangsvariabel för implementering kan du flagga träffar där samtycke inte har tagits emot. När variabeln är inställd förhindrar den att de här träffarna skickas till AAM tills samtycke har tagits emot. Mer information finns i [GDPR_eIntegritetsefterlevnad och vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-gdpr.md).
+>På uppmaning av EU:s regler om cookie-kompatibilitet har datakontroller (analyskunder) nu möjlighet att begränsa förhandsmedgivanden till Adobe Analytics och förhindra att dessa vidarebefordras till Adobe Audience Manager på serversidan. Med en ny sammanhangsvariabel för implementering kan du flagga träffar där samtycke inte har tagits emot. När variabeln är inställd hindras dessa träffar från att skickas till Adobe Audience Manager tills samtycke har erhållits. Mer information finns i [GDPR_eIntegritetsefterlevnad och vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf-gdpr.md).
 
 Gå igenom följande valideringssteg för att förstå var din organisation befinner sig när det gäller implementering av vidarebefordran på serversidan:
 
@@ -49,12 +49,12 @@ Kontrollera att svaret innehåller Audience Manager data på fliken&quot;Svar&qu
 * The **&quot;status&quot;:&quot;SUCCESS&quot;**: du har implementerat Audience Management Module, men inte har vidarebefordring på serversidan korrekt konfigurerat. Fortsätt till steg 3.
 * A **2 x 2 bilder**: du inte har vidarebefordring på serversidan eller Audience Management Module implementerad. Så här korrigerar du det:
 
-   * **AAM kunder med DIL**: koordinera följande två objekt i nära samverkan:
+   * **Adobe Audience Manager-kunder med DIL**: koordinera följande två objekt i nära samverkan:
 
       1. Ta bort DIL-koden och installera [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) sidkod.
       1. Aktivera vidarebefordran på serversidan i gränssnittet för Analytics Admin enligt beskrivningen i steg 3. Om du aktiverar den här inställningen innan du tar bort DIL-kod dupliceras data och ytterligare fakturerade serversamtal skapas till Audience Manager.
-   * **Nya AAM** - installera [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) sidkod och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan är aktiverat i steg 3.
 
+   * **Nya Adobe Audience Manager-kunder** - installera [Audience Management Module](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html) sidkod och fortsätt till steg 3. Data skickas inte till Audience Manager förrän vidarebefordran på serversidan är aktiverat i steg 3.
 
 ## ![step3_icon.png image](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/assets/step3_icon.png) Verifiera implementering av vidarebefordring på serversidan för rapportsviten
 

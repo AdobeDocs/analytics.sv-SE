@@ -3,9 +3,9 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: ac3748826d9907cc68076ad39e865f39ea903cf2
+source-git-commit: a288253816fa73444dd5078d56d3d30e92aebe3f
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1158'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 **[Audience Analytics](/help/integrate/c-audience-analytics/mc-audiences-aam.md)** ska användas:
 
-* Om du vill inkludera Adobe Audience Manager (AAM) målgruppsdata, t.ex. demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data eller annonsvisningsdata i ett Analytics-arbetsflöde.
+* Om du vill inkludera Adobe Audience Manager målgruppsdata, t.ex. demografisk information (t.ex. kön eller inkomstnivå), psykografisk information (t.ex. intressen och hobbies), CRM-data eller annonsvisningsdata i ett Analytics-arbetsflöde.
 * Om du vill att överförda CRM-data ska vara tidsbaserade, eftersom den här integreringen skickar ny information till Analytics som träffats av en träff.
 
 ## Exportera data från Adobe Analytics {#export}

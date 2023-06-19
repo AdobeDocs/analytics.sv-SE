@@ -3,9 +3,9 @@ title: Merchandising eVars and Product Finding Methods
 description: En djupdykning i begreppen bakom försäljning av eVars och hur de bearbetar och allokerar data.
 feature: Admin Tools
 exl-id: 9e1a39aa-451f-49bb-8e39-797b6bbd5499
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '5258'
+source-wordcount: '5266'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ För att visa hur du ställer in dessa variabler finns det ett exempel där en b
 * `eVar2` är lika med nyckelordet som användes i sökningen (&quot;sandaler&quot;)
 * `eVar1` är lika med den produktsökningsmetod som används (&quot;intern nyckelordssökning&quot;).
 
-När du ställer in dessa två variabler som är lika med dessa specifika värden, vet du att besökaren använder det interna nyckelordssökordet för&quot;sandaler&quot; för att hitta en produkt. Samtidigt vet du att besökaren inte använder de andra produktsökningsmetoderna för att hitta produkter (besökaren bläddrar till exempel inte igenom produktkategorier exakt samtidigt som de gör en nyckelordssökning). För att säkerställa att rätt tilldelning sker per produkt bör dessa oanvända metoder inte få någon uppskattning för att hitta en produkt som hittats via en intern nyckelordssökning. Du måste därför infoga logik i koden (som AppMeasurement, AEP Web SDK och så vidare) som automatiskt anger de eVars som är associerade med dessa andra sökmetoder som är lika med ett icke-sökmetod-värde.
+När du ställer in dessa två variabler som är lika med dessa specifika värden, vet du att besökaren använder det interna nyckelordssökordet för&quot;sandaler&quot; för att hitta en produkt. Samtidigt vet du att besökaren inte använder de andra produktsökningsmetoderna för att hitta produkter (besökaren bläddrar till exempel inte igenom produktkategorier exakt samtidigt som de gör en nyckelordssökning). För att säkerställa att rätt tilldelning sker per produkt bör dessa oanvända metoder inte få någon uppskattning för att hitta en produkt som hittats via en intern nyckelordssökning. Du måste därför infoga logik i koden (som AppMeasurement, Adobe Experience Platform Web SDK och så vidare) som automatiskt anger de eVars som är associerade med dessa andra sökmetoder som lika med ett icke-sökmetod-värde.
 
 När en användare t.ex. söker efter produkter med nyckelordet &quot;sandals&quot;, ska Analytics-kodens logik ange de variabler som är lika med följande på den interna sökresultatsidan för nyckelord:
 
@@ -80,7 +80,7 @@ När inställningen Aktivera marknadsföring är aktiverad visas alla inställni
 
 Det här alternativet är inte tillgängligt för standard-eVars. The [!UICONTROL Merchandising] inställningen låter dig välja antingen [!UICONTROL Conversion Variable Syntax] eller [!UICONTROL Product Syntax] som en metod för att fånga eVar värde.
 
-**[!UICONTROL Conversion Variable Syntax]** innebär att du anger eVar värde i en egen variabel. Om du t.ex. använder Konvertera variabelsyntax `eVar1` värdet för&quot;intern nyckelordssökning&quot; anges enligt följande i sidkoden (eller AppMeasurement-koden, AEP Web SDK-koden och så vidare):
+**[!UICONTROL Conversion Variable Syntax]** innebär att du anger eVar värde i en egen variabel. Om du t.ex. använder Konvertera variabelsyntax `eVar1` värdet för&quot;intern nyckelordssökning&quot; anges enligt följande i sidkoden (eller i AppMeasurementet, Adobe Experience Platform Web SDK-koden och så vidare):
 
 `s.eVar1="internal keyword search";`
 
@@ -271,11 +271,11 @@ Om besökaren lägger till en produkt i kundvagnen men aldrig köper den, tillå
 
 ### Använda konverteringsvariabelsyntax
 
-Vi går tillbaka till&quot;Produktsyntax&quot; jämfört med Fråga om konverteringsvariabelsyntax. Adobe har upptäckt en enklare metod för att både samla in produktsökningsmetoden och marknadsföra eVars och binda deras värden till produkter som besökarna har hittat: Om du använder Konvertera variabelsyntax minskas det implementeringsarbete som klientens utvecklare ansvarar för. Den erbjuder fortfarande samma eller bättre information än produktsyntaxmetoden. Utvecklarna behöver bara följa de distributionsanvisningar de fått, och resten av koden kan placeras i Adobe AppMeasurement/AEP Web SDK-filen.
+Vi går tillbaka till&quot;Produktsyntax&quot; jämfört med Fråga om konverteringsvariabelsyntax. Adobe har upptäckt en enklare metod för att både samla in produktsökningsmetoden och marknadsföra eVars och binda deras värden till produkter som besökarna har hittat: Om du använder Konvertera variabelsyntax minskas det implementeringsarbete som klientens utvecklare ansvarar för. Den erbjuder fortfarande samma eller bättre information än produktsyntaxmetoden. Utvecklarna behöver bara följa de distributionsanvisningar de fått, och resten av koden kan placeras i Adobe AppMeasurement/Adobe Experience Platform Web SDK-filen.
 
 Låt oss till exempel titta på den rekommenderade lösningen för att spåra interna nyckelordssökningsprestanda. Det står att på resultatsidan för nyckelordssökningen hämtar koden nyckelordet som sökts efter via en prop (till exempel prop4) och en annan prop (till exempel prop5). De här stegen spårar antalet resultat som visas i sökningen. När en Adobe Analytics-bildbegäran genereras på sökresultatsidan användes datalagretobjekten (eller sidkoden) som utvecklarna använde för att fylla i variablerna ovan (stegen).
 
-Ytterligare logik som finns i AppMeasurement/AEP Web SDK-filen kan fylla i resten av variablerna (eVars/dimensions) som måste anges samtidigt.\
+Ytterligare logik i AppMeasurementet/Adobe Experience Platform Web SDK-filen kan fylla i resten av variablerna (eVars/dimensions) som måste anges samtidigt.\
 Om en ny besökare till exempel skulle göra en nyckelordssökning efter&quot;sandaler&quot;, som returnerade 25 resultat på sökresultatsidan, skulle koden som ska aktiveras (via sidkoden ELLER datalagrets hämtning) se ut så här:
 
 ```js
@@ -283,7 +283,7 @@ s.prop4="sandals";
 s.prop5="25";
 ```
 
-Logiken i AppMeasurement/Analytics SDK-filen kan sedan automatiskt omvandla kodfragmentet till följande:
+Logiken i AppMeasurement-/Analytics SDK-filen kan sedan automatiskt omvandla kodfragmentet till följande:
 
 ```js
 s.prop4="sandals";

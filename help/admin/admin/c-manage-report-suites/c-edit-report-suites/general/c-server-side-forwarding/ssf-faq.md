@@ -3,9 +3,9 @@ description: Vanliga frågor och svar om funktioner, funktioner och problem i sa
 title: Vanliga frågor om vidarebefordran på serversidan
 feature: Server-Side Forwarding
 exl-id: 63103d2b-e2e8-42da-bdbd-be90abe305f7
-source-git-commit: dc9cd6bb45af0c992c37ffe20ea22eab67789ec5
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '690'
 ht-degree: 1%
 
 ---
@@ -30,10 +30,9 @@ Vanliga frågor och svar om funktioner, funktioner och problem i samband med vid
 | F: Vad händer om jag har märkning för flera programsviter och bara en av mina rapportsviter mappas till min Experience Cloud-organisation och den andra inte? | Vi vidarebefordrar träffen till motsvarande datainsamlingsserver för Experience Cloud Org i din mappade rapportsvit, men eftersom den icke mappade rapportsviten inte har någon associerad datakälla i Audience Manager registreras inga data för den omappade rapportsviten i Audience Manager. |
 | F: Vad händer om jag har en rapportsserie som är kopplad till flera Experience Cloud Orgs? | Rapporteringssviten kommer att betraktas som omappad och serversidans vidarebefordran kommer inte att kunna aktiveras för den här rapportsviten. Kontakta kundtjänst för att lösa mappningsproblemet. |
 | F: Kommer den rapportsvitbaserade serversidans vidarebefordringsmetod att vara långsammare än den spårningsserverbaserade serversidans vidarebefordran? | Nej, svarstiden är densamma. |
-| F: Vad händer om vi har två Experience Cloud Orgs (eller AAM instanser) och vill dela data mellan båda Experience Cloud Orgs? Kan jag skicka en enda Analytics-träff till flera Experience Cloud Orgs på serversidan? | Nej. Om ni behöver dela data som samlats in under en Experience Cloud-organisation med en annan Experience Cloud-organisation rekommenderar vi att ni skickar tillämpliga målgrupper från en Audience Manager-instans till en annan via målgruppens marknadsplats. |
+| F: Vad händer om vi har två Experience Cloud-organisationer (eller Adobe Audience Manager-instanser) och vill dela data mellan båda Experience Cloud Orgs? Kan jag skicka en enda Analytics-träff till flera Experience Cloud Orgs på serversidan? | Nej. Om ni behöver dela data som samlats in under en Experience Cloud-organisation med en annan Experience Cloud-organisation rekommenderar vi att ni skickar tillämpliga målgrupper från en Audience Manager-instans till en annan via målgruppens marknadsplats. |
 | F: Kommer vidarebefordran på serversidan att resultera i någon ytterligare fakturering i Audience Manager eller Analytics? | I Analytics sker ingen ytterligare fakturering. I Audience Manager behandlas vidarebefordrade träffar som alla andra träffar och faktureras.  Därför är det viktigt att inte ha vidarebefordran på DIL och serversidan aktiverad samtidigt, vilket kan leda till dubbel fakturering och dubblering av data. |
 
 >[!MORELIKETHIS]
 >
 >* [Vidarebefordran på serversidan](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-server-side-forwarding/ssf.md)
-

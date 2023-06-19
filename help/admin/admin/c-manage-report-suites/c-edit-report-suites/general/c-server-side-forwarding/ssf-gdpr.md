@@ -3,10 +3,10 @@ description: Beskriver förbättringar av vidarebefordran på serversidan som ha
 title: GDPR/ePrivacy-efterlevnad och vidarebefordran på serversidan
 feature: Server-Side Forwarding
 exl-id: 54e43a16-8f15-4ee8-9aa2-579af30be2c9
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 3%
+source-wordcount: '546'
+ht-degree: 2%
 
 ---
 
@@ -16,11 +16,11 @@ I det här avsnittet förklaras de förbättringar av vidarebefordran på server
 
 Vidarebefordran på serversidan används för att dela data från Adobe Analytics till andra [!DNL Experience Cloud Solutions], till exempel Audience Manager, i realtid. När det här alternativet är aktiverat kan Analytics även skicka data till andra Experience Cloud-lösningar och dessa lösningar skicka data till Analytics under datainsamlingsprocessen.
 
-Tidigare hade vidarebefordran på serversidan inte något sätt att skilja mellan händelser/träffar för medgivande och förhandsmedgivande. Från och med den 1 november 2018 har du som personuppgiftsansvarig (Adobe Analytics-kund) möjlighet att begränsa förhandsgodkännande av data till Adobe Analytics och förhindra att de vidarebefordras till AAM. Med en ny sammanhangsvariabel för implementering kan du flagga träffar där samtycke inte har tagits emot. När variabeln är inställd förhindrar den att de här träffarna skickas till AAM tills samtycke har tagits emot.
+Tidigare hade vidarebefordran på serversidan inte något sätt att skilja mellan händelser/träffar för medgivande och förhandsmedgivande. Från och med den 1 november 2018 har du som personuppgiftsansvarig (Adobe Analytics-kund) möjlighet att begränsa förhandsgodkännande av data till Adobe Analytics och förhindra att de vidarebefordras till Adobe Audience Manager. Med en ny sammanhangsvariabel för implementering kan du flagga träffar där samtycke inte har tagits emot. När variabeln är inställd hindras dessa träffar från att skickas till Adobe Audience Manager tills samtycke har erhållits.
 
-När den nya kontextvariabeln `cm.ssf=1`, finns på en träff, den här träffen flaggas och serversidan vidarebefordras inte till AAM. Om den här strängen inte visas på en träff vidarebefordras träffen till AAM.
+När den nya kontextvariabeln `cm.ssf=1`, finns på en träff, den här träffen flaggas och serversidan vidarebefordras inte till Adobe Audience Manager. Om den här strängen inte visas i en träff vidarebefordras träffen till Adobe Audience Manager.
 
-Vidarebefordran på serversidan är dubbelriktad, vilket innebär att när den tillämpas på en träff och den träffen vidarebefordras till AAM, får Audience Analytics segmentinformation för träffen från AAM och skickar tillbaka den till Analytics. Det innebär att träffar som inte vidarebefordras från Analytics till AAM på serversidan inte kommer att berikas med listan över segment-ID:n från AAM. Det kommer därför att finnas en delmängd av trafik/träffar som inte hämtar information om segment-ID från AAM.
+Vidarebefordran på serversidan är dubbelriktad, vilket innebär att när den tillämpas på en träff och den träffen vidarebefordras till Adobe Audience Manager, får Audience Analytics segmentinformation för träffen från Adobe Audience Manager och skickar tillbaka den till Analytics. Det innebär att träffar som inte vidarebefordras från Analytics till Adobe Audience Manager på serversidan inte kommer att berikas med listan över segment-ID:n från Adobe Audience Manager. Det kommer därför att finnas en delmängd av trafik/träffar som inte kommer att få information om segment-ID från Adobe Audience Manager.
 
 ## Implementeringsinformation {#section_FFA8B66085BF469FAB5365C944FE38F7}
 
@@ -33,7 +33,7 @@ Följ de här stegen beroende på vilken implementeringsmetod du använder.
 
 ## Rapportering (valfritt) {#section_6AD4028EC11C4DABA2A34469DDC99E89}
 
-Du kan använda Adobe Analytics för att rapportera hur mycket av er trafik som är samtyckesbaserad och som ett resultat av detta har vidarebefordrats på serversidan jämfört med hur mycket av er trafik som inte är medgivandebaserad och som inte har vidarebefordrats till AAM.
+Du kan använda Adobe Analytics för att rapportera hur mycket av er trafik som är samtyckesbaserad och som ett resultat av detta har vidarebefordrats på serversidan jämfört med hur mycket av er trafik som inte är medgivandebaserad och som inte har vidarebefordrats till Adobe Audience Manager.
 
 Om du vill konfigurera den här typen av rapportering mappar du den nya kontextvariabeln till en anpassad trafikvariabel (prop) via bearbetningsregler. Gör så här
 

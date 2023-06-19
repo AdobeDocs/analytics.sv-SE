@@ -3,9 +3,9 @@ title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketi
 description: Uppdaterad bästa praxis för användning av marknadsföringskanaler med Attribution IQ och Customer Journey Analytics
 feature: Marketing Channels
 exl-id: a0ab818d-7165-4f34-bc43-1ed8d6215800
-source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
+source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ För att framtidssäkra implementeringen av era marknadsföringskanaler och säk
 
 När marknadsföringskanaler lanserades för första gången hade de bara första- och sista-beröringsdimensioner. Explicit första/sista beröringsdimensioner behövs inte längre med den aktuella versionen av attribuering. Adobe har allmänna dimensioner av typen&quot;Marknadsföringskanal&quot; och&quot;Marknadsföringskanal&quot; så att du kan använda dem med den önskade attribueringsmodellen. Dessa generiska dimensioner är identiska med Last-Touch Channel-dimensioner, men de har en annan etikett för att förhindra förvirring när du använder marknadsföringskanaler med en annan attribueringsmodell.
 
-Eftersom dimensionerna för marknadsföringskanalen är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler), kan deras besöksdefinition inte ändras med hjälp av virtuella rapportsviter. Dessa reviderade rutiner möjliggör tydliga och kontrollerade uppslagsfönster med Attribution IQ och CJA.
+Eftersom dimensionerna för marknadsföringskanalen är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler), kan deras besöksdefinition inte ändras med hjälp av virtuella rapportsviter. Dessa reviderade rutiner möjliggör tydliga och kontrollerade bakåtsökningsfönster med Attribution IQ och kundJourey Analytics.
 
 ## Bästa praxis nr 1: Utnyttja Attribution IQ för kontrollerad analys
 
