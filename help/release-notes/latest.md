@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 09a4f0865c0297681a05da4eae98412632931626
+source-git-commit: 8e753a4ab2f86ff1b45d3116e51c5ce03f5b038b
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1505'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | **Ny knapp för att lägga till en visualisering i en panel** | En ny knapp finns nu längst ned på varje panel i Analysis Workspace, så att du snabbt kan lägga till en visualisering. <p>Tidigare var de enda sätten att lägga till en visualisering på en panel att dra en visualisering från den vänstra listen, duplicera eller kopiera en befintlig visualisering eller skapa en tom panel. [Läs mer](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | Ej tillämpligt | 17 maj 2023 |
 | **Djuplänkning (mobilapp)** | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. Detta gör det ännu enklare att dela projekt och öka engagemanget från en mindre teknisk målgrupp. [Läs mer](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#share-scorecards-using-a-shareable-link) | Ej tillämpligt | 17 maj 2023 |
 | **Dynamiska nedrullningsbara filter** | Vi introducerar en ny typ av nedrullningsbart filter som fastställer tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara filter. Du kan använda dynamiska nedrullningsbara filter genom att dra en dimension till panelens dropzone medan du håller ned [!UICONTROL Shift]. Statiska nedrullningsbara filter ändras inte om du drar en grupp med dimensionsobjekt till panelens dropzon samtidigt som du håller ned [!UICONTROL Shift]. [Läs mer](/help/analyze/analysis-workspace/c-panels/panels.md) |  | 14 juni 2023 |
-| **Uppdaterad Analytics Learning-sida** | Fliken Utbildning på Adobe Analytics landningssida innehåller nu följande förbättringar:<ul><li>Förbättrad design som visar mer utbildningsmaterial på en enda sida med förbättrad navigering</li><li>Möjlighet att personalisera utbildningsmaterial efter erfarenhetsnivå (nybörjare, mellanhand och avancerat)</li></ul>[Läs mer](/help/analyze/landing.md) |  | Juni 30,2023 |
+| **Uppdaterad Analytics Learning-sida** | Fliken Utbildning på Adobe Analytics landningssida innehåller nu följande förbättringar:<ul><li>Förbättrad design som visar mer utbildningsmaterial på en enda sida med förbättrad navigering</li><li>Möjlighet att personalisera utbildningsmaterial efter erfarenhetsnivå (nybörjare, mellanhand och avancerat)</li></ul>[Läs mer](/help/analyze/landing.md) | 27 juni 2023 | Juni 30,2023 |
 | **Sortera komponenter i Analysis Workspace** | Ett nytt sorteringsalternativ är nu tillgängligt när du visar komponenter i den vänstra listen eller i datamappningslistan i Analysis Workspace. Du kan sortera komponenter efter Rekommenderat (de som används oftast), Alfabetiskt eller Kategoriserat (text).<p>Tidigare kunde du bara söka efter eller filtrera komponenter. [Läs mer](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)</p> | Ej tillämpligt | TBD |
 
 {style="table-layout:auto"}
