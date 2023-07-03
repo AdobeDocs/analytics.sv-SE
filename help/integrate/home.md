@@ -2,7 +2,8 @@
 title: Analytics-integrering
 description: Lär dig hur du kan integrera data från andra platser i Adobe Analytics.
 exl-id: 89debfb1-347b-4f0a-9f3a-4a82df51c8de
-source-git-commit: dd94330c660aee8c588b00f7d63e6879003cb958
+feature: Audience Analytics, Advertising Analytics, Campaign Integration, AEM Assets Reporting, Activity Map
+source-git-commit: d9948fbb63d44c851e08745c77af5618de84a89c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 61%
@@ -18,7 +19,8 @@ Den här guiden fokuserar på att integrera flera Adobe Experience Cloud-lösnin
 * **Audience Analytics:** Integrera Adobe Audience Manager med Adobe Analytics.
 * **Advertising Analytics:** Se betalda sökdata sida vid sida med Adobe Analytics-data.
 * **Analyser för Advertising Cloud DSP:** Integrerar Adobe Analytics och Adobe Advertising Cloud för att utöka och förbättra funktionerna i respektive produkt. Här är en videoöversikt:
-   >[!VIDEO](https://video.tv.adobe.com/v/27237/?quality=12)
+
+  >[!VIDEO](https://video.tv.adobe.com/v/27237/?quality=12)
 * **Analytics för Target:** A4T integrerar Adobe Analytics med Adobe Target.
 * **Adobe Campaign-rapportering:** Integrera Adobe Analytics med Adobe Campaign.
 * **AEM Assets-rapportering:** Gör det möjligt att samla in visningar och klickningar på resurser från Adobe Experience Manager.

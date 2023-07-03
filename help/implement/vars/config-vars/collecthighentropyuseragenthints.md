@@ -2,7 +2,8 @@
 title: collectHighEntropyUserAgentHints
 description: Använd variabeln collectHighEntropyUserAgentHints för att avgöra om Adobe ska begära höga entropittips från Chromium-webbläsare (t.ex. Google Chrome och Microsoft Edge).
 exl-id: 97cfa0f9-b35d-4c73-822f-adf30d0b7efc
-source-git-commit: ef82c34f97a0c8172f097b83b521860a1897c82c
+feature: Variables
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -28,7 +29,7 @@ Högupplösta klienttips ingår i kontextkategorierna i Web SDK. Se [Konfigurera
 
 ## collectHighEntropyUserAgentHints in AppMeasurement
 
-The `s.collectHighEntropyUserAgentHints` variabeln avgör om AppMeasurement begär tips med hög entropi från Chromium-webbläsare (till exempel Google Chrome eller Microsoft Edge). Dessa tips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen.
+The `s.collectHighEntropyUserAgentHints` variabeln anger om AppMeasurementet begär tips för hög entropi från Chromium-webbläsare (till exempel Google Chrome eller Microsoft Edge). Dessa tips används av Adobe Analytics för att förbättra enhets- och webbläsaridentifieringen.
 
 Om inställt på `true`, kommer alla höga entropytips att begäras från webbläsaren.
 

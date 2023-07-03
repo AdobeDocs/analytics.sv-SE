@@ -1,9 +1,11 @@
 ---
 title: Hantera datakällor
 description: Navigera i gränssnittet för hantering av datakällor.
-source-git-commit: e32a7c85e2f0629c04bcd7ed0fa80ec1593bb6e8
+exl-id: 315501fb-26e1-436a-938d-5957ca037cd0
+feature: Data Sources
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -24,7 +26,7 @@ The **[!UICONTROL Manage]** hanterar alla datakällor som din organisation har s
 
 ![Hantera](assets/manage.png)
 
-Den översta datakällan är alltid [!UICONTROL Web Beacon]. Den här datakällan används för typisk datainsamling via AppMeasurement. Den kan inte redigeras eller inaktiveras.
+Den översta datakällan är alltid [!UICONTROL Web Beacon]. Den här datakällan används ofta för datainsamling via AppMeasurementet. Den kan inte redigeras eller inaktiveras.
 
 Varje datakälla har följande alternativ:
 

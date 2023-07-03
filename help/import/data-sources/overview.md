@@ -1,9 +1,11 @@
 ---
 title: Översikt över datakällor
 description: Importera data till Adobe Analytics med externa filer.
-source-git-commit: e32a7c85e2f0629c04bcd7ed0fa80ec1593bb6e8
+exl-id: 5ec8bc51-dfd2-497c-aebc-a32d87efc97e
+feature: Data Sources
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -20,7 +22,7 @@ Med Adobe Analytics datakällor kan du importera ytterligare online- eller offli
 Det finns två allmänna typer av datakällor som Adobe erbjuder. Alla datakällmallar är baserade på en av dessa två typer:
 
 * **Sammanfattningsdatakälla**: Ett enkelt sätt att importera högnivådata i Adobe Analytics. Du anger tidsstämpeln, variabelvärdet och tillhörande mått. Dessa mätvärden för varje dimensionsobjekt ökas sedan i enlighet med detta. Det är värdefullt om du vill se data offline och online sida vid sida. Däremot länkas inte online- och offlinedata tillsammans.
-* **Datakälla för transaktions-ID**: Om en träff som skickas av AppMeasurement och en datakällrad innehåller matchande transaktions-ID:n, läggs dimensionen och måttvärdena i datakällan till i den träffen.
+* **Datakälla för transaktions-ID**: Om en träff som skickas av AppMeasurementet och en datakällrad innehåller matchande transaktions-ID:n, läggs dimensionen och måttvärdena i datakällan till i den träffen.
 
 **Datakällor med fullständig bearbetning** inte längre erbjuds som datakälltyp från och med den 25 mars 2021. Se [Meddelande om att produkten är slut](full-processing-eol.md) för mer information.
 

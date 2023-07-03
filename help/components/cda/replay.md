@@ -2,7 +2,8 @@
 title: Så här spelar du upp
 description: Förstå begreppet"replay" i enhetsövergripande analys
 exl-id: 0b7252ff-3986-4fcf-810a-438d9a51e01f
-source-git-commit: d4a70859027508cdd64affbb506fc64a3c4806cb
+feature: CDA
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%
@@ -41,12 +42,12 @@ Både oautentiserade och autentiserade träffar på nya enheter räknas som sepa
 
 * **Om du använder enhetsdiagrammet** oautentiserade träffar på identifierade enheter sammanfogas i realtid när ett kluster publiceras av enhetsdiagrammet. Klusterpublicering tar allt från tre timmar till två veckor.
 
-   En tredje kumulativ person läggs också till när ett kluster publiceras. Den här tredje personen representerar själva klustret, förutom de enskilda enheterna. Den tredje &quot;personen&quot; finns kvar tills data spelas upp.
+  En tredje kumulativ person läggs också till när ett kluster publiceras. Den här tredje personen representerar själva klustret, förutom de enskilda enheterna. Den tredje &quot;personen&quot; finns kvar tills data spelas upp.
 
-   Attribuering fungerar inte på alla enheter förrän ett kluster har publicerats, och till och med så har det bara sytts live från den punkten framåt. I exemplet ovan sammanfogas inga träffar på enheter ännu. Enhetsövergripande attribuering i befintliga träffar fungerar inte förrän du har repeterat sammanfogningen.
+  Attribuering fungerar inte på alla enheter förrän ett kluster har publicerats, och till och med så har det bara sytts live från den punkten framåt. I exemplet ovan sammanfogas inga träffar på enheter ännu. Enhetsövergripande attribuering i befintliga träffar fungerar inte förrän du har repeterat sammanfogningen.
 * **Om fältbaserad sammanfogning används,** oautentiserade träffar på identifierade enheter sammanfogas från den punkten och framåt.
 
-   Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla träffar utom träffar 1 och 3 sydda i realtid (de använder alla `Bob` identifierare). Attribution works on hits 1 and 3 after replay stitching.
+  Attribution fungerar så snart den identifierande anpassade variabeln kopplar till en enhet. I exemplet ovan är alla träffar utom träffar 1 och 3 sydda i realtid (de använder alla `Bob` identifierare). Attribution works on hits 1 and 3 after replay stitching.
 
 >[!NOTE]
 >

@@ -2,7 +2,8 @@
 title: Inställningar för klassificeringsuppsättning
 description: Skapa eller redigera en klassificeringsuppsättning.
 exl-id: abf00508-5dde-4669-bf94-5eb4754888cc
-source-git-commit: 6b2cd81a1a1c9c5e32d42ce9b0dc43c290539f3e
+feature: Classifications
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%

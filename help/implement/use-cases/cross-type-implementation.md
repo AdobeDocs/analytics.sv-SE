@@ -2,7 +2,8 @@
 title: Spåra på olika implementeringstyper
 description: Använd olika implementeringstyper och spåra besökare smidigt mellan dem.
 exl-id: 18aa5595-d2a7-4df2-a4ef-a5040c097483
-source-git-commit: 90914569256cf891cb3cf693843e7cf9ede2f4ce
+feature: Implementation Basics
+source-git-commit: d9948fbb63d44c851e08745c77af5618de84a89c
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +16,7 @@ En Adobe Analytics-implementations kärnarkitektur är enhetlig för alla implem
 
 Adobe rekommenderar att enhetlighet bibehålls i implementeringen av en webbplats genom att använda samma implementeringstyp på alla sidor. Men om delar av webbplatsen har olika krav kan du använda den här sidan för att se till att besökarna spåras konsekvent mellan sidorna.
 
-Om du använder mer än en typ av implementering (till exempel AppMeasurement och hårdkodade bildbegäranden) måste du se till att följande variabler är korrekt inställda och matchar varandra:
+Om du använder mer än en typ av implementering (t.ex. AppMeasurement och hårdkodade bildbegäranden) måste du se till att följande variabler är korrekt inställda och matchar varandra:
 
 | Variabel | AppMeasurement | Analystillägg | Webb-SDK | Web SDK-tillägg | Hårdkodad bildbegäran |
 | --- | --- | --- | --- | --- | --- |

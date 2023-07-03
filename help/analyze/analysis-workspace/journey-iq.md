@@ -3,7 +3,8 @@ title: Resa-IQ
 description: Förstå de funktioner som Journey IQ består av, en uppsättning funktioner som ingår i Adobe Analytics.
 role: User, Admin
 exl-id: dcc56996-625d-4179-bd58-f0dc1241ad57
-source-git-commit: 9b50e77b3998753d45a25799dbed6094b048c118
+feature: Visualizations
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%

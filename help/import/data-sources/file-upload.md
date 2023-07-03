@@ -1,9 +1,11 @@
 ---
 title: Överför datakällfil till Adobe
 description: Processen att överföra en datakällfil till Adobe Analytics för förtäring.
-source-git-commit: bb3036380eeec9b7a868f60a4c9076f2b772532b
+exl-id: 64e3cd70-b511-4c4e-abd0-94eb36bc3519
+feature: Data Sources
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -38,10 +40,10 @@ För att filerna ska behandlas så snabbt som möjligt rekommenderar Adobe att d
 
 | `date` | `eVar1` | `event1` | `event2` | `event3` |
 | --- | --- | --- | --- | --- |
-| `07/24/YYYY` | `red` | `1` |  |  |
-| `07/24/YYYY` | `red` | `1` |  |  |
-| `07/24/YYYY` | `red` |  | `1` |  |
-| `07/24/YYYY` | `red` |  |  | `1` |
+| `07/24/YYYY` | `red` | `1` | | |
+| `07/24/YYYY` | `red` | `1` | | |
+| `07/24/YYYY` | `red` | | `1` | |
+| `07/24/YYYY` | `red` | | | `1` |
 
 Den här filen bearbetas snabbare och innehåller samma data:
 

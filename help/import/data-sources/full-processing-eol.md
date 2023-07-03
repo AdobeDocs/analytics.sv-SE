@@ -1,16 +1,18 @@
 ---
 title: Slutet av livscykeln för fullständig bearbetning av datakällor
 description: Läs mer om slutdatumet för meddelande om fullständig bearbetning av datakällor.
-source-git-commit: bb3036380eeec9b7a868f60a4c9076f2b772532b
+exl-id: 7dd6d518-156f-4bf5-86cb-04d0acc8ff0c
+feature: Data Sources
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '391'
+ht-degree: 1%
 
 ---
 
 # Slutet av livscykeln för fullständig bearbetning av datakällor
 
-Med hjälp av fullständiga databehandlingskällor har företag och organisationer historiskt sett kunnat skicka data på hög nivå till Adobe Analytics. Dessa data bearbetades på samma sätt som data som samlats in via traditionella datainsamlingsmetoder, som AppMeasurement. 2020 släppte Adobe [API för massdatainfogning](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/), som utför samma funktioner som fullbearbetning av datakällor, men med ytterligare funktioner. Den här sidan innehåller information om ytterligare funktioner som tillhandahålls av API:t för infogning av gruppdata och visar skillnader i filformat.
+Med hjälp av fullständiga databehandlingskällor har företag och organisationer historiskt sett kunnat skicka data på hög nivå till Adobe Analytics. Dessa data har bearbetats på samma sätt som uppgifter som samlats in med traditionella datainsamlingsmetoder, till exempel AppMeasurement. 2020 släppte Adobe [API för massdatainfogning](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/), som utför samma funktioner som fullbearbetning av datakällor, men med ytterligare funktioner. Den här sidan innehåller information om ytterligare funktioner som tillhandahålls av API:t för infogning av gruppdata och visar skillnader i filformat.
 
 Den 25 mars 2021 hindrade Adobe från att skapa anslutningar för nya, fullständiga datakällor. Den 31 januari 2022 inaktiverades alla datatjänster med fullständig bearbetning.
 

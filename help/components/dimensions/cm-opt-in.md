@@ -2,7 +2,8 @@
 title: Anmälan till samtyckeshantering
 description: Se vilka sekretessinställningar en besökare valde.
 exl-id: b2768180-b763-41fb-8cba-665fac047e29
-source-git-commit: 42ff5018411dae64039ed6f12ec2b8ed12aceff4
+feature: Dimensions
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%

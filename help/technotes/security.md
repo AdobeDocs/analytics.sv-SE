@@ -2,7 +2,8 @@
 title: Adobe Analytics säkerhetsresurser
 description: Länkar till Adobe resurser kring säkerhetsrutinerna och återhämtningsplanerna.
 exl-id: 276285f3-349b-4261-bea1-25bdc0996fbf
-source-git-commit: 549258b0168733c7b0e28cb8b9125e68dffd5df7
+feature: Implementation Basics
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%

@@ -2,10 +2,11 @@
 title: Analytics Tech Notes
 description: Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
 exl-id: 4cb084f8-5cec-4c46-a584-614217d42431
-source-git-commit: 2c451360f6e3ab62ca69a8852ec6d5627ee2691f
+feature: Attribution, Visualizations, Reports & Analytics Basics, Segmentation, Real-time
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '435'
+ht-degree: 20%
 
 ---
 

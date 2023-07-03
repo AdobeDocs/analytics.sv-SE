@@ -2,7 +2,8 @@
 title: Skapa en klassificeringsuppsättning
 description: Tillgängliga fält och beskrivningar när du skapar en klassificeringsuppsättning.
 exl-id: 6d692d90-8cc7-4306-a780-58d03db45be8
-source-git-commit: d0e3b28590b24d630a192ee857a7d84c115dc8c1
+feature: Classifications
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%

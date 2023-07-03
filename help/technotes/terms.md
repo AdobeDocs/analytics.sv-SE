@@ -2,10 +2,11 @@
 title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
-source-git-commit: ac3748826d9907cc68076ad39e865f39ea903cf2
+feature: Implementation Basics
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2554'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +60,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Flöde:** En typ av visualisering i Analysis Workspace som visar vilka sökvägar användare har på din webbplats. Se [Flödesvisualisering](/help/analyze/analysis-workspace/visualizations/c-flow/flow.md) i användarhandboken för Analysera.
 * **Genesis:** Används inte längre som term. Det tidigare namnet på Data Connectors.
 * **Global rapportsvit:** En informell term som tilldelats en rapportserie som samlar in träffar från flera webbplatser.
-* **H-kod:** En föregångare till AppMeasurement. I tidigare versioner av Adobe Analytics mättes kodversionerna med&quot;H version&quot;, t.ex. H.27.5, H.26 osv.
+* **H-kod:** En föregångare till AppMeasurementet. I tidigare versioner av Adobe Analytics mättes kodversionerna med&quot;H version&quot;, t.ex. H.27.5, H.26 osv.
 * **Träff:** En enda bildbegäran som skickas till datainsamlingsservrar i Adobe. Både sidvyer och anpassade länkar kan kallas träffar.
 * **Bildbegäran:** En genomskinlig 1x1-pixelbild som används för att kommunicera med datainsamlingsservrar i Adobe. En webbplats begär denna osynliga bild med en lång frågesträng som innehåller data. Adobe returnerar den osynliga bilden och tolkar frågesträngen som tagits emot.
 * **Insight:** Kan referera till:
@@ -93,8 +94,8 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Rapporter och analyser:** Tidigare SiteCatalyst. Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet.
 * **Rullningsdatumintervall:** En typ av relativt datumintervall som ändras när tiden går. En rapport som visar de senaste 7 dagarna kan till exempel betraktas som ett löpande datumintervall. Se även statiskt datumintervall.
 * **RSID:** Förkortning för rapportsvitens ID. En rapportsvit har både ett eget namn och ett rapportsvit-ID.
-* **s.t():** Namnet på funktionen i ett AppMeasurement-bibliotek som skickar en begäran om sidvisningsbild. Vissa AppMeasurement-bibliotek använder `s.track()` i stället. Se [t](../implement/vars/functions/t-method.md) i Implementeringshandboken.
-* **s<span>.</span>tl():** Namnet på funktionen i ett AppMeasurement-bibliotek som skickar en begäran om länkspårningsbild. Vissa AppMeasurement-bibliotek använder `s.trackLink()` i stället. Se [tl](../implement/vars/functions/tl-method.md) i Implementeringshandboken.
+* **s.t():** Namnet på AppMeasurementet i ett sidvisningsbildbibliotek som skickar en bildbegäran. Vissa AppMeasurement används i bibliotek `s.track()` i stället. Se [t](../implement/vars/functions/t-method.md) i Implementeringshandboken.
+* **s<span>.</span>tl():** Namnet på funktionen i ett AppMeasurementen bibliotek som skickar en begäran om länkspårningsbild. Vissa AppMeasurement-bibliotek använder `s.trackLink()` i stället. Se [tl](../implement/vars/functions/tl-method.md) i Implementeringshandboken.
 * **s_code.js:** Namnet på JavaScript-filen som används i tidigare versioner av Adobe Analytics. Det aktuella namnet på JavaScript-filen som används är AppMeasurement.js.
 * **Satellit:** Används inte längre som term. Det tidigare produktnamnet för Dynamic Tag Management.
 * **Sekundärt serveranrop:** Alternativt namn för bildbegäran eller träff, används mest i samband med märkning och fakturering av flera sviter. När samma träff skickas till flera rapportsviter är alla rapportsviter efter den första listan sekundära serveranrop. Se även primära serveranrop.

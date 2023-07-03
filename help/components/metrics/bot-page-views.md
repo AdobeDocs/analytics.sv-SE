@@ -1,8 +1,9 @@
 ---
 title: Bot page views
 description: Antalet sidvyer som matchar båda reglerna.
+feature: Metrics
 exl-id: 9b1efcb1-10ca-40fb-8f20-e6da105366d9
-source-git-commit: 5ba12c243a8013c52b487d048c54461ebdf7bd85
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: Avanmälan från samtyckeshantering
 description: Se vilka sekretessinställningar en besökare valde ut.
 exl-id: 2bf4d22c-5b24-47fb-b489-49388fcca5b1
-source-git-commit: dc9cd6bb45af0c992c37ffe20ea22eab67789ec5
+feature: Dimensions
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%

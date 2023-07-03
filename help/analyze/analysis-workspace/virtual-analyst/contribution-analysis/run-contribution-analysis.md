@@ -3,7 +3,8 @@ description: Kör en bidragsanalysrapport i ett Workspace-projekt.
 title: Köra bidragsanalys
 role: User, Admin
 exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
-source-git-commit: 9b50e77b3998753d45a25799dbed6094b048c118
+feature: Anomaly Detection
+source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 3%
@@ -20,15 +21,15 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
 * I en frihandstabell med daglig kornighet högerklickar du på en rad och väljer **[!UICONTROL Run Contribution Analysis]**. Du kan till och med köra det på rader som inte visar några avvikelser.
 
-   >[!NOTE]
-   >
-   >Vi stöder för närvarande endast bidragsanalys med daglig granularitet.
+  >[!NOTE]
+  >
+  >Vi stöder för närvarande endast bidragsanalys med daglig granularitet.
 
-   ![](assets/run_ca.png)
+  ![](assets/run_ca.png)
 
 * Håll pekaren över en avvikande datapunkt i ett linjediagram. Klicka på **[!UICONTROL Analyze]** länk som visas.
 
-   ![](assets/contribution-analysis.png)
+  ![](assets/contribution-analysis.png)
 
 1. (Valfritt) När du har klickat **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen med [exklusive dimensioner](#section_F6932F4BF74544B5872164E7B1E0C6FC).
 
@@ -41,7 +42,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
    * The [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters)-tabellen identifierar associationer av de vanligaste objekten baserat på bidragsresultat, avvikelser och den totala procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
 
-      ![](assets/auto_segment.png)
+     ![](assets/auto_segment.png)
 
 1. Eftersom bidragsanalysen nu ingår i Analysis Workspace kan du dra nytta av ett antal funktioner från en tabells högerklicksmeny och göra analysen ännu mer meningsfull, som:
 
