@@ -2,7 +2,8 @@
 title: Uteslut data i Adobe Analytics
 description: Lär dig olika metoder för att exkludera data både före och efter datainsamling.
 exl-id: dee5bf3b-8bb3-48eb-908d-b4a981f17bfb
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+feature: Data Configuration and Collection
+source-git-commit: c697530103ea7cd279cc3560c1daec796759e7a1
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

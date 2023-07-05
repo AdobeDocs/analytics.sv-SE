@@ -1,7 +1,9 @@
 ---
 title: Konsolideringshanterare för klassificeringsuppsättning
 description: Konsolidera en eller flera klassificeringsuppsättningar i en enda klassificeringsuppsättning.
-source-git-commit: d0e3b28590b24d630a192ee857a7d84c115dc8c1
+exl-id: 032e93f6-9c11-4522-a02e-376eb4fd98bf
+feature: Classifications
+source-git-commit: c697530103ea7cd279cc3560c1daec796759e7a1
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
