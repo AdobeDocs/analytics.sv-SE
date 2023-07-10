@@ -3,7 +3,7 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: c36cc9884b2de3cddf03b505d9c4883dcac846af
+source-git-commit: d21903fe5683cadf2e235f5a1f911e2a62881c58
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 >
 >FTP rekommenderas inte eftersom det är en okrypterad metod för att dela filer, vilket innebär att alla kan fånga upp filinnehållet samt användarnamnet och lösenordet som används för kontot.
 >
->Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera platser för molnimport](/help/components/classifications/importer/configure-import-accounts.md).
+>Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera platser för molnimport](/help/components/locations/configure-import-accounts.md).
 
 Steg som beskriver hur du överför datafiler via FTP.
 

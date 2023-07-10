@@ -3,7 +3,7 @@ title: Schema för klassificeringsuppsättning
 description: Visa och redigera schemat för en enskild klassificeringsuppsättning.
 exl-id: 0fc12a0c-c1cf-4159-9d8b-492ebcaa8ea1
 feature: Classifications
-source-git-commit: 6cc7f491340ec7c36252f7ae53de07b0ab8f3b6f
+source-git-commit: d21903fe5683cadf2e235f5a1f911e2a62881c58
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
@@ -48,11 +48,11 @@ Följande knappar är tillgängliga:
 * **[!UICONTROL Automate]**: Importera automatiskt data från externa lagringsplatser.
    * **[!UICONTROL Location account]**: En listruta med befintliga platskonton som din organisation har konfigurerat. Om din organisation inte redan har konfigurerat ett platskonto kan du konfigurera ett genom att välja [!UICONTROL **Skapa ett nytt konto**].
 
-     Mer information om hur du konfigurerar platskontot finns i [Konfigurera platser för molnimport](/help/components/classifications/importer/configure-import-accounts.md).
+     Mer information om hur du konfigurerar platskontot finns i [Konfigurera molnimportkonton](/help/components/locations/configure-import-accounts.md).
 
    * **[!UICONTROL Location]**: En nedrullningsbar lista med befintliga platser som din organisation har konfigurerat. Om din organisation inte redan har konfigurerat en plats kan du konfigurera en genom att välja [!UICONTROL **Skapa en ny plats**].
 
-     Mer information om hur du konfigurerar en plats finns i [Konfigurera platser för molnimport](/help/components/classifications/importer/configure-import-accounts.md).
+     Mer information om hur du konfigurerar en plats finns i [Konfigurera platser för molnimport](/help/components/locations/configure-import-locations.md).
 
    * **[!UICONTROL Delimiter]**: Kolumnavgränsaren för överförda filer. Alternativen inkluderar [!UICONTROL Comma], [!UICONTROL Semicolon], [!UICONTROL Colon], [!UICONTROL Vertical bar], [!UICONTROL Space], [!UICONTROL Forward slash], [!UICONTROL Backward slash], [!UICONTROL Dash], eller [!UICONTROL Underscore].
 

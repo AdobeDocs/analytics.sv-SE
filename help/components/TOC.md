@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: e87e47eb32ce150491596216d4ddc4fb87348497
+source-git-commit: 50d6094a5b849bc16a02b3e59f9b40f19c86eee3
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 44%
+source-wordcount: '724'
+ht-degree: 43%
 
 ---
 
@@ -262,14 +262,16 @@ ht-degree: 44%
       + [Import via webbläsare och FTP](classifications/importer/import-file.md)
       + [Import via webbläsare](classifications/importer/browser-import.md)
       + [Webbläsarexport](classifications/importer/browser-export.md)
-      + [Molnimport](/help/components/classifications/importer/configure-import-accounts.md)
       + [FTP-import](classifications/importer/c-uploading-saint-data-files-via-ftp.md)
       + [FTP-export](classifications/importer/ftp-export.md)
       + [Bearbetningstid](classifications/importer/processing-time.md)
       + [Felsökning](classifications/importer/troubleshooting.md)
-
    + [Underklassificeringar](classifications/c-sub-classifications.md)
    + [Vanliga frågor om klassificeringar](classifications/faq.md)
++ Platser {#locations}
+   + [Platshanteraren](/help/components/locations/locations-manager.md)
+   + [Molnimportkonton](/help/components/locations/configure-import-accounts.md)
+   + [Platser för molnimport](/help/components/locations/configure-import-locations.md)
 + [Kalenderhändelser](t-calendar-event.md)
 + [Schemalagd rapportkö](scheduled-reports-admin.md)
 + Rapporter i realtid {#real-time-reporting}
