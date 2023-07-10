@@ -3,7 +3,7 @@ description: Konfigurera molnimportkontot och platsen där klassificeringsdata k
 keywords: Analysis Workspace
 title: Konfigurera molnimportkonton
 feature: Classifications
-source-git-commit: 4efb0623d734419c376ca5f2bf2bbd94097ee4e4
+source-git-commit: 6010c65571b326759eeddc5e71f8a52212ddbb98
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Innan du kan importera Adobe Analytics-klassificeringsdata från ett molnmål måste du lägga till och konfigurera kontot och platsen inom det kontot där du vill att klassificeringsdata ska samlas in.
 
-Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i den här artikeln, och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i [Konfigurera platser för molnimport][/help/components/locations/configure-import-locations.md].
+Den här processen består av att lägga till och konfigurera kontot (till exempel Amazon S3 Role ARN, Google Cloud Platform o.s.v.) enligt beskrivningen i den här artikeln, och sedan lägga till och konfigurera platsen inom det kontot (till exempel en mapp inom kontot) enligt beskrivningen i [Konfigurera platser för molnimport](/help/components/locations/configure-import-locations.md).
 
 Du måste konfigurera Adobe Analytics med den information som krävs för att komma åt ditt molnmålkonto.
 
