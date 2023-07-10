@@ -3,16 +3,16 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 8e753a4ab2f86ff1b45d3116e51c5ce03f5b038b
+source-git-commit: d00ae976a7e7de2fad7f5c214c2bbf39644c9a08
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1532'
 ht-degree: 3%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (juni 2023)
 
-**Senaste uppdatering**: 21 juni 2023
+**Senaste uppdatering**: 10 juli 2023
 
 Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,10 +20,11 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Konfigurera lagringsplatser för molnkonton för inhämtning av klassificeringsdata** | Nu kan du hantera lagringsplatser för molnkonton som används för automatisering av klassificeringsuppsättningar.<p>[Läs mer](/help/components/classifications/importer/configure-import-accounts.md)</p> |  | 10 juli 2023 |
 | **Förbättrat datareparationsfilter** | Tre filtreringsförbättringar har lagts till i Datareparation:<ul><li>Filtrera efter en variabel för att ändra en andra variabel. Om `eVar2` innehåller&quot;@&quot; och sedan ta bort `eVar3`.</li><li>Filter för numeriska eller icke-numeriska värden</li><li>Använd flera filter med AND. Där `eVar2="a"` OCH `eVar3="b"`</li></ul>[Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/) | 21 juni 2023 | 12 juli 2023 |
 | **Länkdelning för projekt (ingen inloggning krävs)** | Nu kan du dela skrivskyddade länkar till Analysis Workspace-projekt med personer som inte har tillgång till Adobe Analytics. Detta inkluderar delning med personer utanför er organisation, eller personer inom er organisation som inte är anställda för Adobe Analytics. [Läs mer](../analyze/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required)<p>Den här funktionen är aktiverad som standard och kan inaktiveras av systemadministratören. [Läs mer](../analyze/analysis-workspace/user-preferences.md#company-preferences)</p> | 3 maj 2023 | 7 juni 2023 |
 | **Nya funktioner för klassificeringsuppsättningar** | [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) har uppdaterats med flera nya funktioner:<ul><li>**Konsolideringar**: Kombinera klassificeringsuppsättningar i en enda konsoliderad klassificeringsuppsättning. Den konsoliderade klassificeringsuppsättningen kan användas som andra klassificeringsuppsättningar eller som en uppslagsuppsättning i kundens Jourey Analytics. [Läs mer](../components/classifications/sets/consolidations/manage.md)</li><li>**Regler**: Klassificera värden automatiskt baserat på reglerna i klassificeringsuppsättningen. [Läs mer](../components/classifications/sets/manage/rules.md)</li><li>**Automatiserad import**: Importera klassificeringsdata automatiskt från molnlagringsmål. [Läs mer](../components/classifications/sets/manage/schema.md)</li></ul> | | 7 juni 2023 |
-| **Ny AppMeasurement-variabel** | Variabeln `doubleEncodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. De flesta implementeringar behöver inte definiera den här variabeln. [Läs mer](../implement/vars/config-vars/doubleencodelinkparameters.md) |  | 7 juni 2023 |
+| **Variabeln Nytt AppMeasurement** | Variabeln `doubleEncodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. De flesta implementeringar behöver inte definiera den här variabeln. [Läs mer](../implement/vars/config-vars/doubleencodelinkparameters.md) |  | 7 juni 2023 |
 | **Säkra destinationer för datafeed-export** | Datamatningar kan nu skickas till följande molnlagringsmål:<ul><li>Amazon S3</li><li>Azure RBAC</li><li>Azure SAS</li><li>Google Cloud Platform</li></ul>Destinationer som tidigare var tillgängliga (FTP, SFTP, S3 och Azure Blob) rekommenderas inte längre. [Läs mer](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html) | 12 juni 2023 | 15 juli 2023 |
 | **Punktrapportering på arbetsytan** | Bot-rapportering finns nu i Analysis Workspace. Den här funktionen innehåller flera tillägg:<ul><li>En ny dimension: [Punktnamn](/help/components/dimensions/bot-name.md)</li><li>Två nya mätvärden: [Bot page views](/help/components/metrics/bot-page-views.md) och [Punkter](/help/components/metrics/bot-occurrences.md).</li><li>En ny mall för beräknade mått: [Vyförhållande för startsida](/help/components/c-calcmetrics/cm-reference/default-calcmetrics.md)</li><li>En ny rapport om arbetsytan: Bot-rapportering</li></ul>Den nya dimensionen och mätvärdena innehåller data som är förifyllda från och med mars 2023. |  | Juni 7,2023 |
 

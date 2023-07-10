@@ -3,14 +3,22 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: 1b1cea9b9e336a1836e824906e620a0761c364e4
+source-git-commit: c36cc9884b2de3cddf03b505d9c4883dcac846af
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
 
 # FTP-import
+
+>[!IMPORTANT]
+>
+>Vi rekommenderar inte längre att du använder FTP för import enligt beskrivningen på den här sidan.
+>
+>FTP rekommenderas inte eftersom det är en okrypterad metod för att dela filer, vilket innebär att alla kan fånga upp filinnehållet samt användarnamnet och lösenordet som används för kontot.
+>
+>Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera platser för molnimport](/help/components/classifications/importer/configure-import-accounts.md).
 
 Steg som beskriver hur du överför datafiler via FTP.
 
@@ -20,7 +28,7 @@ Så här överför du datafiler via FTP:
 
 1. **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 
-Följande rekommenderade gränser är viktiga. För många
+Följande rekommenderade gränser är viktiga.
 
 >[!IMPORTANT]
 >
