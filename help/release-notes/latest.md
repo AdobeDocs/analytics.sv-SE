@@ -3,9 +3,9 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 386661af0d37fb223f51904a48593065f42ba47b
+source-git-commit: b724ef95771b49a81563587a5d8bbfe26c99c134
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ AN-307816; AN-318111; AN-318584; AN-318828; AN-320440; AN-320568; AN-320616; AN-
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
 | **37-månaders förfallodatum för inköps-ID och händelse-ID (händelseserialisering)** | Juli 10,2023 | En kommande version av motorn för bearbetning av träff i Analytics, avsedd för lansering den **13 juli 2023**, kommer att börja genomdriva en 37-månaders förfallotid för inköps-ID och händelse-ID (händelseserialisering). För närvarande går köp-ID och händelse-ID aldrig ut i Adobe Analytics. När ett inköps-ID eller händelse-ID visas/används kommer eventuella framtida träffar, oavsett när, att markeras som dubbletter. Med den nya versionen av bearbetningsmotorn:<ul><li>Inköps-ID och händelse-ID:n går alltid ut efter 37 månader.</li><li>Om det har gått 37 månader sedan inköps-ID:t eller händelse-ID:t sågs, betraktas det inte längre som ett dubblettköp eller -händelse.</li><li> Om du återanvänder inköps-ID:n eller händelse-ID:n för mer än 37 månader sedan betraktas de inte längre som dubbletter.</li></ul> |
-| **Migrering till autentiseringsuppgifter för AdobeIO OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API- och LiveStream-kunder som använder inloggningsuppgifter för AdobeIO JWT måste migrera till inloggningsuppgifter för AdobeIO OAuth Server-till-Server med **1 januari 2025**. Mer information och tidslinjer finns i meddelandet om att produkten upphör att gälla i tabellen nedan. |
+| **Migrering till autentiseringsuppgifter för Adobe I/O OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API- och LiveStream-kunder som använder Adobe I/O JWT-autentiseringsuppgifter måste migrera till Adobe I/O OAuth Server-till-Server-autentiseringsuppgifter genom att **1 januari 2025**. Mer information och tidslinjer finns i meddelandet om att produkten upphör att gälla i tabellen nedan. |
 
 {style="table-layout:auto"}
 
