@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+source-git-commit: 53f4048db02331e807edd4d55311861d2350efe3
 workflow-type: tm+mt
-source-wordcount: '4420'
+source-wordcount: '4421'
 ht-degree: 28%
 
 ---
@@ -25,8 +25,9 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Juli 2023** | |
+| Variabeln Nytt AppMeasurement | Variabeln `decodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. [Läs mer](../implement/vars/config-vars/decodelinkparameters.md) |
 | **Juni 2023** | |
-| Variabeln Nytt AppMeasurement | Variabeln `doubleEncodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. [Läs mer](../implement/vars/config-vars/doubleencodelinkparameters.md) |
 | Nya funktioner för klassificeringsuppsättningar | [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) har uppdaterats med flera nya funktioner:<ul><li>**Konsolideringar**: Kombinera klassificeringsuppsättningar i en enda konsoliderad klassificeringsuppsättning. Den konsoliderade klassificeringsuppsättningen kan användas som andra klassificeringsuppsättningar eller som en uppslagsuppsättning i kundens Jourey Analytics. [Läs mer](../components/classifications/sets/consolidations/manage.md)</li><li>**Regler**: Klassificera värden automatiskt baserat på reglerna i klassificeringsuppsättningen. [Läs mer](../components/classifications/sets/manage/rules.md)</li><li>**Automatiserad import**: Importera klassificeringsdata automatiskt från molnlagringsmål. [Läs mer](../components/classifications/sets/manage/schema.md)</li></ul> |
 | Uppdateringar av beräknade mätvärden | Uppdateringar gjordes för olika artiklar om beräknade mätvärden, inklusive uppdatering av skärmdumpar och steg i procedurer. Dessa ändringar har gjorts för att få dokumentationen att överensstämma med den aktuella Adobe Analytics-funktionen. |
 | Säkra destinationer för datafeed-export | Datamatningar kan nu skickas till följande molnlagringsmål:<ul><li>Amazon S3</li><li>Azure RBAC</li><li>Azure SAS</li><li>Google Cloud Platform</li></ul>Destinationer som tidigare var tillgängliga (FTP, SFTP, S3 och Azure Blob) rekommenderas inte längre. [Läs mer](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html) |
