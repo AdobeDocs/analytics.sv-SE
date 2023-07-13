@@ -3,9 +3,10 @@ description: Lär dig grunderna i att skapa projekt i Analysis Workspace
 title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6d1515ee21044941b4b79d18b4438e0647471c57
+exl-id: 6130b1d8-078c-46d8-9fce-eb39739a9570
+source-git-commit: f7bd5eaffd4502510451e3afb5929682ad967ecb
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -32,6 +33,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
       * **Tomt projekt** om du planerar att dela analysen från webbläsaren
       * [**Tomt mobilstyrkort**](/help/analyze/mobile-app/curator.md) om du tänker dela med dig av dina analyser från mobilappen Adobe Analytics dashboards.
+
    1. Välj [!UICONTROL **Skapa**].
 
 +++
@@ -44,7 +46,10 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
       En uppsättning standardrapporter är tillgängliga som standard. Dessutom kan din organisation ha skapat anpassade rapporter som du kan välja bland.
 
-      Mer information finns i&quot;Navigera på fliken Rapporter&quot; i [Adobe Analytics landningssida](/help/analyze/landing.md).
+   1. Välj [!UICONTROL **Projekt**] > [!UICONTROL **Spara**] för att spara rapporten som ett nytt projekt.
+
+      Mer information om rapporter finns i&quot;Navigera på fliken Rapporter&quot; i [Adobe Analytics landningssida](/help/analyze/landing.md).
+
 +++
 
 1. Därefter måste du lägga till paneler, visualiseringar och komponenter i projektet. Lägg först till paneler i ditt projekt i Analysis Workspace, enligt beskrivningen i [Lägga till paneler i projektet](#add-panels-to-the-project). Du kan sedan lägga till visualiseringar i alla paneler. Slutligen kan du lägga till komponenter till valfria paneler eller visualiseringar.
@@ -108,4 +113,3 @@ Så här lägger du till en komponent:
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md).
 
 När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
-
