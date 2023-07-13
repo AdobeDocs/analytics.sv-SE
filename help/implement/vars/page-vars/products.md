@@ -3,9 +3,9 @@ title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: 5b426c0cc6f0a30c167f35d96fa1498ac0961c3e
+source-git-commit: d252b0e99a7d38d171eab181718fa60780489652
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Det finns inget dedikerat fält i Adobe Experience Platform Data Collection för
 3. Gå till [!UICONTROL Extensions] tabbtangenten och sedan klicka [!UICONTROL Catalog] om du vill se alla tillgängliga tillägg.
 4. Sök efter termen &quot;product&quot;, som visar flera tillgängliga tillägg som kan hjälpa dig att ange variabeln.
 
-Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren efter AppMeasurement-syntaxen nedan.
+Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren efter AppMeasurementen syntax nedan.
 
 ## s.products in AppMeasurement and the Analytics extension custom code editor
 
@@ -69,7 +69,7 @@ s.products = "Example category 1;Example product 1;1;3.50,Example category 2;Exa
 
 >[!WARNING]
 >
->Ta bort alla semikolon, kommatecken och rör från produktnamn, kategorier och försäljningsvärden för eVar. Om ett produktnamn innehåller kommatecken tolkas det som början av en ny produkt i AppMeasurement. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
+>Ta bort alla semikolon, kommatecken och rör från produktnamn, kategorier och försäljningsvärden för eVar. Om ett produktnamn innehåller kommatecken tolkar AppMeasurementet det som början av en ny produkt. Denna felaktiga tolkning leder till att resten av produktsträngen avbryts, vilket ger felaktiga data i dimensioner och rapporter.
 
 ## Exempel
 
