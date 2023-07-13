@@ -4,9 +4,9 @@ description: Lär dig vilka variabler du kan ta med i data som du skickar till A
 keywords: appmeasurement,variabler,var,konfiguration,sida,implementering
 feature: Variables
 exl-id: 7ffcd943-f9ac-4daf-bbdf-248d75925b04
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: ed018e9b9b220630193b0b39d40a1f34afeb3d35
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Analytics ger ett antal variabler för att samla in analysdata. Variablerna i de
 
 ## Variabler och implementeringsmetoder
 
-Adobe erbjuder flera sätt att implementera Adobe Analytics. På varje sida finns ett avsnitt om hur du implementerar variabeln med Web SDK, med Adobe Analytics-tillägget och med AppMeasurement for JavaScript.
+Adobe erbjuder flera sätt att implementera Adobe Analytics. På varje sida finns ett avsnitt om hur du implementerar variabeln med Web SDK, med Adobe Analytics-tillägget och med AppMeasurementet för JavaScript.
 
 Här är en video om hur du konfigurerar variabler i Adobe Analytics:
 
@@ -31,9 +31,9 @@ Här är en video om hur du konfigurerar variabler i Adobe Analytics:
 
 AppMeasurement-bibliotek som publiceras av Adobe Analytics följer en viss ordning när data skickas till Adobe. Om du utför dessa åtgärder i fel ordning kan data vara ofullständiga.
 
-1. Om webbplatsen använder ett datalager måste alla tillämpliga variabler fyllas i först. Se [Datalager](../prepare/data-layer.md) för mer information.
-2. Använd datalagret för att fylla i Analytics-variabler. Om du använder taggar i Adobe Experience Platform kan du enkelt utföra den här uppgiften genom att använda dataelement och sedan tilldela dataelementet till en variabel. Se [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html).
-3. Anropa spårningsfunktionen. De flesta AppMeasurement-bibliotek använder `t()` -metod, men vissa av de mobila SDK:s använder `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
+1. Om webbplatsen använder ett datalager måste alla tillämpliga variabler fyllas i först. Du kan till exempel fylla i `adobeDataLayer.page.title` med sidrubriken. Se [Datalager](../prepare/data-layer.md) för mer information.
+2. Använd datalagret för att fylla i Analytics-variabler. <br/>Om du använder taggar i Adobe Experience Platform kan du utföra den här uppgiften genom att använda dataelement däremellan. Dataelement fylls med värden från datalagret. Exempel på dataelement `Page Title` hämtar värdet från datalagervariabeln `adobeDataLayer.page.title`. <br/>Sedan kan du använda dataelementet för att fylla i Analytics-variabler. Till exempel `eVar4` hämtar värdet från dataelement `Page Title`. <br/>Mer information finns i [Dataelement](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html).
+3. Anropa till sist spårningsfunktionen. De flesta AppMeasurement använder `t()` -metod, men vissa av de mobila SDK:s använder `track()`. När spårningsfunktionen anropas skickas alla variabler som stöds i Analytics-objektet till Adobe i form av en bildbegäran.
 
 ## Ogiltiga tecken
 
