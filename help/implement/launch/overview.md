@@ -2,9 +2,10 @@
 title: Implementera Adobe Analytics med Analytics-tillägget
 description: Lär dig implementera Adobe Analytics med hjälp av taggar och Analytics-tillägg
 feature: Launch Implementation
-source-git-commit: bd35fc09211a818983c27ce4494f14499c2229d8
+exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
+source-git-commit: bef853934683f647e05d42e1a751217c8f9b5dc4
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '372'
 ht-degree: 4%
 
 ---
@@ -21,7 +22,7 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 
 
-![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../assets/analytics-extension-annotated.png)
+![Så här implementerar du Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägg, vilket beskrivs i det här avsnittet.](../assets/analytics-extension-annotated.png)
 
 <table style="width:100%">
 

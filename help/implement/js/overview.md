@@ -1,21 +1,22 @@
 ---
-title: Implementera Adobe Analytics med AppMeasurement for JavaScript
+title: Implementera Adobe Analytics med AppMeasurement för JavaScript
 description: Lär dig hur du implementerar Adobe Analytics med JavaScript utan ett tagghanteringssystem.
 feature: Implementation Basics
-source-git-commit: aef1d613437688b7eed704b227c41e4fbe4677dd
+exl-id: 25b9d768-c641-4f6c-a4ae-0d6c238c4776
+source-git-commit: bef853934683f647e05d42e1a751217c8f9b5dc4
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 7%
+source-wordcount: '206'
+ht-degree: 6%
 
 ---
 
-# Implementera Adobe Analytics med AppMeasurement for JavaScript
+# Implementera Adobe Analytics med AppMeasurement för JavaScript
 
-AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att implementera Adobe Analytics. Men Tag Management Systems blir allt populärare med [taggar i Adobe Experience Platform](../launch/overview.md) rekommenderas.
+AppMeasurementet för JavaScript har historiskt sett varit ett vanligt sätt att implementera Adobe Analytics. Men Tag Management Systems blir allt populärare med [taggar i Adobe Experience Platform](../launch/overview.md) rekommenderas.
 
 Översikt över implementeringsuppgifterna:
 
-![Implementera Adobe Analytivs med AppMeasurement - översikt](../assets/appmeasurement-annotated.png)
+![Så här implementerar du Adobe Analytivs med AppMeasurement för Javascript, enligt beskrivningen i det här avsnittet.](../assets/appmeasurement-annotated.png)
 
 <table>
 
@@ -28,7 +29,7 @@ AppMeasurement for JavaScript har historiskt sett varit en vanlig metod för att
 </tr>
 
 <tr>
-<td>2</td><td><b>Hämta den JavaScript-kod som krävs för AppMeasurement</b> från Code Manager. Zippa upp filen.</td><td><a href="../../admin/admin/code-manager-admin.md">Kodhanteraren</a></td>
+<td>2</td><td><b>Hämta den JavaScript-kod som krävs för AppMeasurementet</b> från Code Manager. Zippa upp filen.</td><td><a href="../../admin/admin/code-manager-admin.md">Kodhanteraren</a></td>
 </tr>
 
 <tr>

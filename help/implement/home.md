@@ -3,10 +3,10 @@ title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 feature: Implementation Basics
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+source-git-commit: bef853934683f647e05d42e1a751217c8f9b5dc4
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 28%
+source-wordcount: '923'
+ht-degree: 27%
 
 ---
 
@@ -35,7 +35,7 @@ För **webbplats**, finns följande implementeringsmetoder:
 
 * **Web SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics för nya kunder. Installera **Adobe Experience Platform Web SDK-tillägg** i Adobe Experience Platform Data Collection **Taggar**, använder en loader-tagg på varje sida och skickar data till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
   ![Web SDK-tillägg](./assets/websdk-extension-implementation.png)
-Se [Implementera Adobe Analytics med tillägget Adobe Experience Platform Web SDK](./aep-edge/overview.md) för mer information.
+Se [Så här implementerar du Adobe Analytics med tillägget Adobe Experience Platform Web SDK.](./aep-edge/overview.md) för mer information.
 
 * **Web SDK**: Du kan läsa in Web SDK-bibliotek manuellt på webbplatsen om du inte vill använda Adobe Experience Platform Data Collection. Referera till Web SDK-biblioteket (`alloy.js`) på varje sida och skicka önskade spårningsanrop till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
   ![Web SDK](./assets/websdk-implementation.png)
@@ -47,7 +47,7 @@ Se [Implementera Adobe Analytics med Adobe Experience Platform Web SDK](./aep-ed
 Se [Implementera Adobe Analytics med Analytics-tillägget](launch/overview.md) för mer information.
 
 * **Äldre JavaScript:** Den gamla, manuella metoden för att implementera Adobe Analytics. Referera till AppMeasurementet (`AppMeasurement.js`) på varje sida och sedan ange variabler och inställningar som används i en implementering.
-  ![Äldre JavaScript](./assets/appmeasurement-implementation.png)
+  ![Implementera Adobe Analytics med äldre JavaScript](./assets/appmeasurement-implementation.png)
 Den här implementeringsmetoden kan vara användbar för implementeringar med anpassad kod och rekommenderas fortfarande när du (vill) använder:
 
    * [data för aktivitetskarta](../analyze/activity-map/activity-map.md),
@@ -66,7 +66,7 @@ Den här implementeringsmetoden kan vara användbar för implementeringar med an
 
 Följande beslutsflöde kan hjälpa dig att välja en implementeringsmetod:
 
-![Beslutsträd](./assets/decision-tree.png)
+![Ett beslutsträd för att välja en implementeringsmetod, vilket beskrivs i detta avsnitt.](./assets/decision-tree.png)
 
 
 >[!TIP]
