@@ -4,7 +4,7 @@ title: Adobe Analytics landningssida
 role: User, Admin
 feature: Analytics Basics
 exl-id: 0a2fb778-491a-4dc3-aae4-afadb3ab1a1e
-source-git-commit: f7bd5eaffd4502510451e3afb5929682ad967ecb
+source-git-commit: 57b439dac433c4d99d4f2029760f324f8404a920
 workflow-type: tm+mt
 source-wordcount: '3933'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Adobe Analytics landningssida sammanför båda [!DNL Analysis Workspace] och [!D
 | Nya länkar till **[!UICONTROL Reports & Analytics]** rapporter | <ul><li>**[!UICONTROL Reports]** > **[!UICONTROL Audience]** > **[!UICONTROL Bots]**</li><li>**[!UICONTROL Reports]** > **[!UICONTROL Audience]** > **[!UICONTROL Bot Pages]**<li>**[!UICONTROL Reports]** > **[!UICONTROL Engagement]** > **[!UICONTROL Real-Time]**</li></ul> | ![Nya länkar](assets/report-links.png) |
 | Nya färdiga rapporter | <ul><li>**[!UICONTROL Reports]** > **[!UICONTROL Most popular]** > **[!UICONTROL Next page]**</li><li>**[!UICONTROL Reports]** > **[!UICONTROL Most popular]** > **[!UICONTROL Previous page]**</li><li>**[!UICONTROL Reports]** > **[!UICONTROL Engagement]** > **[!UICONTROL Page analysis]** > **[!UICONTROL Page summary]**</li></ul>Observera att dessa rapporter finns i [!UICONTROL Workspace] -format och kräver konfiguration och bygge. Resultatet består av en panel med högnivåstatistik, trenddata, [!UICONTROL Flow] visualisering med mera. Du kan ändra de här rapporterna och ändra dimensioner, dimensionsobjekt osv. Dessa rapporter finns också som paneler under arbetsytepaneler. | ![Nästa sida](assets/next-page.png) |
 | **[!UICONTROL Create Project]** modal är tillbaka | När du klickar **[!UICONTROL Create Project]** i arbetsytan får du ännu en gång möjlighet att välja mellan [!UICONTROL Blank project] och [!UICONTROL Blank mobile scorecard]. Du kan också välja bland de mallar som företaget har skapat. | ![Skapa nytt](assets/create-new.png) |
-| Finns även i Customer Journey Analytics | Denna landningssida, i ändrad form, finns också tillgänglig i Customer Jourey Analytics. |  |
+| Finns även i Customer Journey Analytics | Denna landningssida, i ändrad form, finns också tillgänglig i Customer Journey Analytics. |  |
 
 {style="table-layout:auto"}
 
