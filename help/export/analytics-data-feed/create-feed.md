@@ -3,18 +3,14 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 35f33c026a679526309b09b5af61fc3fd8041c39
+source-git-commit: f66cc6252ecd54c143c08be1e0e7e5bf90cc42e9
 workflow-type: tm+mt
-source-wordcount: '3205'
+source-wordcount: '3156'
 ht-degree: 1%
 
 ---
 
 # Skapa en datafeed
-
->[!AVAILABILITY]
->
->Vissa av måltyperna som beskrivs på den här sidan är i fasen för begränsad testning i versionen och är kanske inte tillgängliga i din miljö ännu. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 När du skapar en datafeed kan du ge Adobe:
 

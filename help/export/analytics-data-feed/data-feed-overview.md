@@ -4,18 +4,14 @@ keywords: klickström;datafeed;datafeed;datafeed
 title: Översikt över Analytics Data Feed
 feature: Data Feeds
 exl-id: 2cfff9ad-cdb5-4ae9-a266-4f3d3d046f0c
-source-git-commit: 0916ef4ddc2ca65f01721f4d79d7af825dcf50e3
+source-git-commit: f66cc6252ecd54c143c08be1e0e7e5bf90cc42e9
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '557'
 ht-degree: 5%
 
 ---
 
 # Översikt över Analytics Data Feed
-
->[!AVAILABILITY]
->
->Vissa av måltyperna som beskrivs på den här sidan är i fasen för begränsad testning i versionen och är kanske inte tillgängliga i din miljö ännu. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 Dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. Dessa rådata kan användas på andra plattformar utanför Adobe efter eget gottfinnande. Data levereras i timbatchar vid varje timmes slut, eller i dagliga satser vid varje dags slut.
 

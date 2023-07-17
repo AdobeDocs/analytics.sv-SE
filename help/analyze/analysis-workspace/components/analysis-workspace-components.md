@@ -4,7 +4,7 @@ title: Komponenter – översikt
 feature: Components
 role: User, Admin
 exl-id: e2c98c77-64ee-4349-956a-3ab092e36017
-source-git-commit: 57b439dac433c4d99d4f2029760f324f8404a920
+source-git-commit: f66cc6252ecd54c143c08be1e0e7e5bf90cc42e9
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 3%
@@ -127,8 +127,6 @@ Du kan söka efter, filtrera och sortera komponentlistan i den vänstra listen i
 4. (Valfritt) Om du vill finjustera listan ytterligare kan du sortera komponentlistan enligt beskrivningen i [Sortera komponentlistan](#sort-the-component-list).
 
 ### Sortera komponentlistan
-
-{{release-limited-testing-section}}
 
 1. (Valfritt) Tillämpa eventuella filter på komponentlistan enligt beskrivningen i [Filtrera komponentlistan](#filter-the-component-list).
 

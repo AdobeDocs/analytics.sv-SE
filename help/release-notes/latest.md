@@ -3,7 +3,7 @@ title: Versionsinformation om den senaste analysen
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: ce2a6c9607b252150a2f8c87befb86837869fe66
+source-git-commit: f66cc6252ecd54c143c08be1e0e7e5bf90cc42e9
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.
 | ----------- | ---------- | ------- | ---- |
 | **Konfigurera lagringsplatser för molnkonton för inhämtning av klassificeringsdata** | Nu kan du hantera lagringsplatser för molnkonton som används för automatisering av klassificeringsuppsättningar. [Läs mer](/help/components/locations/configure-import-accounts.md)<p> | Ej tillämpligt | 10 juli 2023 |
 | **Förbättrat datareparationsfilter** | Tre filtreringsförbättringar har lagts till i Datareparation:<ul><li>Filtrera efter en variabel för att ändra en andra variabel. Om `eVar2` innehåller&quot;@&quot; och sedan ta bort `eVar3`.</li><li>Filter för numeriska eller icke-numeriska värden</li><li>Använd flera filter med AND. Där `eVar2="a"` OCH `eVar3="b"`</li></ul>[Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/) | 21 juni 2023 | 12 juli 2023 |
-| **Säkra destinationer för datafeed-export** | Datamatningar kan nu skickas till följande molnlagringsmål:<ul><li>Amazon S3</li><li>Azure RBAC</li><li>Azure SAS</li><li>Google Cloud Platform</li></ul>Destinationer som tidigare var tillgängliga (FTP, SFTP, S3 och Azure Blob) rekommenderas inte längre. [Läs mer](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html) | 12 juni 2023 | 15 juli 2023 |
+| **Säkra destinationer för datafeed-export** | Datamatningar kan nu skickas till följande molnlagringsmål:<ul><li>Amazon S3</li><li>Azure RBAC</li><li>Azure SAS</li><li>Google Cloud Platform</li></ul>Destinationer som tidigare var tillgängliga (FTP, SFTP, S3 och Azure Blob) rekommenderas inte längre. [Läs mer](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html) | 12 juni 2023 | 13 juli 2023 |
 | **Ny AppMeasurement-variabel** | Variabeln `decodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. De flesta implementeringar behöver inte definiera den här variabeln. [Läs mer](../implement/vars/config-vars/decodelinkparameters.md) |  | 17 juli 2023 |
 
 {style="table-layout:auto"}
