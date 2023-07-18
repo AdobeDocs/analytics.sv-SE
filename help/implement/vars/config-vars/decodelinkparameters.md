@@ -3,7 +3,7 @@ title: decodeLinkParameters
 description: Aktivera eller inaktivera länkspårningsvariabler för dubbelkodning av AppMeasurement.
 exl-id: 7a4cea23-5ae6-4a8b-82a6-c68f9a1f9c49
 feature: Variables
-source-git-commit: 53f4048db02331e807edd4d55311861d2350efe3
+source-git-commit: e666a2efae01bad3cc3ccc5c8bfafe009a429588
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # decodeLinkParameters
 
-The `decodeLinkParameters` variabeln är en boolesk variabel som avgör om länkspårningsvariabler kodas en gång (om de anges till `true`) eller två gånger (om inställt på `false`). Det påverkar bara `linkName` (del av [`tl()`](../functions/tl-method.md) metod) och [`linkURL`](linkurl.md). AppMeasurement 2.23.1 eller senare krävs. Standardvärdet för den här variabeln är `false`.
+The `decodeLinkParameters` variabeln är en boolesk variabel som avgör om länkspårningsvariabler kodas en gång (om de anges till `true`) eller två gånger (om inställt på `false`). Det påverkar bara `linkName` (del av [`tl()`](../functions/tl-method.md) metod) och [`linkURL`](linkurl.md). AppMeasurement 2.24.0 eller senare krävs. Standardvärdet för den här variabeln är `false`.
 
 I tidigare versioner av AppMeasurementet var länkspårningsvariabler alltid URL-kodade två gånger. Även om det inte är något problem för implementeringar som vanligtvis kräver tecken med en byte, så har dubbelkodningen skapat felaktigt kodade värden för flerbytetecken i rapporter. Anger variabeln till `true` kodar värden för länkspårning en gång, vilket vanligtvis är det önskade beteendet.
 
