@@ -3,9 +3,9 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 5545497184d02400ce6844c0281c46e6c997e218
+source-git-commit: f996448224ffebd57023c8d8e4eeeccb4d6e2a47
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2363'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Du kan hämta den senaste versionen av AppMeasurementet i [GitHub](https://githu
 
 Releasedatum: **18 juli 2023**
 
-* En valfri konfiguration (decodeLinkParameters default false) som avkodar länk-URL:er som innehåller dubbelbyte-kodade tecken har lagts till.
+* En valfri konfiguration har lagts till (`decodeLinkParameters` standard false) som avkodar länkar till URL:er som innehåller dubbelbyte-kodade tecken.
 * Ytterligare felhantering har lagts till för webbläsare med felaktiga API:er för användaragenttips.
 * Content-Type-rubriken för POSTEN har ändrats så att den används `x-www-form-urlencoded` som standard.
 
@@ -135,7 +135,7 @@ Releasedatum: **22 februari 2019**
 
 Releasedatum: **11 februari 2019**
 
-* Stöd har lagts till för de nya Adobe-funktionerna för anmälningstjänster i AppMeasurement. (AN-163546)
+* Stöd har lagts till för de nya funktionerna för avanmälningstjänster i Adobe i AppMeasurement. (AN-163546)
 * Stöd för lagring av länkspårningsdata i sessionslagring har lagts till. (AN-162272)
 * Stöd för medieströmstyp för ljudanalys har lagts till. (AN-173265)
 
