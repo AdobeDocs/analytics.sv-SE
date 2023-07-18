@@ -3,20 +3,28 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+source-git-commit: 5545497184d02400ce6844c0281c46e6c997e218
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2364'
 ht-degree: 2%
 
 ---
 
 # Versionsinformation om AppMeasurement for JavaScript
 
-Ackumulerade versionsinformation för [!DNL AppMeasurement] för JavaScript.
+Cumulative release notes for AppMeasurement for JavaScript.
 
 <!-- https://wiki.corp.adobe.com/display/omtrcache/AppMeasurement+Change+Log -->
 
-Du kan hämta den senaste versionen av AppMeasurementet i [Kodhanteraren](/help/admin/admin/code-manager-admin.md).
+Du kan hämta den senaste versionen av AppMeasurementet i [GitHub](https://github.com/adobe/appmeasurement/releases).
+
+## Version 2.24.0
+
+Releasedatum: **18 juli 2023**
+
+* En valfri konfiguration (decodeLinkParameters default false) som avkodar länk-URL:er som innehåller dubbelbyte-kodade tecken har lagts till.
+* Ytterligare felhantering har lagts till för webbläsare med felaktiga API:er för användaragenttips.
+* Content-Type-rubriken för POSTEN har ändrats så att den används `x-www-form-urlencoded` som standard.
 
 ## Version 2.23.0
 
@@ -127,7 +135,7 @@ Releasedatum: **22 februari 2019**
 
 Releasedatum: **11 februari 2019**
 
-* Stöd har lagts till för de nya funktionerna för avanmälningstjänster i Adobe i AppMeasurement. (AN-163546)
+* Stöd har lagts till för de nya Adobe-funktionerna för anmälningstjänster i AppMeasurement. (AN-163546)
 * Stöd för lagring av länkspårningsdata i sessionslagring har lagts till. (AN-162272)
 * Stöd för medieströmstyp för ljudanalys har lagts till. (AN-173265)
 
