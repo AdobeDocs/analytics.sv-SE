@@ -4,9 +4,9 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 58f53da6076bf57d060303538814582cb5eb009c
+source-git-commit: d1c2966bfd7cb5e397de23adf45bb38fca34e416
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -23,11 +23,9 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
 
 1. Lägg till en tom panel i projektet och klicka på visualiseringsikonen i den vänstra listen.
 
-1. Dra [!UICONTROL **Flöde**] visualisering i panelen.
-
    eller
 
-   Dra [!UICONTROL **Flöde**] visualisering i ett befintligt projekt.
+   Lägg till en visualisering på något av de sätt som beskrivs i avsnittet Lägg till visualiseringar i en panel i [Översikt över visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
 1. Förankra Flödesvisualiseringen med något av följande alternativ:
 
@@ -45,7 +43,7 @@ Med flödesvisualiseringar kan du konfigurera början eller slutet av den sökv�
    >
    >Beräknade mått kan inte användas i  **[!UICONTROL Starts with]** eller **[!UICONTROL Ends with]** fält.
 
-1. Om du väljer ett mätvärde måste du även ange [!UICONTROL Pathing Dimension] som du kan använda som bana som leder till eller går från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
+1. Om du väljer ett mätvärde måste du även ange [!UICONTROL **Dimensionen Banor**] som du kan använda som bana som leder till eller går från den markerade komponenten, vilket visas här. Standardvärdet är [!UICONTROL **Sida**].
 
    ![målningsdimension](assets/pathing-dim.png)
 

@@ -3,10 +3,10 @@ title: Användargränssnitt för datafeed
 description: Lär dig navigera i dataflödesgränssnittet.
 feature: Data Feeds
 exl-id: 4d4f0062-e079-48ff-9464-940c6425ad54
-source-git-commit: 0916ef4ddc2ca65f01721f4d79d7af825dcf50e3
+source-git-commit: 84bdeb5d502e46c922fc5123fcdd5b6819426c0e
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 0%
+source-wordcount: '649'
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,9 @@ Här är en video om gränssnittet för hantering av dataflöden:
 
 Få åtkomst till dataflödeshantering genom att följa dessa steg:
 
-1. Logga in på [experience.loud.adobe.com](https://experiencecloud.adobe.com).
-2. Klicka på menyn med nio rutnät i det övre högra hörnet och klicka sedan på [!UICONTROL Analytics].
-3. Klicka på [!UICONTROL Admin] > [!UICONTROL Data Feeds].
-
-![Meny för datafeed](assets/AdminMenu.png)
+1. Logga in på [experiencecloud.adobe.com](https://experiencecloud.adobe.com) med inloggningsuppgifterna för ditt Adobe ID.
+1. Markera ikonen med nio kvadrater i det övre högra hörnet och välj sedan [!UICONTROL **Analyser**].
+1. I det övre navigeringsfältet går du till [!UICONTROL **Administratör**] > [!UICONTROL **Dataflöden**].
 
 ## Navigera i gränssnittet
 
@@ -36,27 +34,25 @@ Om inga feeds har konfigurerats visas en [!UICONTROL Create New Data Feed] -knap
 
 ### Filter och sökning
 
-Använd filter och sök för att hitta exakt den feed du letar efter.
+Använd sökning eller filter för att hitta en viss feed.
 
-Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Klicka på avrivningen om du vill komprimera eller utöka filterkategorierna. Klicka i kryssrutan för att använda det filtret.
+* Börja skriva namnet på en feed i sökfältet. Endast de feeds som matchar visas i listan över tillgängliga feeds.
 
-![Filter](assets/filters.jpg)
+* Klicka på filterikonen längst till vänster om du vill visa eller dölja filteralternativen. Filter ordnas efter kategori. Du kan komprimera eller utöka filtreringskategorier. Markera kryssrutan bredvid de filter du vill använda.
 
-Använd sökning för att hitta en feed efter namn.
-
-![Sök](assets/search.jpg)
+  ![Filter](assets/filters.png)
 
 ### Feeds och jobb
 
-Klicka på fliken Jobb för att visa enskilda jobb som var och en av dina feeds skapar. Se [Hantera datafeedjobb](df-manage-jobs.md).
+Välj [!UICONTROL **Jobb**] för att visa enskilda jobb som var och en av dina feeds skapar. Se [Hantera datafeedjobb](df-manage-jobs.md).
 
 ### Lägg till
 
-I närheten av flikarna för feeds och jobb klickar du på + [!UICONTROL Add] för att skapa en ny feed. Se [Skapa en datafeed](create-feed.md) för mer information.
+The [!UICONTROL Add] kan du skapa en ny feed. Se [Skapa en datafeed](create-feed.md) för mer information.
 
 ### Kolumner
 
-Varje feed som skapas visar flera kolumner med information om den. Klicka på en kolumnrubrik om du vill sortera den i stigande ordning. Klicka på en kolumnrubrik igen för att sortera den i fallande ordning. Om du inte kan se en viss kolumn klickar du på kolumnikonen i det övre högra hörnet.
+Varje feed som skapas visar flera kolumner med information om den. Välj en kolumnrubrik om du vill sortera den i stigande ordning. Välj en kolumnrubrik igen om du vill sortera den i fallande ordning. Om du inte kan se en viss kolumn klickar du på kolumnikonen i det övre högra hörnet.
 
 ![Kolumnikon](assets/cols.jpg)
 
