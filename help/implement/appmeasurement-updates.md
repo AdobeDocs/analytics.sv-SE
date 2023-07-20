@@ -3,7 +3,7 @@ title: Versionsinformation om AppMeasurement for JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 39dc3821da20ca38851c648317eca67b4f702a04
+source-git-commit: 60a630c9934d613aa69523bdb87b92165a135eb9
 workflow-type: tm+mt
 source-wordcount: '2362'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Du kan hämta den senaste versionen av AppMeasurementet från [GitHub](https://g
 
 Releasedatum: **18 juli 2023**
 
-* En valfri konfiguration har lagts till (`decodeLinkParameters` standard false) som avkodar länkar till URL:er som innehåller dubbelbyte-kodade tecken.
+* En valfri konfiguration har lagts till (`decodeLinkParameters` - standard = false) som avkodar länk-URL:er som innehåller dubbelbyte-kodade tecken.
 * Ytterligare felhantering har lagts till för webbläsare med felaktiga API:er för användaragenttips.
 * Content-Type-rubriken för POSTEN har ändrats så att den används `x-www-form-urlencoded` som standard.
 

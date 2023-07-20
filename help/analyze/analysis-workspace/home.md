@@ -4,9 +4,9 @@ description: Analysis Workspace är det främsta analysverktyget för Adobe Anal
 feature: Workspace Basics
 role: User, Admin
 exl-id: de95551d-09ea-4461-9bb4-b4ef235e9cd2
-source-git-commit: 6a695e3b617a5def52719280cd0d979598b6c4c9
+source-git-commit: 60a630c9934d613aa69523bdb87b92165a135eb9
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '755'
 ht-degree: 3%
 
 ---
@@ -77,6 +77,10 @@ När du har förstått komponentterminologin kan du dra komponenter till visuali
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö.
 
 Mer information om Data Dictionary finns i [Översikt över dataordlistan](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md).
+
+### Datakällor
+
+Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering. Här finns mer information om hur du kan [hantera datakällor](/help/analyze/analysis-workspace/visualizations/t-sync-visualization.md).
 
 ## Börja använda Analysis Workspace
 
