@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 9a6728de91ac968c5ff4eb28217b5ea1d11513f8
+source-git-commit: 45fbd7f7502abe4b579135d100c7e3618546c0f5
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4507'
 ht-degree: 28%
 
 ---
@@ -26,9 +26,11 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juli 2023** | |
-| ID för globalt företag | Dokumenterad [hur du hittar det globala företags-ID:t](../admin/admin/company/web-services-admin.md) för det Analytics-företag du är inloggad på. Detta ID krävs för API:er i Analytics 2.0. |
+| Globalt företag-ID | Dokumenterad [hur du hittar det globala företags-ID:t](../admin/admin/company/web-services-admin.md) för det Analytics-företag du är inloggad på. Detta ID krävs för API:er i Analytics 2.0. |
 | Uppdaterad storleksgräns för FTP | Ändrad som standard [Lagringsgräns för FTP-data](/help/export/ftp-and-sftp/ftp-limits.md) till 100 GB. |
-| Variabeln Nytt AppMeasurement | Variabeln `decodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. [Läs mer](../implement/vars/config-vars/decodelinkparameters.md) |
+| Ny AppMeasurement-variabel | Variabeln `decodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. [Läs mer](../implement/vars/config-vars/decodelinkparameters.md) |
+| Konfigurera lagringsplatser för molnkonton för inhämtning av klassificeringsdata | Nu kan du hantera lagringsplatser för molnkonton som används för automatisering av klassificeringsuppsättningar. [Läs mer](/help/components/locations/configure-import-accounts.md) |
+| Förbättrat datareparationsfilter | Tre filtreringsförbättringar har lagts till i Datareparation. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/data-repair/) |
 | **Juni 2023** | |
 | Nya funktioner för klassificeringsuppsättningar | [Klassificeringsuppsättningar](/help/components/classifications/sets/overview.md) har uppdaterats med flera nya funktioner:<ul><li>**Konsolideringar**: Kombinera klassificeringsuppsättningar i en enda konsoliderad klassificeringsuppsättning. Den konsoliderade klassificeringsuppsättningen kan användas som andra klassificeringsuppsättningar eller som en uppslagsuppsättning i Customer Journey Analytics. [Läs mer](../components/classifications/sets/consolidations/manage.md)</li><li>**Regler**: Klassificera värden automatiskt baserat på reglerna i klassificeringsuppsättningen. [Läs mer](../components/classifications/sets/manage/rules.md)</li><li>**Automatiserad import**: Importera klassificeringsdata automatiskt från molnlagringsmål. [Läs mer](../components/classifications/sets/manage/schema.md)</li></ul> |
 | Uppdateringar av beräknade mätvärden | Uppdateringar gjordes för olika artiklar om beräknade mätvärden, inklusive uppdatering av skärmdumpar och steg i procedurer. Dessa ändringar har gjorts för att få dokumentationen att överensstämma med den aktuella Adobe Analytics-funktionen. |

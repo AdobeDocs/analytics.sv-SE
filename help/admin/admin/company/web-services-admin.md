@@ -3,9 +3,9 @@ description: Webbtjänstens API:er ger programmatisk åtkomst till marknadsföri
 title: Webbtjänster
 feature: Company Settings
 exl-id: d003d40e-b0b6-44f3-b9ef-ce6af61f5eb5
-source-git-commit: d2a644d1b655153e1ad509bf9065c390d9226cfc
+source-git-commit: 45fbd7f7502abe4b579135d100c7e3618546c0f5
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '285'
 ht-degree: 5%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 5%
 
 Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter och andra Suite-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via Analytics-gränssnittet.
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Web Services]** eller **API-åtkomst**
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Web Services]** eller **[!UICONTROL API Access]**
 
 
 ## API:er för Analytics 2.0
 
-För att få tillgång till API:erna i Analytics 2.0 behöver ni det globala företags-ID:t för ert Analytics-företag. Du kan hitta det globala företags-ID som du är inloggad på **fet** i det här avsnittet.
+För att få tillgång till API:erna i Analytics 2.0 behöver ni det globala företags-ID:t för ert Analytics-företag. Du hittar det globala företags-ID:t i **fet** högst upp på [!UICONTROL API Access] -avsnitt. Här är ett exempel: &quot;Det globala företags-ID:t för det Analytics-företag du är inloggad på är **adobe1234**.&quot;
 
 ## Hantera äldre webbtjänster (borttagna)
 
