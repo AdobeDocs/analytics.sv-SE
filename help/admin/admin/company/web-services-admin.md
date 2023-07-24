@@ -3,9 +3,9 @@ description: Webbtjänstens API:er ger programmatisk åtkomst till marknadsföri
 title: Webbtjänster
 feature: Company Settings
 exl-id: d003d40e-b0b6-44f3-b9ef-ce6af61f5eb5
-source-git-commit: 5a5a1e48e348f614cb0f0356404903c16c55ceb8
+source-git-commit: d2a644d1b655153e1ad509bf9065c390d9226cfc
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '271'
 ht-degree: 5%
 
 ---
@@ -14,9 +14,14 @@ ht-degree: 5%
 
 Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter och andra Suite-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via Analytics-gränssnittet.
 
-**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Web Services]**
+**[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Company settings]** > **[!UICONTROL Web Services]** eller **API-åtkomst**
 
-## Hantera webbtjänster
+
+## API:er för Analytics 2.0
+
+För att få tillgång till API:erna i Analytics 2.0 behöver ni det globala företags-ID:t för ert Analytics-företag. Du kan hitta det globala företags-ID som du är inloggad på **fet** i det här avsnittet.
+
+## Hantera äldre webbtjänster (borttagna)
 
 I [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html) Du kan uppdatera behörigheterna så att de omfattar de användare som behöver åtkomst till webbtjänstens API:er.
 
