@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 5ebc53e8706f60988b289df060be9b02b5dc778f
+source-git-commit: bcef7aeffa28bd8c2fa2863c4dfb6e6cde15a469
 workflow-type: tm+mt
-source-wordcount: '4546'
+source-wordcount: '4554'
 ht-degree: 28%
 
 ---
@@ -26,7 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Juli 2023** | |
-| API för Adobe Experience Platform Edge Network Server | Mer omfattande dokumentation om när och hur [API för Adobe Experience Platform Edge Network Server](../implement/aep-edge/server-api/overview.md). Om du till exempel implementerar Adobe Analytics för datorprogram, IoT-enheter, anger du de övre rutorna. |
+| API för Adobe Experience Platform Edge Network Server | Mer omfattande dokumentation om när och hur datainsamlingen ska genomföras med Adobe Analytics med [API för Adobe Experience Platform Edge Network Server](../implement/aep-edge/server-api/overview.md). Om du till exempel implementerar datainsamling med Adobe Analytics i datorprogram, IoT-enheter, anger du de översta rutorna. |
 | Globalt företag-ID | Dokumenterad [hur du hittar det globala företags-ID:t](../admin/admin/company/web-services-admin.md) för det Analytics-företag du är inloggad på. Detta ID krävs för API:er i Analytics 2.0. |
 | Uppdaterad storleksgräns för FTP | Ändrad som standard [Lagringsgräns för FTP-data](/help/export/ftp-and-sftp/ftp-limits.md) till 100 GB. |
 | Variabeln Nytt AppMeasurement | Variabeln `decodeLinkParameters` används för kantfall där implementeringar kodar flerbytetecken i länkspårningsvariabler. [Läs mer](../implement/vars/config-vars/decodelinkparameters.md) |
