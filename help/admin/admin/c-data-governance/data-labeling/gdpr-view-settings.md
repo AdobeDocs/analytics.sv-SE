@@ -3,9 +3,9 @@ description: Dialogrutan Sekretessetikett för datastyrning ger en översikt öv
 title: Visa/hantera integritetsetiketter för datastyrning
 feature: Data Governance
 exl-id: 87b0be42-1098-4e72-8eb8-0c1bb56791f8
-source-git-commit: 0f5a1e7264b194b368731f612a04bb805740a932
+source-git-commit: af3bdcf3eedecc6b670e51dcb2f6980e75982077
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 38%
 
 ---
@@ -21,11 +21,11 @@ The **[!UICONTROL Privacy Labeling for Data Governance]** I finns en översikt �
 
    >[!NOTE]
    >
-   >Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörigheter för den här funktionen.
+   >Om du inte ser det här menyalternativet måste du läggas till i en [produktprofil i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html) med behörighet till den här funktionen eller har fått tillgång till en Report Suite i Admin Console.
 
 3. Överst till höger väljer du en rapportserie vars sekretessetiketter du vill visa eller hantera.
 
-![](assets/privacy_labeling.png)
+   ![](assets/privacy_labeling.png)
 
 | Inställning | Beskrivning |
 | --- | --- |

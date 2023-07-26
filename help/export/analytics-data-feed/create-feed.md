@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: f66cc6252ecd54c143c08be1e0e7e5bf90cc42e9
+source-git-commit: af3bdcf3eedecc6b670e51dcb2f6980e75982077
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3118'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 När du skapar en datafeed kan du ge Adobe:
 
-* Information om målet dit du vill att rådatafiler ska skickas
+* Information om målet dit du vill skicka rådatafiler
 
-* De data du vill inkludera i varje fil
+* De data som du vill inkludera i varje fil
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ När du skapar en datafeed kan du ge Adobe:
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Namn**] | Dataflödets namn. Måste vara unikt i den valda rapportsviten och får innehålla upp till 255 tecken. |
-   | [!UICONTROL **Rapportsvit**] | Rapportsviten som dataflödet baseras på. Om flera dataflöden skapas för samma rapportserie måste de ha olika kolumndefinitioner. Endast källrapportsviter stöder dataflöden. virtuella rapportsviter stöds inte. |
+   | [!UICONTROL **Rapportsvit**] | Rapportsviten som dataflödet baseras på. Om flera dataflöden skapas för samma rapportserie måste de ha olika kolumndefinitioner. Endast källrapportsviter stöder dataflöden. Virtuella rapportsviter stöds inte. |
    | [!UICONTROL **E-post när slutförd**] | E-postadressen som ska meddelas när en feed har bearbetats. E-postadressen måste vara korrekt formaterad. |
-   | [!UICONTROL **Feedintervall**] | Välj **Dagligen** för backfill eller historiska data. Dagliga matningar innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon.  Välj **Varje timme** för att fortsätta med data (Daily finns också tillgängligt för att fortsätta feeds om du vill). Timmatningar innehåller en timmes data. |
+   | [!UICONTROL **Feedintervall**] | Välj **Dagligen** för bakåtfyllnad eller historiska data. Dagliga matningar innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon.  Välj **Varje timme** för att fortsätta med data (Daily finns också tillgängligt för att fortsätta feeds om du vill). Timmatningar innehåller en timmes data. |
    | [!UICONTROL **Fördröjd bearbetning**] | Vänta en viss tid innan du bearbetar en datafeedfil. En fördröjning kan vara användbar för att ge mobila implementeringar möjlighet att komma online och skicka data på offlineenheter. Den kan också användas för att hantera serverprocesser i organisationen när tidigare bearbetade filer hanteras. I de flesta fall behövs ingen fördröjning. En feed kan fördröjas med upp till 120 minuter. |
    | [!UICONTROL **Start- och slutdatum**] | Startdatumet anger det första datum då du vill ha en datafeed. Ange det här datumet i det förflutna för att omedelbart börja bearbeta dataflöden för historiska data. Bearbetningen av feeds fortsätter tills de når slutdatumet. Start- och slutdatumen baseras på rapportsvitens tidszon. |
    | [!UICONTROL **Kontinuerlig feed**] | Den här kryssrutan tar bort slutdatumet, vilket gör att en feed kan köras på obestämd tid. När en feed har avslutat bearbetningen av historiska data väntar en feed på data för att slutföra insamlingen under en given timme eller dag. När den aktuella timmen eller dagen är slut börjar bearbetningen efter den angivna fördröjningen. |
@@ -48,7 +48,7 @@ När du skapar en datafeed kan du ge Adobe:
 
    ![Listruta för mål för datafeed](assets/datafeed-destinations-dropdown.png)
 
-   Använd någon av följande måltyper när du skapar en datafeed. Utöka måltypen för konfigurationsinstruktioner. (Ytterligare [äldre mål](#legacy-destinations) finns också tillgängliga, men rekommenderas inte.)
+   Använd någon av följande måltyper när du skapar en datafeed. Expandera måltypen för konfigurationsinstruktioner. (Ytterligare [äldre destinationer](#legacy-destinations) finns också tillgängliga, men rekommenderas inte.)
 
    +++Amazon S3
 
@@ -68,9 +68,9 @@ När du skapar en datafeed kan du ge Adobe:
 
    1. (Villkorligt) Om du tidigare har lagt till ett Amazon S3-konto och en plats:
 
-      1. Välj konto på [!UICONTROL **Välj konto**] nedrullningsbar meny.
+      1. Välj konto på [!UICONTROL **Välj konto**] listruta.
 
-      1. Välj plats på menyn [!UICONTROL **Välj plats**] nedrullningsbar meny.
+      1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
       1. Välj [!UICONTROL **Spara**] > [!UICONTROL **Spara**].
 
@@ -126,9 +126,9 @@ När du skapar en datafeed kan du ge Adobe:
 
    1. (Villkorligt) Om du tidigare har lagt till ett Azure RBAC-konto och en plats:
 
-      1. Välj konto på [!UICONTROL **Välj konto**] nedrullningsbar meny.
+      1. Välj konto på [!UICONTROL **Välj konto**] listruta.
 
-      1. Välj plats på menyn [!UICONTROL **Välj plats**] nedrullningsbar meny.
+      1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
       1. Välj [!UICONTROL **Spara**] > [!UICONTROL **Spara**].
 
@@ -140,11 +140,11 @@ När du skapar en datafeed kan du ge Adobe:
 
          | Fält |  -funktion |
          |---------|----------|
-         | [!UICONTROL **Kontonamn**] | Ett namn för Azure RBAC-kontot. Det här namnet visas i [!UICONTROL **Välj konto**] och kan vara vilket namn du vill. |
-         | [!UICONTROL **Kontobeskrivning**] | En beskrivning av Azure RBAC-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] och kan vara vilket namn du vill. |
-         | [!UICONTROL **Program-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-         | [!UICONTROL **Klient-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-         | [!UICONTROL **Hemlighet**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+         | [!UICONTROL **Kontonamn**] | Ett namn för Azure RBAC-kontot. Det här namnet visas i dialogrutan [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
+         | [!UICONTROL **Kontobeskrivning**] | En beskrivning av Azure RBAC-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
+         | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+         | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+         | [!UICONTROL **Hemlighet**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
 
          {style="table-layout:auto"}
 
@@ -152,8 +152,8 @@ När du skapar en datafeed kan du ge Adobe:
 
          | Fält |  -funktion |
          |---------|----------|
-         | [!UICONTROL **Namn**] | Ett namn för platsen. Det här namnet visas i [!UICONTROL **Välj plats**] och kan vara vilket namn du vill. |
-         | [!UICONTROL **Beskrivning**] | En beskrivning av platsen. Beskrivningen visas i [!UICONTROL **Välj plats**] och kan vara vilket namn du vill. |
+         | [!UICONTROL **Namn**] | Ett namn för platsen. Det här namnet visas i dialogrutan [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
+         | [!UICONTROL **Beskrivning**] | En beskrivning av platsen. Beskrivningen visas i [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Konto**] | Azure-lagringskontot. |
          | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
          | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
@@ -186,9 +186,9 @@ När du skapar en datafeed kan du ge Adobe:
 
    1. (Villkorligt) Om du tidigare har lagt till ett Azure SAS-konto och en plats:
 
-      1. Välj konto på [!UICONTROL **Välj konto**] nedrullningsbar meny.
+      1. Välj konto på [!UICONTROL **Välj konto**] listruta.
 
-      1. Välj plats på menyn [!UICONTROL **Välj plats**] nedrullningsbar meny.
+      1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
       1. Välj [!UICONTROL **Spara**] > [!UICONTROL **Spara**].
 
@@ -200,13 +200,13 @@ När du skapar en datafeed kan du ge Adobe:
 
          | Fält |  -funktion |
          |---------|----------|
-         | [!UICONTROL **Kontonamn**] | Ett namn för Azure SAS-kontot. Det här namnet visas i [!UICONTROL **Välj konto**] och kan vara vilket namn du vill. |
-         | [!UICONTROL **Borttagning av konto**] | En beskrivning av Azure SAS-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] och kan vara vilket namn du vill. |
-         | [!UICONTROL **Program-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-         | [!UICONTROL **Klient-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+         | [!UICONTROL **Kontonamn**] | Ett namn för Azure SAS-kontot. Det här namnet visas i dialogrutan [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
+         | [!UICONTROL **Borttagning av konto**] | En beskrivning av Azure SAS-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
+         | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+         | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
          | [!UICONTROL **URI för nyckelvalv**] | <p>Sökvägen till SAS-token i Azure Key Vault.  Om du vill konfigurera Azure SAS måste du lagra en SAS-token som en hemlighet med Azure Key Vault. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>När nyckelvalvs-URI:n har skapats lägger du till en åtkomstprincip på nyckelvalvet för att ge behörighet till det Azure-program som du skapade. Mer information finns i [Microsoft Azure-dokumentation om hur du tilldelar en åtkomstprincip för nyckelvalv](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> |
-         | [!UICONTROL **Nyckelvalvets hemliga namn**] | Det hemliga namn du skapade när du lade till hemligheten i Azure Key Vault. I Microsoft Azure finns den här informationen i nyckelvalvet som du skapade på **Nyckelvalv** inställningssidor. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
-         | [!UICONTROL **Hemlighet**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+         | [!UICONTROL **Nyckelvalvets hemliga namn**] | Det hemliga namn du skapade när du lade till hemligheten i Azure Key Vault. I Microsoft Azure finns den här informationen i nyckelvalvet som du skapade på **Key Vault** inställningssidor. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
+         | [!UICONTROL **Hemlighet**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
 
          {style="table-layout:auto"}
 
@@ -214,8 +214,8 @@ När du skapar en datafeed kan du ge Adobe:
 
          | Fält |  -funktion |
          |---------|----------|
-         | [!UICONTROL **Namn**] | Ett namn för platsen. Det här namnet visas i [!UICONTROL **Välj plats**] och kan vara vilket namn du vill. |
-         | [!UICONTROL **Beskrivning**] | En beskrivning av platsen. Beskrivningen visas i [!UICONTROL **Välj plats**] och kan vara vilket namn du vill. |
+         | [!UICONTROL **Namn**] | Ett namn för platsen. Det här namnet visas i dialogrutan [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
+         | [!UICONTROL **Beskrivning**] | En beskrivning av platsen. Beskrivningen visas i [!UICONTROL **Välj plats**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Behållare**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. |
          | [!UICONTROL **Prefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
 
@@ -245,9 +245,9 @@ När du skapar en datafeed kan du ge Adobe:
 
    1. (Villkorligt) Om du tidigare har lagt till ett GCP-konto och en plats:
 
-      1. Välj konto på [!UICONTROL **Välj konto**] nedrullningsbar meny.
+      1. Välj konto på [!UICONTROL **Välj konto**] listruta.
 
-      1. Välj plats på menyn [!UICONTROL **Välj plats**] nedrullningsbar meny.
+      1. Välj plats på menyn [!UICONTROL **Välj plats**] listruta.
 
       1. Välj [!UICONTROL **Spara**] > [!UICONTROL **Spara**].
 
@@ -262,7 +262,6 @@ När du skapar en datafeed kan du ge Adobe:
          | [!UICONTROL **Kontonamn**] | Ett namn för kontot. Det kan vara vilket namn du vill. |
          | [!UICONTROL **Kontobeskrivning**] | En beskrivning av kontot. |
          | [!UICONTROL **Projekt-ID**] | Ditt projekt-ID för Google Cloud. Se [Google Cloud-dokumentation om hur du får ett projekt-ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |
-         | [!UICONTROL **kapitalbelopp**] | Huvudmannen tillhandahålls av Adobe. Du måste ge det här huvudkontot behörighet för att kunna ta emot feeds. Se [Google Cloud-dokumentation om hur du lägger till ett huvudnamn i en profil](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-iam). |
 
          {style="table-layout:auto"}
 
@@ -297,7 +296,7 @@ När du skapar en datafeed kan du ge Adobe:
    | [!UICONTROL **Inkluderade kolumner**] | De kolumner som ska inkluderas i en datafeed. Klicka [!UICONTROL Remove all] om du vill ta bort alla kolumner från en datafeed. |
    | [!UICONTROL **Hämta CSV**] | Hämtar en CSV-fil som innehåller alla inkluderade kolumner. |
 
-1. Välj [!UICONTROL **Spara**] i det övre högra hörnet.
+1. Välj [!UICONTROL **Spara**] överst till höger.
 
    Historisk databehandling påbörjas omedelbart. När data har bearbetats för en dag skickas filen till det mål som du konfigurerade.
 
@@ -314,12 +313,13 @@ Följande information innehåller konfigurationsinformation för var och en av d
 
 ### FTP
 
-Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kunder. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas; feeds genererar ett fel om den angivna sökvägen inte finns.
+Data från dataflöden kan levereras till en FTP-plats som är värd för Adobe eller kunder. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
 
 Använd följande information när du fyller i de tillgängliga fälten:
+
 * [!UICONTROL **Värd**]: Ange önskad mål-URL för FTP. Exempel, `ftp://ftp.omniture.com`.
 * [!UICONTROL **Bana**]: Kan lämnas tomt
-* [!UICONTROL **Användarnamn**]: Ange användarnamnet för att logga in på FTP-platsen.
+* [!UICONTROL **Användarnamn**]: Ange användarnamn för att logga in på FTP-platsen.
 * [!UICONTROL **Lösenord och bekräfta lösenord**]: Ange lösenordet för att logga in på FTP-platsen.
 
 ### SFTP
@@ -328,7 +328,7 @@ SFTP-stöd för dataflöden finns tillgängligt. Kräver att en SFTP-värd, ett 
 
 ### S3
 
-Du kan skicka feeds direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Se [Krav för Amazon S3-bucket-namngivning](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
+Du kan skicka feeds direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Se [Krav för Amazon S3-bucket](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
 
 Användaren som du anger för överföring av datafeeds måste ha följande [behörigheter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html):
 
@@ -346,7 +346,7 @@ Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det
 * us-east-1
 * us-west-1
 * us-west-2
-* ap-Southern-1
+* ap-soud-1
 * ap-northeast-2
 * ap-southeast-1
 * ap-southeast-2
@@ -365,7 +365,7 @@ Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det
 
 ### Azure Blob
 
-Datamatningar stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten för mer information.
+Datamatningar stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten om du vill ha mer information.
 
 >[!NOTE]
 >
