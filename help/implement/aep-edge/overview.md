@@ -3,9 +3,9 @@ title: Implementera Adobe Analytics med Adobe Experience Platform Edge
 description: Översikt över hur du använder XDM-data från Experience Platform i Adobe Analytics
 exl-id: 7d8de761-86e3-499a-932c-eb27edd5f1a3
 feature: Implementation Basics
-source-git-commit: d9948fbb63d44c851e08745c77af5618de84a89c
+source-git-commit: 5ebc53e8706f60988b289df060be9b02b5dc778f
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ Adobe erbjuder tre sätt att skicka data till Experience Edge:
 
 * **[Adobe Experience Platform Web SDK](web-sdk/overview.md)**: Använd Web SDK-tillägget i Adobe Experience Platform Data Collection för att skicka data till Edge.
 * **[Adobe Experience Platform Mobile SDK](mobile-sdk/overview.md)**: Använd SDK-tillägget för mobiler i Adobe Experience Platform Data Collection för att skicka data till Edge.
-* **[API för Edge Network Server](edge-api/overview.md)**: Skicka data direkt till Edge med ett API.
+* **[API för Adobe Experience Platform Edge Network Server](server-api/overview.md)**: Skicka data direkt till Edge med ett API.
