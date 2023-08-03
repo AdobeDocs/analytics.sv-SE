@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 05b4dc07de567b25e71b47fd92743bee0b5621f8
+source-git-commit: e17705adb6319a31f125cdff2810cbf79d85510c
 workflow-type: tm+mt
-source-wordcount: '4620'
-ht-degree: 27%
+source-wordcount: '4826'
+ht-degree: 26%
 
 ---
 
@@ -27,6 +27,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **Augusti 2023** | |
 | Adobe kundtjänst krävs inte för att konfigurera SFTP för dataflöden | Tydligare i [Skicka Adobe-data till ett externt FTP-konto med SFTP](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-transfer.md) som kunderna inte behöver kontakta Adobe kundtjänst för att konfigurera SFTP för dataflöden. <p>Dessutom lades ett meddelande till om att SFTP inte längre rekommenderas och att kunder bör använda ett molnmål när de konfigurerar datafeeds.</p> |
+| Dokumentationsförbättringar för direktuppspelningsmedia | Följande dokumentationsförbättringar har gjorts för Streaming Media: <ul><li>Uppdaterade [allmän översikt](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) för att förbättra klarheten och inkludera information om Customer Journey Analytics.</li><li>Uppdaterade [implementeringsöversikt](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/overview.html?lang=en) för att tydligt skilja mellan Edge-implementeringar och implementeringar som enbart innehåller analyser. Dessutom ingår diagram som illustrerar de olika implementeringsmetoderna.</li><li>Lagt till krav som är specifika för [Edge-implementeringar](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/edge-recommended/prerequisites-edge.html?lang=en) och [Implementeringar med enbart analys](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/analytics-only/prerequisites-analytics.html?lang=en). Uppdaterade även [allmänna krav](https://experienceleague.adobe.com/docs/media-analytics/using/getting-started/prereqs.html?lang=en).</li><li>Uppdaterade tabeller i [Hämta SDK:er för media, tillägg med taggar och OTT SDK:er](https://experienceleague.adobe.com/docs/media-analytics/using/getting-started/download-sdks.html?lang=en) artikel som innehåller nya kolumner för *Lösningar* och *Implementeringsmetod*.</li><li>Effektivt innehåll och smidigare organisering av artiklar i [Implementering](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/overview.html?lang=en) dokumentationsdelen. Detta inkluderade kategorisering av implementeringar med Edge och implementeringar med enbart analys.</li><li>En extra hierarkinivå som inte behövdes under har tagits bort [Spårning](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en) och lade till omdirigeringar för ändrade URL:er i det här avsnittet.</li><ul> |
 | **Juli 2023** | |
 | API för Adobe Experience Platform Edge Network Server | Mer omfattande dokumentation om när och hur datainsamlingen ska genomföras med Adobe Analytics med [API för Adobe Experience Platform Edge Network Server](../implement/aep-edge/server-api/overview.md). Om du till exempel implementerar datainsamling med Adobe Analytics i datorprogram, IoT-enheter, anger du de övre rutorna. |
 | Globalt företag-ID | Dokumenterad [hur du hittar det globala företags-ID:t](../admin/admin/company/web-services-admin.md) för det Analytics-företag du är inloggad på. Detta ID krävs för API:er i Analytics 2.0. |
