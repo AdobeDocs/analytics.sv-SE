@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 1c7dd6fad55acc579229f47d0b22ec50b80eb565
+source-git-commit: 05b4dc07de567b25e71b47fd92743bee0b5621f8
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 28%
+source-wordcount: '4620'
+ht-degree: 27%
 
 ---
 
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Augusti 2023** | |
+| Adobe kundtjänst krävs inte för att konfigurera SFTP för dataflöden | Tydligare i [Skicka Adobe-data till ett externt FTP-konto med SFTP](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-transfer.md) som kunderna inte behöver kontakta Adobe kundtjänst för att konfigurera SFTP för dataflöden. <p>Dessutom lades ett meddelande till om att SFTP inte längre rekommenderas och att kunder bör använda ett molnmål när de konfigurerar datafeeds.</p> |
 | **Juli 2023** | |
 | API för Adobe Experience Platform Edge Network Server | Mer omfattande dokumentation om när och hur datainsamlingen ska genomföras med Adobe Analytics med [API för Adobe Experience Platform Edge Network Server](../implement/aep-edge/server-api/overview.md). Om du till exempel implementerar datainsamling med Adobe Analytics i datorprogram, IoT-enheter, anger du de övre rutorna. |
 | Globalt företag-ID | Dokumenterad [hur du hittar det globala företags-ID:t](../admin/admin/company/web-services-admin.md) för det Analytics-företag du är inloggad på. Detta ID krävs för API:er i Analytics 2.0. |
