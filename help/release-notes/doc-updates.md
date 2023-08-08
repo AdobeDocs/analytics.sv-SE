@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: bf111fc5529692283bf6b341655e80498107633b
+source-git-commit: abd4d1a4b8076de225e37a375dfe387c998deb01
 workflow-type: tm+mt
-source-wordcount: '4838'
+source-wordcount: '4822'
 ht-degree: 26%
 
 ---
@@ -45,7 +45,6 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Deep Linking-dokumentation (mobilapp) | Tillåter användare att skicka länkar till styrkort som leder dem direkt till styrkortsprojektet i appen. [Läs mer](/help/analyze/mobile-app/create-scorecard.md#shareable-link) |
 | Dokumentation för den uppdaterade startskärmen för kontrollpanelsappen för Analytics (mobilapp) | På den nya uppdaterade startskärmen kan du visa alla dina styrkort i en konsoliderad styrkortslista. [Läs mer](/help/analyze/mobile-app/executive.md#use-dashboards) |
 | Spektrum-ikoner | Ersatt, där så är lämpligt, skärmdumpar av användargränssnittsikoner i dokumentationen med referenser till motsvarande ikoner i [Adobe Spectrum Design System](https://spectrum.adobe.com/page/icons/). |
-| Förbättrad mappning av IP-till-geopositionering | Skapade ett ämne [Vanliga frågor](https://experienceleague.adobe.com/docs/analytics/technotes/ip-geo-mapping.html?lang=en). |
 | Rapporteringsaktivitetshanteraren | Den här betatestningsdokumentationen har uppdaterats, särskilt avsnittet om [Visa rapporteringsaktivitet för enskilda rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/reporting-activity.html#view-reporting-activity-for-individual-report-suites). |
 | Översikt över Analysis Workspace | Uppdaterat [Analysis Workspace - översikt](/help/analyze/analysis-workspace/home.md) för att inkludera mer allmän översiktsinformation och länkar till relevant innehåll. |
 | Skapa projekt | Skapade en ny artikel som förklarar i detalj hur du [Skapa projekt](/help/analyze/analysis-workspace/build-workspace-project/create-projects.md) i Analysis Workspace. |
