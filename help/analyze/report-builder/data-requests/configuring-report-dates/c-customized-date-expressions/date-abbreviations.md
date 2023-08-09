@@ -5,7 +5,7 @@ uuid: 829d613e-5900-4586-a9fc-239988492d8b
 feature: Report Builder
 role: User, Admin
 exl-id: f2d19f3f-c663-4fa4-b6c1-fe0dcdfffe63
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Förkortningar av datum
 
-Tidsförkortningar avser ett visst datum när en punkt börjar, inte ett intervall med dagar. Ett intervall med dagar uttrycks genom att ange ett start- och ett slutdatum för två tidsförkortningar (eller termer).
+Tidsförkortningar avser ett visst datum när en punkt börjar, inte ett intervall med dagar. Ett intervall med dagar uttrycks genom att ange ett start- och ett slutdatum för två tidsförkortningar eller -termer.
 
 Mer information om hur du använder rätt syntax finns i [Syntaxanteckningar](/help/analyze/report-builder/data-requests/configuring-report-dates/c-customized-date-expressions/examples-of-date-ranges-using-customized-expressions.md#section_555D6563B2D94FA3BDD801DC0B8C289D).
 

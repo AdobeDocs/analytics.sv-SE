@@ -1,14 +1,14 @@
 ---
-description: Förutom de standardalternativ för cellformatering som är tillgängliga via Excel-funktionen Format > Celler (Ctrl+1) kan du använda begränsad formatering för cellintervall med Report Builder. Dessa formateringsalternativ beror på vilket mätvärde du har valt.
-title: Formatera datum
+description: Lär dig hur du använder standardformatering och begränsad formatering i cellintervall.
+title: Formatera datumet i Report Builder
 uuid: 5211db30-07b3-4413-97c3-e40e6ff223cd
 feature: Report Builder
 role: User, Admin
 exl-id: 9b251b09-9156-40b5-8e1f-fb6594a25c26
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 6%
+source-wordcount: '245'
+ht-degree: 5%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 6%
 
 Förutom de standardalternativ för cellformatering som är tillgängliga via Excel-funktionen Format > Celler (Ctrl+1) kan du använda begränsad formatering för cellintervall med Report Builder. Dessa formateringsalternativ beror på vilket mätvärde du har valt.
 
-Efter [lägg till dimensioner](/help/analyze/report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md) till stödrastret Radetiketter klickar du på **[!UICONTROL Format]**.
+Efter dig [lägg till dimensioner](/help/analyze/report-builder/layout/c-metrics-dimensions/t-add-metrics-and-dimensions.md) till stödrastret Radetiketter klickar du på **[!UICONTROL Format]**.
 
-I **[!UICONTROL Format]** meny, klicka **[!UICONTROL Custom Format]** om du vill använda anpassade format för datum som liknar prepend- och postpend-funktionen. Du kan t.ex. ange text som alltid infaller efter datumet (t.ex. A.D. B.C.E. A.H. osv.). Du kan lägga till text före datumet, till exempel [!UICONTROL Start Date] och [!UICONTROL Start and End Date]. Dessutom kan du skapa ett anpassat datumuttryck från dag-, månad- och årsförkortningar samt använda en egen avgränsare mellan delar av datumet. Alla datumformat måste bestå av tre förkortningar inom parentes.
+I **[!UICONTROL Format]** meny, klicka **[!UICONTROL Custom Format]** om du vill använda anpassade format för datum som liknar prepend- och postpend-funktionen. Du kan t.ex. ange text som alltid infaller efter datumet (t.ex. A.D. B.C.E. A.H.). Du kan lägga till text före datumet, till exempel [!UICONTROL Start Date] och [!UICONTROL Start and End Date]. Dessutom kan du skapa ett anpassat datumuttryck från dag-, månad- och årsförkortningar samt använda en egen avgränsare mellan delar av datumet. Alla datumformat måste bestå av tre förkortningar inom parentes.
 
 I följande tabell beskrivs hur du kan använda datumförkortningar i [!UICONTROL Custom Format] fält:
 
@@ -35,4 +35,4 @@ I följande tabell beskrivs hur du kan använda datumförkortningar i [!UICONTRO
 | ddd | Kort namn på dagen | Wed |
 | dddd | Dagens långa namn | onsdag |
 | yy | Tvåsiffrigt år | 10 |
-| yyyy | Fullständigt fyrsiffrigt årtal | 2012 |
+| yyyy | Fullständigt fyrsiffrigt år | 2012 |

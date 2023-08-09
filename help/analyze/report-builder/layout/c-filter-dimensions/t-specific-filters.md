@@ -5,10 +5,10 @@ uuid: b3a8187a-3d59-4da0-abca-e933664332e3
 feature: Report Builder
 role: User, Admin
 exl-id: e5f2d67c-3add-4d51-8a76-ee3b2a6eef94
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 2%
+source-wordcount: '308'
+ht-degree: 1%
 
 ---
 
@@ -16,23 +16,25 @@ ht-degree: 2%
 
 Filter som använder specifika dimensionsvillkor.
 
-Du kan söka efter specifika dimensionsobjekt genom att skapa ett filter som matchar exakta villkor. Du kan till exempel skapa följande typ av filter: sida in [!DNL homepage.htm], [!DNL contact_us.html], [!DNL corporate_info.html].
+Du kan söka efter specifika dimensionsobjekt genom att skapa ett filter som matchar exakta villkor. Du kan till exempel skapa följande typ av filter: sida i [!DNL homepage.htm], [!DNL contact_us.html], [!DNL corporate_info.html].
 
 **Skapa ett specifikt filter**
 
 1. Skapa eller redigera en förfrågan och gå vidare till [!UICONTROL Request Wizard: Step 2].
 
-   ![Stegresultat](/help/admin/admin/assets/filter.png)
+   ![Skärmbild som visar Filtrera efter alternativ: Program, Användare och Projekt.](/help/admin/admin/assets/filter.png)
 
 1. På [!UICONTROL Request Wizard: Step 2]klickar du på länken bredvid dimensionen i rutnätet och väljer **[!UICONTROL Filter]**.
 
-   ![Stegresultat](assets/choose_page_specific01.png)
+1. Aktivera **[!UICONTROL Specific]**.
 
-1. Aktivera **[!UICONTROL Specific]** aktiverar du sedan något av följande alternativ:
+   ![Skärmbild av dialogrutan Välj sida med alternativet Specifik markerat.](assets/choose_page_specific01.png)
+
+1. Aktivera ett av följande specifika alternativ:
 
    * **Från cellintervall:** Gör att du kan markera data från celler. Du kan välja:
-   * **Alla celler i intervallet:** Här kan du mappa varje cell för intervallet. Beskrivande text förklarar hur många grupper av celler du måste markera. Om du vill mappa mer än en grupp med celler trycker du på Ctrl-tangenten när du gör successiva markeringar. Om intervallet som måste mappas bara innehåller en cell är detta det enda tillgängliga alternativet
-   * **Intervallets första cell:** Du behöver bara markera cellen längst upp till vänster i intervallet och sedan välja riktning för data. Om begäran innehåller flera punkter väljer du riktning för punkterna och väljer om du vill hoppa över ett visst antal celler mellan punkterna.
+      * **Alla celler i intervallet:** Här kan du mappa varje cell för intervallet. Beskrivande text förklarar hur många grupper av celler du måste markera. Om du vill mappa mer än en grupp med celler trycker du på Ctrl-tangenten när du gör successiva markeringar. Om intervallet som måste mappas bara innehåller en cell är detta det enda tillgängliga alternativet
+      * **Intervallets första cell:** Du behöver bara markera cellen längst upp till vänster i intervallet och sedan välja riktning för data. Om begäran innehåller flera punkter väljer du riktning för punkterna och väljer om du vill hoppa över ett visst antal celler mellan punkterna.
    * **Från lista:** Gör att du kan välja data från en lista som du kan lägga till data i.
 1. Om du aktiverar **[!UICONTROL From List]** markerar du alla tillgängliga listobjekt eller klickar på **[!UICONTROL Add]**.
 

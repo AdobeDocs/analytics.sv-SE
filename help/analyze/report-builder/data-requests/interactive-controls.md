@@ -4,9 +4,9 @@ title: Interaktiva kontroller
 feature: Report Builder
 role: User, Admin
 exl-id: 2340ff31-1478-4a54-a4c3-c51e73c39109
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -23,10 +23,9 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 >[!IMPORTANT]
 >
 >Du måste ha Report Builder v5.0 installerat för att de interaktiva kontrollerna ska fungera. >
->* Om du kör Microsoft Excel i Windows men kör en äldre version av Report Builder, eller om du inte har Report Builder installerat: Du kan ändra värdet i den interaktiva kontrollen, men det kommer inte att uppdatera den associerade begäran eller uppdatera de associerade parametrarna för begäran.
+>* Om du kör Microsoft Excel i Windows men kör en äldre version av Report Builder, eller om du inte har Report Builder installerat: Du kan ändra värdet i den interaktiva kontrollen, men den associerade begäran uppdateras inte eller så uppdateras förfrågningens associerade parametrar.
 >* Om du kör Excel på Mac och ändrar värdet i kontrollen visas följande meddelande: &quot;Det går inte att hitta makrot &quot;Adobe.ReportBuilder.Bridge.FormControlClick.Event&quot;.&quot;
 >
-
 
 >[!WARNING]
 >
@@ -37,11 +36,11 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 1. I steg 1 i begärandeguiden väljer du till exempel **[!UICONTROL Page]** rapport.
 1. Intill **[!UICONTROL Commonly Used Dates]** nedrullningsbar meny, klicka på **[!UICONTROL Control Settings]** ikon:
 
-   ![](assets/date_range_control.png)
+   ![Skärmbild av Request Wizard Steg 1 som markerar ikonen Control Settings (Kontrollinställningar). ](assets/date_range_control.png)
 
-1. I dialogrutan Kontrollinställningar markerar du alla datumintervallobjekt som du vill ska visas i den interaktiva kontrollen. Ange dessutom kontrollens övre vänstra cellplacering.
+1. I dialogrutan Kontrollinställningar markerar du alla datumintervallobjekt som du vill ska visas i den interaktiva kontrollen. Ange dessutom kontrollens placering i den övre vänstra cellen.
 
-   ![](assets/control_settings.png)
+   ![Skärmbild som visar de valda datumintervallobjekten och cellens övre vänstra placering.](assets/control_settings.png)
 
 1. Observera alternativet &quot;Uppdatera länkade begäranden automatiskt när objekt väljs&quot;.
 
@@ -50,18 +49,19 @@ Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där ana
 
 1. Klicka på **[!UICONTROL OK]**. Kontrollen visas på den cellplats som du har angett:
 
-   ![](assets/date_range_control_interactive.png)
-
 1. Du kan nu ändra datumintervallet och begäran uppdateras med det datumintervallet.
+
+   ![Skärmbild som visar det valda datumintervallet.](assets/date_range_control_interactive.png)
+
 1. Du kan också kopiera begäran och högerklicka för att använda ett av två alternativ för Klistra in begäran:
 
    * **[!UICONTROL Paste Request]** > **[!UICONTROL Use Absolute Input Cell]**. Det innebär att den kopierade begäran pekar på samma interaktiva datumintervallkontroll som den ursprungliga begäran.
 
    * **[!UICONTROL Paste Request]**> **[!UICONTROL Use Relative input Cell]**. Det innebär att den kopierade begäran pekar på sin egen kontroll.
 
-      >[!NOTE]
-      >
-      >Du kan använda den inbyggda funktionen Klipp ut/Kopiera/Klistra in i Microsoft Excel. Report builder känner automatiskt igen de nya kontrollerna.
+     >[!NOTE]
+     >
+     >Du kan använda den inbyggda funktionen Klipp ut/Kopiera/Klistra in i Microsoft Excel. Report builder känner automatiskt igen de nya kontrollerna.
 
 ## Implementera interaktiv segmentkontroll {#section_5003D3F724644280BF1BCD6E1B0CB784}
 
@@ -69,12 +69,12 @@ Att implementera den interaktiva segmentkontrollen liknar att implementera datum
 
 1. I steg 1 i begärandeguiden, bredvid **[!UICONTROL Segment]** väljer du ikonen Inställningar för segmentkontroll:
 
-   ![](assets/segment_interactive_1.png)
+   ![Skärmbild av ikonen Inställningar för segmentkontroll.](assets/segment_interactive_1.png)
 
-1. I dialogrutan Inställningar för segmentkontroll markerar du de segment som du vill ta med i listrutan. Ange dessutom kontrollens övre vänstra cellplacering.
+1. I dialogrutan Inställningar för segmentkontroll markerar du de segment som du vill ta med i listrutan. Ange dessutom kontrollens placering i den övre vänstra cellen.
 
-   ![](assets/segment_drop_down_properties.png)
+   ![Skärmbild som visar inställningar för segmentkontroll med valda segment och cellens placering.](assets/segment_drop_down_properties.png)
 
 1. Den nya interaktiva kontrollen visas nu i arbetsboken:
 
-   ![](assets/segment_interactive_3.png)
+   ![Skärmbild med den nya interaktiva kontrollen vald.](assets/segment_interactive_3.png)

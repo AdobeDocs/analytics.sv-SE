@@ -5,10 +5,10 @@ uuid: b161948c-c71c-4757-8348-15577fc61042
 feature: Report Builder
 role: User, Admin
 exl-id: 0ae7887f-29bf-4565-9ca0-20b77a3a70cb
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 12%
+source-wordcount: '74'
+ht-degree: 13%
 
 ---
 
@@ -23,4 +23,6 @@ Förkortningar för start- och slutdatum.
 * cd-2d = för två dagar sedan
 * cw-2w = första dagen i veckan, för två veckor sedan
 
-Observera att om du anger datumet till ett framtida datum returneras inga värden för framtida datum.
+>[!NOTE]
+>
+>Om du anger datumet till ett framtida datum returneras inga värden.

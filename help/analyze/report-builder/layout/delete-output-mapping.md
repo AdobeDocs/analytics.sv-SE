@@ -1,14 +1,14 @@
 ---
-description: Om du redigerar arbetsboken och vill ge plats för nya begäranden kan du behöva ta bort begäranden.
-title: Ta bort utdatamappning
+description: Lär dig hur du redigerar en arbetsbok för att frigöra utrymme för nya begäranden genom att ta bort begäranden.
+title: Så här tar du bort utdatamappning
 uuid: a6805800-4cb9-4ccc-aada-198a15def643
 feature: Report Builder
 role: User, Admin
 exl-id: 88afef3b-1559-453b-a8e2-7251ef8c82ec
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 4%
+source-wordcount: '119'
+ht-degree: 2%
 
 ---
 

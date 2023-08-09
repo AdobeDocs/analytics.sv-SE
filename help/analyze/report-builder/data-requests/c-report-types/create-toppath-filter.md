@@ -4,10 +4,10 @@ title: Filtrera sökvägsrapporter genom att lägga till underordnade förfrågn
 feature: Report Builder
 role: User, Admin
 exl-id: 41aca5a4-7bda-4be5-ae93-a6d1dae6a554
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 8%
+source-wordcount: '183'
+ht-degree: 7%
 
 ---
 
@@ -29,12 +29,10 @@ Report Builder erbjuder inte dessa som fristående rapporter, men du kan skapa d
 * Sökväg > Sökväg till posten > Som startsida
 * Bana > Avsluta bana > Som avslutningssida
 
-1. Markera flera rader i en befintlig begäran och högerklicka sedan **[!UICONTROL Add Dependent Request]** > **[!UICONTROL Path]**.
+1. Markera flera rader i en befintlig begäran och högerklicka sedan **[!UICONTROL Add Dependent Request]** > **[!UICONTROL Path]**. Om du vill se **[!UICONTROL Page Fallout]** menyalternativ.
 
-   (Observera att du måste markera minst tre rader om du vill att **[!UICONTROL Page Fallout]** menyalternativ.)
+   ![Skärmbild med tre markerade rader med alternativet Lägg till beroende begäran markerat.](assets/dependen_request.png)
 
-   ![](assets/dependen_request.png)
+2. Välj till exempel det fördefinierade filtret **[!UICONTROL Previous Page]**.
 
-1. Välj t.ex. det fördefinierade filtret **[!UICONTROL Previous Page]**.
-
-   Begärandeguiden visas med måttet Föregående sida markerat. 1. Fortsätt att förfina din begäran i Request Wizard och generera din begäran.
+   Begärandeguiden visas med måttet Föregående sida markerat. 1. Fortsätt att förfina din begäran i begärandeguiden och generera din begäran.

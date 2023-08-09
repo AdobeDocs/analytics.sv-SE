@@ -1,14 +1,14 @@
 ---
-description: I en referensbegäran används värden från celler som indata för parametrar, till exempel ett datafilter eller relationsfilter.
-title: Kopiera referensförfrågningar
+description: Lär dig hur du kopierar referensbegäranden.
+title: Så här kopierar du referensförfrågningar
 uuid: b6f64630-868f-455b-8682-471ff9fc596e
 feature: Report Builder
 role: User, Admin
 exl-id: 3cd77325-7461-4345-a672-64c03ea1ae5b
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 1%
+source-wordcount: '521'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 1%
 
 I en referensbegäran används värden från celler som indata för parametrar, till exempel ett datafilter eller relationsfilter.
 
-Du måste ha skapat minst en giltig begäran i kalkylbladet för att kunna sprida eller kopiera och klistra in referensbegäranden i kalkylbladet. Dessutom måste de data som skapas i begäran innehålla en cell vars värde är beroende av antingen en begäran i en annan cell (med ett nedbryt- eller matchningsfilter) eller av ett filter som hämtar indata från data som anges i en cell.
+Så här sprider eller kopierar och klistrar du in referensförfrågningar i kalkylbladet:
+* Du måste skapa minst en giltig begäran i kalkylbladet.
+* De data som tas fram av begäran måste innehålla en cell vars värde är beroende av antingen en begäran i en annan cell (med ett nedbrytnings- eller matchningsfilter) eller beroende av ett filter som hämtar indata från data som anges i en cell.
 
 Du kan också skapa begäranden som refererar till indatafilter från begäranden i olika kalkylblad, men inte i olika arbetsböcker. En begäran i Sheet 2 kan t.ex. använda en rapportsvit från en viss cell i Sheet 1 och ett datumintervall från en cell i en begäran i Sheet 2. De nya utdata kan placeras antingen i ett blad eller i ett nytt blad i samma arbetsbok. När du klistrar in en relativ begäran, och ett indatafilter finns på ett kalkylblad som inte är det kalkylblad där den kopierade begäran finns, klistras filtret in som ett absolut filter.
 
@@ -27,7 +29,7 @@ Du kan också skapa begäranden som refererar till indatafilter från begärande
 **Så här kopierar du referensbegäranden**
 
 1. Markera cellerna som innehåller förfrågningar som du vill kopiera, inklusive indatacellen eller refererad till cellen.
-1. Högerklicka i de markerade cellerna och markera **[!UICONTROL Copy Requests]** på snabbmenyn.
+1. Högerklicka i de markerade cellerna och markera **[!UICONTROL Copy Requests]** på kortkommandomenyn.
 
    När du har markerat området där förfrågningar och indataceller finns markeras cellerna med dessa element.
 1. Markera antingen en cell eller ett intervall med sammanhängande celler som ska fyllas med de inklistrade förfrågningarna.

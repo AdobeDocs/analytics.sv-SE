@@ -4,22 +4,22 @@ title: Dataförfrågningar – frågeguiden steg 1
 feature: Report Builder
 role: User, Admin
 exl-id: 698662a8-8b6b-4338-a315-b41cf6a9424e
-source-git-commit: d5d4d1c9274bba8c3a40ee8fe86da311c1d1220b
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '363'
 ht-degree: 3%
 
 ---
 
 # Dataförfrågningar – frågeguiden steg 1
 
-I Request Wizard: Steg 1-formulär väljer du rapportsviten, rapporttyp, segment och konfigureringsdatum.
+I begärandeguiden: Steg 1 väljer du rapportsviten, rapporttyp, segment och konfigureringsdatum.
 
-![](assets/rw1_overview.png)
+![Skärmbild som visar Request Wizard: Steg 1.](assets/rw1_overview.png)
 
 1. **[!UICONTROL Report Suite]**: Listan med rapportsviter som är tillgängliga för dig baserat på dina inloggningsuppgifter. Se [Välj rapportsviter](/help/analyze/report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
 
-1. **Intervallväljare**: Gör att du kan välja ett rapportpaket-ID från en cell i Excel. Se [Välj rapportsviter](/help/analyze/report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
+1. **Intervallväljare**: Gör att du kan välja ett rapportsvits-ID från en cell i Excel. Se [Välj rapportsviter](/help/analyze/report-builder/data-requests/selecting-report-suites/t-select-report-suites.md).
 
 1. **Segment**: Segment är anpassade datadeluppsättningar eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Se [Segmenteringshandbok för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) för mer information om segment.
 

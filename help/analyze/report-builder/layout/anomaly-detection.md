@@ -1,13 +1,13 @@
 ---
-description: Analysidentifiering använder statistisk modellering för att automatiskt hitta oväntade trender i dina data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. När en oväntad krökning eller släppning inträffar visas en varning i rapporten.
-title: Avvikelseidentifiering
+description: Lär dig mer om avvikelseidentifiering och hur det beräknas.
+title: Hur avvikelseidentifiering används för att automatiskt hitta trender
 uuid: 02da21b4-3394-471b-97b5-aa1bddf1f445
 feature: Report Builder
 role: User, Admin
 exl-id: 6e3881c8-3e1c-4df8-ba38-e8bc84cfc3d4
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---

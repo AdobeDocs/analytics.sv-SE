@@ -1,19 +1,19 @@
 ---
-description: Report Builder 5.2 stöder Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
+description: Report Builder 5.2 har stöd för Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
 title: Beräknade mätvärden
 feature: Report Builder
 role: User, Admin
 exl-id: 462086eb-675f-443c-b3a6-b4fa390254da
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 12%
 
 ---
 
 # Beräknade mätvärden
 
-Report Builder 5.2 stöder Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
+Report Builder 5.2 har stöd för Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
 
 >[!NOTE]
 >
@@ -25,13 +25,13 @@ I steg 2 i begärandeguiden kan du filtrera och använda beräknade värden.
 
 ## Filtrera beräknade värden {#section_376E986D3E684999A7CDB08E53854159}
 
-**Filter** beräknade mätvärden genom att klicka på filterikonen:  ![](/help/admin/admin/assets/filter.png)
+**Filter** beräknade mätvärden genom att klicka på filterikonen:  ![Skärmbild med filteralternativen som visar fälten Program, Användare och Projekt.](/help/admin/admin/assets/filter.png)
 
-. Dialogrutan Avancerade filter innehåller både standardvärden och beräknade värden.
+Dialogrutan Avancerade filter innehåller både standardvärden och beräknade värden.
 
 Tillgängliga filter:
 
-![](assets/advanced_filters.png)
+![Skärmbild som visar de avancerade filteralternativen som beskrivs i följande tabell.](assets/advanced_filters.png)
 
 | Filternamn | Beskrivning |
 |---|---|
@@ -47,4 +47,4 @@ Tillgängliga filter:
 
 När du har valt filter klickar du på **[!UICONTROL Apply]** för att tillämpa dem på din begäran. De valda måtten läggs nu till i rapportlayouten.
 
-![](assets/filtering_for_metric.png)
+![Skärmbild som visar begärandeguiden Steg 2 - Webbplatssummor som pekar på fönstret Avancerade filter och tillämpade rapportvärden.](assets/filtering_for_metric.png)

@@ -5,10 +5,10 @@ uuid: c54d5add-f278-476d-8f14-73f1c2e37671
 feature: Report Builder
 role: User, Admin
 exl-id: eded07d5-3c06-419b-92fd-1a48856ac293
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 9%
+source-wordcount: '444'
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,7 @@ Det valda filterformuläret fylls i baserat på det element och mått som valts 
 
 Information om filter i **[!UICONTROL Most Popular Filter]** > **[!UICONTROL Define Filter]** -panelen.
 
-![](/help/admin/admin/assets/filter.png)
+![Skärmbild som visar dialogrutan Definiera filter med alternativ för att filtrera efter program, användare och projekt.](/help/admin/admin/assets/filter.png)
 
 Följande tabeller innehåller exempel och information om filter:
 
@@ -119,7 +119,7 @@ Följande tabeller innehåller exempel och information om filter:
   <tr> 
    <td colname="col1"> " " </td> 
    <td colname="col2"> Är lika med </td> 
-   <td colname="col3"> <p>Inte escape-konverterad om den inte paras med ett annat citattecken. Till exempel: <span class="term"> 17-tums bildskärm</span> är inte en fras. </p> </td> 
+   <td colname="col3"> <p>Inte escape-konverterad om den inte paras med en annan citattecken. Till exempel: <span class="term"> 17-tums bildskärm</span> är inte en fras. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> * </td> 

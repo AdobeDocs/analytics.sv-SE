@@ -5,10 +5,10 @@ uuid: 9ea1b790-9c3d-4511-8580-bb11d9003d50
 feature: Report Builder
 role: User, Admin
 exl-id: 818fc9ca-aa78-4a21-abd7-8e3144f5d1c0
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 9%
+source-wordcount: '110'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +23,7 @@ Så här konfigurerar du begärandedatum i realtid:
 
 1. Välj ett tidsintervall i minuter eller timmar.
 
-   ![Stegresultat](assets/real_time_select_date.png)
+   ![Skärmbild som visar alternativen för Välj tidsintervall med de senaste 60 minuterna markerade.](assets/real_time_select_date.png)
 
    Realtidsrapportering är bara tillgänglig de senaste 20 timmarna. För granularitet kan du välja mellan 1 minuts granularitet och 30 minuter.
-1. Klicka **[!UICONTROL Next]** och fortsätta [konfigurera begärandelayouten](/help/analyze/report-builder/layout/layout.md).
+1. Klicka **[!UICONTROL Next]** och fortsätta [konfigurera begärandelayout](/help/analyze/report-builder/layout/layout.md).

@@ -1,24 +1,23 @@
 ---
-description: Adobe Analytics Content Packs innehåller färdiga Power BI-kontrollpaneler och en uppsättning Power BI-rapporter som ger insikter om webbplatstrafiken och användardimensionerna. Du kan använda kontrollpanelen och de rapporter som tillhandahålls, eller anpassa dem för att framhäva den information du är mest intresserad av. Data uppdateras automatiskt en gång om dagen.
-title: Adobe Analytics-innehållspaket för Power BI
+description: Läs om Adobe Analytics Content Packs och de färdiga Power BI-panelerna och rapporterna.
 feature: Report Builder
 role: User, Admin
 exl-id: 835b24e2-0959-4aab-83c0-ba89badfc294
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 10%
+source-wordcount: '105'
+ht-degree: 8%
 
 ---
 
 # Adobe Analytics-innehållspaket för Power BI
 
-Adobe Analytics Content Packs innehåller färdiga Power BI-kontrollpaneler och en uppsättning Power BI-rapporter som ger insikter om webbplatstrafiken och användardimensionerna. Du kan använda kontrollpanelen och de rapporter som tillhandahålls, eller anpassa dem för att framhäva den information du är mest intresserad av. Data uppdateras automatiskt en gång om dagen.
+Adobe Analytics Content Packs innehåller färdiga Power BI-kontrollpaneler och en uppsättning Power BI-rapporter som ger insikter om webbplatstrafiken och användardimensionerna. Du kan använda kontrollpanelen och de rapporter som tillhandahålls, eller anpassa dem för att framhäva den information du är mest intresserad av. Informationen uppdateras automatiskt en gång om dagen.
 
-3 innehållspaket är tillgängliga:
+Tre innehållspaket är tillgängliga:
 
 * Adobe Analytics
 * Adobe Analytics Mobile App Analytics
 * Adobe Analytics Traffic Analysis
 
-Mer information finns i [Adobe Analytics content pack for Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-content-pack-adobe-analytics/) dokumentation.
+Mer information finns i [Adobe Analytics content pack for Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-content-pack-adobe-analytics/).

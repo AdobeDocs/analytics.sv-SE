@@ -4,9 +4,9 @@ title: Hantera segment (Report Builder)
 feature: Report Builder
 role: User, Admin
 exl-id: c4ad89e0-91c9-47e1-a226-69d82fdb8918
-source-git-commit: 644e2d10eac226a35705351608161fe494efe113
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Så här lägger du till, redigerar, tillämpar och filtrerar Adobe Analytics-se
 
 Report Builder har en segmenteringspanel i steg 1 i begärandeguiden där du kan skapa och hantera segment.
 
-![](assets/seg_dialog.png)
+![Skärmbild som visar segmentalternativen Lägg till, Redigera eller Rensa segment och markerar ikonerna Kontroll, Filter och Uppdatera.](assets/seg_dialog.png)
 
 ## Lägga till eller redigera segment {#section_B2BC136F9A53498D90C7C2ECC5DB892B}
 
@@ -41,7 +41,7 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 1. Markera de rapportutdataobjekt som du vill omvandla till ett segment.
 1. Högerklicka för att markera **[!UICONTROL Create In-Context Segment in]** och ange rätt behållare (träffar-behållare, besöksbehållare, besöksbehållare).
 
-   ![](assets/seg_in_context.png)
+   ![Skärmbild som visar Skapa kontextsegment i valda och tillgängliga behållaralternativ.](assets/seg_in_context.png)
 
    Mer information om behållare finns i [Segmenteringshandbok](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html).
 
@@ -58,9 +58,9 @@ Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar 
 
 1. Gå till **[!UICONTROL Segment]** nedrullningsbar lista och klicka på den lilla nedåtpilen i **[!UICONTROL Choose Segment]** om du vill visa alla segment.
 
-   ![](assets/seg_list.png)
+1. Kontrollera vilka segment du vill använda.
 
-2. Kontrollera vilka segment du vill använda.
+   ![Skärmbild med valda segment.](assets/seg_list.png)
 
 >[!NOTE]
 >
@@ -88,18 +88,20 @@ Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbo
 
 1. Klicka på ikonen Kontroll ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) bredvid segmentlistrutan.
 
-   ![](assets/seg_control.png)
+1. Markera alla segment som du vill ska visas i segmentkontrollen eller markera **[!UICONTROL Select All]**.
 
-2. Markera alla segment som du vill ska visas i segmentkontrollen eller markera **[!UICONTROL Select All]**.
-3. Lägg märke till alternativet **[!UICONTROL Automatically refresh linked requests upon item selection]**.
+   ![Skärmbild av dialogrutan Kontrollinställningar med alla inställningar markerade.](assets/seg_control.png)
+
+1. Lägg märke till alternativet **[!UICONTROL Automatically refresh linked requests upon item selection]**.
 
    * Om det här alternativet är markerat uppdateras alla begäranden som använder den här kontrollen.
    * Om den inte är markerad uppdateras de associerade parametrarna för begäran, men förfrågningarna uppdateras inte.
 
-4. Ange segmentkontrollens övre vänstra cellplacering.
-5. Klicka **[!UICONTROL OK]** och segmentkontrollen visas på den angivna platsen.
+1. Ange segmentkontrollens övre vänstra cellplacering.
 
-   ![](assets/seg_control2.png)
+1. Klicka **[!UICONTROL OK]** och segmentkontrollen visas på den angivna platsen.
+
+   ![Skärmbild med listrutan Välj segment.](assets/seg_control2.png)
 
 ## Uppdatera listan med segment {#section_22E4A86789444B4A998532396B476EFB}
 
@@ -114,7 +116,7 @@ Med Report Builder 5.4 kan du lägga till, ta bort, ersätta och ersätta alla s
 1. Markera flera begäranden i en arbetsbok.
 1. Högerklicka och välj **[!UICONTROL Edit Requests]** > **[!UICONTROL By Segment]**.
 
-   ![](assets/edit_by_segment.png)
+   ![Skärmbild med Redigera begäranden och Efter segment valt.](assets/edit_by_segment.png)
 
 1. I dialogrutan Redigera grupp väljer du ett av de fyra alternativen:
 

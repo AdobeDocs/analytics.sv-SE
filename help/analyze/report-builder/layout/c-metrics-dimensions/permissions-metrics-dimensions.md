@@ -5,22 +5,22 @@ uuid: b561407d-c4fa-4f1e-8b16-5ca46fcbf36f
 feature: Report Builder
 role: User, Admin
 exl-id: 53cfdcf4-31c3-40ab-aca4-8f0f9be6fe13
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '225'
 ht-degree: 6%
 
 ---
 
 # Behörigheter för användaråtkomst till dimensioner och mätvärden
 
-Adobe Report Builder har nu samma behörighetsinställningar som i administrationsverktygen för Analytics.
+Adobe Report Builder har behörighetsinställningar som liknar dem i administrationsverktygen för Analytics.
 
 Som icke-admin-användare kan du tidigare ha skapat arbetsböcker med förfrågningar som pekar på dimensioner och mått som du inte har tillgång till. Dessa behörigheter används nu.
 
-Om du till exempel uppdaterar en begäran som innehåller dimensioner eller mått som du inte har tillgång till, får du ett felmeddelande om begränsad behörighet:
+Om du till exempel uppdaterar en begäran som innehåller dimensioner eller mått som du inte har tillgång till, får du ett felmeddelande om begränsad behörighet. Felmeddelandet anger att en begäran inte är tillgänglig för ditt användarkonto på grund av administratörsbehörighet.
 
-![](assets/arb_restrc_perm.png)
+![Skärmbild som visar felmeddelandet Begränsad behörighet.](assets/arb_restrc_perm.png)
 
 Följ dessa instruktioner för att **var** Report Builder som du underhåller:
 

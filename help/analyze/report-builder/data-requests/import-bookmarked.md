@@ -4,9 +4,9 @@ title: Importera bokmärkta rapporter och minirapporter från kontrollpaneler
 feature: Report Builder
 role: User, Admin
 exl-id: 19813950-2495-4a75-aacb-587b59bf2484
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '350'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ När du väljer en rapport med bokmärken fylls alla dimensioner och mått som d
 
 Så här visar begärandeguiden steg 1 en kontrollpanel och dess rapportplatser:
 
-![](assets/import_dashboard_reportlet.png)
+![Skärmbild som visar Request Wizard Steg 1 av 2 med markering Hämta dina instrumentpaneler och Hämta dina bokmärken.](assets/import_dashboard_reportlet.png)
 
 När du klickar **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Retrieve your Bookmarks]** hämtar och klistrar dina befintliga data från kontrollpanelen och/eller bokmärket in i kalkylbladet.
 
@@ -31,7 +31,7 @@ När du klickar **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Re
 >
 >Endast data importeras, så om bokmärket innehåller ett diagram, eller om kontrollpanelens rapportlåt bara består av ett diagram, importeras endast de data som används för att fylla diagrammet.
 
-När du har skapat en begäran genom att importera en kontrollpanelsrapport (eller ett bokmärke) kopplas begäran sedan till rapportletens (eller bokmärkets) primära dimension. Om du redigerar begäran kommer trädvyn därför inte längre att välja trädvisningsnoden (eller bokmärkesnoden) för kontrollpanelsrapporten: i stället väljs dess primära dimension.
+När du har skapat en begäran genom att importera en kontrollpanelsrapport (eller ett bokmärke) kopplas begäran sedan till rapportletens (eller bokmärkets) primära dimension. Om du redigerar begäran markeras därför inte längre trädvisningsnoden (eller bokmärkesnoden) för kontrollpanelsrapportletten, utan den primära dimensionen väljs i stället.
 
 Det importerade bokmärkesschemat ställer in rapportsviten, det valda segmentet, dimensionen och valda mätvärden på samma parametrar som visas i bokmärket Rapporter och analyser.
 

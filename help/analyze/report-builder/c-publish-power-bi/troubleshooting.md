@@ -4,9 +4,9 @@ title: Felsöka Power BI-integrering
 feature: Report Builder
 role: User, Admin
 exl-id: adb13a0e-99fb-48f5-add2-204d155e467f
-source-git-commit: f6f65f34c4d8caf04eb3ea47108e36e5b9adf24f
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '409'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Varje schemalagd Report Builder-aktivitet får tre försök per schemalagd körn
 
 * Efter det första misslyckade försöket får du följande meddelande: &quot;&quot;Det gick inte att publicera den schemalagda arbetsboken på Microsoft Power BI. Vi kommer att försöka igen inom kort.&quot;
 * Efter det andra misslyckade försöket får du inget meddelande.
-* Efter det tredje misslyckade försöket får du följande meddelande: &quot;Det gick inte att publicera arbetsboken på Power BI.&quot;
+* Efter det tredje misslyckade försöket får du följande meddelande:&quot;Det gick inte att publicera arbetsboken på Power BI.&quot;
 
 ## Brutna visualiseringar i Power BI
 
@@ -35,13 +35,14 @@ Här är de viktigaste skälen till varför du kan få brutna visualiseringar ef
 * Du redigerade en begäran i Report Builder, till exempel om att ändra mått och mått, och publicerade sedan om den till Power BI. Om du redigerar begäranden kan visualiseringarna gå förlorade.
 * Du tog bort en begäran som användes i en visualisering.
 
-## Report Builder måste ha behörighet att komma åt organisationens resurser. Den här åtkomsten kan bara beviljas av en administratör. Be en administratör att ge dig tillstånd.
+>[!IMPORTANT]
+>
+>Report Builder kräver att en administratör godkänner åtkomst till organisationens resurser. Om du behöver åtkomst ber du en administratör att ge dig behörighet.
+> En Microsoft-administratör kan granska *Användare kan registrera program* inställning hittades under: **[!UICONTROL Microsoft Azure]** > **[!UICONTROL Azure Active Directory]** > **[!UICONTROL User Settings allows options]**. Om det här alternativet är inställt på **Nej** kan administratören registrera dessa typer av program.
 
-Be en Microsoft-administratör granska inställningen&quot;Användare kan registrera program&quot; som finns under: **[!UICONTROL Microsoft Azure]** > **[!UICONTROL Azure Active Directory]** > **[!UICONTROL User Settings allows options]**. Om det här alternativet är inställt på Nej kan administratören registrera dessa typer av program.
+Användare kan bevilja åtkomst genom att logga in på sina [Microsoft Power BI-konto](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=logint&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
 
-Användare kan bevilja åtkomst genom att använda följande [link](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=logint&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
-
-Administratörer beviljade åtkomst för var och en genom att använda följande [link](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=admin_consent&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
+Administratörer kan ge alla åtkomst genom att logga in på deras [Administratörens Microsoft Power BI-konto](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;prompt=admin_consent&amp;client_id=8d84f6d8-29a4-4484-a670-589b32400278&amp;redirect_uri=https%3a%2f%2fmy.omniture.com%2fsc15%2farb%2flogin.html&amp;resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&amp;locale=en_US).
 
 ## API-gränsen nås
 

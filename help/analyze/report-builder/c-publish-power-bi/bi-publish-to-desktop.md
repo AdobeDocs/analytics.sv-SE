@@ -1,19 +1,19 @@
 ---
-description: Beskriver hur du kan hämta Report Builder-publicerade resurser till Power BI Desktop
+description: Beskriver hur du kan hämta Report Builder-publicerade mediefiler till Power BI Desktop
 title: Hämta publicerade resurser till Power BI Desktop
 feature: Report Builder
 role: User, Admin
 exl-id: ce6020df-caf4-4cd2-8086-4357309e5bbb
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 9%
+source-wordcount: '182'
+ht-degree: 8%
 
 ---
 
 # Hämta publicerade resurser till Power BI Desktop
 
-Beskriver hur du kan hämta Report Builder-publicerade resurser till Power BI Desktop
+Beskriver hur du kan hämta Report Builder-publicerade mediefiler till Power BI Desktop
 
 ## Förutsättningar {#section_BDFDAE1E300B429FB6EBCB21AD1383A0}
 
@@ -25,7 +25,7 @@ Beskriver hur du kan hämta Report Builder-publicerade resurser till Power BI De
 I uppdateringen av Power BI Desktop från april 2017 släppte Microsoft möjligheten att ansluta till datauppsättningar i tjänsten Power BI. Med den här funktionen kan du skapa nya rapporter med befintliga datauppsättningar som du redan har publicerat i molnet. Du kan använda den här funktionen för att samarbeta bättre och minska antalet dubbletter i teamet.
 
 1. I Power BI Desktop går du till **[!UICONTROL File]** > **[!UICONTROL Options and settings]** > **[!UICONTROL Options]** > **[!UICONTROL Preview features.]**
-1. Aktivera **[!UICONTROL Power BI Service Live Connection]** och klicka **[!UICONTROL OK]**. ![](assets/bi-preview-features.png)
+1. Aktivera **[!UICONTROL Power BI Service Live Connection]** och klicka **[!UICONTROL OK]**. ![Klicka på Power BI Service Live Connection och klicka sedan på OK. ](assets/bi-preview-features.png)
 
 1. Starta om Power BI Desktop.
 1. När du har startat om datorn går du till **[!UICONTROL Home]** > **[!UICONTROL Get Data]** > **[!UICONTROL More...]**.
