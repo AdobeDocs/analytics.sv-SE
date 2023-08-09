@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: af3bdcf3eedecc6b670e51dcb2f6980e75982077
+source-git-commit: d9b1caf1edf473461d176d472f6f73c04cc1dbad
 workflow-type: tm+mt
-source-wordcount: '3118'
+source-wordcount: '3170'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,15 @@ När du skapar en datafeed kan du ge Adobe:
    | [!UICONTROL **Kontinuerlig feed**] | Den här kryssrutan tar bort slutdatumet, vilket gör att en feed kan köras på obestämd tid. När en feed har avslutat bearbetningen av historiska data väntar en feed på data för att slutföra insamlingen under en given timme eller dag. När den aktuella timmen eller dagen är slut börjar bearbetningen efter den angivna fördröjningen. |
 
 1. I [!UICONTROL **Mål**] i [!UICONTROL **Typ**] väljer du målet dit du vill att data ska skickas.
+
+   >[!NOTE]
+   >
+   >Tänk på följande när du konfigurerar ett rapportmål:
+   >
+   >* Vi rekommenderar att du använder ett molnkonto för rapportdestinationen. [Äldre FTP- och SFTP-konton](#legacy-destinations) är tillgängliga, men rekommenderas inte.
+   >
+   >* Molnkonton är kopplade till ditt Adobe Analytics-användarkonto. Andra användare kan inte använda eller visa molnkonton som du konfigurerar.
+   >
 
    ![Listruta för mål för datafeed](assets/datafeed-destinations-dropdown.png)
 

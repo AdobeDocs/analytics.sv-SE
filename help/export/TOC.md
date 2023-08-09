@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
 user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
-source-git-commit: 6e59ee3cb3eb59b025053603cd1357c5a2709d00
+source-git-commit: 78ec6e91e64791d2f8a5386518d3d64403b2170a
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 82%
@@ -70,5 +70,5 @@ ht-degree: 82%
       + [Skicka Data Warehouse-förfrågningar till SFTP-servrar](ftp-and-sftp/c-sftp/ftp-sftp-dw.md)
       + [Ansluta till Adobe via SFTP utan lösenord](ftp-and-sftp/c-sftp/ftp-sftp-cert-auth.md)
 + [Analysis Workspace nedladdningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html)
-+ [Adobe Analytics API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
++ [ADOBE ANALYTICS API](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
 + [Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html)
