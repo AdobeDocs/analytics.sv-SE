@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: 50d6094a5b849bc16a02b3e59f9b40f19c86eee3
+source-git-commit: c418a9ed9f1dedd4a382b718f83313b6225dff63
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '726'
 ht-degree: 43%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 43%
    + [Städer](dimensions/cities.md)
    + [Färgdjup](dimensions/color-depth.md)
    + [Anslutningstyp](dimensions/connection-type.md)
-   + [Anmäl dig till hantering av samtycke](dimensions/cm-opt-in.md)
+   + [Medgivandehanteringsanmälan](dimensions/cm-opt-in.md)
    + [Avanmäl dig till hantering av samtycke](dimensions/cm-opt-out.md)
    + [Cookie-stöd](dimensions/cookie-support.md)
    + [Länder](dimensions/countries.md)
@@ -61,7 +61,7 @@ ht-degree: 43%
    + [Identifierat läge](dimensions/identified-state.md)
    + [Java aktiverat](dimensions/java-enabled.md)
    + [Språk](dimensions/language.md)
-   + [Senaste pekkanal](dimensions/last-touch-channel.md)
+   + [Senaste beröringskanal](dimensions/last-touch-channel.md)
    + [Senaste beröringskanaldetalj](dimensions/last-touch-detail.md)
    + [Marknadsföringskanal](dimensions/marketing-channel.md)
    + [Marknadskanalsdetaljer](dimensions/marketing-detail.md)
@@ -102,7 +102,7 @@ ht-degree: 43%
    + [Besöksdjup](dimensions/visit-depth.md)
    + [Besöksnummer](dimensions/visit-number.md)
    + [Vecka](dimensions/week.md)
-   + [Veckodag/Veckoslut](dimensions/weekday-weekend.md)
+   + [Veckodag/vecka](dimensions/weekday-weekend.md)
    + [År](dimensions/year.md)
    + [Postnummer](dimensions/zip-code.md)
 + Mätvärden {#metrics}
@@ -117,7 +117,7 @@ ht-degree: 43%
    + [Studsfrekvens](metrics/bounce-rate.md)
    + [Studsar](metrics/bounces.md)
    + [Kundtillägg](metrics/cart-additions.md)
-   + [Borttagning av kundvagn](metrics/cart-removals.md)
+   + [Ta bort kundvagn](metrics/cart-removals.md)
    + [Vyer](metrics/cart-views.md)
    + [Korgar](metrics/carts.md)
    + [Utcheckningar](metrics/checkouts.md)
@@ -222,7 +222,7 @@ ht-degree: 43%
    + [Översikt över enhetsövergripande analys](cda/overview.md)
    + [Fältbaserad stygn](cda/field-based-stitching.md)
    + [Enhetsdiagram](cda/device-graph.md)
-   + [Konfigurera enhetsövergripande analys](cda/setup.md)
+   + [Ställ in enhetsövergripande analys](cda/setup.md)
    + [Så här spelar du upp](cda/replay.md)
    + [CDA Workspace-mall](cda/workspace-template.md)
    + [Begränsa ett VRS till vissa datum](cda/limit-vrs-date.md)
@@ -233,7 +233,7 @@ ht-degree: 43%
    + [Alert Manager](c-alerts/alert-manager.md)
    + [Intelligenta aviseringar – användningsexempel](c-alerts/alerts-use-cases.md)
 + Klassificeringar {#classifications}
-   + [Översikt över klassificeringar](classifications/c-classifications.md)
+   + [Klassificeringsöversikt](classifications/c-classifications.md)
    + Klassificeringsuppsättningar {#sets}
       + [Översikt över klassificeringsuppsättningar](classifications/sets/overview.md)
       + Hantera klassificeringsuppsättningar {#manage}
@@ -270,9 +270,10 @@ ht-degree: 43%
    + [Vanliga frågor om klassificeringar](classifications/faq.md)
 + Platser {#locations}
    + [Platshanteraren](/help/components/locations/locations-manager.md)
-   + [Molnimportkonton](/help/components/locations/configure-import-accounts.md)
+   + [Importkonton i molnet](/help/components/locations/configure-import-accounts.md)
    + [Platser för molnimport](/help/components/locations/configure-import-locations.md)
 + [Kalenderhändelser](t-calendar-event.md)
++ [Schemalagda projekt](scheduled-projects-manager.md)
 + [Schemalagd rapportkö](scheduled-reports-admin.md)
 + Rapporter i realtid {#real-time-reporting}
    + [Översikt över rapporter i realtid](c-real-time-reporting/realtime.md)
