@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: abd4d1a4b8076de225e37a375dfe387c998deb01
+source-git-commit: 00c2b924d31f7a68258bba5e96ef1a39d4707766
 workflow-type: tm+mt
-source-wordcount: '4822'
+source-wordcount: '4855'
 ht-degree: 26%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Augusti 2023** | |
+| Flyttat innehåll om hantering av schemalagda projekt | Skapade en ny artikel i Analytics Components Guide med namnet [Schemalagda projekt](/help/components/scheduled-projects-manager.md). Innehållet fanns tidigare i [Schemalägg projekt](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) artikel i Analytics Tools Guide. |
 | Jämför implementeringsmetoder | Uppdaterad dokumentation som jämför olika implementeringsmetoder. [Läs mer](../implement/prepare/comparison.md) |
 | Adobe kundtjänst krävs inte för att konfigurera SFTP för dataflöden | Tydligare i [Skicka Adobe-data till ett externt FTP-konto med SFTP](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-transfer.md) som kunderna inte behöver kontakta Adobe kundtjänst för att konfigurera SFTP för dataflöden. <p>Dessutom lades ett meddelande till om att SFTP inte längre rekommenderas och att kunder bör använda ett molnmål när de konfigurerar datafeeds.</p> |
 | Dokumentationsförbättringar för direktuppspelningsmedia | Följande dokumentationsförbättringar har gjorts för Streaming Media: <ul><li>Uppdaterade [allmän översikt](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en) för att förbättra klarheten och inkludera information om Customer Journey Analytics.</li><li>Uppdaterade [implementeringsöversikt](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/overview.html?lang=en) för att tydligt skilja mellan Edge-implementeringar och implementeringar som enbart innehåller analyser. Dessutom ingår diagram som illustrerar de olika implementeringsmetoderna.</li><li>Lagt till krav som är specifika för [Edge-implementeringar](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/edge-recommended/prerequisites-edge.html?lang=en) och [Implementeringar med enbart analys](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/analytics-only/prerequisites-analytics.html?lang=en). Uppdaterade även [allmänna krav](https://experienceleague.adobe.com/docs/media-analytics/using/getting-started/prereqs.html?lang=en).</li><li>Uppdaterade tabeller i [Hämta SDK:er för media, tillägg med taggar och OTT SDK:er](https://experienceleague.adobe.com/docs/media-analytics/using/getting-started/download-sdks.html?lang=en) artikel som innehåller nya kolumner för *Lösningar* och *Implementeringsmetod*.</li><li>Effektivt innehåll och smidigare organisering av artiklar i [Implementering](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/overview.html?lang=en) dokumentationsdelen. Detta inkluderade kategorisering av implementeringar med Edge och implementeringar med enbart analys.</li><li>En extra hierarkinivå som inte behövdes under har tagits bort [Spårning](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en) och lade till omdirigeringar för ändrade URL:er i det här avsnittet.</li><ul> |
@@ -144,8 +145,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | **Juni 2021** |  |
 | 15 juni 2021 | Uppdaterat [Bästa praxis för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html) |
 | 3 juni 2021 | Dokumentationen har uppdaterats för att förklara bättre [Implementering av datafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/create-feed.html) och [här](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html#BucketOwnerFullControl). |
-| 25 maj 2021 | Dokumentationen uppdaterades den [eVar skiftlägeskänslighet vid rapportering](https://experienceleague.adobe.com/docs/analytics/components/dimensions/evar.html). |
-| 13 maj 2021 | Uppdateringar till [Data warehouse API-begäranden](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/reporting-api/data_warehouse.md). De har nu stöd för&quot;Timmar&quot;. |
+| 25 maj 2021 | Dokumentationen uppdaterades den [eVar - skiftlägeskänslighet vid rapportering](https://experienceleague.adobe.com/docs/analytics/components/dimensions/evar.html). |
+| 13 maj 2021 | Uppdateringar till [Datas Warehouse-API-begäranden](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/reporting-api/data_warehouse.md). De har nu stöd för&quot;Timmar&quot;. |
 | **Mars 2021** | |
 | Mars, april 2021 | Uppdateringar av Adobe Analytics kontrollpaneler [Executive Guide](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/executive.html) och [Kurvguide](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) |
 | 25 mars 2021 | Ny dokumentation på [!UICONTROL Components] > [!UICONTROL User preferences] sida. Det gör att du kan hantera [!UICONTROL Analysis Workspace] inställningar och relaterade komponenter för användaren. [!UICONTROL User preferences] gäller för alla nya projekt och paneler. <br>**Obs!** följande inställningar har flyttats till [!UICONTROL User preferences] sida:<ul><li>Rapportinställningar: Tusentalsavgränsare (kallas nu _Nummerformat_)</li><li>Rapportinställningar: CSV-avgränsare</li><li>Arbetsyteprojekt: Hjälp > Aktivera tips</li><li>Arbetsyteprojekt: Tom panel _Starta nya projekt med den här panelen_ option</li></ul> |
