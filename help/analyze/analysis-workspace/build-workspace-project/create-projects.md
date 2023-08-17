@@ -4,16 +4,16 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 6130b1d8-078c-46d8-9fce-eb39739a9570
-source-git-commit: f7bd5eaffd4502510451e3afb5929682ad967ecb
+source-git-commit: fabe043264e4567d54dc497897fff0aaad77eaaf
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
-# Skapa projekt
+# Skapa projekt i Analysis Workspace
 
-[Projekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan ni visa affärskritiska analyser som kan delas med intressenter inom eller utanför organisationen.
+[Projekt](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan ni visa affärskritiska analyser som kan delas med intressenter både inom och utanför organisationen.
 
 Allmän information om hur du kommer igång med Analysis Workspace finns i [Analysis Workspace - översikt](/help/analyze/analysis-workspace/home.md).
 
@@ -21,7 +21,7 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
 ## Skapa ett projekt från ett tomt projekt eller en rapport
 
-1. I Adobe Analytics väljer du [!UICONTROL **Arbetsyta**].
+1. I Adobe Analytics: [!UICONTROL **Arbetsyta**].
 
 1. Välj om du vill skapa ett tomt projekt eller om du vill skapa ett projekt från en rapport:
 
@@ -56,13 +56,13 @@ I följande avsnitt beskrivs hur du skapar ett projekt och börjar lägga till d
 
 ## Lägga till paneler i projektet {#panels}
 
-[Paneler](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) är grunden till alla projekt i Analysis Workspace. Paneler används för att ordna innehållet (visualiseringar och komponenter) i ett projekt.
+[Panel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) är grunden till alla projekt i Analysis Workspace. Paneler används för att ordna innehållet (visualiseringar och komponenter) i ett projekt.
 
 Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna.
 
 Så här lägger du till en panel:
 
-1. Välj [!UICONTROL **Paneler**] ikonen i den vänstra listen.
+1. Välj [!UICONTROL **Panel**] ikonen i den vänstra listen.
 
    ![](assets/build-panels.png)
 
@@ -80,7 +80,7 @@ Så här lägger du till en panel:
 >
 >Frihandstabeller är den vanligaste typen av visualisering och är grunden för interaktiv dataanalys. Mer information om hur du arbetar med frihandstabeller i Analysis Workspace finns i [Frihandsregister](/help/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 
-Så här lägger du till en visualisering:
+Lägga till en visualisering:
 
 1. Välj **[!UICONTROL Visualizations]** ikonen i den vänstra listen.
 
@@ -112,4 +112,4 @@ Så här lägger du till en komponent:
 
 När du gör en analys i Analysis Workspace blir resultatet [automatiskt sparad](/help/analyze/analysis-workspace/build-workspace-project/save-projects.md).
 
-När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Information om hur du delar ett projekt finns i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).
+När du är klar med projektet och samlar in åtgärdbara insikter är projektet klart att användas av andra. Du kan dela projektet med användare och grupper i organisationen, eller till och med med med personer utanför organisationen. Mer information om hur du delar ett projekt finns i [Dela projekt](/help/analyze/analysis-workspace/curate-share/share-projects.md).

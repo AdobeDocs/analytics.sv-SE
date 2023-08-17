@@ -3,9 +3,9 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: a288253816fa73444dd5078d56d3d30e92aebe3f
+source-git-commit: 52f7ff8a357cfe80e1f92b4162057da807f44e9d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1222'
 ht-degree: 2%
 
 ---
@@ -30,17 +30,22 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 * Få åtkomst till realtidsdata i användargränssnittet.
 * Så här ställer du in kalenderhändelser.
 * Så här ställer du in mål.
-* Så här visar du Bot-rapportering.
 * Få tillgång till unika videovisualiseringar av Video Daypart och Viewer Drop-off.
+
+>[!IMPORTANT]
+>
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar processen vid slutet av livscykeln.
 
 **[Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html)** ska användas:
 
-* Det mest flexibla analysverktyget (ned till besökarnivå, träffnivåanalys).
-* Skapa en flerkanalig datauppsättning med online- och offlineinteraktioner från CRM till POS till Web.
-* För avancerad attribuering (regelbaserade och algoritmiska modeller).
 * För prediktiv, statistisk modellering (benägenhetsbedömning, klustring, korrelation osv.).
 * För fördröjningsanalys (tid före/sedan en händelse).
 * För identifiering och export av komplexa segment i hela Adobe Experience Cloud.
+
+>[!IMPORTANT]
+>
+>Läs mer om Datans Workbench [Meddelande om att produkten är slut](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html?lang=en).
+
 
 ## Importera data till Adobe Analytics {#import}
 
@@ -49,8 +54,8 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 * När det finns metadata som du vill koppla till ett samlingsvärde (eVar, prop, marknadsföringskanal)
 * Alternativ:
 
-   * Regelverktyget: används när du har förutsägbara formaterade värden som samlas in för en variabel, t.ex. avgränsade värden. Med den här metoden kan ni lägga upp regler en gång och i stort sett&quot;skapa och glömma&quot;.
-   * Webbläsarimporterare: används när du inte har några förutsägbara värden eller när du har en begränsad lista med värden som kräver en engångsuppdatering. På så sätt måste du kontinuerligt övervaka klassificeringarna för nya värden.
+   * Regelbyggaren: använd när du har förutsägbara formaterade värden som samlas in för en variabel, t.ex. avgränsade värden. Med den här metoden kan ni lägga upp regler en gång och i stort sett&quot;skapa och glömma&quot;.
+   * Webbläsarimporterare: använd när du inte har några förutsägbara värden eller när du har en begränsad lista med värden som kräver en engångsuppdatering. På så sätt måste du kontinuerligt övervaka klassificeringarna för nya värden.
 
 **[Datakällor](/help/import/data-sources/overview.md)** ska användas:
 
@@ -58,8 +63,8 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 * Alternativ:
 
    * Sammanfattning: enkel dataöverföring per dag eller begränsade dimensioner
-   * Transaktions-ID: överföring av data som kopplar en online-slutpunkt till offlinedata och kopplar importerade data till en besökarögonblicksbild som tagits online (t.ex. online-beställningar och returneras offline)
-   * Fullständig bearbetning: tidstämplade datakällor, bearbetade som om de hade samlats in av Adobe-servrar. Dvs. data infogas direkt i besökarresan.
+   * Transaktions-ID: dataöverföringar som kopplar en online-slutpunkt till offlinedata och kopplar importerade data till en besökarögonblicksbild som tagits online (t.ex. online-beställningar och returneras offline)
+   * Fullständig bearbetning: tidstämplade datakällor, bearbetade som om de hade träffats av Adobe-servrar. Dvs. data infogas direkt i besökarresan.
 
 **[Integreringar med Adobe Exchange](https://www.adobeexchange.com/experiencecloud.html)** ska användas:
 
@@ -93,7 +98,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 * Om du vill sammanfoga data från olika rapportsviter, antingen genom att summera eller visa dem i samma tabell sida vid sida.
 * Om automatisering genom schemaläggning önskas (XLSX, XLSM, CSV, PDF, TXT, XML, MHT).
 
-**[data warehouse](/help/export/data-warehouse/data-warehouse.md)** ska användas:
+**[Data Warehouse](/help/export/data-warehouse/data-warehouse.md)** ska användas:
 
 * Om du vill få åtkomst till variabler som annars är dolda i användargränssnittet - IP-adress, Experience Cloud-ID, Analytics-besökar-ID, sid-URL)
 * Få åtkomst till mer detaljerade data än användargränssnittet (denormaliserad tabellvy)
@@ -109,7 +114,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 **[Rapporterings-API:er](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-guide.md)** bör användas när de andra visualiseringsalternativen inte uppfyller dina behov. De tre API-alternativen omfattar:
 
-* **Fullt bearbetad**: när ni vill ha funktionsrika data (inklusive besök, besökare och segment). Det här är typiska gränssnittsdata från Analytics, som är tillgängliga inom cirka 30-90 minuter. Kan användas via Report Builder.
+* **Fullt bearbetad**: när du vill ha funktionsrika data (inklusive besök, besökare och segment). Det här är typiska gränssnittsdata från Analytics, som är tillgängliga inom cirka 30-90 minuter. Kan användas via Report Builder.
 * **Realtid**: när du vill visa ett par mätvärden och dimensioner med några sekunders fördröjning. Detta är begränsade, delvis bearbetade, sammanfattade data som är tillgängliga inom cirka 30 sekunder. Innehåller unika algoritmer för de flesta populära, vinnare och förlorare. Kan användas via Report Builder.
 * **[!UICONTROL Live Stream]**: när ni vill ha en ström av delvis bearbetade analysdata på träffnivå inom sekunder från insamlingen. Detta är delvis bearbetade data som är tillgängliga inom cirka 30 sekunder. Endast tillgängligt för Analytics Premium. Kräver ett sätt att visualisera data, vanligtvis genom ett engagemang från Engineering Services.
 

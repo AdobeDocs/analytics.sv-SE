@@ -4,9 +4,9 @@ title: Adobe Analytics - översikt
 feature: Analytics Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d5a7dfe720cc84b67208e7d30434295caf1e2aac
+source-git-commit: 1c6cc23c9cb6b4b007d2f296ea23e697cc135bd4
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3098'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,7 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
 
    ![Fliken Arbetsyta](assets/components-tab.png)
 
-2. Välj någon av följande produktfunktioner för att konfigurera den: (Beroende på dina behörigheter kanske inte alla funktioner visas.)
+2. Välj någon av följande produktfunktioner för att konfigurera den:
 
 
    | Funktioner |  -funktion | Mer information |
