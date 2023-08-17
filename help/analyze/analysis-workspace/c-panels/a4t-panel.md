@@ -4,9 +4,9 @@ title: Analyser för målpanelen (A4T)
 feature: Panels
 role: User, Admin
 exl-id: 36bca104-37b8-43c6-b8d0-b607a9a333cc
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 32dfab4b10d3637aba53081f747d2650fc33a8f0
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,17 @@ Du kan konfigurera A4T-panelen med följande indatainställningar:
 
 | Inställning | Beskrivning |
 |---|---|
-| Verksamhetens syfte? | Välj i en lista över målaktiviteter eller dra och släpp en aktivitet från den vänstra listen. Obs! Listan innehåller de senaste sex månaderna av aktiviteter som hade minst en träff. Om du inte ser någon aktivitet i listan kan den vara äldre än 6 månader. Den kan fortfarande läggas till från den vänstra listen, som har en summeringstid på upp till 18 månader. |
+| Verksamhetens syfte? | Välj i en lista över målaktiviteter eller dra och släpp en aktivitet från den vänstra listen. Obs! Listan innehåller de senaste sex månaderna av aktiviteter som hade minst en träff. Om ingen aktivitet visas i listan kan den vara äldre än 6 månader. Den kan fortfarande läggas till från den vänstra listen, som har en summeringstid på upp till 18 månader. |
 | Kontrollupplevelse | Välj din kontrollupplevelse. Du kan ändra den om det behövs i listrutan. |
-| Normaliserar mätvärden | Välj bland unika besökare, besök eller aktivitetsexponeringar. Unika besökare rekommenderas för de flesta användningsfall för analyser. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Det påverkar också hur data aggregeras innan konfidensberäkningen tillämpas. |
-| Framgångsmått | Välj upp till tre standardhändelser (ej beräknade) från listrutorna, eller dra och släpp mätvärden från den vänstra listen. Varje mätvärde har en dedikerad tabell och visualisering på den renderade panelen. |
+| Normaliserar mätvärden | Välj bland unika besökare, besök eller aktivitetsimpressioner. Unika besökare rekommenderas för de flesta användningsfall för analyser. Detta mätvärde (även kallat beräkningsmetoden) blir nämnaren för beräkningen av lyft. Det påverkar också hur data aggregeras innan konfidensberäkningen tillämpas. |
+| Framgångsmått | Välj upp till tre standardhändelser (ej beräknade) från listrutorna, eller dra och släpp mätvärden från vänster. Varje mätvärde har en dedikerad tabell och visualisering på den renderade panelen. |
 | Kalenderdatumintervall | Detta fylls i automatiskt baserat på aktivitetsdatumintervallet från Adobe Target. Du kan ändra den om det behövs. |
 
 ![Panel builder](assets/a4t-panel-builder2.png)
 
 ## Panelutdata {#Output}
 
-Analytics for Target-panelen returnerar en mängd data och visualiseringar som hjälper er att bättre förstå hur Adobe Target aktiviteter och upplevelser fungerar. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att klicka på redigeringspennan i det övre högra hörnet.
+Analytics for Target-panelen returnerar en mängd data och visualiseringar som hjälper er att bättre förstå hur Adobe Target aktiviteter och upplevelser fungerar. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt. Du kan när som helst redigera panelen genom att klicka på redigeringspennan längst upp till höger.
 
 För varje framgångsmått du valt visas en frihandstabell och en konverteringsgrad:
 
@@ -46,13 +46,13 @@ I varje frihandstabell visas följande måttkolumner:
 | Mått | Beskrivning |
 |---|---|
 | Normaliserar mätvärden | Unika besökare, besök eller aktivitetsexponeringar. |
-| Resultatmått | Det mått som valts i verktyget |
+| Resultatmått | Det mätvärde som valts i verktyget |
 | Konverteringsgrad | Resultatmått/normaliseringsmått |
-| Lyft | Jämför konverteringsgraden för varje upplevelse med kontrollupplevelsen. Obs! Lyft är ett&quot;låst mätvärde&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner. |
-| Lyft (nedre) | Representerar det värsta klippet en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Beräkning: (x/y ± 1.96 std_err(x,y)) / (x_control/y_control ∓ 1.96 std_err(x_control,y_control)). Här är std_err(x,y) sqrt(xx/y - (x/y)^2), där xx anger summan av fyrkanterna. |
-| Lyft (mitten) | Representerar mittpunktshöjningen som en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall. Det här är&quot;Lyft&quot; i rapporter och analyser.<br>Beräkning: (x/y)/(x_control/y_control) - 1 |
-| Lyft (övre) | Representerar den bästa lyften en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Beräkning: Se Lyft (nedre). |
-| Förtroende | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. Obs! Förtroende är ett&quot;låst mått&quot; för Target Experiences. den inte kan brytas ned eller användas med andra dimensioner.<br>Beräkning: Använd ett tvådelat t-test med y+y_control-2 frihetsgrader för att hitta p-värdet om x/y är lika med x_control/y_control. Beräkna t-score, där stdern är sqrt( (xx/y-(x/y)^2)/y + (xx_control/y_control-(x_control/y_control)^2)/y_control). Returnera 1-p som tryggheten att de är olika. |
+| Lyft | Jämför konverteringsgraden för varje upplevelse med kontrollupplevelsen. Obs! Lyft är ett&quot;låst mätvärde&quot; för Target Experiences. Det kan inte delas upp eller användas med andra dimensioner. |
+| Lyft (nedre) | Representerar det värsta klippet en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Se [Statistikberäkningar](https://experienceleague.adobe.com/docs/target/using/reports/statistical-methodology/statistical-calculations.html?lang=en) och [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=en) Excel-fil för mer information. |
+| Lyft (mitten) | Representerar mittpunktshöjningen som en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall. Det här är&quot;Lyft&quot; i rapporter och analyser.<br>Se [Statistikberäkningar](https://experienceleague.adobe.com/docs/target/using/reports/statistical-methodology/statistical-calculations.html?lang=en) och [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=en) Excel-fil för mer information. |
+| Lyft (övre) | Representerar den bästa lyften en variantupplevelse kan ha över kontrollen, med ett 95% konfidensintervall.<br>Se [Statistikberäkningar](https://experienceleague.adobe.com/docs/target/using/reports/statistical-methodology/statistical-calculations.html?lang=en) och [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=en) Excel-fil för mer information. |
+| Förtroende | Studenterna som ska testas beräknar konfidensnivån, vilket anger sannolikheten för att resultatet skulle dupliceras om testet kördes igen. Ett fast villkorsstyrt formateringsintervall på 75 %/85 %/95 % har tillämpats på måttet. Den här formateringen kan anpassas om det behövs under Kolumninställningar. Obs! Konfidensen är ett låst mått för Target Experiences. Det kan inte delas upp eller användas med andra dimensioner.<br>Se [Statistikberäkningar](https://experienceleague.adobe.com/docs/target/using/reports/statistical-methodology/statistical-calculations.html?lang=en) och [Slutför konfidensberäkning](https://experienceleague.adobe.com/docs/target/assets/complete_confidence_calculator.xlsx?lang=en) Excel-fil för mer information. |
 
 Precis som med andra paneler i Analysis Workspace kan du fortsätta analysen genom att lägga till ytterligare tabeller och [visualiseringar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html) som hjälper dig att analysera dina Adobe Target-aktiviteter. Du kan också använda ett segment på panelnivå eller i frihandstabellen. Observera, att om du lägger till den i frihandstabellen måste du täcka över hela tabellen för att lyftnings- och förtroendeberäkningarna ska bevaras. För närvarande stöds inte kolumnnivåsegment.
 
