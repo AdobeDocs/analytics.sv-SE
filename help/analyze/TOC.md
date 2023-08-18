@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: a653d60fd423d2853254a8c96252a39f08f9a3b4
+source-git-commit: 6cf07b816723ce0d5adb9183215e331c7656d928
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1100'
 ht-degree: 78%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 78%
 + [Handbok om Analytics-verktyg](home.md)
 + [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 + Kom igång med Adobe Analytics {#admin-overview}
+   + [Analytics - översikt](get-started/analytics-overview.md)
    + [Vilket Adobe Analytics-verktyg ska jag använda?](get-started/which-analytics-tool.md)
    + [Produktjämförelse och krav för analyser](get-started/analytics-product-comparison.md)
    + [Systemkrav](get-started/sys-reqs.md)
@@ -25,7 +26,7 @@ ht-degree: 78%
    + [Översikt över Analysis Workspace](analysis-workspace/home.md)
    + [Nyheter i Analysis Workspace](analysis-workspace/new-features-in-analysis-workspace.md)
    + Projekt {#build-workspace-project}
-      + [Översikt över projekt](analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Projektöversikt](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Skapa projekt](analysis-workspace/build-workspace-project/create-projects.md)
       + [Spara projekt](analysis-workspace/build-workspace-project/save-projects.md)
       + Mappar på arbetsytan {#workspace-folders}
@@ -75,7 +76,7 @@ ht-degree: 78%
             + [Kolumninställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska jämfört med statiska artiklar](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filtrera och sortera tabeller](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Filtrera och ordna tabeller](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Summor för Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
          + [Vad är kohortanalys?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
@@ -113,11 +114,11 @@ ht-degree: 78%
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
       + [Panelen Mediegenomsnitt för miniatyrmålgrupp](analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Panelen för samtidiga medieanvändare](analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + Medieuppspelningstid tillagd {#media-playback-timespent}
+      + Medieuppspelningstid spenderad {#media-playback-timespent}
          + [Översikt](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [Indata- och utdatainställningar](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
          + [Vanliga frågor](analysis-workspace/c-panels/media-playback-timespent/faqs.md)
-      + [Panelen Nästa eller Föregående objekt](analysis-workspace/c-panels/next-previous.md)
+      + [Panelen Nästa eller föregående objekt](analysis-workspace/c-panels/next-previous.md)
       + [Panelen Sidsammanfattning](analysis-workspace/c-panels/page-summary.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)
       + Panelen Segmentjämförelse {#segment-comparison}
