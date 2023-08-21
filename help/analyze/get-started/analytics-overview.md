@@ -4,9 +4,9 @@ title: Adobe Analytics - översikt
 feature: Analytics Basics
 hide: true
 hidefromtoc: true
-source-git-commit: f2f1d21989b609bf069da28b3b90785ccd14ef19
+source-git-commit: 58e5f3ca4b99e92b64e01095d61d5fe1fc97feb9
 workflow-type: tm+mt
-source-wordcount: '5045'
+source-wordcount: '5073'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ Nedan följer några av de viktigaste sätten som Adobe Analytics kan hjälpa f�
 
 Mer information om fördelarna med Adobe Analytics finns i [Adobe Analytics produktsida](https://business.adobe.com/products/analytics/adobe-analytics.html).
 
-### Webbanalys
++++Webbanalys
 
 Adobe Analytics tillhandahåller följande komplexa segmenterings- och prediktiva verktyg för analys av webbplatstrafik:
 
@@ -31,7 +31,9 @@ Adobe Analytics tillhandahåller följande komplexa segmenterings- och prediktiv
 
 * [avancerad segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html)
 
-### Marknadsföringsanalys
++++
+
++++Marknadsföringsanalys
 
 Adobe Analytics hjälper organisationer att förstå var kunderna interagerar med sina varumärken, vilka kanaler kunderna föredrar och vilka upplevelser som passar dem.
 
@@ -43,14 +45,18 @@ Följande viktiga funktioner i Adobe Analytics:
 
 * [Ad hoc-analys i Analysis Workspace](/help/analyze/analysis-workspace/home.md)
 
-### Attribuering
++++
+
++++Attribuering
 
 Med attribuering kan organisationer se hur olika interaktioner under kundresan påverkar konverteringen. Förutom att tillhandahålla fler traditionella attribueringsalternativ, som Linear- eller First Touch-modeller, använder Attribution i Adobe Analytics även maskininlärning och avancerade statistiska modeller för att förstå den exakta effekten av varje beröring.
 
 Mer information finns i [Attributmodeller och uppslagsfönster](/help/analyze/analysis-workspace/attribution/models.md).
 
++++
 
-### Prediktiv analys
+
++++Prediktiv analys
 
 Prediktiv analys använder maskininlärning och avancerad statistisk modellering för att analysera kunddata, hitta mönster och förutse framtida beteenden som förändring eller sannolikhet för konvertering. Det gör det möjligt för dataanalytiker att utnyttja enorma datauppsättningar som annars skulle kunna slösas bort.
 
@@ -61,6 +67,8 @@ Följande viktiga funktioner i Adobe Analytics har dessa prediktiva funktioner:
 * [Bidragsanalys](#contribution-analysis)
 
 * [Intelligenta aviseringar](#intelligent-alerts)
+
++++
 
 ## Krav för att använda Adobe Analytics
 
@@ -78,9 +86,13 @@ Innan du kan använda Adobe Analytics måste du ha
 
 ## Förstå analysgränssnittet
 
-Adobe Analytics gränssnitt består av följande huvudområden:
+Adobe Analytics-gränssnittet består av följande nyckelområden, bland annat flikar för att hantera projekt i Analysis Workspace, hantera komponenter, verktyg och administratörsfunktioner.
 
-### Fliken Arbetsyta
+![Fliken Arbetsyta](assets/landing-all2.png)
+
+Expandera följande avsnitt för att lära dig mer om de olika delarna av Analysis Workspace:
+
++++fliken Arbetsyta
 
 The [!UICONTROL Workspace] -fliken visar [!UICONTROL Projects] som standard, vilket visar företagsmappen, eventuella personliga mappar som du har skapat, dina projekt och Mobile Scorecards.
 
@@ -90,13 +102,17 @@ The [!UICONTROL Workspace] -fliken visar [!UICONTROL Projects] som standard, vil
 
 Mer information om funktioner finns på [!UICONTROL Workspace] flik, se [Adobe Analytics landningssida](/help/analyze/landing.md).
 
-### Fliken Rapport
++++
+
++++fliken Rapporter
 
 Från och med den 31 december 2023 avser Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner.
 
 Använd i stället [!UICONTROL **Rapporter**] området i den vänstra listen på vänster sida [!UICONTROL **Arbetsyta**] -fliken. Mer information finns i *Navigera på fliken Rapporter* in [Adobe Analytics landningssida](/help/analyze/landing.md).
 
-### Fliken Komponenter
++++
+
++++fliken Komponenter
 
 The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att finjustera och underlätta dataanalysen.
 
@@ -128,7 +144,9 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
 
    {style="table-layout:auto"}
 
-### Fliken Verktyg
++++
+
++++fliken Verktyg
 
 <!-- The Tools tab ... -->
 
@@ -150,7 +168,9 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
 
    {style="table-layout:auto"}
 
-### Fliken Admin
++++
+
++++fliken Admin
 
 På fliken Admin finns funktioner och konfigurationsalternativ för att administrera Adobe Analytics.
 
@@ -194,7 +214,9 @@ På fliken Admin finns funktioner och konfigurationsalternativ för att administ
 
    {style="table-layout:auto"}
 
-### Analysis Workspace
++++
+
++++Analysis Workspace
 
 Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter och sedan dela dessa insikter med andra. Med dra-och-släpp-gränssnittet i webbläsaren kan du utforma analyser, lägga till visualiseringar för att ge liv åt data, strukturera en datauppsättning samt dela och schemalägga projekt med vem du vill.
 
@@ -210,6 +232,8 @@ Mer information om Analysis Workspace finns i [Analysis Workspace - översikt](/
 | B | **Vänster räl:** Beroende på vilken flik som är markerad längst till vänster, innehåller det här området individuella paneler, visualiseringar eller komponenter. |
 | C | **Arbetsyta:** Det här är huvudområdet där du drar innehåll från vänster spår för att bygga ditt projekt. Projektet uppdateras dynamiskt när du lägger till paneler, visualiseringar och komponenter på arbetsytan. |
 | D | **Listruta för rapportsvit:** För varje panel i Analysis Workspace kan du med rapportsvitens nedrullningsbara meny välja den rapportserie som du vill använda som datakälla. |
+
++++
 
 ## Kom igång för administratörer, analytiker, slutanvändare och utvecklare
 
