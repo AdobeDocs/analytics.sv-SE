@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 2232778be91502eca2ecdc2c9598b8a3375abb8b
+source-git-commit: 5d0133495613c89deca4dc070d38389ef89853b3
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ AN-315605; AN-316306; AN-317494; AN-317844; AN-320424; AN-320597; AN-320680; AN 
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| **37-månaders förfallodatum för inköps-ID och händelse-ID (händelseserialisering)** | Juli 10,2023 | En kommande version av motorn för bearbetning av träff i Analytics, avsedd för lansering den **13 juli 2023**, kommer att börja genomdriva en 37-månaders förfallotid för inköps-ID och händelse-ID (händelseserialisering). För närvarande går köp-ID och händelse-ID aldrig ut i Adobe Analytics. När ett inköps-ID eller händelse-ID visas/används kommer eventuella framtida träffar, oavsett när, att markeras som dubbletter. Med den nya versionen av bearbetningsmotorn:<ul><li>Inköps-ID och händelse-ID:n går alltid ut efter 37 månader.</li><li>Om det har gått 37 månader sedan inköps-ID:t eller händelse-ID:t sågs, betraktas det inte längre som ett dubblettköp eller -händelse.</li><li> Om du återanvänder inköps-ID:n eller händelse-ID:n för mer än 37 månader sedan betraktas de inte längre som dubbletter.</li></ul> |
+| **37-månaders förfallodatum för inköps-ID och händelse-ID (händelseserialisering)** | Juli 10,2023 | Den senaste releasen av motorn för bearbetning av träffar i Analytics, släppt den **13 juli 2023**, började genomdriva en 37-månaders förfallotid för inköps-ID och händelse-ID (händelseserialisering). Tidigare upphörde aldrig Inköp-ID och Händelse-ID i Adobe Analytics. När ett inköps-ID eller ett händelse-ID visades/användes, hade eventuella framtida träffar, oavsett när, markerats som en dubblett. Med den nya versionen av bearbetningsmotorn:<ul><li>Inköps-ID och händelse-ID:n går alltid ut efter 37 månader.</li><li>Om det har gått 37 månader sedan inköps-ID:t eller händelse-ID:t sågs, betraktas det inte längre som ett dubblettköp eller -händelse.</li><li> Om du återanvänder inköps-ID:n eller händelse-ID:n för mer än 37 månader sedan betraktas de inte längre som dubbletter.</li></ul> |
 | **Migrering till autentiseringsuppgifter för Adobe I/O OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API- och LiveStream-kunder som använder Adobe I/O JWT-autentiseringsuppgifter måste migrera till Adobe I/O OAuth Server-till-Server-autentiseringsuppgifter genom att **1 januari 2025**. Mer information och tidslinjer finns i meddelandet om att produkten upphör att gälla i tabellen nedan. |
 
 {style="table-layout:auto"}
