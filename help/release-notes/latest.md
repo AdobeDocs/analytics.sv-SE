@@ -3,7 +3,7 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Se versionsinformationen för Adobe Analytics.
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 00fd63b7486382da5506d16540bb949c52541c6d
+source-git-commit: 2232778be91502eca2ecdc2c9598b8a3375abb8b
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Aktuell versionsinformation för Adobe Analytics (augusti 2023)
 
-**Senaste uppdatering**: 9 augusti 2023
+**Senaste uppdatering**: 24 augusti 2023
 
 Versionsanteckningarna gäller den 9 augusti-13 september 2023. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -20,8 +20,8 @@ Versionsanteckningarna gäller den 9 augusti-13 september 2023. Adobe Analytics-
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Klassificeringsuppsättningar i API 2.0** | Innehåller Adobe Analytics API 2.0-metoder för att spara, ta bort, hämta, importera och exportera klassificeringsuppsättningsdata. | Ej tillämpligt | 31 augusti 2023 |
-| **Rapporteringsaktivitetshanteraren** | Rapporteringsaktivitetshanteraren ger administratörer detaljerad insyn i rapporteringsförbrukningen för varje rapportsvit, så att administratörer enkelt kan diagnostisera och sedan åtgärda kapacitetsproblem under högbelastade rapporteringstider. [Läs mer](/help/admin/admin/reporting-activity.md) | Ej tillämpligt | 6 september 2023 |
+| **Klassificeringsuppsättningar i API 2.0** | Innehåller Adobe Analytics API 2.0-metoder för att spara, ta bort, hämta, importera och exportera klassificeringsuppsättningsdata. | Ej tillämpligt | 30 augusti 2023 |
+| **Rapporteringsaktivitetshanteraren** | Rapporteringsaktivitetshanteraren ger administratörer detaljerad insyn i rapporteringsförbrukningen för varje rapportsvit, så att administratörer enkelt kan diagnostisera och sedan åtgärda kapacitetsproblem under högbelastade rapporteringstider. [Läs mer](/help/admin/admin/reporting-activity.md) | Ej tillämpligt | 12 september 2023 |
 
 {style="table-layout:auto"}
 
