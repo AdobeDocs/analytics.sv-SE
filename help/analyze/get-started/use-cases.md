@@ -2,9 +2,7 @@
 description: Allmän översiktsinformation om Adobe Analytics, inklusive information om Analytics-gränssnittet samt komma igång-information för administratörer, analytiker, användare och utvecklare.
 title: Användningsexempel för analyser
 feature: Analytics Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 5bf266628506bc2f664e4382f819615c5a082763
+source-git-commit: 5ee4e5aa970bb24828092c04fc31cc53f43c4ade
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
