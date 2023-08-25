@@ -4,9 +4,9 @@ title: Användningsexempel för analyser
 feature: Analytics Basics
 hide: true
 hidefromtoc: true
-source-git-commit: f23e0c74072d38d5c6559288b2ced60d98634fac
+source-git-commit: 5bf266628506bc2f664e4382f819615c5a082763
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '291'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Adobe Analytics hjälper organisationer att förstå var kunderna interagerar me
 
 Följande viktiga funktioner i Adobe Analytics:
 
-* Samling av flerkanalsdata
+* [Samling av flerkanalsdata](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en)
 
 * [Integrering av offlinedata](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html?lang=en)
 

@@ -4,9 +4,9 @@ title: Adobe Analytics - översikt
 feature: Analytics Basics
 hide: true
 hidefromtoc: true
-source-git-commit: f23e0c74072d38d5c6559288b2ced60d98634fac
+source-git-commit: 5bf266628506bc2f664e4382f819615c5a082763
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '446'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Använd följande resurser för att lära dig grunderna i Adobe Analytics:
 | Dokumentationsresurs |  -funktion |
 |---------|----------|
 | [Kom igång (efter roll)](/help/analyze/get-started/get-started-by-role.md) | Innehåller detaljerad information som förklarar viktiga funktioner och uppgifter som du behöver känna till, oavsett om du är administratör, analytiker, slutanvändare eller utvecklare. |
-| [Förstå analysgränssnittet](/help/analyze/get-started/analytics-interface.md) | Delar upp viktiga områden i analysgränssnittet. |
+| [Förstå analysgränssnittet](/help/analyze/get-started/analytics-interface.md) | Visar viktiga områden i analysgränssnittet. |
 | [Användningsexempel](/help/analyze/get-started/use-cases.md) | Beskriver några av de viktigaste sätten som Adobe Analytics kan hjälpa företag att få viktiga insikter för att bättre kunna betjäna sina kunder. |
 | [Vilket Adobe Analytics-verktyg ska jag använda?](/help/analyze/get-started/which-analytics-tool.md) | Innehåller rekommenderade användningsfall för varje Adobe Analytics-verktyg. |
 | [Produktjämförelse och krav för analyser](/help/analyze/get-started/analytics-product-comparison.md) | Jämför de olika Adobe Analytics-produkterna som finns. |

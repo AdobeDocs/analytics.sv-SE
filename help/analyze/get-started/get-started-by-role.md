@@ -4,18 +4,24 @@ title: Kom igång för administratörer, analytiker, slutanvändare och utveckla
 feature: Analytics Basics
 hide: true
 hidefromtoc: true
-source-git-commit: f23e0c74072d38d5c6559288b2ced60d98634fac
+source-git-commit: 5bf266628506bc2f664e4382f819615c5a082763
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1901'
 ht-degree: 4%
 
 ---
 
 # Kom igång för administratörer, analytiker, slutanvändare och utvecklare
 
-Det finns tre typer av Adobe Analytics-användare i en typisk organisation: administratörer, analytiker och slutanvändare.
+Det finns fyra typer av Adobe Analytics-användare i en typisk organisation:
 
-Administratörer implementerar och konfigurerar Adobe Analytics, analytiker konfigurerar projekt och skapar analyser med Analysis Workspace, och slutanvändarna får åtgärdbara insikter om sina kunder, antingen genom att skapa egna analyser eller genom att arbeta med analytiker för att skapa dem.
+* **Administratörer:** Implementera och konfigurera Adobe Analytics.
+
+* **Analytiker:** Konfigurera projekt och skapa analyser med Analysis Workspace
+
+* **Slutanvändare:** Få användbara insikter om sina kunder, antingen genom att skapa egna analyser eller genom att samarbeta med analytiker för att skapa dem
+
+* **Utvecklare:** Använd API:erna i Adobe Analytics 2.0 för att direkt anropa Adobe för att utföra nästan alla åtgärder som kan utföras i användargränssnittet, som att skapa rapporter för att utforska, få insikter eller besvara viktiga frågor om data.
 
 Informationen nedan visar hur dessa användare kan komma igång med Adobe Analytics.
 
@@ -68,13 +74,13 @@ Analysadministratörer bör utföra följande uppgifter innan de gör Adobe Anal
 | Definiera behörigheter | Analysadministratörer måste tilldela produktprofiler i Admin Console för Adobe Analytics, Report Suite Tools och Analytics Tools. | [Analysbehörigheter i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en) |
 | Ställ in rapportsviter och definiera inställningar för ditt företag | En rapportsvit är en silo data som Adobe Analytics använder för att generera rapporter.<p>Administratörer kan också konfigurera [virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en) för ytterligare segmentdata.</p> | <ul><li>[Skapa en rapportsvit](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=en)</li><li>[Översikt över företagsinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/c-company-settings.html?lang=en)</li></ul> |
 | Importera data | Med Adobe Analytics datakällor kan du importera ytterligare online- eller offlinedata för rapportering. | [Översikt över datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html?lang=en) |
-| Klassificera data med klassificeringar | Med hjälp av klassificeringar kan du klassificera data så att du bättre kan använda variabler, så att du kan ta med mer innehåll i en enda variabel. | |
+| Klassificera data med klassificeringar | Med hjälp av klassificeringar kan du klassificera data så att du bättre kan använda variabler, så att du kan ta med mer innehåll i en enda variabel. | [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=en) |
 | Hantera komponenter | Använd Data Dictionary och hanteringsområdena för varje komponenttyp för att definiera vilka komponenter som är tillgängliga i din Analytics-implementering, samt vilka som är godkända för din organisation.<p>Detta bör vara en pågående aktivitet för att säkerställa att komponenterna används effektivt i organisationen. </p> | <ul><li>[Översikt över dataordlistan](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.html?lang=en)</li><li>[Beräknat måttansvarig](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-manager.html?lang=en)</li><li>[Hantera segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-manage.html?lang=en)</li><li>[Skapa anpassade datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html?lang=en)</li></ul> |
 | Analysidentifiering | Analysidentifiering är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data. | [Översikt över avvikelseidentifiering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/anomaly-detection/anomaly-detection.html?lang=en) |
 | Bidragsanalys | Contribute Analysis avslöjar dolda mönster i era data för att förklara statistiska avvikelser och identifiera korrelationer bakom oväntade kundaktiviteter, obundna värden och plötsliga toppar eller dalar för valda mätvärden över konvergerande målgruppssegment. | [Översikt över bidragsanalys](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html?lang=en) |
 | Analytics-segmentering | Gör att ni kan skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter. | [Analytics-segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html?lang=en) |
-| Publicera målgrupper i Audience Manager | | |
-| Integreringar | Du kan visa information från andra program i Adobe Analytics. <p>Nedan följer några vanliga integreringar:</p><ul><li><a href="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/a4t-panel.html?lang=en">Analyser för Target</a></li><li><a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en">Media Analytics</a></li> | |
+| Publicera målgrupper i Audience Manager | Adobe Audience Manager är en kraftfull datahanteringsplattform som hjälper er att skapa unika målgruppsprofiler från dataintegreringar från första part, andra part (partner) och tredje part. | [Audience Analytics - översikt](https://experienceleague.adobe.com/docs/analytics/integration/audience-analytics/mc-audiences-aam.html?lang=en) |
+| Integreringar | Du kan visa information från andra program i Adobe Analytics. <p>Nedan följer några vanliga integreringar:</p><ul><li><a href="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/a4t-panel.html?lang=en">Analyser för Target</a></li><li><a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=en">Media Analytics</a></li> | [Analytics-integrering](https://experienceleague.adobe.com/docs/analytics/integration/home.html?lang=en) |
 
 {style="table-layout:auto"}
 
