@@ -1,9 +1,9 @@
 ---
-description: Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
+description: Med segment kan du identifiera undergrupper av besökare baserat på egenskaper eller webbplatsinteraktioner. Segmenten är utformade som kodade målgruppsinsikter som ni kan bygga för era specifika behov, och sedan verifiera, redigera och dela med andra teammedlemmar eller använda i andra Adobe-produkter och Analytics-funktioner.
 title: Om segment
 feature: Segmentation
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: 9ae046e99b25cf8d648d80968124f9688fdd3cd5
+source-git-commit: 483e1b3f566003ca4433de891834338a852ba8b3
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Segment identifierar
 
 Segment kan baseras på följande värden:
 
-- Besökare baserade på attribut: webbläsartyp, enhet, antal besök, land, kön.
+- Besökare baserat på attribut: webbläsartyp, enhet, antal besök, land, kön.
 - Besökare baserade på interaktioner: kampanjer, sökord, sökmotor.
 - Besökare baserade på utgångar och tävlingsbidrag: besökare från Facebook, en definierad landningssida, hänvisande domän.
 - Besökare baserade på anpassade variabler: formulärfält, definierade kategorier, kund-ID.
@@ -111,9 +111,9 @@ Den här typen av segment filtrerar datauppsättningar baserat på egenskaper so
 - Du kan [använda flera segment i en rapport eller ett projekt](/help/components/segmentation/segmentation-workflow/seg-workflow.md).
 - Segmenten är universella för alla rapportsviter.
 - The [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-workflow.md) gör det enklare att skapa segment.
-- The [Segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) låter dig konfigurera [arbetsflöden](/help/components/segmentation/segmentation-workflow/seg-workflow.md) med segmentdelning, taggning, verifiering och godkännandefunktioner.
+- The [Segmenthanteraren](/help/components/segmentation/segmentation-workflow/seg-workflow.md) gör att du kan konfigurera [arbetsflöden](/help/components/segmentation/segmentation-workflow/seg-workflow.md) med segmentdelning, taggning, verifiering och godkännandefunktioner.
 - Du kan [taggsegment](/help/components/segmentation/segmentation-workflow/seg-workflow.md) om du vill ordna och söka senare i stället för att använda mappar.
-- Du kan skapa [Sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+- Du kan [Sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
 - The [!UICONTROL Page View] behållaren är nu [!UICONTROL Hit] behållare som anger att den här behållaren segmenterar alla typer av data och inte bara sidvyer. Till exempel tas alla anrop för länkspårning och trackAction-anrop från de mobila SDK:erna med eller utan av träffbehållaren.
 
 ## Segmentering i Analysis Workspace
@@ -122,7 +122,7 @@ Analysis Workspace innehåller följande funktioner:
 
 - Du kan [jämföra segment](../../analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md).
 - Använd [segment som dimensioner](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) i en jämförelse.
-- Använd segment i [bortfallsanalys](../../analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md).
+- Använd segment i [fallanalys](../../analyze/analysis-workspace/visualizations/fallout/compare-segments-fallout.md).
 
 ## Segment som tillhandahålls av Adobe
 
@@ -136,11 +136,11 @@ Med hjälp av sekventiella segment kan du identifiera besökare baserat på navi
 
 | Besök en | Besök två | Besök tre |
 |---|---|---|
-| Vid det första besöket gick besökaren till huvudlandningssidan A, exkluderade kampanjsidan B och tittade sedan på produktsidan C. | Vid det andra besöket gick besökaren åter till huvudlandningssidan A, exkluderade kampanjsidan B, gick tillbaka till produktsidan C och sedan till en ny sida D. | Vid det tredje besöket gick besökaren in på och följde samma väg som vid det första och andra besöket och uteslöt sedan sidan F för att gå direkt till en målproduktsida G. |
+| Vid det första besöket gick besökaren till huvudlandningssidan A, exkluderade kampanjsidan B och tittade sedan på produktsidan C. | Vid det andra besöket gick besökaren åter till huvudlandningssidan A, exkluderade kampanjsidan B, gick tillbaka till produktsidan C och sedan till en ny sida D. | Vid det tredje besöket gick besökaren in på och följde samma väg som vid det första och andra besöket och uteslöt sedan sidan F för att gå direkt till produktsidan G. |
 
 Sekventiella segment kan baseras på följande träffvärden:
 
-- Besökare baserade på sekvenser av sidträffar: sidvisningar vid ett och samma besök, sidvisningar vid olika besök, besök där sidvisningar utesluts.
+- Besökare baserade på sekvenser av sidträffar: sidvisningar vid ett enda besök, sidvisningar vid olika besök, besök där sidvisningar utesluts.
 - Besökare baserat på tiden mellan och efter sidvisningar: efter en tidsgräns, mellan träffar, efter en händelse.
 
 <table style="table-layout:fixed; border: none;">
@@ -239,10 +239,10 @@ Ett sekventiellt segment filtrerar datauppsättningar baserat på användaråtg�
 
 Den här videon ger en kort översikt över vilka segmentbehållare som är och hur de används:
 
-![](https://video.tv.adobe.com/v/25401)
+>[!VIDEO](https://video.tv.adobe.com/v/25401/?quality=12&learn=on)
 
 
-## Åtkomst till segmenteringsverktygen {#access}
+## Öppna segmenteringsverktygen {#access}
 
 +++ **Hur når jag segmentbyggaren?**
 
@@ -252,7 +252,7 @@ Du kommer åt segmentbyggaren genom att:
 
 - Överst i segmenthanteraren klickar du på **[!UICONTROL + Add]**.  ![Knappen Lägg till](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)
 
-   eller
+  eller
 
 - Klicka på en befintlig segmenttitel i segmenthanteraren för att redigera segmentet i segmentbyggaren.
 
