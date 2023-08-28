@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 0ece9b2fddcf905951bbe35ec0a3ff862baff71c
+source-git-commit: 6681eedee327a5bb9cbfcb8ccf00ac32628f5a1f
 workflow-type: tm+mt
-source-wordcount: '4885'
+source-wordcount: '4922'
 ht-degree: 26%
 
 ---
@@ -26,6 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **Augusti 2023** | |
+| Förtydligande av dataflöde | Uppdaterat [definitionen av start- och slutdatum](/help/export/analytics-data-feed/create-feed.md) för att förtydliga att när du bearbetar dataflöden för historiska data kan du ange startdatumet till vilket datum som helst tidigare när data samlas in. |
 | Experience Edge-datahantering | Lagt till innehåll så här Adobe Analytics [hanterar data från Experience Edge](../implement/aep-edge/overview.md). |
 | Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analyze/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) för att förbättra läsbarheten. |
 | Flyttat innehåll om hantering av schemalagda projekt | Skapade en ny artikel i Analytics Components Guide med namnet [Schemalagda projekt](/help/components/scheduled-projects-manager.md). Innehållet fanns tidigare i [Schemalägg projekt](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) artikel i Analytics Tools Guide. |

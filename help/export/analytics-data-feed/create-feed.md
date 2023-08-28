@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: d9b1caf1edf473461d176d472f6f73c04cc1dbad
+source-git-commit: 6681eedee327a5bb9cbfcb8ccf00ac32628f5a1f
 workflow-type: tm+mt
-source-wordcount: '3170'
+source-wordcount: '3171'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ När du skapar en datafeed kan du ge Adobe:
    | [!UICONTROL **E-post när slutförd**] | E-postadressen som ska meddelas när en feed har bearbetats. E-postadressen måste vara korrekt formaterad. |
    | [!UICONTROL **Feedintervall**] | Välj **Dagligen** för bakåtfyllnad eller historiska data. Dagliga matningar innehåller data för en hel dag, från midnatt till midnatt i rapportsvitens tidszon.  Välj **Varje timme** för att fortsätta med data (Daily finns också tillgängligt för att fortsätta feeds om du vill). Timmatningar innehåller en timmes data. |
    | [!UICONTROL **Fördröjd bearbetning**] | Vänta en viss tid innan du bearbetar en datafeedfil. En fördröjning kan vara användbar för att ge mobila implementeringar möjlighet att komma online och skicka data på offlineenheter. Den kan också användas för att hantera serverprocesser i organisationen när tidigare bearbetade filer hanteras. I de flesta fall behövs ingen fördröjning. En feed kan fördröjas med upp till 120 minuter. |
-   | [!UICONTROL **Start- och slutdatum**] | Startdatumet anger det första datum då du vill ha en datafeed. Ange det här datumet i det förflutna för att omedelbart börja bearbeta dataflöden för historiska data. Bearbetningen av feeds fortsätter tills de når slutdatumet. Start- och slutdatumen baseras på rapportsvitens tidszon. |
+   | [!UICONTROL **Start- och slutdatum**] | Startdatumet anger det datum då du vill att dataflödet ska börja. Om du omedelbart vill börja bearbeta dataflöden för historiska data anger du det här datumet till ett tidigare datum när data samlas in. Start- och slutdatumen baseras på rapportsvitens tidszon. |
    | [!UICONTROL **Kontinuerlig feed**] | Den här kryssrutan tar bort slutdatumet, vilket gör att en feed kan köras på obestämd tid. När en feed har avslutat bearbetningen av historiska data väntar en feed på data för att slutföra insamlingen under en given timme eller dag. När den aktuella timmen eller dagen är slut börjar bearbetningen efter den angivna fördröjningen. |
 
 1. I [!UICONTROL **Mål**] i [!UICONTROL **Typ**] väljer du målet dit du vill att data ska skickas.
