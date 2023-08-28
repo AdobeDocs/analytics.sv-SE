@@ -1,18 +1,18 @@
 ---
-description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och analyser, Report Builder, Data warehouse och Data Workbench
+description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och analyser, Report Builder, Data Warehouse och Data Workbench
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 860621a058826ba8bf602d87a702f835c7c00a37
+source-git-commit: 71ebabf7efca70c0cbd2489dc538f7f10cae16cb
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '432'
 ht-degree: 37%
 
 ---
 
 # Produktjämförelse och krav för analyser
 
-Den här sidan innehåller en jämförelse av olika Adobe Analytics-produkter: Analysis Workspace, Reports &amp; Analytics, Report Builder, Data warehouse, Data Workbench, Data Feeds och Analytics API 2.0.
+Den här sidan innehåller en jämförelse av olika Adobe Analytics-produkter: Analysis Workspace, Reports &amp; Analytics, Report Builder, Data Warehouse, Data Workbench, Data Feeds och Analytics API 2.0.
 
 Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Adobe Analytics-verktyg ska jag använda?](/help/analyze/get-started/which-analytics-tool.md).
 
@@ -37,5 +37,5 @@ Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Ad
 | **Kuration** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/curate.md) | Ja - projekt och VRS | Nej | Nej | Nej | Nej | Nej | Ja - endast VRS |
 | **Projektdelning** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md) | Ja, med projektroller | Ja | Ja | Nej | Ja | Nej | Nej |
 | **Schemalagd leverans** | Ja | Ja | Ja | Ja | Nej | Ja | Nej |
-| **Leveransmål** | E-post | E-post | E-post, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/report-builder/c-publish-power-bi/power-bi.md) | E-post, FTP. Kontakta kundtjänst för ytterligare destinationssupport som SFTP, Azure Blob, Amazon S3 | - | FTP, SFTP, Azure Blob, Amazon S3 | - |
+| **Leveransmål** | E-post | E-post | Email, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/report-builder/c-publish-power-bi/power-bi.md) | Email, FTP. Kontakta kundtjänst för ytterligare destinationssupport som SFTP, Azure Blob, Amazon S3 | - | Amazon S3, Azure RBAC, Azure SAS och Google Cloud Platform | - |
 | **Tidsbearbetning för VRS-rapport** <br> [Läs mer](/help/components/vrs/vrs-report-time-processing.md) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
