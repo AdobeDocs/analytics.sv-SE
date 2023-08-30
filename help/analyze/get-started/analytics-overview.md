@@ -1,10 +1,11 @@
 ---
 description: Allmän översiktsinformation om Adobe Analytics, inklusive information om Analytics-gränssnittet samt komma igång-information för administratörer, analytiker, användare och utvecklare.
+short-description: Lär dig viktiga funktioner, vanliga användningsexempel och första steg för analytiker, slutanvändare och administratörer.
 title: Adobe Analytics - översikt
 feature: Analytics Basics
-source-git-commit: 5ee4e5aa970bb24828092c04fc31cc53f43c4ade
+source-git-commit: 8adf512522d89ab1f2187c6f9be7373c0a430f17
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '461'
 ht-degree: 3%
 
 ---
