@@ -2,9 +2,9 @@
 description: Se och hantera schemalagda rapporter i hela organisationen.
 title: Projekthanterare för schemaläggning
 feature: Admin Tools
-source-git-commit: 8d0cf795b0366b2797fa0574ae9faaffb76b005e
+source-git-commit: d65ef389ae9bc3164be928ffe64cc805b8b1e59d
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '434'
 ht-degree: 1%
 
 ---
@@ -13,9 +13,19 @@ ht-degree: 1%
 
 Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
 
-När du hanterar schemalagda projekt kan du redigera och ta bort återkommande projektscheman. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter [!UICONTROL Tags], [!UICONTROL Owners], [!UICONTROL Favorites], med mera.
+När du hanterar schemalagda projekt kan du redigera och ta bort återkommande projektscheman:
 
-![](assets/scheduled-project-manager2.png)
+* Ändra filtyp (.csv eller PDF)
+* Uppdatera projektbeskrivningen
+* Lägga till eller ta bort mottagare
+* Ändra frekvens
+
+Ändra ett schemalagt projekt
+
+1. Välj **Analytics > Components > Scheduled Projects**.
+1. Sök efter ett schema i sökfältet eller med filteralternativen i den vänstra listen. Du kan filtrera efter [!UICONTROL Tags], [!UICONTROL Owners], [!UICONTROL Favorites], med mera.
+
+![Skärmbild som visar listan med schemalagda projekt med kolumnen med rubrik, ägare, taggar, levererade till och andra kolumner som beskrivs i avsnittet Tillgängliga kolumner.](assets/scheduled-project-manager2.png)
 
 ## Tillgängliga kolumner
 

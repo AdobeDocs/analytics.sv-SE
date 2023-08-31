@@ -5,16 +5,16 @@ title: Schemalägg projekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 2d6854f7-8954-4d55-b2be-25981cfb348b
-source-git-commit: 00c2b924d31f7a68258bba5e96ef1a39d4707766
+source-git-commit: d65ef389ae9bc3164be928ffe64cc805b8b1e59d
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '300'
 ht-degree: 2%
 
 ---
 
 # Schemalägg projekt
 
-Från arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format.
+Från arbetsytan **Dela-menyn** kan du skicka Analysis Workspace-projekt via e-post till utvalda mottagare. Filer kan skickas i CSV- eller PDF-format. När du har delat schemalagda projekt kan du redigera schemainställningarna för att ändra frekvens, mottagarlista eller filtyp med hjälp av hanteraren för schemalagda projekt.
 
 ## Skicka filen nu
 
@@ -46,6 +46,14 @@ Så här skickar du en fil i ett återkommande schema till mottagarna via e-post
 ![](assets/send-on-schedule.png)
 
 ## Hantera schemalagda projekt
+
+När du hanterar schemalagda projekt kan du redigera och ta bort återkommande projektscheman:
+
+* Ändra filtyp (.csv eller PDF)
+* Uppdatera projektbeskrivningen
+* Lägga till eller ta bort mottagare
+* Ändra frekvens
+
 
 Schemalagda Analysis Workspace-projekt kan hanteras under **Analytics > Components > Scheduled Projects**.
 
