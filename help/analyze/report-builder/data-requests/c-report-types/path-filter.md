@@ -4,7 +4,7 @@ title: Filtrera en sökvägsrapport med frågeguiden
 feature: Report Builder
 role: User, Admin
 exl-id: 085351b3-4d9c-45cf-b2a8-379f05932b26
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 4%
@@ -48,7 +48,7 @@ I det här exemplet används platsavsnittssökvägar.
 
    ![](assets/select_a_pattern.png)
 
-   Vissa av dessa mönster är specifika för rapportbyggare: Nästa objektmönster för startsökvägen, Avsluta banans tidigare objektmönster, Nästa objektmönster.
+   Vissa av dessa mönster är specifika för Report Builder: Nästa objektmönster för startsökvägen, Avsluta banans tidigare objektmönster och Nästa objektmönster.
 
 ## Redigera ett fördefinierat mönster
 

@@ -1,25 +1,27 @@
 ---
-title: Visual Basic-makron i Report Builder
-description: Utöka funktionaliteten i Excel-arbetsböcker och Report Builder med hjälp av VBA.
+title: Så här använder du Visual Basic-makron i Report Builder
+description: Lär dig hur du utökar funktionerna i Excel-arbetsböcker och Report Builder med hjälp av VBA-makron.
 feature: Report Builder
 role: User, Admin
 exl-id: 0d92bce2-22ae-4b0c-af1d-3d12f2041ddf
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
 # Visual Basic-makron i Report Builder
 
-Med VBA-makron, som även kallas Visual Basic-makron, kan du hantera arbetsböcker på ett sätt som bara Microsoft Excel inte kan. Visual Basic har tillgång till arbetsboken, Excel och till och med Windows.
+VBA-makron (Visual Basic) innehåller funktioner som hjälper dig att uppdatera Excel-arbetsböcker. Visual Basic har tillgång till arbetsboken, Excel och Windows.
 
-Adobe stöder tre Report Builder API-metoder. Kontrollera att den senaste versionen av Report Builder är installerad och logga in innan du kör några makron.
+Du måste köra den senaste versionen av Report Builder och logga in innan du kör VBA-makron.
 
 >[!IMPORTANT]
 >
 >Av säkerhetsskäl kan du inte schemalägga en arbetsbok som innehåller ett makro.
+
+Adobe stöder tre Report Builder API-metoder.
 
 ## `RefreshAllReportBuilderRequests()`
 
@@ -57,7 +59,7 @@ End Sub
 
 ## `RefreshAllReportBuilderRequestsInCellsRange()`
 
-The `RefreshAllReportBuilderRequestsInCellsRange()` makrot uppdaterar alla Report Builder-begäranden vars cellutdata korsar det angivna cellintervallet. Cellområdet som används i det här exemplet pekar på området `B1:B54` av arbetsbladet&quot;Data&quot; i den aktiva arbetsboken. Intervalluttrycket stöder alla Excel-intervalluttryck som stöds:
+The `RefreshAllReportBuilderRequestsInCellsRange()` makrot uppdaterar alla Report Builder-begäranden vars cellutdata korsar det angivna cellintervallet. Cellområdet som används i det här exemplet pekar på området `B1:B54` av arbetsbladet Data i den aktiva arbetsboken. Intervalluttrycket stöder alla Excel-intervalluttryck som stöds:
 
 ```vba
 Sub RefreshAllReportBuilderRequestsInCellsRange()

@@ -4,7 +4,7 @@ title: Hantera segment (Report Builder)
 feature: Report Builder
 role: User, Admin
 exl-id: c4ad89e0-91c9-47e1-a226-69d82fdb8918
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
@@ -47,12 +47,12 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 
 1. Segment Builder-gränssnittet kommer nu att startas i Internet Explorer. Användargränssnittet för segmentbyggaren initieras med den behållare och det filter som du angav.
 1. När du har lagt till ett namn och en beskrivning i segmentet sparar du det.
-1. Gå tillbaka till Report builder och klicka på ikonen Uppdatera för att uppdatera listan med segment.
+1. Gå tillbaka till Report Builder och klicka på ikonen Uppdatera för att uppdatera segmentlistan.
 1. Du kan nu använda det här segmentet.
 
 ## Söka efter och använda segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
 
-Alla segment som har skapats i Rapporter och analyser, Report Builder eller Data warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).
+Alla segment som har skapats i Rapporter och analyser, Report Builder eller Data Warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).
 
 Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar sekventiella segment.
 
@@ -76,7 +76,7 @@ Tillgängliga filter:
 |---|---|
 | Taggar | Gör att du kan filtrera segment med specifika taggar. Observera att taggfilter använder operatorn AND. Om du markerar två taggar visas de segment i den högra rutan som har taggats med **båda** -taggar. |
 | Ägare | Gör att du kan filtrera segment efter ägare. Observera att ägarfilter använder operatorn OR. Om du markerar två ägare visar den högra rutan segment som ägs av **antingen** ägare. |
-| Andra filter > Endast *rapportsvitens namn* | Om du använder Endast *rapportsvitens namn*&quot; i Segment Builder i [!DNL marketing reports & analytics]och sedan visa det avancerade filtret i [!DNL report builder]visas bara segmentet för den valda rapportsviten. |
+| Andra filter > Endast *rapportsvitens namn* | Om du använder Endast *rapportsvitens namn*&quot; i Segment Builder i [!DNL marketing reports & analytics]och sedan visa det avancerade filtret i [!DNL Report Builder]visas bara segmentet för den valda rapportsviten. |
 | Andra filter > Mitt | Visar alla segment som du äger. |
 | Andra filter > Delat med mig | Visar alla segment som andra delar med dig. |
 | Andra filter > Favoriter | Visar alla segment som du har markerat som Favoriter. |

@@ -1,13 +1,13 @@
 ---
-description: Du kan schemalägga rapporter som ska skickas enligt den tid och det filformat som du anger.
+description: Lär dig schemalägga rapporter.
 title: Schemalägg en databegäran
 uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 feature: Report Builder
 role: User, Admin
 exl-id: 6aaadaa8-d68f-4a03-8838-53a61b152e31
-source-git-commit: d5d4d1c9274bba8c3a40ee8fe86da311c1d1220b
+source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,10 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 >&quot;Leveranstid&quot;/&quot;Dagtid&quot; som anges av användaren anger den tid som arbetsboken ska påbörja bearbetningen, inte den tid som den faktiskt kommer att levereras. Den faktiska tiden som arbetsboken levereras baseras främst på hur lång tid det tar att bearbeta (komplexa och stora arbetsböcker tar längre tid att bearbeta än enklare arbetsböcker). Om en arbetsbok t.ex. tar 15 minuter att bearbeta, kommer den faktiska leveranstiden att vara minst 15 minuter efter den ursprungligen angivna leveranstiden/&quot;Dagtid&quot;.
 >Det finns dessutom ett antal andra faktorer som kan öka fördröjningen innan arbetsboken levereras ytterligare:
 >
-> * **Köra många olika scheman av samma typ samtidigt** kan överlagra systemet. Schemaläggningssystemet tillåter endast ett fåtal (5-10) arbetsböcker av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra arbetsböcker är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags arbetsböcker vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
+> * **Köra många olika scheman av samma typ samtidigt** kan överlagra systemet. Schemaläggningssystemet tillåter endast ett fåtal (5-10) arbetsböcker av någon typ att köras samtidigt, så när fler än 5-10 är schemalagda samtidigt måste vissa vänta på att andra arbetsböcker ska avslutas innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags arbetsböcker vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
 > * Förutom den specifika arbetsbokstypen väntar arbetsböckerna också i rad om företaget har **mer än 15-20 arbetsböcker schemalagda samtidigt (för alla olika arbetsbokstyper)**. Detta kan minskas genom att tidsintervallen ökas i stället för att många körs exakt samtidigt.
-> * **Problem inom tjänster längre fram i kedjan** som Scheduler förlitar sig på kan också påverka leverans av arbetsböcker. Om du t.ex. använder API:erna separat för att köra arbetsböcker och fylla i API-begärandekön kan dina schemalagda arbetsböcker leverera långsamt medan du konkurrerar om den resursen.
+> * **Problem inom tjänster längre fram i kedjan** som schemaläggaren förlitar sig på kan också påverka leveransen av arbetsböcker. Om du t.ex. använder API:erna separat för att köra arbetsböcker och fylla i API-begärandekön kan dina schemalagda arbetsböcker leverera långsamt medan du konkurrerar om den resursen.
 > * **Sändningsfördröjning för rapport** (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda arbetsböcker.
-
 
 ## Schemalägga en arbetsbok
 
@@ -41,10 +40,9 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 1. Klicka på verktygsfältet Report Builder **[!UICONTROL Schedule]**.
 
    The [!UICONTROL Scheduled Reports] sammanfattar alla uppgifter som du har skapat samt antalet återstående uppgifter.
-1. På **[!UICONTROL Scheduled Reports]** flik, klicka **[!UICONTROL New]**.
-1. Guiden Basic Scheduling visar:
+1. På **[!UICONTROL Scheduled Reports]** flik, klicka **[!UICONTROL New]**. I guiden Grundläggande schemaläggning visas de alternativ som används för att definiera den schemalagda rapporten.
 
-   ![](assets/simple-schedule-wizard.png)
+   ![Skärmbild som visar guiden Grundläggande schemaläggning.](assets/simple-schedule-wizard.png)
 
 1. I [!UICONTROL Basic Scheduling Wizard]konfigurerar du följande alternativ:
 

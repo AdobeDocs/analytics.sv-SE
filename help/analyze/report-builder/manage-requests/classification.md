@@ -1,20 +1,20 @@
 ---
-description: Klassificeringsfördelningar används för att mappa analysrapporteringsdata till relaterade egenskaper. Klassificeringar kan användas för olika syften men används oftast för att klassificera kampanjspårningskoder (både interna och externa) och produkt-ID:n.
-title: Klassificering
+description: Lär dig hur klassificeringar används.
+title: Klassificering av data
 uuid: c64ede6e-ce11-48c0-944d-dc365809d673
 feature: Report Builder
 role: User, Admin
 exl-id: ca083152-d589-4896-8cd0-9f8e1cee2116
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
 # Klassificeringar
 
-Klassificeringsfördelningar används för att mappa analysrapporteringsdata till relaterade egenskaper. Klassificeringar kan användas för olika syften men används oftast för att klassificera kampanjspårningskoder (både interna och externa) och produkt-ID:n.
+Klassificeringsfördelningar används för att mappa analysrapporteringsdata till relaterade egenskaper. Klassificeringar kan användas för olika syften men används oftast för att klassificera kampanjspårningskoder, både interna och externa, samt produkt-ID:n.
 
 Till exempel en [!UICONTROL Campaign] kan ha en [!UICONTROL Manager] klassificering och [!UICONTROL Outlet] klassificering. Dessa klassificeringar kan sedan sorteras efter en viss hierarki och varje grupp med rapportvärden kan delas upp i undergrupper.
 

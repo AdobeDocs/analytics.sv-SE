@@ -1,79 +1,79 @@
 ---
-description: Den här möjligheten integrerar användningen av Report Builder i det naturliga Excel-arbetsflödet utan att du behöver använda användargränssnittet i Report Builder.
-title: Anropa Report Builder-funktioner från Microsoft Excel-funktioner
+description: Lär dig hur du använder Microsoft Excel med Report Builder utan att behöva använda användargränssnittet i Report Builder.
+title: Lär dig hur du använder Microsoft Excel med funktioner i Report Builder
 uuid: 5342cc4f-085d-4a2d-a498-38b00a3ef4d3
 feature: Report Builder
 role: User, Admin
 exl-id: b412f2b5-affe-4297-af4b-85e8c6dfd257
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 3%
+source-wordcount: '487'
+ht-degree: 0%
 
 ---
 
-# Anropa Report Builder-funktioner från Microsoft Excel-funktioner
+# Använda Report Builder med Microsoft Excel
 
-Den här möjligheten integrerar användningen av Report Builder i det naturliga Excel-arbetsflödet utan att du behöver använda användargränssnittet i Report Builder.
+Du kan använda Report Builder-funktioner för att få åtkomst till funktioner utan att använda användargränssnittet i Report Builder.
 
-Du kan till exempel automatiskt uppdatera Report Builder-begäranden vars indatafilter baseras på data som hämtats i Excel från andra källor. Nu kan du göra detta med strängen RefreshRequestsInCellsRange(..) funktion. Alla anrop är asynkrona. De returnerar omedelbart och väntar inte på att ett anrop ska köras helt.
+Om du till exempel automatiskt vill uppdatera Report Builder-begäranden med indatafilter som baseras på data som hämtas till Excel från andra källor, använder du strängen RefreshRequestsInCellsRange(..) funktion. Alla anrop är asynkrona och returneras omedelbart och väntar inte på att köras helt.
 
->[!NOTE]
->
->Du måste ha Report Builder 5.0 (eller senare) installerat för att den här funktionen ska fungera.
+**Krav**
 
-Här följer en tabell med en lista över funktioner som visas:
+* Report Builder 5.0 (eller senare) krävs.
 
-| Funktionsnamn | Beskrivning |
-|---|---|
-| string AsyncRefreshAll() | Uppdaterar alla Report Builder-begäranden som finns i en arbetsbok. |
-| string AsyncRefreshRange(strängintervallAddressInA1Format) | Uppdaterar alla Report Builder-begäranden som finns i den angivna cellintervalladressen (ett stränguttryck som representerar ett cellintervall i A1-format, till exempel &quot;Sheet1!A2:A10&quot;). |
-| string AsyncRefreshRangeAltTextParam() | Uppdaterar alla Report Builder-begäranden som finns i det angivna cellintervallet som skickas via den alternativa texten i MS Form Control. |
-| string AsyncRefreshActiveWorksheet() | Uppdaterar alla Report Builder-begäranden som finns i det aktiva kalkylbladet. |
-| string AsyncRefreshWorksheet(string worksheetName) | Uppdaterar alla Report Builder-begäranden som finns i det angivna kalkylbladet (kalkylbladets namn så som det visas på fliken). |
-| string AsyncRefreshWorksheetAltTextParam(); | Uppdaterar alla Report Builder-begäranden som finns i det specifika kalkylbladsnamnet som skickades via den alternativa texten i MS-formulärkontrollen |
-| string GetLastRunStatus() | Returnerar en sträng som beskriver statusen för den senaste körningen. |
+Följande tabell visar vilka funktioner som visas.
 
-Gå till [!UICONTROL Formulas] > [!UICONTROL Insert Function]. Längst ned i kategorilistan finns Adobe.ReportBuilder.Bridge:
+| Funktionsnamn | Typ | Beskrivning |
+|:---| --- | ---|
+| AsyncRefreshAll() | string | Uppdaterar alla Report Builder-begäranden som finns i en arbetsbok. |
+| AsyncRefreshRange(strängintervallAddressInA1Format) | string | Uppdaterar alla Report Builder-begäranden som finns i den angivna cellintervalladressen (ett stränguttryck som representerar ett cellintervall i A1-format, till exempel &quot;Sheet1!A2:A10&quot;). |
+| AsyncRefreshRangeAltTextParam() | string | Uppdaterar alla Report Builder-begäranden som finns i det angivna cellintervallet som skickas via den alternativa texten i MS Form Control. |
+| AsyncRefreshActiveWorksheet() | string | Uppdaterar alla Report Builder-begäranden som finns i det aktiva kalkylbladet. |
+| AsyncRefreshWorksheet(string worksheetName) | string | Uppdaterar alla Report Builder-begäranden som finns i det angivna kalkylbladet (kalkylbladets namn så som det visas på fliken). |
+| AsyncRefreshWorksheetAltTextParam(); | string | Uppdaterar alla Report Builder-begäranden som finns i det specifika kalkylbladsnamnet som skickades via den alternativa texten i MS-formulärkontrollen |
+| tring GetLastRunStatus() | string | Returnerar en sträng som beskriver statusen för den senaste körningen. |
 
-![](assets/arb_functions.png)
+Om du vill komma åt funktionerna i Report Builder går du till **[!UICONTROL Formulas]** > **[!UICONTROL Insert Function]**. Använd sökfältet för att söka efter en funktion eller välj en kategori för att lista funktionerna i den kategorin.
 
-## Använd de här funktionerna i en formel {#section_034311081C8D4D7AA9275C1435A087CD}
+![Skärmbild som visar fönstret Infoga funktion med kategorilistan utökad.](assets/arb_functions.png)
 
-Formeln
+## Exempel {#section_034311081C8D4D7AA9275C1435A087CD}
+
+I följande exempel visas *Om värdet i cell P5 är text eller tomt, uppdaterar du intervallet som finns i cell P9*.
 
 ```
 =IF(OR(ISTEXT(P5),ISBLANK(P5)),AsyncRefreshRange("P9"),"")
 ```
 
-säger&quot;Om värdet i cell P5 är text eller tomt, uppdaterar du det intervall som finns i cell P9.&quot;
-
 ## Använda Report Builder-funktioner med formatkontroll {#section_26123090B5BD49748C8D8ED7A1C5ED84}
 
-Nu kan du tilldela ett makro till en kontroll som du har skapat och den kontrollen kan vara en funktion som uppdaterar en arbetsboksförfrågan. Funktionen AsyncRefreshActiveWorksheet uppdaterar till exempel alla begäranden i ett kalkylblad. Ibland kanske du bara vill uppdatera vissa förfrågningar, inte alla.
+Du kan tilldela ett makro till en kontroll som du har skapat och den kontrollen kan vara en funktion som uppdaterar en arbetsboksförfrågan. Funktionen AsyncRefreshActiveWorksheet uppdaterar till exempel alla begäranden i ett kalkylblad. Ibland kanske du bara vill uppdatera vissa förfrågningar.
 
 1. Ange makroparametern.
 1. Högerklicka på kontrollen och välj **[!UICONTROL Assign Macro]**.
-1. Ange funktionsnamnet för Report Builder (inga parametrar eller parenteser).
+1. Ange funktionsnamnet i Report Builder (inga parametrar eller parenteser).
 
-![](assets/assign_macro.png)
+![Skärmbild som visar fönstret Tilldela makro.](assets/assign_macro.png)
 
-## Skicka parametrar till Report Builder via formatkontroll {#section_ECCA1F4990D244619DFD79138064CEF0}
+## Skicka parametrar till Report Builder-funktioner med formatkontroll {#section_ECCA1F4990D244619DFD79138064CEF0}
 
-De två funktionerna som tar en parameter kan användas med Formatkontroll, men endast via fältet Alt-text:
+Två funktioner som tar en parameter kan användas med Formatkontroll. Du måste använda **Alternativ text:** fält:
 
 * AsyncRefreshRange(strängintervallAddressInA1Format)
 * AsyncRefreshWorksheet(string worksheetName)
 
+Skicka parametrar till Report Builder-funktioner med formatkontroll
+
 1. Högerklicka på kontrollen och välj **[!UICONTROL Format Control]**.
 
-   ![](assets/format_control.png)
+   ![Skärmbild med Formatkontroll valt.](assets/format_control.png)
 
-1. Klicka på [!UICONTROL Alt Text] -fliken.
+1. Klicka på **[!UICONTROL Alt Text]** -fliken.
 
-   ![](assets/alt_text.png)
+   ![Skärmbild som visar fliken Alt Text och fältet Alternativ text:.](assets/alt_text.png)
 
-1. Under [!UICONTROL Alternative text]anger du cellområdet som du vill uppdatera.
-1. Öppna listan över parametrar för Report builder under [!UICONTROL Formulas] > [!UICONTROL Insert Function]> [!UICONTROL Adobe.ReportBuilder.Bridge].
+1. Under **[!UICONTROL Alternative text]** anger du cellområdet som du vill uppdatera.
+1. Öppna listan över Report Builder-parametrar under **[!UICONTROL Formulas]** > **[!UICONTROL Insert Function]**> **[!UICONTROL Adobe.ReportBuilder.Bridge]**.
 
 1. Välj en av de två funktionerna som slutar med AltTextParam och klicka på **[!UICONTROL OK]**.

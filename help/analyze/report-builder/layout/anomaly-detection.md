@@ -5,7 +5,7 @@ uuid: 02da21b4-3394-471b-97b5-aa1bddf1f445
 feature: Report Builder
 role: User, Admin
 exl-id: 6e3881c8-3e1c-4df8-ba38-e8bc84cfc3d4
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Report builder använder dessa värden på valda mätvärden. Om du t.ex. välje
 
 **Hur avvikelseidentifiering beräknas**
 
-Analysidentifiering använder en utbildningsperiod för att beräkna, lära sig och rapportera data för förutsägelseintervall per dag. Utbildningsperioden är en historisk period som identifierar vad som är normalt jämfört med onormalt och som tillämpar vad som har lärt sig under rapporteringsperioden. I marknadsföringsrapporter finns det utbildningstider på 30, 60 och 90. I Report builder finns 30 dagar.
+Analysidentifiering använder en utbildningsperiod för att beräkna, lära sig och rapportera data för förutsägelseintervall per dag. Utbildningsperioden är en historisk period som identifierar vad som är normalt jämfört med onormalt och som tillämpar vad som har lärt sig under rapporteringsperioden. I marknadsföringsrapporter finns det utbildningstider på 30, 60 och 90. På Report Builder finns 30 dagar.
 
 Utbildningsperioden är inte nödvändigtvis densamma som den valda rapporteringsperioden. I ett rapportdiagram visas datumintervallet som du anger i kalendern.
 

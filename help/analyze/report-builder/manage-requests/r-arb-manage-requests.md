@@ -1,30 +1,30 @@
 ---
-description: Fältbeskrivningar för Hantera begäranden i Report Builder.
-title: Hantera förfrågningar – definitioner
+description: Läs mer om fältbeskrivningarna för Hantera begäranden i Report Builder.
+title: Hantera begäranden i Report Builder
 uuid: 01b21d0e-c870-4df8-95b9-f4aef1f4d16b
 feature: Report Builder
 role: User, Admin
 exl-id: fd8c0145-4c7e-4f07-aa63-656a8a20724c
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 2%
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
 
 # Hantera förfrågningar – definitioner
 
-Fältbeskrivningar för Hantera begäranden i Report Builder.
+Visa information om status för en begäran och använd fältbeskrivningarna för att hantera begäranden i Report Builder.
 
 ## Översikt {#section_75C288C945FA4781A4EDF806711A5660}
 
-The [!UICONTROL Request Manager] innehåller en detaljerad vy över statusen för alla begäranden som du har skapat för alla blad eller bara ett blad i den aktiva arbetsboken. Du kan också lägga till, redigera, uppdatera och ta bort en begäran (funktioner som vanligtvis är kopplade till [!UICONTROL Request Wizard] och [!UICONTROL Request Manager]) genom att högerklicka på en tillgänglig cell i Excel-kalkylbladet som innehåller tidigare begäranden.
+The [!UICONTROL Request Manager] innehåller en detaljerad vy över statusen för alla begäranden som du har skapat för alla blad eller bara ett blad i den aktiva arbetsboken. Du kan också lägga till, redigera, uppdatera och ta bort en begäran. Dessa funktioner är vanligtvis kopplade till [!UICONTROL Request Wizard] och [!UICONTROL Request Manager] när du högerklickar på en tillgänglig cell i Excel-kalkylbladet som innehåller tidigare begäranden.
 
-The [!UICONTROL Request Manager] visas när du klickar **[!UICONTROL Manage]** ( ![](assets/edit_request.gif) i verktygsfältet Report Builder.
+The [!UICONTROL Request Manager] visas när du klickar **[!UICONTROL Manage]**  ![](assets/edit_request.gif) i verktygsfältet Report Builder.
 
 >[!NOTE]
 >
->Adobe Report Builder verkställer endast beroenden av begäranden inom samma kalkylblad, inte mellan kalkylblad. Genom att begränsa till beroenden i ett enda kalkylblad säkerställs att körningen går så snabbt som möjligt.
+>Adobe Report Builder framtvingar endast beroenden av begäranden inom samma kalkylblad, inte mellan kalkylblad. Genom att begränsa till beroenden i ett enda kalkylblad säkerställs att körningen går så snabbt som möjligt.
 
 ## Definitioner {#section_FD29D8614DE74F32A0027FA130F40304}
 

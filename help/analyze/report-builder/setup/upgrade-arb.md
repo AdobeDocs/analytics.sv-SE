@@ -1,52 +1,44 @@
 ---
-description: Steg för och överväganden rörande uppgradering av Report Builder.
-title: Uppgradera Report Builder
+description: Lär dig hur du uppgraderar Report Builder.
+title: Så här uppgraderar du Report Builder
 uuid: 19cfae11-0b40-498b-89ca-5e854e7b164f
 feature: Report Builder
 role: User, Admin
 exl-id: 4ec876e2-bd8e-443e-8faf-135698d635eb
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 3%
+source-wordcount: '211'
+ht-degree: 2%
 
 ---
 
 # Uppgradera Report Builder
 
-Steg för och överväganden rörande uppgradering av Report Builder.
+Tänk på följande när du uppgraderar Report Builder:
 
-## Vanliga frågor om uppgradering {#section_AFE40FF5544C418790A1C298C25CC18A}
+* Den gamla versionen tas bort.
 
-**F: Behåller jag den gamla versionen av Report Builder när jag uppgraderar?**
+* Alla befintliga rapporter fortsätter att fungera.
 
-S: Nej, den gamla versionen tas bort.
+* Alla personliga inställningar, inklusive autentiseringsinställningar, fortsätter att fungera.
 
-**F: Kommer jag att förlora någon av mina befintliga rapporter?**
-
-S: Nej, alla befintliga rapporter fortsätter att fungera.
-
-**F: Måste jag autentisera mig på nytt för den nya versionen?**
-
-S: Nej, alla inställningar, inklusive autentiseringsinställningar, fortsätter att fungera.
-
-## Uppgraderingsinstruktioner {#section_73B8110A619549189A30079735E81867}
+För att uppgradera Report Builder
 
 1. Logga in på din nuvarande version av Report Builder.
 1. Gå till **[!UICONTROL Options]** för att uppgradera till den senaste versionen. Det aktuella versionsnumret visas längst ned i dialogrutan Alternativ.
 
-   ![](assets/upgrade.png)
+   ![Skärmbild som visar dialogrutan Alternativ och den aktuella versionen samt den nya versionen.](assets/upgrade.png)
 
-1. Om det finns en ny version klickar du på **[!UICONTROL Update...]**. Knappen visar vilken version du uppdaterar till, till exempel: &quot;Uppdatera till version 5.0.50&quot;
+1. Om det finns en ny version klickar du på **[!UICONTROL Update...]**. Knappen visar vilken version du uppdaterar till, till exempel: *Uppdatering till version 5.0.50*
 
    >[!NOTE]
    >
    >Om den här knappen är nedtonad finns det ingen ny version av Report Builder.
 
-1. Välj **[!UICONTROL Update when a new version is available]** kryssrutan. I framtiden kommer detta att starta uppdateringsprocessen automatiskt när en ny version blir tillgänglig.
+1. (Valfritt) Välj **[!UICONTROL Update when a new version is available]** kryssrutan. I framtiden kommer detta att starta uppdateringsprocessen automatiskt när en ny version blir tillgänglig.
 1. När installationsskärmen visas klickar du på **[!UICONTROL Next >]**.
 
-   ![](assets/setup.png)
+   ![Skärmbild som visar installationsskärmen för Report Builder.](assets/setup.png)
 
 1. När uppgraderingen är klar loggar du in på Report Builder igen.
 

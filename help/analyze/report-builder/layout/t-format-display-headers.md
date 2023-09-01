@@ -5,7 +5,7 @@ uuid: cd0e167b-9463-43fd-87b2-724d1c79de68
 feature: Report Builder
 role: User, Admin
 exl-id: 168daa6b-965c-4f8b-97b7-651a7ad55d6c
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -33,15 +33,15 @@ Du kan namnge rapporten och konfigurera hur rad- och kolumnrubriker ska visas. L
 
    **Visa rad- och kolumnrubriker:** Lägger till en rad och en kolumn för att visa dessa objekt.
 
-   I version 3.11 kan du visa en rubrik för varje objekt. Version 4 visar alla dessa objekt eller inget av dem. Om du har skapat en begäran i version 3.11 och öppnat den i version 4.x får du en uppmaning i steg 2 att uppdatera intervallet med en cell för objekt som saknar rubrik.
+   I version 3.11 kan du visa en rubrik för varje objekt. Version 4 visar alla dessa objekt eller inget av dem. Om du skapade en begäran i version 3.11 och öppnade den i version 4.x uppmanar Report Builder dig i steg 2 att uppdatera intervallet med en cell för objekt som saknar rubrik.
 
-   **Ändra sidhuvuden till autofilter i Excel:** Endast tillgängligt om rad- och kolumnrubriker visas. Den här inställningen skapar ett automatiskt Excel-filter och lägger till det i Data Report Builder-returer för den här begäran.
+   **Ändra sidhuvuden till autofilter i Excel:** Endast tillgängligt om rad- och kolumnrubriker visas. Med den här inställningen skapas ett automatiskt Excel-filter som läggs till i data som Report Builder returnerar för den här begäran.
 
    >[!NOTE]
    >
    >Excel har bara stöd för ett autofilter per kalkylblad. Om du skapar ett nytt automatiskt filter i ett kalkylblad där det redan finns ett automatiskt filter visas ingen varning om att det befintliga automatiska filtret kommer att ersättas.
 
-   **Utför automatisk kontur:** Omvandlar det datum som returneras av Report Builder från en listvy till en trädvy.
+   **Utför automatisk kontur:** Omvandlar det datum som Report Builder returnerade från en listvy till en trädvy.
 
    **Namnge den här förfrågan:** Gör att du kan skriva ett användardefinierat namn för begäran eller använda standardnamnet som valts i steg 1. Det här namnet visas som [!UICONTROL Report] namnet i [!UICONTROL Request Manager]. Se [Namnge en begäran](/help/analyze/report-builder/layout/name-a-request.md).
 

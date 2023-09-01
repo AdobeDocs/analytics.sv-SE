@@ -1,14 +1,14 @@
 ---
-description: Du kan ändra flera begäranden samtidigt baserat på rapportsviten, granulariteten och datumintervallet för begäran.
-title: Redigera flera förfrågningar
+description: Lär dig hur du ändrar flera begäranden samtidigt.
+title: Redigera flera begäranden
 uuid: 5be23376-ba94-4d5c-84c7-a60134aacf7d
 feature: Report Builder
 role: User, Admin
 exl-id: 9fd08041-b780-4c8f-ad5d-ad8795b3fde6
-source-git-commit: b73ba63f4f308a50a9e0933d1ff0d56a45b94797
+source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 2%
+source-wordcount: '278'
+ht-degree: 1%
 
 ---
 
@@ -20,11 +20,11 @@ Du kan ändra flera begäranden samtidigt, baserat på rapportsviten, segment, d
 
 **Redigera flera begäranden**
 
-1. I Excel klickar du på **[!UICONTROL Manage]**.
+1. Klicka på **[!UICONTROL Manage]**.
 
    >[!NOTE]
    >
-   >Om du vill redigera begäranden som finns i celler i enskilda kalkylblad, avmarkerar du [!UICONTROL All Sheets] på [!UICONTROL Request Manager]. Som standard är den här rutan markerad om det finns förfrågningar på flera kalkylblad.
+   >Om du vill redigera begäranden som finns i celler i enskilda kalkylblad rensar du [!UICONTROL All Sheets] på [!UICONTROL Request Manager]. Som standard är den här rutan markerad om det finns förfrågningar på flera kalkylblad.
 
 1. På [!UICONTROL Request Manager] formulär, välj två eller flera förfrågningar och klicka sedan på **[!UICONTROL Edit Multiple]**.
 
@@ -34,12 +34,12 @@ Du kan ändra flera begäranden samtidigt, baserat på rapportsviten, segment, d
    * **Efter Report Suite:** Grupperar visningen av begäranden per rapportserie.
    * **Efter segment**: Grupperar begäranden baserat på segmentnamnet.
 
-      * **Välj segment**: Visar om det inte finns några segment för förfrågningarna. Om du vill lägga till segment klickar du på **[!UICONTROL Edit Group]** och välj ett segment i [!UICONTROL Edit Group] -panelen.
+      * **Välj segment**: Visar om det inte finns några segment för förfrågningarna. Om du vill lägga till segment klickar du **[!UICONTROL Edit Group]** och välj ett segment i [!UICONTROL Edit Group] -panelen.
+
    * **Efter mått:** Se [Redigera mått över flera begäranden](/help/analyze/report-builder/manage-requests/edit-multiple-metrics.md).
 
    * **Efter datumintervall och granularitet:** Grupperar visningen av begäranden efter datumintervall och tidsnoggrannhet.
    * **Per grupp:** Grupperar visningen av begäranden efter uppsättning med grupperade begäranden.
-
 
 1. På [!UICONTROL Edit Multiple Requests] formulär, klicka **[!UICONTROL OK]**.
 

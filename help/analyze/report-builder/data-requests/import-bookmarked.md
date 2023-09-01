@@ -1,10 +1,10 @@
 ---
-description: Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu som dimensioner i begärandeguiden steg 1 och kan importeras som rapportbyggarbegäranden.
+description: Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu som dimensioner i begärandeguiden steg 1 och kan importeras som Report Builder-begäranden.
 title: Importera bokmärkta rapporter och minirapporter från kontrollpaneler
 feature: Report Builder
 role: User, Admin
 exl-id: 19813950-2495-4a75-aacb-587b59bf2484
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Importera bokmärkta rapporter och minirapporter från kontrollpaneler
 
-Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu som dimensioner i begärandeguiden steg 1 och kan importeras som rapportbyggarbegäranden.
+Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu som dimensioner i begärandeguiden steg 1 och kan importeras som Report Builder-begäranden.
 
 När du väljer en rapport med bokmärken fylls alla dimensioner och mått som definierar den här rapporten i. Datumintervallet, granulariteten och det valda segmentet uppdateras också baserat på det valda bokmärket.
 

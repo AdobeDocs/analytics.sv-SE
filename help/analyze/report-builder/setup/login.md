@@ -5,10 +5,10 @@ uuid: 9a21b791-e323-46d2-b850-2d67babe964b
 feature: Report Builder
 role: User, Admin
 exl-id: d607ef04-d546-4ebb-9f27-51349235c703
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 6%
+source-wordcount: '235'
+ht-degree: 4%
 
 ---
 
@@ -20,25 +20,27 @@ ht-degree: 6%
 
 Om du vill logga in på Report Builder använder du ditt Experience Cloud-inloggningskonto.
 
-## Experience Cloud {#section_1FA230F35AB54021A874A7A28DE4C850}
+## Logga in på Adobe Experience Cloud {#section_1FA230F35AB54021A874A7A28DE4C850}
 
-Med inloggningen Experience Cloud kan du använda Enterprise ID (e-post och lösenord) för att logga in på Adobe Experience Cloud. Klicka **[!UICONTROL Sign In]** > **[!UICONTROL Sign in with an Enterprise ID]** omdirigeras till företagets inloggningssida. Mer information om Enterprise ID får du om du klickar [här](https://helpx.adobe.com/enterprise/kb/enterprise-id-faq.html#whatis).
+Med inloggningen Experience Cloud kan du använda Enterprise ID (e-post och lösenord) för att logga in på Adobe Experience Cloud.
 
-![](assets/adobe_id_login.png)
+Klicka **[!UICONTROL Sign In]** > **[!UICONTROL Sign in with an Enterprise ID]** omdirigeras till företagets inloggningssida. Mer information om Enterprise ID finns i [Logga in på ditt företags- eller skolkonto](https://helpx.adobe.com/enterprise/kb/enterprise-id-faq.html#whatis).
+
+![Skärmbild som visar Adobe Experience Cloud inloggningsfönster med alternativ för inloggning med eller utan din Adobe ID](assets/adobe_id_login.png)
 
 >[!NOTE]
 >
->Experience Cloud-inloggningen är sessionsbaserad och token upphör att gälla efter 30 dagar.
+>Inloggningen från Experience Cloud är sessionsbaserad och token upphör att gälla efter 30 dagar.
 
-## Logga in på Report Builder
+## Logga in i Report Builder
 
 Logga in på Report Builder
 
-1. I Excel klickar du på **[!UICONTROL Add-Ins]**.
-1. Klicka på **[!UICONTROL Sign In]**. Andra åtgärder som loggar in dig är:
+1. Klicka på **[!UICONTROL Add-Ins]**.
+1. Klicka på **[!UICONTROL Sign In]**. Du kan också signera på följande sätt:
 
    * Klicka på **[!UICONTROL Create]**.
-   * [Välj en begäran i Begäranhanteraren](/help/analyze/report-builder/manage-requests/r-arb-manage-requests.md)och sedan klicka **[!UICONTROL Add]** eller **[!UICONTROL Manage]**.
+   * Välj en begäran i Begäranhanteraren och klicka sedan på **[!UICONTROL Add]** eller **[!UICONTROL Manage]**. Mer information finns i [Välj en begäran i Begäranhanteraren](/help/analyze/report-builder/manage-requests/r-arb-manage-requests.md)
    * Dubbelklicka på en begäran i Excel.
 
 1. Fyll i fälten på [!UICONTROL Login] sida och klicka sedan på **[!UICONTROL OK]**.

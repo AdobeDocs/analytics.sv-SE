@@ -1,14 +1,14 @@
 ---
-description: Information som hjälper dig förstå hur knapparna i verktygsfältet Report Builder fungerar.
-title: Verktygsfältet i Report Builder
+description: Lär dig mer om funktionerna för knapparna i verktygsfältet Report Builder.
+title: Använda verktygsfältet Report Builder
 uuid: 9f340fb0-f99a-4dd4-bcca-19c54e5499e6
 feature: Report Builder
 role: User, Admin
 exl-id: 6dbf94f1-f70e-40d3-a76f-fef298be19f5
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
@@ -18,9 +18,9 @@ Information som hjälper dig förstå hur knapparna i verktygsfältet Report Bui
 
 När du har installerat Report Builder och startat Excel klickar du på **[!UICONTROL Add-Ins]**.
 
-![](assets/report_builder_toolbar.png)
+![Ikoner i verktygsfältet Report Builder](assets/report_builder_toolbar.png)
 
-**Logga in:** Visar [!UICONTROL Login] så att du kan logga in med dina inloggningsuppgifter eller som en annan användare. Visar även ditt företagsnamn efter inloggning. Se [Report Builder-inloggning](/help/analyze/report-builder/setup/login.md).
+**Logga in:** Visar [!UICONTROL Login] så att du kan logga in med dina uppgifter eller som en annan användare. Visar även ditt företagsnamn efter inloggning. Se [Report Builder-inloggning](/help/analyze/report-builder/setup/login.md).
 
 **Skapa:** Startar [!UICONTROL Request Wizard]. Om du inte är inloggad uppmanas du att göra det. Se [Dataförfrågningar](/help/analyze/report-builder/data-requests/data-requests.md).
 
@@ -32,7 +32,7 @@ När du har installerat Report Builder och startat Excel klickar du på **[!UICO
 
 **Schema:** Gör att du kan schemalägga rapporter som skickas enligt den tid och det filformat som du anger. Se [Schemalägg rapportbegäranden](/help/analyze/report-builder/schedule-report-requests.md).
 
-**Bibliotek:** Startar [!UICONTROL Workbook Library] så att du kan överföra en Excel-arbetsbok för Report Builder som du vill dela. Du kan även hämta och redigera delade arbetsböcker. Se [Använda arbetsboksbiblioteket](/help/analyze/report-builder/workbook-library/t-upload-a-workbook.md).
+**Library:** Startar [!UICONTROL Workbook Library] så att du kan överföra en Report Builder Excel-arbetsbok som du vill dela. Du kan även hämta och redigera delade arbetsböcker. Se [Använda arbetsboksbiblioteket](/help/analyze/report-builder/workbook-library/t-upload-a-workbook.md).
 
 **Alternativ:** Här kan du ange om du vill bli tillfrågad om **[!UICONTROL As Of]** (Nu) datum när begäranden uppdateras och gör att du kan aktivera loggning i felsökningssyfte. Se [Alternativ](/help/analyze/report-builder/options.md).
 

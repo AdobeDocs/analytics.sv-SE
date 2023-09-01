@@ -5,7 +5,7 @@ uuid: 5eba7b85-f3f5-4e9c-a078-757d9e85f4d1
 feature: Report Builder
 role: User, Admin
 exl-id: 0ff6e52e-d8e0-4489-a973-a2f4ea49e9fa
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Definitioner i frågeguiden – förinställda datum
 
-Med förinställda datum kan du välja datum eller datum som du har sparat ofta. I Request Wizard: Steg 1, välj Förinställda datum. Här är fältdefinitionerna för förinställda datum i Report Builder.
+Med förinställda datum kan du välja datum eller datum som du har sparat ofta. I begärandeguiden: Steg 1 väljer du Förinställda datum. Här är fältdefinitionerna för förinställda datum i Report Builder.
 
 <table id="table_620F3BD3FD1B4C85A0319107EC03D54F"> 
  <thead> 

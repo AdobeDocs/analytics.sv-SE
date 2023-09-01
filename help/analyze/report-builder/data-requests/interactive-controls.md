@@ -1,10 +1,10 @@
 ---
-description: Med interaktiva kontroller kan du redigera segment och datumintervall för en eller flera begäranden direkt från kalkylbladet. Detta ger större flexibilitet vid uppdatering av förfrågningar från Report builder.
+description: Med interaktiva kontroller kan du redigera segment och datumintervall för en eller flera begäranden direkt från kalkylbladet. Detta ger större flexibilitet vid uppdatering av förfrågningar från Report Builder.
 title: Interaktiva kontroller
 feature: Report Builder
 role: User, Admin
 exl-id: 2340ff31-1478-4a54-a4c3-c51e73c39109
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # Interaktiva kontroller
 
-Med interaktiva kontroller kan du redigera segment och datumintervall för en eller flera begäranden direkt från kalkylbladet. Detta ger större flexibilitet vid uppdatering av förfrågningar från Report builder.
+Med interaktiva kontroller kan du redigera segment och datumintervall för en eller flera begäranden direkt från kalkylbladet. Detta ger större flexibilitet vid uppdatering av förfrågningar från Report Builder.
 
-Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där analytiker skapar arbetsböcker och delar dessa arbetsböcker med marknadsföringsorganisationen. Med interaktiva kontroller kan marknadsförarna ändra och uppdatera förfrågningar utan att behöva ha djupgående kunskaper om hur Report builder fungerar. (Observera att arbetsbokens mottagare måste vara en rapportskaparanvändare för att en begäran ska kunna uppdateras.) Dessa kontroller fungerar inuti schemalagda arbetsböcker. Det finns för närvarande två typer av interaktiva kontroller:
+Interaktiva kontroller skapades som svar på ett gemensamt arbetsflöde där analytiker skapar arbetsböcker och delar dessa arbetsböcker med marknadsföringsorganisationen. Med interaktiva kontroller kan marknadsförarna ändra och uppdatera förfrågningar utan att behöva ha djupgående kunskaper om hur Report Builder fungerar. (Observera att arbetsbokens mottagare måste vara en Report Builder-användare för att en begäran ska kunna uppdateras.) Dessa kontroller fungerar inuti schemalagda arbetsböcker. Det finns för närvarande två typer av interaktiva kontroller:
 
 * Rullande datumintervall
 * Segment
