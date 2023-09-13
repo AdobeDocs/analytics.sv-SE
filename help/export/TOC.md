@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Exporthandbok för Analytics
 breadcrumb-title: Användarhandbok om export
 user-guide-description: Lär dig hur du använder Data Feeds för att exportera rådata, och hur du använder Data Warehouse för att hämta data från kalkylblad. Lär dig hur du använder FTP och SFTP för att överföra filer.
-source-git-commit: 78ec6e91e64791d2f8a5386518d3d64403b2170a
+source-git-commit: a38ee68a1560200e55067ef0ea007f69ce8b575e
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 82%
+source-wordcount: '309'
+ht-degree: 78%
 
 ---
 
@@ -36,14 +36,20 @@ ht-degree: 82%
 + Data Warehouse {#data-warehouse}
    + [Översikt över Data Warehouse](data-warehouse/data-warehouse.md)
    + [Lägga till användargrupp i Data Warehouse](data-warehouse/t-dw-group.md)
-   + [Skapa en Data Warehouse-förfrågan](data-warehouse/t-dw-create-request.md)
+   + Skapa en Data Warehouse-förfrågan {#dw-create-request}
+      + [Skapa en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/t-dw-create-request.md)
+      + [Allmänna inställningar](/help/export/data-warehouse/create-request/dw-general-settings.md)
+      + [Bygg din rapport](/help/export/data-warehouse/create-request/dw-request-build-report.md)
+      + [Rapportdestination](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)
+      + [Rapportalternativ](/help/export/data-warehouse/create-request/dw-request-report-options.md)
+      + [Schemaläggningsalternativ](/help/export/data-warehouse/create-request/dw-request-scheduling.md)
+      + [E-postmeddelande](/help/export/data-warehouse/create-request/dw-request-email.md)
    + [Begär leveranstid](data-warehouse/delivery-time.md)
    + [Tableau-datafil](data-warehouse/t-tableau.md)
    + [Sortera efter mätvärden](data-warehouse/sorting-by-metric.md)
-   + [Schemalägga en återkommande förfrågan](data-warehouse/dw-schedule-recurring.md)
    + [Hantera Data Warehouse-förfrågningar](data-warehouse/data-warehouse-requests-manage.md)
    + [Komponenter som stöds i Data Warehouse](data-warehouse/component-support.md)
-   + [Vanliga frågor om data warehouse](data-warehouse/faq.md)
+   + [Vanliga frågor om Data Warehouse](data-warehouse/faq.md)
    + [Bästa praxis för Data Warehouse](data-warehouse/data-warehouse-bp.md)
 + FTP och SFTP {#ftp-and-sftp}
    + [Använda FTP och SFTP med Adobe Experience Cloud](ftp-and-sftp/ftp-overview.md)

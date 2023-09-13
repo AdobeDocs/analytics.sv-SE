@@ -1,28 +1,17 @@
 ---
-description: data warehouse kan leverera rapporter i TDE-filformat (Tableau Data Extract) som gör att du kan visualisera data och lager i ytterligare data från andra Adobe Analytics-format. Du kan skicka den här informationen via e-post eller FTP-överföra informationen till en FTP-plats.
+description: Data Warehouse kan leverera rapporter i TDE-filformat (Tableau Data Extract) som gör att du kan visualisera data och lager i ytterligare data från andra Adobe Analytics-format. Du kan skicka den här informationen via e-post eller FTP-överföra informationen till en FTP-plats.
 title: Tableau-datafil
 feature: Data Warehouse
 exl-id: c9973eb6-9ca2-4a8d-94b0-4c7c9c70ab26
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 4243f10376e5e33c1d9bd439042b396bd4747f1f
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 5%
+source-wordcount: '98'
+ht-degree: 3%
 
 ---
 
-# Tableau-datafil
+# Konfigurera Data Warehouse-rapporter för Tableau
 
-data warehouse kan leverera rapporter i TDE-filformat (Tableau Data Extract) som gör att du kan visualisera data och lager i ytterligare data från andra Adobe Analytics-format. Du kan skicka den här informationen via e-post eller FTP-överföra informationen till en FTP-plats.
+Data Warehouse kan leverera rapporter i TDE-filformat (Tableau Data Extract) som kan användas för att visualisera data och lager i ytterligare data i Tableau.
 
-Se [Tableau och Adobe Analytics](https://www.tableausoftware.com/about/blog/2014/3/tableau-and-adobe-analytics-digital-marketing-gets-even-more-awesome-29491) för mer information.
-
-1. Konfigurera rapportdefinitionen på fliken Data warehouse och gå sedan till **[!UICONTROL Schedule Delivery]** > **[!UICONTROL Advanced Delivery Options]** .
-1. På **[!UICONTROL Advanced Delivery Options]** sida, under **[!UICONTROL Report Format]**, markera **[!UICONTROL Tableau Format (TDE)]**.
-1. Välj om du vill skicka rapporten som en komprimerad fil eller inte.
-1. Skicka rapporten via e-post eller FTP.
-
-1. Gå till **[!UICONTROL Schedule Delivery]** > **[!UICONTROL Advanced Delivery Options]** .
-1. Under **[!UICONTROL Report Destination]** väljer du **[!UICONTROL FTP]**.
-1. Fyll i **[!UICONTROL Host]**, **[!UICONTROL Directory]**, **[!UICONTROL Username]** och **[!UICONTROL Password]**.
-
-   Standardportnumret är 21. 1. Klicka **[!UICONTROL Send]**.
+Mer information om hur du konfigurerar Data Warehouse-rapporter som ska levereras i TDE-format finns i [Konfigurera rapportalternativ för en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/dw-request-report-options.md).

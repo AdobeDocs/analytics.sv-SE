@@ -3,9 +3,9 @@ description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 71ebabf7efca70c0cbd2489dc538f7f10cae16cb
+source-git-commit: 0579715d33db28f1741eed2b1aa1520d3beb757b
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '426'
 ht-degree: 37%
 
 ---
@@ -37,5 +37,5 @@ Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Ad
 | **Kuration** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/curate.md) | Ja - projekt och VRS | Nej | Nej | Nej | Nej | Nej | Ja - endast VRS |
 | **Projektdelning** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md) | Ja, med projektroller | Ja | Ja | Nej | Ja | Nej | Nej |
 | **Schemalagd leverans** | Ja | Ja | Ja | Ja | Nej | Ja | Nej |
-| **Leveransmål** | E-post | E-post | Email, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/report-builder/c-publish-power-bi/power-bi.md) | Email, FTP. Kontakta kundtjänst för ytterligare destinationssupport som SFTP, Azure Blob, Amazon S3 | - | Amazon S3, Azure RBAC, Azure SAS och Google Cloud Platform | - |
+| **Leveransmål** | E-post | E-post | Email, FTP, SFTP, [publicera till Microsoft PowerBI](/help/analyze/report-builder/c-publish-power-bi/power-bi.md) | Amazon S3, Google Cloud Platform, Azure SAS, Azure RBAC och e-post | - | Amazon S3, Azure RBAC, Azure SAS och Google Cloud Platform | - |
 | **Tidsbearbetning för VRS-rapport** <br> [Läs mer](/help/components/vrs/vrs-report-time-processing.md) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |

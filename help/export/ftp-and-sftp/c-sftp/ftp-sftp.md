@@ -4,7 +4,7 @@ keywords: ftp;sftp
 title: Secure File Transfer Protocol – översikt
 feature: FTP Export
 exl-id: ea0448f9-1685-4a8f-b2f9-49d315c6ab71
-source-git-commit: 4daa5c8bdbcb483f23a3b8f75dde9eeb48516db8
+source-git-commit: 04ece4265ff270cc221a79def9494a95d0fdbb0e
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 9%
@@ -19,7 +19,7 @@ SFTP är ett säkert protokoll för överföring av data som säkerställer att 
 
 Det innebär att Adobe-servrar&quot;skickar&quot; filen till dina servrar. I grund och botten levererar vi det till din slutpunkt.
 
-[data warehouse](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-dw.md) och [Analysdatafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) kan överföra data via SFTP.
+[Data Warehouse](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-dw.md) och [Analysdatafeed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html) kan överföra data via SFTP.
 
 Följande analysverktyg **inte** push-data via SFTP:
 
