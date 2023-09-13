@@ -2,7 +2,7 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera rapportalternativ för en Data Warehouse-förfrågan
 feature: Data Warehouse
-source-git-commit: 0abf0c76f38b481c0b72d113fe49e0da03ddd8cd
+source-git-commit: 3b116cb8d0d3f3eb86b512d712f37b29876f2b22
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Så här konfigurerar du ett e-postmeddelande för en Data Warehouse:
 
    | Alternativ |  -funktion |
    |---------|----------|
-   | Skicka e-postmeddelande till | Ange e-postadresserna till de personer som ska få e-postmeddelanden när rapporten skickas. <p>Du kan ange en e-postadress eller en kommaavgränsad lista med e-postadresser.</p> |
-   | Avancerade alternativ | Välj det här alternativet om du vill inkludera ett ämne och anteckningar för e-postmeddelandet när meddelandet skickas. |
+   | [!UICONTROL **Skicka e-postmeddelande till**] | Ange e-postadresserna till de personer som ska få e-postmeddelanden när rapporten skickas. <p>Du kan ange en e-postadress eller en kommaavgränsad lista med e-postadresser.</p> |
+   | [!UICONTROL **Avancerade alternativ**] | Välj det här alternativet om du vill inkludera ett ämne och anteckningar för e-postmeddelandet när meddelandet skickas. |
 
    {style="table-layout:auto"}
 

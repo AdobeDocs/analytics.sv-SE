@@ -2,9 +2,9 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
-source-git-commit: 0abf0c76f38b481c0b72d113fe49e0da03ddd8cd
+source-git-commit: 5ed0c4b8cb4b1a50cf25df1459faecadcc19ea29
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '2081'
 ht-degree: 0%
 
 ---
@@ -59,13 +59,13 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       | Fält |  -funktion |
       |---------|----------|
-      | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot. <p>När du har valt en kontotyp visas fält som är specifika för den kontotypen. Om du vill ha konfigurationsinstruktioner för varje kontotyp expanderar du det avsnitt nedan som motsvarar det du väljer. </p> |
+      | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot. <p>När du har valt en kontotyp visas fält som är specifika för den kontotypen. </p> |
       | [!UICONTROL **Kontonamn**] | Ange ett namn för kontot. Det här namnet visas när du skapar en plats. <!-- true? --> |
       | [!UICONTROL **Kontobeskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. |
 
       Utöka det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] som du valde.
 
-      Använd någon av följande kontotyper när du konfigurerar ett rapportmål. Expandera kontotypen om du vill ha konfigurationsinstruktioner. (Ytterligare äldre destinationer <!-- add link --> finns också tillgängliga, men rekommenderas inte.)
+      Använd någon av följande kontotyper när du konfigurerar ett rapportmål. Expandera kontotypen om du vill ha konfigurationsinstruktioner. (Ytterligare [äldre destinationer](#legacy-destinations) finns också tillgängliga, men rekommenderas inte.)
 
       +++Amazon S3
 
@@ -134,7 +134,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
    1. I [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 
-      Om du vill ha konfigurationsinstruktioner expanderar du det avsnitt nedan som motsvarar kontotypen som du valde tidigare.
+      Utöka det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] som du valde tidigare.
 
       +++Amazon S3
 
@@ -194,3 +194,67 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
       Nu kan du importera data till kontot och platsen som du konfigurerade.
 
 1. Fortsätt konfigurera din Data Warehouse-förfrågan på [!UICONTROL **Rapportalternativ**] -fliken. Mer information finns i [Konfigurera rapportalternativ för en Data Warehouse-förfrågan](/help/export/data-warehouse/create-request/dw-request-report-options.md).
+
+## Äldre destinationer
+
+>[!IMPORTANT]
+>
+>Destinationerna som beskrivs i det här avsnittet är äldre och rekommenderas inte. Använd i stället ett av följande mål när du skapar ett datalagermål: Amazon S3, Google Cloud Platform, Azure RBAC, Azure SAS eller Email. Se informationen ovan för mer information om var och en av dessa rekommenderade destinationer.
+
+Följande information innehåller konfigurationsinformation för var och en av de äldre målplatserna:
+
+### FTP
+
+Data dist.lagerdata kan levereras till en FTP-plats som är värd för Adobe eller kund. Kräver FTP-värd, användarnamn och lösenord. Använd sökvägsfältet för att placera feed-filer i en mapp. Mappar måste redan finnas. Flöden genererar ett fel om den angivna sökvägen inte finns.
+
+Använd följande information när du fyller i de tillgängliga fälten:
+
+* [!UICONTROL **Värd**]: Ange önskad mål-URL för FTP. Exempel, `ftp://ftp.omniture.com`.
+* [!UICONTROL **Bana**]: Kan lämnas tomt
+* [!UICONTROL **Användarnamn**]: Ange användarnamn för att logga in på FTP-platsen.
+* [!UICONTROL **Lösenord och bekräfta lösenord**]: Ange lösenordet för att logga in på FTP-platsen.
+
+### SFTP
+
+SFTP-stöd för datalager är tillgängligt. Kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar datalagrets mål.
+
+### S3
+
+Du kan skicka lagerdata direkt till Amazon S3-butiker. Den här måltypen kräver ett Bucket-namn, ett Access Key ID och en Secret Key. Se [Krav för Amazon S3-bucket](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-s3-bucket-naming-requirements.html) i Amazon S3-dokumenten för mer information.
+
+Användaren som du anger för överföring av datalagerdata måste ha följande [behörigheter](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazon_Simple_Storage_Service.html):
+
+* s3:GetObject
+* s3:PutObject
+* s3:PutObjectAcl
+
+Följande 16 AWS-standardregioner stöds (med lämplig signaturalgoritm där det behövs):
+
+* us-east-2
+* us-east-1
+* us-west-1
+* us-west-2
+* ap-soud-1
+* ap-northeast-2
+* ap-southeast-1
+* ap-southeast-2
+* ap-northeast-1
+* ca-central-1
+* eu-central-1
+* eu-west-1
+* eu-west-2
+* eu-west-3
+* eu-nord-1
+* sa-east-1
+
+>[!NOTE]
+>
+>Regionen cn-North-1 stöds inte.
+
+### Azure Blob
+
+Datalagret stöder Azure Blob-mål. Kräver en behållare, ett konto och en nyckel. Amazon krypterar automatiskt vilande data. När du hämtar data dekrypteras de automatiskt. Se [Skapa ett lagringskonto](https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal#view-and-copy-storage-access-keys) i Microsoft Azure-dokumenten om du vill ha mer information.
+
+>[!NOTE]
+>
+>Du måste implementera en egen process för att hantera diskutrymme på datalagermålet. Adobe tar inte bort några data från servern.

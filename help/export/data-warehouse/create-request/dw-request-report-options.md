@@ -2,9 +2,9 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera rapportalternativ för en Data Warehouse-förfrågan
 feature: Data Warehouse
-source-git-commit: 0abf0c76f38b481c0b72d113fe49e0da03ddd8cd
+source-git-commit: 3b116cb8d0d3f3eb86b512d712f37b29876f2b22
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -37,17 +37,17 @@ Så här konfigurerar du rapportalternativ för en Data Warehouse:
 
    | Alternativ |  -funktion |
    |---------|----------|
-   | Filnamn | Identifierar rapporten. |
-   | Lägg till rapportdatumintervall till filnamn | Lägger till datumintervallet i rapportfilens namn. <p>Om du till exempel begär data från 1 maj till 7 maj 2024 inkluderar filnamnet datumintervallet 20240501 - 20240507.</p> |
-   | CSV | Levererar rapporter i ett CSV-filformat för att visa data i ett kalkylblad. |
-   | Tableu (TDE) | Levererar rapporter i ett TDE-filformat (Tableau Data Extract) som kan användas för att visualisera data och lager i ytterligare data i Tableau. |
-   | Skicka rapport som komprimerad fil (ZIP) | Levererar rapporter i komprimerat filformat (ZIP). Vi rekommenderar att du aktiverar det här alternativet när du använder e-post som [rapportmål](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
-   | Antal rader i tabellen | Antalet rader som kan inkluderas i rapporten. Använd 0 för att inkludera alla rader (det här är standardvalet). <!-- when would you want to limit the rows? To improve performance? Do we have recommendations? --> |
-   | Kommentarer | Lägg till eventuella kommentarer som du vill ska ingå i rapporten. Kommentarerna visas i början av rapporten. |
-   | Sortera efter mått | Tillhandahåller rankade uppdelningsrapporter i Data Warehouse, sorterade efter fallande måttvärde. Sortering efter mätvärden gör det enklare för er att tolka Data Warehouse-rapporter, och de här rapporterna blir enklare att jämföra med andra analytiska rapporter.<p>Mer information finns i [Sortera efter mått](/help/export/data-warehouse/sorting-by-metric.md).</p> |
-   | Skicka manifestfil | Inkluderar metadata om de filer som ingår i rapporten.<!-- What kind of metadata is included in the manifest file? --> |
-   | Skicka digital signaturfil | Låter rapportmottagarna verifiera att filen kommer från Adobe och att den inte har ändrats. |
-   | Skicka en tom fil när det inte finns några data i rapporten | Skickar en rapport även när rapporten inte innehåller några data. |
+   | [!UICONTROL **Filnamn**] | Identifierar rapporten. |
+   | [!UICONTROL **Lägg till rapportdatumintervall till filnamn**] | Lägger till datumintervallet i rapportfilens namn. <p>Om du till exempel begär data från 1 maj till 7 maj 2024 inkluderar filnamnet datumintervallet 20240501 - 20240507.</p> |
+   | [!UICONTROL **CSV**] | Levererar rapporter i ett CSV-filformat för att visa data i ett kalkylblad. |
+   | [!UICONTROL **Tableu (TDE)**] | Levererar rapporter i ett TDE-filformat (Tableau Data Extract) som kan användas för att visualisera data och lager i ytterligare data i Tableau. |
+   | [!UICONTROL **Skicka rapport som komprimerad fil (ZIP)**] | Levererar rapporter i komprimerat filformat (ZIP). Vi rekommenderar att du aktiverar det här alternativet när du använder e-post som [rapportmål](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
+   | [!UICONTROL **Returnera alla rader**] | När det här alternativet är aktiverat inkluderas alla rader i rapporten. Inaktivera det här alternativet om du vill ange antalet rader som ska inkluderas. |
+   | [!UICONTROL **Början av rapportkommentarer**] | Lägg till eventuella kommentarer som du vill ska ingå i rapporten. Kommentarerna visas i början av rapporten. |
+   | [!UICONTROL **Sortera efter mått**] | Tillhandahåller rankade uppdelningsrapporter i Data Warehouse, sorterade efter fallande måttvärde. Sortering efter mätvärden gör det enklare för er att tolka Data Warehouse-rapporter, och de här rapporterna blir enklare att jämföra med andra analytiska rapporter.<p>Mer information finns i [Sortera efter mått](/help/export/data-warehouse/sorting-by-metric.md).</p> |
+   | [!UICONTROL **Skicka en manifestfil**] | Inkluderar metadata om de filer som ingår i rapporten.<!-- What kind of metadata is included in the manifest file? --> |
+   | [!UICONTROL **Skicka en digital signaturfil**] | Låter rapportmottagarna verifiera att filen kommer från Adobe och att den inte har ändrats. |
+   | [!UICONTROL **Skicka en tom fil när det inte finns några data i rapporten**] | Skickar en rapport även när rapporten inte innehåller några data. |
 
    {style="table-layout:auto"}
 
