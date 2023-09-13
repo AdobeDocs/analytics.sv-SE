@@ -1,9 +1,9 @@
 ---
 title: Aktuella versionsinformation för Adobe Analytics
-description: Se versionsinformationen för Adobe Analytics.
+description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: bd73793e865ce73affc5536b2e95aae143f99a04
+source-git-commit: 1bd654eef37ac242cf4076e133e482f6a5990cc9
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 3%
