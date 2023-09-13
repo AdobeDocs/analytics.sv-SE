@@ -2,9 +2,9 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Allmänna inställningar för begäran om Data Warehouse
 feature: Data Warehouse
-source-git-commit: 0abf0c76f38b481c0b72d113fe49e0da03ddd8cd
+source-git-commit: ea4c1ae21f2c83bad92723e6ffd2e706fac5e1e8
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Så här konfigurerar du allmänna inställningar för en Data Warehouse:
    | Alternativ |  -funktion |
    |---------|----------|
    | Namn på begäran | Det här namnet visas på huvudsidans Data Warehouse när begäranden hanteras. |
-   | Datumintervall | Välj det datumintervall som ska inkluderas i rapporten. <p>Du kan välja anpassade datum eller ett förinställt datumintervall. Förinställningsintervall är relativa till det datum då rapporten skickas.</p><p>Följande förinställningsalternativ är tillgängliga:</p><ul><li>Idag</li><li>Igår</li><li>De senaste 7 dagarna</li><li>De senaste 30 dagarna</li><li>Den här veckan</li><li>Senaste veckan</li><li>De senaste två veckorna</li><li>De senaste 3 veckorna</li><li>De senaste 4 veckorna</li><li>Den här månaden</li><li>Senaste månaden</li><li>Senaste timmen</li><li>Idag</li><li>Idag</li></ul> |
+   | Datumintervall | Välj det datumintervall som ska inkluderas i rapporten. <p>Du kan välja anpassade datum eller ett förinställt datumintervall. Förinställningsintervall är relativa till det datum då rapporten skickas.</p><p>Följande förinställningsalternativ är tillgängliga:</p><ul><li>Idag</li><li>Igår</li><li>De senaste 7 dagarna</li><li>De senaste 30 dagarna</li><li>Den här veckan</li><li>Senaste veckan</li><li>De senaste två veckorna</li><li>De senaste 3 veckorna</li><li>De senaste 4 veckorna</li><li>Den här månaden</li><li>Senaste månaden</li><li>Senaste timmen</li></ul> |
    | Kornighet | <!--what does this setting do? It's not the schedule/frequency... --> Tidsgranulariteten. Giltiga värden är None, Hour, Day, Week, Month, Quarter och Year.<p>För rapportgranularitet krävs ytterligare bearbetningstid. Om du rapporterar månadsvis granularitet för ett helt år kommer rapportprocessen att gå mycket snabbare om du skickar in en rapportförfrågan för varje månad.</p> |
 
    {style="table-layout:auto"}
