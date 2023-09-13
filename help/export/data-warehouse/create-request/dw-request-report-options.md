@@ -2,16 +2,22 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera rapportalternativ för en Data Warehouse-förfrågan
 feature: Data Warehouse
-source-git-commit: 42c95198a4d4389308c78c312b5bb37572350cc1
+source-git-commit: 0abf0c76f38b481c0b72d113fe49e0da03ddd8cd
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
 # Konfigurera rapportalternativ för en Data Warehouse-förfrågan
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>Vissa av de Data Warehouse som beskrivs i den här artikeln (och andra artiklar i den här Datan Warehouse) är endast tillgängliga i den begränsade testfasen av releasen och är kanske inte tillgängliga i din miljö ännu.
+>
+>Information om vilka funktioner som ännu inte är tillgängliga för alla kunder, samt information om tidslinjen för releasen av dessa funktioner, finns i [versionsinformation](/help/release-notes/latest.md).
+>
+>Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. Följande information beskriver hur du konfigurerar rapportalternativ för begäran.
 
