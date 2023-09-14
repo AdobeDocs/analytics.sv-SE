@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: f23e0c74072d38d5c6559288b2ced60d98634fac
+source-git-commit: bf2dcda23c35906fbb730603c9366b896248fa60
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1105'
 ht-degree: 77%
 
 ---
@@ -117,10 +117,7 @@ ht-degree: 77%
       + [Frihandspanel](analysis-workspace/c-panels/freeform-panel.md)
       + [Panelen Mediegenomsnitt för miniatyrmålgrupp](analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Panelen för samtidiga medieanvändare](analysis-workspace/c-panels/media-concurrent-viewers.md)
-      + Medieuppspelningstid spenderad {#media-playback-timespent}
-         + [Översikt](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
-         + [Indata- och utdatainställningar](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
-         + [Vanliga frågor](analysis-workspace/c-panels/media-playback-timespent/faqs.md)
+      + [Medieuppspelningstid spenderad panel](analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Panelen Nästa eller föregående objekt](analysis-workspace/c-panels/next-previous.md)
       + [Panelen Sidsammanfattning](analysis-workspace/c-panels/page-summary.md)
       + [Panelen Snabbinsikter](analysis-workspace/c-panels/quickinsight.md)

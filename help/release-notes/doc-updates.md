@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: ebec057aea182a7c036c105c44d163155809bfd9
+source-git-commit: a916afbc15514430cd13673bb642ebc720664e35
 workflow-type: tm+mt
-source-wordcount: '5020'
+source-wordcount: '5067'
 ht-degree: 25%
 
 ---
@@ -26,12 +26,13 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **September 2023** | |
+| Uppdaterad struktur för artiklar för panelen Medieuppspelningstid för spenderad tid | Mappen Media Playback Time Spent har tagits bort och innehållet i mappen har kombinerats till en enda artikel: [Medieuppspelningstid spenderad panel](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Den här ändringen är mer i linje med dokumentationen för andra paneler.</p> |
 | Komma igång med innehållsförbättringar | Lagt till information som beskriver viktiga uppgifter och resurser för att komma igång för administratörer, analytiker, slutanvändare och utvecklare. Följande nya artiklar är nu tillgängliga: <ul><li>[Kom igång (efter roll)](/help/analyze/get-started/get-started-by-role.md)</li><li>[Förstå analysgränssnittet](/help/analyze/get-started/analytics-interface.md)<li>[Användningsexempel](/help/analyze/get-started/use-cases.md)</li></ul> |
 | Förbättringar av dokumentationen för Media Analytics-rapportering | Omorganiserat en del av innehållet i avsnittet Rapportering i guiden Direktuppspelande media, bland annat genom att konsolidera API-dokumentationen i ett eget avsnitt och justera ordningen för vissa artiklar. <p>Namnet på artikeln Mallar för arbetsytor för media har ändrats till [Medierapporter i arbetsytan](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-templates.html) för att bättre anpassa till namngivningen i produkten. </p> |
 | **Augusti 2023** | |
 | Förtydligande av dataflöde | Uppdaterat [definitionen av start- och slutdatum](/help/export/analytics-data-feed/create-feed.md) för att förtydliga att när du bearbetar dataflöden för historiska data kan du ange startdatumet till vilket datum som helst tidigare när data samlas in. |
 | Experience Edge-datahantering | Lagt till innehåll så här Adobe Analytics [hanterar data från Experience Edge](../implement/aep-edge/overview.md). |
-| Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analyze/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) för att förbättra läsbarheten. |
+| Medieuppspelningstid spenderad panel | Uppdaterat innehåll för  [Medieuppspelningstid spenderad panel](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md) för att förbättra läsbarheten. |
 | Flyttat innehåll om hantering av schemalagda projekt | Skapade en ny artikel i Analytics Components Guide med namnet [Schemalagda projekt](/help/components/scheduled-projects-manager.md). Innehållet fanns tidigare i [Schemalägg projekt](/help/analyze/analysis-workspace/curate-share/t-schedule-report.md) artikel i Analytics Tools Guide. |
 | Jämför implementeringsmetoder | Uppdaterad dokumentation som jämför olika implementeringsmetoder. [Läs mer](../implement/prepare/comparison.md) |
 | Adobe kundtjänst krävs inte för att konfigurera SFTP för dataflöden | Tydligare i [Skicka Adobe-data till ett externt FTP-konto med SFTP](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-transfer.md) som kunderna inte behöver kontakta Adobe kundtjänst för att konfigurera SFTP för dataflöden. <p>Dessutom lades ett meddelande till om att SFTP inte längre rekommenderas och att kunder bör använda ett molnmål när de konfigurerar datafeeds.</p> |
