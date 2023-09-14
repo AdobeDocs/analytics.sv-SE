@@ -78,7 +78,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Google Cloud Platform
 
@@ -90,7 +90,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Azure SAS
 
@@ -106,7 +106,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Azure RBAC
 
@@ -120,7 +120,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++E-post
 
@@ -147,7 +147,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Google Cloud Platform
 
@@ -160,7 +160,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Azure SAS
 
@@ -173,7 +173,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
       +++Azure RBAC
 
@@ -187,7 +187,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-+++
+      +++
 
    1. Välj [!UICONTROL **Spara**].
 
