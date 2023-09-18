@@ -4,7 +4,7 @@ description: Så här använder och tolkar du panelen Medieuppspelningstid för 
 feature: Panels
 role: User, Admin
 exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: d02251e877c119cedb6b07bce5cf095bdfc680c8
+source-git-commit: 95f28d537e6e7538133ebd04d185ebcfd28a13d4
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 0%
@@ -32,13 +32,10 @@ Här följer en videoöversikt av den här panelen:
 ## Använda panelen Medieuppspelningstid för spenderad tid
 
 1. Gå till en rapportsvit med Media Analytics-komponenter aktiverade.
-
 1. Välj panelikonen längst till vänster och dra sedan panelen till ditt Analysis Workspace-projekt.
-
 1. Fortsätt med följande avsnitt för att anpassa panelen Medieuppspelningstid för spenderad tid
 
    * [Panelindata](#panel-inputs)
-
    * [Panelutdata](#panel-output)
 
 ## Panelindata {#Input}
