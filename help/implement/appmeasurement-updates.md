@@ -3,9 +3,9 @@ title: AppMeasurement för versionsinformation för JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: 40d7224ade5a2eb3eda68025671a2dab192eaa83
+source-git-commit: b99717f4b7fe23172c5a9b3adaa92341cdcc5e44
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2395'
 ht-degree: 2%
 
 ---
@@ -22,14 +22,14 @@ Du kan hämta den senaste versionen av AppMeasurementet från [GitHub](https://g
 
 Utgivningsdatum: **12 september 2023**
 
-* En valfri konfiguration har lagts till (`bufferRequests`) för att förbättra tillförlitligheten i att hämta in begäranden i scenarier där en webbläsare kanske inte stöder Beacon API korrekt eller kan avbryta begäranden när en sida tas bort.
+* Den valfria metoden har lagts till [`bufferRequests()`](vars/functions/bufferrequests.md) för att öka tillförlitligheten i att hämta in begäranden när en webbläsare inte har stöd för Beacon API eller avbryter begäranden när en sida tas bort.
 * Lagt till skydd för att förhindra flera återanrop efter spåret för en enda begäran om spårning.
 
 ## Version 2.24.0
 
 Utgivningsdatum: **18 juli 2023**
 
-* En valfri konfiguration har lagts till (`decodeLinkParameters` - standard = false) som avkodar länk-URL:er som innehåller dubbelbytetecken.
+* Den valfria konfigurationsvariabeln har lagts till [`decodeLinkParameters`](vars/config-vars/decodelinkparameters.md) om du vill avkoda länkar-URL:er som innehåller dubbelbytetecken.
 * Ytterligare felhantering har lagts till för webbläsare med felaktiga API:er för användaragenttips.
 * Content-Type-rubriken för POSTEN har ändrats så att den används `x-www-form-urlencoded` som standard.
 
@@ -37,25 +37,25 @@ Utgivningsdatum: **18 juli 2023**
 
 Utgivningsdatum: **23 september 2022**
 
-* AppMeasurementet har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda flaggan &quot;collectHighEntropyUserAgentHints&quot;. Samling med hög entropi-tips är som standard inaktiverad. Läs mer om User-Agent [klienttips](/help/technotes/client-hints.md).
+* AppMeasurementet har nu stöd för en samling klienttips för användaragenter med hög entropi som används i Chromium-webbläsare (Google Chrome och Microsoft Edge) för att tillhandahålla enhetsinformation. Du kan konfigurera klienttips via taggar eller använda [`collectHighEntropyUserAgentHints`](vars/config-vars/collecthighentropyuseragenthints.md) konfigurationsvariabel. Samling med hög entropi-tips är inaktiverad som standard. Läs mer om User-Agent [klienttips](/help/technotes/client-hints.md).
 
 ## Version 2.22.4
 
 Utgivningsdatum: **18 januari 2022**
 
-* Länkspårningsanrop `s.tl()` verifierar nu att objektet som skickas till det innehåller en `href` type-attribut `string`. Om det inte är en `string`så ignoreras de `href` i stället för att misslyckas. Detta kan inträffa om det skickas `svg` objekt till anropet för länkspårning.
+* Länkspårningsanrop `s.tl()` verifierar nu att objektet som skickas till det innehåller en `href` type-attribut `string`. Om det inte är en `string`och ignorerar på ett bra sätt `href` i stället för att misslyckas. Detta scenario kan inträffa när du skickar `svg` objekt till anropet för länkspårning.
 
 ## Version 2.22.3
 
 Utgivningsdatum: **11 oktober 2021**
 
-* Uppdaterade filer som refererar till hjälpdokumentationen för att peka på de aktuella hjälpplatserna.
+* Uppdaterade länkar i filer som pekar på dokumentation.
 
 ## Version 2.22.2
 
 Utgivningsdatum: **7 september 2021**
 
-* Den här uppdateringen orsakar `opt.dmp` och `opt.sell` att alltid inkluderas när länkar spåras. Här är en [fullständig förteckning över variabler för samtycke](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/consent-variables.html).
+* Den här uppdateringen orsakar `opt.dmp` och `opt.sell` att alltid inkluderas när länkar spåras. Se [Sekretessrapportering](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/privacy-reporting.md) i användarhandboken för Admin om du vill ha mer information.
 
 ## Version 2.22.1
 
