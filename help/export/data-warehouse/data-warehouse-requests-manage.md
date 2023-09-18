@@ -4,9 +4,9 @@ title: Hantera Data Warehouse-förfrågningar
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: 8507ce3f7e4d09956ad88c2be5335b68c8e3b8a0
+source-git-commit: 1f6dc980c7ec4646b8b58be06563f553c0010245
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '778'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Om din organisation ännu inte har den nya Datan Warehouse, som snart kommer att vara tillgänglig för alla kunder, använder du informationen i [Hantera förfrågningar från Data Warehouse (gammal upplevelse)](#manage-data-warehouse-requests-old-experience)
+>Om din organisation ännu inte har den nya Datan Warehouse, som snart kommer att vara tillgänglig för alla kunder, använder du informationen i [Hantera förfrågningar från Data Warehouse (gammal upplevelse)](#manage-data-warehouse-requests-old-experience) längst ned på sidan.
 
 
 Du kan hantera förfrågningar från Data Warehouse som du har gjort. I följande avsnitt beskrivs aktiviteter som du kan utföra när du hanterar begäranden. <!-- just those you have made? I think you can see other people's requests (you can filter by them). What can you do with other people's requests? Just view them?-->
