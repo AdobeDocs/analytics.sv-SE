@@ -2,9 +2,9 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera rapportalternativ för en Data Warehouse-förfrågan
 feature: Data Warehouse
-source-git-commit: 3b116cb8d0d3f3eb86b512d712f37b29876f2b22
+source-git-commit: 6e6a406c7f3ab6ad83dcf60dbd78a5f6953f1fbb
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Så här konfigurerar du rapportalternativ för en Data Warehouse:
 
    | Alternativ |  -funktion |
    |---------|----------|
-   | [!UICONTROL **Filnamn**] | Identifierar rapporten. |
+   | [!UICONTROL **Filnamn**] | Identifierar rapporten. <p>Om något av följande specialtecken används i filnamnet går det inte att spara begäran: <code>! &quot; # $ &amp; &#39; ( ) * + , / : ; > = &lt; ? @ [ ] \ ^ ` {  } \| ~</code> </p><p>Tecknet % kan bara användas om det följs av&quot;R&quot;,&quot;rsid&quot; eller&quot;id&quot; enligt följande: <code>%R</code>, <code>%rsid</code>och <code>%id</code>.</p> |
    | [!UICONTROL **Lägg till rapportdatumintervall till filnamn**] | Lägger till datumintervallet i rapportfilens namn. <p>Om du till exempel begär data från 1 maj till 7 maj 2024 inkluderar filnamnet datumintervallet 20240501 - 20240507.</p> |
    | [!UICONTROL **CSV**] | Levererar rapporter i ett CSV-filformat för att visa data i ett kalkylblad. |
    | [!UICONTROL **Tableu (TDE)**] | Levererar rapporter i ett TDE-filformat (Tableau Data Extract) som kan användas för att visualisera data och lager i ytterligare data i Tableau. |
