@@ -3,9 +3,9 @@ description: Hantera aviseringar.
 title: Aviseringshanteraren - översikt
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: 637f498c8abee0f3c83780bccd0447f2e3a804e3
+source-git-commit: 69b763bc5740223be54309c0c0b98f40536c4d7e
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,6 @@ Så här konfigurerar du synliga kolumner i Varningshanteraren:
    | Taggar | Visar taggar som har tillämpats på aviseringen, antingen av dig eller av personer som delat aviseringen med dig. |
    | Delas med | Visar enskilda personer eller grupper (endast admin) eller Alla (endast admin) som du har delat aviseringen med. |
    | Ändrat den | Anger datumet då aviseringen senast ändrades. |
-   | Senast använd | **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).<p>Visar datumet då aviseringen senast användes.</p> <p>Den här informationen kan hjälpa dig att avgöra om en varning är värdefull för användare i din organisation eller om den ska tas bort.</p><p>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</p> |
+   | Senast använd | **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).<p>Visar datumet då aviseringen senast användes.</p> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</p> |
 
    {style="table-layout:auto"}
