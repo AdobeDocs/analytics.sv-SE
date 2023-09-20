@@ -3,7 +3,7 @@ title: Variabelmappning för analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
-source-git-commit: b6a92b8ca79422d2ba857cd98c172a824658a7a6
+source-git-commit: f790407b5495d5fad679a2980c951b2247971069
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | `placeContext.localTime` | Hjälper till att fylla i [Tidszoner](/help/analyze/reports-analytics/reports.md) i Rapport och analys. Visas som `t_time_info` in [Dataflöden](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md). |
 | `productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar1`<br/>`[...]`<br/>`productListItems[]._experience.analytics.`<br/>`customDimensions.eVars.eVar250` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till eVars. |
 | `productListItems[]._experience.analytics.`<br/>`event1to100.event1.value`<br/>`[...]`<br/>`productListItems[]._experience.analytics.`<br/>`event901-1000.event1000.value` | Gäller [produktsyntax](../vars/page-vars/products.md) försäljning till event. |
-| `productListItems[].lineItemId` | The [Kategori](../../components/dimensions/category.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
+| `productListItems[].productCategories[].categoryID` | The [Kategori](../../components/dimensions/category.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
 | `productListItems[].name` | The [Produkt](../../components/dimensions/product.md) dimension. Se även [produkter](../vars/page-vars/products.md) sidvariabel. If `productListItems[].SKU` och `productListItems[].name` båda innehåller data, värdet i `productListItems[].SKU` används. |
 | `productListItems[].priceTotal` | Hjälper till att avgöra [Intäkter](../../components/metrics/revenue.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
 | `productListItems[].quantity` | Hjälper till att avgöra [Enheter](../../components/metrics/units.md) mätvärden. Se även [produkter](../vars/page-vars/products.md) sidvariabel. |
