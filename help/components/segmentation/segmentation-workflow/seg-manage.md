@@ -3,43 +3,77 @@ description: Segmenthanteraren erbjuder många sätt att strukturera segment, so
 title: Hantera segment (segmenthanteraren)
 feature: Segmentation
 exl-id: be182a55-23cb-415f-a7d0-3c1efeead1a1
-source-git-commit: 99f692c6049708f5feac02d683f14793a57ddb26
+source-git-commit: 637f498c8abee0f3c83780bccd0447f2e3a804e3
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 4%
+source-wordcount: '705'
+ht-degree: 3%
 
 ---
 
-# Hantera segment
+# Segmenthanterare
 
 Segmenthanteraren erbjuder många sätt att strukturera segment, som att dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
 
-Segmenthanteraren i Analytics visar alla segment som du äger och som har delats med dig. Administratörsnivåanvändare kan se alla segment i organisationen. I den här översikten presenteras användargränssnittet och funktionerna i segmenthanteraren. Åtkomst till segmenthanteraren via
+Segmenthanteraren i Analytics visar alla segment som du äger och som har delats med dig. Administratörsnivåanvändare kan se alla segment i organisationen. I den här översikten presenteras användargränssnittet och funktionerna i segmenthanteraren.
 
-* Går till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]** i den övre navigeringen.
-* Visa en befintlig rapport och klicka på segmentikonen  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen. Klicka sedan på **[!UICONTROL Manage]**.
+![Segmenthanterare](assets/segments-manager.png)
+
+## Öppna segmenthanteraren
+
+1. I Adobe Analytics väljer du **[!UICONTROL Components]** tabbtangenten och sedan välja **[!UICONTROL Segments]**.
+
+   eller
+
+   I en befintlig rapport väljer du segmentikonen ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen väljer du **[!UICONTROL Manage]**.
+
+## Tillgängliga åtgärder i segmenthanteraren
+
+I segmenthanteraren kan du:
+
+* [Filtrera segment](/help/components/segmentation/segmentation-workflow/t-seg-filter.md)
+
+* [Markera segment som favoriter](/help/components/segmentation/segmentation-workflow/t-seg-favorite.md)
+
+* [Godkänna segment](/help/components/segmentation/segmentation-workflow/seg-approve.md)
+
+* [Tagga segment](/help/components/segmentation/segmentation-workflow/seg-tag.md)
+
+* [Dela segment](/help/components/segmentation/segmentation-workflow/t-seg-share.md)
+
+* Exportera ett segment till en CSV-fil.
+
+* [Kopiera segment](/help/components/segmentation/segmentation-workflow/seg-copy.md)
+
+* [Ta bort segment](/help/components/segmentation/segmentation-workflow/seg-delete.md)
+
+## Konfigurera kolumner
+
+Du kan konfigurera den information som visas för varje segment i segmenthanteraren genom att konfigurera de kolumner som visas.
+
+Så här konfigurerar du synliga kolumner i segmenthanteraren:
+
+1. I Adobe Analytics väljer du **[!UICONTROL Components]** tabbtangenten och sedan välja **[!UICONTROL Segments]**.
+
+1. I segmenthanteraren väljer du **Anpassa kolumner** icon ![Ikonen Anpassa kolumner](assets/customize-columns-icon.png)markerar du de kolumner som du vill ska visas i segmenthanteraren.
+
+   Följande kolumner är tillgängliga:
+
+   | Kolumnrubrik | Beskrivning |
+   |---|---|
+   | Titel och beskrivning | Dessa värden anges i segmentbyggaren. Om du vill redigera titeln och beskrivningen markerar du titellänken för att öppna segmentbyggaren. |
+   | Favoriter | Visar stjärnikoner bredvid varje segment, så att du kan markera segment som favoriter. Mer information finns i [Markera segment som favoriter](/help/components/segmentation/segmentation-workflow/t-seg-favorite.md). |
+   | Rapportsviter | Den här kolumnen anger i vilken rapportsserie segmentet senast sparades. |
+   | Ägare | Anger vem som äger segmentet. Som icke-administratör kan du bara se segment som du äger eller de som delats med dig. |
+   | Taggar (inte incheckad i kolumnväljare, därför visas inte kolumnen) | Taggar som har tillämpats på segmentet, antingen av dig eller av personer som delat segmentet med dig. |
+   | Delas med | Visar enskilda personer eller grupper (endast Admin) eller Alla (endast Admin) som du har delat segmentet med. <p>När ett segment delas av dig eller med dig visas en delningsikon bredvid segmentnamnet.</p> |
+   | Ändrat den | Visar datumet då segmentet senast ändrades. |
+   | Används i | **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).<p>Visar i vilken av följande komponenttyper segmentet används för närvarande:</p> <ul><li>Larm</li><li>Beräknade värden</li><li>Projekt</li><li>Schemalagda projekt</li><li>Segment</li></ul> Om segmentet till exempel används i 40 projekt och 2 varningar visas den här kolumnen [!UICONTROL **Varningar (2), projekt (40)**]. <p>Den här informationen kan hjälpa dig att avgöra om ett segment är värdefullt för användare i organisationen eller om det ska tas bort.</p><p>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</p><p>Du kan använda [Dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen. |
+   | Senast använd | **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Funktionsreleaser för Customer Journey Analytics](/help/release-notes/releases.md).<p>Visar datumet då segmentet senast användes i någon av följande komponenttyper:</p> <ul><li>Larm</li><li>Beräknade värden</li><li>Projekt</li><li>Schemalagda projekt</li><li>Segment</li></ul> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen eller om den ska tas bort.</p><p>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</p><p>Du kan använda [Dataordlista](/help/analyze/analysis-workspace/components/data-dictionary/data-dictionary-overview.md) tillsammans med den här informationen för att hjälpa dig att hålla reda på och bättre förstå hur komponenter används i organisationen. |
+
+   {style="table-layout:auto"}
 
 ## Videoinstruktion {#section_B3C5DA22DC5248DBA17C56E03DA2D4F2}
 
 Detta [Adobe Analytics video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/segmentation/segment-management-and-sharing.html) ger en kort översikt över hur du använder segmenthanteraren.
 
-## Användargränssnitt för segmenthanteraren {#section_7FDCD12949BE4741A402DB83AB7B37DF}
 
-![](assets/segment_manager_ui.png)
-
-| # | Gränssnittsfunktion | Beskrivning |
-|---|---|---|
-| 1 | Verktygsfält för segmenthantering | När du har markerat ett segment visas det här verktygsfältet. De flesta hanteringsåtgärder kan utföras från det här verktygsfältet. |
-| 2 | Visa filter | När du klickar på filterikonen visas filtermenyn. Du kan filtrera efter taggar, ägare, Visa alla (endast administratör), Min, Favoriter, Godkänd och Delade med mig. |
-| 3 | Kryssrutor | Kontrollera ett segment för att hantera det. |
-| 4 | Favoriter | Om du klickar på stjärnan bredvid ett segment ändras stjärnan till gul och segmentet markeras som en favorit. |
-| 5 | Segmenttitlar och beskrivningar | Tillhandahålls i Segment Builder. Om du vill redigera titeln och beskrivningen klickar du på titellänken. Då återgår du till segmentbyggaren. |
-| 6 | Rapportsviter | Den här kolumnen anger i vilken rapportsserie segmentet senast sparades. |
-| 7 | Ägare | Anger vem som äger segmentet. Som icke-administratör kan du bara se segment som du äger eller de som delats med dig. |
-| 8 | Taggar (inte incheckad i kolumnväljare, därför visas inte kolumnen) | Taggar som har tillämpats på segmentet, antingen av dig eller av personer som delat segmentet med dig. |
-| 9 | Delas med | Visar enskilda personer eller grupper (endast Admin) eller Alla (endast Admin) som du har delat segmentet med. |
-| 10 | Ändringsdatum | Visar datumet då segmentet senast ändrades. |
-| 11 | Kolumnväljare | Gör att du kan markera eller avmarkera kolumner i segmenthanteraren. |
-| 12 | Ikon för delad | Anger att det här segmentet delas av dig eller med dig. |
-| 13 | Ikonen Godkänd | Anger att det här segmentet har godkänts av en administratör. |
-| 14 | Filter | Gör att du kan visa och välja filter under Taggar, Rapportsviter, Ägare och Annat (Visa alla, Min, Dela med mig, Godkänd, Favoriter). |

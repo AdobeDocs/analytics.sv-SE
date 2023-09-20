@@ -3,9 +3,9 @@ description: I hanteraren för beräknade mätvärden kan du skapa ett arbetsfl�
 title: Godkänna beräknade mätvärden
 feature: Calculated Metrics
 exl-id: ec39937c-27e8-4725-832c-5e1c989d1c9f
-source-git-commit: e955e3bfe114717f6e42d06cb92faff30a10284d
+source-git-commit: b61de8f7a6f1d2d875fa6268c53a3ad1b61f25dd
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '232'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ I hanteraren för beräknade värden kan administratörer skapa ett arbetsflöde
 
 Så här markerar du beräknade värden som godkända:
 
-1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**] för att gå till Calculated Metrics Manager.
+1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Beräknade mått**].
 
 1. Markera kryssrutan till vänster om de mätvärden som du vill markera som godkända i Calculated Metrics Manager.
 
@@ -36,4 +36,4 @@ Så här markerar du beräknade värden som godkända:
 
    Lägg märke till godkännandeikonen bredvid det beräknade måttet i listan:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
-1. (Valfritt) Välj alternativet **Filter** ikon, expandera **[!UICONTROL Other filters]** väljer **[!UICONTROL Approved]**.
+1. (Valfritt) Om du vill filtrera listan med beräknade värden i hanteraren för beräknade värden så att endast godkända värden visas, väljer du **Filter** ikon, expandera **[!UICONTROL Other filters]** väljer **[!UICONTROL Approved]**.

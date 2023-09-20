@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: c418a9ed9f1dedd4a382b718f83313b6225dff63
+source-git-commit: dc84909f9c19681adfd28696495b667837056146
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 43%
+source-wordcount: '739'
+ht-degree: 42%
 
 ---
 
@@ -171,6 +171,7 @@ ht-degree: 43%
       + [Filtrera segment](segmentation/segmentation-workflow/t-seg-filter.md)
       + [Markera segment som favoriter](segmentation/segmentation-workflow/t-seg-favorite.md)
       + [Ta bort segment](segmentation/segmentation-workflow/seg-delete.md)
+      + [Kopiera segment](segmentation/segmentation-workflow/seg-copy.md)
       + [Hantera segment](segmentation/segmentation-workflow/seg-manage.md)
    + Segmentreferens {#segment-reference}
       + [Jämförelseoperatorer för segment](segmentation/seg-reference/seg-operators.md)
@@ -195,8 +196,11 @@ ht-degree: 43%
       + [Filtrerade och viktade mätvärden](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-weighted-metric.md)
       + [Använda funktioner](c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-using-functions.md)
       + [Tagga beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-tagging.md)
+      + [Filtrera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-filter.md)
+      + [Markera beräknade värden som favoriter](c-calcmetrics/c-workflow/cm-workflow/cm-favorite.md)
       + [Godkänna beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-approving.md)
       + [Dela beräknade mätvärden](c-calcmetrics/c-workflow/cm-workflow/cm-sharing.md)
+      + [Kopiera beräknade värden](c-calcmetrics/c-workflow/cm-workflow/cm-copy.md)
       + [Beräknat måttansvarig](c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)
    + Mätvärdesreferens {#calcmetrics-reference}
       + [Referens: grundläggande funktioner](c-calcmetrics/cm-reference/cm-functions.md)

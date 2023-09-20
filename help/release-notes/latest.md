@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 95e4a3254bafed8ac4cb59625e6f5ba2fb3b1ad0
+source-git-commit: 2998ab3ecb83e14be38333a2836f863667babfee
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '891'
 ht-degree: 3%
 
 ---
@@ -23,6 +23,7 @@ Versionsinformationen för september omfattar frisläppningsperioden 13 septembe
 | **Klassificeringar i API 2.0** | Innehåller Adobe Analytics API 2.0-metoder för att spara, ta bort, hämta, importera och exportera klassificeringsuppsättningsdata. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/classifications/) | Ej tillämpligt | 13 september 2023 |
 | **Stöd för nya `correlationID` fält för A4T-klassificeringar** | The `_experience.decisioning.propositions.scopeDetails.correlationID` -fältet är nu tillgängligt i Adobe Analytics källanslutningsschema. Vi lägger till det här ID:t för enkel koppling av klassificeringsdata för Adobe Target-aktiviteter och upplevelsehändelser. | Ej tillämpligt | 13 september 2023 |
 | **Förbättrad Data Warehouse** | När du skapar en begäran om Data Warehouse kan du nu konfigurera ett molnkonto som ska användas som rapportmål. Följande typer av molnkonton är tillgängliga för att skicka data:<ul><li>Amazon S3</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>E-post (det här alternativet var tidigare tillgängligt)</li></ul>FTP, SFTP, Azure Blob och S3 är fortfarande tillgängliga som rapportmål, men rekommenderas inte längre.<p>Användarupplevelsen när begäranden om Data Warehouse skapas och hanteras har också förbättrats. Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md) och [Hantera förfrågningar från Data Warehouse](https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse-requests-manage.html). | 13 september 2023 | 4 oktober 2023 |
+| **Nya kolumner är tillgängliga när komponenter hanteras** | Följande nya kolumner är nu tillgängliga när du hanterar komponenter:<ul><li>Används i<p>Den här kolumnen är tillgänglig i [Beräknat måttansvarig](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md) och [Segmenthanterare](/help/components/segmentation/segmentation-workflow/seg-manage.md).</p></li><li>Senast använd<p>Den här kolumnen är tillgänglig i [Beräknat måttansvarig](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), [Segmenthanterare](/help/components/segmentation/segmentation-workflow/seg-manage.md)och [Varningshanteraren](/help/components/c-alerts/alert-manager.md).</p></li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras. Du kan använda ordlistan tillsammans med den här informationen för att hålla reda på och förstå hur komponenter används i organisationen bättre.</p> | 20 september 2023 | 4 oktober 2023 |
 
 {style="table-layout:auto"}
 
