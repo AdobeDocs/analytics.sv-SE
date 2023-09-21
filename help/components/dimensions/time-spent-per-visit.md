@@ -3,7 +3,7 @@ title: Tid per besök (dimensioner)
 description: Den totala tiden för besöket.
 feature: Dimensions
 exl-id: f241eb2d-7e22-47ee-ade8-8aeb7b2b9694
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Tid per besök
 
-*Den här hjälpsidan beskriver hur&quot;Tid per besök&quot; fungerar som respektive mått. Se [Tid per besök](../metrics/time-spent-per-visit.md) för mer information.*
+*Den här hjälpsidan beskriver hur&quot;Tid per besök&quot; fungerar som respektive [dimensioner](overview.md). Se [Tid per besök](../metrics/time-spent-per-visit.md) för mer information.*
 
 Dimensionerna &#39;Tid per besök&#39; visar hur mycket tid en besökare tillbringat på hela besöket. Följande steg används för att mäta beräkningen:
 
@@ -32,13 +32,13 @@ Den här dimensionen är relaterad till [Genomsnittlig tid på webbplatsen](../m
 
 ## Fyll den här dimensionen med data
 
-De här dimensionerna passar alla implementeringar. Om en rapportsvit innehåller data fungerar de här dimensionerna.
+De här dimensionerna fungerar som de ska för alla implementeringar. Om en rapportsvit innehåller data fungerar de här dimensionerna.
 
 ## Dimensioner
 
 Det finns flera dimensioner av den tid som tillbringas per besök:
 
-* **Tid per besök - paketerad**: Tidsmängden är spärrad. Objekten i Dimensionen kan variera från `"Less than 1 minute"` till `"More than 15 hours"`. Besök varar vanligtvis inte längre än 12 timmar. besöken kan dock överskrida 12 timmar om tidsstämplade träffar eller datakällor används.
-* **Tidsåtgång per besök - granulerad**: Varje antal sekunder är ett unikt dimensionsobjekt. Den här dimensionen är inte tillgänglig i Rapporter och analyser eller Data warehouse.
+* **Tid per besök - paketerad**: Tidsmängden är bucketed. Objekten i Dimensionen kan variera från `"Less than 1 minute"` till `"More than 15 hours"`. Besök varar vanligtvis inte längre än 12 timmar, men besöken kan överstiga 12 timmar om tidsstämplade träffar eller datakällor används.
+* **Tidsåtgång per besök - granulerad**: Varje antal sekunder är ett unikt dimensionsobjekt. Den här dimensionen är inte tillgänglig i Rapporter och analyser eller i Data Warehouse.
 
 Se [Tidsåtgång - översikt](../metrics/time-spent.md) om du vill ha mer allmän information om hur länge du har tillbringat.

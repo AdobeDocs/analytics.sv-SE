@@ -3,7 +3,7 @@ title: USA
 description: Besökarens tillstånd i USA.
 feature: Dimensions
 exl-id: d4506e59-c1ff-4348-912d-c1ad73278f56
-source-git-commit: 146d622f370fd7469a8e5f0f2fe68cb31fa91844
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # USA
 
-I USA-dimensionen rapporteras besökarens tillstånd i USA. Det liknar [Regioner](regions.md) -dimension, förutom att denna dimension är specifik för USA. Att använda den här dimensionen är värdefullt om du vill ha mer detaljerad information än [Länder](countries.md) men inte så granulerande som [Städer](cities.md).
+USA-staten [dimension](overview.md) rapporterar besökarens tillstånd i USA. Det liknar [Regioner](regions.md) -dimension, förutom att denna dimension är specifik för USA. Att använda den här dimensionen är värdefullt om du vill ha mer detaljerad information än [Länder](countries.md) men inte så granulerande som [Städer](cities.md).
 
 ## Fyll den här dimensionen med data
 
@@ -20,9 +20,9 @@ Den här dimensionen refererar till uppslagsregler som är interna för Adobe. U
 
 ## Dimensioner
 
-Dimensioner är bland annat regioner och det land som regionen bor i. Exempelvärden innehåller `"California"`, `"Texas"`, eller `"Virginia"`. Dimensionsartikeln `"Unspecified"` omfattar all internationell trafik utanför USA.
+Dimensioner är bland annat regioner och det land som  bor i. Exempelvärden innehåller `"California"`, `"Texas"`, eller `"Virginia"`. Dimensionsartikeln `"Unspecified"` omfattar all internationell trafik utanför USA.
 
-Denna dimension kan innehålla `"AOL"`, en Internetleverantör. Prenumeranter på den här tjänsten har tilldelats en åtkomstpunkt. AOL-användare använder IP-adressen för den här åtkomstpunkten. Eftersom den här dimensionen baseras på IP-adressen används åtkomstpunktens geopositionering i stället för besökarens faktiska plats.
+Den här dimensionen kan innehålla `"AOL"`, en Internetleverantör. Prenumeranter på den här tjänsten har tilldelats en åtkomstpunkt. AOL-användare använder IP-adressen för den här åtkomstpunkten. Eftersom den här dimensionen baseras på IP-adressen används åtkomstpunktens geolokalisering i stället för besökarens faktiska plats.
 
 ## Skillnader mellan rapporterad och faktisk plats
 

@@ -3,7 +3,7 @@ title: Träff-typ
 description: Avgör om träffen var en förgrunds- eller bakgrundsträff.
 feature: Dimensions
 exl-id: b922adbb-fe36-46c7-aab2-b9471de07d2f
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Träff-typ
 
-Dimensionen Träffyp avgör om en mobilapp fanns i förgrunden eller bakgrunden när träffen skickades till Adobe datainsamlingsservrar. Den här dimensionen är bara relevant för att rapportera programsviter som innehåller data för mobilprogram. Webbläsardata som samlats in via AppMeasurement rapporterar alltid träffen som &quot;Förgrund&quot;.
+Träff-typen [dimension](overview.md) Fastställer om en mobilapp fanns i förgrunden eller bakgrunden när träffen skickades till datainsamlingsservrarna i Adobe. Den här dimensionen är bara relevant för att rapportera programsviter som innehåller data för mobilprogram. Webbläsardata som samlas in via AppMeasurementet rapporterar alltid träffen som &quot;Förgrund&quot;.
 
 ## Fyll den här dimensionen med data
 

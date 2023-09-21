@@ -3,7 +3,7 @@ title: Hämta länk
 description: Namnet på nedladdningslänken.
 feature: Dimensions
 exl-id: 078014a2-1f09-4177-9575-b44c5da25816
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Hämta länk
 
-Dimensionen Download link visar namnen på de nedladdningslänkar som har implementerats på din webbplats. Den här dimensionen är värdefull när du vill veta mer om besökares beteende kring nedladdningslänkar, som:
+The &#39;Download link&#39; [dimension](overview.md) rapporterar namnen på nedladdningslänkar som implementerats på din webbplats. Den här dimensionen är värdefull när du vill veta mer om besökares beteende kring nedladdningslänkar, som:
 
 * Bestäm vilka filer som laddas ned oftast från webbplatsen.
 * Förstå om vissa filer laddas ned oftare under särskilda tidsperioder.

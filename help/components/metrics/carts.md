@@ -3,7 +3,7 @@ title: Korgar
 description: Antalet träffar där en besökare lade till sin första produkt i en kundvagn.
 feature: Metrics
 exl-id: 890bbaba-0140-4995-bbd2-c69aedc801e5
-source-git-commit: 932a6c1452d4710b11c1ce5551c845ef6721f137
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Korgar
 
-Mätvärdet &quot;Carts&quot; visar antalet träffar där en besökare lade till sin första produkt i en kundvagn.
+Carts [mått](overview.md) visar antalet träffar där en besökare lade till sin första produkt i en kundvagn.
 
 ## Hur det här måttet beräknas
 
@@ -26,4 +26,4 @@ Eftersom&quot;kundvagnar&quot;,&quot;kundvagnsvyer&quot; och&quot;kundvagnstill�
 * &quot;Vyer av kundvagnen&quot; utlöses varje gång en besökare visar sin kundvagn.
 * &quot;Cart additions&quot;-utlösare för varje produkt som läggs till i kundvagnen.
 
-När en kund lägger till sin första produkt i en kundvagn är det avsedda beteendet att utlösa både &quot;kundvagn&quot; och &quot;kundvagnstillägg&quot;. Återigen är dessa riktlinjer inte konkreta. organisationen bestämmer den exakta implementeringslogiken.
+När en kund lägger till sin första produkt i en kundvagn är det avsedda beteendet att utlösa både &quot;kundvagn&quot; och &quot;kundvagnstillägg&quot;. Återigen är dessa riktlinjer inte konkreta. Din organisation avgör den exakta implementeringslogiken.

@@ -1,9 +1,9 @@
 ---
 title: Tid per besök (mätvärden)
-description: Tidsåtgång per besök för dimensionsobjektet.
+description: Den tid som tillbringats per besök för dimensionsobjektet.
 feature: Metrics
 exl-id: 0f951196-66a2-4733-bb62-4555a9331efb
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 *Den här hjälpsidan beskriver hur&quot;Tid per besök&quot; fungerar som ett mått. Se [Tid per besök](../dimensions/time-spent-per-visit.md) för mer information.*
 
-Mätvärdet &quot;Tid per besök (sekunder)&quot; visar den genomsnittliga tid som besökarna interagerar med en viss dimensionspost under varje besök.
+Tid per besök (sekunder) [mått](overview.md) visar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök.
 
-Det här måttet är inte tillgängligt i Data warehouse på grund av dess olika bearbetningsarkitektur.
+Det här måttet är inte tillgängligt i Data Warehouse på grund av dess olika bearbetningsarkitektur.
 
 ## Hur det här måttet beräknas
 

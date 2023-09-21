@@ -3,7 +3,7 @@ title: Dagar sedan senaste köp
 description: Antalet dagar mellan den aktuella träffen och det senaste köpet de gjorde.
 feature: Dimensions
 exl-id: 6f0d9d79-cf40-4de3-9d9f-9b1bc57f97b6
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Dagar sedan senaste köp
 
-Dimensionen Dagar sedan senaste köp mäter den tid som passerat mellan besökarens aktuella träff och deras senaste köp vid den tidpunkten. Den här dimensionen hjälper dig att förstå det beteende besökarna gör efter att ha köpt något på din webbplats.
+Dagar sedan senaste köp [dimension](overview.md) mäter hur lång tid som passerat mellan besökarens aktuella träff och deras senaste köp vid den tidpunkten. Den här dimensionen hjälper dig att förstå det beteende besökare gör efter att ha köpt något på din webbplats.
 
 Besökare som aldrig köpt något ingår inte i denna dimension. Dessutom kommer träffar som utlösts innan besökarens första inköp inte heller att inkluderas. Endast träffar efter besökarens första köp.
 

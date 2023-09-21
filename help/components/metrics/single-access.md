@@ -3,7 +3,7 @@ title: Enkel åtkomst
 description: Antalet gånger som en dimensionspost inte ändrades vid ett besök.
 feature: Metrics
 exl-id: 973ce835-9d6f-4ead-90c9-0b80aac82cc0
-source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Enkel åtkomst
 
-Mätvärdet för enkel åtkomst visar antalet besök där dimensionsobjektet endast innehöll ett unikt värde för hela besöket. Det här måttet är användbart i samband med alla dimensioner där du vill se vilka dimensionsobjekt som stagnerar under ett besök.
+Enkel åtkomst [mått](overview.md) visar antalet besök där dimensionsposten endast innehöll ett unikt värde för hela besöket. Det här måttet är användbart i samband med alla dimensioner där du vill se vilka dimensionsobjekt som stagnerar under ett besök.
 
 ## Hur det här måttet beräknas
 

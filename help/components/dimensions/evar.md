@@ -3,7 +3,7 @@ title: eVar (dimension)
 description: En anpassad dimension som du kan använda vid rapportering.
 feature: Dimensions
 exl-id: ce7cc999-281d-4c52-b64d-d44cc320ab2d
-source-git-commit: 391d4378a360270acb40cbd9ddb2be3cd315d11c
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # eVar
 
-*Den här hjälpsidan beskriver hur eVars fungerar som en dimension. Mer information om hur du implementerar eVars finns i [eVars](/help/implement/vars/page-vars/evar.md) i Implementeringshandboken.*
+*Den här hjälpsidan beskriver hur eVars fungerar som en [dimension](overview.md). Mer information om hur du implementerar eVars finns i [eVars](/help/implement/vars/page-vars/evar.md) i Implementeringshandboken.*
 
 Variabler är anpassade variabler som du kan använda hur du vill. Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)blir de flesta dimensioner som är specifika för din organisation [!UICONTROL eVars], utöver standarddimensionen som är tillgänglig med Adobe Analytics, till exempel Sidnamn, Refererande domän, Kanal. Se [Översikt över Dimension](overview.md) för mer information.
 

@@ -3,7 +3,7 @@ title: Sidhändelser
 description: Antalet utlösta länkspårningsåtgärder.
 feature: Metrics
 exl-id: 1afe86e3-65b3-4e4e-b436-ed7cb5da9641
-source-git-commit: 5e70a84c7793b516c0eca2776d8bbfd3ea3fc02b
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Sidhändelser
 
-Mätvärdet för Sidhändelser visar hur många gånger ett länkspårningsanrop gjordes. Den här mätningen är användbar när du vill veta vilka sidor som har det mest engagerande innehållet. Mätning för det här måttet är mest värdefullt när en besökare kan utföra en åtgärd på sidan utan att navigera till en ny sida.
+Sidhändelser [mått](overview.md) visar hur många gånger ett länkspårningsanrop gjordes. Den här mätningen är användbar när du vill veta vilka sidor som har det mest engagerande innehållet. Mätning för det här måttet är mest värdefullt när en besökare kan utföra en åtgärd på sidan utan att navigera till en ny sida.
 
 ## Hur det här måttet beräknas
 

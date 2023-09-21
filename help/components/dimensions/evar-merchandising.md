@@ -1,18 +1,18 @@
 ---
-title: eVar (marknadsföringsdimension)
+title: eVar (marknadsdimension)
 description: Egna variabler som är kopplade till produktdimensionen.
 feature: Dimensions
 exl-id: a7e224c4-e8ae-4b53-8051-8b5dd43ff380
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
 
 ---
 
-# eVar (Merchandising)
+# eVar (varuexponering)
 
-*Den här hjälpsidan beskriver hur e-handel fungerar som en dimension. Mer information om hur du implementerar eVars för marknadsföring finns i [eVar (variabel för försäljning)](/help/implement/vars/page-vars/evar-merchandising.md) i användarhandboken för implementering.*
+*Den här hjälpsidan beskriver hur e-handel fungerar som en [dimension](overview.md). Mer information om hur du implementerar eVars för marknadsföring finns i [eVar (variabel för försäljning)](/help/implement/vars/page-vars/evar-merchandising.md) i användarhandboken för implementering.*
 
 Mer information om hur du marknadsför eVars finns i [Merchandising eVars and product finding methods](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/merchandising-evars.html).
 
@@ -26,7 +26,7 @@ Före utcheckningen söker kunden efter `"winter coat"`lägger sedan till en jac
 
 ![Exempel på Coat](assets/merch-example-coat.png)
 
-När besökaren är klar med köpet har du en intern sökning efter `"winter coat"` krediteras med köp av ett par glasögon (förutsatt att eVar använder standardallokeringen för&quot;Senaste&quot;). Bra för `"winter coat"`men dåligt för marknadsföringsbeslut:
+När besökaren är klar med köpet har du en intern sökning efter `"winter coat"` krediteras med köp av ett par glasögon (förutsatt att eVarna använder standardallokeringen för&quot;Senaste&quot;). Bra för `"winter coat"`men dåligt för marknadsföringsbeslut:
 
 | Intern sökterm | Intäkter |
 |---|---|
@@ -34,24 +34,24 @@ När besökaren är klar med köpet har du en intern sökning efter `"winter coa
 
 ## Hur variabler för marknadsföring löser det här problemet
 
-Med eVars kan du tilldela en eVar det aktuella värdet när en lyckad händelse inträffar. Det här värdet är kopplat till den produkten även om ett eller flera nya värden senare anges för den aktuella eVar.
+Med eVars kan du tilldela en eVar det aktuella värdet när en lyckad händelse inträffar. Detta värde är kopplat till den produkten även om ett eller flera nya värden senare anges för den aktuella eVarna.
 
-Om marknadsföring är aktiverat för eVar i det föregående exemplet, söktermen `"goggles"` är knutet till snön och söktermen `"winter coat"` är knuten till koftan. Merchandising eVars tilldelar intäkter på produktnivå, så varje term får en uppskattning av intäktsbeloppet för den produkt som termen var kopplad till:
+Om marknadsföring är aktiverat för eVarna i det föregående exemplet, söktermen `"goggles"` är knutet till snön och söktermen `"winter coat"` är knuten till koftan. Merchandising eVars tilldelar intäkter på produktnivå, så varje term får en uppskattning av intäktsbeloppet för den produkt som termen var kopplad till:
 
 | Intern sökterm | Intäkter |
 |---|---|
 | vinterrock | $119 |
 | glasögon | $38 |
 
-Se [Merchandising eVars](/help/implement/vars/page-vars/evar-merchandising.md) för implementeringsanvisningar.
+Se [Merchandising eVars](/help/implement/vars/page-vars/evar-merchandising.md) för implementeringsinstruktioner.
 
 ## Instanser av marknadsföringsvariabler
 
 The [Instanser](../metrics/instances.md) metriska värden rekommenderas inte för användning på försäljningsvariabler.
 
 * För variabler som används i produktsyntax ökas inte antalet instanser alls.
-* För marknadsföringsvariabler som använder konverteringsvariabelsyntax räknas instanser varje gång eVar anges. Det är emellertid attribut till dimensionsobjektet `"None"` om inte alla följande inträffar i samma träff:
-   * Försäljningsvärdet anges med ett eVar.
+* För marknadsföringsvariabler som använder syntax för konverteringsvariabler räknas instanser varje gång eVarna ställs in. Det är emellertid attribut till dimensionsobjektet `"None"` om inte allt av följande inträffar i samma träff:
+   * EVarna för varuexponering anges med ett värde.
    * The `products` variabeln definieras med ett värde.
    * En bindningshändelse har angetts.
 

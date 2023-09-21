@@ -1,9 +1,9 @@
 ---
 title: Besöksnummer
-description: Besökarens n:e besök.
+description: Besökarens sjätte besök.
 feature: Dimensions
 exl-id: daef34b3-c270-476d-a45c-a20be6138c6b
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Besöksnummer
 
-Dimensionerna &#39;Besöksnummer&#39; som besöker besökaren just nu är aktiverad. När ett nytt besök startar, ökar dimensionsposten med 1. Den här dimensionen är användbar när du vill förstå hur engagerade besökare är när du återvänder till din webbplats. Det är en besöksbaserad dimension, vilket innebär att den innehåller samma värde för hela besöket och inte kan ändras. Det gäller besökarens livstid, oavsett projektets datumintervall.
+Besöksnumret [dimension](overview.md) rapporter som besökaren för närvarande besöker. När ett nytt besök startar, ökar dimensionsposten med 1. Den här dimensionen är användbar när du vill förstå hur engagerade besökare är när du återvänder till din webbplats. Det är en besöksbaserad dimension, vilket innebär att den innehåller samma värde för hela besöket och inte kan ändras. Det gäller besökarens livstid, oavsett projektets datumintervall.
 
 ## Fyll den här dimensionen med data
 

@@ -1,9 +1,9 @@
 ---
 title: Unika besökare
-description: Antalet unika besökar-ID:n.
+description: Antalet unika besökar-ID.
 feature: Metrics
 exl-id: 56e7bad4-4802-49ac-a0f1-ae77441fc016
-source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Unika besökare
 
-Måttet&quot;Unika besökare&quot; visar antalet besökar-ID:n för dimensionsobjektet. Det är ett av de vanligaste måtten som används för att fastställa trafik, eftersom det ger en översikt på hög nivå över en dimensionsposts popularitet. En besökare kan till exempel komma till din webbplats varje dag i en månad, men de räknas ändå som en unik besökare.
+Unika besökare [mått](overview.md) visar antalet besökar-ID för dimensionsobjektet. Det är ett av de vanligaste måtten som används för att fastställa trafik, eftersom det ger en översikt på hög nivå över en dimensionsposts popularitet. En besökare kan till exempel komma till din webbplats varje dag i en månad, men de räknas ändå som en unik besökare.
 
-Om du använder [Enhetsövergripande analys](../cda/overview.md), den här mätningen ersätts med [Unika enheter](unique-devices.md) mätvärden.
+Om du [Enhetsövergripande analys](../cda/overview.md), den här mätningen ersätts med [Unika enheter](unique-devices.md) mätvärden.
 
 ## unika besökare varje dag, vecka, månad, kvartal och år
 

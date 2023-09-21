@@ -3,7 +3,7 @@ title: Besök
 description: En sekvens med sidvisningar under en session.
 feature: Metrics
 exl-id: 4f78f2b5-f958-44fe-876a-83f07980beec
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Besök
 
-Mätvärdet &quot;Besök&quot; visar antalet sessioner för alla besökare på webbplatsen.
+&#39;Besök&#39; [mått](overview.md) visar antalet sessioner för alla besökare på webbplatsen.
 
 ## Hur det här måttet beräknas
 
@@ -21,7 +21,7 @@ Ett besök hör alltid till en tidsperiod, så du vet om du ska räkna med ett n
 * **30 minuters inaktivitet**: Nästan alla sessioner avslutas på det här sättet. Om det tar mer än 30 minuter mellan träffarna börjar ett nytt besök.
 * **12 timmars aktivitet**: Om en användare konsekvent skickar bildförfrågningar utan 30 minuters mellanrum i mer än 12 timmar, startar ett nytt besök automatiskt.
 * **2 500 träffar**: Om en användare skapar ett stort antal träffar utan att starta en ny session räknas ett nytt besök efter 2 500 bildförfrågningar.
-* **100 träffar på 100 sekunder**: Om ett besök har fler än 100 träffar under de första 100 sekunderna av besöket upphör besöket automatiskt. Detta beteende indikerar vanligtvis båda aktiviteterna och begränsningen används för att öka rapportens prestanda.
+* **100 träffar på 100 sekunder**: Om ett besök har fler än 100 träffar under de första 100 sekunderna av besöket avslutas besöket automatiskt. Detta beteende indikerar vanligtvis båda aktiviteterna och begränsningen används för att öka rapportens prestanda.
 
 Ett besök sammanfaller inte nödvändigtvis med en webbläsarsession på grund av ovanstående kriterier. En av de vanligaste skillnaderna är var en besökare navigerar till webbplatsen, lämnar fliken öppen i mer än 30 minuter och sedan fortsätter surfningen. Även om denna åtgärd tekniskt sett ingår i samma surfsession anser Adobe att denna åtgärd är två separata besök.
 
@@ -30,7 +30,7 @@ Ett besök sammanfaller inte nödvändigtvis med en webbläsarsession på grund 
 Om en besökare utför någon av dessa åtgärder, kommer ett nytt besök att påbörjas:
 
 * Rensar deras cachesession och fortsätter surfa på webbplatsen
-* Lämnar webbplatsen öppen på en flik i mer än 30 minuter och fortsätter sedan att surfa
+* Lämnar webbplatsen öppen på en flik i mer än 30 minuter och fortsätter sedan att bläddra
 * Öppnar en annan webbläsare och navigerar till din webbplats på samma dator
 * Samma person som surfar på din webbplats på olika enheter
 
@@ -45,7 +45,7 @@ Om en besökare utför någon av dessa åtgärder gör ett nytt besök **not** s
 
 Du kan ändra definitionen för ett besök till en annan tidpunkt än 30 minuter.
 
-* För [Virtuella rapportsviter](../vrs/vrs-about.md)kan du ändra tidsgränsen för besök med [!UICONTROL Visit timeout] nedrullningsbar lista. Du kan ändra tidsgränsen för besök till ett rimligt värde.
+* För [Virtuella rapportsviter](../vrs/vrs-about.md)kan du ändra tidsgränsen för besök med [!UICONTROL Visit timeout] listruta. Du kan ändra tidsgränsen för besök till ett rimligt värde.
 * Om du vill ha en standardrapport kontaktar du Kundtjänst för att begära att besökslängden ska förkortas för en viss rapportserie. Du kan bara korta ned längden för standardrapportsviter med 30 minuter.
 
 ## Besök som sträcker sig över en datumgräns
@@ -54,8 +54,8 @@ Ett besök räknas för varje berörd tidsperiod. Om du till exempel har en bes�
 
 ## Besök på en dimension jämfört med totalt antal besök
 
-Besök i samband med en dimension (t.ex. [Marknadsföringskanal](../dimensions/marketing-channel.md)) visar antalet besök som vid något tillfälle innehöll en viss dimensionspost. Det finns ofta flera dimensionsobjekt i olika träffar på samma besök. Försök att summera besök som rapporterar om dimensionsobjekt är vanligtvis inte rimligt.
+Besök i samband med en dimension (till exempel [Marknadsföringskanal](../dimensions/marketing-channel.md)) visar antalet besök som vid något tillfälle innehöll en viss dimensionspost. Det finns ofta flera dimensionsobjekt i olika träffar på samma besök. Försök att summera besök som rapporterar om dimensionsobjekt är vanligtvis inte rimligt.
 
-## Besök alla besökare i Data warehouse
+## Besök alla besökare i Datan Warehouse
 
-Måttet Besök - Alla besökare är tillgängligt i Data warehouse utöver Visits-måttet. Mätvärdet &#39;Besök - alla besökare&#39; är jämförbart med mätvärdet &#39;Besök&#39; i andra analysverktyg. Mätvärdet &#39;Besök&#39; i Data warehouse utesluter besökare som inte har beständiga cookies. Adobe rekommenderar att du använder &#39;Besök - alla besökare&#39; i Data warehouse där besök önskas som mätvärden.
+Måttet Besök - alla besökare är tillgängligt i Data Warehouse utöver Visits-måttet. Mätvärdet &#39;Besök - alla besökare&#39; är jämförbart med mätvärdet &#39;Besök&#39; i andra analysverktyg. Mätvärdet för &#39;Besök&#39; i Datan Warehouse utesluter besökare som inte har beständiga cookies. Adobe rekommenderar att du använder &#39;Besök - alla besökare&#39; i en Data Warehouse där besök önskas som mätvärden.

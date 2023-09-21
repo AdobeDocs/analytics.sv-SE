@@ -3,7 +3,7 @@ title: Första beröringskanalen
 description: Den första marknadsföringskanalen inom besökarens förfallodatum för engagemang.
 feature: Dimensions
 exl-id: cca9794c-1305-4e54-aa13-809b9ebc6230
-source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Första beröringskanalen
 
-Dimensionen Första beröringskanal rapporterar den första marknadsföringskanalen som en besökare matchar under besökarens engagemangsperiod (30 dagar som standard). Denna dimension är värdefull för att förstå vilka marknadsföringskanaler som driver den inledande trafiken till er webbplats, så att ni kan fokusera marknadsföringssatsningarna på de områden som är mest effektiva.
+Den första beröringskanalen [dimension](overview.md) rapporterar den första marknadsföringskanalen som en besökare matchar under besökarens engagemangsperiod (30 dagar som standard). Denna dimension är värdefull för att förstå vilka marknadsföringskanaler som driver den inledande trafiken till er webbplats, så att ni kan fokusera marknadsföringssatsningarna på de områden som är mest effektiva.
 
 ## Fyll den här dimensionen med data
 

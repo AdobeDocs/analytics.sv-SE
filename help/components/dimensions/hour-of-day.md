@@ -3,7 +3,7 @@ title: Timme på dagen
 description: Dagens numeriska timme, oavsett vilken dag.
 feature: Dimensions
 exl-id: b9361534-7e58-41ed-9a38-c02aeed7a2d8
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Timme på dagen
 
-Dimensionen &quot;Timme på dagen&quot; rapporterar den numeriska timmen för en given dag som en dimensionspost. Om du till exempel har en rapport som sträcker sig från 1 januari till 7 grupperas den första timmen för varje dag till samma dimensionsobjekt. Den här rapporten är värdefull om du vill att en rapport ska delas upp efter relativ tid på dagen, men inte vill ha en statisk timme som dimensionsobjekt. Det är särskilt värdefullt som en dimension i schemalagda rapporter, eftersom den här dimensionen följer det valda datumintervallet.
+&quot;Dagens timma&quot; [dimension](overview.md) rapporterar den numeriska timmen för en given dag som en dimensionspost. Om du till exempel har en rapport som sträcker sig från 1 januari till 7 grupperas den första timmen för varje dag till samma dimensionsobjekt. Den här rapporten är värdefull om du vill att en rapport ska delas upp efter relativ tid på dagen, men inte vill ha en statisk timme som dimensionsobjekt. Det är särskilt värdefullt som en dimension i schemalagda rapporter, eftersom den här dimensionen följer det valda datumintervallet.
 
-Denna dimension baseras på rapportsvitens tidszon, och inte på besökarens lokala tidszon. Om din rapportsvit till exempel är i Mountain-tid och en besökare i Kalifornien besöker din webbplats kl. 10.00 PST-tid, kommer träffgrupperna under `11:00 AM` dimensionsobjekt. Om du vill ha en dimension som registrerar den lokala besökarens tid, rekommenderar Adobe att du använder [getTimeParting](/help/implement/vars/plugins/gettimeparting.md) plugin-program.
+Denna dimension baseras på rapportsvitens tidszon, och inte på besökarens lokala tidszon. Om din rapportsvit till exempel är i Mountain-tid och en besökare i Kalifornien besöker din webbplats kl. 10.00 PST-tid, kommer träffgrupperna under `11:00 AM` dimensionsobjekt. Om du vill ha en dimension som registrerar den lokala besökarens tid bör du använda kommandot [getTimeParting](/help/implement/vars/plugins/gettimeparting.md) plugin-program.
 
 ## Fyll den här dimensionen med data
 

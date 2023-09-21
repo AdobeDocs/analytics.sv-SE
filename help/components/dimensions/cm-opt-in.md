@@ -3,7 +3,7 @@ title: Anmälan till samtyckeshantering
 description: Se vilka sekretessinställningar en besökare valde.
 exl-id: b2768180-b763-41fb-8cba-665fac047e29
 feature: Dimensions
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Anmälan till samtyckeshantering
 
-Dimensionen för hantering av medgivande visar vilka sekretessinställningar en besökare har angett. Du kan använda den här dimensionen för att filtrera data baserat på sekretessinställningar eller se de vanligaste anledningarna till sekretessavanmälan.
+Medgivandehanteringsanmälan [dimension](overview.md) visar vilka sekretessinställningar som en besökare har valt. Du kan använda den här dimensionen för att filtrera data baserat på sekretessinställningar eller se de vanligaste anledningarna till sekretessavanmälan.
 
 ## Fyll den här dimensionen med data
 

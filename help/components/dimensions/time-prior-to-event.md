@@ -3,7 +3,7 @@ title: Tid före händelse
 description: Hur lång tid det tar mellan mätvärdet och besökets första träff.
 feature: Dimensions
 exl-id: 2586673f-d908-4b69-901a-5fafe635d0d5
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Tid före händelse
 
-Dimensionen&quot;Tid före händelse&quot; visar hur lång tid det tog mellan besökets första träff och det önskade måttet. Denna dimension är användbar för att avgöra hur lång tid det tar att träffa på en lyckad händelse, som att skicka formulär eller köpa ett formulär.
+Tid före händelse [dimension](overview.md) rapporterar hur lång tid som förflutit mellan besökets första träff och det önskade måttet. Denna dimension är användbar för att avgöra hur lång tid det tar att träffa på en lyckad händelse, som att skicka formulär eller köpa ett formulär.
 
 ## Fyll den här dimensionen med data
 

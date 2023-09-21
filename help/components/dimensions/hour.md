@@ -3,7 +3,7 @@ title: Timme
 description: Den timme som mätvärdet inträffade på.
 feature: Dimensions
 exl-id: 323c46dd-87d0-487a-b954-e5ccbc1b919d
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Timme
 
-Dimensionen Timme anger timmen då ett givet mätresultat inträffade (avrundat nedåt). Den första dimensionsartikeln är den första timmen i datumintervallet, och den sista dimensionsartikeln är den sista timmen i datumintervallet. Denna dimension är värdefull för trendrapporter eftersom den gör att du kan se mätvärden över tid.
+Timme [dimension](overview.md) rapporterar timmen då ett givet mätresultat inträffade (avrundat nedåt). Den första dimensionsartikeln är den första timmen i datumintervallet, och den sista dimensionsartikeln är den sista timmen i datumintervallet. Denna dimension är värdefull för trendrapporter eftersom den gör att du kan se mätvärden över tid.
 
 ## Fyll den här dimensionen med data
 

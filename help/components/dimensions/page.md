@@ -3,7 +3,7 @@ title: Sida
 description: Sidans namn.
 feature: Dimensions
 exl-id: 579963c8-8460-425f-b716-3b30d7a259af
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Sida
 
-Dimensionen Sida visar namnen på sidorna på din webbplats. Det är en av de vanligaste dimensionerna som används i Adobe Analytics, eftersom det ger dig insikt i vilka sidor på din webbplats som fungerar bäst.
+Sidan [dimension](overview.md) listar namnen på sidorna på din webbplats. Det är en av de vanligaste dimensionerna som används i Adobe Analytics, eftersom det ger dig insikt i vilka sidor på din webbplats som fungerar bäst.
 
 Den här dimensionen är relaterad till [Site section](site-section.md) och [Server](server.md) dimensioner. Sidan är mest granulerad, servern är minst granulerad och Site-avsnittet är mellan de två.
 
@@ -20,7 +20,7 @@ Den här dimensionen är relaterad till [Site section](site-section.md) och [Ser
 
 Den här dimensionen hämtar data från [`pageName` frågesträng](/help/implement/validate/query-parameters.md) in [Anrop till sidvyn (`t()`)](/help/implement/vars/functions/t-method.md). [Länkspårningsanrop (`tl()`)](/help/implement/vars/functions/tl-method.md) alltid ta bort den här dimensionen, även om `pageName` frågesträngen finns.
 
-AppMeasurement samlar in dessa data med [`pageName`](/help/implement/vars/page-vars/pagename.md) variabel. Om `pageName` variabeln är inte definierad, den återgår till att använda [`pageURL`](/help/implement/vars/page-vars/pageurl.md) variabel.
+AppMeasurementet samlar in dessa data med [`pageName`](/help/implement/vars/page-vars/pagename.md) variabel. Om `pageName` variabeln är inte definierad, den återgår till [`pageURL`](/help/implement/vars/page-vars/pageurl.md) variabel.
 
 ## Dimensioner
 

@@ -3,16 +3,16 @@ title: Genomsnittligt siddjup
 description: Hur många sidor i genomsnitt dimensionen finns på.
 feature: Metrics
 exl-id: 6625405a-bda5-4723-8d22-4bc5b7e44d4e
-source-git-commit: 732c9971f3c68cb8819ff5524b601790fda9fef5
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 # Genomsnittligt siddjup
 
-Mätvärdet för genomsnittlig siddjup visar hur långt ett dimensionsobjekt sträcker sig in i ett visst besök i genomsnitt. På din hemsida (som är en dimensionspost för siddimensionen) visas vanligtvis ett mindre medeldjup än din inköpsbekräftelse, vilket troligen sträcker sig längre in i ett besök. Du kan använda den här informationen för att optimera vissa sidor mot nya besökare om sidan i genomsnitt har ett lågt djup.
+Genomsnittligt siddjup [mått](overview.md) visar i genomsnitt hur långt en dimensionspost sträcker sig till ett visst besök. På din hemsida (som är en dimensionspost för siddimensionen) visas vanligtvis ett mindre medeldjup än din inköpsbekräftelse, vilket troligen sträcker sig längre in i ett besök. Du kan använda den här informationen för att optimera vissa sidor mot nya besökare om sidan i genomsnitt har ett lågt djup.
 
 >[!TIP]
 >
@@ -48,4 +48,4 @@ If 'Count repeat instances' is disabled:
 
 Det här måttet innehåller ofta procenttal över 100 %. Nämnaren är hela dimensionens genomsnittliga siddjup och täljaren är dimensionsobjektets genomsnittliga siddjup.
 
-Om medelvärdet för hela dimensionens siddjup är lägre än medelvärdet för ett angivet dimensionsobjekts siddjup visas procentvärden över 100 %. Sortering av rankade rapporter efter det här måttet visar ett onormalt medelvärde för siddjup, vilket vanligtvis inte är värdefullt. Adobe rekommenderar sortering med ett annat mått, som [Besök](visits.md), i rankade rapporter.
+Om medelvärdet för hela dimensionens siddjup är lägre än medelvärdet för ett angivet dimensionsobjekts siddjup visas procentvärden över 100 %. Om du sorterar rankade rapporter efter det här måttet visas ett genomsnittligt siddjup som vanligen inte är värdefullt. Adobe rekommenderar sortering med ett annat mått, som [Besök](visits.md), i rankade rapporter.

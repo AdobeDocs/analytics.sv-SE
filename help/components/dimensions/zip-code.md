@@ -3,7 +3,7 @@ title: Postnummer
 description: Besökarens postnummer.
 feature: Dimensions
 exl-id: 597619f8-a581-4491-beb2-c14b1f7b7bec
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Postnummer
 
-Postnumret anger besökarens postnummer. Du kan använda den här dimensionen om du vill veta mer om hur framgångsrik den lokala annonseringen är eller se var i världen din webbplats fungerar bäst.
+Postnummer [dimension](overview.md) rapporterar besökarens postnummer. Du kan använda den här dimensionen om du vill veta mer om hur framgångsrik den lokala annonseringen är eller se var i världen din webbplats fungerar bäst.
 
 ## Fyll den här dimensionen med data
 
@@ -116,7 +116,7 @@ Dimensionen innehåller besökarens postnummer.
 * Turkiet
 * Ukraina
 * Förenade Arabemiraten
-* Storbritannien
+* Förenade kungariket
 * Amerikas förenta stater
 * Uruguay
 * Uzbekistan

@@ -3,7 +3,7 @@ title: Instanser
 description: Antalet träffar som en variabel har angetts (och inte befunnits).
 feature: Metrics
 exl-id: 9d1a66b5-46f9-4834-87a1-5f63e386e61d
-source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Instanser
 
-Måttet Instances visar hur många gånger en dimension uttryckligen definierades i en bildbegäran. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), bibehåll dimensionsobjekt efter den träff de ställs in på. Det här måttet är användbart när du vill se hur många gånger en dimensionspost har angetts utan de träffar där värdet kvarstod.
+Instanserna [mått](overview.md) visar hur många gånger en dimension uttryckligen har definierats i en bildbegäran. Vissa dimensioner, till exempel [eVars](../dimensions/evar.md), bibehåll dimensionsobjekt efter den träff de ställs in på. Det här måttet är användbart när du vill se hur många gånger en dimensionspost har angetts utan de träffar där värdet kvarstod.
 
 ## Hur det här måttet beräknas
 

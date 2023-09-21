@@ -3,7 +3,7 @@ title: Identifierat läge
 description: En flagga som avgör igenkänning av enhetsdiagrammet.
 feature: Dimensions
 exl-id: 8c6e9003-96f8-460f-a490-203f67be6337
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Identifierat läge
 
-Dimensionen Identifierat tillstånd är specifik för [Enhetsövergripande analys](../cda/overview.md) virtuella rapportsviter. Den rapporterar om träffar identifieras (sammanfogas) eller inte av systemet när rapporten körs. Denna dimension är till hjälp när det gäller att förstå hur väl CDA sammanfogar eller&quot;komprimerar&quot; data.
+Identifierat tillstånd [dimension](overview.md) är specifikt för [Enhetsövergripande analys](../cda/overview.md) virtuella rapportsviter. Den rapporterar om träffar identifieras (sammanfogas) eller inte av systemet när rapporten körs. Denna dimension är till hjälp när det gäller att förstå hur väl CDA sammanfogar eller&quot;komprimerar&quot; data.
 
 ## Fyll den här dimensionen med data
 

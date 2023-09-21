@@ -3,7 +3,7 @@ title: US DMA
 description: Marknadsområdet för träffen.
 feature: Dimensions
 exl-id: 156d5755-2e93-4240-bde3-1d537422b7bf
-source-git-commit: 146d622f370fd7469a8e5f0f2fe68cb31fa91844
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # US DMA
 
-I dimensionen &#39;US DMA&#39; rapporteras besökarens utsedda marknadsområde (DMA). Det bygger på mediemarknader som sammanställts av [Nielsen](https://markets.nielsen.com/us/en/contact-us/intl-campaigns/dma-maps/).
+&#39;US DMA&#39; [dimension](overview.md) rapporterar besökarens utsedda marknadsområde. Det bygger på mediemarknader som sammanställts av [Nielsen](https://markets.nielsen.com/us/en/contact-us/intl-campaigns/dma-maps/).
 
 ## Fyll den här dimensionen med data
 

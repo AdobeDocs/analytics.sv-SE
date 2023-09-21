@@ -3,7 +3,7 @@ title: Vecka
 description: Veckan som måttet inträffade på.
 feature: Dimensions
 exl-id: 944ec843-998c-473f-b8e6-16cf126745b4
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Vecka
 
-Veckodimensionen rapporterar veckan om att ett visst mått har inträffat. Den första dimensionsuppgiften är den första veckan i datumintervallet och den sista dimensionsuppgiften är den sista veckan i datumintervallet. Denna dimension är viktig för trendrapporter, eftersom den gör att ni kan se mätvärden över tid.
+Veckan [dimension](overview.md) rapporterar veckan att ett givet mätvärde inträffade. Den första dimensionsuppgiften är den första veckan i datumintervallet och den sista dimensionsuppgiften är den sista veckan i datumintervallet. Denna dimension är viktig för trendrapporter, eftersom den gör att ni kan se mätvärden över tid.
 
 ## Fyll den här dimensionen med data
 
@@ -22,4 +22,4 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 I Analysis Workspace omfattar dimensionsobjekten datumet (månad, dag och år) för den första dagen i veckan.
 
-I Data warehouse omfattar dimensionsobjekten numrerade veckor baserat på begärans datumintervall. Den första hela veckan är till exempel `"Week 1"`. Om en begäran innehåller en partiell vecka grupperas data i dimensionsposten `"Week 0"`.
+I Data Warehouse innehåller dimensionsobjekten numrerade veckor baserat på begärans datumintervall. Den första hela veckan är till exempel `"Week 1"`. Om en begäran innehåller en partiell vecka grupperas data i dimensionsposten `"Week 0"`.

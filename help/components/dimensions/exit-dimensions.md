@@ -4,7 +4,7 @@ description: Visar avslutningsdimensioner och deras användning.
 keywords: avsluta sida, avsluta webbplatsavsnittet, avsluta server, avsluta anpassad information
 feature: Dimensions
 exl-id: b2b1ee88-e5c3-44b5-8159-85ec53d20258
-source-git-commit: 17b5185e5358d661157c20a2504cacdbd4a2cc3d
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Avsluta dimensioner
 
-*På den här hjälpsidan beskrivs hur avslutas fungerar som en dimension. Mer information om hur avslutar fungerar som ett mått finns i [Avslutar](../metrics/exits.md) mätvärden.*
+*Den här hjälpsidan beskriver hur avslutas som en [dimension](overview.md). Mer information om hur avslutar fungerar som ett mått finns i [Avslutar](../metrics/exits.md) mätvärden.*
 
 Avsluta dimensioner registrerar den sista dimensionsposten och använd den retroaktivt på alla träffar under besöket. Utgångsdimensioner är tillgängliga för alla variabler med panorering aktiverad under [Trafikvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) i Rapportsvitens inställningar.
 

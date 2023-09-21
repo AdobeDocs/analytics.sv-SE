@@ -3,7 +3,7 @@ title: Webbläsare
 description: Namnet på och versionen av den webbläsare som används.
 feature: Dimensions
 exl-id: 2bdf2a5a-3482-43fa-b2e1-fbea892918fb
-source-git-commit: 39f1ac66fb6374c62f790f9a38a52fba3bf9bda1
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%
@@ -12,11 +12,11 @@ ht-degree: 1%
 
 # Webbläsare
 
-The[!UICONTROL Browser]&#39; anger namnet och versionen på den webbläsare som skickade träffen. Den här dimensionen är användbar för att förstå de vanligaste webbläsarna besökarna använder. När du testar nya versioner av din webbplats kan du köra testerna i de vanligaste webbläsarna i den här dimensionen för att maximera kvalitetskontrollen.
+The[!UICONTROL Browser]&#39; [dimension](overview.md) rapporterar namnet på och versionen av den webbläsare som skickar träffen. Den här dimensionen är användbar för att förstå de vanligaste webbläsarna besökarna använder. När du testar nya versioner av din webbplats kan du köra testerna i de vanligaste webbläsarna i den här dimensionen för att maximera kvalitetskontrollen.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på `User-Agent` HTTP-huvud i bildbegäranden. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt.
+Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på `User-Agent` HTTP-huvud i bildbegäranden. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt.
 
 ## Dimensioner
 
@@ -34,8 +34,8 @@ Från och med version 100 för webbläsarna Chrome, Edge och Firefox visas inte 
 
 Exempel:
 
-Version 109 av Chrome visas som&quot;Google Chrome 109&quot;.
-Version 110 av Chrome visas som&quot;Chrome 109&quot;.
+Version 109 av Chrome visas som Google Chrome 109.
+Version 110 av Chrome visas som Chrome 109.
 
 ### Ta bort skillnaden mellan mobil och icke-mobil för Chrome
 

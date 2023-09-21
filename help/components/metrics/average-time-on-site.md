@@ -3,7 +3,7 @@ title: Genomsnittlig tid på plats
 description: Genomsnittlig tid mellan träffar för en given dimensionsartikel.
 feature: Metrics
 exl-id: bf9056e2-4f6d-4c4f-b641-d3146ce269ff
-source-git-commit: 7966c7d9add0011831c97fbe0dfcca2acd8afb58
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Genomsnittlig tid på plats
 
-Måttet för genomsnittlig tid på plats visar den tid som passerat mellan träffar för en given dimensionsartikel. Det här måttet är användbart när du vill se den genomsnittliga tiden för specifika dimensionsobjekt. Du kan också trender för detta mätresultat över tiden för att se hur den totala tiden som används ändras. Det här måttet visas i `HH:MM:SS` format.
+Genomsnittlig tid på plats [mått](overview.md) visa den tid som passerat mellan träffar för en given dimensionsuppgift. Det här måttet är användbart när du vill se den genomsnittliga tiden för specifika dimensionsobjekt. Du kan också trender för detta mätresultat över tiden för att se hur den totala tiden som används ändras. Det här måttet visas i `HH:MM:SS` format.
 
-Det här måttet är relaterat till [Tid per besök](../dimensions/time-spent-per-visit.md) dimension.
+Detta mått är relaterat till [Tid per besök](../dimensions/time-spent-per-visit.md) dimension.
 
 ## Hur det här måttet beräknas
 
-För en given dimensionsuppgift tar du tidsstämpeln för varje träff där dimensionsobjektet finns. Jämför det med tidsstämpeln för nästa träff i besöket. Om träffen inte har någon efterföljande träff ska du inte ta med den i det här måttet. Av all tid som har använts för dimensionsobjektet dividerar du alla med antalet&quot;sekvenser&quot; för dimensionsobjektet. En sekvens är där en dimensionspost är densamma för en eller flera efterföljande träffar. Resultatet är det värde som visas i rapporter.
+För en given dimensionsuppgift tar du tidsstämpeln för varje träff där dimensionsobjektet finns. Jämför det med tidsstämpeln för nästa träff i besöket. Om träffen inte har någon efterföljande träff ska du inte ta med den i det här måttet. Av all tid som har ägnats åt dimensionsobjektet dividerar du alla med antalet&quot;sekvenser&quot; för dimensionsobjektet. En sekvens är där en dimensionspost är densamma för en eller flera efterföljande träffar. Resultattalet är det mätvärde som visas i rapporter.
 
 Här följer ett exempel:
 
@@ -42,13 +42,13 @@ Om du vill ha genomsnittlig tid på platsen för dimensionsposten `Product page 
 * **12:07:40-12:08:10** - 30 sekunder
 * **12:25:40 - ?** - Ingår inte
 
-Den totala tidsåtgången för `Product page A` är `00:03:10`. Det fanns två sekvenser vid detta besök. den första sekvensen för de två på varandra följande värdena och den andra före utcheckningen. Den sista träffen vid besöket är inte en sekvens eftersom det inte finns någon sluttidsstämpel.
+Den totala tidsåtgången för `Product page A` är `00:03:10`. Det fanns två sekvenser i besöket; den första sekvensen för de två på varandra följande värdena och den andra före utcheckningen. Den sista träffen vid besöket är inte en sekvens eftersom det inte finns någon sluttidsstämpel.
 
 Genomsnittlig tid på plats för `Product page A` är `00:01:35`.
 
 >[!NOTE]
 >
->Det här måttet visar värdet för `"Invalid"` om dimensionsobjektet endast innehåller träffar som var de senaste vid ett besök. Det här måttet kräver en efterföljande träff för att spåra hur mycket tid som använts.
+>Det här måttet visar ett värde på `"Invalid"` om dimensionsobjektet endast innehåller träffar som var de senaste vid ett besök. Det här måttet kräver en efterföljande träff för att spåra hur mycket tid som använts.
 
 ## Genomsnittlig tid på plats (sekunder)
 
@@ -71,7 +71,7 @@ Beräknar genomsnittlig tid på plats för dimensionsposten `Home` använder fö
 (30 + 10) / 2 = 20 seconds average time on site
 ```
 
-Om du tillämpade en uppdelning med [Platsavsnitt](../dimensions/site-section.md) -dimensionen skulle den använda följande beräkning:
+Om du tillämpade en nedbrytning med [Platsavsnitt](../dimensions/site-section.md) -dimensionen skulle den använda följande beräkning:
 
 ```text
 (30 + 10) / 1 = 40 seconds average time on site

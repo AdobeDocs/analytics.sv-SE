@@ -3,7 +3,7 @@ title: Besökare med Experience Cloud ID
 description: Antalet unika besökare som använder Adobe Experience Cloud ID-tjänsten.
 feature: Metrics
 exl-id: 16c170d0-3546-4e0a-8f3c-c141b8a0e4fe
-source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Besökare med Experience Cloud ID
 
-Mätvärdet &quot;Besökare med Experience Cloud-ID&quot; visar antalet unika besökare som identifierades av Adobe med [Experience Cloud ID-tjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html). Det här måttet är användbart att jämföra med [Unika besökare](unique-visitors.md) mätvärden för att säkerställa att de flesta besökare på webbplatsen använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
+&#39;Besökarna med Experience Cloud-ID&#39; [mått](overview.md) visar antalet unika besökare som identifierades av Adobe med [Experience Cloud ID-tjänst](https://experienceleague.adobe.com/docs/id-service/using/home.html). Det här måttet är användbart att jämföra med [Unika besökare](unique-visitors.md) mätvärden för att säkerställa att de flesta besökare på webbplatsen använder ID-tjänsten. Om en stor del av besökarna inte använder ID-tjänstens cookies kan det tyda på ett problem i implementeringen.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Jämför besökarna med Experience Cloud-ID:t genom att dra dem sida vid sida me
 
 ![Unik besökarjämförelse](assets/metric-mcvid1.png)
 
-I det här exemplet ska du lägga märke till att varje sida har samma antal unika besökare som besökare med ett Experience Cloud-ID. Det totala antalet unika besökare är dock större än det totala antalet besökare med Experience Cloud ID. Du kan skapa en [beräknat mått](../c-calcmetrics/cm-overview.md) för att ta reda på vilka sidor som inte ställer in ID-tjänsten. Du kan använda följande definition:
+I det här exemplet ska du lägga märke till att varje sida har samma antal unika besökare som besökare med ett Experience Cloud-ID. Det totala antalet unika besökare är dock större än det totala antalet besökare med Experience Cloud ID. Du kan skapa [beräknat mått](../c-calcmetrics/cm-overview.md) för att ta reda på vilka sidor som inte ställer in ID-tjänsten. Du kan använda följande definition:
 
 ![Beräknad måttdefinition](assets/metric-mcvid2.png)
 
@@ -38,4 +38,4 @@ Genom att lägga till det beräknade måttet i rapporten kan du sortera sidrappo
 
 ![Sidor utan ID-tjänst](assets/metric-mcvid3.png)
 
-Observera att dimensionsobjektet&quot;Produktsnabbvyer&quot; inte implementeras korrekt med identitetstjänsten. Du kan samarbeta med lämpliga team inom organisationen för att uppdatera dessa sidor så snart som möjligt. Du kan skapa en liknande rapport med alla typer av dimensioner, som [Typ av webbläsare](../dimensions/browser-type.md), [Site section](../dimensions/site-section.md)eller [eVar](../dimensions/evar.md).
+Observera att dimensionsobjektet&quot;Produktsnabbvyer&quot; inte har implementerats korrekt med identitetstjänsten. Du kan samarbeta med lämpliga team inom organisationen för att uppdatera dessa sidor så snart som möjligt. Du kan skapa en liknande rapport med alla typer av dimensioner, som [Typ av webbläsare](../dimensions/browser-type.md), [Site section](../dimensions/site-section.md)eller [eVar](../dimensions/evar.md).

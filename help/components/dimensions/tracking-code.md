@@ -3,7 +3,7 @@ title: Spårningskod
 description: Namnet på spårningskoden eller kampanjen.
 feature: Dimensions
 exl-id: e4f70552-6946-4974-a9e2-928faf563ecd
-source-git-commit: 6d0771f7b8779d7a9d3bcea73a430ba3a9093e3e
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 1%
@@ -12,13 +12,13 @@ ht-degree: 1%
 
 # Spårningskod
 
-Dimensionen Spårningskod visar namnen på spårningskoderna på din webbplats. Du kan placera länkar med olika parametervärden för frågesträngar på olika platser på Internet. Denna dimension hjälper er att förstå vilka länkar som var mest framgångsrika när det gäller att köra trafik till er webbplats.
+Spårningskod [dimension](overview.md) listar namnen på spårningskoderna på din webbplats. Du kan placera länkar med olika parametervärden för frågesträngar på olika platser på Internet. Denna dimension hjälper er att förstå vilka länkar som var mest framgångsrika när det gäller att köra trafik till er webbplats.
 
 Det är vanligt att lägga till spårningskodfrågesträngar i e-postmeddelanden, annonser, inlägg i sociala medier och andra marknadsföringsaktiviteter som används i organisationen.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen hämtar data från [`v0` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurement samlar in dessa data med [`campaign`](/help/implement/vars/page-vars/campaign.md) variabel.
+Den här dimensionen hämtar data från [`v0` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. AppMeasurementet samlar in dessa data med [`campaign`](/help/implement/vars/page-vars/campaign.md) variabel.
 
 ## Dimensioner
 
@@ -39,7 +39,8 @@ Eftersom&quot;sociala nätverk&quot; är den första regeln för bearbetning av 
 
 ### Andra marknadsföringskanaler kan ta attribuering genom sista handen
 
-När du arbetar med en standarddimension för spårningskoder behöver du inte bekymra dig om att andra delar av din webbplats stjäl attribuering. Men med marknadsföringskanaler kan en användare matcha en annan regel och ge olika attribut. Exempel:
+När du arbetar med en standarddimension för spårningskoder behöver du inte bekymra dig om att andra delar av din webbplats stjäl attribuering. Men med marknadsföringskanaler kan en användare matcha en annan regel och ge olika attribuering. Exempel:
+
 1. Du har &#39;Spårningskoder&#39; som din första kanal och &#39;Direkt&#39; som din andra.
 2. En användare kommer till webbplatsen via en spårningskod, men lämnar den sedan.
 3. Nästa dag skriver de in din URL i adressfältet och gör sedan ett köp.
@@ -47,15 +48,16 @@ När du arbetar med en standarddimension för spårningskoder behöver du inte b
 I det här exemplet skulle marknadsföringskanalen för spårningskoder inte få sista touch-kredit för det köpet. Istället skulle det gå till marknadsföringskanalen&quot;Direct&quot;.
 
 
-### Förfallodifferenser
+### Utgångsskillnader
 
 Marknadsföringskanalerna har en rullande 30-dagars förfallotid för besökarengagemang, oavsett om en kanal berördes eller inte. Spårningskoder har en förfallotid baserat på när variabeln angavs. Exempel:
+
 1. Du har 30 dagars förfallotid för besökarengagemang och har även konfigurerat spårningskoddimensionen så att den upphör att gälla efter 30 dagar.
 2. En användare kommer till din webbplats via en spårningskod. De surfar på webbplatsen och går sedan iväg.
 3. Tre veckor senare kommer de tillbaka utan en spårningskod eller marknadsföringskanal och lämnar dem sedan igen.
 4. Två veckor senare (fem veckor efter deras första besök) kommer de tillbaka utan spårningskod eller marknadsföringskanal och gör sedan ett köp.
 
-Användaren gjorde slutligen ett köp som var längre än 30 dagar, men aldrig varit inaktiv i mer än 30 dagar. I det här fallet skulle ni se intäkter som tillskrivs marknadsföringskanalen för spårningskoder, men inte själva dimensionen för spårningskod.
+Användaren har slutligen gjort ett köp som är längre än 30 dagar, men aldrig varit inaktiv i mer än 30 dagar. I det här fallet skulle ni se intäkter som tillskrivs marknadsföringskanalen för spårningskoder, men inte själva dimensionen för spårningskod.
 
 
 

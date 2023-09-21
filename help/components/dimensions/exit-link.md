@@ -3,7 +3,7 @@ title: Avsluta länk
 description: Namnet på länken för att avsluta.
 feature: Dimensions
 exl-id: 090d5fee-4b35-4be7-866c-5ef1d1c4c0a6
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Avsluta länk
 
-Dimensionen &#39;Avsluta länk&#39; visar namnen på de avslutningslänkar som implementerats på din webbplats. Den här dimensionen är värdefull när du vill förstå vilka länkar som är populärast och som pekar på domäner utanför din webbplats.
+Avsluta länk [dimension](overview.md) rapporterar namnen på de avslutningslänkar som implementerats på din plats. Den här dimensionen är värdefull när du vill förstå vilka länkar som är populärast och som pekar på domäner utanför din webbplats.
 
 ## Fyll den här dimensionen med data
 

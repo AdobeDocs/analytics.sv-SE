@@ -3,7 +3,7 @@ title: Tid som använts på sidan
 description: Den tid en besökare tillbringade på sidan.
 feature: Dimensions
 exl-id: 55af7286-7c37-48d2-925e-8b7ecb390e7f
-source-git-commit: 8700abf6db565cf3a85fb64ee0db1a1634616f59
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Tid som använts på sidan
 
-Dimensionen Tid som använts på sidan registrerar hur lång tid en besökare tillbringat på sidan. Följande steg används för att mäta beräkningen:
+Tid som har använts på sidan [dimension](overview.md) registrerar hur lång tid en besökare tillbringat på sidan. Följande steg används för att mäta beräkningen:
 
 1. Titta på tidsstämpeln för en viss träff.
 2. Jämför träffen med tidsstämpeln för nästa träff i besöket. Både sidvy och länkspårning träffar.
@@ -36,7 +36,7 @@ Den här dimensionen fungerar som den ska för alla implementeringar. Om en rapp
 
 Det finns flera dimensioner för tidsåtgången på sidan:
 
-* **Tid som använts på sidan - blockerad**: Tidsmängden är spärrad. Objekten i Dimensionen kan variera från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan träffarna varar normalt inte längre än 30 minuter. Tiden mellan träffar kan dock överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
+* **Tid som använts på sidan - blockerad**: Tidsmängden är bucketed. Objekten i Dimensionen kan variera från `"Less than 15 seconds"` till `"More than 30 minutes"`. Tiden mellan träffar varar normalt inte längre än 30 minuter, men tiden mellan träffarna kan överstiga 30 minuter om tidsstämplade träffar eller datakällor används.
 * **Tid som använts på sidan - granulerad**: Varje antal sekunder är ett unikt dimensionsobjekt.
 
 Se [Tidsåtgång - översikt](../metrics/time-spent.md) om du vill ha mer allmän information om hur länge du har tillbringat.

@@ -3,7 +3,7 @@ title: Tid per besökare (sekunder)
 description: Mätvärdet"Tid per besökare (sekunder)" visar den genomsnittliga tid som besökarna interagerar med ett visst dimensionsobjekt under en besökares hela livstid.
 feature: Metrics
 exl-id: 80f38bab-2ee1-4d0d-ba53-9b2c7c85e481
-source-git-commit: 7d5383e1ee3bee189d3dd48bc6b899f4108f7ba8
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Tid per besökare (sekunder)
 
-The [!UICONTROL Time spent per visitor (seconds)] mätvärdet visar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under besökarens hela livstid.
+The [!UICONTROL Time spent per visitor (seconds)] [mått](overview.md) visar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under en besökares hela livstid.
 
-Det här måttet är inte tillgängligt i Data warehouse på grund av dess olika bearbetningsarkitektur.
+Det här måttet är inte tillgängligt i Data Warehouse på grund av dess olika bearbetningsarkitektur.
 
 ## Hur det här måttet beräknas
 

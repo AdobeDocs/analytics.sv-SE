@@ -3,7 +3,7 @@ title: Egen länk
 description: Namnet på den anpassade länken.
 feature: Dimensions
 exl-id: c153f710-f03f-4be6-8e18-5ebf2ed80f01
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Egen länk
 
-Dimensionen Anpassad länk rapporterar namnen på anpassade länkar som implementerats på din webbplats. Den här dimensionen är värdefull när du vill förstå vilka typer av länkar besökarna klickar mest på.
+The Custom link [dimension](overview.md) rapporterar namnen på anpassade länkar som implementerats på din plats. Den här dimensionen är värdefull när du vill förstå vilka typer av länkar besökarna klickar mest på.
 
 ## Fyll den här dimensionen med data
 

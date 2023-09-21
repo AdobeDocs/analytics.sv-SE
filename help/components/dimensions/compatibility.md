@@ -3,7 +3,7 @@ title: Analytics-Dimensioners kompatibilitet
 description: Referens för analysdimensioner och rapporter.
 feature: Dimensions
 exl-id: 1884bc20-b04d-4f9a-b057-2b2fbe53190d
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 8%
@@ -12,7 +12,7 @@ ht-degree: 8%
 
 # Analytics-Dimensioners kompatibilitet
 
-På den här sidan visas de dimensioner som stöds i deras respektive Analytics-funktioner.
+Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytics-funktioner.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Dagar sedan senaste köp | `dayssincelastpurchase` |
 | Domän | `filtereddomain` |
 | Hämta länk | `downloadlink` |
-| Startsida | `entrypage` |
+| Inmatningssida | `entrypage` |
 | Inmatningssidans originalformat | `entrypageoriginal` |
 | Avsluta länk | `exitlink` |
 | Första beröringskanalen | `firsttouchchannel` |
@@ -134,7 +134,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Mobilenhetsnummer | `mobiledevicenumber` |
 | Mobil DRM | `mobiledrm` |
 | Mobile Information Services | `mobileinformationservices` |
-| Mobile Java VM | `mobilejavavm` |
+| Mobil Java VM | `mobilejavavm` |
 | Dekoration av mobilpost | `mobilemaildecoration` |
 | Mobile Net-protokoll | `mobilenetprotocols` |
 | Mobil push to Talk | `mobilepushtotalk` |
@@ -149,7 +149,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Tid som använts på sidan - paketerad | `averagepagetime` |
 | Tid som använts på sidan - Detaljerad | `pagetimeseconds` |
 | Orsak till avanmälan av spårning | `optoutreason` |
-| Veckodag/Veckoslut | `timepartweekdayweekend` |
+| Veckodag/vecka | `timepartweekdayweekend` |
 | Vecka | `daterangeweek` |
 | År | `daterangeyear` |
 
@@ -190,7 +190,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Innehåll | `video` |
 | Innehållssegment | `videosegment` |
 | Innehållstyp | `videocontenttype` |
-| Namn på annonsspelare | `videoadplayername` |
+| Namn på annonsspelaren | `videoadplayername` |
 | Lägg till i rutposition | `videoadinpod` |
 | Släppta bildrutor | `videoqoedroppedframecountevar` |
 | Fel | `videoqoeerrorcountevar` |
@@ -198,7 +198,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Bithastighetsändringar | `videoqoebitratechangecountevar` |
 | Buffertvaraktighet totalt | `videoqoebuffertimeevar` |
 | Bufferthändelser | `videoqoebuffercountevar` |
-| Starttid | `videoqoetimetostartevar` |
+| Tid att starta | `videoqoetimetostartevar` |
 | Annonsruta | `videoadpod` |
 | Mediesökväg | `videopath` |
 | Annons | `videoad` |
@@ -222,16 +222,16 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Genre | `videogenre` |
 | Strömtyp | `videostreamtype` |
 | Fel-ID för Player SDK | `videoqoeplayersdkerrors` |
-| Externa fel-ID:n | `videoqoeextneralerrors` |
+| Externa fel-ID | `videoqoeextneralerrors` |
 | Medieflödestyp | `videofeedtype` |
 | Ange mediesökväg | `entryvideopath` |
 | Avsluta mediasökväg | `exitvideopath` |
 | Anmälningsgenre | `entryvideogenre` |
 | Avsluta genre | `exitvideogenre` |
-| Fel-ID för Entry Player SDK | `entryvideoqoeplayersdkerrors` |
+| SDK-fel-ID för Entry Player | `entryvideoqoeplayersdkerrors` |
 | Avsluta SDK-fel-ID för spelaren | `exitvideoqoeplayersdkerrors` |
 | Externa fel-ID för post | `entryvideoqoeextneralerrors` |
-| Avsluta externa fel-ID:n | `exitvideoqoeextneralerrors` |
+| Avsluta externa fel-ID | `exitvideoqoeextneralerrors` |
 
 ### Adobe Social
 
@@ -242,14 +242,14 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Författare | `socialauthor` |
 | Språk | `sociallanguage` |
 | Latitud/longitud | `sociallatlong` |
-| Spårningskoder för tillgångar | `socialassettrackingcode` |
+| Spåra tillgångar | `socialassettrackingcode` |
 | Ägda sociala egenskaper | `socialaccountandappids` |
 | Ägda post-ID:n | `socialownedpostids` |
 | Ägda sociala definitioner | `socialinteractiontype` |
 | Ägda egenskaps-ID | `socialownedpropertyid` |
 | Ägd egenskap kontra program | `socialownedpropertypropertyvsapp` |
 | Namn på ägd egenskap | `socialownedpropertyname` |
-| Egenskap för ägd definition kontra post | `socialowneddefinitionpropertyvspost` |
+| Ägd definitionsegenskap kontra post | `socialowneddefinitionpropertyvspost` |
 | Insiktstyp för ägardefinition | `socialowneddefinitioninsighttype` |
 | Insiktsvärde för ägardefinition | `socialowneddefinitioninsightvalue` |
 | Ägardefinitionsmått | `socialowneddefinitionmetric` |
@@ -287,7 +287,7 @@ På den här sidan visas de dimensioner som stöds i deras respektive Analytics-
 | Avsluta Beacon Major | `exitmobilebeaconmajor` |
 | Anmäl dig till Beacon Minor | `entrymobilebeaconminor` |
 | Avsluta Beacon Minor | `exitmobilebeaconminor` |
-| Anmäl Beacon UUID | `entrymobilebeaconuuid` |
+| Ange Beacon UUID | `entrymobilebeaconuuid` |
 | Avsluta Beacon UUID | `exitmobilebeaconuuid` |
 | Anmäl beacon-närhet | `entrymobilebeaconproximity` |
 | Avsluta Beacon-närhet | `exitmobilebeaconproximity` |

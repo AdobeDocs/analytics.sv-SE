@@ -3,7 +3,7 @@ title: Produktvyer
 description: Antalet vyer till produktsidor.
 feature: Metrics
 exl-id: 6217391d-8b42-4fdf-b05e-b9b117598ad2
-source-git-commit: eb13c3e828bc6d4c547f4529ee7a15182bbbf046
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Produktvyer
 
-Mätvärdet för produktvisningar visar hur många gånger en produkt har visats. Det här måttet är användbart när du vill se de mest visade produkterna eller se hur den totala produktvyn ser ut över tiden.
+Produktvyer [mått](overview.md) visar hur många gånger en produkt har visats. Det här måttet är användbart när du vill se de mest visade produkterna eller se hur den totala produktvyn ser ut över tiden.
 
 ## Hur det här måttet beräknas
 

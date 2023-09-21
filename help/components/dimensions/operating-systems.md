@@ -3,7 +3,7 @@ title: Operativsystem
 description: Operativsystemet för besökaren.
 feature: Dimensions
 exl-id: e3911ae0-d242-4da2-a4bc-b2f4877f9dd2
-source-git-commit: 3a0254e5cfdbcaf7b5d6f81bc710959063cd1735
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Operativsystem
 
-Dimensionen &#39;Operativsystem&#39; visar det operativsystem och den version som besökaren använde. Om du har funktioner som är operativsystemsspecifika på din webbegenskap, hjälper den här dimensionen dig att förstå vilka operativsystem som är vanligaste.
+Operativsystemet [dimension](overview.md) visar det operativsystem och den version som besökaren använde. Om du har funktioner som är operativsystemsspecifika på din webbegenskap, hjälper den här dimensionen dig att förstå vilka operativsystem som är vanligaste.
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på `User-Agent` HTTP-huvud i bildbegäranden. Om du använder ett AppMeasurement-bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen direkt.
+Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på `User-Agent` HTTP-huvud i bildbegäranden. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt.
 
 ## Dimensioner
 
-Dimensionen innehåller operativsystem som besökarna använder. Exempel `"Windows 10"`, `"OS X 10.15"`och `"Android 9"`.
+Dimensionen innehåller operativsystem som besökarna använder. Exempel: `"Windows 10"`, `"OS X 10.15"`och `"Android 9"`.
 
 ## Förändringar i märkning och definition
 
@@ -43,10 +43,10 @@ Exempel:
 
 Användaragenten på Apple-datorer visar OS-versionen som 10.15.7 även för nyare versioner. Det här gjordes eftersom version 11 i användargränssnittet uppenbarligen orsakade problem med vissa webbplatser. Detta gäller *alla webbläsare* och är inte relaterat till Google frysning av användaragenten i Chromium-webbläsare.
 
-Observera att klienttipsen innehåller rätt version i plattformsversionstipset (&quot;Sec-CH-UA-Platform-Version&quot;). Detta är ett högt entropi-tips, så det samlas inte in automatiskt av Adobe. Se [Vanliga frågor om Adobe Analytics-tips](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html?lang=en) om du vill ha mer information om hur du samlar in entropytips.
+Observera att klienttipsen innehåller rätt version i plattformsversionstipset (&quot;Sec-CH-UA-Platform-Version&quot;). Det här är ett högt entropi-tips, så det samlas inte in automatiskt av Adobe. Se [Vanliga frågor om Adobe Analytics tips](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html?lang=en) om du vill ha mer information om hur du samlar in entropytips.
 
 ### Windows-versionen är felaktig i användaragenten som börjar med Windows 11
 
 Från och med januari 2023 representerar användaragenten i alla webbläsare Windows 11 som Windows 10.
 
-Observera att klienttipsen innehåller rätt version i plattformsversionstipset (&quot;Sec-CH-UA-Platform-Version&quot;). Detta är ett högt entropi-tips, så det samlas inte in automatiskt av Adobe. Se [Vanliga frågor om Adobe Analytics-tips](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html?lang=en) om du vill ha mer information om hur du samlar in entropytips.
+Observera att klienttipsen innehåller rätt version i plattformsversionstipset (&quot;Sec-CH-UA-Platform-Version&quot;). Det här är ett högt entropi-tips, så det samlas inte in automatiskt av Adobe. Se [Vanliga frågor om Adobe Analytics tips](https://experienceleague.adobe.com/docs/analytics/technotes/client-hints.html?lang=en) om du vill ha mer information om hur du samlar in entropytips.

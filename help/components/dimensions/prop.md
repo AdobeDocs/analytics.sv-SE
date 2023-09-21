@@ -3,7 +3,7 @@ title: Prop
 description: En anpassad dimension som du kan använda vid rapportering.
 feature: Dimensions
 exl-id: cf8ad65b-bc54-473e-bcfc-9c981d23e782
-source-git-commit: 25eccb2b9fe3827e62b0ae98d9bebf7a97b239f5
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Prop
 
-*Den här hjälpsidan beskriver hur utkast fungerar som en dimension. Mer information om hur du implementerar uttryck finns i [proppar](/help/implement/vars/page-vars/prop.md) i Implementeringshandboken.*
+*Den här hjälpsidan beskriver hur utkast fungerar som en [dimension](overview.md). Mer information om hur du implementerar uttryck finns i [proppar](/help/implement/vars/page-vars/prop.md) i Implementeringshandboken.*
 
 Props är anpassade variabler som du kan använda hur du vill. De finns inte kvar efter den träff de har ställts in.
 
@@ -26,7 +26,7 @@ Om du har en [konstruktionsdokument](/help/implement/prepare/solution-design.md)
 
 Varje säljare samlar in data från [`c1` - `c75` frågesträng](/help/implement/validate/query-parameters.md) i bildbegäranden. Till exempel `c1` frågesträngsparametern samlar in data för prop1, medan `c68` frågesträngsparameter samlar in data för prop68.
 
-AppMeasurement, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, använder variablerna `prop1` - `prop75`. Se [prop](/help/implement/vars/page-vars/prop.md) i Implementeringsanvändarhandboken för implementeringsriktlinjer.
+I AppMeasurementet, som kompilerar JavaScript-variabler till en bildbegäran för datainsamling, används variablerna `prop1` - `prop75`. Se [prop](/help/implement/vars/page-vars/prop.md) i Implementeringsanvändarhandboken för implementeringsriktlinjer.
 
 ## Dimensioner
 
@@ -34,7 +34,7 @@ Eftersom utkast innehåller anpassade strängar i implementeringen avgör organi
 
 ## Skiftlägeskänslighet
 
-Props är som standard inte skiftlägeskänsliga. Om du skickar samma värde i olika fall (till exempel `"DOG"` och `"Dog"`) grupperar Analysis Workspace dem i samma dimensionsobjekt. När det första värdet som visas i början av rapportmånaden används. data warehouse visar det första värdet som påträffades under begärandeperioden.
+Props är som standard inte skiftlägeskänsliga. Om du skickar samma värde i olika fall (till exempel `"DOG"` och `"Dog"`) grupperar Analysis Workspace dem i samma dimensionsobjekt. Det fall där det första värdet som anges i början av rapportmånaden används. Datan Warehouse visar det första värdet som påträffades under begärandeperioden.
 
 Du kan göra vilket som helst skiftlägeskänsligt. Du kan även inaktivera skiftlägeskänslighet för alla uttryck när det är aktiverat. Kontakta Adobe kundtjänst med rapportsvitens-ID och de variabler du vill använda för att växla skiftlägeskänslighet.
 

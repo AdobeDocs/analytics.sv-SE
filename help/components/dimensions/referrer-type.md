@@ -3,7 +3,7 @@ title: Referenstyp
 description: Vilken typ av referent det är, beroende på varifrån besökaren kom.
 feature: Dimensions
 exl-id: a6cfcbf4-cd08-4e7f-8e86-47488ceb0ea3
-source-git-commit: 61a8aec9bbd6102dd3c0eb60362e02d553e1ebd2
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Referenstyp
 
-Dimensionerna Refererartyp rapporterar vilka generiska kanaler besökarna klickade igenom för att komma till din webbplats. Adobe behåller reglerna för varje dimensionsobjekt, till skillnad från [Marknadsföringskanaler](marketing-channel.md), där organisationen upprätthåller regler för varje kanal.
+Refererartyp [dimension](overview.md) rapporterar vilka generiska kanaler besökarna klickade igenom för att komma till er webbplats. Adobe behåller reglerna för varje dimensionsobjekt, till skillnad från [Marknadsföringskanaler](marketing-channel.md), där organisationen upprätthåller regler för varje kanal.
 
 ## Fyll den här dimensionen med data
 
@@ -24,9 +24,9 @@ Bland Dimensionerna finns typen av referent för träffen. Specifika värden är
 
 * **Typat/bokmärkt**: Det finns inga referensdata för träffen.
 * **Sökmotorer**: Referenten kom från en identifierad sökmotor som innehåller en nyckelordsfrågesträng.
-* **Sociala nätverk:**: Referensdata hör till ett socialt nätverk som Adobe känner igen.
-* **Andra webbplatser**: Referensdata tillhör inte en sökmotor eller ett socialt nätverk som Adobe känner igen.
-* **Hårddisk**: Referenten kommer från en lokal kopia av en webbsida på besökarens hårddisk.
+* **Sociala nätverk:**: Referensdata tillhörde ett socialt nätverk som känns igen av Adobe.
+* **Andra webbplatser**: Referensdata tillhörde inte en sökmotor eller ett socialt nätverk som Adobe känner igen.
+* **Hårddisk**: Referenten kom från en lokal kopia av en webbsida på besökarens hårddisk.
 * **E-post**: Referenten härstammar från en URL med protokollet `imap://` eller `mail://`. Inkluderar inte e-posttjänster online eftersom dessa vanligtvis används `https://` -protokoll.
 
 ### Sociala nätverk
@@ -202,4 +202,4 @@ Följande lista refererar till uppslagstabellen&quot;Sociala nätverk&quot; som 
 När du visar specifika domäner i dimensionen &quot;Refererartyp&quot; kan det finnas domäner som du förväntar dig under &quot;Sökmotorer&quot; i stället för under &quot;Andra webbplatser&quot;. Du kan till exempel se `'google.com'` under Andra webbplatser.
 
 * **Sökmotordomäner i dimensionsobjektet Sökmotorer**: Referenten uppfyllde alla kriterier för att klassas som sökmotor av Adobe. Den refererande domänen är en giltig sökmotor, *och* den refererande URL:en innehåller en nyckelordsfrågesträngsparameter.
-* **Sökmotordomäner i dimensionsobjektet Andra webbplatser**: Den refererande URL:en uppfyllde inte alla kriterier för att klassificeras som sökmotor. Vanliga exempel är underdomäner som är dedikerade till andra funktioner förutom sökning. Till exempel: `mail.google.com` eller `autos.yahoo.com` är inte sökmotorer, men finns på en toppnivådomän som vanligtvis är kopplad till sökning. Dessa underdomäner innehåller inte någon nyckelordsfrågesträng, vilket är orsaken till att de ingår i Andra webbplatser i stället för Sökmotorer.
+* **Sökmotordomäner i dimensionsobjektet Andra webbplatser**: Den refererande URL:en uppfyller inte alla kriterier för att klassificeras som sökmotor. Vanliga exempel är underdomäner som är dedikerade till andra funktioner förutom sökning. Till exempel: `mail.google.com` eller `autos.yahoo.com` är inte sökmotorer, men finns på en toppnivådomän som vanligtvis är kopplad till sökning. Dessa underdomäner innehåller inte någon nyckelordsfrågesträng, vilket är orsaken till att de ingår i Andra webbplatser i stället för Sökmotorer.

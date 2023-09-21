@@ -3,7 +3,7 @@ title: Produkt
 description: Produktens namn.
 feature: Dimensions
 exl-id: 2649c200-4b0a-49a9-8592-9b9af72b91cf
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Produkt
 
-Dimensionen Produkt rapporterar namnet på produkten i träffen. Det är användbart för implementeringar som använder `products` variabel och vill se mätvärden runt produkter, t.ex. bästsäljare eller de mest visade. Den här dimensionen kan vara tom om du inte har några produkter på din webbplats.
+The &#39;Product&#39; [dimension](overview.md) rapporterar namnet på produkten i träffen. Det är användbart för implementeringar som använder `products` variabel och vill se mätvärden runt produkter, t.ex. bästsäljare eller de mest visade. Den här dimensionen kan vara tom om du inte har några produkter på din webbplats.
 
 ## Fyll den här dimensionen med data
 

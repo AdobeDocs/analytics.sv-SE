@@ -3,7 +3,7 @@ title: Dag på året
 description: Den numeriska dagen på året, oavsett vilket år.
 feature: Dimensions
 exl-id: 40a95926-3d1b-4e9c-a82a-6e23b711e6e7
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Dag på året
 
-Dimensionen Dag på året rapporterar den numeriska dagen för ett givet år som en dimensionspost. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter årets dag, men inte vill ha ett statiskt datum som dimensionsobjekt.
+&quot;Dagen på året&quot; [dimension](overview.md) rapporterar den numeriska dagen för ett givet år som en dimensionspost. Den här rapporten är värdefull om du vill ha en rapport som delas upp efter årets dag, men inte vill ha ett statiskt datum som dimensionsobjekt.
 
 ## Fyll den här dimensionen med data
 

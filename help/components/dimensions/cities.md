@@ -3,7 +3,7 @@ title: Städer
 description: Staden där träffen kom från.
 feature: Dimensions
 exl-id: c04525bb-50d6-4d28-b5dc-335d089e184b
-source-git-commit: 146d622f370fd7469a8e5f0f2fe68cb31fa91844
+source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Städer
 
-Dimensionen Städer rapporterar staden som träffen härstammar från. Den här dimensionen är användbar för att avgöra vilka de populäraste städerna besökarna kommer från när de besöker din webbplats. Ni kan använda dessa data för att fokusera på lokal annonsering i dessa städer, som affischtavlor och reklamfilmer.
+Städerna [dimension](overview.md) rapporterar staden som träffen härstammar från. Den här dimensionen är användbar för att avgöra vilka de populäraste städerna besökarna kommer från när de besöker din webbplats. Ni kan använda dessa data för att fokusera på lokal annonsering i dessa städer, som affischtavlor och reklamfilmer.
 
 ## Fyll den här dimensionen med data
 
@@ -22,7 +22,7 @@ Den här dimensionen refererar till uppslagsregler som är interna för Adobe. U
 
 Dimensioner omfattar städer över hela världen. Exempelvärden innehåller `"New York (New York, United States)"`, `"Bangalore (Karnataka, India)"`, eller `"London (London, United Kingdom)"`.
 
-Vissa dimensionsobjekt kan innehålla `"AOL"`, en Internetleverantör. Prenumeranter på den här tjänsten tilldelas en åtkomstpunkt baserat på det land där deras kontonummer är etablerat. AOL-användare använder IP-adressen för den här åtkomstpunkten. Eftersom den här dimensionen baseras på IP-adressen används åtkomstpunktens geopositionering i stället för besökarens faktiska plats.
+Vissa dimensionsobjekt kan innehålla `"AOL"`, en Internetleverantör. Prenumeranter på den här tjänsten tilldelas en åtkomstpunkt baserat på det land där deras kontonummer är etablerat. AOL-användare använder IP-adressen för den här åtkomstpunkten. Eftersom den här dimensionen baseras på IP-adressen används åtkomstpunktens geolokalisering i stället för besökarens faktiska plats.
 
 ## Skillnader mellan rapporterad och faktisk plats
 
