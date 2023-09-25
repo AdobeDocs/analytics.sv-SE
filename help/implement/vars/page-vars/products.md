@@ -3,9 +3,9 @@ title: produkter
 description: Skicka data runt vilka produkter som visas eller i kundvagnen.
 feature: Variables
 exl-id: f26e7c93-f0f1-470e-a7e5-0e310ec666c7
-source-git-commit: d252b0e99a7d38d171eab181718fa60780489652
+source-git-commit: 19bb3da46637bf8afc4e5723e2fa28b490e09c88
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ The `products` variabelspårar produkter och egenskaper som är knutna till dem.
 
 >[!NOTE]
 >
->Om variabeln anges i en träff utan [`events`](events/events-overview.md) variabel, [Produktvyer](/help/components/metrics/product-views.md) måttsteg med 1. Se till att du anger lämpliga händelser för varje träff med `products` variabel.
+>Om variabeln anges i en träff utan [`events`](events/events-overview.md) variabel, [Produktvyer](/help/components/metrics/product-views.md) med 1. Se till att du anger lämpliga händelser för varje träff med `products` variabel.
 
 ## Produkter som använder Web SDK
 
 Produkterna är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under flera XDM-fält:
 
-* Kategorin är mappad till `productListItems[].lineItemId`.
+* Kategorin är mappad till `productListItems[].productCategories[].categoryID`. Det använder det första objektet i `productCategories[]` array. `lineItemId` mappar korrekt, men vi rekommenderar `categoryID` eftersom detta är standard-XDM. Om båda XDM-fälten finns `lineItemId` har företräde.
 * Produkten är mappad till `productListItems[].SKU` eller `productListItems[].name`. Om båda XDM-fälten finns, `productListItems[].SKU` används.
 * Kvantitet har mappats till `productListItems[].quantity`.
 * Priset är mappat till `productListItems[].priceTotal`.
@@ -35,11 +35,11 @@ Produkterna är [mappas för Adobe Analytics](https://experienceleague.adobe.com
 
 ## Produkter som använder Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Experience Platform Data Collection för att ställa in den här variabeln. Det finns dock flera tillägg från tredje part som kan vara till hjälp.
+Det finns inget dedikerat fält i Adobe Experience Platform Data Collection för att ställa in den här variabeln, men det finns flera tredjepartstillägg som kan vara till hjälp.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den önskade taggegenskapen.
-3. Gå till [!UICONTROL Extensions] tabbtangenten och sedan klicka [!UICONTROL Catalog] om du vill se alla tillgängliga tillägg.
+3. Gå till [!UICONTROL Extensions] tabbtangenten och klicka sedan på [!UICONTROL Catalog] om du vill se alla tillgängliga tillägg.
 4. Sök efter termen &quot;product&quot;, som visar flera tillgängliga tillägg som kan hjälpa dig att ange variabeln.
 
 Du kan använda något av dessa tillägg eller så kan du använda den anpassade kodredigeraren efter AppMeasurementen syntax nedan.
@@ -50,9 +50,9 @@ The `s.products` variabeln är en sträng som innehåller flera avgränsade fäl
 
 * **Kategori** (valfritt): Produktkategorin. Den maximala längden för det här fältet är 100 byte.
 * **Produktnamn** (obligatoriskt): Produktens namn. Den maximala längden för det här fältet är 100 byte.
-* **Kvantitet** (valfritt): Hur många av dessa produkter finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
-* **Pris** (valfritt): Produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar [`currencyCode`](../config-vars/currencycode.md) variabel. Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
-* **Händelser** (valfritt): Händelser som är kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). Se [händelser](events/events-overview.md) för mer information.
+* **Kvantitet** (valfritt): Hur många av dessa produkter som finns i varukorgen. Det här fältet gäller endast för träffar med händelsen purchase.
+* **Pris** (valfritt): produktens totala pris i decimalform. Om kvantiteten är mer än en, ange priset till det totala och inte till det enskilda produktpriset. Justera valutan för det här värdet så att den matchar [`currencyCode`](../config-vars/currencycode.md) variabel. Inkludera inte valutasymbolen i det här fältet. Det här fältet gäller endast för träffar med händelsen purchase.
+* **Händelser** (valfritt): Händelser kopplade till produkten. Avgränsa flera händelser med en pipe (`|`). Se [händelser](events/events-overview.md) för mer information.
 * **eVars** (valfritt): Merchandising eVars knutna till produkten. Avgränsa flera eVars-produkter för försäljning med ett rör (`|`). Se [varuexponering eVars](evar-merchandising.md) för mer information.
 
 ```js
