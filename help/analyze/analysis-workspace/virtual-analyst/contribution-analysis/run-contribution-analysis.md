@@ -4,7 +4,7 @@ title: Köra bidragsanalys
 role: User, Admin
 exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
 feature: Anomaly Detection
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: f6c1162e6f5e8cc6f38da21b5bc19389ffd1e3c5
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Köra bidragsanalys
 
-Bidragsanalys är en intensiv maskininlärningsprocess som utformats för att identifiera medverkande till en konstaterad avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
+[Bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md) är en intensiv maskininlärningsprocess som är utformad för att upptäcka vilka som bidragit till en konstaterad avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
 
 ## Köra bidragsanalys {#section_7D2C5E48A5664727941DF4C90976D9DC}
 
@@ -40,7 +40,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
    * En gång i månaden **Besök Trend line** för kontext.
    * **De vanligaste objekten** som bidrog till avvikelsen, sorterade efter [täckningsgrad](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.html), plus det aktuella måttet och ett unikt besökarmått som sätter måttet i sitt sammanhang utifrån ett storleksperspektiv.
 
-   * The [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters)-tabellen identifierar associationer av de vanligaste objekten baserat på bidragsresultat, avvikelser och den totala procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de viktigaste objekten som den består av:
+   * The [Genererade segment](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) (Top Item Clusters)-tabellen identifierar associationer av de vanligaste objekten baserat på bidragsresultat, avvikelser och den totala procentandel som bidrar till det avvikande måttet. Detta registreras sedan som ett målgruppssegment (bidragssegment 1, bidragssegment 2 osv.). Om du klickar på knappen &quot;i&quot; (info) får du en översikt över varje segment, inklusive vilka av de översta objekten det består av:
 
      ![](assets/auto_segment.png)
 
@@ -49,7 +49,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
    * [Bryter ned varje dimensionsobjekt med en annan dimension.](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md)
    * [Trending one or more rows.](/help/analyze/analysis-workspace/home.md#section_34930C967C104C2B9092BA8DCF2BF81A)
    * [Lägga till nya visualiseringar.](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)
-   * [Skapa aviseringar.](/help/components/c-alerts/intellligent-alerts.md)
+   * [Skapar aviseringar.](/help/components/c-alerts/intellligent-alerts.md)
    * [Skapa eller jämföra segment.](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
 
 >[!NOTE]
@@ -58,7 +58,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 
 ## Uteslut dimensioner från bidragsanalys {#section_F6932F4BF74544B5872164E7B1E0C6FC}
 
-Det kan finnas tillfällen då du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
+Det kan finnas tillfällen när du vill utesluta vissa dimensioner från bidragsanalysen. Du kanske inte bryr dig om webbläsar- eller maskinvarurelaterade dimensioner alls och du vill snabba upp analysen genom att ta bort dem.
 
 1. Efter att du klickat **[!UICONTROL Run Contribution Analysis]** (eller **[!UICONTROL Analyze]** i ett linjediagram) **[!UICONTROL Excluded Dimensions]** visas.
 

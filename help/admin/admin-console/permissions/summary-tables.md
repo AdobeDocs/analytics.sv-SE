@@ -3,7 +3,7 @@ title: Adobe Analytics Permissions - summary tables
 description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Adobe Admin Console.
 exl-id: f1abbdb7-0f76-4d9b-a3ca-b12fa3cecb50
 feature: Admin Tools
-source-git-commit: af3bdcf3eedecc6b670e51dcb2f6980e75982077
+source-git-commit: f6c1162e6f5e8cc6f38da21b5bc19389ffd1e3c5
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 4%
@@ -42,7 +42,7 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | URL-filter | x |  |  |  | Ger åtkomst till Allmänt > Interna URL-filter i Report Suite Manager. |
 | Avvikelseidentifiering |  | x |  |  | Ger åtkomst till avvikelseidentifiering i Analysis Workspace. |
 | Bidragsanalys |  | x |  |  | Ger åtkomst till högerklicksmenyn Kör bidragsanalys i Analysis Workspace. |
-| Anpassad Data warehouse-rapport |  | x |  |  | Ger åtkomst till Verktyg > Data warehouse i den övre navigeringen i Analytics. |
+| Anpassad Data Warehouse |  | x |  |  | Ger åtkomst till Verktyg > Data Warehouse i den övre navigeringen i Analytics. |
 | Punktsidor |  |  | x |  | Ger åtkomst till Site Metrics > Bots > Bot Pages report in Reports &amp; Analytics. |
 | Robotar |  |  | x |  | Ger åtkomst till Site Metrics > Bots > Bots report in Reports &amp; Analytics. |
 | Kanalrapport |  |  | x |  | Ger åtkomst till marknadsföringskanalerna > Kanalöversiktsrapport i rapporter och analyser. |
@@ -52,7 +52,7 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Återbesök |  |  | x |  | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
 | Konfiguration av Advertising Analytics |  |  |  | x | Används inte. |
 | Sammanfattningsrapport för företag |  |  |  | x | Används inte. |
-| Data Warehouse |  |  |  | x | Används inte. Använd&quot;Anpassad Data warehouse-rapport&quot; i stället. |
+| Data Warehouse |  |  |  | x | Används inte. Använd rapporten för anpassad Data Warehouse i stället. |
 | Bild |  |  |  | x | Används inte. |
 | KPI/mätarrapport |  |  |  | x | Används inte. |
 | De senaste 100 besökarna |  |  |  | x | Används inte. |
@@ -69,6 +69,8 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Användningssammanfattningsrapport |  |  |  | x | Används inte. |
 | Videoinställningar |  |  |  | x | Används inte. |
 | Webbresurser |  |  |  | x | Används inte. |
+
+{style="table-layout:auto"}
 
 ## Analysverktyg
 
@@ -110,3 +112,5 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Behörigheter (skrivbehörighet) - webbtjänster |  |  |  | x | Används inte längre. Låter användaren redigera äldre analysbehörigheter med hjälp av Admin API. Använd Adobe Admin Console istället. |
 | Inställningar |  |  |  | x | Används inte. |
 | Enkel inloggning |  |  |  | x | Används inte längre. Ger åtkomst till den inaktuella Single Sign-On-tjänsten. |
+
+{style="table-layout:auto"}
