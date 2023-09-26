@@ -3,7 +3,7 @@ title: IP-adresser och domäner som används av Adobe Analytics
 description: Om brandväggen blockerar IP-adresser som kommer från Adobe kan du uppdatera brandväggsinställningarna i den här listan.
 feature: Data Configuration and Collection
 exl-id: e24a70e4-9ed4-4b87-8bab-4ed0aebedd1f
-source-git-commit: 23de7e6fb9f3b1276c7725ac99154e96e09a8469
+source-git-commit: 32318f2974e4ced630ab6d4090fa9ea5c420ddae
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Följande tabell omfattar alla IP-adresser som ägs av Adobe och som används f�
 
 ## Datainsamling och IP-adressblock för FTP
 
-Om din organisation föredrar att tillåta specifika IP-adressintervall kan du använda följande tabell. Alla intervall i det här avsnittet ingår i tabellen ovan. FTP-anslutningar för Data warehouse och datafeeds kommer endast från platserna London, Oregon och Singapore.
+Om din organisation föredrar att tillåta specifika IP-adressintervall kan du använda följande tabell. Alla intervall i det här avsnittet ingår i tabellen ovan. FTP-anslutningar för Data Warehouse och datafeeds kommer endast från platserna London, Oregon och Singapore.
 
 | Plats | IP-intervall (CIDR-notering) |
 | --- | --- |
@@ -83,9 +83,9 @@ Adobe Analytics använder Amazon Web Services som en del av sin datainsamlingspr
 
 | Plats | Värd |
 | --- | --- |
-| Kina | `52.80.44.16` |
-| Kina | `52.80.161.58` |
-| Kina | `140.179.173.142` |
+| Kina | `52.80.168.159` |
+| Kina | `52.80.199.104` |
+| Kina | `54.223.199.8` |
 
 Följande tabell innehåller AWS IPv6-adressblock som används av Adobe. Värdarna är **not** ingår i det aggregerade blockområdet ovan.
 
