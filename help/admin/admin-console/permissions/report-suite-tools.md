@@ -3,10 +3,10 @@ title: Produktprofilbehörigheter för Report Suite-verktyg i Adobe Admin Consol
 description: Förstå varje behörighetsobjekt under Report Suite Tools.
 exl-id: ca38d02f-2e88-49a3-a08c-515f21ee0099
 feature: Admin Tools
-source-git-commit: f6c1162e6f5e8cc6f38da21b5bc19389ffd1e3c5
+source-git-commit: e53205605642d5c383b1385c5ac4f24e51e6d316
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 0%
+source-wordcount: '518'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ På den här sidan kan du förstå alla behörighetsobjekt under Report Suite-ve
 | Behörighetsobjekt för Report Suite-verktyg | Beskrivning |
 |------|------|
 | [!UICONTROL Account Summary] | Ger åtkomst till Allmänt > Allmänna kontoinställningar i Report Suite Manager. |
-| [!UICONTROL Advertising Analytics Configuration] | Ger åtkomst till alla aspekter av Advertising Analytics. |
+| [!UICONTROL Advertising Analytics Configuration] | Användaren kan konfigurera rapportsviter som ska etableras för Advertising Analytics. |
 | [!UICONTROL Anomaly Detection] | Ger åtkomst till avvikelseidentifiering i Analysis Workspace. |
 | [!UICONTROL Bot Pages] | Ger åtkomst till Site Metrics > Bots > Bot Pages report in Reports &amp; Analytics. |
 | [!UICONTROL Bots] | Ger åtkomst till Site Metrics > Bots > Bots report in Reports &amp; Analytics. |
@@ -44,8 +44,8 @@ På den här sidan kan du förstå alla behörighetsobjekt under Report Suite-ve
 | [!UICONTROL RealTime Report] | Ger åtkomst till Site Metrics > Real-Time i Reports &amp; Analytics. Använd behörighetsobjektet Konfiguration av realtidsrapport om du vill bevilja åtkomst för att konfigurera rapporten. |
 | [!UICONTROL Real Time Report Configuration] | Ger åtkomst till realtid i Report Suite Manager. Använd behörighetsobjektet &#39;RealTime Report&#39; för att ge åtkomst till själva rapporten. |
 | [!UICONTROL Return Visits] | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
-| [!UICONTROL Reporting Activity Manager Admins] | Ger åtkomst till informationssidan och möjlighet att avbryta begäranden. |
-| [!UICONTROL Reporting Activity Manager Access] |  |
+| [!UICONTROL Reporting Activity Manager Admins] | TBD |
+| [!UICONTROL Reporting Activity Manager Access] | TBD |
 | [!UICONTROL Report Suite Mgmt] | Ger åtkomst till Report Suite Manager, men tillåter inga ändringar. |
 | [!UICONTROL R&A Dashboard Image Reportlet] | Används inte |
 | [!UICONTROL R&A Dashboard Metric Gauge Reportlet] | Används inte |

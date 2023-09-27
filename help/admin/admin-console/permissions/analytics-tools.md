@@ -3,10 +3,10 @@ title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
 feature: Admin Tools
-source-git-commit: f6c1162e6f5e8cc6f38da21b5bc19389ffd1e3c5
+source-git-commit: e53205605642d5c383b1385c5ac4f24e51e6d316
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 0%
+source-wordcount: '414'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | Behörighetsobjekt för analysverktyg | Beskrivning |
 |----|----|
 | [!UICONTROL Activity Map] | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
-| [!UICONTROL Advertising Analytics Management] | Används inte. |
+| [!UICONTROL Advertising Analytics Management] | Tillåter användare att konfigurera/redigera/visa annonssökkonton. |
 | [!UICONTROL Analysis Workspace Access] | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra den här gruppen (helst) eller Rapporter och analyser för att kunna använda Adobe Analytics. |
 | [!UICONTROL Analysis Workspace: Save As Template] | Ger åtkomst till Projekt > Spara som mall i Analysis Workspace. |
 | [!UICONTROL Annotation Creation] | Ger möjlighet att skapa anteckningar. |
