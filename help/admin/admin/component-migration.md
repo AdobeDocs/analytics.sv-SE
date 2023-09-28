@@ -2,10 +2,10 @@
 description: Beskriver hur du migrerar komponenter och projekt från Adobe Analytics till Customer Journey Analytics.
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
-source-git-commit: 8a9c3b4d6c7a59582a6fd8bdc5464c2dbed3ad1b
+source-git-commit: 73cbfbbad4d8e7bb3107ee08861a6342aba85e84
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 0%
+source-wordcount: '1133'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,9 @@ Migreringsprocessen omfattar:
 
   Vissa dimensioner och mätvärden matchas automatiskt. Andra måste du matcha manuellt som en del av migreringsprocessen.
 
-## Förutsättningar
+## Förbereda för migrering
+
+### Förutsättningar
 
 Innan dina projekt och tillhörande mått och mätvärden är klara att migreras måste du:
 
@@ -37,7 +39,36 @@ Innan dina projekt och tillhörande mått och mätvärden är klara att migreras
 
   Fliken Behörigheter ingår i varje produktprofil i Admin Console. Du kan lägga till användare i specifika produktprofiler. Sedan tilldelar du rättigheter till specifika datavyer och anger vilka behörigheter användarna i en produktprofil har.
 
-## Skapa en migreringsplan som en organisation
+* Skapa en migreringsplan enligt beskrivningen i avsnittet nedan, [Skapa en migreringsplan som en organisation](#create-a-migration-plan-as-an-organization).
+
+### Förstå vad som ingår i en migrering
+
+I följande tabell visas vilka element i ett projekt och en komponent som ingår i en migrering:
+
+
+|  | Projekt | Dimensioner och mätvärden |
+|---------|----------|---------|
+| **Datumintervall** | Ja | Ej tillämpligt |
+| **Segment** | Ja | Ej tillämpligt |
+| **Snabbsegment** | Ja | Ej tillämpligt |
+| **Paneler** | Ja | Ej tillämpligt |
+| **Visualiseringar** | Ja | Ej tillämpligt |
+| **Ägare** | (Definieras av användaren som utför migreringen) | ? |
+| **Insamling** | Nej | Ej tillämpligt |
+| **Delning (projektroller)** | Nej | Nej |
+| **Anteckningar** | Nej | Ej tillämpligt |
+| **Mappstruktur** | Nej | Ej tillämpligt |
+| **Beskrivning** | Ja | ? |
+| **Taggar** | ? | ? |
+| **Scheman** | ? | Ej tillämpligt |
+| **Attribution (on dimensions)** | Ej tillämpligt | ? |
+| **Avvikelseidentifiering** | ? | Ej tillämpligt |
+| **Bidragsanalys** | ? | Ej tillämpligt |
+| **Larm** | ? | Ej tillämpligt |
+
+{style="table-layout:auto"}
+
+### Skapa en migreringsplan som en organisation
 
 Eftersom alla komponenter som matchas för en viss projektmigrering gäller för alla framtida projektmigreringar för hela organisationen är det viktigt att organisationen planerar alla projektmigreringar i förväg.
 
@@ -49,7 +80,7 @@ För att undvika att enskilda administratörer fattar beslut i en silo när ett 
 >
 >Läs mer om hur du migrerar projekt i [Planera migreringen](#plan-the-migration) ovan.
 >
->Alla dimensioner och mätvärden som du matchar är permanenta, både för det här projektet och för alla framtida projekt som migreras i hela organisationen. Om du fortsätter går det inte att ändra de matchningar du gör.
+>Alla dimensioner och mätvärden som du matchar är permanenta, både för det här projektet och för alla framtida projekt som migreras i hela organisationen. Alla matchningar du gör kan inte ändras.
 
 
 
