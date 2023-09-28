@@ -4,9 +4,11 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 48ca87747093efe72476de739f0ee5b1b3fd291a
+hide: true
+hidefromtoc: true
+source-git-commit: 8a9c3b4d6c7a59582a6fd8bdc5464c2dbed3ad1b
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '633'
 ht-degree: 72%
 
 ---
@@ -32,6 +34,7 @@ ht-degree: 72%
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Loggar](admin/logs.md)
    + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
+   + [Komponentmigrering](admin/component-migration.md)
    + Report Suite-hanterare {#manage-report-suites}
       + Redigera inställningar för en rapportserie {#edit-report-suite}
          + Allmänt {#report-suite-general}
@@ -162,7 +165,7 @@ ht-degree: 72%
          + [Exempel på etiketter](admin/c-data-governance/data-labeling/gdpr-labeling-example.md)
          + [Namnutrymmen](admin/c-data-governance/data-labeling/gdpr-namespaces.md)
       + [ID-expansion](admin/c-data-governance/gdpr-id-expansion.md)
-      + [Undantag för CNIL-samtycke](admin/c-data-governance/cnil-consent-exemption.md)
+      + [Undantag för CNIL-medgivande](admin/c-data-governance/cnil-consent-exemption.md)
    + Användning av serversamtal {#server-call-usage}
       + [Översikt över användningen av serversamtal](admin/c-server-call-usage/overage-overview.md)
       + [Visa aktuell användning av serversamtal](admin/c-server-call-usage/server-call-usage-dashboard.md)
