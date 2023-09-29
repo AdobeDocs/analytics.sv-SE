@@ -3,9 +3,9 @@ title: Produktprofilbehörigheter för Report Suite-verktyg i Adobe Admin Consol
 description: Förstå varje behörighetsobjekt under Report Suite Tools.
 exl-id: ca38d02f-2e88-49a3-a08c-515f21ee0099
 feature: Admin Tools
-source-git-commit: e53205605642d5c383b1385c5ac4f24e51e6d316
+source-git-commit: 512c348bda14654daa155f774dd384cba4aed2bd
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '520'
 ht-degree: 2%
 
 ---
@@ -44,8 +44,8 @@ På den här sidan kan du förstå alla behörighetsobjekt under Report Suite-ve
 | [!UICONTROL RealTime Report] | Ger åtkomst till Site Metrics > Real-Time i Reports &amp; Analytics. Använd behörighetsobjektet Konfiguration av realtidsrapport om du vill bevilja åtkomst för att konfigurera rapporten. |
 | [!UICONTROL Real Time Report Configuration] | Ger åtkomst till realtid i Report Suite Manager. Använd behörighetsobjektet &#39;RealTime Report&#39; för att ge åtkomst till själva rapporten. |
 | [!UICONTROL Return Visits] | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
-| [!UICONTROL Reporting Activity Manager Admins] | TBD |
-| [!UICONTROL Reporting Activity Manager Access] | TBD |
+| [!UICONTROL Reporting Activity Manager Admins] | Används inte |
+| [!UICONTROL Reporting Activity Manager Access] | Används inte |
 | [!UICONTROL Report Suite Mgmt] | Ger åtkomst till Report Suite Manager, men tillåter inga ändringar. |
 | [!UICONTROL R&A Dashboard Image Reportlet] | Används inte |
 | [!UICONTROL R&A Dashboard Metric Gauge Reportlet] | Används inte |
