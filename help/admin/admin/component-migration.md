@@ -4,16 +4,16 @@ title: Migrera komponenter och projekt från Adobe Analytics till Customer Journ
 feature: Admin Tools
 hide: true
 hidefromtoc: true
-source-git-commit: 94041993f624fc5253929a92475842311c125799
+source-git-commit: 792b2171c5535fcd3920b5cbb100b2fb7c642db8
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 3%
+source-wordcount: '1784'
+ht-degree: 1%
 
 ---
 
 # Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 
-Adobe Analytics-administratörer kan migrera Adobe Analytics-komponenter och -projekt till Customer Journey Analytics.
+Adobe Analytics-administratörer kan migrera Adobe Analytics-projekt och tillhörande komponenter till Customer Journey Analytics.
 
 Migreringsprocessen omfattar:
 
@@ -21,15 +21,17 @@ Migreringsprocessen omfattar:
 
 * Mappa mått och mätvärden från Adobe Analytics rapporteringsprogram till mått och mätvärden i datavyer i Customer Journey Analytics.
 
-  Vissa dimensioner och mätvärden mappas automatiskt, andra måste du manuellt mappa som en del av migreringsprocessen.
+  Vissa dimensioner och mätvärden mappas automatiskt, andra måste du manuellt mappa som en del av migreringsprocessen. Segment migreras också, men de behöver inte mappas som en del av migreringsprocessen.
+
+  Alla migrerade komponenter visas i migreringssammanfattningen när migreringen är klar.
 
 ## Förbereda för migrering
 
-Innan du börjar migrera projekt i organisationen måste du uppfylla kraven, lära dig vad som är och inte är migrerat och skapa en migreringsplan för organisationen.
+Fyll i följande avsnitt innan någon i organisationen börjar migrera projekt.
 
 ### Förutsättningar
 
-Innan dina projekt och tillhörande mått och mätvärden är klara att migreras måste du:
+Innan projekten och de tillhörande komponenterna är klara att migreras måste du:
 
 * Använd Analytics-källkopplingen för att visa Adobe Analytics rapportsvitsdata i Customer Journey Analytics. Om du vill göra det måste du:
 
@@ -47,30 +49,72 @@ Innan dina projekt och tillhörande mått och mätvärden är klara att migreras
 
 ### Förstå vad som ingår i en migrering
 
-I följande tabell visas vilka element i ett projekt och en komponent som ingår i en migrering:
+I följande tabeller visas vilka element i ett projekt och en komponent som ingår i en migrering:
 
+#### Komponentelement som migreras
 
-|  | Projekt | Dimensioner och mätvärden |
-|---------|----------|---------|
-| **Datumintervall** | Ja | Ej tillämpligt |
-| **Segment** | Ja | Ej tillämpligt |
-| **Snabbsegment** | Ja | Ej tillämpligt |
-| **Paneler** | Ja | Ej tillämpligt |
-| **Visualiseringar** | Ja | Ej tillämpligt |
-| **Ägare** | (Definieras av användaren som utför migreringen) | ? |
-| **Insamling** | Nej | Ej tillämpligt |
-| **Delning (projektroller)** | Nej | Nej |
-| **Anteckningar** | Nej | Ej tillämpligt |
-| **Mappstruktur** | Nej | Ej tillämpligt |
-| **Beskrivning** | Ja | ? |
-| **Taggar** | ? | ? |
-| **Scheman** | ? | Ej tillämpligt |
-| **Attribution (on dimensions)** | Ej tillämpligt | ? |
-| **Avvikelseidentifiering** | ? | Ej tillämpligt |
-| **Bidragsanalys** | ? | Ej tillämpligt |
-| **Larm** | ? | Ej tillämpligt |
+|  | Migrerad |
+|---------|---------|
+| **[Ägare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Delning](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Nej |
+| **[Beskrivning](/help/analyze/analysis-workspace/components/add-component-descriptions.md)** | ? |
+| **[Taggar](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Nej |
+| **[Attribution (on dimensions)](/help/analyze/analysis-workspace/attribution/overview.md)** | ? |
 
 {style="table-layout:auto"}
+
+#### Projektelement som migreras
+
+|  | Migrerad |
+|---------|----------|
+| **[Datumintervall](/help/analyze/analysis-workspace/components/calendar-date-ranges/calendar.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Segment](/help/components/segmentation/seg-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Dimensioner](/help/components/dimensions/overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) Mappas automatiskt eller manuellt |
+| **[Mätvärden](/help/components/metrics/overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) Mappas automatiskt eller manuellt |
+| **[Paneler](/help/analyze/analysis-workspace/c-panels/panels.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Ägare](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) Definieras av användaren som utför migreringen |
+| **[Insamling](/help/analyze/analysis-workspace/curate-share/curate.md)** | Nej |
+| **[Delning (projektroller)](/help/analyze/analysis-workspace/curate-share/share-projects.md)** | Nej |
+| **[Dela (dela med alla länkar)](/help/analyze/analysis-workspace/curate-share/share-projects.md)** | ? <!-- if no, combine with the above and just call it sharing? What about sharing links?--> |
+| **[Anteckningar](/help/analyze/analysis-workspace/components/annotations/overview.md)** | Nej |
+| **[Mappstruktur](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)** | Nej |
+| **[Beskrivning](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
+| **[Taggar](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | Nej |
+| **[Scheman](/help/components/scheduled-projects-manager.md)** | Nej |
+| **[Avvikelseidentifiering](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)** | ? |
+| **[Favoriter](/help/analyze/landing.md)** | ? |
+
+{style="table-layout:auto"}
+
+### Förstå element som inte stöds och som orsakar fel
+
+Följande visualiseringar, paneler och funktioner stöds inte i Customer Journey Analytics. När dessa element ingår i ett projekt före migreringen kan de antingen göra att migreringen misslyckas eller orsaka fel efter att projektet har migrerats.
+
+Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projektet till Customer Journey Analytics. Om en migrering misslyckas tar du bort de här elementen innan du försöker migrera igen.
+
+#### Visualiseringar som inte stöds
+
+* [Mappa](/help/analyze/analysis-workspace/visualizations/map-visualization.md)
+
+#### Paneler som inte stöds
+
+* [Analyser för mål (A4T)](/help/analyze/analysis-workspace/c-panels/a4t-panel.md)
+
+* [Segmentjämförelse](/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md)
+
+* [Medie - genomsnittlig minutmålgrupp](/help/analyze/analysis-workspace/c-panels/average-minute-audience-panel.md)
+
+* [Nästa eller föregående objekt](/help/analyze/analysis-workspace/c-panels/next-previous.md)
+
+* [Sidsammanfattning](/help/analyze/analysis-workspace/c-panels/page-summary.md)
+
+#### Funktioner som inte stöds
+
+* [Bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md)
+
+* [Larm](/help/components/c-alerts/intellligent-alerts.md)
 
 ### Skapa en migreringsplan som en organisation
 
