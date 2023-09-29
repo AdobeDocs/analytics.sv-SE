@@ -4,9 +4,9 @@ title: Migrera komponenter och projekt från Adobe Analytics till Customer Journ
 feature: Admin Tools
 hide: true
 hidefromtoc: true
-source-git-commit: 792b2171c5535fcd3920b5cbb100b2fb7c642db8
+source-git-commit: 99b363f506e46fae7ce835588defd4f407d02c9e
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1974'
 ht-degree: 1%
 
 ---
@@ -116,11 +116,89 @@ Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projekte
 
 * [Larm](/help/components/c-alerts/intellligent-alerts.md)
 
-### Skapa en migreringsplan som en organisation
+### Bestäm som organisation hur du ska mappa komponenter som inte stöds
 
-Eftersom alla komponenter som mappas för en viss projektmigrering gäller för alla framtida projektmigreringar för hela organisationen är det viktigt att organisationen planerar alla projektmigreringar i förväg.
+>[!IMPORTANT]
+>
+>Migreringsprocessen identifierar komponenter i ditt Adobe Analytics-projekt som inte kan mappas automatiskt till komponenter i Customer Journey Analytics och gör att du kan mappa dem manuellt.
+>
+>**Alla mappningar som görs i ett projekt gäller för alla framtida projekt i hela organisationen, oavsett vilken användare som utför migreringen. Dessa mappningar kan inte ändras eller ångras förutom genom att kontakta kundtjänst.**
+>
+>Därför är det viktigt att organisationen bestämmer hur dimensioner och mått mappas innan några projekt migreras. På så sätt undviker du att enskilda administratörer fattar beslut i en silo när de endast överväger ett enskilt projekt.
+>
+>Här följer en lista med mått och mätvärden som du måste mappa manuellt om de finns i ditt projekt. Vi rekommenderar att du granskar den här listan innan du migrerar. Om någon av dessa komponenter finns i ditt projekt, bestämmer du nu vilka Customer Journey Analytics-komponenter du ska mappa dem till.
 
-Som organisation ska du bestämma hur dimensioner och mätvärden ska mappas. På så sätt undviker du att enskilda administratörer fattar beslut i en silo när de endast överväger ett enskilt projekt.
+
+#### Dimensioner som inte stöds
+
+* genomsnittstid
+* pagetimeseconds
+* singlepagevisier
+* visitnummer
+* timeBefore
+* tidsspenderad
+* kategori
+* anslutningstyp
+* kundlojalitet
+* anpassad länk
+* nedladdningslänk
+* exitlink
+* hitdepth
+* hittype
+* banlängd
+* dagar före första köp
+* dagsincelastpurchase
+* dagsinsbesök
+* IDtatementState
+* optoutreason
+* persistentcookie
+* returfrekvens
+* sökmotorinenatural
+* sökmotorinenaturnyckelord
+* mobiloperatör
+* skärmupplösning
+* surveyBase
+* försiktighetsåtgärder
+* tbase
+* målraw
+
+
+#### Mätvärden som inte stöds
+
+* timespentbesök
+* timespentvisitor
+* omladdningar
+* studsar
+* bouncert
+* pageevents
+* pageviewspervisit
+* orderspervisit
+* medelsiddjup
+* averagetimespentonsite
+* exitlinkinstances
+* anpassade länkinstanser
+* downloadlinkinstances
+* mörka besökare
+* singlepagevisier
+* singlevalusivs
+* besökshemsida
+* visitorsmcvisid
+* pagesnot hittades
+* nya ärenden
+* tid_granularitet
+* concurrent_viewers_visits
+* concurrent_viewers_instances
+* enheter
+* uppskattade personer
+* playback_time_used_seconds
+* playback_time_used_minutes
+* medelhög_minut_målgrupp_tid_baserad
+* medelhög_minut_målgrupp_media_tid
+* medelhög_minut_målgrupp_innehållstid
+* video_length
+* målkonvertering
+* targetTimpression
+
 
 ## Migrera Adobe Analytics-projekt till Customer Journey Analytics
 
@@ -214,11 +292,13 @@ Som organisation ska du bestämma hur dimensioner och mätvärden ska mappas. P�
 
 Om en migrering misslyckas kan du försöka migrera igen.
 
-Du kan försöka utföra en misslyckad migrering igen på något av följande sätt:
+Innan du försöker utföra en misslyckad migrering måste du ta bort alla [element som inte stöds](#understand-unsupported-elements-that-cause-errors) från projektet.
 
 >[!NOTE]
 >
 >Om migreringen fortsätter att misslyckas efter ett nytt försök kontaktar du kundtjänst med projekt-ID:t. Du hittar projekt-ID:t på statussidan för migrering. <!-- when does this page display? How can they get there -->
+
+Så här gör du om en misslyckad migrering:
 
 1. I Adobe Analytics väljer du [!UICONTROL **Administratör**] tabbtangenten och sedan välja [!UICONTROL **Alla administratörer**].
 
