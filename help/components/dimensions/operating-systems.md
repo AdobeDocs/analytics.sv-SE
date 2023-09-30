@@ -3,9 +3,9 @@ title: Operativsystem
 description: Operativsystemet för besökaren.
 feature: Dimensions
 exl-id: e3911ae0-d242-4da2-a4bc-b2f4877f9dd2
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 24972ec79cb42224a97dda6b073b517b301113ba
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,10 @@ Operativsystemet [dimension](overview.md) visar det operativsystem och den versi
 
 ## Fyll den här dimensionen med data
 
-Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på `User-Agent` HTTP-huvud i bildbegäranden. Om du använder ett AppMeasurementen bibliotek (till exempel via taggar i Adobe Experience Platform) fungerar den här dimensionen automatiskt.
+Den här dimensionen refererar till en uppslagstabell som är intern för Adobe. Uppslagsvärdet baseras på `User-Agent` HTTP-huvud i bildbegäranden. Adobe samarbetar med [DeviceAtlas](https://deviceatlas.com/) för att upprätthålla sökningar mellan användaragenten och operativsystemet.
+
+* För implementeringar av AppMeasurement fungerar den här dimensionen som standard.
+* Aktivera för Web SDK-implementeringar [!UICONTROL Device Lookup] när [konfigurera ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html).
 
 ## Dimensioner
 

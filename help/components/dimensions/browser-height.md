@@ -3,16 +3,16 @@ title: Webbläsarhöjd - blockerad
 description: Webbläsarfönstrets höjd i pixlar.
 feature: Dimensions
 exl-id: bdfd2ef5-c200-4d6e-b478-3917fca66227
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: e32821dd3f30404166554b8437c508172e4764e5
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
 # Webbläsarhöjd
 
-Webbläsarhöjden - bucketed [dimension](overview.md) visar webbläsarfönstrets höjd, som delas in i grupper om 100 pixlar. Den här dimensionen är användbar när du vill förstå var&quot;vikningen&quot; finns på din webbplats för besökare. Genom att förstå var ditt viknät är kan du optimera innehållet för visning.
+Webbläsarhöjden - bucketed [dimension](overview.md) visar webbläsarfönstrets höjd, som delas in i fördefinierade grupper. Den här dimensionen är användbar när du vill förstå var&quot;vikningen&quot; finns på din webbplats för besökare. Genom att förstå var ditt viknät är kan du optimera innehållet för visning.
 
 Den här dimensionen skiljer sig från skärmhöjden. Webbläsarhöjden är antalet pixlar i det visningsbara webbläsarutrymmet, medan skärmhöjden är höjden på hela skärmen i pixlar. Om du vill se skillnaden mellan dessa två variabler på din egen dator öppnar du webbläsarkonsolen (F12 i de flesta webbläsare) och kopierar och klistrar in följande kod i konsolen:
 
@@ -30,4 +30,4 @@ Adobe har kvar webbläsarhöjden för ett besök. Om webbläsarhöjden justeras 
 
 ## Dimensioner
 
-Dimensionen innehåller alla webbläsarhöjder som samlats in, klassificerade i grupper om 100 pixlar. Om webbläsarhöjden för en träff till exempel är `720`grupperas den i dimensionsposten `700 to 799`.
+Dimensionerna innehåller alla insamlade webbläsarhöjder, indelade i fördefinierade grupper. Om webbläsarhöjden för en träff till exempel är `720`grupperas den i dimensionsposten `700 to 799`.

@@ -3,9 +3,9 @@ title: AppMeasurement för versionsinformation för JavaScript
 description: Cumulative release notes for AppMeasurement for JavaScript.
 feature: Appmeasurement Implementation
 exl-id: 80b935f0-3ec5-4ffa-9858-f83ae9a6b763
-source-git-commit: b99717f4b7fe23172c5a9b3adaa92341cdcc5e44
+source-git-commit: 13d1809d1e32bc0470c77b7c04061db4a8f2c80e
 workflow-type: tm+mt
-source-wordcount: '2395'
+source-wordcount: '2362'
 ht-degree: 2%
 
 ---
@@ -353,8 +353,8 @@ Utgivningsdatum: **18 juni 2015**
 
 Utgivningsdatum: **21 maj 2015**
 
-* Med början i iOS SDK version 4.5 kan du med ett nytt iOS-tillägg samla in användningsdata från dina Apple Watch-appar, Today-widgetar, fotoredigeringswidgetar och alla andra iOS-tilläggsappar. Se [Implementering av iOS-tillägg](https://experienceleague.adobe.com/docs/mobile-services/ios/ios-ext/ios-ext.html) i användarhandboken för mobiltjänster.
-* Från och med Android SDK version 4.5 kan du med ett nytt Android-tillägg samla in data från Android-appen. Se [Android-bärare](https://experienceleague.adobe.com/docs/mobile-services/android/wearables-android/android-wearable.html) i användarhandboken för mobiltjänster.
+* Med början i iOS SDK version 4.5 kan du med ett nytt iOS-tillägg samla in användningsdata från dina Apple Watch-appar, Today-widgetar, fotoredigeringswidgetar och alla andra iOS-tilläggsappar.
+* Från och med Android SDK version 4.5 kan du med ett nytt Android-tillägg samla in data från Android-appen.
 * Inkludering av Visitor API 1.4.
 * AudienceManagement-modulen har uppdaterats för att använda DIL version 6.0.
 

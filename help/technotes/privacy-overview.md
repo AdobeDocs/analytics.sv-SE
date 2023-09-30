@@ -4,9 +4,9 @@ keywords: sekretess
 title: Sekretessöversikt
 feature: Privacy
 exl-id: 71c83106-a047-47d7-9a70-4a24595e3d0a
-source-git-commit: 9fd055fd747c7124d49e280af1b0acc24d79be8e
+source-git-commit: 266c354cdc17e99d847ce57c1e6261386299a8cf
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '986'
 ht-degree: 1%
 
 ---
@@ -42,9 +42,9 @@ Adobe Analytics kan samla in följande typer av data:
 | Interna söktermer | Interna sökdata innehåller nyckelord som kommer från webbplatsen eller appens sökfunktioner. Adobe samlar inte automatiskt in interna sökdata. Du kan dock anpassa implementeringen för att samla in dessa data. Detta är vanligt för organisationer som använder Adobe Analytics. | [eVar](../components/dimensions/evar.md) |
 | Specifikationer för dator och webbläsare | Datainsamlingsbiblioteken samlar automatiskt in webbläsartips med låg entropi, som webbläsartyp, operativsystemtyp och om enheten är stationär eller mobil. Anpassad konfiguration krävs för att samla in tips för hög entropi, till exempel webbläsarens specifika version/build, enhetsmodellen eller operativsystemets version. Se [Översikt över klienttips](client-hints.md) för mer information. | [Webbläsare](../components/dimensions/browser.md), [Operativsystem](../components/dimensions/operating-systems.md), [Mobila dimensioner](../components/dimensions/mobile-dimensions.md), [Bildskärmsupplösning](../components/dimensions/monitor-resolution.md) |
 | Geoplatsinformation | Adobe kan aktivera eller inaktivera insamling av geolokaliseringsdata för varje webbplats eller app (på rapportsvitnivå). Geoplatsens datainsamling är aktiverad som standard. | [Städer](../components/dimensions/cities.md), [Regioner](../components/dimensions/regions.md), [Länder](../components/dimensions/countries.md) |
-| IP-adress | Adobe kan dölja den sista oktetten eller helt dölja besökarens IP-adress när dessa data lagras. EMEA-kunder har vanligtvis IP-adressinställningen som är helt okomplicerad som standard. Oberoende av hur obehindrad inställningen är IP-adressen inte tillgänglig som en dimension i Adobe Analytics, utan inkluderas bara i [Dataflöden](../export/analytics-data-feed/data-feed-overview.md). | Ingen |
+| IP-adress | Adobe kan dölja (hash) eller helt ta bort besökarens IP-adress när dessa data lagras. EMEA-kunder har vanligtvis som standard dolda IP-adressinställningar. Oberoende av hur obehindrad inställningen är IP-adressen inte tillgänglig som en dimension i Analysis Workspace, utan inkluderas bara i [Dataflöden](../export/analytics-data-feed/data-feed-overview.md). Se [Allmänna kontoinställningar](../admin/admin/c-manage-report-suites/c-edit-report-suites/general/general-acct-settings-admin.md) i administrationshandboken för mer information om tillgängliga försvårande inställningar. | Ingen |
 | Formulärinformation finns på din webbplats | Alla implementeringstyper kräver konfiguration för att samla in dessa data. Du kan inkludera dessa data i anpassade variabler. | [eVar](../components/dimensions/evar.md) |
-| Markerade annonser eller länkar på din webbplats | Samlas som standard om ett datainsamlingsbibliotek används. Ytterligare information, till exempel platsen där du klickar, är tillgänglig när du aktiverar Activity Map. | [Activity Map](../analyze/activity-map/activity-map.md), [Avsluta länk](../components/dimensions/exit-link.md), [Hämta länk](../components/dimensions/download-link.md) |
+| Markerade annonser eller länkar på din webbplats | Insamlat om [`trackExternalLinks`](../implement/vars/config-vars/trackexternallinks.md) eller [`trackDownloadLinks`](../implement/vars/config-vars/trackdownloadlinks.md) är aktiverat. Ytterligare information, till exempel platsen där du klickar, är tillgänglig när du aktiverar Activity Map. | [Activity Map](../analyze/activity-map/activity-map.md), [Avsluta länk](../components/dimensions/exit-link.md), [Hämta länk](../components/dimensions/download-link.md) |
 | Produkter som köpts på er webbplats | Alla implementeringstyper kräver konfiguration för att samla in dessa data. Adobe har flera standardvariabler för att samla in den här informationen. | [Produkt](../components/dimensions/product.md), [Beställningar](../components/metrics/orders.md), [Intäkter](../components/metrics/revenue.md) |
 
 {style="table-layout:auto"}
@@ -53,4 +53,4 @@ Se navigeringsmenyn under [Översikt över Dimensioner](../components/dimensions
 
 ## Platser för databehandling
 
-Adobe har tre databehandlingsplatser för Adobe Analytics. Dessa webbplatser tar emot rådata och bearbetar dem i en rapportsserie som är optimerad för datalagring och rapporthämtning. Dessa databehandlingsplatser finns i USA (Oregon), Storbritannien (London) och Singapore. Se [Adobe Analytics - säkerhetsöversikt](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adb-analytics-security-wp.pdf){target=_blank} för mer information.
+Adobe har tre databehandlingsplatser för Adobe Analytics. Dessa webbplatser tar emot rådata och bearbetar dem i en rapportsserie som är optimerad för datalagring och rapporthämtning. Dessa databehandlingsplatser finns för närvarande i USA (Oregon), Storbritannien (London) och Singapore. Se [Adobe Analytics - säkerhetsöversikt](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adb-analytics-security-wp.pdf){target=_blank} för mer information.

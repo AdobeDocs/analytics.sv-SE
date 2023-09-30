@@ -3,9 +3,9 @@ title: Variabelmappning för analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
-source-git-commit: f790407b5495d5fad679a2980c951b2247971069
+source-git-commit: 13d1809d1e32bc0470c77b7c04061db4a8f2c80e
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -18,16 +18,16 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 
 | Sökväg till XDM-fält | Analysdimension och beskrivning |
 | --- | --- |
-| `application.isClose` | Hjälper till att definiera mobilmåtten [Krascher](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
-| `application.isInstall` | Hjälper till att avgöra när de mobila mätvärdena ska höjas [Första starten](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
-| `application.isLaunch` | Hjälper till att avgöra när de mobila mätvärdena ska höjas [Första starten](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
-| `application.closeType` | Avgör om en close-händelse är en krasch eller inte. Giltiga värden är `close` (En livscykelsession avslutas och en pause-händelse togs emot för föregående session) och `unknown` (En livscykelsession avslutas utan en pause-händelse). Hjälper dig att ange [Krascher](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics) mätvärden. |
-| `application.isInstall` | Det mobila måttet [Installationer](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
-| `application.isLaunch` | Det mobila måttet [Startar](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
-| `application.name` | Hjälper till att ange mobildimensionen [Program-ID](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
-| `application.isUpgrade` | Det mobila måttet [Uppgraderingar](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
-| `application.version` | Hjälper till att ange mobildimensionen [Program-ID](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
-| `application.sessionLength` | Det mobila måttet [Längd på föregående session](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#metrics). |
+| `application.isClose` | Hjälper till att definiera den mobila livscykelns mått [Krascher](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.isInstall` | Hjälper till att avgöra när den mobila livscykelns mått ska höjas [Första starten](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.isLaunch` | Hjälper till att avgöra när den mobila livscykelns mått ska höjas [Första starten](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.closeType` | Avgör om en close-händelse är en krasch eller inte. Giltiga värden är `close` (En livscykelsession avslutas och en pause-händelse togs emot för föregående session) och `unknown` (En livscykelsession avslutas utan en pause-händelse). Hjälper till att ställa in mätvärden för mobilens livscykel [Krascher](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/) mätvärden. |
+| `application.isInstall` | Den mobila livscykelns mått [Installationer](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.isLaunch` | Den mobila livscykelns mått [Startar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.name` | Hjälper till att ställa in den mobila livscykeldimensionen [Program-ID](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.isUpgrade` | Den mobila livscykelns mått [Uppgraderingar](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.version` | Hjälper till att ställa in den mobila livscykeldimensionen [Program-ID](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `application.sessionLength` | Den mobila livscykelns mått [Längd på föregående session](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `commerce.checkouts.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Utcheckningar](../../components/metrics/checkouts.md) mätvärden. |
 | `commerce.checkouts.value` | Ökar [Utcheckningar](../../components/metrics/checkouts.md) mått med önskad mängd. |
 | `commerce.order.currencyCode` | Anger [currencyCode](../vars/config-vars/currencycode.md) konfigurationsvariabel. |
@@ -44,7 +44,7 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | `commerce.productViews.id` | Gäller [händelseserialisering](../vars/page-vars/events/event-serialization.md) till [Produktvyer](../../components/metrics/product-views.md) mätvärden. |
 | `commerce.productViews.value` | Ökar [Produktvyer](../../components/metrics/product-views.md) mätvärden. |
 | `commerce.purchases.value` | Ökar [Beställningar](../../components/metrics/orders.md) mätvärden. |
-| `device.model` | Den mobila dimensionen [Enhetsnamn](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
+| `device.model` | Den mobila livscykeldimensionen [Enhetsnamn](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `device.colorDepth` | Hjälper dig att ange [Färgdjup](../../components/dimensions/color-depth.md) dimension. |
 | `device.screenHeight` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. |
 | `device.screenWidth` | Hjälper dig att ange [Bildskärmsupplösning](../../components/dimensions/monitor-resolution.md) dimension. |
@@ -55,12 +55,12 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | `environment.browserDetails.userAgent` | Används som reserv [unik besökare](../../components/metrics/unique-visitors.md) identifieringsmetod. Används vanligtvis med `User-Agent` HTTP-begärandehuvud. Du kan mappa det här fältet till en eVar om du vill använda det i rapporter. |
 | `environment.browserDetails.viewportHeight` | Anger [Webbläsarhöjd](../../components/dimensions/browser-height.md) dimension. |
 | `environment.browserDetails.viewportWidth` | Anger [Bredd på webbläsare](../../components/dimensions/browser-width.md) dimension. |
-| `environment.carrier` | Den mobila dimensionen [Transportföretagets namn](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
+| `environment.carrier` | Den mobila livscykeldimensionen [Transportföretagets namn](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `environment.connectionType` | Hjälper dig att ange [Anslutningstyp](../../components/dimensions/connection-type.md) dimension. |
 | `environment.ipV4` | Används som reserv [unik besökare](../../components/metrics/unique-visitors.md) identifieringsmetod. Används vanligtvis med `X-Forwarded-For` HTTP-huvud. |
 | `environment.language` | Mobildimensionen Locale. |
-| `environment.operatingSystem` | Den mobila dimensionen [Operativsystem](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions). |
-| `environment.operatingSystemVersion` | Hjälper dig att ange [Operativsystemsversion](https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics-reference.html#dimensions) dimension. |
+| `environment.operatingSystem` | Den mobila livscykeldimensionen [Operativsystem](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
+| `environment.operatingSystemVersion` | Hjälper till att ställa in den mobila livscykeldimensionen [Operativsystemsversion](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/metrics/). |
 | `_experience.analytics.customDimensions.`<br/>`eVars.eVar1`<br/>`[...]`<br/>`_experience.analytics.customDimensions.`<br/>`eVars.eVar250` | Anger respektive [eVar](../../components/dimensions/evar.md) dimension. |
 | `_experience.analytics.customDimensions.`<br/>`hierarchies.hier1`<br/>`[...]`<br/>`_experience.analytics.customDImensions.`<br/>`hierarchies.hier5` | Anger respektive [Hierarki](/help/components/dimensions/hierarchy.md) dimension. |
 | `_experience.analytics.customDimensions.`<br/>`listProps.prop1.delimiter`<br/>`[...]`<br/>`_experience.analytics.customDimensions.`<br/>`listProps.prop75.delimiter` | Åsidosättning av avgränsare för listpropp. Det här fältet rekommenderas inte eftersom avgränsaren hämtas automatiskt från [Trafikvariabeladministratör](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/c-traffic-variables/traffic-var.md) under rapportsvitens inställningar. Om du använder det här fältet kan det skapa en felmatchning mellan den avgränsare som används och den avgränsare som förväntas i Analytics. |

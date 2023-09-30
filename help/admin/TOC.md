@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 512c348bda14654daa155f774dd384cba4aed2bd
+source-git-commit: b8a71d9b351368721909d1580a690bf924eb39fb
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '632'
 ht-degree: 72%
 
 ---
@@ -106,7 +106,9 @@ ht-degree: 72%
             + [Schemalägg spike](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-schedule-spike.md)
             + [Permanent trafik](admin/c-manage-report-suites/c-edit-report-suites/c-traffic-management/t-traffic-permanent.md)
          + [Standardmått](admin/c-manage-report-suites/c-edit-report-suites/default-metrics.md)
-         + [Apphantering](admin/c-manage-report-suites/c-edit-report-suites/mobile-management.md)
+         + Apphantering {#app-management}
+            + [Apprapportering](admin/c-manage-report-suites/c-edit-report-suites/app-reporting.md)
+            + [Appklassificeringar](admin/c-manage-report-suites/c-edit-report-suites/app-classifications.md)
          + [Mediehantering](admin/c-manage-report-suites/c-edit-report-suites/media-management.md)
          + [Activity Map](admin/c-manage-report-suites/c-edit-report-suites/activity-map.md)
          + [AEM](admin/c-manage-report-suites/c-edit-report-suites/adobe-experience-manager.md)

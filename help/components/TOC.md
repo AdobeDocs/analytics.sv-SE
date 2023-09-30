@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: dc84909f9c19681adfd28696495b667837056146
+source-git-commit: fa9ba599ccc3d6fe1176e6b2ec20457f30cb5959
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '750'
 ht-degree: 42%
 
 ---
@@ -66,7 +66,8 @@ ht-degree: 42%
    + [Marknadsföringskanal](dimensions/marketing-channel.md)
    + [Marknadskanalsdetaljer](dimensions/marketing-detail.md)
    + [Minut](dimensions/minute.md)
-   + [Mobila dimensioner](dimensions/mobile-dimensions.md)
+   + [Dimensioner för mobil livscykel](dimensions/lifecycle-dimensions.md)
+   + [Dimensioner för mobilsökning](dimensions/mobile-dimensions.md)
    + [Bildskärmsupplösning](dimensions/monitor-resolution.md)
    + [Månad på året](dimensions/month-of-year.md)
    + [Månad](dimensions/month.md)
@@ -99,6 +100,7 @@ ht-degree: 42%
    + [Anledning till avanmälan av spårning](dimensions/tracking-opt-out-reason.md)
    + [US DMA](dimensions/us-dma.md)
    + [USA](dimensions/us-states.md)
+   + [Röstdimensioner](dimensions/voice-dimensions.md)
    + [Besöksdjup](dimensions/visit-depth.md)
    + [Besöksnummer](dimensions/visit-number.md)
    + [Vecka](dimensions/week.md)
@@ -127,6 +129,7 @@ ht-degree: 42%
    + [Sista besökssida](metrics/exits.md)
    + [Identifierade personer](metrics/identified-people.md)
    + [Instanser](metrics/instances.md)
+   + [Mätvärden för mobillivscykel](metrics/lifecycle-metrics.md)
    + [Mobilvyer](metrics/mobile-views.md)
    + [Nya åtaganden](metrics/new-engagements.md)
    + [Förekomster](metrics/occurrences.md)
@@ -151,6 +154,7 @@ ht-degree: 42%
    + [Unika enheter](metrics/unique-devices.md)
    + [Unika besökare](metrics/unique-visitors.md)
    + [Enheter](metrics/units.md)
+   + [Röstmått](metrics/voice-metrics.md)
    + [Besökare med Experience Cloud ID](metrics/visitors-with-ecid.md)
    + [Besök](metrics/visits.md)
 + Segmentering {#segmentation}
