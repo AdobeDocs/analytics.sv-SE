@@ -4,7 +4,7 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: fa9ba599ccc3d6fe1176e6b2ec20457f30cb5959
+source-git-commit: f4032ac06c9057635dd0526ad046c4640c6350bf
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 42%
@@ -184,7 +184,7 @@ ht-degree: 42%
       + [Felsökning](segmentation/seg-reference/c-troubleshooting.md)
    + [Frågor och svar om hantering av äldre segment](segmentation/seg-transition.md)
    + [God praxis](segmentation/best-practices.md)
-+ Beräknade mätvärden {#calculated-metrics}
++ Beräknade värden {#calculated-metrics}
    + [Beräknade och avancerade beräknade (härledda) mätvärden](c-calcmetrics/cm-overview.md)
    + [Instruktionsvideor](c-calcmetrics/cm-videos.md)
    + Arbetsflöde för beräknade mätvärden {#calcmetric-workflow}

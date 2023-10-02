@@ -4,7 +4,7 @@ keywords: Beräknade mått;Härledda värden;Avancerade beräknade värden
 title: Beräknade och avancerade beräknade (härledda) värden
 feature: Calculated Metrics
 exl-id: 9bf8239f-cf74-4feb-85e5-d47805e90afb
-source-git-commit: 1dc0325f1a8b4fc1888895ee18570effb34e6208
+source-git-commit: f4032ac06c9057635dd0526ad046c4640c6350bf
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 6%
@@ -13,16 +13,16 @@ ht-degree: 6%
 
 # Beräknade och avancerade beräknade (härledda) mätvärden
 
-Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.
+Beräknade och avancerade beräknade (eller härledda) mätvärden är anpassade mätvärden som du kan skapa utifrån befintliga mätvärden.
 
-Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra er [!DNL Analytics] implementering. Anpassade mätvärden som finns i [!DNL Analytics] paketet är:
+Våra verktyg för beräknade värden är ett mycket flexibelt sätt att bygga, hantera och strukturera mätvärden. Med dem kan ni som marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra er [!DNL Analytics] implementering. Anpassade mätvärden som finns i varje [!DNL Analytics] paketet är:
 
 * Adobe [!DNL Analytics] Foundation: Beräknat
 * [Adobe Analytics Select](https://www.adobe.com/se/data-analytics-cloud/analytics/select.html): Beräknat + Avancerat beräknat
 * [Adobe Analytics Prime](https://www.adobe.com/se/data-analytics-cloud/analytics/prime.html): Beräknat + Avancerat beräknat
 * [Adobe Analytics Ultimate](https://www.adobe.com/se/data-analytics-cloud/analytics/ultimate.html): Beräknat + Avancerat beräknat
 
-Här är en jämförelse av beräkningsstatistik och avancerade beräkningsfunktioner:
+Här är en jämförelse av beräknade värden och avancerade beräknade mätvärden:
 
 | Alternativ för verktyget Builder | Beräknade värden | Avancerade beräknade (härledda) värden |
 |---|---|---|
@@ -44,9 +44,9 @@ Ni kan
   >[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12&learn=on)
 
 * Dela mätvärden mellan olika rapportsviter. Det innebär att alla nya mätvärden gäller för alla rapportsviter i samma inloggningsföretag.
-* (Endast avancerade beräknade mätvärden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot;, med antalet personer som detta är den första sessionen för.
+* (Endast avancerade beräknade mätvärden) Segment på mätvärden. Du kan t.ex. skapa ett mått för&quot;Nya besökare&quot; med antalet personer som detta är den första sessionen för.
 
-* (Endast avancerade beräknade värden) Inkludera statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
+* (Endast avancerade beräknade mätvärden) Lägg in statistiska funktioner som hjälper dig att beskriva dina data bättre. Du kan till exempel räkna antalet objekt i en rapport eller lägga till antalet standardavvikelser för varje objekt.
 
   >[!VIDEO](https://video.tv.adobe.com/v/25409/?quality=12&learn=on)
 
@@ -56,7 +56,7 @@ Några [!DNL Analytics] funktioner som gör att du kan använda händelser men i
 
 * [!UICONTROL Funnels] in [!UICONTROL Reports & Analytics]
 * [!UICONTROL Fallout] in [!UICONTROL Analysis Workspace]
-* [!UICONTROL Cohort Analysis] i Analysis Workspace
+* [!UICONTROL Cohort Analysis] i ANALYSIS WORKSPACE
 * [!UICONTROL Data Warehouse]
 * [!UICONTROL Segments]
 * [!UICONTROL Real-Time] rapporter
@@ -83,7 +83,7 @@ Här är en kort översikt över [!UICONTROL Calculated metrics] verktyg:
      <li id="li_C8C97BA4E227463E98077ABA5818FFC6">Lägg till segment textbundet i mätformler. </li> 
      <li id="li_8503D9E06A3C46569B5CDB4B90F72446">Jämför segment i samma rapport. Exempel: jämför lokala besökare med internationella besökare. </li> 
      <li id="li_4B528FDE1F96400DBA0D3276408FF919">Använd statistiska funktioner. </li> 
-     <li id="li_C1162B1EA6784B8189A8A87E2B0DA79A">Ange detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas). </li> 
+     <li id="li_C1162B1EA6784B8189A8A87E2B0DA79A">Tillhandahåll detaljerade måttbeskrivningar (visa vad den gör, var den ska användas, var den inte ska användas). </li> 
      <li id="li_DEA13F5E8BF94AF1B311C467FE6E2A74">Kopiera definitioner till nya mätvärden. </li> 
      <li id="li_8C21F55015D44910904202D2BF74221C">Ange en intern metrisk förhandsgranskning. </li> 
      <li id="li_3704F66C321C477F9D4F52E068C231BD">Ange metrisk polaritet, vilket anger om det är bra eller dåligt om en viss anpassad händelse (metrisk) inträffar. </li> 
@@ -103,11 +103,11 @@ Här är en kort översikt över [!UICONTROL Calculated metrics] verktyg:
   </tr> 
   <tr> 
    <td colname="col1"> Mätväljarskenor </td> 
-   <td colname="col2"> <p>Ersätter <span class="uicontrol"> Visa mått</span> popup-fönster <span class="uicontrol"> Rapporter och analyser</span>. </p> <p>Du kan söka efter och lägga till/använda mätvärden i rapporten. Du kan också ändra <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-finding.md"  > sortera</a> ordning (alternativen är: alfabetisk, rekommenderad, ofta använd, nyligen använd.) Dessutom kan du filtrera rapportsviterna så att endast mätvärden som har skapats i en viss rapportserie visas. </p> <p>Om du vill komma åt den här mätväljaren klickar du på mätningsikonen <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg" width="15px" id="image_2C6F20B4E634486B95BACD4CA47EF991" /> till vänster om en rapport. Så här ser mätväljaren ut: </p> <p><img src="assets/metrics_rail.png" width="200px" id="image_379523E9AFEC4CF08D20C42C740AA358" /> </p> </td> 
+   <td colname="col2"> <p>Ersätter <span class="uicontrol"> Visa mått</span> popup-fönster <span class="uicontrol"> Rapporter och analyser</span>. </p> <p>Du kan söka efter och lägga till/använda mätvärden i rapporten. Du kan också ändra <a href="/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-finding.md"  > sortera</a> ordning (alternativen är: alfabetisk, rekommenderad, ofta använd, nyligen använd). Dessutom kan du filtrera rapportsviterna så att endast mätvärden som har skapats i en viss rapportserie visas. </p> <p>Om du vill komma åt den här mätväljaren klickar du på mätningsikonen <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg" width="15px" id="image_2C6F20B4E634486B95BACD4CA47EF991" /> till vänster om en rapport. Så här ser mätväljaren ut: </p> <p><img src="assets/metrics_rail.png" width="200px" id="image_379523E9AFEC4CF08D20C42C740AA358" /> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/README.md"  > API för beräknade värden</a> </td> 
-   <td colname="col2"> <p>En del av API-uppsättningen för Adobe Analytics 2.0. </p> </td> 
+   <td colname="col2"> <p>Ingår i Adobe Analytics 2.0 API. </p> </td> 
   </tr> 
  </tbody> 
 </table>

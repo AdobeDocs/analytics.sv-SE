@@ -1,9 +1,9 @@
 ---
 description: Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
-title: Referensfunktioner
+title: Referens till grundläggande funktioner
 feature: Calculated Metrics
 exl-id: 1a49435c-96d1-4617-bd1a-a5d3b74e3ebd
-source-git-commit: 35413ac43eed5ab7218794f26e4753acf08f18ee
+source-git-commit: f4032ac06c9057635dd0526ad046c4640c6350bf
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
@@ -265,7 +265,7 @@ VARIANCE(metric)
 | --- | --- |
 | *mått* | Det mått som du vill ha variansen för. |
 
-För att kunna beräkna en varians tittar du på en hel sifferkolumn. Från den listan med tal beräknar du först medelvärdet. När du har ett genomsnitt går du igenom varje inlägg och gör följande:
+För att kunna beräkna en varians tittar du på en hel sifferkolumn. Från den listan med tal beräknar du först medelvärdet. När du har fått medelvärdet går du igenom varje tävlingsbidrag och gör följande:
 
 1. Subtrahera medelvärdet från talet.
 1. Fyrkantiga resultatet.
@@ -281,4 +281,4 @@ Anta att du har en kolumn med tre objekt:
 
 3
 
-Medelvärdet för den här kolumnen är 2. Kolumnens varians är ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.
+Medelvärdet för den här kolumnen är 2. Kolumnens varians blir ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3-2)<sup>2</sup>/3 = 2/3.

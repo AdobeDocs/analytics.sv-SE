@@ -4,7 +4,7 @@ title: Summor för arbetsyta
 feature: Freeform Tables
 role: User, Admin
 exl-id: 883c3e44-4139-46a1-a261-e11841312465
-source-git-commit: 7226b4c77371b486006671d72efa9e0f0d9eb1ea
+source-git-commit: f4032ac06c9057635dd0526ad046c4640c6350bf
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -22,7 +22,7 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 
 ## Visa total inställning {#display-total}
 
-Under **[!UICONTROL Column Settings]** finns det alternativ för **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte stämmer, t.ex. i vissa [Beräknade måttscenarier](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
+Under **[!UICONTROL Column Settings]** finns det alternativ för att **[!UICONTROL Show Totals]** och **[!UICONTROL Show Grand Total]**. Om de här inställningarna inte är markerade tas summorna bort från tabellen. Detta kan vara önskvärt om summorna inte stämmer, t.ex. i vissa [beräknade mätscenarier](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html).
 
 ![](assets/column-settings-total.png)
 

@@ -1,19 +1,19 @@
 ---
 description: Report Builder 5.2 har stöd för Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
-title: Beräknade mätvärden
+title: Beräknade värden
 feature: Report Builder
 role: User, Admin
 exl-id: 462086eb-675f-443c-b3a6-b4fa390254da
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: f4032ac06c9057635dd0526ad046c4640c6350bf
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 12%
 
 ---
 
-# Beräknade mätvärden
+# Beräknade värden
 
-Report Builder 5.2 har stöd för Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
+Report Builder 5.2 stöder Adobe Analytics enhetliga beräknade mätvärden. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
 
 >[!NOTE]
 >
