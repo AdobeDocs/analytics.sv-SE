@@ -2,11 +2,9 @@
 description: Beskriver hur du migrerar komponenter och projekt från Adobe Analytics till Customer Journey Analytics.
 title: Migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
-hide: true
-hidefromtoc: true
-source-git-commit: 99b363f506e46fae7ce835588defd4f407d02c9e
+source-git-commit: e32b239fd64eea4516bc73b934b10346832f2bab
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '2051'
 ht-degree: 1%
 
 ---
@@ -53,13 +51,15 @@ I följande tabeller visas vilka element i ett projekt och en komponent som ing�
 
 #### Komponentelement som migreras
 
+Dimensioner och mätvärden migreras som en del av mappningsprocessen som beskrivs i [Migrera Adobe Analytics-projekt till Customer Journey Analytics](#migrate-adobe-analytics-projects-to-customer-journey-analytics), medan segment och datumintervall återskapas i Customer Journey Analytics baserat på
+
 |  | Migrerad |
 |---------|---------|
-| **[Ägare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
-| **[Delning](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Nej |
-| **[Beskrivning](/help/analyze/analysis-workspace/components/add-component-descriptions.md)** | ? |
-| **[Taggar](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Nej |
-| **[Attribution (on dimensions)](/help/analyze/analysis-workspace/attribution/overview.md)** | ? |
+| **[Ägare](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: ![bock](assets/Smock_Checkmark_18_N.svg)</p> |
+| **[Delning](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
+| **[Beskrivning](/help/analyze/analysis-workspace/components/add-component-descriptions.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: ![bock](assets/Smock_Checkmark_18_N.svg)</p> |
+| **[Taggar](/help/analyze/analysis-workspace/components/analysis-workspace-components.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
+| **[Attribution (on dimensions)](/help/analyze/analysis-workspace/attribution/overview.md)** | Dimensioner och mätvärden: Nej<p>Segment och datumintervall: Nej</p> |
 
 {style="table-layout:auto"}
 
@@ -76,17 +76,16 @@ I följande tabeller visas vilka element i ett projekt och en komponent som ing�
 | **[Visualiseringar](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
 | **[Ägare](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) Definieras av användaren som utför migreringen |
 | **[Insamling](/help/analyze/analysis-workspace/curate-share/curate.md)** | Nej |
-| **[Delning (projektroller)](/help/analyze/analysis-workspace/curate-share/share-projects.md)** | Nej |
-| **[Dela (dela med alla länkar)](/help/analyze/analysis-workspace/curate-share/share-projects.md)** | ? <!-- if no, combine with the above and just call it sharing? What about sharing links?--> |
+| **[Delning (projektroller)](/help/analyze/analysis-workspace/curate-share/share-projects.md)** | Nej <!-- Add info on Share with Anyone? Is it the same?--> |
 | **[Anteckningar](/help/analyze/analysis-workspace/components/annotations/overview.md)** | Nej |
 | **[Mappstruktur](/help/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)** | Nej |
 | **[Beskrivning](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | ![bock](assets/Smock_Checkmark_18_N.svg) |
 | **[Taggar](/help/analyze/analysis-workspace/build-workspace-project/freeform-overview.md)** | Nej |
 | **[Scheman](/help/components/scheduled-projects-manager.md)** | Nej |
-| **[Avvikelseidentifiering](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)** | ? |
-| **[Favoriter](/help/analyze/landing.md)** | ? |
 
 {style="table-layout:auto"}
+
+<!-- What about Anomaly Detection and Favorites? -->
 
 ### Förstå element som inte stöds och som orsakar fel
 
@@ -116,7 +115,7 @@ Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projekte
 
 * [Larm](/help/components/c-alerts/intellligent-alerts.md)
 
-### Bestäm som organisation hur du ska mappa komponenter som inte stöds
+### Bestäm som organisation hur du ska mappa komponenter
 
 >[!IMPORTANT]
 >
@@ -129,7 +128,7 @@ Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projekte
 >Här följer en lista med mått och mätvärden som du måste mappa manuellt om de finns i ditt projekt. Vi rekommenderar att du granskar den här listan innan du migrerar. Om någon av dessa komponenter finns i ditt projekt, bestämmer du nu vilka Customer Journey Analytics-komponenter du ska mappa dem till.
 
 
-#### Dimensioner som inte stöds
+#### Dimensioner som måste mappas manuellt
 
 * genomsnittstid
 * pagetimeseconds
@@ -163,7 +162,7 @@ Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projekte
 * målraw
 
 
-#### Mätvärden som inte stöds
+#### Mätvärden som måste mappas manuellt
 
 * timespentbesök
 * timespentvisitor

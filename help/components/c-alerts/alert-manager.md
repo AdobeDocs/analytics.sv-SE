@@ -3,9 +3,9 @@ description: Hantera aviseringar.
 title: Aviseringshanteraren - översikt
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: 69b763bc5740223be54309c0c0b98f40536c4d7e
+source-git-commit: cfae0661dfa9c61daea33c3a52204793ce3d35c1
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,6 @@ Så här konfigurerar du synliga kolumner i Varningshanteraren:
    | Taggar | Visar taggar som har tillämpats på aviseringen, antingen av dig eller av personer som delat aviseringen med dig. |
    | Delas med | Visar enskilda personer eller grupper (endast admin) eller Alla (endast admin) som du har delat aviseringen med. |
    | Ändrat den | Anger datumet då aviseringen senast ändrades. |
-   | Senast använd | **Obs!** Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).<p>Visar datumet då aviseringen senast användes.</p> <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</p> |
+   | Senast använd | Visar datumet då aviseringen senast användes. <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</p> |
 
    {style="table-layout:auto"}
