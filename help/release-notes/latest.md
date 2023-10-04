@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 084a9e9d2794ece4ddbb4296eee107bbdb451813
+source-git-commit: 5785629376b8ae528535629a77a29dcdd2ca80b8
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1207'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 **Senaste uppdatering**: 4 oktober 2023
 
-Versionsinformationen för oktober omfattar frisläppningsperioden 4 oktober 2023 till 24 oktober 2023. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsinformationen för oktober omfattar frisläppningsperioden 4 oktober 2023 till 25 oktober 2023. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
@@ -23,7 +23,7 @@ Versionsinformationen för oktober omfattar frisläppningsperioden 4 oktober 202
 | **Nya kolumner är tillgängliga när komponenter hanteras** | Följande nya kolumner är nu tillgängliga när du hanterar komponenter:<ul><li>Används i<p>Den här kolumnen är tillgänglig i [Beräknat måttansvarig](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md) och [Segmenthanterare](/help/components/segmentation/segmentation-workflow/seg-manage.md).</p></li><li>Senast använd<p>Den här kolumnen är tillgänglig i [Beräknat måttansvarig](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md), [Segmenthanterare](/help/components/segmentation/segmentation-workflow/seg-manage.md)och [Varningshanteraren](/help/components/c-alerts/alert-manager.md).</p></li></ul><p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras. Du kan använda ordlistan tillsammans med den här informationen för att hålla reda på och förstå hur komponenter används i organisationen bättre.</p> | 20 september 2023 | 4 oktober 2023 |
 | **Förbättringar av Rapporteringsaktivitetshanteraren** | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen.  Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. Nedan följer några av förbättringarna som nu finns i Reporting Activity Manager: <ul><li>Begränsa efterföljande begäranden: Förutom att avbryta aktuella begäranden kan administratörer nu begränsa begäranden för en angiven tidsperiod. Administratörer kan begränsa begäranden efter begäran, projekt och användare.</li><li>Utöver användnings- och kapacitetsstatistik innehåller nu Reporting Activity Manager fler data om rapporteringsaktivitet: kolumnen Komplexitet, kolumnen Användare och kolumnen Anslutning.</li><li>Alla avbrott och begränsningar som görs i Rapporteringsaktivitetshanteraren visas nu i granskningsloggen. Administratörer kan använda granskningsloggen för att visa det som för närvarande är avbrutet. Det går inte att återställa annulleringar i Rapporteringsaktivitetshanteraren eller i granskningsloggen.</li></ul>Läs mer (kommer snart) | 17 oktober 2023 | 23 oktober 2023 |
 | **Förbättrad Data Warehouse** | När du skapar en begäran om Data Warehouse kan du nu konfigurera ett molnkonto som ska användas som rapportmål. Följande typer av molnkonton är tillgängliga för att skicka data:<ul><li>Amazon S3</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>E-post (det här alternativet var tidigare tillgängligt)</li></ul>FTP, SFTP, Azure Blob och S3 är fortfarande tillgängliga som rapportmål, men rekommenderas inte längre.<p>Användarupplevelsen när begäranden om Data Warehouse skapas och hanteras har också förbättrats. Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md) och [Hantera förfrågningar från Data Warehouse](https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse-requests-manage.html). | 12 september 2023 | 25 oktober 2023 |
-| **Migrera Adobe Analytics-projekt och alla komponenter som ingår till Customer Journey Analytics** | Nu kan du migrera dina Adobe Analytics-projekt till Customer Journey Analytics. Den här processen förenklar övergången från Adobe Analytics till Customer Journey Analytics. När du migrerar projekt till Customer Journey Analytics mappas resurserna från en Adobe Analytics-rapportsvit till en datavy i Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | Ej tillämpligt | 4 oktober 2023 |
+| **Migrera Adobe Analytics-projekt och alla komponenter som ingår till Customer Journey Analytics** | Nu kan du migrera dina Adobe Analytics-projekt till Customer Journey Analytics. Den här processen förenklar övergången från Adobe Analytics till Customer Journey Analytics. När du migrerar projekt till Customer Journey Analytics mappas resurserna från en Adobe Analytics-rapportsvit till en datavy i Customer Journey Analytics. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html) | 11 oktober 2023 | 25 oktober 2023 |
 
 {style="table-layout:auto"}
 
