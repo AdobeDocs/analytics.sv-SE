@@ -4,10 +4,10 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: b8a71d9b351368721909d1580a690bf924eb39fb
+source-git-commit: 31487111111575e267306d5f68eede23276e79a8
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 72%
+source-wordcount: '637'
+ht-degree: 71%
 
 ---
 
@@ -31,7 +31,9 @@ ht-degree: 72%
    + [Exkludera efter IP-adress](admin/exclude-ip.md)
    + [Loggar](admin/logs.md)
    + [Rapporteringsaktivitetshanteraren](admin/reporting-activity.md)
-   + [Komponentmigrering](admin/component-migration.md)
+   + Komponentmigrering {#component-migration}
+      + [Förbered för migrering](admin/component-migration/prepare-component-migration.md)
+      + [Arbetsflöde för migrering](admin/component-migration/component-migration.md)
    + Report Suite-hanterare {#manage-report-suites}
       + Redigera inställningar för en rapportserie {#edit-report-suite}
          + Allmänt {#report-suite-general}
