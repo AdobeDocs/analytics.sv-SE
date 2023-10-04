@@ -2,9 +2,10 @@
 title: Dimensioner för mobil livscykel
 description: Dimensioner baserade på data som samlats in med Mobile SDK.
 feature: Dimensions
-source-git-commit: e32821dd3f30404166554b8437c508172e4764e5
+exl-id: b7ba45d7-7d30-48a3-a747-ea9fbb253abb
+source-git-commit: d940428e1cbe1be6d8263e986e8b641ec18aace1
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '64'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 | Namn på livscykeldimension | Beskrivning | Sammanhangsdatavariabel |
 | --- | --- | --- |
-| [!UICONTROL First Launch Date] | | TBD (är det här installationsdatumet?) |
+| [!UICONTROL First Launch Date] | | TBD |
 | [!UICONTROL Device Name (SDK)] | | `a.DeviceName` |
 | [!UICONTROL Operating System Version (SDK)] | | `a.OSVersion` |
 | [!UICONTROL Resolution (SDK)] | | `a.Resolution` |
