@@ -3,9 +3,9 @@ description: Hantera aviseringar.
 title: Aviseringshanteraren - översikt
 feature: Alerts
 exl-id: 3408c79f-3d85-44b9-8fca-ce956853dfa4
-source-git-commit: cfae0661dfa9c61daea33c3a52204793ce3d35c1
+source-git-commit: 9a6c2e7c2f83882f6df630f975b0c44e75a2ed7a
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,6 @@ Så här konfigurerar du synliga kolumner i Varningshanteraren:
    | Taggar | Visar taggar som har tillämpats på aviseringen, antingen av dig eller av personer som delat aviseringen med dig. |
    | Delas med | Visar enskilda personer eller grupper (endast admin) eller Alla (endast admin) som du har delat aviseringen med. |
    | Ändrat den | Anger datumet då aviseringen senast ändrades. |
-   | Senast använd | Visar datumet då aviseringen senast användes. <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</p> |
+   | Senast använd | Visar datumet då aviseringen senast användes. <p>Den här informationen kan hjälpa dig att avgöra om en komponent är värdefull för användare i organisationen, var den används och om den behöver tas bort eller ändras.</p><p>Tänk på följande när du visar den här kolumnen:</p><ul><li>Den här informationen inkluderar inte användning från API, Report Builder eller Data Warehouse.</li><li>För vissa komponenter kanske den här kolumnen inte innehåller data om komponenten senast användes före september 2023.</li></ul> |
 
    {style="table-layout:auto"}
