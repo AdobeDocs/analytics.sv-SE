@@ -2,9 +2,10 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
-source-git-commit: 5ed0c4b8cb4b1a50cf25df1459faecadcc19ea29
+exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
+source-git-commit: f1264344a380944946ffa7b427db7bbc3ea96b1f
 workflow-type: tm+mt
-source-wordcount: '2081'
+source-wordcount: '2252'
 ht-degree: 0%
 
 ---
@@ -78,7 +79,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
       +++Google Cloud Platform
 
@@ -90,7 +91,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
       +++Azure SAS
 
@@ -106,7 +107,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
       +++Azure RBAC
 
@@ -120,7 +121,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
       +++E-post
 
@@ -147,7 +148,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
       +++Google Cloud Platform
 
@@ -160,7 +161,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
       +++Azure SAS
 
@@ -173,7 +174,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
       +++Azure RBAC
 
@@ -187,7 +188,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       {style="table-layout:auto"}
 
-      +++
++++
 
    1. Välj [!UICONTROL **Spara**].
 
@@ -209,14 +210,59 @@ Data dist.lagerdata kan levereras till en FTP-plats som är värd för Adobe ell
 
 Använd följande information när du fyller i de tillgängliga fälten:
 
-* [!UICONTROL **Värd**]: Ange önskad mål-URL för FTP. Exempel, `ftp://ftp.omniture.com`.
-* [!UICONTROL **Bana**]: Kan lämnas tomt
+#### Kontofält
+
+* [!UICONTROL **Kontonamn**]: Namnet på FTP-kontot.
+
+* [!UICONTROL **Kontobeskrivning**]: En beskrivning av FTP-kontot.
+
+* [!UICONTROL **Värdnamn**]: Ange önskad mål-URL för FTP. Exempel, `ftp.company.com`.
+
+  >[!NOTE]
+  >
+  >  Inkludera inte `ftp://` i början av URL:en.
+
 * [!UICONTROL **Användarnamn**]: Ange användarnamn för att logga in på FTP-platsen.
+
 * [!UICONTROL **Lösenord och bekräfta lösenord**]: Ange lösenordet för att logga in på FTP-platsen.
+
+#### Platsfält
+
+* [!UICONTROL **Platsnamn**]: Namnet på den plats på FTP-kontot där du vill att filer ska skickas.
+
+* [!UICONTROL **Platsbeskrivning**]: En beskrivning av platsen på FTP-kontot.
+
+* [!UICONTROL **Katalogsökväg**]: Sökvägen till platsen på FTP-kontot.
 
 ### SFTP
 
 SFTP-stöd för datalager är tillgängligt. Kräver att en SFTP-värd, ett användarnamn och målplatsen innehåller en giltig offentlig RSA- eller DSA-nyckel. Du kan hämta lämplig offentlig nyckel när du skapar datalagrets mål.
+
+Använd följande information när du fyller i de tillgängliga fälten:
+
+#### Kontofält
+
+* [!UICONTROL **Kontonamn**]: Namnet på FTP-kontot.
+
+* [!UICONTROL **Kontobeskrivning**]: En beskrivning av FTP-kontot.
+
+* [!UICONTROL **Värdnamn**]: Ange önskad mål-URL för SFTP. Exempel, `sftp.company.com`.
+
+  >[!NOTE]
+  >
+  >  Inkludera inte `sftp://` i början av URL:en.
+
+* [!UICONTROL **Användarnamn**]: Ange användarnamn för att logga in på SFTP-platsen.
+
+* [!UICONTROL **Offentliga nycklar**]: Hämta lämplig offentlig nyckel när du skapar datalagermålet.
+
+#### Platsfält
+
+* [!UICONTROL **Platsnamn**]: Namnet på den plats på SFTP-kontot där du vill att filer ska skickas.
+
+* [!UICONTROL **Platsbeskrivning**]: En beskrivning av platsen på SFTP-kontot.
+
+* [!UICONTROL **Katalogsökväg**]: Sökvägen till platsen på SFTP-kontot.
 
 ### S3
 
