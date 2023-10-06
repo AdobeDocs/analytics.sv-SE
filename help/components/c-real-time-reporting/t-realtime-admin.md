@@ -3,7 +3,7 @@ description: Administrativa steg för att skapa realtidsrapporter.
 title: Konfigurera realtidsrapporter
 feature: Real-time
 exl-id: 9e7fc67c-71d5-465a-9553-5bb7e02a9bfd
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Konfigurera realtidsrapporter
+
+{{ra-eol}}
 
 Administrativa steg för att skapa realtidsrapporter.
 
@@ -26,7 +28,7 @@ Konfigurera realtidsrapporter inom [!UICONTROL Reports & Analytics] består av a
 
    ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/rep_suite_not_set_up.png)
 
-1. Klicka **[!UICONTROL Configure]** (kugghjulsikon) för att köra [!UICONTROL Report Suite Manager].
+1. Klicka **[!UICONTROL Configure]** (kugghjulsikon) som kör [!UICONTROL Report Suite Manager].
 
    (Även tillgängligt under **[!UICONTROL Analytics]** > **[!UICONTROL Admin > Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Real-Time]**.)
 
@@ -55,6 +57,6 @@ Konfigurera realtidsrapporter inom [!UICONTROL Reports & Analytics] består av a
 
 1. Klicka **[!UICONTROL Save]** eller **[!UICONTROL Save and View Report]**.
 
-   Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga. Information om hur du visar realtidsrapporter finns i [Köra en realtidsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/t-running-report-types.html).
+   Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga. Mer information om hur du visar realtidsrapporter finns i [Köra en realtidsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/t-running-report-types.html).
 
 1. Som standard har alla användare åtkomst till realtidsrapporter.

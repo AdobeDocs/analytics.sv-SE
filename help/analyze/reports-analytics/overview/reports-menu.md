@@ -5,9 +5,9 @@ uuid: 562cb6bf-9396-42a3-adf4-9651af8341cb
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: c2adbe93-6a52-45a0-8a81-2799bf63f70f
-source-git-commit: 99f692c6049708f5feac02d683f14793a57ddb26
+source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,6 @@ ht-degree: 1%
 {{ra-eol}}
 
 En översikt över rapportmenyn i Rapporter och analyser.
-
->[!IMPORTANT]
->Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
 
 Rapporter-menyn innehåller:
 
@@ -40,7 +37,7 @@ Mer information om enskilda rapporter finns i [Dimensioner](/help/components/dim
 
 ## Sök efter rapporter {#section_E5EF11E36CB9451AA7B079E585CA7DB6}
 
-Menyn Rapporter ger en förbättrad sökfunktion. Klicka **[!UICONTROL View All Reports]** eller tryck på snedstreckstangenten (/) och börja sedan skriva så att du snabbt hittar en rapport. Rapportsökningen har utökats så att den omfattar allt i vänsternavigeringen i Analytics (Admin, Components, etc.).
+Menyn Rapporter ger en förbättrad sökfunktion. Klicka **[!UICONTROL View All Reports]** eller tryck på snedstreckstangenten (/) och börja sedan skriva så att du snabbt hittar en rapport. Rapportsökningen har utökats och omfattar allt i vänsternavigeringen i Analytics (Admin, Components, etc.).
 
 ![](assets/menu-search.png)
 
@@ -106,7 +103,7 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Bokmärke...</span> </td> 
-   <td colname="col2">Gör att du kan <a href="/help/analyze/reports-analytics/bookmarks.md"  > bokmärke</a> rapporten. </td> 
+   <td colname="col2">Låter dig <a href="/help/analyze/reports-analytics/bookmarks.md"  > bokmärke</a> rapporten. </td> 
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Kontrollpanel</span>... </td> 
@@ -114,11 +111,11 @@ Tryck på tabbtangenten eller nedpilen (?) för att navigera i listan med rappor
   </tr> 
   <tr> 
    <td colname="col1"><span class="uicontrol"> Mer...</span> </td> 
-   <td colname="col2"> Gör att du kan utföra alla eller några av följande åtgärder: skriva ut, extrahera data, lägga till en varning, skapa en anpassad rapport, kopiera ett diagram, länka till den här rapporten och öppna ett nytt fönster. </td> 
+   <td colname="col2"> Gör att du kan utföra alla eller några av följande åtgärder: skriva ut den, extrahera data från den, lägga till en varning, skapa en anpassad rapport, kopiera ett diagram, länka till den här rapporten och öppna ett nytt fönster. </td> 
   </tr> 
   <tr> 
    <td colname="col1">Rapportsvitväljare <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg" width="15px" id="image_9F64944D46574B2AA38D81A7C82C4AC4" /> </td> 
-   <td colname="col2">Gör att du kan välja <a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html"  > basrapporteringsprogram</a> eller <a href="https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html"  > virtuella rapportsviter</a>. </td> 
+   <td colname="col2">Gör att du kan välja <a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html"  > basrapportsviter</a> eller <a href="https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html"  > virtuella rapportsviter</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1">Kalender <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg" width="15px" id="image_C5E4F87F964C4C3E98496D38A1123502" /> </td> 

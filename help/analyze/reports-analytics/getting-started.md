@@ -4,19 +4,18 @@ title: Komma igång med Reports and Analytics
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 7bd8f28c-2b7a-4220-bd82-1e43edc2c0cd
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 0%
+source-wordcount: '672'
+ht-degree: 1%
 
 ---
 
 # Kom igång med rapporter och analyser
 
-Innan du använder Rapporter och analyser bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
+{{ra-eol}}
 
->[!IMPORTANT]
->Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar hur utgånget är.
+Innan du använder Rapporter och analyser bör du förstå dessa grundläggande inloggnings- och konfigureringsuppgifter och hur du får åtkomst till kontoinformation.
 
 Rapportering ger insikter om era traditionella webbaserade kanaler och om de kanaler som utvecklas, som mobiler, video och sociala nätverk. Några exempel på rapporter är:
 
@@ -40,7 +39,7 @@ Webbläsare och systemkrav för att logga in i gränssnittet Rapporter och analy
 
 ## Logga in på Reports and Analytics
 
-Innan du får åtkomst till gränssnittet måste du samarbeta med ditt kontoteam på Adobe eller kundtjänst för att konfigurera ditt företags konto.
+Innan du får åtkomst till gränssnittet måste du samarbeta med ditt kontoteam på Adobe eller kundtjänst för att ställa in ditt företags konto.
 
 ## Logga in med Experience Cloud
 
@@ -56,7 +55,7 @@ Så här loggar du in via Adobe Experience Cloud:
    **[!UICONTROL Username]**: Ange ditt konto-ID.
 
    **[!UICONTROL Password]**: Ange ditt kontolösenord.
-1. Från Experience Cloud hemsida går du till **Analytics > Reports**.
+1. Gå till Experience Cloud hemsida **Analytics > Reports**.
 
    Experience Cloud loggar automatiskt ut dig efter 30 minuters inaktivitet.
 
@@ -87,7 +86,7 @@ Alla användare har åtkomst till [!UICONTROL Account Information] sida. Följan
 | Typ av information | Definition |
 | --- | --- |
 | Kontakt | Ange följande personliga information för ditt konto:<ul><li>Förnamn (obligatoriskt)</li><li>Efternamn (obligatoriskt)</li><li>Titel</li><li>E-postadress (obligatoriskt)</li><li>Telefonnummer</li></ul> |
-| Inloggning | Visar kontots användarnamn och låter dig ändra kontolösenordet. Se även: [Så här återställer du lösenordet för kontot Rapporter och analys](https://experienceleague.adobe.com/docs/analytics/technotes/troubleshoot-login.html). |
+| Inloggning | Visar kontots användarnamn och låter dig ändra kontolösenordet. Se även: [Så här återställer du lösenordet för konton för Rapporter och analys](https://experienceleague.adobe.com/docs/analytics/technotes/troubleshoot-login.html). |
 | Webbtjänst | Visar webbtjänstens användarnamn och delade hemligheter som är associerade med det här kontot. Använd dessa autentiseringsuppgifter när du använder Experience Cloud via webbtjänstens API:er. Mer information finns i Developer Connection. **Obs!** Den här informationen visas endast om kontot är auktoriserat som webbtjänstanvändare. |
 | Uteslut den här datorn | Tillämpar en cookie på den aktuella datorn för att utesluta den från datainsamlingen. Det här är användbart om du inte vill att dina onlineaktiviteter ska påverka sidvyn och antalet besökare i domänen. **Obs!** Om du vill använda den här funktionen måste cookies vara aktiverade i webbläsaren. Om du tar bort cookies på datorn måste du återställa den exkluderande cookien. |
 

@@ -6,29 +6,28 @@ uuid: 1230b0f3-e026-4b83-b231-14d6f75a3836
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: ec59d365-f294-41da-ae36-3b4ebe64ab23
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1612'
+ht-degree: 1%
 
 ---
 
 # Rapportschema och distribution
 
-Information om schemaläggning, hämtning och distribution av rapporter.
+{{ra-eol}}
 
->[!IMPORTANT]
->Den 21 april 2022 meddelade vi att flera funktioner som är specifika för schemalagda rapporter skulle tas bort som förberedelse inför det tidigare utkomna livets slut för rapporter och analyser. Bland dessa funktioner fanns möjligheten att schemalägga nya rapporter och nya datautdrag. Som svar på kundförfrågningar om förlängning och för att underlätta övergången från rapporter och analyser har vi beslutat att utöka åtkomsten till dessa funktioner till och med den 31 januari 2023. Observera att förfallotiden för både rapporter och dataextrakt fortsätter att vara begränsad till nio månader. leverans av rapport och dataextrahering pausas vid periodens slut om inte schemat återaktiveras. [Läs mer](/help/analyze/reports-analytics/scheduled-reports-eol.md)
+Information om schemaläggning, hämtning och distribution av rapporter.
 
 När du schemalägger en rapport för leverans i ett Adobe Analytics-program kan du använda verktygen för schemaläggning och distribution för att se vilka filer som har skickats automatiskt och ändra eller avsluta leveranserna.
 
 På grund av skillnader i bearbetningsmekanismer och plattformar har de olika typerna av hämtningsbara och schemalagda rapporter som finns i Adobe Analytics olika begränsningar vad gäller högsta antal rader som kan bearbetas i en och samma begäran. Här följer begränsningarna för varje:
 
-* Word, CSV, Excel, HTML och PDF: Samma antal rader som visas i rapporten. Som standard är den här gränsen 50 rader, men den kan öka upp till 200. Uppdelningsrapporter har en hård gräns på 50 rader.
+* Word, CSV, Excel, HTML och PDF: samma antal rader visas i rapporten. Som standard är den här gränsen 50 rader, men den kan öka upp till 200. Uppdelningsrapporter har en hård gräns på 50 rader.
 * Datautdrag: 50 000 rader
-* data warehouse: Obegränsad
+* Data Warehouse: Obegränsad
 
-Dessa begränsningar gäller för enskilda schemalagda och nedladdade rapporter. Kontrollpaneler begränsas till det tillgängliga utrymmet i en rapportmodul.
+Dessa begränsningar gäller för enskilda schemalagda och hämtade rapporter. Kontrollpaneler begränsas till det tillgängliga utrymmet i en rapportmodul.
 
 ## Leveranstid jämfört med bearbetningstid
 
@@ -37,7 +36,7 @@ Dessa begränsningar gäller för enskilda schemalagda och nedladdade rapporter.
 Dessutom finns det ett antal andra faktorer som ytterligare kan öka fördröjningen innan rapporten faktiskt levereras:
 
 * **Köra många olika scheman av samma typ samtidigt** (t.ex. många instrumentpaneler osv.) kan överlagra systemet. Schemaläggningssystemet tillåter endast ett fåtal (5-10) rapporter av någon typ att köras samtidigt. När fler än 5-10 är schemalagda samtidigt måste vissa vänta i rad tills andra rapporter är klara innan de kan börja bearbeta. Problemet kan åtgärdas genom att man schemalägger ett företags rapporter vid olika tidpunkter under dygnet eller timmen i stället för samtidigt.
-* Förutom den specifika rapporttypen (Dashboards, etc.) väntar rapporter också i rad om företaget har **mer än 15-20 av varje typ av rapport som schemaläggs samtidigt (för alla olika rapporttyper)**. Detta kan minskas genom att tidsintervallen ökas i stället för att många körs exakt samtidigt.
+* Förutom den specifika rapporttypen (Dashboards, etc.) väntar rapporter också i rad om företaget har **mer än 15-20 av varje typ av rapport som planeras samtidigt (för alla olika rapporttyper)**. Detta kan minskas genom att tidsintervallen ökas i stället för att många körs exakt samtidigt.
 * **Problem inom tjänster längre fram i kedjan** som Schemaläggaren förlitar sig på kan också påverka rapportleveransen. Om du t.ex. använder API:erna separat för att köra rapporter och fylla i API-begärandekön kan dina schemalagda rapporter leverera långsamt medan du konkurrerar om den resursen.
 * **Sändningsfördröjning för rapport** (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda rapporter.
 
@@ -62,9 +61,9 @@ Så här laddar du ned och mejlar rapporter i en mängd olika format och schemal
 | --- |--- |
 | Rapportfilnamn | Anger rapportens namn. Standardformatet är `<report name> for <suite> - <report date range>`. Om du vill ange ett eget namn väljer du [!UICONTROL Custom]. |
 | Rapportformat | Här kan du ange PDF, CSV, Excel, HTML, Word eller Mobile för leverans. Om du väljer CSV kan du även ange kodning för CSV:<ul><li>Skift-JIS: Japansk teckenkodning.</li><li>EUC-JP: Utökad Unix-kod, främst för japanska, koreanska och förenklad kinesiska.</li></ul> |
-| Rapportinnehåll | <ul><li>Antal rader i tabellen: Anger det antal rader som du vill ska vara synliga i tabellen i rapporten som du skickar.</li><li>Språk för sidhuvud och sidfot: Anger språket för sidhuvudet och sidfoten.</li><li>Kommentarer: Anger texten som visas i början av rapporten.</li></ul> |
-| Skicka digital signaturfil | När du begär en rapport, till exempel en rapport med bokmärken eller Data warehouse, kan du begära en dataunderskrift. Adobe digitala signatur begränsar inte vem som har åtkomst till data, men syftet med den digitala signaturfilen (.sig) är att verifiera giltigheten hos den levererade rapportfilen. Med den digitala signaturen kan rapportmottagarna verifiera att filen kommer från Adobe och inte har ändrats. |
-| Rapportdestination | <ul><li>E-post: Här kan du konfigurera e-postadressinställningar, ämnesraden och anteckningar.</li><li>FTP: Gör att du kan konfigurera FTP-inställningar, inklusive värd, port, katalog, användarnamn och lösenord.</li></ul> |
+| Rapportinnehåll | <ul><li>Antal rader i tabellen: Anger det antal rader som ska vara synliga i tabellen i den rapport som du skickar.</li><li>Språk för sidhuvud och sidfot: Anger språket för sidhuvudet och sidfoten.</li><li>Kommentarer: Anger texten som visas i början av rapporten.</li></ul> |
+| Skicka digital signaturfil | När du begär en rapport, t.ex. en rapport med bokmärken eller en begäran om Data Warehouse, kan du begära en dataunderskrift. Adobe digitala signatur begränsar inte vem som har åtkomst till data, men syftet med den digitala signaturfilen (.sig) är att verifiera giltigheten hos den levererade rapportfilen. Med den digitala signaturen kan rapportmottagarna verifiera att filen kommer från Adobe och inte har ändrats. |
+| Rapportdestination | <ul><li>E-post: Gör att du kan konfigurera e-postadressinställningar, ämnesraden och anteckningar.</li><li>FTP: Gör att du kan konfigurera FTP-inställningar, inklusive värd, port, katalog, användarnamn och lösenord.</li></ul> |
 
 1. Klicka på **[!UICONTROL Scheduling Options]**.
 
@@ -72,13 +71,13 @@ Så här laddar du ned och mejlar rapporter i en mängd olika format och schemal
 |--- |--- |
 | Skicka rapport nu | Skickar rapporten omedelbart. |
 | Schemalägg senare | Visar alternativ för att ange en tidsram och leveransalternativ. |
-| Tidsram för rapport | **Fast**: Förhindrar att datumet flyttas när tiden går. **Rullande**: Tillåter att datumet flyttas framåt när tiden går. Vissa överväganden:<ul><li>Om du väljer Rolling för både start- och slutdatum och väljer en daglig rapport för föregående dag får du ett e-postmeddelande varje dag med en rapport för föregående dag.</li><li>Om du väljer Fast för startdagen och rullande för slutdagen får du den första dagen en rapport för föregående dag. Den andra dagen får du en rapport för de senaste två dagarna och den tredje dagen får du en rapport för de föregående tre dagarna, och så vidare.</li><li>Om du väljer Fast för både start- och slutdatum får du varje dag en identisk rapport för de dagar som du har angett.</li><li>Du kan inte välja ett rullande startdatum och ett fast avslutsdatum.</li></ul> |
-| Leveransfrekvens | <ul><li>**Varje timme**: Levererar e-postmeddelandet varje timme, varannan timme eller något annat timintervall.</li><li>**Dagligen**: Skickar e-postmeddelandet varje dag, varannan dag, var tredje dag eller något annat intervall av dagar. Du kan också få det skickat varje veckodag.</li><li>**Vecka**: Skickar e-postmeddelandet varje vecka, varannan vecka, var tredje vecka eller något annat veckointervall. Du kan också ange vilken veckodag den skickas.</li><li>**Månadsvis**: Anger intervallet i antal månader, och du kan också välja dagen i den månad då det skickas, eller veckodagen i en viss vecka i månaden.</li><li>**Årsvis**: Anger dagen på året då rapporten skickas eller så kan du skicka den en viss dag i veckan i vilken vecka som helst på året.</li><li>**Tid på dagen**: Gäller den tidszon som är kopplad till den valda rapportsviten.</li></ul> |
-| Alternativ för slutleverans | <ul><li>**Aldrig slut**: Anger inget slut.</li><li>**Sluta efter `value` förekomster**: Anger antalet förekomster innan leveransen avslutas.</li><li>**Sluta på**: Här kan du ange ett specifikt datum. Om du vill bearbeta data på samma datum som rapportdata, innehåller rapporten bara data som har placerats i databasen när rapporten skickas. Eftersom en fullständig behandling för en dag kan ta upp till 24 timmar, kanske fullständiga data inte är tillgängliga när rapporten skickas. För fullständiga data ska du alltid ange bearbetningstiden i 24 timmar efter rapportperiodens slut.</li></ul> |
+| Tidsram för rapport | **Fast**: Förhindrar att datumet flyttas fram när tiden går. **Rullande**: Tillåter att datumet flyttas fram när tiden går. Vissa överväganden:<ul><li>Om du väljer Rolling för både start- och slutdatum och väljer en daglig rapport för föregående dag får du ett e-postmeddelande varje dag med en rapport för föregående dag.</li><li>Om du väljer Fast för startdagen och rullande för slutdagen får du den första dagen en rapport för föregående dag. Den andra dagen får du en rapport för de senaste två dagarna och den tredje dagen får du en rapport för de föregående tre dagarna, och så vidare.</li><li>Om du väljer Fast för både start- och slutdatum får du varje dag en identisk rapport för de dagar som du har angett.</li><li>Du kan inte välja ett rullande startdatum och ett fast avslutsdatum.</li></ul> |
+| Leveransfrekvens | <ul><li>**Varje timme**: Levererar e-postmeddelandet varje timme, varannan timme eller något annat timintervall.</li><li>**Dagligen**: Skickar e-postmeddelandet varje dag, varannan dag, var tredje dag eller något annat intervall av dagar. Du kan också få det skickat varje veckodag.</li><li>**Vecka**: Skickar e-postmeddelandet varje vecka, annan vecka, var tredje vecka eller något annat veckointervall. Du kan också ange vilken veckodag den skickas.</li><li>**Månadsvis**: Anger intervallet i antal månader och du kan också välja dag i månaden som det skickas från, eller veckodag i en viss vecka i månaden.</li><li>**Årsvis**: Anger den dag på året som rapporten skickas, eller så kan du skicka en viss veckodag i vilken vecka som helst på året.</li><li>**Tid på dagen**: Gäller den tidszon som är kopplad till den valda rapportsviten.</li></ul> |
+| Alternativ för slutleverans | <ul><li>**Aldrig slut**: Anger inget slut.</li><li>**Sluta efter `value` förekomster**: Anger antalet förekomster innan leveransen avslutas.</li><li>**Slutar på**: Ange ett specifikt datum. Om du vill bearbeta data på samma datum som rapportdata, innehåller rapporten bara data som har placerats i databasen när rapporten skickas. Eftersom en fullständig behandling för en dag kan ta upp till 24 timmar, kanske fullständiga data inte är tillgängliga när rapporten skickas. För fullständiga data ska du alltid ange bearbetningstiden i 24 timmar efter rapportperiodens slut.</li></ul> |
 
 ## Skriva ut en rapport {#task_0F7CF6D6ED54462CAE4A793E271AF7E5}
 
-Så här skriver du ut en rapport:
+Skriva ut en rapport:
 
 1. Kör en rapport.
 1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Print]**.  ![](assets/print.png)
@@ -94,14 +93,14 @@ Hämta detaljerad information om en viss rapport i PDF, CSV, Excel eller Raw Dat
 
 1. Välj önskat format för rapporten:
 
-   * **[!UICONTROL PDF]**: Anger att rapporten hämtas till Adobe PDF, vilket gör att du kan dela rapporten med andra, oavsett vilket datorsystem mottagaren kör.
+   * **[!UICONTROL PDF]**: Anger att rapporten hämtas i Adobe PDF, vilket gör att du kan dela rapporten med andra, oavsett vilket datorsystem mottagaren kör.
    * **[!UICONTROL CSV]**: Anger att rapporten hämtas i [!DNL .csv] (kommaavgränsat värdeformat).
    * **[!UICONTROL Excel]**: Anger att rapporten hämtas i Microsoft Excel-format, vilket gör att du kan dela rapporten med andra som kan öppna den i ett kalkylprogram.
    * **[!UICONTROL Word]**: Anger att rapporten hämtas i Microsoft Word-format.
 
    >[!NOTE]
    >
-   >Om du använder ett av exportformaten i Raw-format för att hämta en rapport och sidnamnet är tomt, har Adobe Analytics förmodligen inte haft tillräckligt med tid för att bearbeta data. Ladda ned rapporten vid ett senare tillfälle.
+   >Om du använder ett av exportformaten i Raw-format för att hämta en rapport och sidnamnet är tomt, har Adobe Analytics förmodligen inte haft tillräckligt med tid för att bearbeta data. Ladda ned rapporten senare.
 
 ## Hantera schemalagda rapporter {#task_C17677C543454FF2B06D10EA5652DFBC}
 
@@ -138,7 +137,7 @@ Så här avbeställer du en schemalagd rapport:
 
    ![](assets/unsubscribe-email.png)
 
-1. Klicka på **[!UICONTROL click here]** länk bredvid **[!UICONTROL To cancel automatic delivery of this report]**.
+1. Klicka på **[!UICONTROL click here]** länk intill **[!UICONTROL To cancel automatic delivery of this report]**.
 
 1. Bekräfta att du vill avbryta rapportleveransen.
 
