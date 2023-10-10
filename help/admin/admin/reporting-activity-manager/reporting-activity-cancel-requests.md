@@ -2,9 +2,9 @@
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 title: Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren
 feature: Admin Tools
-source-git-commit: dc09510ea1d97c39d00df309faf85f90003b50fa
+source-git-commit: 4da5da34518c3fb7350799c185faed789ef5a22b
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
 ## Avbryt specifika begäranden
 
-Du kan välja specifika begäranden som du vill avbryta.
+Du kan avbryta enskilda begäranden som förbrukar en stor del av rapporteringskapaciteten.
 
 1. I Adobe Analytics går du till **[!UICONTROL Admin]** > **[!UICONTROL Reporting Activity Manager]**.
 
@@ -41,7 +41,7 @@ Du kan välja specifika begäranden som du vill avbryta.
 
 1. Välj [!UICONTROL **Avbryt begäranden**].
 
-   The [!UICONTROL **Avbryt x-rapportbegäranden**] visas.
+   The [!UICONTROL **Avbryt _x_ rapportförfrågningar**] visas.
 
 1. I meddelandefältet för annullering visas meddelandet som visas för användarna när deras begäranden avbryts. Ett standardmeddelande har angetts. Du kan uppdatera standardmeddelandet om du vill ha mer information.
 
@@ -76,7 +76,7 @@ Du kan avbryta alla begäranden som är kopplade till en eller flera användare.
 
 1. Välj [!UICONTROL **Avbryt begäranden**].
 
-   The [!UICONTROL **Avbryt x-rapportbegäranden från x-användare**] visas.
+   The [!UICONTROL **Avbryt _x_ rapportförfrågningar från x-användare**] visas.
 
 1. I meddelandefältet för annullering visas meddelandet som visas för användarna när deras begäranden avbryts. Ett standardmeddelande har angetts. Du kan uppdatera standardmeddelandet om du vill ha mer information.
 
@@ -111,7 +111,7 @@ Du kan avbryta alla begäranden som är kopplade till ett eller flera projekt.
 
 1. Välj [!UICONTROL **Avbryt begäranden**].
 
-   The [!UICONTROL **Avbryt x-rapportbegäranden från x-projekt**] visas.
+   The [!UICONTROL **Avbryt _x_ rapportbegäranden från x-projekt**] visas.
 
 1. I meddelandefältet för annullering visas meddelandet som visas för användarna när deras begäranden avbryts. Ett standardmeddelande har angetts. Du kan uppdatera standardmeddelandet om du vill ha mer information.
 
@@ -132,6 +132,6 @@ Du kan avbryta alla begäranden som är kopplade till ett eller flera projekt.
 
 ## Upplevelse när användare öppnar en avbruten rapport
 
-I Analysis Workspace visas följande meddelande för användare som försöker få åtkomst till en avbruten rapport:
+I Analysis Workspace visas följande meddelande när användare försöker få åtkomst till en rapport som har avbrutits av en administratör:
 
 ![cancel-user-notice](/help/admin/admin/assets/cancel-user-facing.png)
