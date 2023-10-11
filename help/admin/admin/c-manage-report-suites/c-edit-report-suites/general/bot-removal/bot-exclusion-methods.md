@@ -3,10 +3,10 @@ title: Jämförelse av olika metoder för att utesluta robotar
 description: Gör att du kan jämföra olika metoder för att utesluta stötar.
 exl-id: c54ba98a-b396-479e-bfe8-dc6211b26f61
 feature: Bot Removal
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 

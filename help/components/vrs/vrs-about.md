@@ -3,9 +3,9 @@ description: Virtuella rapportsviter segmenterar era Adobe Analytics-data så at
 title: Översikt över Virtual Report Suites
 feature: VRS
 exl-id: 45d18d14-d95a-42fe-b00a-cfce5f936e37
-source-git-commit: f48c7c404312562ad4f443af8e7c7643e5d3f17b
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '798'
 ht-degree: 2%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment.
 
-Många kunder har data som flödar in i ett globalt rapporteringsprogram, men har också data som flödar in i mindre rapporteringsprogram. De ställer in en variabel på flera rapportsviter och skickar data till mer än en rapportserie. Detta kallas *taggning för flera programsviter*, eller *bas-/överordnad rapportsviter*.
+Många kunder har data som flödar in i ett globalt rapporteringsprogram, men har också data som flödar in i mindre rapporteringsprogram. De ställer in en variabel på flera rapportsviter och skickar data till mer än en rapportserie. Detta kallas för *taggning för flera programsviter*, eller *bas-/överordnad rapportsviter*.
 
 Alla data kan till exempel samlas in i en rapportsserie, men sedan kan du skapa en sekundär rapportserie så att andra personer i företaget har tillgång till en del av informationen, men inte hela. Data kan delas upp efter region. Du kan ha olika webbplatser för olika länder. Andra exempel kan vara specifika varumärken som tillhör ett större företag, men som har sina egna marknadsföringsteam.
 
-A *virtuell rapportsvit* (VRS) kan ni återskapa detta förgreningskoncept med hjälp av segment i stället för flera rapportsviter. Data skickas till en rapportserie och delas sedan upp efter segment. Med hjälp av exemplet med flera varumärken kan du ange ett värde för varumärket som ett objekt tillhör. Med hjälp av segment kan du rapportera objekten som tilldelats varje säljprojekt. Var och en av dessa segment får en egen bild och skapar effektivt en ny rapportserie. Du skickar inte data specifikt till det segmentet, bara till den globala rapportsviten, men den fungerar i dina rapporter som om det vore en annan rapportserie.
+A *virtuell rapportsvit* kan du återskapa detta förgrenade koncept med hjälp av segment i stället för flera rapportsviter. Data skickas till en rapportserie och delas sedan upp efter segment. Med hjälp av exemplet med flera varumärken kan du ange ett värde för varumärket som ett objekt tillhör. Med hjälp av segment kan du rapportera objekten som tilldelats varje säljprojekt. Var och en av dessa segment får en egen bild och skapar effektivt en ny rapportserie. Du skickar inte data specifikt till det segmentet, bara till den globala rapportsviten, men den fungerar i dina rapporter som om det vore en annan rapportserie.
 
-En virtuell rapportsvit ärver de flesta tjänstenivåerna i basrapportsviten, som eVar, bearbetningsregler, klassificeringar osv. Följande inställningar ärvs INTE:
+En virtuell rapportsvit ärver de flesta tjänstenivåerna i basrapportsviten, till exempel eVar, bearbetningsregler, klassificeringar osv. Följande inställningar ärvs INTE:
 
 * Rapportsvit-ID (RSID)
 * Rapportsvitens namn
@@ -45,16 +45,16 @@ Virtuella rapportsviter har följande begränsningar:
 
 * Eventuella begränsningar för segment gäller även för virtuella rapportsviter
 
-   En virtuell rapportsvit är inget annat än ett segment som används i en rapportsvit. Eftersom varje rapportsvit har sin egen Data warehouse och sin egen datafeed, ger flera rapportsviter vissa fördelar som segment inte ger.
+  En virtuell rapportsvit är inget annat än ett segment som används i en rapportsvit. Eftersom varje rapportsvit har sin egen Data Warehouse och sin egen datafeed, ger flera rapportsviter vissa fördelar som segment inte har.
 * Realtidsrapport
 * Inställningar och variabelnamn kan inte anpassas på samma sätt i en fullständig rapportserie
 
-## Virtual Report Suites vs. Multi-suite Tagging {#section_317E4D21CCD74BC38166D2F57D214F78}
+## Virtuella rapportsviter jämfört med märkning för flera programsviter {#section_317E4D21CCD74BC38166D2F57D214F78}
 
-| Funktion | Virtual Report Suite | Taggar för flera programsviter |
+| Funktion | Virtuell rapportsvit | Taggar för flera programsviter |
 |--- |--- |--- |
 | Ger realtidsrapportering eller&quot;aktuella data&quot;-rapportering | Nej | Ja |
-| Fungerar i alla analysverktyg (Analysis Workspace, Report Builder, etc.) | Ja. **Obs!** Du kan bara redigera och identifiera dem som virtuella rapportsviter i [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Virtual Report Suites]. Du kan dock välja dem i listrutorna för rapportsviten i de andra verktygen.<p>**Viktigt**: Virtuella rapportsviter med bearbetning av rapporttid och variabelanpassning stöds för närvarande inte i Adobe Report Builder. | Ja |
+| Fungerar i alla analysverktyg (Analysis Workspace, Report Builder, etc.) | Ja. **Obs!** Du kan bara redigera och identifiera dem som virtuella rapportsviter i [!UICONTROL Analytics] > [!UICONTROL Components] > [!UICONTROL Virtual report suites]. Du kan dock välja dem i listrutorna för rapportsviten i de andra verktygen.<p>**Viktigt**: Virtuella rapportsviter med bearbetning av rapporttid och variabelanpassning stöds inte i Adobe Report Builder. | Ja |
 | Kan överföra data till den (via klassificeringar, dataflöden osv.) | Nej | Ja |
 | Stöder skapande av DL-rapporter, bokmärken, instrumentpaneler, mål, aviseringar, segment, beräknade mätvärden... | Ja | Ja |
 | Kan läggas till individuellt i behörighetsgrupper | Ja | Ja |

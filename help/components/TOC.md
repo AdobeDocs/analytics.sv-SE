@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Komponenthandbok för Analytics
 breadcrumb-title: Komponenthandbok
 user-guide-description: Hantera data med komponenter som segment, beräknade värden, virtuella rapportsviter, marknadsföringskanaler och klassificeringar. Lär dig mer om Analytics över flera enheter.
-source-git-commit: f4032ac06c9057635dd0526ad046c4640c6350bf
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 42%
+source-wordcount: '758'
+ht-degree: 40%
 
 ---
 
@@ -213,15 +213,15 @@ ht-degree: 42%
       + [Beräknade mätvärden: rollbaserade behörigheter](c-calcmetrics/cm-role-based-rights.md)
       + [Summor för beräknade mätvärden](c-calcmetrics/cm-totals.md)
       + [Standardberäknade värden](c-calcmetrics/cm-reference/default-calcmetrics.md)
-+ Virtual Report Suites {#virtual-report-suites}
++ Virtuella rapportsviter {#virtual-report-suites}
    + [Översikt över Virtual Report Suites](vrs/vrs-about.md)
    + [Virtuell rapportsvit - komponentkurva](vrs/vrs-components.md)
    + [Sammanhangsmedvetna sessioner](vrs/vrs-mobile-visit-processing.md)
    + [Bearbetning av rapporttid](vrs/vrs-report-time-processing.md)
    + [A4T-överväganden](vrs/vrs-a4t.md)
-   + [Vanliga frågor om VRS](vrs/vrs-faq.md)
-   + [VRS och global/multisvitstaggning](vrs/vrs-considerations.md)
-   + VRS-arbetsflöde {#vrs-workflow}
+   + [Vanliga frågor om virtuella rapportsviter](vrs/vrs-faq.md)
+   + [Virtuella rapportsviter och taggningsfrågor för globala/flera programsviter](vrs/vrs-considerations.md)
+   + Arbetsflöde för Virtual Report Suites {#vrs-workflow}
       + [Arbetsflöde för Virtual Report Suites](vrs/c-workflow-vrs/vrs-workflow.md)
       + [Skapa virtuella rapportsviter](vrs/c-workflow-vrs/vrs-create.md)
       + [Hantera virtuella rapportsviter](vrs/c-workflow-vrs/vrs-manage.md)
@@ -233,7 +233,7 @@ ht-degree: 42%
    + [Ställ in enhetsövergripande analys](cda/setup.md)
    + [Så här spelar du upp](cda/replay.md)
    + [CDA Workspace-mall](cda/workspace-template.md)
-   + [Begränsa ett VRS till vissa datum](cda/limit-vrs-date.md)
+   + [Begränsa ett virtuellt rapportpaket till vissa datum](cda/limit-vrs-date.md)
    + [Vanliga frågor om enhetsövergripande analys](cda/faq.md)
 + Larm {#alerts}
    + [Intelligenta aviseringar](c-alerts/intellligent-alerts.md)

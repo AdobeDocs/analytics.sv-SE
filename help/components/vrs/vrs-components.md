@@ -1,16 +1,16 @@
 ---
 description: Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
-title: Komponentval för Virtual Report Suites
+title: Komponentstrukturering för virtuell rapportserie
 feature: VRS
 exl-id: 19163829-328a-4064-b1be-8c09d1d94a0d
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 9%
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
-# Komponentval för Virtual Report Suites
+# Komponentstrukturering för virtuell rapportserie
 
 Virtuella rapportsviter kan struktureras så att de inkluderar och exkluderar komponenter.i Analysis Workspace.
 
@@ -20,14 +20,14 @@ Här är en video om komponenturval:
 
 >[!NOTE]
 >
->Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [uppdaterad kursupplevelse](/help/analyze/analysis-workspace/curate-share/curate.md) ger mer detaljerad kontroll över vilka komponenter som är synliga.
+>Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och utvalda virtuella rapportsviter. Tidigare kunde vem som helst se komponenter som inte är kuraterade genom att klicka **[!UICONTROL Show all Components]**. The [uppdaterad kursupplevelse](/help/analyze/analysis-workspace/curate-share/curate.md) ger mer detaljerad kontroll över vilka komponenter som är synliga.
 
 Om du vill aktivera komponenturval
 
-1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual Report Suites]** > **[!UICONTROL Create new virtual report suite]**.
+1. Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual report suites]** > **[!UICONTROL Create new virtual report suite]**.
 1. När du har definierat **[!UICONTROL Settings]** klickar du på **[!UICONTROL Components]** -fliken.
 
-1. Markera kryssrutan **[!UICONTROL Enable Customization of Virtual Report Suite Components]**:
+1. Markera kryssrutan **[!UICONTROL Enable Customization of Virtual report suite components]**:
 
    ![](assets/vrs-enable.png)
 
@@ -40,7 +40,6 @@ Om du vill aktivera komponenturval
    >* [!UICONTROL Report Builder]
    >* [!UICONTROL Activity Map]
    >* API för Analytics-rapportering
-
 
    När du har markerat det här alternativet kan du lägga till de komponenter som du vill ska ingå i den virtuella rapportsviten genom att dra de tillämpliga komponenterna från kolumnen&quot;Uteslutna komponenter&quot; till kolumnen&quot;inkluderade komponenter&quot;. De komponenter som kan inkluderas och exkluderas är:
 

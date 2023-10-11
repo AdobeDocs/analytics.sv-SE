@@ -5,10 +5,10 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '8155'
-ht-degree: 86%
+source-wordcount: '8156'
+ht-degree: 85%
 
 ---
 
@@ -36,7 +36,7 @@ Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.ad
 
 | Funktion | Måldatum | Beskrivning |
 | --- | --- | --- |
-| Bild-URL:er | 14 januari 2021 | Du kan lägga till bilder i arbetsyteprojekt genom att referera till en offentlig bild-URL. |
+| Bild-URL | 14 januari 2021 | Du kan lägga till bilder i arbetsyteprojekt genom att referera till en offentlig bild-URL. |
 | Kombinerad käll- och inställningshanterare för visualiseringar | 14 januari 2021 | The [!UICONTROL Data Source] hanteraren (punkt) och inställningshanteraren (kugghjulet) för visualiseringar har kombinerats till en enda leverantör, så att du enkelt kan hantera källan och inställningarna från samma plats. |
 
 ## Oktober 2020
@@ -52,7 +52,7 @@ Se [Versionsinformation för Adobe Experience Cloud](https://experienceleague.ad
 | --- | --- |
 | [Ladda ned 50 000 artiklar för en enda dimension](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html#download-items) | Nu kan du ladda ned 50 000 objekt för en enda dimension i en friformstabell med segment och filter. Det ger dig åtkomst till mer än de 400 dataraderna utanför Analysis Workspace. |
 | [Förbättringar av linjevisualisering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/line.html) | <ul><li>Du kan visa eller dölja X-axeln och Y-axeln för alla [!UICONTROL Line] visualisering. Detta kan vara praktiskt när du [!UICONTROL Line] visualiseringar är mer kompakta.</li><li>Du kan lägga över en etikett för minsta och högsta värde på alla linjevisualiseringar för att snabbt markera toppar och dalar i ett mätresultat.</li><li>Du kan täcka över olika regressionstrendlinjer på alla linjevisualiseringar för att lättare se trenden i data. Alternativen inkluderar [!UICONTROL Linear], [!UICONTROL Logarithmic], [!UICONTROL Exponential], [!UICONTROL Power] och [!UICONTROL Quadratic].</li></ul> |
-| Nya datumintervall | Vi har lagt till fem nya datumintervall så att du kan välja mellan datumintervall som inte innehåller data för delar av dagen från idag: De senaste 7 fullständiga dagarna, de senaste 14 fullständiga dagarna, de senaste 30 fullständiga dagarna, de senaste 60 fullständiga dagarna, de senaste 90 fullständiga dagarna |
+| Nya datumintervall | Vi har lagt till fem nya datumintervall så att du kan välja mellan datumintervall som inte innehåller data för delar av dagen från idag: Senaste 7 fullständiga dagarna, Senaste 14 fullständiga dagarna, Senaste 30 fullständiga dagarna, Senaste 60 fullständiga dagarna, Senaste 90 fullständiga dagarna |
 
 ## Augusti 2020
 
@@ -88,7 +88,7 @@ Nya funktioner släpptes 21 maj 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| Bygg frihandstabeller automatiskt från ett tomt läge | Tidigare gick det inte att släppa komponenter direkt i ett tomt projekt eller en tom panel. du var tvungen att lägga till en friformstabell först. Nu kan du släppa komponenter direkt i ett tomt projekt eller en tom panel, och en frihandstabell skapas automatiskt i det format som rekommenderas. Dessutom har vi förbättrat hur blandade komponenttyper (som dimensioner och mätvärden) hanteras när de släpps i en tom frihandstabell tillsammans. |
+| Bygg frihandstabeller automatiskt från ett tomt läge | Tidigare kunde du inte släppa komponenter direkt i ett tomt projekt eller en tom panel. Du var först tvungen att lägga till en frihandstabell. Nu kan du släppa komponenter direkt i ett tomt projekt eller en tom panel, och en frihandstabell skapas automatiskt i det format som rekommenderas. Dessutom har vi förbättrat hur blandade komponenttyper (som dimensioner och mätvärden) hanteras när de släpps i en tom frihandstabell tillsammans. |
 | Tillgänglighetsförbättringar | Adobe Analytics-teamet har gjort flera tillgänglighetsförbättringar för Analysis Workspace, och har bland annat förbättrat stöd för tangentbordsnavigering, färgkontrast och skärmläsare. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/aw-accessibility.html) |
 
 ## April 2020
@@ -114,7 +114,7 @@ Nya funktioner som släpptes 20 februari 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| Ny Workspace-mall för organisationer som använder analys över olika enheter | Den här mallen visar hur effektivt funktionen för analys över olika enheter sammanfogar besök och utbildar dig om mått och mätvärden som är specifika för just den här analysen. En rapportsvit som har analys över olika enheter krävs. Se [Konfigurera enhetsövergripande analys](/help/components/cda/setup.md) för mer information. |
+| Ny Workspace-mall för organisationer som använder analys över olika enheter | Den här mallen visar hur effektivt funktionen för analys över olika enheter sammanfogar besök och utbildar dig om mått och mätvärden som är specifika för just den här analysen. En rapportsvit som har analys över olika enheter krävs. Se [Ställ in enhetsövergripande analys](/help/components/cda/setup.md) för mer information. |
 | Nya kortkommandon i Workspace | <ul><li>Visa/dölj alla paneler: `alt + m`</li><li>Visa/dölj aktiv panel: `alt + ctrl + m`</li><li>Sök i vänster list: `ctrl + /`</li><li>Gå till nästa panel: `alt + Right Key`</li><li>Gå till föregående panel: `alt + Left Key`</li></ul>[Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html) |
 | Andra förbättringar av Workspace | <ul><li>När en panel eller visualisering släpps i Workspace växlar den vänstra listen nu automatiskt till komponenter för ett smidigare arbetsflöde.</li><li>Mallkomponenter kan nu användas direkt (till exempel taggas, anges som favoriter eller godkännas).</li><li>Filtrerade mätvärdes- och segmentlistor har en plusknapp för att lägga till en ny komponent om du inte hittar det du behöver.</li></ul> |
 | Felsökare för Workspace | Felsökaren för Workspace har lagts till på menyn Hjälp för att göra det lättare att aktivera den för felsökning av begäranden. [Läs mer …](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md) |
@@ -196,7 +196,7 @@ Nya funktioner och förbättringar som släpptes 1 november 2018.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| [Strukturering av virtuella rapportsviter (VRS) och projekt – förbättringar](/help/analyze/analysis-workspace/curate-share/curate.md) | De här ändringarna infördes i själva verket i oktober 2018. Vi har ändrat vilka komponenter som administratörer och icke-administratörer kan se i strukturerade Workspace-projekt och virtuella rapportsviter (VRS). <br> Tidigare kunde alla se icke-strukturerade komponenter när de klickade på Visa alla komponenter. Den här uppdateringen ger bättre kontroll över vilka komponenter som är synliga.</br> |
+| [Virtuell rapportsvit och projektstrukturering - förbättringar](/help/analyze/analysis-workspace/curate-share/curate.md) | De här ändringarna infördes i själva verket i oktober 2018. Ändringar har gjorts som komponentadministratörer och icke-administratörer kan se i förvaltade arbetsyteprojekt och utvalda virtuella rapportsviter. <br> Tidigare kunde alla se icke-strukturerade komponenter när de klickade på Visa alla komponenter. Den här uppdateringen ger bättre kontroll över vilka komponenter som är synliga.</br> |
 
 ## Oktober 2018
 
@@ -204,7 +204,7 @@ Nya funktioner och förbättringar som släpptes 11 oktober 2018.
 
 | Funktion | Beskrivning |
 | --- | --- |
-| Hantering av nedrullningsbara paneler | Några ändringar görs i hanteringen av panellistrutor. När du högerklickar på en nedrullningsbar meny kan du nu ta bort den, ta bort en etikett (om en etikett visas) eller lägga till en etikett (om ingen etikett visas). |
+| Panelhantering | Några ändringar görs i hanteringen av panellistrutor. När du högerklickar på en nedrullningsbar meny kan du nu ta bort den, ta bort en etikett (om en etikett visas) eller lägga till en etikett (om ingen etikett visas). |
 | Länkar i verktygstips för paneler och visualiseringar | Länkar till relevanta videoklipp och dokumentation till paneler och visualiseringstips läggs till. |
 
 ## September 2018
@@ -372,7 +372,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
   </tr>
   <tr>
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md"  > Ny radinställning </a> </p> </td>
-   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas med resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td>
+   <td colname="col2"> <p>Med den nya inställningen <span class="uicontrol">Beräkna procent per rad</span> tvingas friformstabellen att beräkna cellprocenten för raden i stället för kolumnen. Detta är särskilt användbart när du vill ändra procentvärden, t.ex. hur en dimensionspost blandas mot resten över tiden. Det är aktiverat som standard när du klickar på ikonen <span class="uicontrol">Visualisera</span>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md#section_D3BB5042A92245D8BF6BCF072C66624B"  >Visualiseringsinställning för ”100 % staplad”</a> </p> </td>
@@ -537,7 +537,7 @@ Nya funktioner och förbättringar som släpptes 18 januari 2018.
   </tr>
   <tr>
    <td colname="col1"> <p>Ändringar av händelsenummer, evariabelnummer och egenskapsnummer </p> </td>
-   <td colname="col2"> <p>Händelsenummer, evariabelnummer och egenskapsnummer som lades till i måttnamnen i den vänstra listen (2017) visas bara när du <b>söker</b> efter komponenten. </p> <p>(Gäller även verktyget för virtuella rapportsviter (VRS).) </p> </td>
+   <td colname="col2"> <p>Händelsenummer, evariabelnummer och egenskapsnummer som lades till i måttnamnen i den vänstra listen (2017) visas bara när du <b>söker</b> efter komponenten. </p> <p>(Gäller även för svitbyggare för virtuella rapporter.) </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Ändringar av ingen/ospecificerad </p> </td>

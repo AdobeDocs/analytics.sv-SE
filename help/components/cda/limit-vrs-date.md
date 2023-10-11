@@ -1,24 +1,24 @@
 ---
-title: Begränsa ett VRS till vissa datum
-description: Lär dig hur du begränsar ett VRS-datumintervall så att det bara fokuserar på sammanslagna data.
+title: Begränsa ett virtuellt rapportpaket till vissa datum
+description: Lär dig hur du begränsar ett datumintervall för en virtuell rapportserie så att det bara fokuserar på sammanslagna data.
 exl-id: 421d101d-8c64-47f7-b5a2-da039889f663
 feature: CDA
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# Begränsa ett VRS till vissa datum
+# Begränsa ett virtuellt rapportpaket till vissa datum
 
-När vi aktiverar stygn börjar stygn på ett visst datum. Låt oss anta att datumet är 1 juni. CDA VRS kommer att innehålla oförsydda data före den 1 juni. Du kanske vill dölja data i det virtuella systemet före 1 juni så att din analys kan fokusera på datumintervall efter sammanfogningen.
+När vi aktiverar stygn börjar stygn på ett visst datum. Låt oss anta att datumet är 1 juni. Den virtuella CDA-rapportsviten kommer att innehålla icke sammansatta data före den 1 juni. Du kanske vill dölja alla data i den virtuella rapportsviten före 1 juni så att analysen kan fokusera på datumintervall efter att sammanfogningen påbörjats.
 
-Du kan begränsa VRS-data till vissa datum genom att göra följande:
+Du kan begränsa den virtuella rapportsvitens data till vissa datum genom att göra följande:
 
-## Steg 1: Skapa VRS med rullande datumintervall
+## Steg 1: Skapa en virtuell rapportsvit med ett rullande datumintervall
 
-När du ställer in VRS, under Komponenter, lägger du till i ett datumintervall som har en fast start med ett rullande datumintervall. Den fasta början bör vara dagen då sammanfogningen började.
+När du konfigurerar den virtuella rapportsviten, under Komponenter, lägger du till i ett datumintervall som har en fast start med ett rullande datumintervall. Den fasta början bör vara dagen då sammanfogningen började.
 
 ![](assets/rolling-daily.png)
 
@@ -30,11 +30,11 @@ Orsaken till&quot;exclude exclude&quot; är att datumintervall är avsedda att �
 
 ![](assets/exclude-exclude.png)
 
-## Steg 3: Använd det här segmentet på ditt CDA VRS
+## Steg 3: Använd det här segmentet i den virtuella rapportsviten för analyser över olika enheter
 
 ![](assets/apply-segment.png)
 
-## Steg 4: Se resultaten av rapporteringen
+## Steg 4: Se resultaten i rapporteringen
 
 Observera att rapporteringen nu börjar på det önskade datumet, samma dag som sammanslagningen först implementerades:
 

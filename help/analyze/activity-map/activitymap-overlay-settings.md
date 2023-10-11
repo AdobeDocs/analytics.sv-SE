@@ -5,7 +5,7 @@ uuid: 42a0309e-3efc-4506-989b-09b6fe419423
 feature: Activity Map
 role: User, Admin
 exl-id: 65c9c690-81e0-4f0f-989d-586d247ed380
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 2%
@@ -25,13 +25,13 @@ Gå till inställningspanelen Activity Map genom att klicka på kugghjulsikonen 
 | Inställning | Beskrivning |
 | --- | --- |
 | **[!UICONTROL Companies]** | Välj tillämpligt inloggningsföretag. |
-| **[!UICONTROL Report Suite]** | Listan med rapportsviter som är tillgängliga för dig är inte längre begränsad till de rapportsviter som definieras i webbsidestaggen. Nu kan du ersätta den valda rapportsviten (som motsvarar en av taggarna på sidan) med en annan rapportserie. Den här nya rapportsviten behöver inte länkas till en tagg på sidan. Om du ändrar den markerade rapportsviten i Activity Map Settings kommer alla berörda analysrapporter att uppdateras vid Spara-processen.<br>**Viktigt**: [!UICONTROL Virtual Report Suites] är inte kompatibla med [!UICONTROL Live Mode], endast med [!UICONTROL Standard Mode]. Om du är [!UICONTROL Live Mode] för en Standard Report Suite, men välj en [!UICONTROL Virtual Report Suite] i den här dialogrutan när du klickar **[!UICONTROL OK]** Här visas standardläget. Dessutom initieras kalenderkontrollen om för att matcha rapportsvitens kalendertyp (gregoriansk, återförsäljning, anpassad...). |
+| **[!UICONTROL Report Suite]** | Listan med rapportsviter som är tillgängliga för dig är inte längre begränsad till de rapportsviter som definieras i webbsidestaggen. Nu kan du ersätta den valda rapportsviten (som motsvarar en av taggarna på sidan) med en annan rapportserie. Den här nya rapportsviten behöver inte länkas till en tagg på sidan. Om du ändrar den markerade rapportsviten i Activity Map Settings kommer alla berörda analysrapporter att uppdateras vid Spara-processen.<br>**Viktigt**: [!UICONTROL Virtual report suites] är inte kompatibla med [!UICONTROL Live Mode], endast med [!UICONTROL Standard Mode]. Om du är [!UICONTROL Live Mode] för en Standard Report Suite, men välj en [!UICONTROL Virtual report suite] i den här dialogrutan när du klickar **[!UICONTROL OK]** Här visas standardläget. Dessutom initieras kalenderkontrollen om för att matcha rapportsvitens kalendertyp (gregoriansk, återförsäljning, anpassad...). |
 | **[!UICONTROL Page Name]** | Den sida som de här inställningarna gäller för. |
 | **[!UICONTROL Language]** | Valet motsvarar de språk som erbjuds för Adobe Analytics. |
-| **[!UICONTROL Label Overlays With]** | <ul><li>**[!UICONTROL No Label]**: endast för övertoningsövertäckningen. I det här fallet förmedlar övertäckningens färg en anledning till länkens rankning</li><li>**[!UICONTROL Value]**: länkens totala rådatamått</li><li>**[!UICONTROL Percent]**: procentandelen av måttet för länken för sidans totala mått.</li><li>**[!UICONTROL Rank]**: Länkens rangordning för alla länkar på den återgivna sidan</li></ul> |
+| **[!UICONTROL Label Overlays With]** | <ul><li>**[!UICONTROL No Label]**: gäller endast för övertoningsövertäckningen. I det här fallet förmedlar övertäckningens färg en anledning till länkens rankning</li><li>**[!UICONTROL Value]**: den totala mängden rådatamått för länken</li><li>**[!UICONTROL Percent]**: procent av måttet för den här länken på sidans totala mått.</li><li>**[!UICONTROL Rank]**: rangordning av den här länken för alla länkar som finns på den återgivna sidan</li></ul> |
 | **[!UICONTROL Label Font Size]** | Gör att du kan öka/minska teckenstorleken för övertäckningsetiketten med ett reglage för bättre läsbarhet. |
 | **[!UICONTROL Gradient/Bubble Color]** | Om du vill visa länkrankningar för övertoning eller bubbelövertäckning väljer du bland ett färgintervall. |
-| **[!UICONTROL Color Gradient Based On]** | <ul><li>**[!UICONTROL Top 30 Rankings]**: Färgintensiteten normaliseras för de 30 översta värdena.</li><li>**[!UICONTROL Absolute Metric Value]**: Färgintensiteten är en funktion av det absoluta måttvärdet.</li></ul> |
+| **[!UICONTROL Color Gradient Based On]** | <ul><li>**[!UICONTROL Top 30 Rankings]**: Färgintensiteten normaliseras för de 30 högsta värdena.</li><li>**[!UICONTROL Absolute Metric Value]**: Färgintensiteten är en funktion av det absoluta måttvärdet.</li></ul> |
 | **[!UICONTROL Gradient Transparency]** | Välj genomskinlighetsnivå för övertoningsövertäckningarna. Den här inställningen påverkar inte [!UICONTROL Bubble] övertäckningar. |
 
 ## Standardinställningar {#section_24DB95376E1A448494ECF3F57743FC19}

@@ -5,7 +5,7 @@ uuid: 8b97b56e-ff20-4a8b-8c37-7f7b45c9a86b
 feature: Activity Map
 role: User, Admin
 exl-id: 2364e7b0-443a-49a8-b084-403501f52360
-source-git-commit: 99a6144be155e17a8252e5461b2d6a96e5be641d
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 Activity Map har två grundläggande sätt att komplettera rapporteringen av sidaktiviteter.
 
-* Standardläge, där [Länkar på sidrapport](/help/analyze/activity-map/activitymap-links-report.md)visar länkdata från en dag till flera dagar, aggregerade över hela datumintervallet.
+* Standardläge, i vilket [Länkar på sidrapport](/help/analyze/activity-map/activitymap-links-report.md)visar länkdata från en dag till flera dagar, aggregerade över hela datumintervallet.
 * I Live-läget visas aktivitetstrender i realtid.
 
 Du kan växla mellan de två lägena genom att klicka på knappen Läge i verktygsfältet.
@@ -31,7 +31,7 @@ I det här läget tilldelas Commerce-statistik som inte har &quot;Deltagande&quo
 
 F: Vad händer om en sida har länkar med samma länknamn i olika regioner? Tar de två länkarna emot krediter separat eftersom de har olika regioner men samma länknamn på en sida?
 
-S: Det beror på hur du sammanställer länkdata. I Activity Map tittar vi på Link ID|Region för en viss sida, så de allokerade data skulle vara för kombinationen Link ID|Region. I det här fallet skulle länken|regionen vara distinkt eftersom den skiljer sig åt, och därför kommer eventuella allokerade intäkter för den första länken|regionen att skilja sig från alla allokerade intäkter för den andra länken. Men i Adobe Analytics-gränssnittet kan du bara titta på länk-ID-rapporten (i stället för Länk|Region-rapporten) för en viss sida (sidan delas upp efter Länk). I så fall skulle intäkterna läggas samman i båda regionerna.
+S: Det beror på hur du sammanställer länkdata. I Activity Map tittar vi på Link ID|Region för en viss sida, så att de allokerade data är för kombinationen Link ID|Region. I det här fallet skulle länken|regionen vara distinkt eftersom den skiljer sig åt, och därför kommer eventuella allokerade intäkter för den första länken|regionen att skilja sig från alla allokerade intäkter för den andra länken. Men i Adobe Analytics-gränssnittet kan du bara titta på länk-ID-rapporten (i stället för Länk|Region-rapporten) för en viss sida (sidan delas upp efter Länk). I så fall skulle intäkterna aggregeras mellan de båda regionerna.
 
 ## Live-läge {#section_D619B77D89A840F0B1C2DEA2715A516A}
 
@@ -41,6 +41,6 @@ Live-läget svarar på behoven hos förlag. Dessa organisationer måste övervak
 
 >[!IMPORTANT]
 >
->Virtuella rapportsviter är inte kompatibla med Live-läge, endast med standardläge.
+>Virtuella rapportsviter är inte kompatibla med Live-läge, bara med standardläge.
 
 ![](assets/live_mode.png)

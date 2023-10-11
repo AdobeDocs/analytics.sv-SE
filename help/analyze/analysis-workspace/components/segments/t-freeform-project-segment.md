@@ -4,9 +4,9 @@ title: Segment
 feature: Segmentation
 role: User, Admin
 exl-id: 67112e13-4d0a-4d77-be50-496c3d28779c
-source-git-commit: f2a22aa71c928be30d365fcea71c8fb42efc3919
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 1%
 
 Du kan skapa olika typer av segment i Workspace, beroende på hur komplexa de behöver vara, om de bara ska gälla för det här projektet osv. Här följer en sammanfattning av segmenttyper:
 
-| Segmenttyp | Skapad var? | Tillämpligt var? | När ska användas |
+| Segmenttyp | Skapad var? | Tillämpligt var? | När ska du använda |
 | --- | --- | --- | --- |
 | Segment i komponentlista | Klicka på +, vilket tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) | Alla arbetsyteprojekt | För mer komplexa segment, sekventiella segment |
-| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för segment med en regel (med dra-och-släpp) eller för att lägga till/redigera flera regler (genom att klicka på segmentikonen) |
+| Snabbsegment | [Bygg snabbt segment](/help/analyze/analysis-workspace/components/segments/quick-segments.md) | Endast projekt, men du kan spara och lägga till i segmentlistan. | Kan användas för segment med en regel (med dra och släpp) eller för att lägga till/redigera flera regler (genom att klicka på segmentikonen) |
 | Beräknat mätningsbaserat segment | [Bygg beräknade mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Till individuellt beräknat mått | Använd segment i måttdefinitionen |
-| VRS-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i VRS-definitionen |
+| Virtuellt rapportsuite-baserat segment | [Virtuell Report Suite Builder](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-workflow/vrs-create.html) | Till enskild virtuell rapportsvit | Använd segment i definitionen för den virtuella rapportsviten |
 
 ## Videor
 
@@ -54,7 +54,7 @@ Segmentspåret under komponentmenyn visas
 
 Om du vill skapa ett segment av den här typen har du två alternativ. Bägge tar dig till [Segment Builder](/help/components/segmentation/segmentation-workflow/seg-build.md) i Adobe Analytics, där du hittar mer information.
 
-* Klicka på plustecknet (+) bredvid den vänstra listen [!UICONTROL Segments]:
+* Klicka på plustecknet (+) intill vänster [!UICONTROL Segments]:
 
 ![](assets/create-seg.png)
 
@@ -71,7 +71,7 @@ Det finns flera andra metoder för att tillämpa segment i frihandsprojekt.
 
 | Åtgärd | Beskrivning |
 |--- |--- |
-| Skapa segment från markering | Skapa ett textbundet segment. Det här segmentet gäller bara det öppna projektet och sparas inte som ett Analytics-segment. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka *Skapa segment från markering*. |
+| Skapa segment från markering | Skapa ett textbundet segment. Det här segmentet gäller bara det öppna projektet och sparas inte som ett Analytics-segment. 1. Markera rader.  2. Högerklicka på markeringen.  3. Klicka på *Skapa segment från markering*. |
 | Komponenter > Nytt segment | Visar segmentbyggaren. Se [Segment Builder](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html) för mer information om segmentering. |
 | Dela > Dela projekt eller Dela > Kuratera projektdata | I [Kuratera och dela](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html#concept_4A9726927E7C44AFA260E2BB2721AFC6), får du lära dig hur segment som du tillämpar på projektet är tillgängliga i en delad analys för mottagaren. |
 | Använd segment som Dimensioner | Video: [Använda segment som Dimensioner i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html) |

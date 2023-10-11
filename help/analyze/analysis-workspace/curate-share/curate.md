@@ -5,16 +5,16 @@ title: Kuratprojekt
 feature: Curate and Share
 role: User, Admin
 exl-id: 5e23be83-586a-4543-9be9-65c631b8b0b7
-source-git-commit: b31daf32f6101ffcbf68865f768d386cceffbd98
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Kuratprojekt
 
-Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderas innan du delar ett projekt.
+Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderat steg innan du delar ett projekt.
 
 >[!NOTE]
 > Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via Adobe Experience Cloud Admin Console. Curation är ett sekundärt filter.
@@ -41,7 +41,7 @@ När en mottagare öppnar ett välstrukturerat projekt visas endast den urval av
 
 ![](assets/curate-project.png)
 
-## Ta bort projekturval
+## Ta bort projektstrukturering
 
 Så här tar du bort projektstrukturering och återställer alla komponenter i den vänstra listen:
 
@@ -49,26 +49,26 @@ Så här tar du bort projektstrukturering och återställer alla komponenter i d
 1. Klicka på **[!UICONTROL Remove Curation]**.
 1. Klicka på **[!UICONTROL Done]**.
 
-## VRS-kuration (Virtual Report Suite)
+## Vuxen rapportsvitens urval
 
-Om du vill använda kurser på rapportsvitnivå så att de gäller för många projekt samtidigt kan du [kuratera komponenter i en VRS (Virtual Report Suite)](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html).
+Om du vill använda kurser på rapportsvitnivå så att de gäller för många projekt samtidigt kan du [strukturera komponenter i en virtuell rapportsserie](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-components.html).
 
 >[!NOTE]
-> VRS-kurering används alltid före projektkurering. Detta innebär att även om ditt kuraterade projekt innehåller vissa komponenter, kommer de att filtreras bort om det aktuella VRS inte innehåller dem.
+> Vuxenkurering används alltid innan projektet struktureras. Detta innebär att även om ditt kuraterade projekt innehåller vissa komponenter, så kommer de att filtreras bort om de inte ingår i den kuraterade virtuella rapportsviten.
 
 ## Visa alla komponenter, alternativ
 
-I ett välstrukturerat projekt eller VRS kan mottagaren välja att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
+I ett välstrukturerat projekt eller en virtuell rapportserie kan mottagaren välja att **[!UICONTROL Show All]** komponenter i den vänstra listen. [!UICONTROL Show All] visar olika uppsättningar av komponenter, beroende på:
 
 * Användarens behörighetsnivå (admin eller icke-admin)
 * Projektroll (ägare/redigerare eller inte)
-* Typ av kuration som används (VRS eller projekt)
+* Typ av kuration som används (Virtual Report SuiteS eller Project)
 * Komponenter som ägs av eller delas med användaren. Ägda/delade komponenter omfattar segment, beräknade värden och datumintervall. De innehåller inte implementerade komponenter som eVars, props och anpassade händelser.
 
 Obs! Roller som inte är administratörsvy har inte åtkomst till den vänstra listen i ett projekt, så de har utelämnats från tabellen nedan.
 
 | Kurvtyp | Administratörer | Projektägare eller redigeringsroll som inte är administratör | Dubblettroll som inte är administratör |
 |---|---|---|---|
-| Kuraterad VRS | Alla VRS-komponenter som inte är kuraterade | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem |
+| Kuraterad virtuell rapportsvit | Alla komponenter i den virtuella rapportsviten som inte är förvaltade | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem |
 | Kuraterat projekt | Alla projektkomponenter som inte är kuraterade | Alla projektkomponenter som inte är kuraterade | Ej förvaltade projektkomponenter som den här rollen äger eller som har delats med dem |
-| Kuraterat projekt i ett kuraterat VRS | Alla komponenter som inte är kuraterade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated VRS Components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade VRS-komponenter som den här rollen äger eller som har delats med dem | Icke-förvaltat VRS och projektkomponenter som den här rollen äger eller har delats med dem |
+| Kuraterat projekt i en Curated Virtual Report Suite | Alla komponenter som inte är kuraterade, visas under **[!UICONTROL Non-Curated Project Components]** och **[!UICONTROL Non-Curated Virtual report suite components]** | Alla icke-förvaltade projektkomponenter OCH icke-förvaltade virtuella rapportsvitkomponenter som den här rollen äger eller som har delats med dem | Virtuellt rapportpaket och projektkomponenter som den här rollen äger eller som har delats med dem är inte förvaltade |

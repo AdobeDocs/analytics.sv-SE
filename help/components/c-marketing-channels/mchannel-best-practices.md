@@ -3,7 +3,7 @@ title: Bästa tillvägagångssätt för att implementera Adobe Analytics Marketi
 description: Uppdaterad bästa praxis för användning av marknadsföringskanaler med Attribution IQ och Customer Journey Analytics
 feature: Marketing Channels
 exl-id: a0ab818d-7165-4f34-bc43-1ed8d6215800
-source-git-commit: 57b439dac433c4d99d4f2029760f324f8404a920
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -18,11 +18,11 @@ För att framtidssäkra implementeringen av era marknadsföringskanaler och säk
 
 När marknadsföringskanaler lanserades för första gången hade de bara första- och sista-beröringsdimensioner. Explicit första/sista beröringsdimensioner behövs inte längre med den aktuella versionen av attribuering. Adobe har allmänna dimensioner av typen&quot;Marknadsföringskanal&quot; och&quot;Marknadsföringskanal&quot; så att du kan använda dem med den önskade attribueringsmodellen. Dessa generiska dimensioner är identiska med Last-Touch Channel-dimensioner, men de har en annan etikett för att förhindra förvirring när du använder marknadsföringskanaler med en annan attribueringsmodell.
 
-Eftersom dimensionerna för marknadsföringskanalen är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler), kan deras besöksdefinition inte ändras med hjälp av virtuella rapportsviter. Dessa reviderade rutiner möjliggör tydliga och kontrollerade uppslagsfönster med Attribution IQ och Customer Journey Analytics.
+Eftersom dimensionerna för marknadsföringskanalen är beroende av en traditionell besöksdefinition (som definieras av deras bearbetningsregler), kan deras besöksdefinition inte ändras med virtuella rapportsviter. Dessa reviderade rutiner möjliggör tydliga och kontrollerade uppslagsfönster med Attribution IQ och Customer Journey Analytics.
 
 ## Bästa praxis nr 1: Utnyttja Attribution IQ för kontrollerad analys
 
-Vi rekommenderar att du använder [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html#analysis-workspace) i stället för den befintliga marknadsföringskanalattribueringen för att finjustera er analys av marknadsföringskanalen. Följ andra metodtips för att försäkra dig om att analysen är konsekvent och att den har effektiva kontroller över Attribution IQ.
+Vi rekommenderar att du [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html#analysis-workspace) i stället för den befintliga marknadsföringskanalattribueringen för att finjustera er analys av marknadsföringskanalen. Följ andra metodtips för att försäkra dig om att analysen är konsekvent och att den har robusta kontroller över Attribution IQ.
 
 ![](assets/attribution.png)
 
@@ -30,7 +30,7 @@ Vi rekommenderar att du använder [Attribution IQ](https://experienceleague.adob
 * Vid mätanalys bör organisationen anpassa sig till en eller flera attribueringsmodeller. Spara anpassade mätvärden med den här modellen för enkel återanvändning.
 * Som standard tilldelas data med hjälp av Senaste beröring och inställningen för besökaravtalsperioden. Attribution IQ metriska modeller ger större kontroll över uppslagets fönster och fler varianter, inklusive [algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html#analysis-workspace).
 
-## Best Practice #2: Inga kanaldefinitioner för direkt- och sessionsuppdatering
+## Bästa praxis nr 2: Inga kanaldefinitioner för direkt- och sessionsuppdatering
 
 Direkta och interna uppdateringskanaler/sessioner rekommenderas inte för användning med anpassade attribueringsmodeller (Attribution IQ).
 
@@ -38,7 +38,7 @@ Vad händer om din organisation redan har Direct- och Session Refresh konfigurer
 
 ![](assets/direct-session-refresh.png)
 
-## Bästa praxis nr 3: Aktivera Åsidosätt sista tryckkanal för alla kanaler
+## Bästa praxis nr 3: Aktivera åsidosättning av sista-beröringskanal för alla kanaler
 
 Anpassade attribueringsmodeller som används med marknadsföringskanaldimensionen i arbetsytan fungerar bäst när den här inställningen är aktiverad. Om du aktiverar den här inställningen räknas en instans av marknadsföringskanalen av när en ny kanal/detalj påträffas. Du bör aktivera detta för alla kanaler förutom för Direkt eller Intern/Sessionsuppdatering, som vi inte längre rekommenderar för användning med anpassade attribueringsmodeller (Attribution IQ).
 

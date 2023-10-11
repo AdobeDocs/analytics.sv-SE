@@ -3,10 +3,10 @@ title: Uppgradering av SFTP-tjänster - frågor och svar
 description: Frågor och svar om den planerade uppgraderingen av SFTP-tjänster.
 feature: FTP Export
 exl-id: e271b545-0769-4a69-9d7f-dc46bc654737
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '447'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 20 september 2022 kommer Adobe Analytics att uppgradera sitt säkra filöverföringsprotokoll [SFTP] tjänster för bättre säkerhet vid filöverföringar. Den här ändringen innebär att vissa SFTP-klientkonfigurationer inte längre stöds. Detta påverkar endast data som skickas till eller hämtas från Adobe Analytics med SFTP. FTP-protokollet påverkas inte. För att undvika avbrott i tjänsten bör du se till att dina SFTP-klienter (kod, verktyg, tjänster) följer de ändringar som beskrivs nedan.
 
-## Hur kan jag avgöra vilka algoritmer, anslutningstyper och protokoll som används av min organisation?
+## Hur kan jag avgöra vilka algoritmer, anslutningstyper och protokoll som används av min organisation just nu?
 
 De FTP/SFTP-program du använder bör ange vilka specifika inställningar som används i de anslutningar du har konfigurerat för datautbyte med Adobe Analytics. Programmet bör även innehålla dokumentation om de olika alternativ som är tillgängliga för anslutningar. De alternativ som kommer att stödjas efter den här uppdateringen stöds och accepteras allmänt i branschen.
 
 De anslutningsalternativ som tas bort anses i allmänhet vara föråldrade och används inte i den aktuella programvaran. Om du har uppgraderat FTP/SFTP-programmet under de senaste tre åren har du troligen redan en kompatibel anslutning.
 
-## Vilka Adobe Analytics-funktioner använder SFTP för dataöverföring?
+## Vilka Adobe Analytics-funktioner använder SFTP för datainmatning?
 
 Följande funktioner erbjuder ett alternativ för att överföra data till Adobe Analytics med SFTP.
 
@@ -50,7 +50,7 @@ Nedan finns en detaljerad lista över vilka anslutningar och algoritmer som komm
 
    * Vi kommer inte längre att stödja: 3des-cbc, aes128-cbc, aes128-gcm@openssh.com, aes192-cbc, aes256-cbc, aes256-gcm@openssh.com, arcfour, arcfour128, arcfour256, blowfish-cbc, cast128-cbc, rijndael-cbc@lysator.liu.se
 
-   * Vi kommer endast att stödja: aes128-ctr, aes192-ctr, aes256-ctr
+   * Vi stöder bara: aes128-ctr, aes192-ctr, aes256-ctr
 
 * Anslutningar som stöds av SFTP-protokoll:
 
@@ -62,4 +62,4 @@ Nedan finns en detaljerad lista över vilka anslutningar och algoritmer som komm
 
    * FTP: vsftpd version 3.0.2-25 eller senare
 
-   * SFTP: öppna version 7.4p1-21 eller senare
+   * SFTP: öppen version 7.4p1-21 eller senare

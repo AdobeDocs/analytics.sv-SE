@@ -3,7 +3,7 @@ description: En rapportsvit definierar den fullständiga, oberoende rapportering
 title: Hanterare för rapportsvit
 feature: Report Suite Settings
 exl-id: c36e5378-c8a7-4f18-b143-8ce862638c76
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 En rapportsvit definierar den fullständiga, oberoende rapporteringen för följande datalager:
 
-* En webbplats (oftast)
+* En enda webbplats (oftast)
 
 * En del eller delmängd av en webbplats
 
@@ -30,7 +30,7 @@ Så här kommer du åt en rapportserie:
 
 >[!NOTE]
 >
->Virtuella rapportsviter hanteras via **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual Report Suites]**. Se [Dokumentation för Virtual Report Suite](/help/components/vrs/vrs-about.md).
+>Virtuella rapporteringsprogram hanteras via **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Virtual report suites]**. Läs mer i [Virtuell rapportsvitdokumentation](/help/components/vrs/vrs-about.md).
 
 ## Beskrivning av Report Suite Manager {#section_0C94DC9EACDA4F5891F5CD63EE80B125}
 

@@ -1,16 +1,16 @@
 ---
-title: Borttagning av bot i Adobe Analytics
+title: Borttagning av ojämnheter i Adobe Analytics
 description: Så här tar du bort objekt i Adobe Analytics
 feature: Bot Removal
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 0%
 
 ---
 
-# Borttagning av bot i Adobe Analytics
+# Borttagning av ojämnheter i Adobe Analytics
 
 I Adobe Analytics finns det flera alternativ för att ta bort robottrafik från rapportering:
 
@@ -38,9 +38,9 @@ Mer information finns i [Adobe Analytics Implementeringshandbok](https://experie
 
 ## Använda en kombination av Adobe-verktyg
 
-Eftersom botar dessutom morfar snabbt erbjuder Adobe flera andra kraftfulla funktioner som, när de kombineras korrekt och regelbundet, kan bidra till att avlägsna dessa fiender för datakvalitet. De här funktionerna är: Experience Cloud ID-tjänst, segmentering, Data warehouse, kundattribut och virtuella rapportsviter. Här är en översikt över hur du kan använda dessa verktyg.
+Eftersom botar dessutom morfar snabbt erbjuder Adobe flera andra kraftfulla funktioner som, när de kombineras korrekt och regelbundet, kan bidra till att avlägsna dessa fiender för datakvalitet. Dessa funktioner är: Experience Cloud ID-tjänst, segmentering, Data Warehouse, kundattribut och virtuella rapportsviter. Här är en översikt över hur du kan använda dessa verktyg.
 
-### Steg 1: Överför besökarnas Experience Cloud-ID till ett nytt deklarerat ID
+### Steg 1: Skicka Experience Cloud-ID:t till ett nytt deklarerat ID
 
 Börja med att skapa ett nytt deklarerat ID i [Bastjänst för människor](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html). Skicka besökarens Experience Cloud-ID till detta nya deklarerade ID, som kan göras snabbt och enkelt med [taggar i Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html). Låt oss använda namnet &quot;ECID&quot; för det deklarerade ID:t.
 
@@ -54,21 +54,21 @@ När dataelementet är konfigurerat följer du [dessa instruktioner](https://exp
 
 ### Steg 2: Använd segmentering för att identifiera bottnar
 
-Nu när besökarens ECID skickas till ett deklarerat ID kan du använda [segmentering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/t-freeform-project-segment.html) för att identifiera besökare som beter sig som botar. Boter definieras ofta av sitt beteende: Enskilda besök, ovanliga användaragenter, okänd information om enhet/webbläsare, inga hänvisningar, nya besökare, ovanliga landningssidor osv. Använd kraften i Workspace-detaljgranskning och segmentering för att identifiera de robotar som har undgått IAB-filtrering och era regler för rapportrutins robotar. Här är till exempel en skärmbild av ett segment som du kan använda:
+Nu när besökarens ECID skickas till ett deklarerat ID kan du använda [segmentering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/segments/t-freeform-project-segment.html) för att identifiera besökare som beter sig som botar. Boten definieras ofta av deras beteende: enstaka besök, ovanliga användaragenter, okänd information om enhet/webbläsare, inga hänvisare, nya besökare, ovanliga landningssidor osv. Använd kraften i Workspace-detaljgranskning och segmentering för att identifiera de robotar som har undgått IAB-filtrering och era regler för rapportrutins robotar. Här är till exempel en skärmbild av ett segment som du kan använda:
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-filter-seg1.png)
 
-### Steg 3: Exportera alla [!DNL Experience Cloud IDs] från segmentet via Data warehouse
+### Steg 3: Exportera alla [!DNL Experience Cloud IDs] från segmentet via Data Warehouse
 
-Nu när du har identifierat bottarna med hjälp av segment är nästa steg att använda Data warehouse för att extrahera alla Experience Cloud-ID:n som är kopplade till det här segmentet. På den här skärmbilden visas hur du ska konfigurera [data warehouse](/help/export/data-warehouse/data-warehouse.md) begäran:
+Nu när du har identifierat bottarna med hjälp av segment är nästa steg att använda Data Warehouse för att extrahera alla Experience Cloud-ID:n som är kopplade till det här segmentet. På den här skärmbilden visas hur du ska konfigurera [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) begäran:
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-dwh-3.png)
 
 Kom ihåg att använda Experience Cloud Visitor-ID som dimension och tillämpa segmentet &#39;Bts&#39;.
 
-### Steg 4: Skicka tillbaka listan till Adobe som kundattribut
+### Steg 4: Skicka tillbaka den här listan till Adobe som kundattribut
 
-När Data warehouse-rapporten kommer har du en lista över ECID som måste filtreras från historiska data. Kopiera och klistra in dessa ECID:n i en tom .CSV-fil med bara två kolumner, ECID och Bot Flag.
+När Datan Warehouse har kommit fram har du en lista över ECID som måste filtreras från historiska data. Kopiera och klistra in dessa ECID:n i en tom .CSV-fil med bara två kolumner, ECID och Bot Flag.
 
 * **ECID**: Kontrollera att den här kolumnrubriken matchar namnet som du gav det nya deklarerade ID:t ovan.
 * **Punktflagga**: Lägg till &#39;Bot Flag&#39; som en schemdimension för kundattribut.
@@ -83,13 +83,13 @@ När datauppsättningen har bearbetats och integrerats i Analysis Workspace kan 
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-filter-seg2.png)
 
-### Steg 6: Använd det här segmentet som Virtual Report Suite-filter
+### Steg 6: Använd det här segmentet som filter för den virtuella rapportsviten
 
-Skapa slutligen en [Virtual Report Suite](/help/components/vrs/vrs-about.md) som använder det här segmentet för att filtrera bort de identifierade bottarna:
+Skapa slutligen en [Virtuell rapportsvit](/help/components/vrs/vrs-about.md) som använder det här segmentet för att filtrera bort de identifierade bottarna:
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-vrs.png)
 
-Den här nysegmenterade virtuella rapportsviten kommer nu att resultera i en renare uppsättning data med identifierade bottar borttagna.
+Den här nysegmenterade virtuella rapportsviten kommer nu att resultera i en renare datamängd med identifierade botar borttagna.
 
 ### Steg 7: Upprepa steg 2, 3 och 4 regelbundet
 

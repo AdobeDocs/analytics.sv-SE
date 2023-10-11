@@ -4,7 +4,7 @@ solution: Experience Cloud
 title: Frågor och svar för Audience Analytics
 feature: Audience Analytics
 exl-id: 86e7967c-030c-44d6-8294-e7e6d41f6fc3
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -23,18 +23,18 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
    <td colname="col1"> <b>F: Hur vet jag om jag har PII (Personally Identiitable Information) i mina analysdata? Och om ja, vad gör jag åt det?</b> </td> 
    <td colname="col2"> 
     <ul id="ul_71E0ECD5981D4B65BCDA065BE07A43AA"> 
-     <li id="li_F8FF61A4D7B54BA39DAA6F28DB51D749">Om du har e-post/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. </li> 
+     <li id="li_F8FF61A4D7B54BA39DAA6F28DB51D749">Om du har e-postadresser/adresser/så vidare i ett utkast eller en eVar bör du överväga att hash-koda data under insamlingen. </li> 
      <li id="li_57A8B4C7BB784FFCBC1DC363B35D9FF7">Om ditt land anser att IP-adressen är PII, <a href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html"  > aktivera IP-förvrängning </a>. </li> 
      <li id="li_C7AA02B831AE47A59E783623126A7789">Tala med er Analytics Admin för att se vad ni samlar in. </li> 
      <li id="li_F6AAE868141E486AB8CAB291BD8EDB71">Tala med er juridiska avdelning för att se vad de anser vara PII. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b>F: Hur vet jag om mina rapportsviter gör personalisering på plats eller målgruppsanpassning på plats eller utanför webbplatsen?</b> </td> 
+   <td colname="col1"> <b>Fråga: Hur vet jag om våra rapportsviter gör personalisering på plats eller målgruppsanpassning på plats eller utanför webbplatsen?</b> </td> 
    <td colname="col2"> 
     <ul id="ul_F0984CEF80DB4B589716BC55549E32B8"> 
      <li id="li_9BC3819784A9408F846D60FF0F20AAF9">Dessa gäller inte när du skickar Adobe Analytics-data till Adobe Audience Manager. </li> 
-     <li id="li_050A1BF9978E436895B5C7E33A82527D">Fråga dig själv: Kommer ni att dela ett Analytics-delat segment med en MCA-dimension tillbaka till Experience Cloud? </li> 
+     <li id="li_050A1BF9978E436895B5C7E33A82527D">Fråga dig själv: Kommer du att dela ett Analytics-delat segment med en MCA-dimension tillbaka till Experience Cloud? </li> 
      <li id="li_C52D969681B94F4AAA18FDEB21EC5B49">Exporterar du (t.ex. via dataflöden) ut till ett Business Intelligence-system (BI) som används för dessa ändamål? </li> 
     </ul> </td> 
   </tr> 
@@ -58,20 +58,20 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
    <td colname="col2"> <p>Ett Analytics-mål tas bort från ett segments målmappningsavsnitt när du väljer <span class="uicontrol"> Mappa automatiskt alla aktuella och framtida segment </span> alternativ i <span class="uicontrol"> Segmentmappningar </span>. </p> <p><img placement="break" align="left"  src="assets/auto-mapping.png" id="image_670ED5A306784FCBA8A0B336AC1F0FC6" width="300px" /> </p> <p>Om du vill förhindra detta väljer du <span class="uicontrol"> Mappa segment manuellt </span> i stället för det automatiska alternativet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>F: Får jag all information från Adobe Audience Manager i Analytics?</b> </p> </td> 
+   <td colname="col1"> <p> <b>F: Ger detta mig all information från Adobe Audience Manager i Analytics?</b> </p> </td> 
    <td colname="col2"> <p>Nej, endast data som är relaterade till personer som kommer till er webbplats under eller efter det att Audience Manager-målgrupper aktiverats och under/efter det att segmentet kvalificerats. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>F: Får jag en adresserbar målgrupp per segment?</b> </p> </td> 
+   <td colname="col1"> <p> <b>Fråga: Ger detta mig en adresserbar målgrupp per segment?</b> </p> </td> 
    <td colname="col2"> <p>Egentligen inte. Här visas antalet besökare i det segmentet som kom till webbplatsen under eller efter en segmentkvalificering. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <b>F: På vilket sätt skiljer sig detta från det gamla cookie-målet till Analytics?</b> </p> </td> 
+   <td colname="col1"> <p> <b>F: Hur skiljer sig detta från det gamla cookie-målet till Analytics?</b> </p> </td> 
    <td colname="col2"> <p>Segmenten kvalificeras för och returneras i realtid - med samma träff. </p> <p>Eget namn visas automatiskt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Vad händer om vissa av mina rapporteringsprogram har personuppgifter och andra inte har det?</b> </p> </td> 
-   <td colname="col2"> <p>Tips: Skapa två mål - lägg till rapporteringssviterna för personuppgifter till ett mål och rapporteringssviterna för icke-personliga data till ett annat. </p> </td> 
+   <td colname="col2"> <p>Tips: Skapa två destinationer - lägg till rapporteringssviterna för personuppgifter till ett mål och rapporteringssviterna för icke-personliga data till ett annat. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -81,19 +81,19 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
 <table id="table_19AEAE0A3575423CB4F5F164DB5626D5"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>F: Kommer den här integreringen att bli en dimension eller ett segment i Analytics?</b> </p> </td> 
-   <td colname="col2"> <p>Som dimensioner: Publikens ID och publikens namn. </p> </td> 
+   <td colname="col1"> <p><b>Fråga: Kommer denna integrering att fungera som en dimension eller ett segment i Analytics?</b> </p> </td> 
+   <td colname="col2"> <p>Som dimensioner: Publikens ID och Publikens namn. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>F: Var kan jag använda de här dimensionerna i Analytics?</b> </p> </td> 
-   <td colname="col2"> <p>Nästan överallt. de behandlas på samma sätt som andra dimensioner som samlas in i Analytics. Det finns ett undantag: data kommer inte att vara i Data Workbench. </p> </td> 
+   <td colname="col2"> <p>De behandlas nästan överallt, precis som alla andra dimensioner som samlas in i Analytics. Det finns ett undantag: för tillfället kommer data inte att vara i Data Workbench. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Varför ser jag inte data som kommer in i Analytics?</b> </p> </td> 
+   <td colname="col1"> <p><b>F: Varför ser jag inte data som tas fram i Analytics?</b> </p> </td> 
    <td colname="col2"> <p>Du har troligtvis konflikter mellan Adobe Audience Manager sekretesskontroller mellan datakällor och mål. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Varför saknas några av mina segment i Analytics, trots att jag valde att skicka alla segment?</b> </p> </td> 
+   <td colname="col1"> <p><b>F: Varför saknas några av mina segment i Analytics trots att jag valde att skicka alla segment?</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_B8938FD08C6F4F2387EDADDEF8089319"> 
      <li id="li_50A9BDF612304062913370F16BC882EF">Dina dataexportkontroller för Adobe Audience Manager på målet och i segmentets datakällor kan vara i konflikt, vilket förhindrar att vissa segment skickas. </li> 
@@ -101,11 +101,11 @@ Svar på frågor du kan ha när du implementerar Audience Analytics.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Varför ser jag"Målgruppsgräns nådd" i min Analytics-rapport? (Obs! this kommer också att representeras som Audience ID = -1 och "::max_audiences_exceeded::" i Data warehouse)</b> </p> </td> 
-   <td colname="col2"> <p>Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för Adobe Audience Manager. Om en besökare tillhör mer än 150 Adobe Audience Manager-segment i en enda träff visas <b>150 senast kvalificerade segment</b> skickas till Analytics, medan den återstående listan trunkeras. </p> <p>En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som"Målgräns nådd" i dimensionen Målgruppsnamn och"-1" i dimensionen Målgrupps-ID. </p> <p>Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever"Målgruppsgräns nådd" i din rapportering har du två alternativ: </p> 
+   <td colname="col1"> <p><b>F: Varför ser jag"Målgruppsgräns nådd" i min Analytics-rapport? (Obs! Detta kommer också att representeras som Audience ID = -1 och "::max_audiences_exceeded::" i Data Warehouse)</b> </p> </td> 
+   <td colname="col2"> <p>Som standard skickas alla segment som en besökare kvalificerar för till Analytics via integreringen Audience Analytics för Adobe Audience Manager. Om en besökare tillhör mer än 150 Adobe Audience Manager-segment i en enda träff visas <b>150 senast kvalificerade segment</b> skickas till Analytics, medan den återstående listan trunkeras. </p> <p>En extra flagga skickas till Analytics som anger att segmentlistan trunkerades och visas som"Målgruppsgräns nådd" i dimensionen Målgruppsnamn och"-1" i dimensionen Målgrupps-ID. </p> <p>Det är osannolikt att en besökare kvalificerar sig för mer än 150 segment för en viss träff, men det kan hända en liten del av tiden. Om du upplever"Målgruppsgräns nådd" i din rapportering har du två alternativ: </p> 
     <ul id="ul_8E290B2E32DC49738F6FD00CB0CE2BBB"> 
      <li id="li_12F498981EA949B5BCBD40ECC954C339"><b>Alternativ 1</b>: Fortsätt att låta integreringen fungera i det färdiga läget och skicka de 150 senast kvalificerade segmenten för en viss besökare. </li> 
-     <li id="li_CA4D5747AA4A4452929097807B604959"><b>Alternativ 2</b>: I Adobe Audience Manager väljer du de 150 segment som är viktigast för ditt företag för integreringen. Adobe Audience Manager kontrollerar sedan besökarna mot endast dessa 150 segment. Nackdelen med detta är att ni bara får dessa 150 segment över alla besökare. Å andra sidan kan alternativ 1-metoden leverera ett obegränsat antal segment på grund av integreringens per-träfftyp. </li> 
+     <li id="li_CA4D5747AA4A4452929097807B604959"><b>Alternativ 2</b>: I Adobe Audience Manager väljer du de 150 segment som betyder mest för ditt företag för integrering. Adobe Audience Manager kontrollerar sedan besökarna mot endast dessa 150 segment. Nackdelen med detta är att ni bara får dessa 150 segment över alla besökare. Å andra sidan kan alternativ 1-metoden leverera ett obegränsat antal segment på grund av integreringens per-träfftyp. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -137,19 +137,19 @@ Mer information om vanliga frågor om detta avsnitt finns i [Vanliga frågor om 
 <table id="table_1F7C0C785F9C472286A96F8C25E8440B"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>F: Varför skiljer sig segmentbesökarnas antal mellan Audience Manager och Analytics?</b> </p> </td> 
+   <td colname="col1"> <p> <b>Fråga: Varför skiljer sig segmentbesökarnas antal mellan Audience Manager och Analytics?</b> </p> </td> 
    <td colname="col2"> <p>Se <a href="/help/integrate/c-audience-analytics/visitor-count-reconciliation.md"  > Skillnader i antal besökare </a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Vad är skillnaden mellan"målgrupper" i Adobe Audience Manager och"segment" i Analytics?</b> </p> </td> 
+   <td colname="col1"> <p><b>Fråga: Vad är skillnaden mellan"målgrupper" i Adobe Audience Manager och"segment" i Analytics?</b> </p> </td> 
    <td colname="col2"> <p>Se <a href="/help/integrate/c-audience-analytics/aam-analytics-segments.md"  > Förstå segment i Analytics och Audience Manager </a>. </p> <p>Adobe Audience Manager målgrupper skickas vidare och delas som"dimensionskomponenter" som ska användas i Analytics. De visas inte som segment i segmentbyggaren, till exempel, utan som dimensioner som du kan skapa segment med. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Vad är skillnaden mellan kundattribut och kunddata som är integrerade från Adobe Audience Manager?</b> </p> </td> 
-   <td colname="col2"> <p>Kundattribut är inte tidsbaserade; de tillämpar retroaktivt och går framåt. Adobe Audience Manager-integrerade data är tidsbaserade och kan bara vidareutvecklas. Dessutom är kundattribut ett sökregister för besökar-ID:n i Experience Cloud, medan Adobe Audience Manager-integreringen är data som sammanfogas i varje träff för en besökare. </p> </td> 
+   <td colname="col1"> <p><b>Fråga: Vilken är skillnaden mellan kundattribut och kunddata som är integrerade från Adobe Audience Manager?</b> </p> </td> 
+   <td colname="col2"> <p>Kundattribut är inte tidsbaserade. De gäller retroaktivt och går framåt. Adobe Audience Manager-integrerade data är tidsbaserade och kan bara vidareutvecklas. Dessutom är kundattribut en söktabell för besökar-ID:n i Experience Cloud, medan Adobe Audience Manager-integreringen är data som sammanfogas i varje träff för en besökare. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><b>F: Hur är det med äldre metoder för detta problem, till exempel gamla beta- eller konsultplugin-program för cookie-mål?</b> </p> </td> 
+   <td colname="col1"> <p><b>F: Hur är det med äldre metoder för att lösa det här problemet, till exempel gamla beta- eller konsultplugin-program för cookie-mål?</b> </p> </td> 
    <td colname="col2"> <p>Vi rekommenderar att du implementerar den nya integreringen och tar bort gamla destinationer. </p> </td> 
   </tr> 
  </tbody> 
