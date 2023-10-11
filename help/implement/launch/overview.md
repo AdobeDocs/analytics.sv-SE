@@ -3,10 +3,10 @@ title: Implementera Adobe Analytics med Analytics-tillägget
 description: Lär dig implementera Adobe Analytics med hjälp av taggar och Analytics-tillägg
 feature: Launch Implementation
 exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
-source-git-commit: bef853934683f647e05d42e1a751217c8f9b5dc4
+source-git-commit: 8cb2fd426e9fef247d79de4c138ea814dd691ed3
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 4%
+source-wordcount: '389'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ Taggar i Adobe Experience Platform är en tagghanteringslösning som gör att ni
 
 Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda taggar. Om du är osäker på om du har åtkomst kan du kontakta någon av Experience Cloud systemadministratörerna i din organisation.
 
-Översikt över implementeringsuppgifterna:
+Översikt över implementeringsuppgifterna på hög nivå:
 
 
 
@@ -32,7 +32,7 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 <tr>
 <td> 1</td>
-<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
 <td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
 </tr>
 
@@ -63,8 +63,8 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 
 <tr>
 <td>6</td> 
-<td><b>Validera och publicera i produktion</b>. Lägg till taggegenskapen på din webbplats. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
-<td><a href="./validate-publish-prod.md">Validera en utvecklingsimplementering och publicera till produktion</a></td>
+<td><b>Validera och publicera i produktion</b>. Bädda in kod för att inkludera taggegenskapen på webbplatsens sidor. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=en#embed-code">Bädda in kod</a><br/><a href="./validate-publish-prod.md">Validera en utvecklingsimplementering och publicera till produktion</a></td>
 </tr>
 
 </table>

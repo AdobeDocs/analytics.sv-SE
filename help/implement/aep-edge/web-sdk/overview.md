@@ -3,10 +3,10 @@ title: Implementera Adobe Analytics med Adobe Experience Platform Web SDK
 description: Använd Web SDK-tillägget i Adobe Experience Platform Data Collection för att skicka data till Adobe Analytics.
 exl-id: 97f8d650-247f-4386-b4d2-699f3dab0467
 feature: Implementation Basics
-source-git-commit: bef853934683f647e05d42e1a751217c8f9b5dc4
+source-git-commit: 8cb2fd426e9fef247d79de4c138ea814dd691ed3
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 5%
+source-wordcount: '830'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +18,7 @@ Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-til
 
 ## Webb-SDK
 
-Översikt över implementeringsuppgifterna:
+Översikt över implementeringsuppgifterna på hög nivå:
 
 ![Så här implementerar du Adobe Analytics med hjälp av Web SDK-arbetsflöde, vilket beskrivs i det här avsnittet.](../../assets/websdk-annotated.png)
 
@@ -30,14 +30,14 @@ Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-til
 
 <tr>
 <td>1</td>
-<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
 <td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
 </tr>
 
 <tr>
 <td>2</td>
 <td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över datauppsättningsgränssnittet</a></td>
 </tr>
 
 <tr>
@@ -84,7 +84,7 @@ Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-til
 
 ## Web SDK-tillägg
 
-Översikt över implementeringsuppgifterna:
+Översikt över implementeringsuppgifterna på hög nivå:
 
 ![Så här implementerar du Adobe Analytics med hjälp av ett arbetsflöde för Web SDK-tillägg, vilket beskrivs i det här avsnittet.](../../assets/websdk-extension-annotated.png)
 
@@ -96,14 +96,14 @@ Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-til
 
 <tr>
 <td>1</td>
-<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
+<td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
 <td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
 </tr>
 
 <tr>
 <td>2</td>
 <td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över datauppsättningsgränssnittet</a></td>
 </tr>
 
 <tr>
@@ -138,8 +138,8 @@ Du kan skicka data till Experience Edge direkt med Web SDK eller via Web SDK-til
 
 <tr>
 <td>8</td>
-<td><b>Upprepa, validera och publicera</b> till produktion. Lägg till taggegenskapen på din webbplats. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=en">Översikt över publicering</a></td>
+<td><b>Upprepa, validera och publicera</b> till produktion. Bädda in kod för att inkludera taggegenskapen på webbplatsens sidor. Använd sedan dataelement, regler och så vidare för att anpassa implementeringen.</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=en#embed-code">Bädda in kod</a><br/><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=en">Översikt över publicering</a></td>
 </tr>
 
 </table>

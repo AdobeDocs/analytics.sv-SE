@@ -3,9 +3,9 @@ title: Implementera Adobe Analytics
 description: Implementera Adobe Analytics på din webbplats eller i en egenskap eller app.
 feature: Implementation Basics
 exl-id: 2b629369-2d69-4dc6-861a-ff21a46d39e0
-source-git-commit: bef853934683f647e05d42e1a751217c8f9b5dc4
+source-git-commit: 8cb2fd426e9fef247d79de4c138ea814dd691ed3
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '931'
 ht-degree: 27%
 
 ---
@@ -33,16 +33,16 @@ Adobe Analytics kräver kod på din webbplats eller i din mobilapp eller annat p
 
 För **webbplats**, finns följande implementeringsmetoder:
 
-* **Web SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics för nya kunder. Installera **Adobe Experience Platform Web SDK-tillägg** i Adobe Experience Platform Data Collection **Taggar**, använder en loader-tagg på varje sida och skickar data till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
+* **Web SDK-tillägg**: Den standardiserade och rekommenderade metoden för att implementera Adobe Analytics för nya kunder. Installera **Adobe Experience Platform Web SDK-tillägg** i Adobe Experience Platform Data Collection **Taggar**, placera en inbäddningskod (en Javascript-inläsningstagg) på varje sida och skicka data till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
   ![Web SDK-tillägg](./assets/websdk-extension-implementation.png)
 Se [Så här implementerar du Adobe Analytics med tillägget Adobe Experience Platform Web SDK.](./aep-edge/overview.md) för mer information.
 
-* **Web SDK**: Du kan läsa in Web SDK-bibliotek manuellt på webbplatsen om du inte vill använda Adobe Experience Platform Data Collection. Referera till Web SDK-biblioteket (`alloy.js`) på varje sida och skicka önskade spårningsanrop till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
+* **Web SDK**: Du kan läsa in Web SDK-bibliotek manuellt på din webbplats om du inte vill använda Adobe Experience Platform Data Collection. Referera till Web SDK-biblioteket (`alloy.js`) på varje sida och skicka önskade spårningsanrop till Adobe Experience Platform **Edge Network** i ett format som passar er. Edge Network skickar inkommande data till Adobe Analytics i rätt format.
   ![Web SDK](./assets/websdk-implementation.png)
 Se [Implementera Adobe Analytics med Adobe Experience Platform Web SDK](./aep-edge/overview.md) för mer information.
 
 
-* **Analystillägg**: Installera **Adobe Analytics-tillägg** i Adobe Experience Platform Data Collection **Taggar**. Placera en loader-tagg på varje sida och använd Adobe Analytics-tillägget för att bestämma hur varje variabel definieras. Använd den här implementeringsmetoden om du inte vill ha taggarnas bekvämlighet, men inte vill använda Edge Network-infrastrukturen.
+* **Analystillägg**: Installera **Adobe Analytics-tillägg** i Adobe Experience Platform Data Collection **Taggar**. Placera en inbäddningskod (en Javascript-inläsningstagg) på varje sida och använd Adobe Analytics-tillägget för att bestämma hur varje variabel definieras. Använd den här implementeringsmetoden om du inte vill ha taggarnas bekvämlighet, men inte vill använda Edge Network-infrastrukturen.
   ![Adobe Analytics-tillägg](./assets/analytics-extension-implementation.png)
 Se [Implementera Adobe Analytics med Analytics-tillägget](launch/overview.md) för mer information.
 
