@@ -4,9 +4,9 @@ title: Hantera Data Warehouse-förfrågningar
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: 1f6dc980c7ec4646b8b58be06563f553c0010245
+source-git-commit: 48455ca071b2137d4d1d9f8d6d5dce77aee25b5e
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -73,6 +73,19 @@ Du kan visa historiken för alla rapporter som har körts.
    ![Hantera en begäran](assets/dw-manage-request.png)
 
 1. Välj [!UICONTROL **Visa historik**].
+
+   The [!UICONTROL **Visa begäran om Data Warehouse**] sidan visar en lista över enskilda rapportleveranser.
+
+   ![Historiksida för begäran](assets/dw-request-history.png)
+
+1. Välj en rapportleverans och välj sedan något av följande alternativ:
+
+   | Alternativ |  -funktion |
+   |---------|----------|
+   | [!UICONTROL **Destinationsinformation**] | Visar konto- och platsinformation som är associerad med begäran. Det här är kontot och platsen som konfigurerades tidigare, enligt beskrivningen i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
+   | [!UICONTROL **Avbryt rapport**] | Avbryter rapporten. Du kan inte avbryta rapporter som har statusen [!UICONTROL **Slutförd**] eller [!UICONTROL **Avbruten**]. |
+   | [!UICONTROL **Kör rapporten igen**] | Kör rapporten igen med data som de var när den ursprungligen skickades. Du kan köra en rapport som har någon av följande statusar igen: [!UICONTROL **Avbruten**], [!UICONTROL **Slutförd**], [!UICONTROL **Fel - Bearbetning**], eller [!UICONTROL **Fel - det gick inte att skicka**]. |
+   | [!UICONTROL **Skicka om rapport**] | Skickar rapportfilen som tidigare har skapats igen. Du kan skicka om en rapport som har någon av följande statusar: [!UICONTROL **Slutförd**] eller [!UICONTROL **Fel - det gick inte att skicka**]. |
 
 ## Kopiera förfrågningar
 

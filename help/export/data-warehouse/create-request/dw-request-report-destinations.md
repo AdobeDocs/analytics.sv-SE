@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: f1264344a380944946ffa7b427db7bbc3ea96b1f
+source-git-commit: d8bfad5d388f906c7c7301a9126813f5c2a5dbaa
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2301'
 ht-degree: 0%
 
 ---
@@ -254,6 +254,8 @@ Använd följande information när du fyller i de tillgängliga fälten:
 
 * [!UICONTROL **Användarnamn**]: Ange användarnamn för att logga in på SFTP-platsen.
 
+* [!UICONTROL **Använd tillfälliga filtillägg under överföring**]: När den är aktiverad visas `.part` filtillägget används under överföringsprocessen. Låt alternativet vara aktiverat om inte SFTP-servern begränsar filnamnen från att ändras när överföringen är klar.
+
 * [!UICONTROL **Offentliga nycklar**]: Hämta lämplig offentlig nyckel när du skapar datalagermålet.
 
 #### Platsfält
@@ -263,6 +265,8 @@ Använd följande information när du fyller i de tillgängliga fälten:
 * [!UICONTROL **Platsbeskrivning**]: En beskrivning av platsen på SFTP-kontot.
 
 * [!UICONTROL **Katalogsökväg**]: Sökvägen till platsen på SFTP-kontot.
+
+Mer information om SFTP-konfiguration finns i [Skicka begäranden om Data Warehouse till SFTP-servrar](/help/export/ftp-and-sftp/c-sftp/ftp-sftp-dw.md).
 
 ### S3
 

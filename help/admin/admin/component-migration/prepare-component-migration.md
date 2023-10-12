@@ -2,9 +2,10 @@
 description: Beskriver de förberedelser som krävs för att förbereda migrering av komponenter och projekt från Adobe Analytics till Customer Journey Analytics.
 title: Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics
 feature: Admin Tools
-source-git-commit: cbd991821dc1eefa458ec5d92b75f9b4dfcc9fa0
+exl-id: a9ff98dc-6568-428d-a8a8-faca5bc76a29
+source-git-commit: 03120156e1ba70e50b265da788fa5997fd31c93e
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -54,7 +55,9 @@ I följande tabeller visas vilka element i ett projekt och en komponent som ing�
 
 ### Komponentelement som migreras
 
-Dimensioner och mätvärden migreras som en del av mappningsprocessen som beskrivs i [Migrera Adobe Analytics-projekt till Customer Journey Analytics](#migrate-adobe-analytics-projects-to-customer-journey-analytics), medan segment och datumintervall återskapas i Customer Journey Analytics baserat på
+Dimensioner och mätvärden migreras som en del av mappningsprocessen som beskrivs i [Migrera Adobe Analytics-projekt till Customer Journey Analytics](#migrate-adobe-analytics-projects-to-customer-journey-analytics).
+
+Segment, datumintervall och beräknade värden som inte redan finns i Customer Journey Analytics återskapas där baserat på de dimensioner och mått som mappas.
 
 |  | Migrerad |
 |---------|---------|
@@ -92,7 +95,7 @@ Dimensioner och mätvärden migreras som en del av mappningsprocessen som beskri
 
 ## Förstå element som inte stöds och som orsakar fel
 
-Följande visualiseringar, paneler och funktioner stöds inte i Customer Journey Analytics. När dessa element ingår i ett projekt före migreringen kan de antingen göra att migreringen misslyckas eller orsaka fel efter att projektet har migrerats.
+Följande visualiseringar och paneler stöds inte i Customer Journey Analytics. När dessa element ingår i ett projekt före migreringen kan de antingen göra att migreringen misslyckas eller orsaka fel efter att projektet har migrerats.
 
 Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projektet till Customer Journey Analytics. Om en migrering misslyckas tar du bort de här elementen innan du försöker migrera igen.
 
@@ -112,11 +115,7 @@ Ta bort dessa element från Adobe Analytics-projektet innan du migrerar projekte
 
 * [Sidsammanfattning](/help/analyze/analysis-workspace/c-panels/page-summary.md)
 
-### Funktioner som inte stöds
-
 * [Bidragsanalys](/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md)
-
-* [Larm](/help/components/c-alerts/intellligent-alerts.md)
 
 ## Bestäm som organisation hur du ska mappa komponenter
 

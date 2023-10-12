@@ -3,9 +3,9 @@ title: Skapa en datafeed
 description: Lär dig hur du skapar en datafeed.
 feature: Data Feeds
 exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
-source-git-commit: 6681eedee327a5bb9cbfcb8ccf00ac32628f5a1f
+source-git-commit: d8bfad5d388f906c7c7301a9126813f5c2a5dbaa
 workflow-type: tm+mt
-source-wordcount: '3171'
+source-wordcount: '3159'
 ht-degree: 1%
 
 ---
@@ -117,9 +117,9 @@ När du skapar en datafeed kan du ge Adobe:
 
    +++Azure RBAC
 
-   Du kan skicka feeds direkt till en Azure-behållare med RBAC-autentisering. Den här måltypen kräver ett Bucket-namn, ett program-ID, ett klient-ID och en hemlig nyckel.
+   Du kan skicka feeds direkt till en Azure-behållare med RBAC-autentisering. Den här måltypen kräver ett program-ID, klientorganisations-ID och hemlighet.
 
-   Så här konfigurerar du en Azure RBAC-bucket som mål för en datafeed:
+   Så här konfigurerar du ett Azure RBAC-konto som mål för en datafeed:
 
    1. Om du inte redan har det skapar du ett Azure-program som Adobe Analytics kan använda för autentisering och tilldelar sedan åtkomstbehörigheter i åtkomstkontrollen (IAM).
 
@@ -177,9 +177,9 @@ När du skapar en datafeed kan du ge Adobe:
 
    +++Azure SAS
 
-   Du kan skicka feeds direkt till en Azure-behållare med SAS-autentisering. Den här måltypen kräver ett Bucket-namn, ett program-ID, klientorganisations-ID, nyckelvalvs-URI, nyckelvalvets hemliga namn och en hemlig nyckel.
+   Du kan skicka feeds direkt till en Azure-behållare med SAS-autentisering. Den här måltypen kräver ett program-ID, klientorganisations-ID, nyckelvalvs-URI, nyckelvalvets hemliga namn och hemlighet.
 
-   Så här konfigurerar du en Azure SAS-bucket som mål för en datafeed:
+   Så här konfigurerar du Azure SAS som mål för en datafeed:
 
    1. Om du inte redan har det skapar du ett Azure-program som Adobe Analytics kan använda för autentisering.
 
@@ -210,7 +210,7 @@ När du skapar en datafeed kan du ge Adobe:
          | Fält |  -funktion |
          |---------|----------|
          | [!UICONTROL **Kontonamn**] | Ett namn för Azure SAS-kontot. Det här namnet visas i dialogrutan [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
-         | [!UICONTROL **Borttagning av konto**] | En beskrivning av Azure SAS-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
+         | [!UICONTROL **Kontobeskrivning**] | En beskrivning av Azure SAS-kontot. Beskrivningen visas i [!UICONTROL **Välj konto**] nedrullningsbart fält och kan vara vilket namn du vill. |
          | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
          | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
          | [!UICONTROL **URI för nyckelvalv**] | <p>Sökvägen till SAS-token i Azure Key Vault.  Om du vill konfigurera Azure SAS måste du lagra en SAS-token som en hemlighet med Azure Key Vault. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>När nyckelvalvs-URI:n har skapats lägger du till en åtkomstprincip på nyckelvalvet för att ge behörighet till det Azure-program som du skapade. Mer information finns i [Microsoft Azure-dokumentation om hur du tilldelar en åtkomstprincip för nyckelvalv](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> |
