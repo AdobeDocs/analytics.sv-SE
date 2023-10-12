@@ -4,9 +4,9 @@ title: Hantera Data Warehouse-förfrågningar
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: 48455ca071b2137d4d1d9f8d6d5dce77aee25b5e
+source-git-commit: 43dea048c675f42b4687bcf0630557291d2e4baf
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '1259'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Så här redigerar du en schemalagd begäran:
 
 ## Visa historiken för en begäran
 
-Du kan visa historiken för alla rapporter som har körts.
+Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gjort.
 
 1. I Adobe Analytics: [!UICONTROL **verktyg**] > [!UICONTROL **Data Warehouse**].
 
@@ -74,9 +74,26 @@ Du kan visa historiken för alla rapporter som har körts.
 
 1. Välj [!UICONTROL **Visa historik**].
 
-   The [!UICONTROL **Visa begäran om Data Warehouse**] sidan visar en lista över enskilda rapportleveranser.
+   The [!UICONTROL **Visa begäran om Data Warehouse**] sidan visar en lista över enskilda rapportleveranser som är associerade med begäran.
+
+   Välj **Konfigurera kolumn** icon ![Ikon för att konfigurera kolumner](assets/configure-column-icon.png) om du vill dölja kolumner eller visa kolumner som inte visas som standard.
 
    ![Historiksida för begäran](assets/dw-request-history.png)
+
+   Följande kolumner är tillgängliga:
+
+   | Kolumn | Beskrivning |
+   |---------|----------|
+   | [!UICONTROL **Skapad den**] | Datum och tid då rapporten skapades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
+   | [!UICONTROL **Startdatum**] | Datum och tid då rapporten startades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
+   | [!UICONTROL **Slutförd den**] | Datum och tid då rapporten slutfördes.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
+   | [!UICONTROL **Uppdaterat**] | Datum och tid då rapporten senast uppdaterades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
+   | [!UICONTROL **Status**] | Status för rapportleveransen. Möjliga statusar är:<ul><li>[!UICONTROL **Skapad**]: Rapporten skapades men har ännu inte bearbetats.</li><li>[!UICONTROL **Väntande**]: Rapporten väntar på att bearbetas.</li><li>[!UICONTROL **Bearbetar**]: Rapporten bearbetas för närvarande.</li><li>[!UICONTROL **Slutförd**]: Rapporten har slutförts och är nu tillgänglig.</li><li>[!UICONTROL **Schemalagd**]: Rapporten är schemalagd men har inte startats ännu.</li><li>[!UICONTROL **Avbruten**]: Rapporten avbröts av användaren.</li><li>[!UICONTROL **Fel - Bearbetning**:] Ett fel uppstod i rapporten under bearbetningen. Kör rapporten igen och försök igen.</li><li>[!UICONTROL **Fel - det gick inte att skicka**]: Rapporten genererades men kunde inte levereras. Kontrollera [destinationskonfiguration](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)och skicka sedan rapporten igen.</li></ul>. |
+   | [!UICONTROL **Från**] | Startdatumet för den övergripande tidsramen som ingår i rapporten.<p>Detta visas i rapportsvitens tidszon.</p> |
+   | [!UICONTROL **Till**] | Slutdatumet för den övergripande tidsramen som ingår i rapporten. <p>Detta visas i rapportsvitens tidszon.</p> |
+   | [!UICONTROL **ID för äldre begäran**] | Det ID som används för att identifiera en rapport i det äldre Datan Warehouse. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
+   | [!UICONTROL **Rapport-ID**] | Det ID som används för att identifiera en rapport i det aktuella Datan Warehouse. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
+
 
 1. Välj en rapportleverans och välj sedan något av följande alternativ:
 
