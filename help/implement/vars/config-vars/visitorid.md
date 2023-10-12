@@ -3,9 +3,9 @@ title: visitorID
 description: Använd ett anpassat besökar-ID.
 feature: Variables
 exl-id: cb336042-01a1-4a66-a947-a221a7919c1b
-source-git-commit: 0e4afc2532c7a6fe90085ad6f24ac859bcd3baf7
+source-git-commit: 7adf39a7f4ae5515f629894f90f7e8edf4519893
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,7 @@ s.visitorID = "abc123";
 >[!CAUTION]
 >
 >En ogiltig implementering av anpassade besökar-ID:n kan leda till felaktiga data och dålig rapportprestanda. Om variabeln innehåller ett standardvärde (till exempel `"0"` eller `"NULL"`), Adobe behandlar de här träffarna som om de vore samma besökare. Detta resulterar i felaktiga data, med låga besökarantal och segment på besökarnivå som inte fungerar som förväntat. Felaktigt implementerade anpassade besökar-ID:n medför också stor belastning på bearbetningsservrar, vilket ökar [latens](/help/technotes/latency.md) och minska rapportens prestanda.
+
+## Besökar-ID som använder Web SDK och Experience Edge
+
+Med Experience Edge kan ni tillhandahålla flera identifierare med hjälp av XDM:s [Identitetskarta](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en#using-identitymap). Varje identitet i en identitetskarta har ett eget namnutrymme. Du kan ange vilket namnutrymme som ska användas för besökar-ID som en del av [datastream-konfiguration](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#analytics). När detta är konfigurerat används den automatiskt som besökar-ID i Analytics när du skickar en händelse med ett värde angivet för det här namnutrymmet.
