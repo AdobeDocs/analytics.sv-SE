@@ -4,9 +4,9 @@ title: Hantera Data Warehouse-förfrågningar
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: 43dea048c675f42b4687bcf0630557291d2e4baf
+source-git-commit: 02e743892d3e476a5614d9ad912523ce6315fe62
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gj
    | [!UICONTROL **Startdatum**] | Datum och tid då rapporten startades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
    | [!UICONTROL **Slutförd den**] | Datum och tid då rapporten slutfördes.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
    | [!UICONTROL **Uppdaterat**] | Datum och tid då rapporten senast uppdaterades.<p>Detta visas i tidszonen för den användare som initierade begäran.</p> |
-   | [!UICONTROL **Status**] | Status för rapportleveransen. Möjliga statusar är:<ul><li>[!UICONTROL **Skapad**]: Rapporten skapades men har ännu inte bearbetats.</li><li>[!UICONTROL **Väntande**]: Rapporten väntar på att bearbetas.</li><li>[!UICONTROL **Bearbetar**]: Rapporten bearbetas för närvarande.</li><li>[!UICONTROL **Slutförd**]: Rapporten har slutförts och är nu tillgänglig.</li><li>[!UICONTROL **Schemalagd**]: Rapporten är schemalagd men har inte startats ännu.</li><li>[!UICONTROL **Avbruten**]: Rapporten avbröts av användaren.</li><li>[!UICONTROL **Fel - Bearbetning**:] Ett fel uppstod i rapporten under bearbetningen. Kör rapporten igen och försök igen.</li><li>[!UICONTROL **Fel - det gick inte att skicka**]: Rapporten genererades men kunde inte levereras. Kontrollera [destinationskonfiguration](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)och skicka sedan rapporten igen.</li></ul>. |
+   | [!UICONTROL **Status**] | Status för rapportleveransen. Möjliga statusar är:<ul><li>[!UICONTROL **Skapad**]: Rapporten skapades men har ännu inte bearbetats.</li><li>[!UICONTROL **Väntande**]: Rapporten väntar på att bearbetas.</li><li>[!UICONTROL **Bearbetar**]: Rapporten bearbetas för närvarande.</li><li>[!UICONTROL **Slutförd**]: Rapporten har slutförts och är nu tillgänglig.</li><li>[!UICONTROL **Schemalagd**]: Rapporten är schemalagd men har inte startats ännu.</li><li>[!UICONTROL **Avbruten**]: Rapporten avbröts av användaren.</li><li>[!UICONTROL **Fel - Bearbetning**:] Rapporten påträffade ett fel och kunde inte bearbetas.</li><li>[!UICONTROL **Fel - det gick inte att skicka**]: Rapporten genererades men kunde inte levereras. Kontrollera [destinationskonfiguration](/help/export/data-warehouse/create-request/dw-request-report-destinations.md)och skicka sedan rapporten igen.</li></ul>. |
    | [!UICONTROL **Från**] | Startdatumet för den övergripande tidsramen som ingår i rapporten.<p>Detta visas i rapportsvitens tidszon.</p> |
    | [!UICONTROL **Till**] | Slutdatumet för den övergripande tidsramen som ingår i rapporten. <p>Detta visas i rapportsvitens tidszon.</p> |
    | [!UICONTROL **ID för äldre begäran**] | Det ID som används för att identifiera en rapport i det äldre Datan Warehouse. Detta ID kan behövas när du kontaktar Adobe kundtjänst. |
