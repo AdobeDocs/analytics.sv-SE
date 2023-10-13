@@ -4,9 +4,9 @@ title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
 exl-id: f638c6a9-1c2c-4936-a787-281269f95afc
-source-git-commit: 4da5da34518c3fb7350799c185faed789ef5a22b
+source-git-commit: b1f67ca51edf55805c8091db43d4f932463c5200
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1732'
 ht-degree: 1%
 
 ---
@@ -96,31 +96,27 @@ Håll pekaren över diagrammet om du vill visa tidpunkter där det högsta antal
 
   ![Diagram över distinkta användare](assets/distinct-users-graph.png)
 
-<!--
+#### Begärandiagram
 
-#### Requests graph
+I diagrammet Begäranden visas antalet bearbetade och slutförda begäranden för den valda rapportsviten under de senaste två timmarna.
 
-The Requests graph shows the number of processed and completed requests for the selected report suite over the last 2 hours. 
+Håll pekaren över diagrammet om du vill visa tidpunkter där det högsta antalet förfrågningar för den minuten var högst.
 
-Hover over the chart to view points in time where the maximum number of requests was highest for that minute.
+* **X-axel**: Antalet bearbetade och slutförda begäranden under den senaste 2-timmars tidsramen.
+* **Y-axel**: Antalet bearbetade begäranden (i lila) och slutförda begäranden (i grönt), per minut.
 
-* **X-axis**: The number of processed and completed requests over the last 2-hour time frame.
-* **Y-axis**: The number of processed requests (in purple) and completed requests (in green), by minute.
+  ![Diagram över distinkta användare](assets/requests-graph.png)
 
-   ![Distinct Users graph](assets/requests-graph.png)
+#### Köar diagram
 
-#### Queueing graph
+I ködiagrammet visas den genomsnittliga väntetiden i kön (i sekunder) för rapportbegäranden för den valda rapportsviten under de senaste två timmarna.
 
-The Queueing graph shows the average queue wait time (in seconds) for reporting requests for the selected report suite over the last 2 hours. 
+Håll pekaren över diagrammet om du vill visa tidpunkter där den maximala genomsnittliga väntetiden var högst för den minuten.
 
-Hover over the chart to view points in time where the maximum average wait time was highest for that minute.
+* **X-axel**: Genomsnittlig väntetid i kön för att rapportera begäranden under den senaste 2-timmarsperioden.
+* **Y-axel**: Genomsnittlig väntetid (i sekunder).
 
-* **X-axis**: The average queue wait time for reporting requests over the last a 2-hour time frame.
-* **Y-axis**: The average wait time (in seconds).
-
-   ![Distinct Users graph](assets/queueing-graph.png)
-
--->
+  ![Diagram över distinkta användare](assets/queueing-graph.png)
 
 ### Visa register {#view-table}
 
