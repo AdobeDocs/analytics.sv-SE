@@ -2,9 +2,9 @@
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 title: Översikt över Reporting Activity Manager
 feature: Admin Tools
-source-git-commit: fbb652c7f96197776cdb721c21b60e338a06f65d
+source-git-commit: 02273690b98ca456862194e814ff2c72f87d7b41
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Reporting Activity Manager ger följande fördelar:
 
 * Gör att du kan övervaka och hantera rapporttapaciteten för varje rapportsvit i organisationen.
 * Informerar dig i realtid om din nuvarande rapporteringskapacitet i alla rapportsviter.
-* Innehåller detaljerad rapportfrågeinformation om aktuella rapporteringsbegäranden, oavsett om de står i kö eller pågår.
+* Innehåller detaljerad rapportinformation om aktuella rapporteringsbegäranden, oavsett om de står i kö eller pågår.
 * Gör att du kan optimera rapporteringskön genom att prioritera vissa och avbryta andra rapporteringsbegäranden för att frigöra kapacitet. Den besvarar frågor som: Är den här rapporten nödvändig just nu eller kan jag avbeställa den till förmån för mer brådskande rapporter?
 * Gör att du kan begränsa framtida begäranden för en angiven tidsperiod. Du kan begränsa specifika begäranden eller du kan begränsa alla begäranden från en viss användare eller begäranden som är kopplade till ett visst projekt.
 
