@@ -1,11 +1,11 @@
 ---
 title: tidsstämpel
-description: Ange tidsstämpeln för träffen manuellt.
+description: Ange tidsstämpeln manuellt.
 feature: Variables
 exl-id: 9d5ce5ef-2d84-4f65-b2e3-7aa3e219bc34
-source-git-commit: a41fed835b6dcd3979111a7b13eaf33b63a3b2ec
+source-git-commit: 4f9af1b3a1337b0e24b718362a502ff3f0acb5ef
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ The `timestamp` variabeln ställer in tidsstämpeln för träffen för tidsstäm
 
 >[!WARNING]
 >
->Använd inte den här variabeln om rapportsviten inte uttryckligen har konfigurerats för att acceptera tidsstämplade träffar. AppMeasurement ställer automatiskt in tiden för en träff för rapportsviter som inte stöder tidsstämplade träffar. Om du skickar en träff med den här variabeln till en rapportserie som inte stöder tidsstämplar, kommer dessa data att gå förlorade permanent.
+>Använd inte den här variabeln om rapportsviten inte uttryckligen har konfigurerats för att acceptera tidsstämplade träffar. AppMeasurementet ställer automatiskt in tiden för en träff för rapportsviter som inte stöder tidsstämplade träffar. Om du skickar en träff med den här variabeln till en rapportserie som inte stöder tidsstämplar, kommer dessa data att gå förlorade permanent.
 
 ## Tidsstämpla med Web SDK
 
@@ -24,11 +24,11 @@ Tidsstämpeln är [mappas för Adobe Analytics](https://experienceleague.adobe.c
 
 ## Tidsstämpla med Adobe Analytics-tillägget
 
-Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren efter AppMeasurement-syntax.
+Det finns inget dedikerat fält i Adobe Analytics-tillägget som kan använda den här variabeln. Använd den anpassade kodredigeraren enligt AppMeasurementen syntax.
 
-## s.timestamp i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.timestamp i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.timestamp` variabeln är en sträng som innehåller datum och tid för träffen. Giltiga tidsstämpelformat är [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) och [Unix-tid](https://en.wikipedia.org/wiki/Unix_time).
+The `s.timestamp` variabeln är en sträng som innehåller datum och tid för träffen. Giltiga tidsstämpelformat är [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) och [Unix-tid](https://en.wikipedia.org/wiki/Unix_time) på några sekunder.
 
 ```js
 // Timestamp using ISO 8601
@@ -49,7 +49,7 @@ s.timestamp = new Date().toISOString();
 Datum och tid uttryckt i [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) kan ta flera olika former. Adobe stöder inte alla funktioner i ISO 8601.
 
 * Både datum och tid måste anges, åtskilda med `T`.
-* Timmar och minuter krävs. sekunder är valfria men rekommenderas.
+* Timmar och minuter krävs. Sekunder är valfria men rekommenderas.
 * Veckodatum och ordningstal stöds inte.
 * Datumet kan vara i standardformat eller utökat format. Till exempel: `2020-01-01T00:00:00Z` och `20200101T000000Z` är båda giltiga.
 * Andel minuter och sekunder är tekniskt giltiga, men bråktalen ignoreras av Adobe.
