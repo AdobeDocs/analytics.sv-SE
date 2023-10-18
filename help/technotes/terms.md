@@ -3,9 +3,9 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: 13d1809d1e32bc0470c77b7c04061db4a8f2c80e
+source-git-commit: d40e03ce743c286abe8364ff99f5c3c3a1fe6ecc
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2577'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Klickströmsdatafeed:** Se Dataflöde.
 * **Kohort:** En grupp personer som delar gemensamma egenskaper under en viss tidsperiod. Se [Vad är kohortanalys?](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) i användarhandboken för Analysera.
 * **Samlingsserver:** Se Datainsamlingsserver.
+* **Komponent:** Komponenterna i Analysis Workspace består av mått, mått, segment och datumintervall som du kan dra och släppa i ett projekt. Se [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md) i användarhandboken för Analysera.
 * **Kontextdatavariabler:** Tillfälliga variabler som endast används i bearbetningsregler. Variabelvärden för kontextdata förloras permanent om en bearbetningsregel inte kopierar dem till en konverterings- eller trafikvariabel. Se [Sammanhangsdatavariabler](../implement/vars/page-vars/contextdata.md) i Implementeringshandboken.
 * **Konverteringsvariabel:** Kallas också eVars. Sparar ett anpassat värde och bevarar variabelvärdet tills det upphör att gälla. Se [eVar](/help/components/dimensions/evar.md) -dimensionen i användarhandboken för komponenter.
 * **Korrelation:** Används inte längre som term; ersätts med dimensionsuppdelning. I tidigare versioner av Adobe Analytics gav korrelations möjlighet att bryta ned trafikvariabler. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
