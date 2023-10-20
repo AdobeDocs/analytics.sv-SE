@@ -3,7 +3,7 @@ title: Variabelmappning för analyser i Adobe Experience Edge
 description: Visa vilka XDM-fält som Edge automatiskt mappar till analysvariabler.
 exl-id: fbff5c38-0f04-4780-b976-023e207023c6
 feature: Implementation Basics
-source-git-commit: 13d1809d1e32bc0470c77b7c04061db4a8f2c80e
+source-git-commit: 79336a9ce525dd551efdf7fe0391a3f38a3b66e1
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 0%
@@ -106,8 +106,8 @@ Tidigare uppdateringar av tabellen finns på den här sidans [implementeringshis
 | `media.mediaTimed.thirdQuartiles.value` | Måtten för Media Analytics [Sjuttiofem % Progress Marker](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#seventy-five-progress-marker). |
 | `media.mediaTimed.timePlayed.value` | Måtten för Media Analytics [Innehållstid](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#content-time-spent). |
 | `media.mediaTimed.totalTimePlayed.value` | Måtten för Media Analytics [Medietid tillagd](https://experienceleague.adobe.com/docs/media-analytics/using/metrics-and-metadata/audio-video-parameters.html#media-time-spent). |
-| `placeContext.geo.latitude` | Den mobila dimensionen Latitude. |
-| `placeContext.geo.longitude` | Den mobila dimensionens longitud. |
+| `placeContext.geo._schema.latitude` | Den mobila dimensionen Latitude. |
+| `placeContext.geo._schema.longitude` | Den mobila dimensionens longitud. |
 | `placeContext.geo.postalCode` | The [Postnummer](../../components/dimensions/zip-code.md) dimension. |
 | `placeContext.geo.stateProvince` | The [USA](../../components/dimensions/us-states.md) dimension. |
 | `placeContext.localTime` | Hjälper till att fylla i [Tidszoner](/help/analyze/reports-analytics/reports.md) i Rapport och analys. Visas som `t_time_info` in [Dataflöden](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md). |
