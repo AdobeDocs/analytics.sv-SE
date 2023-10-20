@@ -1,41 +1,43 @@
 ---
 title: trackInlineStats
-description: Aktivera eller inaktivera aktivitetskartan i implementeringen.
-keywords: inaktivera aktivitetskarta
+description: Aktivera eller inaktivera ClickMap i implementeringen.
+keywords: inaktivera klickkarta
 feature: Variables
 exl-id: a52adc1d-1be7-4002-b393-7ce66332b483
-source-git-commit: 9e20c5e6470ca5bec823e8ef6314468648c458d2
+source-git-commit: a3df69f7de45ba3694e1212e5c16a10bb4602cd6
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '178'
+ht-degree: 1%
 
 ---
 
 # trackInlineStats
 
-Aktivitetskartan är en funktion i Adobe Analytics som samlar in data om var besökarna klickar och vad de klickar på. Du kan visa dessa data i Analytics-rapporter eller genom att använda en webbläsartilläggsövertäckning. Aktivera den här variabeln om du vill använda funktioner för aktivitetskarta.
+>[!IMPORTANT]
+>
+>Den här variabeln har tagits bort. Se [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) i stället.
 
-När det här alternativet är aktiverat samlar AppMeasurement in information om länken och skickar dessa data i nästa bildförfrågan. Information från varje klick lagras i en cookie med etiketten `s_sq`.
+ClickMap är en pensionerad funktion i Adobe Analytics som samlar in data om var besökarna klickar och vad de klickar på. Funktionen har ersatts med [Activity Map](/help/analyze/activity-map/activity-map.md).
 
-## Activity Map med Web SDK
+När det här alternativet är aktiverat samlar AppMeasurementet in information om länken och skickar dessa data i nästa bildförfrågan. Information från varje klick lagras i en cookie som är märkt `s_sq`.
 
-Web SDK har ännu inte stöd för datainsamling från Activity Map.
+## Aktivera ClickMap med tillägget Adobe Analytics
 
-## Aktivera Klickkarta med Adobe Analytics-tillägget
-
-[!UICONTROL Enable Clickmap] är en kryssruta under [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
+[!UICONTROL Enable ClickMap] är en kryssruta under [!UICONTROL Link Tracking] när du konfigurerar Adobe Analytics-tillägget.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den önskade taggegenskapen.
 3. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics.
-4. Expandera [!UICONTROL Link Tracking] dragspelspanel, som visar [!UICONTROL Enable Clickmap] kryssrutan.
+4. Expandera [!UICONTROL Link Tracking] dragspelspanel, som visar [!UICONTROL Enable ClickMap] kryssrutan.
 
-Klicka i kryssrutan för att aktivera spårning av aktivitetskarta.
+>[!NOTE]
+>
+>Den här kryssrutan skiljer sig från [!UICONTROL Use Activity Map] kryssrutan, som finns under [!UICONTROL Library management] dragspelspanel.
 
-## s.trackInlineStats i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.trackInlineStats i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
-The `s.trackInlineStats` är ett booleskt värde som aktiverar eller inaktiverar spårning av aktivitetskarta. Standardvärdet är `false`. Ange det här värdet till `true` om du vill aktivera datainsamling för aktivitetskarta.
+The `s.trackInlineStats` är ett booleskt värde som aktiverar eller inaktiverar spårning av ClickMap. Eftersom funktionen är inaktiv rekommenderar Adobe inte att du ställer in den här variabeln. Standardvärdet är `false`.
 
 ```js
-s.trackInlineStats = true;
+s.trackInlineStats = false;
 ```
