@@ -4,9 +4,9 @@ title: Hantera Data Warehouse-förfrågningar
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: d40e03ce743c286abe8364ff99f5c3c3a1fe6ecc
+source-git-commit: 195750917731602ffd3a32f5216db8fe1b174cc0
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1290'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 >Om din organisation ännu inte har den nya Datan Warehouse, som snart kommer att vara tillgänglig för alla kunder, använder du informationen i [Hantera förfrågningar från Data Warehouse (gammal upplevelse)](#manage-data-warehouse-requests-old-experience) längst ned på sidan.
 
 
-Du kan visa och hantera förfrågningar från Data Warehouse som du har gjort. Endast administratörer kan visa och hantera förfrågningar från andra användare i organisationen där de har administratörsbehörighet.
+Du kan visa och hantera förfrågningar från Data Warehouse som du har gjort. Endast administratörer kan visa och hantera förfrågningar som gjorts av andra användare i organisationen.
 
 I följande avsnitt beskrivs aktiviteter som du kan utföra när du hanterar begäranden.
 
@@ -47,6 +47,8 @@ Tänk på följande när du redigerar begäranden:
 * Endast begäranden som har konfigurerats för att köras enligt ett schema kan redigeras.
 
 * Alla fält som är associerade med begäran kan inte redigeras. Fält som inte kan redigeras är nedtonade.
+
+* Administratörer som redigerar en annan användares begäran måste välja ett nytt konto och en plats som de har åtkomst till.
 
 Så här redigerar du en schemalagd begäran:
 
