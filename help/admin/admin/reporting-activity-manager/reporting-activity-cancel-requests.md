@@ -2,9 +2,9 @@
 description: Lär dig mer om hur du använder Rapporteringsaktivitetshanteraren för att diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå.
 title: Avbryt rapportbegäranden i Rapporteringsaktivitetshanteraren
 feature: Admin Tools
-source-git-commit: 3c65e50bbfdbb011ef7b08d48a0ac3c87d7666b7
+source-git-commit: 743bd30f8606b05d799f9089d2f14863fcb18feb
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,11 @@ Tänk på följande när du avbryter rapportbegäranden:
 
 * Du kan avbryta specifika begäranden, avbryta alla begäranden från en viss användare eller avbryta alla begäranden som rör ett visst projekt.
 
+  När du avbryter en begäran registreras åtgärden i [Loggar](/help/admin/admin/logs.md). The [!UICONTROL **Händelsetyp**] kolumnen visas som [!UICONTROL **Administratörsåtgärd**] och en beskrivning av annulleringen finns i [!UICONTROL **Händelse**] kolumn.
+
 * När du avbryter begäranden kan du även välja att begränsa efterföljande begäranden för en viss tidsperiod.
+
+  När du begränsar en efterföljande begäran registreras åtgärden i [Loggar](/help/admin/admin/logs.md). The [!UICONTROL **Händelsetyp**] kolumnen visas som [!UICONTROL **Administratörsåtgärd**] och en beskrivning av begränsningen finns i [!UICONTROL **Händelse**] kolumn.
 
 * Du kan inte avbryta en begäran om [!UICONTROL **Användare**] kolumnen i en begäran visas som [!UICONTROL **Okänd**]. När detta inträffar innebär det att användaren befinner sig i ett inloggningsföretag där du inte har administratörsbehörighet.
 

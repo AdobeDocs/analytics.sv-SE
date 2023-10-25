@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: a916afbc15514430cd13673bb642ebc720664e35
+source-git-commit: 743bd30f8606b05d799f9089d2f14863fcb18feb
 workflow-type: tm+mt
-source-wordcount: '5067'
+source-wordcount: '5096'
 ht-degree: 25%
 
 ---
@@ -25,6 +25,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **Oktober 2023** | |
+| Logginformation har lagts till i Rapporteringsaktivitetshanteraren | Lagt till information som [annulleringar och efterföljande begränsningar av rapporteringsaktivitet](/help/admin/admin/reporting-activity-manager/reporting-activity-cancel-requests.md) i Rapporteringsaktivitetshanteraren hämtas i [Loggar](/help/admin/admin/logs.md). |
 | **September 2023** | |
 | Uppdaterad struktur för artiklar för panelen Medieuppspelningstid för spenderad tid | Mappen Media Playback Time Spent har tagits bort och innehållet i mappen har kombinerats till en enda artikel: [Medieuppspelningstid spenderad panel](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Den här ändringen är mer i linje med dokumentationen för andra paneler.</p> |
 | Komma igång med innehållsförbättringar | Lagt till information som beskriver viktiga uppgifter och resurser för att komma igång för administratörer, analytiker, slutanvändare och utvecklare. Följande nya artiklar är nu tillgängliga: <ul><li>[Kom igång (efter roll)](/help/analyze/get-started/get-started-by-role.md)</li><li>[Förstå analysgränssnittet](/help/analyze/get-started/analytics-interface.md)<li>[Användningsexempel](/help/analyze/get-started/use-cases.md)</li></ul> |

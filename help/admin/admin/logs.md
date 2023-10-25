@@ -3,9 +3,9 @@ description: Logga filer som hjälper dig att se när användare loggar in, dera
 title: Loggar
 feature: Admin Tools
 exl-id: 43f79e2a-2cb9-47eb-982a-54714c9cbafc
-source-git-commit: d198e8ef0ec8415a4a555d3c385823baad6104fe
+source-git-commit: 743bd30f8606b05d799f9089d2f14863fcb18feb
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '586'
 ht-degree: 2%
 
 ---
@@ -32,16 +32,16 @@ The [!UICONTROL Usage and Access Log] Med kan du utvärdera rapportanvändning p
 | Report Suite | Filtrera loggen med ett specifikt rapportpaket-ID. |
 | Händelsetyp | Filtrera loggen efter en händelsetyp. Välj en händelsetyp i listrutan. Se den fullständiga listan över händelsetyper nedan. |
 | Händelse | Filtrera loggen med ett ord eller en fras i händelsebeskrivningen. |
-| Hämta rapport | Exporterar innehållet i [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
+| Ladda ned rapport | Exporterar innehållet i [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
 
 ### Händelsetyper
 
 | Händelsetyp | Beskrivning |
 | --- | --- |
-| Ingen kategori | Kan vara vilken händelsetyp som helst. |
+| Ingen kategori | Det kan vara vilken händelsetyp som helst. |
 | Inloggningen misslyckades | Användarinloggningsprocessen misslyckades. |
 | Inloggningen har slutförts | Användaren har loggat in. |
-| Administratörsåtgärd | En administratörsåtgärd inträffade, till exempel redigering av en rapportserie, ändring av företagsinställningar, skapande av användare. |
+| Administratörsåtgärd | En administratörsåtgärd inträffade, som att redigera en rapportserie, ändra företagsinställningar, skapa en användare, avbryta en rapportbegäran osv. |
 | Ändring av säkerhetsinställning | En säkerhetsinställning har ändrats. |
 | Rapporten har visats | En rapport om rapporter och analyser har visats. |
 | Rapporten har hämtats | En rapport för rapporter och analyser hämtades. |
@@ -87,4 +87,4 @@ Verktyg som kan ändra en rapportserie utanför [!UICONTROL Admin Tools] inklude
 | Inloggning | Filtrera loggen efter användarnamn. |
 | IP | Filtrera loggen med en IP-adress. |
 | Händelse | Filtrera loggen med ett ord eller en fras i händelsebeskrivningen. |
-| Hämta rapport | Exporterar innehållet i [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
+| Ladda ned rapport | Exporterar innehållet i [!UICONTROL Usage & Access Log] till en tabbavgränsad fil. |
