@@ -3,9 +3,10 @@ description: Konfigurera molnimportkontot och platsen där klassificeringsdata k
 keywords: Analysis Workspace
 title: Konfigurera molnimportkonton
 feature: Classifications
-source-git-commit: 6010c65571b326759eeddc5e71f8a52212ddbb98
+exl-id: 40d3d3f1-1047-4c37-8caf-6b0aabaa590a
+source-git-commit: c43d7bbdad0ad0265e038ee273c74bec136f1c72
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -22,15 +23,15 @@ Du måste konfigurera Adobe Analytics med den information som krävs för att ko
 
 Så här konfigurerar du ett molnimportkonto:
 
-1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
-1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platsautentiseringsuppgifter**] -fliken.
+1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
+1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platsreferenser**] -fliken.
 1. Välj [!UICONTROL **Lägg till konto**]. <!-- add screenshot? -->
 
    Dialogrutan Lägg till konto visas.
 1. Ange följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Platskontonamn**] | Namnet på platskontot. Det här namnet visas när du skapar en plats | | [!UICONTROL **Beskrivning av platskonto**] | Ange en kort beskrivning av kontot så att det kan särskiljas från andra konton av samma kontotyp. | | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot. |
 1. I [!UICONTROL **Kontoegenskaper**] anger du information som är specifik för den kontotyp som du har valt.
 
-   Utöka det avsnitt nedan som motsvarar konfigurationsinstruktionerna [!UICONTROL **Kontotyp**] som du valde.
+   Utöka det avsnitt nedan som motsvarar [!UICONTROL **Kontotyp**] som du valde.
 
    +++Amazon S3 Roll ARN
 
@@ -39,7 +40,6 @@ Så här konfigurerar du ett molnimportkonto:
    | Fält |  -funktion |
    |---------|----------|
    | [!UICONTROL **Roll-ARN**] | Du måste ange en roll-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/). |
-   | [!UICONTROL **Användar-ARN**] | Användar-ARN (Amazon Resource Name) tillhandahålls av Adobe. Du måste koppla den här användaren till den princip du skapade. |
 
    {style="table-layout:auto"}
 
@@ -63,11 +63,11 @@ Så här konfigurerar du ett molnimportkonto:
 
    | Fält |  -funktion |
    |---------|----------|
-   | [!UICONTROL **Program-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Klient-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **URI för nyckelvalv**] | <p>Sökvägen till SAS-token i Azure Key Vault.  Om du vill konfigurera Azure SAS måste du lagra en SAS-token som en hemlighet med Azure Key Vault. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>När nyckelvalvs-URI:n har skapats lägger du till en åtkomstprincip på nyckelvalvet för att ge behörighet till det Azure-program som du skapade. Mer information finns i [Microsoft Azure-dokumentation om hur du tilldelar en åtkomstprincip för nyckelvalv](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p> |
-   | [!UICONTROL **Nyckelvalvets hemliga namn**] | Det hemliga namn du skapade när du lade till hemligheten i Azure Key Vault. I Microsoft Azure finns den här informationen i nyckelvalvet som du skapade på **Nyckelvalv** inställningssidor. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
-   | [!UICONTROL **Hemlighet för platskonto**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Nyckelvalvets hemliga namn**] | Det hemliga namn du skapade när du lade till hemligheten i Azure Key Vault. I Microsoft Azure finns den här informationen i nyckelvalvet som du skapade på **Key Vault** inställningssidor. Mer information finns i [Microsoft Azure-dokumentation om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
+   | [!UICONTROL **Hemlighet för platskonto**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
 
    {style="table-layout:auto"}
 
@@ -79,9 +79,9 @@ Så här konfigurerar du ett molnimportkonto:
 
    | Fält |  -funktion |
    |---------|----------|
-   | [!UICONTROL **Program-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Klient-ID**] | Kopiera detta ID från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Översikt** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Hemlighet för platskonto**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
+   | [!UICONTROL **Hemlighet för platskonto**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på **Certifikat och hemligheter** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
 
    {style="table-layout:auto"}
 
@@ -90,4 +90,3 @@ Så här konfigurerar du ett molnimportkonto:
 1. Välj [!UICONTROL **Spara**].
 
 1. Fortsätt med [Konfigurera platser för molnimport](/help/components/locations/configure-import-locations.md).
-

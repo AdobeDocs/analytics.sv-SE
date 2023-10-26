@@ -4,7 +4,7 @@ title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
 exl-id: f638c6a9-1c2c-4936-a787-281269f95afc
-source-git-commit: 3c65e50bbfdbb011ef7b08d48a0ac3c87d7666b7
+source-git-commit: c43d7bbdad0ad0265e038ee273c74bec136f1c72
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 1%
@@ -140,7 +140,7 @@ När du väljer [!UICONTROL **Begäran**] är följande kolumner tillgängliga i
 
 | Kolumn | Beskrivning |
 | --- | --- |
-| [!UICONTROL **ID för begäran**] | Ett unikt ID som kan användas för felsökning. Om du vill kopiera ID:t markerar du begäran och väljer sedan alternativet [!UICONTROL **Kopiera begäran-ID**]. |
+| [!UICONTROL **ID för begäran**] | Ett unikt ID som kan användas för felsökning. Om du vill kopiera ID:t markerar du begäran och väljer sedan alternativet [!UICONTROL **Kopiera begärande-ID**]. |
 | [!UICONTROL **Körning av tid**] | Hur länge begäran har körts. |
 | [!UICONTROL **Starttid**] | När begäran började bearbetas (baserat på administratörens lokala tid). |
 | [!UICONTROL **Väntetid**] | Hur länge begäran har väntat innan den bearbetas. Detta värde är vanligtvis&quot;0&quot; när det finns tillräckligt med kapacitet. |

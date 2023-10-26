@@ -3,9 +3,10 @@ description: Konfigurera molnimportkontot och platsen där klassificeringsdata k
 keywords: Analysis Workspace
 title: Konfigurera platser för molnimport
 feature: Classifications
-source-git-commit: 4efb0623d734419c376ca5f2bf2bbd94097ee4e4
+exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
+source-git-commit: c43d7bbdad0ad0265e038ee273c74bec136f1c72
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '542'
 ht-degree: 1%
 
 ---
@@ -21,7 +22,7 @@ Den här processen består av att lägga till och konfigurera kontot (till exemp
 Så här konfigurerar du en molnimportplats:
 
 1. Du måste lägga till ett konto innan du kan lägga till en plats. Om du inte redan har det lägger du till ett konto enligt beskrivningen i [Konfigurera molnimportkonton](/help/components/locations/configure-import-accounts.md).
-1. I Adobe Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
+1. I Adobe Analytics: [!UICONTROL **Komponenter**] > [!UICONTROL **Platser**].
 1. På [!UICONTROL Locations] väljer du [!UICONTROL **Platser**] -fliken.
 1. Välj [!UICONTROL **Lägg till plats**]. <!-- add screenshot? -->
 
@@ -38,7 +39,7 @@ Så här konfigurerar du en molnimportplats:
 
    | Fält |  -funktion |
    |---------|----------|
-   | [!UICONTROL **Bucketnamn**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. Se till att användar-ARN som tillhandahålls av Adobe har åtkomst till att överföra filer till den här bucket. |
+   | [!UICONTROL **Buckennamn**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. |
    | [!UICONTROL **Nyckelprefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
@@ -51,7 +52,7 @@ Så här konfigurerar du en molnimportplats:
 
    | Fält |  -funktion |
    |---------|----------|
-   | [!UICONTROL **Bucketnamn**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. Se till att du har gett Adobe tillåtelse att överföra filer till denna bucket till säkerhetsobjektet. |
+   | [!UICONTROL **Buckennamn**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. Se till att du har gett Adobe tillåtelse att överföra filer till denna bucket till säkerhetsobjektet. |
    | [!UICONTROL **Nyckelprefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
 
    {style="table-layout:auto"}
