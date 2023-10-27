@@ -5,7 +5,7 @@ uuid: 30433319-d0e6-4977-951a-4492b356e1f2
 feature: Activity Map
 role: User, Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
-source-git-commit: 87c2f559990674ee738e1ad57166cf192d58232c
+source-git-commit: d4caf0ddc5cf5402bfef94a64db1c00e1c725658
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 3%
@@ -18,27 +18,27 @@ Beskriver de steg som Analytics Admin måste slutföra för att aktivera Activit
 
 ## Steg 1. Uppdatera implementeringskoden {#section_5D1586289DF2489289B1B6C1C80C300D}
 
-Modulen Activity Map är en del av AppMeasurement.js och Web SDK (version 2.15.0 eller senare).
-AppMeasurement-biblioteket eller Web SDK läser in modulen Activity Map när den instansieras.
+Modulen Activity Map ingår i AppMeasurement.js och Web SDK (version 2.15.0 eller senare).
+Modulen Activity Map läses in när AppMeasurementet eller Web SDK instansieras.
 
 >[!NOTE]
 >
->Data från Activity Map kan inte samlas in om du inte uppdaterar till **AppMeasurement** **version 1.6** eller högre eller **Web SDK** **version 2.15.0** eller högre
+>Data från Activity Map kan inte samlas in om du inte uppdaterar till **AppMeasurement** **version 1.6** eller högre eller **Web SDK** **version 2.15.0** eller senare.
 
 
-1. Hämta det senaste Javascript-biblioteket beroende på om du använder AppMeasurement eller Web SDK.
+1. Hämta det senaste JavaScript-biblioteket beroende på om du använder AppMeasurement eller Web SDK.
 
-   - **AppMeasurement** kod (AppMeasurement_Javascript-1.6.zip) genom att gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** och [implementera](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html).
+   - **AppMeasurement** code (AppMeasurement_Javascript-1.6.zip) genom att gå till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Code manager]** och [implementera](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html).
 
-      Vi har tagit med några [exempelkod](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md) för att hjälpa dig att visualisera de ändringar som har gjorts i koden genom att inkludera modulen Activity Map.
+     Vi har tagit med några [exempelkod](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md) för att hjälpa dig att visualisera de ändringar som har gjorts i koden genom att ta med modulen Activity Map.
 
-   - **Web SDK** kod (alloy.js). Se [Installera SDK - alternativ 2: Installera den fördefinierade fristående versionen](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-2%3A-installing-the-prebuilt-standalone-version) för mer information. Se till att du använder version 2.15 eller senare.
+   - **Web SDK** kod (alloy.js). Se [Installera SDK - alternativ 2: Installera den färdigbyggda fristående versionen](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=en#option-2%3A-installing-the-prebuilt-standalone-version) för mer information. Se till att du använder version 2.15 eller senare.
 
-      Se [Spåra länkar](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) om du vill ha information om hur du implementerar länkspårning och hur du aktiverar aktivitetsmappning genom att hämta `region` för det klickade elementet HTML.
+     Se [Spåra länkar](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) om du vill ha information om hur du implementerar länkspårning och hur du aktiverar aktivitetsmappning genom att hämta `region` för det klickade HTML-elementet.
 
-      >[!NOTE]
-      >
-      >Om du aktiverar länkspårning med Web SDK skickas länkhändelser när en kund navigerar från en sida till nästa. Detta skiljer sig från hur AppMeasurement fungerar och kan eventuellt resultera i extra fakturerbara träffar som skickas till Adobe.
+     >[!NOTE]
+     >
+     >Om du aktiverar länkspårning med Web SDK skickas länkhändelser när en kund navigerar från en sida till nästa. Detta skiljer sig från hur AppMeasurement fungerar och kan eventuellt resultera i extra fakturerbara träffar som skickas till Adobe.
 
 
 1. Validera implementeringen:
@@ -71,7 +71,7 @@ Först måste du aktivera Activity Map-rapporter på rapportsvitnivå.
 
 1. [Lägg till användare i den här gruppen](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html) och **[!UICONTROL Save Group]**.
 
-1. På så sätt kan administratörsanvändarna hämta Activity Map från  **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL ActivityMap]** .
+1. På så sätt kan dina Admin-användare hämta Activity Map från  **[!UICONTROL Adobe Analytics]** > **[!UICONTROL Tools]** > **[!UICONTROL ActivityMap]** .
 
 >[!NOTE]
 >
