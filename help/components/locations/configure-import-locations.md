@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Konfigurera platser för molnimport
 feature: Classifications
 exl-id: 55179868-6228-44ff-835c-f4a7b38e929b
-source-git-commit: c43d7bbdad0ad0265e038ee273c74bec136f1c72
+source-git-commit: f71b80dce9d447c431130901d86947d23e28d378
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '583'
 ht-degree: 1%
 
 ---
@@ -88,4 +88,11 @@ Så här konfigurerar du en molnimportplats:
 
 1. Välj [!UICONTROL **Spara**].
 
-   Nu kan du importera data till kontot och platsen som du konfigurerade.
+   Nu kan du importera data från kontot och platsen som du konfigurerade.
+
+   Data tas inte bort från molnmålet när de har importerats.
+
+   >[!NOTE]
+   >
+   >   Om du tidigare använt [FTP för att importera klassificeringar](/help/components/classifications/importer/c-uploading-saint-data-files-via-ftp.md) till Adobe Analytics måste du överföra en FIN-fil. Den här FIN-filen behövs inte vid import från molnkonton.
+

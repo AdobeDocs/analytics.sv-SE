@@ -3,7 +3,7 @@ description: Så här överför du datafiler via FTP.
 title: FTP-import
 feature: Classifications
 exl-id: 3e93b35c-6f65-4a93-887d-d94e4d359bdc
-source-git-commit: d21903fe5683cadf2e235f5a1f911e2a62881c58
+source-git-commit: f71b80dce9d447c431130901d86947d23e28d378
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 >
 >FTP rekommenderas inte eftersom det är en okrypterad metod för att dela filer, vilket innebär att alla kan fånga upp filinnehållet samt användarnamnet och lösenordet som används för kontot.
 >
->Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera platser för molnimport](/help/components/locations/configure-import-accounts.md).
+>Konfigurera istället ett molnkonto enligt beskrivningen i [Konfigurera molnimportkonton](/help/components/locations/configure-import-accounts.md).
 
 Steg som beskriver hur du överför datafiler via FTP.
 
@@ -40,7 +40,7 @@ Efter en inledande överföring i en rapportserie (för en viss variabel eller r
 
 Varje nytt nyckelvärde som du överför räknas mot dina unika värden för den variabeln för månaden.
 
-Om du har överskridit dina unika värden för månaden visas inte motsvarande klassificeringsdata för de unika värdena i rapporten. Du kan se klassificeringarna i Data warehouse.
+Om du har överskridit dina unika värden för månaden visas inte motsvarande klassificeringsdata för de unika värdena i rapporten. Dessa klassificeringar visas i Data Warehouse.
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Så här importerar du klassificeringar via FTP:
 
 1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Classification Importer]**.
 1. Klicka **[!UICONTROL Import File]** och sedan klicka **[!UICONTROL FTP Import]**.
-1. Bredvid det FTP-konto som du vill använda klickar du på **[!UICONTROL View]**.
+1. Klicka på bredvid det FTP-konto som du vill använda **[!UICONTROL View]**.
 1. Använd FTP-åtkomstinformationen (värd, inloggning, lösenord) för att komma åt FTP-servern via en valfri FTP-klient.
 1. Överför datafilen ( `.tab` eller `.txt`) till FTP-servern.
 1. När du har överfört datafilen överför du en FIN-fil som anger att filen är klar att bearbetas.
