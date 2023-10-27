@@ -4,15 +4,15 @@ audience: end-user
 user-guide-title: Integreringshandbok för Analytics
 breadcrumb-title: Användarhandbok om integrering
 user-guide-description: Konfigurera integreringar med andra Adobe Experience Cloud-lösningar, som t.ex. Audience Manager och Advertising Cloud.
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+source-git-commit: 241a3a6c7df71838d15e8479d47ef88f758c5848
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 63%
+source-wordcount: '184'
+ht-degree: 61%
 
 ---
 
 
-# Adobe Analytics Integration Guide {#integration}
+# Adobe Analytics Integreringshandbok {#integration}
 
 + [Analytics-integrering](home.md)
 + [Versionsinformation om Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
@@ -44,4 +44,4 @@ ht-degree: 63%
 + [Integrera Adobe Analytics-data med Adobe Campaign Classic](analytics-to-campaign-classic.md)
 + [AEM Assets-rapportering](aem-assets-reporting.md)
 + [Activity Map-rapportering](activitmap-reporting.md)
-+ [Adobe Exchange](https://www.adobeexchange.com/experiencecloud.analytics.html#product)
++ [Adobe Exchange](https://exchange.adobe.com)
