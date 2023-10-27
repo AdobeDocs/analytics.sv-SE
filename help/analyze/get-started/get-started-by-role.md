@@ -2,10 +2,11 @@
 description: Allmän översiktsinformation om Adobe Analytics, inklusive information om Analytics-gränssnittet samt komma igång-information för administratörer, analytiker, användare och utvecklare.
 title: Kom igång för administratörer, analytiker, slutanvändare och utvecklare
 feature: Analytics Basics
-source-git-commit: 5ee4e5aa970bb24828092c04fc31cc53f43c4ade
+exl-id: 11800de5-224a-4bd2-8cb1-a6318925db71
+source-git-commit: d64f6687dd6e6f688d332926e6d90fa699cac968
 workflow-type: tm+mt
-source-wordcount: '1901'
-ht-degree: 4%
+source-wordcount: '1891'
+ht-degree: 5%
 
 ---
 
@@ -69,7 +70,7 @@ Analysadministratörer bör utföra följande uppgifter innan de gör Adobe Anal
 | Uppgift | Avsedd användning | Mer information |
 |---------|----------|---------|
 | Definiera administratörsroller | Adobe Analytics stöder olika typer av administratörer | [Administratörsroller i Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/admin-roles-in-analytics.html?lang=en) |
-| Definiera behörigheter | Analysadministratörer måste tilldela produktprofiler i Admin Console för Adobe Analytics, Report Suite Tools och Analytics Tools. | [Analysbehörigheter i Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en) |
+| Definiera behörigheter | Analysadministratörer måste tilldela produktprofiler i Admin Console för Adobe Analytics, Report Suite Tools och Analytics Tools. | [Analysbehörigheter i Admin Console](/help/admin/admin-console/permissions/analytics-tools.md) |
 | Ställ in rapportsviter och definiera inställningar för ditt företag | En rapportsvit är en silo data som Adobe Analytics använder för att generera rapporter.<p>Administratörer kan också konfigurera [virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en) för ytterligare segmentdata.</p> | <ul><li>[Skapa en rapportsvit](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=en)</li><li>[Översikt över företagsinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/c-company-settings.html?lang=en)</li></ul> |
 | Importera data | Med Adobe Analytics datakällor kan du importera ytterligare online- eller offlinedata för rapportering. | [Översikt över datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/overview.html?lang=en) |
 | Klassificera data med klassificeringar | Med hjälp av klassificeringar kan du klassificera data så att du bättre kan använda variabler, så att du kan ta med mer innehåll i en enda variabel. | [Klassificeringsöversikt](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=en) |

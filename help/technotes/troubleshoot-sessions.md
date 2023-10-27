@@ -3,9 +3,9 @@ title: Felsöka sessioner i Adobe Analytics
 description: Lär dig hur du löser problem med utloggning från Adobe Analytics.
 feature: Analytics Basics
 exl-id: 191250ef-8313-47be-9717-046cce870998
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: d64f6687dd6e6f688d332926e6d90fa699cac968
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -34,5 +34,5 @@ För att lösa detta rekommenderar Adobe att man samarbetar med IT-avdelningen i
 
 Information om proxies och autentiseringshuvuden finns här:
 
-* [Konfigurera autentisering av överordnad proxy i en proxykedja på en ProxySG- eller ASG-enhet](https://knowledge.broadcom.com/external/article/169255/configure-upstream-proxy-authentication.html)
+* [Konfigurera autentisering av överordnad proxy i en proxykedja på en ProxySG- eller ASG-enhet](https://techdocs.broadcom.com/us/en/symantec-security-software/web-and-network-security/edge-swg/7-3/authentication_co.html)
 * [Så här vidarebefordrar du inloggningsuppgifter till en server bakom ProxySG-enheten](https://knowledge.broadcom.com/external/article/165859/how-to-forward-user-credentials-to-a-ser.html)

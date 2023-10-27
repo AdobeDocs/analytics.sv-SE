@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Segmentation
 role: User, Admin
 exl-id: 680e7772-10d3-4448-b5bf-def3bc3429d2
-source-git-commit: f2a22aa71c928be30d365fcea71c8fb42efc3919
+source-git-commit: d64f6687dd6e6f688d332926e6d90fa699cac968
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -35,20 +35,19 @@ Så här skapar du ett snabbsegment:
 
    * **Ad hoc (dra och släpp):** Dra en komponent från den vänstra listen till släppzonen intill **Segment** -ikonen i panelhuvudet och välj sedan **Redigera** om du vill justera segmentet.
 
-      ![Redigera ad hoc-segment](assets/filter-adhoc-edit.png)
+     ![Redigera ad hoc-segment](assets/filter-adhoc-edit.png)
 
-      >[!NOTE]
-      >
-      > Tänk på följande när du skapar ett snabbsegment med ad hoc-funktioner (dra och släpp):
-      > * Följande komponenttyper stöds inte: beräknade värden och dimensioner, samt mätvärden som du inte kan bygga segment utifrån.
-      > * För alla dimensioner och händelser skapar Analysis Workspace&quot;finns&quot;-träffsegment. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
-      > * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i segmentets släppzon konverteras det automatiskt till segmentet &quot;does not exist&quot; så att det behandlas korrekt i segment.
-
+     >[!NOTE]
+     >
+     > Tänk på följande när du skapar ett snabbsegment med ad hoc-funktioner (dra och släpp):
+     > * Följande komponenttyper stöds inte: beräknade värden och dimensioner samt mätvärden som du inte kan bygga segment från.
+     > * För alla dimensioner och händelser skapar Analysis Workspace&quot;finns&quot;-träffsegment. Exempel: `Hit where eVar1 exists` eller `Hit where event1 exists`.
+     > * Om &quot;unspecified&quot; eller &quot;none&quot; släpps i segmentets släppzon konverteras det automatiskt till segmentet &quot;does not exist&quot; så att det behandlas korrekt i segment.
 
 
    * **Använda segmentikonen:** I en Freeform-tabell väljer du **Segment** -ikonen i panelhuvudet.
 
-      ![Segmentfilter](assets/quick-seg1.png)
+     ![Segmentfilter](assets/quick-seg1.png)
 
 1. Justera någon av följande inställningar:
 
@@ -62,7 +61,7 @@ Så här skapar du ett snabbsegment:
    | Plustecken (+) | Lägg till en annan regel |
    | OCH/ELLER-kvalificerare | Du kan lägga till&quot;AND&quot;- eller&quot;OR&quot;-kvalificerare i reglerna, men du kan inte blanda&quot;AND&quot; och&quot;OR&quot; i en enskild segmentdefinition. |
    | [!UICONTROL Apply] | Använd det här segmentet på panelen. Om segmentet inte innehåller några data tillfrågas du om du vill fortsätta. |
-   | [!UICONTROL Open builder] | Öppnar segmentbyggaren. När du har sparat eller använt segmentet i segmentbyggaren betraktas det inte längre som ett&quot;snabbsegment&quot;. Den blir en del av segmentbiblioteket för komponentlistor. <p>Markera alternativet om du vill att komponenten ska vara tillgänglig i alla dina projekt och i den vänstra listen [!UICONTROL **Gör det här segmentet tillgängligt för alla projekt och lägg till det i komponentlistan**].</p><p>Mer information finns i avsnittet [Spara ett snabbsegment som ett komponentlistsegment](#save-a-quick-segment-as-a-component-list-segment) i den här artikeln.</p><p>**Obs!** Endast användare med behörigheten Skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) kan öppna segmentbyggaren.</p> |
+   | [!UICONTROL Open builder] | Öppnar segmentbyggaren. När du har sparat eller använt segmentet i segmentbyggaren betraktas det inte längre som ett&quot;snabbsegment&quot;. Den blir en del av segmentbiblioteket för komponentlistor. <p>Markera alternativet om du vill att komponenten ska vara tillgänglig i alla dina projekt och i den vänstra listen [!UICONTROL **Gör det här segmentet tillgängligt för alla projekt och lägg till det i komponentlistan**].</p><p>Mer information finns i avsnittet [Spara ett snabbsegment som ett komponentlistsegment](#save-a-quick-segment-as-a-component-list-segment) i den här artikeln.</p><p>**Obs!** Endast användare med behörigheten Skapa segment i [Adobe Admin Console](/help/admin/admin-console/permissions/analytics-tools.md) kan öppna segmentbyggaren.</p> |
    | [!UICONTROL Cancel] | Avbryt det här snabbsegmentet (använd det inte). |
    | [!UICONTROL Date range] | Valideraren använder panelens datumintervall för sin datasökning. Alla datumintervall som används i ett snabbsegment åsidosätter panelens datumintervall högst upp på panelen. |
    | Förhandsgranska (överst till höger) | Här kan du se om du har ett giltigt segment och hur brett segmentet är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se när du använder det här segmentet. Du kan få ett meddelande som anger att det här segmentet saknar data. I så fall kan du fortsätta eller ändra segmentdefinitionen. |
@@ -71,7 +70,7 @@ Så här skapar du ett snabbsegment:
 
 ## Redigera snabbsegment
 
-1. Hovra över snabbsegmentet och välj **Redigera** ikon.
+1. Hovra över snabbsegmentet och välj **Redigera** -ikon.
 
    ![Redigera ad hoc-filter](assets/filter-adhoc-edit.png)
 
@@ -85,15 +84,14 @@ Så här skapar du ett snabbsegment:
 >
 > Tänk på följande när du sparar ett snabbsegment:
 > 
-> * Om du vill spara ett snabbsegment måste du ha behörigheten Skapa segment i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools).
+> * Om du vill spara ett snabbsegment måste du ha behörigheten Skapa segment i [Adobe Admin Console](/help/admin/admin-console/permissions/analytics-tools.md).
 > 
 > * När du har sparat eller använt segmentet kan det inte längre redigeras i snabbsegmentsverktyget. I stället måste du använda den vanliga segmentbyggaren.
-
 
 Du kan välja att spara snabbsegment som komponentlistsegment. Fördelar med segment i komponentlistor är bland annat:
 
 * Tillgänglighet i alla dina arbetsyteprojekt
-* Stöd för mer komplexa segment och sekventiella segment
+* Stödja mer komplexa segment såväl som sekventiella segment
 
 Du kan spara segment antingen från snabbsegmentsverktyget eller från [!UICONTROL Filter Builder].
 
@@ -124,7 +122,7 @@ När du har tillämpat segmentet kan du välja att lägga till det i segmentkomp
 
    ![segmentdialogruta endast för projekt](assets/project-only-segment-dialog.png)
 
-1. Markera kryssrutan bredvid **[!UICONTROL Make available to all your projects and add to your component list.]**
+1. Markera kryssrutan intill **[!UICONTROL Make available to all your projects and add to your component list.]**
 
 1. Välj **[!UICONTROL Save]**.
 
@@ -140,6 +138,6 @@ I följande exempel kombineras mått och mätvärden:
 ## Känt fel
 
 1. Skapa ett snabbsegment med 2 poster och **[!UICONTROL Save]** det som Test1.
-1. Klicka **[!UICONTROL Save as]** och spara det här snabbsegmentet som Test2.
+1. Klicka **[!UICONTROL Save as]** och spara detta snabbsegment som Test2.
 1. Redigera snabbsegmentet Test2 och spara det igen som Test2.
 Observera att snabbsegmentet Test1 ändras av Test2.
