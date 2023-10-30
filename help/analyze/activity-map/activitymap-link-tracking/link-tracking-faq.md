@@ -5,7 +5,7 @@ uuid: 10172073-b98b-4950-8397-67a18b37b3b4
 feature: Activity Map
 role: User, Admin
 exl-id: b6ccdf91-98ce-413f-842d-c5423598ed49
-source-git-commit: ac9e4934cee0178fb00e4201cc3444d333a74052
+source-git-commit: a0b8f61c3728c5867640ce20768614c8d79ca657
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Länk- och regionsidentifiering i Activity Map inträffar när användare klicka
 
 ## Vad spåras som standard?
 
-Om en klickningshändelse inträffar för ett element måste elementet genomgå vissa kontroller för att avgöra om AppMeasurement kommer att behandla det som en länk. Detta är kontrollerna:
+Om en klickningshändelse inträffar för ett element måste elementet genomgå vissa kontroller för att avgöra om AppMeasurementet kommer att behandla det som en länk. Detta är kontrollerna:
 
 * Är det här en `A` eller `AREA` tagg med `href` egenskap?
 * Finns det en `onclick` ett attribut som anger `s_objectID` variabel?
@@ -45,11 +45,11 @@ Om svaret är Ja på någon av frågorna ovan behandlas elementet som en länk o
 
 >[!IMPORTANT]
 >
->Button-taggar med attributet type=&quot;button&quot; betraktas inte som länkar av AppMeasurement. Ta bort type=&quot;button&quot; i knapptaggarna och lägg till role=&quot;button&quot; eller submit=&quot;button&quot; i stället.
+>Button-taggar med attributet type=&quot;button&quot; betraktas inte som länkar som AppMeasurement. Ta bort type=&quot;button&quot; i knapptaggarna och lägg till role=&quot;button&quot; eller submit=&quot;button&quot; i stället.
 
 >[!IMPORTANT]
 >
->En ankartagg med href som börjar med # betraktas som en intern målplats med AppMeasurement, inte som en länk (eftersom du inte lämnar sidan). Som standard spårar inte Activity Map dessa interna målplatser. Det spårar bara länkar som navigerar användaren till en ny sida.
+>En ankartagg med &quot;href&quot; som börjar med &quot;#&quot; betraktas som en intern målplats som AppMeasurement, inte som en länk (eftersom du inte lämnar sidan.) Som standard spårar inte Activity Map dessa interna målplatser. Det spårar bara länkar som navigerar användaren till en ny sida.
 
 ## Hur spårar Activity Map andra visuella HTML-element?
 
@@ -81,7 +81,7 @@ b. Via `s_objectID` variabel. Exempel:
 ### Exempel 1
 
 ```
-  <a hef="/home>Home</a>
+  <a href="/home>Home</a>
 ```
 
 ### Exempel 2
@@ -116,7 +116,7 @@ b. Via `s_objectID` variabel. Exempel:
 
 ## Kan du ge mig några exempel på länkar som INTE kommer att spåras?
 
-1. Orsak: Ankartaggen har ingen giltig `href`:
+1. Orsak: Ankartaggen har inte en giltig `href`:
    `<a name="innerAnchor">Section header</a>`
 
 1. Orsak: Ingendera `s_ObjectID` eller `s.tl()` närvarande:
@@ -137,7 +137,7 @@ b. Via `s_objectID` variabel. Exempel:
    
    ```  
    
-1. Orsak: Egenskapen &quot;src&quot; saknar ett formulärelement:
+1. Orsak: &quot;src&quot;-egenskapen saknar ett formulärelement:
 
    `<input type="image"/>`
 
