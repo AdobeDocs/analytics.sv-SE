@@ -4,9 +4,9 @@ title: Rapporteringsaktivitetshanteraren
 feature: Admin Tools
 mini-toc-levels: 3
 exl-id: f638c6a9-1c2c-4936-a787-281269f95afc
-source-git-commit: c43d7bbdad0ad0265e038ee273c74bec136f1c72
+source-git-commit: 5e74c47dff7f1685be9fd738f834ae317c95fad5
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1892'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
 
      <!-- (does this option still exist?) 1. (Optional) Select **[!UICONTROL Refresh]** at the top-right to refresh the data. -->
 
-1. Visa användningsinformation om varje rapportserie. Du kan välja en kolumnrubrik för att sortera tabellen efter den kolumnen.
+1. Visa användningsinformation om varje rapportserie. De data som visas i tabellen representerar rapportaktiviteten för rapportsviten när sidan senast lästes in.
 
    Följande kolumner är tillgängliga:
 
@@ -46,7 +46,7 @@ Mer information om Reporting Activity Manager, inklusive viktiga fördelar och b
    | **[!UICONTROL Capacity utilization]** | Procentandelen av rapportsvitens rapporteringskapacitet som används i realtid. <p>**Anteckning** En användningskapacitet som är 100 % innebär inte nödvändigtvis att du omedelbart bör avbryta rapporteringsbegäranden. 100 % användningskapacitet kan vara hälsosam om den genomsnittliga väntetiden är rimlig. Å andra sidan kan 100 % av användningskapaciteten tyda på ett problem om antalet begäranden som står i kö också ökar.</p> |
    | **[!UICONTROL Queued requests]** | Antalet begäranden som väntar på att behandlas. <!-- ??? --> |
    | **[!UICONTROL Queue wait time]** | Genomsnittlig väntetid innan begäranden börjar bearbetas. <!-- ???? --> |
-   | **[!UICONTROL Status]** | Möjliga statusvärden är: <ul><li>[!UICONTROL **Aktiv**] (blått): Rapporter har körts på rapportsviten och den övervakas för aktivitet.</li><li>[!UICONTROL **Inaktiv**] (grå): Inga rapporter har någonsin körts för rapportsviten. Den här statusen visas endast när rapportsviter skapas.</li></ul> |
+   | **[!UICONTROL Status]** | Möjliga statusvärden är: <ul><li>[!UICONTROL **Aktiv**] (blått): Rapporter har körts på rapportsviten de senaste två timmarna. De data som visas i tabellen representerar rapportkapaciteten för rapportsviten när sidan senast lästes in.</li><li>[!UICONTROL **Inaktiv**] (grå): Inga rapporter har körts på rapportsviten under de senaste två timmarna, så inga data visas för rapportsviten.</li></ul> |
 
    {style="table-layout:auto"}
 
