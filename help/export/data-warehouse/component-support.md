@@ -3,10 +3,10 @@ title: Komponentstöd i Data Warehouse
 description: Lär dig vilka ytterligare mått och mätvärden som finns i Datan Warehouse och vad som inte stöds.
 feature: Data Warehouse
 exl-id: ce7411a4-a720-47b7-90d5-4d867eff4bae
-source-git-commit: e00a8e611e137590838b1a58571a563aac53434c
+source-git-commit: ecd02a087e7ab344ccfbad1d5e1c30260577002c
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 4%
+source-wordcount: '402'
+ht-degree: 3%
 
 ---
 
@@ -40,17 +40,7 @@ Vissa mått och mätvärden stöds inte i Datan Warehouse.
 
 ### Dimensioner som inte stöds
 
-* Några tidsbaserade dimensioner, bland annat:
-   * AM/PM
-   * Dag i månaden
-   * Veckodag
-   * Dag på året
-   * Timme på dagen
-   * Minut
-   * Månad på året
-   * Kvartal på året
-   * Veckodag/vecka
-   * År
+* AM/PM
 * Några målningsbaserade dimensioner, bland annat:
    * Alla inmatningsdimensioner, utom inmatningssida
    * Alla avslutningsdimensioner, utom Avsluta sida och Avsluta länk
@@ -59,7 +49,6 @@ Vissa mått och mätvärden stöds inte i Datan Warehouse.
    * Tid före händelse
    * Tid som använts på sidan - paketerad
    * Tid per besök - paketerad
-   * Besöksdjup
 * Alla söksidrankning
 * Hierarkivariabler
 * Träfftyp
@@ -78,4 +67,16 @@ Vissa mått och mätvärden stöds inte i Datan Warehouse.
    * Siduppdateringar
    * Enkelt besök
    * Mätvärden för tidsåtgång
+* Deltagandestatistik (enligt beskrivning i [Bygg ett delgivningsmått](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/participation-metric.md))
 
+### Dimensioner som stöds på ett annat sätt
+
+Följande tidsbaserade dimensioner stöds. Datumutdata är dock inte standard när de här måtten används. År kompenseras med 1900 och månader är nollbaserade.
+
+* År
+* Kvartal
+* Månad
+* Vecka
+* Dag
+* Timme
+* Minut

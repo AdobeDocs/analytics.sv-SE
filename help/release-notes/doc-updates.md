@@ -5,10 +5,10 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 743bd30f8606b05d799f9089d2f14863fcb18feb
+source-git-commit: ecd02a087e7ab344ccfbad1d5e1c30260577002c
 workflow-type: tm+mt
-source-wordcount: '5096'
-ht-degree: 25%
+source-wordcount: '5227'
+ht-degree: 24%
 
 ---
 
@@ -27,6 +27,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | --- | --- |
 | **Oktober 2023** | |
 | Logginformation har lagts till i Rapporteringsaktivitetshanteraren | Lagt till information som [annulleringar och efterföljande begränsningar av rapporteringsaktivitet](/help/admin/admin/reporting-activity-manager/reporting-activity-cancel-requests.md) i Rapporteringsaktivitetshanteraren hämtas i [Loggar](/help/admin/admin/logs.md). |
+| Uppdateringar av Datans Warehouse komponentstöd | Lagt till tillgänglighet för vissa komponenter och tagit bort tillgänglighet för andra för Data Warehouse. Dessa ändringar återspeglas i [Komponentstöd i Data Warehouse](/help/export/data-warehouse/component-support.md). <ul><li>Stöd för dimensionen Besöksdjup har lagts till (borttaget Besöksdjup i listan över dimensioner stöds inte)</li><li>Borttaget stöd för deltagandemått (extra deltagandemått i listan över mätvärden som inte stöds)</li><li>Stöd för följande tidsbaserade dimensioner har lagts till: År, Kvartal, Månad, Vecka, Dag, Timme och Minut (de här dimensionerna har tagits bort från listan över dimensioner som inte stöds) <p>Tidigare hade Datan Warehouse bara stöd för dessa mått i den första kolumnen i en friformstabell när Kornighet markerades. Nu stöds alltid dessa dimensioner.</p><p>Datumutdata är dock inte standard när de här måtten används. Året är 1900 och månaderna är nollbaserade.</li></ul> |
 | **September 2023** | |
 | Uppdaterad struktur för artiklar för panelen Medieuppspelningstid för spenderad tid | Mappen Media Playback Time Spent har tagits bort och innehållet i mappen har kombinerats till en enda artikel: [Medieuppspelningstid spenderad panel](/help/analyze/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Den här ändringen är mer i linje med dokumentationen för andra paneler.</p> |
 | Komma igång med innehållsförbättringar | Lagt till information som beskriver viktiga uppgifter och resurser för att komma igång för administratörer, analytiker, slutanvändare och utvecklare. Följande nya artiklar är nu tillgängliga: <ul><li>[Kom igång (efter roll)](/help/analyze/get-started/get-started-by-role.md)</li><li>[Förstå analysgränssnittet](/help/analyze/get-started/analytics-interface.md)<li>[Användningsexempel](/help/analyze/get-started/use-cases.md)</li></ul> |
