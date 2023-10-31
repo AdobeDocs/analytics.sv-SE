@@ -3,7 +3,7 @@ title: transactionID
 description: Använd den här variabeln för att länka samman online- och offlinedata.
 feature: Variables
 exl-id: 525e90d8-99a7-4f4f-9bce-1395bf72fd8f
-source-git-commit: 6de20d2fbbab6ded6c92f0c6f3536671f4b2ae46
+source-git-commit: ccdeaf341cf9a603da857d9425d3a2196d0f67f4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Som standard kommer Adobe ihåg alla transaktions-ID-värden (länkade och olän
 
 ## Transaktions-ID med Web SDK
 
-Transaktions-ID är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `commerce.order.transactionID`.
+Transaktions-ID är [mappas för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html) under XDM-fältet `commerce.order.payments[0].transactionID`.
 
 ## Transaktions-ID med Adobe Analytics-tillägg
 
@@ -39,7 +39,7 @@ Du kan ange transaktions-ID när du konfigurerar Analytics-tillägget (globala v
 
 Du kan ange transaktions-ID till vilket strängvärde som helst, inklusive dataelement.
 
-## s.transactionID i AppMeasurement och den anpassade kodredigeraren i Analytics-tillägget
+## s.transactionID i AppMeasurementet och den anpassade kodredigeraren för Analytics-tillägget
 
 The `s.transactionID` variabeln är en sträng som innehåller en unik identifierare för en transaktion. Giltiga värden är alfanumeriska tecken som är upp till 100 byte långa. Dess standardvärde är en tom sträng.
 
@@ -53,6 +53,6 @@ Om du har fler än ett transaktions-ID för en träff kan du avgränsa varje tr�
 s.transactionID = "ABC123,XYZ456";
 ```
 
->[!NOTE]
+>[!TIP]
 >
 >Om du integrerar flera offlinekanaler med den här variabeln måste du se till att olika kanaler inte överlappar transaktions-ID:n. Om du till exempel har ett transaktions-ID för kundtjänst på `1234` och ett transaktions-ID för försäljningslead för `1234`kan de orsaka konflikter och oväntade resultat. Se till att transaktions-ID:n innehåller unika format per offlinekanal och differentiera dem om det behövs. Ange till exempel ditt transaktions-ID för kundtjänst till `call_1234` och ditt transaktions-ID för försäljningslead `lead_1234` i både Datakällor och AppMeasurement.
