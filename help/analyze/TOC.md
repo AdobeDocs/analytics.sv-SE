@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: bf2dcda23c35906fbb730603c9366b896248fa60
+source-git-commit: ab6d3267bd6b503fe96ceea2b870c2e7cdf5d9f4
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1094'
 ht-degree: 77%
 
 ---
@@ -280,12 +280,9 @@ ht-degree: 77%
 + Activity Map {#activity-map}
    + [Översikt över Activity Map](activity-map/activity-map.md)
    + Kom igång {#getting-started}
-      + Kom igång för administratörer {#get-started-admins}
-         + [Aktivera Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md)
-         + [Implementera Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md)
-      + Kom igång för användare {#get-started-users}
-         + [Installera webbläsarplugin-program för Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-install.md)
-         + [Starta Activity Map](activity-map/activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md)
+      + [Aktivera Activity Map](activity-map/activitymap-getting-started/activitymap-enable.md)
+      + [Installera webbläsarplugin-program för Activity Map](activity-map/activitymap-getting-started/activitymap-install.md)
+      + [Starta Activity Map](activity-map/activitymap-getting-started/activitymap-launch.md)
    + [Robust länkspårning](activity-map/lnk-tracking-overview.md)
    + Länkspårning {#link-tracking}
       + [Metod för länkspårning](activity-map/activitymap-link-tracking/activitymap-link-tracking-methodology.md)

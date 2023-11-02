@@ -4,7 +4,7 @@ description: Aktivera eller inaktivera ClickMap i implementeringen.
 keywords: inaktivera klickkarta
 feature: Variables
 exl-id: a52adc1d-1be7-4002-b393-7ce66332b483
-source-git-commit: a3df69f7de45ba3694e1212e5c16a10bb4602cd6
+source-git-commit: 4af73d19afd8844f814aafd45153cc638aa535d6
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Den här variabeln har tagits bort. Se [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md) i stället.
+>Den här variabeln har tagits bort. Se [Aktivera Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-enable.md) i stället.
 
 ClickMap är en pensionerad funktion i Adobe Analytics som samlar in data om var besökarna klickar och vad de klickar på. Funktionen har ersatts med [Activity Map](/help/analyze/activity-map/activity-map.md).
 

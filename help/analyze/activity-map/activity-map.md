@@ -4,16 +4,16 @@ title: Vad är Activity Map?
 feature: Activity Map
 role: User, Admin
 exl-id: 30a800f7-e2c8-443e-b5d4-36834ef0ba20
-source-git-commit: 2d207c76ad40522adec10cde5044b43acbb7f711
+source-git-commit: 4af73d19afd8844f814aafd45153cc638aa535d6
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '575'
 ht-degree: 12%
 
 ---
 
 # Översikt över Activity Map
 
-Adobe Analytics Activity Map är en funktion i Adobe Analytics som ger en visuell representation av användarinteraktionen på webbsidor och mobilappar. Det gör det möjligt för marknadsförare och analytiker att spåra och analysera användarinteraktioner som klickningar, hovrar och rullningsbeteende. Activity Map genererar heatmaps och överläggsrapporter som illustrerar hur populärt och effektivt olika element på en webbsida är, vilket hjälper organisationer att optimera sina digitala upplevelser och få högre konverteringsgrad.
+Adobe Analytics Activity Map är en funktion i Adobe Analytics som ger en visuell representation av användarinteraktionen på webbsidor och mobilappar. Det gör det möjligt för marknadsförare och analytiker att spåra och analysera användarinteraktioner som klickningar, hovrar och rullningsbeteende. Activity Map genererar värmekartor och överläggsrapporter som illustrerar hur populärt och effektivt olika element på en webbsida är, vilket hjälper organisationer att optimera sina digitala upplevelser och öka konverteringsgraden.
 
 ## Funktioner och fördelar
 
@@ -35,16 +35,11 @@ Adobe Analytics Activity Map är en funktion i Adobe Analytics som ger en visuel
 
 * Optimering av mobilappar: Adobe Analytics Activity Map är inte begränsat till webbplatser, utan utökar även funktionaliteten till mobilappar. Företag kan få insikter i användarinteraktioner i appar, vilket gör att de kan förbättra användarvänligheten, förbättra navigeringen och förfina funktioner för en smidig mobilupplevelse.
 
-## Komma igång med administratörer
+## Komma igång
 
-* [Aktivera Activity Map](activitymap-getting-started/activitymap-getting-started-admins/activitymap-enable.md)
-* [Exempel på implementeringskod](activitymap-getting-started/activitymap-getting-started-admins/activitymap-sample-implementation-code.md)
-* Aktivera Activity Map med Web SDK
-
-## Komma igång för användare
-
-* [Installera webbläsarplugin-program för Activity Map](activitymap-getting-started/activitymap-getting-started-users/activitymap-install.md)
-* [Starta Activity Map](activitymap-getting-started/activitymap-getting-started-users/activitymap-launch.md)
+* [Aktivera och aktivera Activity Map](activitymap-getting-started/activitymap-enable.md)
+* [Installera webbläsarplugin-program för Activity Map](activitymap-getting-started/activitymap-install.md)
+* [Starta Activity Map](activitymap-getting-started/activitymap-launch.md)
 
 ## Activity Map-funktioner
 
