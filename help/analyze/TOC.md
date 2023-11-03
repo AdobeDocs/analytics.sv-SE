@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: ab6d3267bd6b503fe96ceea2b870c2e7cdf5d9f4
+source-git-commit: 7f7f6347561d51671bbcb20959895178f3428314
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1096'
 ht-degree: 77%
 
 ---
@@ -280,7 +280,7 @@ ht-degree: 77%
 + Activity Map {#activity-map}
    + [Översikt över Activity Map](activity-map/activity-map.md)
    + Kom igång {#getting-started}
-      + [Aktivera Activity Map](activity-map/activitymap-getting-started/activitymap-enable.md)
+      + [Aktivera och aktivera Activity Map](activity-map/activitymap-getting-started/activitymap-enable.md)
       + [Installera webbläsarplugin-program för Activity Map](activity-map/activitymap-getting-started/activitymap-install.md)
       + [Starta Activity Map](activity-map/activitymap-getting-started/activitymap-launch.md)
    + [Robust länkspårning](activity-map/lnk-tracking-overview.md)
