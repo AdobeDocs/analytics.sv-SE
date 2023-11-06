@@ -5,9 +5,9 @@ feature: Activity Map
 role: Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
 mini-toc-levels: 3
-source-git-commit: 7f7f6347561d51671bbcb20959895178f3428314
+source-git-commit: 46118b1bd7f3b8c4e0f653778c16a1c51011fb2d
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '409'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Beskriver de steg som Analytics Admin måste slutföra för att aktivera Activit
 
 Modulen Activity Map är en del av taggarna AppMeasurement.js, Adobe Experience Platform och Web SDK (alloy.js). Data från Activity Map kan inte samlas in om du inte uppdaterar till **Web SDK version 2.15.0** eller högre, eller **Adobe Analytics-taggtillägg v1.90** eller högre, eller **AppMeasurement version 1.6** eller senare.
 
-+++Web SDK (tillägget Taggar)
++++Web SDK (tillägget Adobe Experience Platform-taggar)
 
 I Adobe Experience Platform-taggar navigerar du till den egenskap som du implementerar Analytics för. Under [!UICONTROL Extensions] -> [!UICONTROL Adobe Experience Platform Web SDK], markera **[!UICONTROL Enable click data collection]** som markerats nedan. Bygg sedan biblioteket med ändringarna och publicera biblioteket i produktion.
 
@@ -57,7 +57,7 @@ Gå till **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All
 
 ## Steg 2. Aktivera Activity Map-rapporter {#enable}
 
-Först måste du aktivera Activity Map-rapporter på rapportsvitsnivå.
+Du måste aktivera Activity Map-rapporter på rapportsvitnivå.
 
 1. Logga in på Adobe Analytics och navigera till  **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > Välj rapportserie > **[!UICONTROL Edit Settings]** > **[!UICONTROL Activity Map]** > **[!UICONTROL Activity Map Reporting]** .
 

@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: ab1a7736d59d082c7fabc01ffed43215b0e11339
+source-git-commit: 46118b1bd7f3b8c4e0f653778c16a1c51011fb2d
 workflow-type: tm+mt
-source-wordcount: '5257'
+source-wordcount: '5258'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Funktion | Beskrivning |
 | --- | --- |
 | **November 2023** | |
-| Uppdateringar av Activity Map aktiveringsämne | Tillagd [Web SDK](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/activitymap-enable.html?lang=en) (både manuellt och via Adobe Experience Platform-taggtillägg). |
+| Uppdateringar av Activity Map aktiverings-/aktiveringsämne | Tillagd [Web SDK](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/activitymap-enable.html?lang=en) (både manuellt och via Adobe Experience Platform-taggtillägg). |
 | **Oktober 2023** | |
 | Logginformation har lagts till i Rapporteringsaktivitetshanteraren | Lagt till information som [annulleringar och efterföljande begränsningar av rapporteringsaktivitet](/help/admin/admin/reporting-activity-manager/reporting-activity-cancel-requests.md) i Rapporteringsaktivitetshanteraren hämtas i [Loggar](/help/admin/admin/logs.md). |
 | Uppdateringar av Datans Warehouse komponentstöd | Lagt till tillgänglighet för vissa komponenter och tagit bort tillgänglighet för andra för Data Warehouse. Dessa ändringar återspeglas i [Komponentstöd i Data Warehouse](/help/export/data-warehouse/component-support.md). <ul><li>Stöd för dimensionen Besöksdjup har lagts till (borttaget Besöksdjup i listan över dimensioner stöds inte)</li><li>Borttaget stöd för deltagandemått (extra deltagandemått i listan över mätvärden som inte stöds)</li><li>Stöd för följande tidsbaserade dimensioner har lagts till: År, Kvartal, Månad, Vecka, Dag, Timme och Minut (de här dimensionerna har tagits bort från listan över dimensioner som inte stöds) <p>Tidigare hade Datan Warehouse bara stöd för dessa mått i den första kolumnen i en friformstabell när Kornighet markerades. Nu stöds alltid dessa dimensioner.</p><p>Datumutdata är dock inte standard när de här måtten används. Året är 1900 och månaderna är nollbaserade.</li></ul> |
