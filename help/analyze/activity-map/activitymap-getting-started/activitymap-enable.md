@@ -5,9 +5,9 @@ feature: Activity Map
 role: Admin
 exl-id: 0b2b9f3d-0c75-4eb8-9235-c9c98eb035d3
 mini-toc-levels: 3
-source-git-commit: 46118b1bd7f3b8c4e0f653778c16a1c51011fb2d
+source-git-commit: 4c6df8bc08f326bfb54b27eb61f97b4be2320805
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '590'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,48 @@ Modulen Activity Map är en del av taggarna AppMeasurement.js, Adobe Experience 
 
 +++Web SDK (tillägget Adobe Experience Platform-taggar)
 
-I Adobe Experience Platform-taggar navigerar du till den egenskap som du implementerar Analytics för. Under [!UICONTROL Extensions] -> [!UICONTROL Adobe Experience Platform Web SDK], markera **[!UICONTROL Enable click data collection]** som markerats nedan. Bygg sedan biblioteket med ändringarna och publicera biblioteket i produktion.
+1. I Adobe Experience Platform-taggar navigerar du till den egenskap som du implementerar Analytics för. Under [!UICONTROL Extensions] -> [!UICONTROL Adobe Experience Platform Web SDK], markera **[!UICONTROL Enable click data collection]** som markerats nedan.
+1. Skapa biblioteket med ändringarna.
+1. Publicera biblioteket i produktion.
 
 ![](assets/web_sdk.png)
+
+**Validering**
+
+Interagera samtal med fliken Developer Console Network:
+
+1. Läs in utvecklingsstartskriptet på webbplatsen.
+1. Om du klickar på Elements söker du efter &quot;/ee&quot; på fliken Nätverk
+
+   ![](assets/validation1.png)
+
+Adobe Experience Platform Debugger:
+
+1. Hämta och installera [Adobe Experience Platform debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpo).
+1. Gå till [!UICONTROL Logs] > [!UICONTROL Edge] > [!UICONTROL Connect to Edge].
+
+   ![](assets/validation2.jpg)
+
+**Vanliga frågor**
+
+* **Interaktionsanropet utlöses inte på fliken Nätverk.**
+Med klickdatainsamlingen i ett samlarsamtal måste vi filtrera med antingen &quot;/ee&quot; eller &quot;collect?&quot;
+
+* **Det finns ingen nyttolastvisning för samtalet.**
+Samlingsanropet är utformat på ett sådant sätt att spårningen inte påverkar navigeringen till andra webbplatser, så att dokumentborttagningsfunktionen kan användas för samlarsamtal. Detta påverkar inte din datainsamling, men om du behöver validera på sidan lägger du till target = &quot;_blank&quot; till respektive element. Länken öppnas sedan på en ny flik.
+
+* **Hur ignorerar jag samlingen av PII?**
+Lägg till respektive villkor i&lt;&lt; före länk klicka på skicka återanrop>> och returnera false om du vill ignorera dessa värden. [Läs mer](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=en)
+
+  Exempelkod:
+
+  ![](assets/sample-code.png)
 
 +++
 
 +++Manuell implementering av Web SDK
 
-Se [Spåra länkar](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) om du vill ha information om hur du implementerar länkspårning och hur du aktiverar aktivitetsmappning genom att hämta `region` för det klickade HTML-elementet.
+Se [Spåra länkar](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/track-links.html) om du vill ha information om hur du implementerar länkspårning och hur du aktiverar Activity Map genom att hämta `region` för det klickade HTML-elementet.
 
 >[!NOTE]
 >
