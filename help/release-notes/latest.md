@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 84f6bf068f56b9502a53ab17e71dca00356804d9
+source-git-commit: dfb3750edabed3fd9aef758d2ea1625fc3fb6a96
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1119'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Versionsinformationen omfattar releaseperioden 23 oktober 2023 till slutet av no
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Förbättringar av Rapporteringsaktivitetshanteraren** | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen.  Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. Nedan följer några av förbättringarna som nu finns i Reporting Activity Manager: <ul><li>Begränsa efterföljande begäranden: Förutom att avbryta aktuella begäranden kan administratörer nu begränsa begäranden för en angiven tidsperiod. Administratörer kan begränsa begäranden efter begäran, projekt och användare.</li><li>Utöver användnings- och kapacitetsstatistik innehåller nu Reporting Activity Manager fler data om rapporteringsaktivitet: kolumnen Komplexitet, kolumnen Användare och kolumnen Anslutning.</li><li>Alla avbrott och begränsningar som görs i Rapporteringsaktivitetshanteraren visas nu i granskningsloggen. Administratörer kan använda granskningsloggen för att visa det som för närvarande är avbrutet. Det går inte att återställa annulleringar i Rapporteringsaktivitetshanteraren eller i granskningsloggen.</li></ul><p>Mer information finns i [Översikt över Reporting Activity Manager](/help/admin/admin/reporting-activity-manager/reporting-activity-overview.md)</p> | 17 oktober 2023 | 24 oktober 2023 |
-| **Förbättrad Data Warehouse** | När du skapar en begäran om Data Warehouse kan du nu konfigurera ett molnkonto som ska användas som rapportmål. Följande typer av molnkonton är tillgängliga för att skicka data:<ul><li>Amazon S3</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>E-post (det här alternativet var tidigare tillgängligt)</li></ul>FTP, SFTP, Azure Blob och S3 är fortfarande tillgängliga som rapportmål, men rekommenderas inte längre.<p>Användarupplevelsen när begäranden om Data Warehouse skapas och hanteras har också förbättrats. Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md) och [Hantera förfrågningar från Data Warehouse](https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse-requests-manage.html). | 12 september 2023 | 8 november 2023 eller tidigare |
+| **Förbättrad Data Warehouse** | När du skapar en begäran om Data Warehouse kan du nu konfigurera ett molnkonto som ska användas som rapportmål. Följande typer av molnkonton är tillgängliga för att skicka data:<ul><li>Amazon S3</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>E-post (det här alternativet var tidigare tillgängligt)</li></ul>FTP, SFTP, Azure Blob och S3 är fortfarande tillgängliga som rapportmål, men rekommenderas inte längre.<p>Användarupplevelsen när begäranden om Data Warehouse skapas och hanteras har också förbättrats. Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md) och [Hantera förfrågningar från Data Warehouse](https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse-requests-manage.html). | 12 september 2023 | TBD |
 
 {style="table-layout:auto"}
 
