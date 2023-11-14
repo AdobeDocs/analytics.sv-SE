@@ -5,9 +5,9 @@ uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 feature: Report Builder
 role: User, Admin
 exl-id: 6aaadaa8-d68f-4a03-8838-53a61b152e31
-source-git-commit: 66b7de0b008364e47253d319785c204ca479ab26
+source-git-commit: ed753ab23e65f845f472dd1df3b144284e4e94a6
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,6 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 | Anpassa | Här kan du anpassa datumformatet. |
 | Till | Visar adressboken i Outlook, om tillämpligt. |
 | Skicka till: E-post | E-postmottagaren för arbetsboken. |
-| Skicka till: Publiceringslista | Visar en lista över tillgängliga distributionslistor för det här företaget. |
 | Power BI | Se [Publicera arbetsbok till Microsoft Power BI](/help/analyze/report-builder/c-publish-power-bi/integration-power-bi.md) för mer information. |
 | Ämne | En användardefinierad beskrivning. |
 | Schemaläggning | Här kan du ange när arbetsboken ska skickas. (Omedelbart, varje timme, varje dag, varje vecka, varje månad och varje år.) |
