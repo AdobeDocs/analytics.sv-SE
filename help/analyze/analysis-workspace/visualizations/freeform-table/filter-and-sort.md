@@ -4,10 +4,10 @@ title: Filtrera och sortera tabeller på frihand
 feature: Freeform Tables
 role: User, Admin
 exl-id: 15fea9e2-f8d8-4489-9a44-e74a351b8f36
-source-git-commit: e5f67042fce223f2998e4031962193b1c0154557
+source-git-commit: b1fbc2ce3387f44a49882e99a03d8bbf3906ee0c
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 2%
+source-wordcount: '915'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Du kan använda flera metoder för att filtrera rader från en frihandstabell. 
 - Tabellfilter
 - Segmentering
 
-Se till att du läser hur varje metod påverkar [Frihandstabellsummor](https://docs.adobe.com/content/help/sv-SE/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html).
+Se till att du läser hur varje metod påverkar [Frihandstabellsummor](/help/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Exkludera snabbt specifika rader från en tabell
 
@@ -89,7 +89,7 @@ Så här filtrerar du data i frihandstabeller:
 
 ### Segmentering
 
-Se vår [Segmenteringsdokumentation](https://docs.adobe.com/help/en/analytics/components/segmentation/seg-home.html) för mer information.
+Se vår [Segmenteringsdokumentation](/help/components/segmentation/seg-home.md) för mer information.
 
 ## Sortera tabeller
 
