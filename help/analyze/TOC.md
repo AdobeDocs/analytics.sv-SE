@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: 7f7f6347561d51671bbcb20959895178f3428314
+source-git-commit: e5f67042fce223f2998e4031962193b1c0154557
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1097'
 ht-degree: 77%
 
 ---
@@ -78,8 +78,8 @@ ht-degree: 77%
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
-            + [Dynamiska jämfört med statiska artiklar](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filtrera och ordna tabeller](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+            + [Dynamiska jämfört med statiska objekt](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Filtrera och sortera tabeller på frihand](analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
          + [Summor för Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohorttabell {#cohort-table}
          + [Vad är kohortanalys?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
