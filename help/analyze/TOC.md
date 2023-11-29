@@ -4,9 +4,9 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: e5f67042fce223f2998e4031962193b1c0154557
+source-git-commit: af5e88141bef139fb1727ae458628dd66fe3d1f6
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1080'
 ht-degree: 77%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 77%
       + [Visa endast  projekt](analysis-workspace/curate-share/view-only-projects.md)
       + [Hämta PDF- eller CSV-filer](analysis-workspace/curate-share/download-send.md)
       + [Schemalägg projekt](analysis-workspace/curate-share/t-schedule-report.md)
-   + Attribution IQ {#attribution}
+   + Attribuering {#attribution}
       + [Översikt över attribuering](analysis-workspace/attribution/overview.md)
       + [Attributmodeller och uppslagsfönster](analysis-workspace/attribution/models.md)
       + [Algoritmisk attribuering](analysis-workspace/attribution/algorithmic.md)
@@ -141,17 +141,12 @@ ht-degree: 77%
       + [Vanliga frågor och svar](analysis-workspace/attribution/faq.md)
    + [Resa-IQ](analysis-workspace/journey-iq.md)
    + [Segment IQ](analysis-workspace/segment-iq.md)
-   + Virtual Analyst {#virtual-analyst}
-      + [Översikt över Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
-      + Avvikelseidentifiering {#anomaly-detection}
-         + [Översikt över avvikelseidentifiering](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Visa avvikelser i Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-         + [Inaktivera avvikelseidentifiering](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection-turnoff.md)
-         + [Statistiska tekniker som används för avvikelseidentifiering](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
-      + Bidragsanalys {#contribution-analysis}
-         + [Översikt över bidragsanalys](analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md)
-         + [Köra bidragsanalys](analysis-workspace/virtual-analyst/contribution-analysis/run-contribution-analysis.md)
-         + [Statistiska tekniker som används vid bidragsanalys](analysis-workspace/virtual-analyst/contribution-analysis/statistics-contribution-analysis.md)
+   + Avvikelseidentifiering {#anomaly-detection}
+      + [Översikt över avvikelseidentifiering](analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Visa avvikelser i Analysis Workspace](analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Inaktivera avvikelseidentifiering](analysis-workspace/c-anomaly-detection/anomaly-detection-turnoff.md)
+      + [Köra bidragsanalys](analysis-workspace/c-anomaly-detection/run-contribution-analysis.md)
+      + [Statistiska tekniker som används för avvikelseidentifiering](analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
       + Intelligenta aviseringar {#intelligent-alerts}
          + [Översikt över intelligenta aviseringar](analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
          + [Alert Builder](analysis-workspace/c-intelligent-alerts/alert-builder.md)

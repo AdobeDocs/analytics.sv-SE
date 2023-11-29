@@ -3,9 +3,9 @@ title: Analysera marknadsföringskanaler
 description: Lär dig hur du använder dimensionerna för marknadsföringskanaler i arbetsytan.
 feature: Marketing Channels
 exl-id: 7030e41a-4e92-45c7-9725-66a3ef019313
-source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 >
 >Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
 
@@ -24,7 +24,7 @@ Ni vill antagligen veta vilka av era marknadsföringskanaler som är mest effekt
 
 | Dimension/mått | Definition |
 | --- | --- |
-| Marknadsföringskanal | Detta är den rekommenderade dimensionen för marknadsföringskanaler som ska användas. Attribution IQ kan tillämpas på dem vid körning. Den här dimensionen fungerar på samma sätt som den sista beröringskanalen, men den har en annan etikett för att förhindra förvirring när den används med en annan attribueringsmodell. |
+| Marknadsföringskanal | Det här är den rekommenderade dimensionen för marknadsföringskanaler som ska användas. Attributionsmodeller kan användas vid körning. Den här dimensionen fungerar på samma sätt som den sista beröringskanalen, men den har en annan etikett för att förhindra förvirring när den används med en annan attribueringsmodell. |
 | Senaste beröringskanal | Äldre dimension, med den senaste pekattribueringsmodellen förtillämpad och oföränderlig. |
 | Första beröringskanalen | Äldre dimension, med första pekattribueringsmodellen förtillämpad och oföränderlig. |
 | Instanser för marknadsföringskanal | Detta mått mäter hur många gånger en marknadsföringskanal definierades i en bildbegäran, inklusive standardsidvisningar och anpassade länkanrop. Inkluderar inte beständiga värden. |
@@ -52,7 +52,7 @@ Marknadsföringskanaler Detaljerna rör sig djupare in i varje kanal för att vi
 
 ## Använd attribueringsmodeller
 
-Du kan använda [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) tillämpa olika attribueringsmodeller direkt:
+Du kan använda [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) tillämpa olika attribueringsmodeller direkt:
 
 ![](assets/mc-viz5.png)
 
@@ -64,4 +64,4 @@ Med den äldre First Touch Channel och Last Touch Channel kan du få en användb
 
 ![](assets/mc-viz6.png)
 
-Läs mer om flerfliksanalys i den här videon: [Använda flikövergripande analys för att utforska grundläggande marknadsattribuering i Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html).
+Läs mer om flerfliksanalys i den här videon: [Utforska grundläggande marknadsattribuering i Analysis Workspace med hjälp av flikanalys](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-cross-tab-analysis-to-explore-basic-marketing-attribution-in-analysis-workspace.html).

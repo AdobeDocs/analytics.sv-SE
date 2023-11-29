@@ -3,10 +3,10 @@ description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 984406d00e5a5ae966fff60ec9fcfcb000958696
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 37%
+source-wordcount: '416'
+ht-degree: 36%
 
 ---
 
@@ -29,11 +29,10 @@ Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Ad
 | **Flera rapportsviter** | [Ja](/help/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.md) | Ja, med begränsningar | Ja | Nej | Ja | Nej | Ja |
 | **Antal uppdelningar** | Obegränsad | Upp till 2 | Upp till 2 | Obegränsad | Obegränsad | Obegränsad | Obegränsat, kör över flera frågor |
 | **Segmentering** <br> [Läs mer](/help/components/segmentation/segmentation-workflow/seg-workflow.md) | Ja | Ja | Ja | Ja, med [begränsningar](/help/components/segmentation/seg-reference/seg-compatibility.md) | Ja | Nej | Ja |
-| **Beräknade värden** <br> [Läs mer](/help/components/c-calcmetrics/cm-overview.md) | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) | Ja | Ja | Nej | Ja | Nej | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) |
+| **Beräknade värden** <br> [Läs mer](/help/components/c-calcmetrics/cm-overview.md) | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) | Ja | Ja | Nej | Ja | Nej | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) |
 | **Marknadsföringskanaler** <br> [Läs mer](/help/components/c-marketing-channels/c-getting-started-mchannel.md) | Ja | Ja | Ja | Ja | Ja | Ja - [va_finder, va_Närmare](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) | Ja |
 | **Kohortanalys** | [Ja](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Nej | Nej | Nej | Ja | Nej | Nej |
-| **Attribuering** | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Begränsad | Nej | Ja | Nej | Ja, med [Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md) |
-| **Funktioner i Virtual Analyst** <br> [Läs mer](/help/analyze/analysis-workspace/virtual-analyst/overview.md) | Ja | Nej | Nej | Nej | Nej | Nej | Ja |
+| **Attribuering** | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) | Begränsad | Begränsad | Nej | Ja | Nej | Ja, med [Attribut](/help/analyze/analysis-workspace/attribution/overview.md) |
 | **Kuration** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/curate.md) | Ja - Project och Virtual Report Suite | Nej | Nej | Nej | Nej | Nej | Ja - endast Virtual Report Suite |
 | **Projektdelning** <br> [Läs mer](/help/analyze/analysis-workspace/curate-share/share-projects.md) | Ja, med projektroller | Ja | Ja | Nej | Ja | Nej | Nej |
 | **Schemalagd leverans** | Ja | Ja | Ja | Ja | Nej | Ja | Nej |

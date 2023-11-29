@@ -3,9 +3,9 @@ title: Klassificeringar i marknadsföringskanaler
 description: Använd klassificeringar för att kategorisera värden i relaterade grupper och för att rapportera på gruppnivå. Du kan till exempel klassificera alla betalsökningskampanjer i en kategori som videokort. Sedan kan du rapportera om resultatet för den kategorin i förhållande till mätvärden som instanser (eller klickningar).
 feature: Marketing Channels
 exl-id: eaae9d60-21f8-42ff-b574-cb1710c68cdf
-source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '285'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 4%
 >
 > Allmän information om marknadsföringskanaler finns på [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 >
-> För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+> För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Classifications]**.
 
@@ -30,7 +30,7 @@ Klassificeringar som du lägger till i den här proceduren visas i dialogrutan [
 
 >[!IMPORTANT]
 >
->Klassificeringsrapporterna för marknadsföringskanaler beter sig lite annorlunda än standardklassificeringar: när du skapar klassificeringar för antingen första beröringspunkten eller sista beröringsrapporten, tillämpas de automatiskt på båda. Du kan inte klassificera en utan att klassificera den andra.
+>Klassificeringsrapporterna för marknadsföringskanaler fungerar lite annorlunda än standardklassificeringar: när du skapar klassificeringar för antingen första beröringsrapporten eller senaste beröringsrapporten tillämpas de automatiskt på båda. Du kan inte klassificera en utan att klassificera den andra.
 
 ## Klassificeringar av marknadsföringskanaler - definitioner {#mktg-channel-classifications}
 

@@ -3,9 +3,9 @@ title: Vanliga frågor om marknadsföringskanaler
 description: Vanliga frågor och svar om marknadsföringskanaler.
 feature: Marketing Channels
 exl-id: 6698ef7e-bdac-4b1a-a723-4984e12ce70a
-source-git-commit: b0d264bb8128f805f5bcb194436e357eef4b6987
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1462'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+>För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 >
 >Analysadministratörer kan hantera marknadsföringskanaler för sina organisationer enligt beskrivningen i [Hantera marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
 
@@ -23,7 +23,7 @@ Vanliga frågor och svar om marknadsföringskanaler.
 ## Mina spårningskoder följer inget mönster och jag har tusentals som måste anges för min Filials-kanal.
 
 * Använd elimineringsprocessen. Om kanalerna E-post och Filialer använder samma frågesträngsparameter, men du bara har ett fåtal e-postspårningskoder, kan du ange e-postspårningskoderna i en regeluppsättning som definierar e-post. Sedan klassificerar du alla andra spårningskoder med *`affiliates.`*
-* I e-postsystemet lägger du till en frågesträngsparameter i alla URL-adresser för landningssidor, t.ex. *`&ch=eml`*. Skapa en regeluppsättning som identifierar om frågeparametern ch är lika med *`eml`*. Om den inte innehåller *`eml`*, då är det ett närstående bolag.
+* I e-postsystemet lägger du till en frågesträngsparameter i alla URL-adresser för landningssidor, som *`&ch=eml`*. Skapa en regeluppsättning som identifierar om frågeparametern ch är lika med *`eml`*. Om den inte innehåller *`eml`*, då är det ett närstående bolag.
 
 ## Referensdomäner innehåller mer data än jag förväntade mig.
 
@@ -77,7 +77,7 @@ Den här typen av regel fungerar som en&quot;catch-all&quot;-regel för att säk
 
 >[!NOTE]
 >
->Det kan fortfarande finnas kanaltrafik som kan ingå i kategorin Ingen kanal identifierad. Till exempel: En besökare kommer till webbplatsen och bokmärker en sida, och på samma besök kommer sidan tillbaka via bokmärket. Eftersom detta inte är den första sidan av besöket kommer det inte att gå vare sig i direktkanalen eller i den andra kanalen eftersom det inte finns någon referensdomän.
+>Det kan fortfarande finnas kanaltrafik som kan ingå i kategorin Ingen kanal identifierad. Till exempel: En besökare kommer till webbplatsen och bokmärker en sida och på samma besök kommer tillbaka sidan via bokmärket. Eftersom detta inte är den första sidan av besöket kommer det inte att gå vare sig i direktkanalen eller i den andra kanalen eftersom det inte finns någon referensdomän.
 
 ## Orsaker till internt (sessionsuppdatering) {#internal}
 
@@ -85,25 +85,25 @@ Senaste beröring internt (sessionsuppdatering) kan bara inträffa om det också
 
 * **Tidsgräns för session**: En besökare kommer till webbplatsen och lämnar sedan fliken öppen i sin webbläsare för användning vid ett senare tillfälle. Besökarens engagemangsperiod går ut (eller så tar de frivilligt bort sina cookies) och de använder den öppna fliken för att besöka webbplatsen igen. Eftersom den refererande URL:en är en intern domän kommer besöket att klassificeras som Sessionsuppdatering.
 
-* **Alla webbplatssidor är inte taggade**: En besökare kommer till sida A som inte är taggad och går sedan till sida B som är taggad. Sidan A betraktas som den interna referenten och besöket klassificeras som Sessionsuppdatering.
+* **Alla webbplatssidor är inte taggade**: En besökare kommer till sida A som inte är taggad och sedan till sida B som är taggad. Sidan A skulle ses som intern hänvisare och besöket skulle klassificeras som Sessionsuppdatering.
 
-* **Omdirigeringar**: Om en omdirigering inte är inställd för att skicka referensdata till den nya landningssidan, förloras alla data i den verkliga posten, och nu visas omdirigeringssidan (troligtvis en intern sida) som den refererande domänen. Besöken klassificeras som Sessionsuppdatering.
+* **Omdirigeringar**: Om en omdirigering inte är inställd för att skicka referensdata till den nya landningssidan, förloras alla data i den verkliga posten, och nu visas omdirigeringssidan (troligtvis en intern sida) som referensdomän. Besöken klassificeras som Sessionsuppdatering.
 
 * **Domänövergripande trafik**: En besökare flyttar från en domän som utlöses till Suite A till en andra domän som utlöses till Suite B. Om de interna URL-filtren i Suite B innehåller den första domänen kommer besöket i Suite B att registreras som Internal, eftersom Marketing Channels ser det som ett nytt besök i den andra sviten. Besöken klassificeras som Sessionsuppdatering.
 
-* **Långa inläsningstider**: En besökare hamnar på sidan A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildbegäran från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sidan B utlöser sin begäran om Adobe Analytics-bilder. Eftersom Page A:s bildförfrågan aldrig har lästs in visas den andra sidan som den första träffen vid besöket i Adobe Analytics, där Page A är hänvisare. Besöken klassificeras som Sessionsuppdatering.
+* **Långa inläsningstider på startsidan**: En besökare hamnar på sida A som har mycket innehåll och Adobe Analytics-koden finns längst ned på sidan. Innan allt innehåll (inklusive bildbegäran från Adobe Analytics) kan läsas in klickar besökaren på sida B. Sida B utlöser sin begäran om Adobe Analytics-bilder. Eftersom Page A:s bildförfrågan aldrig har lästs in visas den andra sidan som den första träffen vid besöket i Adobe Analytics, där Page A är hänvisare. Besöken klassificeras som Sessionsuppdatering.
 
-* **Rensar cookies mitt på webbplatsen**: En besökare kommer till webbplatsen och mitt-session rensar deras cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
+* **Rensar cookies mitt på webbplatsen**: En besökare kommer till webbplatsen och mellansessionen rensar sina cookies. Både första- och sista-beröringskanalen återställs och besöket klassificeras som Sessionsuppdatering (eftersom referenten är intern).
 
 Nedan visas ett exempel på intern (sessionsuppdatering) som ställs in både som den första beröringskanalen och den sista beröringskanalen:
 
 * Dag 1: Användaren kommer till webbplatsen på skärmen. Första och sista-beröringskanalen ställs in på Visning.
-* Dag 2: Användaren kommer till webbplatsen för naturlig sökning. Första beröringen är fortfarande Visning och Sista beröringen är inställd på Naturlig sökning.
-* Dag 35: Användaren har inte varit på webbplatsen på 33 dagar och återkommer med fliken som han/hon hade öppnat i sin webbläsare. Om man utgår ifrån ett 30-dagars interaktionsfönster skulle fönstret ha stängts och cookies för marknadsföringskanaler skulle ha gått ut. Den första berörings- och den sista beröringskanalen återställs och ställs in på Sessionsuppdatering sedan användaren kom från en intern URL.
+* Dag 2: Användare kommer till webbplatsen för naturlig sökning. Första beröringen är fortfarande Visning och Sista beröringen är inställd på Naturlig sökning.
+* Dag 35: Användaren har inte varit på webbplatsen på 33 dagar och kommer tillbaka med fliken som öppnats i webbläsaren. Om man utgår ifrån ett 30-dagars interaktionsfönster skulle fönstret ha stängts och cookies för marknadsföringskanaler skulle ha gått ut. Den första berörings- och den sista beröringskanalen återställs och ställs in på Sessionsuppdatering sedan användaren kom från en intern URL.
 
-## Varför ändras vissa kanaler efter att ha ändrat bearbetningsreglerna för marknadsföringskanaler?
+## Varför ändras vissa kanaler efter att ha ändrat reglerna för bearbetning av marknadsföringskanaler?
 
-Ibland konfigureras regler för bearbetning av marknadsföringskanal felaktigt, vilket gör det nödvändigt att ändra bearbetningsreglerna. När du har tillämpat ändringarna kan du se vissa mätvärden fortfarande attributera data till en felaktig kanal. Det finns flera saker att tänka på:
+Ibland konfigureras regler för bearbetning av marknadsföringskanal felaktigt, vilket gör det nödvändigt att ändra bearbetningsreglerna. När du har tillämpat ändringarna kan du se en del mätdata fortfarande attributera data till en felaktig kanal. Det finns flera saker att tänka på:
 
 * **Data för marknadsföringskanalen samlas in i realtid**: Marknadsföringskanaldata bearbetas vid datainsamling och är 100 % permanenta. Om du ändrar bearbetningsregler påverkas inte data retroaktivt.
 * **Ändring av bearbetningsregler påverkar inte direkt First Touch-data**: Till exempel:
@@ -112,7 +112,7 @@ Ibland konfigureras regler för bearbetning av marknadsföringskanal felaktigt, 
    3. Användaren kommer tillbaka flera dagar senare genom naturlig sökning och gör ett inköp.
    4. E-postkanalen får First Touch-kredit och naturlig sökning får Last Touch-kredit.
 
-   Även flera dagar efter att du ändrat bearbetningsreglerna kan data fortfarande samlas in i fel First Touch-kanal. Första beröringsdata samlas kontinuerligt in i fel kanal tills alla användares besökarengagemang upphör.
+  Även flera dagar efter att du ändrat bearbetningsreglerna kan data fortfarande samlas in i fel First Touch-kanal. Första beröringsdata samlas kontinuerligt in i fel kanal tills alla användares besökarengagemang upphör.
 
 Det bästa sättet att åtgärda dessa skillnader är att göra något eller båda av följande:
 
@@ -120,6 +120,6 @@ Det bästa sättet att åtgärda dessa skillnader är att göra något eller bå
    1. Gå till Administratörsverktyg > Rapportsviter.
    2. Hovra över Inställningar för bildredigering > Marknadsföringskanaler > Förfallotid för besökarengagemang
    3. Klicka på Förfalla alla.
-   4. Klicka på OK i popup-fönstret för varningar och bekräfta att du är införstådd med vad det kommer att göra.
+   4. Klicka på OK i popup-fönstret för varningar och bekräfta att du förstår vad det kommer att göra.
 
-* **Visa endast Senaste beröringsmått från den tidpunkt du korrigerade reglerna framåt**: Senaste beröringsmått följer alltid den aktuella linjaluppsättningen. Om du visar tiden från när du ändrade bearbetningsregler framåt korrekt, visas de senaste bearbetningsreglerna.
+* **Visa endast Senaste beröringsmått från den tidpunkt du korrigerade reglerna framåt**: Senaste Touch-mått följer alltid den aktuella regeluppsättningen. Om du visar tiden från när du ändrade bearbetningsregler framåt korrekt, visas de senaste bearbetningsreglerna.

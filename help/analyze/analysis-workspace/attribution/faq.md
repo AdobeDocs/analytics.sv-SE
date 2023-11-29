@@ -4,9 +4,9 @@ description: Få svar på vanliga frågor om attribuering.
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1212'
 ht-degree: 1%
 
 ---
@@ -108,9 +108,9 @@ Ja, de flesta datakällor stöds. Attribution is not possible with summary-level
 
 Datakällor för transaktions-ID behandlas som alla andra träffar. Transaktions-ID-datakällor använder inte den särskilda bearbetning som normalt används i traditionell rapportering. Med andra ord, när du använder rapporttidsbearbetning kommer transaktions-ID-träffar att få eVar-värden spridda från träffar som inträffar nära tidsstämpeln för Transaktions-ID-träffen. Värdena sprids inte från träffar som inträffade nära tidpunkten för den ursprungliga transaktionen.
 
-När det är möjligt är attribuerings-IQ beroende av MID-kolumnvärdet som skickas i en händelse i datakällan, i stället för ett beständigt värde. Attributmodellen tillämpas direkt på MID-kolumnvärdena i datakällan. När du till exempel använder attributet&quot;Sista beröringen&quot; startar modellen från varje instans av ett mätresultat och går bakåt sekventiellt i träffarna tills modellen når det senaste värdet som observerats i MID-kolumnen.
+När det är möjligt är attribueringen beroende av MID-kolumnvärdet som skickas i en händelse i datakällan, i stället för ett beständigt värde. Attributmodellen tillämpas direkt på MID-kolumnvärdena i datakällan. När du till exempel använder attributet&quot;Sista beröringen&quot; startar modellen från varje instans av ett mätresultat och går bakåt sekventiellt i träffarna tills modellen når det senaste värdet som observerats i MID-kolumnen.
 
-Om det inte är möjligt kommer attribuerings-IQ att använda MID-värdet i&quot;föregående post&quot; i datakällan för utvärdering. Denna tidigare post kanske inte beställs sekventiellt via tidsstämpel eftersom AA inte stöder data som ligger utanför ordningen.
+Om det inte är möjligt används MID-värdet i föregående post i datakällan för utvärdering. Denna tidigare post kanske inte beställs sekventiellt via tidsstämpel eftersom AA inte stöder data som ligger utanför ordningen.
 
 På grund av att posterna inte ordnas sekventiellt kan de förväntade värdena från att tillämpa beständighet påverka den tid som finns mellan den angivna transaktions-ID-tidsstämpeln och den ursprungliga transaktionen.
 

@@ -4,9 +4,9 @@ title: Kända begränsningar i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 520e970b-1387-4f70-985b-bfe397f4a21b
-source-git-commit: f8a4b3442f7e9f631ba8e472c69fbc4d1cc3877e
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
@@ -31,12 +31,12 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 
 ## Paneler
 
-* Segmentjämförelse: The [!UICONTROL Everyone Else] segmentet skapas inte om en segmentmall används i den inledande släppzonen.
+* Segmentjämförelse: [!UICONTROL Everyone Else] segmentet skapas inte om en segmentmall används i den inledande släppzonen.
 
 ## Komponenter > Segment
 
 * Vissa mått och mått kan inte segmenteras, t.ex. [!UICONTROL Occurrences], [!UICONTROL Unique Visitors], osv.
-* Adhoc-segment skapade i [panelens dropzon](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller i Segment-komponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
+* Adhoc-segment som skapats i [panelens dropzon](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) är en typ av snabbfilter. De visas inte i den vänstra listen i Workspace eller i Segment-komponenthanteraren, såvida de inte är offentliga. Mer information finns i [Snabbsegment](/help/analyze/analysis-workspace/components/segments/quick-segments.md).
 
 ## Komponenter > Beräknade mått
 
@@ -56,6 +56,6 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 
 * Vissa av inställningarna på [!UICONTROL Report Settings] sidan gäller inte. Analysis Workspace använder bara [!UICONTROL Language/Currency/Encoding] inställningarna längst ned: [!UICONTROL Thousands separator], [!UICONTROL Scheduled Report Encoding]och [!UICONTROL CSV Separator Character].
 
-## Attribution IQ
+## Attribuering
 
-* En delmängd av mätvärden stöds inte i [!UICONTROL Attribution IQ]. En fullständig lista finns i [Vanliga frågor om Attribution IQ](../attribution/faq.md).
+* En delmängd av mätvärden stöds inte i [!UICONTROL Attribution]. En fullständig lista finns i [Vanliga frågor om attribut](/help/analyze/analysis-workspace/attribution/faq.md).

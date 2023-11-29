@@ -4,9 +4,9 @@ subtopic: Marketing channels
 title: Utgångsdatum för marknadsföringskanal
 feature: Marketing Channels
 exl-id: a9df659b-3b6a-4bdb-bd77-f4490d2b7c79
-source-git-commit: 6b216a9af4b5614203b0f34fa754985b12ff59ea
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 >
 > Allmän information om marknadsföringskanaler finns på [Kom igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 >
-> För att maximera effekten av marknadsföringskanalerna för Attribution IQ och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
+> För att maximera effekten av marknadsföringskanaler för Attribution och Customer Journey Analytics har vi publicerat några [reviderad bästa praxis](/help/components/c-marketing-channels/mchannel-best-practices.md).
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Marketing Channels]** > **[!UICONTROL Marketing Channel Expiration]**.
 
@@ -30,18 +30,18 @@ Om besökaren använder webbplatsen ofta följer besökarfönstret med. De måst
 Exempel:
 
 * Dag 1: Användaren kommer till webbplatsen på skärmen. Första och sista-beröringskanalen ställs in på Visning.
-* Dag 2: Användaren kommer till webbplatsen för naturlig sökning. Första beröringen är fortfarande Visning och Sista beröringen är inställd på Naturlig sökning.
-* Dag 35: Användaren har inte varit på webbplatsen på 33 dagar och återkommer med fliken som han/hon hade öppnat i sin webbläsare. Om man utgår ifrån ett 30-dagars interaktionsfönster skulle fönstret ha stängts och cookies för marknadsföringskanaler skulle ha gått ut. Den första berörings- och den sista beröringskanalen återställs och ställs in på Sessionsuppdatering sedan användaren kom från en intern URL.
+* Dag 2: Användare kommer till webbplatsen för naturlig sökning. Första beröringen är fortfarande Visning och Sista beröringen är inställd på Naturlig sökning.
+* Dag 35: Användaren har inte varit på webbplatsen på 33 dagar och kommer tillbaka med fliken som öppnats i webbläsaren. Om man utgår ifrån ett 30-dagars interaktionsfönster skulle fönstret ha stängts och cookies för marknadsföringskanaler skulle ha gått ut. Den första berörings- och den sista beröringskanalen återställs och ställs in på Sessionsuppdatering sedan användaren kom från en intern URL.
 
 ## Utgångsdatum för marknadsföringskanal
 
-Förfallotid:
+Förfallotidsinställningar består av följande:
 
 | Fält | Definition |
 |--- |--- |
 | Inaktivitetsdagar | Antalet dagar som måste gå innan besökarens första beröringsengagemang upphör. Standardvärdet är 30. |
 | Aldrig | Besökarens anställningsperiod går inte ut. |
-| Återställ kanal | Förfaller alla besökares interaktionsperioder.  Om ni behöver återställa alla marknadsföringskanaldata kan ni förfalla alla besökares interaktionsperioder. Du kan behöva återställa data om bearbetningsreglerna tidigare har konfigurerats felaktigt. Alla värden för den första och sista beröringskanalen upphör omedelbart och återställs när besökarna kommer tillbaka. |
+| Återställ kanal | Förfaller alla besökares interaktionsperioder.  Om ni behöver återställa alla marknadsföringskanaldata kan ni förfalla alla besökares interaktionsperioder. Du kan behöva återställa data om bearbetningsreglerna tidigare har konfigurerats felaktigt. Alla värden för den första och sista beröringskanalen upphör omedelbart att gälla och återställs när besökarna kommer tillbaka. |
 
 ## Definiera utgångsdatum för marknadsföringskanal {#define-expiration}
 

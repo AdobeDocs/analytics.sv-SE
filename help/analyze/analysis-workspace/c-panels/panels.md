@@ -4,7 +4,7 @@ title: Översikt över paneler
 feature: Panels
 role: User, Admin
 exl-id: dd1a3c40-8b5b-47dd-86d9-da766575ee46
-source-git-commit: a916afbc15514430cd13673bb642ebc720664e35
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
 source-wordcount: '1404'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Följande paneltyper är tillgängliga i Analysis Workspace:
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Blank] och [!UICONTROL Freeform] paneler är bra att använda för att starta analysen, medan [!UICONTROL Analytics for Target], [!UICONTROL Attribution IQ], [!UICONTROL Media Concurrent Viewers] och [!UICONTROL Segment Comparison] Utnyttja mer avancerade analyser. A `"+"` -knappen är tillgänglig i projekt så att du kan lägga till tomma paneler när som helst.
+[!UICONTROL Quick Insights], [!UICONTROL Blank] och [!UICONTROL Freeform] paneler är bra att använda för att starta analysen, medan [!UICONTROL Analytics for Target], [!UICONTROL Attribution], [!UICONTROL Media Concurrent Viewers] och [!UICONTROL Segment Comparison] Utnyttja mer avancerade analyser. A `"+"` -knappen är tillgänglig i projekt så att du kan lägga till tomma paneler när som helst.
 
 Standardstartpanelen är [!UICONTROL Freeform] men du kan göra [tom panel](/help/analyze/analysis-workspace/c-panels/blank-panel.md) även din standard.
 

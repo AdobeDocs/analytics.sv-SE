@@ -5,9 +5,9 @@ title: Nyheter i Analysis Workspace
 feature: Workspace Basics
 role: User, Admin
 exl-id: 1c845d56-464f-424c-bd9b-a686e0651dd8
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 984406d00e5a5ae966fff60ec9fcfcb000958696
 workflow-type: tm+mt
-source-wordcount: '8156'
+source-wordcount: '8149'
 ht-degree: 85%
 
 ---
@@ -72,8 +72,8 @@ Nya funktioner som släpptes 18 juni 2020.
 
 | Funktion | Beskrivning |
 |--- |--- |
-| Attribution IQ: Algoritmisk attribuering | I modellen för algoritmisk attribuering i Analysis Workspace används statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. Tillgängligt för kunder som har Adobe Analytics Ultimate. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
-| Attribution IQ: Anpassade uppslagsfönster | Nu kan du konfigurera alla attribueringsmodeller i Attribution IQ så att de omfattar kontaktytor från upp till 90 dagar före rapporteringsperioden. Detta ökar vanligen attribueringens exakthet för händelser som inträffar tidigt under rapporteringsperioden genom att redovisa interaktioner som inträffat under föregående månad(er). Tillgängligt för kunder som har Adobe Analytics Foundation, Select, Prime, Premium, Premium Attribution, Premium Complete och Ultimate. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
+| Attribution: Algoritmisk attribuering | I modellen för algoritmisk attribuering i Analysis Workspace används statistiska tekniker för att dynamiskt fastställa den optimala kreditfördelningen för det valda måttet. Tillgängligt för kunder som har Adobe Analytics Ultimate. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
+| Attribut: Anpassade uppslagsfönster | Du kan nu konfigurera alla attribueringsmodeller i Attribution så att de inkluderar kontaktytor från upp till 90 dagar före rapporteringsperioden. Detta ökar vanligen attribueringens exakthet för händelser som inträffar tidigt under rapporteringsperioden genom att redovisa interaktioner som inträffat under föregående månad(er). Tillgängligt för kunder som har Adobe Analytics Foundation, Select, Prime, Premium, Premium Attribution, Premium Complete och Ultimate. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
 | Projektroller för delade Workspace-projekt | När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
 | Skrivskyddade Workspace-projekt | Arbetsyteprojekt kan bara delas till användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html) |
 | Möjlighet att samredigera Workspace-projekt | Mottagare som läggs till i rollen Kan redigera kan spara över ett projekt som har delats med dem. Detta gäller både administratörer och icke-administratörer. [Läs mer …](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) |
@@ -187,7 +187,7 @@ Nya funktioner och förbättringar som släpptes 17 januari 2019.
 |--- |--- |
 | [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Tack vare omfattande förbättringar av kohortanalys kan du:<ul><li>Använda segmentinkludering och returnera mätvärden separat. </li><li>Visa bortfall i stället för lojalitet.</li><li>Visa latenstabeller (förfluten tid före och efter en inkluderingshändelse).</li><li>Anpassa kohortmått (för att gruppera besökare baserat på en evariabel, inte bara tid).</li><li>Utföra en rullande kohortberäkning: beräkna lojalitet/bortfall baserat på tidigare tidsperiod, inte ursprunglig kohort. </li><li>Lägga till flera mätvärden i inkluderings- och returfält samt använda segment. (Beräknade värden stöds inte.)</li></ul> |
 | [Visa densitet](/help/analyze/analysis-workspace/build-workspace-project/view-density.md) | Med den här nya inställningen kan du visa mer data på en enda skärm genom att minska den lodräta utfyllnaden i den vänstra listen, friformstabeller och kohorttabeller. Tillgängligt via Projekt > Projektinformation och inställningar. |
-| [Stöd för flervärdesvariabler i Attribution IQ](attribution/overview.md) | Vissa mått i Analytics kan innehålla flera värden för en enda träff, till exempel listvariabler, produktvariabler, listegenskaper eller evariabler för försäljning. Med Analysis Workspace kan du använda Attribution IQ på alla dessa variabler på träffnivå. |
+| [Stöd för flervärdesvariabler i Attribution](/help/analyze/analysis-workspace/attribution/overview.md) | Vissa mått i Analytics kan innehålla flera värden för en enda träff, till exempel listvariabler, produktvariabler, listegenskaper eller evariabler för försäljning. Med Analysis Workspace kan du använda Attribution på alla dessa variabler på träffnivå. |
 | Prestandaförbättringar | Snabbare visualisering av uppdelningar – projekt med många uppdelningar läses in snabbare. |
 
 ## November 2018
@@ -270,8 +270,8 @@ Nya funktioner och förbättringar som släpptes 19 juli 2018.
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <p><b> <a href="attribution/overview.md"  > Attribution IQ </a> </b> </p> </td>
-   <td colname="col2"> <p>Med Attribution IQ kan du utföra mer avancerade och intelligenta analyser av marknadsföringen. De nya attribueringsmodellerna kan användas på mätvärden i Analysis Workspace (på alla tabeller och uppdelningar) och i beräknade mätvärden. En ny attribueringspanel ger bättre visualisering och jämförelse. </p> </td>
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/attribution/overview.md"  > Attribut </a> </b> </p> </td>
+   <td colname="col2"> <p>Med Attribution kan du utföra mer avancerade och intelligenta analyser av marknadsföringen. De nya attribueringsmodellerna kan användas på mätvärden i Analysis Workspace (på alla tabeller och uppdelningar) och i beräknade mätvärden. En ny attribueringspanel ger bättre visualisering och jämförelse. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p><b> Förbättringar av den vänstra listen </b> </p> </td>
@@ -348,7 +348,7 @@ Nya funktioner och förbättringar som släpptes 10 maj 2018.
    <td colname="col2"> <p>Nu kan du rulla uppåt och nedåt medan du drar komponenter till en ny plats. </p> </td>
   </tr>
   <tr>
-   <td colname="col1"> <p><b>Ytterligare information om <a href="/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md"  >avvikelser</a></b> </p> </td>
+   <td colname="col1"> <p><b>Ytterligare information om <a href="/help/analyze/analysis-workspace/c-anomaly-detection/view-anomalies.md"  >avvikelser</a></b> </p> </td>
    <td colname="col2"> <p>När du håller markören över en avvikelse i ett linjediagram visas nu datumet och det råa värdet för avvikelsen. </p> </td>
   </tr>
  </tbody>
@@ -379,7 +379,7 @@ Nya funktioner och förbättringar som släpptes 12 april 2018.
    <td colname="col2"> <p>En ny inställning för områdesstaplade/staplade/horisontellt staplade visualiseringar förvandlar diagrammet till en ”100 % staplad” visualisering så att du kan uppskatta relativa proportioner. </p> <p><img placement="break"  src="visualizations/assets/stacked_100_percent.png" width="500px" id="image_ED9C94CE5EAF4500B1EF71BE8701B6D2" /> </p> </td>
   </tr>
   <tr>
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/virtual-analyst/overview.md"  > Avvikelseidentifiering och bidragsanalys</a> är nu bara tillgängliga via Analysis Workspace </p> </td>
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md"  > Avvikelseidentifiering och bidragsanalys</a> är nu bara tillgängliga via Analysis Workspace </p> </td>
    <td colname="col2"> <p>Avvikelseidentifiering och bidragsanalys har tagits bort från funktionerna för rapporter och analyser och är nu bara tillgängliga via Analysis Workspace. </p> <p>Tänk på att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till avvikelseidentifiering på dagsnivå i Workspace. </p> </td>
   </tr>
  </tbody>
@@ -610,7 +610,7 @@ Nya funktioner som släpptes 26 oktober 2017.
     </ul> <p>Om till exempel ”Timme på dagen” släpps i en tabell sorteras den från 00:00–23:00. Du kan fortfarande välja att sortera efter valfri mätvärdeskolumn. </p> </td>
   </tr>
   <tr>
-   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md"  > Möjlighet att låta konfidensintervall skala om diagram </a> </p> </td>
+   <td colname="col1"> <p> <a href="/help/analyze/analysis-workspace/c-anomaly-detection/view-anomalies.md"  > Möjlighet att låta konfidensintervall skala om diagram </a> </p> </td>
    <td colname="col2"> <p>Konfidensintervallet för avvikelseidentifiering skalar inte automatiskt y-axeln för en visualisering så att diagrammet blir mer läsbart. </p> <p>Du kan nu välja att låta konfidensintervallet skala diagrammet. </p> </td>
   </tr>
   <tr>
@@ -671,7 +671,7 @@ Nya funktioner som släpptes 21 september 2017.
    <td colname="col1"> <p> Knappen <span class="uicontrol">Rensa alla</span> för konfiguration av segmentjämförelse och bidragsanalys </p> </td>
    <td colname="col2"> <p>I stället för att ta bort varje element manuellt kan du nu rensa alla element i följande delar av Workspace: </p>
     <ul id="ul_73E06D64CDCA4E83B9FEC2FD99D41CD3">
-     <li id="li_A51EF8FADFA04CC19FD79C1675597659"> <a href="/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/run-contribution-analysis.md#section_F6932F4BF74544B5872164E7B1E0C6FC"  > Uteslutna komponenter för bidragsanalys </a> </li>
+     <li id="li_A51EF8FADFA04CC19FD79C1675597659"> <a href="/help/analyze/analysis-workspace/c-anomaly-detection/run-contribution-analysis.md"  > Uteslutna komponenter för bidragsanalys </a> </li>
      <li id="li_30E612D5A7584484967260931DB9E30E"> <a href="/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"> Uteslutna komponenter för segmentjämförelse </a> </li>
     </ul> </td>
   </tr>
@@ -754,7 +754,7 @@ Nya funktioner som släpptes 20 juli 2017.
    <td colname="col2"> <p>Vi har förnyat hur datakällor (som driver visualiseringar) hanteras. Det finns inte längre några separata, dolda tabeller när du låser datakällan till en tabell. </p> <p>I stället behåller visualiseringen kopplingen till den tabell från vilken den skapades. Detta löser också ett fel med live-länkade tabeller där detaljnivån, efter att du ändrat den, ändå återgick till den gamla nivån nästa gång projektet lästes in. </p> </td>
   </tr>
   <tr>
-   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/virtual-analyst/contribution-analysis/run-contribution-analysis.md"  > Möjlighet att markera en viss avvikelse </a></b> </p> </td>
+   <td colname="col1"> <p><b> <a href="/help/analyze/analysis-workspace/c-anomaly-detection/run-contribution-analysis.md"  > Möjlighet att markera en viss avvikelse </a></b> </p> </td>
    <td colname="col2"> <p>Avvikelsen lyfts nu fram med en blå punkt i bidragsanalysen och i de intelligenta aviseringar som är kopplade till den. Detta ger en tydligare bild av den avvikelse som analyseras. </p> </td>
   </tr>
   <tr>
@@ -986,7 +986,7 @@ Nya funktioner som släpptes 20 oktober 2016:
     </ul> <p><img placement="break"  src="assets/intel-alerts.png" width="400px" id="image_10069C33B6B1437CA578B8194FC75AD8" /> </p> </td>
   </tr>
   <tr>
-   <td colname="col1"> <b> <a href="/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md"  > Avvikelseidentifiering och bidragsanalys </a></b> </td>
+   <td colname="col1"> <b> <a href="/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md"  > Avvikelseidentifiering och bidragsanalys </a></b> </td>
    <td colname="col2"> <p>Talar om ifall en ändring i trenddata är signifikant och vad som orsakade den. </p> <p>Både avvikelseidentifiering och bidragsanalys är nu centrala arbetsflöden i Analysis Workspace. </p> <p>Viktigt! Bidragsanalys är bara tillgängligt för Adobe Analytics Premium-kunder. </p> <p>Ni kan: </p> <p> </p>
     <ul id="ul_9CEE47788F3640838D8598F2E2C020D6">
      <li id="li_787236BB5EA545B8833B311C06C24337">Automatiskt identifiera statistiskt signifikanta dataavvikelser i data. </li>

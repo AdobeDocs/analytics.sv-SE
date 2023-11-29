@@ -3,7 +3,7 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: d40e03ce743c286abe8364ff99f5c3c3a1fe6ecc
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
 source-wordcount: '2577'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
    * Admin Console i Adobe, där produktåtkomst tillhandahålls och användarbehörigheter hanteras. Se [Admin Console](/help/admin/admin-console/home.md) i användarhandboken för Admin.
 * **Allokering:** Om en konverteringsvariabel påträffar mer än ett värde under ett besök avgör variabelns allokeringsinställning vilket värde som behålls. Se [Konverteringsvariabler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/conversion-var-admin.md) i användarhandboken för Admin.
 * **Analysis Workspace:** Webbläsarlösning för att skapa stabila, anpassade analysprojekt och demokratisera insikter. Ger större rapportflexibilitet än Reports and Analytics.
-* **Anomaly:** Identifierades med statistisk modellering för att automatiskt hitta oväntade trender i data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. Se [Analysidentifiering](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) i användarhandboken för Analysera.
+* **Anomaly:** Identifierades med statistisk modellering för att automatiskt hitta oväntade trender i data. Modellen analyserar mätvärden och fastställer en nedre gräns, övre gräns och förväntat värdeintervall. Se [Analysidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) i användarhandboken för Analysera.
 * **AppMeasurement:** Kodbiblioteket som används för att samla in data och skicka dem till Adobe. Se [Hemsida](/help/implement/home.md) i Implementera användarhandboken.
 * **ASI-kortplats:** Finns inte längre. I tidigare versioner av Adobe Analytics tillhandahöll ASI-kortplatser en temporär rapportsvitsbehållare för att visa segmenterade data. I den aktuella versionen av Adobe Analytics kan segment tillämpas direkt på alla rapporter.
 * **Uppdelning:** Gör att du kan visa en dimension inuti en annan dimension. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.

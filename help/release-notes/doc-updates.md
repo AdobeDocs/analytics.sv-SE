@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 46118b1bd7f3b8c4e0f653778c16a1c51011fb2d
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
-source-wordcount: '5258'
+source-wordcount: '5254'
 ht-degree: 24%
 
 ---
@@ -202,8 +202,8 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | **Juni 2020** | |
 | 25 juni 2020 | Ny dokumentation för [Panelen Snabbinsikter](/help/analyze/analysis-workspace/c-panels/quickinsight.md) i Workspace. Där finns vägledning för icke-analytiker och nya användare av Analysis Workspace som snabbt och enkelt kan besvara affärsfrågor. |
 | 25 juni 2020 | Ny dokumentation för [Analyser för målpanelen](/help/analyze/analysis-workspace/c-panels/a4t-panel.md) i Workspace. Ni kan analysera Adobe Target aktiviteter och upplevelser med lyft och självförtroende. |
-| 18 juni 2020 | Ny dokumentation om [Attribution IQ: Algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
-| 18 juni 2020 | Ny dokumentation om [Attribution IQ: Anpassade uppslagsfönster](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
+| 18 juni 2020 | Ny dokumentation om [Attribution: Algoritmisk attribuering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/algorithmic.html) |
+| 18 juni 2020 | Ny dokumentation om [Attribut: Anpassade fönster för sökning](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/models.html#lookback-windows) |
 | 18 juni 2020 | Ny dokumentation för [Projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade arbetsyteprojekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
 | 18 juni 2020 | Ny dokumentation om [Visa endast arbetsyteprojekt](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/view-only-projects.html). Projekt kan delas med användare som&quot;Kan visa&quot;. När mottagare med View-behörighet öppnar det delade projektet får de en begränsad upplevelse där den vänstra listen saknas och interaktionen är begränsad. |
 | 18 juni 2020 | Ny dokumentation om [Projektroller](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html) för delade arbetsyteprojekt. När du delar ett Workspace-projekt kan du nu placera mottagare i en av tre projektroller, beroende på vilken funktion du vill att de ska ha: Edit, Duplicate och View. |
@@ -276,4 +276,4 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | 1 februari 2019 | Större uppdatering av implementeringsplugin-programmet [getPercentPageViewed](../implement/vars/plugins/getpercentpageviewed.md). |
 | 17 januari 2019 | [Kohortanalys](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) - Större förbättringar av kohortanalysen gör att du kan:<ul><li>Använda segmentinkludering och returnera mätvärden separat. </li><li>Visa bortfall i stället för lojalitet.</li><li>Visa latenstabeller (förfluten tid före och efter en inkluderingshändelse).</li><li>Anpassa kohortmått (för att gruppera besökare baserat på en evariabel, inte bara tid).</li><li>Utföra en rullande kohortberäkning: beräkna lojalitet/bortfall baserat på tidigare tidsperiod, inte ursprunglig kohort. </li><li>Lägga till flera mätvärden i inkluderings- och returfält samt använda segment. (Beräknade värden stöds inte.)</li></ul> |
 | 17 januari 2019 | [Visa densitet](/help/analyze/analysis-workspace/build-workspace-project/view-density.md). Med den här nya inställningen kan du visa mer data på en enda skärm genom att minska den lodräta utfyllnaden i den vänstra listen, friformstabeller och kohorttabeller. Tillgängligt via Projekt > Projektinformation och inställningar. |
-| 17 januari 2019 | [Stöd för flervärdesvariabler i Attribution IQ](/help/analyze/analysis-workspace/attribution/overview.md). Vissa mått i Analytics kan innehålla flera värden för en enda träff, till exempel listvariabler, produktvariabler, listegenskaper eller evariabler för försäljning. Med Analysis Workspace kan du använda Attribution IQ på alla dessa variabler på träffnivå. |
+| 17 januari 2019 | [Stöd för flervärdesvariabler i Attribution](/help/analyze/analysis-workspace/attribution/overview.md). Vissa mått i Analytics kan innehålla flera värden för en enda träff, till exempel listvariabler, produktvariabler, listegenskaper eller evariabler för försäljning. Med Analysis Workspace kan du använda Attribution på alla dessa variabler på träffnivå. |

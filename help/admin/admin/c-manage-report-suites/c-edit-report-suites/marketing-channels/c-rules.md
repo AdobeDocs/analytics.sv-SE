@@ -3,7 +3,7 @@ title: Bearbetningsregler för marknadsföringskanaler
 description: Bearbetningsreglerna för marknadsföringskanaler avgör om en besökarträff uppfyller kriterierna som tilldelats en kanal. Reglerna bearbetar varje träff en besökare gör på er webbplats. När en regel inte uppfyller villkoren för en kanal, eller om reglerna inte är korrekt konfigurerade, tilldelar systemet träffen Ingen kanal identifierad.
 feature: Marketing Channels
 exl-id: 825f70a5-cce3-4b1c-bb42-828388348216
-source-git-commit: 574c705a3127c82c947d0a1cba4beab63109d2c9
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Ytterligare information om bearbetning:
 
 * Granska den konceptuella informationen i [Komma igång med marknadsföringskanaler](/help/components/c-marketing-channels/c-getting-started-mchannel.md).
 * Skapa en eller flera kanaler så att du kan tilldela regler till dem. Se [Lägg till marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-channels.md).
-* Granska de bästa sätten att använda [!UICONTROL Marketing Channels] med [!UICONTROL Attribution IQ].
+* Granska de bästa sätten att använda [!UICONTROL Marketing Channels] med [!UICONTROL Attribution].
 
 ## Skapa regler för bearbetning av marknadsföringskanal
 

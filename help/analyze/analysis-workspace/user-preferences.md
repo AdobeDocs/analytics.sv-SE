@@ -4,7 +4,7 @@ description: Du kan ange allmänna inställningar och projektinställningar för
 feature: Workspace Basics
 role: User, Admin
 exl-id: f32e3061-f396-4730-96e1-d251b00e32f0
-source-git-commit: cca740f66783de4323b91dd722e3a108dde6b023
+source-git-commit: 984406d00e5a5ae966fff60ec9fcfcb000958696
 workflow-type: tm+mt
 source-wordcount: '3142'
 ht-degree: 1%
@@ -131,7 +131,7 @@ Klicka på de länkade avsnittsrubrikerna för mer information och kontext om de
 | | Visa dubbelaxel (om tillämpligt) | Gäller endast om du har två mätvärden - du kan ha en y-axel till vänster (för ett mätresultat) och till höger (för det andra måttet). Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | | Normalisering (om tillämpligt) | Tvingar måtten att ha samma proportioner. Detta är praktiskt när plottade mätvärden har mycket olika förstoringsgrader. |
 | | Fästpunkt Y-axel vid noll | Om alla värden som är ritade i diagrammet ligger betydligt över noll, kommer diagrammets standardvärde att göra den nedre delen av y-axeln ICKE-ZERO. Om du markerar den här rutan kommer y-axeln att tvingas till noll (och diagrammet ritas om). |
-| | Tillåt avvikelser att skala Y-axeln | Om du har flera mätvärden i ett diagram måste du hovra över varje avvikelse för att se konfidensintervallet för det måttet. För att göra visualiseringen mer läsbar skalas inte y-axeln automatiskt i konfidensintervallet för avvikelseidentifiering. Med det här alternativet kan konfidensintervallet skalförändra visualiseringen. <p>Mer information finns i [Visa avvikelser i Analysis Workspace](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md).</p> |
+| | Tillåt avvikelser att skala Y-axeln | Om du har flera mätvärden i ett diagram måste du hovra över varje avvikelse för att se konfidensintervallet för det måttet. För att göra visualiseringen mer läsbar skalas inte y-axeln automatiskt i konfidensintervallet för avvikelseidentifiering. Med det här alternativet kan konfidensintervallet skalförändra visualiseringen. <p>Mer information finns i [Visa avvikelser i Analysis Workspace](/help/analyze/analysis-workspace/c-anomaly-detection/view-anomalies.md).</p> |
 | **[Linjediagram](/help/analyze/analysis-workspace/visualizations/line.md)** | | |
 | | Procenttal | Visar värden i procent för linjevisualiseringar. |
 | | Förklaring synlig | Gör att du kan dölja den detaljerade förklaringstexten för linjevisualiseringen. |

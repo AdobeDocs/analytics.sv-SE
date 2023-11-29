@@ -5,7 +5,7 @@ uuid: 1e504ff9-df88-4fa7-95ea-1ca05a6f9c0d
 feature: Report Builder
 role: User, Admin
 exl-id: 0a8b1971-8d32-424a-9d41-d7ab2af54d1e
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 2%
@@ -38,4 +38,4 @@ Så här skapar du en begäran om avvikelseidentifiering i Report Builder:
    När du väljer något av dessa alternativ skapas kopior av det ursprungliga måttet för avvikelseidentifiering. För Besök-måttet läggs till exempel ett värde för Lägre bindningsbesök till i [!UICONTROL Metric] grupp.
 1. Klicka **[!UICONTROL Finish]** och markera cellen för utdata till Excel.
 
-   Se [Analysidentifiering](/help/analyze/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) för definitioner.
+   Se [Analysidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) för definitioner.
