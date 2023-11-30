@@ -5,10 +5,10 @@ title: Använda segment i utfallsanalys
 feature: Visualizations
 role: User, Admin
 exl-id: 2177cd09-5a27-4295-8414-580cf53062cb
-source-git-commit: 10ae8213b8745439ab5968853f655a1176b8c38a
+source-git-commit: 3bbf89cf522d9e0be62e0cabb28133bfa2b7a167
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '425'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och
 
 >[!IMPORTANT]
 >
->Segment som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontextutvikning måste segment som används som kontrollpunkter vara besök eller träffbaserade segment. Med en utvikning för besökskontext måste segment som används som kontrollpunkt vara träffbaserade segment. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt segment som kontaktyta. Vissa ogiltiga kombinationer av segmentbehållare leder till ogiltiga utfallsdiagram, t.ex.:
+>Segment som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en besökarkontextutvikning måste segment som används som kontrollpunkter vara besök eller träffbaserade segment. Med en utvikning för besökskontext måste segment som används som kontrollpunkt vara träffbaserade segment. Om du använder en ogiltig kombination blir utfallet 100 %. Vi har lagt till en varning i utfallsvisualiseringen som visas när du lägger till ett inkompatibelt segment som kontaktyta. Vissa ogiltiga kombinationer av segmentbehållare leder till ogiltiga utfallsdiagram, som:
 
 * Använda ett besöksbaserat segment som kontaktyta inuti en besökarsammanhangsbaserad utfallsvisualisering
 * Använda ett besöksbaserat segment som kontaktyta i en snabbutfallsvisualisering
@@ -48,18 +48,18 @@ Du kan också skapa en OCH-kontaktyta genom att dra användarsegmentet i USA til
 
 ## Jämför segment i utfall {#section_E0B761A69B1545908B52E05379277B56}
 
-Du kan jämföra ett obegränsat antal segment i utfallsvisualiseringen.
+Du kan jämföra ett obegränsat antal segment i utfallsvisualiseringen. (Observera att det i videon nedan står att du kan jämföra upp till tre segment, vilket är fel.)
 
 Här är en video om hur du jämför segment i utfallet:
 
 >[!VIDEO](https://video.tv.adobe.com/v/24046/?quality=12)
 
-1. Välj de segment som du vill jämföra från [!UICONTROL Segments] till vänster. I vårt exempel har vi valt två segment: Användare i USA och användare utanför USA.
+1. Välj de segment som du vill jämföra från [!UICONTROL Segments] till vänster. I vårt exempel har vi valt två segment: Användare i USA och Användare utanför USA.
 1. Dra dem till segmentsläppzonen längst upp.
 
    ![](assets/segment-drop.png)
 
-1. Valfritt: Du kan behålla&quot;Alla besök&quot; som standardbehållare eller ta bort den.
+1. Valfritt: Du kan behålla &quot;Alla besök&quot; som standardbehållare eller ta bort den.
 
    ![](assets/seg-compare.png)
 

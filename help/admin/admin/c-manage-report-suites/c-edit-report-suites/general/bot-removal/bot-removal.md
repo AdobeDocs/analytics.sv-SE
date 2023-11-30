@@ -3,9 +3,9 @@ title: Borttagning av ojämnheter i Adobe Analytics
 description: Så här tar du bort objekt i Adobe Analytics
 feature: Bot Removal
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 6c856d078becea69bcb8ae0ec30c473e273b34b2
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ När Datan Warehouse har kommit fram har du en lista över ECID som måste filtr
 * **ECID**: Kontrollera att den här kolumnrubriken matchar namnet som du gav det nya deklarerade ID:t ovan.
 * **Punktflagga**: Lägg till &#39;Bot Flag&#39; som en schemdimension för kundattribut.
 
-Använd den här .CSV-filen som import av kundattribut och prenumerera sedan dina rapportsviter på kundattributet enligt beskrivningen i den här [blogginlägg](https://theblog.adobe.com/link-digital-behavior-customers).
+Använd den här .CSV-filen som import av kundattribut och prenumerera sedan dina rapportsviter på kundattributet enligt beskrivningen i den här [blogginlägg](https://blog.adobe.com/en/publish/2016/10/20/link-digital-behavior-customers).
 
 ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/assets/bot-csv-4.png)
 
