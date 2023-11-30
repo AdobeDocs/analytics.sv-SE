@@ -4,7 +4,7 @@ title: Mätvärden och dimensioner som stöds i realtid
 topic-fix: Reports
 feature: Real-time
 exl-id: 736a3caf-ee04-4aa4-8d9b-ba891cabda61
-source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
+source-git-commit: ee55349a8c676023a5ce33b56592cad7642199b8
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 18%
@@ -12,8 +12,6 @@ ht-degree: 18%
 ---
 
 # Mätvärden och dimensioner som stöds i realtid
-
-{{ra-eol}}
 
 Visar mått och dimensioner som stöds av realtidsrapporter. Klassificeringar stöds också om du har definierat dem.
 

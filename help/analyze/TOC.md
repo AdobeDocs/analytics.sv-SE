@@ -4,10 +4,10 @@ audience: end-user
 user-guide-title: Handbok om Analytics-verktyg
 breadcrumb-title: Användarhandbok om verktyg
 user-guide-description: Lär dig hur du använder verktyg i Analytics som Analysis Workspace, Analytics Dashboards, Report Builder och Activity Map.
-source-git-commit: af5e88141bef139fb1727ae458628dd66fe3d1f6
+source-git-commit: 2aaf06d76e6b5e22d1f7a6713ff146ca9a897a55
 workflow-type: tm+mt
-source-wordcount: '1080'
-ht-degree: 77%
+source-wordcount: '1087'
+ht-degree: 76%
 
 ---
 
@@ -44,6 +44,9 @@ ht-degree: 77%
       + [Snabbtangenter (kortkommandon)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](analysis-workspace/build-workspace-project/view-density.md)
+   + Rapporter {#reports}
+      + [Använd färdiga rapporter](analysis-workspace/reports/use-reports.md)
+      + [Skapa och hantera företagsrapporter](analysis-workspace/reports/create-company-reports.md)
    + Komponenter {#components}
       + [Komponenter – översikt](analysis-workspace/components/analysis-workspace-components.md)
       + [Lägga till komponentbeskrivningar](analysis-workspace/components/add-component-descriptions.md)
@@ -307,7 +310,6 @@ ht-degree: 77%
       + [Om Data Collection](reports-analytics/overview/overview-data-collection.md)
       + [Rapportmeny](reports-analytics/overview/reports-menu.md)
       + [Rapportfunktioner](reports-analytics/overview/report-overview.md)
-      + [Vanliga termer](reports-analytics/overview/overview-common-terms.md)
    + [Visningsinställningar och navigering för rapporter](reports-analytics/report-settings.md)
    + [Rapportschema och distribution](reports-analytics/scheduling.md)
    + [Meddelande om att giltighetstiden har löpt ut för schemalagda rapporter](reports-analytics/scheduled-reports-eol.md)

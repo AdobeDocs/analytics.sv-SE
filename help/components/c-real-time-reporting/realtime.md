@@ -4,16 +4,14 @@ title: Översikt över rapporter i realtid
 topic-fix: Reports
 feature: Real-time
 exl-id: 056235bc-42ea-4118-aa54-bc7666044fe3
-source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
+source-git-commit: ee55349a8c676023a5ce33b56592cad7642199b8
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
 
 # Översikt över rapporter i realtid
-
-{{ra-eol}}
 
 Realtidsrapportering visar webbsidans trafik och rangordnar sidvyerna i realtid. Tillhandahåller användbara data som underlag för era affärsbeslut.
 
@@ -21,7 +19,13 @@ Realtidsrapportering visar webbsidans trafik och rangordnar sidvyerna i realtid.
 >
 >Realtidsrapporten kräver ingen ytterligare implementering eller taggning. Det utnyttjar er befintliga implementering av Adobe Analytics. Information om hur du konfigurerar realtidsrapporter finns i [Konfiguration av realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md).
 
-**[!UICONTROL Site Metrics]** > **[!UICONTROL Real-Time]**
+## Få åtkomst till realtidsrapporter
+
+1. I Analysis Workspace väljer du [!UICONTROL **Arbetsyta**] -fliken.
+
+1. Välj [!UICONTROL **Rapporter**] > [!UICONTROL **Engagemang**] > **[!UICONTROL Real-Time]**.
+
+## Förstå realtidsrapportering
 
 Realtidsfrågor besvarar följande frågor: Vad är trender på min webbplats och varför? Som marknadsförare kan ni snabbt reagera på och aktivt hantera resultatet av ert marknadsföringsinnehåll och era kampanjer. Realtidsdata som rapporteras är mindre än två minuter latent och automatiska uppdateringar en minut i taget.
 

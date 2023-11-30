@@ -4,7 +4,7 @@ title: Mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: 200b275dea37f193930a04e87bea049bbd2fcb59
+source-git-commit: 2aaf06d76e6b5e22d1f7a6713ff146ca9a897a55
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Mer information om hur du skapar Workspace-rapporter och skapar anpassade föret
 
 | Uppgift | Länk |
 |---|---| 
-| Mer information om startsidan för projektledaren och den uppdaterade rapportmenyn | [Adobe Analytics landningssida](/help/analyze/landing.md) |
-| Skapa en anpassad företagsrapport | [Skapa en anpassad företagsrapport](/help/analyze/landing.md#company-report) |
-| Hitta platsen för mallar (kallas nu *Rapporter*) | [Plats för mallar (*nu kallade rapporter*)](/help/analyze/landing.md#templates) |
-| Om du vill lära dig navigera på fliken Rapporter | [Navigera på fliken Rapporter](/help/analyze/landing.md#navigate-reports) |
+| Läs mer om startsidan för projektledaren och den uppdaterade rapportmenyn | [Adobe Analytics landningssida](/help/analyze/landing.md) |
+| Skapa en anpassad företagsrapport | [Skapa och hantera företagsrapporter](/help/analyze/analysis-workspace/reports/create-company-reports.md) |
+| Visa en lista med färdiga rapporter eller hitta mallarnas plats (kallas nu *Rapporter*) | [Använd färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md) |
+| Lär dig navigera på fliken Rapporter | [Navigera på fliken Rapporter](/help/analyze/landing.md#navigate-reports) |

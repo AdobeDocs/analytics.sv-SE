@@ -4,14 +4,14 @@ title: Översikt över rapporter och analysstatistik
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: ea7a59f3-5a5e-48b2-ae0c-ebc5ec34cd63
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: fe472efe57f8fb2da7ad6942852cad0301aefe46
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
-# Översikt över rapporter och analysstatistik
+# Översikt över mätvärden
 
 {{ra-eol}}
 
@@ -21,7 +21,7 @@ Mätvärden och associerade data visas i rapportkolumnerna. Trafikstatistik visa
 
 [Beräknade mått](/help/components/c-calcmetrics/cm-overview.md) skapas genom en kombination av mätvärden.
 
-En fullständig lista över mätvärden finns på [Översikt över mätvärden](/help/components/metrics/overview.md) i användarhandboken för komponenter.
+En fullständig lista över mätvärden finns på [Översikt över mått](/help/components/metrics/overview.md) i användarhandboken för komponenter.
 
 ## Välj standardrapportmått
 

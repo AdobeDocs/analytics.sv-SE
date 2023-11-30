@@ -1,7 +1,7 @@
 ---
-source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
+source-git-commit: d857d1cf9f4aa23d7fd60c19bb6533090d956086
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar processen vid slutet av livscykeln.
+>Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Mer information om hur du använder rapporter i Analysis Workspace finns i [Använd färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md).
+> 
+>Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar processen vid slutet av livscykeln.
 >
 >Läs mer om rapporter och analyser [Meddelande om att produkten är slut](https://www.adobe.com/go/analytics_rnaeol_en).
 

@@ -5,10 +5,10 @@ uuid: f59ab2a1-e916-46e8-bb5b-e6361ba00dda
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 2e8cac1b-d133-4095-b5db-886ce0566b82
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: 2bb3cc1ce46fc8e5f7e15291401fce1c4d8cb839
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 1%
+source-wordcount: '1036'
+ht-degree: 0%
 
 ---
 
@@ -16,28 +16,38 @@ ht-degree: 1%
 
 {{ra-eol}}
 
-Steg för att köra de olika rapporttyperna.
+Du kan köra många olika typer av rapporter i Analysis Workspace. Här följer några exempel.
 
-## Kör en rankad rapport {#task_C570BA4A213F4F2EB7B30E012934BE7D}
+En fullständig lista över tillgängliga fördefinierade rapporttyper finns i [Använd färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md)
 
-I en rankad rapport visar tabellen rangordningarna av rapportsidorna i förhållande till måttet, utifrån antal eller procent. Rankade rapporter kan visa flera mätvärden i en rapport.
+<!-- How do you do a Ranked Report in Workspace?
 
-1. Generera en rapport, till exempel en [!UICONTROL Pages Report] ( **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages]**).
-1. Klicka på i rapportrubriken **[!UICONTROL Ranked.]**
-1. Om du vill rangordna rapporten klickar du på en kolumnrubrik i tabellen.
+## Run a ranked report {#task_C570BA4A213F4F2EB7B30E012934BE7D}
 
-   Rankade rapporter kan innehålla upp till 200 artiklar som listas i tabellen (t.ex. produkter, kategorier, webbsidor) och tio siffror (intäkter, order, vyer osv.).
+In a ranked report, the table shows the rankings of the report pages in relation to the metric, according to number or percentage. Ranked reports can display multiple metrics in a report.
 
-## Köra en trendrapport {#task_F03B4E760B9E4EA29FC3F654E6316887}
+1. Generate a report, such as a [!UICONTROL Pages Report] ( [!UICONTROL **Workspace**] > **[!UICONTROL Engagement]** > **[!UICONTROL Pages]**).
+1. In the report header, click **[!UICONTROL Ranked.]**
+1. To rank the report, click a column heading in the table.
 
-Trendrapporter visar mätvärden över tid. Du använder den här rapporttypen när du vill se hur ett segment fungerar från en tidsperiod till nästa.
+   Ranked reports can have up to 200 items listed in the table (such as products, categories, web pages, and so on) and ten metrics (revenue, orders, views, and so on).
 
-De flesta konverterings- och trafikrapporter har en trendvy tillgänglig. Använda [!UICONTROL Calendar]kan du visa förbättring för alla tidsperioder, t.ex. dagar i en månad, veckor i ett år, veckor i ett kvartal, månader i ett år osv. Trendrapporter visar trender för ett enskilt mått (intäkter, order, vyer och så vidare) för upp till fem artiklar (som produkter, kategorier, webbsidor och så vidare).
+-->
 
-**Köra en trendrapport**
+<!-- Can you do a Trended report? 
 
-1. Kör en konverterings- eller trafikrapport, till exempel **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages]**.
-1. Under **[!UICONTROL Report Type]**, klicka **[!UICONTROL Trended.]**
+## Run a trended report {#task_F03B4E760B9E4EA29FC3F654E6316887}
+
+Trended reports display metrics over time. You use this report type when you want to see how a segment performs from one time period to the next.
+
+Most Conversion and Traffic reports have a Trended view available. Using the [!UICONTROL Calendar], you can show improvement for any time period breakdowns, including days of a month, weeks of a year, weeks of a quarter, months of a year, and so on. Trended reports show trends for a single metric (revenue, orders, views, and so on) for up to five items (such as products, categories, web pages, and so on).
+
+**To run a trended report** 
+
+1. Run a conversion or traffic report, such as **[!UICONTROL Reports]** > **[!UICONTROL Site Content]** > **[!UICONTROL Pages]**.
+1. Under **[!UICONTROL Report Type]**, click **[!UICONTROL Trended.]**
+
+-->
 
 ## Köra en utfallsrapport {#task_8FD97C8260464F9DA731A93DB8F80184}
 
@@ -48,20 +58,14 @@ Kolla in nya [Utfallsanalys](https://experienceleague.adobe.com/docs/analytics/a
 1. I [!UICONTROL Adobe Analytics], klicka **[!UICONTROL Reports]** > **[!UICONTROL Paths]** > **[!UICONTROL Pages]** > **[!UICONTROL Fallout]**.
 1. På [!UICONTROL Fallout Report] sida, klicka **[!UICONTROL Launch the Fallout Report Builder]**.
 
-   ![Stegresultat](assets/fallout_add_items.png)
-
 1. På [!UICONTROL Define Checkpoints] anger du de kontrollpunkter som du vill använda för rapporten.
 1. Klicka på **[!UICONTROL Run Report]**.
-
-   ![Stegresultat](assets/fallout_report.png)
 
 ## Köra en sidflödesrapport {#task_133E8B87C3F04DA0A42D10CBA499305B}
 
 Sidflödesrapporter visar i vilken ordning besökarna kommer åt sidorna och navigerar på webbplatsen. Den här rapporten hjälper dig att svara
 
-Kolla in [Flödesvisualisering](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow.html) i Analysis Workspace!
-
-Klicka till exempel på **[!UICONTROL Reports]** > **[!UICONTROL Paths]** > **[!UICONTROL Pages]** > **[!UICONTROL Next Page Flow]**.
+Klicka till exempel på **[!UICONTROL Workspace]** > **[!UICONTROL Reports]** > **[!UICONTROL Engagement]** > **[!UICONTROL Next and previous page flow]**.
 
 ## Kör en marknadsföringskanalrapport {#task_64ADED5CC75248319E06E3E029B47F78}
 
@@ -108,10 +112,10 @@ Se [Översikt över rapportering i realtid](/help/components/c-real-time-reporti
    </tr> 
    <tr class="chrow strow"> 
    <td class="choption"><strong>Helskärmsläge</strong></td> 
-   <td class="chdesc stentry"> Ikonen för helskärmsläge visas bara om bildskärmen har ett visst proportioner (16:9 eller 16:10) OCH om webbläsaren stöder det. Observera att du inte kan interagera med skärmen när den är i helskärmsläge (tryck på <span class="uicontrol"> Esc </span> för att avsluta). Helskärmsläge gör inte timeout. </td> 
+   <td class="chdesc stentry"> Ikonen för helskärmsläge visas bara om bildskärmen har ett visst proportioner (16:9 eller 16:10) OCH om webbläsaren stöder det. Observera att du inte kan interagera med skärmen i helskärmsläge (tryck på <span class="uicontrol"> Esc </span> avsluta). Helskärmsläge gör inte timeout. </td> 
    </tr> 
    <tr class="chrow strow"> 
-   <td class="choption"><strong>Platstrafikrapport</strong></td> 
+   <td class="choption"><strong>Site Traffic Report</strong></td> 
    <td class="chdesc stentry"> Den blå trendlinjen visar den totala trafiken för webbplatsen. X-axeln använder literala etiketter (för 15 minuter sedan, för 10 minuter sedan) förutom det aktuella värdet, som visas som ett realtidsuttryck. </td> 
    </tr> 
    <tr class="chrow strow"> 
@@ -119,14 +123,14 @@ Se [Översikt över rapportering i realtid](/help/components/c-real-time-reporti
    <td class="chdesc stentry"> Visar antalet Webbplatssummor för de senaste N minuterna i realtidsrapportens valda mått. "N" kan konfigureras med tidsintervallväljaren. <p>Pilens färg och riktning baseras på följande algoritm: 
       <ul id="ul_9F40CEA33798467393CB1266BB36D500"> 
       <li id="li_CCD01A44F912487DA5681EA50113643C">Betydande förstärkning (uppåtpil): &gt; 100 % </li> 
-      <li id="li_7402491A9A614851B7F2AE0C77BD9A97">Vinst (uppåthögerpil): mellan 5 % och 100 % </li> 
+      <li id="li_7402491A9A614851B7F2AE0C77BD9A97">Vinst (uppåtpil): mellan 5 % och 100 % </li> 
       <li id="li_BCA79C08B5714D4B9315068112C66107"> Platt (högerpil): mellan 5 % och -5 % </li> 
       <li id="li_234ECBD7D83A4AE680E4A70BF288681F"> Förlust (högerpil nedåt): mellan -5 % och -100 % </li> 
-      <li id="li_10C5EA8803604C1CA714D3DB27478B31"> Betydande förlust (nedpil): &lt; -100% </li> 
+      <li id="li_10C5EA8803604C1CA714D3DB27478B31"> Betydande förlust (nedpil): &lt; -100 % </li> 
       </ul> </p> <p>Om platsens totala antal rapporteras i "instanser", återspeglar dessa instanser dimensionen i den primära rapportleten. Om det finns ett instansspecifikt namn (t.ex. "Sidvyer") rapporterar platsens totala namn. </p> </td> 
    </tr> 
    <tr class="chrow strow"> 
-   <td class="choption"><strong>Primär rapportlet</strong></td> 
+   <td class="choption"><strong>Primär rapport</strong></td> 
    <td class="chdesc stentry"> Rapport för realtidsrapportens primära dimension och för dess mått. Visar en trendlinje för det elementet för det valda tidsintervallet. Måttsumman representerar summan för hela trendlinjen. Pilen anger om objektet är kraftigt uppåt, uppåt, platt, nedåt eller till stor del förlorar. </td> 
    </tr> 
    <tr class="chrow strow"> 
@@ -135,11 +139,11 @@ Se [Översikt över rapportering i realtid](/help/components/c-real-time-reporti
    </tr> 
    <tr class="chrow strow"> 
    <td class="choption"><strong>Sortera efter.. Mest populära/generatorer/förlorare</strong></td> 
-   <td class="chdesc stentry"> Du kan växla för att sortera efter <span class="uicontrol"> Mest populära </span>(standard), <span class="uicontrol"> Gainers </span> (dimensioner som visar störst tillväxt), och <span class="uicontrol"> Förlorare </span> (dimensioner som är nedåtgående.) <p>Här är formeln som används för att bestämma vinjetter eller förlorare: I realtid undersöks det tidigaste exemplet och det näst senaste exemplet och en enkel beräkning av "% change" utförs. Om"De senaste 15 minuterna" markeras och n representerar den aktuella minuten, jämförs n-1 med n-15. I realtid görs för närvarande ingen viktning. Den aktuella minuten ignoreras eftersom den inte är fullständig och troligen ger en falsk %-ändring. </p> <p>Den här formeln är konsekvent för alla mätvärden som används i realtidsrapporten. </p> </td> 
+   <td class="chdesc stentry"> Du kan växla för att sortera efter <span class="uicontrol"> Mest populära </span>(standard), <span class="uicontrol"> Gainers </span> (dimensioner som visar störst tillväxt), och <span class="uicontrol"> Förlorare </span> (dimensioner som är nedåtgående.) <p>Här är formeln som används för att bestämma vinst eller förlust: I realtid undersöks det tidigaste urvalet och det näst senaste exemplet och en enkel beräkning av "% ändring" utförs. Om"De senaste 15 minuterna" markeras och n representerar den aktuella minuten, jämförs n-1 med n-15. I realtid görs för närvarande ingen viktning. Den aktuella minuten ignoreras eftersom den inte är fullständig och troligen ger en falsk %-ändring. </p> <p>Den här formeln är konsekvent för alla mätvärden som används i realtidsrapporten. </p> </td> 
    </tr> 
    <tr class="chrow strow"> 
    <td class="choption"><strong>Sekundär 1-rapport</strong></td> 
-   <td class="chdesc stentry"> Visar realtidsrapporter för den andra tilldelade rapportens dimension och för måttet. <p>I den sekundära rapportletten visas de fyra viktigaste kategorierna. det femte är en sammanställning av alla återstående värden. För varje kategori anges den totala råvyn för den kategorin. Dessutom visas summan för alla kategorier i mitten. </p> <p> När du hovrar i ett avsnitt markeras den associerade kategorin och kategoritrendlinjen visas nedanför munstycket. </p> <p> När du hovrar på ett radobjekt markeras radobjektet plus det tillhörande avsnittet och kategoritrendlinjen visas nedanför munstycket. </p> </td> 
+   <td class="chdesc stentry"> Visar realtidsrapporter för den andra tilldelade rapportens dimension och för måttet. <p>Den sekundära 1-rapportleten visar de fyra viktigaste kategorierna och den 5:e är en sammanställning av alla återstående värden. För varje kategori anges den totala råvyn för den kategorin. Dessutom visas summan för alla kategorier i mitten. </p> <p> När du hovrar i ett avsnitt markeras den associerade kategorin och kategoritrendlinjen visas nedanför munstycket. </p> <p> När du hovrar på ett radobjekt markeras radobjektet plus det tillhörande avsnittet och kategoritrendlinjen visas nedanför munstycket. </p> </td> 
    </tr> 
    <tr class="chrow strow"> 
    <td class="choption"><strong>Sekundär 2-rapport</strong></td> 
@@ -152,5 +156,5 @@ Se [Översikt över rapportering i realtid](/help/components/c-real-time-reporti
    | **Artikeltrendrapport** | Visar trendlinjen för objektet som markerades i översiktsrapporten under de senaste N minuterna. N kan konfigureras via tidsintervallväljaren. |
    |---|---|
    | **Artikelsumma, rapport** | Visar det totala antalet mätvärden för objektet som markerades i översiktsrapporten under de senaste N minuterna. N kan konfigureras via tidsintervallväljaren. |
-   | **Korrelerad sekundär 1-rapport** | Den här rapportleten liknar mycket den sekundära 1-rapporten. Den enda skillnaden är den datakälla som används för att fylla i den här rapporten: I det här exemplet visar det korrelationen (eller uppdelningen) mellan en viss sida (den som du valde i den primära rapportleten i översiktsrapporten) och de förekomster som visas. |
-   | **Korrelerad sekundär rapport 2** | Den här rapportleten liknar mycket den andra rapportleten. Den enda skillnaden är den datakälla som används för att fylla i den här rapporten: I det här exemplet visar det korrelationen (eller uppdelningen) mellan en viss sida (den du valde i den primära rapportleten i översiktsrapporten) och språkdimensionen. |
+   | **Korrelerad sekundär 1-rapport** | Den här rapportleten liknar mycket den sekundära 1-rapporten. Den enda skillnaden är den datakälla som används för att fylla i den här rapporten: i det här exemplet visar den korrelationen (eller uppdelningen) mellan en viss sida (den som du valde i den primära rapportleten i översiktsrapporten) och de förekomster som visas. |
+   | **Korrelerad sekundär rapport 2** | Den här rapportleten liknar mycket den andra rapportleten. Den enda skillnaden är den datakälla som används för att fylla i den här rapporten: i det här exemplet visar den korrelationen (eller uppdelningen) mellan en viss sida (den som du valde i den primära rapportleten i översiktsrapporten) och språkdimensionen. |

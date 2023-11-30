@@ -6,20 +6,18 @@ uuid: e1333a9b-eba0-45b7-b7e6-46e06190db64
 feature: Alerts
 role: User, Admin
 exl-id: f0a23afb-6c21-41e6-9033-9d3421bb1f4b
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: 4556ba78cb5cc449e2f43fef7067d7e776e61c6b
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '833'
 ht-degree: 6%
 
 ---
 
 # Larm
 
-{{ra-eol}}
-
 ## Larm {#concept_8AB25AF6FB52478DB98C1BA4577A2E16}
 
-Som det nya varningssystemet för alla Adobe Analytics kan du med intelligenta aviseringar skapa och hantera aviseringar, med förhandsgranskning av aviseringar och regelbidrag. Ni kan
+Som varningssystem för alla Adobe Analytics-system kan du med intelligenta aviseringar skapa och hantera aviseringar och även tillhandahålla funktioner för förhandsgranskning av aviseringar och regelbidrag. Ni kan
 
 * Skapa aviseringar baserade på avvikelser (tröskelvärden på 90 %, 95 % eller 99 %), procentuell förändring, över/under).
 * Förhandsgranska hur ofta en avisering utlöses.
@@ -88,7 +86,7 @@ deprecated_alerts.xml
   <tr> 
    <td colname="col1"> <p>Tidsbaserade aviseringar om unika besökare (varje dag, varje vecka, varje månad osv. Unika besökare) </p> <p> </p> </td> 
    <td colname="col2"> <p>Skapa aviseringar för unika besöksrapporter varje timme, dag, vecka och månad. </p> </td> 
-   <td colname="col3"> <p>I den nya Varningshanteraren stöds inte längre vissa tidsbaserade unika besökarvarningar. Om du till exempel tidigare kunde ange en veckoavisering för unika besökare varje dag, kan du ange en daglig, veckovis avisering. varning om att de unika besökarnas mått går ut. (Analysis Workspace har stöd för ett unikt besöksmått, men inte för varje dag/vecka/månad/osv.) Unika besökarvärden.) </p> <p> </p> </td> 
+   <td colname="col3"> <p>I den nya Varningshanteraren stöds inte längre vissa tidsbaserade unika besökarvarningar. Om du till exempel tidigare kunde ange en veckoavisering för unika besökare varje dag, kan du ange en daglig, veckovis avisering. varning om att de unika besökarnas mått går ut. (Analysis Workspace har stöd för ett unikt besöksmått, men inte för varje dag/vecka/varje månad/osv.) Unika besökarvärden.) </p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Sök </p> </td> 

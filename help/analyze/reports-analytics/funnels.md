@@ -5,23 +5,21 @@ uuid: a67ce302-fae1-434a-b662-91672e85cab3
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 8c1c1bc1-0e45-43d7-9581-bd070e2b687e
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: 4556ba78cb5cc449e2f43fef7067d7e776e61c6b
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '309'
 ht-degree: 2%
 
 ---
 
 # Konverteringstratt
 
-{{ra-eol}}
-
 Konverteringsförhållanden mäter vanligtvis konverteringen mellan start-, slut- och milstolpehändelser eller punkter i en konverteringsprocess. När du har kodat framgångshändelserna på din webbplats skapar rapporten proportionerna mellan de olika framgångshändelserna och visar dem i en konverteringsrapport.
 
-Följande trattrapporter finns:
+Följande trattrapporter är tillgängliga:
 
-* [!UICONTROL Purchase Conversion Funnel]: Visar besök (rapportspecifika), kundvagnar, beställningar, enheter och intäkter.
-* [!UICONTROL Cart Conversion Funnel]: Visar besök (rapportspecifika), kundvagnar, utcheckningar, beställningar och intäkter.
+* [!UICONTROL Purchase Conversion Funnel]: Visar besök (rapportspecifik), kundvagnar, beställningar, enheter och intäkter.
+* [!UICONTROL Cart Conversion Funnel]: Visar besök (rapportspecifik), kundvagnar, utcheckningar, beställningar och intäkter.
 * [!UICONTROL Custom Event Funnel]: Visar anpassade händelser på din plats. Den visar anpassade händelser 1-5 som standard.
 * [!UICONTROL Campaign Conversion Funnel]: Visar genomklickningar, utcheckningar, beställningar och intäkter.
 

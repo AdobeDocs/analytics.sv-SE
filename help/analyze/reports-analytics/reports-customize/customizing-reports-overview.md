@@ -5,43 +5,16 @@ uuid: 37d221b7-50fd-4425-b2ba-f40911b72a2f
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 5a042fac-926e-4560-83bf-11f66ddb8273
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: cf0c15c1b81a243e35fbdcf32b43a6ef4ada9649
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 3%
+source-wordcount: '642'
+ht-degree: 4%
 
 ---
 
-# Anpassa rapporter – översikt
-
-{{ra-eol}}
+# Anpassa rapporter
 
 När du har kört en rapport kan du anpassa rapporten för att visa och analysera data efter dina behov. Du kan filtrera rapportdata, ändra hur data presenteras grafiskt, ändra granularitet för datum och så vidare.
-
-## Skapa en anpassad rapport {#task_BA6EACA3039C40AEA5605E1D8C76E646}
-
-Du kan spara en rapports aktuella konfiguration som en ny anpassad rapport som alla användare kan se.
-
-<!-- 
-
-t_reports_custom.xml
-
- -->
-
-Endast administratörer kan skapa en anpassad rapport. När du skapar en anpassad rapport läggs den till på huvudrapporteringsmenyn bredvid den rapport som den baseras på.
-
-Så här skapar du en anpassad rapport:
-
-1. Kör en rapport och konfigurera den efter behov.
-1. Klicka på **[!UICONTROL More]** > **[!UICONTROL Create Custom Report]**.
-1. Namnge rapporten och klicka sedan på **[!UICONTROL Save.]**
-
-   Se till att du inte duplicerar ett befintligt rapportnamn.
-
->[!MORELIKETHIS]
->
->* [Menyanpassning](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/customize-menus.html)
-
 
 ## Välj ett datum eller datumintervall {#task_9BEF7D4D839A4748B76E8500D1406C34}
 
@@ -90,13 +63,17 @@ Du kan inte jämföra datum mellan trendrapporter.
 >
 >Om du vill göra en datumjämförelse av nyckeltal i en kontrollpanel kan du hämta data till [Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html) med två olika förfrågningar. Du kan sedan använda egna formler i Excel för att analysera skillnaden mellan de två formlerna.
 
-Så här jämför du datum mellan rankade rapporter i Rapporter och analyser:
+<!-- delete this procedure, but what about this entire "Compare dates" section?
 
-1. Kör en rapport.
-1. Klicka på kalendern längst upp till höger.
-1. Klicka på **[!UICONTROL Compare Dates]**.
-1. Markera de datum som du vill använda.
-1. Klicka på **[!UICONTROL Run Report]**.
+To compare dates between ranked reports in Reports & analytics: 
+
+1. Run a report.
+1. Click the calendar at the top right.
+1. Click **[!UICONTROL Compare Dates]**.
+1. Select the dates you want to use.
+1. Click **[!UICONTROL Run Report]**.
+
+-->
 
 ## Visa ett procentvärde som ett diagram {#task_BC28CA19A4834AF6BFE68B5B5AEFE75D}
 
@@ -176,7 +153,7 @@ Så här jämför du rapportsviter:
 
 1. Generera en rapport som gör att du kan jämföra rapporter.
 1. Klicka på **[!UICONTROL Compare to Site]** länk.
-1. Leta reda på rapportsviten.
+1. Hitta rapportsviten.
 1. Klicka på **[!UICONTROL OK.]**
 
 ## Ange rapportgranularitet {#task_7ED3EEC9E1704A918B25D06ADA3412E0}
@@ -189,7 +166,7 @@ t_reports_granularity.xml
 
  -->
 
-Rapportens tidsperiod avgör vilka granularitetsalternativ som är tillgängliga. Du kan till exempel bara markera **[!UICONTROL Hourly]** om du har en eller två dagars tidsram markerad. Du kan bara välja **[!UICONTROL Yearly]** granularitet om du har valt mer än ett år.
+Rapportens tidsperiod avgör vilka granularitetsalternativ som är tillgängliga. Du kan t.ex. bara markera **[!UICONTROL Hourly]** om du har en eller två dagars tidsram markerad. Du kan bara välja **[!UICONTROL Yearly]** granularitet om du har valt mer än ett år.
 
 Så här anger du rapportgranularitet:
 
@@ -212,19 +189,3 @@ Så här kör du en veckodagsrapport:
 
 1. Kör en trendrapport över ett angivet datumintervall.
 1. Klicka på **[!UICONTROL Day of Week]** och klicka sedan på en dag.
-
-## Knappen Prova i arbetsyta {#concept_DA41E22460B94BD9ADF63B1CEE2714A7}
-
-Klicka på **[!UICONTROL Try In Workspace]** överst i en rapport läses samma rapport in i Analysis Workspace.
-
-<!-- 
-
-try_in_workspace.xml
-
- -->
-
-De flesta rapporter i Rapporter och analyser innehåller nu knappen Testa i arbetsytan så att du kan återskapa den aktuella vyn i Analysis Workspace för ytterligare anpassning.
-
-För närvarande är knappen bara tillgänglig om ditt användarnamn har fullständig behörighet till Analysis Workspace.
-
-Mer information om alla sätt att anpassa rapporten finns i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) guide.

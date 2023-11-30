@@ -6,7 +6,7 @@ uuid: 7a1287da-8a39-4dad-90b0-f311b5e83722
 feature: Reports & Analytics Basics
 role: User, Admin
 exl-id: 8b923484-0988-4271-8186-317bb33f2210
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: 4556ba78cb5cc449e2f43fef7067d7e776e61c6b
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 2%
@@ -14,8 +14,6 @@ ht-degree: 2%
 ---
 
 # Bokmärkeshanterare
-
-{{ra-eol}}
 
 Bokmärken ger dig tillgång till de rapporter du använder mest. Bokmärkena som du skapar läggs till i Experience Cloud och finns i integrerade funktioner som dataanslutningar.
 
@@ -31,7 +29,7 @@ t_bookmarks_creating.xml
 
 1. Kör en rapport och klicka sedan på **[!UICONTROL Bookmark.]**.
 
-   | Namn | Ett användarvänligt namn för det här bokmärket. |
+   | Namn | Ett användarvänligt namn för bokmärket. |
    |---|---|
    | Lägg till i | Anger i vilken mapp du vill placera bokmärket. |
    | Gör offentlig | Gör det här bokmärket tillgängligt för användare som har tillgång till rapportsviten. |

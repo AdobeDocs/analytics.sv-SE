@@ -3,32 +3,32 @@ description: Administrativa steg för att skapa realtidsrapporter.
 title: Konfigurera realtidsrapporter
 feature: Real-time
 exl-id: 9e7fc67c-71d5-465a-9553-5bb7e02a9bfd
-source-git-commit: 246fbe068898ad04db2f324975fc27cb24bc7f58
+source-git-commit: ee55349a8c676023a5ce33b56592cad7642199b8
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '276'
 ht-degree: 2%
 
 ---
 
 # Konfigurera realtidsrapporter
 
-{{ra-eol}}
+Följande information innehåller administrativa steg för att konfigurera realtidsrapporter.
 
-Administrativa steg för att skapa realtidsrapporter.
-
-Konfigurera realtidsrapporter inom [!UICONTROL Reports & Analytics] består av att välja rapportsviten och konfigurera upp till tre rapporter för den.
+Det består av att välja rapportsviten och konfigurera upp till tre rapporter för den.
 
 1. Välj den rapportsvit som du vill aktivera realtidsrapporter för.
 
-   Navigera till **[!UICONTROL Analytics]** > **[!UICONTROL Reports]** > **[!UICONTROL View All Reports > Site Metrics]** > **[!UICONTROL Real-Time]** och väljer rapportsviten i listrutan högst upp:
+   1. I Analysis Workspace väljer du [!UICONTROL **Arbetsyta**] tabbtangenten och sedan välja [!UICONTROL **Rapporter**] > [!UICONTROL **Engagemang**] > **[!UICONTROL Real-Time]**.
 
-   ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/report_suite_selector.png)
+   1. Välj rapportsviten i listrutan högst upp:
 
-   Om du försöker visa realtidsrapporter för en rapportserie som inte har konfigurerats för realtidsrapportering visas ett meddelande som gör att du kan konfigurera rapportsviten.
+      ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/report_suite_selector.png)
 
-   ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/rep_suite_not_set_up.png)
+      Om du försöker visa realtidsrapporter för en rapportserie som inte har konfigurerats för realtidsrapportering visas ett meddelande som gör att du kan konfigurera rapportsviten.
 
-1. Klicka **[!UICONTROL Configure]** (kugghjulsikon) som kör [!UICONTROL Report Suite Manager].
+      ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/rep_suite_not_set_up.png)
+
+1. Välj **[!UICONTROL Configure]** för att köra [!UICONTROL Report Suite Manager].
 
    (Även tillgängligt under **[!UICONTROL Analytics]** > **[!UICONTROL Admin > Report Suites]** > **[!UICONTROL Edit Settings]** > **[!UICONTROL Real-Time]**.)
 
@@ -55,7 +55,7 @@ Konfigurera realtidsrapporter inom [!UICONTROL Reports & Analytics] består av a
 
    ![](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/assets/warning_dimensions.png)
 
-1. Klicka **[!UICONTROL Save]** eller **[!UICONTROL Save and View Report]**.
+1. Välj **[!UICONTROL Save]** eller **[!UICONTROL Save and View Report]**.
 
    Efter den här initiala rapportkonfigurationen kan det ta upp till 20 minuter innan data börjar strömmas. Från och med då blir data omedelbart tillgängliga. Mer information om hur du visar realtidsrapporter finns i [Köra en realtidsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/t-running-report-types.html).
 

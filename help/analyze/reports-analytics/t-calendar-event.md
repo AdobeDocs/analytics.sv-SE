@@ -5,7 +5,7 @@ uuid: 5e928c70-8eba-4a97-928d-2c4b3e9ff972
 feature: Calendar
 role: User, Admin
 exl-id: e89be5ce-3ec0-4b2d-8574-7bd2041ed18a
-source-git-commit: 4ddc2640aa8b3a22411c86ff8bfe0ecf345a3d63
+source-git-commit: 4556ba78cb5cc449e2f43fef7067d7e776e61c6b
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 95%
@@ -13,8 +13,6 @@ ht-degree: 95%
 ---
 
 # Kalenderhändelser
-
-{{ra-eol}}
 
 Steg för att lägga till kalenderhändelser och hantera delade händelser.
 
