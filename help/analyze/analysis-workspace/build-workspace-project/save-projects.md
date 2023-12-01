@@ -4,9 +4,9 @@ title: Spara projekt
 feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: a6f49d0c66ff92eff850a330c35e4979275e3c92
+source-git-commit: 954af58cc2f37f3c94f62320f3706f4360872ed8
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Så här sparar du ett projekt manuellt:
    | **[!UICONTROL Save]** | Spara ändringar i projektet. Om projektet delas visas även ändringarna av projektmottagarna. När du sparar projektet första gången uppmanas du att ge projektet ett namn, en (valfri) beskrivning och lägga till (valfria) taggar. |
    | **[!UICONTROL Save with notes]** | Lägg till anteckningar om vad som ändrats i projektet innan projektet sparas. Anteckningarna lagras med projektversionen och är tillgängliga för alla redigerare under [!UICONTROL Project] > [!UICONTROL Open previous version]. |
    | **[!UICONTROL Save as]** | Skapa en kopia av projektet. Det ursprungliga projektet påverkas inte. |
-   | **[!UICONTROL Save as company report]** | Spara projektet som en [företagsrapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
+   | **[!UICONTROL Save as company report]** | Spara projektet som en [företagsrapport](/help/analyze/analysis-workspace/reports/create-company-reports.md) som blir tillgängliga för din organisation under **[!UICONTROL Project > New]** |
 
 ## Spara automatiskt {#Autosave}
 

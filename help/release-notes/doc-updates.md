@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: 954af58cc2f37f3c94f62320f3706f4360872ed8
 workflow-type: tm+mt
-source-wordcount: '5254'
+source-wordcount: '5355'
 ht-degree: 24%
 
 ---
@@ -25,6 +25,10 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 
 | Funktion | Beskrivning |
 | --- | --- |
+| **December 2023** | |
+| Avsnittet Nya rapporter | Ett nytt rapportavsnitt har lagts till som innehåller information om [med färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md) och [skapa och hantera företagsrapporter](/help/analyze/analysis-workspace/reports/create-company-reports.md). |
+| Uppdateringar av dokumentationen för avvikelseidentifiering och bidragsanalys | Dokumentationen för avvikelseidentifiering och bidragsanalys fanns tidigare i ett avsnitt om Virtual Analyst. Följande ändringar har gjorts: <ul><li>Termen Virtual Analyst har tagits bort från dokumentationen.</li><li>Avsnittet om [Analysidentifiering](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md) har flyttats direkt under Analysis Workspace.</li><li>Bidragsanalysdokumentationen slogs samman i dokumentationen för avvikelseidentifiering.</li></ul> |
+| &quot;Attribution IQ &quot; ändrad till &quot;Attribution&quot; | Ändrade alla instanser av &quot;Attribution IQ&quot; till &quot;[Attribut](/help/analyze/analysis-workspace/attribution/overview.md)&quot; i hela dokumentationen. |
 | **November 2023** | |
 | Uppdateringar av Activity Map aktiverings-/aktiveringsämne | Tillagd [Web SDK](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/activitymap-enable.html?lang=en) (både manuellt och via Adobe Experience Platform-taggtillägg). |
 | **Oktober 2023** | |
