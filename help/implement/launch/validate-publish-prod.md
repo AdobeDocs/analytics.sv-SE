@@ -3,10 +3,10 @@ title: Validera en utvecklingsimplementering och publicera till produktion
 description: Lär dig hur du använder Adobe Experience Platform-taggar för att distribuera Adobe Analytics till din produktionsmiljö.
 feature: Launch Implementation
 exl-id: 2f5bcfee-d75e-4dac-bea9-91c6cc545173
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 89088d11846e2d3eac83a834658e4755141655e5
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '599'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ När taggbiblioteket är i produktion kan ni börja använda Adobe Analytics fö
 
 Felsökaren Experience Cloud är ett tillägg som visar alla Experience Cloud-taggar som finns på en sida.
 
-1. Installera tillägget för antingen [Krom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) eller [Firefox](https://addons.mozilla.org/sv-SE/firefox/addon/adobe-experience-platform-dbg/).
+1. Installera tillägget för antingen [Krom](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) eller Firefox.
 2. Navigera till den utvecklingswebbplats där du har implementerat taggar.
 3. Klicka på Adobe Experience Cloud felsökningsikon i webbläsaren.
 4. Om allt är korrekt implementerat bör du se innehåll i Adobe Analytics, taggar och tjänsten Adobe Experience Cloud Visitor ID.
@@ -38,7 +38,7 @@ När du har verifierat att du ser data kan du överföra implementeringen till d
 1. Klicka på bibliotekets listruta igen (nu i kolumnen Skickat) och välj **[!UICONTROL Build for Staging]**.
 1. Efter en stund blir det gula färgade ljuset i biblioteket grönt, vilket indikerar att bygget lyckades.
 1. Klicka på bibliotekets listruta igen och välj **[!UICONTROL Approve for Publishing]**.
-1. Klicka på bibliotekets listruta igen (nu i [!UICONTROL Approved] kolumn) och markera **[!UICONTROL Build and Publish to Production]**.
+1. Klicka på bibliotekets listruta igen (nu i [!UICONTROL Approved] kolumn), och markera **[!UICONTROL Build and Publish to Production]**.
 1. Gå till fliken Miljö och klicka **[!UICONTROL Production Environment]**.
 1. Kopiera produktionsinstallationskoden och skicka den till webbplatsägarna. Begär att de implementerar den här koden i din webbplats produktionsmiljö.
 
@@ -56,13 +56,13 @@ Bekräfta att du ser data i den publicerade versionen av din webbplats och börj
 Öppna webbläsarens utvecklarkonsol (vanligtvis F12) när du är på din plats. Titta på sidans källkod och kontrollera att följande uppfylls:
 
 * Det finns inga JavaScript-fel i konsolen. Samarbeta med webbplatsägarna i organisationen för att säkerställa att alla JS-fel åtgärdas.
-* Huvudkoden är korrekt implementerad: Kontrollera att rubriktexten finns inuti `<head>` och att filen finns.
-* AppMeasurement-biblioteket finns: Navigera direkt till JS-källan för att kontrollera att JS-filen innehåller kod. Om så inte är fallet kontrollerar du att alla miljöer har skapats och att biblioteket har publicerats i respektive miljö.
-* Interfering extensions: Vissa tillägg, till exempel annonsblockerare, kan förhindra att bildbegäranden utlöses. Inaktivera tillägg som kan stoppa data från att skickas till Adobe.
+* Sidhuvudskoden är korrekt implementerad: Kontrollera att sidhuvudskoden finns inuti `<head>` och att filen finns.
+* AppMeasurementen finns: Navigera direkt till JS-källan och kontrollera att JS-filen innehåller kod. Om så inte är fallet kontrollerar du att alla miljöer har skapats och att biblioteket har publicerats i respektive miljö.
+* Interfering extensions: Vissa tillägg, t.ex. annonsblockerare, kan förhindra att bildbegäranden utlöses. Inaktivera tillägg som kan stoppa data från att skickas till Adobe.
 
 ## Nästa steg
 
 Nu när en grundläggande implementering är klar kan din roll i organisationen påverka vilken väg du vill lära dig mer om:
 
-* [Skapa ett dokument för lösningsdesign](../prepare/solution-design.md): Planera hur du vill använda anpassade variabler och inkludera dem sedan i implementeringen
-* [Kom igång med Analysis Workspace](/help/analyze/analysis-workspace/home.md): Gör en djupdykning i Adobe Analytics med verktygets flaggskeppsfunktion.
+* [Skapa ett dokument för lösningsdesign](../prepare/solution-design.md): Ta fram en plan för hur du vill använda anpassade variabler och inkludera dem i implementeringen
+* [Kom igång med Analysis Workspace](/help/analyze/analysis-workspace/home.md): Gör en djupdykning i Adobe Analytics med verktygets flaggskepp.
