@@ -3,9 +3,9 @@ description: Sekventiella segment skapas med operatorn THEN i stället för AND 
 title: Skapa sekventiella segment
 feature: Segmentation
 exl-id: 2ac4e6db-3111-45e5-bedf-7d9b7b1ae352
-source-git-commit: e7346b11a7d3eb4c18ec02df6c8a07574e02a2b4
+source-git-commit: c1584e4a304cfa04ae167084466322bcf58387dd
 workflow-type: tm+mt
-source-wordcount: '3658'
+source-wordcount: '3710'
 ht-degree: 1%
 
 ---
@@ -37,8 +37,8 @@ När du skapar ett segment där Inkludera alla är angivet identifierar segmente
 
 Alternativen **[!UICONTROL Only Before Sequence]** och **[!UICONTROL Only After Sequence]** filtrera segmentet till en delmängd av data före eller efter den angivna sekvensen.
 
-* **Endast före sekvens**: Innehåller alla träffar före en sekvens + den första träffen i själva sekvensen (se exempel 1, 3). Om en sekvens visas flera gånger i en bana innehåller&quot;Endast före sekvens&quot; den första träffen av den sista sekvensen i sekvensen och alla tidigare träffar (se exempel 2).
-* **Endast efter sekvens**: Innehåller alla träffar efter en sekvens + den sista träffen i själva sekvensen (se exempel 1, 3). Om en sekvens visas flera gånger i en bana innehåller&quot;Endast efter&quot; den senaste träffen av den första sekvensen och alla efterföljande träffar (se exempel 2).
+* **Endast före sekvens**: Inkluderar alla träffar före en sekvens + den första träffen i själva sekvensen (se exempel 1, 3). Om en sekvens visas flera gånger i en bana innehåller&quot;Endast före sekvens&quot; den första träffen av den sista sekvensen i sekvensen och alla tidigare träffar (se exempel 2).
+* **Endast efter sekvens**: Inkluderar alla träffar efter en sekvens + den sista träffen i själva sekvensen (se exempel 1, 3). Om en sekvens visas flera gånger i en bana innehåller&quot;Endast efter&quot; den senaste träffen av den första sekvensen och alla efterföljande träffar (se exempel 2).
 
 Ta till exempel en sekvens av B -> D. De tre filtren identifierar träffar på följande sätt:
 
@@ -58,15 +58,15 @@ Ta till exempel en sekvens av B -> D. De tre filtren identifierar träffar på f
 | Endast före sekvens | A | B | C | D | B |  |  |  |
 | Endast efter sekvens |  |  |  | D | B | C | D | E |
 
-Låt oss även sätta ihop konceptet med djupdimensionen.
+Låt oss även sätta ihop det här konceptet med djupdimensionen.
 
-**Exempel 3: Träff Djup 3 och 5**
+**Exempel 3: Träffdjup 3 och 5**
 
 ![](assets/hit-depth.png)
 
 ## Begränsningar för Dimension {#section_EAFD755F8E674F32BCE9B642F7F909DB}
 
-I en&quot;inom&quot;-sats mellan THEN-programsatser kan du lägga till, till exempel,&quot;inom 1 nyckelordsinstans för sökning&quot;,&quot;inom 1 instans av eVar 47&quot;. Detta begränsar segmentet till en instans av en dimension.
+I en&quot;inom&quot;-sats mellan THEN-programsatser kan du lägga till, till exempel,&quot;inom 1 nyckelordsinstans för sökning&quot;,&quot;inom 1 eVar 47-instans&quot;. Detta begränsar segmentet till en instans av en dimension.
 
 Om du ställer in en Within Dimension-sats mellan regler kan ett segment begränsa data till sekvenser där den satsen uppfylls. Se exemplet nedan, där begränsningen är inställd på &quot;Inom 1 sida&quot;:
 
@@ -87,10 +87,10 @@ Identifiera besökare som visade en sida och sedan visade en annan sida. Data p�
 
 Här följer några exempel på hur segmentet kan användas.
 
-1. Besökarna på en sportsajt kan se landningssidan för fotboll och sedan se landningssidan för basketboll i sekventiell ordning, men inte nödvändigtvis på samma besök. Detta får en kampanj för att göra basketinnehåll till fotbollstittare under fotbollssäsongen.
+1. Besökarna på en sportsajt kan se landningssidan för fotboll och sedan se landningssidan för basketboll i ordningsföljd, men inte nödvändigtvis på samma besök. Detta får en kampanj för att göra basketinnehåll till fotbollstittare under fotbollssäsongen.
 1. Bilhandlarna ser en relation mellan dem som landar på kundlojalitetssidan och sedan går till videon när som helst under besöket eller vid ett annat besök.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 Du kapslar in två sidlinjaler i en översta nivå [!UICONTROL Visitor] behållare och sekvens av sidträffar med [!UICONTROL THEN] -operator.
 
@@ -109,7 +109,7 @@ Här följer några exempel på hur den här typen av segment kan användas:
 * Besökarna på Sports-sidan på en nyhetsplats går sedan igenom Sports-sidan i en annan session.
 * En klädhandlare ser en relation mellan besökare som landar på en landningssida under en session och sedan går direkt till utcheckningssidan under en annan session.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 Det här exemplet kapslar två **[!UICONTROL Visit]** behållare på den översta nivån **[!UICONTROL Visitor]** behållare och sekventierar segmentet med [!UICONTROL THEN] -operator.
 
@@ -128,7 +128,7 @@ Här följer några exempel på hur den här typen av segment kan användas:
 * Besökarna besöker först en nyhetssajt och ser sedan sportsidan i samma besök. På ett annat besök besöker besökaren vädersidan.
 * Återförsäljaren definierar besökare som går in på huvudsidan och sedan går till sidan Mitt konto. De besöker även sidan Visa kundvagn.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 1. Släpp två siddimensioner från de vänstra rutorna på den översta nivån [!UICONTROL Visitor] behållare.
 1. Lägg till operatorn THEN mellan dem.
@@ -149,7 +149,7 @@ Här följer några exempel på hur den här typen av segment kan användas:
 * Identifiera besökare som går till huvudlandningssidan på ett besök, och se sedan sidan med kläder för män på ett annat besök, och titta sedan på antingen Womans eller Children&#39;s landningssida vid ett annat besök.
 * Ett e-zine fångar de besökare som går till hemsidan vid ett besök, på en annan sajt och på en annan besökssida.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 1. Välj [!UICONTROL Visitor] som behållare på den översta nivån.
 1. Lägg till två [!UICONTROL Hit]behållare på -nivå - en dimension med en lämplig numerisk dimension sammanfogad på samma [!UICONTROL Hit] nivå efter [!UICONTROL AND] och [!UICONTROL OR] -operator.
@@ -163,14 +163,14 @@ Här följer några exempel på hur den här typen av segment kan användas:
 
 Genom att placera kontrollpunkter vid båda [!UICONTROL Visit] och [!UICONTROL Hit] kan du begränsa att segmentet uppfyller kraven inom ett visst besök eller en viss träff.
 
-**Exempel**: Besökaren besökte sida A och besökte sedan sida B under samma besök. Vid ett nytt besök gick besökaren till sida C.
+**Exempel**: Besökaren besökte sida A och besökte sedan sida B vid samma besök. Vid ett nytt besök gick besökaren till sida C.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 1. Under en översta nivå [!UICONTROL Visit] container, drag in two page dimensions.
 1. Markera båda reglerna flera gånger, klicka **[!UICONTROL Options]** > **[!UICONTROL Add container from selection]** och ändra det till [!UICONTROL Visit] behållare.
 1. Förena dem med en [!UICONTROL THEN] -operator.
-1. Skapa en Träff-behållare som en peer till [!UICONTROL Visit] behållare och dra i en siddimension.
+1. Skapa en Träff-behållare som en peer-dator till [!UICONTROL Visit] behållare och dra i en siddimension.
 1. Förena den kapslade sekvensen i [!UICONTROL Visit] behållare med [!UICONTROL Hit] behållare som använder en annan [!UICONTROL THEN] -operator.
 
 ![](assets/nesting_sequential_seg.png)
@@ -182,7 +182,7 @@ Segmentregler inkluderar alla data såvida du inte uttryckligen exkluderar [!UIC
 Exempel:
 
 * **Uteslut sidor**. Använd en segmentregel för att ta bort en viss sida (t.ex. *`Home Page`*) från en rapport skapar du en träff-regel där sidan är lika med&quot;Hemsida&quot; och utesluter den sedan. Den här regeln inkluderar automatiskt alla värden förutom hemsidan.
-* **Uteslut refererande domäner**. Använd en regel som endast inkluderar refererande domäner från Google.com och utesluter alla andra.
+* **Uteslut refererande domäner**. Använd en regel som endast inkluderar refererande domäner från Google.com och exkluderar alla andra.
 * **Identifiera icke-köpare**. Identifiera när order är större än noll och exkludera sedan [!UICONTROL Visitor].
 
 The [!UICONTROL Exclude] -operatorn kan användas för att identifiera en sekvens där specifika besök eller träffar inte utförs av besökaren. [!UICONTROL Exclude Checkpoints] kan även ingå i en [Logikgrupp](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
@@ -191,7 +191,7 @@ The [!UICONTROL Exclude] -operatorn kan användas för att identifiera en sekven
 
 Använd logik för att segmentera besökare där en kontrollpunkt inte uttryckligen förekommer mellan två andra kontrollpunkter.
 
-**Exempel**: Besökare som besökt sida A och sedan besökt sida C - men som inte besökt sida B.
+**Exempel**: Besökare som besökt sida A och sedan besökt sida C - men inte besökt sida B.
 
 **Användningsexempel**
 
@@ -200,7 +200,7 @@ Här följer några exempel på hur den här typen av segment kan användas:
 * Besökare på en livsstilssida och sedan på Theatre utan att gå till Arts-sidan.
 * En bilhandlare ser en relation mellan dem som besöker landningssidan och sedan går direkt till kampanjen&quot;Inget intresse&quot; utan att gå till sidan&quot;Fordon&quot;.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 Skapa ett segment på samma sätt som för ett enkelt, blandat eller kapslat sekventiellt segment och ange sedan [!UICONTROL EXCLUDE] operatorn för behållarelementet. Exemplet nedan är ett sammanställningssegment där de tre [!UICONTROL Hit] behållarna dras till arbetsytan, [!UICONTROL THEN] -operatorn som är tilldelad att gå med i behållarlogiken, utelämnar sedan den mellersta sidvisningsbehållaren så att endast besökare som gick från sidan A till sidan C tas med i sekvensen.
 
@@ -210,9 +210,9 @@ Skapa ett segment på samma sätt som för ett enkelt, blandat eller kapslat sek
 
 Om kontrollpunkten för uteslutning är i början av ett sekventiellt segment ser den till att en utesluten sidvy inte inträffade före den första icke-uteslutna träffen.
 
-En restaurang vill t.ex. se invettera användare som undviker huvudlandningssidan och gå direkt till sidan Beställ ut. Det här exemplet kan förenklas för en besökare som vill undvika att besöka sida A och gå direkt till sida B.
+En restaurang vill till exempel se användare som tenderar att undvika huvudlandningssidan och gå direkt till sidan Beställ ut. Du kan visa dessa data genom att utesluta träffar på landningssidan och inkludera träffar på sidan Ordna ut i ett sekventiellt segment.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 Skapa två separata träff-behållare i en besöksbehållare på den översta nivån. Ange sedan [!UICONTROL EXCLUDE] -operator för den första behållaren.
 
@@ -224,9 +224,9 @@ Om den utelämnade kontrollpunkten finns i slutet av en sekvens ser det till att
 
 En klädbutik vill till exempel se alla besökare som tittade på en produktsida men aldrig besökt sin kundvagn efteråt. Det här exemplet kan förenklas för en besökare som går till sida A och sedan aldrig kommer till sida B vid aktuella eller efterföljande besök.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
-Skapa ett enkelt sekvenssegment genom att dra två [!UICONTROL Hit] behållare till arbetsytan och ansluta dem med [!UICONTROL THEN] -operator. Tilldela sedan [!UICONTROL EXCLUDE] operatorn till den andra [!UICONTROL Hit] -behållare i sekvensen.
+Skapa ett enkelt sekvenssegment genom att dra två [!UICONTROL Hit] behållare till arbetsytan och ansluta dem med [!UICONTROL THEN] -operator. Tilldela sedan [!UICONTROL EXCLUDE] operatorn till andra [!UICONTROL Hit] -behållare i sekvensen.
 
 ![](assets/exclude_end_sequence.png)
 
@@ -265,7 +265,7 @@ En logikgruppsbehållare förenklar byggandet av det här segmentet avsevärt, v
 ![](assets/logic-grp-example.png)
 
 
-### Bygg ett logikgruppssegment {#section_A5DDC96E72194668AA91BBD89E575D2E}
+### Skapa ett logikgruppssegment {#section_A5DDC96E72194668AA91BBD89E575D2E}
 
 Precis som andra behållare, [!UICONTROL Logic Group] behållare kan byggas på flera sätt i [!UICONTROL Segment Builder]. Här är det bästa sättet att kapsla [!UICONTROL Logic Group] behållare:
 
@@ -280,11 +280,11 @@ Precis som andra behållare, [!UICONTROL Logic Group] behållare kan byggas på 
 
 Använda [!UICONTROL Logic Group] gör att du kan uppfylla villkor i den gruppen som ligger utanför sekvensen. På så sätt kan du skapa segment där [!UICONTROL Visit] eller [!UICONTROL Hit] behållaren inträffar oavsett den normala hierarkin.
 
-**Exempel**: Besökare som besökt sida A, besökte sedan sida B och sida C i valfri ordning.
+**Exempel**: Besökare som besökt sida A besökte sedan sida B och sida C i valfri ordning.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
-Sidan B och C är kapslade i en [!UICONTROL Logic Group] behållaren innanför [!UICONTROL Visitor] behållare. The [!UICONTROL Hit] behållaren för A följs sedan av [!UICONTROL Logic Group] behållare med B och C identifierade med [!UICONTROL AND] -operator. För att det finns i [!UICONTROL Logic Group], är sekvensen inte definierad och om du trycker på båda sidorna B och C i någon ordning blir argumentet true.
+Sidan B och C är kapslade i en [!UICONTROL Logic Group] behållare innanför ytterkanalen [!UICONTROL Visitor] behållare. The [!UICONTROL Hit] behållaren för A följs sedan av [!UICONTROL Logic Group] behållare med B och C identifierade med [!UICONTROL AND] -operator. För att det finns i [!UICONTROL Logic Group], är sekvensen inte definierad och om du trycker på både sida B och sida C i någon ordning blir argumentet true.
 
 ![](assets/logic_group_any_order2.png)
 
@@ -292,15 +292,15 @@ Sidan B och C är kapslade i en [!UICONTROL Logic Group] behållaren innanför [
 
 ![](assets/logic_group_any_order3.png)
 
-Segmentet måste matcha minst en av logikgruppens kontrollpunkter (B eller C). Logikgruppsvillkor kan även uppfyllas i samma träff eller över flera träffar. &#x200B;
+Segmentet måste matcha vid minst en av logikgruppens kontrollpunkter (B eller C). Logikgruppsvillkor kan även uppfyllas i samma träff eller över flera träffar. &#x200B;
 
 ### Logggruppsmatchning
 
 Använda [!UICONTROL Logic Group] gör att du kan uppfylla villkor i den gruppen som ligger utanför sekvensen. I det här osorterade första matchningssegmentet [!UICONTROL Logic Group] först identifieras regler som antingen en sidvy av sida B eller sida C och därefter som en vy av sida A.
 
-**Exempel**: Besökare som besökt antingen sida B eller sida C, besökte sedan sida A.
+**Exempel**: Besökare som besökt antingen sida B eller sida C och sedan besökt sida A.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 Dimensionerna för sida B och sida C är grupperade i en [!UICONTROL Logic Group] behållare med [!UICONTROL OR] -operatorn markerad och sedan [!UICONTROL Hit]behållare som identifierar en sidvy av sida A som värde.
 
@@ -308,31 +308,31 @@ Dimensionerna för sida B och sida C är grupperade i en [!UICONTROL Logic Group
 
 ### Logikgrupp exkluderar OCH
 
-Skapa segment med [!UICONTROL Logic Group] där flera sidvyer har sammanställts för att definiera vilka sidor som behöver fyllas medan andra sidor specifikt missade. ****
+Bygg segment med [!UICONTROL Logic Group] där flera sidvyer har sammanställts för att definiera vilka sidor som behöver fyllas medan andra sidor specifikt missades. ****
 
-**Exempel**: Besökaren besökte sida A och besöker sedan uttryckligen inte sida B eller C, utan träffsida D.
+**Exempel**: Besökaren besökte sida A och besöker sedan inte sida B eller C, utan träffade sida D.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
-Bygg segmentet genom att dra Dimensioner, händelser och färdiga segment från den vänstra panelen. Se [Bygga ett logikgruppssegment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+Bygg segmentet genom att dra Dimensioner, händelser och färdiga segment från den vänstra panelen. Se [Skapa ett logikgruppssegment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
 
-Efter kapsling av värdena i [!UICONTROL Logic Group]klickar du på **[!UICONTROL Exclude]** i [!UICONTROL Logic Group] behållare.
+Efter kapsling av värdena i [!UICONTROL Logic Group]klickar du på **[!UICONTROL Exclude]** knappen i [!UICONTROL Logic Group] behållare.
 
 ![](assets/logic_exclude_and.png)
 
 ### Logikgrupp exkluderad ELLER
 
-Skapa segment med [!UICONTROL Logic Group] där flera sidvyer har sammanställts för att definiera vilka sidor som behöver fyllas medan andra sidor specifikt missade.
+Bygg segment med [!UICONTROL Logic Group] där flera sidvyer har sammanställts för att definiera vilka sidor som behöver fyllas medan andra sidor specifikt missades.
 
-**Exempel**: Besökare som besökt sida A, men inte besökt sida B eller sida C före sida A.
+**Exempel**: Besökare som besökt sida A men inte besökt sida B eller sida C före sida A.
 
-**Skapa det här segmentet**
+**Skapa detta segment**
 
 De inledande B- och C-sidorna identifieras i en [!UICONTROL Logic Group] behållare som är exkluderad och därefter en träff till sida A av besökaren.
 
 Bygg segmentet genom att dra Dimensioner, händelser och färdiga segment från den vänstra panelen.
 
-Efter kapsling av värdena i [!UICONTROL Logic Group]klickar du på **[!UICONTROL Exclude]** i [!UICONTROL Logic Group] behållare.
+Efter kapsling av värdena i [!UICONTROL Logic Group]klickar du på **[!UICONTROL Exclude]** knappen i [!UICONTROL Logic Group] behållare.
 
 ![](assets/logic_exclude_or.png)
 
@@ -360,14 +360,14 @@ Längden anges med en versal som representerar granulariteten följt av en siffr
 
 ### Använda operatorn Efter
 
-* Med Tid efter kan du spåra efter år, månad, dag, timme och minut för att matcha besöken.
+* Med Tid efter kan du följa upp besök per år, månad, dag, timme och minut.
 * Tid efter kan bara användas på en [!UICONTROL Hit] eftersom det är den enda nivån för vilken en sådan fin granularitet har definierats.
 
 **Exempel**: Besökare som besökt sida A besökte sedan sida B först efter 2 veckor.***
 
 ![](assets/time_between_after_operator.png)
 
-**Skapa segmentet**: Det här segmentet skapas genom att du lägger till en [!UICONTROL Visitor] behållare med två [!UICONTROL Hit] behållare. Du kan sedan ange [!UICONTROL THEN] och öppna [!UICONTROL AFTER] nedrullningsbar lista och ange antalet veckor.
+**Skapa segmentet**: Det här segmentet skapas genom att lägga till en [!UICONTROL Visitor] behållare med två [!UICONTROL Hit] behållare. Du kan sedan ange [!UICONTROL THEN] och öppna [!UICONTROL AFTER] nedrullningsbar lista och ange antalet veckor.
 
 ![](assets/after_operator.png)
 
@@ -378,7 +378,7 @@ Om en träff på sida A inträffar den 1 juni 2019, kl. 00:01, kommer följande 
 | Tryck på A | Träff B | Matchande |
 |--- |--- |--- |
 | **A** hit: 1 juni 2019 00:01 | **B** hit: 15 juni 2019 00:01 | **Matchar:** Tidsbegränsningen matchar eftersom den är efter 1 juni 2019 (två veckor). |
-| **A** hit: 1 juni 2019 00:01 | **B** hit: 8 juni 2019 kl. 00:01 15 juni 2019 00:01 | **Matchar inte:** Den första träffen på sida B matchar inte eftersom den står i konflikt med begränsningen som kräver den efter två veckor. |
+| **A** hit: 1 juni 2019 00:01 | **B** hit: 8 juni 2019 00:01 B träffad: 15 juni 2019 00:01 | **Matchar inte:** Den första träffen på sida B matchar inte eftersom den står i konflikt med begränsningen som kräver den efter två veckor. |
 
 ### Använda operatorn Inom
 
@@ -387,13 +387,13 @@ Om en träff på sida A inträffar den 1 juni 2019, kl. 00:01, kommer följande 
 
 >[!TIP]
 >
->I en&quot;inom&quot;-sats mellan THEN-programsatser kan du lägga till, till exempel,&quot;inom 1 nyckelordsinstans för sökning&quot;,&quot;inom 1 instans av eVar 47&quot;. Detta begränsar segmentet till en instans av en dimension.
+>I en&quot;inom&quot;-sats mellan THEN-programsatser kan du lägga till, till exempel,&quot;inom 1 nyckelordsinstans för sökning&quot;,&quot;inom 1 eVar 47-instans&quot;. Detta begränsar segmentet till en instans av en dimension.
 
-**Exempel**: Besökare som besökt sida A och sedan besökt sida B inom fem minuter.
+**Exempel**: Besökare som besökt sida A besökte sida B inom fem minuter.
 
 ![](assets/time_between_within_operator.png)
 
-**Skapa segmentet**: Det här segmentet skapas genom att du lägger till en [!UICONTROL Visitor] behållare och sedan dra med två [!UICONTROL Hit] behållare. Du kan sedan ange [!UICONTROL THEN] och öppna [!UICONTROL AFTER] operatorlistruta och ange intervall: träffar, sidvisningar, besök, minuter, timmar, dagar, veckor, månader, kvartal eller år.
+**Skapa segmentet**: Det här segmentet skapas genom att lägga till en [!UICONTROL Visitor] behållare och sedan dra med två [!UICONTROL Hit] behållare. Du kan sedan ange [!UICONTROL THEN] och öppna [!UICONTROL AFTER] operatorlistruta och ange intervall: träffar, sidvisningar, besök, minuter, timmar, dagar, veckor, månader, kvartal eller år.
 
 ![](assets/within_operator.png)
 
@@ -405,7 +405,7 @@ Matchningar måste ske inom tidsgränsen. Om en besökare träffar sida A inträ
 
 Använd [!UICONTROL Within] och [!UICONTROL After] för att ge en högsta och lägsta slutpunkt i båda ändar av ett segment.
 
-**Exempel**: Besökare som besökte sida A besökte sedan sida B efter två veckor, men inom en månad.
+**Exempel**: Besökare som besökt sida A besökte sedan sida B efter två veckor men inom en månad.
 
 ![](assets/time_between_using_both_operators.png)
 
