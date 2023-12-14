@@ -3,16 +3,16 @@ title: Borttagning av ojämnheter i Adobe Analytics
 description: Så här tar du bort objekt i Adobe Analytics
 feature: Bot Removal
 exl-id: 6d4b1925-4496-4017-85f8-82bda9e92ff3
-source-git-commit: 6c856d078becea69bcb8ae0ec30c473e273b34b2
+source-git-commit: 59d4ade5e16fdd8c9cea266b7c352ce2057381d9
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
 
 # Borttagning av ojämnheter i Adobe Analytics
 
-I Adobe Analytics finns det flera alternativ för att ta bort robottrafik från rapportering:
+Adobe Analytics har flera alternativ för att ta bort robottrafik från rapportering:
 
 ## Använd punktregler
 
@@ -23,7 +23,7 @@ Både standardfiltreringsmetoder och anpassade robotfiltreringsmetoder stöds i 
 | Standard IAB-robotregler | Markera **[!UICONTROL Enable IAB Bot Filtering Rules]** använder [IAB](https://www.iab.com/) (International Advertising Bureau&#39;s) International Spiders &amp; Bots List för att ta bort robottrafiken. De flesta kunder väljer det här alternativet till ett minimum. |
 | Anpassade robotregler | Du kan definiera och lägga till anpassade robotregler baserat på användaragenter, IP-adresser eller IP-intervall. |
 
-Mer information finns i [Översikt över punktregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md).
+Mer information finns i [Förstå och konfigurera robotregler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/bot-removal/bot-rules.md).
 
 ## Använd [!UICONTROL websiteBot] plugin-program för att identifiera robotar
 
