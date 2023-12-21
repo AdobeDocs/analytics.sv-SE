@@ -3,22 +3,14 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: d40e03ce743c286abe8364ff99f5c3c3a1fe6ecc
+source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2163'
 ht-degree: 0%
 
 ---
 
 # Konfigurera ett rapportmål för en Data Warehouse-begäran
-
->[!AVAILABILITY]
->
->Vissa av de Data Warehouse som beskrivs i den här artikeln (och andra artiklar i den här Datan Warehouse) är endast tillgängliga i den begränsade testfasen av releasen och är kanske inte tillgängliga i din miljö ännu.
->
->Information om vilka funktioner som ännu inte är tillgängliga för alla kunder, samt information om tidslinjen för releasen av dessa funktioner, finns i [versionsinformation](/help/release-notes/latest.md).
->
->Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. Följande information beskriver hur du konfigurerar ett rapportmål för begäran.
 
@@ -58,7 +50,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
    1. Välj [!UICONTROL **Lägg till konto**] och ange sedan följande information:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Kontotyp**] | Välj typ av molnkonto. Vi rekommenderar att du har ett enda konto för varje kontotyp, med flera platser efter behov inom det kontot. <p>När du har valt en kontotyp visas fält som är specifika för den kontotypen. </p> |
       | [!UICONTROL **Kontonamn**] | Ange ett namn för kontot. Det här namnet visas när du skapar en plats. <!-- true? --> |
@@ -72,7 +64,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera ett Amazon S3 Role ARN-konto:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Roll-ARN**] | Du måste ange en roll-ARN (Amazon Resource Name) som Adobe kan använda för att få åtkomst till Amazon S3-kontot. För att göra detta skapar du en IAM-behörighetsprincip för källkontot, kopplar principen till en användare och skapar sedan en roll för målkontot. Mer information finns i [den här AWS-dokumentationen](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-iam/).<p>Mer information om hur du ställer in behörigheten för haken finns i artikeln [Hur kan jag ge korskontoåtkomst till objekt som finns i Amazon S3-butiker?](https://repost.aws/knowledge-center/cross-account-access-s3) i Amazon kunskapscenter. |
       | [!UICONTROL **Användar-ARN**] | Användar-ARN (Amazon Resource Name) tillhandahålls av Adobe. Du måste koppla den här användaren till den princip du skapade. |
@@ -85,7 +77,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera ett Google Cloud Platform-konto:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Projekt-ID**] | Ditt projekt-ID för Google Cloud. Se [Google Cloud-dokumentation om hur du får ett projekt-ID](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects). |
 
@@ -97,7 +89,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera ett Azure SAS-konto:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
       | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
@@ -113,7 +105,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera ett Azure RBAC-konto:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
       | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på **Ökning** -fliken i programmet. Mer information finns i [Microsoft Azure-dokumentation om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
@@ -127,7 +119,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera ett e-postkonto:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Mottagare**] | E-postmeddelanden kan skickas till specifika användare när rapporten skickas. Ange en e-postadress eller en kommaavgränsad lista med e-postadresser. <!-- How does this differ from the Notification email tab? --> |
 
@@ -141,7 +133,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera en Amazon S3-plats:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Buckennamn**] | Den bucket på ditt Amazon S3-konto där du vill att Adobe Analytics-data ska skickas. Se till att användar-ARN som tillhandahålls av Adobe har åtkomst till att överföra filer till den här bucket. |
       | [!UICONTROL **Nyckelprefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
@@ -154,7 +146,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera en plats för Google Cloud-plattformen:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Buckennamn**] | Den bucket på ditt GCP-konto där du vill att Adobe Analytics-data ska skickas. Se till att du har gett Adobe tillåtelse att överföra filer till denna bucket till säkerhetsobjektet. Mer information om att bevilja behörigheter finns i [Lägga till ett huvudnamn i en princip på paketnivå](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) i Google Cloud-dokumentationen. |
       | [!UICONTROL **Nyckelprefix**] | Mappen inom hakparentesen där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Till exempel folder_name/ |
@@ -167,10 +159,10 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera en Azure SAS-plats:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Behållarnamn**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. |
-      | [!UICONTROL **Nyckelprefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+      | [!UICONTROL **Nyckelprefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
 
       {style="table-layout:auto"}
 
@@ -180,10 +172,10 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
       Ange följande information för att konfigurera en Azure RBAC-plats:
 
-      | Fält |  -funktion |
+      | Fält | Funktion |
       |---------|----------|
       | [!UICONTROL **Behållarnamn**] | Behållaren i det konto du angav där du vill att Adobe Analytics-data ska skickas. Se till att du ger behörighet att överföra filer till Azure-programmet som du skapade tidigare. |
-      | [!UICONTROL **Nyckelprefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel, `folder_name/` |
+      | [!UICONTROL **Nyckelprefix**] | Mappen i behållaren där du vill placera data. Ange ett mappnamn och lägg sedan till ett omvänt snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/` |
       | [!UICONTROL **Kontonamn**] | Azure-lagringskontot. |
 
       {style="table-layout:auto"}
@@ -216,7 +208,7 @@ Använd följande information när du fyller i de tillgängliga fälten:
 
 * [!UICONTROL **Kontobeskrivning**]: En beskrivning av FTP-kontot.
 
-* [!UICONTROL **Värdnamn**]: Ange önskad mål-URL för FTP. Exempel, `ftp.company.com`.
+* [!UICONTROL **Värdnamn**]: Ange önskad mål-URL för FTP. Till exempel: `ftp.company.com`.
 
   >[!NOTE]
   >
@@ -246,7 +238,7 @@ Använd följande information när du fyller i de tillgängliga fälten:
 
 * [!UICONTROL **Kontobeskrivning**]: En beskrivning av FTP-kontot.
 
-* [!UICONTROL **Värdnamn**]: Ange önskad mål-URL för SFTP. Exempel, `sftp.company.com`.
+* [!UICONTROL **Värdnamn**]: Ange önskad mål-URL för SFTP. Till exempel: `sftp.company.com`.
 
   >[!NOTE]
   >

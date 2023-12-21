@@ -2,22 +2,15 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Allmänna inställningar för begäran om Data Warehouse
 feature: Data Warehouse
-source-git-commit: ea4c1ae21f2c83bad92723e6ffd2e706fac5e1e8
+exl-id: f564d5a9-78a2-431e-987a-78c4b0b9d31e
+source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '268'
 ht-degree: 1%
 
 ---
 
 # Allmänna inställningar för begäran om Data Warehouse
-
->[!AVAILABILITY]
->
->Vissa av de Data Warehouse som beskrivs i den här artikeln (och andra artiklar i den här Datan Warehouse) är endast tillgängliga i den begränsade testfasen av releasen och är kanske inte tillgängliga i din miljö ännu.
->
->Information om vilka funktioner som ännu inte är tillgängliga för alla kunder, samt information om tidslinjen för releasen av dessa funktioner, finns i [versionsinformation](/help/release-notes/latest.md).
->
->Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. Följande information beskriver hur du konfigurerar allmänna inställningar för begäran.
 
@@ -35,7 +28,7 @@ Så här konfigurerar du allmänna inställningar för en Data Warehouse:
 
 1. Ange följande fält:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | Namn på begäran | Det här namnet visas på huvudsidans Data Warehouse när begäranden hanteras. |
    | Datumintervall | Välj det datumintervall som ska inkluderas i rapporten. <p>Du kan välja anpassade datum eller ett förinställt datumintervall. Förinställningsintervall är relativa till det datum då rapporten skickas.</p><p>Följande förinställningsalternativ är tillgängliga:</p><ul><li>Idag</li><li>Igår</li><li>De senaste 7 dagarna</li><li>De senaste 30 dagarna</li><li>Den här veckan</li><li>Senaste veckan</li><li>De senaste två veckorna</li><li>De senaste 3 veckorna</li><li>De senaste 4 veckorna</li><li>Den här månaden</li><li>Senaste månaden</li><li>Senaste timmen</li></ul> |

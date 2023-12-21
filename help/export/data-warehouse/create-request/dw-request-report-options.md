@@ -2,22 +2,15 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera rapportalternativ för en Data Warehouse-förfrågan
 feature: Data Warehouse
-source-git-commit: 6e6a406c7f3ab6ad83dcf60dbd78a5f6953f1fbb
+exl-id: b273bddb-431c-44d9-82a5-cb088829b3a3
+source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # Konfigurera rapportalternativ för en Data Warehouse-förfrågan
-
->[!AVAILABILITY]
->
->Vissa av de Data Warehouse som beskrivs i den här artikeln (och andra artiklar i den här Datan Warehouse) är endast tillgängliga i den begränsade testfasen av releasen och är kanske inte tillgängliga i din miljö ännu.
->
->Information om vilka funktioner som ännu inte är tillgängliga för alla kunder, samt information om tidslinjen för releasen av dessa funktioner, finns i [versionsinformation](/help/release-notes/latest.md).
->
->Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. Följande information beskriver hur du konfigurerar rapportalternativ för begäran.
 
@@ -35,9 +28,9 @@ Så här konfigurerar du rapportalternativ för en Data Warehouse:
 
 1. Ange följande fält:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
-   | [!UICONTROL **Filnamn**] | Identifierar rapporten. <p>Om något av följande specialtecken används i filnamnet går det inte att spara begäran: <code>! &quot; # $ &amp; &#39; ( ) * + , / : ; > = &lt; ? @ [ ] \ ^ ` {  } \| ~</code> </p><p>Tecknet % kan bara användas om det följs av&quot;R&quot;,&quot;rsid&quot; eller&quot;id&quot; enligt följande: <code>%R</code>, <code>%rsid</code>och <code>%id</code>.</p> |
+   | [!UICONTROL **Filnamn**] | Identifierar rapporten. <p>Om något av följande specialtecken används i filnamnet går det inte att spara begäran: <code>! &quot; # $ &amp; &#39; ( ) * + , / : ; > = &lt; ? @ [ ] \ ^ ` { } \| ~</code> </p><p>Tecknet % kan bara användas om det följs av&quot;R&quot;,&quot;rsid&quot; eller&quot;id&quot; enligt följande: <code>%R</code>, <code>%rsid</code>och <code>%id</code>.</p> |
    | [!UICONTROL **Lägg till rapportdatumintervall till filnamn**] | Lägger till datumintervallet i rapportfilens namn. <p>Om du till exempel begär data från 1 maj till 7 maj 2024 inkluderar filnamnet datumintervallet 20240501 - 20240507.</p> |
    | [!UICONTROL **CSV**] | Levererar rapporter i ett CSV-filformat för att visa data i ett kalkylblad. |
    | [!UICONTROL **Tableu (TDE)**] | Levererar rapporter i ett TDE-filformat (Tableau Data Extract) som kan användas för att visualisera data och lager i ytterligare data i Tableau. |

@@ -1,24 +1,16 @@
 ---
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
-title: Skapa en Data Warehouse-förfrågan
+title: Skapa en begäran om Data Warehouse
 feature: Data Warehouse
 exl-id: c38de0da-feea-4f01-8e2f-8409367afb45
-source-git-commit: 0abf0c76f38b481c0b72d113fe49e0da03ddd8cd
+source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 4%
+source-wordcount: '124'
+ht-degree: 0%
 
 ---
 
-# Skapa en Data Warehouse-förfrågan
-
->[!AVAILABILITY]
->
->Vissa av de Data Warehouse som beskrivs i den här artikeln (och andra artiklar i den här Datan Warehouse) är endast tillgängliga i den begränsade testfasen av releasen och är kanske inte tillgängliga i din miljö ännu.
->
->Information om vilka funktioner som ännu inte är tillgängliga för alla kunder, samt information om tidslinjen för releasen av dessa funktioner, finns i [versionsinformation](/help/release-notes/latest.md).
->
->Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
+# Skapa en begäran om Data Warehouse
 
 Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. I följande information beskrivs hur du börjar skapa en begäran och sedan får du länkar till mer detaljerad information för att slutföra begäran.
 

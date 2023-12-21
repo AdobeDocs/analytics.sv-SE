@@ -1,24 +1,17 @@
 ---
 description: Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.
-title: Hantera Data Warehouse-förfrågningar
+title: Hantera förfrågningar från Data Warehouse
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: 195750917731602ffd3a32f5216db8fe1b174cc0
+source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 1%
+source-wordcount: '1088'
+ht-degree: 0%
 
 ---
 
-# Hantera Data Warehouse-förfrågningar
-
-{{release-limited-testing}}
-
->[!NOTE]
->
->Om din organisation ännu inte har den nya Datan Warehouse, som snart kommer att vara tillgänglig för alla kunder, använder du informationen i [Hantera förfrågningar från Data Warehouse (gammal upplevelse)](#manage-data-warehouse-requests-old-experience) längst ned på sidan.
-
+# Hantera förfrågningar från Data Warehouse
 
 Du kan visa och hantera förfrågningar från Data Warehouse som du har gjort. Endast administratörer kan visa och hantera förfrågningar som gjorts av andra användare i organisationen.
 
@@ -101,14 +94,14 @@ Du kan visa historiken för alla förfrågningar om Data Warehouse som du har gj
 
 1. Välj en rapportleverans och välj sedan något av följande alternativ:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Destinationsinformation**] | Visar konto- och platsinformation som är associerad med begäran. Det här är kontot och platsen som konfigurerades tidigare, enligt beskrivningen i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md). |
    | [!UICONTROL **Avbryt rapport**] | Avbryter rapporten. Du kan inte avbryta rapporter som har statusen [!UICONTROL **Slutförd**] eller [!UICONTROL **Avbruten**]. |
    | [!UICONTROL **Kör rapporten igen**] | Kör rapporten igen med data som de var när den ursprungligen skickades. Du kan köra en rapport som har någon av följande statusar igen: [!UICONTROL **Avbruten**], [!UICONTROL **Slutförd**], [!UICONTROL **Fel - Bearbetning**], eller [!UICONTROL **Fel - det gick inte att skicka**]. |
    | [!UICONTROL **Skicka om rapport**] | Skickar rapportfilen som tidigare har skapats igen. Du kan skicka om en rapport som har någon av följande statusar: [!UICONTROL **Slutförd**] eller [!UICONTROL **Fel - det gick inte att skicka**]. |
 
-## Kopiera förfrågningar
+## Kopiera begäranden
 
 När du kopierar en begäran kopieras alla konfigurationsalternativ från den ursprungliga begäran.
 
@@ -179,31 +172,3 @@ Du kan konfigurera vilken information som ska visas för varje begäran genom at
 1. I sökfältet högst upp på sidan Data Warehouse anger du det begärandenamn som du vill visa.
 
    Förfrågningar filtreras när du skriver.
-
-## Hantera förfrågningar från Data Warehouse (gammal upplevelse)
-
->[!NOTE]
->
->Följande information gäller endast om din organisation ännu inte har den nya Datan Warehouse, som snart kommer att vara tillgänglig för alla Analytics-kunder.
-
-
-Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.
-
-I Data Warehouse väljer du **[!UICONTROL Request Manager]** -fliken.
-
-Om du arbetar på den här fliken kan du
-
-* Visa senaste rapportbegäranden efter rapportnamn, använt segment, begärande, datum och status för begäran.
-* Dubblettbegäranden. Klicka **[!UICONTROL Duplicate]** bredvid begäran.
-
-  >[!NOTE]
-  >
-  >Den här åtgärden duplicerar bara begäran, inte schemat eller leveransinformationen.
-
-* Sök efter rapporter efter rapportnamn eller efter den begärandes inloggningsnamn.
-* Prioritera om rapporter genom att dra och släppa dem på en ny plats i kön.
-* Om du vill se när en begäran har börjat bearbetas klickar du på ett ID för en schemalagd begäran och undersöker popup-fönstret som öppnas.
-
-Klicka på ett jobb för att se enskilda begäranden för det jobbet.
-
-* Begränsad hastighet: För många begäranden om Data Warehouse körs i organisationen. Begäran pausas tills andra dataförfrågningar har slutförts.

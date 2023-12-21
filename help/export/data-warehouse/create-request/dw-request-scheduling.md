@@ -2,22 +2,15 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
-source-git-commit: 3b116cb8d0d3f3eb86b512d712f37b29876f2b22
+exl-id: e5f8acaa-156f-41fb-a0fc-bc5475f1f3b7
+source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 1%
+source-wordcount: '284'
+ht-degree: 2%
 
 ---
 
 # Konfigurera schemaläggningsalternativ för en Data Warehouse-förfrågan
-
->[!AVAILABILITY]
->
->Vissa av de Data Warehouse som beskrivs i den här artikeln (och andra artiklar i den här Datan Warehouse) är endast tillgängliga i den begränsade testfasen av releasen och är kanske inte tillgängliga i din miljö ännu.
->
->Information om vilka funktioner som ännu inte är tillgängliga för alla kunder, samt information om tidslinjen för releasen av dessa funktioner, finns i [versionsinformation](/help/release-notes/latest.md).
->
->Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. Följande information beskriver hur du konfigurerar schemaläggningsalternativ för begäran.
 
@@ -35,7 +28,7 @@ Så här konfigurerar du schemaläggningsalternativ för en Data Warehouse:
 
 1. Ange följande fält:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Skicka rapporten nu**] | Skickar rapporten som en engångsrapport. När det här alternativet är markerat döljs alla schemaläggningsalternativ. |
    | [!UICONTROL **Schemalägg senare**] | Anger alternativ för schemaläggning av rapportleverans. Alla alternativ beskrivs nedan. |
@@ -47,4 +40,3 @@ Så här konfigurerar du schemaläggningsalternativ för en Data Warehouse:
    {style="table-layout:auto"}
 
 1. Fortsätt konfigurera din Data Warehouse-förfrågan på [!UICONTROL **E-postmeddelande**] -fliken. Mer information finns i [Konfigurera ett e-postmeddelande för en Data Warehouse](/help/export/data-warehouse/create-request/dw-request-email.md).
-

@@ -2,22 +2,15 @@
 description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera rapportalternativ för en Data Warehouse-förfrågan
 feature: Data Warehouse
-source-git-commit: 3b116cb8d0d3f3eb86b512d712f37b29876f2b22
+exl-id: 652522d0-6ed0-4cf2-9890-5ee61cc4ac9f
+source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
 # Konfigurera ett e-postmeddelande för en Data Warehouse
-
->[!AVAILABILITY]
->
->Vissa av de Data Warehouse som beskrivs i den här artikeln (och andra artiklar i den här Datan Warehouse) är endast tillgängliga i den begränsade testfasen av releasen och är kanske inte tillgängliga i din miljö ännu.
->
->Information om vilka funktioner som ännu inte är tillgängliga för alla kunder, samt information om tidslinjen för releasen av dessa funktioner, finns i [versionsinformation](/help/release-notes/latest.md).
->
->Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Analytics-processen finns i [Adobe Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 Det finns olika konfigurationsalternativ tillgängliga när du skapar en Data Warehouse. Följande information beskriver hur du konfigurerar ett e-postmeddelande för begäran.
 
@@ -35,7 +28,7 @@ Så här konfigurerar du ett e-postmeddelande för en Data Warehouse:
 
 1. Ange följande fält:
 
-   | Alternativ |  -funktion |
+   | Alternativ | Funktion |
    |---------|----------|
    | [!UICONTROL **Skicka e-postmeddelande till**] | Ange e-postadresserna till de personer som ska få e-postmeddelanden när rapporten skickas. <p>Du kan ange en e-postadress eller en kommaavgränsad lista med e-postadresser.</p> |
    | [!UICONTROL **Avancerade alternativ**] | Välj det här alternativet om du vill inkludera ett ämne och anteckningar för e-postmeddelandet när meddelandet skickas. |
