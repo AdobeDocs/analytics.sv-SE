@@ -3,9 +3,9 @@ title: Sidhändelser
 description: Antalet utlösta länkspårningsåtgärder.
 feature: Metrics
 exl-id: 1afe86e3-65b3-4e4e-b436-ed7cb5da9641
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: a7434f72159a575f9ad7bf29644cb17777382df7
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Sidhändelser [mått](overview.md) visar hur många gånger ett länkspårningsa
 
 ## Hur det här måttet beräknas
 
-Det här måttet räknar alla [Länkspårningsanrop (`tl()`)](/help/implement/vars/functions/tl-method.md) i en rapportsvit. Alla länktyper ingår (anpassade länkar, hämtningslänkar och avslutningslänkar). Den innehåller inte [Spårningsanrop för sidvy (`t()`)](/help/implement/vars/functions/t-method.md).
+Det här måttet räknar alla [Länkspårningsanrop (`tl()`)](/help/implement/vars/functions/tl-method.md) i en rapportsvit. Alla länktyper ingår i det här måttet, särskilt [Egna länkar](../dimensions/custom-link.md), [Hämta länkar](../dimensions/download-link.md)och [Avsluta länkar](../dimensions/exit-link.md). Den innehåller inte [Spårningsanrop för sidvy (`t()`)](/help/implement/vars/functions/t-method.md).
 
 ## Jämför med liknande mätvärden
 

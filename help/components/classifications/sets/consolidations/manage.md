@@ -1,18 +1,18 @@
 ---
 title: Konsolideringshanterare för klassificeringsuppsättning
 description: Konsolidera en eller flera klassificeringsuppsättningar i en enda klassificeringsuppsättning.
-exl-id: 032e93f6-9c11-4522-a02e-376eb4fd98bf
+exl-id: 0be97ca4-56c3-4642-9347-924812e88e8c
 feature: Classifications
-source-git-commit: c697530103ea7cd279cc3560c1daec796759e7a1
+source-git-commit: 5c2643a143e5c8e17fcf11cfa2da81183bc5c39a
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
 # Konsolideringshanterare för klassificeringsuppsättning
 
-Om du har flera klassificeringsuppsättningar som innehåller liknande data kan du konsolidera dem till en enda klassificeringsuppsättning. När du konsoliderar två eller flera klassificeringsuppsättningar genererar Adobe en ny klassificeringsuppsättning som innehåller alla klassificeringsdata från varje enskild klassificeringsuppsättning. Konsolideringar är användbara när du har överfört data till många rapportsviter eller dimensioner som innehåller samma klassificeringsdata och vill sammanfoga dem i ett enda arbetsflöde.
+Om du har flera klassificeringsuppsättningar som innehåller liknande data kan du konsolidera dem till en enda klassificeringsuppsättning. När du konsoliderar två eller flera klassificeringsuppsättningar genererar Adobe en ny klassificeringsuppsättning som innehåller alla klassificeringsdata från varje enskild klassificeringsuppsättning. Konsolideringar är användbara när du har överfört data till många rapportsviter eller dimensioner som innehåller samma klassificeringsdata och vill sammanfoga dem i ett enda arbetsflöde. Du måste ha produktadministratörsåtkomst för Adobe Analytics för att kunna se konsolideringshanteraren för klassificeringsuppsättningar.
 
 **[!UICONTROL Components]** > **[!UICONTROL Classification sets]** > **[!UICONTROL Consolidations]**
 

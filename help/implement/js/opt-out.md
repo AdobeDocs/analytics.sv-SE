@@ -3,24 +3,24 @@ title: Avanmäl länkar
 description: Lär dig hur du skapar en implementerad länk för avanmälan för besökare på din webbplats.
 feature: Implementation Basics
 exl-id: 08b8c7cc-28c6-45e3-ab44-77471eea8ef1
-source-git-commit: 574c705a3127c82c947d0a1cba4beab63109d2c9
+source-git-commit: 5c2643a143e5c8e17fcf11cfa2da81183bc5c39a
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
 
 # Implementera länkar för avanmälan
 
-*Den här hjälpsidan ger Adobe Analytics-kunder möjlighet att förse sina användare med avanmälningslänkar. Om du inte är kund hos Adobe Analytics kan du läsa [Sekretessalternativ för Adobe](https://www.adobe.com/privacy/opt-out.html) för att styra hur Adobe använder informationen.*
-
 >[!IMPORTANT]
 >
->Adobe rekommenderar att man använder sig av anmälningstjänsten, särskilt för organisationer som berörs av GDPR-reglerna. Se [Översikt över anmälningstjänsten](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) i användarhandboken för Experience Cloud Identity Service.
+> **Den här hjälpsidan ger Adobe Analytics-kunder möjlighet att förse sina användare med avanmälningslänkar. Om du inte är kund hos Adobe Analytics kan du läsa [Sekretessalternativ för Adobe](https://www.adobe.com/privacy/opt-out.html) för att styra hur Adobe använder informationen.**
 
-Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder möjlighet att ge besökare på er webbplats möjlighet att avanmäla sig från den information de samlar in. Alla implementeringstyper finns lagrade. Din organisation ansvarar för din egen sekretesspolicy och för att hålla sig i enlighet med dina signerade villkor.
+Vissa besökare på din webbplats föredrar att inte ha sin surfinformation med i din datauppsättning. Adobe erbjuder möjlighet att ge besökare på er webbplats möjlighet att avanmäla sig från den information de analyserar.
 
-När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie ställs in, fortsätter JavaScript-filen att skicka data till Adobe-servrar. Dessa data behandlas dock inte och inkluderas inte i rapporter.
+Avanmäl länkar är ett sätt som gör att besökare på webbplatsen kan utelämna sina data från Analytics-rapporter. Länkarna är begränsade till implementering av AppMeasurement. Adobe rekommenderar att du använder [Adobe Experience Cloud anmälningstjänst](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/optin-overview.html) i stället. Opt-in-tjänsten är stabilare och fungerar på flera Adobe Experience Cloud-produkter, inklusive Adobe Analytics och AppMeasurement.
+
+När en besökare når en avanmälnings-URL uppmanas de att installera en avanmälnings-cookie. Om en användare väljer att inte spåras och en avanmälningscookie är inställd fortsätter AppMeasurementet att skicka data till Adobe. Dessa data behandlas dock inte och inkluderas inte i rapporter.
 
 >[!TIP]
 >
@@ -58,34 +58,30 @@ Det finns inställningar som du automatiskt kan läsa in på den här sidan med 
 
 Byt språk automatiskt på avanmälningssidan genom att inkludera `locale` frågesträngparameter. Tilldela den här frågesträngsparametern ett av följande värden:
 
-* en_US (engelska, standard)
-* bg_BG (bulgariska)
-* zh_CN (förenklad kinesiska)
-* zh_TW (traditionell kinesiska)
-* cs_CZ (Czech)
-* da_NK (danska)
-* nl_NL (nederländska)
-* et_EE (estniska)
-* fi_FI (Finnish)
-* fr_FR (franska)
-* de_DE (German)
-* el_GR (grekisk)
-* it_IT (italienska)
-* jp_JP (japanska)
-* ko_KR (koreanska)
-* lv_LV (lettiska)
-* lt_LT (litauiska)
-* nb_NO (Norwegian)
-* pl_PL (polska)
-* pt_BR (portugisiska)
-* sk_SK (Slovakiska)
-* es_ES (spanska)
+* `en_US` (Engelska, standard)
+* `bg_BG` (bulgariska)
+* `zh_CN` (Förenklad kinesiska)
+* `zh_TW` (Traditionell kinesiska)
+* `cs_CZ` (Tjeckiska)
+* `da_NK` (Danska)
+* `nl_NL` (Nederländska)
+* `et_EE` (estniska)
+* `fi_FI` (finska)
+* `fr_FR` (franska)
+* `de_DE` (Tyska)
+* `el_GR` (Grekiska)
+* `it_IT` (italienska)
+* `jp_JP` (Japanska)
+* `ko_KR` (koreanska)
+* `lv_LV` (Lettiska)
+* `lt_LT` (Litauiska)
+* `nb_NO` (Norska)
+* `pl_PL` (Polska)
+* `pt_BR` (Portugisiska)
+* `sk_SK` (Slovakiska)
+* `es_ES` (Spanska)
 
 Till exempel: `https://example.data.adobedc.net/optout.html?locale=ko_KR` läser in avanmälningssidan på koreanska.
-
->[!TIP]
->
->The `en_US` frågesträngsvärdet är inte obligatoriskt eftersom sidan läses in på engelska som standard.
 
 ### Popup
 
