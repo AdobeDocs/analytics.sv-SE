@@ -3,7 +3,7 @@ title: Fokuserad granskning (efter varje webbplatsrelease)
 description: Följ de här stegen för att se till att implementeringen inte är felfri och att den överensstämmer med dina nyckeltal.
 feature: Implementation Basics
 exl-id: e38f92b6-bd6e-4835-a8e5-0f29ac962066
-source-git-commit: 89088d11846e2d3eac83a834658e4755141655e5
+source-git-commit: fdb134bd75fce450ac891c2742be2045f7c5e4db
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Genom att känna till era fem viktigaste nyckeltal (KPI) kan ni avgöra vilka m�
 Kom ihåg att koduppdateringar kan få oönskade konsekvenser. Du vill se till att alla mått och mått som är kopplade till din [de 5 främsta KPI:erna](/help/implement/review/define-kpis.md) fungerar fortfarande korrekt. Helst görs detta direkt efter en webbplatsrelease. Om du inte har gjort det de senaste månaderna gör du det *nu*. Så här gör du:
 
 * Skapa instrumentpaneler för att se timtrendvyer av dessa viktiga mått och variabler (eller konfigurera [intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html) för varje mätvärde). Övervaka dem sedan i en dag eller två för att säkerställa att du får de data du förväntar dig, och att data är korrekta. Håll utkik efter inflammationspunkter. Var beredd på att åtgärda allvarliga problem omedelbart. Om du hittar avvikelser kan du ta reda på varför i datalagret, tagghanteringsreglerna och bearbetningsreglerna.
-* Kör om [Kontrollpanel för analyshälsa](https://assets.adobe.com/public/9549dbe7-765a-4899-77b8-85cbba1a4252) för att övervaka breda trender för nyckeltal och variabler.
+* Kör om [Kontrollpanel för analyshälsa](https://express.adobe.com/page/tnNQGNlfzta3b/) för att övervaka breda trender för nyckeltal och variabler.
 
 *Mer information om hur du ser till att dina mått och variabler fungerar som de ska finns i [läs dessa tips](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/my-five-best-tips-for-keeping-adobe-analytics-humming/td-p/388608) från Adobe Analytics Champion Sarah Owen.*
 
