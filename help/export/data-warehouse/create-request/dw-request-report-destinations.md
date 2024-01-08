@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
+source-git-commit: b5095574c31d77b77d310acca8ca6000aa7c5891
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2164'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,9 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
    ![Målflik för rapport](assets/dw-report-destination.png)
 
-1. (Villkorligt) Om du tidigare har konfigurerat ett konto (och ett mål för det kontot) som du vill använda som rapportmål:
+1. (Villkorligt) Om ett konto (och ett mål för det kontot) redan har konfigurerats som du vill använda som rapportmål:
+
+   <!--1. (Optional) If you are a system administrator, the [!UICONTROL **Show all destinations**] option is available. Enable this option if you want to have access to all accounts and locations that were created by any user in the organization.-->
 
    1. Välj konto på [!UICONTROL **Välj konto**] listruta.
 
@@ -123,7 +125,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
       |---------|----------|
       | [!UICONTROL **Mottagare**] | E-postmeddelanden kan skickas till specifika användare när rapporten skickas. Ange en e-postadress eller en kommaavgränsad lista med e-postadresser. <!-- How does this differ from the Notification email tab? --> |
 
-   1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Namn**] | Namnet på platsen.  | | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot så att det kan särskiljas från andra konton av samma kontotyp. | | [!UICONTROL **Platskonto**] | Välj det platskonto som du skapade i [Lägg till ett konto](#add-an-account). |
+   1. Välj [!UICONTROL **Lägg till plats**] och ange sedan följande information: |Fält | Funktion | |—|—| | [!UICONTROL **Namn**] | Namnet på platsen.  | | [!UICONTROL **Beskrivning**] | Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp. | | [!UICONTROL **Platskonto**] | Välj det platskonto som du skapade i [Lägg till ett konto](#add-an-account). |
 
    1. I [!UICONTROL **Platsegenskaper**] anger du information som är specifik för kontotypen för ditt platskonto.
 

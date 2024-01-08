@@ -4,9 +4,9 @@ title: Hantera förfrågningar från Data Warehouse
 feature: Data Warehouse
 uuid: cdeb764f-56f9-43ec-9228-8ed5a2b58909
 exl-id: a399d366-8402-4f4f-9b9f-14b218cd074a
-source-git-commit: 1bd46f104c5ebcca78d624b49c56b2992c3d62cb
+source-git-commit: abfc67abdba5e35b12a583fafe9a6e42192af631
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1103'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Du kan konfigurera vilken information som ska visas för varje begäran genom at
    | Rapportsvit | Rapportsviten som är associerad med begäran. |
    | Begärd av | Användaren som skapade begäran. |
    | Datum för förfrågan | Datumet då begäran gjordes. |
-   | Status | Följande statusar är tillgängliga:<ul><li><p>**Slutförd**: Begäran har körts.</p></li><li><p>**Avbruten**: Begäran avbröts av användaren.</p></li><li><p>**Schemalagd**: Begäran är konfigurerad att köras enligt ett schema.</p></li><!-- Are there other statuses? Failed? --> |
+   | Status | Följande statusar är tillgängliga:<ul><li><p>**Slutförd**: Begäran har körts.</p></li><li><p>**Avbruten**: Begäran avbröts av användaren.</p></li><li><p>**Schemalagd**: Begäran är konfigurerad att köras enligt ett schema.</p></li><li><p>**Misslyckades**: Begäran kunde inte slutföras. Kontakta kundsupport om din begäran fortsätter att misslyckas.</p></li></ul> |
 
    {style="table-layout:auto"}
 

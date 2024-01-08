@@ -3,25 +3,24 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: 835b7b07e46de4aa5dc0ae27bc9dee9c083660ad
+source-git-commit: bed7f1def35defc63ffa890f1e2d13e5a7b8159b
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '968'
 ht-degree: 1%
 
 ---
 
-# Aktuell versionsinformation för Adobe Analytics (oktober/november 2023)
+# Aktuell versionsinformation för Adobe Analytics (januari 2024)
 
 **Senaste uppdatering**: 8 januari 2024
 
-Versionsanteckningarna gäller den 23 oktober 2023 till mitten av januari 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsanteckningarna gäller frisläppningsperioden i januari 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Förbättringar av Rapporteringsaktivitetshanteraren** | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen.  Det ger administratörer detaljerad insyn i rapporteringen av förbrukning för att enkelt kunna diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. Nedan följer några av förbättringarna som nu finns i Reporting Activity Manager: <ul><li>Begränsa efterföljande begäranden: Förutom att avbryta aktuella begäranden kan administratörer nu begränsa begäranden för en angiven tidsperiod. Administratörer kan begränsa begäranden efter begäran, projekt och användare.</li><li>Utöver användnings- och kapacitetsstatistik innehåller nu Reporting Activity Manager fler data om rapporteringsaktivitet: kolumnen Komplexitet, kolumnen Användare och kolumnen Anslutning.</li><li>Alla avbrott och begränsningar som görs i Rapporteringsaktivitetshanteraren visas nu i granskningsloggen. Administratörer kan använda granskningsloggen för att visa det som för närvarande är avbrutet. Det går inte att återställa annulleringar i Rapporteringsaktivitetshanteraren eller i granskningsloggen.</li></ul><p>Mer information finns i [Översikt över Reporting Activity Manager](/help/admin/admin/reporting-activity-manager/reporting-activity-overview.md)</p> | 17 oktober 2023 | 24 oktober 2023 |
-| **Förbättrad Data Warehouse** | När du skapar en begäran om Data Warehouse kan du nu konfigurera ett molnkonto som ska användas som rapportmål. Följande typer av molnkonton är tillgängliga för att skicka data:<ul><li>Amazon S3</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li><li>E-post (det här alternativet var tidigare tillgängligt)</li></ul>FTP, SFTP, Azure Blob och S3 är fortfarande tillgängliga som rapportmål, men rekommenderas inte längre.<p>Användarupplevelsen när begäranden om Data Warehouse skapas och hanteras har också förbättrats. Mer information finns i [Skapa en begäran om Data Warehouse](/help/export/data-warehouse/create-request/t-dw-create-request.md) och [Hantera förfrågningar från Data Warehouse](https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse-requests-manage.html). | 12 september 2023 | 15 december 2023 |
+| **Data Warehouse** | Följande förbättringar av Datan Warehouse är nu tillgängliga:<ul><li>När en begäran om Data Warehouse skapas kan användare nu göra begäranden tillgängliga för alla användare i organisationen genom att aktivera den nya växeln som kallas [!UICONTROL **Gör tillgänglig för användare i din organisation**].<!--<p>For more information, see [Data Warehouse request general settings](/help/export/data-warehouse/create-request/dw-general-settings.md).</p>--></li><li>När systemadministratörer skapar eller hanterar destinationer för Data Warehouse-rapporter kan de nu visa konton och platser som har skapats av användare i organisationen genom att aktivera det anropade [!UICONTROL **Visa alla mål**].<!--<p>For more information, see [Configure a report destination for a Data Warehouse request](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).</p>--></li> | Ej tillämpligt | 10 januari 2024 |
 
 {style="table-layout:auto"}
 
