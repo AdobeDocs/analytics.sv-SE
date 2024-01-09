@@ -3,9 +3,9 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: bed7f1def35defc63ffa890f1e2d13e5a7b8159b
+source-git-commit: baac0c0384b714cf2ca536149ca10eec3a7065ad
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '990'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Versionsanteckningarna gäller frisläppningsperioden i januari 2024. Adobe Anal
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Data Warehouse** | Följande förbättringar av Datan Warehouse är nu tillgängliga:<ul><li>När en begäran om Data Warehouse skapas kan användare nu göra begäranden tillgängliga för alla användare i organisationen genom att aktivera den nya växeln som kallas [!UICONTROL **Gör tillgänglig för användare i din organisation**].<!--<p>For more information, see [Data Warehouse request general settings](/help/export/data-warehouse/create-request/dw-general-settings.md).</p>--></li><li>När systemadministratörer skapar eller hanterar destinationer för Data Warehouse-rapporter kan de nu visa konton och platser som har skapats av användare i organisationen genom att aktivera det anropade [!UICONTROL **Visa alla mål**].<!--<p>For more information, see [Configure a report destination for a Data Warehouse request](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).</p>--></li> | Ej tillämpligt | 10 januari 2024 |
+| **Data Warehouse** | Följande förbättringar av Datan Warehouse är nu tillgängliga:<ul><li>När en begäran om Data Warehouse skapas kan användare nu göra begäranden tillgängliga för alla användare i organisationen genom att aktivera den nya växeln som kallas [!UICONTROL **Gör tillgänglig för användare i din organisation**].<p>Mer information finns i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md).</p></li><li>När systemadministratörer skapar eller hanterar destinationer för Data Warehouse-rapporter kan de nu visa konton och platser som har skapats av användare i organisationen genom att aktivera det anropade [!UICONTROL **Visa alla mål**].<p>Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).</p></li> | Ej tillämpligt | 10 januari 2024 |
 
 {style="table-layout:auto"}
 

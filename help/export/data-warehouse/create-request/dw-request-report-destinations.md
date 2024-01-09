@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Konfigurera ett rapportmål för en Data Warehouse-begäran
 feature: Data Warehouse
 exl-id: 3c7faea3-4d90-4274-88f3-e9337c94155f
-source-git-commit: b5095574c31d77b77d310acca8ca6000aa7c5891
+source-git-commit: baac0c0384b714cf2ca536149ca10eec3a7065ad
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Så här konfigurerar du målet dit Data Warehouse-rapporter skickas:
 
 1. (Villkorligt) Om ett konto (och ett mål för det kontot) redan har konfigurerats som du vill använda som rapportmål:
 
-   <!--1. (Optional) If you are a system administrator, the [!UICONTROL **Show all destinations**] option is available. Enable this option if you want to have access to all accounts and locations that were created by any user in the organization.-->
+   1. (Valfritt) Om du är systemadministratör väljer du [!UICONTROL **Visa alla mål**] är tillgängligt. Aktivera det här alternativet om du vill ha åtkomst till alla konton och platser som har skapats av någon användare i organisationen.
 
    1. Välj konto på [!UICONTROL **Välj konto**] listruta.
 

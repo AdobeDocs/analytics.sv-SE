@@ -3,9 +3,9 @@ description: Steg som beskriver hur du skapar en begäran om Data Warehouse.
 title: Allmänna inställningar för begäran om Data Warehouse
 feature: Data Warehouse
 exl-id: f564d5a9-78a2-431e-987a-78c4b0b9d31e
-source-git-commit: b5095574c31d77b77d310acca8ca6000aa7c5891
+source-git-commit: baac0c0384b714cf2ca536149ca10eec3a7065ad
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,8 @@ Så här konfigurerar du allmänna inställningar för en Data Warehouse:
    |---------|----------|
    | Namn på begäran | Det här namnet visas på huvudsidans Data Warehouse när begäranden hanteras. |
    | Datumintervall | Välj det datumintervall som ska inkluderas i rapporten. <p>Du kan välja anpassade datum eller ett förinställt datumintervall. Förinställningsintervall är relativa till det datum då rapporten skickas.</p><p>Följande förinställningsalternativ är tillgängliga:</p><ul><li>Idag</li><li>Igår</li><li>De senaste 7 dagarna</li><li>De senaste 30 dagarna</li><li>Den här veckan</li><li>Senaste veckan</li><li>De senaste två veckorna</li><li>De senaste 3 veckorna</li><li>De senaste 4 veckorna</li><li>Den här månaden</li><li>Senaste månaden</li><li>Senaste timmen</li></ul> |
-   | Kornighet | <!--what does this setting do? It's not the schedule/frequency... --> Tidsgranulariteten. Giltiga värden är None, Hour, Day, Week, Month, Quarter och Year.<p>För rapportgranularitet krävs ytterligare bearbetningstid. Om du rapporterar månadsvis granularitet för ett helt år kommer rapportprocessen att gå mycket snabbare om du skickar in en rapportförfrågan för varje månad.</p> <!-- Make this into a new row: Make available to users in your organization - All data warehouse requests are visible only to you and any system administrators. Enable this option if you want to make the request visible to everyone in your organization. <p>Enabling this option is useful if you want other users in your organization to help create or update the request.</p>--> |
+   | Kornighet | <!--what does this setting do? It's not the schedule/frequency... --> Tidsgranulariteten. Giltiga värden är None, Hour, Day, Week, Month, Quarter och Year.<p>För rapportgranularitet krävs ytterligare bearbetningstid. Om du rapporterar månadsvis granularitet för ett helt år kommer rapportprocessen att gå mycket snabbare om du skickar in en rapportförfrågan för varje månad.</p> |
+   | Gör tillgänglig för användare i din organisation | Alla datalagerbegäranden är bara synliga för dig och alla systemadministratörer. Aktivera det här alternativet om du vill att begäran ska vara synlig för alla i organisationen. <p>Det här alternativet är användbart om du vill att andra användare i organisationen ska kunna skapa eller uppdatera begäran.</p> |
 
    {style="table-layout:auto"}
 
