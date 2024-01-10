@@ -3,55 +3,57 @@ title: getPageLoadTime
 description: Spåra hur lång tid det tar att läsa in en sida.
 feature: Variables
 exl-id: 9bf0e26b-f1af-48a6-900a-712f7e588d37
-source-git-commit: 15f1cd260709c2ab82d56a545494c31ad86d0ab0
+source-git-commit: dd9046bbb8d640d7392cddfab7ce34c4310e6eb7
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '34'
 ht-degree: 0%
 
 ---
 
 # Adobe plug-in: getPageLoadTime
 
-{{plug-in}}
+>[!IMPORTANT]
+>
+>Detta plugin-program stöds inte längre. I koden används metoden performance.timing som (enligt MDN) har [inaktuell](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming).
 
-The `getPageLoadTime` I plugin-programmet används JavaScript-prestandaobjektet för att du ska kunna mäta hur lång tid det tar att läsa in en sida helt. Adobe rekommenderar att du använder det här plugin-programmet om du vill mäta hur lång tid det tar att läsa in sidor.
+<!-- The `getPageLoadTime` plug-in uses the JavaScript performance object to allow you to measure the amount of time a page takes to completely load. Adobe recommends using this plug-in if you want to measure how long pages take to load.
 
->OBS! Om du uppgraderar det här plugin-programmet från en tidigare version behöver du troligen ändra koden som anropar den här funktionen också.  Kontrollera implementeringen och testa noggrant innan du distribuerar till produktionen
+>NOTE/WARNING: If you are upgrading this plugin from a previous version, you will most likely need to change the code that calls this function as well.  Please check your implementation and test thoroughly before deploying to production.
 
-## Installera plugin-programmet med Web SDK- eller Web SDK-tillägget
+## Install the plug-in using the Web SDK or Web SDK extension
 
-Det här plugin-programmet stöds ännu inte för användning i Web SDK.
+This plug-in is supported for use within the Web SDK.
 
-## Installera plugin-programmet med Adobe Analytics-tillägget
+## Install the plug-in using the Adobe Analytics extension
 
-Adobe har ett tillägg som gör att du kan använda de vanligaste plugin-programmen med Adobe Analytics.
+Adobe offers an extension that allows you to use most commonly-used plug-ins with Adobe Analytics.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på den önskade taggegenskapen.
-1. Gå till [!UICONTROL Extensions] klickar du på [!UICONTROL Catalog] knapp
-1. Installera och publicera [!UICONTROL Common Analytics Plugins] extension
-1. Om du inte redan har det skapar du en regel med namnet&quot;Initiera plugin-program&quot; med följande konfiguration:
-   * Villkor: Ingen
-   * Händelse: Kärna - Bibliotek inläst (sidan ovanpå)
-1. Lägg till en åtgärd i ovanstående regel med följande konfiguration:
-   * Tillägg: Plugin-program för vanlig analys
-   * Åtgärdstyp: Initiera getPageLoadTime
-1. Spara och publicera ändringarna i regeln.
+1. Log in to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) using your AdobeID credentials.
+1. Click the desired tag property.
+1. Go to the [!UICONTROL Extensions] tab, then click on the [!UICONTROL Catalog] button
+1. Install and publish the [!UICONTROL Common Analytics Plugins] extension
+1. If you haven't already, create a rule labeled "Initialize Plug-ins" with the following configuration:
+    * Condition: None
+    * Event: Core – Library Loaded (Page Top)
+1. Add an action to the above rule with the following configuration:
+    * Extension: Common Analytics Plugins
+    * Action Type: Initialize getPageLoadTime
+1. Save and publish the changes to the rule.
 
-## Installera plugin-programmet med en anpassad kodredigerare
+## Install the plug-in using custom code editor
 
-Om du inte vill använda tillägget för Common Analytics-plugin-program kan du använda den anpassade kodredigeraren.
+If you do not want to use the Common Analytics Plugins plug-in extension, you can use the custom code editor.
 
-1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
-1. Klicka på önskad egenskap.
-1. Gå till [!UICONTROL Extensions] klickar du på **[!UICONTROL Configure]** under Adobe Analytics-tillägget.
-1. Expandera [!UICONTROL Configure tracking using custom code] dragspelspanel, som visar [!UICONTROL Open Editor] -knappen.
-1. Öppna den anpassade kodredigeraren och klistra in den plugin-kod som finns nedan i redigeringsfönstret.
-1. Spara och publicera ändringarna i Analytics-tillägget.
+1. Log in to [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) using your AdobeID credentials.
+1. Click on the desired property.
+1. Go to the [!UICONTROL Extensions] tab, then click the **[!UICONTROL Configure]** button under the Adobe Analytics extension.
+1. Expand the [!UICONTROL Configure tracking using custom code] accordion, which reveals the [!UICONTROL Open Editor] button.
+1. Open the custom code editor and paste the plug-in code provided below into the edit window.
+1. Save and publish the changes to the Analytics extension.
 
-## Installera plugin-programmet med AppMeasurementet
+## Install the plug-in using AppMeasurement
 
-Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efter att Analytics-spårningsobjektet har initierats (med [`s_gi`](../functions/s-gi.md)). Genom att bevara kommentarer och versionsnummer i koden i implementeringen kan Adobe felsöka eventuella problem.
+Copy and paste the following code anywhere in the AppMeasurement file after the Analytics tracking object is instantiated (using [`s_gi`](../functions/s-gi.md)). Preserving comments and version numbers of the code in your implementation helps Adobe with troubleshooting any potential issues.
 
 ```js
 /******************************************* BEGIN CODE TO DEPLOY *******************************************/
@@ -60,22 +62,22 @@ Kopiera och klistra in följande AppMeasurement var som helst i analysfilen efte
 /******************************************** END CODE TO DEPLOY ********************************************/
 ```
 
-## Använda plugin-programmet
+## Use the plug-in
 
-The `getPercentPageViewed` funktionen använder följande argument:
+The `getPercentPageViewed` function uses the following arguments:
 
-* **`pv`** (valfri, sträng): Dimensionen som sidans inläsningstid ska korreleras med.  Värdet ska vara lika med ett värde som identifierar själva sidan. Om det inte anges används Adobe AppMeasurement pageName-variabeln (d.v.s.pageName) eller URL:en när s.pageName inte har angetts
+* **`pv`** (optional, string):  The dimension to correlate the page load time with.  This value should be equal to a value that identifies the page itself. When not set, this argument defaults to the Adobe AppMeasurement pageName variable (i.e. s.pageName) or the URL when s.pageName is not set 
 
-När funktionen anropas returneras ingenting; i stället anges följande variabler:
+Calling this function returns nothing; instead, it sets the following variables:
 
-* `window._pltPreviousPage`: Värdet på föregående sida (dvs. vad som skickades till argumentet pv)
-* `window._pltLoadTime`: Tiden i sekunder som föregående sida lästes in
+* `window._pltPreviousPage`: The value of the previous page (i.e. what was passed into the pv argument)
+* `window._pltLoadTime`: The time in seconds that the previous page took to load
 
-Med plugin-programmet getPageLoadTime skapas en cookie från första part:
+The getPageLoadTime plug-in creates one first-party cookie:
 
-* `s_plt`: Tiden, i sekunder, som det tog att läsa in föregående sida.  Innehåller också värdet för vad som skickades till pv-argumentet.  Upphör att gälla i slutet av webbläsarsessionen.
+* `s_plt`: The time, in seconds, that the previous page took to load.  Also contains the value of what was passed into the pv argument.  Expires at the end of the browser session.
 
-## Exempel
+## Example
 
 ```js
 // 1. Run the getPageLoadTime function if the pageName variable is set
@@ -92,23 +94,23 @@ if(window._pltPreviousPage)
 }
 ```
 
-## Versionshistorik
+## Version History
 
-### 3.0 (6 december 2022)
+### 3.0 (December 6, 2022)
 
-* Fullständig omskrivning av plugin-programmet för att göra det lösningens agnostiska.  Detta är till exempel nu kompatibelt med Adobe Experience Platform Web SDK
-* Skapar `_pltPreviousPage` och `_pltLoadTime` variabler i window-objektet (i stället för i AppMeasurementets objekt)
-* Tar bort behovet av s_pltp-cookie - allt lagras nu bara i s_plt-cookien
-* Innehåller funktionen getVersion som kan användas för felsökning
+* Complete rewrite of plugin to make it solution-agnostic.  For instance, this is now compatible with the Adobe Experience Platform Web SDK.
+* Creates the `_pltPreviousPage` and `_pltLoadTime` variables in the window object (rather than in the AppMeasurement s object)
+* Removes the need for the s_pltp cookie - everything is now stored in only the s_plt cookie
+* Includes the getVersion function to help with troubleshooting
 
-### 2.0.1 (26 mars 2021)
+### 2.0.1 (March 26, 2021)
 
-* Ett problem har korrigerats där plugin-programmet inte angav värden på objektet s korrekt.
+* Fixed issue where plugin was not correctly setting values on the s object.
 
-### 2.0 (19 mars 2021)
+### 2.0 (March 19, 2021)
 
-* Versionsnummer har lagts till som kontextdata.
+* Added version number as context data.
 
-### 1.0 (22 maj 2018)
+### 1.0 (May 22, 2018)
 
-* Ursprunglig version.
+* Initial release.-->
