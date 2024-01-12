@@ -5,9 +5,9 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: 52631b840ed04856480a2c9dae365ae46c844a97
+source-git-commit: ca6d5040aac3fd5b8df4e7cb4601ee41c9ad4998
 workflow-type: tm+mt
-source-wordcount: '4890'
+source-wordcount: '4925'
 ht-degree: 23%
 
 ---
@@ -20,6 +20,13 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 * Mer information om Adobe Media Analytics finns i [Mäta ljud och video i Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 ## Information om större dokumentationsuppdateringar
+
+### 2024 {#24}
+
+| Funktion | Beskrivning |
+| --- | --- |
+| **Januari 2024** | |
+| Uppdateringar av medieminarium - dokumentation om den genomsnittliga minuten-målgruppen | Uppdaterad information i [Mediemedelets minutmålspanel](/help/analyze/analysis-workspace/c-panels/average-minute-audience-panel.md) för att förbättra klarheten.<p>Bland förbättringarna finns:</p> <ul><li>Förbättrad organisation av information</li><li>Tillagda steg för att ange uppgiftsbaserad information</li></ul> |
 
 ### 2023 {#23}
 
