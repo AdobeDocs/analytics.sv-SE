@@ -1,15 +1,16 @@
 ---
 description: Beskriver konsekvenserna av att ändra en händelsetyp efter att data har samlats in.
-title: Om att ändra händelsetypen
+title: Ändra händelsetypen
 feature: Event
+role: Admin
 exl-id: 6972431a-bb42-4b7f-b02b-ceef0ff56271
-source-git-commit: 68389772dec0420a66767bb0af9dea3122e1cb0f
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 23%
+source-wordcount: '41'
+ht-degree: 0%
 
 ---
 
-# Om att ändra händelsetypen
+# Ändra händelsetypen
 
 Du kan ändra en händelse från räknare, numeriska data eller valutor till en annan typ utan att förlora åtkomsten till tidigare hämtade data.

@@ -2,11 +2,12 @@
 description: Klassificeringar används för att kategorisera värden i grupper och rapportera på gruppnivå. Du kan t.ex. klassificera alla betalsökningskampanjer i en kategori som popmusiktermer och rapportera hur framgångsrik den kategorin är i förhållande till mått som instanser (klickningar) och konvertering till lyckade händelser.
 title: Konverteringsklassificeringar
 feature: Classifications
+role: Admin
 exl-id: b4855000-adf3-4e3b-af36-f4803383126d
-source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 3%
+source-wordcount: '517'
+ht-degree: 1%
 
 ---
 
@@ -37,8 +38,8 @@ När du har aktiverat klassificeringar använder du [Klassificeringsimportör](/
 
 Så här lägger du till konverteringsklassificeringar i Admin:
 
-1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. Välja en rapportsvit.
+1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
+1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**.
 1. Från **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
 
@@ -60,8 +61,8 @@ Så här lägger du till konverteringsklassificeringar i Admin:
 
 Ta bort en konverteringsklassificering när den inte längre behövs.
 
-1. Öppna Report Suite Manager genom att klicka på **[!UICONTROL Admin]**> **[!UICONTROL Report Suites]** i rubriken Suite.
-1. Välja en rapportsvit.
+1. Öppna Report Suite Manager genom att klicka på **[!UICONTROL Admin]**> **[!UICONTROL Report Suites]** i Suite-rubriken.
+1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Conversion Classifications]**.
 1. Från **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill ta bort en klassificering.
 1. För musen över **[!UICONTROL Edit Classification]** ikon och sedan välja **[!UICONTROL Delete Classification]**.

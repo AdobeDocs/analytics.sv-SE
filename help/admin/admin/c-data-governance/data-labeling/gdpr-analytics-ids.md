@@ -2,11 +2,12 @@
 description: Förstå vilka ID:n som registreras i era analysdata och bestäm vilka ni ska använda för förfrågningar om dataintegritet.
 title: Bästa praxis för etikettering
 feature: Data Governance
+role: Admin
 exl-id: 00da58b0-d613-4caa-b9c1-421b1b541f47
-source-git-commit: a1cf20c0e38bf6938dcb379a57f639f9cc43d81b
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '2695'
-ht-degree: 79%
+source-wordcount: '2676'
+ht-degree: 78%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Kom ihåg att etiketter måste granskas varje gång en ny rapportserie skapas eller när nya variabler aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketteringen när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En återimplementering av dina mobilappar eller webbplatser kan ändra hur befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketter.
+>Kom ihåg att etiketter måste granskas varje gång en ny rapportserie skapas eller när en ny variabel aktiveras i en befintlig rapportserie. Du kan också behöva granska etiketteringen när nya lösningar är aktiverade, eftersom de kan visa nya variabler som kan kräva etiketter. En återimplementering av dina mobilappar eller webbplatser kan ändra hur befintliga variabler används, vilket också kan göra det nödvändigt att uppdatera etiketter.
 
 ## Direkt eller indirekt identifierbara ID:n {#direct-vs-indirect}
 
@@ -23,7 +24,7 @@ Innan du kan ta reda på vilka etiketter som ska användas på vilka variabler/f
 * **Ett direkt identifierbart ID (I1)**: Namnger personen eller tillhandahåller en direkt metod för att kontakta honom/henne. Exempel kan vara någons namn (t.o.m. ett vanligt namn som Anders Svensson som kan delas av hundratals personer), deras e-postadresser eller telefonnummer, o.s.v. En postadress utan ett namn kan anses vara direkt identifierbart, även om den endast identifierar ett hushåll eller ett företag i stället för en viss person inom det hushållet eller företaget.
 * **Ett indirekt identifierbart ID (I2)**: Tillåter inte identifiering av en enskild person, utan kan kombineras med annan information (som du kanske har tillgång till) för att identifiera någon. Exempel på ett indirekt identifierbart ID är ett kundlojalitetsnummer eller ett ID som används av ett företags CRM-system som är unikt för varje kund. Enligt datasekretess kan anonyma ID:n som lagras i de spårningscookies som används av Analytics anses vara indirekt identifierande, även om de bara kan identifiera en enhet snarare än en individ. På en delad enhet kan dessa cookies inte skilja mellan olika användare i systemet. Även om cookiefilen inte kan användas för att hitta en dator som innehåller cookien, och om någon har åtkomst till datorn och hittar cookien, kan de sedan koppla Analytics-cookiedata tillbaka till datorn.
 
-   En IP-adress anses också vara indirekt identifierbar, eftersom den vid en given tidpunkt bara kan tilldelas en enskild enhet. Internet-leverantörer kan däremot ändra IP-adresserna för de flesta användare regelbundet, så med tiden kan en IP-adress ha använts av någon av deras användare. Det är inte heller ovanligt att många kunder hos en Internet-leverantör eller flera anställda inom ett företag på samma intranät delar samma externa IP-adress. På grund av detta stöder inte Adobe att en IP-adress används som ID för en datasekretessbegäran. När ett ID som vi godkänner används som en del av en borttagningsbegäran, rensas även IP-adresserna som inträffade med det ID:t. Du måste bestämma om det finns andra insamlade ID:n som kan ingå i denna kategori, i1 eller I2, men som inte är lämpliga att använda som särskiljande ID för förfrågningar om dataintegritet.
+  En IP-adress anses också vara indirekt identifierbar, eftersom den vid en given tidpunkt bara kan tilldelas en enskild enhet. Internet-leverantörer kan däremot ändra IP-adresserna för de flesta användare regelbundet, så med tiden kan en IP-adress ha använts av någon av deras användare. Det är inte heller ovanligt att många kunder hos en Internet-leverantör eller flera anställda inom ett företag på samma intranät delar samma externa IP-adress. På grund av detta stöder inte Adobe att en IP-adress används som ID för en datasekretessbegäran. När ett ID som vi godkänner används som en del av en borttagningsbegäran, rensas även IP-adresserna som inträffade med det ID:t. Du måste bestämma om det finns andra insamlade ID:n som kan ingå i denna kategori, i1 eller I2, men som inte är lämpliga att använda som särskiljande ID för förfrågningar om dataintegritet.
 
 Även om ditt företag samlar in många olika ID:n i era analysdata, kan du välja att endast använda en delmängd av dessa ID:n för begäranden om datasekretess. Detta kan bero på följande:
 
@@ -59,7 +60,7 @@ Använd den här tabellen för att fastställa vilka typer av ID som du kommer a
      <li id="li_D35B61CC6A8B485A8E09358A46D3F598">Om du vill använda något av dessa ID:n för begäranden om datasekretess ska du förse fältet som innehåller det med en ID-PERSON-etikett. </li> 
      <li id="li_94541340B054436297C5565F074413DC">(Mycket mindre vanligt) Om ett ID i en av dessa anpassade variabler bara identifierar en enhet som kan delas av flera personer, kan du i stället använda en ID-DEVICE-etikett. </li> 
      <li id="li_8115B999E8DA46CAB359BCF1F4A4DCAE">Dessa fält kräver också I1- eller I2-etiketter och ska innehålla etiketterna DEL-PERSON eller DEL-DEVICE. Alternativet PERSON/DEVICE för etiketten DEL matchar vanligtvis alternativet PERSON/DEVICE för ID-etiketten. </li> 
-    </ul> <p> Det är ovanligt att en rapportserie har mer än en eller två anpassade variabler som innehåller ID:n som du vill använda för att identifiera registrerade personer för datasekretessförfrågningar. Du kan ha flera variabler som tilldelas I1- eller I2-etiketter, men vanligtvis har bara en eller två av dessa ID-PERSON- eller ID-DEVICE-etiketter. </p> </td> 
+    </ul> <p> Det är ovanligt att en rapportserie har fler än en eller två anpassade variabler som innehåller ID:n som du vill använda för att identifiera registrerade personer för datasekretessförfrågningar. Du kan ha flera variabler som tilldelas I1- eller I2-etiketter, men vanligtvis har bara en eller två av dessa ID-PERSON- eller ID-DEVICE-etiketter. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Anpassat besökar-ID </p> </td> 
@@ -72,7 +73,7 @@ Använd den här tabellen för att fastställa vilka typer av ID som du kommer a
 
 >[!NOTE]
 >
->Props är alltid skiftlägeskänsliga. eVars är som standard inte skiftlägeskänsliga, men kan konfigureras via Adobes kundtjänst för att vara skiftlägeskänsliga. Om du har en skiftlägeskänslig eVar som innehåller ett ID är det ditt ansvar att använda rätt skiftläge när du skickar en begäran om datasekretess så att det skiftläge som används i begäran matchar det skiftläge som används i träffar som innehåller dessa ID:n.
+>Säljare är alltid skiftlägeskänsliga. eVars är som standard inte skiftlägeskänsliga, men kan konfigureras via Adobes kundtjänst för att vara skiftlägeskänsliga. Om du har en skiftlägeskänslig eVar som innehåller ett ID är det ditt ansvar att använda rätt skiftläge när du skickar en begäran om datasekretess så att det skiftläge som används i begäran matchar det skiftläge som används i träffar som innehåller dessa ID:n.
 
 Borttagningsetiketterna DEL-DEVICE och DEL-PERSON ska användas sparsamt. När det tillämpas på en variabel som inte innehåller ett ID som användes som en del av begäran om datasekretess ändras antalet (metrik) i historiska Analytics-rapporter nästan alltid.
 
@@ -86,7 +87,7 @@ Borttagningsetiketterna DEL-DEVICE och DEL-PERSON ska användas sparsamt. När d
 * Om du inte anger användning av ID-expansion, men använder en blandning av enhets- och person-ID för olika begäranden, kanske du vill ange både DELL-DEVICE- och DEL-PERSON-etiketter för variabler som ska tas bort när någon typ av ID används.
 * Observera att om en DEL-DEVICE- eller DEL-PERSON-etikett anges för en variabel som inte också används som ett ID för den begäran (inklusive ett utökat ID), kommer unika värden i den variabeln endast att anonymiseras vid träffar där ett angivet (eller utökat) ID inträffar. Om andra träffar innehåller samma värde kommer det inte att uppdateras på de andra platserna. Detta kan leda till att antalet (metrik) ändras.
 
-   Om du till exempel har tre träffar som innehåller värdet ”foo” i eVar7, men bara ett av dem innehåller ett ID i en annan variabel som matchas för en borttagning, ändras ”foo” i den träffen till ett värde som ”Datasekretess-123456789”, medan det förblir oförändrat i de andra två träffarna. En rapport som visar antalet unika värden för eVar7 visar nu ett mer unikt värde än det gjorde tidigare. En rapport som visar de högsta värdena för eVars kan innehålla ”foo” med endast två instanser (i stället för 3 tidigare), och det nya värdet visas också med en enda instans.
+  Om du till exempel har tre träffar som innehåller värdet ”foo” i eVar7, men bara ett av dem innehåller ett ID i en annan variabel som matchas för en borttagning, ändras ”foo” i den träffen till ett värde som ”Datasekretess-123456789”, medan det förblir oförändrat i de andra två träffarna. En rapport som visar antalet unika värden för eVar7 visar nu ett mer unikt värde än det gjorde tidigare. En rapport som visar de högsta värdena för eVars kan innehålla ”foo” med endast två instanser (i stället för 3 tidigare), och det nya värdet visas också med en enda instans.
 
 ## Metodtips för att ange åtkomstetiketter {#best-practices-access}
 

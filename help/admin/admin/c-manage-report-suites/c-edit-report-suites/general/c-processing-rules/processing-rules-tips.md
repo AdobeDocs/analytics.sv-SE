@@ -3,11 +3,12 @@ description: Det här avsnittet innehåller riktlinjer för testning av bearbetn
 subtopic: Processing rules
 title: Tips och tricks för regler
 feature: Processing Rules
+role: Admin
 exl-id: e663d98b-dcfd-4420-84ac-07ddfe55a3f2
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +38,7 @@ När du skapar en regel bör du tänka på skiftläget när ett värde är tomt.
 
 ![](assets/tips-set-value-acquisition-code.png)
 
-Det är också viktigt att ta hänsyn till bearbetningsordningen. I följande exempel visas att den anpassade eVar Föregående sidnamn ställs in på URL-adressen om det inte finns något sidnamn. URL:en placeras emellertid i sidnamnet när bearbetningsreglerna har tillämpats, så i det här fallet är sidnamnet tomt om det inte har angetts på sidan.
+Det är också viktigt att ta hänsyn till bearbetningsordningen. I följande exempel visas att den anpassade eVarna Föregående sidnamn ställs in på URL-adressen om det inte finns något sidnamn. URL:en placeras emellertid i sidnamnet när bearbetningsreglerna har tillämpats, så i det här fallet är sidnamnet tomt om det inte har angetts på sidan.
 
 ![](assets/tips-copy-page-name-to-evar.png)
 

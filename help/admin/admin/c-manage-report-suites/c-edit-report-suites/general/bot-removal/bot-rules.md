@@ -2,8 +2,9 @@
 description: Med Bot Rules kan du ta bort trafik som genereras av kända spindlar och botar från rapportsviten. Genom att ta bort robottrafiken kan du få ett mer exakt mått på användaraktiviteten på din webbplats.
 title: Förstå och konfigurera robotregler
 feature: Bot Removal
+role: Admin
 exl-id: 1c0009f6-2746-4ef1-8dcb-e2693617e91e
-source-git-commit: 7813900a7c104acdb9b1a3ebfadf597a5070a3e7
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 0%

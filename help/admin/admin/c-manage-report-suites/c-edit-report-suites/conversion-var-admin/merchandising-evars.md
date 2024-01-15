@@ -2,10 +2,11 @@
 title: Merchandising eVars and Product Finding Methods
 description: En djupdykning i begreppen bakom försäljning av eVars och hur de bearbetar och allokerar data.
 feature: Admin Tools
+role: Admin
 exl-id: 9e1a39aa-451f-49bb-8e39-797b6bbd5499
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '5254'
+source-wordcount: '5248'
 ht-degree: 0%
 
 ---

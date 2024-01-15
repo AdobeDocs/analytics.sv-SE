@@ -1,16 +1,17 @@
 ---
-title: Schemalägg en trafiktopp
+title: Schemalägg en trafiktoppning
 description: Samarbeta med Adobe för att säkerställa att högtrafikhändelser inte får någon fördröjning.
 feature: Traffic Management
+role: Admin
 exl-id: a6bbd975-6d31-40f5-8f80-491ec3a5c5f5
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 2%
+source-wordcount: '705'
+ht-degree: 0%
 
 ---
 
-# Schemalägg en trafiktopp
+# Schemalägg en trafiktoppning
 
 Adobe försöker att samarbeta med kunder för att säkerställa att ett trafikrelaterat evenemang lyckas. Att schemalägga trafiktoppar är startpunkten i den partnerprocessen. I avsnittet Schemalägg inkapsling kan du informera Adobe om tillfälliga trafiktoppar så att lämpliga resurser kan tilldelas för att hantera dem. Du kan uppskatta tidigare serveranrop för att få en bättre uppfattning om storleken på den trafikökning du behöver schemalägga.
 
@@ -18,12 +19,12 @@ Avancerad databalansering på serversidan med flera dedikerade medarbetare anvä
 
 {{$include /help/_includes/traffic-lead-time.md}}
 
-## Schemalägg en trafiktopp
+## Schemalägg en trafiktoppning
 
 Så här schemalägger du en trafiktopp:
 
 1. Klicka på **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL All admin]** > **[!UICONTROL Report suites]**.
-1. Välja en rapportsvit.
+1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic Management]** > **[!UICONTROL Schedule Spike]**.
 1. (Valfritt) Du kan uppskatta tidigare serveranrop för att få en bättre uppfattning om hur stor trafikökning du behöver schemalägga.
 

@@ -2,17 +2,18 @@
 title: Jämförelse av olika metoder för att utesluta robotar
 description: Gör att du kan jämföra olika metoder för att utesluta stötar.
 exl-id: c54ba98a-b396-479e-bfe8-dc6211b26f61
+role: Admin
 feature: Bot Removal
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 17%
+source-wordcount: '317'
+ht-degree: 6%
 
 ---
 
 # Jämförelse av olika metoder för att utesluta robotar
 
-I följande tabell visas olika metoder för att exkludera robotar och hur de staplas mot varandra.
+I följande tabell visas olika metoder för att exkludera robotar och hur de jämförs med varandra.
 
 | Metod | Punktregler | Exkludera efter IP-adress | Kundattribut | Segmentering | Poäng + segmentering från tredje part | Utelämna &#x200B; för serveranrop för &#x200B; vid körning | VISTA-regel för anpassad databas |
 | --- | --- | --- | --- | --- | --- | --- | --- |

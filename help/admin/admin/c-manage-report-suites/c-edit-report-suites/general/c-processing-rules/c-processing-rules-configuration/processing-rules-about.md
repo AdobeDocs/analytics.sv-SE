@@ -1,21 +1,22 @@
 ---
 description: Med bearbetningsregler kan du ändra data baserat på definierade villkor. När attribut eller värden matchar definierade villkor kan värden anges och tas bort, och händelser kan anges.
 subtopic: Processing rules
-title: Så fungerar behandlingsregler
+title: Hur bearbetningsregler fungerar
 feature: Processing Rules
+role: Admin
 exl-id: 9d2d9f2d-1e16-486f-9191-2c43776374da
-source-git-commit: a17297af84e1f5e7fe61f886eb3906c462229087
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 2%
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
-# Så fungerar behandlingsregler
+# Hur bearbetningsregler fungerar
 
 Med bearbetningsregler kan du ändra data baserat på definierade villkor. När attribut eller värden matchar definierade villkor kan värden anges och tas bort, och händelser kan anges.
 
-Bearbetningsregler tillämpas på data när de samlas in, och regler tillämpas på alla data som kommer via AppMeasurement-biblioteken och via API:t för datainmatning. Bearbetningsreglerna gäller även för den fullständiga datakällan och loggdatakällan. Dessa källor innehåller data som representerar *`hit`* eller en åtgärd som en användare utför. Bearbetningsreglerna gäller inte för andra datakällor.
+Bearbetningsregler tillämpas på data när de samlas in, och regler tillämpas på alla data som kommer via AppMeasurementets bibliotek och via API:t för datainmatning. Bearbetningsreglerna gäller även för den fullständiga datakällan och loggdatakällan. Dessa källor innehåller data som representerar *`hit`* eller en åtgärd som en användare utför. Bearbetningsreglerna gäller inte för andra datakällor.
 
 ## Viktiga begrepp {#section_EB138775E7C64C74B0D1D3213F7A823C}
 
@@ -25,13 +26,13 @@ Följande tabell innehåller viktiga begrepp som du måste förstå när du anv�
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> <p>Koncept </p> </th> 
-   <th colname="col2" class="entry"> <p>Detaljer </p> </th> 
+   <th colname="col2" class="entry"> <p>Information </p> </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Reglerna gäller för en enda rapportserie. </p> </td> 
-   <td colname="col2"> <p> <a href="/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-copy-to-rs.md"> Kopiera behandlingsregler till en annan rapportsvit </a> </p> </td> 
+   <td colname="col2"> <p> <a href="/help/admin/admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/c-processing-rules-configuration/t-processing-rules-copy-to-rs.md"> Kopiera bearbetningsregler till en annan rapportserie </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bearbetningsreglerna tillämpas i den ordning som anges. </p> </td> 
@@ -55,14 +56,14 @@ Följande tabell innehåller viktiga begrepp som du måste förstå när du anv�
   </tr> 
   <tr> 
    <td colname="col1"> <p>Produktsträngen, refereraren och användaragenten kan inte ändras. </p> </td> 
-   <td colname="col2"> <p>Referent och användaragent är skrivskyddade. Produktsträngen är inte tillgänglig. </p> </td> 
+   <td colname="col2"> <p>Referenten och användaragenten är skrivskyddade. Produktsträngen är inte tillgänglig. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Attribut och klassificeringar för mobila enheter är inte tillgängliga. </p> </td> 
    <td colname="col2"> <p>Sökning efter mobila enheter sker innan regler bearbetas, men attribut är inte tillgängliga i bearbetningsregler. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Frågesträngsparametrar kan inte läsas utöver de första 255 tecknen i en URL om du kör JavaScript AppMeasurement H.25.2 eller tidigare. JavaScript AppMeasurement H.25.3 och senare innehåller den fullständiga URL:en inklusive alla frågesträngsparametrar för bearbetningsregler. </p> </td> 
+   <td colname="col1"> <p>Frågesträngsparametrar kan inte läsas utöver de första 255 tecknen i en URL om du kör JavaScript-AppMeasurementet H.25.2 eller tidigare. JavaScript-AppMeasurementet H.25.3 och senare innehåller den fullständiga URL:en inklusive alla frågesträngsparametrar för bearbetningsregler. </p> </td> 
    <td colname="col2"> <p>Uppgradera till H.25.3 eller senare, eller läs frågesträngsparametrar från långa URL:er på klientsidan och lagra värden i kontextdatavariabler. </p> </td> 
   </tr> 
   <tr> 
@@ -98,7 +99,7 @@ Villkor kontrollerar sidvariabler för ett matchande värde eller om ett värde 
 
 Du kan skapa en regel utan villkor som alltid utför definierade åtgärder.
 
-Variabler kontrolleras inte automatiskt för värden innan åtgärder utförs. Prop1 innehåller till exempel värdet &quot;någonting&quot; och eVar1 är tom. Om du anger Prop1 som lika med eVar1 kommer båda värdena att vara tomma. Om du behöver undvika det här lägger du till ett villkor för att kontrollera om ett värde finns.
+Variabler kontrolleras inte automatiskt för värden innan åtgärder utförs. Prop1 innehåller till exempel värdet &quot;något&quot; och eVar1 är tom. Om du anger Prop1 som lika med eVar1 kommer båda värdena att vara tomma. Om du behöver undvika det här lägger du till ett villkor för att kontrollera om det finns ett värde.
 
 ## Bearbetar regelåtgärder {#section_E2285C9D008442C7BF136E52A9A4CC06}
 

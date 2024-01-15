@@ -3,11 +3,12 @@ description: På sidan Klassificeringshierarkier kan du definiera klassificering
 subtopic: Classifications
 title: Klassificeringshierarkier
 feature: Classifications
+role: Admin
 exl-id: 19907e24-9624-4d30-a6c2-b5f8c9e9eb24
-source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -31,8 +32,8 @@ Skapa klassificeringarna innan du lägger till dem i en hierarki.
 
 ## Skapa en klassificeringshierarki {#task_3805EBCACC844261A7125D63D772CCDF}
 
-1. Klicka på **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
-1. Välja en rapportsvit.
+1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
+1. Välj en rapportsvit.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Conversion]** > **[!UICONTROL Classification Hierarchies]**.
 1. Från **[!UICONTROL Build Hierarchy For]** väljer du variabeln där du vill skapa en klassificeringshierarki.
 

@@ -2,11 +2,12 @@
 description: Det här dokumentet beskriver vad du måste göra i Adobe Analytics för att stöda de registrerades åtkomst- och borttagningsrättigheter enligt GDPR.
 title: Adobe Analytics och GDPR
 feature: Data Governance
+role: Admin
 exl-id: 4cb19f63-119f-4853-84bf-5c1e8f9af9f0
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 96%
+source-wordcount: '581'
+ht-degree: 86%
 
 ---
 
@@ -28,13 +29,13 @@ Som personuppgiftsansvarig bestämmer du vilka personuppgifter Adobe behandlar o
 
 ![](assets/privacy_ready.png)
 
-## Så hanterar Adobe GDPR-data {#section_A20BCC08A80B410D97601BFB1CAF83F1}
+## Hur Adobe hanterar GDPR-data {#section_A20BCC08A80B410D97601BFB1CAF83F1}
 
 Adobe Cloud Platform (ACP) är en integrerad lösning som kopplar samman ert varumärkes datastyrningsinfrastruktur med de Adobe-verktyg det använder för att skapa och hantera kundupplevelser. Funktionerna för datastyrning i Adobe Cloud Platform gör det möjligt att koppla policyn för datastyrning direkt till dataanvändningen.
 
 Bekanta dig med [hur Adobe Analytics hanterar GDPR](https://www.adobe.com/data-analytics-cloud/analytics/general-data-protection-regulation.html), som diskuterar steg för GDPR-beredskap och hur ni kan integrera med GDPR-API:t för Adobe Experience Cloud.
 
-## GDPR-beredskap och DINA Adobe Analytics-data {#section_9A47CDCD614C42238F6E05CFF0180195}
+## GDPR-beredskap och dina Adobe Analytics-data {#section_9A47CDCD614C42238F6E05CFF0180195}
 
 Adobe inser att du är mest bekant med anpassade data i dina rapportsviter och vi ger dig möjlighet att definiera inställningar och preferenser för datastyrning.
 
@@ -48,9 +49,9 @@ Mer information om hur du ställer in etiketterna finns i [Data i etikettrapport
 * Koppla ditt inloggningsföretag till en Experience Cloud-organisation, om det inte redan är det. Kontakta Adobes kundtjänst och se [Organisationer och kontolänkning.](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
 * Ange en policy för datalagring för varje rapportsvit så att GDPR-begäranden om borttagning och åtkomst kan hanteras.
 
-   >[!NOTE]
-   >
-   >Adobe Analytics kan inte hjälpa dig med att behandla begäranden till API:t för GDPR, d.v.s. att behandla de begäranden om åtkomst och borttagning som du får från dina slutanvändare, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta kontoteamet på Adobe för att ange din datalagringsperiod.
+  >[!NOTE]
+  >
+  >Adobe Analytics kan inte hjälpa dig med bearbetningen av begäranden till GDPR API, dvs. att bearbeta de begäranden om åtkomst och borttagning som du får från slutanvändarna, om datalagringsperioden inte har angetts i Adobe Analytics. Kontakta kontoteamet på Adobe för att ange din datalagringsperiod.
 
 * Kontrollera dina behörigheter: Om du vill använda gränssnittet för datahantering i Adobe Analytics måste du vara Adobe Analytics-administratör.
 

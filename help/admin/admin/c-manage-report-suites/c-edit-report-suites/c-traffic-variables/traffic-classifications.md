@@ -3,11 +3,12 @@ description: Trafikklassificeringar gör att du kan klassificera trafikvariabler
 subtopic: Classifications
 title: Trafikklassificeringar
 feature: Admin Tools
+role: Admin
 exl-id: 320d7dcb-7fb7-4360-96dd-d2d5bd0bfdd5
-source-git-commit: ce7f953b8f7f1f7d0616074454e4401937fcc0c7
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 7%
+ht-degree: 1%
 
 ---
 
@@ -33,8 +34,8 @@ t_classification_add_traffic.xml
 
 Så här lägger du till eller redigerar klassificeringar för de valda rapportsviterna:
 
-1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** i rubriken Suite.
-1. Välja en rapportsvit.
+1. Klicka **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]** i Suite-rubriken.
+1. Välj en rapportsvit.
 1. I **[!UICONTROL Select Classification Type]** väljer du variabeln där du vill lägga till en klassificering.
 1. Klicka på **[!UICONTROL Edit Settings]** > **[!UICONTROL Traffic]** > **[!UICONTROL Traffic Classifications]**.
 

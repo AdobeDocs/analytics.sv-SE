@@ -1,13 +1,13 @@
 ---
 description: Visar hur du tar bort eller ignorerar en händelse från en träff med bearbetningsregel, utan att implementera en ändring på sidan.
 title: Ta bort en händelse från en träff
-uuid: 4c481aa2-d074-4abe-b472-9f685bb1f4a3
+role: Admin
 exl-id: 5dd68eb4-cc51-48b1-a009-a44e425e2d4e
 feature: Admin Tools
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 18%
+source-wordcount: '96'
+ht-degree: 0%
 
 ---
 

@@ -1,17 +1,18 @@
 ---
 description: Bearbetningsregler anges för rapportsviter.
 subtopic: Processing rules
-title: Skapa behandlingsregler
+title: Skapa bearbetningsregler
 feature: Processing Rules
+role: Admin
 exl-id: e28380da-e499-4b73-8ae8-b62f847d10e1
-source-git-commit: 35e7c8bccb8524fa5e87cae223f0854956c7528a
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 
-# Skapa behandlingsregler
+# Skapa bearbetningsregler
 
 Bearbetningsregler anges för rapportsviter.
 

@@ -1,24 +1,25 @@
 ---
 description: Bearbetningsregler förenklar datainsamling och hantering av innehåll när det skickas till rapportering.
 subtopic: Processing rules
-title: Översikt över behandlingsregler
+title: Översikt över bearbetningsregler
 feature: Processing Rules
+role: Admin
 exl-id: 0244aba2-4345-463a-8528-d4dcd2f872ff
-source-git-commit: 71ff81a0ae67c6f4cc9a8df567e27223cc63f18c
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 2%
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
-# Översikt över behandlingsregler
+# Översikt över bearbetningsregler
 
 Bearbetningsregler förenklar datainsamling och hantering av innehåll när det skickas till rapportering. Bearbetningsreglerna förenklar interaktionen med IT-grupper och webbutvecklare genom ett gränssnitt för att
 
 * Ange en händelse på produktöversiktssidan
 * Fyll i kampanj med en frågesträngsparameter
 * Sammanfoga kategori- och sidnamn i ett utkast för enklare rapportering
-* Kopiera en eVar till en svällning för att se banor
+* Kopiera en eVar till en säljare för att se banor
 * Rensa felstavade webbplatsavsnitt
 * Hämta interna söktermer eller ett kampanj-ID från frågesträngen till en eVar
 
@@ -28,11 +29,11 @@ Bearbetningsregler förenklar datainsamling och hantering av innehåll när det 
 
 Administratörer har behörighet att använda bearbetningsregler **som standard**. Administratörer kan även ge dessa rättigheter till icke-administratörer via gränssnittet Administratörsverktyg. Instruktioner finns i []
 
-![Behandlingsregler](assets/processing-rules.png)
+![Bearbetar regler](assets/processing-rules.png)
 
 ## Använd kontextdata för att förenkla datainsamling {#section_09EEA03612D24C15839631AA9E9668D8}
 
-Sammanhangsdatavariabler är en typ av variabler som bara är tillgängliga för bearbetning av regler. Om du vill använda kontextdatavariabler skickas nyckeldatapar/värdepar in av implementeringen, och bearbetningsregler används för att hämta dessa värden i vanliga Analytics-variabler. Detta frigör programmerare från att förstå exakt vilka prop och/eller eVar som ska innehålla vilket värde.
+Sammanhangsdatavariabler är en typ av variabler som bara är tillgängliga för bearbetning av regler. Om du vill använda kontextdatavariabler skickas nyckeldatapar/värdepar in av implementeringen, och bearbetningsregler används för att hämta dessa värden i vanliga Analytics-variabler. Detta frigör programmerare från att förstå exakt vilket säljprojekt och/eller vilken eVar som ska innehålla vilket värde.
 
 ```js
 s.contextData['author'] = "Robert Munch";

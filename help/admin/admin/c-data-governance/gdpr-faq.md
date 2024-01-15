@@ -2,11 +2,12 @@
 description: Vanliga frågor om datahantering i Adobe Analytics
 title: Frågor och svar om datahantering
 feature: Data Governance
+role: Admin
 exl-id: 57399c1b-cf08-405b-8c1b-9d23e4c38716
-source-git-commit: 34ba0e09cd909951a777b0ad3da080958633f97e
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 47%
+source-wordcount: '2042'
+ht-degree: 38%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 47%
 
 +++ **Hur stöder Adobe Analytics åtkomst- och borttagningsbegäranden för slutanvändare (registrerade) som validerats av kunder (personuppgiftsansvariga)?**
 
-När olika dataskyddsregler (GDPR, CCPA) börjar gälla kommer Adobe Analytics att stödja behandling av verifierade begäranden som skickas av datakontrollanter till API:t för dataintegritet i Experience Cloud för att möjliggöra en mer automatiserad process. Adobes API för datasekretess är utformat för att underlätta behandling av enskilda begäranden om rättigheter (t.ex. begäranden om åtkomst och borttagning) för våra kunders data som lagras i Adobe Experience Cloud-lösningar. Den är flexibel och skalbar efter antalet dataåtkomstbegäranden och borttagningsbegäranden som ditt företag får från registrerade.
+När olika dataskyddsregler (GDPR, CCPA) börjar gälla kommer Adobe Analytics att stödja behandling av verifierade begäranden som skickas av datakontrollanter till API:t för dataintegritet i Experience Cloud för att möjliggöra en mer automatiserad process. Adobes API för datasekretess är utformat för att underlätta behandling av enskilda begäranden om rättigheter (t.ex. begäranden om åtkomst och borttagning) för våra kunders data som lagras i Adobe Experience Cloud-lösningar. Det är flexibelt och skalas efter antalet dataåtkomstbegäranden och borttagningsbegäranden som ditt företag får från registrerade.
 
 Privacy Services-API:t gör det även möjligt för kunden att kontrollera status för hur förfrågningar om dataåtkomst och -borttagning uppfylls. Mer information finns i [Privacy Services-API](https://developer.adobe.com/experience-platform-apis/references/privacy-service/) dokumentation.
 
@@ -22,15 +23,15 @@ Privacy Services-API:t gör det även möjligt för kunden att kontrollera statu
 
 +++ **Vem ansvarar för att ta emot, godkänna och uppfylla begäranden om datasekretess från slutanvändare?**
 
-Datakontrollanten har det enda ansvaret för att ta emot och godkänna begäranden. Datakontrollen validerar den registrerade personens identitet och uppfyller sedan begäran. En del av detta ansvar kan inbegripa att kontakta Adobe med de registrerade personernas ID:n som kan kopplas till data som lagras i Adobe Analytics.
+Datakontrollanten har det enda ansvaret för att ta emot och godkänna begäranden. Datakontrollen validerar den registrerade personens identitet och uppfyller sedan begäran. En del av detta ansvar kan inbegripa att kontakta Adobe med de registrerade personernas ID som kan kopplas till data som lagras i Adobe Analytics.
 
-Som databehandlare måste Adobe ge styrenheten rimlig hjälp att behandla verifierade förfrågningar inom en godtagbar tidsperiod.
+Som databehandlare måste Adobe ge styrenheten rimlig hjälp att behandla verifierade förfrågningar inom en acceptabel tidsperiod.
 
 +++
 
 +++ **Hur får Adobe-kunder (personuppgiftsansvariga) reda på vilka begäranden om datasekretess som mappas till vilka ID:n i Adobe Analytics för datasekretess?**
 
-Datakontrollanterna avgör hur identiteten för förfrågningar från de registrerade ska lösas. Överväg att distribuera  Adobes hämtningstagg för datasekretess-ID. Utvecklingsteamen sparar tid genom att använda vår hämtningstagg för dataskydd för att hämta användar-ID:n (cookie-ID:n). De kan sedan använda vårt API för datasekretess för att skicka dessa användar-ID:n till de relevanta lösningarna i Adobe Experience Cloud för behandling av förfrågningar om datasekretess. API:t för datasekretess stöder ett brett urval av kund-ID:n för flera Adobe-lösningar.
+Datakontrollanterna avgör hur identiteten för förfrågningar från de registrerade ska lösas. Överväg att distribuera taggen för hämtning av Adobe-data-ID. Utvecklingsteamen sparar tid genom att använda vår hämtningstagg för dataskydd för att hämta användar-ID:n (cookie-ID:n). De kan sedan använda vårt API för datasekretess för att skicka dessa användar-ID:n till de relevanta lösningarna i Adobe Experience Cloud för behandling av förfrågningar om dataskydd. API:t för datasekretess har stöd för ett brett urval av kund-ID:n för flera Adobe-lösningar.
 
 Om en registrerade skickar en begäran tillsammans med en identifierare (anpassad variabel - prop eller eVar) skannar Adobe Analytics igenom hela den lagrade historiken för de data som samlats in för den angivna identifieraren. Mer information om hur du konfigurerar anpassade ID:n som lagras i skissbilder eller eVars finns i [Analysdokumentation om namnutrymmen](/help/admin/admin/c-data-governance/data-labeling/gdpr-namespaces.md).
 
@@ -46,9 +47,9 @@ Verktyget för datastyrning innehåller följande dataetiketter:
 
 * **Känsliga dataetiketter**: Används för att klassificera data som data som kan definieras som känsliga enligt tillämplig lag. (Inga, S1, S2) Observera att användningen av känsliga data i Adobe Analytics i dagsläget är generellt sett förbjuden, med undantag för exakta geolokaliseringsdata som erhållits på korrekt sätt enligt tillämplig lag, och som kan anses vara känsliga data i vissa jurisdiktioner.
 
-* **Dataetiketter för dataintegritet**: Används för att definiera de fält som kan innehålla personliga identifierare för användning i datasekretessbegäranden eller som ska tas bort som en del av en begäran om borttagning av dataintegritet. Dessa etiketter kan i vissa fall överlappa etiketterna Identitet och Känsliga data.
+* **Dataetiketter för dataintegritet**: Används för att definiera de fält som kan innehålla personliga identifierare för användning i förfrågningar om dataintegritet eller som ska tas bort som en del av en begäran om borttagning av dataintegritet. Dessa etiketter kan i vissa fall överlappa etiketterna Identitet och Känsliga data.
 
-Mer information om etiketter för datastyrning finns i [ Datasekretessetiketter för analysvariabler](/help/admin/admin/c-data-governance/data-labeling/gdpr-labels.md).
+Mer information om etiketter för datastyrning finns i [Dataintegritetsetiketter för analysvariabler](/help/admin/admin/c-data-governance/data-labeling/gdpr-labels.md).
 
 +++
 
@@ -62,19 +63,19 @@ Det finns dock några sätt att testa din dataintegritet innan du kan använda d
 
 * Ett alternativ är att skapa en separat Experience Cloud-organisation som bara innehåller testrapportsviter. Använd sedan den här Experience Cloud-organisationen för att testa ditt test av datasekretess och din normala Experience Cloud-organisation för faktisk behandling av datasekretess.
 
-* Du kan även tilldela olika namnutrymmen till ID:n i testrapportsviterna jämfört med dem i produktionsrapportsviterna. Du kan till exempel infoga prefix för varje namnutrymme med ”qa-” i testrapportsviterna. När du skickar in begäranden om datasekretess med endast namnutrymmen med qa-prefixet, kommer dessa begäranden endast att köras mot testrapportsviterna. När du senare skickar in begäranden utan qa-prefix gäller de även för dina produktionsrapportsviter. **Detta är det rekommenderade tillvägagångssättet, såvida du inte använder namnutrymmena visitorId, AID, ECID eller customVisitorId. Dessa namnutrymmen är hårdkodade och du kan inte ange alternativa namn för dem i testrapportsviterna.**
+* Ett annat alternativ är att tilldela olika namnutrymmen till ID:n i testrapportsviterna jämfört med dem i produktionsrapportsviterna. Du kan till exempel infoga prefix för varje namnutrymme med ”qa-” i testrapportsviterna. När du skickar in begäranden om datasekretess med endast namnutrymmen med qa-prefixet, kommer dessa begäranden endast att köras mot testrapportsviterna. När du senare skickar in begäranden utan qa-prefix gäller de även för dina produktionsrapportsviter. **Detta är det rekommenderade tillvägagångssättet, såvida du inte använder namnutrymmena visitorId, AID, ECID eller customVisitorId. Dessa namnutrymmen är hårdkodade och du kan inte ange alternativa namn för dem i testrapportsviterna.**
 
 +++
 
 +++ **Hur blir jag redo för datasekretess med Adobe Analytics?**
 
-En stegvis genomgång för att bli redo för datasekretessregler finns i [ Adobe Analytics arbetsflöde för datasekretess](/help/admin/admin/c-data-governance/an-gdpr-workflow.md).
+En steg-för-steg-genomgång för att förbereda dig för datasekretessregler finns på [Adobe Analytics arbetsflöde för datasekretess](/help/admin/admin/c-data-governance/an-gdpr-workflow.md).
 
 +++
 
 +++ **Hur ska Data Controllers tänka på samtycke när det gäller användarinteraktion?**
 
-GDPR och CCPA är goda möjligheter att ompröva er strategi och praxis för samtyckeshantering. Detta innefattar att avgöra när samtycke behövs och att tänka på användarens värdeförslag. Överväg värdeförslaget i fråga om konsumentsekretess, vilket kan bidra till ökad konvertering och lojalitet. Utrymmet för hantering av samtycke (t.ex. verktyg, standarder, bästa praxis) utvecklas snabbt och är ett område som ska observeras. För att minimera påverkan på användarinteraktionen bör kontrollanter arbeta med leverantörer på detta område samt med sina juridiska rådgivare för att se till att de följer nya lagar och riktlinjer om samtycke och cookies. Det är en god strategi att överväga ”upplevelsesekretess” genom att använda en varumärkesupplevelse som är relevant för sammanhanget och som fastställer värdeförslaget i dina datainsamlingsaktiviteter.
+GDPR och CCPA är goda möjligheter att ompröva er strategi och praxis för samtyckeshantering. Detta innefattar att avgöra när samtycke krävs och att tänka på användarens värdeförslag. Ta en titt på det värdeskapande som konsumentsekretess innebär, vilket kan bidra till ökad konvertering och lojalitet. Utrymmet för hantering av samtycke (t.ex. verktyg, standarder, bästa praxis) utvecklas snabbt och är ett område som ska observeras. För att minimera påverkan på användarinteraktionen bör kontrollanter arbeta med leverantörer på detta område samt med sina juridiska rådgivare för att se till att de följer nya lagar och riktlinjer om samtycke och cookies. Det är en god strategi att överväga ”upplevelsesekretess” genom att använda en varumärkesupplevelse som är relevant för sammanhanget och som fastställer värdeförslaget i dina datainsamlingsaktiviteter.
 
 Som personuppgiftsansvarig ansvarar du för att få uttryckligt medgivande från dina registrerade innan du samlar in uppgifter om dem (eventuellt inklusive Adobe Analytics-data) och för att implementera en [avanmälningsmekanism](https://www.adobe.com/privacy/opt-out.html#customeruse) på din webbplats. På så sätt kan de registrerade avanmäla sig från framtida datainsamling från Adobe Experience Cloud.
 
@@ -94,7 +95,7 @@ Kunder kan begära att deras data raderas tidigare än 25 månader genom att rin
 
 +++
 
-+++ **Vilka sekretessöverväganden ska en personuppgiftsansvarig ta hänsyn till när personuppgifter exporteras från Adobe Analytics?**
++++ **Vilka sekretessöverväganden ska ett Data Controller-konto hantera när personuppgifter exporteras från Adobe Analytics?**
 
 Om en kund använder Adobe Analytics dataflöden för att exportera data från Analytics till sitt datalager eller till andra system utanför Adobe, är det kundens (den personuppgiftsansvariges) ansvar att se till att borttagningsbegäranden tillämpas på dessa data. Detta gäller även för lokala implementeringar av Adobe Data Workbench, där en pågående Adobe Analytics-datafeed fyller Datans Workbench data. Adobe kan tillhandahålla verktyg som gör det enklare att hitta och ta bort poster från vissa typer av dataflöden, inklusive de som används för Data Workbench, men det är fortfarande kundens (den personuppgiftsansvarige) ansvar att se till att data tas bort i enlighet med deras egna, interna policyer för datalagring och radering.
 
@@ -104,9 +105,9 @@ Ta även hänsyn till fall där medarbetarna har laddat ned Adobe Analytics-rapp
 
 +++ **Vissa data som vi inte skulle samla in skickades av misstag till Adobe Analytics. Kan vi använda API:t för datasekretess för att rensa upp dessa data?**
 
-The [API för Privacy Service](https://developer.adobe.com/experience-platform-apis/references/privacy-service/) har tillhandahållits för att hjälpa er att uppfylla förfrågningar om dataintegritet, som är tidskänsliga. Adobe stöder inte att detta API används för andra syften och det kan påverka Adobes förmåga att tillhandahålla användarinitierade begäranden om datasekretess i god tid för andra Adobe-kunder.
+The [API för Privacy Service](https://developer.adobe.com/experience-platform-apis/references/privacy-service/) har tillhandahållits för att hjälpa er att uppfylla förfrågningar om dataintegritet, som är tidskänsliga. Adobe stöder inte att detta API används för andra syften och kan påverka Adobe förmåga att tillhandahålla välprioriterade, användarinitierade förfrågningar om dataskydd för andra Adobe-kunder.
 
-Vi ber dig att inte använda API:t för datasekretess för andra syften, som att rensa data som av misstag har skickats in till stora grupper av besökare. Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för datasekretess inte är lämpligt för detta ändamål.
+Vi ber dig att inte använda API:t för datasekretess för andra syften, som att radera data som av misstag har skickats in över stora grupper av besökare. Du ska också vara medveten om att alla besökare som har en träff som har tagits bort (uppdaterats eller anonymiserats) efter en borttagningsbegäran om datasekretess kommer att få sin tillståndsinformation återställd. Nästa gång besökaren återvänder till webbplatsen blir han eller hon en ny besökare. All eVar-attribuering startar på nytt, liksom information som besöksnummer, referenter, första besökta sidan, o.s.v. Denna bieffekt är inte önskvärd i situationer där du vill ta bort datafält och är en anledning till varför API:t för datasekretess inte är lämpligt för detta ändamål.
 
 Kontakta ert Adobe-kontoteam för att samordna med vårt konsultteam för ingenjörsarkitekter för att få mer information och möjlighet att åtgärda eventuella PII- eller dataproblem.
 

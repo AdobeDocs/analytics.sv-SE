@@ -2,11 +2,12 @@
 description: Med Custom Insight Traffic Variables (eller props) kan du korrelera anpassade data med specifika trafikrelaterade händelser. Propvariablerna är inbäddade i implementeringskoden på varje sida på webbplatsen.
 title: Översikt över trafikvariabeln (prop)
 feature: Admin Tools
+role: Admin
 exl-id: b05dbd33-b298-41a0-9474-e015ba5bc23c
-source-git-commit: 507e669f798cf8a451f0383eb8bcb18b1f793e35
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 

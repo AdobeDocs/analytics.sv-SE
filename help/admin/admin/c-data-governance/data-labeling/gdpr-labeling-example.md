@@ -2,11 +2,12 @@
 description: Visar exempel på hur du kan etikettera data för träffdata, åtkomstbegäranden och borttagningsbegäranden
 title: Exempel på etiketter
 feature: Data Governance
+role: Admin
 exl-id: 9bea8636-c79c-4998-8952-7c66d31226e3
-source-git-commit: c8e3d9bd40a427387da746c084188b5d13f45bcd
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 62%
+source-wordcount: '862'
+ht-degree: 54%
 
 ---
 
@@ -20,17 +21,17 @@ Anta att du har följande träffdata:
 * Den andra raden är namnet på variabeln. Om den har en ID-etikett innehåller den det tilldelade namnutrymmet inom parentes.
 * Träffdata börjar på den tredje raden.
 
-| Etiketter | I2<br>ID-PERSON<br>DEL-PERSON<br>ACC-PERSON | I2<br>ID-DEVICE<br>DEL-DEVICE<br>ACC-ALL | I2<br>DEL-PERSON<br>ACC-PERSON | I2<br>DEL-DEVICE<br>DEL-PERSON<br>ACC-ALL | I2<br>ID-DEVICE<br>DEL-DEVICE<br>ACC-ALL |
+| Etiketter | I2 <br> ID-PERSON <br> DEL-PERSON <br> ACC-PERSON | I2 <br> ID-ENHET <br> DEL-DEVICE <br> ACC-ALL | I2 <br> DEL-PERSON <br> ACC-PERSON | I2 <br> DEL-DEVICE <br> DEL-PERSON <br> ACC-ALL | I2 <br> ID-ENHET <br> DEL-DEVICE <br> ACC-ALL |
 |---|---|---|---|---|---|
-| **Variabelnamn** <br> **(Namespace)** | **MyProp1** <br> **(användare)** | **Besökar-ID** <br> **(AAID)** | **MyEvar1** | **MyEvar2** | **MyEvar3** <br> **(xyz)** |
+| **Variabelnamn** <br> **(Namespace)** | **MyProp1** <br> **(användare)** | **Besökar-ID** <br> **(STÖD)** | **MyEvar1** | **MyEvar2** | **MyEvar3** <br> **(xyz)** |
 | Träffdata | Mary | 77 | A | M | X |
-|  | Mary | 88 | B | N | Y |
-|  | Mary | 99 | C | O | Z |
-|  | John | 77 | D | P | W |
-|  | John | 88 | E | N | U |
-|  | John | 44 | F | Q | V |
-|  | John | 55 | G | R | X |
-|  | Alice | 66 | A | N | Z |
+| | Mary | 88 | B | N | Y |
+| | Mary | 99 | C | O | Z |
+| | John | 77 | D | P | W |
+| | John | 88 | E | N | U |
+| | John | 44 | F | Q | V |
+| | John | 55 | G | R | X |
+| | Alice | 66 | A | N | Z |
 
 ## Exempel på åtkomstbegäran {#access}
 
@@ -40,7 +41,7 @@ Om jag skickar en åtkomstbegäran innehåller den sammanfattande filen de värd
   <tr>
     <th colspan="2" style="text-align:center">API-värden</th>
     <th rowspan="2">Returnerad<br>Filtyp</th>
-    <th colspan="5" style="text-align:center">Data i sammanfattningsåtkomstfil</th>
+    <th colspan="5" style="text-align:center">Data i sammanfattad åtkomstfil</th>
   </tr>
   <tr>
     <th>Namnutrymme/ID</th>
@@ -151,7 +152,7 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
   </tr>
   <tr>
     <th>MyProp1</th>
-    <th>AAID</th>
+    <th>STÖD</th>
     <th>MyEvar1</th>
     <th>MyEvar2</th>
     <th>MyEvar3</th>
@@ -216,15 +217,15 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 >[!NOTE]
 >
->Endast celler på rader som innehåller AAID = 77 och en DEL-DEVICE-etikett påverkas.
+>Endast celler på rader som innehåller AID = 77 och en DEL-DEVICE-etikett påverkas.
 
 <table>
   <tr>
-    <th colspan="5" style="text-align:center">användare=Mary<br>expandIDs=falskt</th>
+    <th colspan="5" style="text-align:center">user=Mary <br> expandIDs=false</th>
   </tr>
   <tr>
     <th>MyProp1</th>
-    <th>AAID</th>
+    <th>STÖD</th>
     <th>MyEvar1</th>
     <th>MyEvar2</th>
     <th>MyEvar3</th>
@@ -289,15 +290,15 @@ Om en borttagningsbegäran använder API-värdena i den första raden i tabellen
 
 >[!NOTE]
 >
->Endast celler på rader som innehåller användare=Mary och etiketten DEL-PERSON påverkas. I praktiken är dessutom variabeln som innehåller A_ID antagligen en prop eller en eVar. Dess ersättningsvärde skulle vara en sträng som börjar med&quot;Sekretess-&quot;, följt av ett slumpmässigt tal (GUID), i stället för att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
+>Endast celler på rader som innehåller user=Mary och etiketten DEL-PERSON påverkas. I praktiken är variabeln som innehåller A_ID antagligen en prop eller en eVar. Dess ersättningsvärde skulle vara en sträng som börjar med&quot;Sekretess-&quot;, följt av ett slumpmässigt tal (GUID), i stället för att ersätta det numeriska värdet med ett annat slumpmässigt numeriskt värde.
 
 <table>
   <tr>
-    <th colspan="5" style="text-align:center">användare=Mary<br>expandIDs=sant</th>
+    <th colspan="5" style="text-align:center">user=Mary <br> expandIDs=true</th>
   </tr>
   <tr>
     <th>MyProp1</th>
-    <th>AAID</th>
+    <th>STÖD</th>
     <th>MyEvar1</th>
     <th>MyEvar2</th>
     <th>MyEvar3</th>
@@ -365,6 +366,6 @@ Observera följande:
 * Celler på rader som innehåller `user=Mary` och `DEL-PERSON` etiketten påverkas.
 * På grund av ID-expansion finns celler på rader som innehåller `AAID=77`, `AAID=88` eller `AAID=99` (som är AAID-värden på rader som innehåller `user=Mary`) och `DEL-DEVICE` etiketten påverkas. Detta inkluderar celler med `DEL-DEVICE` etikett på rader där `user=Mary`. Detta orsakar celler i raderna 4 och 5 (samt raderna 1-3) med `DEL-DEVICE` etiketter (AAID, MyEvar2 och MyEvar3) som ska döljas.
 * Inställningen expandID utökas inte till anropet för att inkludera värden som finns i MyEvar3 (`X`, `Y` och `Z`), som har en ID-DEVICE-etikett, när `user=Mary`. Expanderings-ID:n utökas endast så att de inkluderar besökar-ID:n (AAID:n i det här exemplet, men även ECID:n) på rader där `user=Mary`. De två sista raderna som innehåller MyEvar3-värden för `X` och `Z` påverkas inte.
-* `MyEvar2` i den fjärde och femte raden uppdateras eftersom dessa rader innehåller samma ID-värden för besökare (`77` och `88`) som på den första och andra raden. Detta innebär att ID-expansion inkluderar dem för borttagning på enhetsnivå.
+* `MyEvar2` i den fjärde och femte raden uppdateras eftersom de här raderna innehåller samma ID-värden för besökare (`77` och `88`) som på den första och andra raden. Detta resulterar i att ID-expansion inkluderar dem för borttagning på enhetsnivå.
 * Värdena för `MyEvar2` i rader två och fem matchar både före och efter borttagningen. Efter borttagningen matchar de dock inte längre värdet `N` som inträffar i den sista raden, eftersom raden inte uppdaterades som en del av borttagningsbegäran.
 * `MyEvar3` beter sig på ett helt annorlunda än vad det gjorde utan ID-expansion, eftersom ingen `ID-DEVICES` matchade utan ID-expansion. Nu `AAID` matchar de första fem raderna.

@@ -2,12 +2,12 @@
 description: På sidan Sökmetoder visas hur olika sökmetoder rapporterar om konverteringsframgångar på din webbplats. Om en sökmotor till exempel refererar till en besökare till webbplatsen som gör ett köp, anger sökmetoderna hur sökmotorn får krediter för hänskjutningen.
 title: Sökmetoder
 feature: Admin Tools
-uuid: 1053993e-7fc4-4874-84fa-367ecdcd7b45
+role: Admin
 exl-id: 58c4510c-2343-4b0a-9c09-5583f6d4250f
-source-git-commit: 21029930b5cae6acb6bc6a59836ddc1ca33cb27e
+source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 2%
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ På sidan Sökmetoder visas hur olika sökmetoder rapporterar om konverteringsfr
    <td colname="col1"> Förfaller efter </td> 
    <td colname="col2"> 
     <ul id="ul_95EB224CAD164E9997B148E08AFA5F9B"> 
-     <li id="li_C240460C21E14AA498D2EA62B9354710"> <span class="uicontrol"> Besök: </span> Efter en angiven inaktivitetsperiod. vanligen cirka 30 minuter. </li> 
+     <li id="li_C240460C21E14AA498D2EA62B9354710"> <span class="uicontrol"> Besök: </span> Efter en angiven inaktivitetsperiod, vanligen cirka 30 minuter. </li> 
      <li id="li_A3AE5438919E44B68DF99BEEA60C44EE"> <span class="uicontrol"> Sidvy: </span> Så snart en sida på webbplatsen öppnas. </li> 
      <li id="li_D5E20FEF313E4C5B99E7097CA175761A"> <span class="uicontrol"> Minut: </span> Efter en minuts inaktivitet. </li> 
      <li id="li_7315AA3EDDBB47A2BEA3C173881378A1"> <span class="uicontrol"> Köp: </span> Vid inköpstillfället. </li> 
