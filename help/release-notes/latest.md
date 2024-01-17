@@ -3,41 +3,49 @@ title: Aktuella versionsinformation för Adobe Analytics
 description: Visa den aktuella versionsinformationen för Adobe Analytics
 feature: Release Notes
 exl-id: 97d16d5c-a8b3-48f3-8acb-96033cc691dc
-source-git-commit: baac0c0384b714cf2ca536149ca10eec3a7065ad
+source-git-commit: c3f59a07d51f5e6a73fa87aed573450c133d5bd6
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '1104'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Adobe Analytics (januari 2024)
 
-**Senaste uppdatering**: 8 januari 2024
+**Senaste uppdatering**: 10 januari 2024
 
-Versionsanteckningarna gäller frisläppningsperioden i januari 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
+Versionsinformationen omfattar releaseperioden januari 2024-13 februari 2024. Adobe Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md) vilket ger en mer skalbar, stegvis metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
 ## Nya funktioner eller förbättringar {#features}
 
 | Funktion | Beskrivning | [Startar](releases.md) | [Allmän tillgänglighet](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Data Warehouse** | Följande förbättringar av Datan Warehouse är nu tillgängliga:<ul><li>När en begäran om Data Warehouse skapas kan användare nu göra begäranden tillgängliga för alla användare i organisationen genom att aktivera den nya växeln som kallas [!UICONTROL **Gör tillgänglig för användare i din organisation**].<p>Mer information finns i [Allmänna inställningar för begäran om Data Warehouse](/help/export/data-warehouse/create-request/dw-general-settings.md).</p></li><li>När systemadministratörer skapar eller hanterar destinationer för Data Warehouse-rapporter kan de nu visa konton och platser som har skapats av användare i organisationen genom att aktivera det anropade [!UICONTROL **Visa alla mål**].<p>Mer information finns i [Konfigurera ett rapportmål för en Data Warehouse-begäran](/help/export/data-warehouse/create-request/dw-request-report-destinations.md).</p></li> | Ej tillämpligt | 10 januari 2024 |
+| **Uppdateringar av visualisering av sammanfattning av nyckelmått** | När du använder visualisering av nyckelmätningssammanfattning kan datumintervallet för jämförelsen nu uppdateras automatiskt, beroende på om det alternativ för jämförelsedatumintervall du väljer är relativt till det primära datumintervallet eller fasta. [Läs mer](/help/analyze/analysis-workspace/visualizations/key-metric.md). | Ej tillämpligt | 17 januari 2024 |
 
 {style="table-layout:auto"}
 
 ## Korrigeringar i Adobe Analytics
 
-* De här ändringarna av analysbearbetnings- och rapporteringsmotorn kommer att driftsättas under den sista veckan i oktober: vi kommer att åtgärda ett problem där etiketterna för sid- eller länkdimensionerna felaktigt visades som `Unknown`. Innan korrigeringen `Unknown` etiketter kan ha visats felaktigt när ett sidnamn eller länknamn inte skickades in i en träff, vilket är standard till [!UICONTROL Page URL] och [!UICONTROL Link URL], respektive Dessa dimensioner har konfigurerats så att de inte är skiftlägeskänsliga. Med den här korrigeringen kommer rapporter som går framåt att vara korrekta. Men för rapporter om historiska data kan vissa rapportresultat fortfarande felaktigt märkas som `Unknown`. (AN-328030)
+* Åtgärdade följande klassificeringsproblem: AN-314821; AN-326839; AN-332079; AN-332704; AN-332812; AN-332902; AN-332 975; AN-33300; AN-333023; AN-333033; AN-333174; AN-333910; AN-334097; AN-3342 08; AN-334373; AN-334439; AN-334698; AN-334838; AN-334848; AN-334987; AN-33504 6; AN-335082; AN-335202; AN-335203; AN-335254; AN-335322; AN-335552; AN-33591; AN-335603; AN-335610; AN-335617; AN-335699; AN-335891; AN-335901; AN-336063; AN-336072; AN-336193; AN-336479; AN-336684; AN-336801; AN-337370; AN-337398
+* Åtgärdade följande fel i klassificeringsregelbyggaren: AN-332390; AN-332573; AN-332718; AN-332927; AN-333248; AN-333953; AN-33 4647; AN-334736; AN-334910; AN-335642; AN-335683; AN-335811; AN-336033; AN-336 569; AN-336852; AN-336875; AN-336902; AN-337190;
+* Åtgärdade följande A4T-problem: AN-334564; AN-336178;
+* Åtgärdade följande problem med användning av serveranrop: AN-332568; AN-333105; AN-333167; AN-333983; AN-334209; AN-334278
+* Åtgärdade följande problem med Datan Warehouse: AN-333010; AN-333076; AN-330227; AN-331580; AN-333350; AN-334291; AN-344 283; AN-334287; AN-334301; AN-334385; AN-334453; AN-334977; AN-335079; AN-3351 71; AN-335245; AN-335426; AN-335680; AN-335818; AN-336087; AN-337308;
+* Åtgärdade följande dataflödesproblem: AN-332241; AN-332366; AN-332617; AN-332654; AN-332702; AN-332723; AN-333 014; AN-333166; AN-334037; AN-334125; AN-334211; AN-334216; AN-334235; AN-3349 76; AN-335158; AN-335368; AN-335408; AN-335468; AN-335471; AN-335528; AN-33559 6; AN-335662; AN-335733; AN-335883; AN-335894; AN-335968; AN-336098; AN-336192; AN-336243; AN-336659; AN-336977; AN-337117; AN-337219; AN-337262; AN-337393; AN -337462; AN-337854
+* Följande Report Builder-problem har korrigerats: AN-335246; AN-336311;
+* Följande Analysis Workspace-problem har korrigerats: AN-323760; AN-324191; AN-324913; AN-330126; AN-332808; AN-333168; AN-3333 82; AN-334839; AN-336040; AN-337043;
 
 ### Andra korrigeringar
 
-AN-315676; AN-323398; AN-326209; AN-328178; AN-328261; AN-328395; AN-328671; AN-AN 329282; AN-329330; AN-329355; AN-329506; AN-329516; AN-329738; AN-329769; AN-3 29771; AN-329816; AN-329877; AN-329928; AN-329957; AN-329962; AN-329966; AN-333 0023; AN-330081; AN-330083; AN-330105; AN-330138; AN-330140; AN-330165; AN-3300 241; AN-330359; AN-330366; AN-330427; AN-330438; AN-330442; AN-330534; AN-3306 16; AN-330654; AN-330783; AN-330879; AN-330881; AN-330883; AN-330887; AN-33088 8; AN-330955; AN-330979; AN-331031; AN-331053; AN-331068; AN-331071; AN-331074; AN-331075; AN-331076; AN-331078; AN-331085; AN-331093; AN-331167; AN-33171; AN-4 331181; AN-331196; AN-331226; AN-331258; AN-331260; AN-331279; AN-331286; AN-3 31290; AN-331365; AN-331375; AN-331376; AN-331454; AN-331519; AN-331570; AN-33 1590; AN-331593; AN-331603; AN-331751; AN-331816; AN-331897; AN-331900; AN-331 906; AN-331926; AN-331929; AN-332031; AN-332067; AN-332101; AN-332114; AN-3321 56; AN-332201; AN-332225; AN-332253; AN-332277; AN-332361; AN-332370; AN-33238 6
+AN-323975; AN-325383; AN-325809; AN-326787; AN-331611; AN-331818; AN-332124; AN-3 332272; AN-332911; AN-333070; AN-33302; AN-333377; AN-333904; AN-333928; AN-33 33968; AN-334056; AN-334099; AN-334191; AN-334207; AN-334776; AN-335206; AN-333 5294; AN-335320; AN-335394; AN-335443; AN-335967; AN-336099; AN-337452; AN-377 463
 
 ## Viktiga meddelanden för Adobe Analytics-administratörer {#admin}
 
 | Meddelande | Datum tillagt eller uppdaterat | Beskrivning |
 | ----------- | ---------- | ---------- |
-| **Fullständig IP-krånglighet för Adobe Experience Edge-träffar** | 27 september 2023 | IP-infusation för träffar från Experience Edge kommer att uppdateras senare i oktober 2023. I april 2023 lade Experience Edge till möjligheten att dölja IP-adresser. På den tiden stödde Adobe Analytics endast delvis oreda av IP-adresser på grund av hur Analytics-processerna slår igenom från Experience Edge. När kunderna valde fullständig okunskap för Experience Edge fick Analytics bara delvis ofokuserade IP-adresser. När den här ändringen implementeras får Analytics den fullständigt dolda IP-adressen. |
-| **Adobe Analytics LiveStream - API:er för Analytics 2.0** | 27 september 2023 | Kunderna har nu tillgång till [Slutpunktshandbok för Adobe Analytics LiveStream](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/livestream/) i Adobe Analytics 2.0 API:er i stället på sin tidigare plats, med 1.4 API:er. Observera att kunder som använder Adobe I/O JWT-inloggningsuppgifter måste migrera till inloggningsuppgifterna för Adobe I/O OAuth Server-till-Server senast 1 januari 2025. (Se informationen i EOL-meddelanden nedan.) |
+| Tillägg för Adobe API-objektmedlemmar | 17 januari 2024 | Adobe kan lägga till valfria fråge- och svarsmedlemmar (namn/värde-par) i befintliga API-objekt utan föregående meddelande eller ändringar i versionshanteringen. Sådana tillägg bör vara fasta ändringar för implementeringen. Adobe rekommenderar att du läser API-dokumentationen för alla tredjepartsverktyg som du integrerar med våra API:er så att sådana tillägg ignoreras vid bearbetningen om de inte tolkas. Adobe tar inte bort parametrar eller lägger till obligatoriska parametrar utan att först skicka standardmeddelanden via versionsinformation. |
+| `getPageLoadTime` insticksprogrammet är inaktuellt | 10 januari 2024 | Detta plugin-program stöds inte längre. I koden används metoden performance.timing som (enligt MDN) har [inaktuell](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming). Arbetet med ett uppdaterat plugin-program har startats. |
 
 {style="table-layout:auto"}
 
@@ -45,10 +53,10 @@ AN-315676; AN-323398; AN-326209; AN-328178; AN-328261; AN-328395; AN-328671; AN-
 
 | EOL-produkt eller -funktion | Datum tillagt eller uppdaterat | Beskrivning |
 | --- | --- | --- |
-| **EOL för[!DNL Reports & Analytics]** | 13 december 2023 | Effektivt **17 januari 2024** kommer Adobe att upphöra med sin verksamhet [!DNL Reports & Analytics] och tillhörande rapporter och funktioner. Rapporterna, visualiseringar och underliggande teknik som ger kraft åt [!DNL Reports & Analytics] inte längre uppfyller Adobe teknikstandarder. Mest [!DNL Reports & Analytics] funktioner finns i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). Sedan Analysis Workspace släpptes 2015 har [!DNL Reports & Analytics] funktionaliteten och funktionerna har flyttats till Analysis Workspace och ett tröskelvärde för arbetsflödets paritet har uppnåtts. [Detta meddelande](https://spark.adobe.com/page/6WnF8JK6IRDhf/) förklarar processen för att avsluta livscykeln.<p>Den 31 december 2023 kommer många av de tillhörande funktionerna för rapporter och analys att avslutas, inklusive, men inte begränsat till, schemalagda rapporter, dataextrakt och DL-rapporter. Efter den 31 december 2023 skickas inga schemalagda rapporter längre. I **April 2023**, uppdaterades alla rapporter som skulle ha gått ut efter den 31 december 2023 automatiskt och upphörde att gälla den 31 december 2023. Dessutom kan du inte längre schemalägga framtida rapporter efter 31 december 2023. |
-| **EOL för [!UICONTROL Publishing Lists] funktion** | 13 december 2023 | Som en del av ledningscentralen för rapporter och analyser [!UICONTROL Publishing Lists] är avsedda att nå livets slut den **17 januari 2024**. Du kan inte skapa nya eller komma åt befintliga [!UICONTROL Publishing Lists] att skicka eller schemalägga [!UICONTROL Analysis Workspace] projekt. |
+| **EOL för[!DNL Reports & Analytics]** | 10 januari 2024 | Effektivt **17 januari 2024** kommer Adobe att upphöra med sin verksamhet [!DNL Reports & Analytics] och tillhörande rapporter och funktioner. Rapporterna, visualiseringar och underliggande teknik som ger kraft åt [!DNL Reports & Analytics] inte längre uppfyller Adobe teknikstandarder. Mest [!DNL Reports & Analytics] funktioner finns i [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). Sedan Analysis Workspace släpptes 2015 har [!DNL Reports & Analytics] funktionaliteten och funktionerna har flyttats till Analysis Workspace och ett tröskelvärde för arbetsflödets paritet har uppnåtts. [Detta meddelande](https://spark.adobe.com/page/6WnF8JK6IRDhf/) förklarar processen för att avsluta livscykeln.<p>Den 31 december 2023 kommer många av de tillhörande funktionerna för rapporter och analys att avslutas, inklusive, men inte begränsat till, schemalagda rapporter, dataextrakt och DL-rapporter. Efter den 31 december 2023 skickas inga schemalagda rapporter längre. I **April 2023**, uppdaterades alla rapporter som skulle ha gått ut efter den 31 december 2023 automatiskt och upphörde att gälla den 31 december 2023. Dessutom kan du inte längre schemalägga framtida rapporter efter 31 december 2023. |
+| **EOL för [!UICONTROL Publishing Lists] funktion** | 10 januari 2024 | Som en del av ledningscentralen för rapporter och analyser [!UICONTROL Publishing Lists] är avsedda att nå livets slut den **17 januari 2024**. Du kan inte skapa nya eller komma åt befintliga [!UICONTROL Publishing Lists] att skicka eller schemalägga [!UICONTROL Analysis Workspace] projekt. |
+| **EOL för Data Workbench** | 2 januari 2024 | Adobe-Data Workbench som upphör att vara listat, effektiv **31 december 2023**. Se [Datans Workbench meddelande om att livscykeln upphör](https://express.adobe.com/page/GSu6oKOD88GAj/) för mer information. Kontakta din organisations kontoansvarige på Adobe om du har frågor. |
 | **Migrering till autentiseringsuppgifter för Adobe I/O OAuth Server-till-Server** | 11 maj 2023 | Adobe Analytics API- och LiveStream-kunder som använder Adobe I/O JWT-autentiseringsuppgifter måste migrera till Adobe I/O OAuth Server-till-Server-autentiseringsuppgifter genom att **1 januari 2025**. Adobe I/O tillåter inte att nya JWT-autentiseringsuppgifter skapas från och med 1 maj 2024. Kunder som använder JWT måste skapa en ny OAuth Server-till-Server-autentiseringsuppgift eller migrera sina befintliga JWT-autentiseringsuppgifter till en OAuth Server-till-Server-autentiseringsuppgift. Kunderna måste även uppdatera sina klientprogram för att kunna använda de nya autentiseringsuppgifterna för OAuth Server-till-Server. <ul><li>[Migrerar från JWT-autentiseringsuppgifter (Service Account)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Implementeringsguide för nya och gamla program med OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)<li>[Använda de nya autentiseringsuppgifterna för OAuth Server-till-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Vanliga frågor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul> |
-| **EOL för Data Workbench** | 2 januari 2024 | Adobe-Data Workbench som upphör att vara listat, effektiv **31 december 2023**. Se [Datans Workbench meddelande om att livscykeln upphör](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html) för mer information. Kontakta din organisations kontoansvarige på Adobe om du har frågor. |
 
 {style="table-layout:auto"}
 
@@ -59,7 +67,7 @@ De senaste uppdateringarna av AppMeasurement (version 2.25.0) finns på [AppMeas
 
 ## Relaterade resurser
 
-* [Information om föregående version för 2022](/help/release-notes/2022.md)
+* [Information om föregående version för 2023](/help/release-notes/2023.md)
 * [Versionsinformation för Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html)
 * [Versionsinformation om Media Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
 * Den senaste releaseuppdateringen för [Adobe Experience Cloud](https://business.adobe.com/products/adobe-experience-cloud-products.html)
