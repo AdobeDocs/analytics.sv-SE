@@ -1,21 +1,21 @@
 ---
 description: Kör en bidragsanalysrapport i ett Workspace-projekt.
-title: Köra bidragsanalys
+title: Kör bidragsanalys
 role: User, Admin
 exl-id: 20d1ba8d-3e4e-4702-ae28-5eb6bf00847b
 feature: Anomaly Detection
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 3%
+source-wordcount: '540'
+ht-degree: 1%
 
 ---
 
-# Köra bidragsanalys
+# Kör bidragsanalys
 
 [Bidragsanalys](/help/analyze/analysis-workspace/c-anomaly-detection/anomaly-detection.md#contribution-analysis) är en intensiv maskininlärningsprocess som är utformad för att upptäcka vilka som bidragit till en konstaterad avvikelse i Adobe Analytics. Avsikten är att hjälpa användaren att hitta fokusområden eller möjligheter till ytterligare analys mycket snabbare än vad som annars skulle vara möjligt.
 
-## Köra bidragsanalys {#section_7D2C5E48A5664727941DF4C90976D9DC}
+## Kör bidragsanalys {#section_7D2C5E48A5664727941DF4C90976D9DC}
 
 Det finns två sätt att anropa bidragsanalys i ett projekt:
 
@@ -34,7 +34,7 @@ Det finns två sätt att anropa bidragsanalys i ett projekt:
 1. (Valfritt) När du har klickat **[!UICONTROL Run Contribution Analysis]** i antingen linjediagrammet eller en tabell kan du begränsa omfattningen av (och därmed snabba upp) analysen med [exklusive dimensioner](#section_F6932F4BF74544B5872164E7B1E0C6FC).
 
 1. Vänta medan din bidragsanalys läses in. Detta kan ta lång tid, beroende på rapportsvitens storlek och antalet dimensioner. Bidragsanalys utför analyser på de 50 000 främsta objekten per dimension.
-1. Analysis Workspace läser sedan in en ny bidragsanalyspanel direkt i projektet. Du kommer att märka en mängd välbekanta paneler om du har använt bidragsanalys i rapporter och analyser tidigare:
+1. Analysis Workspace läser sedan in en ny bidragsanalyspanel direkt i projektet.
 
    * En visualisering som visar antalet **Besök** den dagen.
    * En gång i månaden **Besök Trend line** för kontext.

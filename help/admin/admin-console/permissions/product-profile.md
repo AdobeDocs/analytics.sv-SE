@@ -3,10 +3,10 @@ title: Produktprofiler för Adobe Analytics
 description: Lär dig hur produktprofiler kan användas som behörighetsförinställningar som produktadministratörer kan tilldela användare inom en organisation.
 exl-id: 834e4cf1-20b0-4c9d-939a-19e00494c8dd
 feature: Admin Tools
-source-git-commit: 1a7b853d6f5fc627223ea69e64b4a240c61aef2a
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 1%
+source-wordcount: '673'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Mer information om hur du tilldelar produktprofiladministratörer finns i avsnit
 Följande behörigheter krävs i en produktprofil för att få tillgång till Adobe Analytics:
 
 * Produktprofilen måste ha tillgång till minst en rapportserie
-* Produktprofilen måste tillhöra behörighetsobjektet Analytics Tools **Analysis Workspace Access** (eller **Rapporter och analysåtkomst**)
+* Produktprofilen måste tillhöra behörighetsobjektet Analytics Tools **Analysis Workspace Access**.
 
 ### Rapportsviter
 
@@ -40,15 +40,15 @@ Ger åtkomst till rapportsviter som tillhör din Analytics-organisation. En anv�
 
 ### Mätvärden
 
-Ger åtkomst till mätvärden i rapportsviten. Mätvärdena listas som respektive komponent i Analysis Workspace, eller om mätvärdena är tillgängliga i Rapporter och analyser, tillgängliga som ett menyalternativ under Webbplatsmått.
+Ger åtkomst till mätvärden i rapportsviten. Mätvärden anges som respektive komponent i Analysis Workspace.
 
 Anpassade mätvärden är märkta med Custom Event 1-1000 för att hålla dem oberoende av rapportsviter. Om Custom Event 1 är ett aktiverat behörighetsobjekt har användaren åtkomst till event1 i alla rapportsviter i produktprofilen.
 
 ### Mått
 
-Ger åtkomst till dimensioner i rapportsviten. Dimensionerna listas som respektive komponent i Analysis Workspace, eller om dimensionen är tillgänglig i Rapporter och analyser, tillgängliga som ett menyalternativ.
+Ger åtkomst till dimensioner i rapportsviten. Dimensionerna listas som respektive komponent i Analysis Workspace.
 
-Anpassade variabler, som eVars, har etiketten Custom Conversion 1-250 för att de ska vara oberoende av rapportsviter. Om Custom Conversion 1 är ett aktiverat behörighetsobjekt har användaren åtkomst till eVar1 i alla rapportsviter i produktprofilen.
+Anpassade variabler, som eVars, har etiketten Custom Conversion 1-250 för att de ska vara oberoende av rapportsviter. Om Custom Conversion 1 är ett aktiverat behörighetsobjekt har den användaren åtkomst till eVar1 i alla rapportsviter i produktprofilen.
 
 ### Report Suite-verktyg
 
@@ -62,4 +62,4 @@ Behörighetsobjekt för analysverktyg ger åtkomst till funktioner som är obero
 
 Utvecklare liknar användare, men de har möjlighet att använda Experience Cloud API på Adobe-utvecklare. Se [Hantera utvecklare](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) i användarhandboken för Enterprise om du vill ha mer information. Om en användare beviljas Developer Access för någon profil kan han/hon få åtkomst till Dev Console (console.adobe.io) och redigera Adobe Analytics-integreringar. De API-anrop och svar för Analytics som är auktoriserade för användaren är beroende av nettobehörigheten för alla profiler där användaren har Developer Access.
 
-Med profilbehörigheter som inkluderar alla mått, alla dimensioner och en rapportsvit kan en utvecklaråtkomstmedlem i profilen göra API-anrop relevanta för alla komponenter i den relevanta sviten. När avvikelseidentifiering har lagts till kan rapporterna innehålla fler svar, vilket lägger till mer avvikelsedata. Som tumregel gäller att om en profil beviljar åtkomst till ett scenario i Adobe Analytics-gränssnittet, så aktiverar Developer Access för en profil som är definierad på liknande sätt motsvarande API-anrop och svar.
+Med till exempel profilbehörigheter som omfattar alla mått, alla dimensioner och en rapportsvit kan en utvecklaråtkomstmedlem i profilen göra API-anrop relevanta för alla komponenter i den relevanta sviten. När avvikelseidentifiering har lagts till kan rapporterna innehålla fler svar, vilket lägger till mer avvikelsedata. Som tumregel gäller att om en profil beviljar åtkomst till ett scenario i Adobe Analytics-gränssnittet, så aktiverar Developer Access för en profil som är definierad på liknande sätt motsvarande API-anrop och svar.

@@ -1,23 +1,21 @@
 ---
 description: Beskriver hur du skapar sökvägsrapporter med fördefinierade filter.
-title: Filtrera sökvägsrapporter genom att lägga till underordnade förfrågningar
+title: Filtrera sökvägsrapporter efter tillägg av beroende begäranden
 feature: Report Builder
 role: User, Admin
 exl-id: 41aca5a4-7bda-4be5-ae93-a6d1dae6a554
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 7%
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
 
-# Filtrera sökvägsrapporter genom att lägga till underordnade förfrågningar
+# Filtrera sökvägsrapporter efter tillägg av beroende begäranden
 
 Beskriver hur du skapar sökvägsrapporter med fördefinierade filter.
 
-Marknadsföringsrapporter och -analyser erbjuder ett antal fristående rapporter som är de viktigaste sökvägsrapporterna med fördefinierade filter, som [!UICONTROL Next] och [!UICONTROL Previous Site Section] rapporter, bidrag och [!UICONTROL Exit Site Section] rapporter, och [!UICONTROL Single Site Section] rapport.
-
-Report Builder erbjuder inte dessa som fristående rapporter, men du kan skapa dem via **[!UICONTROL Add dependent request]** > **[!UICONTROL Path]** snabbmenyer. Följande rapporter är tillgängliga:
+Report Builder erbjuder inte sökvägsrapporter som fristående rapporter, men du kan skapa dem via **[!UICONTROL Add dependent request]** > **[!UICONTROL Path]** snabbmenyer. Följande rapporter är tillgängliga:
 
 * Bana > Sidutfall
 * Sökväg > Sökväg till post

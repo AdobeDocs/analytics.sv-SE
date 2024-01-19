@@ -3,9 +3,9 @@ description: Beskrivningar av rapporttyper och jämförelse av globala rapportsv
 title: Rapportera metoder för programsvit
 feature: Report Suite Settings
 exl-id: 97bdc9bd-2212-436b-b3b4-ec518624f9e6
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,7 @@ Att använda virtuella rapportsviter i stället för taggning i flera sviter är
 
 >[!NOTE]
 >
->[!DNL Reports & Analytics] är det enda verktyget som stöder sammanslagningsrapporter, och Adobe rekommenderar inte längre att du använder sammanslagningar. Överväg i stället att använda en global rapportserie med taggar för flera programsviter eller virtuella rapportsviter.
-
-En sammanslagningsrapport är en enkel sammanställning av data från flera rapportsviter, utan borttagning av dubbletter eller någon segmentering eller datauppdelning. För sammanslagningar krävs ingen kodimplementering. Om du vill använda sammanslagningsrapporter [implementera underordnade rapportsviter](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md) och sedan [kombinera dem i en sammanställningsrapport](/help/admin/admin/c-manage-report-suites/c-new-report-suite/t-rollups.md) använda [!UICONTROL Admin Tools].
-
-Sammanslagningsrapporter är kostnadsfria: de underordnade rapportsviterna har egna serveranrop, men sammanslagningen medför inga ytterligare anrop. Sammanslagning är en äldre funktion och har många begränsningar.
+>[!DNL Reports & Analytics] är det enda verktyg som stöder sammanslagningsrapporter. Rapporter och analyser upphörde den 17 januari 2024.
 
 ### Begränsningar för sammanslagningsrapporter {#limitations-rollups}
 

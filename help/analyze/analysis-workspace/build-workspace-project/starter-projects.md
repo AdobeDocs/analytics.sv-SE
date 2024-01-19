@@ -4,16 +4,16 @@ title: Mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 751399fe-6d4f-47cc-8827-82c992079b52
-source-git-commit: 2aaf06d76e6b5e22d1f7a6713ff146ca9a897a55
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
 
 # Mallar (*nu kallade rapporter*)
 
-Mallar används inte längre som en term för färdigbyggda Workspace-projekt. Rapporterna hänvisar till allt som är färdigbyggt av Adobe, till exempel rapporter i Rapporter och analyser och färdigbyggda rapporter i Workspace. Men termen *mallar* används ibland för att hänvisa till mallar eller rapporter som ditt företag har skapat. Egna mallar kallas *anpassade företagsrapporter*.
+Mallar används inte längre som en term för färdigbyggda Workspace-projekt. Rapporterna hänvisar till allt som är färdigbyggt av Adobe, t.ex. rapporter i Rapporter och analyser (slutet på livscykeln) och färdigbyggda rapporter i Workspace. Men termen *mallar* används ibland för att hänvisa till mallar eller rapporter som ditt företag har skapat. Egna mallar kallas *anpassade företagsrapporter*.
 
 Mer information om hur du skapar Workspace-rapporter och skapar anpassade företagsrapporter finns i följande dokumentation:
 

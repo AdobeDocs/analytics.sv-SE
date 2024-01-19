@@ -1,21 +1,21 @@
 ---
 description: Med övertäckningar kan du konfigurera datavisualisering på flera sätt så att du enkelt kan se och förstå hur populära länkarna på en sida är.
-title: Anpassningsbara överlagringar
+title: Anpassningsbara övertäckningar
 feature: Activity Map
 role: User, Admin
 exl-id: 1e83d470-36e4-47bb-a262-ac12472b21c3
-source-git-commit: ab6d3267bd6b503fe96ceea2b870c2e7cdf5d9f4
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 1%
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
-# Anpassningsbara överlagringar
+# Anpassningsbara övertäckningar
 
 Med övertäckningar kan du konfigurera datavisualisering på flera sätt så att du enkelt kan se och förstå hur populära länkarna på en sida är.
 
-Med övertäckningar kan du visualisera klickdata direkt på sidan. Det är det som skiljer ett visuellt analysverktyg som Activity Map från de flesta tabellverktyg och grafiska verktyg som Rapporter och analyser.
+Med övertäckningar kan du visualisera klickdata direkt på sidan.
 
 Activity Map har tre typer av övertäckningar:
 

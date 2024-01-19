@@ -4,10 +4,10 @@ title: Översikt över avvikelseidentifiering
 feature: Anomaly Detection
 role: User, Admin
 exl-id: b1625206-c774-40ef-9d92-25ee8ff1478d
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 3%
+source-wordcount: '1260'
+ht-degree: 1%
 
 ---
 
@@ -69,10 +69,6 @@ Efter en omfattande analys av en avvikelse genereras en bidragssammanfattning f�
 
 ## Tokens för bidragsanalys - översikt {#section_3EF8D2BBCE6E4C309D753BCF04A453D0}
 
->[!IMPORTANT]
->
->Contribute Analysis har tagits bort från funktionerna Rapporter och analyser och är nu bara tillgängligt via Analysis Workspace.
-
 Alla kunder med ett Contribute Analysis-berättigande kan köra en fullständig Contribute Analysis ett begränsat antal gånger i månaden i Analysis Workspace. Detta **exkluderar** kunder som använder enskilda produkter (SiteCatalyst 15), Analytics Foundation-kunder och Analytics Select-kunder, som inte får någon bidragsanalys alls.
 
 Antalet körningar per företag begränsas av månatliga tokens som beviljas baserat på den Adobe Analytics-produkt som ditt företag har köpt. Detta inkluderar möjligheten att begränsa åtkomst till bidragsanalys för att undvika tokenmissbruk.
@@ -83,7 +79,6 @@ Antalet körningar per företag begränsas av månatliga tokens som beviljas bas
 | --- | --- |
 | Varför har Adobe introducerat tokens? | Contribute Analysis har varit en av de viktigaste funktionerna i Adobe Analytics. Om du får ett litet antal&quot;fullständiga&quot; körningar per månad (i stället för bara tre dimensioner för vissa Analytics-produkter) kan du bättre se vad en obegränsad, fullständig bidragsanalys kan göra för dig. |
 | Hur fungerar tokenering i bidragsanalys? Kostar det en token att läsa in ett projekt med en befintlig bidragsanalys, eller bara när ett helt nytt projekt körs? | Varje inloggningsföretag (inte varje användare) får ett visst antal tokens per månad, vilket gör att du kan köra en&quot;fullständig&quot; bidragsanalys i Analysis Workspace.  Varje gång du genererar en ny bidragsanalys betalar du en token. Att läsa in projekt med bidragsanalyser som körs i förväg kostar ingen token. |
-| Gäller tokens för bidragsanalys i rapporter och analyser? | Nej. Bidragsanalys erbjuds inte längre i rapporter och analyser från april 2018. |
 | Vad kan vi göra om mitt företag har slut på tokens och vill köra ytterligare bidragsanalyser? | Du kan uppgradera till en annan Adobe Analytics-produkt, till exempel från Standard (2 tokens/månad) till Ultimate (20 tokens/månad). Du kan inte köpa fler tokens - du måste uppgradera inom det befintliga paketeringsramverket. |
 | Hur begränsar jag åtkomsten till bidragsanalys? | Som standard har bara administratörer tillgång till att köra Contribute Analyses. Administratörer kan dock ge andra användare åtkomst genom att skapa en behörighetsgrupp i [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html). Du bör endast ge tillstånd att använda Contribute Analysis till användare som har en legitim anledning att använda den och som är betrodda att inte missbruka sin åtkomst. Behörigheten anropas [!UICONTROL Contribution Analysis] under [!UICONTROL Report Suite Tools]. [Läs mer](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/report-suite-tools.html) |
 | Hur vet jag hur många tokens mitt företag har rätt till per månad och hur många vi har använt under den aktuella månaden? | Gå till  [!UICONTROL Admin] > [!UICONTROL All admin] >[!UICONTROL Company settings Home] >[!UICONTROL View Feature Access Levels]. Titta under<ul><li>Bidragsanalys: Antal månatliga användningstoken</li><li>Bidragsanalys: Antal användningstoken som använts den här månaden</li></ul> |
@@ -91,10 +86,6 @@ Antalet körningar per företag begränsas av månatliga tokens som beviljas bas
 ## Anomaldetekterings- och bidragsanalysrättigheter {#section_9278D58F21A840AA9B1ED1BD07A1EF0A}
 
 Nedan finns en lista med detaljerade berättiganden för avvikelseidentifiering och bidragsanalys i Analysis Workspace.
-
->[!IMPORTANT]
->
->Analys av avvikelseidentifiering och bidrag har tagits bort från funktionerna Rapporter och analyser och är nu endast tillgängliga via Analysis Workspace. Tänk på att kunder som använder Adobe Analytics Select och Adobe Analytics Foundation bara har tillgång till avvikelseidentifiering på dagsnivå i Workspace.
 
 <table id="table_5C9B7E4AE82640B5A913519E576889B5"> 
  <thead> 

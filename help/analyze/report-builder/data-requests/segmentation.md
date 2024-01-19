@@ -4,9 +4,9 @@ title: Hantera segment (Report Builder)
 feature: Report Builder
 role: User, Admin
 exl-id: c4ad89e0-91c9-47e1-a226-69d82fdb8918
-source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -50,9 +50,9 @@ Du kan ha specifika kombinationer av rapportdimensioner som du vill omvandla til
 1. Gå tillbaka till Report Builder och klicka på ikonen Uppdatera för att uppdatera segmentlistan.
 1. Du kan nu använda det här segmentet.
 
-## Söka efter och använda segment {#section_CACA269B48E94CFD91C2D5A15E9C77B7}
+## Söka efter och använda segment {#search}
 
-Alla segment som har skapats i Rapporter och analyser, Report Builder eller Data Warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).
+Alla segment som har skapats i Rapporter och analyser (som nu slutar gälla), Report Builder eller Data Warehouse visas i den här segmentlistan. Om du vill uppdatera listan klickar du på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg).
 
 Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar sekventiella segment.
 
@@ -64,9 +64,9 @@ Du kan tillämpa ett eller flera segment på en viss begäran. Detta inkluderar 
 
 >[!NOTE]
 >
->Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig. (I användargränssnittet Marketing Reports &amp; Analytics kan administratören se alla segment i organisationen.)
+>Oavsett om du är administratör eller icke-administratör kan du i Report Builder bara se de segment som du äger och de som har delats med dig.
 
-## Filtrera segment {#section_376E986D3E684999A7CDB08E53854159}
+## Filtrera segment {#filter}
 
 **Filter** segment genom att klicka på filterikonen:  ![Filterikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
@@ -76,13 +76,13 @@ Tillgängliga filter:
 |---|---|
 | Taggar | Gör att du kan filtrera segment med specifika taggar. Observera att taggfilter använder operatorn AND. Om du markerar två taggar visas de segment i den högra rutan som har taggats med **båda** -taggar. |
 | Ägare | Gör att du kan filtrera segment efter ägare. Observera att ägarfilter använder operatorn OR. Om du markerar två ägare visar den högra rutan segment som ägs av **antingen** ägare. |
-| Andra filter > Endast *rapportsvitens namn* | Om du använder Endast *rapportsvitens namn*&quot; i Segment Builder i [!DNL marketing reports & analytics]och sedan visa det avancerade filtret i [!DNL Report Builder]visas bara segmentet för den valda rapportsviten. |
+| Andra filter > Endast *rapportsvitens namn* | Om du använder Endast *rapportsvitens namn*&quot; i Segment Builder i Adobe Analytics och visa sedan det avancerade filtret i [!DNL Report Builder]visas bara segmentet för den valda rapportsviten. |
 | Andra filter > Mitt | Visar alla segment som du äger. |
 | Andra filter > Delat med mig | Visar alla segment som andra delar med dig. |
 | Andra filter > Favoriter | Visar alla segment som du har markerat som Favoriter. |
 | Andra filter > Godkänt | Visar alla officiellt godkända segment. |
 
-## Lägga till en segmentkontroll i en arbetsbok {#section_E3E5149A8464441FA5445A98DBD520AC}
+## Lägga till en segmentkontroll i en arbetsbok {#segment-control}
 
 Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbok i stället för att behöva gå till Begärandeguiden.
 
@@ -103,11 +103,11 @@ Genom att lägga till en segmentkontroll kan du växla segment från en arbetsbo
 
    ![Skärmbild med listrutan Välj segment.](assets/seg_control2.png)
 
-## Uppdatera listan med segment {#section_22E4A86789444B4A998532396B476EFB}
+## Uppdatera listan med segment {#refresh}
 
 När du vill lägga till ett nytt segment eller redigera ett befintligt bör du klicka på ikonen Uppdatera ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) om du vill uppdatera den cachelagrade listan med segment.
 
-## Hantera segment över förfrågningar {#section_C3D63FCBE1A94369A319243313B03C93}
+## Hantera segment över förfrågningar {#manage}
 
 Före v5.4 kan Report Builder ändra segment vid flera förfrågningar. Den här processen ersätter dock alltid de befintliga segmenten. Användare som vill lägga till ett nytt segment i varje begäran kunde inte göra detta eftersom den tidigare uppsättningen segment som redan tilldelats varje begäran skulle tas bort om segmentet lades till.
 

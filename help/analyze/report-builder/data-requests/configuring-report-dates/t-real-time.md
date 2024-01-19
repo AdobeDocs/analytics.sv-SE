@@ -1,22 +1,21 @@
 ---
 description: Steg som beskriver hur du konfigurerar begärandedatum i realtid.
-title: Konfigurera en realtidsförfrågan
-uuid: 9ea1b790-9c3d-4511-8580-bb11d9003d50
+title: Konfigurera en realtidsbegäran
 feature: Report Builder
 role: User, Admin
 exl-id: 818fc9ca-aa78-4a21-abd7-8e3144f5d1c0
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 7%
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
-# Konfigurera en realtidsförfrågan
+# Konfigurera en realtidsbegäran
 
 Så här konfigurerar du begärandedatum i realtid:
 
-1. Se till att realtidsrapportering är aktiverat i [Administratörsverktyg](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html) i marknadsföringsrapporter och -analyser.
+1. Se till att realtidsrapportering är aktiverat i [Administratörsverktyg](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/real-time-reports/t-realtime-admin.html).
 1. På [!UICONTROL Request Wizard: Step 1], klicka **[!UICONTROL Real-Time Report]** > **[!UICONTROL `<report type>`]**
 
    Välj till exempel en trafikrapport. När du väljer en rapporttyp i realtid [!UICONTROL Select Time Range] visas.

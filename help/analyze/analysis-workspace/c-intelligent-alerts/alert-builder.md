@@ -4,14 +4,14 @@ title: Alert Builder (Analysis Workspace)
 feature: Alerts
 role: User, Admin
 exl-id: aae28c90-bfdf-49ff-bd38-c9ef63880bf4
-source-git-commit: 3f4d8df911c076a5ea41e7295038c0625a4d7c85
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
-# Alert Builder
+# Varningsverktyg
 
 >[!NOTE]
 >
@@ -23,10 +23,9 @@ Få åtkomst till varningsverktyget på ett av fyra sätt:
 
 * Genom att använda följande kortkommando i Analysis Workspace:
 
-   `ctrl (or cmd) + shift + a`
+  `ctrl (or cmd) + shift + a`
 * Genom att gå till **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]**.
 * Genom att markera ett eller flera objekt på en frihandsritabell högerklickar och väljer du **[!UICONTROL Create Alert from Selection]**.
-* Från en rapport från Rapporter och analyser, genom att gå till **[!UICONTROL More]** > **[!UICONTROL Add Alert]**.
 
 ## Skapa aviseringar
 
@@ -40,7 +39,7 @@ Gränssnittet i Alert Builder är bekant för dem som har skapat segment eller b
 
 Ange ett namn för aviseringen. Varningsnamnet kan innehålla rapportens namn eller måttets tröskelvärde.
 
-**Tidsgranularitet**
+**Tidsnoggrannhet**
 
 Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje vecka eller Varje månad.
 
@@ -54,7 +53,7 @@ Ange var aviseringen kan skickas. En avisering kan skickas till en Analytics-anv
 
 >[!IMPORTANT]
 >
->Telefonnumret måste föregås av ett plustecken (+) och ett [landskod](https://countrycode.org/).
+>Telefonnumret måste föregås av ett plustecken och ett [landskod](https://countrycode.org/).
 
 Det e-postmeddelande som en användare får när en varning har utlösts ser ut ungefär så här:
 
@@ -70,8 +69,8 @@ Ange aviseringens förfallodatum.
 
 * Dra och släpp mätvärden på arbetsytan som lägger till utlösare.
 
-   An **&quot;inkompatibla komponenter&quot;** meddelandet visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
-* Ange tröskelvärdet som måttet måste överskrida innan en avisering anges. Du kan ange ett tröskelvärde och sedan något av följande villkor:
+  An **inkompatibla komponenter** meddelandet visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
+* Fastställ tröskelvärdet som måttet måste överskrida innan en avisering anges. Du kan ange ett tröskelvärde och sedan något av följande villkor:
 
    * avvikelse finns
    * avvikelsen är större än förväntat
@@ -81,7 +80,7 @@ Ange aviseringens förfallodatum.
    * ändras med
    * Du kan ange ett tröskelvärde på 90 %, 95 %, 99 %, 99,75 % och 99,9 %.
 
-   Observera att du även kan använda beräknade värden.
+  Observera att du även kan använda beräknade värden.
 
 *... Med dessa filter*
 

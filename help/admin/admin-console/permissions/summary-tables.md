@@ -3,10 +3,10 @@ title: Adobe Analytics Permissions - summary tables
 description: Tabeller som sammanfattar tillgängliga Adobe Analytics-behörigheter i Adobe Admin Console.
 exl-id: f1abbdb7-0f76-4d9b-a3ca-b12fa3cecb50
 feature: Admin Tools
-source-git-commit: 512c348bda14654daa155f774dd384cba4aed2bd
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 4%
+source-wordcount: '1130'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Anpassad kalender | x |  |  |  | Ger åtkomst till Allmänt > Anpassa kalender i Report Suite Manager. |
 | Hanteraren för dataflöden | x |  |  |  | Ger åtkomst till Admin > Dataflöden i den övre navigeringen i Analytics. |
 | API för datareparation | x |  |  |  | Ger åtkomst till API:t för datareparation |
-| Data Sources Manager | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Mgmt&#39;. |
+| Datakällhanteraren | x |  |  |  | Ger åtkomst till Admin > Alla administratörer > Datakällor i den övre navigeringen i Analytics. Kräver behörighetsobjektet &#39;Report Suite Mgmt&#39;. |
 | Standardmått | x |  |  |  | Ger åtkomst till Inställningar > Standardvärden i Report Suite Manager för enskilda rapportsviter. |
 | Exkludera efter IP-adress | x |  |  |  | Ger åtkomst till Admin > Exkludera med IP i den övre navigeringen i Analytics. |
 | Sökmetoder | x |  |  |  | Ger åtkomst till Conversion > Finding Methods i Report Suite Manager. |
@@ -44,13 +44,6 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Avvikelseidentifiering |  | x |  |  | Ger åtkomst till avvikelseidentifiering i Analysis Workspace. |
 | Bidragsanalys |  | x |  |  | Ger åtkomst till högerklicksmenyn Kör bidragsanalys i Analysis Workspace. |
 | Anpassad Data Warehouse |  | x |  |  | Ger åtkomst till Verktyg > Data Warehouse i den övre navigeringen i Analytics. |
-| Punktsidor |  |  | x |  | Ger åtkomst till Site Metrics > Bots > Bot Pages report in Reports &amp; Analytics. |
-| Robotar |  |  | x |  | Ger åtkomst till Site Metrics > Bots > Bots report in Reports &amp; Analytics. |
-| Kanalrapport |  |  | x |  | Ger åtkomst till marknadsföringskanalerna > Kanalöversiktsrapport i rapporter och analyser. |
-| Dagliga återbesök |  |  | x |  | Ger åtkomst till Behåll besökare > Dagliga besök i rapporter och analyser. |
-| Mina rekommenderade rapporter |  |  | x |  | Ger åtkomst till Site Metrics > My Recommended Reports in Reports &amp; Analytics. |
-| RealTime Report |  |  | x |  | Ger åtkomst till Site Metrics > Real-Time i Reports &amp; Analytics. Använd behörighetsobjektet Konfiguration av realtidsrapport om du vill bevilja åtkomst för att konfigurera rapporten. |
-| Återbesök |  |  | x |  | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
 | Konfiguration av Advertising Analytics |  |  |  | x | Används inte. |
 | Sammanfattningsrapport för företag |  |  |  | x | Används inte. |
 | Data Warehouse |  |  |  | x | Används inte. Använd rapporten för anpassad Data Warehouse i stället. |
@@ -94,7 +87,7 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Dela projektlänkar med vem som helst | x |  |  |  | Ger användare åtkomst att Dela med vem som helst under ett Workspace-projekt -> Dela -> Dela med vem som helst. |
 | Activity Map |  | x |  |  | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
 | Ad Hoc Analysis License Users |  | x |  |  | Ad Hoc Analysis har blivit uppsagd. [Mer info](https://spark.adobe.com/page/S9Bhp66VJ2fEn/). |
-| Analysis Workspace Access |  | x |  |  | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra den här gruppen (helst) eller Rapporter och analyser för att kunna använda Adobe Analytics. |
+| Analysis Workspace Access |  | x |  |  | Ger åtkomst till Analysis Workspace. |
 | Analysis Workspace: Spara som mall |  | x |  |  | Ger åtkomst till Projekt > Spara som mall i Analysis Workspace. |
 | Skapande av beräknade mätvärden |  | x |  |  | Ger möjlighet att skapa beräknade värden för alla Analytics-funktioner. |
 | Labs Access |  | x |  |  | Ger tillgång till Labs. |
@@ -102,10 +95,8 @@ Använd följande sammanfattningstabeller för att identifiera Adobe Analytics-b
 | Skapa segment |  | x |  |  | Ger möjlighet att skapa och dela segment över alla Analytics-funktioner. |
 | Segmentpublicering |  | x |  |  | Ger möjlighet att göra ett segment till en Experience Cloud-målgrupp när du skapar eller redigerar ett segment. |
 | Webbtjänståtkomst |  | x |  |  | Ger möjlighet att använda API:t, inklusive autentisering med tredjepartswebbplatser och sändande API-anrop. |
-| Aktuella data |  |  | x |  | Aktiverar alternativet att visa aktuella data i rapporter och analysrapporter. |
-| Rapporter och analysåtkomst |  |  | x |  | Ger åtkomst till rapporter och analyser. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |
 | Hantering av Advertising Analytics |  |  |  | x | Används inte. |
-| Samprofilering |  |  |  | x | Används inte längre. Ger åtkomst till Admin > All admin > Company settings > Co-Branding. |
+| Sammärkning |  |  |  | x | Används inte längre. Ger åtkomst till Admin > All admin > Company settings > Co-Branding. |
 | Excel-licensanvändare |  |  |  | x | Används inte. |
 | Administratör för mobilapp |  |  |  | x | Används inte. |
 | Behörighetshantering |  |  |  | x | Används inte längre. Ger åtkomst till det äldre användarhanteringsgränssnittet under Admin > Alla administratörer > Användarhantering. |

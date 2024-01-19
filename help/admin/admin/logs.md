@@ -3,9 +3,9 @@ description: Logga filer som hjälper dig att se när användare loggar in, dera
 title: Loggar
 feature: Admin Tools
 exl-id: 43f79e2a-2cb9-47eb-982a-54714c9cbafc
-source-git-commit: 743bd30f8606b05d799f9089d2f14863fcb18feb
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '570'
 ht-degree: 2%
 
 ---
@@ -43,14 +43,12 @@ The [!UICONTROL Usage and Access Log] Med kan du utvärdera rapportanvändning p
 | Inloggningen har slutförts | Användaren har loggat in. |
 | Administratörsåtgärd | En administratörsåtgärd inträffade, som att redigera en rapportserie, ändra företagsinställningar, skapa en användare, avbryta en rapportbegäran osv. |
 | Ändring av säkerhetsinställning | En säkerhetsinställning har ändrats. |
-| Rapporten har visats | En rapport om rapporter och analyser har visats. |
-| Rapporten har hämtats | En rapport för rapporter och analyser hämtades. |
 | Aviseringen har skickats | En varning skickades. |
 | Användaråtgärd | Användarinformationen har redigerats. |
 | Verktyget visas | Ett verktyg visades. |
 | Omniture Action | En åtgärd utfördes av Adobe. |
 | Lösenordsåterställning | Ett lösenord har återställts. |
-| BookMarks | Ett bokmärke hanterades. |
+| Bokmärken | Ett bokmärke hanterades. |
 | Kontrollpaneler | En instrumentpanel hanterades. |
 | Larm | En avisering hanterades. |
 | Kalenderhändelser | En kalenderhändelse hanterades. |

@@ -1,19 +1,19 @@
 ---
 description: En panel som visar nästa eller föregående dimensionsobjekt för en viss dimension.
-title: Panelen Nästa eller Föregående objekt
+title: Panelen Nästa eller föregående objekt
 feature: Panels
 role: User, Admin
 exl-id: 9f2f8134-2a38-42bb-b195-5e5601d33c4e
-source-git-commit: c289f4aa1e49e428182fed9a871a1f90dd1f5c42
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 1%
+source-wordcount: '409'
+ht-degree: 0%
 
 ---
 
-# Panelen Nästa eller Föregående objekt
+# Panelen Nästa eller föregående objekt
 
-The [!UICONTROL Next or previous item] som startats som en rapport i Rapporter och analyser, under [!UICONTROL Reports] > [!UICONTROL Most popular] > [!UICONTROL Next page/Previous page]. Det är nu även en arbetsytepanel. Panelen innehåller ett antal tabeller och visualiseringar för att enkelt identifiera nästa eller föregående dimensionsobjekt för en viss dimension. Du kanske till exempel vill utforska vilka sidor kunderna besöker oftast efter att de besökt hemsidan.
+Panelen innehåller ett antal tabeller och visualiseringar för att enkelt identifiera nästa eller föregående dimensionsobjekt för en viss dimension. Du kanske till exempel vill utforska vilka sidor kunderna besöker oftast efter att de besökt hemsidan.
 
 ## Öppna panelen
 
@@ -54,6 +54,6 @@ The [!UICONTROL Next or previous item] panelen returnerar en mängd data och vis
 | --- | --- |
 | Vågrätt fält | Visar nästa (eller föregående) objekt baserat på den dimensionspost du valde. Om du placerar pekaren över ett enskilt fält markeras motsvarande objekt i tabellen Frihand. |
 | Sammanfattningsnummer | Sammanfattningsnummer på hög nivå för alla förekomster av nästa eller föregående dimensionsobjekt för den aktuella månaden (hittills). |
-| Frihandstabell | Visar nästa (eller föregående) objekt baserat på den dimensionspost som du har valt i ett tabellformat. Det var till exempel de mest populära sidorna (av händelser) som folk gick till efter (eller före) hemsidan eller arbetsytesidan. |
+| Frihandsregister | Visar nästa (eller föregående) objekt baserat på den dimensionspost som du har valt i ett tabellformat. Det var till exempel de mest populära sidorna (av händelser) som folk gick till efter (eller före) hemsidan eller arbetsytesidan. |
 
 {style="table-layout:auto"}

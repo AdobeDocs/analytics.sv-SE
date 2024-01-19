@@ -4,10 +4,10 @@ subtopic: Marketing channels
 title: Hantera marknadsföringskanaler
 feature: Marketing Channels
 exl-id: a768a4c2-f922-4d96-a9fb-78a1dfac04d8
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 1%
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +61,7 @@ Lägg till marknadsföringskanaler i Marketing Channel Manager.
 
    Det här alternativet är inte tillgängligt när 25 kanaler har definierats.
 
-1. Klicka på **[!UICONTROL Save.]**
+1. Klicka **[!UICONTROL Save.]**
 1. Klicka på om du vill konfigurera regler för kanalen **[!UICONTROL Marketing Channel Processing Rules]**.
 
    Se [Skapa regler för bearbetning av marknadsföringskanal](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/c-rules.md).
@@ -77,7 +77,6 @@ Det finns olika inställningar som kan användas för varje kanal på [!UICONTRO
 | Åsidosätt sista tryckkanalen | Gör att du kan välja om du vill åsidosätta en befintlig, beständig sista-beröringskanal med den valda kanalen. Om du markerar den här kryssrutan åsidosätts en befintlig sista-beröringskanal av alla kanaler (inklusive Direkt och Intern). Resultatet är att konverteringen tilldelas en kanal som kanske inte förtjänar någon kredit. Det här alternativet kan till exempel säkerställa att direktkanalen inte får krediter för konvertering om användaren tidigare har förvärvats via den naturliga sökkanalen. |
 | Kanaluppdelning | Gör att du kan dela upp en kanal med det här värdet. Du kan lägga till möjliga kanaluppdelningar (delkanaler) när du skapar [klassificeringar av marknadsföringskanaler](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/marketing-channels/classifications-mchannel.md). |
 | Typ | Anger hur användaren kom till din plats. Du kan välja Online eller Offline. Använd onlinekanaler för besökare som kommer via en sökmotor eller e-postkampanj. Offlinekanaler gäller besökare som har hittat er webbplats via tidningskuponger eller tidningsannonser. Offlinekanaler inkluderar vanligtvis data som importerats via rapportering av datakällor. Se [Datakällor](https://experienceleague.adobe.com/docs/analytics/import/data-sources/datasrc-home.html). Se [Lägg till offlinedata](/help/components/c-marketing-channels/c-getting-started-mchannel.md). |
-| Färg | Endast rapporter och analyser: Den färg som är associerad med den här marknadsföringskanalen. Den här färgen representerar kanalen i Marketing Channel-rapporten. |
 
 ### Åsidosätta bästa praxis
 

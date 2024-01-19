@@ -1,17 +1,17 @@
 ---
 description: Report Builder 5.2 har stöd för Adobe Analytics Unified Calculated Metrics. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
-title: Beräknade värden
+title: Beräknade mått
 feature: Report Builder
 role: User, Admin
 exl-id: 462086eb-675f-443c-b3a6-b4fa390254da
-source-git-commit: f4032ac06c9057635dd0526ad046c4640c6350bf
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 12%
+source-wordcount: '398'
+ht-degree: 11%
 
 ---
 
-# Beräknade värden
+# Beräknade mått
 
 Report Builder 5.2 stöder Adobe Analytics enhetliga beräknade mätvärden. Bland andra innovationer har alla beräknade värden nu ett globalt ID - de är inte längre begränsade till ett rapportpaket.
 
@@ -36,7 +36,7 @@ Tillgängliga filter:
 | Filternamn | Beskrivning |
 |---|---|
 | Taggar | Gör att du kan filtrera efter beräknade värden med specifika taggar. Observera att taggfilter använder operatorn AND. Om du markerar två taggar visar den högra rutan mått som har taggats med **båda** -taggar. |
-| Rapportsviter | Om du använder Endast *rapportsvitens namn*&quot; i beräkningsverktyget i [!DNL Reports & Analytics]och sedan visa det avancerade filtret i [!DNL Report Builder]visas endast beräknade värden för den valda rapportsviten i filtret Avancerat. |
+| Rapportsviter | Om du använder Endast *rapportsvitens namn*&quot; i beräkningsverktyget i [!DNL Adobe Analytics]och sedan visa det avancerade filtret i [!DNL Report Builder]visas endast beräknade värden för den valda rapportsviten i filtret Avancerat. |
 | Ägare | Gör att du kan filtrera mätvärden efter ägare. Observera att ägarfilter använder operatorn OR. Om du markerar två ägare visar den högra rutan mått som ägs av **antingen** ägare. |
 | Andra filter > Godkänt | Visar alla officiellt godkända mätvärden. |
 | Andra filter > Favoriter | Visar alla mått som du har markerat som Favoriter. |

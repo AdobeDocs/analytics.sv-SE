@@ -1,22 +1,18 @@
 ---
 description: Adobe kräver förhandsmeddelande om nya kontoinställningar, trafiktoppar och trafikökningar. Maskinvara måste tilldelas i förväg för att minimera latens och eventuella negativa konsekvenser för det övergripande systemet.
-title: Ledtid som krävs för trafikökningar
+title: Begärd ledtid för trafikökningar
 feature: Traffic Management
 exl-id: fb428f8d-9dff-43a6-a1e8-1a892cbed7ac
-source-git-commit: 55c8337dbeebcc76db367ead15128c095e4d8ce5
+source-git-commit: 726e5ee71be60838e48bb682d7fd48bfc1f96ec3
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 5%
+source-wordcount: '325'
+ht-degree: 0%
 
 ---
 
-# Ledtid som krävs för trafikökningar
-
-## Ledtid som krävs för trafikökningar
+# Begärd ledtid för trafikökningar
 
 Adobe kräver förhandsmeddelande om nya kontoinställningar, trafiktoppar och trafikökningar. Maskinvara måste tilldelas i förväg för att minimera latens och eventuella negativa konsekvenser för det övergripande systemet.
-
-Allokering av maskinvara styrs av varningar som skickas via användargränssnittet för rapporter och analyser.
 
 >[!IMPORTANT]
 >
@@ -24,7 +20,7 @@ Allokering av maskinvara styrs av varningar som skickas via användargränssnitt
 
 Använd följande riktlinjer för att avgöra hur långt i förväg du måste skicka in en trafikvarning:
 
-### Leadtider för maskinvaruallokering
+## Leadtider för maskinvaruallokering
 
 
 <table id="table_A67CC3B164F740088797BD8913244E47">
@@ -41,7 +37,7 @@ Använd följande riktlinjer för att avgöra hur långt i förväg du måste sk
   </tr>
   <tr>
    <td colname="col1"> Trafikkramp eller plötslig permanent trafikökning med upp till 25 procent i genomsnittlig daglig volym jämfört med de senaste 30 dagarna</td>
-   <td colname="col2"> <ul><li>Rapportsviter med &lt; 100M träffar/dag: Ingen avisering krävs</li><li>Rapportera programsviter med &gt; 100 MB träffar/dag: 5 arbetsdagar</li></ul></td>
+   <td colname="col2"> <ul><li>Rapportsviter med &lt; 100M träffar/dag: Ingen avisering krävs</li><li>Rapportera sviter med &gt; 100 MB träffar/dag: 5 arbetsdagar</li></ul></td>
   </tr>
   <tr>
    <td colname="col1"> Trafikantoppen eller plötslig permanent trafikökning med mer än 25 procent i genomsnittlig daglig volym jämfört med de senaste 30 dagarna</td>
@@ -63,8 +59,8 @@ Andra saker att tänka på:
    * Beräknade träffar per dag
    * Publiceringsdatum
 
-* Klientaviseringar behövs också när trafiken minskar eller när en rapportsserie är inaktuell.
+* Klientaviseringar behövs också när trafiken minskar eller när en rapportsserie är föråldrad.
 
-### Maskinvaruavallokering på grund av orealiserad trafik
+## Maskinvaruavallokering på grund av orealiserad trafik
 
 Maskinvara för nya konton, trafiktoppar och trafikökningar kommer att tas bort om den planerade trafiken i kundvarningen inte kommer inom fyra veckor efter&quot;live-datumet&quot;. Om trafiken fortfarande förväntas måste en ny kundvarning genereras i samband med en trafikökning.

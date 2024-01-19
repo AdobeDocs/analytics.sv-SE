@@ -1,17 +1,17 @@
 ---
 description: Beskriver hur du anger behörigheter och vilka dimensioner som är tillgängliga i Analytics.
-title: Activity Map-rapportering i Analytics
+title: Rapportering från Activity Map i analyser
 feature: Activity Map
 role: User, Admin
 exl-id: 8d7be302-bdfc-4370-b8f0-ab1af1e439ca
-source-git-commit: 4af73d19afd8844f814aafd45153cc638aa535d6
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 5%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
-# Activity Map-rapportering i Analytics
+# Rapportering från Activity Map i analyser
 
 Beskriver hur du anger behörigheter och vilka dimensioner som är tillgängliga i Analytics.
 
@@ -34,6 +34,6 @@ Du kan [anpassa användaråtkomst till dimensioner](https://experienceleague.ado
 | Activity Map Links &amp; Region | Visar alla samlade länkar med deras region på hela webbplatsen. |
 | Activity Map XY | Oanvänd |
 
-* Dessa dimensioner bör vara tillgängliga i Analysis Workspace, Rapporter och analyser samt Report Builder, förutsatt att din Analytics-implementering är [aktiverat för Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-enable.md).
-* Navigera i Rapporter och analyser till **[!UICONTROL View All Reports]** > **[!UICONTROL Activity Map]**.
+* Dessa dimensioner bör vara tillgängliga i Analysis Workspace och Report Builder, förutsatt att din Analytics-implementering är [aktiverat för Activity Map](/help/analyze/activity-map/activitymap-getting-started/activitymap-enable.md).
+* I Analysis Workspace drar du in de aktivitetskartrelaterade dimensionerna till en rapport.
 * Om du vill se en länk och ett område för en viss sida behöver du bara skapa en uppdelning från den önskade Activity Map-sidan till länkarna och regionen Activity Map.

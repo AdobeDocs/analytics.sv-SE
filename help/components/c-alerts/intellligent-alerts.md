@@ -3,9 +3,9 @@ description: Det intelligenta larmsystemet ger mer exakt kontroll över varninga
 title: Intelligenta aviseringar
 feature: Alerts
 exl-id: 1b23211e-7632-4b33-a27d-c58b3bbbbab1
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '519'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,7 @@ Med intelligenta aviseringar kan du
 
 Varningssystemets komponenter är: Varningsbyggaren, Varningshanteraren, Förhandsgranska varning och bättre sammanhangsberoende åtkomst för att skapa varningar. Det gamla varningssystemgränssnittet kommer inte längre att vara tillgängligt, men aviseringarna kommer att migreras. Vissa äldre varningsfunktioner [är inte längre tillgängliga](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/alerts.html).
 
-Det finns fyra sätt att komma åt Varningsverktyget:
+Det finns tre sätt att komma åt Varningsverktyget:
 
 * Genom att använda följande kortkommando i Analysis Workspace:
 
@@ -43,11 +43,8 @@ Det finns fyra sätt att komma åt Varningsverktyget:
 
   ![](assets/create-alert-from-selection.png)
 
-* Från en [!UICONTROL Reports & Analytics] rapport, genom att gå till  **[!UICONTROL More]** > **[!UICONTROL Add Alert]** . Detta öppnar den nya varningsfunktionen och fyller i byggaren med lämpliga mått och filter från rapporten. Du kan sedan redigera varningen vid behov.
 
-  ![](assets/add-alert.png)
-
-## Vanliga frågor: Hur aviseringar beräknas och utlöses {#section_1F3B1DAF21784306953B49AAD4C3DCAB}
+## Vanliga frågor: Hur aviseringar beräknas och utlöses {#trigger}
 
 Tröskelvärdena i % är standardavvikelser. Exempel: 95 % = 2 standardavvikelser och 99 % = 3 standardavvikelser. Beroende på hur lång tid du väljer kan [olika modeller](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md) används för att beräkna hur långt bort (hur många standardavvikelser) varje datapunkt ligger från normen. Om du anger ett lägre tröskelvärde (till exempel 90 %) får du fler avvikelser än om du anger ett högre tröskelvärde (99 %). Tröskelvärdena 99,75 % och 99,99 % infördes specifikt för timgranulariteten så att den inte skulle utlösa så många avvikelser som möjligt.
 

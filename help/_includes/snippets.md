@@ -1,8 +1,8 @@
 ---
-source-git-commit: d857d1cf9f4aa23d7fd60c19bb6533090d956086
+source-git-commit: 33ac467cd73e3099ce0ca03aa41cbd4192eb2384
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 1%
+source-wordcount: '1131'
+ht-degree: 0%
 
 ---
 # Fragment
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Mer information om hur du använder rapporter i Analysis Workspace finns i [Använd färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md).
+>Effektivt **17 januari 2024**, avbröt Adobe rapporter och analyser och tillhörande rapporter och funktioner. Vid den tidpunkten slutade rapporter och analyser och alla rapporter och tidsplaner att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Mer information om hur du använder rapporter i Analysis Workspace finns i [Använd färdiga rapporter](/help/analyze/analysis-workspace/reports/use-reports.md).
 > 
 >Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar processen vid slutet av livscykeln.
 >
@@ -21,26 +21,26 @@ ht-degree: 1%
 
 1. (Valfritt) Välj **Filter** icon ![Ikon för dataordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)väljer du sedan något av följande filteralternativ för att filtrera komponentlistan:
 
-   | Alternativ |  -funktion |
-   |---------|----------|
-   | [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
-   | [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md). |
-   | [!UICONTROL **Dimensioner**] | Visa endast komponenter som är Dimensioner. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) |
-   | [!UICONTROL **Mätvärden**] | Visa endast komponenter som är mätvärden. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) |
-   | [!UICONTROL **Segment**] | Visa endast komponenter som är segment. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) <!--this is Filters in Customer Journey Analytics--> |
-   | [!UICONTROL **Datumintervall**] | Visa endast komponenter som är datumintervall. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) |
-   | [!UICONTROL **Visa alla**] | Visa alla komponenter. Det här alternativet är endast tillgängligt för administratörer. |
-   | [!UICONTROL **Ej godkänt**] | Visa endast komponenter som ännu inte har markerats som Godkända av en administratör. Som administratör är detta användbart när du identifierar komponenter som kräver granskning och godkännande. Det här alternativet är endast tillgängligt för administratörer. |
-   | [!UICONTROL **Beskrivning saknas**] | Visa endast komponenter som ännu inte har någon beskrivning i fältet Beskrivning. Det här alternativet är endast tillgängligt för administratörer. |
-   | [!UICONTROL **Visa dubbletter**] | <p>Visa bara komponenter som har samma namn eller definition som en annan komponent i den valda rapportsviten. Namn eller definitioner måste vara exakta matchningar för att kunna visas som dubbletter.</p><p>Det här alternativet är endast tillgängligt för administratörer.</p><p>**OBS!** För definitioner omfattar detta både de komponenter du skapar och de som tillhandahålls av Adobe. För namn innehåller detta för närvarande bara komponenter som du skapar och inte de som tillhandahålls av Adobe. Dubblettnamn för komponenter som tillhandahålls av Adobe läggs till i en framtida version.</p> |
-   | [!UICONTROL **Inga senaste data**] | Visa endast komponenter som inte har samlat in några data under de senaste 90 dagarna. Det här alternativet är endast tillgängligt för administratörer. |
-   | [!UICONTROL **Skapad av Adobe**] <!-- I don't see this option--> | Visa endast komponenter som har skapats av Adobe. Komponenter som har skapats av en administratör eller en annan användare i organisationen visas inte. |
+| Alternativ | Funktion |
+|---------|----------|
+| [!UICONTROL **Godkänd**] | Visa endast komponenter som har markerats som Godkänd av en administratör. |
+| [!UICONTROL **Favoriter**] | Visa endast komponenter som finns i din favoritlista. Mer information om hur du lägger till komponenter i din favoritlista finns i [Komponenter - översikt](/help/analyze/analysis-workspace/components/analysis-workspace-components.md). |
+| [!UICONTROL **Dimensioner**] | Visa endast komponenter som är Dimensioner. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) |
+| [!UICONTROL **Mätvärden**] | Visa endast komponenter som är mätvärden. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) |
+| [!UICONTROL **Segment**] | Visa endast komponenter som är segment. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) <!--this is Filters in Customer Journey Analytics--> |
+| [!UICONTROL **Datumintervall**] | Visa endast komponenter som är datumintervall. (Det här alternativet är också tillgängligt i [!UICONTROL **Snabbfilter**] -fliken när du först kommer åt datamordlistan.) |
+| [!UICONTROL **Visa alla**] | Visa alla komponenter. Det här alternativet är endast tillgängligt för administratörer. |
+| [!UICONTROL **Ej godkänt**] | Visa endast komponenter som ännu inte har markerats som Godkända av en administratör. Som administratör är detta användbart när du identifierar komponenter som kräver granskning och godkännande. Det här alternativet är endast tillgängligt för administratörer. |
+| [!UICONTROL **Beskrivning saknas**] | Visa endast komponenter som ännu inte har någon beskrivning i fältet Beskrivning. Det här alternativet är endast tillgängligt för administratörer. |
+| [!UICONTROL **Visa dubbletter**] | <p>Visa bara komponenter som har samma namn eller definition som en annan komponent i den valda rapportsviten. Namn eller definitioner måste vara exakta matchningar för att kunna visas som dubbletter.</p><p>Det här alternativet är endast tillgängligt för administratörer.</p><p>**OBS!** För definitioner omfattar detta både de komponenter du skapar och de som tillhandahålls av Adobe. För namn innehåller detta för närvarande bara komponenter som du skapar och inte de som tillhandahålls av Adobe. Dubblettnamn för komponenter som tillhandahålls av Adobe läggs till i en framtida version.</p> |
+| [!UICONTROL **Inga senaste data**] | Visa endast komponenter som inte har samlat in några data under de senaste 90 dagarna. Det här alternativet är endast tillgängligt för administratörer. |
+| [!UICONTROL **Skapad av Adobe**] <!-- I don't see this option--> | Visa endast komponenter som har skapats av Adobe. Komponenter som har skapats av en administratör eller en annan användare i organisationen visas inte. |
 
-   {style="table-layout:auto"}
+{style="table-layout:auto"}
 
 ## Komponentinformation för dataordlista {#dd-component-information}
 
-| Alternativ |  -funktion |
+| Alternativ | Funktion |
 |---------|----------|
 | [!UICONTROL **Godkänd**] | <p>Anger att komponenten har granskats och godkänts av administratören.</p><p>När en komponent har godkänts kan administratören ta bort godkännandet genom att välja **Godkänd** -knappen.</p> |
 | [!UICONTROL **Godkännande krävs**] | <p>Anger att komponenten ännu inte har granskats och godkänts av administratören.</p><p>Administratörer kan välja att [!UICONTROL **Godkänn**]. Om du väljer det här alternativet markeras komponenten som&quot;Godkänd&quot; för användare.</p> |
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ## Alternativ för komponentsortering {#components-sort-options}
 
-| Alternativ |  -funktion |
+| Alternativ | Funktion |
 |---------|----------|
 | [!UICONTROL **Rekommenderas**] | Sorterar komponenter med de som rekommenderas högst upp i listan. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i listan. |
 | [!UICONTROL **Alfabetiskt**] | Sorterar komponenterna i bokstavsordning. |

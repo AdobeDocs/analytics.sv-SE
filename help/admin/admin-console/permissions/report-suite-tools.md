@@ -3,9 +3,9 @@ title: Produktprofilbehörigheter för Report Suite-verktyg i Adobe Admin Consol
 description: Förstå varje behörighetsobjekt under Report Suite Tools.
 exl-id: ca38d02f-2e88-49a3-a08c-515f21ee0099
 feature: Admin Tools
-source-git-commit: 512c348bda14654daa155f774dd384cba4aed2bd
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '439'
 ht-degree: 2%
 
 ---
@@ -19,9 +19,6 @@ På den här sidan kan du förstå alla behörighetsobjekt under Report Suite-ve
 | [!UICONTROL Account Summary] | Ger åtkomst till Allmänt > Allmänna kontoinställningar i Report Suite Manager. |
 | [!UICONTROL Advertising Analytics Configuration] | Användaren kan konfigurera rapportsviter som ska etableras för Advertising Analytics. |
 | [!UICONTROL Anomaly Detection] | Ger åtkomst till avvikelseidentifiering i Analysis Workspace. |
-| [!UICONTROL Bot Pages] | Ger åtkomst till Site Metrics > Bots > Bot Pages report in Reports &amp; Analytics. |
-| [!UICONTROL Bots] | Ger åtkomst till Site Metrics > Bots > Bots report in Reports &amp; Analytics. |
-| [!UICONTROL Channel Report] | Ger åtkomst till marknadsföringskanalerna > Kanalöversiktsrapport i rapporter och analyser. |
 | [!UICONTROL Channels] | Ger åtkomst till marknadsföringskanaler, inklusive Marketing Channel Manager, regler för bearbetning av marknadsföringskanaler och förfallodatum för marknadsföringskanaler i Report Suite Manager. |
 | [!UICONTROL Classifications] | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager. Detta behörighetsobjekt innehåller: <br>Trafik > Traffic Classifications<br>Konvertering > Konverteringsklassificeringar<br>Konvertering > Klassificeringshierarkier<br>Marknadsföringskanaler > Marketing Channel Classifications<br>Apphantering > Appklassificeringar<br>Mediehantering > Medieklassificeringar<br>AEM > AEM Assets Classics<br>Adobe Campaign > Adobe Classics |
 | [!UICONTROL Costs] | Ger åtkomst till marknadsföringskanaler > Marknadskanalkostnader i Report Suite Manager. |
@@ -38,12 +35,9 @@ På den här sidan kan du förstå alla behörighetsobjekt under Report Suite-ve
 | [!UICONTROL Finding Methods] | Ger åtkomst till Conversion > Finding Methods i Report Suite Manager. |
 | [!UICONTROL List Variables] | Ger åtkomst till Conversion > List Variables i Report Suite Manager. |
 | [!UICONTROL Menu Customization] | Ger åtkomst till Allmänt > Anpassa menyer i Report Suite Manager. |
-| [!UICONTROL My Recommended Reports] | Ger åtkomst till Site Metrics > My Recommended Reports in Reports &amp; Analytics. |
 | [!UICONTROL Paid Search] | Ger åtkomst till Allmänt > Identifiering av betald sökning i Report Suite Manager. |
 | [!UICONTROL Processing Rules] | Ger åtkomst till Allmänt > Bearbetningsregler och Allmänt > Punktregler i Report Suite Manager. |
-| [!UICONTROL RealTime Report] | Ger åtkomst till Site Metrics > Real-Time i Reports &amp; Analytics. Använd behörighetsobjektet Konfiguration av realtidsrapport om du vill bevilja åtkomst för att konfigurera rapporten. |
 | [!UICONTROL Real Time Report Configuration] | Ger åtkomst till realtid i Report Suite Manager. Använd behörighetsobjektet &#39;RealTime Report&#39; för att ge åtkomst till själva rapporten. |
-| [!UICONTROL Return Visits] | Ger åtkomst till Behåll besökare > Returbesök i rapporter och analyser. |
 | [!UICONTROL Reporting Activity Manager Admins] | Används inte |
 | [!UICONTROL Reporting Activity Manager Access] | Används inte |
 | [!UICONTROL Report Suite Mgmt] | Ger åtkomst till Report Suite Manager, men tillåter inga ändringar. |

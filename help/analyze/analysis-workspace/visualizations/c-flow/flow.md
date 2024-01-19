@@ -1,18 +1,18 @@
 ---
 description: Använd flödesvisualisering i ett Workspace-projekt.
-title: Översikt över flöden
+title: Flödesöversikt
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 feature: Visualizations
 role: User, Admin
 exl-id: 3a7d1552-7fae-41ae-8ca5-89800d05d3d4
-source-git-commit: aba4beb51446cdd54afc92047254a0ddd1c55ce3
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 3%
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
-# Översikt över flöden
+# Flödesöversikt
 
 Flödesfunktionen visar kundvägar via era webbplatser och appar.
 
@@ -21,10 +21,6 @@ Här kan du:
 * Visualisera kundresan via er webbplats eller tillämpning
 * Analysera vart kunderna ska gå före och efter angivna kontrollpunkter, som inmatning, en viss dimension eller avslut
 * Skapa segment genom att ange en specifik punkt i en vald bana
-
->[!NOTE]
->
->Information om hur resultaten av att tillämpa segment på Flow kan skilja sig åt mellan Analysis Workspace och Rapporter och analyser finns i [Segmentering som grund för flöde och utfall](/help/analyze/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
 Här är en videosjälvstudiekurs om Flow-visualisering:
 

@@ -4,16 +4,16 @@ title: Panelen Sidsammanfattning
 feature: Panels
 role: User, Admin
 exl-id: f0b7cd92-17b2-452d-9aab-f78629360ab8
-source-git-commit: bef175d9675134f4932407a0b9e4a3c67b1d27a5
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # Panelen Sidsammanfattning
 
-The [!UICONTROL Page summary] som startats som en rapport i Rapporter och analyser, under Rapporter > Engagemang > Sidanalys > Sidsammanfattning. Det är nu även en arbetsytepanel. På den här panelen kan du enkelt utforska nyckelstatistik om specifika sidor.
+På den här panelen kan du enkelt utforska nyckelstatistik om specifika sidor.
 
 ## Öppna panelen
 
@@ -48,7 +48,7 @@ The [!UICONTROL Page summary] panelen returnerar en mängd mätdata och visualis
 | [!UICONTROL Page views] - 52 veckor före | Antal sidvisningar för den här sidan det senaste året. |
 | [!UICONTROL Trend] | Ett trendat sidvydiagram för den här månaden, 4 veckor före och 52 veckor före. |
 | [!UICONTROL Percentage of all page views] | Ett sammanfattningsnummer för procentandelen av alla sidvyer som gick till den här sidan. |
-| [!UICONTROL Time spent on page] | Ett vågrätt stapeldiagram med en lista över hur lång tid som har tillbringats på den här sidan. |
+| [!UICONTROL Time spent on page] | Ett vågrätt stapeldiagram med en lista över hur lång tid som har tillbringats på sidan. |
 | [!UICONTROL Single page visits] | Ett sammanfattningsnummer med en lista över antalet sidvyer där det här var den enda sidan som besöktes. |
 | [!UICONTROL Reloads] | The [!UICONTROL Reloads] mått visar antalet gånger en dimensionsobjekt fanns under en omladdning. En besökare som uppdaterar sin webbläsare är det vanligaste sättet att utlösa en omladdning. |
 | [!UICONTROL Entries] | The [!UICONTROL Entries] mått visar hur många gånger en viss dimensionspost hämtas som det första värdet i ett besök. |

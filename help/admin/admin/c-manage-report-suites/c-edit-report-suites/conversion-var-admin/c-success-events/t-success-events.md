@@ -4,10 +4,10 @@ title: Konfigurera lyckade händelser
 feature: Event
 role: Admin
 exl-id: 0e9a6d8f-2ce7-4551-885d-bd77ff131da0
-source-git-commit: 429aaa43fdae669350bdb5a5a54a7d4b9b1c65f2
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 6%
+source-wordcount: '221'
+ht-degree: 7%
 
 ---
 
@@ -38,9 +38,9 @@ Så här konfigurerar du lyckade händelser:
 
    | Inställning | Synlig i | Inte synlig i |
    |---------|----------|---------|
-   | [!UICONTROL **Synlig överallt**] | <ul><li>Rapporter och analyser (meny- och mätväljare)</li><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | Ej tillämpligt |
-   | [!UICONTROL **Builders**] | <ul><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | <ul><li>Rapporter och analyser (meny- och mätväljare)</li><li>Analysis Workspace</li></ul> |
-   | [!UICONTROL **Dold överallt**] | Ej tillämpligt | <ul><li>Rapporter och analyser (meny- och mätväljare)</li><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> |
+   | [!UICONTROL **Synlig överallt**] | <ul><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> | Ej tillämpligt |
+   | [!UICONTROL **Builders**] | <ul><li>Segment Builder</li><li>Beräknad metrisk Builder</li><li>Analysis Workspace</li></ul> |
+   | [!UICONTROL **Dold överallt**] | Ej tillämpligt | <ul><li>Analysis Workspace</li><li>Segment Builder</li><li>Beräknad metrisk Builder</li></ul> |
 
 1. Ange en beskrivning.
 1. Kontrollera om händelsen alltid ska spelas in.

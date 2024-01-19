@@ -1,20 +1,20 @@
 ---
-description: Vanliga frågor om Workspace
+description: Vanliga frågor om arbetsytan
 title: Vanliga frågor och felsökningsarbetsyta
 feature: Workspace Basics
 role: User, Admin
 exl-id: cf7a9a73-bcbe-4bf5-b5dc-913199ab229c
-source-git-commit: 5bad2982cc8883701be3c63a6ca179933fb59d2a
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '537'
+ht-degree: 25%
 
 ---
 
 # Frågor och svar
 
 +++Vilka är förutsättningarna för att använda Analysis Workspace?
-[Skicka data till Adobe Analytics med Adobe Analytics-tillägget](/help/implement/launch/validate-publish-prod.md): Analysis Workspace kräver en fungerande implementering. Kontrollera att din organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som till exempel äldre manuella implementeringar, kan också fungera.
+[Skicka data till Adobe Analytics med Adobe Analytics-tillägget](/help/implement/launch/validate-publish-prod.md): Analysis Workspace kräver en fungerande implementering. Se till att din organisation skickar data till Adobe innan du använder verktyget. Andra implementeringar, som till exempel äldre manuella implementeringar, kan också fungera.
 +++
 
 +++Vilka är kraven för administration och åtkomst för Analysis Workspace?
@@ -22,7 +22,7 @@ Se [Administrationskrav](/help/analyze/analysis-workspace/workspace-faq/frequent
 +++
 
 +++Kommer Analysis Workspace att påverka datainsamlingen?
-Eftersom Analysis Workspace är ett rapportverktyg påverkar det inte datainsamlingen. Du kan dra komponenter till ett projekt för att se vad som fungerar utan att oroa dig för följderna. Dra olika kombinationer av mått och mätvärden till Workspace-projektet för att se vad som är tillgängligt för dig. Om du av misstag drar en ogiltig komponent till Workspace-projektet eller vill gå bakåt ett steg trycker du på Ctrl+Z (Windows) eller Kommando+Z (Mac) för att ångra den senaste åtgärden. Du kan också börja från början genom att klicka på **[!UICONTROL Project]** > **[!UICONTROL New]** i den övre vänstra menyn.
+Eftersom Analysis Workspace är ett rapportverktyg påverkar det inte datainsamlingen. Du kan dra komponenter till ett projekt för att se vad som fungerar utan att oroa dig för följderna. Dra olika kombinationer av mått och mätvärden till arbetsyteprojektet för att se vad som är tillgängligt för dig. Om du av misstag drar en ogiltig komponent till Workspace-projektet eller vill gå bakåt ett steg trycker du på Ctrl+Z (Windows) eller Kommando+Z (Mac) för att ångra den senaste åtgärden. Du kan också börja från början genom att klicka på **[!UICONTROL Project]** > **[!UICONTROL New]** i den övre vänstra menyn.
 +++
 
 +++Hur många rapportsviter kan visas i ett Analysis Workspace-projekt?
@@ -34,11 +34,11 @@ Ingen särskild implementering krävs. Analysis Workspace är tillgängligt för
 +++
 
 +++Ändrar Analysis Workspace förkonfigurerade rapporter i Adobe Analytics?
-Nej. Eftersom det här är en separat miljö finns det inga ändringar i dina befintliga eller förkonfigurerade rapporter i Adobe Analytics. Du kan fortfarande använda standardrapporter, analyser och Report Builder med Analysis Workspace.
+Nej. Eftersom det här är en separat miljö finns det inga ändringar i dina befintliga eller förkonfigurerade rapporter i Adobe Analytics. Du kan fortfarande använda Report Builder-standardrapporter med Analysis Workspace.
 +++
 
-+++Kan jag använda Analysis Workspace för Data warehouse?
-Analysis Workspace rekommenderas inte för massdataexport. Det är en visualiseringsarbetsyta som skapar kontrollpanelsliknande analysprojekt.
++++Kan jag använda Analysis Workspace som Data Warehouse?
+Analysis Workspace rekommenderas inte för bulkdataexport. Det är en visualiseringsarbetsyta som skapar kontrollpanelsliknande analysprojekt.
 +++
 
 +++Hur kan jag optimera prestandan för Analysis Workspace?
@@ -64,7 +64,7 @@ Se den här videon om loggspårning av användningsloggar för Analysis Workspac
 Ogiltiga data innebär att Adobe inte kan returnera data med den kombination av mått och mätvärden som används i rapporten. Två mätvärden som staplas ovanpå varandra kan till exempel inte returneras som data, eftersom det inte finns något sätt att visa två mätvärden på det sättet. Istället placerar du mätvärdena sida vid sida.
 +++
 
-+++När jag drar ett mätvärde ser jag inga data, bara nollor. Hur felsöker jag det här problemet?
++++När jag drar ett mätresultat över ser jag inga verkliga data - bara nollor. Hur felsöker jag det här problemet?
 Om du har skapat en rapport om arbetsytan men det inte finns några data kan du kontrollera några saker:
 
 * Kontrollera att rapportsviten är ifylld med data.

@@ -3,9 +3,9 @@ title: Produktprofilbehörigheter för analysverktyg
 description: Använd behörighetsobjekt i Analytics Tools för att ge åtkomst till funktioner i Adobe Analytics.
 exl-id: 8c2ce50b-f75f-41c3-91ac-a0426ce27438
 feature: Admin Tools
-source-git-commit: e53205605642d5c383b1385c5ac4f24e51e6d316
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '368'
 ht-degree: 2%
 
 ---
@@ -18,14 +18,13 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 |----|----|
 | [!UICONTROL Activity Map] | Ger åtkomst till Verktyg > Activity Map. Tillåter användaren att använda tillägget Activity Map. |
 | [!UICONTROL Advertising Analytics Management] | Tillåter användare att konfigurera/redigera/visa annonssökkonton. |
-| [!UICONTROL Analysis Workspace Access] | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra den här gruppen (helst) eller Rapporter och analyser för att kunna använda Adobe Analytics. |
+| [!UICONTROL Analysis Workspace Access] | Ger åtkomst till Analysis Workspace. |
 | [!UICONTROL Analysis Workspace: Save As Template] | Ger åtkomst till Projekt > Spara som mall i Analysis Workspace. |
 | [!UICONTROL Annotation Creation] | Ger möjlighet att skapa anteckningar. |
 | [!UICONTROL Calculated Metric Creation] | Ger möjlighet att skapa beräknade värden för alla Analytics-funktioner. |
 | [!UICONTROL Co-Branding] | Används inte |
 | [!UICONTROL Code Manager] | Vi har kvar dem i bakgrunden. Ger åtkomst till Admin > Alla administratörer > Kodhanteraren. I de flesta fall bör du i stället använda de bibliotek som ingår i Adobe Analytics-tillägget i Adobe Experience Platform Data Collection. |
 | [!UICONTROL Code Manager - Web Services] | Ger åtkomst till Code Manager via 1.4 API. |
-| [!UICONTROL Current Data] | Aktiverar alternativet att visa aktuella data i rapporter och analysrapporter. |
 | [!UICONTROL Excel License Users] | Används inte. |
 | [!UICONTROL Hide Report Suites] | Ger åtkomst till Admin > All admin > Company settings > Hide Report Suites. Ger möjlighet att dölja alla rapporteringsprogram i organisationen, oavsett åtkomst till deras rapporteringsprogram. |
 | [!UICONTROL Integrations (Create)] | Används inte. Data Connectors har blivit uppsagd. |
@@ -38,7 +37,6 @@ Behörighetsobjekt för Analytics-verktyg ger åtkomst till funktioner i Adobe A
 | [!UICONTROL Pending Actions] | Ger åtkomst till Admin > Alla administratörer > Företagsinställningar > Väntande åtgärder. |
 | [!UICONTROL Preferences] | Används inte |
 | [!UICONTROL Report Builder] | Aktiverar hämtningsknappen under Verktyg > Report Builder och tillåter att användaren autentiserar i Microsoft Excel. |
-| [!UICONTROL Reports & Analytics Access] | Ger åtkomst till rapporter och analyser. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |
 | [!UICONTROL Security] | Ger åtkomst till Admin > All admin > Company settings > Security Manager. |
 | [!UICONTROL Segment Creation] | Ger möjlighet att skapa och dela segment över alla Analytics-funktioner. |
 | [!UICONTROL Segment Publishing] | Ger möjlighet att göra ett segment till en Experience Cloud-målgrupp när du skapar eller redigerar ett segment. |

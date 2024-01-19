@@ -2,10 +2,11 @@
 description: Allmän översiktsinformation om Adobe Analytics, inklusive information om Analytics-gränssnittet samt komma igång-information för administratörer, analytiker, användare och utvecklare.
 title: Förstå analysgränssnittet
 feature: Analytics Basics
-source-git-commit: 5ee4e5aa970bb24828092c04fc31cc53f43c4ade
+exl-id: 61ae6aa6-96e4-4794-8ce3-0d6e0ec47e0a
+source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
 workflow-type: tm+mt
-source-wordcount: '2812'
-ht-degree: 4%
+source-wordcount: '2097'
+ht-degree: 5%
 
 ---
 
@@ -29,9 +30,7 @@ Mer information om funktioner finns på [!UICONTROL Workspace] flik, se [Adobe A
 
 ## Fliken Rapport
 
-Från och med den 31 december 2023 avser Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner.
-
-Använd i stället [!UICONTROL **Rapporter**] området i den vänstra listen på vänster sida [!UICONTROL **Arbetsyta**] -fliken. Mer information finns i *Navigera på fliken Rapporter* in [Adobe Analytics landningssida](/help/analyze/landing.md).
+Använd [!UICONTROL **Rapporter**] området i den vänstra listen på vänster sida [!UICONTROL **Arbetsyta**] -fliken. Mer information finns i *Navigera på fliken Rapporter* in [Adobe Analytics landningssida](/help/analyze/landing.md).
 
 ## Fliken Komponenter
 
@@ -44,20 +43,18 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
 2. Välj någon av följande produktfunktioner för att konfigurera den:
 
 
-   | Funktioner |  -funktion | Mer information |
+   | Funktioner | Funktion | Mer information |
    |---------|----------|----------|
    | Segment | Med Adobe Analytics kan ni skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i era rapporter med hjälp av Analytics-funktionerna, Adobe Experience Cloud, Adobe Target och andra integrerade Adobe-produkter. | [Analytics-segmentering](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html?lang=en) |
-   | Beräknade värden | Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.  Med dem kan marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av Analytics. | [Beräknade och avancerade beräknade (härledda) mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) |
+   | Beräknade mått | Beräknade och avancerade beräknade (eller härledda) mått är anpassade mått som du kan skapa utifrån befintliga mätvärden.  Med dem kan marknadsförare, produktchefer och analytiker ställa frågor om data utan att behöva ändra implementeringen av Analytics. | [Beräknade och avancerade beräknade (härledda) mätvärden](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en) |
    | Datumintervall | Analysis Workspace innehåller en lista med standarddatumintervall som användare kan använda när de skapar analyser. Dessutom kan du skapa anpassade datumintervall och göra dem tillgängliga för användare i Analysis Workspace. | [Skapa anpassade datumintervall](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/calendar-date-ranges/custom-date-ranges.html?lang=en) <!-- should create an article in the Components Guide for managing/creating date ranges. This article in the Tools Guide needs updating. --> |
    | Virtuella rapportsviter | Virtuella rapportsviter segmenterar era Adobe Analytics-data så att ni kan styra åtkomsten till varje segment. | [Översikt över Virtual Report Suites](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=en) |
    | Larm | Intelligenta aviseringar ger mer exakt kontroll över aviseringar och integrerar avvikelseidentifiering med varningssystemet. | [Intelligenta aviseringar](https://experienceleague.adobe.com/docs/analytics/components/alerts/intellligent-alerts.html?lang=en) |
-   | Målgrupper | Med målgrupperna kan ni mäta webbplatsens resultat och följa utvecklingen mot målmålen. När du skapar mål väljer du vilka attributvärden eller eVars som du vill mäta, eller så kan du välja att mäta hela webbplatsen mot det valda måttet. <p>Målen ingår i Rapporter och analyser. Läs mer om rapporter och analyser [Meddelande om att produkten är slut](https://express.adobe.com/page/6WnF8JK6IRDhf/).</p> | [Målgrupper](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/targets.html?lang=en) |
    | Kalenderhändelser | För rapporter som utvecklats över tid kan du med kalenderhändelser visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden. | [Kalenderhändelser](https://experienceleague.adobe.com/docs/analytics/components/t-calendar-event.html?lang=en) |
    | Anteckningar | Anteckningar i Workspace gör att du effektivt kan kommunicera kontextuella datanunkter och insikter till din organisation. De gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden. | [Hantera anteckningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/annotations/manage-annotations.html?lang=en) |
    | Klassificeringsuppsättningar | Klassificeringsuppsättningar har ett enda gränssnitt för att hantera klassificeringar och regler. <p>En klassificering är ett sätt att kategorisera Analytics-variabeldata och sedan visa data på olika sätt när du genererar rapporter. Du upprättar en relation mellan ett variabelvärde och metadata som är relaterade till det värdet. Klassificeringar kan användas för de flesta anpassade dimensioner, som spårningskod, props och eVars.</p> | [Översikt över klassificeringsuppsättningar](https://experienceleague.adobe.com/docs/analytics/components/classifications/sets/overview.html?lang=en) |
    | Platser | För att kunna importera Adobe Analytics-klassificeringsdata från ett molnmål måste du först lägga till och konfigurera platsen där du vill att klassificeringsdata ska samlas in. Du kan skapa, redigera och ta bort platser. | [Platshanteraren](https://experienceleague.adobe.com/docs/analytics/components/locations/locations-manager.html?lang=en) |
    | Schemalagda projekt | När du hanterar schemalagda projekt kan du redigera och ta bort återkommande projektscheman, söka efter ett schema i sökfältet eller med filteralternativen i den vänstra listen och filtrera efter tagg, godkända scheman, ägare med mera. | [Schemalagda projekt](/help/components/scheduled-projects-manager.md) |
-   | Bokmärken | Bokmärken ger dig tillgång till de rapporter du använder mest. Bokmärkena som du skapar läggs till i Experience Cloud och finns i integrerade funktioner som dataanslutningar. <p>Bokmärken ingår i Rapporter och analyser. Läs mer om rapporter och analyser [Meddelande om att produkten är slut](https://express.adobe.com/page/6WnF8JK6IRDhf/). | [Bokmärkeshanteraren](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/bookmarks.html?lang=en) |
    | Kontrollpaneler | Kontrollpaneler skapas för att visualisera mätvärden och tillhandahålla interaktiv analysfunktion med data. Genom att klicka på objekt i en kontrollpanel kan du snabbt och enkelt segmentera data för att hämta information från din analys. <p>Instrumentpaneler ingår i Datan Workbench. Läs mer om Datan Workbench [Meddelande om att produkten är slut](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html?lang=en). | [Instrumentpanelshanteraren](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/dashboard-manage.html?lang=en) |
    | Schemalagda rapporter | Administratörsnivåanvändare kan se och hantera schemalagda rapporter i hela organisationen. | [Schemalagd rapportkö](https://experienceleague.adobe.com/docs/analytics/components/scheduled-reports-admin.html?lang=en) |
    | Rapportinställningar | Dessa inställningar avser äldre Adobe Analytics-produkter, som inte innehåller Analysis Workspace och dess tillhörande komponenter. Gå till Komponenter > Inställningar om du vill göra ändringar i Analysis Workspace-inställningarna. |  |
@@ -75,11 +72,11 @@ The [!UICONTROL Components] -fliken innehåller funktioner som hjälper dig att 
 
 2. Välj någon av följande produktfunktioner för att konfigurera den:
 
-   | Funktioner |  -funktion | Mer information |
+   | Funktioner | Funktion | Mer information |
    |---------|----------|----------|
    | Data Warehouse | Data Warehouse avser kopian av Analytics-data för lagring och anpassade rapporter, som du kan köra genom att filtrera data. <p>Med Hanteraren för begäran kan du visa, duplicera och prioritera om begäranden.</p> | [Hantera Data Warehouse-förfrågningar](https://experienceleague.adobe.com/docs/analytics/export/data-warehouse/data-warehouse-requests-manage.html?lang=en) |
    | Activity Map | Activity Map är utformat för att rangordna länkaktivitet med hjälp av visuella överlägg och tillhandahålla en instrumentpanel med realtidsanalyser för att övervaka målgruppernas engagemang på era webbsidor. Ni kan skapa olika vyer för att visuellt identifiera kundaktivitetens acceleration, kvantifiera marknadsföringssatsningar och agera utifrån målgruppens behov och beteenden. | [Översikt över Activity Map](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/activity-map.html?lang=en) |
-   | Recommendations Classic | Recommendations är en Adobe Target-funktion som automatiskt visar produkter, tjänster eller innehåll som kan intressera besökarna baserat på tidigare användaraktivitet, önskemål eller andra kriterier. | [Rekommendationer](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=en) |
+   | Recommendations Classic | Recommendations är en Adobe Target-funktion som automatiskt visar produkter, tjänster eller innehåll som kan intressera besökarna baserat på tidigare användaraktivitet, önskemål eller andra kriterier. | [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=en) |
    | Sök och marknadsför | Den här funktionen stöds inte längre. |  |
    | Mobiltjänster | Den här funktionen stöds inte längre. |  |
    | Kontrollpaneler för analyser (mobilapp) | Appen Adobe Analytics dashboards ger dig alltid insikter från Adobe Analytics. Via appen kan användarna visa intuitiva styrkort som du skapar med hjälp av Adobe Analytics datorgränssnitt. | Adobe Analytics-appen för kontrollpaneler i iOS App Store eller Google Play Store |
@@ -97,7 +94,7 @@ På fliken Admin finns funktioner och konfigurationsalternativ för att administ
 
 2. Välj någon av följande produktfunktioner för att konfigurera den:
 
-   | Funktioner |  -funktion | Mer information |
+   | Funktioner | Funktion | Mer information |
    |---------|----------|----------|
    | Analysanvändare och -resurser | De flesta funktionerna för användar- och produkthantering finns nu bara i [Adobe Admin Console](https://helpx.adobe.com/se/enterprise/using/admin-console.html), är de administrativa funktionerna för att överföra resurser från en användare till en annan, samt att ange ett förfallodatum för ett användarkonto, bara tillgängliga från Adobe Analytics Admin. | [Överför användarresurser eller ange förfallodatum för konton](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) |
    | Migrering av användar-ID | Med migreringen av användar-ID:n i Analytics kan administratörer enkelt migrera användarkonton i Analytics-användarhantering till Adobe Admin Console. | [Migrering av Analytics-användare till Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/migrate-users/c-migration-tool.html?lang=en) |
@@ -117,16 +114,13 @@ På fliken Admin finns funktioner och konfigurationsalternativ för att administ
    | Advertising Analytics | Konfigurera Adobe Analytics så att alla dina Google- och Bing-betalsökningsdata visas sida vid sida. | [Konfigurera Advertising Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/advertising-analytics-config.html?lang=en) |
    | Dataflöden | Dataflöden är ett kraftfullt sätt att få ut rådata från Adobe Analytics. Dessa rådata kan användas på andra plattformar utanför Adobe efter eget gottfinnande. | [Översikt över Analytics Data Feed](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=en) |
    | Exkludera efter IP | Du kan undanta data från specifika IP-adresser, som interna webbplatsaktiviteter, platstestning och personalanvändning, från dina rapporter. Om du exkluderar data förbättras rapportens exakthet genom att IP-adressdata utesluts. Dessutom kan du ta bort data från denial of service eller andra skadliga händelser som kan förvränga rapportdata. Du kan konfigurera undantag eller använda brandväggen. | [Exkludera efter IP-adress](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/exclude-ip.html?lang=en) |
-   | Publicera widgetar | Gör att du kan bädda in en rapport- och analysvisualisering på en webbsida. <p>Från och med den 31 december 2023 avser Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Läs mer om rapporter och analyser [Meddelande om att produkten är slut](https://www.adobe.com/go/analytics_rnaeol_en).</p><p>Som ett alternativ till den här funktionen kan du nu [dela ett projekt inom alla](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=en#share-public-link) utan inloggning.</p> <p>Administratörer kan konfigurera den här funktionen i [Företagsinställningar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=en#company-preferences)</p> |  |
    | Rapporteringsaktivitetshanteraren | Med Rapporteringsaktivitetshanteraren kan du se rapporteringskapaciteten för varje rapportsvit i organisationen. Den ger detaljerad insyn i hur man rapporterar förbrukning och hjälper er att enkelt diagnostisera och åtgärda kapacitetsproblem under perioder med hög rapporteringsnivå. | [Rapporteringsaktivitetshanteraren](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/reporting-activity.html?lang=en) |
-   | Etikettering av integritetsskydd för datahantering | Med hjälp av data i etikettrapportsviten kan du tilldela etiketter för identiteter, känslighet och datastyrning till varje variabel i en viss rapportsvit. | [Data i etikettrapportsvit](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/data-labels/gdpr-setup-reportsuite.html?lang=en) |
+   | Etikettering av integritetsskydd för datahantering | Med hjälp av etikettrapportsvitdata kan du tilldela identiteter, känslighet och datastyrningsetiketter till varje variabel i en viss rapportserie. | [Data i etikettrapportsvit](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/data-labels/gdpr-setup-reportsuite.html?lang=en) |
    | Startsida för företagsinställningar | På sidan Företagsinställningar kan du konfigurera inställningar som gäller för alla rapportsviter som hanteras av din organisation. | [Översikt över företagsinställningar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/c-company-settings.html?lang=en) |
    | Säkerhetshanteraren | Med Säkerhetshanteraren kan du styra åtkomsten till rapportdata. Du kan välja starka lösenord, lösenord, IP-inloggningsbegränsningar och e-postdomänbegränsningar. | [Säkerhetshanteraren](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/security-manager.html?lang=en) |
-   | Support | På sidan Supportinformation hanteras den supportinformation som visas i rapporter och analyser. Rapporter och analyser. <p>Från och med den 31 december 2023 avser Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Läs mer om rapporter och analyser [Meddelande om att produkten är slut](https://www.adobe.com/go/analytics_rnaeol_en).</p> |  |
    | Webbtjänster | Webbtjänstens API:er ger programmatisk åtkomst till marknadsföringsrapporter och andra Suite-tjänster som gör att du kan duplicera och förstärka funktioner som är tillgängliga via Analytics-gränssnittet. | [Webbtjänster](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/web-services-admin.html?lang=en) |
-   | Report Builder-rapporter | Hantera licenser som tilldelats användare av Report Builder. | [Report Builder-rapporter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/report-builder-reports-admin.html?lang=en) |
+   | Report Builder rapporter | Hantera licenser som tilldelats användare av Report Builder. | [Report Builder-rapporter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/report-builder-reports-admin.html?lang=en) |
    | Tjänsten för enkel inloggning | Enkel inloggning i Adobe Experience Cloud implementeras via Admin Console. | [Analyser i Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=en) |
-   | Sammärka Adobe Experience Cloud | På sidan Hantera bild för co-branding kan du visa företagets logotyp i rapporter och analyser som hämtats och äldre instrumentpaneler. Sammärkning används inte i Analysis Workspace.<p>Från och med den 31 december 2023 avser Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Läs mer om rapporter och analyser [Meddelande om att produkten är slut](https://www.adobe.com/go/analytics_rnaeol_en).</p> | [Samprofilering](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/co-branding-admin.html?lang=en) |
    | Dölj rapportsviter | Gör att du kan dölja rapportsviter i Adobe Analytics användargränssnitt om du inte längre vill att en rapportserie ska vara tillgänglig för dig och dina användare. | [Dölj rapportsviter](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/company-settings/c-hide-report-suites.html?lang=en) |  |
 
    {style="table-layout:auto"}
@@ -139,7 +133,7 @@ I följande bild och tabell förklaras några av huvudområdena i Analysis Works
 
 Mer information om Analysis Workspace finns i [Analysis Workspace - översikt](/help/analyze/analysis-workspace/home.md).
 
-![Översikt över Analysis Workspace](assets/analysis-workspace-overvew.png)
+![Analysis Workspace - översikt](assets/analysis-workspace-overvew.png)
 
 | Plats i bild | Namn och funktion |
 |---------|----------|

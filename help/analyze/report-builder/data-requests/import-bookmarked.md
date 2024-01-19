@@ -1,17 +1,17 @@
 ---
 description: Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu som dimensioner i begärandeguiden steg 1 och kan importeras som Report Builder-begäranden.
-title: Importera bokmärkta rapporter och minirapporter från kontrollpaneler
+title: Importera bokmärkesrapporter och kontrollpanelrapporter
 feature: Report Builder
 role: User, Admin
 exl-id: 19813950-2495-4a75-aacb-587b59bf2484
-source-git-commit: d218d07ec16e981d7e148092b91fbbd5711e840f
+source-git-commit: a979fc8787fa96f8fa8317996ac66341a6f54354
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 3%
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
-# Importera bokmärkta rapporter och minirapporter från kontrollpaneler
+# Importera bokmärkesrapporter och kontrollpanelrapporter
 
 Alla rapporter med bokmärken och kontrollpanelsrapporter listas nu som dimensioner i begärandeguiden steg 1 och kan importeras som Report Builder-begäranden.
 
@@ -25,16 +25,7 @@ När du klickar **[!UICONTROL Retrieve your Dashboards]** eller **[!UICONTROL Re
 
 >[!NOTE]
 >
->I Report Builder är listan med tillgängliga kontrollpaneler och bokmärken begränsad till användaren, men även till de som gäller för den rapportserie du valde i steg 1 i guiden. I marknadsföringsrapporter och -analyser får ni däremot tillgång till alla bokmärken och instrumentpaneler som är tillgängliga för er, oavsett vilka rapportsviter dessa instrumentpaneler och bokmärken använder.
-
->[!NOTE]
->
 >Endast data importeras, så om bokmärket innehåller ett diagram, eller om kontrollpanelens rapportlåt bara består av ett diagram, importeras endast de data som används för att fylla diagrammet.
 
 När du har skapat en begäran genom att importera en kontrollpanelsrapport (eller ett bokmärke) kopplas begäran sedan till rapportletens (eller bokmärkets) primära dimension. Om du redigerar begäran markeras därför inte längre trädvisningsnoden (eller bokmärkesnoden) för kontrollpanelsrapportletten, utan den primära dimensionen väljs i stället.
 
-Det importerade bokmärkesschemat ställer in rapportsviten, det valda segmentet, dimensionen och valda mätvärden på samma parametrar som visas i bokmärket Rapporter och analyser.
-
->[!IMPORTANT]
->
->Datumintervallet ställs in på samma datumintervall, men som ett statiskt datumintervall - även om det här datumintervallet var ett rullande datumintervall i bokmärket Rapporter och analyser.
