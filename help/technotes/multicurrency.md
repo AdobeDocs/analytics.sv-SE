@@ -3,10 +3,10 @@ description: Beskriver hur du definierar målvalutakoder för stöd för flera v
 title: Stöd för flera valutor
 feature: Analytics Basics
 exl-id: b67f459c-0636-4eac-af52-51846bb583b5
-source-git-commit: f659d1bde361550928528c7f2a70531e3ac88047
+source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
+source-wordcount: '124'
+ht-degree: 0%
 
 ---
 
@@ -22,8 +22,3 @@ Du kan använda [`currencyCode`](/help/implement/vars/config-vars/currencycode.m
 
 Varje rapportsvit har en **basvaluta**. Den här valutan anger kontexten för alla valutamått (som [Intäkter](/help/components/metrics/revenue.md)). Alla valutadata som lagras finns i rapportsvitens basvaluta.
 
-## Användarnivå
-
-För Rapporter och analyser kan användare ange en annan valuta än rapportsvitens basvaluta under [Rapportinställningar](/help/analyze/reports-analytics/report-settings.md). Den här inställningen är icke-förstörande, vilket innebär att den inte ändrar underliggande data. I stället tillämpas grundläggande valutakonvertering på alla rapporter som visas baserat på dagens valutakurs. Om du visar samma rapport på olika dagar kan siffrorna ändras på grund av olika dagliga valutakurser.
-
-Analysis Workspace erbjuder för närvarande ingen valutakonvertering på användarnivå.

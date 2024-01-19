@@ -5,9 +5,9 @@ uuid: f6d8c90f-e185-4d60-8035-f20f74bfcd89
 feature: Report Builder
 role: User, Admin
 exl-id: 6aaadaa8-d68f-4a03-8838-53a61b152e31
-source-git-commit: ed753ab23e65f845f472dd1df3b144284e4e94a6
+source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 0%
 Du kan schemalägga arbetsböcker, ange avancerade leveransalternativ, ange mottagare och visa schemahistoriken. Med avancerade leveransalternativ kan du konfigurera arbetsböcker som du vill skicka vid en viss tidpunkt eller i intervall. Du kan också ange i vilket filformat arbetsboken ska skickas.
 
 Du kan till exempel schemalägga att arbetsböcker ska levereras omedelbart eller enligt ett återkommande schema, och ange filformatet i [!DNL Advanced Delivery Options]. Filstorleksgränsen är 5 MB för överföring av arbetsbok.
-
-När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa och redigera schemat i **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**. (Se [Rapportschema och distribution](/help/analyze/reports-analytics/scheduling.md) i Rapporter och analyser.)
 
 >[!NOTE]
 >
@@ -34,7 +32,7 @@ När du har skapat ett arbetsboksschema i Report Builder kan du dessutom visa oc
 > * **Problem inom tjänster längre fram i kedjan** som schemaläggaren förlitar sig på kan också påverka leveransen av arbetsböcker. Om du t.ex. använder API:erna separat för att köra arbetsböcker och fylla i API-begärandekön kan dina schemalagda arbetsböcker leverera långsamt medan du konkurrerar om den resursen.
 > * **Sändningsfördröjning för rapport** (en fördröjning i datainsamlingen) kan även fördröja vissa schemalagda arbetsböcker.
 
-## Schemalägga en arbetsbok
+## Schemalägg en arbetsbok
 
 1. Generera och spara en arbetsbok.
 1. Klicka på verktygsfältet Report Builder **[!UICONTROL Schedule]**.

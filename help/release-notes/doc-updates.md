@@ -5,7 +5,7 @@ short-title: Analytics documentation updates
 feature: Release Notes
 exl-id: fe8e3c4c-6782-46f7-8e28-4f8f54807788
 mini-toc-levels: 3
-source-git-commit: ca6d5040aac3fd5b8df4e7cb4601ee41c9ad4998
+source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
 workflow-type: tm+mt
 source-wordcount: '4925'
 ht-degree: 23%
@@ -142,7 +142,7 @@ Innehållsuppdateringar för Adobe Analytics-dokumentation sedan januari 2019.
 | Uppdateringar av Adobe Analytics landningssida | [Uppdateringar](/help/analyze/landing.md) till landningssidan för gemensam arbetsyta/rapporter och analyser som förbättrar användbarheten och underlättar navigeringen. |
 | [!UICONTROL Next item] eller [!UICONTROL Previous item] Panelen Arbetsyta | På den här panelen kan du utforska objekt som följer eller föregår ett av de önskade dimensionsobjekten. |
 | [!UICONTROL Page Summary] Panelen Arbetsyta | Panelen innehåller en djupgående analys av en sida som du väljer. |
-| Nytt avsnitt om att pausa äldre schemalagda rapporter | Effektivt **15 april 2022**, Adobe tänker [pausa alla schemalagda rapporter som har ett skapandedatum som är senare än två år](/help/analyze/reports-analytics/scheduled-reports-eol.md). |
+| Nytt avsnitt om att pausa äldre schemalagda rapporter | Effektivt **15 april 2022** kommer Adobe att pausa alla schemalagda rapporter som har ett skapandedatum som är längre än två år |
 | **Februari 2022** |
 | Förhandsgranskningsläge för mobilstyrda projekt | The [förhandsgranskningsläge](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#preview) I kan du förhandsgranska upplevelsen innan du sparar och delar ett styrkort. |
 | Slutpunkt för API-projekt | Lägg till, redigera eller ta bort Analysis Workspace-projekt med API:t. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/projects/) |

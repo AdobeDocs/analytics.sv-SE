@@ -3,9 +3,9 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2535'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,6 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Kontextdatavariabler:** Tillfälliga variabler som endast används i bearbetningsregler. Variabelvärden för kontextdata förloras permanent om en bearbetningsregel inte kopierar dem till en konverterings- eller trafikvariabel. Se [Sammanhangsdatavariabler](../implement/vars/page-vars/contextdata.md) i Implementeringshandboken.
 * **Konverteringsvariabel:** Kallas också eVars. Sparar ett anpassat värde och bevarar variabelvärdet tills det upphör att gälla. Se [eVar](/help/components/dimensions/evar.md) -dimensionen i användarhandboken för komponenter.
 * **Korrelation:** Används inte längre som term; ersätts med dimensionsuppdelning. I tidigare versioner av Adobe Analytics gav korrelations möjlighet att bryta ned trafikvariabler. Se [Dela upp dimensioner](/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md) i användarhandboken för Analysera.
-* **Aktuella data:** Ett alternativ i vissa rapporter som tillåter att nyligen insamlade data som ännu inte har bearbetats inkluderas. Se [Aktuella data](/help/analyze/reports-analytics/current-data.md) i användarhandboken för Analysera.
 * **Egen länk:** En typ av träff som innehåller data som inte är sidvy. Se [funktionen s.tl()](../implement/vars/functions/tl-method.md) i Implementeringshandboken. Se även Träff.
 * **Kundattribut:** En Experience Cloud-funktion som tillåter överföring av attributdata. Se [Kundattribut](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) i användarhandboken för bastjänsterna.
 * **Kundsupportrepresentant:** En utsedd användare som har rätt att interagera direkt med Adobe kundtjänst. Se [Kundsupportrepresentanter](https://helpx.adobe.com/experience-cloud/supported-users.html) i Experience Cloud Knowledgebase.

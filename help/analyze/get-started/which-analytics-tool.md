@@ -3,10 +3,10 @@ description: Den här hjälpsidan innehåller rekommenderade användningsexempel
 title: Vilket Adobe Analytics-verktyg ska jag använda?
 feature: Analytics Basics
 exl-id: d65575df-19c6-4129-89c8-d36de7bb6b2f
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 2%
+source-wordcount: '1106'
+ht-degree: 1%
 
 ---
 
@@ -24,28 +24,9 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 **[Analysis Workspace](/help/analyze/analysis-workspace/home.md)** bör vara användargränssnittet för alla dina rapporterings- och analysbehov. Adobe fortsätter att investera i och släppa månadsuppdateringar av den här produkten. Om du inte kan göra något i Analysis Workspace bör du överväga de andra gränssnitten nedan.**
 
-**[Rapporter och analyser](/help/analyze/reports-analytics/overview/report-overview.md)** ska användas:
+**[Report Builder](/help/analyze/report-builder/home.md)** är ett tillägg för Microsoft Excel. Här kan du skapa anpassade förfrågningar från Adobe Analytics-data, som du kan infoga i dina Excel-kalkylblad. Begäranden kan referera till celler dynamiskt i kalkylbladet, och du kan uppdatera och anpassa hur Report Builder visar data.
 
-* Av nybörjare som behöver tillgång till fördefinierade rapporter som är enklare att navigera i.
-* Få åtkomst till realtidsdata i användargränssnittet.
-* Så här ställer du in kalenderhändelser.
-* Så här ställer du in mål.
-* Få tillgång till unika videovisualiseringar av Video Daypart och Viewer Drop-off.
-
->[!IMPORTANT]
->
->Effektivt **31 december 2023** kommer Adobe att upphöra med rapporter och analyser och tillhörande rapporter och funktioner. Då slutar rapporter och analyser och alla rapporter och scheman att fungera. Rapporterna, visualiseringarna och den underliggande tekniken som används i Rapporter och analyser uppfyller inte längre Adobe teknikstandarder. De flesta funktionerna Rapporter och Analytics är tillgängliga i Analysis Workspace. Sedan Analysis Workspace lanserades 2015 har funktionerna och funktionerna i Rapporter och analyser flyttats till Analysis Workspace och en tröskel på arbetsflödets paritet har uppnåtts. Det här meddelandet förklarar processen vid slutet av livscykeln.
-
-**[Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html)** ska användas:
-
-* För prediktiv, statistisk modellering (benägenhetsbedömning, klustring, korrelation osv.).
-* För fördröjningsanalys (tid före/sedan en händelse).
-* För identifiering och export av komplexa segment i hela Adobe Experience Cloud.
-
->[!IMPORTANT]
->
->Läs mer om Datans Workbench [Meddelande om att produkten är slut](https://experienceleague.adobe.com/docs/data-workbench/using/eol.html?lang=en).
-
+**[Adobe Analytics Dashboards](/help/analyze/mobile-app/home.md)** ger användarna mobil åtkomst till intuitiva styrkort. Styrkort är en samling viktiga mätvärden och andra komponenter som presenteras i en sida vid sida-layout som du kan trycka på för mer detaljerade uppdelningar och trendrapporter. Mobilappen stöds på både iOS och Android.
 
 ## Importera data till Adobe Analytics {#import}
 
@@ -74,7 +55,7 @@ Här är en video som jämför olika Adobe Analytics-verktyg:
 
 * När du behöver överföra data till Adobe Analytics och inte kan använda Adobe AppMeasurement eller mobil SDK-kod.
 
-**[API för insättning av data i bulk](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)**
+**[API för massdatainmatning](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md)**
 
 * API:t för datainfogning och API:t för datainfogning i grupp är båda metoder för att skicka samlingsdata på serversidan till Adobe Analytics. API-anrop för datainfogning görs en händelse i taget. API för datainfogning i grupp accepterar CSV-formaterade filer som innehåller händelsedata, en händelse per rad. Om du arbetar med en ny implementering av en serversidessamling rekommenderar vi att du använder API:t för datainfogning i grupp.
 
