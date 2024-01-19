@@ -3,7 +3,7 @@ description: Systemkrav och en jämförelse av Analysis Workspace, rapporter och
 title: Produktjämförelse och krav för analyser
 exl-id: 5adc6c10-cbbb-48d5-a7ab-367cbaff5e8a
 feature: Analytics Basics
-source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
+source-git-commit: a733d7296c61e7cb96c637bbd101268e492a1cd4
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 17%
@@ -17,7 +17,7 @@ Den här sidan innehåller en jämförelse av olika Adobe Analytics-produkter: A
 Information om vilken Adobe Analytics-produkt du ska använda finns i [Vilket Adobe Analytics-verktyg ska jag använda?](/help/analyze/get-started/which-analytics-tool.md).
 
 | Produkt- och hjälplänk | [Analysis Workspace](/help/analyze/analysis-workspace/home.md) | [Report Builder](/help/analyze/report-builder/home.md) | [Data Warehouse](/help/export/data-warehouse/data-warehouse.md) | [Datafeeds](/help/export/analytics-data-feed/data-feed-overview.md) | [Analytics API 2.0](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) |
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 | **Åtkomstmetod** | [Webbläsare](/help/analyze/get-started/sys-reqs.md) | [MS Excel för Windows](/help/analyze/report-builder/setup/system-requirements.md) | Konfigurera via webbläsaren. [Läs mer](/help/analyze/get-started/sys-reqs.md) | Konfigurera via webbläsaren. [Läs mer](/help/export/analytics-data-feed/data-feed-overview.md) | RESTful API tools. Logga in med Adobe Developer inloggningsuppgifter. [Läs mer](https://developer.adobe.com/analytics-apis/docs/2.0/) |
 | **Datagranularitet** | Sammanställd | Sammanställd | Sammanställd | Träff | Sammanställd |
 | **Experience Cloud-ID (ECID) tillgängligt** | Nej | Nej | Ja | Ja | Nej |
