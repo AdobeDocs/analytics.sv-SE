@@ -3,9 +3,9 @@ description: Felsök och åtgärda problem som rör segment.
 title: Felsökning av segmentering
 feature: Segmentation
 exl-id: ca51110e-1ba7-4182-b5b2-baf9b0c017af
-source-git-commit: 7a47d837eeae65f2e98123aca78029bfeb7ffe9d
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Fel: &quot;Inkompatibla element i det här segmentet&quot; {#incompatible}
 
-Det här felet inträffar när du försöker spara ett segment i Data warehouse-mappen där segmentet innehåller element som inte är kompatibla med Data warehouse. Gör något av två för att lösa det här felet:
+Det här felet inträffar när du försöker spara ett segment i den Data Warehouse där segmentet innehåller element som inte är kompatibla med Data Warehouse. Gör något av två för att lösa det här felet:
 
 * Spara segmentet i en annan mapp
 * Ta bort eller ändra inkompatibla delar av segmentet.
@@ -31,8 +31,7 @@ Möjliga orsaker:
 
 Möjliga orsaker:
 
-* Vissa dimensioner är bara tillgängliga i Data warehouse och inte i segmenthanteraren.
-* Segmentet är inte kompatibelt med rapporter och analyser.
+* Vissa dimensioner är bara tillgängliga i Data Warehouse och inte i segmenthanteraren.
 * Segmentet kontrolleras bara för en viss rapportserie.
 * Ett delat segment kan ha tagits bort av en annan användare.
 * Det gick inte att läsa in segment på grund av ett datacenter- eller webbläsarcachefel.

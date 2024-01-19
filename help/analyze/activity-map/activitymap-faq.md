@@ -5,10 +5,10 @@ uuid: e4f6d4e2-55d1-4e32-bf70-a334178af370
 feature: Activity Map
 role: User, Admin
 exl-id: 6b2767cb-6c2c-4bf3-b9a9-a23418624650
-source-git-commit: 0570bea923edc21a0f185f49fd6f604115d4a6e1
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 1%
+source-wordcount: '662'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Med några sekunders mellanrum skannar Activity Map webbsidan och letar efter ä
 
 * Activity Map kontrollerar om synligheten för länkar som de känner till har ändrats. Om synligheten ändras uppdateras kolumnen Present (Länkar på sida) för den länken med [!UICONTROL Displayed] eller [!UICONTROL Hidden].
 
-* När användarinteraktion skapar nytt innehåll läggs alla nya element som AppMeasurement finner vara en länk till i [!UICONTROL Links On Page] tabell. Activity Map skickar en ny databegäran som innehåller de nya länkarna. De nya länkarna ska visas i [!UICONTROL Links On Page] tabellen när databegäran hanteras av användargränssnittet.
+* När användarinteraktion skapar nytt innehåll läggs alla nya element som AppMeasurementet hittar som länkar till i [!UICONTROL Links On Page] tabell. Activity Map skickar en ny databegäran som innehåller de nya länkarna. De nya länkarna ska visas i dialogrutan [!UICONTROL Links On Page] tabellen när databegäran hanteras av användargränssnittet.
 +++
 
 +++Tillhandahåller Activity Map data om&quot;vyer&quot;?
@@ -72,11 +72,11 @@ Alla data som visas baseras på sidvisningar.
 +++
 
 +++Kan jag exportera datavariabler i Activity Map-kontext via dataflöden?
-Ja. The [Datakolumner](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) som Activity Map använder `clickmaplink`, `clickmaplinkbyregion`, `clickmappage`och `clickmapregion`.
+Ja. The [Datumkolumner](/help/export/analytics-data-feed/c-df-contents/datafeeds-reference.md) som Activity Map använder `clickmaplink`, `clickmaplinkbyregion`, `clickmappage`och `clickmapregion`.
 +++
 
 +++Fungerar segment i Live-läge?
-Nej, segment fungerar inte i Live-läge. Funktionen motsvarar den i realtidsrapporter i rapporter och analyser, som inte stöder segmentering.
+Nej, segment fungerar inte i Live-läge.
 +++
 
 +++Är Activity Map kompatibelt med virtuella rapportsviter?
@@ -89,9 +89,9 @@ Du har tre alternativ:
 * Ta bort `AppMeasurement_Module_ActivityMap` funktion från JS-filen
 * Lägg till egen kod som skriver om funktionen ovan med en tom brödtext, till exempel:
 
-   ```js
-   function AppMeasurement_Module_ActivityMap() {}
-   ```
+  ```js
+  function AppMeasurement_Module_ActivityMap() {}
+  ```
 
-* Konfigurera AppMeasurement med inställning `s.trackClickMap` och `s.trackInlineStats` till `false`
+* Konfigurera AppMeasurement genom att ange `s.trackClickMap` och `s.trackInlineStats` till `false`
 +++

@@ -3,10 +3,10 @@ description: Virtuella rapportsviter kan struktureras så att de inkluderar och 
 title: Komponentstrukturering för virtuell rapportserie
 feature: VRS
 exl-id: 19163829-328a-4064-b1be-8c09d1d94a0d
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '384'
+ht-degree: 0%
 
 ---
 
@@ -35,11 +35,10 @@ Om du vill aktivera komponenturval
    >
    >Om komponentanpassning är aktiverat är den virtuella rapportsviten tillgänglig **endast i Analysis Workspace** och är inte tillgängligt i följande:
    >
-   >* [!UICONTROL Reports & Analytics]
    >* [!UICONTROL Data Warehouse]
    >* [!UICONTROL Report Builder]
    >* [!UICONTROL Activity Map]
-   >* API för Analytics-rapportering
+   >* API för analysrapportering
 
    När du har markerat det här alternativet kan du lägga till de komponenter som du vill ska ingå i den virtuella rapportsviten genom att dra de tillämpliga komponenterna från kolumnen&quot;Uteslutna komponenter&quot; till kolumnen&quot;inkluderade komponenter&quot;. De komponenter som kan inkluderas och exkluderas är:
 

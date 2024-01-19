@@ -3,10 +3,10 @@ title: Hur tidsåtgången beräknas i Adobe Analytics
 description: En sammanställd sida med tid för mått och mått.
 feature: Metrics
 exl-id: 71e9b856-8a0a-47be-a73f-4dc7d639a5de
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 6%
+source-wordcount: '1614'
+ht-degree: 4%
 
 ---
 
@@ -18,14 +18,14 @@ Olika [!UICONTROL 'time spent'] [mått](overview.md) och finns för alla Adobe A
 
 | Mått | Definition | Finns i |
 |---|---|---|
-| [!UICONTROL Total seconds spent] | Representerar den totala tiden som besökare interagerar med en viss dimensionspost. Inkluderar förekomsten av ett värde och beständighet i alla efterföljande träffar. När det gäller proppar räknas även den tid som tillbringats över efterföljande länkhändelser. | Analysis Workspace, Reports &amp; Analytics, Report Builder (kallas&quot;total tidsåtgång&quot;), Data Warehouse |
-| [!UICONTROL Time spent per visit] (sekunder) | Ungefär *Antal sekunder per besök*<br> Representerar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök. **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace, rapporter och analyser |
-| [!UICONTROL Time spent per visitor] (sekunder) | Ungefär *Totalt antal sekunder som använts/unik besökare*<br> Representerar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace, rapporter och analyser |
+| [!UICONTROL Total seconds spent] | Representerar den totala tiden som besökare interagerar med en viss dimensionspost. Inkluderar förekomsten av ett värde och beständighet i alla efterföljande träffar. När det gäller proppar räknas även den tid som tillbringats över efterföljande länkhändelser. | Analysis Workspace, Report Builder (kallas&quot;total tid spenderad&quot;), Data Warehouse |
+| [!UICONTROL Time spent per visit] (sekunder) | Ungefär *Antal sekunder per besök*<br> Representerar den genomsnittliga tiden som besökare interagerar med en viss dimensionspost under varje besök. **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
+| [!UICONTROL Time spent per visitor] (sekunder) | Ungefär *Totalt antal sekunder som använts/unik besökare*<br> Representerar den genomsnittliga tiden som besökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
 | [!UICONTROL Time Spent/User (State)] | Ungefär *Totalt antal mobilappssekunder som använts/unika mobilappsbesökare*<br> Representerar den genomsnittliga tiden mobilappsbesökare interagerar med ett visst dimensionsobjekt under besökarens livstid (längden på deras cookie). **Anteckning**: Det här måttet kan inte beräknas oberoende av varandra eftersom nämnaren för den här funktionen är ett internt mått. | Analysis Workspace |
-| [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Anteckning**: Detta mätresultat skiljer sig med största sannolikhet från&quot;Time Spent per Visit&quot; på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Rapporter och analyser (visas på några minuter), Report Builder (visas på några minuter) |
+| [!UICONTROL Average time spent on site] (sekunder) | Representerar den totala tiden som besökare interagerar med en viss dimensionspost, per sekvens med en dimensionspost. Det är inte bara begränsat till &quot;webbplats&quot;-medelvärden som namnet antyder. Mer information om sekvenser finns i avsnittet &quot;Hur tidsåtgången beräknas&quot;.<br>**Anteckning**: Detta mätresultat skiljer sig med största sannolikhet från&quot;Time Spent per Visit&quot; på en dimensionspostnivå på grund av skillnaderna i nämnaren i beräkningen. | Analysis Workspace, Report Builder (visas på några minuter) |
 | [!UICONTROL Average time on site] | Detta är samma mätvärde som *Genomsnittlig tid på plats (sekunder)*, förutom formaterad som Tid (hh):mm:ss) | Analysis Workspace |
 | [!UICONTROL Average time spent on page] | Undertryckt mätvärde.<br> I stället rekommenderar vi att du använder&quot;Genomsnittlig tid på plats&quot; om en dimensionspost behöver genomsnittstid. | Report Builder (när det finns en dimension i begäran) |
-| [!UICONTROL Total session length], alias. [!UICONTROL Previous session length] | Endast Mobile App SDK. <br>Fastställd nästa gång appen startas för föregående session. Det här måttet beräknas i sekunder och räknas inte när programmet körs i bakgrunden. Detta är ett mått på sessionsnivå.<br>Exempel: Vi installerar programmet ABC och startar och använder det i 2 minuter och stänger sedan programmet. Inga data skickas om den här sessionstiden. Nästa gång vi startar programmet, [!UICONTROL Previous Session Length] skickas med värdet 120. | Analysis Workspace, rapporter och analyser, Report Builder, användargränssnitt för mobiltjänster |
+| [!UICONTROL Total session length], alias. [!UICONTROL Previous session length] | Endast Mobile App SDK. <br>Fastställd nästa gång appen startas för föregående session. Det här måttet beräknas i sekunder och räknas inte när programmet körs i bakgrunden. Detta är ett mått på sessionsnivå.<br>Exempel: Vi installerar programmet ABC och startar och använder det i 2 minuter och stänger sedan programmet. Inga data skickas om den här sessionstiden. Nästa gång vi startar programmet, [!UICONTROL Previous Session Length] skickas med värdet 120. | Analysis Workspace, Report Builder, användargränssnittet för mobiltjänster |
 | [!UICONTROL Average session length] (mobil) | *Total sessionslängd / (startar - första starten)*<br> Endast Mobile App SDK. Detta är ett mått på sessionsnivå. | Report Builder, användargränssnitt för mobiltjänster |
 
 ## Dimensioner för använd tid
@@ -33,9 +33,9 @@ Olika [!UICONTROL 'time spent'] [mått](overview.md) och finns för alla Adobe A
 | Dimension | Definition | Finns i |
 | --- | --- | --- |
 | [!UICONTROL Time spent per visit - granular] | Den totala tid som tillbringats under besöket trunkerades till närmaste sekund och tillämpades på varje träff som ingick i besöket. Detta är en besöksnivådimension. | Analysis Workspace |
-| [!UICONTROL Time spent per visit - bucketed] | Det granulerade måttet inkapslat i 9 olika intervall. Detta är en besöksnivådimension. Intervall:<ul><li>Mindre än 1 minut</li><li>1-5 minuter</li><li>5-10 minuter</li><li>10-30 minuter</li><li>30-60 minuter</li><li>1-2 timmar</li><li>2-5 timmar</li><li>5-10 timmar</li><li>10-15 timmar</li></ul>**Anteckning**: Det kan inte finnas fler bucklor än så, eftersom ett besök går ut efter 12 timmars aktivitet. | Analysis Workspace, Reports &amp; Analytics, Report Builder |
+| [!UICONTROL Time spent per visit - bucketed] | Det granulerade måttet inkapslat i 9 olika intervall. Detta är en besöksnivådimension. Intervall:<ul><li>Mindre än 1 minut</li><li>1-5 minuter</li><li>5-10 minuter</li><li>10-30 minuter</li><li>30-60 minuter</li><li>1-2 timmar</li><li>2-5 timmar</li><li>5-10 timmar</li><li>10-15 timmar</li></ul>**Anteckning**: Det kan inte finnas fler bucklor än så, eftersom ett besök går ut efter 12 timmars aktivitet. | Analysis Workspace, Report Builder |
 | [!UICONTROL Time spent on page - granular] | Total tid som tillbringats för varje träff, trunkerad till närmaste sekund. Det här är en träffnivådimension och innehåller både sidvyer och länkhändelser. Trots sitt namn är det inte begränsat till siddimensionen. | Analysis Workspace |
-| [!UICONTROL Time spent on page - bucketed] | Den granulerade dimensionen är inkapslad i 10 olika intervall, men den blockerade dimensionen räknar bara sidvyer (och utelämnar länkarhändelser). Det här är en träffnivådimension. Intervall:<ul><li>mindre än 15 sekunder</li><li>15 till 29 sekunder</li><li>30 till 59 sekunder</li><li>1 till 3 minuter</li><li>3 till 5 minuter</li><li>5 till 10 minuter</li><li>10 till 15 minuter</li><li>15 till 20 minuter</li><li>20 till 30 minuter</li><li>mer än 30 minuter</li></ul> | Analysis Workspace, rapporter och analyser |
+| [!UICONTROL Time spent on page - bucketed] | Den granulerade dimensionen är inkapslad i 10 olika intervall, men den blockerade dimensionen räknar bara sidvyer (och utelämnar länkarhändelser). Det här är en träffnivådimension. Intervall:<ul><li>mindre än 15 sekunder</li><li>15 till 29 sekunder</li><li>30 till 59 sekunder</li><li>1 till 3 minuter</li><li>3 till 5 minuter</li><li>5 till 10 minuter</li><li>10 till 15 minuter</li><li>15 till 20 minuter</li><li>20 till 30 minuter</li><li>mer än 30 minuter</li></ul> | Analysis Workspace |
 
 ## Hur&quot;Tidsåtgång&quot; beräknas
 
@@ -107,7 +107,7 @@ Ta till exempel följande besök.
 | hit# | 1 | 2 | 3 |
 |---|---|---|---|
 | **Sekunder som använts** | 30 | 100 | 10 |
-| **Sidnamn** | Start | Produkt | Start |
+| **Sidnamn** | Startsida | Produkt | Startsida |
 | **datum** | 1 januari | 1 januari | 1 januari |
 
 Vid beräkning av den tid som tillbringats för hemsidan skulle det vara (30+10)/2=20, men om du delar upp den per dag skulle det ge (30+10)/1=40 eftersom dagen har en enda obruten serie som börjar den 1 januari.
@@ -125,7 +125,7 @@ Anta att följande uppsättning serversamtal är för en enskild besökare vid e
 | **Besök förfluten tid (i sek)** | 0 | 30 | 80 | 180 | 190 | 230 | 290 |
 | **Sekunder som använts** | 30 | 50 | 100 | 10 | 40 | 60 | - |
 | **Träff-typ** | Sida | Länk | Sida | Sida | Sida | Sida | Sida |
-| **Sidnamn** | Start | - | Produkt | Start | Hem (ladda om) | Kundvagn | Orderbekräftelse |
+| **Sidnamn** | Startsida | - | Produkt | Startsida | Hem (ladda om) | Kundvagn | Orderbekräftelse |
 |  |  |  |  |  |  |  |  |
 | **prop1** | A (uppsättning) | A (Sprid över) | inte inställd | B (ange) | B (ange) | A(set) | C (ange) |
 | **prop1 sekunder** | 30 | 50 | - | 10 | 40 | 60 | - |

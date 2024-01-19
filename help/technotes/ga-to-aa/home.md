@@ -3,10 +3,10 @@ title: Övergång från en analysplattform från tredje part till Adobe Analytic
 description: Lär dig viktiga koncept för att få rapporter som riktar sig till användare som är bekanta med andra plattformar, som Google Analytics.
 feature: Third-party Integration
 exl-id: e71b12ad-11b7-48a0-8586-f8eb63975479
-source-git-commit: c8faf29262b9b04fc426f4a26efaa8e51293f0ec
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 90%
+source-wordcount: '330'
+ht-degree: 72%
 
 ---
 
@@ -16,12 +16,7 @@ I den här guiden presenteras vanliga rapporttyper som lär dig viktiga koncept 
 
 Både Google Analytics och Adobe Analytics är kraftfulla plattformar som ger värdefulla insikter om webbplatsens resultat. De har en egen bearbetningsarkitektur och ett eget användargränssnitt, vilket ger varje plattform unika fördelar. Den här guiden är utformad för att hjälpa en användare som har erfarenhet av Google Analytics att kommunicera med Adobe Analytics.
 
-I Adobe Analytics finns det två sätt att hämta grundläggande rapporter efter inloggning på Adobe Experience Cloud:
-
-* **Reports &amp; Analytics** är den historiska metoden för att få fram grundläggande rapporter. Den vänstra menyn innehåller en lista med prefabricerade rapporter, och gör att användaren kan navigera till en rapport som han/hon vill ha och hämta data. Segment och mätvärden kan ge ytterligare anpassningar. Användare som har erfarenhet av Google Analytics-rapporter kanske tycker att den här layouten är bekant.
-* **Analysis Workspace** är den metod som för närvarande rekommenderas för att hämta de flesta rapporter. Med den vänstra menyn kan användaren dra och släppa komponenter för att skapa en egen rapport. Det ger mycket större frihet att uppfylla de exakta rapporteringsbehoven. Användare som har erfarenhet av att skapa kontrollpaneler för Google Analytics och anpassade rapporter kanske tycker att den här layouten är bekant.
-
-De flesta rapporter kan skapas i båda [!UICONTROL Reports & Analytics] och [!UICONTROL Analysis Workspace]. Vissa rapporter kan dock bara hämtas på en av plattformarna. I de flesta fall rekommenderar Adobe att du använder [!UICONTROL Analysis Workspace], om inte en viss funktion bara finns i [!UICONTROL Reports & Analytics].
+I Adobe Analytics är det viktigaste sättet att hämta grundläggande rapporter efter inloggning på Adobe Experience Cloud att använda **Analysis Workspace**. Med den vänstra menyn kan användaren dra och släppa komponenter för att skapa en egen rapport. Det ger större frihet att uppfylla de exakta rapporteringsbehoven. Användare som har erfarenhet av att skapa kontrollpaneler för Google Analytics och anpassade rapporter kanske tycker att den här layouten är bekant.
 
 ## Rekommenderad utbildningsväg
 

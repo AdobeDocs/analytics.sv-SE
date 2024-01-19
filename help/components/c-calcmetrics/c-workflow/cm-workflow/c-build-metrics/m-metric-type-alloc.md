@@ -3,10 +3,10 @@ description: Läs mer om
 title: Mättyp och attribuering
 feature: Calculated Metrics
 exl-id: 3fb98227-e2ef-4829-ae84-812f845470ee
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '383'
+ht-degree: 0%
 
 ---
 
@@ -39,16 +39,10 @@ I följande exempel visas hur beräknade mätvärden med linjära tilldelningar 
 
 | | Träff 1 | Träff 2 | Träff 3 | Träff 4 | Träff 5 | Träff 6 | Träff 7 |
 |--- |--- |--- |--- |--- |--- |--- |--- |
-| Data skickade | PROMO A | - | PROMO A | PROMO B | - | PROMO C | $10 |
-| EVar vid senaste beröring | PROMO A | PROMO A | PROMO A | PROMO B | PROMO B | PROMO C | $10 |
-| EVar med första beröring | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | $10 |
-| Exempel | PROMO A | - | PROMO A | PROMO B | - | PROMO C | $10 |
+| Data skickade | PROMO A | - | PROMO A | PROMO B | - | PROMO C | 10 dollar |
+| EVar vid senaste beröring | PROMO A | PROMO A | PROMO A | PROMO B | PROMO B | PROMO C | 10 dollar |
+| EVar med första beröring | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | PROMO A | 10 dollar |
+| Exempel | PROMO A | - | PROMO A | PROMO B | - | PROMO C | 10 dollar |
 
 I det här exemplet skickades värdena A, B och C till en variabel på träffar 1, 3, 4 och 6 innan ett köp på $10 gjordes på träffnummer 7. På den andra raden kvarstår dessa värden för alla träffar på grund av senaste beröringsbesök. Den tredje raden visar hur obestridliga besöken är. Slutligen visar den sista raden hur data skulle registreras för en prop som inte är beständig.
 
-## Skillnader i hur linjär allokering fungerar i rapporter och analyser jämfört med arbetsytan
-
-Det finns vissa skillnader i hur linjär attribuering fungerar mellan dessa två verktyg:
-
-* I Rapporter och analyser är (bearbetad) linjär attribuering alltid besöksbaserad, medan den i Workspace kan vara besöks- eller besöksbaserad.
-* Om inget värde skickades vid den första besöksträffen i Rapporter och analyser kvarstår (det inledande) värdet från föregående besök. Detta är INTE fallet i Workspace (Attribution). Om inget värde skickas vid den första besöksträffen är &quot;Inget&quot; det ursprungliga värdet.

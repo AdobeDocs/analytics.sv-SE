@@ -3,20 +3,20 @@ description: Upptäck allt du kan göra med Advertising Analytics i den här det
 title: A Guide to Advertising Analytics
 feature: Advertising Analytics
 exl-id: bc18b74a-0317-4871-b2e0-ec0977ef1731
-source-git-commit: 79294cfc6f86e5a41a39504099cd730f53668725
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 91%
+source-wordcount: '1212'
+ht-degree: 88%
 
 ---
 
 # A guide to Advertising Analytics
 
-Med Advertising Analytics kan du se alla dina Google- och Bing Paid Search-data sida vid sida, inifrån Adobe Analytics. Tidigare måste alla Google AdWords/DFA- och Microsoft Bing Ads-data visas i Adobe Advertising Cloud (AMO) eller i Google/Bing. Du kan nu hämta följande data från Adobe Analytics: Impressions, Click, Costs data directly from the search engines as as a AMO ID Instances (Click Instances). Kvalitetsresultat och genomsnittliga positioner samlas inte längre in eftersom Google ersatt dessa värden i september 2019.
+Med Advertising Analytics kan du se alla dina Google- och Bing Paid Search-data sida vid sida, inifrån Adobe Analytics. Tidigare måste alla Google AdWords/DFA- och Microsoft Bing Ads-data visas i Adobe Advertising Cloud (AMO) eller i Google/Bing. Du kan nu hämta följande data i Adobe Analytics: Impressions, Clicks, Costs data direkt från sökmotorerna och en AMO ID-instans (Click Instances). Kvalitetsresultat och genomsnittliga positioner samlas inte längre in eftersom Google ersatt dessa värden i september 2019.
 
 >[!NOTE]
 >
->Yahoo Gemini ingick i Microsoft Bing den 31 mars 2019. Detta innebär att annonskontoalternativet Yahoo Gemini inte längre är tillgängligt.
+>Yahoo Gemini absorberades av Microsoft Bing den 31 mars 2019. Detta innebär att annonskontoalternativet Yahoo Gemini inte längre är tillgängligt.
 
 Genom att samla data från sökmotorerna i Adobe Analytics kan du analysera dessa data med hjälp av Analysis Workspace. Den här analysen underlättas av en ny mall för [Paid Search Performance](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-report-ad-data-an.md) i Workspace.
 
@@ -39,7 +39,7 @@ Denna integrering riktar sig till följande målgrupper:
 * När det gäller Bing Ads behöver du också Bing Customer ID.
 * Om du använder Internet Explorer 11 (eller tidigare) kommer du inte att kunna [konfigurera ett annonskonto](/help/integrate/c-advertising-analytics/c-adanalytics-workflow/aa-create-ad-account.md) för någon av de tre sökmotorerna. Använd i stället andra webbläsare.
 
-## Behörighet för Advertising Analytics {#section_FCC58EB635954A32990D4E67B52B4369}
+## Advertising Analytics-behörigheter {#section_FCC58EB635954A32990D4E67B52B4369}
 
 Analyserna har två behörigheter som automatiskt tilldelas Analytics-administratörer. Administratörer kan sedan välja att ge dessa behörigheter till icke-administratörer.
 
@@ -68,9 +68,9 @@ Analyserna har två behörigheter som automatiskt tilldelas Analytics-administra
  </tbody> 
 </table>
 
-## Dimensioner och mätvärden för Advertising Analytics {#section_C0DF4A08EA9E46ADABE9E465AFC11E32}
+## Advertising Analytics Dimensioner och statistik {#section_C0DF4A08EA9E46ADABE9E465AFC11E32}
 
-Advertising Analytics lägger till följande dimensioner och mätvärden i Analysis Workspace, Reports &amp; Analytics, Report Builder och Analytics Reporting API.
+Advertising Analytics lägger till följande mått och mätvärden i Analysis Workspace, Report Builder och API:t för analysrapporter.
 
 **Dimensioner**
 

@@ -4,9 +4,9 @@ keywords: Virtual Report Suite
 title: Virtuella rapportsviter och taggar för flera programsviter
 feature: VRS
 exl-id: 7e0a1f5b-26ac-438c-b481-33669039efe5
-source-git-commit: 266cf18050d60f08f7e170c56453d1e1d805cb7b
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -30,12 +30,6 @@ Tänk på följande när du avgör om du ska använda taggar för flera sviter e
 Delning av segment till Adobe Experience Cloud stöds inte för virtuella rapportsviter. Användare som vill dela ett segment med Experience Cloud måste ha tillgång till källrapportsviten.
 
 Segment kan ännu inte publiceras till Adobe Experience Cloud från en virtuell rapportsvit för personalisering och målinriktning. Alla användare som publicerar segment måste ha tillgång till källrapportsviten för detta ändamål. Du vill t.ex. att användarna bara ska ha tillgång till data för sina geografiska regioner, men du vill att de ska kunna skapa och dela segment från Adobe Analytics till Adobe Experience Cloud för målinriktning i Adobe Target. I det här fallet rekommenderar Adobe att du använder taggar för flera programsviter. Om du inte har något emot att användare har tillgång till den globala rapportsviten eller att du inte behöver publicera segment för användning i andra lösningar, kan virtuella rapportsviter användas.
-
-### Realtid och aktuella data
-
-Realtidsrapporter stöds inte i virtuella rapportsviter eftersom data segmenteras. Aktuella data stöds inte heller i virtuella rapportsviter eftersom de inte stöder segmentering. Båda dessa funktioner är specifika för Rapporter och analyser.
-
-[Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/t-realtime-admin.md) och [Aktuella data](/help/technotes/latency.md) är inte tillgängliga i virtuella rapportsviter. Detta påverkar användare som reagerar på trender som visas i rapporter och analyser inom några sekunder eller några minuter efter datainsamlingen. Det kan till exempel inkludera redaktörer i ett nyhetsrum som justerar rubriker baserat på innehållskonsumtion i realtid. Överväg att använda flera svit-taggning om du har betydande datatillgångar i realtid som är specifika för enskilda rapportsviter. Realtid och aktuella data kan fortfarande användas i den globala rapportsviten.
 
 ### Unika gränser
 

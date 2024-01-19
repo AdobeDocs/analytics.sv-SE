@@ -3,9 +3,9 @@ description: I Segment Builder finns en arbetsyta där du kan dra och släppa me
 title: Skapa segment
 feature: Segmentation
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 602f837689186f232c4c0f8baebbcf911446bc99
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1872'
 ht-degree: 1%
 
 ---
@@ -16,31 +16,30 @@ The [!UICONTROL Segment Builder] Med kan du skapa enkla eller komplexa segment s
 
 Det finns flera sätt att komma åt segmentbyggaren:
 
-* **Populär navigering i Analytics**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
+* **Övre navigering i analyser**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Components]** > **[!UICONTROL Segments]**.
 * **[!UICONTROL Analysis Workspace]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, öppna ett projekt och klicka på **[!UICONTROL + New]** > **[!UICONTROL Create Segment]**.
-* **[!UICONTROL Reports & Analytics]**: Klicka **[!UICONTROL Analytics]** > **[!UICONTROL Reports]**, öppna en befintlig rapport och klicka på segmentikonen  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) i den vänstra navigeringen klickar du på **[!UICONTROL Add]**.
 * **[!UICONTROL Report Builder]**: [Lägga till eller redigera segment i Report Builder](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/data-requests/segmentation.html).
 
 ## Builder-villkor {#section_F61C4268A5974C788629399ADE1E6E7C}
 
-Du kan lägga till regeldefinitioner och behållare för att definiera segment.
+Du kan lägga till regeldefinitioner och behållare för att definiera dina segment.
 
 ![](assets/segment_builder_ui_2.png)
 
 1. **[!UICONTROL Title]**: Namnge segmentet.
 1. **[!UICONTROL Description]**: Ange en beskrivning av segmentet.
 1. **[!UICONTROL Tags]**: [Tagga segmentet](/help/components/segmentation/segmentation-workflow/seg-workflow.md) du skapar genom att välja från en lista med befintliga taggar eller skapa en ny tagg.
-1. **[!UICONTROL Definitions]**: Här är du [bygga och konfigurera segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md), lägger till regler och kapslar in och sekvensbehållare.
+1. **[!UICONTROL Definitions]**: Det är här du [bygga och konfigurera segment](/help/components/segmentation/segmentation-workflow/seg-workflow.md), lägger till regler och kapslar in och sekvensbehållare.
 1. **[!UICONTROL Show]**: (Översta behållarväljare.) Välj den översta nivån [container](/help/components/segmentation/seg-overview.md) ( [!UICONTROL Visitor], [!UICONTROL Visit], [!UICONTROL Hit]). Standardbehållaren på den översta nivån är Träff-behållaren.
 1. **[!UICONTROL Options]**: (kugghjulsikon)
 
-   * **[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) till segmentdefinitionen.
-   * **[!UICONTROL Exclude]**: Gör att du kan definiera segmentet genom att utesluta en eller flera dimensioner, segment eller mått.
+   * **[!UICONTROL + Add container]**: Gör att du kan lägga till en ny behållare (under behållaren på den översta nivån) i segmentdefinitionen.
+   * **[!UICONTROL Exclude]**: Du kan definiera segmentet genom att utesluta en eller flera dimensioner, segment eller mått.
 
 1. **[!UICONTROL Dimensions]**: Komponenter dras och tas bort från listan Dimensioner (orange sidofält).
 1. **[!UICONTROL Operator]**: Du kan jämföra och begränsa värden med valda operatorer.
-1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
-1. **[!UICONTROL Attribution Models]**: Dessa modeller är bara tillgängliga för dimensioner och avgör vilka värden i en dimension som ska segmenteras. Dimensioner är särskilt användbara vid sekventiell segmentering.
+1. **[!UICONTROL Value]**: Det värde som du angav eller valde för dimensionen, segmentet eller måttet.
+1. **[!UICONTROL Attribution Models]**: Endast tillgängligt för dimensioner - dessa modeller avgör vilka värden i en dimension som ska segmenteras. Dimensioner är särskilt användbara vid sekventiell segmentering.
 
    * **[!UICONTROL Repeating]** (standard): Inkluderar instanser och beständiga värden för dimensionen.
    * **[!UICONTROL Instance]**: Inkluderar instanser för dimensionen.
@@ -55,23 +54,22 @@ Du kan lägga till regeldefinitioner och behållare för att definiera segment.
    | Upprepande | X | X | X | - | X | - |
    | Instance | X | X | - | - | X | - |
    | Icke upprepande instans | X | - | - | - | X | - |
-1. **[!UICONTROL And/Or/Then]**: Tilldelar [!UICONTROL AND/OR/THEN] mellan behållare eller regler. Operatorn THEN gör att du kan [definiera sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
+1. **[!UICONTROL And/Or/Then]**: Tilldelar [!UICONTROL AND/OR/THEN] mellan behållare eller regler. Operatorn THEN låter dig [definiera sekventiella segment](/help/components/segmentation/segmentation-workflow/seg-sequential-build.md).
 1. **[!UICONTROL Metric]**: (Grönt sidofält) Mätvärden som har dragits och tagits bort från listan Metrisk.
 1. **[!UICONTROL Comparison]** operator: Du kan jämföra och begränsa värden med valda operatorer.
-1. **[!UICONTROL Value]**: Värdet som du angav eller valde för dimensionen, segmentet eller mätvärdet.
-1. **[!UICONTROL X]**: (Ta bort) Du kan ta bort den här delen av segmentdefinitionen.
+1. **[!UICONTROL Value]**: Det värde som du angav eller valde för dimensionen, segmentet eller måttet.
+1. **[!UICONTROL X]**: (Ta bort) Gör att du kan ta bort den här delen av segmentdefinitionen.
 1. **[!UICONTROL Experience Cloud publishing]**: Genom att publicera ett Adobe Analytics-segment i Experience Cloud kan du använda segmentet för marknadsföringsaktiviteter i [!DNL Audience Manager] och i andra aktiveringskanaler. [Läs mer …](/help/components/segmentation/segmentation-workflow/seg-publish.md)
-1. **[!UICONTROL Audience library]**: Adobe hanterar översättningen av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet till Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
+1. **[!UICONTROL Audience library]**: Adobe hanterar översättning av besöksdata till målgruppssegmentering. Att skapa och hantera målgrupper liknar alltså att skapa och använda segment, med möjlighet att dela målgruppssegmentet till Experience Cloud. [Läs mer …](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)
 1. **[!UICONTROL Search]**: Söker i listan över dimensioner, segment eller mått.
 1. **[!UICONTROL Dimensions]**: (Lista) Klicka på rubriken för att expandera.
 1. **[!UICONTROL Metrics]**: Klicka på rubriken för att expandera.
 1. **[!UICONTROL Segments]**: Klicka på rubriken för att expandera.
-1. **[!UICONTROL Report suite selector]**: Här kan du välja den rapportsserie som det här segmentet ska sparas under. Du kan fortfarande använda segmentet i alla rapportsviter.
-1. **[!UICONTROL Segment Preview]**: Här kan du förhandsgranska nyckelmåtten för att se om du har ett giltigt segment och hur brett segmentet är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här segmentet. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL Hits], [!UICONTROL Visits]och [!UICONTROL Visitors] för ett segment som körs mot en datauppsättning. Diagrammet uppdateras omedelbart när du har skapat eller ändrat segmentdefinitionen.
-1. **[!UICONTROL Product Compatibility]**: En lista över vilka Adobe Analytics-produkter (Analysis Workspace, [!UICONTROL Reports & Analytics], Data warehouse) med vilket segmentet du skapade är kompatibelt. De flesta segment är kompatibla med alla produkter. Alla operatorer och dimensioner är dock inte kompatibla med alla Analytics-produkter, särskilt [data warehouse](/help/components/segmentation/seg-reference/seg-compatibility.md). Diagrammet uppdateras omedelbart efter att du har gjort ändringar i segmentdefinitionen.
+1. **[!UICONTROL Report suite selector]**: Här kan du välja den rapportserie som det här segmentet ska sparas under. Du kan fortfarande använda segmentet i alla rapportsviter.
+1. **[!UICONTROL Segment Preview]**: Du kan förhandsgranska nyckelmåtten för att se om du har ett giltigt segment och hur brett segmentet är. Representerar den uppdelning av datauppsättningen som du kan förvänta dig att se om du använder det här segmentet. Visar 3 koncentriska cirklar och en lista som visar antalet och procentandelen matchningar för [!UICONTROL Hits], [!UICONTROL Visits]och [!UICONTROL Visitors] för ett segment som körs mot en datauppsättning. Diagrammet uppdateras omedelbart när du har skapat eller ändrat segmentdefinitionen.
+1. **[!UICONTROL Product Compatibility]**: Visar en lista över vilka Adobe Analytics-produkter (Analysis Workspace, Data Warehouse) som segmentet du skapade är kompatibelt med. De flesta segment är kompatibla med alla produkter. Alla operatorer och dimensioner är dock inte kompatibla med alla Analytics-produkter, särskilt [Data Warehouse](/help/components/segmentation/seg-reference/seg-compatibility.md). Diagrammet uppdateras omedelbart efter att du har gjort ändringar i segmentdefinitionen.
 1. **[!UICONTROL Save]** eller **[!UICONTROL Cancel]**: Sparar eller avbryter segmentet. Efter klickning **[!UICONTROL Save]** kommer du till segmenthanteraren där du kan hantera segmentet.
 
-Segment med inbäddade datumintervall fungerar fortfarande annorlunda i Analysis Workspace jämfört med [!UICONTROL Reports & Analytics]: I Arbetsyta åsidosätter ett segment med ett inbäddat datumintervall panelens datumintervall. I motsats till [!UICONTROL Reports & Analytics] ger dig skärningspunkten för rapportdatumintervallet och segmentets inbäddade datumintervall.
 
 ## Skapa segment {#build-segments}
 
@@ -79,7 +77,7 @@ Segment med inbäddade datumintervall fungerar fortfarande annorlunda i Analysis
 
    ![](assets/drag_n_drop_dimension.png)
 
-   Standardnivån på den översta nivån [!UICONTROL Hit] behållaren visas när du har dragit ett element till [!UICONTROL Definitions]. Du kan ändra behållartypen till Besök eller Besök på menyn **[!UICONTROL Show]** nedrullningsbar meny.
+   Standardnivån på den översta nivån [!UICONTROL Hit] behållaren visas när du har dragit ett element till [!UICONTROL Definitions]. Du kan ändra behållartypen till Besök eller Besök på menyn **[!UICONTROL Show]** listruta.
 
 1. Ange [operator](/help/components/segmentation/seg-reference/seg-operators.md) i listrutan.
 1. Ange eller välj ett värde för det markerade objektet.
@@ -116,7 +114,7 @@ Ni kan skapa segment som innehåller rullande datumintervall för att få svar p
 
 Du kan till exempel enkelt skapa ett segment som innehåller&quot;alla som har köpt något de senaste 60 dagarna&quot;.
 
-Du skapar en besöksbehållare och i den lägger du till [!UICONTROL Last 60 days] tidsintervall och mått [!UICONTROL Orders is greater than or equal to 1], med operatorn AND:
+Du skapar en besöksbehållare och lägger till [!UICONTROL Last 60 days] tidsintervall och mått [!UICONTROL Orders is greater than or equal to 1], med operatorn AND:
 
 ![](assets/date-ranges.png)
 
@@ -138,7 +136,7 @@ Tänk på dessa segment som byggstenar eller moduler som du kan inkludera i ett 
 Genom att använda segmentstackning kan du minska antalet segment till 22 och stapla dem efter behov. Du måste skapa följande segment:
 
 * ett segment för mobilanvändare
-* ett segment för surfplattor
+* ett segment för surfplatteanvändare
 * 20 segment för de olika geografiska områdena
 
 >[!NOTE]
@@ -148,9 +146,9 @@ Genom att använda segmentstackning kan du minska antalet segment till 22 och st
 1. Gå till Segment Builder.
 1. Ange en rubrik och beskrivning för segmentet.
 
-   Stegresultat 1. Klicka **[!UICONTROL Show Segments]** för att visa listan över segment i den vänstra navigeringen.
+   Steg Resultat 1. Klicka **[!UICONTROL Show Segments]** för att visa listan över segment i den vänstra navigeringen.
 
-   Stegresultat 1. Dra och släpp de segment som du vill stapla på segmentdefinitionsytan. Här är ett exempel på ett segment som staplar de befintliga segmenten &quot;Besök från surfplattor&quot; och &quot;US Geo&quot;:
+   Steg Resultat 1. Dra och släpp de segment som du vill stapla på segmentdefinitionsytan. Här är ett exempel på ett segment som staplar de befintliga segmenten &quot;Besök från surfplattor&quot; och &quot;US Geo&quot;:
 
    ![](assets/seg_stack2.png)
 
@@ -174,7 +172,7 @@ Mallar betecknas med Adobe&quot;A&quot;-logotypen. Ett exempel på mallarna visa
  <tbody> 
   <tr> 
    <td colname="col1"> Abandon Cart </td> 
-   <td colname="col2">Visa data för besökare som har lagt till artiklar i sina kundvagnar men inte beställt något. I segmentdefinitionen är behållaren Besök. Regeln för det här sekventiella segmentet är <p> Cart Additions är inte null </p> <p>Sedan </p> <p>Order är lika med 0. </p> </td> 
+   <td colname="col2">Visa data för besökare som har lagt till artiklar i sina kundvagnar men inte beställt något. I segmentdefinitionen är behållaren Besök. Regeln för detta sekventiella segment är <p> Cart Additions är inte null </p> <p>Sedan </p> <p>Order är lika med 0. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Första gången du besöker </td> 
@@ -190,23 +188,23 @@ Mallar betecknas med Adobe&quot;A&quot;-logotypen. Ett exempel på mallarna visa
   </tr> 
   <tr> 
    <td colname="col1"> Betalsökning </td> 
-   <td colname="col2">Visa data från besökare som kommer från en betald sökning. I segmentdefinitionen är behållaren Besök. Regeln är <p>Betalsökning är lika med 1. </p> </td> 
+   <td colname="col2">Visa data från besökare från en betald sökning. I segmentdefinitionen är behållaren Besök. Regeln är <p>Betalsökning är lika med 1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inköpare </td> 
    <td colname="col2">Visa data för besökare som har deltagit i en orderhändelse. I segmentdefinitionen är behållaren Visitor. Regeln är <p>Beställningar är inte null. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Återbesök </td> 
-   <td colname="col2">Visa data från besökare som har besökt minst en gång. I segmentdefinitionen är behållaren Besök. Regeln är <p>Besöksnumret är större än 1. </p> </td> 
+   <td colname="col1"> Returbesök </td> 
+   <td colname="col2">Visa data från besökare som har besökt minst en gång. I segmentdefinitionen är behållaren Besök. Regeln är <p>Besöken är större än 1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök på en sida </td> 
-   <td colname="col2"> Visa data från besök där du ser ett enda sidvärde, även om du kan skicka in flera sidvisningar under besöket. Enkelsidiga besök med avslutningslänkshändelser ingår i segmentet. I segmentdefinitionen är behållaren Besök. Regeln är <p>Enkelsidiga besök är lika med 1. </p> </td> 
+   <td colname="col2"> Visa data från besök där du ser ett enda sidvärde, även om du kan skicka in flera sidvisningar under besöket. Enkelsidiga besök med avslutningslänkshändelser ingår i segmentet. I segmentdefinitionen är behållaren Besök. Regeln är <p>Enkelsidiga besök motsvarar 1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Den visade produkten lades inte till i kundvagnen </td> 
-   <td colname="col2">Visa data för besökare som visade produkter men inte hade några kundvagnstillägg. I segmentdefinitionen är behållaren Besök. Regeln för det här sekventiella segmentet är <p>Produktvyer är inte null </p> <p>Sedan </p> <p> Cart Additions är lika med 0. </p> </td> 
+   <td colname="col2">Visa data för besökare som visade produkter men inte hade några kundvagnstillägg. I segmentdefinitionen är behållaren Besök. Regeln för detta sekventiella segment är <p>Produktvyer är inte null </p> <p>Sedan </p> <p> Cart Additions är 0. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från Campaign </td> 
@@ -222,7 +220,7 @@ Mallar betecknas med Adobe&quot;A&quot;-logotypen. Ett exempel på mallarna visa
   </tr> 
   <tr> 
    <td colname="col1"> Besök från icke-mobil enhet </td> 
-   <td colname="col2">Visa data från besökare som inte använder mobila enheter. I segmentdefinitionen är behållaren Besök. Det här segmentet använder exkluderingslogiken. Regeln är <p>Mobilenhetstyp är lika med mobiltelefon </p> <p>eller </p> <p>Mobilenhetstyp är lika med surfplatta. </p> </td> 
+   <td colname="col2">Visa data från besökare som inte använder mobila enheter. I segmentdefinitionen är behållaren Besök. Det här segmentet använder exkluderingslogiken. Regeln är <p>Mobilenhetstyp är lika med mobiltelefon </p> <p>eller </p> <p>Mobilenhetstyp är lika med bärbar dator. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Besök från telefoner </td> 

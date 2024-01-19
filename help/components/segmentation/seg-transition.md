@@ -3,10 +3,10 @@ description: Frågor och svar om hur man hanterar äldre segment.
 title: Frågor och svar om äldre segment
 feature: Segmentation
 exl-id: 316e2a2e-55d3-4c23-9985-9a6d90390e86
-source-git-commit: 83542d77b26e5fdf7545e4deced35da84263848b
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 1%
+source-wordcount: '1445'
+ht-degree: 0%
 
 ---
 
@@ -38,15 +38,15 @@ Schemalagda rapporter uppdateras inte när du redigerar ett segment med samma na
 
 ![](assets/duplicate_seg_names.png)
 
-Du har ett bokmärke som refererar till segmentet för huvudprod-rapportsviten. Sedan tar du bort segmentet eftersom det är en dubblett. Bokmärket fortsätter att köras och refererar till definitionen för det borttagna segmentet. Om du ändrar segmentdefinitionen för maindev-segmentet till att omfatta Catalinön och Tijuana Mexico, ändras inte det segment som används för bokmärket. Den gamla definitionen kommer att användas. Du åtgärdar detta genom att uppdatera bokmärket så att det refererar till den nya definitionen. Om du är osäker på om ett bokmärke, en kontrollpanel eller en schemalagd rapport använder ett borttaget segment, kan du ändra namnet på det återstående segmentet så att det blir tydligare om bokmärket använder det återstående segmentet.
+Du har ett bokmärke som refererar till segmentet för huvudprogramrapporteringssviten. Sedan tar du bort segmentet eftersom det är en dubblett. Bokmärket fortsätter att köras och refererar till definitionen för det borttagna segmentet. Om du ändrar segmentdefinitionen för maindev-segmentet till att omfatta Catalinön och Tijuana Mexico, ändras inte det segment som används för bokmärket. Den gamla definitionen kommer att användas. Du åtgärdar detta genom att uppdatera bokmärket så att det refererar till den nya definitionen. Om du är osäker på om ett bokmärke, en kontrollpanel eller en schemalagd rapport använder ett borttaget segment, kan du ändra namnet på det återstående segmentet så att det blir tydligare om bokmärket använder det återstående segmentet.
 
 +++
 
-+++ **Vad hände med Data warehouse segment?**
++++ **Vad hände med Data Warehouse?**
 
-Alla segment i Data warehouse fungerar fortfarande i Data warehouse. De flesta segment i Data warehouse fungerar även i andra komponenter, som Analysis Workspace och Rapporter och analyser.
+Alla befintliga Data Warehouse fungerar fortfarande i Data Warehouse. De flesta Data Warehouse fungerar även i andra komponenter som Analysis Workspace.
 
-Du kan skapa eller redigera nya Data warehouse-segment i segmentbyggaren/hanteraren. Produktkompatibilitetsmekanismen i segmentbyggaren avgör automatiskt om ett segment är kompatibelt med Data warehouse.
+Du kan skapa eller redigera nya segment för Data Warehouse i segmentbyggaren/hanteraren. Produktkompatibilitetsmekanismen i segmentbyggaren avgör automatiskt om ett segment är kompatibelt med Data Warehouse.
 
 +++
 
@@ -121,13 +121,13 @@ Följande tips hjälper dig att migrera gemensamma dimensioner:
 
 Tabellen nedan innehåller en lista med dimensioner som har bytt namn i Segment Builder.
 
-| Namn på ny Dimension | Föregående namn | Anteckningar |
+| Namn på ny Dimension | Tidigare namn | Anteckningar |
 |--- |--- |--- |
 | Operativsystemstyper | Nytt | Lades till våren 2015. |
-| Webbläsarbredd - paketerad | Bredd på webbläsare | Den här dimensionen är kompatibel med alla gränssnitt och delas upp i en numrerad lista med intervall i stället för specifika heltalsvärden. Om du behöver segmentera specifika värden använder du den granulära versionen av den här dimensionen i ett data warehouse-segment. |
-| Webbläsarhöjd - paketerad | Webbläsarhöjd | Den här dimensionen är kompatibel med alla gränssnitt och delas upp i en numrerad lista med intervall i stället för specifika heltalsvärden. Om du behöver segmentera specifika värden använder du den granulära versionen av den här dimensionen i ett data warehouse-segment. |
-| Webbläsarbredd - Detaljerad | Bredd på webbläsare | Detta har bytt namn och är nu kompatibelt med endast data warehouse. När du definierar segment som är kompatibla med alla gränssnitt använder du den uppräknade typen Webbläsarbredd - Bucketed. |
-| Webbläsarhöjd - granulerad | Webbläsarhöjd | Detta har bytt namn och är nu kompatibelt med endast data warehouse. När du definierar segment som är kompatibla med alla gränssnitt ska du använda den uppräknade typen Webbläsarhöjd - Bucketed. |
+| Webbläsarbredd - paketerad | Bredd på webbläsare | Den här dimensionen är kompatibel med alla gränssnitt och delas upp i en numrerad lista med intervall i stället för specifika heltalsvärden. Om du behöver segmentera specifika värden använder du den detaljerade versionen av dimensionen i ett datalagersegment. |
+| Webbläsarhöjd - paketerad | Webbläsarhöjd | Den här dimensionen är kompatibel med alla gränssnitt och delas upp i en numrerad lista med intervall i stället för specifika heltalsvärden. Om du behöver segmentera specifika värden använder du den detaljerade versionen av dimensionen i ett datalagersegment. |
+| Webbläsarbredd - Detaljerad | Bredd på webbläsare | Namnet har ändrats och är nu endast kompatibelt med datalagret. När du definierar segment som är kompatibla med alla gränssnitt använder du den uppräknade typen Webbläsarbredd - Bucketed. |
+| Webbläsarhöjd - granulerad | Webbläsarhöjd | Namnet har ändrats och är nu endast kompatibelt med datalagret. När du definierar segment som är kompatibla med alla gränssnitt ska du använda den uppräknade typen Webbläsarhöjd - Bucketed. |
 | Cookie-stöd | Cookies | - |
 | Färgdjup | Skärmfärgdjup | - |
 | - | &quot;App - *&quot; | Prefixen &quot;App -&quot; har tagits bort från ett antal dimensionstyper. Eftersom mobilappsdata vanligtvis samlas in i en rapportserie som inte innehåller webbdata var dessa prefix inte nödvändiga. |
@@ -142,7 +142,7 @@ Tabellen nedan innehåller en lista med dimensioner som har bytt namn i Segment 
 | Mobil push to Talk | Mobil PTT | - |
 | Undersökningsvisning | Totalt antal undersökningsvisningar | - |
 | Undersökningssvar | Totalt antal undersökningssvar | - |
-| Besöksdjup | Sökvägslängd | - |
+| Besöksdjup | Banlängd | - |
 | Postnummer | Postnummer | - |
 
 {style="table-layout:auto"}
@@ -161,9 +161,9 @@ Följande dimensioner ändrades till uppräknade listor:
 | stöd för mobilcookies | mobilmejldekoration | operativsystem |
 | stöd för mobilbilder | mobilinformationstjänster | referenstyp |
 | mobilfärgdjup | mobilenhetstyp | sökmotor |
-| stöd för mobilljud | webbläsartyp | tillstånd |
+| stöd för mobilljud | webbläsartyp | läge |
 | stöd för mobilvideo | webbläsare | land |
-| mobil drm | anslutningstyp | geo-region |
+| mobil drm | anslutningstyp | geo region |
 | mobilnätsprotokoll | mobiloperatör | storstad |
 | mobiler | cookie | geo dma |
 | mobile java vm | kundlojalitet | beständig cookie |
@@ -176,4 +176,4 @@ Heltalsbaserade dimensioner (till exempel webbläsarbredd) med en känd uppsätt
 
 ![](assets/seg_browser_dimension.png)
 
-Operatorerna för mindre än, större än och liknande är nu endast kompatibla med Data warehouse-segment. Segment som är avsedda att vara kompatibla med alla rapporteringsgränssnitt bör använda måttets &quot;Bucketed&quot;-version med likhetsoperatorn.
+Operatorerna för mindre än, större än och liknande är nu kompatibla med enbart Data Warehouse. Segment som är avsedda att vara kompatibla med alla rapporteringsgränssnitt bör använda måttets &quot;Bucketed&quot;-version med likhetsoperatorn.

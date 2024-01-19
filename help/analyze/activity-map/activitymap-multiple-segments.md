@@ -5,10 +5,10 @@ uuid: 5723c302-5744-4127-9f8e-41db66dc6dfb
 feature: Activity Map
 role: User, Admin
 exl-id: afe2326d-3ea9-4977-aa8f-2c5e1a79e4c7
-source-git-commit: 1a49c2a6d90fc670bd0646d6d40738a87b74b8eb
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 2%
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
@@ -20,11 +20,11 @@ Gör att du kan använda ett flersegmentsfilter i Activity Map.
 >
 >Segmentkontrollen är endast tillgänglig i standardläge eftersom Adobe Analytics-plattformen inte stöder segmentering av realtidsdata.
 
-Du kan markera ett eller flera av segmenten i **[!UICONTROL Segments]** nedrullningsbar meny som visas nedan. De listade segmenten är identiska med de som du äger eller som har delats med dig via Rapporter och analyser för den rapportserie som valts.
+Du kan markera ett eller flera av segmenten i **[!UICONTROL Segments]** listrutan som visas nedan. De listade segmenten är identiska med de som du äger eller som har delats med dig för den rapportserie som valts.
 
 ![](assets/segments.png)
 
-När segmentmarkeringen har ändrats och när segmentväljaren har stängts startas en ny datahämtningsprocess för Analytics för alla mätvärden som visas i programmet. De valda segmenten sparas när du navigerar från sida till sida.
+När segmentmarkeringen har ändrats och när segmentväljaren har stängts startas en ny datahämtningsprocess för Analytics för alla mätvärden som visas i programmet. De valda segmenten sparas när du navigerar mellan sidor.
 
 När mer än ett segment är markerat visas&quot;Flera&quot; i etiketten för segmentmarkering (i komprimerat läge). Den fullständiga listan över valda segment visas när du klickar på kontrollen.
 

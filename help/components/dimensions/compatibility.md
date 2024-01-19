@@ -3,10 +3,10 @@ title: Analytics-Dimensioners kompatibilitet
 description: Referens för analysdimensioner och rapporter.
 feature: Dimensions
 exl-id: 1884bc20-b04d-4f9a-b057-2b2fbe53190d
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 8%
+source-wordcount: '887'
+ht-degree: 2%
 
 ---
 
@@ -18,11 +18,7 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 >
 >Anpassade variabelnamn, klassificeringar och besökarattribut tas inte med i listan. Dessa dimensionsobjekt är specifika för enskilda rapportsviter.
 
->[!NOTE]
->
->Det finns vissa överlappningar där analysverktygen använder olika termer för liknande dimensioner. Rapporter och analyser använder till exempel `browserwidth` när Analysis Workspace använder `browserwidthbucketed`.
-
-## Dimensioner som stöds i både Reports &amp; Analytics och Analysis Workspace
+## Dimensioner som stöds i Analysis Workspace
 
 | Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
 |---|---|
@@ -39,8 +35,8 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 | Kundlojalitet | `customerloyalty` |
 | Anpassade konverteringsvariabler | `evar1`, `evar2`, osv. |
 | Custom Insight Vars | `prop1`, `prop2`, osv. |
-| Anpassad länk | `customlink` |
-| Dagar före första köp | `daysbeforefirstpurchase` |
+| Egen länk | `customlink` |
+| Dagar före första köpet | `daysbeforefirstpurchase` |
 | Dagar sedan senaste köp | `dayssincelastpurchase` |
 | Domän | `filtereddomain` |
 | Hämta länk | `downloadlink` |
@@ -74,13 +70,13 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 | Operativsystem | `operatingsystem` |
 | Ursprunglig referensdomän | `referringdomainoriginal` |
 | Sida | `page` |
-| Sidor som inte hittades | `pagesnotfound` |
+| Sidorna hittades inte | `pagesnotfound` |
 | Produkt | `product` |
 | Referent | `referrer` |
 | Referenstyp | `referrertype` |
 | Refererande domän | `referringdomain` |
 | Regioner | `georegion` |
-| Återbesöksfrekvens | `returnfrequency` |
+| Returfrekvens | `returnfrequency` |
 | SC-TnT | `tntbase` |
 | Sökmotor | `searchengine` |
 | Sök nyckelord | `searchenginekeyword` |
@@ -99,13 +95,8 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 | Tid före händelse | `timeprior` |
 | Tid per besök - paketerad | `timespent` |
 | Besöksdjup | `pathlength` |
-| Besöksnummer | `visitnumber` |
+| Besök nummer | `visitnumber` |
 | Postnummer | `zip` |
-
-## Dimensioner som bara stöds i Analysis Workspace
-
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
-|--- |--- |
 | AM/PM | `timepartampm` |
 | Webbläsarhöjd - paketerad | `browserheightbucketed` |
 | Webbläsarbredd - paketerad | `browserwidthbucketed` |
@@ -164,24 +155,7 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 | Nielsen Channel Asset | `nielsenchannelasset` |
 | Nielsen Content Type | `nielsencontenttype` |
 
-## Dimensioner som bara stöds i rapporter och analyser
-
-| Dimensionens namn (visas i analysgränssnittet) | Dimension-ID (används i API-begäranden) |
-|--- |--- |
-| Webbläsarhöjd | `browserheight` |
-| Bredd på webbläsare | `browserwidth` |
-| Dagliga unika kunder | `dailyuniquecustomers` |
-| JavaScript | `javascriptsupport` |
-| JavaScript-version | `javascriptversion` |
-| Månatliga unika kunder | `monthlyuniquecustomers` |
-| Kunder som är unika varje kvartal | `quarterlyuniquecustomers` |
-| Tidszoner | `timezone` |
-| Domäner på översta nivån | `topleveldomain` |
-| Besökarläge | `legacystate` |
-| Unika kunder varje vecka | `weeklyuniquecustomers` |
-| Årliga unika kunder | `yearlyuniquecustomers` |
-
-## Innehållsmedvetna dimensioner stöds av både Rapporter &amp; Analytics och Analysis Workspace
+## Innehållsmedvetna dimensioner som stöds av Analysis Workspace
 
 ### Video (Media Analytics)
 
@@ -305,7 +279,7 @@ Den här sidlistan [dimensioner](overview.md) stöds i deras respektive Analytic
 |--- |--- |
 | Activity Map Link per region | `clickmaplinkbyregion` |
 | Activity Map | `clickmapregion` |
-| Länk till Activity Map | `clickmaplink` |
+| Activity Map Link | `clickmaplink` |
 | Sida för Activity Map | `clickmappage` |
 
 ### Nielsen Integration

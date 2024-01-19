@@ -3,9 +3,9 @@ title: Sida
 description: Sidans namn.
 feature: Dimensions
 exl-id: 579963c8-8460-425f-b716-3b30d7a259af
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ Dimensionen innehåller namnen på sidorna på webbplatsen. Din organisation avg
 
 >[!NOTE]
 >
->I Rapporter och analyser använder konverteringsstatistik linjär attribuering för den här dimensionen. Intäkterna delas t.ex. mellan alla sidor som visas under ett besök före en `purchase` -händelse. Analysis Workspace använder den senaste attribueringen som standard, med möjlighet att använda vilken attribueringsmodell som helst.
+>Analysis Workspace använder den senaste attribueringen som standard, med möjlighet att använda vilken attribueringsmodell som helst.

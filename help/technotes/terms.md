@@ -3,10 +3,10 @@ title: Termer som används i Adobe Analytics
 description: Ordlista för Adobe Analytics, definiera vanliga termer som används.
 exl-id: 07507ba1-a512-48d9-8022-6084de4ae262
 feature: Implementation Basics
-source-git-commit: 99156dd9d898ce0abf214561cb0040c647d7e6ab
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 1%
+source-wordcount: '2541'
+ht-degree: 0%
 
 ---
 
@@ -91,7 +91,7 @@ Använd den här ordlistan för att förstå sammanhanget för många termer som
 * **Realtid:** Visar konfigurerade variabler så snart de samlats in med liten eller ingen fördröjning. Se [Realtidsrapporter](/help/admin/admin/c-manage-report-suites/c-edit-report-suites/realtime/realtime.md) i användarhandboken för Admin.
 * **Report Builder:** Ett Microsoft Excel-tillägg som gör att du kan skapa anpassade förfrågningar från Adobe Analytics-data.
 * **Rapportsvit:** En överliggande behållare som du skickar data till. Alla rapporter i Adobe Analytics refererar till en rapportserie.
-* **Rapporter och analyser:** Tidigare SiteCatalyst. Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet.
+* **Rapporter och analyser:** Tidigare SiteCatalyst. Webbläsarlösning för rapportering och analys. Startverktyget i Analytics-paketet. Det här verktyget har [slutprodukt](https://experienceleague.adobe.com/docs/discontinued/using/reports-and-analytics.html?lang=en).
 * **Rullningsdatumintervall:** En typ av relativt datumintervall som ändras när tiden går. En rapport som visar de senaste 7 dagarna kan till exempel betraktas som ett löpande datumintervall. Se även statiskt datumintervall.
 * **RSID:** Förkortning för rapportsvitens ID. En rapportsvit har både ett eget namn och ett rapportsvit-ID.
 * **s.t():** Namnet på AppMeasurementet i ett sidvisningsbildbibliotek som skickar en bildbegäran. Vissa AppMeasurement används i bibliotek `s.track()` i stället. Se [t](../implement/vars/functions/t-method.md) i Implementeringshandboken.

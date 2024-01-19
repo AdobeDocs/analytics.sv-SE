@@ -3,10 +3,10 @@ title: förmedla genomslag till användarna
 description: Lär dig effektiva sätt att förmedla effekten av en händelse i organisationen.
 exl-id: 9ba83f3f-2eea-44c2-80b2-a0a9111d51cf
 feature: Event
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 1%
+source-wordcount: '339'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ I Adobe Analytics visas olika sätt att kommunicera med användare i organisatio
 
 ## Kommunicera via paneler eller visualiseringsbeskrivningar
 
-Om du har ett Workspace-projekt som delas mellan användare i din organisation kan du kommunicera effekten av en händelse via paneler eller visualiseringsbeskrivningar. Högerklicka på en panel eller ett visualiseringshuvud och välj sedan **[!UICONTROL Edit description]**.
+Om du har ett Workspace-projekt som delas mellan användare i din organisation kan du kommunicera effekten av en händelse via paneler eller visualiseringsbeskrivningar. Högerklicka på en panel eller ett visualiseringshuvud och välj **[!UICONTROL Edit description]**.
 
 ![Panelbeskrivning](assets/panel_description.png)
 
@@ -45,7 +45,7 @@ För all visualisering i Workspace kan du lägga till i en serie som representer
 
    ![Titel och beskrivning](assets/calcmetric_title_description.png)
 
-1. Lägg till dimensionen Dag i ett frihandsbord. Lägg till &#39;Besök&#39; och ditt beräknade mått som kolumner sida vid sida.
+1. I ett frihandsbord lägger du till dimensionen &#39;Dag&#39;. Lägg till &#39;Besök&#39; och ditt beräknade mått som kolumner sida vid sida.
 
    ![Frihandstabell](assets/calcmetric_freeform.png)
 
@@ -57,12 +57,3 @@ För all visualisering i Workspace kan du lägga till i en serie som representer
 
    ![Ikonen Info](assets/calcmetric_infoicon.png)
 
-## Använd en kalenderhändelse i Rapporter och analyser
-
-Om du använder Rapporter och analyser kan du använda en [kalenderhändelse](/help/components/t-calendar-event.md) för att markera berörda dagar i trendrapporter. Den här metoden gäller inte Analysis Workspace.
-
-1. Navigera till **[!UICONTROL Components]** > **[!UICONTROL All components]** > **[!UICONTROL Calendar events]**.
-2. Ange önskad titel, datumintervall och anteckningstext.
-3. Klicka på **[!UICONTROL Save]**.
-
-![Kalenderhändelse](assets/exclude_calendar_event.png)

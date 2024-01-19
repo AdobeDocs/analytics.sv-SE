@@ -3,10 +3,10 @@ description: Beskriver hur du kör Marketing Channel-rapporten, tilldelar begrä
 title: Behörigheter för marknadsföringskanal
 feature: Marketing Channels
 exl-id: 3b3bcf9b-eee7-4d84-9d4a-e4a24e0cdd4d
-source-git-commit: 2eff7656741bdba3d5d7d1f33e9261b59f8e6083
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,6 @@ Här är behörigheterna för verktygen i Report Suite som behövs i [Admin Cons
 |---|---|---|
 | Report Suite-verktyg | Kanaler | Ger åtkomst till marknadsföringskanaler, inklusive Marketing Channel Manager, regler för bearbetning av marknadsföringskanaler och förfallodatum för marknadsföringskanaler i Report Suite Manager. |
 | Report Suite-verktyg | Kostnader | Ger åtkomst till marknadsföringskanaler > Marknadskanalkostnader i Report Suite Manager. |
-| Report Suite-verktyg | Kanalrapport | Ger åtkomst till marknadsföringskanalerna > Kanalöversiktsrapport i rapporter och analyser. |
 | Report Suite-verktyg | Klassificeringar | Ger åtkomst till alla klassificeringsinställningar i Report Suite Manager, inklusive Marketing Channels > Marketing Channel Classifications. |
 | Analysverktyg | Analysis Workspace Access | Ger åtkomst till Analysis Workspace. Användarna måste tillhöra antingen den här gruppen (standard) eller rapport- och analysåtkomst för att kunna använda dimensionerna för marknadsföringskanaler i arbetsytan. |
 | Analysverktyg | Reports and Analytics Access | Ger åtkomst till Reports and Analytics. Användare måste tillhöra den här gruppen eller Analysis Workspace Access (standard) för att kunna använda Adobe Analytics. |

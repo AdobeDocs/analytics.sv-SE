@@ -3,9 +3,9 @@ description: Med segment kan du identifiera undergrupper av besökare baserat p�
 title: Om segment
 feature: Segmentation
 exl-id: 11d930ca-5d59-4ea5-b6e5-fe3d57be94fd
-source-git-commit: 483e1b3f566003ca4433de891834338a852ba8b3
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1128'
 ht-degree: 1%
 
 ---
@@ -282,7 +282,7 @@ Administratörer kan redigera alla segment och dela segment med grupper och med 
 
 +++ **Kan jag se alla segment i mitt företag?**
 
-Ja, administratörer kan se alla segment i [!DNL Analysis Workspace] och [!DNL Reports & Analytics] användargränssnitt.
+Ja, administratörer kan se alla segment i [!DNL Analysis Workspace] användargränssnitt.
 
 Report Builder visar segment som du äger och segment som delas med dig.
 
@@ -292,7 +292,7 @@ Report Builder visar segment som du äger och segment som delas med dig.
 
 Ja, alla segment kan hanteras i segmenthanteraren. Segmenthanteraren visar segment som är synliga för ägaren (den användare som skapade segmentet), delade användare och adminanvändare. Segmentväljaren visar segment som ägs av och delas med användaren.
 
-Administratörer kan se alla segment inom Analysis Workspace och [!DNL Reports & Analytics] användargränssnitt.
+Administratörer kan se alla segment i Analysis Workspace användargränssnitt.
 
 I Report Builder visas endast segment som du har skapat eller segment som har delats specifikt med dig.
 

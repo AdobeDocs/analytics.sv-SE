@@ -3,9 +3,9 @@ title: Tid per besök (dimensioner)
 description: Den totala tiden för besöket.
 feature: Dimensions
 exl-id: f241eb2d-7e22-47ee-ade8-8aeb7b2b9694
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,6 @@ De här dimensionerna fungerar som de ska för alla implementeringar. Om en rapp
 Det finns flera dimensioner av den tid som tillbringas per besök:
 
 * **Tid per besök - paketerad**: Tidsmängden är bucketed. Objekten i Dimensionen kan variera från `"Less than 1 minute"` till `"More than 15 hours"`. Besök varar vanligtvis inte längre än 12 timmar, men besöken kan överstiga 12 timmar om tidsstämplade träffar eller datakällor används.
-* **Tidsåtgång per besök - granulerad**: Varje antal sekunder är ett unikt dimensionsobjekt. Den här dimensionen är inte tillgänglig i Rapporter och analyser eller i Data Warehouse.
+* **Tidsåtgång per besök - granulerad**: Varje antal sekunder är ett unikt dimensionsobjekt. Den här dimensionen är inte tillgänglig i Data Warehouse.
 
 Se [Tidsåtgång - översikt](../metrics/time-spent.md) om du vill ha mer allmän information om hur länge du har tillbringat.

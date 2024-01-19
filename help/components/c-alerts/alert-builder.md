@@ -3,27 +3,26 @@ description: Använd varningar i Analysis Workspace.
 title: Översikt över Alert Builder
 feature: Alerts
 exl-id: 82e51357-4a32-4db1-bc56-95a72dbaa1be
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
-# Alert Builder
+# Varningsverktyg
 
 >[!IMPORTANT]
 >
 >Intelligenta aviseringar är tillgängliga för Adobe [!DNL Analytics] Prime och Adobe [!DNL Analytics] Endast de ultimata kunderna.
 
-Få åtkomst till varningsverktyget på ett av fyra sätt:
+Få åtkomst till varningsverktyget på något av tre sätt:
 
 * Genom att använda följande kortkommando i Analysis Workspace:
 
-   `ctrl (or cmd) + shift + a`
+  `ctrl (or cmd) + shift + a`
 * Genom att gå till **[!UICONTROL Workspace]** > **[!UICONTROL Components]** > **[!UICONTROL New Alert]**.
 * Genom att markera ett eller flera objekt på en frihandsritabell högerklickar och väljer du **[!UICONTROL Create Alert from Selection]**.
-* Från en [!UICONTROL Reports & Analytics] rapport, genom att gå till **[!UICONTROL More]** > **[!UICONTROL Add Alert]**.
 
 Gränssnittet i Alert Builder är bekant för dem som har skapat segment eller beräknade värden i [!DNL Analytics]:
 
@@ -33,7 +32,7 @@ Gränssnittet i Alert Builder är bekant för dem som har skapat segment eller b
 
 Ange ett namn för aviseringen. Varningsnamnet kan innehålla rapportens namn eller måttets tröskelvärde.
 
-**Tidsgranularitet**
+**Tidsnoggrannhet**
 
 Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje vecka eller Varje månad.
 
@@ -43,11 +42,11 @@ Ange när du vill att måttet ska kontrolleras: Varje timme, Varje dag, Varje ve
 
 **Mottagare**
 
-Ange var aviseringen kan skickas. En varning kan skickas till en [!DNL Analytics] användare, en [!DNL Analytics] grupp, en obearbetad e-postadress eller ett telefonnummer.
+Ange var aviseringen kan skickas. En varning kan skickas till en [!DNL Analytics] användare, [!DNL Analytics] grupp, en obearbetad e-postadress eller ett telefonnummer.
 
 >[!IMPORTANT]
 >
->Telefonnumret måste föregås av ett plustecken (+) och ett [landskod](https://countrycode.org/).
+>Telefonnumret måste föregås av ett plustecken och ett [landskod](https://countrycode.org/).
 
 **Förfallodatum**
 
@@ -59,9 +58,9 @@ Ange aviseringens förfallodatum.
 
 * Dra och släpp mätvärden på arbetsytan som lägger till utlösare.
 
-   Observera att **&quot;inkompatibla komponenter&quot;** meddelandet visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
+  Observera att **inkompatibla komponenter** meddelandet visas om inte alla komponenter (mått/dimensioner/segment) i aviseringen är kompatibla med den valda rapportsviten.
 
-* Ange tröskelvärdet som måttet måste överskrida innan en avisering anges. Du kan ange ett tröskelvärde och sedan något av följande villkor:
+* Fastställ tröskelvärdet som måttet måste överskrida innan en avisering anges. Du kan ange ett tröskelvärde och sedan något av följande villkor:
 
    * avvikelse finns
    * avvikelsen är större än förväntat

@@ -1,15 +1,15 @@
 ---
 description: Steg för att lägga till kalenderhändelser och hantera delade händelser.
-title: Kalenderhändelser översikt
+title: Översikt över kalenderhändelser
 feature: Reports & Analytics Basics
-uuid: 15d4f0c8-b566-43b0-b914-4ea35b7fac7f
 exl-id: 5765b377-bdad-41a7-8277-b9fd521c12bd
-source-git-commit: 10ff98f7ca4697afe5c2dae66be415c0d68c4aac
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '308'
+ht-degree: 76%
 
 ---
+
 
 # Kalenderhändelser
 
@@ -17,7 +17,7 @@ Steg för att lägga till kalenderhändelser och hantera delade händelser.
 
 >[!NOTE]
 >
->För att rapporteringen ska fungera optimalt kommer de 20 senaste kalenderhändelserna att visas i trenddiagram och diagram över tid.
+>För att rapporteringen ska fungera optimalt kommer de 20 senaste kalenderhändelserna att visas i trenddiagram och övertidsdiagram.
 
 För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanjer eller andra händelser har påverkat webbplatsens trafik, intäkter eller andra mätvärden. Du skapar en kalenderhändelse genom att namnge händelsen, ange datum, lägga till anteckningar och ställa in en ikon. Om du till exempel använder Social kan du skapa en kalenderhändelse som visar att det fanns en korrelation mellan en ökning av webbplatstrafiken och att en kändis nämnde er produkt på Twitter.
 
@@ -42,4 +42,4 @@ För trendrapporter över tid kan ni visa händelser grafiskt och se om kampanje
    | **Copy Me** | Lägger till en kopia i händelselistan med samma namn som originalet. Du kan dock inte se några uppdateringar eller ändringar som har gjorts av händelsens ägare. |
    |---|---|
    | **Vid rapport** | Gör att du kan se ändringar/uppdateringar som görs av händelseägaren. |
-   | **Sluta dela** | Tar bort den här händelsen från listan över delade händelser. |
+   | **Dela inte** | Tar bort den här händelsen från listan med delade händelser. |

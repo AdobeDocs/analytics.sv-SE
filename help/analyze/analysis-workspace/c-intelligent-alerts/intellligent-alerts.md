@@ -4,9 +4,9 @@ title: Översikt över intelligenta aviseringar
 feature: Alerts
 role: User, Admin
 exl-id: 49d47896-bf93-4960-b647-2765c935eb25
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Här är en självstudiekurs om [Intelligenta aviseringar](https://experiencelea
 
 ## Översikt
 
-Den nya varningsfunktionen i Analysis Workspace ersätter varningsfunktionen i Rapporter och analyser, som har slutat gälla. Med intelligenta aviseringar kan du:
+Med intelligenta aviseringar kan du:
 
 * Skapa aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, % förändring i %, över/under)
 * Förhandsgranska hur ofta en varning utlöses

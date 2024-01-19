@@ -2,11 +2,11 @@
 title: Analytics Tech Notes
 description: Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
 exl-id: 4cb084f8-5cec-4c46-a584-614217d42431
-feature: Attribution, Visualizations, Reports & Analytics Basics, Segmentation, Real-time
-source-git-commit: 811e321ce96aaefaeff691ed5969981a048d2c31
+feature: Attribution, Visualizations, Segmentation, Real-time
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 20%
+source-wordcount: '419'
+ht-degree: 16%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 20%
 
 Den här handboken innehåller användbar information om ämnen som inte tillhör ett visst analysverktyg eller en viss komponent.
 
-Adobe Analytics är en lösning för webbanalys som gör det möjligt för företag att mäta, analysera och optimera sin digitala marknadsföring. Det är en molnbaserad plattform som ger realtidsinsikter om prestanda för webbplatser och mobilappar, kundbeteenden och effektiviteten i marknadsföringskampanjer.
+Adobe Analytics är en lösning för webbanalys som gör det möjligt för företag att mäta, analysera och optimera sina aktiviteter inom digital marknadsföring. Det är en molnbaserad plattform som ger realtidsinsikter om prestanda för webbplatser och mobilappar, kundbeteenden och effektiviteten i marknadsföringskampanjer.
 
 Plattformen använder en rad olika datakällor, bland annat data från webb- och mobilappar, externa data, offlinedata och CRM-data, för att ge en komplett bild av kundinteraktionen i flera kanaler. Adobe Analytics har en rad funktioner som gör att företag kan fatta datadrivna beslut och driva den digitala omvandlingen.
 
@@ -26,11 +26,11 @@ Några av huvudfunktionerna i Adobe Analytics:
 
 * Datavisualisering: Adobe Analytics har en rad datavisualiseringsverktyg, de mest framträdande diagrammen och graferna på Analysis Workspace- och Analytics-paneler, som gör det enkelt att tolka komplexa datauppsättningar och identifiera trender.
 
-* Avancerad analys: Plattformen erbjuder avancerade analysfunktioner, inklusive prediktiv analys, maskininlärning och AI-baserade insikter, som gör att företag kan identifiera dolda mönster och få en djupare förståelse för kundbeteenden.
+* Avancerad analys: Plattformen har avancerade analysfunktioner, inklusive prediktiv analys, maskininlärning och AI-baserade insikter, som gör att företag kan identifiera dolda mönster och få en djupare förståelse för kundbeteenden.
 
-* Attribution: Adobe Analytics innehåller verktyg för attribueringsmodellering som hjälper företag att förstå hur deras marknadsföringskampanjer påverkar olika kanaler och kontaktytor, vilket gör att de kan optimera sina marknadsföringsutgifter och förbättra avkastningen.
+* Attribution: Adobe Analytics innehåller verktyg för attribueringsmodellering som hjälper företag att förstå effekten av sina marknadsföringskampanjer i olika kanaler och kontaktytor, vilket gör att de kan optimera sina marknadsföringsutgifter och förbättra avkastningen.
 
-* Rapportering: Plattformen erbjuder en rad rapportalternativ, inklusive schemalagda rapporter, ad hoc-rapporter och anpassningsbara kontrollpaneler, som gör att företag kan dela insikter med intressenter och samarbeta kring datadrivet beslutsfattande.
+* Rapportering: Plattformen erbjuder en rad rapportalternativ, bland annat schemalagda rapporter, ad hoc-rapporter och anpassningsbara kontrollpaneler, som gör att företag kan dela insikter med intressenter och samarbeta kring datadrivet beslutsfattande.
 
 Sammanfattningsvis är Adobe Analytics en kraftfull webbanalyslösning som ger företag de verktyg de behöver för att mäta, analysera och optimera sin digitala marknadsföring. Med realtidsdata, avancerad analys och attribueringsmodellering kan företag fatta datadrivna beslut som driver digital omvandling och förbättrar avkastningen.
 

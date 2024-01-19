@@ -5,9 +5,9 @@ role: Admin
 solution: Analytics
 feature: VRS
 exl-id: 3742b9d1-f1fb-4690-bd44-b4719ff9d9bc
-source-git-commit: 3be3de8c24e48f5ecddd37ff6d3cbcf64bca3209
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Under databearbetningen i Analytics flödar data genom datainsamlingsflödet och
 
 ![Rörledning för bearbetning av rapporttid](assets/google2.jpg)
 
-Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan t.ex. ändra besökets tidsgräns till hur länge du vill på ett icke-förstörande sätt och dessa ändringar återspeglas i eVar beständighets- och segmentbehållare under hela rapporteringsperioden. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
+Denna bearbetningsarkitektur möjliggör mycket mer flexibla rapporteringsalternativ. Du kan till exempel ändra besökets tidsgräns till hur länge du vill på ett icke-förstörande sätt och dessa ändringar återspeglas i eVarnas beständighet och segmentbehållare under hela rapporteringsperioden. Dessutom kan du skapa ett valfritt antal virtuella rapportsviter, där vart och ett har olika alternativ för bearbetning av rapporttid som baseras på samma basrapportserie, utan att ändra några data i basrapportsviten.
 
 [!UICONTROL Report Time Processing] gör det även möjligt för Analytics att förhindra bakgrundstötar från att starta nya besök och [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html) om du vill starta ett nytt besök när en appstartshändelse utlöses.
 
@@ -46,9 +46,9 @@ Här är en video om hur du startar ett nytt besök med eventet:
 
 ## Bearbetningsbegränsningar för rapporttid
 
-Rapporttidsbearbetningen stöder inte alla mått och mått som är tillgängliga i traditionella analysrapporter. Virtuella rapportsviter som använder Report Time Processing är bara tillgängliga i Analysis Workspace och är inte tillgängliga i [!UICONTROL Reports & Analytics], Data warehouse, Report Builder, datafeeds eller API:t för rapportering.
+Rapporttidsbearbetningen stöder inte alla mått och mått som är tillgängliga i traditionella analysrapporter. Virtuella rapportsviter som använder Report Time Processing är bara tillgängliga i Analysis Workspace och är inte tillgängliga i Data Warehouse, Report Builder, Data Feeds eller API:t för rapportering.
 
-Dessutom bearbetas endast data som kommer från rapportens datumintervall (kallas datumfönster nedan). Detta innebär att eVar som är inställda på&quot;aldrig förfaller&quot; för en besökare före rapportdatumintervallet inte finns kvar i rapporteringsfönstren och inte visas i rapporter. Detta innebär också att kundlojalitetsmätningarna enbart baseras på data som finns i rapporteringsdatumintervallet och inte på hela historiken före rapportens datumintervall.
+Dessutom bearbetas endast data som kommer från rapportens datumintervall (kallas datumfönster nedan). Det innebär att eVar-värden som angetts som&quot;aldrig förfaller&quot; för en besökare före rapportdatumintervallet inte bevaras i rapportfönstren och inte visas i rapporter. Detta innebär också att kundlojalitetsmätningarna enbart baseras på data som finns i rapporteringsdatumintervallet och inte på hela historiken före rapportens datumintervall.
 
 Följande dimensioner och mått stöds inte för bearbetning av rapporttid:
 
@@ -63,10 +63,10 @@ Följande dimensioner och mått stöds inte för bearbetning av rapporttid:
 * **Listvariabler**
 * [**Dimensioner för marknadsföringskanaler**](/help/components/dimensions/marketing-channel.md)
 * [**Ursprunglig referensdomän**](/help/components/dimensions/original-referring-domain.md)
-* [**Återbesöksfrekvens**](/help/components/dimensions/return-frequency.md)
-* [**Enkelt besök**](/help/components/metrics/single-access.md)
+* [**Returfrekvens**](/help/components/dimensions/return-frequency.md)
+* [**Enkel åtkomst**](/help/components/metrics/single-access.md)
 * **Datakällor för transaktions-ID**
-* [**Besöksnummer**](/help/components/dimensions/visit-number.md)
+* [**Besök nummer**](/help/components/dimensions/visit-number.md)
 
 ## Påverkade mått och mätvärden
 

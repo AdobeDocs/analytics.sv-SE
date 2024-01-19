@@ -3,10 +3,10 @@ title: Unika besökare
 description: Antalet unika besökar-ID.
 feature: Metrics
 exl-id: 56e7bad4-4802-49ac-a0f1-ae77441fc016
-source-git-commit: d095628e94a45221815b1d08e35132de09f5ed8f
+source-git-commit: 93099d36a65ca2bf16fbd6342f01bfecdc8c798e
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 0%
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -17,8 +17,6 @@ Unika besökare [mått](overview.md) visar antalet besökar-ID för dimensionsob
 Om du [Enhetsövergripande analys](../cda/overview.md), den här mätningen ersätts med [Unika enheter](unique-devices.md) mätvärden.
 
 ## unika besökare varje dag, vecka, månad, kvartal och år
-
-Rapporter och analyser innehåller alternativ för unika besökare varje dag, vecka, månad, kvartal och år. I stället för att räkna en unik besökare för hela tidsperioden, räknar unika besökare baserat på det valda mätvärdet. Du vill till exempel titta på unika besökare varje dag för din webbplats. Om en besökare kommer till er webbplats på morgonen och igen på natten räknas de som en enda unik besökare varje dag. Om en besökare kommer till er webbplats på måndag och igen på tisdag räknas de som två unika besökare varje dag.
 
 Analysis Workspace behandlar unika besökare utifrån rapportens detaljrikedom. Om du till exempel använder [Dag](../dimensions/day.md) kommer du att se unika besökare varje dag för varje dimensionspost. För rapportsumman har den dock ersatts med unika besökare för friformstabellens datumintervall.
 
