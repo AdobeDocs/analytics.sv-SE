@@ -1,11 +1,11 @@
 ---
 title: Skapa en Analytics-egenskap i taggar
 description: Skapa ett utrymme för att anpassa hur data samlas in med hjälp av taggar.
-feature: Launch Implementation
+feature: Tags
 exl-id: ffcd8e97-4d29-489e-bc2b-88805400dad5
-source-git-commit: 9057cc83881a72fa039e9398ed3daaf4259ef2bf
+source-git-commit: 2aef8de290399f234921b09cf094485fc06f1c24
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '473'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Egenskaper är överliggande behållare som du använder för att hantera taggar
 1. Klicka på **[!UICONTROL New Property]**.
 1. Ge din egenskap ett namn, till exempel webbplatsens titel, och ange den domän som du tänker implementera Analytics på. Klicka på **[!UICONTROL Save]**.
 1. Klicka på den nyligen skapade taggegenskapen för att ange dess inställningar.
-1. Klicka på **[!UICONTROL Extensions]** tabbtangenten och sedan klicka **[!UICONTROL Catalog]**.
+1. Klicka på **[!UICONTROL Extensions]** tabbtangenten och klicka sedan på **[!UICONTROL Catalog]**.
 1. Sök efter tjänsten Experience Cloud ID och klicka sedan på **[!UICONTROL Install]**.
 1. Alla inställningar, inklusive Experience Cloud organisations-ID, ska redan vara ifyllda. Klicka på **[!UICONTROL Save]**.
 1. Gå tillbaka till tilläggskatalogen, leta upp Adobe Analytics och klicka på **[!UICONTROL Install]**.
@@ -39,17 +39,17 @@ Dataelement är referenser till specifika delar av webbplatsen för att samla in
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och sedan klicka **[!UICONTROL Add Data Element]**.
+1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och klicka sedan på **[!UICONTROL Add Data Element]**.
 1. Ge dataelementet följande inställningar:
 
    * Namn: Sidnamn
-   * Tillägg: Core
+   * Tillägg: Kärna
    * Dataelementtyp: JavaScript-variabel
    * JavaScript-variabelnamn: `window.document.title`
 
-      >[!NOTE]
-      >
-      >Det här värdet är ett exempel som hjälper dig att komma igång. Om din organisation definierar ett bättre värde för sidnamn, till exempel ett datalagervärde, kan du ange det här.
+     >[!NOTE]
+     >
+     >Det här värdet är ett exempel som hjälper dig att komma igång. Om din organisation definierar ett bättre värde för sidnamn, till exempel ett datalagervärde, kan du ange det här.
    * Rensa text
    * Lagringstid: Ingen
 1. Klicka på **[!UICONTROL Save]**.
@@ -60,11 +60,11 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-1. Klicka på **[!UICONTROL Rules]** tabbtangenten och sedan klicka **[!UICONTROL Add Rule]**. Ge den ett namn `Global Rule`.
+1. Klicka på **[!UICONTROL Rules]** tabbtangenten och klicka sedan på **[!UICONTROL Add Rule]**. Ge den ett namn `Global Rule`.
 1. Klicka **[!UICONTROL Add]** bredvid händelser och ange följande inställningar:
-   * Tillägg: Core
+   * Tillägg: Kärna
    * Händelsetyp: Bibliotek inläst (sidan ovanpå)
-   * Namn: Kärna - Bibliotek inläst (sidan ovanpå)
+   * Namn: Kärna - Bibliotek inläst (sidan överst)
 1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Under **[!UICONTROL Actions]**, klicka **[!UICONTROL Add]** och ange följande inställningar:
    * Tillägg: Adobe Analytics
@@ -74,8 +74,8 @@ Regler mappar dataelement till Analytics-variabelvärden och avgör när dessa v
 1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Klicka på plustecknet bredvid åtgärder för att lägga till en annan åtgärd och ange följande inställningar:
    * Tillägg: Adobe Analytics
-   * Åtgärdstyp: Skicka Beacon
-   * Namn: Adobe Analytics - skicka Beacon
+   * Åtgärdstyp: Skicka signal
+   * Namn: Adobe Analytics - Skicka Beacon
    * Spårning: s.t()
 1. Klicka på **[!UICONTROL Keep Changes]**.
 1. Kontrollera att du har en händelse och två åtgärder angivna och klicka sedan på **[!UICONTROL Save]**.

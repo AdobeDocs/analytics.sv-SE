@@ -1,11 +1,11 @@
 ---
-title: Distribuera Adobe Analytics till en dev-miljö
+title: Distribuera Adobe Analytics i en utvecklingsmiljö
 description: Lär dig hur du använder taggar för att distribuera Adobe Analytics till din utvecklingsmiljö.
-feature: Launch Implementation
+feature: Tags
 exl-id: 324943db-cb0b-40b1-8884-56bb3f608278
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 2aef8de290399f234921b09cf094485fc06f1c24
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ När du har skapat och konfigurerat en taggegenskap är biblioteken klara att di
 
 ## Förutsättningar
 
-[Skapa och konfigurera en taggegenskap för Adobe Analytics](create-analytics-property.md): Få tillgång till verktyget och skapa ett utrymme för er Analytics-implementering.
+[Skapa och konfigurera en taggegenskap för Adobe Analytics](create-analytics-property.md): Använd verktyget och skapa ett utrymme för er Analytics-implementering.
 
 ## Skapa adaptrar och miljöer
 
@@ -27,10 +27,10 @@ Taggar kan hantera många organisatoriska arbetsflöden när kod distribueras. F
 3. Klicka **[!UICONTROL Hosts]** och sedan klicka **[!UICONTROL Add Host]**.
 4. Ge den ett namn `"Adobe managed"`och markera **[!UICONTROL Managed by Adobe]** i typlistan. Klicka på Spara.
 5. Navigera till **[!UICONTROL Environments]** och sedan klicka **[!UICONTROL Add Environment]**.
-6. Välj **[!UICONTROL Development]**, ge den ett namn `"Dev Environment"`väljer du sedan den Adobe-hanterade värden i listrutan. Klicka på **[!UICONTROL Save]**.
-7. Ett modalt fönster med instruktioner för webbinstallation visas. Vi återgår till det här fönstret vid ett senare tillfälle. klicka **[!UICONTROL Close]** för tillfället.
-8. Klicka **[!UICONTROL Add Environment]**, markera **[!UICONTROL Staging]**, ge den ett namn `"Staging Environment"`väljer du sedan den Adobe-hanterade värden. Klicka **[!UICONTROL Create]** stänger du installationsinstruktionens modala fönster.
-9. Klicka **[!UICONTROL Add Environment]** igen, välj **[!UICONTROL Production]**, ge den ett namn `"Production Environment"`väljer du sedan den Adobe-hanterade värden. Klicka **[!UICONTROL Create]** stänger du installationsinstruktionens modala fönster.
+6. Välj **[!UICONTROL Development]**, namnge `"Dev Environment"`väljer du sedan den Adobe-hanterade värden i listrutan. Klicka på **[!UICONTROL Save]**.
+7. Ett modalt fönster med instruktioner för webbinstallation visas. Vi återgår till det här fönstret vid ett senare tillfälle. **[!UICONTROL Close]** för tillfället.
+8. Klicka **[!UICONTROL Add Environment]**, markera **[!UICONTROL Staging]**, namnge `"Staging Environment"`väljer du sedan den Adobe-hanterade värden. Klicka **[!UICONTROL Create]** stänger du installationsinstruktionens modala fönster.
+9. Klicka **[!UICONTROL Add Environment]** igen, välj **[!UICONTROL Production]**, namnge `"Production Environment"`väljer du sedan den Adobe-hanterade värden. Klicka **[!UICONTROL Create]** stänger du installationsinstruktionens modala fönster.
 
 ## Bygg ett dev-bibliotek
 
@@ -38,9 +38,9 @@ Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publ
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 2. Klicka på den taggegenskap som du tänker implementera på webbplatsen.
-3. Klicka på **[!UICONTROL Publishing Flow]** tabbtangenten och sedan klicka **[!UICONTROL Add Library]**. Se [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) i taggdokumentationen om du vill ha mer information om den här sidan.
+3. Klicka på **[!UICONTROL Publishing Flow]** tabbtangenten och klicka sedan på **[!UICONTROL Add Library]**. Se [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) i taggdokumentationen för mer information om den här sidan.
 4. Namnge biblioteket `'Initial changes'`och väljer utvecklingsmiljö.
-5. Klicka **[!UICONTROL Add All Changed Resources]** som automatiskt listar Adobe Analytics, identitetstjänst och kärna.
+5. Klicka **[!UICONTROL Add All Changed Resources]**, som automatiskt listar Adobe Analytics, identitetstjänst och kärna.
 6. Klicka på **[!UICONTROL Save]**.
 7. Gå tillbaka till arbetsflödesfönstret, klicka på listrutan bredvid det nya biblioteket och klicka på **[!UICONTROL Build for Development]**. Efter några sekunder blir den gula punkten i biblioteket grön, vilket anger att bygget lyckades.
 8. Navigera till **[!UICONTROL Environments]** klickar du sedan på installationsikonen till höger om utvecklingsmiljön. Den här åtgärden öppnar det modala fönstret för instruktioner för webbinstallation igen.
@@ -51,7 +51,7 @@ Trots alla ändringar och konfigurationer som gjorts hittills har ingen kod publ
 Om du kontrollerar koden för webbplatsen implementerar du varje kodblock på respektive plats:
 
 * Huvudtaggen tillhör `<head>` -tagg på din webbplats.
-* Om du väljer att läsa in taggar synkront måste du även inkludera ett andra kodblock precis under stängningen `</body>` -tagg på din webbplats. Du kan välja att läsa in bibliotekstaggar synkront genom att växla **[!UICONTROL Load Library Asynchronously]** i Web Install Instructions.
+* Om du väljer att läsa in taggar synkront måste du även inkludera ett andra kodblock precis under stängningen `</body>` -tagg på din webbplats. Du kan välja att läsa in bibliotekstaggar synkront genom att aktivera **[!UICONTROL Load Library Asynchronously]** i Web Install Instructions.
 
 Taggkoden placeras vanligtvis i platsens övergripande mall. En tom sida som bara innehåller implementeringskod ser ut så här:
 

@@ -1,11 +1,11 @@
 ---
 title: Implementera Adobe Analytics med Analytics-tillägget
 description: Lär dig implementera Adobe Analytics med hjälp av taggar och Analytics-tillägg
-feature: Launch Implementation
+feature: Tags
 exl-id: 52990731-8a68-4779-ad42-6ec94b0aabd1
-source-git-commit: 8cb2fd426e9fef247d79de4c138ea814dd691ed3
+source-git-commit: 2aef8de290399f234921b09cf094485fc06f1c24
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '364'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Alla kunder som har ett aktivt Adobe Experience Cloud-kontrakt kan använda tagg
 <tr>
 <td> 1</td>
 <td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
-<td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+<td><a href="../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>

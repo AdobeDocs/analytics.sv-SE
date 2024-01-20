@@ -1,12 +1,12 @@
 ---
 title: Mappa datalagerobjekt till dataelement
 description: Konfigurera taggar som ska läsas från datalagret.
-feature: Launch Implementation
+feature: Tags
 exl-id: b7594084-cb5f-408e-8a76-0a0815cc7553
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 2aef8de290399f234921b09cf094485fc06f1c24
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 6%
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
 
 ## Förutsättningar
 
-[Skapa ett datalager](../prepare/data-layer.md): Kontrollera att det finns ett datalager på platsen. Även om du tekniskt kan mappa ett JavaScript-objekt eller skrapa CSS-element direkt från sidan, rekommenderar Adobe att detta görs som en sista utväg. Om platslayouten ändras slutar de CSS-väljare som används i -taggar att fungera, vilket orsakar dataförlust.
+[Skapa ett datalager](../prepare/data-layer.md): Kontrollera att det finns ett datalager på platsen. Även om du tekniskt kan mappa ett JavaScript-objekt eller skrapa CSS-element direkt från sidan rekommenderar Adobe att detta görs som en sista utväg. Om platslayouten ändras slutar de CSS-väljare som används i -taggar att fungera, vilket orsakar dataförlust.
 
 ## Använd taggar för att skapa dataelement
 
@@ -24,7 +24,7 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
-1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och sedan klicka **[!UICONTROL Add Data Element]**.
+1. Klicka på **[!UICONTROL Data Elements]** tabbtangenten och klicka sedan på **[!UICONTROL Add Data Element]**.
 
    ![skapa dataelement](assets/createelement.png)
 
@@ -36,4 +36,4 @@ När organisationen har etablerat och implementerat ett datalager på webbplatse
 
 ## Nästa steg
 
-[Mappa dataelement till analysvariabler](elements-to-variable.md): Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
+[Mappa dataelement till analysvariabler](elements-to-variable.md): Tilldela dataelement till analysvariabler så att du kan använda dem som dimensioner i Analysis Workspace.

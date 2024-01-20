@@ -1,11 +1,11 @@
 ---
 title: Mappa taggdataelement till analysvariabler
 description: Tilldela dataelement till Analytics-variabler så att ni kan använda dem som dimensioner i Analysis Workspace.
-feature: Launch Implementation
+feature: Tags
 exl-id: 996c1204-3f8a-453e-8104-5e8e1279517c
-source-git-commit: 78cfb1f3c4d45fc983982a8da11b66f2b2c9ecbc
+source-git-commit: 2aef8de290399f234921b09cf094485fc06f1c24
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ När du har en databas med taggdataelement kan du tilldela dem till Analytics-di
 
 [Mappa datalagerobjekt till dataelement](layer-to-elements.md): Se till att du förstår taggdataelementen och att du har flera att arbeta med.
 
-[Skapa ett dokument för lösningsdesign](../prepare/solution-design.md): Ett dokument för att utforma lösningar är nödvändigt för att hålla er välorganiserade. Genom att följa ert lösningsdesigndokument förenklas tilldelningen av dataelement till analysvariabler.
+[Skapa ett dokument för lösningsdesign](../prepare/solution-design.md): Ett dokument för utformning av lösningar är avgörande för att hålla sig välorganiserat. Genom att följa ert lösningsdesigndokument förenklas tilldelningen av dataelement till analysvariabler.
 
 ## Tilldela dataelement till analysvariabler
 
@@ -36,7 +36,7 @@ Globala variabler är idealiska om du vill ange variabelvärden på alla sidor d
 
 ### Ange variabler i regler
 
-Variabler som anges i regler är idealiska om du inte vill ha variabler som anges på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) i dokumentationen för Adobe Experience Platform-taggar.
+Variabler som ställs in i regler är idealiska om du inte vill ha variabler som ställs in på varje sida. Du definierar villkoren i regeln. Se [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) i dokumentationen för Adobe Experience Platform-taggar.
 
 1. Logga in på [Adobe Experience Platform Data Collection](https://experience.adobe.com/data-collection) med inloggningsuppgifterna för ditt AdobeID.
 1. Klicka på den önskade taggegenskapen.
@@ -45,7 +45,7 @@ Variabler som anges i regler är idealiska om du inte vill ha variabler som ange
 1. Ange [!UICONTROL Extension] nedrullningsbar lista till Adobe Analytics och [!UICONTROL Action Type] för att ange variabler.
 1. Klicka på ![Dataelement](assets/data-element.png) till höger om den önskade Analytics-variabeln. Din organisations [konstruktionsdokument](../prepare/solution-design.md) anger vilken Analytics-variabel som ska användas.
 1. Markera det önskade dataelementet i det modala fönstret. Klicka på [!UICONTROL Select].
-1. Dataelementnamnet läggs till i textfältet omgivet av `%` skyltar. Om du t.ex. gav dataelementet namnet&quot;Sidnamn&quot; visas strängen `%Page name%` när du tilldelar ett dataelement till en variabel.
+1. Dataelementnamnet läggs till i textfältet omgivet av `%` skyltar. Om du t.ex. gav dataelementet namnet&quot;Sidnamn&quot; visas strängen `%Page name%` när ett dataelement tilldelas till en variabel.
 
 >[!TIP]
 >
