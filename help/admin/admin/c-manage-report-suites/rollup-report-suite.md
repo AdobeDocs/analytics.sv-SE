@@ -3,9 +3,9 @@ description: Beskrivningar av rapporttyper och jämförelse av globala rapportsv
 title: Rapportera metoder för programsvit
 feature: Report Suite Settings
 exl-id: 97bdc9bd-2212-436b-b3b4-ec518624f9e6
-source-git-commit: d173a6c6c9751a86f4218ec842da17da14f8485b
+source-git-commit: 4545c3839586231918ba5ebbf17fcac5a366abab
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -44,38 +44,38 @@ Att använda virtuella rapportsviter i stället för taggning i flera sviter är
 >
 >[!DNL Reports & Analytics] är det enda verktyg som stöder sammanslagningsrapporter. Rapporter och analyser upphörde den 17 januari 2024.
 
-### Begränsningar för sammanslagningsrapporter {#limitations-rollups}
+<!---### Limitations of Rollup Reports {#limitations-rollups}
 
-* Sammanslagningar ger totaldata, men de rapporterar inte enskilda värden i rapporter. EVar1-värden inkluderas till exempel inte, men deras sammanlagda summa kan vara det.
-* Data dedupliceras inte när sammanslagningen kombinerar data mellan olika rapportsviter.
-* Upprullningar går nattetid vid midnatt.
-* När du lägger till en rapportserie i en befintlig sammanslagning inkluderas inte historiska data i sammanslagningen.
-* Alla underordnade rapportsviter måste ha data i dem för att en sammanslagning ska fungera. Om nya rapportsviter ingår i en sammanslagning måste du skicka minst en sidvy till var och en av dessa rapportsviter.
-* Sammanslagningsrapportsviter kan innehålla maximalt 40 underordnade rapportsviter.
-* Sammanslagningsrapportsviter kan innehålla maximalt 100 händelser.
-* Data i sammanslagningsrapportsviter stöder inte uppdelningar eller segment.
-* Sidrapporten ersätts med rapporten Most Popular Sites (Populära platser), som rapporterar mått på underordnad svitnivå.
+* Rollups provide total data, but they do not report individual values in reports. For example, eVar1 values are not included, but their aggregate total can be.
+* Data is not deduplicated when the rollup combines data across report suites.
+* Rollups run nightly at midnight.
+* When you add a report suite to an existing rollup, historical data is not included in the rollup.
+* All child report suites must have data in them for a rollup to function. If new report suites are included in a rollup, make sure to send at least one page view to each of those report suites.
+* Rollup report suites can include a maximum of 40 child report suites.
+* Rollup report suites can include a maximum of 100 events.
+* Data contained in rollup report suites does not support breakdowns or segments.
+* The Pages report is replaced with the Most Popular Sites report, which reports on metrics at the child-suite level.
 
-## Jämförelse av funktionerna i Global Report Suite och Sammanslagningsrapport
+## Comparison of Global Report Suite and Rollup Report  Features
 
-**Sekundära serveranrop**: Vid sammanslagning uppstår inga ytterligare serveranrop utöver vad en enskild rapportserie samlar in. Om din organisation använder taggar för flera programsviter görs sekundära serveranrop för varje extra rapportsvit som ingår i en bildbegäran.
+**Secondary server calls**: Rollups do not incur any additional server calls beyond what a single report suite collects. If your organization uses multi-suite tagging, secondary server calls are made for each additional report suite included in an image request.
 
 >[!TIP]
 >
->Om du bara använder en global rapportserie med [virtuella rapportsviter](/help/components/vrs/vrs-considerations.md)behövs inga sekundära serveranrop.
+>If you use only a global report suite with [virtual report suites](/help/components/vrs/vrs-considerations.md), no secondary server calls are needed.
 
-**Implementeringsändringar**: Vid sammanslagning krävs inga implementeringsändringar, medan globala rapportsviter kräver att du inkluderar det globala rapportsvitens ID i implementeringen.
+**Implementation changes**: Rollups do not require any implementation changes, while global report suites require you to include the global report suite ID in your implementation.
 
-**Duplicering**: Globala rapportsviter dubblerar unika besökare, men inte sammanslagningar. Om en användare till exempel besöker tre av dina domäner under samma dag, kommer sammanslagningar att räkna tre unika besökare per dag. Global rapportserie registrerar en unik besökare.
+**Duplication**: Global report suites deduplicate unique visitors, while rollups do not. For example, if a user visits three of your domains in the same day, rollups would count three daily unique visitors. Global report suites would record one unique visitor.
 
-**Tidsram**: Samlingar behandlas endast vid midnatt varje kväll, medan globala rapportsviter rapporterar data med standardfördröjning.
+**Time frame**: Rollups are only processed at midnight each night, while global report suites report data with standard latency.
 
-**Bredd**: Samlingar kan inte kommunicera mellan rapportsviter. Globala rapportsviter kan attribuera konverteringar till konverteringsvariabler mellan olika rapportsviter och tillhandahålla sökvägar mellan rapportsviter.
+**Breadth**: Rollups have no way to communicate between report suites. Global report suites can attribute credit to conversion variables between report suites and provide pathing across report suites.
 
-**Historiska data**: Samlingar kan samla in historiska data, medan globala rapportsviter bara rapporterar data från den punkt de implementerades.
+**Historical data**: Rollups can aggregate historical data, while global report suites only report data from the point they were implemented.
 
-**Rapporter**: Globala rapportsviter innehåller data om alla dimensioner; sammanslagningar tillhandahåller aggregerade data på enbart högnivårapporter.
+**Reports**: Global report suites provide data on all dimensions; rollups provide aggregate data on only high-level reports.
 
-**Produkter som stöds**: Samlingar kan bara användas i rapporter och analyser. De stöds inte i Analysis Workspace eller Data Warehouse. Globala rapportsviter kan användas för alla produkter.
+**Supported products**: Rollups could only be used in Reports & Analytics. They are not supported in Analysis Workspace, or Data Warehouse. Global report suites can be used across all products.
 
-**Antal aggregerade rapportsviter**: Samlingar stöder endast maximalt 40 underordnade rapportsviter. Globala rapportsviter kan implementeras på valfritt antal domäner eller appar som du äger.
+**Number of aggregated report suites**: Rollups only support a maximum of 40 child report suites. Global report suites can be implemented on any number of domains or apps that you own.--->

@@ -4,9 +4,9 @@ audience: admin
 user-guide-title: Administratörshandbok för Analytics
 breadcrumb-title: Användarhandbok om Admin
 user-guide-description: Lär dig mer om administrationsåtgärder i Analytics, som att hantera användare och produkter i Experience Cloud Admin Console, konfigurera rapportsviter med mera.
-source-git-commit: 59d4ade5e16fdd8c9cea266b7c352ce2057381d9
+source-git-commit: 4545c3839586231918ba5ebbf17fcac5a366abab
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '633'
 ht-degree: 13%
 
 ---
@@ -46,7 +46,6 @@ ht-degree: 13%
             + Betalsökningsidentifiering {#paid-search-detection}
                + [Översikt över betald sökningsidentifiering](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/paid-search-detection.md)
                + [Konfigurera identifiering av betald sökning](admin/c-manage-report-suites/c-edit-report-suites/general/paid-search-detection/t-paid-search-detection.md)
-            + [Anpassa menyer](admin/c-manage-report-suites/c-edit-report-suites/general/customize-menus.md)
             + Bearbetar regler {#c-processing-rules}
                + [Översikt över bearbetningsregler](admin/c-manage-report-suites/c-edit-report-suites/general/c-processing-rules/processing-rules.md)
                + Bearbetar regler {#c-processing-rules-configuration}
@@ -133,7 +132,6 @@ ht-degree: 13%
       + [Hämta inställningar för rapportsviten](admin/c-manage-report-suites/t-download-rs-settings.md)
       + Ny rapportsvit {#c-new-report-suite}
          + [Skapa en rapportsvit](admin/c-manage-report-suites/c-new-report-suite/t-create-a-report-suite.md)
-         + [Skapa en sammanslagningsrapportsserie](admin/c-manage-report-suites/c-new-report-suite/t-rollups.md)
          + [Skapa en rapportsvitgrupp](admin/c-manage-report-suites/c-new-report-suite/t-create-rs-group.md)
          + [Ny rapportsvit - inställningar](admin/c-manage-report-suites/c-new-report-suite/new-report-suite.md)
          + [Inställningar som inte kopierats från en källrapportsserie](admin/c-manage-report-suites/c-new-report-suite/settings-not-copied-from-rs.md)
@@ -153,7 +151,6 @@ ht-degree: 13%
       + [Webbtjänster](admin/company/web-services-admin.md)
       + [Report Builder rapporter](admin/company/report-builder-reports-admin.md)
       + [Enkel inloggning](admin/company/single-signon-admin.md)
-      + [Sammärkning](admin/company/co-branding-admin.md)
       + [Dölj rapportsviter](admin/company/c-hide-report-suites.md)
       + [Inställningshanteraren](admin/company/preferences-manager.md)
       + [Väntande åtgärder](admin/company/pending-actions-admin.md)
