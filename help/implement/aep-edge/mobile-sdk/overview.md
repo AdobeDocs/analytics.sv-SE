@@ -1,12 +1,12 @@
 ---
 title: Implementera Adobe Analytics med Adobe Experience Platform Mobile SDK
-description: Använd SDK-tillägget för mobiler i Adobe Experience Platform Data Collection för att skicka data till Adobe Analytics.
+description: Använd mobiltillägget SDK i Adobe Experience Platform Data Collection för att skicka data till Adobe Analytics.
 exl-id: 516e9a1e-caa7-4f8a-ab8c-6404e9242ccb
 feature: Implementation Basics
-source-git-commit: d9948fbb63d44c851e08745c77af5618de84a89c
+source-git-commit: c865d66ce72260acff29d483af59b6c3468aa6d2
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 4%
+source-wordcount: '527'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +16,11 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 >[!IMPORTANT]
 >
->Ett Adobe Analytics-tillägg finns också i Adobe Experience Platform Data Collection. Om du installerar det här tillägget kan du inte utnyttja XDM eller Edge Network.
+>Det finns även ett Adobe Analytics-tillägg i Adobe Experience Platform Data Collection. Om du installerar det här tillägget kan du inte utnyttja XDM eller Edge Network.
 
 ## Adobe Experience Platform SDK
 
-Översikt över implementeringsuppgifterna:
+Översikt över implementeringsuppgifterna på hög nivå:
 
 ![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../../assets/mobilesdk-annotated.png)
 
@@ -32,14 +32,14 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 <tr>
 <td>1</td>
-<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+<td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
+<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
 <td>2</td>
-<td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+<td><b>Konfigurera scheman.</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a></td>
 </tr>
 
 <tr>
@@ -60,7 +60,7 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 <tr>
 <td>6</td>
-<td><b>Installera Adobe Experience Platform Edge Network-tillägget</b> i egenskapen mobile tag och konfigurera datastream i tillägget.</td>
+<td><b>Installera Adobe Experience Platform Edge Network-tillägget</b> i egenskapen mobile-tagg och konfigurera datastream i tillägget.</td>
 <td><a href="https://developer.adobe.com/client-sdks/documentation/edge-network/">Adobe Experience Platform Edge Network</a>
 </tr>
 
@@ -85,9 +85,9 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 </table>
 
 
-## Adobe Analytics-tillägg.
+## Adobe Analytics.
 
-Översikt över implementeringsuppgifterna:
+Översikt över implementeringsuppgifterna på hög nivå:
 
 ![Adobe Analytics med hjälp av arbetsflödet för Analytics-tillägget](../../assets/mobilesdk-analytics-annotated.png)
 
@@ -99,14 +99,14 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 <tr>
 <td>1</td>
-<td>Se till att du har <b>har definierat en rapportserie</b>.</td>
-<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Hanterare för rapportsvit</a></td>
+<td>Se till att du har <b>har definierat en rapportsvit</b>.</td>
+<td><a href="../../../admin/admin/c-manage-report-suites/report-suites-admin.md">Report Suite Manager</a></td>
 </tr>
 
 <tr>
 <td>2</td>
 <td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över användargränssnittet för datauppsättningar</a></td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över datauppsättningsgränssnittet</a></td>
 </tr>
 
 <tr>
