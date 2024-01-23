@@ -3,9 +3,9 @@ title: Implementera Adobe Analytics med Adobe Experience Platform Mobile SDK
 description: Använd mobiltillägget SDK i Adobe Experience Platform Data Collection för att skicka data till Adobe Analytics.
 exl-id: 516e9a1e-caa7-4f8a-ab8c-6404e9242ccb
 feature: Implementation Basics
-source-git-commit: c865d66ce72260acff29d483af59b6c3468aa6d2
+source-git-commit: 032237734ebd397374c171bfc4504124cea3d8c1
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '520'
 ht-degree: 3%
 
 ---
@@ -105,8 +105,8 @@ Adobe Experience Platform Mobile SDK hjälper er att driva lösningar och tjäns
 
 <tr>
 <td>2</td>
-<td><b>Konfigurera scheman och datauppsättningar</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
-<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a> och <a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=en">Översikt över datauppsättningsgränssnittet</a></td>
+<td><b>Konfigurera scheman</b>. För att standardisera datainsamlingen för användning i olika program som utnyttjar Adobe Experience Platform har Adobe skapat den öppna och offentligt dokumenterade standarden Experience Data Model (XDM).</td>
+<td><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en">Översikt över schemaanvändargränssnittet</a></td>
 </tr>
 
 <tr>
