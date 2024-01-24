@@ -1,17 +1,17 @@
 ---
 description: Det första steget när du skapar en begäran i Report Builder.
-title: Dataförfrågningar – frågeguiden steg 1
+title: Databegäranden - Guiden Begär begäran, steg 1
 feature: Report Builder
 role: User, Admin
 exl-id: 698662a8-8b6b-4338-a315-b41cf6a9424e
-source-git-commit: fb39f906d6c08713e4dc8211c917b2942502868e
+source-git-commit: 244af34b463ea5df55eaca31f3b2df4ada552b5d
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 3%
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
-# Dataförfrågningar – frågeguiden steg 1
+# Databegäranden - Guiden Begär begäran, steg 1
 
 I begärandeguiden: Steg 1 väljer du rapportsviten, rapporttyp, segment och konfigureringsdatum.
 
@@ -24,6 +24,8 @@ I begärandeguiden: Steg 1 väljer du rapportsviten, rapporttyp, segment och kon
 1. **Segment**: Segment är anpassade datadeluppsättningar eller data som filtreras efter regler som du skapar. Segmenten baseras på träffar, besök och besökare. Se [Segmenteringshandbok för analyser](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-home.html) för mer information om segment.
 
    Du kan till exempel köra en [!UICONTROL Pages Report]och sedan tillämpa ett segment för förstagångsbesök.
+
+1. **Tillåt åsidosättning av publiceringslista**: Publiceringslistor var en funktion i Rapporter och analyser som har [slutprodukt](https://new.express.adobe.com/webpage/WFCyq7w8kijmB?).
 
 1. **Typ av rapportering**: Anger den basrapport som du vill köra i din databegäran. Du kör en rapport per begäran och den rapporten kan ha en-till-många-dimensioner och en-till-många-mått. Mätvärden och dimensioner för en rapporttyp visas på [!UICONTROL Request Wizard; Step 2] gränssnitt. Se [Välj rapporttyper](/help/analyze/report-builder/data-requests/c-report-types/select-report-types.md).
 

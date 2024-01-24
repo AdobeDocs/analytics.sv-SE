@@ -4,10 +4,10 @@ title: Anpassad kalender
 feature: Report Builder
 role: User, Admin
 exl-id: e65cb6c8-8bb0-4dcd-a3a3-d22adcd024fa
-source-git-commit: 1ee50c6a2231795b2ad0015a79e09b7c1c74d850
+source-git-commit: 244af34b463ea5df55eaca31f3b2df4ada552b5d
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 1%
+source-wordcount: '409'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +31,11 @@ Varje kalenderformat beskrivs nedan.
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ändrad gregoriansk kalender </p> </td> 
-   <td colname="col2"> <p> Använder den traditionella gregorianska kalendern men du kan välja den första månaden på året och den första dagen i veckan. </p> </td> 
+   <td colname="col2"> <p> Använder den traditionella gregorianska kalendern, men du kan välja den första månaden på året och den första dagen i veckan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4-5-4 butikskalender </p> </td> 
-   <td colname="col2"> <p> Varje månad delas upp med antalet veckor i månaden. Betydelse: Januari har fyra veckor och så vidare. National Retail Federation använder kalenderformatet 4-5-4. </p> </td> 
+   <td colname="col2"> <p> Varje månad delas upp med antalet veckor i månaden. Betydelse: Januari har fyra veckor och så vidare. The National Retail Federation använder kalenderformatet 4-5-4. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Anpassad kalender </p> </td> 
@@ -43,8 +43,8 @@ Varje kalenderformat beskrivs nedan.
     <ul id="ul_1579FD106A47419486B03E248A5E6ED5"> 
      <li id="li_E9B9E8F03E324DBDA9139C2D0D599092"><b>4-5-4</b>:Januari har fyra veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
      <li id="li_D0675DBDEC4641D2A8645B5CDFC565AB"><b>4-4-5</b>: Januari har fyra veckor, februari har fyra veckor, mars har fem veckor och så vidare. </li> 
-     <li id="li_6743BBB9AC9A4CFEAA0CBCE51052BC29"><b>5-5-4</b>: Januari har fem veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
-    </ul> <p>Obs! Det här kalenderalternativet stöds av alla Adobe Analytics-verktyg (Analysis Workspace, Reports &amp; Analytics, Report Builder och Activity Map). Undantaget är Data warehouse, som inte har stöd för anpassade kalendrar. </p> </td> 
+     <li id="li_6743BBB9AC9A4CFEAA0CBCE51052BC29"><b>5-5-4</b>: januari har fem veckor, februari har fem veckor, mars har fyra veckor och så vidare. </li> 
+    </ul> <p>Obs! Det här kalenderalternativet stöds i alla Adobe Analytics-verktyg: Analysis Workspace, Report Builder och Activity Map. Undantaget är Data Warehouse som inte har stöd för anpassade kalendrar. </p> </td> 
   </tr> 
  </tbody> 
 </table>
